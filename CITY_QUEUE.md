@@ -177,7 +177,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 49 | Rome | 2.00 | 358,876 | 29 | 9 | 2 | 32 | 30 | measured |
 | 50 | Charleston | 3.90 | 155,987 | - | - | - | - | 10 | predicted (thin competition) |
 | 51 | San Francisco | 3.90 | 361,111 | - | - | - | - | 10 | predicted (thin competition) |
-| 52 | Alicante | 1.94 | 77,454 | 7 | - | 1 | 44 | 10 | predicted (thin competition) |
+| 52 | Alicante | 1.94 | 77,454 | 9 | - | 1 | 44 | 10 | predicted (thin competition) |
 | 53 | Syracuse | 2.57 | 102,833 | - | - | - | - | 10 | predicted (thin competition) |
 | 54 | Auckland | 3.80 | 152,056 | - | - | - | - | 10 | predicted (thin competition) |
 | 55 | Vancouver | 3.80 | 351,552 | - | - | - | - | 10 | predicted (thin competition) |
@@ -221,8 +221,8 @@ so qa.py fails the deploy when the table and the json disagree.
 | 93 | Stuttgart | 2.82 | 112,789 | - | - | - | - | 10 | predicted (thin competition) |
 | 94 | New York | 2.81 | 1,124,326 | 20 | 5 | 2 | - | 10 | published, never ranked |
 | 95 | Santiago | 2.79 | 111,647 | - | - | - | - | 10 | predicted (thin competition) |
-| 96 | Trento | 1.41 | 56,455 | 7 | 1 | 1 | 19 | 10 | predicted (thin competition) |
-| 97 | Marrakech | 2.78 | 111,098 | - | - | - | - | 10 | predicted (thin competition) |
+| 96 | Marrakech | 2.78 | 111,098 | - | - | - | - | 10 | predicted (thin competition) |
+| 97 | Trento | 1.41 | 56,455 | 9 | 1 | 1 | 19 | 10 | predicted (thin competition) |
 | 98 | Kathmandu | 2.72 | 108,896 | - | - | - | - | 10 | predicted (thin competition) |
 | 99 | Riga | 2.72 | 108,918 | - | - | - | - | 10 | predicted (thin competition) |
 | 100 | Salzburg | 2.68 | 107,243 | - | - | - | - | 10 | predicted (thin competition) |
@@ -241,7 +241,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 113 | Cusco | 2.19 | 87,732 | - | - | - | - | 10 | predicted (thin competition) |
 | 114 | Siena | 1.44 | 57,436 | - | - | - | - | 10 | predicted (thin competition) |
 | 115 | Cagliari | 1.28 | 51,351 | 7 | - | 2 | 9 | 10 | predicted (thin competition) |
-| 116 | Perugia | 1.06 | 42,572 | 8 | - | 2 | 19 | 10 | predicted (thin competition) |
+| 116 | Perugia | 1.06 | 42,572 | 10 | - | 2 | 19 | 10 | predicted (thin competition) |
 | 117 | Valletta | 2.11 | 84,342 | - | - | - | - | 10 | predicted (thin competition) |
 | 118 | Faro | 1.39 | 55,645 | - | - | - | - | 10 | predicted (thin competition) |
 | 119 | Bergen | 2.07 | 82,940 | - | - | - | - | 10 | predicted (thin competition) |
@@ -291,8 +291,8 @@ so qa.py fails the deploy when the table and the json disagree.
 | 163 | Brussels | 1.00 | 176,863 | 20 | 4 | 1 | 436 | 20 | measured |
 | 164 | Cadiz | 1.00 | 79,226 | 5 | 4 | 1 | - | 10 | measured |
 | 165 | Sorrento | 1.00 | 40,049 | - | - | - | - | 10 | predicted (thin competition) |
-| 166 | Braga | 0.86 | 34,522 | 4 | - | - | 8 | 10 | predicted (thin competition) |
-| 167 | Innsbruck | 1.47 | 58,742 | - | - | - | - | 10 | predicted (thin competition) |
+| 166 | Innsbruck | 1.47 | 58,742 | - | - | - | - | 10 | predicted (thin competition) |
+| 167 | Braga | 0.86 | 34,522 | 4 | - | - | 8 | 10 | predicted (thin competition) |
 | 168 | Annecy | 1.42 | 56,859 | - | - | - | - | 10 | predicted (thin competition) |
 | 169 | Coimbra | 0.87 | 34,962 | - | - | - | 5 | 10 | predicted (thin competition) |
 | 170 | Regensburg | 1.30 | 51,930 | - | - | - | 2 | 10 | predicted (thin competition) |
@@ -300,9 +300,9 @@ so qa.py fails the deploy when the table and the json disagree.
 | 172 | Canterbury | 1.33 | 53,301 | - | - | - | - | 10 | predicted (thin competition) |
 | 173 | Taormina | 0.83 | 33,169 | - | - | - | 5 | 10 | predicted (thin competition) |
 | 174 | Aarhus | 1.32 | 52,722 | - | - | - | - | 10 | predicted (thin competition) |
-| 175 | Guimaraes | 0.66 | 26,203 | 4 | 1 | 1 | 19 | 10 | predicted (thin competition) |
-| 176 | Kilkenny | 0.86 | 34,550 | - | - | - | - | 10 | predicted (thin competition) |
-| 177 | Lagos | 0.86 | 34,452 | - | - | - | - | 10 | predicted (thin competition) |
+| 175 | Kilkenny | 0.86 | 34,550 | - | - | - | - | 10 | predicted (thin competition) |
+| 176 | Lagos | 0.86 | 34,452 | - | - | - | - | 10 | predicted (thin competition) |
+| 177 | Guimaraes | 0.66 | 26,203 | 6 | 1 | 1 | 19 | 10 | predicted (thin competition) |
 | 178 | Kamakura | 0.84 | 33,492 | - | - | - | - | 10 | predicted (thin competition) |
 | 179 | Kotor | 1.22 | 48,982 | - | - | - | - | 10 | predicted (thin competition) |
 | 180 | Tarragona | 0.81 | 32,396 | - | - | - | - | 10 | predicted (thin competition) |
@@ -383,14 +383,14 @@ so qa.py fails the deploy when the table and the json disagree.
 | 255 | Sofia | 0.35 | 138,710 | 4 | 1 | - | - | 10 | published, never ranked |
 | 256 | Zurich | 0.35 | 140,788 | 4 | - | - | - | 10 | published, never ranked |
 | 257 | Bucharest | 0.34 | 136,836 | 4 | - | 1 | - | 10 | published, never ranked |
-| 258 | Cordoba | 0.19 | 74,675 | 10 | 2 | 2 | 3 | 10 | published, never ranked |
-| 259 | Bled | 0.33 | 13,126 | - | - | - | - | 10 | predicted (thin competition) |
+| 258 | Bled | 0.33 | 13,126 | - | - | - | - | 10 | predicted (thin competition) |
+| 259 | Cordoba | 0.19 | 74,675 | 10 | 2 | 2 | 3 | 10 | published, never ranked |
 | 260 | Split | 0.33 | 132,399 | 4 | - | 1 | - | 10 | published, never ranked |
 | 261 | Ljubljana | 0.31 | 125,046 | 4 | - | 1 | - | 10 | published, never ranked |
 | 262 | Fukuoka | 0.19 | 77,485 | 11 | 7 | 1 | 1 | 10 | published, never ranked |
 | 263 | Verona | 0.19 | 77,646 | 8 | 4 | 2 | 3 | 10 | published, never ranked |
 | 264 | York | 0.30 | 118,066 | 6 | 2 | 1 | - | 10 | published, never ranked |
-| 265 | Nara | 0.19 | 7,556 | 9 | 4 | 2 | - | 10 | predicted (thin competition) |
+| 265 | Nara | 0.19 | 7,556 | 10 | 4 | 2 | - | 10 | predicted (thin competition) |
 | 266 | Oxford | 0.28 | 111,583 | 5 | 1 | 1 | - | 10 | published, never ranked |
 | 267 | Lucca | 0.13 | 52,271 | 10 | 3 | 1 | 27 | 10 | published, never ranked |
 | 268 | Utrecht | 0.17 | 67,963 | 5 | 4 | 1 | - | 10 | published, never ranked |
