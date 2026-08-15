@@ -1629,6 +1629,33 @@
     "note": "Massachusetts DCR (139 champion + 476 legacy, public record) and Quebec City (685, CC BY 4.0, per-tree coords) imported; American Forests, Texas Big Tree Registry and the Live Oak Society all BLOCKED on licence and drafted as permission asks; BC Big Tree unresolved behind a captcha; Ontario a dead end",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "brno",
+    "kind": "verify",
+    "tokens": 115000,
+    "trees": 6,
+    "note": "AOPK CR register cluster (Moravske namesti/Denisovy sady/Stare Brno, 1.14km spread); girth ranges kept where sources disagree by measurement year; 3 leads and 1 blocked on access (construction site, museum booking, private courtyard)",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "wroclaw",
+    "kind": "verify",
+    "tokens": 50000,
+    "trees": 4,
+    "note": "GDOS cluster on Wielka Wyspa, 4 named oaks corroborated by przyrodniczo.pl, floor exactly met, no padding",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "poznan",
+    "kind": "verify",
+    "tokens": 55000,
+    "trees": 6,
+    "note": "GDOS cluster of 6 named professor trees at Plac Wolnosci, two poznan.pl council announcements as second source; four girths withheld because only an uncorroborated press round-up carried them",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
