@@ -1,0 +1,34 @@
+{
+  "leads": [
+    {
+      "source": "melbourne-yarra-significant-trees.json ref 119",
+      "species": "Holm Oak (Quercus ilex)",
+      "location": "Edinburgh Gardens, Fitzroy North, -37.786848148,144.9816394821",
+      "reason": "Second Holm Oak in Edinburgh Gardens, about 65m from mel_001. National Trust of Australia (Vic) describes it as multi-trunked with an open crown and epicormic growth, east of the rotunda; the register gives dbh 145cm. Redundant with mel_001 for this pass (one Holm Oak per park is plenty for a first cut) rather than blocked; a future depth pass could add it as a second Edinburgh Gardens entry if the walk needs more stops."
+    },
+    {
+      "source": "melbourne-yarra-significant-trees.json, Edinburgh Gardens (0 ALFRED CRESCENT / 0 FREEMAN STREET, FITZROY NORTH) refs 102, 103, 106-118, 121",
+      "species": "Southern Mahogany (E. botryoides), River Red Gum, Dutch Elm (U. x hollandica), English Oak (Q. robur)",
+      "location": "Edinburgh Gardens, Fitzroy North",
+      "reason": "17 more significant trees register in the same park (dbh 52cm-138cm). Not researched individually this pass: ran out of time budget after the two Edinburgh Gardens trees delivered. Genuinely undated beyond the register's coarse category for all of them. Good candidates for a depth pass if Melbourne grows past its first batch; several (the two River Red Gums, ref 103/104/111, and the Dutch Elm avenue, ref 106-118) look promising on size alone."
+    },
+    {
+      "source": "melbourne-yarra-significant-trees.json, Madden Grove, Richmond, refs 27-31",
+      "species": "Peppercorn Tree (Schinus molle) x2, Lemon-scented Gum, English Oak x2",
+      "location": "Madden Grove, Richmond, approx -37.828,145.001",
+      "reason": "About 1.9km from mel_007/mel_008 (Yarra Boulevard, Burnley) along the Yarra River trail, within normal walking-cluster range. Not verified this pass for time; if verified in a future pass, this could turn the thin 2-tree Yarra Boulevard cluster into a genuine 4+ tree second walk (Yarra Bend Park to Richmond along the river)."
+    },
+    {
+      "source": "melbourne-yarra-significant-trees.json, 500 YARRA BOULEVARD, BURNLEY, refs 163,228,229,230",
+      "species": "Sugar Gum, Yate, Bhutan Cypress, River Red Gum",
+      "location": "Yarra Boulevard, Burnley, approx -37.827,145.017",
+      "reason": "About 0.6km from mel_007 (the Osage Orange). Not individually verified this pass; candidates for filling out the second Yarra Boulevard cluster."
+    }
+  ],
+  "blocked": [],
+  "notes": [
+    "DATA QUALITY FLAG, melbourne-boroondara-significant-trees.json: the girth_m field is NOT consistently in metres. Plotting all 314 values shows a clean bimodal split: ~120 entries between 0 and 8 (genuine metres, e.g. the sample front-garden records: Magnolia grandiflora girth_m 1.5, River Red Gum girth_m 4) and ~190 entries between 68 and 235 (these are almost certainly CENTIMETRES mislabelled as girth_m, since a 68-235 METRE circumference is physically impossible for any tree; e.g. a Victoria Park River Red Gum with height 14m and canopy 16m carries girth_m: 98, which would be a 98-metre trunk if taken literally). This is exactly the register-units pitfall BRIEF_RESEARCH.md warns about. NO Boroondara tree was used in this pass because of this: rather than guess at a /100 correction per record without external confirmation, I left the whole file unused and worked entirely from the Yarra register instead, which has a single, physically-sane dbh_cm field throughout (39-230, checked). A future pass importing or using Boroondara data should sanity-check every girth_m value against height/canopy before publishing anything from it, and should flag this to whoever maintains the register import script since it may be an import-time bug (two source tables merged with different units) rather than a source-data problem.",
+    "melbourne-boroondara-significant-trees.json also has a POSITION field showing roughly a third of its 314 entries as 'Front garden', 'Rear garden' or private golf/sports clubs (Green Acres Golf Club 26 entries, Kew Golf Club 4). Hard rule 10 applies directly: none of these are usable without evidence the specific ground is open to the public. The genuinely public-park POSITION values (Victoria Park, Maranoa Gardens, St James Park, Cato Park, Grace Park, Belmont Park, Kellet Reserve, Nettleton Park, Stradbroke Park) are the only ones worth returning to, and only once the girth unit problem above is resolved.",
+    "This pass worked entirely from melbourne-yarra-significant-trees.json (232 entries, dbh_cm units sanity-checked and consistent) and produced two clusters: a strong central one (Edinburgh Gardens + Darling Gardens + Curtain Square, all in Fitzroy North/Clifton Hill/Carlton North, roughly 1-1.7km apart, 6 trees) and the start of a second, more distant one (Yarra Boulevard/Yarra Bend Park, Burnley, roughly 6-7km from the first, 2 trees so far, see leads above for how to grow it to 4+)."
+  ]
+}

@@ -64,6 +64,56 @@ QUEUE = os.path.join(ROOT, "data", "city-queue.json")
 NEVER_RANKED_YIELD = 0.25
 PREDICTED_YIELD = 1.0
 
+# Countries Hidde has taken off the list for now. They keep their row, their
+# travel demand and their register supply, and they lose their rank, so this is
+# a pause rather than a deletion and reversing it is deleting a line here.
+#
+# India, 2026-08-15: "Let's keep India out of the top 250 for now. It's a huge
+# country I don't want to focus on now." Four cities were affected, all
+# unpublished, none deep enough to have earned anything: Delhi (rank 33),
+# Mumbai (59), Jaipur (72), Agra (91). The travel-demand rescore that morning
+# had lifted them, which is what surfaced the question at all.
+#
+# A run may NOT add or remove a country here on its own. This is a strategy
+# call about where the project points, which is Hidde's, and the queue is
+# deliberately the one place it cannot be quietly re-derived.
+PAUSED_COUNTRIES = {"India"}
+
+# Hidde, 2026-08-15, immediately after the India pause: "I want to focus on
+# cities for rich tourists." The India cut was the specific case; this is the
+# rule behind it, and it is deliberately about the COUNTRY VISITED rather than
+# the wealth of the visitor, because those two readings give very different
+# lists and his own India decision settles which one he meant. Agra and Jaipur
+# are visited by affluent Westerners in large numbers and he cut them anyway.
+#
+# The tier is the World Bank income classification, used because it is a
+# published, citable line rather than a list of countries somebody felt good
+# about. High income scores full, upper-middle scores half, everything below is
+# paused with its row and its data kept.
+#
+# What this costs, stated plainly because it is not free: it drops real tourist
+# cities the product would serve well, Chiang Mai, Marrakech, Mexico City,
+# Ho Chi Minh City, Ubud and Bogota among them, several of which sat in the top
+# 40 that morning. It is a focus decision, not a claim that those cities are
+# bad. Reversing it is editing this table.
+UPPER_MIDDLE = {
+    "Mexico", "Brazil", "Argentina", "Colombia", "Peru", "South Africa",
+    "Thailand", "China", "Malaysia", "Turkey", "Serbia", "Bosnia and Herzegovina",
+    "North Macedonia", "Albania", "Montenegro", "Russia", "Cuba", "Ecuador",
+}
+LOW_AND_LOWER_MIDDLE = {
+    "India", "Vietnam", "Indonesia", "Philippines", "Egypt", "Morocco",
+    "Cambodia", "Sri Lanka", "Nepal", "Pakistan", "Bangladesh", "Kenya",
+    "Tanzania", "Nigeria", "Ukraine", "Bolivia", "Jordan", "Tunisia",
+}
+
+
+def wealth_factor(country):
+    """1.0 high income, 0.5 upper-middle, None means paused."""
+    if country in PAUSED_COUNTRIES or country in LOW_AND_LOWER_MIDDLE:
+        return None
+    return 0.5 if country in UPPER_MIDDLE else 1.0
+
 
 def measured_yield(c):
     """Impressions per 1,000 Wikivoyage views. None when unmeasurable."""
@@ -88,9 +138,23 @@ def main():
           "(%d cities)" % (mid, len(ratios)))
 
     before = {c["city"]: c.get("rank") for c in cities}
+    paused = []
     for c in cities:
         travel = c.get("travel") or 0
         base = travel / 1000.0
+        wealth = wealth_factor(c.get("country", ""))
+        if wealth is None:
+            # Paused, not deleted: the row, its travel demand and its register
+            # supply all stay, so lifting the pause is a one-line edit and no
+            # research is lost. A published city is never unranked this way,
+            # because retiring a live page is hard rule 3 territory.
+            if c["status"] != "published":
+                paused.append(c)
+                c["score"] = None
+                c["basis"] = "paused: outside the focus countries"
+                continue
+            wealth = 1.0
+        base *= wealth
         if c["status"] == "published" and (c.get("impressions_10d") or 0) > 0:
             my = measured_yield(c)
             if my is not None:
