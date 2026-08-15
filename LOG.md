@@ -11,6 +11,14 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-15 (continued) - Bucaco reaches its 10-tree target
+
+Same session, fourth target, and the cheapest of the day: `leads.py --city bucaco --ready` showed 11 already-verified candidates for a 1-tree gap. Picked the cleanest of them, the Redwood of the Fonte de Santa Teresa (5.58m girth, 45m tall, about 150 years old at the 2016 ICNF measurement, on the Trilho da Agua past the forest's historic fountains), over a second candidate (a redwood registered as part of an "Alameda" row standing 10 metres from the already-published King Regnans) whose collectible-point status a previous pass had flagged as genuinely unresolved rather than merely convenient to skip.
+
+The chosen lead's own `why` field said only "cut on the count and because a page with three separate redwood entries stops being a walk and becomes a list", which is exactly the kind of judgement call CLAUDE.md's Step 2 says can never hold a tree back. Checked the claim in that same field that it was "bigger in the trunk" than the already-published Santo Elias pair and it is not (5.58m against 5.64/5.67m per bsc_005's own notes), so the story does not repeat that line; corrected it in the leads file for whoever reads it next.
+
+Updated the city's intro, meta_description and one FAQ answer for the new count of ten. Build clean (1516 pages): the full ten-tree walk still computes as one route, 1.9km, 25 minutes, checked from the build output. `scripts/qa.py` clean (1764 pages), `scripts/preflight.py` and `scripts/superlatives.py` both clean. `scripts/tree_index.py` run (Portugal now 95 highlighted). Refreshed `data/city-queue.json`/`CITY_QUEUE.md`. Logged to `data/agent-costs.json`, marked the lead RESOLVED, released the `bucaco` claim.
+
 ## 2026-08-15 (continued) - Trento reaches its 10-tree target
 
 Same session, third target. Checked `city_queue.py --next` again after Palma: Como and Alicante both sit at gap 1 with their only remaining leads access-blocked (rechecked Como's Tibaes-closure and Via Baserga doubts fresh rather than trusting the cache; nothing has changed, both stay held), so moved to **Trento** (rank 97, 9/10, ready 4 per the tool, all four already known misclassified per yesterday's own review notes, real remaining villas). Rather than re-litigate the three held villas, followed the same review's own pointer: "the wild cherry at Passo del Cimirlo... has never been researched."

@@ -1530,6 +1530,15 @@
         "note": "session pass, tokens not separately metered. Closed Trento's last tree (9/10 to 10/10) by researching a single specific lead named in the 2026-08-14 review (the wild cherry at Passo del Cimirlo, on the city's own 18-tree monumental list but never entered in the leads file), rather than re-checking the three held villa leads whose access doubts are unchanged. Found the comune's own open-data CSV with an exact register scheda (girth/height/public ownership), used alongside press confirming the tree's place on the monumental list.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "bucaco",
+        "kind": "write",
+        "tokens": 0,
+        "trees": 1,
+        "note": "session pass, tokens not separately metered. Closed Bucaco's last tree (9/10 to 10/10) straight from an already-verified READY lead (register measurements, no new research needed): the Redwood of the Fonte de Santa Teresa, previously held back only on a 'three redwoods reads as a list' judgement call that CLAUDE.md's Step 2 explicitly rules out as a reason to withhold a tree. Picked over a second, alameda-flagged redwood candidate 10m from an already-published tree (King Regnans) whose collectible-point status is still genuinely unresolved.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
