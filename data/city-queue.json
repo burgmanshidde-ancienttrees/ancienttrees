@@ -23,8 +23,8 @@
    "photos": 13,
    "walks": 5,
    "register": 375,
-   "ready": 37,
-   "supply": 412,
+   "ready": 13,
+   "supply": 388,
    "target": 20,
    "impressions_10d": 75,
    "clicks_10d": 7,
@@ -56,6 +56,28 @@
   },
   {
    "rank": 3,
+   "city": "Melbourne",
+   "country": "Australia",
+   "slug": "melbourne",
+   "score": 5.89,
+   "demand": 267898,
+   "basis": "predicted (thin competition)",
+   "status": "pending",
+   "trees": 0,
+   "photos": 0,
+   "walks": 0,
+   "register": 202,
+   "ready": 0,
+   "supply": 202,
+   "target": 10,
+   "impressions_10d": 0,
+   "clicks_10d": 0,
+   "ease": 1.5,
+   "work_score": 8.83,
+   "travel": 9641
+  },
+  {
+   "rank": 4,
    "city": "Kyoto",
    "country": "Japan",
    "slug": "kyoto",
@@ -77,7 +99,7 @@
    "travel": 5488
   },
   {
-   "rank": 4,
+   "rank": 5,
    "city": "Los Angeles",
    "country": "United States",
    "slug": "los-angeles",
@@ -99,7 +121,7 @@
    "travel": 14409
   },
   {
-   "rank": 5,
+   "rank": 6,
    "city": "Portland",
    "country": "United States",
    "slug": "portland",
@@ -122,7 +144,7 @@
    "travel": 6119
   },
   {
-   "rank": 6,
+   "rank": 7,
    "city": "Funchal",
    "country": "Portugal",
    "slug": "funchal",
@@ -144,7 +166,7 @@
    "travel": 3769
   },
   {
-   "rank": 7,
+   "rank": 8,
    "city": "Sintra",
    "country": "Portugal",
    "slug": "sintra",
@@ -166,7 +188,7 @@
    "travel": 1463
   },
   {
-   "rank": 8,
+   "rank": 9,
    "city": "Rio de Janeiro",
    "country": "Brazil",
    "slug": "rio-de-janeiro",
@@ -188,7 +210,7 @@
    "travel": 12714
   },
   {
-   "rank": 9,
+   "rank": 10,
    "city": "Miami",
    "country": "United States",
    "slug": "miami",
@@ -210,7 +232,7 @@
    "travel": 4740
   },
   {
-   "rank": 10,
+   "rank": 11,
    "city": "Mexico City",
    "country": "Mexico",
    "slug": "mexico-city",
@@ -232,7 +254,29 @@
    "travel": 19938
   },
   {
-   "rank": 11,
+   "rank": 12,
+   "city": "Brisbane",
+   "country": "Australia",
+   "slug": "brisbane",
+   "score": 4.07,
+   "demand": 162602,
+   "basis": "predicted (thin competition)",
+   "status": "pending",
+   "trees": 0,
+   "photos": 0,
+   "walks": 0,
+   "register": 186,
+   "ready": 0,
+   "supply": 186,
+   "target": 10,
+   "ease": 1.5,
+   "work_score": 6.11,
+   "impressions_10d": 0,
+   "clicks_10d": 0,
+   "travel": 12731
+  },
+  {
+   "rank": 13,
    "city": "Shanghai",
    "country": "China",
    "slug": "shanghai",
@@ -254,7 +298,7 @@
    "travel": 12753
   },
   {
-   "rank": 12,
+   "rank": 14,
    "city": "Nuremberg",
    "country": "Germany",
    "slug": "nuremberg",
@@ -276,7 +320,7 @@
    "travel": 7756
   },
   {
-   "rank": 13,
+   "rank": 15,
    "city": "Palermo",
    "country": "Italy",
    "slug": "palermo",
@@ -298,7 +342,7 @@
    "travel": 4732
   },
   {
-   "rank": 14,
+   "rank": 16,
    "city": "Porto",
    "country": "Portugal",
    "slug": "porto",
@@ -320,7 +364,7 @@
    "travel": 4924
   },
   {
-   "rank": 15,
+   "rank": 17,
    "city": "Beijing",
    "country": "China",
    "slug": "beijing",
@@ -342,7 +386,7 @@
    "travel": 11460
   },
   {
-   "rank": 16,
+   "rank": 18,
    "city": "Jakarta",
    "country": "Indonesia",
    "slug": "jakarta",
@@ -364,29 +408,7 @@
    "travel": 7020
   },
   {
-   "rank": 17,
-   "city": "Melbourne",
-   "country": "Australia",
-   "slug": "melbourne",
-   "score": 5.89,
-   "demand": 267898,
-   "basis": "predicted (thin competition)",
-   "status": "pending",
-   "trees": 0,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 10,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
-   "ease": 1.0,
-   "work_score": 5.89,
-   "travel": 9641
-  },
-  {
-   "rank": 18,
+   "rank": 19,
    "city": "Bordeaux",
    "country": "France",
    "slug": "bordeaux",
@@ -408,7 +430,7 @@
    "travel": 3041
   },
   {
-   "rank": 19,
+   "rank": 20,
    "city": "Strasbourg",
    "country": "France",
    "slug": "strasbourg",
@@ -430,7 +452,7 @@
    "travel": 9796
   },
   {
-   "rank": 20,
+   "rank": 21,
    "city": "New Orleans",
    "country": "United States",
    "slug": "new-orleans",
@@ -452,7 +474,7 @@
    "travel": 4428
   },
   {
-   "rank": 21,
+   "rank": 22,
    "city": "Liverpool",
    "country": "United Kingdom",
    "slug": "liverpool",
@@ -474,7 +496,7 @@
    "travel": 6457
   },
   {
-   "rank": 22,
+   "rank": 23,
    "city": "Bilbao",
    "country": "Spain",
    "slug": "bilbao",
@@ -496,7 +518,7 @@
    "travel": 7722
   },
   {
-   "rank": 23,
+   "rank": 24,
    "city": "Austin",
    "country": "United States",
    "slug": "austin",
@@ -519,7 +541,7 @@
    "travel": 3648
   },
   {
-   "rank": 24,
+   "rank": 25,
    "city": "Cape Town",
    "country": "South Africa",
    "slug": "cape-town",
@@ -541,7 +563,7 @@
    "travel": 6575
   },
   {
-   "rank": 25,
+   "rank": 26,
    "city": "Delhi",
    "country": "India",
    "slug": "delhi",
@@ -563,7 +585,7 @@
    "travel": 13029
   },
   {
-   "rank": 26,
+   "rank": 27,
    "city": "Belfast",
    "country": "United Kingdom",
    "slug": "belfast",
@@ -585,7 +607,7 @@
    "travel": 4149
   },
   {
-   "rank": 27,
+   "rank": 28,
    "city": "Hiroshima",
    "country": "Japan",
    "slug": "hiroshima",
@@ -607,7 +629,7 @@
    "travel": 5550
   },
   {
-   "rank": 28,
+   "rank": 29,
    "city": "Pamplona",
    "country": "Spain",
    "slug": "pamplona",
@@ -629,7 +651,7 @@
    "travel": 1349
   },
   {
-   "rank": 29,
+   "rank": 30,
    "city": "Ho Chi Minh City",
    "country": "Vietnam",
    "slug": "ho-chi-minh-city",
@@ -651,7 +673,7 @@
    "travel": 18784
   },
   {
-   "rank": 30,
+   "rank": 31,
    "city": "Cologne",
    "country": "Germany",
    "slug": "cologne",
@@ -673,7 +695,7 @@
    "travel": 12174
   },
   {
-   "rank": 31,
+   "rank": 32,
    "city": "Kuala Lumpur",
    "country": "Malaysia",
    "slug": "kuala-lumpur",
@@ -695,7 +717,7 @@
    "travel": 7609
   },
   {
-   "rank": 32,
+   "rank": 33,
    "city": "Hamburg",
    "country": "Germany",
    "slug": "hamburg",
@@ -717,7 +739,7 @@
    "travel": 10268
   },
   {
-   "rank": 33,
+   "rank": 34,
    "city": "San Diego",
    "country": "United States",
    "slug": "san-diego",
@@ -739,7 +761,7 @@
    "travel": 5530
   },
   {
-   "rank": 34,
+   "rank": 35,
    "city": "Wroclaw",
    "country": "Poland",
    "slug": "wroclaw",
@@ -761,7 +783,7 @@
    "travel": 5097
   },
   {
-   "rank": 35,
+   "rank": 36,
    "city": "Marseille",
    "country": "France",
    "slug": "marseille",
@@ -783,7 +805,7 @@
    "travel": 4964
   },
   {
-   "rank": 36,
+   "rank": 37,
    "city": "Perth",
    "country": "Australia",
    "slug": "perth",
@@ -805,7 +827,7 @@
    "travel": 16418
   },
   {
-   "rank": 37,
+   "rank": 38,
    "city": "Sarajevo",
    "country": "Bosnia and Herzegovina",
    "slug": "sarajevo",
@@ -827,7 +849,7 @@
    "travel": 6310
   },
   {
-   "rank": 38,
+   "rank": 39,
    "city": "Munich",
    "country": "Germany",
    "slug": "munich",
@@ -849,7 +871,7 @@
    "travel": 14048
   },
   {
-   "rank": 39,
+   "rank": 40,
    "city": "Tel Aviv",
    "country": "Israel",
    "slug": "tel-aviv",
@@ -871,7 +893,7 @@
    "travel": 4091
   },
   {
-   "rank": 40,
+   "rank": 41,
    "city": "Toronto",
    "country": "Canada",
    "slug": "toronto",
@@ -893,7 +915,7 @@
    "travel": 23836
   },
   {
-   "rank": 41,
+   "rank": 42,
    "city": "Cairo",
    "country": "Egypt",
    "slug": "cairo",
@@ -915,7 +937,7 @@
    "travel": 8369
   },
   {
-   "rank": 42,
+   "rank": 43,
    "city": "Philadelphia",
    "country": "United States",
    "slug": "philadelphia",
@@ -937,7 +959,7 @@
    "travel": 5341
   },
   {
-   "rank": 43,
+   "rank": 44,
    "city": "Seattle",
    "country": "United States",
    "slug": "seattle",
@@ -959,7 +981,7 @@
    "travel": 12434
   },
   {
-   "rank": 44,
+   "rank": 45,
    "city": "Toulouse",
    "country": "France",
    "slug": "toulouse",
@@ -981,7 +1003,7 @@
    "travel": 2920
   },
   {
-   "rank": 45,
+   "rank": 46,
    "city": "Manila",
    "country": "Philippines",
    "slug": "manila",
@@ -1001,28 +1023,6 @@
    "ease": 1.0,
    "work_score": 4.17,
    "travel": 9683
-  },
-  {
-   "rank": 46,
-   "city": "Brisbane",
-   "country": "Australia",
-   "slug": "brisbane",
-   "score": 4.07,
-   "demand": 162602,
-   "basis": "predicted (thin competition)",
-   "status": "pending",
-   "trees": 0,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 10,
-   "ease": 1.0,
-   "work_score": 4.07,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
-   "travel": 12731
   },
   {
    "rank": 47,
@@ -2086,28 +2086,6 @@
   },
   {
    "rank": 95,
-   "city": "Trento",
-   "country": "Italy",
-   "slug": "trento",
-   "score": 1.41,
-   "demand": 56455,
-   "basis": "predicted (thin competition)",
-   "status": "published",
-   "trees": 10,
-   "photos": 1,
-   "walks": 1,
-   "register": 20,
-   "ready": 4,
-   "supply": 24,
-   "target": 10,
-   "ease": 1.98,
-   "work_score": 2.79,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
-   "travel": 1504
-  },
-  {
-   "rank": 96,
    "city": "Marrakech",
    "country": "Morocco",
    "slug": "marrakech",
@@ -2128,6 +2106,28 @@
    "work_score": 2.78,
    "article": "Marrakesh",
    "travel": 15799
+  },
+  {
+   "rank": 96,
+   "city": "Trento",
+   "country": "Italy",
+   "slug": "trento",
+   "score": 1.41,
+   "demand": 56455,
+   "basis": "predicted (thin competition)",
+   "status": "published",
+   "trees": 10,
+   "photos": 1,
+   "walks": 1,
+   "register": 20,
+   "ready": 2,
+   "supply": 22,
+   "target": 10,
+   "ease": 1.94,
+   "work_score": 2.74,
+   "impressions_10d": 0,
+   "clicks_10d": 0,
+   "travel": 1504
   },
   {
    "rank": 97,
@@ -2359,7 +2359,7 @@
    "demand": 52933,
    "basis": "predicted (thin competition)",
    "status": "published",
-   "trees": 7,
+   "trees": 8,
    "photos": 1,
    "walks": 1,
    "register": 17,
@@ -2381,12 +2381,12 @@
    "demand": 63714,
    "basis": "predicted (thin competition)",
    "status": "published",
-   "trees": 6,
+   "trees": 7,
    "photos": 0,
-   "walks": 1,
+   "walks": 2,
    "register": 30,
-   "ready": 3,
-   "supply": 33,
+   "ready": 2,
+   "supply": 32,
    "target": 10,
    "ease": 1.5,
    "work_score": 2.39,
@@ -2869,8 +2869,8 @@
    "photos": 9,
    "walks": 3,
    "register": 129,
-   "ready": 3,
-   "supply": 132,
+   "ready": 2,
+   "supply": 131,
    "target": 10,
    "impressions_10d": 3,
    "clicks_10d": 2,
@@ -2931,12 +2931,12 @@
    "demand": 51727,
    "basis": "predicted (thin competition)",
    "status": "published",
-   "trees": 4,
+   "trees": 6,
    "photos": 0,
    "walks": 1,
-   "register": 26,
-   "ready": 0,
-   "supply": 26,
+   "register": 30,
+   "ready": 1,
+   "supply": 31,
    "target": 10,
    "ease": 1.5,
    "work_score": 1.94,

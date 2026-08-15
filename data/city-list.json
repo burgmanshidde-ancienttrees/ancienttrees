@@ -21,6 +21,14 @@
    "trees": 17
   },
   {
+   "city": "Melbourne",
+   "country": "Australia",
+   "slug": "melbourne",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
+  },
+  {
    "city": "Kyoto",
    "country": "Japan",
    "slug": "kyoto",
@@ -114,14 +122,6 @@
    "city": "Jakarta",
    "country": "Indonesia",
    "slug": "jakarta",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
-  },
-  {
-   "city": "Melbourne",
-   "country": "Australia",
-   "slug": "melbourne",
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
