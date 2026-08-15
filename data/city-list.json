@@ -183,6 +183,14 @@
    "trees": 0
   },
   {
+   "city": "Wroclaw",
+   "country": "Poland",
+   "slug": "wroclaw",
+   "status": "published",
+   "demand_views_90d": 123894,
+   "trees": 4
+  },
+  {
    "city": "Munich",
    "country": "Germany",
    "slug": "munich",
@@ -396,14 +404,6 @@
    "trees": 0
   },
   {
-   "city": "Wroclaw",
-   "country": "Poland",
-   "slug": "wroclaw",
-   "status": "published",
-   "demand_views_90d": 123894,
-   "trees": 0
-  },
-  {
    "city": "Zagreb",
    "country": "Croatia",
    "slug": "zagreb",
@@ -535,6 +535,14 @@
    "trees": 25
   },
   {
+   "city": "Potsdam",
+   "country": "Germany",
+   "slug": "potsdam",
+   "status": "published",
+   "demand_views_90d": 51727,
+   "trees": 4
+  },
+  {
    "city": "Salamanca",
    "country": "Spain",
    "slug": "salamanca",
@@ -580,14 +588,6 @@
    "status": "published",
    "demand_views_90d": 394702,
    "trees": 10
-  },
-  {
-   "city": "Potsdam",
-   "country": "Germany",
-   "slug": "potsdam",
-   "status": "published",
-   "demand_views_90d": 51727,
-   "trees": 0
   },
   {
    "city": "Berlin",
