@@ -5662,5 +5662,13 @@
    "latitude": -37.839247,
    "longitude": 145.089896
   }
- ]
+ ],
+ "data_quality": {
+  "field": "girth_m",
+  "problem": "BIMODAL AND MISLABELLED. 107 values are plausible as metres (0 to 8). 194 are physically impossible as metres (68 to 235) and are centimetres. Found 2026-08-15 by a verify pass that refused to use any Boroondara entry rather than guess, which was the right call.",
+  "why it is separable": "The two populations do not overlap: nothing sits between 8 and 68. A value under 20 is metres, a value over 20 is centimetres. Stated here rather than applied in place, because a silent correction is how the ICNF import once turned a 2.84 metre trunk into 2.84 centimetres and nobody noticed for days.",
+  "what a pass must do": "Convert before use, state the conversion in verify_notes, and sanity-check the result against the tree's height and canopy_spread_m, which are in the same record and are NOT affected.",
+  "also note": "Roughly a third of Boroondara entries stand on private land (front and rear gardens, golf clubs). Hard rule 10 excludes those outright, whatever the register says.",
+  "recorded": "2026-08-15"
+ }
 }
