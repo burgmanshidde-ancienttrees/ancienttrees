@@ -133,6 +133,12 @@
    "date": "2026-08-14",
    "problem": "403 to WebFetch on every URL tried (not a hang)",
    "workaround": "curl -m 20 with a browser user agent returns clean 200s, same pattern as monumentaltrees.com and sites.heritage.brussels"
+  },
+  "bigtrees.forestry.ubc.ca": {
+   "host": "bigtrees.forestry.ubc.ca",
+   "date": "2026-08-15",
+   "problem": "UBC's IT bot-defense returns a captcha challenge page (200 status, page body is the captcha itself) to plain curl on every path tried, including /terms-of-use/ and /bc-bigtree-registry/champion/. Not a hang, and captchas are never to be solved by an agent.",
+   "workaround": "none found this pass; the BC Big Tree Registry licence and downloadable Excel remain unverified. A session with a real browser (this project's Browser pane, not curl/WebFetch) should be able to clear it; do not attempt to bypass the captcha programmatically."
   }
  }
 }

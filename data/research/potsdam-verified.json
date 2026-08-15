@@ -1,0 +1,92 @@
+[
+  {
+    "id": "pot_001",
+    "name": "The Linden of Park Jagdschloss Glienicke",
+    "species": "Small-leaved Lime (Tilia cordata)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Park Jagdschloss Glienicke, northwestern section, about 200m southeast of Glienicker Brücke, Königstraße, Berlin-Wannsee (Steglitz-Zehlendorf), on the Potsdam border",
+      "latitude": 52.4127,
+      "longitude": 13.093374,
+      "neighbourhood": "Schlosspark Glienicke, Berlin side of the Glienicke Bridge"
+    },
+    "verified_sources": [
+      "https://www.berlin.de/sen/uvk/_assets/natur-gruen/naturschutz/schutzgebiete/aktuelle-verfahren/ndvoe_anl1_201201.pdf"
+    ],
+    "access": "Free, open to the public year-round. Stands in Park Jagdschloss Glienicke, the open parkland around the hunting lodge (not the fenced institute garden behind the building itself, which is a separate, uncertain-access area, see leads).",
+    "transport": "Tram 93 from Potsdam Hauptbahnhof to the Glienicker Brücke stop, about 12 minutes, then a short walk into the park.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Land Berlin Naturdenkmal register id 6-99/B (Tilia cordata, Winter-Linde), designated as a protected natural monument (Naturdenkmal), property/Flur 110037-14-82. Only one source found this pass (the official Land Berlin register/gazette, most recently reissued as a PDF dated 8.12.20 that lists this exact tree at this exact place description, matching our imported WFS register entry word for word). No independent second source found in the time available; flag until one turns up. No age or vitality field in the register (standard gap for this dataset). Part of Park Glienicke, an English landscape garden begun by Lenné in 1816 for Prince Carl of Prussia, part of the UNESCO World Heritage Site 'Palaces and Parks of Potsdam and Berlin'. Sits right by the Glienicke Bridge, the Cold War 'Bridge of Spies' where US-Soviet spy exchanges took place; worth a line for the writer even though the bridge itself is not the subject."
+  },
+  {
+    "id": "pot_002",
+    "name": "The King's Linden",
+    "species": "Small-leaved Lime (Tilia cordata)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Schlossgarten Glienicke, on Königstraße opposite the Wiesenteich pond, Berlin-Wannsee (Steglitz-Zehlendorf), on the Potsdam border",
+      "latitude": 52.413467,
+      "longitude": 13.095869,
+      "neighbourhood": "Schlosspark Glienicke, Berlin side of the Glienicke Bridge"
+    },
+    "verified_sources": [
+      "https://www.berlin.de/sen/uvk/_assets/natur-gruen/naturschutz/schutzgebiete/aktuelle-verfahren/ndvoe_anl1_201201.pdf",
+      "https://en.wikipedia.org/wiki/Park_Glienicke"
+    ],
+    "access": "Free, open to the public year-round. Wikipedia states Park Glienicke 'is open to the general public' with no hours or admission restriction found. Part of the UNESCO World Heritage Site 'Palaces and Parks of Potsdam and Berlin'.",
+    "transport": "Tram 93 from Potsdam Hauptbahnhof to the Glienicker Brücke stop, about 12 minutes, then a short walk into the park to the Schlossgarten.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Land Berlin Naturdenkmal register id 6-100/B, named 'Königslinde' (King's Linden) in the official register itself, at Schlossgarten Glienicke on Königstraße opposite the Wiesenteich pond, property/Flur 110037-14-85. Two sources: the official register/gazette (naming it Königslinde) and English Wikipedia's Park Glienicke article, which independently calls it 'one of the most impressive solitary trees on the estate' and says a mosaic floor near the Lions Fountain marks the spot where visitors once held tea parties beneath it, historic detail worth leading with. Flagged only because neither source is a recent (last few years) dated photo or observation confirming it is still standing; the register itself was pulled from a live Land Berlin geodata service on 2026-08-07, i.e. current government data, which is reassuring but not a direct sighting. Part of Lenné's landscape garden for Prince Carl of Prussia, begun 1816, UNESCO World Heritage. No age or girth in either source; do not invent one."
+  },
+  {
+    "id": "pot_003",
+    "name": "The Schlosspark Glienicke Oak",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Schlosspark Glienicke, about 150m north of Königstraße 35C, Berlin-Wannsee (Steglitz-Zehlendorf), on the Potsdam border",
+      "latitude": 52.415513,
+      "longitude": 13.100346,
+      "neighbourhood": "Schlosspark Glienicke, Berlin side of the Glienicke Bridge"
+    },
+    "verified_sources": [
+      "https://www.berlin.de/sen/uvk/_assets/natur-gruen/naturschutz/schutzgebiete/aktuelle-verfahren/ndvoe_anl1_201201.pdf"
+    ],
+    "access": "Free, open to the public year-round, same park as pot_001 and pot_002, part of the UNESCO World Heritage Site 'Palaces and Parks of Potsdam and Berlin'.",
+    "transport": "Tram 93 from Potsdam Hauptbahnhof to the Glienicker Brücke stop, about 12 minutes, then a walk of a few minutes further into the park than the linden trees above.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Land Berlin Naturdenkmal register id 6-105/B (Quercus robur, Stiel-Eiche), property/Flur 110037-14-130, matching our imported WFS register entry and the official gazette PDF word for word. CAUTION: a WebSearch AI summary claimed this tree has a '130cm circumference', but checking the source PDF directly shows '130' is the Flur (cadastral parcel) number, not a measurement; that figure is NOT used here and should not be trusted if it resurfaces. No independent second source and no genuine girth or age figure found this pass; flag until one turns up. Only known fact beyond the register entry is that it stands in the same Lenné-designed landscape as the two lindens above, an easy three-tree stop on one walk."
+  },
+  {
+    "id": "pot_004",
+    "name": "The Jägerhof Oak",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "roughly 300 years",
+    "age_min": 250,
+    "age_max": 350,
+    "location": {
+      "address": "Volkspark Klein-Glienicke, at the Jägerhof, south of the Krughorn headland, Berlin-Wannsee (Steglitz-Zehlendorf), on the Potsdam border",
+      "latitude": 52.422616,
+      "longitude": 13.099746,
+      "neighbourhood": "Volkspark Klein-Glienicke, Berlin side of the Glienicke Bridge"
+    },
+    "verified_sources": [
+      "https://www.berlin.de/sen/uvk/_assets/natur-gruen/naturschutz/schutzgebiete/aktuelle-verfahren/ndvoe_anl1_201201.pdf",
+      "https://www.ostdeutsches-baumarchiv.de/photosearch/eiche-jaegerhof-glienicke-berlin"
+    ],
+    "access": "Free, open to the public. Volkspark Klein-Glienicke was opened to the public in the 1930s when Berlin acquired the estate (Wikipedia/dewiki: Park Klein-Glienicke); the Jägerhof and its surrounding area are specifically confirmed publicly accessible, high above the Havel-side path near the Krughorn.",
+    "transport": "Tram 93 from Potsdam Hauptbahnhof to the Glienicker Brücke stop, about 12 minutes, then roughly a 15-20 minute walk south along the park path to the Jägerhof; forms one walk with pot_001 to pot_003.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Land Berlin Naturdenkmal register id 6-73/B (Quercus robur, Stiel-Eiche), at the Jägerhof in Volkspark Klein-Glienicke, matching the official register and gazette PDF exactly. Second, independent source: Ostdeutsches Baumarchiv (a dedicated German veteran-tree archive, unaffiliated with the Berlin government) gives a girth of 566cm measured in 2023 at 1.3m height, with a photo dated 2011, i.e. genuine recent-vintage evidence the tree is alive and standing. Age reasoning from that same source: the Jägerhof building was constructed before 1830, and the oak 'was likely already more than 100 years old' at that time, meaning it predates roughly 1730, so 'roughly 300 years' (250-350 range) is a loose but source-grounded estimate, not an invented one; say so plainly if the writer wants to hedge it further. This is the strongest-evidenced tree of the four: two independent sources, a recent girth measurement, and a specific age rationale. Good story material: a veteran oak that already stood in the woods more than a century before Prince Carl of Prussia had the Jägerhof built as a hunting lodge next to it."
+  }
+]
