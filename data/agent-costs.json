@@ -1620,6 +1620,15 @@
     "note": "three registers imported: Czech AOPK 4,279 single trees (CC BY 4.0, 22 dead flagged unpublishable), Poland GDOS 8,053 (CC0, licence contradiction resolved: the CC BY-SA was website boilerplate, the dataset record says CC0), Geneva SITG 204 remarkable. Greece deferred",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "north-america",
+    "kind": "register",
+    "tokens": 100000,
+    "trees": 0,
+    "note": "Massachusetts DCR (139 champion + 476 legacy, public record) and Quebec City (685, CC BY 4.0, per-tree coords) imported; American Forests, Texas Big Tree Registry and the Live Oak Society all BLOCKED on licence and drafted as permission asks; BC Big Tree unresolved behind a captcha; Ontario a dead end",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
