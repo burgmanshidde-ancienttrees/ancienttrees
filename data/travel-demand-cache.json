@@ -209,7 +209,7 @@
    "on": "2026-08-15"
   },
   "Syracuse": {
-   "views": 133,
+   "views": 1749,
    "on": "2026-08-15"
   },
   "Auckland": {
@@ -369,7 +369,7 @@
    "on": "2026-08-15"
   },
   "New York": {
-   "views": 501,
+   "views": 21737,
    "on": "2026-08-15"
   },
   "Santiago": {
@@ -473,7 +473,7 @@
    "on": "2026-08-15"
   },
   "Faro": {
-   "views": 0,
+   "views": 1620,
    "on": "2026-08-15"
   },
   "Bergen": {
@@ -617,7 +617,7 @@
    "on": "2026-08-15"
   },
   "Cartagena": {
-   "views": 225,
+   "views": 5169,
    "on": "2026-08-15"
   },
   "Luxembourg City": {
@@ -645,7 +645,7 @@
    "on": "2026-08-15"
   },
   "Brussels": {
-   "views": 0,
+   "views": 10781,
    "on": "2026-08-15"
   },
   "Cadiz": {
@@ -1005,7 +1005,7 @@
    "on": "2026-08-15"
   },
   "Cork": {
-   "views": 0,
+   "views": 3880,
    "on": "2026-08-15"
   },
   "Helsinki": {
@@ -1037,7 +1037,7 @@
    "on": "2026-08-15"
   },
   "Split": {
-   "views": 0,
+   "views": 3874,
    "on": "2026-08-15"
   },
   "Ljubljana": {
@@ -1077,7 +1077,7 @@
    "on": "2026-08-15"
   },
   "Bath": {
-   "views": 74,
+   "views": 3081,
    "on": "2026-08-15"
   },
   "Belgrade": {
@@ -1226,7 +1226,7 @@
   "Charleston": "Charleston (South Carolina)",
   "San Francisco": "San Francisco",
   "Alicante": "Alicante",
-  "Syracuse": "Syracuse",
+  "Syracuse": "Syracuse (Italy)",
   "Auckland": "Auckland",
   "Vancouver": "Vancouver",
   "Frankfurt": "Frankfurt",
@@ -1266,7 +1266,7 @@
   "Dresden": "Dresden",
   "Vilnius": "Vilnius",
   "Stuttgart": "Stuttgart",
-  "New York": "New York",
+  "New York": "New York City",
   "Santiago": "Santiago",
   "Trento": "Trento",
   "Marrakech": "Marrakech",
@@ -1292,7 +1292,7 @@
   "Cagliari": "Cagliari",
   "Perugia": "Perugia",
   "Valletta": "Valletta",
-  "Faro": null,
+  "Faro": "Faro",
   "Bergen": "Bergen",
   "Ghent": "Ghent",
   "Jaipur": "Jaipur",
@@ -1328,14 +1328,14 @@
   "Parma": "Parma",
   "Graz": "Graz",
   "Tokyo": "Tokyo (prefecture)",
-  "Cartagena": "Cartagena",
+  "Cartagena": "Cartagena (Colombia)",
   "Luxembourg City": "Luxembourg (city)",
   "Aix-en-Provence": "Aix-en-Provence",
   "Montpellier": "Montpellier",
   "Avignon": "Avignon",
   "Mostar": "Mostar",
   "Berlin": "Berlin",
-  "Brussels": null,
+  "Brussels": "Brussels",
   "Cadiz": "Cádiz",
   "Leiden": "Leiden",
   "Sorrento": "Sorrento",
@@ -1425,7 +1425,7 @@
   "Reykjavik": "Reykjavík",
   "Rotterdam": "Rotterdam",
   "Ubud": "Ubud",
-  "Cork": null,
+  "Cork": "Cork",
   "Helsinki": "Helsinki",
   "Zaragoza": "Zaragoza",
   "Granada": "Granada",
@@ -1433,7 +1433,7 @@
   "Bucharest": "Bucharest",
   "Bled": "Bled",
   "Cordoba": "Córdoba (city, Spain)",
-  "Split": null,
+  "Split": "Split",
   "Ljubljana": "Ljubljana",
   "Fukuoka": "Fukuoka",
   "Verona": "Verona",
@@ -1443,7 +1443,7 @@
   "Lucca": "Lucca",
   "Utrecht": "Utrecht",
   "Athens": "Athens",
-  "Bath": "Bath (disambiguation)",
+  "Bath": "Bath",
   "Belgrade": "Belgrade",
   "Boston": "Boston",
   "Bristol": "Bristol",

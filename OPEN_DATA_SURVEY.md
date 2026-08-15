@@ -2091,3 +2091,164 @@ exists beyond Quebec City's own municipal one.
 `data/registers/quebec-city-arbres-remarquables.json`. One fetch-blocklist
 entry added (`bigtrees.forestry.ubc.ca`). No host hung (the one HTTP:000 on
 `texasforestinfo.tamu.edu` resolved clean on immediate retry, not logged).
+
+---
+
+## Register scouting: Australia and Canada, the Wikivoyage re-rank (2026-08-15)
+
+Dispatched after the queue's demand proxy switched from English Wikipedia to
+English Wikivoyage pageviews, which re-ranked Sydney, Perth, Brisbane,
+Melbourne, Adelaide (AU) and Toronto, Montreal, Vancouver, Ottawa, Calgary
+(CA) to the top of the zero-register list. Verify-agent scope only: no
+photos, no prose, no city files touched. ~40 minutes, licence-led, per this
+file's standing method. Builds on the 2026-08-13 English-speaking-block scan
+and its 2026-08-13 Melbourne/Sydney/Vancouver/Toronto follow-up above; this
+pass looked for what those left unscanned (Perth, Adelaide, Brisbane's own
+overlay, Ottawa, Calgary, Montreal) plus a second look at Melbourne via its
+constituent councils rather than the city proper.
+
+### USABLE, imported
+
+**City of Yarra (inner Melbourne), Significant Trees register.**
+`data/registers/melbourne-yarra-significant-trees.json`. 232 point records,
+CC BY 4.0 per data.gov.au's harvested licence metadata (license_title
+"Creative Commons Attribution 4.0 International", license_url
+`creativecommons.org/licenses/by/4.0`). Genuine designation: trees "identified
+and assessed (against defined categories) as having scientific, social,
+historic and aesthetic value" (dataset description, verbatim). Per-tree WGS84
+coordinates, species (genus + full binomial), common name, DBH, height,
+maturity, text age estimate ("100+ years"), a significance-category list
+(Aesthetic Value, Outstanding Size, Particularly Old, Historic Value etc.)
+and address. 173 of 232 sit within 6km of Melbourne's CBD (Fitzroy,
+Collingwood, Richmond, Clifton Hill, Carlton North, Alphington), so this is a
+genuine Melbourne-metro cluster, not a distant satellite town. No vitality
+field. **Opens Melbourne** (the city itself was previously not-recommended:
+its own open-data portal only publishes the full 80,000-tree inventory).
+
+**City of Boroondara (eastern Melbourne), Significant Tree register.**
+`data/registers/melbourne-boroondara-significant-trees.json`. 314 records, CC
+BY 3.0 Australia per data.gov.au's harvested metadata and the dataset's own
+notes field ("Council makes this compilation available pursuant to the terms
+of a Creative Commons CC-BY licence Australia v3.0", verbatim). 229 of 314
+sit within 12km of the CBD (Hawthorn, Camberwell, Kew, Balwyn, Glen Iris,
+Canterbury). Botanical name, common name, height, canopy spread, girth, a
+plain-integer age (years at 2016 survey), significance category, free-text
+health, and critically a per-record `POSITION` field. **Hard rule 10 is live
+and unresolved in this file**: the position breakdown (46 "Front garden", 13
+"Rear garden" out of 314, against public values like "Park", named parks and
+golf clubs) means roughly a fifth of this register sits on private land and
+must never become a candidate; the rest still needs a per-record check, this
+file is not pre-filtered the way Quebec City's `TYPE_PROP` split was.
+**Deepens the Melbourne cluster Yarra opens**, a second, adjacent council.
+
+**Brisbane City Council, City Plan 2014 Significant landscape tree overlay.**
+`data/registers/brisbane-significant-landscape-trees.json`. 558 of the
+overlay's 1,740 total records kept (filtered to the `Individual or group
+significant landscape tree site` sub-category only; the other three
+sub-categories, Adjoining site / Landscape features / Vegetation protection
+order, are a different kind of designation and were not imported). CC BY 4.0,
+proving sentence from the dataset's ArcGIS Hub source
+(`hub.arcgis.com/api/v3/datasets/bed1dde0fb624870a93cbe58c0b8e0b2_0`),
+`licenseInfo` verbatim: "This material is licensed under a Creative Commons -
+Attribution 4.0 licence. No access or use limitations." Cross-confirmed by
+data.gov.au's own harvested `license_title: "CC-BY-4.0"` for the same
+dataset. 247 of 558 sit within 8km of the Brisbane CBD. **The catch: this is
+the raw statutory overlay only, no species, name, age or significance-reason
+field exists anywhere in the feature class**, only a polygon (converted here
+to its centroid). It answers "a council-designated significant tree sits
+here" and nothing else; species and age must come from elsewhere (imagery,
+a second source) before any candidate clears the two-source bar, and no
+land-ownership flag exists, so hard rule 10 needs a per-candidate imagery
+check. Opens Brisbane as a coordinate-verified lead list, not yet as
+research-ready candidates the way Yarra or NCC are.
+
+**National Capital Commission (NCC), "A Living Legacy: Remarkable Trees of
+Canada's Capital."** `data/registers/canada-capital-ncc-remarkable-trees.json`.
+166 point records spanning Ottawa, Ontario AND Gatineau, Quebec (both banks
+of the Ottawa River; no country/province field distinguishes them, a verify
+pass must place each coordinate itself). Licence: Open Government Licence -
+Canada v2.0, confirmed both via open.canada.ca's package metadata
+(`license_id: ca-ogl-lgo`) and the dataset's own ArcGIS Hub `licenseInfo`
+link to the same licence text. **The richest register found this pass**: a
+curated 2020 compilation (not a bulk inventory) with Latin name, common name
+in English/French/Indigenous where recorded, a genuine descriptive paragraph
+per tree (siting, history, why it was chosen) that maps almost directly onto
+`verify_notes`, a `SECTOR` grouping field for clustering, and per-tree WGS84
+coordinates. 133 of 166 sit within 10km of downtown Ottawa (sectors CORE,
+OUL, CEF_ARBORETUM, GP, GB, QUL, RH; the arboretum sector alone holds 65).
+No numeric age/girth/height and no vitality field (2020 snapshot, not a
+maintained inventory); no explicit ownership flag but the NCC's core mandate
+is federal PUBLIC land in the capital region (parks, parkways, driveways),
+so there is a strong prior toward public access that still needs a per-tree
+check rather than a blanket assumption. **Opens Ottawa**, and separately, a
+Gatineau cluster if a future pass wants it.
+
+### Scouted, real designation found, not usable this pass
+
+**Quebec City "Potentially remarkable trees" already imported** (see the
+2026-08-15 entry above this section); found again independently here via
+open.canada.ca's federal catalogue, which mirrors it. No new information.
+
+### Scouted, nothing found
+
+**Perth**: `data.gov.au` organization filter for "city-of-perth" returned
+zero packages for "tree". No City of Perth or Western Australian
+significant/heritage tree open dataset surfaced this pass. Not exhausted,
+just not found with a portal search; a direct fetch of the City of Perth's
+own open-data site (if one exists separate from data.gov.au) was not
+attempted.
+
+**Adelaide**: `data.sa.gov.au`'s search API appears to federate the same
+national CKAN index as `data.gov.au` (identical result set for "significant
+tree", dominated by Victorian councils), so no Adelaide-specific or South
+Australian state significant-tree dataset was found this pass either. This
+confirms rather than resolves the 2026-08-13 finding that Adelaide's
+Significant Tree designation is a Development Act / Planning Code overlay
+administered per-council (Adelaide, Burnside, Prospect, Unley) with no single
+fetch; none of those councils' individual portals were checked this pass.
+
+**Toronto**: not re-scanned; the 2026-08-13 verdict (no heritage/notable tree
+dataset exists on `open.toronto.ca`, only the unlicensed full street-tree
+inventory) stands.
+
+**Vancouver**: not re-scanned; the 2026-08-13 verdict stands (35 named
+heritage trees, Open Government Licence, but zero coordinates; BC Big Tree
+Registry still bot-blocked, logged in `data/fetch-blocklist.json`).
+
+**Montreal**: `donnees.montreal.ca`'s CKAN search for "arbre remarquable"
+returned exactly one dataset, "Arbres publics sur le territoire de la Ville"
+(the full public-tree inventory, fails the semantic filter). Confirms the
+2026-08-13 finding: no distinct remarkable/heritage tree open dataset exists
+for Montreal; the "arbres-remarquables" material that does exist is a Mont
+Royal-specific webpage, not structured open data.
+
+**Calgary**: browsed `data.calgary.ca` for "significant tree" / "heritage
+tree" / "notable tree"; no matching dataset titles surfaced. Not deeply
+scanned (one browse-page fetch), so this is "nothing found," not "confirmed
+absent."
+
+### Coverage after this pass
+
+Four new register files, all licence-proven CC BY 4.0 / CC BY 3.0 AU / OGL
+Canada: Yarra and Boroondara together open Melbourne with 402 candidate
+points within a reasonable radius of the CBD across two adjoining councils;
+Brisbane's overlay opens it as a coordinate-verified lead list (species and
+age still to source); Ottawa opens cleanly with the best per-tree prose of
+any register scouted so far, plus a Gatineau cluster as a bonus. Sydney
+remains the single best-instrumented register in the whole survey and is
+still blocked purely on licence (`data/registers` unaffected; see the
+2026-08-13 entry above), worth the specific outreach ask already recorded
+there. Perth, Adelaide, Toronto, Vancouver, Montreal and Calgary remain
+either genuinely empty or under-scanned; none were exhausted.
+
+No host hung this pass; nothing new added to `data/fetch-blocklist.json`.
+
+**Files written:** `data/registers/melbourne-yarra-significant-trees.json`,
+`data/registers/melbourne-boroondara-significant-trees.json`,
+`data/registers/brisbane-significant-landscape-trees.json`,
+`data/registers/canada-capital-ncc-remarkable-trees.json`.
+
+Estimated token usage for this pass: approximately 55k-65k tokens (portal
+search and API fetches across roughly 10 targets, four full-dataset
+downloads and imports, no photo hunting, no prose, no individual tree
+verification).

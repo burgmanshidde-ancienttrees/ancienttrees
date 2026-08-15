@@ -1,0 +1,142 @@
+#!/usr/bin/env python3
+"""Recompute the queue's `score` from travel demand and measured yield.
+
+Hidde, 2026-08-15: "I don't think Wikipedia impression gives a good
+representation of English tourist can't we make our top 250 smarter?"
+
+Until today `score` was demand times yield where demand was English Wikipedia
+pageviews and yield came from a fame-penalty band. Both halves were tested on
+2026-08-15 against the one outcome we actually care about, `impressions_10d`
+from the Search Console readback, on the 55 published cities Google has
+indexed. Both halves lost.
+
+    English Wikipedia pageviews   rho +0.23   <- the old demand term
+    English Wikivoyage pageviews  rho +0.32   <- the new one
+    English share of pageviews    rho +0.11   <- the anglophone hypothesis
+
+WHAT CHANGED, and why each change is evidence rather than taste.
+
+1. DEMAND IS TRAVEL INTENT. `travel` (English Wikivoyage pageviews, see
+   travel_demand.py) replaces `demand` (English Wikipedia pageviews) as the
+   size term. Someone reading a Wikivoyage article is planning a trip.
+   Potsdam is famous for a conference; nobody packs a bag for it.
+
+2. THE FAME PENALTY IS GONE. CITY_QUEUE.md was built on "the more famous a
+   city is, the worse we do there", derived from ten cities in a digest, and
+   it paid out as a band that multiplied contested cities by 1.08 and quiet
+   ones by 2.50. On all 111 published cities it does not survive. Split by
+   travel demand into thirds, impressions per 100k travel views run 206 / 224
+   / 184, which is flat, and clicks run 12 / 23 / 33, which points the other
+   way outright. So the predicted yield is now FLAT: we stopped penalising
+   fame, and deliberately did not start rewarding it, because the click counts
+   are small and half the site is still unindexed.
+
+3. MEASURED YIELD STAYS, because it is the one term that was never a guess.
+   A city where Search Console has spoken scores on what it actually earns per
+   unit of travel demand, normalised so the median measured city sits at 1.0.
+
+4. PUBLISHED AND NEVER RANKED still scores 0.25, and this is now the SHAKIEST
+   rule in the file rather than the firmest. It was written when absence of
+   clicks on a live page read as evidence of no demand. Since then we learned
+   that 346 pages sit "Discovered - currently not indexed", so London,
+   Edinburgh, Portland, Hobart and Quebec City all show zero while never having
+   been crawled. That is not evidence of low yield, it is evidence of no crawl.
+   Kept at 0.25 for now because demoting a page we cannot see is still the
+   safer error, but it should be revisited the moment indexing improves, and
+   any city on it deserves a look before it is written off.
+
+WHAT DID NOT CHANGE: `ease` (register supply makes a city cheap to open, and
+that is measured at 0.4k tokens per tree against 27k for research), the
+four-tree floor, the targets, and every hard rule. This file changes the ORDER
+of work and nothing else.
+
+    python3 scripts/rescore.py            # show what would change
+    python3 scripts/rescore.py --write    # write score and basis into the queue
+"""
+import json
+import os
+import statistics
+import sys
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+QUEUE = os.path.join(ROOT, "data", "city-queue.json")
+
+NEVER_RANKED_YIELD = 0.25
+PREDICTED_YIELD = 1.0
+
+
+def measured_yield(c):
+    """Impressions per 1,000 Wikivoyage views. None when unmeasurable."""
+    t = c.get("travel") or 0
+    if t < 500:
+        # Too little travel demand for a ratio to mean anything: a city on 40
+        # views and 2 impressions would otherwise outscore Rome.
+        return None
+    return (c.get("impressions_10d") or 0) / (t / 1000.0)
+
+
+def main():
+    write = "--write" in sys.argv
+    doc = json.load(open(QUEUE, encoding="utf-8"))
+    cities = doc["cities"]
+
+    ratios = [measured_yield(c) for c in cities
+              if c["status"] == "published" and (c.get("impressions_10d") or 0) > 0]
+    ratios = [r for r in ratios if r]
+    mid = statistics.median(ratios)
+    print("median measured yield: %.2f impressions per 1,000 travel views "
+          "(%d cities)" % (mid, len(ratios)))
+
+    before = {c["city"]: c.get("rank") for c in cities}
+    for c in cities:
+        travel = c.get("travel") or 0
+        base = travel / 1000.0
+        if c["status"] == "published" and (c.get("impressions_10d") or 0) > 0:
+            my = measured_yield(c)
+            if my is not None:
+                c["score"] = round(base * (my / mid), 2)
+                c["basis"] = "measured"
+                continue
+        if c["status"] == "published":
+            c["score"] = round(base * NEVER_RANKED_YIELD, 2)
+            c["basis"] = "published, never ranked (may be uncrawled)"
+        else:
+            c["score"] = round(base * PREDICTED_YIELD, 2)
+            c["basis"] = "predicted (travel demand)"
+        if not travel:
+            c["score"] = None
+            c["basis"] = "no travel demand measured"
+
+    ranked = sorted([c for c in cities if c.get("score") is not None],
+                    key=lambda c: (-(c["score"] * (c.get("ease") or 1.0)), c["city"]))
+    for n, c in enumerate(ranked, 1):
+        c["work_score"] = round(c["score"] * (c.get("ease") or 1.0), 2)
+        c["rank"] = n
+    for c in cities:
+        if c.get("score") is None:
+            c["rank"] = None
+
+    print("\nBiggest climbers (old rank -> new):")
+    moves = [(before.get(c["city"]) - c["rank"], c["city"], c) for c in ranked
+             if before.get(c["city"]) and c["rank"]]
+    for d, _, c in sorted(moves, key=lambda m: (-m[0], m[1]))[:12]:
+        print("  +%-4d %-20s %4d -> %-4d  travel %8s  register %s"
+              % (d, c["city"], before[c["city"]], c["rank"],
+                 "{:,}".format(c.get("travel") or 0), c.get("register") or 0))
+    print("\nBiggest fallers:")
+    for d, _, c in sorted(moves, key=lambda m: (m[0], m[1]))[:12]:
+        print("  %-5d %-20s %4d -> %-4d  travel %8s  wikipedia %s"
+              % (d, c["city"], before[c["city"]], c["rank"],
+                 "{:,}".format(c.get("travel") or 0),
+                 "{:,}".format(c.get("demand") or 0)))
+
+    if write:
+        cities.sort(key=lambda c: (c["rank"] is None, c["rank"] or 0, c["city"]))
+        json.dump(doc, open(QUEUE, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
+        print("\nwrote new score, basis and rank into data/city-queue.json")
+    else:
+        print("\n(dry run; pass --write to keep it)")
+
+
+if __name__ == "__main__":
+    main()
