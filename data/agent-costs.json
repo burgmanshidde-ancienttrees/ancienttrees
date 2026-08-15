@@ -1718,6 +1718,24 @@
     "note": "Melbourne 546, Brisbane 558, Ottawa 166, all CC BY or OGL; ~0.05k per tree. Confirmed Toronto/Montreal/Vancouver have no designated register, and Sydney (2504) is blocked on licence only",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "melbourne",
+    "kind": "verify",
+    "tokens": 100000,
+    "trees": 8,
+    "note": "two clusters from the Yarra register; refused all 314 Boroondara entries over a bimodal girth-unit problem, which was the right call and is now recorded in the register file",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "melbourne",
+    "kind": "write",
+    "tokens": 78000,
+    "trees": 8,
+    "note": "first Australian mainland page; diameter stated as diameter per tree; found the southern-hemisphere phenology bug that was live on Hobart",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

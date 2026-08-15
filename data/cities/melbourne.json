@@ -1,0 +1,270 @@
+{
+  "city": "Melbourne",
+  "country": "Australia",
+  "status": "needs_curation",
+  "intro": "Dutch elm disease never reached Australia, so Melbourne still has elms of a size and age Europe lost, and one of them anchors this page. Six of these eight trees stand within about 1.7 kilometres of each other in the small parks of Carlton North, Fitzroy North and Clifton Hill, three kilometres north of the CBD: two holm oaks, a Moreton Bay fig on a filled quarry, a London plane, that English elm, and a river red gum the city classes as remnant. The other two sit out along Yarra Boulevard and make a separate outing.",
+  "meta_description": "Melbourne's old trees stand in the small parks north of the CBD: a 135-year-old English elm, a Moreton Bay fig on a filled quarry, and two river red gums.",
+  "question_meta": "Melbourne's oldest dated tree is an Osage orange on Yarra Boulevard, dated to the 1860s. Where it stands, and seven more of the city's registered trees.",
+  "question_answer": "The oldest tree in Melbourne that anyone has put a date on is the Osage Orange of Yarra Boulevard, in Yarra Bend Park at Burnley, dated to the 1860s and so around 160 years old. The Victorian Heritage Database's citation for the Boulevard Parklands records an Osage orange north-east of the point where Yarra Boulevard meets Swan Street and puts it in that decade; the City of Yarra's significant tree register lists one at the same spot, 27 metres tall and 169 centimetres of diameter at breast height, roughly 5.31 metres round. That is a claim about the best-dated tree rather than the oldest thing growing in the city: six of the eight trees on this page carry only the register's band of over a hundred years, with no year attached at all.",
+  "question_context": "This page is built on the City of Yarra's significant tree register, which covers the inner northern suburbs and was last walked in August 2012. Two things about that source shape everything here. It publishes the diameter of a trunk at breast height rather than the circumference, so every girth quoted on this page is a conversion, and its age field is a set of bands rather than years: six of these eight trees carry nothing more precise than over a hundred years. The dates that do exist come from elsewhere. The National Trust of Australia dated the English elm in Darling Gardens at about 120 years in February 2011, making it roughly 135 now, and the Victorian Heritage Database's citation for the Boulevard Parklands puts the Osage orange on Yarra Boulevard in the 1860s, which is why that tree carries the answer. It stands six or seven kilometres from the rest, so it is a second outing: the walk through Carlton North, Fitzroy North and Clifton Hill takes in six trees in about 1.7 kilometres, starting a few minutes from Rushall station. See the full list on the Melbourne page.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Melbourne?",
+      "a": "The Osage Orange of Yarra Boulevard, in Yarra Bend Park at Burnley. The Victorian Heritage Database dates it to the 1860s, which makes it around 160 years old. Six of the eight trees on this page carry no year at all, only the city register's band of over a hundred years."
+    },
+    {
+      "q": "Are these trees free to visit?",
+      "a": "Yes, every one of them. They stand in public parks and public parkland with no gate and no ticket: Curtain Square, Edinburgh Gardens, Darling Gardens and the Boulevard Parklands along the Yarra."
+    },
+    {
+      "q": "Can I see them all in one walk?",
+      "a": "Six of them, yes. Curtain Square, Edinburgh Gardens and Darling Gardens run in a line through Carlton North, Fitzroy North and Clifton Hill, about 1.7 kilometres end to end and roughly three kilometres from the CBD. The two on Yarra Boulevard are six or seven kilometres away and are a separate outing."
+    },
+    {
+      "q": "Which has the thickest trunk?",
+      "a": "The holm oak in Edinburgh Gardens, at 177 centimetres of diameter at breast height, which is about 5.56 metres around. The City of Yarra measures across the trunk rather than around it, so every girth on this page is a conversion."
+    }
+  ],
+  "hero_tree_id": "mel_003",
+  "oldest_tree_id": "mel_007",
+  "trees": [
+    {
+      "id": "mel_005",
+      "name": "The Moreton Bay Fig of Curtain Square",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "over 100 years",
+      "age_min": 114,
+      "age_max": 160,
+      "location": {
+        "address": "Curtain Square, Canning Street entrance, Carlton North VIC 3054",
+        "latitude": -37.7896464335,
+        "longitude": 144.9723914723,
+        "neighbourhood": "Carlton North"
+      },
+      "location_precision": "confirmed",
+      "access": "Free, always open. Public City of Yarra park (also used as an off-leash dog area).",
+      "transport": "Curtain Square/Rathdowne St bus stop is directly outside; tram route 96 on Nicholson Street is roughly a 5-10 minute walk.",
+      "story": "This park was a hole in the ground, and prisoners dug it. Between 1853 and 1866 the block was a bluestone quarry worked by men from the Collingwood Stockade, and bluestone is the rock Melbourne's kerbs and laneways are still made of. The pit was filled, levelled and planted, and Curtain Square became a square. This fig went in somewhere after that. It is a Moreton Bay fig, Ficus macrophylla, an Australian tree but not a Melbourne one: its home range runs up the east coast around Moreton Bay in Queensland, roughly 1,400 kilometres north, and Victorian gardeners planted it down here anyway for the shade and the ropey buttress roots. It stands 25 metres tall with a trunk of about 4.77 metres round, converted from the 152 centimetres of diameter at breast height the City of Yarra's register publishes, because the register measures across the trunk rather than around it. Local accounts describe a surviving avenue of Moreton Bay figs at the Canning Street entrance, which is where this tree stands. Whether this particular trunk belongs to that avenue is not something anyone has written down. Its age is the register's own band, over a hundred years at the survey in August 2012, and there is no planting date on record. If you know one, tell us.",
+      "verified_sources": [
+        "City of Yarra Significant Trees register (data/registers/melbourne-yarra-significant-trees.json, ref 180)",
+        "City of Yarra Heritage Review, Landscape Citations (local significance listing for Curtain Square, referenced via search; full citation PDF not fetched this pass)"
+      ],
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "mel_006",
+      "name": "The London Plane of Curtain Square",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly a century",
+      "age_min": 95,
+      "age_max": 115,
+      "location": {
+        "address": "Curtain Square, Carlton North VIC 3054",
+        "latitude": -37.7895024546,
+        "longitude": 144.9736909453,
+        "neighbourhood": "Carlton North"
+      },
+      "location_precision": "confirmed",
+      "access": "Free, always open. Public City of Yarra park.",
+      "transport": "Curtain Square/Rathdowne St bus stop is directly outside; tram route 96 on Nicholson Street is roughly a 5-10 minute walk.",
+      "story": "The most recent evidence that this tree is standing is from 2012. The City of Yarra's arborists surveyed Curtain Square in August of that year and recorded a London plane on the Rathdowne Street side of the park: 24 metres tall, 170 centimetres of diameter at breast height, which converts to roughly 5.34 metres of girth, since the register publishes the width across a trunk rather than the measure around it. Only one trunk on this page is heavier, the holm oak in Edinburgh Gardens. The age band on the record is 81 to 100 years, putting the planting somewhere in the decade after the First World War and the tree at roughly a century now. Nothing newer than that survey turned up. Squares here do lose trees: in 2017 Curtain Square's avenue of elms, some of them about a hundred years old, was cut down on safety grounds and replaced with scarlet oaks. That was a different avenue and a different species, and nothing suggests this plane was touched. Still, if you walk through, look and tell us what is there. London plane is a hybrid of an American and an oriental parent, crossed in the seventeenth century, and it turned out to shrug off soot, drought and butchered roots better than anything else, which is why it lines streets on five continents including this one.",
+      "verified_sources": [
+        "City of Yarra Significant Trees register (data/registers/melbourne-yarra-significant-trees.json, ref 190)"
+      ],
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "mel_001",
+      "name": "The Finer Holm Oak of Edinburgh Gardens",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "over 100 years",
+      "age_min": 114,
+      "age_max": 180,
+      "location": {
+        "address": "Edinburgh Gardens, near the bowling club, off Brunswick Street, Fitzroy North VIC 3068",
+        "latitude": -37.7874208202,
+        "longitude": 144.981343931,
+        "neighbourhood": "Fitzroy North"
+      },
+      "location_precision": "confirmed",
+      "access": "Free, always open. Public City of Yarra park, 24 hectares, unrestricted access per the National Trust record.",
+      "transport": "Rushall railway station (Mernda line) is about a 3 minute walk from the gardens; tram route 11/112 runs along nearby St Georges Road.",
+      "story": "Edinburgh Gardens has two holm oaks, and the National Trust of Australia has a view about which one to look at. Its Significant Tree Register calls this the finer of the two examples of the species in the gardens, and it is certainly the heavier: the City of Yarra records 177 centimetres of diameter at breast height, which is about 5.56 metres of girth, since that 177 is a width across the trunk and not a measurement around it. That is the thickest trunk here and a record nowhere else: the Trust's own significance statement points to a tree at Talindert, near Camperdown in western Victoria, as the biggest of its kind in Victoria. This one is about 20 metres tall and stands near the bowling club. The same Trust survey, in 2011, recorded its condition as poor and noted that it is overcrowded by nearby elms. Those elms are worth knowing about. Dutch elm disease never reached Australia, and Edinburgh Gardens holds one of the most significant stands of mature elms left in the world, trees of a size Britain and Europe stopped having half a century ago. The oak has been growing up inside all of that. Its age is the register's band, over a hundred years at the 2012 survey, with no planting year on record.",
+      "verified_sources": [
+        "City of Yarra Significant Trees register (data/registers/melbourne-yarra-significant-trees.json, ref 120)",
+        "https://trusttrees.org.au/tree/VIC/Fitzroy_North/Edinburgh_Gardens_Brunswick_Street (National Trust of Australia Vic, Significant Tree Register)"
+      ],
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "mel_002",
+      "name": "The Remnant River Red Gum of Edinburgh Gardens",
+      "species": "River Red Gum (Eucalyptus camaldulensis)",
+      "age_estimate": "over 100 years, possibly a remnant predating the park",
+      "age_min": 114,
+      "age_max": 200,
+      "location": {
+        "address": "Edinburgh Gardens, off Brunswick Street/Alfred Crescent, Fitzroy North VIC 3068",
+        "latitude": -37.7859222421,
+        "longitude": 144.9831441739,
+        "neighbourhood": "Fitzroy North"
+      },
+      "location_precision": "confirmed",
+      "access": "Free, always open. Public City of Yarra park.",
+      "transport": "Rushall railway station (Mernda line) is about a 3 minute walk from the gardens; tram route 11/112 runs along nearby St Georges Road.",
+      "story": "Queen Victoria granted this ground to the people of Fitzroy in 1862. The river red gum may have been standing here already. The City of Yarra's register classes it as remnant, the category it uses for indigenous vegetation that was left rather than planted, and tags the same entry outstanding size, particularly old and significant habitat value. What the register does not give is a year. Its age band is the coarse one, over a hundred years at the survey in August 2012, and no independent source names this individual tree, so how much of this site's history it actually saw is an open question. If you know of a heritage citation or an old photograph that dates it, we would like to see it. The measurements are firmer: 28 metres tall, and 138 centimetres of diameter at breast height, which works out at roughly 4.33 metres of girth, since Yarra publishes the width across a trunk rather than the way round it. Eucalyptus camaldulensis is the most widely spread eucalypt in Australia, the tree of inland rivers and creek beds, and it has a habit of shedding heavy limbs in still weather, which is part of what makes an old one in a public park unusual. Most of what grows in these 24 hectares was brought in and planted. This one may not have been.",
+      "verified_sources": [
+        "City of Yarra Significant Trees register (data/registers/melbourne-yarra-significant-trees.json, ref 104)"
+      ],
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "mel_003",
+      "name": "The English Elm of Darling Gardens",
+      "species": "English Elm (Ulmus procera)",
+      "age_estimate": "around 135 years",
+      "age_min": 125,
+      "age_max": 145,
+      "location": {
+        "address": "Darling Gardens, off Gold Street, Clifton Hill VIC 3068",
+        "latitude": -37.7919887696,
+        "longitude": 144.992934514,
+        "neighbourhood": "Clifton Hill"
+      },
+      "location_precision": "confirmed",
+      "access": "Free, always open. Public City of Yarra park (also used as an off-leash dog area, does not restrict general access).",
+      "transport": "Clifton Hill railway station (Hurstbridge/Mernda lines) is about a 6 minute walk; tram route 86 on Queens Parade is about a 6 minute walk (24-Gold St/Queens Pde stop).",
+      "story": "The English elm barely exists as a mature tree in England any more. Melbourne kept its. Dutch elm disease killed elms across Britain and Europe by the tens of millions from the 1960s on and never reached Australia, which left this city holding elm plantings of an age and size Europe lost. The National Trust of Australia dated this one at about 120 years in February 2011, so roughly 135 now, and calls it an outstanding example of the species. It stands 28 metres tall at the Gold Street end of Darling Gardens, and the City of Yarra's register gives it 154 centimetres of diameter at breast height, which is 4.84 metres of girth: the register's figure is a diameter, so every girth on this page is a conversion from one. The two registers disagree about the name. Yarra records it as Ulmus minor 'Atinia'; the Trust's entry says Ulmus procera. Both mean English elm, and botanists have spent decades arguing over whether they are one tree or two. Darling Gardens was permanently reserved in 1866 and laid out with elms and oaks in the 1890s. The Trust's dating puts this tree's planting in that same decade, which is arithmetic rather than a record: nothing ties this trunk to that scheme by name.",
+      "best_time": {
+        "months": [
+          4,
+          5
+        ],
+        "kind": "autumn colour",
+        "label": "April and May, when the elm turns yellow"
+      },
+      "verified_sources": [
+        "City of Yarra Significant Trees register (data/registers/melbourne-yarra-significant-trees.json, ref 1)",
+        "National Trust of Australia (Vic) Significant Tree Register, cited via search snippet (trusttrees.org.au covers Darling Gardens; direct fetch not completed this pass) and corroborated by Collingwood Historical Society, https://collingwoodhs.org.au/darling-gardens-clifton-hill-52103/"
+      ],
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "mel_004",
+      "name": "The Holm Oak of Darling Gardens",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "over 100 years",
+      "age_min": 114,
+      "age_max": 180,
+      "location": {
+        "address": "Darling Gardens, off Gold Street, Clifton Hill VIC 3068",
+        "latitude": -37.7918820124,
+        "longitude": 144.9916559849,
+        "neighbourhood": "Clifton Hill"
+      },
+      "location_precision": "confirmed",
+      "access": "Free, always open. Public City of Yarra park.",
+      "transport": "Clifton Hill railway station (Hurstbridge/Mernda lines) is about a 6 minute walk; tram route 86 on Queens Parade is about a 6 minute walk (24-Gold St/Queens Pde stop).",
+      "story": "Darling Gardens has two trees on the National Trust's register. This is the other one. The Trust names a holm oak of regional significance alongside the elm, and it is much the smaller of the pair: 84 centimetres of diameter at breast height in the City of Yarra's survey, roughly 2.64 metres of girth once converted from the width across the trunk that the register publishes, against the elm's 4.84. It stands 16 metres tall about ninety metres from the elm, nearer the middle of the park than the Gold Street corner. Size is plainly not why it is listed. Quercus ilex is the evergreen oak of the Mediterranean, dark, leathery and dense enough that little grows under it, and it holds its canopy through the entire year. In a Melbourne February that is the difference between shade and no shade, and in July, when the elms around it are bare, it is still in full leaf. Spain and Portugal have grazed pigs on the acorns of this species for centuries, which is the other reason it travelled as far as it did. The age on file is the register's blunt band, over a hundred years at the 2012 survey, with no year and no independent date behind it. If you know when Darling Gardens' oak went in, tell us.",
+      "verified_sources": [
+        "City of Yarra Significant Trees register (data/registers/melbourne-yarra-significant-trees.json, ref 2)",
+        "National Trust of Australia (Vic) Significant Tree Register, cited via search snippet: 'Darling Gardens has two trees on the register: a holm oak (Quercus ilex) of regional significance ... and an English elm'"
+      ],
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "mel_007",
+      "name": "The Osage Orange of Yarra Boulevard",
+      "species": "Osage Orange (Maclura pomifera)",
+      "age_estimate": "around 160 years, planted in the 1860s",
+      "age_min": 150,
+      "age_max": 170,
+      "location": {
+        "address": "Yarra Boulevard, near the Swan Street connection, Yarra Bend Park, Burnley VIC 3121",
+        "latitude": -37.8300832759,
+        "longitude": 145.021925976,
+        "neighbourhood": "Burnley / Yarra Bend Park"
+      },
+      "location_precision": "confirmed",
+      "access": "Free, always open. Public parkland along Yarra Boulevard, part of Yarra Bend Park / the Boulevard Parklands, a well-used shared walking and cycling corridor along the Yarra River.",
+      "transport": "No tram or train stop immediately adjacent. Reachable via the Yarra River shared path or Yarra Boulevard itself; the nearest railway stations (Burnley, Victoria Park, or East Richmond) are roughly 2km away by path.",
+      "story": "Yarra Boulevard was built to give men work during the Depression. The tree beside it was already seventy years old. The Victorian Heritage Database's citation for the Boulevard Parklands records an Osage orange north-east of the point where the road meets Swan Street and dates it to the 1860s, which makes it around 160 now. Nothing else here has been dated that far back. The City of Yarra's register lists one at that spot too: 27 metres tall, 169 centimetres of diameter at breast height, about 5.31 metres of girth once converted, since the register gives the width across a trunk rather than the distance around it. Nobody has matched the two records trunk to trunk, but Osage orange is rare enough here that they almost certainly describe the same tree. The height is the odd part. Maclura pomifera is a thorny, low, awkward thing in its native Red River country of Texas and Oklahoma, and it rarely gets far past 20 metres anywhere. This one reached 27 on a river flat in Melbourne. Its wood is so dense and rot-resistant that Osage fence posts routinely outlast the wire stapled to them, which is part of why a tree from a small corner of America ended up on four continents. The road, by comparison, is barely ninety.",
+      "verified_sources": [
+        "City of Yarra Significant Trees register (data/registers/melbourne-yarra-significant-trees.json, ref 227)",
+        "Victorian Heritage Database, 'The Boulevard Parklands' citation (vhd.heritagecouncil.vic.gov.au/places/103863), cited via search: an Osage Orange 'situated ... to the north-east of the connection of Yarra Boulevard to Swan Street is listed on the Significant Tree Register', 'dating back to the 1860s'"
+      ],
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "mel_008",
+      "name": "The River Red Gum of Yarra Boulevard",
+      "species": "River Red Gum (Eucalyptus camaldulensis)",
+      "age_estimate": "over 100 years, remnant vegetation",
+      "age_min": 114,
+      "age_max": 200,
+      "location": {
+        "address": "Yarra Boulevard, Yarra Bend Park, Burnley VIC 3121",
+        "latitude": -37.8315180941,
+        "longitude": 145.0268870065,
+        "neighbourhood": "Burnley / Yarra Bend Park"
+      },
+      "location_precision": "confirmed",
+      "access": "Free, always open. Public parkland along Yarra Boulevard, part of Yarra Bend Park / the Boulevard Parklands.",
+      "transport": "No tram or train stop immediately adjacent. Reachable via the Yarra River shared path or Yarra Boulevard itself; the nearest railway stations (Burnley, Victoria Park, or East Richmond) are roughly 2km away by path.",
+      "story": "This one was probably never planted. The City of Yarra's register tags it remnant, its word for indigenous vegetation left standing rather than put in, and records 22 metres of height and 152 centimetres of diameter at breast height, which converts to about 4.77 metres of girth, since the register publishes the width across a trunk rather than the way round it. Its age is the standard band, over a hundred years at the 2012 survey. The Victorian Heritage Database's citation for these parklands says the remnant indigenous vegetation through the park is mostly river red gums, but it names no individual trees, so for this particular trunk the claim rests on the city's register alone. It stands about 1.4 kilometres along the Boulevard from the Osage orange, and the two of them make a separate afternoon rather than an extension of the walk through the northern parks, which sit six or seven kilometres away. Eucalyptus camaldulensis is the tree of Australian watercourses, the species that held the banks of the Yarra before there was a Melbourne on them, and the Boulevard is a shared walking and cycling corridor along the river rather than a park you cut across. Come for the river as much as for the tree.",
+      "verified_sources": [
+        "City of Yarra Significant Trees register (data/registers/melbourne-yarra-significant-trees.json, ref 256)",
+        "Victorian Heritage Database, 'The Boulevard Parklands' citation (vhd.heritagecouncil.vic.gov.au/places/103863), cited via search: 'remnant indigenous vegetation throughout the park mostly consist[s] of River Red Gums'"
+      ],
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
