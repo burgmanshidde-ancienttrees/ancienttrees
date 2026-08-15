@@ -1512,6 +1512,15 @@
         "note": "session pass, tokens not separately metered; register-backed verify per 'the course after the fortnight' rule (b): resolved two leads already flagged in data/leads/alicante.json (register_id 964 Ficus de Benalua, 945 Ficus microcarpa at Plaza Navarro Rodrigo) using the Generalitat register plus alicante.es/diarioinformacion press for age and access, opening a second walkable cluster in Benalua 1.2km from the existing seven. Left the Proteccion Generica group (3096-3099) and three olives as leads on access grounds rather than force a third tree to hit round numbers.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "palma-de-mallorca",
+        "kind": "verify+write",
+        "tokens": 0,
+        "trees": 5,
+        "note": "session pass, tokens not separately metered; new city opened from the prepare.py-staged register-candidates shelf (8 candidates, Govern de les Illes Balears CC BY catalogue). Shipped 5: S'Olivera de Cort, the Misericordia and cemetery figs, the Llotja lagunaria and the Bellver lentisco. Blocked 3: one dead (register's own notes say 'mort'), two on private land. 3 old-town trees form a real 1.4km/19min walk per the build output; the cemetery fig and Bellver lentisco stand alone as satellite stops.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }

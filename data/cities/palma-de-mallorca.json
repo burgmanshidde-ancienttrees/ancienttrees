@@ -1,0 +1,184 @@
+{
+  "city": "Palma de Mallorca",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "Palma's five singular trees range from a town square icon to a forest oddity. S'Olivera de Cort, an olive five to six centuries old, was lifted from a Pollenca estate and replanted before the Ajuntament in 1989. Nearby, two giant Moreton Bay figs, one in a cultural centre's garden and one in the municipal cemetery, rank among the largest of their kind in the Balearics, and a hibiscus tree from Norfolk Island stands on the seafront by the Gothic Llotja. Out at Castell de Bellver, an ordinary shrub has spent a century growing into an actual tree.",
+  "meta_description": "Palma's five singular trees: a 600 year old olive outside the town hall, two giant figs, and a lentisco grown tree at Castell de Bellver.",
+  "question_meta": "Palma's oldest tree is S'Olivera de Cort, an olive 500 to 600 years old, transplanted to the town hall square in 1989 from an estate near Pollenca.",
+  "question_answer": "Palma's oldest tree is S'Olivera de Cort, an olive estimated at 500 to 600 years old. It grew for most of that time on the Pedruixella Petit estate near Pollenca before being lifted whole and replanted in Placa de Cort, directly in front of the Ajuntament, on 3 May 1989. The two giant Moreton Bay figs on this list, one at the Misericordia cultural centre and one in the municipal cemetery, are far younger by comparison at 150 to 200 years, both planted in the mid to late 1800s.",
+  "question_context": "The Balearic government's Catalec d'Arbres Singulars, which catalogues all five of these trees, records girth, height and a rough age band for each entry rather than a precise planting date, except where local history fills the gap. S'Olivera de Cort is the exception: its 1989 transplant was a well documented civic event, covered by the local press and eventually marked with a plaque, so both its arrival date in the square and its estimated age at that point, 500 to 600 years, are on record. The two figs share a similar story to each other rather than a documented date: both were planted as part of nineteenth century garden schemes, the Misericordia specimen when the old General Hospital laid out a botanical garden around 1827, the cemetery specimen at a similar period, and both are now put at 150 to 200 years old by the register. The Lagunaria at La Llotja and the lentisco at Bellver carry measurements but no age estimate at all in the source register; the lentisco's is given only as roughly a century, based on how long the species needs to reach tree size.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Palma de Mallorca?",
+      "a": "S'Olivera de Cort, an olive 500 to 600 years old that grew near Pollenca before being replanted in front of Palma's town hall in 1989. It is far older than any other tree on this page."
+    },
+    {
+      "q": "Are Palma's singular trees free to visit?",
+      "a": "Yes, all five stand on open ground: two public squares, a seafront promenade, a municipal cemetery open daily with no ticket, and a free forest park around Castell de Bellver (the castle interior itself is ticketed separately)."
+    },
+    {
+      "q": "Which is the biggest tree in Palma?",
+      "a": "The Ficus de la Misericordia, a Moreton Bay fig with a trunk over two metres across, more than twenty metres tall and a crown around 35 metres wide, in the garden of the Misericordia cultural centre. Local writers call it the largest tree in the city outright."
+    },
+    {
+      "q": "Can I see them all in one walk?",
+      "a": "Three of the five, S'Olivera de Cort, the Misericordia fig and the Lagunaria at La Llotja, stand within about 700 metres of each other in the old town. The cemetery fig and the Bellver lentisco are further out and best treated as separate stops."
+    }
+  ],
+  "hero_tree_id": "plm_001",
+  "oldest_tree_id": "plm_001",
+  "trees": [
+    {
+      "id": "plm_001",
+      "name": "S'Olivera de Cort",
+      "species": "Olive (Olea europaea)",
+      "age_estimate": "500 to 600 years",
+      "age_min": 500,
+      "age_max": 600,
+      "location": {
+        "address": "Plaça de Cort, in front of the Ajuntament de Palma",
+        "latitude": 39.569597,
+        "longitude": 2.649938,
+        "neighbourhood": "Old town, Palma"
+      },
+      "story": "This olive is older than the square it stands in, and it has only been standing there since 1989. It grew for centuries at Pedruixella Petit, an estate near Pollenca with about two thousand olive trees, until a city gardener and the head of public works came to its owner, the hotelier Jaime Batle, and asked to buy it for the town hall square. Batle refused to sell. When he learned where it would go, he gave it away instead.\n\nOn 3 May 1989 the tree was lifted whole and replanted in Placa de Cort, directly opposite Palma's Ajuntament. Its trunk measures about seven metres round and two and a half tall before the first of four thick primary branches, on a tree only six metres high in total, the classic shape of an olive that has spent five or six centuries getting wider rather than taller.\n\nThe city promised Batle a plaque with his name on it. Four mayors came and went before it was finally installed, thirty years after the gift. By then the tree needed no introduction: it had become one of the most photographed things in Palma, a six-hundred-year-old symbol of peace and rootedness parked in front of the seat of city government, exactly where a gardener once thought it belonged.",
+      "how_to_recognise": "The single olive tree standing directly in front of the Ajuntament building on Placa de Cort, its wide low crown and thick multi-stemmed trunk unmistakable against the square's stone facades.",
+      "verified_sources": [
+        "https://www.ultimahora.es/noticias/sociedad/2019/02/16/1058643/gratitud-llega-anos-despues.html (Ultima Hora, donor Jaime Batle, origin at Pedruixella Petit in Pollenca, planted 3 May 1989, age 500-600 years, plaque history)",
+        "https://atlasinsolitus.com/lugares/la-olivera-de-cort/ (age ~600 years, symbol of peace)",
+        "https://www.caib.es/sites/proteccioespecies/ca/fitxes/ (Govern de les Illes Balears, Catalec d'Arbres Singulars, register_id 646, girth 7m, height 6m)"
+      ],
+      "access": "Free, on the open public square in front of Palma's town hall, no gate or opening hours",
+      "transport": "In the old town, about 10 minutes' walk from Plaça d'Espanya (Metro de Mallorca and the main EMT bus hub)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "plm_002",
+      "name": "The Ficus de la Misericòrdia",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "150 to 200 years",
+      "age_min": 150,
+      "age_max": 200,
+      "location": {
+        "address": "Garden of the Centre Cultural la Misericòrdia, Plaça de l'Hospital 4, Palma",
+        "latitude": 39.574104,
+        "longitude": 2.647354,
+        "neighbourhood": "Old town, Palma"
+      },
+      "story": "Local naturalist writers call this without qualification the biggest tree in Palma, and the numbers back the claim: a trunk over two metres across, more than twenty metres tall, and a crown reported at around thirty five metres, planted around 1827 when the old General Hospital laid out a botanical garden here. The building it grows beside, the Casa de la Misericordia, took in Palma's poor from 1565 onward; it is a cultural centre run by the Consell de Mallorca now, with free entry to its two courtyards and this garden.\n\nThe tree has outgrown its bed in more than one direction. When the city dug up the nearby Rambla for works, it found the fig's roots running under the street, well beyond the garden wall that was supposed to contain them. At the base, a ring of decorative stones from the original nineteenth century planter still survives, now half swallowed by the trunk that has spent two centuries thickening around it.\n\nAlong with a second giant fig in Palma's municipal cemetery, planted at roughly the same time, this is one of the two largest Ficus macrophylla in the Balearic Islands, and by most measurements the larger of the pair.",
+      "how_to_recognise": "The huge fig filling the lower garden of the Misericòrdia cultural centre, its crown wide enough to shade most of the space beneath it, ringed at the base by old decorative stonework from its original planter.",
+      "verified_sources": [
+        "https://www.caib.es/sites/proteccioespecies/es/n/ficus_de_la_misericordia_-21556es/ (Servei de Proteccio d'Especies, register_id 421, trunk over 2m diameter, height over 20m, crown c.35m, age 150-200 years, catalogued 2003, planted c.1827)",
+        "http://lucreganimedes.blogspot.com/2014/07/ficus-de-la-misericordia.html (called the largest tree in Palma, root system found under Rambla excavations)",
+        "https://www.mallorca.com/es/directorio/empresa/la-misericordia-palma-xdbwafoq (Centre Cultural la Misericordia, free entry, public garden and courtyards)"
+      ],
+      "access": "Free, in the garden of a public cultural centre (Consell de Mallorca); the exhibition hall keeps limited Saturday hours but the courtyards and garden are open more broadly, worth checking ahead",
+      "transport": "In the old town, about a 10 minute walk from Plaça d'Espanya (Metro de Mallorca and the main EMT bus hub)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "plm_003",
+      "name": "The Lagunària de la Llotja",
+      "species": "Norfolk Island Hibiscus (Lagunaria patersonii)",
+      "age_estimate": "not individually documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Passeig de Sagrera, in front of La Llotja, Palma",
+        "latitude": 39.568093,
+        "longitude": 2.644299,
+        "neighbourhood": "Old town seafront, Palma"
+      },
+      "story": "Locals call it pica-pica, and the name is a warning rather than an insult. Lagunaria patersonii comes from a single small island in the Tasman Sea, Norfolk Island, and packs its seed pods with fine glass-like hairs that itch for hours if the pod is opened carelessly. English speakers call the species the itchy bomb tree for the same reason. In summer it flowers in pale pink cups that pass for a small hibiscus, which is where the polite half of its name comes from.\n\nThis specimen grows on the Passeig de Sagrera, the seafront promenade, directly in front of La Llotja, the fifteenth century Gothic merchants' exchange that is one of Palma's best known medieval buildings. At 2.6 metres round and 18 metres tall it is a substantial specimen of a species usually kept smaller as a street or garden tree, catalogued by the Balearic government among the island's singular trees for exactly that reason.\n\nIt is the most street level and sociable entry on this page: no garden wall, no ticket, just a big tree doing its work of shade and ornament on a promenade full of people, across from a building that has been central to Mallorcan trade since before Columbus sailed.",
+      "how_to_recognise": "The large pyramid-shaped evergreen directly on the seafront promenade in front of La Llotja's Gothic facade, unmistakable for its dense shape and, in summer, small pink flowers.",
+      "verified_sources": [
+        "https://www.caib.es/sites/proteccioespecies/ca/fitxes/ (Govern de les Illes Balears, Catalec d'Arbres Singulars, register_id 429, girth 2.6m, height 18m)",
+        "https://venerablesarboles.blogspot.com/2008/11/arboles-singulares-de-las-islas-baleares.html (location at Passeig Sagrera in front of La Llotja, local nickname pica-pica)"
+      ],
+      "access": "Free, on the open public seafront promenade, no gate or opening hours",
+      "transport": "In the old town, about a 12 minute walk from Plaça d'Espanya (Metro de Mallorca and the main EMT bus hub)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "plm_004",
+      "name": "The Ficus del Cementeri",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "150 to 200 years",
+      "age_min": 150,
+      "age_max": 200,
+      "location": {
+        "address": "Cementiri Municipal de Palma, Camí de Jesús 2, Palma",
+        "latitude": 39.587126,
+        "longitude": 2.639474,
+        "neighbourhood": "Nord, Palma"
+      },
+      "story": "Palma's other giant fig, planted around the same decades as the one at the Misericordia garden, grows inside the city's municipal cemetery, where it has had a century and a half to spread five massive branches out from a neck seven metres and ten centimetres round, measured at chest height in 2011. It is not as tall as its cousin across town, about fifteen metres against twenty, but what it lacks in height it makes up in reach: surface roots run out from the trunk in every direction, thick enough to break paving and shoulder headstones aside.\n\nA cemetery might seem an odd place to send someone looking for a remarkable tree, but Palma's is landscaped rather than merely functional, and this fig is one of two enormous Ficus macrophylla shading its older section, giving what could be a bleak place genuine, peaceful shade. Together with the Misericordia fig, it ranks among the largest specimens of its kind anywhere in the Balearic Islands.\n\nThe cemetery is open to visitors daily, no ticket required, and asks only the ordinary courtesy any burial ground does.",
+      "how_to_recognise": "One of two giant figs in the cemetery's older section, the wide-spreading surface roots and five thick primary branches setting it apart from the cypresses that dominate the rest of the grounds.",
+      "verified_sources": [
+        "https://www.caib.es/sites/proteccioespecies/ca/fitxes/ (Govern de les Illes Balears, Catalec d'Arbres Singulars, register_id 422, girth 7.10m measured 2011-05-10 at 1.3m height, age 150-200 years)",
+        "https://efm.palma.es/es/cementerios (Empresa Funeraria Municipal de Palma, cemetery location and public visiting)"
+      ],
+      "access": "Free, inside the Cementiri Municipal de Palma; open daily 8:30am to 7:30pm",
+      "transport": "EMT city bus toward Cami de Jesus; roughly 2km, 25 minutes on foot, from the old town",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "plm_005",
+      "name": "The Mata de Bellver",
+      "species": "Mastic Tree (Pistacia lentiscus)",
+      "age_estimate": "roughly a century",
+      "age_min": 80,
+      "age_max": 120,
+      "location": {
+        "address": "Parc Forestal de Bellver, south of the castle's outer wall, Palma",
+        "latitude": 39.563221,
+        "longitude": 2.619412,
+        "neighbourhood": "Bellver, Palma"
+      },
+      "story": "Pistacia lentiscus is a shrub almost everywhere it grows, a low, dense presence in Mediterranean scrubland that most walkers step past without a glance. Left alone for a century, on the right ground, it can do something else entirely: this specimen, growing just south of the outer wall of Castell de Bellver, has pushed up four vertical trunks and taken on the size and shape of a proper tree, which is exactly why the Balearic government catalogued it among the islands' singular specimens.\n\nIt stands in the Parc Forestal de Bellver, the pine forest that wraps around the fourteenth century circular castle on its hill above the city. The castle itself keeps a ticket booth and opening hours; the forest around it, waymarked with walking trails, does not, so the mata is free to visit whether or not you go inside the walls.\n\nThere is nothing dramatic in its numbers, no record height or girth. Its interest is entirely in the exception it represents: the ordinary Mediterranean shrub that had the ground and the time to become something else.",
+      "how_to_recognise": "A four-trunked shrub-grown-tree, unusually tall and woody for a lentisco, standing among the pines just outside the castle's southern outer wall.",
+      "verified_sources": [
+        "https://www.caib.es/sites/proteccioespecies/ca/fitxes/ (Govern de les Illes Balears, Catalec d'Arbres Singulars, register_id 642, catalogued 2021, location south of the castle's outer wall)",
+        "https://castelldebellver.palma.es/ (Castell de Bellver, castle ticketing distinct from the free surrounding Parc Forestal)"
+      ],
+      "access": "Free, in the public Parc Forestal de Bellver surrounding the castle; the castle interior itself is ticketed but the forest park is not",
+      "transport": "EMT bus lines 4, 20 or 46 to Plaça Gomila, then a signposted walk (or stairway) up to the park; roughly 35-40 minutes on foot from the old town",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

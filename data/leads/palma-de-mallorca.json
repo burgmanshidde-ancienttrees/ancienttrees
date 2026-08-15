@@ -1,0 +1,23 @@
+{
+  "leads": [],
+  "blocked": [
+    {
+      "register_id": 644,
+      "name": "MURTERA DE LES FUNDADORES",
+      "species": "Myrtus communis",
+      "reason": "BLOCKED, private land. Register lists ownership as Privada, holder particular. No evidence found this pass of public access; hard rule 10 does not bend for private gardens."
+    },
+    {
+      "register_id": 428,
+      "name": "GINJOLER DEL CONVENT DE LA CONCEPCIO",
+      "species": "Ziziphus jujuba",
+      "reason": "BLOCKED, dead. The register's own notes field states 'Mort l'arbre monumental. Queden rebrots vius i restes de l'arbre monumental' (the monumental tree has died; living shoots and remains of it survive). CLAUDE.md is explicit that a dead tree never ships as an entry, however famous. Also private land."
+    },
+    {
+      "register_id": 648,
+      "name": "OLIVERA DE SON MUNTANER (NA CAPITANA)",
+      "species": "Olea europaea",
+      "reason": "BLOCKED, private land (register: ownership Privada, holder particular) and 4.37km from centre, past this pass's cluster radius. Worth a second look if a future pass confirms public access, since olives this size are usually genuine standouts."
+    }
+  ]
+}
