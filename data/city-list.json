@@ -72,14 +72,6 @@
    "trees": 17
   },
   {
-   "city": "Chiang Mai",
-   "country": "Thailand",
-   "slug": "chiang-mai",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
-  },
-  {
    "city": "Montreal",
    "country": "Canada",
    "slug": "montreal",
@@ -103,25 +95,9 @@
    "trees": 29
   },
   {
-   "city": "Mexico City",
-   "country": "Mexico",
-   "slug": "mexico-city",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
-  },
-  {
    "city": "Sydney",
    "country": "Australia",
    "slug": "sydney",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
-  },
-  {
-   "city": "Ho Chi Minh City",
-   "country": "Vietnam",
-   "slug": "ho-chi-minh-city",
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
@@ -150,14 +126,6 @@
    "trees": 5
   },
   {
-   "city": "Marrakech",
-   "country": "Morocco",
-   "slug": "marrakech",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
-  },
-  {
    "city": "Kyoto",
    "country": "Japan",
    "slug": "kyoto",
@@ -166,14 +134,6 @@
    "trees": 18,
    "promoted": "Promoted from 51 to the top of the 'next' block by Hidde on 2026-08-10, on Search Console evidence rather than on the demand proxy: /kyoto is the site's best-performing page by clicks (3 clicks on 34 impressions in the 10-day window, ahead of Lisbon's 2 on 48 and the homepage's 2 on 19). Demand ranking had it at 51 on 142,353 Wikipedia views; measured clicks beat the proxy whenever we have them.",
    "caveat": "What improving Kyoto can and cannot be. Its 10 trees span 35.5 km and NOT ONE has another within 2 km, the worst spread of any city on the site (CLAUDE.md's cluster doctrine names it as the counter-example to Cadiz). So Kyoto will never be an afternoon's walk, and adding trees to the existing ten would not change that. The work that pays is a genuine walkable cluster inside one district, Higashiyama or Arashiyama, which means researching a district rather than a city and accepting that the current ten stay a scattered list beside it. Photos are nearly done already: 8 of 10, missing only the Heian Cedar of Katanami and the Emperor's Gift Cherry of Kamigamo."
-  },
-  {
-   "city": "Buenos Aires",
-   "country": "Argentina",
-   "slug": "buenos-aires",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
   },
   {
    "city": "Melbourne",
@@ -207,38 +167,6 @@
    "trees": 18
   },
   {
-   "city": "Delhi",
-   "country": "India",
-   "slug": "delhi",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
-  },
-  {
-   "city": "Bogota",
-   "country": "Colombia",
-   "slug": "bogota",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
-  },
-  {
-   "city": "Shanghai",
-   "country": "China",
-   "slug": "shanghai",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
-  },
-  {
-   "city": "Rio de Janeiro",
-   "country": "Brazil",
-   "slug": "rio-de-janeiro",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
-  },
-  {
    "city": "Seattle",
    "country": "United States",
    "slug": "seattle",
@@ -263,9 +191,9 @@
    "trees": 0
   },
   {
-   "city": "Beijing",
-   "country": "China",
-   "slug": "beijing",
+   "city": "Chiang Mai",
+   "country": "Thailand",
+   "slug": "chiang-mai",
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
@@ -274,14 +202,6 @@
    "city": "Dubai",
    "country": "United Arab Emirates",
    "slug": "dubai",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
-  },
-  {
-   "city": "Phuket",
-   "country": "Thailand",
-   "slug": "phuket",
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
@@ -308,6 +228,14 @@
    "slug": "athens",
    "status": "published",
    "trees": 12
+  },
+  {
+   "city": "Mexico City",
+   "country": "Mexico",
+   "slug": "mexico-city",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
   },
   {
    "city": "Venice",
@@ -340,25 +268,9 @@
    "trees": 10
   },
   {
-   "city": "Manila",
-   "country": "Philippines",
-   "slug": "manila",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
-  },
-  {
    "city": "Vancouver",
    "country": "Canada",
    "slug": "vancouver",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
-  },
-  {
-   "city": "Mumbai",
-   "country": "India",
-   "slug": "mumbai",
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
@@ -387,25 +299,9 @@
    "trees": 5
   },
   {
-   "city": "Hanoi",
-   "country": "Vietnam",
-   "slug": "hanoi",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
-  },
-  {
    "city": "Taipei",
    "country": "Taiwan",
    "slug": "taipei",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
-  },
-  {
-   "city": "Cairo",
-   "country": "Egypt",
-   "slug": "cairo",
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
@@ -427,14 +323,6 @@
    "trees": 0
   },
   {
-   "city": "Jaipur",
-   "country": "India",
-   "slug": "jaipur",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
-  },
-  {
    "city": "San Francisco",
    "country": "United States",
    "slug": "san-francisco",
@@ -443,17 +331,9 @@
    "trees": 0
   },
   {
-   "city": "Kuala Lumpur",
-   "country": "Malaysia",
-   "slug": "kuala-lumpur",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
-  },
-  {
-   "city": "Jakarta",
-   "country": "Indonesia",
-   "slug": "jakarta",
+   "city": "Buenos Aires",
+   "country": "Argentina",
+   "slug": "buenos-aires",
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
@@ -474,14 +354,6 @@
    "trees": 23
   },
   {
-   "city": "Cape Town",
-   "country": "South Africa",
-   "slug": "cape-town",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
-  },
-  {
    "city": "Zagreb",
    "country": "Croatia",
    "slug": "zagreb",
@@ -490,17 +362,33 @@
    "trees": 0
   },
   {
-   "city": "Agra",
-   "country": "India",
-   "slug": "agra",
+   "city": "Bogota",
+   "country": "Colombia",
+   "slug": "bogota",
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
   },
   {
-   "city": "Sao Paulo",
+   "city": "Shanghai",
+   "country": "China",
+   "slug": "shanghai",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
+  },
+  {
+   "city": "Rio de Janeiro",
    "country": "Brazil",
-   "slug": "sao-paulo",
+   "slug": "rio-de-janeiro",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
+  },
+  {
+   "city": "Beijing",
+   "country": "China",
+   "slug": "beijing",
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
@@ -519,6 +407,14 @@
    "slug": "galway",
    "status": "pending",
    "note": "Hidde, 2026-08-02: publish it (\"wat mij betreft mag je galway gewoon online zetten we hebben ze toch\"). The run held it back because Coole Park is 50-70 min by bus, outside the ~30 min day-trip boundary; he widened the boundary for this case. Ship with the true travel time stated in transport, never rounded down. Prior research is in CURATION.md 2026-07-30 and the 2026-08-02 run entry.",
+   "demand_views_90d": null,
+   "trees": 0
+  },
+  {
+   "city": "Phuket",
+   "country": "Thailand",
+   "slug": "phuket",
+   "status": "pending",
    "demand_views_90d": null,
    "trees": 0
   },
@@ -570,14 +466,6 @@
    "trees": 0
   },
   {
-   "city": "Denpasar",
-   "country": "Indonesia",
-   "slug": "denpasar",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
-  },
-  {
    "city": "Miami",
    "country": "United States",
    "slug": "miami",
@@ -592,14 +480,6 @@
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
-  },
-  {
-   "city": "Belgrade",
-   "country": "Serbia",
-   "slug": "belgrade",
-   "status": "published",
-   "demand_views_90d": 178116,
-   "trees": 4
   },
   {
    "city": "New Orleans",
@@ -641,14 +521,6 @@
    "trees": 0
   },
   {
-   "city": "Lima",
-   "country": "Peru",
-   "slug": "lima",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
-  },
-  {
    "city": "Kanazawa",
    "country": "Japan",
    "slug": "kanazawa",
@@ -665,11 +537,12 @@
    "trees": 4
   },
   {
-   "city": "Istanbul",
-   "country": "Turkey",
-   "slug": "istanbul",
-   "status": "published",
-   "trees": 14
+   "city": "Kuala Lumpur",
+   "country": "Malaysia",
+   "slug": "kuala-lumpur",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
   },
   {
    "city": "Malaga",
@@ -678,14 +551,6 @@
    "status": "published",
    "demand_views_90d": 117780,
    "trees": 10
-  },
-  {
-   "city": "Bangkok",
-   "country": "Thailand",
-   "slug": "bangkok",
-   "status": "published",
-   "demand_views_90d": 222206,
-   "trees": 5
   },
   {
    "city": "Bath",
@@ -720,6 +585,14 @@
    "trees": 5
   },
   {
+   "city": "Cape Town",
+   "country": "South Africa",
+   "slug": "cape-town",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
+  },
+  {
    "city": "Santiago",
    "country": "Chile",
    "slug": "santiago",
@@ -743,6 +616,14 @@
    "note": "One walk, Porta Nuova station to the Po, 1.94 km spread. Taken from the official 13.9 km tourist route, which is really four walks; the other three are in data/leads/turin.json. Piemonte's regional register (data/registers/piemonte-alberi-monumentali.json) carries presumed age bands and removal status, which no other Italian source does.",
    "demand_views_90d": 147456,
    "trees": 10
+  },
+  {
+   "city": "Sao Paulo",
+   "country": "Brazil",
+   "slug": "sao-paulo",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
   },
   {
    "city": "Madrid",
@@ -881,6 +762,14 @@
    "trees": 0
   },
   {
+   "city": "Belgrade",
+   "country": "Serbia",
+   "slug": "belgrade",
+   "status": "published",
+   "demand_views_90d": 178116,
+   "trees": 4
+  },
+  {
    "city": "Helsinki",
    "country": "Finland",
    "slug": "helsinki",
@@ -896,12 +785,12 @@
    "trees": 15
   },
   {
-   "city": "Hong Kong",
-   "country": "China",
-   "slug": "hong-kong",
-   "status": "published",
-   "demand_views_90d": 689212,
-   "trees": 10
+   "city": "Lima",
+   "country": "Peru",
+   "slug": "lima",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
   },
   {
    "city": "Utrecht",
@@ -920,12 +809,27 @@
    "trees": 4
   },
   {
+   "city": "Istanbul",
+   "country": "Turkey",
+   "slug": "istanbul",
+   "status": "published",
+   "trees": 14
+  },
+  {
    "city": "Cordoba",
    "country": "Spain",
    "slug": "cordoba",
    "status": "published",
    "demand_views_90d": 74675,
    "trees": 10
+  },
+  {
+   "city": "Bangkok",
+   "country": "Thailand",
+   "slug": "bangkok",
+   "status": "published",
+   "demand_views_90d": 222206,
+   "trees": 5
   },
   {
    "city": "Oslo",
@@ -1105,6 +1009,14 @@
    "trees": 6
   },
   {
+   "city": "Hong Kong",
+   "country": "China",
+   "slug": "hong-kong",
+   "status": "published",
+   "demand_views_90d": 689212,
+   "trees": 10
+  },
+  {
    "city": "Split",
    "country": "Croatia",
    "slug": "split",
@@ -1250,6 +1162,14 @@
    "trees": 10
   },
   {
+   "city": "Agra",
+   "country": "India",
+   "slug": "agra",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
+  },
+  {
    "city": "Baarn",
    "country": "Netherlands",
    "slug": "baarn",
@@ -1266,6 +1186,86 @@
    "note": "Not a city: the walled Mata Nacional do Bucaco inside the concelho of Mealhada, freguesia of Luso. Named for the place a visitor actually goes and searches for. 29 ICNF-classified trees inside 900 metres, 6 published, the rest in data/leads/bucaco.json.",
    "demand_views_90d": 132,
    "trees": 10
+  },
+  {
+   "city": "Cairo",
+   "country": "Egypt",
+   "slug": "cairo",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
+  },
+  {
+   "city": "Delhi",
+   "country": "India",
+   "slug": "delhi",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
+  },
+  {
+   "city": "Denpasar",
+   "country": "Indonesia",
+   "slug": "denpasar",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
+  },
+  {
+   "city": "Hanoi",
+   "country": "Vietnam",
+   "slug": "hanoi",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
+  },
+  {
+   "city": "Ho Chi Minh City",
+   "country": "Vietnam",
+   "slug": "ho-chi-minh-city",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
+  },
+  {
+   "city": "Jaipur",
+   "country": "India",
+   "slug": "jaipur",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
+  },
+  {
+   "city": "Jakarta",
+   "country": "Indonesia",
+   "slug": "jakarta",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
+  },
+  {
+   "city": "Manila",
+   "country": "Philippines",
+   "slug": "manila",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
+  },
+  {
+   "city": "Marrakech",
+   "country": "Morocco",
+   "slug": "marrakech",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
+  },
+  {
+   "city": "Mumbai",
+   "country": "India",
+   "slug": "mumbai",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
   },
   {
    "city": "Nara",
