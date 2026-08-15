@@ -1,0 +1,199 @@
+{
+  "city": "Quebec City",
+  "country": "Canada",
+  "city_slug": "quebec-city",
+  "note": "Quebec City shipped qbc_001 to qbc_006 on 2026-08-15: two red oaks on Rue De Laune and a wych elm inside Parc des Champs-de-Bataille, plus an American elm, a red oak and a wych elm on Grande Allee. None of the entries below were delivered. They are what the 2026-08-15 verification pass left in the public subset of the Ville de Quebec 'Arbres potentiellement remarquables' register (CC BY 4.0), kept as stock for when Quebec City grows past 6; the Avenue De Bougainville row in Sillery is the largest of them and the obvious seed for a second walk. Never rendered.",
+  "leads": [
+    {
+      "register_ids": [
+        "7173",
+        "7174",
+        "7195",
+        "7196",
+        "7197",
+        "7198",
+        "7200",
+        "7202",
+        "7203",
+        "7204",
+        "7205",
+        "7217",
+        "7218",
+        "7219",
+        "7239",
+        "7240",
+        "7241",
+        "7242",
+        "7252",
+        "7253",
+        "7254",
+        "7255",
+        "7256",
+        "7257",
+        "7258",
+        "7259",
+        "7260",
+        "7266"
+      ],
+      "name": "The Avenue de Bougainville row (American Elms, Silver Maples and American Basswoods)",
+      "species": "Mixed: American Elm (Ulmus americana), Silver Maple (Acer saccharinum), American Basswood (Tilia americana)",
+      "place": "Avenue De Bougainville, Sillery, Quebec City",
+      "latitude": 46.7987,
+      "longitude": -71.2346,
+      "status": "held",
+      "reason": "LEAD, not blocked. 28 Public-flagged register trees strung along roughly 1km of Avenue De Bougainville in Sillery, diameters 51-127cm DHP, the single largest cache of public trees found in this pass outside the Grande Allee/Battlefields Park cluster shipped this pass (about 2.5km from the city centre, so a separate walk rather than an extension of qbc_001-006). Register-only this pass: no independent second source (press, heritage page) found or searched for in the time available. A future pass should search Sillery-specific heritage sources ('Sillery arbres patrimoniaux', the borough's own heritage walking materials) and pick the 5-8 best-sited, largest-diameter trees for a genuine Sillery cluster page or an extension."
+    },
+    {
+      "register_ids": [
+        "99923",
+        "99924",
+        "99925"
+      ],
+      "name": "The Silver Maples of Avenue du Monument",
+      "species": "Silver Maple (Acer saccharinum)",
+      "place": "Avenue du Monument, Quebec City",
+      "latitude": 46.8496,
+      "longitude": -71.2091,
+      "status": "held",
+      "reason": "LEAD, data-quality flag. 99923 reads DIAMETRE 185cm and 99925 reads 125cm, both at POSITION_MESURE 'DHS' rather than the standard 'DHP' used everywhere else in this pass; 99924 is 125cm DHP. DHS likely means diametre a hauteur du sol (diameter at ground/stump height) rather than breast height, which would inflate the figure relative to DHP and make 185cm not directly comparable to the DHP trees shipped this pass. Do not convert or publish the 185cm figure as equivalent to the DHP-based girths on qbc_001-006 without confirming what DHS means; if it is ground-level diameter, 185cm is unremarkable for a silver maple's root flare. No second source found or searched this pass. About 4.1km from the centre, a different neighbourhood (Beauport/Cote-de-Beaupre direction) from the shipped cluster."
+    },
+    {
+      "register_ids": [
+        "79670",
+        "79671"
+      ],
+      "name": "The Black Walnut and Wych Elm of Ilot Fontaine Wallace",
+      "species": "Black Walnut (Juglans nigra); Wych Elm (Ulmus glabra)",
+      "place": "Ilot Fontaine Wallace, corner of Avenue Cartier and Grande Allee Ouest, Quebec City",
+      "latitude": 46.802,
+      "longitude": -71.2242,
+      "status": "held",
+      "reason": "LEAD, not blocked. TYPE_PROP 'Public:Terrain Prive' (ambiguous per the brief), diameters 58cm and 77cm DHP. Confirmed the place itself is a real small public park/square (the Ilot Fontaine Wallace, home to one of Quebec City's Wallace-style fountains, a 1998 gift from the City of Paris, per Quebec Urbain: quebecurbain.qc.ca/2016/05/18/une-fontaine-de-type-wallace-a-quebec/), so access is very likely fine, but no independent source naming these two specific trees was found this pass, and the diameters are modest compared to the shipped candidates. Sits about 1.6-1.7km from the centre, close to the shipped Grande Allee cluster; a natural first addition if this city gets a depth pass."
+    },
+    {
+      "register_ids": [
+        "38382",
+        "38389",
+        "38421"
+      ],
+      "name": "The Red Oak and Silver Maples of Avenue Moncton / Avenue du Parc",
+      "species": "Northern Red Oak (Quercus rubra); Silver Maple (Acer saccharinum)",
+      "place": "Avenue Moncton and Avenue du Parc, Quebec City",
+      "latitude": 46.7994,
+      "longitude": -71.2315,
+      "status": "held",
+      "reason": "LEAD, not blocked. Diameters 82-138cm DHP (38389, Public:Arbre mitoyen, is a large 138cm silver maple). Public-flagged, about 2.0-2.3km from the centre, close to the shipped Grande Allee/Champs-de-Bataille cluster and could extend it. No independent second source found or searched for these specific streets this pass; time-boxed out."
+    },
+    {
+      "register_ids": [
+        "294800",
+        "294801",
+        "294802",
+        "294808"
+      ],
+      "name": "The White Pines and Eastern Hemlocks of Parc Cartier-Roberval",
+      "species": "Eastern White Pine (Pinus strobus); Eastern Hemlock (Tsuga canadensis)",
+      "place": "Parc Cartier-Roberval, Quebec City",
+      "latitude": 46.7487,
+      "longitude": -71.3407,
+      "status": "held",
+      "reason": "LEAD, not blocked, but a genuinely separate walk. About 12.3km from the city centre, well beyond the ~30-minute day-trip boundary this pass used for the shipped cluster; a distinct conifer stand (two species, four trees, all Public-flagged, diameters 58-101cm DHP) that would need its own transit-time check and its own second source before it could ship, either as its own small cluster or folded into a future outer-neighbourhood pass."
+    },
+    {
+      "register_ids": [
+        "295170",
+        "295171",
+        "295172"
+      ],
+      "name": "The remaining Red Oaks of Rue De Laune",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "place": "Rue De Laune, Parc des Champs-de-Bataille, Quebec City",
+      "latitude": 46.7929,
+      "longitude": -71.238,
+      "status": "held",
+      "reason": "LEAD, not blocked. Same small oak grove as qbc_001 and qbc_002 (all five register entries within about 120m of each other), diameters 89-96cm DHP, smaller than the two shipped. Not shipped this pass to avoid padding a single grove with five near-identical entries; a future depth pass could add one or two of these if a reason to (a photo, a distinguishing feature) turns up."
+    },
+    {
+      "register_ids": [
+        "309966",
+        "309980"
+      ],
+      "name": "The remaining Wych Elms of Parc des Champs-de-Bataille",
+      "species": "Wych Elm (Ulmus glabra)",
+      "place": "Parc des Champs-de-Bataille, Quebec City",
+      "latitude": 46.7987,
+      "longitude": -71.2246,
+      "status": "held",
+      "reason": "LEAD, not blocked. Same register cluster as qbc_003 (four Wych Elms on Prives:C.C.B.N land within the park), diameters 77cm and 134cm DHP; 309980 at 134cm is a reasonable second elm candidate for a future depth pass. Not shipped this pass to keep the elm entry to the single largest, best-attested specimen."
+    },
+    {
+      "register_ids": [
+        "7673",
+        "112344",
+        "117348",
+        "123883",
+        "207598",
+        "207627",
+        "208737",
+        "209043",
+        "210514",
+        "210520",
+        "210711",
+        "222027",
+        "222028",
+        "240902",
+        "248818",
+        "248843",
+        "248996",
+        "267493",
+        "267496",
+        "283148",
+        "294646",
+        "294695",
+        "307078",
+        "307165",
+        "309019"
+      ],
+      "name": "Scattered public trees outside the shipped cluster (Sainte-Foy, Charlesbourg, Beauport, Ville de Vanier and other outer boroughs)",
+      "species": "Mixed",
+      "place": "Various outer Quebec City neighbourhoods, roughly 3.2 to 9.2km from the centre",
+      "latitude": 46.78,
+      "longitude": -71.27,
+      "status": "held",
+      "reason": "SUMMARY LEAD, not blocked, not individually detailed. 25 Public-flagged register trees, diameters 32-149cm DHP/M, scattered across many different outer streets and parks rather than forming a walkable cluster with each other or with the shipped Grande Allee/Champs-de-Bataille group (each is several km from the nearest other candidate). None searched for a second source this pass; time-boxed out per the 40-minute stop condition. Worth a dedicated future pass, city-wide, once the shipped cluster is confirmed alive and the page exists to extend from; several of these carry no age data and one or two carry ambiguous POSITION_MESURE values ('M') that should be sanity-checked against DHP before use, per the same DHS caution noted for 99923-99925."
+    }
+  ],
+  "blocked": [
+    {
+      "register_ids": [
+        "PRIVATE-SUMMARY"
+      ],
+      "name": "The 594 privately-owned trees in the register (87% of the dataset)",
+      "species": "Mixed, all species in the register",
+      "place": "Throughout Quebec City",
+      "latitude": null,
+      "longitude": null,
+      "status": "blocked",
+      "reason": "HARD RULE 10. TYPE_PROP='Prives' (and its sub-flags Prives:C.C.B.N, Prives:Parc Canada, Prives:S.I.Q., Prives:Entretien Prive) covers 594 of the register's 685 features. Two sub-flags, Prives:Parc Canada (5 trees) and Prives:C.C.B.N (4 trees), were investigated individually this pass and found to sit on the Plains of Abraham / Parc des Champs-de-Bataille, a fully open National Historic Site, so those 9 were promoted out of this block and shipped as qbc_001, qbc_002 and qbc_003 (plus leads for the rest of the same two small clusters). The remaining privately-owned trees, including Prives:S.I.Q. (Societe immobiliere du Quebec, likely government office grounds, not checked) and Prives:Entretien Prive (private maintenance, likely private residential or commercial land), stay blocked outright: this project does not ship a tree on private land without evidence the specific grounds are genuinely open to the public, and checking 585 individual addresses was outside this pass's timebox. Do not bulk-promote this list without that per-tree or per-institution check."
+    },
+    {
+      "register_ids": [
+        "323346",
+        "331386",
+        "349947",
+        "364566",
+        "369179",
+        "377930",
+        "379616",
+        "500136"
+      ],
+      "name": "Recently planted saplings and young cultivars",
+      "species": "Mixed cultivars: 'Deborah' Norway Maple, 'Northwood' and 'Morgan' Red Maple, 'Robin Hill' Serviceberry, Sugar Maple, Silver Maple",
+      "place": "Various Quebec City streets",
+      "latitude": null,
+      "longitude": null,
+      "status": "blocked",
+      "reason": "Not remarkable: DATE_PLANTE is populated and recent for every one of these (2016 to 2026), and DIAMETRE is 5cm (12cm for the oldest, 323346, planted 2016-06-01) at POSITION_MESURE DHP, consistent with young street-tree plantings rather than measurement error. These are ordinary young replacement trees, several of them named ornamental cultivars ('Deborah', 'Northwood', 'Morgan', 'Robin Hill') rather than straight species, ineligible under CLAUDE.md's qualifying bar (genuinely old OR visually spectacular OR historically significant). Will never individually qualify at this age; not worth re-checking for years."
+    }
+  ]
+}

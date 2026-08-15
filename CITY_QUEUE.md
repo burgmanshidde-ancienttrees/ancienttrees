@@ -208,7 +208,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 80 | Nagoya | 2.09 | 83,437 | - | - | - | 1 | 10 | predicted (thin competition) |
 | 81 | Rhodes | 3.18 | 127,205 | - | - | - | - | 10 | predicted (thin competition) |
 | 82 | Tallinn | 3.12 | 124,888 | - | - | - | - | 10 | predicted (thin competition) |
-| 83 | Quebec City | 3.11 | 124,358 | - | - | - | - | 10 | predicted (thin competition) |
+| 83 | Quebec City | 3.11 | 124,358 | 6 | - | 1 | - | 10 | predicted (thin competition) |
 | 84 | Zagreb | 3.07 | 122,890 | - | - | - | - | 10 | predicted (thin competition) |
 | 85 | Hobart | 2.04 | 81,734 | 10 | - | 2 | 455 | 10 | predicted (thin competition) |
 | 86 | Leipzig | 3.03 | 121,319 | - | - | - | - | 10 | predicted (thin competition) |
