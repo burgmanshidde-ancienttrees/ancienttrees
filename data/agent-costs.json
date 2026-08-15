@@ -1548,6 +1548,15 @@
         "note": "session pass, tokens not separately metered; nothing shipped. Checked the 4 leads.py-flagged READY leads against their own why field (known unreliable flag). The strongest, a bay laurel with the best story in the register, confirmed dead (site now Plaza del Laurel, named for it) and moved to blocked. An elm pair's survival stayed unresolved (general trail corroboration, not specific enough to identify which of two registered elms an earlier source flagged as threatened). Two more leads (a lime hit by roadworks, a plane on a road/rail margin) left untouched, genuinely weaker candidates. Recorded in CURATION.md so a future pass does not re-research the laurel.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "trieste",
+        "kind": "verify+write",
+        "tokens": 0,
+        "trees": 2,
+        "note": "session pass, tokens not separately metered. Closed Trieste's gap (8/10 to 10/10) with a new third cluster in Citta Vecchia. One lead was already explicitly flagged 'STRONGEST NEXT ADDITION' by an earlier pass with two sources in hand (Piazza Hortis hackberry, held back only on walk-distance grounds); paired it with a second public-garden tree 700m away (Piazzale Rosmini elm) rather than force it into the existing 2km-radius walks, since CLAUDE.md's cluster doctrine explicitly allows a large city several separate walks. Both trees got a 2024 municipal TreeTag, which doubled as a second source for the elm.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
