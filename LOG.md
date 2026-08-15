@@ -11,6 +11,12 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-15 - Night run 2026-08-15 22:49 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 12.0 minutes of its 60 minute window, 60 turns, ended clean (success). 2 commit(s), none of them a published tree. Claims left behind: bucaco, cordoba, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
 ## 2026-08-15 (session) - 7-day visits: 295, up from a slow week. Aarhus opens; Brisbane's 558-tree register goes to verify
 
 7-day visitor line from `visitors.py`: 44/28/83/41/21/17/34/27 across 08-08 to 08-15, 295 visits total, 475 page views.
