@@ -1,0 +1,72 @@
+[
+ {
+  "sheet_id": "02/L781/VR/05",
+  "region": "VENETO",
+  "province": "Verona",
+  "comune": "Verona",
+  "locality": "Piazza Indipendenza",
+  "species": "Platanus acerifolia (Aiton) Willd.",
+  "name_it": "Platano comune",
+  "girth_cm": 505.0,
+  "height_m": 35.5,
+  "altitude_m": 65.0,
+  "urban": true,
+  "latitude": 45.442597,
+  "longitude": 11.000069,
+  "register": "italy-masaf",
+  "km_from_centre": 0.72,
+  "near_published": {
+   "metres": 12.0,
+   "id": "ver_002",
+   "name": "The Plane Tree of Piazza Indipendenza",
+   "species": "London Plane (Platanus x acerifolia)"
+  }
+ },
+ {
+  "sheet_id": "01/L781/VR/05",
+  "region": "VENETO",
+  "province": "Verona",
+  "comune": "Verona",
+  "locality": "Piazza Indipendenza",
+  "species": "Insieme omogeneo di Ginkgo biloba L.",
+  "name_it": "Ginco",
+  "girth_cm": null,
+  "height_m": null,
+  "altitude_m": 65.0,
+  "urban": true,
+  "latitude": 45.443178,
+  "longitude": 10.999506,
+  "group": true,
+  "register": "italy-masaf",
+  "km_from_centre": 0.73,
+  "near_published": {
+   "metres": 68.1,
+   "id": "ver_002",
+   "name": "The Plane Tree of Piazza Indipendenza",
+   "species": "London Plane (Platanus x acerifolia)"
+  }
+ },
+ {
+  "sheet_id": "03/L781/VR/05",
+  "region": "VENETO",
+  "province": "Verona",
+  "comune": "Verona",
+  "locality": "Via Nino Bixio 2",
+  "species": "Cedrus deodara (D.Don) G.Don",
+  "name_it": "Cedro dell'Himalaya",
+  "girth_cm": 309.0,
+  "height_m": 28.0,
+  "altitude_m": 70.0,
+  "urban": true,
+  "latitude": 45.448842,
+  "longitude": 10.993025,
+  "register": "italy-masaf",
+  "km_from_centre": 1.14,
+  "near_published": {
+   "metres": 0.0,
+   "id": "ver_004",
+   "name": "The Himalayan Cedar of Via Nino Bixio",
+   "species": "Himalayan Cedar (Cedrus deodara)"
+  }
+ }
+]

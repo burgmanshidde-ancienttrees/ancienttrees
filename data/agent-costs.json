@@ -1736,6 +1736,24 @@
     "note": "first Australian mainland page; diameter stated as diameter per tree; found the southern-hemisphere phenology bug that was live on Hobart",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "melbourne deepen",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 4,
+    "note": "Burnley Gardens cluster turns the thin 2-tree Yarra Boulevard walk into 6; resolved a dead-tree risk on the Sugar Gum via a 2025 iNaturalist match instead of dropping or guessing",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "melbourne deepen",
+    "kind": "write",
+    "tokens": 62000,
+    "trees": 4,
+    "note": "4 trees plus a full reshape of a published page from 8 trees/one walk to 12/two walks; ~15k per tree because the fixed re-copy cost fell on only four",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
