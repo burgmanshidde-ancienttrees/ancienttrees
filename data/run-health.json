@@ -1,0 +1,24 @@
+{
+ "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it has never been below 4 and reached 25.",
+ "runs": [
+  {
+   "started": "2026-08-15T20:50:16+00:00",
+   "date": "2026-08-15",
+   "run_id": "31907765863",
+   "minutes": 14.4,
+   "turns": 141,
+   "denials": null,
+   "ended": "success",
+   "tokens": 21907358,
+   "claims_held": [
+    "brisbane",
+    "brussels",
+    "barcelona"
+   ],
+   "commits": 8,
+   "cities_touched": 2,
+   "trees": 7,
+   "logged": true
+  }
+ ]
+}
