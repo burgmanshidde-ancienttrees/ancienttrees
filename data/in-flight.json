@@ -8,16 +8,16 @@
   "expire_hours_note": "A night run's job is killed at 60 minutes by timeout-minutes in nightly.yml, so a night-run claim older than 90 minutes cannot belong to a pass that is still working. Sessions keep the four hours, because a session legitimately pauses.",
   "claims": [
     {
-      "target": "melbourne",
-      "kind": "verify",
-      "by": "session",
-      "claimed_at": "2026-08-15T13:32:54+00:00"
-    },
-    {
       "target": "aarhus",
       "kind": "verify",
       "by": "session",
       "claimed_at": "2026-08-15T13:36:41+00:00"
+    },
+    {
+      "target": "melbourne",
+      "kind": "write",
+      "by": "session",
+      "claimed_at": "2026-08-15T13:42:30+00:00"
     }
   ]
 }

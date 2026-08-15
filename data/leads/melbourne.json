@@ -29,6 +29,39 @@
   "notes": [
     "DATA QUALITY FLAG, melbourne-boroondara-significant-trees.json: the girth_m field is NOT consistently in metres. Plotting all 314 values shows a clean bimodal split: ~120 entries between 0 and 8 (genuine metres, e.g. the sample front-garden records: Magnolia grandiflora girth_m 1.5, River Red Gum girth_m 4) and ~190 entries between 68 and 235 (these are almost certainly CENTIMETRES mislabelled as girth_m, since a 68-235 METRE circumference is physically impossible for any tree; e.g. a Victoria Park River Red Gum with height 14m and canopy 16m carries girth_m: 98, which would be a 98-metre trunk if taken literally). This is exactly the register-units pitfall BRIEF_RESEARCH.md warns about. NO Boroondara tree was used in this pass because of this: rather than guess at a /100 correction per record without external confirmation, I left the whole file unused and worked entirely from the Yarra register instead, which has a single, physically-sane dbh_cm field throughout (39-230, checked). A future pass importing or using Boroondara data should sanity-check every girth_m value against height/canopy before publishing anything from it, and should flag this to whoever maintains the register import script since it may be an import-time bug (two source tables merged with different units) rather than a source-data problem.",
     "melbourne-boroondara-significant-trees.json also has a POSITION field showing roughly a third of its 314 entries as 'Front garden', 'Rear garden' or private golf/sports clubs (Green Acres Golf Club 26 entries, Kew Golf Club 4). Hard rule 10 applies directly: none of these are usable without evidence the specific ground is open to the public. The genuinely public-park POSITION values (Victoria Park, Maranoa Gardens, St James Park, Cato Park, Grace Park, Belmont Park, Kellet Reserve, Nettleton Park, Stradbroke Park) are the only ones worth returning to, and only once the girth unit problem above is resolved.",
-    "This pass worked entirely from melbourne-yarra-significant-trees.json (232 entries, dbh_cm units sanity-checked and consistent) and produced two clusters: a strong central one (Edinburgh Gardens + Darling Gardens + Curtain Square, all in Fitzroy North/Clifton Hill/Carlton North, roughly 1-1.7km apart, 6 trees) and the start of a second, more distant one (Yarra Boulevard/Yarra Bend Park, Burnley, roughly 6-7km from the first, 2 trees so far, see leads above for how to grow it to 4+)."
+    "This pass worked entirely from melbourne-yarra-significant-trees.json (232 entries, dbh_cm units sanity-checked and consistent) and produced two clusters: a strong central one (Edinburgh Gardens + Darling Gardens + Curtain Square, all in Fitzroy North/Clifton Hill/Carlton North, roughly 1-1.7km apart, 6 trees) and the start of a second, more distant one (Yarra Boulevard/Yarra Bend Park, Burnley, roughly 6-7km from the first, 2 trees so far, see leads above for how to grow it to 4+).",
+    "2026-08-15 DEEPEN PASS (verify, session): resolved the Sugar Gum concern below before it became one. Register refs 163, 228, 229 and 230, all at '500 Yarra Boulevard, Burnley' (i.e. Burnley Gardens, the University of Melbourne's public botanic garden, confirmed free and open to the public via science.unimelb.edu.au and independent travel sites), verified and delivered to data/research/melbourne-deepen-verified.json as mel_009 (Bhutan Cypress), mel_010 (River Red Gum), mel_011 (Sugar Gum) and mel_012 (Yate). All four sit within about 30-450m of each other and 450-600m from mel_007 (Osage Orange, Yarra Boulevard), turning the thin 2-tree walk 2 into a 6-tree walk spanning roughly 1.0-1.5km from Burnley Gardens to mel_008. IMPORTANT: before delivering the Sugar Gum, checked whether it might be the Heritage Victoria-listed entrance-drive Sugar Gum (c.1887) known to have been REMOVED in 2008 (turned into the 'Sugar Gum Table', unveiled 2013) -- the register's 2012 survey date is after that removal, which was a real red flag. Resolved via a research-grade iNaturalist observation from 2025-09-12 at coordinates within ~25m of the register point, confirming a living sugar gum there now. Delivered as flagged rather than confirmed-clean because the match is inferential (same spot, not documentary proof of the same individual)."
+  ],
+  "leads_added_2026-08-15_deepen_pass": [
+    {
+      "source": "melbourne-yarra-significant-trees.json ref 206",
+      "species": "Hoop Pine (Araucaria cunninghamii)",
+      "location": "0 Yarra Boulevard, Burnley, -37.8295587721,145.024796279",
+      "reason": "dbh 110cm, height 22m, 'Particularly Old, Outstanding Size'. About 500m from mel_007 and would sit naturally in the walk 2 cluster, but not researched this pass: already had 4 new trees for the Burnley Gardens cluster and the brief's ceiling (12 total) was reached. A distinctive conifer, worth a first look in a future depth pass."
+    },
+    {
+      "source": "melbourne-yarra-significant-trees.json, '0 Yarra Boulevard, Burnley' refs 231, 234, 254-261",
+      "species": "River Red Gum (Eucalyptus camaldulensis), x9 more",
+      "location": "Yarra Boulevard, Burnley, scattered along the road, dbh 86-152cm",
+      "reason": "Not individually verified this pass. Species is already represented three times on the Melbourne page (mel_002, mel_008, mel_010); another River Red Gum adds little unless one of these nine turns out to be exceptional on closer look (ref 256, dbh 152cm, is the largest of the batch and the best candidate if the page ever wants a fourth)."
+    },
+    {
+      "source": "melbourne-yarra-significant-trees.json ref 119",
+      "species": "Holm Oak (Quercus ilex)",
+      "location": "Edinburgh Gardens, Fitzroy North, -37.786848148,144.9816394821",
+      "reason": "Carried over from the earlier pass, unchanged: second Holm Oak in Edinburgh Gardens, about 65m from mel_001. Not researched this pass either; priority 1 (walk 2) absorbed the whole time budget."
+    },
+    {
+      "source": "melbourne-yarra-significant-trees.json, Edinburgh Gardens (0 ALFRED CRESCENT / 0 FREEMAN STREET, FITZROY NORTH) refs 102, 103, 106-118, 121",
+      "species": "Southern Mahogany (E. botryoides), River Red Gum, Dutch Elm (U. x hollandica), English Oak (Q. robur)",
+      "location": "Edinburgh Gardens, Fitzroy North",
+      "reason": "Carried over unchanged: 17 more significant trees register in the same park. Still not researched; this pass spent its whole budget on priority 1 (the Yarra Boulevard/Burnley Gardens cluster) and the city hit its 12-tree ceiling before reaching Edinburgh Gardens depth."
+    },
+    {
+      "source": "melbourne-yarra-significant-trees.json, Madden Grove, Richmond, refs 27-31",
+      "species": "Peppercorn Tree (Schinus molle) x2, Lemon-scented Gum, English Oak x2",
+      "location": "Madden Grove, Richmond, approx -37.828,145.001",
+      "reason": "Carried over unchanged and now less urgent: with Burnley Gardens turning walk 2 into 6 trees, Madden Grove (about 1.8-1.9km further west from mel_007, i.e. beyond the Burnley Gardens cluster in the opposite direction) is no longer needed to make walk 2 viable. Still a fine candidate for a THIRD Yarra Boulevard-area walk or a future extension if Melbourne grows past 12."
+    }
   ]
 }
