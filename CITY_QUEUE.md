@@ -233,7 +233,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 105 | Matera | 1.68 | 67,033 | - | - | - | - | 10 | predicted (thin competition) |
 | 106 | Poznan | 1.64 | 65,666 | 6 | - | 1 | 396 | 10 | predicted (thin competition) |
 | 107 | Bergamo | 1.32 | 52,933 | 8 | 1 | 1 | 17 | 10 | predicted (thin competition) |
-| 108 | Brno | 1.59 | 63,714 | 6 | - | 1 | 30 | 10 | predicted (thin competition) |
+| 108 | Brno | 1.59 | 63,714 | 7 | - | 2 | 30 | 10 | predicted (thin competition) |
 | 109 | Busan | 2.37 | 94,737 | - | - | - | - | 10 | predicted (thin competition) |
 | 110 | Catania | 1.46 | 58,252 | 4 | - | 1 | 5 | 10 | predicted (thin competition) |
 | 111 | Freiburg | 2.32 | 92,752 | - | - | - | - | 10 | predicted (thin competition) |

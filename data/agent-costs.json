@@ -1695,6 +1695,13 @@
         "tokens": 148516,
         "trees": 2,
         "note": "2 Pfaueninsel oaks verified (Door Oak, Schlosswiese Oak), 2-3 sources each, dated alive May 2025; 2 more single-source Pfaueninsel candidates left as leads; a main-session/agent working-directory collision briefly clobbered data/cities/potsdam.json mid-pass, recovered by redoing the merge after the agent finished"
+      },
+      {
+        "target": "brno",
+        "kind": "verify",
+        "tokens": 24000,
+        "trees": 1,
+        "note": "session-direct verify (not dispatched): resolved the Chudoba plane identity-conflict lead via 4 direct web searches/fetches, confirmed one tree not two, shipped with an honest girth-disagreement note"
       }
     ]
   }

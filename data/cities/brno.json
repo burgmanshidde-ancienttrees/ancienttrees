@@ -2,11 +2,11 @@
   "city": "Brno",
   "country": "Czech Republic",
   "status": "needs_curation",
-  "intro": "Brno pulled down its city walls between 1809 and 1859 and planted a ring of parks where they had stood. Six protected trees grow in and around that ring, the whole set spanning barely a kilometre: two oaks at opposite ends of one square, a horse chestnut opposite the opera house, a plane on the ramparts below the cathedral, another on a street corner where a bus station used to be, and the thickest of them all on hospital ground.",
-  "meta_description": "Brno's protected trees in one walk: two oaks on Moravske namesti, a plane on the ramparts below Petrov, and a 5.7-metre plane on hospital ground.",
+  "intro": "Brno pulled down its city walls between 1809 and 1859 and planted a ring of parks where they had stood. Seven protected trees grow in and around that ring: two oaks at opposite ends of one square, a horse chestnut opposite the opera house, a plane on the ramparts below the cathedral, another on hospital ground, one renamed for a professor who once praised it in print, and the thickest on a corner where a bus station used to be.",
+  "meta_description": "Brno's protected trees in one walk: two oaks on Moravske namesti, a plane renamed for a professor, and a 5.7-metre plane on hospital ground.",
   "question_meta": "Brno's oldest tree is likely the oak at the south end of Moravske namesti, given as over 170 years. Where it stands, and what else is on the walk.",
   "question_answer": "Brno's oldest tree is probably The Old Town Gate Oak, the oak at the southern entrance to the Moravské náměstí park, which the city's own heritage encyclopedia records as more than 170 years old. Probably, because nobody has dated any of these trees precisely. The Czech national register of memorial trees gives each one a code, a species, a girth, a height and a position, and it has no age field at all, so every age on this page is an estimate from a city or tourism source rather than a measurement. On those estimates the oak comes first, ahead of a horse chestnut and a plane at around 160 years and the plane at St Anne's hospital at over 150. The plane on the corner of Benešova has no published age at all, which is why this page gives it none.",
-  "question_context": "Brno's protected trees are documented twice over, which is why this page can be specific about trunks and vague about years. The Czech national register of memorial trees, kept by the AOPK, gives each of them a code, a species, a girth, a height and a position, and several of these records were last updated in 2024. What it does not carry is an age. The city's own heritage encyclopedia, Encyklopedie dějin Brna, fills part of that gap with estimates and with older measurements taken in 2004 and 2010, which is why several girths here appear as a range rather than a figure: the tape has been round these trunks in different decades and the trees grew between visits. All six stand within about 1.1 kilometres of each other in and around the ring of parks laid out where the fortifications came down, and the furthest is twenty minutes on foot from the main station. Two carry an honest caveat. The plane at St Anne's stands on a working hospital campus rather than in a park, and the oak at the south end of Moravské náměstí has not been photographed by anyone we could find since 2015.",
+  "question_context": "Brno's protected trees are documented twice over, which is why this page can be specific about trunks and vague about years. The Czech national register of memorial trees, kept by the AOPK, gives each a code, a species, a girth, a height and a position, several last updated in 2024, but no age. Local sources fill part of that gap with estimates and older measurements, which is why several girths appear as a range: the tape went round different trunks in different decades, or two sources simply disagree, as they do for the plane renamed after Professor Chudoba. All seven stand within about 1.1 kilometres of each other in and around the ring of parks laid out where the fortifications came down, and the furthest is twenty minutes on foot from the main station. Two carry an honest caveat beyond a measurement dispute. The plane at St Anne's stands on a working hospital campus rather than in a park, and the oak at the south end of Moravské náměstí has not been photographed by anyone we could find since 2015.",
   "faq": [
     {
       "q": "What is the oldest tree in Brno?",
@@ -14,11 +14,11 @@
     },
     {
       "q": "Are Brno's memorial trees free to visit?",
-      "a": "All six, yes, and none of them needs a ticket. Two need a word of warning. The plane at St Anne's grows on the grounds of a working teaching hospital, reached through the gate on the south side off Hybešova, and the little terrace holding the plane below Petrov is planted up for the tourist season and closed off in winter, when you look at that tree from the path instead."
+      "a": "All seven, yes, and none of them needs a ticket. Two need a word of warning. The plane at St Anne's grows on the grounds of a working teaching hospital, reached through the gate on the south side off Hybešova, and the little terrace holding the plane below Petrov is planted up for the tourist season and closed off in winter, when you look at that tree from the path instead."
     },
     {
       "q": "Can I see them all in one walk?",
-      "a": "Yes. The furthest two are about 1.1 kilometres apart, Benešova at one end and St Anne's at the other, with everything else in between. Allow an hour and a half if you stop at each, starting from the main station and finishing in Staré Brno."
+      "a": "Yes. The furthest two are about 1.1 kilometres apart, Benešova at one end and St Anne's at the other, with everything else in between. Professor Chudoba's plane, on Veveří, sits about 600 metres from the Moravské náměstí oaks and does not stretch the walk further. Allow an hour and a half if you stop at each, starting from the main station and finishing in Staré Brno."
     },
     {
       "q": "What does 'memorial tree' mean in the Czech Republic?",
@@ -223,6 +223,37 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "notes": "Register kod 101081, isop_id 44661, also labelled na Divadelni on Wikimedia Commons. Girth 368cm in the AOPK register against 310cm in the Czech Wikipedia list at the same coordinates, an older measurement. No age published in any source found; age_estimate deliberately left empty."
+    },
+    {
+      "id": "brq_007",
+      "name": "Professor Chudoba's Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 100 to 120 years",
+      "age_min": 100,
+      "age_max": 120,
+      "location": {
+        "address": "Corner of Veveří and Pekárenská streets, Brno-Veveří",
+        "latitude": 49.20147,
+        "longitude": 16.59955,
+        "neighbourhood": "Brno-Veveří"
+      },
+      "story": "A professor put this tree on the record by complaining about everything around it. František Chudoba, Masaryk University's first professor of English philology, walked past this corner every day on his way to teach, and in a 1930 newspaper column he tore into Brno's neglected public greenery, then singled out this one plane tree as proof that something could still thrive here despite the city's indifference. The plane took the compliment. It was declared a protected tree in 2003 and, in 2021, the city renamed it for him: Platan profesora Chudoby.\n\nThe measurements disagree with each other more than most. Brno's own botanical record puts the girth at 383 centimetres in 2013; the national memorial-tree register gives 475 centimetres for the same trunk. Ninety centimetres is too much to explain by growth alone in that span, so one of the two figures is likely an error rather than a fresh measurement, and this page states both rather than picking a winner. Age is put at roughly 100 to 120 years by different sources, old enough that Chudoba himself would have known it as already substantial when he wrote about it, not as a sapling.\n\nIt stands on the corner of Veveří and Pekárenská, wedged into a tight urban plot, growing anyway.",
+      "verified_sources": [
+        "AOPK CR pamatne stromy register (data/registers/czech-aopk-pamatne-stromy.json, kod 101066, CC BY 4.0), girth 475cm",
+        "https://botany.cz/cs/platan-na-veveri/ (girth 383cm measured 2013, age approx. 100 years in 2009, declared 2003-01-01)",
+        "https://www.em.muni.cz/udalosti/15126-pamatny-platan-nese-jmeno-prvniho-profesora-anglicke-filologie (Masaryk University's own account of the 2022-04-29 renaming ceremony and the Chudoba story, age approx. 120 years)"
+      ],
+      "access": "Free, public street corner",
+      "transport": "Roughly 15 minutes on foot from Brno hlavní nádraží, or a short tram ride toward Veveří",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Register kod 101066, coordinates 49.202,16.600 per turistika.cz matching the AOPK register within rounding. An earlier pass held this back over an apparent identity conflict between two web sources; resolved this pass with three converging sources (turistika.cz matching the register's 475cm and declaration year exactly, botany.cz's independent 383cm figure at the same corner and declaration date, and Masaryk University's own 2022 renaming-ceremony account naming the same intersection): this is one tree, not two, with a genuine unresolved girth disagreement rather than a case of mistaken identity. Named Platan profesora Chudoby since 2021-12-15 (city environmental department decision), formally renamed at a ceremony 2022-04-29."
     }
   ]
 }
