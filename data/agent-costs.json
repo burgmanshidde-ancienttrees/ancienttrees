@@ -1777,6 +1777,13 @@
         "note": "7 stories, 205-233 words each, from the register-backed verify file; 2 best_time set (aar_001 autumn colour, aar_005 bare silhouette), 5 deliberately left empty; ~8.9k per tree",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "brisbane",
+        "kind": "verify",
+        "tokens": 95000,
+        "trees": 0,
+        "note": "Council register had no species/age field, coordinates only; pivoted to National Trust/heritage sources, 8 verified in one City Botanic Gardens + Eagle Street cluster, 1 avenue (Bunya Pine Avenue, 18 trees) blocked as not a single collectible point"
       }
     ]
   }
