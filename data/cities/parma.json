@@ -1,0 +1,190 @@
+{
+  "city": "Parma",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Parma's five monumental trees cluster around one ducal park. Palazzo Ducale, the summer residence Duke Ottavio Farnese began in 1561, gives its name and its grounds to a plane tree that is now the tallest recorded in all of Emilia-Romagna, a field elm that survived the Dutch elm disease epidemic that killed most of its kind, a horse chestnut, and an oak. A short walk away in Piazzale della Pace, laid out after wartime bombing reshaped the area, a cedar of Lebanon stands as the one conifer among a remnant avenue of planes.",
+  "meta_description": "Parma's monumental trees: Emilia-Romagna's tallest tree in a ducal park destroyed by war twice, plus a cedar of Lebanon on Piazzale della Pace.",
+  "question_meta": "Parma's most notable tree is a London plane in Parco Ducale, 47 metres tall, the tallest recorded tree in all of Emilia-Romagna.",
+  "question_answer": "Parma's tallest and most measured tree is a London plane growing near Palazzo Ducale in Parco Ducale, recorded at 47 metres, the tallest tree anywhere in Emilia-Romagna. Its exact planting date is not on record, but the park around it was replanted from 1749 after occupying troops burned every mature tree there in 1745, and further planes went in around 1830, so its age likely runs to roughly two centuries.",
+  "question_context": "None of Parma's monumental trees carry an individually documented planting date; Italy's national register gives girth, height and position but no age field, so every age on this page is an estimate built from the history of the ground the tree stands on. Parco Ducale's own history sets a hard floor: Duke Ottavio Farnese began the park in 1561, but occupying forces under Prince Lobkowicz cut and burned every mature tree in it in 1745 during the War of the Austrian Succession, so nothing standing today predates that destruction. Duke Filippo di Borbone had the grounds replanted from 1749 with the architect Petitot, and further plane trees went in around 1830 under Duchess Maria Luigia, Napoleon's second wife, who ruled Parma as her own duchy. The park holds over 1,500 catalogued trees today. Piazzale della Pace is much younger ground, laid out after the Second World War over an area reshaped by bombing, though its cedar of Lebanon and surviving planes have been under municipal protection since the 1950s.",
+  "faq": [
+    {
+      "q": "What is the most notable tree in Parma?",
+      "a": "A London plane in Parco Ducale, 47 metres tall, recorded as the tallest tree in all of Emilia-Romagna. It stands near Palazzo Ducale, the summer residence Duke Ottavio Farnese began in 1561."
+    },
+    {
+      "q": "Are Parma's monumental trees free to visit?",
+      "a": "Yes. Four stand in Parco Ducale, a free public park open daily since Italian unification, and the fifth, a cedar of Lebanon, stands on the open public lawn of Piazzale della Pace."
+    },
+    {
+      "q": "Why did Parco Ducale lose its old trees?",
+      "a": "War. In 1745, during the War of the Austrian Succession, troops occupying the city under Prince Lobkowicz cut down and burned every mature tree in the park, including those on its central ornamental island, to fuel their camp fires. The park was replanted from 1749 onward."
+    },
+    {
+      "q": "Can I see them all in one walk?",
+      "a": "Four of the five, all in Parco Ducale, stand within a few hundred metres of each other. The cedar of Lebanon on Piazzale della Pace is a short walk from the park's edge, easily added to the same visit."
+    }
+  ],
+  "hero_tree_id": "prm_001",
+  "oldest_tree_id": "prm_001",
+  "trees": [
+    {
+      "id": "prm_001",
+      "name": "The Great Plane of Palazzo Ducale",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "over 190 years",
+      "age_min": 180,
+      "age_max": 210,
+      "location": {
+        "address": "Parco Ducale, near Palazzo Ducale, 43125 Parma",
+        "latitude": 44.805975,
+        "longitude": 10.322572,
+        "neighbourhood": "Parco Ducale"
+      },
+      "story": "At 47 metres this plane is the tallest tree recorded anywhere in Emilia-Romagna, taller than any specimen in a region with no shortage of old parks and avenues. Its trunk measures 6.55 metres round, thick enough that it would take four adults linking arms to circle it.\n\nIt grows a short walk from Palazzo Ducale, the summer residence Duke Ottavio Farnese began building in 1561 at the head of a park he laid out the same year. Neither the palace nor its grounds had an easy eighteenth century: during the War of the Austrian Succession in 1745, occupying troops under Prince Lobkowicz felled and burned every mature tree in the park, including those on the ornamental island at its centre, to fuel their camp fires. Duke Filippo di Borbone had the grounds replanted from 1749 under the French architect Ennemond Alexandre Petitot, and further plane trees went in around 1830 under Duchess Maria Luigia, Napoleon's second wife, who governed Parma as her own duchy after his fall.\n\nThis plane's exact planting date is not recorded, but its size puts it among the park's oldest survivors. The park holds more than 1,500 catalogued trees today and opened to the public after Italian unification, when the ducal walls came down.",
+      "how_to_recognise": "The tallest tree in the park by a clear margin, its crown visible well above the surrounding canopy from any of the avenues near the palace.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF national monumental trees register, sheet 01/G337/PR/08, girth 655cm, height 47m)",
+        "https://it.wikipedia.org/wiki/Parco_Ducale_(Parma) (park history: founded 1561 by Ottavio Farnese, 1745 destruction under Lobkowicz, 1749 restoration by Filippo di Borbone and Petitot, 1830 plane plantings under Maria Luigia, public since Italian unification)",
+        "https://www.ilparmense.net/parco-ducale-un-platano-di-47-metri-e-lalbero-piu-alto-di-tutta-lemilia-romagna/ (local press, names this plane the tallest tree in Emilia-Romagna)"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "About a 15 minute walk north of Parma railway station",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "prm_002",
+      "name": "The Cedar of Lebanon of Piazza della Pace",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_max": 150,
+      "location": {
+        "address": "Piazzale della Pace, 43121 Parma",
+        "latitude": 44.803953,
+        "longitude": 10.327686,
+        "neighbourhood": "Piazzale della Pace"
+      },
+      "story": "Piazzale della Pace did not exist as a square until after the Second World War, laid out over ground reshaped by the bombing that damaged much of central Parma. What it holds today is an English-style lawn framed by remnants of a much older avenue: four large plane trees, survivors of a row that once counted 65, and this cedar of Lebanon, the piazza's one conifer.\n\nProtected by the city since the 1950s, the cedar was formally added to Italy's National List of Monumental Trees and the regional list only recently, alongside the square's plane trees. Its girth of over four metres marks it as a substantial, century-old specimen even before the paperwork caught up with what Parma's gardeners already knew. Tree climbers and arborists check it regularly now, work that has included tomography scans of the trunk and root aeration to keep both the tree and the pedestrians beneath it safe.\n\nCedrus libani is native to the mountains of Lebanon, Syria and Turkey and was one of the first conifers European gardeners collected purely for its shape and scale rather than for timber. In a square defined by its open lawn, this is the one thing in it with a genuinely different silhouette.",
+      "how_to_recognise": "The single dark conifer on the piazza's lawn, unmistakable against the deciduous planes around it.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF national monumental trees register, sheet 05/G337/PR/08, girth 464cm, height 17m)",
+        "https://www.comune.parma.it/it/novita/notizie/interventi-di-manutenzione-straordinaria-del-platano-monumentale-di-piazza-della-pace (Comune di Parma, confirms the cedar and plane trees of Piazzale della Pace added to the national AMI and regional monumental-tree lists, protection dating to the 1950s, recent tomography and root-aeration maintenance)"
+      ],
+      "access": "Free, open public square, no gate or opening hours",
+      "transport": "About a 10 minute walk north-west of Parma railway station",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "prm_003",
+      "name": "The Field Elm of Parco Ducale",
+      "species": "Field Elm (Ulmus minor)",
+      "age_estimate": "roughly 90 years",
+      "age_min": 80,
+      "age_max": 110,
+      "location": {
+        "address": "Parco Ducale, near the Palazzetto Sanvitale, 43125 Parma",
+        "latitude": 44.804992,
+        "longitude": 10.320511,
+        "neighbourhood": "Parco Ducale"
+      },
+      "story": "Dutch elm disease reached Italy in the 1930s and took most of the country's mature field elms with it over the following two decades, the same epidemic that emptied European streets and parks of the species almost everywhere else. This elm, growing near the Palazzetto Sanvitale inside Parco Ducale, is one of the few in the area that made it through.\n\nAt 3.82 metres round and 37.5 metres tall it has grown taller than the horse chestnuts and planes usually associated with the park's grand avenues, a field elm doing what the species can do when disease does not cut it short first. Ulmus minor naturally reaches a broad, high canopy on a single strong trunk, and this one has had the decades to prove it, in a park that lost every mature tree it had once already, burned for firewood by occupying troops in 1745.\n\nThe elm is deliberately not the story's dramatic tree here. It survived nothing spectacular in the way a fire or a storm is spectacular; it simply kept growing while a fungus carried by bark beetles worked through nearly everything nearby that shared its genus.",
+      "how_to_recognise": "A single tall elm near the Palazzetto Sanvitale, distinguished from the park's more common planes and chestnuts by its narrower, more upright crown.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF national monumental trees register, sheet 02/G337/PR/08, girth 382cm, height 37.5m)",
+        "https://www.zerosette.it/2026/07/parma-parco-ducale-un-tempo-giardino-delite/ (local press, describes a mature elm near the Palazzetto Sanvitale, diameter 118cm/height 33m, among the few that escaped the graphiosis epidemic of the 1930s-40s)"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "About a 15 minute walk north of Parma railway station",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "prm_004",
+      "name": "The Horse Chestnut of Parco Ducale",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_max": 150,
+      "location": {
+        "address": "Parco Ducale, 43125 Parma",
+        "latitude": 44.8074,
+        "longitude": 10.323261,
+        "neighbourhood": "Parco Ducale"
+      },
+      "story": "Horse chestnuts are, by the park's own count, one of its three most common old species alongside plane and lime, and this one earned an individual place on Italy's monumental register on its own measurements: 3.70 metres round the trunk. It is a broad, low-crowned tree rather than a tall one, 16 metres against the 47 of the park's tallest plane, which is exactly the shape Aesculus hippocastanum tends toward once it has had a century to fill out.\n\nParco Ducale's chestnuts are old enough that the park's own literature describes bicentenary specimens among them, planted in the waves of restoration that followed the destruction of 1745 and the redesign under Duke Filippo di Borbone from 1749. Spring here means candle-shaped white flower spikes across the park's oldest chestnuts, and by autumn the same trees are dropping conkers onto the paths beneath them, a seasonal cycle Parma's gardeners have watched repeat for two centuries.",
+      "how_to_recognise": "A broad, low-domed chestnut crown, wider than it is tall, among the park's collection of monumental horse chestnuts.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF national monumental trees register, sheet 04/G337/PR/08, girth 370cm, height 16m)",
+        "https://it.wikipedia.org/wiki/Parco_Ducale_(Parma) (park's tree population, over 1,500 catalogued specimens, horse chestnut among the oldest and most common species)"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "About a 15 minute walk north of Parma railway station",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when the white flower spikes stand up across the crown"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "prm_005",
+      "name": "The Pedunculate Oak of Palazzo Ducale",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_max": 150,
+      "location": {
+        "address": "Parco Ducale, near Palazzo Ducale, 43125 Parma",
+        "latitude": 44.806469,
+        "longitude": 10.318139,
+        "neighbourhood": "Parco Ducale"
+      },
+      "story": "This oak, 4.20 metres round and 25 metres tall, stands at the western edge of the grounds around Palazzo Ducale, the summer palace Duke Ottavio Farnese began in 1561 and the building that gives the whole park its name. Farnea, the local name the register uses for Quercus robur, is not one of the species most associated with this park; horse chestnuts, planes and limes dominate the planting record, which makes an oak this size a genuine outlier rather than one of a matching set.\n\nWhatever stood on this ground before 1745 is not recorded individually, because the whole park lost its mature trees that year: troops occupying Parma during the War of the Austrian Succession cut and burned every one of them, including those on the park's central ornamental island, to feed their fires. Everything growing in Parco Ducale today, this oak included, is therefore at most a product of the 1749 restoration under Duke Filippo di Borbone and the French architect Petitot, or of the further planting waves that followed through the nineteenth century.\n\nPedunculate oaks live for centuries when left alone, far longer than this one has yet had, which makes it one of the park's trees with the most growing still ahead of it.",
+      "how_to_recognise": "The one substantial oak among the plane and chestnut avenues near the palace's western grounds.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF national monumental trees register, sheet 06/G337/PR/08, girth 420cm, height 25m)",
+        "https://it.wikipedia.org/wiki/Parco_Ducale_(Parma) (1745 destruction of the park's mature trees, 1749 restoration)"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "About a 15 minute walk north of Parma railway station",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
