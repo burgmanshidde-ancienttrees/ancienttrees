@@ -1665,6 +1665,15 @@
     "note": "First Canadian city. Register imported same day made ownership and diameter filtering cheap, but no per-tree second source exists, so most of the budget went to press and heritage-page corroboration; lapresse.ca 405s to plain curl and the Wayback snapshot was the workaround",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "brno+potsdam",
+    "kind": "write",
+    "tokens": 96000,
+    "trees": 10,
+    "note": "two cities opened from verified files; one species normalised to the site canonical name (hard rule 9); seven of ten ship with an explicit estimate or no age and the pages say so",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
