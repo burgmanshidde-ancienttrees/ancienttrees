@@ -4,6 +4,51 @@ Measured 2026-07-21. The question changed halfway through, and so did the answer
 
 It started as "can open data get us to every city in the world", which assumed publishing hundreds of trees per city. Hidde rejected that the same day: ten per city is what makes the passport work, and scarcity is the mechanism rather than a limitation. See BACKLOG.md. So the surviving question is narrower and more useful: **can open data cut the dull half of a city run, finding candidates and fixing coordinates, so runs spend their time on stories?**
 
+## Wikidata's own remarkable-tree layer, scouted 2026-08-15: USABLE, and it covers what governments do not
+
+**19,732 individual trees with coordinates, in one SPARQL request, for nothing.**
+`scripts/wikidata_trees.py --fetch` writes them to
+`data/research/wikidata-remarkable-trees.json`. Of those, 19,076 carry a name,
+15,003 a species, 10,165 a Commons image and 5,503 a national protection
+designation.
+
+**The semantic filter is built in**, which is what makes this legitimate under
+the never-bulk-import rule: the query asks for `P31/P279* Q811534`, instances of
+"remarkable tree" and its subclasses (heritage tree, natural monument tree). An
+item exists because a person judged that individual tree worth one. It is not a
+street-tree inventory and cannot be turned into one by widening the query.
+
+**Licence: CC0 1.0.** Wikidata's own data is released into the public domain
+(https://www.wikidata.org/wiki/Wikidata:Licensing). That clears the
+commercial-reuse bar outright, with no attribution obligation. The Commons
+images it links are a separate question and keep their own per-file licences,
+which still have to be read one by one.
+
+**Why it matters more than the count suggests: it is strongest exactly where the
+government scouts came back empty.** The 2026-08-13 German pass found no usable
+register for Sachsen ("FND is areal-only") or Hessen. Wikidata holds 209 trees
+within 15 km of Dresden, 63 of Leipzig and 55 of Frankfurt, most with a species
+and a photograph. Luxembourg City, which no pass has ever scouted, has 108.
+Cesky Krumlov has 92 against 11 in the Czech AOPK register. The pattern is that
+a country with a strong Wikipedia culture and a weak open-data culture is
+covered by volunteers instead of by its state, and the two scouts run so far
+were both looking only for the state.
+
+**What it is NOT.** One source per tree, crowd-maintained, with no vitality
+field and coordinates ranging from surveyed to guessed-at-the-village. So it
+sits exactly where a government register sits under the layer-2 rule: one
+source, enough for a dot, never enough for a layer-1 page on its own. Every
+entry is a lead. The rule that a register cannot tell us whether a tree still
+stands applies here with more force, not less.
+
+**Not promoted to `data/registers/` yet, deliberately.** It lives in
+`data/research/` because a register file in this project carries a `licence`
+and `licence_proof` block per source, and the honest proof here covers Wikidata
+the database rather than the provenance of any individual claim inside it. Ask
+before treating it as an import.
+
+Cost of this scout: one SPARQL query and a script. No agent was dispatched.
+
 ## Amsterdam municipal register: usable, imported (2026-08-08)
 
 Gemeente Amsterdam publishes its designated "bijzondere bomen" layer on

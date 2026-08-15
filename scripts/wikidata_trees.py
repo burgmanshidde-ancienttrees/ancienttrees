@@ -47,11 +47,22 @@ UA = "AncientTrees/1.0 (https://ancienttrees.app; burgmans.hidde@gmail.com)"
 # P31/P279* Q811534 is the whole point: "remarkable tree" and everything
 # subclassed under it (heritage tree, natural monument tree), which is what
 # makes this a designation query rather than a tree-inventory query.
+# P10241 is the species link on an individual organism, NOT P225 (which lives
+# on the taxon item itself); the first version of this script asked for P225
+# and got a species column of zeros. P569 on a tree is its planting or
+# germination year, which is the one field registers almost never carry. P18
+# is a Commons file, so a hit here is a photo candidate with a licence already
+# attached. P1435 is the national protection designation, which is what makes
+# an entry a designation rather than an opinion.
 QUERY = """
-SELECT ?t ?tLabel ?p ?cLabel ?taxonLabel ?adminLabel WHERE {
+SELECT ?t ?tLabel ?p ?cLabel ?taxonLabel ?adminLabel ?planted ?image ?desigLabel
+WHERE {
   ?t wdt:P31/wdt:P279* wd:Q811534 ; wdt:P625 ?p ; wdt:P17 ?c .
-  OPTIONAL { ?t wdt:P225 ?taxon }
+  OPTIONAL { ?t wdt:P10241 ?taxon }
   OPTIONAL { ?t wdt:P131 ?admin }
+  OPTIONAL { ?t wdt:P569 ?planted }
+  OPTIONAL { ?t wdt:P18 ?image }
+  OPTIONAL { ?t wdt:P1435 ?desig }
   SERVICE wikibase:label {
     bd:serviceParam wikibase:language "en,de,fr,it,es,nl,cs,lt,et,pt,ko,bg" }
 }
@@ -65,7 +76,19 @@ def fetch():
         "Accept": "application/sparql-results+json", "User-Agent": UA})
     with urllib.request.urlopen(req, timeout=180) as r:
         raw = json.load(r)
-    return [t for t in (parse_row(b) for b in raw["results"]["bindings"]) if t]
+    # An OPTIONAL that matches twice (two designations, two admin areas) returns
+    # the tree once per combination, so the raw rows over-count. Fold on qid and
+    # keep the first non-empty value of each field.
+    by_qid = {}
+    for b in raw["results"]["bindings"]:
+        t = parse_row(b)
+        if not t:
+            continue
+        seen = by_qid.setdefault(t["qid"], t)
+        for k, v in t.items():
+            if v and not seen.get(k):
+                seen[k] = v
+    return list(by_qid.values())
 
 
 def parse_row(b):
@@ -80,6 +103,8 @@ def parse_row(b):
         return None
     qid = b.get("t", {}).get("value", "").rsplit("/", 1)[-1]
     label = b.get("tLabel", {}).get("value") or ""
+    planted = b.get("planted", {}).get("value") or ""
+    image = b.get("image", {}).get("value")
     return {
         "qid": qid,
         # A label that is just the Q-number means the item has no name in any
@@ -90,6 +115,13 @@ def parse_row(b):
         "country": b.get("cLabel", {}).get("value"),
         "species": b.get("taxonLabel", {}).get("value"),
         "admin": b.get("adminLabel", {}).get("value"),
+        # A year, and only ever a year. The SPARQL endpoint normalises a bare
+        # year to a full dateTime (1809-01-01T00:00:00Z), so the day and month
+        # here are an artefact of the serialisation and never a fact; reading
+        # this as a date would invent a precision the source does not have.
+        "planted_year": planted[:4] if planted[:4].isdigit() else None,
+        "commons_image": image,
+        "designation": b.get("desigLabel", {}).get("value"),
         "source": "https://www.wikidata.org/wiki/" + qid,
     }
 
