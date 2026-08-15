@@ -1593,6 +1593,15 @@
         "note": "session pass, tokens not separately metered; 0 trees, 3 pages. python3 scripts/pagegaps.py found 2 species gaps (Norfolk Island Hibiscus, Mastic Tree, 3 trees each, both closed today by Palma's new trees) and 1 park gap (Padua's Orto Botanico, 5 trees, all pre-existing plus today's pad_010). Wrote all three intros. Found and fixed a real bug while verifying: pagegaps.py matched parks by address text only, while the actual Astro park page (site/src/lib/parks.ts) checks neighbourhood first; the two disagreed on Padua's park name and pagegaps.py kept reporting a gap the site had already closed. Fixed pagegaps.py to mirror parkKey() exactly.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "photo_hunt_sweep",
+        "kind": "photo",
+        "tokens": 0,
+        "trees": 0,
+        "note": "python3 scripts/photo_hunt.py --recheck: free Commons/iNaturalist API sweep, no agent cost. Swept 40 of 780 photo-less trees, found new open-licence candidates for 24 of them (queue now 795 swept, 418 with at least one candidate). Never judged here per runner facts (egress proxy blocks upload.wikimedia.org/api.openverse.org); queued for a session viewing pass.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
