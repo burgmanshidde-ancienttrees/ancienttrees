@@ -2,8 +2,8 @@
   "city": "Bucaco",
   "country": "Portugal",
   "status": "needs_curation",
-  "intro": "Bucaco is a forest behind a wall, and the wall is the reason it exists. Discalced Carmelite friars enclosed this hillside in 1628 and got two popes to protect it in writing, one bull threatening excommunication for anyone who damaged a tree. Four centuries of that produced 105 hectares holding more than 250 species, including the cypress that Philip Miller named after Portugal from specimens he saw here. The nine trees on this page stand within about a kilometre of each other, and one of them named a species.",
-  "meta_description": "Bucaco's ancient trees: the cedar that named a species, Europe's fourth tallest tree, and a bunya pine, all inside one walled forest above Luso.",
+  "intro": "Bucaco is a forest behind a wall, and the wall is the reason it exists. Discalced Carmelite friars enclosed this hillside in 1628 and got two popes to protect it in writing, one bull threatening excommunication for anyone who damaged a tree. Four centuries of that produced 105 hectares holding more than 250 species, including the cypress that Philip Miller named after Portugal from specimens he saw here. The ten trees on this page stand within about a kilometre of each other, and one of them named a species.",
+  "meta_description": "Bucaco's ancient trees: the cedar that named a species, Europe's fourth tallest tree, and three sequoias, all inside one walled forest above Luso.",
   "question_meta": "The Cedro de Sao Jose, a Mexican cypress planted between 1628 and 1650 by the Carmelite friars, is the oldest tree in the Bucaco forest.",
   "question_answer": "The oldest tree in the Mata Nacional do Bucaco is the Cedro de Sao Jose, a Mexican cypress standing in the forecourt of the Ermida de Sao Jose. The forest's own plaque at its foot says it was planted between 1628 and 1650, which makes it roughly 380 years old and the oldest cedar in the forest. It is not really a cedar, and it is not Portuguese: Cupressus lusitanica comes from Mexico and Central America.",
   "question_context": "The friars arrived in 1628 and this tree went into the ground within their first two decades, which makes it one of the first exotic trees planted at Bucaco and probably one of the first of its species in Europe. The species carries the mistake in its name. When Philip Miller described it in 1768 he was looking at specimens growing here, so he called a Mexican cypress lusitanica, after Portugal, and the Portuguese call it cedro-do-bucaco after a forest it never came from. The tree is not what it was. Cyclone Gong tore through Bucaco in January 2013, felled ten notable trees and wrecked around 40 percent of the forest, and it took most of this one's height with it: the register measured 32.9 metres before, and 14 metres after. What stands now is a five and a half metre trunk inside an iron railing, broken at the top, still carrying green. Go expecting a survivor rather than a spire.",
@@ -18,7 +18,7 @@
     },
     {
       "q": "Can you walk between these trees?",
-      "a": "Yes. All nine stand inside the walled forest within about a kilometre, starting at the Largo do Mosteiro beside the Palace Hotel and ending at the Ermida de Sao Jose. Paths are forest paths and the ground is steep in places."
+      "a": "Yes. All ten stand inside the walled forest within about a kilometre, starting at the Largo do Mosteiro beside the Palace Hotel and ending at the Ermida de Sao Jose. Paths are forest paths and the ground is steep in places."
     },
     {
       "q": "Is the tallest tree in Europe here?",
@@ -300,6 +300,37 @@
       },
       "curation_status": "flagged",
       "notes": "ICNF processo AIP01110423I: girth 4.26 m, height 17.5 m, no age recorded in the register. Wikipedia's forest article names oak among the species of the forest's relic native cover, corroborating species and presence; no independent source for this individual tree.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "bsc_010",
+      "name": "The Redwood of the Fonte de Santa Teresa",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "age_estimate": "about 160 years",
+      "age_min": 148,
+      "age_max": 172,
+      "location": {
+        "address": "Junto a Fonte de Santa Teresa, Trilho da Agua, Mata Nacional do Bucaco, 3050-261 Luso",
+        "latitude": 40.37607033,
+        "longitude": -8.363490488,
+        "neighbourhood": "Fonte de Santa Teresa"
+      },
+      "story": "Bucaco's third redwood stop stands on a slope above what locals reckon the best spring water in the whole forest, the Fonte de Santa Teresa, named for the sixteenth century Carmelite reformer Teresa of Avila. The register measured it in 2016 at 5.58 metres round and 45 metres tall, about 150 years old at the time, which puts it in the ground within a few decades of the forest's other sequoias, planted when the fashion for collecting the world's conifers was at its height.\n\nThe fountain it grows beside is one stop on the Trilho da Agua, a walking trail built around Bucaco's historic water sources, Fonte Fria and Fonte do Carregal among them, that the forest describes as contemplative rather than athletic. A redwood needing fog and damp air to thrive has, by accident or design, ended up on the one trail in the forest built around water.\n\nCoast redwoods drink through their needles as much as their roots, drawing a real share of their water straight from the sea mist Bucaco's hillside catches off the Atlantic, which is the reason this species does as well here as it does anywhere outside its native California fog belt. This one has had a century and a half to put that trick to use.",
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class (ICNF Portuguese national monumental trees register, processo AIP01110436I, girth 5.58m, height 45m, age 150 at 2016 measurement)",
+        "https://fmb.pt/a-mata/visitar/trilhos-e-percursos-pedestres/?lang=en (Fundacao Mata do Bucaco, Trilho da Agua route past the forest's historic fountains)",
+        "https://www.minube.pt/sitio-preferido/fonte-de-santa-teresa-a3672306 (Fonte de Santa Teresa, named for Teresa of Avila, near the former hermitage of the same name)"
+      ],
+      "access": "Free on foot. Cars pay 5 euros at the forest gate",
+      "transport": "On the Trilho da Agua, about 300m south-west of the Largo do Mosteiro",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Age rests on the register's 2016 measurement (150 years) plus the years since; no independent source dates it. Held back in an earlier pass only on 'three redwoods make a list, not a walk', which CLAUDE.md's Step 2 rules out as a reason (a judgement call about whether a tree is good enough never blocks publication). Shipped 2026-08-15 to close Bucaco to its 10-tree target.",
       "location_precision": "confirmed"
     }
   ]

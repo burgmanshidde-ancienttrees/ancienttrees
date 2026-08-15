@@ -418,7 +418,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 290 | Bogota | 0.04 | 1,623 | - | - | - | - | 10 | predicted (thin competition) |
 | 291 | Sao Paulo | 0.02 | 911 | - | - | - | - | 10 | predicted (thin competition) |
 | 292 | San Sebastian | 0.01 | 367 | - | - | - | - | 10 | predicted (thin competition) |
-| 293 | Bucaco | 0.00 | 132 | 9 | 1 | 1 | 29 | 10 | predicted (thin competition) |
+| 293 | Bucaco | 0.00 | 132 | 10 | 1 | 1 | 29 | 10 | predicted (thin competition) |
 
 ## What this replaces
 

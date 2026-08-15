@@ -4,7 +4,7 @@
   "data/registers",
   "data/leads"
  ],
- "count": 27743,
+ "count": 27744,
  "trees": [
   {
    "id": "ali_001",
@@ -3509,6 +3509,22 @@
    "has_photo": false,
    "has_story": true,
    "sources": 2
+  },
+  {
+   "id": "bsc_010",
+   "tier": "highlighted",
+   "name": "The Redwood of the Fonte de Santa Teresa",
+   "species": "Coast Redwood (Sequoia sempervirens)",
+   "city": "Bucaco",
+   "country": "Portugal",
+   "lat": 40.37607033,
+   "lng": -8.363490488,
+   "precision": "confirmed",
+   "age_min": 148,
+   "age_max": 172,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 3
   },
   {
    "id": "buc_001",
@@ -460016,7 +460032,7 @@
    "lng": -8.363490488,
    "precision": null,
    "reason": "",
-   "note": "Girth 5.58 m, 45 m tall, 150 years at the 2016 measurement. Bigger in the trunk than the pair published as bsc_005 and on the Trilho da Agua past the historic fountains, so a genuinely good stop. Cut on the count and because a page with three separate redwood entries stops being a walk and becomes a list.",
+   "note": "Girth 5.58 m, 45 m tall, 150 years at the 2016 measurement, on the Trilho da Agua past the historic fountains. Note for the record: its girth is actually comparable to, not bigger than, the bsc_005 pair (5.64m/5.67m per that entry's own notes), so the story does not repeat that claim. Previously cut on the count and on 'three redwoods make a list, not a walk', which CLAUDE.md's Step 2 names as exa",
    "has_photo": false,
    "has_story": false,
    "sources": 0
