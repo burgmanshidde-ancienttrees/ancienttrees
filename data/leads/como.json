@@ -2,7 +2,7 @@
  "city": "Como",
  "country": "Italy",
  "city_slug": "como",
- "note": "2026-08-14 verify pass on the 5 leads from the 2026-08-13 pass (see data/research/como-verified.json for the 2 new deliveries, com_008 and com_009). One of the five (Piazza Camerlata) cleared on register + obvious public-square access; one (Quarcino) cleared on register + a dated 2018 photo matching the register coordinates plus the CLAUDE.md churchyard default, no explicit restriction found despite a targeted search; one (Villa Roccolo, Grandate) turned out to be private and moved to blocked; two (Via Baserga, Museo Giovio) remain leads, unresolved on access. 2026-08-14 write pass: neither remaining lead could be written. Como stays at 9 of its 10 target, and the gap is an access question in both cases, not a shortage of prose.",
+ "note": "2026-08-14 verify pass on the 5 leads from the 2026-08-13 pass (see data/research/como-verified.json for the 2 new deliveries, com_008 and com_009). One of the five (Piazza Camerlata) cleared on register + obvious public-square access; one (Quarcino) cleared on register + a dated 2018 photo matching the register coordinates plus the CLAUDE.md churchyard default, no explicit restriction found despite a targeted search; one (Villa Roccolo, Grandate) turned out to be private and moved to blocked; two (Via Baserga, Museo Giovio) remain leads, unresolved on access. 2026-08-14 write pass: neither remaining lead could be written. Como stays at 9 of its 10 target, and the gap is an access question in both cases, not a shortage of prose. 2026-08-15 verify pass: briefed with 7 'never checked' MASAF register candidates near the cluster (data/registers/italy-masaf.json, matched by lat/lng). All 7 turned out to be the SAME physical trees as entries already disposed of here, just reached via different register sheet numbers than the ones previously cited, which is why the brief's own dedupe missed them (blocked/held entries carry no lat/lng to match against). Coordinates added below to close that gap for future briefs. No new tree verified; Como stays at 9. Breakdown: 3 candidates (45.81528/9.06750 plane girth 642cm, 45.81502/9.06860 arbutus, 45.81500/9.06864 magnolia) are Villa Saporiti, already blocked (the blocked entry's cited sheet '03/C933/CO/03' for the 642cm plane was a typo, the correct MASAF sheet is 20/C933/CO/03 with matching locality 'Villa Saporiti - Via Borgovico 148' and identical girth, now corrected below). 1 candidate (45.81449/9.06595, Atlas Cedar girth 520cm) is Istituto Ugo Foscolo, already blocked, sheet id matches exactly. 1 candidate (45.80886/9.08681, plane girth 710cm/32m) is Museo Giovio (Palazzo Giovio, Piazza Medaglie d'Oro 1, confirmed by web search), the SAME tree as the already-held Museo Giovio lead, whose girth/height figures (710cm, 32m) match this register sheet (03/C933/CO/03) exactly; still held on courtyard access, not re-litigated. 2 candidates (45.83656/9.07719 and 45.83735/9.07623, plane girth 575cm each) are Villa Erba, already blocked; the second sheet id (03/C520/CO/03) is now added below since only one was previously recorded.",
  "leads": [
   {
    "name": "The Plane Tree of Via Baserga",
@@ -18,6 +18,7 @@
    "species": "American Sycamore per MASAF / hispanica per RAMI",
    "lat": 45.808864,
    "lng": 9.086811,
+   "masaf_sheet_id": "03/C933/CO/03",
    "status": "held",
    "why": "Still held on access. Checked 2026-08-14: the Musei Civici (Museo Giovio) remain closed for renovation; the most specific timeline found (EspansioneTv, reporting comments from official Enrico Colombo) targets only a PARTIAL reopening of the ground floor of the two palaces 'per la seconda metà del 2026' (second half of 2026), with no month given and no confirmation it has actually happened. No source found stating the courtyard (where the tree stands) is accessible independently of the exhibition halls. Everything else is ready: 710cm girth and 32m height agreed across three sources per the earlier pass. Note the species disagreement, MASAF says Platanus occidentalis and RAMI says hispanica; do not assert either with confidence. NOT written 2026-08-14 (write pass): unchanged, and this entry's own next_step says not to re-run the search more than monthly, which the 2026-08-14 verify pass had already done that morning. The museum courtyard is still closed for renovation with only a partial reopening targeted for the second half of 2026, so access still cannot be stated honestly.",
    "next_step": "Recheck comune.como.it or the museum's own page for an actual reopening announcement before shipping; do not re-run this exact web search more than about once a month, as the answer will not change faster than that."
@@ -27,17 +28,20 @@
   {
    "name": "The Plane Tree of Villa Saporiti (also the Magnolia and Strawberry Tree at the same site)",
    "species": "American Sycamore (Platanus occidentalis), Southern Magnolia (Magnolia grandiflora), Strawberry Tree (Arbutus unedo)",
-   "reason": "Register sheets 03/C933/CO/03 (girth 642cm), 18/C933/CO/03 (magnolia, 228cm) and 14/C933/CO/03 (arbutus, no girth recorded). Villa Saporiti's park is the working office grounds of the Province of Como (laprovinciadicomo.it), in exclusive use of administrators and staff; access for others is only via scheduled guided visits authorised by the institution, not a place a visitor can walk in. Restricted access, hard rule 10."
+   "reason": "Register sheets 20/C933/CO/03 (plane, girth 642cm; corrected 2026-08-15, previously mis-cited here as 03/C933/CO/03), 18/C933/CO/03 (magnolia, 228cm) and 14/C933/CO/03 (arbutus, no girth recorded). Villa Saporiti's park is the working office grounds of the Province of Como (laprovinciadicomo.it), in exclusive use of administrators and staff; access for others is only via scheduled guided visits authorised by the institution, not a place a visitor can walk in. Restricted access, hard rule 10.",
+   "coordinates_lat_lng": [[45.815278, 9.0675], [45.815025, 9.0686], [45.815, 9.068639]]
   },
   {
    "name": "The Plane Trees of Villa Erba, Cernobbio",
    "species": "London Plane (Platanus x acerifolia)",
-   "reason": "Register sheets 01/C520, 02/C520, 03/C520, 04/C520 and 05/C520/CO/03, all recorded as 'Insieme omogeneo di Platanus acerifolia' (a homogeneous stand/avenue of plane trees), not one identifiable tree or a compact ensemble with a single obvious place to stand: fails the collectible-point test. ascuoladaglialberi.net also notes Villa Erba, Luchino Visconti's former residence, has only 'limited public access during events' since it now operates primarily as a conference and exhibition venue. Double reason: not a collectible point, and access is event-gated rather than open."
+   "reason": "Register sheets 01/C520, 02/C520, 03/C520, 04/C520 and 05/C520/CO/03, all recorded as 'Insieme omogeneo di Platanus acerifolia' (a homogeneous stand/avenue of plane trees), not one identifiable tree or a compact ensemble with a single obvious place to stand: fails the collectible-point test. ascuoladaglialberi.net also notes Villa Erba, Luchino Visconti's former residence, has only 'limited public access during events' since it now operates primarily as a conference and exhibition venue. Double reason: not a collectible point, and access is event-gated rather than open.",
+   "coordinates_lat_lng_sample": [[45.836556, 9.077194], [45.837353, 9.076233]]
   },
   {
    "name": "The Atlas Cedar of Istituto Ugo Foscolo",
    "species": "Atlas Cedar (Cedrus atlantica)",
-   "reason": "Register sheet 07/C933/CO/03, girth 520cm, locality 'Istituto Ugo Foscolo - Via Borgovico 193'. Stands on the grounds of an active school; no evidence of public access found or expected. Private/restricted institution, hard rule 10."
+   "reason": "Register sheet 07/C933/CO/03, girth 520cm, locality 'Istituto Ugo Foscolo - Via Borgovico 193'. Stands on the grounds of an active school; no evidence of public access found or expected. Private/restricted institution, hard rule 10.",
+   "coordinates_lat_lng": [45.814494, 9.06595]
   },
   {
    "name": "The Stone Pines of Villa del Grumello",
