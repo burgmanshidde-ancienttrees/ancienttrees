@@ -14,6 +14,13 @@
    "trees": 25
   },
   {
+   "city": "Prague",
+   "country": "Czech Republic",
+   "slug": "prague",
+   "status": "published",
+   "trees": 17
+  },
+  {
    "city": "Kyoto",
    "country": "Japan",
    "slug": "kyoto",
@@ -94,13 +101,6 @@
    "status": "published",
    "demand_views_90d": 120415,
    "trees": 27
-  },
-  {
-   "city": "Prague",
-   "country": "Czech Republic",
-   "slug": "prague",
-   "status": "published",
-   "trees": 17
   },
   {
    "city": "Beijing",
@@ -388,6 +388,22 @@
    "trees": 0
   },
   {
+   "city": "Quebec City",
+   "country": "Canada",
+   "slug": "quebec-city",
+   "status": "published",
+   "demand_views_90d": 124358,
+   "trees": 0
+  },
+  {
+   "city": "Wroclaw",
+   "country": "Poland",
+   "slug": "wroclaw",
+   "status": "published",
+   "demand_views_90d": 123894,
+   "trees": 0
+  },
+  {
    "city": "Zagreb",
    "country": "Croatia",
    "slug": "zagreb",
@@ -433,6 +449,22 @@
    "status": "published",
    "demand_views_90d": 689212,
    "trees": 10
+  },
+  {
+   "city": "Poznan",
+   "country": "Poland",
+   "slug": "poznan",
+   "status": "published",
+   "demand_views_90d": 65666,
+   "trees": 6
+  },
+  {
+   "city": "Brno",
+   "country": "Czech Republic",
+   "slug": "brno",
+   "status": "published",
+   "demand_views_90d": 63714,
+   "trees": 6
   },
   {
    "city": "Catania",
@@ -548,6 +580,14 @@
    "status": "published",
    "demand_views_90d": 394702,
    "trees": 10
+  },
+  {
+   "city": "Potsdam",
+   "country": "Germany",
+   "slug": "potsdam",
+   "status": "published",
+   "demand_views_90d": 51727,
+   "trees": 0
   },
   {
    "city": "Berlin",
@@ -785,6 +825,14 @@
    "trees": 15
   },
   {
+   "city": "Warsaw",
+   "country": "Poland",
+   "slug": "warsaw",
+   "status": "published",
+   "demand_views_90d": 197929,
+   "trees": 5
+  },
+  {
    "city": "Denpasar",
    "country": "Indonesia",
    "slug": "denpasar",
@@ -808,6 +856,14 @@
    "status": "published",
    "demand_views_90d": 253705,
    "trees": 4
+  },
+  {
+   "city": "Geneva",
+   "country": "Switzerland",
+   "slug": "geneva",
+   "status": "published",
+   "demand_views_90d": 162269,
+   "trees": 6
   },
   {
    "city": "Osaka",
@@ -834,20 +890,20 @@
    "trees": 13
   },
   {
+   "city": "Krakow",
+   "country": "Poland",
+   "slug": "krakow",
+   "status": "published",
+   "demand_views_90d": 140824,
+   "trees": 4
+  },
+  {
    "city": "Seoul",
    "country": "South Korea",
    "slug": "seoul",
    "status": "published",
    "demand_views_90d": 206265,
    "trees": 8
-  },
-  {
-   "city": "Warsaw",
-   "country": "Poland",
-   "slug": "warsaw",
-   "status": "published",
-   "demand_views_90d": 197929,
-   "trees": 5
   },
   {
    "city": "Stockholm",
@@ -898,14 +954,6 @@
    "trees": 4
   },
   {
-   "city": "Geneva",
-   "country": "Switzerland",
-   "slug": "geneva",
-   "status": "published",
-   "demand_views_90d": 162269,
-   "trees": 6
-  },
-  {
    "city": "Rotterdam",
    "country": "Netherlands",
    "slug": "rotterdam",
@@ -944,14 +992,6 @@
    "status": "published",
    "demand_views_90d": 86361,
    "trees": 10
-  },
-  {
-   "city": "Krakow",
-   "country": "Poland",
-   "slug": "krakow",
-   "status": "published",
-   "demand_views_90d": 140824,
-   "trees": 4
   },
   {
    "city": "Sofia",
@@ -1114,6 +1154,14 @@
    "trees": 10
   },
   {
+   "city": "Gdansk",
+   "country": "Poland",
+   "slug": "gdansk",
+   "status": "published",
+   "demand_views_90d": 4908,
+   "trees": 4
+  },
+  {
    "city": "Maastricht",
    "country": "Netherlands",
    "slug": "maastricht",
@@ -1159,14 +1207,6 @@
    "slug": "arnhem",
    "status": "published",
    "demand_views_90d": 31478,
-   "trees": 4
-  },
-  {
-   "city": "Gdansk",
-   "country": "Poland",
-   "slug": "gdansk",
-   "status": "published",
-   "demand_views_90d": 4908,
    "trees": 4
   },
   {
@@ -1234,46 +1274,6 @@
    "note": "Not a city: the walled Mata Nacional do Bucaco inside the concelho of Mealhada, freguesia of Luso. Named for the place a visitor actually goes and searches for. 29 ICNF-classified trees inside 900 metres, 6 published, the rest in data/leads/bucaco.json.",
    "demand_views_90d": 132,
    "trees": 10
-  },
-  {
-   "city": "Brno",
-   "country": "Czech Republic",
-   "slug": "brno",
-   "status": "published",
-   "demand_views_90d": 63714,
-   "trees": 0
-  },
-  {
-   "city": "Potsdam",
-   "country": "Germany",
-   "slug": "potsdam",
-   "status": "published",
-   "demand_views_90d": 51727,
-   "trees": 0
-  },
-  {
-   "city": "Poznan",
-   "country": "Poland",
-   "slug": "poznan",
-   "status": "published",
-   "demand_views_90d": 65666,
-   "trees": 0
-  },
-  {
-   "city": "Wroclaw",
-   "country": "Poland",
-   "slug": "wroclaw",
-   "status": "published",
-   "demand_views_90d": 123894,
-   "trees": 0
-  },
-  {
-   "city": "Quebec City",
-   "country": "Canada",
-   "slug": "quebec-city",
-   "status": "published",
-   "demand_views_90d": 124358,
-   "trees": 0
   }
  ]
 }

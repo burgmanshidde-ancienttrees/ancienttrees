@@ -1,0 +1,210 @@
+{
+  "city": "Poznan",
+  "country": "Poland",
+  "status": "needs_curation",
+  "intro": "Four of the six trees here stand on one square, every one a London plane with a professor's name. Poznan protected them in 2023 after sending sound through their trunks to check what was solid inside, then named each for a botanist who had worked in the city. The other two arrived a year later: a plane of about 190 years in the rose courtyard behind the Kaiser's castle, and a silver maple, an American river tree, holding 271 centimetres of girth on a small green square.",
+  "meta_description": "Monumental trees in Poznan: four protected planes on Plac Wolnosci named after botanists, a 190-year-old plane at the castle, and a fine silver maple.",
+  "question_meta": "Poznan's oldest tree on this list is the plane in the Zamek rose courtyard, about 190 years old and 411cm round. Where it stands, plus five more.",
+  "question_answer": "The oldest tree on this page is the Abakanowicz Plane, in the Rose Courtyard behind the Zamek cultural centre, which the city put at about 190 years old and 411 centimetres round when it made the tree a natural monument in April 2024. That makes it roughly seventy years older than the castle it stands behind. Poland's national register carries no age field at all, so every age on this page comes from the city of Poznan's own figures, and the four planes on Plac Wolnosci have nothing more precise than a planting at the start of the twentieth century.",
+  "question_context": "Every tree here is a pomnik przyrody, a natural monument, protected by a vote of Poznan city council and then entered in Poland's national register. That register is the reason the ages on this page are thin: it records the species, the position and the date of designation, and has no column for age or girth anywhere in it. Where a figure appears here it comes from the city's own announcement of the designation, which published 411 centimetres and about 190 years for the castle plane and 271 centimetres and about 105 years for the silver maple, and gave the four planes on Plac Wolnosci no measurements at all beyond their height and a planting date at the start of the twentieth century. All six are recent protections, from 2023 and 2024, and the four on the square were surveyed with acoustic tomography before the vote, which is a better record of their condition than most trees on this site have. Four of them make one short walk across a single square; the castle plane is five minutes west and the silver maple ten minutes south-east.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Poznan?",
+      "a": "Of the trees on this page, the plane in the Rose Courtyard behind the Zamek cultural centre, which the city dated to about 190 years old when it protected it in 2024. It is also the thickest, at 411 centimetres round."
+    },
+    {
+      "q": "Are Poznan's monumental trees free to visit?",
+      "a": "Yes. Five stand on open public ground at any hour. The sixth is in a courtyard of the Zamek cultural centre, which is free and open daily from 9:00 to 22:00, although the centre's own programming can occasionally take over that courtyard."
+    },
+    {
+      "q": "How many can I see in one walk?",
+      "a": "All six, comfortably. Four stand together on Plac Wolnosci, the castle plane is about five minutes west along Sw. Marcin, and the silver maple is about ten minutes the other way towards Zielona."
+    },
+    {
+      "q": "Why are the trees named after people?",
+      "a": "Poznan names its protected trees rather than numbering them. The four on Plac Wolnosci were named at the district council's request for botanists and plant sociologists connected to the city, among them Jozef Paczoski, who coined the term phytosociology."
+    }
+  ],
+  "hero_tree_id": "poz_005",
+  "oldest_tree_id": "poz_005",
+  "trees": [
+    {
+      "id": "poz_001",
+      "name": "The Hejnowicz Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 100-125 years",
+      "age_min": 100,
+      "age_max": 125,
+      "location": {
+        "address": "Plac Wolnosci, Poznan",
+        "latitude": 52.408315875759,
+        "longitude": 16.926763299997766,
+        "neighbourhood": "Stare Miasto (Old Town), central Poznan"
+      },
+      "location_precision": "confirmed",
+      "access": "Free, on the open public square at all hours",
+      "transport": "Fredry tram stop, about 3 minutes' walk",
+      "story": "Before Poznan gave these four planes legal protection, it listened to them. The city's climate and environment department commissioned a dendrological survey that included acoustic tomography, sound pushed through the trunk to map solid wood from rot, and all four came back in good to very good condition with a low risk of dropping limbs. On 16 May 2023 the council made them pomniki przyrody, natural monuments, at the request of the Stare Miasto district council, and gave each one a name instead of a number. This is the Hejnowicz Plane, for Professor Alina Hejnowicz. It stands at the eastern end of the group, roughly thirty metres from its nearest neighbour, and belongs to a set measured at between twenty and twenty-three and a half metres tall. They went into the ground at the start of the twentieth century, which puts their planting close to the moment the square itself changed identity: Prussian Wilhelmsplatz until 1918, Plac Wolnosci, Freedom Square, ever since. Neither the national register nor the city's announcement gives a girth for any of the four, so none is published here. The register entry was formalised on 9 June 2023, three weeks after the vote.",
+      "how_to_recognise": "The easternmost of the four, standing on its own about thirty metres from the next plane along.",
+      "verified_sources": [
+        "GDOS CRFOP register: http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.3064011.10663",
+        "https://www.poznan.pl/mim/bm/news/z-rady-miasta,c,16/nowe-pomniki-przyrody,203831.html"
+      ],
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "poz_002",
+      "name": "The Stecki Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 100-125 years",
+      "age_min": 100,
+      "age_max": 125,
+      "location": {
+        "address": "Plac Wolnosci, Poznan",
+        "latitude": 52.40835317575891,
+        "longitude": 16.92627279999777,
+        "neighbourhood": "Stare Miasto (Old Town), central Poznan"
+      },
+      "location_precision": "confirmed",
+      "access": "Free, on the open public square at all hours",
+      "transport": "Fredry tram stop, about 3 minutes' walk",
+      "story": "This tree carries a professor's name because a district council asked for it. In May 2023 the Stare Miasto district put in a request, and the city council designated four London planes on Plac Wolnosci as natural monuments, attaching to each the name of a botanist or plant sociologist who had worked in Poznan. This one is Konstanty Stecki's. It stands at the north-west corner of the group, about thirty metres west of the Hejnowicz Plane and roughly the same distance north of the close pair on the southern side. The square around it is one of the more consequential rectangles in Polish history. The Bazar hotel at its northern end is where Ignacy Jan Paderewski spoke from a window on 26 December 1918, the evening the Greater Poland Uprising began, and the colonnade of the Raczynski Library has faced the same square since 1829. Whether this plane was already standing for Paderewski's speech is not something anyone has written down: the city dates the four only to the start of the twentieth century, which straddles the year. What is recorded is its health, checked by acoustic tomography before designation and found good to very good.",
+      "how_to_recognise": "The north-western of the four, roughly thirty metres west of the plane at the eastern end and the same again north of the close pair.",
+      "verified_sources": [
+        "GDOS CRFOP register: http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.3064011.10664",
+        "https://www.poznan.pl/mim/bm/news/z-rady-miasta,c,16/nowe-pomniki-przyrody,203831.html"
+      ],
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "poz_003",
+      "name": "The Paczoski Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 100-125 years",
+      "age_min": 100,
+      "age_max": 125,
+      "location": {
+        "address": "Plac Wolnosci, Poznan",
+        "latitude": 52.40805297074312,
+        "longitude": 16.926258275381983,
+        "neighbourhood": "Stare Miasto (Old Town), central Poznan"
+      },
+      "location_precision": "confirmed",
+      "access": "Free, on the open public square at all hours",
+      "transport": "Fredry tram stop, about 3 minutes' walk",
+      "story": "One of the four protected planes on Plac Wolnosci is named after the man who coined the word phytosociology. Jozef Paczoski, born 1864, argued that plants should be studied as societies rather than as individual specimens, gave that idea its name in the 1890s, and spent his later career teaching in Poznan. The city attached his name to this tree on 16 May 2023, when the council designated all four planes on the square as natural monuments at the district council's request. It is the eastern of the two that stand six metres apart on the southern side of the square, which is close enough that a visitor needs to know which is which. The four went in at the start of the twentieth century and stand between twenty and twenty-three and a half metres tall. Before protecting them the city had them surveyed with acoustic tomography, which reads the density of wood inside a living trunk without opening it, and all four came back sound with a low risk of failure. Poland's national register records the designation, the species and the position, and carries no field for girth or age, so neither is published here.",
+      "how_to_recognise": "Two of the four stand six metres apart on the southern side; this is the eastern one of that pair.",
+      "verified_sources": [
+        "GDOS CRFOP register: http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.3064011.10665",
+        "https://www.poznan.pl/mim/bm/news/z-rady-miasta,c,16/nowe-pomniki-przyrody,203831.html"
+      ],
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "poz_004",
+      "name": "The Kulesza Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 100-125 years",
+      "age_min": 100,
+      "age_max": 125,
+      "location": {
+        "address": "Plac Wolnosci, Poznan",
+        "latitude": 52.408051675759545,
+        "longitude": 16.926169499997766,
+        "neighbourhood": "Stare Miasto (Old Town), central Poznan"
+      },
+      "location_precision": "confirmed",
+      "access": "Free, on the open public square at all hours",
+      "transport": "Fredry tram stop, about 3 minutes' walk",
+      "story": "Plac Wolnosci has four legally protected trees and all four are the same species. They are London planes, the tree European cities reach for when the ground is paved, the air is exhaust and the roots have nowhere generous to go. Rather than number them, Poznan gave each a name: this is the Kulesza Plane, for Professor Witold Kulesza, designated with the other three on 16 May 2023 and entered in the national register three weeks later. It is the western of the pair that stand six metres apart along the southern side, the closest two of the group. The square it stands on runs as a long open rectangle between the Bazar hotel and the neoclassical front of the Raczynski Library, and it has been the city's ceremonial ground under two states and three names. The trees arrived at the start of the twentieth century, when the paving and the traffic around them were both lighter. Their condition is documented rather than assumed: the city commissioned a dendrological survey with acoustic tomography before the vote, and the four were found in good to very good health with a low risk of breakage.",
+      "how_to_recognise": "Two of the four stand six metres apart on the southern side; this is the western one of that pair.",
+      "verified_sources": [
+        "GDOS CRFOP register: http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.3064011.10666",
+        "https://www.poznan.pl/mim/bm/news/z-rady-miasta,c,16/nowe-pomniki-przyrody,203831.html"
+      ],
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "poz_005",
+      "name": "The Abakanowicz Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 190 years",
+      "age_min": 170,
+      "age_max": 210,
+      "location": {
+        "address": "Dziedziniec Rozany (Rose Courtyard), Centrum Kultury Zamek, ul. Sw. Marcin 80/82, Poznan",
+        "latitude": 52.4086667757581,
+        "longitude": 16.919472199997738,
+        "neighbourhood": "Centrum Kultury Zamek grounds, central Poznan"
+      },
+      "location_precision": "confirmed",
+      "access": "Free; the Zamek cultural centre's halls, corridors and courtyards are open daily 9:00-22:00, though the Rose Courtyard's exact availability can depend on the centre's own programming",
+      "transport": "Zamek tram stop, about 3 minutes' walk",
+      "story": "This plane was already about seventy years old when the Kaiser's builders turned up next door. Poznan puts its age at roughly 190 years and its trunk at 411 centimetres round, the figures published when the council made it a natural monument on 16 April 2024. Wilhelm II's residence, the vast castle now running as the Zamek cultural centre, went up between 1905 and 1910, on ground where this tree was already mature. It stands in the Dziedziniec Rozany, the Rose Courtyard, tucked between the castle and the Arsenal building, which is not where anyone expects to find the oldest and thickest tree on a city's list. The name it carries is Magdalena Abakanowicz's, the sculptor who was for decades a professor in Poznan and whose crowd of headless iron figures stands in the park across the river. The courtyard is part of a building open daily from nine in the morning until ten at night, though the Zamek's own programme occasionally takes the space, so this is the one tree here you might have to come back for. Poland's national register confirms the species and the spot; the age and the girth are the city's own.",
+      "verified_sources": [
+        "GDOS CRFOP register: http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.3064011.10842",
+        "https://www.poznan.pl/mim/info/news/4,227226.html"
+      ],
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "poz_006",
+      "name": "The Zakrzewski Silver Maple",
+      "species": "Silver Maple (Acer saccharinum)",
+      "age_estimate": "roughly 105 years",
+      "age_min": 95,
+      "age_max": 115,
+      "location": {
+        "address": "Skwer Zielone Ogrodki, ul. Zielona / ul. Strzelecka, Poznan",
+        "latitude": 52.404150876395605,
+        "longitude": 16.933779228120596,
+        "neighbourhood": "Zielone Ogrodki, central Poznan"
+      },
+      "location_precision": "confirmed",
+      "access": "Free, on the open public square at all hours",
+      "transport": "Central Poznan, short walk from Plac Wolnosci / the Old Market Square",
+      "story": "This is not a Polish tree. Acer saccharinum grows wild in the river bottoms of eastern North America, where it takes the spring floods that kill other species, and it reached European parks as an ornamental fast-grower with a habit of shedding limbs in storms. Poznan's finest example holds 271 centimetres of girth at about 105 years old, which is quick work, and the city made it a natural monument on 16 April 2024, naming it for Professor Zbigniew Zakrzewski. It stands on the Skwer Zielone Ogrodki, the strip of small green squares laid out where Zielona meets Strzelecka, a few minutes from the Old Market Square and free at any hour. The species gives itself away in wind: the leaves are cut into deep, narrow lobes and the undersides are almost white, so a gust turns the whole crown pale for a second and then back again. The press covering the designation called it an exceptionally fine specimen of its kind, which for a silver maple in a Polish city centre is a real compliment: most of them are planted, admired for a few decades and then quietly removed after the first bad storm.",
+      "verified_sources": [
+        "GDOS CRFOP register: http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.3064011.10844",
+        "https://www.poznan.pl/mim/info/news/4,227226.html"
+      ],
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
