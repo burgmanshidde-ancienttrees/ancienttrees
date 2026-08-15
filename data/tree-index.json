@@ -4,7 +4,7 @@
   "data/registers",
   "data/leads"
  ],
- "count": 27735,
+ "count": 27737,
  "trees": [
   {
    "id": "ali_001",
@@ -111,6 +111,38 @@
    "country": "Spain",
    "lat": 38.344292,
    "lng": -0.483643,
+   "precision": "confirmed",
+   "age_min": null,
+   "age_max": null,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 3
+  },
+  {
+   "id": "ali_008",
+   "tier": "highlighted",
+   "name": "The Ficus de Benalúa",
+   "species": "Moreton Bay Fig (Ficus macrophylla)",
+   "city": "Alicante",
+   "country": "Spain",
+   "lat": 38.340937,
+   "lng": -0.499901,
+   "precision": "confirmed",
+   "age_min": 140,
+   "age_max": 165,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 3
+  },
+  {
+   "id": "ali_009",
+   "tier": "highlighted",
+   "name": "The Fig of Plaza de Navarro Rodrigo",
+   "species": "Indian Laurel Fig (Ficus microcarpa)",
+   "city": "Alicante",
+   "country": "Spain",
+   "lat": 38.341656,
+   "lng": -0.498138,
    "precision": "confirmed",
    "age_min": null,
    "age_max": null,
@@ -462304,7 +462336,7 @@
    "lng": -8.275499988,
    "precision": null,
    "reason": "",
-   "note": "The research pass's own recommendation was to ship this, and it is genuinely a strong tree: an oak beside a baroque water tank in the walled garden of a 12th-century monastery, classified public-interest since 1940. Held back on publication (not by the research pass, on review) because the site is now a hotel (Pousada de Santa Marinha) and no source found states plainly that a non-guest can walk i",
+   "note": "[RESOLVED 2026-08-14, delivered as gui_005] Shipped as The Oak of Santa Marinha da Costa, the single carvalho-alvarinho at the baroque circular tank, rather than as the six-species ensemble, which has no one place to stand. Access verdict: pousadas.pt's own gardens page describes the 9-hectare park as open to hospedes e visitantes, which is the property stating its own access, so it ships with an ",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -462352,7 +462384,7 @@
    "lng": -8.340383333,
    "precision": null,
    "reason": "",
-   "note": "8-species conjunto arboreo, classified 2020 (Despacho 6069/2020). 5.3km from the historic centre, well outside any cluster with the shipped trees and unresearched this pass. A candidate for its own future pass rather than a Guimaraes-centre addition.",
+   "note": "8-species conjunto arboreo, classified 2020 (Despacho 6069/2020). 5.3km from the historic centre, well outside any cluster with the shipped trees and unresearched this pass. A candidate for its own future pass rather than a Guimaraes-centre addition. HELD 2026-08-14 by the write pass, and now on a stronger reason than distance: the ICNF record (AIP03083877C) types this as 'Bosque', a wood, with ei",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -462368,7 +462400,7 @@
    "lng": -8.338699988,
    "precision": null,
    "reason": "",
-   "note": "Single tree on a roundabout, ~4.4km from the centre, age 100 at 2011 measurement. Unresearched, out of cluster range.",
+   "note": "[RESOLVED 2026-08-14, delivered as gui_006] Shipped as The Stone Pine of Silvares. Register KNJ1/608: girth 3.8 m, height 26 m, crown 26.4 m, age 100 at the 2011 measurement, classified Aviso no. 9 of 17/06/2011. Access is the easiest on the page, a public roundabout on the old ER 206. Transport: Guimaraes city bus line 082, the Silvares to Pevidem circular, 4.5 km west of the centre. Pin left app",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -462384,7 +462416,7 @@
    "lng": -8.317416667,
    "precision": null,
    "reason": "",
-   "note": "9km south of the centre, effectively a different town. Unresearched, out of cluster range.",
+   "note": "HELD 2026-08-14 on access, not on distance. The tree is worth having: ICNF AIP030831110I measures it at girth 4.1 m, height 24 m and a crown 30.5 m across, six and a half metres wider than the tree is tall, age 100 at the 2019 measurement, classified by Despacho 12492/2021 of 22 December 2021. The municipality's stated reason is landscape rather than size: it stands out above the buildings and sur",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -462400,7 +462432,7 @@
    "lng": -8.3165,
    "precision": null,
    "reason": "",
-   "note": "9.5km north, at the famous Iron Age hillfort site. Genuinely visited by tourists, but too far from the historic-centre cluster to join this city's page as researched. Worth a look as its own entry or a Braga-area cluster candidate later.",
+   "note": "HELD 2026-08-14 on the day-trip boundary, and it is the best of the three pines, so this is a real loss rather than a shrug. What is now known and need not be researched again: ICNF AIP030880114I gives girth 3.6 m, height 25 m, crown 26.5 m, age 130 at the 2020 measurement; classified by Despacho 12490/2021 of 22 December 2021, applied for by the council in 2018, on grounds of longevity over 120 y",
    "has_photo": false,
    "has_story": false,
    "sources": 0
