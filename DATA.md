@@ -5,6 +5,142 @@ workflow. Numbers are for the previous UTC day. While volume is tiny the
 conclusion says so plainly; noise is never narrated as trend (Hidde's
 standing rule, 2026-07-27).
 
+## 2026-08-14 (previous UTC day)
+
+**Today: a waitlist arrived yesterday (6 total); a submission arrived yesterday (2 total).**
+
+**Did the product happen**
+- app-cta:     0 yesterday, last never
+- directions:  0 yesterday, last never
+- save:        0 yesterday, last never
+- signin-link-sent: 0 yesterday, last never
+- smoke-test:  0 yesterday, last 14 days ago
+- waitlist-submit: 0 yesterday, last never
+- walk-open:   0 yesterday, last never
+- walk-start:  0 yesterday, last never
+- worthit-worth it: 0 yesterday, last never
+
+| Day | Accounts | Waitlist | Submissions |
+|---|---:|---:|---:|
+| 08-01 | 0 | 0 | 0 |
+| 08-02 | 0 | 0 | 0 |
+| 08-03 | 0 | 0 | 0 |
+| 08-04 | 0 | 1 | 0 |
+| 08-05 | 0 | 0 | 0 |
+| 08-06 | 0 | 0 | 0 |
+| 08-07 | 0 | 1 | 0 |
+| 08-08 | 1 | 1 | 0 |
+| 08-09 | 0 | 0 | 0 |
+| 08-10 | 0 | 0 | 0 |
+| 08-11 | 0 | 0 | 0 |
+| 08-12 | 0 | 0 | 0 |
+| 08-13 | 0 | 0 | 0 |
+| 08-14 | 0 | 1 | 2 |
+| 08-15 | 0 | 0 | 0 |
+| **14 days** | **1** | **4** | **2** |
+- Waitlist:    6 total, newest yesterday
+- Submissions: 2 total, newest yesterday
+- Accounts:    3 total, newest 7 days ago
+
+**The funnel, as rates**
+- Seen to clicked: 2.3% (99 of 4379) vs 2.2% the fortnight before
+- Pages per visit: 1.7 (268 visits, 445 pageviews since 2026-08-08)
+- Visits that did something: 0.0% (0 actions on 268 visits)
+
+**Where demand is going to waste**
+
+Search Console, the last 10 days Google will give us (its data lags 2-3 days, so the newest row is never yesterday). Position is an average across every query, so it dips whenever we start ranking for something new:
+
+| Day | Clicks | Impressions | CTR | Position |
+|---|---:|---:|---:|---:|
+| 08-05 | 0 | 280 | 0.0% | 14.1 |
+| 08-06 | 7 | 215 | 3.3% | 13.4 |
+| 08-07 | 5 | 226 | 2.2% | 9.7 |
+| 08-08 | 7 | 194 | 3.6% | 10.0 |
+| 08-09 | 6 | 305 | 2.0% | 11.8 |
+| 08-10 | 16 | 394 | 4.1% | 13.5 |
+| 08-11 | 8 | 415 | 1.9% | 12.9 |
+| 08-12 | 9 | 441 | 2.0% | 19.1 |
+| 08-13 | 5 | 445 | 1.1% | 17.6 |
+| 08-14 | 12 | 398 | 3.0% | 14.9 |
+| **window** | **75** | **3313** | **2.3%** | |
+- Top queries (10d): oldest tree in lisbon (i4, p10); "oldest of its species" ginkgo park (i2, p6); 1800 trees (i1, p19); a tree in naples (i3, p9); american elm central park (i1, p37)
+- Top pages (10d): / (c4/i38); /kyoto (c4/i37); /prague (c4/i92); /vienna (c4/i68); /munich (c3/i55)
+- Content lead: 'belgian tree' has no matching page (i6, p58)
+
+**Depth is allowed on these cities** (10+ impressions in the window; photos, pins and best_time go here and nowhere else):
+
+| City | Clicks | Impressions |
+|---|---:|---:|
+| palermo | 3 | 153 |
+| amsterdam | 1 | 138 |
+| rome | 2 | 122 |
+| prague | 6 | 103 |
+| barcelona | 2 | 93 |
+| vienna | 7 | 75 |
+| boston | 0 | 62 |
+| lisbon | 1 | 60 |
+| brussels | 1 | 57 |
+| munich | 3 | 55 |
+| cambridge | 0 | 54 |
+| dublin | 2 | 51 |
+| cadiz | 1 | 41 |
+| antwerp | 1 | 40 |
+| bologna | 0 | 39 |
+| kyoto | 5 | 38 |
+| athens | 0 | 38 |
+| nice | 2 | 37 |
+| budapest | 0 | 37 |
+| berlin | 1 | 35 |
+| lyon | 1 | 35 |
+| bristol | 0 | 33 |
+| tokyo | 1 | 24 |
+| porto | 3 | 23 |
+| sintra | 4 | 23 |
+| dubrovnik | 1 | 20 |
+| seville | 1 | 17 |
+| belgrade | 0 | 17 |
+| bangkok | 1 | 14 |
+| zurich | 1 | 14 |
+| bath | 0 | 14 |
+| leiden | 1 | 13 |
+| washington-dc | 1 | 10 |
+- Seen, not clicked: /rome (c0/i36, 0.0%) for trees in rome (i12, p25); rome tree (i5, p58); roman trees (i3, p48)
+- Seen, not clicked: /cambridge/newtons-apple-tree (c0/i21, 0.0%) for oldest apple tree (i2, p36); newton's apple tree (i2, p56); isaac newton's tree (i2, p47)
+- Seen, not clicked: /malaga (c0/i21, 0.0%) for árboles históricos de málaga (i20, p74); malaga tree (i1, p4)
+
+**Who they are**
+Audience, 28 days of search (135 clicks, 6076 impressions):
+- Countries: usa c23/i1332; gbr c11/i754; deu c10/i244; nld c10/i321; esp c9/i307
+- Devices: MOBILE c91/i3337; DESKTOP c44/i2683; TABLET c0/i56
+- Landing pages: / c8/i76; /lisbon c8/i186; /vienna c6/i122; /kyoto c5/i100; /porto c5/i36
+
+Web Analytics (beacon, real browsers, cookieless):
+Counts are bucketed to the nearest ten by Cloudflare; read the window, not the day.
+
+| Day | Visits | Pageviews |
+|---|---:|---:|
+| 08-07 | 30 | 30 |
+| 08-08 | 70 | 120 |
+| 08-09 | 10 | 20 |
+| 08-10 | 150 | 170 |
+| 08-11 | 40 | 50 |
+| 08-12 | 10 | 30 |
+| 08-13 | 10 | 60 |
+| 08-14 | 50 | 70 |
+| **window** | **370** | **550** |
+- Top paths: / (60); /app (50); /porto (50); /barcelona (30); /prague (20)
+- Referrers: (direct) (260); ancienttrees.app (180); www.google.com (100); zscaler-blocked.dpgmedia.net (10)
+- Countries: NL (210); US (100); DE (80); PT (60); CH (20)
+- Devices: desktop (420); mobile (130)
+- Page load (8d): p50 578ms, p90 5169ms
+
+Links: external referrers (a link somebody actually clicked): zscaler-blocked.dpgmedia.net (10)
+
+Machine: 7 chain attempts yesterday, 6 got real work time (~139 min total). Dead-in-seconds attempts cost nothing; few get-throughs means the usage window was full or closed.
+
+**Conclusion:** Search is the only channel with real data and it is still small: 12 clicks and 398 impressions on Google's freshest day (day before: c5/i445). Directional at best; no strategic conclusions from these volumes.
+
 ## 2026-08-13 (previous UTC day)
 
 **Today: a submission arrived today (2 total).**
