@@ -137,14 +137,35 @@ Work top-down. Reader submissions and a broken site still outrank everything.
 **The pool is Western tourism, the order is three factors multiplied** (Hidde,
 2026-08-13: "een top 250 gebaseerd op westers toerisme... potentie qua toerisme
 + bewezen google prestatie + gemak in opstellen"). Candidates enter the list for
-being places Western tourists actually go; each carries measured demand (English
-Wikipedia pageviews, fetched per city, never guessed). The rank multiplies score
+being places Western tourists actually go; each carries measured demand
+(**English Wikivoyage pageviews since 2026-08-15**, fetched per city, never
+guessed; the Wikipedia figure it replaced is kept in the `demand` column for
+comparison and is no longer what the rank is built on). The rank multiplies score
 (demand times realised yield, clicks once measured) by an ease factor of 1.0 to
 2.0: half for a country whose register story is proven (Portugal, Italy, Japan,
 Ireland, Spain, the Dutch municipal pattern), half for register supply already
 imported near the city. The boundary that keeps ease honest, from the Vienna-50
 mistake of 2026-08-12: **ease multiplies the order of work, never the target.**
 A register says cheap, not good.
+
+**The pool narrowed on 2026-08-15: high-income destinations only, for now.**
+Hidde, in two messages minutes apart: "Let's keep India out of the top 250 for
+now. It's a huge country I don't want to focus on now", then "I want to focus on
+cities for rich tourists." The rule is about the country VISITED rather than the
+wealth of the visitor, and his own India cut is what settles that: Agra and
+Jaipur are visited by affluent Westerners in large numbers and he cut them
+anyway. Implemented in `scripts/rescore.py` on the World Bank income
+classification, because it is a published citable line rather than a list
+somebody felt good about: high income full weight, upper-middle half weight
+(Thailand, Mexico, Brazil, Turkey, South Africa and the Balkans survive,
+halved), low and lower-middle **paused**. Nineteen unpublished cities left the
+list, the biggest being Ho Chi Minh City, Marrakech, Delhi, Ubud and Siem Reap.
+Paused is not deleted: the row, its travel demand and its register supply all
+stay, a published city is never unranked this way (hard rule 3), and lifting it
+is deleting a line from one table. **A run may not add or remove a country
+there.** The cost is real and is not hidden: several paused cities are places
+the product would serve well, and this is a focus decision rather than a verdict
+on them.
 
 **The source is `data/city-queue.json`, not this table.** Hidde asked for one
 source file carrying the priority of the 100 cities and the tree target per city
