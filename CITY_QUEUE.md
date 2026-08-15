@@ -221,8 +221,8 @@ so qa.py fails the deploy when the table and the json disagree.
 | 93 | Stuttgart | 2.82 | 112,789 | - | - | - | - | 10 | predicted (thin competition) |
 | 94 | New York | 2.81 | 1,124,326 | 20 | 5 | 2 | - | 10 | published, never ranked |
 | 95 | Santiago | 2.79 | 111,647 | - | - | - | - | 10 | predicted (thin competition) |
-| 96 | Marrakech | 2.78 | 111,098 | - | - | - | - | 10 | predicted (thin competition) |
-| 97 | Trento | 1.41 | 56,455 | 9 | 1 | 1 | 19 | 10 | predicted (thin competition) |
+| 96 | Trento | 1.41 | 56,455 | 10 | 1 | 1 | 20 | 10 | predicted (thin competition) |
+| 97 | Marrakech | 2.78 | 111,098 | - | - | - | - | 10 | predicted (thin competition) |
 | 98 | Kathmandu | 2.72 | 108,896 | - | - | - | - | 10 | predicted (thin competition) |
 | 99 | Riga | 2.72 | 108,918 | - | - | - | - | 10 | predicted (thin competition) |
 | 100 | Salzburg | 2.68 | 107,243 | - | - | - | - | 10 | predicted (thin competition) |

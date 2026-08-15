@@ -3,10 +3,10 @@
   "country": "Italy",
   "status": "needs_curation",
   "intro": "Four of Trento's registered trees stand within 900 metres of the station, which means you can be under the oldest of them two minutes after stepping off a train. That one is a plane planted in 1835, recognised as the city's oldest only in 2024. The others spread out: an elm that survived the disease which killed most of Europe's mature elms, a cedar planted the year Italy was founded, a sweet chestnut up at Sardagna reached by cable car, and a beech standing alone in a mountain pasture on Monte Bondone.",
-  "meta_description": "Nine monumental trees in Trento, four within 900 metres of the station: a plane from 1835, a surviving elm, and a beech alone in a Monte Bondone pasture.",
+  "meta_description": "Ten monumental trees in Trento, four within 900 metres of the station: a plane from 1835, a surviving elm, and a wild cherry at a mountain pass.",
   "question_meta": "Trento's oldest tree is the plane of Via Santa Croce, planted in 1835 and confirmed as the city's oldest in 2024. Where it stands, plus eight more.",
   "question_answer": "Trento's oldest tree is the London plane in the public garden on Via Santa Croce, planted in 1835 and reported by three separate press pieces in 2024 as the oldest in the city, which is when the recognition became official rather than local knowledge. It stands in a free public garden a few minutes from the station. Italy's national register carries no age field, so the 1835 date comes from the city's own records rather than from the register.",
-  "question_context": "Trento's registered trees are documented by the comune itself, which publishes a directory of its public gardens naming several of them, and by local press that covered the city's oldest tree when it was formally recognised in 2024. Italy's national register underlies all of it and carries girth, height and a position but no age column, so the 1835 planting date for the Via Santa Croce plane comes from the city's records rather than the register, and trees without such a record appear here with no age rather than a guess. The nine divide into one walk and five outings: four stand within nine hundred metres of the station, a fifth is twenty minutes south on foot at Maso Ginocchio, one is out at Parco Gocciadoro, one is up at Sardagna, reached by cable car, where the pin marks the locality rather than the trunk, one is a bus ride north in the hamlet of Cortesano, and one stands by itself in a pasture on Monte Bondone. Six register entries are deliberately left off: a sequoia inside a convent school, a cedar on school grounds, a cypress ensemble, and three plane avenues with no single place to stand.",
+  "question_context": "Trento's registered trees are documented by the comune itself, which publishes a directory naming several of them, and by local press that covered the city's oldest tree when it was formally recognised in 2024. Italy's national register underlies all of it and carries girth, height and a position but no age column, so the 1835 date for the Via Santa Croce plane comes from the city's own records, and trees without such a record appear here with no age rather than a guess. The ten divide into one walk and six outings: four stand within nine hundred metres of the station, a fifth is twenty minutes south on foot, one is at Parco Gocciadoro, one is up at Sardagna by cable car, one is a bus ride north in Cortesano, one stands alone in a Monte Bondone pasture, and the newest is a wild cherry at Passo del Cimirlo, a mountain pass reached by bus to Povo and an uphill walk on public forest land. Six register entries are deliberately left off: a sequoia inside a convent school, a cedar on school grounds, a cypress ensemble, and three plane avenues with no single place to stand.",
   "faq": [
     {
       "q": "What is the oldest tree in Trento?",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Trento's monumental trees free to visit?",
-      "a": "Yes, all of them stand in public gardens, streets, parks or open hillside with no entry fee. Three need more than your feet: the Sardagna chestnut is reached by the cable car up from the city, which is a paid ride, the Cortesano hackberry is a twenty-five minute bus ride north, and the Monte Bondone beech is a bus to Candriai and a quarter of an hour on a forest path."
+      "a": "Yes, all of them stand in public gardens, streets, parks or open hillside with no entry fee. Four need more than your feet: the Sardagna chestnut is reached by the cable car up from the city, which is a paid ride, the Cortesano hackberry is a twenty-five minute bus ride north, the Monte Bondone beech is a bus to Candriai and a quarter of an hour on a forest path, and the Passo del Cimirlo cherry is a bus to Povo followed by an hour's climb on an unpaved forest road."
     },
     {
       "q": "How many can I see in one walk?",
@@ -305,6 +305,44 @@
         "status": "missing"
       },
       "notes": "Pin is the register coordinate, roughly 330 m north-east of the malga building, so it is the meadow rather than the trunk: location_precision approximate. Age deliberately empty, Italy's national register has no age column and no source publishes one. Flagged because the girth comes from the register alone and the tourism sources describe the tree only as secolare. Access verdict 2026-08-14: open alpine pasture on Monte Bondone, nobody's home and no permission needed, so the tree clears hard rule 10; what held it back until now was a transport line, and bus B202 plus the Giro della Selva path supplies one."
+    },
+    {
+      "id": "tre_010",
+      "name": "The Wild Cherry of Passo del Cimirlo",
+      "species": "Wild Cherry (Prunus avium)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Passo del Cimirlo, Casare, 38123 Trento TN, Italy",
+        "latitude": 46.064825,
+        "longitude": 11.186625,
+        "neighbourhood": "Passo del Cimirlo, above Povo"
+      },
+      "location_precision": "confirmed",
+      "access": "Free, in public forest managed by Trento's forestry agency (Azienda Forestale Trentino Sviluppo); an unpaved provincial road and walking trails cross the pass, no gate or fee",
+      "transport": "Trentino Trasporti bus line 5 from the city centre (Piazza Dante / S. Francesco) to Povo, then about 45 to 60 minutes on foot up the unpaved provincial road toward the pass, climbing from about 600m to 790m",
+      "story": "One of Trento's 18 monumental trees stands well outside the city, at a mountain pass most residents know for hiking and old war ruins rather than for a tree. The Comune di Trento's own open register puts this wild cherry at 3.59 metres round and 26.5 metres tall, at 790 metres above sea level on public forest land managed by the province's forestry agency.\n\nPasso del Cimirlo sits between Monte Celva and the Marzola massif, linking Povo to the villages of Oltrecastello and Roncogno on an unpaved road that has carried foot and cart traffic for longer than anyone living remembers. During the First World War the Austro-Hungarian army dug trenches and built gun batteries across this ground as part of the ring of forts defending Trento; the nearby Forte Roncogno and the Batteria Cimirlo are still standing.\n\nA wild cherry this size is unusual on its own terms. Prunus avium is a fast grower and rarely a long liver by forest-tree standards, which makes a trunk over three and a half metres round a genuine rarity rather than simply an old specimen of a long-lived species. Trento added it to its monumental tree list in 2021 alongside 17 others, from a Himalayan cedar in a city park to a beech on a Monte Bondone pasture; this is the one that asks for the longest walk to see.",
+      "best_time": {
+        "months": [
+          4
+        ],
+        "kind": "flowers",
+        "label": "April, when the wild cherry flowers white before its leaves come in"
+      },
+      "verified_sources": [
+        "https://dati.trentino.it/dataset/alberi-monumentali-del-comune-di-trento-2024 (Comune di Trento open register, scheda 06/L378/TN/22, girth 359cm, height 26.5m, altitude 790m, ownership pubblico, managed by AFTS)",
+        "https://www.ildolomiti.it/cronaca/2024/a-trento-18-alberi-monumentali-il-piu-vecchio-e-stato-messo%C2%A0a-dimora-nel-1835-pattini-e-uez-valorizziamoli-per-farli-conoscere (confirms the wild cherry at Passo del Cimirlo among Trento's 18 declared monumental trees, added 2021-2023 via a University of Trento internship project)",
+        "https://it.wikipedia.org/wiki/Passo_del_Cimirlo (pass elevation, road access from Povo/Oltrecastello/Roncogno, WWI fortifications)"
+      ],
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "notes": "Age deliberately empty: the comune's register has no age column and no source found gives one. Flagged because girth/height come from a single register entry with press corroborating only the tree's existence and monumental status, not its measurements. This is the tenth tree noted as a research question in review_2026_08_14b; researched fresh 2026-08-15 from the comune's own open dataset rather than the villa-access leads, which remain held."
     }
   ]
 }
