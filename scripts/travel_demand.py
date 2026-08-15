@@ -66,6 +66,30 @@ PAUSE = 0.1
 STALE_DAYS = 30
 
 
+# Wikidata resolves nearly everything, and these are the ones it cannot,
+# found 2026-08-15 by flagging every city with big Wikipedia traffic and
+# almost no Wikivoyage traffic. Each was a title failure wearing the costume
+# of a finding: New York resolved to the STATE (501 views against the city's
+# 21,737), Bath to a disambiguation page, and Faro, Cork, Split and Brussels
+# to nothing at all. Left uncorrected they would have sunk four real tourist
+# cities to the bottom of the queue.
+#
+# The trap this table also records: pick by MEANING, never by the biggest
+# number. An automatic "take the busiest candidate" rule sent our Cartagena to
+# Colombia's (5,169) over Spain's (905), which happened to be right, and would
+# have sent Syracuse to New York State's over Sicily's, which would not.
+TITLE_OVERRIDES = {
+    "New York": "New York City",
+    "Bath": "Bath",
+    "Faro": "Faro",
+    "Cork": "Cork",
+    "Split": "Split",
+    "Brussels": "Brussels",
+    "Syracuse": "Syracuse (Italy)",       # ours is Sicily, not the one in NY
+    "Cartagena": "Cartagena (Colombia)",  # ours is Colombia, not Spain
+}
+
+
 def _get(url):
     req = urllib.request.Request(url, headers={"User-Agent": UA})
     with urllib.request.urlopen(req, timeout=25) as r:
@@ -179,6 +203,10 @@ def main():
         found = wikidata_voyage_titles(want)
         for art, city in want.items():
             cache["titles"][city] = found.get(art)  # None = no travel guide
+    for city, title in TITLE_OVERRIDES.items():
+        if cache["titles"].get(city) != title:
+            cache["titles"][city] = title
+            cache["fetched"].pop(city, None)  # force a refetch on the right one
         json.dump(cache, open(CACHE, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
 
     fresh = 0

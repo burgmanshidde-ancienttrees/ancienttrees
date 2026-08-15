@@ -1,0 +1,4478 @@
+{
+ "source": "Brisbane City Council, City Plan 2014 - Significant landscape tree overlay",
+ "endpoint": "https://data.brisbane.qld.gov.au/api/explore/v2.1/catalog/datasets/cp14-significant-landscape-tree-overlay/records (filtered to ovl2_desc='Individual or group significant landscape tree site sub-category')",
+ "licence": "CC BY 4.0 (Creative Commons Attribution 4.0)",
+ "licence_proof": "hub.arcgis.com/api/v3/datasets/bed1dde0fb624870a93cbe58c0b8e0b2_0 (the dataset's own ArcGIS Hub source, linked from Brisbane's open data portal) attribute 'licenseInfo' reads verbatim: \"This material is licensed under a Creative Commons - Attribution 4.0 licence. No access or use limitations.\" Also cross-confirmed by data.gov.au's harvested metadata for the same dataset (package 'cp14-significant-landscape-tree-overlay'), license_title 'CC-BY-4.0'. Fetched 2026-08-15.",
+ "designation": "Statutory overlay under Brisbane City Plan 2014 (map reference OM-019.1), sub-category 'Individual or group significant landscape tree site', one of four sub-categories on the overlay (the other three, Adjoining site / Landscape features / Vegetation protection order, were excluded from this file as they mark protection zones or adjoining land rather than a designated tree itself; see caveat)",
+ "country": "Australia",
+ "attribution": "Brisbane City Council",
+ "fetched": "2026-08-15",
+ "scope": "558 polygon records (converted here to their centroid point, 'geo_point_2d' as supplied by the API) across the City of Brisbane local government area, covering the whole city rather than one cluster. This is the raw overlay only: NO species, common name, age, girth or significance-reason field exists anywhere in this feature class. It is purely a regulatory boundary saying 'a significant landscape tree (or group) sits here', not a fact sheet about the tree.",
+ "caveat": "MUCH THINNER THAN A NORMAL REGISTER: no species/age/name means this alone does not clear the two-independent-sources bar for a tree's basic facts (species, age) even though it is itself one legitimate 'official register' source for the tree's EXISTENCE and its being a council-designated significant tree. A verify pass must find species/age from elsewhere (satellite/street-level imagery for a distinctive crown, a second source, or an on-the-ground description) before any of these can move past a lead. No land-ownership or access flag exists either; the overlay applies to both public and private land under Brisbane's planning scheme (a Vegetation Protection Order can sit over a private-garden tree), so hard rule 10 needs a per-candidate check (aerial imagery / street view for whether the point sits on identifiable public park or street land) before anything ships. Total overlay was 1,740 records across all four sub-categories; this file keeps only the 558 tagged 'Individual or group significant landscape tree site', the closest match to a genuine per-tree designation. The other 1,182 (Adjoining site 625, Vegetation protection order 423, Landscape features 134) were NOT imported and are a different kind of designation, not folded in here.",
+ "entries": [
+  {
+   "objectid": "33844",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 366.88037109375,
+   "latitude": -27.452554292903763,
+   "longitude": 152.99571233672654
+  },
+  {
+   "objectid": "33867",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 391.829345703125,
+   "latitude": -27.46401684801361,
+   "longitude": 152.97975224507934
+  },
+  {
+   "objectid": "33873",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 307.56005859375,
+   "latitude": -27.46399649161937,
+   "longitude": 152.99314164374428
+  },
+  {
+   "objectid": "33894",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 557.923828125,
+   "latitude": -27.432360116217204,
+   "longitude": 153.16129547160966
+  },
+  {
+   "objectid": "34027",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 390.515869140625,
+   "latitude": -27.45678457310916,
+   "longitude": 153.18141056500627
+  },
+  {
+   "objectid": "34066",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 596.779296875,
+   "latitude": -27.472123424398806,
+   "longitude": 153.16560491334374
+  },
+  {
+   "objectid": "34246",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 451.428466796875,
+   "latitude": -27.57421191657079,
+   "longitude": 153.0941136729916
+  },
+  {
+   "objectid": "34268",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 389.744140625,
+   "latitude": -27.327951348827632,
+   "longitude": 153.06773722606255
+  },
+  {
+   "objectid": "34434",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 505.347900390625,
+   "latitude": -27.496880339492453,
+   "longitude": 153.07096939720412
+  },
+  {
+   "objectid": "34558",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 403.358154296875,
+   "latitude": -27.458775170817365,
+   "longitude": 153.18043638439406
+  },
+  {
+   "objectid": "34638",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 406.67333984375,
+   "latitude": -27.457686370661367,
+   "longitude": 153.18174470491502
+  },
+  {
+   "objectid": "34734",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 592.892578125,
+   "latitude": -27.32293972796719,
+   "longitude": 153.07488176816773
+  },
+  {
+   "objectid": "34844",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 550.9287109375,
+   "latitude": -27.443624168075793,
+   "longitude": 153.15032802811336
+  },
+  {
+   "objectid": "34863",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 538.831787109375,
+   "latitude": -27.51912073403168,
+   "longitude": 153.054773125389
+  },
+  {
+   "objectid": "35004",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 621.70263671875,
+   "latitude": -27.5539135049257,
+   "longitude": 153.02621090126559
+  },
+  {
+   "objectid": "33885",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 412.35986328125,
+   "latitude": -27.45706739067553,
+   "longitude": 153.18532603576816
+  },
+  {
+   "objectid": "33943",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 593.431396484375,
+   "latitude": -27.37963886985155,
+   "longitude": 153.08370854155694
+  },
+  {
+   "objectid": "34003",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 405.311767578125,
+   "latitude": -27.448438793149396,
+   "longitude": 153.1762621689756
+  },
+  {
+   "objectid": "34159",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 404.803466796875,
+   "latitude": -27.32795270381084,
+   "longitude": 153.07467060244338
+  },
+  {
+   "objectid": "34322",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 404.68603515625,
+   "latitude": -27.327922455200977,
+   "longitude": 153.07447005779903
+  },
+  {
+   "objectid": "34375",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 404.255859375,
+   "latitude": -27.46544509570512,
+   "longitude": 153.1893144305049
+  },
+  {
+   "objectid": "34388",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 535.286376953125,
+   "latitude": -27.45607453228441,
+   "longitude": 153.02984587272465
+  },
+  {
+   "objectid": "34501",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 405.009033203125,
+   "latitude": -27.327350077228346,
+   "longitude": 153.06446987393596
+  },
+  {
+   "objectid": "34532",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 401.646240234375,
+   "latitude": -27.333389088256105,
+   "longitude": 153.05852041956342
+  },
+  {
+   "objectid": "34181",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 420.69677734375,
+   "latitude": -27.32741737185083,
+   "longitude": 153.05726531873313
+  },
+  {
+   "objectid": "34183",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 429.694091796875,
+   "latitude": -27.44761574837428,
+   "longitude": 153.00270766459855
+  },
+  {
+   "objectid": "34227",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 578.648681640625,
+   "latitude": -27.33974781084883,
+   "longitude": 153.00736347536355
+  },
+  {
+   "objectid": "34759",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 442.076416015625,
+   "latitude": -27.31355093924358,
+   "longitude": 153.05592764991007
+  },
+  {
+   "objectid": "34960",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 419.27099609375,
+   "latitude": -27.543890238786886,
+   "longitude": 153.01669921290244
+  },
+  {
+   "objectid": "34966",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 626.694091796875,
+   "latitude": -27.54891301731104,
+   "longitude": 153.03497958726416
+  },
+  {
+   "objectid": "35408",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 612.75390625,
+   "latitude": -27.459378959953554,
+   "longitude": 153.17153814226847
+  },
+  {
+   "objectid": "33818",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 724.13671875,
+   "latitude": -27.458276731948164,
+   "longitude": 153.18416899677374
+  },
+  {
+   "objectid": "33862",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 574.164794921875,
+   "latitude": -27.46941883932883,
+   "longitude": 152.99136929970922
+  },
+  {
+   "objectid": "33935",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 603.305908203125,
+   "latitude": -27.376709101724874,
+   "longitude": 153.07463890717176
+  },
+  {
+   "objectid": "34165",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 779.751708984375,
+   "latitude": -27.371762994585236,
+   "longitude": 152.9919797923813
+  },
+  {
+   "objectid": "34368",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 579.188232421875,
+   "latitude": -27.319450179858233,
+   "longitude": 153.06442062477325
+  },
+  {
+   "objectid": "34485",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 407.521728515625,
+   "latitude": -27.332037819426567,
+   "longitude": 153.05691746951902
+  },
+  {
+   "objectid": "34529",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 407.51025390625,
+   "latitude": -27.331902687934136,
+   "longitude": 153.05693524416867
+  },
+  {
+   "objectid": "34613",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 629.699462890625,
+   "latitude": -27.512723731277788,
+   "longitude": 152.97745194694036
+  },
+  {
+   "objectid": "34932",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 535.706787109375,
+   "latitude": -27.52380012729991,
+   "longitude": 153.02956384677952
+  },
+  {
+   "objectid": "34933",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 672.857177734375,
+   "latitude": -27.526887773610394,
+   "longitude": 153.02991224463958
+  },
+  {
+   "objectid": "34953",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 606.580810546875,
+   "latitude": -27.530677292030234,
+   "longitude": 153.02661527316616
+  },
+  {
+   "objectid": "34982",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 607.07568359375,
+   "latitude": -27.549089685120997,
+   "longitude": 153.0390687358054
+  },
+  {
+   "objectid": "35260",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 444.8203125,
+   "latitude": -27.514695927551497,
+   "longitude": 152.97450833996535
+  },
+  {
+   "objectid": "33716",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 721.8984375,
+   "latitude": -27.507163995097706,
+   "longitude": 153.020331143512
+  },
+  {
+   "objectid": "33795",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 398.591552734375,
+   "latitude": -27.48775238957792,
+   "longitude": 153.00629765722343
+  },
+  {
+   "objectid": "33870",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 612.433349609375,
+   "latitude": -27.466449195923666,
+   "longitude": 152.98375579265698
+  },
+  {
+   "objectid": "33902",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 610.871826171875,
+   "latitude": -27.508265067111036,
+   "longitude": 153.01857779848558
+  },
+  {
+   "objectid": "33948",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 812.88720703125,
+   "latitude": -27.389467261399552,
+   "longitude": 153.06711652742632
+  },
+  {
+   "objectid": "33960",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 705.468994140625,
+   "latitude": -27.494014416154787,
+   "longitude": 152.97937271455572
+  },
+  {
+   "objectid": "34139",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 600.801513671875,
+   "latitude": -27.325705155571086,
+   "longitude": 153.06512490583918
+  },
+  {
+   "objectid": "34272",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 605.932861328125,
+   "latitude": -27.32448451359333,
+   "longitude": 153.07681706587283
+  },
+  {
+   "objectid": "34347",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 454.073974609375,
+   "latitude": -27.45935756208008,
+   "longitude": 153.02302030029992
+  },
+  {
+   "objectid": "34945",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 614.093017578125,
+   "latitude": -27.55577586547406,
+   "longitude": 153.04600077074244
+  },
+  {
+   "objectid": "34979",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 620.718505859375,
+   "latitude": -27.55146822711006,
+   "longitude": 153.03404930385474
+  },
+  {
+   "objectid": "34992",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 675.739501953125,
+   "latitude": -27.554896994806786,
+   "longitude": 153.0441527894272
+  },
+  {
+   "objectid": "34997",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 611.75927734375,
+   "latitude": -27.552595570778458,
+   "longitude": 153.03540826987506
+  },
+  {
+   "objectid": "33758",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 635.718994140625,
+   "latitude": -27.453642074205373,
+   "longitude": 153.00763881586258
+  },
+  {
+   "objectid": "33883",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 825.995361328125,
+   "latitude": -27.45034830982888,
+   "longitude": 153.17295486860888
+  },
+  {
+   "objectid": "33929",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 710.416015625,
+   "latitude": -27.3939842312525,
+   "longitude": 153.06223341875906
+  },
+  {
+   "objectid": "34224",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 511.329833984375,
+   "latitude": -27.49443640061421,
+   "longitude": 153.02747552288437
+  },
+  {
+   "objectid": "34367",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 855.508056640625,
+   "latitude": -27.575922769324745,
+   "longitude": 153.09472950224344
+  },
+  {
+   "objectid": "34431",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 800.28662109375,
+   "latitude": -27.50556478967561,
+   "longitude": 153.05038626989145
+  },
+  {
+   "objectid": "34456",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 669.728759765625,
+   "latitude": -27.505530907480377,
+   "longitude": 153.06004583581915
+  },
+  {
+   "objectid": "34546",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 633.328857421875,
+   "latitude": -27.466657847794405,
+   "longitude": 153.17570283671495
+  },
+  {
+   "objectid": "34554",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 707.543212890625,
+   "latitude": -27.463866011976425,
+   "longitude": 153.1723745502809
+  },
+  {
+   "objectid": "34756",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 725.37548828125,
+   "latitude": -27.32125401879156,
+   "longitude": 153.06524251611725
+  },
+  {
+   "objectid": "34840",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 778.96044921875,
+   "latitude": -27.44332335512936,
+   "longitude": 153.15043474298798
+  },
+  {
+   "objectid": "34876",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 773.291259765625,
+   "latitude": -27.47456084496231,
+   "longitude": 153.0129296240617
+  },
+  {
+   "objectid": "34943",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 738.956787109375,
+   "latitude": -27.540497065133827,
+   "longitude": 153.027938761418
+  },
+  {
+   "objectid": "34961",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 658.009521484375,
+   "latitude": -27.53691231672318,
+   "longitude": 153.01804129696453
+  },
+  {
+   "objectid": "34978",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 677.260986328125,
+   "latitude": -27.53272381807929,
+   "longitude": 153.03440240414142
+  },
+  {
+   "objectid": "35374",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 740.245849609375,
+   "latitude": -27.547996436763825,
+   "longitude": 152.97622103859612
+  },
+  {
+   "objectid": "35387",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 560.895751953125,
+   "latitude": -27.45768569027677,
+   "longitude": 152.9885243286693
+  },
+  {
+   "objectid": "35405",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 800.28564453125,
+   "latitude": -27.44452905007652,
+   "longitude": 153.17607365294643
+  },
+  {
+   "objectid": "35410",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 470.89013671875,
+   "latitude": -27.455961917150177,
+   "longitude": 153.17317858979953
+  },
+  {
+   "objectid": "33715",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 527.353271484375,
+   "latitude": -27.510573808209593,
+   "longitude": 153.0221259122755
+  },
+  {
+   "objectid": "33753",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 952.75146484375,
+   "latitude": -27.514704380194217,
+   "longitude": 152.97229054541106
+  },
+  {
+   "objectid": "33816",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 533.514892578125,
+   "latitude": -27.455683218951506,
+   "longitude": 153.17176150583106
+  },
+  {
+   "objectid": "33872",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 503.75048828125,
+   "latitude": -27.465043931925415,
+   "longitude": 152.98289666108977
+  },
+  {
+   "objectid": "33946",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 808.031494140625,
+   "latitude": -27.38873123218348,
+   "longitude": 153.07100411921257
+  },
+  {
+   "objectid": "34736",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 498.472412109375,
+   "latitude": -27.319703632196315,
+   "longitude": 153.06246101832298
+  },
+  {
+   "objectid": "34877",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 718.275146484375,
+   "latitude": -27.483998768956795,
+   "longitude": 153.00856436865737
+  },
+  {
+   "objectid": "34949",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 740.174072265625,
+   "latitude": -27.540691166708747,
+   "longitude": 153.03119371951925
+  },
+  {
+   "objectid": "34950",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 719.355224609375,
+   "latitude": -27.540219729248737,
+   "longitude": 153.01856811754058
+  },
+  {
+   "objectid": "34972",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 813.319091796875,
+   "latitude": -27.553017024145714,
+   "longitude": 153.02965485382134
+  },
+  {
+   "objectid": "34975",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 678.67578125,
+   "latitude": -27.53856653337203,
+   "longitude": 153.01463705565232
+  },
+  {
+   "objectid": "34989",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 813.91943359375,
+   "latitude": -27.552029271784466,
+   "longitude": 153.02921944320738
+  },
+  {
+   "objectid": "35254",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 719.95654296875,
+   "latitude": -27.511963734388456,
+   "longitude": 152.9793180537691
+  },
+  {
+   "objectid": "33808",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 951.42236328125,
+   "latitude": -27.45119879918023,
+   "longitude": 153.16573917060163
+  },
+  {
+   "objectid": "33853",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1015.49658203125,
+   "latitude": -27.495044674733887,
+   "longitude": 152.98243497611975
+  },
+  {
+   "objectid": "33897",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1023.671630859375,
+   "latitude": -27.434375955895828,
+   "longitude": 153.16005181813142
+  },
+  {
+   "objectid": "34002",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 827.906982421875,
+   "latitude": -27.460250672180074,
+   "longitude": 153.15681981305136
+  },
+  {
+   "objectid": "34105",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 889.641357421875,
+   "latitude": -27.505764811658803,
+   "longitude": 153.01917466605053
+  },
+  {
+   "objectid": "34400",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1221.63427734375,
+   "latitude": -27.499533046004075,
+   "longitude": 153.06086479397192
+  },
+  {
+   "objectid": "34404",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 912.015625,
+   "latitude": -27.498830002391458,
+   "longitude": 153.06572789155587
+  },
+  {
+   "objectid": "34531",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 808.31689453125,
+   "latitude": -27.331610252286193,
+   "longitude": 153.06235439908826
+  },
+  {
+   "objectid": "34742",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 795.5947265625,
+   "latitude": -27.333482143338923,
+   "longitude": 153.06327156115202
+  },
+  {
+   "objectid": "34783",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 808.368408203125,
+   "latitude": -27.463021667886018,
+   "longitude": 153.17861475667615
+  },
+  {
+   "objectid": "34836",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1058.7744140625,
+   "latitude": -27.457854417896026,
+   "longitude": 153.00146974101628
+  },
+  {
+   "objectid": "34919",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 810.614990234375,
+   "latitude": -27.540086514687808,
+   "longitude": 153.0216530526889
+  },
+  {
+   "objectid": "34935",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 871.09765625,
+   "latitude": -27.540507975881425,
+   "longitude": 153.0238433468839
+  },
+  {
+   "objectid": "34946",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 755.119384765625,
+   "latitude": -27.54054125718441,
+   "longitude": 153.03116301819722
+  },
+  {
+   "objectid": "34955",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 820.75927734375,
+   "latitude": -27.53940374080441,
+   "longitude": 153.02977390170682
+  },
+  {
+   "objectid": "35213",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1015.01708984375,
+   "latitude": -27.49427424018794,
+   "longitude": 152.97987102278066
+  },
+  {
+   "objectid": "35309",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 824.72216796875,
+   "latitude": -27.527857305160992,
+   "longitude": 152.98186586664565
+  },
+  {
+   "objectid": "33819",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1321.8154296875,
+   "latitude": -27.460127622440293,
+   "longitude": 153.18280423391954
+  },
+  {
+   "objectid": "33823",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1042.78076171875,
+   "latitude": -27.45206291640838,
+   "longitude": 153.16755371301804
+  },
+  {
+   "objectid": "33874",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 964.111328125,
+   "latitude": -27.46164575843176,
+   "longitude": 152.97311087475228
+  },
+  {
+   "objectid": "33884",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 923.5966796875,
+   "latitude": -27.435316101836865,
+   "longitude": 153.16837517182694
+  },
+  {
+   "objectid": "33888",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1263.3037109375,
+   "latitude": -27.533990691434948,
+   "longitude": 152.9728119812403
+  },
+  {
+   "objectid": "33963",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1653.929931640625,
+   "latitude": -27.47468633765106,
+   "longitude": 153.0384697128151
+  },
+  {
+   "objectid": "34024",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 838.59326171875,
+   "latitude": -27.329075564723997,
+   "longitude": 153.0647423090824
+  },
+  {
+   "objectid": "34145",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 745.0383728519082,
+   "latitude": -27.49106538401489,
+   "longitude": 152.97857497972154
+  },
+  {
+   "objectid": "34211",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1431.155517578125,
+   "latitude": -27.485092169410372,
+   "longitude": 153.01578871051208
+  },
+  {
+   "objectid": "34212",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1813.43359375,
+   "latitude": -27.486694892931908,
+   "longitude": 153.01583679137474
+  },
+  {
+   "objectid": "34294",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 660.534423828125,
+   "latitude": -27.333828004421473,
+   "longitude": 153.05429431260606
+  },
+  {
+   "objectid": "34392",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1348.8779296875,
+   "latitude": -27.454414739678427,
+   "longitude": 153.02767260267956
+  },
+  {
+   "objectid": "34398",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1895.744873046875,
+   "latitude": -27.443370974145186,
+   "longitude": 153.04435253748107
+  },
+  {
+   "objectid": "34445",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 981.26806640625,
+   "latitude": -27.50445258740399,
+   "longitude": 153.0510044178989
+  },
+  {
+   "objectid": "34486",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 2369.007080078125,
+   "latitude": -27.34202030823593,
+   "longitude": 153.00333169394762
+  },
+  {
+   "objectid": "34568",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1754.209228515625,
+   "latitude": -27.45650793880271,
+   "longitude": 153.0140465183947
+  },
+  {
+   "objectid": "34674",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1116.984619140625,
+   "latitude": -27.53613633874177,
+   "longitude": 152.97894537668878
+  },
+  {
+   "objectid": "34895",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 2036.643798828125,
+   "latitude": -27.446113897232262,
+   "longitude": 153.1198048533429
+  },
+  {
+   "objectid": "34976",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1622.905517578125,
+   "latitude": -27.553340043659443,
+   "longitude": 153.03177063441439
+  },
+  {
+   "objectid": "35151",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1412.724853515625,
+   "latitude": -27.390345257332868,
+   "longitude": 153.06238184338616
+  },
+  {
+   "objectid": "34763",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 2651.727783203125,
+   "latitude": -27.467137184740228,
+   "longitude": 153.17264615239003
+  },
+  {
+   "objectid": "34868",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 3199.26416015625,
+   "latitude": -27.5202402851866,
+   "longitude": 153.06317375960197
+  },
+  {
+   "objectid": "34939",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1800.47119140625,
+   "latitude": -27.537477410650613,
+   "longitude": 153.03425598204524
+  },
+  {
+   "objectid": "34988",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 4058.44140625,
+   "latitude": -27.554448612009647,
+   "longitude": 153.0280932186774
+  },
+  {
+   "objectid": "33978",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 5781.997802734375,
+   "latitude": -27.477407177472077,
+   "longitude": 152.99478638869107
+  },
+  {
+   "objectid": "34000",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 13048.4150390625,
+   "latitude": -27.459140908473355,
+   "longitude": 153.1534992611757
+  },
+  {
+   "objectid": "34248",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 11107.169189453125,
+   "latitude": -27.343107551414672,
+   "longitude": 152.98848452974073
+  },
+  {
+   "objectid": "34259",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 8140.4326171875,
+   "latitude": -27.33544256334334,
+   "longitude": 152.9955197859089
+  },
+  {
+   "objectid": "34281",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 10295.71435546875,
+   "latitude": -27.354567289502523,
+   "longitude": 153.00069670395322
+  },
+  {
+   "objectid": "34735",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 7275.84326171875,
+   "latitude": -27.352299428547084,
+   "longitude": 153.00380008656248
+  },
+  {
+   "objectid": "34894",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 10048.01416015625,
+   "latitude": -27.463718351485845,
+   "longitude": 153.13177000090553
+  },
+  {
+   "objectid": "34990",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 5250.009521484375,
+   "latitude": -27.543073864331344,
+   "longitude": 153.02871617033693
+  },
+  {
+   "objectid": "35009",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 7923.50390625,
+   "latitude": -27.55840493846388,
+   "longitude": 153.0381913544278
+  },
+  {
+   "objectid": "35406",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 7209.68359375,
+   "latitude": -27.459903003303534,
+   "longitude": 153.17338052119888
+  },
+  {
+   "objectid": "33694",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 25068.406494140625,
+   "latitude": -27.59732078151585,
+   "longitude": 153.01359592290365
+  },
+  {
+   "objectid": "33864",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 19804.46875,
+   "latitude": -27.6118349800758,
+   "longitude": 152.98564756710746
+  },
+  {
+   "objectid": "33969",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 20622.364501953125,
+   "latitude": -27.58721918176641,
+   "longitude": 153.00984218329506
+  },
+  {
+   "objectid": "34025",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 17836.24462890625,
+   "latitude": -27.479573106125738,
+   "longitude": 153.0189521356083
+  },
+  {
+   "objectid": "34096",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 21640.040283203125,
+   "latitude": -27.346091861263425,
+   "longitude": 152.9812230509516
+  },
+  {
+   "objectid": "34097",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 25964.7451171875,
+   "latitude": -27.499519128606956,
+   "longitude": 153.03068658971833
+  },
+  {
+   "objectid": "34163",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 19960.61376953125,
+   "latitude": -27.342943131350566,
+   "longitude": 152.99977809282902
+  },
+  {
+   "objectid": "34243",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 22410.157958984375,
+   "latitude": -27.57507772662755,
+   "longitude": 153.1005885801293
+  },
+  {
+   "objectid": "34247",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 34233.564453125,
+   "latitude": -27.591860219571572,
+   "longitude": 153.10669813393204
+  },
+  {
+   "objectid": "34288",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 13103.046142578125,
+   "latitude": -27.340064460750966,
+   "longitude": 152.99665289449916
+  },
+  {
+   "objectid": "34378",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 36862.052490234375,
+   "latitude": -27.447817147712634,
+   "longitude": 153.01947613170736
+  },
+  {
+   "objectid": "34624",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 29671.40234375,
+   "latitude": -27.32002854997095,
+   "longitude": 153.0662426248878
+  },
+  {
+   "objectid": "34644",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 18803.335205078125,
+   "latitude": -27.342194437327237,
+   "longitude": 152.98962737422804
+  },
+  {
+   "objectid": "34748",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 3939.5576171875,
+   "latitude": -27.34385685666892,
+   "longitude": 153.00287293672335
+  },
+  {
+   "objectid": "34808",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 46275.05029296875,
+   "latitude": -27.48629247881715,
+   "longitude": 153.02782357583828
+  },
+  {
+   "objectid": "34892",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 22209.370361328125,
+   "latitude": -27.440703500911994,
+   "longitude": 153.12591579754854
+  },
+  {
+   "objectid": "35008",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 23745.3955078125,
+   "latitude": -27.558327560192822,
+   "longitude": 153.03729666945634
+  },
+  {
+   "objectid": "35226",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 50344.221923828125,
+   "latitude": -27.462489193873697,
+   "longitude": 152.9815591552245
+  },
+  {
+   "objectid": "34085",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 24762.634765625,
+   "latitude": -27.32725429622971,
+   "longitude": 153.08031767044702
+  },
+  {
+   "objectid": "34235",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 122156.548828125,
+   "latitude": -27.33015142470132,
+   "longitude": 153.05517210240663
+  },
+  {
+   "objectid": "35350",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 161265.94213867188,
+   "latitude": -27.437751265745703,
+   "longitude": 153.0467615537657
+  },
+  {
+   "objectid": "34255",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 212.05517578125,
+   "latitude": -27.51494146720285,
+   "longitude": 153.1195925485047
+  },
+  {
+   "objectid": "35148",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 184.634765625,
+   "latitude": -27.49553583936326,
+   "longitude": 152.98396775424303
+  },
+  {
+   "objectid": "34394",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 349.8974609375,
+   "latitude": -27.45919463470018,
+   "longitude": 153.02526673848817
+  },
+  {
+   "objectid": "34481",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 219.55517578125,
+   "latitude": -27.327584407736463,
+   "longitude": 153.07469319412576
+  },
+  {
+   "objectid": "33845",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 389.111328125,
+   "latitude": -27.45255075026826,
+   "longitude": 152.9956076124401
+  },
+  {
+   "objectid": "33876",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 423.879150390625,
+   "latitude": -27.466409600865717,
+   "longitude": 152.98696912243904
+  },
+  {
+   "objectid": "33898",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 393.33251953125,
+   "latitude": -27.45355452462004,
+   "longitude": 153.00331106912355
+  },
+  {
+   "objectid": "34081",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 369.923583984375,
+   "latitude": -27.315114503715616,
+   "longitude": 153.0566965842233
+  },
+  {
+   "objectid": "34352",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 298.799560546875,
+   "latitude": -27.464765538213037,
+   "longitude": 153.023567875953
+  },
+  {
+   "objectid": "34399",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 402.70947265625,
+   "latitude": -27.498982545891558,
+   "longitude": 153.0606101908912
+  },
+  {
+   "objectid": "34516",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 370.396240234375,
+   "latitude": -27.31500508138701,
+   "longitude": 153.0566973331279
+  },
+  {
+   "objectid": "34751",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 282.889404296875,
+   "latitude": -27.320926235209008,
+   "longitude": 153.0714362480829
+  },
+  {
+   "objectid": "34985",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 388.371337890625,
+   "latitude": -27.556988936214452,
+   "longitude": 153.0357519398163
+  },
+  {
+   "objectid": "35234",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 478.63427734375,
+   "latitude": -27.51077104331585,
+   "longitude": 152.97471739688353
+  },
+  {
+   "objectid": "35269",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 404.162109375,
+   "latitude": -27.545831778177302,
+   "longitude": 152.97490716162946
+  },
+  {
+   "objectid": "33895",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 405.857666015625,
+   "latitude": -27.43180281615714,
+   "longitude": 153.16310126447533
+  },
+  {
+   "objectid": "33936",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 495.5,
+   "latitude": -27.363119963743987,
+   "longitude": 153.0899668754648
+  },
+  {
+   "objectid": "33998",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 594.394775390625,
+   "latitude": -27.460957590971617,
+   "longitude": 153.15501056103773
+  },
+  {
+   "objectid": "34287",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 603.748291015625,
+   "latitude": -27.325854855793803,
+   "longitude": 153.07705971852872
+  },
+  {
+   "objectid": "34448",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 583.617431640625,
+   "latitude": -27.518498778559373,
+   "longitude": 153.0554423992498
+  },
+  {
+   "objectid": "34724",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 407.175048828125,
+   "latitude": -27.46276240150095,
+   "longitude": 152.99567361127404
+  },
+  {
+   "objectid": "34952",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 616.27685546875,
+   "latitude": -27.53103447001916,
+   "longitude": 153.02676408419353
+  },
+  {
+   "objectid": "34996",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 574.927978515625,
+   "latitude": -27.551595252606,
+   "longitude": 153.04148817674937
+  },
+  {
+   "objectid": "35328",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 402.129638671875,
+   "latitude": -27.545322589230498,
+   "longitude": 152.97490142839655
+  },
+  {
+   "objectid": "33976",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 461.347412109375,
+   "latitude": -27.491257159812776,
+   "longitude": 153.02594720982495
+  },
+  {
+   "objectid": "34068",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 404.238525390625,
+   "latitude": -27.332749783454936,
+   "longitude": 153.05448580641337
+  },
+  {
+   "objectid": "34109",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 405.0322265625,
+   "latitude": -27.45334617375826,
+   "longitude": 153.18003623256723
+  },
+  {
+   "objectid": "34405",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 404.679931640625,
+   "latitude": -27.500183188820994,
+   "longitude": 153.06661007364144
+  },
+  {
+   "objectid": "34639",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 404.999267578125,
+   "latitude": -27.327281117152616,
+   "longitude": 153.06440359743408
+  },
+  {
+   "objectid": "34971",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 405.254638671875,
+   "latitude": -27.552104092245134,
+   "longitude": 153.0236744712764
+  },
+  {
+   "objectid": "35001",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 412.883544921875,
+   "latitude": -27.554067949561773,
+   "longitude": 153.02315896322563
+  },
+  {
+   "objectid": "35154",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 606.952392578125,
+   "latitude": -27.48683833996819,
+   "longitude": 153.01176808805445
+  },
+  {
+   "objectid": "35232",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 405.08544921875,
+   "latitude": -27.456955294421974,
+   "longitude": 152.99635030307888
+  },
+  {
+   "objectid": "33807",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 412.25439453125,
+   "latitude": -27.451535068128283,
+   "longitude": 153.1658760639076
+  },
+  {
+   "objectid": "33875",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 410.811279296875,
+   "latitude": -27.450055418488663,
+   "longitude": 152.98567297290194
+  },
+  {
+   "objectid": "33882",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 411.466552734375,
+   "latitude": -27.43656431601477,
+   "longitude": 153.16559273104076
+  },
+  {
+   "objectid": "33981",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 406.369384765625,
+   "latitude": -27.48907123254207,
+   "longitude": 153.0153887019107
+  },
+  {
+   "objectid": "34090",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 414.212158203125,
+   "latitude": -27.324436157672473,
+   "longitude": 153.06389731193494
+  },
+  {
+   "objectid": "34157",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 542.74560546875,
+   "latitude": -27.484843691080744,
+   "longitude": 153.01936797326567
+  },
+  {
+   "objectid": "34302",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 414.1953125,
+   "latitude": -27.32437945382718,
+   "longitude": 153.06397094409343
+  },
+  {
+   "objectid": "34307",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 474.6953125,
+   "latitude": -27.449703351997567,
+   "longitude": 153.1844260074189
+  },
+  {
+   "objectid": "34393",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 622.31298828125,
+   "latitude": -27.462660971526095,
+   "longitude": 153.0288762182308
+  },
+  {
+   "objectid": "34411",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 651.328125,
+   "latitude": -27.49999522190014,
+   "longitude": 153.06931229613696
+  },
+  {
+   "objectid": "34497",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 496.411865234375,
+   "latitude": -27.31587064563317,
+   "longitude": 153.0685790083375
+  },
+  {
+   "objectid": "34506",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 418.359130859375,
+   "latitude": -27.313237948279294,
+   "longitude": 153.06618881527953
+  },
+  {
+   "objectid": "34510",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 425.461669921875,
+   "latitude": -27.31331929241081,
+   "longitude": 153.06623379983452
+  },
+  {
+   "objectid": "34722",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 442.600830078125,
+   "latitude": -27.475772927794765,
+   "longitude": 152.99121134292056
+  },
+  {
+   "objectid": "34723",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 419.180908203125,
+   "latitude": -27.45705188810978,
+   "longitude": 152.99446799069437
+  },
+  {
+   "objectid": "34870",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 588.951904296875,
+   "latitude": -27.506270591299984,
+   "longitude": 153.0664640788436
+  },
+  {
+   "objectid": "34957",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 598.740478515625,
+   "latitude": -27.538968498431153,
+   "longitude": 153.0314218244149
+  },
+  {
+   "objectid": "34958",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 407.98388671875,
+   "latitude": -27.53757278761607,
+   "longitude": 153.01907090196053
+  },
+  {
+   "objectid": "34977",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 626.859375,
+   "latitude": -27.531065105517516,
+   "longitude": 153.0344380151064
+  },
+  {
+   "objectid": "33827",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 613.41552734375,
+   "latitude": -27.46366922594093,
+   "longitude": 152.97910692877383
+  },
+  {
+   "objectid": "33893",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 643.18994140625,
+   "latitude": -27.458850772992797,
+   "longitude": 153.1632530410967
+  },
+  {
+   "objectid": "33965",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 599.316162109375,
+   "latitude": -27.47537552295313,
+   "longitude": 153.0388186238441
+  },
+  {
+   "objectid": "34304",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 602.88818359375,
+   "latitude": -27.464659193430425,
+   "longitude": 153.18950607836655
+  },
+  {
+   "objectid": "34379",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 694.673095703125,
+   "latitude": -27.31802570354338,
+   "longitude": 153.05900410348767
+  },
+  {
+   "objectid": "34432",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 601.33203125,
+   "latitude": -27.497281137242556,
+   "longitude": 153.06917773125966
+  },
+  {
+   "objectid": "34553",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 606.57421875,
+   "latitude": -27.46524577627142,
+   "longitude": 153.16504821167504
+  },
+  {
+   "objectid": "34720",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 633.341552734375,
+   "latitude": -27.45411358226494,
+   "longitude": 152.99901997885925
+  },
+  {
+   "objectid": "34940",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 609.168701171875,
+   "latitude": -27.53720976807324,
+   "longitude": 153.0326145555405
+  },
+  {
+   "objectid": "34947",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 627.145751953125,
+   "latitude": -27.556251530072764,
+   "longitude": 153.04647704449877
+  },
+  {
+   "objectid": "34967",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 602.60205078125,
+   "latitude": -27.533037814462105,
+   "longitude": 153.0284299837456
+  },
+  {
+   "objectid": "34969",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 581.7744140625,
+   "latitude": -27.543518684765544,
+   "longitude": 153.01943139457956
+  },
+  {
+   "objectid": "34970",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 627.59130859375,
+   "latitude": -27.55243982605022,
+   "longitude": 153.02285464593794
+  },
+  {
+   "objectid": "34983",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 610.244384765625,
+   "latitude": -27.546170150744445,
+   "longitude": 153.03663024652033
+  },
+  {
+   "objectid": "34993",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 648.697509765625,
+   "latitude": -27.55172570033036,
+   "longitude": 153.03926593548553
+  },
+  {
+   "objectid": "34995",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 597.9130859375,
+   "latitude": -27.55128147306102,
+   "longitude": 153.03037262164955
+  },
+  {
+   "objectid": "35000",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 578.787353515625,
+   "latitude": -27.553827459052236,
+   "longitude": 153.0238172707646
+  },
+  {
+   "objectid": "35220",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 759.917724609375,
+   "latitude": -27.494315066330014,
+   "longitude": 152.9785272719739
+  },
+  {
+   "objectid": "33813",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 608.28125,
+   "latitude": -27.450680511679856,
+   "longitude": 153.17526837036317
+  },
+  {
+   "objectid": "34083",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 634.947265625,
+   "latitude": -27.317143655715757,
+   "longitude": 153.05656608073903
+  },
+  {
+   "objectid": "34299",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 553.2314453125,
+   "latitude": -27.32494639913112,
+   "longitude": 153.06489648597824
+  },
+  {
+   "objectid": "34409",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 605.5234375,
+   "latitude": -27.49935676668176,
+   "longitude": 153.07397039161887
+  },
+  {
+   "objectid": "34471",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 565.39013671875,
+   "latitude": -27.31490884234967,
+   "longitude": 153.0578297086026
+  },
+  {
+   "objectid": "34548",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 617.701904296875,
+   "latitude": -27.32366742723055,
+   "longitude": 153.07531765192573
+  },
+  {
+   "objectid": "34661",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 607.326416015625,
+   "latitude": -27.437967339057842,
+   "longitude": 153.15167845406674
+  },
+  {
+   "objectid": "34786",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 696.97021484375,
+   "latitude": -27.471187161674987,
+   "longitude": 153.1638134559764
+  },
+  {
+   "objectid": "34883",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 461.20751953125,
+   "latitude": -27.487436574485084,
+   "longitude": 153.00211638964439
+  },
+  {
+   "objectid": "34944",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 619.078125,
+   "latitude": -27.555714140594787,
+   "longitude": 153.04559325671715
+  },
+  {
+   "objectid": "34954",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 654.46044921875,
+   "latitude": -27.531456612679143,
+   "longitude": 153.02548886505866
+  },
+  {
+   "objectid": "33830",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 669.697021484375,
+   "latitude": -27.486208040398797,
+   "longitude": 153.01689661696682
+  },
+  {
+   "objectid": "34250",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 719.228271484375,
+   "latitude": -27.319521996173798,
+   "longitude": 153.06545407545752
+  },
+  {
+   "objectid": "34436",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 625.404052734375,
+   "latitude": -27.495402929621882,
+   "longitude": 153.07263984871864
+  },
+  {
+   "objectid": "34457",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 818.849365234375,
+   "latitude": -27.501204693795064,
+   "longitude": 153.0578895711349
+  },
+  {
+   "objectid": "34465",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 551.5517578125,
+   "latitude": -27.5101652578706,
+   "longitude": 153.0618649283129
+  },
+  {
+   "objectid": "34467",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 850.992919921875,
+   "latitude": -27.50554280408796,
+   "longitude": 153.07329116746175
+  },
+  {
+   "objectid": "34522",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 696.8017578125,
+   "latitude": -27.492966997612008,
+   "longitude": 153.02980996200495
+  },
+  {
+   "objectid": "34530",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 640.7353515625,
+   "latitude": -27.513326697928857,
+   "longitude": 153.06068544794945
+  },
+  {
+   "objectid": "34934",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 696.29296875,
+   "latitude": -27.54103218336571,
+   "longitude": 153.02406999352354
+  },
+  {
+   "objectid": "34963",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 748.210693359375,
+   "latitude": -27.5237363654629,
+   "longitude": 153.02832125666814
+  },
+  {
+   "objectid": "34968",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 684.61572265625,
+   "latitude": -27.534230296013146,
+   "longitude": 153.02627237518652
+  },
+  {
+   "objectid": "35391",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 477.564697265625,
+   "latitude": -27.461387849955056,
+   "longitude": 152.99063774179947
+  },
+  {
+   "objectid": "33810",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 600.141845703125,
+   "latitude": -27.453599542710293,
+   "longitude": 153.17037968542147
+  },
+  {
+   "objectid": "33842",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 773.910888671875,
+   "latitude": -27.373262500991615,
+   "longitude": 153.04744329432
+  },
+  {
+   "objectid": "33871",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 492.96923828125,
+   "latitude": -27.465116889730083,
+   "longitude": 152.98295213105632
+  },
+  {
+   "objectid": "33930",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 905.8203125,
+   "latitude": -27.394094022515194,
+   "longitude": 153.06207312127842
+  },
+  {
+   "objectid": "34018",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 810.08203125,
+   "latitude": -27.481842524381452,
+   "longitude": 153.01915825029184
+  },
+  {
+   "objectid": "34091",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 788.615234375,
+   "latitude": -27.31601074638785,
+   "longitude": 153.05786943234847
+  },
+  {
+   "objectid": "34111",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 521.6572265625,
+   "latitude": -27.329246811113794,
+   "longitude": 153.0853034700627
+  },
+  {
+   "objectid": "34225",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 809.6982421875,
+   "latitude": -27.488521119853914,
+   "longitude": 152.99870105204695
+  },
+  {
+   "objectid": "34429",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 807.69677734375,
+   "latitude": -27.504169240759488,
+   "longitude": 153.04587262777065
+  },
+  {
+   "objectid": "34440",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 822.73486328125,
+   "latitude": -27.493765024788956,
+   "longitude": 153.07356166887553
+  },
+  {
+   "objectid": "34458",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 882.572998046875,
+   "latitude": -27.50606425153238,
+   "longitude": 153.05846678019788
+  },
+  {
+   "objectid": "34533",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 909.8388671875,
+   "latitude": -27.320555397419028,
+   "longitude": 153.06729978938222
+  },
+  {
+   "objectid": "34708",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 790.990234375,
+   "latitude": -27.54434047711684,
+   "longitude": 152.9876978718699
+  },
+  {
+   "objectid": "34864",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 809.37890625,
+   "latitude": -27.51354972430104,
+   "longitude": 153.0515458958563
+  },
+  {
+   "objectid": "34872",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 810.46044921875,
+   "latitude": -27.499960497123812,
+   "longitude": 153.05532031679422
+  },
+  {
+   "objectid": "34942",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 817.8447265625,
+   "latitude": -27.526184964302246,
+   "longitude": 153.02747738356206
+  },
+  {
+   "objectid": "34948",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 756.064453125,
+   "latitude": -27.540839546556427,
+   "longitude": 153.03125148551496
+  },
+  {
+   "objectid": "34956",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 760.897216796875,
+   "latitude": -27.539063789454293,
+   "longitude": 153.03092449204226
+  },
+  {
+   "objectid": "34981",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 814.160888671875,
+   "latitude": -27.550177053106527,
+   "longitude": 153.02915619932185
+  },
+  {
+   "objectid": "34991",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 811.606201171875,
+   "latitude": -27.554005022388115,
+   "longitude": 153.0300917235649
+  },
+  {
+   "objectid": "35388",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 506.7880859375,
+   "latitude": -27.45803810014165,
+   "longitude": 152.98869409837985
+  },
+  {
+   "objectid": "33860",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 551.074462890625,
+   "latitude": -27.45788310214665,
+   "longitude": 152.9729963649898
+  },
+  {
+   "objectid": "33881",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 487.92138671875,
+   "latitude": -27.438464487174308,
+   "longitude": 153.1688846455094
+  },
+  {
+   "objectid": "33887",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 902.07763671875,
+   "latitude": -27.51331796047944,
+   "longitude": 152.97904607468863
+  },
+  {
+   "objectid": "34095",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1125.763916015625,
+   "latitude": -27.313111636658267,
+   "longitude": 153.0635040639227
+  },
+  {
+   "objectid": "34182",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 785.23779296875,
+   "latitude": -27.331940644758415,
+   "longitude": 153.06543927818626
+  },
+  {
+   "objectid": "34223",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 740.748291015625,
+   "latitude": -27.481267643518702,
+   "longitude": 153.01921454320066
+  },
+  {
+   "objectid": "34236",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 954.894287109375,
+   "latitude": -27.317582705968363,
+   "longitude": 153.05894576005633
+  },
+  {
+   "objectid": "34271",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 880.45263671875,
+   "latitude": -27.318252650581783,
+   "longitude": 153.058989215301
+  },
+  {
+   "objectid": "34442",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 890.389892578125,
+   "latitude": -27.494255857700985,
+   "longitude": 153.06875490792171
+  },
+  {
+   "objectid": "34480",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1009.235107421875,
+   "latitude": -27.328900147230684,
+   "longitude": 153.0600949051259
+  },
+  {
+   "objectid": "34493",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 809.222412109375,
+   "latitude": -27.31653480760005,
+   "longitude": 153.05586835314358
+  },
+  {
+   "objectid": "34552",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 510.986328125,
+   "latitude": -27.46575282399542,
+   "longitude": 153.18835043605395
+  },
+  {
+   "objectid": "34800",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 933.578857421875,
+   "latitude": -27.31679139242083,
+   "longitude": 153.05780556286362
+  },
+  {
+   "objectid": "35010",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1195.426025390625,
+   "latitude": -27.53562324830307,
+   "longitude": 153.0212587155648
+  },
+  {
+   "objectid": "35156",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 942.08740234375,
+   "latitude": -27.389640438983054,
+   "longitude": 153.07207025150097
+  },
+  {
+   "objectid": "35208",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1138.38134765625,
+   "latitude": -27.49097189473592,
+   "longitude": 152.98161681741013
+  },
+  {
+   "objectid": "35314",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 941.213623046875,
+   "latitude": -27.51393336411295,
+   "longitude": 152.97913751039837
+  },
+  {
+   "objectid": "35411",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 981.820556640625,
+   "latitude": -27.495489914015003,
+   "longitude": 152.98296251605345
+  },
+  {
+   "objectid": "33822",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1411.24755859375,
+   "latitude": -27.43377098681924,
+   "longitude": 153.1631703401375
+  },
+  {
+   "objectid": "34143",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1873.10498046875,
+   "latitude": -27.446349352363075,
+   "longitude": 153.04164133234127
+  },
+  {
+   "objectid": "34192",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1273.22314453125,
+   "latitude": -27.5102030252629,
+   "longitude": 152.9782781760794
+  },
+  {
+   "objectid": "34348",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1582.869873046875,
+   "latitude": -27.461787143590076,
+   "longitude": 153.0273905154891
+  },
+  {
+   "objectid": "34454",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1827.783203125,
+   "latitude": -27.50575985113567,
+   "longitude": 153.06141833666808
+  },
+  {
+   "objectid": "34470",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 739.2646484375,
+   "latitude": -27.512868108882454,
+   "longitude": 153.0553295581431
+  },
+  {
+   "objectid": "34539",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1192.06201171875,
+   "latitude": -27.327383115746173,
+   "longitude": 153.07633401229415
+  },
+  {
+   "objectid": "34612",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1392.3359375,
+   "latitude": -27.51010027325738,
+   "longitude": 152.96956998309858
+  },
+  {
+   "objectid": "34841",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 920.436767578125,
+   "latitude": -27.43437304359144,
+   "longitude": 153.17162099711734
+  },
+  {
+   "objectid": "35349",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1804.144775390625,
+   "latitude": -27.48983193417702,
+   "longitude": 152.98253374872144
+  },
+  {
+   "objectid": "35412",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 994.148681640625,
+   "latitude": -27.493739548056485,
+   "longitude": 152.98778407670176
+  },
+  {
+   "objectid": "33857",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 4593.641357421875,
+   "latitude": -27.405957048950906,
+   "longitude": 152.92575799422423
+  },
+  {
+   "objectid": "33859",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 991.037109375,
+   "latitude": -27.449604780392765,
+   "longitude": 152.99038453119584
+  },
+  {
+   "objectid": "33931",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 4099.3408203125,
+   "latitude": -27.37876151545147,
+   "longitude": 153.0834008980522
+  },
+  {
+   "objectid": "33949",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 3211.101806640625,
+   "latitude": -27.370704044023505,
+   "longitude": 153.0847390597826
+  },
+  {
+   "objectid": "33951",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 3869.18603515625,
+   "latitude": -27.466236972804346,
+   "longitude": 153.03460980896645
+  },
+  {
+   "objectid": "33962",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 4478.968017578125,
+   "latitude": -27.47400152322755,
+   "longitude": 153.0365205217222
+  },
+  {
+   "objectid": "33964",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 3271.019287109375,
+   "latitude": -27.474598347422535,
+   "longitude": 153.0371656306221
+  },
+  {
+   "objectid": "34184",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 2663.469482421875,
+   "latitude": -27.453885034033835,
+   "longitude": 153.15878101269863
+  },
+  {
+   "objectid": "34273",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 3843.75341796875,
+   "latitude": -27.330740156562655,
+   "longitude": 153.05759303439353
+  },
+  {
+   "objectid": "34959",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 900.6123046875,
+   "latitude": -27.539447586987336,
+   "longitude": 153.02033111911481
+  },
+  {
+   "objectid": "34984",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 3980.239501953125,
+   "latitude": -27.555886428354956,
+   "longitude": 153.02911305917704
+  },
+  {
+   "objectid": "34986",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1294.97412109375,
+   "latitude": -27.556711587699496,
+   "longitude": 153.03701601152196
+  },
+  {
+   "objectid": "35212",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 3611.748779296875,
+   "latitude": -27.497223662389732,
+   "longitude": 152.9899796537735
+  },
+  {
+   "objectid": "35217",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 888.09228515625,
+   "latitude": -27.49627165887364,
+   "longitude": 152.98726615426898
+  },
+  {
+   "objectid": "35218",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 624.65869140625,
+   "latitude": -27.4961647374302,
+   "longitude": 152.9873649700003
+  },
+  {
+   "objectid": "33707",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 10128.423583984375,
+   "latitude": -27.59604313352075,
+   "longitude": 153.00353252486138
+  },
+  {
+   "objectid": "33809",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 4207.16162109375,
+   "latitude": -27.453445514170653,
+   "longitude": 153.17582535808637
+  },
+  {
+   "objectid": "33849",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 2791.42041015625,
+   "latitude": -27.454751997131105,
+   "longitude": 152.99581591176747
+  },
+  {
+   "objectid": "33856",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 6254.504638671875,
+   "latitude": -27.484906985830243,
+   "longitude": 152.9987180492979
+  },
+  {
+   "objectid": "33970",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 7344.275634765625,
+   "latitude": -27.482674952459035,
+   "longitude": 153.02842145938698
+  },
+  {
+   "objectid": "33983",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 11118.18359375,
+   "latitude": -27.587424501007682,
+   "longitude": 153.10332150138973
+  },
+  {
+   "objectid": "34069",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 10169.587646484375,
+   "latitude": -27.35067197257066,
+   "longitude": 152.98981348019313
+  },
+  {
+   "objectid": "34112",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 9499.058349609375,
+   "latitude": -27.344093886787117,
+   "longitude": 152.9837733821782
+  },
+  {
+   "objectid": "34144",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 10042.799560546875,
+   "latitude": -27.323851123798438,
+   "longitude": 153.08046598965228
+  },
+  {
+   "objectid": "34197",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 10056.931396484375,
+   "latitude": -27.47588549336009,
+   "longitude": 153.04000700978537
+  },
+  {
+   "objectid": "34230",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 4351.953857421875,
+   "latitude": -27.486954213030092,
+   "longitude": 152.99992219049545
+  },
+  {
+   "objectid": "34262",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 4055.63037109375,
+   "latitude": -27.320599247972222,
+   "longitude": 153.0669734375161
+  },
+  {
+   "objectid": "34538",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 9436.85009765625,
+   "latitude": -27.354512874434228,
+   "longitude": 153.00198344225063
+  },
+  {
+   "objectid": "34571",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 12957.40380859375,
+   "latitude": -27.343081362876998,
+   "longitude": 153.00424455573935
+  },
+  {
+   "objectid": "34715",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 4732.69921875,
+   "latitude": -27.53529229555125,
+   "longitude": 152.9724284637475
+  },
+  {
+   "objectid": "34778",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 9627.51025390625,
+   "latitude": -27.3449315320662,
+   "longitude": 152.98213490585394
+  },
+  {
+   "objectid": "34839",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 5658.628173828125,
+   "latitude": -27.44362253493152,
+   "longitude": 153.1729578486079
+  },
+  {
+   "objectid": "34880",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 16070.093505859375,
+   "latitude": -27.357424776366116,
+   "longitude": 152.99179525748596
+  },
+  {
+   "objectid": "34965",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 7265.158447265625,
+   "latitude": -27.54666570108645,
+   "longitude": 153.02654754349703
+  },
+  {
+   "objectid": "33695",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 78541.1318359375,
+   "latitude": -27.60025411944221,
+   "longitude": 153.0094651150451
+  },
+  {
+   "objectid": "33927",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 14147.322265625,
+   "latitude": -27.395314401402423,
+   "longitude": 153.07111933551704
+  },
+  {
+   "objectid": "33982",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 28096.71240234375,
+   "latitude": -27.592035278360626,
+   "longitude": 153.10376208977846
+  },
+  {
+   "objectid": "34164",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 20011.186767578125,
+   "latitude": -27.34481211595349,
+   "longitude": 152.99799272850052
+  },
+  {
+   "objectid": "34168",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 20343.248779296875,
+   "latitude": -27.49340629147849,
+   "longitude": 153.0283418799906
+  },
+  {
+   "objectid": "34477",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 30285.17333984375,
+   "latitude": -27.347765145748813,
+   "longitude": 152.99870154954345
+  },
+  {
+   "objectid": "34878",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 24414.075439453125,
+   "latitude": -27.478992814900824,
+   "longitude": 153.02004165521754
+  },
+  {
+   "objectid": "33865",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 103917.8095703125,
+   "latitude": -27.419117418007524,
+   "longitude": 152.91381158694895
+  },
+  {
+   "objectid": "34779",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 53912.916015625,
+   "latitude": -27.333147732891696,
+   "longitude": 153.0803507039377
+  },
+  {
+   "objectid": "35353",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 95692.34497070312,
+   "latitude": -27.440821336947106,
+   "longitude": 153.11591588786618
+  },
+  {
+   "objectid": "34169",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 265.7880859375,
+   "latitude": -27.482019908320805,
+   "longitude": 153.00955291844429
+  },
+  {
+   "objectid": "35210",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 144.716552734375,
+   "latitude": -27.495269955635585,
+   "longitude": 152.9892070601209
+  },
+  {
+   "objectid": "35231",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 226.9833984375,
+   "latitude": -27.457867437272263,
+   "longitude": 152.99250970998736
+  },
+  {
+   "objectid": "33711",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 461.52099609375,
+   "latitude": -27.4661696269979,
+   "longitude": 153.01164995370655
+  },
+  {
+   "objectid": "33814",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 463.69189453125,
+   "latitude": -27.458083784852835,
+   "longitude": 153.17999108878593
+  },
+  {
+   "objectid": "33952",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 376.589111328125,
+   "latitude": -27.388106897969976,
+   "longitude": 153.0710560162151
+  },
+  {
+   "objectid": "33980",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 318.56591796875,
+   "latitude": -27.45358788491589,
+   "longitude": 152.98180047281812
+  },
+  {
+   "objectid": "34004",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 459.343017578125,
+   "latitude": -27.43458107402918,
+   "longitude": 153.1733025217178
+  },
+  {
+   "objectid": "34092",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 505.84814453125,
+   "latitude": -27.3218379227413,
+   "longitude": 153.07317531030498
+  },
+  {
+   "objectid": "34346",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 511.872314453125,
+   "latitude": -27.461242459546032,
+   "longitude": 153.02052921547343
+  },
+  {
+   "objectid": "34428",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 469.37841796875,
+   "latitude": -27.508733431720135,
+   "longitude": 153.0394707450611
+  },
+  {
+   "objectid": "34430",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 427.7373046875,
+   "latitude": -27.50947541153404,
+   "longitude": 153.04498566750405
+  },
+  {
+   "objectid": "34478",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 403.629150390625,
+   "latitude": -27.328664560653518,
+   "longitude": 153.07633903322306
+  },
+  {
+   "objectid": "34918",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 352.738037109375,
+   "latitude": -27.528451957502178,
+   "longitude": 153.02255371748777
+  },
+  {
+   "objectid": "34936",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 448.114013671875,
+   "latitude": -27.535676055683986,
+   "longitude": 153.0189179351285
+  },
+  {
+   "objectid": "35209",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 206.239990234375,
+   "latitude": -27.495267700195814,
+   "longitude": 152.98932126682206
+  },
+  {
+   "objectid": "34937",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 143.768798828125,
+   "latitude": -27.535550899714092,
+   "longitude": 153.01894321377583
+  },
+  {
+   "objectid": "33713",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 286.349609375,
+   "latitude": -27.465014411697304,
+   "longitude": 153.0111111532533
+  },
+  {
+   "objectid": "34721",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 229.6708984375,
+   "latitude": -27.473996352188312,
+   "longitude": 152.9976516722301
+  },
+  {
+   "objectid": "33826",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 343.90087890625,
+   "latitude": -27.45858564256563,
+   "longitude": 152.97288405198225
+  },
+  {
+   "objectid": "33918",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 485.617919921875,
+   "latitude": -27.489105159136994,
+   "longitude": 153.02682510652357
+  },
+  {
+   "objectid": "34777",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 470.858642578125,
+   "latitude": -27.487412639808543,
+   "longitude": 153.01110333058102
+  },
+  {
+   "objectid": "34999",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 548.14892578125,
+   "latitude": -27.55701519282401,
+   "longitude": 153.04624974236387
+  },
+  {
+   "objectid": "33760",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 586.2529296875,
+   "latitude": -27.487842019288536,
+   "longitude": 153.00872421795015
+  },
+  {
+   "objectid": "33820",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 397.3515625,
+   "latitude": -27.46798330308583,
+   "longitude": 153.1875320501049
+  },
+  {
+   "objectid": "33846",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 401.364501953125,
+   "latitude": -27.45735489465684,
+   "longitude": 152.9917477587466
+  },
+  {
+   "objectid": "33855",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 367.23779296875,
+   "latitude": -27.474271818740817,
+   "longitude": 152.9912783232594
+  },
+  {
+   "objectid": "33896",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 418.491943359375,
+   "latitude": -27.430561659466438,
+   "longitude": 153.16439190346878
+  },
+  {
+   "objectid": "33900",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 606.926025390625,
+   "latitude": -27.507471308610643,
+   "longitude": 153.02022291014234
+  },
+  {
+   "objectid": "33971",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 583.08056640625,
+   "latitude": -27.512121644878935,
+   "longitude": 153.02047529478008
+  },
+  {
+   "objectid": "33999",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 571.6904296875,
+   "latitude": -27.453190234610336,
+   "longitude": 153.15673439890932
+  },
+  {
+   "objectid": "34155",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 598.563232421875,
+   "latitude": -27.462942269287346,
+   "longitude": 153.172566829736
+  },
+  {
+   "objectid": "34185",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 514.152587890625,
+   "latitude": -27.45695784348477,
+   "longitude": 153.16474098380476
+  },
+  {
+   "objectid": "34266",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 392.399658203125,
+   "latitude": -27.487732334088218,
+   "longitude": 153.000132728485
+  },
+  {
+   "objectid": "34308",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 396.820068359375,
+   "latitude": -27.314197342016772,
+   "longitude": 153.06742105778395
+  },
+  {
+   "objectid": "34391",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 412.2890625,
+   "latitude": -27.45453175342999,
+   "longitude": 153.02708795647735
+  },
+  {
+   "objectid": "34443",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 402.615478515625,
+   "latitude": -27.50366247057864,
+   "longitude": 153.0421807349813
+  },
+  {
+   "objectid": "34540",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 400.28759765625,
+   "latitude": -27.48970090232942,
+   "longitude": 153.0201104100308
+  },
+  {
+   "objectid": "34743",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 604.3818359375,
+   "latitude": -27.33179483379,
+   "longitude": 153.06130645044198
+  },
+  {
+   "objectid": "34962",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 410.6103515625,
+   "latitude": -27.53691624391809,
+   "longitude": 153.02158493340806
+  },
+  {
+   "objectid": "34964",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 588.800048828125,
+   "latitude": -27.533760498620644,
+   "longitude": 153.0297938280979
+  },
+  {
+   "objectid": "35230",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 389.3115234375,
+   "latitude": -27.451068408481074,
+   "longitude": 152.9975747476774
+  },
+  {
+   "objectid": "35389",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 401.94677734375,
+   "latitude": -27.459835496732158,
+   "longitude": 152.9895517986328
+  },
+  {
+   "objectid": "33880",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 405.55859375,
+   "latitude": -27.4329401252471,
+   "longitude": 153.16807769324942
+  },
+  {
+   "objectid": "33916",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 407.564697265625,
+   "latitude": -27.48969598490224,
+   "longitude": 153.02458138054556
+  },
+  {
+   "objectid": "34089",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 407.0986328125,
+   "latitude": -27.332175532687266,
+   "longitude": 153.0544748386353
+  },
+  {
+   "objectid": "34384",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 578.95849609375,
+   "latitude": -27.332565154835173,
+   "longitude": 153.05332167138369
+  },
+  {
+   "objectid": "34504",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 404.67822265625,
+   "latitude": -27.324730893963164,
+   "longitude": 153.07677071819472
+  },
+  {
+   "objectid": "34534",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 404.755859375,
+   "latitude": -27.327937577635335,
+   "longitude": 153.0745703227553
+  },
+  {
+   "objectid": "34719",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 404.850341796875,
+   "latitude": -27.455549897941946,
+   "longitude": 153.00183710430298
+  },
+  {
+   "objectid": "34732",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 414.558349609375,
+   "latitude": -27.333358082104763,
+   "longitude": 153.05861731860307
+  },
+  {
+   "objectid": "35002",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 411.24169921875,
+   "latitude": -27.553975553161024,
+   "longitude": 153.0231727566916
+  },
+  {
+   "objectid": "35216",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 403.840576171875,
+   "latitude": -27.495323921403482,
+   "longitude": 152.98743934986715
+  },
+  {
+   "objectid": "35404",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 407.92041015625,
+   "latitude": -27.456686451001644,
+   "longitude": 152.99701960210976
+  },
+  {
+   "objectid": "33756",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 648.411865234375,
+   "latitude": -27.546305443540547,
+   "longitude": 152.9795958753679
+  },
+  {
+   "objectid": "33815",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 462.953857421875,
+   "latitude": -27.45286327698442,
+   "longitude": 153.17947907120507
+  },
+  {
+   "objectid": "33892",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 415.915771484375,
+   "latitude": -27.43216507751898,
+   "longitude": 153.16357656934588
+  },
+  {
+   "objectid": "34226",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 408.42431640625,
+   "latitude": -27.322685886922446,
+   "longitude": 153.07503216742373
+  },
+  {
+   "objectid": "34460",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 417.61767578125,
+   "latitude": -27.507646279828943,
+   "longitude": 153.05894604013085
+  },
+  {
+   "objectid": "34706",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 412.21826171875,
+   "latitude": -27.527816951867994,
+   "longitude": 152.9758266441505
+  },
+  {
+   "objectid": "35233",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 688.58935546875,
+   "latitude": -27.455300946032974,
+   "longitude": 152.9943935012625
+  },
+  {
+   "objectid": "35266",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 641.7734375,
+   "latitude": -27.522719693365083,
+   "longitude": 152.97509381364262
+  },
+  {
+   "objectid": "35320",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 408.564453125,
+   "latitude": -27.534435529694534,
+   "longitude": 152.97649267909986
+  },
+  {
+   "objectid": "33824",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 736.350830078125,
+   "latitude": -27.45838032984623,
+   "longitude": 153.17060780843804
+  },
+  {
+   "objectid": "33825",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 444.76806640625,
+   "latitude": -27.459617778040567,
+   "longitude": 153.17804252014875
+  },
+  {
+   "objectid": "33843",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 599.1572265625,
+   "latitude": -27.487840172280762,
+   "longitude": 153.0089178993478
+  },
+  {
+   "objectid": "33866",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 602.490478515625,
+   "latitude": -27.466456583414637,
+   "longitude": 152.9864404417311
+  },
+  {
+   "objectid": "33886",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 635.235107421875,
+   "latitude": -27.433781966934035,
+   "longitude": 153.1610980466139
+  },
+  {
+   "objectid": "33910",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 583.925537109375,
+   "latitude": -27.502278758666034,
+   "longitude": 153.02408204658346
+  },
+  {
+   "objectid": "33932",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 607.42236328125,
+   "latitude": -27.378799006771565,
+   "longitude": 153.0830166030338
+  },
+  {
+   "objectid": "33996",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 585.30615234375,
+   "latitude": -27.457099173753623,
+   "longitude": 153.162778912412
+  },
+  {
+   "objectid": "34106",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 434.358154296875,
+   "latitude": -27.320071482035793,
+   "longitude": 153.06307287406787
+  },
+  {
+   "objectid": "34414",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 610.232666015625,
+   "latitude": -27.50618481894676,
+   "longitude": 153.03965233080368
+  },
+  {
+   "objectid": "34450",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 560.23388671875,
+   "latitude": -27.511618413015004,
+   "longitude": 153.05793115089412
+  },
+  {
+   "objectid": "34452",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 645.038330078125,
+   "latitude": -27.51133818331629,
+   "longitude": 153.04961380545862
+  },
+  {
+   "objectid": "34641",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 635.8408203125,
+   "latitude": -27.461926674720893,
+   "longitude": 153.165987646524
+  },
+  {
+   "objectid": "34713",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 432.87890625,
+   "latitude": -27.527144529376,
+   "longitude": 152.97517465298407
+  },
+  {
+   "objectid": "34754",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 713.345458984375,
+   "latitude": -27.313487713713112,
+   "longitude": 153.05884412166094
+  },
+  {
+   "objectid": "34788",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 475.529052734375,
+   "latitude": -27.485041898100825,
+   "longitude": 153.01664325405483
+  },
+  {
+   "objectid": "34980",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 623.701904296875,
+   "latitude": -27.54675894569465,
+   "longitude": 153.0338977422685
+  },
+  {
+   "objectid": "35006",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 637.197265625,
+   "latitude": -27.54866319064733,
+   "longitude": 153.03623201395177
+  },
+  {
+   "objectid": "35214",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 459.483642578125,
+   "latitude": -27.49143541356204,
+   "longitude": 152.98152849025146
+  },
+  {
+   "objectid": "35390",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 457.63818359375,
+   "latitude": -27.461340976669586,
+   "longitude": 152.99053800648576
+  },
+  {
+   "objectid": "33868",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 646.91015625,
+   "latitude": -27.47009361213899,
+   "longitude": 152.9903256499134
+  },
+  {
+   "objectid": "33878",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 627.310791015625,
+   "latitude": -27.48310128372973,
+   "longitude": 153.022033644311
+  },
+  {
+   "objectid": "34130",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 706.87744140625,
+   "latitude": -27.525916805094162,
+   "longitude": 153.00197293890272
+  },
+  {
+   "objectid": "34254",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 611.289306640625,
+   "latitude": -27.329148793501812,
+   "longitude": 153.07635342924885
+  },
+  {
+   "objectid": "34503",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 460.4130859375,
+   "latitude": -27.32749776193936,
+   "longitude": 153.05731863618328
+  },
+  {
+   "objectid": "34776",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 789.164306640625,
+   "latitude": -27.488111150319686,
+   "longitude": 153.01313856506462
+  },
+  {
+   "objectid": "34994",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 614.25390625,
+   "latitude": -27.552392122101296,
+   "longitude": 153.03403984316748
+  },
+  {
+   "objectid": "34998",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 611.6279296875,
+   "latitude": -27.552572775622007,
+   "longitude": 153.03525583356227
+  },
+  {
+   "objectid": "35005",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 666.443603515625,
+   "latitude": -27.556868385536585,
+   "longitude": 153.03286615682745
+  },
+  {
+   "objectid": "35175",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 609.92724609375,
+   "latitude": -27.329233701401126,
+   "longitude": 153.05857996163178
+  },
+  {
+   "objectid": "33812",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 732.173583984375,
+   "latitude": -27.444526340816285,
+   "longitude": 153.15674308745122
+  },
+  {
+   "objectid": "33847",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 664.99365234375,
+   "latitude": -27.46756123211358,
+   "longitude": 152.99631251790655
+  },
+  {
+   "objectid": "33912",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 651.272705078125,
+   "latitude": -27.50251962582992,
+   "longitude": 153.02572168074394
+  },
+  {
+   "objectid": "34103",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 800.982177734375,
+   "latitude": -27.452015771091535,
+   "longitude": 153.18378040502054
+  },
+  {
+   "objectid": "34149",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 718.958740234375,
+   "latitude": -27.574475304756795,
+   "longitude": 153.0926212808237
+  },
+  {
+   "objectid": "34193",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 741.22119140625,
+   "latitude": -27.5223906770291,
+   "longitude": 152.97929641773683
+  },
+  {
+   "objectid": "34407",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 627.119384765625,
+   "latitude": -27.499396639450243,
+   "longitude": 153.0684655964737
+  },
+  {
+   "objectid": "34525",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 500.44580078125,
+   "latitude": -27.318651948897337,
+   "longitude": 153.05966233063003
+  },
+  {
+   "objectid": "34633",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 478.247314453125,
+   "latitude": -27.318644417578817,
+   "longitude": 153.05895669520135
+  },
+  {
+   "objectid": "34866",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 685.041015625,
+   "latitude": -27.512781079814715,
+   "longitude": 153.06520157874616
+  },
+  {
+   "objectid": "34938",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 692.20361328125,
+   "latitude": -27.538211270259,
+   "longitude": 153.03286616849357
+  },
+  {
+   "objectid": "35280",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 808.2607421875,
+   "latitude": -27.518571661360223,
+   "longitude": 152.97071231233323
+  },
+  {
+   "objectid": "35304",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 807.236328125,
+   "latitude": -27.518330259478823,
+   "longitude": 152.97102061224547
+  },
+  {
+   "objectid": "33811",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 909.256103515625,
+   "latitude": -27.454183592202895,
+   "longitude": 153.16980528770378
+  },
+  {
+   "objectid": "33841",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 809.351318359375,
+   "latitude": -27.475374316957243,
+   "longitude": 152.98881834883736
+  },
+  {
+   "objectid": "33861",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 513.48291015625,
+   "latitude": -27.457503967844058,
+   "longitude": 152.97271741159201
+  },
+  {
+   "objectid": "34028",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 861.239501953125,
+   "latitude": -27.469674816079316,
+   "longitude": 153.17818697020334
+  },
+  {
+   "objectid": "34115",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 546.833251953125,
+   "latitude": -27.319718641453985,
+   "longitude": 153.06256389270493
+  },
+  {
+   "objectid": "34141",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 885.633056640625,
+   "latitude": -27.311373247697254,
+   "longitude": 153.05971359609148
+  },
+  {
+   "objectid": "34148",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 806.064453125,
+   "latitude": -27.493179035475084,
+   "longitude": 153.0705986838433
+  },
+  {
+   "objectid": "34239",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 830.051025390625,
+   "latitude": -27.57354827687655,
+   "longitude": 153.09532220789575
+  },
+  {
+   "objectid": "34401",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 682.930419921875,
+   "latitude": -27.448359761412444,
+   "longitude": 153.04012157009296
+  },
+  {
+   "objectid": "34446",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 815.451904296875,
+   "latitude": -27.505843679749475,
+   "longitude": 153.05556884204736
+  },
+  {
+   "objectid": "34500",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 514.0380859375,
+   "latitude": -27.322584383058736,
+   "longitude": 153.0768492068332
+  },
+  {
+   "objectid": "34515",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 520.77978515625,
+   "latitude": -27.334829000486472,
+   "longitude": 153.05476699969753
+  },
+  {
+   "objectid": "34640",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 994.132080078125,
+   "latitude": -27.346442525316995,
+   "longitude": 153.00235165419755
+  },
+  {
+   "objectid": "34843",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 834.09716796875,
+   "latitude": -27.459357263519387,
+   "longitude": 153.1838218180068
+  },
+  {
+   "objectid": "34917",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 900.341064453125,
+   "latitude": -27.527682139517868,
+   "longitude": 153.02318134834152
+  },
+  {
+   "objectid": "34973",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 813.260986328125,
+   "latitude": -27.552986224457666,
+   "longitude": 153.0294530277838
+  },
+  {
+   "objectid": "34974",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 776.80078125,
+   "latitude": -27.543143408238336,
+   "longitude": 153.0237380443654
+  },
+  {
+   "objectid": "35003",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 681.2900390625,
+   "latitude": -27.55206889464916,
+   "longitude": 153.04126846100206
+  },
+  {
+   "objectid": "35007",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 809.661376953125,
+   "latitude": -27.552879574799558,
+   "longitude": 153.02512897831312
+  },
+  {
+   "objectid": "35153",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 821.464111328125,
+   "latitude": -27.39055132808956,
+   "longitude": 153.0627494703334
+  },
+  {
+   "objectid": "35286",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 934.064208984375,
+   "latitude": -27.518872025338904,
+   "longitude": 152.97274632306988
+  },
+  {
+   "objectid": "35321",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 688.313720703125,
+   "latitude": -27.512490858042977,
+   "longitude": 152.9799952693355
+  },
+  {
+   "objectid": "33821",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1000.718505859375,
+   "latitude": -27.432184907849393,
+   "longitude": 153.16071381445468
+  },
+  {
+   "objectid": "33869",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 962.3818359375,
+   "latitude": -27.47004072919961,
+   "longitude": 152.98996508750452
+  },
+  {
+   "objectid": "33891",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 783.3349609375,
+   "latitude": -27.433429282252334,
+   "longitude": 153.15721838121306
+  },
+  {
+   "objectid": "33906",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 922.464599609375,
+   "latitude": -27.511168994760105,
+   "longitude": 153.0246496224317
+  },
+  {
+   "objectid": "33909",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 921.149169921875,
+   "latitude": -27.511228742149367,
+   "longitude": 153.0250513906134
+  },
+  {
+   "objectid": "33953",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1045.220458984375,
+   "latitude": -27.406718135830275,
+   "longitude": 153.06441222511955
+  },
+  {
+   "objectid": "34019",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 610.641845703125,
+   "latitude": -27.333609921849852,
+   "longitude": 153.05888208940092
+  },
+  {
+   "objectid": "34077",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 675.117919921875,
+   "latitude": -27.329707595984456,
+   "longitude": 153.0626610047743
+  },
+  {
+   "objectid": "34140",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 610.59033203125,
+   "latitude": -27.333695193382358,
+   "longitude": 153.0589163451156
+  },
+  {
+   "objectid": "34190",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 967.376953125,
+   "latitude": -27.52690871519423,
+   "longitude": 152.9814774313849
+  },
+  {
+   "objectid": "34252",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 991.8271484375,
+   "latitude": -27.31624468004657,
+   "longitude": 153.06897553797054
+  },
+  {
+   "objectid": "34373",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 548.291259765625,
+   "latitude": -27.329214253801357,
+   "longitude": 153.0853993189721
+  },
+  {
+   "objectid": "34402",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1208.842041015625,
+   "latitude": -27.49759899424672,
+   "longitude": 153.06152688447835
+  },
+  {
+   "objectid": "34941",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 970.3681640625,
+   "latitude": -27.52495097332823,
+   "longitude": 153.02509704880183
+  },
+  {
+   "objectid": "34951",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 769.1865234375,
+   "latitude": -27.54035780220111,
+   "longitude": 153.01854040337386
+  },
+  {
+   "objectid": "35409",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 757.895263671875,
+   "latitude": -27.45632688145161,
+   "longitude": 153.17867130234424
+  },
+  {
+   "objectid": "33831",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 778.033935546875,
+   "latitude": -27.489871801523655,
+   "longitude": 153.0113304657117
+  },
+  {
+   "objectid": "33915",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1701.263671875,
+   "latitude": -27.492283876461478,
+   "longitude": 153.01812069981037
+  },
+  {
+   "objectid": "33944",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 898.989990234375,
+   "latitude": -27.372750172951953,
+   "longitude": 153.08334951489104
+  },
+  {
+   "objectid": "33997",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1880.387939453125,
+   "latitude": -27.45794492225064,
+   "longitude": 153.1588335789085
+  },
+  {
+   "objectid": "34020",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 799.244140625,
+   "latitude": -27.321842543013975,
+   "longitude": 153.07649221226535
+  },
+  {
+   "objectid": "34209",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1569.028076171875,
+   "latitude": -27.455176291141473,
+   "longitude": 153.00207052807784
+  },
+  {
+   "objectid": "34270",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 965.632568359375,
+   "latitude": -27.31978093140045,
+   "longitude": 153.06271418345045
+  },
+  {
+   "objectid": "34469",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1653.974853515625,
+   "latitude": -27.50233975786468,
+   "longitude": 153.07257772397116
+  },
+  {
+   "objectid": "34634",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1241.05712890625,
+   "latitude": -27.32717031636299,
+   "longitude": 153.07625329519848
+  },
+  {
+   "objectid": "34711",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1418.92626953125,
+   "latitude": -27.51191165041253,
+   "longitude": 152.97894308123497
+  },
+  {
+   "objectid": "35211",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 339.221923828125,
+   "latitude": -27.495301990645807,
+   "longitude": 152.98936868079477
+  },
+  {
+   "objectid": "33759",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 3498.04931640625,
+   "latitude": -27.456216218277063,
+   "longitude": 153.01340768102438
+  },
+  {
+   "objectid": "33848",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 3278.88330078125,
+   "latitude": -27.485545948335314,
+   "longitude": 152.9982287979725
+  },
+  {
+   "objectid": "33858",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 3732.408935546875,
+   "latitude": -27.46362997632228,
+   "longitude": 152.97737300300457
+  },
+  {
+   "objectid": "34023",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 2627.5986328125,
+   "latitude": -27.462168652656093,
+   "longitude": 153.17450750192566
+  },
+  {
+   "objectid": "34080",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 4152.658203125,
+   "latitude": -27.484945029685775,
+   "longitude": 153.03648284046625
+  },
+  {
+   "objectid": "34131",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 2904.3916015625,
+   "latitude": -27.32995537173073,
+   "longitude": 153.07500217741432
+  },
+  {
+   "objectid": "34160",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 3636.836181640625,
+   "latitude": -27.322781610603837,
+   "longitude": 153.08008131419803
+  },
+  {
+   "objectid": "34218",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 3274.30712890625,
+   "latitude": -27.487456774919092,
+   "longitude": 153.0117328556106
+  },
+  {
+   "objectid": "34242",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 5108.912353515625,
+   "latitude": -27.571806500446446,
+   "longitude": 153.10024892379863
+  },
+  {
+   "objectid": "34291",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1068.284912109375,
+   "latitude": -27.451578187875768,
+   "longitude": 153.18328933358703
+  },
+  {
+   "objectid": "34473",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 2286.225830078125,
+   "latitude": -27.36537806448434,
+   "longitude": 153.00029379493807
+  },
+  {
+   "objectid": "34654",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 3239.567626953125,
+   "latitude": -27.445401898913016,
+   "longitude": 153.11019220404637
+  },
+  {
+   "objectid": "34893",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 3648.037109375,
+   "latitude": -27.462443780898692,
+   "longitude": 153.13446832909324
+  },
+  {
+   "objectid": "34987",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1415.68505859375,
+   "latitude": -27.55697194324996,
+   "longitude": 153.03904644155216
+  },
+  {
+   "objectid": "35219",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 945.126708984375,
+   "latitude": -27.49630795269499,
+   "longitude": 152.98716281849147
+  },
+  {
+   "objectid": "35354",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 3662.858154296875,
+   "latitude": -27.40499879571019,
+   "longitude": 152.9259692202792
+  },
+  {
+   "objectid": "35367",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 2042.634765625,
+   "latitude": -27.53354026793757,
+   "longitude": 152.97928287849865
+  },
+  {
+   "objectid": "35407",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 2212.404052734375,
+   "latitude": -27.46065128298086,
+   "longitude": 153.16779101873996
+  },
+  {
+   "objectid": "33854",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 8724.0625,
+   "latitude": -27.47803165558033,
+   "longitude": 152.99314210588136
+  },
+  {
+   "objectid": "33899",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 5358.63671875,
+   "latitude": -27.473754993736847,
+   "longitude": 153.01262650351183
+  },
+  {
+   "objectid": "34063",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 9500.3583984375,
+   "latitude": -27.3452722427098,
+   "longitude": 152.98507416947362
+  },
+  {
+   "objectid": "34071",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 11542.587158203125,
+   "latitude": -27.351120711025075,
+   "longitude": 152.98738110995052
+  },
+  {
+   "objectid": "34079",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 16660.505126953125,
+   "latitude": -27.57849345846066,
+   "longitude": 153.1073822949469
+  },
+  {
+   "objectid": "34295",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 7436.39111328125,
+   "latitude": -27.34617869868125,
+   "longitude": 153.001605569792
+  },
+  {
+   "objectid": "34382",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 6648.69775390625,
+   "latitude": -27.460809781193788,
+   "longitude": 152.97412934341898
+  },
+  {
+   "objectid": "34387",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 13930.534423828125,
+   "latitude": -27.45905225181145,
+   "longitude": 153.02775694409476
+  },
+  {
+   "objectid": "34397",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 3998.776123046875,
+   "latitude": -27.446576342024613,
+   "longitude": 153.0421487214955
+  },
+  {
+   "objectid": "34483",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 6686.063720703125,
+   "latitude": -27.46758771933338,
+   "longitude": 153.18939100293755
+  },
+  {
+   "objectid": "34494",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 10013.794677734375,
+   "latitude": -27.348897935817686,
+   "longitude": 152.98187300877262
+  },
+  {
+   "objectid": "34549",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 3774.224609375,
+   "latitude": -27.319635068620624,
+   "longitude": 153.07337906359672
+  },
+  {
+   "objectid": "34838",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 5547.3828125,
+   "latitude": -27.416887563501565,
+   "longitude": 152.91435185770516
+  },
+  {
+   "objectid": "34896",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 9978.713623046875,
+   "latitude": -27.43283963301377,
+   "longitude": 153.1315626442657
+  },
+  {
+   "objectid": "33817",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 6202.063232421875,
+   "latitude": -27.45551678052164,
+   "longitude": 153.16510257487295
+  },
+  {
+   "objectid": "33863",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 38525.611083984375,
+   "latitude": -27.4580682240486,
+   "longitude": 152.9703784466011
+  },
+  {
+   "objectid": "33879",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 20120.512939453125,
+   "latitude": -27.458523322429073,
+   "longitude": 153.18185001021425
+  },
+  {
+   "objectid": "34001",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 37356.607421875,
+   "latitude": -27.454284164502777,
+   "longitude": 153.17626064339126
+  },
+  {
+   "objectid": "34104",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 10837.1005859375,
+   "latitude": -27.33659116827904,
+   "longitude": 152.99969558522886
+  },
+  {
+   "objectid": "34175",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 24491.858154296875,
+   "latitude": -27.571958640938757,
+   "longitude": 153.0968852154228
+  },
+  {
+   "objectid": "34345",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 21791.459716796875,
+   "latitude": -27.458545045802033,
+   "longitude": 153.0196520307919
+  },
+  {
+   "objectid": "34350",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 60466.83984375,
+   "latitude": -27.45931049935404,
+   "longitude": 153.01742656326712
+  },
+  {
+   "objectid": "34655",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 72560.00903320312,
+   "latitude": -27.43879375017559,
+   "longitude": 153.11941415082578
+  },
+  {
+   "objectid": "34660",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 32179.891845703125,
+   "latitude": -27.439926657812343,
+   "longitude": 153.14756843009317
+  },
+  {
+   "objectid": "34837",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 32870.30224609375,
+   "latitude": -27.419860463253098,
+   "longitude": 152.9086424874195
+  },
+  {
+   "objectid": "34842",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 14562.38916015625,
+   "latitude": -27.444273543022522,
+   "longitude": 153.1719587839961
+  },
+  {
+   "objectid": "34882",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 15308.50341796875,
+   "latitude": -27.34277351996733,
+   "longitude": 153.00211173877727
+  },
+  {
+   "objectid": "35215",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 11711.038330078125,
+   "latitude": -27.49749403066779,
+   "longitude": 152.98689087650982
+  },
+  {
+   "objectid": "33979",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 7442.358154296875,
+   "latitude": -27.58939074457985,
+   "longitude": 153.1004244672626
+  },
+  {
+   "objectid": "34107",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 50510.655029296875,
+   "latitude": -27.34850812647156,
+   "longitude": 152.98415597342435
+  },
+  {
+   "objectid": "34621",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 128390.36547851562,
+   "latitude": -27.412184911172623,
+   "longitude": 153.15080469574173
+  },
+  {
+   "objectid": "34672",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 19751.090576171875,
+   "latitude": -27.44059925246374,
+   "longitude": 153.14778266179673
+  },
+  {
+   "objectid": "34692",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 78368.47021484375,
+   "latitude": -27.52742633961506,
+   "longitude": 152.99255654706857
+  },
+  {
+   "objectid": "34807",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 69774.9765625,
+   "latitude": -27.476416946416297,
+   "longitude": 153.01849824796818
+  },
+  {
+   "objectid": "34897",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 168909.66479492188,
+   "latitude": -27.416324665958367,
+   "longitude": 153.151915630266
+  },
+  {
+   "objectid": "35351",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 1744695.9248046875,
+   "latitude": -27.41601450108097,
+   "longitude": 153.1573398682218
+  },
+  {
+   "objectid": "35352",
+   "sub_category": "Individual or group significant landscape tree site sub-category",
+   "sub_category_code": "SLT_IGT",
+   "shape_area_sqm": 159037.92260742188,
+   "latitude": -27.410728316141448,
+   "longitude": 153.1606460921163
+  }
+ ]
+}
