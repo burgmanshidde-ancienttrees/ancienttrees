@@ -63,9 +63,24 @@ def corpus():
         for t in d.get("trees") or []:
             if t.get("species"):
                 species[t["species"]] += 1
-            addr = ((t.get("location") or {}).get("address") or "").split(",")[0].strip()
-            if addr and PARKISH.search(addr):
-                parks[(d.get("city"), addr)] += 1
+            # Mirrors parkKey() in site/src/lib/parks.ts: neighbourhood first,
+            # address second, first clause before a comma, parentheticals
+            # stripped. A mismatch here reports a gap the site has already
+            # closed (Padua's Orto Botanico, 2026-08-15: neighbourhood said
+            # "Orto Botanico", this loop's old address-only check wanted
+            # "Orto Botanico di Padova", and the site had already built and
+            # published the page under the neighbourhood-derived name).
+            loc = t.get("location") or {}
+            park_name = None
+            for field in (loc.get("neighbourhood"), loc.get("address")):
+                head = (field or "").split(",")[0]
+                head = re.sub(r"\([^)]*\)?", "", head)
+                head = re.sub(r"\s+", " ", head).strip(" -/")
+                if len(head) >= 4 and PARKISH.search(head):
+                    park_name = head
+                    break
+            if park_name:
+                parks[(d.get("city"), park_name)] += 1
     return species, countries, parks
 
 
