@@ -1566,6 +1566,15 @@
         "note": "session pass, tokens not separately metered. Closed Padua's last tree (9/10 to 10/10) from a lead an earlier pass had flagged as near-zero-cost (same Orto Botanico cluster as 4 already-published trees) but held back on a single 'Pessima' health rating in the RAMI register. Corroborated against the Orto Botanico's own current website and social account, both of which still describe and locate the tree (Italy's first Cedrus deodara, planted 1828) without indicating it is gone; shipped with the poor-health rating stated honestly in the story rather than hidden. Fixed a hard-rule-9 canonical-name miss (wrote 'Deodar Cedar', corpus standard is 'Himalayan Cedar') caught by the Astro build's own species-name check.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "parma",
+        "kind": "verify+write",
+        "tokens": 0,
+        "trees": 5,
+        "note": "session pass, tokens not separately metered. New city from the prepare.py-staged register shelf (7 candidates, Italian MASAF register). Shipped 5 individual trees in one Parco Ducale / Piazzale della Pace cluster, including Emilia-Romagna's tallest recorded tree (a 47m plane) and a field elm that survived the Dutch elm disease epidemic. Left 2 candidates as leads: both registered as 'Insieme omogeneo' (homogeneous group) sheets, failing the single collectible-point test even though one corresponds to a plane the comune's own press release treats as an individual champion tree, worth disambiguating on a future pass.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
