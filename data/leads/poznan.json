@@ -1,0 +1,49 @@
+{
+  "city": "Poznan",
+  "country": "Poland",
+  "city_slug": "poznan",
+  "note": "Poznan shipped poz_001 to poz_006 on 2026-08-15 (four protected London planes on Plac Wolnosci, the Abakanowicz plane in the Zamek rose courtyard, the Zakrzewski silver maple). None of the leads below were delivered: they are the candidates the verification pass (2026-08-15, Poland GDOS register, trees within 5km of the centre) left behind, kept as stock for when Poznan grows past 6. Never rendered.",
+  "leads": [
+    {
+      "name": "Platan im. Bernarda Chrzanowskiego",
+      "species": "London Plane (Platanus x acerifolia)",
+      "lat": 52.39879165480603,
+      "lng": 16.90298908654469,
+      "status": "lead",
+      "why": "Named single-tree GDOS register entry, designated 2025-06-04 (very recent), 1.73km from the centre, roughly 1.5-2km from the verified Plac Wolnosci cluster so at the edge of walkable. Not verified this pass; needs a second source and access check. Source: near_city Poznan register entry, name_pl containing 'Chrzanowskiego'."
+    },
+    {
+      "name": "Dab Cytadelowcow Poznanskich",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "lat": 52.42200083836158,
+      "lng": 16.925696579863256,
+      "status": "lead",
+      "why": "Named oak dedicated to the soldiers of the Poznan Citadel, designated 2021-04-01, 1.74km from the centre, likely inside or beside Cytadela Park (a major public park). Historically resonant name, worth a look for a future pass or as the seed of a second Poznan cluster around the Citadel. Not verified this pass."
+    },
+    {
+      "name": "Krzysztof (dab)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "lat": 52.38993242332902,
+      "lng": 16.91577564549605,
+      "status": "lead",
+      "why": "Named oak, designated 2017-12-05, 1.94km from the centre. Not verified this pass for time; needs a second source, address and access check."
+    },
+    {
+      "name": "Dab im. Gen. Czujkowa",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "lat": 52.42411234991874,
+      "lng": 16.93076354506202,
+      "status": "lead",
+      "why": "Named oak, designated 1979-06-10, 2.01km from the centre, near the Cytadela Park candidate above (about 0.8km apart), so the two could anchor a second walkable cluster there. Not verified this pass."
+    },
+    {
+      "name": "Dab Jadwigi Andegawenskiej (Kasserna Park)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "Girth 319cm, estimated age ~190 years per poznan.pl's 16.04.2024 'Nowe pomniki przyrody' article (the same piece that confirmed poz_005 and poz_006), standing in Kasserna Park on Osiedle Chrobrego, Piatkowo district. Outside this pass's 5km supply radius from the centre, so coordinates were not pulled from the register this pass. Good candidate for a future depth pass on Poznan or a standalone Piatkowo cluster; well documented already."
+    }
+  ],
+  "blocked": []
+}
