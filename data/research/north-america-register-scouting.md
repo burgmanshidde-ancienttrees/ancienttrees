@@ -190,3 +190,46 @@ status, which would make Austin (and San Antonio, Houston, Dallas, Fort
 Worth, if ever wanted) nearly free to research once granted. Not drafted this
 pass since outreach emails are Hidde's to send and this is a scouting pass,
 but flagged here as the single best target if he wants to ask.
+
+---
+
+## 3. The Live Oak Society (Louisiana Garden Club Federation)
+
+**VERDICT: BLOCKED, explicit written-permission requirement, exceptionally rich data.**
+
+Real, and exactly as described: a live-oak membership registry running since
+1934, minimum-girth entry bar (8 ft circumference at 4.5 ft), each entry
+carrying a name, address, county/parish, girth and sponsor. Distributed as
+scanned-to-digital PDFs from `lgcfinc.org/live-oak-society.html`, at least two
+files found (`5001-currentapril2019.pdf`, 265 pages, registrations 5001
+onward; `6001_6500.pdf` not fetched this pass) plus an earlier 1-5000 range
+implied by the numbering but not located in the time available.
+
+**The society's own page states the licence outright, and it forecloses the
+question before any file needs opening:**
+
+> "The information contained in the Registry of the Live Oak Society is the
+> copyrighted property of the Louisiana Garden Club Federation and the owners
+> of the Live Oak trees. Anyone else wishing to use the information for any
+> purpose whatsoever must get written permission from the Live Oak Society
+> through its Chairman."
+
+"For any purpose whatsoever" is about as unambiguous a block as this project
+has found. **Do not import, do not bulk-extract.** This is a written-
+permission-path case, same shape as the Woodland Trust and the Texas Big Tree
+Registry above: draft sits for Hidde to send if he wants it (hard rule 4),
+addressed to the Live Oak Society chairman via the LGCF contact page.
+
+**Why it is worth the ask.** A quick grep of just the one 265-page file
+confirms real density in exactly the cities this pass targets: "New Orleans"
+appears 139 times, "Charleston" 34 times, "Savannah" 5 times, and the roster
+is not Louisiana-only, it already reaches North Carolina addresses (Carteret
+County) within the sampled range, confirming it tracks live oaks across the
+whole South rather than one state. This single society roster, if permission
+arrived, would likely be the single richest unlock for New Orleans and a real
+one for Charleston.
+
+---
+
+## 4. Canada
+
