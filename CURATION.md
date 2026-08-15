@@ -9,6 +9,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-15 - Potsdam's staged register candidates are all in Berlin, not Potsdam
+
+`data/research/potsdam-register-candidates.json` (7 entries, stocked by `prepare.py`) all sit at Jagdschloss Glienicke, Schlossgarten Glienicke or Volkspark Klein-Glienicke, district Steglitz-Zehlendorf, postcode 141xx: administratively Berlin, not Potsdam, however close to the border (Glienicke Brucke, the actual city line, sits metres away). Not shipped anywhere this pass: attributing them to Potsdam would misstate which city a visitor is in, and Berlin (already published, 18/30 trees) is a Google-confirmed stage-2 city, so deepening it is paused while stage-1 cities like Potsdam still have real supply elsewhere. Left for whoever revisits Potsdam or Berlin next: worth checking whether `prepare.py`'s candidate-staging picks trees by raw distance to a city's centre point without checking which municipality/postcode they actually fall in, since that would explain the mismatch and might affect other border cities too.
+
 ## 2026-08-15 - Zaragoza's prison laurel: the strongest history in the register, and it is dead
 
 Checked as a candidate to close Zaragoza's gap (a READY-flagged lead per `leads.py`, which does not read the `why` field). The Bay Laurel of the old Carcel de Torrero grew inside the prison compound, between the infirmary, a module and the north wall, visible above the walls from the street; prisoners tended it and it became, by more than one account, a symbol of the world outside for people who could not leave. It is the strongest single story the Zaragoza register holds, ahead of anything currently published.
