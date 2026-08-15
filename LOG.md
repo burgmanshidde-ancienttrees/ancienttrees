@@ -11,6 +11,20 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-15 (session) - 7-day visits: 295, up from a slow week. Aarhus opens; Brisbane's 558-tree register goes to verify
+
+7-day visitor line from `visitors.py`: 44/28/83/41/21/17/34/27 across 08-08 to 08-15, 295 visits total, 475 page views.
+
+**Aarhus is live with 7 trees**, off the Dansk Traeregister, the research a prior session left verified but unwritten (`data/research/aarhus-verified.json`, claimed and released this session). Five cluster in and around Moesgard Museum's park: Denmark's very likely largest wild service tree (filed twice in the register, same coordinates, folded into one entry), a 40.5m silver fir over a family cemetery, a hornbeam, a black locust with a dying crown on an artificial mound, and a beech nicknamed the Happy Pig about 1.3km north in Skade Skov. The other two stand apart: the Women's Oak of Viby, planted in 1916 by the local women's suffrage society to mark Danish women's first vote (with a register date-arithmetic error caught and corrected, anchoring on the 1916 planting year rather than the register's own contradictory "110 years as of 2008" note), and a roadside oak on Elmehojvej protected by Danish law since 1965, undated but the best oldest-tree candidate on the page. Cost: 187k verify (an earlier session) + 62k write (this session) for 7 trees, ~35.6k/tree, over the 15k target because it's a small city (7 trees) carrying a research pass's fixed cost.
+
+Along the way, closed a hard-rule-9 conflict the write pass flagged: Copenhagen's "Common Hornbeam" and Aarhus's new "Hornbeam" are now one canonical name (the shorter, neutral form). Deleted two stale `melbourne-*-verified.json` research files left over from this morning's Melbourne merge (already published, `passcheck --pending` flagged them as stale).
+
+**Closed the one page gap `pagegaps.py` found:** a Sessile Oak species page (4 trees: 3 on Pfaueninsel in Berlin/Potsdam, 1 in Groningen), written directly from those trees' own facts rather than a pass, 0 tokens.
+
+**Dispatched, still running at session end:** a verify pass on Brisbane's 558-tree significant/landscape-trees register (rank 15, high-income tourist city per this morning's rescoring), claimed and pushed. Will report and merge next session if it doesn't finish first.
+
+Both `sitemap.xml`'s single-lastmod QA warning is a known shallow-clone artifact of this sandbox (`git rev-list --count HEAD` returns 3), not a content problem; not something to fix here.
+
 ## 2026-08-15 (session) - Melbourne opens Australia, the focus narrows to high-income destinations, and Hobart's calendar was six months wrong
 
 **Melbourne is live with 8 trees**, the first Australian mainland city. One strong walk of six through Fitzroy North, Clifton Hill and Carlton North (Edinburgh Gardens, Darling Gardens, Curtain Square), plus two trees in Yarra Bend Park that are honestly a separate outing six or seven kilometres away, and the page says so rather than implying one route. Cost 9.8k tokens per published tree, under the 15k target, because the register did the finding.
