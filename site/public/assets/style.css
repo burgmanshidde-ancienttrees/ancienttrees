@@ -14,6 +14,25 @@ html { scroll-behavior: smooth; }
 body { background: var(--cream); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
 a { color: var(--moss); }
 
+/* Focus rings, one rule for everything clickable. Form inputs already used
+   moss with a 1px offset; buttons and links never did, so every button on the
+   site fell back to the browser's default blue ring, drawn hard against the
+   element's own border. On a pill like the save heart that reads as a doubled
+   edge in a colour the palette does not contain (Hidde, 2026-08-15: "the
+   outlining spacing of this saved button feels awkward"). 2px of offset gives
+   the ring air so the pill keeps its shape, and browsers follow border-radius
+   for outlines, so a round button gets a round ring. :focus-visible rather
+   than :focus, so a mouse click never draws it and only keyboard navigation
+   does, which is the convention every consumer product uses. */
+button:focus-visible, a:focus-visible, summary:focus-visible,
+[role="button"]:focus-visible {
+  outline: 2px solid var(--moss); outline-offset: 2px;
+}
+/* The tree page's dark capsule needs the inverse: moss on near-black is
+   invisible, so the ring goes light there. */
+.tree-bar:not(.walk-bar) button:focus-visible,
+.tree-bar:not(.walk-bar) a:focus-visible { outline-color: #EDF3E3; }
+
 header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: var(--header-h); display: flex; align-items: center; justify-content: space-between; padding: 0 1.5rem; background: rgba(247,244,238,0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--cream-dark); }
 .bar-logo { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--sans); font-weight: 800; font-size: 1.02rem; letter-spacing: 0.07em; text-decoration: none; color: var(--ink); }
 .bar-links a { font-size: 13px; color: var(--ink-mid); text-decoration: none; margin-left: 1.25rem; }
