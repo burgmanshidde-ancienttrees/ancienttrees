@@ -56,6 +56,24 @@
       "kind": "verify",
       "by": "session",
       "claimed_at": "2026-08-15T08:07:53+00:00"
+    },
+    {
+      "target": "brno",
+      "kind": "verify",
+      "by": "session",
+      "claimed_at": "2026-08-15T08:17:33+00:00"
+    },
+    {
+      "target": "wroclaw",
+      "kind": "verify",
+      "by": "session",
+      "claimed_at": "2026-08-15T08:17:33+00:00"
+    },
+    {
+      "target": "poznan",
+      "kind": "verify",
+      "by": "session",
+      "claimed_at": "2026-08-15T08:17:33+00:00"
     }
   ]
 }
