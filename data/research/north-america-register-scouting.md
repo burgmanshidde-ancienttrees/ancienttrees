@@ -296,3 +296,30 @@ four-tree floor for Quebec City, one of the pass's named targets.
 Imported to `data/registers/quebec-city-arbres-remarquables.json` (all 685
 features kept, TYPE_PROP preserved so a future pass filters correctly rather
 than re-deriving the split).
+
+---
+
+## Summary for the merge into OPEN_DATA_SURVEY.md
+
+| Target | Verdict | Trees | Coordinates | Cities unlocked |
+|---|---|---|---|---|
+| American Forests National Champion Trees | BLOCKED, no licence (all-rights-reserved footer, no terms page) | n/a (PDF, county/state only) | No | none; verification-only lead source |
+| Massachusetts DCR Legacy/Champion Trees | USABLE (public record), imported | 139 champion + 476 legacy | No, address/landmark text only | Boston (2 in-city, 83 Greater Boston, ~25 clustered at Mount Auburn Cemetery) |
+| Texas Big Tree Registry | BLOCKED, explicit non-commercial licence | 239 live in ArcGIS layer | Yes, per-tree WGS84 | Austin (8 in Travis Co.); best-shaped data of the pass, worth a permission ask |
+| Live Oak Society (Louisiana Garden Club Federation) | BLOCKED, written permission required ("for any purpose whatsoever") | thousands (265-page PDF sampled) | No, addresses only | New Orleans (139 mentions), Charleston (34), Savannah (5) in one sampled file; worth a permission ask |
+| BC Big Tree Registry | UNRESOLVED, UBC bot-defense captcha blocks every plain fetch | ~600 (unverified) | Unknown | Vancouver, if unblocked; needs a browser session, not disqualified |
+| Ontario Heritage Tree Program (Forests Canada / OUFC) | DEAD END, no dataset exists | n/a | n/a | none; nomination-and-plaque program only |
+| Quebec City arbres potentiellement remarquables | USABLE, CC BY 4.0, imported | 685 (76 flagged public) | Yes, per-tree WGS84, best precision of the pass | Quebec City (76 public-flagged candidates) |
+
+**Not reached this pass** (target 5, time-boxed out): Austin's Heritage Tree
+ordinance list and Charleston County's Angel Oak / grand tree protections,
+both flagged as likely PDF-only. Also not reached: South Carolina, Georgia,
+Washington and Pennsylvania state champion-tree registers (the brief's
+priority list after Massachusetts and Texas), and independent verification
+of whether a real province-wide Quebec "arbres remarquables" programme
+exists beyond Quebec City's own municipal one.
+
+**Files written:** `data/registers/massachusetts-dcr-legacy-trees.json`,
+`data/registers/quebec-city-arbres-remarquables.json`. One fetch-blocklist
+entry added (`bigtrees.forestry.ubc.ca`). No host hung (the one HTTP:000 on
+`texasforestinfo.tamu.edu` resolved clean on immediate retry, not logged).
