@@ -9,6 +9,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-15 - Zaragoza's prison laurel: the strongest history in the register, and it is dead
+
+Checked as a candidate to close Zaragoza's gap (a READY-flagged lead per `leads.py`, which does not read the `why` field). The Bay Laurel of the old Carcel de Torrero grew inside the prison compound, between the infirmary, a module and the north wall, visible above the walls from the street; prisoners tended it and it became, by more than one account, a symbol of the world outside for people who could not leave. It is the strongest single story the Zaragoza register holds, ahead of anything currently published.
+
+It died. The prison was demolished afterward and the plot redeveloped; the site is now a small square the neighbourhood renamed Plaza del Laurel in the tree's memory, currently in poor repair (a 2020s rat-infestation complaint is the most recent thing written about the square). Blocked in `data/leads/zaragoza.json` per the dead-tree rule, which does not bend for a good story. Recorded here because it is worth knowing rather than re-finding: a future pass on Zaragoza should not spend time on this one again.
+
+Also touched, not resolved: the Field Elms of Camino de Enmedio, La Cartuja, where a 2005 source flagged one of two registered elms as endangered by nearby concreting. A current hiking-trail description still lists an elm and a mulberry along that exact lane, which is real corroboration that something survives, but not which of the two register entries it is. Left as a lead rather than guessed at.
+
 ## 2026-08-14 - Two feedback submissions on Baarn's brn_005: already fixed, both look like test rows
 
 Supabase `submissions` held two new `kind: feedback` rows (ids 2 and 3, both created 06:52-06:53 UTC today), both reporting brn_005 (The American Oak of the Pekingtuin, Baarn) as "wrong location". Row 3 is explicitly suffixed "[TEST ROW, session 2026-08-14, safe to ignore]"; row 2 is byte-identical content submitted 23 seconds earlier without the marker, almost certainly the same in-session test of the new vote/report feature (LOG.md's same-day entry: "the full interaction chain was tested live including a real Supabase insert (201, marked TEST ROW)"). Checked the live data anyway rather than assume: brn_005's location was already fixed on 2026-08-13 (see that date's entry below), pin moved to the correct oak at 52.209694,5.292861, on-site checked, story now explicitly distinguishes it from the ringed tree 60m away. Nothing to fix. Marked both ids processed in `data/submissions-processed.json` alongside the original id 1.

@@ -1539,6 +1539,15 @@
         "note": "session pass, tokens not separately metered. Closed Bucaco's last tree (9/10 to 10/10) straight from an already-verified READY lead (register measurements, no new research needed): the Redwood of the Fonte de Santa Teresa, previously held back only on a 'three redwoods reads as a list' judgement call that CLAUDE.md's Step 2 explicitly rules out as a reason to withhold a tree. Picked over a second, alameda-flagged redwood candidate 10m from an already-published tree (King Regnans) whose collectible-point status is still genuinely unresolved.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "zaragoza",
+        "kind": "verify",
+        "tokens": 0,
+        "trees": 0,
+        "note": "session pass, tokens not separately metered; nothing shipped. Checked the 4 leads.py-flagged READY leads against their own why field (known unreliable flag). The strongest, a bay laurel with the best story in the register, confirmed dead (site now Plaza del Laurel, named for it) and moved to blocked. An elm pair's survival stayed unresolved (general trail corroboration, not specific enough to identify which of two registered elms an earlier source flagged as threatened). Two more leads (a lime hit by roadworks, a plane on a road/rail margin) left untouched, genuinely weaker candidates. Recorded in CURATION.md so a future pass does not re-research the laurel.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
