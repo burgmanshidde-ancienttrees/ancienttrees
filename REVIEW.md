@@ -13,6 +13,61 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-08-15
+
+Reviewed since the last review commit (`609804b`, 2026-08-14 09:49 UTC): 80
+commits, roughly a day of night-run and session work. New cities: Ferrara
+(5 trees), Parma (5), Palma de Mallorca (5), Alicante (9). Cities reaching
+their target: Padua (10), Trieste (10), Bucaco (10), Trento (9), Guimaraes,
+Perugia (10), Cagliari (7), Braga (4). Product/UX: the search field's
+zero-query state (recent/near-you/start-here), the desktop walk control
+redocked as a white map-control card, an es-city sign-in modal parity fix,
+Worth-the-Visit and accounts-related follow-through, and the corpus catch-up
+for accounts opening (`172a1ca`) that closes both WARNs from the 2026-08-14
+review. Ran `python3 scripts/qa.py` (1789 pages, clean) and
+`python3 scripts/superlatives.py` (336 claims, no collisions) against the
+built site.
+
+**Nothing found at BLOCKER or WARN.** Specifically checked and clean:
+
+- The two 2026-08-14 WARNs are properly closed, not just silenced:
+  `account.astro` now correctly distinguishes saved trees (sync via account)
+  from the collection/passport (still device-only, app to come), matching
+  `/saved`'s copy; CLAUDE.md hard rule 1 and DECISIONS.md carry the accounts
+  ruling; and `check_auth_corpus_agreement()` in `scripts/qa.py` now fails
+  the build if `AUTH_ENABLED` and the rule text disagree again, which is the
+  build-check ratchet this project's own learning loop calls for on a third
+  recurrence.
+- All four new cities: every tree carries `location_precision: confirmed`,
+  2+ sources, and an honest, specific `access` line (no gates glossed over,
+  paid entry stated, opening hours given). Stories are 200-225 words, no em
+  dashes, no banned words, no invented ages or sizes; register figures are
+  cited as the register's own measurement where a source disagrees (e.g.
+  Ferrara's plane: "the register measures it; nobody has dated it.").
+  Multi-trunk/ensemble entries (Braga's Three Oaks, Trees of the Embrace)
+  are registered as single conjunto entries in the source register, which is
+  the collectible-point test passing rather than being waived.
+- Zaragoza's prison laurel (`e47bea6`) and Bergamo's hospital garden
+  (`8aef04e`) are the hard rules working as designed: the best story in
+  Zaragoza's register got killed on the dead-tree rule rather than shipped
+  for its narrative, and Bergamo's blocked lead was re-evaluated against the
+  *current* (2026-08-13-loosened) hard rule 10 standard rather than left
+  citing the superseded "when in doubt, leave it out" text.
+- The es-city sign-in modal gap (`b72bca9`, misleadingly titled "no
+  `<main>`") was a real parity bug (the dialog markup was missing from the
+  Spanish city template) and is fixed and verified present on both language
+  variants in `site/dist`.
+
+**NOTE** — Cities' split-panel layout (`[city].astro`, both `/en` and `/es`)
+renders no `<main>` landmark at all; `Base.astro`'s shared shell only wraps
+`<slot />` with no semantic container, by explicit design ("the split-panel
+map layout has no room for the standard footer"). This predates the
+reviewed window and both language variants are consistent with each other,
+so it is not a regression, just worth a line: an accessibility pass would
+find this if one is ever scheduled.
+
+---
+
 ## 2026-08-14
 
 Reviewed since the last review commit (`9e8f6f8`, 2026-08-13 09:53 UTC): a
