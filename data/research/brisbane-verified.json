@@ -1,0 +1,117 @@
+[
+  {
+    "id": "bne_002",
+    "name": "The Old Government House Fig",
+    "species": "Moreton Bay Fig (Ficus macrophylla)",
+    "age_estimate": "roughly 150 years",
+    "age_min": 140,
+    "age_max": 160,
+    "location": {
+      "address": "City Botanic Gardens, on the path leading to Old Government House, Alice Street, Brisbane City QLD 4000",
+      "latitude": -27.4769003,
+      "longitude": 153.029758,
+      "neighbourhood": "City Botanic Gardens"
+    },
+    "verified_sources": [
+      "https://trusttrees.org.au/tree/QLD/Brisbane/Brisbane_City_Botanic_Gardens_Alice_Street_4"
+    ],
+    "access": "Free, City Botanic Gardens is a public park open daily during daylight hours",
+    "transport": "Short walk from Central Station (about 10 minutes) or the QUT Gardens Point ferry terminal (about 5 minutes)",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Single dedicated source found (National Trust of Australia's Significant Tree Database, trusttrees.org.au), which alone does not clear the two-independent-source bar; a second, independent write-up describing this specific specimen (rather than City Botanic Gardens fig plantings generally) was not found this pass. Planted between 1864 and 1884, during Walter Hill's curatorship of the gardens (Hill was first curator, appointed 1855). Height 23m, trunk diameter 2m per National Trust record. Notable for large buttress roots. Stands on the path leading to Old Government House (Queensland's oldest public building, now part of QUT), forming a visual landmark between the two. Condition recorded as good, publicly accessible with no restriction. Coordinate is the National Trust database's own point for this individual tree, taken as tree-level (not park-level), hence confirmed."
+  },
+  {
+    "id": "bne_003",
+    "name": "The Macadamia Nut Tree",
+    "species": "Macadamia (Macadamia integrifolia)",
+    "age_estimate": "roughly 165 years",
+    "age_min": 160,
+    "age_max": 170,
+    "location": {
+      "address": "City Botanic Gardens, at the southern end of the rainforest section, Alice Street, Brisbane City QLD 4000",
+      "latitude": -27.4779525,
+      "longitude": 153.0310128,
+      "neighbourhood": "City Botanic Gardens"
+    },
+    "verified_sources": [
+      "https://trusttrees.org.au/tree/QLD/Brisbane/Brisbane_City_Botanic_Gardens_Alice_Street_21",
+      "https://www.slq.qld.gov.au/blog/brisbane-city-botanic-gardens-and-new-national-trust-significant-tree-databaseapp"
+    ],
+    "access": "Free, City Botanic Gardens is a public park open daily during daylight hours",
+    "transport": "Short walk from Central Station (about 10 minutes) or the QUT Gardens Point ferry terminal (about 5 minutes)",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Two independent sources agree: National Trust of Australia's Significant Tree Database and a State Library of Queensland blog post both identify this as the first cultivated Macadamia Nut Tree, planted from trials that began in 1858 by Walter Hill, the gardens' first curator, using seed brought from Gympie. Widely described elsewhere (Atlas Obscura, Australian Food Timeline) as the world's oldest known cultivated macadamia tree and the origin point of Australia's macadamia export industry; those secondary popular sources were not treated as the two required sources but corroborate the same facts. Height 17m, trunk diameter 1m per National Trust record. Good condition, unrestricted public access. Coordinate is the National Trust database's tree-level point."
+  },
+  {
+    "id": "bne_004",
+    "name": "The Banyan Tree of City Botanic Gardens",
+    "species": "Indian Banyan (Ficus benghalensis)",
+    "age_estimate": "roughly 150 years",
+    "age_min": 140,
+    "age_max": 160,
+    "location": {
+      "address": "City Botanic Gardens, Alice Street, Brisbane City QLD 4000",
+      "latitude": -27.4762649,
+      "longitude": 153.029176,
+      "neighbourhood": "City Botanic Gardens"
+    },
+    "verified_sources": [
+      "https://trusttrees.org.au/tree/QLD/Brisbane/Brisbane_City_Botanic_Gardens_Alice_Street_",
+      "https://www.slq.qld.gov.au/blog/brisbane-city-botanic-gardens-and-new-national-trust-significant-tree-databaseapp"
+    ],
+    "access": "Free, City Botanic Gardens is a public park open daily during daylight hours",
+    "transport": "Short walk from Central Station (about 10 minutes) or the QUT Gardens Point ferry terminal (about 5 minutes)",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Two independent sources agree: National Trust of Australia's Significant Tree Database and a State Library of Queensland blog post both describe this Indian Banyan, planted during Walter Hill's curatorship (planted 1870s per National Trust). National Trust record calls it 'believed to be the best known example of its species in Australia' with the largest and most impressive aerial-root structure in the gardens; height 29m, crown diameter 20m, trunk circumference (including fused prop roots) 49m. SLQ post independently corroborates the 49m circumference figure and the prop-root structure. Good condition, unrestricted public access. Coordinate is the National Trust database's tree-level point."
+  },
+  {
+    "id": "bne_005",
+    "name": "Prince Albert's Cook Pine",
+    "species": "Cook Pine (Araucaria columnaris)",
+    "age_estimate": "roughly 158 years",
+    "age_min": 150,
+    "age_max": 160,
+    "location": {
+      "address": "City Botanic Gardens, near the George Street entrance close to Queensland Parliament House, Brisbane City QLD 4000",
+      "latitude": -27.4754546,
+      "longitude": 153.0282748,
+      "neighbourhood": "City Botanic Gardens"
+    },
+    "verified_sources": [
+      "https://trusttrees.org.au/tree/QLD/Brisbane/Brisbane_City_Botanic_Gardens_Alice_Street_22",
+      "https://www.slq.qld.gov.au/blog/brisbane-city-botanic-gardens-and-new-national-trust-significant-tree-databaseapp"
+    ],
+    "access": "Free, City Botanic Gardens is a public park open daily during daylight hours",
+    "transport": "Short walk from Central Station (about 8 minutes) or George Street bus stops nearby",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Two independent sources agree (National Trust database and a State Library of Queensland blog post): in 1868, Prince Albert, Duke of Edinburgh (later would-be heir, not actually a king; SLQ blog mistakenly calls him 'later King Edward VII', which is wrong, Albert Edward Duke of Edinburgh was Queen Victoria's second son and never took the throne, that title belongs to his elder brother; National Trust correctly identifies him as 'Queen Victoria's son... the Duke of Edinburgh' without the throne claim, so the SLQ's royal-succession detail is not repeated as fact) planted two of a proposed avenue of six Cook Pines in front of the old Parliament House site. Only this one of the original two, and the whole avenue was never completed, so despite the species name 'avenue' in some general descriptions, only a single tree survives today, making it a genuine individual specimen rather than a blocked avenue. At approximately 45m it is the tallest tree in the gardens; trunk diameter 0.9m. Lower branches have been removed to discourage climbing. Good condition, unrestricted public access. Coordinate is the National Trust database's tree-level point."
+  }
+]

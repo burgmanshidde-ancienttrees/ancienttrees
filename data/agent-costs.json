@@ -1768,6 +1768,15 @@
         "tokens": 0,
         "trees": 0,
         "note": "session, not agent-dispatched: species page gap closed (pagegaps.py), 100-150 word intro written directly from the 4 trees' own facts (3 on Pfaueninsel, 1 in Groningen)"
+      },
+      {
+        "target": "aarhus",
+        "kind": "write",
+        "tokens": 62000,
+        "trees": 7,
+        "note": "7 stories, 205-233 words each, from the register-backed verify file; 2 best_time set (aar_001 autumn colour, aar_005 bare silhouette), 5 deliberately left empty; ~8.9k per tree",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
