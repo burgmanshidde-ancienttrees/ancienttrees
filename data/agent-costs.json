@@ -1681,6 +1681,13 @@
         "tokens": 86070,
         "trees": 0,
         "note": "brief's 7 candidates were all already-known Villa Saporiti/Istituto Foscolo/Villa Erba/Museo Giovio entries reached via different register sheet ids; fixed the dedupe gap (no coords stored on blocked/held entries) rather than re-researching, 0 new trees"
+      },
+      {
+        "target": "bergamo",
+        "kind": "verify",
+        "tokens": 90353,
+        "trees": 0,
+        "note": "single-candidate recheck; found continued Oct-2025 Lombardy register listing as sole new evidence, no post-2021 sighting; delivered flagged, not blocked"
       }
     ]
   }

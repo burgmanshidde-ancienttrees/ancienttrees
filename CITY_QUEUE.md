@@ -220,8 +220,8 @@ so qa.py fails the deploy when the table and the json disagree.
 | 92 | Stuttgart | 2.82 | 112,789 | - | - | - | - | 10 | predicted (thin competition) |
 | 93 | New York | 2.81 | 1,124,326 | 20 | 5 | 2 | - | 10 | published, never ranked |
 | 94 | Santiago | 2.79 | 111,647 | - | - | - | - | 10 | predicted (thin competition) |
-| 95 | Trento | 1.41 | 56,455 | 10 | 1 | 1 | 20 | 10 | predicted (thin competition) |
-| 96 | Marrakech | 2.78 | 111,098 | - | - | - | - | 10 | predicted (thin competition) |
+| 95 | Marrakech | 2.78 | 111,098 | - | - | - | - | 10 | predicted (thin competition) |
+| 96 | Trento | 1.41 | 56,455 | 10 | 1 | 1 | 20 | 10 | predicted (thin competition) |
 | 97 | Kathmandu | 2.72 | 108,896 | - | - | - | - | 10 | predicted (thin competition) |
 | 98 | Riga | 2.72 | 108,918 | - | - | - | - | 10 | predicted (thin competition) |
 | 99 | Salzburg | 2.68 | 107,243 | - | - | - | - | 10 | predicted (thin competition) |
@@ -232,7 +232,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 104 | Hong Kong | 1.72 | 689,212 | 10 | 2 | 1 | 505 | 10 | published, never ranked |
 | 105 | Matera | 1.68 | 67,033 | - | - | - | - | 10 | predicted (thin competition) |
 | 106 | Poznan | 1.64 | 65,666 | 6 | - | 1 | 396 | 10 | predicted (thin competition) |
-| 107 | Bergamo | 1.32 | 52,933 | 7 | 1 | 1 | 17 | 10 | predicted (thin competition) |
+| 107 | Bergamo | 1.32 | 52,933 | 8 | 1 | 1 | 17 | 10 | predicted (thin competition) |
 | 108 | Brno | 1.59 | 63,714 | 6 | - | 1 | 30 | 10 | predicted (thin competition) |
 | 109 | Busan | 2.37 | 94,737 | - | - | - | - | 10 | predicted (thin competition) |
 | 110 | Catania | 1.46 | 58,252 | 4 | - | 1 | 5 | 10 | predicted (thin competition) |

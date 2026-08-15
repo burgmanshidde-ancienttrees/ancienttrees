@@ -2,11 +2,11 @@
   "city": "Bergamo",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Bergamo's monumental trees do not sit in one place, which is why this page holds two outings rather than one. In the lower town a walk of about a kilometre links a pair of American swamp cypresses, an Atlas cedar in a park the city itself calls its least known, a strawberry tree grown to a height its species rarely reaches, and three white mulberries left over from the silk trade. The rest stand out in Seriate and Pedrengo, a short trip and worth it.",
-  "meta_description": "Seven monumental trees in and around Bergamo: swamp cypresses in a walled garden, silk mulberries, and a cedar with its own lightning conductor.",
-  "question_meta": "Bergamo's oldest recorded trees are the two bald cypresses of Parco Marenzi, standing over two centuries. Where they are, plus six more.",
+  "intro": "Bergamo's monumental trees do not sit in one place, which is why this page holds several outings rather than one. In the lower town a walk of about a kilometre links a pair of American swamp cypresses, an Atlas cedar in a park the city itself calls its least known, a strawberry tree grown to a height its species rarely reaches, and three white mulberries left over from the silk trade. The rest stand out in Seriate, Pedrengo and Torre Boldone, each a short trip and worth it.",
+  "meta_description": "Eight monumental trees in and around Bergamo: swamp cypresses in a walled garden, silk mulberries, and a cedar with its own lightning conductor.",
+  "question_meta": "Bergamo's oldest recorded trees are the two bald cypresses of Parco Marenzi, standing over two centuries. Where they are, plus seven more.",
   "question_answer": "The oldest trees Bergamo records are the two bald cypresses in Parco Marenzi, which local guides put at over two hundred years and which the species could in theory outlast many times over, since bald cypress reaches a thousand. They stand by the small lake in a walled garden in the lower town, free to visit, and the park reopened in April 2026 after its pond was restored. Italy's national register carries no age field, so every date on this page comes from local sources rather than from the register itself.",
-  "question_context": "Italy's national register of monumental trees is precise about everything except time. It records girth to the centimetre, height to the half metre and a surveyed coordinate for every entry, and it carries no age column at all, which is why several trees on this page have a trunk measurement and no birthday. Lombardy's regional list fills part of the gap, and Bergamo's own green-space writers and local press fill in more, so where a date appears here it comes from those sources rather than from a core sample. Two of the seven stand outside Bergamo itself, in Seriate and Pedrengo, three to five kilometres out and named as such rather than quietly folded into the city. Three entries describe more than one trunk: the register itself groups the Marenzi cypresses and the Paul Harris mulberries as homogeneous stands rather than individuals, and the Piccinelli pagoda trees are a grove. Where that is the case the pin marks the garden and the page says so, because a single coordinate cannot honestly mark three trees.",
+  "question_context": "Italy's national register of monumental trees is precise about everything except time. It records girth to the centimetre, height to the half metre and a surveyed coordinate for every entry, and it carries no age column at all, which is why several trees on this page have a trunk measurement and no birthday. Lombardy's regional list fills part of the gap, and Bergamo's own green-space writers and local press fill in more, so where a date appears here it comes from those sources rather than from a core sample. Three of the eight stand outside Bergamo itself, in Seriate, Pedrengo and Torre Boldone, three to five kilometres out and named as such rather than quietly folded into the city. Three entries describe more than one trunk: the register groups the Marenzi cypresses and the Paul Harris mulberries as homogeneous stands rather than individuals, and the Piccinelli pagoda trees are a grove; the pin marks the garden in those cases, not a single trunk. The Torre Boldone horse chestnut carries its own honesty note: unsighted in print since storm damage in 2021, it ships here on a continued October 2025 register listing rather than a recent photograph.",
   "faq": [
     {
       "q": "What is the oldest tree in Bergamo?",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Bergamo's monumental trees free to visit?",
-      "a": "Yes, every tree on this page stands in a public park or garden with no entry fee. Three of them are outside Bergamo itself, in Seriate and Pedrengo, a few kilometres out."
+      "a": "Yes, every tree on this page stands in a public park, garden or street with no entry fee. Four of them are outside Bergamo itself, in Seriate, Pedrengo and Torre Boldone, a few kilometres out."
     },
     {
       "q": "Which of these can I see in one walk?",
@@ -239,6 +239,37 @@
       "transport": "Seriate, about 4km / roughly 10 to 15 minutes by bus or car from central Bergamo; day-trip distance.",
       "location_precision": "approximate",
       "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bgm_008",
+      "name": "The Horse Chestnut of Viale delle Rimembranze",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Viale delle Rimembranze, Torre Boldone (BG)",
+        "latitude": 45.716928,
+        "longitude": 9.705642,
+        "neighbourhood": "Torre Boldone, a comune bordering Bergamo"
+      },
+      "story": "Torre Boldone had two comune-protected giants until 2017, when the Cedar of Lebanon in Parco dei Sordomuti was illegally felled. This horse chestnut, standing on Viale delle Rimembranze since long before either tree was designated, became the village's last one and has had a hard decade of it since.\n\nAn agronomist checked it in 2017 and found nothing worse than ordinary decline. The comune's own crew then pollarded it without authorisation the following January, cutting its height by roughly a third, a job forestry officials confirmed had no permit and that a local environmental group formally protested. A large limb came down on its own in June 2021.\n\nNobody has published a sighting since. What keeps it on this list is a colder kind of evidence: Lombardy's regional register of monumental trees, most recently updated in October 2025, still lists it standing, at a girth of 391 centimetres unchanged from before the damage. A comune has to report a felling for a tree to drop off that register, and nobody has.\n\nSo this entry ships on an official record rather than a fresh photograph. If you walk Viale delle Rimembranze and the chestnut is there, or isn't, tell us. Torre Boldone has already lost one monumental tree to a saw it was not supposed to hold; this is how you find out whether it kept the other.",
+      "verified_sources": [
+        "https://www.lombardianotizie.online/wp-content/uploads/2025/11/Alberi-Monumentali-Lombardia-2025-IX-Aggiornamento.pdf (Regione Lombardia's October 2025 monumental-tree register update, 476 trees, includes this entry unchanged at 391cm girth/27m height)",
+        "https://www.araberara.it/torre-boldone-intervento-ronzoni-e-il-ramo-caduto-dellultimo-albero-monumentale-di-torre/ (4 June 2021: reports a large limb failure on 'the last monumental tree of Torre Boldone', after the earlier illegal felling of the comune's Cedar of Lebanon)",
+        "https://www.bergamonews.it/2018/02/16/torre-boldone-la-battaglia-degli-alberi-potatura-selvaggia-sullippocastano/276138/ (16 February 2018: unauthorised heavy pollarding of the chestnut, no permit on file, protested by Gruppo d'Intervento Giuridico)"
+      ],
+      "access": "Free, standing along a public street (Viale delle Rimembranze) in the village centre of Torre Boldone.",
+      "transport": "TEB tramline T1 (Bergamo-Albino), Torre Boldone stop, then a short walk along Viale delle Rimembranze.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Register sheet 01/L251/BG/03, girth 391cm, height 27.0m; register coordinates convert exactly to 45.716928, 9.705642, tree-level precision. No dated post-2021 photograph or ground sighting found; alive-and-standing is corroborated by continued listing in the register's October 2025 update rather than by direct recent observation. The story states this plainly and invites a reader to confirm.",
       "photo": {
         "url": null,
         "license": null,
