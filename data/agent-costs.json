@@ -1584,6 +1584,15 @@
         "note": "session pass, tokens not separately metered. New city from the prepare.py-staged register shelf (7 candidates, Italian MASAF register). Shipped 5 individual trees across Palazzo dei Diamanti, Parco Massari and the Biblioteca Ariostea, all within a UNESCO-listed Renaissance city; MuseoFerrara's own dedicated tree pages supplied real second-source detail (ages, history) for most entries rather than register-only sourcing. Left 2 candidates as leads, both 'Insieme omogeneo' group sheets (cedars, yews).",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "pagegaps",
+        "kind": "write",
+        "tokens": 0,
+        "trees": 0,
+        "note": "session pass, tokens not separately metered; 0 trees, 3 pages. python3 scripts/pagegaps.py found 2 species gaps (Norfolk Island Hibiscus, Mastic Tree, 3 trees each, both closed today by Palma's new trees) and 1 park gap (Padua's Orto Botanico, 5 trees, all pre-existing plus today's pad_010). Wrote all three intros. Found and fixed a real bug while verifying: pagegaps.py matched parks by address text only, while the actual Astro park page (site/src/lib/parks.ts) checks neighbourhood first; the two disagreed on Padua's park name and pagegaps.py kept reporting a gap the site had already closed. Fixed pagegaps.py to mirror parkKey() exactly.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
