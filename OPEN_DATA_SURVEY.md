@@ -1560,3 +1560,58 @@ pass away from usable.
 No host hung this pass; nothing added to `data/fetch-blocklist.json`.
 Token usage for this pass: approximately 60k tokens (fetch-heavy scouting
 across five cities, one full 460-row import, no photo hunting, no prose).
+
+## Czech Republic, imported 2026-08-15 (AOPK CR Pamatne stromy)
+
+The verdict recorded on line 230 (2026-07-30 scan) is now imported rather than
+just scouted. Licence re-verified live: the MapServer's `PamatneStromy/PamatneStromy`
+service (folder `PamatneStromy`, layer 1 "Pamatne stromy - jedinci") serves
+WGS84 coordinates natively via `outSR=4326`, no reprojection needed.
+
+**Licence, quoted verbatim (re-fetched 2026-08-15, matches the 2026-07-30 record):**
+"Tato datova sada poskytovana Agenturou ochrany prirody a krajiny Ceske
+republiky podleha licenci Creative Commons Uvedte puvod 4.0 Mezinarodni"
+(dataset metadata, https://geocatalogo.icnf... no, correction: AOPK CR's own
+metadata page for this layer). The MapServer service itself additionally
+carries `copyrightText: "(c) AOPK CR"`. CC BY 4.0, attribution AOPK CR.
+
+**What was imported.** The layer's own typology splits points into TYP=1
+(jednotlivy strom, individual tree, 4,301 records), TYP=2 (stromoradi, avenue,
+9,211 records) and TYP=3 (skupina stromu, group, 3,283 records) for a layer
+total of 16,795, matching the count already on file. Only TYP=1 was imported:
+TYP=2 and TYP=3 store one POINT PER MEMBER TREE within a named avenue or
+group (one avenue, "Haugwitzova alej", holds 171 separate rows sharing one
+KOD), so importing them as standalone entries would misrepresent one
+designated ensemble as dozens of unrelated collectible trees. Written to
+`data/registers/czech-aopk-pamatne-stromy.json`, 4,301 rows.
+
+**Sanity checks run before trusting anything, per the standing register-pitfalls rule:**
+- Girth (`OBVOD_V`, stored as `girth_cm`): already correct centimetres, range
+  1cm to 1,650cm (16.5m), mean ~390cm, no metres-as-centimetres trap this
+  time. 202 rows carry `OBVOD_V=0` in the source (unmeasured, not a real
+  zero-girth tree) and are stored as `girth_cm: null`, not 0.
+- No age field exists anywhere in the register (consistent with the standing
+  note that no Czech source carries one).
+- No dedicated vitality field, but the free-text `POZNAMKA` note field
+  sometimes carries an explicit Czech death/deregistration signal ("zanikly
+  strom" = vanished tree, "ochrana zrusena" = protection cancelled, plus
+  named causes like "spadla pri vichrici" = fell in a windstorm, "vyhorelo
+  torzo" = the trunk burned). 22 of the 4,301 rows carry such a signal and
+  are marked `publishable: false` with the raw sentence kept in
+  `death_signal`. This is the same class of hazard the Lazio removed-trees
+  sheet caught for Rome: a register quietly recording its own dead trees in
+  a field nothing else reads.
+- Coordinates sanity-checked against Czech national bounds (48.55-51.06N,
+  12.09-18.85E): clean, no outliers.
+- One duplicate KOD among TYP=1 (103344, "Dub u Bucku", two rows, PORADI 1
+  and 2): almost certainly two physically separate trees under one
+  designation, a twin pair per the standing twins rule, left as two entries
+  for a city pass to fold or keep.
+
+**Coverage confirmed by distance check:** 27 register trees within 5km of
+Prague centre (95 within 15km), 29 within 5km of Brno centre (69 within
+15km), 7 within 5km of Cesky Krumlov centre (53 within 15km). Unlocks Brno
+and Cesky Krumlov as new-city candidates and deepens Prague, currently one of
+the two best-converting pages on the site.
+
+No host hung this leg. Token estimate for the Czech leg: approximately 15k.
