@@ -146,3 +146,47 @@ is the superset but Champion marks the clean state-record subset).
 
 
 
+
+### Texas: BLOCKED on licence (explicit non-commercial), data quality is excellent, worth a permission ask
+
+**The Texas Big Tree Registry has genuinely the best-shaped data found this
+whole pass**, better than Massachusetts: a live ArcGIS Feature Layer, not a
+static file, found by reading the registry web app's own Angular config
+(`tfsweb.tamu.edu`'s search app ships its data source URL in plain JS):
+
+`https://tfsgis02.tfs.tamu.edu/arcgis/rest/services/BigTreeRegistry/BigTreeRegistry/MapServer/1`
+
+239 records live now (`?where=1=1&returnCountOnly=true`), each carrying:
+species (Latin + common), circumference/height/spread/TreeIndex (the scoring
+formula), **StateChampion/NationalChampion/ChampionType flags**, county,
+organization/site name, **LatDec/LongDec (WGS84 decimal degrees, per-tree,
+already the right coordinate system)**, **PublicOrPrivate flag (202 of 239
+= 1/public, 35 = 0/private)**, and **Condition (1-5, a genuine per-tree
+vitality-adjacent field, codes not yet decoded from this pass, worth
+resolving before import)**. Travis County (Austin) has **8 records** in the
+current 239.
+
+**Licence, read at the primary source, and it is a clean no.**
+`https://tfsweb.tamu.edu/accessibility-site-policies-and-public-notices/`,
+section "Fair use", quoted verbatim:
+
+> "Texas A&M Forest Service invites visitors to use its online content for
+> personal, educational, and other non-commercial purposes."
+
+And further down the same section: reuse is conditioned on citing the source
+and complying with "all terms or restrictions other than copyright." This is
+an explicit, direct non-commercial restriction, not an absence of a
+statement (unlike American Forests above) and not a two-tier public-record
+argument (unlike Massachusetts): the agency has spoken to exactly this
+question and the answer is non-commercial only. Per the standing bar, this
+disqualifies outright. **Do not import.**
+
+**Worth a permission ask, separate from the licence finding.** Texas A&M
+Forest Service is a state agency with an educational mission close to this
+project's own (Hidde-approval-gated per hard rule 4, same shape as the
+Woodland Trust and Kyoto asks already on file): the data is precise,
+per-tree, coordinate-bearing and already flags public/private and champion
+status, which would make Austin (and San Antonio, Houston, Dallas, Fort
+Worth, if ever wanted) nearly free to research once granted. Not drafted this
+pass since outreach emails are Hidde's to send and this is a scouting pass,
+but flagged here as the single best target if he wants to ask.
