@@ -4,7 +4,7 @@
   "data/registers",
   "data/leads"
  ],
- "count": 40367,
+ "count": 40368,
  "trees": [
   {
    "id": "ali_001",
@@ -2037,6 +2037,22 @@
    "has_photo": false,
    "has_story": true,
    "sources": 2
+  },
+  {
+   "id": "bgm_008",
+   "tier": "highlighted",
+   "name": "The Horse Chestnut of Viale delle Rimembranze",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "city": "Bergamo",
+   "country": "Italy",
+   "lat": 45.716928,
+   "lng": 9.705642,
+   "precision": "confirmed",
+   "age_min": null,
+   "age_max": null,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 3
   },
   {
    "id": "ber_001",
