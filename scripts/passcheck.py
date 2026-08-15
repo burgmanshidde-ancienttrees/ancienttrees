@@ -395,12 +395,21 @@ def load_inflight():
 
     Returns (doc, live_claims). A claim older than expire_hours is ignored, so a
     session that dies mid-pass cannot block a city forever: the worst case is
-    that the next run waits out the remainder of the window."""
+    that the next run waits out the remainder of the window.
+
+    A night run's claim expires sooner, and the number is not a preference: the
+    job is killed at 60 minutes by timeout-minutes in nightly.yml, so a claim by
+    night-run older than 90 minutes CANNOT belong to a pass that is still
+    working. Four hours was simply the session number applied to a holder that
+    cannot live that long. On 2026-08-15 a run claimed six cities for a write
+    pass, ended eleven minutes later having written nothing, and locked the top
+    of the queue until noon; under this rule it would have been free by 09:30."""
     try:
         doc = json.load(open(INFLIGHT))
     except Exception:
         return {"expire_hours": 4, "claims": []}, []
-    hours = doc.get("expire_hours", 4)
+    default_hours = doc.get("expire_hours", 4)
+    by_holder = doc.get("expire_hours_by_holder", {"night-run": 1.5})
     live = []
     for c in doc.get("claims", []):
         try:
@@ -410,6 +419,7 @@ def load_inflight():
         except Exception:
             continue
         age = (_now() - at).total_seconds() / 3600.0
+        hours = by_holder.get(c.get("by"), default_hours)
         if age < hours:
             c = dict(c, age_hours=round(age, 1))
             live.append(c)
