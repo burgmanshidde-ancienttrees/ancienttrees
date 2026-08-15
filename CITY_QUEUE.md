@@ -187,7 +187,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 59 | Buenos Aires | 3.60 | 333,331 | - | - | - | - | 10 | predicted (thin competition) |
 | 60 | Taipei | 3.58 | 143,193 | - | - | - | - | 10 | predicted (thin competition) |
 | 61 | Santiago de Compostela | 2.34 | 93,477 | - | - | - | - | 10 | predicted (thin competition) |
-| 62 | Palma de Mallorca | 2.10 | 84,075 | - | - | - | 8 | 10 | predicted (thin competition) |
+| 62 | Palma de Mallorca | 2.10 | 84,075 | 5 | - | 1 | 8 | 10 | predicted (thin competition) |
 | 63 | Adelaide | 3.48 | 139,166 | - | - | - | - | 10 | predicted (thin competition) |
 | 64 | Corfu | 3.48 | 139,334 | - | - | - | - | 10 | predicted (thin competition) |
 | 65 | Dublin | 2.00 | 240,850 | 17 | 4 | 2 | 12 | 20 | measured |
