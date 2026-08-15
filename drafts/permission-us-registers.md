@@ -1,4 +1,13 @@
-# FOR HIDDE: three permission asks that unlock the American cities
+# FOR HIDDE: four permission asks that unlock blocked registers
+
+**Sydney was added 2026-08-15** and is now the one I would send first. The
+2026-08-15 rescore put travel demand rather than Wikipedia fame at the head of
+the queue, which lifted Australia to the highest-value country on the list with
+no coverage; the scout that followed imported Melbourne, Brisbane and Ottawa
+freely, and hit exactly one wall. Sydney's register is the best-instrumented
+tree data found anywhere in two passes, and the only thing missing is a licence.
+Its draft is section 4, below the three American ones.
+
 
 Written 2026-08-15, after the North America scouting pass. Your own strategy
 call that morning: "there is huge potential in canadian and american semi big
@@ -114,6 +123,49 @@ which is why I am asking rather than assuming. The site is free with no ads;
 an app with a paid tier is planned, so I would rather be clear now.
 
 Would that be all right with you?
+
+Hidde
+ancienttrees.app
+
+---
+
+## 4. City of Sydney (Register of Significant Trees)
+
+Contact: City of Sydney open data team, via the contact form on
+cityofsydney.nsw.gov.au, or the Register of Significant Trees page itself.
+
+Subject: Licence for the Register of Significant Trees data
+
+Hi,
+
+I run ancienttrees.app, a free site that maps remarkable old trees city by
+city, with a story, an exact location and sources for each one. I am Dutch and
+I am working through the world's tree registers one country at a time.
+
+Your Register of Significant Trees is the best-organised tree data I have found
+anywhere, and I would like to use it to build a Sydney page: the significant
+individual trees, with their location and what makes them significant, credited
+to the City of Sydney with a link back to the register.
+
+The reason I am writing rather than just using it: your street-tree inventory
+carries a clear CC BY 4.0 badge, but the significant trees layer has no licence
+attached at all, so I have taken that as "not granted" rather than as an
+oversight I am free to assume my way past.
+
+I should also be straight about what we are. The site is free today and there
+are no ads, but I am building an app and there will be a paid tier eventually,
+so I do not want to claim non-commercial and then change it.
+
+Two things you may want to know about how we would use it. We would only
+publish trees your own data marks as publicly accessible or visible from the
+street, and we leave out anything on private land. And we would publish
+individual trees rather than the avenues and groups, because our pages send
+someone to stand in front of one tree.
+
+Would you be willing to licence it, CC BY or anything else you prefer?
+
+And whatever you decide: if there is a tree in Sydney you think visitors should
+see and most lists miss, I would love to hear about it.
 
 Hidde
 ancienttrees.app

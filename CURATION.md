@@ -9,6 +9,20 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-15 - Five cities published: Brno, Poznan, Wroclaw, Quebec City, Potsdam
+
+Merged in one session from verified files. All 26 trees flagged, all 26 photos missing, which is the normal state for a new register-backed city and is a photo-pass job, not a research gap.
+
+| city | trees | flagged | photos missing | note |
+|---|---:|---:|---:|---|
+| Brno | 6 | 4 | 6 | girth figures disagree across measurement years on five trees; the pages print the range and say the years rather than picking one |
+| Poznan | 6 | 6 | 6 | the GDOS register carries no age or girth column at all, so four of the six ship with a planting decade only, said outright on the page |
+| Wroclaw | 4 | 4 | 4 | wro_003 and wro_004 have no published age in any source found; stated in the FAQ rather than smoothed over |
+| Quebec City | 6 | 6 | 6 | first Canadian page; the register publishes DIAMETER, not girth, and every circumference on the page is a stated conversion |
+| Potsdam | 4 | 4 | 4 | the trees stand on the Berlin bank of the Glienicke bridge; the intro, all four stories and a dedicated FAQ say so |
+
+**Two unknowns kept open rather than closed by inference.** Quebec City: La Presse reports the park's oldest tree as a red oak of 250+ years on Rue De Laune and names no trunk, while five red oaks are registered there. The claim is attached to the largest, qbc_001, and the page says plainly that this is an inference from size and not a named match; qbc_002, fifteen metres away, ships with no age rather than borrowing the number. Poznan: the Bazar hotel on Plac Wolnosci is where Paderewski spoke on 26 December 1918, but the planting date straddles that year, so the story says nobody has recorded whether these trees were standing for it.
+
 ## 2026-08-15 - Potsdam's staged register candidates are all in Berlin, not Potsdam
 
 `data/research/potsdam-register-candidates.json` (7 entries, stocked by `prepare.py`) all sit at Jagdschloss Glienicke, Schlossgarten Glienicke or Volkspark Klein-Glienicke, district Steglitz-Zehlendorf, postcode 141xx: administratively Berlin, not Potsdam, however close to the border (Glienicke Brucke, the actual city line, sits metres away). Not shipped anywhere this pass: attributing them to Potsdam would misstate which city a visitor is in, and Berlin (already published, 18/30 trees) is a Google-confirmed stage-2 city, so deepening it is paused while stage-1 cities like Potsdam still have real supply elsewhere. Left for whoever revisits Potsdam or Berlin next: worth checking whether `prepare.py`'s candidate-staging picks trees by raw distance to a city's centre point without checking which municipality/postcode they actually fall in, since that would explain the mismatch and might affect other border cities too.
