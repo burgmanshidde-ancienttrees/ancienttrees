@@ -1615,3 +1615,77 @@ and Cesky Krumlov as new-city candidates and deepens Prague, currently one of
 the two best-converting pages on the site.
 
 No host hung this leg. Token estimate for the Czech leg: approximately 15k.
+
+## Poland, licence resolved and imported 2026-08-15 (CRFOP / GDOS)
+
+The 2026-07-30 record flagged the licence-condition fields as empty on the
+WFS while GDOS's own site publishes CC BY-SA 4.0 for site content, and asked
+a future pass to resolve the contradiction with a fetch and a quoted
+sentence before importing. This leg did exactly that, and it resolves.
+
+**The WFS itself remains silent**, re-verified live: `GetCapabilities` on
+`sdi.gdos.gov.pl/wfs` still carries `<ows:Fees>brak</ows:Fees>
+<ows:AccessConstraints>brak</ows:AccessConstraints>` (both literally
+"none/blank"), the same gap the 2026-07-30 pass found. **`gov.pl`'s CC
+BY-SA 4.0 statement is generic platform boilerplate**, also re-verified:
+fetching `www.gov.pl/web/gdos` directly (not a search snippet) shows the
+sentence sits in a `class="creative-commons"` footer block present on every
+gov.pl subsite, reading "Tresci tekstowe publikowane w serwisie... sa
+udostepniane na licencji... CC BY-SA 4.0" (text content published ON THE
+SITE) with a separate CC BY-NC-ND 4.0 line for photos/audio/video. It is
+about the website's editorial content, not about any dataset, and it does
+not apply to structured open data at all. **The dataset itself carries its
+own explicit licence, found by fetching dane.gov.pl's dataset-level API
+record directly rather than a search snippet**: `https://api.dane.gov.pl/1.4/datasets/471,centralny-rejestr-form-ochrony-przyrody`
+returns `"license_name": "CC0 1.0"`, `"license_description": "Other (Public
+Domain)"`, for dataset id 471 "Centralny Rejestr Form Ochrony Przyrody",
+owning institution "Generalna Dyrekcja Ochrony Srodowiska" (id 23) confirmed
+as the same body that operates the WFS. dane.gov.pl is Poland's official
+national open-data portal under the Polish PSI reuse-of-public-sector-
+information Act, so this is a primary, dataset-specific, government-issued
+licence statement, not an inference from a generic page.
+
+**Verdict: USABLE, CC0 1.0, imported.** The apparent contradiction was never
+really a contradiction: two different Polish government surfaces were
+answering two different questions (the gov.pl footer licenses the WEBSITE's
+articles; dane.gov.pl licenses the DATASET), and once each is read at its
+own primary source rather than assumed to be about the same thing, they
+stop conflicting.
+
+**What was imported.** The WFS layer `GDOS:PomnikiPrzyrodyPunktowe` (point-
+geometry natural monuments) reprojects to EPSG:4326 correctly via
+`srsName=EPSG:4326` (axis order lon,lat, confirmed by spot-checking
+coordinates fall inside Poland). Per the task's own instruction, this was
+NOT a national pull of all 117,474 records: fetched by a ~0.2-degree
+(~22km) bounding box around five sprint cities (Wroclaw, Poznan, Warsaw,
+Krakow, Gdansk), filtered to `obiekt='drzewo'` (tree; the same layer also
+carries boulders, rock outcrops, springs, caves and shrubs under the same
+"natural monument" umbrella, correctly excluded). 8,053 tree entries across
+the five boxes, zero gid overlap between cities. Written to
+`data/registers/poland-gdos-pomniki-przyrody.json`.
+
+**A genuinely good structural finding: no member-tree explosion, unlike
+Czech.** Each row is one legal designation with one representative point,
+whether it covers a single tree (`designation_type=jednoobiektowy`, 1,943
+of the 8,053) or a whole avenue/group (`wieloobiektowy`, 6,110: 4,023
+"aleja" avenues, 1,966 "grupa drzew" groups, 121 other/unspecified). Poland's
+data model matches Portugal's (one row per designation, ensembles included
+with a type flag) rather than Czech's (one row per member tree inside an
+ensemble), so nothing had to be dropped or pre-filtered by type; the
+collectible-point test on avenues/groups is left to the city research pass,
+exactly as it is for Portugal.
+
+**What this register does NOT carry, so a future pass knows before relying
+on it: no girth, height, crown or age field at all**, only species (Polish
+common name plus Latin binomial in one string), an optional proper name,
+the legal designation date, and a link to the CRFOP web record for that
+entry. `crfop.gdos.gov.pl` itself sits behind an Incapsula bot-check
+(confirmed: a JS-challenge iframe response to plain curl) and was not
+fetchable this pass, so a city pass will need another source for
+measurements. No vitality field either; alive-now stays a per-tree check.
+
+No host hung this leg (the one dead end, `crfop.gdos.gov.pl`'s Incapsula
+gate, is a fast block rather than a hang, so not added to
+`data/fetch-blocklist.json`). Token estimate for the Poland leg:
+approximately 30k (licence resolution fetches, WFS schema discovery, five
+bbox pulls, sanity checks).
