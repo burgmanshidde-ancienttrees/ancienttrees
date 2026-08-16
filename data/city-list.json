@@ -91,7 +91,7 @@
    "country": "France",
    "slug": "paris",
    "status": "published",
-   "trees": 25
+   "trees": 30
   },
   {
    "city": "Valencia",
@@ -153,7 +153,7 @@
    "slug": "geneva",
    "status": "published",
    "demand_views_90d": 162269,
-   "trees": 6
+   "trees": 14
   },
   {
    "city": "Munich",
@@ -256,6 +256,14 @@
    "status": "published",
    "demand_views_90d": 136877,
    "trees": 10
+  },
+  {
+   "city": "Lyon",
+   "country": "France",
+   "slug": "lyon",
+   "status": "published",
+   "demand_views_90d": 136951,
+   "trees": 9
   },
   {
    "city": "Bath",
@@ -379,14 +387,6 @@
    "status": "published",
    "demand_views_90d": 119586,
    "trees": 4
-  },
-  {
-   "city": "Lyon",
-   "country": "France",
-   "slug": "lyon",
-   "status": "published",
-   "demand_views_90d": 136951,
-   "trees": 9
   },
   {
    "city": "Mexico City",

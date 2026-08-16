@@ -1,0 +1,4305 @@
+{
+ "source": "Métropole de Lyon: arbres remarquables, prescription ponctuelle du PLU-H",
+ "endpoint": "https://data.grandlyon.com/geoserver/metropole-de-lyon/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=metropole-de-lyon:plu_h_opposable.pluboispt&outputFormat=application/json&srsName=EPSG:4326",
+ "country": "France",
+ "designation": "arbre remarquable protected as a ponctual prescription in the PLU-H of the Métropole de Lyon",
+ "licence": "Licence Ouverte (Etalab)",
+ "licence_proof": "data.grandlyon.com publishes its datasets under the Licence Ouverte / Open Licence, which permits commercial reuse with attribution to the Métropole de Lyon. Same licence family already proven for Strasbourg, Rouen and Toulouse in the 2026-08-13 France sweep, where the finding recorded was that 'Licence Ouverte' means what it says.",
+ "attribution": "Métropole de Lyon, extract of 2026-08-16",
+ "fetched": "2026-08-16",
+ "scope": "429 protected remarkable trees across the Métropole de Lyon, per-tree point coordinates.",
+ "caveat": "The layer is a PLANNING prescription rather than a botanical register, so an entry can be a small stand rather than one trunk: 'essence' sometimes names a genus and 'etat_phytosanitaire' sometimes says 'deux arbres'. Read both fields before treating a row as one collectible point. etat_phytosanitaire IS a condition field, written as free prose rather than a code, so it needs reading rather than filtering. No age and no girth.",
+ "count": 429,
+ "trees": [
+  {
+   "register_id": 3923,
+   "species_fr": "TAXODIUM : cyprès chauve.",
+   "locality_fr": "Route de Vourles, Hopital H.Gabrielle.",
+   "condition_fr": "Deux arbres de grande hauteur.Excellente santé.Dans l'île de l'étang artificiel du parc",
+   "latitude": 45.68971,
+   "longitude": 4.788876,
+   "last_update": "2017-02-24T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3924,
+   "species_fr": "TAXODIUM : cyrès chauve.",
+   "locality_fr": "Route de Vourles,Hopital H.Gabrielle.",
+   "condition_fr": "Deux arbres de grande hauteur.Excellente santé.Dans l'île de l'étang artificiel du parc",
+   "latitude": 45.689821,
+   "longitude": 4.789061,
+   "last_update": "2017-02-24T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3925,
+   "species_fr": "PONCIRUS TRIFOLIATA : citronnier.",
+   "locality_fr": "45 , rue Georges Clemenceau.",
+   "condition_fr": "Dans parc. Très rare en pleine terre dans le Grand Lyon. Protégé dans le cadre du parc.",
+   "latitude": 45.698127,
+   "longitude": 4.79546,
+   "last_update": "2017-02-24T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3926,
+   "species_fr": "QUERCUS ROBUR : chêne pédonculé.",
+   "locality_fr": "50 avenue de la Gare.",
+   "condition_fr": "Taille moyenne, mais forme régulière, en plein développement. Très visible.",
+   "latitude": 45.804293,
+   "longitude": 4.716225,
+   "last_update": "2016-03-04T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3927,
+   "species_fr": "QUERCUS ROBUR : chêne pédonculé.",
+   "locality_fr": "124 avenue du Casino.",
+   "condition_fr": "Grand arbre. Bonne santé.",
+   "latitude": 45.793842,
+   "longitude": 4.726475,
+   "last_update": "2016-07-20T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3928,
+   "species_fr": "TAXODIUM : cyprès chauve.",
+   "locality_fr": "Face à la Rotonde du Lyon Vert.",
+   "condition_fr": "Bel exemple d'une essence rare. En pleine vue.",
+   "latitude": 45.787838,
+   "longitude": 4.731328,
+   "last_update": "2016-03-04T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3929,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban",
+   "locality_fr": "20, rue de la République",
+   "condition_fr": "Grand arbre. Excellent état sanitaire. Arbre isolé dans le vieux bourg.",
+   "latitude": 45.844684,
+   "longitude": 4.8312,
+   "last_update": "2016-06-08T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3930,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Rue du 8 Mai 1945.",
+   "condition_fr": "Grand individu. Excellente santé. Très visible.",
+   "latitude": 45.87844,
+   "longitude": 4.806226,
+   "last_update": "2016-05-30T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3931,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Avenue de la Résistance. Parc du château.",
+   "condition_fr": "Très grand exemplaire. Excellent état. Visible de la rue.",
+   "latitude": 45.881347,
+   "longitude": 4.803832,
+   "last_update": "2016-05-30T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3932,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Avenue de la Résistance. Parc du château.",
+   "condition_fr": "Arbre très ancien. Excellente santé. Prégnant dans le paysage.",
+   "latitude": 45.88177,
+   "longitude": 4.803472,
+   "last_update": "2016-05-30T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3933,
+   "species_fr": "POPULUS NIGRA ITALICA : peuplier d'Italie.",
+   "locality_fr": "Devant l'église.",
+   "condition_fr": "Arbre banal mais en bonne santé malgré son grand âge.Marque le paysage devant l'église",
+   "latitude": 45.837172,
+   "longitude": 4.822932,
+   "last_update": "2017-02-17T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3934,
+   "species_fr": "PLATANUS ACERIFOLIA: platane.",
+   "locality_fr": "Rue des eaux vives,dans le parc.",
+   "condition_fr": "Sans doute l'un des grands spécimens de l'espèce dans le Grand Lyon.Hauteur 35 m en port libre. Très visible depuis l'ouverture de la nouvelle voie.",
+   "latitude": 45.838124,
+   "longitude": 4.826199,
+   "last_update": "2017-02-17T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3935,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Rue des eaux vives,dans le parc.",
+   "condition_fr": "Individu de bonne hauteur.Prégnant dans le paysage.",
+   "latitude": 45.838056,
+   "longitude": 4.827906,
+   "last_update": "2016-03-16T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3936,
+   "species_fr": "CEDRUS LIBANI : Cèdre du Liban.",
+   "locality_fr": "Rue de la République.",
+   "condition_fr": "Très grand spècimen isolé dans la propriété du Prado en bord de talus.",
+   "latitude": 45.838891,
+   "longitude": 4.828332,
+   "last_update": "2016-03-16T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3937,
+   "species_fr": "CEDRUS ATLANTICA : cèdre de l'Atlas",
+   "locality_fr": "1 rue des Séguines",
+   "condition_fr": "Arbre interessant par son développement actuel et en devenir. Marque le paysage.",
+   "latitude": 45.836829,
+   "longitude": 4.829032,
+   "last_update": "2017-02-17T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3938,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Avenue de Lanessan, angle chemin de la Voutillière.",
+   "condition_fr": "Deux cèdres aux branches enchevêtrées. Essence commune mais bon état. Position remarquable en bordure de carrefour marquant l'entrée de la commune.",
+   "latitude": 45.792195,
+   "longitude": 4.795892,
+   "last_update": "2017-02-06T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3939,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Avenue de Lanessan, angle chemin de la Voutillière.",
+   "condition_fr": "Deux cèdres aux branches enchevêtrées. Essence commune mais bon état. Position remarquable en bordure de carrefour marquant l'entrée de la commune.",
+   "latitude": 45.792149,
+   "longitude": 4.795997,
+   "last_update": "2017-02-06T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3940,
+   "species_fr": "CUPRESSUS ARIZONICA : Cyprès de l'Arizona",
+   "locality_fr": "10, quai Général de Gaulle",
+   "condition_fr": "Position en vue sur le quai Général de Gaulle. Valeur paysagère. Bon état sanitaire.",
+   "latitude": 45.873564,
+   "longitude": 4.834919,
+   "last_update": "2017-01-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3941,
+   "species_fr": "ABIES ALBA : Sapin blanc",
+   "locality_fr": "1, avenue Gabriel Péri",
+   "condition_fr": "Sujet situé dans un parc urbain. Bon état sanitaire.",
+   "latitude": 45.87427,
+   "longitude": 4.832521,
+   "last_update": "2017-01-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3942,
+   "species_fr": "TILLIA CORDATA : tilleul de Hollande.",
+   "locality_fr": "12, rue Dominique Vincent.",
+   "condition_fr": "Très grand exemplaire de cette essence répandue mais souvent frappée de sénilité dans le Grand Lyon. Bon état. Arbre à l'extrémité d'une rangée.",
+   "latitude": 45.796723,
+   "longitude": 4.792749,
+   "last_update": "2017-02-06T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3943,
+   "species_fr": "CEDRUS ATLANTICA : cèdre de l'atlas.",
+   "locality_fr": "92 Rte de Strasbourg.",
+   "condition_fr": "Classement de ce cèdre en EBC ponctuel. Arbre remarquable de par sa taille et sa situation le long de la voie, à l'entrée de la propriété. Excellent état.",
+   "latitude": 45.797391,
+   "longitude": 4.876066,
+   "last_update": "2023-10-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3944,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "9 impasse des Pavillons.",
+   "condition_fr": "Arbre de grande envergure remarqué et remarquable au milieu des autres arbres. Bon état sanitaire.",
+   "latitude": 45.800902,
+   "longitude": 4.847112,
+   "last_update": "2017-02-16T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3945,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Quai Georges Clémenceau.",
+   "condition_fr": "Classement en EBC ponctuels : Internat de la ville de Lyon. De part et d'autre de l'entrée, même physionomie que les autres platanes du quai.",
+   "latitude": 45.804684,
+   "longitude": 4.84332,
+   "last_update": "2023-10-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3946,
+   "species_fr": "CEDRUS : cèdre.",
+   "locality_fr": "1 avenue Barthélémy Thimonnier.",
+   "condition_fr": "Classement de ce cèdre en EBC ponctuel. Bel arbre de par sa taille et son envergure. Fort impact dans un paysage de zone industrielle de par la rareté et son emplacement en bord de voie. Très bon état sanitaire.",
+   "latitude": 45.804423,
+   "longitude": 4.865062,
+   "last_update": "2023-10-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3947,
+   "species_fr": "QUERCUS ROBUR : chêne pédonculé.",
+   "locality_fr": "Chemin de la Beffe.",
+   "condition_fr": "Sept arbres. Très visibles.",
+   "latitude": 45.802711,
+   "longitude": 4.729919,
+   "last_update": "2016-05-30T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3948,
+   "species_fr": "QUERCUS PEDUNCULATUS: chêne pédonculé",
+   "locality_fr": "12 rue de la Chapelle, Hameau de la Chapelle",
+   "condition_fr": "Arbre remarquable par ses dimensions, son âge, son état et son rôle structurant dans le paysage",
+   "latitude": 45.906554,
+   "longitude": 4.7585,
+   "last_update": "2017-02-09T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3949,
+   "species_fr": "TILIA TOMENTOSA: tilleul argenté",
+   "locality_fr": "Chemin de la Blancherie",
+   "condition_fr": "Arbre remarquable par ses dimensions, son âge, son état et son rôle structurant dans le paysage",
+   "latitude": 45.909028,
+   "longitude": 4.744726,
+   "last_update": "2017-02-09T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3950,
+   "species_fr": "CEDRUS ATLANTICA GLAUCA; cèdre bleu d'Atlas",
+   "locality_fr": "142 rue de Billy le Jeune",
+   "condition_fr": "Arbre à fort potentiel structurant dans le paysage",
+   "latitude": 45.907643,
+   "longitude": 4.743731,
+   "last_update": "2017-02-09T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3951,
+   "species_fr": "PLATANUS ACERIFOLIA: platane",
+   "locality_fr": "Chemin de la Blancherie",
+   "condition_fr": "Arbre remarquable par ses dimensions, son âge, son état et son rôle structurant dans le paysage",
+   "latitude": 45.909242,
+   "longitude": 4.745026,
+   "last_update": "2017-02-09T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3952,
+   "species_fr": "QUERCUS ROBUR: chêne pédonculé",
+   "locality_fr": "Rue de Billy le Jeune, Lieu-dit La Blancherie",
+   "condition_fr": "Arbre remarquable par ses dimensions, son âge, son état et son rôle structurant dans le paysage",
+   "latitude": 45.910205,
+   "longitude": 4.74431,
+   "last_update": "2017-02-09T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3953,
+   "species_fr": "FAGUS SYLVATICA PENDULA : hêtre pleureur.",
+   "locality_fr": "Rue des Granges, en contrebas du château.",
+   "condition_fr": "Vieil individu, un peu incliné. Présence paysagère.",
+   "latitude": 45.823738,
+   "longitude": 4.70226,
+   "last_update": "2016-03-03T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3954,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Angle avenues Franklin Roosevelt et du 8 mai 1945.",
+   "condition_fr": "Très en vue à l'angle de deux voies. Excellent état sanitaire.",
+   "latitude": 45.730632,
+   "longitude": 4.916848,
+   "last_update": "2019-03-28T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3955,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Place de Weingarten",
+   "condition_fr": "Position remarquable devant l'Hotel de Ville. Point de repère. Bon état sanitaire.",
+   "latitude": 45.733538,
+   "longitude": 4.909397,
+   "last_update": "2019-03-28T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3956,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "9, rue des Essarts.",
+   "condition_fr": "Individu remarquable par sa position devant l'hôtel.",
+   "latitude": 45.734913,
+   "longitude": 4.891334,
+   "last_update": "2019-03-28T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3957,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Angle avenue Camille Rousset et rue de Verdun.",
+   "condition_fr": "Position remarquable en saillie près de la place de la Liberté, lieu central de la commune. Bon état sanitaire. Témoignage des anciennes propriétés bourgeoises de la commune.",
+   "latitude": 45.735217,
+   "longitude": 4.908657,
+   "last_update": "2019-03-28T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3958,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Angle rue Henri Bouchard et rue du Prado.",
+   "condition_fr": "Arbre pluri centenaire conservé dans la voirie.",
+   "latitude": 45.837387,
+   "longitude": 4.839271,
+   "last_update": "2017-02-03T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3959,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "21, rue Henri Bouchard, angle chemin de l'Epine.",
+   "condition_fr": "Très grand arbre en bonne santé, dans un parc.",
+   "latitude": 45.838283,
+   "longitude": 4.837565,
+   "last_update": "2017-02-03T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3960,
+   "species_fr": "QUERCUS ROBUR : chêne pédonculé.",
+   "locality_fr": "Rue du Prado, Propriété les Mollières.",
+   "condition_fr": "Arbre exceptionnel par sa dimension : un des plus grands de son genre dans le Grand Lyon. Excellent état de santé. Plus beau chêne du Grand Lyon.",
+   "latitude": 45.840156,
+   "longitude": 4.848069,
+   "last_update": "2017-02-03T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3961,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Chemin des Vosges.",
+   "condition_fr": "Grand arbre conservé lors de l'aménagement du ruisseau, à cheval sur le cours d'eau. Intérêt paysager majeur.",
+   "latitude": 45.840742,
+   "longitude": 4.850676,
+   "last_update": "2017-02-03T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3962,
+   "species_fr": "FAGUS SYLVATICA PURPUREA : hêtre pourpre.",
+   "locality_fr": "200, placette des Prolières.",
+   "condition_fr": "Jardin de plus de 150 ans. Très grand exemplaire d'une essence classique des parcs bourgeois du XIXème siècle. Santé moyenne.",
+   "latitude": 45.843597,
+   "longitude": 4.857407,
+   "last_update": "2017-02-03T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3963,
+   "species_fr": "QUERCUS ROBUR : chêne pédonculé.",
+   "locality_fr": "Chemin du Pérollier.",
+   "condition_fr": "Arbre de plus de 150 ans.Bonne santé et port magnifique.Dans une grande propriété lotie il y a 10 ans.",
+   "latitude": 45.785965,
+   "longitude": 4.778818,
+   "last_update": "2016-05-18T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3964,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Chemin du Pérollier.",
+   "condition_fr": "Arbre de plus de 150 ans. Bonne santé et port magnifique. Dans une grande propriété lotie il y a 10 ans.",
+   "latitude": 45.785905,
+   "longitude": 4.77906,
+   "last_update": "2016-05-18T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3965,
+   "species_fr": "PLATANUS ACERIFOLIA : platane",
+   "locality_fr": "Rue du Diot, derrière l'école maternelle.",
+   "condition_fr": "Gigantesque individu isolé - lieu des plus imposants.",
+   "latitude": 45.844399,
+   "longitude": 4.853196,
+   "last_update": "2017-02-03T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3966,
+   "species_fr": "FAGUS SYLVATICA PENDULA : hêtre pleureur.",
+   "locality_fr": "Rue du hêtre-pourpre , angle chemin du Randin.",
+   "condition_fr": "Admirable exemple de la science des entrepreneurs et créateurs de jardins d'Ecully (Luizet) au XIXème siècle.",
+   "latitude": 45.771888,
+   "longitude": 4.779915,
+   "last_update": "2017-03-03T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3967,
+   "species_fr": "FAGUS SYLVATICA PURPUREA : hêtre pourpre.",
+   "locality_fr": "Rue du hêtre-pourpre, angle chemin du Randin.",
+   "condition_fr": "Essence typique d'ornement de la fin du XIXème siècle. A donné son nom à la rue.",
+   "latitude": 45.771962,
+   "longitude": 4.779964,
+   "last_update": "2017-03-03T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3968,
+   "species_fr": "SEQUOIA SEMPERVIRENS : séquoia.",
+   "locality_fr": "Rue du Docteur Terver.",
+   "condition_fr": "Grand arbre.Bonne santé.Excellent état sanitaire.Bien visible.",
+   "latitude": 45.77072,
+   "longitude": 4.775766,
+   "last_update": "2016-05-18T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3969,
+   "species_fr": "ABIES PINSAPO : sapin d'Espagne.",
+   "locality_fr": "Chemin du Randin,angle avenue Béranger.",
+   "condition_fr": "Essence relativement peu répandue.Planté en 1892.Epargné lors de l'agencement du carrefour.",
+   "latitude": 45.771067,
+   "longitude": 4.779149,
+   "last_update": "2016-05-18T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3970,
+   "species_fr": "ABIES PINSAPO : sapin d' Espagne.",
+   "locality_fr": "48, rue François Mermet.",
+   "condition_fr": "Essence assez rare. Individus de bonne taille en bonne santé.",
+   "latitude": 45.758782,
+   "longitude": 4.765271,
+   "last_update": "2016-05-18T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3971,
+   "species_fr": "QUERCUS ROBUR : chêne pédonculé.",
+   "locality_fr": "Parc de Montvallon, chemin de la Croix Rampeau",
+   "condition_fr": "Chêne pédonculé pluri-centenaire. Silhouette ample et harmonieuse, visible depuis le parc public voisin et la voirie.",
+   "latitude": 45.866055,
+   "longitude": 4.744986,
+   "last_update": "2016-06-15T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3972,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Rue César Paulet, maison de repos Notre Dame du Grand Port.",
+   "condition_fr": "Groupe de platanes. Très grande hauteur. Excellent état. Marquent le paysage.",
+   "latitude": 45.818842,
+   "longitude": 4.841736,
+   "last_update": "2017-01-12T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3973,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Rue César Paulet, maison de repos Notre Dame du Grand Port.",
+   "condition_fr": "Groupe de platanes. Très grande hauteur. Excellent état. Marquent le paysage.",
+   "latitude": 45.81894,
+   "longitude": 4.841677,
+   "last_update": "2017-01-12T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3974,
+   "species_fr": "AESCULUS HIPPOCASTANUM : Marronnier.",
+   "locality_fr": "16, rue Georges Clémenceau.",
+   "condition_fr": "Individu exceptionnel par sa taille, son ancienneté, son état de santé. Témoignage des premières plantations de ces essences dans les années du début du XIXème siècle.",
+   "latitude": 45.821333,
+   "longitude": 4.845045,
+   "last_update": "2017-01-12T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3975,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "2 rue Georges Clémenceau.",
+   "condition_fr": "Même physionomie que le marronnier 16 rue G.Clemenceau",
+   "latitude": 45.825857,
+   "longitude": 4.845652,
+   "last_update": "2019-02-21T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3976,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "4 rue Maréchal Joffre.",
+   "condition_fr": "Arbre de même caractéristique en moins imposant que le marronnier 16 rue G.Clemenceau",
+   "latitude": 45.828608,
+   "longitude": 4.845462,
+   "last_update": "2021-08-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3977,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Avenue de la Gare.",
+   "condition_fr": "Arbre de même caractéristique en moins imposant que le marronnier 16 rue G.Clemenceau",
+   "latitude": 45.830319,
+   "longitude": 4.8464,
+   "last_update": "2017-02-24T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3978,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Avenue de la Gare.",
+   "condition_fr": "Arbre de même caractéristique en moins imposant que le marronnier 16 rue G.Clemenceau",
+   "latitude": 45.830421,
+   "longitude": 4.846493,
+   "last_update": "2017-02-24T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3979,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Au débouché du pont de Collonges.",
+   "condition_fr": "Individu de grande taille. Bonne santé. Marque l'entrée de la commune.",
+   "latitude": 45.815222,
+   "longitude": 4.846737,
+   "last_update": "2016-07-11T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3980,
+   "species_fr": "CEDRUS DEODARA : cèdre de l'Himalaya",
+   "locality_fr": "38 rue de la Plage",
+   "condition_fr": "Cèdre très structurant et à fort potentiel",
+   "latitude": 45.815998,
+   "longitude": 4.847106,
+   "last_update": "2021-09-06T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3981,
+   "species_fr": "SEQUOIADENDRON GIGANTEUM : Séquoia géant.",
+   "locality_fr": "15 rue François Villon.",
+   "condition_fr": "Très grand et très beau séquoia intégré dans un bosquet composé de 7 à 8 sujets (pins et micocouliers) constituant un véritable signal pour l'ensemble du quartier.",
+   "latitude": 45.743415,
+   "longitude": 4.890027,
+   "last_update": "2021-09-27T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3982,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban",
+   "locality_fr": "Ecole Jeanne d'Arc, 2 place de la Mairie",
+   "condition_fr": "Cèdre mature avec port tabulaire caractéristique des vieux cèdres, très intéressant dans ce coeur d'îlot",
+   "latitude": 45.824017,
+   "longitude": 4.840371,
+   "last_update": "2021-09-23T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3983,
+   "species_fr": "CEDRUS LIBANI : Cèdre du Liban",
+   "locality_fr": "9/11 chemin Jean Baptiste Gilliard",
+   "condition_fr": "Classement de ce cèdre en EBC ponctuel : Très beau cèdre du Liban : Houppier ramassé et très étalé, arbre bien entretenu.",
+   "latitude": 45.789804,
+   "longitude": 4.854501,
+   "last_update": "2023-10-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3984,
+   "species_fr": "PINUS NIGRA : pin noir",
+   "locality_fr": "78, route de Paris, site de la Combe",
+   "condition_fr": "Individu adulte de très haute tige bordant la voie existante et se détachant d'un groupe de même espèce.",
+   "latitude": 45.780107,
+   "longitude": 4.747027,
+   "last_update": "2016-07-13T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3985,
+   "species_fr": "TILIA : tilleul",
+   "locality_fr": "78, route de Paris, site de la Combe",
+   "condition_fr": "Bel individu adulte bordant la voie.",
+   "latitude": 45.780825,
+   "longitude": 4.747436,
+   "last_update": "2016-07-13T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3986,
+   "species_fr": "PINUS NIGRA : pin noir",
+   "locality_fr": "78, route de Paris, site de la Combe",
+   "condition_fr": "Bel individu adulte. En vue.",
+   "latitude": 45.780932,
+   "longitude": 4.747485,
+   "last_update": "2016-07-13T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3987,
+   "species_fr": "CELTIS AUSTRALIS : micoulier",
+   "locality_fr": "78, route de Paris, site de la Combe",
+   "condition_fr": "arbre imposant et aisément repérable sur le site. Très en vue.",
+   "latitude": 45.78106,
+   "longitude": 4.747666,
+   "last_update": "2016-07-13T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3988,
+   "species_fr": "SEQUOIA DENDRON GIGANTEA : séquoia géant",
+   "locality_fr": "78, route de Paris, site de la Combe",
+   "condition_fr": "Très bel arbre implanté en rebord de plateau.",
+   "latitude": 45.779503,
+   "longitude": 4.748124,
+   "last_update": "2016-07-13T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3989,
+   "species_fr": "MAGNOLIA GRANDIFLORA : magnolia",
+   "locality_fr": "2 et 2bis rue Viret",
+   "condition_fr": "Forme naturelle remarquable, belle dimension, rapport au lieu, grande visibilité",
+   "latitude": 45.774574,
+   "longitude": 4.875385,
+   "last_update": "2021-07-08T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3990,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban",
+   "locality_fr": "1 chemin Neuf",
+   "condition_fr": "Arbre mature, port très bien équilibré, en bon état sanitaire, structurant et visible dans le grand paysage mais aussi en proximité depuis le chemin neuf.",
+   "latitude": 45.825505,
+   "longitude": 4.845236,
+   "last_update": "2021-07-29T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3991,
+   "species_fr": "CEDRUS ATLANTICA : cèdre de l'Atlas",
+   "locality_fr": "2 rue Ampère",
+   "condition_fr": "Cèdre de l'Atlas bien développé et structurant dans le paysage",
+   "latitude": 45.819281,
+   "longitude": 4.839769,
+   "last_update": "2021-09-02T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3992,
+   "species_fr": "CEDRUS ATLANTICA GLAUQUA : cèdre bleu de l'Atlas",
+   "locality_fr": "5 bis rue César Paulet",
+   "condition_fr": "Ce cèdre très beau, mature, sain et structurant, possède une très belle silhouette",
+   "latitude": 45.817458,
+   "longitude": 4.842539,
+   "last_update": "2021-07-29T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3993,
+   "species_fr": "CEDRUS ATLANTICA GLAUQUA",
+   "locality_fr": "4 rue Blaise Pascal",
+   "condition_fr": "Cèdre bleu de l'Atlas à fort potentiel, disposant d'espace de développement dans un secteur de la commune assez pauvre en grands arbres patrimoniaux.",
+   "latitude": 45.819453,
+   "longitude": 4.850703,
+   "last_update": "2021-09-02T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3994,
+   "species_fr": "CEDRUS LIBANI GLAUCA",
+   "locality_fr": "6, chemin du Grimpillon",
+   "condition_fr": "Sujet mature, sain, de grande dimension, au port très équilibré et tabulaire. Arbre visible dans le grand paysage et qui participe à l'ambiance spécifique de ces pentes de Saint-Cyr-au-Mont-d'Or marquées par les grands conifères de collections des propriétés privées",
+   "latitude": 45.81927,
+   "longitude": 4.81809,
+   "last_update": "2021-07-29T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3995,
+   "species_fr": "CEDRUS LIBANI : Cèdre du Liban",
+   "locality_fr": "3 avenue Beauséjour.",
+   "condition_fr": "Classement de ce cèdre en EBC ponctuel : Cèdre du Liban de pleine maturité et en bon état sanitaire -Sujet de belle envergure, bien visible depuis la rue.",
+   "latitude": 45.795013,
+   "longitude": 4.842894,
+   "last_update": "2023-10-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3996,
+   "species_fr": "GYMNOCLADUS DIOICUS : chicot du Canada.",
+   "locality_fr": "169 route de Paris.",
+   "condition_fr": "Arbre très rare dans la Communauté Urbaine.",
+   "latitude": 45.770102,
+   "longitude": 4.757776,
+   "last_update": "2016-07-13T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3997,
+   "species_fr": "PINUS NIGRA : pin noir.",
+   "locality_fr": "41 chemin du Bois.",
+   "condition_fr": "Arbre double.Grande taille.Bon état.Plus d'un siècle.",
+   "latitude": 45.807213,
+   "longitude": 4.785835,
+   "last_update": "2017-02-07T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3998,
+   "species_fr": "PINUS NIGRA : pin noir.",
+   "locality_fr": "41 chemin du Bois.",
+   "condition_fr": "Arbre double.Grande taille.Bon état.Plus d'un siècle.",
+   "latitude": 45.80717,
+   "longitude": 4.785901,
+   "last_update": "2017-02-07T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 3999,
+   "species_fr": "FAGUS variété NOTHOFAGUS : hêtre à feuilles de chêne.",
+   "locality_fr": "Route de Champagne angle chemin du Petit Bois.",
+   "condition_fr": "Essence très rare dans le Grand Lyon.Bon état sanitaire.Grande taille.",
+   "latitude": 45.803912,
+   "longitude": 4.789479,
+   "last_update": "2017-02-07T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4000,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "1 Route de Champagne Parc de Fromente",
+   "condition_fr": "Cèdres de très grande taille isolés dans le parc. Excellent état. Plantés au milieu du XIXème siècle.",
+   "latitude": 45.808535,
+   "longitude": 4.793082,
+   "last_update": "2017-02-07T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4001,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "1 Route de Champagne Parc de Fromente",
+   "condition_fr": "Cèdres de très grande taille isolés dans le parc. Excellent état.Plantés au milieu du XIXème siècle",
+   "latitude": 45.808419,
+   "longitude": 4.793084,
+   "last_update": "2017-02-07T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4002,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "1 Route de Champagne Parc de Fromente",
+   "condition_fr": "Cèdres de très grande taille isolés dans le parc. Excellent état. Plantés au milieu du XIXème siècle",
+   "latitude": 45.808492,
+   "longitude": 4.793216,
+   "last_update": "2017-02-07T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4003,
+   "species_fr": "FAGUS SYLVATICA PURPUREA : hêtre pourpre .",
+   "locality_fr": "1 Route de Champagne Parc de Fromente",
+   "condition_fr": "Bon état général,arbre isolé remarquable par le colori de son feuillage. Individu qui fait parti des éléments majeurs du Parc de par son état et son essence.",
+   "latitude": 45.808976,
+   "longitude": 4.793366,
+   "last_update": "2017-02-07T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4004,
+   "species_fr": "QUERCUS PEDUNCULATUS : chêne pédonculé .",
+   "locality_fr": "1 Route de Champagne Parc de fromente",
+   "condition_fr": "Bon état général. Individu qui fait parti des éléments majeurs du Parc de par son état et son essence.",
+   "latitude": 45.809177,
+   "longitude": 4.793428,
+   "last_update": "2017-02-07T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4005,
+   "species_fr": "PLATANUS ACERIFOLIA : Platane",
+   "locality_fr": "Parc Veyret, 34 Rue Pierre Semard",
+   "condition_fr": "Deux specimens implantés proches de la limite parcellaire aux dimensions importantes et en bon état sanitaire. Hauteur avoisinant les 30 mètres avec large couronne et diamètre du tronc supérieur à 1 mètre. Ces deux arbres n'ont pas subi de taille drastique et présentent un houppier en forme libre.",
+   "latitude": 45.613991,
+   "longitude": 4.797843,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4006,
+   "species_fr": "PLATANUS ACERIFOLIA : Platane",
+   "locality_fr": "Parc Veyret, 34 Rue Pierre Semard",
+   "condition_fr": "Deux specimens implantés proches de la limite parcellaire aux dimensions importantes et en bon état sanitaire. Hauteur avoisinant les 30 mètres avec large couronne et diamètre du tronc supérieur à 1 mètre. Ces deux arbres n'ont pas subi de taille drastique et présentent un houppier en forme libre.",
+   "latitude": 45.614158,
+   "longitude": 4.797409,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4007,
+   "species_fr": "Aesculus hippocastanum",
+   "locality_fr": "Hameau de Planchamp",
+   "condition_fr": "Sujet marquant dans le paysage du fait de son positionnement en surplomb (visible de la voie publique), bon état sanitaire, taille importante pour ce type d'arbre",
+   "latitude": 45.857629,
+   "longitude": 4.802064,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4008,
+   "species_fr": "Cedrus atlantica glauca",
+   "locality_fr": "Hameau de l'Eglise",
+   "condition_fr": null,
+   "latitude": 45.86251,
+   "longitude": 4.797575,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4009,
+   "species_fr": "Fagus sylvatica purpurea (hêtre pourpre)",
+   "locality_fr": "55 rue Georges Clémenceau",
+   "condition_fr": "arbre faisant parti du patrimoine d'un ancien parc, historique lié au lieu (maison bourgeoise), sujet marquant du quartier, bon état sanitaire",
+   "latitude": 45.81946,
+   "longitude": 4.846151,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4010,
+   "species_fr": "FAGUS SYLVATICA : hêtre.",
+   "locality_fr": "Rue d'Ypres.",
+   "condition_fr": "dans résidence personnes âgées. Excellent état; Dans ancien parc de la léproseri",
+   "latitude": 45.782644,
+   "longitude": 4.81713,
+   "last_update": "2016-07-21T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4011,
+   "species_fr": "CELTIS AUSTRALIS : Micocoulier",
+   "locality_fr": "7, avenue de la Gare",
+   "condition_fr": "Bon état sanitaire. Valeur paysagère. Position en vue depuis l'avenue de la Gare.",
+   "latitude": 45.875887,
+   "longitude": 4.834026,
+   "last_update": "2017-01-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4012,
+   "species_fr": "TAXUS BACCATA : If",
+   "locality_fr": "7, avenue de la Gare",
+   "condition_fr": "Grand sujet formant un bosquet avec deux autres espèces. Bon état sanitaire. Valeur paysagère. Position très en vue depuis l'avenue de la Gare.",
+   "latitude": 45.875943,
+   "longitude": 4.834062,
+   "last_update": "2017-01-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4013,
+   "species_fr": "FAGUS SYLVATICA : Hêtre",
+   "locality_fr": "5, place de la Gare",
+   "condition_fr": "Grand sujet, élement de paysage structurant le parc dans lequel il est ilmplanté. Visible depuis le quai de Saône. Bon état sanitaire.",
+   "latitude": 45.875174,
+   "longitude": 4.834504,
+   "last_update": "2017-01-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4014,
+   "species_fr": "PLATANUS VULGARIS : Platane",
+   "locality_fr": "8, quai Général de Gaulle",
+   "condition_fr": "Sujet faisant partie d'un bosquet. Valeur paysagère. Position en vue sur le quai Général de Gaulle.",
+   "latitude": 45.874425,
+   "longitude": 4.834903,
+   "last_update": "2017-01-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4015,
+   "species_fr": "QUERCUS ROBUR : Chêne pédonculé",
+   "locality_fr": "8, quai Général de Gaulle",
+   "condition_fr": "Sujet bordant le quai Général de Gaulle. Valeur paysagère. Bon état sanitaire.",
+   "latitude": 45.874378,
+   "longitude": 4.834907,
+   "last_update": "2017-01-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4016,
+   "species_fr": "AESCULUS HIPPOCASTANUM : Marronnier.",
+   "locality_fr": "16, rue Georges Clémenceau.",
+   "condition_fr": "Individu exceptionnel par sa taille, son ancienneté, son état de santé. Témoignage des premières plantations de ces essences dans les années du début du XIXème siècle.",
+   "latitude": 45.821169,
+   "longitude": 4.844748,
+   "last_update": "2017-01-12T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4017,
+   "species_fr": "TILLEUL PLATYPHYLLOS : Tilleul à grandes feuilles",
+   "locality_fr": "72 rue de la République",
+   "condition_fr": "Arbre de plus de cinquante ans à taille en têtard",
+   "latitude": 45.765947,
+   "longitude": 4.960995,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4018,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Allée Guimet.",
+   "condition_fr": "Alignements d'arbres centenaires en excellente santé dans le parc de la propriété Guimet. Prégnance paysagère.",
+   "latitude": 45.854463,
+   "longitude": 4.840434,
+   "last_update": "2017-02-03T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4019,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Allée Guimet.",
+   "condition_fr": "Alignements d'arbres centenaires en excellente santé dans le parc de la propriété Guimet. Prégnance paysagère.",
+   "latitude": 45.854531,
+   "longitude": 4.840175,
+   "last_update": "2017-02-03T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4020,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Allée Guimet.",
+   "condition_fr": "Alignements d'arbres centenaires en excellente santé dans le parc de la propriété Guimet. Prégnance paysagère.",
+   "latitude": 45.854598,
+   "longitude": 4.839946,
+   "last_update": "2017-02-03T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4021,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Allée Guimet.",
+   "condition_fr": "Alignements d'arbres centenaires en excellente santé dans le parc de la propriété Guimet. Prégnance paysagère.",
+   "latitude": 45.854598,
+   "longitude": 4.840532,
+   "last_update": "2017-02-03T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4022,
+   "species_fr": "QUERCUS CERRIS : chêne chevelu de bourgogne.",
+   "locality_fr": "6 rue Henri Chevalier.",
+   "condition_fr": "Classement en EBC ponctuel : Bel arbre de par sa taille et son envergure. Feuillu essence rare sur le secteur où il y a surtout des conifères de grande taille. Bon état sanitaire.",
+   "latitude": 45.783356,
+   "longitude": 4.828299,
+   "last_update": "2023-10-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4023,
+   "species_fr": "CEDRUS ATLANTICA GLAUCA : cèdre bleu d'atlas.",
+   "locality_fr": "17 montée des Forts.",
+   "condition_fr": "Classement de ce cèdre en EBC ponctuel. Bon état sanitaire. Arbre de parc intéressant par son colori bleu et par sa taille qui marque l'espace et qui permet une meilleure intégration du bâtiment.",
+   "latitude": 45.794747,
+   "longitude": 4.83099,
+   "last_update": "2023-10-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4024,
+   "species_fr": "FAGUS SYLVATICA PURPUREA : hêtre pourpre.",
+   "locality_fr": "19 montée des Forts.",
+   "condition_fr": "Classement en EBC ponctuel : Bon état sanitaire. Arbre avec un fort impact paysager en raison de son emplacement sur le devant de la balme et visible depuis la montée des Forts et de son feuillage coloré.",
+   "latitude": 45.794819,
+   "longitude": 4.831272,
+   "last_update": "2023-10-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4025,
+   "species_fr": "FAGUS SYLVATICA : hêtre.",
+   "locality_fr": "Montée des forts.",
+   "condition_fr": "Classement en EBC ponctuel : En bordure de la copropriété la Rivette. Grand arbre isolé. Excellent état. Bien visible.",
+   "latitude": 45.794453,
+   "longitude": 4.832634,
+   "last_update": "2023-10-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4026,
+   "species_fr": "CEDRUS ATLANTICA GLAUCA : cêdre de l'atlas bleu.",
+   "locality_fr": "6 Rue Baudrand.",
+   "condition_fr": "Classement de ce cèdre en EBC ponctuel. Arbre de belle taille, isolé à l'entrée de la propriété. Excellent état.",
+   "latitude": 45.785686,
+   "longitude": 4.835137,
+   "last_update": "2023-10-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4027,
+   "species_fr": "CEDRUS ATLANTICA GLAUCA : cèdre de l'atlas bleu.",
+   "locality_fr": "7 rue de l'Oratoire.",
+   "condition_fr": "Classement de ce cèdre en EBC ponctuel. Très grand arbre de par sa taille, par son envergure et son emplacement au milieu des immeubles. Très fort impact sur le paysage. Très bon état sanitaire.",
+   "latitude": 45.78376,
+   "longitude": 4.841078,
+   "last_update": "2023-10-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4028,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "9 bis rue Jamen Grand.",
+   "condition_fr": "Classement de ce cèdre en EBC ponctuel : Très grand arbre de par la taille, par son envergure et son emplacement au milieu des immeubles. Très marquant dans le paysage.Très bon état sanitaire.",
+   "latitude": 45.795532,
+   "longitude": 4.843626,
+   "last_update": "2023-10-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4029,
+   "species_fr": "GINCKO BILOBA.",
+   "locality_fr": "74 Rue de Margnolles.",
+   "condition_fr": "Classement en EBC ponctuel : Arbre de belle taille et de belle venue sur le versant dominant le Rhône.",
+   "latitude": 45.788585,
+   "longitude": 4.845692,
+   "last_update": "2023-10-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4030,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "42 Montée du petit Versailles.",
+   "condition_fr": "Classement en EBC ponctuel : Arbre de grande taille très bon état sanitaire. Arbre dans un bosquet de pin dont il est l'élément majeur. Bon état sanitaire.",
+   "latitude": 45.791508,
+   "longitude": 4.850046,
+   "last_update": "2023-10-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4031,
+   "species_fr": "PINUS NIGRA : pin noir.",
+   "locality_fr": "28 Avenue des Cottages.",
+   "condition_fr": "Classement en EBC ponctuels : Grands individus, d'une espèce devenue assez rare dans le Grand Lyon. Excellent état.",
+   "latitude": 45.794479,
+   "longitude": 4.862364,
+   "last_update": "2023-10-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4032,
+   "species_fr": "CEDRUS ATLANTICA : Cèdre de l'Atlas",
+   "locality_fr": "1, avenue Gabriel Péri",
+   "condition_fr": "Grand sujet situé dans un parc urbain. Bon état sanitaire.",
+   "latitude": 45.874408,
+   "longitude": 4.832533,
+   "last_update": "2017-01-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4033,
+   "species_fr": "CEDRUS ATLANTICA : Cèdre de l'Atlas",
+   "locality_fr": "Place de la Gare",
+   "condition_fr": "Gros sujet très visible depuis l'espace public. Valeur paysagère. Bon état sanitaire.",
+   "latitude": 45.875231,
+   "longitude": 4.832593,
+   "last_update": "2017-01-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4034,
+   "species_fr": "PINUS NIGRA : Pin noir d'Autriche",
+   "locality_fr": "Avenue de la Gare",
+   "condition_fr": "Sujet bordant l'avenue de la Gare. Valeur paysagère en tant que composant d'un alignement d'arbres structurant l'espace public. Bon état sanitaire.",
+   "latitude": 45.875419,
+   "longitude": 4.83241,
+   "last_update": "2017-01-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4035,
+   "species_fr": "PINUS NIGRA : Pin noir d'Autriche",
+   "locality_fr": "Avenue de la Gare",
+   "condition_fr": "Sujet bordant l'avenue de la Gare. Valeur paysagère en tant que composant d'un alignement d'arbres structurant l'espace public. Bon état sanitaire.",
+   "latitude": 45.875516,
+   "longitude": 4.832316,
+   "last_update": "2017-01-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4036,
+   "species_fr": "CEDRUS ATLANTICA : Cèdre de l'Atlas",
+   "locality_fr": "Ecole Primaire. 55, avenue Gabriel Péri.",
+   "condition_fr": "Très beau sujet mature, très en vue depuis le chemin du Trou du Chat. Valeur paysagère.",
+   "latitude": 45.867114,
+   "longitude": 4.832619,
+   "last_update": "2017-01-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4037,
+   "species_fr": "ACER PLATANOIDE : Erable plane",
+   "locality_fr": "Ecole Primaire. 2, chemin du Trou du Chat",
+   "condition_fr": "Sujet mature. Valeur paysagère. Visible depuis le chemin du Trou du Chat.",
+   "latitude": 45.867105,
+   "longitude": 4.833142,
+   "last_update": "2017-01-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4038,
+   "species_fr": "CEDRUS : cèdre",
+   "locality_fr": "25 / 27 avenue de la République",
+   "condition_fr": "Arbre en bon état sanitaire, présentant une couronne ample et équilibrée. Sa situation en point haut du vallon et son impact visuel, lui confère une importance dans le paysage.",
+   "latitude": 45.813452,
+   "longitude": 4.798859,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4039,
+   "species_fr": "TILIA : tilleul",
+   "locality_fr": "Rue Lafontaine",
+   "condition_fr": "Bel apport au lieu, grande visibilité, forme très homogène, à maturité",
+   "latitude": 45.759621,
+   "longitude": 4.880839,
+   "last_update": "2016-11-09T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4040,
+   "species_fr": "TILIA : tilleul",
+   "locality_fr": "Rue Lafontaine/Florian",
+   "condition_fr": "Bel apport au lieu, grande visibilité, forme très homogène, à maturité",
+   "latitude": 45.759731,
+   "longitude": 4.881185,
+   "last_update": "2016-11-09T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4041,
+   "species_fr": "PLATANUS ACERIFOLIA : platane à feuilles d'érable",
+   "locality_fr": "Rue Léon Blum/Rue Pierre-Louis Bernaix",
+   "condition_fr": "Grande dimension, à maturité, belle présence et grande visibilité",
+   "latitude": 45.760101,
+   "longitude": 4.897019,
+   "last_update": "2017-02-15T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4042,
+   "species_fr": "CEDRUS : cèdre",
+   "locality_fr": "Rue Auguste Blanqui/Rue du 4 août 1789",
+   "condition_fr": "Forme naturelle remarquable, de grande dimension, à maturité, grande visibilité",
+   "latitude": 45.764599,
+   "longitude": 4.884774,
+   "last_update": "2017-02-15T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4043,
+   "species_fr": "MAGNOLIA : magnolia",
+   "locality_fr": "31 Rue Louis Galvani",
+   "condition_fr": "Forme naturelle, remarquable, à maturité, rareté, bel apport au lieu",
+   "latitude": 45.768301,
+   "longitude": 4.903081,
+   "last_update": "2017-02-15T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4044,
+   "species_fr": "CEDRUS : cèdre",
+   "locality_fr": "149 Rue Francis de Pressensé",
+   "condition_fr": "Forme naturelle remarquable, de grande dimension, à maturité, grande visibilité",
+   "latitude": 45.76931,
+   "longitude": 4.895586,
+   "last_update": "2017-02-15T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4045,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "5 Rte de Strasbourg.",
+   "condition_fr": "Classement en EBC ponctuel : Arbre remarquable de par sa taille, sa situation, son bon état sanitaire et son impact sur le paysage. Elément majeur du jardin.",
+   "latitude": 45.792171,
+   "longitude": 4.863265,
+   "last_update": "2023-10-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4046,
+   "species_fr": "QUERCUS SESSILIFLORA : chêne sessile.",
+   "locality_fr": "44 Chemin de Vassieux.",
+   "condition_fr": "Classement en EBC ponctuel : Arbre ancien divisé en deux troncs. Bon état sanitaire.",
+   "latitude": 45.795365,
+   "longitude": 4.86747,
+   "last_update": "2023-10-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4047,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "18, rue Louis Juttet.",
+   "condition_fr": "Arbre de grand développement en bonne santé, débordant sur la rue très fréquentée reliant Ecully à Champagne au Mont d'Or, mais aussi l'autoroute A6 et les Monts d'Or.",
+   "latitude": 45.792835,
+   "longitude": 4.791112,
+   "last_update": "2017-02-06T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4048,
+   "species_fr": "ULMUS ORMUS : orme.",
+   "locality_fr": "Angle avenues Marcel Mérieux et Jean Colomb. Près du monument aux morts.",
+   "condition_fr": "Très rare survivant des ormes exterminés par la graphiose depuis plusieurs décennies.",
+   "latitude": 45.78157,
+   "longitude": 4.705761,
+   "last_update": "2017-02-16T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4049,
+   "species_fr": "ACER PSEUDOPLATANUS : érable sycomore.",
+   "locality_fr": "Avenue du 2ème Spahis.",
+   "condition_fr": "Erable à port libre. Bon état sanitaire. Très visible dans le paysage",
+   "latitude": 45.886293,
+   "longitude": 4.804205,
+   "last_update": "2016-06-08T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4050,
+   "species_fr": "QUERCUS ROBUR : chêne pédonculé.",
+   "locality_fr": "Chemin de la Beffe.",
+   "condition_fr": "Sept arbres. Très visibles.",
+   "latitude": 45.8029,
+   "longitude": 4.729884,
+   "last_update": "2016-05-30T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4051,
+   "species_fr": "QUERCUS ROBUR : chêne pédonculé",
+   "locality_fr": "Chemin de la Beffe.",
+   "condition_fr": "Sept arbres. Très visibles.",
+   "latitude": 45.802853,
+   "longitude": 4.729895,
+   "last_update": "2016-05-30T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4052,
+   "species_fr": "QUERCUS ROBUR : chêne pédonculé.",
+   "locality_fr": "Chemin de la Beffe.",
+   "condition_fr": "Sept arbres. Très visibles.",
+   "latitude": 45.802798,
+   "longitude": 4.729909,
+   "last_update": "2016-05-30T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4053,
+   "species_fr": "QUERCUS ROBUR : chêne pédonculé.",
+   "locality_fr": "Chemin de la Beffe.",
+   "condition_fr": "Sept arbres. Très visibles.",
+   "latitude": 45.803118,
+   "longitude": 4.729924,
+   "last_update": "2016-05-30T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4054,
+   "species_fr": "ABIES NORDMANNI : sapin de Nordmann.",
+   "locality_fr": "40, route de la Tour de Salvagny.",
+   "condition_fr": "Bonne santé. Essence assez banale mais très grand individu. Vu de très loin sur le versant ouest de la butte de Dardilly.",
+   "latitude": 45.822767,
+   "longitude": 4.745568,
+   "last_update": "2017-02-06T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4055,
+   "species_fr": "THUYAS OCCIDENTALIS",
+   "locality_fr": "18, rue Pierre Blanche (arbre situé en bordure de la rue du Paillet)",
+   "condition_fr": "Très beau sujet. Très visible. Tronc et écorce très esthétiques. Un peu concurrencé par l'abies.",
+   "latitude": 45.820231,
+   "longitude": 4.749383,
+   "last_update": "2017-02-06T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4056,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "12, Avenue de Verdun.",
+   "condition_fr": "Bon état malgé des élagages, angle rue du Barriot. Prégnance paysagère en bordure de la voie axiale de la commune. Individu ancien.",
+   "latitude": 45.816558,
+   "longitude": 4.750476,
+   "last_update": "2017-02-06T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4057,
+   "species_fr": "TILIA TOMENTOSA : tilleul argenté.",
+   "locality_fr": "17, Chemin de Pierre Blanche.",
+   "condition_fr": "Arbre d'un beau port malgré des élagages. Bien visible.",
+   "latitude": 45.819658,
+   "longitude": 4.750597,
+   "last_update": "2017-02-06T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4058,
+   "species_fr": "CEDRUS ATLANTICA : cèdre de l'Atlas.",
+   "locality_fr": "Angle chemin de la Pierre Blanche, chemin du Calvaire.",
+   "condition_fr": "Grand exemplaire assez rare d'une essence pourtant répandue. Excellent état. Très visible.",
+   "latitude": 45.821637,
+   "longitude": 4.751398,
+   "last_update": "2017-02-06T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4059,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Quai Georges Clémenceau.",
+   "condition_fr": "Classement en EBC ponctuels : Internat de la ville de Lyon. De part et d'autre de l'entrée, même physionomie que les autres platanes du quai.",
+   "latitude": 45.804817,
+   "longitude": 4.843303,
+   "last_update": "2023-10-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4060,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Quai Georges Clémenceau.",
+   "condition_fr": "Classement en EBC ponctuels : Arbres remarquables par leur dimension exceptionnelle (plus de 30m) et leur âge (plus de 150 ans).",
+   "latitude": 45.808791,
+   "longitude": 4.844285,
+   "last_update": "2023-10-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4061,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Quai Georges Clémenceau.",
+   "condition_fr": "Classement en EBC ponctuels : Arbres remarquables par leur dimension exceptionnelle (plus de 30m) et leur âge (plus de 150 ans).",
+   "latitude": 45.808927,
+   "longitude": 4.844327,
+   "last_update": "2023-10-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4062,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Quai Georges Clémenceau.",
+   "condition_fr": "Classement en EBC ponctuels : Arbres remarquables par leur dimension exceptionnelle (plus de 30m) et leur âge (plus de 150 ans).",
+   "latitude": 45.809076,
+   "longitude": 4.844369,
+   "last_update": "2023-10-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4063,
+   "species_fr": "TILIA : Tilleul",
+   "locality_fr": "779 chemin de la Péronière",
+   "condition_fr": "Arbre très ancien et de grand développement, port harmonieux. Marque le paysage",
+   "latitude": 45.862035,
+   "longitude": 4.799526,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4064,
+   "species_fr": "FAGUS SYLVATICA : hêtre.",
+   "locality_fr": "5, Chemin du Grégoire.",
+   "condition_fr": "Position dominante au-dessus de la rue. Excellent état.",
+   "latitude": 45.814886,
+   "longitude": 4.752973,
+   "last_update": "2017-02-06T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4065,
+   "species_fr": "QUERCUS ROBUR : chêne pédonculé.",
+   "locality_fr": "Chemin de la Beffe.",
+   "condition_fr": "Sept arbres. Très visibles.",
+   "latitude": 45.80274,
+   "longitude": 4.729914,
+   "last_update": "2016-05-30T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4066,
+   "species_fr": "QUERCUS ROBUR : chêne pédonculé.",
+   "locality_fr": "Chemin de la Beffe.",
+   "condition_fr": "Sept arbres. Très visibles.",
+   "latitude": 45.802663,
+   "longitude": 4.729914,
+   "last_update": "2016-05-30T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4067,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "15 rue François Villon.",
+   "condition_fr": "Bel arbre isolé devant une maison individuelle;",
+   "latitude": 45.743277,
+   "longitude": 4.890389,
+   "last_update": "2016-06-15T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4068,
+   "species_fr": "CEDRUS ATLANTICA GLAUCA : cèdre bleu de l'Atlas.",
+   "locality_fr": "28, route d'Ecully, angle chemin de Cogny.",
+   "condition_fr": "Trois beaux sujets en bordure de la route d'Ecully. Très visibles.",
+   "latitude": 45.802096,
+   "longitude": 4.755791,
+   "last_update": "2017-02-06T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4069,
+   "species_fr": "CEDRUS ATLANTICA GLAUCA : cèdre bleu de l'Atlas.",
+   "locality_fr": "28, route d'Ecully, angle chemin de Cogny.",
+   "condition_fr": "Trois beaux sujets en bordure de la route d'Ecully.Très visibles.",
+   "latitude": 45.80195,
+   "longitude": 4.755825,
+   "last_update": "2017-02-06T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4070,
+   "species_fr": "CEDRUS ATLANTICA GLAUCA : cèdre bleu de l'Atlas.",
+   "locality_fr": "28, route d'Ecully, angle chemin de Cogny.",
+   "condition_fr": "Trois beaux sujets en bordure de la route d'Ecully. Très visibles.",
+   "latitude": 45.801833,
+   "longitude": 4.755834,
+   "last_update": "2017-02-06T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4071,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "67, route de Genève.",
+   "condition_fr": "Bel exemplaire. Isolé sur la grande route.Excellent état.",
+   "latitude": 45.807092,
+   "longitude": 4.889345,
+   "last_update": "2016-06-08T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4072,
+   "species_fr": "QUERCUS ROBUR : chêne pédonculé.",
+   "locality_fr": "35, Route de Mornant",
+   "condition_fr": "Deux arbres marquants dans le paysage par leurs situations et leurs tailles imposantes. Arbres patrimoniaux à protéger et à mettre en valeur au sein d un jeune boisement.",
+   "latitude": 45.586662,
+   "longitude": 4.752295,
+   "last_update": "2017-02-20T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4073,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "98, route de Genève.",
+   "condition_fr": "Bel exemplaire. Isolé en vue de la grande route.Excellent état.",
+   "latitude": 45.807665,
+   "longitude": 4.898491,
+   "last_update": "2017-02-08T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4074,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "22 rue de la République",
+   "condition_fr": "Grand exemplaire dans la commune. Présence paysagère.",
+   "latitude": 45.824329,
+   "longitude": 4.900149,
+   "last_update": "2016-06-08T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4075,
+   "species_fr": "QUERCUS SESSILIFLORA : chêne sessile.",
+   "locality_fr": "33, Montée de la Velette. Près de l'ancienne maison bourgeoise de la propriété Selva",
+   "condition_fr": "Grand exemplaire.Bon état sanitaire.",
+   "latitude": 45.809233,
+   "longitude": 4.903676,
+   "last_update": "2016-06-08T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4076,
+   "species_fr": "QUERCUS ROBUR : chêne pédonculé.",
+   "locality_fr": "75, Chemin des Biesses",
+   "condition_fr": "arbre marquant dans le paysage par sa situation et sa taille imposante. Arbre patrimonial à protéger et à mettre en valeur.",
+   "latitude": 45.580049,
+   "longitude": 4.724372,
+   "last_update": "2017-02-20T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4077,
+   "species_fr": "FAGUS SYLVATICA : hêtre.",
+   "locality_fr": "ZAC de Sans-Souci.",
+   "condition_fr": "Groupe de hêtres en excellente santé, ce qui devient rare dans le Grand Lyon.",
+   "latitude": 45.808366,
+   "longitude": 4.774411,
+   "last_update": "2017-02-06T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4078,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "11 rue François Villon.",
+   "condition_fr": "Bel arbre isolé devant une maison individuelle;",
+   "latitude": 45.743658,
+   "longitude": 4.890247,
+   "last_update": "2016-06-15T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4079,
+   "species_fr": "SEQUOIA SEMPERVIRENS: séquoia.",
+   "locality_fr": "225, avenue Général De Gaulle, devant la façade ouest de la mairie.",
+   "condition_fr": "Arbre conservé lors de la transformation de la maison bourgeoise.Visible de manière exceptionnelle. Cependant, état sanitaire à surveiller.",
+   "latitude": 45.835692,
+   "longitude": 4.770505,
+   "last_update": "2017-02-06T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4080,
+   "species_fr": "LIRIODENDRON TULIPIFERA : Tulipier de Virginie",
+   "locality_fr": "580 route de la Nation",
+   "condition_fr": "Jeune adulte sain et déjà structurant, visible depuis la rue et dans les vues lointaines du fait de sa situation en point haut",
+   "latitude": 45.843363,
+   "longitude": 4.842951,
+   "last_update": "2016-07-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4081,
+   "species_fr": "CEDRUS ATLANTICA : Cèdre de l'Atlas",
+   "locality_fr": "92 rue de la République",
+   "condition_fr": "Sujet mature de grande dimension avec un port tabulaire équilibré. De plus, cet arbre situé sur un pont haut de Rochetaillée, est visible dans le grand paysage depuis les coteaux de Couzon-au-Mont-d'Or à l'Ouest comme de Fontaines-Saint-Martin au Sud-Est",
+   "latitude": 45.846362,
+   "longitude": 4.840243,
+   "last_update": "2017-02-03T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4082,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Route du Pilon.",
+   "condition_fr": "Très grand exemplaire.Excellent état sanitaire.En assez bonne vue.",
+   "latitude": 45.639907,
+   "longitude": 4.841941,
+   "last_update": "2016-09-07T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4083,
+   "species_fr": "CEDRUS LIBANI : Cèdre du Liban.",
+   "locality_fr": "Route du Pilon.",
+   "condition_fr": "Grand exemplaire.Bon état sanitaire.Plus visible que le platane voisin.",
+   "latitude": 45.639517,
+   "longitude": 4.841865,
+   "last_update": "2016-09-07T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4084,
+   "species_fr": "CEDRUS LIBANI : Cèdre du Liban",
+   "locality_fr": "6, rue Joseph Chollet",
+   "condition_fr": "Sujet isolé. Valeur paysagère. Très visible depuis l'espace public.",
+   "latitude": 45.86636,
+   "longitude": 4.833202,
+   "last_update": "2017-01-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4085,
+   "species_fr": "Magnolia soulangiana : magnolia de Soulange",
+   "locality_fr": "1C, Quai Georges Lévy",
+   "condition_fr": "arbre remarquable par sa forme sur tige et ses dimensions importantes, très rare.",
+   "latitude": 45.585774,
+   "longitude": 4.772841,
+   "last_update": "2017-02-20T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4086,
+   "species_fr": "CEDRUS ATLANTICA : Cèdre de l'Atlas",
+   "locality_fr": "Quai de Villevert.",
+   "condition_fr": "Sujet isolé. Bon état sanitaire. Valeur paysagère : position en vue sur le quai de Villevert",
+   "latitude": 45.878353,
+   "longitude": 4.832216,
+   "last_update": "2017-01-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4087,
+   "species_fr": "CEDRUS ATLANTICA : Cèdre de l'Atlas",
+   "locality_fr": "Quai de Villevert.",
+   "condition_fr": "Sujet isolé. Bon état sanitaire. Valeur paysagère : position en vue sur le quai de Villevert",
+   "latitude": 45.878377,
+   "longitude": 4.832119,
+   "last_update": "2017-01-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4088,
+   "species_fr": "ACER PLATANOIDE : Erable plane",
+   "locality_fr": "Quai de Villevert.",
+   "condition_fr": "Sujet rare situé dans un bosquet de grands arbres. Bon état sanitaire.",
+   "latitude": 45.878016,
+   "longitude": 4.831859,
+   "last_update": "2017-01-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4089,
+   "species_fr": "CEDRUS ATLANTICA : Cèdre de l'Atlas",
+   "locality_fr": "Quai de Villevert.",
+   "condition_fr": "Sujet remarquable d'un bosquet composant un grand parc urbain. Valeur paysagère. Bon état sanitaire.",
+   "latitude": 45.877828,
+   "longitude": 4.832211,
+   "last_update": "2017-01-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4090,
+   "species_fr": "CEDRUS ATLANTICA : Cèdre de l'Atlas",
+   "locality_fr": "Quai de Villevert.",
+   "condition_fr": "Sujet remarquable d'un bosquet composant un grand parc urbain. Valeur paysagère. Bon état sanitaire.",
+   "latitude": 45.877886,
+   "longitude": 4.832274,
+   "last_update": "2017-01-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4091,
+   "species_fr": "PSEUDOTSUGA MENZIESII : Sapin de Douglas",
+   "locality_fr": "Quai de Villevert.",
+   "condition_fr": "Elément d'un bosquet d'arbres bordants le Quai de Villevert. Valeur paysagère.",
+   "latitude": 45.877695,
+   "longitude": 4.833734,
+   "last_update": "2017-01-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4092,
+   "species_fr": "CEDRUS LIBANI : Cèdre du Liban",
+   "locality_fr": "23 rue Lefèbvre",
+   "condition_fr": "Grand sujet isolé, situé dans un jardin. Valeur paysagère : position en vue depuis la rue Lefèbvre. Bon état sanitaire.",
+   "latitude": 45.876243,
+   "longitude": 4.833317,
+   "last_update": "2017-01-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4093,
+   "species_fr": "TILIA PLATYPHYLLOS : Tilleul à grandes feuilles",
+   "locality_fr": "1, quai Général de Gaulle",
+   "condition_fr": "Sujet isolé, rare pour cette espèce.",
+   "latitude": 45.876225,
+   "longitude": 4.834931,
+   "last_update": "2017-01-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4094,
+   "species_fr": "TILIA CORDATA : Tilleul à petites feuilles",
+   "locality_fr": "8bis, quai Général de Gaulle",
+   "condition_fr": "Sujet bordant le quai général de Gaulle. Valeur paysagère. Bon état sanitaire.",
+   "latitude": 45.873945,
+   "longitude": 4.834919,
+   "last_update": "2017-01-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4095,
+   "species_fr": "ACER PSEUDOPLATANUS : Erable sycomore",
+   "locality_fr": "10, quai Général de Gaulle",
+   "condition_fr": "Sujet bordant le quai Général de Gaulle. Valeur paysagère. Bon état sanitaire.",
+   "latitude": 45.873608,
+   "longitude": 4.834917,
+   "last_update": "2017-01-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4096,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Avenue de Verdun. Proximité école de musique.",
+   "condition_fr": "Grande taille. Port typiquement étalé. Très en vue.",
+   "latitude": 45.808183,
+   "longitude": 4.751995,
+   "last_update": "2017-02-06T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4097,
+   "species_fr": "CEDRUS ATLANTICA : cèdre de l'Atlas.",
+   "locality_fr": "Route de Millery .",
+   "condition_fr": "Individu de grande taille. Excellent état. Très prégnant dans le paysage à l'entrée du château",
+   "latitude": 45.640555,
+   "longitude": 4.79232,
+   "last_update": "2017-02-08T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4098,
+   "species_fr": "CEDRUS DEODARA : Cèdre de l'Himalaya.",
+   "locality_fr": "4 impasse du Cougny",
+   "condition_fr": "Arbre interessant par son développement actuel et en devenir. Marque le paysage.",
+   "latitude": 45.837265,
+   "longitude": 4.828415,
+   "last_update": "2017-01-12T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4099,
+   "species_fr": "SOPHORA JAPONICA",
+   "locality_fr": "Angle Pont Berliet et Chemin du Charbonnier",
+   "condition_fr": "Sujet bien développé et en bon état sanitaire",
+   "latitude": 45.702048,
+   "longitude": 4.892278,
+   "last_update": "2016-08-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4100,
+   "species_fr": "SEQUOIADENDRON GIGANTEUM",
+   "locality_fr": "Parc piscine Auguste Delaune",
+   "condition_fr": "Sujet structurant et bon état sanitaire",
+   "latitude": 45.693734,
+   "longitude": 4.873021,
+   "last_update": "2019-03-20T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4101,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Rue du Malpas, salle polyvalente.",
+   "condition_fr": "Grand arbre en bonne santé. Dans le petit parc de la salle polyvalente. Visible.",
+   "latitude": 45.652666,
+   "longitude": 4.794905,
+   "last_update": "2016-09-23T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4102,
+   "species_fr": "CEDRUS ATLANTICA : cèdre de l'Atlas",
+   "locality_fr": "48, rue de la Fondation Dorothée Petit",
+   "condition_fr": "Cèdre de l'Atlas majestueux très en vue en surplomb de la voie",
+   "latitude": 45.668659,
+   "longitude": 4.815828,
+   "last_update": "2017-02-27T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4103,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "4 rue Maréchal Joffre.",
+   "condition_fr": "Arbre de même caractéristique en moins imposant que le marronier 16 rue G.Clemenceau",
+   "latitude": 45.828597,
+   "longitude": 4.84564,
+   "last_update": "2017-02-24T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4104,
+   "species_fr": "MACLURA POMIFERA : oranger des Osages.",
+   "locality_fr": "Chemin du petit Revoyet.",
+   "condition_fr": "Arbre très ancien de développement exceptionnel. Très rare à l'état adulte dans le Grand Lyon.",
+   "latitude": 45.710286,
+   "longitude": 4.802979,
+   "last_update": "2016-06-30T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4105,
+   "species_fr": "OSTRYA CARPINIFOLIA: charme houblon",
+   "locality_fr": "Rue d'Hanoï",
+   "condition_fr": "Individu à maturité, essence rare, visibilité avec grande valeur paysagère",
+   "latitude": 45.771581,
+   "longitude": 4.861401,
+   "last_update": "2016-11-09T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4106,
+   "species_fr": "PUNICA GRANATUM : grenadier",
+   "locality_fr": "6 Rue Pierre Loti",
+   "condition_fr": "Essence rare, à maturité, visibilité",
+   "latitude": 45.769096,
+   "longitude": 4.887061,
+   "last_update": "2017-02-15T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4107,
+   "species_fr": "PLATANUS ACERIFOLIA : platane à feuilles d'érable",
+   "locality_fr": "143/149 Cours Emile Zola",
+   "condition_fr": "Individu de grande taille - à maturité, trame homogène, visibilité avec grande valeur paysagère",
+   "latitude": 45.77019,
+   "longitude": 4.877139,
+   "last_update": "2017-02-15T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4108,
+   "species_fr": "CEDRUS : cèdre",
+   "locality_fr": "Rue Lucette et René Desgrands",
+   "condition_fr": "Forme naturelle, remarquable, à maturité, grande dimension, belle présence",
+   "latitude": 45.785591,
+   "longitude": 4.902438,
+   "last_update": "2016-11-09T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4109,
+   "species_fr": "PLATANUS ACERIFOLIA : platane à feuilles d'érable",
+   "locality_fr": "143/149 Cours Emile Zola",
+   "condition_fr": "Individu de grande taille - à maturité, trame homogène, visibilité avec grande valeur paysagère",
+   "latitude": 45.770116,
+   "longitude": 4.877105,
+   "last_update": "2017-02-15T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4110,
+   "species_fr": "PLATANUS ACERIFOLIA : platane à feuilles d'érable",
+   "locality_fr": "143/149 Cours Emile Zola",
+   "condition_fr": "Individu de grande taille - à maturité, trame homogène, visibilité avec grande valeur paysagère",
+   "latitude": 45.770146,
+   "longitude": 4.877375,
+   "last_update": "2017-02-15T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4111,
+   "species_fr": "PLATANUS ACERIFOLIA : platane à feuilles d'érable",
+   "locality_fr": "143/149 Cours Emile Zola",
+   "condition_fr": "Individu de grande taille - à maturité, trame homogène, visibilité avec grande valeur paysagère",
+   "latitude": 45.770055,
+   "longitude": 4.877347,
+   "last_update": "2017-02-15T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4112,
+   "species_fr": "PLATANUS ACERIFOLIA : platane à feuilles d'érable",
+   "locality_fr": "143/149 Cours Emile Zola",
+   "condition_fr": "Individu de grande taille - à maturité, trame homogène, visibilité avec grande valeur paysagère",
+   "latitude": 45.770125,
+   "longitude": 4.877488,
+   "last_update": "2017-02-15T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4113,
+   "species_fr": "PLATANUS ACERIFOLIA : platane à feuilles d'érable",
+   "locality_fr": "143/149 Cours Emile Zola",
+   "condition_fr": "Individu de grande taille - à maturité, trame homogène, visibilité avec grande valeur paysagère",
+   "latitude": 45.770035,
+   "longitude": 4.877453,
+   "last_update": "2017-02-15T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4114,
+   "species_fr": "CEDRUS : cèdre",
+   "locality_fr": "282 Rue Francis de Pressensé",
+   "condition_fr": "Forme naturelle remarquable, rare, de grande dimension, à maturité, grande visibilité",
+   "latitude": 45.771633,
+   "longitude": 4.882184,
+   "last_update": "2017-02-15T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4115,
+   "species_fr": "CEDRUS : cèdre",
+   "locality_fr": "Rue Persoz/Rue Camille Koechlin/Rue Auguste",
+   "condition_fr": "Forme naturelle remarquable, de grande dimension, à maturité, grande visibilité.",
+   "latitude": 45.762047,
+   "longitude": 4.887794,
+   "last_update": "2017-02-15T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4116,
+   "species_fr": "ROBINIA PSEUDO ACACIA : robinier faux acacia",
+   "locality_fr": "Rue Clément Michut/Rue du 4 août 1789",
+   "condition_fr": "Bel apport au lieu, grande visibilité, forme très homogène, à maturité",
+   "latitude": 45.764913,
+   "longitude": 4.881395,
+   "last_update": "2017-02-15T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4117,
+   "species_fr": "PLATANUS ACERIFOLIA : platane à feuilles d'érable",
+   "locality_fr": "Rue Clément Michut",
+   "condition_fr": "Grande dimension, à maturité, belle présence",
+   "latitude": 45.766833,
+   "longitude": 4.881291,
+   "last_update": "2017-02-15T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4118,
+   "species_fr": "PINUS SYLVESTRIS : pin sylvestre",
+   "locality_fr": "Rue Paul Verlaine/Rue des Mûriers",
+   "condition_fr": "Grande dimension, bel apport au lieu, à maturité,  et grande visibilité",
+   "latitude": 45.762652,
+   "longitude": 4.8809,
+   "last_update": "2017-02-15T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4119,
+   "species_fr": "SOPHORA PENDULA : sophora pleureur",
+   "locality_fr": "Rue Richelieu",
+   "condition_fr": "Forme naturelle, remarquable, à maturité, rareté, grande visibilité",
+   "latitude": 45.760065,
+   "longitude": 4.877546,
+   "last_update": "2016-11-09T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4120,
+   "species_fr": "TILIA : tilleul",
+   "locality_fr": "Rue Lafontaine/Florian",
+   "condition_fr": "Bel apport au lieu, grande visibilité, forme très homogène, à maturité",
+   "latitude": 45.759657,
+   "longitude": 4.881033,
+   "last_update": "2016-11-09T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4121,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Rue de la Sarra, angle rue du puits de la Sarra.",
+   "condition_fr": "Très grand arbre. Excellente santé. Cependant assez peu visible.",
+   "latitude": 45.711655,
+   "longitude": 4.803391,
+   "last_update": "2016-06-03T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4122,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "30, boulevard du Général de Gaulle.",
+   "condition_fr": "Très grand spécimen dans un programme immobilier très récent. Marque l'ancienne présence d'un grand parc.",
+   "latitude": 45.717398,
+   "longitude": 4.78771,
+   "last_update": "2016-06-30T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4123,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "7 rue de la Sarra.",
+   "condition_fr": "Arbre adulte au port étalé typique de l'essence. Ayant subi la foudre, cet arbre est toujours en bon état sanitaire.",
+   "latitude": 45.711841,
+   "longitude": 4.804005,
+   "last_update": "2017-02-06T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4124,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "14 rue Jacquard",
+   "condition_fr": "Arbre mature adulte impressionnant par ses dimensions. Son port est typique de celui de l'espèce. Situé dans un parc d'une résidence et proche d'un immeuble, il marque une ancienne propriété.",
+   "latitude": 45.709437,
+   "longitude": 4.81258,
+   "last_update": "2017-02-06T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4125,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "4 rue du Tapis vert.",
+   "condition_fr": "Arbre adulte arrivé à maturité. Situé dans une propriété de 1830, cet arbre est agé de plus de 150 ans.",
+   "latitude": 45.721196,
+   "longitude": 4.799493,
+   "last_update": "2017-02-06T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4126,
+   "species_fr": "PLATANUS 'X' HISPANICA : Platane à feuilles d'érable.",
+   "locality_fr": "Chemin de Sanzy (face 80).",
+   "condition_fr": "Arbre adulte en lisière du bois de Sanzy. Le houppier étalé de cet arbre tranche par sa couleur avec le massif forestier plus sombre.",
+   "latitude": 45.714821,
+   "longitude": 4.792837,
+   "last_update": "2017-02-23T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4127,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Rue du cèdre, à l'intérieur de l'ensemble d'immeubles dit le Vieux Cèdre.",
+   "condition_fr": "Dimension exceptionnelle dans un ancien parc. Bon état sanitaire. A servi de base au plan de l'ensemble immobilier.",
+   "latitude": 45.891288,
+   "longitude": 4.833623,
+   "last_update": "2017-03-01T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4128,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Rue de la Favorite - Lycée du même nom.",
+   "condition_fr": "Très bel exemplaire. Excellent état. Visible de la rue.",
+   "latitude": 45.756466,
+   "longitude": 4.805712,
+   "last_update": "2016-07-18T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4129,
+   "species_fr": "PINUS NIGRA : pin noir.",
+   "locality_fr": "Rue du Lavoir. Parc municipal.",
+   "condition_fr": "Arbre de très grande taille. Bon état sanitaire. Marquant dans la végétation du parc",
+   "latitude": 45.896659,
+   "longitude": 4.842688,
+   "last_update": "2016-10-06T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4130,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "268, Montée du Tilleul.",
+   "condition_fr": "Taille exceptionnelle et excellent état sanitaire. Date au moins du début du XIXème siècle. Situé dans le parc d'une propriété",
+   "latitude": 45.873413,
+   "longitude": 4.819277,
+   "last_update": "2017-02-14T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4131,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "268, Montée du Tilleul.",
+   "condition_fr": "Taille exceptionnelle et excellent état sanitaire. Date au moins du début du XIXème siècle. Situé dans le parc d'une propriété",
+   "latitude": 45.873562,
+   "longitude": 4.819037,
+   "last_update": "2017-02-14T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4132,
+   "species_fr": "TILIA : tilleul",
+   "locality_fr": "181, route de Saint Germain au Mont d'Or",
+   "condition_fr": "Très visible depuis la rue, ce tilleul est situé dans la cour d'une propriété dont il compose le paysage.",
+   "latitude": 45.873475,
+   "longitude": 4.816701,
+   "last_update": "2017-02-14T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4133,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "565, rue du Pontet",
+   "condition_fr": "Par sa taille et son grand développement, ce platane remarquable constitue un repère visuel dans le paysage de la commune",
+   "latitude": 45.874264,
+   "longitude": 4.825467,
+   "last_update": "2017-02-14T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4134,
+   "species_fr": "QUERCUS ROBUR : chêne pédonculé .",
+   "locality_fr": "Chemin du Chancelier",
+   "condition_fr": "Arbre de plus de 150 ans .Bonne santé et port magnifique en bord de propriété.",
+   "latitude": 45.777647,
+   "longitude": 4.775914,
+   "last_update": "2016-05-18T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4135,
+   "species_fr": "PINUS NIGRA : pin noir.",
+   "locality_fr": "Rue Joseph Rimaud n°4.",
+   "condition_fr": "Arbre classique dans l'agglomération depuis le XVIIIème siècle. Dimensions exceptionnelles et excellent état sanitaire.",
+   "latitude": 45.780777,
+   "longitude": 4.777039,
+   "last_update": "2016-05-18T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4136,
+   "species_fr": "CEDRUS ATLANTICA : glauca.",
+   "locality_fr": "Place de la libération",
+   "condition_fr": "Port et développement remarquable",
+   "latitude": 45.775581,
+   "longitude": 4.77755,
+   "last_update": "2016-05-18T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4137,
+   "species_fr": "CEDRUS LIBAN I: cèdre du Liban.",
+   "locality_fr": "Avenue du docteur Terver.Parc municipal.",
+   "condition_fr": "Individu isolé de très grande ampleur,à forte valeur paysagère.Excellent état sanitaire.",
+   "latitude": 45.772443,
+   "longitude": 4.777487,
+   "last_update": "2016-05-18T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4138,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Place de la Libération jouxtant la mairie.",
+   "condition_fr": "Dans le parc d'un ancien domaine horticole.Un des plus anciens de la commune.Excellent état sanitaire.",
+   "latitude": 45.775633,
+   "longitude": 4.777954,
+   "last_update": "2016-05-18T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4139,
+   "species_fr": "CEDRUS ATLANTICA GLAUCA: cède bleu d'Atlas",
+   "locality_fr": "23 rue de la République",
+   "condition_fr": "Arbre de grand développement, marquant le paysage",
+   "latitude": 45.915643,
+   "longitude": 4.777911,
+   "last_update": "2017-02-09T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4140,
+   "species_fr": "FAGUS SYLVATICA PURPUREA: hêtre pourpre",
+   "locality_fr": "23 rue de la République",
+   "condition_fr": "Arbre mature et structurant, marquant dans le paysage du centre du village",
+   "latitude": 45.915054,
+   "longitude": 4.777892,
+   "last_update": "2017-02-09T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4141,
+   "species_fr": "QUERCUS RUBRA: chêne rouge d'Amérique",
+   "locality_fr": "23 rue de la République",
+   "condition_fr": "Essence ornementale, sujet de taille très importante",
+   "latitude": 45.916051,
+   "longitude": 4.778071,
+   "last_update": "2017-02-09T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4142,
+   "species_fr": "QUERCUS RUBRA: chêne rouge d'Amérique",
+   "locality_fr": "Rue des Anciens Combattants d'Afrique du Nord",
+   "condition_fr": "Jeune sujet à fort potentiel, à mettre en valeur",
+   "latitude": 45.911838,
+   "longitude": 4.7801,
+   "last_update": "2017-02-09T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4143,
+   "species_fr": "CEDRUS ATLANTICA: cèdre d'Atlas",
+   "locality_fr": "70 chemin de Grenettes",
+   "condition_fr": "Arbre structurant dans le paysage et de dimension exceptionnelle",
+   "latitude": 45.919537,
+   "longitude": 4.756439,
+   "last_update": "2017-02-09T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4144,
+   "species_fr": "CEDRUS ATLANTICA: cèdre d'atlas",
+   "locality_fr": "100 chemin des Grenettes",
+   "condition_fr": "Arbre structurant dans le paysage et de dimension exceptionnelle",
+   "latitude": 45.919333,
+   "longitude": 4.756717,
+   "last_update": "2017-02-09T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4145,
+   "species_fr": "QUERCUS PEDUNCULATUS: chêne pédonculé",
+   "locality_fr": "Lieu-dit La Frary",
+   "condition_fr": "Arbre remarquable par ses dimensions, son âge, son état et son rôle structurant dans le paysage",
+   "latitude": 45.907992,
+   "longitude": 4.756234,
+   "last_update": "2017-02-09T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4146,
+   "species_fr": "QUERCUS PEDUNCULATUS : chêne pédonculé",
+   "locality_fr": "67 impasse des Renards, hameau de la Chapelle",
+   "condition_fr": "Arbre remarquable par ses dimensions, son âge, son état et son rôle structurant dans le paysage",
+   "latitude": 45.907101,
+   "longitude": 4.7571,
+   "last_update": "2017-02-09T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4147,
+   "species_fr": "QUERCUS PEDUNCULATUS: chêne pédonculé",
+   "locality_fr": "Chemin de la Colette",
+   "condition_fr": "Arbre remarquable par ses dimensions, son âge, son état et son rôle structurant dans le paysage",
+   "latitude": 45.90891,
+   "longitude": 4.756473,
+   "last_update": "2017-02-09T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4148,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "8, rue Jean Chirat",
+   "condition_fr": "Grand sujet isolé, situé dans une cour, en bonne santé.",
+   "latitude": 45.865099,
+   "longitude": 4.831607,
+   "last_update": "2016-08-05T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4149,
+   "species_fr": "GINCKO BILOBA",
+   "locality_fr": "Ecole Primaire. 55 avenue Gabriel Péri",
+   "condition_fr": "L'arbre en bonne santé a été conservé dans la cour de l'école qui a été construi",
+   "latitude": 45.866762,
+   "longitude": 4.832548,
+   "last_update": "2016-08-05T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4150,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Square de Villevert.",
+   "condition_fr": "Essence répandue à Lyon mais sujets (2) exceptionnels par leur grande taille et son excellente santé. Position très en vue au débouché du pont Villevert",
+   "latitude": 45.876291,
+   "longitude": 4.83512,
+   "last_update": "2016-08-05T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4151,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Square de Villevert.",
+   "condition_fr": "Essence répandue à Lyon mais sujets (1) exceptionnels par leur grande taille et son excellente santé. Position très en vue au débouché du pont Villevert",
+   "latitude": 45.876421,
+   "longitude": 4.835201,
+   "last_update": "2016-08-05T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4152,
+   "species_fr": "ARAUCARIA ARAUCANA.",
+   "locality_fr": "15 rue Racine.",
+   "condition_fr": "Arbre très rare en physionomie adulte dans la Métropole de Lyon. Remarquable malgré sa taille moyenne.",
+   "latitude": 45.872074,
+   "longitude": 4.842775,
+   "last_update": "2017-02-27T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4153,
+   "species_fr": "AESCULUS HIPPOCASTANUM",
+   "locality_fr": "Chemin de Parenty",
+   "condition_fr": "Individu de grande hauteur. En bonne santé malgré son âge.",
+   "latitude": 45.87534,
+   "longitude": 4.842714,
+   "last_update": "2016-08-09T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4154,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Route d'Heyrieux, angle rue H. Maréchal.",
+   "condition_fr": "Groupe de grands cèdres servant de repère pour les avions dans le passé.",
+   "latitude": 45.690593,
+   "longitude": 4.938162,
+   "last_update": "2016-02-05T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4155,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Route d'Heyrieux, angle rue H. Maréchal.",
+   "condition_fr": "Groupe de grands cèdres servant de repère pour les avions dans le passé.",
+   "latitude": 45.690651,
+   "longitude": 4.938385,
+   "last_update": "2016-02-05T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4156,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Route d'Heyrieux, angle rue H. Maréchal.",
+   "condition_fr": "Groupe de grands cèdres servant de repère pour les avions dans le passé.",
+   "latitude": 45.690621,
+   "longitude": 4.938624,
+   "last_update": "2016-02-05T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4157,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Parc du Château.",
+   "condition_fr": "Grand arbre en bonne santé. Très en vue.",
+   "latitude": 45.696748,
+   "longitude": 4.942308,
+   "last_update": "2024-11-06T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4158,
+   "species_fr": "QUERCUS PETRAE : chêne sessile.",
+   "locality_fr": "Rue Montesquieu.",
+   "condition_fr": "Deux individus de bonne taille. Bon état sanitaire. Implantés le long d'un ancien chemin rural, configuration très rare et typique des grandes haies vives du passé.",
+   "latitude": 45.703333,
+   "longitude": 4.947947,
+   "last_update": "2019-03-28T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4159,
+   "species_fr": "QUERCUS PETRAE : chêne sessile.",
+   "locality_fr": "Rue Montesquieu.",
+   "condition_fr": "Deux individus de bonne taille. Bon état sanitaire. Implantés le long d'un ancien chemin rural, configuration très rare et typique des grandes haies vives du passé.",
+   "latitude": 45.703373,
+   "longitude": 4.948108,
+   "last_update": "2019-03-28T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4160,
+   "species_fr": "QUERCUS PEDUNCULATUS: chêne pédonculé",
+   "locality_fr": "Impasse de Champezat, Lieu-dit le Petit Rivat",
+   "condition_fr": "Arbre remarquable par ses dimensions , son âge, son état et son rôle structurant dans le paysage.",
+   "latitude": 45.906657,
+   "longitude": 4.760326,
+   "last_update": "2017-02-22T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4161,
+   "species_fr": "QUERCUS PEDUNCULATUS: chêne pédonculé",
+   "locality_fr": "170 rue de la Chapelle, Hameau de la Chapelle",
+   "condition_fr": "Arbre remarquable par ses dimensions, son âge, son état et son rôle structurant dans le paysage",
+   "latitude": 45.907941,
+   "longitude": 4.756439,
+   "last_update": "2017-02-09T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4162,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "22 rue Henri Chevalier.",
+   "condition_fr": "Classement de ce cèdre en EBC ponctuel : Seul arbre de grande hauteur du quartier. Bon état sanitaire.",
+   "latitude": 45.78399,
+   "longitude": 4.825778,
+   "last_update": "2023-10-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4163,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Rue du Lavoir. Parc municipal.",
+   "condition_fr": "Arbre de très grande taille. Bon état sanitaire. Marquant dans la végétation du parc",
+   "latitude": 45.89668,
+   "longitude": 4.842238,
+   "last_update": "2016-10-06T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4164,
+   "species_fr": "QUERCUS PEDUNCULATUS: chêne pédonculé",
+   "locality_fr": "170 rue de la Chapelle, Hameau de la Chapelle",
+   "condition_fr": "Arbre remarquable par ses dimensions, son âge, son état et son rôle structurant dans le paysage",
+   "latitude": 45.908186,
+   "longitude": 4.756414,
+   "last_update": "2017-02-09T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4165,
+   "species_fr": "AILANTHUS ALTISSIMA : ailanthe.",
+   "locality_fr": "Centre de la commune, avenue Charles de Gaulle.",
+   "condition_fr": "Essence d'ornement très utilisée au début du XXème siècle mais abandonnée car trop envahissante. Individu isolé de très grande taille et en bonne santé.",
+   "latitude": 45.782301,
+   "longitude": 4.737906,
+   "last_update": "2016-07-13T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4166,
+   "species_fr": "QUERCUS ROBUR : chêne pédonculé.",
+   "locality_fr": "Angle chemin vert, chemin du Grand Chêne.",
+   "condition_fr": "Individu très ancien témoignant de l'ancienne forêt de chêne du plateau de Charbonnières. Très visible en bordure de voie. Etat convenable.",
+   "latitude": 45.775905,
+   "longitude": 4.738679,
+   "last_update": "2016-07-13T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4167,
+   "species_fr": "QUERCUD ROBUR : chêne pédonculé.",
+   "locality_fr": "Chemin du Barthélémy.",
+   "condition_fr": "Au-dessus d'un ensemble immobilier. Dimension et état de santé remarquables.",
+   "latitude": 45.783101,
+   "longitude": 4.739495,
+   "last_update": "2017-02-27T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4168,
+   "species_fr": "CEDRUS ATLANTICA : cèdre de l'Atlas.",
+   "locality_fr": "Angle montée du Vieux Pont, chemin de la Ferrière.",
+   "condition_fr": "Grand individu en bonne santé, visible de loin.",
+   "latitude": 45.777182,
+   "longitude": 4.74084,
+   "last_update": "2016-07-13T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4169,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Avenue Lamartine, angle du pont sur le ruisseau de Charbonnières.",
+   "condition_fr": "Bel individu en bonne santé. Très en vue.",
+   "latitude": 45.778625,
+   "longitude": 4.741739,
+   "last_update": "2016-07-13T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4170,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Chemin de Tracol, 50 m au bord du croisement du chemin du clos des sapins.",
+   "condition_fr": "Bel arbre à l'arrière d'une maison individuelle. En vue.",
+   "latitude": 45.782711,
+   "longitude": 4.74227,
+   "last_update": "2016-07-13T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4171,
+   "species_fr": "Platanus acerifolia, Platane",
+   "locality_fr": "Place Gilbert Boissier",
+   "condition_fr": "Arbre de belle ampleur en bon état sanitaire, marqueur d'espace ayant un intérêt paysager et écologique",
+   "latitude": 45.786673,
+   "longitude": 4.927229,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4172,
+   "species_fr": "MAGNOLIA GRANDIFOLIA",
+   "locality_fr": "48 Avenue de la Libération",
+   "condition_fr": "Arbre de belle ampleur pour cette espèce au feuillage persistant, avec un port arrondi. Cet arbre est en très bon état sanitaire et n'a subi aucune taille préjudiciable.",
+   "latitude": 45.775736,
+   "longitude": 4.998727,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4173,
+   "species_fr": "Fagus sylvatica purpurea (hêtre pourpre)",
+   "locality_fr": "55 rue Georges Clémenceau",
+   "condition_fr": "arbre faisant parti du patrimoine d'un ancien parc, historique lié au lieu (maison bourgeoise), sujet marquant du quartier, bon état sanitaire",
+   "latitude": 45.819209,
+   "longitude": 4.845655,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4174,
+   "species_fr": "Cedrus atlantica glauca (cèdre)",
+   "locality_fr": "55 rue Georges Clémenceau",
+   "condition_fr": "arbre faisant parti du patrimoine d'un ancien parc, historique lié au lieu (maison bourgeoise), sujet marquant du quartier, bon état sanitaire",
+   "latitude": 45.819482,
+   "longitude": 4.845889,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4175,
+   "species_fr": "Taxus baccata (if)",
+   "locality_fr": "55 rue Georges Clémenceau",
+   "condition_fr": "arbre faisant parti du patrimoine d'un ancien parc, historique lié au lieu (maison bourgeoise), sujet marquant du quartier, bon état sanitaire",
+   "latitude": 45.81935,
+   "longitude": 4.845441,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4176,
+   "species_fr": "Tilia plathyphyllos : tilleul",
+   "locality_fr": "Place Carrand",
+   "condition_fr": "arbre isolé remarquable de par sa valeur patrimoniale et sa situation dans le paysage, très visible depuis la voie, bon état sanitaire",
+   "latitude": 45.82542,
+   "longitude": 4.829277,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4177,
+   "species_fr": "CEDRUS ATLANTICA : cèdre de l'Atlas",
+   "locality_fr": "7 rue Jean-Claude Martin",
+   "condition_fr": "Arbre qui qualifie l'angle entre la rue Jean-Claude Martin et la rue Centrale et manifeste une présence végétale marquante dans un environnement très minéral.",
+   "latitude": 45.746035,
+   "longitude": 4.72714,
+   "last_update": "2024-10-08T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4178,
+   "species_fr": "CEDRUS ATLANTICA GLAUCA : cèdre bleu de l'Atlas",
+   "locality_fr": "1 allée du Charron",
+   "condition_fr": "Arbre qui constitue une respiration végétale dans le tissu urbain très minéral et continu de l'axe Dumond / Millaud.",
+   "latitude": 45.747437,
+   "longitude": 4.71379,
+   "last_update": "2024-10-08T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4179,
+   "species_fr": "CEDRUS ATLANTICA : cèdre de l'Atlas",
+   "locality_fr": "39 rue Centrale",
+   "condition_fr": "Cèdre visible depuis le domaine public et qui fait écho à l'alignement de Cèdres situé de l'autre côté de la rue.",
+   "latitude": 45.745752,
+   "longitude": 4.719299,
+   "last_update": "2024-10-08T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4180,
+   "species_fr": "CEDRUS ATLANTICA : Cèdre de l'Atlas",
+   "locality_fr": "Avenue de la Gare",
+   "condition_fr": "Sujet bordant l'avenue de la Gare. Valeur paysagère en tant que composant d'un alignement d'arbres structurant l'espace public. Bon état sanitaire.",
+   "latitude": 45.875468,
+   "longitude": 4.832365,
+   "last_update": "2017-01-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4181,
+   "species_fr": "LIRIODENDRON TULIPIFERA Tulipier",
+   "locality_fr": "6 chemin des combes",
+   "condition_fr": "Essence rare de cette taille dans les propriétés. Bon état sanitaire.",
+   "latitude": 45.809729,
+   "longitude": 4.825889,
+   "last_update": "2016-06-08T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4182,
+   "species_fr": "PLATANUS ACERIFOLIA : platane",
+   "locality_fr": "Rue Condorcet près croisement Avenue Roger Salengro.",
+   "condition_fr": "Platane isolé de grande taille et très ancien. Témoignage des propriétés du passé",
+   "latitude": 45.774964,
+   "longitude": 4.867876,
+   "last_update": "2017-02-15T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4183,
+   "species_fr": "QUERCUS ROBUR : chêne pédonculé.",
+   "locality_fr": "Rue Viret angle Françis de Pressensé",
+   "condition_fr": "Espèce rare à Villeurbanne. Bonne santé. Grande dimension.",
+   "latitude": 45.772238,
+   "longitude": 4.875398,
+   "last_update": "2017-02-15T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4184,
+   "species_fr": "GINCKO BILOBA",
+   "locality_fr": "Rue Valentin Haüy",
+   "condition_fr": "Rare représentant del'essence à Villeurbanne. Bon état sanitaire. Présence dans le parc du rectorat",
+   "latitude": 45.758856,
+   "longitude": 4.883799,
+   "last_update": "2017-02-15T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4185,
+   "species_fr": "CARPINUS BETULUS : charme commun",
+   "locality_fr": "187A Rue Françis de Pressensé. Jardinerie",
+   "condition_fr": "Arbre de taille moyenne mais très rare en milieu urbain",
+   "latitude": 45.771337,
+   "longitude": 4.886248,
+   "last_update": "2017-02-15T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4186,
+   "species_fr": "PINUS NIGRA : pin noir",
+   "locality_fr": "152 Bld Eugène Réguillon - Château Grandclément",
+   "condition_fr": "Individu de grande taille dans petit parc de grande valeur paysagère",
+   "latitude": 45.760775,
+   "longitude": 4.895228,
+   "last_update": "2017-02-15T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4187,
+   "species_fr": "QUERCUS ILEX : chêne vert.",
+   "locality_fr": "Parc de Beauregard.",
+   "condition_fr": "Quatre individus de cette variété de chêne.Bon état. Situées à la limite septentrionale de l'aire géographique de l'espèce.",
+   "latitude": 45.692936,
+   "longitude": 4.787102,
+   "last_update": "2017-02-24T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4188,
+   "species_fr": "QUERCUS ILEX : chêne vert.",
+   "locality_fr": "Parc de Beauregard.",
+   "condition_fr": "Quatre individus de cette variété de chêne.Bon état. Situées à la limite septentrionale de l'aire géographique de l'espèce.",
+   "latitude": 45.6929,
+   "longitude": 4.787227,
+   "last_update": "2017-02-24T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4189,
+   "species_fr": "QUERCUS ILEX : chêne vert.",
+   "locality_fr": "Parc de Beauregard.",
+   "condition_fr": "Quatre individus de cette variété de chêne.Bon état. Situées à la limite septentrionale de l'aire géographique de l'espèce.",
+   "latitude": 45.693021,
+   "longitude": 4.787288,
+   "last_update": "2017-02-24T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4190,
+   "species_fr": "QUERCUS ILEX : chêne vert.",
+   "locality_fr": "Parc de Beauregard.",
+   "condition_fr": "Quatre individus de cette variété de chêne.Bon état. Situées à la limite septentrionale de l'aire géographique de l'espèce.",
+   "latitude": 45.692876,
+   "longitude": 4.787505,
+   "last_update": "2017-02-24T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4191,
+   "species_fr": "TAXODIUM : cyprès chauve.",
+   "locality_fr": "Chemin de Montlouis.",
+   "condition_fr": "Individu de très grande taille, près d'une source. Excellent état. Assez peu visible.",
+   "latitude": 45.712649,
+   "longitude": 4.789219,
+   "last_update": "2017-02-24T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4192,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Allée Guimet.",
+   "condition_fr": "Alignements d'arbres centenaires en excellente santé dans le parc de la propriété Guimet. Prégnance paysagère.",
+   "latitude": 45.854641,
+   "longitude": 4.840353,
+   "last_update": "2017-02-03T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4193,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Allée Guimet.",
+   "condition_fr": "Alignements d'arbres centenaires en excellente santé dans le parc de la propriété Guimet. Prégnance paysagère.",
+   "latitude": 45.854654,
+   "longitude": 4.83973,
+   "last_update": "2017-02-03T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4194,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Allée Guimet.",
+   "condition_fr": "Alignements d'arbres centenaires en excellente santé dans le parc de la propriété Guimet. Prégnance paysagère.",
+   "latitude": 45.854694,
+   "longitude": 4.839562,
+   "last_update": "2017-02-03T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4195,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Allée Guimet.",
+   "condition_fr": "Alignements d'arbres centenaires en excellente santé dans le parc de la propriété Guimet. Prégnance paysagère.",
+   "latitude": 45.854691,
+   "longitude": 4.840168,
+   "last_update": "2017-02-03T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4196,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Allée Guimet.",
+   "condition_fr": "Alignements d'arbres centenaires en excellente santé dans le parc de la propriété Guimet. Prégnance paysagère.",
+   "latitude": 45.854731,
+   "longitude": 4.840018,
+   "last_update": "2017-02-03T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4197,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Allée Guimet.",
+   "condition_fr": "Alignements d'arbres centenaires en excellente santé dans le parc de la propriété Guimet. Prégnance paysagère.",
+   "latitude": 45.854765,
+   "longitude": 4.839876,
+   "last_update": "2017-02-03T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4198,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "14, Grande rue.",
+   "condition_fr": "Arbre de grande taille. Bon état sanitaire. Essence rare dans la commune.",
+   "latitude": 45.864596,
+   "longitude": 4.843516,
+   "last_update": "2017-02-03T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4199,
+   "species_fr": "GINKO BILOBA : Arbre aux quarante écus.",
+   "locality_fr": "30 rue Termier.",
+   "condition_fr": "Arbre centenaire d'une taille remarquable pour cette essence (hauteur 21m, diamètre 20m).",
+   "latitude": 45.803875,
+   "longitude": 4.838469,
+   "last_update": "2017-02-14T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4200,
+   "species_fr": "FAGUS SYLVATICA : hêtre.",
+   "locality_fr": "Rue Laure Diebold.",
+   "condition_fr": "Très grand exemplaire. Excellente santé.Epargné par le périphérique nord.",
+   "latitude": 45.779303,
+   "longitude": 4.796226,
+   "last_update": "2016-06-30T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4201,
+   "species_fr": "JUGLANS OVOIDA ''Hickory'' : Caryer d'Amérique.",
+   "locality_fr": "Jardin des Chartreux. Cours du Général Giraud;",
+   "condition_fr": "Grand exemplaire. Bonne santé. Arbre devenu rare dans le Grand Lyon.",
+   "latitude": 45.769314,
+   "longitude": 4.824323,
+   "last_update": "2016-06-30T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4202,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Montée de Balmont la Duchère - centre social.",
+   "condition_fr": "Deux très grands arbres de 35 m de haut. excellent état sanitaire. Visibles bien",
+   "latitude": 45.784518,
+   "longitude": 4.800076,
+   "last_update": "2016-06-30T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4203,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Montée de Balmont la Duchère - centre social.",
+   "condition_fr": "Deux très grands arbres de 35 m de haut.Excellent état sanitaire. Visibles bien",
+   "latitude": 45.784549,
+   "longitude": 4.800167,
+   "last_update": "2016-06-30T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4204,
+   "species_fr": "PLATANUS ACERIFOLIA : groupe de 3 platanes.",
+   "locality_fr": "Même localisation mais plus au nord.",
+   "condition_fr": "Très grands arbres. Parfaite santé. Très lisibles dans le paysage.",
+   "latitude": 45.785146,
+   "longitude": 4.800836,
+   "last_update": "2016-06-30T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4205,
+   "species_fr": "PLATANUS ACERIFOLIA : groupe de 3 platanes.",
+   "locality_fr": "Même localisation mais plus au nord.",
+   "condition_fr": "Très grands arbres. Parfaite santé.Très lisibles dans le paysage.",
+   "latitude": 45.785214,
+   "longitude": 4.800915,
+   "last_update": "2016-06-30T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4206,
+   "species_fr": "PLATANUS ACERIFOLIA : groupe de 3 platanes.",
+   "locality_fr": "Même localisation mais plus au nord.",
+   "condition_fr": "Très grands arbres. Parfaite santé. Très lisibles dans le paysage.",
+   "latitude": 45.785111,
+   "longitude": 4.800925,
+   "last_update": "2016-06-30T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4207,
+   "species_fr": "QUERCUS ROBUR : chêne pédonculé.",
+   "locality_fr": "Chemin de Chantegrillet. Couvent.",
+   "condition_fr": "Deux exemplaires de grande taille. Bon état sanitaire.",
+   "latitude": 45.744566,
+   "longitude": 4.788834,
+   "last_update": "2016-06-30T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4208,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Chemin de la Croix Berthet. Fond du parc de l'ADAPEI.",
+   "condition_fr": "Arbre de très grande dimension.  Diamètre à la base de plus de 3 mètres. Au moin",
+   "latitude": 45.725129,
+   "longitude": 4.79336,
+   "last_update": "2016-06-30T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4209,
+   "species_fr": "FAGUS SYLVATICA PENDULA : hêtre pleureur.",
+   "locality_fr": "Avenue Valioud. Dans parc.",
+   "condition_fr": "Rare exemple conservé en bon état de cette création des paysagistes lyonnais du",
+   "latitude": 45.740218,
+   "longitude": 4.807415,
+   "last_update": "2017-02-08T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4210,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "3 bis, angle chemin de Fontanières et Montée de la Fournache.",
+   "condition_fr": "Très beau représentant de l'espèce planté en 1902. Excellent état sanitaire.",
+   "latitude": 45.738795,
+   "longitude": 4.808443,
+   "last_update": "2016-06-30T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4211,
+   "species_fr": "PLATANUS 'X' HISPANICA : Platane à feuilles d'érable",
+   "locality_fr": "Rue Professeur Calmette",
+   "condition_fr": "Arbre adulte de grande taille, caractérisé par un fut très droit de 12m et un houppier structuré et majestueux, composé de trois charpentières massives de tailles sensiblement identiques. Cet arbre marque également de façon très significative le paysage et devient un point d'encrage visuel du quartier.",
+   "latitude": 45.711223,
+   "longitude": 4.813406,
+   "last_update": "2017-02-23T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4212,
+   "species_fr": "PINUS NIGRA : pin noir d'Autriche;",
+   "locality_fr": "Avenue Sylvin.",
+   "condition_fr": "Arbre de grande taille dans la pente au dessus du chemin des Amoureux.",
+   "latitude": 45.769416,
+   "longitude": 4.96225,
+   "last_update": "2017-02-06T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4213,
+   "species_fr": "CEDRUS ATLANTICA : cèdre de l'Atlas",
+   "locality_fr": "Hameau des Chavanes",
+   "condition_fr": "Arbre en bon état sanitaire qui marque un croisement et est un repère dans le grand paysage",
+   "latitude": 45.855329,
+   "longitude": 4.796962,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4214,
+   "species_fr": "CEDRUS LIBANI : Cèdre du Liban.",
+   "locality_fr": "Angle des rues Clos Savaron et Chevalier.",
+   "condition_fr": "Magnifique sujet avec une belle silhouette implanté dans un jardin d'une maison individuelle.",
+   "latitude": 45.78333,
+   "longitude": 4.826735,
+   "last_update": "2021-09-09T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4215,
+   "species_fr": "CEDRUS LIBANI : Cèdre du Liban.",
+   "locality_fr": "40, rue Jacques-Louis Hénon.",
+   "condition_fr": "Très beau cèdre situé dans un jardin privé, avec un port horizontal et une silhouette très particulière qui apporte un couvert végétal important et une identité forte au lieu.",
+   "latitude": 45.779678,
+   "longitude": 4.827907,
+   "last_update": "2021-09-10T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4216,
+   "species_fr": "CEDRUS LIBANI : Cèdre du Liban.",
+   "locality_fr": "Square Gustave-Auguste Ferrié, Angle rue Jacques-Louis Hénon et rue Deleuvre.",
+   "condition_fr": "Groupe de 3 grands cèdres qui marque l'entrée du square et apporte une belle identité au jardin public.",
+   "latitude": 45.779705,
+   "longitude": 4.82518,
+   "last_update": "2021-09-10T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4217,
+   "species_fr": "QUERCUS RUBRA : Chêne rouge d'Amérique.",
+   "locality_fr": "Square Gustave-Auguste Ferrié, rue Jacques-Louis Hénon.",
+   "condition_fr": "Très grand et très beau sujet situé dans le square public, en bordure de voie, remarquable par sa taille et son envergure.",
+   "latitude": 45.779871,
+   "longitude": 4.825132,
+   "last_update": "2021-09-10T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4218,
+   "species_fr": "CEDRUS LIBANI : Cèdre du Liban.",
+   "locality_fr": "68, rue Jacques-Louis Hénon.",
+   "condition_fr": "Grand et beau sujet situé dans un jardin privé situé au Nord/Ouest du square Gustave-Auguste.",
+   "latitude": 45.779917,
+   "longitude": 4.824266,
+   "last_update": "2021-09-10T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4219,
+   "species_fr": "FAGUS SYLVATICA PURPUREA : ensemble de 3 hêtres pourpres.",
+   "locality_fr": "Square Gustave-Auguste Ferrié, Angle rue Deleuvre.",
+   "condition_fr": "Très bel ensemble compose de 3 hêtres, situé dans le square public, remarquables par leur taille et la relative rareté de cette essence dans la région lyonnaise.",
+   "latitude": 45.779687,
+   "longitude": 4.824871,
+   "last_update": "2021-09-10T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4220,
+   "species_fr": "CEDRUS LIBANI : Cèdre du Liban",
+   "locality_fr": "28 avenue Général Leclerc.",
+   "condition_fr": "Classement de ce cèdre en EBC ponctuel : Cèdre du Liban parfaitement entretenu. Bel impact paysager.",
+   "latitude": 45.800381,
+   "longitude": 4.854654,
+   "last_update": "2023-10-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4221,
+   "species_fr": "QUERCUS ROBUR : chêne pédonculé.",
+   "locality_fr": "Chemin des Amoureux.",
+   "condition_fr": "Très grands arbres en bas de pente. Témoignages du boisement ancien des pentes du Mollard de Décines.",
+   "latitude": 45.768482,
+   "longitude": 4.962123,
+   "last_update": "2017-02-06T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4222,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Rue du 8 mai 1945.",
+   "condition_fr": "Très grand exemplaire de l'espèce conservé dans l'opération de construction en cours.",
+   "latitude": 45.769319,
+   "longitude": 5.001362,
+   "last_update": "2017-02-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4223,
+   "species_fr": "PLATANUS ACERIFOLIA: platane.",
+   "locality_fr": "Rue J.Raclet.",
+   "condition_fr": "Débouché du Pont de Jonage.Individus remarquables par leur taille.",
+   "latitude": 45.798215,
+   "longitude": 5.040315,
+   "last_update": "2016-07-18T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4224,
+   "species_fr": "LIRIODENDRON TULIPIFERA : Tulipier de Virginie",
+   "locality_fr": "Chemin de l'Eperon , Domaine de la Freta",
+   "condition_fr": "Essence de collection rare, dimension et équilibre de la couronne remarquable. Marque le paysage",
+   "latitude": 45.83618,
+   "longitude": 4.831,
+   "last_update": "2017-01-12T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4225,
+   "species_fr": "GINKGO BILOBA",
+   "locality_fr": "Chemin de l'Eperon, Domaine de la Freta",
+   "condition_fr": "Arbre mature avec couronne équilibrée. Marque le paysage",
+   "latitude": 45.836073,
+   "longitude": 4.830842,
+   "last_update": "2017-01-12T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4226,
+   "species_fr": "CEDRUS ATLANTICA : cèdre de l'Atlas.",
+   "locality_fr": "Rue du Tourrillon,angle rue des Aqueducs.",
+   "condition_fr": "Essence banale mais excellent état sanitaire.Très visible à un croisement.",
+   "latitude": 45.748265,
+   "longitude": 4.736892,
+   "last_update": "2016-07-12T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4227,
+   "species_fr": "JUNIPERUS : juniperus",
+   "locality_fr": "Cimetière militaire",
+   "condition_fr": "Fome taillée, bel apport au lieu, rareté, forme effet de contraste avec le site, à maturité",
+   "latitude": 45.784507,
+   "longitude": 4.886208,
+   "last_update": "2016-11-09T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4228,
+   "species_fr": "JUNIPERUS : juniperus",
+   "locality_fr": "Cimetière militaire",
+   "condition_fr": "Fome taillée, bel apport au lieu, rareté, forme effet de contraste avec le site, à maturité",
+   "latitude": 45.784649,
+   "longitude": 4.886781,
+   "last_update": "2016-11-09T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4229,
+   "species_fr": "CUPRESSUS ARIZONICA : cyprès bleu",
+   "locality_fr": "Rue des Antonins",
+   "condition_fr": "Individu de grande taille - à maturité, essence rare, visibilité avec grande valeur paysagère",
+   "latitude": 45.779214,
+   "longitude": 4.879336,
+   "last_update": "2016-11-09T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4230,
+   "species_fr": "Cedrus atlantica glauca",
+   "locality_fr": "17, rue du Ferroux",
+   "condition_fr": "Cèdre en bon état sanitaire, marquant le paysage de par sa taille et sa teinte bleutée",
+   "latitude": 45.815694,
+   "longitude": 4.814029,
+   "last_update": "2021-05-28T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4231,
+   "species_fr": "CEDRUS ATLANTICA GLAUCA : Cèdre bleu de l'atlas",
+   "locality_fr": "70 rue Racine",
+   "condition_fr": "Arbre à l'échelle du bâtiment, à maturité, grande visibilité, forte présence au lieu",
+   "latitude": 45.764732,
+   "longitude": 4.878037,
+   "last_update": "2021-07-08T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4232,
+   "species_fr": "CEDRUS ALTANTICA GLAUCA: cèdre bleu de l atlas",
+   "locality_fr": "Impasse Brive",
+   "condition_fr": "Arbre adulte de grande ampleur, bon état sanitaire, rareté dans l environnement, forte présence",
+   "latitude": 45.761132,
+   "longitude": 4.90188,
+   "last_update": "2021-06-15T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4233,
+   "species_fr": "CEDRUS ALTANTICA GLAUCA: cèdre bleu de l atlas",
+   "locality_fr": "Impasse Brive",
+   "condition_fr": "Arbre adulte de grande ampleur, bon état sanitaire, rareté dans l environnement, forte présence",
+   "latitude": 45.760741,
+   "longitude": 4.901792,
+   "last_update": "2021-06-15T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4234,
+   "species_fr": "CEDRUS ALTANTICA GLAUCA: cèdre bleu de l atlas",
+   "locality_fr": "Impasse Brive",
+   "condition_fr": "Arbre adulte de grande ampleur, bon état sanitaire, rareté dans l environnement, forte présence",
+   "latitude": 45.761384,
+   "longitude": 4.901649,
+   "last_update": "2021-06-15T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4235,
+   "species_fr": "CEDRUS ATLANTICA: Cèdre de l Atlas",
+   "locality_fr": "Angle avenue Francis de Pressensé / impasse des Lilas",
+   "condition_fr": "Grande dimension, belle prestance dans le paysage, à maturité",
+   "latitude": 45.76951,
+   "longitude": 4.891036,
+   "last_update": "2021-06-15T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4236,
+   "species_fr": "CEDRUS ATLANTICA GLAUCA : Cèdre bleu de l atlas",
+   "locality_fr": "2, rue du Docteur Dolard",
+   "condition_fr": "Grande dimension, à maturité, grande visibilité avec valeur paysagère (rare conifére du quartier)",
+   "latitude": 45.763491,
+   "longitude": 4.872205,
+   "last_update": "2021-06-15T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4237,
+   "species_fr": "CEDRUS ATLANTICA GLAUCA : Cèdre bleuté",
+   "locality_fr": "9 rue de la Caille.",
+   "condition_fr": "Elément marquant du paysage pavillonnaire de ce quartier;",
+   "latitude": 45.751967,
+   "longitude": 4.895026,
+   "last_update": "2021-06-16T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4238,
+   "species_fr": "FAGUS SILVATICA f. purpurea:Hêtre pourpre",
+   "locality_fr": "5b rue du Mont Verdun",
+   "condition_fr": "Essence rare sur la métropole et arbre de belles dimensions",
+   "latitude": 45.798219,
+   "longitude": 4.79459,
+   "last_update": "2021-06-23T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4239,
+   "species_fr": "PAULOWIA TOMENTOSA",
+   "locality_fr": "88 chemin Neuf",
+   "condition_fr": "Arbre singulier à floraison printanière violette très visible et structurant",
+   "latitude": 45.909923,
+   "longitude": 4.764624,
+   "last_update": "2021-07-08T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4240,
+   "species_fr": "CEDRUS ATLANTICA: Cèdre de l Atlas",
+   "locality_fr": "88 chemin Neuf",
+   "condition_fr": "Arbre structurant le paysage, sain et avec un bon potentiel de développement",
+   "latitude": 45.909961,
+   "longitude": 4.764377,
+   "last_update": "2021-07-08T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4241,
+   "species_fr": "CEDRUS ATLANTICA: Cèdre de l Atlas",
+   "locality_fr": "138 chemin Neuf",
+   "condition_fr": "Arbre structurant le paysage, sain et avec un bon potentiel de développement",
+   "latitude": 45.9105,
+   "longitude": 4.764858,
+   "last_update": "2021-07-08T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4242,
+   "species_fr": "FRAXINUS EXCELSIOR: frêne commun",
+   "locality_fr": "Lieudit Pré des Serves",
+   "condition_fr": "Arbre structurant le paysage en entrée de hameau",
+   "latitude": 45.930014,
+   "longitude": 4.775725,
+   "last_update": "2021-07-08T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4243,
+   "species_fr": "JUGLANS REGIA: noyer commun",
+   "locality_fr": "685 route de Varennes",
+   "condition_fr": "Arbre structurant le paysage sain et bien développé",
+   "latitude": 45.929908,
+   "longitude": 4.775784,
+   "last_update": "2021-07-08T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4244,
+   "species_fr": "CEDRUS LIBANI: cèdre du Liban",
+   "locality_fr": "1 chemin Rochebozon",
+   "condition_fr": "Cèdre mature de grand développement, port régulier et équilibré, arbre sain et marquant dans le paysage.",
+   "latitude": 45.813309,
+   "longitude": 4.842127,
+   "last_update": "2021-08-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4245,
+   "species_fr": "PLATANUS ACERIFOLIA : platane",
+   "locality_fr": "Rue Pierre Termier",
+   "condition_fr": "Ce platane, en port naturel, jamais mutilé par des élagages depuis leur plantation, a développé une couronne d'une rare ampleur. L'espace dans lequel il est  placé permet justement ce développement exceptionnel de ce sujet (rarement visible sur la Métropole de Lyon). Cet arbre très sain a de plus, une grande espérance de vie",
+   "latitude": 45.81137,
+   "longitude": 4.839975,
+   "last_update": "2021-09-23T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4246,
+   "species_fr": "PLATANUS ACERIFOLIA : platane",
+   "locality_fr": "Rue PIerre Termier",
+   "condition_fr": "Ce platane, en port naturel, jamais mutilé par des élagages depuis leur plantation, a développé une couronne d'une rare ampleur. L'espace dans lequel il est  placé permet justement ce développement exceptionnel de ce sujet (rarement visible sur la Métropole de Lyon). Cet arbre très sain a de plus, une grande espérance de vie",
+   "latitude": 45.811083,
+   "longitude": 4.840172,
+   "last_update": "2021-09-23T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4247,
+   "species_fr": "CEDRUS LIBANI: cèdre du Liban",
+   "locality_fr": "1 chemin Rochebozon",
+   "condition_fr": "Cèdre mature de grand développement, port régulier et équilibré, arbre sain et marquant dans le paysage.",
+   "latitude": 45.813189,
+   "longitude": 4.842084,
+   "last_update": "2021-08-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4248,
+   "species_fr": "CEDRUS ATLANTICA : cèdre de l'atlas",
+   "locality_fr": "Au croisement de la rue Michel et du chemin rochebozon",
+   "condition_fr": "Grand cèdre isolé mature en bon état, très structurant pour le paysage et bien visible depuis l'espace public",
+   "latitude": 45.811935,
+   "longitude": 4.841136,
+   "last_update": "2021-08-02T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4249,
+   "species_fr": "CEDRUS ATLANTICA  : Cèdre de l Atlas",
+   "locality_fr": "415 chemin du Panorama.",
+   "condition_fr": "Classement de ce cèdre en EBC ponctuel. Beau sujet se démarquant dans le paysage.",
+   "latitude": 45.797626,
+   "longitude": 4.872315,
+   "last_update": "2023-10-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4250,
+   "species_fr": "CEDRUS LIBANI : Cèdre du Liban",
+   "locality_fr": "77 quai Clemenceau.",
+   "condition_fr": "Classement de ce cèdre en EBC ponctuel : Sujet de très belle envergure. Très bon état biomécanique.",
+   "latitude": 45.800465,
+   "longitude": 4.841449,
+   "last_update": "2023-10-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4251,
+   "species_fr": "QUERCUS ROBUR : Chêne pédonculé",
+   "locality_fr": "27 quai Clemenceau",
+   "condition_fr": "Classement en EBC ponctuel : Présence d'un beau chêne pédonculé de belle facture.",
+   "latitude": 45.792877,
+   "longitude": 4.827912,
+   "last_update": "2023-10-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4252,
+   "species_fr": "QUERCUS ROBUR : Chêne pédonculé",
+   "locality_fr": "27 quai Clemenceau",
+   "condition_fr": "Classement en EBC ponctuel : Présence d'un beau chêne pédonculé de belle facture",
+   "latitude": 45.7928,
+   "longitude": 4.827906,
+   "last_update": "2023-10-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4253,
+   "species_fr": "CEDRUS LIBANI : Cèdre du Liban",
+   "locality_fr": "9/11 chemin Jean Baptiste Gilliard",
+   "condition_fr": "Classement de ce cèdre en EBC ponctuel : Très beau cèdre du Liban : Houppier ramassé et très étalé, arbre bien entretenu.",
+   "latitude": 45.789833,
+   "longitude": 4.854573,
+   "last_update": "2023-10-04T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4254,
+   "species_fr": "MAGNOLIA GRANDIFLORA",
+   "locality_fr": "13 avenue Burdeau",
+   "condition_fr": "Magnolia de 10m de haut, houppier 8m de large, bon état sanitaire. Arbre restant de l'aménagement paysager typique du parc de la maison.",
+   "latitude": 45.874282,
+   "longitude": 4.839327,
+   "last_update": "2017-02-27T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4255,
+   "species_fr": "CEDRUS ATLANTICA: Cèdre de l'Atlas",
+   "locality_fr": "15 avenue Burdeau",
+   "condition_fr": "Très beau cèdre en très bon état sanitaire. Elément marquant dans le paysage.",
+   "latitude": 45.874113,
+   "longitude": 4.83922,
+   "last_update": "2017-02-27T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4256,
+   "species_fr": "CEDRUS ATLANTICA: Cèdre de l'Atlas",
+   "locality_fr": "19 avenue Burdeau",
+   "condition_fr": "Cèdre de 20m de haut, houppier 20m de large, en bon état sanitaire. Cet arbre est dans la continuité des autres cèdres des parcelles le long de la rue. Seul arbre restant sur cette parcelle de l'aménagement antérieur du parc de la villa.",
+   "latitude": 45.873384,
+   "longitude": 4.839335,
+   "last_update": "2017-02-27T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4257,
+   "species_fr": "MAGNOLIA GRANDIFLORA",
+   "locality_fr": "4 avenue Burdeau",
+   "condition_fr": "Magnolia de 12m de haut, houppier 10m de large, bon état sanitaire. Arbre restant de l'aménagement paysager typique du parc de la maison.",
+   "latitude": 45.874937,
+   "longitude": 4.838481,
+   "last_update": "2017-02-27T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4258,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Chemin des Ferratières.",
+   "condition_fr": "Second groupe de 3 platanes de même taille. Très visible dans le paysage.",
+   "latitude": 45.641431,
+   "longitude": 4.80318,
+   "last_update": "2016-09-22T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4259,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "35, quai JB. Simon.",
+   "condition_fr": "Spécimen devant des maisons de plaisance anciennes.",
+   "latitude": 45.82289,
+   "longitude": 4.859226,
+   "last_update": "2016-06-27T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4260,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Rue Gambetta.",
+   "condition_fr": "Arbre remarquable par sa dimension et sa position devant la Mairie.",
+   "latitude": 45.835618,
+   "longitude": 4.844967,
+   "last_update": "2016-06-27T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4261,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Avenue S. Rousseau-Grand chemin de Fontaine.",
+   "condition_fr": "Spécimen très visible car sur la pente.",
+   "latitude": 45.837053,
+   "longitude": 4.846921,
+   "last_update": "2016-06-27T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4262,
+   "species_fr": "PINUS NIGRA : pin noir.",
+   "locality_fr": "Rue du 8 mai 1945. Parc Elsa Triolet.",
+   "condition_fr": "Groupe de pins de bonne santé. Présence paysagère à l'entrée du parc.",
+   "latitude": 45.787235,
+   "longitude": 4.917934,
+   "last_update": "2016-07-28T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4263,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Rue du 8 mai 1945. Parc Elsa Triolet.",
+   "condition_fr": "Groupe de platanes de grande taille. En bonne santé. Présence paysagère.",
+   "latitude": 45.787531,
+   "longitude": 4.919284,
+   "last_update": "2016-07-28T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4264,
+   "species_fr": "FAGUS SYLVATICA : hêtre.",
+   "locality_fr": "20 avenue Pasteur.",
+   "condition_fr": "Individu de grande taille.Bon état sanitaire.Vu depuis la rue Pasteur.",
+   "latitude": 45.806035,
+   "longitude": 4.801078,
+   "last_update": "2017-02-07T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4265,
+   "species_fr": "FAGUS SYLVATICA : hêtre.",
+   "locality_fr": "20 avenue Pasteur.",
+   "condition_fr": "Individu de grande taille.Bon état sanitaire.Vu depuis la rue Pasteur.",
+   "latitude": 45.805841,
+   "longitude": 4.801143,
+   "last_update": "2017-02-07T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4266,
+   "species_fr": "AESCULUS HIPPOCASTANUM : marronnier.",
+   "locality_fr": "27 chemin du Bois.",
+   "condition_fr": "Individu très ancien et très haut.Excellent état sanitaire.En vue devant une demeure ancienne",
+   "latitude": 45.810041,
+   "longitude": 4.785627,
+   "last_update": "2017-02-07T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4267,
+   "species_fr": "FAGUS SYLVATICA : hêtre.",
+   "locality_fr": "Chemin Ferrand.Val Rozay.",
+   "condition_fr": "Grands individus devant le bâtiment de rééducation fonctionnelle.Excellent état. En pleine vue.",
+   "latitude": 45.798061,
+   "longitude": 4.811504,
+   "last_update": "2017-02-07T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4268,
+   "species_fr": "FAGUS SYLVATICA : hêtre.",
+   "locality_fr": "Chemin Ferrand.Val Rozay.",
+   "condition_fr": "Grands individus devant le bâtiment de rééducation fonctionnelle.Excellent état. En pleine vue.",
+   "latitude": 45.797874,
+   "longitude": 4.8115,
+   "last_update": "2017-02-07T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4269,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Plateau chemin Ferrand sur îlot directionnel.",
+   "condition_fr": "Très grand arbre bicentenaire.En vue.",
+   "latitude": 45.794051,
+   "longitude": 4.811878,
+   "last_update": "2017-02-07T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4270,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "21, rue Thimonnier.",
+   "condition_fr": "Essence répandue mais individu de dimensions remarquables. Bon état.",
+   "latitude": 45.767699,
+   "longitude": 4.758272,
+   "last_update": "2016-10-18T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4271,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Chemin des Ferratières.",
+   "condition_fr": "Second groupe de 3 platanes de même taille. Très visible dans le paysage.",
+   "latitude": 45.641566,
+   "longitude": 4.803292,
+   "last_update": "2016-09-22T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4272,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Chemin des Ferratières.",
+   "condition_fr": "Ensemble de deux platanes de très grande taille. Bon état. Impact paysager remarquable.",
+   "latitude": 45.641095,
+   "longitude": 4.803363,
+   "last_update": "2017-02-24T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4273,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Chemin des Ferratières.",
+   "condition_fr": "Ensemble de deux platanes de très grande taille. Bon état. Impact paysager remarquable.",
+   "latitude": 45.641049,
+   "longitude": 4.803522,
+   "last_update": "2017-02-24T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4274,
+   "species_fr": "QUERCUS FASTIGIATA ; chêne pyramidal.",
+   "locality_fr": "1, route de Charly, angle rue de la Maçonnière.",
+   "condition_fr": "Grand arbre ancien. Bon état. Bien visible.",
+   "latitude": 45.647625,
+   "longitude": 4.804232,
+   "last_update": "2016-09-22T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4275,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "1, route de Charly, angle rue de la Maçonnière.",
+   "condition_fr": "Très grand arbre ancien. Excellente santé. Prégnance paysagère.",
+   "latitude": 45.647857,
+   "longitude": 4.804841,
+   "last_update": "2016-09-22T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4276,
+   "species_fr": "SEQUOIA SEMPERVIRENS : séquoia.",
+   "locality_fr": "Chemin des Gaupières sous la maison du cardinal.",
+   "condition_fr": "Individu isolé très visible. Excellent état sanitaire.",
+   "latitude": 45.651896,
+   "longitude": 4.81163,
+   "last_update": "2016-09-22T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4277,
+   "species_fr": "CEDRUS ATLANTICA : Cèdre de l'Atlas",
+   "locality_fr": "Avenue Jean Estragnat",
+   "condition_fr": "Deux specimens très visibles depuis le domaine public, et aux caractéristiques morphologiques  remarquables (circonférence, couverture d'ombrage et hauteur).",
+   "latitude": 45.609352,
+   "longitude": 4.789328,
+   "last_update": "2017-02-24T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4278,
+   "species_fr": "CEDRUS ATLANTICA : Cèdre de l'Atlas",
+   "locality_fr": "Avenue Jean Estragnat",
+   "condition_fr": "Deux specimens très visibles depuis le domaine public, et aux caractéristiques morphologiques  remarquables (circonférence, couverture d'ombrage et hauteur).",
+   "latitude": 45.609314,
+   "longitude": 4.789512,
+   "last_update": "2017-02-24T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4279,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Allée Berger.",
+   "condition_fr": "Très grand et très bel exemplaire de l'essence . Excellent état. Visible.",
+   "latitude": 45.768961,
+   "longitude": 4.759926,
+   "last_update": "2017-02-10T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4280,
+   "species_fr": "FAGUS SYLVATICA PENDULA : hêtre pleureur.",
+   "locality_fr": "9, rue Mariettan.",
+   "condition_fr": "Très bel exemplaire de ce type d'arbre pleureur.",
+   "latitude": 45.765471,
+   "longitude": 4.76151,
+   "last_update": "2016-10-18T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4281,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "43, rue du 8 mai 1945.",
+   "condition_fr": "Arbre gigantesque dans le parc de la maison de la résidence le Tulipier.",
+   "latitude": 45.760519,
+   "longitude": 4.76844,
+   "last_update": "2017-02-10T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4282,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Avenue de la République.",
+   "condition_fr": "Arbre gigantesque. Un des plus imposants du Grand Lyon. Visible de très loin.",
+   "latitude": 45.763538,
+   "longitude": 4.777285,
+   "last_update": "2017-02-10T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4283,
+   "species_fr": "CEDRUS ATLANTICA : Cèdre de l'Atlas",
+   "locality_fr": "Quai de Villevert.",
+   "condition_fr": "Sujet remarquable d'un bosquet composant un grand parc urbain. Valeur paysagère. Bon état sanitaire.",
+   "latitude": 45.877941,
+   "longitude": 4.832344,
+   "last_update": "2017-01-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4284,
+   "species_fr": "ABIES ALBA : Sapin blanc",
+   "locality_fr": "Quai de Villevert.",
+   "condition_fr": "Elément d'un bosquet d'arbres bordants le Quai de Villevert. Valeur paysagère. Sujet sénescent.",
+   "latitude": 45.877752,
+   "longitude": 4.833836,
+   "last_update": "2017-01-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4285,
+   "species_fr": "PICEA ABIES : Epicéa",
+   "locality_fr": "Quai de Villevert.",
+   "condition_fr": "Elément d'un bosquet d'arbres bordants le Quai de Villevert. Valeur paysagère.Sujet visible depuis le quai de Saône. Bon état sanitaire.",
+   "latitude": 45.87782,
+   "longitude": 4.833922,
+   "last_update": "2017-01-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4286,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Chemin des Ferratières.",
+   "condition_fr": "Second groupe de 3 platanes de même taille. Très visible dans le paysage.",
+   "latitude": 45.641582,
+   "longitude": 4.803072,
+   "last_update": "2016-09-22T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4287,
+   "species_fr": "MAGNOLIA GRANDIFLORA : Magnolia",
+   "locality_fr": "7, avenue de la Gare",
+   "condition_fr": "Bon état sanitaire. Valeur paysagère. Position en vue depuis l'avenue de la Gare.",
+   "latitude": 45.875883,
+   "longitude": 4.834122,
+   "last_update": "2017-01-13T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4288,
+   "species_fr": "Cedrus deodara / Cèdre de l Himalaya",
+   "locality_fr": "Impasse Platière",
+   "condition_fr": "arbre marquant dans le paysage par sa situation, sa silhouette équilibrée et ses dimensions exceptionnelles . Arbre patrimonial à protéger et à mettre en valeur (taille douce à pratiquer côté bâtiments).",
+   "latitude": 45.589046,
+   "longitude": 4.767878,
+   "last_update": "2017-02-20T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4289,
+   "species_fr": "SEQUOIA SEMPERVIRENS : séquoia.",
+   "locality_fr": "105, route de Saint-Fortunat.",
+   "condition_fr": "Deux exemplaires en bon état et de grande dimension.",
+   "latitude": 45.807705,
+   "longitude": 4.809881,
+   "last_update": "2016-06-08T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4290,
+   "species_fr": "CEDRUS LIBAN I : Cèdre du Liban.",
+   "locality_fr": "105, route de Saint-Fortunat angle montée des Auges.",
+   "condition_fr": "Très grand arbre.Un des plus hauts du Grand Lyon.Plus de 150 ans.Excellent état sanitaire",
+   "latitude": 45.807354,
+   "longitude": 4.810176,
+   "last_update": "2016-06-08T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4291,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Impasse de Chazières. Les hauts de saône.",
+   "condition_fr": "groupe de 3 platanes de 35 m de haut. Visibles de la vallée de la Saône. excelle",
+   "latitude": 45.781089,
+   "longitude": 4.813995,
+   "last_update": "2016-07-21T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4292,
+   "species_fr": "FAGUS SYLVATICA : hêtre.",
+   "locality_fr": "73, Route de St Romain.",
+   "condition_fr": "Essence menacée dans le Grand Lyon.Individus anciens devenus rares.Excellent état sanitaire",
+   "latitude": 45.818833,
+   "longitude": 4.829791,
+   "last_update": "2016-06-08T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4293,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Impasse de Chazières. Les hauts de saône.",
+   "condition_fr": "groupe de 3 platanes de 35 m de haut. Visibles de la vallée de la Saône. excelle",
+   "latitude": 45.78099,
+   "longitude": 4.814059,
+   "last_update": "2016-07-21T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4294,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Impasse de Chazières. Les hauts de saône.",
+   "condition_fr": "groupe de 3 platanes de 35 m de haut. Visibles de la vallée de la Saône. excelle",
+   "latitude": 45.780905,
+   "longitude": 4.81422,
+   "last_update": "2016-07-21T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4295,
+   "species_fr": "TILIA : tilleul",
+   "locality_fr": "Rue Lafontaine/Florian",
+   "condition_fr": "Bel apport au lieu, grande visibilité, forme très homogène, à maturité",
+   "latitude": 45.759829,
+   "longitude": 4.881324,
+   "last_update": "2016-11-09T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4296,
+   "species_fr": "CEDRUS ATLANTICA : cède de l'Atlas",
+   "locality_fr": "13 Rue du Luxembourg",
+   "condition_fr": "Forme naturelle remarquable, de grande dimension, à maturité, forte présence",
+   "latitude": 45.749721,
+   "longitude": 4.91469,
+   "last_update": "2017-02-15T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4297,
+   "species_fr": "SEQUOIA SEMPERVIRENS : séquoia.",
+   "locality_fr": "70, rue des Selettes.",
+   "condition_fr": "Très bel arbre isolé en contrebas du château. Excellent état.",
+   "latitude": 45.665881,
+   "longitude": 4.826425,
+   "last_update": "2019-04-08T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4298,
+   "species_fr": "CEDRUS LIBANI: cèdre du Liban.",
+   "locality_fr": "24, rue de la Damette.",
+   "condition_fr": "Très grand arbre dans le parc du château de la Damette. Excellent état. Très en vue au-dessus du mur de soutènement",
+   "latitude": 45.673331,
+   "longitude": 4.829851,
+   "last_update": "2017-02-20T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4299,
+   "species_fr": "AESCULUS HIPPOCASTANUM: marronnier.",
+   "locality_fr": "68, rue du Vieux Port.",
+   "condition_fr": "Arbre pluri centenaire .L'un des plus importants du Grand Lyon . Représentant de l'arbre des parcs anciens avant l'arrivée des essences exotiques. Etat sanitaire satisfaisant.",
+   "latitude": 45.677875,
+   "longitude": 4.830524,
+   "last_update": "2017-02-20T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4300,
+   "species_fr": "CEDRUS LIBANI: cèdre du liban.",
+   "locality_fr": "24, rue de la Damette.",
+   "condition_fr": "Très grand arbre ancien. Bon état sanitaire. En vue.",
+   "latitude": 45.674514,
+   "longitude": 4.830558,
+   "last_update": "2016-10-05T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4301,
+   "species_fr": "GINCKO BILOBA",
+   "locality_fr": "Au débouché du pont de Collonges.",
+   "condition_fr": "Individu de grande taille. Bonne santé. Marque l'entrée de la commune.",
+   "latitude": 45.815387,
+   "longitude": 4.846448,
+   "last_update": "2017-01-12T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4302,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "Angle chemin du Grégoire et sentier des Moines.",
+   "condition_fr": "Grand arbre en bonne santé. Très visible.",
+   "latitude": 45.815522,
+   "longitude": 4.751612,
+   "last_update": "2017-02-06T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4303,
+   "species_fr": "CEDRUS ATLANTICA : Cèdre de l'Atlas",
+   "locality_fr": "16 rue de Trêves Pâques",
+   "condition_fr": "Arbre mature qui contribue à renforcer l'ambiance de collection",
+   "latitude": 45.816381,
+   "longitude": 4.839326,
+   "last_update": "2019-02-22T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4304,
+   "species_fr": "QUERCUS ROBUR : chêne pédonculé",
+   "locality_fr": "16 rue de Trêves Pâques",
+   "condition_fr": "Arbre aux dimensions imposantes traduisant un grand âge (certainement bi centenaire)",
+   "latitude": 45.816271,
+   "longitude": 4.839306,
+   "last_update": "2019-02-22T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4305,
+   "species_fr": "GINKGO BILOBA",
+   "locality_fr": "16 rue de Trêves Pâques",
+   "condition_fr": "Arbre mature et en bon état sanitaire",
+   "latitude": 45.816226,
+   "longitude": 4.839463,
+   "last_update": "2019-02-22T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4306,
+   "species_fr": "QUERCUS ROBUR FASTIGA : chêne fastigé",
+   "locality_fr": "3 rue du Maréchal Foch",
+   "condition_fr": "Arbre de collection (assez rare de cete taille), mature, équilibré et en bon état sanitaire. Il est tout à fait adapté à cet espace et crée un repère visuel intéressant et original dans la rue.",
+   "latitude": 45.823429,
+   "longitude": 4.841922,
+   "last_update": "2019-02-22T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4307,
+   "species_fr": "SEQUOIA SEMPERVIRENS : séquoia.",
+   "locality_fr": "Chemin des Violettes.",
+   "condition_fr": "Essence d'ornement rarement planté aujourd'hui. Très bonne santé. Grande dimension. Très visible dans le taillis dominant le centre commercial.",
+   "latitude": 45.732116,
+   "longitude": 4.76961,
+   "last_update": "2016-07-01T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4308,
+   "species_fr": "PINUS SYLVESTRIS : pin sylvestre.",
+   "locality_fr": "Montée des Roches.",
+   "condition_fr": "Très grands exemplaires d'une essence relativement rare dans le Grand Lyon. Bon état sanitaire. Très visibles dans le paysage.",
+   "latitude": 45.733504,
+   "longitude": 4.766999,
+   "last_update": "2016-07-01T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4309,
+   "species_fr": "PLATANUS ACERIFOLIA : platane.",
+   "locality_fr": "Grande Rue.",
+   "condition_fr": "Arbre de très grande taille. Excellent état sanitaire. Très visible depuis l'élargissement de la voie.",
+   "latitude": 45.73368,
+   "longitude": 4.765856,
+   "last_update": "2016-07-01T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4310,
+   "species_fr": "QUERCUS ROBUR : chêne pédonculé.",
+   "locality_fr": "Chemin du Grand Moulin.",
+   "condition_fr": "Grande dimension et âge avancé. Visible dans le versant de la vallée de l'Yzeron.",
+   "latitude": 45.736819,
+   "longitude": 4.73754,
+   "last_update": "2016-07-01T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4311,
+   "species_fr": "QUERCUS ROBUR : chêne pédonculé.",
+   "locality_fr": "Chemin des Aubépines à Bel Air. Derrière le lotissement du centre d'insémination",
+   "condition_fr": "Deux troncs divergents de dimensions remarquables. Age très élevé. Bon état sanitaire. Bien en vue.",
+   "latitude": 45.745547,
+   "longitude": 4.755056,
+   "last_update": "2016-07-01T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4312,
+   "species_fr": "QUERCUS SESSILIFORA : Chêne sessile",
+   "locality_fr": "Devant la gare SNCF.",
+   "condition_fr": "Individu isolé devant la gare.Bon état sanitaire.",
+   "latitude": 45.665808,
+   "longitude": 4.853292,
+   "last_update": "2017-02-02T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4313,
+   "species_fr": "PINUS NIGRA : pin noir.",
+   "locality_fr": "50, route de Lyon.",
+   "condition_fr": "Arbres très rapprochés de haute taille. Bons états sanitaires.Très visibles dans le paysage.",
+   "latitude": 45.677928,
+   "longitude": 4.861236,
+   "last_update": "2019-04-02T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4314,
+   "species_fr": "QUERCUS SESSILIFLORA : chêne sessile.",
+   "locality_fr": "Parc du château, angle voie du lotissement du château, route de Noailleux.",
+   "condition_fr": "Arbre gigantesque. Le plus grand des chênes du Grand Lyon. Pluri-centenaire. Excellent état malgré des chutes de brindilles. Peu visible, cependant mériterait d'être dégagé.",
+   "latitude": 45.848297,
+   "longitude": 4.868773,
+   "last_update": "2017-02-24T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4315,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "46,route de Lyon.",
+   "condition_fr": "Arbre de haute taille.Bon état sanitaire.Très visible dans le paysage.",
+   "latitude": 45.677056,
+   "longitude": 4.86133,
+   "last_update": "2019-03-28T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4316,
+   "species_fr": "QUERCUS ROBUR : chêne pédonculé.",
+   "locality_fr": "Rue Pierre Valdo.",
+   "condition_fr": "Grand exemplaire. Excellente santé. Bien visible de la rue.",
+   "latitude": 45.750732,
+   "longitude": 4.787587,
+   "last_update": "2016-07-18T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4317,
+   "species_fr": "AESCULUS HIPPOCASTANUM : marronnier.",
+   "locality_fr": "Rue de la Garde.",
+   "condition_fr": "Très grand exemplaire en bonne santé.",
+   "latitude": 45.760731,
+   "longitude": 4.789223,
+   "last_update": "2016-07-18T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4318,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+   "locality_fr": "29 rue des Aqueducs.",
+   "condition_fr": "Très grand exemplaire.",
+   "latitude": 45.758251,
+   "longitude": 4.793938,
+   "last_update": "2019-04-19T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4319,
+   "species_fr": "GINCKO BILOBA : Gincko.",
+   "locality_fr": "Rue de la Favorite - Lycée du même nom.",
+   "condition_fr": "Très bel exemplaire. Excellent état. Visible de la rue.",
+   "latitude": 45.756391,
+   "longitude": 4.805373,
+   "last_update": "2016-07-18T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4320,
+   "species_fr": "PINUS NIGRA LARICIO : Pin Laricio",
+   "locality_fr": "Avenue Payen n° 20",
+   "condition_fr": "Arbre de dimensions honorables marquant le paysage, variété peu fréquente en bon état physiologique.",
+   "latitude": 45.775651,
+   "longitude": 4.775767,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4321,
+   "species_fr": "CEDRUS LIBANI : Cèdre du Liban",
+   "locality_fr": "2 avenue franklin Roosevelt",
+   "condition_fr": "Arbre de dimensions honorables, en bon état physiologique et marquant le paysage",
+   "latitude": 45.770595,
+   "longitude": 4.774714,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4322,
+   "species_fr": "TILIA TOMENTOSA : Tilleul argenté",
+   "locality_fr": "Rue de la Garde.",
+   "condition_fr": "Dimensions intéréssantes.",
+   "latitude": 45.759396,
+   "longitude": 4.790941,
+   "last_update": "2023-10-30T00:00:00+01:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4323,
+   "species_fr": "MAGNOLIA GRANDIFLORA : Magnolia à grandes fleurs.",
+   "locality_fr": "17 rue des Aqueducs.",
+   "condition_fr": "Jeune magnolia de beau développement.",
+   "latitude": 45.757766,
+   "longitude": 4.795454,
+   "last_update": "2023-07-28T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4324,
+   "species_fr": "CALOCEDRUS DECURRENS : calocèdre",
+   "locality_fr": "9 rue François Génin",
+   "condition_fr": "Dimensions honorables, très marquant dans le paysage",
+   "latitude": 45.755185,
+   "longitude": 4.796531,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4325,
+   "species_fr": "TILIA : tilleul",
+   "locality_fr": "6 rue Pélisson",
+   "condition_fr": "Arbre marquant et imposant dans le paysage proche. Un des seuls arbres tiges feuillus de la rue",
+   "latitude": 45.773642,
+   "longitude": 4.885533,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4326,
+   "species_fr": "ROBINIA PSEUDOACACIA : robinier.",
+   "locality_fr": "Rue de la Croix-Rouge, Fort de Côte-Lorette.",
+   "condition_fr": "Un sujet de 4 mètres environ. Quelques feuillages subsistent. Sujet témoin de la guerre. Pancarte commémorative existante.",
+   "latitude": 45.699024,
+   "longitude": 4.784561,
+   "last_update": "2023-10-11T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4327,
+   "species_fr": "Tilia platyphyllos",
+   "locality_fr": "7 Boulevard François Reymond",
+   "condition_fr": "Remarquable pour sa hauteur, son diamètre, fût et houppier.",
+   "latitude": 45.697637,
+   "longitude": 4.9423,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4328,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban",
+   "locality_fr": "Au débouché du pont de Collonges",
+   "condition_fr": "Cèdre remarquable dans le paysage urbain du fait de sa taille. Bonne santé. Marque l entrée de la commune",
+   "latitude": 45.815354,
+   "longitude": 4.846691,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4329,
+   "species_fr": "CEDRUS ATLANTICA : cèdre de l'Atlas.",
+   "locality_fr": "14 rue Centrale.",
+   "condition_fr": "Arbre aux dimensions remarquables (hauteur, diamètres du tronc et du houppier) qui se détache nettement dans un environnement très minéral.",
+   "latitude": 45.745831,
+   "longitude": 4.726381,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4330,
+   "species_fr": "CEDRUS ATLANTICA : cèdre de l'Atlas.",
+   "locality_fr": "47B avenue Edouard Millaud.",
+   "condition_fr": "Arbre remarquable par ses dimensions (hauteur et diamètre du houppier) et complémentaire avec l'autre cèdre du 47A avenue Edouard Millaud.",
+   "latitude": 45.747222,
+   "longitude": 4.729991,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4331,
+   "species_fr": "CEDRUS ATLANTICA : cèdre de l'Atlas.",
+   "locality_fr": "47A avenue Edouard Millaud.",
+   "condition_fr": "Arbre remarquable par ses dimensions (hauteur et diamètre du houppier) et complémentaire avec l'autre cèdre du 47B avenue Edouard Millaud.",
+   "latitude": 45.747224,
+   "longitude": 4.730243,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4332,
+   "species_fr": "LIRODENDRON TULIPIFERA : tulipier de virginie",
+   "locality_fr": "8 rue Geoffray",
+   "condition_fr": "Taille imposante rare pour cette essence, bon état sanitaire. Impact sur le paysage du quartier.",
+   "latitude": 45.773809,
+   "longitude": 4.881515,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4333,
+   "species_fr": "Cedrus atlantica glauca",
+   "locality_fr": "5 bis Montée des Soldats.",
+   "condition_fr": "Classement en EBC ponctuels. Ces arbres sont marquants dans le paysage de par leur emplacement et leur taille.",
+   "latitude": 45.79752,
+   "longitude": 4.855029,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4334,
+   "species_fr": "Cedrus atlantica",
+   "locality_fr": "47 avenue Général Leclerc.",
+   "condition_fr": "Classement de ce cèdre en EBC ponctuel. Arbre remarquable de par sa taille,son positionnement et intérêt paysager",
+   "latitude": 45.802189,
+   "longitude": 4.856821,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4335,
+   "species_fr": "Cedrus atlantica glauca",
+   "locality_fr": "19 chemin de Vassieux.",
+   "condition_fr": "Classement de ce cèdre en EBC ponctuel arbre remarquable de par sa taille,son positionnement et intérêt paysager.",
+   "latitude": 45.794239,
+   "longitude": 4.86799,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4336,
+   "species_fr": "Cedrus atlantica",
+   "locality_fr": "11 rue André Dufrene",
+   "condition_fr": "Classement de ce cédre en EBC ponctuel de part,son positionnement et intérêt paysager",
+   "latitude": 45.798986,
+   "longitude": 4.866727,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4337,
+   "species_fr": "Cedrus atlantica glauca",
+   "locality_fr": "34 chemin des Villas.",
+   "condition_fr": "Classement de ce cèdre en EBC ponctuel. Arbre remarquable de par sa taille,son positionnement et intérêt paysager.",
+   "latitude": 45.797377,
+   "longitude": 4.869558,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4338,
+   "species_fr": "Sequoiadendron giganteum",
+   "locality_fr": "8 chemin des Villas.",
+   "condition_fr": "Classement de ce sequoia en EBC ponctuel : Arbre marquant adossé au batiment, bon état sanitaire et de belle envergure.",
+   "latitude": 45.794495,
+   "longitude": 4.869577,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4339,
+   "species_fr": "Pinus Pinea",
+   "locality_fr": "594 chemin de Combe Martin.",
+   "condition_fr": "Classement de ce pin en EBC ponctuel  : Arbre remarquable de par sa taille pour cette essence. Seul le haut de son houppier est visible depuis la rue.",
+   "latitude": 45.798957,
+   "longitude": 4.863553,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4340,
+   "species_fr": "Cedrus atlantica glauca",
+   "locality_fr": "125 chemin de Crépieux.",
+   "condition_fr": "Classement de ce cèdre en EBC ponctuel. Arbre remarquable de par sa taille,son positionnement et intérêt paysager.",
+   "latitude": 45.801624,
+   "longitude": 4.870778,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4341,
+   "species_fr": "Cedrus atlantica glauca",
+   "locality_fr": "137 chemin du Panorama.",
+   "condition_fr": "Classement de ce cèdre en EBC ponctuel de par sa taille,son positionnement et intérêt paysager.",
+   "latitude": 45.796536,
+   "longitude": 4.874504,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4342,
+   "species_fr": "Cedrus atlantica glauca",
+   "locality_fr": "151 rue Pasteur.",
+   "condition_fr": "Classement de ce cédre en EBC ponctuel de part,sa taille,son positionnement et intérêt paysager.",
+   "latitude": 45.797125,
+   "longitude": 4.849962,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4343,
+   "species_fr": "Platanus acerifolia",
+   "locality_fr": "53 chemin de Fond Rose, Eglise St Côme/St Damien",
+   "condition_fr": "Classement des 2 platanes en EBC ponctuels pour leur taille (envergure de leur couronne), leur positionnement et leur intérêt paysager.",
+   "latitude": 45.791617,
+   "longitude": 4.824954,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4344,
+   "species_fr": "Platanus acerifolia",
+   "locality_fr": "53 chemin de Fond Rose, Eglise St Côme/St Damien",
+   "condition_fr": "Classement de ces 2 platanes en EBC ponctuels : arbres remarquables pour leur taille (envergure de leur couronne), leur positionnement et leur intérêt paysager.",
+   "latitude": 45.791446,
+   "longitude": 4.825304,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4345,
+   "species_fr": "Cedrus atlantica glauca pendula",
+   "locality_fr": "Square Henri Dor.",
+   "condition_fr": "Classement de ce cèdre en EBC ponctuel : Arbre remarquable dans le paysage, de par son essence, son port et son amplitude,très rare.",
+   "latitude": 45.783089,
+   "longitude": 4.835148,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4346,
+   "species_fr": "CEDRUS ATLANTICA : cèdre de l'Atlas",
+   "locality_fr": "6, rue Paul Doumer",
+   "condition_fr": "Arbre aux dimensions exceptionnelles (hauteur mais surtout diamètre du houppier).",
+   "latitude": 45.762309,
+   "longitude": 4.759186,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4347,
+   "species_fr": "SEQUOIADENDRON GIGANTEUM : séquoia géant",
+   "locality_fr": "6, rue Paul Doumer",
+   "condition_fr": "Bien que de taille encore relativement modeste, cette essence n'est pas très répandue sur le territoire. Complémentaire avec les autres arbres du secteur.",
+   "latitude": 45.762043,
+   "longitude": 4.759,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4348,
+   "species_fr": "PLATANUS ACERIFOLIA: platane à feuilles d'érable.",
+   "locality_fr": "22 rue de l'Eglise.",
+   "condition_fr": "Arbres remarquables par leur forme en plateau d'ombrage avec des arcures de branches, très marquants dans le paysage urbain.",
+   "latitude": 45.752374,
+   "longitude": 4.891508,
+   "last_update": "2023-10-19T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4349,
+   "species_fr": "CEDRUS LIBANI : cèdre du Liban",
+   "locality_fr": "6 rue de la Pélonnière",
+   "condition_fr": "Cèdre remarquable dans le paysage urbain du fait de sa taille, son emplacement, élément majeur du quartier",
+   "latitude": 45.830859,
+   "longitude": 4.844863,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4350,
+   "species_fr": "TILIA: Tilleul",
+   "locality_fr": "Parc Veyret, 34 Rue Pierre Semard",
+   "condition_fr": "Specimen, au même titre que les deux platanes du parc, présentant des caractéristiques morphologiques remarquables (circonférence et hauteur). En forme libre, sans réduction ancienne.",
+   "latitude": 45.614048,
+   "longitude": 4.797972,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  },
+  {
+   "register_id": 4351,
+   "species_fr": "CEDRUS LIBANI : Cèdre du Liban",
+   "locality_fr": "7B rue de Veyssières",
+   "condition_fr": "Arbre de dimensions remarquables, en bon état physiologique et marquant le paysage",
+   "latitude": 45.772877,
+   "longitude": 4.780641,
+   "last_update": "2023-10-17T00:00:00+02:00",
+   "publishable": true
+  }
+ ]
+}

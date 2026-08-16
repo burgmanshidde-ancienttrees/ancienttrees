@@ -147,6 +147,72 @@
     "Nara"
    ],
    "note": "SOLVED 2026-08-16, scripts/jp_kyoju.py. Three things had to be found and none is guessable: pagination is _command=changepage with a ZERO-BASED page number (js/pager.js), the CSRF token ROTATES on every response so each request must carry the previous page's token, and place_filter=3 is a fake radius search that returns the national total of 76,368 whatever marker you give it. All three fail silently with HTTP 200 and a re-rendered empty form, so a crawler that misses any of them reads one page of a thousand-record prefecture and reports success. Only place_filter=1 with prefecture_code filters. The licence caveat is solved by a FIELD rather than judgement: every row carries ユーザ, and the ministry's own 1988/2000 survey records read 'Admin', so citizen submissions (whose copyright stays with the poster, outside PDL 1.0) are excluded mechanically. CORRECTION to the 2026-08-04 entry, which said the database gives 'girth, height, species, and location': there are NO COORDINATES. Location is prefecture, municipality and an address line, and the schema carries a position-disclosure field with a reason-for-withholding beside it, which is hard rule 10 written into the source. So it is a lead source, not a map layer, and pinning is a separate job. Hiroshima done: data/leads/hiroshima.json, 102 ministry records, with girth, species and a vitality field (67 good, 24 partly dead, 4 near death). Remaining prefectures are one command each: 1 Hokkaido/Sapporo, 23 Aichi/Nagoya, 28 Hyogo/Kobe, 14 Kanagawa/Kamakura."
+  },
+  {
+   "place": "Sintra",
+   "country": "",
+   "status": "imported",
+   "note": "Portugal ICNF (arvoredo de interesse publico) is imported nationally and covers Sintra. Not a scouting gap, a ledger gap: the tool read it as unscouted because nobody had written the line."
+  },
+  {
+   "place": "Cadiz",
+   "country": "",
+   "status": "imported",
+   "note": "Andalucia REDIAM is imported and covers Cadiz. Ledger gap rather than a scouting gap. Cadiz ships 5 trees and is a finished compact city per CLAUDE.md, so the gap-to-10 is not a target."
+  },
+  {
+   "place": "Bari",
+   "country": "",
+   "status": "imported",
+   "note": "SOLVED 2026-08-16. Puglia's REGIONAL list, dati.puglia.it CKAN 'elenco-degli-alberi-monumentali-della-regione-puglia', CC BY 4.0, 180 trees with per-tree GIS coordinates, girth, height and an urban-context flag. Richer than the MASAF national file already held, which carries no age and no vitality. 5 trees within 15 km of Bari and 30 within 30 km. Imported to data/registers/puglia-alberi-monumentali.json; cross-check against italy-masaf.json before publishing so a tree is not entered twice. THE GENERAL LESSON, already recorded for Campania and Lazio and confirmed again: in Italy the region beats the national file."
+  },
+  {
+   "place": "Lyon",
+   "country": "",
+   "status": "imported",
+   "note": "SOLVED 2026-08-16. Metropole de Lyon publishes its PLU-H ponctual prescription layer for arbres remarquables on data.grandlyon.com under Licence Ouverte: 429 trees, 397 within 15 km of the centre, with species, a location description and a free-prose phytosanitary condition field. Imported. Caveat: it is a PLANNING layer, so a row can be a small stand rather than one trunk ('deux arbres' appears in the condition text), and both fields need reading before a row is treated as one collectible point."
+  },
+  {
+   "place": "Bratislava",
+   "country": "",
+   "status": "imported",
+   "note": "SOLVED 2026-08-16. Slovakia's state register of chranene stromy, SOPSR geoserver WFS, CC BY 4.0: 1,199 designations nationally of which 320 are single trees, 31 within 15 km of Bratislava (23 singles). Every entry links to its own state-register page at data.sopsr.sk, which is a ready second source. Pocet_stromov says how many trees a designation covers, so anything above 1 is a group."
+  },
+  {
+   "place": "The Hague",
+   "country": "",
+   "status": "stalled",
+   "note": "Scouted 2026-08-16. The city's open-data portal (den-haag-opendata.opendatasoft.com) carries only the full tree inventory, which the semantic filter forbids; a search of it for boom/bomen returns mooring posts, benches and the hoofdboomstructuur, no monumental list. The monumental-trees list DOES exist and was adopted by the council on 2026-03-31, but it lives in raadsstukken and on the Haagse Bomenkaart viewer rather than as a dataset. Next: read the Bomenkaart viewer's network calls the way stvk.lt was solved. Note Bomenstichting Den Haag was mailed on 2026-08-16 in another batch."
+  },
+  {
+   "place": "Seattle",
+   "country": "",
+   "status": "empty",
+   "note": "Scouted 2026-08-16. 'SPR Tree View' is the Parks department's full tree inventory, forbidden by the semantic filter, and the 'Heritage_Trees_Map' hit belongs to Normandy Park, a separate suburb 25 km south. Seattle's own Heritage Tree Program is run with PlantAmnesty and publishes no open dataset found this pass. Route here is not a register."
+  },
+  {
+   "place": "Bilbao",
+   "country": "",
+   "status": "blocked",
+   "note": "Euskadi's singular trees exist legally (Decreto 265/1995) but survive only inside a 1:25,000 protected-areas polygon set whose metadata says otherRestrictions and whose download 404s, per the 2026-08-04 Spanish scout. Unchanged. Not a register we can use."
+  },
+  {
+   "place": "Hamburg",
+   "country": "",
+   "status": "empty",
+   "note": "Hamburg's Naturdenkmale register is imported and is tiny: 12 entries state-wide, 2 usable, none with coordinates (2026-08-13). The 'Tree Register Hamburg' item found in the ArcGIS sweep resolves to transparenz.hamburg.de's full Strassenbaumkataster, which the semantic filter forbids. Route here is Wikidata or a non-register source."
+  },
+  {
+   "place": "Jerusalem",
+   "country": "",
+   "status": "stalled",
+   "note": "Probed 2026-08-16 and not resolved. No heritage-tree dataset surfaced on data.gov.il in an English-language search, and the KKL-JNF material is editorial rather than a register. Israel does declare natural monuments through the Nature and Parks Authority, which is the specific thing to check next, in Hebrew, rather than searching for 'heritage trees'."
+  },
+  {
+   "place": "Dubrovnik",
+   "country": "",
+   "status": "stalled",
+   "note": "Croatia returns ZERO datasets in the data.europa.eu sweep for every remarkable-tree phrase tried. Croatia does designate 'spomenik prirode' including individual trees through the Ministry of Environment's nature-protection register, which is the thing to check next; it was not reached this pass."
   }
  ]
 }
