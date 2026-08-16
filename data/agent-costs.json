@@ -1973,6 +1973,15 @@
         "note": "The richest register we have, mined against city walking guides and Tribune de Geneve. Best find: the register's own inventory number 19800587I0 matches a City of Geneva museum-trail article naming the Venerable Oak, planted 1719, 710 cm. Applied the date trap correctly in both directions: used 1966-04-01 because it carries a real month, refused 1850-01-01 and derived that cedar's age by calibrating against our own documented Naville Cedar instead. Flagged two register entries as likely duplicates of live gen_002 and gen_003.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "geneva+paris",
+        "kind": "write",
+        "tokens": 150452,
+        "trees": 13,
+        "note": "13 stories across two live cities. The pass read both live city files first and caught two superlative collisions before writing them: gen_013 is not the youngest tree on the Geneva page (gen_001 already claims that at ~11 years) and gen_010's 743 cm is not Geneva's largest cedar (gen_003 is 762 cm). Also flagged par_032 arriving as 'Common Plane', a common name existing nowhere else against 119 live London Plane entries. Tokens are the harness's measured figure, not the agent's 110k self-estimate.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
