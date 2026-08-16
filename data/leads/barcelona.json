@@ -10,8 +10,8 @@
    "species": "Fraxinus angustifolia",
    "lat": 41.366868,
    "lng": 2.152084,
-   "status": "lead",
-   "why": "Count, not quality. This and the Acer below are the two remaining trees of the four the Catalan government declared monumental in April 2025, all four in the Sot de l'Estany ravine. We already publish the other two (bcn_005, bcn_006) and the city intro already tells the reader there are four. Adding both would put four of sixteen Barcelona entries inside one ravine behind one paid gate. Strong candidates the day the page can carry them, and the pair completes a claim the page already makes.",
+   "status": "duplicate",
+   "why": "DUPLICATE, found 2026-08-16: 18m from bcn_021 (Narrow-Leaved Ash, Fraxinus angustifolia), same species, same ravine. Very likely the same physical tree under the Generalitat's 2025 monumental designation rather than a fourth distinct specimen; leave for a pass that can establish on the ground whether it is genuinely a second tree. Original note: Count, not quality. This and the Acer below are the two remaining trees of the four the Catalan government declared monumental in April 2025, all four in the Sot de l'Estany ravine. We already publish the other two (bcn_005, bcn_006) and the city intro already tells the reader there are four. Adding both would put four of sixteen Barcelona entries inside one ravine behind one paid gate. Strong candidates the day the page can carry them, and the pair completes a claim the page already makes.",
    "register_id": 99400637941,
    "register_notes": "No planting year recorded. 29 m tall, girth 2.5 m, crown 15 m. Catalogued 2015."
   },
@@ -20,8 +20,8 @@
    "species": "Acer pseudoplatanus",
    "lat": 41.36677,
    "lng": 2.152069,
-   "status": "lead",
-   "why": "Same as above: the fourth monumental tree of the Sot de l'Estany, held back on count rather than merit. Register gives no planting year ('Per determinar'), so it would ship flagged.",
+   "status": "duplicate",
+   "why": "DUPLICATE, found 2026-08-16: 22m from bcn_022 (Sycamore, Acer pseudoplatanus), same species, same ravine. Likely the same tree the city catalogue already covers under a different designation, not a new one. Original note: Same as above: the fourth monumental tree of the Sot de l'Estany, held back on count rather than merit. Register gives no planting year ('Per determinar'), so it would ship flagged.",
    "register_id": 99400637939,
    "register_notes": "30 m tall, girth 1.4 m, crown 12 m. Catalogued 2015."
   },
@@ -30,8 +30,8 @@
    "species": "Cinnamomum camphora",
    "lat": 41.36716,
    "lng": 2.15338,
-   "status": "lead",
-   "why": "1933, so 93 years, and a third entry inside the same paid garden. Ownership reads 'Privat' but that is the museum owning the land, not a closed gate, the same as bcn_006. Held on count and age, not access.",
+   "status": "duplicate",
+   "why": "DUPLICATE, found 2026-08-16: exact coordinate match (0m) with bcn_034 (Camphor Tree, Cinnamomum camphora), already published. This IS bcn_034; do not ship as a new entry. Original note: 1933, so 93 years, and a third entry inside the same paid garden. Ownership reads 'Privat' but that is the museum owning the land, not a closed gate, the same as bcn_006. Held on count and age, not access.",
    "register_notes": "Sector de la Mediterrania. OSM node 4506730853 confirms the position."
   },
   {
