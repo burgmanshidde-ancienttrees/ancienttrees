@@ -78,6 +78,8 @@ def main():
     ap.add_argument("--limit", type=int, default=25)
     ap.add_argument("--all", action="store_true",
                     help="include cities already at or above target")
+    ap.add_argument("--target", action="store_true",
+                    help="print the single next action: scout X, or build Y")
     a = ap.parse_args()
 
     by_place, by_country = ledger()
@@ -94,6 +96,43 @@ def main():
         rows.append((c, hit))
         if len(rows) >= a.limit:
             break
+
+    if a.target:
+        # Hidde, 2026-08-16: "i want to make use of all usefull registers if it
+        # speeds up the data building process", after catching a scout wander
+        # into Innsbruck (#194) and Hallstatt (#219) while Sintra (#32) and
+        # Bari (#41) had never been looked at.
+        #
+        # The rule, and the refinement that keeps it from becoming waste: scout
+        # the country behind the HIGHEST-RANKED city that has neither supply
+        # nor a recorded verdict. Not a nightly sweep, because the ArcGIS and
+        # EU sweeps return the same answers most nights and re-running an
+        # exhausted hunt is this project's most repeated waste. When every city
+        # at the top has either trees in hand or a written reason it has none,
+        # there is nothing left to scout and the answer is build.
+        #
+        # Measured the day this was written: 24 of the top 60 cities below
+        # target had no supply, and 14 of those had never been scouted at all.
+        for c, hit in rows:
+            supply = (c.get("register") or 0) + (c.get("ready") or 0)
+            status = hit["status"] if hit else "unscouted"
+            if supply >= 8:
+                print("BUILD  %s (#%d): %d register trees and %d ready leads "
+                      "already in hand. Nothing to scout."
+                      % (c["city"], c["rank"], c.get("register") or 0,
+                         c.get("ready") or 0))
+                return 0
+            if status == "unscouted":
+                print("SCOUT  %s (#%d), %s: no supply and no verdict. Scout "
+                      "the register behind it before researching from zero."
+                      % (c["city"], c["rank"], c.get("country")))
+                return 0
+            # blocked / empty / stalled all mean somebody already looked and
+            # wrote down why. Scouting again buys nothing; the note says what
+            # the city actually needs.
+        print("BUILD: every city in this window has supply or a written "
+              "verdict. Nothing left to scout at the top of the queue.")
+        return 0
 
     print("Scouting worklist, queue order. 'unscouted' at the top is the whole "
           "point:\na city nobody has checked at rank 8 beats a thousand trees "
