@@ -30,11 +30,25 @@ export const DESC_MAX = 155;
 // already comfortably long and is not padded to a number.
 export const DESC_MIN = 120;
 
-// build_site.py:85-88. Loaded from a CDN via plain <script>/<link> tags,
-// same as the current site, rather than bundled through the maplibre-gl npm
-// package: this keeps the island's behavior byte-for-byte identical to what
-// Python already ships (worker loading, CSS, version) instead of introducing
-// a bundler-mediated difference. Revisit once there's a reason to.
-export const MAPLIBRE_JS = "https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js";
-export const MAPLIBRE_CSS = "https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css";
+// build_site.py:85-88. Still plain <script>/<link> tags rather than the
+// maplibre-gl npm package, so the island's behaviour stays byte-for-byte what
+// Python shipped (worker loading, CSS, version) with no bundler-mediated
+// difference. What changed on 2026-08-16 is the HOST: these are the same
+// v4.7.1 files, vendored into site/public/assets and served from our own
+// origin instead of unpkg.com.
+//
+// Three reasons, in the order they matter here. Privacy: unpkg saw the IP and
+// user-agent of every visitor to every page with a map, which is most of the
+// site, and the privacy page states we run no third-party tracking. Speed: a
+// deferred script still needs its own DNS lookup and TLS handshake to a
+// foreign host, while our own origin is already connected by the time the
+// parser reaches this tag. Reliability: an unpkg outage took the maps out on
+// every page, and the map is the product.
+//
+// Same bytes, so no behaviour changes; the smoke test asserts maps construct.
+// Upgrading MapLibre now means re-fetching both files at the new version and
+// renaming them here, which is deliberate: the version is visible in the
+// filename rather than hidden in a URL nobody reads.
+export const MAPLIBRE_JS = "/assets/maplibre-gl-4.7.1.js";
+export const MAPLIBRE_CSS = "/assets/maplibre-gl-4.7.1.css";
 export const MAP_STYLE = "https://tiles.openfreemap.org/styles/positron";
