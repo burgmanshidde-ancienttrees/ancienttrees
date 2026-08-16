@@ -1,0 +1,242 @@
+{
+  "city": "Vilnius",
+  "country": "Lithuania",
+  "status": "needs_curation",
+  "intro": "Six of the seven trees on this page stand within a kilometre of Cathedral Square, most of them in Bernardinai Garden or in the courtyards of the old university. Vilnius is the rare capital where the whole list is one afternoon on foot. The garden's speciality is trees with several trunks: a willow with nine, a lime with four, and an ash whose own sources cannot agree whether it has three or four. The oldest oak in the city stands at the end of the same path, five metres round and still recovering from losing most of its root system.",
+  "meta_description": "Seven remarkable trees in Vilnius, six within one kilometre: a nine-trunked willow, a shrine carved into a lime, and an oak of over 400 years.",
+  "question_meta": "Vilnius's oldest tree is an oak in Bernardinai Garden, over 400 years old and five metres round. Where it stands, and six more on the same walk.",
+  "question_answer": "The oldest tree in Vilnius is an oak in Bernardinai Garden, at the southern end of the park near the footbridge over the Vilnia, about ten minutes on foot from Cathedral Square. It is put at over four hundred years old, measures roughly five metres round, and the municipal register gives it no name beyond Seniausias azuolas, the oldest oak. It has been protected as a heritage object since 29 May 1996. Its recent history is more dramatic than its age. Construction and transformer works beside it destroyed an estimated eighty percent of its root system, damage that only became clear when the garden was overhauled in 2012. Arborists took some twenty tonnes of weight out of the crown so the roots still working could carry what was left, then cleaned and sealed the cavities in the trunk. It survived, and the city still points visitors towards it. One caution about the number: none of the sources that give the four hundred years says how it was arrived at, so read it as the received figure rather than a ring count. Three more protected trees stand within a few hundred metres, which makes this a stop on a walk rather than a destination on its own.",
+  "question_context": "Lithuania's state register of protected natural objects records this tree's position and its designation date and very little else: it has no age field, no girth field and no height field. That is why five of the seven trees on the Vilnius page carry no age at all, and why the pages say so plainly instead of offering a guess. The figures here come from the register for position and designation, and from Lithuanian encyclopedia and Wikipedia entries for measurements and history. Several of those state their own coordinates independently and land within ten metres of the register's, which is what puts the pins on this city at confirmed rather than approximate. Where two sources disagree, the tree's own page says so rather than picking a winner: the multi-stemmed ash in Bernardinai Garden is listed with three trunks by the register and four by the garden's own inventory, and both counts are on its page. A reader who counts when they get there settles it faster than any amount of desk research. See the full list of seven on the Vilnius page.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Vilnius?",
+      "a": "An oak in Bernardinai Garden, put at over four hundred years old and roughly five metres round, protected since 1996 and listed with no name beyond the oldest oak. It lost about eighty percent of its root system to nearby construction, and in 2012 arborists removed roughly twenty tonnes from the crown to save it."
+    },
+    {
+      "q": "Can I see them all in one walk?",
+      "a": "Six of the seven, yes. Four stand in Bernardinai Garden, which is also called Sereikiskiu Park, and three more in the courtyards of Vilnius University's central buildings a few minutes away. The whole loop runs about a kilometre and starts a short walk from Cathedral Square."
+    },
+    {
+      "q": "Are they free to visit?",
+      "a": "Yes, all seven. Bernardinai Garden is a public park open daily, and the university courtyards are open to the public during the day."
+    },
+    {
+      "q": "Why do so many of them have no age?",
+      "a": "Because nobody has measured them. Lithuania's register of protected trees carries no age, girth or height field, and for five of these seven no published source gives a figure either. Rather than guess, the pages say so and ask readers who have looked, or measured, to tell us."
+    }
+  ],
+  "hero_tree_id": "vln_001",
+  "oldest_tree_id": "vln_001",
+  "trees": [
+    {
+      "id": "vln_001",
+      "name": "The Oldest Oak of Vilnius",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "over 400 years",
+      "age_min": 400,
+      "age_max": 500,
+      "location": {
+        "address": "Bernardinai Garden (Sereikiškių Park), southern edge near the entrance from Šv. Brunono Bonifaco street, close to the pedestrian bridge over the Vilnia",
+        "latitude": 54.68232,
+        "longitude": 25.29589,
+        "neighbourhood": "Užupis / Old Town"
+      },
+      "story": "This oak lost roughly eighty percent of its root system and is still alive. The damage was done slowly and out of sight, by construction and transformer works beside it, and only became clear when Bernardinai Garden was overhauled in 2012. The rescue was blunt. Arborists took some twenty tonnes of weight out of the crown so the roots still working could carry what was left, then cleaned and treated the cavities in the trunk. Fourteen years later it is still the tree the city points people towards.\n\nIts official entry does not bother with a name. It is listed simply as Seniausias ąžuolas, the oldest oak, protected as a municipal heritage object since 29 May 1996, with a trunk about five metres round. The sources put it at over four hundred years and none of them says how that figure was arrived at, so read it as the received number rather than a measurement.\n\nIt stands at the southern end of the garden, close to the footbridge over the Vilnia, which puts it a few minutes from Cathedral Square and a few steps from Užupis. Three more protected trees stand within a few hundred metres of it, so this is a stop on a walk rather than a destination on its own.",
+      "verified_sources": [
+        "data/registers/lithuania-stvk-gpo.json register_id 0310505010160 (Seniausias ąžuolas)",
+        "https://lt.wikipedia.org/wiki/Bernardin%C5%B3_sodo_%C4%85%C5%BEuolas"
+      ],
+      "access": "Free, inside Bernardinai Garden (Sereikiškių Park), open daily",
+      "transport": "Short walk (10-15 min) from Cathedral Square / Vilnius Old Town centre",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "One heavy trunk about five metres round, at the southern end of the garden near the footbridge over the Vilnia. The crown looks short for the girth because roughly twenty tonnes were taken out of it in 2012.",
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vln_002",
+      "name": "The Daukantas Memorial Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 45-50 years",
+      "age_min": 40,
+      "age_max": 55,
+      "location": {
+        "address": "S. Daukantas Courtyard, Vilnius University central buildings, Old Town",
+        "latitude": 54.68336,
+        "longitude": 25.28804,
+        "neighbourhood": "Old Town / Vilnius University"
+      },
+      "story": "The tree commemorates a walk. Simonas Daukantas, the 19th-century historian, came to Vilnius University on foot from Žemaitija, and the oak that carries his name in the courtyard named after him was grown from an acorn brought back from that same corner of the country.\n\nIt is not an old tree, and it is not here for that. Nobody has published a planting date. Lithuanian Wikipedia says it went in for the university's 400th anniversary, and since the university was founded in 1579 that points at 1979 and an age of about forty-seven. The year is arithmetic on the anniversary, not something any source states.\n\nThe planting did not go smoothly either. Two earlier saplings failed and were replaced, and some of those survivors are now said to stand next door in the Sirvydas Courtyard, which is why accounts of which oak is which do not entirely line up. The tree Vilnius protects under this name, listed as a heritage object since 29 May 1996, is the one at this pin.\n\nDaukantas walked from Žemaitija to study here, which in the 1810s was a serious undertaking rather than a gesture. The tree is the university's way of keeping the walk in the ground. If you know which oak is which, or when this one actually went in, tell us.",
+      "verified_sources": [
+        "data/registers/lithuania-stvk-gpo.json register_id 0310505010162 (S.Daukanto atminimo ąžuolas)",
+        "https://lt.wikipedia.org/wiki/S._Daukanto_atminimo_%C4%85%C5%BEuolas"
+      ],
+      "access": "Free, inside a Vilnius University courtyard open to the public during the day",
+      "transport": "Short walk (5-10 min) from Cathedral Square",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The oak in the Daukantas courtyard itself. Some accounts place replacement saplings from the same planting next door in the Sirvydas courtyard, so the two get confused; this pin is the tree the city protects under this name.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vln_003",
+      "name": "The Linden of Daukša Courtyard",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "M. Daukšos Courtyard, Universiteto g. 7, Vilnius University central buildings",
+        "latitude": 54.68333,
+        "longitude": 25.28696,
+        "neighbourhood": "Old Town / Vilnius University"
+      },
+      "story": "Somebody has carved a chapel into this tree. It is a small niche cut into the trunk with a two-pitched roof above it, and inside stands a wooden figure of an old warrior holding a sword. No source names the carver. Lithuania has a long tradition of little roofed wooden shrines by roads and in yards, but putting one inside a living lime in a university courtyard is not the usual practice.\n\nThe tree holds the M. Daukša Courtyard of Vilnius University's central buildings together. History Faculty students meet under it, alumni come back to it at reunions, and the student corporation Korp! Tilia is said to have taken its name from it. Tilia is the linden's own genus, which makes the name either a good joke or a flat description.\n\nVilnius has protected it as a municipal heritage object since 29 May 1996. What nobody has written down is how old it is. There is no year in the register, none in the literature, and no published girth to reason back from. If you have measured it, or know when it went in, tell us and it goes on the page.",
+      "verified_sources": [
+        "data/registers/lithuania-stvk-gpo.json register_id 0310505050031 (VU M.Dauksa courtyard linden)",
+        "https://lt.wikipedia.org/wiki/Liepa_M._Dauk%C5%A1os_kieme"
+      ],
+      "access": "Free, inside a Vilnius University courtyard open to the public during the day",
+      "transport": "Short walk (5-10 min) from Cathedral Square",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Unmistakable once you are close: a small roofed shrine is carved into the trunk, with a wooden warrior figure inside it.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vln_004",
+      "name": "The Ash of Mickiewicz's Courtyard",
+      "species": "European Ash (Fraxinus excelsior)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Adomas Mickevičius Courtyard, Vilnius University central buildings",
+        "latitude": 54.68343,
+        "longitude": 25.28872,
+        "neighbourhood": "Old Town / Vilnius University"
+      },
+      "story": "Vilnius has protected this ash since 1996 and nobody has recorded a single measurement of it. No height, no girth, no age. The register gives the name and the coordinates and stops there, which is unusual for a tree a city considers worth protecting.\n\nIt stands in the Adomas Mickevičius Courtyard of the university's central buildings, named for the Romantic poet who studied here. The courtyard's name is not evidence about the tree: no source connects Mickiewicz to this particular ash, and it would be easy and wrong to imply he ever stood under it.\n\nWhat is worth knowing is the species. European ash has had a hard thirty years across the continent as dieback thinned it out of woodland from Poland to Ireland, which makes a mature, protected ash in a city courtyard a better thing to stand under than it was a generation ago. This one has old university walls on four sides and a slot of sky above it, and it has grown up through the slot.\n\nHow much of the university's history it has actually stood through, nobody can say, because nobody has dated it. If anyone has put a tape around this trunk, we would like the number.",
+      "verified_sources": [
+        "data/registers/lithuania-stvk-gpo.json register_id 0310505160012 (VU A.Mickevicius courtyard ash)",
+        "https://lt.wikipedia.org/wiki/Uosis_A._Mickevi%C4%8Diaus_kieme"
+      ],
+      "access": "Free, inside a Vilnius University courtyard open to the public during the day",
+      "transport": "Short walk (5-10 min) from Cathedral Square",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "It stands in the Mickiewicz courtyard, which is named for the poet rather than for the tree. No source describes what else grows there, so if you find more than one mature ash, tell us which is which.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vln_005",
+      "name": "The Nine-Trunked Willow of Sereikiškės",
+      "species": "Willow (Salix sp., species not established)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Bernardinai Garden (Sereikiškių Park), central path area",
+        "latitude": 54.68517,
+        "longitude": 25.29585,
+        "neighbourhood": "Užupis / Old Town"
+      },
+      "story": "Nine trunks, one tree. The count sits in the tree's official name rather than in a description someone added later: it is registered as the devynkamienis gluosnis, the nine-trunked willow, and the encyclopedia entry for the garden calls it exactly the same thing.\n\nMulti-stemmed trees are the running theme of Bernardinai Garden. Within a few hundred metres of this willow stand a four-trunked large-leaved lime and an ash whose own sources cannot agree whether it has three trunks or four. Whether that is old coppicing grown out, storm damage, or simply what a wet riverside park does to its trees, nobody has written down.\n\nNor has anyone dated this one, and no source commits to which willow it is. White willow and crack willow are both ordinary in Lithuanian parks and the register stops at the genus. Both of those gaps are the kind a person standing in front of the tree could close in a minute, so if you get close enough to look, tell us what you see.\n\nIt has been protected as a municipal heritage object since 1996, stands beside the main path through the garden about ten minutes from Cathedral Square, and shares a short walk with the oldest oak in the city.",
+      "verified_sources": [
+        "data/registers/lithuania-stvk-gpo.json register_id 0310505210003 (Sereikiškių parko devynkamienis gluosnis)",
+        "https://lt.wikipedia.org/wiki/Bernardin%C5%B3_sodas (lists \"Sereikiškių parko devynkamienis gluosnis\" by the same exact name among the 1996 municipally-protected heritage trees of the garden)"
+      ],
+      "access": "Free, inside Bernardinai Garden (Sereikiškių Park), open daily",
+      "transport": "10-15 min walk from Cathedral Square, same park as the oldest oak (vln_001)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Nine trunks rising from one base, beside the main path. Nothing else in the garden looks like it.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vln_006",
+      "name": "The Four-Trunked Linden of Bernardinai Garden",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Bernardinai Garden (Sereikiškių Park)",
+        "latitude": 54.68324,
+        "longitude": 25.298,
+        "neighbourhood": "Užupis / Old Town"
+      },
+      "story": "Four trunks leave the ground here as one tree, and Vilnius has protected the result since 1996 without ever writing down how old it is.\n\nIt is a large-leaved lime, didžialapė liepa, and the two sources that list it cannot even agree on the adjective: keturkamienė in the municipal register, keturliemenė in the garden's own inventory. Both mean four-stemmed. Neither carries an age, a height or a girth, which for a designated heritage object is a striking amount of blank paper.\n\nLarge-leaved lime flowers ahead of the small-leaved kind, in June, when the bees find it before you do. The rest of the year it is a shape: four heavy stems rising together, which is not how a lime looks in a textbook and is exactly how they often look in old gardens that have been cut back and left to recover more than once.\n\nThe garden around it has been rebuilt repeatedly, most recently in a full restoration finished in 2012, so the ground at its feet is a good deal newer than the tree standing in it. If you know when it was planted, or have a tape measure and five minutes, we would like the numbers.",
+      "verified_sources": [
+        "data/registers/lithuania-stvk-gpo.json register_id 0310505050032 (Keturkamienė didžialapė liepa)",
+        "https://lt.wikipedia.org/wiki/Bernardin%C5%B3_sodas (lists \"Keturliemenė didžialapė liepa\", the same four-trunked large-leaved linden, among the 1996-protected garden trees)"
+      ],
+      "access": "Free, inside Bernardinai Garden (Sereikiškių Park), open daily",
+      "transport": "10-15 min walk from Cathedral Square, same park as the oldest oak (vln_001)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Four heavy stems leaving the ground together, a shape no lime has in a textbook.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vln_007",
+      "name": "The Three-Trunked Ash of Bernardinai Garden",
+      "species": "European Ash (Fraxinus excelsior)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Bernardinai Garden (Sereikiškių Park)",
+        "latitude": 54.68306,
+        "longitude": 25.29804,
+        "neighbourhood": "Užupis / Old Town"
+      },
+      "story": "Two official sources have counted this tree's trunks and come to different numbers. The municipal register, which supplies the coordinates on this page, calls it Trikamienis paprastasis uosis, the three-trunked common ash. The encyclopedia entry for Bernardinai Garden lists a four-trunked ash among the same 1996 protected inventory, plus a second, plainer Sereikiškės Park ash besides.\n\nIt gets muddier. The register itself carries another ash about thirty metres away with no trunk count at all, which might be that second entry or might be this same tree written down twice under another name.\n\nThis page goes with the register's count and the register's pin. If you count four when you get there, tell us, because a reader with working eyes settles it faster than any amount of desk research.\n\nNo age has ever been recorded for it, and neither source gives a height or a girth. What it does have is position. It stands in the lower part of Bernardinai Garden, a short walk from the pedestrian bridge over the Vilnia and about ten minutes from Cathedral Square, on the same loop as the nine-trunked willow, the four-trunked lime and the four-hundred-year-old oak at the southern end.",
+      "verified_sources": [
+        "data/registers/lithuania-stvk-gpo.json register_id 0310505160013 (Trikamienis paprastasis uosis)",
+        "https://lt.wikipedia.org/wiki/Bernardin%C5%B3_sodas (lists a multi-trunked ash among the 1996-protected garden trees)"
+      ],
+      "access": "Free, inside Bernardinai Garden (Sereikiškių Park), open daily",
+      "transport": "10-15 min walk from Cathedral Square, same park as the oldest oak (vln_001)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A multi-stemmed ash in the lower part of the garden. Count the trunks: the register says three and the garden's own inventory says four, and it lists a second ash about thirty metres away that may or may not be the same tree.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

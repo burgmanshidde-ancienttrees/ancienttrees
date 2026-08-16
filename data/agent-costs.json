@@ -1912,6 +1912,15 @@
         "note": "Register-led Tallinn opening: 4 verified (Kelch's linden, Suda street ginkgo, Windecki red oak, Huecki linden pair), 33 leads, 0 blocked. The register turned out to be mostly nineteenth-century ornamental cultivars, so the rejection rate was the point of the pass rather than a failure of it. Tokens are the harness's measured figure, not the agent's 145k self-estimate.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "vilnius+tallinn",
+        "kind": "write",
+        "tokens": 116484,
+        "trees": 11,
+        "note": "11 stories across two new cities in one context; 5 undated Vilnius trees written as reader invitations rather than hedged prose, one best_time (the Tallinn ginkgo). Tokens are the harness's measured figure, not the agent's 88k self-estimate.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
