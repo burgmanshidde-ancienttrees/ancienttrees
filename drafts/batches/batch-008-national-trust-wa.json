@@ -1,0 +1,15 @@
+{
+ "batch": "008-national-trust-wa",
+ "status": "approved_by_hidde",
+ "approved": "Hidde in session 2026-08-16, standing instruction to send the register licence asks",
+ "note": "Licence ask for the National Trust of WA Significant Tree Register (PDF, 64 entries, 24 Perth metro, no coordinates, no licence stated). Perth is rank 7. Address trust@ntwa.com.au read off their own Contact Us page 2026-08-16; engagement@ntwa.com.au also appears there but trust@ is the general one.",
+ "mails": [
+  {
+   "to": "trust@ntwa.com.au",
+   "found_at": "https://www.nationaltrustwa.com.au/about/contact-us/, read 2026-08-16",
+   "outlet": "National Trust of Western Australia, Significant Tree Register",
+   "subject": "Licence for the Significant Tree Register",
+   "body": "Hello,\n\nMy name is Hidde and I am building ancienttrees.app, a platform for remarkable\ntrees. My goal is to get people excited about old trees and to encourage them to\ngo outside and look at them.\n\nI would like to show the trees from your Significant Tree Register on the map,\ncredited to the National Trust of Western Australia with a link back, starting\nwith the Perth ones. The register PDF carries no licence, so I am asking rather\nthan assuming.\n\nThe site is free and has no ads, but I am building an app with a paid tier\nlater, so I will not claim non-commercial. We would only publish trees people\ncan actually go and see, and we leave out anything in a private garden.\n\nWould you be willing to licence it, or tell me the terms you would want? A\nversion with coordinates would save me geocoding every address, if one exists.\n\nAnd either way: which West Australian tree do you think more people should go\nand see?\n\nKind regards,\nHidde\nancienttrees.app"
+  }
+ ]
+}
