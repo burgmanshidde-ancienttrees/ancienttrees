@@ -1,0 +1,161 @@
+{
+  "city": "Tallinn",
+  "country": "Estonia",
+  "status": "needs_curation",
+  "intro": "Four trees, and they do not make one walk. Two stand in the Old Town: a hollow lime beside Niguliste church, generally called the oldest tree in Tallinn and said to have a chronicler buried at its foot, and a pair of limes planted in 1883 for two hundred years of one family at one address. A few streets away grows the largest ginkgo in Estonia, which stopped a Soviet parade grandstand in the 1980s. The fourth is out at Maarjamae, in the park of a manor house that burned down in 1995.",
+  "meta_description": "Four remarkable trees in Tallinn: the lime said to be the city's oldest, Estonia's largest ginkgo that stopped a Soviet grandstand, and a pair from 1883.",
+  "question_meta": "Tallinn's oldest tree is Kelch's Linden beside Niguliste church, around 370 years old. Where it stands, and three more worth the walk.",
+  "question_answer": "The oldest tree in Tallinn is Kelch's Linden, which stands beside Niguliste church in the Old Town, a few minutes on foot from Town Hall Square. A ring assessment in 1999 put it at 340 to 350 years and measured the trunk at 462 centimetres round, which makes it roughly 370 years old now; a 1938 newspaper gave its planting year as 1680, which fits. It is named for Christian Kelch, the Baltic-German pastor who wrote a chronicle of Livonia and died in 1710, and the tradition in Tallinn holds that he is buried at its foot. Nobody has dug to check. The tree looks its age. Two main branches are what remains of the crown, the base is hollow and has been sealed against further rot, and it has been pruned repeatedly to keep weight off what is still holding. When Tallinn was named European Tree City in 2015, this lime was part of the case. It stands beside the church that burned in the air raid of March 1944 and took decades to rebuild; the tree, by then already close to three centuries old, needed no rebuilding.",
+  "question_context": "Estonia's EELIS register of protected individual natural objects gives each tree a position, a designation date and a manager, and carries no age, girth or vitality field at all. So every year on this page comes from a measurement someone published separately: a 1999 ring assessment for Kelch's Linden, a 2017 dendrological survey for the ginkgo and for the Windecki red oak, and a hedged newspaper account for the Huecki lindens, which the culture weekly Sirp dates to 1883 with an explicit apparently. Where a figure rests on an assumption, the tree's own page says which assumption. The Windecki oak is the clearest case: its age holds only if it went into the ground with the manor park's original planting before 1886, and that if is the whole basis for the number. The register lists several dozen more protected trees in Tallinn, most of them nineteenth-century ornamental cultivars in and around Kadriorg's park planting, copper beeches and globe maples and weeping birches designated as botanical specimens rather than for age or size. See the full list of four on the Tallinn page.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Tallinn?",
+      "a": "Kelch's Linden, beside Niguliste church in the Old Town. A ring assessment in 1999 dated it to 340 to 350 years, putting it near 370 now, and a 1938 newspaper gave 1680 as its planting year. It is named for the chronicler Christian Kelch, who by tradition is buried at its foot."
+    },
+    {
+      "q": "Are these all the protected trees in Tallinn?",
+      "a": "No. Estonia protects several dozen individual trees in the city. Most of them are nineteenth-century ornamental cultivars in the park planting around Kadriorg, copper beeches, globe maples and weeping birches, designated as botanical specimens rather than for age or size. The four here are the ones that are old or remarkable in their own right."
+    },
+    {
+      "q": "Can I see them in one walk?",
+      "a": "Three of the four, comfortably. Kelch's Linden and the Huecki lindens are both in the Old Town, and the ginkgo is a short walk out at the corner of Peeter Suda street and Parnu maantee. The Windecki red oak is about twenty minutes further out at Maarjamae and needs its own trip."
+    },
+    {
+      "q": "Are they free to visit?",
+      "a": "Yes, all four stand in public space: two on Old Town streets, one on a street corner, and one in a small former manor park that is open ground."
+    }
+  ],
+  "hero_tree_id": "tln_001",
+  "oldest_tree_id": "tln_001",
+  "trees": [
+    {
+      "id": "tln_001",
+      "name": "Kelch's Linden (Kelchi pärn)",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "roughly 350-375 years",
+      "age_min": 340,
+      "age_max": 377,
+      "location": {
+        "address": "Near Niguliste Church (Niguliste 3), Tallinn Old Town",
+        "latitude": 59.435586,
+        "longitude": 24.742527,
+        "neighbourhood": "Vanalinn (Old Town)"
+      },
+      "story": "A chronicler is said to lie under this lime. Christian Kelch, the Baltic-German pastor who wrote a chronicle of Livonia and died in 1710, gave the tree the name it still carries, and the tradition in Tallinn is that he is buried at its foot. Nobody has dug to check.\n\nThe numbers are firmer than the legend, if older than anyone would like. In 1999 the trunk measured 462 centimetres round at chest height, the tree stood 16 metres tall, and a ring assessment put it at 340 to 350 years. Carry that forward and it lands near 370 now, which sits comfortably with the other date attached to it: a 1938 newspaper gave its planting as 1680. It is generally called the oldest tree in Tallinn.\n\nIt looks its age. Two main branches are what remains of the crown, the base is hollow and has been sealed against further rot, and it has been pruned to keep weight off what is still holding. When Tallinn was named European Tree City in 2015, this tree was part of the argument.\n\nIt stands beside Niguliste, the church that burned in the air raid of March 1944 and took decades to rebuild. The lime, by then already close to three centuries old, needed no rebuilding.",
+      "verified_sources": [
+        "https://et.wikipedia.org/wiki/Kelchi_p%C3%A4rn",
+        "http://entsyklopeedia.ee/artikkel/kelchi_p%C3%A4rn"
+      ],
+      "access": "Free, stands in public space near Niguliste Church in the Old Town",
+      "transport": "Central Tallinn Old Town, short walk from Vabaduse väljak (Freedom Square) tram/bus stops",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "An old hollow lime beside Niguliste church, down to two main branches, with the base sealed against rot.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "tln_002",
+      "name": "The Süda Street Ginkgo (Süda tänava hõlmikpuu)",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "over 110 years",
+      "age_min": 113,
+      "age_max": 128,
+      "location": {
+        "address": "Corner of Peeter Süda tänav and Pärnu maantee",
+        "latitude": 59.430184,
+        "longitude": 24.745408,
+        "neighbourhood": "Tatari"
+      },
+      "story": "This tree gave the Estonian language a phrase. In the late 1980s a new Soviet parade grandstand and an annex for the Estonia Theatre would have taken out the ginkgo on the corner of Peeter Süda street. Public opposition stopped the project, and hõlmikpuu sündroom, ginkgo syndrome, has meant a building plan blocked by a protected tree ever since.\n\nIt was not born on this corner. Heinrich Kühnert brought ginkgo seed home from Germany in the late 1800s and raised it in the family's private park a few hundred metres away. When the street was widened in 1913 his son Ernst moved the tree here, and it has been measured on and off ever since: six metres tall in 1928, 8.2 metres in 1955, 13 metres with a trunk 164 centimetres round by the 2017 survey, which put its age at over 110 years. It is the largest ginkgo in Estonia and has been protected since 30 April 1966.\n\nIts health is not perfect. In 2017 the Estonian Dendrology Society reported that the crown had gone lopsided in the shade of a neighbouring maple and needed dead wood taken out. Forty years after it beat the grandstand, planning arguments still happen around it rather than through it.\n\nCome in late October. Ginkgos turn a hard clean yellow and then drop the lot within days.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when it turns gold and drops the lot within days"
+      },
+      "verified_sources": [
+        "https://et.wikipedia.org/wiki/S%C3%BCda_t%C3%A4nava_h%C3%B5lmikpuu",
+        "https://eelis.ee/default.aspx?state=2%3B-1158249072%3Best%3Beelisand%3B%3B&comp=objresult%3Dala&obj_id=708",
+        "https://www.err.ee/609444/tallinna-kuulus-holmikpuu-vajab-abi"
+      ],
+      "access": "Free, stands at a public street corner",
+      "transport": "Central Tallinn, Tatari neighbourhood, walkable from the city centre",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The only ginkgo on the corner, and the fan-shaped leaves give it away at any time of year it has them.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "tln_003",
+      "name": "The Windecki Red Oak (Windecki punane tamm)",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "roughly 140-150 years",
+      "age_min": 140,
+      "age_max": 150,
+      "location": {
+        "address": "Windecki park, near Tuulenurga tn 6, Maarjamäe",
+        "latitude": 59.458357,
+        "longitude": 24.815658,
+        "neighbourhood": "Maarjamäe, Pirita linnaosa"
+      },
+      "story": "The house burned down in 1995. The oak the owner planted is still standing.\n\nRobert Weisse built Windecki as a summer estate on the terrace below the Lasnamäe cliff and laid out its park before his death in 1886. The timber main house went up in flames a century later and was never rebuilt. What survived is the planting: 32 trees where there were 42 in 1995, a row of seventeen old European larches, and this red oak.\n\nThe dendrologist Olev Abner surveyed the ground in 2017 and made the case that it is probably the oldest red oak in Estonia, thicker in the trunk and taller than either of the two others the country protects individually. He recorded it at 24 metres high and 83 centimetres through. The age comes from the park rather than from a ring count: if the oak went in with Weisse's original planting, it is roughly 140 to 150 years old now, and that \"if\" is the whole basis for the number.\n\nThere is a second wrinkle. A 2007 survey of the same park recorded its largest red oak at the same 24 metres but only 61 centimetres through, which is either a different tree or a different tape measure. Estonia gave this one formal protection in 2020.\n\nMaarjamäe is twenty minutes out from the centre, and the park is small enough to find it in.",
+      "verified_sources": [
+        "https://www.eestimetsaabiks.ee/wp-content/uploads/2018/03/Ekspertiis-Windecki-pargi-ja-Hans-Lepa-aia-puukooli_2017_12_08.pdf",
+        "http://vana.loodusajakiri.ee/eesti_loodus/artikkel2011_2002.html"
+      ],
+      "access": "Free; stands in Windecki park, a former manor summer estate park now open ground in the Maarjamäe area",
+      "transport": "Pirita/Maarjamäe district, Tallinn; reachable by bus along Pirita tee, roughly 15-20 minutes from the centre",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The largest oak in a small manor park, alongside a row of seventeen old European larches. The main house is gone; it burned down in 1995.",
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "tln_004",
+      "name": "The Huecki Lindens (Huecki pärnad)",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "roughly 140 years",
+      "age_min": 140,
+      "age_max": 143,
+      "location": {
+        "address": "In front of Lai 29 (Huecki maja), Tallinn Old Town",
+        "latitude": 59.440527,
+        "longitude": 24.746039,
+        "neighbourhood": "Vanalinn (Old Town)"
+      },
+      "story": "Two limes, planted in 1883 to mark two hundred years of one family at one address. The Huecks acquired Lai 29 in 1683 and the trees went in for the bicentenary, which is a grand way to note a property anniversary and has outlived everyone involved. Sirp, the Estonian culture weekly that records the year, hedges it with \"apparently\", so take 1883 as the best account anyone has rather than a documented planting.\n\nThey belong together and are protected together, listed as a single natural monument since 2009: two common limes in front of one house, each around 25 metres tall. There is one obvious place to stand, on the far pavement, where both fit in the frame at once.\n\nThe interesting part is underneath. Lai is a paved Old Town street with almost nothing beneath it for a root to work with, and Sirp describes the pair as growing in the middle of a stone desert. Whatever the family thought it was planting, the result has spent 143 years making a living out of the gaps between cobbles and cellar walls, at a size that would be respectable in a park with proper soil.\n\nThe house behind them still carries the family's name.",
+      "verified_sources": [
+        "https://www.sirp.ee/puude-tanavaelu/",
+        "https://www.protectedplanet.net/harilik-parn-2-puud-huecki-parnad-2-protected-nature-monument"
+      ],
+      "access": "Free, street trees standing in public space in front of the historic Huecki house",
+      "transport": "Central Tallinn Old Town, short walk from the Old Town's northern gate area",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Two limes of matched size standing together in front of Lai 29. The far pavement is the place to stand, where both fit in one view.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
