@@ -3549,9 +3549,9 @@
    "trees": 10,
    "photos": 1,
    "walks": 1,
-   "register": 262,
+   "register": 282,
    "ready": 0,
-   "supply": 262,
+   "supply": 282,
    "target": 10,
    "ease": 1.5,
    "work_score": 2.29,
@@ -4358,6 +4358,28 @@
   },
   {
    "rank": 198,
+   "city": "Quebec City",
+   "country": "Canada",
+   "slug": "quebec-city",
+   "score": 1.01,
+   "demand": 124358,
+   "basis": "published, never ranked (may be uncrawled)",
+   "status": "published",
+   "trees": 6,
+   "photos": 0,
+   "walks": 1,
+   "register": 494,
+   "ready": 0,
+   "supply": 494,
+   "target": 10,
+   "ease": 1.5,
+   "work_score": 1.52,
+   "impressions_10d": 0,
+   "clicks_10d": 0,
+   "travel": 4057
+  },
+  {
+   "rank": 199,
    "city": "Berlin",
    "country": "Germany",
    "slug": "berlin",
@@ -4379,7 +4401,7 @@
    "travel": 21405
   },
   {
-   "rank": 199,
+   "rank": 200,
    "city": "Brussels",
    "country": "Belgium",
    "slug": "brussels",
@@ -4401,7 +4423,7 @@
    "travel": 10781
   },
   {
-   "rank": 200,
+   "rank": 201,
    "city": "Cadiz",
    "country": "Spain",
    "slug": "cadiz",
@@ -4423,7 +4445,7 @@
    "travel": 3583
   },
   {
-   "rank": 201,
+   "rank": 202,
    "city": "Cork",
    "country": "Ireland",
    "slug": "cork",
@@ -4445,7 +4467,7 @@
    "travel": 3880
   },
   {
-   "rank": 202,
+   "rank": 203,
    "city": "Reykjavik",
    "country": "Iceland",
    "slug": "reykjavik",
@@ -4467,7 +4489,7 @@
    "travel": 5535
   },
   {
-   "rank": 203,
+   "rank": 204,
    "city": "Alicante",
    "country": "Spain",
    "slug": "alicante",
@@ -4489,7 +4511,7 @@
    "travel": 2661
   },
   {
-   "rank": 204,
+   "rank": 205,
    "city": "Bucharest",
    "country": "Romania",
    "slug": "bucharest",
@@ -4511,7 +4533,7 @@
    "travel": 7376
   },
   {
-   "rank": 205,
+   "rank": 206,
    "city": "Chicago",
    "country": "United States",
    "slug": "chicago",
@@ -4533,7 +4555,7 @@
    "travel": 10277
   },
   {
-   "rank": 206,
+   "rank": 207,
    "city": "Antalya",
    "country": "Turkey",
    "slug": "antalya",
@@ -4555,7 +4577,7 @@
    "travel": 2618
   },
   {
-   "rank": 207,
+   "rank": 208,
    "city": "Parma",
    "country": "Italy",
    "slug": "parma",
@@ -4577,7 +4599,7 @@
    "travel": 3196
   },
   {
-   "rank": 208,
+   "rank": 209,
    "city": "Colmar",
    "country": "France",
    "slug": "colmar",
@@ -4599,7 +4621,7 @@
    "travel": 1280
   },
   {
-   "rank": 209,
+   "rank": 210,
    "city": "Bodrum",
    "country": "Turkey",
    "slug": "bodrum",
@@ -4621,7 +4643,7 @@
    "travel": 2519
   },
   {
-   "rank": 210,
+   "rank": 211,
    "city": "Nafplio",
    "country": "Greece",
    "slug": "nafplio",
@@ -4643,7 +4665,7 @@
    "travel": 1235
   },
   {
-   "rank": 211,
+   "rank": 212,
    "city": "Regensburg",
    "country": "Germany",
    "slug": "regensburg",
@@ -4665,7 +4687,7 @@
    "travel": 1182
   },
   {
-   "rank": 212,
+   "rank": 213,
    "city": "Oxford",
    "country": "United Kingdom",
    "slug": "oxford",
@@ -4687,7 +4709,7 @@
    "travel": 4851
   },
   {
-   "rank": 213,
+   "rank": 214,
    "city": "Paris",
    "country": "France",
    "slug": "paris",
@@ -4709,7 +4731,7 @@
    "travel": 20126
   },
   {
-   "rank": 214,
+   "rank": 215,
    "city": "Genoa",
    "country": "Italy",
    "slug": "genoa",
@@ -4731,7 +4753,7 @@
    "travel": 2634
   },
   {
-   "rank": 215,
+   "rank": 216,
    "city": "Palma de Mallorca",
    "country": "Spain",
    "slug": "palma-de-mallorca",
@@ -4753,7 +4775,7 @@
    "travel": 2838
   },
   {
-   "rank": 216,
+   "rank": 217,
    "city": "Zaragoza",
    "country": "Spain",
    "slug": "zaragoza",
@@ -4775,7 +4797,7 @@
    "travel": 2902
   },
   {
-   "rank": 217,
+   "rank": 218,
    "city": "Evora",
    "country": "Portugal",
    "slug": "evora",
@@ -4797,7 +4819,7 @@
    "travel": 776
   },
   {
-   "rank": 218,
+   "rank": 219,
    "city": "Bamberg",
    "country": "Germany",
    "slug": "bamberg",
@@ -4819,7 +4841,7 @@
    "travel": 971
   },
   {
-   "rank": 219,
+   "rank": 220,
    "city": "Delft",
    "country": "Netherlands",
    "slug": "delft",
@@ -4841,7 +4863,7 @@
    "travel": 2957
   },
   {
-   "rank": 220,
+   "rank": 221,
    "city": "Assisi",
    "country": "Italy",
    "slug": "assisi",
@@ -4863,7 +4885,7 @@
    "travel": 680
   },
   {
-   "rank": 221,
+   "rank": 222,
    "city": "Stratford-upon-Avon",
    "country": "United Kingdom",
    "slug": "stratford-upon-avon",
@@ -4885,7 +4907,7 @@
    "travel": 1099
   },
   {
-   "rank": 222,
+   "rank": 223,
    "city": "Toulouse",
    "country": "France",
    "slug": "toulouse",
@@ -4907,7 +4929,7 @@
    "travel": 2920
   },
   {
-   "rank": 223,
+   "rank": 224,
    "city": "Trieste",
    "country": "Italy",
    "slug": "trieste",
@@ -4929,7 +4951,7 @@
    "travel": 5727
   },
   {
-   "rank": 224,
+   "rank": 225,
    "city": "Valencia",
    "country": "Spain",
    "slug": "valencia",
@@ -4952,7 +4974,7 @@
    "travel": 8820
   },
   {
-   "rank": 225,
+   "rank": 226,
    "city": "Braga",
    "country": "Portugal",
    "slug": "braga",
@@ -4972,28 +4994,6 @@
    "ease": 1.66,
    "work_score": 1.03,
    "travel": 2477
-  },
-  {
-   "rank": 226,
-   "city": "Quebec City",
-   "country": "Canada",
-   "slug": "quebec-city",
-   "score": 1.01,
-   "demand": 124358,
-   "basis": "published, never ranked (may be uncrawled)",
-   "status": "published",
-   "trees": 6,
-   "photos": 0,
-   "walks": 1,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 10,
-   "ease": 1.0,
-   "work_score": 1.01,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
-   "travel": 4057
   },
   {
    "rank": 227,

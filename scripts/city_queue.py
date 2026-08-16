@@ -111,22 +111,56 @@ def city_coords(city, article=None):
     return out
 
 
-def register_points():
+def register_rows(d):
+    """Every list of dicts in a register file, whatever it is called.
+
+    This used to read `trees` or `entries` and nothing else, which silently
+    lost two whole registers: Quebec City stores raw GeoJSON under `features`
+    (685 trees) and Massachusetts splits its data into `champion_trees_2026`
+    and `legacy_trees_2026` (615, and Boston sits in it). Both files were
+    correct and both counted as zero supply, which is the same failure as the
+    coordinate bug found the same morning: a measurement that reads zero
+    because of its own shape assumption, not because the data is missing.
+    So: take any list of dicts, and let the coordinate reader decide."""
+    if isinstance(d, list):
+        return d
+    out = []
+    for v in d.values():
+        if isinstance(v, list) and v and isinstance(v[0], dict):
+            out.extend(v)
+    return out
+
+
+def row_point(r):
+    """Lat/lon out of a register row in any of the three shapes seen so far."""
+    la, lo = r.get("latitude", r.get("lat")), r.get("longitude", r.get("lng"))
+    if la is None and isinstance(r.get("geometry"), dict):
+        # Raw GeoJSON, and the order is longitude first, which is the reverse
+        # of every other coordinate in this repo.
+        c = r["geometry"].get("coordinates")
+        if isinstance(c, list) and len(c) >= 2:
+            lo, la = c[0], c[1]
+    try:
+        return (float(la), float(lo)) if la is not None and lo is not None else None
+    except (TypeError, ValueError):
+        return None
+
+
+def register_points(warn=False):
     pts = []
-    for p in glob.glob(os.path.join(ROOT, "data", "registers", "*.json")):
+    for p in sorted(glob.glob(os.path.join(ROOT, "data", "registers", "*.json"))):
         with open(p, encoding="utf-8") as fh:
             d = json.load(fh)
-        rows = d if isinstance(d, list) else (d.get("trees") or d.get("entries") or [])
-        for r in rows:
-            if not isinstance(r, dict):
-                continue
-            la = r.get("latitude", r.get("lat"))
-            lo = r.get("longitude", r.get("lng"))
-            try:
-                if la is not None and lo is not None:
-                    pts.append((float(la), float(lo)))
-            except (TypeError, ValueError):
-                continue
+        rows = register_rows(d)
+        got = [q for q in (row_point(r) for r in rows if isinstance(r, dict)) if q]
+        # A register file that contributes nothing is nearly always a shape
+        # this reader has not met yet, not an empty register. Say so rather
+        # than letting it count as zero supply for a city.
+        if warn and not got:
+            print("  WARNING %s yields no coordinates (%d rows read). If the "
+                  "file has data, register_points() cannot see its shape."
+                  % (os.path.basename(p), len(rows)))
+        pts.extend(got)
     return pts
 
 
@@ -426,7 +460,7 @@ def main():
         print("city-list.json is inventory only, order lives in CITY_QUEUE.md")
         return 0
 
-    pts = register_points()
+    pts = register_points(warn=True)
     globals()['PTS'] = pts
     live = measure(pts)
     doc = enrich(load_source(), live)

@@ -774,6 +774,14 @@
    "trees": 7
   },
   {
+   "city": "Quebec City",
+   "country": "Canada",
+   "slug": "quebec-city",
+   "status": "published",
+   "demand_views_90d": 124358,
+   "trees": 6
+  },
+  {
    "city": "Berlin",
    "country": "Germany",
    "slug": "berlin",
@@ -916,14 +924,6 @@
    "demand_views_90d": 34522,
    "trees": 4,
    "note": "Ships with 4. Two further ICNF-classified trees stand in the cerca of the Mosteiro de Tibaes (twin Himalayan cedars and Portugal's tallest maritime pine); the monastery's own site carries a live closure notice for the cerca while works run, so both are held in data/leads/braga.json until it reopens."
-  },
-  {
-   "city": "Quebec City",
-   "country": "Canada",
-   "slug": "quebec-city",
-   "status": "published",
-   "demand_views_90d": 124358,
-   "trees": 6
   },
   {
    "city": "Antwerp",
