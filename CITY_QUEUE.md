@@ -190,7 +190,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 9 | Malaga | 27.18 | 117,780 | 10 | 5 | 2 | - | 20 | measured |
 | 10 | Florence | 19.30 | 184,099 | 22 | 7 | 3 | 27 | 20 | measured |
 | 11 | Dublin | 20.38 | 240,850 | 17 | 4 | 2 | 12 | 20 | measured |
-| 12 | Paris | 22.83 | 524,268 | 25 | 9 | 3 | 129 | 30 | measured |
+| 12 | Paris | 22.83 | 524,268 | 30 | 9 | 4 | 129 | 30 | measured |
 | 13 | Valencia | 15.49 | 162,209 | 16 | 2 | 2 | 350 | 20 | measured |
 | 14 | Toronto | 23.84 | 411,011 | 4 | - | - | - | 10 | predicted (travel demand) |
 | 15 | Porto | 13.86 | 120,415 | 27 | 5 | 2 | 40 | 20 | measured |
@@ -198,7 +198,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 17 | Milan | 11.96 | 212,705 | 18 | 9 | 2 | 25 | 20 | measured |
 | 18 | Brussels | 15.49 | 176,863 | 20 | 4 | 1 | 436 | 20 | measured |
 | 19 | Montreal | 22.81 | 315,322 | 7 | - | 1 | - | 10 | predicted (travel demand) |
-| 20 | Geneva | 14.95 | 162,269 | 6 | 4 | 1 | 129 | 20 | measured |
+| 20 | Geneva | 14.95 | 162,269 | 14 | 4 | 3 | 133 | 20 | measured |
 | 21 | Munich | 14.68 | 224,067 | 29 | 13 | 6 | 76 | 20 | measured |
 | 22 | New York | 21.74 | 1,124,326 | 20 | 5 | 2 | - | 50 | measured |
 | 23 | Seville | 10.87 | 170,545 | 20 | 6 | 2 | - | 20 | measured |
@@ -214,30 +214,30 @@ so qa.py fails the deploy when the table and the json disagree.
 | 33 | Kyoto | 11.69 | 142,353 | 18 | 8 | 2 | - | 20 | measured |
 | 34 | Nice | 17.12 | 136,877 | 10 | 6 | 2 | - | 20 | measured |
 | 35 | Perth | 16.42 | 180,478 | - | - | - | - | 10 | predicted (travel demand) |
-| 36 | Bath | 14.95 | 144,950 | 5 | 1 | 1 | - | 20 | measured |
-| 37 | Berlin | 9.78 | 412,181 | 18 | 11 | 1 | 195 | 30 | measured |
-| 38 | Cadiz | 9.78 | 79,226 | 5 | 4 | 1 | - | 10 | measured |
-| 39 | Los Angeles | 14.41 | 665,559 | - | - | - | - | 10 | predicted (travel demand) |
-| 40 | Edinburgh | 14.13 | 292,981 | 15 | 4 | 1 | - | 20 | measured |
-| 41 | Bari | 8.65 | 86,456 | - | - | - | 4 | 10 | predicted (travel demand) |
-| 42 | Washington DC | 13.59 | 606,731 | 14 | 1 | 2 | - | 30 | measured |
-| 43 | Budapest | 13.32 | 283,807 | 12 | 1 | 3 | - | 20 | measured |
-| 44 | The Hague | 8.70 | 236,723 | 5 | 1 | 1 | - | 20 | measured |
-| 45 | Venice | 8.15 | 267,527 | 11 | 6 | 1 | 4 | 20 | measured |
-| 46 | Seattle | 12.43 | 398,724 | - | - | - | - | 10 | predicted (travel demand) |
-| 47 | Cologne | 12.17 | 191,812 | - | - | - | - | 10 | predicted (travel demand) |
-| 48 | Girona | 7.87 | 51,072 | - | - | - | - | 10 | predicted (travel demand) |
-| 49 | Bilbao | 7.72 | 133,133 | - | - | - | - | 10 | predicted (travel demand) |
-| 50 | Chiang Mai | 11.42 | 66,541 | - | - | - | - | 10 | predicted (travel demand) |
-| 51 | Jerusalem | 11.17 | 314,788 | - | - | - | - | 10 | predicted (travel demand) |
-| 52 | Dubai | 11.02 | 334,167 | - | - | - | - | 10 | predicted (travel demand) |
-| 53 | Antwerp | 10.87 | 128,289 | 10 | 4 | 1 | - | 20 | measured |
-| 54 | Bristol | 10.60 | 163,983 | 5 | 1 | - | - | 20 | measured |
-| 55 | Dubrovnik | 10.33 | 119,586 | 4 | 1 | 1 | - | 20 | measured |
-| 56 | Lyon | 10.33 | 136,951 | 9 | 3 | 1 | - | 20 | measured |
-| 57 | Hamburg | 10.27 | 191,221 | - | - | - | - | 10 | predicted (travel demand) |
-| 58 | Mexico City | 9.97 | 566,583 | - | - | - | - | 10 | predicted (travel demand) |
-| 59 | Bratislava | 9.95 | 132,162 | - | - | - | - | 10 | predicted (travel demand) |
+| 36 | Lyon | 10.33 | 136,951 | 9 | 3 | 1 | 158 | 20 | measured |
+| 37 | Bath | 14.95 | 144,950 | 5 | 1 | 1 | - | 20 | measured |
+| 38 | Bratislava | 9.95 | 132,162 | - | - | - | 26 | 10 | predicted (travel demand) |
+| 39 | Berlin | 9.78 | 412,181 | 18 | 11 | 1 | 195 | 30 | measured |
+| 40 | Cadiz | 9.78 | 79,226 | 5 | 4 | 1 | - | 10 | measured |
+| 41 | Los Angeles | 14.41 | 665,559 | - | - | - | - | 10 | predicted (travel demand) |
+| 42 | Bari | 8.65 | 86,456 | - | - | - | 8 | 10 | predicted (travel demand) |
+| 43 | Edinburgh | 14.13 | 292,981 | 15 | 4 | 1 | - | 20 | measured |
+| 44 | Washington DC | 13.59 | 606,731 | 14 | 1 | 2 | - | 30 | measured |
+| 45 | Budapest | 13.32 | 283,807 | 12 | 1 | 3 | - | 20 | measured |
+| 46 | The Hague | 8.70 | 236,723 | 5 | 1 | 1 | - | 20 | measured |
+| 47 | Venice | 8.15 | 267,527 | 11 | 6 | 1 | 4 | 20 | measured |
+| 48 | Seattle | 12.43 | 398,724 | - | - | - | - | 10 | predicted (travel demand) |
+| 49 | Cologne | 12.17 | 191,812 | - | - | - | - | 10 | predicted (travel demand) |
+| 50 | Girona | 7.87 | 51,072 | - | - | - | - | 10 | predicted (travel demand) |
+| 51 | Bilbao | 7.72 | 133,133 | - | - | - | - | 10 | predicted (travel demand) |
+| 52 | Chiang Mai | 11.42 | 66,541 | - | - | - | - | 10 | predicted (travel demand) |
+| 53 | Jerusalem | 11.17 | 314,788 | - | - | - | - | 10 | predicted (travel demand) |
+| 54 | Dubai | 11.02 | 334,167 | - | - | - | - | 10 | predicted (travel demand) |
+| 55 | Antwerp | 10.87 | 128,289 | 10 | 4 | 1 | - | 20 | measured |
+| 56 | Bristol | 10.60 | 163,983 | 5 | 1 | - | - | 20 | measured |
+| 57 | Dubrovnik | 10.33 | 119,586 | 4 | 1 | 1 | - | 20 | measured |
+| 58 | Hamburg | 10.27 | 191,221 | - | - | - | - | 10 | predicted (travel demand) |
+| 59 | Mexico City | 9.97 | 566,583 | - | - | - | - | 10 | predicted (travel demand) |
 | 60 | Istanbul | 9.65 | 333,027 | 14 | 4 | 1 | - | 30 | measured |
 | 61 | Vancouver | 9.47 | 351,552 | - | - | - | - | 10 | predicted (travel demand) |
 | 62 | Krakow | 6.25 | 140,824 | 4 | 3 | 1 | 213 | 20 | measured |
