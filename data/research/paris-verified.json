@@ -1,0 +1,122 @@
+[
+  {
+    "id": "par_028",
+    "name": "The Oriental Plane of Square Louise Michel",
+    "species": "Oriental Plane (Platanus orientalis)",
+    "age_estimate": "roughly 170 years",
+    "age_min": 160,
+    "age_max": 180,
+    "girth_cm": 520,
+    "location": {
+      "address": "6 Place Saint Pierre",
+      "latitude": 48.88460843527525,
+      "longitude": 2.3439162548465453,
+      "neighbourhood": "Square Louise Michel, below the Sacre-Coeur, 18th arrondissement"
+    },
+    "verified_sources": [
+      "https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/arbresremarquablesparis (register_id 120588: Platanus orientalis, girth 520cm, height 28m, Square Louise Michel)",
+      "https://fr.wikipedia.org/wiki/Square_Louise-Michel_(Paris) (states this Platane d Orient: plante en 1857, hauteur 28m, circonference 520cm)"
+    ],
+    "access": "Free, public municipal garden (Square Louise Michel), open standard Paris park hours and closed at night",
+    "transport": "Anvers (Metro 2) or Abbesses (Metro 12), 5-8 min walk up the Butte Montmartre",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Square Louise Michel is the terraced garden on the Montmartre hillside leading up the 222 steps to the Sacre-Coeur, one of the most visited spots in Paris, so this tree gets heavy foot traffic past it daily. Girth (520cm) and height (28m) match EXACTLY between the Ville de Paris register and French Wikipedia, which also gives a specific planting year of 1857 for this individual tree, not the square: the square itself was only laid out in 1927, so the tree predates its own garden by 70 years, exactly like the already-published par_014 pattern (a tree older than the square around it). Age derived from that 1857 planting date: about 169 years as of 2026. FLAG: a third source (18dumois.info, a local 18th-arrondissement community site) cites a different Platane d Orient in the same arrondissement at 470cm girth planted 1840; that piece surveys the whole 18th arrondissement rather than this square specifically and its figures do not match the register or Wikipedia for this tree, so it may describe a different individual elsewhere in the 18th. Deliver the register+Wikipedia figures (520cm/1857) as primary and note the discrepancy rather than silently picking a winner. Would join Noyer du Caucase and Marronnier d Inde below into a 3-tree cluster all within about 150m in the same square, opening the 18th arrondissement (Montmartre) on the Paris page for the first time."
+  },
+  {
+    "id": "par_029",
+    "name": "The Caucasian Wingnut of Square Louise Michel",
+    "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+    "age_estimate": "roughly 125 years",
+    "age_min": 115,
+    "age_max": 135,
+    "girth_cm": 371,
+    "location": {
+      "address": "6 Place Saint Pierre",
+      "latitude": 48.88609867805312,
+      "longitude": 2.3446801358970153,
+      "neighbourhood": "Square Louise Michel, below the Sacre-Coeur, 18th arrondissement"
+    },
+    "verified_sources": [
+      "https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/arbresremarquablesparis (register_id 120518: Pterocarya fraxinifolia, girth 371cm, height 26m, Square Louise Michel)",
+      "https://fr.wikipedia.org/wiki/Square_Louise-Michel_(Paris) (a Pterocaryer du Caucase: 3,60m circonference, plante en 1899)"
+    ],
+    "access": "Free, public municipal garden (Square Louise Michel), open standard Paris park hours and closed at night",
+    "transport": "Anvers (Metro 2) or Abbesses (Metro 12), 5-8 min walk up the Butte Montmartre",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Second tree of the Square Louise Michel cluster, about 150m from par_028. Wikipedia describes one Pterocarya in the square at 3.60m girth planted 1899; the register carries TWO Pterocarya fraxinifolia entries in this square (this one at 371cm and a second, undated, at 416cm about 60m away). 371cm is the closer match to the Wikipedia figure so the 1899 planting date is attached to this one; the second, larger specimen is left as an unverified lead rather than guessed at, since attributing a date to the wrong individual would be a bridge claim. FLAG: register height (26m) is noticeably taller than the 20m Wikipedia gives for its Pterocaryer, which may reflect years of growth since that figure was recorded, or may mean Wikipedia is describing the other, unlisted specimen; noted rather than resolved. Caucasian Wingnut already appears once on the Paris page (par_025, Square d Estienne d Orves, 8th arr) so this is not a new species for the site, but it is a new arrondissement and a much larger individual with a documented planting date, unlike par_025."
+  },
+  {
+    "id": "par_030",
+    "name": "The Horse Chestnut of Square Louise Michel",
+    "species": "Horse Chestnut (Aesculus hippocastanum)",
+    "age_estimate": "roughly 125 years",
+    "age_min": 115,
+    "age_max": 135,
+    "girth_cm": 370,
+    "location": {
+      "address": "6 Place Saint Pierre",
+      "latitude": 48.884471602947016,
+      "longitude": 2.343107759067453,
+      "neighbourhood": "Square Louise Michel, below the Sacre-Coeur, 18th arrondissement"
+    },
+    "verified_sources": [
+      "https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/arbresremarquablesparis (register_id 112503: Aesculus hippocastanum, girth 370cm, height 21m, Square Louise Michel)",
+      "https://fr.wikipedia.org/wiki/Square_Louise-Michel_(Paris) and https://www.pariszigzag.fr/insolite/lieux-insolites/square-louise-michel-montmartre/ (both cite this Marronnier d Inde: 20m tall, 3.30m circumference, planted 1902; pariszigzag piece last updated 28 November 2024)"
+    ],
+    "access": "Free, public municipal garden (Square Louise Michel), open standard Paris park hours and closed at night",
+    "transport": "Anvers (Metro 2) or Abbesses (Metro 12), 5-8 min walk up the Butte Montmartre",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Third tree of the Square Louise Michel cluster, only 30-40m from par_028 and 150m from par_029; the register lists only one Marronnier d Inde at this square, and both secondary sources agree closely on species, height (20m vs register 21m) and give the same 1902 planting date, so the 1902 date can be attached to this specific tree with confidence (age about 124 years). Girth has grown from 330cm (Wikipedia figure) to the register 370cm, which is consistent growth rather than a conflict. Least flagged of the three Square Louise Michel trees; the pariszigzag source was last updated November 2024, good recent evidence the square and its trees are unchanged and this is a genuinely popular, well-trodden garden."
+  },
+  {
+    "id": "par_031",
+    "name": "The Horse Chestnut of Square Rene-Le Gall",
+    "species": "Horse Chestnut (Aesculus hippocastanum)",
+    "age_estimate": "roughly 130 years",
+    "age_min": 125,
+    "age_max": 135,
+    "girth_cm": 369,
+    "location": {
+      "address": "1 Rue Emile Deslandres",
+      "latitude": 48.83303012172054,
+      "longitude": 2.350696508611639,
+      "neighbourhood": "Square Rene-Le Gall (Jardin des Gobelins), Croulebarbe, 13th arrondissement"
+    },
+    "verified_sources": [
+      "https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/arbresremarquablesparis (register_id 104841: Aesculus hippocastanum, girth 369cm, height 17m, planted 1894, Square Rene Le Gall)",
+      "https://fr.wikipedia.org/wiki/Square_Ren%C3%A9-Le_Gall (marronnier d Inde plante en 1893-1894, classe arbre remarquable, 18m de hauteur et 3,6m de circonference en 2011)"
+    ],
+    "access": "Free, public municipal square (Square Rene-Le Gall, also known as Jardin des Gobelins), open standard Paris park hours and closed at night",
+    "transport": "Corvisart or Les Gobelins (Metro 6/7), 8-10 min walk",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Register and Wikipedia agree closely: same planting year (1893-1894), height nearly identical (17m register vs 18m Wikipedia), girth grown from 360cm (2011 measurement) to the register 369cm, an entirely plausible few years of growth. Stands near the garden obelisk, at one of the entrances to this large 1930s square built over the former course of the Bievre river. Opens the 13th arrondissement on the Paris page for the first time (park itself is a listed historic monument since 1997, unrelated to this individual tree). A Turkey Oak (Chene chevelu, Quercus cerris, register girth 190cm, register_id 104840) stands in the same square, about 300m away, but was left on the leads list rather than delivered here: register is the only source found for it this pass, short of the two-source bar."
+  },
+  {
+    "id": "par_032",
+    "name": "The Plane of Square Montholon",
+    "species": "Common Plane (Platanus x hispanica)",
+    "age_estimate": "over a century, likely 150-160 years",
+    "age_min": 120,
+    "age_max": 165,
+    "girth_cm": 470,
+    "location": {
+      "address": "79 Bis Rue La Fayette",
+      "latitude": 48.87692125066785,
+      "longitude": 2.3467187902283135,
+      "neighbourhood": "Square Montholon, 9th arrondissement"
+    },
+    "verified_sources": [
+      "https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/arbresremarquablesparis (register_id 317250: Platanus x hispanica, girth 470cm, height 27m, Square Montholon)",
+      "https://www.paris.fr/lieux/square-montholon-2469 (official city page: deux immenses platanes centenaires in the square; one specifically documented at planted 1872, 32m tall, 4.32m circumference)"
+    ],
+    "access": "Free, public municipal square (Square Montholon), open 9:30-21:30 weekdays and 9:00-21:30 weekends (hours vary by season per paris.fr) and closed at night",
+    "transport": "Cadet or Poissonniere (Metro 7), 5-7 min walk",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "FLAG, identity of the specific individual is not fully pinned down. The square (opened 1863, redesigned 1981) is documented as having exactly two centenary Oriental/common plane trees, and paris.fr names ONE of them precisely: planted 1872, 32m tall, 4.32m (432cm) circumference. The register carries only ONE plane-tree entry for this square, at THIS pin, but with different numbers (470cm girth, 27m height), so it is not possible to confirm with confidence whether the register entry is the same 1872-planted specimen paris.fr describes (with growth accounting for the girth difference) or the OTHER, undocumented plane of the pair. Delivered anyway because existence, species and remarkable-tree status of a genuinely large, genuinely old plane at this exact register-pinned spot is solid (470cm girth alone puts it among the larger planes on the Paris page); the age is deliberately left broad and NOT pinned to 1872 specifically, to avoid asserting an identity the sources do not confirm. A future pass or a reader on the ground (there are two candidate trees to distinguish) could resolve which is which."
+  }
+]
