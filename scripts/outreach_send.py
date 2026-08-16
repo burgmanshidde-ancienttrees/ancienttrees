@@ -8,9 +8,20 @@ guardrails are not etiquette but code:
 
 - DRY RUN by default. --send actually sends, and only works when the batch
   file's status is "approved_by_hidde" (he flips it, or says so in session).
+- An address on the do-not-contact list is refused, always, and that beats
+  every other rule here including a deliberate second batch. Added 2026-08-16:
+  batches 003 and 004 closed with "if you would rather not hear from me again,
+  just say so", and nothing in the machine could honour it. The list lives in
+  data/outreach-sent.json and takes whole domains as "@example.org".
 - An address that was ever mailed before is refused (data/outreach-sent.json),
-  so nobody is double-mailed by a re-run or a second session.
-- A daily cap, raised from 10 to 40 by Hidde on 2026-08-09 ("we mogen zoveel
+  so nobody is double-mailed by a re-run or a second session. THIS GUARD IS
+  ONLY AS GOOD AS THAT FILE, and on 2026-08-16 it was not good enough: the two
+  licence asks Hidde sent by hand on 2026-08-08 lived in drafts/OUTREACH.md's
+  markdown table, which no script reads, so a batch built that morning put the
+  Woodland Trust back on the list eight days after his first ask. He spotted it,
+  the script did not. Anything sent by hand goes in outreach-sent.json too.
+- A daily cap, raised 10 -> 40 on 2026-08-09 and 40 -> 50 on 2026-08-16, both
+  by Hidde ("we mogen zoveel
   mensen mailen als we zelf bedenken dat goed is"). It stays a number rather
   than becoming unlimited for one reason that is not caution: this sends from
   his own mailbox, and a burst of cold mail that bounces or gets marked as
@@ -45,7 +56,7 @@ from email.utils import formataddr, parseaddr
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SENT_PATH = os.path.join(ROOT, "data", "outreach-sent.json")
-DAILY_CAP = int(os.environ.get("OUTREACH_DAILY_CAP", "40"))
+DAILY_CAP = int(os.environ.get("OUTREACH_DAILY_CAP", "50"))
 
 
 def load_sent():
@@ -69,6 +80,8 @@ def main():
     today = datetime.date.today().isoformat()
     sent_today = sum(1 for s in sent_log["sent"] if s["date"] == today)
     already = {s["to"].lower() for s in sent_log["sent"]}
+    dnc = {a.lower().strip() for a in sent_log.get("do_not_contact", [])}
+
 
     if really and batch.get("status") != "approved_by_hidde":
         print(f"REFUSED: batch status is {batch.get('status')!r}, sending needs "
@@ -92,6 +105,18 @@ def main():
             continue
         if to.lower() in already:
             results.append(f"SKIP  {label}: {to} was already mailed on a previous run")
+            continue
+        # The promise we made in writing, now enforced. Batches 003 and 004
+        # closed with "if you would rather not hear from me again, just say
+        # so", and until 2026-08-16 nothing in the machine could honour that:
+        # an address that asked to be left alone was protected only by the
+        # once-only rule, which expires the moment somebody writes a second
+        # batch on purpose. An entry here is permanent and beats every other
+        # rule in this file, including a deliberate re-send. Domains are
+        # allowed ("@example.org") for an organisation that asks as a whole.
+        if to.lower() in dnc or ("@" + to.lower().split("@")[-1]) in dnc:
+            results.append(f"SKIP  {label}: {to} is on the do-not-contact list, "
+                           f"which is never overridden")
             continue
         if sent_today >= DAILY_CAP:
             results.append(f"HOLD  {label}: daily cap of {DAILY_CAP} reached, "
