@@ -11,13 +11,16 @@ standing rule, 2026-07-27).
 
 **Did the product happen**
 - app-cta:     0 yesterday, last never
+- beacon-fix-verify: 0 yesterday, last today
+- beacon-test: 0 yesterday, last today
 - directions:  0 yesterday, last never
 - save:        0 yesterday, last never
 - signin-link-sent: 0 yesterday, last never
 - smoke-test:  0 yesterday, last 15 days ago
 - waitlist-submit: 0 yesterday, last never
-- walk-open:   0 yesterday, last never
+- walk-open:   0 yesterday, last today
 - walk-start:  0 yesterday, last never
+- worthit-not worth it: 0 yesterday, last never
 - worthit-worth it: 0 yesterday, last never
 
 | Day | Accounts | Waitlist | Submissions |
@@ -43,9 +46,9 @@ standing rule, 2026-07-27).
 - Accounts:    3 total, newest 8 days ago
 
 **The funnel, as rates**
-- Seen to clicked: 2.3% (109 of 4739) vs 2.2% the fortnight before
+- Seen to clicked: 2.3% (111 of 4805) vs 2.2% the fortnight before
 - Pages per visit: 1.5 (370 visits, 570 pageviews since 2026-08-08)
-- Visits that did something: 0.0% (0 actions on 370 visits)
+- Visits that did something: 0.8% (3 actions on 370 visits)
 
 **Where demand is going to waste**
 
@@ -62,58 +65,98 @@ Search Console, the last 10 days Google will give us (its data lags 2-3 days, so
 | 08-12 | 9 | 441 | 2.0% | 19.1 |
 | 08-13 | 9 | 445 | 2.0% | 17.6 |
 | 08-14 | 13 | 517 | 2.5% | 14.2 |
-| 08-15 | 12 | 494 | 2.4% | 13.6 |
-| **window** | **92** | **3646** | **2.5%** | |
+| 08-15 | 14 | 560 | 2.5% | 14.4 |
+| **window** | **94** | **3712** | **2.5%** | |
 - Top queries (10d): juttepeer (i2, p3); oldest tree in central park (i3, p10); oldest tree in lisbon (i4, p10); "oldest of its species" ginkgo park (i2, p6); 1800 trees (i1, p19)
-- Top pages (10d): / (c5/i46); /kyoto (c4/i32); /prague (c4/i101); /vienna (c4/i64); /munich (c3/i47)
+- Top pages (10d): / (c5/i48); /kyoto (c4/i32); /prague (c4/i101); /vienna (c4/i66); /munich (c3/i47)
 - Content lead: 'oldest tree in central park' has no matching page (i3, p10)
 
 **Depth is allowed on these cities** (10+ impressions in the window; photos, pins and best_time go here and nowhere else):
 
 | City | Clicks | Impressions | CTR | Position | Normal at that position |
 |---|---:|---:|---:|---:|---:|
-| palermo | 4 | 152 | 2.6% | 9.9 | 2.6% |
+| rome | 2 | 186 | 1.1% | 16.3 | 1.1% |
+| palermo | 4 | 161 | 2.5% | 9.7 | 2.7% |
 | amsterdam | 2 | 138 | 1.4% | 12.3 | 1.7% |
-| rome | 2 | 122 | 1.6% | 21.2 | 0.8% |
-| prague | 6 | 112 | 5.4% | 8.5 | 3.3% |
-| barcelona | 2 | 95 | 2.1% | 8.3 | 3.4% |
+| prague | 6 | 120 | 5.0% | 8.3 | 3.4% |
+| vienna | 8 | 102 | 7.8% | 9.3 | 2.9% |
+| malaga | 0 | 100 | 0.0% | 21.1 | 0.8% |
+| barcelona | 3 | 99 | 3.0% | 8.2 | 3.4% |
+| lisbon | 1 | 95 | 1.1% | 9.3 | 2.8% |
+| london | 0 | 95 | 0.0% | 21.8 | 0.7% |
+| paris | 3 | 84 | 3.6% | 18.1 | 1.0% |
+| naples | 0 | 81 | 0.0% | 8.4 | 3.3% |
+| new-york | 2 | 80 | 2.5% | 16.8 | 1.1% |
+| dublin | 4 | 75 | 5.3% | 12.8 | 1.6% |
 | boston | 0 | 75 | 0.0% | 15.0 | 1.2% |
-| vienna | 8 | 74 | 10.8% | 9.8 | 2.6% |
-| lisbon | 1 | 60 | 1.7% | 9.9 | 2.5% |
+| cambridge | 0 | 72 | 0.0% | 28.0 | 0.5% |
+| florence | 0 | 71 | 0.0% | 8.6 | 3.2% |
+| istanbul | 0 | 71 | 0.0% | 13.0 | 1.6% |
+| nice | 2 | 63 | 3.2% | 9.4 | 2.8% |
 | brussels | 1 | 57 | 1.8% | 19.4 | 0.8% |
-| dublin | 4 | 56 | 7.1% | 13.9 | 1.4% |
-| bath | 0 | 54 | 0.0% | 8.5 | 3.2% |
-| budapest | 0 | 48 | 0.0% | 10.4 | 2.4% |
-| munich | 3 | 47 | 6.4% | 10.2 | 2.4% |
+| valencia | 1 | 57 | 1.8% | 7.9 | 3.6% |
+| bath | 0 | 55 | 0.0% | 8.5 | 3.3% |
+| geneva | 0 | 55 | 0.0% | 11.7 | 1.9% |
+| munich | 3 | 54 | 5.6% | 9.5 | 2.8% |
+| edinburgh | 1 | 52 | 1.9% | 14.1 | 1.4% |
+| porto | 3 | 51 | 5.9% | 7.2 | 3.9% |
+| washington-dc | 1 | 50 | 2.0% | 15.7 | 1.1% |
+| budapest | 0 | 49 | 0.0% | 10.4 | 2.4% |
+| singapore | 1 | 46 | 2.2% | 14.3 | 1.3% |
+| granada | 0 | 45 | 0.0% | 9.2 | 2.9% |
+| milan | 0 | 44 | 0.0% | 8.8 | 3.1% |
+| kyoto | 5 | 43 | 11.6% | 14.3 | 1.3% |
 | bologna | 0 | 43 | 0.0% | 8.5 | 3.3% |
+| sintra | 4 | 41 | 9.8% | 6.1 | 4.9% |
+| tokyo | 1 | 41 | 2.4% | 23.2 | 0.7% |
 | antwerp | 1 | 40 | 2.5% | 18.5 | 0.9% |
-| nice | 2 | 40 | 5.0% | 9.1 | 3.0% |
-| bristol | 0 | 38 | 0.0% | 15.4 | 1.2% |
+| seville | 1 | 40 | 2.5% | 7.8 | 3.6% |
+| bristol | 0 | 39 | 0.0% | 16.4 | 1.1% |
+| dubrovnik | 1 | 38 | 2.6% | 6.8 | 4.2% |
+| lyon | 1 | 38 | 2.6% | 14.5 | 1.3% |
 | berlin | 1 | 36 | 2.8% | 17.2 | 1.0% |
-| lyon | 1 | 35 | 2.9% | 15.1 | 1.2% |
+| cadiz | 1 | 36 | 2.8% | 6.9 | 4.1% |
 | athens | 0 | 34 | 0.0% | 18.8 | 0.9% |
-| kyoto | 5 | 33 | 15.2% | 13.2 | 1.6% |
-| sintra | 4 | 29 | 13.8% | 6.1 | 4.9% |
-| the-hague | 3 | 29 | 10.3% | 5.6 | 5.8% |
-| dubrovnik | 1 | 23 | 4.3% | 5.7 | 5.6% |
-| tokyo | 1 | 21 | 4.8% | 31.0 | 0.4% |
-| porto | 3 | 20 | 15.0% | 6.8 | 4.2% |
-| belgrade | 0 | 18 | 0.0% | 15.3 | 1.2% |
-| leiden | 2 | 17 | 11.8% | 7.5 | 3.7% |
-| seville | 1 | 17 | 5.9% | 6.3 | 4.7% |
-| bangkok | 1 | 15 | 6.7% | 5.5 | 6.1% |
-| zurich | 1 | 14 | 7.1% | 7.2 | 3.9% |
-| cadiz | 1 | 12 | 8.3% | 6.6 | 4.4% |
-| edinburgh | 1 | 11 | 9.1% | 6.8 | 4.2% |
-| washington-dc | 1 | 10 | 10.0% | 17.7 | 1.0% |
-- Seen, not clicked: /rome (c0/i36, 0.0%) for trees in rome (i12, p25); rome tree (i5, p58); roman trees (i3, p32)
+| seoul | 0 | 33 | 0.0% | 20.0 | 0.8% |
+| the-hague | 3 | 32 | 9.4% | 5.8 | 5.4% |
+| hong-kong | 1 | 30 | 3.3% | 8.7 | 3.2% |
+| venice | 0 | 30 | 0.0% | 8.3 | 3.3% |
+| oslo | 1 | 27 | 3.7% | 10.3 | 2.4% |
+| krakow | 1 | 23 | 4.3% | 6.9 | 4.1% |
+| reykjavik | 0 | 22 | 0.0% | 15.1 | 1.2% |
+| oxford | 0 | 21 | 0.0% | 7.4 | 3.8% |
+| leiden | 2 | 20 | 10.0% | 14.1 | 1.4% |
+| zurich | 1 | 20 | 5.0% | 8.9 | 3.0% |
+| madrid | 0 | 20 | 0.0% | 7.0 | 4.0% |
+| belgrade | 0 | 19 | 0.0% | 14.9 | 1.2% |
+| glasgow | 0 | 18 | 0.0% | 22.3 | 0.7% |
+| padua | 1 | 17 | 5.9% | 7.1 | 3.9% |
+| split | 0 | 17 | 0.0% | 8.6 | 3.2% |
+| utrecht | 0 | 17 | 0.0% | 16.8 | 1.1% |
+| bangkok | 1 | 16 | 6.2% | 5.2 | 6.5% |
+| york | 0 | 15 | 0.0% | 11.3 | 2.1% |
+| cork | 1 | 14 | 7.1% | 20.9 | 0.8% |
+| copenhagen | 0 | 14 | 0.0% | 7.8 | 3.6% |
+| es | 0 | 14 | 0.0% | 7.8 | 3.6% |
+| portland | 0 | 14 | 0.0% | 23.2 | 0.7% |
+| rotterdam | 0 | 14 | 0.0% | 6.8 | 4.2% |
+| turin | 0 | 14 | 0.0% | 5.1 | 6.9% |
+| haarlem | 0 | 13 | 0.0% | 43.1 | 0.4% |
+| groningen | 2 | 12 | 16.7% | 16.1 | 1.1% |
+| maastricht | 1 | 12 | 8.3% | 11.5 | 2.0% |
+| verona | 1 | 12 | 8.3% | 6.2 | 4.8% |
+| setubal | 0 | 12 | 0.0% | 8.9 | 3.0% |
+| chicago | 1 | 10 | 10.0% | 11.3 | 2.0% |
+| nijmegen | 0 | 10 | 0.0% | 19.4 | 0.8% |
+| zaragoza | 0 | 10 | 0.0% | 6.6 | 4.4% |
+- Seen, not clicked: /rome (c0/i35, 0.0%) for trees in rome (i12, p25); rome tree (i5, p58); roman trees (i3, p32)
 - Seen, not clicked: /cambridge/newtons-apple-tree (c0/i22, 0.0%) for apple tree of newton (i3, p46); oldest apple tree (i2, p36); newton's apple tree (i2, p56)
 
 **Who they are**
-Audience, 28 days of search (152 clicks, 6689 impressions):
-- Countries: usa c24/i1480; nld c14/i357; deu c12/i261; gbr c12/i851; esp c9/i333
-- Devices: MOBILE c100/i3731; DESKTOP c52/i2896; TABLET c0/i62
-- Landing pages: / c9/i87; /lisbon c8/i191; /vienna c6/i128; /kyoto c5/i100; /porto c5/i37
+Audience, 28 days of search (154 clicks, 6755 impressions):
+- Countries: usa c25/i1511; nld c14/i357; deu c12/i262; gbr c12/i859; esp c10/i336
+- Devices: MOBILE c101/i3769; DESKTOP c53/i2922; TABLET c0/i64
+- Landing pages: / c9/i89; /lisbon c8/i193; /vienna c6/i130; /kyoto c5/i100; /porto c5/i37
 
 Web Analytics (beacon, real browsers, cookieless):
 Counts are bucketed to the nearest ten by Cloudflare; read the window, not the day.
@@ -136,10 +179,11 @@ Counts are bucketed to the nearest ten by Cloudflare; read the window, not the d
 - Page load (8d): p50 577ms, p90 5169ms
 
 Links: external referrers (a link somebody actually clicked): zscaler-blocked.dpgmedia.net (10)
+AI: arrivals from an assistant that cited us: none yet
 
 Machine: 9 chain attempts yesterday, 9 got real work time (~163 min total). Dead-in-seconds attempts cost nothing; few get-throughs means the usage window was full or closed.
 
-**Conclusion:** Search is the only channel with real data and it is still small: 12 clicks and 494 impressions on Google's freshest day (day before: c13/i517). Directional at best; no strategic conclusions from these volumes.
+**Conclusion:** Search is the only channel with real data and it is still small: 14 clicks and 560 impressions on Google's freshest day (day before: c13/i517). Directional at best; no strategic conclusions from these volumes.
 
 ## 2026-08-14 (previous UTC day)
 
