@@ -9,6 +9,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-16 - Brisbane opens with 8 trees, all from an earlier night run's verify pass
+
+A verify pass left `data/research/brisbane-verified.json` behind (8 trees, National Trust of Australia's Significant Tree Database plus State Library of Queensland corroboration), claimed by an earlier night run whose write claim had expired unreleased. Wrote all 8 (write pass, 88k tokens) and merged as Brisbane's opening page: 7 inside the City Botanic Gardens, planted under Walter Hill's 1855-onward curatorship, plus the Eagle Street Fig Trees a kilometre north on a CBD traffic island (planted 1889, on Queensland's state heritage register). Oldest and hero tree: the Macadamia Nut Tree, grown from 1858 trials and independently described as the first macadamia ever brought into cultivation. Walk spans 2.1km, 28 minutes per the build's own route planner.
+
+Three of the eight (Old Government House Fig, Crows Ash, Bodhi Tree) are single-sourced to the National Trust database alone and ship flagged, said plainly in the prose. The write pass caught and corrected a factual error in one of the two independent sources: the State Library of Queensland's account of Prince Albert's Cook Pine calls him "the later King Edward VII", which is wrong (that was his elder brother); the story states his correct identity instead of repeating the source's mistake. Added Brisbane to `data/city-list.json` by hand (same as Alicante and Melbourne before it): new cities never add themselves there.
+
+Register supply for Brisbane is far from exhausted (186 register trees per `data/city-queue.json`, target 10, 8 shipped); the remaining 2-to-target and any further deepening is ordinary future work, not recorded as leads here since nothing was individually rejected this pass.
+
 ## 2026-08-16 - Cordoba deepens by 5, and two leads turned out to already be live under different ids
 
 Followed rule (a) of "the course after the fortnight": `leads.py --ready` showed 7 usable Cordoba leads sitting inside or near the existing 2.3km walk. Verify pass (95k tokens) brought 7 to research/cordoba-verified.json; write pass (70k tokens) delivered 5. Shipped as cdb_011/013/014/016/017: the Chinaberry of the Puerta de Almodovar, the Ginkgo of the Jardines de la Agricultura (best_time set, autumn colour), the three Casuarinas of Plaza de Jeronimo Paez (ensemble, single-sourced, said so), the River Red Gum of Parque Celia Mendez (single-sourced, 3km outside the existing walk, said so), and the Ash of Santa Marina (declining, approximate pin, age argued not documented). Cordoba is now 15 trees.

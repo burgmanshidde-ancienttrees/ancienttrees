@@ -1813,6 +1813,15 @@
         "note": "5 of 7 written; cdb_012 and cdb_015 left unwritten as exact duplicates of live cdb_010 and cdb_008 (same coords, same catalogue measurements)",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "brisbane",
+        "kind": "write",
+        "tokens": 87739,
+        "trees": 8,
+        "note": "New city opening set, 8 stories from one verified file (verify pass was from an earlier night run); 4 flagged trees hedged in prose, SLQ's Edward VII error corrected on bne_005, no best_time earned (all evergreen figs/conifer)",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }

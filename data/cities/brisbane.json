@@ -1,0 +1,263 @@
+{
+  "city": "Brisbane",
+  "country": "Australia",
+  "status": "needs_curation",
+  "intro": "Walter Hill planted most of what's on this page. Appointed the first curator of Brisbane's City Botanic Gardens in 1855, he spent three decades filling it with trees that were experiments as much as ornament, among them the tree that started Australia's macadamia industry. Seven of these eight stand inside that garden, planted between the 1860s and 1880s; the eighth, three fig trees on a CBD traffic island, is the latest of these plantings, dated 1889, put in for wharf labourers who needed somewhere shaded to sit. All eight are free, unfenced, and within an easy walk of the river.",
+  "meta_description": "Brisbane's old trees cluster in the City Botanic Gardens: the tree that founded Australia's macadamia industry, a banyan 49 metres round, a 45m Cook Pine.",
+  "question_meta": "Brisbane's oldest tree is a macadamia planted from 1858 trials in the City Botanic Gardens. Where it stands, and seven more of the city's oldest trees.",
+  "question_answer": "The oldest tree in Brisbane is the Macadamia Nut Tree in the City Botanic Gardens, at the southern end of the rainforest section near Alice Street. Walter Hill, the gardens' first curator, began trialling the nut here in 1858 using seed brought from Gympie, and the tree that grew from those trials is still standing: roughly 165 years old, 17 metres tall, a metre through the trunk. The National Trust of Australia's significant tree database and a State Library of Queensland account independently record it as the first macadamia brought into cultivation anywhere, and popular sources go further, calling it the oldest cultivated macadamia alive and the starting point of a crop now grown commercially across four continents. That wider claim rests on secondary sources rather than the two-source bar this page applies to age itself, but nothing found contradicts it. The next oldest tree here is close behind: Prince Albert's Cook Pine, planted in 1868 and now the tallest tree in the gardens at 45 metres, though its estimated age band (roughly 158 years) sits below the macadamia's.",
+  "question_context": "This page draws on the National Trust of Australia's Significant Tree Database and, for several entries, a corroborating account from the State Library of Queensland, both describing work done under Walter Hill, the City Botanic Gardens' first curator from 1855. Seven of the eight trees here stand inside that garden; the eighth, the Eagle Street Fig Trees, is a kilometre north on a traffic island in the financial district, planted in 1889 and separately protected on Queensland's state heritage register. Three of the eight (the Old Government House Fig, the Crows Ash and the Bodhi Tree) carry only one dedicated source naming this specific specimen, so their planting dates are the Trust's account rather than independently corroborated, and the page says so plainly on each. The Macadamia Nut Tree's 1858 date comes from when Hill's trials began rather than a single measured planting day, which is why its age is stated as a band rather than a year count. See the full list of eight on the Brisbane page.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Brisbane?",
+      "a": "The Macadamia Nut Tree in the City Botanic Gardens, near the southern end of the rainforest section. It grew from trials Walter Hill began in 1858 using seed from Gympie, making it roughly 165 years old and, by two independent accounts, the first macadamia ever brought into cultivation. Prince Albert's Cook Pine, planted a decade later in 1868, is close behind and is now the tallest tree in the gardens at 45 metres."
+    },
+    {
+      "q": "Are these trees free to visit?",
+      "a": "Yes, all eight. Seven stand inside the City Botanic Gardens, a free public park open daily with no gate and no ticket. The eighth, the Eagle Street Fig Trees, grows on a small public reserve where Eagle, Elizabeth and Creek Streets meet, also free and open at all hours."
+    },
+    {
+      "q": "Can I see them all in one walk?",
+      "a": "Seven of the eight sit inside the City Botanic Gardens, close enough to cover on one loop of the park. The eighth, the Eagle Street Fig Trees, is about a kilometre north on the edge of the financial district, an easy extra walk or a short trip on the Riverside ferry."
+    },
+    {
+      "q": "Which has the thickest trunk?",
+      "a": "The Banyan Tree of City Botanic Gardens, whose fused aerial roots and trunk together measure 49 metres around, the National Trust's own figure, corroborated independently by the State Library of Queensland. It is described as the finest example of its species anywhere in Australia."
+    }
+  ],
+  "hero_tree_id": "bne_004",
+  "oldest_tree_id": "bne_003",
+  "trees": [
+    {
+      "id": "bne_002",
+      "name": "The Old Government House Fig",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "roughly 150 years",
+      "age_min": 140,
+      "age_max": 160,
+      "location": {
+        "address": "City Botanic Gardens, on the path leading to Old Government House, Alice Street, Brisbane City QLD 4000",
+        "latitude": -27.4769003,
+        "longitude": 153.029758,
+        "neighbourhood": "City Botanic Gardens"
+      },
+      "story": "Moreton Bay figs do not so much grow as advance. This one holds a 23 metre crown on buttress roots that leave the trunk above knee height and run into the ground like low walls, with two metres of trunk standing behind them.\n\nIt sits on the path to Old Government House, the oldest public building in Queensland and now part of a university campus, so the tree is what you look at while walking between two versions of the same city. The record comes from the National Trust of Australia's significant tree database, which dates the planting to somewhere between 1864 and 1884, during the curatorship of Walter Hill. Hill was appointed the gardens' first curator in 1855 and spent decades planting the ground out. A twenty year window is as precise as the paperwork gets, and nobody has narrowed it since.\n\nThat one record is also the whole of the evidence. We have not found a second write-up dealing with this specimen rather than with the gardens' figs in general, so read the date and the age as the Trust's account rather than as a settled fact. The tree itself needs no defending. Good condition, no fence, no ticket, and buttresses you can put a flat hand against.",
+      "verified_sources": [
+        "https://trusttrees.org.au/tree/QLD/Brisbane/Brisbane_City_Botanic_Gardens_Alice_Street_4"
+      ],
+      "access": "Free, City Botanic Gardens is a public park open daily during daylight hours",
+      "transport": "Short walk from Central Station (about 10 minutes) or the QUT Gardens Point ferry terminal (about 5 minutes)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    },
+    {
+      "id": "bne_003",
+      "name": "The Macadamia Nut Tree",
+      "species": "Macadamia (Macadamia integrifolia)",
+      "age_estimate": "roughly 165 years",
+      "age_min": 160,
+      "age_max": 170,
+      "location": {
+        "address": "City Botanic Gardens, at the southern end of the rainforest section, Alice Street, Brisbane City QLD 4000",
+        "latitude": -27.4779525,
+        "longitude": 153.0310128,
+        "neighbourhood": "City Botanic Gardens"
+      },
+      "story": "Nobody farmed macadamias until someone in Brisbane planted this tree. Walter Hill, first curator of the City Botanic Gardens, began trialling the nut here in 1858 from seed brought down from Gympie, and the tree those trials produced is still standing at the southern end of the rainforest section: 17 metres tall, a metre through the trunk.\n\nThe National Trust's significant tree database and the State Library of Queensland both record it as the first macadamia brought into cultivation anywhere. Popular accounts go further and call it the oldest cultivated macadamia alive and the starting point of Australia's macadamia export industry, which is now a crop grown commercially across four continents. Those accounts are not what the entry rests on, but they do not contradict it either.\n\nThe scale is the thing worth carrying home. Every macadamia in every jar of mixed nuts descends from a wild rainforest species that no one had thought to plant deliberately until a colonial gardener put some seed in the ground here and waited. The founding specimen of a global crop is usually long gone, ploughed out when an orchard was replanted or a road went through. This one ended up inside a public park in the middle of a state capital, unfenced, with a path running past it.",
+      "verified_sources": [
+        "https://trusttrees.org.au/tree/QLD/Brisbane/Brisbane_City_Botanic_Gardens_Alice_Street_21",
+        "https://www.slq.qld.gov.au/blog/brisbane-city-botanic-gardens-and-new-national-trust-significant-tree-databaseapp"
+      ],
+      "access": "Free, City Botanic Gardens is a public park open daily during daylight hours",
+      "transport": "Short walk from Central Station (about 10 minutes) or the QUT Gardens Point ferry terminal (about 5 minutes)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated"
+    },
+    {
+      "id": "bne_004",
+      "name": "The Banyan Tree of City Botanic Gardens",
+      "species": "Indian Banyan (Ficus benghalensis)",
+      "age_estimate": "roughly 150 years",
+      "age_min": 140,
+      "age_max": 160,
+      "location": {
+        "address": "City Botanic Gardens, Alice Street, Brisbane City QLD 4000",
+        "latitude": -27.4762649,
+        "longitude": 153.029176,
+        "neighbourhood": "City Botanic Gardens"
+      },
+      "story": "Forty-nine metres around. That is the National Trust's figure for this banyan's trunk, and it is only possible because a banyan refuses to keep to one. The tree drops aerial roots from its limbs, they thicken into props where they land, and the props fuse back into the mass. Measure the result and you are measuring something that has been walking outward since the 1870s.\n\nIt went in during Walter Hill's curatorship and now stands 29 metres tall with a crown 20 metres across. The National Trust record calls it the best known example of its species in Australia and gives it the finest aerial root structure in these gardens. The State Library of Queensland's account arrives at the same 49 metre circumference independently, which is worth knowing about a number that reads like a typing error.\n\nFicus benghalensis is the fig of Indian village squares, the species whose old specimens end up roofing markets and meetings rather than merely shading them. Brisbane's subtropics suit it well enough that this one has behaved exactly as it would at home. Stand under it and the height is not the interesting part. The floor is: root, prop and trunk have become genuinely hard to tell apart, which is the whole point the measurement is trying to make.",
+      "verified_sources": [
+        "https://trusttrees.org.au/tree/QLD/Brisbane/Brisbane_City_Botanic_Gardens_Alice_Street_",
+        "https://www.slq.qld.gov.au/blog/brisbane-city-botanic-gardens-and-new-national-trust-significant-tree-databaseapp"
+      ],
+      "access": "Free, City Botanic Gardens is a public park open daily during daylight hours",
+      "transport": "Short walk from Central Station (about 10 minutes) or the QUT Gardens Point ferry terminal (about 5 minutes)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated"
+    },
+    {
+      "id": "bne_005",
+      "name": "Prince Albert's Cook Pine",
+      "species": "Cook Pine (Araucaria columnaris)",
+      "age_estimate": "roughly 158 years",
+      "age_min": 150,
+      "age_max": 160,
+      "location": {
+        "address": "City Botanic Gardens, near the George Street entrance close to Queensland Parliament House, Brisbane City QLD 4000",
+        "latitude": -27.4754546,
+        "longitude": 153.0282748,
+        "neighbourhood": "City Botanic Gardens"
+      },
+      "story": "An avenue of six Cook Pines was proposed for the ground in front of the old Parliament House in 1868. Two went in, planted by Prince Albert, Duke of Edinburgh, Queen Victoria's second son, during his visit that year. The other four were never planted, one of the two is gone, and the survivor is now the tallest tree in the gardens at roughly 45 metres.\n\nOne correction to the record, because it circulates: the State Library of Queensland's write-up calls the prince the later King Edward VII. He was not. That was his elder brother, and the Duke of Edinburgh never took the throne. The National Trust record names him correctly.\n\nThe species comes from New Caledonia and grows as a narrow column rather than a spreading conifer, which is why a single one reads as deliberate where a lone fig would read as an accident. Cook Pines also lean, and they lean consistently: a 2017 survey of the species worldwide found them tilting toward the equator, which in Brisbane means north.\n\nIts lower branches have been removed to stop people climbing, which tells you what 45 metres of straight trunk does to the human imagination. The trunk is 0.9 metres through, narrow for the height, and from the George Street side the tree is visible well before you reach the gardens.",
+      "verified_sources": [
+        "https://trusttrees.org.au/tree/QLD/Brisbane/Brisbane_City_Botanic_Gardens_Alice_Street_22",
+        "https://www.slq.qld.gov.au/blog/brisbane-city-botanic-gardens-and-new-national-trust-significant-tree-databaseapp"
+      ],
+      "access": "Free, City Botanic Gardens is a public park open daily during daylight hours",
+      "transport": "Short walk from Central Station (about 8 minutes) or George Street bus stops nearby",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated"
+    },
+    {
+      "id": "bne_006",
+      "name": "The Eagle Street Fig Trees",
+      "species": "White Fig and Banyan Fig (Ficus virens and Ficus benghalensis)",
+      "age_estimate": "roughly 135 years",
+      "age_min": 130,
+      "age_max": 140,
+      "location": {
+        "address": "118A Eagle Street, at the intersection of Eagle, Elizabeth and Creek Streets, Brisbane City QLD 4000",
+        "latitude": -27.4679275,
+        "longitude": 153.0297467,
+        "neighbourhood": "Brisbane CBD (Eagle Street)"
+      },
+      "story": "A triangle of central Brisbane was granted in Queen Victoria's name so that wharf labourers and carriers would have somewhere shaded to sit down. Governor Sir Henry Wylie Norman signed it on 16 May 1889, and Walter Hill, first curator of the city's botanic gardens, planted the reserve with three figs: two White Figs and one Banyan.\n\nThey are still on the island where Eagle, Elizabeth and Creek Streets meet, carrying 29 metres of combined height in the middle of Brisbane's financial district. The wharves have gone. The carriers have gone. The shade does the job it was planted to do, now for office workers eating lunch on a bench instead of carters resting a horse.\n\nQueensland added the site to its heritage register on 13 May 2004, Brisbane City Council keeps its own local citation, and the National Trust records the trees individually, which is an unusual amount of paperwork for three trees on a traffic island. Four independent records describe the same planting and none of them disagree.\n\nIt is the one stop on this list outside the gardens, about a kilometre north and an easy walk, three minutes up from the Riverside ferry terminal. One small bounded reserve, three trees, and a single obvious place to stand and look up into all of them at once.",
+      "verified_sources": [
+        "https://apps.des.qld.gov.au/heritage-register/detail/?id=602440",
+        "https://en.wikipedia.org/wiki/Eagle_Street_Fig_Trees",
+        "https://heritage.brisbane.qld.gov.au/heritage-places/328",
+        "https://www.trusttrees.org.au/tree/QLD/Brisbane/Eagle_Street"
+      ],
+      "access": "Free, a small public reserve (triangular traffic island / pocket park) open at all times",
+      "transport": "Short walk from Riverside ferry terminal (about 3 minutes) or Central Station (about 8 minutes)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated"
+    },
+    {
+      "id": "bne_007",
+      "name": "The Crows Ash",
+      "species": "Crows Ash / Australian Teak (Flindersia australis)",
+      "age_estimate": "roughly 140 years",
+      "age_min": 135,
+      "age_max": 145,
+      "location": {
+        "address": "City Botanic Gardens, between the formal flower garden and the river, eastern part of the gardens, Alice Street, Brisbane City QLD 4000",
+        "latitude": -27.4744998,
+        "longitude": 153.0304219,
+        "neighbourhood": "City Botanic Gardens"
+      },
+      "story": "The first recorded act of gardening on this ground was a felling. In 1826 an older crows ash was cut down here to mark the spot where the Moreton Bay penal settlement would put its government garden, and the ground has been a garden ever since.\n\nThe tree standing there now is not that tree, and no record suggests any descent between them. It was planted in 1884, is 21 metres tall and a metre through the trunk, and belongs to a genus named for Matthew Flinders, who charted this coast three decades before the settlement that cleared its predecessor.\n\nCrows ash is a rainforest hardwood, sold as Australian teak, and its seed capsules are the detail worth looking down for: woody, covered in short spines, and splitting open into five parts like a carved wooden flower. They end up on the grass under the tree, which stands between the formal flower garden and the river.\n\nOne caution about the dating. A single record carries this tree, the National Trust of Australia's significant tree database, and we found no second source naming this individual, although the gardens are separately documented as holding native Flindersia of the same era. So 1884 is the Trust's date rather than a corroborated one, and the age here is stated on one authority.",
+      "verified_sources": [
+        "https://trusttrees.org.au/tree/QLD/Brisbane/Brisbane_City_Botanic_Gardens_Alice_Street_14"
+      ],
+      "access": "Free, City Botanic Gardens is a public park open daily during daylight hours",
+      "transport": "Short walk from Central Station (about 10 minutes) or the QUT Gardens Point ferry terminal (about 5 minutes)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    },
+    {
+      "id": "bne_008",
+      "name": "The Bodhi Tree",
+      "species": "Bodhi Tree (Ficus religiosa)",
+      "age_estimate": "roughly 145 years",
+      "age_min": 140,
+      "age_max": 150,
+      "location": {
+        "address": "City Botanic Gardens, just inside the Alice Street entrance, to the left of the path, Brisbane City QLD 4000",
+        "latitude": -27.4739221,
+        "longitude": 153.0297996,
+        "neighbourhood": "City Botanic Gardens"
+      },
+      "story": "The record for this fig traces it, cutting by cutting, back to the tree the Buddha is said to have sat under. The line runs from Bodh Gaya in India to an ancient tree in Sri Lanka grown from it, and from there to this one, planted in the early 1880s. That is what the National Trust's entry states, and it is a claim that cannot be checked at either end. No second source adds anything independent to it: the audio guides and walking tours repeat the same paragraph. Treat the pedigree as tradition rather than as documented fact.\n\nThe tree can be checked. Twenty five metres tall, three metres through the trunk, and one of the widest canopies in the gardens, which in a garden this full of figs is a real distinction. Its leaves are heart shaped with a drawn out tip and they move in air still enough to leave everything around them alone.\n\nOne piece of the story is documented and it runs the other way. In 1983 the fourteenth Dalai Lama blessed this tree, during the same visit on which he attended the planting of a cutting taken from it at the University of Queensland. Whatever the ancestry behind it, there is a verified descendant of it growing across the city.",
+      "verified_sources": [
+        "https://www.trusttrees.org.au/tree/QLD/Brisbane/Brisbane_City_Botanic_Gardens_Alice_Street_25"
+      ],
+      "access": "Free, City Botanic Gardens is a public park open daily during daylight hours",
+      "transport": "Short walk from Central Station (about 10 minutes) or the QUT Gardens Point ferry terminal (about 5 minutes)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    },
+    {
+      "id": "bne_009",
+      "name": "The Weeping Figs at Alice Street Gate",
+      "species": "Weeping Fig (Ficus benjamina)",
+      "age_estimate": "roughly 155 years",
+      "age_min": 145,
+      "age_max": 160,
+      "location": {
+        "address": "City Botanic Gardens, flanking the Alice Street entrance gate, 147 Alice Street, Brisbane City QLD 4000",
+        "latitude": -27.4735365,
+        "longitude": 153.0289902,
+        "neighbourhood": "City Botanic Gardens"
+      },
+      "story": "Walter Hill delivered his verdict on these two trees in 1872, and it is not a boast. The figs, he wrote, 'tended greatly to diminish the appearance of bareness'. They are 40 metres tall now, two metres through, standing either side of the Alice Street gate, and bareness is no longer the difficulty.\n\nWeeping figs are the species sold by the thousand as pot plants for office lobbies. Given open ground, subtropical rain and roughly a century and a half, this is what they do instead: a matched pair holding up the main entrance the way a gatehouse would, which is how the National Trust describes them, as a landmark denoting the way in.\n\nThe dating is not clean, and the framing is not either. The National Trust puts the planting at 1868 and treats these two as a deliberate pair marking the entrance. Wikipedia's account of the gardens describes an avenue of weeping figs planted in the 1870s and does not single them out. Species and rough decade are agreed between the two; whether this pair was planted as a pair, or is what remains of a longer line, rests on the Trust's record alone, as does the earlier date.\n\nEither way they are the first thing the gardens show you, and the last thing you walk through on the way back out to Alice Street.",
+      "verified_sources": [
+        "https://trusttrees.org.au/tree/QLD/Brisbane/Brisbane_City_Botanic_Gardens_147_Alice_Street_6",
+        "https://en.wikipedia.org/wiki/Brisbane_City_Botanic_Gardens"
+      ],
+      "access": "Free, City Botanic Gardens is a public park open daily during daylight hours",
+      "transport": "Short walk from Central Station (about 10 minutes) or the QUT Gardens Point ferry terminal (about 5 minutes)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    }
+  ]
+}
