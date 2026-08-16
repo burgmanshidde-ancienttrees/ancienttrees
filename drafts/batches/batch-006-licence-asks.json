@@ -1,0 +1,42 @@
+{
+ "batch": "006-licence-asks",
+ "note": "Every register this project is blocked on, as one batch, on Hidde's instruction 2026-08-16 ('laten we ze dan nu allemaal tegelijk uit de deur gooien'). Texts rewritten in his own style from the Arnhem mail he supplied the same day: name and what he builds first, goal stated plainly, one ask, one tree question. Source and reasoning in drafts/batch-licence-asks.md. Every mail says in one sentence that the site is free today and may have a paid tier later, because claiming non-commercial would be a lie we would have to walk back. Send: python3 scripts/outreach_send.py drafts/batches/batch-006-licence-asks.json --send",
+ "status": "awaiting_hidde",
+ "mails": [
+  {
+   "to": "ancienttreeinventory@woodlandtrust.org.uk",
+   "found_at": "drafts/woodland-trust-permission.md, address from the Ancient Tree Inventory site",
+   "outlet": "Woodland Trust, Ancient Tree Inventory",
+   "subject": "Written permission to use Ancient Tree Inventory data",
+   "body": "Hello,\n\nMy name is Hidde and I am building ancienttrees.app, a platform for remarkable\ntrees. My goal is to get people excited about old trees and to encourage them to\ngo outside and look at them.\n\nYour licence asks for written permission before Ancient Tree Inventory data\nappears on a public mapping site, so I am asking. I would like to show a\nselection of ATI trees in UK cities, starting with London, credited as your\nlicence specifies and linked back to the Inventory. We would only publish trees\nthat are publicly accessible, and we always honour a location you withhold.\n\nThe site is free and has no ads, but I am building an app with a paid tier\nlater, so I will not claim non-commercial. I am open to whatever terms work for\nthe Trust.\n\nAnd either way: which ancient tree do you think more people should go and see?\n\nKind regards,\nHidde\nancienttrees.app"
+  },
+  {
+   "to": "arbresmonumentals.tes@gencat.cat",
+   "found_at": "drafts/OUTREACH.md tier 1, address from the Generalitat's own dataset contact",
+   "outlet": "Generalitat de Catalunya, arbres monumentals",
+   "subject": "Llicencia per al registre d'arbres monumentals",
+   "body": "Hola,\n\nEm dic Hidde i estic construint ancienttrees.app, una plataforma d'arbres\nremarcables. El meu objectiu es que la gent s'entusiasmi amb els arbres vells i\nsurti a fora a veure'ls.\n\nM'agradaria fer servir el registre d'arbres monumentals per ampliar Barcelona i\nobrir Girona i Tarragona. Les metadades diuen unicament \"otherRestrictions\",\nsense cap llicencia, i per aixo pregunto abans de descarregar res.\n\nEl web es gratuit i sense publicitat, pero estic fent una app amb una part de\npagament mes endavant, aixi que no dire que som no comercials.\n\nSota quines condicions el podriem fer servir, amb l'atribucio que indiqueu?\n\nI en qualsevol cas: quin arbre de Catalunya creieu que la gent hauria d'anar a\nveure?\n\nSalutacions cordials,\nHidde\nancienttrees.app"
+  },
+  {
+   "to": "Council@cityofsydney.nsw.gov.au",
+   "found_at": "City of Sydney's own DCAT open-data feed: hasEmail mailto:Council@cityofsydney.nsw.gov.au, read 2026-08-16",
+   "outlet": "City of Sydney, Register of Significant Trees",
+   "subject": "Licence for the Register of Significant Trees",
+   "body": "Hello,\n\nMy name is Hidde and I am building ancienttrees.app, a platform for remarkable\ntrees. My goal is to get people excited about old trees and to encourage them to\ngo outside and look at them.\n\nYour Register of Significant Trees is the best tree data I have found anywhere,\nand I would like to use it to build a Sydney page, credited to the City with a\nlink back. We would only publish trees your own data marks as publicly\naccessible or visible from the street.\n\nYour street tree data carries a CC BY 4.0 licence but the significant trees\nlayer has none, so I am asking rather than assuming. The site is free and has no\nads, but I am building an app with a paid tier later, so I will not claim\nnon-commercial.\n\nWould you licence it, CC BY or whatever you prefer?\n\nAnd either way: which tree in Sydney do you think visitors should see?\n\nKind regards,\nHidde\nancienttrees.app"
+  },
+  {
+   "to": "info@bomenstichting.nl",
+   "found_at": "drafts/OUTREACH.md tier 1",
+   "outlet": "Bomenstichting",
+   "subject": "Licentie voor het Landelijk Register Monumentale Bomen",
+   "body": "Hallo,\n\nMijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor\nopmerkelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen\nen ze aan te moedigen om die buiten te gaan bekijken.\n\nEr staan nu dertien Nederlandse steden op de site. Het Landelijk Register\nMonumentale Bomen zou ik graag gebruiken om die aan te vullen. De licentie is\nCC BY-NC en daar loop ik op vast, dus ik vraag het liever vooraf.\n\nDe site is gratis en heeft geen advertenties, maar ik bouw aan een app met later\neen betaald deel, dus ik ga niet zeggen dat we niet-commercieel zijn.\n\nOnder welke voorwaarden zou het kunnen, met de bronvermelding die jullie willen?\n\nEn hoe dan ook: welke boom mis jij persoonlijk op de site?\n\nMet vriendelijke groet,\nHidde\nancienttrees.app"
+  },
+  {
+   "to": "kancelaria@gdos.gov.pl",
+   "found_at": "crfop.gdos.gov.pl/CRFOP/kontakt.jsf and gov.pl/web/gdos/kontakt, both give kancelaria@gdos.gov.pl",
+   "outlet": "GDOS Poland, Centralny Rejestr Form Ochrony Przyrody",
+   "subject": "Licence for CRFOP tree monument data",
+   "body": "Hello,\n\nMy name is Hidde and I am building ancienttrees.app, a platform for remarkable\ntrees. My goal is to get people excited about old trees and to encourage them to\ngo outside and look at them.\n\nI would like to use the pomniki przyrody records from CRFOP. This is a question\nrather than a request: the portal metadata reads CC0, but the licence condition\nfields are empty and the site publishes CC BY-SA for its own content, so I want\nto know which applies before I use anything.\n\nThe site is free and has no ads, but I am building an app with a paid tier\nlater, so I will not claim non-commercial.\n\nCould you confirm which licence applies, and how you would like to be credited?\n\nAnd either way: which Polish tree do you think more people should go and see?\n\nKind regards,\nHidde\nancienttrees.app"
+  }
+ ]
+}

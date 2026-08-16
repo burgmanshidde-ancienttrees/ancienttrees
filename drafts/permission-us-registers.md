@@ -131,41 +131,39 @@ ancienttrees.app
 
 ## 4. City of Sydney (Register of Significant Trees)
 
-Contact: City of Sydney open data team, via the contact form on
-cityofsydney.nsw.gov.au, or the Register of Significant Trees page itself.
+Rewritten 2026-08-16 in his own style, from a Dutch mail he supplied as the
+calibration sample: name and what he builds in the first line, the goal stated
+plainly (get people excited about old trees and outside looking at them), one
+concrete ask, one personal question, done. The previous version was 330 words
+and explained itself three times; this is 150. Endpoint and field detail
+confirmed the same day and deliberately left OUT of the mail, because he is
+asking for a licence, not demonstrating research.
 
-Subject: Licence for the Register of Significant Trees data
+To: Council@cityofsydney.nsw.gov.au (their own published open-data contact)
+Subject: Licence for the Register of Significant Trees
 
-Hi,
+---
 
-I run ancienttrees.app, a free site that maps remarkable old trees city by
-city, with a story, an exact location and sources for each one. I am Dutch and
-I am working through the world's tree registers one country at a time.
+Hello,
 
-Your Register of Significant Trees is the best-organised tree data I have found
-anywhere, and I would like to use it to build a Sydney page: the significant
-individual trees, with their location and what makes them significant, credited
-to the City of Sydney with a link back to the register.
+My name is Hidde and I am building ancienttrees.app, a platform for remarkable
+trees. My goal is to get people excited about old trees and to encourage them to
+go outside and look at them.
 
-The reason I am writing rather than just using it: your street-tree inventory
-carries a clear CC BY 4.0 badge, but the significant trees layer has no licence
-attached at all, so I have taken that as "not granted" rather than as an
-oversight I am free to assume my way past.
+Your Register of Significant Trees is the best tree data I have found anywhere. I
+would like to use it to build a Sydney page, credited to the City of Sydney with
+a link back to the register.
 
-I should also be straight about what we are. The site is free today and there
-are no ads, but I am building an app and there will be a paid tier eventually,
-so I do not want to claim non-commercial and then change it.
+Your street tree data carries a CC BY 4.0 licence, but the significant trees
+layer has none, so I am asking rather than assuming. To be straight about what we
+are: the site is free and carries no ads, but I am building an app with a paid
+tier later, so I do not want to claim non-commercial. We would only publish trees
+your own data marks as publicly accessible or visible from the street.
 
-Two things you may want to know about how we would use it. We would only
-publish trees your own data marks as publicly accessible or visible from the
-street, and we leave out anything on private land. And we would publish
-individual trees rather than the avenues and groups, because our pages send
-someone to stand in front of one tree.
+Would you be willing to licence it, CC BY or whatever you prefer?
 
-Would you be willing to licence it, CC BY or anything else you prefer?
+And either way: which tree in Sydney do you think visitors should see?
 
-And whatever you decide: if there is a tree in Sydney you think visitors should
-see and most lists miss, I would love to hear about it.
-
+Kind regards,
 Hidde
 ancienttrees.app
