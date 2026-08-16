@@ -1,0 +1,31 @@
+{
+  "note": "Probed 2026-08-16 from data/research/arcgis-register-sweep.json's seven Montreal hits. The sweep joins an ArcGIS item to a city by its published EXTENT, which is a lead and not a location, exactly as its own note warns. Two of the seven turned out to be the same 322-tree layer for Otterburn Park, 27 km southeast on the Richelieu, with not one point inside 25 km of Montreal. One is a full public tree inventory, which the semantic-filter rule excludes on principle. What survived is below.",
+  "usable": {
+    "source": "Arbres remarquables (ArcGIS Feature Service, owner 'cimetiereonline')",
+    "url": "https://services5.arcgis.com/JQFh9nfqYx8kyDi9/arcgis/rest/services/Arbres_remarquables/FeatureServer/0",
+    "licence": "NOT VERIFIED. No licence statement found on the item. Nothing may be imported from it until one is found and quoted in OPEN_DATA_SURVEY.md; until then these are search leads for a research pass, not register entries.",
+    "fields": "OBJECTID, Espece only. No name, no age, no girth, no condition.",
+    "where": "All six sit within 800 m of each other on the Mount Royal slope, about 3 km from the city centre, which is the Mount Royal cemetery ground. That is a walkable cluster and the reason this is worth a pass at all.",
+    "trees": [
+      {"species_fr_en": "Erable argente | Silver Maple", "latitude": 45.49628, "longitude": -73.60593, "km_from_centre": 3.1},
+      {"species_fr_en": "Fevier epineux | Honey Locust", "latitude": 45.50048, "longitude": -73.61231, "km_from_centre": 3.5},
+      {"species_fr_en": "If japonais | Japanese Yew", "latitude": 45.49705, "longitude": -73.61526, "km_from_centre": 3.8},
+      {"species_fr_en": "Peuplier deltoide | Eastern Cottonwood", "latitude": 45.49728, "longitude": -73.60516, "km_from_centre": 3.0},
+      {"species_fr_en": "Peuplier deltoide | Eastern Cottonwood", "latitude": 45.49716, "longitude": -73.60487, "km_from_centre": 3.0},
+      {"species_fr_en": "Pin noir d'Autriche | European Black Pine", "latitude": 45.49751, "longitude": -73.60665, "km_from_centre": 3.1}
+    ]
+  },
+  "rejected": [
+    {
+      "title": "Arbres_remarquables_OP2016 and APP_OP_MilieuxNaturels_WFL1 layer 6 (owner Ariane_CNMSH)",
+      "url": "https://services3.arcgis.com/eqfhtby0f1sM88WH/arcgis/rest/services/Arbres_remarquables_OP2016/FeatureServer/6",
+      "count": 322,
+      "why_not_montreal": "Every one of the 322 records carries MUNICIPALI = 'Otterburn Park'. Nearest point to Montreal centre is 27 km. The extent matched Montreal; the data does not.",
+      "keep_because": "This is a genuinely rich register and it carries the field this whole project is short of: DHS_CM, diameter at breast height, on every tree, plus Espece_OK, ETAT (condition), RUE, Description, Habitat and Note. 92 of our published trees have no age and only 13 carry a girth, so a source with a measured diameter on all 322 is worth remembering the day Monteregie or Mont-Saint-Hilaire comes up the queue. Licence unverified, same as above."
+    },
+    {
+      "title": "Arbres publics (owner stce_02), Inventaire des arbres publics de Saint Lambert, Plantations - Verdissement",
+      "why_not": "Full municipal street-tree inventories. Never bulk imported: the register layer takes only what a register itself designates as remarkable."
+    }
+  ]
+}
