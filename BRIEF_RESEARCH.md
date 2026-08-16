@@ -55,8 +55,51 @@ itself "worth the walk": judge each one.
   a tree).
 - A year sitting in an age field (olive, "age 2009") is corruption, not an age.
 - A register age is the age at last measurement: add the years since, say so.
+- Most registers have no age field at all. That is what the section below is for.
 - The register's total will not match the municipality's own count; never quote
   either as a count of what exists.
+
+## Age: estimate it when you can, ask the reader when you cannot
+
+A missing age never holds a tree back, and it never has. What changed on
+2026-08-16 is the other half: **estimating is allowed and wanted, and an
+estimate is not an invention.**
+
+An estimate is DERIVED and says what from. These count, in this order:
+
+1. **Girth plus a published growth rate for the species.** This is how every
+   register in the world dates a tree. Record the girth in `girth_cm` whether
+   or not you use it, ALWAYS, even when the tree already has an age: it is the
+   input the whole database is missing (13 trees of 1223 carry one), and it is
+   the field that turns dating into a script instead of a judgement.
+2. **A documented planting date for this specimen.** For this one, not for the
+   garden around it. See the trap below.
+3. **A vague age from a real source, repeated as vaguely as the source gave
+   it.** "Several hundred years" stays "several hundred years" and never
+   becomes "roughly 350".
+
+What is none of these is a number that feels right, and that is fabrication
+under hard rule 2 whatever it gets called.
+
+A derived age is BROAD. The honest output of a growth-rate calculation is a
+century-wide band: `age_min` 300, `age_max` 500, `age_estimate` "roughly 400
+years". Narrowing it to look confident is the same error as a faked pin.
+Put the working in `verify_notes` ("5m girth, oak on good soil"), never in
+`age_estimate`, which is a chip label.
+
+**The trap, and it will be right in front of you: the bridge claim.** "The
+park was laid out in 1864, so this linden is 160 years old" joins two true
+facts into a claim neither source makes. A park's planting date is the most
+tempting bridge there is, because it is always available and always plausible,
+and this exact move once shifted a pin sixty metres onto the wrong tree. It
+only works when a source says THIS TREE belongs to that planting. Otherwise
+leave the two facts as two facts and let the writer say the tree stands in a
+garden replanted in 1864 without saying it dates from it.
+
+**No basis at all: leave `age_estimate` empty, say so in `verify_notes`, and
+let the page ask the reader.** Somebody with a tape measure answers it in one
+message, and a correspondent is worth more than a number. Empty beats invented;
+empty no longer beats derived.
 
 ## Fetch discipline
 

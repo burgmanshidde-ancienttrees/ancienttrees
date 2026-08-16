@@ -1903,6 +1903,15 @@
         "note": "Register-first pass on Lithuania's STVK gpo layer: 7 verified in one Old Town/Bernardinai Garden cluster of ~1km, register cross-checked against lt.wikipedia coordinates, 18 leads and 6 blocked recorded from the other 35 candidates. Tokens are the harness's measured figure, not the agent's own 55k self-estimate.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "tallinn",
+        "kind": "verify",
+        "tokens": 175470,
+        "trees": 4,
+        "note": "Register-led Tallinn opening: 4 verified (Kelch's linden, Suda street ginkgo, Windecki red oak, Huecki linden pair), 33 leads, 0 blocked. The register turned out to be mostly nineteenth-century ornamental cultivars, so the rejection rate was the point of the pass rather than a failure of it. Tokens are the harness's measured figure, not the agent's 145k self-estimate.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
