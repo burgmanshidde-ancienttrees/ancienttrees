@@ -32,7 +32,8 @@ guardrails are not etiquette but code:
   bug from blasting the same list fifty times, not to stop him.
 - A mail with an empty "to" is skipped with a warning, never guessed.
 - Every send is appended to data/outreach-sent.json AND printed for the
-  OUTREACH.md log.
+  OUTREACH.md log. A repeat send records its `resend_reason` there too, so the
+  log answers "why did this address get two mails" without anybody guessing.
 
 Credentials come from the environment, set up once by Hidde (his mailbox,
 his app password; the machine never stores them):
@@ -103,9 +104,26 @@ def main():
         if not to or "@" not in parseaddr(to)[1]:
             results.append(f"SKIP  {label}: no verified address, never guessed")
             continue
+        # NEVER THE SAME ADDRESS TWICE UNLESS SOMEBODY MEANT IT (Hidde,
+        # 2026-08-16). The refusal is the default and always was; what was
+        # missing is the door, so a deliberate follow-up used to be silently
+        # skipped like an accident. A mail may carry `resend_reason`, a
+        # sentence saying why this address is being written to again. It has
+        # to be a real sentence: a bare "yes" or "follow-up" is refused,
+        # because the point is that somebody thought about it rather than
+        # typed past a guard. The reason is stored with the send, so the log
+        # says why every repeat happened.
         if to.lower() in already:
-            results.append(f"SKIP  {label}: {to} was already mailed on a previous run")
-            continue
+            why = (m.get("resend_reason") or "").strip()
+            if len(why.split()) < 5:
+                prior = next((s2.get("date") for s2 in reversed(sent_log["sent"])
+                              if (s2.get("to") or "").lower() == to.lower()), "?")
+                results.append(
+                    f"SKIP  {label}: {to} was already mailed on {prior}. To write "
+                    f"again on purpose, add a resend_reason of at least five "
+                    f"words to that mail in the batch file.")
+                continue
+            results.append(f"REPEAT {label}: {to}, on purpose: {why}")
         # The promise we made in writing, now enforced. Batches 003 and 004
         # closed with "if you would rather not hear from me again, just say
         # so", and until 2026-08-16 nothing in the machine could honour that:
@@ -136,8 +154,11 @@ def main():
             server.login(creds["SMTP_USER"], creds["SMTP_PASS"])
         server.send_message(msg)
         sent_today += 1
-        sent_log["sent"].append({"date": today, "to": to, "outlet": label,
-                                 "subject": m["subject"], "batch": batch.get("batch")})
+        record = {"date": today, "to": to, "outlet": label,
+                  "subject": m["subject"], "batch": batch.get("batch")}
+        if (m.get("resend_reason") or "").strip():
+            record["resend_reason"] = m["resend_reason"].strip()
+        sent_log["sent"].append(record)
         json.dump(sent_log, open(SENT_PATH, "w"), ensure_ascii=False, indent=1)
         results.append(f"SENT  {label}: {to}")
     if server:
