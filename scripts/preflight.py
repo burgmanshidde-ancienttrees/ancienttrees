@@ -217,8 +217,48 @@ def check_pin_upgrades():
     return out
 
 
+# Two cities must never publish the same physical tree under two ids. Added
+# 2026-08-16, after REVIEW.md's 2026-08-16 BLOCKER: Potsdam's pot_005/pot_006
+# republished Berlin's already-live ber_012/ber_011 (same register ids,
+# coordinates 10-15m apart), one tree collectible twice under two names and
+# two cities. superlatives.py already catches two pages claiming the same
+# crown; nothing caught two pages claiming the same trunk. Same shape as
+# check_id_prefixes: build one index across every city file, flag collisions.
+DUPLICATE_TREE_RADIUS_M = 60
+
+
+def check_cross_city_duplicates():
+    import math
+    trees = []
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            d = json.load(fh)
+        city = d.get("city") or path
+        for t in d.get("trees") or []:
+            loc = t.get("location") or {}
+            lat, lon = loc.get("latitude"), loc.get("longitude")
+            if lat is None or lon is None:
+                continue
+            trees.append((lat, lon, city, t.get("id"), t.get("name")))
+    out = []
+    for i in range(len(trees)):
+        lat1, lon1, city1, id1, name1 = trees[i]
+        for lat2, lon2, city2, id2, name2 in trees[i + 1:]:
+            if city1 == city2:
+                continue
+            dlat = (lat1 - lat2) * 111320
+            dlon = (lon1 - lon2) * 111320 * math.cos(math.radians((lat1 + lat2) / 2))
+            dist = math.hypot(dlat, dlon)
+            if dist <= DUPLICATE_TREE_RADIUS_M:
+                out.append(
+                    "%s (%r, %s) and %s (%r, %s) are %.0fm apart across two cities: "
+                    "likely one physical tree published twice"
+                    % (id1, name1, city1, id2, name2, city2, dist))
+    return out
+
+
 def main():
-    problems = check_id_prefixes() + check_pin_upgrades()
+    problems = check_id_prefixes() + check_pin_upgrades() + check_cross_city_duplicates()
     files = sorted(glob.glob("data/cities/*.json"))
     for p in files:
         problems += check_city(p)

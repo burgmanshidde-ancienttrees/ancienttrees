@@ -1840,6 +1840,15 @@
         "note": "4 Piano di Sorrento trees written for a new Sorrento page (day-trip labeled); all flagged, hedges on 2 approximate pins and the uncertain Positanonews pine match kept in prose; no best_time earned (3 evergreens + undocumented plane)",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "potsdam",
+        "kind": "session",
+        "tokens": 0,
+        "trees": -2,
+        "note": "Fixed REVIEW.md's 2026-08-16 BLOCKER: retired pot_005/pot_006 (duplicates of Berlin's ber_012/ber_011, same register ids, coords 10-15m apart). Rewrote Potsdam's intro/meta/FAQ off the 6-tree count, folded both into data/leads/potsdam.json blocked, added a cross-city redirect (site/src/lib/redirect-map.ts) so the old URLs resolve to Berlin's pages, and added check_cross_city_duplicates() to scripts/preflight.py so a same-trunk collision fails preflight next time. Tokens not logged by the harness this session, recorded as 0 rather than leaving the day silent.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }

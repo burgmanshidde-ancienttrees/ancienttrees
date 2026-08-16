@@ -11,6 +11,16 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-16 (session) - Fixed the fresh-eyes BLOCKER: Potsdam's two Pfaueninsel oaks were Berlin's, live twice
+
+7-day visits (`visitors.py`): 28/83/41/21/17/34/33/5 across 08-09 to 08-16, 262 visits, 422 page views.
+
+Step 0 rung 2 (site is broken): REVIEW.md's 2026-08-16 review flagged a BLOCKER before any new-coverage work started, so that came first. Confirmed it directly against both city files: Potsdam's pot_005/pot_006 (the two Pfaueninsel oaks) are the same physical trees as Berlin's already-published ber_012/ber_011, same register ids, coordinates 10-15m apart, same sources; Potsdam's own FAQ already admitted these two were "not actually in Potsdam". Retired pot_005/pot_006, rewrote Potsdam's copy off the six-tree count (now 4, exactly the never-cuttable floor), folded both into `data/leads/potsdam.json`'s blocked list, and added a cross-city redirect so the old URLs resolve to Berlin's pages instead of 404ing (hard rule 3). Also added `check_cross_city_duplicates()` to `scripts/preflight.py`, the toolchain gap the review named: a 60m cross-city coordinate sweep, same shape as the existing id-prefix check, so a same-trunk collision fails preflight next time rather than needing a human review to catch it. Ran it against the whole corpus: no other collisions. Full detail in CURATION.md's 2026-08-16 entry.
+
+Checked and reader submissions (rung 1) were clear: all 4 rows in the Supabase `submissions` table are already in `data/submissions-processed.json`. Checks clean: Smoke test (green, 2026-08-16 07:02), Data digest (green, 05:44), Weekly analysis (green 08-10, within the 8-day window), Fresh-eyes review (green, 06:56, same run that filed the BLOCKER above).
+
+`npm --prefix site ci && npm --prefix site run build` succeeds (1623 pages). `python3 scripts/qa.py`: 1 unrelated failure, every sitemap URL sharing one lastmod, caused by this checkout only holding one git commit (shallow history in this sandbox), not by this change; `python3 scripts/preflight.py` and `python3 scripts/superlatives.py` both pass clean. Stopped here rather than starting new coverage: the fix, its redirect and its toolchain check are one complete piece of work, committed together.
+
 ## 2026-08-16 - Night run 2026-08-16 05:55 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 5.4 minutes of its 60 minute window, 46 turns, ended clean (success). 2 commit(s), none of them a published tree. Claims left behind: bari, taormina, catania, aarhus, sorrento, which block the top of the queue until they expire.
