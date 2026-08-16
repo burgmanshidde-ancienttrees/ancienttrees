@@ -853,17 +853,27 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .saved-list { margin: 1rem 0 2rem; padding-left: 1.2rem; }
 .saved-list li { margin: 0.4rem 0; }
 /* "Worth the visit?" (2026-08-14, DECISIONS.md). Quiet by design: a text-size
-   question and two small buttons, never a component that outshouts the story. */
-.worthit { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin: 1.1rem 0; font-size: 13.5px; color: var(--ink-light); }
+   question and two small buttons, never a component that outshouts the story.
+   Stacked into rows 2026-08-16, when the vote and the problem report were split
+   into siblings: the row holds the question, the thumbs and the report button,
+   and the chips drop underneath it only once the report button is tapped. */
+.worthit { display: flex; flex-direction: column; align-items: flex-start; gap: 0.5rem; margin: 1.1rem 0; font-size: 13.5px; color: var(--ink-light); }
+.worthit-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
 .worthit-compact { margin: 0.5rem 0 0; }
 .worthit-q { font-weight: 700; }
 .worthit-btn { font-size: 16px; line-height: 1; padding: 0.35rem 0.7rem; border: 1px solid var(--cream-dark); border-radius: 999px; background: #fff; cursor: pointer; }
 .worthit-btn:hover { border-color: var(--moss); }
-.worthit-done { color: var(--moss); font-weight: 700; }
+/* Deliberately quieter than the thumbs: reporting a fault is the rarer errand,
+   and the convention (Google Maps, AllTrails) is a plain secondary control
+   beside the opinion, never a button competing with it. */
+.worthit-report { font-family: inherit; font-size: 12.5px; line-height: 1; padding: 0.4rem 0.75rem; border: 1px solid var(--cream-dark); border-radius: 999px; background: #fff; color: var(--ink-light); cursor: pointer; }
+.worthit-report:hover { border-color: var(--moss); color: var(--moss); }
+.worthit-done, .worthit-thanks { color: var(--moss); font-weight: 700; }
 .worthit-why { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; }
 /* an explicit display beats the hidden attribute, which is exactly the bug the
    first mobile screenshot caught: the chips showed before anybody tapped No */
-.worthit-why[hidden], .worthit-btn[hidden], .worthit-q[hidden], .worthit-done[hidden] { display: none; }
+.worthit-why[hidden], .worthit-btn[hidden], .worthit-q[hidden], .worthit-done[hidden],
+.worthit-thanks[hidden], .worthit-report[hidden] { display: none; }
 .worthit-chip { font-family: inherit; font-size: 12.5px; padding: 0.3rem 0.65rem; border: 1px solid var(--cream-dark); border-radius: 999px; background: var(--cream); cursor: pointer; color: var(--ink); }
 .worthit-chip:hover { border-color: var(--moss); }
 .which-one { font-size: 13.5px; line-height: 1.5; color: var(--ink); background: var(--cream);

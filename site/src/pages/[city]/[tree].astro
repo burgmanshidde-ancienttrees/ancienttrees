@@ -165,6 +165,14 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
       <p class="which-one"><b>Which one is it?</b> {tree.how_to_recognise}</p>
     )}
     <div class="prose-block"><p>{tree.story}</p></div>
+    {/* Directly under the story, moved up from the foot of the page 2026-08-16
+        (Hidde: "de thumb up and thumb down opties lijken een beetje weggestopt
+        ... op de diepere pagina veel hoger"). It sat as the second-to-last
+        element of 212 lines. The convention puts a rating summary at the top of
+        a place page and the act of rating after the content; we deliberately
+        show no counts, so there is no summary to hoist, and the honest place is
+        the moment the reader has just learned what the tree is. */}
+    <WorthIt treeId={tree.id} city={cityName} treeName={tree.name} />
     <Fragment set:html={seasonHtml} />
     <div class="map-embed"><div id="map" class="map"></div></div>
     <p class="go-note">The button above opens directions in your maps app. {tree.transport ?? ""}</p>
@@ -202,8 +210,13 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
     <div class="report">
       <strong>We could use your help.</strong>
       <p class="report-line">This page was researched from a distance. If you know this tree, you know things we do not: the species, the age, the size, whether the photo shows the right tree, or that it is gone. Every field on this page can be corrected.</p>
-      <WorthIt treeId={tree.id} city={cityName} treeName={tree.name} />
-      <a class="report-btn" href={submitLink("correction", cityName, tree.name)}>Something is wrong here</a>
+      {/* "Something is wrong here" used to sit here as well, directly under the
+          vote control's own nested version of the same question: three
+          overlapping correction paths in one box. The chips on the control
+          above now do this in one tap, and their "Something else" chip still
+          reaches this form, so the duplicate link is gone rather than repeated
+          (one entry point per intent). */}
+      <a class="report-btn" href={submitLink("correction", cityName, tree.name)}>Correct a detail on this page</a>
       <a class="report-btn" href={submitLink("tree", cityName)}>Suggest another tree</a>
     </div>
     <SignInModal />
