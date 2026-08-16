@@ -47,8 +47,16 @@ jobs:
       # step the requeue happened on the runner and evaporated: the first
       # promote run (2026-08-13 morning) did exactly that, because the commit
       # below only added DATA.md.
+      # rescore.py FIRST, then city_queue.py. promote() above writes the
+      # measured columns only; rescore.py turns them into score and basis on
+      # travel demand and realised yield; city_queue.py assigns rank and
+      # renders the table. Added 2026-08-16 to end a two-day split brain where
+      # promote() and rescore.py both wrote `score` with different formulas and
+      # the queue came out half one and half the other.
       - name: Re-rank the queue from the new numbers
-        run: python3 scripts/city_queue.py
+        run: |
+          python3 scripts/rescore.py --write
+          python3 scripts/city_queue.py
 
       # The staging shelf stocks itself here, not only inside Claude runs.
       # Hidde, 2026-08-13: "er gaan weken zijn dat ik er helemaal niet ben."

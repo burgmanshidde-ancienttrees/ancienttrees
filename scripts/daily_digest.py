@@ -1170,19 +1170,30 @@ def promote(pages):
         city["impressions_10d"], city["clicks_10d"] = imps, clicks
         if imps < 10:
             continue
-        was = city.get("score")
-        city["basis"] = "measured"
-        city["score"] = round(float(clicks), 2) if clicks else 0.25
-        if was != city["score"]:
-            moved.append((city["city"], was, city["score"]))
+        # SCORING MOVED OUT, 2026-08-16. This used to set score and basis
+        # here, and from 2026-08-15 that made two scorers fight over one file:
+        # scripts/rescore.py had taken over score/basis on travel demand and
+        # measured yield, and this ran daily afterwards and overwrote the
+        # measured half with its own clicks formula. The result was a queue
+        # that was half one system and half the other, and it read as nonsense:
+        # London on 95 impressions and 27k travel views sat at score 0.25 and
+        # rank 259 while Toronto, with no page and no impressions, was rank 1.
+        #
+        # So promote() now writes only what it MEASURES (impressions and clicks
+        # from Search Console) and rescore.py owns what those numbers MEAN.
+        # The workflow runs rescore.py straight after this. Same rule this file
+        # already applies to the city order: one authority per number.
+        if imps or clicks:
+            moved.append((city["city"], city.get("score"), None))
     # Ranks are NOT assigned here: scripts/city_queue.py owns ranking (score
     # times the ease factor) and the digest workflow runs it immediately after
     # this. Assigning ranks here too would be the two-copies disease again.
     with open(src, "w", encoding="utf-8") as fh:
         json.dump(doc, fh, ensure_ascii=False, indent=1)
-    print("promote: %d cities rescored from measured demand" % len(moved))
-    for name, was, now in sorted(moved, key=lambda m: -(m[2] or 0))[:8]:
-        print("  %-16s %s -> %s" % (name, was, now))
+    print("promote: %d cities updated from measured demand "
+          "(scoring is rescore.py's job)" % len(moved))
+    for name, was, _ in moved[:8]:
+        print("  %-16s measured (previous score %s)" % (name, was))
 
 
 if __name__ == "__main__":
