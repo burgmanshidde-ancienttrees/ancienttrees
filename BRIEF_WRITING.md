@@ -38,6 +38,25 @@ Flagged trees keep their hedged phrasing: "by that tradition", "a 1913 monument
 claims", "somewhere between". The flag is in the data; the honesty must also be
 in the prose.
 
+## Age: carry the basis, or carry the question
+
+Where `verify_notes` gives an ESTIMATED age, the story says what it is estimated
+from, in a clause rather than a paragraph: "about five metres round, which puts
+it near four hundred years". An estimate that arrives in the prose as a bare
+number reads as a measurement, and that is the thing we are not allowed to fake.
+Keep the band as wide as the notes give it; do not tidy "300 to 500" into "400".
+
+Where there is no age at all, do NOT hedge the whole story into mush and do not
+apologise for the gap. Say it plainly once and turn it into an invitation, which
+is what the site runs on everywhere else: nobody has dated this one, and if you
+know, tell us. One sentence, near the end.
+
+And never bridge to an age. If the notes say the garden was replanted in 1864
+and say nothing about when this tree went in, the story may put the tree in that
+garden and may not date it from that replanting. Two sourced facts joined into a
+third that neither source states is this project's most expensive writing error;
+it is what the "no bridge claims" rule exists for.
+
 ## best_time, only when real
 
 A tree gets `best_time` only when it has a genuine seasonal peak a visitor

@@ -1,0 +1,95 @@
+[
+ {
+  "id": "tln_001",
+  "name": "Kelch's Linden (Kelchi pärn)",
+  "species": "Common Lime (Tilia x europaea)",
+  "age_estimate": "roughly 350-375 years",
+  "age_min": 340,
+  "age_max": 377,
+  "location": {
+   "address": "Near Niguliste Church (Niguliste 3), Tallinn Old Town",
+   "latitude": 59.435586,
+   "longitude": 24.742527,
+   "neighbourhood": "Vanalinn (Old Town)"
+  },
+  "verified_sources": [
+   "https://et.wikipedia.org/wiki/Kelchi_p%C3%A4rn",
+   "http://entsyklopeedia.ee/artikkel/kelchi_p%C3%A4rn"
+  ],
+  "access": "Free, stands in public space near Niguliste Church in the Old Town",
+  "transport": "Central Tallinn Old Town, short walk from Vabaduse väljak (Freedom Square) tram/bus stops",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Register basis=GPS (KLO4000069), so pin is tree-level accurate. Reportedly Tallinn's oldest tree. Species is 'läänepärn' = Common Lime (Tilia x europaea), a common/large-leaved lime hybrid, per elurikkus.ee and et.wikipedia.org/wiki/L%C3%A4%C3%A4nep%C3%A4rn. Eesti Entsuklopeedia (1999 measurement): girth 462cm at 1.3m height, height 16m, planted 1680 per a 1938 newspaper source; ring-count assessment in 1999 gave 340-350 years, which projected to today (2026, +27 years) is roughly 367-377 years -- flagged because the age comes from a 27-year-old measurement, not a fresh one. Legend: Baltic-German chronicler/pastor Christian Kelch (d. 1710) is said to be buried beneath it, which is where the name comes from. Trunk has two surviving main branches, heavy decay/hollow at the base that has been sealed; the tree has had protective pruning and a plan for a decorative fence around it. Named Tallinn 'European Tree City 2015' partly because of this tree (pealinn.ee, 2015). Alive evidence: photographed and captioned 'Kelch-Linde 2018' on Wikimedia Commons (2018), plus continuous documentation back to 2012; no more recent sighting found in this pass, so flagged rather than dated-photo-confirmed for 'last few years'. Worth leading the story with the burial legend and the 350-year figure, and noting the fresh estimate in the verify_notes rather than the old chip."
+ },
+ {
+  "id": "tln_002",
+  "name": "The Süda Street Ginkgo (Süda tänava hõlmikpuu)",
+  "species": "Ginkgo (Ginkgo biloba)",
+  "age_estimate": "over 110 years",
+  "age_min": 113,
+  "age_max": 128,
+  "location": {
+   "address": "Corner of Peeter Süda tänav and Pärnu maantee",
+   "latitude": 59.430184,
+   "longitude": 24.745408,
+   "neighbourhood": "Tatari"
+  },
+  "verified_sources": [
+   "https://et.wikipedia.org/wiki/S%C3%BCda_t%C3%A4nava_h%C3%B5lmikpuu",
+   "https://eelis.ee/default.aspx?state=2%3B-1158249072%3Best%3Beelisand%3B%3B&comp=objresult%3Dala&obj_id=708",
+   "https://www.err.ee/609444/tallinna-kuulus-holmikpuu-vajab-abi"
+  ],
+  "access": "Free, stands at a public street corner",
+  "transport": "Central Tallinn, Tatari neighbourhood, walkable from the city centre",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Register KLO4000051 matches this tree exactly, coord_basis=Tallinna vektorkaart 1:2000 but Wikipedia independently names the exact street corner (Peeter Süda tänav x Pärnu maantee), so confirmed. Estonia's largest and thickest ginkgo, protected since 30 April 1966 (protected object no. 391). Grown originally in the Kühnert family's private park a few hundred metres away from seed/saplings Heinrich Kühnert brought from Germany in the late 1800s; his son Ernst transplanted it to its current corner in 1913 when the street was widened. Growth record: 1928 trunk diameter 10cm/6m tall; 1955: 28cm/8.2m; 1965: 35cm/8.5m; 1983: 46cm diameter; by 2017 girth (circumference) 164cm at 1.3m height, height 13m, age estimated 'over 110 years' as of 2017 (so roughly 118-128 years by 2026, flagged since not re-measured since). Became a genuine local conservation symbol: late-1980s plans for a new Soviet parade grandstand and an Estonia Theatre annex would have felled it, public opposition stopped the project, and the episode coined the still-used Estonian phrase 'hõlmikpuu sündroom' (ginkgo syndrome) for development plans blocked by a protected tree. ERR reported in 2017 that Estonian Dendrology Society flagged the tree needs help (crown grown one-sided and shaded by a neighbouring maple, dead wood needing removal) -- a real vulnerability worth naming rather than hiding. A 2024-era Postimees piece (paywalled, headline only accessible) covers a proposed neighbouring petrol station, with experts stating it would not endanger the protected tree, which is itself evidence the tree was being actively assessed and standing as of that piece. Good story hook: this single tree stopped a Soviet-era demolition and now looks over a modern zoning fight forty years later."
+ },
+ {
+  "id": "tln_003",
+  "name": "The Windecki Red Oak (Windecki punane tamm)",
+  "species": "Northern Red Oak (Quercus rubra)",
+  "age_estimate": "roughly 140-150 years",
+  "age_min": 140,
+  "age_max": 150,
+  "location": {
+   "address": "Windecki park, near Tuulenurga tn 6, Maarjamäe",
+   "latitude": 59.458357,
+   "longitude": 24.815658,
+   "neighbourhood": "Maarjamäe, Pirita linnaosa"
+  },
+  "verified_sources": [
+   "https://www.eestimetsaabiks.ee/wp-content/uploads/2018/03/Ekspertiis-Windecki-pargi-ja-Hans-Lepa-aia-puukooli_2017_12_08.pdf",
+   "http://vana.loodusajakiri.ee/eesti_loodus/artikkel2011_2002.html"
+  ],
+  "access": "Free; stands in Windecki park, a former manor summer estate park now open ground in the Maarjamäe area",
+  "transport": "Pirita/Maarjamäe district, Tallinn; reachable by bus along Pirita tee, roughly 15-20 minutes from the centre",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Register KLO4001325, coord_basis=ETAK (a coarser topographic base map), so kept approximate; a nearby tree in the same 2017 survey (a lime at Tuulenurga tn 14) was pinned at 59.45781/24.81400, about 150m from the register point, consistent with the same small park rather than a precise trunk fix. Dendrologist Olev Abner's 2017 site expertise (commissioned ahead of the 2020 protection decision, Riigi Teataja akt 128042020010) gives the hard numbers: D=83cm trunk diameter, H=24m, and calls it 'tõenäoliselt Eesti vanim' (likely Estonia's oldest) red oak by trunk girth and height, comparing it against the only two other individually protected red oaks in Estonia's register (both smaller). Age is an ESTIMATE, not a ring count: the expertise reasons that the Windecki estate park was laid out under owner Robert Weisse before his 1886 death, so the oak (assumed part of the original planting) is roughly as old as the park, hence 'u 130-140 aastat' as of the 2017 survey -- flagged for that reasoning-based age, and projected to roughly 140-150 years by 2026. A separate, older 2007 Eesti Loodus article about the same park describes 'three red oaks' with the largest at H=24m but D=61cm, a real discrepancy against the 2017 D=83cm figure for what is presumably the same or a related tree; both figures are given here rather than picking a winner, per the register-conflict rule. Alive evidence: a dated photograph in the 2017 expertise, taken 20.10.2017, captioned 'Punane tamm (keskel) Windecki pargis Tuulenurga tn 6 alal', shot from the west -- solid but not recent-years evidence, hence flagged. History: Windecki was a 19th-century summer estate built by Robert Weisse (1817-1886) on the lower terrace below the Lasnamäe cliff; the estate's timber main house burned down in 1995, but the park survives with 32 trees (down from 42 in 1995), including a notable row of 17 old European larches. The oak is one of the park's individually named protected specimens, alongside a large-crowned common oak and rare conifers noted in the same survey. Worth the story leaning on 'the only building left standing burned in 1995, but the oak planted by the man who built it is still there.'"
+ },
+ {
+  "id": "tln_004",
+  "name": "The Huecki Lindens (Huecki pärnad)",
+  "species": "Common Lime (Tilia x europaea)",
+  "age_estimate": "roughly 140 years",
+  "age_min": 140,
+  "age_max": 143,
+  "location": {
+   "address": "In front of Lai 29 (Huecki maja), Tallinn Old Town",
+   "latitude": 59.440527,
+   "longitude": 24.746039,
+   "neighbourhood": "Vanalinn (Old Town)"
+  },
+  "verified_sources": [
+   "https://www.sirp.ee/puude-tanavaelu/",
+   "https://www.protectedplanet.net/harilik-parn-2-puud-huecki-parnad-2-protected-nature-monument"
+  ],
+  "access": "Free, street trees standing in public space in front of the historic Huecki house",
+  "transport": "Central Tallinn Old Town, short walk from the Old Town's northern gate area",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Register KLO4000024 gives 'geometry: polygon centroid' rather than a plain point (the register covers both trees as one designated pair), but an independent address lookup of Lai 29 (Huecki maja) lands at 59.4406/24.7458, essentially the same spot as the register centroid, so treated as confirmed rather than downgraded for the centroid technicality. This is a matched pair (register 'twins', Harilik pärn 2 puud) standing together in front of the same historic building, which reads as one collectible point rather than two separate entries, per the twin-folding rule. Two western/common lindens (Tilia x europaea, same species as tln_001's Kelch linden), each about 25m tall. Sirp (Estonian culture weekly, 2021 article 'Puude tänavaelu') states they were 'apparently' planted in 1883, deliberately timed to mark 200 years since the Hueck family acquired the Lai 29 property in 1683 -- a nice, specific planting story, though the article hedges with 'apparently' so it is not iron-clad. That puts them at roughly 143 years old in 2026; flagged because the planting date rests on a single cultural-history source rather than a ring count. Protected as a nature monument since 2009 per Protected Planet/EUNIS (citing Estonia's environment register), which independently corroborates their protected status and species as a second source. Sirp frames them as unusually hardy survivors, 'growing in the middle of a stone desert' with very little soil or root room in the paved Old Town street, which is itself a good detail for the story (how a 19th-century commemorative planting has outlasted its own hard urban footing). No recent dated photo found in this pass for 'alive now' beyond the 2021 article's implicit present tense; flagged for that too, though the trees' well-known status and matching building make disappearance unlikely to have gone unnoticed."
+ }
+]
