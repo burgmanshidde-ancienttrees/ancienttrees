@@ -1,0 +1,100 @@
+[
+ {
+  "id": "tro_001",
+  "name": "The Kew Gardens Red Oak",
+  "species": "Northern Red Oak (Quercus rubra)",
+  "age_estimate": "roughly 220 years",
+  "age_min": 200,
+  "age_max": 260,
+  "girth_cm": 532,
+  "location": {
+   "address": "Kew Gardens, 2075 Queen St E, Toronto",
+   "latitude": 43.6694,
+   "longitude": -79.2978,
+   "neighbourhood": "The Beaches"
+  },
+  "verified_sources": [
+   "https://beachmetro.com/2023/05/20/in-my-opinion-residents-can-celebrate-the-great-red-oak-in-kew-gardens-at-may-25-heritage-toronto-plaque-unveiling/",
+   "https://www.toronto.ca/business-economy/partnerships-sponsorships-donations/donate/heritage-red-oak-tree/",
+   "Ontario Heritage Tree Program (Forests Canada/OUFC) register entry HT-2021-255-266"
+  ],
+  "access": "Free, public park, open daylight hours",
+  "transport": "Streetcar (504 King or 501 Queen) to Kew Beach; Woodbine subway station + 15 min walk",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "DBH 169.5cm / circumference 532cm, height ~118ft (~36m), a long limb reaches to ground level. Tree experts estimate it took root roughly 220 years ago (so pre-colonization), though it could be older; treat as a broad band. Named City of Toronto official tree in 2022. Designated Heritage Tree by Forests Ontario/OUFC in 2021 (register HT-2021-255-266, nominated 2021, age at nomination unrecorded in leads file). Stood on land that was part of Joseph Williams farm from the 1850s (Kew Gardens amusement grounds); City of Toronto purchased the 8.4-hectare property in 1907. Predates the wetlands/creeks being culverted. Native plant garden now sits beneath its long limb. A Heritage Toronto plaque was unveiled May 25 2023. Register coordinates are a per-tree ArcGIS point, not a park-level address, hence confirmed; consistent with the beachmetro description of the tree standing near a specific limb/garden feature inside the park."
+ },
+ {
+  "id": "tro_002",
+  "name": "The King's Oak",
+  "species": "English Oak (Quercus robur)",
+  "age_estimate": "89 years, planted 12 May 1937",
+  "age_min": 89,
+  "age_max": 89,
+  "location": {
+   "address": "Coronation Park, Lake Shore Blvd W, Toronto",
+   "latitude": 43.6335,
+   "longitude": -79.407,
+   "neighbourhood": "Fort York / CNE grounds"
+  },
+  "verified_sources": [
+   "https://en.wikipedia.org/wiki/Coronation_Park_(Toronto)",
+   "https://canadiantreetours.org/species-pages/English_oak.html",
+   "Ontario Heritage Tree Program (Forests Canada/OUFC) register entry HT-2015-49-116"
+  ],
+  "access": "Free, public waterfront park, open at all hours",
+  "transport": "Streetcar 509/511 to Exhibition Loop, then 10 min walk; or Exhibition GO station",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Planted 12 May 1937, the day of King George VI's coronation, as the symbolic centre of Coronation Park: a single English oak (the \"Royal Oak\", English oak being the alternative common name) surrounded by concentric rings of silver maples (the Empire Circle) representing the then-British Empire's dominions and colonies, part of a ceremonial planting of about 150 trees that day. A stone and plaque next to it, dedicated by Justice John A. Hope and unveiled by Sir William Mulock on 1 Aug 1938, names it. On 6 May 2023, to mark the coronation of King Charles III, the City of Toronto planted a companion oak beside the original tree with a new plaque, which is recent (2023) confirmation the King's Oak still stands. The park underwent a phased restoration; phase one restored the King's Oak and Empire Circle area specifically. Heritage Tree Program register (HT-2015-49-116) separately lists an \"English Oak\" nominated 2015 at Coronation Park, Fort York Rd, age 75 at nomination, which is this same tree (same site, same species, same 1937 story); the register's 75-year figure at 2015 nomination is roughly consistent with an 1937 planting date (78 years by then). Location is the well-documented centre point of the Empire Circle rings, an identifiable landmark within the park."
+ },
+ {
+  "id": "tro_003",
+  "name": "Big Red",
+  "species": "Northern Red Oak (Quercus rubra)",
+  "age_estimate": "roughly 200 years",
+  "age_min": 190,
+  "age_max": 216,
+  "location": {
+   "address": "Corner of Long Branch Ave. and Park Blvd, beside the Long Branch Cenotaph",
+   "latitude": 43.5905,
+   "longitude": -79.5321,
+   "neighbourhood": "Long Branch"
+  },
+  "verified_sources": [
+   "https://forestscanada.ca/en/article/heritage-tree-big-red-oak-thrives-in-etobicoke",
+   "https://lbna.ca/200-year-old-red-oak-our-first-heritage-tree/",
+   "https://torontonewswire.com/16668-2/",
+   "Ontario Heritage Tree Program (Forests Canada/OUFC) register entry HT-2017-211-233"
+  ],
+  "access": "Free, public memorial park beside the Long Branch Cenotaph, open at all hours",
+  "transport": "Long Branch GO station or 501 Long Branch streetcar loop, 10 min walk",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Nicknamed \"Big Red\" for its brilliant fall colour. Diameter-based measurement dates it to the late 1810s (Long Branch Neighbourhood Association); Forests Canada gives approximately 200 years old, dating to the early 1800s. Ages agree within a couple decades. Height disagreement: Forests Canada says 24m (80ft), a 2024 local news piece (torontonewswire.com) says 33m; both describe the same tree and neither gives a measurement method, so both figures are recorded rather than one picked. Stood near a fountain at the historic Long Branch Grove and Resort in the late 1800s (a popular resort area, described in the register as a Muskoka-style destination west of Toronto); the Long Branch Hotel that once overlooked it burned down in 1958 but the oak survived. The 1933 Long Branch Cenotaph (WWI, WWII, Korean War) stands beside it. Officially recognized as Long Branch's first-ever Heritage Tree by Forests Ontario in April 2018 (register HT-2017-211-233, nominated 2017 at 200 years). A 2024 article (torontonewswire.com) still describes the tree as standing and watching over the neighbourhood, the most recent alive-now evidence found."
+ },
+ {
+  "id": "tro_004",
+  "name": "Corsan's Turkish Hazel",
+  "species": "Turkish Hazel (Corylus colurna)",
+  "age_estimate": "roughly 110 years",
+  "age_min": 105,
+  "age_max": 120,
+  "location": {
+   "address": "Echo Valley Park, off Wingrove Hill near 1124 Kipling Avenue",
+   "latitude": 43.6529,
+   "longitude": -79.5414,
+   "neighbourhood": "Islington / Echo Valley"
+  },
+  "verified_sources": [
+   "https://www.etobicokehistorical.com/george-hebden-corsan.html",
+   "http://songonline.ca/songnews/v009.html",
+   "Ontario Heritage Tree Program (Forests Canada/OUFC) register entry HT-2017-160-203"
+  ],
+  "access": "Free, public park (Etobicoke Parks System since 1959), multiple entrances off Kipling Avenue and Wingrove Hill",
+  "transport": "Islington subway station, then bus along Kipling/Burnhamthorpe, roughly 15-20 min total",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "One of five heritage-listed nut trees clustered at the former Echo Valley Farm, now Echo Valley Park (register also lists a Hican, Black Walnut, Hybrid Black x Persian Walnut and Persian Walnut at the same site; all five share one identical register coordinate, so this is a site-level pin, not a tree-level one, hence approximate). George Hebden Corsan (\"the Nut Man of Islington\"), an internationally known swimmer and health-food advocate, bought the 12-acre Echo Valley property in 1911-1912 and spent 40 years proving nut trees could grow in Ontario, eventually cultivating 400+ varieties; Metropolitan/Etobicoke Parks purchased the land in 1959 and made it a public park. Independent corroboration: the Society of Ontario Nut Growers newsletter (1976, citing a 1971 inventory by University of Toronto's Shade Tree Research Laboratory) lists Turkish hazel (Corylus colurna) among the surviving nut species documented on site, matching the register's designation exactly. Register (HT-2017-160-203) records it as 100 years old at 2017 nomination, planted \"in the 1900s\"; I have not bridged that to Corsan's 1912 start date since no source ties this specific specimen to that year. Alive-now evidence is thin: the most recent confirmation is the 2017 nomination and the general 1971 inventory; no 2020s sighting found in this pass, flagged accordingly. A reader visiting could confirm which of the five trees is which, since the site coordinate does not distinguish them."
+ }
+]
