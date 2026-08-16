@@ -1,0 +1,190 @@
+[
+  {
+    "id": "gen_007",
+    "name": "The Venerable Oak of the Botanical Garden",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "roughly 300 years",
+    "age_min": 290,
+    "age_max": 315,
+    "girth_cm": 710,
+    "location": {
+      "address": "Conservatoire et Jardin botaniques de Genève, near the Avenue de la Paix entrance",
+      "latitude": 46.22417687061437,
+      "longitude": 6.145211421006111,
+      "neighbourhood": "Sécheron"
+    },
+    "verified_sources": [
+      "https://sitg.ge.ch/arcgis/rest/services/SIPV_ICA_ARBRE_ISOLE (SITG cantonal isolated-tree inventory, no_inventaire 19800587I0, circumference 710cm, vitality Médiocre, stage Sénéscent)",
+      "https://www.geneve.ch/faire-geneve/promenades/graines-curieux/grands-chenes-quen-dites"
+    ],
+    "access": "Free, open garden during opening hours",
+    "transport": "Tram to Nations or the botanical garden stop, then a short walk",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Named 'Vénérable Vieux Chêne Pédonculé' by the City of Geneva's own 'Graines de curieux' museum-trail article, which gives inventory number XX0G19800587, exactly matching the register's no_inventaire 19800587I0 for the same coordinates: a genuine cross-source match, not a guess. The article dates it to 1719 (article itself written/updated with an 'en 2021' reference giving ~300 years old at that time, so roughly 305-307 today) and says it once bordered a Roman road that passed through the site before the botanical garden existed. Called the 'doyen' (elder) of the garden's living collection. A quiet 'périmètre de tranquillité' (protective perimeter) has been set around it to stop soil compaction from foot traffic, which the article gives as the reason its Médiocre/Sénéscent status in the register is being actively managed rather than ignored. Register also confirms it is alive (status Relevé) with a recent observation. Roughly 450m from the already-published Botanical Garden Plane Trees (gen_004), a different specimen inside the same garden complex, easy to combine into one visit. Flagged only because age is derived/approximate rather than a precise archival date; existence, species, location and history are all corroborated by two independent city sources."
+  },
+  {
+    "id": "gen_008",
+    "name": "The Naville Cedar",
+    "species": "Cedar of Lebanon (Cedrus libani)",
+    "age_estimate": "about 206 years",
+    "age_min": 200,
+    "age_max": 210,
+    "girth_cm": 722,
+    "location": {
+      "address": "Route de Frontenex, opposite no. 53, Villereuse",
+      "latitude": 46.202546415231836,
+      "longitude": 6.165126436594919,
+      "neighbourhood": "Eaux-Vives"
+    },
+    "verified_sources": [
+      "https://sitg.ge.ch/arcgis/rest/services/SIPV_ICA_ARBRE_ISOLE (SITG cantonal isolated-tree inventory, no_inventaire SEVE_231592, circumference 722cm, vitality Bon, planted 1820-01-01)",
+      "https://www.tdg.ch/ces-arbres-remarquables-qui-racontent-geneve-462792647437"
+    ],
+    "access": "Free, stands at the roadside, visible and reachable at any time",
+    "transport": "Bus to Frontenex or a 15-20 minute walk from the centre",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Tribune de Genève's 'Ces arbres remarquables qui racontent Genève' names this exact tree: planted in summer 1820 by Jean-Edouard Naville, mayor of Eaux-Vives, on his Montchoisy estate, to mark the birth of his son Emile. The article places it 'across from number 53, Route de Frontenex', which matches the register coordinate precisely (situation: Bords de voie / roadside) and the register's own planted date of 1820-01-01. Note the register's own '01-01' date-trap caveat applies to this date in principle, but here it is independently corroborated by a named, dated historical account (a real event, a real family, a real month even if the day is not recorded), which is exactly the case where BRIEF_RESEARCH.md's trap does not apply: a source says THIS tree was planted in 1820, not merely that the district was landscaped around then. The article calls it strong despite standing 'in the middle of concrete', consistent with the register's Sénéscent development stage but Bon vitality. A good stand-alone stop or a short detour from the Grange/Eaux-Vives cluster, about 450m from the already-published Grange Cedar (gen_003)."
+  },
+  {
+    "id": "gen_009",
+    "name": "The Bald Cypress of Parc des Eaux-Vives",
+    "species": "Bald Cypress (Taxodium distichum)",
+    "age_estimate": "roughly 100-150 years",
+    "age_min": 100,
+    "age_max": 150,
+    "girth_cm": 330,
+    "location": {
+      "address": "Parc des Eaux-Vives, near Quai Gustave-Ador",
+      "latitude": 46.20896128770663,
+      "longitude": 6.167098066687081,
+      "neighbourhood": "Eaux-Vives"
+    },
+    "verified_sources": [
+      "https://sitg.ge.ch/arcgis/rest/services/SIPV_ICA_ARBRE_ISOLE (SITG cantonal isolated-tree inventory, no_inventaire SEVE_211415, circumference 330cm, vitality Excellent)",
+      "https://www.geneve.ch/promenade-parc-grange-parc-eaux-vives"
+    ],
+    "access": "Free, open park at any time",
+    "transport": "Bus or a 15-20 minute walk from the centre along the lakefront",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "The City of Geneva's own didactic walking guide 'Promenade du Parc la Grange au Parc des Eaux-Vives' lists 21 named trees worth stopping for along this exact route, including 'Cyprès chauve - Parc des Eaux-Vives (n147/144)' among its 'arbres insolites' (unusual trees), independently confirming a bald cypress is one of the park's officially signposted specimens; the register gives the only individual tree in this species within the park at these coordinates, Excellent vitality, girth 330cm. Register's planted date (1912-01-01) falls in the documented sentinel-date range (22 entries share this exact date per the register's own caveat) so it is NOT used as a real planting record; age here is derived from girth and typical growth for the species in cultivation rather than from that date. About 320m from the published Grange Cedar (gen_003), inside the same lakeside park complex, and a natural addition to that walk with a genuinely different silhouette (conifer that drops its needles, a rarity for the walk)."
+  },
+  {
+    "id": "gen_010",
+    "name": "The Great Cedar of Port-Noir",
+    "species": "Cedar of Lebanon (Cedrus libani)",
+    "age_estimate": "roughly 200 years",
+    "age_min": 180,
+    "age_max": 230,
+    "girth_cm": 743,
+    "location": {
+      "address": "Parc des Eaux-Vives, near Chemin du Port-Noir",
+      "latitude": 46.20918521542531,
+      "longitude": 6.173830616649568,
+      "neighbourhood": "Eaux-Vives"
+    },
+    "verified_sources": [
+      "https://sitg.ge.ch/arcgis/rest/services/SIPV_ICA_ARBRE_ISOLE (SITG cantonal isolated-tree inventory, id_arbre 73169, circumference 743cm, vitality Bon, planted 1850-01-01; twin id_arbre 94667, 54m away, circumference 633cm, vitality Bon)"
+    ],
+    "access": "Free, open park at any time",
+    "transport": "Bus or a 15-20 minute walk from the centre along the lakefront",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register-only: single source, so flagged per the evidence bar rather than dropped. Two Cedars of Lebanon stand about 54 metres apart in this part of Parc des Eaux-Vives, close enough to read as one stop; the bigger, 743cm around and 40m tall (id_arbre 73169), is described here, with the second (633cm, id_arbre 94667) folded in as a companion rather than a separate entry. The register's planted date for the larger tree (1850-01-01) falls on a January 1st, which BRIEF_RESEARCH.md's date-trap section says to treat as 'roughly this era' rather than a literal record, so age here is instead calibrated against Geneva's own well-dated Naville Cedar (gen 008 candidate, 722cm at a documented 206 years, about 3.5cm of girth per year for this species locally): applying that rate to 743cm gives roughly 212 years, to 633cm roughly 181 years, hence the wide band. Distinct from the already-published Grange Cedar (gen_003, ~595m away) and Naville Cedar candidate (~900m away): Geneva simply has several giant, independently sited cedars of this age from the same 19th-century planting fashion. No news or institutional page found naming this specific pair; a reader with a tape measure would settle the age question in one message. NAME CHANGED BY THE MERGING SESSION from 'The Port-Noir Cedars' to the singular. 54 metres apart is too far for one obvious place to stand, which is the collectible-point test, so this entry is the 743 cm tree and the 633 cm one is a companion the story may mention. Do not write it as a pair."
+  },
+  {
+    "id": "gen_011",
+    "name": "The Tulip Tree of Parc de l'Impératrice",
+    "species": "Tulip Tree (Liriodendron tulipifera)",
+    "age_estimate": "roughly 100-150 years",
+    "age_min": 100,
+    "age_max": 150,
+    "girth_cm": 506,
+    "location": {
+      "address": "Parc de l'Impératrice, Chemin de l'Impératrice 10",
+      "latitude": 46.230293886652575,
+      "longitude": 6.144469802125413,
+      "neighbourhood": "Chambésy"
+    },
+    "verified_sources": [
+      "https://sitg.ge.ch/arcgis/rest/services/SIPV_ICA_ARBRE_ISOLE (SITG cantonal isolated-tree inventory, no_inventaire SEVE_285081, circumference 506cm, diameter 161cm, vitality Bon)",
+      "https://www.geneve.ch/parc-imperatrice"
+    ],
+    "access": "Free, public park, open at any time (the city bought the estate in 1983; the château itself now houses Italy's UN mission, but the grounds and lawn are public)",
+    "transport": "Bus toward Chambésy/Pregny, or roughly 25 minutes on foot from the botanical garden",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Geneva's own page for Parc de l'Impératrice names 'un tulipier de Virginie splendide et un séquoia grandiose' standing together at the top of the terrace lawn that descends from the château, among the park's 'superbes arbres centenaires' (superb century-old trees); the register's single Liriodendron tulipifera entry in the park, girth 506cm, matches this description and location. The 1983 sale to the City of Geneva made the park public even though the château became the Italian Mission's seat, so despite the register's situation field reading 'Cour' (courtyard), this is public parkland, not a private embassy garden; checked specifically because 'Cour' elsewhere in this register can mean a private courtyard. Register's planted date (1912-01-01) sits in the sentinel range, so age is instead a rough girth-based estimate for a fast-growing species in generous open ground, not a documented date. About 270m from the published Botanical Garden Plane Trees (gen_004), across the railway cutting; walkable but a separate small stop rather than the same cluster."
+  },
+  {
+    "id": "gen_012",
+    "name": "The Sécheron Plane",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "roughly 150-200 years",
+    "age_min": 150,
+    "age_max": 200,
+    "girth_cm": 636,
+    "location": {
+      "address": "A park green space off Avenue de France, Sécheron",
+      "latitude": 46.21776201484226,
+      "longitude": 6.151612193450857,
+      "neighbourhood": "Sécheron"
+    },
+    "verified_sources": [
+      "https://sitg.ge.ch/arcgis/rest/services/SIPV_ICA_ARBRE_ISOLE (SITG cantonal isolated-tree inventory, no_inventaire SEVE_176607, circumference 636cm, height 38m, crown 33m, vitality Bon)"
+    ],
+    "access": "Free, register situation field records it as standing in a park/square/green space, open at any time",
+    "transport": "Short walk from Gare Cornavin or the Sécheron rail stop",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register-only: single source, flagged rather than dropped. A large, healthy London plane (Bon vitality, 38m tall, 33m crown spread), girth 636cm. Could not pin down which named park this sits in from the sources checked this pass (Avenue de France borders several green spaces in Sécheron, including Mon Repos and Perle du Lac, and the road itself is the only landmark Nominatim returned); the address is stated honestly as a park off Avenue de France rather than guessed. No planted date in the register at all (planted_is_placeholder_date true, meaning the field is simply empty), so age here is derived from girth against the already-published Place du Cirque Plane (gen_006, same species, 425cm girth at about 120 years, roughly 3.5cm/year), giving a broad 150-200 year band. A future pass could tighten both the park name and the age with a single site visit or a city parks department query."
+  },
+  {
+    "id": "gen_013",
+    "name": "The Service Tree of Chambésy",
+    "species": "Service Tree (Sorbus domestica)",
+    "age_estimate": "about 60 years",
+    "age_min": 55,
+    "age_max": 65,
+    "girth_cm": 247,
+    "location": {
+      "address": "Route de Pregny, near Parc de l'Impératrice",
+      "latitude": 46.22973607656609,
+      "longitude": 6.138066278097535,
+      "neighbourhood": "Chambésy"
+    },
+    "verified_sources": [
+      "https://sitg.ge.ch/arcgis/rest/services/SIPV_ICA_ARBRE_ISOLE (SITG cantonal isolated-tree inventory, no_inventaire 45, circumference 247cm, vitality Bon, planted 1966-04-01)"
+    ],
+    "access": "Free, register situation field records it as standing in a park/square/green space, open at any time",
+    "transport": "Bus toward Chambésy/Pregny, or roughly 25 minutes on foot from the botanical garden",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register-only: single source, flagged rather than dropped. Sorbus domestica (true service tree) is a genuinely rare species in Switzerland, worth including on rarity rather than age; this is the youngest tree in this batch by a wide margin. The register's planted date, 1966-04-01, carries a real month rather than landing on January 1st, which BRIEF_RESEARCH.md flags as the pattern a genuine record shows and a placeholder does not, so this date is used directly: age about 60 years in 2026. Sits roughly 500m from the Tulip Tree of Parc de l'Impératrice candidate (gen_011) and about 660m from the published Botanical Garden Plane Trees (gen_004), part of the same loose northern cluster. No independent second source found this pass for the species or the date; a park department record or a botanical survey would settle it."
+  },
+  {
+    "id": "gen_014",
+    "name": "The Stone Pine of Parc des Eaux-Vives",
+    "species": "Stone Pine (Pinus pinea)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 280,
+    "location": {
+      "address": "Parc des Eaux-Vives, near Chemin de Plonjon",
+      "latitude": 46.209528210439316,
+      "longitude": 6.171388446780825,
+      "neighbourhood": "Eaux-Vives"
+    },
+    "verified_sources": [
+      "https://sitg.ge.ch/arcgis/rest/services/SIPV_ICA_ARBRE_ISOLE (SITG cantonal isolated-tree inventory, id_arbre 62525, circumference 280cm, height 19m, crown 17m, vitality Excellent)"
+    ],
+    "access": "Free, open park at any time",
+    "transport": "Bus or a 15-20 minute walk from the centre along the lakefront",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register-only: single source, flagged rather than dropped. An umbrella-shaped stone pine in Excellent vitality, distinct silhouette against the cedars and planes that dominate this cluster (species variety pick, per this pass's brief). No planted date in the register (field empty, not even a placeholder), and no published growth-rate figure for this species in this climate was found this pass to derive a defensible band from, so age is left empty rather than guessed; a reader or a later pass can settle it. About 65m from the Bald Cypress candidate (gen_009) and part of the same short walk through Parc des Eaux-Vives alongside the published Grange Cedar (gen_003)."
+  }
+]

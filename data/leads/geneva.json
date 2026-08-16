@@ -1,0 +1,16 @@
+{
+  "city": "geneva",
+  "leads": [],
+  "blocked": [
+    {
+      "reason": "Likely duplicate of already-published gen_002 (Cedars of Parc Beaulieu). SITG register entry: Cedrus libani, circumference 680cm, planted 1735-01-01, vitality Bon, at (46.21416,6.13736), 0.9km from centre. Within about 70m of gen_002's published coordinates (46.2147406,6.1377497), and 1735 matches the Beaulieu cedars' documented planting story exactly (Bernard de Jussieu seed gift to Baron de Sellon). Almost certainly one of the two Beaulieu cedars already on the site, not a new tree. Do not republish without checking gen_002's story against this specific register id first.",
+      "species": "Cedrus libani",
+      "coordinates": [46.21416, 6.13736]
+    },
+    {
+      "reason": "Likely duplicate of already-published gen_003 (The Grange Cedar). SITG register entry: Cedrus libani, circumference 743cm, vitality Médiocre, no planted date, at (46.20597,6.16552), 1.5km from centre. About 154m from gen_003's published coordinates (46.2060984,6.1675085); gen_003's own story cites 762cm girth and ~25m height from a 2019 monumentaltrees.com measurement for a cedar 'near the main house' in Parc La Grange, which is the same specimen type and location this register entry describes (register coordinates for large park trees are not always pinpoint-exact). Treat as the same tree measured differently rather than a second giant cedar until proven otherwise.",
+      "species": "Cedrus libani",
+      "coordinates": [46.20597, 6.16552]
+    }
+  ]
+}

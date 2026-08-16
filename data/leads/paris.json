@@ -60,6 +60,15 @@
       "latitude": 48.86857,
       "longitude": 2.31333,
       "reason": "Register-listed (girth 210cm, height 22m, register_id 307478) in the same garden as this pass's par_019 (sequoia) and par_020 (twin planes), so it would cost zero extra walking distance if verified. Not delivered: searches for this specific incense cedar turned up only generic species pages and one passing mention that Calocedrus specimens exist 'a few steps from the Champs-Elysees', with no age, no specific corroboration of this exact designated tree, and the paris.fr page for the garden (fetched directly) does not mention it by name. Only one source (the register) currently supports this entry, short of the two-source bar. A future pass could try the capgeo.sig.paris.fr per-tree PDF fact sheet for register_id 307478."
+    },
+    {
+      "name": "Chene chevelu (Turkey Oak), Square Rene-Le Gall",
+      "species": "Turkey Oak (Quercus cerris)",
+      "register_girth_cm": 190,
+      "place": "Square Rene-Le Gall, 1 Rue Emile Deslandres, 75013 Paris",
+      "latitude": 48.83328754283984,
+      "longitude": 2.350246664924597,
+      "reason": "Register-listed (girth 190cm, height 18m, register_id 104840) in the same square as par_031 (the horse chestnut), about 300m away, so it costs no extra walking distance if verified later. Not delivered: only the register itself was found as a source this pass, targeted searches for this specific oak returned generic Quercus cerris species pages rather than anything about this individual tree. Short of the two-source bar. A city per-tree PDF fact sheet exists at capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/104839.pdf for a nearby-numbered Chene chevelu register entry (unclear if same tree, id is 104839 not 104840); a future pass with a PDF-reading tool could check it as a second source, noting it likely derives from the same underlying city register rather than being truly independent."
     }
   ],
   "blocked": [
@@ -149,7 +158,7 @@
       "species": "Turkey Oak (Quercus cerris)",
       "register_girth_cm": 56,
       "place": "Place de la Republique, 75010 Paris",
-      "latitude": 48.86830,
+      "latitude": 48.8683,
       "longitude": 2.36319,
       "reason": "Too young to qualify. Register gives an explicit planting date of 2017, girth only 56cm, height 7m: a 9-year-old street tree, not a genuinely old or visually spectacular specimen. Never ship as a remarkable/ancient entry; the register's own 'remarkable tree' designation here appears to be about species diversity or civic planting rather than age or stature. Not re-checked in future passes unless the register itself corrects the planting year."
     },
