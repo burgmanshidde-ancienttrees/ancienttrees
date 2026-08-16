@@ -1948,6 +1948,13 @@
         "note": "11 stories, 2 best_time. The pass caught two of its own inputs: tro_002 shipped as English Oak and would have failed hard rule 9 against 64 live Pedunculate Oak entries, and a Kew Gardens 'pre-colonization' framing that does not survive the arithmetic (220 years from 2026 is 1806). Tokens are the harness's measured figure, not the agent's 61k self-estimate.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "canada",
+        "kind": "session",
+        "tokens": 0,
+        "trees": 0,
+        "note": "Session work, not logged by an agent: wrote data/countries/canada.json (Contract G intro from Montreal/Quebec City/Toronto's own trees, Dutch elm disease thread), reran city_queue.py to fix a drifted CITY_QUEUE.md, verified build/qa/preflight/superlatives clean. Dispatched a separate verify pass on krakow (kind logged by that agent)."
       }
     ]
   }
