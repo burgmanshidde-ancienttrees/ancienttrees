@@ -17,8 +17,8 @@
   {
    "place": "Montreal",
    "country": "Canada",
-   "status": "stalled",
-   "note": "ville.montreal.qc.ca/siteofficieldumontroyal/arbres-remarquables reads as a page about Mont Royal's remarkable trees rather than a dataset; donnees.montreal.ca carries the full public-tree inventory, which the semantic filter forbids. Next: check whether the Mont Royal page lists individual trees with locations, and whether Espace pour la vie publishes its own."
+   "status": "blocked",
+   "note": "SCOUTED 2026-08-16. Montreal has a real curated register and it is not on the open-data portal: montroyal.montreal.ca/inventaires, the City's own Site officiel du Mont-Royal, carries 63 individual arbre-remarquable pages, each with per-tree coordinates, the property owner, a planting period, species notes and a written statement of dendrological and cultural interest. Quality is comparable to Sydney's. BLOCKED: montroyal.montreal.ca/credits states '(c) Tous droits reserves, Ville de Montreal', with no reuse terms anywhere on the site. Deliberately NOT scraped, unlike Toronto: Toronto's was an open API with no stated licence, this is website content with an explicit all-rights-reserved notice, and copying the compilation is not the same act as querying an open endpoint. donnees.montreal.ca carries only the full public-tree inventory, which the semantic filter forbids. Next: licence ask to the Bureau du Mont-Royal."
   },
   {
    "place": "Sydney",
