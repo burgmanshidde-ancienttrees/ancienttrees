@@ -181,12 +181,12 @@ so qa.py fails the deploy when the table and the json disagree.
 |---|---|---:|---:|---:|---:|---:|---:|---:|---|
 | 1 | Toronto | 23.84 | 411,011 | - | - | - | - | 10 | predicted (travel demand) |
 | 2 | Montreal | 22.81 | 315,322 | - | - | - | - | 10 | predicted (travel demand) |
-| 3 | Aarhus | 20.92 | 52,722 | 7 | - | 1 | - | 10 | predicted (travel demand) |
-| 4 | Sydney | 19.69 | 305,304 | - | - | - | - | 10 | predicted (travel demand) |
-| 5 | Brisbane | 12.73 | 162,602 | 10 | - | 1 | 186 | 10 | predicted (travel demand) |
-| 6 | Frankfurt | 18.06 | 150,379 | - | - | - | - | 10 | predicted (travel demand) |
-| 7 | Perth | 16.42 | 180,478 | - | - | - | - | 10 | predicted (travel demand) |
-| 8 | Vilnius | 14.80 | 113,188 | - | - | - | - | 10 | predicted (travel demand) |
+| 3 | Vilnius | 14.80 | 113,188 | - | - | - | 34 | 10 | predicted (travel demand) |
+| 4 | Aarhus | 20.92 | 52,722 | 7 | - | 1 | - | 10 | predicted (travel demand) |
+| 5 | Sydney | 19.69 | 305,304 | - | - | - | - | 10 | predicted (travel demand) |
+| 6 | Brisbane | 12.73 | 162,602 | 10 | - | 1 | 186 | 10 | predicted (travel demand) |
+| 7 | Frankfurt | 18.06 | 150,379 | - | - | - | - | 10 | predicted (travel demand) |
+| 8 | Perth | 16.42 | 180,478 | - | - | - | - | 10 | predicted (travel demand) |
 | 9 | Melbourne | 9.64 | 267,898 | 12 | - | 2 | 397 | 10 | predicted (travel demand) |
 | 10 | Los Angeles | 14.41 | 665,559 | - | - | - | - | 10 | predicted (travel demand) |
 | 11 | Cambridge | 14.33 | 97,974 | 5 | 2 | 1 | - | 10 | measured |
