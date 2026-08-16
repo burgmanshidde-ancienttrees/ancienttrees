@@ -13,6 +13,83 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-08-16
+
+Reviewed since the last review commit (`e33ef1f`, 2026-08-15 06:59 UTC): 101
+commits, a full day of night-run and session work. New cities: Quebec City
+(6), Poznan (6), Brno (7), Wroclaw (4), Melbourne (8, then 12), Aarhus (7),
+Brisbane (8), Sorrento (4). Deepened: Potsdam (4, then 6), Bergamo (8),
+Cordoba (10 to 15). Register imports for Canada, Massachusetts, Poland,
+Czechia, Switzerland. Product/infra: night-run self-observability
+(`run_health.py`), the travel-demand rescore and 19-city pause, a
+southern-hemisphere phenology fix, a Wikipedia coordinate-lookup fix, a
+focus-ring CSS fix. Ran `python3 scripts/qa.py` (1896 pages, clean) and
+`python3 scripts/superlatives.py` (355 claims, no collisions) against the
+built site.
+
+**BLOCKER — Potsdam republishes two of Berlin's already-live Pfaueninsel
+trees as separate entries, under different names and ids.** `data/cities/
+potsdam.json` pot_005 ("The Door Oak of Pfaueninsel", 52.430667,13.122139)
+and pot_006 ("The Schlosswiese Oak of Pfaueninsel", 52.431453,13.120752) sit
+6-12 metres from Berlin's already-published `data/cities/berlin.json`
+ber_012 ("The Tuereiche (Door Oak) of Pfaueninsel", 52.430565,13.122087) and
+ber_011 ("The Great Oak of Pfaueninsel", 52.4315,13.1207). Both pairs cite
+the same source (baumkunde.de/baumregister/6402 for the door-oak pair;
+baumkunde.de/baumregister/2135 plus the same Berlin Naturdenkmal PDF for the
+other), describe the same door cut into the same trunk, the same ~250-year
+age and the same meadow below the Schloss. This is one physical tree, live
+twice, under two ids, two names, two cities, two "verified_sources" lists
+and (per the FAQ) two different girths/measurement dates cited independently.
+A confirmed global coordinate sweep of every published city (60m radius,
+cross-city only) found no other instance; this is contained to these two
+pairs, not a systemic pattern.
+
+Why it matters, named against the corpus rather than taste: it breaks the
+collect mechanic PRINCIPLES.md #2 calls the retention moat (a visitor can
+"collect" the same trunk twice under two ids and two names, and the two
+pages disagree about which city it is in), and it is the same class of
+mistake CLAUDE.md's 2026-08-05 ruling was written to stop ("match places by
+distance, never by name") happening one layer up, to a live tree rather than
+a research candidate. It is also self-inflicted and foreseeable: CURATION.md
+2026-08-15 ("Potsdam's staged register candidates are all in Berlin, not
+Potsdam") already flagged this exact Glienicke/Pfaueninsel supply as
+Berlin's, not Potsdam's, and left it unshipped for exactly this reason; a
+later pass shipped the Pfaueninsel pair anyway, honestly labeling them as
+standing in Berlin (the FAQ says so, and that half is good practice) but
+without checking them against Berlin's own already-published tree list
+first. Potsdam's other four trees (pot_001-004, at Jagdschloss/Schlossgarten
+Glienicke and Volkspark Klein-Glienicke) do not duplicate anything in
+Berlin's file and are not implicated.
+
+The fix is a run's to make (retire one side of each duplicate, most likely
+pot_005/pot_006, since Berlin published first and Potsdam's own FAQ already
+concedes these are "not actually in Potsdam"; reassign or drop the ids per
+hard rule 3 on published URLs). What is missing from the toolchain, and
+where a rule that fails on two different days should become a check
+(CLAUDE.md's own ratchet): `scripts/superlatives.py` catches two pages
+claiming the same crown; nothing catches two pages claiming the same trunk.
+A cross-city proximity check (same shape as the sweep above, maybe 50m) run
+in `qa.py` or as its own script would have caught this at build time.
+
+**Nothing else found at BLOCKER or WARN.** Spot-checked and clean: Sorrento
+(day-trip framing to Piano di Sorrento is honest in every location field,
+matches the Cork/Fota and now-established pattern), Brisbane and the new
+Australia country page (no superlative collision between Melbourne's and
+Brisbane's oldest-tree estimates, checked deliberately per the commit
+message and confirmed), Bergamo's unconfirmable horse-chestnut entry
+(bgm_008, correctly shipped per the 2026-08-06 "a tree that cannot be
+re-confirmed does not hold a city back" ruling, with the uncertainty stated
+plainly and a reader asked to check), Quebec City's unattributed
+"250-year-old red oak" newspaper claim (correctly left unresolved rather
+than bridged onto a specific tree, per the 2026-08-13 bridge-claim rule),
+and the Brno hospital-grounds tree (brq_005, satisfies all three of hard
+rule 10's loosened access tests with an honest access line). All spot-
+checked new trees carry 2+ sources, an honest `location_precision`, and no
+fabricated ages or sizes. No em dashes, banned words or builder-speak found
+in the reviewed pages.
+
+---
+
 ## 2026-08-15
 
 Reviewed since the last review commit (`609804b`, 2026-08-14 09:49 UTC): 80
