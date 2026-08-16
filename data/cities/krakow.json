@@ -3,15 +3,19 @@
   "country": "Poland",
   "status": "needs_curation",
   "oldest_tree_id": "kra_002",
-  "intro": "Krakow's most remarkable trees cluster oddly close together: three of the four grow a few dozen metres apart inside Poland's oldest botanical garden, founded in 1783, including an oak whose folklore age of 500 years turned out, once someone finally measured it, to be less than half that. The fourth survives for a different reason: a roadside oak in Borek that one devoted neighbour spent his life protecting from occupying soldiers and road crews alike. Krakow's 362 registered natural monuments are mostly ordinary; these four are the exceptions worth the walk.",
-  "meta_description": "Krakow's most remarkable trees: the Jagiellonian Oak, Poland's oldest black locust, the Sniadecki dogwoods, all in one garden, and the roadside Henryk Oak.",
-  "question_answer": "Krakow's oldest tree is generally considered the Henryk Oak in the Borek Falecki district, estimated at around 240 to 250 years old and named after Henryk Bartyzel, the neighbour who protected it from felling for most of the 20th century. It stands beside a road Austrian authorities cut through its original forest in 1790.",
+  "intro": "Six of Krakow's trees stand on or beside Planty, the park ring laid out in the 1820s where the medieval walls came down, and they follow each other at a few hundred metres: a plane thicker than the nine others the city protects, a three-trunked ginkgo on the register since 1968, an oak that was protected a decade before its square was named. Three more grow in Poland's oldest botanical garden, founded in 1783, a short walk east of the ring. The oldest of all sits six kilometres south, saved by one neighbour.",
+  "meta_description": "Krakow's most remarkable trees: six on the Planty park ring in one walk, three in Poland's oldest botanical garden, and the roadside Henryk Oak.",
+  "question_answer": "Krakow's oldest tree is the Henryk Oak in Borek Falecki, roughly 240 to 250 years old, beside ul. Zakopianska about six kilometres south of the Old Town. It is named after Henryk Bartyzel, the neighbour who kept it from being felled for most of the 20th century. That crown rests on the best evidence anyone has rather than on a settled measurement: the ages of the big protected trees on the Planty ring are calculated from trunk girth rather than read from records, and on girth alone the plane by the Philharmonic could be older.",
   "question_meta": "The Henryk Oak in Borek Falecki, roughly 240 to 250 years old, is Krakow's oldest tree, named for the neighbour who spent decades protecting it.",
-  "question_context": "The Henryk Oak is the last living fragment of a pine-and-oak forest that once covered the village of Borek, on Krakow's southern edge, the same wood that gave the settlement its name (bor being an old Polish word for pine forest). It became a roadside tree in 1790, not long after Poland's first partition, when Austrian authorities drove the new highway from Vienna to Lwow directly through the old stand, leaving this one oak standing at the edge of what became one of the busiest streets in the district. For most of the 20th century, one man kept it that way: Henryk Bartyzel lived beside the tree from 1923 until 2010, intervening when occupation authorities ordered it felled during the Second World War and again through decades of routine road works that might otherwise have taken it out. A civic council named the tree in his honour the same year he died, and in 2017 a community project involving more than 90 volunteers restored the ground around its base and reopened it properly to the public. It represented Krakow for the first time in Poland's national Tree of the Year contest the following year.",
+  "question_context": "The Henryk Oak is the last living fragment of a pine-and-oak forest that once covered the village of Borek, on Krakow's southern edge, the same wood that gave the settlement its name, bor being an old Polish word for pine forest. It became a roadside tree in 1790, not long after Poland's first partition, when Austrian authorities drove the new highway from Vienna to Lwow through the old stand. For most of the 20th century one man kept it standing: Henryk Bartyzel lived beside the tree from 1923 until 2010, intervening when occupation authorities ordered it felled during the Second World War and again through decades of routine road works. A civic council named the tree in his honour the year he died, in 2017 more than 90 volunteers restored the ground around its base, and the following year it went into Poland's national Tree of the Year contest. One caveat belongs with the ranking. This oak is among the few trees in the city anyone has put a number on. The protected veterans on the Planty ring carry ages worked out from trunk girth, and two of them have no age at all.",
   "faq": [
     {
       "q": "What is the oldest tree in Krakow?",
-      "a": "The Henryk Oak in the Borek Falecki district, estimated at 240 to 250 years old, named for Henryk Bartyzel, the neighbour who protected it for decades."
+      "a": "The Henryk Oak in the Borek Falecki district, roughly 240 to 250 years old, named for Henryk Bartyzel, the neighbour who protected it for decades. It holds the title partly because it is one of the few Krakow trees anyone has actually dated."
+    },
+    {
+      "q": "Can you see Krakow's protected trees in one walk?",
+      "a": "Most of them, yes. Six stand on or just off Planty, the park ring around the Old Town, spread over about 1.2 kilometres from the ash on ul. Straszewskiego to the lime on ul. Krowoderska, all free and open at any hour. Three more grow in the Jagiellonian University's Botanical Garden, a short walk east of the ring, which charges a modest entry fee. The Henryk Oak is the outlier, six kilometres south in Borek Falecki, reachable by tram."
     },
     {
       "q": "How old is the Jagiellonian Oak really?",
@@ -20,10 +24,6 @@
     {
       "q": "Where is Poland's oldest black locust tree?",
       "a": "In the Jagiellonian University's Botanical Garden, in front of Collegium Sniadeckiego on the Kopernika Street side: 239 years old by a 2022 measurement, with a trunk 475cm around."
-    },
-    {
-      "q": "Is the Botanical Garden free to visit?",
-      "a": "No, entry is ticketed, though modestly priced. It is the only paid site among Krakow's trees here; the Henryk Oak stands free beside a public street."
     }
   ],
   "trees": [
@@ -118,7 +118,9 @@
       "notes": "The 'oldest confirmed black locust in Poland' claim, the 2022 measurements (239 years, 475cm circumference, 27m height) and the founding-era planting date are given directly by the Botanical Garden's own official page and repeated in a Gazeta Krakowska feature marking the garden's 240th anniversary in 2023; both agree without contradiction.",
       "location_precision": "approximate",
       "best_time": {
-        "months": [5],
+        "months": [
+          5
+        ],
         "label": "May, when it flowers in heavy white clusters",
         "kind": "flowers"
       }
@@ -152,10 +154,207 @@
       "notes": "Only one source found (the Botanical Garden's own 'oldest specimens' page), which itself presents the Sniadecki planting as tradition ('according to tradition') rather than documented fact; the age (c.1790, roughly 230 years) is the garden's own figure. Flagged for single-source attribution on the planting story specifically, though the trees' existence, species, and age are not in dispute.",
       "location_precision": "approximate",
       "best_time": {
-        "months": [2, 3],
+        "months": [
+          2,
+          3
+        ],
         "label": "February and March, when it flowers before its leaves appear",
         "kind": "flowers"
       }
+    },
+    {
+      "id": "kra_005",
+      "name": "The Filharmonia Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "estimated 150 to 270 years, from its girth",
+      "age_min": 150,
+      "age_max": 270,
+      "girth_cm": 520,
+      "location": {
+        "address": "Planty Krakowskie, near the Krakow Philharmonic (ul. Zwierzyniecka side), Krakow",
+        "latitude": 50.05971,
+        "longitude": 19.93384,
+        "neighbourhood": "Stare Miasto (Planty ring)"
+      },
+      "story": "Krakow protects ten London planes on the Planty ring, and this is the one that dwarfs the other nine. Its trunk measures 520 centimetres around, comfortably the largest girth in that group, which is what earned it a place on the city's natural monument register in 1997. Nobody has dated it. What exists is the girth, and running that figure through a published growth-factor method puts the tree somewhere between 150 and 270 years old. The band is deliberately wide. The calculation borrows its growth rate from a related American species because no factor for the London plane was found, and a tree standing in a city grows at a speed no formula can know. Read the number as an estimate taken off the trunk rather than a birth year.\n\nThe park underneath is better documented than the tree in it. Planty was laid out in the 1820s, after Krakow pulled down its medieval walls and ringed the Old Town with gardens instead. Nothing records when this plane went into that ground. Nor is the register any guarantee of survival: two other protected trees in the same part of the city, a red beech by the Archaeological Museum and a horse chestnut on ul. Podzamcze, were brought down by storms in February 2022 and July 2021.",
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie",
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.1111"
+      ],
+      "access": "Free, public park (Planty), open at all hours",
+      "transport": "Krakow Glowny railway station or Filharmonia tram/bus stops, short walk through Planty",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Girth 520cm and the 1997 designation come from Krakow's own natural monument registry list as reproduced on Polish Wikipedia, cross-checked against the independent GDOS/CRFOP register entry (PL.ZIPOP.1393.PP.1261011.1111, gid 72032). The age is DERIVED from girth using a published growth factor borrowed from American sycamore, the closest documented proxy for London plane; the 150-270 band reflects that proxy plus urban growing conditions and is not to be narrowed without a dendrochronological source. Largest girth of the ten protected London planes on the Planty ring.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "kra_006",
+      "name": "The Straszewskiego Ash",
+      "species": "European Ash (Fraxinus excelsior)",
+      "age_estimate": "estimated 150 to 220 years, from its girth",
+      "age_min": 150,
+      "age_max": 220,
+      "girth_cm": 375,
+      "location": {
+        "address": "ul. Straszewskiego 14, Krakow",
+        "latitude": 50.0577,
+        "longitude": 19.93309,
+        "neighbourhood": "Stare Miasto (Planty ring, west side near Wawel)"
+      },
+      "story": "European ash is one of the commonest trees in Poland and a thick one is not common at all. This specimen stands on the pavement of ul. Straszewskiego, on the western edge of Planty a few minutes below Wawel, and measures 375 centimetres around. That is what earned it a place on the city's natural monument register in 1987.\n\nIts age is arithmetic rather than record. The girth works out at roughly 119 centimetres of diameter, and a published growth factor returns something near 190 years from that. Two things keep it a range instead of a number. The factor is borrowed from green ash, the closest documented relative that has one, and no tape measure can see what two centuries of drought years, good years and street rebuilding did inside the trunk. Call it 150 to 220 years and leave it there. Only a core sample would settle it.\n\nThe species itself has had a hard three decades. A fungal dieback spreading west since the 1990s has thinned ash across Europe, killing young and old trees alike and making veterans of this size less ordinary every year than they used to be. This one is still standing, on a public pavement, free to walk up to at any hour.",
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie",
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.892"
+      ],
+      "access": "Free, roadside tree on public ground (ul. Straszewskiego, bordering Planty), open at all hours",
+      "transport": "Wawel tram/bus stops or Krakow Glowny railway station, short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Girth 375cm and the 1987 designation from Krakow's registry list as reproduced on Polish Wikipedia, cross-checked against GDOS/CRFOP (PL.ZIPOP.1393.PP.1261011.892, gid 72079). Age DERIVED from girth with the published growth factor for green ash, the closest documented proxy in the same genus; 150-220 band, not to be narrowed without a dendrochronological source.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "kra_008",
+      "name": "The Garncarska Ginkgo",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 275,
+      "location": {
+        "address": "ul. Garncarska, Krakow",
+        "latitude": 50.06266,
+        "longitude": 19.92712,
+        "neighbourhood": "Stare Miasto (Planty ring, west side)"
+      },
+      "story": "Three trunks rise from a single base on ul. Garncarska, and the number the register carries, 275 centimetres, belongs to the largest of them rather than to one trunk. The other two measure 203 and 175. Krakow listed the tree as a natural monument in 1968, decades earlier than most of the entries around it, which suggests somebody thought it unusual long before the modern register caught up.\n\nHow old is it? Nobody knows, and here guessing would be worse than saying so. The girth-to-age arithmetic that dates the oaks and limes on this walk needs a growth factor calibrated to the species, and no reliable one exists for ginkgo: the tree thickens at wildly different rates depending on cultivar, site and how much room its roots were given. So the age field stays empty on purpose. If you have seen a planting record for this stretch of Garncarska, or a photograph old enough to help, tell us.\n\nWhat it does reliably deliver is November. Ginkgo leaves turn from green to a flat butter gold and then let go almost all at once, often within a couple of days, which on a three-stemmed tree of this size means a great deal of gold hitting the pavement in one go.",
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie",
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.1067"
+      ],
+      "access": "Free, roadside tree on public ground (ul. Garncarska, bordering Planty), open at all hours",
+      "transport": "Teatr Bagatela tram stop or Krakow Glowny railway station, short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Three trunks from one base, girths 275cm, 203cm and 175cm, and the 1968 designation from Krakow's registry list as reproduced on Polish Wikipedia, cross-checked against GDOS/CRFOP (PL.ZIPOP.1393.PP.1261011.1067, gid 71989). girth_cm records the largest stem, not a single trunk. NO age given: no reliable species-appropriate growth factor exists for Ginkgo biloba, so an estimate would be a mismatched proxy rather than a derivation. The page asks readers for a planting record.",
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "November, when the crown turns butter gold and drops almost all at once",
+        "kind": "autumn colour"
+      }
+    },
+    {
+      "id": "kra_009",
+      "name": "The Bartoszewski Square Oak",
+      "species": "Pedunculate Oak, columnar form (Quercus robur 'Fastigiata')",
+      "age_estimate": "estimated 140 to 210 years, from its girth",
+      "age_min": 140,
+      "age_max": 210,
+      "girth_cm": 288,
+      "location": {
+        "address": "Skwer im. prof. Wladyslawa Bartoszewskiego (junction of ul. Basztowa, ul. Asnyka, ul. Garbarska and ul. Dunajewskiego), Krakow",
+        "latitude": 50.06596,
+        "longitude": 19.93536,
+        "neighbourhood": "Stare Miasto (Planty ring, north side)"
+      },
+      "story": "The oak was on the register ten years before the square had a name. Krakow protected it in 2008. The city council voted on 10 October 2018 to name the ground around it after Wladyslaw Bartoszewski, a Home Army member who survived Auschwitz, was honoured as Righteous Among the Nations and later served as Poland's foreign minister. It is his square, not his oak. Nothing in the record links the tree to the man beyond the address, and the dates rule out the tidier story.\n\nIt is an odd oak in its own right. This is a columnar cultivar of the pedunculate oak, which grows narrow and upright instead of spreading, closer in outline to a poplar than to the wide-crowned oaks most people picture when they hear the word. The trunk is 288 centimetres around, standing where four streets meet at the northern edge of Planty.\n\nIts age is calculated, not recorded. That girth gives about 92 centimetres of diameter, and the published factor for the white oak group returns roughly 180 years. Take the range, 140 to 210, and take it loosely: nobody has documented how fast a columnar cultivar thickens compared with an ordinary oak, which is uncertainty stacked on top of uncertainty.",
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie",
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.945",
+        "https://kosmider.krakow.pl/skwer-imienia-wladyslawa-bartoszewskiego-w-krakowie/"
+      ],
+      "access": "Free, public square, open at all hours",
+      "transport": "Poczta Glowna or Dworzec Glowny tram stops, short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Girth 288cm and the 2008 designation from Krakow's registry list as reproduced on Polish Wikipedia, cross-checked against GDOS/CRFOP (PL.ZIPOP.1393.PP.1261011.945, gid 72127). The square was named for Wladyslaw Bartoszewski by council vote on 10 October 2018, a decade after the tree's designation, per councillor Boguslaw Kosmider's site; no source connects the tree to Bartoszewski himself and the story does not. Age DERIVED from girth with the published white oak factor, band 140-210, widened further because a columnar cultivar's thickening rate against the straight species is undocumented.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "kra_010",
+      "name": "The Basztowa Turkish Hazel",
+      "species": "Turkish Hazel (Corylus colurna)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 165,
+      "location": {
+        "address": "Planty Krakowskie, near ul. Basztowa, Krakow",
+        "latitude": 50.06595,
+        "longitude": 19.94066,
+        "neighbourhood": "Stare Miasto (Planty ring, north-east side)"
+      },
+      "story": "Turkish hazel is not the shrub its name suggests. Corylus colurna is a proper forest tree, native to southeast Europe and Asia Minor, capable of 25 metres and a neat conical crown, which is why cities plant it along streets when they want something tough and tidy. Krakow's protected list runs heavily to oaks, limes and planes, so a hazel on it is an oddity, and this one stands in Planty itself beside ul. Basztowa, close to the main station.\n\nIt grows as two stems from one base, 165 and 120 centimetres round. The 165 is the larger stem rather than a single trunk, which is worth stating plainly: the two figures do not add together, and a two-stemmed tree reads as bulkier than either measurement on its own. The city registered it in 2008.\n\nIts age is not known. The growth-factor arithmetic used on the oaks and limes nearby needs a divisor matched to the species, and the only hazel figure in the standard tables is calibrated to common hazel, a multi-stemmed shrub with nothing like this tree's habit. Applying it would produce a number, not an estimate. If anyone holds a planting date for this corner of Planty, we would like to hear it.",
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie",
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.943"
+      ],
+      "access": "Free, public park (Planty), open at all hours",
+      "transport": "Dworzec Glowny (Krakow Glowny) tram/bus stops, short walk through Planty",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Two trunks from one base, girths 165cm and 120cm, and the 2008 designation from Krakow's registry list as reproduced on Polish Wikipedia, cross-checked against GDOS/CRFOP (PL.ZIPOP.1393.PP.1261011.943, gid 72125). girth_cm records the larger stem, not a single trunk. NO age given: the only published hazel growth factor is calibrated to common hazel (Corylus avellana), a shrubby species with a different habit, so applying it to Corylus colurna would be a mismatched proxy. The page asks readers for a planting record.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "kra_007",
+      "name": "The Krowoderska Lime",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "estimated 130 to 175 years, from its girth",
+      "age_min": 130,
+      "age_max": 175,
+      "girth_cm": 402,
+      "location": {
+        "address": "ul. Krowoderska 16, Krakow",
+        "latitude": 50.06811,
+        "longitude": 19.93718,
+        "neighbourhood": "Stare Miasto / Krowodrza border, north of the Old Town"
+      },
+      "story": "Four of the ages on this walk come off a tape measure rather than out of any record, and this is the only one where the arithmetic gets to use the tree's own species. The published growth factor for small-leaved lime is an exact match for what stands at ul. Krowoderska 16: a trunk 402 centimetres round, which converts to about 128 centimetres of diameter and returns roughly 150 years. Even then the honest form is a range, 130 to 175, because a growth factor describes an average lime rather than this one, and this one has spent its whole life in a street.\n\nPoles have a longer relationship with the species than most. Lipa is the Polish name for it, and lipiec, the word for July, comes from the same root, because July is when the lime flowers and the tree fills with bees loud enough to hear from the pavement. Villages planted them at churches and crossroads for centuries.\n\nThis one has been protected since 1987 and is a city tree by contrast, on a working street north of the Old Town rather than in the park ring. It marks the far end of the Planty loop, about 1.2 kilometres from the ash on ul. Straszewskiego at the other extreme.",
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie",
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.914"
+      ],
+      "access": "Free, roadside tree on public ground (ul. Krowoderska), open at all hours",
+      "transport": "Nowy Kleparz or Basztowa tram stops, short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Girth 402cm and the 1987 designation from Krakow's registry list as reproduced on Polish Wikipedia, cross-checked against GDOS/CRFOP (PL.ZIPOP.1393.PP.1261011.914, gid 72100). Age DERIVED from girth; the published growth factor for littleleaf linden is an exact species match, giving roughly 151 years, stated as 130-175. Not to be narrowed without a dendrochronological source.",
+      "location_precision": "confirmed"
     }
   ]
 }
