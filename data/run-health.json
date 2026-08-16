@@ -147,5 +147,25 @@
    "trees": 6,
    "logged": true
   }
+ ],
+ "schedule_changes": [
+  {
+   "on": "2026-08-16",
+   "from": "9 knocks x 60 min",
+   "to": "6 knocks x 90 min",
+   "ceiling": "540 min/day either way, a redistribution not an increase",
+   "also_shipped_same_day": [
+    "run_health.py releases a run's claims when the run ends (claim-and-die lockout)",
+    "city_queue.py --next prints which ranked cities have data to work from (4 of 29 did)"
+   ],
+   "baseline_night_2026-08-15": {
+    "runs": 8,
+    "minutes": 87.3,
+    "trees": 28,
+    "zero_tree_runs": 4,
+    "best_run": "03:27, hit the 60-min cap, 17 trees"
+   },
+   "review": "HIDDE ASKED FOR THIS ON 2026-08-16: analyse the next night against the baseline above and say whether it improved. Compare minutes used, trees, and how many runs produced nothing. Three things changed at once, so attribute carefully: fewer/longer runs, claim release, and the actionable-cities list."
+  }
  ]
 }
