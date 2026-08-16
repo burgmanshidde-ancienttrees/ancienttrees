@@ -568,9 +568,18 @@ def product_section(today):
         # The three funnels of FUNNELS.md, in step order. collect and share
         # died with the collect button (2026-08-14); walk-open/save/signin
         # arrived the same day.
+        # "worthit-not worth it" added 2026-08-16, and its absence had already
+        # cost us a reading. On 2026-08-15 a reader gave Prague's prg_007 a
+        # thumbs DOWN with the "wrong location" chip, which is the first time
+        # anyone used that control. The vote reached Supabase, a night run
+        # re-verified the pin and found no error, and the digest still reported
+        # "0 actions on 370 visits" the next morning, because the up-vote was
+        # named here and the down-vote was not. The comment above says the
+        # point of this list is that a never-fired action still gets a line;
+        # half a control was missing from it.
         for name in ("directions", "walk-open", "walk-start", "save",
-                     "worthit-worth it", "signin-link-sent", "app-cta",
-                     "waitlist-submit"):
+                     "worthit-worth it", "worthit-not worth it",
+                     "signin-link-sent", "app-cta", "waitlist-submit"):
             last.setdefault(name, None)
         for name in sorted(last, key=lambda k: (-counts.get(k, 0), k)):
             out.append("- %-12s %d yesterday, last %s" % (
