@@ -37,6 +37,24 @@
    "cities_touched": 0,
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-08-16T02:14:45+00:00",
+   "date": "2026-08-16",
+   "run_id": "31921447081",
+   "minutes": 3.8,
+   "turns": 35,
+   "denials": null,
+   "ended": "success",
+   "tokens": 3313292,
+   "claims_held": [
+    "brisbane",
+    "sorrento"
+   ],
+   "commits": 2,
+   "cities_touched": 0,
+   "trees": 0,
+   "logged": false
   }
  ]
 }
