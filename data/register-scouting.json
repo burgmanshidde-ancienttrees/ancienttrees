@@ -11,8 +11,8 @@
   {
    "place": "Toronto",
    "country": "Canada",
-   "status": "unscouted",
-   "note": "Named but not reached by the 2026-08-13 English-block pass; a Significant Tree Register programme was recalled from general knowledge and never checked. Wikidata holds only 1 tree within 15 km, so this is genuinely unknown rather than known-empty."
+   "status": "stalled",
+   "note": "SCOUTED 2026-08-16. The city's own open data has only the street-tree inventory, which the semantic filter forbids. The real source is the Ontario Heritage Tree Program (Forests Canada / Ontario Urban Forest Council), an ArcGIS FeatureServer behind their StoryMap: 112 trees province-wide with species, an age estimate and a Public/Private flag, 38 within 30 km of Toronto. Its ArcGIS item carries an empty licenseInfo, so it is saved as data/leads/toronto.json (27 public leads, 11 excluded as private land) rather than imported. Next: licence ask to Forests Canada in the next outreach batch."
   },
   {
    "place": "Montreal",
