@@ -1,0 +1,123 @@
+[
+ {
+  "id": "mtl_001",
+  "name": "The McGill Law Ginkgo",
+  "species": "Ginkgo (Ginkgo biloba)",
+  "age_estimate": "roughly 120 years",
+  "age_min": 100, "age_max": 140,
+  "location": {"address": "McGill University Faculty of Law grounds, corner of Peel Street and Doctor Penfield Avenue, Montreal", "latitude": 45.5048, "longitude": -73.5776, "neighbourhood": "Downtown / McGill campus"},
+  "verified_sources": [
+   "https://www.mcgill.ca/newsroom/fr/channels/news/la-recherche-de-larbre-le-plus-remarquable-de-montreal-268008",
+   "https://ici.radio-canada.ca/ohdio/premiere/emissions/gravel-le-matin/segments/reportage/22556/arbres-montreal-ginkgo-biloba"
+  ],
+  "access": "Free, on open McGill University campus grounds; the law faculty's outdoor grounds are publicly walkable",
+  "transport": "McGill or Peel metro station, roughly 10-15 minute walk uphill",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Two publishers report the same underlying reporting: a McGill Newsroom (French) piece and a Radio-Canada Ohdio segment ('A la recherche de l'arbre le plus remarquable de Montreal'), both citing Suzanne Hardy, a phytotechnician/botanist who has researched Quebec's remarkable trees for 25 years. She calls it possibly the first ginkgo of its kind planted in Montreal, planted by the Olmsted family (Frederick Law Olmsted, who designed Mont-Royal Park) roughly 120 years ago. Age is the expert's own stated estimate, not derived by us from girth (no girth recorded in either source). Location is address/intersection level (corner of Peel and Doctor Penfield, on the Faculty of Law's Chancellor Day Hall grounds); I have not mapped the exact trunk, hence approximate. No girth or height given in either source. Worth leading with: a botanist calling out this one tree by name as Montreal's most remarkable, and its link to Olmsted, who also designed Mont-Royal itself."
+ },
+ {
+  "id": "mtl_002",
+  "name": "The Bicentennial Red Oak of Mont-Royal",
+  "species": "Northern Red Oak (Quercus rubra)",
+  "age_estimate": "roughly 200 years",
+  "age_min": 180, "age_max": 220,
+  "girth_cm": 371,
+  "location": {"address": "Parc du Mont-Royal, along a secondary trail off the Olmsted Trail, in a stand of roughly 50-year-old white spruce, Ville-Marie borough", "latitude": 45.5040, "longitude": -73.5900, "neighbourhood": "Mount Royal / Ville-Marie"},
+  "verified_sources": [
+   "https://montroyal.montreal.ca/arbre-remarquable/chene-rouge-1"
+  ],
+  "access": "Free, in the publicly open Parc du Mont-Royal, accessible daily, no gate or ticket",
+  "transport": "Mont-Royal metro station, then roughly a 25-30 minute uphill walk via the park's trail network toward the Olmsted Trail area (or a shorter ride if using the park's own shuttle/bus service)",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Single source: Ville de Montreal's official Mont-Royal heritage site (montroyal.montreal.ca), which runs a documented dendrological survey of the park's and cemeteries' remarkable trees, with individually measured pages per specimen (this appears to be the city's own register-equivalent, not an outside register). DBH 118 cm at breast height, 200 cm at base; girth_cm derived as diameter x pi (118 x 3.1416 = 370.7, rounded 371). Age stated by the source as 'advanced relative to other specimens of the same species in the Montreal region', roughly 200 years; comparable pages on the same site explicitly date their DBH survey 'as of 2011', so the true DBH and age today are likely somewhat larger; I have widened the age band to account for this rather than taking the figure as exact-today. Grew naturally, predates the 1876 park; survived the 1954 'morality cuts' under Mayor Jean Drapeau. Condition: has a major trunk cavity from a lost primary branch, described as 'in the twilight of its life' but alive and standing on this live, current official page (no dead-tree flag, unlike the cemetery's red ash below, which the same site DOES flag when a tree dies). Multiple similarly-named oak pages exist on this site (chene-rouge, chene-rouge-0, chene-rouge-2) for other individual oaks in the park; this is the one with full published data I verified this pass, the others are leads. No independent second source found this pass despite searching Wikipedia, Les Amis de la Montagne (the park's own nonprofit, which only mentions red oak as a species present, not this specimen) and French-language press; worth a targeted follow-up search. Anecdote to lead with: one of the ten largest oaks in the park, found via a stand of white spruce planted decades after the oak itself, and it has outlived a mid-20th-century clearing campaign that removed much of the park's 'unruly' undergrowth."
+ },
+ {
+  "id": "mtl_003",
+  "name": "The Great Yew of Mount Royal Cemetery",
+  "species": "Japanese Yew (Taxus cuspidata)",
+  "age_estimate": "over 60 years",
+  "age_min": 60, "age_max": 80,
+  "girth_cm": 157,
+  "location": {"address": "Mount Royal Cemetery (Cimetiere Mont-Royal), standing isolated on a gentle slope with sparse gravestones, Outremont/Cote-des-Neiges side of the mountain", "latitude": 45.508, "longitude": -73.599, "neighbourhood": "Outremont"},
+  "verified_sources": [
+   "https://montroyal.montreal.ca/arbre-remarquable/if-japonais-0"
+  ],
+  "access": "Free; Mount Royal Cemetery is an active, operating cemetery open to the public during its posted daily visiting hours",
+  "transport": "Edouard-Montpetit metro station, roughly 15-20 minute walk; or enter via the chemin de la Foret / chemin Remembrance side of the cemetery",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Single source, the same Ville de Montreal Mont-Royal heritage survey as above. DBH 50 cm, base 55 cm; girth_cm derived as 50 x pi = 157. Height about 15 m, which the source calls exceptional for the species in this climate (typical local specimens reach only 5-6 m) and says it is 'the largest of its species on Mount Royal'. Some specialists quoted on the page believe it resulted from a graft of a male and female plant together, given its unusual reddish bark and very round, compact form. This is a DIFFERENT Japanese yew from the one recorded at the adjoining Notre-Dame-des-Neiges cemetery in the general landscape description of that cemetery (that one has no individual detail page found this pass; only this Mount Royal Cemetery specimen has full published dendrological data). Note for a future pass: the two cemeteries (Mount Royal Cemetery, Protestant/non-denominational, and Notre-Dame-des-Neiges, Catholic) directly adjoin each other on the mountain's flank, so do not conflate them when writing the story or the pin."
+ },
+ {
+  "id": "mtl_004",
+  "name": "The Wide Pine at the Cemetery Gate",
+  "species": "Austrian Black Pine (Pinus nigra var. austriaca)",
+  "age_estimate": "roughly 140 years",
+  "age_min": 130, "age_max": 155,
+  "girth_cm": 267,
+  "location": {"address": "Notre-Dame-des-Neiges Cemetery, center of the large open area at the main entrance, Cote-des-Neiges - Notre-Dame-de-Grace borough", "latitude": 45.50178, "longitude": -73.60608, "neighbourhood": "Cote-des-Neiges"},
+  "verified_sources": [
+   "https://montroyal.montreal.ca/arbre-remarquable/pin-noir-dautriche",
+   "https://montroyal.montreal.ca/paysage-cimetiere-notre-dame-des-neiges"
+  ],
+  "access": "Free; Notre-Dame-des-Neiges is an active, operating cemetery open to the public during its posted daily visiting hours",
+  "transport": "Cote-des-Neiges metro station, roughly 15 minute walk to the main gate",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Both sources are the same publisher (Ville de Montreal's Mont-Royal heritage site), so treat as one source in practice; no independent outside corroboration found this pass. DBH 85 cm, base 97 cm; girth_cm = 85 x pi = 267.0. Height only 7.5 m against an 18 m wide crown, twice as wide as tall, an unusual form the source calls out explicitly. Planted around 1870-1872 when the cemetery's administration bought thousands of trees to landscape the pathways during its first development phase. Trunk shows many small holes from a lesser spotted woodpecker. Anecdote to lead with: a pine shaped more like a mushroom than a pine, planted deliberately as the cemetery's own opening gesture 150 years ago and still marking the entrance today."
+ },
+ {
+  "id": "mtl_005",
+  "name": "The Last Elm of Mont-Royal",
+  "species": "American Elm (Ulmus americana)",
+  "age_estimate": "roughly 120 years",
+  "age_min": 110, "age_max": 135,
+  "girth_cm": 346,
+  "location": {"address": "Parc du Mont-Royal, near the Smith House parking area, on the margin of the property adjacent to the Olmsted Trail, Ville-Marie borough", "latitude": 45.5027, "longitude": -73.5932, "neighbourhood": "Mount Royal / Ville-Marie"},
+  "verified_sources": [
+   "https://montroyal.montreal.ca/arbre-remarquable/orme-damerique"
+  ],
+  "access": "Free, in the publicly open Parc du Mont-Royal, accessible daily, no gate or ticket",
+  "transport": "Mont-Royal metro station, then roughly a 20-25 minute uphill walk to Smith House via the park's trail network",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Single source, the Ville de Montreal Mont-Royal heritage survey. DBH 110 cm, base 128 cm; girth_cm = 110 x pi = 345.6, rounded 346. Called 'the largest American elm documented in Mont-Royal Park'. Likely grew naturally rather than planted. IMPORTANT PER BRIEF: this is exactly the species Montreal lost almost entirely to Dutch elm disease (the source itself says the city once had roughly 22,000 American elms before the disease devastated the population, and this tree is called one of the few survivors). I could not find a source dated after this page confirming it standing today, but the same official site actively redirects and relabels trees it knows to be dead (the cemetery's red ash below now resolves to a '-disparu' [vanished] page explaining it was felled in 2025), so the fact that this elm's page is NOT flagged that way is meaningful evidence the source itself still considers it alive. Flagged anyway per the brief's specific elm/ash caution; a future pass should do a fresh aliveness check (site visit report, recent photo, or a direct query to the park's Les Amis de la Montagne) before this is treated as fully confirmed alive."
+ },
+ {
+  "id": "mtl_006",
+  "name": "The McKenna Silver Maple",
+  "species": "Silver Maple (Acer saccharinum)",
+  "age_estimate": "roughly 150 years",
+  "age_min": 140, "age_max": 165,
+  "girth_cm": 581,
+  "location": {"address": "Notre-Dame-des-Neiges Cemetery, southeast section (plot ND 7002-9030), near chemin de la Cote-des-Neiges and chemin Remembrance, bordering a burial island", "latitude": 45.50178, "longitude": -73.60608, "neighbourhood": "Cote-des-Neiges"},
+  "verified_sources": [
+   "https://montroyal.montreal.ca/arbre-remarquable/erable-argente",
+   "https://montroyal.montreal.ca/paysage-cimetiere-notre-dame-des-neiges"
+  ],
+  "access": "Free; Notre-Dame-des-Neiges is an active, operating cemetery open to the public during its posted daily visiting hours",
+  "transport": "Cote-des-Neiges metro station, roughly 15 minute walk to the main gate, then a further walk within the grounds to the southeast section",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Both citations are the same publisher (Ville de Montreal), so effectively one source; no independent corroboration found this pass, though the age is independently anchored by a documented fact rather than girth alone (see below). DBH 185 cm, base 191 cm; girth_cm = 185 x pi = 581.2, rounded 581, the largest girth of any candidate found this pass and the second-largest tree by diameter in the cemetery. Age derivation: the tree predates the cemetery's 1907 incorporation and was planted, or at least already standing, on the private horticultural property of Patrick McKenna (1818-1912), an Irish immigrant who arrived in Montreal in 1847 and founded what the source calls Canada's oldest florist house in 1851; it stood as an ornamental feature on his land before the property became cemetery ground. This is a documented pre-1907 planting context (age-estimate method 2 in the brief), not a bare girth guess, though the exact planting year within McKenna's ownership (1847-1907) is not given, hence the wide band. Anecdote to lead with: a tree older than the cemetery around it, planted by a florist on what was then his own field, now the second-largest trunk on the grounds."
+ },
+ {
+  "id": "mtl_007",
+  "name": "The Honey Locust of Section B",
+  "species": "Honey Locust (Gleditsia triacanthos)",
+  "age_estimate": "roughly 100 years",
+  "age_min": 90, "age_max": 110,
+  "girth_cm": 204,
+  "location": {"address": "Notre-Dame-des-Neiges Cemetery, plot section B, Cote-des-Neiges - Notre-Dame-de-Grace borough", "latitude": 45.50178, "longitude": -73.60608, "neighbourhood": "Cote-des-Neiges"},
+  "verified_sources": [
+   "https://montroyal.montreal.ca/arbre-remarquable/fevier-epineux"
+  ],
+  "access": "Free; Notre-Dame-des-Neiges is an active, operating cemetery open to the public during its posted daily visiting hours",
+  "transport": "Cote-des-Neiges metro station, roughly 15 minute walk to the main gate, then a further walk within the grounds to section B",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Single source, the Ville de Montreal Mont-Royal heritage survey. DBH 65 cm, base 81 cm; girth_cm = 65 x pi = 204.2, rounded 204. Age given as 80-90 years 'as of 2011' (the source's own dating), so today's age is closer to 95-105; I have set the band to 90-110 to cover both readings. Age derivation is method 2 in the brief: the source says the planting date corresponds to a death date inscribed on the adjacent gravestone, i.e. planted as a private family commemoration, not a girth guess. Called 'the largest of eleven honey locusts in the cemetery' as of 2011. Displaced, asymmetrical crown oriented toward the distant Saint-Joseph Oratory, with a large old branch-loss scar; the species is noted for rot resistance and pollution tolerance. Anecdote to lead with: a tree planted to mark one specific grave, now the biggest of eleven honey locusts scattered through the same cemetery, leaning its whole crown toward the Oratory dome on the horizon."
+ }
+]
