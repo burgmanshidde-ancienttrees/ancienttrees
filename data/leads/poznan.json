@@ -2,47 +2,15 @@
   "city": "Poznan",
   "country": "Poland",
   "city_slug": "poznan",
-  "note": "Poznan shipped poz_001 to poz_006 on 2026-08-15 (four protected London planes on Plac Wolnosci, the Abakanowicz plane in the Zamek rose courtyard, the Zakrzewski silver maple). None of the leads below were delivered: they are the candidates the verification pass (2026-08-15, Poland GDOS register, trees within 5km of the centre) left behind, kept as stock for when Poznan grows past 6. Never rendered.",
+  "note": "Poznan shipped poz_001 to poz_006 on 2026-08-15 (four protected London planes on Plac Wolnosci, the Abakanowicz plane in the Zamek rose courtyard, the Zakrzewski silver maple). A verification pass on 2026-08-16 finished all four previously-flagged leads (Chrzanowski plane, the two Cytadela oaks, Krzysztof) and delivered them to data/research/poznan-verified.json as poz_007-poz_010, closing Poznan's gap to its target of 10; see LOG.md / data/agent-costs.json for that pass. One further candidate, the Kasserna Park oak, was also fully verified this pass (two sources, confirmed pin, confirmed public park) but held back deliberately to avoid overshooting the 10-tree target; it is kept below as a ready-to-ship lead for the next depth pass on Poznan.",
   "leads": [
-    {
-      "name": "Platan im. Bernarda Chrzanowskiego",
-      "species": "London Plane (Platanus x acerifolia)",
-      "lat": 52.39879165480603,
-      "lng": 16.90298908654469,
-      "status": "lead",
-      "why": "Named single-tree GDOS register entry, designated 2025-06-04 (very recent), 1.73km from the centre, roughly 1.5-2km from the verified Plac Wolnosci cluster so at the edge of walkable. Not verified this pass; needs a second source and access check. Source: near_city Poznan register entry, name_pl containing 'Chrzanowskiego'."
-    },
-    {
-      "name": "Dab Cytadelowcow Poznanskich",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "lat": 52.42200083836158,
-      "lng": 16.925696579863256,
-      "status": "lead",
-      "why": "Named oak dedicated to the soldiers of the Poznan Citadel, designated 2021-04-01, 1.74km from the centre, likely inside or beside Cytadela Park (a major public park). Historically resonant name, worth a look for a future pass or as the seed of a second Poznan cluster around the Citadel. Not verified this pass."
-    },
-    {
-      "name": "Krzysztof (dab)",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "lat": 52.38993242332902,
-      "lng": 16.91577564549605,
-      "status": "lead",
-      "why": "Named oak, designated 2017-12-05, 1.94km from the centre. Not verified this pass for time; needs a second source, address and access check."
-    },
-    {
-      "name": "Dab im. Gen. Czujkowa",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "lat": 52.42411234991874,
-      "lng": 16.93076354506202,
-      "status": "lead",
-      "why": "Named oak, designated 1979-06-10, 2.01km from the centre, near the Cytadela Park candidate above (about 0.8km apart), so the two could anchor a second walkable cluster there. Not verified this pass."
-    },
     {
       "name": "Dab Jadwigi Andegawenskiej (Kasserna Park)",
       "species": "Pedunculate Oak (Quercus robur)",
-      "lat": null,
-      "lng": null,
-      "status": "lead",
-      "why": "Girth 319cm, estimated age ~190 years per poznan.pl's 16.04.2024 'Nowe pomniki przyrody' article (the same piece that confirmed poz_005 and poz_006), standing in Kasserna Park on Osiedle Chrobrego, Piatkowo district. Outside this pass's 5km supply radius from the centre, so coordinates were not pulled from the register this pass. Good candidate for a future depth pass on Poznan or a standalone Piatkowo cluster; well documented already."
+      "lat": 52.455315506814436,
+      "lng": 16.911929169836604,
+      "status": "lead_verified_ready",
+      "why": "Fully verified 2026-08-16, held back only to avoid overshooting Poznan's 10-tree target this pass; ready to ship as-is on the next depth pass. Two independent sources: GDOS national register (gid 241335, designated 2024-05-09, CRFOP detail page blocked by an Incapsula bot-check to automated fetches, coordinates/date from the GDOS WFS record) and poznan.pl's 16.04.2024 'Nowe pomniki przyrody' article (the same piece that sourced poz_005/poz_006), which gives trunk circumference 319cm and an estimated age of ~190 years (as of the April 2024 council decision). Stands in Park Tadeusza Kasserna, a roughly 9-hectare public park on Osiedle Chrobrego, Piatkowo district (confirmed public via poznan.pl and local press covering its playground and sports facilities), about 5.4km from the city centre (outside this pass's original 5km supply radius, hence not delivered as a city-centre-cluster tree; it stands alone rather than joining the Plac Wolnosci or Cytadela clusters). Access: free, open public park. Transport: not confirmed this pass. location_precision: confirmed (register tree-level point)."
     }
   ],
   "blocked": []
