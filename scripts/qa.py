@@ -245,6 +245,48 @@ def check_save_flow_integrity():
     return out
 
 
+# The ninth ratchet check, and the class has now failed twice, which is the
+# threshold. On 2026-08-11 a run rendered a submitter's name on a tree page and
+# Hidde ruled it out absolutely, on any channel: "privacy technisch echt een no
+# go... ookal is het via formulier niet meer doen nooit". On 2026-08-16 the
+# Spanish tree template was found still PROMISING it, "y aparecerá en esta
+# página con tu nombre", on every photo-less Spanish tree page, while
+# /contribute said in English that we never publish a name. The site was
+# contradicting itself and offering something we must not deliver.
+#
+# A promise is worse than the act: it invites people to send a name expecting
+# publication. So this greps the built pages rather than the templates, because
+# what ships is what matters and a new template would have to be remembered.
+# Photo credits are deliberately not caught: "Photo: X (CC BY)" names a
+# photographer whose licence obliges the credit, which is a different thing.
+NAME_PROMISES = (
+    "con tu nombre",
+    "con su nombre",
+    "with your name",
+    "met je naam",
+    "met jouw naam",
+    "credited by name",
+    "we will credit you",
+)
+
+
+def check_no_name_promise(pages):
+    out = []
+    for page in pages:
+        try:
+            low = page.read_text(encoding="utf-8").lower()
+        except OSError:
+            continue
+        for pat in NAME_PROMISES:
+            if pat in low:
+                out.append(
+                    f"{page.relative_to(DIST)}: promises to publish a person's name ({pat!r}). "
+                    "We never publish a submitter's name, whatever channel it arrived through; "
+                    "a photographer's licence credit is the only name on this site."
+                )
+    return out
+
+
 def check_sitemap_dates():
     sm = DIST / "sitemap.xml"
     if not sm.exists():
@@ -382,6 +424,7 @@ def main():
     failures += check_no_strategy_in_workflows()
     failures += check_one_city_order()
     failures += check_sitemap_dates()
+    failures += check_no_name_promise(pages)
 
     if failures:
         print(f"QA FAILED: {len(failures)} problem(s) in {len(pages)} pages")
