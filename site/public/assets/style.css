@@ -1,3 +1,39 @@
+/* Gabarito, served from our own origin instead of fonts.googleapis.com.
+   Until 2026-08-16 Base.astro carried the Google Fonts <link>, which is a
+   render-blocking stylesheet on a host that is not ours: the browser had to
+   resolve fonts.googleapis.com, hand-shake, read the CSS, and only then
+   discover the actual font file on a THIRD host (fonts.gstatic.com). Two
+   fresh DNS+TLS round trips stood between a phone and its first paint, on a
+   site whose own server answers in 140ms and where 72 percent of search
+   clicks arrive on mobile.
+
+   The two subsets and their unicode-ranges are Google's own split, kept
+   deliberately: a reader in Bath downloads 34KB of latin and never fetches
+   the 12KB latin-ext, which only loads when a page actually prints a
+   Wroclaw or a Malaga spelling. font-display: swap is unchanged, so text
+   paints immediately in system-ui and reflows when the face arrives.
+
+   Gabarito is SIL Open Font License 1.1, which permits self-hosting; the
+   licence travels with the files in assets/gabarito-OFL.txt. Updating the
+   font means re-fetching both woff2 files from the css2 endpoint, since
+   Google versions the URLs (this is v9). */
+@font-face {
+  font-family: 'Gabarito';
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url(/assets/gabarito-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Gabarito';
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url(/assets/gabarito-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
   /* Direction A "Growth Rings" palette, chosen by Hidde 2026-07-27. Interim
