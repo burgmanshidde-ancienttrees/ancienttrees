@@ -634,3 +634,19 @@ subject). The address and then the whole domain went on the do-not-contact
 list, and the contact record is marked blocked with the reason so no future
 batch can pick it up. The juttepeer still needs the hofje itself or the Haags
 Hofjesberaad; no verified address yet.
+
+**And the second reply was the good kind of no (2026-08-16, Vrienden van Sonsbeek).**
+They did not decline the project, they declined being the right desk, and named
+the right one: Natuur Centrum Arnhem. That is the DUIC-to-Oud-Utrecht shape
+again, which is still the only press result this project has, so it is now
+twice that a referral has been worth more than an answer. Both mails went the
+same hour: two lines of thanks to Sonsbeek that leave the thread open, and a
+first mail to the Natuurcentrum opening with the name that referred us.
+The new contact is recorded in `data/outreach-contacts-nl-be.json` with its
+provenance, because a referral that lives only in a mail thread is lost the
+day the thread scrolls away.
+
+Worth noting for the machinery: the thank-you was the first mail ever sent to
+an address already in the register, and it went through the `resend_reason`
+door rather than around it. The register now says why that address has two
+mails, which is the whole point of the door.
