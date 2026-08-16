@@ -12,6 +12,26 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-16 (session) - Geneva 6 to 14, Paris 25 to 30, and the brief generator learns to read
+
+**Six cities and 35 trees today.** After four new cities, the last two were deepen passes chosen on demand rather than on rank: Geneva (55 impressions, 6 trees against a target of 20) and Paris (84 impressions, the highest of any page still under its target). Deepening a page people already find compounds; deepening one nobody finds was the measured waste of an earlier week.
+
+**Before either could run, `passcheck.py --brief` had to be fixed, and this is the most valuable thing in the entry.** Geneva's brief printed 204 lines of "(unnamed)" with no species, no girth and no age, because the extractor knew only the field names `species`, `girth_cm` and `age_register`, and Geneva's register uses `species_latin`, `circumference_cm` and `planted`. That is the worst possible failure for this particular tool: the entire argument for a register-led pass is that those fields arrive free, so a brief that cannot print them turns the cheapest kind of pass into the most expensive one, silently, with nothing looking broken. It now reads species from eight spellings, age from eight, and girth from whatever unit the register published, converting diameter and dbh with pi. **Vitality is new to the brief and is the most useful of the four**, because it is the register answering "is it alive" without a single fetch.
+
+**The date trap, found by probing before briefing, then held in both directions by the pass.** Geneva's `planted` field looks like a planting record and mostly is not: 22 entries carry exactly 1912-01-01, 5 carry 1962-01-01, the file already documented 1812-01-01 as a placeholder, and only 71 of 205 carry any date while 84 are flagged estimates. The rule handed to the pass was that any 01-01 date is an era rather than a planting, and a real month is likelier genuine because a placeholder does not pick a season. It then used 1966-04-01 and refused 1850-01-01, deriving that cedar's age instead by calibrating its 743 cm against our own Naville Cedar at a documented 722 cm and 206 years. Same species, same lake, better than any generic table, and the story says so outright. That is today's age ruling working without anyone restating it.
+
+**Geneva's eight.** The Venerable Oak of the Botanical Garden leads: 710 cm, dated 1719 by a City of Geneva museum-trail article whose inventory number matches the register's digit for digit, growing 186 years before the garden moved in around it, with a quiet perimeter drawn around its roots. The Naville Cedar is the one with a person in it, planted in the summer of 1820 by the mayor of Eaux-Vives to mark his son's birth. And gen_014 keeps no age at all, because its planting field is empty and no growth figure for stone pines this far north held up: the page asks the reader instead.
+
+**Paris's five open the 9th, 13th and 18th**, three of them 150 metres apart in Square Louise Michel below Sacre-Coeur. A refusal worth keeping: the Square Jean XXIII candidates stay leads, because that square has been shut since September 2023 for the Notre-Dame works, does not reopen before mid-2027, and an investigative piece documents another tree in it already felled during them.
+
+**The writing pass read both live city files before writing over them and caught three things I would not have.** The service tree is not Geneva's youngest (the official chestnut already claims that at about 11 years), the Port-Noir cedar is not its largest (gen_003 is 762 cm), and par_032 arrived named "Common Plane" against 119 live London Plane entries.
+
+**And the deploy failed once, on me.** Told about that species collision, I renamed par_032 to "London Plane (Platanus x hispanica)" to preserve the register's own binomial, without checking that the build's check runs BOTH ways. One edit made two clashes: it split "London Plane" across two scientific names against 120 live trees on acerifolia, and gave hispanica a second common name beside London's Baobab Group entry. Hard rule 9 names the pairing outright and the corpus was right. Fixed, redeployed, both pages verified live.
+
+**Girth now sits on 33 published trees, from 13 this morning.** That is the point of the instruction added today, and it came almost entirely from registers that were already imported and simply not being read.
+
+**FOR HIDDE:** nothing waits on you.
+
 ## 2026-08-16 - Night run 2026-08-16 11:11 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 16.7 minutes of its 60 minute window, 122 turns, ended clean (success). 11 commit(s), none of them a published tree. Claims left behind: krakow, which block the top of the queue until they expire.
