@@ -1,19 +1,35 @@
 ---
-// "Worth the visit?" — the vote-plus-correction control, Hidde's design of
-// 2026-08-14: one thumbs pair per tree, and a No opens four chips. The first
-// chip is an opinion and stays a vote; the other three are fact reports that
-// land in the same Supabase submissions table the /contribute form uses
-// (kind 'feedback'), where Step 0b picks them up. A dead or wrong-location
-// report gets checked the same day per the standing rules.
+// "Worth the visit?" — a vote, and beside it a separate way to report a problem.
 //
-// Convention (Google Maps, AllTrails): opinion and correction are one entry
-// point but separate signals, and the context is prefilled from the page, so
-// the reader never types a city or a tree name.
+// Split apart 2026-08-16 on Hidde's instruction: "je kunt een boom niet leuk
+// vinden of niet de moeite vinden zonder dat er iets mis is." The first version
+// (his own design of 2026-08-14) hung four chips off the thumbs-down under the
+// heading "What was wrong?", and one of those chips was "Not that special",
+// which is an opinion rather than a fault. So the control asked everyone who
+// simply was not impressed to file a fault report, and gave everyone who loved
+// the tree but found the pin wrong no way in at all.
 //
-// Votes are stored from day one and shown to nobody: at current volume a
-// count would be fake authority, and re-ranking waits until the numbers are
-// honest (DECISIONS.md 2026-08-14). One vote per tree per browser via
-// localStorage, the passport pattern.
+// The convention, checked against the standing references before rebuilding:
+// Google Maps keeps its rating and its "Suggest an edit" as two separate entry
+// points; AllTrails separates the star rating from reporting conditions;
+// YouTube and Reddit separate the vote from Report. Everywhere, opinion and
+// error report are siblings, never nested. Nesting hides the report from the
+// people most likely to have one and interrogates the people least likely.
+//
+// So: thumbs are a pure vote, one tap, no follow-up. "Something's wrong" is its
+// own button that opens the fact chips, and "Not that special" is gone, because
+// the thumbs-down already says it. The two are independent: someone may vote up
+// and still report a wrong pin.
+//
+// Where a report goes is unchanged: the same Supabase submissions table the
+// /contribute form uses (kind 'feedback'), where Step 0b picks it up, and a
+// dead or wrong-location report gets checked the same day.
+//
+// Votes are stored from day one and shown to nobody: at current volume a count
+// would be fake authority, and re-ranking waits until the numbers are honest
+// (DECISIONS.md 2026-08-14). One vote per tree per browser via localStorage,
+// the passport pattern; the report carries its own separate key so a vote never
+// blocks a correction.
 interface Props {
   treeId: string;
   city: string;
@@ -21,19 +37,23 @@ interface Props {
   compact?: boolean;
 }
 const { treeId, city, treeName, compact = false } = Astro.props;
+const formLink = `/contribute?kind=correction&city=${encodeURIComponent(city)}&tree=${encodeURIComponent(treeName)}`;
 ---
 <div class={`worthit${compact ? " worthit-compact" : ""}`} data-tree={treeId} data-city={city} data-name={treeName}>
-  <span class="worthit-q">Been here? Worth the visit?</span>
-  <button type="button" class="worthit-btn" data-vote="up" aria-label={`Yes, ${treeName} was worth the visit`}>👍</button>
-  <button type="button" class="worthit-btn" data-vote="down" aria-label={`No, ${treeName} was not worth the visit`}>👎</button>
-  <span class="worthit-done" hidden>Thanks, counted.</span>
-  <a class="worthit-more" href={`/contribute?kind=correction&city=${encodeURIComponent(city)}&tree=${encodeURIComponent(treeName)}`} hidden>Add a detail (optional)</a>
+  <div class="worthit-row">
+    <span class="worthit-q">Been here? Worth the visit?</span>
+    <button type="button" class="worthit-btn" data-vote="up" aria-label={`Yes, ${treeName} was worth the visit`}>👍</button>
+    <button type="button" class="worthit-btn" data-vote="down" aria-label={`No, ${treeName} was not worth the visit`}>👎</button>
+    <span class="worthit-done" hidden>Thanks, counted.</span>
+    <button type="button" class="worthit-report" aria-expanded="false">Something's wrong</button>
+  </div>
   <div class="worthit-why" hidden>
-    <span class="worthit-q">What was wrong?</span>
-    <button type="button" class="worthit-chip" data-reason="not that special">Not that special</button>
+    <span class="worthit-q">What's wrong?</span>
     <button type="button" class="worthit-chip" data-reason="dead or gone">It's dead or gone</button>
     <button type="button" class="worthit-chip" data-reason="wrong location">Wrong location</button>
     <button type="button" class="worthit-chip" data-reason="could not reach it">Couldn't reach it</button>
-    <a class="worthit-chip worthit-chip-link" href={`/contribute?kind=correction&city=${encodeURIComponent(city)}&tree=${encodeURIComponent(treeName)}`}>Something else</a>
+    <a class="worthit-chip worthit-chip-link" href={formLink}>Something else</a>
   </div>
+  <span class="worthit-thanks" hidden>Thanks, we'll check it.</span>
+  <a class="worthit-more" href={formLink} hidden>Add a detail (optional)</a>
 </div>
