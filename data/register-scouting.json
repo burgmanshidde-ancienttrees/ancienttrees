@@ -29,8 +29,8 @@
   {
    "place": "Perth",
    "country": "Australia",
-   "status": "unscouted",
-   "note": "Named but not reached, 2026-08-13."
+   "status": "stalled",
+   "note": "SCOUTED 2026-08-16. The city's own open data has only 'Trees in the City', a public-tree inventory the semantic filter forbids. The real source is the National Trust of Western Australia's Significant Tree Register, published as a PDF (nationaltrustwa.com.au/wp-content/uploads/2025/02/National-Trust-Significant-Tree-Register-November-2024.pdf, readable, 64 entries parsed): code, common name, a count, and a street address. 24 entries are Perth metro, including the Fremantle Proclamation Tree. Several are avenues or groups (one of 73, one of 38) that fail the collectible-point test. NO coordinates, so every entry needs geocoding, and NO licence is stated; the National Trust WA is a charity, so this is a permission ask like the others. inHerit, the state heritage database, also carries 'Significant Trees' records but is explicitly All Rights Reserved and its entries are vague groupings including back-yard trees."
   },
   {
    "place": "Adelaide",
@@ -47,8 +47,8 @@
   {
    "place": "Los Angeles",
    "country": "United States",
-   "status": "unscouted",
-   "note": "Named but not reached, 2026-08-13."
+   "status": "empty",
+   "note": "SCOUTED 2026-08-16, and the verdict is that there is nothing of our kind to find. LA's 'protected tree' status is a SPECIES RULE, not a register: LAMC 46.00 protects any indigenous oak, western sycamore, laurel bay, southern black walnut, Mexican elderberry or toyon over 4 inches DBH. That is a rule about a category, so it names no individual tree and cannot be filtered into a candidate list. 'Heritage trees' designated by council resolution exist in the ordinance's wording but no published register of them was found. Wikidata holds 3 within 15 km. Route here is not a register at all: named individual trees via local sources, or nothing."
   },
   {
    "place": "Estonia",
