@@ -40,6 +40,11 @@
         "neighbourhood": "Massarelos"
       },
       "story": "This American tulip tree became one of Portugal's first individually protected trees in 1950, a legal status most of the country's current laws postdate. It grows beside Casa Tait, a 19th-century mansion inside the Jardins do Palácio de Cristal that once belonged to a British port wine family, and at more than 250 years old it predates both the mansion and the palace gardens built around it by a century or more. Liriodendron tulipifera is native to the eastern United States, named for the yellow-green, cup-shaped flowers it produces each late spring, blooms that only appear once a tree reaches real maturity and can go unnoticed entirely on a younger specimen. A second tulip tree grows nearby in the same grounds, over 40 metres tall, though it lacks this one's formal protection status and shouldn't be confused with it. Porto's oldest tulip tree survived the transformation of its surrounding grounds more than once: the Palácio de Cristal itself, the glass-and-iron exhibition hall that gave the gardens their name, was demolished in 1951 and replaced by the domed sports arena still standing today, a change that came one year after this tree's own protection was made permanent. Whatever else has come and gone around it, the tulip tree has stayed exactly where it was planted.",
+      "best_time": {
+        "months": [10, 11],
+        "kind": "autumn colour",
+        "label": "clear yellow, one of the most reliable autumn trees"
+      },
       "verified_sources": [
         "https://ambiente.cm-porto.pt/parques-e-jardins/jardins-do-palacio-de-cristal_3",
         "https://www.100milarvores.pt/2017/06/arvores-do-romantico-mais-de-250-anos-de-historia.html",
@@ -565,6 +570,11 @@
         "neighbourhood": "Lordelo do Ouro e Massarelos"
       },
       "story": "A yew with a trunk 5.8 metres around normally comes with a documented history. This one has none. Portugal's forest register took the measurement in 2020, classified the tree, and left the age column empty; the city council's announcement lists the yew among four protected specimens in the garden of the Palacete Burmester and gives no date either. That gap is better left open than filled in. Taxus baccata thickens slowly enough that trees of this girth elsewhere in Europe are routinely dated in the several hundreds of years, so it is reasonable to think this one is old. It is not honest to print a number. Yews also make their own dating difficult by hollowing at the centre as they age, taking with them exactly the rings anyone would want to count. What can be said plainly is this: the tree stands in a small garden on the Faculty of Sciences campus of the University of Porto, beside the Casa dos Livros and a few hundred metres from the Jardim Botânico do Porto, and the species is scarce in Portugal outside the northern mountains, which makes a specimen this size in a city garden unusual. Every part of it is poisonous except the red flesh around the seed. It is evergreen, so February looks much like August, which at least settles the question of when to come.",
+      "best_time": {
+        "months": [9, 10, 11],
+        "kind": "fruit",
+        "label": "red arils on female trees, the only part that is not poisonous"
+      },
       "verified_sources": [
         "ICNF national register (data/registers/portugal-icnf.json, processo AIP13121888I): girth 5.8m, last measured 2020, no age on file, lugar 'FCUP - Faculdade de Ciências da Universidade do Porto'",
         "https://ambiente.cm-porto.pt/destaque/porto-tem-mais-21-arvores-de-interesse-publico (Porto city council, Ambiente): confirms a yew among the four specimens classified together in the garden of Palacete Burmester on FCUP grounds"
@@ -662,6 +672,11 @@
         "neighbourhood": "Lordelo do Ouro e Massarelos"
       },
       "story": "Two official documents give this tree's waist as 5.24 metres and 7.75 metres. The register measured 5.24 at chest height in 2015. The 2021 news coverage of its classification gives 7.75 as the perimeter at the base. Both agree exactly on everything else, 31 metres tall with a 29 metre crown, so the gap is almost certainly about where the tape went rather than a disagreement about the tree.\n\nEither way it is a big tulip tree. Liriodendron tulipifera comes from the eastern United States, where it is the tallest hardwood of the Appalachian forest, and 31 metres is a serious height for one in Europe. The leaf is the giveaway from below: four lobes with the tip cut off square, as though someone had gone at it with scissors.\n\nNo age has ever been recorded for it, by the register or by anyone else.\n\nIt grows in the garden of Casa Allen, a 1920s house by the architect José Marques da Silva, now Casa das Artes and run by the Direção Regional de Cultura do Norte. The garden is genuinely open, with guided visits alongside the exhibition rooms, but it keeps the building's hours, which on most days do not begin until half past two in the afternoon. Turning up at eleven gets you a locked gate.",
+      "best_time": {
+        "months": [10, 11],
+        "kind": "autumn colour",
+        "label": "clear yellow, one of the most reliable autumn trees"
+      },
       "verified_sources": [
         "data/registers/portugal-icnf.json (processo AIP131218113I, classified 2021)",
         "https://www.porto.pt/pt/noticia/tulipeiro-dos-jardins-da-casa-allen-vai-ser-arvore-de-interesse-publico",
@@ -835,6 +850,11 @@
         "neighbourhood": "Paranhos"
       },
       "story": "This garden holds 96 plane trees, 57 camellias and 13 southern magnolias, and only the magnolias are protected. The set was classified in 2021, which means the state looked at everything growing in the Jardim de Arca d'Água and singled out the smallest group in it.\n\nFinding them takes a minute of looking. The garden covers 22,000 square metres and the register gives one coordinate standing in for all thirteen, so the pin here points at the garden rather than at the trees. They are not hard to pick out once you are inside. Magnolia grandiflora has thick dark leaves with a rust-brown felt on the underside, quite unlike the planes and the camellias around them, and in early summer the flowers are the size of a plate.\n\nNo age is recorded for them. The register gives one representative trunk at 2.43 metres round and leaves the rest blank, so the honest answer is that nobody has dated these trees.\n\nThe garden opened in 1928 in Paranhos, on ground named for its arca de água, the stone chamber where a spring is captured and held. The springs here supplied Porto with water for centuries before anyone thought to lay a bandstand and a playground over them.",
+      "best_time": {
+        "months": [5, 6],
+        "kind": "flowers",
+        "label": "huge fragrant white blooms, up to 30cm across, open through May and June"
+      },
       "verified_sources": [
         "data/registers/portugal-icnf.json (processo AIP13121083C, last measured 2020)",
         "https://www.timeout.pt/porto/pt/atraccoes/jardim-de-arca-dagua",
@@ -895,6 +915,11 @@
         "neighbourhood": "Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória"
       },
       "story": "Praça Pedro Nunes is small enough to cross in twenty seconds and holds four tulip trees, each about 22 metres tall. They were classified together as one group in 2005, standing beside the former Liceu D. Manuel II, and generations of pupils came out of that building into their shade.\n\nLiriodendron tulipifera is worth identifying from the pavement. The leaf looks as though someone cut the tip off with scissors, four lobes and a flat top, unlike anything else growing on a Porto square. The flowers are genuinely tulip-shaped, greenish yellow with an orange band, and genuinely hard to see, because they open high in the crown in early summer and face upward.\n\nThe register measured in 2004: trunks 3.6 metres round, 22 metres tall, crowns 17 metres across, and an age of 80, which puts the group near 100 now.\n\nOne thing to know before going. The register and a 2005 survey of Porto's classified trees are the only records of this group, and no recent article or dated photograph confirms that all four are still there. Four large trees in a central square are unlikely to have gone quietly, but the last written confirmation is twenty years old, and anyone standing in the square can settle it faster than any archive.",
+      "best_time": {
+        "months": [10, 11],
+        "kind": "autumn colour",
+        "label": "clear yellow, one of the most reliable autumn trees"
+      },
       "verified_sources": [
         "data/registers/portugal-icnf.json (processo KNJ3/049, classified D.R. n.º 6, II Série de 10/01/2005)",
         "https://dias-com-arvores.blogspot.com/2005/01/rvores-classificadas-do-porto.html"

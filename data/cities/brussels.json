@@ -40,6 +40,11 @@
         "neighbourhood": "Forest"
       },
       "story": "Brussels' own heritage inventory calls this oak probably the oldest tree of any kind in the entire region, and its evidence is a single number: 6.05 metres around the trunk, measured at chest height. That circumference translates, through standard oak growth tables, to an age close to four hundred years, since no planting record exists for a tree this old growing in what was once simply called the Kersbeekbosch, a wood already named in a document from 1648, a full century before anyone thought to record individual trees within it. A 20th century industrialist built a chateau and pleasure pavilion on the land and renamed it Parc des Eperons d'Or, but the commune of Forest only acquired the grounds in 1979 and opened them to the public in 1980, as Parc Jacques Brel. The oak, already three and a half centuries old by then, barely noticed the paperwork. At roughly 20 metres tall with a canopy shaped by centuries of unhurried growth, it now shares its park with joggers, a playground and Brussels' newer housing developments, a working class commune's public oak older than most of the buildings standing around it put together.",
+      "best_time": {
+        "months": [9, 10],
+        "kind": "fruit",
+        "label": "acorns drop, and a good mast year buries the ground in them"
+      },
       "verified_sources": [
         "https://www.woodwideweb.be/fr/atlas/12.html",
         "https://sites.heritage.brussels/fr/sites/169"
@@ -484,6 +489,11 @@
         "neighbourhood": "Sablon / Bruxelles-Ville"
       },
       "story": "Nobody plants a sycamore on purpose any more. It seeds itself into gutters and railway banks across Europe, grows fast, and gets cut down long before it can become anything, which is what makes the largest tree in this park worth looking up at: 32 metres of it, with a clean trunk running six metres before the first branch and a girth of 3.97 metres measured in 2026. The region's surveyors rank it the third thickest sycamore recorded anywhere in Brussels. It is also the reason the park feels bigger than its one and a half hectares. Parc d'Egmont is sealed on all four sides by buildings, the only public green space inside the old city walls with no street frontage at all, and a tree this tall pushes the sense of the place upward instead of outward. The sycamore has been in Belgium so long that most people take it for a native, though it arrived from the mountains of central Europe centuries ago and settled in as thoroughly as any local species. Its winged seeds spin down in September in numbers that would fill the whole park with seedlings if the gardeners let them.",
+      "best_time": {
+        "months": [9, 10],
+        "kind": "fruit",
+        "label": "winged seeds that spin down in pairs"
+      },
       "verified_sources": [
         "https://sites.heritage.brussels/fr/trees/6357",
         "https://www.woodwideweb.be/fr/atlas/3700.html"
@@ -514,6 +524,11 @@
         "neighbourhood": "Sablon / Bruxelles-Ville"
       },
       "story": "This cedar has spent its life pretending to be a broadleaf. Instead of the single straight column its species normally builds, its trunk divides low down into two enormous limbs, one leaning out over the back gardens of the Rue du Grand Cerf, the other reaching into the wooded corner of the park, and the resulting silhouette looks far more like an old beech than a conifer. Walk up to it and the disguise fails immediately: the resin smell is unmistakable, the needles come in tight rosettes rather than singly, and the cones sit upright on the branches like small barrels with their scales pressed flat. It measures 2.98 metres around and stands at the park's boundary rather than on its lawns, half visible from the street, which is probably why it is the least photographed of the park's registered trees. Cedars of Lebanon reached western European gardens in the seventeenth century, and the estates that could afford them planted them as statements. This one has outlived the statement. The palace beside it burned in 1892 and was rebuilt, the gardens were redrawn twice, the city bought the whole thing in 1918, and the cedar carried on splitting itself in two directions.",
+      "best_time": {
+        "months": [9, 10, 11],
+        "kind": "fruit",
+        "label": "upright barrel cones that sit on the branches like eggs"
+      },
       "verified_sources": [
         "https://sites.heritage.brussels/fr/trees/629",
         "https://www.woodwideweb.be/fr/atlas/36.html",
@@ -612,6 +627,11 @@
         "neighbourhood": "Sablon / Bruxelles-Ville"
       },
       "story": "The horse chestnut is one of the most planted trees in Europe and one of the rarest in the wild. Its entire natural range is a scatter of mountain ravines in northern Greece, Albania and North Macedonia, a few thousand trees in gorges, out of which sixteenth century collectors carried it to Istanbul, then to Vienna, then to everywhere. Conkers turned it into a children's institution across a continent; the wild population is small enough to be listed as threatened.\n\nThis one is 3.08 metres round with a crown fifteen metres across, on lawns closed in on all sides by the buildings of the Sablon. Brussels ranks it ninetieth of its species in the region, which for a tree this common is a respectable place to sit.\n\nBeing planted everywhere has cost it. Since the 1990s the horse chestnut leaf miner has spread across Europe, a moth whose larvae tunnel the leaves until they brown and curl by August, so most chestnuts on the continent now look half dead two months before autumn without actually being ill. Bleeding canker is the serious one, and the one that kills.\n\nThe flowers go up like white candles in May. The conkers come down in late September, which is the only fortnight of the year anybody looks at the ground under this tree.",
+      "best_time": {
+        "months": [5],
+        "kind": "flowers",
+        "label": "white candles stand upright over the whole crown"
+      },
       "verified_sources": [
         "https://opendata.brussels.be/api/explore/v2.1/catalog/datasets/bruxelles_arbres_remarquables (heritage.brussels remarkable-tree register, CC BY 4.0, entry 628: Marronnier commun, Aesculus hippocastanum, girth 308 cm, crown 15 m, inscribed on the legal inventory, coordinate inside Parc d'Egmont)",
         "https://sites.heritage.brussels/fr/trees/628 (the region's per-tree record, which gives its ranking as 90th of its species in the Brussels-Capital Region)"
