@@ -9,6 +9,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-16 - Cordoba deepens by 5, and two leads turned out to already be live under different ids
+
+Followed rule (a) of "the course after the fortnight": `leads.py --ready` showed 7 usable Cordoba leads sitting inside or near the existing 2.3km walk. Verify pass (95k tokens) brought 7 to research/cordoba-verified.json; write pass (70k tokens) delivered 5. Shipped as cdb_011/013/014/016/017: the Chinaberry of the Puerta de Almodovar, the Ginkgo of the Jardines de la Agricultura (best_time set, autumn colour), the three Casuarinas of Plaza de Jeronimo Paez (ensemble, single-sourced, said so), the River Red Gum of Parque Celia Mendez (single-sourced, 3km outside the existing walk, said so), and the Ash of Santa Marina (declining, approximate pin, age argued not documented). Cordoba is now 15 trees.
+
+**The write pass caught a duplicate-collision the verify pass missed, same class as the 2026-08-13 Munich bug.** Two of the seven verified leads, the Himalayan Cedar of Plaza del Cardenal Toledo and the Cypress at the Alcazar Entrance, turned out to be the exact same physical trees as already-published cdb_010 and cdb_008: identical coordinates, identical catalogue measurements, same single source, just reached via an old 2026-08-03 leads file that predates the two live entries. Left unwritten and deleted from the research file rather than merged as duplicates. The Alcazar cypress's genuine open question, whether the catalogue's measured specimen is a standalone tree outside the ticket gate or one of many in the paid Paseo de los Reyes avenue, is a correction to the LIVE cdb_008 (whose story already asserts "outside the ticket gate" on one source), not a writing job on a new entry; left for a future pass rather than resolved here.
+
+**Held back, not shipped:** the Canary Palm of the Doctor Emilio Luque Square, on an unresolved vitality question (red palm weevil, the register's own named threat to the city's Canary palms) plus a possible species mismatch (one independent description calls the square's palms Trachycarpus, the catalogue says Phoenix canariensis). Left as a lead. Also left as leads: Stone Pine of Santa Maria de Trassierra, Photinia at the Palacio de la Merced, Siberian Elm of the Alcazar, none touched this pass.
+
 ## 2026-08-16 - Prague's prg_007 flagged "wrong location": re-verified, coordinates match the source to within 5 metres
 
 Supabase `submissions` held one new `kind: feedback` row (id 4, created 2026-08-15 19:00 UTC) reporting prg_007 (The Oak of Cisarsky ostrov, Prague) as "wrong location". Treated as a lead, not a fact, per the submission-handling rule.

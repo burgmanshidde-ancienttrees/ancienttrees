@@ -1794,6 +1794,26 @@
         "wasted": 0,
         "brief_wrong": false
       }
+    ],
+    "2026-08-16": [
+      {
+        "target": "cordoba",
+        "kind": "verify",
+        "tokens": 150111,
+        "trees": 0,
+        "note": "7 of 8 leads verified and delivered (1 held back on unresolved palm vitality); PDF extraction dead-end burned real budget before pivoting to web search",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "cordoba",
+        "kind": "write",
+        "tokens": 91944,
+        "trees": 5,
+        "note": "5 of 7 written; cdb_012 and cdb_015 left unwritten as exact duplicates of live cdb_010 and cdb_008 (same coords, same catalogue measurements)",
+        "wasted": 0,
+        "brief_wrong": false
+      }
     ]
   }
 }
