@@ -1,0 +1,27 @@
+{
+  "note": "Manual 'Request Indexing' submissions in Google Search Console, with what each URL was earning at the moment it was submitted. This file exists so 'was it worth it' is answerable from data instead of from memory: Hidde did ten by hand on 2026-08-16, said plainly that he would rather not repeat it, and that question cannot be answered a week later without a baseline written down on the day. Read it with scripts/indexcheck.py.",
+  "caveat": "The baseline numbers below are all zero, and zero here means 'did not appear in the digest's Search Console page readback', not a measured zero. Until 2026-08-16 that readback was the top 200 pages sorted by clicks, and the whole site takes about 90 clicks in a window, so the tail was cut off in an order Google does not promise. The pull was raised to 5,000 rows the same day. Read a move from 0 to something as 'this page now earns enough to be visible in the data', not as 'this page went from literally nothing'.",
+  "requests": [
+    {
+      "date": "2026-08-16",
+      "by": "hidde",
+      "method": "Search Console URL inspection, one URL at a time, by hand",
+      "why": "346 URLs sat at 'Discovered - currently not indexed'. These ten were the published cities 14+ days live with no impressions in the readback, ranked by travel demand times trees.",
+      "baseline_window": "10 days to 2026-08-15",
+      "urls": [
+        { "slug": "london", "impressions_at_request": 0, "clicks_at_request": 0, "trees": 23, "days_live": 28 },
+        { "slug": "venice", "impressions_at_request": 0, "clicks_at_request": 0, "trees": 11, "days_live": 22 },
+        { "slug": "istanbul", "impressions_at_request": 0, "clicks_at_request": 0, "trees": 14, "days_live": 26 },
+        { "slug": "florence", "impressions_at_request": 0, "clicks_at_request": 0, "trees": 22, "days_live": 23 },
+        { "slug": "milan", "impressions_at_request": 0, "clicks_at_request": 0, "trees": 18, "days_live": 23 },
+        { "slug": "copenhagen", "impressions_at_request": 0, "clicks_at_request": 0, "trees": 13, "days_live": 16 },
+        { "slug": "madrid", "impressions_at_request": 0, "clicks_at_request": 0, "trees": 17, "days_live": 26 },
+        { "slug": "naples", "impressions_at_request": 0, "clicks_at_request": 0, "trees": 17, "days_live": 22 },
+        { "slug": "malaga", "impressions_at_request": 0, "clicks_at_request": 0, "trees": 10, "days_live": 22 },
+        { "slug": "seoul", "impressions_at_request": 0, "clicks_at_request": 0, "trees": 8, "days_live": 15 }
+      ],
+      "control_note": "The other 20 published cities that were also 14+ days live with no impressions on 2026-08-16, deliberately NOT submitted. If they move as much as the submitted ten, the requests did nothing and Google was going to get there anyway. This is a weak control and is labelled as one: the submitted cities are bigger and more in demand (8 to 23 trees) than most of these (4 to 6), so it answers 'did the ten move MORE' rather than 'did the ten move BECAUSE'.",
+      "control": ["cambridge", "delft", "den-bosch", "geneva", "glasgow", "granada", "haarlem", "helsinki", "ljubljana", "nijmegen", "osaka", "oxford", "reykjavik", "rotterdam", "sofia", "split", "stockholm", "utrecht", "warsaw", "york"]
+    }
+  ]
+}

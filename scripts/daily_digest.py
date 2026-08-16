@@ -73,15 +73,36 @@ def fetch_gsc(today):
     end = today.isoformat()
     days = q({"startDate": start, "endDate": end, "dimensions": ["date"], "dataState": "all"})
     queries = q({"startDate": start, "endDate": end, "dimensions": ["query"], "rowLimit": 5, "dataState": "all"})
-    # 200, not 5. The five best pages tell you where the wins are; the depth
-    # rule (CLAUDE.md, 2026-08-12: photos, pins and best_time only on pages
-    # with impressions) needs the opposite question answered, which is whether
-    # a given page has ANY demand. With a top-5 pull a run asking "does Vienna
-    # get impressions" could not tell, and the honest default under a rule like
-    # that is to do nothing. The night run holds no Search Console credentials
-    # (they live in this workflow and weekly-analysis only), so this file is
-    # the only place it can read the answer.
-    pages = q({"startDate": start, "endDate": end, "dimensions": ["page"], "rowLimit": 200, "dataState": "all"})
+    # Every page, not the top 5 and no longer the top 200. The five best pages
+    # tell you where the wins are; the depth rule (CLAUDE.md, 2026-08-12:
+    # photos, pins and best_time only on pages with impressions) needs the
+    # opposite question answered, which is whether a given page has ANY demand.
+    # With a top-5 pull a run asking "does Vienna get impressions" could not
+    # tell, and the honest default under a rule like that is to do nothing. The
+    # night run holds no Search Console credentials (they live in this workflow
+    # and weekly-analysis only), so this file is the only place it can read the
+    # answer.
+    #
+    # Raised from 200 to 5,000 on 2026-08-16, because 200 was quietly answering
+    # a different question than everything downstream believed. This API sorts
+    # by CLICKS descending, and the whole site takes about 90 clicks in a
+    # window, so roughly 40 pages have any clicks at all and the remaining 160
+    # slots went to zero-click pages in an order Google does not promise. Every
+    # page past that cut was written into data/city-queue.json as
+    # `impressions_10d: 0`, which reads as "nobody searched for this" when it
+    # actually meant "did not make the top 200 rows".
+    #
+    # It was self-evidently wrong in this file's own output: the 2026-08-16
+    # digest printed /cambridge/newtons-apple-tree at 22 impressions in its
+    # seen-not-clicked line (that line reads the `pairs` pull) and wrote
+    # cambridge = 0 impressions into the queue in the same run. promote() then
+    # scores a city on that number and rescore.py ranks on it, so a truncated
+    # readback was steering which cities get worked on next.
+    #
+    # 5,000 covers all 1,626 URLs with headroom; the API's ceiling is 25,000.
+    # Same class of fault as the sendBeacon bug fixed on 2026-08-15: the
+    # instrument read zero and nothing about a zero looked broken.
+    pages = q({"startDate": start, "endDate": end, "dimensions": ["page"], "rowLimit": 5000, "dataState": "all"})
     # Wider pull for the content-gap line below: the top 5 by clicks are
     # almost always queries we already rank for, so finding one with no page
     # needs a bigger pool to pick the highest-impression miss out of.
