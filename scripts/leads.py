@@ -64,6 +64,18 @@ def is_done(entry):
     return bool(DONE.search(json.dumps(entry, ensure_ascii=False)))
 
 
+# See classify() below. Matched against every "why" field in data/leads/
+# before being written, 2026-08-16: catches the 5 real cases in the corpus
+# at the time (Braga's two Tibaes trees, Como's Museo Giovio plane, Guimaraes'
+# Moreira de Conegos and Citania de Briteiros pines), zero false positives on
+# the two known traps (Barcelona's "Held on count[...]", a forbidden reason
+# under CLAUDE.md's never_blocking list; Toulouse's "held in spring,
+# announced on...", unrelated prose about open-day scheduling).
+HELD_MARKER = re.compile(
+    r"\bHELD\b[\w\s-]{0,25}?\bon\b\s+(?:access|evidence|courtyard access|"
+    r"the day-trip boundary|transport)\b", re.I)
+
+
 # Found 2026-08-13 while writing a Munich batch: the DONE marker above only
 # catches a lead that SOMEONE remembered to annotate after shipping it. Munich's
 # own leads file held four entries for Schlosspark Nymphenburg trees that had
@@ -172,6 +184,24 @@ def classify(entry, blocking):
     status = str(entry.get("status") or "").strip().lower()
     if status in ("folded", "blocked", "held", "duplicate", "resolved"):
         return {"label": "held by an earlier pass (status: %s)" % status}
+    # The fix above only works when a pass remembers to also set status to
+    # "held", and in practice it often does not: Braga's own two entries still
+    # read status "lead" today, prose only. Found 2026-08-16 when a Guimaraes
+    # verify pass spent 109k tokens re-confirming what its own leads file
+    # already said in words ("Held back only on access... Needs Hidde's
+    # call"), and Braga's identical "HELD ON ACCESS" pair would have cost the
+    # next pass the same. This is not a new blocking judgement (that list
+    # needs Hidde, see data/block-reasons.json): it is reading a determination
+    # an earlier pass already recorded in its own words. Deliberately narrow,
+    # matched against real corpus text before being written: requires "on"
+    # plus one of the reasons this project actually uses this marker for.
+    # "Held on count[...]" (a quota, forbidden by CLAUDE.md as a reason to
+    # hold anything back) and incidental prose ("open days, held in spring,
+    # announced on...") are excluded on purpose; a bare "held" elsewhere in
+    # the text is not treated as this marker.
+    why_field = str(entry.get("why") or entry.get("why_not_published") or entry.get("reason") or "")
+    if HELD_MARKER.search(why_field):
+        return {"label": "held by an earlier pass's own note (its status field was never updated)"}
     why = reason_text(entry)
     for rule in blocking:
         for pat in rule["patterns"]:
