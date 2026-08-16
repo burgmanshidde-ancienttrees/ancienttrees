@@ -293,8 +293,8 @@ so qa.py fails the deploy when the table and the json disagree.
 | 112 | Malaga | 2.51 | 117,780 | 10 | 5 | 2 | - | 10 | published, never ranked (may be uncrawled) |
 | 113 | Taormina | 2.35 | 33,169 | - | - | - | 5 | 10 | predicted (travel demand) |
 | 114 | Bath | 3.72 | 144,950 | 5 | 1 | 1 | - | 20 | measured |
-| 115 | Zurich | 3.72 | 140,788 | 4 | - | - | - | 20 | measured |
-| 116 | Sorrento | 1.94 | 40,049 | - | - | - | 20 | 10 | predicted (travel demand) |
+| 115 | Sorrento | 1.94 | 40,049 | 4 | - | - | 20 | 10 | predicted (travel demand) |
+| 116 | Zurich | 3.72 | 140,788 | 4 | - | - | - | 20 | measured |
 | 117 | Strasbourg | 2.45 | 154,700 | 10 | 1 | 2 | 66 | 10 | published, never ranked (may be uncrawled) |
 | 118 | Naples | 1.83 | 198,913 | 17 | 3 | 2 | 46 | 10 | published, never ranked (may be uncrawled) |
 | 119 | Austin | 3.65 | 226,631 | - | - | - | - | 10 | predicted (travel demand) |
