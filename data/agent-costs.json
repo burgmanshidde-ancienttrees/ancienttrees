@@ -1921,6 +1921,15 @@
         "note": "11 stories across two new cities in one context; 5 undated Vilnius trees written as reader invitations rather than hedged prose, one best_time (the Tallinn ginkgo). Tokens are the harness's measured figure, not the agent's 88k self-estimate.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "toronto",
+        "kind": "verify",
+        "tokens": 146926,
+        "trees": 4,
+        "note": "Cleared the floor on 4, and cheaper than briefed because an earlier scout had already left 25 Ontario Heritage Tree candidates in data/leads/toronto.json, which my hand-written brief did not know about. Caught a shared-coordinate trap: five Echo Valley register entries carry one identical lat/lng, a site pin dressed as five tree pins, so tro_004 ships approximate and the other clusters were not promoted.",
+        "wasted": 0,
+        "brief_wrong": true
       }
     ]
   }
