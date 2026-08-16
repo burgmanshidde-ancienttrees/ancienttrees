@@ -375,6 +375,42 @@ def main():
         print("\nStage 1: %d cities, %d trees. Stage 2: %d cities, %d trees."
               % (len(s1), sum(10 - c.get("trees", 0) for c in s1),
                  len(s2), sum(c["target"] - c.get("trees", 0) for c in s2)))
+
+        # WHAT A RUN CAN ACTUALLY MOVE, added 2026-08-16 from the night's own
+        # numbers. The lists above are the STRATEGIC order and are correct as
+        # that; they are not a to-do list, and a night run was reading them as
+        # one. Measured that morning: 4 of the 29 stage-1 cities had any
+        # register or ready supply at all. The other 25 are from-zero web
+        # research, which CLAUDE.md turns off unless Hidde names the city, so a
+        # run walking this list top-down meets Toronto, Montreal, Sydney,
+        # Frankfurt, Perth, Vilnius and Los Angeles in a row and is forbidden
+        # to touch any of them. It then has to reason its way past all of them
+        # before finding real work, nine times a day. Four runs that night
+        # spent their whole window on exactly that and shipped nothing.
+        #
+        # So the order stays untouched (it is Hidde's) and the actionable
+        # subset is printed under it. Nothing here decides priority; it only
+        # says which of the ranked cities have something to work FROM.
+        movable = [c for c in s1 + s2
+                   if (c.get("ready", 0) or c.get("register", 0))]
+        movable.sort(key=lambda c: (c.get("rank") or 9999))
+        print("\nWHAT YOU CAN ACTUALLY MOVE, i.e. the ranked cities that have "
+              "data to work from.\nEverything else on the lists above needs "
+              "from-zero web research, which is OFF\nunless Hidde names the "
+              "city (CLAUDE.md, rule one (d)).\n")
+        if movable:
+            print("  #  city             now  ready  register")
+            for c in movable[:15]:
+                print("%3d  %-16s %4d %6d %9d" % (
+                    c["rank"], c["city"][:16], c.get("trees", 0),
+                    c.get("ready", 0), c.get("register", 0)))
+            print("\n  %d of %d ranked cities have supply."
+                  % (len(movable), len(s1) + len(s2)))
+        else:
+            print("  None. Every ranked city is out of data.")
+        print("\nAnd the shelf is usually the cheaper answer than any of them:\n"
+              "  python3 scripts/prepare.py     staged for verify, awaiting a writer\n"
+              "  python3 scripts/leads.py       READY leads needing only a story")
         return 0
 
     if a.check:
