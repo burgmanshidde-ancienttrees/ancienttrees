@@ -1,0 +1,165 @@
+{
+  "city": "Toronto",
+  "country": "Canada",
+  "status": "needs_curation",
+  "intro": "These four are spread across twenty kilometres of Toronto, so this is four outings rather than one afternoon. The city's official tree stands in Kew Gardens in the Beaches, a red oak 5.3 metres round with one long limb sagging to the grass. An oak planted on coronation day in 1937 sits at the centre of a ring of silver maples on the waterfront. Big Red holds a corner in Long Branch beside a cenotaph. The fourth is a Turkish hazel left over from a private nut farm in Islington.",
+  "meta_description": "Four heritage trees in Toronto: the city's official red oak in Kew Gardens, a coronation oak from 1937, Big Red in Long Branch, a nut farm survivor.",
+  "question_meta": "Toronto's oldest tree is the red oak in Kew Gardens, roughly 220 years old and 5.3 metres round. Where it stands, and three more to see.",
+  "question_answer": "The oldest tree in Toronto is the northern red oak in Kew Gardens, in the Beaches, at 2075 Queen Street East. The city named it Toronto's official tree in 2022: its trunk measures 5.3 metres round, the crown reaches roughly 36 metres, and arborists read a diameter of 169 centimetres as an age of about 220 years, with an honest band running from 200 to 260. Nobody has cored it, so that band is the answer rather than a hedge, and it means the tree may or may not predate the founding of the town that became Toronto. Everything else on the corner arrived afterwards. Joseph Williams farmed the land from the 1850s and ran amusement grounds under these branches; the city bought the eight and a half hectares in 1907, and the creeks that once ran down to the lake here were culverted while the oak stood over them. Forests Ontario designated it a heritage tree in 2021 and a Heritage Toronto plaque went up in May 2023, which is late recognition for a tree that was already large when the first houses in the Beaches were built. A native plant garden now grows under the low limb, which hangs at shoulder height.",
+  "question_context": "Ontario has no government register of remarkable trees. What it has instead is the Ontario Heritage Tree Program run by Forests Ontario, a nomination-based designation, and that is where three of the four trees on this page come from; each was then checked against independent sources, a city page, a local historical society or a newspaper, because a nomination is a claim rather than a measurement. Every age here comes off a tape measure around a trunk and an assumed growth rate, with one exception: the King's Oak was planted on 12 May 1937 and its birthday is known to the day. Two figures on this page disagree and both are recorded rather than reconciled, because neither source explains how it measured: Forests Canada puts Big Red at 24 metres tall and a 2024 local report puts it at 33. One further caution about precision. The five heritage trees in Echo Valley Park share a single map coordinate between them, a site pin presented as five tree pins, which is why the Turkish hazel on this page is marked approximate. See the full list of four on the Toronto page.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Toronto?",
+      "a": "The northern red oak in Kew Gardens, in the Beaches, which the city named Toronto's official tree in 2022. It is 5.3 metres round with a crown reaching about 36 metres, and its measured diameter puts it at roughly 220 years, somewhere in a band from 200 to 260. It has never been cored."
+    },
+    {
+      "q": "Can I see them all in one walk?",
+      "a": "No, and it would be a long day to try. Kew Gardens is in the Beaches, Coronation Park is on the waterfront by the CNE grounds, Big Red is in Long Branch and the Turkish hazel is in Echo Valley Park in Islington, which is twenty kilometres end to end. Each is a short walk from transit, so treat them as four separate outings."
+    },
+    {
+      "q": "Are they free to visit?",
+      "a": "Yes, all four. Every one stands in a public park, and Coronation Park and the Long Branch corner are open at all hours."
+    },
+    {
+      "q": "Is the tree in Echo Valley Park easy to find?",
+      "a": "No. George Corsan's surviving nut trees in that park are all on the heritage register under a single shared map coordinate, so the last part is a short hunt among them, and no published source says which is which. Nobody has reported a sighting since the 2017 nomination either. If you find it, tell us and we will fix the page."
+    }
+  ],
+  "hero_tree_id": "tro_001",
+  "oldest_tree_id": "tro_001",
+  "trees": [
+    {
+      "id": "tro_001",
+      "name": "The Kew Gardens Red Oak",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "roughly 220 years",
+      "age_min": 200,
+      "age_max": 260,
+      "girth_cm": 532,
+      "location": {
+        "address": "Kew Gardens, 2075 Queen St E, Toronto",
+        "latitude": 43.6694,
+        "longitude": -79.2978,
+        "neighbourhood": "The Beaches"
+      },
+      "story": "Toronto has an official tree, and this is it. The city gave the title in 2022 to a northern red oak in Kew Gardens, a trunk 5.3 metres round under a crown reaching about 36 metres, with one long limb that sags all the way down to the grass.\n\nArborists read its start off a diameter of 169 centimetres and put it at roughly 220 years, with a band running from about 200 to 260. Nobody has cored it, so that band is the honest answer: it may or may not predate the founding of the town that became Toronto.\n\nEverything else on this corner arrived afterwards. Joseph Williams farmed the land from the 1850s and ran amusement grounds beneath these branches; the city bought the 8.4 hectares in 1907. The creeks that once ran down to the lake here were culverted while the oak stood over them. Forests Ontario designated it a heritage tree in 2021, and a Heritage Toronto plaque went up in May 2023, which is late recognition for something that was already large when the first houses in the Beaches were built.\n\nA native plant garden now grows under the low limb. Stand beside it and the limb is at shoulder height, which is not how most people expect to meet a 36 metre tree.",
+      "verified_sources": [
+        "https://beachmetro.com/2023/05/20/in-my-opinion-residents-can-celebrate-the-great-red-oak-in-kew-gardens-at-may-25-heritage-toronto-plaque-unveiling/",
+        "https://www.toronto.ca/business-economy/partnerships-sponsorships-donations/donate/heritage-red-oak-tree/",
+        "Ontario Heritage Tree Program (Forests Canada/OUFC) register entry HT-2021-255-266"
+      ],
+      "access": "Free, public park, open daylight hours",
+      "transport": "Streetcar (504 King or 501 Queen) to Kew Beach; Woodbine subway station + 15 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The biggest tree in the park, with one long low limb sagging all the way to the grass over a native plant garden. A Heritage Toronto plaque stands beside it.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "tro_002",
+      "name": "The King's Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "89 years, planted 12 May 1937",
+      "age_min": 89,
+      "age_max": 89,
+      "location": {
+        "address": "Coronation Park, Lake Shore Blvd W, Toronto",
+        "latitude": 43.6335,
+        "longitude": -79.407,
+        "neighbourhood": "Fort York / CNE grounds"
+      },
+      "story": "On 12 May 1937, while George VI was being crowned in London, Toronto put an oak in the ground on the lakeshore and planted about 150 more trees around it before the day was out.\n\nThe oak is the centre of the arrangement. Around it run concentric rings of silver maples, the Empire Circle, one ring for each dominion and colony of an empire that has since stopped existing. The rings are still there. So is the oak, 89 years on, an ordinary pedunculate oak carrying a considerable amount of ceremony: a stone and plaque beside it, dedicated by Justice John A. Hope and unveiled by Sir William Mulock in August 1938.\n\nThen it happened again. On 6 May 2023, for the coronation of Charles III, the city planted a companion oak next to the first one and added a second plaque. Eighty-six years apart, the same gesture, the same species, the same patch of grass. The second planting is also the reason we know the first tree is still standing.\n\nThis is the youngest tree on this page and the only one whose birthday is known to the day; every other age here comes off a tape measure around a trunk. Coronation Park has since been restored in phases, and the first phase went to this oak and its circle of maples.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Coronation_Park_(Toronto)",
+        "https://canadiantreetours.org/species-pages/English_oak.html",
+        "Ontario Heritage Tree Program (Forests Canada/OUFC) register entry HT-2015-49-116"
+      ],
+      "access": "Free, public waterfront park, open at all hours",
+      "transport": "Streetcar 509/511 to Exhibition Loop, then 10 min walk; or Exhibition GO station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The single oak at the centre of the concentric rings of silver maples, with a stone and plaque beside it. A second, much younger oak was planted next to it in 2023.",
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "tro_003",
+      "name": "Big Red",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "roughly 200 years",
+      "age_min": 190,
+      "age_max": 216,
+      "location": {
+        "address": "Corner of Long Branch Ave. and Park Blvd, beside the Long Branch Cenotaph",
+        "latitude": 43.5905,
+        "longitude": -79.5321,
+        "neighbourhood": "Long Branch"
+      },
+      "story": "The Long Branch Hotel burned down in 1958. The oak beside it did not, and it is still on the corner.\n\nBig Red is a northern red oak at Long Branch Avenue and Park Boulevard, named by the neighbourhood for what it does in October. Diameter measurements put its start in the late 1810s; Forests Canada rounds that to about 200 years and the early 1800s, which is close enough agreement to work with. Its height is less settled. Forests Canada records 24 metres, a 2024 local report says 33, and neither explains how it was measured, so both figures are on the record and neither has won.\n\nIn the late 1800s it stood near a fountain in the grounds of the Long Branch Grove and Resort, a lakeside destination Torontonians came out to by train. The resort went. The hotel went. The streets arrived. In 1933 the cenotaph went up beside the oak, and the tree has stood next to the names of three wars ever since, which is the reason to come in November rather than the reason to come in October.\n\nForests Ontario made it Long Branch's first heritage tree in April 2018, listed at 200 years. It is by some distance the oldest thing on that corner.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "late October, when the crown turns the deep red it is named for"
+      },
+      "verified_sources": [
+        "https://forestscanada.ca/en/article/heritage-tree-big-red-oak-thrives-in-etobicoke",
+        "https://lbna.ca/200-year-old-red-oak-our-first-heritage-tree/",
+        "https://torontonewswire.com/16668-2/",
+        "Ontario Heritage Tree Program (Forests Canada/OUFC) register entry HT-2017-211-233"
+      ],
+      "access": "Free, public memorial park beside the Long Branch Cenotaph, open at all hours",
+      "transport": "Long Branch GO station or 501 Long Branch streetcar loop, 10 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The large oak on the corner beside the Long Branch cenotaph. It is by a distance the oldest thing standing there.",
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "tro_004",
+      "name": "Corsan's Turkish Hazel",
+      "species": "Turkish Hazel (Corylus colurna)",
+      "age_estimate": "roughly 110 years",
+      "age_min": 105,
+      "age_max": 120,
+      "location": {
+        "address": "Echo Valley Park, off Wingrove Hill near 1124 Kipling Avenue",
+        "latitude": 43.6529,
+        "longitude": -79.5414,
+        "neighbourhood": "Islington / Echo Valley"
+      },
+      "story": "George Hebden Corsan was an internationally known swimmer and a health food evangelist, and he spent forty years proving that nut trees would grow in Ontario. This is one of the trees that proved it.\n\nCorsan bought twelve acres here across 1911 and 1912 and turned them into a nut farm, eventually cultivating more than 400 varieties and collecting the name the Nut Man of Islington. Metropolitan Toronto bought the land in 1959 and made it Echo Valley Park, which is the only reason a private obsession is now something anyone can walk through.\n\nThe Turkish hazel is one of five of his nut trees on the heritage register, alongside a hican, a black walnut and two more walnuts. The register recorded this one at 100 years old in 2017 and dates the planting loosely to the 1900s, without tying it to Corsan's own arrival, so early last century is as close as the evidence gets. A 1971 survey by the University of Toronto's Shade Tree Research Laboratory listed Turkish hazel among the nut species still growing on the site, which is the second account standing behind the register entry.\n\nTwo honest gaps. All five trees share a single map pin, so the last part of the walk is a short hunt. And nobody has published a sighting since the 2017 nomination. If you find it, or work out which of the five is which, tell us.",
+      "verified_sources": [
+        "https://www.etobicokehistorical.com/george-hebden-corsan.html",
+        "http://songonline.ca/songnews/v009.html",
+        "Ontario Heritage Tree Program (Forests Canada/OUFC) register entry HT-2017-160-203"
+      ],
+      "access": "Free, public park (Etobicoke Parks System since 1959), multiple entrances off Kipling Avenue and Wingrove Hill",
+      "transport": "Islington subway station, then bus along Kipling/Burnhamthorpe, roughly 15-20 min total",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Hard. All five of Corsan's nut trees share one map pin, so expect a short hunt, and nobody has published which of the five is which. If you work it out, tell us.",
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}

@@ -1939,6 +1939,15 @@
         "note": "The six ArcGIS points resolved into something better: montroyal.montreal.ca, the Ville de Montreal's own per-tree dendrological pages for Mont-Royal and both cemeteries, which is a city register in webpage form and is mostly unmined. Six of the seven are single-sourced from it and flagged accordingly. Caught one designated tree dead: a red ash felled in 2025 to the emerald ash borer, found because the source's own page redirects to frene-rouge-disparu.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "toronto+montreal",
+        "kind": "write",
+        "tokens": 110034,
+        "trees": 11,
+        "note": "11 stories, 2 best_time. The pass caught two of its own inputs: tro_002 shipped as English Oak and would have failed hard rule 9 against 64 live Pedunculate Oak entries, and a Kew Gardens 'pre-colonization' framing that does not survive the arithmetic (220 years from 2026 is 1806). Tokens are the harness's measured figure, not the agent's 61k self-estimate.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
