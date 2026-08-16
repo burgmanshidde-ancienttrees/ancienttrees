@@ -26,8 +26,12 @@ export function mapScript(body: string): string {
     `document.addEventListener("DOMContentLoaded", function () {\n${body}\n});\n</script>\n`;
 }
 
+/** MapLibre's stylesheet. The `preconnect` to unpkg.com that used to sit here
+ * went with the vendoring on 2026-08-16 (see site-config.ts): warming a
+ * connection to a host we no longer call is a wasted DNS lookup, and our own
+ * origin is already connected. */
 export function mapHead(): string {
-  return `<link rel="preconnect" href="https://unpkg.com" crossorigin>\n<link rel="stylesheet" href="${MAPLIBRE_CSS}">`;
+  return `<link rel="stylesheet" href="${MAPLIBRE_CSS}">`;
 }
 
 /** A single-pin map: the tree page's own map, ported from
