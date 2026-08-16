@@ -1,0 +1,137 @@
+{
+ "note": "The scouting ledger: what is known about the register behind each place, so a scout starts from the queue's top and not from whatever is interesting. Written 2026-08-16 after a round drifted into Estonia and Lithuania (#65 and #22) while Toronto, Montreal and Sydney (#8, #10, #14) sat untouched, because the scouting order was coming from the data instead of from the queue. Read by scripts/scout_next.py. Detail and proving sentences live in OPEN_DATA_SURVEY.md; this file is the index, one line each.",
+ "status_values": {
+  "imported": "a register file exists in data/registers/",
+  "blocked": "found, and unusable for a stated reason (licence, non-commercial, withheld locations). Do not re-scout without a new angle.",
+  "stalled": "found, reachable, and something specific is in the way. The note says what to try next.",
+  "empty": "scouted properly and there is no semantically filtered register. Cheap sources other than a register are the route here.",
+  "unscouted": "never actually checked. Being named in a previous pass's 'not reached' list counts as unscouted."
+ },
+ "places": [
+  {
+   "place": "Toronto",
+   "country": "Canada",
+   "status": "unscouted",
+   "note": "Named but not reached by the 2026-08-13 English-block pass; a Significant Tree Register programme was recalled from general knowledge and never checked. Wikidata holds only 1 tree within 15 km, so this is genuinely unknown rather than known-empty."
+  },
+  {
+   "place": "Montreal",
+   "country": "Canada",
+   "status": "stalled",
+   "note": "ville.montreal.qc.ca/siteofficieldumontroyal/arbres-remarquables reads as a page about Mont Royal's remarkable trees rather than a dataset; donnees.montreal.ca carries the full public-tree inventory, which the semantic filter forbids. Next: check whether the Mont Royal page lists individual trees with locations, and whether Espace pour la vie publishes its own."
+  },
+  {
+   "place": "Sydney",
+   "country": "Australia",
+   "status": "blocked",
+   "note": "SOLVED the endpoint 2026-08-16 and blocked on licence. City of Sydney Register of Significant Trees, 2,504 entries, ArcGIS FeatureServer services1.arcgis.com/cNVyNtjGVZybOQWZ/ArcGIS/rest/services/Register_of_Significant_Trees_view/FeatureServer/0, open and queryable. It is the richest register found anywhere: species, common name, height, spread, year_of_planting, statement_of_significance, address, owner, and two fields the corpus says registers never have, condition (coded, including Dead) and accessibilility (Public access / Visible from street / No public access). BUT the AGOL item carries an empty licenseInfo, the dataset is not on the CC BY 4.0 data hub, and cityofsydney.nsw.gov.au's own terms say content must not be reproduced without written authorisation. Not imported. Next: a licence request to the City, which is Hidde's to send."
+  },
+  {
+   "place": "Perth",
+   "country": "Australia",
+   "status": "unscouted",
+   "note": "Named but not reached, 2026-08-13."
+  },
+  {
+   "place": "Adelaide",
+   "country": "Australia",
+   "status": "stalled",
+   "note": "Significant Tree is a state Development Act designation administered per council (Adelaide, Burnside, Prospect, Unley), so it is several lists rather than one fetch. Next: check whether SA's planning portal publishes a consolidated overlay."
+  },
+  {
+   "place": "Vancouver",
+   "country": "Canada",
+   "status": "unscouted",
+   "note": "Named but not reached, 2026-08-13."
+  },
+  {
+   "place": "Los Angeles",
+   "country": "United States",
+   "status": "unscouted",
+   "note": "Named but not reached, 2026-08-13."
+  },
+  {
+   "place": "Estonia",
+   "country": "Estonia",
+   "status": "imported",
+   "note": "EELIS kr_yksikobjektid, 555 trees, CC BY 4.0. Covers Tallinn (#65) with 56 within 15 km."
+  },
+  {
+   "place": "Lithuania",
+   "country": "Lithuania",
+   "status": "imported",
+   "note": "STVK gamtos paveldo objektai off the map's public vector tiles; commercial reuse permitted per data.gov.lt. Covers Vilnius (#22)."
+  },
+  {
+   "place": "Steiermark",
+   "country": "Austria",
+   "status": "stalled",
+   "note": "Naturdenkmaeler published under CC BY 4.0 with WMS/WFS via haleconnect.com, but the INSPIRE record carries no service URL and data.gv.at has replaced its CKAN API with a JavaScript app. Covers Graz (#92). Next: read data.steiermark.at in a browser, the way stvk.lt was solved.",
+   "covers": [
+    "Graz"
+   ]
+  },
+  {
+   "place": "Sweden",
+   "country": "Sweden",
+   "status": "stalled",
+   "note": "Naturvaardsverket naturvaardsregistret covers naturminne and advertises WMS/WFS/REST, but the geoserver answers 'Service WFS is disabled'. Next: the REST route, untried."
+  },
+  {
+   "place": "Saxony",
+   "country": "Germany",
+   "status": "empty",
+   "note": "State FND layer is areal-only (2026-08-13). But volunteers have mapped 936 trees under 'natural monument in Saxony' on Wikidata, which is why Dresden (#68) shows 209 within 15 km. Route here is the Wikidata layer, not the state.",
+   "covers": [
+    "Dresden",
+    "Leipzig"
+   ]
+  },
+  {
+   "place": "Hessen",
+   "country": "Germany",
+   "status": "empty",
+   "note": "No ND feature type in the open Schutzgebiete WFS (2026-08-13). 790 trees on Wikidata under 'Single natural monument in Hesse'; Frankfurt (#16) shows 55 within 15 km.",
+   "covers": [
+    "Frankfurt"
+   ]
+  },
+  {
+   "place": "Baden-Wuerttemberg",
+   "country": "Germany",
+   "status": "blocked",
+   "note": "Non-commercial-equivalent licence (2026-08-13). Covers Stuttgart, Heidelberg, Freiburg. Do not re-scout.",
+   "covers": [
+    "Stuttgart",
+    "Heidelberg",
+    "Freiburg"
+   ]
+  },
+  {
+   "place": "Catalonia",
+   "country": "Spain",
+   "status": "blocked",
+   "note": "Licence, unchanged since the first sweep.",
+   "covers": [
+    "Barcelona",
+    "Girona",
+    "Tarragona"
+   ]
+  },
+  {
+   "place": "United Kingdom",
+   "country": "United Kingdom",
+   "status": "blocked",
+   "note": "Ancient Tree Inventory disqualified as an import on licence, 2026-08-06; permission path open and it is Hidde's to ask. The London gate stands."
+  },
+  {
+   "place": "Nordrhein-Westfalen",
+   "country": "Germany",
+   "status": "empty",
+   "covers": [
+    "Cologne"
+   ],
+   "note": "No ND feature type in the open Schutzgebiete WFS (2026-08-13). Wikidata is the route for Cologne, not the state."
+  }
+ ]
+}
