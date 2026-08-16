@@ -193,6 +193,26 @@ Addresses are deliberately not listed yet: the right desk is a named journalist
 who has written about trees or cities recently, and that is a lookup worth
 doing per outlet at the moment of sending rather than a list that goes stale.
 
+## Never mail the same address twice unless somebody meant it (Hidde, 2026-08-16)
+
+The rule, and it is enforced in `scripts/outreach_send.py` rather than
+remembered: **an address that has ever been mailed is refused.** To write to it
+again on purpose, the mail in the batch file carries a `resend_reason` of at
+least five words saying why. A bare "follow-up" is refused too, because the
+point is that somebody thought about it rather than typed past a guard. The
+reason is stored with the send, so the log answers "why did this address get two
+mails" without anybody reconstructing it.
+
+Two things make the guard real, and it failed on both before today:
+
+1. **It only knows what is in `data/outreach-sent.json`.** Mail Hidde sends by
+   hand used to live only in the table above, which no script reads, so on
+   2026-08-16 a batch put the Woodland Trust back on the list eight days after
+   his own ask. **Anything sent by hand goes in that file too.**
+2. **There was no door.** Until today a deliberate follow-up was skipped exactly
+   like an accidental duplicate, which meant the only way to send one was to
+   defeat the guard. A rule with no legitimate exception gets worked around.
+
 ## De verzendmachine is blijvend (vastgelegd 2026-08-09 op Hidde's verzoek)
 
 Elke sessie kan mailen namens Hidde, en zo werkt het, blijvend:
