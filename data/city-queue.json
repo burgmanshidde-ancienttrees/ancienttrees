@@ -3189,6 +3189,28 @@
   },
   {
    "rank": 145,
+   "city": "Salzburg",
+   "country": "Austria",
+   "slug": "salzburg",
+   "score": 2.71,
+   "demand": 107243,
+   "basis": "predicted (travel demand)",
+   "status": "pending",
+   "trees": 0,
+   "photos": 0,
+   "walks": 0,
+   "register": 33,
+   "ready": 0,
+   "supply": 33,
+   "target": 10,
+   "ease": 1.5,
+   "work_score": 4.06,
+   "impressions_10d": 0,
+   "clicks_10d": 0,
+   "travel": 2711
+  },
+  {
+   "rank": 146,
    "city": "Kanazawa",
    "country": "Japan",
    "slug": "kanazawa",
@@ -3210,7 +3232,7 @@
    "travel": 2531
   },
   {
-   "rank": 146,
+   "rank": 147,
    "city": "Nantes",
    "country": "France",
    "slug": "nantes",
@@ -3232,7 +3254,7 @@
    "travel": 3835
   },
   {
-   "rank": 147,
+   "rank": 148,
    "city": "Copenhagen",
    "country": "Denmark",
    "slug": "copenhagen",
@@ -3254,7 +3276,7 @@
    "travel": 10483
   },
   {
-   "rank": 148,
+   "rank": 149,
    "city": "Caserta",
    "country": "Italy",
    "slug": "caserta",
@@ -3276,7 +3298,7 @@
    "travel": 632
   },
   {
-   "rank": 149,
+   "rank": 150,
    "city": "Kuala Lumpur",
    "country": "Malaysia",
    "slug": "kuala-lumpur",
@@ -3298,7 +3320,7 @@
    "travel": 7609
   },
   {
-   "rank": 150,
+   "rank": 151,
    "city": "Taormina",
    "country": "Italy",
    "slug": "taormina",
@@ -3320,7 +3342,7 @@
    "travel": 2350
   },
   {
-   "rank": 151,
+   "rank": 152,
    "city": "Bordeaux",
    "country": "France",
    "slug": "bordeaux",
@@ -3342,7 +3364,7 @@
    "travel": 3041
   },
   {
-   "rank": 152,
+   "rank": 153,
    "city": "Den Bosch",
    "country": "Netherlands",
    "slug": "den-bosch",
@@ -3364,7 +3386,7 @@
    "travel": 1425
   },
   {
-   "rank": 153,
+   "rank": 154,
    "city": "Osaka",
    "country": "Japan",
    "slug": "osaka",
@@ -3386,7 +3408,7 @@
    "travel": 10140
   },
   {
-   "rank": 154,
+   "rank": 155,
    "city": "Warsaw",
    "country": "Poland",
    "slug": "warsaw",
@@ -3408,7 +3430,7 @@
    "travel": 9607
   },
   {
-   "rank": 155,
+   "rank": 156,
    "city": "Austin",
    "country": "United States",
    "slug": "austin",
@@ -3431,7 +3453,7 @@
    "travel": 3648
   },
   {
-   "rank": 156,
+   "rank": 157,
    "city": "Melbourne",
    "country": "Australia",
    "slug": "melbourne",
@@ -3453,7 +3475,7 @@
    "travel": 9641
   },
   {
-   "rank": 157,
+   "rank": 158,
    "city": "Wellington",
    "country": "New Zealand",
    "slug": "wellington",
@@ -3475,7 +3497,7 @@
    "travel": 3595
   },
   {
-   "rank": 158,
+   "rank": 159,
    "city": "Rothenburg ob der Tauber",
    "country": "Germany",
    "slug": "rothenburg-ob-der-tauber",
@@ -3497,7 +3519,7 @@
    "travel": 3085
   },
   {
-   "rank": 159,
+   "rank": 160,
    "city": "Bergamo",
    "country": "Italy",
    "slug": "bergamo",
@@ -3519,7 +3541,7 @@
    "travel": 2289
   },
   {
-   "rank": 160,
+   "rank": 161,
    "city": "Montpellier",
    "country": "France",
    "slug": "montpellier",
@@ -3541,7 +3563,7 @@
    "travel": 3470
   },
   {
-   "rank": 161,
+   "rank": 162,
    "city": "Kotor",
    "country": "Montenegro",
    "slug": "kotor",
@@ -3563,7 +3585,7 @@
    "travel": 6858
   },
   {
-   "rank": 162,
+   "rank": 163,
    "city": "Rhodes",
    "country": "Greece",
    "slug": "rhodes",
@@ -3585,7 +3607,7 @@
    "travel": 3425
   },
   {
-   "rank": 163,
+   "rank": 164,
    "city": "Brighton",
    "country": "United Kingdom",
    "slug": "brighton",
@@ -3607,7 +3629,7 @@
    "travel": 3402
   },
   {
-   "rank": 164,
+   "rank": 165,
    "city": "Busan",
    "country": "South Korea",
    "slug": "busan",
@@ -3629,7 +3651,7 @@
    "travel": 3315
   },
   {
-   "rank": 165,
+   "rank": 166,
    "city": "Chania",
    "country": "Greece",
    "slug": "chania",
@@ -3651,7 +3673,7 @@
    "travel": 3299
   },
   {
-   "rank": 166,
+   "rank": 167,
    "city": "Segovia",
    "country": "Spain",
    "slug": "segovia",
@@ -3673,7 +3695,7 @@
    "travel": 2167
   },
   {
-   "rank": 167,
+   "rank": 168,
    "city": "Cape Town",
    "country": "South Africa",
    "slug": "cape-town",
@@ -3695,7 +3717,7 @@
    "travel": 6575
   },
   {
-   "rank": 168,
+   "rank": 169,
    "city": "Santiago",
    "country": "Chile",
    "slug": "santiago",
@@ -3718,7 +3740,7 @@
    "travel": 3251
   },
   {
-   "rank": 169,
+   "rank": 170,
    "city": "Sarajevo",
    "country": "Bosnia and Herzegovina",
    "slug": "sarajevo",
@@ -3740,7 +3762,7 @@
    "travel": 6310
   },
   {
-   "rank": 170,
+   "rank": 171,
    "city": "Lucerne",
    "country": "Switzerland",
    "slug": "lucerne",
@@ -3762,7 +3784,7 @@
    "travel": 3098
   },
   {
-   "rank": 171,
+   "rank": 172,
    "city": "Malmo",
    "country": "Sweden",
    "slug": "malmo",
@@ -3784,7 +3806,7 @@
    "travel": 3068
   },
   {
-   "rank": 172,
+   "rank": 173,
    "city": "Guimaraes",
    "country": "Portugal",
    "slug": "guimaraes",
@@ -3806,7 +3828,7 @@
    "travel": 1269
   },
   {
-   "rank": 173,
+   "rank": 174,
    "city": "Lille",
    "country": "France",
    "slug": "lille",
@@ -3828,7 +3850,7 @@
    "travel": 3064
   },
   {
-   "rank": 174,
+   "rank": 175,
    "city": "Savannah",
    "country": "United States",
    "slug": "savannah",
@@ -3851,7 +3873,7 @@
    "travel": 3046
   },
   {
-   "rank": 175,
+   "rank": 176,
    "city": "Cordoba",
    "country": "Spain",
    "slug": "cordoba",
@@ -3874,7 +3896,7 @@
    "travel": 1654
   },
   {
-   "rank": 176,
+   "rank": 177,
    "city": "Sao Paulo",
    "country": "Brazil",
    "slug": "sao-paulo",
@@ -3896,7 +3918,7 @@
    "travel": 5929
   },
   {
-   "rank": 177,
+   "rank": 178,
    "city": "Mechelen",
    "country": "Belgium",
    "slug": "mechelen",
@@ -3918,7 +3940,7 @@
    "travel": 2931
   },
   {
-   "rank": 178,
+   "rank": 179,
    "city": "Nuremberg",
    "country": "Germany",
    "slug": "nuremberg",
@@ -3940,7 +3962,7 @@
    "travel": 7756
   },
   {
-   "rank": 179,
+   "rank": 180,
    "city": "Breda",
    "country": "Netherlands",
    "slug": "breda",
@@ -3962,7 +3984,7 @@
    "travel": 2561
   },
   {
-   "rank": 180,
+   "rank": 181,
    "city": "Poznan",
    "country": "Poland",
    "slug": "poznan",
@@ -3984,7 +4006,7 @@
    "travel": 7574
   },
   {
-   "rank": 181,
+   "rank": 182,
    "city": "Inverness",
    "country": "United Kingdom",
    "slug": "inverness",
@@ -4006,7 +4028,7 @@
    "travel": 2758
   },
   {
-   "rank": 182,
+   "rank": 183,
    "city": "Modena",
    "country": "Italy",
    "slug": "modena",
@@ -4028,7 +4050,7 @@
    "travel": 1768
   },
   {
-   "rank": 183,
+   "rank": 184,
    "city": "Bled",
    "country": "Slovenia",
    "slug": "bled",
@@ -4050,7 +4072,7 @@
    "travel": 2720
   },
   {
-   "rank": 184,
+   "rank": 185,
    "city": "Chicago",
    "country": "United States",
    "slug": "chicago",
@@ -4072,7 +4094,7 @@
    "travel": 10277
   },
   {
-   "rank": 185,
+   "rank": 186,
    "city": "Corfu",
    "country": "Greece",
    "slug": "corfu",
@@ -4092,28 +4114,6 @@
    "impressions_10d": 0,
    "clicks_10d": 0,
    "travel": 2707
-  },
-  {
-   "rank": 186,
-   "city": "Salzburg",
-   "country": "Austria",
-   "slug": "salzburg",
-   "score": 2.71,
-   "demand": 107243,
-   "basis": "predicted (travel demand)",
-   "status": "pending",
-   "trees": 0,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 10,
-   "ease": 1.0,
-   "work_score": 2.71,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
-   "travel": 2711
   },
   {
    "rank": 187,

@@ -1,0 +1,1235 @@
+{
+ "source": "Land Salzburg: Naturdenkmäler (OGD_Natur_Land_Salzburg, layer 19)",
+ "endpoint": "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+ "country": "Austria",
+ "designation": "Naturdenkmal under the Salzburg Naturschutzgesetz",
+ "licence": "CC BY 4.0",
+ "licence_proof": "data.europa.eu record 'naturdenkmaler-land-salzburg', Land Salzburg, distribution licence https://creativecommons.org/licenses/by/4.0/. Read 2026-08-16. The Land's own OGD downloads carry the same terms.",
+ "attribution": "Land Salzburg, extract of 2026-08-16",
+ "fetched": "2026-08-16",
+ "scope": "202 Naturdenkmaeler in the province; only the 122 whose name identifies a tree are kept. The rest are glacier mills, caves, waterfalls, gorges and boulders, dropped by the semantic filter.",
+ "caveat": "The register has NO species field, NO age and NO vitality: the German name is the only descriptor, so species comes from the name and every one is a per-tree check. Geometry is polygons, so each coordinate is a ring centroid and pins default to approximate. Names that are plural or say Allee mark several trees under one designation and carry publishable=false under the collectible-point rule. The tree filter is a name regex and will have edge cases in both directions.",
+ "count": 122,
+ "trees": [
+  {
+   "register_id": "NDM00005",
+   "name_de": "Bergahorn Judenhofbauer Goldegg",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.322189,
+   "longitude": 13.092416,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00007",
+   "name_de": "Ahorn auf der Postwiese in Untertauern",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.30548,
+   "longitude": 13.506841,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00012",
+   "name_de": "Linden in Obertrum",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.937119,
+   "longitude": 13.078279,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "register_id": "NDM00015",
+   "name_de": "Linden auf der Schanze Straßwalchen",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.978978,
+   "longitude": 13.25722,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "register_id": "NDM00016",
+   "name_de": "Linde auf der Wiesenparzelle 421 Brunn",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.88102,
+   "longitude": 13.15453,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00017",
+   "name_de": "Linde bei Kirche in Dienten",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.378594,
+   "longitude": 13.000962,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00019",
+   "name_de": "Eiche am Erentrudishof, Stift Nonnberg",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.777536,
+   "longitude": 13.050979,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00020",
+   "name_de": "Dorflinde in Faistenau",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.777896,
+   "longitude": 13.233781,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00022",
+   "name_de": "Ahorngruppe b.der Thumersbacher Kapelle",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.331479,
+   "longitude": 12.828793,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "register_id": "NDM00025",
+   "name_de": "Ahorne um das Schloß Kaprun",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.274671,
+   "longitude": 12.770754,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00029",
+   "name_de": "Zwei Linden in Henndorf",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.911981,
+   "longitude": 13.184806,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "register_id": "NDM00035",
+   "name_de": "Eiche beim  Woferlgut in Bruck",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.283821,
+   "longitude": 12.816645,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00039",
+   "name_de": "Linde vor dem Gasthaus Moser Thalgau",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.841715,
+   "longitude": 13.253445,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00040",
+   "name_de": "Kaiserjubiläumslinde in Thalgau",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.841578,
+   "longitude": 13.253578,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00043",
+   "name_de": "Eiche in Ausserfelden,Gmd.Bischofshofen",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.402858,
+   "longitude": 13.190989,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00046",
+   "name_de": "Zirbe am Granitzlmoos in Sauerfeld",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.135249,
+   "longitude": 13.923038,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00048",
+   "name_de": "Kugellärche a.d. Fötschlleiten Thomatal",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.081367,
+   "longitude": 13.724698,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00054",
+   "name_de": "Linde am Kirchenplatz in St.Gilgen",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.766866,
+   "longitude": 13.365282,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00055",
+   "name_de": "Fels u. Baumpartie am Scharflingerberg",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.790598,
+   "longitude": 13.391052,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00056",
+   "name_de": "Linden bei St.Augustin",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.078958,
+   "longitude": 13.697221,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "register_id": "NDM00057",
+   "name_de": "Linde in Spannswag Gmd. Köstendorf",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.958767,
+   "longitude": 13.176529,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00059",
+   "name_de": "Zirbe beim Kreuz Schloßgut in Penk",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.146425,
+   "longitude": 13.905771,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00060",
+   "name_de": "Rotbuche n.d.Gappmaieranwesen Sauerfeld",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.139536,
+   "longitude": 13.858067,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00070",
+   "name_de": "Eichengruppe am Wolfsgartenweg",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.805424,
+   "longitude": 13.077766,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "register_id": "NDM00071",
+   "name_de": "Zirben beim Kramaterkreuz in Fanningberg",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.145352,
+   "longitude": 13.693584,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00072",
+   "name_de": "Bergahorn bei der Kaltenbach-Kapelle",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.098069,
+   "longitude": 13.62972,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00075",
+   "name_de": "Platane im Fordhof in Salzburg",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.811653,
+   "longitude": 13.042854,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00078",
+   "name_de": "Linde in der Glaserstraße",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.778242,
+   "longitude": 13.086865,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00079",
+   "name_de": "Eichen an der Watzmannstraße in Aigen",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.786146,
+   "longitude": 13.082316,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "register_id": "NDM00080",
+   "name_de": "Baumgruppe am Fuchshügel Aigen",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.807293,
+   "longitude": 13.075984,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "register_id": "NDM00082",
+   "name_de": "Baumreihe an der Grenze GP 529/1 u.700/1",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.785224,
+   "longitude": 13.084641,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "register_id": "NDM00084",
+   "name_de": "Linden in Kirchfenning",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.897107,
+   "longitude": 13.172645,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "register_id": "NDM00085",
+   "name_de": "Landauer Linde",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.717138,
+   "longitude": 13.436615,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00086",
+   "name_de": "Linde beim Haas Häusl in Ried",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.750052,
+   "longitude": 13.417745,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00091",
+   "name_de": "Stephan Ludwig Roth Eiche in Morzg",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.759881,
+   "longitude": 13.039133,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00094",
+   "name_de": "Linde beim Hinterergut",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.731702,
+   "longitude": 13.266182,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00097",
+   "name_de": "Schneefichte auf der Schlickenalm",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.192734,
+   "longitude": 13.703527,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00100",
+   "name_de": "Linden in Freisaal",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.788873,
+   "longitude": 13.055425,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "register_id": "NDM00101",
+   "name_de": "Fichte bei der Hellbrunner Allee",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.7676,
+   "longitude": 13.064357,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "register_id": "NDM00103",
+   "name_de": "Zirbe beim Wengergut in Tamsweg",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.150913,
+   "longitude": 13.841276,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00104",
+   "name_de": "Lindengruppe beim Storeggergut Thalgauberg",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.862886,
+   "longitude": 13.254786,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "register_id": "NDM00107",
+   "name_de": "Baumgruppe beim Hölzlkreuz in Krispl",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.715675,
+   "longitude": 13.178131,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "register_id": "NDM00109",
+   "name_de": "Rotbuche in Hammer",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.142508,
+   "longitude": 13.667205,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00112",
+   "name_de": "Bergahorn b. Handlerhof in Hintermoos",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.372991,
+   "longitude": 12.937933,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00114",
+   "name_de": "Schwarzkiefer im Fordhof",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.811393,
+   "longitude": 13.042411,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00115",
+   "name_de": "Ahorngruppe in Maria Alm",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.402664,
+   "longitude": 12.901736,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "register_id": "NDM00120",
+   "name_de": "Maler Fischbach Eichen",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.795277,
+   "longitude": 13.070886,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "register_id": "NDM00121",
+   "name_de": "Loreto-Lärchen",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.388448,
+   "longitude": 13.458012,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00127",
+   "name_de": "Linde in Viehhausen",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.782975,
+   "longitude": 12.986015,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00136",
+   "name_de": "Linde beim Pulvermachergütl in Elsbethen",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.769501,
+   "longitude": 13.0845,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00140",
+   "name_de": "Lindengruppe beim Gasthofgut in der Fritz",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.422201,
+   "longitude": 13.38241,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "register_id": "NDM00141",
+   "name_de": "Zwei Ahornbäume beim Standlhof",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.135071,
+   "longitude": 13.813372,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "register_id": "NDM00146",
+   "name_de": "Bergahorn in Lampersbach",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.463978,
+   "longitude": 13.240202,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00147",
+   "name_de": "Linden u. Stadtteich in Radstadt",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.385145,
+   "longitude": 13.460776,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "register_id": "NDM00150",
+   "name_de": "Dorflinde in Hintersee",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.713882,
+   "longitude": 13.286772,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00153",
+   "name_de": "Linde in Maria Bühel",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.948602,
+   "longitude": 12.926717,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00155",
+   "name_de": "Bergahorn in der Mayer-Einöden",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.276585,
+   "longitude": 12.781086,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00158",
+   "name_de": "Baumgruppe in Maria Plain",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.835274,
+   "longitude": 13.040681,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "register_id": "NDM00160",
+   "name_de": "Zeder beim Feuerseng-Gut",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.440247,
+   "longitude": 13.226318,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00165",
+   "name_de": "Bergahorn auf der Mösernalpe",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.623708,
+   "longitude": 12.582204,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00168",
+   "name_de": "Linde beim Pröllhofgut",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.694274,
+   "longitude": 13.097639,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00171",
+   "name_de": "Lärche im Garten des BG Bad Hofgastein",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.170461,
+   "longitude": 13.108695,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00172",
+   "name_de": "Lärche am Plölitzweg",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.114232,
+   "longitude": 13.434028,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00173",
+   "name_de": "Pappel am Josef-Mayburger-Kai",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.81839,
+   "longitude": 13.036532,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00174",
+   "name_de": "Eiche bei der Glaserstraße in Aigen",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.779508,
+   "longitude": 13.081893,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00177",
+   "name_de": "Eiche an der Sebastian-Kneipp-Straße",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.787318,
+   "longitude": 13.013927,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00178",
+   "name_de": "Zirben beim Oberhofbauern in Filzmoos",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.433589,
+   "longitude": 13.51106,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00179",
+   "name_de": "Buchen am Eingang zum Riedingtal",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.403959,
+   "longitude": 13.107503,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00180",
+   "name_de": "Sommerlinde u.Bergahorn b.Untertaxbachg.",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.307006,
+   "longitude": 13.099442,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00181",
+   "name_de": "Schirmlärche bei der Langeralm",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.104063,
+   "longitude": 13.851521,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00182",
+   "name_de": "Bergahorn beim Wirt in Pichl",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.138374,
+   "longitude": 13.736512,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00184",
+   "name_de": "Bergulme im Stubachtal",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.200053,
+   "longitude": 12.606045,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00185",
+   "name_de": "Linden bei Winkl",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.888583,
+   "longitude": 13.05445,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "register_id": "NDM00187",
+   "name_de": "Bergahorne in Weyer",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.261044,
+   "longitude": 12.321915,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00191",
+   "name_de": "Moertler Linde",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.076811,
+   "longitude": 13.863509,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00192",
+   "name_de": "Linde beim Forsthof in Taxenbach",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.292765,
+   "longitude": 12.958284,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00193",
+   "name_de": "Linde b. Kirchenwirt in St.Georgen",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.287371,
+   "longitude": 12.872737,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00194",
+   "name_de": "Fichte bei der Weyerruine in Bramberg",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.260901,
+   "longitude": 12.318197,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00196",
+   "name_de": "Eiche an der Steinbruchstraße Salzburg",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.796068,
+   "longitude": 13.035994,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00198",
+   "name_de": "Tofferl-Eiche",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.76844,
+   "longitude": 12.959449,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00199",
+   "name_de": "Gschirrnlinde in Eugendorf",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.874072,
+   "longitude": 13.145297,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00201",
+   "name_de": "Kaiserlinde in Hütten Gmd. Leogang",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.441503,
+   "longitude": 12.710031,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00202",
+   "name_de": "Hainbuche am Freisaalweg",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.791818,
+   "longitude": 13.052742,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00205",
+   "name_de": "Bergahorne beim Porsche-Schüttgut",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.302437,
+   "longitude": 12.790705,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00206",
+   "name_de": "Eiche an der Buchholzhofstraße",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.781903,
+   "longitude": 13.057813,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00207",
+   "name_de": "Eiche an der Itzlinger Hauptstraße",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.82614,
+   "longitude": 13.037916,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00209",
+   "name_de": "Linde bei der Plainkirche in Bergheim",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.838479,
+   "longitude": 13.038916,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00210",
+   "name_de": "Linde beim Feuerwehrhaus Elsbethen",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.754597,
+   "longitude": 13.084708,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00211",
+   "name_de": "Linde am Stiftsplatz, Mattsee",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.970577,
+   "longitude": 13.104944,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00212",
+   "name_de": "Linde bei Enharting in Köstendorf",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.96925,
+   "longitude": 13.217714,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00213",
+   "name_de": "Linde in Zellhof, Mattsee",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.984782,
+   "longitude": 13.092879,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00214",
+   "name_de": "Betfichte beim Schönbichlgut, Fusch",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.201189,
+   "longitude": 12.850291,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00215",
+   "name_de": "Linde bei der Liegenschaft Neutorstr.30a",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.797732,
+   "longitude": 13.032798,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00216",
+   "name_de": "Eiche beim Trautl in Oberweißburg",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.103656,
+   "longitude": 13.592975,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00218",
+   "name_de": "Rotbuche an der Hofhaymerallee",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.78532,
+   "longitude": 13.05634,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00219",
+   "name_de": "Bergahorn auf der Saal-Alm",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.361977,
+   "longitude": 12.497036,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00220",
+   "name_de": "Linde beim Kriegerdenkmal",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.946743,
+   "longitude": 13.224295,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00221",
+   "name_de": "Große Linde auf dem Kirchplatz",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.946745,
+   "longitude": 13.224629,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00224",
+   "name_de": "Eichen am Ludwig-Zeller-Weg",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.796671,
+   "longitude": 13.074312,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "register_id": "NDM00225",
+   "name_de": "Eiche am Flurweg",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.773932,
+   "longitude": 13.055263,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00229",
+   "name_de": "Birnbaum in Furithal",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.894541,
+   "longitude": 13.03024,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00230",
+   "name_de": "Stieleiche, Obertrum",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.924192,
+   "longitude": 13.076358,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00231",
+   "name_de": "Bergahorn beim Schartenbauern, Puch",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.717512,
+   "longitude": 13.112974,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00232",
+   "name_de": "Linde an der Gärtnerstraße",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.799808,
+   "longitude": 13.028154,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00233",
+   "name_de": "Weißdornbaum in Schleedorf",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.948628,
+   "longitude": 13.141911,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00235",
+   "name_de": "Peter Raber-Lärche",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.090725,
+   "longitude": 13.513085,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00236",
+   "name_de": "Linde in Webersberg",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.948694,
+   "longitude": 13.062712,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00237",
+   "name_de": "Eichen an der Faistauergasse",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.790791,
+   "longitude": 13.065006,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "register_id": "NDM00238",
+   "name_de": "Bräu-Eiche in Berndorf",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 48.004905,
+   "longitude": 13.071585,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00239",
+   "name_de": "Lindengruppe auf der Bärenleiten",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.893052,
+   "longitude": 13.194898,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "register_id": "NDM00240",
+   "name_de": "Linde am Thurn, Berndorf",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.978128,
+   "longitude": 13.030147,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00242",
+   "name_de": "Hofrat-Breiteneder-Fichte",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.121784,
+   "longitude": 12.186526,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00243",
+   "name_de": "Roßkastanie an der Bachstraße",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.82246,
+   "longitude": 13.065895,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00246",
+   "name_de": "Bergahorn auf dem Kogl in Goldegg",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.327001,
+   "longitude": 13.100101,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00249",
+   "name_de": "Eiben an der Ernest-Thun-Straße",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.80838,
+   "longitude": 13.038854,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00250",
+   "name_de": "Schlangenfichte am Faningberg",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.164547,
+   "longitude": 13.692938,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00251",
+   "name_de": "Eiche an der Aigner Straße 9",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.798802,
+   "longitude": 13.065745,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00252",
+   "name_de": "Neue Kaiserbuche",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.926688,
+   "longitude": 13.008805,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00254",
+   "name_de": "Kandelaber - Fichte in Hintermuhr - Muritzen",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.133202,
+   "longitude": 13.396257,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "register_id": "NDM00255",
+   "name_de": "Eichengruppe beim Wimmgut in St. Veit i. Pg.",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.328991,
+   "longitude": 13.167195,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "register_id": "NDM00258",
+   "name_de": "Joseph Joachim Eichen",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Naturschutzgesetz",
+   "latitude": 47.792145,
+   "longitude": 13.076056,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "register_id": "NDM00260",
+   "name_de": "Bergahorn in Sonnberg",
+   "category": "Naturdenkmal (NDM)",
+   "legal_basis": "Salzburger Naturschutzgesetz 1999, § 6 ff",
+   "latitude": 47.1338,
+   "longitude": 13.548597,
+   "geometry": "polygon centroid",
+   "publishable": true
+  }
+ ]
+}
