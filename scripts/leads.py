@@ -243,6 +243,56 @@ def load(city=None):
                 yield os.path.basename(f)[:-5], e
 
 
+STACK_M = 15.0  # closer than this and a visitor is standing in one spot
+
+
+def fold_stacked(ready):
+    """Split READY into (still ready, folded), where folded means several
+    entries share one standing place.
+
+    Found 2026-08-16 on Toronto: six of its thirteen READY leads carried the
+    same heritage designation, HT-2016-121, and the SAME COORDINATE to four
+    decimals, spread 0 metres. Shipping them would have produced six near
+    identical pages for one place to stand, which fails CLAUDE.md's rule that
+    an entry must be a collectible point, six times over. It is also the
+    Setubal-twins problem, which the corpus already records as a thing
+    registers do: a register counts what it designates, not what a visitor
+    sees, and one designation over a group becomes N rows on import.
+
+    This is the second time in one session that READY turned out not to mean
+    verified, so by the standing ratchet it stops being a caution and becomes
+    a check. Deliberately narrow: it does not block anything and it does not
+    judge quality. It moves stacked entries out of the "needs only a story"
+    bucket, because the honest next step for them is one folded entry written
+    by someone who has looked, not N stories.
+
+    Distance, not id: a shared registration number is the usual cause, but
+    coordinates are what a reader actually experiences, and no naming scheme
+    is common to every register we import.
+    """
+    from geo import km as _km
+    groups, loose = {}, []
+    for row in ready:
+        e = row[1]
+        la, lo = e.get("lat"), e.get("lng")
+        if la is None or lo is None:
+            loose.append(row)
+            continue
+        for key in groups:
+            if _km(key, (la, lo)) * 1000 <= STACK_M:
+                groups[key].append(row)
+                break
+        else:
+            groups[(la, lo)] = [row]
+    still, folded = list(loose), []
+    for rows in groups.values():
+        if len(rows) > 1:
+            folded.append(rows)
+        else:
+            still.extend(rows)
+    return still, folded
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--city")
@@ -269,13 +319,23 @@ def main():
         miss = readiness(e)
         (ready if not miss else needs).append((city, e, miss))
 
-    total = len(ready) + len(needs) + len(blocked) + len(done)
+    ready, folded = fold_stacked(ready)
+    total = len(ready) + len(needs) + len(blocked) + len(done) + len(folded)
     print(f"\n{total} leads. Fail-open: anything not matching data/block-reasons.json ships.\n")
     print(f"  {len(ready):4d}  READY: publishable now, needs only a story written")
     if done:
         extra = f" ({matched} caught only by coordinate match, no marker)" if matched else ""
         print(f"  {len(done):4d}  DONE: already published, kept as a record{extra}")
     print(f"  {len(needs):4d}  NEARLY: unblocked, but missing a field a story needs")
+    if folded:
+        n = sum(len(g) for g in folded)
+        print(f"  {n:4d}  STACKED: {len(folded)} group(s) sharing one standing place, "
+              f"one folded entry each, not one story per row")
+        for g in folded:
+            city = g[0][0]
+            names = ", ".join((row[1].get("name") or "?")[:30] for row in g[:3])
+            more = f" +{len(g) - 3} more" if len(g) > 3 else ""
+            print(f"        {city}: {len(g)} at one point  {names}{more}")
     print(f"  {len(blocked):4d}  BLOCKED: genuinely cannot ship")
 
     if blocked:
