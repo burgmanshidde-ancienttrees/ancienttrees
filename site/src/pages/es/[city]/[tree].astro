@@ -116,7 +116,7 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!);
     <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Inicio</a> › <a href={`/es/${cslug}`}>{tr.city}</a> › <span>{x.name}</span></nav>
     <h1>{x.name}</h1>
     <p class="chip-row">
-      <span class="chip">{x.age_estimate}</span>
+      <span class="chip">{x.age_estimate || "edad desconocida"}</span>
       <span class="chip">{x.species}</span>
       {isApprox && <span class="chip approx">ubicación aproximada</span>}
     </p>
@@ -130,8 +130,12 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!);
         <span class="tree-noph-art" aria-hidden="true"><Fragment set:html={`<svg viewBox="0 0 40 40">${speciesIcon(tree)}</svg>`} /></span>
         <figcaption>
           <b>{x.species}</b>
-          <span>Nadie ha publicado una fotografía de este árbol con una licencia que podamos usar.
-          <a href="/contribute">Envíanos la tuya</a> y aparecerá en esta página con tu nombre.</span>
+          {/* Never "con tu nombre". We do not publish a submitter's name, on
+              any channel, ruled 2026-08-11; the English page never promised it
+              and this one did. A photographer's credit is a different thing and
+              is owed by the licence, not by us. */}
+          <span>Nadie ha publicado una fotografía de este árbol con una licencia que podamos usar.{" "}
+          <a href="/contribute">Envíanos la tuya</a> y aparecerá en esta página.</span>
         </figcaption>
       </figure>
     )}

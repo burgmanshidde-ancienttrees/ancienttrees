@@ -134,7 +134,11 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
     <Breadcrumbs items={crumbItems} />
     <h1>{tree.name}{tree.label && <span class="tree-label">{tree.label}</span>}</h1>
     <p class="chip-row">
-      <span class="chip">{tree.age_estimate ?? "age unknown"}</span>
+      {/* `||` not `??`: a tree with no age carries age_estimate as an empty
+          string as often as it omits the key, and `??` let "" through, which
+          rendered as a bare grey pill with nothing in it. Found on the Vilnius
+          trees, where five of seven have no published age at all. */}
+      <span class="chip">{tree.age_estimate || "age unknown"}</span>
       <span class="chip">{spCommon}</span>
       {isApprox && <span class="chip approx">pin approximate</span>}
 
@@ -149,7 +153,7 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
         <span class="tree-noph-art" aria-hidden="true"><Fragment set:html={`<svg viewBox="0 0 40 40">${speciesIcon(tree)}</svg>`} /></span>
         <figcaption>
           <b>{spCommon}</b>
-          <span>Nobody has published a photograph of this tree under a licence we can use.
+          <span>Nobody has published a photograph of this tree under a licence we can use.{" "}
           <a href="/contribute">Send us yours</a> and it goes on this page.</span>
         </figcaption>
       </figure>
