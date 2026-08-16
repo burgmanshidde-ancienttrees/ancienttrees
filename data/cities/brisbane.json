@@ -2,11 +2,11 @@
   "city": "Brisbane",
   "country": "Australia",
   "status": "needs_curation",
-  "intro": "Walter Hill planted most of what's on this page. Appointed the first curator of Brisbane's City Botanic Gardens in 1855, he spent three decades filling it with trees that were experiments as much as ornament, among them the tree that started Australia's macadamia industry. Seven of these eight stand inside that garden, planted between the 1860s and 1880s; the eighth, three fig trees on a CBD traffic island, is the latest of these plantings, dated 1889, put in for wharf labourers who needed somewhere shaded to sit. All eight are free, unfenced, and within an easy walk of the river.",
+  "intro": "Walter Hill planted most of what's on this page. Appointed the first curator of Brisbane's City Botanic Gardens in 1855, he spent three decades filling it with trees that were experiments as much as ornament, among them the tree that started Australia's macadamia industry. Nine of these ten stand inside that garden; the tenth, three fig trees on a CBD traffic island, was planted in 1889 for wharf labourers who needed somewhere shaded to sit. All ten are free, unfenced, and within an easy walk of the river.",
   "meta_description": "Brisbane's old trees cluster in the City Botanic Gardens: the tree that founded Australia's macadamia industry, a banyan 49 metres round, a 45m Cook Pine.",
-  "question_meta": "Brisbane's oldest tree is a macadamia planted from 1858 trials in the City Botanic Gardens. Where it stands, and seven more of the city's oldest trees.",
+  "question_meta": "Brisbane's oldest tree is a macadamia planted from 1858 trials in the City Botanic Gardens. Where it stands, and nine more of the city's oldest trees.",
   "question_answer": "The oldest tree in Brisbane is the Macadamia Nut Tree in the City Botanic Gardens, at the southern end of the rainforest section near Alice Street. Walter Hill, the gardens' first curator, began trialling the nut here in 1858 using seed brought from Gympie, and the tree that grew from those trials is still standing: roughly 165 years old, 17 metres tall, a metre through the trunk. The National Trust of Australia's significant tree database and a State Library of Queensland account independently record it as the first macadamia brought into cultivation anywhere, and popular sources go further, calling it the oldest cultivated macadamia alive and the starting point of a crop now grown commercially across four continents. That wider claim rests on secondary sources rather than the two-source bar this page applies to age itself, but nothing found contradicts it. The next oldest tree here is close behind: Prince Albert's Cook Pine, planted in 1868 and now the tallest tree in the gardens at 45 metres, though its estimated age band (roughly 158 years) sits below the macadamia's.",
-  "question_context": "This page draws on the National Trust of Australia's Significant Tree Database and, for several entries, a corroborating account from the State Library of Queensland, both describing work done under Walter Hill, the City Botanic Gardens' first curator from 1855. Seven of the eight trees here stand inside that garden; the eighth, the Eagle Street Fig Trees, is a kilometre north on a traffic island in the financial district, planted in 1889 and separately protected on Queensland's state heritage register. Three of the eight (the Old Government House Fig, the Crows Ash and the Bodhi Tree) carry only one dedicated source naming this specific specimen, so their planting dates are the Trust's account rather than independently corroborated, and the page says so plainly on each. The Macadamia Nut Tree's 1858 date comes from when Hill's trials began rather than a single measured planting day, which is why its age is stated as a band rather than a year count. See the full list of eight on the Brisbane page.",
+  "question_context": "This page draws on the National Trust of Australia's Significant Tree Database and, for several entries, a corroborating account from the State Library of Queensland, both describing work done under Walter Hill, the City Botanic Gardens' first curator from 1855. Nine of the ten trees here stand inside that garden; the tenth, the Eagle Street Fig Trees, is a kilometre north on a traffic island, planted in 1889 and separately protected on Queensland's state heritage register. Four of the ten carry only one dedicated source naming this specific specimen, so their planting dates are the Trust's account rather than independently corroborated, and the page says so plainly on each. The Tamarind Tree's age is looser still: the Trust's own account calls it older than the garden, roughly 190 years, a single-sourced estimate rather than a documented date. The Macadamia Nut Tree's 1858 date comes from when Hill's trials began rather than a single measured planting day, which is why its age is a band rather than a year count. See the full list of ten on the Brisbane page.",
   "faq": [
     {
       "q": "What is the oldest tree in Brisbane?",
@@ -14,11 +14,11 @@
     },
     {
       "q": "Are these trees free to visit?",
-      "a": "Yes, all eight. Seven stand inside the City Botanic Gardens, a free public park open daily with no gate and no ticket. The eighth, the Eagle Street Fig Trees, grows on a small public reserve where Eagle, Elizabeth and Creek Streets meet, also free and open at all hours."
+      "a": "Yes, all ten. Nine stand inside the City Botanic Gardens, a free public park open daily with no gate and no ticket. The tenth, the Eagle Street Fig Trees, grows on a small public reserve where Eagle, Elizabeth and Creek Streets meet, also free and open at all hours."
     },
     {
       "q": "Can I see them all in one walk?",
-      "a": "Seven of the eight sit inside the City Botanic Gardens, close enough to cover on one loop of the park. The eighth, the Eagle Street Fig Trees, is about a kilometre north on the edge of the financial district, an easy extra walk or a short trip on the Riverside ferry."
+      "a": "Nine of the ten sit inside the City Botanic Gardens, close enough to cover on one loop of the park. The tenth, the Eagle Street Fig Trees, is about a kilometre north on the edge of the financial district, an easy extra walk or a short trip on the Riverside ferry."
     },
     {
       "q": "Which has the thickest trunk?",
@@ -247,6 +247,64 @@
       "verified_sources": [
         "https://trusttrees.org.au/tree/QLD/Brisbane/Brisbane_City_Botanic_Gardens_147_Alice_Street_6",
         "https://en.wikipedia.org/wiki/Brisbane_City_Botanic_Gardens"
+      ],
+      "access": "Free, City Botanic Gardens is a public park open daily during daylight hours",
+      "transport": "Short walk from Central Station (about 10 minutes) or the QUT Gardens Point ferry terminal (about 5 minutes)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    },
+    {
+      "id": "bne_010",
+      "name": "The Mahogany of Commerce",
+      "species": "Mahogany (Swietenia mahagoni)",
+      "age_estimate": "roughly 165 years",
+      "age_min": 160,
+      "age_max": 170,
+      "location": {
+        "address": "City Botanic Gardens, east of the former curator's cottage, centre of the rainforest section, Alice Street, Brisbane City QLD 4000",
+        "latitude": -27.4777117,
+        "longitude": 153.0312098,
+        "neighbourhood": "City Botanic Gardens"
+      },
+      "story": "Nothing would grow under this tree, and that turned out to be useful. Walter Hill planted it in 1861, testing whether Honduran mahogany could take root as a colonial timber crop the way it had elsewhere in the empire. The tree took, growing into what the National Trust's significant tree database calls probably the first mahogany planted in Queensland and among the oldest of its species anywhere in Australia: 41 metres tall, its trunk two metres through.\n\nThe bare ground under its canopy shaped part of the garden decades later. A later curator, Harry Oakman, turned the empty soil beneath and around the mahogany into what became the gardens' rainforest section, so a tree brought in to test a colonial industry ended up dictating the layout of an entirely different corner of the park.\n\nThe timber trade Hill hoped for never really arrived. Mahogany stayed a curiosity in Australia rather than a crop, unlike the macadamia planted a few decades later just 35 metres away. The most recent recorded inspection, from February 2014, found the tree in good condition. What is left of the experiment is one very tall, two-metre-thick specimen and the ground it cleared for something else entirely.",
+      "verified_sources": [
+        "https://www.trusttrees.org.au/tree/QLD/Brisbane/Brisbane_City_Botanic_Gardens_Alice_Street_12",
+        "https://brisbanebotanictreasures.info/exploring-brisbane-city-botanic-gardens/landscape-design-city-botanic-gardens/"
+      ],
+      "access": "Free, City Botanic Gardens is a public park open daily during daylight hours",
+      "transport": "Short walk from Central Station (about 10 minutes) or the QUT Gardens Point ferry terminal (about 5 minutes)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    },
+    {
+      "id": "bne_011",
+      "name": "The Tamarind Tree",
+      "species": "Tamarind (Tamarindus indica)",
+      "age_estimate": "not firmly documented; the register's own estimate is roughly 190 years",
+      "age_min": 165,
+      "age_max": 200,
+      "location": {
+        "address": "City Botanic Gardens, south-east part of the gardens, beside the path leading to Old Government House, Alice Street, Brisbane City QLD 4000",
+        "latitude": -27.4765647,
+        "longitude": 153.0303723,
+        "neighbourhood": "City Botanic Gardens"
+      },
+      "story": "The National Trust's own record puts this tamarind older than the garden around it: 'thought to predate the formation of the Botanic Gardens', which were declared in 1855, with an estimated age near 190 years. That would set its planting in the mid-1830s, two decades before Walter Hill ever picked up a spade here. It rests on one source and reads better as an estimate than as a settled fact.\n\nWhat is not in doubt is that it is a real, fruiting tamarind. A Rare Fruit Council Australia trip report from May 1994 describes visiting it two years earlier: 'a large multi-stemmed tamarind, about forty foot tall with a forty six foot spread', starting to fruit for the season. The National Trust's current entry gives it 18 metres and makes no mention of multiple stems, a gap of three decades and one that measurement alone does not resolve; the two accounts may describe the same tree at different points in its growth, or there may be more to the difference than growth explains.\n\nIt stands in the older, southern reach of the gardens, on the path toward Old Government House, still producing the sour brown pods that turn up in curries and chutneys across a tropics it was never native to. Whatever its real age, it is fruiting now, which most of Brisbane's founding-era trees no longer bother to do.",
+      "verified_sources": [
+        "https://trusttrees.org.au/tree/QLD/Brisbane/Brisbane_City_Botanic_Gardens_Alice_Street_15",
+        "https://www.rfcarchives.org.au/Next/PeoplePlaces/BrisbaneBotGardens5-94.htm"
       ],
       "access": "Free, City Botanic Gardens is a public park open daily during daylight hours",
       "transport": "Short walk from Central Station (about 10 minutes) or the QUT Gardens Point ferry terminal (about 5 minutes)",

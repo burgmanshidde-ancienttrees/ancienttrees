@@ -1858,6 +1858,42 @@
         "note": "All 23 unmined register candidates matched (0-37m) to already-published trees or previously-blocked Casa da Penha sites; the two flagged 'genuinely remarkable' camellia leads (Casa de Margaride, Casa da Covilha) re-checked in depth and both still fail hard rule 10 access (guided-tour-only, no standing public hours), so zero new trees. One source disagreement and one mislocated third-party coordinate recorded in data/leads/guimaraes.json for a future pass.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "brisbane",
+        "kind": "verify",
+        "tokens": 95000,
+        "trees": 2,
+        "note": "Two more City Botanic Gardens specimens (Mahogany of Commerce, Tamarind Tree) verified via National Trust register plus independent corroboration; closes Brisbane's gap to its target of 10.",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "brisbane",
+        "kind": "session",
+        "tokens": 0,
+        "trees": 2,
+        "note": "Wrote and merged bne_010/bne_011 in session (2 trees, small batch), updated intro/meta/FAQ counts from 8 to 10, trimmed intro and question_context back under their word caps. Tokens not logged by the harness, recorded as 0 rather than leaving the pass silent.",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "poznan",
+        "kind": "verify",
+        "tokens": 100000,
+        "trees": 4,
+        "note": "Finished 4 of 5 stale leads (2 Cytadela oaks, Park Wilsona plane, Wilda oak) via GDOS register cross-referenced against poznan.pl/Wikipedia/press since CRFOP detail pages 403 to automated fetches; 5th (Kasserna Park oak) fully verified but held as a ready lead to avoid overshooting the 10-tree target.",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "many-cities",
+        "kind": "session",
+        "tokens": 0,
+        "trees": 0,
+        "note": "Set best_time on 64 already-published trees across 19 depth-allowed cities (DATA.md's demand roster) from data/phenology/ species files that already recorded a real striking/worth-the-trip seasonal moment. No new trees, no research, pure data-fill. Tokens not logged by the harness, recorded as 0 rather than leaving the pass silent.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
