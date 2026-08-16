@@ -1,0 +1,825 @@
+{
+ "source": "Stadt Graz, Stadtvermessungsamt: Naturdenkmale (open government data)",
+ "endpoint": "https://geodaten.graz.at/arcgis/rest/services/OGD/OGD_WFS/MapServer/8/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+ "country": "Austria",
+ "designation": "Naturdenkmal under Styrian nature conservation law, as mapped by the City of Graz",
+ "licence": "CC BY 4.0",
+ "licence_proof": "data.europa.eu record 'stadt-graz_naturdenkmale', publisher Stadt Graz Stadtvermessungsamt (graz.at/stadtvermessungsamt), distribution licence https://creativecommons.org/licenses/by/4.0/. Read 2026-08-16 through the EU open data portal's DCAT record; the same CC BY 4.0 covers Land Steiermark's own Naturdenkmale distribution.",
+ "attribution": "Stadt Graz, Stadtvermessungsamt, extract of 2026-08-16",
+ "fetched": "2026-08-16",
+ "scope": "90 mapped Naturdenkmale in Graz. 36 are publicly owned, 36 privately owned and 18 carry no owner at all.",
+ "caveat": "The only descriptive field is BAUMART, the species in German, so there is no age, no girth and no vitality: everything else is a per-tree check. EIGENTUEMER is the hard rule 10 field and is why only the 36 'oeffentlich' rows carry publishable=true; a blank owner is unknown rather than public and stays out until somebody checks. Found by scripts/eu_register_sweep.py after a morning of guessing Austrian hostnames failed.",
+ "count": 90,
+ "trees": [
+  {
+   "register_id": 2,
+   "object_id": 40,
+   "species_de": "Platane (Platanus x hispanica)",
+   "latitude": 47.074827,
+   "longitude": 15.391015,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 94,
+   "object_id": 42,
+   "species_de": "Gemeine Esche (Fraxinus excelsior)",
+   "latitude": 47.083533,
+   "longitude": 15.428634,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 95,
+   "object_id": 43,
+   "species_de": "Pyramideneiche (Quercus robur \"Fastigiata\")",
+   "latitude": 47.099598,
+   "longitude": 15.393516,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 97,
+   "object_id": 44,
+   "species_de": "Blutbuche (Fagus sylvatica \"Purpurea\")",
+   "latitude": 47.088309,
+   "longitude": 15.435504,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 98,
+   "object_id": 45,
+   "species_de": "Eibe (Taxus baccata)",
+   "latitude": 47.089681,
+   "longitude": 15.441691,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 99,
+   "object_id": 46,
+   "species_de": "Mammutbaum (Sequoiadendron giganteum)",
+   "latitude": 47.089323,
+   "longitude": 15.441286,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 102,
+   "object_id": 47,
+   "species_de": "Platane (Platanus x hispanica)",
+   "latitude": 47.083315,
+   "longitude": 15.444978,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 104,
+   "object_id": 48,
+   "species_de": "Platane (Platanus x hispanica)",
+   "latitude": 47.080965,
+   "longitude": 15.4367,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 109,
+   "object_id": 49,
+   "species_de": "Ginkgo (Ginkgo biloba)",
+   "latitude": 47.049613,
+   "longitude": 15.390305,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 111,
+   "object_id": 50,
+   "species_de": "Linde",
+   "latitude": 47.123142,
+   "longitude": 15.429165,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 43,
+   "object_id": 51,
+   "species_de": "Magnolie (Magnolia x soulanginana)",
+   "latitude": 47.071283,
+   "longitude": 15.408628,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 121,
+   "object_id": 52,
+   "species_de": "Platane (Platanus x hispanica)",
+   "latitude": 47.048907,
+   "longitude": 15.394576,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 123,
+   "object_id": 54,
+   "species_de": "Blutbuche (Fagus sylvatica \"Purpurea\")",
+   "latitude": 47.044655,
+   "longitude": 15.435984,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 52,
+   "object_id": 56,
+   "species_de": "Mammutbaum (Sequoiadendron giganteum)",
+   "latitude": 47.105229,
+   "longitude": 15.487117,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 130,
+   "object_id": 57,
+   "species_de": "Weinrebe - Isabella (Vitis x alexanderi)",
+   "latitude": 47.080528,
+   "longitude": 15.432995,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 129,
+   "object_id": 58,
+   "species_de": "Stieleiche (Quercus robur)",
+   "latitude": 47.037557,
+   "longitude": 15.401184,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 4,
+   "object_id": 59,
+   "species_de": "Platane (Platanus x hispanica)",
+   "latitude": 47.075085,
+   "longitude": 15.391012,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 8,
+   "object_id": 60,
+   "species_de": "Weymouthskiefer (Pinus strobus)",
+   "latitude": 47.072987,
+   "longitude": 15.39147,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 11,
+   "object_id": 62,
+   "species_de": "Weymouthskiefer (Pinus strobus)",
+   "latitude": 47.072265,
+   "longitude": 15.392467,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 13,
+   "object_id": 63,
+   "species_de": "Mädchenhaarbaum (Ginkgo biloba)",
+   "latitude": 47.074232,
+   "longitude": 15.448408,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 15,
+   "object_id": 64,
+   "species_de": "Stieleiche (Quercus robur)",
+   "latitude": 47.087014,
+   "longitude": 15.450169,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 16,
+   "object_id": 65,
+   "species_de": "Stieleiche (Quercus robur)",
+   "latitude": 47.087283,
+   "longitude": 15.449682,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 20,
+   "object_id": 66,
+   "species_de": "Lebensbaum (Thuja occidentalis)",
+   "latitude": 47.04916,
+   "longitude": 15.488631,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 23,
+   "object_id": 68,
+   "species_de": "Dirndlbeere (Cornus mas)",
+   "latitude": 47.099705,
+   "longitude": 15.468162,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 27,
+   "object_id": 69,
+   "species_de": "Platane (Platanus x hispanica)",
+   "latitude": 47.075646,
+   "longitude": 15.454619,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 28,
+   "object_id": 70,
+   "species_de": "Platane (Platanus x hispanica)",
+   "latitude": 47.07492,
+   "longitude": 15.450013,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 29,
+   "object_id": 71,
+   "species_de": "Platane (Platanus x hispanica)",
+   "latitude": 47.075802,
+   "longitude": 15.455286,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 30,
+   "object_id": 72,
+   "species_de": "Platane (Platanus x hispanica)",
+   "latitude": 47.075743,
+   "longitude": 15.455126,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 37,
+   "object_id": 74,
+   "species_de": "Blutbuche (Fagus sylvatica \"Purpurea\")",
+   "latitude": 47.090027,
+   "longitude": 15.459851,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 38,
+   "object_id": 75,
+   "species_de": "Feldahorn (Acer campestre)",
+   "latitude": 47.062255,
+   "longitude": 15.437708,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 42,
+   "object_id": 76,
+   "species_de": "Stieleiche (Quercus robur)",
+   "latitude": 47.042679,
+   "longitude": 15.445765,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 112,
+   "object_id": 78,
+   "species_de": "Eiche",
+   "latitude": 47.041209,
+   "longitude": 15.469298,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 116,
+   "object_id": 80,
+   "species_de": "Blutbuche (Fagus sylvatica \"Purpurea\")",
+   "latitude": 47.036957,
+   "longitude": 15.458117,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 51,
+   "object_id": 81,
+   "species_de": "Platane (Platanus x hispanica)",
+   "latitude": 47.076629,
+   "longitude": 15.391006,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 54,
+   "object_id": 82,
+   "species_de": "Sommerlinde (Tilia platyphyllos)",
+   "latitude": 47.103983,
+   "longitude": 15.415837,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 55,
+   "object_id": 83,
+   "species_de": "Roßkastanie (Aesculus hippocastanum)",
+   "latitude": 47.104295,
+   "longitude": 15.415887,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 56,
+   "object_id": 84,
+   "species_de": "Stechpalme (Ilex aquifolium)",
+   "latitude": 47.096061,
+   "longitude": 15.484729,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 58,
+   "object_id": 85,
+   "species_de": "Eibe (Taxus baccata)",
+   "latitude": 47.068217,
+   "longitude": 15.488985,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 62,
+   "object_id": 86,
+   "species_de": "Stieleiche (Quercus robur)",
+   "latitude": 47.127166,
+   "longitude": 15.419183,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 72,
+   "object_id": 89,
+   "species_de": "Roteiche (Quercus rubra)",
+   "latitude": 47.077652,
+   "longitude": 15.456796,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 75,
+   "object_id": 90,
+   "species_de": "Maulbeerbaum (Morus alba)",
+   "latitude": 47.066253,
+   "longitude": 15.432951,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 80,
+   "object_id": 91,
+   "species_de": "Hemlocktanne",
+   "latitude": 47.083347,
+   "longitude": 15.462795,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 84,
+   "object_id": 92,
+   "species_de": "Mammutbaum (Sequoiadendron giganteum)",
+   "latitude": 47.086504,
+   "longitude": 15.456163,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 87,
+   "object_id": 93,
+   "species_de": "Eiche",
+   "latitude": 47.079944,
+   "longitude": 15.395974,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 88,
+   "object_id": 94,
+   "species_de": "Roßkastanie (Aesculus hippocastanum)",
+   "latitude": 47.065854,
+   "longitude": 15.46229,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 89,
+   "object_id": 95,
+   "species_de": "Platane (Platanus x hispanica)",
+   "latitude": 47.068702,
+   "longitude": 15.459209,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 44,
+   "object_id": 96,
+   "species_de": "Platane (Platanus orientalis L)",
+   "latitude": 47.050967,
+   "longitude": 15.455847,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 93,
+   "object_id": 97,
+   "species_de": "Buche",
+   "latitude": 47.065499,
+   "longitude": 15.454885,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 117,
+   "object_id": 98,
+   "species_de": "Stieleiche (Quercus robur)",
+   "latitude": 47.073638,
+   "longitude": 15.426257,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 5,
+   "object_id": 99,
+   "species_de": "Platane (Platanus x hispanica)",
+   "latitude": 47.074974,
+   "longitude": 15.391162,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 41,
+   "object_id": 100,
+   "species_de": "Blutbuche (Fagus sylvatica \"Purpurea\")",
+   "latitude": 47.080542,
+   "longitude": 15.461506,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 127,
+   "object_id": 101,
+   "species_de": "Eibe (Taxus baccata)",
+   "latitude": 47.091354,
+   "longitude": 15.473432,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 7,
+   "object_id": 104,
+   "species_de": "Weymouthskiefer (Pinus strobus)",
+   "latitude": 47.073022,
+   "longitude": 15.391574,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 19,
+   "object_id": 106,
+   "species_de": "Mammutbaum (Sequoiadendron giganteum)",
+   "latitude": 47.049416,
+   "longitude": 15.488215,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 71,
+   "object_id": 109,
+   "species_de": "Rotbuche (Fagus sylvatica)",
+   "latitude": 47.077408,
+   "longitude": 15.457036,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 100,
+   "object_id": 110,
+   "species_de": "Blutbuche (Fagus sylvatica \"Purpurea\")",
+   "latitude": 47.095181,
+   "longitude": 15.459479,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 119,
+   "object_id": 1,
+   "species_de": "Platane (Platanus x hispanica)",
+   "latitude": 47.073456,
+   "longitude": 15.42566,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 6,
+   "object_id": 2,
+   "species_de": "Platane (Platanus x hispanica)",
+   "latitude": 47.074836,
+   "longitude": 15.39145,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 18,
+   "object_id": 4,
+   "species_de": "Platane (Platanus x hispanica)",
+   "latitude": 47.078757,
+   "longitude": 15.460335,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 33,
+   "object_id": 7,
+   "species_de": "Stieleiche (Quercus robur)",
+   "latitude": 47.096254,
+   "longitude": 15.468223,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 47,
+   "object_id": 8,
+   "species_de": "Hängehainbuche (Carpinus betulus \"Pendula\")",
+   "latitude": 47.070367,
+   "longitude": 15.458708,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 124,
+   "object_id": 11,
+   "species_de": "Esche (Fraxinus excelsior)",
+   "latitude": 47.081396,
+   "longitude": 15.453938,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 69,
+   "object_id": 12,
+   "species_de": "Edelkastanie (Castanea sativa)",
+   "latitude": 47.069641,
+   "longitude": 15.498169,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 3,
+   "object_id": 13,
+   "species_de": "Platane (Platanus x hispanica)",
+   "latitude": 47.074938,
+   "longitude": 15.390917,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 96,
+   "object_id": 18,
+   "species_de": "Fichte (Picea abies)",
+   "latitude": 47.087209,
+   "longitude": 15.461211,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 9,
+   "object_id": 19,
+   "species_de": "Weymouthskiefer (Pinus strobus)",
+   "latitude": 47.072809,
+   "longitude": 15.391445,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 118,
+   "object_id": 112,
+   "species_de": "Feldahorn (Acer campestre)",
+   "latitude": 47.076738,
+   "longitude": 15.437847,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 77,
+   "object_id": 123,
+   "species_de": "Paulownia (Paulownia tomentosa)",
+   "latitude": 47.080948,
+   "longitude": 15.448981,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 78,
+   "object_id": 124,
+   "species_de": "Blutbuche (Fagus sylvatica \"Purpurea\")",
+   "latitude": 47.082915,
+   "longitude": 15.463631,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 115,
+   "object_id": 125,
+   "species_de": "2 Weihrauchzedern (Calocedrus decurrens)",
+   "latitude": 47.053896,
+   "longitude": 15.388773,
+   "owner": "privat",
+   "publishable": false
+  },
+  {
+   "register_id": 120,
+   "object_id": 126,
+   "species_de": "Platane (Platanus x hispanica)",
+   "latitude": 47.073034,
+   "longitude": 15.427946,
+   "owner": "öffentlich",
+   "publishable": true
+  },
+  {
+   "register_id": 133,
+   "object_id": 787,
+   "species_de": "Stieleiche",
+   "latitude": 47.046054,
+   "longitude": 15.444735,
+   "owner": null,
+   "publishable": false
+  },
+  {
+   "register_id": 137,
+   "object_id": 791,
+   "species_de": "Atlas-Zeder",
+   "latitude": 47.06632,
+   "longitude": 15.503171,
+   "owner": null,
+   "publishable": false
+  },
+  {
+   "register_id": 131,
+   "object_id": 785,
+   "species_de": "Stieleiche",
+   "latitude": 47.0546,
+   "longitude": 15.409192,
+   "owner": null,
+   "publishable": false
+  },
+  {
+   "register_id": 132,
+   "object_id": 786,
+   "species_de": "Urweltmammutbaum",
+   "latitude": 47.056105,
+   "longitude": 15.483501,
+   "owner": null,
+   "publishable": false
+  },
+  {
+   "register_id": 135,
+   "object_id": 784,
+   "species_de": "Hainbuche",
+   "latitude": 47.076457,
+   "longitude": 15.459147,
+   "owner": null,
+   "publishable": false
+  },
+  {
+   "register_id": 128,
+   "object_id": 789,
+   "species_de": "Stieleiche",
+   "latitude": 47.054624,
+   "longitude": 15.410444,
+   "owner": null,
+   "publishable": false
+  },
+  {
+   "register_id": 138,
+   "object_id": 790,
+   "species_de": "Winterlinde",
+   "latitude": 47.099844,
+   "longitude": 15.408392,
+   "owner": null,
+   "publishable": false
+  },
+  {
+   "register_id": 134,
+   "object_id": 788,
+   "species_de": "Spitzahorn",
+   "latitude": 47.080297,
+   "longitude": 15.453016,
+   "owner": null,
+   "publishable": false
+  },
+  {
+   "register_id": 136,
+   "object_id": 1103,
+   "species_de": "Kopfeibe",
+   "latitude": 47.07114,
+   "longitude": 15.464966,
+   "owner": null,
+   "publishable": false
+  },
+  {
+   "register_id": 126,
+   "object_id": 1423,
+   "species_de": "Platane",
+   "latitude": 47.048797,
+   "longitude": 15.441806,
+   "owner": null,
+   "publishable": false
+  },
+  {
+   "register_id": 139,
+   "object_id": 1424,
+   "species_de": "Blutbuche",
+   "latitude": 47.100677,
+   "longitude": 15.417912,
+   "owner": null,
+   "publishable": false
+  },
+  {
+   "register_id": 140,
+   "object_id": 1425,
+   "species_de": "Eibe",
+   "latitude": 47.08081,
+   "longitude": 15.443743,
+   "owner": null,
+   "publishable": false
+  },
+  {
+   "register_id": 141,
+   "object_id": 1426,
+   "species_de": "Kobushi Magnolie",
+   "latitude": 47.060731,
+   "longitude": 15.448026,
+   "owner": null,
+   "publishable": false
+  },
+  {
+   "register_id": 142,
+   "object_id": 1427,
+   "species_de": "Steineiche",
+   "latitude": 47.053668,
+   "longitude": 15.388571,
+   "owner": null,
+   "publishable": false
+  },
+  {
+   "register_id": 143,
+   "object_id": 1428,
+   "species_de": "Stieleiche",
+   "latitude": 47.076373,
+   "longitude": 15.452875,
+   "owner": null,
+   "publishable": false
+  },
+  {
+   "register_id": 144,
+   "object_id": 1429,
+   "species_de": "Roteiche",
+   "latitude": 47.046235,
+   "longitude": 15.423023,
+   "owner": null,
+   "publishable": false
+  },
+  {
+   "register_id": 145,
+   "object_id": 1430,
+   "species_de": "Eibe",
+   "latitude": 47.070136,
+   "longitude": 15.460891,
+   "owner": null,
+   "publishable": false
+  },
+  {
+   "register_id": 146,
+   "object_id": 1431,
+   "species_de": "Atlaszeder",
+   "latitude": 47.021315,
+   "longitude": 15.433171,
+   "owner": null,
+   "publishable": false
+  },
+  {
+   "register_id": 108,
+   "object_id": 38,
+   "species_de": "Linde",
+   "latitude": 47.10756,
+   "longitude": 15.492105,
+   "owner": "privat",
+   "publishable": false
+  }
+ ]
+}

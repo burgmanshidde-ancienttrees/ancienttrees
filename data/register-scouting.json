@@ -65,8 +65,8 @@
   {
    "place": "Steiermark",
    "country": "Austria",
-   "status": "stalled",
-   "note": "Naturdenkmaeler published under CC BY 4.0 with WMS/WFS via haleconnect.com, but the INSPIRE record carries no service URL and data.gv.at has replaced its CKAN API with a JavaScript app. Covers Graz (#92). Next: read data.steiermark.at in a browser, the way stvk.lt was solved.",
+   "status": "imported",
+   "note": "SOLVED 2026-08-16 by scripts/eu_register_sweep.py, after a morning of guessing Austrian hostnames got nowhere. data.gv.at has replaced its CKAN API with a JavaScript app, but data.europa.eu aggregates the same DCAT records and states the licence outright: 'Naturdenkmale Graz' (stadt-graz_naturdenkmale, Stadt Graz Stadtvermessungsamt) is CC BY 4.0 with an ArcGIS query endpoint at geodaten.graz.at, and Land Steiermark publishes its own Naturdenkmale.zip shapefile under the same licence. Graz imported: data/registers/graz-naturdenkmale.json, 90 entries, 36 public. The EU sweep also shows CC BY natural-monument datasets for Salzburg, Tyrol, Lower Austria, Upper Austria, Burgenland, Vorarlberg and Vienna, so the rest of Austria is now a fetch rather than a hunt.",
    "covers": [
     "Graz"
    ]
