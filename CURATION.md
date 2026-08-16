@@ -9,6 +9,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-16 - Prague's prg_007 flagged "wrong location": re-verified, coordinates match the source to within 5 metres
+
+Supabase `submissions` held one new `kind: feedback` row (id 4, created 2026-08-15 19:00 UTC) reporting prg_007 (The Oak of Cisarsky ostrov, Prague) as "wrong location". Treated as a lead, not a fact, per the submission-handling rule.
+
+Re-fetched both cited sources. Czech Wikipedia (sourced from Wikidata) gives 50°6'40.66"N 14°24'49.54"E, which converts to 50.111295, 14.413761; our stored pin is 50.1113, 14.4138, a difference of a few metres, well inside GPS precision. Nominatim reverse-geocodes our exact coordinate to a service road named "Cisarsky ostrov" in Bubeneč, Praha 7, i.e. on land, on the embankment path, not in the canal or river. Prazskestromy.cz's own register entry (#45) describes the tree as standing on the island's south bank along the road beside the navigation canal, under 200m from the bridge to Kralovska obora (Stromovka) — matching our story and address text exactly, no bridge-claim join involved. Also checked: the island is genuinely publicly reachable, three bridges plus a 2020 footbridge from Troja, contradicting no part of our `access`/`transport` fields.
+
+No error found. Left the tree unchanged (location_precision stays `confirmed`). Likely explanation is either a stale in-session test of the report feature or a visitor who could not find the crossing rather than an actual pin error; nothing here rules that out, so a second report on the same tree should re-open this rather than being waved off. Marked id 4 processed in `data/submissions-processed.json`.
+
 ## 2026-08-15 - Five cities published: Brno, Poznan, Wroclaw, Quebec City, Potsdam
 
 Merged in one session from verified files. All 26 trees flagged, all 26 photos missing, which is the normal state for a new register-backed city and is a photo-pass job, not a research gap.
