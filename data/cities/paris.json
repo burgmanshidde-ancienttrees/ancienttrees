@@ -3,9 +3,9 @@
   "country": "France",
   "status": "needs_curation",
   "intro": "Paris treats its trees as part of the civic record: the city logs every one of its 200,000 street and park trees in an open register and stamps a select few as officially remarkable. Its two oldest trees are father and son, black locusts raised four centuries ago from American seed by the royal herbalist Jean Robin and his son Vespasien, and both still flower every spring. They include the city's oldest tree, its thickest, its tallest, and an address that has held an elm since the Middle Ages. Every one is a metro ride away.",
-  "meta_description": "Paris logs its remarkable trees like monuments. Meet the 1601 Robinier, planted by the king's herbalist, and 24 more within a metro ride.",
+  "meta_description": "Paris logs its remarkable trees like monuments. Meet the 1601 Robinier, planted by the king's herbalist, and 29 more within a metro ride.",
   "question_answer": "The oldest tree in Paris is the Robinier of Square Rene-Viviani, a black locust planted in 1601 by the royal herbalist Jean Robin, now around 425 years old. It stands in the Latin Quarter directly opposite Notre-Dame, three minutes on foot from Saint-Michel Notre-Dame station.",
-  "question_meta": "The 1601 Robinier of Square Rene-Viviani is the oldest tree in Paris. Its story, exact location, and 24 more remarkable trees nearby.",
+  "question_meta": "The 1601 Robinier of Square Rene-Viviani is the oldest tree in Paris. Its story, exact location, and 29 more remarkable trees nearby.",
   "question_context": "Paris is unusual among capitals in that its oldest tree has a name, a planting date and a planter. Jean Robin, herbalist to Henri IV, raised the black locust from American seed and set it in the ground in 1601, nineteen years before the Mayflower sailed. It still stands in Square Rene-Viviani opposite Notre-Dame, propped by concrete and partly hidden by ivy, and it still flowers every spring. The runner-up is its own son: in 1636 Robin's son Vespasien took a cutting and planted it in the new royal medicinal garden, now the Jardin des Plantes, where it also survives. That makes the two oldest trees in Paris a documented parent and child, four centuries old and two kilometres apart. Both are black locusts, an American species that reached Europe as a handful of seeds and was named Robinia after the family. For age with grandeur rather than paperwork, the Cedar of Jussieu from 1734 is the city's third elder. Getting there: Saint-Michel Notre-Dame station, then a three minute walk along the Seine.",
   "faq": [
     {
@@ -823,6 +823,161 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate"
+    },
+    {
+      "id": "par_028",
+      "name": "The Oriental Plane of Square Louise Michel",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "roughly 170 years",
+      "age_min": 160,
+      "age_max": 180,
+      "girth_cm": 520,
+      "location": {
+        "address": "6 Place Saint Pierre",
+        "latitude": 48.88460843527525,
+        "longitude": 2.3439162548465453,
+        "neighbourhood": "Square Louise Michel, below the Sacre-Coeur, 18th arrondissement"
+      },
+      "story": "Millions of people climb past this tree every year on their way to something else. Square Louise Michel is the terraced garden below the Sacre-Coeur, the one with the long staircase up the Butte Montmartre, and three of the city's registered remarkable trees stand within 150 metres of each other inside it. This oriental plane is the oldest and the largest of the three.\n\nIt was planted in 1857, which puts it 70 years ahead of the garden around it: the square itself was only laid out in 1927. The city register and the square's own published description agree to the centimetre, 520 centimetres round and 28 metres tall, which is a rarer kind of agreement than it ought to be.\n\nOne caveat on the paperwork. A local survey of the 18th arrondissement describes an oriental plane of 470 centimetres planted in 1840, close enough to invite confusion and different enough on both figures that it is probably a different tree somewhere else in the district. The numbers given here are the register's and the square's, not that survey's.\n\nEveryone on the steps is looking up at the basilica. The plane is off to the side, doing nothing in particular, and has been doing it since before there was a basilica to look at.",
+      "verified_sources": [
+        "https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/arbresremarquablesparis (register_id 120588: Platanus orientalis, girth 520cm, height 28m, Square Louise Michel)",
+        "https://fr.wikipedia.org/wiki/Square_Louise-Michel_(Paris) (states this Platane d Orient: plante en 1857, hauteur 28m, circonference 520cm)"
+      ],
+      "access": "Free, public municipal garden (Square Louise Michel), open standard Paris park hours and closed at night",
+      "transport": "Anvers (Metro 2) or Abbesses (Metro 12), 5-8 min walk up the Butte Montmartre",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The largest of the three registered trees in the square, off to the side of the staircase everyone climbs.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "par_029",
+      "name": "The Caucasian Wingnut of Square Louise Michel",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "age_estimate": "roughly 125 years",
+      "age_min": 115,
+      "age_max": 135,
+      "girth_cm": 371,
+      "location": {
+        "address": "6 Place Saint Pierre",
+        "latitude": 48.88609867805312,
+        "longitude": 2.3446801358970153,
+        "neighbourhood": "Square Louise Michel, below the Sacre-Coeur, 18th arrondissement"
+      },
+      "story": "There are two Caucasian wingnuts in this square and only one of them has a birthday. The register lists both, sixty metres apart, at 371 and 416 centimetres round. The published account of the garden describes a wingnut of 3.60 metres planted in 1899, which fits the smaller of the two closely and the larger one not at all, so the date sits here, on this tree, and the bigger one keeps no age rather than borrow one.\n\nThe heights do not line up as neatly. That same account gives its wingnut 20 metres; the register now measures this one at 26. Years of growth would explain the gap, and so would the account having described the other tree all along, and nothing available settles it.\n\nWhat is not in dispute is what happens in high summer. Chains of pale green winged seeds hang straight down from the branch tips, long, narrow and unlike anything else growing on this hillside, and on a crown this size there are hundreds of them at once. Come in February and you would walk past it without a second look.\n\nIt went into the ground in 1899, the year before the funicular started hauling visitors up the slope beside it, and it has spent every summer since dangling seed chains over people too busy climbing to look sideways.",
+      "verified_sources": [
+        "https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/arbresremarquablesparis (register_id 120518: Pterocarya fraxinifolia, girth 371cm, height 26m, Square Louise Michel)",
+        "https://fr.wikipedia.org/wiki/Square_Louise-Michel_(Paris) (a Pterocaryer du Caucase: 3,60m circonference, plante en 1899)"
+      ],
+      "access": "Free, public municipal garden (Square Louise Michel), open standard Paris park hours and closed at night",
+      "transport": "Anvers (Metro 2) or Abbesses (Metro 12), 5-8 min walk up the Butte Montmartre",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "There are two wingnuts in this square, sixty metres apart. This is the SMALLER one at 371 cm; the other is 416 cm and carries no date.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "par_030",
+      "name": "The Horse Chestnut of Square Louise Michel",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "roughly 125 years",
+      "age_min": 115,
+      "age_max": 135,
+      "girth_cm": 370,
+      "location": {
+        "address": "6 Place Saint Pierre",
+        "latitude": 48.884471602947016,
+        "longitude": 2.343107759067453,
+        "neighbourhood": "Square Louise Michel, below the Sacre-Coeur, 18th arrondissement"
+      },
+      "story": "The best-known figure for this chestnut is forty centimetres out of date. Two published accounts of the garden give it a trunk of 330 centimetres; the city register now measures 370. Nothing has gone wrong. The tree kept growing while the paperwork stood still, which is the most cheerful sort of disagreement between sources.\n\nIt was planted in 1902, and the register and both accounts agree on that, which makes it one of the better-dated trees on this page. In 1902 the basilica above it was a building site: work on the Sacre-Coeur ran from 1875 to 1914, so the chestnut spent its first dozen years growing under scaffolding and cranes. The garden itself arrived later still, laid out in 1927.\n\nHorse chestnuts are the most familiar tree on this list and the most taken for granted. This one is 21 metres tall under a broad even crown, and it does the two things the species is loved for on schedule: white flower spikes standing upright all over it in May, conkers split out of their green cases on the path in September.\n\nOne correction to the name Paris gives it. The marronnier d'Inde is not from India and not from here either. It came out of the mountains of the Balkans in the sixteenth century, and Europe has been planting it in squares ever since.",
+      "verified_sources": [
+        "https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/arbresremarquablesparis (register_id 112503: Aesculus hippocastanum, girth 370cm, height 21m, Square Louise Michel)",
+        "https://fr.wikipedia.org/wiki/Square_Louise-Michel_(Paris) and https://www.pariszigzag.fr/insolite/lieux-insolites/square-louise-michel-montmartre/ (both cite this Marronnier d Inde: 20m tall, 3.30m circumference, planted 1902; pariszigzag piece last updated 28 November 2024)"
+      ],
+      "access": "Free, public municipal garden (Square Louise Michel), open standard Paris park hours and closed at night",
+      "transport": "Anvers (Metro 2) or Abbesses (Metro 12), 5-8 min walk up the Butte Montmartre",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A broad even crown 21 m tall, in the same terraced garden as the plane and the wingnut.",
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "par_031",
+      "name": "The Horse Chestnut of Square Rene-Le Gall",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "roughly 130 years",
+      "age_min": 125,
+      "age_max": 135,
+      "girth_cm": 369,
+      "location": {
+        "address": "1 Rue Emile Deslandres",
+        "latitude": 48.83303012172054,
+        "longitude": 2.350696508611639,
+        "neighbourhood": "Square Rene-Le Gall (Jardin des Gobelins), Croulebarbe, 13th arrondissement"
+      },
+      "story": "There is a river under this garden. The Bievre ran through the Gobelins quarter in the open until the city buried the last stretches of it, fouled by the tanners and dyers who had worked its banks for centuries, and Square Rene-Le Gall was laid out in the 1930s across the ground it used to flow over. This horse chestnut was planted in 1893 or 1894, while the water was still above ground.\n\nIt stands near the garden's obelisk, at one of the entrances, and its measurements are a small lesson in how slowly a mature tree changes. A 2011 survey recorded 18 metres tall and 360 centimetres round. The city register now gives 17 metres and 369. Nine centimetres of belt in well over a decade, and a metre of height that is measurement noise rather than a tree shrinking.\n\nThe square around it is a listed historic monument, protected since 1997, though the protection is for the 1930s design rather than for anything growing in it: rock gardens, a long sunken lawn, brick pavilions and that obelisk, laid out on a scale most Paris squares never get.\n\nThe chestnut is one of the few things here older than the design. It was already a grown tree when the diggers arrived, and it is the only part of the garden nobody drew.",
+      "verified_sources": [
+        "https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/arbresremarquablesparis (register_id 104841: Aesculus hippocastanum, girth 369cm, height 17m, planted 1894, Square Rene Le Gall)",
+        "https://fr.wikipedia.org/wiki/Square_Ren%C3%A9-Le_Gall (marronnier d Inde plante en 1893-1894, classe arbre remarquable, 18m de hauteur et 3,6m de circonference en 2011)"
+      ],
+      "access": "Free, public municipal square (Square Rene-Le Gall, also known as Jardin des Gobelins), open standard Paris park hours and closed at night",
+      "transport": "Corvisart or Les Gobelins (Metro 6/7), 8-10 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Near the garden's obelisk, at one of the entrances.",
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "par_032",
+      "name": "The Plane of Square Montholon",
+      "species": "London Plane (Platanus x hispanica)",
+      "age_estimate": "over a century, likely 150-160 years",
+      "age_min": 120,
+      "age_max": 165,
+      "girth_cm": 470,
+      "location": {
+        "address": "79 Bis Rue La Fayette",
+        "latitude": 48.87692125066785,
+        "longitude": 2.3467187902283135,
+        "neighbourhood": "Square Montholon, 9th arrondissement"
+      },
+      "story": "Square Montholon has two enormous plane trees and the city has written down the history of only one of them. This may be that one. The official description of the square records a plane planted in 1872, standing 32 metres tall with a trunk 432 centimetres round. The register of remarkable trees lists a single plane here, at this exact spot, at 470 centimetres and 27 metres. Those are not the same numbers.\n\nEither this trunk has put on 38 centimetres since that record was made, which is entirely ordinary, or the register has pinned the other tree of the pair, which is also entirely ordinary. Nothing available decides it, so the age given here stays broad, well over a century and probably a good deal more, rather than claiming 1872 for a tree that may not have earned it.\n\nWhat is not ambiguous is the trunk in front of you. Four metres seventy puts it among the larger planes anywhere in Paris, in a garden small enough to cross in a minute.\n\nThe square opened in 1863, one of the small public gardens cut into the city while Haussmann was rebuilding it, and was redesigned in 1981. It sits off the Rue La Fayette in the 9th, gates open in the morning and shut at night, with the pair of planes doing most of the work of making it feel older than the rest of it is.",
+      "verified_sources": [
+        "https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/arbresremarquablesparis (register_id 317250: Platanus x hispanica, girth 470cm, height 27m, Square Montholon)",
+        "https://www.paris.fr/lieux/square-montholon-2469 (official city page: deux immenses platanes centenaires in the square; one specifically documented at planted 1872, 32m tall, 4.32m circumference)"
+      ],
+      "access": "Free, public municipal square (Square Montholon), open 9:30-21:30 weekdays and 9:00-21:30 weekends (hours vary by season per paris.fr) and closed at night",
+      "transport": "Cadet or Poissonniere (Metro 7), 5-7 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The square has two enormous planes. This is the one the register pins, at 470 cm round; the other is the one the city's own history describes. If you can tell them apart, tell us.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }
