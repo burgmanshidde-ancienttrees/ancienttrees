@@ -1,0 +1,149 @@
+{
+  "city": "Sorrento",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "All four of Sorrento's oldest trees stand one train stop away, in Piano di Sorrento, the neighbouring town on the same coast. Two share Villa Fondi De Sangro, a prince's garden from 1875 that is now a free public park and archaeological museum: a wide holm oak and a stone pine the WWF fought to save from pruning in 2014. A cypress has stood over every burial at the municipal cemetery since it opened in 1876, and a plane tree marks the last bend on the climb up to it. All free, all a short walk from the station.",
+  "meta_description": "Sorrento's oldest trees stand one train stop away in Piano di Sorrento: a prince's garden with a pine the WWF saved, a cemetery cypress, a roadside plane.",
+  "question_meta": "Sorrento's oldest tree is a stone pine in Piano di Sorrento's Villa Fondi, saved from pruning by the WWF in 2014. Where it stands, and three more.",
+  "question_answer": "The oldest tree associated with Sorrento is the Stone Pine of Villa Fondi, in the neighbouring town of Piano di Sorrento, one Circumvesuviana stop from Sorrento station and a ten-minute walk. Italy's national monumental-tree register and the Regione Campania's own tree card agree on its measurements exactly, 4.18 metres round and 20 metres tall, and put its age at roughly 150 years, a planting of the garden laid out in 1875 around a prince's villa. In 2014 the WWF named it and its neighbours the last old pines standing on this stretch of the tufa slope and stopped a plan to cut them back hard. A holm oak in the same park carries an identical estimated age from the same sources, so the two effectively tie; the pine gets the answer here for its fuller documented history. None of Sorrento's four oldest trees stand in Sorrento itself: all four are a short walk from the Circumvesuviana station in Piano di Sorrento, the adjoining comune on the peninsula.",
+  "question_context": "This page is built on Italy's national MASAF monumental-trees register, cross-checked against the Regione Campania's own tree cards, which between them are the only two sources with any age information at all: the national data carries species and girth but no age field, so every year on this page comes from the regional card's own local testimony rather than a ring count or a planting record. All four candidates cluster in Piano di Sorrento, the town that borders Sorrento on the Sorrentine peninsula, reached by one Circumvesuviana stop and a short walk. A fifth cluster, in the grounds of the Grand Hotel Parco dei Principi, was found and set aside: the hotel's own site states the garden is open to guests and restaurant patrons rather than the general public, which does not clear this site's bar for free, walk-in entry. See the full list of four on the Sorrento page.",
+  "faq": [
+    {
+      "q": "What is the oldest tree associated with Sorrento?",
+      "a": "The Stone Pine of Villa Fondi, in Piano di Sorrento, one Circumvesuviana stop from Sorrento station. It measures 4.18 metres round and is put at roughly 150 years old by both Italy's national monumental-tree register and the Regione Campania's own tree card. In 2014 the WWF named it among the last old pines on this stretch of coast and stopped a plan to prune it hard. The holm oak in the same park carries an identical age estimate."
+    },
+    {
+      "q": "Are these trees actually in Sorrento?",
+      "a": "Not in the town itself. All four stand in Piano di Sorrento, the comune next door on the Sorrentine peninsula, reached from Sorrento station by one stop on the Circumvesuviana railway plus a walk of ten to fifteen minutes. Every entry on this page says so plainly."
+    },
+    {
+      "q": "Are they free to visit?",
+      "a": "Yes, all four. Villa Fondi De Sangro is a free public park run by the Comune di Piano di Sorrento; the municipal cemetery is open to anyone during daylight hours; the plane tree stands on an ordinary public street."
+    },
+    {
+      "q": "Can I see them all in one walk?",
+      "a": "Yes. The holm oak and stone pine share Villa Fondi's grounds. The plane tree and the cemetery cypress are a short uphill walk from there, on the road leading to the cemetery, close enough to cover with the park in one outing from the Circumvesuviana station."
+    }
+  ],
+  "hero_tree_id": "srn_002",
+  "oldest_tree_id": "srn_002",
+  "trees": [
+    {
+      "id": "srn_001",
+      "name": "The Holm Oak of Villa Fondi",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "roughly 150 years",
+      "age_min": 130,
+      "age_max": 160,
+      "location": {
+        "address": "Villa Fondi De Sangro, Via Ripa di Cassano, Piano di Sorrento",
+        "latitude": 40.637722,
+        "longitude": 14.401725,
+        "neighbourhood": "Piano di Sorrento (adjoining Sorrento, on the peninsula)"
+      },
+      "story": "Three metres and eighteen centimetres round, and it stops at eleven metres tall. This holm oak spent its life spreading instead of climbing, on a terrace above Piano di Sorrento with the Bay of Naples in front of it and Vesuvius across the water.\n\nThe ground belonged to Giovanni Andrea De Sangro, Prince of Fondi, who built the villa in 1840. The garden around it was laid out in 1875. Italy's national monumental-tree register and the Regione Campania's own card for this oak agree on its measurements to the centimetre and put its age at roughly 150 years, which would make it a planting of that first garden or something a little later. Nobody has counted the rings, so the date stays an approximation, exactly as the register leaves it.\n\nThe villa passed to the comune, was restored in the 1990s and now holds the Georges Vallet archaeological museum, so the oak keeps company with Roman finds dug out of the peninsula. The park is free to walk.\n\nOne thing to expect: the two official records place this tree about 60 metres apart, both inside the same small park, so the pin gets you to the terrace rather than to the trunk. It is a short look around.\n\nThe tree is in Piano di Sorrento, not in Sorrento itself: one Circumvesuviana stop from Sorrento station, then ten minutes on foot.",
+      "verified_sources": [
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_64.html",
+        "data/research/sorrento-register-candidates.json (Italy MASAF national monumental trees register, sheet 14/G568/NA/15)"
+      ],
+      "access": "Free, public municipal park (Villa Fondi De Sangro, owned by the Comune di Piano di Sorrento, houses the Georges Vallet archaeological museum). Open as a public park; no permission needed to walk the grounds.",
+      "transport": "Circumvesuviana train from Sorrento station to Piano di Sorrento station (one stop, a few minutes), then about 10 minutes on foot via Via Ripa di Cassano.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "srn_002",
+      "name": "The Stone Pine of Villa Fondi",
+      "species": "Stone Pine (Pinus pinea)",
+      "age_estimate": "roughly 150 years",
+      "age_min": 130,
+      "age_max": 200,
+      "location": {
+        "address": "Villa Fondi De Sangro, Via Ripa di Cassano 26-34, Piano di Sorrento",
+        "latitude": 40.637314,
+        "longitude": 14.401667,
+        "neighbourhood": "Piano di Sorrento (adjoining Sorrento, on the peninsula)"
+      },
+      "story": "In 2014 the WWF called the pines of Villa Fondi the last of their kind left standing in the built-up area on the tufa slope of Piano di Sorrento, and objected to a plan to cut them back hard. The Soprintendenza confirmed the villa and its park trees were protected. The pruning did not happen.\n\nThis is the largest of them. It measures 4.18 metres round and twenty metres tall, carrying the flat spreading head that stone pines grow into once they have the room. The national register and the Regione Campania card give those figures identically and put the tree at around 150 years, presumably a planting of the garden laid out in 1875 around the De Sangro family's villa of 1840.\n\nIts health has been a local subject. A 2020 description of the garden mentions a big pine on the sea-facing western side, put at roughly 200 years old, attacked by bark beetles and saved by dendrosurgery. Whether that account is about this exact pine is not clear: it names a different pine species than the register does, and the garden may hold more than one old specimen. Nothing on record says the registered tree has gone.\n\nIt stands in the same free public park as the holm oak, beside the Georges Vallet archaeological museum, in Piano di Sorrento. From Sorrento it is one Circumvesuviana stop and a ten-minute walk.",
+      "verified_sources": [
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_29.html",
+        "data/research/sorrento-register-candidates.json (Italy MASAF national monumental trees register, sheet 01/G568/NA/15)",
+        "https://www.positanonews.it/2020/08/piano-di-sorrento-il-giardino-di-villa-fondi-de-sangro-nella-bellissima-descrizione-del-prof-antonio-volpe/3413963/"
+      ],
+      "access": "Free, public municipal park (Villa Fondi De Sangro, owned by the Comune di Piano di Sorrento, houses the Georges Vallet archaeological museum). Open as a public park; no permission needed to walk the grounds.",
+      "transport": "Circumvesuviana train from Sorrento station to Piano di Sorrento station (one stop, a few minutes), then about 10 minutes on foot via Via Ripa di Cassano.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "srn_003",
+      "name": "The Cemetery Cypress of Piano di Sorrento",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "age_estimate": "over 130 years",
+      "age_min": 130,
+      "age_max": 150,
+      "location": {
+        "address": "Cimitero Comunale, Via Gennaro Maresca 84, Piano di Sorrento",
+        "latitude": 40.628472,
+        "longitude": 14.418836,
+        "neighbourhood": "Piano di Sorrento (adjoining Sorrento, on the peninsula)"
+      },
+      "story": "The cemetery opened in 1876, and by the account the register recorded this cypress went into the ground the same year. It has stood over every burial the place has ever had.\n\nThat dating comes from local testimony rather than a document, which the Regione Campania card says openly; it calls the tree over 130 years old at its last update, which puts it near 150 now. Measured rather than remembered: 2.66 metres round and ten metres tall, figures the national register and the regional card give identically.\n\nAt that girth an Italian cypress reads as a column rather than the thin dark spire the species is usually planted as. Two more cypresses in this same cemetery are on the national register, at 2.70 and 3.25 metres round, so the thickest trunk you see here is not this one. Go by the coordinates instead, and give yourself a minute: the two official records for this tree sit about 90 metres apart inside the grounds.\n\nPiano di Sorrento's municipal cemetery is a free, everyday public place, open through the daylight hours the comune sets, which shift with the season. It is a working cemetery, so the usual quiet applies.\n\nThe walk is in Piano di Sorrento rather than Sorrento: one Circumvesuviana stop from Sorrento station, then about fifteen minutes uphill on Via Gennaro Maresca.",
+      "verified_sources": [
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_38.html",
+        "data/research/sorrento-register-candidates.json (Italy MASAF national monumental trees register, sheet 05/G568/NA/15)"
+      ],
+      "access": "Free, public municipal cemetery, open daily during standard daylight hours set by the Comune di Piano di Sorrento (exact hours vary seasonally and around 1/6 January; check locally). No permission needed to enter.",
+      "transport": "Circumvesuviana train from Sorrento station to Piano di Sorrento station, then about 15 minutes on foot uphill via Via Gennaro Maresca.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "srn_004",
+      "name": "The Plane Tree of Via Maresca",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 100 years",
+      "age_min": 90,
+      "age_max": 110,
+      "location": {
+        "address": "Via Gennaro Maresca, corner Via Formiello, Piano di Sorrento",
+        "latitude": 40.629217,
+        "longitude": 14.417128,
+        "neighbourhood": "Piano di Sorrento (adjoining Sorrento, on the peninsula)"
+      },
+      "story": "The register lists this plane as a landmark rather than a specimen: it is how you know you have reached the second-to-last bend on the climb to the cemetery. A century of shade on a steep road earns a tree that job.\n\nLocal testimony recorded by the Regione Campania puts the planting at around 1920, so roughly 105 years, and nobody holds a document proving it. What is measured rather than remembered: 2.95 metres round and ten metres tall, identical in the national register and the regional card, whose coordinates land within five metres of each other. You will not have to hunt for this one.\n\nA second plane stands beside it with a slimmer trunk, and the registered tree is the more imposing of the pair. At the last survey in 2020 its crown carried no dead stubs, which for a tree working a hot roadside on the Sorrentine peninsula is a better report than it sounds.\n\nVia Gennaro Maresca is a public street in Piano di Sorrento, the comune next door to Sorrento, not Sorrento itself: one Circumvesuviana stop from Sorrento station, then about twelve minutes on foot uphill. Keep going for a few more minutes and you reach the cemetery cypress, which makes the two of them one short climb rather than two errands.",
+      "verified_sources": [
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_40.html",
+        "data/research/sorrento-register-candidates.json (Italy MASAF national monumental trees register, sheet 07/G568/NA/15)"
+      ],
+      "access": "Free, standing on a public street corner. Visible and reachable at any time.",
+      "transport": "Circumvesuviana train from Sorrento station to Piano di Sorrento station, then about 12 minutes on foot via Via Gennaro Maresca (on the way up to the cemetery).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
