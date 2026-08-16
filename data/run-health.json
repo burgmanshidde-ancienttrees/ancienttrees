@@ -128,6 +128,24 @@
    "cities_touched": 1,
    "trees": -2,
    "logged": true
+  },
+  {
+   "started": "2026-08-16T08:58:00+00:00",
+   "date": "2026-08-16",
+   "run_id": "31937784697",
+   "minutes": 21.2,
+   "turns": 179,
+   "denials": null,
+   "ended": "success",
+   "tokens": 36812216,
+   "claims_held": [
+    "brno",
+    "wroclaw"
+   ],
+   "commits": 9,
+   "cities_touched": 21,
+   "trees": 6,
+   "logged": true
   }
  ]
 }
