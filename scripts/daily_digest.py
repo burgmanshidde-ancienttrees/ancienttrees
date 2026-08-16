@@ -387,7 +387,7 @@ query($tag: String!, $since: Date!, $until: Date!) {
         filter: {date_geq: $since, date_lt: $until}, orderBy: [count_DESC]) {
       count dimensions { requestPath }
     }
-    refs: rumPageloadEventsAdaptiveGroups(limit: 5,
+    refs: rumPageloadEventsAdaptiveGroups(limit: 25,
         filter: {date_geq: $since, date_lt: $until}, orderBy: [count_DESC]) {
       count dimensions { refererHost }
     }
@@ -472,6 +472,30 @@ NOT_A_BACKLINK = (
     "yandex.", "baidu.", "search.brave.", "startpage.", "qwant.",
 )
 
+# The assistants, kept separate from both lists above because an arrival from
+# one is neither a search click nor a backlink: it means a model answered
+# somebody's question and cited us, which is the only evidence of AI
+# visibility this project can currently gather at all.
+#
+# Everything else about AI findability is unmeasurable from here and it is
+# worth writing down why, so nobody spends a window rediscovering it. The site
+# is served straight from GitHub Pages with no proxy in front, so there are no
+# access logs and a crawl by GPTBot, ClaudeBot or PerplexityBot leaves no
+# trace we can see. Cloudflare Web Analytics is a JavaScript beacon and bots
+# do not run JavaScript, so it cannot see them either. That leaves the human
+# who clicks a citation, which is what this list catches.
+#
+# It is deliberately a named line rather than a host in the referrer list: the
+# referrer pull was limit 5 until 2026-08-16, and with direct, self, google
+# and one corporate proxy filling those slots, the first arrival from an
+# assistant would have been cut off before anybody saw it. The limit is 25
+# now, and this line names the answer instead of leaving it to be spotted.
+AI_SOURCES = (
+    "chatgpt.com", "chat.openai.com", "openai.com", "perplexity.ai",
+    "claude.ai", "copilot.microsoft.com", "gemini.google.com",
+    "bard.google.com", "you.com", "phind.com", "poe.com",
+)
+
 
 def referrers_section(refs):
     """The external referrers, which is the closest thing to a backlink report
@@ -485,19 +509,27 @@ def referrers_section(refs):
     What this line does measure is better in one way and worse in another: a
     referrer is a link somebody actually followed, which is traffic rather than
     an index entry, but it only sees links that get clicked."""
-    external = []
+    external, ai = [], []
     for r in refs or []:
         host = (r["dimensions"].get("refererHost") or "").lower()
-        if not host or any(b in host for b in NOT_A_BACKLINK):
+        if not host:
+            continue
+        if any(a in host for a in AI_SOURCES):
+            ai.append("%s (%d)" % (host, r["count"]))
+            continue
+        if any(b in host for b in NOT_A_BACKLINK):
             continue
         external.append("%s (%d)" % (host, r["count"]))
     line = "; ".join(external) if external else "none yet"
+    ai_line = ("\nAI: arrivals from an assistant that cited us: %s"
+               % ("; ".join(ai) if ai else "none yet"))
     # The standing "read your backlinks by hand" instruction that used to sit
     # here was printed identically every morning for a fortnight, which is the
     # definition of a line nobody reads. Ahrefs Webmaster Tools answers it now,
     # and the honest state as of 2026-08-09 is that our 298 referring domains
     # are a spam network, every one nofollow, so the count is not the metric.
-    return "Links: external referrers (a link somebody actually clicked): %s" % line
+    return ("Links: external referrers (a link somebody actually clicked): %s%s"
+            % (line, ai_line))
 
 
 SUPA = "https://caimvxiyrtifilimlkqw.supabase.co"
