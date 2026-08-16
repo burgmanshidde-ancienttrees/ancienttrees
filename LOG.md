@@ -12,6 +12,28 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-16 (session) - A night run done by hand: the queue's cheapest work turned out to be six pages for one spot
+
+Hidde asked for a night run performed live rather than described. Step 0's ladder, rung by rung.
+
+**Rungs 1 to 3 clean.** No unprocessed submissions. Smoke green, digest 6.5h old, review 10h old, weekly-analysis 6.3 days (under the 8-day redispatch threshold, noted not actioned). REVIEW.md's newest entry carried a BLOCKER, Potsdam republishing two of Berlin's Pfaueninsel oaks under different names, and it was already fixed by the 07:29 run. Checked the fix rather than trusting it: both retired tree URLs still return 200 through `RENAMED_CITY_SLUGS` entries, so hard rule 3 held.
+
+**Rung 4 is where it got interesting, and it produced a check rather than a city.** The actionable list pointed at Toronto: rank 14, four trees live, thirteen READY leads. Two things were wrong with that. **Six of the thirteen sat on the same coordinate**, spread 0 metres, one heritage designation (HT-2016-121) covering a group at one address and split into six rows on import. Writing them would have produced six near-identical pages for one place to stand. That is the second time in one session that READY did not mean verified, so by the standing ratchet it is now a check: `leads.py` folds entries within 15 metres into one candidate and reports them as STACKED. Site-wide it caught four groups, twelve leads, in Toronto, Brussels and Genoa.
+
+**And Toronto's remaining leads do not form a walk.** Its four live trees already span 20 km and the leads scatter 4 to 40 km out; only two sit near each other (1.4 km apart, but 5 km from the nearest live tree). Toronto is finished at four for now under the 80/20 rule. With stage 1 holding nothing else cheap, stage 2 opened, and Barcelona, Munich and Seville all turned out to be **above target and finished**, leaving Rome and Milan with room for three trees between them. Too thin to dispatch.
+
+**So the run went to the verify shelf and picked Krakow**, rank 62, four trees live, 811 register entries within 20 km of which 805 had never been judged.
+
+**Krakow is now live at 10.** The verify pass found the key that made it cheap: Poland's GDOS register carries no age, no girth and no names, but Polish Wikipedia reproduces the municipal register list with address, girth and designation year, and its INSPIRE codes join straight to the register we already hold. That join gave real measurements for 115 of 155 candidates. It also caught two storm-felled monuments in the same table's own notes, a red beech at the Archaeological Museum (Feb 2022) and a horse chestnut on ul. Podzamcze (July 2021), both of which would otherwise have been strong candidates.
+
+The six form a genuine loop on Planty, 250 to 500 metres apart, 1,194 metres end to end. The existing four do not join it and the page says so.
+
+**One correction made in session, and it is the transferable part.** Four of the six ages are DERIVED from girth by a growth-factor conversion, twice using a proxy species. The verifier's notes were exemplary about this ("Age is DERIVED, not sourced... do not narrow further"), but the `age_estimate` field said "roughly 200 years", and that field renders as a standalone chip on the tree page where a reader reads it as a record somebody kept. Rewritten to "estimated 150 to 270 years, from its girth", matching the existing "roughly a century, unconfirmed" pattern. The two trees with no reliable growth factor, the ginkgo and the Turkish hazel, ship with no age at all and ask the reader, which is the right answer rather than a gap.
+
+**Cost:** 55k verify plus 62k write for 6 trees, about 19.5k per tree including the page rewrite from 4 to 10.
+
+**What this says about the tooling shipped earlier today.** The new "what you can actually move" list worked, and it is too credulous: it counts supply without asking whether that supply forms a walk or is even separate trees. Toronto read as rank 14 with 13 leads and the honest answer was zero.
+
 ## 2026-08-16 (session) - Geneva 6 to 14, Paris 25 to 30, and the brief generator learns to read
 
 **Six cities and 35 trees today.** After four new cities, the last two were deepen passes chosen on demand rather than on rank: Geneva (55 impressions, 6 trees against a target of 20) and Paris (84 impressions, the highest of any page still under its target). Deepening a page people already find compounds; deepening one nobody finds was the measured waste of an earlier week.
