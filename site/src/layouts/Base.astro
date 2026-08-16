@@ -65,9 +65,15 @@ const year = new Date().getFullYear();
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content={title}>
 <meta name="twitter:description" content={description}>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+{/* Gabarito is self-hosted since 2026-08-16: the @font-face rules live at the
+    top of /assets/style.css and the woff2 files sit beside it. The Google
+    Fonts <link> that stood here was a render-blocking stylesheet on a foreign
+    host that then pointed at a second foreign host for the file itself, which
+    is two DNS+TLS round trips in front of first paint. Preloading the latin
+    subset here (the stylesheet only reveals it one parse later) closes the
+    last gap; latin-ext is deliberately NOT preloaded, since most pages never
+    need it and unicode-range keeps it unfetched. */}
+<link rel="preload" href="/assets/gabarito-latin.woff2" as="font" type="font/woff2" crossorigin>
 {/* Real files at stable URLs, not a data: URI. Google fetches a favicon as
     its own request when it crawls, so a data: URI gives it nothing to fetch
     and the search result falls back to a generic grey globe: that is exactly
