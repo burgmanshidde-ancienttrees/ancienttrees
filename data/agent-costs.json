@@ -1849,6 +1849,15 @@
         "note": "Fixed REVIEW.md's 2026-08-16 BLOCKER: retired pot_005/pot_006 (duplicates of Berlin's ber_012/ber_011, same register ids, coords 10-15m apart). Rewrote Potsdam's intro/meta/FAQ off the 6-tree count, folded both into data/leads/potsdam.json blocked, added a cross-city redirect (site/src/lib/redirect-map.ts) so the old URLs resolve to Berlin's pages, and added check_cross_city_duplicates() to scripts/preflight.py so a same-trunk collision fails preflight next time. Tokens not logged by the harness this session, recorded as 0 rather than leaving the day silent.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "guimaraes",
+        "kind": "verify",
+        "tokens": 108998,
+        "trees": 0,
+        "note": "All 23 unmined register candidates matched (0-37m) to already-published trees or previously-blocked Casa da Penha sites; the two flagged 'genuinely remarkable' camellia leads (Casa de Margaride, Casa da Covilha) re-checked in depth and both still fail hard rule 10 access (guided-tour-only, no standing public hours), so zero new trees. One source disagreement and one mislocated third-party coordinate recorded in data/leads/guimaraes.json for a future pass.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
