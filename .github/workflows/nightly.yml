@@ -396,7 +396,11 @@ jobs:
             --execution-file "$CLAUDE_EXECUTION_FILE" \
             --since-sha "$RUN_START_SHA" \
             --started "$RUN_STARTED_AT"
-          git add data/run-health.json LOG.md
+          # in-flight.json too: run_health.py releases the claims this run
+          # still held, and a release nobody pushes is not a release. That is
+          # the same failure the claim system was built around, since a claim
+          # is only visible to other runs once it reaches the remote.
+          git add data/run-health.json LOG.md data/in-flight.json
           git diff --cached --quiet && { echo "nothing to record"; exit 0; }
           # The action revokes its own app token on the way out, so the remote
           # url it configured is dead by now. Push as the workflow itself.

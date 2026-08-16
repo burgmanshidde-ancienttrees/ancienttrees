@@ -152,6 +152,38 @@ def claims_held(by):
             if c.get("by") == by]
 
 
+def release_claims(by):
+    """Drop every claim this holder still has, because the run is over.
+
+    Added 2026-08-16, from the night's own numbers. A claim exists so two
+    passes do not work the same city; it has no job once the run holding it
+    has ended. But nothing released them, so a run that claimed and quit left
+    the lock standing for its full 90-minute life, and passcheck refuses to
+    print a brief for a claimed place. With cron knocking about every 90
+    minutes that is a rolling lockout: the 22:49 run claimed Bucaco and
+    Cordoba at 22:54 and ended at 23:01 without writing either, and the runs
+    behind it inherited a queue with its cheapest work fenced off. By 05:55
+    one run was looking at five cities locked by dead predecessors.
+
+    This step already runs `if: always()`, so it fires on success, error and
+    the 60-minute timeout alike, which is exactly the set of cases where the
+    holder is definitively gone. Sessions are untouched: only claims whose
+    `by` matches this run's holder are released.
+    """
+    try:
+        doc = json.load(open(INFLIGHT))
+    except Exception:
+        return []
+    claims = doc.get("claims", [])
+    mine = [c.get("target", "?") for c in claims if c.get("by") == by]
+    if not mine:
+        return []
+    doc["claims"] = [c for c in claims if c.get("by") != by]
+    with open(INFLIGHT, "w") as fh:
+        json.dump(doc, fh, indent=1, ensure_ascii=False)
+    return mine
+
+
 def append_health(record):
     try:
         doc = json.load(open(HEALTH))
@@ -270,10 +302,14 @@ def main():
         return 0
 
     append_health(record)
+    freed = release_claims(args.by)
     wrote_stub = prepend_log(stub_entry(record)) if silent else False
     print(f"run health: {record['minutes']}min, {record['turns']} turns, "
           f"{record['denials']} refused, trees {record.get('trees')}, "
           f"logged={record.get('logged')}")
+    if freed:
+        print("released %d claim(s) the ended run still held: %s"
+              % (len(freed), ", ".join(freed)))
     if wrote_stub:
         print("the run wrote no LOG.md entry; a stub was added in its place")
     return 0

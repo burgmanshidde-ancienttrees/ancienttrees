@@ -7,16 +7,19 @@ Subject: Kun je me helpen met ancienttrees.app? De bomen van Arnhem
 
 Hallo,
 
-Mijn naam is Hidde en ik woon in Baarn, een klein stadje vlakbij Amsterdam. Op ancienttrees.app breng ik de mooiste oude bomen van steden in kaart, elke boom met zijn verhaal en de precieze plek, zodat mensen een reden hebben om naar buiten te gaan en voor iets ouds te staan.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
-Van Arnhem staan er 4 online, waaronder De Poortwachters bij de ingang van Zijpendaal:
+We hebben 4 bomen in Arnhem staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/arnhem
 
-Waar ik vooral benieuwd naar ben is jullie persoonlijke mening: welke boom missen wij volgens jullie in Arnhem? Persoonlijke tips zijn heel welkom, dan voeg ik ze deze week toe.
+Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
 
-Bedankt alvast,
+Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+
+Ik ben erg benieuwd naar jouw mening over het project.
+
+Met vriendelijke groet,
 Hidde
-ancienttrees.app
 
 
 ## Stichting Haagse Hofjes <info@haagsehofjes.nl>
@@ -24,16 +27,19 @@ Subject: Kun je me helpen met ancienttrees.app? De oude bomen van Den Haag
 
 Hallo,
 
-Mijn naam is Hidde en ik woon in Baarn, een klein stadje vlakbij Amsterdam. Op ancienttrees.app breng ik de mooiste oude bomen van steden in kaart, elke boom met zijn verhaal en de precieze plek, zodat mensen een reden hebben om naar buiten te gaan en voor iets ouds te staan.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
-Van Den Haag staan er 5 online, waaronder de juttepeer in het Heilige Geesthofje aan de Paviljoensgracht:
+We hebben 5 bomen in Den Haag staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/the-hague
 
-Waar ik vooral benieuwd naar ben is jullie persoonlijke mening: welke boom missen wij volgens jullie in Den Haag? Persoonlijke tips zijn heel welkom, dan voeg ik ze deze week toe.
+Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
 
-Bedankt alvast,
+Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+
+Ik ben erg benieuwd naar jouw mening over het project.
+
+Met vriendelijke groet,
 Hidde
-ancienttrees.app
 
 
 ## Bomenstichting Den Haag <info@bomenstichtingdenhaag.nl>
@@ -41,16 +47,19 @@ Subject: Kun je me helpen met ancienttrees.app? De oude bomen van Den Haag
 
 Hallo,
 
-Mijn naam is Hidde en ik woon in Baarn, een klein stadje vlakbij Amsterdam. Op ancienttrees.app breng ik de mooiste oude bomen van steden in kaart, elke boom met zijn verhaal en de precieze plek, zodat mensen een reden hebben om naar buiten te gaan en voor iets ouds te staan.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
-Van Den Haag staan er 5 online, waaronder de juttepeer in het Heilige Geesthofje:
+We hebben 5 bomen in Den Haag staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/the-hague
 
-Waar ik vooral benieuwd naar ben is jullie persoonlijke mening: welke boom missen wij volgens jullie in Den Haag? Persoonlijke tips zijn heel welkom, dan voeg ik ze deze week toe.
+Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
 
-Bedankt alvast,
+Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+
+Ik ben erg benieuwd naar jouw mening over het project.
+
+Met vriendelijke groet,
 Hidde
-ancienttrees.app
 
 
 ## Kring Vrienden van 's-Hertogenbosch <algemeen@kringvrienden.nl>
@@ -58,16 +67,19 @@ Subject: Kun je me helpen met ancienttrees.app? De bomen op de vestingwerken
 
 Hallo,
 
-Mijn naam is Hidde en ik woon in Baarn, een klein stadje vlakbij Amsterdam. Op ancienttrees.app breng ik de mooiste oude bomen van steden in kaart, elke boom met zijn verhaal en de precieze plek, zodat mensen een reden hebben om naar buiten te gaan en voor iets ouds te staan.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
-Van Den Bosch staan er 11 online, waaronder de Weichselboom op de Parklaan, die in de oude stadsmuur wortelt:
+We hebben 11 bomen in Den Bosch staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/den-bosch
 
-Waar ik vooral benieuwd naar ben is jullie persoonlijke mening: welke boom missen wij volgens jullie in Den Bosch? Persoonlijke tips zijn heel welkom, dan voeg ik ze deze week toe.
+Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
 
-Bedankt alvast,
+Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+
+Ik ben erg benieuwd naar jouw mening over het project.
+
+Met vriendelijke groet,
 Hidde
-ancienttrees.app
 
 
 ## IVN Natuureducatie <info@ivn.nl>
@@ -75,16 +87,19 @@ Subject: Kun je me helpen met ancienttrees.app? De oude bomen van Nederlandse st
 
 Hallo,
 
-Mijn naam is Hidde en ik woon in Baarn, een klein stadje vlakbij Amsterdam. Op ancienttrees.app breng ik de mooiste oude bomen van steden in kaart, elke boom met zijn verhaal en de precieze plek, zodat mensen een reden hebben om naar buiten te gaan en voor iets ouds te staan.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
-Van Nederland staan er 88 online, waaronder de Heimanseik in de Plantage in Amsterdam:
+We hebben 88 bomen in Nederland staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/netherlands
 
-Waar ik vooral benieuwd naar ben is jullie persoonlijke mening: welke boom missen wij volgens jullie in Nederland? Persoonlijke tips zijn heel welkom, dan voeg ik ze deze week toe.
+Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
 
-Bedankt alvast,
+Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+
+Ik ben erg benieuwd naar jouw mening over het project.
+
+Met vriendelijke groet,
 Hidde
-ancienttrees.app
 
 
 ## Utrechtse Bomenstichting <info@utrechtsebomenstichting.nl>
@@ -92,16 +107,19 @@ Subject: Kun je me helpen met ancienttrees.app? De oude bomen van Utrecht
 
 Hallo,
 
-Mijn naam is Hidde en ik woon in Baarn, een klein stadje vlakbij Amsterdam. Op ancienttrees.app breng ik de mooiste oude bomen van steden in kaart, elke boom met zijn verhaal en de precieze plek, zodat mensen een reden hebben om naar buiten te gaan en voor iets ouds te staan.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
-Van Utrecht staan er 5 online, waaronder de Uithof-linde:
+We hebben 5 bomen in Utrecht staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/utrecht
 
-Waar ik vooral benieuwd naar ben is jullie persoonlijke mening: welke boom missen wij volgens jullie in Utrecht? Persoonlijke tips zijn heel welkom, dan voeg ik ze deze week toe.
+Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
 
-Bedankt alvast,
+Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+
+Ik ben erg benieuwd naar jouw mening over het project.
+
+Met vriendelijke groet,
 Hidde
-ancienttrees.app
 
 
 ## Boomwachters Groningen <info@boomwachtersgroningen.nl>
@@ -109,16 +127,19 @@ Subject: Kun je me helpen met ancienttrees.app? De oude bomen van Groningen
 
 Hallo,
 
-Mijn naam is Hidde en ik woon in Baarn, een klein stadje vlakbij Amsterdam. Op ancienttrees.app breng ik de mooiste oude bomen van steden in kaart, elke boom met zijn verhaal en de precieze plek, zodat mensen een reden hebben om naar buiten te gaan en voor iets ouds te staan.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
-Van Groningen staan er 5 online, waaronder de eiken op de sterpunten van het Sterrebos:
+We hebben 5 bomen in Groningen staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/groningen
 
-Waar ik vooral benieuwd naar ben is jullie persoonlijke mening: welke boom missen wij volgens jullie in Groningen? Persoonlijke tips zijn heel welkom, dan voeg ik ze deze week toe.
+Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
 
-Bedankt alvast,
+Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+
+Ik ben erg benieuwd naar jouw mening over het project.
+
+Met vriendelijke groet,
 Hidde
-ancienttrees.app
 
 
 ## Bomenstichting afdeling Amsterdam <mail@bomenstichtingamsterdam.nl>
@@ -126,16 +147,19 @@ Subject: Kun je me helpen met ancienttrees.app? De oude bomen van Amsterdam
 
 Hallo,
 
-Mijn naam is Hidde en ik woon in Baarn, een klein stadje vlakbij Amsterdam. Op ancienttrees.app breng ik de mooiste oude bomen van steden in kaart, elke boom met zijn verhaal en de precieze plek, zodat mensen een reden hebben om naar buiten te gaan en voor iets ouds te staan.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
-Van Amsterdam staan er 20 online, waaronder de Heimanseik in de Plantage:
+We hebben 20 bomen in Amsterdam staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/amsterdam
 
-Waar ik vooral benieuwd naar ben is jullie persoonlijke mening: welke boom missen wij volgens jullie in Amsterdam? Persoonlijke tips zijn heel welkom, dan voeg ik ze deze week toe.
+Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
 
-Bedankt alvast,
+Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+
+Ik ben erg benieuwd naar jouw mening over het project.
+
+Met vriendelijke groet,
 Hidde
-ancienttrees.app
 
 
 ## Bomen Bescherming Amsterdam <info@bomenbeschermingamsterdam.nl>
@@ -143,16 +167,19 @@ Subject: Kun je me helpen met ancienttrees.app? De oude bomen van Amsterdam
 
 Hallo,
 
-Mijn naam is Hidde en ik woon in Baarn, een klein stadje vlakbij Amsterdam. Op ancienttrees.app breng ik de mooiste oude bomen van steden in kaart, elke boom met zijn verhaal en de precieze plek, zodat mensen een reden hebben om naar buiten te gaan en voor iets ouds te staan.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
-Van Amsterdam staan er 20 online, waaronder de platanen van het Leidsebosje:
+We hebben 20 bomen in Amsterdam staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/amsterdam
 
-Waar ik vooral benieuwd naar ben is jullie persoonlijke mening: welke boom missen wij volgens jullie in Amsterdam? Persoonlijke tips zijn heel welkom, dan voeg ik ze deze week toe.
+Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
 
-Bedankt alvast,
+Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+
+Ik ben erg benieuwd naar jouw mening over het project.
+
+Met vriendelijke groet,
 Hidde
-ancienttrees.app
 
 
 ## Bomenbond Rijnland <secretaris@bomenbondrijnland.nl>
@@ -160,16 +187,19 @@ Subject: Kun je me helpen met ancienttrees.app? De oude bomen van Leiden
 
 Hallo,
 
-Mijn naam is Hidde en ik woon in Baarn, een klein stadje vlakbij Amsterdam. Op ancienttrees.app breng ik de mooiste oude bomen van steden in kaart, elke boom met zijn verhaal en de precieze plek, zodat mensen een reden hebben om naar buiten te gaan en voor iets ouds te staan.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
-Van Leiden staan er 6 online, waaronder de Beets-beuk op de Burcht:
+We hebben 6 bomen in Leiden staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/leiden
 
-Waar ik vooral benieuwd naar ben is jullie persoonlijke mening: welke boom missen wij volgens jullie in Leiden? Persoonlijke tips zijn heel welkom, dan voeg ik ze deze week toe.
+Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
 
-Bedankt alvast,
+Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+
+Ik ben erg benieuwd naar jouw mening over het project.
+
+Met vriendelijke groet,
 Hidde
-ancienttrees.app
 
 
 ## Haarlemse Bomenwachters <haarlemsebomenwachters@gmail.com>
@@ -177,16 +207,19 @@ Subject: Kun je me helpen met ancienttrees.app? De oude bomen van Haarlem
 
 Hallo,
 
-Mijn naam is Hidde en ik woon in Baarn, een klein stadje vlakbij Amsterdam. Op ancienttrees.app breng ik de mooiste oude bomen van steden in kaart, elke boom met zijn verhaal en de precieze plek, zodat mensen een reden hebben om naar buiten te gaan en voor iets ouds te staan.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
-Van Haarlem staan er 4 online, waaronder de beuk waar Lodewijk Napoleon zijn monogram in kerfde:
+We hebben 4 bomen in Haarlem staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/haarlem
 
-Waar ik vooral benieuwd naar ben is jullie persoonlijke mening: welke boom missen wij volgens jullie in Haarlem? Persoonlijke tips zijn heel welkom, dan voeg ik ze deze week toe.
+Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
 
-Bedankt alvast,
+Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+
+Ik ben erg benieuwd naar jouw mening over het project.
+
+Met vriendelijke groet,
 Hidde
-ancienttrees.app
 
 
 ## Bomenbieb <info@bomenbieb.nl>
@@ -194,16 +227,19 @@ Subject: Kun je me helpen met ancienttrees.app? Bijzondere bomen in Nederland
 
 Hallo,
 
-Mijn naam is Hidde en ik woon in Baarn, een klein stadje vlakbij Amsterdam. Op ancienttrees.app breng ik de mooiste oude bomen van steden in kaart, elke boom met zijn verhaal en de precieze plek, zodat mensen een reden hebben om naar buiten te gaan en voor iets ouds te staan.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
-Van Nederland staan er 88 online, waaronder de juttepeer in het Heilige Geesthofje in Den Haag:
+We hebben 88 bomen in Nederland staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/netherlands
 
-Waar ik vooral benieuwd naar ben is jullie persoonlijke mening: welke boom missen wij volgens jullie in Nederland? Persoonlijke tips zijn heel welkom, dan voeg ik ze deze week toe.
+Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
 
-Bedankt alvast,
+Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+
+Ik ben erg benieuwd naar jouw mening over het project.
+
+Met vriendelijke groet,
 Hidde
-ancienttrees.app
 
 
 ## Boommade <info@boommade.nl>
@@ -211,16 +247,19 @@ Subject: Kun je me helpen met ancienttrees.app? De oude bomen van Amsterdam
 
 Hallo,
 
-Mijn naam is Hidde en ik woon in Baarn, een klein stadje vlakbij Amsterdam. Op ancienttrees.app breng ik de mooiste oude bomen van steden in kaart, elke boom met zijn verhaal en de precieze plek, zodat mensen een reden hebben om naar buiten te gaan en voor iets ouds te staan.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
-Van Amsterdam staan er 20 online, waaronder de vleugelnoot in het Wertheimpark:
+We hebben 20 bomen in Amsterdam staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/amsterdam
 
-Waar ik vooral benieuwd naar ben is jullie persoonlijke mening: welke boom missen wij volgens jullie in Amsterdam? Persoonlijke tips zijn heel welkom, dan voeg ik ze deze week toe.
+Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
 
-Bedankt alvast,
+Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+
+Ik ben erg benieuwd naar jouw mening over het project.
+
+Met vriendelijke groet,
 Hidde
-ancienttrees.app
 
 
 ## Bomen Beter Beheren vzw <administratie@bomenbeterbeheren.org>
@@ -228,16 +267,19 @@ Subject: Kun je me helpen met ancienttrees.app? De oude bomen van Antwerpen
 
 Hallo,
 
-Mijn naam is Hidde en ik woon in Baarn, een klein stadje vlakbij Amsterdam. Op ancienttrees.app breng ik de mooiste oude bomen van steden in kaart, elke boom met zijn verhaal en de precieze plek, zodat mensen een reden hebben om naar buiten te gaan en voor iets ouds te staan.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
-Van Antwerpen staan er 10 online, waaronder de zomerlinde van het Rivierenhof:
+We hebben 10 bomen in Antwerpen staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/antwerp
 
-Waar ik vooral benieuwd naar ben is jullie persoonlijke mening: welke boom missen wij volgens jullie in Antwerpen? Persoonlijke tips zijn heel welkom, dan voeg ik ze deze week toe.
+Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
 
-Bedankt alvast,
+Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+
+Ik ben erg benieuwd naar jouw mening over het project.
+
+Met vriendelijke groet,
 Hidde
-ancienttrees.app
 
 
 ## BOS+ <info@bosplus.be>
@@ -245,16 +287,19 @@ Subject: Kun je me helpen met ancienttrees.app? De oude bomen van Brussel
 
 Hallo,
 
-Mijn naam is Hidde en ik woon in Baarn, een klein stadje vlakbij Amsterdam. Op ancienttrees.app breng ik de mooiste oude bomen van steden in kaart, elke boom met zijn verhaal en de precieze plek, zodat mensen een reden hebben om naar buiten te gaan en voor iets ouds te staan.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
-Van Brussel staan er 20 online, waaronder de vijvereiken van het Ter Kamerenbos:
+We hebben 20 bomen in Brussel staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/brussels
 
-Waar ik vooral benieuwd naar ben is jullie persoonlijke mening: welke boom missen wij volgens jullie in Brussel? Persoonlijke tips zijn heel welkom, dan voeg ik ze deze week toe.
+Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
 
-Bedankt alvast,
+Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+
+Ik ben erg benieuwd naar jouw mening over het project.
+
+Met vriendelijke groet,
 Hidde
-ancienttrees.app
 
 
 ## Vereniging voor Openbaar Groen (VVOG) <info@vvog.info>
@@ -262,16 +307,19 @@ Subject: Kun je me helpen met ancienttrees.app? De oude bomen van Antwerpen
 
 Hallo,
 
-Mijn naam is Hidde en ik woon in Baarn, een klein stadje vlakbij Amsterdam. Op ancienttrees.app breng ik de mooiste oude bomen van steden in kaart, elke boom met zijn verhaal en de precieze plek, zodat mensen een reden hebben om naar buiten te gaan en voor iets ouds te staan.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
-Van Antwerpen staan er 10 online, waaronder de bruine beuk bij de Sint-Willibrorduskerk in Berchem:
+We hebben 10 bomen in Antwerpen staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/antwerp
 
-Waar ik vooral benieuwd naar ben is jullie persoonlijke mening: welke boom missen wij volgens jullie in Antwerpen? Persoonlijke tips zijn heel welkom, dan voeg ik ze deze week toe.
+Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
 
-Bedankt alvast,
+Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+
+Ik ben erg benieuwd naar jouw mening over het project.
+
+Met vriendelijke groet,
 Hidde
-ancienttrees.app
 
 
 ## wndln (wandelblog Vlaanderen) <info@wndln.be>
@@ -279,16 +327,19 @@ Subject: Kun je me helpen met ancienttrees.app? Een wandeling langs de oude bome
 
 Hallo,
 
-Mijn naam is Hidde en ik woon in Baarn, een klein stadje vlakbij Amsterdam. Op ancienttrees.app breng ik de mooiste oude bomen van steden in kaart, elke boom met zijn verhaal en de precieze plek, zodat mensen een reden hebben om naar buiten te gaan en voor iets ouds te staan.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
-Van Brussel staan er 20 online, waaronder de vijvereiken van het Ter Kamerenbos:
+We hebben 20 bomen in Brussel staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/brussels
 
-Waar ik vooral benieuwd naar ben is jullie persoonlijke mening: welke boom missen wij volgens jullie in Brussel? Persoonlijke tips zijn heel welkom, dan voeg ik ze deze week toe.
+Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
 
-Bedankt alvast,
+Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+
+Ik ben erg benieuwd naar jouw mening over het project.
+
+Met vriendelijke groet,
 Hidde
-ancienttrees.app
 
 
 ## Quercus, Núcleo Regional de Lisboa <lisboa@quercus.pt>
@@ -296,16 +347,19 @@ Subject: Pode ajudar-me com o ancienttrees.app? As árvores de Lisboa
 
 Olá,
 
-Chamo-me Hidde e vivo em Baarn, uma pequena cidade perto de Amesterdão. No ancienttrees.app mapeio as árvores antigas mais notáveis das cidades, cada uma com a sua história e o seu local exato, para que as pessoas tenham um motivo para sair e ficar diante de algo antigo.
+Chamo-me Hidde e estou a construir o ancienttrees.app, uma plataforma para árvores incríveis. O meu objetivo é entusiasmar as pessoas pelas árvores antigas e incentivá-las a ir vê-las lá fora.
 
-De Lisboa publicamos 33 árvores, entre elas as oliveiras de Santo Amaro:
+Temos 33 árvores em Lisboa e tinha muita curiosidade em saber se poderiam dar uma vista de olhos para ver se estão certas:
 https://ancienttrees.app/lisbon
 
-O que gostava mesmo de saber é a vossa opinião pessoal: que árvore acham que nos falta em Lisboa? Qualquer dica pessoal é muito bem-vinda, e posso acrescentá-la esta semana.
+Além disso, perguntava-me: têm alguma árvore pessoal que achem especial?
 
-Obrigado de qualquer forma,
+Qualquer ajuda seria muito apreciada, sobretudo fotografias, para melhorar o site.
+
+Gostava muito de saber a vossa opinião sobre o projeto.
+
+Com os melhores cumprimentos,
 Hidde
-ancienttrees.app
 
 
 ## Quercus, Núcleo Regional de Setúbal <setubal@quercus.pt>
@@ -313,16 +367,19 @@ Subject: Pode ajudar-me com o ancienttrees.app? As árvores de Setúbal
 
 Olá,
 
-Chamo-me Hidde e vivo em Baarn, uma pequena cidade perto de Amesterdão. No ancienttrees.app mapeio as árvores antigas mais notáveis das cidades, cada uma com a sua história e o seu local exato, para que as pessoas tenham um motivo para sair e ficar diante de algo antigo.
+Chamo-me Hidde e estou a construir o ancienttrees.app, uma plataforma para árvores incríveis. O meu objetivo é entusiasmar as pessoas pelas árvores antigas e incentivá-las a ir vê-las lá fora.
 
-De Setúbal publicamos 10 árvores, entre elas as seis araucárias do Largo José Afonso:
+Temos 10 árvores em Setúbal e tinha muita curiosidade em saber se poderiam dar uma vista de olhos para ver se estão certas:
 https://ancienttrees.app/setubal
 
-O que gostava mesmo de saber é a vossa opinião pessoal: que árvore acham que nos falta em Setúbal? Qualquer dica pessoal é muito bem-vinda, e posso acrescentá-la esta semana.
+Além disso, perguntava-me: têm alguma árvore pessoal que achem especial?
 
-Obrigado de qualquer forma,
+Qualquer ajuda seria muito apreciada, sobretudo fotografias, para melhorar o site.
+
+Gostava muito de saber a vossa opinião sobre o projeto.
+
+Com os melhores cumprimentos,
 Hidde
-ancienttrees.app
 
 
 ## Liga para a Protecção da Natureza (LPN) <geral@lpn.pt>
@@ -330,16 +387,19 @@ Subject: Pode ajudar-me com o ancienttrees.app? As árvores de Lisboa
 
 Olá,
 
-Chamo-me Hidde e vivo em Baarn, uma pequena cidade perto de Amesterdão. No ancienttrees.app mapeio as árvores antigas mais notáveis das cidades, cada uma com a sua história e o seu local exato, para que as pessoas tenham um motivo para sair e ficar diante de algo antigo.
+Chamo-me Hidde e estou a construir o ancienttrees.app, uma plataforma para árvores incríveis. O meu objetivo é entusiasmar as pessoas pelas árvores antigas e incentivá-las a ir vê-las lá fora.
 
-De Lisboa publicamos 33 árvores, entre elas o dragoeiro da Ajuda:
+Temos 33 árvores em Lisboa e tinha muita curiosidade em saber se poderiam dar uma vista de olhos para ver se estão certas:
 https://ancienttrees.app/lisbon
 
-O que gostava mesmo de saber é a vossa opinião pessoal: que árvore acham que nos falta em Lisboa? Qualquer dica pessoal é muito bem-vinda, e posso acrescentá-la esta semana.
+Além disso, perguntava-me: têm alguma árvore pessoal que achem especial?
 
-Obrigado de qualquer forma,
+Qualquer ajuda seria muito apreciada, sobretudo fotografias, para melhorar o site.
+
+Gostava muito de saber a vossa opinião sobre o projeto.
+
+Com os melhores cumprimentos,
 Hidde
-ancienttrees.app
 
 
 ## ICNF <geral@icnf.pt>
@@ -347,18 +407,21 @@ Subject: Pode ajudar-me com o ancienttrees.app? As árvores de interesse públic
 
 Olá,
 
-Chamo-me Hidde e vivo em Baarn, uma pequena cidade perto de Amesterdão. No ancienttrees.app mapeio as árvores antigas mais notáveis das cidades, cada uma com a sua história e o seu local exato, para que as pessoas tenham um motivo para sair e ficar diante de algo antigo.
+Chamo-me Hidde e estou a construir o ancienttrees.app, uma plataforma para árvores incríveis. O meu objetivo é entusiasmar as pessoas pelas árvores antigas e incentivá-las a ir vê-las lá fora.
 
-De Portugal publicamos 95 árvores, entre elas as oliveiras de Santo Amaro em Lisboa:
+Temos 95 árvores em Portugal e tinha muita curiosidade em saber se poderiam dar uma vista de olhos para ver se estão certas:
 https://ancienttrees.app/portugal
+
+Além disso, perguntava-me: têm alguma árvore pessoal que achem especial?
+
+Qualquer ajuda seria muito apreciada, sobretudo fotografias, para melhorar o site.
 
 O vosso registo de Arvoredo de Interesse Público está creditado nas nossas páginas. Uma coisa que encontrámos e que talvez queiram saber: três oliveiras de Setúbal têm 2009 na coluna da idade, que parece ser um ano e não um número de anos.
 
-O que gostava mesmo de saber é a vossa opinião pessoal: que árvore acham que nos falta em Portugal? Qualquer dica pessoal é muito bem-vinda, e posso acrescentá-la esta semana.
+Gostava muito de saber a vossa opinião sobre o projeto.
 
-Obrigado de qualquer forma,
+Com os melhores cumprimentos,
 Hidde
-ancienttrees.app
 
 
 ## Wilder <geral@wilder.pt>
@@ -366,16 +429,19 @@ Subject: Pode ajudar-me com o ancienttrees.app? As árvores antigas de Lisboa
 
 Olá,
 
-Chamo-me Hidde e vivo em Baarn, uma pequena cidade perto de Amesterdão. No ancienttrees.app mapeio as árvores antigas mais notáveis das cidades, cada uma com a sua história e o seu local exato, para que as pessoas tenham um motivo para sair e ficar diante de algo antigo.
+Chamo-me Hidde e estou a construir o ancienttrees.app, uma plataforma para árvores incríveis. O meu objetivo é entusiasmar as pessoas pelas árvores antigas e incentivá-las a ir vê-las lá fora.
 
-De Lisboa publicamos 33 árvores, entre elas o ombú do Largo do Limoeiro:
+Temos 33 árvores em Lisboa e tinha muita curiosidade em saber se poderiam dar uma vista de olhos para ver se estão certas:
 https://ancienttrees.app/lisbon
 
-O que gostava mesmo de saber é a vossa opinião pessoal: que árvore acham que nos falta em Lisboa? Qualquer dica pessoal é muito bem-vinda, e posso acrescentá-la esta semana.
+Além disso, perguntava-me: têm alguma árvore pessoal que achem especial?
 
-Obrigado de qualquer forma,
+Qualquer ajuda seria muito apreciada, sobretudo fotografias, para melhorar o site.
+
+Gostava muito de saber a vossa opinião sobre o projeto.
+
+Com os melhores cumprimentos,
 Hidde
-ancienttrees.app
 
 
 ## Naturlink <naturlink@naturlink.pt>
@@ -383,16 +449,19 @@ Subject: Pode ajudar-me com o ancienttrees.app? Um passeio pelas árvores de Set
 
 Olá,
 
-Chamo-me Hidde e vivo em Baarn, uma pequena cidade perto de Amesterdão. No ancienttrees.app mapeio as árvores antigas mais notáveis das cidades, cada uma com a sua história e o seu local exato, para que as pessoas tenham um motivo para sair e ficar diante de algo antigo.
+Chamo-me Hidde e estou a construir o ancienttrees.app, uma plataforma para árvores incríveis. O meu objetivo é entusiasmar as pessoas pelas árvores antigas e incentivá-las a ir vê-las lá fora.
 
-De Setúbal publicamos 10 árvores, entre elas a melaleuca que cresce de lado:
+Temos 10 árvores em Setúbal e tinha muita curiosidade em saber se poderiam dar uma vista de olhos para ver se estão certas:
 https://ancienttrees.app/setubal
 
-O que gostava mesmo de saber é a vossa opinião pessoal: que árvore acham que nos falta em Setúbal? Qualquer dica pessoal é muito bem-vinda, e posso acrescentá-la esta semana.
+Além disso, perguntava-me: têm alguma árvore pessoal que achem especial?
 
-Obrigado de qualquer forma,
+Qualquer ajuda seria muito apreciada, sobretudo fotografias, para melhorar o site.
+
+Gostava muito de saber a vossa opinião sobre o projeto.
+
+Com os melhores cumprimentos,
 Hidde
-ancienttrees.app
 
 
 ## Lisboa Secreta <lisboa@secretmedianetwork.com>
@@ -400,16 +469,19 @@ Subject: Pode ajudar-me com o ancienttrees.app? As árvores escondidas de Lisboa
 
 Olá,
 
-Chamo-me Hidde e vivo em Baarn, uma pequena cidade perto de Amesterdão. No ancienttrees.app mapeio as árvores antigas mais notáveis das cidades, cada uma com a sua história e o seu local exato, para que as pessoas tenham um motivo para sair e ficar diante de algo antigo.
+Chamo-me Hidde e estou a construir o ancienttrees.app, uma plataforma para árvores incríveis. O meu objetivo é entusiasmar as pessoas pelas árvores antigas e incentivá-las a ir vê-las lá fora.
 
-De Lisboa publicamos 33 árvores, entre elas a figueira-da-borracha gigante da Mouraria:
+Temos 33 árvores em Lisboa e tinha muita curiosidade em saber se poderiam dar uma vista de olhos para ver se estão certas:
 https://ancienttrees.app/lisbon
 
-O que gostava mesmo de saber é a vossa opinião pessoal: que árvore acham que nos falta em Lisboa? Qualquer dica pessoal é muito bem-vinda, e posso acrescentá-la esta semana.
+Além disso, perguntava-me: têm alguma árvore pessoal que achem especial?
 
-Obrigado de qualquer forma,
+Qualquer ajuda seria muito apreciada, sobretudo fotografias, para melhorar o site.
+
+Gostava muito de saber a vossa opinião sobre o projeto.
+
+Com os melhores cumprimentos,
 Hidde
-ancienttrees.app
 
 
 ## Asociación Española de Arboricultura <hola@aearboricultura.org>
@@ -417,16 +489,19 @@ Subject: ¿Me pueden ayudar con ancienttrees.app? Los árboles viejos de Sevilla
 
 Hola,
 
-Me llamo Hidde y vivo en Baarn, un pueblo pequeño cerca de Ámsterdam. En ancienttrees.app cartografío los árboles viejos más notables de las ciudades, cada uno con su historia y su ubicación exacta, para que la gente tenga un motivo para salir y ponerse delante de algo antiguo.
+Me llamo Hidde y estoy construyendo ancienttrees.app, una plataforma para árboles increíbles. Mi objetivo es entusiasmar a la gente con los árboles viejos y animarla a ir a verlos fuera.
 
-De Sevilla publicamos 20 árboles, entre ellos el ombú de La Cartuja:
+Tenemos 20 árboles en Sevilla y tenía mucha curiosidad por saber si podrían echar un vistazo a ver si están bien:
 https://ancienttrees.app/seville
 
-Lo que más me interesa es su opinión personal: ¿qué árbol creen que nos falta en Sevilla? Cualquier consejo personal es muy bienvenido, y puedo añadirlo esta semana.
+Además me preguntaba: ¿tienen algún árbol personal que les parezca especial?
 
-Gracias de todos modos,
+Cualquier ayuda sería muy apreciada, sobre todo fotografías, para mejorar la web.
+
+Me interesa mucho su opinión sobre el proyecto.
+
+Un saludo cordial,
 Hidde
-ancienttrees.app
 
 
 ## Asociación Española de Parques y Jardines Públicos <secretaria@aepjp.org>
@@ -434,16 +509,19 @@ Subject: ¿Me pueden ayudar con ancienttrees.app? Los árboles del Retiro
 
 Hola,
 
-Me llamo Hidde y vivo en Baarn, un pueblo pequeño cerca de Ámsterdam. En ancienttrees.app cartografío los árboles viejos más notables de las ciudades, cada uno con su historia y su ubicación exacta, para que la gente tenga un motivo para salir y ponerse delante de algo antiguo.
+Me llamo Hidde y estoy construyendo ancienttrees.app, una plataforma para árboles increíbles. Mi objetivo es entusiasmar a la gente con los árboles viejos y animarla a ir a verlos fuera.
 
-De Madrid publicamos 17 árboles, entre ellos el ahuehuete del Parterre:
+Tenemos 17 árboles en Madrid y tenía mucha curiosidad por saber si podrían echar un vistazo a ver si están bien:
 https://ancienttrees.app/madrid
 
-Lo que más me interesa es su opinión personal: ¿qué árbol creen que nos falta en Madrid? Cualquier consejo personal es muy bienvenido, y puedo añadirlo esta semana.
+Además me preguntaba: ¿tienen algún árbol personal que les parezca especial?
 
-Gracias de todos modos,
+Cualquier ayuda sería muy apreciada, sobre todo fotografías, para mejorar la web.
+
+Me interesa mucho su opinión sobre el proyecto.
+
+Un saludo cordial,
 Hidde
-ancienttrees.app
 
 
 ## Bosques sin Fronteras <bosquessinfronteras@bosquessinfronteras.com>
@@ -451,16 +529,19 @@ Subject: ¿Me pueden ayudar con ancienttrees.app? Los árboles singulares de Val
 
 Hola,
 
-Me llamo Hidde y vivo en Baarn, un pueblo pequeño cerca de Ámsterdam. En ancienttrees.app cartografío los árboles viejos más notables de las ciudades, cada uno con su historia y su ubicación exacta, para que la gente tenga un motivo para salir y ponerse delante de algo antiguo.
+Me llamo Hidde y estoy construyendo ancienttrees.app, una plataforma para árboles increíbles. Mi objetivo es entusiasmar a la gente con los árboles viejos y animarla a ir a verlos fuera.
 
-De Valencia publicamos 16 árboles, entre ellos El Titán, el ficus del Parterre:
+Tenemos 16 árboles en Valencia y tenía mucha curiosidad por saber si podrían echar un vistazo a ver si están bien:
 https://ancienttrees.app/valencia
 
-Lo que más me interesa es su opinión personal: ¿qué árbol creen que nos falta en Valencia? Cualquier consejo personal es muy bienvenido, y puedo añadirlo esta semana.
+Además me preguntaba: ¿tienen algún árbol personal que les parezca especial?
 
-Gracias de todos modos,
+Cualquier ayuda sería muy apreciada, sobre todo fotografías, para mejorar la web.
+
+Me interesa mucho su opinión sobre el proyecto.
+
+Un saludo cordial,
 Hidde
-ancienttrees.app
 
 
 ## Plantipodes-AM <info@plantipodes-am.cat>
@@ -468,16 +549,19 @@ Subject: Em podeu ajudar amb ancienttrees.app? Els arbres monumentals de Barcelo
 
 Hola,
 
-Em dic Hidde i visc a Baarn, un poble petit a prop d'Amsterdam. A ancienttrees.app cartografio els arbres vells més notables de les ciutats, cadascun amb la seva història i el seu lloc exacte, perquè la gent tingui un motiu per sortir i plantar-se davant d'alguna cosa antiga.
+Em dic Hidde i estic construint ancienttrees.app, una plataforma per a arbres increïbles. El meu objectiu és engrescar la gent amb els arbres vells i animar-la a anar a veure'ls a fora.
 
-De Barcelona en publiquem 46, entre ells l'alzina del carrer de l'Encarnació:
+Tenim 46 arbres a Barcelona i tenia molta curiositat per saber si hi podríeu fer un cop d'ull per veure si són correctes:
 https://ancienttrees.app/barcelona
 
-El que més m'interessa és la vostra opinió personal: quin arbre creieu que ens falta a Barcelona? Qualsevol consell personal és benvingut, i el puc afegir aquesta setmana.
+A més em preguntava: teniu algun arbre personal que us sembli especial?
 
-Gràcies igualment,
+Qualsevol ajuda seria molt apreciada, sobretot fotografies, per millorar el web.
+
+M'interessa molt la vostra opinió sobre el projecte.
+
+Cordialment,
 Hidde
-ancienttrees.app
 
 
 ## Observatori Forestal de Catalunya <observatoriforestal@ctfc.cat>
@@ -485,16 +569,19 @@ Subject: Em podeu ajudar amb ancienttrees.app? Els arbres monumentals de Barcelo
 
 Hola,
 
-Em dic Hidde i visc a Baarn, un poble petit a prop d'Amsterdam. A ancienttrees.app cartografio els arbres vells més notables de les ciutats, cadascun amb la seva història i el seu lloc exacte, perquè la gent tingui un motiu per sortir i plantar-se davant d'alguna cosa antiga.
+Em dic Hidde i estic construint ancienttrees.app, una plataforma per a arbres increïbles. El meu objectiu és engrescar la gent amb els arbres vells i animar-la a anar a veure'ls a fora.
 
-De Barcelona en publiquem 46, entre ells els garrofers del Park Güell:
+Tenim 46 arbres a Barcelona i tenia molta curiositat per saber si hi podríeu fer un cop d'ull per veure si són correctes:
 https://ancienttrees.app/barcelona
 
-El que més m'interessa és la vostra opinió personal: quin arbre creieu que ens falta a Barcelona? Qualsevol consell personal és benvingut, i el puc afegir aquesta setmana.
+A més em preguntava: teniu algun arbre personal que us sembli especial?
 
-Gràcies igualment,
+Qualsevol ajuda seria molt apreciada, sobretot fotografies, per millorar el web.
+
+M'interessa molt la vostra opinió sobre el projecte.
+
+Cordialment,
 Hidde
-ancienttrees.app
 
 
 ## Società Botanica Italiana <sbi@unifi.it>
@@ -502,16 +589,19 @@ Subject: Può aiutarmi con ancienttrees.app? Gli alberi antichi di Firenze
 
 Buongiorno,
 
-Mi chiamo Hidde e vivo a Baarn, un paesino vicino ad Amsterdam. Su ancienttrees.app mappo gli alberi vecchi più notevoli delle città, ognuno con la sua storia e il punto esatto in cui si trova, così che le persone abbiano un motivo per uscire e stare davanti a qualcosa di antico.
+Mi chiamo Hidde e sto costruendo ancienttrees.app, una piattaforma per alberi incredibili. Il mio obiettivo è appassionare le persone agli alberi antichi e spingerle ad andare a vederli fuori.
 
-Di Firenze ne pubblichiamo 22, tra cui il tasso del Micheli nel Giardino dei Semplici:
+Abbiamo 22 alberi a Firenze ed ero molto curioso di sapere se potreste dare un'occhiata per vedere se sono giusti:
 https://ancienttrees.app/florence
 
-Quello che mi interessa davvero è la vostra opinione personale: quale albero pensate che ci manchi a Firenze? Ogni consiglio personale è molto gradito, e posso aggiungerlo questa settimana.
+Inoltre mi chiedevo: avete un albero personale che trovate speciale?
 
-Grazie comunque,
+Ogni aiuto sarebbe molto apprezzato, soprattutto fotografie, per migliorare il sito.
+
+Mi interessa molto la vostra opinione sul progetto.
+
+Cordiali saluti,
 Hidde
-ancienttrees.app
 
 
 ## ISA Italia <segreteria@isaitalia.org>
@@ -519,16 +609,19 @@ Subject: Può aiutarmi con ancienttrees.app? I platani dei Giardini Montanelli
 
 Buongiorno,
 
-Mi chiamo Hidde e vivo a Baarn, un paesino vicino ad Amsterdam. Su ancienttrees.app mappo gli alberi vecchi più notevoli delle città, ognuno con la sua storia e il punto esatto in cui si trova, così che le persone abbiano un motivo per uscire e stare davanti a qualcosa di antico.
+Mi chiamo Hidde e sto costruendo ancienttrees.app, una piattaforma per alberi incredibili. Il mio obiettivo è appassionare le persone agli alberi antichi e spingerle ad andare a vederli fuori.
 
-Di Milano ne pubblichiamo 18, tra cui Il Sacerdote:
+Abbiamo 18 alberi a Milano ed ero molto curioso di sapere se potreste dare un'occhiata per vedere se sono giusti:
 https://ancienttrees.app/milan
 
-Quello che mi interessa davvero è la vostra opinione personale: quale albero pensate che ci manchi a Milano? Ogni consiglio personale è molto gradito, e posso aggiungerlo questa settimana.
+Inoltre mi chiedevo: avete un albero personale che trovate speciale?
 
-Grazie comunque,
+Ogni aiuto sarebbe molto apprezzato, soprattutto fotografie, per migliorare il sito.
+
+Mi interessa molto la vostra opinione sul progetto.
+
+Cordiali saluti,
 Hidde
-ancienttrees.app
 
 
 ## Italia Nostra <italianostra@italianostra.org>
@@ -536,16 +629,19 @@ Subject: Può aiutarmi con ancienttrees.app? Gli alberi delle ville storiche di 
 
 Buongiorno,
 
-Mi chiamo Hidde e vivo a Baarn, un paesino vicino ad Amsterdam. Su ancienttrees.app mappo gli alberi vecchi più notevoli delle città, ognuno con la sua storia e il punto esatto in cui si trova, così che le persone abbiano un motivo per uscire e stare davanti a qualcosa di antico.
+Mi chiamo Hidde e sto costruendo ancienttrees.app, una piattaforma per alberi incredibili. Il mio obiettivo è appassionare le persone agli alberi antichi e spingerle ad andare a vederli fuori.
 
-Di Roma ne pubblichiamo 29, tra cui il ginkgo di Villa Sciarra:
+Abbiamo 29 alberi a Roma ed ero molto curioso di sapere se potreste dare un'occhiata per vedere se sono giusti:
 https://ancienttrees.app/rome
 
-Quello che mi interessa davvero è la vostra opinione personale: quale albero pensate che ci manchi a Roma? Ogni consiglio personale è molto gradito, e posso aggiungerlo questa settimana.
+Inoltre mi chiedevo: avete un albero personale che trovate speciale?
 
-Grazie comunque,
+Ogni aiuto sarebbe molto apprezzato, soprattutto fotografie, per migliorare il sito.
+
+Mi interessa molto la vostra opinione sul progetto.
+
+Cordiali saluti,
 Hidde
-ancienttrees.app
 
 
 ## Laboratorio Carteinregola <laboratoriocarteinregola@gmail.com>
@@ -553,16 +649,19 @@ Subject: Può aiutarmi con ancienttrees.app? Gli alberi di Roma
 
 Buongiorno,
 
-Mi chiamo Hidde e vivo a Baarn, un paesino vicino ad Amsterdam. Su ancienttrees.app mappo gli alberi vecchi più notevoli delle città, ognuno con la sua storia e il punto esatto in cui si trova, così che le persone abbiano un motivo per uscire e stare davanti a qualcosa di antico.
+Mi chiamo Hidde e sto costruendo ancienttrees.app, una piattaforma per alberi incredibili. Il mio obiettivo è appassionare le persone agli alberi antichi e spingerle ad andare a vederli fuori.
 
-Di Roma ne pubblichiamo 29, tra cui Adonis, il platano della Valle dei Platani a Villa Borghese:
+Abbiamo 29 alberi a Roma ed ero molto curioso di sapere se potreste dare un'occhiata per vedere se sono giusti:
 https://ancienttrees.app/rome
 
-Quello che mi interessa davvero è la vostra opinione personale: quale albero pensate che ci manchi a Roma? Ogni consiglio personale è molto gradito, e posso aggiungerlo questa settimana.
+Inoltre mi chiedevo: avete un albero personale che trovate speciale?
 
-Grazie comunque,
+Ogni aiuto sarebbe molto apprezzato, soprattutto fotografie, per migliorare il sito.
+
+Mi interessa molto la vostra opinione sul progetto.
+
+Cordiali saluti,
 Hidde
-ancienttrees.app
 
 
 ## Fondazione Villa Ghigi <info@villaghigi.it>
@@ -570,16 +669,19 @@ Subject: Può aiutarmi con ancienttrees.app? Gli alberi antichi di Bologna
 
 Buongiorno,
 
-Mi chiamo Hidde e vivo a Baarn, un paesino vicino ad Amsterdam. Su ancienttrees.app mappo gli alberi vecchi più notevoli delle città, ognuno con la sua storia e il punto esatto in cui si trova, così che le persone abbiano un motivo per uscire e stare davanti a qualcosa di antico.
+Mi chiamo Hidde e sto costruendo ancienttrees.app, una piattaforma per alberi incredibili. Il mio obiettivo è appassionare le persone agli alberi antichi e spingerle ad andare a vederli fuori.
 
-Di Bologna ne pubblichiamo 12, tra cui il cedro dell'Himalaya di Villa Ghigi:
+Abbiamo 12 alberi a Bologna ed ero molto curioso di sapere se potreste dare un'occhiata per vedere se sono giusti:
 https://ancienttrees.app/bologna
 
-Quello che mi interessa davvero è la vostra opinione personale: quale albero pensate che ci manchi a Bologna? Ogni consiglio personale è molto gradito, e posso aggiungerlo questa settimana.
+Inoltre mi chiedevo: avete un albero personale che trovate speciale?
 
-Grazie comunque,
+Ogni aiuto sarebbe molto apprezzato, soprattutto fotografie, per migliorare il sito.
+
+Mi interessa molto la vostra opinione sul progetto.
+
+Cordiali saluti,
 Hidde
-ancienttrees.app
 
 
 ## Comitato Amici del Parco Trotter <amicitrotter@gmail.com>
@@ -587,16 +689,19 @@ Subject: Può aiutarmi con ancienttrees.app? La Quercia Rossa del Trotter
 
 Buongiorno,
 
-Mi chiamo Hidde e vivo a Baarn, un paesino vicino ad Amsterdam. Su ancienttrees.app mappo gli alberi vecchi più notevoli delle città, ognuno con la sua storia e il punto esatto in cui si trova, così che le persone abbiano un motivo per uscire e stare davanti a qualcosa di antico.
+Mi chiamo Hidde e sto costruendo ancienttrees.app, una piattaforma per alberi incredibili. Il mio obiettivo è appassionare le persone agli alberi antichi e spingerle ad andare a vederli fuori.
 
-Di Milano ne pubblichiamo 18, tra cui La Quercia Rossa del Trotter:
+Abbiamo 18 alberi a Milano ed ero molto curioso di sapere se potreste dare un'occhiata per vedere se sono giusti:
 https://ancienttrees.app/milan
 
-Quello che mi interessa davvero è la vostra opinione personale: quale albero pensate che ci manchi a Milano? Ogni consiglio personale è molto gradito, e posso aggiungerlo questa settimana.
+Inoltre mi chiedevo: avete un albero personale che trovate speciale?
 
-Grazie comunque,
+Ogni aiuto sarebbe molto apprezzato, soprattutto fotografie, per migliorare il sito.
+
+Mi interessa molto la vostra opinione sul progetto.
+
+Cordiali saluti,
 Hidde
-ancienttrees.app
 
 
 ## Kings Weston Action Group <kwactiongroup@gmail.com>
@@ -604,16 +709,19 @@ Subject: Can you help me with ancienttrees.app? The old trees of Bristol
 
 Hello,
 
-My name is Hidde and I live in Baarn, a small town near Amsterdam. On ancienttrees.app I map the most remarkable old trees of cities, each one with its story and its exact spot, so people have a reason to go outside and stand in front of something old.
+My name is Hidde and I am building ancienttrees.app, a platform for incredible trees. My goal is to get people excited about old trees and to encourage them to go and see them outside.
 
-For Bristol we publish 5 trees, the Oak of Kings Weston among them:
+We have 5 trees in Bristol and I was really curious whether you would take a look at whether they are right:
 https://ancienttrees.app/bristol
 
-What I would really like is your personal opinion: which tree do you think we are missing in Bristol? Any personal tips are very welcome, then I can add them this week.
+I also wondered: do you have a personal tree that you find special?
 
-Thanks either way,
+Any help would be much appreciated, photographs above all, to make the site better.
+
+I would really like to hear your opinion on the project.
+
+Best wishes,
 Hidde
-ancienttrees.app
 
 
 ## The Tree Council <info@treecouncil.org.uk>
@@ -621,16 +729,19 @@ Subject: Can you help me with ancienttrees.app? The old trees of London
 
 Hello,
 
-My name is Hidde and I live in Baarn, a small town near Amsterdam. On ancienttrees.app I map the most remarkable old trees of cities, each one with its story and its exact spot, so people have a reason to go outside and stand in front of something old.
+My name is Hidde and I am building ancienttrees.app, a platform for incredible trees. My goal is to get people excited about old trees and to encourage them to go and see them outside.
 
-For London we publish 23 trees, the Totteridge Yew among them:
+We have 23 trees in London and I was really curious whether you would take a look at whether they are right:
 https://ancienttrees.app/london
 
-What I would really like is your personal opinion: which tree do you think we are missing in London? Any personal tips are very welcome, then I can add them this week.
+I also wondered: do you have a personal tree that you find special?
 
-Thanks either way,
+Any help would be much appreciated, photographs above all, to make the site better.
+
+I would really like to hear your opinion on the project.
+
+Best wishes,
 Hidde
-ancienttrees.app
 
 
 ## Arboricultural Association <admin@trees.org.uk>
@@ -638,16 +749,19 @@ Subject: Can you help me with ancienttrees.app? The old trees of London
 
 Hello,
 
-My name is Hidde and I live in Baarn, a small town near Amsterdam. On ancienttrees.app I map the most remarkable old trees of cities, each one with its story and its exact spot, so people have a reason to go outside and stand in front of something old.
+My name is Hidde and I am building ancienttrees.app, a platform for incredible trees. My goal is to get people excited about old trees and to encourage them to go and see them outside.
 
-For London we publish 23 trees, the Cheapside Plane among them:
+We have 23 trees in London and I was really curious whether you would take a look at whether they are right:
 https://ancienttrees.app/london
 
-What I would really like is your personal opinion: which tree do you think we are missing in London? Any personal tips are very welcome, then I can add them this week.
+I also wondered: do you have a personal tree that you find special?
 
-Thanks either way,
+Any help would be much appreciated, photographs above all, to make the site better.
+
+I would really like to hear your opinion on the project.
+
+Best wishes,
 Hidde
-ancienttrees.app
 
 
 ## Tree Council of Ireland <trees@treecouncil.ie>
@@ -655,16 +769,19 @@ Subject: Can you help me with ancienttrees.app? The old trees of Dublin
 
 Hello,
 
-My name is Hidde and I live in Baarn, a small town near Amsterdam. On ancienttrees.app I map the most remarkable old trees of cities, each one with its story and its exact spot, so people have a reason to go outside and stand in front of something old.
+My name is Hidde and I am building ancienttrees.app, a platform for incredible trees. My goal is to get people excited about old trees and to encourage them to go and see them outside.
 
-For Dublin we publish 17 trees, the Hungry Tree on Constitution Hill among them:
+We have 17 trees in Dublin and I was really curious whether you would take a look at whether they are right:
 https://ancienttrees.app/dublin
 
-What I would really like is your personal opinion: which tree do you think we are missing in Dublin? Any personal tips are very welcome, then I can add them this week.
+I also wondered: do you have a personal tree that you find special?
 
-Thanks either way,
+Any help would be much appreciated, photographs above all, to make the site better.
+
+I would really like to hear your opinion on the project.
+
+Best wishes,
 Hidde
-ancienttrees.app
 
 
 ## Ancient Tree Forum <admin@ancienttreeforum.org.uk>
@@ -672,15 +789,18 @@ Subject: Can you help me with ancienttrees.app? The veteran trees of Edinburgh
 
 Hello,
 
-My name is Hidde and I live in Baarn, a small town near Amsterdam. On ancienttrees.app I map the most remarkable old trees of cities, each one with its story and its exact spot, so people have a reason to go outside and stand in front of something old.
+My name is Hidde and I am building ancienttrees.app, a platform for incredible trees. My goal is to get people excited about old trees and to encourage them to go and see them outside.
 
-For Edinburgh we publish 15 trees, the Craigmillar Castle yews among them:
+We have 15 trees in Edinburgh and I was really curious whether you would take a look at whether they are right:
 https://ancienttrees.app/edinburgh
 
-What I would really like is your personal opinion: which tree do you think we are missing in Edinburgh? Any personal tips are very welcome, then I can add them this week.
+I also wondered: do you have a personal tree that you find special?
 
-Thanks either way,
+Any help would be much appreciated, photographs above all, to make the site better.
+
+I would really like to hear your opinion on the project.
+
+Best wishes,
 Hidde
-ancienttrees.app
 
 
