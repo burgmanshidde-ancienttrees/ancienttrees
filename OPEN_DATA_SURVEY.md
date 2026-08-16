@@ -4,6 +4,92 @@ Measured 2026-07-21. The question changed halfway through, and so did the answer
 
 It started as "can open data get us to every city in the world", which assumed publishing hundreds of trees per city. Hidde rejected that the same day: ten per city is what makes the passport work, and scarcity is the mechanism rather than a limitation. See BACKLOG.md. So the surviving question is narrower and more useful: **can open data cut the dull half of a city run, finding candidates and fixing coordinates, so runs spend their time on stories?**
 
+## Estonia: EELIS kaitstavad looduse üksikobjektid, imported 2026-08-15 (VERDICT: usable, CC BY 4.0)
+
+**555 protected trees nationwide, 56 within 15 km of Tallinn** (#65 in the queue,
+zero trees and zero register supply until now). One WFS request, no agent.
+`data/registers/estonia-eelis-yksikobjektid.json`; endpoint
+`https://gsavalik.envir.ee/geoserver/eelis/ows`, layer `eelis:kr_yksikobjektid`.
+
+**How it was found, and it is the reusable half.** The designation name came out
+of the Wikidata scout below, not out of a search: 235 Estonian trees there carry
+"individual protected natural object", the literal English of *kaitstav looduse
+üksikobjekt*. Searching a government for the term its own law uses is a much
+shorter path than searching it for "tree register", and
+`python3 scripts/wikidata_trees.py --designations` now prints that term for
+every country. **Run it before scouting anywhere.**
+
+**Licence: CC BY 4.0**, from keskkonnaportaal.ee, the environment ministry's own
+portal, page updated 2026-05-26, read 2026-08-15: "Avaandmete kasutamise
+tingimused on leitavad levituste juures ja keskkonna- ja ilma valdkonna andmed
+on väärtuslikud andmed (vastavalt avaandmete direktiivile) siis litsents on
+reeglina CC-BY 4.0." Recorded with its hedge intact: *reeglina* means "as a
+rule", so this is a blanket portal statement rather than a per-dataset tag, and
+the WFS carries no Fees or AccessConstraints element of its own. Attribution
+required: "EELIS (Eesti looduse infosüsteem), Keskkonnaagentuur" plus the
+extract date.
+
+**The layer is not tree-only, so the semantic filter is ours:** 1,065 objects, of
+which 555 have a type containing *(puu)*. The rest are erratic boulders (369),
+springs, outcrops and karst. Of the trees, 506 are single, 46 are groves and 3
+are avenues; the last two carry `publishable: false` under the collectible-point
+rule, not because they are unprotected.
+
+**One field is worth more than it looks: `aluskaart`, the base map each point was
+digitised from.** It is a precision statement the register gives away free, and
+the honest input to `location_precision`: "GPS" (79) is surveyed, "Tallinna
+vektorkaart 1:2000" is a city vector map and good, "Eesti Põhikaart 1:10 000"
+(165) was drawn off a 1:10,000 sheet and should default to approximate. No other
+register here states this. **Look for the equivalent field in every import.**
+
+No age, no girth, no vitality, per the standing register warning. 72 of the 555
+are polygons carrying a ring centroid, marked `geometry: polygon centroid`.
+
+## Scouting round of 2026-08-15: three stalls, and a correction to the German verdict
+
+**The German verdict of 2026-08-13 needs qualifying.** That pass checked nine
+Bundeslaender and recorded Sachsen as "none found (FND is areal-only)", with
+Hessen, NRW and Brandenburg carrying no ND feature type in their open WFS. All
+true about the STATE endpoints, and all misleading as a picture of the data,
+because volunteers have mapped those very schemes: 936 trees under "natural
+monument in Saxony", 790 under "Single natural monument in Hesse", 382 in
+Thuringia, 356 in Brandenburg, 53 in Saxony-Anhalt. **2,517 located trees in the
+Laender we wrote off**, which is why Dresden shows 209 within 15 km, Leipzig 63
+and Frankfurt 55. The scout was not wrong; "the state does not publish it" and
+"the data does not exist" are simply different findings, and this project has
+been treating them as one.
+
+**Stalled, recorded so nobody re-runs them blind:**
+
+- **Lithuania (Vilnius #22, the highest-ranked city with no trees).** The
+  register is real: Saugomų teritorijų valstybės kadastras, 800+ nature heritage
+  objects with botanical ones being trees, declared public and free of charge.
+  It is served through `stvk.lt/map`, an Angular app whose bundles contain no
+  absolute API host; every guessed path returns the SPA shell, and
+  `services.stvk.lt` answers with a default Apache page. **Next step is a
+  browser session reading the app's own network calls**, not more URL guessing.
+- **Sweden (Gothenburg #73, Malmo #134).** Naturvårdsverket's
+  naturvårdsregistret covers *naturminne* and its metadata advertises
+  WMS/WFS/REST, but `geodata.naturvardsverket.se/geoserver` answers every WFS
+  request with "Service WFS is disabled". The REST route was not tried and is
+  the next step.
+- **Austria (Graz #92, Salzburg #154, Innsbruck #163, Hallstatt #189).**
+  Steiermark's Naturdenkmäler are published under **CC BY 4.0** with WMS/WFS via
+  haleconnect.com: a confirmed licence and an unlocated endpoint, since the
+  INSPIRE record (6A815BD3-6F5B-4946-BB6D-33A527F94C21) carries no service URL
+  and data.gv.at has replaced its CKAN API with a JavaScript app, so
+  `package_search` is gone. Salzburg runs an ArcGIS Hub at
+  `data-sagis.opendata.arcgis.com` (168 datasets, the Portland pattern) and none
+  of them is Naturdenkmal or Geschützte Naturgebilde.
+
+**Three of the four stalls are one problem: the open-data layer has moved behind
+JavaScript.** data.gv.at, stvk.lt and data.steiermark.at all used to expose a
+catalogue API and now serve an app. A scout with a browser reads the network
+calls in minutes; a scout with curl guesses hostnames and burns its window,
+which is exactly what happened here after Estonia. That is a tooling gap rather
+than a data gap, and it wants fixing before the next register pass, not during
+one.
+
 ## Wikidata's own remarkable-tree layer, scouted 2026-08-15: USABLE, and it covers what governments do not
 
 **19,732 individual trees with coordinates, in one SPARQL request, for nothing.**

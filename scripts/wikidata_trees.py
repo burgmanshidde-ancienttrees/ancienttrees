@@ -151,6 +151,21 @@ def load():
         return json.load(fh)
 
 
+def registers():
+    """The register files this project already holds, for the imported column."""
+    import glob
+    out = []
+    for p in glob.glob(os.path.join(ROOT, "data", "registers", "*.json")):
+        try:
+            with open(p, encoding="utf-8") as fh:
+                d = json.load(fh)
+            if isinstance(d, dict):
+                out.append(d)
+        except (OSError, ValueError):
+            continue
+    return out
+
+
 def near(trees, lat, lng, km):
     dlat = km / 111.0
     dlng = km / (111.0 * max(math.cos(math.radians(lat)), 0.1))
@@ -162,6 +177,9 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--fetch", action="store_true", help="refresh from Wikidata")
     ap.add_argument("--country", help="list what is known for one country")
+    ap.add_argument("--designations", action="store_true",
+                    help="the legal protection scheme behind each country's "
+                         "trees: the search term that finds its register")
     ap.add_argument("--km", type=float, default=15.0,
                     help="radius per city (default 15, a day-trip band)")
     ap.add_argument("--limit", type=int, default=40)
@@ -180,6 +198,44 @@ def main():
         print("no local copy yet, run: python3 scripts/wikidata_trees.py --fetch")
         return 1
     trees = doc["trees"]
+
+    if a.designations:
+        # Estonia was found this way and it is the cheapest scouting move in
+        # the project. Wikidata records WHICH legal designation protects each
+        # tree, and searching a government for the term its own law uses beats
+        # searching it for "tree register": "kaitstav looduse uksikobjekt"
+        # lands on the EELIS WFS in one search, "Estonia tree register" does
+        # not. Run this before scouting any country.
+        by = {}
+        for t in trees:
+            if not t.get("designation") or t["designation"].startswith("Q"):
+                continue
+            by.setdefault((t["country"], t["designation"]), 0)
+            by[(t["country"], t["designation"])] += 1
+        # Deliberately NOT a per-designation "imported" flag. Country is the
+        # only key both sides share, and in a federal country that answers the
+        # wrong question: we hold Bayern and Berlin, so Germany reads as
+        # covered while Saxony, Hesse, Thuringia and Brandenburg (2,464 trees
+        # between them) are exactly the gap. The column says how much of the
+        # country we hold, and a scheme in a partly-covered country still has
+        # to be checked by hand.
+        have = {}
+        for r in registers():
+            # A few register files carry a dict or list in "source" rather than
+            # a string, so only the country key is read here.
+            have.setdefault(r.get("country"), []).append(1)
+        print("The legal scheme protecting each country's trees: the term to "
+              "search a\ngovernment for. Estonia was found this way. The last "
+              "column counts register\nfiles we hold for that COUNTRY, which "
+              "in a federal state says nothing about\nthe particular Land or "
+              "region a scheme belongs to.\n")
+        print("%6s  %-18s %-46s %s" % ("trees", "country", "designation", "our files"))
+        for (country, desig), n in sorted(by.items(), key=lambda kv: -kv[1])[:a.limit]:
+            files = have.get(country)
+            print("%6d  %-18s %-46s %s"
+                  % (n, (country or "")[:18], desig[:46],
+                     ("%d" % len(files)) if files else "none"))
+        return 0
 
     if a.country:
         rows = [t for t in trees if (t["country"] or "").lower() == a.country.lower()]
