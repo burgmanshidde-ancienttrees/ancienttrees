@@ -1,6 +1,49 @@
 {
-  "leads": [],
+  "leads": [
+    {
+      "name": "Silky Oak (City Botanic Gardens)",
+      "species": "Silky Oak (Grevillea robusta)",
+      "location": {"latitude": null, "longitude": null, "neighbourhood": "City Botanic Gardens, between the pond and the Morning Star sculpture"},
+      "why_not_verified": "National Trust database only (trusttrees.org.au/tree/QLD/Brisbane/Brisbane_City_Botanic_Gardens_Alice_Street_2): roughly 100 years old, 32m tall, single specimen, described as the largest of Australia's grevilleas with orange racemes. No second independent source found this pass (Wikipedia's City Botanic Gardens article does not mention it by name). A real candidate for a future pass with more time to search for a second source or dated photo."
+    },
+    {
+      "name": "Hoop Pine (City Botanic Gardens)",
+      "species": "Hoop Pine (Araucaria cunninghamii)",
+      "location": {"latitude": null, "longitude": null, "neighbourhood": "City Botanic Gardens, inside the George Street fence near QUT Gardens Point"},
+      "why_not_verified": "National Trust database only (Alice_Street_27): roughly 60-72 years old (measured 2014), 33m tall. Single source, no second corroboration found this pass."
+    },
+    {
+      "name": "Big-leaf Mahogany (City Botanic Gardens, second specimen)",
+      "species": "Big-leaf Mahogany (Swietenia macrophylla)",
+      "location": {"latitude": null, "longitude": null, "neighbourhood": "City Botanic Gardens, left of the path near the Alice Street entrance"},
+      "why_not_verified": "A second, distinct mahogany specimen (Alice_Street_10), planted 1869, roughly 157 years old, 22m tall. Not pursued this pass because the older Swietenia mahagoni (planted 1861, delivered this pass as bne_010) was chosen instead and two mahogany entries in one small pass seemed redundant; this one is a different species and could still stand on its own with a second source."
+    },
+    {
+      "name": "Black Bean / Moreton Bay Chestnut (City Botanic Gardens)",
+      "species": "Black Bean (Castanospermum australe)",
+      "location": {"latitude": null, "longitude": null, "neighbourhood": "City Botanic Gardens, northern edge of the rainforest section"},
+      "why_not_verified": "National Trust database only (Alice_Street_3): roughly 70 years old, 22m tall, 1m diameter. Single source, comparatively modest age; a nice story (its timber carved the 1951 Speaker's Chair gift to the British House of Commons) but not remarkable enough on its own evidence this pass to prioritise over stronger candidates."
+    },
+    {
+      "name": "Kauri Pine (City Botanic Gardens)",
+      "species": "Kauri Pine (Agathis robusta)",
+      "location": {"latitude": null, "longitude": null, "neighbourhood": "City Botanic Gardens, south east of the formal flower garden"},
+      "why_not_verified": "National Trust database only (Alice_Street_5): planted 1980, only roughly 45 years old. Too young to be a strong ancient-tree candidate; parked rather than pursued."
+    },
+    {
+      "name": "Anzac (Turkish) Pines (City Botanic Gardens)",
+      "species": "Turkish Pine (Pinus brutia)",
+      "location": {"latitude": null, "longitude": null, "neighbourhood": "City Botanic Gardens, eastern side near the George Street / Parliament House entrance"},
+      "why_not_verified": "Planted 26 April 1979 from seed brought back from Lone Pine, Gallipoli, by veteran soldiers; historically significant (Anzac commemoration) but a group of 5 trees (2 originals plus 3 later replacements after 2 died), each only roughly 46 years old and modest (8m tall). Not pursued this pass: unclear whether it passes the single-collectible-point test given it is a small planted group with a mixed-age replacement history, and the age/size are both slight. Worth a judgement call by a future pass rather than a default no."
+    }
+  ],
   "blocked": [
+    {
+      "name": "Weeping Fig Avenue (City Botanic Gardens, eastern river path)",
+      "species": "Weeping Fig (Ficus benjamina)",
+      "location": {"latitude": null, "longitude": null, "neighbourhood": "City Botanic Gardens, eastern river path from the Edward Street entrance"},
+      "reason": "National Trust database (Alice_Street_13) explicitly describes this as an 'Avenue' of 9 trees planted by head gardener James Pink (1881-1886) along the riverbank, distinct from the already-published pair at the Alice Street gate (bne_009, a different National Trust entry, 147_Alice_Street_6). Not a single collectible point, same reasoning as the already-blocked Bunya Pine Avenue; never ship as one entry."
+    },
     {
       "name": "Bunya Pine Avenue (City Botanic Gardens)",
       "species": "Bunya Pine (Araucaria bidwillii)",
