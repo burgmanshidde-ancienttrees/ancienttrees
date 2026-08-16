@@ -49,6 +49,18 @@ const RENAMED_TREE_SLUGS: [string, string, string][] = [
   ["prague", "platan-u-kostela-sv-klimenta-nove-mlyny", "prg_017"],
 ];
 
+// A tree that turned out to already be published under a different city
+// keeps its old URL resolving, pointed at the surviving page there.
+// pot_005/pot_006 (2026-08-16): Potsdam's two Pfaueninsel oaks duplicated
+// Berlin's already-published ber_012 and ber_011 (same register ids,
+// coordinates within 15m, same sources); Berlin's copies are the fuller,
+// earlier-sourced entries and survive. See REVIEW.md 2026-08-16 BLOCKER
+// and data/leads/potsdam.json's blocked entries.
+const CROSS_CITY_MERGED_TREE_SLUGS: [string, string, string, string][] = [
+  ["potsdam", "door-oak-of-pfaueninsel", "berlin", "ber_012"],
+  ["potsdam", "schlosswiese-oak-of-pfaueninsel", "berlin", "ber_011"],
+];
+
 // A tree pulled outright, no replacement. Mirrors REMOVED_TREE_SLUGS,
 // build_site.py:5290.
 // muc_015-018 (2026-08-13): a writing pass on 2026-08-12 re-wrote four
@@ -181,6 +193,19 @@ export function buildRedirectStubs(): RedirectStub[] {
         title: "Moved: this tree",
       });
     }
+  }
+
+  for (const [oldCitySlug, oldSlug, newCitySlug, treeId] of CROSS_CITY_MERGED_TREE_SLUGS) {
+    if (!publishedSet.has(newCitySlug)) continue;
+    const slugs = treeSlugsForCity(newCitySlug);
+    const newSlug = slugs[treeId];
+    if (!newSlug) continue;
+    stubs.push({
+      outputPath: `${oldCitySlug}/${oldSlug}.html`,
+      targetRelative: `../${newCitySlug}/${newSlug}`,
+      canonical: `${BASE_URL}/${newCitySlug}/${newSlug}`,
+      title: "Moved: this tree",
+    });
   }
 
   for (const [citySlug, oldSlug] of REMOVED_TREE_SLUGS) {

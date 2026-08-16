@@ -4,7 +4,7 @@
   "data/registers",
   "data/leads"
  ],
- "count": 41679,
+ "count": 41677,
  "trees": [
   {
    "id": "aar_001",
@@ -14517,38 +14517,6 @@
    "has_photo": false,
    "has_story": true,
    "sources": 2
-  },
-  {
-   "id": "pot_005",
-   "tier": "highlighted",
-   "name": "The Door Oak of Pfaueninsel",
-   "species": "Sessile Oak (Quercus petraea)",
-   "city": "Potsdam",
-   "country": "Germany",
-   "lat": 52.430667,
-   "lng": 13.122139,
-   "precision": "confirmed",
-   "age_min": 200,
-   "age_max": 300,
-   "has_photo": false,
-   "has_story": true,
-   "sources": 2
-  },
-  {
-   "id": "pot_006",
-   "tier": "highlighted",
-   "name": "The Schlosswiese Oak of Pfaueninsel",
-   "species": "Sessile Oak (Quercus petraea)",
-   "city": "Potsdam",
-   "country": "Germany",
-   "lat": 52.431453,
-   "lng": 13.120752,
-   "precision": "confirmed",
-   "age_min": 150,
-   "age_max": 250,
-   "has_photo": false,
-   "has_story": true,
-   "sources": 3
   },
   {
    "id": "poz_001",
