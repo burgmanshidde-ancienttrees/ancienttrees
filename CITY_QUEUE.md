@@ -191,9 +191,9 @@ so qa.py fails the deploy when the table and the json disagree.
 | 10 | Montreal | 22.81 | 315,322 | - | - | - | - | 10 | predicted (travel demand) |
 | 11 | Brussels | 15.13 | 176,863 | 20 | 4 | 1 | 436 | 20 | measured |
 | 12 | Munich | 14.60 | 224,067 | 29 | 13 | 6 | 76 | 20 | measured |
-| 13 | Aarhus | 20.92 | 52,722 | - | - | - | - | 10 | predicted (travel demand) |
+| 13 | Aarhus | 20.92 | 52,722 | 7 | - | 1 | - | 10 | predicted (travel demand) |
 | 14 | Sydney | 19.69 | 305,304 | - | - | - | - | 10 | predicted (travel demand) |
-| 15 | Brisbane | 12.73 | 162,602 | - | - | - | 186 | 10 | predicted (travel demand) |
+| 15 | Brisbane | 12.73 | 162,602 | 8 | - | 1 | 188 | 10 | predicted (travel demand) |
 | 16 | Frankfurt | 18.06 | 150,379 | - | - | - | - | 10 | predicted (travel demand) |
 | 17 | Bologna | 10.35 | 146,161 | 12 | 7 | 2 | 9 | 20 | measured |
 | 18 | Boston | 16.46 | 385,902 | 10 | 1 | 1 | - | 30 | measured |
@@ -373,13 +373,13 @@ so qa.py fails the deploy when the table and the json disagree.
 | 192 | Istanbul | 1.90 | 333,027 | 14 | 4 | 1 | - | 10 | published, never ranked (may be uncrawled) |
 | 193 | Como | 0.96 | 82,645 | 9 | 2 | 1 | 23 | 10 | published, never ranked (may be uncrawled) |
 | 194 | Izmir | 1.88 | 69,826 | - | - | - | - | 10 | predicted (travel demand) |
-| 195 | Cordoba | 1.06 | 74,675 | 10 | 2 | 2 | 3 | 10 | measured |
-| 196 | Bangkok | 1.86 | 222,206 | 5 | - | 1 | - | 20 | measured |
-| 197 | Hobart | 1.23 | 81,734 | 10 | - | 2 | 455 | 10 | published, never ranked (may be uncrawled) |
-| 198 | Killarney | 1.20 | 28,763 | - | - | - | - | 10 | predicted (travel demand) |
-| 199 | Stirling | 1.78 | 43,558 | - | - | - | - | 10 | predicted (travel demand) |
-| 200 | Oslo | 1.76 | 181,113 | 4 | - | - | - | 10 | published, never ranked (may be uncrawled) |
-| 201 | Dijon | 1.72 | 43,526 | - | - | - | - | 10 | predicted (travel demand) |
+| 195 | Bangkok | 1.86 | 222,206 | 5 | - | 1 | - | 20 | measured |
+| 196 | Hobart | 1.23 | 81,734 | 10 | - | 2 | 455 | 10 | published, never ranked (may be uncrawled) |
+| 197 | Killarney | 1.20 | 28,763 | - | - | - | - | 10 | predicted (travel demand) |
+| 198 | Stirling | 1.78 | 43,558 | - | - | - | - | 10 | predicted (travel demand) |
+| 199 | Oslo | 1.76 | 181,113 | 4 | - | - | - | 10 | published, never ranked (may be uncrawled) |
+| 200 | Dijon | 1.72 | 43,526 | - | - | - | - | 10 | predicted (travel demand) |
+| 201 | Cordoba | 1.06 | 74,675 | 15 | 2 | 2 | 3 | 10 | measured |
 | 202 | Annecy | 1.69 | 56,859 | - | - | - | - | 10 | predicted (travel demand) |
 | 203 | Geneva | 1.13 | 162,269 | 6 | 4 | 1 | 129 | 10 | published, never ranked (may be uncrawled) |
 | 204 | York | 1.69 | 118,066 | 6 | 2 | 1 | - | 10 | published, never ranked (may be uncrawled) |
