@@ -704,6 +704,23 @@ def funnel_section(today, cf_token):
                                   % since, key)
                     rows.append("- Visits that did something: %.1f%% (%d actions on %d visits)"
                                 % (rate(len(ev), vis), len(ev), vis))
+                    # The watchdog that was missing, added 2026-08-16 the day
+                    # the beacon bug was found. Every funnel event had been
+                    # silently dropped since launch (sendBeacon cannot
+                    # preflight a Blob of type application/json, so the request
+                    # died and sendBeacon still returned true), and the zeros
+                    # were read for five weeks as a fact about users. A number
+                    # that is exactly zero on hundreds of visits is the
+                    # signature of a broken instrument, not of an audience, so
+                    # the digest says so itself rather than waiting for
+                    # somebody to wonder.
+                    if not ev and vis >= 100:
+                        rows.append("- **WARNING: %d visits and not one event of "
+                                    "any kind. At this volume that reads as a "
+                                    "broken recorder rather than as user "
+                                    "behaviour. Check at.track() reaches the "
+                                    "events table before drawing any conclusion "
+                                    "from a zero above.**" % vis)
                 except Exception:
                     pass
     return "**The funnel, as rates**\n" + ("\n".join(rows) if rows else "- no data")
