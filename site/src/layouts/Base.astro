@@ -146,9 +146,16 @@ at.track = function (name, detail) {
     var ev = { name: String(name).slice(0, 40), path: location.pathname.slice(0, 120) };
     if (detail) { ev.detail = String(detail).slice(0, 60); }
     var body = JSON.stringify(ev);
-    navigator.sendBeacon
-      ? navigator.sendBeacon(SB_URL + "/rest/v1/events?apikey=" + SB_KEY, new Blob([body], { type: "application/json" }))
-      : fetch(SB_URL + "/rest/v1/events", { method: "POST", keepalive: true, headers: { apikey: SB_KEY, "Content-Type": "application/json", Prefer: "return=minimal" }, body: body });
+    // NOT sendBeacon, and this is the whole reason every funnel number read
+    // zero from launch until 2026-08-16. A beacon carrying a Blob of type
+    // application/json is not a CORS-simple request, so the browser must
+    // preflight it, and sendBeacon cannot preflight: the request is dropped
+    // silently and sendBeacon still returns true, so nothing anywhere could
+    // see it fail. Measured on the live site: the same insert by fetch
+    // returns 201, the beacon returns status 0. fetch with keepalive:true
+    // survives the page unload the beacon was there for, and can set the
+    // headers PostgREST needs.
+    fetch(SB_URL + "/rest/v1/events", { method: "POST", keepalive: true, headers: { apikey: SB_KEY, "Content-Type": "application/json", Prefer: "return=minimal" }, body: body });
   } catch (e) {}
 };
 document.addEventListener("click", function (e) {
