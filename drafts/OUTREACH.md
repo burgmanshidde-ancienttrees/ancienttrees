@@ -447,6 +447,7 @@ why_them is trusted for ownership now. 106 contacts remain; the daily cap is 40.
 | 2026-08-08 | Haarlems Dagblad, stadsredactie@haarlemsdagblad.nl | Haarlem local pitch (Lodewijk Napoleon beech), batch 001 | **sent** |
 | 2026-08-08 | De Gelderlander, redactie@gelderlander.nl | Arnhem local pitch (De Poortwachters), batch 001 | **sent** |
 | 2026-08-08 | Generalitat de Catalunya, arbresmonumentals.tes@gencat.cat | Permission to show Catalonia's monumental trees; unlocks Barcelona's trees AND its photos | **sent**, no reply yet |
+| 2026-08-16 | Ontario Urban Forest Council, info@oufc.org | Licence for the Ontario Heritage Tree map; unlocks the 27 public Toronto leads (Toronto is rank 1). Forests Canada owns the layer but publishes no general address, so the mail offers to be redirected | **sent** |
 | 2026-08-16 | City of Sydney, Council@cityofsydney.nsw.gov.au | Licence for the Register of Significant Trees; unlocks Sydney (#5) and the best-instrumented register found anywhere | **sent** |
 | 2026-08-16 | Bomenstichting, info@bomenstichting.nl | Licence for the Landelijk Register Monumentale Bomen; deepens 13 published Dutch cities | **sent** |
 | 2026-08-16 | GDOS Poland, kancelaria@gdos.gov.pl | Which licence applies to CRFOP (metadata says CC0, condition fields empty, site publishes CC BY-SA); 117,474 tree monuments | **sent** |

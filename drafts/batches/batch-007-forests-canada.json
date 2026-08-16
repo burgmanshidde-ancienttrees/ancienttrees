@@ -1,0 +1,15 @@
+{
+ "batch": "007-forests-canada",
+ "note": "Licence ask for the Ontario Heritage Tree Program map, on Hidde's instruction 2026-08-16 ('email forests canada please'). Sent to the Ontario Urban Forest Council, which co-runs the programme and publishes info@oufc.org on the Heritage Tree Program page itself; Forests Canada owns the ArcGIS layer but publishes no general address, only BD.events@ and Envirothon@, so the mail says outright that we are happy to be redirected. Unlocks the 27 public Toronto leads in data/leads/toronto.json, which is rank 1 on the queue.",
+ "status": "approved_by_hidde",
+ "approved": "Hidde in session 2026-08-16: 'email forests canada please'",
+ "mails": [
+  {
+   "to": "info@oufc.org",
+   "found_at": "https://oufc.org/index.php/heritage-tree-program/ and their contact page, both read 2026-08-16",
+   "outlet": "Ontario Urban Forest Council, Heritage Tree Program",
+   "subject": "Licence for the Ontario Heritage Tree map data",
+   "body": "Hello,\n\nMy name is Hidde and I am building ancienttrees.app, a platform for remarkable\ntrees. My goal is to get people excited about old trees and to encourage them to\ngo outside and look at them.\n\nI would like to show Ontario's Heritage Trees on the map, credited to the\nHeritage Tree Program with a link back, starting around Toronto. The map data\ncarries no licence that I can find, so I am asking rather than assuming, and if\nthis is Forests Canada's call rather than yours I would be glad to be pointed\ntheir way.\n\nThe site is free and has no ads, but I am building an app with a paid tier\nlater, so I will not claim non-commercial. We would leave out every tree your\nown data marks as private.\n\nWould you be willing to licence it, or tell me the terms you would want?\n\nAnd either way: which Ontario tree do you think more people should go and see?\n\nKind regards,\nHidde\nancienttrees.app"
+  }
+ ]
+}
