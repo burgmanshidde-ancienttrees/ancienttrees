@@ -1,0 +1,888 @@
+{
+ "country": "Lithuania",
+ "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+ "leads": [
+  {
+   "name": "Agluona oak",
+   "lat": 55.370609,
+   "lng": 22.440008,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Agluonos_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:V%C4%97%C5%BEalaukis,_Agluonos_%C4%85%C5%BEuolas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Bagrėnas linden",
+   "lat": 54.653382,
+   "lng": 23.990981,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Bagr%C4%97no_liepa.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Degsnė larch",
+   "lat": 54.569709,
+   "lng": 23.875916,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Degsn%C4%97s_maumedis,_kamienas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Degsn%C4%97s_maumedis.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Didžioji tuja Kintuose",
+   "lat": 55.423884,
+   "lng": 21.257215,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Did%C5%BEiausia_ir_seniausia_did%C5%BEioji_tuja_Lietuvoje_-_panoramio.jpg",
+    "https://commons.wikimedia.org/wiki/File:ZeravObrovsk%C3%BDKintai01.jpg",
+    "https://commons.wikimedia.org/wiki/File:ZeravObrovsk%C3%BDKintai04.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Gaurė oak",
+   "lat": 55.242061,
+   "lng": 22.478658,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Gaur%C4%97,_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Gaur%C4%97s_%C4%85%C5%BEuolas_2021.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Karpio tuopa, Paštuva",
+   "lat": 54.985452,
+   "lng": 23.616758,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2019,_Karpio_tuopa.JPG",
+    "https://commons.wikimedia.org/wiki/File:Karpio_tuopa,_2014.JPG",
+    "https://commons.wikimedia.org/wiki/File:Karpio_tuopa,_2019.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Kliošų parko bukas",
+   "lat": 55.543662,
+   "lng": 21.326311,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Klio%C5%A1%C5%B3_parko_bukas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Klio%C5%A1%C5%B3_parko_bukas._Kamienas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Kliošų parko kėnis",
+   "lat": 55.542407,
+   "lng": 21.327766,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Klio%C5%A1%C5%B3_parko_k%C4%97nis.JPG",
+    "https://commons.wikimedia.org/wiki/File:Klio%C5%A1%C5%B3_parko_k%C4%97nis_2.JPG",
+    "https://commons.wikimedia.org/wiki/File:Klio%C5%A1%C5%B3_parko_k%C4%97nis_3.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Latežeris oak",
+   "lat": 53.972224,
+   "lng": 24.106747,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2024,_Late%C5%BEerio_%C4%85%C5%BEuolas.JPEG",
+    "https://commons.wikimedia.org/wiki/File:2024_m._Late%C5%BEeris,_%C4%85%C5%BEuolas.jpeg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Liepa Motinėlė",
+   "lat": 54.89231,
+   "lng": 23.48614,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2024_Brazi%C5%ABkai,_liepa.jpeg",
+    "https://commons.wikimedia.org/wiki/File:Brazi%C5%ABkai,_liepa.JPG",
+    "https://commons.wikimedia.org/wiki/File:Brazi%C5%ABk%C5%B3_liepa_(Motin%C4%97l%C4%97)_-_panoramio.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Liškiavos liepa",
+   "lat": 54.081989,
+   "lng": 24.050129,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Li%C5%A1kiava,_liepa.JPEG",
+    "https://commons.wikimedia.org/wiki/File:Li%C5%A1kiavos_liepa.JPEG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Netiesos I oak",
+   "lat": 54.184648,
+   "lng": 24.08201,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2024,_Netiesos,_I_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Neties%C5%B3_I_%C4%85%C5%BEuolas.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Netiesos II oak",
+   "lat": 54.184548,
+   "lng": 24.082022,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Netiesos,_II_%C4%85%C5%BEuolas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Oaks and lime of January 13",
+   "lat": 55.489991,
+   "lng": 22.186381,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2022,_%C5%A0ilal%C4%97s_centras,_Sausio_13_%C4%85%C5%BEuolai.JPG",
+    "https://commons.wikimedia.org/wiki/File:Sausio_13-osios_%C4%85%C5%BEuolai_ir_liepa._%C5%A0ilal%C4%97.JPG",
+    "https://commons.wikimedia.org/wiki/File:Silale_nepriklausomybes_aikste.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Papušynė pine",
+   "lat": 55.278234,
+   "lng": 22.289909,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2022._Papu%C5%A1yn%C4%97._Pu%C5%A1is.JPG",
+    "https://commons.wikimedia.org/wiki/File:Papu%C5%A1yn%C4%97_(Taurag%C4%97),_pu%C5%A1is_2.JPG",
+    "https://commons.wikimedia.org/wiki/File:Papu%C5%A1yn%C4%97sPu%C5%A1is.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Quercus in Lithuania",
+   "lat": 55.82986,
+   "lng": 26.2173,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:--GFDL--Dubininko.JPG",
+    "https://commons.wikimedia.org/wiki/File:--GFDL-self--Dubininko_azuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:2017_Stelmu%C5%BEe_oak_LT.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Raganos uosis",
+   "lat": 56.03861,
+   "lng": 21.81610333,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:65_-_Raganos_uosis.jpg",
+    "https://commons.wikimedia.org/wiki/File:66_-_Raganos_uosis.jpg",
+    "https://commons.wikimedia.org/wiki/File:69_-_Raganos_uosis.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Raganų eglė",
+   "lat": 55.10307,
+   "lng": 22.14684,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2018_Witches_Spruce_LT.jpg",
+    "https://commons.wikimedia.org/wiki/File:Ragan%C5%B3Egl%C4%97.JPG",
+    "https://commons.wikimedia.org/wiki/File:Ragan%C5%B3_egl%C4%97,_aik%C5%A1tel%C4%97.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Raudonės liepa",
+   "lat": 55.09663,
+   "lng": 23.13137,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2019_Raudon%C4%97_Castle_Lime_LT.jpg",
+    "https://commons.wikimedia.org/wiki/File:Raudon%C4%97,_parko_liepa.JPG",
+    "https://commons.wikimedia.org/wiki/File:Raudon%C4%97,_parko_liepos_kamienas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Renavas spruce",
+   "lat": 56.225193,
+   "lng": 22.057848,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Renavo_dvaro_egl%C4%97.JPG",
+    "https://commons.wikimedia.org/wiki/File:Renavo_egl%C4%97.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Santakos gluosnis",
+   "lat": 54.89844,
+   "lng": 23.877464,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2026,_Santaka,_gluosnis.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kauno_Santaka,_gluosnis.jpg",
+    "https://commons.wikimedia.org/wiki/File:Santaka,_gluosnis_2019.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Simonaitytės bukas",
+   "lat": 55.554486,
+   "lng": 21.322875,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Simonaityt%C4%97s_bukas,_vasar%C4%85.JPG",
+    "https://commons.wikimedia.org/wiki/File:Simonaityt%C4%97s_bukas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Tilia cordata in Lithuania",
+   "lat": 55.09663,
+   "lng": 23.13137,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2019_Raudon%C4%97_Castle_Lime_LT.jpg",
+    "https://commons.wikimedia.org/wiki/File:Antakalnio_liepa.JPG",
+    "https://commons.wikimedia.org/wiki/File:Bir%C5%BE%C5%B3_Laukas._Liepa_2.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Trainiškis oak",
+   "lat": 55.389013,
+   "lng": 26.043616,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Traini%C5%A1kio_%C4%85%C5%BEuolas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Vainiai poplar",
+   "lat": 55.128456,
+   "lng": 24.284142,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Vaini%C5%B3_parko_tuopa.JPG",
+    "https://commons.wikimedia.org/wiki/File:Vaini%C5%B3_tuopa.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Visbarai pine",
+   "lat": 55.378479,
+   "lng": 22.033282,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Visbar%C5%B3_pu%C5%A1ies_kamienas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Visbar%C5%B3_pu%C5%A1ies_kamienas_2.JPG",
+    "https://commons.wikimedia.org/wiki/File:Visbar%C5%B3_pu%C5%A1is,_2022.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Vytautas park linden",
+   "lat": 54.897939,
+   "lng": 23.92904,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Liepa,_Vytauto_parkas.jpg",
+    "https://commons.wikimedia.org/wiki/File:Ma%C5%BEalap%C4%97_liepa_Kaune_ant_Parodos_kalno.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Vėžalaukis oak",
+   "lat": 55.367465,
+   "lng": 22.440845,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:V%C4%97%C5%BEalaukio%C4%84%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:V%C4%97%C5%BEalaukis,_%C4%85%C5%BEuolas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Akmenynė oak",
+   "lat": 55.4382,
+   "lng": 22.03261,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Akmenyn%C4%97s_%C4%85%C5%BEuolas,_kamienas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Akmenyn%C4%97s_%C4%85%C5%BEuolas,_prie_Paj%C5%ABrio.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Alkai oak",
+   "lat": 54.84834,
+   "lng": 24.85623,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Alk%C5%B3_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Alk%C5%B3_%C4%85%C5%BEuolo_kamienas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Andriejaičiai oak",
+   "lat": 55.417299,
+   "lng": 22.23871,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2022,_Andriejai%C4%8Di%C5%B3_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Andriejai%C4%8Di%C5%B3%C4%84%C5%BEuolas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Bubiai oak avenue",
+   "lat": 55.851199,
+   "lng": 23.129307,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Zubovo_%C4%85%C5%BEuol%C5%B3_al%C4%97ja.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Bukta oak",
+   "lat": 54.444638,
+   "lng": 23.436847,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Buktos_%C4%85%C5%BEuolas,_2025.jpg",
+    "https://commons.wikimedia.org/wiki/File:Buktos_%C4%85%C5%BEuolas,_lenta.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Būdininkai, 1st oak",
+   "lat": 54.557945,
+   "lng": 23.77804,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:B%C5%ABdininkai,_I_%C4%85%C5%BEuolas,_kamienas.jpg",
+    "https://commons.wikimedia.org/wiki/File:B%C5%ABdininkai,_I_%C4%85%C5%BEuolas,_kamienas_2.jpg",
+    "https://commons.wikimedia.org/wiki/File:B%C5%ABdininkai,_I_%C4%85%C5%BEuolas.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Būtingė oak",
+   "lat": 56.060439,
+   "lng": 21.097695,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:B%C5%ABting%C4%97,_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:B%C5%ABting%C4%97s_%C4%85%C5%BEuolas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Daukša oak, Betygala",
+   "lat": 55.363813,
+   "lng": 23.366169,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2-Betygalos_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Betygalos_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:M._Dauk%C5%A1os_%C4%85%C5%BEuolas,_Betygala.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Draugelių Oak",
+   "lat": 54.643459,
+   "lng": 23.245358,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Draugeli%C5%B3_%C4%85%C5%BEuolas,_inf._lenta.JPG",
+    "https://commons.wikimedia.org/wiki/File:Draugeli%C5%B3_%C4%85%C5%BEuolas_2.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Dubravos dvyniai",
+   "lat": 54.817725,
+   "lng": 24.120483,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Dubravos_med%C5%BEiai_dvyniai_-_panoramio.jpg",
+    "https://commons.wikimedia.org/wiki/File:Dubravos_mi%C5%A1kas._Dvyniai.jpg",
+    "https://commons.wikimedia.org/wiki/File:Dubravos_mi%C5%A1ko_dvyniai.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Galiūnas oak",
+   "lat": 55.144637,
+   "lng": 23.880563,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Gali%C5%ABnas,_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:%C4%84%C5%BEuolas_Gali%C5%ABnas,_kamienas.JPG",
+    "https://commons.wikimedia.org/wiki/File:%C4%84%C5%BEuolas_Gali%C5%ABnas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Gastilonys oak",
+   "lat": 54.871942,
+   "lng": 24.154606,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Gastilioni%C5%B3_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Gastilioni%C5%B3_%C4%85%C5%BEuolas_2012.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Gelgaudiškis manor park oaks",
+   "lat": 55.075425,
+   "lng": 22.989436,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Gelgaudi%C5%A1kis,_III_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Gelgaudi%C5%A1kis,_III_%C4%85%C5%BEuolas_2.JPG",
+    "https://commons.wikimedia.org/wiki/File:Gelgaudi%C5%A1kis,_II_%C4%85%C5%BEuolas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Geniai oak",
+   "lat": 55.351425,
+   "lng": 22.209287,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2._Geniai,_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Geniai,_%C4%85%C5%BEuolas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Gojus forest oak",
+   "lat": 54.568519,
+   "lng": 24.281056,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Gojaus_mi%C5%A1ko_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Gojaus_mi%C5%A1ko_%C4%85%C5%BEuolas_2.JPG",
+    "https://commons.wikimedia.org/wiki/File:Gojaus_%C4%85%C5%BEuolas,_2026.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Grybiškės oak",
+   "lat": 54.24836,
+   "lng": 25.6402,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Grybi%C5%A1ki%C5%B3_%C4%85%C5%BEuolas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Gudlaukis oak",
+   "lat": 55.346103,
+   "lng": 22.245393,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2022._Gudlaukio_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:2022._Gudlaukio_%C4%85%C5%BEuolas_2.JPG",
+    "https://commons.wikimedia.org/wiki/File:Gudlaukio_%C4%85%C5%BEuolas._Kamienas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Ilguva oak",
+   "lat": 55.063106,
+   "lng": 23.321357,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Ilguva,_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Ilguvos_%C4%85%C5%BEuolas,_rodykl%C4%97.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Jurgaičiai oak",
+   "lat": 55.497399,
+   "lng": 21.562289,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Jurgai%C4%8Di%C5%B3_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Jurgai%C4%8Di%C5%B3_%C4%85%C5%BEuolas._Laisv%C4%97s_%C4%85%C5%BEuoliukas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Jurgai%C4%8Di%C5%B3_%C4%85%C5%BEuolas._Laisv%C4%97s_%C4%85%C5%BEuoliukas_2.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Kiaunoriai oak",
+   "lat": 55.702099,
+   "lng": 23.17618,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Kiaunori%C5%B3_%C4%85%C5%BEuolas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Kiaunupis oak",
+   "lat": 55.047083,
+   "lng": 23.842944,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Kiaunupio_%C4%85%C5%BEuolas.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Kybarčiai oak",
+   "lat": 55.921675,
+   "lng": 23.081181,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2021,_Kybar%C4%8Di%C5%B3_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Kybar%C4%8Diai._2021_%C4%85%C5%BEuolas.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kybar%C4%8Di%C5%B3_%C4%85%C5%BEuolas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Laumenai oak",
+   "lat": 55.614817,
+   "lng": 22.357352,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Laumen%C5%B3_%C4%85%C5%BEuolas,_kamienas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Laumen%C5%B3_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Laumen%C5%B3_%C4%85%C5%BEuolas_2023.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Lenkaičiai old oak",
+   "lat": null,
+   "lng": null,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Lenkai%C4%8Diai,_%C4%85%C5%BEuolas.jpeg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Linkaičiai oak",
+   "lat": 55.74989,
+   "lng": 23.63281,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Linkai%C4%8Di%C5%B3_%C4%85%C5%BEuolas,_2015.JPG",
+    "https://commons.wikimedia.org/wiki/File:Linkai%C4%8Di%C5%B3_%C4%85%C5%BEuolas,_kamienas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Linkai%C4%8Di%C5%B3_%C4%85%C5%BEuolas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Mingėlos ąžuolas",
+   "lat": 55.869523,
+   "lng": 21.743283,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2020._Ming%C4%97los_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Ming%C4%97los_%C4%85%C5%BEuolas,_drev%C4%97.JPG",
+    "https://commons.wikimedia.org/wiki/File:Ming%C4%97los_%C4%85%C5%BEuolas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Molavėnai oak",
+   "lat": 55.450969,
+   "lng": 22.876717,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2022,_Molav%C4%97nai._%C4%84%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:2022,_Molav%C4%97n%C5%B3_%C4%85%C5%BEuolas,_kamienas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Molav%C4%97n%C5%B3_%C4%85%C5%BEuolas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Naujamiestis oak",
+   "lat": 55.551914,
+   "lng": 24.105293,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Naujamiestis,_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Naujamiestis,_%C4%85%C5%BEuolo_kamienas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Netoniai oak",
+   "lat": 54.944351,
+   "lng": 23.740739,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2025,_Netoniai,_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:2025._Netoni%C5%B3_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Po_Netoni%C5%B3_%C4%85%C5%BEuolu.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Nevėžio dvilypis oak",
+   "lat": 55.179905,
+   "lng": 23.859692,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Nev%C4%97%C5%BEio_dvilypis_%C4%85%C5%BEuolas._I%C5%A1_piet%C5%B3_(nuo_kelio).JPG",
+    "https://commons.wikimedia.org/wiki/File:Nev%C4%97%C5%BEio_dvilypis_%C4%85%C5%BEuolas._I%C5%A1_ryt%C5%B3.JPG",
+    "https://commons.wikimedia.org/wiki/File:Nev%C4%97%C5%BEio_dvilypis_%C4%85%C5%BEuolas._Prie_pagrindo.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Oak of Hermanas Zudermanas, Žalgiriai",
+   "lat": 55.310218,
+   "lng": 21.429515,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Hermano_Zudermano_%C4%85%C5%BEuolas,_%C5%BDalgiri%C5%B3_pa%C5%BEintinis_takas_2.jpg",
+    "https://commons.wikimedia.org/wiki/File:Hermano_Zudermano_%C4%85%C5%BEuolas,_%C5%BDalgiri%C5%B3_pa%C5%BEintinis_takas_3.jpg",
+    "https://commons.wikimedia.org/wiki/File:Paprastasis_%C4%85%C5%BEuolas.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Oaks and lime of January 13",
+   "lat": 55.489991,
+   "lng": 22.186381,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2022,_%C5%A0ilal%C4%97s_centras,_Sausio_13_%C4%85%C5%BEuolai.JPG",
+    "https://commons.wikimedia.org/wiki/File:Sausio_13-osios_%C4%85%C5%BEuolai_ir_liepa._%C5%A0ilal%C4%97.JPG",
+    "https://commons.wikimedia.org/wiki/File:Silale_nepriklausomybes_aikste.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Pagryniai oak",
+   "lat": 55.333115,
+   "lng": 21.485101,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Pagryni%C5%B3_%C4%85%C5%BEuolas_1.JPG",
+    "https://commons.wikimedia.org/wiki/File:Pagryni%C5%B3_%C4%85%C5%BEuolas_2.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Perkūnas Oak",
+   "lat": 55.917215,
+   "lng": 21.843383,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Perkuno_azuolas.jpg",
+    "https://commons.wikimedia.org/wiki/File:Perk%C5%ABno_%C4%85%C5%BEuolas.jpg",
+    "https://commons.wikimedia.org/wiki/File:Perk%C5%ABno_%C4%85%C5%BEuolas_(2).jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Plauginiai oak",
+   "lat": 55.460966,
+   "lng": 23.10886,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Gra%C5%BEusis_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Gra%C5%BEusis_%C4%85%C5%BEuolas._Gil%C4%97.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Plokščiai (Panemunė) oak",
+   "lat": 55.083221,
+   "lng": 23.168522,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Plok%C5%A1%C4%8Di%C5%B3_(Panemun%C4%97s)_%C4%85%C5%BEuolas_2.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Priekulė Oak",
+   "lat": 55.556035,
+   "lng": 21.327404,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Priekul%C4%97s_senasis_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Priekul%C4%97s_%C4%85%C5%BEuolas,_2023.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Priekulė Vingis Park Oak",
+   "lat": 55.556541,
+   "lng": 21.328723,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2023._Priekul%C4%97._Vingio_parko_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Priekul%C4%97,_Vingio_parko_%C4%85%C5%BEuolas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Pundžiai Oak",
+   "lat": 55.565592,
+   "lng": 22.402658,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Pund%C5%BEi%C5%B3_mi%C5%A1ko_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Pund%C5%BEi%C5%B3_%C4%85%C5%BEuolas,_2020.png",
+    "https://commons.wikimedia.org/wiki/File:Pund%C5%BEi%C5%B3_%C4%85%C5%BEuolas,_kamienas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Sitkūnai forest I oak",
+   "lat": 55.046163,
+   "lng": 23.830772,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Sitk%C5%ABnai,_I_%C4%85%C5%BEuolas.jpg",
+    "https://commons.wikimedia.org/wiki/File:Sitk%C5%ABn%C5%B3_mi%C5%A1kas,_I_%C4%85%C5%BEuolas.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Sitkūnai forest II oak",
+   "lat": 55.046726,
+   "lng": 23.828469,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Sitk%C5%ABn%C5%B3_mi%C5%A1kas,_Antrasis_%C4%85%C5%BEuolas,_kamienas.jpg",
+    "https://commons.wikimedia.org/wiki/File:Sitk%C5%ABn%C5%B3_mi%C5%A1kas,_Antrasis_%C4%85%C5%BEuolas,_laja.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Skaborai I oak",
+   "lat": 55.691329,
+   "lng": 22.12459,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2021,_Skaborai,_I_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Skaborai,_I_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Skaborai,_%C4%85%C5%BEuolo_vidus.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Smalininkai oaks avenue",
+   "lat": 55.071926,
+   "lng": 22.563033,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Smalininkai_%C4%85%C5%BEuol%C5%B3_al%C4%97ja_(43074587704).jpg",
+    "https://commons.wikimedia.org/wiki/File:Smalininku_azuolu_aleja_2010.jpg",
+    "https://commons.wikimedia.org/wiki/File:Smalinink%C5%B3_%C4%85%C5%BEuol%C5%B3_al%C4%97ja.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Stakai oak",
+   "lat": 54.290288,
+   "lng": 25.55298,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Stakai_oak_in_the_winter.jpg",
+    "https://commons.wikimedia.org/wiki/File:Staku_azuolas2014.JPG",
+    "https://commons.wikimedia.org/wiki/File:Staku_azuolas_2020.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Streipūnai oak",
+   "lat": 54.793223,
+   "lng": 24.730136,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Abromi%C5%A1ki%C5%B3_sen._kapin%C4%97s,_%C4%85%C5%BEuolas.jpg",
+    "https://commons.wikimedia.org/wiki/File:Streip%C5%ABnai,_kapin%C4%97s.JPG",
+    "https://commons.wikimedia.org/wiki/File:Streip%C5%ABnai,_%C4%85%C5%BEuolas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Tamošaičiai oaks",
+   "lat": 55.36374,
+   "lng": 22.164224,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2022._Tamo%C5%A1ai%C4%8Di%C5%B3_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:2022._Tamo%C5%A1ai%C4%8Di%C5%B3_%C4%85%C5%BEuolas_2.JPG",
+    "https://commons.wikimedia.org/wiki/File:Tamo%C5%A1ai%C4%8Diai,_laukas,_%C4%85%C5%BEuolas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Vepriai oak",
+   "lat": 55.149578,
+   "lng": 24.586706,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2025,_Vepriai,_%C4%85%C5%BEuolas.jpg",
+    "https://commons.wikimedia.org/wiki/File:Vepri%C5%B3_%C4%85%C5%BEuolas,_kamienas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Vepri%C5%B3_%C4%85%C5%BEuolas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Vytogala Independence oaks",
+   "lat": 55.457469,
+   "lng": 22.373491,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2022_m._Vytogala._%C4%84%C5%BEuolai.JPG",
+    "https://commons.wikimedia.org/wiki/File:2022_m._Vytogala._%C4%84%C5%BEuolai_2.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Zypliai oak",
+   "lat": 54.939652,
+   "lng": 23.198447,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Zypliu_azuolas_2016_(2).jpg",
+    "https://commons.wikimedia.org/wiki/File:Zypli%C5%B3_%C4%85%C5%BEuolas,_liekanos.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Šaravai oak",
+   "lat": 55.175278,
+   "lng": 23.697778,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2021,_%C5%A0arav%C5%B3_%C4%85%C5%BEuolas,_nuo_vir%C5%A1%C5%ABn%C4%97s.JPG",
+    "https://commons.wikimedia.org/wiki/File:2021,_%C5%A0arav%C5%B3_%C4%85%C5%BEuolas.jpg",
+    "https://commons.wikimedia.org/wiki/File:Lietuvos_Respublikos_kareiviai_aplink_%C4%85%C5%BEuolo.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Šilalė Independence oak",
+   "lat": 55.489909,
+   "lng": 22.186615,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:%C5%A0ilal%C4%97,_1918.02.16_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:%C5%A0ilal%C4%97,_Neprikl._%C4%85%C5%BEuolas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Šilas forest oak",
+   "lat": 55.255712,
+   "lng": 24.246249,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:%C5%A0ilo_mi%C5%A1ko_%C4%85%C5%BEuolas,_Jonavos_r.JPG",
+    "https://commons.wikimedia.org/wiki/File:%C5%A0ilo_mi%C5%A1ko_%C4%85%C5%BEuolas,_Jonavos_raj.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Šperberiai Oak",
+   "lat": 55.555108,
+   "lng": 21.324779,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:%C5%A0perberi%C5%B3_%C4%85%C5%BEuolas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Žadeikoniai oak",
+   "lat": 56.195241,
+   "lng": 24.378511,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:%C5%BDadeikoni%C5%B3_kapin%C4%97s,_%C4%85%C5%BEuolas.JPG",
+    "https://commons.wikimedia.org/wiki/File:%C5%BDadeikoni%C5%B3_%C4%85%C5%BEuolas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Raganų eglė",
+   "lat": 55.10307,
+   "lng": 22.14684,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2018_Witches_Spruce_LT.jpg",
+    "https://commons.wikimedia.org/wiki/File:Ragan%C5%B3Egl%C4%97.JPG",
+    "https://commons.wikimedia.org/wiki/File:Ragan%C5%B3_egl%C4%97,_aik%C5%A1tel%C4%97.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Raudonės liepa",
+   "lat": 55.09663,
+   "lng": 23.13137,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2019_Raudon%C4%97_Castle_Lime_LT.jpg",
+    "https://commons.wikimedia.org/wiki/File:Raudon%C4%97,_parko_liepa.JPG",
+    "https://commons.wikimedia.org/wiki/File:Raudon%C4%97,_parko_liepos_kamienas.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Stelmužė oak",
+   "lat": 55.82986,
+   "lng": 26.2173,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2017_Stelmu%C5%BEe_oak_LT.jpg",
+    "https://commons.wikimedia.org/wiki/File:LT-2013-2litai-Stelmu%C5%BE%C4%97s_%C4%85%C5%BEuolas.png",
+    "https://commons.wikimedia.org/wiki/File:Stamps_of_Lithuania,_2010-14.jpg"
+   ],
+   "status": "lead"
+  }
+ ]
+}
