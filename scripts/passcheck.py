@@ -69,6 +69,57 @@ ALIAS = _load_aliases()
 
 NAME_FIELDS = ("name", "name_en", "name_pt", "name_it", "name_ja", "name_nl",
                "name_eu", "common_fr", "designation")
+# Every register spells these differently, and a brief that cannot read them
+# prints a wall of bare coordinates. Geneva is the case that forced this: its
+# 205 entries carry species_latin, circumference_cm, a real planted year and a
+# vitality reading, and the brief showed 204 lines of "(unnamed)" because the
+# extractor only knew `species`, `girth_cm` and `age_register`. The whole point
+# of a register-led pass is that these four fields arrive for free, so failing
+# to print them turns the cheapest kind of pass back into the expensive kind.
+SPECIES_FIELDS = ("species", "species_latin", "species_scientific", "species_en",
+                  "especie", "essence", "taxon", "scientific_name")
+AGE_FIELDS = ("age_register", "age_band", "age_estimate_years", "age_estimate",
+              "age_approx", "planted", "plant_year", "year_planted")
+VITALITY_FIELDS = ("vitality", "health", "condition", "etat", "state",
+                   "development_stage")
+# Girth in metres, from whatever the register happened to publish. Diameter
+# fields are converted with pi and the result is still called a girth, because
+# that is what the reader of the brief needs; the source unit is the trap here,
+# and it has already bitten once (ICNF publishes metres in a column our import
+# named girth_cm, so a 2.84 m trunk read as under three centimetres).
+GIRTH_FIELDS_M = ("girth_m",)
+GIRTH_FIELDS_CM = ("girth_cm", "circumference_cm", "girth", "trunk_girth")
+DIAMETER_FIELDS_CM = ("diameter_cm", "dbh_cm")
+
+
+def girth_m(t):
+    import math as _m
+    for f in GIRTH_FIELDS_M:
+        if t.get(f):
+            try:
+                return float(t[f])
+            except (TypeError, ValueError):
+                pass
+    for f in GIRTH_FIELDS_CM:
+        if t.get(f):
+            try:
+                return float(t[f]) / 100.0
+            except (TypeError, ValueError):
+                pass
+    for f in DIAMETER_FIELDS_CM:
+        if t.get(f):
+            try:
+                return float(t[f]) * _m.pi / 100.0
+            except (TypeError, ValueError):
+                pass
+    if t.get("dbh_mm"):
+        try:
+            return float(t["dbh_mm"]) * _m.pi / 1000.0
+        except (TypeError, ValueError):
+            pass
+    return None
+
+
 PLACE_FIELDS = ("comune", "concelho", "city", "municipality", "place", "locality",
                 "lugar", "freguesia", "address", "area", "area_en", "district",
                 "neighbourhood", "province", "prefecture", "distrito", "region",
@@ -117,18 +168,13 @@ def register_entries():
             la, lo = t.get("latitude"), t.get("longitude")
             if la is None or lo is None:
                 continue
-            girth = t.get("girth_m")
-            if girth is None and t.get("girth_cm"):
-                try:
-                    girth = float(t["girth_cm"]) / 100.0
-                except (TypeError, ValueError):
-                    girth = None
             yield {
                 "lat": float(la), "lng": float(lo),
                 "name": next((t[f] for f in NAME_FIELDS if t.get(f)), None),
-                "species": t.get("species"),
-                "girth_m": girth,
-                "age": t.get("age_register") or t.get("age_band"),
+                "species": next((t[f] for f in SPECIES_FIELDS if t.get(f)), None),
+                "girth_m": girth_m(t),
+                "age": next((t[f] for f in AGE_FIELDS if t.get(f)), None),
+                "vitality": next((t[f] for f in VITALITY_FIELDS if t.get(f)), None),
                 "place": ", ".join(str(t[f]) for f in PLACE_FIELDS[:6] if t.get(f)),
                 "file": fname,
             }
@@ -689,6 +735,8 @@ def brief(arg, live):
                 bits.append(f"girth {e['girth_m']:.1f} m")
             if e["age"]:
                 bits.append(f"age {e['age']}")
+            if e.get("vitality"):
+                bits.append(str(e["vitality"]))
             bits.append(f"({e['lat']:.5f},{e['lng']:.5f})")
             bits.append(e["file"])
             line = "  " + "  ".join(str(b) for b in bits)
