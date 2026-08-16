@@ -192,12 +192,12 @@ so qa.py fails the deploy when the table and the json disagree.
 | 11 | Dublin | 20.38 | 240,850 | 17 | 4 | 2 | 12 | 20 | measured |
 | 12 | Paris | 22.83 | 524,268 | 25 | 9 | 3 | 129 | 30 | measured |
 | 13 | Valencia | 15.49 | 162,209 | 16 | 2 | 2 | 350 | 20 | measured |
-| 14 | Porto | 13.86 | 120,415 | 27 | 5 | 2 | 40 | 20 | measured |
-| 15 | London | 25.82 | 718,291 | 23 | 10 | 1 | - | 50 | measured |
-| 16 | Milan | 11.96 | 212,705 | 18 | 9 | 2 | 25 | 20 | measured |
-| 17 | Toronto | 23.84 | 411,011 | - | - | - | - | 10 | predicted (travel demand) |
+| 14 | Toronto | 23.84 | 411,011 | 4 | - | - | - | 10 | predicted (travel demand) |
+| 15 | Porto | 13.86 | 120,415 | 27 | 5 | 2 | 40 | 20 | measured |
+| 16 | London | 25.82 | 718,291 | 23 | 10 | 1 | - | 50 | measured |
+| 17 | Milan | 11.96 | 212,705 | 18 | 9 | 2 | 25 | 20 | measured |
 | 18 | Brussels | 15.49 | 176,863 | 20 | 4 | 1 | 436 | 20 | measured |
-| 19 | Montreal | 22.81 | 315,322 | - | - | - | - | 10 | predicted (travel demand) |
+| 19 | Montreal | 22.81 | 315,322 | 7 | - | 1 | - | 10 | predicted (travel demand) |
 | 20 | Geneva | 14.95 | 162,269 | 6 | 4 | 1 | 129 | 20 | measured |
 | 21 | Munich | 14.68 | 224,067 | 29 | 13 | 6 | 76 | 20 | measured |
 | 22 | New York | 21.74 | 1,124,326 | 20 | 5 | 2 | - | 50 | measured |
