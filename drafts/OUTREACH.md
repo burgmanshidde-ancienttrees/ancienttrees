@@ -531,3 +531,54 @@ an invitation rather than an addition to their task list: Wolfgang Schürmann
 had just taken the job on, so "falls Ihnen unterwegs ein Baum einfällt" widens
 what he might return with, where a list of what would help most would have read
 as chasing him on the day he said yes.
+
+## Batch 005, 2026-08-16: 40 mails, his own text, and a category change
+
+Forty tree societies, city tree groups and blogs across NL, BE, PT, ES, CA, IT,
+UK and IE. Sent from his own words: he wrote the mail in Dutch in session and I
+rendered it into six languages, which is the division of labour HIS_VOICE.md
+already records and the third time it has produced the right mail in one pass.
+
+**What changed against batch 004, and why.** The recipients are the change. Of
+the 57 mails sent 8 to 10 August, 40 went to gardens, palaces, parks
+departments and ministries, and those are the ones that stayed silent; every
+useful reply came from a named person who cares about trees personally, and a
+municipality does not link out anyway. So batch 005 contains no institution
+that manages ground: it is the societies with a newsletter and the bloggers who
+already write about exactly this.
+
+**And the mail is shorter and asks for less.** One look at the page, one
+personal question ("welke boom mis jij persoonlijk op de site?"), no photograph
+request at all. His reasoning, verbatim: "laat maar die fotos kunnen we altijd
+in een tweede mail vragen". A first mail that asks for photographs, corrections
+and a tip is three jobs for a stranger; a first mail that asks an opinion is
+one, and the photographs have a natural second thread if they answer.
+
+Two wordings recorded because he corrected them here: **remarkable is
+"opmerkelijk" in Dutch and never "ongelofelijk"** (now a check in
+`scripts/mailcheck.py`, so no future draft can carry it), and the mail says
+nothing about where he lives.
+
+One mail differs. ICNF's carries an extra sentence about an error in their own
+register, three Setubal olives with 2009 in the age column. It is the only
+thing in this batch we give rather than ask.
+
+The claim "this tree of yours" survives only where the organisation actually
+manages the ground (Fondazione Villa Ghigi). Friends-of groups get their park
+named instead, city groups get "in jullie stad", national bodies get the city
+named. That distinction is enforced by mailcheck's POSSESSIVE CLAIM check,
+which exists because batch 004 told Schoenbrunn it owned trees it does not.
+
+| Date | Who | Ask | Status |
+|---|---|---|---|
+| 2026-08-16 | 13 Dutch tree groups and blogs (Bomenstichting Den Haag/Amsterdam/Utrecht, Boomwachters Groningen, Haarlemse Bomenwachters, Bomenbond Rijnland, Vrienden van Sonsbeek, Haagse Hofjes, Kring Vrienden 's-Hertogenbosch, IVN, Bomenbieb, Boommade, Bomen Bescherming Amsterdam) | Look at the page, which tree do you personally miss | **sent** |
+| 2026-08-16 | 4 Flemish (Bomen Beter Beheren, BOS+, VVOG, wndln) | idem | **sent** |
+| 2026-08-16 | 7 Portuguese (Quercus Lisboa and Setubal, LPN, ICNF, Wilder, Naturlink, Lisboa Secreta) | idem, ICNF plus the register error | **sent** |
+| 2026-08-16 | 5 Spanish and Catalan (AEA, AEPJP, Bosques sin Fronteras, Plantipodes-AM, Observatori Forestal de Catalunya) | idem | **sent** |
+| 2026-08-16 | 6 Italian (Societa Botanica Italiana, ISA Italia, Italia Nostra, Carteinregola, Villa Ghigi, Amici del Parco Trotter) | idem | **sent** |
+| 2026-08-16 | 5 UK and Irish (Tree Council, Arboricultural Association, Ancient Tree Forum, Tree Council of Ireland, Kings Weston Action Group) | idem | **sent** |
+
+Built by `scripts/build_batch_005.py`, which reads every tree count from the
+live city files at build time so no mail can quote a number that has moved.
+66 addresses of the 106 remain unmailed, almost all of them gardens, parks and
+municipalities, which is the category this batch deliberately skipped.

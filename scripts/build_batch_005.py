@@ -79,14 +79,14 @@ T = {
         "Can you help me with ancienttrees.app? {topic}",
         """Hello,
 
-My name is Hidde and I am building ancienttrees.app, a platform for incredible trees. My goal is to get people excited about old trees and to encourage them to go and see them outside.
+My name is Hidde and I am building ancienttrees.app, a platform for remarkable trees. My goal is to get people excited about old trees and to encourage them to go and see them outside.
 
 We have {n} trees in {city} and I was really curious whether you would take a look at whether they are right:
 {url}
 
-I also wondered: do you have a personal tree that you find special?
+I also wondered: which tree do you personally think is missing?
 
-Any help would be much appreciated, photographs above all, to make the site better.
+Any help would be much appreciated!
 
 I would really like to hear your opinion on the project.
 
@@ -97,14 +97,14 @@ Hidde""",
         "Kun je me helpen met ancienttrees.app? {topic}",
         """Hallo,
 
-Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor opmerkelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
 We hebben {n} bomen in {city} staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 {url}
 
-Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
+Daarnaast vroeg ik me af: welke boom mis jij persoonlijk op de site?
 
-Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+Elke hulp zou zeer gewaardeerd worden!
 
 Ik ben erg benieuwd naar jouw mening over het project.
 
@@ -115,14 +115,14 @@ Hidde""",
         "Pode ajudar-me com o ancienttrees.app? {topic}",
         """Olá,
 
-Chamo-me Hidde e estou a construir o ancienttrees.app, uma plataforma para árvores incríveis. O meu objetivo é entusiasmar as pessoas pelas árvores antigas e incentivá-las a ir vê-las lá fora.
+Chamo-me Hidde e estou a construir o ancienttrees.app, uma plataforma para árvores notáveis. O meu objetivo é entusiasmar as pessoas pelas árvores antigas e incentivá-las a ir vê-las lá fora.
 
 Temos {n} árvores em {city} e tinha muita curiosidade em saber se poderiam dar uma vista de olhos para ver se estão certas:
 {url}
 
-Além disso, perguntava-me: têm alguma árvore pessoal que achem especial?
+Além disso, perguntava-me: que árvore acham pessoalmente que falta no site?
 
-Qualquer ajuda seria muito apreciada, sobretudo fotografias, para melhorar o site.
+Qualquer ajuda seria muito apreciada!
 
 Gostava muito de saber a vossa opinião sobre o projeto.
 
@@ -133,14 +133,14 @@ Hidde""",
         "¿Me pueden ayudar con ancienttrees.app? {topic}",
         """Hola,
 
-Me llamo Hidde y estoy construyendo ancienttrees.app, una plataforma para árboles increíbles. Mi objetivo es entusiasmar a la gente con los árboles viejos y animarla a ir a verlos fuera.
+Me llamo Hidde y estoy construyendo ancienttrees.app, una plataforma para árboles notables. Mi objetivo es entusiasmar a la gente con los árboles viejos y animarla a ir a verlos fuera.
 
 Tenemos {n} árboles en {city} y tenía mucha curiosidad por saber si podrían echar un vistazo a ver si están bien:
 {url}
 
-Además me preguntaba: ¿tienen algún árbol personal que les parezca especial?
+Además me preguntaba: ¿qué árbol echan de menos personalmente en la web?
 
-Cualquier ayuda sería muy apreciada, sobre todo fotografías, para mejorar la web.
+¡Cualquier ayuda sería muy apreciada!
 
 Me interesa mucho su opinión sobre el proyecto.
 
@@ -151,14 +151,14 @@ Hidde""",
         "Em podeu ajudar amb ancienttrees.app? {topic}",
         """Hola,
 
-Em dic Hidde i estic construint ancienttrees.app, una plataforma per a arbres increïbles. El meu objectiu és engrescar la gent amb els arbres vells i animar-la a anar a veure'ls a fora.
+Em dic Hidde i estic construint ancienttrees.app, una plataforma per a arbres notables. El meu objectiu és engrescar la gent amb els arbres vells i animar-la a anar a veure'ls a fora.
 
 Tenim {n} arbres a {city} i tenia molta curiositat per saber si hi podríeu fer un cop d'ull per veure si són correctes:
 {url}
 
-A més em preguntava: teniu algun arbre personal que us sembli especial?
+A més em preguntava: quin arbre trobeu personalment a faltar al web?
 
-Qualsevol ajuda seria molt apreciada, sobretot fotografies, per millorar el web.
+Qualsevol ajuda seria molt apreciada!
 
 M'interessa molt la vostra opinió sobre el projecte.
 
@@ -169,14 +169,14 @@ Hidde""",
         "Può aiutarmi con ancienttrees.app? {topic}",
         """Buongiorno,
 
-Mi chiamo Hidde e sto costruendo ancienttrees.app, una piattaforma per alberi incredibili. Il mio obiettivo è appassionare le persone agli alberi antichi e spingerle ad andare a vederli fuori.
+Mi chiamo Hidde e sto costruendo ancienttrees.app, una piattaforma per alberi notevoli. Il mio obiettivo è appassionare le persone agli alberi antichi e spingerle ad andare a vederli fuori.
 
 Abbiamo {n} alberi a {city} ed ero molto curioso di sapere se potreste dare un'occhiata per vedere se sono giusti:
 {url}
 
-Inoltre mi chiedevo: avete un albero personale che trovate speciale?
+Inoltre mi chiedevo: quale albero pensate personalmente che manchi sul sito?
 
-Ogni aiuto sarebbe molto apprezzato, soprattutto fotografie, per migliorare il sito.
+Ogni aiuto sarebbe molto apprezzato!
 
 Mi interessa molto la vostra opinione sul progetto.
 

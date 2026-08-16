@@ -11,6 +11,21 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+
+## 2026-08-16 (session) - 40 outreach mails to the people who answer, in his own words
+
+**Batch 005 is out: 40 mails to tree societies, city tree groups and blogs across eight countries.** The recipients are the finding rather than the work. Reading the first 57 mails back: 8 replies, which is a 14 percent reply rate and high for cold mail, but every useful one came from a named person who cares about trees personally (Paulo Araujo, Wolfgang Schuermann, Jon Pattee, Piet van Dijck). The 40 that went to gardens, palaces, parks departments and ministries produced near silence, and a municipality does not link out anyway. So this batch contains no institution that manages ground.
+
+**The mail is his, not mine.** He wrote it in Dutch in session after rejecting two versions of mine, and it is shorter than anything I would have written: what the site is, one link, one personal question, out. My half was the rendering into Dutch, Portuguese, Spanish, Catalan, Italian and English, the counts read live from the city files, and knowing which claims are safe to make. Third time this division has produced the right mail in one pass, exactly as HIS_VOICE.md says.
+
+**Two of his corrections became mechanisms rather than notes.** Remarkable is "opmerkelijk" in Dutch and never "ongelofelijk", now a check in `scripts/mailcheck.py` so no future draft can carry it. And the photograph ask is gone from first contact ("laat maar die fotos kunnen we altijd in een tweede mail vragen"): a stranger's first mail asks one thing.
+
+**What the batch says that is true and specific:** each recipient's own city with today's tree count, their own page, and for ICNF one sentence about an error in their own register (three Setubal olives carrying 2009 in the age column), which is the only thing in this batch we give rather than ask. The "this tree of yours" claim survives only for Fondazione Villa Ghigi, who actually manage their park.
+
+**Still zero.** No referring domain above DR 10 that a human made, five days after the first 57. The one external referrer on record remains DPG Media's corporate proxy, which is journalists reading the press mail. Reply lag on this lane is weeks; the Utrecht placement that batch 001 produced lands in the first half of 2027.
+
+**FOR HIDDE:** nothing waits on you from this. 66 of the 106 verified addresses are still unmailed and are almost all gardens, parks and municipalities, deliberately skipped. The next lane worth its window is press desks for the six cities that actually earn impressions (Palermo, Amsterdam, Rome, Prague, Barcelona, Vienna), which needs a named journalist per outlet rather than a list. Reddit is parked until tomorrow on your word.
+
 ## 2026-08-16 (session) - Brisbane and Poznan close to target; 64 trees get a real best_time; Brno and Wroclaw verify passes in flight
 
 7-day visits (`visitors.py`): 262 total, 28/83/41/21/17/34/33/5 across 08-09 to 08-16, softest day of the week today so far. `prepare.py` showed 23 cities already staged for verify and one stale empty `guimaraes-verified.json`.

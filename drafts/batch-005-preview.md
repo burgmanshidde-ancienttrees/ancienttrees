@@ -7,14 +7,14 @@ Subject: Kun je me helpen met ancienttrees.app? De bomen van Arnhem
 
 Hallo,
 
-Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor opmerkelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
 We hebben 4 bomen in Arnhem staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/arnhem
 
-Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
+Daarnaast vroeg ik me af: welke boom mis jij persoonlijk op de site?
 
-Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+Elke hulp zou zeer gewaardeerd worden!
 
 Ik ben erg benieuwd naar jouw mening over het project.
 
@@ -27,14 +27,14 @@ Subject: Kun je me helpen met ancienttrees.app? De oude bomen van Den Haag
 
 Hallo,
 
-Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor opmerkelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
 We hebben 5 bomen in Den Haag staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/the-hague
 
-Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
+Daarnaast vroeg ik me af: welke boom mis jij persoonlijk op de site?
 
-Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+Elke hulp zou zeer gewaardeerd worden!
 
 Ik ben erg benieuwd naar jouw mening over het project.
 
@@ -47,14 +47,14 @@ Subject: Kun je me helpen met ancienttrees.app? De oude bomen van Den Haag
 
 Hallo,
 
-Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor opmerkelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
 We hebben 5 bomen in Den Haag staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/the-hague
 
-Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
+Daarnaast vroeg ik me af: welke boom mis jij persoonlijk op de site?
 
-Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+Elke hulp zou zeer gewaardeerd worden!
 
 Ik ben erg benieuwd naar jouw mening over het project.
 
@@ -67,14 +67,14 @@ Subject: Kun je me helpen met ancienttrees.app? De bomen op de vestingwerken
 
 Hallo,
 
-Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor opmerkelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
 We hebben 11 bomen in Den Bosch staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/den-bosch
 
-Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
+Daarnaast vroeg ik me af: welke boom mis jij persoonlijk op de site?
 
-Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+Elke hulp zou zeer gewaardeerd worden!
 
 Ik ben erg benieuwd naar jouw mening over het project.
 
@@ -87,14 +87,14 @@ Subject: Kun je me helpen met ancienttrees.app? De oude bomen van Nederlandse st
 
 Hallo,
 
-Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor opmerkelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
 We hebben 88 bomen in Nederland staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/netherlands
 
-Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
+Daarnaast vroeg ik me af: welke boom mis jij persoonlijk op de site?
 
-Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+Elke hulp zou zeer gewaardeerd worden!
 
 Ik ben erg benieuwd naar jouw mening over het project.
 
@@ -107,14 +107,14 @@ Subject: Kun je me helpen met ancienttrees.app? De oude bomen van Utrecht
 
 Hallo,
 
-Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor opmerkelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
 We hebben 5 bomen in Utrecht staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/utrecht
 
-Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
+Daarnaast vroeg ik me af: welke boom mis jij persoonlijk op de site?
 
-Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+Elke hulp zou zeer gewaardeerd worden!
 
 Ik ben erg benieuwd naar jouw mening over het project.
 
@@ -127,14 +127,14 @@ Subject: Kun je me helpen met ancienttrees.app? De oude bomen van Groningen
 
 Hallo,
 
-Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor opmerkelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
 We hebben 5 bomen in Groningen staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/groningen
 
-Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
+Daarnaast vroeg ik me af: welke boom mis jij persoonlijk op de site?
 
-Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+Elke hulp zou zeer gewaardeerd worden!
 
 Ik ben erg benieuwd naar jouw mening over het project.
 
@@ -147,14 +147,14 @@ Subject: Kun je me helpen met ancienttrees.app? De oude bomen van Amsterdam
 
 Hallo,
 
-Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor opmerkelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
 We hebben 20 bomen in Amsterdam staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/amsterdam
 
-Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
+Daarnaast vroeg ik me af: welke boom mis jij persoonlijk op de site?
 
-Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+Elke hulp zou zeer gewaardeerd worden!
 
 Ik ben erg benieuwd naar jouw mening over het project.
 
@@ -167,14 +167,14 @@ Subject: Kun je me helpen met ancienttrees.app? De oude bomen van Amsterdam
 
 Hallo,
 
-Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor opmerkelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
 We hebben 20 bomen in Amsterdam staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/amsterdam
 
-Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
+Daarnaast vroeg ik me af: welke boom mis jij persoonlijk op de site?
 
-Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+Elke hulp zou zeer gewaardeerd worden!
 
 Ik ben erg benieuwd naar jouw mening over het project.
 
@@ -187,14 +187,14 @@ Subject: Kun je me helpen met ancienttrees.app? De oude bomen van Leiden
 
 Hallo,
 
-Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor opmerkelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
 We hebben 6 bomen in Leiden staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/leiden
 
-Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
+Daarnaast vroeg ik me af: welke boom mis jij persoonlijk op de site?
 
-Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+Elke hulp zou zeer gewaardeerd worden!
 
 Ik ben erg benieuwd naar jouw mening over het project.
 
@@ -207,14 +207,14 @@ Subject: Kun je me helpen met ancienttrees.app? De oude bomen van Haarlem
 
 Hallo,
 
-Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor opmerkelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
 We hebben 4 bomen in Haarlem staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/haarlem
 
-Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
+Daarnaast vroeg ik me af: welke boom mis jij persoonlijk op de site?
 
-Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+Elke hulp zou zeer gewaardeerd worden!
 
 Ik ben erg benieuwd naar jouw mening over het project.
 
@@ -227,14 +227,14 @@ Subject: Kun je me helpen met ancienttrees.app? Bijzondere bomen in Nederland
 
 Hallo,
 
-Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor opmerkelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
 We hebben 88 bomen in Nederland staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/netherlands
 
-Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
+Daarnaast vroeg ik me af: welke boom mis jij persoonlijk op de site?
 
-Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+Elke hulp zou zeer gewaardeerd worden!
 
 Ik ben erg benieuwd naar jouw mening over het project.
 
@@ -247,14 +247,14 @@ Subject: Kun je me helpen met ancienttrees.app? De oude bomen van Amsterdam
 
 Hallo,
 
-Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor opmerkelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
 We hebben 20 bomen in Amsterdam staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/amsterdam
 
-Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
+Daarnaast vroeg ik me af: welke boom mis jij persoonlijk op de site?
 
-Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+Elke hulp zou zeer gewaardeerd worden!
 
 Ik ben erg benieuwd naar jouw mening over het project.
 
@@ -267,14 +267,14 @@ Subject: Kun je me helpen met ancienttrees.app? De oude bomen van Antwerpen
 
 Hallo,
 
-Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor opmerkelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
 We hebben 10 bomen in Antwerpen staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/antwerp
 
-Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
+Daarnaast vroeg ik me af: welke boom mis jij persoonlijk op de site?
 
-Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+Elke hulp zou zeer gewaardeerd worden!
 
 Ik ben erg benieuwd naar jouw mening over het project.
 
@@ -287,14 +287,14 @@ Subject: Kun je me helpen met ancienttrees.app? De oude bomen van Brussel
 
 Hallo,
 
-Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor opmerkelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
 We hebben 20 bomen in Brussel staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/brussels
 
-Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
+Daarnaast vroeg ik me af: welke boom mis jij persoonlijk op de site?
 
-Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+Elke hulp zou zeer gewaardeerd worden!
 
 Ik ben erg benieuwd naar jouw mening over het project.
 
@@ -307,14 +307,14 @@ Subject: Kun je me helpen met ancienttrees.app? De oude bomen van Antwerpen
 
 Hallo,
 
-Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor opmerkelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
 We hebben 10 bomen in Antwerpen staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/antwerp
 
-Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
+Daarnaast vroeg ik me af: welke boom mis jij persoonlijk op de site?
 
-Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+Elke hulp zou zeer gewaardeerd worden!
 
 Ik ben erg benieuwd naar jouw mening over het project.
 
@@ -327,14 +327,14 @@ Subject: Kun je me helpen met ancienttrees.app? Een wandeling langs de oude bome
 
 Hallo,
 
-Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor ongelofelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
+Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor opmerkelijke bomen. Mijn doel is om mensen enthousiast te maken over oude bomen en ze aan te moedigen om die buiten te gaan bekijken.
 
 We hebben 20 bomen in Brussel staan en ik was erg benieuwd of je een kijkje zou willen nemen of ze kloppen:
 https://ancienttrees.app/brussels
 
-Daarnaast vroeg ik me af: heb je een persoonlijke boom die je bijzonder vindt?
+Daarnaast vroeg ik me af: welke boom mis jij persoonlijk op de site?
 
-Elke hulp zou zeer gewaardeerd worden, vooral foto's om de website te verbeteren.
+Elke hulp zou zeer gewaardeerd worden!
 
 Ik ben erg benieuwd naar jouw mening over het project.
 
@@ -347,14 +347,14 @@ Subject: Pode ajudar-me com o ancienttrees.app? As árvores de Lisboa
 
 Olá,
 
-Chamo-me Hidde e estou a construir o ancienttrees.app, uma plataforma para árvores incríveis. O meu objetivo é entusiasmar as pessoas pelas árvores antigas e incentivá-las a ir vê-las lá fora.
+Chamo-me Hidde e estou a construir o ancienttrees.app, uma plataforma para árvores notáveis. O meu objetivo é entusiasmar as pessoas pelas árvores antigas e incentivá-las a ir vê-las lá fora.
 
 Temos 33 árvores em Lisboa e tinha muita curiosidade em saber se poderiam dar uma vista de olhos para ver se estão certas:
 https://ancienttrees.app/lisbon
 
-Além disso, perguntava-me: têm alguma árvore pessoal que achem especial?
+Além disso, perguntava-me: que árvore acham pessoalmente que falta no site?
 
-Qualquer ajuda seria muito apreciada, sobretudo fotografias, para melhorar o site.
+Qualquer ajuda seria muito apreciada!
 
 Gostava muito de saber a vossa opinião sobre o projeto.
 
@@ -367,14 +367,14 @@ Subject: Pode ajudar-me com o ancienttrees.app? As árvores de Setúbal
 
 Olá,
 
-Chamo-me Hidde e estou a construir o ancienttrees.app, uma plataforma para árvores incríveis. O meu objetivo é entusiasmar as pessoas pelas árvores antigas e incentivá-las a ir vê-las lá fora.
+Chamo-me Hidde e estou a construir o ancienttrees.app, uma plataforma para árvores notáveis. O meu objetivo é entusiasmar as pessoas pelas árvores antigas e incentivá-las a ir vê-las lá fora.
 
 Temos 10 árvores em Setúbal e tinha muita curiosidade em saber se poderiam dar uma vista de olhos para ver se estão certas:
 https://ancienttrees.app/setubal
 
-Além disso, perguntava-me: têm alguma árvore pessoal que achem especial?
+Além disso, perguntava-me: que árvore acham pessoalmente que falta no site?
 
-Qualquer ajuda seria muito apreciada, sobretudo fotografias, para melhorar o site.
+Qualquer ajuda seria muito apreciada!
 
 Gostava muito de saber a vossa opinião sobre o projeto.
 
@@ -387,14 +387,14 @@ Subject: Pode ajudar-me com o ancienttrees.app? As árvores de Lisboa
 
 Olá,
 
-Chamo-me Hidde e estou a construir o ancienttrees.app, uma plataforma para árvores incríveis. O meu objetivo é entusiasmar as pessoas pelas árvores antigas e incentivá-las a ir vê-las lá fora.
+Chamo-me Hidde e estou a construir o ancienttrees.app, uma plataforma para árvores notáveis. O meu objetivo é entusiasmar as pessoas pelas árvores antigas e incentivá-las a ir vê-las lá fora.
 
 Temos 33 árvores em Lisboa e tinha muita curiosidade em saber se poderiam dar uma vista de olhos para ver se estão certas:
 https://ancienttrees.app/lisbon
 
-Além disso, perguntava-me: têm alguma árvore pessoal que achem especial?
+Além disso, perguntava-me: que árvore acham pessoalmente que falta no site?
 
-Qualquer ajuda seria muito apreciada, sobretudo fotografias, para melhorar o site.
+Qualquer ajuda seria muito apreciada!
 
 Gostava muito de saber a vossa opinião sobre o projeto.
 
@@ -407,14 +407,14 @@ Subject: Pode ajudar-me com o ancienttrees.app? As árvores de interesse públic
 
 Olá,
 
-Chamo-me Hidde e estou a construir o ancienttrees.app, uma plataforma para árvores incríveis. O meu objetivo é entusiasmar as pessoas pelas árvores antigas e incentivá-las a ir vê-las lá fora.
+Chamo-me Hidde e estou a construir o ancienttrees.app, uma plataforma para árvores notáveis. O meu objetivo é entusiasmar as pessoas pelas árvores antigas e incentivá-las a ir vê-las lá fora.
 
 Temos 95 árvores em Portugal e tinha muita curiosidade em saber se poderiam dar uma vista de olhos para ver se estão certas:
 https://ancienttrees.app/portugal
 
-Além disso, perguntava-me: têm alguma árvore pessoal que achem especial?
+Além disso, perguntava-me: que árvore acham pessoalmente que falta no site?
 
-Qualquer ajuda seria muito apreciada, sobretudo fotografias, para melhorar o site.
+Qualquer ajuda seria muito apreciada!
 
 O vosso registo de Arvoredo de Interesse Público está creditado nas nossas páginas. Uma coisa que encontrámos e que talvez queiram saber: três oliveiras de Setúbal têm 2009 na coluna da idade, que parece ser um ano e não um número de anos.
 
@@ -429,14 +429,14 @@ Subject: Pode ajudar-me com o ancienttrees.app? As árvores antigas de Lisboa
 
 Olá,
 
-Chamo-me Hidde e estou a construir o ancienttrees.app, uma plataforma para árvores incríveis. O meu objetivo é entusiasmar as pessoas pelas árvores antigas e incentivá-las a ir vê-las lá fora.
+Chamo-me Hidde e estou a construir o ancienttrees.app, uma plataforma para árvores notáveis. O meu objetivo é entusiasmar as pessoas pelas árvores antigas e incentivá-las a ir vê-las lá fora.
 
 Temos 33 árvores em Lisboa e tinha muita curiosidade em saber se poderiam dar uma vista de olhos para ver se estão certas:
 https://ancienttrees.app/lisbon
 
-Além disso, perguntava-me: têm alguma árvore pessoal que achem especial?
+Além disso, perguntava-me: que árvore acham pessoalmente que falta no site?
 
-Qualquer ajuda seria muito apreciada, sobretudo fotografias, para melhorar o site.
+Qualquer ajuda seria muito apreciada!
 
 Gostava muito de saber a vossa opinião sobre o projeto.
 
@@ -449,14 +449,14 @@ Subject: Pode ajudar-me com o ancienttrees.app? Um passeio pelas árvores de Set
 
 Olá,
 
-Chamo-me Hidde e estou a construir o ancienttrees.app, uma plataforma para árvores incríveis. O meu objetivo é entusiasmar as pessoas pelas árvores antigas e incentivá-las a ir vê-las lá fora.
+Chamo-me Hidde e estou a construir o ancienttrees.app, uma plataforma para árvores notáveis. O meu objetivo é entusiasmar as pessoas pelas árvores antigas e incentivá-las a ir vê-las lá fora.
 
 Temos 10 árvores em Setúbal e tinha muita curiosidade em saber se poderiam dar uma vista de olhos para ver se estão certas:
 https://ancienttrees.app/setubal
 
-Além disso, perguntava-me: têm alguma árvore pessoal que achem especial?
+Além disso, perguntava-me: que árvore acham pessoalmente que falta no site?
 
-Qualquer ajuda seria muito apreciada, sobretudo fotografias, para melhorar o site.
+Qualquer ajuda seria muito apreciada!
 
 Gostava muito de saber a vossa opinião sobre o projeto.
 
@@ -469,14 +469,14 @@ Subject: Pode ajudar-me com o ancienttrees.app? As árvores escondidas de Lisboa
 
 Olá,
 
-Chamo-me Hidde e estou a construir o ancienttrees.app, uma plataforma para árvores incríveis. O meu objetivo é entusiasmar as pessoas pelas árvores antigas e incentivá-las a ir vê-las lá fora.
+Chamo-me Hidde e estou a construir o ancienttrees.app, uma plataforma para árvores notáveis. O meu objetivo é entusiasmar as pessoas pelas árvores antigas e incentivá-las a ir vê-las lá fora.
 
 Temos 33 árvores em Lisboa e tinha muita curiosidade em saber se poderiam dar uma vista de olhos para ver se estão certas:
 https://ancienttrees.app/lisbon
 
-Além disso, perguntava-me: têm alguma árvore pessoal que achem especial?
+Além disso, perguntava-me: que árvore acham pessoalmente que falta no site?
 
-Qualquer ajuda seria muito apreciada, sobretudo fotografias, para melhorar o site.
+Qualquer ajuda seria muito apreciada!
 
 Gostava muito de saber a vossa opinião sobre o projeto.
 
@@ -489,14 +489,14 @@ Subject: ¿Me pueden ayudar con ancienttrees.app? Los árboles viejos de Sevilla
 
 Hola,
 
-Me llamo Hidde y estoy construyendo ancienttrees.app, una plataforma para árboles increíbles. Mi objetivo es entusiasmar a la gente con los árboles viejos y animarla a ir a verlos fuera.
+Me llamo Hidde y estoy construyendo ancienttrees.app, una plataforma para árboles notables. Mi objetivo es entusiasmar a la gente con los árboles viejos y animarla a ir a verlos fuera.
 
 Tenemos 20 árboles en Sevilla y tenía mucha curiosidad por saber si podrían echar un vistazo a ver si están bien:
 https://ancienttrees.app/seville
 
-Además me preguntaba: ¿tienen algún árbol personal que les parezca especial?
+Además me preguntaba: ¿qué árbol echan de menos personalmente en la web?
 
-Cualquier ayuda sería muy apreciada, sobre todo fotografías, para mejorar la web.
+¡Cualquier ayuda sería muy apreciada!
 
 Me interesa mucho su opinión sobre el proyecto.
 
@@ -509,14 +509,14 @@ Subject: ¿Me pueden ayudar con ancienttrees.app? Los árboles del Retiro
 
 Hola,
 
-Me llamo Hidde y estoy construyendo ancienttrees.app, una plataforma para árboles increíbles. Mi objetivo es entusiasmar a la gente con los árboles viejos y animarla a ir a verlos fuera.
+Me llamo Hidde y estoy construyendo ancienttrees.app, una plataforma para árboles notables. Mi objetivo es entusiasmar a la gente con los árboles viejos y animarla a ir a verlos fuera.
 
 Tenemos 17 árboles en Madrid y tenía mucha curiosidad por saber si podrían echar un vistazo a ver si están bien:
 https://ancienttrees.app/madrid
 
-Además me preguntaba: ¿tienen algún árbol personal que les parezca especial?
+Además me preguntaba: ¿qué árbol echan de menos personalmente en la web?
 
-Cualquier ayuda sería muy apreciada, sobre todo fotografías, para mejorar la web.
+¡Cualquier ayuda sería muy apreciada!
 
 Me interesa mucho su opinión sobre el proyecto.
 
@@ -529,14 +529,14 @@ Subject: ¿Me pueden ayudar con ancienttrees.app? Los árboles singulares de Val
 
 Hola,
 
-Me llamo Hidde y estoy construyendo ancienttrees.app, una plataforma para árboles increíbles. Mi objetivo es entusiasmar a la gente con los árboles viejos y animarla a ir a verlos fuera.
+Me llamo Hidde y estoy construyendo ancienttrees.app, una plataforma para árboles notables. Mi objetivo es entusiasmar a la gente con los árboles viejos y animarla a ir a verlos fuera.
 
 Tenemos 16 árboles en Valencia y tenía mucha curiosidad por saber si podrían echar un vistazo a ver si están bien:
 https://ancienttrees.app/valencia
 
-Además me preguntaba: ¿tienen algún árbol personal que les parezca especial?
+Además me preguntaba: ¿qué árbol echan de menos personalmente en la web?
 
-Cualquier ayuda sería muy apreciada, sobre todo fotografías, para mejorar la web.
+¡Cualquier ayuda sería muy apreciada!
 
 Me interesa mucho su opinión sobre el proyecto.
 
@@ -549,14 +549,14 @@ Subject: Em podeu ajudar amb ancienttrees.app? Els arbres monumentals de Barcelo
 
 Hola,
 
-Em dic Hidde i estic construint ancienttrees.app, una plataforma per a arbres increïbles. El meu objectiu és engrescar la gent amb els arbres vells i animar-la a anar a veure'ls a fora.
+Em dic Hidde i estic construint ancienttrees.app, una plataforma per a arbres notables. El meu objectiu és engrescar la gent amb els arbres vells i animar-la a anar a veure'ls a fora.
 
 Tenim 46 arbres a Barcelona i tenia molta curiositat per saber si hi podríeu fer un cop d'ull per veure si són correctes:
 https://ancienttrees.app/barcelona
 
-A més em preguntava: teniu algun arbre personal que us sembli especial?
+A més em preguntava: quin arbre trobeu personalment a faltar al web?
 
-Qualsevol ajuda seria molt apreciada, sobretot fotografies, per millorar el web.
+Qualsevol ajuda seria molt apreciada!
 
 M'interessa molt la vostra opinió sobre el projecte.
 
@@ -569,14 +569,14 @@ Subject: Em podeu ajudar amb ancienttrees.app? Els arbres monumentals de Barcelo
 
 Hola,
 
-Em dic Hidde i estic construint ancienttrees.app, una plataforma per a arbres increïbles. El meu objectiu és engrescar la gent amb els arbres vells i animar-la a anar a veure'ls a fora.
+Em dic Hidde i estic construint ancienttrees.app, una plataforma per a arbres notables. El meu objectiu és engrescar la gent amb els arbres vells i animar-la a anar a veure'ls a fora.
 
 Tenim 46 arbres a Barcelona i tenia molta curiositat per saber si hi podríeu fer un cop d'ull per veure si són correctes:
 https://ancienttrees.app/barcelona
 
-A més em preguntava: teniu algun arbre personal que us sembli especial?
+A més em preguntava: quin arbre trobeu personalment a faltar al web?
 
-Qualsevol ajuda seria molt apreciada, sobretot fotografies, per millorar el web.
+Qualsevol ajuda seria molt apreciada!
 
 M'interessa molt la vostra opinió sobre el projecte.
 
@@ -589,14 +589,14 @@ Subject: Può aiutarmi con ancienttrees.app? Gli alberi antichi di Firenze
 
 Buongiorno,
 
-Mi chiamo Hidde e sto costruendo ancienttrees.app, una piattaforma per alberi incredibili. Il mio obiettivo è appassionare le persone agli alberi antichi e spingerle ad andare a vederli fuori.
+Mi chiamo Hidde e sto costruendo ancienttrees.app, una piattaforma per alberi notevoli. Il mio obiettivo è appassionare le persone agli alberi antichi e spingerle ad andare a vederli fuori.
 
 Abbiamo 22 alberi a Firenze ed ero molto curioso di sapere se potreste dare un'occhiata per vedere se sono giusti:
 https://ancienttrees.app/florence
 
-Inoltre mi chiedevo: avete un albero personale che trovate speciale?
+Inoltre mi chiedevo: quale albero pensate personalmente che manchi sul sito?
 
-Ogni aiuto sarebbe molto apprezzato, soprattutto fotografie, per migliorare il sito.
+Ogni aiuto sarebbe molto apprezzato!
 
 Mi interessa molto la vostra opinione sul progetto.
 
@@ -609,14 +609,14 @@ Subject: Può aiutarmi con ancienttrees.app? I platani dei Giardini Montanelli
 
 Buongiorno,
 
-Mi chiamo Hidde e sto costruendo ancienttrees.app, una piattaforma per alberi incredibili. Il mio obiettivo è appassionare le persone agli alberi antichi e spingerle ad andare a vederli fuori.
+Mi chiamo Hidde e sto costruendo ancienttrees.app, una piattaforma per alberi notevoli. Il mio obiettivo è appassionare le persone agli alberi antichi e spingerle ad andare a vederli fuori.
 
 Abbiamo 18 alberi a Milano ed ero molto curioso di sapere se potreste dare un'occhiata per vedere se sono giusti:
 https://ancienttrees.app/milan
 
-Inoltre mi chiedevo: avete un albero personale che trovate speciale?
+Inoltre mi chiedevo: quale albero pensate personalmente che manchi sul sito?
 
-Ogni aiuto sarebbe molto apprezzato, soprattutto fotografie, per migliorare il sito.
+Ogni aiuto sarebbe molto apprezzato!
 
 Mi interessa molto la vostra opinione sul progetto.
 
@@ -629,14 +629,14 @@ Subject: Può aiutarmi con ancienttrees.app? Gli alberi delle ville storiche di 
 
 Buongiorno,
 
-Mi chiamo Hidde e sto costruendo ancienttrees.app, una piattaforma per alberi incredibili. Il mio obiettivo è appassionare le persone agli alberi antichi e spingerle ad andare a vederli fuori.
+Mi chiamo Hidde e sto costruendo ancienttrees.app, una piattaforma per alberi notevoli. Il mio obiettivo è appassionare le persone agli alberi antichi e spingerle ad andare a vederli fuori.
 
 Abbiamo 29 alberi a Roma ed ero molto curioso di sapere se potreste dare un'occhiata per vedere se sono giusti:
 https://ancienttrees.app/rome
 
-Inoltre mi chiedevo: avete un albero personale che trovate speciale?
+Inoltre mi chiedevo: quale albero pensate personalmente che manchi sul sito?
 
-Ogni aiuto sarebbe molto apprezzato, soprattutto fotografie, per migliorare il sito.
+Ogni aiuto sarebbe molto apprezzato!
 
 Mi interessa molto la vostra opinione sul progetto.
 
@@ -649,14 +649,14 @@ Subject: Può aiutarmi con ancienttrees.app? Gli alberi di Roma
 
 Buongiorno,
 
-Mi chiamo Hidde e sto costruendo ancienttrees.app, una piattaforma per alberi incredibili. Il mio obiettivo è appassionare le persone agli alberi antichi e spingerle ad andare a vederli fuori.
+Mi chiamo Hidde e sto costruendo ancienttrees.app, una piattaforma per alberi notevoli. Il mio obiettivo è appassionare le persone agli alberi antichi e spingerle ad andare a vederli fuori.
 
 Abbiamo 29 alberi a Roma ed ero molto curioso di sapere se potreste dare un'occhiata per vedere se sono giusti:
 https://ancienttrees.app/rome
 
-Inoltre mi chiedevo: avete un albero personale che trovate speciale?
+Inoltre mi chiedevo: quale albero pensate personalmente che manchi sul sito?
 
-Ogni aiuto sarebbe molto apprezzato, soprattutto fotografie, per migliorare il sito.
+Ogni aiuto sarebbe molto apprezzato!
 
 Mi interessa molto la vostra opinione sul progetto.
 
@@ -669,14 +669,14 @@ Subject: Può aiutarmi con ancienttrees.app? Gli alberi antichi di Bologna
 
 Buongiorno,
 
-Mi chiamo Hidde e sto costruendo ancienttrees.app, una piattaforma per alberi incredibili. Il mio obiettivo è appassionare le persone agli alberi antichi e spingerle ad andare a vederli fuori.
+Mi chiamo Hidde e sto costruendo ancienttrees.app, una piattaforma per alberi notevoli. Il mio obiettivo è appassionare le persone agli alberi antichi e spingerle ad andare a vederli fuori.
 
 Abbiamo 12 alberi a Bologna ed ero molto curioso di sapere se potreste dare un'occhiata per vedere se sono giusti:
 https://ancienttrees.app/bologna
 
-Inoltre mi chiedevo: avete un albero personale che trovate speciale?
+Inoltre mi chiedevo: quale albero pensate personalmente che manchi sul sito?
 
-Ogni aiuto sarebbe molto apprezzato, soprattutto fotografie, per migliorare il sito.
+Ogni aiuto sarebbe molto apprezzato!
 
 Mi interessa molto la vostra opinione sul progetto.
 
@@ -689,14 +689,14 @@ Subject: Può aiutarmi con ancienttrees.app? La Quercia Rossa del Trotter
 
 Buongiorno,
 
-Mi chiamo Hidde e sto costruendo ancienttrees.app, una piattaforma per alberi incredibili. Il mio obiettivo è appassionare le persone agli alberi antichi e spingerle ad andare a vederli fuori.
+Mi chiamo Hidde e sto costruendo ancienttrees.app, una piattaforma per alberi notevoli. Il mio obiettivo è appassionare le persone agli alberi antichi e spingerle ad andare a vederli fuori.
 
 Abbiamo 18 alberi a Milano ed ero molto curioso di sapere se potreste dare un'occhiata per vedere se sono giusti:
 https://ancienttrees.app/milan
 
-Inoltre mi chiedevo: avete un albero personale che trovate speciale?
+Inoltre mi chiedevo: quale albero pensate personalmente che manchi sul sito?
 
-Ogni aiuto sarebbe molto apprezzato, soprattutto fotografie, per migliorare il sito.
+Ogni aiuto sarebbe molto apprezzato!
 
 Mi interessa molto la vostra opinione sul progetto.
 
@@ -709,14 +709,14 @@ Subject: Can you help me with ancienttrees.app? The old trees of Bristol
 
 Hello,
 
-My name is Hidde and I am building ancienttrees.app, a platform for incredible trees. My goal is to get people excited about old trees and to encourage them to go and see them outside.
+My name is Hidde and I am building ancienttrees.app, a platform for remarkable trees. My goal is to get people excited about old trees and to encourage them to go and see them outside.
 
 We have 5 trees in Bristol and I was really curious whether you would take a look at whether they are right:
 https://ancienttrees.app/bristol
 
-I also wondered: do you have a personal tree that you find special?
+I also wondered: which tree do you personally think is missing?
 
-Any help would be much appreciated, photographs above all, to make the site better.
+Any help would be much appreciated!
 
 I would really like to hear your opinion on the project.
 
@@ -729,14 +729,14 @@ Subject: Can you help me with ancienttrees.app? The old trees of London
 
 Hello,
 
-My name is Hidde and I am building ancienttrees.app, a platform for incredible trees. My goal is to get people excited about old trees and to encourage them to go and see them outside.
+My name is Hidde and I am building ancienttrees.app, a platform for remarkable trees. My goal is to get people excited about old trees and to encourage them to go and see them outside.
 
 We have 23 trees in London and I was really curious whether you would take a look at whether they are right:
 https://ancienttrees.app/london
 
-I also wondered: do you have a personal tree that you find special?
+I also wondered: which tree do you personally think is missing?
 
-Any help would be much appreciated, photographs above all, to make the site better.
+Any help would be much appreciated!
 
 I would really like to hear your opinion on the project.
 
@@ -749,14 +749,14 @@ Subject: Can you help me with ancienttrees.app? The old trees of London
 
 Hello,
 
-My name is Hidde and I am building ancienttrees.app, a platform for incredible trees. My goal is to get people excited about old trees and to encourage them to go and see them outside.
+My name is Hidde and I am building ancienttrees.app, a platform for remarkable trees. My goal is to get people excited about old trees and to encourage them to go and see them outside.
 
 We have 23 trees in London and I was really curious whether you would take a look at whether they are right:
 https://ancienttrees.app/london
 
-I also wondered: do you have a personal tree that you find special?
+I also wondered: which tree do you personally think is missing?
 
-Any help would be much appreciated, photographs above all, to make the site better.
+Any help would be much appreciated!
 
 I would really like to hear your opinion on the project.
 
@@ -769,14 +769,14 @@ Subject: Can you help me with ancienttrees.app? The old trees of Dublin
 
 Hello,
 
-My name is Hidde and I am building ancienttrees.app, a platform for incredible trees. My goal is to get people excited about old trees and to encourage them to go and see them outside.
+My name is Hidde and I am building ancienttrees.app, a platform for remarkable trees. My goal is to get people excited about old trees and to encourage them to go and see them outside.
 
 We have 17 trees in Dublin and I was really curious whether you would take a look at whether they are right:
 https://ancienttrees.app/dublin
 
-I also wondered: do you have a personal tree that you find special?
+I also wondered: which tree do you personally think is missing?
 
-Any help would be much appreciated, photographs above all, to make the site better.
+Any help would be much appreciated!
 
 I would really like to hear your opinion on the project.
 
@@ -789,14 +789,14 @@ Subject: Can you help me with ancienttrees.app? The veteran trees of Edinburgh
 
 Hello,
 
-My name is Hidde and I am building ancienttrees.app, a platform for incredible trees. My goal is to get people excited about old trees and to encourage them to go and see them outside.
+My name is Hidde and I am building ancienttrees.app, a platform for remarkable trees. My goal is to get people excited about old trees and to encourage them to go and see them outside.
 
 We have 15 trees in Edinburgh and I was really curious whether you would take a look at whether they are right:
 https://ancienttrees.app/edinburgh
 
-I also wondered: do you have a personal tree that you find special?
+I also wondered: which tree do you personally think is missing?
 
-Any help would be much appreciated, photographs above all, to make the site better.
+Any help would be much appreciated!
 
 I would really like to hear your opinion on the project.
 

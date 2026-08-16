@@ -88,6 +88,14 @@ CHECKS = [
         r"tree of yours", r"Baum von Ihnen", r"Bäume von Ihnen",
         r"your trees\b", r"ground you look after", r"in your care",
     ]),
+    # Hidde, 2026-08-15: "remarkable = opmerkelijk in het nederlands.
+    # ongelofelijke bomen nooit gebruiken is raar." The English word is
+    # remarkable everywhere; the Dutch word is opmerkelijk, never ongelofelijk.
+    ("WRONG WORD FOR REMARKABLE", [
+        r"ongelo[fo]?[fv]?elijk", r"ongelooflijk",
+        r"incredible tree", r"árvores incríveis", r"árboles increíbles",
+        r"arbres increïbles", r"alberi incredibili",
+    ]),
     ("PROCESS-PITCHING", [
         r"two independent sources", r"\bwe verify\b", r"\bour (?:process|method|workflow)\b",
         r"\bcross-referenc", r"\bevery tree is (?:checked|verified)\b",
