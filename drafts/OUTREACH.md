@@ -427,7 +427,25 @@ why_them is trusted for ownership now. 106 contacts remain; the daily cap is 40.
 | 2026-08-08 | Haarlems Dagblad, stadsredactie@haarlemsdagblad.nl | Haarlem local pitch (Lodewijk Napoleon beech), batch 001 | **sent** |
 | 2026-08-08 | De Gelderlander, redactie@gelderlander.nl | Arnhem local pitch (De Poortwachters), batch 001 | **sent** |
 | 2026-08-08 | Generalitat de Catalunya, arbresmonumentals.tes@gencat.cat | Permission to show Catalonia's monumental trees; unlocks Barcelona's trees AND its photos | **sent**, no reply yet |
+| 2026-08-16 | City of Sydney, Council@cityofsydney.nsw.gov.au | Licence for the Register of Significant Trees; unlocks Sydney (#5) and the best-instrumented register found anywhere | **sent** |
+| 2026-08-16 | Bomenstichting, info@bomenstichting.nl | Licence for the Landelijk Register Monumentale Bomen; deepens 13 published Dutch cities | **sent** |
+| 2026-08-16 | GDOS Poland, kancelaria@gdos.gov.pl | Which licence applies to CRFOP (metadata says CC0, condition fields empty, site publishes CC BY-SA); 117,474 tree monuments | **sent** |
 | 2026-08-08 | Woodland Trust, ancienttreeinventory@woodlandtrust.org.uk | Written permission for ATI data; unlocks London and Edinburgh | **sent**, no reply yet |
+
+**Two things this batch changed, both worth keeping (2026-08-16).** It started
+as five mails and went out as three: Hidde remembered mailing the Woodland
+Trust, and the table above confirmed both it and Catalonia went on 2026-08-08
+with no reply yet. The machine's duplicate guard did not catch that, because it
+reads `data/outreach-sent.json` and those two were sent by hand, so they existed
+only in this markdown table, which no script reads. Both are now backfilled into
+that file. **Anything sent by hand goes in outreach-sent.json as well as here**,
+or the guard is blind to exactly the mails a human cared enough to send himself.
+
+And the follow-up timing is unchanged by the near miss: this file's own guidance
+is three or four weeks before a polite nudge, so the Woodland Trust and
+Catalonia are due around 2026-09-01, not now.
+
+The daily cap went 40 -> 50 on his instruction the same day.
 
 Hidde's own expectation, 2026-08-08: no quick answer from either. Both are
 public bodies or a large charity, and a licence question goes to somebody's

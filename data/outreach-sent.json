@@ -1,7 +1,9 @@
 {
  "note": "Every outreach mail ever sent by the machine, so no address is ever mailed twice without a human deciding to. Appended by scripts/outreach_send.py. BACKFILL 2026-08-16: the duplicate guard only ever saw mail the machine sent, so the two licence asks Hidde sent by hand on 2026-08-08 (Woodland Trust, Catalonia) were invisible to it, and a batch built the same morning would have re-mailed the Woodland Trust eight days after his first ask with no reply yet. He caught it, not the script. Manual sends now belong in this file too; drafts/OUTREACH.md's table stays the human-readable log.",
- "do_not_contact_note": "Addresses and domains that asked not to be written to again, plus any we decide to leave alone. Checked by scripts/outreach_send.py before every send and never overridden, not even for a deliberate second batch. Add the whole domain as '@example.org' when an organisation asks as a whole. Added 2026-08-16: batches 003 and 004 promised in writing that a word would be enough, and nothing enforced it.",
- "do_not_contact": [],
+ "do_not_contact_note": "Addresses and domains that asked not to be written to again, plus any we decide to leave alone. Checked by scripts/outreach_send.py before every send and never overridden, not even for a deliberate second batch. Add the whole domain as '@example.org' when an organisation asks as a whole. Added 2026-08-16: batches 003 and 004 promised in writing that a word would be enough, and nothing enforced it. First entry, 2026-08-16: info@haagsehofjes.nl is a biscuit company, not the almshouse foundation. Rogier Dop answered within the hour that trees are not his subject. Wrong target, so nothing about it improves with a better letter.",
+ "do_not_contact": [
+  "info@haagsehofjes.nl"
+ ],
  "sent": [
   {
    "date": "2026-08-08",
@@ -695,6 +697,27 @@
    "outlet": "Generalitat de Catalunya, arbres monumentals",
    "subject": "Permission to show Catalonia's monumental trees",
    "batch": "manual (sent by Hidde himself; backfilled 2026-08-16 from drafts/OUTREACH.md)"
+  },
+  {
+   "date": "2026-08-16",
+   "to": "Council@cityofsydney.nsw.gov.au",
+   "outlet": "City of Sydney, Register of Significant Trees",
+   "subject": "Licence for the Register of Significant Trees",
+   "batch": "006-licence-asks"
+  },
+  {
+   "date": "2026-08-16",
+   "to": "info@bomenstichting.nl",
+   "outlet": "Bomenstichting",
+   "subject": "Licentie voor het Landelijk Register Monumentale Bomen",
+   "batch": "006-licence-asks"
+  },
+  {
+   "date": "2026-08-16",
+   "to": "kancelaria@gdos.gov.pl",
+   "outlet": "GDOS Poland, Centralny Rejestr Form Ochrony Przyrody",
+   "subject": "Licence for CRFOP tree monument data",
+   "batch": "006-licence-asks"
   }
  ]
 }
