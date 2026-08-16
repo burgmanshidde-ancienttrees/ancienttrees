@@ -1,0 +1,50 @@
+{
+ "city": "Sorrento",
+ "country": "Italy",
+ "city_slug": "sorrento",
+ "note": "Candidates found during the 2026-08-16 verify pass (Italy MASAF national monumental-trees register, 19 candidates within the comune) that did not ship this pass. Kept because the platform's direction is to map every remarkable tree eventually. Never rendered: these are leads, not entries. Four trees shipped to data/research/sorrento-verified.json (Villa Fondi holm oak and stone pine, the cemetery cypress, the Via Maresca plane), all in Piano di Sorrento / Sant'Agnello, which adjoin Sorrento on the peninsula.",
+ "leads": [
+  {
+   "name": "Second and third cemetery cypresses",
+   "species": "Cupressus sempervirens",
+   "lat": 40.628764,
+   "lng": 14.419186,
+   "status": "lead",
+   "why": "MASAF register lists two more cypresses in the same Cimitero Comunale (Via Gennaro Maresca) as the shipped one: girth 270cm at 40.628764/14.419186 (sheet 06/G568/NA/15) and girth 325cm at 40.629361/14.419611 (sheet 05/G568/NA/15). Only the 266cm cypress (srn_003) turned up a second independent source (Regione Campania scheda_38) in this pass's time budget. These two are register-only (one source), so held as leads rather than shipped; a future pass could search for their own Regione Campania scheda numbers (tried scheda_38-42 directly by number, did not find dedicated cards for these two) or fold all three into one 'cemetery cypresses' entry if that reads better than three near-duplicate single-tree pages."
+  },
+  {
+   "name": "Homogeneous olive group, Riviera Massa",
+   "species": "Olea europaea (register entry: 'Insieme omogeneo di Olea europaea', i.e. a group, not a single tree)",
+   "lat": 40.632394,
+   "lng": 14.387519,
+   "status": "lead",
+   "why": "MASAF register entry (sheet 01/I862/NA/15) explicitly describes this as a homogeneous GROUP of olives, no girth or height given for an individual tree, no single specimen distinguished. Fails the collectible-point test (one identifiable tree, or a compact famous ensemble with one obvious place to stand) as recorded; a future pass could check whether local sources single out one specific old olive within the group, which would change this from blocked to leads-with-a-candidate. Coordinates sit close to the Grand Hotel Parco dei Principi grounds (see blocked entry below), so access would need the same check regardless."
+  },
+  {
+   "name": "Roverella, Tasso and Tiglio of the Antico Parco del Principe (Colli di San Pietro)",
+   "species": "Quercus pubescens (girth 495cm), Taxus baccata (girth 473cm), Tilia platyphyllos (girth 365cm)",
+   "lat": 40.619211,
+   "lng": 14.431389,
+   "status": "lead",
+   "why": "All three at Via Cermenna 12, Piano di Sorrento, ~4.7km from Sorrento centre (at or past the edge of the 30-minute day-trip boundary and would need checking on foot/bus time). Confirmed via two independent sources each: MASAF register plus dedicated Regione Campania schede (scheda_41 for the lime/tiglio, scheda_42 for the oak/roverella; a scheda for the yew/tasso was not located by number in this pass but is implied by the same 'Gli alberi secolari in Campania' 2008 volume citation). All three are genuinely remarkable: multi-secular, part of the historic Antico Parco del Principe next to the Castello Colonna (a former Benedictine abbey, 1080, later home of Prince Eduardo Colonna). BUT the Regione Campania text for the lime tree explicitly calls it 'situato in una tenuta' (located in an estate) whose park dates to 1700, and describes it as tied architecturally to an adjoining fine building; nothing found in this pass states the grounds are open to the public, and 'tenuta' (estate) plus 'Castello' (castle) reads as a private historic property. This matches the brief's own suspicion ('this one smells like it could be private grounds'). Held as leads/access-unresolved rather than blocked outright, because no source was found stating it is closed either; a future pass should search for the castle/estate's own name and current ownership/visiting status before shipping or blocking definitively."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Platano comune, Grand Hotel Parco dei Principi grounds",
+   "reason": "Access: the hotel's own botanical garden page states the garden is accessible to hotel guests and to patrons of its restaurants (Gio Ponti, Poggio Siracusa) and the Blu Bar, plus occasional FAI (Fondo Ambiente Italiano) open-day events; it is not a garden with ordinary walk-in or paid-ticket public access. That fails hard rule 10's first test (can a visitor get in without asking anyone's permission, e.g. a reception desk, a reservation, a guard). Girth 405cm, height 31.5m, MASAF sheet 03/I862/NA/15. If future evidence shows genuine unrestricted or simple paid public access (a garden ticket, regular open hours), this and its three companions below should be reconsidered."
+  },
+  {
+   "name": "Agathis robusta (kauri pine), Grand Hotel Parco dei Principi grounds",
+   "reason": "Same access finding as the Platano comune above: hotel-guest/restaurant-patron access plus occasional FAI open days, not genuine public access. Described by the hotel's own site as among the first kauri pine specimens planted in Italy, girth 300cm, height 30m, MASAF sheet 02/I862/NA/15."
+  },
+  {
+   "name": "Ginkgo biloba, Grand Hotel Parco dei Principi grounds",
+   "reason": "Same access finding as above. Girth 402cm, height 25m, MASAF sheet 02/I208/NA/15 (register lists this parcel under Sant'Agnello rather than Sorrento, still the same hotel grounds)."
+  },
+  {
+   "name": "Cinnamomum camphora (camphor tree), Grand Hotel Parco dei Principi grounds",
+   "reason": "Same access finding as above. Girth 444cm, height 24m, MASAF sheet 01/I208/NA/15 (register lists this parcel under Sant'Agnello rather than Sorrento, still the same hotel grounds)."
+  }
+ ]
+}
