@@ -1,0 +1,102 @@
+{
+ "city": "Krakow",
+ "country": "Poland",
+ "compiled": "2026-08-16",
+ "source_note": "GDOS's national pomniki przyrody register (poland-gdos-pomniki-przyrody.json, CC0) gives coordinates, designation date and species only, no name, age or girth. Polish Wikipedia's 'Pomniki przyrody w Krakowie' article reproduces the city's own official registry list ('wykaz'), including street address, girth in cm and designation year per tree, joined here to the GDOS entries by their shared INSPIRE code. This is the same join used to verify the six trees delivered this pass (kra_005 to kra_010).",
+ "leads": [
+  {
+   "name": "The Studencka Plane",
+   "species": "London Plane (Platanus x acerifolia)",
+   "gid": 209479,
+   "kodinspire": "PL.ZIPOP.1393.PP.1261011.2972",
+   "latitude": 50.0628,
+   "longitude": 19.9284,
+   "girth_cm": 315,
+   "designated": 1997,
+   "reason": "Verified to the same standard as kra_005 to kra_010 (register + Wikipedia's reproduction of the official list) but cut for count: a second, smaller plane would have duplicated kra_005's species inside the same cluster. Good candidate if the walk is ever split into two smaller ones."
+  },
+  {
+   "name": "The Sikorskiego Square Oak",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "gid": 72126,
+   "kodinspire": "PL.ZIPOP.1393.PP.1261011.944",
+   "latitude": 50.06116,
+   "longitude": 19.92858,
+   "girth_cm": 263,
+   "designated": 2007,
+   "reason": "Smaller girth than the columnar oak shipped as kra_009 and a fourth pedunculate oak on the same city page (after kra_001, kra_002 and kra_009); cut for repetition, not for evidence."
+  },
+  {
+   "name": "The Tarlowska Lime",
+   "species": "Small-leaved Lime (Tilia cordata)",
+   "gid": 72098,
+   "kodinspire": "PL.ZIPOP.1393.PP.1261011.911",
+   "latitude": 50.0573,
+   "longitude": 19.93106,
+   "girth_cm": 259,
+   "designated": 2004,
+   "reason": "Smaller than the lime shipped as kra_007 and a second lime in the same walk; ninth-in-line only."
+  },
+  {
+   "name": "The Kossaka Square Ash",
+   "species": "European Ash (Fraxinus excelsior)",
+   "gid": 209489,
+   "kodinspire": "PL.ZIPOP.1393.PP.1261011.2977",
+   "latitude": 50.05665,
+   "longitude": 19.92719,
+   "girth_cm": 321,
+   "designated": 1997,
+   "reason": "A second ash after kra_006, smaller girth; ninth-in-line only."
+  },
+  {
+   "name": "The Batorego pair (ginkgo and oak, adjacent)",
+   "species": "Ginkgo (Ginkgo biloba) and Pedunculate Oak (Quercus robur)",
+   "gid": "209492 / 209491",
+   "kodinspire": "PL.ZIPOP.1393.PP.1261011.2979 / .2978",
+   "latitude": 50.06676,
+   "longitude": 19.93186,
+   "girth_cm": "305 (ginkgo) / 336 (oak)",
+   "designated": 1997,
+   "reason": "Two separate register entries about 20m apart on ul. Batorego, both smaller than trees already shipped of the same species (kra_008 ginkgo, kra_009 oak). Not folded as twins because they are two different species standing near each other, not one tree double-counted; kept as leads rather than shipped for count reasons."
+  },
+  {
+   "name": "The Sw. Jana Tree of Heaven",
+   "species": "Tree of Heaven (Ailanthus altissima)",
+   "gid": 72171,
+   "kodinspire": "PL.ZIPOP.1393.PP.1261011.992",
+   "latitude": 50.0647,
+   "longitude": 19.93899,
+   "girth_cm": 292,
+   "designated": 1997,
+   "reason": "Verified location and register status, but not used: Ailanthus altissima is an invasive species in most of Europe and its designation reads as a curiosity rather than a tree worth the walk; judged not remarkable enough to ship on this pass, but not blocked either, since a future pass may find a stronger reason to include it."
+  },
+  {
+   "name": "The Wadow Park Silver Linden",
+   "species": "Silver Lime (Tilia tomentosa)",
+   "latitude": null,
+   "longitude": null,
+   "girth_cm": 559,
+   "reason": "Named by krakow.pl's own 2020-era announcement (dziewietnascie_pomnikow_przyrody) as the largest-girth tree among a batch of 19 newly designated monuments, in Wadow Park. Not pursued this pass because Wadow Park's location relative to the centre was not checked and it did not fit the Planty-ring cluster; worth a dedicated look, since 559cm girth would make it larger than every tree shipped this pass, in a second, separate cluster with a tall elm (29.5m) and a wide-crowned oak (28.2 x 22.8m canopy) from the same announcement."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "The Muzeum Archeologiczne Red Beech",
+   "species": "Common Beech, purple-leaved form (Fagus sylvatica f. purpurea)",
+   "gid": 71959,
+   "kodinspire": "PL.ZIPOP.1393.PP.1261011.1030",
+   "latitude": 50.05713,
+   "longitude": 19.93501,
+   "reason": "Dead. Storm-felled 17 February 2022 (Gazeta Krakowska, Nasze Miasto Krakow, RMF24, all reporting the same event); the Wikipedia registry table itself notes 'Drzewo powalone przez wichure 17 lutego 2022'. Popularly said to have been a favourite of Marshal Jozef Pilsudski, unconfirmed. A replacement sapling, the 'Drzewo Poezji' (Tree of Poetry), was planted on the same spot 21 March 2022; too young to qualify as an entry itself."
+  },
+  {
+   "name": "The Podzamcze Horse Chestnut",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "gid": 71949,
+   "kodinspire": "PL.ZIPOP.1393.PP.1261011.1020",
+   "latitude": 50.05426,
+   "longitude": 19.93844,
+   "reason": "Dead. Storm-felled 10 July 2021 per the Wikipedia registry table's own note ('Drzewo powalone przez burze 10 lipca 2021')."
+  }
+ ]
+}
