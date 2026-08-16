@@ -8,34 +8,10 @@
   "expire_hours_note": "A night run's job is killed at 60 minutes by timeout-minutes in nightly.yml, so a night-run claim older than 90 minutes cannot belong to a pass that is still working. Sessions keep the four hours, because a session legitimately pauses.",
   "claims": [
     {
-      "target": "bari",
+      "target": "guimaraes",
       "kind": "verify",
       "by": "night-run",
-      "claimed_at": "2026-08-16T04:34:34+00:00"
-    },
-    {
-      "target": "taormina",
-      "kind": "verify",
-      "by": "night-run",
-      "claimed_at": "2026-08-16T04:34:34+00:00"
-    },
-    {
-      "target": "catania",
-      "kind": "verify",
-      "by": "night-run",
-      "claimed_at": "2026-08-16T04:34:34+00:00"
-    },
-    {
-      "target": "aarhus",
-      "kind": "verify",
-      "by": "night-run",
-      "claimed_at": "2026-08-16T05:59:27+00:00"
-    },
-    {
-      "target": "sorrento",
-      "kind": "verify",
-      "by": "night-run",
-      "claimed_at": "2026-08-16T06:00:26+00:00"
+      "claimed_at": "2026-08-16T07:32:24+00:00"
     }
   ]
 }
