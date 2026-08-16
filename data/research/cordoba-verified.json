@@ -1,0 +1,165 @@
+[
+  {
+    "id": "cdb_011",
+    "name": "The Chinaberry of the Puerta de Almodóvar",
+    "species": "Chinaberry (Melia azedarach)",
+    "age_estimate": "roughly 70 to 80 years",
+    "age_min": 65,
+    "age_max": 85,
+    "location": {
+      "address": "Jardines de la Puerta de Almodóvar, beside the city gate, 14004 Córdoba",
+      "latitude": 37.880531,
+      "longitude": -4.784276,
+      "neighbourhood": "Centro Histórico, beside the Alcázar walls"
+    },
+    "verified_sources": [
+      "https://www.cordoba.es/sites/default/files/PDF/Servicios/medio-ambiente/arboles-singulares-de-la-ciudad-de-cordoba/arboles-singulares-de-cordoba.pdf",
+      "https://www.turismodecordoba.org/puerta-de-almodovar",
+      "https://sientecordoba.com/puerta-de-almodovar/"
+    ],
+    "access": "Free, in the public gardens that surround the Puerta de Almodóvar city gate",
+    "transport": "Historic centre, a few minutes on foot from the Alcázar and the Mezquita",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Municipal singular-trees catalogue (cordoba.es) records this specimen at 24.5m tall, casting about 400 square metres of shade, roughly 72 years old at the time the earlier research pass read the catalogue (2026-08-03). Independently, Turismo de Córdoba and Sientecordoba both describe 'a gigantic cinamomo' among the trees at the Puerta de Almodóvar gardens as a known feature of the site, which corroborates existence and species even though neither gives independent measurements. Coordinate cross-checked against OpenStreetMap: falls inside the 'Jardines Puerta de Almodóvar' park polygon (Nominatim, 2026-08-16). No confirmation found of decline or removal; treat as alive. Age is catalogue-only, no second dated source, hence flagged. The Puerta de Almodóvar itself is a 14th-century Christian-era gate on the site of an older Arab gate, if useful context for the story."
+  },
+  {
+    "id": "cdb_012",
+    "name": "The Himalayan Cedar of the Plaza del Cardenal Toledo",
+    "species": "Himalayan Cedar (Cedrus deodara)",
+    "age_estimate": "roughly a century",
+    "age_min": 90,
+    "age_max": 115,
+    "location": {
+      "address": "Plaza del Cardenal Toledo, 14003 Córdoba",
+      "latitude": 37.886662,
+      "longitude": -4.777057,
+      "neighbourhood": "San Miguel - Capuchinos, Centro Histórico"
+    },
+    "verified_sources": [
+      "https://www.cordoba.es/sites/default/files/PDF/Servicios/medio-ambiente/arboles-singulares-de-la-ciudad-de-cordoba/arboles-singulares-de-cordoba.pdf",
+      "https://cordobapedia.wikanda.es/wiki/Plaza_del_Cardenal_Toledo_(Rincones_de_C%C3%B3rdoba_con_encanto)"
+    ],
+    "access": "Free, open public plaza",
+    "transport": "Historic centre, walking distance from the Mezquita-Catedral",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Municipal catalogue gives 22.5m tall, roughly 102 years old at time of the earlier pass, and says it predates the plaza's 1945 fountain and garden design by Víctor Escribano Ucelay. Cordobapedia's own entry on the plaza (independent of the catalogue) separately lists 'un Cedro del Himalaya' among the plaza's notable specimens alongside lemon trees, thuja, ash and palms, which corroborates existence and species from a second source. The plaza itself was formed after the 1868 disamortisation of the Convent of Santa María de las Dueñas; a tree predating the 1945 layout is plausible in that context. Coordinate falls inside the plaza's OSM polygon (Nominatim, 2026-08-16). Age remains catalogue-only, no independent dating, hence flagged. Near-sole occupant of the square per the original lead, single specimen, easy to identify."
+  },
+  {
+    "id": "cdb_013",
+    "name": "The Ginkgo of the Agriculture Gardens",
+    "species": "Ginkgo (Ginkgo biloba)",
+    "age_estimate": "roughly 70 to 80 years",
+    "age_min": 65,
+    "age_max": 85,
+    "location": {
+      "address": "Jardines de la Agricultura (Jardín de los Patos), 14004 Córdoba",
+      "latitude": 37.888092,
+      "longitude": -4.786331,
+      "neighbourhood": "Ciudad Jardín"
+    },
+    "verified_sources": [
+      "https://www.cordoba.es/sites/default/files/PDF/Servicios/medio-ambiente/arboles-singulares-de-la-ciudad-de-cordoba/arboles-singulares-de-cordoba.pdf",
+      "https://cordobapedia.wikanda.es/wiki/Jardines_de_la_Agricultura",
+      "https://www.geocaching.com/geocache/GC7HVFD",
+      "https://cosasdecordoba.com/jardines-de-la-agricultura/"
+    ],
+    "access": "Free, public garden, popularly called the Jardín de los Patos",
+    "transport": "Historic centre / Ciudad Jardín, walking distance from Ronda de los Tejares",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Municipal catalogue records this as the oldest ginkgo in Córdoba's public gardens, roughly 72 years old at the time of the earlier pass. Independently corroborated by at least three unrelated sources describing this exact specimen in this exact garden as the city's oldest/most notable ginkgo: Cordobapedia's page on the gardens, a Wikimedia-style local listing (cosasdecordoba.com), and a geocaching cache literally named 'El Ginkgo Biloba de los Jardines de la Agricultura' placed at this tree (cache GC7HVFD, still listed as active in 2026, which is weak evidence the tree is still standing since a cache is normally retired if its landmark disappears). Gardens inaugurated 1811, now known as Jardín de los Patos for its duck pond. Coordinate falls inside the gardens' OSM polygon (Nominatim, 2026-08-16). Existence and species are well corroborated; age remains catalogue-only, hence still flagged rather than clean."
+  },
+  {
+    "id": "cdb_014",
+    "name": "The Casuarinas of the Plaza de Jerónimo Páez",
+    "species": "River She-oak (Casuarina equisetifolia)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Plaza de Jerónimo Páez, in front of the Archaeological Museum, 14003 Córdoba",
+      "latitude": 37.881735,
+      "longitude": -4.778087,
+      "neighbourhood": "San Salvador y La Compañía, Centro Histórico"
+    },
+    "verified_sources": [
+      "https://www.cordoba.es/sites/default/files/PDF/Servicios/medio-ambiente/arboles-singulares-de-la-ciudad-de-cordoba/arboles-singulares-de-cordoba.pdf",
+      "https://paseandoporeuropa.com/es/cordoba/plaza-de-jeronimo-paez-en-cordoba"
+    ],
+    "access": "Free, open public plaza in the historic centre",
+    "transport": "Five minutes on foot from the Mezquita-Catedral",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Municipal catalogue records three casuarinas here, the tallest above 30m, no published age. Paseandoporeuropa's independent description of the plaza separately mentions 'grandes casuarinas' among its features, corroborating presence and species (though not the catalogue's specific measurements) from a source unconnected to the catalogue. Plaza takes its name from the Palacio de los Páez de Castillejo (now the Archaeological Museum); it sits on the site of a Roman theatre destroyed by a 3rd-century earthquake, and was refenced and remodelled through the late 1990s/2000s finishing January 2011, which is worth checking against tree age since a remodel is sometimes when a garden is replanted. Treat as an ensemble entry: three trees, compact plaza, one obvious place to stand, passes the collectible-point test the way other named tree groups on this site do. No age source found at all; leave age_estimate as 'not documented' rather than guess, per the honesty rule on gaps."
+  },
+  {
+    "id": "cdb_015",
+    "name": "The Cypress at the Alcázar Entrance",
+    "species": "Mediterranean Cypress (Cupressus sempervirens)",
+    "age_estimate": "roughly 75 to 80 years",
+    "age_min": 70,
+    "age_max": 85,
+    "location": {
+      "address": "Outside the ticket entrance, Alcázar de los Reyes Cristianos, Campo Santo de los Mártires, 14004 Córdoba",
+      "latitude": 37.87711,
+      "longitude": -4.781352,
+      "neighbourhood": "San Basilio, Centro Histórico"
+    },
+    "verified_sources": [
+      "https://www.cordoba.es/sites/default/files/PDF/Servicios/medio-ambiente/arboles-singulares-de-la-ciudad-de-cordoba/arboles-singulares-de-cordoba.pdf"
+    ],
+    "access": "Free per the municipal catalogue, said to stand outside the Alcázar's ticket gate rather than inside the paid gardens; NOT independently confirmed on the ground this pass",
+    "transport": "Historic centre, beside the Alcázar de los Reyes Cristianos",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "IMPORTANT CAVEAT for the writer/next reviewer: municipal catalogue describes one specific specimen at 26.5m tall on a crown only 3.5m wide ('a green needle'), which reads as a genuinely singular columnar specimen rather than an ordinary planting. But the Alcázar's own gardens are also known for the Paseo de los Reyes, a formal avenue lined with many cylindrical cypresses inside the paid gardens (confirmed by multiple tourism sources, e.g. andalucialovers.com, cometeelmundo.net). I could NOT independently verify this pass whether the catalogue's single measured cypress is this same avenue planting (which would fail the collectible-point / avenue rule) or a genuinely separate free-to-see specimen outside the ticket gate as the original lead claims. No second source found distinguishing it. Recommend a follow-up check (street view or a visit) before shipping with confidence; downgraded to location_precision approximate and flagged accordingly rather than rejected outright, since the register does single out one specific tree by measurement rather than describing the avenue collectively."
+  },
+  {
+    "id": "cdb_016",
+    "name": "The River Red Gum of the Celia Méndez Garden",
+    "species": "River Red Gum (Eucalyptus camaldulensis)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Parque Celia Méndez, 14006 Córdoba",
+      "latitude": 37.891073,
+      "longitude": -4.749328,
+      "neighbourhood": "Distrito Sureste, roughly 3km east of the historic centre"
+    },
+    "verified_sources": [
+      "https://www.cordoba.es/sites/default/files/PDF/Servicios/medio-ambiente/arboles-singulares-de-la-ciudad-de-cordoba/arboles-singulares-de-cordoba.pdf"
+    ],
+    "access": "Free, public park (opening hours not confirmed this pass)",
+    "transport": "Distrito Sureste, roughly 3km east of the historic centre; not within the existing 2.3km walk",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Single-sourced: municipal catalogue records this as the thickest trunk in the whole catalogue at 4.86m girth and 34.8m tall, a relict of the former riverside market gardens (huertas) in this area. A real search this pass (multiple query variants on the park name plus species) found NO independent corroborating source, only generic hits about a different, unrelated eucalyptus (the 'Eucalipto del Cerrillo', 5.4m perimeter, a separate tree 5.4km away, already listed separately in the register candidates). Park's existence and this coordinate confirmed via OpenStreetMap as 'Parque Celia Méndez' (Nominatim, 2026-08-16), matching the lead coordinate closely. No age given by the catalogue; leave age_estimate as 'not documented'. Peripheral to the existing 2.3km cluster (roughly 3km out), so only worth adding if Córdoba is deliberately growing a second, separate walk in this neighbourhood rather than folding into the existing one."
+  },
+  {
+    "id": "cdb_017",
+    "name": "The Ash of Santa Marina",
+    "species": "Ash (Fraxinus excelsior)",
+    "age_estimate": "argued to be over a century, not precisely dated",
+    "age_min": 100,
+    "age_max": 150,
+    "location": {
+      "address": "Plaza de Santa Marina, beside the north side of the Iglesia de Santa Marina de Aguas Santas, 14001 Córdoba",
+      "latitude": 37.8898,
+      "longitude": -4.77496,
+      "neighbourhood": "Santa Marina, Distrito Centro"
+    },
+    "verified_sources": [
+      "Los Árboles de Córdoba (1984 book, cited via the earlier research pass and Rafa Tamajón's own writing)",
+      "2002 provincial inventory of singular trees (Árboles y arboledas singulares de la provincia de Córdoba, Tamajón/Reyes/Sánchez Polaina)",
+      "https://diarioderafatamajon.blogspot.com/2014/04/arboles-de-la-ciudad-de-cordoba-el.html (blocked by an automated bot-check this pass; confirmed only via search-result summary, not a direct fetch)"
+    ],
+    "access": "Free, standing beside a public church on a public plaza",
+    "transport": "Historic centre, walking distance",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Latitude was missing from the original lead (PDF extraction failure); recovered this pass by geocoding 'Plaza de Santa Marina, Córdoba' via OpenStreetMap Nominatim (centroid roughly 37.8898, -4.7751, 2026-08-16), which sits within about 150m of the original surviving longitude (-4.77496), consistent with the church/plaza. This is a PLAZA-LEVEL location, not a tree-level pin: the source (search-result summary of Rafa Tamajón's own blog) says the tree stands specifically 'on the north side of the church', which narrows it somewhat but was not independently confirmed against a photo or satellite view this pass, hence approximate rather than confirmed. Two written sources agree it is the oldest/largest-girth ash in the city by trunk perimeter (Los Árboles de Córdoba 1984, and the 2002 provincial inventory), and local botanist Rafa Tamajón separately argues in his own writing that it is centenarian, based on growth pattern and site history rather than a ring count or documentary date; treat the exact age as disputed/estimated, not documented. CONDITION: the tree has been topped (crown removed), described as 'a grand trunk with some sparse branch growth and limited leaf abundance' by the search summary of Tamajón's post, and the original lead separately notes 'visible trunk decay and declining', only 9.5m tall. This is consistent evidence from two angles that the tree is ALIVE but in poor condition, not dead. Given the declining condition and approximate pin, this is a marginal ship: deliver flagged, and if a future pass can get eyes on the blog post directly (it 302'd to a Google bot-check page for both WebFetch and curl with a browser user-agent this session) or a photo, upgrade precision and confirm condition further."
+  }
+]

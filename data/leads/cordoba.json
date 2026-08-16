@@ -5,38 +5,6 @@
   "note": "Candidates found during the 2026-08-03 research pass that did not ship. Kept because the platform's direction is to map every remarkable tree eventually (Hidde, 2026-08-03). Never rendered: these are leads, not entries.",
   "leads": [
     {
-      "name": "Red River Gum of the Celia Mendez Garden",
-      "species": "Eucalyptus camaldulensis",
-      "lat": 37.891073,
-      "lng": -4.749328,
-      "status": "lead",
-      "why": "The thickest trunk in the whole municipal catalogue at 4.86m girth and 34.8m tall, a relict of the riverside market gardens. Undated, no photo, peripheral neighbourhood 3km east, and no story beyond size. Strong candidate the day Cordoba grows past seven."
-    },
-    {
-      "name": "Ash of Santa Marina",
-      "species": "Fraxinus excelsior",
-      "lat": 37.8827,
-      "lng": -4.77496,
-      "status": "lead",
-      "why": "Two sources and real history (documented in Los Arboles de Cordoba, 1984, and the 2002 provincial inventory; local botanist Rafa Tamajon argues it is centenarian). But only 9.5m tall with visible trunk decay and declining. Latitude was lost in the catalogue PDF extraction and needs recovering from the page image."
-    },
-    {
-      "name": "Chinaberry at the Puerta de Almodovar",
-      "species": "Melia azedarach",
-      "lat": 37.880531,
-      "lng": -4.784276,
-      "status": "lead",
-      "why": "24.5m tall casting 400 square metres of shade, about 72 years old now. Handsome, young, no story yet."
-    },
-    {
-      "name": "Cypress at the Alcazar entrance",
-      "species": "Cupressus sempervirens",
-      "lat": 37.87711,
-      "lng": -4.781352,
-      "status": "lead",
-      "why": "26.5m tall on a crown only 3.5m wide, a green needle, and free to see outside the ticket gate. About 77 years old, so young for us, but visually the most striking of Cordoba's modern trees."
-    },
-    {
       "name": "Stone Pine of Santa Maria de Trassierra",
       "species": "Pinus pinea",
       "lat": 37.929984,
@@ -53,22 +21,6 @@
       "why": "A naturalists' walk claims it is the oldest specimen of its species in the province. Not in the municipal catalogue and unverified. One follow-up search would settle it."
     },
     {
-      "name": "Casuarinas of the Plaza de Jeronimo Paez",
-      "species": "Casuarina equisetifolia",
-      "lat": 37.881735,
-      "lng": -4.778087,
-      "status": "lead",
-      "why": "Three trees, the tallest above 30m, five minutes from the Mezquita. Single-sourced to the municipal catalogue with no independent second source and no published age."
-    },
-    {
-      "name": "Himalayan Cedar of the Plaza del Cardenal Toledo",
-      "species": "Cedrus deodara",
-      "lat": 37.886662,
-      "lng": -4.777057,
-      "status": "lead",
-      "why": "22.5m and the near-sole occupant of its square, about 102 years old, and it predates the 1945 garden around it. Single-sourced, no photo."
-    },
-    {
       "name": "Siberian Elm of the Alcazar",
       "species": "Ulmus pumila",
       "lat": 37.875429,
@@ -82,15 +34,7 @@
       "lat": 37.883576,
       "lng": -4.781434,
       "status": "lead",
-      "why": "Around 112 years and among the oldest palms in the city. Single-sourced, and the catalogue names red palm weevil as the threat that has killed dozens of Cordoba's Canary palms, so survival needs checking before anything is published."
-    },
-    {
-      "name": "Ginkgo of the Agriculture Gardens",
-      "species": "Ginkgo biloba",
-      "lat": 37.888092,
-      "lng": -4.786331,
-      "status": "lead",
-      "why": "About 72 years, the oldest ginkgo in Cordoba's public gardens and a landmark for the city's botany students. Young, and no photo."
+      "why": "Around 112 years and among the oldest palms in the city. Single-sourced, and the catalogue names red palm weevil as the threat that has killed dozens of Cordoba's Canary palms, so survival needs checking before anything is published. UPDATED 2026-08-16 (verify pass): real search attempted (web search for palm losses/removals in Cordoba's centre, and for the plaza itself) found NO specific confirmation either way for this individual palm. One independent plaza description (cordobapedia) lists the square's palms generically as 'trachycarpus', which raises a possible species-mismatch risk against the catalogue's Phoenix canariensis, adding a second reason for caution. Per this pass's brief, a dead/declining palm must not ship and the vitality question could not be resolved, so this stays a lead rather than shipping. A future pass should try a dated photo (Street View history, Instagram geotag) of this specific specimen before attempting again."
     },
     {
       "name": "Olive of the Agriculture Gardens",

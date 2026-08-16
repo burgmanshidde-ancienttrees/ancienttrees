@@ -2,6 +2,12 @@
  "note": "Hosts that cost a run its window, with what they actually do. Written because this knowledge existed in data/research/ two days before a pass died on it twice: a research file nobody reads at the moment it matters is not a record, it is a souvenir. Every brief must carry this list, and scripts/passcheck.py prints it.",
  "rule": "Every fetch gets a hard timeout: curl -m 20, or timeout= on urllib. A host that hangs once goes on this list with the date. A hang is far worse than a refusal, because a refusal fails in a second and a hang burns the whole window.",
  "hosts": {
+  "ateneodecordoba.com": {
+   "behaviour": "hangs, no response at all (curl -m 20 exit 28, both http and https)",
+   "seen": "2026-08-16",
+   "cost": "burned two 20s timeouts during a Cordoba deepen verify pass",
+   "workaround": "unknown; used WebSearch snippet-level results instead of a direct fetch"
+  },
   "www.lapresse.ca": {
    "behaviour": "405 Method Not Allowed to plain curl (GET), fast fail, not a hang",
    "seen": "2026-08-15",
