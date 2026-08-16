@@ -1930,6 +1930,15 @@
         "note": "Cleared the floor on 4, and cheaper than briefed because an earlier scout had already left 25 Ontario Heritage Tree candidates in data/leads/toronto.json, which my hand-written brief did not know about. Caught a shared-coordinate trap: five Echo Valley register entries carry one identical lat/lng, a site pin dressed as five tree pins, so tro_004 ships approximate and the other clusters were not promoted.",
         "wasted": 0,
         "brief_wrong": true
+      },
+      {
+        "target": "montreal",
+        "kind": "verify",
+        "tokens": 174108,
+        "trees": 7,
+        "note": "The six ArcGIS points resolved into something better: montroyal.montreal.ca, the Ville de Montreal's own per-tree dendrological pages for Mont-Royal and both cemeteries, which is a city register in webpage form and is mostly unmined. Six of the seven are single-sourced from it and flagged accordingly. Caught one designated tree dead: a red ash felled in 2025 to the emerald ash borer, found because the source's own page redirects to frene-rouge-disparu.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }

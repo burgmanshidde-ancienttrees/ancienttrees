@@ -1,0 +1,34 @@
+{
+ "leads": [
+  {
+   "candidate": "Chene rouge d'Amerique (Northern Red Oak)",
+   "reason": "Second-largest oak in Summit Park (Bois Summit), Westmount, roughly 5 km from Mont-Royal cluster. Over 145 years old as of 2011, DBH 115 cm. Full page: https://montroyal.montreal.ca/arbre-remarquable/chene-rouge-damerique-0. Not verified this pass for time; a separate Westmount-area walk or a second Mont-Royal-region cluster could use it. Former McGill-owned land, sold to Westmount 1940."
+  },
+  {
+   "candidate": "Other Mont-Royal park red oaks (chene-rouge, chene-rouge-0, chene-rouge-2) and other silver/sugar maples (erable-sucre, erable-sucre-0 through -4)",
+   "reason": "Ville de Montreal's montroyal.montreal.ca 'arbre-remarquable' section carries many more individually documented specimens than this pass could verify one-by-one in the time box: Katsura tree, dawn redwood/metasequoia (x3), tulip tree (tulipier de virginie), purple-leaf European beech, black walnut (noyer noir), yellowwood (virgilier a bois jaune), late cherry (cerisier tardif x2), western hackberry (micocoulier occidental), bitternut hickory (caryer cordiforme x3), shagbark hickory (caryer lacinie), white ash (frene blanc), paper birch (bouleau papier), western catalpa, Kentucky coffeetree/chicot fevier at both Notre-Dame-des-Neiges (chicot-fevier-2, -3) and at College Notre-Dame (a different site entirely, ~75 years, DBH 90cm, crown over 28m), phellodendron de l'amour, deltoid poplar (peuplier-deltoide, multiple). Full search index: https://montroyal.montreal.ca/recherche?texte=Arbre+remarquable (at least 6 pages of results as of 2026-08-16). This is a cheap, high-yield source for a future pass: register-style individual pages with DBH and age already exist, so verification there is closer to 'confirm and pin' than 'research from zero'."
+  },
+  {
+   "candidate": "Notre-Dame-des-Neiges cemetery's own second Japanese yew (distinct from Mount Royal Cemetery's if-japonais-0, mtl_003)",
+   "reason": "The cemetery's landscape overview page lists a Japanese yew among its 7 remarkable trees, but no individual detail page was found for it this pass (only the general paragraph). Worth a targeted search next time; do not conflate with mtl_003, which is confirmed to be at the adjoining Mount Royal Cemetery on the Outremont side."
+  },
+  {
+   "candidate": "The two Eastern Cottonwoods (Populus deltoides) at Notre-Dame-des-Neiges, naturally grown, pre-1907",
+   "reason": "Named in the general cemetery landscape page (grew naturally before the 1907 incorporation) and matched by two ArcGIS points in data/research/montreal-register-candidates.json (45.49728,-73.60516 and 45.49716,-73.60487), but I found no individual montroyal.montreal.ca detail page for either this pass (peuplier-deltoide-0 and peuplier-deltoide-1 exist in the search index but were not fetched for time). Likely a quick add for a future pass; would need to check whether these two are a 'register twin' pair or genuinely two separable specimens before shipping as one or two entries."
+  },
+  {
+   "candidate": "Jardin botanique de Montreal specimen trees",
+   "reason": "Brief flagged this as a high-value source (one of the world's largest botanical gardens, paid entry, documented specimens) and it was not reached this pass at all due to time. A clean candidate for the next Montreal pass; likely has its own published tree/collection catalogue independent of the montroyal.montreal.ca site, which would also solve the second-independent-source problem that flagged most of this pass's entries."
+  },
+  {
+   "candidate": "Ile Sainte-Helene, Parc La Fontaine, other cemeteries named in the brief",
+   "reason": "Not reached this pass for time. Untouched leads per the brief's search order."
+  }
+ ],
+ "blocked": [
+  {
+   "candidate": "Frene rouge (Red Ash, Fraxinus pennsylvanica), Notre-Dame-des-Neiges Cemetery, in front of the Resurrection Chapel, lot B74-87",
+   "reason": "DEAD. Confirmed via the source's own page, which now redirects from /arbre-remarquable/frene-rouge to /arbre-remarquable/frene-rouge-disparu ('vanished'): 'cet arbre a du etre abattu en 2025 du aux dommages causes par l'agrile du frene' (had to be felled in 2025 due to emerald ash borer damage). This was the 7th of the cemetery's originally-designated 7 remarkable trees (the other 6 are the ArcGIS lead cluster's species: silver maple = mtl_006, honey locust = mtl_007, black pine = mtl_004, plus a Japanese yew and two eastern cottonwoods still on the leads list above); its removal is exactly why the unlicensed ArcGIS lead layer's 6 points match only 6 of the cemetery's originally 7 named species. Never ship. Matches the brief's specific warning about ash trees needing a post-2015 recency check."
+  }
+ ]
+}
