@@ -1,0 +1,163 @@
+[
+ {
+  "id": "vln_001",
+  "name": "The Oldest Oak of Vilnius",
+  "species": "Pedunculate Oak (Quercus robur)",
+  "age_estimate": "over 400 years",
+  "age_min": 400,
+  "age_max": 500,
+  "location": {
+   "address": "Bernardinai Garden (Sereikiškių Park), southern edge near the entrance from Šv. Brunono Bonifaco street, close to the pedestrian bridge over the Vilnia",
+   "latitude": 54.68232,
+   "longitude": 25.29589,
+   "neighbourhood": "Užupis / Old Town"
+  },
+  "verified_sources": [
+   "data/registers/lithuania-stvk-gpo.json register_id 0310505010160 (Seniausias ąžuolas)",
+   "https://lt.wikipedia.org/wiki/Bernardin%C5%B3_sodo_%C4%85%C5%BEuolas"
+  ],
+  "access": "Free, inside Bernardinai Garden (Sereikiškių Park), open daily",
+  "transport": "Short walk (10-15 min) from Cathedral Square / Vilnius Old Town centre",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Register entry 0310505010160 (Seniausias ąžuolas, protected as municipal nature heritage object since 1996-05-29) sits at 54.68234,25.29589, essentially matching the Lithuanian Wikipedia article coordinates 54.68232,25.295888 for Bernardinų sodo ąžuolas. Trunk circumference approx 5m. During 2012 restoration of the garden the tree had lost about 80 percent of its root system to earlier construction/transformer works nearby; arborists removed roughly 20 tons of crown weight and treated cavities to save it. That is old news (2012) but the tree remains a maintained, signposted heritage object in an actively managed public park, so alive-now confidence is reasonably good though not photo-dated to the last few years. Worth noting on the page: this tree survived a near-death root loss and major surgery, which is a strong anecdote."
+ },
+ {
+  "id": "vln_002",
+  "name": "The Daukantas Memorial Oak",
+  "species": "Pedunculate Oak (Quercus robur)",
+  "age_estimate": "roughly 45-50 years",
+  "age_min": 40,
+  "age_max": 55,
+  "location": {
+   "address": "S. Daukantas Courtyard, Vilnius University central buildings, Old Town",
+   "latitude": 54.68336,
+   "longitude": 25.28804,
+   "neighbourhood": "Old Town / Vilnius University"
+  },
+  "verified_sources": [
+   "data/registers/lithuania-stvk-gpo.json register_id 0310505010162 (S.Daukanto atminimo ąžuolas)",
+   "https://lt.wikipedia.org/wiki/S._Daukanto_atminimo_%C4%85%C5%BEuolas"
+  ],
+  "access": "Free, inside a Vilnius University courtyard open to the public during the day",
+  "transport": "Short walk (5-10 min) from Cathedral Square",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Protected municipal heritage object since 1996-05-29. Wikipedia says the oak was planted \"for the 400-year anniversary of the university\" (Vilnius University was founded 1579, so anniversary would fall circa 1979, giving an age around 45-50 years as of 2026; this is an inference from the anniversary date, not a directly stated age, so treat as approximate). The tree grew from an acorn/seedling brought from Žemaitija, the birthplace of the 19th-century historian Simonas Daukantas, commemorating his walk on foot to study at the university. Wikipedia also describes a confusing planting history (two earlier saplings failed and were replanted, with some surviving trees now said to stand in a neighbouring Sirvydo Courtyard) - worth a reader question rather than a confident claim about exactly which courtyard holds which tree; the register places this specific designated object at the coordinates given. Young for the site by Ancient Trees standards but historically significant."
+ },
+ {
+  "id": "vln_003",
+  "name": "The Linden of Daukša Courtyard",
+  "species": "Small-leaved Lime (Tilia cordata)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "M. Daukšos Courtyard, Universiteto g. 7, Vilnius University central buildings",
+   "latitude": 54.68333,
+   "longitude": 25.28696,
+   "neighbourhood": "Old Town / Vilnius University"
+  },
+  "verified_sources": [
+   "data/registers/lithuania-stvk-gpo.json register_id 0310505050031 (VU M.Dauksa courtyard linden)",
+   "https://lt.wikipedia.org/wiki/Liepa_M._Dauk%C5%A1os_kieme"
+  ],
+  "access": "Free, inside a Vilnius University courtyard open to the public during the day",
+  "transport": "Short walk (5-10 min) from Cathedral Square",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Protected municipal heritage object since 1996-05-29. Register coordinates (54.68333,25.28696) match the Wikipedia-stated coordinates (54°41'00\"N 25°17'13\"E = 54.68333,25.28694) almost exactly. No age or size recorded in either source; leave age empty and flag on the page. Good anecdote: an unknown carver has cut a tiny chapel into the trunk, sheltering a carved figure of an ancient warrior with a sword under a two-pitched roof. The student corporation Korp! Tilia is said to be named after this tree, and the courtyard is a traditional gathering spot for History Faculty students and alumni reunions."
+ },
+ {
+  "id": "vln_004",
+  "name": "The Ash of Mickiewicz's Courtyard",
+  "species": "European Ash (Fraxinus excelsior)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Adomas Mickevičius Courtyard, Vilnius University central buildings",
+   "latitude": 54.68343,
+   "longitude": 25.28872,
+   "neighbourhood": "Old Town / Vilnius University"
+  },
+  "verified_sources": [
+   "data/registers/lithuania-stvk-gpo.json register_id 0310505160012 (VU A.Mickevicius courtyard ash)",
+   "https://lt.wikipedia.org/wiki/Uosis_A._Mickevi%C4%8Diaus_kieme"
+  ],
+  "access": "Free, inside a Vilnius University courtyard open to the public during the day",
+  "transport": "Short walk (5-10 min) from Cathedral Square",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Protected municipal heritage object since 1996. Register coordinates (54.68343,25.28872) closely match the Wikipedia-stated coordinates (54°41'0.08\"N 25°17'19.29\"E = 54.68336,25.28869), within about 10m. No age, height or girth recorded in either source; leave age empty and flag. Named for the Romantic poet Adam Mickiewicz, who studied at Vilnius University; the courtyard bears his name, though neither source directly states he interacted with this specific tree, so do not invent that connection in the story."
+ },
+ {
+  "id": "vln_005",
+  "name": "The Nine-Trunked Willow of Sereikiškės",
+  "species": "Willow (Salix sp., species not established)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Bernardinai Garden (Sereikiškių Park), central path area",
+   "latitude": 54.68517,
+   "longitude": 25.29585,
+   "neighbourhood": "Užupis / Old Town"
+  },
+  "verified_sources": [
+   "data/registers/lithuania-stvk-gpo.json register_id 0310505210003 (Sereikiškių parko devynkamienis gluosnis)",
+   "https://lt.wikipedia.org/wiki/Bernardin%C5%B3_sodas (lists \"Sereikiškių parko devynkamienis gluosnis\" by the same exact name among the 1996 municipally-protected heritage trees of the garden)"
+  ],
+  "access": "Free, inside Bernardinai Garden (Sereikiškių Park), open daily",
+  "transport": "10-15 min walk from Cathedral Square, same park as the oldest oak (vln_001)",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Register name and the Bernardinų sodas Wikipedia article use the identical name \"Sereikiškių parko devynkamienis gluosnis\" (the nine-trunked willow of Sereikiškės Park), so existence and the multi-trunk description are corroborated by two independent sources, though neither gives age, height or exact willow species (could be white willow Salix alba or crack willow Salix fragilis, both common as park willows in Lithuania). Leave species as genus-level and invite readers to confirm. A nine-stemmed willow is visually unusual and worth the stop on its own; pair it on a walk with the oldest oak and the other Bernardinai Garden multi-trunk trees, all within a few hundred metres."
+ },
+ {
+  "id": "vln_006",
+  "name": "The Four-Trunked Linden of Bernardinai Garden",
+  "species": "Large-leaved Lime (Tilia platyphyllos)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Bernardinai Garden (Sereikiškių Park)",
+   "latitude": 54.68324,
+   "longitude": 25.298,
+   "neighbourhood": "Užupis / Old Town"
+  },
+  "verified_sources": [
+   "data/registers/lithuania-stvk-gpo.json register_id 0310505050032 (Keturkamienė didžialapė liepa)",
+   "https://lt.wikipedia.org/wiki/Bernardin%C5%B3_sodas (lists \"Keturliemenė didžialapė liepa\", the same four-trunked large-leaved linden, among the 1996-protected garden trees)"
+  ],
+  "access": "Free, inside Bernardinai Garden (Sereikiškių Park), open daily",
+  "transport": "10-15 min walk from Cathedral Square, same park as the oldest oak (vln_001)",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Register calls it \"keturkamienė\" and Wikipedia \"keturliemenė\", both meaning four-stemmed/four-trunked; \"didžialapė liepa\" is the Lithuanian name for large-leaved lime (Tilia platyphyllos), so the species reading is confident even without a dedicated source stating the Latin binomial. No age or size recorded anywhere found. Part of the same compact Bernardinai Garden cluster as vln_001 and vln_005, all within a few hundred metres of each other."
+ },
+ {
+  "id": "vln_007",
+  "name": "The Three-Trunked Ash of Bernardinai Garden",
+  "species": "European Ash (Fraxinus excelsior)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Bernardinai Garden (Sereikiškių Park)",
+   "latitude": 54.68306,
+   "longitude": 25.29804,
+   "neighbourhood": "Užupis / Old Town"
+  },
+  "verified_sources": [
+   "data/registers/lithuania-stvk-gpo.json register_id 0310505160013 (Trikamienis paprastasis uosis)",
+   "https://lt.wikipedia.org/wiki/Bernardin%C5%B3_sodas (lists a multi-trunked ash among the 1996-protected garden trees)"
+  ],
+  "access": "Free, inside Bernardinai Garden (Sereikiškių Park), open daily",
+  "transport": "10-15 min walk from Cathedral Square, same park as the oldest oak (vln_001)",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "SOURCES DISAGREE ON TRUNK COUNT, flag rather than pick a winner: the register (which supplies this tree's coordinates) names it \"Trikamienis paprastasis uosis\", three-trunked common ash; the general Bernardinų sodas Wikipedia article lists a \"Keturliemenis uosis\", four-trunked ash, among the same 1996-protected inventory, plus a second, separate generic \"Sereikiškių parko uosis\" entry. The register also separately lists a \"Bernardinų sodo uosis\" (Bernardinai garden ash) about 30m away at 54.68324,25.29825 with no trunk count given, which may be that second Wikipedia entry, or may be a near-duplicate/twin of this one - worth checking on the ground before publishing both as separate entries (register pitfall: twins metres apart should fold into one). Shipping this one on the register's own coordinate and trunk count, with the discrepancy stated plainly for the story to carry."
+ }
+]

@@ -1894,6 +1894,15 @@
         "note": "Set best_time on 64 already-published trees across 19 depth-allowed cities (DATA.md's demand roster) from data/phenology/ species files that already recorded a real striking/worth-the-trip seasonal moment. No new trees, no research, pure data-fill. Tokens not logged by the harness, recorded as 0 rather than leaving the pass silent.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "vilnius",
+        "kind": "verify",
+        "tokens": 133445,
+        "trees": 7,
+        "note": "Register-first pass on Lithuania's STVK gpo layer: 7 verified in one Old Town/Bernardinai Garden cluster of ~1km, register cross-checked against lt.wikipedia coordinates, 18 leads and 6 blocked recorded from the other 35 candidates. Tokens are the harness's measured figure, not the agent's own 55k self-estimate.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
