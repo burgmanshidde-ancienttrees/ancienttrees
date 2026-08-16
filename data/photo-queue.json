@@ -4528,58 +4528,39 @@
   "cdb_007": {
    "city": "Cordoba",
    "name": "The Judas Tree of the San Rafael Cemetery",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": []
   },
   "cor_003": {
    "city": "Cork",
    "name": "The Boole Library Redwoods",
-   "checked": "2026-08-13",
-   "sweep": 2,
-   "candidates": [
-    {
-     "title": "File:Parson Jones at Armstrong Redwoods State Nature Reserve - Stierch.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/6/69/Parson_Jones_at_Armstrong_Redwoods_State_Nature_Reserve_-_Stierch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:Parson_Jones_at_Armstrong_Redwoods_State_Nature_Reserve_-_Stierch.jpg",
-     "licence": "CC0",
-     "author": "Sarah Stierch"
-    },
-    {
-     "title": "File:Redwoods from below.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Redwoods_from_below.jpg/960px-Redwoods_from_below.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Redwoods_from_below.jpg",
-     "licence": "CC BY 4.0",
-     "author": "Kira Saks"
-    },
-    {
-     "title": "File:Stanford University redwoods.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Stanford_University_redwoods.jpg/960px-Stanford_University_redwoods.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Stanford_University_redwoods.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Ovinus"
-    }
-   ]
+   "checked": "2026-08-16",
+   "sweep": 4,
+   "candidates": []
   },
   "cor_004": {
    "city": "Cork",
    "name": "The Monterey Pine at the Gates",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": []
   },
   "cor_005": {
    "city": "Cork",
    "name": "The 1870 Magnolia of Fota",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": [
     {
      "title": "File:Bank of Trees on the Edge of Lough Mahon - geograph.org.uk - 5829381.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Bank_of_Trees_on_the_Edge_of_Lough_Mahon_-_geograph.org.uk_-_5829381.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
      "url": "https://commons.wikimedia.org/wiki/File:Bank_of_Trees_on_the_Edge_of_Lough_Mahon_-_geograph.org.uk_-_5829381.jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "David Dixon"
+     "author": "David Dixon",
+     "lat": 51.89758717,
+     "lng": -8.28051669,
+     "cats": "Category:CC-BY-SA-2.0 Category:Cork Harbour Category:Images from Geograph Britain and Ireland"
     }
    ]
   },
@@ -4650,116 +4631,72 @@
   "dbo_002": {
    "city": "Den Bosch",
    "name": "The Norway Maple of Bastion Oranje",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": [
     {
      "title": "File:'s-Hertogenbosch Rijksmonument 522427 entree gevangenis St. Jorisstraat 123, 125.JPG",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/%27s-Hertogenbosch_Rijksmonument_522427_entree_gevangenis_St._Jorisstraat_123%2C_125.JPG/960px-%27s-Hertogenbosch_Rijksmonument_522427_entree_gevangenis_St._Jorisstraat_123%2C_125.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:%27s-Hertogenbosch_Rijksmonument_522427_entree_gevangenis_St._Jorisstraat_123,_125.JPG",
      "licence": "CC0",
-     "author": "Havang(nl)"
+     "author": "Havang(nl)",
+     "lat": 51.68534139,
+     "lng": 5.30217306,
+     "cats": "Category:CC-Zero Category:Images from Wiki Loves Monuments 2010 Category:Netherlands photographs taken on 2010-09-16 Category:Photographs by Henk van Gaal Category:Rijksmonumenten with known IDs Category:Self-published work Category:Sint Jorisstraat 123 ('s-Hertogenbosch) Category:Taken with Sony DSC-HX5V"
     }
    ]
   },
   "dbo_003": {
    "city": "Den Bosch",
    "name": "The Plane, Lime and Silver Maple of Bastion Vught",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": [
     {
      "title": "File:2015.02.16.133256 Paleis van Justitie Dommel tree twigs Vughterweg 's-Hertogenbosch.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/2015.02.16.133256_Paleis_van_Justitie_Dommel_tree_twigs_Vughterweg_%27s-Hertogenbosch.jpg/960px-2015.02.16.133256_Paleis_van_Justitie_Dommel_tree_twigs_Vughterweg_%27s-Hertogenbosch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:2015.02.16.133256_Paleis_van_Justitie_Dommel_tree_twigs_Vughterweg_%27s-Hertogenbosch.jpg",
      "licence": "CC0",
-     "author": "Hermann Luyken"
+     "author": "Hermann Luyken",
+     "lat": 51.681749,
+     "lng": 5.294241,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Self-published work Category:Stadsgracht ('s-Hertogenbosch) Category:Taken with Panasonic Lumix DMC-FZ1000 Category:Voormalig Paleis van Justitie ('s-Hertogenbosch)"
     }
    ]
   },
   "dbo_004": {
    "city": "Den Bosch",
    "name": "The Poplar of Zuiderpark",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": []
   },
   "dub_002": {
    "city": "Dublin",
    "name": "Queen Victoria's Sequoia",
-   "checked": "2026-08-13",
-   "sweep": 2,
-   "candidates": [
-    {
-     "title": "File:Queen Victoria by JJE Mayall, 1860.png",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Queen_Victoria_by_JJE_Mayall%2C_1860.png/960px-Queen_Victoria_by_JJE_Mayall%2C_1860.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Queen_Victoria_by_JJE_Mayall,_1860.png",
-     "licence": "Public domain",
-     "author": "John Jabez Edwin Mayall"
-    },
-    {
-     "title": "File:Queen Victoria surrounded by her family - Coburg, 1894 (1 of 2).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Queen_Victoria_surrounded_by_her_family_-_Coburg%2C_1894_%281_of_2%29.jpg/960px-Queen_Victoria_surrounded_by_her_family_-_Coburg%2C_1894_%281_of_2%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Queen_Victoria_surrounded_by_her_family_-_Coburg,_1894_(1_of_2).jpg",
-     "licence": "Public domain",
-     "author": "Eduard Uhlenhuth"
-    },
-    {
-     "title": "File:The Salvation Army Victoria Citadel, Victoria, British Columbia, Canada 02.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/The_Salvation_Army_Victoria_Citadel%2C_Victoria%2C_British_Columbia%2C_Canada_02.jpg/960px-The_Salvation_Army_Victoria_Citadel%2C_Victoria%2C_British_Columbia%2C_Canada_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:The_Salvation_Army_Victoria_Citadel,_Victoria,_British_Columbia,_Canada_02.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Michal Klajban"
-    },
-    {
-     "title": "File:Victoria Crater, Cape Verde-Mars.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Victoria_Crater%2C_Cape_Verde-Mars.jpg/960px-Victoria_Crater%2C_Cape_Verde-Mars.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Victoria_Crater,_Cape_Verde-Mars.jpg",
-     "licence": "Public domain",
-     "author": "NASA/JPL-Caltech/Cornell"
-    },
-    {
-     "title": "File:Victoria Memorial Kolkata at night.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Victoria_Memorial_Kolkata_at_night.jpg/960px-Victoria_Memorial_Kolkata_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Victoria_Memorial_Kolkata_at_night.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "DeepanjanGhosh"
-    },
-    {
-     "title": "File:Victoria Montage 2020.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Victoria_Montage_2020.jpg/960px-Victoria_Montage_2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Victoria_Montage_2020.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Allice Hunter"
-    },
-    {
-     "title": "File:Victoria crater from HiRise.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Victoria_crater_from_HiRise.jpg/960px-Victoria_crater_from_HiRise.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Victoria_crater_from_HiRise.jpg",
-     "licence": "Public domain",
-     "author": "NASA/JPL/University of Arizona"
-    }
-   ]
+   "checked": "2026-08-16",
+   "sweep": 4,
+   "candidates": []
   },
   "dub_003": {
    "city": "Dublin",
    "name": "Dean's Tree",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": []
   },
   "dub_004": {
    "city": "Dublin",
    "name": "Addison's Walk",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": []
   },
   "dub_005": {
    "city": "Dublin",
    "name": "The Provost's Plane",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": [
     {
      "title": "File:LUAS tram on Grafton Street - geograph.org.uk - 5958736.jpg",
@@ -4857,44 +4794,42 @@
   "dub_007": {
    "city": "Dublin",
    "name": "The Many-Trunked Holm Oak of St Anne's Park",
-   "checked": "2026-08-13",
-   "sweep": 2,
-   "candidates": [
-    {
-     "title": "File:(Unidentified many-trunked plant in Espiritu Santo, Vanuatu) - DPLA - 4254041800faa8445073834d563f118a.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/%28Unidentified_many-trunked_plant_in_Espiritu_Santo%2C_Vanuatu%29_-_DPLA_-_4254041800faa8445073834d563f118a.jpg/960px-%28Unidentified_many-trunked_plant_in_Espiritu_Santo%2C_Vanuatu%29_-_DPLA_-_4254041800faa8445073834d563f118a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:(Unidentified_many-trunked_plant_in_Espiritu_Santo,_Vanuatu)_-_DPLA_-_4254041800faa8445073834d563f118a.jpg",
-     "licence": "CC BY 4.0",
-     "author": "Carlquist, Sherwin John, 1930-2021"
-    }
-   ]
+   "checked": "2026-08-16",
+   "sweep": 4,
+   "candidates": []
   },
   "dub_010": {
    "city": "Dublin",
    "name": "The Oak Avenue of Corkagh",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": []
   },
   "drv_002": {
    "city": "Dubrovnik",
    "name": "Trsteno's Ginkgo",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": [
     {
      "title": "File:2018 The massive plane tree Trsteno HR.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/2018_The_massive_plane_tree_Trsteno_HR.jpg/960px-2018_The_massive_plane_tree_Trsteno_HR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:2018_The_massive_plane_tree_Trsteno_HR.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Marijana Miljas Đuračić"
+     "author": "Marijana Miljas Đuračić",
+     "lat": 42.71409,
+     "lng": 17.97867,
+     "cats": "Category:Arboretum Trsteno Category:CC-BY-SA-4.0 Category:Files from treeoftheyear.org Category:Files uploaded by Cookroach Category:Files with coordinates missing SDC location of creation Category:Items with VRTS permission confirmed Category:Plane tree of Trsteno"
     },
     {
      "title": "File:Tristeno , Wies en de reuzenboom - panoramio.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Tristeno_%2C_Wies_en_de_reuzenboom_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
      "url": "https://commons.wikimedia.org/wiki/File:Tristeno_,_Wies_en_de_reuzenboom_-_panoramio.jpg",
      "licence": "CC BY 3.0",
-     "author": "Eddy Genne"
+     "author": "Eddy Genne",
+     "lat": 42.71202,
+     "lng": 17.977345,
+     "cats": "Category:Arboretum Trsteno Category:CC-BY-3.0 Category:Croatia photographs taken on 2010-10-17 Category:Files with coordinates missing SDC location of creation Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 877544"
     }
    ]
   },
@@ -5048,44 +4983,56 @@
   "drv_003": {
    "city": "Dubrovnik",
    "name": "Trsteno's Cedar of Lebanon",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": [
     {
      "title": "File:2018 The massive plane tree Trsteno HR.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/2018_The_massive_plane_tree_Trsteno_HR.jpg/960px-2018_The_massive_plane_tree_Trsteno_HR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:2018_The_massive_plane_tree_Trsteno_HR.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Marijana Miljas Đuračić"
+     "author": "Marijana Miljas Đuračić",
+     "lat": 42.71409,
+     "lng": 17.97867,
+     "cats": "Category:Arboretum Trsteno Category:CC-BY-SA-4.0 Category:Files from treeoftheyear.org Category:Files uploaded by Cookroach Category:Files with coordinates missing SDC location of creation Category:Items with VRTS permission confirmed Category:Plane tree of Trsteno"
     },
     {
      "title": "File:Tristeno , Wies en de reuzenboom - panoramio.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Tristeno_%2C_Wies_en_de_reuzenboom_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
      "url": "https://commons.wikimedia.org/wiki/File:Tristeno_,_Wies_en_de_reuzenboom_-_panoramio.jpg",
      "licence": "CC BY 3.0",
-     "author": "Eddy Genne"
+     "author": "Eddy Genne",
+     "lat": 42.71202,
+     "lng": 17.977345,
+     "cats": "Category:Arboretum Trsteno Category:CC-BY-3.0 Category:Croatia photographs taken on 2010-10-17 Category:Files with coordinates missing SDC location of creation Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 877544"
     }
    ]
   },
   "drv_004": {
    "city": "Dubrovnik",
    "name": "Trsteno's Yew",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": [
     {
      "title": "File:2018 The massive plane tree Trsteno HR.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/2018_The_massive_plane_tree_Trsteno_HR.jpg/960px-2018_The_massive_plane_tree_Trsteno_HR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:2018_The_massive_plane_tree_Trsteno_HR.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Marijana Miljas Đuračić"
+     "author": "Marijana Miljas Đuračić",
+     "lat": 42.71409,
+     "lng": 17.97867,
+     "cats": "Category:Arboretum Trsteno Category:CC-BY-SA-4.0 Category:Files from treeoftheyear.org Category:Files uploaded by Cookroach Category:Files with coordinates missing SDC location of creation Category:Items with VRTS permission confirmed Category:Plane tree of Trsteno"
     },
     {
      "title": "File:Tristeno , Wies en de reuzenboom - panoramio.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Tristeno_%2C_Wies_en_de_reuzenboom_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
      "url": "https://commons.wikimedia.org/wiki/File:Tristeno_,_Wies_en_de_reuzenboom_-_panoramio.jpg",
      "licence": "CC BY 3.0",
-     "author": "Eddy Genne"
+     "author": "Eddy Genne",
+     "lat": 42.71202,
+     "lng": 17.977345,
+     "cats": "Category:Arboretum Trsteno Category:CC-BY-3.0 Category:Croatia photographs taken on 2010-10-17 Category:Files with coordinates missing SDC location of creation Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 877544"
     }
    ]
   },
@@ -10435,8 +10382,8 @@
   "dub_011": {
    "city": "Dublin",
    "name": "The Last Elm of College Park",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": []
   },
   "rom_021": {
@@ -13864,152 +13811,197 @@
   "dub_012": {
    "city": "Dublin",
    "name": "The Glasnevin Atlas Cedar",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": [
     {
      "title": "File:Church, Glasnevin, Dublin (geograph 1890442).jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Church%2C_Glasnevin%2C_Dublin_%28geograph_1890442%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
      "url": "https://commons.wikimedia.org/wiki/File:Church,_Glasnevin,_Dublin_(geograph_1890442).jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "C O'Flanagan"
+     "author": "C O'Flanagan",
+     "lat": 53.373267,
+     "lng": -6.268217,
+     "cats": "Category:CC-BY-SA-2.0 Category:Cedrus libani in Ireland Category:Glasnevin Church Category:Images by C O'Flanagan Category:Images from Geograph Britain and Ireland Category:Information field template with formatting Category:Republic of Ireland photographs taken on 2010-06-01"
     },
     {
      "title": "File:River Tolka, Glasnevin, Dublin - geograph.org.uk - 1890431.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/3b/River_Tolka%2C_Glasnevin%2C_Dublin_-_geograph.org.uk_-_1890431.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
      "url": "https://commons.wikimedia.org/wiki/File:River_Tolka,_Glasnevin,_Dublin_-_geograph.org.uk_-_1890431.jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "C O'Flanagan"
+     "author": "C O'Flanagan",
+     "lat": 53.3732669,
+     "lng": -6.26821672,
+     "cats": "Category:CC-BY-SA-2.0 Category:Glasnevin Category:Images from Geograph Britain and Ireland"
     },
     {
      "title": "File:Wendon Bealnagown House, Glasnevin, Dublin.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Wendon_Bealnagown_House%2C_Glasnevin%2C_Dublin.jpg/960px-Wendon_Bealnagown_House%2C_Glasnevin%2C_Dublin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Wendon_Bealnagown_House,_Glasnevin,_Dublin.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Smirkybec"
+     "author": "Smirkybec",
+     "lat": 53.376941,
+     "lng": -6.265251,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Glasnevin Category:Government buildings in Dublin Category:Houses in Dublin Category:Self-published work"
     }
    ]
   },
   "dub_013": {
    "city": "Dublin",
    "name": "The Glasnevin Dawn Redwood",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": [
     {
      "title": "File:Church, Glasnevin, Dublin (geograph 1890442).jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Church%2C_Glasnevin%2C_Dublin_%28geograph_1890442%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
      "url": "https://commons.wikimedia.org/wiki/File:Church,_Glasnevin,_Dublin_(geograph_1890442).jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "C O'Flanagan"
+     "author": "C O'Flanagan",
+     "lat": 53.373267,
+     "lng": -6.268217,
+     "cats": "Category:CC-BY-SA-2.0 Category:Cedrus libani in Ireland Category:Glasnevin Church Category:Images by C O'Flanagan Category:Images from Geograph Britain and Ireland Category:Information field template with formatting Category:Republic of Ireland photographs taken on 2010-06-01"
     },
     {
      "title": "File:River Tolka, Glasnevin, Dublin - geograph.org.uk - 1890431.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/3b/River_Tolka%2C_Glasnevin%2C_Dublin_-_geograph.org.uk_-_1890431.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
      "url": "https://commons.wikimedia.org/wiki/File:River_Tolka,_Glasnevin,_Dublin_-_geograph.org.uk_-_1890431.jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "C O'Flanagan"
+     "author": "C O'Flanagan",
+     "lat": 53.3732669,
+     "lng": -6.26821672,
+     "cats": "Category:CC-BY-SA-2.0 Category:Glasnevin Category:Images from Geograph Britain and Ireland"
     },
     {
      "title": "File:Wendon Bealnagown House, Glasnevin, Dublin.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Wendon_Bealnagown_House%2C_Glasnevin%2C_Dublin.jpg/960px-Wendon_Bealnagown_House%2C_Glasnevin%2C_Dublin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Wendon_Bealnagown_House,_Glasnevin,_Dublin.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Smirkybec"
+     "author": "Smirkybec",
+     "lat": 53.376941,
+     "lng": -6.265251,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Glasnevin Category:Government buildings in Dublin Category:Houses in Dublin Category:Self-published work"
     }
    ]
   },
   "dub_014": {
    "city": "Dublin",
    "name": "The Glasnevin Caucasian Elm",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": [
     {
      "title": "File:Church, Glasnevin, Dublin (geograph 1890442).jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Church%2C_Glasnevin%2C_Dublin_%28geograph_1890442%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
      "url": "https://commons.wikimedia.org/wiki/File:Church,_Glasnevin,_Dublin_(geograph_1890442).jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "C O'Flanagan"
+     "author": "C O'Flanagan",
+     "lat": 53.373267,
+     "lng": -6.268217,
+     "cats": "Category:CC-BY-SA-2.0 Category:Cedrus libani in Ireland Category:Glasnevin Church Category:Images by C O'Flanagan Category:Images from Geograph Britain and Ireland Category:Information field template with formatting Category:Republic of Ireland photographs taken on 2010-06-01"
     },
     {
      "title": "File:River Tolka, Glasnevin, Dublin - geograph.org.uk - 1890431.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/3b/River_Tolka%2C_Glasnevin%2C_Dublin_-_geograph.org.uk_-_1890431.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
      "url": "https://commons.wikimedia.org/wiki/File:River_Tolka,_Glasnevin,_Dublin_-_geograph.org.uk_-_1890431.jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "C O'Flanagan"
+     "author": "C O'Flanagan",
+     "lat": 53.3732669,
+     "lng": -6.26821672,
+     "cats": "Category:CC-BY-SA-2.0 Category:Glasnevin Category:Images from Geograph Britain and Ireland"
     },
     {
      "title": "File:Wendon Bealnagown House, Glasnevin, Dublin.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Wendon_Bealnagown_House%2C_Glasnevin%2C_Dublin.jpg/960px-Wendon_Bealnagown_House%2C_Glasnevin%2C_Dublin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Wendon_Bealnagown_House,_Glasnevin,_Dublin.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Smirkybec"
+     "author": "Smirkybec",
+     "lat": 53.376941,
+     "lng": -6.265251,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Glasnevin Category:Government buildings in Dublin Category:Houses in Dublin Category:Self-published work"
     }
    ]
   },
   "dub_015": {
    "city": "Dublin",
    "name": "The Glasnevin Swamp Cypress",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": [
     {
      "title": "File:Church, Glasnevin, Dublin (geograph 1890442).jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Church%2C_Glasnevin%2C_Dublin_%28geograph_1890442%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
      "url": "https://commons.wikimedia.org/wiki/File:Church,_Glasnevin,_Dublin_(geograph_1890442).jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "C O'Flanagan"
+     "author": "C O'Flanagan",
+     "lat": 53.373267,
+     "lng": -6.268217,
+     "cats": "Category:CC-BY-SA-2.0 Category:Cedrus libani in Ireland Category:Glasnevin Church Category:Images by C O'Flanagan Category:Images from Geograph Britain and Ireland Category:Information field template with formatting Category:Republic of Ireland photographs taken on 2010-06-01"
     },
     {
      "title": "File:River Tolka, Glasnevin, Dublin - geograph.org.uk - 1890431.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/3b/River_Tolka%2C_Glasnevin%2C_Dublin_-_geograph.org.uk_-_1890431.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
      "url": "https://commons.wikimedia.org/wiki/File:River_Tolka,_Glasnevin,_Dublin_-_geograph.org.uk_-_1890431.jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "C O'Flanagan"
+     "author": "C O'Flanagan",
+     "lat": 53.3732669,
+     "lng": -6.26821672,
+     "cats": "Category:CC-BY-SA-2.0 Category:Glasnevin Category:Images from Geograph Britain and Ireland"
     },
     {
      "title": "File:Wendon Bealnagown House, Glasnevin, Dublin.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Wendon_Bealnagown_House%2C_Glasnevin%2C_Dublin.jpg/960px-Wendon_Bealnagown_House%2C_Glasnevin%2C_Dublin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Wendon_Bealnagown_House,_Glasnevin,_Dublin.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Smirkybec"
+     "author": "Smirkybec",
+     "lat": 53.376941,
+     "lng": -6.265251,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Glasnevin Category:Government buildings in Dublin Category:Houses in Dublin Category:Self-published work"
     }
    ]
   },
   "dub_016": {
    "city": "Dublin",
    "name": "Ireland's Largest Tree of Heaven",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": []
   },
   "dub_017": {
    "city": "Dublin",
    "name": "The Glasnevin Hybrid Strawberry Tree",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": [
     {
      "title": "File:Church, Glasnevin, Dublin (geograph 1890442).jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Church%2C_Glasnevin%2C_Dublin_%28geograph_1890442%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
      "url": "https://commons.wikimedia.org/wiki/File:Church,_Glasnevin,_Dublin_(geograph_1890442).jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "C O'Flanagan"
+     "author": "C O'Flanagan",
+     "lat": 53.373267,
+     "lng": -6.268217,
+     "cats": "Category:CC-BY-SA-2.0 Category:Cedrus libani in Ireland Category:Glasnevin Church Category:Images by C O'Flanagan Category:Images from Geograph Britain and Ireland Category:Information field template with formatting Category:Republic of Ireland photographs taken on 2010-06-01"
     },
     {
      "title": "File:River Tolka, Glasnevin, Dublin - geograph.org.uk - 1890431.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/3b/River_Tolka%2C_Glasnevin%2C_Dublin_-_geograph.org.uk_-_1890431.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
      "url": "https://commons.wikimedia.org/wiki/File:River_Tolka,_Glasnevin,_Dublin_-_geograph.org.uk_-_1890431.jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "C O'Flanagan"
+     "author": "C O'Flanagan",
+     "lat": 53.3732669,
+     "lng": -6.26821672,
+     "cats": "Category:CC-BY-SA-2.0 Category:Glasnevin Category:Images from Geograph Britain and Ireland"
     },
     {
      "title": "File:Wendon Bealnagown House, Glasnevin, Dublin.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Wendon_Bealnagown_House%2C_Glasnevin%2C_Dublin.jpg/960px-Wendon_Bealnagown_House%2C_Glasnevin%2C_Dublin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Wendon_Bealnagown_House,_Glasnevin,_Dublin.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Smirkybec"
+     "author": "Smirkybec",
+     "lat": 53.376941,
+     "lng": -6.265251,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Glasnevin Category:Government buildings in Dublin Category:Houses in Dublin Category:Self-published work"
     }
    ]
   },
@@ -17003,116 +16995,143 @@
   "dbo_005": {
    "city": "Den Bosch",
    "name": "The Plane of Sint Janskerkhof",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": []
   },
   "dbo_006": {
    "city": "Den Bosch",
    "name": "The Copper Beech of Casinotuin",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": [
     {
      "title": "File:Casinotuin 's-Hertogenbosch.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Casinotuin_%27s-Hertogenbosch.jpg/960px-Casinotuin_%27s-Hertogenbosch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Casinotuin_%27s-Hertogenbosch.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Klankbeeld"
+     "author": "Klankbeeld",
+     "lat": 51.68605,
+     "lng": 5.31007,
+     "cats": "Category:CC-BY-SA-4.0 Category:Casinotuin Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Self-published work"
     },
     {
      "title": "File:De wachters casinotuin den Bosch.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/De_wachters_casinotuin_den_Bosch.jpg/960px-De_wachters_casinotuin_den_Bosch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:De_wachters_casinotuin_den_Bosch.jpg",
      "licence": "CC BY-SA 3.0",
-     "author": "Polleket"
+     "author": "Polleket",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:De Wachters Category:Eugène Dodeigne Category:Self-published work Category:Taken with Canon PowerShot A560"
     }
    ]
   },
   "dbo_007": {
    "city": "Den Bosch",
    "name": "The Horse Chestnut of Casinotuin",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": [
     {
      "title": "File:Casinotuin 's-Hertogenbosch.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Casinotuin_%27s-Hertogenbosch.jpg/960px-Casinotuin_%27s-Hertogenbosch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Casinotuin_%27s-Hertogenbosch.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Klankbeeld"
+     "author": "Klankbeeld",
+     "lat": 51.68605,
+     "lng": 5.31007,
+     "cats": "Category:CC-BY-SA-4.0 Category:Casinotuin Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Self-published work"
     },
     {
      "title": "File:De wachters casinotuin den Bosch.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/De_wachters_casinotuin_den_Bosch.jpg/960px-De_wachters_casinotuin_den_Bosch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:De_wachters_casinotuin_den_Bosch.jpg",
      "licence": "CC BY-SA 3.0",
-     "author": "Polleket"
+     "author": "Polleket",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:De Wachters Category:Eugène Dodeigne Category:Self-published work Category:Taken with Canon PowerShot A560"
     }
    ]
   },
   "dbo_008": {
    "city": "Den Bosch",
    "name": "The Plane of Hekellaan",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": [
     {
      "title": "File:T.T Militaire Manege Hekellaan 2 Den Bosch 522461 (1).JPG",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/T.T_Militaire_Manege_Hekellaan_2_Den_Bosch_522461_%281%29.JPG/960px-T.T_Militaire_Manege_Hekellaan_2_Den_Bosch_522461_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:T.T_Militaire_Manege_Hekellaan_2_Den_Bosch_522461_(1).JPG",
      "licence": "CC BY-SA 3.0 nl",
-     "author": "MHB Verkuijlen"
+     "author": "MHB Verkuijlen",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0-NL Category:Images from Wiki Loves Monuments 2013 Category:Images from Wiki Loves Monuments 2013 in the Netherlands Category:Manege Hekellaan, 's-Hertogenbosch Category:Netherlands photographs taken on 2012-10-29 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Olympus SP-550UZ Category:Uploaded via Campaign:wlm-nl"
     },
     {
      "title": "File:T.T Militaire Manege Hekellaan 2 Den Bosch 522461 (2).JPG",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/T.T_Militaire_Manege_Hekellaan_2_Den_Bosch_522461_%282%29.JPG/960px-T.T_Militaire_Manege_Hekellaan_2_Den_Bosch_522461_%282%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:T.T_Militaire_Manege_Hekellaan_2_Den_Bosch_522461_(2).JPG",
      "licence": "CC BY-SA 3.0 nl",
-     "author": "MHB Verkuijlen"
+     "author": "MHB Verkuijlen",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0-NL Category:Images from Wiki Loves Monuments 2013 Category:Images from Wiki Loves Monuments 2013 in the Netherlands Category:Manege Hekellaan, 's-Hertogenbosch Category:Netherlands photographs taken on 2012-10-29 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Olympus SP-550UZ Category:Uploaded via Campaign:wlm-nl"
     },
     {
      "title": "File:T.T Rijkshoogereburgerschool Hekellaan 4 Den Bosch 522401 (1).jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/T.T_Rijkshoogereburgerschool_Hekellaan_4_Den_Bosch_522401_%281%29.jpg/960px-T.T_Rijkshoogereburgerschool_Hekellaan_4_Den_Bosch_522401_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:T.T_Rijkshoogereburgerschool_Hekellaan_4_Den_Bosch_522401_(1).jpg",
      "licence": "CC BY-SA 3.0 nl",
-     "author": "MHB Verkuijlen"
+     "author": "MHB Verkuijlen",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0-NL Category:Images from Wiki Loves Monuments 2013 Category:Images from Wiki Loves Monuments 2013 in the Netherlands Category:Netherlands photographs taken on 2012-10-29 Category:Rijkshoogereburgerschool ('s-Hertogenbosch) Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Olympus SP-550UZ Category:Uploaded via Campaign:wlm-nl"
     },
     {
      "title": "File:T.T Rijkshoogereburgerschool Hekellaan 4 Den Bosch 522401 (2).jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/T.T_Rijkshoogereburgerschool_Hekellaan_4_Den_Bosch_522401_%282%29.jpg/960px-T.T_Rijkshoogereburgerschool_Hekellaan_4_Den_Bosch_522401_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:T.T_Rijkshoogereburgerschool_Hekellaan_4_Den_Bosch_522401_(2).jpg",
      "licence": "CC BY-SA 3.0 nl",
-     "author": "MHB Verkuijlen"
+     "author": "MHB Verkuijlen",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0-NL Category:Images from Wiki Loves Monuments 2013 Category:Images from Wiki Loves Monuments 2013 in the Netherlands Category:Netherlands photographs taken on 2012-10-29 Category:Rijkshoogereburgerschool ('s-Hertogenbosch) Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Olympus SP-550UZ Category:Uploaded via Campaign:wlm-nl"
     },
     {
      "title": "File:T.T Rijkshoogereburgerschool Hekellaan 4 Den Bosch 522401 (3).jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/T.T_Rijkshoogereburgerschool_Hekellaan_4_Den_Bosch_522401_%283%29.jpg/960px-T.T_Rijkshoogereburgerschool_Hekellaan_4_Den_Bosch_522401_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:T.T_Rijkshoogereburgerschool_Hekellaan_4_Den_Bosch_522401_(3).jpg",
      "licence": "CC BY-SA 3.0 nl",
-     "author": "MHB Verkuijlen"
+     "author": "MHB Verkuijlen",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0-NL Category:Images from Wiki Loves Monuments 2013 Category:Images from Wiki Loves Monuments 2013 in the Netherlands Category:Netherlands photographs taken on 2012-10-29 Category:Rijkshoogereburgerschool ('s-Hertogenbosch) Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Olympus SP-550UZ Category:Uploaded via Campaign:wlm-nl"
     }
    ]
   },
   "dbo_009": {
    "city": "Den Bosch",
    "name": "The Silver Maple by the Oude Dieze",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": []
   },
   "dbo_010": {
    "city": "Den Bosch",
    "name": "The Oak of Pettelaarse Schans",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": []
   },
   "dbo_011": {
    "city": "Den Bosch",
    "name": "The Poplar of Pettelaarse Schans",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": []
   },
   "kyo_011": {
@@ -18708,51 +18727,63 @@
   "cdb_008": {
    "city": "Cordoba",
    "name": "The Cypress of the Alcazar Entrance",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": []
   },
   "cdb_009": {
    "city": "Cordoba",
    "name": "The Siberian Elm of the Alcazar",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": [
     {
      "title": "File:Gardens and Cypresses trees, Avenue of Kings, Alcázar, Cordoba, 21 July 2016 (1).JPG",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Gardens_and_Cypresses_trees%2C_Avenue_of_Kings%2C_Alc%C3%A1zar%2C_Cordoba%2C_21_July_2016_%281%29.JPG/960px-Gardens_and_Cypresses_trees%2C_Avenue_of_Kings%2C_Alc%C3%A1zar%2C_Cordoba%2C_21_July_2016_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Gardens_and_Cypresses_trees,_Avenue_of_Kings,_Alc%C3%A1zar,_Cordoba,_21_July_2016_(1).JPG",
      "licence": "CC BY 3.0",
-     "author": "Kolforn"
+     "author": "Kolforn",
+     "lat": 37.87558333,
+     "lng": -4.78236111,
+     "cats": "Category:Attribution only license Category:Avenue of the Kings, Alcázar de los Reyes Cristianos Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Images by Kolforn Category:July 2016 in Córdoba, Spain Category:Self-published work Category:Spain photographs taken on 2016-07-21 Category:Taken with Canon PowerShot SX400 IS"
     },
     {
      "title": "File:Gardens and Cypresses trees, Avenue of Kings, Alcázar, Cordoba, 21 July 2016 (2).JPG",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Gardens_and_Cypresses_trees%2C_Avenue_of_Kings%2C_Alc%C3%A1zar%2C_Cordoba%2C_21_July_2016_%282%29.JPG/960px-Gardens_and_Cypresses_trees%2C_Avenue_of_Kings%2C_Alc%C3%A1zar%2C_Cordoba%2C_21_July_2016_%282%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Gardens_and_Cypresses_trees,_Avenue_of_Kings,_Alc%C3%A1zar,_Cordoba,_21_July_2016_(2).JPG",
      "licence": "CC BY 3.0",
-     "author": "Kolforn"
+     "author": "Kolforn",
+     "lat": 37.8755,
+     "lng": -4.78255556,
+     "cats": "Category:Attribution only license Category:Avenue of the Kings, Alcázar de los Reyes Cristianos Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Fountains in the Alcázar de los Reyes Cristianos Category:Images by Kolforn Category:July 2016 in Córdoba, Spain Category:Self-published work Category:Spain photographs taken on 2016-07-21 Category:Taken with Canon PowerShot SX400 IS"
     },
     {
      "title": "File:Gardens and Cypresses trees, Avenue of Kings, Alcázar, Cordoba, 21 July 2016 (3).JPG",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Gardens_and_Cypresses_trees%2C_Avenue_of_Kings%2C_Alc%C3%A1zar%2C_Cordoba%2C_21_July_2016_%283%29.JPG/960px-Gardens_and_Cypresses_trees%2C_Avenue_of_Kings%2C_Alc%C3%A1zar%2C_Cordoba%2C_21_July_2016_%283%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Gardens_and_Cypresses_trees,_Avenue_of_Kings,_Alc%C3%A1zar,_Cordoba,_21_July_2016_(3).JPG",
      "licence": "CC BY 3.0",
-     "author": "Kolforn"
+     "author": "Kolforn",
+     "lat": 37.87544444,
+     "lng": -4.78255556,
+     "cats": "Category:Attribution only license Category:Avenue of the Kings, Alcázar de los Reyes Cristianos Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Images by Kolforn Category:July 2016 in Córdoba, Spain Category:Self-published work Category:Spain photographs taken on 2016-07-21 Category:Taken with Canon PowerShot SX400 IS"
     },
     {
      "title": "File:Statue and Cypresses trees, Avenue of Kings, Alcázar, Cordoba, 21 July 2016.JPG",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Statue_and_Cypresses_trees%2C_Avenue_of_Kings%2C_Alc%C3%A1zar%2C_Cordoba%2C_21_July_2016.JPG/960px-Statue_and_Cypresses_trees%2C_Avenue_of_Kings%2C_Alc%C3%A1zar%2C_Cordoba%2C_21_July_2016.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Statue_and_Cypresses_trees,_Avenue_of_Kings,_Alc%C3%A1zar,_Cordoba,_21_July_2016.JPG",
      "licence": "CC BY 3.0",
-     "author": "Kolforn"
+     "author": "Kolforn",
+     "lat": 37.87538889,
+     "lng": -4.78269444,
+     "cats": "Category:Attribution only license Category:Avenue of the Kings, Alcázar de los Reyes Cristianos Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Fountains in the Alcázar de los Reyes Cristianos Category:Images by Kolforn Category:July 2016 in Córdoba, Spain Category:Self-published work Category:Spain photographs taken on 2016-07-21 Category:Taken with Canon PowerShot SX400 IS"
     }
    ]
   },
   "cdb_010": {
    "city": "Cordoba",
    "name": "The Himalayan Cedar of Plaza del Cardenal Toledo",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-16",
+   "sweep": 4,
    "candidates": []
   },
   "hob_001": {
@@ -22408,6 +22439,141 @@
      "cats": "Category:CC-BY-SA-4.0 Category:Church towers in Como Category:Churches in Italy in snow Category:Churches in Italy photographed in 2012 Category:Cultural heritage monuments in Italy with known IDs Category:December 2012 in Como Category:Images from Wiki Loves Monuments 2019 Category:Images from Wiki Loves Monuments 2019 in Italy Category:Images from Wiki Loves Monuments 2019 in Italy - Lake Como Category:Images from Wiki Loves Monuments 2019 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2019 in Italy - veteran trees Category:Italy photographs taken on 2012-12-14 Category:Santi Filippo e Giacomo in Quarcino Category:Self-published work Category:Snow in Como Category:Taken with Samsung HMX-U10 Category:Uploaded via Campaign:wlm-it"
     }
    ]
+  },
+  "bne_010": {
+   "city": "Brisbane",
+   "name": "The Mahogany of Commerce",
+   "checked": "2026-08-16",
+   "sweep": 4,
+   "candidates": [
+    {
+     "title": "File:Litoria fallax, Eastern Dwarf Tree Frog, Brisbane.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Litoria_fallax%2C_Eastern_Dwarf_Tree_Frog%2C_Brisbane.jpg/960px-Litoria_fallax%2C_Eastern_Dwarf_Tree_Frog%2C_Brisbane.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Litoria_fallax,_Eastern_Dwarf_Tree_Frog,_Brisbane.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Stu's Images",
+     "lat": -27.478455,
+     "lng": 153.030989,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Litoria fallax Category:Self-published work"
+    },
+    {
+     "title": "iNat obs 263647476 (Swietenia mahagoni)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/473674258/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/263647476",
+     "licence": "CC BY",
+     "author": "(c) Andrew Sebastian, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-27.47767,153.0311888333"
+    },
+    {
+     "title": "iNat obs 263647476 (Swietenia mahagoni)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/473674291/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/263647476",
+     "licence": "CC BY",
+     "author": "(c) Andrew Sebastian, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-27.47767,153.0311888333"
+    },
+    {
+     "title": "iNat obs 263552267 (Swietenia mahagoni)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/473485868/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/263552267",
+     "licence": "CC BY",
+     "author": "(c) Andrew Sebastian, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-27.477775,153.0309916667"
+    },
+    {
+     "title": "iNat obs 263552267 (Swietenia mahagoni)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/473485886/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/263552267",
+     "licence": "CC BY",
+     "author": "(c) Andrew Sebastian, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-27.477775,153.0309916667"
+    },
+    {
+     "title": "iNat obs 249077995 (Swietenia mahagoni)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/445179821/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/249077995",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "-27.47768767,153.03125174"
+    },
+    {
+     "title": "iNat obs 249077995 (Swietenia mahagoni)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/445179836/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/249077995",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "-27.47768767,153.03125174"
+    }
+   ]
+  },
+  "bne_011": {
+   "city": "Brisbane",
+   "name": "The Tamarind Tree",
+   "checked": "2026-08-16",
+   "sweep": 4,
+   "candidates": [
+    {
+     "title": "File:Memorial Bamboo Tree (15873581480).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Memorial_Bamboo_Tree_%2815873581480%29.jpg/960px-Memorial_Bamboo_Tree_%2815873581480%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Memorial_Bamboo_Tree_(15873581480).jpg",
+     "licence": "CC BY 2.0",
+     "author": "Lenny K Photography from Sydney, Australia",
+     "lat": -27.475762,
+     "lng": 153.030038,
+     "cats": "Category:Brisbane Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2"
+    }
+   ]
+  },
+  "cdb_011": {
+   "city": "Cordoba",
+   "name": "The Chinaberry of the Puerta de Almodóvar",
+   "checked": "2026-08-16",
+   "sweep": 4,
+   "candidates": [
+    {
+     "title": "iNat obs 154166441 (Melia azedarach)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/266350712/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/154166441",
+     "licence": "CC BY",
+     "author": "(c) Ben Thomas, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "37.8805759936,-4.7841663659"
+    }
+   ]
+  },
+  "cdb_013": {
+   "city": "Cordoba",
+   "name": "The Ginkgo of the Agriculture Gardens",
+   "checked": "2026-08-16",
+   "sweep": 4,
+   "candidates": []
+  },
+  "cdb_014": {
+   "city": "Cordoba",
+   "name": "The Casuarinas of the Plaza de Jerónimo Páez",
+   "checked": "2026-08-16",
+   "sweep": 4,
+   "candidates": []
+  },
+  "cdb_016": {
+   "city": "Cordoba",
+   "name": "The River Red Gum of the Celia Méndez Garden",
+   "checked": "2026-08-16",
+   "sweep": 4,
+   "candidates": []
+  },
+  "cdb_017": {
+   "city": "Cordoba",
+   "name": "The Ash of Santa Marina",
+   "checked": "2026-08-16",
+   "sweep": 4,
+   "candidates": []
   }
  },
  "notes": [
