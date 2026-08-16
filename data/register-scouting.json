@@ -136,7 +136,7 @@
   {
    "place": "Japan",
    "country": "Japan",
-   "status": "stalled",
+   "status": "imported",
    "covers": [
     "Hiroshima",
     "Sapporo",
@@ -146,7 +146,7 @@
     "Nikko",
     "Nara"
    ],
-   "note": "The Environment Ministry giant-tree database, kyoju.biodic.go.jp, every tree in Japan over 300 cm girth with measured girth, height, species and location. Licence PDL 1.0 PROVEN 2026-08-04 (OPEN_DATA_SURVEY.md) and still not imported twelve days later, which is the single biggest piece of decided-yes supply this project has left on the floor: 7 top-250 cities plus deepening for Tokyo, Kyoto, Osaka, Nara and Fukuoka. PROGRESS 2026-08-16, so the next session continues rather than restarts: there is no API and no bulk download. It is a stateful POST to /?_action=gtsearch carrying _token and csrf_token, both scraped from the search page, plus a cookie jar. The handshake WORKS and a search returns the 検索結果（一覧） results page. What does not work yet: place_filter=2 fails with 'sort not entered' unless sort=0 and page=0 are sent, and place_filter=3 with marker lat/lon returned only 1 result, so the radius filter needs a real bounding box or the prefecture route (place_filter=1 with prefecture_code) instead. Parse the results table, not the form: the page re-renders the whole search form including a 600-entry species dropdown, which is what a naive text parse picks up. Corpus caveat that still binds: the DB mixes ministry survey data (PDL 1.0) with citizen submissions whose copyright belongs to the poster. Use measurements, species and coordinates as facts; never copy submitted prose or photographs."
+   "note": "SOLVED 2026-08-16, scripts/jp_kyoju.py. Three things had to be found and none is guessable: pagination is _command=changepage with a ZERO-BASED page number (js/pager.js), the CSRF token ROTATES on every response so each request must carry the previous page's token, and place_filter=3 is a fake radius search that returns the national total of 76,368 whatever marker you give it. All three fail silently with HTTP 200 and a re-rendered empty form, so a crawler that misses any of them reads one page of a thousand-record prefecture and reports success. Only place_filter=1 with prefecture_code filters. The licence caveat is solved by a FIELD rather than judgement: every row carries ユーザ, and the ministry's own 1988/2000 survey records read 'Admin', so citizen submissions (whose copyright stays with the poster, outside PDL 1.0) are excluded mechanically. CORRECTION to the 2026-08-04 entry, which said the database gives 'girth, height, species, and location': there are NO COORDINATES. Location is prefecture, municipality and an address line, and the schema carries a position-disclosure field with a reason-for-withholding beside it, which is hard rule 10 written into the source. So it is a lead source, not a map layer, and pinning is a separate job. Hiroshima done: data/leads/hiroshima.json, 102 ministry records, with girth, species and a vitality field (67 good, 24 partly dead, 4 near death). Remaining prefectures are one command each: 1 Hokkaido/Sapporo, 23 Aichi/Nagoya, 28 Hyogo/Kobe, 14 Kanagawa/Kamakura."
   }
  ]
 }
