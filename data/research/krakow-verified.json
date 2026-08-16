@@ -1,0 +1,147 @@
+[
+ {
+  "id": "kra_005",
+  "name": "The Filharmonia Plane",
+  "species": "London Plane (Platanus x acerifolia)",
+  "age_estimate": "estimated 150 to 270 years, from its girth",
+  "age_min": 150,
+  "age_max": 270,
+  "girth_cm": 520,
+  "location": {
+   "address": "Planty Krakowskie, near the Krakow Philharmonic (ul. Zwierzyniecka side), Krakow",
+   "latitude": 50.05971,
+   "longitude": 19.93384,
+   "neighbourhood": "Stare Miasto (Planty ring)"
+  },
+  "verified_sources": [
+   "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie",
+   "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.1111"
+  ],
+  "access": "Free, public park (Planty), open at all hours",
+  "transport": "Krakow Glowny railway station or Filharmonia tram/bus stops, short walk through Planty",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Register entry (gid 72032, kodinspire PL.ZIPOP.1393.PP.1261011.1111) is one of ten London planes on Krakow's natural monument list, designated 1997, girth 520cm per the city's own registry list as reproduced on Polish Wikipedia (which cites the official 'wykaz' i.e. the municipal register document). GDOS register (CRFOP) is the second, independent official record giving the same coordinates and designation date. Age is DERIVED, not sourced: 520cm girth converts to roughly 165cm diameter; applying a published girth-to-age growth factor (Living Urn / ISA method, growth factor 4 for American sycamore, used here as the closest documented proxy for London plane, a related Platanus) gives approximately 260 years. Because the proxy species and urban growing conditions add real uncertainty, the age is stated as a broad band (150-270) rather than a point estimate; do not narrow further without a dendrochronological source. No news report found of this specific tree being felled or damaged (two OTHER Planty monument trees, a red beech and a horse chestnut, were storm-felled in 2022 and 2021 respectively and are correctly excluded from this delivery). Remarkable for being the standout among the Planty ring's ten registered planes: by far the largest girth of any plane in the group, standing beside the Philharmonic building at the park's edge. Girth always recorded per the field-population rule even though an age is also given."
+ },
+ {
+  "id": "kra_006",
+  "name": "The Straszewskiego Ash",
+  "species": "European Ash (Fraxinus excelsior)",
+  "age_estimate": "estimated 150 to 220 years, from its girth",
+  "age_min": 150,
+  "age_max": 220,
+  "girth_cm": 375,
+  "location": {
+   "address": "ul. Straszewskiego 14, Krakow",
+   "latitude": 50.0577,
+   "longitude": 19.93309,
+   "neighbourhood": "Stare Miasto (Planty ring, west side near Wawel)"
+  },
+  "verified_sources": [
+   "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie",
+   "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.892"
+  ],
+  "access": "Free, roadside tree on public ground (ul. Straszewskiego, bordering Planty), open at all hours",
+  "transport": "Wawel tram/bus stops or Krakow Glowny railway station, short walk",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Register entry gid 72079, kodinspire PL.ZIPOP.1393.PP.1261011.892, designated 1987, girth 375cm per the same Wikipedia reproduction of the official municipal registry, cross-checked against the GDOS/CRFOP coordinate record as the second source. Age is DERIVED from girth: 375cm converts to roughly 119cm diameter (47in); applying the published growth factor of 4 for green ash (closest documented proxy for European ash in the same genus) gives approximately 188 years, stated as a broad band (150-220). On the western edge of the Planty ring near Wawel Hill, part of the same walkable cluster as the Filharmonia plane (kra_005), about 200m away. No felling or storm-damage report found for this specific tree."
+ },
+ {
+  "id": "kra_007",
+  "name": "The Krowoderska Lime",
+  "species": "Small-leaved Lime (Tilia cordata)",
+  "age_estimate": "estimated 130 to 175 years, from its girth",
+  "age_min": 130,
+  "age_max": 175,
+  "girth_cm": 402,
+  "location": {
+   "address": "ul. Krowoderska 16, Krakow",
+   "latitude": 50.06811,
+   "longitude": 19.93718,
+   "neighbourhood": "Stare Miasto / Krowodrza border, north of the Old Town"
+  },
+  "verified_sources": [
+   "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie",
+   "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.914"
+  ],
+  "access": "Free, roadside tree on public ground (ul. Krowoderska), open at all hours",
+  "transport": "Nowy Kleparz or Basztowa tram stops, short walk",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Register entry gid 72100, kodinspire PL.ZIPOP.1393.PP.1261011.914, designated 1987, girth 402cm per Wikipedia's reproduction of the official municipal list, cross-checked against the GDOS/CRFOP coordinate record. Age is DERIVED: 402cm girth converts to roughly 128cm diameter (50.4in); the published growth factor for littleleaf linden is 3, an exact species match (Tilia cordata), giving approximately 151 years, stated as a band (130-175). About 900m north of the Filharmonia/Straszewskiego pair (kra_005, kra_006), on the northern stretch of the same Planty-ring walk rather than immediately adjacent to it."
+ },
+ {
+  "id": "kra_008",
+  "name": "The Garncarska Ginkgo",
+  "species": "Ginkgo (Ginkgo biloba)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 275,
+  "location": {
+   "address": "ul. Garncarska, Krakow",
+   "latitude": 50.06266,
+   "longitude": 19.92712,
+   "neighbourhood": "Stare Miasto (Planty ring, west side)"
+  },
+  "verified_sources": [
+   "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie",
+   "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.1067"
+  ],
+  "access": "Free, roadside tree on public ground (ul. Garncarska, bordering Planty), open at all hours",
+  "transport": "Teatr Bagatela tram stop or Krakow Glowny railway station, short walk",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Register entry gid 71989, kodinspire PL.ZIPOP.1393.PP.1261011.1067, designated 1968 (one of the earliest designation dates in the Krakow list), three trunks rising from one base with girths of 275cm, 203cm and 175cm per Wikipedia's reproduction of the official municipal registry list, cross-checked against the GDOS/CRFOP coordinate record. No published, species-appropriate growth-rate factor for Ginkgo biloba was found this pass (Ginkgo growth rates vary enormously with cultivar and site and no reliable divisor exists in the sources checked), so age_estimate is left empty rather than guessed from a mismatched proxy; the page should ask readers whether anyone has a dated planting record. Girth of the largest stem (275cm) recorded per the field-population rule. Visually distinctive for the three-trunk form, a qualifying 'visually spectacular' candidate independent of age. About 350m from the Krowoderska lime (kra_007) and roughly 550m from the Filharmonia plane (kra_005), on the same Planty-ring walk."
+ },
+ {
+  "id": "kra_009",
+  "name": "The Bartoszewski Square Oak",
+  "species": "Pedunculate Oak, columnar form (Quercus robur 'Fastigiata')",
+  "age_estimate": "estimated 140 to 210 years, from its girth",
+  "age_min": 140,
+  "age_max": 210,
+  "girth_cm": 288,
+  "location": {
+   "address": "Skwer im. prof. Wladyslawa Bartoszewskiego (junction of ul. Basztowa, ul. Asnyka, ul. Garbarska and ul. Dunajewskiego), Krakow",
+   "latitude": 50.06596,
+   "longitude": 19.93536,
+   "neighbourhood": "Stare Miasto (Planty ring, north side)"
+  },
+  "verified_sources": [
+   "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie",
+   "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.945",
+   "https://kosmider.krakow.pl/skwer-imienia-wladyslawa-bartoszewskiego-w-krakowie/"
+  ],
+  "access": "Free, public square, open at all hours",
+  "transport": "Poczta Glowna or Dworzec Glowny tram stops, short walk",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Register entry gid 72127, kodinspire PL.ZIPOP.1393.PP.1261011.945, designated 2008, girth 288cm, a columnar cultivar of the pedunculate oak, per Wikipedia's reproduction of the official municipal list, cross-checked against the GDOS/CRFOP coordinate record. The square itself was named for Wladyslaw Bartoszewski (WWII Home Army resistance member, Auschwitz survivor, Righteous Among the Nations, later Poland's foreign minister) by city council vote on 10 October 2018, per Krakow city councillor Boguslaw Kosmider's own site, a full decade AFTER this tree was already registered as a natural monument in 2008: the tree predates the square's naming and is not claimed to be connected to Bartoszewski himself, only to stand on the square that now carries his name. Age is DERIVED: 288cm girth converts to roughly 92cm diameter (36in); the published growth factor for white oak (closest documented proxy for Quercus robur, both in the white oak group) is 5, giving approximately 180 years, stated as a band (140-210); a columnar cultivar's girth growth rate relative to the straight species is not well documented, adding to the uncertainty already reflected in the band. About 250m from the Garncarska ginkgo (kra_008) and part of the same Planty-ring walk."
+ },
+ {
+  "id": "kra_010",
+  "name": "The Basztowa Turkish Hazel",
+  "species": "Turkish Hazel (Corylus colurna)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 165,
+  "location": {
+   "address": "Planty Krakowskie, near ul. Basztowa, Krakow",
+   "latitude": 50.06595,
+   "longitude": 19.94066,
+   "neighbourhood": "Stare Miasto (Planty ring, north-east side)"
+  },
+  "verified_sources": [
+   "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie",
+   "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.943"
+  ],
+  "access": "Free, public park (Planty), open at all hours",
+  "transport": "Dworzec Glowny (Krakow Glowny) tram/bus stops, short walk through Planty",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Register entry gid 72125, kodinspire PL.ZIPOP.1393.PP.1261011.943, designated 2008, two trunks from one base, girths 165cm and 120cm, per Wikipedia's reproduction of the official municipal registry list, cross-checked against the GDOS/CRFOP coordinate record. No reliable published growth-rate factor found for Corylus colurna specifically: a generic 'hazel' divisor exists in some tables but is calibrated to common hazel (Corylus avellana), a shrubby species with a very different growth habit than the much larger Turkish hazel, so applying it would be a mismatched proxy rather than a genuine estimate. age_estimate left empty; the page should ask readers for a planting record. Girth of the larger stem (165cm) recorded per the field-population rule. Turkish hazel is an uncommon monument species for the city (only this specimen found in the near-centre search), which is itself the interesting fact for the story. About 500m from the Bartoszewski Square oak (kra_009), same Planty-ring walk."
+ }
+]
