@@ -620,3 +620,15 @@ Built by `scripts/build_batch_005.py`, which reads every tree count from the
 live city files at build time so no mail can quote a number that has moved.
 66 addresses of the 106 remain unmailed, almost all of them gardens, parks and
 municipalities, which is the category this batch deliberately skipped.
+
+**Batch 005's first reply came in nine minutes, and it was a wrong number.**
+Rogier Dop answered from haagsehofjes.nl: it is a biscuit company, not the
+foundation behind the Heilige Geesthofje where the juttepeer stands. "Ik ben
+een koekjesbedrijf, sorry." A correct address on a correctly named site, and
+still the wrong organisation, which is a failure mode no amount of care in the
+letter can catch. Hidde had the reply sent the same hour (`drafts/reply-haagse-hofjes.md`,
+three lines, no tree question, because the man had just said trees are not his
+subject). The address and then the whole domain went on the do-not-contact
+list, and the contact record is marked blocked with the reason so no future
+batch can pick it up. The juttepeer still needs the hofje itself or the Haags
+Hofjesberaad; no verified address yet.
