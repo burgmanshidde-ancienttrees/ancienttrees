@@ -221,6 +221,15 @@ Passes have died mid-run and lost everything they had not written down. Append
 each tree to the delivery file named in your brief THE MOMENT it verifies,
 valid JSON after every append.
 
+**Do the work yourself. Do not dispatch sub-agents.** A Geneva pass on
+2026-08-17 delegated a side question about one park to a child agent, waited on
+it, and was killed by the harness watchdog having banked nothing. The child's
+research came back fine and was useless, because the pass that needed it was
+gone. A second attempt, told to bank immediately, died the same way. Delegation
+inside a pass buys nothing here: you are already the specialist, and every minute
+spent waiting on a child is a minute of no output, which is exactly what gets a
+pass killed.
+
 **So work one candidate through to done before starting the next.** Researching
 all of them in parallel and writing at the end is what makes a pass worth
 nothing when it is cut off: a Padova pass died after 25 fetches across eight
@@ -236,6 +245,7 @@ One object per tree:
   "species": "Common Name (Latin name)",
   "age_estimate": "roughly 400 years",
   "age_min": 300, "age_max": 500,
+  "girth_cm": 520,
   "location": {"address": "...", "latitude": 0.0, "longitude": 0.0, "neighbourhood": "..."},
   "verified_sources": ["url1", "url2"],
   "access": "Free / paid entry / restricted, with the honest caveat if any",
@@ -245,6 +255,19 @@ One object per tree:
   "verify_notes": "Raw facts for the writer: what makes it remarkable, what it witnessed, disagreements between sources, the anecdote worth leading with. Bullet-style is fine."
 }
 ```
+
+**`girth_cm` is in that list because leaving it out of it did not work.** The age
+section below has asked for it since 2026-08-16 and three consecutive passes still
+delivered nothing: Toronto recorded one of four, Singapore none of eight from
+NParks pages that publish them, Bratislava none. Advice in prose gets read and
+forgotten; a field in the object you are filling in gets filled in. Record it
+whenever any source gives a girth, a circumference or a diameter, converting
+diameter with pi, and do it even when the tree already has an age. It is the input
+the whole database is short of, 33 trees of 1299 carry one, and the day there are
+a few hundred the age estimating becomes a script instead of a judgement made one
+tree at a time. Where the figure is a buttressed mass or a stem count rather than
+a trunk, still record it and say so in `verify_notes`, so the writer cannot repeat
+it as a trunk measurement.
 
 `verify_notes` is the writer's only input besides the sources, so put the good
 material there: the surprising fact, the history, the dispute. Facts only, no

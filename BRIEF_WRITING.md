@@ -81,6 +81,25 @@ Platanus x acerifolia is "London Plane"). If unsure, grep data/cities/ for the
 Latin name and copy the existing common name; the build fails on one species
 under two names.
 
+## Write each story to the file as you finish it, never all at the end
+
+The verification rulebook has said this since a Padova pass died and lost
+everything; the writing rulebook never did, and on 2026-08-17 that cost a pass.
+A Singapore writer read both rulebooks, both live city files and eight verified
+trees, said "now I have everything I need, let me write the eight stories", and
+was killed by the harness watchdog for producing no output for 600 seconds. It
+had in fact finished all eight and they were on disk, so the work survived by
+luck rather than by design: had it written them in one final edit, the whole pass
+would have been lost.
+
+**So: finish one story, write it into the delivery file, then start the next.**
+Valid JSON after every write. Eight stories generated in one silent stretch is
+ten minutes of no output, which the watchdog cannot tell apart from a dead agent,
+and it is the one shape of failure this stage is exposed to.
+
+It also makes a killed pass resumable rather than wasted. The next attempt reads
+the file, sees which ids already carry a `story`, and writes only the rest.
+
 ## What happens after you
 
 The main session merges your output into the city files, fixes any count
