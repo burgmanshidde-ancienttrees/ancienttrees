@@ -55,6 +55,16 @@ NOT_A_TREE = ("christmas", "frog", "sign", "bordje", "affichette", "bamboo",
 # and hard rule: no black-and-white or archival imagery. "Bourbong Street
 # Bundaberg, circa 1890" reached the Hobart shortlist; "Atlantic Coast Line
 # 1941" reached Chicago's. Both are the same shape.
+# A famous NAME is not always a living tree, and two of the first six pairings
+# this list produced were not trees at all: Chicago's "Old Treaty Elm
+# Historical Marker" is a plaque where a famous elm used to stand, and Breda's
+# "Sprookjesboom" is the talking animatronic in the Efteling's fairytale
+# forest. Both carry photographs and coordinates and would have cost a verify
+# pass to discover. A marker, a memorial or a stump is the record of a tree,
+# not somewhere to send anybody.
+NOT_A_LIVING_TREE = re.compile(
+    r"historical marker|\bmarker\b|memorial to|monument to|\bplaque\b|"
+    r"sprookjesboom|efteling|\bstump\b|\bstub\b|remains of", re.I)
 ARCHIVAL = re.compile(r"\bcirca\s*1[89]|\b1[89]\d{2}\b", re.I)
 # Words too generic to count as naming a tree.
 GENERIC = {"tree", "trees", "the", "of", "great", "old", "giant", "ancient",
@@ -191,31 +201,43 @@ def shortlist(limit):
 
 
 
-def famous_near(limit):
-    """Famous trees WITH a photograph, close to a city that has none.
+def famous_near(limit, photo_only=False, per_city=3):
+    """Famous trees WITH a photograph, near a city we already publish.
 
     Proved on 2026-08-17 rather than assumed. Copenhagen has 13 trees and no
-    photograph, and no photograph of its trees exists to find: the viewing pass
+    photograph, and no photograph of ITS trees exists to find: a viewing pass
     rejected six candidates across two sessions and the pattern was never
     picture quality, it was that nobody photographed those trunks. Meanwhile
-    Klopstocks Eg sits 13 km outside Copenhagen, inside the day-trip boundary,
-    with three Commons photographs, and the first one opened is a textbook
-    Cadiz-standard image: an ancient oak filling the frame, trunk and crown
-    both readable, a bench for scale, CC BY-SA 4.0 with a named photographer.
+    Klopstocks Eg sits 12 km outside Copenhagen with three Commons photographs,
+    and the first one opened is a textbook Cadiz image: an ancient oak filling
+    the frame, trunk and crown readable, a bench for scale, CC BY-SA 4.0.
 
-    So the cheaper move is to reverse the problem. Do not hunt a picture for a
-    tree nobody photographed; add a tree that arrives with its own, and which
-    people have heard of. This lists those pairings.
+    So reverse the problem. Do not hunt a picture for a tree nobody
+    photographed; add a tree that arrives with its own, and which people have
+    heard of.
 
-    It is a RESEARCH list and never an import. Each one still needs a verify
-    pass to our bar: alive, two sources, a location we can state, publicly
-    reachable. The famous-trees name matching is deliberately loose and has
-    produced nonsense elsewhere.
+    THE SIZE OF THE PRIZE, measured 2026-08-17 so nobody has to guess: the
+    leads files hold 995 famous trees, 702 of them with coordinates, and only
+    **68 sit within 30 km of a city we publish**. Bulk-adding "all of them" is
+    therefore not a thing that exists: 927 belong to villages, forests and
+    countryside, which is the wider-database ambition rather than the city
+    pages. The 68 are one finite batch.
+
+    Not photo-less cities only. A famous tree is worth adding to any city
+    (it is a tree people recognise), so the default lists every city and
+    marks which ones have no photograph yet. --photo-only narrows it.
+
+    It is a RESEARCH list and never an import. Each still needs a verify pass
+    to our bar: alive, two independent sources, a location we can state
+    honestly, publicly reachable, one place to stand. The famous-trees name
+    matching is deliberately loose and has produced nonsense: Hobart's dawn
+    redwoods matched a 1920 street scene in Bundaberg.
     """
     from geo import km
-    need = [c for c in cities() if c["photos"] == 0 and c["trees"] >= PHOTO_FLOOR]
+    pool = [c for c in cities()
+            if not photo_only or (c["photos"] == 0 and c["trees"] >= PHOTO_FLOOR)]
     centres = {}
-    for c in need:
+    for c in pool:
         doc = json.load(open(os.path.join(ROOT, "data", "cities", c["slug"] + ".json"),
                              encoding="utf-8"))
         pts = [(t["location"]["latitude"], t["location"]["longitude"])
@@ -223,46 +245,91 @@ def famous_near(limit):
         if pts:
             centres[c["slug"]] = (sum(p[0] for p in pts) / len(pts),
                                   sum(p[1] for p in pts) / len(pts), c)
+    # Nearest city per tree, not every city within range, so one tree is not
+    # offered to three cities at once.
     rows = []
-    for path in glob.glob(os.path.join(ROOT, "data", "leads", "_famous-*.json")):
+    for path in sorted(glob.glob(os.path.join(ROOT, "data", "leads", "_famous-*.json"))):
         try:
             doc = json.load(open(path, encoding="utf-8"))
         except Exception:
             continue
+        country = os.path.basename(path)[len("_famous-"):-len(".json")]
         for lead in (doc.get("leads") or []):
             if lead.get("lat") is None or not lead.get("photos"):
                 continue
+            if NOT_A_LIVING_TREE.search(lead.get("name") or ""):
+                continue
+            best = None
             for slug, (la, lo, c) in centres.items():
                 d = km((la, lo), (lead["lat"], lead["lng"]))
-                if d <= 30:
-                    rows.append((d, slug, c["trees"], lead["name"], len(lead["photos"])))
-    rows.sort(key=lambda r: (r[0]))
-    seen, out = set(), []
+                if best is None or d < best[0]:
+                    best = (d, slug, c)
+            if best and best[0] <= 30:
+                rows.append({"km": round(best[0], 1), "slug": best[1],
+                             "trees": best[2]["trees"], "photos": best[2]["photos"],
+                             "name": lead["name"], "country": country,
+                             "n_photos": len(lead["photos"]),
+                             "first_photo": lead["photos"][0],
+                             "lat": lead["lat"], "lng": lead["lng"]})
+    # Commons lists the same tree under more than one category, so the same
+    # lead arrives twice: Zurich was offered "Messikomer Eich" twice at an
+    # identical coordinate. Fold on name plus position.
+    seen_tree, unique = set(), []
     for r in rows:
-        if r[1] in seen:
+        key = (r["name"].lower(), round(r["lat"], 4), round(r["lng"], 4))
+        if key in seen_tree:
             continue
-        seen.add(r[1])
-        out.append(r)
-    return out[:limit]
+        seen_tree.add(key)
+        unique.append(r)
+    rows = unique
+
+    # Group by city so a verify pass can be briefed on a whole cluster at once,
+    # which is the point: three trees at one city is a pass, one tree is not.
+    by = {}
+    for r in rows:
+        by.setdefault(r["slug"], []).append(r)
+    for v in by.values():
+        v.sort(key=lambda r: r["km"])
+    # Cities with no photograph first, then the biggest clusters.
+    order = sorted(by.items(), key=lambda kv: (kv[1][0]["photos"] > 0, -len(kv[1])))
+    out = []
+    for slug, group in order[:limit]:
+        out.append((slug, group[:per_city]))
+    return out
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--shortlist", action="store_true")
     ap.add_argument("--famous", action="store_true")
+    ap.add_argument("--photo-only", action="store_true", dest="photo_only")
+    ap.add_argument("--per-city", type=int, default=3, dest="per_city")
     ap.add_argument("--limit", type=int, default=20)
     a = ap.parse_args()
 
     if a.famous:
-        rows = famous_near(a.limit)
-        print("FAMOUS TREES WITH A PHOTOGRAPH, near a city that has none.")
-        print("A research list, never an import: each still needs a verify pass.\n")
-        if not rows:
-            print("  Nothing within 30 km of a photo-less city.")
+        groups = famous_near(a.limit, photo_only=a.photo_only, per_city=a.per_city)
+        print("FAMOUS TREES THAT BRING THEIR OWN PHOTOGRAPH, near a city we publish.")
+        print("Grouped by city, because three trees at one place is a verify pass")
+        print("and one tree is not. A RESEARCH list: each still needs the bar")
+        print("(alive, two sources, honest location, publicly reachable).\n")
+        if not groups:
+            print("  Nothing within 30 km of a city we publish.")
             return 0
-        print("  %-7s %-22s %-34s %s" % ("dist", "city (trees)", "famous tree", "photos"))
-        for d, slug, trees, name, n in rows:
-            print("  %5.1fkm %-22s %-34s %d" % (d, "%s (%d)" % (slug, trees), name[:34], n))
+        total = 0
+        for slug, rows in groups:
+            head = rows[0]
+            flag = "  NO PHOTOGRAPH YET" if head["photos"] == 0 else ""
+            print("  %s (%d trees, %d photos)%s"
+                  % (slug, head["trees"], head["photos"], flag))
+            for r in rows:
+                total += 1
+                print("      %5.1f km  %-38s %d photo(s)  %.4f,%.4f"
+                      % (r["km"], r["name"][:38], r["n_photos"], r["lat"], r["lng"]))
+                print("               %s" % r["first_photo"])
+        print("\n  %d tree(s) across %d city/cities." % (total, len(groups)))
+        print("  Brief a verify pass on ONE city's group at a time; the whole")
+        print("  reachable pool is 68 trees, so this is a batch, not a campaign.")
         return 0
 
     all_cities = cities()
