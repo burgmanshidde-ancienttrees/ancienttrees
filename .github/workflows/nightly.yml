@@ -73,15 +73,24 @@ concurrency:
 jobs:
   research:
     runs-on: ubuntu-latest
-    # GitHub allows six hours per job; we take 90 minutes. Back to 90 on
-    # 2026-08-16 from the 60 set on 2026-07-31, paired with the drop from nine
-    # knocks to six above so the daily ceiling stays at 540 minutes either way.
-    # The 60 was there to stop a runaway day eating the week; it had quietly
-    # become the thing cutting off the only run that was working, since the one
-    # run to reach the cap that night produced 17 of the night's 28 trees and
-    # was still going when it was killed. A cap that binds the best run is
-    # protecting the wrong thing.
-    timeout-minutes: 90
+    # GitHub allows six hours per job; we take 120 minutes.
+    #
+    # 2026-08-17: raised from 90, one night after 90 replaced 60, because the
+    # cap has now cut off the best run on two consecutive nights. On 08-16/17
+    # the run that reached the 90 minute cap produced 19 of the night's 20
+    # trees and opened two countries (Graz, Bratislava) before it was killed
+    # mid-work. Raising it costs far less than the ceiling arithmetic suggests:
+    # actual use that night was 126 minutes of a possible 540, because three of
+    # four runs stalled early, so the cap binds exactly one run per night and
+    # this buys that one run another half hour. If the stalls get fixed the
+    # ceiling starts to matter and this is the first number to pull back.
+    #
+    # The history, kept short: 60 from 2026-07-31 (a chaining day had eaten the
+    # week in two), 90 on 2026-08-16 paired with the drop from nine knocks to
+    # six so the ceiling held at 540, and 120 now. Each step was taken for the
+    # same reason and the reason keeps being true: a cap that binds the best
+    # run is protecting the wrong thing.
+    timeout-minutes: 120
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
