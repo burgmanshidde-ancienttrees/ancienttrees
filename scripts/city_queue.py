@@ -474,6 +474,16 @@ def main():
           % (len(order), n))
     print("%d cities are Google-confirmed and climb the 20/30/50 staircase; "
           "the rest aim at 10" % len(confirmed))
+
+    # LEDGER.html is Hidde's own view of the same numbers, and it is rebuilt
+    # here so it can never be staler than the queue it draws from. Deterministic
+    # rendering, no fetches, no tokens. Wrapped because a rendering failure must
+    # never take down the queue rebuild that a night run depends on.
+    try:
+        import ledger
+        ledger.main()
+    except Exception as e:
+        print("  (LEDGER.html not rewritten: %s)" % e)
     return 0
 
 
