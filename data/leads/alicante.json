@@ -61,13 +61,16 @@
     },
     {
       "register_ids": [
-        3096,
         3097,
-        3098,
-        3099
+        3098
       ],
       "species": "Ficus macrophylla",
-      "reason": "Registered under 'Proteccion Generica' rather than 'Arbol Monumental de Interes Local'. The register's own caveat (data/registers/valencia-arboles-monumentales.json) states Proteccion Generica applies automatically to any qualifying tree regardless of ownership and includes private trees that cannot be distinguished from public ones without a per-tree check, which this pass did not have time to do. UPDATE 2026-08-15: alicante.es's ficus-plaque article names 'Avenida de Salamanca (near the railway station)' as one of the city's six panel sites, which is exactly where 3096-3098 stand (3099 is a different address, Carrer de l'Esportista Ramon Mendizabal, more residential). OSM shows park/garden tags within 150m of 3096-3098 but not confirmed to cover the exact tree points. Promising for a future pass: check street-level imagery to confirm public ground before shipping (largest of the three, 3096, is 6.9m girth / 28m height / 28.2m crown, the tallest fig in the whole Alicante candidate set)."
+      "reason": "Same station-forecourt trio as register_id 3096 (Avenida de Salamanca, beside Alacant Terminal's main facade; alicante.es and alicantepress both confirm 'tres ficus con jardinera' at this exact site as one of six citywide monumental-ficus panel locations). 3096 shipped 2026-08-17 as ali_010 (tallest/thickest of the three, 6.9m girth). 3097 (6.5m girth, 20m, 7m from 3096) and 3098 (6.7m girth, 20m, 58m from 3096) held as leads rather than shipped as separate entries, to avoid fragmenting one small forecourt grove into near-identical collectible points, matching the 300/302 precedent at Parque de Canalejas. Access note carried to ali_010: the immediately adjacent Plaza de la Estrella (Salamanca/Aguilera intersection) is, per an April 2026 todoalicante report, still a fenced-off construction site for the Parque Central project; the station-forecourt trees themselves are not inside it, but this should be re-checked if a future pass revisits."
+    },
+    {
+      "register_id": 3099,
+      "species": "Ficus macrophylla",
+      "reason": "A fourth 'Proteccion Generica' Ficus macrophylla (6.2m girth), but on Carrer de l'Esportista Ramon Mendizabal, ~0.9km from the Avenida de Salamanca station trio and not part of that cluster. More residential street; public/private status not individually confirmed within this pass's time budget."
     },
     {
       "register_id": 945,
