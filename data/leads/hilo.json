@@ -1,0 +1,73 @@
+{
+  "leads": [
+    {
+      "register_id": "1173",
+      "name": "Bodhi/Peepul Tree",
+      "species": "Ficus religiosa",
+      "locality": "Old Riverside School",
+      "reason": "Girth 9.1m, height 70ft, vitality Excellent per register; a Ficus religiosa on Big Island soil is a strong candidate. Blocked for now under hard rule 10's school-grounds test: could not find evidence this pass that the former Riverside Elementary School grounds are genuinely open to the public (it appears tied to the historic Riverside/Hilo High School site along the Wailuku River; a 'Riverside Park' name surfaces in passing but was not confirmed as the same open ground). Needs a source stating the grounds are open (a public path, weekend access, or similar) before it can ship."
+    },
+    {
+      "register_id": "1177",
+      "name": "'Ohi'a Lehua",
+      "species": "Metrosideros polymorpha",
+      "locality": "Rainbow Falls Park, Hilo",
+      "reason": "Register vitality Fair, no girth. Sources describe ohia lehua only as generic surrounding vegetation at Rainbow Falls, never naming an individual specimen the way the banyan there is named ('the ancient banyan tree' at the upper viewing area). Could not find a second source treating this as one identifiable, collectible tree rather than part of the tree cover. Worth another pass with iNaturalist geotagged observations right at the falls viewing platform, or a call to the park."
+    },
+    {
+      "register_id": "1171",
+      "name": "Weeping Fig",
+      "species": "Ficus benjamina",
+      "locality": "Kilauea Ave.",
+      "reason": "Girth 5.4m per register. Not researched this pass; time-boxed out. Worth a search pass of its own."
+    },
+    {
+      "register_id": "1187",
+      "name": "Monkeypod",
+      "species": "Albizia saman",
+      "locality": "Kamehameha Ave. and Pauahi St.",
+      "reason": "No girth recorded. Not researched this pass. A near-duplicate register row at the same rounded coordinate (excellent vitality, no locality text) may be the same tree double-entered; check for a register twin before verifying."
+    },
+    {
+      "register_id": "1186",
+      "name": "Monkeypod",
+      "species": "Albizia saman",
+      "locality": "85 Lihiwai Street",
+      "reason": "Fair vitality, no girth. Not researched this pass."
+    },
+    {
+      "register_id": "1164",
+      "name": "Coconut",
+      "species": "Cocos nucifera",
+      "locality": "Waiolama Canal, Hilo",
+      "reason": "No girth/height. Not researched; coconut palms are common island-wide and this specimen would need a specific story (age, planting history) to clear the collectible-point bar rather than reading as an ordinary palm."
+    },
+    {
+      "register_id": "1167",
+      "name": "Gold Tree",
+      "species": "Roseodendron donnell-smithii",
+      "locality": "Forestry Arboretum",
+      "reason": "Not researched this pass. The Hilo Forestry (Ho'olulu) Arboretum is a genuine public site and worth checking; a flowering gold tree is visually striking when in bloom."
+    }
+  ],
+  "blocked": [
+    {
+      "register_id": "1174",
+      "name": "Remy's Gardenia",
+      "locality": "Waianuenue Ave.",
+      "reason": "Register itself records this as a dead tree's location (publishable: false, publishable_note: \"the register records this as a dead tree's location\"). Never ships per the never-dead-tree rule."
+    },
+    {
+      "register_id": "1192",
+      "name": "Chebulic Myrobalan",
+      "locality": "Kamehameha Avenue",
+      "reason": "Register marks publishable: false, \"reads as a grove or row rather than one standable tree\": fails the collectible-point test."
+    },
+    {
+      "register_id": "1168",
+      "name": "Surinam Cherry",
+      "locality": "Waianuenue Avenue",
+      "reason": "Register marks publishable: false, \"reads as a grove or row rather than one standable tree\": fails the collectible-point test."
+    }
+  ]
+}
