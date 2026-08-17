@@ -2020,6 +2020,15 @@
     "note": "Session work (tokens not metered by the harness). Wrote mil_019, the Bagolaro/Archdevil of Villa Marietti Radice Fossati, already verified in an earlier pass leads file (2 sources: comune.milano.it + MASAF register) and held back only for standing alone. Also fixed a stale tree-count bug found along the way: intro and one FAQ answer still said fifteen trees while the city had already grown to 18 before this session, now 19 everywhere.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "lyon",
+    "kind": "verify",
+    "tokens": 143775,
+    "trees": 1,
+    "note": "Deepened 9 to 10, register-backed: register PLU-H entry (id 4183) plus independent 2025 Mediacites piece both naming the same street-corner oak. Story written directly in session (single tree, not worth a write-stories batch). Two leads and three blocked (private-garden cedars) recorded.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

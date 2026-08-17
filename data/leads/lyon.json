@@ -1,0 +1,40 @@
+{
+  "leads": [
+    {
+      "register_id": 4201,
+      "species": "American Hickory (register lists it as 'JUGLANS OVOIDA Hickory: Caryer d'Amerique', which is not a valid taxon name and is probably a corrupted register field for a Carya species, likely Carya ovata)",
+      "locality": "Jardin des Chartreux, Cours du General Giraud, 69004 Lyon",
+      "latitude": 45.769314,
+      "longitude": 4.824323,
+      "reason": "Single source only (the Metropole de Lyon PLU-H remarkable-tree register). Searched the garden's Wikipedia page, its Auvergne-Rhone-Alpes heritage dossier, Vanupied and Office du Tourisme write-ups, and general web search for a hickory/Carya/Caryer specimen in this garden: none corroborate it, and none of them name any walnut-family tree at all. About 280m from the already-published lyo_009 (Garden Trees of Jardin des Chartreux ensemble entry), inside the same garden, which is genuinely promising if a second source ever turns up: an individually locatable specimen would be a stronger entry than the current ensemble one. Also worth fixing the species field before this ever ships: 'Juglans ovoida' is not a real name."
+    },
+    {
+      "register_id": 4217,
+      "species": "Northern Red Oak (Quercus rubra)",
+      "locality": "Square Gustave-Auguste Ferrie, angle rue Jacques-Louis Henon et rue Deleuvre, 69004 Lyon",
+      "latitude": 45.779871,
+      "longitude": 4.825132,
+      "reason": "Single source only (the register). Square Ferrie itself is well documented (Ville de Lyon, ruesdelyon.net, mairie4.lyon.fr) as a public garden on the Croix-Rousse plateau, but nothing found names this specific oak, or the neighbouring cedars/beeches at the same square (register_ids 4215, 4216, 4218, 4219), individually. About 800m from lyo_008 (Parc de la Cerisaie), so worth another look if a second source surfaces; the whole square could also be considered as a compact ensemble candidate (a public square with a labelled cedar/oak/beech grouping) rather than one tree, which would need a fresh judgement call under the collectible-point rule."
+    }
+  ],
+  "blocked": [
+    {
+      "register_id": 4215,
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "locality": "40, rue Jacques-Louis Henon, 69004 Lyon",
+      "reason": "Register's own condition text says 'situe dans un jardin prive' (located in a private garden). No evidence of public access. Hard rule 10."
+    },
+    {
+      "register_id": 4218,
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "locality": "68, rue Jacques-Louis Henon, 69004 Lyon",
+      "reason": "Register's own condition text says 'situe dans un jardin prive situe au Nord/Ouest du square Gustave-Auguste' (private garden). Hard rule 10."
+    },
+    {
+      "register_id": 4214,
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "locality": "Angle des rues Clos Savaron et Chevalier, 69004 Lyon",
+      "reason": "Register's own condition text: 'implante dans un jardin d'une maison individuelle' (planted in a single house's private garden). Hard rule 10, and it is somebody's home, which does not bend under the 2026-08-13 loosening either."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "lyo_011",
+    "name": "The Pedunculate Oak of Rue Viret",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Corner of Rue Viret and Rue Francis de Pressensé, Les Poulettes / Gratte-Ciel, 69100 Villeurbanne",
+      "latitude": 45.772238,
+      "longitude": 4.875398,
+      "neighbourhood": "Villeurbanne (Les Poulettes, adjoining Gratte-Ciel), roughly 1.4 km east of Parc de la Tête d'Or"
+    },
+    "verified_sources": [
+      "Metropole de Lyon open-data PLU-H register, 'Espace boise classe ponctuel / Arbre remarquable', feature plu_h_opposable.pluboispt (register_id 4183), download.data.grandlyon.com/wfs/grandlyon: QUERCUS ROBUR, 'Rue Viret angle Francis de Pressensé', condition text 'Espece rare a Villeurbanne. Bonne sante. Grande dimension.' (rare species for Villeurbanne, good health, large size), last surveyed 2017-02-15",
+      "https://www.mediacites.fr/decryptage/lyon/2025/08/26/cedre-tilleul-tulipier-a-la-recherche-des-arbres-remarquables-du-grand-lyon/ (Mediacites, an independent Lyon investigative-journalism outlet, published 2025-08-26): names 'Un chene pedoncule, considere comme \"remarquable\", a l'angle des rues Viret et de Pressense, a Villeurbanne' while mapping the Metropole de Lyon's own remarkable-tree database. Same species, same exact street corner, independent of the register entry and much more recent, which also serves as the 'alive now' evidence."
+    ],
+    "access": "Free, public street corner in a residential neighbourhood, no restriction",
+    "transport": "Charpennes Charles Hernu metro station (Line A/B), about 7 min walk; Le Tonkin tram stop is closer, about 4 min walk",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Species and location corroborated by two independent sources: the Metropole de Lyon's own PLU-H remarkable-tree register (tree-level coordinates, 45.772238/4.875398) and a 2025-08-26 Mediacites investigative piece mapping the same database, which independently names this exact tree at this exact street corner ('a l'angle des rues Viret et de Pressense, a Villeurbanne'). Flagged only because no age or girth is documented by either source; do not invent one, leave age_estimate as 'not documented' and let the page ask readers with a tape measure. Register calls the species genuinely rare for Villeurbanne's street planting and notes good health and large size ('Bonne sante. Grande dimension.') as of its last survey (2017); the 2025 Mediacites piece is good evidence it was still standing and still considered remarkable eight years later. Sits on a public street corner in the Gratte-Ciel/Les Poulettes area of Villeurbanne, about 1.4 km east of the existing lyo_001/002/003/010 cluster around Parc de la Tete d'Or's arboretum, so it extends the existing walk rather than adding a distant outlier (well within the city's existing 5.5 km span, and inside the 30-minute transit boundary CLAUDE.md allows for day-trip-adjacent trees). Reverse-geocoded via Nominatim to confirm the coordinate genuinely sits on Rue Viret in Villeurbanne's Gratte-Ciel/Les Poulettes district (69100), consistent with the register's own street name. No photo hunted (out of scope for a verification pass); leave photo status as missing for a later pass.",
+    "girth_cm": null
+  }
+]
