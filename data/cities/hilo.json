@@ -1,0 +1,186 @@
+{
+  "city": "Hilo",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Three of these five stand in one small park in downtown Hilo, and the other two are a short walk away. Hawaii protects individual trees by law rather than the ground they stand on, and Kalakaua Park holds three of them: a banyan planted in 1882 whose aerial roots have grown into props, a divi-divi from the dry Caribbean that has no business in a town with three metres of rain a year, and an endangered native palm found nowhere but these islands. A tropical almond of about 206 years stands outside a church on Haili Street.",
+  "meta_description": "Five protected trees in Hilo, three in one downtown park: an 1882 banyan on aerial roots, a Caribbean divi-divi, and an endangered native palm.",
+  "question_meta": "Hilo's oldest tree is the kamani outside Haili Congregational Church, about 206 years. Its story, and four more protected trees a short walk apart.",
+  "question_answer": "The oldest tree in Hilo is the kamani at the corner of Haili Street and Ululani Street, on the pavement outside Haili Congregational Church. The Hawaii Tribune-Herald put its age at 194 years in 2014, which makes it about 206 now, so it was standing here before the church beside it and before Hilo was a town of any size. Hawaii's exceptional-tree register records it at 12.2 metres round and rates its condition good.\n\nOne caution about its name, because the register and the town disagree. The register files it as a False Kamani, Terminalia catappa, the tropical almond. Local usage, including that newspaper piece, drops the qualifier and calls it a kamani, which botanically means a different tree altogether, Calophyllum inophyllum. This page follows the register on the species and the newspaper on the age.\n\nWhat makes it visible from across the street: Terminalia catappa throws its branches out in flat horizontal whorls that stack up the trunk, so it reads as a series of green plates rather than a dome, and its leaves turn red and drop in a place where almost nothing else changes colour.",
+  "question_context": "Hawaii protects trees in an unusual way and it shapes this whole page. Act 105 of 1975 lets each county designate individual specimens as exceptional trees, and the designation attaches to the tree rather than to the land, which is why the register names single trunks in car parks and on street corners instead of naming woodland. The City and County of Honolulu publishes the resulting database under a public-domain dedication, and despite its title it covers all four counties.\n\nTwo things about that source govern what this page can say. It carries no age field at all, so every year given here comes from a newspaper or a local history rather than from the register, and where nobody has published one the page says so instead of estimating. And its coordinates are rounded to about a kilometre, with several Kalakaua Park trees sharing a single point between them, so every pin here is marked approximate and each entry describes what to look for once you are standing in the right park. See the full list of five on the Hilo page.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Hilo?",
+      "a": "The kamani outside Haili Congregational Church, at the corner of Haili and Ululani Streets. A 2014 newspaper piece put it at 194 years, which makes it about 206 now. The register records 12.2 metres of girth and rates its condition good."
+    },
+    {
+      "q": "Can I see them all in one walk?",
+      "a": "Yes, comfortably. Three of the five share Kalakaua Park in the middle of downtown, the kamani is a few minutes away on Haili Street, and the fifth is in Wailuku River State Park at Rainbow Falls, about two kilometres out and worth the detour for the falls as much as the tree."
+    },
+    {
+      "q": "Are they free to visit?",
+      "a": "Yes, all five. Kalakaua Park is a public square open daily, the kamani stands on a public pavement, and Wailuku River State Park is free and open from sunrise to sunset."
+    },
+    {
+      "q": "Why are the pins marked approximate?",
+      "a": "Because the register's coordinates are rounded to roughly a kilometre and several trees in Kalakaua Park share one point between them. Marking a pin confirmed on that basis would be inventing a precision nobody has, so each entry describes what to look for instead."
+    }
+  ],
+  "hero_tree_id": "hbi_001",
+  "oldest_tree_id": "hbi_002",
+  "trees": [
+    {
+      "id": "hbi_001",
+      "name": "The Kalakaua Park Banyan",
+      "species": "Indian Banyan (Ficus benghalensis)",
+      "age_estimate": "about 144 years",
+      "age_min": 143,
+      "age_max": 145,
+      "girth_cm": 1860,
+      "location": {
+        "address": "Kalakaua Park, west end, Hilo",
+        "latitude": 19.73,
+        "longitude": -155.09,
+        "neighbourhood": "Downtown Hilo"
+      },
+      "story": "Two men are credited with planting this banyan and they cannot both be right. Wikipedia and a Hilo guide both say Sheriff Luther Severance put it in at the west end of Kalakaua Park in 1882, which makes it about 144 years old. A newspaper account from 1964 credits King Kalakaua himself. Neither source settles it and this page does not pick.\n\nWhat is not in dispute is the size. The exceptional-tree register puts 18.6 metres around it, and that figure is not a trunk: Ficus benghalensis drops aerial roots that thicken into props, and the measurement runs around the whole buttressed mass. Standing under one is less like meeting a tree than walking into a room with a ceiling.\n\nIt had a twin. When Waianuenue Avenue was widened, Sheriff George Williams had the other original moved about five miles up to Kaumana, which in 1882 terms is a remarkable thing to attempt and in any terms is a remarkable thing to survive.\n\nHawaii protects individual trees by law, under Act 105 of 1975, and the designation attaches to the specimen rather than to the ground it stands on. This one is in the middle of downtown Hilo with a lawn under it and two more protected trees in the same small park.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Kalakaua_Park",
+        "https://www.mycityhunt.com/cities/hilo-us-12326/poi/kalakaua-park-45112"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "No dedicated stop; central downtown Hilo, an easy walk from the bayfront and most Hilo accommodation",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The huge banyan at the west end of Kalakaua Park, with aerial roots come down as props. Impossible to miss and impossible to mistake for the park's other two protected trees.",
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "hbi_002",
+      "name": "The Haili Street Kamani",
+      "species": "False Kamani (Terminalia catappa)",
+      "age_estimate": "about 206 years",
+      "age_min": 200,
+      "age_max": 212,
+      "girth_cm": 1220,
+      "location": {
+        "address": "Corner of Haili Street and Ululani Street, Hilo, outside Haili Congregational Church",
+        "latitude": 19.72,
+        "longitude": -155.09,
+        "neighbourhood": "Downtown Hilo"
+      },
+      "story": "The register calls it a False Kamani and the newspaper that loves it does not. In 2014 the Hawaii Tribune-Herald ran a piece on the treasured kamani tree at the corner of Haili and Ululani, gave its age as 194 years, and left the qualifier off, which is the usual local shorthand. Botanically the two are unrelated: true kamani is Calophyllum inophyllum, and this is Terminalia catappa, the tropical almond, whose leaves turn red and drop in a place where almost nothing else changes colour.\n\nTake the newspaper's figure forward and the tree is about 206 years old now, which puts it here before the church it stands beside, before Hilo was a town of any size, and before anyone thought to write down what was growing on this corner.\n\nThe register records 12.2 metres around it and rates its condition good. Terminalia catappa grows in tiers, with branches thrown out in flat horizontal whorls that stack up the trunk, so from across the street it reads as a series of green plates rather than a dome.\n\nIt stands on the pavement outside Haili Congregational Church, which means you can walk up to it at any hour without asking anyone.",
+      "verified_sources": [
+        "https://www.hawaiitribune-herald.com/2014/05/19/hawaii-news/treasured-tree-nearly-200-year-old-giant-gets-tender-loving-care/"
+      ],
+      "access": "Free, on a public street corner outside Haili Congregational Church",
+      "transport": "No dedicated stop; downtown Hilo, an easy walk from Kalakaua Park and the bayfront",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "On the pavement at the corner of Haili and Ululani, outside Haili Congregational Church. Branches in flat stacked tiers rather than a rounded crown.",
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "hbi_003",
+      "name": "The Rainbow Falls Banyan",
+      "species": "Indian Banyan (Ficus benghalensis)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Wailuku River State Park (Rainbow Falls), along the trail beyond the upper viewing platform, Hilo",
+        "latitude": 19.72,
+        "longitude": -155.11,
+        "neighbourhood": "Rainbow Falls / Wailuku River"
+      },
+      "story": "The register designates this tree and then records nothing about it. No girth, no height, no condition: just an Indian banyan at Rainbow Falls, protected under Act 105 like the rest, with every measurement column left blank.\n\nSo what stands here is described rather than measured. It grows along the trail that continues past the upper viewing platform above the falls, away from the crowd that stops at the railing, and it is the sprawling aerial-root kind of banyan rather than a single trunk: props coming down from the limbs and rooting where they land, which is how one of these walks slowly sideways over a century.\n\nNobody has published an age for it either, and that is the honest state of it rather than a gap we intend to fill with arithmetic. Banyans cannot be aged from girth anyway, because the figure would be a measurement of the whole colony rather than of one stem.\n\nWailuku River State Park is free and open from sunrise to sunset, and the falls themselves are the reason most people come. The tree is the thing you find by walking two minutes further than they do. If you know when it went in, tell us.",
+      "verified_sources": [
+        "https://www.wasabitourshawaii.com/rainbow-falls-a-must-visit-waterfall-on-the-big-island-hawaii/"
+      ],
+      "access": "Free, within Wailuku River State Park, generally open sunrise to sunset. A dedicated parking area serves the falls; no public bus stop at the trailhead.",
+      "transport": "A short drive or taxi ride from downtown Hilo; the tree stands past the upper viewing platform along the park trail, an easy walk from the parking area.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Keep walking past the upper viewing platform above the falls. The sprawling banyan with props rooting into the ground, not the falls themselves.",
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "hbi_004",
+      "name": "The Divi-Divi of Kalakaua Park",
+      "species": "Divi-Divi (Caesalpinia coriaria)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 330,
+      "location": {
+        "address": "Kalakaua Park, Hilo",
+        "latitude": 19.73,
+        "longitude": -155.09,
+        "neighbourhood": "Downtown Hilo"
+      },
+      "story": "A divi-divi is a strange thing to find protected in a Hawaiian town square. Caesalpinia coriaria comes from the dry forests of the Caribbean and Central America, it is the national tree of Curacao, and its seed pods were harvested for the tannin that turned hides into leather. Nothing about that story runs through Hilo, which gets more than three metres of rain a year.\n\nIt is here anyway, at 3.3 metres round, in good condition, one of three protected trees in Kalakaua Park along with the 1882 banyan and an endangered native palm. Hilo's own downtown walking tour includes the park's trees and describes them as more than a century old as a group, which is corroboration for the park and not a date for this tree, so no age is claimed here.\n\nThe species is worth looking at properly once you find it. Divi-divi grow slowly and hold their branches in a lopsided, wind-combed way even where there is no wind, and the pods curl into tight brown spirals that look more like something that fell off an animal than off a tree.\n\nThe park is small, open daily and free, and it sits in the middle of downtown, which makes all three of its trees one short stop rather than three.",
+      "verified_sources": [
+        "https://data.honolulu.gov/resource/84fd-3fzf.json?$limit=2000",
+        "https://www.downtownhilo.org/home/walking-tour"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "No dedicated stop; central downtown Hilo, an easy walk from the bayfront and most Hilo accommodation",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The smallest of the three protected trees in Kalakaua Park, with lopsided wind-combed branches and tightly curled brown seed pods.",
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "hbi_005",
+      "name": "The Loulu Palm of Kalakaua Park",
+      "species": "Loulu Palm (Pritchardia beccariana)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Kalakaua Park, Hilo",
+        "latitude": 19.73,
+        "longitude": -155.09,
+        "neighbourhood": "Downtown Hilo"
+      },
+      "story": "This palm is endangered in the wild and it is growing in a public park. Pritchardia beccariana is one of roughly two dozen loulu species found nowhere on earth but Hawaii, all of them threatened, and this one is native to the Big Island specifically. Rats eat the seeds, which is most of why they are disappearing.\n\nHawaii's exceptional-tree register lists it at 26 feet tall and rates its condition fair, which is an honest reading rather than a reassuring one. No girth is recorded, and none would help: a palm is not a tree in the way the ageing arithmetic assumes, with no annual rings and no secondary thickening, so nobody can put a number on how long it has stood here.\n\nLoulu once covered lowland Hawaii in forests dense enough that early accounts describe them as impassable. What is left is scattered specimens and small protected stands, which makes a healthy one in the middle of Hilo something closer to a museum piece than a park planting.\n\nIt shares Kalakaua Park with the banyan and the divi-divi, so all three are one stop, and it is the only one of them that belongs here.",
+      "verified_sources": [
+        "https://data.honolulu.gov/resource/84fd-3fzf.json?$limit=2000",
+        "https://www.hawaiitribune-herald.com/2018/01/28/features/tropical-gardening-rare-palms-abound-in-hawaiian-gardens/",
+        "https://www.downtownhilo.org/home/walking-tour"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "No dedicated stop; central downtown Hilo, an easy walk from the bayfront and most Hilo accommodation",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A fan palm in Kalakaua Park, not one of the feather-leaved coconuts. It is the only palm among the park's three protected trees.",
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}

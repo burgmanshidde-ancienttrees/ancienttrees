@@ -2290,6 +2290,15 @@
         "note": "Grouping by authority did exactly what it was meant to: Honolulu's Socrata feed answered all four Hawaii counties in one fetch (339 trees, CC0, coordinates, species, girth, height and a condition field), data.gov.cy answered Cyprus in one (81 trees, CC BY 4.0, and an AGE field, which almost nothing has), Yakushima resolved to the Japan script we already run, and Greece's four islands collapsed to a single empty verdict. Tokens are the harness's measured figure.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "hawaii",
+        "kind": "verify",
+        "tokens": 153672,
+        "trees": 5,
+        "note": "Opened Hilo off the register imported the same day. The pass refused three things correctly: a WebSearch claim that a banyan is 'one of the largest in the world' that it never saw on a fetched page, a bridge from the walking tour's 'park trees are over a century old' into one tree's age, and the Bodhi tree at a former school under hard rule 10. It also kept a genuine conflict open rather than picking, Sheriff Severance versus King Kalakaua as the 1882 planter. Tokens are the harness's measured figure, not the agent's 85k self-estimate.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
