@@ -210,6 +210,23 @@
    "cities_touched": 1,
    "trees": 1,
    "logged": false
+  },
+  {
+   "started": "2026-08-17T05:26:37+00:00",
+   "date": "2026-08-17",
+   "run_id": "31997906854",
+   "minutes": null,
+   "turns": null,
+   "denials": null,
+   "ended": null,
+   "tokens": null,
+   "claims_held": [
+    "vilnius"
+   ],
+   "commits": 20,
+   "cities_touched": 5,
+   "trees": 19,
+   "logged": false
   }
  ]
 }
