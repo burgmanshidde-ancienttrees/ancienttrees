@@ -4,6 +4,16 @@ Measured 2026-07-21. The question changed halfway through, and so did the answer
 
 It started as "can open data get us to every city in the world", which assumed publishing hundreds of trees per city. Hidde rejected that the same day: ten per city is what makes the passport work, and scarcity is the mechanism rather than a limitation. See BACKLOG.md. So the surviving question is narrower and more useful: **can open data cut the dull half of a city run, finding candidates and fixing coordinates, so runs spend their time on stories?**
 
+## Madeira: IFCN's ASMAC survey, a register passcheck did not know about (2026-08-17)
+
+**USABLE, and found by walking a URL number range.** Portugal's ICNF register does not reach Madeira, because the archipelago is an autonomous region and keeps its own. The Instituto das Florestas e Conservacao da Natureza (IFCN Madeira) published a VALCONMAC/ASMAC survey, "Arvores e bosques singulares da Madeira e Porto Santo": **11 Madeira entries plus 1 on Porto Santo**, each a numbered PDF at
+
+    ifcn.madeira.gov.pt/images/FotosArtigos/Florestas/ASMAC/ASMACnn.pdf
+
+found by walking nn across 71 to 100. Each card carries species, height, maximum perimeter or perimeters, a rough age note, WGS84 coordinates AND an access-and-ownership field, which is the field almost no register has and the one hard rule 10 turns on. Four of Madeira's twelve entries were blocked on exactly that field: a private hotel garden, a children's care institution, and a private rural hotel.
+
+**The transferable lesson, which is why this is written up rather than just used.** `passcheck.py` reported zero register candidates for Madeira and it was right about its own data and wrong about the world. An autonomous region, an island government or a province very often keeps a list that the national register does not include, and the Canaries showed the same shape a day earlier (no approved regional catalogue, but the Cabildo de Tenerife runs its own portal). So: **when the national register comes up empty for an island or an autonomous region, look for the regional institute before concluding there is no register.** Ten minutes of looking turned Madeira from a from-zero web-research pass into a register-led one.
+
 ## Estonia: EELIS kaitstavad looduse üksikobjektid, imported 2026-08-15 (VERDICT: usable, CC BY 4.0)
 
 **555 protected trees nationwide, 56 within 15 km of Tallinn** (#65 in the queue,
