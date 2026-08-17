@@ -94,6 +94,41 @@ Search terms that worked: "Pomniki przyrody w <city>", "<city> gamtos paveldo
 objektai", and the local-language phrase the law itself uses, which is usually
 better than any translation of "tree register".
 
+## Where no register exists: OSM tree nodes, and the island rules
+
+Found on the first island pass, Tenerife, 2026-08-17, and it generalises to
+anywhere rural.
+
+**OpenStreetMap tags individual famous trees as `natural=tree` nodes**, and for
+the Drago Milenario and both Vilaflor pines those nodes gave tree-level
+coordinates that matched the descriptive sources exactly. Free, fast, and it
+substitutes for the one thing a register normally provides and a tourist-board
+page never does: a pin. Query it through Nominatim or Wikidata rather than
+scraping. It is a COORDINATE source and nothing more; it says nothing about
+whether the tree is alive, reachable or worth the walk.
+
+**And where a region has no register, its island or provincial government often
+publishes a monumental-tree list anyway.** The Canaries have no approved
+regional catalogue (the 2006 draft was never adopted, and only Gran Canaria has
+an insular one, from 2021, which does not cover Tenerife). But the Cabildo de
+Tenerife runs its own monumental-tree portal, which named twelve trees island
+wide. Two notes: it is JavaScript-rendered, so plain curl returns nothing
+useful and a rendering fetch is needed; and a list like this is a lead list
+rather than a designation, so the two-source bar still applies in full.
+
+**Islands cluster by CAR, not on foot, and the page must say so.** Tenerife is
+80 km end to end. Its four trees are three separate stops: two pines 150 m
+apart at one viewpoint, then 15 to 20 km to the next. That is an honest day
+with a hire car and it is not a walk. Do not describe it as one, do not use
+"afternoon" for a set that spans the island, and put the real driving distance
+in the record. The clustering doctrine still holds, it just measures in
+kilometres by road instead of metres on foot.
+
+**Expect island passes to cost register-free rates.** Tenerife ran at ordinary
+web-research cost, not the 0.4k per tree a real register gives. The compensation
+is on the other side: nobody writes about these trees in English, so the
+competition for the page is close to nothing.
+
 ## Age: estimate it when you can, ask the reader when you cannot
 
 A missing age never holds a tree back, and it never has. What changed on
