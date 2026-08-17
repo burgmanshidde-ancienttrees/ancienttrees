@@ -9,6 +9,27 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-17 - The photo hunt for the 35 photo-less cities is measured out, and the finding is that the pictures do not exist
+
+Hidde asked for at least one photograph per city. A viewing pass worked the ranked shortlist and the result is worth recording rather than repeating: **of eight candidates judged across two sessions, two shipped.** Brisbane's Bodhi Tree and Alicante's Ficus del Passeig de Canalejas are live; one more is `held`.
+
+**What the six rejections were, because the pattern is the point and only one of them was about picture quality.**
+
+| city | candidate | why it failed |
+|---|---|---|
+| Copenhagen | the Pacifier Tree, CC0, well exposed | **the wrong tree**, in Ostre Anlaeg, three kilometres from ours in Frederiksberg Have; Denmark has several |
+| Cagliari | "Albero secolare, vista frontale" | trunk not visible, and the sweep had attached the same file to two different trees |
+| Catania | the botanical garden's dragon tree | the subject is the garden's entrance; the tree is a dark rim along the top |
+| Perugia | "Giardini del Frontone.JPG" | statues, event chairs and a dog, trees as scenery |
+| Toulouse | the Terre-Cabade hackberry | POOR on `photo_light.py`: flat, almost colourless |
+| Montreal, Groningen | iNaturalist observations, right species, geotagged | **a hand holding a single leaf.** iNaturalist is an identification platform and its photographs are identification photographs |
+
+**The conclusion, and it is a dead end worth writing down rather than re-running.** For these cities Commons and iNaturalist do not hold a photograph OF the individual tree. The filename can be made to score better and it changes nothing, because the picture a tree page needs was never taken. Poznan's "Krzysztof the Oak" matches a photograph of a politician named Krzysztof; Rotterdam's "Wilhelmina Linden" matches an archival portrait of the queen. Those are not tuning problems.
+
+**What remains, in order of cost.** (1) `data/leads/_famous-*.json`: **929 famous trees we do not map, 926 arriving with a photograph already attached.** Adding a tree that brings its own picture is cheaper than hunting a picture for a tree nobody photographed, and it adds a tree people have heard of. Two of Denmark's sit 12 and 13 km from central Copenhagen, inside the day-trip boundary. (2) Reader submissions, which is the standing flywheel. (3) Partner and permission sources.
+
+`scripts/photo_gaps.py` now carries every filter these rejections earned: archival dates, non-tree words, a required plant word in the TITLE rather than in the Commons categories (which include "Trees in X" almost regardless of subject), and iNaturalist demoted from a bonus to a penalty.
+
 ## 2026-08-17 - Helsinki: a "not worth it" vote on hel_006, checked and left as is
 
 Submission #5 (Supabase `submissions`, kind `feedback`) was a reader's "not worth it" vote on hel_006, the Meilahti Ancient Pine, no free-text reason and no specific complaint (unlike Prague's earlier "wrong location" chip). Re-checked both cited sources (kirkkojakaupunki.fi, hel.fi) and both still resolve and still support the story as written: a real, ring-dated ~340-year-old pine beside a Bronze Age burial cairn. Nothing factually wrong to fix. The page's own known weaknesses (no photo, `location_precision: approximate`, `curation_status: flagged`) likely explain a "not worth the trip" reaction better than any error would, and are already tracked as an honest gap rather than something this vote newly discovered. Single low-volume signal, not narrated as a trend per the digest rule. Marked processed in `data/submissions-processed.json`, nothing changed in `data/cities/helsinki.json`.

@@ -106,7 +106,16 @@ def names_match(tree, cand):
     if "wikidata" in src:
         score += 60
     if "inat" in src:
-        score += 12
+        # Demoted from a bonus to a penalty on 2026-08-17, after looking.
+        # iNaturalist is an IDENTIFICATION platform and its photographs are
+        # identification photographs: the Montreal candidate that scored well
+        # here is a hand holding a single oak leaf, and the Groningen one is
+        # the same shape. Both pass the exposure check and both fail the Cadiz
+        # standard outright, which bans close-ups of bark and leaves. A tree
+        # page needs the tree. Kept in the list rather than excluded, because
+        # an observation occasionally carries a whole-tree shot, but it should
+        # never outrank a candidate that names the tree.
+        score -= 20
     name_words = words(tree.get("name"))
     score += 25 * sum(1 for w in name_words if w in title)
     score += 8 * sum(1 for w in name_words if w in cats)
@@ -118,6 +127,27 @@ def names_match(tree, cand):
             score -= 12
     if cand.get("lat") is not None:
         score += 4        # a geotag is what settles which trunk it is
+    # A filename that is only a PLACE is a photograph of that place, and the
+    # trees are scenery in it. "Giardini del Frontone.JPG" scored 62 on the
+    # park's name and turned out to be statues, event chairs and a dog, with
+    # the trees as background; "Assistens Kirkegard, Copenhagen.jpg" was one
+    # cemetery view offered for five different trees. Neither is rescuable by
+    # weighting, because the photograph a tree page needs was never taken.
+    # So a candidate must carry at least one signal that a PLANT is the
+    # subject: a species word, or a word for tree in some language.
+    plant = set(GENERIC) | {"oak", "beech", "fig", "plane", "cedar", "yew",
+                            "lime", "linden", "elm", "pine", "cypress", "olive",
+                            "chestnut", "maple", "birch", "willow", "poplar",
+                            "ginkgo", "mulberry", "palm", "eucalyptus", "ficus",
+                            "quercus", "platanus", "fagus", "tilia", "pinus",
+                            "eik", "buche", "chene", "tiglio", "quercia",
+                            "medis", "drzewo", "strom", "traeet"}
+    # In the TITLE, not the categories. Commons files land in categories like
+    # "Trees in Perugia" almost regardless of subject, so testing cats let a
+    # Raphael painting score 4 and an equestrian bronze score 58. The title is
+    # what the uploader chose to call the thing.
+    if not any(w in title for w in plant):
+        return 0
     return max(score, 0)
 
 
