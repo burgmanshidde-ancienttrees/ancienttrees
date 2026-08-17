@@ -171,6 +171,44 @@ let the page ask the reader.** Somebody with a tape measure answers it in one
 message, and a correspondent is worth more than a number. Empty beats invented;
 empty no longer beats derived.
 
+## Why passes stall, and the four rules that came out of it
+
+Three verification passes died on 2026-08-17 with the same message, "no progress
+for 600s". Two of them were on Crete and one on Yakushima. What they had in
+common is worth more than the individual failures.
+
+**The proximate cause is a hanging network call.** The watchdog fires after ten
+minutes of silence, and a fetch that never returns produces exactly ten minutes
+of silence. All three stalled with their last words mid-reach: "Now the Plane
+Tree of Gortyn", "Wikidata has an entry. Let me pull its coordinates." A hard
+timeout on curl does not help when the hang is inside a fetch tool, which is why
+these rules are about EXPOSURE rather than about timeouts.
+
+1. **At most four named candidates per pass.** The passes that completed this
+   week (Copenhagen with three, Tenerife with four, every register-led city)
+   were short and specific. The two that died carried five or more names plus
+   an open invitation to find others. A fifth candidate is a second pass, not a
+   longer one.
+
+2. **Two attempts on a source, then move on and say so.** Record the host and
+   what it did in `verify_notes`, and go to the next tree. A tree with one
+   source and an honest note is worth more than a pass that never returns.
+
+3. **Prefer searching to fetching.** A search returns a summary quickly; a fetch
+   opens a connection to someone else's server and waits. Fetch when you need
+   an exact figure off a specific page, not to browse.
+
+4. **Append after every single tree, without exception.** This is the rule that
+   saved the week. Crete's first pass died having written two trees, and both
+   survived; its second died having written none. Yakushima's died at three, and
+   all three survived. Everything recovered from those three failures was
+   recovered because the file was already on disk.
+
+**And one framing rule for whoever writes the brief.** Crete's second pass spent
+its opening turns arguing with itself about whether it was the researcher or a
+dispatcher, and died before doing anything. A brief must say plainly: you are
+the verification pass, you do this research yourself, you dispatch nothing.
+
 ## Fetch discipline
 
 Every fetch gets a hard timeout: `curl -m 20`, or `timeout=` on urllib. Your
