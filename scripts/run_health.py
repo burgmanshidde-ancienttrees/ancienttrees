@@ -191,15 +191,24 @@ def append_health(record):
     except Exception:
         doc, runs = {}, []
     runs.append(record)
-    doc = {
-        "note": ("One record per night run, written by the workflow's own Run "
-                 "health step, never by the run. A run cannot leave this empty "
-                 "by giving up, which is the entire point: on 2026-08-15 four "
-                 "runs ended after nine minutes of a sixty minute window and "
-                 "left no trace at all. 'denials' counts commands the allowlist "
-                 "refused; it has never been below 4 and reached 25."),
-        "runs": runs[-400:],
-    }
+    # Rebuild note and runs, KEEP everything else. This used to assign a fresh
+    # two-key dict, which silently deleted any other key on the first night run
+    # after it was written: a `schedule_changes` block recording the 2026-08-16
+    # baseline (8 runs, 87.3 minutes, 28 trees) was destroyed within hours of
+    # being added, and it existed precisely so the next morning could measure
+    # whether the schedule change helped. A file that eats the context someone
+    # deliberately stored in it is worse than one that never accepted it.
+    if not isinstance(doc, dict):
+        doc = {}
+    doc["note"] = (
+        "One record per night run, written by the workflow's own Run health "
+        "step, never by the run. A run cannot leave this empty by giving up, "
+        "which is the entire point: on 2026-08-15 four runs ended after nine "
+        "minutes of a sixty minute window and left no trace at all. "
+        "'denials' counts commands the allowlist refused; it read 4 to 25 "
+        "until 2026-08-15 and has returned null since, because the SDK key "
+        "it reads went away. Treat a null as a broken instrument, not a zero.")
+    doc["runs"] = runs[-400:]
     with open(HEALTH, "w") as fh:
         json.dump(doc, fh, indent=1, ensure_ascii=False)
         fh.write("\n")
