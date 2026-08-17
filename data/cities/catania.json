@@ -1,152 +1,153 @@
 {
-  "city": "Catania",
-  "country": "Italy",
-  "status": "needs_curation",
-  "intro": "Catania's four monumental trees sit within a few minutes of each other on Via Etnea. Villa Bellini, the city's main public garden, holds a fig with a trunk fourteen metres round and a pair of individually registered bunya pines from Australia, all three free to see any day of the year. A short walk further up Via Etnea, a dragon tree from the Canary Islands stands behind the ticket desk of the university's botanical garden, sharing its staircase with a second, unregistered dragon tree.",
-  "meta_description": "Catania's monumental trees: a giant fig in Villa Bellini, twin Australian bunya pines, and a Canary Islands dragon tree on Via Etnea.",
-  "question_meta": "Catania's oldest dated tree is the Moreton Bay fig of Villa Bellini, said to have been planted around 1860. Where it stands, plus three more.",
-  "question_answer": "Catania's oldest tree with a claimed planting date is the Moreton Bay fig in Villa Bellini, which one source dates to 1860 and a second, independent registry puts nearer 146 years old; neither figure has been withdrawn, so this page states both rather than picking one. The other three trees here carry no age at all: two bunya pines in the same garden and a dragon tree in the university's botanical garden have never been dated by any source, which is normal for their species and stated plainly rather than guessed.",
-  "question_context": "Every tree on this page comes from Italy's national register of monumental trees, cross-checked against the independent Italian tree registry RAMI and, where it exists, local coverage. The national register gives girth and a surveyed position and rarely an age, which is why three of these four entries carry none, and its height figures for both bunya pines do not match RAMI's own measurements, a discrepancy each tree's own story states rather than silently resolves. Three of the four stand in Villa Bellini, Catania's main public garden, free and open daily; the fourth, a dragon tree, stands a few minutes further up Via Etnea inside the university's botanical garden, which charges a small entry fee and closes on Sundays, stated honestly in that tree's own access line. One further register candidate was checked and left off: a second large fig at Villa San Saverio, on the grounds of a university residential college with a controlled reception desk and no evidence of public access, kept as a lead rather than published.",
-  "faq": [
-    {
-      "q": "What is the oldest tree in Catania?",
-      "a": "The Moreton Bay fig in Villa Bellini, dated to around 1860 by one source, though a separate registry puts its age nearer 146 years. Neither figure is confirmed over the other."
-    },
-    {
-      "q": "Are Catania's monumental trees free to visit?",
-      "a": "Three of the four are. Villa Bellini, home to the fig and both bunya pines, is a free public park open daily. The dragon tree stands inside the university's botanical garden, which charges a small entry fee and closes on Sundays."
-    },
-    {
-      "q": "Can I see them all in one walk?",
-      "a": "Yes. All four stand within about a kilometre of each other on or just off Via Etnea, roughly a fifteen to twenty minute walk end to end from Catania Centrale station."
-    },
-    {
-      "q": "What is the biggest tree in Catania?",
-      "a": "The Moreton Bay fig in Villa Bellini, with a trunk about fourteen metres around and a crown reaching forty-three metres across, the second-largest of its kind recorded in Sicily."
-    }
-  ],
-  "hero_tree_id": "cat_001",
-  "oldest_tree_id": "cat_001",
-  "trees": [
-    {
-      "id": "cat_001",
-      "name": "The Moreton Bay Fig of Villa Bellini",
-      "species": "Moreton Bay Fig (Ficus macrophylla)",
-      "age_estimate": "roughly 165 years",
-      "age_min": 150,
-      "age_max": 170,
-      "location": {
-        "address": "Giardino Bellini (Villa Bellini), Via Etnea, Catania",
-        "latitude": 37.512543,
-        "longitude": 15.082687,
-        "neighbourhood": "Centro Storico"
-      },
-      "story": "Fourteen metres around the trunk, and a crown that reaches forty-three metres across. On the figures published by Italy's tree registers, only one Moreton Bay fig in Sicily is bigger, the giant in Palermo's botanical garden. What stops people in Villa Bellini, though, is at ground level. A Ficus macrophylla drops aerial roots from its branches and thickens them into buttresses once they reach soil, and this one has thrown a long, coiling sprawl of them out across the ground, the kind of shape that has people reaching for octopus tentacles to describe it.\n\nIts age is genuinely unsettled. One contributor account gives a planting date of 1860, which would make it about 165 years old and would have put it in the ground the year before Italy became a single country. The Italian registry that measured it most recently states an age of around 146. The two do not reconcile, neither has been withdrawn, so both are here.\n\nThe recent record is firmer. A 2026 assessment rates its health as adequate rather than good, and the bark carries graffiti and paint from visitors who could not keep their hands off it. Walk under it, walk around it, leave it alone. It stands in Catania's main public park on Via Etnea, free and open daily.",
-      "verified_sources": [
-        "https://ilregistrodeglialberi.it/12892-ficus-di-villa-bellini-ficus-della-baia-di-moreton-catania-ct-sicilia",
-        "https://www.florablog.it/2011/01/21/alberi-monumentali-il-ficus-macrophylla-del-giardino-bellini-a-catania/",
-        "italy-masaf register (sheet_id 01/C351/CT/19, girth 1400cm, locality Villa Bellini)"
-      ],
-      "access": "Free, Villa Bellini is Catania's main public park, open daily.",
-      "transport": "Central Catania on Via Etnea; about a 10-15 minute walk from Catania Centrale station or Piazza Stesicoro.",
-      "location_precision": "confirmed",
-      "curation_status": "flagged",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      }
-    },
-    {
-      "id": "cat_002",
-      "name": "The Larger Bunya Pine of Villa Bellini",
-      "species": "Bunya Pine (Araucaria bidwillii)",
-      "age_estimate": "not documented",
-      "age_min": null,
-      "age_max": null,
-      "location": {
-        "address": "Giardino Bellini (Villa Bellini), Via Etnea, Catania",
-        "latitude": 37.510622,
-        "longitude": 15.085181,
-        "neighbourhood": "Centro Storico"
-      },
-      "story": "Italy's national register of monumental trees records this bunya pine at 45 metres tall. That figure does not hold up. A second registry measured the same specimen at about 22 metres, and 45 would be remarkable for an Araucaria bidwillii growing anywhere outside its native forest. The trunk measurements agree far better, 3.40 metres around on the national sheet against 3.33 on the other, and that is the more useful number anyway.\n\nThe species grows wild in a few pockets of southeast Queensland and nowhere else on earth. It builds a dark, symmetrical dome on a straight column of a trunk, carries stiff glossy leaves in spirals along the branches, and drops cones weighing several kilograms from the top of the crown, which is why Australian parks sign the ground underneath them.\n\nVilla Bellini holds a whole collection of araucarias, the Norfolk Island pine, the Cook pine and the hoop pine among them, but only two are individually listed as monumental: this one and its neighbour, twenty to thirty metres away across the garden. From the path they read as a pair, and there is no reason to see them as anything else. No source records an age for either. Nobody wrote the planting down, and the two registries that took the trunks in hand did not attempt a figure.",
-      "verified_sources": [
-        "italy-masaf register (sheet_id 03/C351/CT/19, girth 340cm, locality Villa Bellini)",
-        "https://www.lasiciliainrete.it/directory-tangibili/listing/pino-del-queensland-di-villa-bellini-1/",
-        "RAMI registry specimen record 32351 (girth 3.33m at 1.30m height, height approx 22m)"
-      ],
-      "access": "Free, Villa Bellini is Catania's main public park, open daily.",
-      "transport": "Central Catania on Via Etnea; about a 10-15 minute walk from Catania Centrale station or Piazza Stesicoro.",
-      "location_precision": "confirmed",
-      "curation_status": "flagged",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      }
-    },
-    {
-      "id": "cat_003",
-      "name": "The Smaller Bunya Pine of Villa Bellini",
-      "species": "Bunya Pine (Araucaria bidwillii)",
-      "age_estimate": "not documented",
-      "age_min": null,
-      "age_max": null,
-      "location": {
-        "address": "Giardino Bellini (Villa Bellini), Via Etnea, Catania",
-        "latitude": 37.510803,
-        "longitude": 15.085108,
-        "neighbourhood": "Centro Storico"
-      },
-      "story": "Forty centimetres of trunk is the whole difference between this bunya pine and the one standing twenty to thirty metres away. Italy's national register lists them as two separate monuments, at 3.00 and 3.40 metres around, and a second registry re-measured them at 3.05 and 3.33. On height the difference more or less vanishes and may even run the other way: this one comes out at roughly 22.5 metres against its neighbour's 22, a gap nobody would pick out from the path. The national register puts this tree at 40 metres, which the independent measurement does not support and which reads as an error on the sheet, the same kind that inflates its neighbour to 45.\n\nAraucaria bidwillii is native to a small stretch of southeast Queensland, and in a Sicilian garden it does what it does at home: a straight bare column carrying a dark tiered crown, with leaves stiff and sharp enough to be worth not grabbing.\n\nNeither tree has a documented age. No planting record survives and neither register carries a figure, so what a visitor gets is size rather than years. The two stand close enough that they are one stop on a walk through Villa Bellini, which is the honest way to see them: side by side, forty centimetres apart in the paperwork and near enough identical in person.",
-      "verified_sources": [
-        "italy-masaf register (sheet_id 02/C351/CT/19, girth 300cm, locality Villa Bellini)",
-        "https://www.lasiciliainrete.it/directory-tangibili/listing/pino-del-queensland-di-villa-bellini-1/",
-        "RAMI registry specimen record 32352 (girth 3.05m at 1.30m height, height approx 22.5m)"
-      ],
-      "access": "Free, Villa Bellini is Catania's main public park, open daily.",
-      "transport": "Central Catania on Via Etnea; about a 10-15 minute walk from Catania Centrale station or Piazza Stesicoro.",
-      "location_precision": "confirmed",
-      "curation_status": "flagged",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      }
-    },
-    {
-      "id": "cat_004",
-      "name": "The Dragon Tree of the Orto Botanico",
-      "species": "Dragon Tree (Dracaena draco)",
-      "age_estimate": "not documented",
-      "age_min": null,
-      "age_max": null,
-      "location": {
-        "address": "Orto Botanico di Catania, Via Etnea 397, Catania",
-        "latitude": 37.515483,
-        "longitude": 15.084097,
-        "neighbourhood": "Via Etnea"
-      },
-      "story": "Two dragon trees flank the marble staircase of the botanical garden's neoclassical building. Italy's national register of monumental trees lists one of them, two metres round, and does not say which. Both are visible from the foot of the steps, so the question settles itself in person.\n\nDracaena draco is endemic to the Canary Islands and native nowhere near Sicily, and it looks the part: a pale grey trunk that forks, then forks again, into a flat crown of rosettes, each one a burst of stiff blue-green blades. The forking is how it grows. The stem divides only after it flowers, and it flowers at intervals of many years, which is also the reason nobody can tell you how old this tree is. A dragon tree lays down no annual rings, so the usual method simply does not apply, and no source has published an age for the Catania specimen.\n\nThe name is not decoration. Cut the bark and the sap oxidises dark red, sold across Europe for centuries as dragon's blood and used in varnish, dye and medicine.\n\nUnlike the two Villa Bellini trees a few minutes down Via Etnea, this one sits behind a ticket desk in the University of Catania's botanical garden: three euros, two reduced, weekdays until seven and Saturday mornings, closed Sundays.",
-      "verified_sources": [
-        "italy-masaf register (sheet_id 05/C351/CT/19, girth 200cm, locality Via Etnea 397)",
-        "https://www.lasiciliainrete.it/directory-tangibili/listing/albero-del-drago/",
-        "https://www.ortobotanicocatania.it/ (garden's own site, confirms address and two Dracaena draco specimens flanking the main building)"
-      ],
-      "access": "Paid entry to the Orto Botanico (University of Catania botanical garden): EUR3 full price, EUR2 reduced. Open Mon-Fri 9:00-19:00 (last entry 18:00), Sat 9:00-14:00 (last entry 13:00), closed Sundays and public holidays.",
-      "transport": "On Via Etnea in central Catania, about a 15-20 minute walk from Catania Centrale station, close to Villa Bellini.",
-      "location_precision": "confirmed",
-      "curation_status": "flagged",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      }
-    }
-  ]
+ "city": "Catania",
+ "country": "Italy",
+ "status": "needs_curation",
+ "intro": "Catania's four monumental trees sit within a few minutes of each other on Via Etnea. Villa Bellini, the city's main public garden, holds a fig with a trunk fourteen metres round and a pair of individually registered bunya pines from Australia, all three free to see any day of the year. A short walk further up Via Etnea, a dragon tree from the Canary Islands stands behind the ticket desk of the university's botanical garden, sharing its staircase with a second, unregistered dragon tree.",
+ "meta_description": "Catania's monumental trees: a giant fig in Villa Bellini, twin Australian bunya pines, and a Canary Islands dragon tree on Via Etnea.",
+ "question_meta": "Catania's oldest dated tree is the Moreton Bay fig of Villa Bellini, said to have been planted around 1860. Where it stands, plus three more.",
+ "question_answer": "Catania's oldest tree with a claimed planting date is the Moreton Bay fig in Villa Bellini, which one source dates to 1860 and a second, independent registry puts nearer 146 years old; neither figure has been withdrawn, so this page states both rather than picking one. The other three trees here carry no age at all: two bunya pines in the same garden and a dragon tree in the university's botanical garden have never been dated by any source, which is normal for their species and stated plainly rather than guessed.",
+ "question_context": "Every tree on this page comes from Italy's national register of monumental trees, cross-checked against the independent Italian tree registry RAMI and, where it exists, local coverage. The national register gives girth and a surveyed position and rarely an age, which is why three of these four entries carry none, and its height figures for both bunya pines do not match RAMI's own measurements, a discrepancy each tree's own story states rather than silently resolves. Three of the four stand in Villa Bellini, Catania's main public garden, free and open daily; the fourth, a dragon tree, stands a few minutes further up Via Etnea inside the university's botanical garden, which charges a small entry fee and closes on Sundays, stated honestly in that tree's own access line. One further register candidate was checked and left off: a second large fig at Villa San Saverio, on the grounds of a university residential college with a controlled reception desk and no evidence of public access, kept as a lead rather than published.",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Catania?",
+   "a": "The Moreton Bay fig in Villa Bellini, dated to around 1860 by one source, though a separate registry puts its age nearer 146 years. Neither figure is confirmed over the other."
+  },
+  {
+   "q": "Are Catania's monumental trees free to visit?",
+   "a": "Three of the four are. Villa Bellini, home to the fig and both bunya pines, is a free public park open daily. The dragon tree stands inside the university's botanical garden, which charges a small entry fee and closes on Sundays."
+  },
+  {
+   "q": "Can I see them all in one walk?",
+   "a": "Yes. All four stand within about a kilometre of each other on or just off Via Etnea, roughly a fifteen to twenty minute walk end to end from Catania Centrale station."
+  },
+  {
+   "q": "What is the biggest tree in Catania?",
+   "a": "The Moreton Bay fig in Villa Bellini, with a trunk about fourteen metres around and a crown reaching forty-three metres across, the second-largest of its kind recorded in Sicily."
+  }
+ ],
+ "hero_tree_id": "cat_001",
+ "oldest_tree_id": "cat_001",
+ "trees": [
+  {
+   "id": "cat_001",
+   "name": "The Moreton Bay Fig of Villa Bellini",
+   "species": "Moreton Bay Fig (Ficus macrophylla)",
+   "age_estimate": "roughly 165 years",
+   "age_min": 150,
+   "age_max": 170,
+   "location": {
+    "address": "Giardino Bellini (Villa Bellini), Via Etnea, Catania",
+    "latitude": 37.512543,
+    "longitude": 15.082687,
+    "neighbourhood": "Centro Storico"
+   },
+   "story": "Fourteen metres around the trunk, and a crown that reaches forty-three metres across. On the figures published by Italy's tree registers, only one Moreton Bay fig in Sicily is bigger, the giant in Palermo's botanical garden. What stops people in Villa Bellini, though, is at ground level. A Ficus macrophylla drops aerial roots from its branches and thickens them into buttresses once they reach soil, and this one has thrown a long, coiling sprawl of them out across the ground, the kind of shape that has people reaching for octopus tentacles to describe it.\n\nIts age is genuinely unsettled. One contributor account gives a planting date of 1860, which would make it about 165 years old and would have put it in the ground the year before Italy became a single country. The Italian registry that measured it most recently states an age of around 146. The two do not reconcile, neither has been withdrawn, so both are here.\n\nThe recent record is firmer. A 2026 assessment rates its health as adequate rather than good, and the bark carries graffiti and paint from visitors who could not keep their hands off it. Walk under it, walk around it, leave it alone. It stands in Catania's main public park on Via Etnea, free and open daily.",
+   "verified_sources": [
+    "https://ilregistrodeglialberi.it/12892-ficus-di-villa-bellini-ficus-della-baia-di-moreton-catania-ct-sicilia",
+    "https://www.florablog.it/2011/01/21/alberi-monumentali-il-ficus-macrophylla-del-giardino-bellini-a-catania/",
+    "italy-masaf register (sheet_id 01/C351/CT/19, girth 1400cm, locality Villa Bellini)"
+   ],
+   "access": "Free, Villa Bellini is Catania's main public park, open daily.",
+   "transport": "Central Catania on Via Etnea; about a 10-15 minute walk from Catania Centrale station or Piazza Stesicoro.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "cat_002",
+   "name": "The Larger Bunya Pine of Villa Bellini",
+   "species": "Bunya Pine (Araucaria bidwillii)",
+   "age_estimate": "not documented",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Giardino Bellini (Villa Bellini), Via Etnea, Catania",
+    "latitude": 37.510622,
+    "longitude": 15.085181,
+    "neighbourhood": "Centro Storico"
+   },
+   "story": "Italy's national register of monumental trees records this bunya pine at 45 metres tall. That figure does not hold up. A second registry measured the same specimen at about 22 metres, and 45 would be remarkable for an Araucaria bidwillii growing anywhere outside its native forest. The trunk measurements agree far better, 3.40 metres around on the national sheet against 3.33 on the other, and that is the more useful number anyway.\n\nThe species grows wild in a few pockets of southeast Queensland and nowhere else on earth. It builds a dark, symmetrical dome on a straight column of a trunk, carries stiff glossy leaves in spirals along the branches, and drops cones weighing several kilograms from the top of the crown, which is why Australian parks sign the ground underneath them.\n\nVilla Bellini holds a whole collection of araucarias, the Norfolk Island pine, the Cook pine and the hoop pine among them, but only two are individually listed as monumental: this one and its neighbour, twenty to thirty metres away across the garden. From the path they read as a pair, and there is no reason to see them as anything else. No source records an age for either. Nobody wrote the planting down, and the two registries that took the trunks in hand did not attempt a figure.",
+   "verified_sources": [
+    "italy-masaf register (sheet_id 03/C351/CT/19, girth 340cm, locality Villa Bellini)",
+    "https://www.lasiciliainrete.it/directory-tangibili/listing/pino-del-queensland-di-villa-bellini-1/",
+    "RAMI registry specimen record 32351 (girth 3.33m at 1.30m height, height approx 22m)"
+   ],
+   "access": "Free, Villa Bellini is Catania's main public park, open daily.",
+   "transport": "Central Catania on Via Etnea; about a 10-15 minute walk from Catania Centrale station or Piazza Stesicoro.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "cat_003",
+   "name": "The Smaller Bunya Pine of Villa Bellini",
+   "species": "Bunya Pine (Araucaria bidwillii)",
+   "age_estimate": "not documented",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Giardino Bellini (Villa Bellini), Via Etnea, Catania",
+    "latitude": 37.510803,
+    "longitude": 15.085108,
+    "neighbourhood": "Centro Storico"
+   },
+   "story": "Forty centimetres of trunk is the whole difference between this bunya pine and the one standing twenty to thirty metres away. Italy's national register lists them as two separate monuments, at 3.00 and 3.40 metres around, and a second registry re-measured them at 3.05 and 3.33. On height the difference more or less vanishes and may even run the other way: this one comes out at roughly 22.5 metres against its neighbour's 22, a gap nobody would pick out from the path. The national register puts this tree at 40 metres, which the independent measurement does not support and which reads as an error on the sheet, the same kind that inflates its neighbour to 45.\n\nAraucaria bidwillii is native to a small stretch of southeast Queensland, and in a Sicilian garden it does what it does at home: a straight bare column carrying a dark tiered crown, with leaves stiff and sharp enough to be worth not grabbing.\n\nNeither tree has a documented age. No planting record survives and neither register carries a figure, so what a visitor gets is size rather than years. The two stand close enough that they are one stop on a walk through Villa Bellini, which is the honest way to see them: side by side, forty centimetres apart in the paperwork and near enough identical in person.",
+   "verified_sources": [
+    "italy-masaf register (sheet_id 02/C351/CT/19, girth 300cm, locality Villa Bellini)",
+    "https://www.lasiciliainrete.it/directory-tangibili/listing/pino-del-queensland-di-villa-bellini-1/",
+    "RAMI registry specimen record 32352 (girth 3.05m at 1.30m height, height approx 22.5m)"
+   ],
+   "access": "Free, Villa Bellini is Catania's main public park, open daily.",
+   "transport": "Central Catania on Via Etnea; about a 10-15 minute walk from Catania Centrale station or Piazza Stesicoro.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Pino_del_Queensland_4.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Alacoolwiki, via Wikimedia Commons",
+    "status": "held",
+    "note": "meets the standard on quality but our two bunya pins are 21 m apart, so the geotag cannot tell the larger twin from the smaller"
+   }
+  },
+  {
+   "id": "cat_004",
+   "name": "The Dragon Tree of the Orto Botanico",
+   "species": "Dragon Tree (Dracaena draco)",
+   "age_estimate": "not documented",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Orto Botanico di Catania, Via Etnea 397, Catania",
+    "latitude": 37.515483,
+    "longitude": 15.084097,
+    "neighbourhood": "Via Etnea"
+   },
+   "story": "Two dragon trees flank the marble staircase of the botanical garden's neoclassical building. Italy's national register of monumental trees lists one of them, two metres round, and does not say which. Both are visible from the foot of the steps, so the question settles itself in person.\n\nDracaena draco is endemic to the Canary Islands and native nowhere near Sicily, and it looks the part: a pale grey trunk that forks, then forks again, into a flat crown of rosettes, each one a burst of stiff blue-green blades. The forking is how it grows. The stem divides only after it flowers, and it flowers at intervals of many years, which is also the reason nobody can tell you how old this tree is. A dragon tree lays down no annual rings, so the usual method simply does not apply, and no source has published an age for the Catania specimen.\n\nThe name is not decoration. Cut the bark and the sap oxidises dark red, sold across Europe for centuries as dragon's blood and used in varnish, dye and medicine.\n\nUnlike the two Villa Bellini trees a few minutes down Via Etnea, this one sits behind a ticket desk in the University of Catania's botanical garden: three euros, two reduced, weekdays until seven and Saturday mornings, closed Sundays.",
+   "verified_sources": [
+    "italy-masaf register (sheet_id 05/C351/CT/19, girth 200cm, locality Via Etnea 397)",
+    "https://www.lasiciliainrete.it/directory-tangibili/listing/albero-del-drago/",
+    "https://www.ortobotanicocatania.it/ (garden's own site, confirms address and two Dracaena draco specimens flanking the main building)"
+   ],
+   "access": "Paid entry to the Orto Botanico (University of Catania botanical garden): EUR3 full price, EUR2 reduced. Open Mon-Fri 9:00-19:00 (last entry 18:00), Sat 9:00-14:00 (last entry 13:00), closed Sundays and public holidays.",
+   "transport": "On Via Etnea in central Catania, about a 15-20 minute walk from Catania Centrale station, close to Villa Bellini.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  }
+ ]
 }

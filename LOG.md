@@ -11,6 +11,25 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+
+## 2026-08-17 (session) - Every live city was asked for one photograph; seven found one, and the filter that was hiding the rest got fixed
+
+Hidde asked for at least one photograph on every live city. 45 of the 127 published cities had none. Seven now do: **Ferrara, Braga, Brno, Palma de Mallorca, Tallinn, Wroclaw and Nuremberg**, each verified open licence with attribution recorded, each looked at as pixels before it shipped.
+
+**The honest headline is that the yield was low and the reason is worth more than the seven.** 219 candidates were viewed across 45 cities and 210 were rejected. They were not near misses: a 1941 postcard of a locomotive matched "Champion", an oil painting of the Oslo palace, a portrait of the physicist Konstanty Zakrzewski matched on a surname, a doorway letterbox matched on a street address, one cemetery photograph served for three different Copenhagen trees, and every Hobart candidate was photographed in Brisbane, 1,789 km away. The queue was never a queue of tree photographs; it was a queue of filename coincidences.
+
+**The find that pays for the day: our own filter was throwing the answers away.** The sweep only keeps a geosearch hit whose title names a plant, and it checked that against OUR species field, which is English. So "Naturdenkmal Linde in der Grünanlage Hallerwiese Nürnberg", CC0, standing 9 metres from our Nuremberg pin, was discarded because we file that tree as "Lime (Tilia sp.)" and the German for lime is Linde. That is a whole class of miss and it falls hardest on exactly the cities where nobody writes in English, which is most of the queue. `GENERIC_TREE_WORDS` now carries the local species names and the Naturdenkmal/pomnik/monumentale designations, `SWEEP_VERSION` is 5, so every negative ever recorded gets asked again for free on the next sweep.
+
+Only tokens of five characters or more went in, and that limit is load-bearing: `mentions()` anchors just the END of a token, so "den" is inside "garden", "es" ends every plural and "pin" is inside "Chopin". Tested before shipping, on the titles that would have flooded the queue.
+
+**New gear, all of it the cheap half of the work.** `photo_fetch.py` downloads a city's shortlist once, serialised at one request per three seconds (Wikimedia 429s above that), scores exposure on the way past and leaves a manifest, so several viewing passes can run at once without fighting the rate limit or each other. `photo_apply.py` and `photo_verdicts.py` record approve/hold/reject into the city file and the queue in one serialised sweep, because parallel judges would otherwise clobber the queue and the next pass would pay to judge the same images again; 210 rejections are now recorded and can never be re-judged. `photo_last_resort.py` asks for every geotagged photograph within 120 m with the plant-word filter off, for cities the ordinary sweep leaves empty; it found Nuremberg's lime.
+
+**Two things it got wrong and had to fix.** Its category-name search read "Curtain Square" as the Curtain Theatre and returned a map of Shakespearean London for a Melbourne plane tree; that half is now off by default, and 2,256 stored candidates carrying no coordinates were pruned, halving the queue file. And a last-resort candidate is now required to have a geotag, because proximity is the only evidence such a file carries.
+
+**What is left, stated plainly: 38 cities still have no photograph, and for most of them Commons genuinely has no picture of that tree.** Melbourne, Perugia, Potsdam, Quebec City, Reykjavik, Thessaloniki, Toronto and Zaragoza were checked twice, the second time against every geotagged photograph near the pin, and produced streetscapes, statues, a barge and an aircraft. Those are honest gaps and the answer is readers, partners or a new source, not another sweep. Three photographs are `held` rather than approved: Aarhus and Bangkok because no geotag settles which tree, Catania because our two bunya pins sit 21 m apart and the geotag cannot tell the twins apart.
+
+FOR HIDDE: nothing is blocked on you. Worth knowing that a second Claude session was working this same request in the same checkout at the same time and wrote `scripts/photo_gaps.py` for it; that tool is good and was adopted rather than duplicated, but two sessions on one task is the collision the in-flight claim exists to prevent.
+
 ## 2026-08-17 (session) - Walked the night-run ladder by hand to see where it fights a run, and it fought back four times
 
 Hidde asked for a night run performed and watched. So the Step 0 ladder was executed in order, with notes on every point of friction. It never got past rung 2, which is the correct outcome and also the interesting one.
