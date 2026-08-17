@@ -190,11 +190,80 @@ def shortlist(limit):
     return out[:limit]
 
 
+
+def famous_near(limit):
+    """Famous trees WITH a photograph, close to a city that has none.
+
+    Proved on 2026-08-17 rather than assumed. Copenhagen has 13 trees and no
+    photograph, and no photograph of its trees exists to find: the viewing pass
+    rejected six candidates across two sessions and the pattern was never
+    picture quality, it was that nobody photographed those trunks. Meanwhile
+    Klopstocks Eg sits 13 km outside Copenhagen, inside the day-trip boundary,
+    with three Commons photographs, and the first one opened is a textbook
+    Cadiz-standard image: an ancient oak filling the frame, trunk and crown
+    both readable, a bench for scale, CC BY-SA 4.0 with a named photographer.
+
+    So the cheaper move is to reverse the problem. Do not hunt a picture for a
+    tree nobody photographed; add a tree that arrives with its own, and which
+    people have heard of. This lists those pairings.
+
+    It is a RESEARCH list and never an import. Each one still needs a verify
+    pass to our bar: alive, two sources, a location we can state, publicly
+    reachable. The famous-trees name matching is deliberately loose and has
+    produced nonsense elsewhere.
+    """
+    from geo import km
+    need = [c for c in cities() if c["photos"] == 0 and c["trees"] >= PHOTO_FLOOR]
+    centres = {}
+    for c in need:
+        doc = json.load(open(os.path.join(ROOT, "data", "cities", c["slug"] + ".json"),
+                             encoding="utf-8"))
+        pts = [(t["location"]["latitude"], t["location"]["longitude"])
+               for t in doc["trees"] if (t.get("location") or {}).get("latitude") is not None]
+        if pts:
+            centres[c["slug"]] = (sum(p[0] for p in pts) / len(pts),
+                                  sum(p[1] for p in pts) / len(pts), c)
+    rows = []
+    for path in glob.glob(os.path.join(ROOT, "data", "leads", "_famous-*.json")):
+        try:
+            doc = json.load(open(path, encoding="utf-8"))
+        except Exception:
+            continue
+        for lead in (doc.get("leads") or []):
+            if lead.get("lat") is None or not lead.get("photos"):
+                continue
+            for slug, (la, lo, c) in centres.items():
+                d = km((la, lo), (lead["lat"], lead["lng"]))
+                if d <= 30:
+                    rows.append((d, slug, c["trees"], lead["name"], len(lead["photos"])))
+    rows.sort(key=lambda r: (r[0]))
+    seen, out = set(), []
+    for r in rows:
+        if r[1] in seen:
+            continue
+        seen.add(r[1])
+        out.append(r)
+    return out[:limit]
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--shortlist", action="store_true")
+    ap.add_argument("--famous", action="store_true")
     ap.add_argument("--limit", type=int, default=20)
     a = ap.parse_args()
+
+    if a.famous:
+        rows = famous_near(a.limit)
+        print("FAMOUS TREES WITH A PHOTOGRAPH, near a city that has none.")
+        print("A research list, never an import: each still needs a verify pass.\n")
+        if not rows:
+            print("  Nothing within 30 km of a photo-less city.")
+            return 0
+        print("  %-7s %-22s %-34s %s" % ("dist", "city (trees)", "famous tree", "photos"))
+        for d, slug, trees, name, n in rows:
+            print("  %5.1fkm %-22s %-34s %d" % (d, "%s (%d)" % (slug, trees), name[:34], n))
+        return 0
 
     all_cities = cities()
     none = [c for c in all_cities if c["photos"] == 0]
