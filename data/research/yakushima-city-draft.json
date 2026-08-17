@@ -1,0 +1,129 @@
+{
+ "city": "Yakushima",
+ "country": "Japan",
+ "kind": "island",
+ "status": "needs_curation",
+ "intro": "Yakushima's most famous cedar costs a full day. Jomon Sugi is 22 kilometres on foot, 10 to 11 hours, starting before dawn. Another costs a parking spot. Kigensugi stands beside a forest road at 1,230 metres, roughly 3,000 years old, free, with a platform around the trunk. Between the two sits Yakusugi Land, a paid boardwalk park where the loops run from 30 to 150 minutes. Pick the trip that fits the day you have, because on this island the walk is the whole difference.",
+ "meta_description": "Yakushima's Jomon Sugi is 2,000 to 7,000 years old and a 10 hour walk. Kigensugi is roughly 3,000 and stands beside the road. Three cedars, three ways in.",
+ "question_meta": "Jomon Sugi is Yakushima's oldest tree, dated anywhere from 2,170 to over 7,000 years. Why the range is that wide, and the 10 hour walk to reach it.",
+ "oldest_tree_id": "yak_001",
+ "question_answer": "The oldest tree on Yakushima is Jomon Sugi, a Japanese cedar at about 1,328 metres on the Ooboku trail in the island's mountain interior, and its age is genuinely unresolved: estimates run from roughly 2,170 years, from radiocarbon dating, to more than 7,000, from a 1976 ring-and-girth study. The town of Yakushima publishes the range as 2,170 to 7,200 years and calls the upper figure a theory. Take the low end and Kigensugi, the roadside cedar put at roughly 3,000 years, would be the older tree; take any other reading and Jomon Sugi is the oldest in Japan. The difference in getting to them is not close: Jomon Sugi is a 10 to 11 hour round trip on foot, Kigensugi is beside a road.",
+ "question_context": "A 1976 Kyushu University study measured rings and girth and concluded Jomon Sugi was over 7,000 years old, which is where the name came from: the Jomon period is Japan's neolithic. Later work pulled hard the other way. Radiocarbon dating at Gakushuin University on material from the core area returned 1,920 years give or take 150, capping the tree at roughly 2,170. Some researchers proposed that Jomon Sugi is not one tree but two or three fused around an older heart, which would explain young outer wood on an ancient trunk; a Kagoshima University isozyme analysis argued the opposite, that it is a single individual. Then there is the island's geology. The Kikai caldera erupted around 7,300 years ago and cleared large vegetation across southern Kyushu, which is used to argue that nothing growing here can be much older than four or five thousand years. Nobody is going to cut it down to settle it. The town of Yakushima publishes the range as 2,170 to 7,200 years and leaves it open, and so does this page. The other cedars here carry rounder numbers, roughly 3,000 years for Kigensugi and 1,800 for Buddha Sugi, neither derived from anything a source names.",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Yakushima?",
+   "a": "Jomon Sugi, on the Ooboku trail in the island's interior. Its age is disputed: radiocarbon work puts an upper bound near 2,170 years, a 1976 ring-and-girth study said over 7,000, and the town of Yakushima publishes the whole range as 2,170 to 7,200. On the lowest reading Kigensugi, at roughly 3,000 years, would be older."
+  },
+  {
+   "q": "How hard is it to reach Jomon Sugi?",
+   "a": "It is a full day of serious hiking, not a walk. The round trip is 10 to 11 hours on foot and about 22 kilometres, first along a disused logging railway bed and then up a steep mountain trail, and it starts before dawn to finish in daylight. From March to November the access road is closed to private cars, so you take a reserved shuttle bus from the Yakusugi Museum, booked a day ahead, and pay a conservation and trail fee on top. Boots, food, water and rain gear. Yakushima rains most days."
+  },
+  {
+   "q": "Which ancient cedar can you see without a long hike?",
+   "a": "Kigensugi, roughly 3,000 years old, stands right beside the Anbo forest road about fifteen minutes' drive past Yakusugi Land, with a viewing platform around it and no fee. Yakusugi Land itself charges a small entry fee and its loops run from 30 to 150 minutes on maintained boardwalk; Buddha Sugi is about halfway round the 50-minute one."
+  },
+  {
+   "q": "Can you still see Wilson's Stump?",
+   "a": "Yes, and it is worth the detour if you are already walking to Jomon Sugi, but it is a stump rather than a tree. The cedar was felled around 1586 and what remains is a vast hollow shell you can stand inside, with a heart-shaped opening to the sky. This list is living trees only, which is why it is not on it."
+  }
+ ],
+ "trees": [
+  {
+   "id": "yak_001",
+   "name": "Jomon Sugi",
+   "species": "Japanese Cedar (Cryptomeria japonica)",
+   "age_estimate": "fiercely disputed: at least 2,170 years, possibly over 7,000",
+   "age_min": 2170,
+   "age_max": 7200,
+   "girth_cm": 1610,
+   "location": {
+    "address": "Ooboku Trail, off the Arakawa Trail, Mount Miyanoura area, Yakushima, Kagoshima Prefecture",
+    "latitude": 30.3608,
+    "longitude": 130.5317,
+    "neighbourhood": "Yakushima National Park, interior, about 1,328m elevation"
+   },
+   "story": "It survived because its timber was no good. Edo-period loggers stripped Yakushima of its giant cedars for shingles and temple beams and walked past this one: the trunk is twisted, knotted and low-crowned, useless as lumber, which turned out to be the best protection an old tree on this island could have. Jomon Sugi is now Japan's most famous tree and the anchor of Yakushima's 1993 UNESCO listing, and nobody agrees on how old it is. A 1976 Kyushu University estimate from ring measurement and girth put it past 7,000 years, which is where the name comes from, Jomon being Japan's neolithic period. Radiocarbon work at Gakushuin University on material from the core area returned 1,920 years give or take 150, an upper bound near 2,170. Others argue it is two or three younger trunks fused around an older heart; a Kagoshima University study of its isozymes argues it is one individual. The town of Yakushima states the range as 2,170 to 7,200 years and calls the upper end a theory. What is not in doubt is the shape of it, 16.1 metres round, and the cost of getting there. The walk is 22 kilometres and 10 to 11 hours there and back, starting before dawn, and a deck 15 metres from the trunk is as close as anyone is allowed.",
+   "verified_sources": [
+    "https://www.town.yakushima.kagoshima.jp/soshiki/kanko_machizukuri/kankosushin/kankospot/yakusugikyoboku_chomeiki/312.html",
+    "https://ja.wikipedia.org/wiki/%E7%B8%84%E6%96%87%E6%9D%89",
+    "https://en.wikipedia.org/wiki/J%C5%8Dmon_Sugi"
+   ],
+   "access": "A full day of serious hiking, not an afternoon: 10 to 11 hours on foot for the round trip, about 22 km, starting before dawn. Viewing is from a deck about 15 metres from the trunk, built in 1996 to keep feet off the roots; you cannot walk up to the tree. The Arakawa trailhead road is closed to private cars from March to November, so access is by reserved shuttle bus from the Yakusugi Museum (roughly 2,000 yen return, booked a day ahead), plus a conservation and trail fee of 1,000 to 2,000 yen.",
+   "transport": "No public transport reaches the trailhead beyond the seasonal reserved shuttle bus from the Yakusugi Museum car park, which departs before dawn. From the trailhead it is 10 to 11 hours on foot there and back, roughly 22 km, mostly along a disused logging railway bed and then a steep mountain trail. No car reaches this tree.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "notes": "Japan's most famous ancient tree and the anchor of Yakushima's UNESCO listing (1993), discovered/named 1966-68. AGE IS OPEN AND CONTESTED, deliberately not resolved on the page: (1) a 1976 Kyushu University estimate using ring measurements and girth put it over 7,000 years, which is where the 7,200 figure and the 'Jomon' name come from; (2) later investigation raised the possibility it is a 'gattai-boku', 2-3 younger trees fused around an older core, with outer wood radiocarbon-dated to roughly 2,700 years (the core itself left unsampled, to protect the tree); (3) Gakushuin University radiocarbon dating of core-area material gave 1,920+/-150 years, an upper bound of about 2,170; (4) a Kagoshima University isozyme analysis argued it is NOT a fused tree but a single individual; (5) the island's own pyroclastic-flow history (Kikai caldera eruption ~7,300 years ago) is used to argue the tree cannot be much older than 4,000-5,000 years. The town of Yakushima's own tourism page states the range as 2,170-7,200 years and calls the upper figure a theory, with 2,170 as the chemically measured figure. Both ends are reported on the page and no average is taken. Physical size varies by source and era (height 22.2m per the town, vs 25.3-30m in older sources, likely crown dieback over decades; girth 16.1m per the town's current page vs 16.4m widely cited elsewhere); the town's current figures are used. ALIVE: yes, actively monitored, protection deck built 1996, suffered bark-stripping vandalism in 2005 but survived. ACCESS: 8-11 hour round trip depending on source (the town and japan-guide.com say roughly 10 hours; operators quote 10-11), about 22km, shuttle-bus-only access road (private cars banned March-November), reservation needed a day ahead, departs before dawn. The page states 10 to 11 hours in numbers and does not soften it. The tree was left uncut through the Edo-period yakusugi harvest precisely because its twisted wood was judged unusable as lumber."
+  },
+  {
+   "id": "yak_002",
+   "name": "Kigensugi",
+   "species": "Japanese Cedar (Cryptomeria japonica)",
+   "age_estimate": "roughly 3,000 years",
+   "age_min": 2000,
+   "age_max": 3000,
+   "girth_cm": 810,
+   "location": {
+    "address": "Roadside on the Anbo Forest Road (also signed as the Yodogawa Line), about 6 km / 15 minutes' drive past Yakusugi Land toward the Yodogawa Trailhead, Yakushima",
+    "latitude": 30.302739,
+    "longitude": 130.5435723,
+    "neighbourhood": "Yakushima interior, about 1,230m elevation"
+   },
+   "story": "This is the three-thousand-year-old cedar you can park next to. Kigensugi stands right beside the Anbo forest road, about fifteen minutes' drive past Yakusugi Land, with a wooden platform circling the trunk and no fee, no permit, no reservation and no hike. The island's famous cedar costs a ten hour day on foot. This one costs a parking spot, which makes it the sane entry point for anyone who wants to stand under something genuinely ancient without giving up a whole day to get there. The trunk is 8.1 metres around, a figure the town, the Kyushu Forest Office and Wikidata all give identically, and the tree sits at about 1,230 metres, high enough that cloud comes through it on most days. Height is less settled, 19.5 metres on the local tourism pages and 16.5 on Wikidata, and nobody has reconciled them. The age, roughly 3,000 years, is an estimate rather than a measurement and no source says what it was derived from, so read it as a wide band. The name means origin cedar, a reference to an age reaching back to the start of an era. Look at the trunk rather than the crown: more than a dozen other plants are growing on this tree, yamaguruma, Yakushima rhododendron and rowan among them, rooted in its bark and limbs.",
+   "verified_sources": [
+    "https://www.town.yakushima.kagoshima.jp/cust-facility/1586/",
+    "https://www.rinya.maff.go.jp/kyusyu/invitation/kyojin.kyojyu/kyo/98.html",
+    "https://www.wikidata.org/wiki/Q106318003"
+   ],
+   "access": "Free, no entry fee or permit needed; a viewing platform circles the tree. The only ancient yakusugi on the island you can drive to.",
+   "transport": "By car on the Anbo forest road, about 15 minutes past Yakusugi Land. By bus, only two round trips a day run from the Yakusugi Museum via Yakusugi Land and continue to this stop, so most visitors arrive by rental car or taxi.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "ai_generated",
+   "location_precision": "confirmed",
+   "notes": "The most accessible ancient yakusugi on the island, and the better entry point for this page than Jomon Sugi given the site's promise of a good afternoon out: no hike, a short drive and a walk around a platform. Girth 8.1m and elevation ~1,230m independently corroborated across the town's own tourism page, the Kyushu Forest Office (rinya.maff.go.jp, a national government source) and Wikidata; height is given as 19.5m by the town/prefecture tourism pages but 16.5m on Wikidata, published as a range rather than picking one. Age 'roughly 3,000 years' is an estimate with no stated basis in any source (likely comparison with other dated yakusugi of similar girth), so age_min/max is a loose band and the story says so. Name means 'Origin/Era Cedar'. Coordinates from Wikidata (Q106318003) land exactly on the Anbo forest road per OSM reverse geocoding, consistent with every description of the tree standing beside this road. Vitality: recent visitor reviews (2025) and continued presence on all current tourism materials confirm it is standing and accessible; it hosts over a dozen epiphytic plant species on its trunk and limbs (yamaguruma, Yakushima rhododendron, rowan and others). An old stump and another aged cedar stand near the platform per one visitor account, not verified further and not themselves candidates."
+  },
+  {
+   "id": "yak_003",
+   "name": "Buddha Sugi",
+   "species": "Japanese Cedar (Cryptomeria japonica)",
+   "age_estimate": "estimated 1,800 years",
+   "age_min": 1500,
+   "age_max": 1800,
+   "girth_cm": 800,
+   "location": {
+    "address": "On the Ancient Forest Course (the 50-minute loop) in Yakusugi Land, roughly midway around the 1.0 km circuit, near the Arakawa bridge, Yakushima",
+    "latitude": 30.30482,
+    "longitude": 130.57546,
+    "neighbourhood": "Yakusugi Land, about 1,010m elevation"
+   },
+   "story": "The Buddha in the name is a burl. This cedar's trunk is covered in lumps and swellings, and one of them reads as a face, which is how it collected both its names, Buddha Sugi and Shakasugi, after Shaka, the historical Buddha. Japan lists it as a National Special Natural Monument, the highest rank the country gives a natural feature. The trunk is eight metres around, the tree stands 21.5 metres, and the estimate attached to it is 1,800 years, though as with every yakusugi that number is repeated rather than derived and no source shows how it was reached. The tree is also hollow, and has been failing for a long time. Accounts from 1989 and from 2012 describe it in the same terms: the main body weakened and largely empty, only the upper branches still vigorous, with a suggestion that some of that upper growth is a separate plant rooted on top of the old trunk rather than the cedar's own. It is still a named stop on the Ministry of the Environment's current route map. A typhoon brought down Yayoi Sugi, another well known named cedar over at Shiratani Unsuikyo, in 2023, so nothing on this island is a fixture. Getting to this one is the opposite of Jomon Sugi: pay the small fee at Yakusugi Land, walk the fifty-minute boardwalk loop, and it is about halfway round.",
+   "verified_sources": [
+    "https://www.env.go.jp/park/yakushima/ywhcc/route/1-3.html",
+    "https://www.wikidata.org/wiki/Q106317997",
+    "https://www.woodtec.co.jp/lab/wood/praise-of-wood/076/"
+   ],
+   "access": "Paid entry to Yakusugi Land (a small conservation fee at the entrance), then the 50-minute Ancient Forest Course, a maintained boardwalk and stone-path loop of about 1 km needing no special gear and no reservation. The tree sits roughly halfway round.",
+   "transport": "By car or by the Yakusugi Land shuttle bus from Miyanoura or Anbo. From the Yakusugi Land entrance the tree is roughly a 25 to 30 minute walk into the loop.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate",
+   "notes": "Named for the Buddha-like face suggested by one of its many burls; also called Shakasugi (Shaka = Buddha). Designated a National Special Natural Monument. Girth given consistently as 8.0m (Wikidata and a 2012 visitor account agree), though one aggregated source quoted 12.6m; 8.0m treated as the better-supported figure. Height 21.5m from multiple sources. Age 'estimated 1,800 years' repeated across sources without a stated basis, so kept vague rather than tightened, and the story says so. VITALITY FLAG: multiple sources spanning 1989 to 2012 describe the trunk as hollow and the main body as weakened/declining, with only upper branches (possibly a separate epiphytic individual rooted on top) still vigorous. This appears to be a long-standing structural condition rather than a recent event, since it is described the same way 23 years apart, and the tree still appears as a named stop on the current Ministry of Environment route page and current tourism guides, with no news of it falling. No dated 2024-2026 report was found specifically confirming it still stands. DATE DISCREPANCY IN OUR OWN DATA: the verify notes for this tree dated the typhoon that felled nearby Yayoi Sugi to August 2024, while data/leads/yakushima.json quotes yakushima-tour.com directly saying August 2023. The story uses 2023, the directly quoted figure; worth settling. LOCATION: approximate, the loop trail's midpoint rather than a mapped tree-level coordinate; the pin is Yakusugi Land's general coordinate as an honest anchor, not the trunk itself."
+  }
+ ],
+ "not_ready_to_publish": "Three trees, one short of the four-tree floor. The fourth, Daio Sugi, is written and sourced (Japanese Ministry of the Environment: 11.1 m circumference, 24.7 m tall, over 3,000 years) but has NO COORDINATE. It stands on the Arakawa trail about four hours in, roughly half an hour before Jomon Sugi, which is an honest description and not a pin. Every one of the site's 1,310 live trees carries a coordinate, so shipping the first unpinned one on a map-first product is not a precedent to set for a single page. Publish the moment somebody establishes the position, or when a fourth locatable Yakusugi Land cedar (Sennensugi and Futagosugi are both on the 30-minute loop) is verified."
+}
