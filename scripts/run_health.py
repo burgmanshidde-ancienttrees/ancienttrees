@@ -87,6 +87,42 @@ def read_result(path):
     return {}
 
 
+DENIAL_KEYS = ("permission_denials_count", "permission_denials",
+               "num_permission_denials", "denied_tool_uses",
+               "tool_permission_denials", "blocked_tool_uses")
+
+
+def denials_from(result):
+    """How many commands the allowlist refused, and never a silent zero.
+
+    Returns (count, source_key). The count read 4 to 25 on every run until
+    2026-08-15 and has been null on every run since, because the SDK key this
+    read went away in a version bump. A null recorded as if it were a fact is
+    the same class of fault as the truncated Search Console readback and the
+    dead sendBeacon: an instrument that reads zero while nothing about the zero
+    looks broken. So try every name the field has plausibly taken, and when
+    none of them is present return the key list instead, which turns the next
+    run's record into the answer rather than another shrug.
+    """
+    if not isinstance(result, dict):
+        return None, "no result record"
+    for key in DENIAL_KEYS:
+        v = result.get(key)
+        if isinstance(v, (int, float)):
+            return int(v), key
+        if isinstance(v, list):
+            return len(v), key
+    # Nested one level, which is where SDKs usually move a counter to.
+    for holder in ("permissions", "stats", "metrics", "usage"):
+        sub = result.get(holder)
+        if isinstance(sub, dict):
+            for key in DENIAL_KEYS + ("denials", "denied", "refused"):
+                v = sub.get(key)
+                if isinstance(v, (int, float)):
+                    return int(v), f"{holder}.{key}"
+    return None, "NOT FOUND; result keys were: " + ",".join(sorted(result)[:24])
+
+
 def tokens_from(result):
     """Total tokens, when the result carries a usage block. None when it does not."""
     usage = result.get("usage")
@@ -307,6 +343,7 @@ def main():
     now = datetime.datetime.now(datetime.timezone.utc)
 
     ms = result.get("duration_ms")
+    denials, denials_source = denials_from(result)
     started_iso = args.started or now.replace(microsecond=0).isoformat()
 
     # A cancelled run is not an idle run, and until 2026-08-17 the meter counted
@@ -337,8 +374,14 @@ def main():
         "minutes": minutes,
         "minutes_basis": minutes_basis,
         "turns": result.get("num_turns"),
-        "denials": result.get("permission_denials_count"),
-        "ended": result.get("subtype") or ("error" if result.get("is_error") else None),
+        "denials": denials,
+        "denials_source": denials_source,
+        # A run with no result record did not "end" in any sense the SDK saw;
+        # it was killed. Saying so beats a null, because a null in this column
+        # was being read as "quiet night" for two nights running.
+        "ended": (result.get("subtype")
+                  or ("error" if result.get("is_error") else None)
+                  or ("cut off at the cap, no result record" if not result else None)),
         "tokens": tokens_from(result),
         "claims_held": claims_held(args.by),
     }
