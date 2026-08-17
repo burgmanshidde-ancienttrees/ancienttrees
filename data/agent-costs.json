@@ -2029,6 +2029,24 @@
     "note": "Deepened 9 to 10, register-backed: register PLU-H entry (id 4183) plus independent 2025 Mediacites piece both naming the same street-corner oak. Story written directly in session (single tree, not worth a write-stories batch). Two leads and three blocked (private-garden cedars) recorded.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "bratislava",
+    "kind": "verify",
+    "tokens": 148605,
+    "trees": 5,
+    "note": "New city, first Slovak page, register-backed: 5 of 31 candidates within 20km cleared two-source verification, chaining into a 1.7km walk from the Danube embankment to the castle slope. 1 dead tree caught (register lag, 2020 news), 1 gated hospital tree and several private-garden entries left as leads/blocked.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "bratislava",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 5,
+    "note": "Session work (tokens not metered by harness). Wrote all 5 stories directly plus city intro/FAQ/question page (new city, floor cleared at 5). Fixed a Paulownia tomentosa common-name collision with Milan's existing 'Empress Tree' caught by hard rule 9 at build time.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

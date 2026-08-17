@@ -1,0 +1,118 @@
+[
+  {
+    "id": "brt_001",
+    "name": "The Sophora of Vajanského Embankment",
+    "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+    "age_estimate": "roughly 110 years",
+    "age_min": 100,
+    "age_max": 120,
+    "location": {
+      "address": "Small park (parčík) on Vajanského nábrežie, Staré Mesto, Bratislava",
+      "latitude": 48.1399,
+      "longitude": 17.1113,
+      "neighbourhood": "Staré Mesto (Old Town)"
+    },
+    "verified_sources": [
+      "data/registers/slovakia-chranene-stromy.json (register_id 224, Štátna ochrana prírody SR, CC BY 4.0)",
+      "https://krizom-krazom.eu/regiony/chranene-stromy-v-okrese-bratislava-i"
+    ],
+    "access": "Free, in a small public park on the Danube embankment",
+    "transport": "Tram/bus stop Zochova or a short walk from Hviezdoslavovo námestie, under 10 minutes on foot",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register (id 224, tree_number 1) plus krizom-krazom.eu (independent Slovak protected-trees resource) agree: 18m tall, trunk girth 311cm, crown 16m across, declared a protected tree in 1996 citing cultural, scientific, landscape-forming, historical and aesthetic value. Krizom-krazom gives the age as 80 years AT the 1996 designation, which puts planting around 1916; age_min/max above is 2026-adjusted (100-120) from that base, so it is a derived estimate from a dated source figure, not our own guess. Species is Sophora japonica / Styphnolobium japonicum, an uncommon tree for a Bratislava park, which is part of why it was singled out. Flagged only because I have not independently found a third source or a photo confirming today's vitality; register + krizom-krazom is two sources per the bar. Coordinates are the register's tree-level point in the small embankment park, confirmed precision."
+  },
+  {
+    "id": "brt_002",
+    "name": "The Ash of Rudnayovo Square",
+    "species": "European Ash (Fraxinus excelsior)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Rudnayovo námestie, in front of St. Martin's Cathedral (Dóm sv. Martina), Staré Mesto, Bratislava",
+      "latitude": 48.1417,
+      "longitude": 17.1054,
+      "neighbourhood": "Staré Mesto (Old Town)"
+    },
+    "verified_sources": [
+      "data/registers/slovakia-chranene-stromy.json (register_id 227, Štátna ochrana prírody SR, CC BY 4.0)",
+      "https://bratislava.dnes24.sk/mozno-ani-neviete-ze-vo-vasom-okoli-rastie-chraneny-strom-v-bratislave-su-ich-desiatky-239668"
+    ],
+    "access": "Free, on a public square in front of the cathedral, open at all hours"
+    ,
+    "transport": "Adjacent to Bratislava Castle hill, short walk from Zochova tram stop or SNP Square, under 10 minutes",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Confirmed by two independent sources: the state register (register_id 227, tree_number 1, protection reason cites high biological and aesthetic value, rare occurrence, and cultural/historical/scientific/landscape/aesthetic significance) and a 2026 dnes24.sk news roundup of Bratislava's protected trees, which independently names 'Jaseň - Rudnayovom námestí' among the city's 29 protected trees. Could not find published height, girth or age for this specific specimen despite searching krizom-krazom.eu and enviroportal.sk (both had data for several sibling trees on the same register but not this one, or the pages would not render for this pass). Age left empty rather than guessed; the page should ask readers who can see the trunk to help. Location is the register's own point coordinate, on the open square directly in front of the cathedral entrance, so confirmed precision. Note: this tree does NOT appear on the bratislava.oma.sk / stare-mesto.oma.sk protected-tree map listings (28 and 27 entries respectively), which is odd since the register and the news article both include it; flagging this discrepancy rather than silently picking a side. Worth a quick recheck by whoever writes or re-verifies this city that the tree is still standing, since I could not find a recent photo or sighting report."
+  },
+  {
+    "id": "brt_003",
+    "name": "The Paulownia of Škarniclova Park",
+    "species": "Princess Tree (Paulownia tomentosa)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Škarniclova, in the small public park (Park Škarniclova) in front of the former student dormitory, Staré Mesto, Bratislava",
+      "latitude": 48.1451,
+      "longitude": 17.0998,
+      "neighbourhood": "Staré Mesto (Old Town)"
+    },
+    "verified_sources": [
+      "data/registers/slovakia-chranene-stromy.json (register_id 211, Štátna ochrana prírody SR, CC BY 4.0)",
+      "https://www.enviroportal.sk/stromy/detail/paulovnia-na-skarniclovej-ulici (Katalóg chránených stromov, Slovak Environment Agency)"
+    ],
+    "access": "Free, in a small public neighbourhood park (Park Škarniclova, a volunteer-restored green space bordered by a dormitory and a school path)",
+    "transport": "Short walk from Hodžovo námestie or the Palisády tram/trolleybus stops, under 10 minutes",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register (id 211) plus enviroportal.sk's protected-tree catalogue entry agree on the tree: Paulownia tomentosa, 20m tall, trunk girth 315cm, declared protected in 1996 for cultural, scientific, landscape, historical and aesthetic value. AGE CONFLICTS between sources and I am not picking a winner: one snippet attributes 'approximately 150 years' to a 2008 press mention, another (apparently sourced to enviroportal's own catalogue figures) gives 60 years with a 24m crown. Paulownia tomentosa is a very fast-growing species, so 60 years reaching this girth is biologically the more plausible figure, but that is my own reasoning, not a source calling the other one wrong, so age_estimate is left empty and both figures belong in the story with the disagreement stated. Accessibility confirmed independently: local reporting on 'Park Škarniclova' describes a volunteer-led 2020s renovation of this exact green space (bordered by a university dormitory on one side and a footpath to a school on the other) into a public neighbourhood park with a new path and planting, which is good access evidence beyond the register's bare 'pred internátom' (in front of the dormitory). Coordinates are the register's tree-level point in that park, confirmed precision."
+  },
+  {
+    "id": "brt_004",
+    "name": "The Oak of Šulekova Steps",
+    "species": "Adriatic Oak (Quercus virgiliana)",
+    "age_estimate": "roughly 100-120 years",
+    "age_min": 100,
+    "age_max": 120,
+    "location": {
+      "address": "Šulekova ulica 35, at the edge of the public stairway, Staré Mesto, Bratislava",
+      "latitude": 48.1502,
+      "longitude": 17.0967,
+      "neighbourhood": "Staré Mesto (Old Town)"
+    },
+    "verified_sources": [
+      "data/registers/slovakia-chranene-stromy.json (register_id 214, Štátna ochrana prírody SR, CC BY 4.0)",
+      "krizom-krazom.eu protected-trees-of-Bratislava-I entry, cross-checked via search snippet"
+    ],
+    "access": "Free, visible and reachable from the public Šulekova stairway; the register itself places the tree on the boundary between the steps and a private plot, so stand on the steps rather than stepping into the garden",
+    "transport": "Short walk uphill from Zochova or Podjavorinskej, under 10 minutes",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register (id 214, tree_number 1) plus an independent source agree: dub jadranský (Quercus virgiliana, Adriatic oak, an uncommon species this far north), 25m tall, trunk girth 360cm, crown 24m. Second source gives 'about 100 years old' at the time it was written, and notes double protection dates, 1982 and then re-confirmed 1996. age_min/max above (100-120) accounts for time elapsed since that figure was recorded rather than sharpening it, which is a derived estimate from a dated source figure. Access is the one judgement call on this entry: the register's own locality text says the tree sits 'na hranici súkromného pozemku a schodov' (on the border of a private plot and the steps), meaning it is not inside an enclosed private garden but growing right at a public stairway's edge, so it passes the 'can they get in without asking permission' test from the stairs. Flagged for the missing third source and because the precise boundary between step and private plot could not be confirmed from a photograph this pass."
+  },
+  {
+    "id": "brt_005",
+    "name": "The Birch of Mišíkova Street",
+    "species": "Paper Birch (Betula papyrifera)",
+    "age_estimate": "roughly 75-85 years",
+    "age_min": 75,
+    "age_max": 85,
+    "location": {
+      "address": "Mišíkova 36, on the street in front of the house, Staré Mesto, Bratislava",
+      "latitude": 48.1540,
+      "longitude": 17.1027,
+      "neighbourhood": "Staré Mesto (Old Town)"
+    },
+    "verified_sources": [
+      "data/registers/slovakia-chranene-stromy.json (register_id 223, Štátna ochrana prírody SR, CC BY 4.0)",
+      "krizom-krazom.eu protected-trees-of-Bratislava-I entry, cross-checked via search snippet"
+    ],
+    "access": "Free, standing in front of the house on the street side",
+    "transport": "Short walk from the Búdková or Búdkova cesta bus stops, roughly 10 minutes uphill",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register (id 223, tree_number 1) plus an independent source agree: Betula papyrifera (paper birch, a North American species planted here as an ornamental, an unusual choice for Bratislava), 8m tall, trunk girth 94cm, crown 8m, given as 50 years old at the 1996 designation, which is why age_min/max above (75-85) is 2026-adjusted from that dated figure rather than repeated as-is. Locality is 'pred domom' (in front of the house), which reads as street-facing rather than an enclosed private garden, unlike the several sibling register entries marked 'v záhrade' (in the garden) that this pass left as leads; treating this distinction (pred domom = street frontage) as the access test, but flagging it since I have no photograph confirming the birch stands on the public verge rather than just inside a low front fence. This is the smallest and youngest of the five trees delivered; included because it clears the bar (rare species for the region, sourced twice, precisely located) even though it is a modest specimen rather than a giant."
+  }
+]
