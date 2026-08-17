@@ -1,0 +1,180 @@
+#!/usr/bin/env python3
+"""Is anything at rung 2? One command, because rung 2 runs every single time.
+
+    python3 scripts/health.py
+
+Rung 2 of Step 0 is "the site is broken, fix it before adding anything new", and
+it is the step every run executes. Doing it by hand means four `gh run list`
+calls, three different staleness thresholds held in your head (8 days for the
+weekly analysis, 26 hours for the digest and the fresh-eyes review, latest-must-
+be-green for the smoke test), and reading REVIEW.md for a BLOCKER. Written out
+2026-08-17 while walking the ladder by hand: every one of those is a lookup a
+script can do, and a check that takes four commands and mental arithmetic is a
+check that gets skipped on a short window.
+
+Exit code is the answer: 0 nothing at rung 2, 1 something is. Prints what and
+what to do about it. Degrades to a printed line rather than an exception when
+`gh` is missing or unauthenticated, because this must never be the thing that
+stops a run from working.
+"""
+
+import datetime
+import json
+import os
+import re
+import subprocess
+import sys
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# workflow file -> (label, max age, what to do when it is stale)
+WATCHED = {
+    "smoke.yml": ("Smoke test", None, None),
+    "deploy.yml": ("Build and deploy", None, None),
+    "data-digest.yml": ("Data digest", datetime.timedelta(hours=26),
+                        "gh workflow run data-digest.yml"),
+    "review.yml": ("Fresh-eyes review", datetime.timedelta(hours=26),
+                   "gh workflow run review.yml"),
+    "weekly-analysis.yml": ("Weekly analysis", datetime.timedelta(days=8),
+                            "gh workflow run weekly-analysis.yml"),
+}
+
+
+def gh_latest(workflow):
+    """(conclusion, created_at) of the newest run, or None when gh cannot say."""
+    try:
+        out = subprocess.run(
+            ["gh", "run", "list", "--workflow", workflow, "-L", "1",
+             "--json", "conclusion,createdAt"],
+            capture_output=True, text=True, timeout=60, cwd=ROOT)
+        if out.returncode != 0:
+            return None
+        rows = json.loads(out.stdout or "[]")
+        if not rows:
+            return None
+        created = rows[0].get("createdAt", "")
+        when = datetime.datetime.fromisoformat(created.replace("Z", "+00:00"))
+        return rows[0].get("conclusion"), when
+    except Exception:
+        return None
+
+
+ANSWERED = os.path.join(ROOT, "data", "review-answered.json")
+
+
+def answered():
+    """BLOCKERs a run has already dealt with, so the ladder stops re-serving them.
+
+    REVIEW.md is the reviewer's file and it is append-only: fixing a finding does
+    not retract it, and the next review is 24 hours away. Without this ledger the
+    rung-2 check reports the same BLOCKER to every knock in between, so with six
+    knocks a day a run could re-litigate a finding five times after it was fixed.
+    Recorded per review date with a note, by `health.py --answer <date> "<note>"`.
+    """
+    try:
+        return json.load(open(ANSWERED))
+    except OSError:
+        return {"note": "BLOCKERs from REVIEW.md that a run has answered, keyed by "
+                        "the review date. health.py stops reporting these.",
+                "answered": {}}
+    except ValueError:
+        return {"answered": {}}
+
+
+def record_answer(date, note):
+    doc = answered()
+    doc.setdefault("answered", {})[date] = {
+        "note": note,
+        "at": datetime.datetime.now(datetime.timezone.utc).replace(
+            microsecond=0).isoformat(),
+    }
+    with open(ANSWERED, "w") as fh:
+        json.dump(doc, fh, indent=2, ensure_ascii=False)
+    print(f"recorded: the {date} BLOCKER is answered. {note}")
+
+
+def newest_review_block():
+    """The most recent dated section of REVIEW.md, as text."""
+    path = os.path.join(ROOT, "REVIEW.md")
+    try:
+        text = open(path, encoding="utf-8").read()
+    except OSError:
+        return "", ""
+    parts = re.split(r"^## (\d{4}-\d{2}-\d{2})\s*$", text, flags=re.M)
+    # parts = [preamble, date, body, date, body, ...]; newest first in the file
+    if len(parts) < 3:
+        return "", ""
+    return parts[1], parts[2]
+
+
+def main():
+    if "--answer" in sys.argv:
+        i = sys.argv.index("--answer")
+        rest = sys.argv[i + 1:]
+        if len(rest) < 2:
+            print('usage: health.py --answer <YYYY-MM-DD> "<what was done>"')
+            return 2
+        record_answer(rest[0], " ".join(rest[1:]))
+        return 0
+    now = datetime.datetime.now(datetime.timezone.utc)
+    problems = []
+    unknown = []
+
+    for wf, (label, max_age, remedy) in WATCHED.items():
+        got = gh_latest(wf)
+        if got is None:
+            unknown.append(label)
+            continue
+        conclusion, when = got
+        age = now - when
+        hours = age.total_seconds() / 3600
+        if conclusion not in ("success", None) and conclusion != "cancelled":
+            problems.append(f"{label} is {conclusion} (its newest run, {hours:.0f}h ago). "
+                            "The site may be broken; read the failing log before anything else.")
+        if max_age and age > max_age:
+            problems.append(f"{label} has not run in {hours:.0f}h "
+                            f"(threshold {max_age.total_seconds()/3600:.0f}h). "
+                            f"GitHub drops schedules silently: {remedy}")
+        state = conclusion or "in progress"
+        print(f"  {label:20s} {state:10s} {hours:5.1f}h ago")
+
+    date, body = newest_review_block()
+    if date:
+        # Match the reviewer's own heading form, "**BLOCKER — ...", not any line
+        # mentioning the word. The first version of this check counted the file's
+        # own legend and a sentence about YESTERDAY's blocker being fixed, and
+        # reported three where there was one. A check that cries wolf is a check
+        # that gets ignored, which is worse than not having it.
+        def headings(word):
+            return [ln for ln in body.splitlines()
+                    if re.match(r"\s*\*\*" + word + r"\b", ln)]
+        blockers, warns = headings("BLOCKER"), headings("WARN")
+        print(f"  {'REVIEW.md':20s} {date:10s} "
+              f"{len(blockers)} BLOCKER, {len(warns)} WARN")
+        already = answered().get("answered", {}).get(date)
+        if blockers and already:
+            print(f"  {'':20s} {'':10s} its BLOCKER is recorded as answered: "
+                  f"{already.get('note','')[:70]}")
+        if blockers and not already:
+            problems.append(f"REVIEW.md {date} carries a BLOCKER. Runs treat it as rung 2, "
+                            "so it outranks new coverage. First line: "
+                            + blockers[0].strip()[:160])
+    else:
+        unknown.append("REVIEW.md")
+
+    if unknown:
+        print(f"\n  could not check: {', '.join(unknown)} "
+              "(gh missing, unauthenticated, or the file is absent)")
+
+    if problems:
+        print(f"\nRUNG 2: {len(problems)} thing(s) to deal with before new coverage\n")
+        for p in problems:
+            print(f"  - {p}")
+        return 1
+    print("\nRUNG 2 clear: nothing broken, nothing stale, no BLOCKER. "
+          "Move down the ladder.")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
