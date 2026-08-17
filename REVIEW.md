@@ -13,6 +13,99 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-08-17
+
+Reviewed since the last review commit (`f72c8d5`, 2026-08-16 07:02 UTC): 131
+commits, roughly a day and a half of night-run and session work. New cities:
+Graz (8, then 10), Bratislava (5), Toronto (4), Montreal (7), Vilnius (7),
+Tallinn (4). Grown: Milan (17 to 19), Krakow (6 to 10), Lyon (9 to 10),
+Alicante (9 to 10), Warsaw (dead tree retired, 5 to 7). Opened: Canada
+country page, Field Maple species page. Product/infra: the funnel-tracking
+beacon bug fixed (every event had read zero since launch), MapLibre and
+Gabarito self-hosted off Google/unpkg, the vote/problem-report control
+split apart, the night-run schedule changed from 9x60 to 6x90 minutes, two
+run-health measurement bugs fixed. Yesterday's BLOCKER (Potsdam/Berlin
+duplicate trees) was fixed same-day with a preventive cross-city-distance
+check added to preflight.py, confirmed still passing. Ran `python3
+scripts/qa.py` (1990 pages, clean) and `python3 scripts/superlatives.py`
+(371 claims, no collisions) against the built site.
+
+**BLOCKER — Milan's Archdevil hackberry (mil_019) is published on the private grounds of an inhabited residence, against hard rule 10's absolute "not somebody's home" test.** `data/cities/milan.json` mil_019, live at
+`/milan/archdevil-of-villa-marietti-radice-fossati`, stands in the interior
+courtyard of Villa Marietti Radice Fossati, a building the story itself
+says the Comune di Milano "lent to a small community of Jesuit fathers, who
+still live there today." The page's own `access` field reads: "Free to
+enter through the villa's gate, but it is a lived-in community, not a
+public park; the city's own guidance is to enter with the discretion due to
+an inhabited place rather than to treat the gate as a tourist entrance."
+The Milan FAQ repeats it: "the villa courtyard housing the Archdevil
+hackberry, ... asks for quiet discretion rather than a fee since it is a
+lived-in community."
+
+Hard rule 10 draws three tests for the access half, and the story passes
+two (no gate to ask past, and the access line is honest) but fails the
+third outright: "Is it not somebody's home? Front gardens, courtyards of
+dwellings, private houses and their grounds stay out, whatever the register
+says and however fine the tree. This one does not bend, because the person
+we would be sending strangers to never asked for any of it." An arcaded
+inner courtyard of a villa where a religious community currently lives is a
+courtyard of a dwelling in exactly the sense that sentence means, and the
+entry's own copy concedes it by asking readers for "discretion" before
+walking in on people's home. That the comune itself lists the tree on its
+monumental-trees page does not settle the question; hard rule 10 is
+explicit that ground type and a register's inclusion do not override the
+home test.
+
+The entry's own `notes` field shows this was a judgement call rather than
+an oversight: an earlier pass held the tree back "only for standing alone,"
+and this pass published it anyway citing the count doctrine (distance from
+other trees is not grounds for exclusion), without weighing the private-
+residence question at all. The fix is a run's to make: either retire the
+entry (folding it to a lead, per the pattern already used for Potsdam and
+Zaragoza) or, if there is real evidence visitors are routinely admitted to
+this specific courtyard regardless of who lives there, restate the access
+line to say so plainly rather than asking for "discretion" — the same
+distinction hard rule 10 draws for the Hobart Government House oak
+(view-only, publishable) versus a private garden (not).
+
+**NOTE (Monday corpus audit) — CLAUDE.md's own description of how runs fire is stale again, the same way the paragraph it sits in was written to correct.** "How they actually fire" (the paragraph starting "corrected
+2026-08-12") says: "The only trigger is nightly.yml's nine cron knocks a
+day, each capped at 60 minutes." `.github/workflows/nightly.yml` now runs
+six knocks a day capped at 90 minutes each (changed 2026-08-16, commit
+`4e86faa`, "Six knocks of 90 minutes instead of nine of 60"; the new
+schedule is also recorded in `data/run-health.json`'s `schedule_changes`
+block). The paragraph's own text is about a previous instance of exactly
+this failure mode: a claim about the schedule going stale while the
+schedule moved on. Worth a one-line update the next time this paragraph is
+touched; not gating anything, since `scripts/run_health.py` now reads the
+real timeout from the workflow file directly rather than trusting this
+prose.
+
+**Nothing else found at BLOCKER or WARN.** Spot-checked and clean:
+Graz's holdback of a kindergarten Paulownia and a youth-care-home tree
+pair under the school-grounds rule (documented in the city's own
+`question_context`); Bratislava's private-plot-boundary oak (brt_004,
+correctly worded to view from the public stairway rather than stepping
+onto the neighbouring private plot); the Toronto Echo Valley "shared
+coordinate" trap (five register entries on one identical lat/lng, caught
+and not promoted to separate pins); Montreal's cemetery trees (all
+`approximate`, sourced from the city's own montroyal.montreal.ca pages,
+correctly flagged single-sourced rather than treated as two-source
+verified, and correctly NOT scraped as a register import given the site's
+all-rights-reserved notice); Warsaw's Sowinski's Linden retirement (dead
+since 1986, delisted 2012, redirect added so the old URL still resolves,
+exactly the Potsdam/Zaragoza pattern); several derived-age entries (Geneva's
+cedar, Krakow's columnar oak, Poznan's plane) that state their growth-rate
+basis, keep the range broad and flag rather than sharpen a vague figure,
+per the 2026-08-16 estimate-vs-invention rule. No em dashes, banned words,
+fabricated ages, or bridge claims found in the reviewed pages. The
+self-hosting changes (MapLibre, Gabarito) and the sendBeacon fix were
+checked against their stated behaviour (identical bytes vendored, licences
+recorded, build still constructs maps) rather than taken on the commit
+message's word.
+
+---
+
 ## 2026-08-16
 
 Reviewed since the last review commit (`e33ef1f`, 2026-08-15 06:59 UTC): 101
