@@ -604,6 +604,30 @@ def print_inflight(target, live):
             f"{c['target']}({c['kind']}, {c['age_hours']}h)" for c in others))
 
 
+def default_holder():
+    """Who is claiming: a night run, or THIS session specifically.
+
+    Every local session used to claim as the bare string "session", and on
+    2026-08-17 there were three of them running against this one checkout at
+    once. That makes the lock transparent exactly between the parties it exists
+    to separate: `--brief <place> --as session` satisfies the holder check no
+    matter which session actually claimed the place, so two sessions can each
+    open a brief for the same city and neither is warned. That is the Padova
+    collision the lock was built for, 89,000 tokens for nine stories written
+    twice, and the local case was never covered.
+
+    Claude Code exports CLAUDE_CODE_SESSION_ID, so a session can name itself.
+    Eight characters is plenty to tell concurrent sessions apart and keeps
+    in-flight.json readable. Falls back to the bare "session" when nothing
+    identifies us, which is the old behaviour rather than a crash.
+    """
+    if os.environ.get("GITHUB_RUN_ID"):
+        return "night-run"
+    sid = (os.environ.get("CLAUDE_CODE_SESSION_ID")
+           or os.environ.get("CLAUDE_SESSION_ID") or "")
+    return f"session-{sid[:8]}" if sid else "session"
+
+
 def do_claim(target, kind, by):
     doc, live = load_inflight()
     existing = claims_for(target, live)
@@ -869,7 +893,7 @@ def main():
             i = args.index("--kind")
             kind = args[i + 1]
             del args[i:i + 2]
-        by = os.environ.get("GITHUB_RUN_ID") and "night-run" or "session"
+        by = default_holder()
         if "--by" in args:
             i = args.index("--by")
             by = args[i + 1]
@@ -894,7 +918,11 @@ def main():
         # --as <who> lets the claim HOLDER print the brief for its own pass;
         # anyone else stays refused. Found five minutes after the lock shipped,
         # when it refused its own author the Rome brief he had just claimed.
-        as_who = None
+        # Default to whoever we are, so the holder never has to type --as for
+        # its own brief and a DIFFERENT session is still refused. Before this,
+        # --as was required and every session answered to "session", which made
+        # the lock invisible between concurrent local sessions.
+        as_who = default_holder()
         if "--as" in args:
             i = args.index("--as")
             as_who = args[i + 1]
