@@ -1,0 +1,155 @@
+{
+ "city": "Tenerife",
+ "country": "Spain",
+ "status": "needs_curation",
+ "intro": "Tenerife is an island, and this is not a walk. Four trees at three stops, with a car between them. Two record-holding Canary pines stand 150 metres apart at a free roadside viewpoint above Vilaflor de Chasna, 1,400 metres up. The dragon tree most visitors come for, El Drago Milenario, is some 25 kilometres north in Icod de los Vinos, and a fig with a colonnade of aerial roots grows about 20 kilometres east of that, in the botanical garden at Puerto de la Cruz. One day covers all four.",
+ "meta_description": "Tenerife's four remarkable trees: El Drago Milenario, which its own species makes impossible to date, and the tallest and thickest native trees in Spain.",
+ "question_meta": "Tenerife's oldest undisputed tree is Pino Gordo, 700 to 800 years, above Vilaflor. The famous Drago cannot be dated at all. Four trees, three stops.",
+ "oldest_tree_id": "tfe_002",
+ "question_answer": "The oldest tree on Tenerife whose age nobody disputes is Pino Gordo, a Canary pine of roughly 700 to 800 years standing beside the TF-21 above Vilaflor de Chasna. The island's famous El Drago Milenario at Icod de los Vinos may well be older, but its species grows no annual rings and cannot be dated: current science puts it at roughly 550 to 850 years, tradition at a thousand or more, and neither figure can be checked.",
+ "question_context": "Tenerife's age question has an awkward answer, because the island's most famous tree is the one nobody can date. El Drago Milenario in Icod de los Vinos is a Dracaena draco, and dragon trees lay down no annual growth rings, so there is no cross section to count and no reliable way to read years off a trunk this species builds. Current scientific work puts it near 700 years with a margin of a century or more either way. The name and the tourist literature say a thousand or more. Both figures circulate and neither can be settled. Pino Gordo, above Vilaflor de Chasna, is the oldest tree on this list with an estimate nobody argues about: roughly 700 to 800 years, on a trunk 9.36 metres round, the thickest native tree in Spain. Its neighbour 150 metres along the same short trail, Pino de las Dos Pernadas, is 500 to 600 years and 56 metres tall, the tallest native tree in Spain. The youngest here is El Gran Ficus at Puerto de la Cruz, planted in the 1870s. The two pines cost nothing to visit; the Drago and the fig both charge entry.",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Tenerife?",
+   "a": "Pino Gordo above Vilaflor de Chasna, a Canary pine of roughly 700 to 800 years, is the oldest of these four with an age nobody disputes. El Drago Milenario at Icod de los Vinos may be older, but dragon trees have no annual growth rings, so estimates for it run from about 550 years to well over a thousand."
+  },
+  {
+   "q": "Why can nobody agree on how old El Drago Milenario is?",
+   "a": "Dracaena draco does not lay down annual growth rings, so the usual way of dating a tree does not work on it. A modern study puts it at roughly 700 years give or take a century or more; local tradition and the tree's own name say a thousand or more."
+  },
+  {
+   "q": "Can you see El Drago Milenario without paying?",
+   "a": "Partly. The tree is visible from outside Parque del Drago, the park laid out around it in 1996, but the full view of the crown and the base is from inside, and the park charges entry."
+  },
+  {
+   "q": "Do you need a car to see these four trees?",
+   "a": "Realistically yes. The two pines stand at a signed viewpoint on the TF-21 mountain road with no direct bus, and Icod de los Vinos and Puerto de la Cruz are separate towns on the north coast, roughly 20 kilometres apart. Three stops in a day is comfortable by car."
+  }
+ ],
+ "trees": [
+  {
+   "id": "tfe_001",
+   "name": "El Drago Milenario",
+   "species": "Dragon Tree (Dracaena draco)",
+   "age_estimate": "disputed: a modern study puts it near 700 years, popular tradition says 1,000 years or more",
+   "age_min": 550,
+   "age_max": 1000,
+   "location": {
+    "address": "Parque del Drago, Icod de los Vinos, Tenerife",
+    "latitude": 28.3666394,
+    "longitude": -16.7221922,
+    "neighbourhood": "Icod de los Vinos"
+   },
+   "story": "Nobody can date this tree, and nobody is going to. Dracaena draco lays down no annual growth rings, so the standard method of reading a trunk fails on it completely, and the estimates fill the vacuum accordingly: current scientific work puts El Drago Milenario near 700 years with a margin of a century or more either way, while tradition, the tourist literature and the tree's own name insist on a thousand or more. The name is a claim, not a measurement. What can actually be measured is everything else. The base is about 20 metres around, the tree stands 18 to 21 metres tall depending on who did the measuring, and the crown spreads roughly 20 metres across on more than 300 primary branches, which together make it the largest and oldest known living specimen of its species anywhere. Spain declared it a national monument in 1917. It has needed help since: conservators opened it up in 1985 to install internal ventilation against fungal rot, and in 1993 the road that ran past it was moved to spare it exhaust fumes and passing hands. The sap runs red when the bark is cut, the dragon's blood that Europe once bottled as dye and medicine. It stands in Icod de los Vinos, in a park built around it in 1996, partly visible from the street and properly visible only from inside.",
+   "verified_sources": [
+    "https://es.wikipedia.org/wiki/Drago_de_Icod_de_los_Vinos",
+    "https://en.wikipedia.org/wiki/El_Drago_Milenario",
+    "https://icoddelosvinos.es/patrimonio/drago-milenario/"
+   ],
+   "access": "Paid entry to Parque del Drago, the 3-hectare botanical park laid out around the tree in 1996. The tree is partly visible from outside the park; the full view of the crown and base is from inside.",
+   "transport": "Central Icod de los Vinos, a few minutes on foot from the town's main square. A car is the realistic way to reach the town, roughly 20 km west of Puerto de la Cruz.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Age is a genuine, unresolved disagreement and is deliberately left unresolved. es.wikipedia cites a current scientific estimate of approximately 700 years with a margin of error of 100-150 years (roughly 550-850); popular and tourist sources claim 800-1,000+, and folklore claims up to 3,000 are unconfirmed and not used as a bound. Dracaena draco has no annual growth rings, so it cannot be dated dendrologically and no girth-based derivation was attempted for this species. Height 18m (es.wikipedia) to 21m (other sources); trunk perimeter about 20m at base (girth_cm 2000, an unusually wide multi-stemmed base typical of the species rather than a single narrow trunk); crown diameter about 20m; over 300 primary branches. Declared a Spanish national monument in 1917. Underwent 'profound sanitation' in 1985 (internal ventilation installed against fungal rot); the road past it was relocated in 1993. No evidence of recent storm damage or a lost branch; status per sources is protected and stable, with a health study run Oct 2023-Mar 2024 per eldiario.es informing conservation work.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "tfe_002",
+   "name": "Pino Gordo",
+   "species": "Canary Pine (Pinus canariensis)",
+   "age_estimate": "roughly 700 to 800 years",
+   "age_min": 700,
+   "age_max": 800,
+   "location": {
+    "address": "TF-21, Vilaflor de Chasna (viewpoint near km 67, Corona Forestal), Tenerife",
+    "latitude": 28.1651882,
+    "longitude": -16.6368507,
+    "neighbourhood": "Vilaflor de Chasna"
+   },
+   "story": "Vilaflor de Chasna put this tree on the town's coat of arms, which is a fair indication of how the place rates it against everything else it owns. Pino Gordo is a Canary pine with a trunk 9.36 metres around, the thickest native tree in Spain and widely called the most voluminous pine in Europe. It is also over 45 metres tall, which almost anywhere else would be the headline and here is not even the record at this viewpoint: the tree 150 metres up the trail is eleven metres taller. Estimates put it at roughly 700 to 800 years, meaning it was already a substantial pine when Castile finished taking the island in 1496, and a seedling several centuries before that. The bark carries fire scars. Canary pine is one of the few pines able to resprout straight from a scorched trunk, which is how a tree can spend seven centuries on a dry volcanic slope that burns and keep its crown. It grows at over 1,400 metres in the Corona Forestal, the pine belt that rings Teide, and reaching it costs nothing: a signed parking area off the TF-21 toward the Parador, then a marked trail of 150 to 200 metres, with benches and information panels at the tree.",
+   "verified_sources": [
+    "https://www.medianiasdetenerife.com/ficha.cfm?id=82&idioma=esp",
+    "https://canariaslife.com/el-pino-gordo-de-vilaflor/",
+    "https://www.xn--arbolybosquedelao-uxb.es/el-pino-gordo-vilaflor-de-chasna-santa-cruz-de-tenerife/"
+   ],
+   "access": "Free. A marked trail of roughly 150 to 200 metres from a signed parking and viewpoint area just off the TF-21 mountain road toward the Parador; benches and information panels on site.",
+   "transport": "By car via the TF-21 a few kilometres above Vilaflor village. No public transport reaches the viewpoint directly, so a car is the realistic way.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "ai_generated",
+   "notes": "Height over 45m (one source: 45.12m); girth cited as 'nearly 10m' and more precisely 9.36m, the thickest native tree in Spain (girth_cm 936). Widely called the most voluminous tree of its kind in Europe. Sits at over 1,400m elevation in the Corona Forestal Natural Park, not the ticketed core of Teide National Park (which only gates the cable car). Featured on Vilaflor's municipal coat of arms. Survived multiple wildfires and storms; bark shows fire scarring. Pin confirmed against an OpenStreetMap natural=tree node named 'Pino Gordo' on the TF-21 in Vilaflor de Chasna matching the description exactly; a separate 'Pino Gordo' bus-stop node sits about 30m away at the parking area. About 150m from Pino de las Dos Pernadas (tfe_003), the two forming one short walkable pair at the same viewpoint.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "tfe_003",
+   "name": "Pino de las Dos Pernadas",
+   "species": "Canary Pine (Pinus canariensis)",
+   "age_estimate": "roughly 500 to 600 years",
+   "age_min": 500,
+   "age_max": 600,
+   "location": {
+    "address": "TF-21, Vilaflor de Chasna (same viewpoint area as Pino Gordo), Tenerife",
+    "latitude": 28.1663563,
+    "longitude": -16.6372612,
+    "neighbourhood": "Vilaflor de Chasna"
+   },
+   "story": "At 56 metres this is the tallest native tree in Spain, and it stands 150 metres from the thickest one. Pino de las Dos Pernadas is the taller and slimmer half of the pair above Vilaflor de Chasna: about eight metres around against Pino Gordo's 9.36, and roughly 500 to 600 years old against its neighbour's 700 to 800. The name is a description rather than a story. At around ten metres up, the trunk divides into two limbs of near-identical thickness that carry on skyward side by side, two legs, dos pernadas, and the split is the first thing you notice from the bench below. On the age estimates it germinated somewhere around the Castilian conquest of the island in the 1490s, and it has spent the centuries since on a slope that burns periodically; like every Canary pine here its bark is thick enough to survive fire that would kill most conifers outright. The setting is the Corona Forestal at over 1,400 metres, looking out over the pine belt below Teide. It is free, on the same short marked trail from the same parking area on the TF-21, which is what makes these two a genuine pair rather than two entries that happen to share a road.",
+   "verified_sources": [
+    "https://www.medianiasdetenerife.com/ficha.cfm?id=82&idioma=esp",
+    "https://www.geocaching.com/geocache/GCAJGMT"
+   ],
+   "access": "Free. On a small rise by the same signed viewpoint and parking area as Pino Gordo, with benches for viewing.",
+   "transport": "By car via the TF-21 above Vilaflor village, the same stop as Pino Gordo. No public transport reaches the viewpoint directly.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "ai_generated",
+   "notes": "Called the tallest native tree in Spain: 56m. Girth about 8m (girth_cm 800). The trunk forks into two limbs of similar thickness at around 10m height, which gives the tree its name (dos pernadas, two limbs). Pin confirmed against an OpenStreetMap natural=tree node named 'Pino de las dos Pernadas' on the TF-21, about 130-150m from the Pino Gordo node, consistent with descriptions of the two standing on the same short trail. Same fire and storm context as Pino Gordo (Corona Forestal Natural Park, free public access).",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "tfe_004",
+   "name": "El Gran Ficus",
+   "species": "Moreton Bay Fig (Ficus macrophylla)",
+   "age_estimate": "roughly 150 years, planted in the 1870s",
+   "age_min": 145,
+   "age_max": 200,
+   "location": {
+    "address": "Jardin Botanico de Puerto de la Cruz (Jardin de Aclimatacion de La Orotava), Calle Retama 2, Puerto de la Cruz, Tenerife",
+    "latitude": 28.4108258,
+    "longitude": -16.535279,
+    "neighbourhood": "El Botanico, Puerto de la Cruz"
+   },
+   "story": "This tree keeps adding trunks. El Gran Ficus drops aerial roots from its branches, and the ones that reach the ground thicken, stiffen and set as columns, so what began as a single Moreton Bay fig is now a colonnade about 30 metres high that visitors walk into rather than around. It is the youngest tree on this list by centuries. The garden's Swiss head gardener Hermann Wildpret, in post from 1860 to 1893, planted it in the 1870s, which makes it roughly 150 years old; one guide puts it at about 200 without naming a planting date, and the documented planting is the better bet. The garden itself is far older, founded by royal order of Carlos III in 1788 and inaugurated in 1792 to acclimatise tropical plants to a European climate, so the fig is a latecomer to its own address by a century. Sources disagree on the fine print of what it is, some naming the Lord Howe Island form of the species rather than the mainland Australian one; nobody has settled it, and if you know, tell us. The garden is compact, about two hectares, and charges a few euros, but this is not a specimen you have to hunt for once you are through the gate.",
+   "verified_sources": [
+    "https://es.wikipedia.org/wiki/Jard%C3%ADn_de_Aclimataci%C3%B3n_de_La_Orotava",
+    "https://getawayguide.co.uk/botanical-garden-puerto-de-la-cruz/",
+    "https://therealtenerife.com/posts/the-botanical-gardens-in-tenerife-a-tropical-paradise/"
+   ],
+   "access": "Paid entry to the botanical garden (around 3 euros), open daily 09:00-18:00, closed 1 January, Good Friday and 25 December.",
+   "transport": "Central Puerto de la Cruz, walkable from the town centre, with a local bus stop 'Jardin Botanico' right outside. Between the island's three stops, a car is the realistic way.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Likely the Lord Howe Island form of the species (f. columnaris / var. columnaris, native to Lord Howe Island rather than mainland Australia); sources differ on how precisely to name the variety, so the species-level canonical name is used and the open question is stated on the page. Documented planting: planted by the garden's Swiss head gardener Hermann Wildpret during his tenure (1860-1893), specifically 'in the 1870s' per two independent secondary sources, which is a real basis for a derived age (a documented planting date for this specimen, not a bridge from the garden's own 1788 founding). One weaker source (getawayguide.co.uk) separately states 'around 200 years old' without giving a planting date; recorded as a conflicting figure rather than resolved. Height approximately 30m; many aerial roots descending from the branches, some thickened into secondary trunks. Spanish Wikipedia confirms the garden's coordinates and its founding by royal order of Carlos III, 17 August 1788, inaugurated 1792, but does not mention the ficus by name, so it is not used as a source for the tree's own age. location_precision approximate: the coordinates are the garden's own (OSM way centroid), not the tree's plot inside the roughly 20,000 sqm grounds; no tree-level coordinate was found this pass.",
+   "location_precision": "approximate"
+  }
+ ],
+ "kind": "island"
+}

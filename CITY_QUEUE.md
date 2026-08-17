@@ -321,7 +321,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 132 | Phuket | 5.46 | 5,487 | - | - | - | - | 10 | predicted (travel demand) |
 | 133 | Rovaniemi | 5.38 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 134 | Setubal | 3.01 | 22,582 | 10 | 1 | 2 | 13 | 10 | measured |
-| 135 | Tenerife | 3.57 | - | - | - | - | - | 10 | predicted (travel demand) |
+| 135 | Tenerife | 3.57 | - | 4 | - | - | - | 10 | predicted (travel demand) |
 | 136 | Philadelphia | 5.34 | 405,294 | - | - | - | - | 10 | predicted (travel demand) |
 | 137 | Aarhus | 5.23 | 52,722 | 7 | 1 | 1 | - | 10 | published, never ranked (may be uncrawled) |
 | 138 | Oxford | 5.32 | 111,583 | 5 | 1 | 1 | - | 20 | measured |

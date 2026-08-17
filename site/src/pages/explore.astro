@@ -75,6 +75,21 @@ const cityRows: ExploreCityRow[] = allCities
   })
   .sort((a, b) => a.rank - b.rank || b.n - a.n);
 
+// Islands, added 2026-08-17 with Tenerife, the first one (Hidde: "lijkt me ook
+// wel leuk om een eiland sectie in explore te hebben"). They are ordinary
+// places in the one queue and ship under the existing contracts; what earns
+// them their own line here is the thing a reader feels immediately, which is
+// that an island's trees are a drive apart rather than a walk, and that the
+// competition for writing about them in English is close to nothing.
+// The section renders ONLY when islands exist, so it can never be an empty
+// promise; today that is one place.
+const islandRows = allCities
+  .filter((e) => e.data.kind === "island" && e.data.trees.length > 0)
+  .map((e) => ({ slug: e.id, city: e.data.city, n: e.data.trees.length }))
+  .sort((a, b) => b.n - a.n);
+const islandsHtml = islandRows
+  .map((r) => `<a href="/${r.slug}">${r.city}</a> (${r.n})`)
+  .join(", ");
 const treeTotal = cityRows.reduce((s, r) => s + r.n, 0);
 const countries = [...new Set(allCities.filter((e) => e.data.trees.length > 0).map((e) => e.data.country))].sort((a, b) =>
   a.localeCompare(b),
@@ -117,6 +132,10 @@ const exploreProse = `
     <h2>The tightest walks</h2>
     <p>A map of scattered pins is a list. What makes an afternoon is trees close enough to walk
     between, so these are the places where the whole set fits in one stroll: ${walksHtml}.</p>
+    ${islandRows.length ? `<h2>Islands</h2>
+    <p>An island is a different kind of day. The trees sit a drive apart rather than a walk, and
+    what you get for the distance is a tree that grows nowhere else: dragon trees, laurel forest that
+    outlived the Ice Age, pines that reach heights the mainland never manages. ${islandsHtml}.</p>` : ``}
     <h2>What is not on it, and why</h2>
     <p>Every pin says how precise it is. A tree marked approximate means we know the park but not the
     trunk, and the page says so rather than sending you to a spot where the tree is not. Trees on
