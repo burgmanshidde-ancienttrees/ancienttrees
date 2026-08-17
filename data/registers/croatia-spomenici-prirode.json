@@ -1,0 +1,123 @@
+{
+ "source": "Bioportal, Informacijski sustav zaštite prirode: Registar zaštićenih područja (ProtectedSite, INSPIRE)",
+ "endpoint": "https://services.bioportal.hr/inspire/geos1/ps/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=ps1:ProtectedSite&outputFormat=application/json&srsName=EPSG:4326",
+ "country": "Croatia",
+ "designation": "spomenik prirode (natural monument) under the Nature Protection Act; an individual tree or group of trees of exceptional value is one of its categories",
+ "licence": "No restrictions stated by the service",
+ "licence_proof": "The WFS GetCapabilities declares AccessConstraints 'nema ograničenja' (no restrictions). Read 2026-08-16. Recorded honestly as a service declaration rather than a named licence: Croatia states no CC licence for this dataset, so treat it as permission to use rather than as a licence tag, and re-check before anything derived is redistributed.",
+ "attribution": "Zavod za zaštitu okoliša i prirode, Bioportal, extract of 2026-08-16",
+ "fetched": "2026-08-16",
+ "scope": "413 protected sites nationally. 46 are named as trees; only 12 of those carry a geometry this reader could turn into a point, so 34 tree-named entries are KNOWN TO EXIST and are not in this file. That gap is the register's own INSPIRE encoding rather than a filter decision, and it is the first thing to fix if Croatia ever matters more than Dubrovnik's three.",
+ "caveat": "This is the general protected-AREAS register, not a tree register, so the tree filter is a Croatian name regex and will have edge cases both ways. Geometry is polygons for nearly every entry, so coordinates are ring centroids and pins default to approximate. Names that say skupina, čempresi, platane or dvije mark several trees under one designation and carry publishable=false under the collectible-point rule. No species field, no age, no girth, no vitality: the name is the only descriptor.",
+ "count": 12,
+ "trees": [
+  {
+   "name_hr": "TRSTENO - PLATANA I",
+   "designation": null,
+   "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4328\", \"namespace\": \"HR.MZOE.ZP\"}",
+   "latitude": 42.713882,
+   "longitude": 17.9789,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "name_hr": "SITSKO-ŽUTSKA OTOČNA SKUPINA",
+   "designation": "ProtectedLandscapeOrSeascape",
+   "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4415\", \"namespace\": \"HR.MZOE.ZP\"}",
+   "latitude": 43.88009,
+   "longitude": 15.308296,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "name_hr": "DEBELA LIPA - VELIKA REBAR",
+   "designation": "habitatSpeciesManagementArea",
+   "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4333\", \"namespace\": \"HR.MZOE.ZP\"}",
+   "latitude": 45.376944,
+   "longitude": 14.749177,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "name_hr": "LUN - DIVLJE MASLINE",
+   "designation": "habitatSpeciesManagementArea",
+   "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4708\", \"namespace\": \"HR.MZOE.ZP\"}",
+   "latitude": 44.661982,
+   "longitude": 14.77907,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "name_hr": "ROVINJ - DRVORED ČEMPRESA",
+   "designation": null,
+   "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4469\", \"namespace\": \"HR.MZOE.ZP\"}",
+   "latitude": 45.093468,
+   "longitude": 13.645614,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "name_hr": "ČEMPRESADA \\",
+   "designation": "habitatSpeciesManagementArea",
+   "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4314\", \"namespace\": \"HR.MZOE.ZP\"}",
+   "latitude": 42.975692,
+   "longitude": 17.156465,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "name_hr": "STANIŠTE TISA NA PAPUKU",
+   "designation": "naturalMonument",
+   "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4734\", \"namespace\": \"HR.MZOE.ZP\"}",
+   "latitude": 45.571262,
+   "longitude": 17.522727,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "name_hr": "TRSTENO - PLATANA II",
+   "designation": null,
+   "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4336\", \"namespace\": \"HR.MZOE.ZP\"}",
+   "latitude": 42.71406,
+   "longitude": 17.978699,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "name_hr": "DUBROVNIK - PLATANA",
+   "designation": null,
+   "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4740\", \"namespace\": \"HR.MZOE.ZP\"}",
+   "latitude": 42.642318,
+   "longitude": 18.106029,
+   "geometry": "polygon centroid",
+   "publishable": true
+  },
+  {
+   "name_hr": "NOSKOVAČKA DUBRAVA - SKUPINA STABALA",
+   "designation": null,
+   "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4467\", \"namespace\": \"HR.MZOE.ZP\"}",
+   "latitude": 45.780426,
+   "longitude": 17.831351,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "name_hr": "KORČULA - DRVORED ČEMPRESA",
+   "designation": null,
+   "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4433\", \"namespace\": \"HR.MZOE.ZP\"}",
+   "latitude": 42.94507,
+   "longitude": 17.143178,
+   "geometry": "polygon centroid",
+   "publishable": false
+  },
+  {
+   "name_hr": "LIPA NA MEDVEDNICI",
+   "designation": "ProtectedLandscapeOrSeascape",
+   "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4580\", \"namespace\": \"HR.MZOE.ZP\"}",
+   "latitude": 45.931623,
+   "longitude": 16.067006,
+   "geometry": "polygon centroid",
+   "publishable": true
+  }
+ ]
+}

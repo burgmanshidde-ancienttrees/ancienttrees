@@ -234,9 +234,9 @@ so qa.py fails the deploy when the table and the json disagree.
 | 53 | Dubai | 11.02 | 334,167 | - | - | - | - | 10 | predicted (travel demand) |
 | 54 | Bristol | 10.64 | 163,983 | 5 | 1 | - | - | 20 | measured |
 | 55 | Hamburg | 10.27 | 191,221 | - | - | - | - | 10 | predicted (travel demand) |
-| 56 | Padua | 5.78 | 54,592 | 10 | 4 | 1 | 12 | 10 | measured |
-| 57 | Mexico City | 9.97 | 566,583 | - | - | - | - | 10 | predicted (travel demand) |
-| 58 | Dubrovnik | 9.71 | 119,586 | 4 | 1 | 1 | - | 20 | measured |
+| 56 | Dubrovnik | 9.71 | 119,586 | 4 | 1 | 1 | 2 | 20 | measured |
+| 57 | Padua | 5.78 | 54,592 | 10 | 4 | 1 | 12 | 10 | measured |
+| 58 | Mexico City | 9.97 | 566,583 | - | - | - | - | 10 | predicted (travel demand) |
 | 59 | Vancouver | 9.47 | 351,552 | - | - | - | - | 10 | predicted (travel demand) |
 | 60 | Istanbul | 9.36 | 333,027 | 14 | 4 | 1 | - | 30 | measured |
 | 61 | Krakow | 6.24 | 140,824 | 10 | 3 | 2 | 198 | 20 | measured |
