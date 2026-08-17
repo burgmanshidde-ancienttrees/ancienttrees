@@ -258,6 +258,26 @@
    "cities_touched": 0,
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-08-17T11:17:02+00:00",
+   "date": "2026-08-17",
+   "run_id": "32024184865",
+   "minutes": 19.1,
+   "minutes_basis": "measured",
+   "turns": 108,
+   "denials": 10,
+   "denials_source": "permission_denials: Bash",
+   "ended": "success",
+   "tokens": 18985854,
+   "claims_held": [
+    "salzburg",
+    "gdansk"
+   ],
+   "commits": 6,
+   "cities_touched": 0,
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
