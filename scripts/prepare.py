@@ -150,8 +150,36 @@ def pipeline_status():
     print("\nTHE LINE, stage by stage:")
     print("  staged for verify : %d file(s)  %s" % (
         len(staged), " ".join(os.path.basename(p).split("-register")[0] for p in staged) or "(empty)"))
-    print("  awaiting a writer : %d file(s)  %s" % (
-        len(verified), " ".join(os.path.basename(p).split("-verified")[0] for p in verified) or "(empty)"))
+    # Count TREES that still need a story, not FILES that exist. A verified
+    # file survives its own merge: nothing deletes it once the stories are
+    # written, so the shelf kept reporting work that had already shipped. On
+    # 2026-08-17 it announced "8 files awaiting a writer" when all eight were
+    # fully published and the true number was zero, which is the first thing a
+    # night run reads at the top of its window. Same disease as the leads file
+    # offering held trees back as READY: a queue that cannot see completion.
+    waiting, stale = [], []
+    for p in verified:
+        slug = os.path.basename(p).split("-verified")[0]
+        try:
+            doc = json.load(open(p, encoding="utf-8"))
+        except Exception:
+            continue
+        rows = doc if isinstance(doc, list) else (doc.get("trees") or [])
+        live = set()
+        city = os.path.join(ROOT, "data", "cities", f"{slug}.json")
+        if os.path.exists(city):
+            try:
+                live = {t.get("id") for t in json.load(open(city, encoding="utf-8")).get("trees", [])}
+            except Exception:
+                pass
+        todo = [t for t in rows if t.get("id") not in live]
+        (waiting if todo else stale).append((slug, len(todo)))
+    print("  awaiting a writer : %d tree(s)  %s" % (
+        sum(n for _, n in waiting),
+        " ".join(f"{s}({n})" for s, n in waiting) or "(empty)"))
+    if stale:
+        print("  fully published, safe to delete : %s"
+              % " ".join(s for s, _ in stale))
     print("  (passcheck.py --pending tells you which verified trees still lack stories)")
 
 
