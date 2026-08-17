@@ -30,7 +30,7 @@
     {
       "id": "cam_001",
       "name": "Newton's Apple Tree",
-      "species": "Apple, 'Flower of Kent' (Malus pumila)",
+      "species": "Apple (Malus pumila)",
       "age_estimate": "72 years",
       "age_min": 70,
       "age_max": 72,
@@ -40,7 +40,7 @@
         "longitude": 0.115113,
         "neighbourhood": "City centre"
       },
-      "story": "Isaac Newton studied and later worked at Trinity College, and the story that a falling apple set him thinking about gravity dates to accounts he gave late in life, describing a tree at his family home, Woolsthorpe Manor in Lincolnshire, not anything in Cambridge itself. That original tree is thought to have died around 1815 to 1820, but not before cuttings and grafts had been taken from it and propagated onward as a genetically identical line. In 1954, Trinity College planted one of those grafts outside its main gate, directly below the room where Newton lived as a student. Being a 'Flower of Kent', an old English cooking apple variety, the tree produces fruit that is edible but unremarkable, tart and disease-prone rather than a variety anyone would choose for flavour alone. What makes it worth the stop is not the apples: it is standing in front of living plant tissue that traces back, graft by graft, to the actual tree behind one of science's most famous stories, fenced for protection but visible from the street outside Trinity's gate at any hour.",
+      "story": "This is not Newton's apple tree, and it is genetically the same tree. The one he described stood at his family home, Woolsthorpe Manor in Lincolnshire, and the falling-apple story comes from accounts he gave late in life rather than from anything in Cambridge. That original died around 1815 to 1820. Before it did, cuttings and grafts were taken and propagated onward as a genetically identical line, and in 1954 Trinity College planted one of them outside its main gate, directly below the room Newton lived in as a student.\n\nSo the tree in front of you is 72 years old and its tissue traces back, graft by graft, to the actual tree behind one of science's most famous stories. That is the whole reason to stop.\n\nIt is a 'Flower of Kent', an old English cooking variety, which means the fruit is edible and unremarkable: tart, disease-prone, nobody's choice for flavour. Newton would have known it as a kitchen apple rather than anything special.\n\nIt stands fenced for protection on Trinity Street, visible from the pavement outside the gate at any hour, and it is a five-minute walk from the older tree on this list, the Milton Mulberry at Christ's College, which was already grown when Newton arrived.",
       "verified_sources": [
         "https://www.botanic.cam.ac.uk/the-garden/gardens-plantings/trees/isaac-newtons-apple-tree/",
         "https://www.atlasobscura.com/places/newtons-apple-tree-trinity-college"
@@ -62,7 +62,8 @@
         ],
         "label": "September, when the historic 'Flower of Kent' apples ripen",
         "kind": "fruit"
-      }
+      },
+      "how_to_recognise": "A small fenced apple tree on the pavement outside Trinity's main gate on Trinity Street, directly below Newton's old room. It is the only apple tree there."
     },
     {
       "id": "cam_002",
