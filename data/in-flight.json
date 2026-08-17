@@ -10,32 +10,8 @@
     {
       "target": "lyon",
       "kind": "verify",
-      "by": "session",
-      "claimed_at": "2026-08-16T23:16:44+00:00"
-    },
-    {
-      "target": "bratislava",
-      "kind": "verify",
-      "by": "session",
-      "claimed_at": "2026-08-16T23:16:44+00:00"
-    },
-    {
-      "target": "bari",
-      "kind": "verify",
-      "by": "session",
-      "claimed_at": "2026-08-16T23:17:23+00:00"
-    },
-    {
-      "target": "seville",
-      "kind": "verify",
-      "by": "session",
-      "claimed_at": "2026-08-16T23:20:46+00:00"
-    },
-    {
-      "target": "caserta",
-      "kind": "verify",
-      "by": "session",
-      "claimed_at": "2026-08-16T23:20:46+00:00"
+      "by": "night-run",
+      "claimed_at": "2026-08-17T05:29:13+00:00"
     }
   ]
 }
