@@ -111,7 +111,18 @@ def denials_from(result):
         if isinstance(v, (int, float)):
             return int(v), key
         if isinstance(v, list):
-            return len(v), key
+            # The list carries WHAT was refused, which is the whole point: a
+            # count told us runs hit a wall between 4 and 25 times a night and
+            # never which wall. Confirmed 2026-08-17, the first night after the
+            # key search shipped: the field is `permission_denials`, a list,
+            # and the run that recorded 6 of them produced nothing in 7.8
+            # minutes. Names only, truncated, never arguments: a denied command
+            # can carry a URL or a path from a reader submission, and this file
+            # is public.
+            return len(v), "%s: %s" % (key, ", ".join(sorted({
+                str((d or {}).get("tool_name") or (d or {}).get("tool")
+                    or (d or {}).get("name") or "?")[:24]
+                for d in v if isinstance(d, dict)})) or "no names in the record")
     # Nested one level, which is where SDKs usually move a counter to.
     for holder in ("permissions", "stats", "metrics", "usage"):
         sub = result.get(holder)
