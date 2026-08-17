@@ -1,5 +1,5 @@
 {
- "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it has never been below 4 and reached 25.",
+ "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
    "started": "2026-08-15T20:50:16+00:00",
@@ -227,6 +227,47 @@
    "cities_touched": 5,
    "trees": 19,
    "logged": false
+  },
+  {
+   "started": "2026-08-17T07:02:44+00:00",
+   "date": "2026-08-17",
+   "run_id": null,
+   "minutes": null,
+   "turns": null,
+   "denials": null,
+   "ended": null,
+   "tokens": null,
+   "claims_held": [],
+   "logged": null
+  }
+ ],
+ "schedule_changes": [
+  {
+   "on": "2026-08-16",
+   "from": "9 knocks x 60 min",
+   "to": "6 knocks x 90 min",
+   "ceiling": "540 min/day either way, a redistribution not an increase",
+   "baseline_night_2026-08-15": {
+    "runs": 8,
+    "minutes": 87.3,
+    "trees": 28,
+    "zero_tree_runs": 4,
+    "best_run": "03:27, hit the 60-min cap, 17 trees"
+   },
+   "first_night_after_2026-08-16": {
+    "runs": 4,
+    "minutes": 125.7,
+    "trees": 20,
+    "new_cities": 2,
+    "zero_tree_runs": 3,
+    "best_run": "05:26, hit the NEW 90-min cap, 19 trees and 20 commits",
+    "reading": "the long run produced 19 of 20 trees; short runs still stall, so the schedule fixed concentration but not the stall"
+   },
+   "also_shipped": [
+    "claim release on run end",
+    "city_queue --next actionable list",
+    "leads.py stacked-coordinate fold"
+   ]
   }
  ]
 }
