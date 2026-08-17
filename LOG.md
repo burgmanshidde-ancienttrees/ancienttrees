@@ -12,6 +12,24 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-17 (session) - Vilnius to 10, and four instruments repaired on the way
+
+Hidde: keep running night runs and improving the system on them. Three cycles so far.
+
+**The denials meter is alive, and it was the missing instrument.** The multi-key search shipped yesterday found it on the first run: the field is `permission_denials`, a LIST, not the `permission_denials_count` the code had been reading since the SDK renamed it. The 08:32 run recorded 6 refusals and produced nothing in 7.8 minutes, which is exactly the pattern we could not see before. Because it is a list it can carry the tool NAMES, so those are now recorded too, names only and never arguments (this repo is public and reader submissions pass through these runs).
+
+**`health.py` was crying wolf.** A deploy still running reports `conclusion: ""`, which the check compared only against `None` and therefore read as a failure: "Smoke test is  (its newest run, 0h ago). The site may be broken." A night run would have stopped to investigate a healthy site. It now reads the newest FINISHED run, which is what the question actually asks.
+
+**Two tools for one job, resolved.** A night run wrote `photo_shortlist.py` the same morning this session wrote `photo_gaps.py`. Their ranking was better than mine (a photograph hanging off the tree's own Wikidata item scores 60, because somebody who knew which tree they meant attached it), so it was folded in and their file deleted.
+
+**Vilnius is live at 10.** The verify pass earned its keep on defence rather than supply: the Wikipedia-registry join confirmed or killed 8 of 10 candidates and caught two delisted-dead trees and a pair locked inside a company courtyard, none of which the register itself flags. Three shipped. The Sapiegos Park linden is the one to read: a storm took its top off on 18 July 2023, an arborist found it rotten through, 28 metres became 11 or 12, and the story LEADS on the break rather than selling a giant that is not there. It ships because sources agree it survived and it was entered into Tree of the Year 2023 after the damage, and the page says plainly that our newest report is two years old and asks the visitor which way it has gone since.
+
+**The photo aim got its answer, and the answer is that the pictures do not exist.** Hidde asked for one photograph per city, then ranked it below five trees. Eight candidates judged across two sessions, two shipped. Only one rejection was about picture quality: the others were the wrong tree (Copenhagen's pacifier tree stands three kilometres from ours), the wrong subject (Perugia's file is statues, event chairs and a dog), or the wrong kind of photograph entirely (iNaturalist is an identification platform, so its images are a hand holding a leaf). Recorded in CURATION.md as a dead end rather than left to be re-run.
+
+**And the reverse route is now proved rather than recommended.** Klopstocks Eg sits 13 km outside Copenhagen with three Commons photographs, and the first one opened is textbook: an ancient oak filling the frame, trunk and crown readable, a bench for scale, CC BY-SA 4.0. So `photo_gaps.py --famous` now pairs each photo-less city with a famous tree that arrives with its own picture. Melbourne's Separation Tree at 2.8 km heads the list and is exactly the one to check first, since it is famous for a proclamation in 1850 and there is a ringbarking story attached to it.
+
+**One rule moved out of the briefs and into the rulebook.** The Wikipedia-registry join has paid off three days running and had to be re-explained each time. It is in BRIEF_RESEARCH.md now, with the reason that matters most: a register records what is designated and never says a tree has fallen down, while the Wikipedia reproductions carry the removals in their footnotes. Every dead tree caught this week was caught there.
+
 ## 2026-08-17 - Night run 2026-08-17 08:32 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 7.8 minutes of its 120 minute window, 63 turns, 6 commands refused by the allowlist, ended clean (success). 2 commit(s), none of them a published tree. Claims left behind: naples, which block the top of the queue until they expire.
