@@ -79,6 +79,25 @@ PREDICTED_YIELD = 1.0
 # deliberately the one place it cannot be quietly re-derived.
 PAUSED_COUNTRIES = {"India"}
 
+# Named exceptions to the wealth tier below, one line per place, each carrying
+# the words that put it there. This exists because Hidde named a single place
+# rather than a country, 2026-08-17: "En zorg dat alle echt aantrekkelijke
+# eilanden in de lijst staan Bali lijkt me erg aantrekkelijk."
+#
+# Bali is the case where the two readings of his own rich-tourist rule come
+# apart. The rule is written as COUNTRY VISITED, and its comment says his India
+# decision settles that reading, so Indonesia sitting in the lower-middle tier
+# pauses Bali despite 9,950 travel views, which is Dubai and Jerusalem
+# territory. Read as VISITOR WEALTH instead, Bali is one of the most obvious
+# rich-tourist destinations on earth. He has now named the place, so the place
+# is exempt and the country is not: Jakarta, Yogyakarta and Ubud stay paused,
+# because he did not name them and widening this on his behalf is exactly what
+# the note below forbids.
+#
+# The same restriction applies here as to the table below. A run may add a place
+# ONLY when Hidde has named it, and the quote goes in this comment beside it.
+FOCUS_EXCEPTIONS = {"Bali"}
+
 # Hidde, 2026-08-15, immediately after the India pause: "I want to focus on
 # cities for rich tourists." The India cut was the specific case; this is the
 # rule behind it, and it is deliberately about the COUNTRY VISITED rather than
@@ -143,6 +162,8 @@ def main():
         travel = c.get("travel") or 0
         base = travel / 1000.0
         wealth = wealth_factor(c.get("country", ""))
+        if wealth is None and c.get("city") in FOCUS_EXCEPTIONS:
+            wealth = 1.0
         if wealth is None:
             # Paused, not deleted: the row, its travel demand and its register
             # supply all stay, so lifting the pause is a one-line edit and no
