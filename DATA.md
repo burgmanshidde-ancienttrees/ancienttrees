@@ -5,6 +5,81 @@ workflow. Numbers are for the previous UTC day. While volume is tiny the
 conclusion says so plainly; noise is never narrated as trend (Hidde's
 standing rule, 2026-07-27).
 
+## Weekly analysis 2026-08-17
+
+Fourth weekly analysis, covering 2026-08-10 to 2026-08-16 against the prior
+week (2026-08-03 to 2026-08-09), using the latest-settled Search Console
+figure for each date.
+
+**Scorecard**
+
+| Week ending | Impressions | Clicks | CTR | Visits (beacon) | Pageviews (beacon) | Directions/visit | App-CTA | Waitlist total | Submissions total |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-07-31 | 1,150 | 31 | 2.7% | 70 | 170 | n/a (not captured) | n/a (not captured) | 0 real (2 test rows) | 0 real (1 test row) |
+| 2026-08-07 | 1,762 | 36 | 2.0% | 100 | 170 | n/a (not captured) | n/a (not captured) | 4 real | 0 real (1 test row) |
+| 2026-08-09 | 1,734 | 35 | 2.0% | 150 | 230 | n/a (not captured) | n/a (not captured) | 5 real | 0 real |
+| 2026-08-16 | 3,457 | 81 | 2.3% | 410 | 560 | 0.0% (0 of 410) | 0 (0 of 410) | 6 real | 1 real |
+
+**What moved:**
+1. Impressions nearly doubled (1,734 to 3,457, settled) and clicks more than
+   doubled (35 to 81), lifting CTR 2.0% to 2.3%: the strongest weekly jump
+   since tracking began, concentrated in the last three days (08-14 to 08-16
+   ran 517-630 impressions/day against 394-445 earlier in the week).
+2. Beacon visits rose 173% (150 to 410) and pageviews 143% (230 to 560), not
+   a boundary artifact: the 08-10 spike (150v/170pv) now sits fully inside
+   this week's window, but 08-14 through 08-16 (50, 30, 110 visits) show the
+   volume held up after it rather than reverting.
+3. Rome's chronic 0%-CTR problem, flagged in both prior weekly analyses
+   (08-08, 08-10), looks resolved: a steady 2 clicks/day (1.1% CTR) all
+   week instead of zero. Malaga, the same-shape problem raised the same two
+   weeks, has not moved: 0% CTR every single day again this week on 95-100
+   daily impressions at position ~20.
+4. Directions-click and app-cta are now real tracked numbers for the first
+   time (previously "not captured" every week since 08-02's analysis first
+   asked for this) and both read a firm zero across all 410 visits. One
+   walk-open event fired on 08-16, the first real product action of any
+   kind recorded since tracking began.
+5. Waitlist and accounts stayed near-flat (waitlist 5 to 6, accounts steady
+   at 3, no new signups since 08-08); submissions total reads 1 real, down
+   from "2" mid-week after one of two 08-14 feedback reports turned out to
+   be a self-marked test row.
+
+**Suggestions, ranked:**
+1. **[run]** Diagnose `/cambridge/newtons-apple-tree`'s 0% CTR. It has shown
+   up in "seen, not clicked" three days running (08-14 to 08-16) on real
+   impressions (21-25/day) at decent positions (p36-56) for "newton's apple
+   tree", "oldest apple tree" and "apple tree of newton". Check P2
+   (answer-first) and whether the title/meta wording matches these queries,
+   the same class of fix that appears to have worked for Rome.
+2. **[run]** Do for Malaga what happened for Rome, raised a third time now
+   (08-08, 08-10, this week). The English `/malaga` page has taken 0 clicks
+   on 95-100 impressions/day at position ~20-21 every day this week, exactly
+   Rome's old shape, while Rome moved to 2 clicks/day. Check title/meta and
+   P2 wording specifically; the earlier `/es/malaga` Spanish page targets a
+   different query and does not fix this one.
+3. **[run]** Write an answer for "oldest tree in Central Park." It has shown
+   2-4 impressions at position ~10 for three straight days (08-14 to 08-16)
+   with no matching content, while New York's page overall already converts
+   at 3.6% CTR, well above the site average, suggesting this specific angle
+   closes cheaply.
+4. **[FOR HIDDE]** Directions-click and app-cta are measurable for the first
+   time and both read zero across 410 real visits this week; the one
+   walk-open event on 08-16 is the first real product action ever recorded.
+   This is the first honest look at whether visitors use find/walk/collect
+   beyond reading a story, and this week's answer is barely, and not the
+   CTA. Worth having before the next product-priority call; no run action
+   attached.
+5. **[sessie]** Stop counting self-marked test rows in the submissions
+   total. DATA.md read "2 total" through 08-14/08-15 then dropped to "1
+   total" by 08-16 with no removal logged; the 08-14 pair were both
+   feedback-type reports and one was explicitly suffixed "[TEST ROW]" in
+   Supabase. If that is the read, filter it in the digest so the total
+   does not wobble and confuse next week's comparison.
+
+**Watch next week:** whether the 08-14 to 08-16 impressions jump holds or
+reverts, whether Newton's apple tree or Malaga's CTR responds to any fix,
+and whether a second walk-open or any directions/app-cta event ever fires.
+
 ## 2026-08-16 (previous UTC day)
 
 **Today: nothing here needs you.** The blocks below are the standing picture.
