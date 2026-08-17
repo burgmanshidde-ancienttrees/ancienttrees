@@ -210,7 +210,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 29 | Perth | 16.42 | 180,478 | - | - | - | - | 10 | predicted (travel demand) |
 | 30 | Bologna | 9.48 | 146,161 | 12 | 7 | 2 | 9 | 20 | measured |
 | 31 | Sintra | 9.48 | 46,889 | 5 | 3 | 1 | 6 | 10 | measured |
-| 32 | Bratislava | 9.95 | 132,162 | 5 | - | 1 | 26 | 10 | predicted (travel demand) |
+| 32 | Bratislava | 9.95 | 132,162 | 6 | - | 1 | 26 | 10 | predicted (travel demand) |
 | 33 | Budapest | 14.80 | 283,807 | 12 | 1 | 3 | - | 20 | measured |
 | 34 | Tokyo | 9.02 | 394,702 | 10 | 8 | - | 7 | 30 | measured |
 | 35 | Los Angeles | 14.41 | 665,559 | - | - | - | - | 10 | predicted (travel demand) |
@@ -285,14 +285,14 @@ so qa.py fails the deploy when the table and the json disagree.
 | 104 | Montreal | 5.70 | 315,322 | 7 | - | 1 | - | 10 | published, never ranked (may be uncrawled) |
 | 105 | Funchal | 3.77 | 174,351 | - | - | - | - | 10 | predicted (travel demand) |
 | 106 | Bruges | 5.60 | 106,902 | - | - | - | - | 10 | predicted (travel demand) |
-| 107 | Vilnius | 3.70 | 113,188 | 7 | - | 1 | 34 | 10 | published, never ranked (may be uncrawled) |
+| 107 | Vilnius | 3.70 | 113,188 | 7 | 1 | 1 | 34 | 10 | published, never ranked (may be uncrawled) |
 | 108 | Avignon | 5.54 | 64,047 | - | - | - | - | 10 | predicted (travel demand) |
 | 109 | San Diego | 5.53 | 214,939 | - | - | - | - | 10 | predicted (travel demand) |
 | 110 | Galway | 3.65 | 88,162 | - | - | - | - | 10 | predicted (travel demand) |
 | 111 | Phuket | 5.46 | 5,487 | - | - | - | - | 10 | predicted (travel demand) |
 | 112 | Setubal | 3.01 | 22,582 | 10 | 1 | 2 | 13 | 10 | measured |
 | 113 | Philadelphia | 5.34 | 405,294 | - | - | - | - | 10 | predicted (travel demand) |
-| 114 | Aarhus | 5.23 | 52,722 | 7 | - | 1 | - | 10 | published, never ranked (may be uncrawled) |
+| 114 | Aarhus | 5.23 | 52,722 | 7 | 1 | 1 | - | 10 | published, never ranked (may be uncrawled) |
 | 115 | Oxford | 5.32 | 111,583 | 5 | 1 | 1 | - | 20 | measured |
 | 116 | Sapporo | 3.51 | 88,633 | - | - | - | - | 10 | predicted (travel demand) |
 | 117 | Guimaraes | 2.77 | 26,203 | 6 | 1 | 1 | 19 | 10 | measured |
@@ -357,14 +357,14 @@ so qa.py fails the deploy when the table and the json disagree.
 | 176 | Strasbourg | 2.08 | 154,700 | 10 | 1 | 2 | 66 | 20 | measured |
 | 177 | Lucerne | 3.10 | 66,356 | - | - | - | - | 10 | predicted (travel demand) |
 | 178 | Malmo | 3.07 | 103,940 | - | - | - | - | 10 | predicted (travel demand) |
-| 179 | Palma de Mallorca | 1.85 | 84,075 | 5 | - | 1 | 8 | 10 | measured |
+| 179 | Palma de Mallorca | 1.85 | 84,075 | 5 | 1 | 1 | 8 | 10 | measured |
 | 180 | Lille | 3.06 | 73,435 | - | - | - | - | 10 | predicted (travel demand) |
 | 181 | Savannah | 3.05 | 128,162 | - | - | - | - | 10 | predicted (travel demand) |
 | 182 | Ljubljana | 3.01 | 125,046 | 4 | - | 1 | - | 20 | measured |
 | 183 | Bergamo | 1.62 | 52,933 | 8 | 1 | 1 | 17 | 10 | measured |
 | 184 | Sao Paulo | 2.96 | 911 | - | - | - | - | 10 | predicted (travel demand) |
 | 185 | Mechelen | 2.93 | 20,707 | - | - | - | - | 10 | predicted (travel demand) |
-| 186 | Nuremberg | 1.94 | 161,614 | 10 | - | 1 | 39 | 10 | published, never ranked (may be uncrawled) |
+| 186 | Nuremberg | 1.94 | 161,614 | 10 | 1 | 1 | 39 | 10 | published, never ranked (may be uncrawled) |
 | 187 | Inverness | 2.76 | 92,195 | - | - | - | - | 10 | predicted (travel demand) |
 | 188 | Modena | 1.77 | 51,698 | - | - | - | 3 | 10 | predicted (travel demand) |
 | 189 | Bled | 2.72 | 13,126 | - | - | - | - | 10 | predicted (travel demand) |
@@ -375,7 +375,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 194 | Kamakura | 1.74 | 33,492 | - | - | - | - | 10 | predicted (travel demand) |
 | 195 | Cartagena | 2.58 | 65,066 | - | - | - | - | 10 | predicted (travel demand) |
 | 196 | Ronda | 1.68 | 51,510 | - | - | - | 1 | 10 | predicted (travel demand) |
-| 197 | Bangkok | 2.54 | 222,206 | 5 | - | 1 | - | 20 | measured |
+| 197 | Bangkok | 2.54 | 222,206 | 5 | 1 | 1 | - | 20 | measured |
 | 198 | Chicago | 2.54 | 485,769 | 6 | - | - | - | 30 | measured |
 | 199 | Innsbruck | 2.52 | 58,742 | - | - | - | - | 10 | predicted (travel demand) |
 | 200 | Bern | 2.51 | 90,627 | - | - | - | - | 10 | predicted (travel demand) |
@@ -384,10 +384,10 @@ so qa.py fails the deploy when the table and the json disagree.
 | 203 | Belgrade | 2.43 | 178,116 | 4 | 4 | - | - | 20 | measured |
 | 204 | Faro | 1.62 | 55,645 | - | - | - | - | 10 | predicted (travel demand) |
 | 205 | Gdansk | 1.62 | 4,908 | 4 | 2 | - | 228 | 10 | measured |
-| 206 | Tallinn | 1.62 | 124,888 | 4 | - | 1 | 42 | 10 | published, never ranked (may be uncrawled) |
+| 206 | Tallinn | 1.62 | 124,888 | 4 | 1 | 1 | 42 | 10 | published, never ranked (may be uncrawled) |
 | 207 | Fukuoka | 1.54 | 77,485 | 11 | 7 | 1 | 1 | 10 | published, never ranked (may be uncrawled) |
 | 208 | Luxembourg City | 2.39 | 64,851 | - | - | - | - | 10 | predicted (travel demand) |
-| 209 | Brno | 1.58 | 63,714 | 7 | - | 2 | 30 | 10 | published, never ranked (may be uncrawled) |
+| 209 | Brno | 1.58 | 63,714 | 7 | 1 | 2 | 30 | 10 | published, never ranked (may be uncrawled) |
 | 210 | Ghent | 2.36 | 82,757 | - | - | - | - | 10 | predicted (travel demand) |
 | 211 | Cusco | 2.35 | 87,732 | - | - | - | - | 10 | predicted (travel demand) |
 | 212 | Limerick | 1.57 | 90,379 | - | - | - | - | 10 | predicted (travel demand) |
@@ -404,7 +404,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 223 | Pamplona | 1.35 | 128,065 | - | - | - | 1 | 10 | predicted (travel demand) |
 | 224 | Lima | 2.03 | 132,792 | - | - | - | - | 10 | predicted (travel demand) |
 | 225 | Hallstatt | 1.99 | 47,271 | - | - | - | - | 10 | predicted (travel demand) |
-| 226 | Wroclaw | 1.27 | 123,894 | 4 | - | 1 | 122 | 10 | published, never ranked (may be uncrawled) |
+| 226 | Wroclaw | 1.27 | 123,894 | 4 | 1 | 1 | 122 | 10 | published, never ranked (may be uncrawled) |
 | 227 | Izmir | 1.88 | 69,826 | - | - | - | - | 10 | predicted (travel demand) |
 | 228 | Perugia | 0.92 | 42,572 | 10 | - | 2 | 19 | 10 | measured |
 | 229 | Killarney | 1.20 | 28,763 | - | - | - | - | 10 | predicted (travel demand) |
@@ -429,14 +429,14 @@ so qa.py fails the deploy when the table and the json disagree.
 | 248 | Regensburg | 1.18 | 51,930 | - | - | - | 2 | 10 | predicted (travel demand) |
 | 249 | Evora | 0.78 | 15,345 | - | - | - | - | 10 | predicted (travel demand) |
 | 250 | Bamberg | 0.97 | 28,716 | - | - | - | 10 | 10 | predicted (travel demand) |
-| 251 | Cagliari | 0.69 | 51,351 | 7 | - | 2 | 9 | 10 | measured |
+| 251 | Cagliari | 0.69 | 51,351 | 7 | 1 | 2 | 9 | 10 | measured |
 | 252 | Assisi | 0.68 | 30,278 | - | - | - | 6 | 10 | predicted (travel demand) |
-| 253 | Catania | 0.69 | 58,252 | 4 | - | 1 | 5 | 10 | measured |
+| 253 | Catania | 0.69 | 58,252 | 4 | 3 | 1 | 5 | 10 | measured |
 | 254 | Stratford-upon-Avon | 1.10 | 68,555 | - | - | - | - | 10 | predicted (travel demand) |
-| 255 | Braga | 0.62 | 34,522 | 4 | - | - | 8 | 10 | published, never ranked (may be uncrawled) |
+| 255 | Braga | 0.62 | 34,522 | 4 | 1 | - | 8 | 10 | published, never ranked (may be uncrawled) |
 | 256 | Oaxaca | 0.95 | 72,955 | - | - | - | - | 10 | predicted (travel demand) |
 | 257 | Sorrento | 0.49 | 40,049 | 4 | - | - | 20 | 10 | published, never ranked (may be uncrawled) |
-| 258 | Ferrara | 0.46 | 27,490 | 5 | - | 1 | 7 | 10 | measured |
+| 258 | Ferrara | 0.46 | 27,490 | 5 | 1 | 1 | 7 | 10 | measured |
 | 259 | Parma | 0.46 | 40,425 | 5 | - | 1 | 7 | 10 | measured |
 | 260 | Windsor | 0.50 | 30,452 | - | - | - | - | 10 | predicted (travel demand) |
 | 261 | Toledo | 0.24 | 3,149 | - | - | - | - | 10 | predicted (travel demand) |
