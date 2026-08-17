@@ -2065,6 +2065,24 @@
     "note": "Session work (tokens not metered by harness). Wrote all 8 stories directly plus city intro/FAQ/question page (new city). Fixed two hard-rule-9 species-name collisions at build time (London Plane's common name and its Latin binomial, standardised to the site's existing canonical Platanus x acerifolia).",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "alicante",
+    "kind": "verify",
+    "tokens": 116808,
+    "trees": 1,
+    "note": "Deepened 9 to 10 (target reached). Register + 3 independent press/city sources for a fig at the main railway station forecourt, cross-checked against a 2026 fenced-construction-zone news report to confirm the tree itself sits outside the fenced area. Two companion trees left as leads to avoid fragmenting one small grove.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "alicante",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 1,
+    "note": "Session work (tokens not metered by harness). Wrote the story and updated intro/meta_description/question_context/FAQ for the tenth tree, catching a stale 'nine figs' count in meta_description the writer would otherwise have missed.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

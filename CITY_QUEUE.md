@@ -301,7 +301,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 120 | Lagos | 3.43 | 34,452 | - | - | - | - | 10 | predicted (travel demand) |
 | 121 | Kobe | 3.40 | 54,798 | - | - | - | - | 10 | predicted (travel demand) |
 | 122 | Glasgow | 5.09 | 253,705 | 4 | 2 | - | - | 20 | measured |
-| 123 | Alicante | 2.54 | 77,454 | 9 | 2 | 1 | 44 | 10 | measured |
+| 123 | Alicante | 2.54 | 77,454 | 10 | 2 | 1 | 44 | 10 | measured |
 | 124 | Lucca | 2.54 | 52,271 | 10 | 3 | 1 | 27 | 10 | measured |
 | 125 | Heraklion | 4.96 | 66,359 | - | - | - | - | 10 | predicted (travel demand) |
 | 126 | Marseille | 4.96 | 182,033 | - | - | - | - | 10 | predicted (travel demand) |
