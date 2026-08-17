@@ -2110,6 +2110,24 @@
     "note": "Session work (tokens not metered by harness). Wrote 3 stories, retired war_003 with an independently re-verified death record (fetched the two sources war_003 originally cited, neither actually supports a living tree; the Reduta nr 56 article doesn't mention it at all), added a REMOVED_TREE_SLUGS redirect entry, updated intro/meta/FAQ.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "graz",
+    "kind": "verify",
+    "tokens": 128178,
+    "trees": 2,
+    "note": "Closed Graz to target (8 to 10) using the Eggenberg Schlosspark lead scouted in the first pass: a measured Weymouth pine (girth 370cm, 2016) and a copper beech corroborated by a GPS-tagged 2014 photo. The other 8 trees in the same planting (5 planes, 3 pines) correctly left unshipped as an avenue, not individual collectible points.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "graz",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 2,
+    "note": "Session work (tokens not metered by harness). Wrote 2 stories, updated intro/meta_description/question_context/FAQ for the second Eggenberg cluster and paid-entry exception.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

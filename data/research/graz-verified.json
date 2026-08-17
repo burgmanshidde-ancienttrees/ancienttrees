@@ -188,5 +188,52 @@
         "location_precision": "confirmed",
         "curation_status": "ai_generated",
         "verify_notes": "Register and Wikipedia geocode within 3 metres. Field-measured trunk circumference of 4.90 m in 2015 (recorded as girth_cm), substantially thicker than its neighbour at Panoramagasse 54 (2.80 m) despite the same protection date (11.07.1979) and near-identical address, which is worth a line in the story: two oaks protected on the same day, one nearly twice the other's girth. No age derived, same reasoning as grz_007: no verified published growth-rate citation for Quercus robur was in hand this pass, so age_estimate stays empty rather than guessed. Not a register 'twin' in the corrupted-duplicate sense: two visibly different, separately measured trees roughly 40m apart on the same street."
+    },
+    {
+        "id": "grz_009",
+        "name": "The Eggenberg Weymouth Pine",
+        "species": "Eastern White Pine (Pinus strobus)",
+        "age_estimate": "",
+        "age_min": null,
+        "age_max": null,
+        "girth_cm": 370,
+        "location": {
+            "address": "Eggenberger Allee 90, 8020 Graz",
+            "latitude": 47.072265,
+            "longitude": 15.392467,
+            "neighbourhood": "Eggenberg (Schlosspark Eggenberg, within the palace grounds)"
+        },
+        "verified_sources": [
+            "https://geodaten.graz.at/arcgis/rest/services/OGD/OGD_WFS/MapServer/8/query?where=1%3D1&outFields=*&outSR=4326&f=geojson (Stadt Graz Naturdenkmale, register NUMMER 11, OBJEKT_ID 62, Weymouthskiefer/Pinus strobus, owner oeffentlich)",
+            "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Graz (Steirisches Naturdenkmal 986, 'Weymouth-Kiefer', Standort Eggenberger Allee 90, KG Algersdorf, protected 11.07.1979; records a trunk circumference of 3.70 m measured at both 1.30 m and 1.50 m height on 16 October 2016, estimated tree height ca. 27 m, citing monumentaltrees.com and a Flickr album as its own sources for the measurement)"
+        ],
+        "access": "Paid entry: the tree stands inside Schlosspark Eggenberg, the grounds of Schloss Eggenberg (UNESCO World Heritage palace), run by Universalmuseum Joanneum. This pass did not independently reconfirm the current park-only ticket price or hours versus the palace/museum tour price; state plainly that entry is paid and point to the museum's own current prices page rather than quoting a figure.",
+        "transport": "Graz public transport toward the Eggenberg district; Eggenberger Allee 90 is the palace's signposted main entrance. Exact tram/bus line not independently confirmed this pass.",
+        "location_precision": "confirmed",
+        "curation_status": "ai_generated",
+        "verify_notes": "Two independent official sources agree within about 3 metres: the City of Graz's own live Naturdenkmale GIS register (register NUMMER 11) and Wikipedia's separately maintained 'Liste der Naturdenkmäler in Graz' (Steirisches Naturdenkmal 986), which additionally carries a real, dated field measurement (3.70 m girth, 16 October 2016, height estimated ca. 27 m) citing monumentaltrees.com and a Flickr album as its own sources, so those two secondary corroborations exist without this pass needing to scrape monumentaltrees.com directly (its Cloudflare challenge 403s automated fetches, confirmed this pass, consistent with BRIEF_RESEARCH.md's known edge). This is the strongest INDIVIDUAL specimen in the wider Eggenberg planting: it carries its own measured girth and its own Naturdenkmal citation, unlike the three other Weymouth pines and five planes at the same address (ND 977-985, excluding 986), which share the address and protection date but have no individuating measurement or record in either source and read as one avenue/grove rather than separate collectible points (see leads file). Girth recorded as girth_cm per standing instruction; no age derived because no cited Pinus strobus growth-rate figure was in hand this pass, so age_estimate is left empty rather than guessed. Alive-now evidence is the register's current (fetched 2026-08-17) live listing plus the 2016 field measurement citation; no more recent dated photo was independently viewed this pass. Stands about 57 metres from grz_010 (the Eggenberg Copper Beech), inside the same palace park, forming a small two-tree second walk roughly 3.5km from Graz's grz_001-008 cluster."
+    },
+    {
+        "id": "grz_010",
+        "name": "The Eggenberg Copper Beech",
+        "species": "Copper Beech (Fagus sylvatica 'Purpurea')",
+        "age_estimate": "",
+        "age_min": null,
+        "age_max": null,
+        "location": {
+            "address": "Eggenberger Allee 90, 8020 Graz",
+            "latitude": 47.072774,
+            "longitude": 15.392373,
+            "neighbourhood": "Eggenberg (Schlosspark Eggenberg, within the palace grounds)"
+        },
+        "verified_sources": [
+            "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Graz (Steirisches Naturdenkmal 1506, 'Blutbuche', Standort Eggenberger Allee 90, KG Algersdorf, GrStNr 206, protected 11.07.1979; this entry reproduces Austria's national open-data Naturdenkmal dataset via the Vorlage 'Naturdenkmal Österreich Tabellenzeile' template, a different official source from the City of Graz's own municipal OGD layer)",
+            "https://commons.wikimedia.org/wiki/File:Blutbuche_Graz,_Eggenberger_Allee_90_02.jpg (dated photograph, taken 2014-06-15, GPS-tagged at 47.072774/15.392373 matching the register point exactly, filed under Commons category 'Steirisches Naturdenkmal 1506', uploaded via the Wiki Loves Earth Austria natural-monuments campaign; description links to the tree's official Land Steiermark register entry, ID 1506, at sterz.stmk.gv.at, which this pass could not fetch directly as it sits behind an authentication wall)"
+        ],
+        "access": "Paid entry: the tree stands inside Schlosspark Eggenberg, the grounds of Schloss Eggenberg (UNESCO World Heritage palace), run by Universalmuseum Joanneum, about 57 metres from grz_009. This pass did not independently reconfirm the current park-only ticket price or hours versus the palace/museum tour price; state plainly that entry is paid and point to the museum's own current prices page rather than quoting a figure.",
+        "transport": "Graz public transport toward the Eggenberg district; Eggenberger Allee 90 is the palace's signposted main entrance. Exact tram/bus line not independently confirmed this pass.",
+        "location_precision": "confirmed",
+        "curation_status": "flagged",
+        "verify_notes": "FLAGGED for two narrow reasons, not for existence: (1) this tree does NOT appear in the City of Graz's own live municipal Naturdenkmale GIS layer (checked directly this pass, fetched 2026-08-17, all 90 current features; the other nine Eggenberg trees ND 977-984 and 986 all do appear in that layer, matched within a few metres, but ND1506 the Blutbuche is absent from it), so the two-source bar here rests on Austria's national open-data Naturdenkmal register as reproduced by Wikipedia's independently maintained list, plus a dated, geo-tagged Commons photograph, rather than on two mutually independent GIS layers as with grz_009. (2) alive-now evidence is a single photograph from 2014-06-15 (12 years old at time of writing) with no more recent sighting found; no vitality field exists in any register per the standing rule. Both facts are worth a one-line honest note on the page rather than a reason to withhold, per the rule that a tree we cannot re-confirm does not hold a city back and the general instruction that a judgement call about confidence never blocks publication when the location itself is solid, which it is here (register coordinates and photo GPS agree exactly, to six decimal places). Species given only at cultivar level (Blutbuche / copper beech, Fagus sylvatica 'Purpurea') by both sources, no further identification needed since this is unambiguous. No age or girth found in either source; Beschreibung field in the national dataset is empty for this entry. Stands about 57 metres from grz_009 (Eggenberg Weymouth Pine) in the same palace park, completing a small two-tree cluster there."
     }
 ]

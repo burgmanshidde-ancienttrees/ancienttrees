@@ -260,7 +260,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 79 | Buenos Aires | 7.33 | 333,331 | - | - | - | - | 10 | predicted (travel demand) |
 | 80 | Bergen | 7.30 | 82,940 | - | - | - | - | 10 | predicted (travel demand) |
 | 81 | Cork | 4.86 | 101,405 | 5 | 2 | - | - | 20 | measured |
-| 82 | Graz | 4.84 | 65,717 | 8 | - | 1 | 87 | 10 | predicted (travel demand) |
+| 82 | Graz | 4.84 | 65,717 | 10 | - | 1 | 87 | 10 | predicted (travel demand) |
 | 83 | Gyeongju | 6.94 | 30,260 | - | - | - | - | 10 | predicted (travel demand) |
 | 84 | Zurich | 6.94 | 140,788 | 4 | - | - | - | 20 | measured |
 | 85 | Osaka | 4.62 | 163,112 | 4 | 1 | - | - | 20 | measured |
