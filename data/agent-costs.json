@@ -2299,6 +2299,15 @@
         "note": "Opened Hilo off the register imported the same day. The pass refused three things correctly: a WebSearch claim that a banyan is 'one of the largest in the world' that it never saw on a fetched page, a bridge from the walking tour's 'park trees are over a century old' into one tree's age, and the Bodhi tree at a former school under hard rule 10. It also kept a genuine conflict open rather than picking, Sheriff Severance versus King Kalakaua as the 1882 planter. Tokens are the harness's measured figure, not the agent's 85k self-estimate.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "ottawa",
+        "kind": "verify",
+        "tokens": 105699,
+        "trees": 8,
+        "note": "New city, opened off the NCC Remarkable Trees register's downtown CORE cluster (Confederation Square/Major's Hill Park/Confederation Park, all within 0.5km). All 8 shipped flagged: the register is the only tree-specific source for every one, corroborating sources found only confirm surrounding context (OIC founding, park opening year, adjacent landmarks) rather than the individual tree. Two ages derived from the register's own circa-1900 planting statements (Vitifolia linden pair, horse chestnut), both broad bands. Avoided bridging the War Memorial's 1939 unveiling and Confederation Park's 1967 opening into tree ages. Tokens are the agent's own estimate, not harness-measured.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
