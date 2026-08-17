@@ -1,0 +1,40 @@
+{
+  "leads": [
+    {
+      "name": "Drago de Igueste de Candelaria",
+      "species": "Canary Islands Dragon Tree (Dracaena draco)",
+      "reason": "Confirmed to exist and to carry municipal protection status (listed on tenerife.es's own arboles-monumentales portal and mentioned by candelaria.es for the Igueste district), but no age, height or girth figure found this pass, and no second independent source beyond the Cabildo listing. candelaria.es itself failed to fetch (self-signed certificate error). Worth a second pass with a direct visit to candelaria.es via browser or a search of local Tenerife press."
+    },
+    {
+      "name": "El Almacigo (Pistacia atlantica singular specimen), El Sauzal",
+      "species": "Pistacia atlantica",
+      "reason": "tenerife.es's own arboles-monumentales portal names 'El Almacigo, El Sauzal' as a designated monumental tree, but no page giving its specific age, height or exact address was found this pass; general species background (can exceed 1000 years) was found but not tied to this specimen. A different, better documented Almacigo exists in Arona (9m tall) per a general search, not the same tree."
+    },
+    {
+      "name": "Sabina de la finca 'La Sabina', Buenavista del Norte",
+      "species": "Juniperus (sabina)",
+      "reason": "Named on tenerife.es's monumental-tree portal but not researched further this pass; no age/dimensions/coordinates found yet."
+    },
+    {
+      "name": "Palmera del Conde de las 7 fuentes, Buenavista del Norte",
+      "species": "Phoenix canariensis (Canary palm), likely",
+      "reason": "Named on tenerife.es's monumental-tree portal but not researched further this pass; unclear if a palm qualifies as a collectible tree entry versus an ensemble, and no age/dimensions found."
+    },
+    {
+      "name": "Pino Canario 'Pino del Senor', Arafo",
+      "species": "Canary Pine (Pinus canariensis)",
+      "reason": "Named on tenerife.es's monumental-tree portal but not researched further this pass; no age/dimensions/coordinates found yet."
+    },
+    {
+      "name": "Pino Derrengado, Arico",
+      "species": "Canary Pine (Pinus canariensis)",
+      "reason": "Named on tenerife.es's monumental-tree portal but not researched further this pass; no age/dimensions/coordinates found yet. Note the same portal also separately lists a 'Pinos de Tea del Horno del Buey' cluster in Arico, which reads as a stand/ensemble rather than one collectible point, so it was not pursued as a candidate."
+    },
+    {
+      "name": "Palmeral de El Sauzal",
+      "species": "Phoenix canariensis (Canary palm grove)",
+      "reason": "Named on tenerife.es's monumental-tree portal but reads as a grove/ensemble rather than one collectible point with one obvious place to stand; would need a specific named individual palm within it to qualify, not pursued this pass."
+    }
+  ],
+  "blocked": []
+}
