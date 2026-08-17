@@ -31,6 +31,8 @@ counted in tokens against a subscription, never in money.
 import argparse
 import datetime
 import json
+import re
+from pathlib import Path
 import os
 import subprocess
 import sys
@@ -214,12 +216,32 @@ def append_health(record):
         fh.write("\n")
 
 
+def window_minutes(default=90):
+    """The run's cap, read from the workflow rather than remembered.
+
+    This line said "of its 60 minute window" for every run logged after the cap
+    became 90, which is a number Hidde reads in LOG.md to judge whether the
+    schedule is working. A hardcoded constant describing a value that lives in
+    another file goes stale silently, exactly like the workflow prompt that kept
+    declaring a superseded phase.
+    """
+    try:
+        wf = Path(__file__).resolve().parent.parent / ".github" / "workflows" / "nightly.yml"
+        m = re.search(r"^\s*timeout-minutes:\s*(\d+)", wf.read_text(encoding="utf-8"), re.M)
+        return int(m.group(1)) if m else default
+    except OSError:
+        return default
+
 def stub_entry(record):
     """The LOG.md line a silent run did not write."""
     started = record.get("started", "")[:16].replace("T", " ")
     bits = []
     if record.get("minutes") is not None:
-        bits.append(f"{record['minutes']} minutes of its 60 minute window")
+        window = window_minutes()
+        line = f"{record['minutes']} minutes of its {window} minute window"
+        if str(record.get("minutes_basis", "")).startswith("wall clock"):
+            line += " (wall clock: cancelled before it could report its own duration)"
+        bits.append(line)
     if record.get("turns") is not None:
         bits.append(f"{record['turns']} turns")
     if record.get("denials"):
@@ -285,11 +307,35 @@ def main():
     now = datetime.datetime.now(datetime.timezone.utc)
 
     ms = result.get("duration_ms")
+    started_iso = args.started or now.replace(microsecond=0).isoformat()
+
+    # A cancelled run is not an idle run, and until 2026-08-17 the meter counted
+    # it as one. `duration_ms` comes from the agent's own execution-result file,
+    # which a timeout cancellation never gets to write, so minutes came out null
+    # and contributed ZERO to the utilisation number. On the night of 08-16 the
+    # run that hit the 90 minute cap did 10 of the night's 12 real commits, and
+    # the meter reported 9% utilisation against an honest 34%. Understating by a
+    # factor of four, on the exact number a schedule decision is made from.
+    #
+    # So fall back to the wall clock, and say which of the two it is, because an
+    # estimate presented as a measurement is the thing this project does not do.
+    minutes = round(ms / 60000.0, 1) if isinstance(ms, (int, float)) else None
+    minutes_basis = "measured"
+    if minutes is None:
+        try:
+            began = datetime.datetime.fromisoformat(started_iso.replace("Z", "+00:00"))
+            minutes = round((now - began).total_seconds() / 60.0, 1)
+            minutes_basis = ("wall clock: the agent wrote no duration, which usually "
+                             "means the job was cancelled at its timeout")
+        except (TypeError, ValueError):
+            minutes_basis = "unknown: no duration and no parseable start time"
+
     record = {
-        "started": args.started or now.replace(microsecond=0).isoformat(),
+        "started": started_iso,
         "date": now.strftime("%Y-%m-%d"),
         "run_id": args.run_id,
-        "minutes": round(ms / 60000.0, 1) if isinstance(ms, (int, float)) else None,
+        "minutes": minutes,
+        "minutes_basis": minutes_basis,
         "turns": result.get("num_turns"),
         "denials": result.get("permission_denials_count"),
         "ended": result.get("subtype") or ("error" if result.get("is_error") else None),
