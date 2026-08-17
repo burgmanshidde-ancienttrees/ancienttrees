@@ -1,0 +1,278 @@
+{
+  "city": "Graz",
+  "country": "Austria",
+  "status": "needs_curation",
+  "intro": "Graz's city government keeps a live register of protected trees, and eight ship here: a maple on the wooded Schlossberg hill above the old town, a cluster of three in the Volksgarten park, a maple with a documented 1956 record in the Augarten, a plane on an ordinary city square, and two oaks of very different girth on the same hillside street, protected on the same day in 1979. All are free and out in the open, and most carry no recorded age, an honest gap stated rather than guessed past.",
+  "meta_description": "Graz's protected trees: an oak-and-plane cluster in the Volksgarten, a Schlossberg maple, two hillside oaks measured a world apart in girth.",
+  "question_meta": "Graz's most solidly dated protected tree is a field maple in the Augarten, already recorded in a 1956 survey. Its story, and seven more.",
+  "question_answer": "Graz's most solidly dated protected tree is the Augarten Field Maple, growing at the eastern edge of the Augarten park in the Jakomini district. Its formal legal protection dates to 1979, but Wikipedia's own record of Graz's protected trees cites an earlier source, a 1956 survey of the city's planted broadleaf trees, which already listed this exact maple as worth protecting. That gives it a documented floor of at least seventy years old, decades before most of Graz's other protected trees, whose designation dates cluster in 1979, 1990 and 2000 with no age ever published for the trees themselves. Two oaks on Panoramagasse, protected on the same day in July 1979, carry real 2015 field-measured girths (2.80 and 4.90 metres) that likely put at least the larger one older still, but converting a girth into a year needs a cited growth rate this page does not have in hand, so no number is guessed.",
+  "question_context": "This page is built on the City of Graz's own live Naturdenkmale open-data register (geodaten.graz.at, CC BY 4.0), cross-checked tree by tree against Wikipedia's independently maintained 'Liste der Naturdenkmaler in Graz', which geocodes each entry separately and in several cases carries real field measurements or historical citations the register itself does not. Of ninety register entries within 20 kilometres, most cluster tightly around the city centre; this page publishes eight that verified cleanly against two independent sources and pass the access test, spanning the Schlossberg hill, the Volksgarten park, the Augarten, Schillerplatz and the Panoramagasse hillside. Two more candidates, a Paulownia at a kindergarten and a pair of trees at a state youth-care home, were found and held back under this project's rule against sending visitors onto school or institutional grounds without clear evidence they are open. A further cluster of nine register trees in the Eggenberg Schloss park, about 3.5km from the centre, is recorded as a lead for a future pass rather than researched here.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Graz?",
+      "a": "The Augarten Field Maple is the most solidly dated: a 1956 survey already listed it as protection-worthy, giving it a documented floor of at least seventy years old today, well before its formal 1979 designation. Two oaks on Panoramagasse, protected the same day in 1979, carry real field-measured girths (2.80m and 4.90m) that may put the larger one older still, but no age is derived from girth without a cited growth-rate figure."
+    },
+    {
+      "q": "Are Graz's protected trees free to see?",
+      "a": "Yes, all eight. They stand on a public hillside park, in a public garden, at the edge of another public park beside a heritage building, on an ordinary city square, and on public street verges, with no entry fee anywhere on this list."
+    },
+    {
+      "q": "Can I see them all in one walk?",
+      "a": "Not comfortably in one. The Schlossberg and Volksgarten trees sit within about a kilometre of each other and pair naturally. The Augarten, Schillerplatz and Panoramagasse trees each sit one and a half to two and a half kilometres further out, making a second or third short outing from the centre rather than one continuous loop."
+    },
+    {
+      "q": "Why does Graz protect trees with no recorded age?",
+      "a": "The city's Naturdenkmal register records a protection date, a species and an owner, but rarely a planting date or a trunk measurement; only two of the eight trees here carry a documented girth, from a 2015 field survey, and none carries a formal age. This page states that gap honestly rather than inventing a number, and welcomes a reader with a tape measure."
+    }
+  ],
+  "hero_tree_id": "grz_005",
+  "oldest_tree_id": "grz_005",
+  "trees": [
+    {
+      "id": "grz_001",
+      "name": "The Schlossberg Field Maple",
+      "species": "Field Maple (Acer campestre)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Schlossberg, 8010 Graz",
+        "latitude": 47.076738,
+        "longitude": 15.437847,
+        "neighbourhood": "Innere Stadt (Schlossberg hill park)"
+      },
+      "story": "Graz keeps a live public register of its protected trees, and this field maple has held a place on it since the year 2000, growing on the wooded hill above the old town where a fortress once stood and a bell tower still does. Field maples rarely get singled out anywhere: they are the hedgerow tree, the one that fills gaps between grander species rather than anchoring a park on its own. This one earned protection anyway, on a hill whose beech, hornbeam and ash have been managed as a landscape park for centuries around the ruins at its summit. Austria's official record and Graz's own city register agree on the exact spot to within three metres, though neither has ever measured its girth or put a number on its age, an honest gap on an otherwise well documented tree. The Schlossberg itself needs no introduction to anyone who has visited Graz, its clock tower visible across the whole city, and the climb up past this maple is free at any hour, on foot or by the paid funicular that saves the legs.",
+      "verified_sources": [
+        "Stadt Graz Naturdenkmale open-data register (geodaten.graz.at, CC BY 4.0), register_id 118",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Graz (Steirisches Naturdenkmal 1270, protected 24.05.2000)"
+      ],
+      "access": "Free, in the public Schlossberg hill park, open at all times",
+      "transport": "Tram 3 or 5 to the Schlossbergbahn stop, then a short walk up the hill (a paid funicular also runs)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Register (id 118) plus Wikipedia's Naturdenkmal list agree within 3m on location. Register gives species as Acer campestre; Wikipedia's entry only says 'Ahorn' (maple, genus level), so species rests on the register alone. No age or girth found in either source.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "grz_002",
+      "name": "The Volksgarten Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Volksgarten, Muhlgasse 43, 8020 Graz",
+        "latitude": 47.073638,
+        "longitude": 15.426257,
+        "neighbourhood": "Lend (Volksgarten park)"
+      },
+      "story": "Three of Graz's officially protected trees stand inside one small park, and this oak is the first of them, rooted near the Muhlgasse side of the Volksgarten. The park's own history records a planted row of oaks running roughly north to south through its centre, seventy to a hundred years old, but no source confirms this particular designated tree is part of that row rather than a separate planting nearby, so the two facts stay separate here rather than joined into a tidier story that nobody actually stated. What both the city's live tree register and Wikipedia's independent list agree on is the spot itself, within two metres of each other, and the protection: this pedunculate oak has held Naturdenkmal status since May 2000. The Volksgarten covers four and a half hectares open on every side, no gate and no fee, a five minute walk from Graz's main station. Two more protected planes grow within a hundred and seventy metres of this oak, making the park itself worth the whole visit rather than a single stop.",
+      "verified_sources": [
+        "Stadt Graz Naturdenkmale open-data register (geodaten.graz.at, CC BY 4.0), register_id 117",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Graz (Steirisches Naturdenkmal 1269, protected 25.05.2000)",
+        "https://de.wikipedia.org/wiki/Volksgarten_(Graz)"
+      ],
+      "access": "Free, public park (4.6 ha), open on all sides, no entry fee",
+      "transport": "Short walk from Graz Hauptbahnhof (about 1km)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Register (id 117) and Wikipedia geocode within 2m; Volksgarten's own Wikipedia article independently confirms the park holds several Naturdenkmal trees. The park's oak-row age (70-100 years) is NOT applied to this specific tree since no source confirms it belongs to that row (bridge-claim avoided). No girth or planting date found.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "grz_003",
+      "name": "The Volksgarten Plane of Muhlgasse",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Volksgarten, Muhlgasse 43, 8020 Graz",
+        "latitude": 47.073456,
+        "longitude": 15.42566,
+        "neighbourhood": "Lend (Volksgarten park)"
+      },
+      "story": "A dated photograph on Wikimedia Commons, filed under this exact tree's own protection number, shows this plane still standing in the Volksgarten years after its formal designation, one of the small proofs this project prefers over a bare database record. It is a London Plane, the hybrid city planners across Europe reach for when they want a tree that shrugs off pollution and poor soil, and this one has done the job here since the year 2000. It grows a few paces from a protected oak and a second protected plane, the three of them forming Graz's tightest cluster of designated trees, all reachable inside one small public park. Neither source gives an age or a trunk measurement, an honest gap on a tree old enough to have earned legal protection on its own merits. The Volksgarten opens on every side with no fee and no closing time, a five minute walk from Graz's main railway station.",
+      "verified_sources": [
+        "Stadt Graz Naturdenkmale open-data register (geodaten.graz.at, CC BY 4.0), register_id 119",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Graz (Steirisches Naturdenkmal 1290, protected 05.07.2000)",
+        "Wikimedia Commons, File:Platane Volksgarten Graz 1290 (2).JPG"
+      ],
+      "access": "Free, public park, open on all sides",
+      "transport": "Short walk from Graz Hauptbahnhof (about 1km)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Register (id 119) and Wikipedia geocode within 3m. Register and Wikipedia use slightly different Latin binomials for the same London Plane hybrid (Platanus x hispanica / Platanus x acerifolia); recorded here as Platanus x acerifolia to match this project's existing canonical name for the species (hard rule 9). A dated Commons photo filed under Naturdenkmal 1290 independently corroborates the tree stands in the Volksgarten itself. No age or girth found. Part of a three-tree Volksgarten cluster with grz_002 and grz_004.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "grz_004",
+      "name": "The Volksgarten Plane of Volksgartenstrasse",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Volksgarten, Volksgartenstrasse, 8020 Graz",
+        "latitude": 47.073034,
+        "longitude": 15.427946,
+        "neighbourhood": "Lend (Volksgarten park)"
+      },
+      "story": "Registers occasionally list the same tree twice under two addresses, a real problem elsewhere on this site, and this plane is a genuine check against exactly that mistake: it stands on a separate legal plot from the park's other two designated trees, a hundred and seventy metres away, protected four months later in a separate 2000 decision. Not a duplicate, a third tree completing the Volksgarten's own small collection of protected specimens. It grows near the Volksgartenstrasse entrance rather than the Muhlgasse side where its two neighbours stand, which means a visitor can enter the park from either street and find a protected tree within a few steps. Graz's city register and Wikipedia's independent list place it within three metres of each other. As with its neighbours, nobody has published an age or a trunk measurement, which any reader with a tape measure could fix in the time it takes to walk the park end to end.",
+      "verified_sources": [
+        "Stadt Graz Naturdenkmale open-data register (geodaten.graz.at, CC BY 4.0), register_id 120",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Graz (Steirisches Naturdenkmal 1291, protected 26.09.2000)"
+      ],
+      "access": "Free, public park, open on all sides",
+      "transport": "Short walk from Graz Hauptbahnhof (about 1km), enter via the Volksgartenstrasse side",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Register (id 120) and Wikipedia geocode within 3m. Confirmed as a separately registered tree on a different cadastral plot (742/6) from the Muhlgasse pair (742/2), not a duplicate registration. No age or girth found.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "grz_005",
+      "name": "The Augarten Field Maple",
+      "species": "Field Maple (Acer campestre)",
+      "age_estimate": "at least 70 years",
+      "age_min": 70,
+      "age_max": null,
+      "location": {
+        "address": "Friedrichgasse 41, 8010 Graz",
+        "latitude": 47.062255,
+        "longitude": 15.437708,
+        "neighbourhood": "Jakomini, at the eastern edge of the Augarten park"
+      },
+      "story": "This field maple carries an unusually solid floor under its age. Its formal Naturdenkmal designation dates to 1979, but Wikipedia's own record cites an earlier source, a 1956 survey of Graz's planted broadleaf trees by F. Hanselmayer, which already listed this exact maple as a tree worth protecting, decades before the legal designation caught up. That gives a hard floor of at least seventy years old as of today, derived from a dated citation rather than a guess, with no upper bound stated because nothing sources one. It grows at the eastern edge of the Augarten, a public park in Jakomini, beside a heritage bathhouse building that now houses the Museum der Wahrnehmung. Whether the tree's exact footing sits on the museum's own grounds or on the adjoining public park land was not confirmed by any source read this pass, which is why this entry is flagged rather than stated with full confidence, an honest narrow gap on an otherwise well anchored tree.",
+      "verified_sources": [
+        "Stadt Graz Naturdenkmale open-data register (geodaten.graz.at, CC BY 4.0), register_id 38",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Graz (Steirisches Naturdenkmal 1009, protected 05.07.1979, citing F. Hanselmayer, 'In Graz gepflanzte Laubholzer', 1956)",
+        "https://de.wikipedia.org/wiki/Museum_der_Wahrnehmung"
+      ],
+      "access": "Free to view; stands at the edge of the public Augarten park beside a heritage building (Museum der Wahrnehmung). Not confirmed on the ground whether the tree itself sits on the museum's footprint or the adjoining park land.",
+      "transport": "Walkable from Graz Hauptbahnhof or the city centre; tram/bus toward Elisabethstrasse/Jakominiplatz, then a short walk to the Augarten",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Register's own coordinate (47.062255,15.437708) confirmed independently against Wikipedia's own geocoded entry for Naturdenkmal 1009 (47.062233,15.437672), agreeing within 5m; an earlier data-entry error briefly duplicated a different tree's coordinates here and was caught and corrected before shipping. Age floor is derived from a cited 1956 survey (Hanselmayer) that already listed this tree, not a growth-rate guess. Access flagged: tree stands at the edge of a public park beside a heritage building, but the exact boundary was not confirmed.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "grz_006",
+      "name": "The Schillerplatz Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Schillerplatz, 8010 Graz",
+        "latitude": 47.068702,
+        "longitude": 15.459209,
+        "neighbourhood": "St. Leonhard (Schillerplatz square)"
+      },
+      "story": "A photograph taken on the second of May, 2014, and filed on Wikimedia Commons under this tree's own protection number, is the kind of small dated proof this project values: it shows the tree alive and identifiable twelve years ago, a data point independent of both the city's live register and Wikipedia's own list, which agree with each other on the exact spot to within two metres. The plane has held its Naturdenkmal status since September 1990, growing on Schillerplatz, an ordinary public square in the St. Leonhard district rather than a landscaped park, the kind of protected tree that people cross without a second glance because nothing marks it out from the street furniture around it. No age or trunk measurement has ever been published for it, which is true of most of Graz's protected trees and no reason to hold this one back: it stands on open public ground, reachable by tram or bus directly to the square, free at any hour.",
+      "verified_sources": [
+        "Stadt Graz Naturdenkmale open-data register (geodaten.graz.at, CC BY 4.0), register_id 89",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Graz (Steirisches Naturdenkmal 1138, protected 05.09.1990)",
+        "Wikimedia Commons, Category:Steirisches Naturdenkmal 1138, File:2014-05-02 Platane Schillerplatz Graz (1).JPG"
+      ],
+      "access": "Free, on Schillerplatz, a public city square, open at all times",
+      "transport": "Tram or bus to the Schillerplatz stop, directly on the square",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Register (id 89) and Wikipedia geocode within 2m. A dated 2014 Commons photo, filed under the Naturdenkmal 1138 category, independently shows the tree standing at that date. No age or girth found in any source checked.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "grz_007",
+      "name": "The Panoramagasse Oak (No. 54)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 280,
+      "location": {
+        "address": "Opposite Panoramagasse 54, 8010 Graz",
+        "latitude": 47.087014,
+        "longitude": 15.450169,
+        "neighbourhood": "Geidorf (Panoramagasse, Ruckerlberg hillside)"
+      },
+      "story": "Two pedunculate oaks stand forty metres apart on the same hillside street, protected on the exact same day in July 1979, and this is the smaller of the pair: a trunk measured at 2.80 metres round in a 2015 field survey, against 4.90 metres for its neighbour up the road. No published growth-rate figure for this species was found and verified this pass, so that girth is not converted into an age here rather than turned into a guess dressed up as a calculation. The register lists the tree opposite house number 54 on Panoramagasse, a steep street on the Ruckerlberg hillside in Geidorf that earns its name honestly, climbing above the city with views back over the rooftops. 'Gegenuber', opposite, is the register's own word for the tree's position: on the public verge across from the house, not inside anyone's private garden. Reachable by bus toward Ruckerlberggurtel and a walk up the hill, with its larger neighbour barely a minute further on.",
+      "verified_sources": [
+        "Stadt Graz Naturdenkmale open-data register (geodaten.graz.at, CC BY 4.0), register_id 15",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Graz (Steirisches Naturdenkmal 989, protected 11.07.1979, trunk circumference 2.80m measured 2015 at breast height)"
+      ],
+      "access": "Free, on public ground opposite the house number given",
+      "transport": "Bus toward Ruckerlberggurtel/Geidorf, then a walk up Panoramagasse",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Register (id 15) and Wikipedia geocode within 2m. Wikipedia records a field-measured girth (280cm, 2015), captured as girth_cm. No age derived: no verified published growth-rate citation for Quercus robur was in hand this pass, so age_estimate stays empty rather than guessed.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "grz_008",
+      "name": "The Panoramagasse Oak (No. 56)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 490,
+      "location": {
+        "address": "Opposite Panoramagasse 56, 8010 Graz",
+        "latitude": 47.087283,
+        "longitude": 15.449682,
+        "neighbourhood": "Geidorf (Panoramagasse, Ruckerlberg hillside)"
+      },
+      "story": "This oak and its neighbour forty metres down the hill were protected on the same day in July 1979, near-identical paperwork for two trees that turned out nothing alike: a 2015 field survey measured this one at 4.90 metres round, nearly double its neighbour's 2.80 metres, despite an address and a protection date that otherwise read like a matched pair. Nothing in either source explains the gap, whether one was planted decades before the other or simply grew faster on better ground, so this page states the measurement rather than guessing at a reason. It stands opposite house number 56 on Panoramagasse, a hillside street in Geidorf on the Ruckerlberg slope, on the public verge rather than inside any private plot, per the register's own wording. No published age exists for it and none is invented here; a girth this size on an oak usually means real age, but converting one into the other needs a cited growth-rate figure this pass did not have in hand, so the number stays a girth rather than becoming a guess.",
+      "verified_sources": [
+        "Stadt Graz Naturdenkmale open-data register (geodaten.graz.at, CC BY 4.0), register_id 16",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Graz (Steirisches Naturdenkmal 990, protected 11.07.1979, trunk circumference 4.90m measured 2015 at breast height)"
+      ],
+      "access": "Free, on public ground opposite the house number given",
+      "transport": "Bus toward Ruckerlberggurtel/Geidorf, then a walk up Panoramagasse; about a minute from grz_007",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Register (id 16) and Wikipedia geocode within 3m. Field-measured girth 490cm (2015), captured as girth_cm, substantially thicker than its same-day-protected neighbour (280cm) 40m away. Confirmed as two distinct, separately measured trees, not a corrupted duplicate registration. No age derived, same reasoning as grz_007.",
+      "location_precision": "confirmed"
+    }
+  ]
+}

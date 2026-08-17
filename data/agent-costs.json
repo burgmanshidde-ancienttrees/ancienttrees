@@ -2047,6 +2047,24 @@
     "note": "Session work (tokens not metered by harness). Wrote all 5 stories directly plus city intro/FAQ/question page (new city, floor cleared at 5). Fixed a Paulownia tomentosa common-name collision with Milan's existing 'Empress Tree' caught by hard rule 9 at build time.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "graz",
+    "kind": "verify",
+    "tokens": 188894,
+    "trees": 8,
+    "note": "New city, first Austrian page, register-backed (Naturdenkmale, 90 candidates): 8 cross-matched against Wikipedia's independent Naturdenkmal list. Caught and fixed one real data-entry error (a copy-pasted coordinate for grz_005) before shipping by independently re-verifying against Wikipedia's own geocode. 2 blocked (kindergarten, youth-care home), 5 leads including a strong Eggenberg Schlosspark cluster (9 more register trees, paid entry) for a follow-up pass.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "graz",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 8,
+    "note": "Session work (tokens not metered by harness). Wrote all 8 stories directly plus city intro/FAQ/question page (new city). Fixed two hard-rule-9 species-name collisions at build time (London Plane's common name and its Latin binomial, standardised to the site's existing canonical Platanus x acerifolia).",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
