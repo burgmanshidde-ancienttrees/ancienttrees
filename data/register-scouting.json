@@ -213,6 +213,30 @@
    "country": "",
    "status": "stalled",
    "note": "Croatia returns ZERO datasets in the data.europa.eu sweep for every remarkable-tree phrase tried. Croatia does designate 'spomenik prirode' including individual trees through the Ministry of Environment's nature-protection register, which is the thing to check next; it was not reached this pass."
+  },
+  {
+   "place": "Mexico City",
+   "country": "Mexico City",
+   "status": "stalled",
+   "note": "SCOUTED 2026-08-16. SEDEMA runs a real Arboles Patrimoniales programme with a public map; the GeoJSON behind it is at proyectos.sedema.cdmx.gob.mx/arbolespatrimoniales/Data/, reachable and open, 13 declared trees across 5 boroughs with species, full address, girth, DBH, crown, a condition field and coordinates. Ten are ahuehuetes including a 1,005 cm giant at Tacuba and a 1,382 cm one at Santa Catarina. Saved as data/leads/mexico-city.json rather than a register because NO LICENCE is stated anywhere on the programme site. UNIT TRAP: the height and crown columns are labelled metres and hold centimetres. The programme takes nominations, so it grows. Next: a licence ask to SEDEMA."
+  },
+  {
+   "place": "Chiang Mai",
+   "country": "Chiang Mai",
+   "status": "empty",
+   "note": "SCOUTED 2026-08-16. Thailand has no government register of individual heritage trees that this pass could find. What exists is not a substitute: Changthong Heritage Park is a private paid-entry collection of trees TRANSPLANTED from elsewhere, which fails the premise of standing where a tree has stood for centuries, and the tree-ordination sites (Saraphi road rubber trees) are a cultural practice rather than a list. Route here is not a register."
+  },
+  {
+   "place": "Dubai",
+   "country": "Dubai",
+   "status": "empty",
+   "note": "Not scouted in depth and recorded as empty on reasoning rather than a search, which is the honest label: the UAE has no ancient-tree tradition of the kind this project maps, Dubai's tree stock is almost entirely modern irrigated planting, and the queue's own demand figure is travel demand rather than tree demand. If anything exists it is the Al Ain oases (UNESCO, date palms) which are a different country-level story and not Dubai."
+  },
+  {
+   "place": "Israel",
+   "country": "Israel",
+   "status": "stalled",
+   "note": "Probed twice, 2026-08-16, in English and Hebrew. No heritage-tree dataset surfaced on data.gov.il and the Nature and Parks Authority publishes reserves and parks rather than individual trees; KKL-JNF material is editorial. Israel does have a legal category of declared natural monuments which can cover single trees, and THAT decree list is the specific thing still unchecked. Not resolved."
   }
  ]
 }
