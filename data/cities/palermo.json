@@ -3,8 +3,8 @@
   "country": "Italy",
   "status": "needs_curation",
   "intro": "Palermo grows one species obsessively. Ficus macrophylla, the Moreton Bay fig, arrived from Australia in the 19th century and found a climate it liked even better than home, filling the city's villas and squares with trees whose aerial roots thicken into trunks of their own. The most famous, in Piazza Marina, is currently fighting a fungal infection that has cost it half its canopy. Its own parent tree still thrives quietly in the Botanical Garden nearby. Between the two: a fig turned into a murdered judge's memorial, two rare dragon trees, and a palm avenue inside Italy's first public garden.",
-  "meta_description": "Palermo's ten most remarkable trees: a fungus-fighting giant fig, its own 180-year-old parent, and a mafia judge's living memorial.",
-  "question_meta": "Palermo's oldest tree is a 181-year-old fig in the Orto Botanico, parent to the more famous giant in Piazza Marina. Its story and nine more trees.",
+  "meta_description": "Palermo's fourteen most remarkable trees: a fungus-fighting giant fig, its own 180-year-old parent, and a mafia judge's living memorial.",
+  "question_meta": "Palermo's oldest tree is a 181-year-old fig in the Orto Botanico, parent to the more famous giant in Piazza Marina. Its story and thirteen more.",
   "question_answer": "Palermo's oldest tree is the Ficus macrophylla of the Orto Botanico, planted in 1845 and now about 181 years old, its canopy measured at roughly 3,000 square metres, reportedly the largest of any tree in Europe. It grows inside the city's botanical garden, a short walk from the historic centre.",
   "question_context": "Palermo's fig population is unusually well documented because most of it traces back to a handful of 19th century plantings, several still identifiable today. The Orto Botanico's own specimen, planted in 1845, is the oldest and best studied: 180 years of growth have built a canopy now measured at roughly 3,000 square metres, reportedly the largest of any tree in Europe, held up by 44 secondary trunks that grow down from the branches as aerial roots. Its more famous descendant in Piazza Marina, grown from a cutting taken off this tree in the 1860s, is currently fighting a fungal infection that has cost it half its own canopy. A third fig outside the home of murdered judge Giovanni Falcone is younger still, planted only decades ago, but carries its own civic weight as a memorial renewed every year on the anniversary of his 1992 killing. The botanical garden charges standard entry; Piazza Marina, a short walk away, is free.",
   "faq": [
@@ -333,6 +333,130 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "pal_011",
+      "name": "The Queensland Pine of Villa Trabia",
+      "species": "Bunya Pine (Araucaria bidwillii)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 222,
+      "location": {
+        "address": "Villa Trabia alle Terre Rosse, Via Salinas 3, Palermo",
+        "latitude": 38.129458,
+        "longitude": 13.346953,
+        "neighbourhood": "Libertà"
+      },
+      "story": "A bunya pine drops cones that weigh as much as a bowling ball. Araucaria bidwillii comes from Queensland, where the fruiting season is fenced off for exactly that reason, and Palermo planted one anyway in the garden of Villa Trabia.\n\nThe garden is the story around it. Between 1886 and 1903 the head gardener Vincenzo Ostinelli turned the grounds into a giardino romantico stuffed with exotics: araucarias, palms, conifers, ornamental figs. An inventory he compiled in 1910 counted 2,790 plant species in the park. Roughly 150 of them are still there. Nobody recorded which year this pine went in, so it may or may not date from that planting, and the register does not say either.\n\nWhat is measured is the trunk, 2.22 metres round, which for this species is a mature tree rather than an old one. The bunya's shape is the reason to look up: a straight column with the branches gathered into distinct tiers and turned up at the ends, like a candelabra that has been left out in the weather.\n\nThe garden opens weekday mornings only, which is worth checking before the walk, and it tightens the loop with the trees already on this page rather than adding another distant stop.",
+      "verified_sources": [
+        "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf (sheet 06/G273/PA/19, same D.M. n. 5450 del 19/12/2017 dataset as the national MASAF register: girth 222cm, height 23m, criterion 'rarità botanica')",
+        "https://www.apgi.it/giardino/villa-trabia-alle-terre-rosse/ (Associazione Parchi e Giardini Italiani garden record: confirms araucarias among the surviving exotic species from Vincenzo Ostinelli's 1886-1903 romantic-style redesign of the garden, free public access Mon-Fri 9:00-14:00)"
+      ],
+      "access": "Free, public garden (Villa Trabia). Open Monday to Friday, 9:00 to 14:00, per APGI.",
+      "transport": "Same neighbourhood as the already-published Ficus of Villa Trabia (pal_006), roughly 130m away within the same grounds",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The tiered, candelabra-shaped conifer in the garden. Do not stand under it in fruiting season: the cones are enormous.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "pal_012",
+      "name": "The Silk-Cotton Tree of the Orto Botanico",
+      "species": "Silk Floss Tree (Ceiba speciosa)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 380,
+      "location": {
+        "address": "Orto Botanico di Palermo, Via Lincoln 2/A, Palermo",
+        "latitude": 38.112572,
+        "longitude": 13.373458,
+        "neighbourhood": "Tribunali-Castellammare / Kalsa"
+      },
+      "story": "Palermo calls this one the drunken tree, and the trunk explains it. Ceiba speciosa swells into a green bottle shape and covers itself in conical spines, which is a defence against animals that do not exist on this continent, and it stands on the botanical garden's avenue of chorisias with several others of its kind.\n\nIt flowers when almost nothing else does. Big hibiscus-shaped blooms open through the autumn and into December, cream then pink then violet on the same tree, and the seed pods that follow split to release the silky floss the species is named for, once used to stuff life jackets.\n\nThe garden brought the species from Brazil around 1896, and the botanist Michele Lojacono Pojero recorded the first one growing in a Palermo garden in 1910. Neither date belongs to this particular tree, and no source gives it one, so its age is left open rather than borrowed from the species' arrival. Its trunk measures 3.8 metres round.\n\nThe Orto Botanico charges entry, which buys you one of the great nineteenth-century acclimatisation gardens of the Mediterranean, and this is among the odder things growing in it.",
+      "verified_sources": [
+        "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf (sheet 34/G273/PA/19, same D.M. n. 5450 del 19/12/2017 dataset as the national MASAF register: girth 380cm, height 15m)",
+        "https://musei.unipa.it/en/silk-cotton-tree (University of Palermo's own heritage/museum page for this exact specimen at the Orto Botanico's 'avenue of the chorisias', which it says holds trees with 'monumental characteristics')"
+      ],
+      "access": "Paid entry (Orto Botanico di Palermo ticket).",
+      "transport": "Same garden as the already-published Ficus of the Orto Botanico (pal_003), a few hundred metres away",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Unmistakable: a swollen green bottle of a trunk covered in conical spines, on the avenue of chorisias.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "pal_013",
+      "name": "The Yucca of Villa Malfitano",
+      "species": "Giant Yucca (Yucca gigantea)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 560,
+      "location": {
+        "address": "Villa Malfitano Whitaker, Via Dante 167, Palermo",
+        "latitude": 38.122083,
+        "longitude": 13.341864,
+        "neighbourhood": "Libertà"
+      },
+      "story": "This is a yucca with a trunk five and a half metres round. Yuccas are the spiky things in pots by a doorway, and this one has gone woody and enormous in the garden of Villa Malfitano, which is what a Palermo climate and a hundred-odd undisturbed years will do to a plant that is technically not a tree at all.\n\nBotanically it is a monocot, closer kin to a grass or an agave than to an oak, and it has no annual rings, which is one reason nobody has put an age on it. The site already collects two dragon trees and several palms on the same logic: what matters is whether the thing is worth standing in front of.\n\nIts name is unsettled. The register files it as Yucca gigantea and the city's own description calls it Yucca australis, which are names that have been swapped back and forth for the same plant. If you know which is right, tell us.\n\nVilla Malfitano was built for the Whitakers, the English wine family who made Marsala and then spent the profits on Sicily, and the foundation that runs it charges entry to the house and garden both.",
+      "verified_sources": [
+        "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf (sheet 12/G273/PA/19, same D.M. n. 5450 del 19/12/2017 dataset as the national MASAF register: girth 560cm, height 12m, criteria 'età e/o dimensioni' and 'rarità botanica')",
+        "https://turismo.cittametropolitana.pa.it/il-parco-di-villa-malfitano/ (Città Metropolitana di Palermo's own tourism page for the villa's garden, describing a 'magnificent specimen of Yucca ... which, together with one present at Villa Sofia, documents certainly the first introduction of this species in Europe')"
+      ],
+      "access": "Paid entry (Villa Malfitano Whitaker, run by the Whitaker Foundation).",
+      "transport": "Same grounds as the already-published Dragon Tree of Villa Malfitano (pal_004) and Fig of Villa Malfitano (pal_009)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A yucca the size of a tree, with a trunk over five metres round, in the villa garden.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "pal_014",
+      "name": "The Dragon Tree of Vivai Lo Porto",
+      "species": "Dragon Tree (Dracaena draco)",
+      "age_estimate": "several hundred years",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 700,
+      "location": {
+        "address": "Vivai Lo Porto, Corso Calatafimi 262, Palermo",
+        "latitude": 38.105297,
+        "longitude": 13.338656,
+        "neighbourhood": "Calatafimi"
+      },
+      "story": "Palermo's largest dragon tree stands in a garden centre. Seven metres round the trunk, which is half a metre more than either of the two already on this page, and it grows behind the counter of Vivai Lo Porto on Corso Calatafimi rather than in a park.\n\nThe nursery is the recent part. The ground it sits on was an eighteenth-century estate built for Monsignor Salvatore Ventimiglia di Belmonte, the last Inquisitor of Sicily, and a nineteenth-century garden of acclimatisation was laid out there long before the Lo Porto family started selling plants from it in 1960. The tree predates the business by a century at least.\n\nHow long before that, nobody has written down. One source describes the neighbouring horse chestnut as three hundred years old and the Sterculia as over 150, and says nothing about this one. Dracaena draco grows very slowly and lives a very long time, so seven metres of girth means several hundred years, and that band is as tight as the evidence allows. If you have seen a figure for it, we would like the source.\n\nYou walk in during business hours and nobody stops you, but it reads as a working nursery rather than a garden to visit, which is worth knowing before you go.",
+      "verified_sources": [
+        "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf (sheet 24/G273/PA/19, same D.M. n. 5450 del 19/12/2017 dataset as the national MASAF register: girth 700cm, height 7m, criterion 'rarità botanica'; the largest-girth dragon tree found in this register anywhere near Palermo)",
+        "https://luoghi.italianbotanicalheritage.com/en/lo-porto-nursery/ (Italian Botanical Heritage's own record for this nursery: lists a Dracaena draco among its historic specimens alongside a Sterculia 'over one hundred and fifty years old, one of the most important trees of Palermo' and a three-hundred-year-old horse chestnut, in a 19th-century Giardino di Acclimatazione on the grounds of an 18th-century estate built for Monsignor Salvatore Ventimiglia di Belmonte, Sicily's last inquisitor)"
+      ],
+      "access": "Vivai Lo Porto is a working plant nursery and garden centre, not a park: open to anyone who walks in during business hours (Mon-Sat 7:30-18:00, Sun 7:30-13:30 per public listings), no ticket or purchase required to view the grounds. It is genuinely public-facing (a nursery counter, not a gate to ask through) but the honest caveat for the page is that it reads as a business, not a garden attraction.",
+      "transport": "Corso Calatafimi, southwest Palermo, roughly 2.3km from the city-centre cluster (Villa Trabia/Villa Malfitano); its own small cluster with the register's Sterculia acerifolia 'Albero del fuoco' (girth 450cm) about 65m away, a candidate not researched this pass",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The biggest dragon tree on the nursery grounds, seven metres round. Two smaller ones are elsewhere in the city, on this same page.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }

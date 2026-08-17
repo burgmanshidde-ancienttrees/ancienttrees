@@ -1,275 +1,281 @@
 {
- "note": "The scouting ledger: what is known about the register behind each place, so a scout starts from the queue's top and not from whatever is interesting. Written 2026-08-16 after a round drifted into Estonia and Lithuania (#65 and #22) while Toronto, Montreal and Sydney (#8, #10, #14) sat untouched, because the scouting order was coming from the data instead of from the queue. Read by scripts/scout_next.py. Detail and proving sentences live in OPEN_DATA_SURVEY.md; this file is the index, one line each.",
- "status_values": {
-  "imported": "a register file exists in data/registers/",
-  "blocked": "found, and unusable for a stated reason (licence, non-commercial, withheld locations). Do not re-scout without a new angle.",
-  "stalled": "found, reachable, and something specific is in the way. The note says what to try next.",
-  "empty": "scouted properly and there is no semantically filtered register. Cheap sources other than a register are the route here.",
-  "unscouted": "never actually checked. Being named in a previous pass's 'not reached' list counts as unscouted."
- },
- "places": [
-  {
-   "place": "Toronto",
-   "country": "Canada",
-   "status": "stalled",
-   "note": "SCOUTED 2026-08-16. The city's own open data has only the street-tree inventory, which the semantic filter forbids. The real source is the Ontario Heritage Tree Program (Forests Canada / Ontario Urban Forest Council), an ArcGIS FeatureServer behind their StoryMap: 112 trees province-wide with species, an age estimate and a Public/Private flag, 38 within 30 km of Toronto. Its ArcGIS item carries an empty licenseInfo, so it is saved as data/leads/toronto.json (27 public leads, 11 excluded as private land) rather than imported. Next: licence ask to Forests Canada in the next outreach batch."
+  "note": "The scouting ledger: what is known about the register behind each place, so a scout starts from the queue's top and not from whatever is interesting. Written 2026-08-16 after a round drifted into Estonia and Lithuania (#65 and #22) while Toronto, Montreal and Sydney (#8, #10, #14) sat untouched, because the scouting order was coming from the data instead of from the queue. Read by scripts/scout_next.py. Detail and proving sentences live in OPEN_DATA_SURVEY.md; this file is the index, one line each.",
+  "status_values": {
+    "imported": "a register file exists in data/registers/",
+    "blocked": "found, and unusable for a stated reason (licence, non-commercial, withheld locations). Do not re-scout without a new angle.",
+    "stalled": "found, reachable, and something specific is in the way. The note says what to try next.",
+    "empty": "scouted properly and there is no semantically filtered register. Cheap sources other than a register are the route here.",
+    "unscouted": "never actually checked. Being named in a previous pass's 'not reached' list counts as unscouted."
   },
-  {
-   "place": "Montreal",
-   "country": "Canada",
-   "status": "blocked",
-   "note": "SCOUTED 2026-08-16. Montreal has a real curated register and it is not on the open-data portal: montroyal.montreal.ca/inventaires, the City's own Site officiel du Mont-Royal, carries 63 individual arbre-remarquable pages, each with per-tree coordinates, the property owner, a planting period, species notes and a written statement of dendrological and cultural interest. Quality is comparable to Sydney's. BLOCKED: montroyal.montreal.ca/credits states '(c) Tous droits reserves, Ville de Montreal', with no reuse terms anywhere on the site. Deliberately NOT scraped, unlike Toronto: Toronto's was an open API with no stated licence, this is website content with an explicit all-rights-reserved notice, and copying the compilation is not the same act as querying an open endpoint. donnees.montreal.ca carries only the full public-tree inventory, which the semantic filter forbids. Next: licence ask to the Bureau du Mont-Royal."
-  },
-  {
-   "place": "Sydney",
-   "country": "Australia",
-   "status": "blocked",
-   "note": "SOLVED the endpoint 2026-08-16 and blocked on licence. City of Sydney Register of Significant Trees, 2,504 entries, ArcGIS FeatureServer services1.arcgis.com/cNVyNtjGVZybOQWZ/ArcGIS/rest/services/Register_of_Significant_Trees_view/FeatureServer/0, open and queryable. It is the richest register found anywhere: species, common name, height, spread, year_of_planting, statement_of_significance, address, owner, and two fields the corpus says registers never have, condition (coded, including Dead) and accessibilility (Public access / Visible from street / No public access). BUT the AGOL item carries an empty licenseInfo, the dataset is not on the CC BY 4.0 data hub, and cityofsydney.nsw.gov.au's own terms say content must not be reproduced without written authorisation. Not imported, and the refusal is now explicit rather than merely absent: the register sweep found the City's own sibling layers 'RST Existing view' and 'RST Future nomination view', both carrying licenseInfo 'For public viewing only inside of City of Sydney Significant Tree Register. Not for individual re-use.' So this is a stated no, not an oversight, and the licence ask sent 2026-08-16 is the only route. Next: a licence request to the City, which is Hidde's to send."
-  },
-  {
-   "place": "Perth",
-   "country": "Australia",
-   "status": "stalled",
-   "note": "SCOUTED 2026-08-16. The city's own open data has only 'Trees in the City', a public-tree inventory the semantic filter forbids. The real source is the National Trust of Western Australia's Significant Tree Register, published as a PDF (nationaltrustwa.com.au/wp-content/uploads/2025/02/National-Trust-Significant-Tree-Register-November-2024.pdf, readable, 64 entries parsed): code, common name, a count, and a street address. 24 entries are Perth metro, including the Fremantle Proclamation Tree. Several are avenues or groups (one of 73, one of 38) that fail the collectible-point test. NO coordinates, so every entry needs geocoding, and NO licence is stated; the National Trust WA is a charity, so this is a permission ask like the others. inHerit, the state heritage database, also carries 'Significant Trees' records but is explicitly All Rights Reserved and its entries are vague groupings including back-yard trees."
-  },
-  {
-   "place": "Adelaide",
-   "country": "Australia",
-   "status": "stalled",
-   "note": "Significant Tree is a state Development Act designation administered per council (Adelaide, Burnside, Prospect, Unley), so it is several lists rather than one fetch. Next: check whether SA's planning portal publishes a consolidated overlay."
-  },
-  {
-   "place": "Vancouver",
-   "country": "Canada",
-   "status": "unscouted",
-   "note": "Named but not reached, 2026-08-13."
-  },
-  {
-   "place": "Los Angeles",
-   "country": "United States",
-   "status": "empty",
-   "note": "SCOUTED 2026-08-16, and the verdict is that there is nothing of our kind to find. LA's 'protected tree' status is a SPECIES RULE, not a register: LAMC 46.00 protects any indigenous oak, western sycamore, laurel bay, southern black walnut, Mexican elderberry or toyon over 4 inches DBH. That is a rule about a category, so it names no individual tree and cannot be filtered into a candidate list. 'Heritage trees' designated by council resolution exist in the ordinance's wording but no published register of them was found. Wikidata holds 3 within 15 km. Route here is not a register at all: named individual trees via local sources, or nothing."
-  },
-  {
-   "place": "Estonia",
-   "country": "Estonia",
-   "status": "imported",
-   "note": "EELIS kr_yksikobjektid, 555 trees, CC BY 4.0. Covers Tallinn (#65) with 56 within 15 km."
-  },
-  {
-   "place": "Lithuania",
-   "country": "Lithuania",
-   "status": "imported",
-   "note": "STVK gamtos paveldo objektai off the map's public vector tiles; commercial reuse permitted per data.gov.lt. Covers Vilnius (#22)."
-  },
-  {
-   "place": "Steiermark",
-   "country": "Austria",
-   "status": "imported",
-   "note": "SOLVED 2026-08-16 by scripts/eu_register_sweep.py, after a morning of guessing Austrian hostnames got nowhere. data.gv.at has replaced its CKAN API with a JavaScript app, but data.europa.eu aggregates the same DCAT records and states the licence outright: 'Naturdenkmale Graz' (stadt-graz_naturdenkmale, Stadt Graz Stadtvermessungsamt) is CC BY 4.0 with an ArcGIS query endpoint at geodaten.graz.at, and Land Steiermark publishes its own Naturdenkmale.zip shapefile under the same licence. Graz imported: data/registers/graz-naturdenkmale.json, 90 entries, 36 public. The EU sweep also shows CC BY natural-monument datasets for Salzburg, Tyrol, Lower Austria, Upper Austria, Burgenland, Vorarlberg and Vienna, so the rest of Austria is now a fetch rather than a hunt.",
-   "covers": [
-    "Graz"
-   ]
-  },
-  {
-   "place": "Sweden",
-   "country": "Sweden",
-   "status": "stalled",
-   "note": "Naturvaardsverket naturvaardsregistret covers naturminne and advertises WMS/WFS/REST, but the geoserver answers 'Service WFS is disabled'. Next: the REST route, untried."
-  },
-  {
-   "place": "Saxony",
-   "country": "Germany",
-   "status": "empty",
-   "note": "State FND layer is areal-only (2026-08-13). But volunteers have mapped 936 trees under 'natural monument in Saxony' on Wikidata, which is why Dresden (#68) shows 209 within 15 km. Route here is the Wikidata layer, not the state.",
-   "covers": [
-    "Dresden",
-    "Leipzig"
-   ]
-  },
-  {
-   "place": "Hessen",
-   "country": "Germany",
-   "status": "empty",
-   "note": "No ND feature type in the open Schutzgebiete WFS (2026-08-13). 790 trees on Wikidata under 'Single natural monument in Hesse'; Frankfurt (#16) shows 55 within 15 km.",
-   "covers": [
-    "Frankfurt"
-   ]
-  },
-  {
-   "place": "Baden-Wuerttemberg",
-   "country": "Germany",
-   "status": "blocked",
-   "note": "Non-commercial-equivalent licence (2026-08-13). Covers Stuttgart, Heidelberg, Freiburg. Do not re-scout.",
-   "covers": [
-    "Stuttgart",
-    "Heidelberg",
-    "Freiburg"
-   ]
-  },
-  {
-   "place": "Catalonia",
-   "country": "Spain",
-   "status": "blocked",
-   "note": "Licence, unchanged since the first sweep.",
-   "covers": [
-    "Barcelona",
-    "Girona",
-    "Tarragona"
-   ]
-  },
-  {
-   "place": "United Kingdom",
-   "country": "United Kingdom",
-   "status": "blocked",
-   "note": "Ancient Tree Inventory disqualified as an import on licence, 2026-08-06; permission path open and it is Hidde's to ask. The London gate stands."
-  },
-  {
-   "place": "Nordrhein-Westfalen",
-   "country": "Germany",
-   "status": "empty",
-   "covers": [
-    "Cologne"
-   ],
-   "note": "No ND feature type in the open Schutzgebiete WFS (2026-08-13). Wikidata is the route for Cologne, not the state."
-  },
-  {
-   "place": "Japan",
-   "country": "Japan",
-   "status": "imported",
-   "covers": [
-    "Hiroshima",
-    "Sapporo",
-    "Kobe",
-    "Nagoya",
-    "Kamakura",
-    "Nikko",
-    "Nara"
-   ],
-   "note": "SOLVED 2026-08-16, scripts/jp_kyoju.py. Three things had to be found and none is guessable: pagination is _command=changepage with a ZERO-BASED page number (js/pager.js), the CSRF token ROTATES on every response so each request must carry the previous page's token, and place_filter=3 is a fake radius search that returns the national total of 76,368 whatever marker you give it. All three fail silently with HTTP 200 and a re-rendered empty form, so a crawler that misses any of them reads one page of a thousand-record prefecture and reports success. Only place_filter=1 with prefecture_code filters. The licence caveat is solved by a FIELD rather than judgement: every row carries ユーザ, and the ministry's own 1988/2000 survey records read 'Admin', so citizen submissions (whose copyright stays with the poster, outside PDL 1.0) are excluded mechanically. CORRECTION to the 2026-08-04 entry, which said the database gives 'girth, height, species, and location': there are NO COORDINATES. Location is prefecture, municipality and an address line, and the schema carries a position-disclosure field with a reason-for-withholding beside it, which is hard rule 10 written into the source. So it is a lead source, not a map layer, and pinning is a separate job. Hiroshima done: data/leads/hiroshima.json, 102 ministry records, with girth, species and a vitality field (67 good, 24 partly dead, 4 near death). Remaining prefectures are one command each: 1 Hokkaido/Sapporo, 23 Aichi/Nagoya, 28 Hyogo/Kobe, 14 Kanagawa/Kamakura."
-  },
-  {
-   "place": "Sintra",
-   "country": "",
-   "status": "imported",
-   "note": "Portugal ICNF (arvoredo de interesse publico) is imported nationally and covers Sintra. Not a scouting gap, a ledger gap: the tool read it as unscouted because nobody had written the line."
-  },
-  {
-   "place": "Cadiz",
-   "country": "",
-   "status": "imported",
-   "note": "Andalucia REDIAM is imported and covers Cadiz. Ledger gap rather than a scouting gap. Cadiz ships 5 trees and is a finished compact city per CLAUDE.md, so the gap-to-10 is not a target."
-  },
-  {
-   "place": "Bari",
-   "country": "",
-   "status": "imported",
-   "note": "SOLVED 2026-08-16. Puglia's REGIONAL list, dati.puglia.it CKAN 'elenco-degli-alberi-monumentali-della-regione-puglia', CC BY 4.0, 180 trees with per-tree GIS coordinates, girth, height and an urban-context flag. Richer than the MASAF national file already held, which carries no age and no vitality. 5 trees within 15 km of Bari and 30 within 30 km. Imported to data/registers/puglia-alberi-monumentali.json; cross-check against italy-masaf.json before publishing so a tree is not entered twice. THE GENERAL LESSON, already recorded for Campania and Lazio and confirmed again: in Italy the region beats the national file."
-  },
-  {
-   "place": "Lyon",
-   "country": "",
-   "status": "imported",
-   "note": "SOLVED 2026-08-16. Metropole de Lyon publishes its PLU-H ponctual prescription layer for arbres remarquables on data.grandlyon.com under Licence Ouverte: 429 trees, 397 within 15 km of the centre, with species, a location description and a free-prose phytosanitary condition field. Imported. Caveat: it is a PLANNING layer, so a row can be a small stand rather than one trunk ('deux arbres' appears in the condition text), and both fields need reading before a row is treated as one collectible point."
-  },
-  {
-   "place": "Bratislava",
-   "country": "",
-   "status": "imported",
-   "note": "SOLVED 2026-08-16. Slovakia's state register of chranene stromy, SOPSR geoserver WFS, CC BY 4.0: 1,199 designations nationally of which 320 are single trees, 31 within 15 km of Bratislava (23 singles). Every entry links to its own state-register page at data.sopsr.sk, which is a ready second source. Pocet_stromov says how many trees a designation covers, so anything above 1 is a group."
-  },
-  {
-   "place": "The Hague",
-   "country": "",
-   "status": "stalled",
-   "note": "Scouted 2026-08-16. The city's open-data portal (den-haag-opendata.opendatasoft.com) carries only the full tree inventory, which the semantic filter forbids; a search of it for boom/bomen returns mooring posts, benches and the hoofdboomstructuur, no monumental list. The monumental-trees list DOES exist and was adopted by the council on 2026-03-31, but it lives in raadsstukken and on the Haagse Bomenkaart viewer rather than as a dataset. Next: read the Bomenkaart viewer's network calls the way stvk.lt was solved. Note Bomenstichting Den Haag was mailed on 2026-08-16 in another batch."
-  },
-  {
-   "place": "Seattle",
-   "country": "",
-   "status": "empty",
-   "note": "Scouted 2026-08-16. 'SPR Tree View' is the Parks department's full tree inventory, forbidden by the semantic filter, and the 'Heritage_Trees_Map' hit belongs to Normandy Park, a separate suburb 25 km south. Seattle's own Heritage Tree Program is run with PlantAmnesty and publishes no open dataset found this pass. Route here is not a register."
-  },
-  {
-   "place": "Bilbao",
-   "country": "",
-   "status": "blocked",
-   "note": "Euskadi's singular trees exist legally (Decreto 265/1995) but survive only inside a 1:25,000 protected-areas polygon set whose metadata says otherRestrictions and whose download 404s, per the 2026-08-04 Spanish scout. Unchanged. Not a register we can use."
-  },
-  {
-   "place": "Hamburg",
-   "country": "",
-   "status": "empty",
-   "note": "Hamburg's Naturdenkmale register is imported and is tiny: 12 entries state-wide, 2 usable, none with coordinates (2026-08-13). The 'Tree Register Hamburg' item found in the ArcGIS sweep resolves to transparenz.hamburg.de's full Strassenbaumkataster, which the semantic filter forbids. Route here is Wikidata or a non-register source."
-  },
-  {
-   "place": "Jerusalem",
-   "country": "",
-   "status": "stalled",
-   "note": "Probed 2026-08-16 and not resolved. No heritage-tree dataset surfaced on data.gov.il in an English-language search, and the KKL-JNF material is editorial rather than a register. Israel does declare natural monuments through the Nature and Parks Authority, which is the specific thing to check next, in Hebrew, rather than searching for 'heritage trees'."
-  },
-  {
-   "place": "Dubrovnik",
-   "country": "",
-   "status": "stalled",
-   "note": "Croatia returns ZERO datasets in the data.europa.eu sweep for every remarkable-tree phrase tried. Croatia does designate 'spomenik prirode' including individual trees through the Ministry of Environment's nature-protection register, which is the thing to check next; it was not reached this pass."
-  },
-  {
-   "place": "Mexico City",
-   "country": "Mexico City",
-   "status": "stalled",
-   "note": "SCOUTED 2026-08-16. SEDEMA runs a real Arboles Patrimoniales programme with a public map; the GeoJSON behind it is at proyectos.sedema.cdmx.gob.mx/arbolespatrimoniales/Data/, reachable and open, 13 declared trees across 5 boroughs with species, full address, girth, DBH, crown, a condition field and coordinates. Ten are ahuehuetes including a 1,005 cm giant at Tacuba and a 1,382 cm one at Santa Catarina. Saved as data/leads/mexico-city.json rather than a register because NO LICENCE is stated anywhere on the programme site. UNIT TRAP: the height and crown columns are labelled metres and hold centimetres. The programme takes nominations, so it grows. Next: a licence ask to SEDEMA."
-  },
-  {
-   "place": "Chiang Mai",
-   "country": "Chiang Mai",
-   "status": "empty",
-   "note": "SCOUTED 2026-08-16. Thailand has no government register of individual heritage trees that this pass could find. What exists is not a substitute: Changthong Heritage Park is a private paid-entry collection of trees TRANSPLANTED from elsewhere, which fails the premise of standing where a tree has stood for centuries, and the tree-ordination sites (Saraphi road rubber trees) are a cultural practice rather than a list. Route here is not a register."
-  },
-  {
-   "place": "Dubai",
-   "country": "Dubai",
-   "status": "empty",
-   "note": "Not scouted in depth and recorded as empty on reasoning rather than a search, which is the honest label: the UAE has no ancient-tree tradition of the kind this project maps, Dubai's tree stock is almost entirely modern irrigated planting, and the queue's own demand figure is travel demand rather than tree demand. If anything exists it is the Al Ain oases (UNESCO, date palms) which are a different country-level story and not Dubai."
-  },
-  {
-   "place": "Israel",
-   "country": "Israel",
-   "status": "blocked",
-   "note": "OUT OF FOCUS (Hidde, 2026-08-16). Two probes found no heritage-tree dataset on data.gov.il; the declared natural-monument decree list was the one thing left unchecked and is not worth checking while Israel is out of scope. Kept as a record so nobody re-opens it by accident."
+  "places": [
+    {
+      "place": "Toronto",
+      "country": "Canada",
+      "status": "stalled",
+      "note": "SCOUTED 2026-08-16. The city's own open data has only the street-tree inventory, which the semantic filter forbids. The real source is the Ontario Heritage Tree Program (Forests Canada / Ontario Urban Forest Council), an ArcGIS FeatureServer behind their StoryMap: 112 trees province-wide with species, an age estimate and a Public/Private flag, 38 within 30 km of Toronto. Its ArcGIS item carries an empty licenseInfo, so it is saved as data/leads/toronto.json (27 public leads, 11 excluded as private land) rather than imported. Next: licence ask to Forests Canada in the next outreach batch."
+    },
+    {
+      "place": "Montreal",
+      "country": "Canada",
+      "status": "blocked",
+      "note": "SCOUTED 2026-08-16. Montreal has a real curated register and it is not on the open-data portal: montroyal.montreal.ca/inventaires, the City's own Site officiel du Mont-Royal, carries 63 individual arbre-remarquable pages, each with per-tree coordinates, the property owner, a planting period, species notes and a written statement of dendrological and cultural interest. Quality is comparable to Sydney's. BLOCKED: montroyal.montreal.ca/credits states '(c) Tous droits reserves, Ville de Montreal', with no reuse terms anywhere on the site. Deliberately NOT scraped, unlike Toronto: Toronto's was an open API with no stated licence, this is website content with an explicit all-rights-reserved notice, and copying the compilation is not the same act as querying an open endpoint. donnees.montreal.ca carries only the full public-tree inventory, which the semantic filter forbids. Next: licence ask to the Bureau du Mont-Royal."
+    },
+    {
+      "place": "Sydney",
+      "country": "Australia",
+      "status": "blocked",
+      "note": "SOLVED the endpoint 2026-08-16 and blocked on licence. City of Sydney Register of Significant Trees, 2,504 entries, ArcGIS FeatureServer services1.arcgis.com/cNVyNtjGVZybOQWZ/ArcGIS/rest/services/Register_of_Significant_Trees_view/FeatureServer/0, open and queryable. It is the richest register found anywhere: species, common name, height, spread, year_of_planting, statement_of_significance, address, owner, and two fields the corpus says registers never have, condition (coded, including Dead) and accessibilility (Public access / Visible from street / No public access). BUT the AGOL item carries an empty licenseInfo, the dataset is not on the CC BY 4.0 data hub, and cityofsydney.nsw.gov.au's own terms say content must not be reproduced without written authorisation. Not imported, and the refusal is now explicit rather than merely absent: the register sweep found the City's own sibling layers 'RST Existing view' and 'RST Future nomination view', both carrying licenseInfo 'For public viewing only inside of City of Sydney Significant Tree Register. Not for individual re-use.' So this is a stated no, not an oversight, and the licence ask sent 2026-08-16 is the only route. Next: a licence request to the City, which is Hidde's to send."
+    },
+    {
+      "place": "Perth",
+      "country": "Australia",
+      "status": "stalled",
+      "note": "SCOUTED 2026-08-16. The city's own open data has only 'Trees in the City', a public-tree inventory the semantic filter forbids. The real source is the National Trust of Western Australia's Significant Tree Register, published as a PDF (nationaltrustwa.com.au/wp-content/uploads/2025/02/National-Trust-Significant-Tree-Register-November-2024.pdf, readable, 64 entries parsed): code, common name, a count, and a street address. 24 entries are Perth metro, including the Fremantle Proclamation Tree. Several are avenues or groups (one of 73, one of 38) that fail the collectible-point test. NO coordinates, so every entry needs geocoding, and NO licence is stated; the National Trust WA is a charity, so this is a permission ask like the others. inHerit, the state heritage database, also carries 'Significant Trees' records but is explicitly All Rights Reserved and its entries are vague groupings including back-yard trees."
+    },
+    {
+      "place": "Adelaide",
+      "country": "Australia",
+      "status": "stalled",
+      "note": "Significant Tree is a state Development Act designation administered per council (Adelaide, Burnside, Prospect, Unley), so it is several lists rather than one fetch. Next: check whether SA's planning portal publishes a consolidated overlay."
+    },
+    {
+      "place": "Vancouver",
+      "country": "Canada",
+      "status": "unscouted",
+      "note": "Named but not reached, 2026-08-13."
+    },
+    {
+      "place": "Los Angeles",
+      "country": "United States",
+      "status": "empty",
+      "note": "SCOUTED 2026-08-16, and the verdict is that there is nothing of our kind to find. LA's 'protected tree' status is a SPECIES RULE, not a register: LAMC 46.00 protects any indigenous oak, western sycamore, laurel bay, southern black walnut, Mexican elderberry or toyon over 4 inches DBH. That is a rule about a category, so it names no individual tree and cannot be filtered into a candidate list. 'Heritage trees' designated by council resolution exist in the ordinance's wording but no published register of them was found. Wikidata holds 3 within 15 km. Route here is not a register at all: named individual trees via local sources, or nothing."
+    },
+    {
+      "place": "Estonia",
+      "country": "Estonia",
+      "status": "imported",
+      "note": "EELIS kr_yksikobjektid, 555 trees, CC BY 4.0. Covers Tallinn (#65) with 56 within 15 km."
+    },
+    {
+      "place": "Lithuania",
+      "country": "Lithuania",
+      "status": "imported",
+      "note": "STVK gamtos paveldo objektai off the map's public vector tiles; commercial reuse permitted per data.gov.lt. Covers Vilnius (#22)."
+    },
+    {
+      "place": "Steiermark",
+      "country": "Austria",
+      "status": "imported",
+      "note": "SOLVED 2026-08-16 by scripts/eu_register_sweep.py, after a morning of guessing Austrian hostnames got nowhere. data.gv.at has replaced its CKAN API with a JavaScript app, but data.europa.eu aggregates the same DCAT records and states the licence outright: 'Naturdenkmale Graz' (stadt-graz_naturdenkmale, Stadt Graz Stadtvermessungsamt) is CC BY 4.0 with an ArcGIS query endpoint at geodaten.graz.at, and Land Steiermark publishes its own Naturdenkmale.zip shapefile under the same licence. Graz imported: data/registers/graz-naturdenkmale.json, 90 entries, 36 public. The EU sweep also shows CC BY natural-monument datasets for Salzburg, Tyrol, Lower Austria, Upper Austria, Burgenland, Vorarlberg and Vienna, so the rest of Austria is now a fetch rather than a hunt.",
+      "covers": [
+        "Graz"
+      ]
+    },
+    {
+      "place": "Sweden",
+      "country": "Sweden",
+      "status": "stalled",
+      "note": "Naturvaardsverket naturvaardsregistret covers naturminne and advertises WMS/WFS/REST, but the geoserver answers 'Service WFS is disabled'. Next: the REST route, untried."
+    },
+    {
+      "place": "Saxony",
+      "country": "Germany",
+      "status": "empty",
+      "note": "State FND layer is areal-only (2026-08-13). But volunteers have mapped 936 trees under 'natural monument in Saxony' on Wikidata, which is why Dresden (#68) shows 209 within 15 km. Route here is the Wikidata layer, not the state.",
+      "covers": [
+        "Dresden",
+        "Leipzig"
+      ]
+    },
+    {
+      "place": "Hessen",
+      "country": "Germany",
+      "status": "empty",
+      "note": "No ND feature type in the open Schutzgebiete WFS (2026-08-13). 790 trees on Wikidata under 'Single natural monument in Hesse'; Frankfurt (#16) shows 55 within 15 km.",
+      "covers": [
+        "Frankfurt"
+      ]
+    },
+    {
+      "place": "Baden-Wuerttemberg",
+      "country": "Germany",
+      "status": "blocked",
+      "note": "Non-commercial-equivalent licence (2026-08-13). Covers Stuttgart, Heidelberg, Freiburg. Do not re-scout.",
+      "covers": [
+        "Stuttgart",
+        "Heidelberg",
+        "Freiburg"
+      ]
+    },
+    {
+      "place": "Catalonia",
+      "country": "Spain",
+      "status": "blocked",
+      "note": "Licence, unchanged since the first sweep.",
+      "covers": [
+        "Barcelona",
+        "Girona",
+        "Tarragona"
+      ]
+    },
+    {
+      "place": "United Kingdom",
+      "country": "United Kingdom",
+      "status": "blocked",
+      "note": "Ancient Tree Inventory disqualified as an import on licence, 2026-08-06; permission path open and it is Hidde's to ask. The London gate stands."
+    },
+    {
+      "place": "Nordrhein-Westfalen",
+      "country": "Germany",
+      "status": "empty",
+      "covers": [
+        "Cologne"
+      ],
+      "note": "No ND feature type in the open Schutzgebiete WFS (2026-08-13). Wikidata is the route for Cologne, not the state."
+    },
+    {
+      "place": "Japan",
+      "country": "Japan",
+      "status": "imported",
+      "covers": [
+        "Hiroshima",
+        "Sapporo",
+        "Kobe",
+        "Nagoya",
+        "Kamakura",
+        "Nikko",
+        "Nara"
+      ],
+      "note": "SOLVED 2026-08-16, scripts/jp_kyoju.py. Three things had to be found and none is guessable: pagination is _command=changepage with a ZERO-BASED page number (js/pager.js), the CSRF token ROTATES on every response so each request must carry the previous page's token, and place_filter=3 is a fake radius search that returns the national total of 76,368 whatever marker you give it. All three fail silently with HTTP 200 and a re-rendered empty form, so a crawler that misses any of them reads one page of a thousand-record prefecture and reports success. Only place_filter=1 with prefecture_code filters. The licence caveat is solved by a FIELD rather than judgement: every row carries ユーザ, and the ministry's own 1988/2000 survey records read 'Admin', so citizen submissions (whose copyright stays with the poster, outside PDL 1.0) are excluded mechanically. CORRECTION to the 2026-08-04 entry, which said the database gives 'girth, height, species, and location': there are NO COORDINATES. Location is prefecture, municipality and an address line, and the schema carries a position-disclosure field with a reason-for-withholding beside it, which is hard rule 10 written into the source. So it is a lead source, not a map layer, and pinning is a separate job. Hiroshima done: data/leads/hiroshima.json, 102 ministry records, with girth, species and a vitality field (67 good, 24 partly dead, 4 near death). Remaining prefectures are one command each: 1 Hokkaido/Sapporo, 23 Aichi/Nagoya, 28 Hyogo/Kobe, 14 Kanagawa/Kamakura."
+    },
+    {
+      "place": "Sintra",
+      "country": "",
+      "status": "imported",
+      "note": "Portugal ICNF (arvoredo de interesse publico) is imported nationally and covers Sintra. Not a scouting gap, a ledger gap: the tool read it as unscouted because nobody had written the line."
+    },
+    {
+      "place": "Cadiz",
+      "country": "",
+      "status": "imported",
+      "note": "Andalucia REDIAM is imported and covers Cadiz. Ledger gap rather than a scouting gap. Cadiz ships 5 trees and is a finished compact city per CLAUDE.md, so the gap-to-10 is not a target."
+    },
+    {
+      "place": "Bari",
+      "country": "",
+      "status": "imported",
+      "note": "SOLVED 2026-08-16. Puglia's REGIONAL list, dati.puglia.it CKAN 'elenco-degli-alberi-monumentali-della-regione-puglia', CC BY 4.0, 180 trees with per-tree GIS coordinates, girth, height and an urban-context flag. Richer than the MASAF national file already held, which carries no age and no vitality. 5 trees within 15 km of Bari and 30 within 30 km. Imported to data/registers/puglia-alberi-monumentali.json; cross-check against italy-masaf.json before publishing so a tree is not entered twice. THE GENERAL LESSON, already recorded for Campania and Lazio and confirmed again: in Italy the region beats the national file."
+    },
+    {
+      "place": "Lyon",
+      "country": "",
+      "status": "imported",
+      "note": "SOLVED 2026-08-16. Metropole de Lyon publishes its PLU-H ponctual prescription layer for arbres remarquables on data.grandlyon.com under Licence Ouverte: 429 trees, 397 within 15 km of the centre, with species, a location description and a free-prose phytosanitary condition field. Imported. Caveat: it is a PLANNING layer, so a row can be a small stand rather than one trunk ('deux arbres' appears in the condition text), and both fields need reading before a row is treated as one collectible point."
+    },
+    {
+      "place": "Bratislava",
+      "country": "",
+      "status": "imported",
+      "note": "SOLVED 2026-08-16. Slovakia's state register of chranene stromy, SOPSR geoserver WFS, CC BY 4.0: 1,199 designations nationally of which 320 are single trees, 31 within 15 km of Bratislava (23 singles). Every entry links to its own state-register page at data.sopsr.sk, which is a ready second source. Pocet_stromov says how many trees a designation covers, so anything above 1 is a group."
+    },
+    {
+      "place": "The Hague",
+      "country": "",
+      "status": "stalled",
+      "note": "Scouted 2026-08-16. The city's open-data portal (den-haag-opendata.opendatasoft.com) carries only the full tree inventory, which the semantic filter forbids; a search of it for boom/bomen returns mooring posts, benches and the hoofdboomstructuur, no monumental list. The monumental-trees list DOES exist and was adopted by the council on 2026-03-31, but it lives in raadsstukken and on the Haagse Bomenkaart viewer rather than as a dataset. Next: read the Bomenkaart viewer's network calls the way stvk.lt was solved. Note Bomenstichting Den Haag was mailed on 2026-08-16 in another batch."
+    },
+    {
+      "place": "Seattle",
+      "country": "",
+      "status": "empty",
+      "note": "Scouted 2026-08-16. 'SPR Tree View' is the Parks department's full tree inventory, forbidden by the semantic filter, and the 'Heritage_Trees_Map' hit belongs to Normandy Park, a separate suburb 25 km south. Seattle's own Heritage Tree Program is run with PlantAmnesty and publishes no open dataset found this pass. Route here is not a register."
+    },
+    {
+      "place": "Bilbao",
+      "country": "",
+      "status": "blocked",
+      "note": "Euskadi's singular trees exist legally (Decreto 265/1995) but survive only inside a 1:25,000 protected-areas polygon set whose metadata says otherRestrictions and whose download 404s, per the 2026-08-04 Spanish scout. Unchanged. Not a register we can use."
+    },
+    {
+      "place": "Hamburg",
+      "country": "",
+      "status": "empty",
+      "note": "Hamburg's Naturdenkmale register is imported and is tiny: 12 entries state-wide, 2 usable, none with coordinates (2026-08-13). The 'Tree Register Hamburg' item found in the ArcGIS sweep resolves to transparenz.hamburg.de's full Strassenbaumkataster, which the semantic filter forbids. Route here is Wikidata or a non-register source."
+    },
+    {
+      "place": "Jerusalem",
+      "country": "",
+      "status": "stalled",
+      "note": "Probed 2026-08-16 and not resolved. No heritage-tree dataset surfaced on data.gov.il in an English-language search, and the KKL-JNF material is editorial rather than a register. Israel does declare natural monuments through the Nature and Parks Authority, which is the specific thing to check next, in Hebrew, rather than searching for 'heritage trees'."
+    },
+    {
+      "place": "Dubrovnik",
+      "country": "",
+      "status": "stalled",
+      "note": "Croatia returns ZERO datasets in the data.europa.eu sweep for every remarkable-tree phrase tried. Croatia does designate 'spomenik prirode' including individual trees through the Ministry of Environment's nature-protection register, which is the thing to check next; it was not reached this pass."
+    },
+    {
+      "place": "Mexico City",
+      "country": "Mexico City",
+      "status": "stalled",
+      "note": "SCOUTED 2026-08-16. SEDEMA runs a real Arboles Patrimoniales programme with a public map; the GeoJSON behind it is at proyectos.sedema.cdmx.gob.mx/arbolespatrimoniales/Data/, reachable and open, 13 declared trees across 5 boroughs with species, full address, girth, DBH, crown, a condition field and coordinates. Ten are ahuehuetes including a 1,005 cm giant at Tacuba and a 1,382 cm one at Santa Catarina. Saved as data/leads/mexico-city.json rather than a register because NO LICENCE is stated anywhere on the programme site. UNIT TRAP: the height and crown columns are labelled metres and hold centimetres. The programme takes nominations, so it grows. Next: a licence ask to SEDEMA."
+    },
+    {
+      "place": "Chiang Mai",
+      "country": "Chiang Mai",
+      "status": "empty",
+      "note": "SCOUTED 2026-08-16. Thailand has no government register of individual heritage trees that this pass could find. What exists is not a substitute: Changthong Heritage Park is a private paid-entry collection of trees TRANSPLANTED from elsewhere, which fails the premise of standing where a tree has stood for centuries, and the tree-ordination sites (Saraphi road rubber trees) are a cultural practice rather than a list. Route here is not a register."
+    },
+    {
+      "place": "Dubai",
+      "country": "Dubai",
+      "status": "empty",
+      "note": "Not scouted in depth and recorded as empty on reasoning rather than a search, which is the honest label: the UAE has no ancient-tree tradition of the kind this project maps, Dubai's tree stock is almost entirely modern irrigated planting, and the queue's own demand figure is travel demand rather than tree demand. If anything exists it is the Al Ain oases (UNESCO, date palms) which are a different country-level story and not Dubai."
+    },
+    {
+      "place": "Israel",
+      "country": "Israel",
+      "status": "blocked",
+      "note": "OUT OF FOCUS (Hidde, 2026-08-16). Two probes found no heritage-tree dataset on data.gov.il; the declared natural-monument decree list was the one thing left unchecked and is not worth checking while Israel is out of scope. Kept as a record so nobody re-opens it by accident."
+    },
+    {
+      "place": "Sicily (Palermo, Catania, Messina)",
+      "country": "Italy",
+      "status": "exhausted",
+      "note": "SCOUTED 2026-08-17, and the answer is a negative worth keeping. The Regione Siciliana DOES publish its own Elenco degli Alberi Monumentali di Sicilia (updated 17.07.2026, on regione.sicilia.it), covering the whole island including Catania and Messina, so it looks at first like the regional unlock that Campania and Lazio turned out to be. It is not. It is the SAME underlying dataset as the national MASAF register: same sheet ids, same decree D.M. n. 5450 del 19/12/2017, identical girth and height figures, republished with one field added, the criteri di monumentalita saying why each tree was designated, plus a yes/no on proposal for notevole interesse pubblico. NO age field and NO vitality field, which are the two things a page needs most and the two things Campania's per-tree cards and Lazio's xlsx actually provide. It also does NOT count as a second independent source on top of MASAF, because it is the same data. Do not re-scout this: for Sicilian cities, age and vitality still have to come from a garden's own records, a university page or the local press, one tree at a time."
+    }
+  ],
+  "out_of_focus": {
+    "note": "Regions Hidde ruled out of focus on 2026-08-16: \"israel africa india and russia ar out of focus\". Read by scripts/scout_next.py, which skips them so --target never points there and no run spends a window scouting them. This is a SCOPE decision, not a judgement about the trees: the queue still ranks these cities by demand, and nothing published is removed. Reversing it means deleting a line here.",
+    "countries": [
+      "Israel",
+      "India",
+      "Russia"
+    ],
+    "regions": [
+      "Africa"
+    ],
+    "africa_countries": [
+      "South Africa",
+      "Morocco",
+      "Egypt",
+      "Kenya",
+      "Tanzania",
+      "Tunisia",
+      "Namibia",
+      "Ethiopia",
+      "Ghana",
+      "Senegal",
+      "Uganda",
+      "Nigeria",
+      "Algeria",
+      "Zimbabwe",
+      "Botswana",
+      "Zambia",
+      "Mozambique",
+      "Rwanda",
+      "Madagascar"
+    ],
+    "affects": "3 ranked cities as of 2026-08-16: Jerusalem (#51), Tel Aviv (#143), Cape Town (#171). Jerusalem's half-finished Israel scout is closed by this rather than left stalled."
   }
- ],
- "out_of_focus": {
-  "note": "Regions Hidde ruled out of focus on 2026-08-16: \"israel africa india and russia ar out of focus\". Read by scripts/scout_next.py, which skips them so --target never points there and no run spends a window scouting them. This is a SCOPE decision, not a judgement about the trees: the queue still ranks these cities by demand, and nothing published is removed. Reversing it means deleting a line here.",
-  "countries": [
-   "Israel",
-   "India",
-   "Russia"
-  ],
-  "regions": [
-   "Africa"
-  ],
-  "africa_countries": [
-   "South Africa",
-   "Morocco",
-   "Egypt",
-   "Kenya",
-   "Tanzania",
-   "Tunisia",
-   "Namibia",
-   "Ethiopia",
-   "Ghana",
-   "Senegal",
-   "Uganda",
-   "Nigeria",
-   "Algeria",
-   "Zimbabwe",
-   "Botswana",
-   "Zambia",
-   "Mozambique",
-   "Rwanda",
-   "Madagascar"
-  ],
-  "affects": "3 ranked cities as of 2026-08-16: Jerusalem (#51), Tel Aviv (#143), Cape Town (#171). Jerusalem's half-finished Israel scout is closed by this rather than left stalled."
- }
 }
