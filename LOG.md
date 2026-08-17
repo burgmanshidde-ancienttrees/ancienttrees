@@ -12,6 +12,26 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-17 (session) - Walked the night-run ladder by hand to see where it fights a run, and it fought back four times
+
+Hidde asked for a night run performed and watched. So the Step 0 ladder was executed in order, with notes on every point of friction. It never got past rung 2, which is the correct outcome and also the interesting one.
+
+**Rung 2 held a real BLOCKER, and obeying it would have been wrong.** The fresh-eyes reviewer flagged Milan's Archdevil hackberry as published on the private grounds of an inhabited residence, against hard rule 10's absolute "not somebody's home" test. It was right to raise it. But the premise was a sentence WE wrote: the story said the villa's inner courtyard is "square, arcaded on three sides, and the hackberry stands at the centre of it", which no source says. A bridge claim, and as always the join decided the location. The Comune di Milano owns the villa and its own page says "e' possibile varcare il cancello per visitare il parco", the gate may be passed to visit the park, with the discretion due to an inhabited place. That is the landowner admitting visitors. The buildings are the home; the park is not. So the tree stays, with the permission quoted instead of paraphrased, and two location errors got fixed on the way: the address was Via Villapizzone 9 against the comune's piazza Villapizzone 3, and the pin sat 83 metres from the comune's own marker while claiming confirmed.
+
+**That is now doctrine: a BLOCKER is answered, not obeyed.** The reviewer can only see what we published, so a finding built on our own invention inherits it. Written into rung 2.
+
+**And a night run could not have done any of it.** comune.milano.it 403s every plain fetcher and is on the fetch blocklist for it. Only a browser session reaches it. So this BLOCKER would have sat at the top of the ladder blocking every knock, or a run would have cleared it by retiring a perfectly good tree. Rung 2 now says: a finding that turns on a blocklisted host is a session's job, and never clear one you could not verify.
+
+**Three improvements shipped from the walk itself.**
+
+`scripts/health.py`: rung 2 in one command, exit 0 or 1. It replaces four `gh run list` calls and three staleness thresholds held in the head, which is a check expensive enough to skip on a short window, on the one rung every run executes. It taught itself something in its first five minutes: the first version counted every line containing "BLOCKER", including the file's own legend and a sentence about yesterday's blocker being fixed, and reported three where there was one. It matches the reviewer's heading form now, verified against three days of review history.
+
+`data/review-answered.json`: REVIEW.md is append-only and the next review is a day out, so six knocks would re-serve the same finding five times after it was fixed. `health.py --answer <date> "<note>"` closes it.
+
+`passcheck.py` claim identity: **the lock could not tell two local sessions apart.** Every session claimed as the bare string "session", so `--brief <place> --as session` satisfied the holder check whichever session had actually claimed the place. It only ever guarded session against night run. That is the Padova collision it was built for, 89,000 tokens for nine stories written twice, with the local case uncovered. Sessions name themselves from CLAUDE_CODE_SESSION_ID now, and `--as` defaults to whoever we are.
+
+**FOR HIDDE: there are three other Claude sessions live in this repository right now, all writing to the same working tree.** One has been running 22 hours. That is how the claim defect above got noticed: another session's half-finished photo-queue and Warsaw leads were sitting unstaged in my tree while I worked, and a careless `git add -A` would have committed somebody else's work in progress under my message. I left them alone and pushed only my own files. Nothing is broken and no work was lost, but this is a way of working, not a bug, so whether to keep running several sessions against one checkout is your call rather than mine. If you do keep it, the honest fix is a worktree per session; if you would rather not, one session at a time removes the whole class.
+
 ## 2026-08-17 - Night run 2026-08-17 05:26 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. No measurements available, ended clean (unknown). 19 tree(s) reached data/cities across 5 city file(s), and the run still wrote no log entry of its own. Claims left behind: vilnius, which block the top of the queue until they expire.
