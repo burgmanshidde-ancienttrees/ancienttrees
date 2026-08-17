@@ -66,6 +66,29 @@ def get(url):
         urllib.request.Request(url, headers={"User-Agent": UA}), timeout=30))
 
 
+def unit_check(diameter_in, circumference_ft):
+    """Does this row's own circumference agree with its own diameter?
+
+    The median across the dataset proves the unit, but a median cannot catch a
+    single bad row, and there is at least one: a kamani recorded at 126 inches of
+    diameter and 1.0 foot of circumference, off by a factor of 400. So every row
+    is checked against itself and any disagreement is carried into the file
+    rather than averaged away. "ok" means the two columns agree within 30 percent,
+    loose enough for a buttressed trunk measured at a different height and tight
+    enough to catch a typo.
+    """
+    if not diameter_in or not circumference_ft:
+        return None
+    import math as _m
+    implied_ft = diameter_in * _m.pi / 12.0
+    ratio = circumference_ft / implied_ft
+    if 0.7 <= ratio <= 1.3:
+        return "ok"
+    return (f"disagrees: diameter {diameter_in:.0f} in implies {implied_ft:.1f} ft of "
+            f"girth, the circumference column says {circumference_ft:.1f} ft "
+            f"(ratio {ratio:.2f}). Do not use either without checking.")
+
+
 def num(v):
     try:
         return float(str(v).replace(",", ""))
@@ -95,8 +118,14 @@ def main():
         if lat is None or lng is None:
             reasons.append("no coordinate")
 
-        # trunk circumference is published in inches, like diameter
-        circ_in = num(r.get("trunk_circumference"))
+        # trunk_circumference is published in FEET, while diameter is in INCHES.
+        # Nothing in the dataset says so and the two columns sit side by side, so
+        # the first version of this import read circumference as inches and made
+        # every girth twelve times too small: an Indian banyan came out at 155 cm,
+        # a sapling rather than an exceptional tree, which is what gave it away.
+        # Proven rather than assumed: across the 160 rows carrying both columns,
+        # the median of (diameter x pi) / circumference is exactly 12.00.
+        circ_ft = num(r.get("trunk_circumference"))
         out.append({
             "register_id": r.get("object_id") or r.get("old_id") or r.get("number"),
             "name": r.get("hawaiian_name") or None,
@@ -104,7 +133,8 @@ def main():
             "common_name": r.get("common_name") or None,
             "island": ISLANDS.get(r.get("island"), r.get("island")),
             "latitude": lat, "longitude": lng,
-            "girth_cm": round(circ_in * 2.54, 1) if circ_in else None,
+            "girth_cm": round(circ_ft * 30.48, 1) if circ_ft else None,
+            "girth_unit_check": unit_check(num(r.get("diameter_in_")), circ_ft),
             "diameter_cm": round(num(r["diameter_in_"]) * 2.54, 1)
                            if num(r.get("diameter_in_")) else None,
             "height_ft": num(r.get("height")),
@@ -141,11 +171,16 @@ def main():
                  f"Kauai and Molokai. {sum(1 for t in out if t['publishable'])} pass the "
                  f"semantic filter; {sum(1 for t in out if not t['publishable'])} do not.",
         "caveat": (
-            "Three things a run must know. (1) HEIGHT IS IN FEET and diameter and trunk "
-            "circumference are in INCHES; both are converted to centimetres here and the "
-            "height is left in feet under its own key so nobody reads 117 as metres. That "
-            "is the units trap this project has already been bitten by, when ICNF metres "
-            "sat in a column our import had named girth_cm. (2) `land_use` is a "
+            "Three things a run must know. (1) THREE UNITS SIT SIDE BY SIDE AND NOTHING IN "
+            "THE DATASET SAYS SO: height in FEET, diameter in INCHES, trunk "
+            "circumference in FEET. The first version of this import read "
+            "circumference as inches and made every girth twelve times too small; an "
+            "Indian banyan came out at 155 cm, which is what gave it away. The unit "
+            "is proven, not assumed: across the 160 rows carrying both columns the "
+            "median of (diameter x pi) / circumference is exactly 12.00. Every row "
+            "also carries `girth_unit_check`, because a median cannot catch one bad "
+            "row and there is at least one. "
+            "(2) `land_use` is a "
             "single-letter code with no codebook published beside the data, so it is "
             "carried raw and MUST NOT be decoded into an access decision by guessing. "
             "(3) There is no age field. Girth is on 217 of the rows, so an age can be "
