@@ -86,6 +86,33 @@ def wikidata_counts():
     return count
 
 
+def judged_count(slug):
+    """How many register candidates near this city an earlier pass already ruled on.
+
+    `register` counts what sits within reach; it says nothing about whether the
+    trees are usable. Bratislava is the case that forced this: 26 register trees
+    in hand, so --target named it BUILD three times in one day, while the leads
+    file already recorded that its remaining candidates are private gardens and
+    courtyards in the register's own wording. A tool that keeps recommending a
+    city whose supply is written off is worse than no recommendation, because it
+    is confident.
+
+    So supply here means UNJUDGED supply: register trees minus everything a pass
+    has already put in leads or blocked. Deliberately crude, a count rather than
+    a coordinate join, because it only has to rank cities and passcheck does the
+    exact matching later.
+    """
+    path = os.path.join(ROOT, "data", "leads", "%s.json" % (slug or ""))
+    try:
+        with open(path) as fh:
+            doc = json.load(fh)
+    except (OSError, ValueError):
+        return 0
+    if not isinstance(doc, dict):
+        return 0
+    return len(doc.get("leads") or []) + len(doc.get("blocked") or [])
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--limit", type=int, default=25)
@@ -130,13 +157,17 @@ def main():
         # Measured the day this was written: 24 of the top 60 cities below
         # target had no supply, and 14 of those had never been scouted at all.
         for c, hit in rows:
-            supply = (c.get("register") or 0) + (c.get("ready") or 0)
+            judged = judged_count(c.get("slug"))
+            unjudged = max(0, (c.get("register") or 0) - judged)
+            supply = unjudged + (c.get("ready") or 0)
             status = hit["status"] if hit else "unscouted"
             if supply >= 8:
-                print("BUILD  %s (#%d): %d register trees and %d ready leads "
-                      "already in hand. Nothing to scout."
-                      % (c["city"], c["rank"], c.get("register") or 0,
-                         c.get("ready") or 0))
+                extra = ("" if not judged else
+                         ", %d already judged by an earlier pass" % judged)
+                print("BUILD  %s (#%d): %d unjudged register trees and %d ready "
+                      "leads already in hand%s. Nothing to scout."
+                      % (c["city"], c["rank"], unjudged, c.get("ready") or 0,
+                         extra))
                 return 0
             if status == "unscouted":
                 print("SCOUT  %s (#%d), %s: no supply and no verdict. Scout "
