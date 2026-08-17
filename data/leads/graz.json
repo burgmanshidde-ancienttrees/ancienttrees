@@ -1,0 +1,48 @@
+{
+ "leads": [
+  {
+   "name": "Weiße Villa Platane, Schanzelgasse 33",
+   "species": "London Plane (Platanus x hispanica)",
+   "location_hint": "register_id 18, object_id 4, ND992, Schanzelgasse 33, Geidorf, 47.078757,15.460335. Girth 4.90m measured 2015 per Wikipedia's 'Liste der Naturdenkmäler in Graz'.",
+   "why_not_shipped": "Owner recorded as oeffentlich (public) in the Stadt Graz register, but the address is the former Villa Kleinoscheg (1853), now a renovated apartment building known as the 'Weiße Villa' sitting in its own park on a rise. Could not confirm this pass whether the surrounding grounds are genuinely open to the public or now effectively private residential grounds despite the public ownership flag. A large, well-documented tree with a real girth measurement, worth a proper access check before shipping."
+  },
+  {
+   "name": "Eggenberger Allee 90 cluster (Schlosspark Eggenberg)",
+   "species": "Platane (Platanus x hispanica) x5, Weymouthskiefer (Pinus strobus) x4, Blutbuche (Fagus sylvatica 'Purpurea') x1",
+   "location_hint": "register_ids 2, 3, 4, 5, 6, 7, 8, 9, 11, 1506 (object_ids 40, 13, 59, 99, 2, 104, 60, 19, 62, and the Blutbuche), all at Eggenberger Allee 90, Algersdorf, clustered within about 100m around 47.0748,15.3910. Matches Wikipedia ND 977-984, 986, 1506.",
+   "why_not_shipped": "Not a rejection, a time cutoff: this is the strongest untouched cluster in the register, all 'oeffentlich', inside the grounds of Schloss Eggenberg (UNESCO World Heritage palace park, run by Universalmuseum Joanneum, paid entry to the park). monumentaltrees.com independently documents at least one of the Weymouth pines here (https://www.monumentaltrees.com/de/aut/steiermark/graz/13921_eggenberg/), giving a real second-source route beyond the register/Wikipedia pairing. About 3.5-3.6km from the city centre and from the grz_001-008 cluster verified this pass, so it reads as a genuinely separate second walk rather than an extension of the first. Strong candidate for the next Graz pass: paid entry is fine under the access rules as long as the access field says so honestly, and the ensemble should be checked tree-by-tree against the collectible-point rule (an 'Allee' of 5 planes could read as an avenue rather than individual specimens; the single named Weymouth pine with the measured 3.70m girth, ND986/register_id 11, is the strongest individual candidate)."
+  },
+  {
+   "name": "Elisabethstraße 48 Plane",
+   "species": "Platane (Platanus x hispanica)",
+   "location_hint": "register_id 27, object_id 69, ND1000, Elisabethstraße 48, St. Leonhard, 47.075646,15.454619, protected 11.07.1979.",
+   "why_not_shipped": "Not reached this pass (time cutoff at 8 verified trees). 1.33km from centre, inside the same walkable radius as the shipped cluster. Register + Wikipedia already cross-match within 4m; just needs an access/context check (street tree vs. building forecourt) before writing."
+  },
+  {
+   "name": "Hilmteichstraße 104 pair (Hemlocktanne + Blutbuche)",
+   "species": "Hemlocktanne (Tsuga sp.) and Blutbuche (Fagus sylvatica 'Purpurea')",
+   "location_hint": "register_ids 80/91 and 78/124, ND1131 and ND1129, both Hilmteichstraße 104, Wenisbuch, ~47.083,15.463, about 2.3km from centre.",
+   "why_not_shipped": "Not reached this pass. Owner recorded oeffentlich in the register but the specific site at this address was not identified (could be a school, institution or park; Hilmteich itself, the well-known lake park, is nearby but this address was not confirmed to be inside it). Needs an access check."
+  },
+  {
+   "name": "Annaplatz 2 Oak",
+   "species": "Eiche (oak, species unspecified beyond genus in the register)",
+   "location_hint": "register_id 87, object_id 93, ND1136, Annaplatz 2, Algersdorf, 47.079944,15.395974, protected 12.09.1990.",
+   "why_not_shipped": "Not reached this pass; 3.38km from centre, outside the tight cluster chosen this time. Register species field only says 'Eiche' without a Latin binomial, so species would need pinning down to genus/species level before writing."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Rosenberggürtel 12 Paulownia",
+   "species": "Paulownia (Paulownia tomentosa)",
+   "location_hint": "register_id 77, object_id 123, ND1128, Rosenberggürtel 12, Geidorf, 47.080948,15.448981.",
+   "reason": "Address is a kindergarten (Heilpädagogischer Kindergarten für Hör- und Sprachbildung / KIGA Rosenberg), confirmed by search. No evidence found that the grounds are open to the public; per hard rule 10's schools test, absent real evidence of open access a school site stays blocked rather than shipped."
+  },
+  {
+   "name": "Körblergasse 106 Mammutbaum and Eibe",
+   "species": "Mammutbaum (Sequoiadendron giganteum) and Eibe (Taxus baccata)",
+   "location_hint": "register_ids 99/46 and 98/45, ND1148 and ND1147, both Körblergasse 106, Geidorf, ~47.089,15.4415. Both carry real 2015 girth measurements from Wikipedia (Mammutbaum 5.50m, Eibe 2.70m) which is a shame to leave on the table.",
+   "reason": "Address is the Landesjugendheim Rosenhof, a state-run children's and youth care home with attached academies (midwifery, social work, chemistry). Not open to the public; sending strangers onto the grounds of a youth care institution is exactly the harm hard rule 10 exists to prevent. Blocked outright, not just parked as a lead."
+  }
+ ]
+}
