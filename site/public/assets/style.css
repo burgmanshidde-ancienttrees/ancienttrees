@@ -760,10 +760,51 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   .footer-cols { flex-direction: column; gap: 1.5rem; }
   .action-row .go-btn, .action-row .seen-btn { font-size: 13px; padding: 0.6rem 0.9rem; }
 
-  .split { flex-direction: column-reverse; height: auto; }
-  .panel { width: 100%; max-width: none; height: auto; overflow: visible; border-right: none; }
-  /* Smaller map on phones: the list is what people scan, the map is context. */
-  .stage { position: sticky; top: var(--header-h); height: 42vh; height: 42svh; min-height: 300px; z-index: 5; }
+  /* The phone layout is Google Maps' structure, copied on purpose (Hidde,
+     2026-08-17). The map fills the screen and the list rides over it in a
+     sheet with three detents. The old version put a 42vh map above a page that
+     scrolled normally; it was honest but it was not the product, because the
+     map was furniture rather than the thing you were using.
+
+     Nothing here removes content. The sheet holds the same server-rendered
+     tree cards it always did, and the detail view hides its siblings with a
+     class. A crawler sees the whole city either way, which is Hidde's own
+     ruling of 2026-08-06 about the city page being the indexed asset. */
+  .split { flex-direction: column; height: 100svh; padding-top: var(--header-h); overflow: hidden; }
+  .stage { position: absolute; inset: var(--header-h) 0 0 0; height: auto; min-height: 0; z-index: 1; }
+
+  .panel { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
+    width: 100%; max-width: none; border-right: none; border-radius: 18px 18px 0 0;
+    height: calc(100svh - var(--header-h) - 0.5rem);
+    display: flex; flex-direction: column; overflow: hidden;
+    box-shadow: 0 -6px 24px rgba(26, 32, 18, 0.16);
+    padding-bottom: 0; touch-action: none; }
+  .panel.is-animating { transition: transform 260ms cubic-bezier(0.22, 0.61, 0.36, 1); }
+  .sheet-grab { flex: 0 0 auto; cursor: grab; user-select: none; }
+  /* The handle: the one piece of furniture that says "this drags". */
+  .sheet-grab::before { content: ""; display: block; width: 2.25rem; height: 4px;
+    margin: 0.55rem auto 0.15rem; border-radius: 999px; background: var(--cream-dark); }
+  .sheet-grab .panel-head { padding: 0.35rem 1.1rem 0.8rem; border-bottom: 0; }
+  .sheet-count { display: block; font-size: 13px; color: var(--ink-light); }
+  .sheet-body { flex: 1 1 auto; overflow-y: hidden; -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain; touch-action: pan-y; }
+  /* The peek is one line and a count, the way Maps shows a single row above
+     the fold. A two-line heading plus a lede made the peek 200px tall, which
+     is not a peek, it is a half-open sheet with the map as a border. */
+  .panel[data-detent="peek"] .panel-head h1 { font-size: 1.15rem; margin-bottom: 0.15rem;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .panel[data-detent="peek"] .panel-head .lede,
+  .panel[data-detent="half"] .panel-head .lede { display: none; }
+
+  /* Movement 3: one tree fills the sheet, the rest stay in the DOM. */
+  .sheet-back { display: none; }
+  .panel.is-detail .sheet-back { display: inline-flex; align-items: center; gap: 0.4rem;
+    font-family: inherit; font-size: 13px; background: none; border: 0; color: var(--moss);
+    padding: 0.2rem 0; cursor: pointer; }
+  .panel.is-detail .panel-head h1, .panel.is-detail .panel-head .lede,
+  .panel.is-detail .sheet-count, .panel.is-detail .panel-foot { display: none; }
+  .panel.is-detail .tree-card { display: none; }
+  .panel.is-detail .tree-card.is-open { display: block; }
   .crumbs { display: none; }
   .tree-card { padding: 1.25rem 1.1rem; }
   .tree-meta, .tree-story, .tree-more { margin-left: 0; }
