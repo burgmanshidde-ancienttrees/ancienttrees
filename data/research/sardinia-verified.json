@@ -1,0 +1,128 @@
+[
+  {
+    "id": "sar_001",
+    "name": "S'Ozzastru",
+    "species": "Wild Olive (Olea europaea var. sylvestris)",
+    "age_estimate": "roughly 3,000-4,000 years, possibly older (contested)",
+    "age_min": 2500,
+    "age_max": 4000,
+    "location": {
+      "address": "Localita Santu Baltolu di Carana, Luras (near Lake Liscia)",
+      "latitude": 41.006697,
+      "longitude": 9.255081,
+      "neighbourhood": "Santu Baltolu di Carana, Gallura"
+    },
+    "girth_cm": 1154,
+    "verified_sources": [
+      "https://it.wikipedia.org/wiki/S%27Ozzastru",
+      "https://olivastrimillenariluras.it/en/home-page/",
+      "data/registers/italy-masaf.json (sheet 03/E752/OT/20)"
+    ],
+    "access": "Paid entry, 5 EUR, guided visit only. Open 1 April to 2 November, visits from 10:30 (olivastrimillenariluras.it, checked 2026-08-17, site last modified June 2026). Managed tourist site with ticket office, picnic area and Lake Liscia boat trips.",
+    "transport": "No public transport; reached by car, roughly 20 minutes from Luras or Tempio Pausania. On-site parking at the visitor centre.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "THE anchor tree of the whole island page: Italy's oldest tree and one of Europe's oldest, a National Natural Monument since 1991 (Decreto Assessorato Difesa Ambiente, L.R. 31/89). Local Sardinian name means 'the patriarch of all wild olives' or su babbu mannu (the great father). AGE IS CONTESTED, do not resolve it: University of Sassari estimates 2,500-4,000 years (cited by it.wikipedia.org); the tree's own visitor site (olivastrimillenariluras.it) says 3,000-4,000 years; the Piedmontese botanist Bruno Peyronel speculated it could exceed 5,000 years, but Wikipedia itself flags this explicitly as having 'no scientific data to support it', same as for other trees Peyronel guessed at. Olives cannot be ring-dated in the ordinary way: the trunk hollows out and loses its heartwood as it ages (visible in this tree, per regional sources), which is exactly why every age here is an estimate rather than a count, and why the estimates disagree by thousands of years. Physical measurements corroborate strongly across independent sources: MASAF register girth 1154cm at unspecified height vs Wikipedia's 'undici metri e mezzo' (11.5m); both give height 14m; Wikipedia adds crown diameter 21m. Vegetative state: actively managed and promoted as a living tourist attraction as of 2026 (site content dated June 2026), no death or decline reported anywhere. A second, smaller olivastro stands a few metres away (see sar_002) as part of the same protected grove, 'Olivastri Millenari di Santu Baltolu'."
+  },
+  {
+    "id": "sar_002",
+    "name": "The Second Olivastro of Santu Baltolu",
+    "species": "Wild Olive (Olea europaea var. sylvestris)",
+    "age_estimate": "roughly 2,000 years (unsourced beyond general description)",
+    "age_min": 1500,
+    "age_max": 2500,
+    "location": {
+      "address": "Localita Santu Baltolu di Carana, Luras, standing a few metres from S'Ozzastru",
+      "latitude": 41.0071,
+      "longitude": 9.255483,
+      "neighbourhood": "Santu Baltolu di Carana, Gallura"
+    },
+    "girth_cm": 540,
+    "verified_sources": [
+      "data/registers/italy-masaf.json (sheet 04/E752/OT/20)",
+      "https://www.gianttrees.org/it/italian-tree-of-the-year-2023/finale/l-olivastro-di-luras-a-santu-baltolu",
+      "https://sardegnainpillole.wordpress.com/2017/02/05/luras-sozzastru-il-patriarca-vegetale-di-karana/"
+    ],
+    "access": "Same paid site as S'Ozzastru (sar_001): 5 EUR guided visit, open 1 April to 2 November from 10:30.",
+    "transport": "Same as sar_001, on the same visitor path a few metres from the main tree.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Companion tree to S'Ozzastru, individually registered by MASAF at 540cm girth (well under S'Ozzastru's 1154cm) but still a genuinely ancient wild olive in its own right, part of the same protected grove and the same 1991 natural-monument designation. Secondary sources describe it as standing 'a few metres away' from the patriarch and give a rough estimate of about 2,000 years, but none of them show working for that figure, so treat it as a vague estimate repeated as vaguely as given rather than a precise one; no dedicated proper name found beyond 'the second olivastro' in the sources checked (unlike S'Ozzastru, which has its own Sardinian name). Same access and same alive-now evidence as sar_001, since both stand in the actively managed visitor grove."
+  },
+  {
+    "id": "sar_003",
+    "name": "The Olivastro of Santa Maria Navarrese",
+    "species": "Wild Olive (Olea europaea var. sylvestris)",
+    "age_estimate": "millennial; expert estimate around 2,000 years",
+    "age_min": 1000,
+    "age_max": 2000,
+    "location": {
+      "address": "Piazza Principessa di Navarra, next to the church of Santa Maria di Navarra (1502), Santa Maria Navarrese, Baunei",
+      "latitude": 39.988606,
+      "longitude": 9.688989,
+      "neighbourhood": "Santa Maria Navarrese, Baunei, Ogliastra"
+    },
+    "girth_cm": 840,
+    "verified_sources": [
+      "https://www.sardegnaforeste.it/monumento-naturale/olivastri-di-santa-maria-navarrese-baunei",
+      "https://www.vistanet.it/cagliari/2023/01/17/lo-sapevate-a-santa-maria-navarrese-vive-uno-degli-alberi-piu-antichi-deuropa/",
+      "data/registers/italy-masaf.json (sheet 01/A722/OG/20)"
+    ],
+    "access": "Free, standing in a public square beside the church, open at all times.",
+    "transport": "In the village of Santa Maria Navarrese, a coastal frazione of Baunei; walkable from the harbour and beach.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "NOTE: the original lead named this a Sughera (cork oak); it is not, it is a wild olive (olivastro), corrected during verification. Stands beside the 1502 church of Santa Maria di Navarra, in the square that gives the village its name. Regione Sardegna's own forestry agency (SardegnaForeste, citing 'I monumenti naturali della Sardegna', Barroccu/Gentileschi, Carlo Delfino Editore 1996) gives the official measurement: crown 9-10m, trunk circumference 8.40m at 1.30m height, vegetative state 'good' despite a partly hollow trunk and visible fire scars from an arson attack in the early 1960s. MASAF's own register gives a slightly larger girth, 905cm, for the same locality, most likely a different measurement point or a later remeasurement; recorded both, not resolved. Declared Natural Monument by the Region of Sardinia in January 1994 together with other ancient olives, carobs and hackberries in the same square (MASAF separately lists a Bagolaro at 367cm and a Carrubo/carob at 332cm in the same piazza, sheets 02 and 03/A722/OG/20, not delivered as separate entries here: less individually remarkable and clearly secondary to the olive in every source). Alive as of 2023 per vistanet.it, present tense. Age: SardegnaForeste calls it 'millenario' (at least a thousand years) without a number; vistanet.it (2023) cites unnamed botanical experts at 'circa duemila anni' (about 2,000 years). No dendrological working shown for either figure; reported as given."
+  },
+  {
+    "id": "sar_004",
+    "name": "The Ancient Trees of San Pietro in Golgo",
+    "species": "Wild Olive and European Hackberry (Olea europaea var. sylvestris and Celtis australis)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Beside the rural church of San Pietro (San Pietro in Golgo), Altopiano del Golgo, Baunei",
+      "latitude": 40.09015,
+      "longitude": 9.668031,
+      "neighbourhood": "Altopiano del Golgo, Baunei, Ogliastra"
+    },
+    "girth_cm": 568,
+    "verified_sources": [
+      "https://www.sardegnaforeste.it/monumento-naturale/su-sterru-il-golgo-baunei",
+      "https://idese.cultura.gov.it/en/place/altopiano-di-golgo/",
+      "data/registers/italy-masaf.json (sheets 04 and 05/A722/OG/20)"
+    ],
+    "access": "Free, a working rural church on open plateau land reached by the paved road up from Baunei (about 13km); also a stop on the Selvaggio Blu and other hiking routes. No gate, no fee found in any source checked.",
+    "transport": "No public transport; by car from Baunei, roughly 20-25 minutes on the plateau road. Frequently visited alongside the Su Sterru sinkhole nearby.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Treated as one ensemble entry: a wild olive (girth 568cm, MASAF sheet 05/A722/OG/20) and a hackberry/bagolaro (girth 525cm, sheet 04/A722/OG/20) standing together at the same tiny rural church, 13km from Baunei on the Golgo plateau, both individually MASAF-registered at essentially the same coordinates. SardegnaForeste's own regional page (independent of MASAF, describing the wider Golgo/Su Sterru natural monument) confirms in its own words that the church 'e fiancheggiata da annosi olivastri e bagolari' (is flanked by aged wild olives and hackberries), which is the one collectible point here: the little basalt church itself, not a wood. This is a remote pastoral site (shepherds' cumbessias/staulus alongside it, used for an annual festival) rather than a town square, so I am marking location_precision approximate: the two MASAF points sit almost on top of each other and are very likely accurate, but I have no independent tree-level photo or aerial confirmation, only the register plus a regional description of the site as a whole. No age given anywhere; MASAF has no age field and no secondary source ventures one, so this ships with age_estimate left as 'not documented' per the rulebook rather than guessed. No death or decline signal found; the site is an active, currently promoted natural monument and pilgrimage/festival site."
+  },
+  {
+    "id": "sar_005",
+    "name": "The Cedar of Parco Aymerich",
+    "species": "Cedar of Lebanon (Cedrus libani)",
+    "age_estimate": "roughly 190 years, if the 1835 planting date is accurate",
+    "age_min": 150,
+    "age_max": 200,
+    "location": {
+      "address": "Parco Aymerich, Laconi (public park, free entry)",
+      "latitude": 39.854186,
+      "longitude": 9.055881,
+      "neighbourhood": "Parco Aymerich, Laconi, Sarcidano"
+    },
+    "girth_cm": 440,
+    "verified_sources": [
+      "https://www.apgi.it/giardino/parco-aymerich/",
+      "https://www.sardegnaforeste.it/ugb/parco-aymerich",
+      "data/registers/italy-masaf.json (sheet 02/E400/OR/20)",
+      "https://moveo.telepass.com/parco-aymerich-laconi/ (park founding date, secondary)"
+    ],
+    "access": "Free, open daily roughly 8:00-20:00 depending on season (SardegnaForeste, the state forestry agency, manages the park). Public urban park, no restriction.",
+    "transport": "Short walk from Laconi town centre (Piazza Marconi / Palazzo Aymerich) to the main entrance at Su Acili.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED, weaker sourcing than the other four: the specific planting story (planted 1835, already 6 years old, one of the first Cedars of Lebanon introduced to Europe) appears consistently across several independent Sardinian travel/history sites (informati-sardegna.it, thewom.travel, and others surfaced by search), but the page most directly citing it (alberimonumentali.info) 404'd on fetch and informati-sardegna.it is JS-rendered so its exact wording could not be pulled directly this pass, only via search snippets. What IS independently confirmed by two official sources fetched directly: the park was created from 1830 by Marchese Ignazio Aymerich, a botany enthusiast who planted rare exotic species (APGI, the Italian Parks and Gardens Association, and SardegnaForeste, the regional forestry agency that manages the park); the cedar itself is called 'imponente' and the oldest/tallest Cedar of Lebanon in Sardinia in multiple sources; MASAF registers it at 440cm girth, 29m height. If the 1835 planting date is right this is a genuine documented-planting-date estimate (category 2 in the age rules), not a bridge claim, because multiple sources tie the date to THIS specific tree rather than just the park; but given the sourcing gap, treat the age band as soft. The same small park also holds a MASAF-registered Platanus orientalis at 450cm girth (sheet 04/E400/OR/20, actually slightly thicker than the cedar) a few metres away; mentioned here as context for the writer, not delivered as a separate entry, since the cedar is the one every source treats as the destination tree. No decline or death signal found; the park is an actively maintained, visited public site."
+  }
+]

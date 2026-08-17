@@ -1,0 +1,98 @@
+[
+  {
+    "id": "cyp_001",
+    "name": "The Sacred Oak of Theoskepasti",
+    "species": "Kermes Oak, locally \"prinos\" (Quercus coccifera, possibly Quercus ilex)",
+    "age_estimate": "roughly 700 years (local tradition)",
+    "age_min": 400,
+    "age_max": 700,
+    "girth_cm": null,
+    "location": {
+      "address": "Chapel of Panagia Theoskepasti, beside the Agios Ioannis Lampadistis Monastery (UNESCO World Heritage), Kalopanagiotis, Marathasa valley, Nicosia district, Cyprus",
+      "latitude": 34.9909,
+      "longitude": 32.8282,
+      "neighbourhood": "Kalopanagiotis village, Marathasa valley"
+    },
+    "verified_sources": [
+      "https://www.cyprusisland.net/cyprus-churches/panayia-theoskepasti-chapel-kalopanayiotis",
+      "https://cypriot-villages.uk/panagias-theoskepastis-chapel/"
+    ],
+    "access": "Free. Stands in the open yard beside a public chapel next to the UNESCO-listed monastery complex; no permission needed, open in daylight.",
+    "transport": "No public transport reaches Kalopanagiotis usefully; by car roughly 50 km / 60-70 minutes from Nicosia via the Troodos foothill roads.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Two independent tourism/heritage sources (cyprusisland.net, cypriot-villages.uk) agree: a huge 'prinos' oak grew beside the 12th-century Theoskepasti chapel (built alongside Agios Ioannis Lampadistis Monastery, itself part of the 1985 UNESCO Painted Churches of the Troodos Region listing) and its branches grew to shield the chapel from raiders' sight, which is where the name Theoskepasti ('God-covered') comes from. Both sources say the tree is under protection of the Cyprus Department of Forests. Species naming is inconsistent across sources: 'prinos' (Greek for Kermes oak, Quercus coccifera) is the term both sources use, but one nearby account also calls it 'holm oak', a related but distinct species (Quercus ilex); ship as Kermes oak with the ambiguity flagged. Age of '700 years' is a repeated local legend/tourism figure, not a Forest Department measurement or growth-rate derivation; no girth figure found. Location is chapel/monastery-yard level, not a tree-level coordinate; the coordinate given is the centre of the road named after the monastery (OSM), roughly 100-150m precision. Wikipedia's 'Church of Panagia Theoskepasti' article is a DIFFERENT, unrelated church in Kato Paphos and does not corroborate this tree; do not cite it as a source for this entry. A third source, a Russian-language Cyprus blog (dom.com.cy), independently repeats the same 700-year figure and legend, but was not counted as one of the two independent sources since its editorial content appears derivative of tourism copy."
+  },
+  {
+    "id": "cyp_002",
+    "name": "The Old Olive Tree of Xyliatos",
+    "species": "Olive (Olea europaea)",
+    "age_estimate": "sources disagree: 800 to 1,700 years",
+    "age_min": 800,
+    "age_max": 1700,
+    "girth_cm": 1300,
+    "location": {
+      "address": "Potima, Xyliatos village, Nicosia district, Cyprus",
+      "latitude": 35.03175,
+      "longitude": 33.03505,
+      "neighbourhood": "Potima area, Xyliatos"
+    },
+    "verified_sources": [
+      "https://xyliatos.org/en/tour/sights/ (and http://www.xyliatos.org/en/old-olive-tree-len.html, same council site)",
+      "https://www.cyprusisland.net/attractions/perennial-olive-tree-xyliatos"
+    ],
+    "access": "Free, standing in the open in the Potima area of the village; no permission needed.",
+    "transport": "No useful public transport; by car roughly 25 km / 35-40 minutes from Nicosia, in the Troodos foothills near the Xyliatos dam and forest.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Two independent sources agree this is regarded as the oldest and largest-girth olive tree in Cyprus, standing at 'Potima' in Xyliatos village, and that it was placed under Department of Forests protection in 2004 after the Xyliatos Community Council's own efforts. Both agree on circumference/girth of 13 metres (girth_cm 1300). AGE DISAGREES SHARPLY: the Xyliatos Community Council's own site (the more authoritative, official source) states approximately 1,700 years; cyprusisland.net, a tourism site, states 800 years. Neither cites a growth-ring count or other derivation, both read as received local figures, so treat as flagged and let the page state the range rather than picking one. HEIGHT DISCREPANCY, resolved: cyprusisland.net says 'height of 60 metres', which is physically impossible for an olive tree (world's tallest trees top out near 100m; olives max around 15-20m) and is very likely a copy error; the official Xyliatos Community Council site gives height 6 metres for the same tree, which is plausible and is treated as correct. Do not publish the 60m figure. Location: 'Potima' is a named place within the village; the coordinates used (35.03175, 33.03505) come from a Wikiloc GPS trail titled 'Giant olive tree 1700 yrs old Xyliatos Nicosia Cyprus', extracted via search snippet only, wikiloc.com itself returned HTTP 403 to both WebFetch and curl with a browser user agent (two attempts, both blocked) so the page was never directly viewed; treat the coordinate as a reasonable trail-waypoint estimate rather than a confirmed tree-level pin, hence approximate precision. wikimapia.org's 'Giant Olive Tree' page (http://wikimapia.org/24796684/Giant-Olive-Tree) returned only a JS cookie-redirect stub to curl, no usable coordinates, one attempt, not retried."
+  },
+  {
+    "id": "cyp_003",
+    "name": "The Ancient Laurel of Apostle Philip",
+    "species": "Bay Laurel (Laurus nobilis)",
+    "age_estimate": "roughly 1,000 years (one official source says only 'a few centuries')",
+    "age_min": 300,
+    "age_max": 1000,
+    "girth_cm": 800,
+    "location": {
+      "address": "Beside the country Chapel of Apostle Philip, Pente Litharia (Five Rocks), about 3 km west of Omodos village, Limassol district, Cyprus",
+      "latitude": 34.8481,
+      "longitude": 32.8078,
+      "neighbourhood": "Pente Litharia, west of Omodos"
+    },
+    "verified_sources": [
+      "https://allaboutlimassol.com/en/apostle-philip-chapel",
+      "http://omodos.org/en/country-church-of-apostle-philip/"
+    ],
+    "access": "Free, standing beside a small rural chapel in the open countryside; no permission needed. Reached by an unpaved/minor road about 3 km west of Omodos village; no gate or restriction mentioned by either source.",
+    "transport": "No public transport; by car about 3 km from Omodos village (itself roughly 55 km / 60-75 minutes from Limassol), on rural roads.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Two independent sources agree: a large, ancient laurel (bay laurel) stands beside the country Chapel of Apostle Philip at 'Pente Litharia' (Five Rocks), the oldest of Omodos's rural chapels, about 3km west of the village. Both give identical measurements: circumference 8 metres, height 17 metres (girth_cm 800). Both note local tradition that the site was originally a shrine to Apollo before Christianisation, with the laurel (sacred to Apollo in Greek myth) cited as a surviving trace; this is a historical/legendary claim repeated by both sources, not an archaeological fact, and should read as tradition in the story. AGE DIFFERS: allaboutlimassol.com gives 'approximately 1000 years old'; omodos.org, the village's own site, is vaguer, 'estimated to be a few centuries'. Neither cites a derivation (no growth rate or ring count), so both are received figures; flagged, and the vaguer official figure should not be sharpened. Chapel was renovated in 1773 per both sources, which is a fact about the building, not the tree (avoiding a bridge claim). A THIRD allaboutlimassol.com page (their Limassol trees survey, /en/perennial-trees-in-limassol-majestic-giants-of-over-1000-years-of-age) independently gives this same tree as 'the laurel tree in Omodos village, 1.000 years old... 10 meters tall', which CONTRADICTS the dedicated chapel page's height of 17 metres; both pages are on the same domain so this is an internal inconsistency rather than a second confirming source, flagged, height 17m kept as the dedicated-page figure but treat height as uncertain. LOCATION: no source gives coordinates for the chapel itself; Nominatim and an Overpass search for a place of worship named 'Philip' near Omodos returned nothing. The coordinate recorded here is OMODOS VILLAGE CENTRE, not the tree, offset roughly 3km east of the true site; a future pass with satellite imagery or a visit should pin the actual chapel. Flag prominently: this is village-level precision only, marked approximate for that reason specifically."
+  },
+  {
+    "id": "cyp_004",
+    "name": "The Plane Tree of Ayia Mavri",
+    "species": "Oriental Plane (Platanus orientalis)",
+    "age_estimate": "roughly 800 years (one source says 1,200 years)",
+    "age_min": 800,
+    "age_max": 1200,
+    "girth_cm": 820,
+    "location": {
+      "address": "Beside the Ayia Mavri chapel, on the Kryos river, on the road between Koilani and Pera Pedi (about 2 km from Koilani), Limassol district, Cyprus",
+      "latitude": 34.8445,
+      "longitude": 32.8599,
+      "neighbourhood": "Between Koilani and Pera Pedi, Krasochoria wine region"
+    },
+    "verified_sources": [
+      "https://www.cypruspost.post/el/centennial-trees",
+      "https://allaboutlimassol.com/en/perennial-trees-in-limassol-majestic-giants-of-over-1000-years-of-age"
+    ],
+    "access": "Free, standing in the open beside a small rural riverside chapel; no permission needed. Reached by the road connecting Koilani and Pera Pedi villages.",
+    "transport": "No public transport; by car about 30 km / 40-45 minutes from Limassol, in the Krasochoria wine-village region of the Troodos foothills.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Two independent sources: Cyprus Post's own 'Centennial Trees of Cyprus' stamp-series page (cypruspost.post, a national postal-service publication, effectively an official/semi-official listing) gives this Oriental Plane at Agia Mavri as approximately 800 years old, trunk circumference 8.20m, height 38m, and states it was DESIGNATED (protected) in 2004. allaboutlimassol.com's Limassol trees survey independently corroborates: 'the plane tree at Ayia Mavri in Kilani, aged 800 years old... trunk is 8 meters wide and it reached up to 36 meters high' (on the way from Pera Pedi to Kilani/Koilani village) -- the two sources agree closely on age, girth and height (minor rounding: 8m vs 8.20m; 36m vs 38m; 'wide' may mean diameter rather than circumference, a units ambiguity worth flagging but the circumference figure from the more precise Cyprus Post source is used). A THIRD source, cyprusisland.net's own Ayia Mavri Chapel page, instead calls it '1200 years old' with no size given and no designation-year claim; this conflicts with the two agreeing sources, so the age is flagged and both figures are recorded rather than one chosen silently. Local legend (in the cyprusisland.net source only, not corroborated) ties the chapel's name to a saint named Mavri who parted rock to help a fleeing couple; this is folklore, not fact, and concerns the chapel rather than the tree, so it is not used to date the tree (avoiding a bridge claim). LOCATION: no source gives exact coordinates; the chapel sits on the Kryos river roughly 2km from Koilani toward Pera Pedi. The coordinate recorded is Koilani village centre (OSM), not the tree itself; Overpass searches for a place of worship named 'Mavri' near the villages returned nothing. Marked approximate for that reason."
+  }
+]

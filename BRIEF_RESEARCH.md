@@ -171,6 +171,34 @@ let the page ask the reader.** Somebody with a tape measure answers it in one
 message, and a correspondent is worth more than a number. Empty beats invented;
 empty no longer beats derived.
 
+## A search summary is a lead, never a source
+
+Caught on the Cyprus pass, 2026-08-17, and it is the most dangerous thing found
+this week because it does not look like an error.
+
+**WebSearch's own AI summary invented measurements.** For the Kyperounda olive
+it produced specific, plausible, citable-looking figures, 5 m tall and 8.10 m
+perimeter, and **neither number appears anywhere on the page when that page is
+fetched directly.** The pass noticed, discarded them, and recorded the
+discrepancy. Had it not, two fabricated measurements would have gone into a tree
+record with a real URL beside them, which is hard rule 2 broken by a tool rather
+than by a person, and it would have been almost impossible to spot afterwards.
+
+So, binding:
+
+- **Treat a search summary as a pointer to a page, not as evidence.** Any number
+  that reaches `verify_notes` or a tree record must have been seen on the source
+  itself.
+- **Quote figures from the fetched page**, not from the summary above it.
+- If a page will not load and only the summary has the figure, that figure does
+  NOT exist for our purposes. Record the tree without it and say why.
+
+The same pass also caught two arithmetic-shaped errors in real sources, a "60 m
+tall" olive whose true height is 6 m, and a page contradicting itself at 17 m
+versus 10 m for one laurel. Sources are wrong often enough that the physical
+sanity check in the register-pitfalls section above applies to everything, not
+only to registers.
+
 ## Why passes stall, and the four rules that came out of it
 
 Three verification passes died on 2026-08-17 with the same message, "no progress

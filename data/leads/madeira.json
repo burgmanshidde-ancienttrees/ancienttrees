@@ -1,0 +1,36 @@
+{
+  "leads": [
+    {
+      "candidate": "Nucleo de Tis - Montado do Sabugal (til grove)",
+      "species": "Til (Ocotea foetens)",
+      "reason": "Second officially designated til nucleus (ASMAC n.78, island code SFOF02), same species and 'predates 1419' framing as the Fanal nucleus, height 37.0m, max perimeter 13.80m across the grove, 'Medio' (medium) accessibility on a forest path linking the Faja da Nogueira power station to the Levada da Serra do Faial in Santana/Faial parish, coordinates 32.744917,-16.907861. Unlike Fanal, no individually named or independently identified specimen (no 'witch tree' equivalent) was found this pass, so it fails the collectible-point test as researched. Worth a future pass if a named individual specimen or better access description turns up."
+    },
+    {
+      "candidate": "Hospital garden rubber tree (Ficus elastica), Hospital Dr. Joao de Almada, Quinta de Santana, Monte",
+      "species": "Rubber tree (Ficus elastica)",
+      "reason": "Register entry ASMAC n.89 (island code FMFE01), height 27.0m, perimeter 7.23m, historically tied to the former Quinta de Santana tuberculosis sanatorium (opened 1940). The site is now an operating public hospital (Hospital Dr. Joao de Almada / SESARAM). Could not confirm this pass whether the grounds are genuinely open to casual visitors beyond patients, visitors and staff; sending readers onto working hospital grounds needs that confirmation first. Held as a lead pending an access check, not blocked outright, since public hospital grounds sometimes have an accessible forecourt or garden."
+    }
+  ],
+  "blocked": [
+    {
+      "candidate": "Eucalyptus of Quinta do Jardim da Serra (referenced as the tallest tree in Madeira)",
+      "species": "Eucalyptus (Eucalyptus globulus)",
+      "reason": "Register entry ASMAC n.80 (island code CLJSEG01), height 64.0m (the tallest tree on the island per the register itself), perimeter 9.67m, believed over 200 years old. Stands on the grounds of Hotel Quinta da Serra, a private 5-star hotel; multiple sources confirm the garden is NOT open to the public and the tree is only shown via a guided visit offered to hotel guests. Fails the 'can they get in without asking anyone's permission' test under hard rule 10 (private land, guests-only)."
+    },
+    {
+      "candidate": "Cork Oak (Sobreiro) of Quinta do Padre Americo, Vale Paraiso, Camacha",
+      "species": "Cork Oak (Quercus suber)",
+      "reason": "Register entry ASMAC n.84 (island code SCCQS01), height 35.0m, perimeter 4.48m. Stands on the grounds of a diocesan institution for disadvantaged children (Aldeia do Padre Americo). Not genuinely open to casual public visitors; sending strangers onto the grounds of a children's care institution is inappropriate whatever the register says."
+    },
+    {
+      "candidate": "Monterey Pine (Pinheiro-insigne) of Casais Proximos, Santo da Serra",
+      "species": "Monterey Pine (Pinus radiata)",
+      "reason": "Register entry ASMAC n.83 (island code SCSSPR01), height 28.0m, perimeter 6.93m. The register's own description states it stands on a private property, currently a rural hotel unit. Same private/guests-only access failure as the Quinta da Serra eucalyptus."
+    },
+    {
+      "candidate": "The Fanal laurisilva / til nucleus as a whole (as opposed to the single Witch Tree entry, mdr_005)",
+      "species": "Til (Ocotea foetens), grove of multiple trunks",
+      "reason": "Explicitly rejected as a collectible point in its own right per the brief's instruction. The official register (ASMAC n.77) designates a 20-hectare 'nucleus' with 8 documented trunk perimeters, not one tree; a forest type or grove spanning 20ha is not one identifiable point to stand at. One specimen within it, independently identified by name across multiple sources and an OSM natural_monument node as the 'Witch Tree', was pulled out and verified separately as mdr_005. Recording this explicitly so a future pass does not re-argue whether the grove itself should be an entry: it should not, only the individually identified specimen should."
+    }
+  ]
+}
