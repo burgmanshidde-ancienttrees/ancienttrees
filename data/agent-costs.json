@@ -2083,6 +2083,15 @@
     "note": "Session work (tokens not metered by harness). Wrote the story and updated intro/meta_description/question_context/FAQ for the tenth tree, catching a stale 'nine figs' count in meta_description the writer would otherwise have missed.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "como",
+    "kind": "verify",
+    "tokens": 90259,
+    "trees": 0,
+    "note": "0 new trees: all 7 register candidates were exact-coordinate matches to already-blocked/held leads from 2026-08-15, correctly not re-litigated. Found the tooling gap that caused the resurfacing (see passcheck fix) and tried Via Baserga's aerial-imagery next_step (inconclusive, left held). Como stays at 9/10, genuinely thin.",
+    "wasted": 0,
+    "brief_wrong": true
    }
   ]
  }
