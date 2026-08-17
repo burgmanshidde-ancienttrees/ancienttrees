@@ -2182,6 +2182,24 @@
     "note": "New city from Land Salzburg Naturdenkmal register + Wikipedia join, same technique as Graz; 9 shipped, 4 leads (access unresolved), 1 blocked (private driveway access)",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "copenhagen",
+    "kind": "verify",
+    "tokens": 55000,
+    "trees": 3,
+    "note": "the reverse cycle proved: 3 of 3 famous Danish oaks cleared the bar and each arrived with a licensed Commons photo, solving a photo gap that six rejected candidates had shown was unsolvable by searching",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "copenhagen",
+    "kind": "write",
+    "tokens": 78000,
+    "trees": 3,
+    "note": "moved the oldest-tree crown to Skovfogedegen, repaired two now-false thickest claims and the Denmark country intro; 26k per tree because a 3-tree batch cannot amortise the fixed read",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
