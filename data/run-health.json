@@ -195,6 +195,21 @@
    "cities_touched": 0,
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-08-17T02:52:10+00:00",
+   "date": "2026-08-17",
+   "run_id": "31989304837",
+   "minutes": 21.9,
+   "turns": 193,
+   "denials": null,
+   "ended": "success",
+   "tokens": 35631794,
+   "claims_held": [],
+   "commits": 5,
+   "cities_touched": 1,
+   "trees": 1,
+   "logged": false
   }
  ]
 }
