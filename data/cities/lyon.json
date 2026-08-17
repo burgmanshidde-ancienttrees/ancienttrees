@@ -22,7 +22,7 @@
     },
     {
       "q": "Are Lyon's remarkable trees free to see?",
-      "a": "Yes. All nine stand in free public parks and gardens with no entry fee, including the island garden of Île Barbe, reachable on foot via a footbridge over the Saône."
+      "a": "Yes. All ten are free to see with no entry fee, from the island garden of Île Barbe, reachable on foot via a footbridge over the Saône, to a rare oak on an ordinary Villeurbanne street corner."
     }
   ],
   "trees": [
@@ -321,6 +321,36 @@
         ],
         "label": "October into November, when its leaves turn a rich butter yellow"
       }
+    },
+    {
+      "id": "lyo_011",
+      "name": "The Pedunculate Oak of Rue Viret",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Corner of Rue Viret and Rue Francis de Pressense, Les Poulettes / Gratte-Ciel, 69100 Villeurbanne",
+        "latitude": 45.772238,
+        "longitude": 4.875398,
+        "neighbourhood": "Villeurbanne (Les Poulettes, adjoining Gratte-Ciel), roughly 1.4 km east of Parc de la Tete d'Or"
+      },
+      "story": "Villeurbanne's official tree register calls this pedunculate oak rare, and it means it plainly: street plantings here run to plane and lime, so a full-grown Quercus robur on a residential corner stands out as an exception the city itself has flagged. The 2017 survey that logged it recorded good health and real size and nothing else, no planting date, no measured age, just a note that this one was worth watching. An investigative piece on Lyon's remarkable trees found it again in 2025, still standing at the same corner of Rue Viret and Rue Francis de Pressense, eight years on from that first record. It grows a fifteen minute walk from the Art Deco tower blocks of Gratte-Ciel, Villeurbanne's landmark 1930s housing project, in the quieter grid of streets just west of it. Nobody has measured its trunk or dated its rings, so this page will not guess a number rather than invent one. What two independent records agree on is simpler: an oak grown too large and too old to belong on an ordinary street, still there, still worth the detour from the park at the Tete d'Or.",
+      "verified_sources": [
+        "Metropole de Lyon open-data PLU-H register, 'Espace boise classe ponctuel / Arbre remarquable', feature plu_h_opposable.pluboispt (register_id 4183), download.data.grandlyon.com/wfs/grandlyon",
+        "https://www.mediacites.fr/decryptage/lyon/2025/08/26/cedre-tilleul-tulipier-a-la-recherche-des-arbres-remarquables-du-grand-lyon/"
+      ],
+      "access": "Free, public street corner in a residential neighbourhood, no restriction",
+      "transport": "Charpennes Charles Hernu metro station (Line A/B), about 7 min walk; Le Tonkin tram stop about 4 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No age or girth documented by either source; age_estimate left undocumented rather than invented. Register calls the species genuinely rare for Villeurbanne's street planting, good health, large size, last surveyed 2017-02-15. The 2025 Mediacites piece independently names this exact tree at this exact corner, serving as the alive-now evidence eight years after the register's own survey.",
+      "location_precision": "confirmed"
     }
   ]
 }

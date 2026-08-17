@@ -9,6 +9,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-17 - Lyon closes to 10: a rare street oak in Villeurbanne, register plus an independent 2025 corroboration
+
+Lyon was staged for verify with a gap of exactly 1 (9/10 live) and 425 register candidates within 20km, the cheapest possible move on the queue. Claimed, dispatched a verify pass. It found lyo_011, a pedunculate oak (Quercus robur) at the corner of Rue Viret and Rue Francis de Pressense in Villeurbanne (Gratte-Ciel/Les Poulettes), 1.4km from the existing Tete d'Or cluster. Two independent sources: the Metropole de Lyon's own PLU-H remarkable-tree register (register_id 4183, calling the species genuinely rare for Villeurbanne street planting) and a 2025-08-26 Mediacites investigative piece that independently names this exact tree at this exact corner while mapping the same database, serving as the alive-now evidence 8 years after the register's 2017 survey. No age or girth documented by either source; `age_estimate` left as "not documented" rather than invented, per Step 2. Story written directly in session since it was a single tree, not worth spinning up a full write-stories batch. `location_precision: confirmed`, photo missing (no photo hunting in a verify pass).
+
+Two leads recorded (single-source only, both close to existing trees so worth a second look if corroboration turns up): a hickory/Carya at Jardin des Chartreux (register's own species field is corrupted, "Juglans ovoida" is not a valid taxon) and a red oak at Square Gustave-Auguste Ferrie. Three Cedars of Lebanon blocked outright, all sitting in named private gardens per the register's own condition text (hard rule 10).
+
+Fixed Lyon's FAQ ("All nine stand..." to "All ten are free to see..."), caught by `scripts/preflight.py`. Build clean (1681 pages), `qa.py` clean apart from the pre-existing shallow-clone sitemap-lastmod warning, `superlatives.py` clean (371 claims). Cost: 143,775 tokens for 1 tree, logged to `data/agent-costs.json`. Claim released.
+
 ## 2026-08-16 - Guimaraes verify pass: both flagged camellia leads still fail hard rule 10
 
 Dispatched a verify pass (109k tokens) to close Guimaraes's gap of 4 (6 live, target 10), claimed via passcheck.py first. All 23 "unmined" ICNF register candidates within 20km matched, by coordinate, to trees already published or to the Casa da Penha arboretum already blocked by an earlier pass as a non-collectible inventory (not re-litigated, per "never re-litigate a decision"). That left the two leads an earlier pass had flagged "genuinely remarkable": the Camellias of Casa de Margaride (rare 18th/19th-century cultivars, Portuguese Tree of the Year 2024) and the Camellia of Casa da Covilha (the register's single oldest dated tree in the whole Guimaraes set, 300 years).
