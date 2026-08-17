@@ -78,6 +78,27 @@ NAME_FIELDS = ("name", "name_en", "name_pt", "name_it", "name_ja", "name_nl",
 # to print them turns the cheapest kind of pass back into the expensive kind.
 SPECIES_FIELDS = ("species", "species_latin", "species_scientific", "species_en",
                   "especie", "essence", "taxon", "scientific_name")
+
+
+def first_field(t, exact, prefixes=()):
+    """First non-empty value among named fields, then any field with these prefixes.
+
+    The prefix half is the whole point, and it exists because enumerating
+    spellings failed twice in two days. On 2026-08-16 Geneva's brief printed 204
+    bare coordinates because the extractor knew `species` but not
+    `species_latin`; the fix added eight spellings. On 2026-08-17 the Slovak
+    register, imported the night before, printed 31 bare coordinates because it
+    uses `name_sk` and `species_sk`, which were not among the eight. A register
+    per country means a language suffix per country, so the list can never be
+    finished by hand. Prefixes end the class instead of adding to the list.
+    """
+    for f in exact:
+        if t.get(f):
+            return t[f]
+    for k in sorted(t):
+        if any(k.startswith(p) for p in prefixes) and t.get(k):
+            return t[k]
+    return None
 AGE_FIELDS = ("age_register", "age_band", "age_estimate_years", "age_estimate",
               "age_approx", "planted", "plant_year", "year_planted")
 VITALITY_FIELDS = ("vitality", "health", "condition", "etat", "state",
@@ -170,12 +191,13 @@ def register_entries():
                 continue
             yield {
                 "lat": float(la), "lng": float(lo),
-                "name": next((t[f] for f in NAME_FIELDS if t.get(f)), None),
-                "species": next((t[f] for f in SPECIES_FIELDS if t.get(f)), None),
+                "name": first_field(t, NAME_FIELDS, ("name_", "nom_", "nombre")),
+                "species": first_field(t, SPECIES_FIELDS, ("species_", "espec", "essence")),
                 "girth_m": girth_m(t),
-                "age": next((t[f] for f in AGE_FIELDS if t.get(f)), None),
-                "vitality": next((t[f] for f in VITALITY_FIELDS if t.get(f)), None),
-                "place": ", ".join(str(t[f]) for f in PLACE_FIELDS[:6] if t.get(f)),
+                "age": first_field(t, AGE_FIELDS, ("age_", "planted")),
+                "vitality": first_field(t, VITALITY_FIELDS, ("vital", "health", "condition")),
+                "place": first_field(t, PLACE_FIELDS, ("locality", "localita", "place_",
+                                                       "address", "site_")),
                 "file": fname,
             }
 
@@ -319,6 +341,30 @@ def _genus(species):
     return out
 
 
+def _looks_latin(species):
+    """Does this string name a scientific genus, rather than a vernacular one?
+
+    Latin genus names are capitalised and ours arrive either in parentheses
+    ("Pedunculate Oak (Quercus robur)") or as a bare binomial ("Platanus
+    occidentalis"). A register's own-language vernacular does not capitalise:
+    "dub letny", "magnolia Soulangova", "lipa malolista". So a capitalised
+    candidate genus is the test, and it is deliberately cheap rather than a
+    taxonomy lookup.
+    """
+    if not species:
+        return False
+    s = str(species)
+    parens = re.findall(r"\(([^)]+)\)", s)
+    for p in parens:
+        w = re.sub(r"[^A-Za-z ]", " ", p).strip().split()
+        if w and w[0][:1].isupper():
+            return True
+    if parens:
+        return False
+    w = re.sub(r"[^A-Za-z ]", " ", s).strip().split()
+    return bool(w) and w[0][:1].isupper()
+
+
 def already_judged(lat, lng, species=None):
     """The lead or blocked entry at this spot, or None. Nearest wins.
 
@@ -339,7 +385,18 @@ def already_judged(lat, lng, species=None):
         if d > LEAD_MATCH_KM:
             continue
         mg = _genus(m.get("species"))
-        if g and mg and g.isdisjoint(mg):
+        # The veto only applies when BOTH sides are naming a Latin genus. A
+        # vernacular name in a language we are not comparing against carries no
+        # genus information, and letting it veto a coordinate match silently
+        # destroys the dedup: on 2026-08-17 the extractor learned to read the
+        # Slovak register's `species_sk`, and Bratislava's brief immediately went
+        # from 8 unmined candidates to 26, because "dub letny" shares no token
+        # with "Pedunculate Oak (Quercus robur)" and every already-judged lead
+        # started reading as fresh. A miss costs a second look; a false miss
+        # costs a whole pass rediscovering what an earlier one already rejected,
+        # which is the Rome window this mechanism exists to prevent.
+        if g and mg and _looks_latin(species) and _looks_latin(m.get("species")) \
+                and g.isdisjoint(mg):
             continue
         hits.append((d, m))
     return min(hits, key=lambda h: h[0])[1] if hits else None
