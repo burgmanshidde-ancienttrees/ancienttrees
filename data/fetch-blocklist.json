@@ -157,6 +157,12 @@
    "seen": "2026-08-17",
    "cost": "one fetch during a Vilnius verify pass; cheap, recorded so the next pass does not try it first",
    "workaround": "Lithuanian Wikipedia reproduces the municipal protected-object list with register id, address and measurements. Fetch its WIKITEXT and join on the id: that confirmed or killed 8 of 10 candidates in one pass and surfaced two delisted-dead trees the register itself does not flag. Same technique as pl.wikipedia for Krakow and Warsaw."
+  },
+  "candelaria.es": {
+   "behaviour": "TLS failure: self-signed certificate. Fast fail.",
+   "seen": "2026-08-17",
+   "cost": "one fetch during the Tenerife island pass",
+   "workaround": "none found; the Cabildo de Tenerife monumental-tree portal covers the island and OSM natural=tree nodes give the pin"
   }
  }
 }
