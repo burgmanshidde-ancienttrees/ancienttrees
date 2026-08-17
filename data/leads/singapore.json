@@ -31,6 +31,34 @@
         "HT 2010-181 Indian Rubber Tree"
       ],
       "reason": "Fort Canning already carries 5 published/shipped trees (Rain Tree, Madras Thorn, Tamalan, Terap, Earpod). Most remaining Fort Canning register rows duplicate species already represented on the page; Sea Beam/Merbatu and Bacang would add real diversity if a future pass wants to deepen this single park further."
+    },
+    {
+      "note": "2026-08-17 deepen pass (verify): shipped 8 trees to data/research/singapore-verified.json, sgp_011-sgp_018, all from the Singapore Botanic Gardens cluster (Lawn E/H/B/S, Orchid Plaza, Sundial Garden, Ginger Garden, Melati Gate, Swan Lake, Tanglin Entrance, Economic Garden). Stopped at 8 per the ~40 minute time-box, not because candidates ran out. 227 of 254 register candidates remain UNMINED after this pass."
+    },
+    {
+      "cluster": "Botanic Gardens, more Lawn H/B/E candidates not yet fetched",
+      "candidates": [
+        "HT 2010-183 Marsh Pulai (Alstonia pneumatophora), Lawn H",
+        "HT 2012-191 Jamuju (Dacrycarpus imbricatus), Lawn H beside the Marsh Pulai",
+        "HT 2012-201 Mountain Teak (Podocarpus neriifolius), Lawn B",
+        "HT 2013-218 Temak (Anthoshorea roxburghii), Lawn B",
+        "HT 2013-219 Snake Tree (Stereospermum fimbriatum), Lawn B",
+        "HT 2013-214 / HT 2013-215 Monkey Pot Tree (Lecythis pisonis) pair, Lawn H, ~20m apart from each other; page for 2013-215 fetched this pass but NOT shipped because the 1928 Kew planting date in its text is ambiguous about whether it belongs to this pair or to the separate Lawn E specimen (HT 2011-185) -- a bridge-claim risk, needs a cleaner source or a plain non-dated entry before it ships",
+        "HT 2016-280 / HT 2012-196 / HT 2012-193 Kempas and Mengkulang and Kapur, all clustered at Lawn O near a shipped Kapok, ~200-300m from the Lawn E/H core",
+        "HT 2013-212 Senegal Mahogany (Khaya senegalensis), Lawn B",
+        "HT 2014-231 West Indian Locust Tree (Hymenaea courbaril), Corner House Lawn",
+        "HT 2012-189 Putat Laut (Barringtonia asiatica), Healing Garden"
+      ],
+      "reason": "Not evidence-rejected, simply not reached in this pass's ~40 minute window. All sit within the same walkable Botanic Gardens core as the 8 shipped this pass (roughly Lawn A to Lawn S, under 1km) and would tighten the cluster further before it needs to spread to a second walk."
+    },
+    {
+      "cluster": "Outside Botanic Gardens, per the brief but not reached this pass",
+      "candidates": [
+        "83 register entries with empty location_text still carry coordinates; their individual NParks pages need fetching to write an honest access/transport line before any can ship",
+        "Connaught Drive: 19 register entries along one drive (the Padang); the brief says take at most 1-2 only if a source singles one out individually -- none checked this pass",
+        "A second Pulau Ubin tree beyond the already-published Mangrove Apples (sgp_007) would need a boat-transport line written honestly, per the brief; none checked this pass"
+      ],
+      "reason": "Time-boxed out. The Botanic Gardens spine was the higher-value target per the brief's own framing and absorbed the whole window."
     }
   ],
   "blocked": []
