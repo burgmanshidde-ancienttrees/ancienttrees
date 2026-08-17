@@ -9,6 +9,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-17 - Graz closes to 10: the Eggenberg lead from this morning's pass pays off
+
+Second Graz verify pass, closing the gap from 8 to 10 using the Eggenberg Schlosspark lead the first pass had already scouted and left in `data/leads/graz.json`. Of ten designated trees at one address inside the UNESCO World Heritage palace park (5 planes, 4 Weymouth pines, 1 copper beech), only two carried individual documentation strong enough to ship: a Weymouth pine with a real 2016 field measurement (girth 370cm) and a copper beech corroborated by a GPS-tagged 2014 Commons photo matching the register point exactly. The other eight share an address and a 1979 protection date but no individuating record, correctly left as one avenue rather than eight near-identical entries, per the collectible-point rule. Both new trees are paid entry (the park charges), the first exception to Graz's otherwise free page, stated honestly in `access` and in the FAQ.
+
+Updated intro, meta_description, question_context and all four FAQ answers for the ten-tree count and the two-cluster structure. Build clean (1704 pages), qa.py clean apart from the pre-existing sitemap warning, superlatives.py clean. Cost: 128,178 tokens verify for 2 trees. Claim released.
+
 ## 2026-08-17 - Warsaw's Sowinski's Linden retired: officially delisted as dead since 2012, published anyway on an unchecked listicle
 
 A verify pass dispatched to close Warsaw's gap of 5 (register: Poland's national GDOS list carries almost no metadata, 3259 points near Warsaw, solved with the same Polish-Wikipedia join technique that worked for Krakow on 2026-08-16) surfaced something more important than new supply: the Wikipedia reproduction of Warsaw's own official register states, for the monument named "Lipa Sowinskiego" at Wola/ul. Wolska (the fortification embankment), that it was **blown down by wind in 1986, searched for and not found in a 2004 field survey, and formally delisted in 2012**. That location matches already-published war_003 (Sowinski's Linden, Park Sowinskiego, the Reduta Wolska embankment) closely enough to be the same monument.
