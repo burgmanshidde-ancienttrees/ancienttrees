@@ -85,16 +85,40 @@ def queue():
     return trees if isinstance(trees, dict) else {t.get("id"): t for t in trees}
 
 
-def names_match(tree_name, species, title):
-    """How strongly a filename names this tree. 0 means do not bother looking."""
-    low = title.lower()
-    if any(bad in low for bad in NOT_A_TREE) or ARCHIVAL.search(low):
+def names_match(tree, cand):
+    """How likely this file actually shows THIS tree. 0 means do not look.
+
+    The weighting is taken from scripts/photo_shortlist.py, which a night run
+    wrote independently the same morning this file was written; two tools for
+    one job is the disease this project keeps catching, so that one was folded
+    in here and deleted. Its insight is the part worth keeping: a picture
+    hanging off the tree's own Wikidata item was attached by somebody who knew
+    which tree they meant, and that is worth far more than any filename.
+    """
+    title = str(cand.get("title") or cand.get("file") or "").lower()
+    if any(bad in title for bad in NOT_A_TREE) or ARCHIVAL.search(title):
         return 0
-    words = {w for w in re.split(r"[^a-zà-ÿ]+", (tree_name or "").lower())
-             if len(w) > 3 and w not in GENERIC}
-    sp = {w for w in re.split(r"[^a-zà-ÿ]+", (species or "").lower()) if len(w) > 3}
-    return 2 * len(words & set(re.split(r"[^a-zà-ÿ]+", low))) + \
-        len(sp & set(re.split(r"[^a-zà-ÿ]+", low)))
+    cats = str(cand.get("cats") or "").lower()
+    src = str(cand.get("source") or "").lower()
+    words = lambda s: {w for w in re.split(r"[^a-zà-ÿ]+", (s or "").lower())
+                       if len(w) >= 4} - GENERIC
+    score = 0.0
+    if "wikidata" in src:
+        score += 60
+    if "inat" in src:
+        score += 12
+    name_words = words(tree.get("name"))
+    score += 25 * sum(1 for w in name_words if w in title)
+    score += 8 * sum(1 for w in name_words if w in cats)
+    score += 6 * sum(1 for w in words(tree.get("species")) if w in title)
+    # A whole-scene photograph has the tree in it somewhere and is not of it.
+    for bad in ("panorama", "aerial", "skyline", "statue", "church of",
+                "monument to", "street", "square", "bridge", "night", "snow"):
+        if bad in title:
+            score -= 12
+    if cand.get("lat") is not None:
+        score += 4        # a geotag is what settles which trunk it is
+    return max(score, 0)
 
 
 # Hidde, 2026-08-17: "focus should be first get it to +5 trees than get photos".
@@ -118,7 +142,7 @@ def shortlist(limit):
         best = None
         for cand in (entry.get("candidates") or []):
             title = str(cand.get("title") or cand.get("file") or "")
-            s = names_match(entry.get("name"), cand.get("species"), title)
+            s = names_match(entry, cand)
             if s and (best is None or s > best[0]):
                 best = (s, title, cand.get("licence"))
         if best:
@@ -173,7 +197,7 @@ def main():
         return 0
     print("  %-4s %-22s %-30s %s" % ("hit", "city", "tree", "candidate"))
     for score, trees, slug, tid, name, title, lic in rows:
-        print("  [%d]  %-22s %-30s %s  %s"
+        print("  [%3.0f] %-22s %-30s %s  %s"
               % (score, "%s (%d)" % (slug, trees), name[:30], title[:52], lic or ""))
     print("\n  For each: fetch it, run photo_light.py, LOOK at it, and check it is")
     print("  THIS tree and not another one in the same park. A geotag settles that")

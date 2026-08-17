@@ -235,8 +235,41 @@
   {
    "place": "Israel",
    "country": "Israel",
-   "status": "stalled",
-   "note": "Probed twice, 2026-08-16, in English and Hebrew. No heritage-tree dataset surfaced on data.gov.il and the Nature and Parks Authority publishes reserves and parks rather than individual trees; KKL-JNF material is editorial. Israel does have a legal category of declared natural monuments which can cover single trees, and THAT decree list is the specific thing still unchecked. Not resolved."
+   "status": "blocked",
+   "note": "OUT OF FOCUS (Hidde, 2026-08-16). Two probes found no heritage-tree dataset on data.gov.il; the declared natural-monument decree list was the one thing left unchecked and is not worth checking while Israel is out of scope. Kept as a record so nobody re-opens it by accident."
   }
- ]
+ ],
+ "out_of_focus": {
+  "note": "Regions Hidde ruled out of focus on 2026-08-16: \"israel africa india and russia ar out of focus\". Read by scripts/scout_next.py, which skips them so --target never points there and no run spends a window scouting them. This is a SCOPE decision, not a judgement about the trees: the queue still ranks these cities by demand, and nothing published is removed. Reversing it means deleting a line here.",
+  "countries": [
+   "Israel",
+   "India",
+   "Russia"
+  ],
+  "regions": [
+   "Africa"
+  ],
+  "africa_countries": [
+   "South Africa",
+   "Morocco",
+   "Egypt",
+   "Kenya",
+   "Tanzania",
+   "Tunisia",
+   "Namibia",
+   "Ethiopia",
+   "Ghana",
+   "Senegal",
+   "Uganda",
+   "Nigeria",
+   "Algeria",
+   "Zimbabwe",
+   "Botswana",
+   "Zambia",
+   "Mozambique",
+   "Rwanda",
+   "Madagascar"
+  ],
+  "affects": "3 ranked cities as of 2026-08-16: Jerusalem (#51), Tel Aviv (#143), Cape Town (#171). Jerusalem's half-finished Israel scout is closed by this rather than left stalled."
+ }
 }
