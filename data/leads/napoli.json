@@ -1,192 +1,192 @@
 {
- "city": "Naples",
- "country": "Italy",
- "city_slug": "naples",
- "note": "From the 2026-08-05 register-first pass on the MASAF national register (53 entries for comune Napoli) plus Campania's regional register. Leads failed only our evidence bar, the count, or the walkable-cluster test; blocked can never ship as they stand. The register's 53 entries are not a count of Naples' monumental trees, only of what is registered. Updated 2026-08-05 by the Orto Botanico deepening pass, which added five trees (nap_013 to nap_017) and overturned this file's earlier belief that the Orto Botanico required booking.",
- "leads": [
-  {
-   "name": "The False Kapok of the Orto Botanico",
-   "species": "Ceiba speciosa (Chorisia insignis)",
-   "lat": 40.8612,
-   "lng": 14.26219,
-   "status": "promoted",
-   "why": "PUBLISHED 2026-08-05 as nap_013. The blocker recorded here was wrong: this pass checked the garden's own visiting page and entry is free, walk-in and needs NO booking (Mon/Wed/Fri 9-14, Tue/Thu 9-16, closed weekends). The booking restriction that kept the whole Orto Botanico off the site did not exist. It also now carries the only photo found this pass, CC BY on iNaturalist."
-  },
-  {
-   "name": "The Orto Botanico cluster (resolved 2026-08-05)",
-   "species": "Nolina longifolia 560 cm, Quercus crenata 440 cm, Eucalyptus globulus 440 cm, Ginkgo biloba 300 cm, Jubaea chilensis 250 cm, Brahea roezlii 190 cm",
-   "lat": 40.86118,
-   "lng": 14.2623,
-   "status": "promoted",
-   "why": "RESOLVED. Of the nine registered Orto Botanico entries, five shipped as the second Naples walk (nap_013 Ceiba speciosa, nap_014 Ginkgo biloba, nap_015 Quercus crenata, nap_016 Eucalyptus globulus, nap_017 Jubaea chilensis), all inside about 150 m. Two remain leads for the specific reasons below (Nolina, Brahea) and two are blocked as group entries. The second source that was thought to need finding tree by tree turned out to be free: MASAF and the Campania schede 160-168 are independent records and they agree on species, girth, height and position to sub-metre on every specimen."
-  },
-  {
-   "name": "The Cedar of Lebanon of the Principessa Jolanda Gardens",
-   "species": "Cedrus libani",
-   "lat": 40.866463,
-   "lng": 14.247958,
-   "status": "lead",
-   "why": "418 cm and 18 m, agreed exactly by the national register and Campania's regional register (scheda 23), whose coordinates fall 20 m apart. The gardens were built by Antonio Niccolini between 1832 and 1836, so the tree is probably about 190 years old, but no source dates the tree itself. Held back for one specific reason: a monumental plane on the same staircase was destroyed by lightning in August 2022 (see blocked), and no source published since then confirms this cedar still stands. Verify liveness and it belongs on the page, 350 m west of the Porta Grande."
-  },
-  {
-   "name": "The Camphor of the Principessa Jolanda Gardens",
-   "species": "Cinnamomum camphora",
-   "lat": 40.86683,
-   "lng": 14.24794,
-   "status": "lead",
-   "why": "388 cm in the national register. Corroborated only loosely, by a gardening site noting that a camphor and a cedar in these gardens are still monumental, with no date on the claim. Same liveness doubt as the cedar above after the 2022 lightning strike on the staircase plane. Also a fourth camphor would make the page repetitive."
-  },
-  {
-   "name": "The Plane of the Pheasantry",
-   "species": "Platanus acerifolia",
-   "lat": 40.876389,
-   "lng": 14.249167,
-   "status": "lead",
-   "why": "Inside the Real Bosco, on the route between the Garden of the Princes and the Real Fruttiera, so it would sit on the walk. Campania's regional register (scheda 250) dates it at 200 years and places it isolated in a circular plot west of the pheasantry, reached from the Porta Miano. Blocked from publication by an unresolved conflict: the regional register gives 170 cm girth and 25 m height, the national register gives 430 cm and 35 m for the same coordinate. A 2.5x disagreement on girth is too large to publish either way, and one measurement is probably a diameter or a different tree."
-  },
-  {
-   "name": "The Magnolia of the Reggia di Capodimonte",
-   "species": "Magnolia grandiflora",
-   "lat": 40.87666,
-   "lng": 14.25056,
-   "status": "lead",
-   "why": "540 cm girth and 19 m, the fourth largest registered tree in Naples and inside the free park on the northern walk. Single-sourced: the national register only, and the museum's own page on its monumental trees does not include it. It would also be the one tree here with a real seasonal peak, the large cream flowers in late spring, so it is worth a second source hunt."
-  },
-  {
-   "name": "The Camphor of the Sant'Andrea delle Dame Cloister",
-   "species": "Cinnamomum camphora",
-   "lat": 40.85257,
-   "lng": 14.25249,
-   "status": "lead",
-   "why": "500 cm and 25 m in the cloister of a sixteenth century convent now part of the university medical faculty, in the historic centre 1.5 km south of Capodimonte. Sacred ground, exactly the kind of site worth searching. Held back on two counts: single-sourced, and cloister access inside a working university building is unconfirmed, which hard rule 10 says means leave it out until someone establishes that a visitor may walk in."
-  },
-  {
-   "name": "The Camphor of the Accademia di Belle Arti Cloister",
-   "species": "Cinnamomum camphora",
-   "lat": 40.85175,
-   "lng": 14.25118,
-   "status": "lead",
-   "why": "300 cm and 28 m, tall for its girth, in the cloister of the fine arts academy. Same two problems as Sant'Andrea delle Dame: single-sourced and unconfirmed public access to an institutional courtyard."
-  },
-  {
-   "name": "The Podocarpus of Piazza Cavour",
-   "species": "Podocarpus macrophyllus",
-   "lat": 40.85449,
-   "lng": 14.25307,
-   "status": "lead",
-   "why": "242 cm and 25 m on a fully public square in the centre, so access is not the issue. Single-sourced in the national register, and it would sit alone 1.5 km from the Capodimonte cluster with nothing to walk to. A candidate for a future historic-centre cluster with the two cloister camphors, if their access resolves."
-  },
-  {
-   "name": "The Eucalyptus of Piazza Vittoria",
-   "species": "Eucalyptus camaldulensis",
-   "lat": 40.83339,
-   "lng": 14.23525,
-   "status": "lead",
-   "why": "676 cm, 25 m, the third largest registered tree in Naples, on the Villa Comunale seafront with three registered oriental planes (439, 428 and 412 cm) within 250 m of it. That is a genuine second walkable cluster on the waterfront, 4 km south of Capodimonte, and probably the best next Naples pass after the Orto Botanico. All four are currently single-sourced."
-  },
-  {
-   "name": "The Phytolacca of Via Manzoni",
-   "species": "Phytolacca dioica",
-   "lat": 40.81108,
-   "lng": 14.19794,
-   "status": "lead",
-   "why": "627 cm and only 10 m tall, the ombu, a South American giant herb rather than a true tree, which builds an enormous swollen soft-wooded base. Visually one of the strangest things in the register. Single-sourced, and out at Posillipo with nothing else near it."
-  },
-  {
-   "name": "The Nolina of the Orto Botanico",
-   "species": "Nolina / Beaucarnea, species disputed",
-   "lat": 40.861058,
-   "lng": 14.261711,
-   "status": "lead",
-   "why": "560 cm at the base and 4 m tall, the second widest registered trunk in the whole garden and visually the strangest thing in it, a huge swollen succulent foot. Held back on one point only, and it is the species. MASAF calls it Nolina longifolia, Campania scheda 163 calls it Nolina recurvata, and those are two different plants, not two names for one. Both are now placed in Beaucarnea and both are Italian 'pianta mangiafumo', so the common name cannot break the tie either. The garden's own desert and arboretum pages do not list it at all, so there is no third opinion online. Everything else verifies: both registers give the same 560 cm at the same point. Publishing genus-only was considered and rejected, since no entry in the corpus does that and hard rule 9 keys the species pages on the binomial. To resolve: read the plant label on site, or ask the garden. Then it ships."
-  },
-  {
-   "name": "The Blue Mexican Palm of the Orto Botanico",
-   "species": "Brahea roezlii",
-   "lat": 40.861089,
-   "lng": 14.26175,
-   "status": "lead",
-   "why": "190 cm and 4 m, registered by both MASAF (33/F839/NA/15) and Campania (scheda 164) in agreement. Left out of the walk on merit rather than evidence: it is the smallest of the seven individually registered specimens, it would be a third palm on a walk that already has the Jubaea, and it says nothing the Jubaea does not say better. One loose end if it is ever picked up: the registers call it Brahea roezlii while the garden's own palmeto page lists only Brahea armata and Brahea edulis, and roezlii is usually treated as a form of armata."
-  }
- ],
- "blocked": [
-  {
-   "name": "The Plane of the Principessa Jolanda Staircase",
-   "species": "Platanus orientalis",
-   "lat": 40.86681,
-   "lng": 14.24842,
-   "reason": "Dead. A century-old plane on the Scale della Principessa Jolanda was split in half by lightning and collapsed into the road during the storms of 23 to 24 August 2022, reported by the III Municipality councillor Carlo Restaino with photographs. The register still lists it at 396 cm. This is the monumental plane that stood at the centre of the staircase where the original design called for an obelisk."
-  },
-  {
-   "name": "The Citrus Grove of the Reggia di Capodimonte",
-   "species": "Citrus spp",
-   "lat": 40.87939,
-   "lng": 14.26065,
-   "reason": "Not a collectible point. The register files it as 'Insieme omogeneo di Citrus spp', a whole orchard rather than one tree, so there is no trunk to stand in front of. Note that the live city file publishes this as nap_006, 'The Historic Citrus Grove of the Bourbons', which fails the one-identifiable-tree test and should be retired."
-  },
-  {
-   "name": "The Canary Palms of the Mostra d'Oltremare",
-   "species": "Phoenix theophrasti",
-   "lat": 40.8233,
-   "lng": 14.18623,
-   "reason": "Not a collectible point. Registered as 'Insieme omogeneo', a group planting, not an individual tree."
-  },
-  {
-   "name": "The Ficus Group of the Accademia di Belle Arti Cloister",
-   "species": "Ficus macrophylla",
-   "lat": 40.85171,
-   "lng": 14.25128,
-   "reason": "Not a collectible point. Registered as 'Insieme omogeneo di Ficus macrophylla', and additionally inside an institutional cloister with unconfirmed public access."
-  },
-  {
-   "name": "The Bird of Paradise Group at the Ospedale degli Incurabili",
-   "species": "Strelitzia reginae",
-   "lat": 40.85339,
-   "lng": 14.25387,
-   "reason": "Not a collectible point and not a tree. Registered as 'Insieme omogeneo di Strelitzia reginae', a bed of herbaceous plants, inside a hospital complex."
-  },
-  {
-   "name": "The Oriental Planes of the Orto Botanico, Via Foria",
-   "species": "Platanus orientalis",
-   "lat": 40.85709,
-   "lng": 14.2591,
-   "reason": "Not a collectible point. Registered as 'Insieme omogeneo di Platanus orientalis', an avenue planting along Via Foria."
-  },
-  {
-   "name": "The Washingtonia Group of the Sant'Andrea delle Dame Cloister",
-   "species": "Washingtonia robusta",
-   "lat": 40.85257,
-   "lng": 14.25249,
-   "reason": "Not a collectible point. Registered as 'Insieme omogeneo di Washingtonia robusta', a group planting, in a cloister with unconfirmed access."
-  },
-  {
-   "name": "The Cedar and Palm of the Palazzo Carbonelli di Letino",
-   "species": "Cedrus libani, Phoenix canariensis",
-   "lat": 40.89464,
-   "lng": 14.25865,
-   "reason": "Private ground. Both stand in the garden of a private palazzo on Corso Secondigliano with no evidence it is open to visitors, so hard rule 10 excludes them."
-  },
-  {
-   "name": "The Camphor of Miano, Via del Cimitero 1",
-   "species": "Cinnamomum camphora",
-   "lat": 40.88904,
-   "lng": 14.25549,
-   "reason": "Access unconfirmed and address-level only. A 454 cm camphor at a numbered street address by a cemetery, with no source establishing whether it stands on public ground or in a private plot. Leave it out until that resolves."
-  },
-  {
-   "name": "The Pine of Posillipo (live nap_008)",
-   "species": "Pinus pinea",
-   "lat": 40.828,
-   "lng": 14.2173,
-   "reason": "Already published and should not have been. The live city file dates it 'planted 1995', which makes it a 31-year-old tree on a site about ancient trees, and its pin is approximate. Not in any register. Flagged here so a merge does not carry it forward."
-  },
-  {
-   "name": "The Canary Palm Avenue of the Orto Botanico",
-   "species": "Phoenix canariensis",
-   "lat": 40.859764,
-   "lng": 14.262289,
-   "status": "blocked",
-   "reason": "Not a collectible point. Registered as 'Insieme omogeneo' by MASAF (29/F839/NA/15) and as a 'filare omogeneo' by Campania (scheda 160), meaning a row of palms sharing one record with a 213 cm average girth rather than a measured individual. There is no single trunk to stand at, which is the La Rambla test. The avenue is worth walking past on the way to the trees that did ship; it is not an entry."
-  }
- ]
+  "city": "Naples",
+  "country": "Italy",
+  "city_slug": "naples",
+  "note": "From the 2026-08-05 register-first pass on the MASAF national register (53 entries for comune Napoli) plus Campania's regional register. Leads failed only our evidence bar, the count, or the walkable-cluster test; blocked can never ship as they stand. The register's 53 entries are not a count of Naples' monumental trees, only of what is registered. Updated 2026-08-05 by the Orto Botanico deepening pass, which added five trees (nap_013 to nap_017) and overturned this file's earlier belief that the Orto Botanico required booking.",
+  "leads": [
+    {
+      "name": "The False Kapok of the Orto Botanico",
+      "species": "Ceiba speciosa (Chorisia insignis)",
+      "lat": 40.8612,
+      "lng": 14.26219,
+      "status": "promoted",
+      "why": "PUBLISHED 2026-08-05 as nap_013. The blocker recorded here was wrong: this pass checked the garden's own visiting page and entry is free, walk-in and needs NO booking (Mon/Wed/Fri 9-14, Tue/Thu 9-16, closed weekends). The booking restriction that kept the whole Orto Botanico off the site did not exist. It also now carries the only photo found this pass, CC BY on iNaturalist."
+    },
+    {
+      "name": "The Orto Botanico cluster (resolved 2026-08-05)",
+      "species": "Nolina longifolia 560 cm, Quercus crenata 440 cm, Eucalyptus globulus 440 cm, Ginkgo biloba 300 cm, Jubaea chilensis 250 cm, Brahea roezlii 190 cm",
+      "lat": 40.86118,
+      "lng": 14.2623,
+      "status": "promoted",
+      "why": "RESOLVED. Of the nine registered Orto Botanico entries, five shipped as the second Naples walk (nap_013 Ceiba speciosa, nap_014 Ginkgo biloba, nap_015 Quercus crenata, nap_016 Eucalyptus globulus, nap_017 Jubaea chilensis), all inside about 150 m. Two remain leads for the specific reasons below (Nolina, Brahea) and two are blocked as group entries. The second source that was thought to need finding tree by tree turned out to be free: MASAF and the Campania schede 160-168 are independent records and they agree on species, girth, height and position to sub-metre on every specimen."
+    },
+    {
+      "name": "The Cedar of Lebanon of the Principessa Jolanda Gardens",
+      "species": "Cedrus libani",
+      "lat": 40.866463,
+      "lng": 14.247958,
+      "status": "promoted",
+      "why": "PROMOTED this pass (2026-08-17) as nap_018. Liveness resolved: the Capodimonte museum's own current page 'Un giardino storico' names the cedar among specimens standing today, independent of the 2022 storm that took a nearby plane. No age documented; flagged for that only. Previously: 418 cm and 18 m, agreed exactly by the national register and Campania's regional register (scheda 23), whose coordinates fall 20 m apart. The gardens were built by Antonio Niccolini between 1832 and 1836, so the tree is probably about 190 years old, but no source dates the tree itself. Held back for one specific reason: a monumental plane on the same staircase was destroyed by lightning in August 2022 (see blocked), and no source published since then confirms this cedar still stands. Verify liveness and it belongs on the page, 350 m west of the Porta Grande."
+    },
+    {
+      "name": "The Camphor of the Principessa Jolanda Gardens",
+      "species": "Cinnamomum camphora",
+      "lat": 40.86683,
+      "lng": 14.24794,
+      "status": "lead",
+      "why": "388 cm in the national register. Corroborated only loosely, by a gardening site noting that a camphor and a cedar in these gardens are still monumental, with no date on the claim. Same liveness doubt as the cedar above after the 2022 lightning strike on the staircase plane. Also a fourth camphor would make the page repetitive."
+    },
+    {
+      "name": "The Plane of the Pheasantry",
+      "species": "Platanus acerifolia",
+      "lat": 40.876389,
+      "lng": 14.249167,
+      "status": "lead",
+      "why": "Inside the Real Bosco, on the route between the Garden of the Princes and the Real Fruttiera, so it would sit on the walk. Campania's regional register (scheda 250) dates it at 200 years and places it isolated in a circular plot west of the pheasantry, reached from the Porta Miano. Blocked from publication by an unresolved conflict: the regional register gives 170 cm girth and 25 m height, the national register gives 430 cm and 35 m for the same coordinate. A 2.5x disagreement on girth is too large to publish either way, and one measurement is probably a diameter or a different tree."
+    },
+    {
+      "name": "The Magnolia of the Reggia di Capodimonte",
+      "species": "Magnolia grandiflora",
+      "lat": 40.87666,
+      "lng": 14.25056,
+      "status": "lead",
+      "why": "540 cm girth and 19 m, the fourth largest registered tree in Naples and inside the free park on the northern walk. Single-sourced: the national register only, and the museum's own page on its monumental trees does not include it. It would also be the one tree here with a real seasonal peak, the large cream flowers in late spring, so it is worth a second source hunt."
+    },
+    {
+      "name": "The Camphor of the Sant'Andrea delle Dame Cloister",
+      "species": "Cinnamomum camphora",
+      "lat": 40.85257,
+      "lng": 14.25249,
+      "status": "lead",
+      "why": "500 cm and 25 m in the cloister of a sixteenth century convent now part of the university medical faculty, in the historic centre 1.5 km south of Capodimonte. Sacred ground, exactly the kind of site worth searching. Held back on two counts: single-sourced, and cloister access inside a working university building is unconfirmed, which hard rule 10 says means leave it out until someone establishes that a visitor may walk in."
+    },
+    {
+      "name": "The Camphor of the Accademia di Belle Arti Cloister",
+      "species": "Cinnamomum camphora",
+      "lat": 40.85175,
+      "lng": 14.25118,
+      "status": "lead",
+      "why": "300 cm and 28 m, tall for its girth, in the cloister of the fine arts academy. Same two problems as Sant'Andrea delle Dame: single-sourced and unconfirmed public access to an institutional courtyard."
+    },
+    {
+      "name": "The Podocarpus of Piazza Cavour",
+      "species": "Podocarpus macrophyllus",
+      "lat": 40.85449,
+      "lng": 14.25307,
+      "status": "promoted",
+      "why": "PROMOTED this pass (2026-08-17) as nap_019. Second source found: a 2018 CC BY-SA Wikimedia Commons photo (Wikidata Q55741304) at matching coordinates, viewed directly and confirmed as the standing tree, not the separate fallen 'Podocarpo sdraiato' documented nearby in a 2022 Napoli a Piedi article. No age documented; flagged for that only. Previously: 242 cm and 25 m on a fully public square in the centre, so access is not the issue. Single-sourced in the national register, and it would sit alone 1.5 km from the Capodimonte cluster with nothing to walk to. A candidate for a future historic-centre cluster with the two cloister camphors, if their access resolves."
+    },
+    {
+      "name": "The Eucalyptus of Piazza Vittoria",
+      "species": "Eucalyptus camaldulensis",
+      "lat": 40.83339,
+      "lng": 14.23525,
+      "status": "promoted",
+      "why": "PROMOTED this pass (2026-08-17) as nap_020. Second source found: Campania regional register scheda 18 agrees exactly with MASAF on girth (676 cm), height (25 m) and coordinates. No age documented; flagged for that only. Previously: 676 cm, 25 m, the third largest registered tree in Naples, on the Villa Comunale seafront with three registered oriental planes (439, 428 and 412 cm) within 250 m of it. That is a genuine second walkable cluster on the waterfront, 4 km south of Capodimonte, and probably the best next Naples pass after the Orto Botanico. All four are currently single-sourced."
+    },
+    {
+      "name": "The Phytolacca of Via Manzoni",
+      "species": "Phytolacca dioica",
+      "lat": 40.81108,
+      "lng": 14.19794,
+      "status": "lead",
+      "why": "627 cm and only 10 m tall, the ombu, a South American giant herb rather than a true tree, which builds an enormous swollen soft-wooded base. Visually one of the strangest things in the register. Single-sourced, and out at Posillipo with nothing else near it."
+    },
+    {
+      "name": "The Nolina of the Orto Botanico",
+      "species": "Nolina / Beaucarnea, species disputed",
+      "lat": 40.861058,
+      "lng": 14.261711,
+      "status": "lead",
+      "why": "560 cm at the base and 4 m tall, the second widest registered trunk in the whole garden and visually the strangest thing in it, a huge swollen succulent foot. Held back on one point only, and it is the species. MASAF calls it Nolina longifolia, Campania scheda 163 calls it Nolina recurvata, and those are two different plants, not two names for one. Both are now placed in Beaucarnea and both are Italian 'pianta mangiafumo', so the common name cannot break the tie either. The garden's own desert and arboretum pages do not list it at all, so there is no third opinion online. Everything else verifies: both registers give the same 560 cm at the same point. Publishing genus-only was considered and rejected, since no entry in the corpus does that and hard rule 9 keys the species pages on the binomial. To resolve: read the plant label on site, or ask the garden. Then it ships."
+    },
+    {
+      "name": "The Blue Mexican Palm of the Orto Botanico",
+      "species": "Brahea roezlii",
+      "lat": 40.861089,
+      "lng": 14.26175,
+      "status": "lead",
+      "why": "190 cm and 4 m, registered by both MASAF (33/F839/NA/15) and Campania (scheda 164) in agreement. Left out of the walk on merit rather than evidence: it is the smallest of the seven individually registered specimens, it would be a third palm on a walk that already has the Jubaea, and it says nothing the Jubaea does not say better. One loose end if it is ever picked up: the registers call it Brahea roezlii while the garden's own palmeto page lists only Brahea armata and Brahea edulis, and roezlii is usually treated as a form of armata."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "The Plane of the Principessa Jolanda Staircase",
+      "species": "Platanus orientalis",
+      "lat": 40.86681,
+      "lng": 14.24842,
+      "reason": "Dead. A century-old plane on the Scale della Principessa Jolanda was split in half by lightning and collapsed into the road during the storms of 23 to 24 August 2022, reported by the III Municipality councillor Carlo Restaino with photographs. The register still lists it at 396 cm. This is the monumental plane that stood at the centre of the staircase where the original design called for an obelisk."
+    },
+    {
+      "name": "The Citrus Grove of the Reggia di Capodimonte",
+      "species": "Citrus spp",
+      "lat": 40.87939,
+      "lng": 14.26065,
+      "reason": "Not a collectible point. The register files it as 'Insieme omogeneo di Citrus spp', a whole orchard rather than one tree, so there is no trunk to stand in front of. Note that the live city file publishes this as nap_006, 'The Historic Citrus Grove of the Bourbons', which fails the one-identifiable-tree test and should be retired."
+    },
+    {
+      "name": "The Canary Palms of the Mostra d'Oltremare",
+      "species": "Phoenix theophrasti",
+      "lat": 40.8233,
+      "lng": 14.18623,
+      "reason": "Not a collectible point. Registered as 'Insieme omogeneo', a group planting, not an individual tree."
+    },
+    {
+      "name": "The Ficus Group of the Accademia di Belle Arti Cloister",
+      "species": "Ficus macrophylla",
+      "lat": 40.85171,
+      "lng": 14.25128,
+      "reason": "Not a collectible point. Registered as 'Insieme omogeneo di Ficus macrophylla', and additionally inside an institutional cloister with unconfirmed public access."
+    },
+    {
+      "name": "The Bird of Paradise Group at the Ospedale degli Incurabili",
+      "species": "Strelitzia reginae",
+      "lat": 40.85339,
+      "lng": 14.25387,
+      "reason": "Not a collectible point and not a tree. Registered as 'Insieme omogeneo di Strelitzia reginae', a bed of herbaceous plants, inside a hospital complex."
+    },
+    {
+      "name": "The Oriental Planes of the Orto Botanico, Via Foria",
+      "species": "Platanus orientalis",
+      "lat": 40.85709,
+      "lng": 14.2591,
+      "reason": "Not a collectible point. Registered as 'Insieme omogeneo di Platanus orientalis', an avenue planting along Via Foria."
+    },
+    {
+      "name": "The Washingtonia Group of the Sant'Andrea delle Dame Cloister",
+      "species": "Washingtonia robusta",
+      "lat": 40.85257,
+      "lng": 14.25249,
+      "reason": "Not a collectible point. Registered as 'Insieme omogeneo di Washingtonia robusta', a group planting, in a cloister with unconfirmed access."
+    },
+    {
+      "name": "The Cedar and Palm of the Palazzo Carbonelli di Letino",
+      "species": "Cedrus libani, Phoenix canariensis",
+      "lat": 40.89464,
+      "lng": 14.25865,
+      "reason": "Private ground. Both stand in the garden of a private palazzo on Corso Secondigliano with no evidence it is open to visitors, so hard rule 10 excludes them."
+    },
+    {
+      "name": "The Camphor of Miano, Via del Cimitero 1",
+      "species": "Cinnamomum camphora",
+      "lat": 40.88904,
+      "lng": 14.25549,
+      "reason": "Access unconfirmed and address-level only. A 454 cm camphor at a numbered street address by a cemetery, with no source establishing whether it stands on public ground or in a private plot. Leave it out until that resolves."
+    },
+    {
+      "name": "The Pine of Posillipo (live nap_008)",
+      "species": "Pinus pinea",
+      "lat": 40.828,
+      "lng": 14.2173,
+      "reason": "Already published and should not have been. The live city file dates it 'planted 1995', which makes it a 31-year-old tree on a site about ancient trees, and its pin is approximate. Not in any register. Flagged here so a merge does not carry it forward."
+    },
+    {
+      "name": "The Canary Palm Avenue of the Orto Botanico",
+      "species": "Phoenix canariensis",
+      "lat": 40.859764,
+      "lng": 14.262289,
+      "status": "blocked",
+      "reason": "Not a collectible point. Registered as 'Insieme omogeneo' by MASAF (29/F839/NA/15) and as a 'filare omogeneo' by Campania (scheda 160), meaning a row of palms sharing one record with a 213 cm average girth rather than a measured individual. There is no single trunk to stand at, which is the La Rambla test. The avenue is worth walking past on the way to the trees that did ship; it is not an entry."
+    }
+  ]
 }
