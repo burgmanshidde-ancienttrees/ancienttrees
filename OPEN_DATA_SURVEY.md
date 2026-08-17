@@ -2393,3 +2393,35 @@ Estimated token usage for this pass: approximately 55k-65k tokens (portal
 search and API fetches across roughly 10 targets, four full-dataset
 downloads and imports, no photo hunting, no prose, no individual tree
 verification).
+
+## Den Haag: ~1,300 monumental trees behind the city's own tree app (2026-08-16, licence UNKNOWN)
+
+Found through Clara Visser, chair of Bomenstichting Den Haag, who answered
+batch 005 with four links. The one that matters is the Haagse bomenapp
+(`ddh.maps.arcgis.com/apps/webappviewer/index.html?id=26717c16f2ad43678a9bbcc53c90cb03`),
+whose own ArcGIS item metadata reads: **117,000 street trees, nearly 1,300
+monumental trees**, plus forest-edge trees and the Zuiderpark shrubs. The item
+names `opendata@denhaag.nl` as the access contact and links a dataset page at
+`denhaag.dataplatform.nl/#/data/0aae8124-0a0e-496b-a9d9-cd6a3c586578`.
+
+**What is settled:** the data exists, it is the municipality's own, and the
+semantic filter this project needs (monumental versus ordinary street tree) is
+a field in it rather than a judgement we have to make. We publish five trees in
+The Hague against ~1,300 designated ones, so this is the largest single-city
+gap the Dutch coverage has.
+
+**What is NOT settled, and blocks any import:** the licence. The ArcGIS item's
+licence field is empty. Do not read that as permission; an empty field is an
+unanswered question, and the standing rule is a verified open licence before
+anything is imported.
+
+**The dead end to not repeat.** The app's config points at
+`geoservices.denhaag.nl/arcgis/rest/services/V2_8_Natuur_en_milieu/Natuur_en_landschapsbeheer/MapServer`,
+which returns 404: that version is retired. The server also returns an empty
+folder and service list at its root, so the current path cannot be enumerated
+and guessing version numbers is a waste of a window. Ask instead.
+
+**Next step, one mail:** `opendata@denhaag.nl`, asking which licence the
+monumental-tree layer carries and where the current endpoint lives. That is the
+municipality's desk, not the foundation's, so it is a separate thread from
+Clara's.
