@@ -1,9 +1,6 @@
 {
- "source": "Wikidata, items that are an individual tree (Q811534 and subclasses) carrying both an image (P18) and coordinates (P625)",
- "endpoint": "https://query.wikidata.org/sparql",
- "licence": "The Wikidata FACTS are CC0. Each IMAGE keeps its own Commons licence, which photo_hunt.py looks up per file and which decides whether the photo may ship at all.",
- "fetched": "2026-08-06",
- "note": "A cache, not a register: these are not trees we publish, they are photo leads keyed to a position.",
+ "fetched": "2026-08-17",
+ "note": "union of the 2026-08-06 harvest and the 2026-08-16 wikidata_trees.py run",
  "trees": [
   {
    "qid": "Q10000159",
@@ -65722,6 +65719,102 @@
    "latitude": 53.0967,
    "longitude": 8.86956,
    "commons": "File:Horner Linde - Bremen - 2012.jpg"
+  },
+  {
+   "qid": "Q140930431",
+   "latitude": 50.007394,
+   "longitude": 12.634341,
+   "commons": "File:Lázně Kynžvart pramen Richard a Richardův dub srpen 2026.jpg"
+  },
+  {
+   "qid": "Q141064350",
+   "latitude": 51.075417,
+   "longitude": 13.756278,
+   "commons": "File:Lutherlinde Albertstadt (1).jpg"
+  },
+  {
+   "qid": "Q58017938",
+   "latitude": 49.490726,
+   "longitude": 8.462607,
+   "commons": "File:Plane tree, Innenstadt F6, Mannheim.jpg"
+  },
+  {
+   "qid": "Q141077982",
+   "latitude": 54.471058,
+   "longitude": 18.557586,
+   "commons": "File:Dąb Marysieńki, Gdyně - Orłowo, Pomořské vojvodství, Kašubsko, Polsko 02.jpg"
+  },
+  {
+   "qid": "Q141078842",
+   "latitude": 54.471949,
+   "longitude": 18.558308,
+   "commons": "File:Jesion Króla Jana, Gdynia - Orłowo, Pomořské vojvodství, Polsko 02.jpg"
+  },
+  {
+   "qid": "Q12729454",
+   "latitude": 46.16806,
+   "longitude": 22.73583,
+   "commons": "File:Gorunul lui Horea3.jpg"
+  },
+  {
+   "qid": "Q12400571",
+   "latitude": 42.500254,
+   "longitude": -7.393138,
+   "commons": "File:Sobreira de Santiorxo panel.jpg"
+  },
+  {
+   "qid": "Q138494829",
+   "latitude": 41.399814,
+   "longitude": 2.086104,
+   "commons": "File:Can Carbonell de la Muntanya P1490175.jpg"
+  },
+  {
+   "qid": "Q140954344",
+   "latitude": 43.170321,
+   "longitude": -2.606584,
+   "commons": "File:Abadiño, conjunto Gerendiaga roble y crucero.jpg"
+  },
+  {
+   "qid": "Q140967729",
+   "latitude": 43.2856,
+   "longitude": -2.20103,
+   "commons": "File:Meagako artelatza (Gipuzkoa) 2026-08-09.jpg"
+  },
+  {
+   "qid": "Q141047574",
+   "latitude": 41.377935,
+   "longitude": 2.076289,
+   "commons": "File:Xiprer de Can Modolell P1510417.jpg"
+  },
+  {
+   "qid": "Q140839738",
+   "latitude": 57.887186,
+   "longitude": 11.582178,
+   "commons": "File:Marstrands silverpoppel 2026.jpg"
+  },
+  {
+   "qid": "Q139432177",
+   "latitude": 41.010609,
+   "longitude": 28.965496,
+   "commons": "File:Beyazıt Ulu Çınarı.jpg"
+  },
+  {
+   "qid": "Q140613826",
+   "latitude": 33.946821,
+   "longitude": -117.400947,
+   "commons": "File:Chicago White Sox Redwood Tree and Low Park.jpg"
+  },
+  {
+   "qid": "Q140698450",
+   "latitude": 33.996086,
+   "longitude": -117.376351,
+   "commons": "File:Montezuma Bald Cypruss Trees Fairmount Park.jpg"
+  },
+  {
+   "qid": "Q85814522",
+   "latitude": 33.946098,
+   "longitude": -117.401753,
+   "commons": "File:Parent Navel Orange Tree Riverside.jpg"
   }
  ]
 }

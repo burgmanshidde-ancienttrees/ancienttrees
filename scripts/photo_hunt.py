@@ -63,7 +63,7 @@ QUEUE = os.path.join(ROOT, "data", "photo-queue.json")
 # tree, whatever its title says.
 FAR_KM = 25
 
-SWEEP_VERSION = 4
+SWEEP_VERSION = 5
 API = "https://commons.wikimedia.org/w/api.php"
 UA = "AncientTreesBot/1.0 (https://ancienttrees.app; photo candidate sweep)"
 OK_LICENCE = ("cc0", "cc by", "cc-by", "public domain", "pdm", "attribution")
@@ -123,7 +123,42 @@ def imageinfo(titles):
 
 
 GENERIC_TREE_WORDS = {"tree", "boom", "arbre", "arbol", "árbol", "albero", "arvore",
-                      "árvore", "baum", "drzewo", "strom", "trees", "bomen"}
+                      "árvore", "baum", "drzewo", "strom", "trees", "bomen",
+                      # Words meaning "protected natural monument", which is how
+                      # a photographer who knew what they were looking at titles
+                      # the file. These name a designation rather than a plant,
+                      # and they are the strongest signal in the whole list.
+                      "naturdenkmal", "naturdenkmale", "pomnik",
+                      "monumentale", "monumentaal", "monumental", "singular",
+                      "stablo",
+                      # And the LOCAL name of common species. The filter matched
+                      # our own English species field, so "Naturdenkmal Linde in
+                      # der Grünanlage Hallerwiese", a CC0 photograph standing 9
+                      # metres from our Nuremberg pin, was thrown away because we
+                      # file that tree as "Lime (Tilia sp.)" and the German for
+                      # lime is Linde. That is a whole class of miss, and it
+                      # falls hardest on exactly the cities where nobody writes
+                      # in English.
+                      # Only tokens of five characters or more, because
+                      # mentions() anchors just the END of a token to a word
+                      # boundary: "den" is inside "garden", "es" ends every
+                      # plural, "pin" is inside "Chopin". A four-letter plant
+                      # word buys one city and poisons the queue for all of
+                      # them, which is the same substring trap that let street
+                      # signs in as trees on 2026-08-13.
+                      "linde", "tilleul", "tiglio",
+                      "eiche", "chene", "chêne", "quercia", "roble",
+                      "buche", "hetre", "hêtre", "faggio",
+                      "platane", "platan", "platano", "plátano",
+                      "kastanie", "kastanje", "castagno", "castano", "castaño",
+                      "kasztanowiec", "esche", "frene", "frêne", "frassino",
+                      "fresno", "olivo", "oliveira", "olivier", "olijfboom",
+                      "weide", "saule", "salice", "sauce", "wierzba",
+                      "ahorn", "erable", "érable", "acero",
+                      "bouleau", "betulla", "abedul", "brzoza",
+                      "zeder", "cedre", "cèdre", "cedro", "ceder",
+                      "ginkgo", "sequoia", "magnolia", "cipresso",
+                      "cyprys", "cipres", "ciprés", "zypresse", "taxus"}
 
 
 def tree_tokens(tree):
