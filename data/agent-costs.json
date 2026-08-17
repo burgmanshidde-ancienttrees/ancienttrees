@@ -2245,6 +2245,15 @@
         "note": "STALLED at the 600s watchdog TWICE, banking nothing either time. The first attempt spent its window on a delegated sub-agent researching one park and never wrote a tree; the second was told not to delegate and to bank immediately, and still died before its first tree. Nothing recoverable.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "naples",
+        "kind": "verify",
+        "tokens": 165875,
+        "trees": 3,
+        "note": "Reached target 20 by RESOLVING three held-back leads rather than researching fresh ones: a liveness doubt settled by the Capodimonte museum's own post-restoration page, a photo identity confirmed by viewing the pixels, and a second source found. Ran 29 minutes, the longest pass today, and banked every tree as it went, which is the rule the three stalled passes were missing. Refused an untraceable 'first eucalyptus in Europe, 1805' claim that recurs across tourism sites. Tokens are the harness's measured figure, not the agent's 78k self-estimate.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
