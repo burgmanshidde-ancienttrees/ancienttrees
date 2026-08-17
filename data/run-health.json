@@ -299,6 +299,32 @@
    "cities_touched": 0,
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-08-17T23:16:55+00:00",
+   "date": "2026-08-17",
+   "run_id": "32079748572",
+   "minutes": 12.4,
+   "minutes_basis": "measured",
+   "turns": 79,
+   "denials": 17,
+   "denials_source": "permission_denials: Bash",
+   "ended": "success",
+   "tokens": 10369228,
+   "claims_held": [
+    "yakushima",
+    "krakow",
+    "rome",
+    "perugia",
+    "berlin",
+    "paris",
+    "kyoto",
+    "ottawa"
+   ],
+   "commits": 7,
+   "cities_touched": 0,
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
