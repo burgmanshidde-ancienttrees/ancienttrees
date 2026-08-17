@@ -51,6 +51,17 @@ FLAT_CONTRAST = 28
 GREY_COLOUR = 0.10
 DIM_BRIGHTNESS = 60
 BLOWN_SHARE = 0.10
+# A night shot under street lighting is monochromatic in the OPPOSITE direction
+# to a black-and-white one: sodium lamps wash the whole frame in a single
+# intense orange, so saturation goes UP while brightness stays down. The colour
+# test only ever looked for too little colour, so Delft's Sint Agathaplein "by
+# night" scored a clean OK, and only a viewing pass noticed there was no tree in
+# it. Measured 2026-08-17: that frame reads 0.83 saturation at brightness 68,
+# against 0.38 at 94 for Ferrara's bagolaro and 0.18 at 136 for Nuremberg's lime,
+# both broad daylight. Never a night shot is already the Cadiz standard; this
+# makes it a number rather than something somebody has to notice.
+LAMPLIT_COLOUR = 0.62
+LAMPLIT_BRIGHTNESS = 90
 
 
 def _bmp_pixels(path, size=64):
@@ -118,6 +129,8 @@ def verdict(s):
         bad.append("backlit: the sky is blown out and the subject is a silhouette")
     if s["brightness"] < DIM_BRIGHTNESS:
         bad.append("underexposed")
+    if s["colour"] > LAMPLIT_COLOUR and s["brightness"] < LAMPLIT_BRIGHTNESS:
+        bad.append("shot after dark under artificial light")
     if s["contrast"] < FLAT_CONTRAST:
         bad.append("flat, no separation between subject and background")
     if bad:
