@@ -145,6 +145,10 @@ def main():
             "owner_name": r.get("owner_name") or None,
             "accessibility_raw": r.get("accessibility") or None,
             "military_base": r.get("military_base") or None,
+            "coord_precision": "grid ~1.1 km, NOT tree level: the source rounds "
+                               "latitude and longitude to 2 decimal places",
+            "position_source": r.get("location_description") or r.get("location_address")
+                               or None,
             "publishable": not reasons,
             "publishable_note": "; ".join(reasons) or None,
         })
@@ -183,8 +187,17 @@ def main():
             "(2) `land_use` is a "
             "single-letter code with no codebook published beside the data, so it is "
             "carried raw and MUST NOT be decoded into an access decision by guessing. "
-            "(3) There is no age field. Girth is on 217 of the rows, so an age can be "
-            "derived where the species has a published growth rate, and it must say so."),
+            "(3) THE COORDINATES ARE NOT TREE LEVEL AND MUST NEVER "
+            "CARRY A CONFIRMED PIN. The source rounds latitude and longitude to two "
+            "decimal places, about 1.1 km, so 278 of the 339 trees share a point with at "
+            "least one other and one point in Honolulu carries 31 trees. That is coarser "
+            "than `approximate` is meant to be, which is knowing the park but not the "
+            "spot. The real locator is the text: `position_source` carries the register's "
+            "own location description, Kalakaua Park, Haili Street, Old Riverside School, "
+            "and a pin has to be geocoded from that and then said to be approximate, the "
+            "way Hiroshima's shrines were. (4) There is no age field. Girth is on 217 "
+            "rows, so an age can be derived where the species has a published growth rate, "
+            "and it must say so."),
     }
     doc["trees"] = out
     with open(OUT, "w") as fh:
