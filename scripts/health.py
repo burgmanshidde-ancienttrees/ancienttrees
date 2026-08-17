@@ -43,18 +43,27 @@ WATCHED = {
 def gh_latest(workflow):
     """(conclusion, created_at) of the newest run, or None when gh cannot say."""
     try:
+        # Five, not one, and then take the newest COMPLETED run. A run that is
+        # still going reports conclusion "", which the caller compared against
+        # None and therefore read as a failure: on 2026-08-17 this told a night
+        # run "Smoke test is  (its newest run, 0h ago). The site may be broken"
+        # while the site was fine and the deploy was simply mid-flight. The
+        # question this function answers is "did the last finished check pass",
+        # and an unfinished run has not answered it either way.
         out = subprocess.run(
-            ["gh", "run", "list", "--workflow", workflow, "-L", "1",
-             "--json", "conclusion,createdAt"],
+            ["gh", "run", "list", "--workflow", workflow, "-L", "5",
+             "--json", "conclusion,createdAt,status"],
             capture_output=True, text=True, timeout=60, cwd=ROOT)
         if out.returncode != 0:
             return None
         rows = json.loads(out.stdout or "[]")
-        if not rows:
+        done = [r for r in rows if r.get("status") == "completed"
+                and r.get("conclusion")]
+        if not done:
             return None
-        created = rows[0].get("createdAt", "")
+        created = done[0].get("createdAt", "")
         when = datetime.datetime.fromisoformat(created.replace("Z", "+00:00"))
-        return rows[0].get("conclusion"), when
+        return done[0].get("conclusion"), when
     except Exception:
         return None
 
