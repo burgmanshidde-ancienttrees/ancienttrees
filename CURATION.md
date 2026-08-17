@@ -9,6 +9,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-17 - Lisbon: a "worth it" vote on lis_005, no action needed
+
+Submission #6 (Supabase `submissions`, kind `feedback`) was a reader's "worth it" vote (thumbs up, no report chip) on lis_005, the Tipu of Jardim de São Bento, Lisbon. Unlike the Helsinki and Prague feedback rows, this carries no complaint to check against sources, just a positive signal, stored per the vote design (DECISIONS.md 2026-08-14) and shown nowhere until volume makes a count honest. Nothing to verify, nothing changed in `data/cities/lisbon.json`. Marked processed in `data/submissions-processed.json`.
+
 ## 2026-08-17 - The photo hunt for the 35 photo-less cities is measured out, and the finding is that the pictures do not exist
 
 Hidde asked for at least one photograph per city. A viewing pass worked the ranked shortlist and the result is worth recording rather than repeating: **of eight candidates judged across two sessions, two shipped.** Brisbane's Bodhi Tree and Alicante's Ficus del Passeig de Canalejas are live; one more is `held`.
