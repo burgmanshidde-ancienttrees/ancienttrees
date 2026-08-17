@@ -1,0 +1,26 @@
+{
+  "leads": [
+    {
+      "candidate": "Mt Atlas Mastic tree (Pistacia atlantica), Apesia village, Limassol",
+      "reason": "Widely called the oldest tree in Cyprus (~1500 years, ~10m tall). Two decent sources found (Cyprus Mail archive, allaboutlimassol.com survey, and cypruspost.post stamp series which independently gives circumference 6.80m, height 10m, designated 2004). NOT researched to completion this pass because it falls outside all four assigned candidates (not Marathasa oak, not Cedar Valley, not an olive, not a village-square plane/oak) and the brief capped candidates at four. Strong candidate for a follow-up pass or for filling out a Limassol-area cluster; would need a location pin (village-level only was found here too)."
+    },
+    {
+      "candidate": "The Cypress of Kathika",
+      "reason": "From the same cypruspost.post 'Centennial Trees of Cyprus' stamp-series page: Cupressus sempervirens, ~700 years old, circumference 4.35m, height 14m, designated 2017. Only one source seen this pass (the stamp page); not pursued further as it was outside the four assigned candidates. Worth a second-source check in a future pass (Paphos district register or news)."
+    },
+    {
+      "candidate": "Olive tree of Kyperounta/Kyperounda village, Limassol district",
+      "reason": "allaboutlimassol.com's Limassol survey names an 800+ year old olive in Kyperounda, officially declared a protected natural monument, trunk split into two parts around a large hollow. Only ONE genuine source found: a WebSearch summary claimed a second corroborating cyprusisland.net page gave '5m tall, perimeter 8.10m', but a direct fetch of that exact URL (cyprusisland.net/cyprus-villages/limassol/kyperounta-village) shows NO mention of any olive tree at all -- the search tool's AI summary appears to have fabricated or conflated that detail from another olive tree's data (very likely Xyliatos's, which has a nearly identical girth figure elsewhere). This is recorded here specifically as a warning: do not trust that WebSearch synthesis for this tree without re-verifying against the raw page. Blocked from cyp_00x for this pass on the two-source bar; a future pass should search Cypriot-language sources or the Kyperounda community council site directly."
+    },
+    {
+      "candidate": "Ancient olive tree of Anglisides village, Larnaca district",
+      "reason": "~800 years old, girth ~10.35m, hollow trunk, found via a Greek olive-oil trade press article (oliveoilnews.gr) and mentioned in passing by other searches. Not pursued: outside Troodos-foothills geography implied by candidate 3 (Larnaca district, lowland) and outside the four assigned candidates. Good candidate for a future Larnaca-area pass."
+    }
+  ],
+  "blocked": [
+    {
+      "candidate": "The Cedars of Cedar Valley (Cedrus brevifolia), Paphos Forest / Tripylos",
+      "reason": "NOT A COLLECTIBLE POINT. Cedar Valley is a forest stand of roughly 16,000 to 130,000 mature Cyprus cedars spread across about 2 sq km at Tripylos in the Paphos Forest (figures vary by source: Wikipedia cites 16,000 individuals >=12cm DBH in the Tripylos stand; Cedar Valley tourism copy cites ~130,000 trees across the wider valley). Extensive searching (general web search, monumentaltrees.com records page which 403'd to both WebFetch and curl with a browser UA, two attempts) found no single named, signposted or individually designated specimen tree within Cedar Valley itself, only the forest/picnic area and hiking trails (Kampos tou Livadiou). This matches the project rule directly: a forest is not an entry. Do not re-argue this in a future pass without new evidence of a specific named/signposted individual cedar (e.g. a 'largest cedar' champion tree with its own name, which was not found)."
+    }
+  ]
+}

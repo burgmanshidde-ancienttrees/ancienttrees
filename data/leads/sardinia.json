@@ -1,0 +1,178 @@
+{
+  "leads": [
+    {
+      "source": "italy-masaf.json sheet 02/A722/OG/20",
+      "name_it": "Bagolaro, Piazza Principessa di Navarra, Baunei",
+      "girth_cm": 367,
+      "latitude": 39.988408,
+      "longitude": 9.688917,
+      "reason": "Stands in the same piazza as sar_003 (the olivastro); every source treats the olive as the destination tree and this hackberry as secondary. Kept as a lead in case a future pass wants a fuller piazza ensemble."
+    },
+    {
+      "source": "italy-masaf.json sheet 03/A722/OG/20",
+      "name_it": "Carrubo, Piazza Principessa di Navarra, Baunei",
+      "girth_cm": 332,
+      "latitude": 39.989047,
+      "longitude": 9.689078,
+      "reason": "Same piazza as sar_003, same reasoning: secondary to the olive in every source found."
+    },
+    {
+      "source": "italy-masaf.json sheet 07,10/A722/OG/20",
+      "name_it": "Terebinto (Pistacia terebinthus) x2, Sisiera and Aniddai, Baunei",
+      "girth_cm": "220-233",
+      "latitude": 40.06,
+      "longitude": 9.7,
+      "reason": "Not researched this pass, time-boxed. Small girth relative to the olives/hackberries already delivered; would need its own access and remarkableness check before ranking above sar_003/004."
+    },
+    {
+      "source": "italy-masaf.json sheet 08,09/A722/OG/20",
+      "name_it": "Leccio (holm oak) x2, Semida, Baunei",
+      "girth_cm": "410-480",
+      "latitude": 40.1013,
+      "longitude": 9.5872,
+      "reason": "Not researched this pass. Remote locality, unclear public access; worth a look for a future Baunei-area pass since girth is respectable."
+    },
+    {
+      "source": "italy-masaf.json sheet 11,12/A722/OG/20",
+      "name_it": "Ginepro fenicio x2, Scala E Oggiastru and Baccu E Pigas, Baunei",
+      "girth_cm": "195-310",
+      "latitude": 40.16,
+      "longitude": 9.62,
+      "reason": "Not researched this pass. Junipers on the Golgo plateau, plausible day-trip fit with sar_004 but access and remarkableness unconfirmed."
+    },
+    {
+      "source": "italy-masaf.json, Barbagia/Mandrolisai cluster near 40.0,9.0",
+      "name_it": "Bagolaro, Funtana Figassula, Atzara",
+      "girth_cm": 438.0,
+      "latitude": 39.995831,
+      "longitude": 9.054742,
+      "reason": "Register candidate only, not individually researched this pass (time-boxed to the Luras/Baunei/Laconi clusters instead). Rural locality name suggests possible farmland; access, remarkableness and a second source all still need checking before this could ship."
+    },
+    {
+      "source": "italy-masaf.json, Barbagia/Mandrolisai cluster near 40.0,9.0",
+      "name_it": "Olivastro, Abbagadda, Atzara",
+      "girth_cm": 690.0,
+      "latitude": 39.960433,
+      "longitude": 9.018558,
+      "reason": "Register candidate only, not individually researched this pass (time-boxed to the Luras/Baunei/Laconi clusters instead). Rural locality name suggests possible farmland; access, remarkableness and a second source all still need checking before this could ship."
+    },
+    {
+      "source": "italy-masaf.json, Barbagia/Mandrolisai cluster near 40.0,9.0",
+      "name_it": "Sughera, Gunnerelia, Meana Sardo",
+      "girth_cm": 405.0,
+      "latitude": 39.928481,
+      "longitude": 9.088767,
+      "reason": "Register candidate only, not individually researched this pass (time-boxed to the Luras/Baunei/Laconi clusters instead). Rural locality name suggests possible farmland; access, remarkableness and a second source all still need checking before this could ship."
+    },
+    {
+      "source": "italy-masaf.json, Barbagia/Mandrolisai cluster near 40.0,9.0",
+      "name_it": "Pino domestico, Via Montebello, Meana Sardo",
+      "girth_cm": null,
+      "latitude": 39.942961,
+      "longitude": 9.076497,
+      "reason": "Register candidate only, not individually researched this pass (time-boxed to the Luras/Baunei/Laconi clusters instead). Rural locality name suggests possible farmland; access, remarkableness and a second source all still need checking before this could ship."
+    },
+    {
+      "source": "italy-masaf.json, Barbagia/Mandrolisai cluster near 40.0,9.0",
+      "name_it": "Roverella, Cungiaus, Meana Sardo",
+      "girth_cm": 410.0,
+      "latitude": 39.945328,
+      "longitude": 9.078839,
+      "reason": "Register candidate only, not individually researched this pass (time-boxed to the Luras/Baunei/Laconi clusters instead). Rural locality name suggests possible farmland; access, remarkableness and a second source all still need checking before this could ship."
+    },
+    {
+      "source": "italy-masaf.json, Barbagia/Mandrolisai cluster near 40.0,9.0",
+      "name_it": "Roverella, Iscari, Meana Sardo",
+      "girth_cm": 580.0,
+      "latitude": 39.949939,
+      "longitude": 9.048781,
+      "reason": "Register candidate only, not individually researched this pass (time-boxed to the Luras/Baunei/Laconi clusters instead). Rural locality name suggests possible farmland; access, remarkableness and a second source all still need checking before this could ship."
+    },
+    {
+      "source": "italy-masaf.json, Barbagia/Mandrolisai cluster near 40.0,9.0",
+      "name_it": "Carpino nero, Funtana Is Cannonis, Meana Sardo",
+      "girth_cm": null,
+      "latitude": 39.886036,
+      "longitude": 9.096175,
+      "reason": "Register candidate only, not individually researched this pass (time-boxed to the Luras/Baunei/Laconi clusters instead). Rural locality name suggests possible farmland; access, remarkableness and a second source all still need checking before this could ship."
+    },
+    {
+      "source": "italy-masaf.json, Barbagia/Mandrolisai cluster near 40.0,9.0",
+      "name_it": "Sughera, Bioria, Meana Sardo",
+      "girth_cm": 440.0,
+      "latitude": 39.944086,
+      "longitude": 9.086153,
+      "reason": "Register candidate only, not individually researched this pass (time-boxed to the Luras/Baunei/Laconi clusters instead). Rural locality name suggests possible farmland; access, remarkableness and a second source all still need checking before this could ship."
+    },
+    {
+      "source": "italy-masaf.json, Barbagia/Mandrolisai cluster near 40.0,9.0",
+      "name_it": "Frassino meridionale, Santu Luisu, Sorgono",
+      "girth_cm": 460.0,
+      "latitude": 40.032247,
+      "longitude": 9.072247,
+      "reason": "Register candidate only, not individually researched this pass (time-boxed to the Luras/Baunei/Laconi clusters instead). Rural locality name suggests possible farmland; access, remarkableness and a second source all still need checking before this could ship."
+    },
+    {
+      "source": "italy-masaf.json, Barbagia/Mandrolisai cluster near 40.0,9.0",
+      "name_it": "Roverella, Bau Andala, Sorgono",
+      "girth_cm": 516.0,
+      "latitude": 40.027264,
+      "longitude": 9.063169,
+      "reason": "Register candidate only, not individually researched this pass (time-boxed to the Luras/Baunei/Laconi clusters instead). Rural locality name suggests possible farmland; access, remarkableness and a second source all still need checking before this could ship."
+    },
+    {
+      "source": "italy-masaf.json, Barbagia/Mandrolisai cluster near 40.0,9.0",
+      "name_it": "Sughera, Bardaccolo, Sorgono",
+      "girth_cm": 510.0,
+      "latitude": 40.029133,
+      "longitude": 9.067836,
+      "reason": "Register candidate only, not individually researched this pass (time-boxed to the Luras/Baunei/Laconi clusters instead). Rural locality name suggests possible farmland; access, remarkableness and a second source all still need checking before this could ship."
+    },
+    {
+      "source": "italy-masaf.json, Barbagia/Mandrolisai cluster near 40.0,9.0",
+      "name_it": "Olivastro, Ortu Furadu, Busachi",
+      "girth_cm": 770.0,
+      "latitude": 40.004614,
+      "longitude": 8.90045,
+      "reason": "Register candidate only, not individually researched this pass (time-boxed to the Luras/Baunei/Laconi clusters instead). Rural locality name suggests possible farmland; access, remarkableness and a second source all still need checking before this could ship."
+    },
+    {
+      "source": "italy-masaf.json, Barbagia/Mandrolisai cluster near 40.0,9.0",
+      "name_it": "Sughera, Su Brocheri - Monte Santu, Neoneli",
+      "girth_cm": 490.0,
+      "latitude": 40.077203,
+      "longitude": 9.002544,
+      "reason": "Register candidate only, not individually researched this pass (time-boxed to the Luras/Baunei/Laconi clusters instead). Rural locality name suggests possible farmland; access, remarkableness and a second source all still need checking before this could ship."
+    },
+    {
+      "source": "italy-masaf.json, Barbagia/Mandrolisai cluster near 40.0,9.0",
+      "name_it": "Sughera, S'Isca - Rio Muscone, Neoneli",
+      "girth_cm": 465.0,
+      "latitude": 40.037875,
+      "longitude": 8.956056,
+      "reason": "Register candidate only, not individually researched this pass (time-boxed to the Luras/Baunei/Laconi clusters instead). Rural locality name suggests possible farmland; access, remarkableness and a second source all still need checking before this could ship."
+    },
+    {
+      "source": "italy-masaf.json, Barbagia/Mandrolisai cluster near 40.0,9.0",
+      "name_it": "Sughera, Accoro, Samugheo",
+      "girth_cm": 570.0,
+      "latitude": 39.978594,
+      "longitude": 9.012831,
+      "reason": "Register candidate only, not individually researched this pass (time-boxed to the Luras/Baunei/Laconi clusters instead). Rural locality name suggests possible farmland; access, remarkableness and a second source all still need checking before this could ship."
+    },
+    {
+      "source": "italy-masaf.json, Barbagia/Mandrolisai cluster near 40.0,9.0",
+      "name_it": "Olivastro, Santu Perdu, Samugheo",
+      "girth_cm": 1010.0,
+      "latitude": 39.958164,
+      "longitude": 8.895858,
+      "reason": "Register candidate only, not individually researched this pass (time-boxed to the Luras/Baunei/Laconi clusters instead). Rural locality name suggests possible farmland; access, remarkableness and a second source all still need checking before this could ship."
+    }
+  ],
+  "blocked": [
+    {
+      "name_it": "Fico magnolioide, Piazza Giacomo Matteotti, Cagliari (MASAF girth 1200cm)",
+      "reason": "Already covered by the published Cagliari city page (LOG.md 2026-08-14: Moreton Bay fig on Piazza Matteotti). Excluded from the Sardinia island page to avoid duplicating a page that already exists; Cagliari and its own register trees stay Cagliari's, not the island's."
+    }
+  ]
+}
