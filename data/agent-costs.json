@@ -2092,6 +2092,24 @@
     "note": "0 new trees: all 7 register candidates were exact-coordinate matches to already-blocked/held leads from 2026-08-15, correctly not re-litigated. Found the tooling gap that caused the resurfacing (see passcheck fix) and tried Via Baserga's aerial-imagery next_step (inconclusive, left held). Como stays at 9/10, genuinely thin.",
     "wasted": 0,
     "brief_wrong": true
+   },
+   {
+    "target": "warsaw",
+    "kind": "verify",
+    "tokens": 166992,
+    "trees": 3,
+    "note": "Deepened 5 to 7 net (added 3, retired 1 confirmed-dead). Metadata-poor GDOS register solved via the Krakow technique (join to Polish Wikipedia's reproduction of the city's own register by INSPIRE code). Surfaced a serious finding: the official register records the already-published war_003 (Sowinski's Linden) as blown down 1986, not found 2004, delisted 2012 -- checked, confirmed, retired same session per hard rule 2.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "warsaw",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 3,
+    "note": "Session work (tokens not metered by harness). Wrote 3 stories, retired war_003 with an independently re-verified death record (fetched the two sources war_003 originally cited, neither actually supports a living tree; the Reduta nr 56 article doesn't mention it at all), added a REMOVED_TREE_SLUGS redirect entry, updated intro/meta/FAQ.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

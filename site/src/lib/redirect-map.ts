@@ -68,12 +68,21 @@ const CROSS_CITY_MERGED_TREE_SLUGS: [string, string, string, string][] = [
 // muc_011-014, giving the same four physical trees two ids and two pages
 // each. The earlier ids (with address/age/best_time filled in) survive;
 // these four newer, thinner duplicates were removed from data/cities/munich.json.
+// warsaw/sowinskis-linden (war_003, 2026-08-17): Poland's own GDOS register
+// (reproduced on Polish Wikipedia's Pomniki przyrody w Warszawie) records
+// this exact monument, at this exact location, blown down by wind in 1986,
+// searched for and not found in a 2004 field survey, and formally delisted
+// in 2012. The story published here (from a general "oldest trees" listicle
+// describing it as living, ~190 years old) was never checked against the
+// official record. Hard rule 2: a tree known to be dead never ships. Pulled
+// rather than fabricating a replacement at the same slug.
 const REMOVED_TREE_SLUGS: [string, string][] = [
   ["lyon", "cedar-of-ile-barbe"],
   ["munich", "copper-beech-of-nymphenburg"],
   ["munich", "nymphenburg-lime"],
   ["munich", "fern-leaved-beech-of-nymphenburg"],
   ["munich", "weeping-beech-of-nymphenburg"],
+  ["warsaw", "sowinskis-linden"],
 ];
 
 // Ported verbatim from slugify(), build_site.py:918. Order matters: strip
