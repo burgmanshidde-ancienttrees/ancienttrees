@@ -180,7 +180,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | # | city | score | demand | trees | photos | walks | register | target | basis |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---|
 | 1 | Rome | 43.24 | 358,876 | 29 | 9 | 2 | 32 | 30 | measured |
-| 2 | Palermo | 39.54 | 124,310 | 10 | 7 | 2 | 44 | 20 | measured |
+| 2 | Palermo | 39.54 | 124,310 | 14 | 7 | 2 | 43 | 20 | measured |
 | 3 | Amsterdam | 32.37 | 294,030 | 20 | 7 | 2 | 5239 | 20 | measured |
 | 4 | Barcelona | 25.90 | 346,477 | 46 | 12 | 7 | 183 | 30 | measured |
 | 5 | Lisbon | 25.43 | 201,877 | 33 | 10 | 3 | 66 | 20 | measured |
@@ -285,7 +285,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 104 | Montreal | 5.70 | 315,322 | 7 | - | 1 | - | 10 | published, never ranked (may be uncrawled) |
 | 105 | Funchal | 3.77 | 174,351 | - | - | - | - | 10 | predicted (travel demand) |
 | 106 | Bruges | 5.60 | 106,902 | - | - | - | - | 10 | predicted (travel demand) |
-| 107 | Vilnius | 3.70 | 113,188 | 7 | 1 | 1 | 34 | 10 | published, never ranked (may be uncrawled) |
+| 107 | Vilnius | 3.70 | 113,188 | 10 | 1 | 1 | 34 | 10 | published, never ranked (may be uncrawled) |
 | 108 | Avignon | 5.54 | 64,047 | - | - | - | - | 10 | predicted (travel demand) |
 | 109 | San Diego | 5.53 | 214,939 | - | - | - | - | 10 | predicted (travel demand) |
 | 110 | Galway | 3.65 | 88,162 | - | - | - | - | 10 | predicted (travel demand) |
