@@ -207,6 +207,25 @@ def mined_points():
     Matching is by coordinate, like the published check, so no spelling can fool
     it. Entries without a coordinate (roughly a third) cannot be matched this way
     and stay listed in the leads section below, unchanged.
+
+    Leads files have never had one enforced coordinate schema, and a pass that
+    cannot find the number silently drops the entry rather than erroring, which
+    is worse: it looks handled. Proof case, Como, 2026-08-17: a pass spent its
+    window re-confirming three "blocked" entries the brief resurfaced as fresh,
+    because they carried coordinates under `coordinates_lat_lng` (one entry
+    holding all three trees' points as a list of pairs) and
+    `coordinates_lat_lng_sample`, neither of which the original `lat`/`lng`/
+    `location.*` lookup below knew to read. The SAME pass had already caught
+    and logged this exact gap two days earlier (2026-08-15, recorded in this
+    city's own leads file) without it being fixed, which is the CLAUDE.md
+    ratchet: a lesson on two different days becomes a check, not a third note.
+    A repo-wide scan the same day found a `coordinates: [lat, lng]` flat-pair
+    shape in 17 more entries across 6 other cities (including this run's own
+    freshly written Bratislava leads), silently invisible the same way.
+    _extract_coords() below is intentionally permissive about the field name
+    and about one point vs many, because the failure mode here is a missed
+    match, never a false one (a bad coordinate just fails the near-radius
+    check downstream).
     """
     global _MINED
     if _MINED is not None:
@@ -223,28 +242,81 @@ def mined_points():
             for e in (d.get(kind) or []):
                 if not isinstance(e, dict):
                     continue
-                loc = e.get("location") if isinstance(e.get("location"), dict) else e
-                lat = loc.get("latitude", loc.get("lat"))
-                lng = loc.get("longitude", loc.get("lng"))
-                if lat is None or lng is None:
-                    continue
                 why = (e.get("why_not_published") or e.get("reason")
                        or e.get("why") or e.get("status") or "")
-                out.append({"lat": float(lat), "lng": float(lng), "kind": kind,
-                            "name": e.get("name", "?"), "why": why,
-                            "species": e.get("species", ""),
-                            "file": os.path.basename(f)})
+                for lat, lng in _extract_coords(e):
+                    out.append({"lat": lat, "lng": lng, "kind": kind,
+                                "name": e.get("name", "?"), "why": why,
+                                "species": e.get("species", ""),
+                                "file": os.path.basename(f)})
     _MINED = out
     return out
 
 
+def _as_latlng(v):
+    """A [lat, lng] or (lat, lng) pair, numeric, or None if it isn't one."""
+    if (isinstance(v, (list, tuple)) and len(v) == 2
+            and all(isinstance(x, (int, float)) for x in v)):
+        return (float(v[0]), float(v[1]))
+    return None
+
+
+def _extract_coords(e):
+    """Every coordinate pair findable in one leads/blocked entry, whatever the
+    field is called. Known shapes seen across data/leads/*.json: lat/lng,
+    latitude/longitude, a location{} sub-object with either, a flat
+    `coordinates: [lat, lng]` pair, and Como's `coordinates_lat_lng[_sample]`,
+    which can itself be one pair or a list of pairs (one blocked entry
+    standing in for several physically distinct trees at the same site).
+    """
+    loc = e.get("location") if isinstance(e.get("location"), dict) else e
+    lat = loc.get("latitude", loc.get("lat"))
+    lng = loc.get("longitude", loc.get("lng"))
+    if isinstance(lat, (int, float)) and isinstance(lng, (int, float)):
+        return [(float(lat), float(lng))]
+
+    for key in ("coordinates", "coordinates_lat_lng", "coordinates_lat_lng_sample"):
+        v = e.get(key)
+        if v is None:
+            continue
+        single = _as_latlng(v)
+        if single:
+            return [single]
+        if isinstance(v, list):
+            pairs = [p for p in (_as_latlng(item) for item in v) if p]
+            if pairs:
+                return pairs
+    return []
+
+
 def _genus(species):
-    """First word of a botanical name, lowercased. The cheapest species guard
-    there is, and enough: Cedrus is not Brahea."""
+    """Every genus named in a species string, lowercased. The cheapest species
+    guard there is, and enough: Cedrus is not Brahea.
+
+    Returns a SET, not a single word, because a blocked entry sometimes
+    describes several distinct trees at one site in one combined field
+    ("American Sycamore (Platanus occidentalis), Southern Magnolia (Magnolia
+    grandiflora), Strawberry Tree (Arbutus unedo)" for Como's Villa Saporiti
+    grouping). Taking the naive first word of that string gives "american",
+    which matches no register candidate's genus and silently defeats the
+    match for all three trees it was meant to cover. Genus names in
+    parentheses are trusted as the Latin binomial; bare text falls back to
+    its own first word so a plain "Platanus occidentalis" still works.
+    """
     if not species:
-        return ""
-    s = re.sub(r"[^A-Za-z ]", " ", str(species)).strip().lower().split()
-    return s[0] if s else ""
+        return set()
+    s = str(species)
+    parens = re.findall(r"\(([^)]+)\)", s)
+    out = set()
+    for p in parens:
+        words = re.sub(r"[^A-Za-z ]", " ", p).strip().lower().split()
+        if words:
+            out.add(words[0])
+    if not out:
+        words = re.sub(r"[^A-Za-z ]", " ", s).strip().lower().split()
+        if words:
+            out.add(words[0])
+    return out
 
 
 def already_judged(lat, lng, species=None):
@@ -267,7 +339,7 @@ def already_judged(lat, lng, species=None):
         if d > LEAD_MATCH_KM:
             continue
         mg = _genus(m.get("species"))
-        if g and mg and g != mg:
+        if g and mg and g.isdisjoint(mg):
             continue
         hits.append((d, m))
     return min(hits, key=lambda h: h[0])[1] if hits else None
