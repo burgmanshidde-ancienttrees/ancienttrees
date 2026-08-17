@@ -278,6 +278,27 @@
    "cities_touched": 0,
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-08-17T20:19:19+00:00",
+   "date": "2026-08-17",
+   "run_id": "32065144041",
+   "minutes": 10.7,
+   "minutes_basis": "measured",
+   "turns": 98,
+   "denials": 15,
+   "denials_source": "permission_denials: Bash",
+   "ended": "success",
+   "tokens": 13857157,
+   "claims_held": [
+    "bari",
+    "yakushima",
+    "ottawa"
+   ],
+   "commits": 4,
+   "cities_touched": 0,
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
