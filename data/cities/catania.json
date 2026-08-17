@@ -82,10 +82,10 @@
    "location_precision": "confirmed",
    "curation_status": "flagged",
    "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Pino_del_Queensland_monumentale.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Ivan Ruggiero, via Wikimedia Commons",
+    "status": "approved"
    }
   },
   {
@@ -115,8 +115,7 @@
     "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Pino_del_Queensland_4.jpg",
     "license": "CC BY-SA 4.0",
     "attribution": "Alacoolwiki, via Wikimedia Commons",
-    "status": "held",
-    "note": "meets the standard on quality but our two bunya pins are 21 m apart, so the geotag cannot tell the larger twin from the smaller"
+    "status": "approved"
    }
   },
   {
@@ -143,10 +142,11 @@
    "location_precision": "confirmed",
    "curation_status": "flagged",
    "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
+    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/271147506/medium.jpeg",
+    "license": "CC BY",
+    "attribution": "(c) Bob, some rights reserved (CC BY), via iNaturalist",
+    "status": "held",
+    "note": "good frame of a large dragon tree but no coordinate, and Catania has more than one big Dracaena draco"
    }
   }
  ]

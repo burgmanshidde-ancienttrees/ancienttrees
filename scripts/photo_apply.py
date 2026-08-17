@@ -20,6 +20,7 @@ entry, so a credit can never drift from the licence it was granted under.
 import glob
 import json
 import os
+import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -49,8 +50,28 @@ def full_image(cand):
     return thumb.split("?")[0] if "inaturalist" not in thumb else thumb
 
 
+def clean_author(raw):
+    """The photographer's NAME, and nothing else they typed into the field.
+
+    Commons' Artist field is free text, and people put a request in it. Catania's
+    bunya carries "Ivan Ruggiero\\nI'd appreciate if you could mail me
+    (ivanrugg+credit@gmail.com) if you want to use this picture out of the", all
+    of which would have been rendered as the credit on a public page. Publishing
+    a private email address is the one thing this project never does with a
+    person's details, licence or no licence, and it takes the first line only,
+    then removes any address or url that survives on it.
+    """
+    first = (raw or "").strip().splitlines()[0] if (raw or "").strip() else ""
+    first = re.sub(r"\S+@\S+", "", first)
+    first = re.sub(r"https?://\S+", "", first)
+    # A name does not contain a sentence. If a first line still runs on, keep
+    # the part before the first clause break rather than printing an essay.
+    first = re.split(r"\s+[-–|,]\s+|\s{2,}", first)[0]
+    return first.strip(" .,;:-")[:80]
+
+
 def credit(cand):
-    author = (cand.get("author") or "").strip()
+    author = clean_author(cand.get("author"))
     if "inaturalist" in (cand.get("source") or ""):
         return f"{author}, via iNaturalist" if author else "via iNaturalist"
     return f"{author}, via Wikimedia Commons" if author else "via Wikimedia Commons"
