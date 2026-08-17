@@ -38,6 +38,19 @@ sys.path.insert(0, os.path.join(ROOT, "scripts"))
 ORDER = ["unscouted", "stalled", "empty", "blocked", "imported"]
 
 
+def out_of_focus():
+    """Countries Hidde has ruled out of scope. A SCOPE decision, not a
+    judgement about the trees: the queue still ranks these cities and nothing
+    published is removed, but no scouting window is spent on them and --target
+    never points there. 2026-08-16: "israel africa india and russia ar out of
+    focus". Reversing it means deleting a line in the ledger."""
+    with open(LEDGER, encoding="utf-8") as fh:
+        d = json.load(fh)
+    o = d.get("out_of_focus") or {}
+    return {c.lower() for c in
+            (o.get("countries", []) + o.get("africa_countries", []))}
+
+
 def ledger():
     with open(LEDGER, encoding="utf-8") as fh:
         d = json.load(fh)
@@ -87,9 +100,12 @@ def main():
     with open(QUEUE, encoding="utf-8") as fh:
         cities = json.load(fh)["cities"]
 
+    skip = out_of_focus()
     rows = []
     for c in sorted([c for c in cities if c.get("rank")], key=lambda c: c["rank"]):
         if not a.all and c.get("trees", 0) >= 10:
+            continue
+        if (c.get("country") or "").lower() in skip:
             continue
         hit = (by_place.get(c["city"].lower())
                or by_country.get((c.get("country") or "").lower()))
