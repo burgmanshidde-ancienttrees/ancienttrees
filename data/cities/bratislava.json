@@ -2,11 +2,11 @@
   "city": "Bratislava",
   "country": "Slovakia",
   "status": "needs_curation",
-  "intro": "Bratislava's state register of protected trees produces five that chain into a single walk from the Danube to the slope below the castle: a Japanese pagoda tree on the river embankment, an ash on the cathedral square where Hungarian kings were crowned, a fast-growing paulownia in a rebuilt park, an Adriatic oak at a public stairway, and a small North American birch further up. All five are free and out in the open, and none is a native species, which the register cites as part of why each earned protection.",
+  "intro": "Bratislava's register of protected trees produces six worth the walk, five of them in one line from the Danube to the slope below the castle: a Japanese pagoda tree on the embankment, an ash on the square where Hungarian kings were crowned, a paulownia in a rebuilt park, an Adriatic oak at a public stairway, and a small birch further up. The sixth is a plane over six metres round, out in the forest park. All six are free and in the open, and not one is a native species.",
   "meta_description": "Bratislava's protected trees: a Japanese pagoda tree on the Danube, an Adriatic oak on a public stairway, a paulownia in a rebuilt park.",
   "question_meta": "Bratislava's oldest documented protected tree is a Japanese pagoda tree on the Danube embankment, planted around 1916. Its story, and four more.",
   "question_answer": "Bratislava's most precisely dated protected tree is the Sophora of Vajanského Embankment, a Japanese pagoda tree (Styphnolobium japonicum) in a small riverside park a few minutes from Hviezdoslav Square. Slovakia's state register and an independent Slovak protected-trees resource agree it was roughly eighty years old when it was formally protected in 1996, which puts its planting near 1916 and its age today at roughly a hundred and ten. An Adriatic oak on the Šulekova stairway carries a similar derived age from a similar dated figure, so the two are close rather than one being clearly oldest, but the pagoda tree gets the answer here for its fuller two-source documentation. A paulownia elsewhere on this page has a disputed age that could put it older still, anywhere from sixty to a hundred and fifty years depending on which source is right, which is exactly why this page states the range rather than picking a winner.",
-  "question_context": "This page is built on Slovakia's own state register of protected trees (Štátna ochrana prírody SR, released under CC BY 4.0), cross-checked against krizom-krazom.eu, an independent Slovak resource that documents the country's protected trees district by district, and against local news coverage where it exists. The register gives species, measurements and a protection year for each tree, and for several the age is recorded as of that protection year rather than continuously updated since, which is why every age on this page is stated as a derived, 2026-adjusted estimate rather than a fresh measurement. All five trees published here cluster within 1.7 kilometres, from the Danube embankment up the slope toward Bratislava Castle, genuinely walkable in one outing. Several more register entries were found sitting in private gardens ('v záhrade' in the register's own text) with no evidence of public access and are held back as leads rather than published; one, a wild service tree at Devín, is confirmed dead by a 2020 local news report the register itself had not caught up with.",
+  "question_context": "This page is built on Slovakia's own state register of protected trees (Štátna ochrana prírody SR, released under CC BY 4.0), cross-checked against krizom-krazom.eu, an independent Slovak resource that documents the country's protected trees district by district, and against local news coverage where it exists. The register gives species, measurements and a protection year for each tree, and for several the age is recorded as of that protection year rather than continuously updated since, which is why every age on this page is stated as a derived, 2026-adjusted estimate rather than a fresh measurement. Five of the six published here cluster within 1.7 kilometres, from the Danube embankment up the slope toward Bratislava Castle, genuinely walkable in one outing; the sixth, the plane at Zelezna studnicka, is a separate trip out to the forest park. Several more register entries were found sitting in private gardens ('v záhrade' in the register's own text) with no evidence of public access and are held back as leads rather than published; one, a wild service tree at Devín, is confirmed dead by a 2020 local news report the register itself had not caught up with.",
   "faq": [
     {
       "q": "What is the oldest tree in Bratislava?",
@@ -176,6 +176,37 @@
       },
       "curation_status": "flagged",
       "notes": "Register (id 223) plus krizom-krazom.eu agree on species (Betula papyrifera, an unusual North American ornamental for the region), 8m height, 94cm girth, 8m crown, given as 50 years old at the 1996 designation (age_min/max 75-85 is a 2026-adjusted derivation from that dated figure). Locality 'pred domom' (in front of the house) read as street frontage rather than an enclosed private garden, unlike several sibling register entries marked 'v záhrade' (in the garden) left as leads. No photo confirming the birch stands on the public verge rather than inside a low front fence; flagged for that.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "brt_006",
+      "name": "The Plane of Kysucká Street",
+      "species": "Plane (Platanus sp., species not established)",
+      "age_estimate": "roughly 160 years",
+      "age_min": 150,
+      "age_max": 170,
+      "girth_cm": 611,
+      "location": {
+        "address": "K Železnej studničke, beside the Vydrica stream, Bratislavský lesný park (Bratislava Forest Park)",
+        "latitude": 48.1725,
+        "longitude": 17.0752,
+        "neighbourhood": "Bratislava Forest Park, near Železná studnička, roughly 3.6 km from the Old Town centre"
+      },
+      "story": "Six metres and eleven centimetres round the trunk, standing in a wood where nobody planted it for show. The plane on the road up to Zelezna studnicka is Bratislava's protected tree number 231, and a measurer put a tape around it in 2012: 6.11 metres at chest height, 27.2 metres tall, and a planting he read as around 1880. That makes it roughly 160 years old now.\n\nWhich plane it is has never been settled, and the two sources that describe it disagree. The state register calls it platan zapadny, western plane, which in Slovak usually means the American sycamore. Monumentaltrees, whose measurer took the figures above, records it as the London plane, the hybrid that Europe planted along half its avenues. They are close relatives and easy to confuse without looking at the bark, which flakes into pale patches on the hybrid and stays more uniform on the pure American tree. If you get there and look up, you can settle it, and we would like to know.\n\nThe setting is the reason to go. Zelezna studnicka is the valley Bratislava walks in at weekends, a chain of ponds and paths along the Vydrica stream under the Small Carpathians, and this tree stands in the open beside the path rather than in anybody's garden. Most of the city's protected trees do not: they sit in front gardens and behind courtyard walls, which is why this page is shorter than the register would suggest.",
+      "verified_sources": [
+        "data/registers/slovakia-chranene-stromy.json (register_id 231, Štátna ochrana prírody SR, CC BY 4.0, publishable: true)",
+        "https://www.monumentaltrees.com/en/svk/bratislava/bratislava/3417_kysuckastreet/ (independent measurement by Martin Miklanek, 2012)"
+      ],
+      "access": "Free, standing in the open beside a public path in Bratislava Forest Park (Bratislavský lesný park), the popular Železná studnička recreation area; no gate, no private land",
+      "transport": "Bus 43 (and trolleybus/tram routes serving Železná studnička) to the Železná studnička terminus, then a walk along K Železnej studničke road; exact walk time from the stop to this specific tree not established this pass",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The biggest tree by a distance on the road up to Zelezna studnicka, standing clear of the wood beside the path. Not the young plane recently transplanted near the rebuilt Labutie pavilion.",
+      "curation_status": "flagged",
       "location_precision": "confirmed"
     }
   ]
