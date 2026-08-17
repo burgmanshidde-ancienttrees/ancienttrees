@@ -89,6 +89,13 @@ const cities = defineCollection({
   schema: z.object({
     city: z.string(),
     country: z.string(),
+    // What KIND of place this page covers. Added 2026-08-17 with Tenerife, the
+    // first island: an island is an ordinary place in the one queue and ships
+    // under the existing contracts, but it behaves differently in one way a
+    // reader feels immediately, which is that its trees are a drive apart
+    // rather than a walk. Explore groups on this; nothing else branches on it,
+    // and a missing value means an ordinary city.
+    kind: z.enum(["city", "island"]).optional(),
     status: z.enum(["needs_curation", "curated", "published"]).optional(),
     intro: z.string().optional(),
     meta_description: z.string().optional(),
