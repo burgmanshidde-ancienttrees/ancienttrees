@@ -2200,6 +2200,24 @@
     "note": "moved the oldest-tree crown to Skovfogedegen, repaired two now-false thickest claims and the Denmark country intro; 26k per tree because a 3-tree batch cannot amortise the fixed read",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "tenerife",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 4,
+    "note": "first island pass; no approved Canary register exists, so the Cabildo's own JS-rendered monumental-tree portal plus OSM natural=tree nodes stood in for one; ordinary web-research cost, not register cost",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "tenerife",
+    "kind": "write",
+    "tokens": 58000,
+    "trees": 4,
+    "note": "first island page; crowned Pino Gordo over the undateable Drago rather than repeat the tradition figure",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
