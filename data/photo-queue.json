@@ -5039,8 +5039,8 @@
   "edi_003": {
    "city": "Edinburgh",
    "name": "The Cammo Ash",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-17",
+   "sweep": 4,
    "candidates": [
     {
      "title": "File:Young tree, Cammo - geograph.org.uk - 8257079.jpg",
@@ -5057,30 +5057,33 @@
   "edi_004": {
    "city": "Edinburgh",
    "name": "The Cedar of Lebanon at the Botanics",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-17",
+   "sweep": 4,
    "candidates": []
   },
   "edi_005": {
    "city": "Edinburgh",
    "name": "The Monkey Puzzles of Lauriston Castle",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-17",
+   "sweep": 4,
    "candidates": [
     {
      "title": "File:Lonsdale Terrace, Lauriston Edinburgh.JPG",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Lonsdale_Terrace%2C_Lauriston_Edinburgh.JPG/960px-Lonsdale_Terrace%2C_Lauriston_Edinburgh.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Lonsdale_Terrace,_Lauriston_Edinburgh.JPG",
      "licence": "CC BY-SA 3.0",
-     "author": "Kim Traynor"
+     "author": "Kim Traynor",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Lauriston, Edinburgh Category:Self-published work Category:Streets in Edinburgh Category:Taken with Panasonic Lumix DMC-FS10"
     }
    ]
   },
   "edi_007": {
    "city": "Edinburgh",
    "name": "The Camperdown Elm of St Cuthbert's",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-17",
+   "sweep": 4,
    "candidates": [
     {
      "title": "File:Western edge of Princes Street Gardens - geograph.org.uk - 5216166.jpg",
@@ -5108,8 +5111,8 @@
   "edi_008": {
    "city": "Edinburgh",
    "name": "The Rockface Sycamore of Cramond",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-17",
+   "sweep": 4,
    "candidates": [
     {
      "title": "File:Exposed roots of a large and old beech tree by the River Almond - geograph.org.uk - 1047409.jpg",
@@ -5119,46 +5122,6 @@
      "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/15498\">M J Richardson</a>",
      "judged": "rejected: the file's own subject is the exposed roots of a beech, wrong species and a root close-up",
      "judged_date": "2026-08-08"
-    },
-    {
-     "title": "File:Birnam Oak (3).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/7/79/Birnam_Oak_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:Birnam_Oak_(3).jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Stevanhogg",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:P1000696 Birnam Sycamore + Birnam Oak.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/P1000696_Birnam_Sycamore_%2B_Birnam_Oak.jpg/960px-P1000696_Birnam_Sycamore_%2B_Birnam_Oak.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:P1000696_Birnam_Sycamore_%2B_Birnam_Oak.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "GeXeS",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:The Birnam Oak - geograph.org.uk - 2811295.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/The_Birnam_Oak_-_geograph.org.uk_-_2811295.jpg/960px-The_Birnam_Oak_-_geograph.org.uk_-_2811295.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:The_Birnam_Oak_-_geograph.org.uk_-_2811295.jpg",
-     "licence": "CC BY-SA 2.0",
-     "author": "Euan Nelson",
-     "lat": 56.56085113,
-     "lng": -3.57660424,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:The Birnam Sycamore - geograph.org.uk - 1242513.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/af/The_Birnam_Sycamore_-_geograph.org.uk_-_1242513.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:The_Birnam_Sycamore_-_geograph.org.uk_-_1242513.jpg",
-     "licence": "CC BY-SA 2.0",
-     "author": "Gordon Hatton",
-     "lat": 56.56151,
-     "lng": -3.578,
-     "source": "commons/famous"
     }
    ],
    "exhausted": "2026-08-08: the single candidate is a beech root close-up"
@@ -5166,8 +5129,8 @@
   "edi_010": {
    "city": "Edinburgh",
    "name": "The Corstorphine Sycamore",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-17",
+   "sweep": 4,
    "candidates": [
     {
      "title": "File:Corstorphine Fair Christmas Tree - geograph.org.uk - 5943008.jpg",
@@ -5193,173 +5156,150 @@
   "flo_004": {
    "city": "Florence",
    "name": "The Farnia of the Ippodromo",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-17",
+   "sweep": 4,
    "candidates": []
   },
   "flo_005": {
    "city": "Florence",
    "name": "The Leccio of the Cascine",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-17",
+   "sweep": 4,
    "candidates": []
   },
   "flo_006": {
    "city": "Florence",
    "name": "The Honey Locust of Salviatino",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-17",
+   "sweep": 4,
    "candidates": []
   },
   "flo_007": {
    "city": "Florence",
    "name": "The Cedar of the Bobolino",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-17",
+   "sweep": 4,
    "candidates": [
+    {
+     "title": "File:Firenze, giardini del bobolino, 01.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Firenze%2C_giardini_del_bobolino%2C_01.jpg/960px-Firenze%2C_giardini_del_bobolino%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Firenze,_giardini_del_bobolino,_01.jpg",
+     "licence": "CC BY 3.0",
+     "author": "Sailko",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:All media supported by Wikimedia CH Category:Bobolino Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Photographs by User:Sailko Category:Self-published work"
+    },
     {
      "title": "File:Firenze, giardini del bobolino, 03.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Firenze%2C_giardini_del_bobolino%2C_03.jpg/960px-Firenze%2C_giardini_del_bobolino%2C_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Firenze,_giardini_del_bobolino,_03.jpg",
      "licence": "CC BY 3.0",
-     "author": "Sailko"
+     "author": "Sailko",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:All media supported by Wikimedia CH Category:Bobolino Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Photographs by User:Sailko Category:Self-published work"
     },
     {
      "title": "File:Firenze, giardini del bobolino, 07.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Firenze%2C_giardini_del_bobolino%2C_07.jpg/960px-Firenze%2C_giardini_del_bobolino%2C_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Firenze,_giardini_del_bobolino,_07.jpg",
      "licence": "CC BY 3.0",
-     "author": "Sailko"
+     "author": "Sailko",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:All media supported by Wikimedia CH Category:Bobolino Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Photographs by User:Sailko Category:Self-published work"
     },
     {
      "title": "File:Firenze, giardini del bobolino, 08.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Firenze%2C_giardini_del_bobolino%2C_08.jpg/960px-Firenze%2C_giardini_del_bobolino%2C_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Firenze,_giardini_del_bobolino,_08.jpg",
      "licence": "CC BY 3.0",
-     "author": "Sailko"
+     "author": "Sailko",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:All media supported by Wikimedia CH Category:Bobolino Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Photographs by User:Sailko Category:Self-published work"
     },
     {
      "title": "File:Firenze, giardini del bobolino, 10.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Firenze%2C_giardini_del_bobolino%2C_10.jpg/960px-Firenze%2C_giardini_del_bobolino%2C_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Firenze,_giardini_del_bobolino,_10.jpg",
      "licence": "CC BY 3.0",
-     "author": "Sailko"
+     "author": "Sailko",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:All media supported by Wikimedia CH Category:Bobolino Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Photographs by User:Sailko Category:Self-published work"
     },
     {
      "title": "File:Firenze, giardini del bobolino, 13.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Firenze%2C_giardini_del_bobolino%2C_13.jpg/960px-Firenze%2C_giardini_del_bobolino%2C_13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Firenze,_giardini_del_bobolino,_13.jpg",
      "licence": "CC BY 3.0",
-     "author": "Sailko"
-    },
-    {
-     "title": "File:Firenze, giardini del bobolino, 14.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Firenze%2C_giardini_del_bobolino%2C_14.jpg/960px-Firenze%2C_giardini_del_bobolino%2C_14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Firenze,_giardini_del_bobolino,_14.jpg",
-     "licence": "CC BY 3.0",
-     "author": "Sailko"
+     "author": "Sailko",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:All media supported by Wikimedia CH Category:Bobolino Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Photographs by User:Sailko Category:Self-published work"
     },
     {
      "title": "File:Firenze, giardini del bobolino, 20.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Firenze%2C_giardini_del_bobolino%2C_20.jpg/960px-Firenze%2C_giardini_del_bobolino%2C_20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Firenze,_giardini_del_bobolino,_20.jpg",
      "licence": "CC BY 3.0",
-     "author": "Sailko"
+     "author": "Sailko",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:All media supported by Wikimedia CH Category:Bobolino Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Photographs by User:Sailko Category:Self-published work"
     }
    ]
   },
   "flo_008": {
    "city": "Florence",
    "name": "The Cedar Above Pegasus",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-17",
+   "sweep": 4,
    "candidates": []
   },
   "flo_010": {
    "city": "Florence",
    "name": "The Pine of Villa Vogel",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-17",
+   "sweep": 4,
    "candidates": []
   },
   "flo_014": {
    "city": "Florence",
    "name": "The Himalayan Cedar of the Semplici",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-17",
+   "sweep": 4,
    "candidates": [
     {
      "title": "File:Firenze - Florence - Via Giorgio La Pira - View ESE on Giardino dei Semplici - Orto Botanico di Firenze.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Firenze_-_Florence_-_Via_Giorgio_La_Pira_-_View_ESE_on_Giardino_dei_Semplici_-_Orto_Botanico_di_Firenze.jpg/960px-Firenze_-_Florence_-_Via_Giorgio_La_Pira_-_View_ESE_on_Giardino_dei_Semplici_-_Orto_Botanico_di_Firenze.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Firenze_-_Florence_-_Via_Giorgio_La_Pira_-_View_ESE_on_Giardino_dei_Semplici_-_Orto_Botanico_di_Firenze.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Txllxt TxllxT"
+     "author": "Txllxt TxllxT",
+     "lat": 43.778956,
+     "lng": 11.2603,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Giardino dei Semplici di Firenze Category:Self-published work"
     },
     {
      "title": "File:Visit in Giardino dei Semplici di Firenze 11.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Visit_in_Giardino_dei_Semplici_di_Firenze_11.jpg/960px-Visit_in_Giardino_dei_Semplici_di_Firenze_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Visit_in_Giardino_dei_Semplici_di_Firenze_11.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Daniel Ventura"
+     "author": "Daniel Ventura",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Giardino dei Semplici di Firenze Category:June 2012 in Florence Category:Self-published work"
     }
    ]
   },
   "flo_015": {
    "city": "Florence",
    "name": "The Tree of the Newlyweds",
-   "checked": "2026-08-13",
-   "sweep": 2,
-   "candidates": [
-    {
-     "title": "File:Model newlyweds.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Model_newlyweds.jpg/960px-Model_newlyweds.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Model_newlyweds.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "MouldyHants"
-    },
-    {
-     "title": "File:Newlyweds (4439585656).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Newlyweds_%284439585656%29.jpg/960px-Newlyweds_%284439585656%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Newlyweds_(4439585656).jpg",
-     "licence": "CC BY 2.0",
-     "author": "Eneas De Troya from Mexico City, México"
-    },
-    {
-     "title": "File:Newlyweds (54058328).jpeg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Newlyweds_%2854058328%29.jpeg/960px-Newlyweds_%2854058328%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Newlyweds_(54058328).jpeg",
-     "licence": "CC BY 3.0",
-     "author": "Anna Logvinova"
-    },
-    {
-     "title": "File:Newlyweds Grabbing Food Truck Food.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Newlyweds_Grabbing_Food_Truck_Food.jpg/960px-Newlyweds_Grabbing_Food_Truck_Food.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Newlyweds_Grabbing_Food_Truck_Food.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "https://moderntortilla.com/"
-    },
-    {
-     "title": "File:Newlyweds at Jetavanarama Dagoba - Anuradhapura - Sri Lanka - 01 (14171426703).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Newlyweds_at_Jetavanarama_Dagoba_-_Anuradhapura_-_Sri_Lanka_-_01_%2814171426703%29.jpg/960px-Newlyweds_at_Jetavanarama_Dagoba_-_Anuradhapura_-_Sri_Lanka_-_01_%2814171426703%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Newlyweds_at_Jetavanarama_Dagoba_-_Anuradhapura_-_Sri_Lanka_-_01_(14171426703).jpg",
-     "licence": "CC BY-SA 2.0",
-     "author": "Adam Jones from Kelowna, BC, Canada"
-    },
-    {
-     "title": "File:Newlyweds at Jetavanarama Dagoba - Anuradhapura - Sri Lanka - 02 (13964701389).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Newlyweds_at_Jetavanarama_Dagoba_-_Anuradhapura_-_Sri_Lanka_-_02_%2813964701389%29.jpg/960px-Newlyweds_at_Jetavanarama_Dagoba_-_Anuradhapura_-_Sri_Lanka_-_02_%2813964701389%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Newlyweds_at_Jetavanarama_Dagoba_-_Anuradhapura_-_Sri_Lanka_-_02_(13964701389).jpg",
-     "licence": "CC BY-SA 2.0",
-     "author": "Adam Jones from Kelowna, BC, Canada"
-    },
-    {
-     "title": "File:Tibetan Newlyweds.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Tibetan_Newlyweds.jpg/960px-Tibetan_Newlyweds.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Tibetan_Newlyweds.jpg",
-     "licence": "CC BY-SA 2.0",
-     "author": "Rod Waddington"
-    }
-   ]
+   "checked": "2026-08-17",
+   "sweep": 4,
+   "candidates": []
   },
   "fuk_004": {
    "city": "Fukuoka",
@@ -7776,8 +7716,8 @@
   "edi_011": {
    "city": "Edinburgh",
    "name": "The John Muir Grove",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-17",
+   "sweep": 4,
    "candidates": [
     {
      "title": "File:Edinburgh High Street and St Giles, July 2007.jpg",
@@ -7794,8 +7734,8 @@
   "edi_012": {
    "city": "Edinburgh",
    "name": "The Catacol Whitebeams of the East Gate",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-17",
+   "sweep": 4,
    "candidates": [
     {
      "title": "File:Edinburgh Royal Botanic Gardens - petrified tree trunk - geograph.org.uk - 2296184.jpg",
@@ -7814,34 +7754,6 @@
      "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/139\">Anne Burgess</a> <span class=\"mw-",
      "judged": "rejected: viewed as pixels, a swamp cypress in autumn beside a pond, wrong species",
      "judged_date": "2026-08-08"
-    },
-    {
-     "title": "File:Bridleway and private road to Whitebeams - geograph.org.uk - 1689080.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Bridleway_and_private_road_to_Whitebeams_-_geograph.org.uk_-_1689080.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:Bridleway_and_private_road_to_Whitebeams_-_geograph.org.uk_-_1689080.jpg",
-     "licence": "CC BY-SA 2.0",
-     "author": "Nick Smith"
-    },
-    {
-     "title": "File:Whitebeams Oast, Bodle Street Green, Warbleton, East Sussex - geograph.org.uk - 789374.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/5/54/Whitebeams_Oast%2C_Bodle_Street_Green%2C_Warbleton%2C_East_Sussex_-_geograph.org.uk_-_789374.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:Whitebeams_Oast,_Bodle_Street_Green,_Warbleton,_East_Sussex_-_geograph.org.uk_-_789374.jpg",
-     "licence": "CC BY-SA 2.0",
-     "author": "Oast House Archive"
-    },
-    {
-     "title": "File:Whitebeams Oast - geograph.org.uk - 6957170.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Whitebeams_Oast_-_geograph.org.uk_-_6957170.jpg/960px-Whitebeams_Oast_-_geograph.org.uk_-_6957170.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Whitebeams_Oast_-_geograph.org.uk_-_6957170.jpg",
-     "licence": "CC BY-SA 2.0",
-     "author": "N Chadwick"
-    },
-    {
-     "title": "File:Whitebeams Oast - geograph.org.uk - 6962916.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Whitebeams_Oast_-_geograph.org.uk_-_6962916.jpg/960px-Whitebeams_Oast_-_geograph.org.uk_-_6962916.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Whitebeams_Oast_-_geograph.org.uk_-_6962916.jpg",
-     "licence": "CC BY-SA 2.0",
-     "author": "N Chadwick"
     }
    ],
    "exhausted": "2026-08-08: a petrified trunk exhibit and a swamp cypress, neither a whitebeam"
@@ -7849,8 +7761,8 @@
   "edi_013": {
    "city": "Edinburgh",
    "name": "The Handkerchief Tree by Caledonian Hall",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-17",
+   "sweep": 4,
    "candidates": []
   },
   "muc_014": {
@@ -13681,78 +13593,35 @@
   "edi_014": {
    "city": "Edinburgh",
    "name": "The 1948 Dawn Redwood of the Chinese Hillside",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-17",
+   "sweep": 4,
    "candidates": []
   },
   "edi_015": {
    "city": "Edinburgh",
    "name": "The Champion Whitebeam of the Botanics",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-17",
+   "sweep": 4,
    "candidates": [
-    {
-     "title": "File:Champion 08 2006 105.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Champion_08_2006_105.jpg/960px-Champion_08_2006_105.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Champion_08_2006_105.jpg",
-     "licence": "CC BY-SA 3.0",
-     "author": "M.Minderhoud"
-    },
-    {
-     "title": "File:Champion Mill dam from US 3.JPG",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Champion_Mill_dam_from_US_3.JPG/960px-Champion_Mill_dam_from_US_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Champion_Mill_dam_from_US_3.JPG",
-     "licence": "Public domain",
-     "author": "Ammodramus"
-    },
-    {
-     "title": "File:Champion Wear at Mitsui Outlet Park Osaka-Kadoma.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Champion_Wear_at_Mitsui_Outlet_Park_Osaka-Kadoma.jpg/960px-Champion_Wear_at_Mitsui_Outlet_Park_Osaka-Kadoma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Champion_Wear_at_Mitsui_Outlet_Park_Osaka-Kadoma.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Mr.ちゅらさん"
-    },
-    {
-     "title": "File:Champion grape.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/99/Champion_grape.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:Champion_grape.jpg",
-     "licence": "Public domain",
-     "author": "Ulysses Prentiss Hedrick"
-    },
-    {
-     "title": "File:Lovers' Lane, Champion, Neb. LCCN96524802.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Lovers%27_Lane%2C_Champion%2C_Neb._LCCN96524802.jpg/960px-Lovers%27_Lane%2C_Champion%2C_Neb._LCCN96524802.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Lovers%27_Lane,_Champion,_Neb._LCCN96524802.jpg",
-     "licence": "Public domain",
-     "author": "Miscellaneous Items in High Demand, PPOC, Library of Congress"
-    },
-    {
-     "title": "File:Main Street Champion, Alberta.JPG",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Main_Street_Champion%2C_Alberta.JPG/960px-Main_Street_Champion%2C_Alberta.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Main_Street_Champion,_Alberta.JPG",
-     "licence": "CC BY-SA 3.0",
-     "author": "Hero122 (talk)"
-    },
     {
      "title": "File:Sorbus 'Pearly King'.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Sorbus_%27Pearly_King%27.jpg/960px-Sorbus_%27Pearly_King%27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Sorbus_%27Pearly_King%27.jpg",
      "licence": "CC BY 2.0",
-     "author": "S. Rae from Scotland, UK"
+     "author": "S. Rae from Scotland, UK",
+     "lat": 55.965836,
+     "lng": -3.209005,
+     "cats": "Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation (55° N, 4° W) Category:Flickr images reviewed by FlickreviewR Category:Photographs by S. Rae Category:Sorbus (cultivars) Category:Sorbus in Scotland Category:Taken with Canon EOS 400D Category:United Kingdom photographs taken on 2012-10-09"
     },
     {
      "title": "File:Sorbus 'Pearly King'2.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Sorbus_%27Pearly_King%272.jpg/960px-Sorbus_%27Pearly_King%272.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Sorbus_%27Pearly_King%272.jpg",
      "licence": "CC BY 2.0",
-     "author": "S. Rae from Scotland, UK"
-    },
-    {
-     "title": "File:The Champion Atlantic Coast Line 1941.JPG",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/The_Champion_Atlantic_Coast_Line_1941.JPG/960px-The_Champion_Atlantic_Coast_Line_1941.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:The_Champion_Atlantic_Coast_Line_1941.JPG",
-     "licence": "Public domain",
-     "author": "C.R. Adamson, Miami/Teichnor, Boston"
+     "author": "S. Rae from Scotland, UK",
+     "lat": 55.965836,
+     "lng": -3.209005,
+     "cats": "Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation (55° N, 4° W) Category:Flickr images reviewed by trusted users Category:Sorbus (cultivars) Category:Sorbus in Scotland Category:Taken with Canon EOS 400D"
     }
    ]
   },
@@ -17578,278 +17447,239 @@
   "flo_016": {
    "city": "Florence",
    "name": "The Stone Pine of the Bobolino",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-17",
+   "sweep": 4,
    "candidates": [
-    {
-     "title": "File:Firenze, giardini del bobolino, 01.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Firenze%2C_giardini_del_bobolino%2C_01.jpg/960px-Firenze%2C_giardini_del_bobolino%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Firenze,_giardini_del_bobolino,_01.jpg",
-     "licence": "CC BY 3.0",
-     "author": "Sailko"
-    },
-    {
-     "title": "File:Firenze, giardini del bobolino, 02.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Firenze%2C_giardini_del_bobolino%2C_02.jpg/960px-Firenze%2C_giardini_del_bobolino%2C_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Firenze,_giardini_del_bobolino,_02.jpg",
-     "licence": "CC BY 3.0",
-     "author": "Sailko"
-    },
     {
      "title": "File:Firenze, giardini del bobolino, 03.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Firenze%2C_giardini_del_bobolino%2C_03.jpg/960px-Firenze%2C_giardini_del_bobolino%2C_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Firenze,_giardini_del_bobolino,_03.jpg",
      "licence": "CC BY 3.0",
-     "author": "Sailko"
+     "author": "Sailko",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:All media supported by Wikimedia CH Category:Bobolino Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Photographs by User:Sailko Category:Self-published work"
     },
     {
      "title": "File:Firenze, giardini del bobolino, 07.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Firenze%2C_giardini_del_bobolino%2C_07.jpg/960px-Firenze%2C_giardini_del_bobolino%2C_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Firenze,_giardini_del_bobolino,_07.jpg",
      "licence": "CC BY 3.0",
-     "author": "Sailko"
+     "author": "Sailko",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:All media supported by Wikimedia CH Category:Bobolino Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Photographs by User:Sailko Category:Self-published work"
+    },
+    {
+     "title": "File:Firenze, giardini del bobolino, 08.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Firenze%2C_giardini_del_bobolino%2C_08.jpg/960px-Firenze%2C_giardini_del_bobolino%2C_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Firenze,_giardini_del_bobolino,_08.jpg",
+     "licence": "CC BY 3.0",
+     "author": "Sailko",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:All media supported by Wikimedia CH Category:Bobolino Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Photographs by User:Sailko Category:Self-published work"
+    },
+    {
+     "title": "File:Firenze, giardini del bobolino, 10.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Firenze%2C_giardini_del_bobolino%2C_10.jpg/960px-Firenze%2C_giardini_del_bobolino%2C_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Firenze,_giardini_del_bobolino,_10.jpg",
+     "licence": "CC BY 3.0",
+     "author": "Sailko",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:All media supported by Wikimedia CH Category:Bobolino Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Photographs by User:Sailko Category:Self-published work"
     },
     {
      "title": "File:Firenze, giardini del bobolino, 13.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Firenze%2C_giardini_del_bobolino%2C_13.jpg/960px-Firenze%2C_giardini_del_bobolino%2C_13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Firenze,_giardini_del_bobolino,_13.jpg",
      "licence": "CC BY 3.0",
-     "author": "Sailko"
+     "author": "Sailko",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:All media supported by Wikimedia CH Category:Bobolino Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Photographs by User:Sailko Category:Self-published work"
     },
     {
-     "title": "File:Firenze, giardini del bobolino, 14.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Firenze%2C_giardini_del_bobolino%2C_14.jpg/960px-Firenze%2C_giardini_del_bobolino%2C_14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Firenze,_giardini_del_bobolino,_14.jpg",
+     "title": "File:Firenze, giardini del bobolino, 16 fontana.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Firenze%2C_giardini_del_bobolino%2C_16_fontana.jpg/960px-Firenze%2C_giardini_del_bobolino%2C_16_fontana.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Firenze,_giardini_del_bobolino,_16_fontana.jpg",
      "licence": "CC BY 3.0",
-     "author": "Sailko"
+     "author": "Sailko",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:All media supported by Wikimedia CH Category:Bobolino Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Photographs by User:Sailko Category:Self-published work"
     },
     {
      "title": "File:Firenze, giardini del bobolino, 20.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Firenze%2C_giardini_del_bobolino%2C_20.jpg/960px-Firenze%2C_giardini_del_bobolino%2C_20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Firenze,_giardini_del_bobolino,_20.jpg",
      "licence": "CC BY 3.0",
-     "author": "Sailko"
+     "author": "Sailko",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:All media supported by Wikimedia CH Category:Bobolino Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Photographs by User:Sailko Category:Self-published work"
     },
     {
      "title": "File:Via del bobolino 01.JPG",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Via_del_bobolino_01.JPG/960px-Via_del_bobolino_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Via_del_bobolino_01.JPG",
      "licence": "CC BY-SA 3.0",
-     "author": "Sailko"
+     "author": "Sailko",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Bobolino Category:CC-BY-SA-3.0 Category:Photographs by User:Sailko Category:Self-published work Category:Streets in Florence Category:Taken with Canon PowerShot G12"
     }
    ]
   },
   "flo_017": {
    "city": "Florence",
    "name": "The Monterey Cypress of the Giardino Simone Weil",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-17",
+   "sweep": 4,
    "candidates": [
     {
      "title": "File:Firenze - Florence - Giardino Bardini - April 2010 04.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Firenze_-_Florence_-_Giardino_Bardini_-_April_2010_04.jpg/960px-Firenze_-_Florence_-_Giardino_Bardini_-_April_2010_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Firenze_-_Florence_-_Giardino_Bardini_-_April_2010_04.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Txllxt TxllxT"
+     "author": "Txllxt TxllxT",
+     "lat": 43.763883,
+     "lng": 11.257436,
+     "cats": "Category:2010-04-20 Category:April 2010 Italy photographs Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Giardino Bardini - Main stairway gardens Category:Renaissance in Italy Category:Self-published work Category:Spring in Italy"
     },
     {
      "title": "File:Garden entrance, Giardino Giusti, Verona, Italy, August 2025 01.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Garden_entrance%2C_Giardino_Giusti%2C_Verona%2C_Italy%2C_August_2025_01.jpg/960px-Garden_entrance%2C_Giardino_Giusti%2C_Verona%2C_Italy%2C_August_2025_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Garden_entrance,_Giardino_Giusti,_Verona,_Italy,_August_2025_01.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Annika of Nine"
+     "author": "Annika of Nine",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Palazzo Giusti del Giardino (Verona) - Corte d'onore Category:Self-published work"
     },
     {
      "title": "File:Italian garden, Giardino Giusti, Verona, Italy, August 2025 01.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Italian_garden%2C_Giardino_Giusti%2C_Verona%2C_Italy%2C_August_2025_01.jpg/960px-Italian_garden%2C_Giardino_Giusti%2C_Verona%2C_Italy%2C_August_2025_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Italian_garden,_Giardino_Giusti,_Verona,_Italy,_August_2025_01.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Annika of Nine"
+     "author": "Annika of Nine",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Giardino Giusti (Verona) Category:Giardino Giusti (Verona) - Fountains Category:Self-published work"
     },
     {
      "title": "File:Italian garden, Giardino Giusti, Verona, Italy, August 2025 02.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Italian_garden%2C_Giardino_Giusti%2C_Verona%2C_Italy%2C_August_2025_02.jpg/960px-Italian_garden%2C_Giardino_Giusti%2C_Verona%2C_Italy%2C_August_2025_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Italian_garden,_Giardino_Giusti,_Verona,_Italy,_August_2025_02.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Annika of Nine"
+     "author": "Annika of Nine",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Giardino Giusti (Verona) Category:Self-published work"
     },
     {
      "title": "File:Palazzo della gherardesca, giardino 02.JPG",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Palazzo_della_gherardesca%2C_giardino_02.JPG/960px-Palazzo_della_gherardesca%2C_giardino_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Palazzo_della_gherardesca,_giardino_02.JPG",
      "licence": "CC BY 2.5",
-     "author": "sailko"
-    },
-    {
-     "title": "File:Retro e giardino Chiesa di San Giorgio a Tramonte.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Retro_e_giardino_Chiesa_di_San_Giorgio_a_Tramonte.jpg/960px-Retro_e_giardino_Chiesa_di_San_Giorgio_a_Tramonte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Retro_e_giardino_Chiesa_di_San_Giorgio_a_Tramonte.jpg",
-     "licence": "CC0",
-     "author": "Isabelmendonca01"
-    },
-    {
-     "title": "File:Walter Giardino (in 2005).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Walter_Giardino_%28in_2005%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:Walter_Giardino_(in_2005).jpg",
-     "licence": "CC BY-SA 3.0",
-     "author": "Julio C. Rodriguez"
+     "author": "sailko",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-2.5 Category:CC-BY-SA-3.0-migrated Category:GFDL Category:License migration redundant Category:Monopteros in Italy Category:Palazzo Della Gherardesca - Gardens Category:Self-published work"
     }
    ]
   },
   "flo_018": {
    "city": "Florence",
    "name": "The Cypress of the Monte alle Croci Steps",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-17",
+   "sweep": 4,
    "candidates": [
     {
      "title": "File:Lemon, Lemon tree, Florence, Italy.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Lemon%2C_Lemon_tree%2C_Florence%2C_Italy.jpg/960px-Lemon%2C_Lemon_tree%2C_Florence%2C_Italy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Lemon,_Lemon_tree,_Florence,_Italy.jpg",
      "licence": "CC BY 4.0",
-     "author": "Vyacheslav Argenberg"
+     "author": "Vyacheslav Argenberg",
+     "lat": 43.762033,
+     "lng": 11.263336,
+     "cats": "Category:2006 in Florence Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Flora of Tuscany Category:Fruit of Italy Category:Fruit on trees Category:Lemon Category:Photos by Vyacheslav Argenberg Category:Photos by Vyacheslav Argenberg in 2006 Category:Photos by Vyacheslav Argenberg in Italy Category:Self-published work Category:Yellow fruit"
     }
    ]
   },
   "flo_019": {
    "city": "Florence",
    "name": "The Aleppo Pine of Via Giramondino",
-   "checked": "2026-08-13",
-   "sweep": 2,
-   "candidates": [
-    {
-     "title": "File:08A2064.png",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/08A2064.png/960px-08A2064.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:08A2064.png",
-     "licence": "CC BY-SA 4.0",
-     "author": "Davide Procacci",
-     "lat": 41.098572,
-     "lng": 16.871306,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Bari b.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Bari_b.jpg/960px-Bari_b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Bari_b.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Maria Teresa Gabriele",
-     "lat": 41.098572,
-     "lng": 16.871306,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Bari c.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Bari_c.jpg/960px-Bari_c.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Bari_c.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Maria Teresa Gabriele",
-     "lat": 41.098572,
-     "lng": 16.871306,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Bari d.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Bari_d.jpg/960px-Bari_d.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Bari_d.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Maria Teresa Gabriele",
-     "lat": 41.098572,
-     "lng": 16.871306,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Bari e.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bari_e.jpg/960px-Bari_e.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Bari_e.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Maria Teresa Gabriele",
-     "lat": 41.098572,
-     "lng": 16.871306,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Bari f.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Bari_f.jpg/960px-Bari_f.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Bari_f.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Maria Teresa Gabriele",
-     "lat": 41.098572,
-     "lng": 16.871306,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Pino d'Aeppo di.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Pino_d%27Aeppo_di.jpg/960px-Pino_d%27Aeppo_di.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Pino_d%27Aeppo_di.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Maria Teresa Gabriele",
-     "lat": 41.098572,
-     "lng": 16.871306,
-     "source": "commons/famous"
-    }
-   ]
+   "checked": "2026-08-17",
+   "sweep": 4,
+   "candidates": []
   },
   "flo_020": {
    "city": "Florence",
    "name": "The Strawberry Tree of the Giardino dell'Iris",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-08-17",
+   "sweep": 4,
    "candidates": [
     {
      "title": "File:Firenze - Florence - Giardino Bardini - April 2010 04.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Firenze_-_Florence_-_Giardino_Bardini_-_April_2010_04.jpg/960px-Firenze_-_Florence_-_Giardino_Bardini_-_April_2010_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Firenze_-_Florence_-_Giardino_Bardini_-_April_2010_04.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Txllxt TxllxT"
+     "author": "Txllxt TxllxT",
+     "lat": 43.763883,
+     "lng": 11.257436,
+     "cats": "Category:2010-04-20 Category:April 2010 Italy photographs Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Giardino Bardini - Main stairway gardens Category:Renaissance in Italy Category:Self-published work Category:Spring in Italy"
     },
     {
      "title": "File:Garden entrance, Giardino Giusti, Verona, Italy, August 2025 01.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Garden_entrance%2C_Giardino_Giusti%2C_Verona%2C_Italy%2C_August_2025_01.jpg/960px-Garden_entrance%2C_Giardino_Giusti%2C_Verona%2C_Italy%2C_August_2025_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Garden_entrance,_Giardino_Giusti,_Verona,_Italy,_August_2025_01.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Annika of Nine"
+     "author": "Annika of Nine",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Palazzo Giusti del Giardino (Verona) - Corte d'onore Category:Self-published work"
     },
     {
      "title": "File:Italian garden, Giardino Giusti, Verona, Italy, August 2025 01.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Italian_garden%2C_Giardino_Giusti%2C_Verona%2C_Italy%2C_August_2025_01.jpg/960px-Italian_garden%2C_Giardino_Giusti%2C_Verona%2C_Italy%2C_August_2025_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Italian_garden,_Giardino_Giusti,_Verona,_Italy,_August_2025_01.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Annika of Nine"
+     "author": "Annika of Nine",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Giardino Giusti (Verona) Category:Giardino Giusti (Verona) - Fountains Category:Self-published work"
     },
     {
      "title": "File:Italian garden, Giardino Giusti, Verona, Italy, August 2025 02.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Italian_garden%2C_Giardino_Giusti%2C_Verona%2C_Italy%2C_August_2025_02.jpg/960px-Italian_garden%2C_Giardino_Giusti%2C_Verona%2C_Italy%2C_August_2025_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Italian_garden,_Giardino_Giusti,_Verona,_Italy,_August_2025_02.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Annika of Nine"
+     "author": "Annika of Nine",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Giardino Giusti (Verona) Category:Self-published work"
     },
     {
      "title": "File:Palazzo della gherardesca, giardino 02.JPG",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Palazzo_della_gherardesca%2C_giardino_02.JPG/960px-Palazzo_della_gherardesca%2C_giardino_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Palazzo_della_gherardesca,_giardino_02.JPG",
      "licence": "CC BY 2.5",
-     "author": "sailko"
-    },
-    {
-     "title": "File:Retro e giardino Chiesa di San Giorgio a Tramonte.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Retro_e_giardino_Chiesa_di_San_Giorgio_a_Tramonte.jpg/960px-Retro_e_giardino_Chiesa_di_San_Giorgio_a_Tramonte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Retro_e_giardino_Chiesa_di_San_Giorgio_a_Tramonte.jpg",
-     "licence": "CC0",
-     "author": "Isabelmendonca01"
+     "author": "sailko",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-2.5 Category:CC-BY-SA-3.0-migrated Category:GFDL Category:License migration redundant Category:Monopteros in Italy Category:Palazzo Della Gherardesca - Gardens Category:Self-published work"
     },
     {
      "title": "File:Trees, from Piazzale Michelangelo - panoramio.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Trees%2C_from_Piazzale_Michelangelo_-_panoramio.jpg/960px-Trees%2C_from_Piazzale_Michelangelo_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Trees,_from_Piazzale_Michelangelo_-_panoramio.jpg",
      "licence": "CC BY 3.0",
-     "author": "Daniel Lehermeier"
-    },
-    {
-     "title": "File:Walter Giardino (in 2005).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Walter_Giardino_%28in_2005%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:Walter_Giardino_(in_2005).jpg",
-     "licence": "CC BY-SA 3.0",
-     "author": "Julio C. Rodriguez"
+     "author": "Daniel Lehermeier",
+     "lat": 43.762931,
+     "lng": 11.265056,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Italy photographs taken on 2010-06-10 Category:Nature of Florence Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio"
     }
    ]
   },
@@ -22692,6 +22522,548 @@
    "city": "Cordoba",
    "name": "The Ash of Santa Marina",
    "checked": "2026-08-16",
+   "sweep": 4,
+   "candidates": []
+  },
+  "ali_010": {
+   "city": "Alicante",
+   "name": "The Ficus of Avenida de Salamanca",
+   "checked": "2026-08-17",
+   "sweep": 4,
+   "candidates": []
+  },
+  "brt_001": {
+   "city": "Bratislava",
+   "name": "The Sophora of Vajanského Embankment",
+   "checked": "2026-08-17",
+   "sweep": 4,
+   "candidates": [
+    {
+     "title": "File:Bratislava Vajanského nábrežie pamätník 01.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Bratislava_Vajansk%C3%A9ho_n%C3%A1bre%C5%BEie_pam%C3%A4tn%C3%ADk_01.jpg/960px-Bratislava_Vajansk%C3%A9ho_n%C3%A1bre%C5%BEie_pam%C3%A4tn%C3%ADk_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bratislava_Vajansk%C3%A9ho_n%C3%A1bre%C5%BEie_pam%C3%A4tn%C3%ADk_01.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Lure",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Danube Flotilla Monument Category:Monuments and memorials in Bratislava Category:Self-published work Category:Taken with Olympus SP-510UZ Category:Vajanského nábrežie, Bratislava"
+    }
+   ]
+  },
+  "brt_002": {
+   "city": "Bratislava",
+   "name": "The Ash of Rudnayovo Square",
+   "checked": "2026-08-17",
+   "sweep": 4,
+   "candidates": [
+    {
+     "title": "File:Bratislava, Rudnayovo námestie, Slovensko.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Bratislava%2C_Rudnayovo_n%C3%A1mestie%2C_Slovensko.jpg/960px-Bratislava%2C_Rudnayovo_n%C3%A1mestie%2C_Slovensko.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bratislava,_Rudnayovo_n%C3%A1mestie,_Slovensko.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "LMih",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Photos by User:LMih Bratislava Category:Rudnayovo námestie, Bratislava Category:Self-published work"
+    },
+    {
+     "title": "File:Bratislava, Rudnayovo námestie, schody.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Bratislava%2C_Rudnayovo_n%C3%A1mestie%2C_schody.JPG/960px-Bratislava%2C_Rudnayovo_n%C3%A1mestie%2C_schody.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bratislava,_Rudnayovo_n%C3%A1mestie,_schody.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "Palickap",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Rudnayovo námestie, Bratislava Category:Self-published work"
+    },
+    {
+     "title": "File:Bratislava, Rudnayovo námestie.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Bratislava%2C_Rudnayovo_n%C3%A1mestie.jpg/960px-Bratislava%2C_Rudnayovo_n%C3%A1mestie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bratislava,_Rudnayovo_n%C3%A1mestie.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Palickap",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Rudnayovo námestie, Bratislava Category:Self-published work"
+    },
+    {
+     "title": "File:Bratislava Rudnayovo nám celkový pohľad.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Bratislava_Rudnayovo_n%C3%A1m_celkov%C3%BD_poh%C4%BEad.jpg/960px-Bratislava_Rudnayovo_n%C3%A1m_celkov%C3%BD_poh%C4%BEad.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bratislava_Rudnayovo_n%C3%A1m_celkov%C3%BD_poh%C4%BEad.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Lure",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Monument Bernolák, Rudnayovo námestie, Bratislava Category:Rudnayovo námestie, Bratislava Category:Self-published work Category:Taken with Olympus SP-510UZ"
+    },
+    {
+     "title": "File:Bratislava Rudnayovo nám terasa03.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bratislava_Rudnayovo_n%C3%A1m_terasa03.jpg/960px-Bratislava_Rudnayovo_n%C3%A1m_terasa03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bratislava_Rudnayovo_n%C3%A1m_terasa03.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Lure",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Rudnayovo námestie, Bratislava Category:Self-published work Category:Taken with Olympus SP-510UZ Category:Wrought iron in Slovakia"
+    },
+    {
+     "title": "File:Bratislava Rudnayovo námestie.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Bratislava_Rudnayovo_n%C3%A1mestie.jpg/960px-Bratislava_Rudnayovo_n%C3%A1mestie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bratislava_Rudnayovo_n%C3%A1mestie.jpg",
+     "licence": "Public domain",
+     "author": "Miro Regitko - cc-by-3.0  \n\n Peter Zelizňák   (photo)",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Images by Peter Zeliznak Category:PD-self Category:Plaques in Bratislava Category:Rudnayovo námestie, Bratislava Category:Self-published work"
+    }
+   ]
+  },
+  "brt_003": {
+   "city": "Bratislava",
+   "name": "The Paulownia of Škarniclova Park",
+   "checked": "2026-08-17",
+   "sweep": 4,
+   "candidates": [
+    {
+     "title": "iNat obs 166306836 (Paulownia tomentosa)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/287974553/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/166306836",
+     "licence": "CC BY",
+     "author": "(c) Daniel Cahen, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "48.1460466667,17.099255"
+    },
+    {
+     "title": "iNat obs 166306837 (Paulownia tomentosa)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/287974595/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/166306837",
+     "licence": "CC BY",
+     "author": "(c) Daniel Cahen, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "48.1450816667,17.0991066667"
+    }
+   ]
+  },
+  "brt_004": {
+   "city": "Bratislava",
+   "name": "The Oak of Šulekova Steps",
+   "checked": "2026-08-17",
+   "sweep": 4,
+   "candidates": [
+    {
+     "title": "File:Bratislava Šulekova 03 02.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Bratislava_%C5%A0ulekova_03_02.jpg/960px-Bratislava_%C5%A0ulekova_03_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bratislava_%C5%A0ulekova_03_02.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Lure",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Self-published work Category:Taken with Nikon D3100 Category:Šulekova 3, Bratislava"
+    },
+    {
+     "title": "File:Bratislava Šulekova 03 03.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Bratislava_%C5%A0ulekova_03_03.jpg/960px-Bratislava_%C5%A0ulekova_03_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bratislava_%C5%A0ulekova_03_03.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Lure",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Self-published work Category:Taken with Nikon D3100 Category:Šulekova 3, Bratislava"
+    },
+    {
+     "title": "File:Bratislava Šulekova 05 04.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bratislava_%C5%A0ulekova_05_04.jpg/960px-Bratislava_%C5%A0ulekova_05_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bratislava_%C5%A0ulekova_05_04.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Lure",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Self-published work Category:Taken with Nikon D3100 Category:Šulekova 5, Bratislava"
+    },
+    {
+     "title": "File:Bratislava Šulekova 07 01.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Bratislava_%C5%A0ulekova_07_01.jpg/960px-Bratislava_%C5%A0ulekova_07_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bratislava_%C5%A0ulekova_07_01.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Lure",
+     "lat": 48.1486,
+     "lng": 17.0981,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Taken with Nikon D3100 Category:Villas in Bratislava Category:Šulekova, Bratislava"
+    },
+    {
+     "title": "File:Bratislava Šulekova 17 01.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Bratislava_%C5%A0ulekova_17_01.jpg/960px-Bratislava_%C5%A0ulekova_17_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bratislava_%C5%A0ulekova_17_01.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Lure",
+     "lat": 48.1504,
+     "lng": 17.0959,
+     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Bratislava I Category:Cultural heritage monuments in Slovakia missing SDC depicts Category:Cultural heritage monuments in Slovakia missing SDC location of creation Category:Cultural heritage monuments in Slovakia with known IDs Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Taken with Nikon D3100 Category:Villas in Bratislava Category:Šulekova, Bratislava"
+    },
+    {
+     "title": "File:Bratislava Šulekova 17 02.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Bratislava_%C5%A0ulekova_17_02.jpg/960px-Bratislava_%C5%A0ulekova_17_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bratislava_%C5%A0ulekova_17_02.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Lure",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Self-published work Category:Taken with Nikon D3100 Category:Villas in Bratislava Category:Šulekova, Bratislava"
+    },
+    {
+     "title": "File:Bratislava Šulekova Ján Levoslav Bella 496.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Bratislava_%C5%A0ulekova_J%C3%A1n_Levoslav_Bella_496.jpg/960px-Bratislava_%C5%A0ulekova_J%C3%A1n_Levoslav_Bella_496.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bratislava_%C5%A0ulekova_J%C3%A1n_Levoslav_Bella_496.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "GFreihalter",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Busts in Bratislava Category:CC-BY-SA-3.0 Category:Files by User:GFreihalter/Slowakei 2019 Category:Ján Levoslav Bella Category:Self-published work Category:Šulekova, Bratislava"
+    }
+   ]
+  },
+  "brt_005": {
+   "city": "Bratislava",
+   "name": "The Birch of Mišíkova Street",
+   "checked": "2026-08-17",
+   "sweep": 4,
+   "candidates": [
+    {
+     "title": "File:Bratislava Mišíkova 19.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bratislava_Mi%C5%A1%C3%ADkova_19.jpg/960px-Bratislava_Mi%C5%A1%C3%ADkova_19.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bratislava_Mi%C5%A1%C3%ADkova_19.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Lure",
+     "lat": 48.1511,
+     "lng": 17.1001,
+     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Slovakia missing SDC depicts Category:Cultural heritage monuments in Slovakia missing SDC location of creation Category:Cultural heritage monuments in Slovakia with known IDs Category:Files with coordinates missing SDC location of creation Category:Mišíkova, Bratislava Category:Self-published work Category:Taken with Nikon D3100 Category:Villas in Bratislava"
+    }
+   ]
+  },
+  "fer_001": {
+   "city": "Ferrara",
+   "name": "The Gray Poplar of Palazzo dei Diamanti",
+   "checked": "2026-08-17",
+   "sweep": 4,
+   "candidates": [
+    {
+     "title": "File:Pioppo canescente di Palazzo dei Diamanti 1.jpg (Wikidata Q56629606)",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Pioppo_canescente_di_Palazzo_dei_Diamanti_1.jpg/960px-Pioppo_canescente_di_Palazzo_dei_Diamanti_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Pioppo_canescente_di_Palazzo_dei_Diamanti_1.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Nicola Quirico",
+     "lat": 44.842344,
+     "lng": 11.619656,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2019 Category:Images from Wiki Loves Monuments 2019 in Italy Category:Images from Wiki Loves Monuments 2019 in Italy - Emilia-Romagna Category:Images from Wiki Loves Monuments 2019 in Italy - veteran trees Category:Images from Wiki Loves Monuments 2019 in Italy - without local award Category:Italy photographs taken on 2019-08-29 Category:Pioppo canescente di Palazzo dei Diamanti (Ferrara) Category:Self-published work Category:Trees in Italy in August Category:Uploaded via Campaign:wlm-it",
+     "source": "wikidata/Q56629606"
+    },
+    {
+     "title": "File:01 Palazzo dei Diamanti - Ferrara.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/01_Palazzo_dei_Diamanti_-_Ferrara.jpg/960px-01_Palazzo_dei_Diamanti_-_Ferrara.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:01_Palazzo_dei_Diamanti_-_Ferrara.jpg",
+     "licence": "CC BY-SA 2.5",
+     "author": "Lungoleno",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:April 2014 in Ferrara Category:CC-BY-SA-2.5 Category:Italy photographs taken on 2014-04-19 Category:Palazzo dei Diamanti (Ferrara) - External facade"
+    }
+   ]
+  },
+  "fer_002": {
+   "city": "Ferrara",
+   "name": "The Bagolaro of Parco Massari",
+   "checked": "2026-08-17",
+   "sweep": 4,
+   "candidates": [
+    {
+     "title": "File:Bagolaro, parco Massari (Ferrara) 0.jpg (Wikidata Q56629556)",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bagolaro%2C_parco_Massari_%28Ferrara%29_0.jpg/960px-Bagolaro%2C_parco_Massari_%28Ferrara%29_0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bagolaro,_parco_Massari_(Ferrara)_0.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Nicola Quirico",
+     "lat": 44.843975,
+     "lng": 11.624161,
+     "cats": "Category:Bagolaro di parco Massari (Ferrara) Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2020 Category:Images from Wiki Loves Monuments 2020 in Italy Category:Images from Wiki Loves Monuments 2020 in Italy - Emilia-Romagna Category:Images from Wiki Loves Monuments 2020 in Italy - veteran trees Category:Images from Wiki Loves Monuments 2020 in Italy - without local award Category:Italy photographs taken on 2020-09-11 Category:Photographs by User:Nicola Quirico Category:Photographs of Ferrara by User:Nicola Quirico Category:Photographs of Nature by User:Nicola Quirico Category:Self-published work Category:Summer in Ferrara Category:Trees in summer in Italy Category:Uploaded via Campaign:wlm-it",
+     "source": "wikidata/Q56629556"
+    },
+    {
+     "title": "File:Bagolaro, parco Massari (Ferrara) 0.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bagolaro%2C_parco_Massari_%28Ferrara%29_0.jpg/960px-Bagolaro%2C_parco_Massari_%28Ferrara%29_0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bagolaro,_parco_Massari_(Ferrara)_0.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Nicola Quirico",
+     "lat": 44.843975,
+     "lng": 11.624161,
+     "cats": "Category:Bagolaro di parco Massari (Ferrara) Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2020 Category:Images from Wiki Loves Monuments 2020 in Italy Category:Images from Wiki Loves Monuments 2020 in Italy - Emilia-Romagna Category:Images from Wiki Loves Monuments 2020 in Italy - veteran trees Category:Images from Wiki Loves Monuments 2020 in Italy - without local award Category:Italy photographs taken on 2020-09-11 Category:Photographs by User:Nicola Quirico Category:Photographs of Ferrara by User:Nicola Quirico Category:Photographs of Nature by User:Nicola Quirico Category:Self-published work Category:Summer in Ferrara Category:Trees in summer in Italy Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Bagolaro, parco Massari (Ferrara) 1.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Bagolaro%2C_parco_Massari_%28Ferrara%29_1.jpg/960px-Bagolaro%2C_parco_Massari_%28Ferrara%29_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bagolaro,_parco_Massari_(Ferrara)_1.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Nicola Quirico",
+     "lat": 44.843975,
+     "lng": 11.624161,
+     "cats": "Category:Bagolaro di parco Massari (Ferrara) Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2020 Category:Images from Wiki Loves Monuments 2020 in Italy Category:Images from Wiki Loves Monuments 2020 in Italy - Emilia-Romagna Category:Images from Wiki Loves Monuments 2020 in Italy - veteran trees Category:Images from Wiki Loves Monuments 2020 in Italy - without local award Category:Italy photographs taken on 2020-09-11 Category:Photographs by User:Nicola Quirico Category:Photographs of Ferrara by User:Nicola Quirico Category:Photographs of Nature by User:Nicola Quirico Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Bagolaro, parco Massari (Ferrara) 2.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Bagolaro%2C_parco_Massari_%28Ferrara%29_2.jpg/960px-Bagolaro%2C_parco_Massari_%28Ferrara%29_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bagolaro,_parco_Massari_(Ferrara)_2.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Nicola Quirico",
+     "lat": 44.843975,
+     "lng": 11.624161,
+     "cats": "Category:Bagolaro di parco Massari (Ferrara) Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2020 Category:Images from Wiki Loves Monuments 2020 in Italy Category:Images from Wiki Loves Monuments 2020 in Italy - Emilia-Romagna Category:Images from Wiki Loves Monuments 2020 in Italy - veteran trees Category:Images from Wiki Loves Monuments 2020 in Italy - without local award Category:Italy photographs taken on 2020-09-11 Category:Photographs by User:Nicola Quirico Category:Photographs of Ferrara by User:Nicola Quirico Category:Photographs of Nature by User:Nicola Quirico Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Bagolaro, parco Massari (Ferrara) 3.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Bagolaro%2C_parco_Massari_%28Ferrara%29_3.jpg/960px-Bagolaro%2C_parco_Massari_%28Ferrara%29_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bagolaro,_parco_Massari_(Ferrara)_3.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Nicola Quirico",
+     "lat": 44.843975,
+     "lng": 11.624161,
+     "cats": "Category:Bagolaro di parco Massari (Ferrara) Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2020 Category:Images from Wiki Loves Monuments 2020 in Italy Category:Images from Wiki Loves Monuments 2020 in Italy - Emilia-Romagna Category:Images from Wiki Loves Monuments 2020 in Italy - veteran trees Category:Images from Wiki Loves Monuments 2020 in Italy - without local award Category:Italy photographs taken on 2020-09-11 Category:Photographs by User:Nicola Quirico Category:Photographs of Ferrara by User:Nicola Quirico Category:Photographs of Nature by User:Nicola Quirico Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Bagolaro, parco Massari (Ferrara) 4.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Bagolaro%2C_parco_Massari_%28Ferrara%29_4.jpg/960px-Bagolaro%2C_parco_Massari_%28Ferrara%29_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bagolaro,_parco_Massari_(Ferrara)_4.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Nicola Quirico",
+     "lat": 44.843975,
+     "lng": 11.624161,
+     "cats": "Category:Bagolaro di parco Massari (Ferrara) Category:Black and white photographs of Ferrara Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2020 Category:Images from Wiki Loves Monuments 2020 in Italy Category:Images from Wiki Loves Monuments 2020 in Italy - Emilia-Romagna Category:Images from Wiki Loves Monuments 2020 in Italy - veteran trees Category:Images from Wiki Loves Monuments 2020 in Italy - without local award Category:Italy photographs taken on 2020-09-11 Category:Photographs by User:Nicola Quirico Category:Photographs of Ferrara by User:Nicola Quirico Category:Photographs of Nature by User:Nicola Quirico Category:Roots Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Bagolaro, parco Massari (Ferrara) 5.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Bagolaro%2C_parco_Massari_%28Ferrara%29_5.jpg/960px-Bagolaro%2C_parco_Massari_%28Ferrara%29_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bagolaro,_parco_Massari_(Ferrara)_5.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Nicola Quirico",
+     "lat": 44.843975,
+     "lng": 11.624161,
+     "cats": "Category:Bagolaro di parco Massari (Ferrara) Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2020 Category:Images from Wiki Loves Monuments 2020 in Italy Category:Images from Wiki Loves Monuments 2020 in Italy - Emilia-Romagna Category:Images from Wiki Loves Monuments 2020 in Italy - veteran trees Category:Images from Wiki Loves Monuments 2020 in Italy - without local award Category:Italy photographs taken on 2020-09-11 Category:Moss on trees Category:Photographs by User:Nicola Quirico Category:Photographs of Ferrara by User:Nicola Quirico Category:Photographs of Nature by User:Nicola Quirico Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Staranzano - bagolaro - 202109171338.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Staranzano_-_bagolaro_-_202109171338.jpg/960px-Staranzano_-_bagolaro_-_202109171338.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Staranzano_-_bagolaro_-_202109171338.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Giuseppe Basile 99",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Bagolaro (Staranzano) Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Files uploaded via app Wiki Loves Monuments Italia in 2021 Category:Images from Wiki Loves Monuments 2021 Category:Images from Wiki Loves Monuments 2021 in Italy Category:Images from Wiki Loves Monuments 2021 in Italy - Friuli-Venezia Giulia Category:Images from Wiki Loves Monuments 2021 in Italy - veteran trees Category:Images from Wiki Loves Monuments 2021 in Italy - without local award Category:Italy photographs taken on 2021-09-14 Category:Self-published work Category:Staranzano"
+    },
+    {
+     "title": "File:Staranzano - bagolaro - 202109171338 2.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Staranzano_-_bagolaro_-_202109171338_2.jpg/960px-Staranzano_-_bagolaro_-_202109171338_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Staranzano_-_bagolaro_-_202109171338_2.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Giuseppe Basile 99",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Bagolaro (Staranzano) Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Files uploaded via app Wiki Loves Monuments Italia in 2021 Category:Images from Wiki Loves Monuments 2021 Category:Images from Wiki Loves Monuments 2021 in Italy Category:Images from Wiki Loves Monuments 2021 in Italy - Friuli-Venezia Giulia Category:Images from Wiki Loves Monuments 2021 in Italy - veteran trees Category:Images from Wiki Loves Monuments 2021 in Italy - without local award Category:Italy photographs taken on 2021-09-14 Category:Self-published work Category:Staranzano"
+    }
+   ]
+  },
+  "fer_003": {
+   "city": "Ferrara",
+   "name": "The Ginkgo of Parco Massari",
+   "checked": "2026-08-17",
+   "sweep": 4,
+   "candidates": [
+    {
+     "title": "File:Alberi di Ginkgo biloba nel Parco Massari.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Alberi_di_Ginkgo_biloba_nel_Parco_Massari.JPG/960px-Alberi_di_Ginkgo_biloba_nel_Parco_Massari.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Alberi_di_Ginkgo_biloba_nel_Parco_Massari.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Nicola Quirico",
+     "lat": 44.84372916,
+     "lng": 11.62411485,
+     "cats": "Category:Autumn in Ferrara Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Ginkgo biloba in Ferrara Category:Ginkgo biloba trees with yellow leaves Category:Italy photographs taken on 2013-11-25 Category:November 2013 in Ferrara Category:Parco Massari (Ferrara) Category:Photographs by User:Nicola Quirico Category:Photographs of Ferrara by User:Nicola Quirico Category:Photographs of Nature by User:Nicola Quirico Category:Playgrounds in Ferrara Category:Self-published work Category:Taken with Nikon D3000 Category:Trees in Italy in November"
+    }
+   ]
+  },
+  "fer_004": {
+   "city": "Ferrara",
+   "name": "The Ginkgo of the Biblioteca Ariostea",
+   "checked": "2026-08-17",
+   "sweep": 4,
+   "candidates": [
+    {
+     "title": "File:Ginkgo biloba Palazzo Paradiso (Ferrara).jpg (Wikidata Q55741364)",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Ginkgo_biloba_Palazzo_Paradiso_%28Ferrara%29.jpg/960px-Ginkgo_biloba_Palazzo_Paradiso_%28Ferrara%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ginkgo_biloba_Palazzo_Paradiso_(Ferrara).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Nicola Quirico",
+     "lat": 44.832222,
+     "lng": 11.621667,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Ginkgo biloba in palazzo Paradiso (Ferrara) Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Emilia-Romagna Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-11 Category:Photographs by User:Nicola Quirico Category:Photographs of Ferrara by User:Nicola Quirico Category:Photographs of Nature by User:Nicola Quirico Category:Self-published work Category:September 2018 in Ferrara Category:Uploaded via Campaign:wlm-it",
+     "source": "wikidata/Q55741364"
+    },
+    {
+     "title": "File:Decorazione natalizia, piazza Ariostea, Ferrara.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Decorazione_natalizia%2C_piazza_Ariostea%2C_Ferrara.jpg/960px-Decorazione_natalizia%2C_piazza_Ariostea%2C_Ferrara.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Decorazione_natalizia,_piazza_Ariostea,_Ferrara.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Nicola Quirico",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Christmas lights in Ferrara Category:December 2023 in Ferrara Category:Italy photographs taken on 2023-12-14 Category:Nativity scenes of Ferrara Category:Photographs by User:Nicola Quirico Category:Photographs of Ferrara by User:Nicola Quirico Category:Piazza Ariostea (Ferrara) Category:Self-published work"
+    },
+    {
+     "title": "File:Ginkgo biloba Biblioteca Comunale Ariostea Ferrara.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/6/61/Ginkgo_biloba_Biblioteca_Comunale_Ariostea_Ferrara.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Ginkgo_biloba_Biblioteca_Comunale_Ariostea_Ferrara.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Zolletta67",
+     "lat": 44.83295,
+     "lng": 11.62164,
+     "cats": "Category:Biblioteca comunale Ariostea (Ferrara) Category:CC-BY-SA-4.0 Category:Fallen leaves Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Yellow Ginkgo biloba leaves"
+    },
+    {
+     "title": "File:Ginkgo biloba Palazzo Paradiso (Ferrara).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Ginkgo_biloba_Palazzo_Paradiso_%28Ferrara%29.jpg/960px-Ginkgo_biloba_Palazzo_Paradiso_%28Ferrara%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ginkgo_biloba_Palazzo_Paradiso_(Ferrara).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Nicola Quirico",
+     "lat": 44.832222,
+     "lng": 11.621667,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Ginkgo biloba in palazzo Paradiso (Ferrara) Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Emilia-Romagna Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-11 Category:Photographs by User:Nicola Quirico Category:Photographs of Ferrara by User:Nicola Quirico Category:Photographs of Nature by User:Nicola Quirico Category:Self-published work Category:September 2018 in Ferrara Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Ginkgo biloba Palazzo Paradiso (Ferrara) 01.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Ginkgo_biloba_Palazzo_Paradiso_%28Ferrara%29_01.jpg/960px-Ginkgo_biloba_Palazzo_Paradiso_%28Ferrara%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ginkgo_biloba_Palazzo_Paradiso_(Ferrara)_01.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Nicola Quirico",
+     "lat": 44.832222,
+     "lng": 11.621667,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Ginkgo biloba in palazzo Paradiso (Ferrara) Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Emilia-Romagna Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-11 Category:Photographs by User:Nicola Quirico Category:Photographs of Ferrara by User:Nicola Quirico Category:Photographs of Nature by User:Nicola Quirico Category:Self-published work Category:September 2018 in Ferrara Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Ginkgo biloba Palazzo Paradiso (Ferrara) 02.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Ginkgo_biloba_Palazzo_Paradiso_%28Ferrara%29_02.jpg/960px-Ginkgo_biloba_Palazzo_Paradiso_%28Ferrara%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ginkgo_biloba_Palazzo_Paradiso_(Ferrara)_02.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Nicola Quirico",
+     "lat": 44.832222,
+     "lng": 11.621667,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Ginkgo biloba in palazzo Paradiso (Ferrara) Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Emilia-Romagna Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-11 Category:Photographs by User:Nicola Quirico Category:Photographs of Ferrara by User:Nicola Quirico Category:Photographs of Nature by User:Nicola Quirico Category:Self-published work Category:September 2018 in Ferrara Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Ginkgo biloba Palazzo Paradiso (Ferrara) 03.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Ginkgo_biloba_Palazzo_Paradiso_%28Ferrara%29_03.jpg/960px-Ginkgo_biloba_Palazzo_Paradiso_%28Ferrara%29_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ginkgo_biloba_Palazzo_Paradiso_(Ferrara)_03.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Nicola Quirico",
+     "lat": 44.832222,
+     "lng": 11.621667,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Ginkgo biloba in palazzo Paradiso (Ferrara) Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Emilia-Romagna Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-11 Category:Photographs by User:Nicola Quirico Category:Photographs of Ferrara by User:Nicola Quirico Category:Photographs of Nature by User:Nicola Quirico Category:Self-published work Category:September 2018 in Ferrara Category:Trees in summer in Italy Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Piazza Ariostea Ferrara overview.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Piazza_Ariostea_Ferrara_overview.jpg/960px-Piazza_Ariostea_Ferrara_overview.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Piazza_Ariostea_Ferrara_overview.jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "https://www.flickr.com/photos/brtsergio/",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-2.0 Category:Flickr images reviewed by FlickreviewR 2 Category:Piazza Ariostea (Ferrara)"
+    }
+   ]
+  },
+  "fer_005": {
+   "city": "Ferrara",
+   "name": "The Plane of Viale Po",
+   "checked": "2026-08-17",
+   "sweep": 4,
+   "candidates": []
+  },
+  "grz_001": {
+   "city": "Graz",
+   "name": "The Schlossberg Field Maple",
+   "checked": "2026-08-17",
+   "sweep": 4,
+   "candidates": [
+    {
+     "title": "File:Graz Schlossberg Stollen-4474.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Graz_Schlossberg_Stollen-4474.jpg/960px-Graz_Schlossberg_Stollen-4474.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Graz_Schlossberg_Stollen-4474.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Isiwal",
+     "lat": 47.073218,
+     "lng": 15.436943,
+     "cats": "Category:Austria photographs taken on 2019-11-21 Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Austria check done Category:Cultural heritage monuments in Austria with known IDs Category:Media from WikiDaheim 2020 in Austria/Cultural heritage monuments Category:Media from WikiDaheim 2020 in Austria/all Category:November 2019 in Graz Category:Quality images Category:Quality images by Isiwal Category:Quality images of Graz Category:Quality images supported by Wikimedia Österreich in 2020 Category:Rail tracks in Graz Category:Schlossbergstollen Category:Self-published work Category:Tunnels in Graz Category:Uploaded via Campaign:wlm-at"
+    },
+    {
+     "title": "iNat obs 344159433 (Acer platanoides)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/627044435/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/344159433",
+     "licence": "CC BY",
+     "author": "(c) Daniel K, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "47.0758522222,15.4383072222"
+    },
+    {
+     "title": "iNat obs 210267516 (Acer platanoides)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/371935100/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/210267516",
+     "licence": "CC BY",
+     "author": "(c) E. A., some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "47.0767839231,15.4379017463"
+    }
+   ]
+  },
+  "grz_002": {
+   "city": "Graz",
+   "name": "The Volksgarten Oak",
+   "checked": "2026-08-17",
+   "sweep": 4,
+   "candidates": []
+  },
+  "grz_003": {
+   "city": "Graz",
+   "name": "The Volksgarten Plane of Muhlgasse",
+   "checked": "2026-08-17",
+   "sweep": 4,
+   "candidates": []
+  },
+  "grz_004": {
+   "city": "Graz",
+   "name": "The Volksgarten Plane of Volksgartenstrasse",
+   "checked": "2026-08-17",
+   "sweep": 4,
+   "candidates": []
+  },
+  "grz_005": {
+   "city": "Graz",
+   "name": "The Augarten Field Maple",
+   "checked": "2026-08-17",
+   "sweep": 4,
+   "candidates": []
+  },
+  "grz_006": {
+   "city": "Graz",
+   "name": "The Schillerplatz Plane",
+   "checked": "2026-08-17",
+   "sweep": 4,
+   "candidates": []
+  },
+  "grz_007": {
+   "city": "Graz",
+   "name": "The Panoramagasse Oak (No. 54)",
+   "checked": "2026-08-17",
+   "sweep": 4,
+   "candidates": []
+  },
+  "grz_008": {
+   "city": "Graz",
+   "name": "The Panoramagasse Oak (No. 56)",
+   "checked": "2026-08-17",
    "sweep": 4,
    "candidates": []
   }
