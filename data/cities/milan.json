@@ -2,10 +2,10 @@
   "city": "Milan",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Milan's remarkable trees are rarely medieval; the city rebuilt itself too many times, and around itself even more, for old wood to survive by accident. What lasted here did so because an institution kept records (a university's ginkgo pair, brought from China in 1775), a neighbourhood organised (a paulownia a Brera committee saved from a car park in 2016), or a park changed its job entirely (a horse-racing track that became a school for sick children in 1919 and kept its oaks). Fifteen trees, and almost every one owes its survival to a specific human decision.",
-  "meta_description": "Milan's eighteen remarkable trees, from a 1775 ginkgo pair to a plane tree a Brera committee saved from demolition in 2016.",
+  "intro": "Milan's remarkable trees are rarely medieval; the city rebuilt itself too many times, and around itself even more, for old wood to survive by accident. What lasted here did so because an institution kept records (a university's ginkgo pair, brought from China in 1775), a neighbourhood organised (a paulownia a Brera committee saved from a car park in 2016), or a park changed its job entirely (a horse-racing track that became a school for sick children in 1919 and kept its oaks). Nineteen trees, and almost every one owes its survival to a specific human decision.",
+  "meta_description": "Milan's nineteen remarkable trees, from a 1775 ginkgo pair to a plane tree a Brera committee saved from demolition in 2016.",
   "question_answer": "Milan's oldest tree is one of a pair of ginkgo trees in the Orto Botanico di Brera, planted in 1775 when the garden's founders imported them directly from China. Both are now around 250 years old and grow a few steps from the garden's 18th-century greenhouse on Via Brera 28.",
-  "question_meta": "Milan's oldest tree is a 250-year-old ginkgo pair at the Orto Botanico di Brera, planted from Chinese seed in 1775. Its story, plus seventeen more trees.",
+  "question_meta": "Milan's oldest tree is a 250-year-old ginkgo pair at the Orto Botanico di Brera, planted from Chinese seed in 1775. Its story, plus eighteen more trees.",
   "question_context": "Milan has never been an easy city for an old tree to survive in. Wars, plague and relentless nineteenth and twentieth century redevelopment levelled most of what predates them, so almost nothing on this list is medieval. The one clear exception is the university's own ginkgo biloba pair, a male and a female planted together in 1775 when Abbot Fulgenzio Vitman was building the Orto Botanico di Brera for Empress Maria Theresa's new medical faculty, importing seed directly from China less than two decades after the species had reached Europe at all. Italy's monumental tree registry calculates their age from growth data at 235 years, a little short of the 251 years a straight planting-date count would give; this page states both rather than picking one, since the gap is exactly the kind of rounding error that comes from measuring a slow grower by two different methods. Either way, they are Milan's oldest trees by a wide margin over anything else here, and the garden marked their joint 250th anniversary with a public conference in March 2026.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Milan's remarkable trees free to visit?",
-      "a": "All fifteen on this list are free. Unlike Rome or Florence, none of Milan's most remarkable trees stand inside a paid garden or monument; the closest thing to a ticket is Parco Trotter's restricted opening hours, since its grounds double as a working school."
+      "a": "All nineteen on this list are free. Unlike Rome or Florence, none of Milan's most remarkable trees stand inside a paid garden or monument; the closest thing to a ticket is Parco Trotter's restricted opening hours, since its grounds double as a working school, and the villa courtyard housing the Archdevil hackberry, which asks for quiet discretion rather than a fee since it is a lived-in community."
     },
     {
       "q": "Why does Milan have so few genuinely ancient trees compared to Rome or Florence?",
@@ -633,6 +633,36 @@
         "status": "missing"
       },
       "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "mil_019",
+      "name": "The Archdevil of Villa Marietti Radice Fossati",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Via Villapizzone 9, Milano",
+        "latitude": 45.500933,
+        "longitude": 9.147947,
+        "neighbourhood": "Villapizzone"
+      },
+      "story": "The comune's own page for this hackberry calls it arcidiavolo, the archdevil, after a folk tale that blamed its hooked leaves on Lucifer, said to have carried the species down from heaven clutched in his claws. It is an odd name for a tree that spends most of the year simply shading a Milanese courtyard, and the city's monumental-tree list is usually much drier than that.\n\nThe courtyard belongs to Villa Marietti Radice Fossati, in Villapizzone, northwest of the centre. Built in the seventeenth century for the Gallina family and taken over by the Radice Fossati family in 1836, the villa fell into disrepair through the twentieth century until the Comune di Milano acquired it in 1993 and lent it to a small community of Jesuit fathers, who still live there today. Its inner courtyard is square, arcaded on three sides, and the hackberry stands at the centre of it, a trunk 4.2 metres around holding up a canopy that spreads more than 20 metres.\n\nBecause the villa is a lived-in place rather than a public park, the city's own guidance is to enter with the discretion due to an inhabited place rather than to treat the gate as a tourist entrance. No age has ever been published for the tree, only its girth, among the largest recorded for its species anywhere in Milan.",
+      "verified_sources": [
+        "https://www.comune.milano.it/argomenti/ambiente-e-animali/gli-alberi-monumentali-a-milano/il-bagolaro-di-villa-marietti-radice-fossati",
+        "MASAF national register, Milano, Villa Marietti Radice Fossati (Celtis australis, girth 420 cm, height 18 m)"
+      ],
+      "access": "Free to enter through the villa's gate, but it is a lived-in community, not a public park; the city's own guidance is to enter with the discretion due to an inhabited place.",
+      "transport": "Short walk from Milano Villapizzone railway station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Held back by an earlier pass only for standing alone, 4.7 km northwest of the Duomo and 2.5 km from the nearest published cluster (Villa Litta). Publishing it now: the count doctrine (CLAUDE.md) is explicit that being far from other trees is not a reason to withhold a tree that otherwise clears the bar, and this one has two independent sources (the comune's own monumental-tree page and the MASAF national register) plus a genuinely distinctive story.",
       "location_precision": "confirmed"
     }
   ],

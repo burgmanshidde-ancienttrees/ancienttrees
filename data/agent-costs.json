@@ -2001,6 +2001,26 @@
     "wasted": 0,
     "brief_wrong": false
    }
+  ],
+  "2026-08-17": [
+   {
+    "target": "rome",
+    "kind": "verify",
+    "tokens": 91284,
+    "trees": 0,
+    "note": "Dispatched on 3 MASAF candidates that looked unmined in the passcheck brief; agent found all three belong to the already-blocked San Sisto nursery cluster (access restricted, blocked since 2026-08-05). Zero yield, but caught a stale/wrong brief premise and left a dated note in data/leads/rome.json so a future brief does not regenerate the same candidates.",
+    "wasted": 91284,
+    "brief_wrong": true
+   },
+   {
+    "target": "milan",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 1,
+    "note": "Session work (tokens not metered by the harness). Wrote mil_019, the Bagolaro/Archdevil of Villa Marietti Radice Fossati, already verified in an earlier pass leads file (2 sources: comune.milano.it + MASAF register) and held back only for standing alone. Also fixed a stale tree-count bug found along the way: intro and one FAQ answer still said fifteen trees while the city had already grown to 18 before this session, now 19 everywhere.",
+    "wasted": 0,
+    "brief_wrong": false
+   }
   ]
  }
 }
