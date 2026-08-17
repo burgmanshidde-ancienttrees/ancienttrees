@@ -4,50 +4,121 @@
       "register_id": 236,
       "name_sk": "Magnólia na Palisádach",
       "species": "Saucer Magnolia (Magnolia x soulangeana)",
-      "coordinates": [48.1484, 17.1023],
+      "coordinates": [
+        48.1484,
+        17.1023
+      ],
       "reason": "Register + krizom-krazom.eu agree on measurements (10m tall, 140cm girth, 14m crown, 20 years old at 1996 designation, so roughly 50 years old now), but locality is 'Palisády 28, v záhrade' (in the garden) on an affluent villa street; no evidence found this garden is open to the public, and it also reads as a young, unremarkable specimen rather than a giant. Access unresolved, not a strong candidate even if access were confirmed."
     },
     {
       "register_id": 215,
       "name_sk": "Ginko na Godrovej ulici",
       "species": "Ginkgo (Ginkgo biloba)",
-      "coordinates": [48.1496, 17.0999],
-      "reason": "Register + krizom-krazom.eu agree on measurements (20m tall, 200cm girth, 12m crown, 80 years old at 1996, so roughly 110 now, a genuinely good age). Locality is 'Godrova 8, predzáhradka' (front garden of a private house). Unlike the Mišíkova birch ('pred domom'), this is explicitly called a garden, not a street frontage, and no evidence was found that it is visible or reachable without entering private property. Worth a second look with street-level imagery; a strong tree if access can be shown."
+      "coordinates": [
+        48.1496,
+        17.0999
+      ],
+      "reason": "SHIPPED 2026-08-17 as brt_007, 'The Ginkgo of Godrova Street', in data/research/bratislava-verified.json. A monumentaltrees.com photo (5 Aug 2011) shows the crown visible above the boundary from what reads as street level, consistent with a front garden ('predzáhradka') rather than an enclosed rear garden; pin marks the known tree position, access line states the garden itself is not open to enter. Kept here as a record in case a future pass finds street-level imagery contradicting the visibility call, in which case downgrade back to a lead."
     },
     {
       "register_id": 234,
       "name_sk": "Dub na Godrovej ulici",
-      "species": "Oak (Quercus sp., Slovak name not resolved to a binomial this pass)",
-      "coordinates": [48.1486, 17.1012],
-      "reason": "Locality 'Godrova ul., v záhrade' (in a garden). No measurements or independent second source found this pass. Access unresolved."
+      "species": "Pedunculate Oak, cultivar Fastigiata (Quercus robur 'Fastigiata', per monumentaltrees.com; species_sk 'dub letný stĺpovitý')",
+      "coordinates": [
+        48.1486,
+        17.1012
+      ],
+      "reason": "Locality 'Godrova ul., v záhrade' (in a garden, not 'predzáhradka' like the ginkgo at the same address cluster). monumentaltrees.com now gives measurements this pass: girth 3.27m, height ~20m, planted ~1920+/-10, so roughly 106+/-10 years old at the 2012 measurement (roughly 120+/-10 now). Its own photo shows the trunk close against a building facade, no clear evidence of street visibility the way the ginkgo's photo shows. Access still unresolved; a columnar cultivar rather than a wild-form giant, so also a weaker candidate on merit even if access clears."
     },
     {
       "register_id": 221,
       "name_sk": "Dub na Moyzesovej ulici",
       "species": "Pedunculate Oak (Quercus robur, per species_sk 'dub letný')",
-      "coordinates": [48.1504, 17.1046],
+      "coordinates": [
+        48.1504,
+        17.1046
+      ],
       "reason": "Locality 'Moyzesova ul.č.4/6 vo dvore' (in the courtyard). A courtyard behind an apartment building is very unlikely to be open to the public. Not researched further for measurements; access is the blocker."
     },
     {
       "register_id": 212,
       "name_sk": "Lipa na Partizánskej ulici",
       "species": "Small-leaved Lime (Tilia cordata, per species_sk 'lipa malolistá')",
-      "coordinates": [48.1461, 17.0971],
+      "coordinates": [
+        48.1461,
+        17.0971
+      ],
       "reason": "Locality 'Partizánska 9, v záhrade' (in the garden). No access evidence found and not measured this pass."
     },
     {
       "register_id": 222,
       "name_sk": "Magnólia na Somolického ulici",
       "species": "Saucer Magnolia (Magnolia x soulangeana)",
-      "coordinates": [48.1509, 17.1037],
+      "coordinates": [
+        48.1509,
+        17.1037
+      ],
       "reason": "Locality is the garden in front of the Janko Jesenský Museum (part of the Museum of the City of Bratislava). The museum itself is confirmed to exist at this address, but is only open Thursdays and Fridays, July-August, 3-6pm, which is a narrow and unusual access window for a tree page. Could not confirm whether the front garden is visible/reachable from the public street outside those hours. Worth a revisit with a street-level check; if the garden is visible from the pavement this becomes a strong confirmed-precision candidate."
     },
     {
       "register_id": 232,
       "name_sk": "Katalpa na Mickiewiczovej ulici",
       "species": "Northern Catalpa (Catalpa bignonioides, per species_sk 'katalpa bignóniovitá' - note: bignonioides is the Southern/common catalpa; species needs a reader check)",
-      "coordinates": [48.151, 17.1168],
+      "coordinates": [
+        48.151,
+        17.1168
+      ],
       "reason": "BLOCKED for now, moved here rather than to blocked list because the restriction is about the current gate policy, not the tree itself. Locality is the grounds of the University Hospital Bratislava - Staré Mesto site. A search on the hospital's own visiting information states the grounds are closed by a gate and the public may only enter to drop off or pick up a patient; general visiting hours (weekday afternoons) are for patients, not park access. Does not currently pass the 'can they get in without asking anyone's permission' test. Revisit if the hospital ever opens its grounds or if the tree is visible from Mickiewiczova street itself."
+    },
+    {
+      "register_id": 237,
+      "name_sk": "Tis v nemocničnej záhrade",
+      "species": "European Yew (Taxus baccata, per species_sk 'tis obyčajný')",
+      "coordinates": [
+        48.1491,
+        17.0981
+      ],
+      "reason": "Locality 'Šulekova, záhrada nemocnice' (hospital garden) is stale: the maternity hospital that once stood here closed in 1999 and the building was reconstructed into 'MaMaison Residence Šulekova', a private residential hotel (Slovakia's first). No evidence found this pass that the hotel's grounds/garden are open to non-guests. Register's enviroportal.sk detail page (enviroportal.sk/stromy/detail/tis-v-nemocnicnej-zahrade) 404'd to a direct fetch this pass; worth a retry. Access unresolved, and the register's own designation reason (site name) is out of date with the property's actual current use, which the writer should not repeat uncritically if this ever ships."
+    },
+    {
+      "register_id": 229,
+      "name_sk": "Dub na Prvosienkovej ulici",
+      "species": "Oak (Quercus sp., per species_sk 'dub žltkastý'; common name not resolved to a binomial this pass)",
+      "coordinates": [
+        48.1554,
+        17.0834
+      ],
+      "reason": "Locality 'na Drotárskej ul.29 pri rod.dome' (near house no. 29 on Drotárska street, by a family/detached house). Explicitly by a private residence; no access evidence sought further given the time box. Fails hard rule 10's home test on the register's own wording."
+    },
+    {
+      "register_id": 228,
+      "name_sk": "Gaštan na Karabinského ulici",
+      "species": "Sweet Chestnut (Castanea sativa, per species_sk 'gaštan jedlý')",
+      "coordinates": [
+        48.153,
+        17.0812
+      ],
+      "reason": "Locality 'Korabinského ul. v záhrade' (in the garden). Same private-garden pattern as most of this city's register; not researched further given the time box."
+    },
+    {
+      "register_id": 225,
+      "name_sk": "Jedľa v Kráľovskom údolí",
+      "species": "Silver Fir (Abies alba, per species_sk 'jedľa strieborná/srienistá')",
+      "coordinates": [
+        48.1439,
+        17.0852
+      ],
+      "reason": "Locality 'Kraľovské údolie 4, v záhrade' (in the garden), an affluent villa street. Same private-garden pattern; not researched further given the time box."
+    },
+    {
+      "register_id": 217,
+      "name_sk": "Borovica na ulici B. Němcovej",
+      "species": "Scots/Smooth Pine (per species_sk 'borovica hladká')",
+      "coordinates": [
+        48.155,
+        17.1016
+      ],
+      "reason": "Locality 'ul.B.Nemcovej č.8, v záhrade' (at house no. 8, in the garden). Same private-garden pattern; not researched further given the time box."
     }
   ],
   "blocked": [
@@ -55,65 +126,97 @@
       "register_id": 495,
       "name_sk": "Oskoruša v Devíne",
       "species": "Wild Service Tree (Sorbus domestica)",
-      "coordinates": [48.1768, 16.9986],
+      "coordinates": [
+        48.1768,
+        16.9986
+      ],
       "reason": "DEAD. A May 2020 hiking.sk article ('Rekviem pre oskorušu nad Devínom') reports the tree, a well-known specimen in the Devín vineyards catalogued as protected tree S 495 in 2006, has already dried up / died. Register still lists it as an active designation, which is the register-lag problem the rulebook warns about: registers carry no vitality field. Never to be delivered as a living entry; note kept here so no future pass re-researches this vineyard tree without knowing it is gone."
     },
     {
       "register_id": 233,
       "name_sk": "Novolipnický platan",
       "species": "London Plane (Platanus x acerifolia, per species_sk 'platan javorolistý')",
-      "coordinates": [48.0794, 17.2766],
+      "coordinates": [
+        48.0794,
+        17.2766
+      ],
       "reason": "Register's own locality text names it explicitly: 'vo dvore rodinného domu pána Csádera Ottu' (in the courtyard of the family house of Mr. Otto Csáder). This is someone's home, which hard rule 10 rules out absolutely regardless of the tree's quality."
     },
     {
       "register_id": 235,
       "name_sk": "Skupina stromov na Galandovej",
       "species": "Group: pedunculate oak, tulip tree, Judas tree",
-      "coordinates": [48.149, 17.0992],
+      "coordinates": [
+        48.149,
+        17.0992
+      ],
       "reason": "Register itself marks this group publishable:false. Also a group of three (tree_count 3) in the private garden of an autism care centre ('v záhrade areálu autistického centra'), which fails both the collectible-point test (not a single specimen or a compact named ensemble) and the private-grounds test, doubly so given the site serves a vulnerable population."
     },
     {
       "register_id": 489,
       "name_sk": "Borovice čierne na ul. Francúzskych partizánov",
       "species": "Group of 3 Black Pines (Pinus nigra)",
-      "coordinates": [48.1532, 17.0954],
+      "coordinates": [
+        48.1532,
+        17.0954
+      ],
       "reason": "Register marks this group publishable:false. Locality explicitly 'v súkromnej záhrade' (in a private garden)."
     },
     {
       "register_id": 230,
       "name_sk": "Brezy v Mlynskej doline",
       "species": "Weeping Birch, pair (Betula pendula, per species_sk 'breza previsnutá')",
-      "coordinates": [48.1664, 17.0777],
+      "coordinates": [
+        48.1664,
+        17.0777
+      ],
       "reason": "Register marks this pair publishable:false. It is a pair (tree_count 2) rather than a single collectible point; also not individually distinguished in the sources found this pass."
     },
     {
       "register_id": 480,
       "name_sk": "Sofora japonská v Devínskej Novej Vsi",
       "species": "Japanese Pagoda Tree (Styphnolobium japonicum, per species_sk 'sofora japonská')",
-      "coordinates": [48.2113, 16.978],
+      "coordinates": [
+        48.2113,
+        16.978
+      ],
       "reason": "Locality is a primary school's grounds, near the fence ('areál ZŠ pri oplotení'). Per the hard rule 10 school test, this ships only with real evidence of genuine public access (a through-path, weekend opening, etc.), and no such evidence was found this pass. Sits as blocked rather than a lead because sending strangers onto a schoolyard needs positive evidence, not just an absence of a reason to say no."
+    },
+    {
+      "register_ids": [
+        "215"
+      ],
+      "name": "The Ginkgo of Godrova Street",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "place": "Godrova 8, predzahradka (the front garden of house No. 8)",
+      "latitude": 48.1496,
+      "longitude": 17.0999,
+      "girth_cm": 214,
+      "height_m": 19.9,
+      "measured": "2012, register and monumentaltrees.com agreeing exactly",
+      "status": "blocked",
+      "reason": "HARD RULE 10, the half that does not bend. The register's own locality is 'Godrova 8, predzahradka', the FRONT GARDEN of a private house, and the rule names front gardens outright: 'Front gardens, courtyards of dwellings, private houses and their grounds stay out, whatever the register says and however fine the tree. This one does not bend, because the person we would be sending strangers to never asked for any of it.' Verified 2026-08-17 and held by the merging session, not by the verify pass, which delivered it as a view-only entry in good faith.\n\nWhy the view-only exception does not rescue it. That exception was written for Hobart's Government House oak, where the REGISTER ITSELF states the tree is 'highly visible as one approaches'. Here the only visibility evidence is a 2011 photograph that appears to have been taken from street level, which is our inference from an image rather than a source's statement, and the rule is explicit that it does not license a tree 'where visible is our guess rather than a source's statement'. Bratislava's published brt_004 is not a precedent either: that one is viewed from a public stairway onto a neighbouring plot, not into somebody's front garden.\n\nWhat would unblock it: a source that states the tree is visible from Godrova street, or an owner who says visitors may look. The measurements above are good and are kept so a future pass pays nothing to rediscover them."
     }
   ],
   "unresolved_needs_more_research": [
     {
-      "register_id": 231,
-      "name_sk": "Platan na Kysuckej ulici",
-      "species": "American Sycamore (Platanus occidentalis, per species_sk 'platan západný')",
-      "coordinates": [48.1725, 17.0752],
-      "reason": "Register locality is 'na ul.K Železnej studničke pri Vydrici' (on the street toward Železná studnička, by the Vydrica stream), a public recreational path in Bratislava Forest Park, which would likely pass the access test. A news search found impressive figures for a plane tree in this area (30m tall, 589cm girth) attributed to what looks like the same krizom-krazom source, but ALSO found a distinct, unrelated 2021+ news story about a different, recently transplanted young plane tree near the rebuilt Labutie pavilion at Železná studnička ('Bratislavčan', survival-against-odds story). I could not confidently establish these are not the same tree, or resolve which set of facts belongs to the register entry, inside the time box for this pass. Needs a dedicated look (ideally at the krizom-krazom.eu page directly, which returned a TLS/SSL error to both curl and WebFetch from this environment all session; note this host for the fetch-blocklist) before shipping either the giant-tree facts or the transplant story as this entry."
-    },
-    {
       "register_id": 481,
       "name_sk": "Dub letný v Dunajskej Lužnej",
       "species": "Pedunculate Oak (Quercus robur)",
-      "coordinates": [48.0843, 17.2597],
+      "coordinates": [
+        48.0843,
+        17.2597
+      ],
       "reason": "Register carries no locality text at all for this entry (locality_sk: null) and this pass found no independent source. 13km from centre, outside the walkable cluster this brief prioritised; not researched further given the time box."
     },
     {
       "register_id": 499,
       "name_sk": "Grinavský topoľ",
       "species": "Black Poplar (Populus nigra, per species_sk 'topoľ čierny')",
-      "coordinates": [48.2805, 17.2408],
+      "coordinates": [
+        48.2805,
+        17.2408
+      ],
       "reason": "Register carries no locality text (locality_sk: null). 18km from centre in Grinava (part of Pezinok), well outside the walkable cluster and arguably outside a reasonable day-trip framing for a Bratislava page. Not researched further given the time box."
     }
   ]
