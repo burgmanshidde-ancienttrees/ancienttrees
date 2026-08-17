@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Milan's remarkable trees free to visit?",
-      "a": "All nineteen on this list are free. Unlike Rome or Florence, none of Milan's most remarkable trees stand inside a paid garden or monument; the closest thing to a ticket is Parco Trotter's restricted opening hours, since its grounds double as a working school, and the villa courtyard housing the Archdevil hackberry, which asks for quiet discretion rather than a fee since it is a lived-in community."
+      "a": "All nineteen on this list are free. Unlike Rome or Florence, none of Milan's most remarkable trees stand inside a paid garden or monument; the closest things to a ticket are Parco Trotter's restricted opening hours, since its grounds double as a working school, and the park of Villa Marietti Radice Fossati, where the Archdevil hackberry grows: the city asks for the discretion due to an inhabited place, because people live in the villa buildings, and says the gate may be passed to visit the park."
     },
     {
       "q": "Why does Milan have so few genuinely ancient trees compared to Rome or Florence?",
@@ -643,17 +643,17 @@
       "age_min": null,
       "age_max": null,
       "location": {
-        "address": "Via Villapizzone 9, Milano",
-        "latitude": 45.500933,
-        "longitude": 9.147947,
+        "address": "Villa Marietti Radice Fossati, piazza Villapizzone 3, Milano",
+        "latitude": 45.501399,
+        "longitude": 9.148775,
         "neighbourhood": "Villapizzone"
       },
-      "story": "The comune's own page for this hackberry calls it arcidiavolo, the archdevil, after a folk tale that blamed its hooked leaves on Lucifer, said to have carried the species down from heaven clutched in his claws. It is an odd name for a tree that spends most of the year simply shading a Milanese courtyard, and the city's monumental-tree list is usually much drier than that.\n\nThe courtyard belongs to Villa Marietti Radice Fossati, in Villapizzone, northwest of the centre. Built in the seventeenth century for the Gallina family and taken over by the Radice Fossati family in 1836, the villa fell into disrepair through the twentieth century until the Comune di Milano acquired it in 1993 and lent it to a small community of Jesuit fathers, who still live there today. Its inner courtyard is square, arcaded on three sides, and the hackberry stands at the centre of it, a trunk 4.2 metres around holding up a canopy that spreads more than 20 metres.\n\nBecause the villa is a lived-in place rather than a public park, the city's own guidance is to enter with the discretion due to an inhabited place rather than to treat the gate as a tourist entrance. No age has ever been published for the tree, only its girth, among the largest recorded for its species anywhere in Milan.",
+      "story": "The comune's own page for this hackberry calls it arcidiavolo, the archdevil, after a folk tale that blamed its hooked leaves on Lucifer, said to have carried the species down from heaven clutched in his claws. The city's monumental-tree list is usually a good deal drier than that.\n\nThe tree stands in the park of Villa Marietti Radice Fossati, in Villapizzone, northwest of the centre. The villa was given its rural character by the Radice Fossati family, fell into disrepair through the 1970s, and was pulled back out of it by a small experimental community of Jesuit fathers. The Comune di Milano took ownership in 1993 and confirmed the community's loan of the buildings, which have been residential ever since. So the buildings are somebody's home and the park around them is not, and the city says plainly that with the discretion due to an inhabited place you may pass through the gate and visit the park.\n\nThe trunk measures 4.2 metres round and the crown spreads more than 20 metres, throwing shade over roughly 200 square metres by the comune's reckoning. Its roots, structure and vegetative state are all recorded as good, and nothing on record says the tree has ever needed work. Nobody has published an age for it, only that girth, among the largest for the species anywhere in Milan.",
       "verified_sources": [
         "https://www.comune.milano.it/argomenti/ambiente-e-animali/gli-alberi-monumentali-a-milano/il-bagolaro-di-villa-marietti-radice-fossati",
         "MASAF national register, Milano, Villa Marietti Radice Fossati (Celtis australis, girth 420 cm, height 18 m)"
       ],
-      "access": "Free to enter through the villa's gate, but it is a lived-in community, not a public park; the city's own guidance is to enter with the discretion due to an inhabited place.",
+      "access": "Free. The villa buildings are a lived-in community and the park around them is not: the Comune di Milano, which owns the villa, states on its own page for this tree that with the discretion due to an inhabited place you may pass through the gate and visit the park.",
       "transport": "Short walk from Milano Villapizzone railway station",
       "photo": {
         "url": null,
@@ -662,8 +662,9 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "notes": "Held back by an earlier pass only for standing alone, 4.7 km northwest of the Duomo and 2.5 km from the nearest published cluster (Villa Litta). Publishing it now: the count doctrine (CLAUDE.md) is explicit that being far from other trees is not a reason to withhold a tree that otherwise clears the bar, and this one has two independent sources (the comune's own monumental-tree page and the MASAF national register) plus a genuinely distinctive story.",
-      "location_precision": "confirmed"
+      "notes": "BLOCKER of 2026-08-17 answered rather than obeyed, and the reviewer was right to raise it. It read the entry as a courtyard of a dwelling under hard rule 10's absolute home test. The premise was OUR OWN invented sentence: the first version of this story said the villa's inner courtyard is 'square, arcaded on three sides, and the hackberry stands at the centre of it', which no source says. It is a bridge claim of exactly the kind the corpus names, and as usual the join decided the LOCATION. The comune's own page describes a park and says 'e' possibile varcare il cancello per visitare il parco', it is possible to pass through the gate to visit the park, with the discretion due to an inhabited place. That is the landowner, the Comune di Milano itself, stating that visitors are admitted, which is what hard rule 10 asks for. The buildings are the home; the park is not.\n\nTwo location errors fixed in the same pass, found by reading that page in a browser session because comune.milano.it 403s every plain fetcher. The address said Via Villapizzone 9 and the comune says piazza Villapizzone 3. The pin sat 83 metres from the comune's own marker while claiming 'confirmed'; it now uses the comune's coordinate and says approximate, because that marker is the villa rather than the trunk.",
+      "location_precision": "approximate",
+      "how_to_recognise": "A very wide hackberry in the villa park, crown spreading over 20 metres. The pin is the comune's own marker for the villa rather than the trunk, so expect to look once you are inside the gate."
     }
   ],
   "oldest_tree_id": "mil_004"
