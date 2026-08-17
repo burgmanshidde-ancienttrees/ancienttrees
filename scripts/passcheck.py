@@ -285,37 +285,45 @@ def centre_from_registers(key):
 
 
 def centre_from_any_name(arg):
-    """Locate a place in the registers by trying every name it might be filed
-    under. The alias map exists to turn a local name into our English slug, and
-    applying it here does the opposite of what is needed: registers file Genoa
-    as "Genova", so translating the working name into English threw the match
-    away and the brief said "no coordinates known" for a city with sixteen
-    register entries. Try the raw name, the alias, and the alias read backwards.
+    """Locate a place's centre. Our own coordinate table goes FIRST, because it
+    is verified ground truth; the register-substring search that used to run
+    first is a heuristic and heuristics produce false positives. Proof case,
+    2026-08-17: "graz" (Austria) is a substring of "Grazie" (as in Madonna
+    delle Grazie, Le Grazie), an unrelated Italian place name, folded-string
+    containment with no word boundary. `key in fold(place)` matched three
+    Italian MASAF register entries and centred the whole brief on Ancona
+    (43.70,13.90) instead of Graz (47.07,15.44), which would have sent a
+    verify pass hunting register trees 900km from the actual city with no
+    error message telling it so.
     """
     key = fold(arg)
     reverse = {fold(v): k for k, v in ALIAS.items()}
-    for candidate in (key, fold(ALIAS.get(key, "")), fold(reverse.get(key, ""))):
+    candidates = (key, fold(ALIAS.get(key, "")), fold(reverse.get(key, "")))
+
+    coords = os.path.join(ROOT, "data", "city-coords.json")
+    if os.path.exists(coords):
+        table = json.load(open(coords, encoding="utf-8"))
+        folded = {fold(k): v for k, v in table.items()}
+        for candidate in candidates:
+            hit = folded.get(candidate)
+            if hit:
+                return (hit[0], hit[1])
+
+    # Fallback for a place not yet in our coordinate table: infer a centre by
+    # matching the place name against the registers' own locality fields. A
+    # register files its trees under SUBURBS, so Melbourne's 546 entries sit
+    # under Hawthorn, Kew and Camberwell and the word Melbourne appears in
+    # none of them; this is what finds a real city with no coordinate of its
+    # own yet. Same class of bug as the Genoa/Genova alias miss above; that
+    # one was a name, this one is a hierarchy. Substring, not word-bounded, so
+    # still capable of a Graz-shaped false positive for a place NOT already in
+    # city-coords.json; add it there rather than trust a bad match from here.
+    for candidate in candidates:
         if not candidate:
             continue
         centre = centre_from_registers(candidate)
         if centre:
             return centre
-    # Last resort, and it is the one that matters for a big city: our own
-    # coordinate table. A register files its trees under SUBURBS, so Melbourne's
-    # 546 entries sit under Hawthorn, Kew and Camberwell and the word Melbourne
-    # appears in none of them. The brief then said "no coordinates known" for a
-    # city with 202 register trees inside 12 km, which is precisely the false
-    # premise this script exists to prevent, pointing the pass at from-zero web
-    # research instead of at data we already hold. Same class of bug as the
-    # Genoa/Genova miss above; that one was a name, this one is a hierarchy.
-    coords = os.path.join(ROOT, "data", "city-coords.json")
-    if os.path.exists(coords):
-        table = json.load(open(coords, encoding="utf-8"))
-        folded = {fold(k): v for k, v in table.items()}
-        for candidate in (key, fold(ALIAS.get(key, "")), fold(reverse.get(key, ""))):
-            hit = folded.get(candidate)
-            if hit:
-                return (hit[0], hit[1])
     return None
 
 
