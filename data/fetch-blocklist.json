@@ -151,6 +151,12 @@
    "date": "2026-08-15",
    "problem": "UBC's IT bot-defense returns a captcha challenge page (200 status, page body is the captcha itself) to plain curl on every path tried, including /terms-of-use/ and /bc-bigtree-registry/champion/. Not a hang, and captchas are never to be solved by an agent.",
    "workaround": "none found this pass; the BC Big Tree Registry licence and downloadable Excel remain unverified. A session with a real browser (this project's Browser pane, not curl/WebFetch) should be able to clear it; do not attempt to bypass the captcha programmatically."
+  },
+  "vilnius.lt": {
+   "behaviour": "403 Forbidden to both curl and WebFetch on its protected-object register pages. Fast fail, not a hang, so it costs a second rather than a window.",
+   "seen": "2026-08-17",
+   "cost": "one fetch during a Vilnius verify pass; cheap, recorded so the next pass does not try it first",
+   "workaround": "Lithuanian Wikipedia reproduces the municipal protected-object list with register id, address and measurements. Fetch its WIKITEXT and join on the id: that confirmed or killed 8 of 10 candidates in one pass and surfaced two delisted-dead trees the register itself does not flag. Same technique as pl.wikipedia for Krakow and Warsaw."
   }
  }
 }
