@@ -64,6 +64,15 @@ def clean_author(raw):
     first = (raw or "").strip().splitlines()[0] if (raw or "").strip() else ""
     first = re.sub(r"\S+@\S+", "", first)
     first = re.sub(r"https?://\S+", "", first)
+    # iNaturalist hands back a whole sentence: "(c) Skjold Sondergaard, some
+    # rights reserved (CC BY)". The licence is recorded in its own field, so
+    # repeating it inside the credit is noise, and the (c) belongs to the
+    # licence rather than to the name.
+    first = re.sub(r"^\(c\)\s*|^©\s*", "", first, flags=re.I)
+    first = re.sub(r",?\s*(some|all)\s+rights\s+reserved.*$", "", first, flags=re.I)
+    first = re.sub(r"\s*\((?:CC[^)]*|public domain|pd)\)\s*$", "", first, flags=re.I)
+    # A username qualified by the wiki it came from is still just the username.
+    first = re.sub(r"\s+at\s+\w+\s+Wikipedia\s*$", "", first, flags=re.I)
     # A name does not contain a sentence. If a first line still runs on, keep
     # the part before the first clause break rather than printing an essay.
     first = re.split(r"\s+[-–|,]\s+|\s{2,}", first)[0]
