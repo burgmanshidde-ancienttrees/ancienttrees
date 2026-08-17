@@ -1,0 +1,53 @@
+{
+ "city": "Warsaw",
+ "country": "Poland",
+ "compiled": "2026-08-17",
+ "source_note": "GDOS's national pomniki przyrody register (poland-gdos-pomniki-przyrody.json, 3495 entries near_city Warsaw) carries coordinates, designation date and species only, no name, age or girth for most rows. Polish Wikipedia's 'Pomniki przyrody w Warszawie' article reproduces the city's own official register (Urzad m.st. Warszawy / BIP list, cited in its own footnotes) as a 587-row table with name, address, designation date and INSPIRE code per entry, joined here to GDOS by INSPIRE code (413 of 587 rows matched a GDOS coordinate; 174 did not, mostly boulders/glacial erratics rather than trees, or trees whose GDOS record uses a different INSPIRE code revision). This is the same join technique used for Krakow on 2026-08-16. Full joined table saved this pass for reuse: see the three trees delivered in data/research/warsaw-verified.json (war_006 to war_008) for the worked examples of pairing a register/Wikipedia-list entry with a genuinely independent second source (an institution's own page, a dedicated Wikipedia article, local press).",
+ "important_finding_not_a_lead_or_block": "The Wikipedia list's own entry for the ALREADY-PUBLISHED war_003 'Sowinski's Linden' reads: 'Lipa drobnolistna pn. \"Lipa Sowinskiego\" zwalona przez wiatr w 1986 r. W 2004 r. nie zostala odnaleziona. Status zniesiono w 2012 r.' (Small-leaved lime named 'Sowinski's Linden', blown down by wind in 1986, not found in 2004, delisted 2012), at location 'Wola, ul. Wolska (nasyp stanowiacy pozostalosc fortyfikacji)' which matches war_003's published location (Park Sowinskiego, the Reduta Wolska embankment, Wola) closely enough that this is very likely the SAME named monument our city file describes as a living ~190-year-old tree citing warszawawpigulce.pl and the Polish Wikipedia 'Reduta nr 56' article. I did not chase this further (out of scope for a candidate-verification pass and the brief said not to re-research war_003), but this is a serious discrepancy a rung-3 'something published is wrong' pass should check: either war_003 describes a different, undocumented lime on the same embankment (in which case the published story's implication that it is THE historic Sowinski linden may be a bridge claim), or the officially registered specimen is gone and a different tree has informally taken its place/name. Recommend checking the two existing sources against this register note before the next Warsaw depth pass touches war_003.",
+ "leads": [
+  {
+   "name": "The Szustra Oaks (Deby Szustra)",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "count": 5,
+   "kodinspire": "PL.ZIPOP.1393.PP.1465011.2969",
+   "gid": 223471,
+   "latitude": 52.204592852861396,
+   "longitude": 21.025444837929808,
+   "designated": "1978-04-10",
+   "reason": "Five oaks registered as one designation at ul. Pulawska 59, by Palac Szustra (a historic 1772 palace) and the adjoining Park Morskie Oko. Web search confirms at least one oak stands in Park Morskie Oko itself (genuinely public, well-known Mokotow park) while others stand 'along Slesinska alley in front of Pałac Szustra', which may be the palace's own grounds rather than the public park; I could not confirm within this pass's time budget whether that alley is open access or palace-institutional land (Palac Szustra's current occupant/use was not established). Would tighten the Mokotow cluster nicely (0.6km from war_005 Ciechomski's Pear) if access clears. Needs one more check: what institution occupies Palac Szustra today and whether its grounds (as opposed to the adjacent public park) are open to visitors."
+  },
+  {
+   "name": "The SGGW Oak (Dab SGGW)",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "kodinspire": "PL.ZIPOP.1393.PP.1465011.2999",
+   "gid": 175325,
+   "latitude": 52.20846275188966,
+   "longitude": 21.007381057320774,
+   "designated": "1974-08-20",
+   "reason": "Register + Wikipedia list place it 'przed SGGW' (in front of SGGW) on al. Niepodleglosci, Mokotow, 1.16km from war_005. No independent second source found within this pass's search budget beyond the register/Wikipedia-list family; several searches for girth, age or a dedicated writeup came back empty. A register-only tree with a genuine second source still needed before it can ship; worth another look at SGGW's own site or a district PDF (ursynow.um.warszawa.pl and architektura.um.warszawa.pl both 403'd automated fetches this pass, see below, so a browser-session fetch might succeed where curl/WebFetch did not)."
+  },
+  {
+   "name": "The Karol Oak (Dab Karol)",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "kodinspire": "PL.ZIPOP.1393.PP.1465011.3xxx (see Wikipedia list row 'Dab szypulkowy pn. \"Karol\"')",
+   "latitude": 52.26785824432941,
+   "longitude": 20.975847374208332,
+   "designated": "1982-10-22",
+   "reason": "Zoliborz, ul. Popieluszki 15, roughly 4.5km from the nearest published tree (war_003, Wola) and would start a new cluster rather than tighten the existing one. Not researched further this pass for that reason (brief asked to prefer trees that tighten the walk); the street name suggests a possible link to Father Jerzy Popieluszko, worth checking in a future pass since that would be a strong story angle."
+  },
+  {
+   "name": "The Wawer oak/pine cluster (Wielki Wojtek, Dwojak, Deby Ostrowskiego, Deby przy Trakcie, Placzaca Sosna)",
+   "species": "Pedunculate Oak and Scots Pine, several designations",
+   "reason": "A genuine walkable micro-cluster in the Wawer district (roughly 1-1.5km apart from each other: 'Wielki Wojtek' 52.173/21.149, 'Dwojak' 52.171/21.147, 'Deby Ostrowskiego' 52.162/21.158, 'Deby przy Trakcie' 52.195/21.193, 'Placzaca Sosna' 52.178/21.197), but 7-9km from every currently published Warsaw tree, so it would need to stand as a second, separate Warsaw walk rather than tightening the first one. Named trees with real potential (a weeping pine, a 'Great Wojtek' oak) but out of scope for this tightening-focused pass; flagging as a strong candidate for a dedicated Wawer-cluster pass."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Cis Starynkiewicza (Starynkiewicz's Yew)",
+   "species": "Common Yew (Taxus baccata), multi-stemmed",
+   "kodinspire": "not resolved to a GDOS match this pass",
+   "location": "Ochota, ul. Koszykowa 81, grounds of the historic Warsaw Filtration Station (Zespol Stacji Filtrow / Stacja Filtrow, built 1883-1886 by William Lindley), near the decommissioned water pressure tower",
+   "reason": "Fails hard rule 10's first test. The Filtration Station is described by multiple independent sources (MPWiK's own site, warszawa.naszemiasto.pl, kierunekwodkan.pl) as a 'strategic object' with restricted access: visits are guided-tour only, open in summer and during Night of Museums for small groups, roughly 1.5 hours, tickets bought in advance through MPWiK offices or Eventim and reported to sell out very quickly. This is a reception-desk/appointment situation, not a walk-in public site, so it does not clear the 'can they get in without asking anyone's permission' test even though the yew itself is a genuine, well-documented natural monument. Revisit only if MPWiK opens general walk-in access."
+  }
+ ]
+}

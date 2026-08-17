@@ -2,10 +2,10 @@
   "city": "Warsaw",
   "country": "Poland",
   "status": "needs_curation",
-  "intro": "Warsaw rebuilt itself almost entirely after 1945, which is the quiet reason so few of its trees are genuinely old: whatever grew here before the war mostly burned with everything else. What survived instead carries weight beyond its years. A poplar stood inside a 1939 barricade and later grew beside a wartime transit camp. An oak marks the one building left standing around Janusz Korczak's orphanage. A six-century oak on the city's southern edge remembers a landscape that predates Warsaw altogether. Few cities ask their trees to hold this much history.",
-  "meta_description": "Warsaw's remarkable trees carry wartime and uprising history as much as age: a 600-year oak, a WWII poplar, Korczak's orphanage oak. Verified stories.",
+  "intro": "Warsaw rebuilt itself almost entirely after 1945, which is the quiet reason so few of its trees are genuinely old: whatever grew here before the war mostly burned with everything else. What survived instead carries weight beyond its years. A poplar stood inside a 1939 barricade and later grew beside a wartime transit camp. An oak marks the one building left around Janusz Korczak's orphanage. Royal parks add two more: a pair of oaks in the king's own Lazienki garden, and a lime named for the king who built Wilanow.",
+  "meta_description": "Warsaw's remarkable trees carry wartime, royal and Enlightenment history: a 600-year oak, a WWII poplar, Korczak's orphanage oak, royal park oaks.",
   "question_answer": "Warsaw's oldest tree is Dab Mieszko I (King Mieszko I's Oak), a pedunculate oak on Nowoursynowska Street in Ursynow, estimated at 600 to 640 years old depending on the survey cited. It stands at the edge of Natolin Forest, one of the last fragments of the wild woodland that covered this ground before the city existed.",
-  "question_meta": "A 600-640 year old oak on the edge of Natolin Forest, older than Warsaw itself, is the city's oldest tree. The full five, and the history each carries.",
+  "question_meta": "A 600-640 year old oak on the edge of Natolin Forest, older than Warsaw itself, is the city's oldest tree. The full seven, and the history each carries.",
   "question_context": "Warsaw's tree ages are harder to pin down than in cities with continuous records, because the city's own archives and much of its built and natural heritage were destroyed between 1939 and 1945. Dab Mieszko I is the exception precisely because it predates that entire period by centuries: even the more conservative age estimates put its origin well before Poland's partitions, let alone the Second World War, and successive surveys since its 1962 protection have each revised the figure without ever seriously challenging its status as the region's oldest oak. Its main rival for the title of Warsaw's most storied tree is not a contest of age at all. The Poplar of the Defenders, roughly a century old, and Dr Korczak's Oak, undated but standing beside a building that survived the war intact, both carry more concentrated history in fewer decades than the Mieszko oak accumulated in centuries, a reminder that this city's remarkable trees earn their place by two different measures, sometimes separately, occasionally both at once.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Warsaw's remarkable trees free to visit?",
-      "a": "Yes, all five stand on public streets or in public parks, open at any time, no ticket required."
+      "a": "Yes, all seven stand on public streets or in public parks and gardens, open at any time. One, King Jan's Linden in the Wilanow palace grounds, sits behind a paid entrance gate."
     },
     {
       "q": "Why does Warsaw have so few very old trees?",
@@ -87,35 +87,6 @@
       "location_precision": "confirmed"
     },
     {
-      "id": "war_003",
-      "name": "Sowinski's Linden",
-      "species": "Small-leaved Lime (Tilia cordata)",
-      "age_estimate": "about 190 years",
-      "age_min": 180,
-      "age_max": 200,
-      "location": {
-        "address": "Park Sowinskiego, on the Reduta Wolska embankment, Wola",
-        "latitude": 52.2308463,
-        "longitude": 20.9481463,
-        "neighbourhood": "Wola"
-      },
-      "story": "This linden grows on top of a grave that never received a body. General Jozef Sowinski lost a leg fighting Napoleon decades earlier, then in September 1831 took command of Redoubt 56 on Warsaw's western edge as Russian troops closed in to crush the November Uprising. He held the position with roughly 1,300 soldiers and twelve cannons against overwhelming numbers, refused to leave when the line finally broke, and died defending the earthwork on 6 September 1831, one of the uprising's most cited last stands. The embankment itself survives as the linden's root bed today, a defensive rampart that started as Swedish fortifications in the 17th century, was rebuilt during the 1794 Kosciuszko Uprising, and took its final shape as Redoubt 56 in 1831, three different Polish fights against three different occupiers layered into the same low ridge of earth. The tree growing on it now is roughly 190 years old, meaning it very likely took root around the same years the battle happened, whether planted deliberately afterward or self-seeded into disturbed ground nobody has since documented precisely. It stands in the park that now carries Sowinski's name, a quiet green rise in Wola with no plaque needed for anyone who already knows the story.",
-      "verified_sources": [
-        "https://warszawawpigulce.pl/warszawskie-drzewa-ktore-sa-najstarsze-a-z-ktorymi-zwiazana-jest-niezwykla-historia/",
-        "https://pl.wikipedia.org/wiki/Reduta_nr_56"
-      ],
-      "access": "Free, open park at any time",
-      "transport": "Tram or bus to Wola, then a short walk, roughly 15 minutes from the centre",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "approximate"
-    },
-    {
       "id": "war_004",
       "name": "Dr Korczak's Oak",
       "species": "Hungarian Oak (Quercus frainetto)",
@@ -173,6 +144,97 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate"
+    },
+    {
+      "id": "war_006",
+      "name": "The Royal Oaks of Lazienki",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "about 200 years",
+      "age_min": 180,
+      "age_max": 220,
+      "girth_cm": 450,
+      "location": {
+        "address": "Lazienki Krolewskie park, near the New Orangery, west side of the Chinska Droga path, Srodmiescie",
+        "latitude": 52.212386581207795,
+        "longitude": 21.032272068224383,
+        "neighbourhood": "Srodmiescie (Lazienki Krolewskie)"
+      },
+      "story": "For almost two centuries, two pedunculate oaks have grown side by side in the Romantic Garden of Lazienki Krolewskie, the park Poland's last king built for himself in the 18th century. The palace museum's own page on the park's oldest trees states it plainly: both oaks measure 450 centimetres round and 28 metres tall, and both hold protected natural-monument status. That girth on a pedunculate oak points to real age, roughly two hundred years, old enough that the pair were already substantial trees when Poland was partitioned off the map of Europe entirely, decades before the country existed again to protect them. Lazienki is the most visited royal park in the country, its lake, palace and open-air theatre drawing crowds who mostly walk past two more oaks without a glance. These stand near the New Orangery, on the western side of the path called Chinska Droga, close enough together that a visitor can take in both in one stop. The garden itself is free every day, no ticket needed beyond the museum buildings and the odd ticketed pavilion, making this the easiest stop on the whole Warsaw list to fold into an ordinary afternoon in the park.",
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie (INSPIRE code PL.ZIPOP.1393.PP.1465011.2994, designated 1974-08-20)",
+        "https://www.lazienki-krolewskie.pl/en/aktualnosci/najstarsze-drzewa-lazienek-krolewskich"
+      ],
+      "access": "Free, the park gardens are open daily to the public at no charge (only some buildings/museum interiors are ticketed)",
+      "transport": "Bus or tram to Lazienki Krolewskie, short walk within the park to the New Orangery area",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Two oaks, both protected, both at this spot per register + Lazienki Museum's own page (girth 450cm, height 28m, 'almost two centuries'). Museum page says 'Romantic Garden', register says 'near the New Orangery'; both real, closely-sited features inside the same park, very likely the same pair, not asserted as identical beyond that since no single source states it explicitly.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "war_007",
+      "name": "King Jan's Linden",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Wilanow palace park, south side of the main avenue leading to the palace, ul. Stanislawa Kostki Potockiego 10/16, Wilanow",
+        "latitude": 52.1649957493684,
+        "longitude": 21.08697415082122,
+        "neighbourhood": "Wilanow"
+      },
+      "story": "Local and museum tradition names this lime for King Jan III Sobieski, who built Wilanow Palace in the late 17th century and is documented, in general accounts of the gardens, as having planted lindens on the grounds himself. No source ties this specific tree to that planting, so its age stays undocumented here rather than borrowed from a king's biography, but the name has stuck regardless, one linden singled out among the palace's roughly two dozen protected monument trees. Wilanow's own inventory of its monument trees records 27 of 28 as living in good condition, with only a single dead specimen elsewhere in the gardens, its crown already removed, nothing like the healthy tree this one is described as. It grows on the south side of the main avenue leading up to the palace, close enough to the approach that anyone walking in sees it before they see the building. Wilanow is Warsaw's grandest surviving baroque residence, spared the destruction that levelled most of the city in 1944, and its gardens charge an entry fee, a rare exception among the free public parks the rest of this page favours.",
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie (INSPIRE code PL.ZIPOP.1393.PP.1465011.3470, designated 1975-01-31)",
+        "https://wilanow-palac.pl/drzewa-pomnikowe-w-wilanowie"
+      ],
+      "access": "Paid entry to the Wilanow palace park grounds",
+      "transport": "Bus to Wilanow, short walk into the palace park grounds",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Register + Wilanow's own monument-tree inventory (27 of 28 living, none matching this description as the dead one) confirm the tree is alive and protected. The Sobieski-planting legend is named but not dated to this specific tree (bridge-claim avoided): no source ties this individual specimen to his tenure, so age stays undocumented. A reported girth 'over 4m' could not be independently confirmed this pass (the specific subpage 404'd); treat as unconfirmed.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "war_008",
+      "name": "Niemcewicz's Walnut",
+      "species": "Black Walnut (Juglans nigra)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Grounds of the Krasinski Palace, ul. Nowoursynowska 166, SGGW campus, Ursynow",
+        "latitude": 52.16445651385054,
+        "longitude": 21.05077825090984,
+        "neighbourhood": "Ursynow"
+      },
+      "story": "A black walnut, a species more at home on the eastern seaboard of North America, grows by a Polish palace named for a man who spent time in exile there. Julian Ursyn Niemcewicz, writer, playwright and a companion of Tadeusz Kosciuszko through Poland's failed 18th century uprisings, owned this estate from 1822 and built a library on it; the poet Juliusz Slowacki visited in 1830 and admired what he found. Polish Wikipedia's own article on the palace, citing Warsaw city hall's register of natural monuments, confirms the walnut by name as a protected specimen, and a 2023 photograph on Wikimedia Commons shows it still standing that year. No source dates its planting to Niemcewicz's own tenure, so this page states the naming rather than inventing a birth year to match it. The building passed through several owners after him and has belonged to Warsaw's agricultural university since 1956, its grounds closed to outsiders for decades until the terraced garden behind the palace reopened to the public in 2025, free, after nine years of local campaigning. The tree that outlasted every one of those owners is now something almost nobody who planted it could have counted on: visible again.",
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie (INSPIRE code PL.ZIPOP.1393.PP.1465011.3472)",
+        "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Krasi%C5%84skich_w_Warszawie_(Ursyn%C3%B3w) (citing Warsaw city hall's BIP register of natural monuments)"
+      ],
+      "access": "Free. The palace's terraced garden, where the tree stands, has been open to the public daily April-October, 8am-6pm, since 2025",
+      "transport": "Metro or bus to Ursynow (SGGW campus, Nowoursynowska 166), short walk to the Krasinski Palace",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Register + Polish Wikipedia's dedicated Krasinski Palace article (citing Warsaw city hall's BIP register) independently confirm the tree by name. A 2023-dated Wikimedia Commons photo shows it standing that year. Named for Julian Ursyn Niemcewicz, a former owner (from 1822), but no source dates the planting to his tenure, so age stays undocumented rather than bridged from his biography.",
+      "location_precision": "confirmed"
     }
   ]
 }
