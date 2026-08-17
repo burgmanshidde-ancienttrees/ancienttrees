@@ -5,7 +5,7 @@
   "note": "Deepening pass on an already-published city (10 trees live). Source pool: the Comune di Milano's own monumental-tree pages, which publish one page per tree with address, description, the city's VTA inventory number, height, trunk diameter and a map point (13 trees), cross-read against the 33 MASAF national-register entries within 12 km of the Duomo. Five additions went to data/research/milan-extra.json; everything else is here. Counts to quote carefully: the comune publishes 13, the national register holds 22 for the comune of Milano and about 75 for the metropolitan area, and the two lists overlap without matching, because several nationally designated trees stand on state, church or university ground the city does not manage. Lombardia publishes no per-tree regional register: the only regional dataset is Bellezze Individue (SIBA landscape designations, CC0), which designates gardens and parks rather than individual trees, gives every Milano row the same comune-centroid coordinate, and carries no species, age or vitality field. The city's two labelled botanical trails (Parco Sempione, 31 plants; Giardino della Guastalla, 41) turn out to be species-teaching routes with no individual ages or measurements, so they are good for confirming a species on the spot and useless as a second source for a specific tree.",
   "leads": [
     {
-      "name": "Il bagolaro di Villa Marietti Radice Fossati",
+      "name": "Il bagolaro di Villa Marietti Radice Fossati [RESOLVED 2026-08-17, delivered as mil_019]",
       "species": "Celtis australis",
       "girth_cm": 420,
       "height_m": 18,
@@ -18,7 +18,8 @@
         "https://www.comune.milano.it/argomenti/ambiente-e-animali/gli-alberi-monumentali-a-milano/il-bagolaro-di-villa-marietti-radice-fossati",
         "MASAF national register, Villa Marietti Radice Fossati"
       ],
-      "why_not_published": "Verifies on two sources and has a genuinely good story (the comune retells the folk name Arcidiavolo and the legend that Lucifer carried the species to earth in his claws, which is why the leaves are hooked). Held back only because it stands alone: 4.7 km northwest of the Duomo, 2.5 km from the Villa Litta pair, so it joins no walk. Access also needs a sentence of care, since the villa is a lived-in residential community and the comune's own wording is that one may enter the gate 'with the discretion owed to an inhabited place'. Pick this up if Milan ever wants a northwestern point."
+      "why_not_published": "RESOLVED 2026-08-17: two sources (the comune monumental-tree page and the MASAF register) plus a distinctive story (the arcidiavolo folk legend) carried straight into the published entry, with the access wording quoted honestly. Was held back only for standing alone, 4.7 km northwest of the Duomo and 2.5 km from the nearest cluster; the count doctrine in CLAUDE.md says that is not a reason to withhold an otherwise-qualifying tree.",
+      "status": "resolved"
     },
     {
       "name": "Il platano di Viale Montesanto 4/6",
