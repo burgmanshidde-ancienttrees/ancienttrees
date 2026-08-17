@@ -59,6 +59,41 @@ itself "worth the walk": judge each one.
 - The register's total will not match the municipality's own count; never quote
   either as a count of what exists.
 
+## Try the Wikipedia registry join FIRST, before any generic searching
+
+The cheapest technique this project has found. It has now paid off on three
+cities in three days and each time it had to be re-explained in the brief, so
+it lives here instead.
+
+**A national register is often missing exactly what a page needs.** Poland's
+GDOS list carries no age, no girth and no names. Lithuania's municipal register
+403s to every fetcher. But the local-language Wikipedia frequently reproduces
+the CITY's own register document, with address, girth and designation year per
+tree, and its ids join straight to the register rows we already hold.
+
+    Krakow    "Pomniki przyrody w Krakowie", joined by INSPIRE code
+              -> real measurements for 115 of 155 candidates, whole pass 55k
+    Warsaw    same article for Warsaw, 561 rows
+              -> addresses and girths for 6 candidates the register left bare
+    Vilnius   Lithuanian articles on the protected objects
+              -> confirmed or killed 8 of 10 candidates in one search each
+
+**Fetch the WIKITEXT, not the rendered page.** The Warsaw pass found the
+rendered table scrambles row alignment under its image cells, which silently
+pairs a girth with the wrong tree.
+
+**And the reason it beats the register even when the register has the fields:
+the footnotes.** A register records what is designated, and nothing in it says
+a tree has fallen down. The Wikipedia reproductions carry the removals inline,
+which is where every dead tree caught this week was caught: Krakow's two
+storm-felled monuments, Warsaw's Sowinski Linden (blown down 1986, not found in
+a 2004 survey, delisted 2012, and live on our site until it was), and Vilnius's
+two delisted entries. If you skip this step you will publish a dead tree.
+
+Search terms that worked: "Pomniki przyrody w <city>", "<city> gamtos paveldo
+objektai", and the local-language phrase the law itself uses, which is usually
+better than any translation of "tree register".
+
 ## Age: estimate it when you can, ask the reader when you cannot
 
 A missing age never holds a tree back, and it never has. What changed on
