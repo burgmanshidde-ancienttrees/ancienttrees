@@ -239,6 +239,25 @@
    "tokens": null,
    "claims_held": [],
    "logged": null
+  },
+  {
+   "started": "2026-08-17T08:32:08+00:00",
+   "date": "2026-08-17",
+   "run_id": "32010809115",
+   "minutes": 7.8,
+   "minutes_basis": "measured",
+   "turns": 63,
+   "denials": 6,
+   "denials_source": "permission_denials",
+   "ended": "success",
+   "tokens": 6909511,
+   "claims_held": [
+    "naples"
+   ],
+   "commits": 2,
+   "cities_touched": 0,
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
