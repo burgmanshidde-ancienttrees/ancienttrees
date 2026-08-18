@@ -22,6 +22,7 @@ import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 import { SIGNIN_JS } from "../lib/signin-js";
 import { planWalks, walkRouteFor, humanDuration, mapsRouteUrl, kmLabel, WALK_NAME_MAX, type WalkMarker, type Walk } from "../lib/walks";
 import { cityMapScript } from "../lib/city-map-script";
+import { SHEET_JS } from "../lib/sheet-js";
 import { otherCitiesFor } from "../lib/other-cities";
 import { byCityListOrder } from "../lib/city-order";
 import { cityTranslation, hreflangLinks } from "../lib/i18n";
@@ -267,24 +268,29 @@ const firstWalk = walks[0] ?? null;
 ---
 <Base title={title} description={description} canonical={canonical} headExtra={headExtra} footer={false}>
   <div class="split">
-    <aside class="panel">
-      <div class="panel-head">
-        <Breadcrumbs items={crumbItems} />
-        <p class="eyebrow">{country}</p>
-        <h1>Ancient Trees in <em>{cityName}</em></h1>
-        <p class="lede">{intro}</p>
-        {esTr && <p class="lang-alt">Esta página también está disponible <a href={`/es/${cslug}`}>en español</a>.</p>}
-        <p class="passport" id="passport" hidden>
-          <strong><span id="passport-count">0</span> of {trees.length}</strong> visited in {cityName}
-          <span class="passport-total" id="passport-total"></span>
-          <button type="button" class="passport-save" id="passport-save">Save or move to another device</button>
-        </p>
+    <aside class="panel" id="sheet">
+      <div class="sheet-grab">
+        <div class="panel-head">
+          <Breadcrumbs items={crumbItems} />
+          <button type="button" class="sheet-back">← All {trees.length} trees</button>
+          <p class="eyebrow">{country}</p>
+          <h1>Ancient Trees in <em>{cityName}</em></h1>
+          <p class="sheet-count">{trees.length} trees on the map</p>
+          <p class="lede">{intro}</p>
+          {esTr && <p class="lang-alt">Esta página también está disponible <a href={`/es/${cslug}`}>en español</a>.</p>}
+          <p class="passport" id="passport" hidden>
+            <strong><span id="passport-count">0</span> of {trees.length}</strong> visited in {cityName}
+            <span class="passport-total" id="passport-total"></span>
+            <button type="button" class="passport-save" id="passport-save">Save or move to another device</button>
+          </p>
+        </div>
       </div>
+      <div class="sheet-body">
       {trees.map((t, i) => {
         const cphoto = usablePhoto(t);
         const bestTimeChip = bestTimeShort(t);
         return (
-          <article class="tree-card" id={`tree-${i + 1}`}>
+          <article class="tree-card" id={`tree-${i + 1}`} data-tree-id={t.id}>
             {cphoto && cphoto.url && (
               <Fragment>
                 <div class="tree-card-photo">
@@ -362,6 +368,7 @@ const firstWalk = walks[0] ?? null;
         </dl>
         <p class="suggest">Know a tree that belongs on this list? <a href={submitLink("tree")}>Send it in</a>. Suggestions feed curation; the list itself stays editorial.</p>
       </div>
+      </div>
     </aside>
     <div class="stage">
       <div id="map" class="map"></div>
@@ -395,5 +402,5 @@ const firstWalk = walks[0] ?? null;
     </div>
   </div>
   <SignInModal />
-  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + cityMapScript(markers, [avgLat, avgLng], route, otherCities, walks) + WALK_SHEET_JS} />
+  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + cityMapScript(markers, [avgLat, avgLng], route, otherCities, walks) + WALK_SHEET_JS + SHEET_JS} />
 </Base>

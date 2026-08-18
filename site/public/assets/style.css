@@ -111,6 +111,11 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .split { display: flex; height: 100vh; padding-top: var(--header-h); }
 .panel { width: 30rem; max-width: 45vw; height: 100%; overflow-y: auto; background: var(--cream); border-right: 1px solid var(--cream-dark); flex-shrink: 0; }
 .panel-head { padding: 2rem 1.75rem 1.5rem; border-bottom: 1px solid var(--cream-dark); }
+/* Two pieces of furniture that belong to the phone sheet only. Without
+   these the desktop split renders a stray back button and a tree count
+   under the heading, because their display rules live inside the phone
+   media query. */
+.sheet-back, .sheet-count { display: none; }
 .eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 0.75rem; }
 .panel-head h1 { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 1.9rem; font-weight: 400; line-height: 1.2; margin-bottom: 0.75rem; }
 .panel-head h1 em { font-style: normal; color: var(--moss); font-weight: 800; letter-spacing: 0; }
@@ -626,9 +631,14 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .walks { position: absolute; left: 1rem; bottom: 1.2rem; z-index: 5;
   display: flex; flex-direction: column; align-items: flex-start;
   max-width: min(440px, calc(100% - 2rem)); }
-.walks .tree-bar { position: static; margin: 0; background: #fff;
+/* The Spanish city page builds its capsule as .route-bar rather than
+   .tree-bar, and had never been given any of this, which did not show while
+   the bar was a full-width strip pinned to the bottom. Floating it over the
+   map makes an unstyled block obvious, so both names get the capsule. */
+.walks .tree-bar, .walks .route-bar { position: static; margin: 0; background: #fff;
   border: 1px solid var(--cream-dark); border-radius: 999px; padding: 0.3rem;
   box-shadow: 0 4px 18px rgba(0,0,0,0.14); }
+.walks .route-bar { display: flex; align-items: center; gap: 0.5rem; max-width: 100%; }
 .walk-sheet { margin-bottom: 0.6rem; width: 100%;
   background: #fff; border-radius: 14px; box-shadow: 0 8px 28px rgba(0,0,0,0.22);
   padding: 0.5rem; max-height: 45vh; overflow-y: auto; }
@@ -775,7 +785,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 
   .panel { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
     width: 100%; max-width: none; border-right: none; border-radius: 18px 18px 0 0;
-    height: calc(100svh - var(--header-h) - 0.5rem);
+    height: calc(100svh - var(--header-h) - 2rem);
     display: flex; flex-direction: column; overflow: hidden;
     box-shadow: 0 -6px 24px rgba(26, 32, 18, 0.16);
     padding-bottom: 0; touch-action: none; }
@@ -791,10 +801,46 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   /* The peek is one line and a count, the way Maps shows a single row above
      the fold. A two-line heading plus a lede made the peek 200px tall, which
      is not a peek, it is a half-open sheet with the map as a border. */
-  .panel[data-detent="peek"] .panel-head h1 { font-size: 1.15rem; margin-bottom: 0.15rem;
+  /* The header is fixed furniture at every detent: it is the part you grab,
+     so it never scrolls away. That makes its height a permanent tax on the
+     list, and a 1.6rem heading over a country eyebrow costs a whole tree card
+     at half. Maps keeps its sheet header to one line and a subtitle, so this
+     does too, and only the full sheet spends room on the city intro. */
+  .panel[data-detent="peek"] .panel-head h1,
+  .panel[data-detent="half"] .panel-head h1 { font-size: 1.15rem; margin-bottom: 0.15rem;
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .panel[data-detent="peek"] .panel-head .lede,
   .panel[data-detent="half"] .panel-head .lede { display: none; }
+  .panel[data-detent="peek"] .panel-head .eyebrow,
+  .panel[data-detent="half"] .panel-head .eyebrow,
+  .panel[data-detent="peek"] .panel-head .lang-alt,
+  .panel[data-detent="peek"] .panel-head .passport { display: none; }
+  /* The count is the peek's subtitle and the half's orientation line; at full
+     the intro says it better. */
+  .panel[data-detent="full"] .sheet-count { display: none; }
+  .sheet-body { padding-bottom: calc(1.5rem + env(safe-area-inset-bottom)); }
+
+  /* Maps floats its primary action over the map, just above the sheet, and
+     takes it away the moment the sheet covers the map. The peek height is
+     measured by the sheet script, because it depends on how the city name
+     wraps. */
+  .walks { bottom: calc(var(--sheet-peek, 4.5rem) + 0.6rem); z-index: 15;
+    transition: bottom 260ms cubic-bezier(0.22, 0.61, 0.36, 1), opacity 160ms linear; }
+  .walks .tree-bar, .walks .route-bar { border-radius: 999px; border: 1px solid var(--cream-dark);
+    margin: 0 0.75rem; padding: 0.5rem 0.75rem;
+    box-shadow: 0 4px 16px rgba(26, 32, 18, 0.18); }
+  /* The capsule lost ~27px to its own margin when it stopped spanning the
+     screen, which was enough to clip a long walk name at BOTH ends, because
+     the label is centred and hidden rather than truncated. The distance and
+     the time are the half a visitor needs; the name is the half that can
+     take an ellipsis. */
+  .walks .route-go { justify-content: center; align-items: flex-start; min-width: 0;
+    flex-direction: column; gap: 0; line-height: 1.25; }
+  .walks .route-go .route-name { flex: 0 1 auto; min-width: 0;
+    overflow: hidden; text-overflow: ellipsis; }
+  .walks .route-go .route-meta { flex: 0 0 auto; }
+  :root[data-sheet="half"] .walks,
+  :root[data-sheet="full"] .walks { opacity: 0; pointer-events: none; }
 
   /* Movement 3: one tree fills the sheet, the rest stay in the DOM. */
   .sheet-back { display: none; }
@@ -802,6 +848,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
     font-family: inherit; font-size: 13px; background: none; border: 0; color: var(--moss);
     padding: 0.2rem 0; cursor: pointer; }
   .panel.is-detail .panel-head h1, .panel.is-detail .panel-head .lede,
+  .panel.is-detail .panel-head .eyebrow, .panel.is-detail .panel-head .lang-alt,
   .panel.is-detail .sheet-count, .panel.is-detail .panel-foot { display: none; }
   .panel.is-detail .tree-card { display: none; }
   .panel.is-detail .tree-card.is-open { display: block; }

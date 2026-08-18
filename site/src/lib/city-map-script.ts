@@ -170,8 +170,26 @@ function setActive(idx, fly, scroll) {
   pins[idx].classList.add('active');
   var card = document.getElementById('tree-' + (idx + 1));
   card.classList.add('active');
+  // On a phone the cards live inside the bottom sheet, and picking a tree
+  // means opening THAT tree rather than scrolling a list behind a map. The
+  // sheet publishes this hook; on desktop it is undefined and nothing changes.
+  if (window.atSheetFocus) { window.atSheetFocus(card.dataset.treeId); }
   if (scroll) { card.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
-  if (fly) { map.flyTo({ center: [m.lng, m.lat], zoom: 14.5, duration: 1200 }); }
+  // A tree centred in the map element is a tree hidden behind the sheet, since
+  // the sheet covers the lower half of it. Maps recentres on the part of the
+  // map you can still see, so this does too: the offset moves the target up by
+  // half the difference between the element's centre and the visible centre.
+  var flyOffset = [0, 0];
+  if (fly && window.atSheetTop) {
+    var sheetTop = window.atSheetTop();
+    var mapEl = document.getElementById('map');
+    if (sheetTop !== null && mapEl) {
+      var mr = mapEl.getBoundingClientRect();
+      var visibleMid = (mr.top + Math.min(mr.bottom, sheetTop)) / 2;
+      flyOffset = [0, Math.round(visibleMid - (mr.top + mr.bottom) / 2)];
+    }
+  }
+  if (fly) { map.flyTo({ center: [m.lng, m.lat], zoom: 14.5, duration: 1200, offset: flyOffset }); }
 }
 
 var bounds = new maplibregl.LngLatBounds();

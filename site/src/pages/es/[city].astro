@@ -25,6 +25,7 @@ import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/sch
 import { mapHead } from "../../lib/map";
 import { planWalks, walkRouteFor, mapsRouteUrl, kmLabel, type WalkMarker, type Walk } from "../../lib/walks";
 import { cityMapScript } from "../../lib/city-map-script";
+import { SHEET_JS } from "../../lib/sheet-js";
 import { translatedCities, cityTranslation, hreflangLinks, QUESTION_SLUG, type CityTranslation } from "../../lib/i18n";
 
 function esc(s: string): string {
@@ -129,11 +130,14 @@ const qslug = QUESTION_SLUG.es;
 ---
 <Base title={tr.title} description={tr.meta_description} canonical={canonical} headExtra={headExtra} footer={false} lang="es">
   <div class="split">
-    <aside class="panel">
+    <aside class="panel" id="sheet">
+      <div class="sheet-grab">
       <div class="panel-head">
         <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Inicio</a> › <span>{tr.city}</span></nav>
+        <button type="button" class="sheet-back">← Los {trees.length} árboles</button>
         <p class="eyebrow">España</p>
         <h1>Árboles históricos de <em>{tr.city}</em></h1>
+        <p class="sheet-count">{trees.length} árboles en el mapa</p>
         <p class="lede">{tr.intro}</p>
         <p class="lang-alt">This page also exists <a href={`/${cslug}`}>in English</a>.</p>
         <p class="passport" id="passport" hidden>
@@ -142,11 +146,13 @@ const qslug = QUESTION_SLUG.es;
           <button type="button" class="passport-save" id="passport-save">Guardar o pasar a otro dispositivo</button>
         </p>
       </div>
+      </div>
+      <div class="sheet-body">
       {trees.map((t, i) => {
         const cphoto = usablePhoto(t);
         const x = tr.trees[t.id];
         return (
-          <article class="tree-card" id={`tree-${i + 1}`}>
+          <article class="tree-card" id={`tree-${i + 1}`} data-tree-id={t.id}>
             {cphoto && cphoto.url && (
               <Fragment>
                 <div class="tree-card-photo">
@@ -184,6 +190,7 @@ const qslug = QUESTION_SLUG.es;
         </dl>
         <p class="suggest">¿Conoces un árbol que merezca estar en esta lista? <a href="/contribute?kind=tree">Envíanoslo</a>.</p>
       </div>
+      </div>
     </aside>
     <div class="stage">
       <div id="map" class="map"></div>
@@ -201,5 +208,5 @@ const qslug = QUESTION_SLUG.es;
     </div>
   </div>
   <SignInModal es />
-  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + cityMapScript(markers, [avgLat, avgLng], route, [], walks)} />
+  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + cityMapScript(markers, [avgLat, avgLng], route, [], walks) + SHEET_JS} />
 </Base>

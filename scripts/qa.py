@@ -245,6 +245,48 @@ def check_save_flow_integrity():
     return out
 
 
+def check_sheet_integrity():
+    """The tenth ratchet check, from 2026-08-18.
+
+    The phone city page is a Google Maps bottom sheet, and it is three parts
+    that only work together: the CSS that makes .panel a fixed, transformed
+    sheet, the markup that gives it a grab handle and an inner scroller, and
+    the script that sets the transform. On 2026-08-17 the CSS shipped alone.
+    With no script the sheet sits at translateY(0) covering the map, and with
+    no .sheet-body the overflow:hidden lands on the panel itself, so 114 city
+    pages in two languages served no map AND could not be scrolled. Nothing
+    failed: the build passed, the smoke test passed, the deploy went green.
+
+    This is the same shape as the hearts-need-the-dialog check above: a set of
+    parts that must never separate. So it is enforced the same way, against the
+    built pages rather than the templates, because what ships is what matters.
+    """
+    out = []
+    root = Path(__file__).resolve().parent.parent
+    css = (root / "site" / "public" / "assets" / "style.css").read_text(encoding="utf-8")
+    if "[data-detent=" not in css:
+        return out  # the sheet layout is not in the stylesheet; nothing to pair
+    need = (('id="sheet"', "the id the script looks for"),
+            ("sheet-grab", "the drag handle the peek is measured from"),
+            ("sheet-body", "the inner scroller, without which the list cannot scroll"),
+            ("atSheetFocus", "the sheet script itself"))
+    broken = []
+    for page in sorted(DIST.rglob("*.html")):
+        html = page.read_text(encoding="utf-8")
+        # panel-head is the split city layout's own marker, and unlike the
+        # class="panel" attribute it cannot be missed by an attribute reorder.
+        if "panel-head" not in html:
+            continue
+        missing = [why for token, why in need if token not in html]
+        if missing:
+            broken.append("%s (missing %s)" % (page.relative_to(DIST), "; ".join(missing)))
+    if broken:
+        out.append("%d page(s) carry the bottom-sheet CSS without all of its parts, "
+                   "which serves a city page with the map hidden and the list unscrollable: %s"
+                   % (len(broken), ", ".join(broken[:5])))
+    return out
+
+
 # The ninth ratchet check, and the class has now failed twice, which is the
 # threshold. On 2026-08-11 a run rendered a submitter's name on a tree page and
 # Hidde ruled it out absolutely, on any channel: "privacy technisch echt een no
@@ -320,6 +362,7 @@ def main():
     failures = []
     failures += check_auth_corpus_agreement()
     failures += check_save_flow_integrity()
+    failures += check_sheet_integrity()
     pages = sorted(DIST.rglob("*.html"))
     if not pages:
         print(f"QA: no pages found under {DIST}, run (cd site && npx astro build) first")
