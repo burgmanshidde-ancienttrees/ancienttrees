@@ -380,6 +380,23 @@
    "cities_touched": 0,
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-08-18T11:15:55+00:00",
+   "date": "2026-08-18",
+   "run_id": "32130850490",
+   "minutes": 0.0,
+   "minutes_basis": "measured",
+   "turns": 1,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": null,
+   "claims_held": [],
+   "commits": 0,
+   "cities_touched": 0,
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
