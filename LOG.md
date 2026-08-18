@@ -12,6 +12,18 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-18 (session) - /explore becomes the same page as a city page, and saved trees keep their photograph
+
+**One layout for every map page.** /explore had its own `.explore-app` / `.explore-split` / `.ex-panel` and a 38vh drawer on a phone, while the city page got a Google Maps sheet the same morning. It now uses the same skeleton and the same SHEET_JS: peek, half, full, tap the map to collapse. The prose moved into the sheet, as the city page's FAQ already was, so nothing sits below a one-screen layout where a phone cannot reach it. Verified at 375px: peek shows the title and the search field, half shows "Cities in view" and then the prose.
+
+Recorded where it acts rather than in a note, per the ratchet: PRODUCT_IA.md carries the ruling, and `check_sheet_integrity()` in qa.py now keys on the LAYOUT rather than a page name, so any future page carrying `.split` must ship the sheet or fail the deploy.
+
+**A saved tree keeps its photograph.** Hidde: "het is wel leuk als de saved trees of het tree component altijd de foto gebruikt als die er is." The component always did; /saved could not, because a save stored only a name and a url. The heart now carries the photograph and the meta line too. Saves made before today have neither and render with empty slots rather than a placeholder.
+
+Found while wiring that: **the save handler stored `location.pathname` as the tree's url**, which on a city list is the CITY page. So every tree saved from a list has been linking back to the city instead of to itself, since hearts went on cards on 2026-08-14. Fixed; older saves keep whatever url they were stored with.
+
+**FOR HIDDE, one thing worth a decision.** style.css is served unfingerprinted at a fixed path, so a returning visitor can get new HTML with a cached old stylesheet. That is not theoretical: it happened in this session's own check, and the result was a city map that rendered blank because the new markup met the old positioning rules. It resolves itself once the cache expires, and it will happen again on every layout change. The standard fix is a content hash in the filename. It is a build change, so it is flagged rather than done.
+
 ## 2026-08-18 (session) - One tree card, walks off the web, and cities findable in their own language
 
 Four asks from Hidde in one session, all live. The map fix that started it has its own entry below.
