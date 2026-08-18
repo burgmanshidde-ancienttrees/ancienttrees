@@ -12,6 +12,18 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-18 (session, night) - Responsive breakage, and the check that should have existed
+
+Hidde walked the site on his own phone and found what a screenshot makes obvious and no gate had noticed. His question was the useful part: "we hebben toch een qa proces? hoe kunnen we dit voorkomen in de toekomst, loop je jezelf wel na?"
+
+**The honest answer is no, not for this.** The four QA layers check structure, check that elements EXIST, read diffs, and use real eyes every two weeks. None of them measures whether a page FITS a phone. And CLAUDE.md's own per-change eyes rule says to look at a changed element rendered at 375px before calling it done; for the account menu I verified with querySelectorAll instead, which is exactly the grep-verified deploy that rule was written against.
+
+**What was broken.** The bar wanted 412px in a 375px screen, so "Get the app" ran off the edge; the wordmark is 115 of those pixels and is the piece every app drops on a phone. The account control was a bare line-art person beside a stray caret, shipped an hour earlier without anyone looking at it; it is now a circular avatar button with no caret, which is what AllTrails, Strava and Google Maps all use. And two `<details>` menus knew nothing about each other, so opening Account over Explore stacked two panels; menus now close their siblings, and a click outside or Escape closes them all.
+
+**The check, which is the part that lasts.** The smoke test now loads six representative pages in a 375px iframe and fails the deploy if anything runs past the right edge. Chrome's --dump-dom returns markup rather than values, so the measuring happens in a harness page that writes its findings into its own DOM. Its first run caught the homepage card shelf, which is an overflow-x:auto row and is supposed to overflow, so the check learned to walk up for a scrolling ancestor first. Recorded in CLAUDE.md as QA layer 3b.
+
+**Also fixed:** the content schema was silently stripping the photo dimensions photo_check.py had just written, so the app feed shipped 353 nulls while the data files held every one.
+
 ## 2026-08-18 (session, late) - The app data feed, and three things Hidde caught on his own account
 
 **/api/version.json and /api/trees.json.** How a new tree reaches an app without a new build: the app ships with a snapshot, asks the 85-byte version file on launch, and pulls the 798 KB (gzipped) dataset only when the content hash differs. Data is not code, so App Store review is not involved. Live and verified: both files agree on version `16e011987b841e89`, 1,377 trees, 133 cities, and every tree carries `precision`, access, transport and its photo's licence, so an app cannot show a rough pin as exact or a picture without its credit. Useful whether or not the app happens.
