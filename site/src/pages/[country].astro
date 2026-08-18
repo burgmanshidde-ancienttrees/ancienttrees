@@ -4,6 +4,7 @@
 // directly, same reasoning as the city route. See ARCHITECTURE.md.
 import { getCollection, type CollectionEntry } from "astro:content";
 import Base from "../layouts/Base.astro";
+import TreeCard from "../components/TreeCard.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, type CityEntry } from "../lib/trees";
 import { COUNTRY_MIN_CITIES, GROUP_ORDER, speciesGroup, speciesCommon, speciesScientific } from "../lib/species";
@@ -11,6 +12,12 @@ import { usablePhoto, imgSrcset, cityFace, NO_PHOTO_SVG } from "../lib/images";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { fitTitle } from "../lib/title";
 import { mapHead, countryMapScript, countryName } from "../lib/map";
+// The shared tree card carries a save heart, and a heart is a no-op without
+// the delegated handler and the sign-in dialog behind it. qa.py enforces the
+// pairing; this is the page paying it.
+import SignInModal from "../components/SignInModal.astro";
+import { SIGNIN_JS } from "../lib/signin-js";
+import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 
 function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -218,17 +225,7 @@ const mapScript = countryMapScript(
     {oldest && oldestCityStat && (
       <Fragment>
         <h2>The oldest tree mapped in {disp}</h2>
-        <div class={`entry${oldestPhoto ? " has-thumb" : ""}`}>
-          {oldestPhoto && oldestPhoto.url && (
-            <div class="entry-thumb">
-              <img {...imgSrcset(oldestPhoto.url, [300, 600], "140px")} alt={oldest.name} loading="lazy" />
-            </div>
-          )}
-          <div class="entry-body">
-            <h3><a href={`/${oldestCityStat.slug}/${oldestTslug}`}>{oldest.name}</a> <span class="tree-label">{oldest.age_estimate ?? ""}</span></h3>
-            <p>{oldest.location?.neighbourhood ?? ""}, {oldestCityStat.cityName}. {(oldest.story ?? "").split(". ")[0]}.</p>
-          </div>
-        </div>
+        <TreeCard tree={oldest} citySlug={oldestCityStat.slug} treeSlug={oldestTslug} />
       </Fragment>
     )}
     {intro.data.register_note && (
@@ -236,5 +233,6 @@ const mapScript = countryMapScript(
     )}
     <p class="suggest" set:html={`${collLine}See <a href="/cities">every city on the map</a>, or <a href="/explore">open the map</a> to find what is near you.`} />
   </main>
+  <SignInModal />
 </Base>
-<Fragment slot="scripts" set:html={mapScript} />
+<Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + mapScript} />

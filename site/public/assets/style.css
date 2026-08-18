@@ -132,7 +132,17 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .stage { flex: 1; position: relative; }
 .stage .map { position: absolute; inset: 0; width: 100%; height: 100%; }
 
-.tree-card { padding: 1.75rem; border-bottom: 1px solid var(--cream-dark); cursor: pointer; border-left: 3px solid transparent; transition: border-color 0.2s, background 0.2s; }
+/* The one tree card, used by TreeCard.astro on every page that shows a tree
+   (Hidde, 2026-08-18). The pointer cursor belongs to the city page alone,
+   where clicking a card selects its pin; anywhere else it would promise a
+   click that does nothing. */
+.tree-card { padding: 1.75rem; border-bottom: 1px solid var(--cream-dark); border-left: 3px solid transparent; transition: border-color 0.2s, background 0.2s; }
+.panel .tree-card { cursor: pointer; }
+/* No map number means nothing to indent under: the 2.15rem on the meta, the
+   story and the link is the width of .tree-num plus its gap. */
+.tree-card-nonum .tree-meta, .tree-card-nonum .tree-story, .tree-card-nonum .tree-more { margin-left: 0; }
+.content-page .tree-card { padding: 1.5rem 0; }
+.content-page .tree-card:first-of-type { padding-top: 0.5rem; }
 .tree-card:hover { background: #fbf9f5; }
 .tree-card.active { border-left-color: var(--moss); background: #fbf9f5; }
 .tree-card-photo { margin: 0 0 1rem; border-radius: 8px; overflow: hidden; aspect-ratio: 3 / 2; background: var(--cream-dark); }

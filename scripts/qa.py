@@ -245,6 +245,33 @@ def check_save_flow_integrity():
     return out
 
 
+def check_one_tree_card():
+    """The eleventh ratchet check, from 2026-08-18.
+
+    Hidde asked for one component so that "als we in de toekomst daar
+    verbeteringen doorvoeren zorgen dat dat overal gebeurt consistent". Before
+    it, a tree rendered two ways: the city page's .tree-card and a smaller
+    .entry with a 96px thumb on the park, species and collection pages, and
+    every improvement to one missed the other. A component only holds the line
+    while nobody hand-rolls a second card next to it, which is exactly what
+    happened last time (the 2026-08-14 audit found the same with hearts).
+
+    So: no built page may ship the retired .entry-thumb/.entry-body markup for
+    a tree. Cheap, and it fails the moment someone copies the old pattern back
+    in rather than adding a prop to TreeCard.astro."""
+    out = []
+    offenders = []
+    for page in sorted(DIST.rglob("*.html")):
+        html = page.read_text(encoding="utf-8")
+        if "entry-thumb" in html or "entry-body" in html:
+            offenders.append(str(page.relative_to(DIST)))
+    if offenders:
+        out.append("%d page(s) render the retired .entry tree markup instead of "
+                   "TreeCard.astro, which is how the two cards drifted apart in the "
+                   "first place: %s" % (len(offenders), ", ".join(offenders[:5])))
+    return out
+
+
 def check_sheet_integrity():
     """The tenth ratchet check, from 2026-08-18.
 
@@ -363,6 +390,7 @@ def main():
     failures += check_auth_corpus_agreement()
     failures += check_save_flow_integrity()
     failures += check_sheet_integrity()
+    failures += check_one_tree_card()
     pages = sorted(DIST.rglob("*.html"))
     if not pages:
         print(f"QA: no pages found under {DIST}, run (cd site && npx astro build) first")

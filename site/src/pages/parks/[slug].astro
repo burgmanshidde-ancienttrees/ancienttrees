@@ -2,7 +2,7 @@
 // Contract H — Park page. Ported from build_park_page(), build_site.py:3908-3959.
 import { getCollection, type CollectionEntry } from "astro:content";
 import Base from "../../layouts/Base.astro";
-import SaveHeart from "../../components/SaveHeart.astro";
+import TreeCard from "../../components/TreeCard.astro";
 import SignInModal from "../../components/SignInModal.astro";
 import { TREE_ACTIONS_JS } from "../../lib/tree-actions-js";
 import { SIGNIN_JS } from "../../lib/signin-js";
@@ -88,23 +88,9 @@ const graph = [...SITE_SCHEMA, breadcrumbSchema(crumbItems, canonical), { "@type
     <p class="suggest">
       All {trees.length} stand in <a href={`/${cslug}`}>{cityName}</a>, which maps {city.data.trees.length} remarkable trees in total.
     </p>
-    {trees.map((t) => {
-      const ph = usablePhoto(t);
-      const storyFirst = (t.story ?? "").split(". ")[0];
-      return (
-        <div class={`entry${ph ? " has-thumb" : ""}`}>
-          {ph && ph.url && (
-            <div class="entry-thumb">
-              <img {...imgSrcset(ph.url, [300, 600], "140px")} alt={t.name} loading="lazy" />
-            </div>
-          )}
-          <div class="entry-body">
-            <h3><a href={`/${cslug}/${tslugs[t.id]}`}>{t.name}</a> <span class="tree-label">{t.age_estimate ?? ""}</span></h3>
-            <p>{t.species}. {storyFirst}.</p>
-          </div>
-        </div>
-      );
-    })}
+    {trees.map((t) => (
+      <TreeCard tree={t} citySlug={cslug} treeSlug={tslugs[t.id]} />
+    ))}
     {intro.data.official_url && (
       // The reciprocity OUTREACH.md promises has to actually exist on the
       // page: opening hours, tickets and closures are theirs to state, not
