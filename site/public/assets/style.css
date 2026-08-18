@@ -143,7 +143,13 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 /* No map number means nothing to indent under: the 2.15rem on the meta, the
    story and the link is the width of .tree-num plus its gap. */
 .tree-card-nonum .tree-meta, .tree-card-nonum .tree-story, .tree-card-nonum .tree-more { margin-left: 0; }
-.content-page .tree-card { padding: 1.5rem 0; }
+/* The card was designed inside a 480px panel, where its 3:2 photograph is
+   about 320px tall and reads as a card. Dropped into a full-width content
+   page it stretched to the column and the photograph became a poster: Hidde,
+   2026-08-18, on /saved, "de foto view is echt horendous". Capping the card
+   at the panel's own width is what "follow the component" means here: same
+   card, same proportions, every page. */
+.content-page .tree-card { padding: 1.5rem 0; max-width: 30rem; }
 .content-page .tree-card:first-of-type { padding-top: 0.5rem; }
 .tree-card:hover { background: #fbf9f5; }
 .tree-card.active { border-left-color: var(--moss); background: #fbf9f5; }
