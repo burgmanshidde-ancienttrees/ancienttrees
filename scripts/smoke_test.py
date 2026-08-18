@@ -19,6 +19,7 @@ Run: python3 scripts/smoke_test.py   (needs Chrome or Chromium on PATH)
 Exit 1 on any failure; CI treats that as the site being broken (rung 2).
 """
 import argparse
+import json
 import re
 import shutil
 import socket
@@ -52,6 +53,69 @@ def dump_dom(chrome, url):
          "--virtual-time-budget=10000", "--dump-dom", url],
         capture_output=True, text=True, timeout=90)
     return out.stdout
+
+
+HARNESS = """<!doctype html><meta charset="utf-8"><title>fit</title>
+<style>html,body{margin:0}iframe{width:375px;height:812px;border:0}</style>
+<iframe id="f"></iframe><pre id="r">pending</pre>
+<script>
+var p = new URLSearchParams(location.search);
+var f = document.getElementById('f');
+f.src = p.get('u');
+f.addEventListener('load', function() {
+  setTimeout(function() {
+    try {
+      var d = f.contentDocument, w = f.contentWindow;
+      var vw = d.documentElement.clientWidth, out = [];
+      d.querySelectorAll('body *').forEach(function(el) {
+        var r = el.getBoundingClientRect();
+        if (!r.width && !r.height) return;
+        var cs = w.getComputedStyle(el);
+        if (cs.visibility === 'hidden' || cs.display === 'none') return;
+        if (r.right > vw + 1) {
+          out.push(el.tagName + '.' + String(el.className).slice(0, 40)
+                   + ' right=' + Math.round(r.right));
+        }
+      });
+      document.getElementById('r').textContent = 'RESULT ' + JSON.stringify({
+        vw: vw, scroll: d.documentElement.scrollWidth, over: out.slice(0, 5)
+      });
+    } catch (e) {
+      document.getElementById('r').textContent = 'RESULT ' + JSON.stringify({error: String(e)});
+    }
+  }, 1200);
+});
+</script>"""
+
+
+def fits_at_375(chrome, base, page):
+    """Does this page fit a phone, or does something run off the right edge?
+
+    The twelfth ratchet check, and it exists because of a question Hidde asked
+    on 2026-08-18 that had no good answer: "we hebben toch een qa proces? hoe
+    kunnen we dit voorkomen in de toekomst?" We did, and none of its four
+    layers could see this. The build checks structure, qa.py checks that
+    elements EXIST, the fresh-eyes reviewer reads diffs, and the composition
+    walk with real eyes runs every two weeks. Nothing measured whether a page
+    FITS. So an account menu added to an already-tight bar pushed "Get the app"
+    37 pixels off the screen, and every gate stayed green.
+
+    Chrome's --dump-dom returns markup rather than a value, so the measuring
+    happens inside a harness page that loads the target in a 375px iframe and
+    writes its findings into its own DOM, which the dump then carries out.
+    """
+    url = "%s/__fit.html?u=%s" % (base, page)
+    out = subprocess.run(
+        [chrome, "--headless=new", "--disable-gpu", "--no-sandbox",
+         "--window-size=420,900", "--virtual-time-budget=15000", "--dump-dom", url],
+        capture_output=True, text=True, timeout=90).stdout
+    m = re.search(r"RESULT (\{.*?\})</pre>", out, re.S)
+    if not m:
+        return None
+    try:
+        return json.loads(m.group(1).replace("&quot;", '"').replace("&amp;", "&"))
+    except Exception:
+        return None
 
 
 def main():
@@ -188,6 +252,11 @@ setTimeout(function(){
         ]),
     ]
 
+    # The harness lives in dist only while the test runs; it is written here
+    # rather than shipped so it can never reach a visitor.
+    fit_page = DIST / "__fit.html"
+    fit_page.write_text(HARNESS, encoding="utf-8")
+
     failures = []
     for url, label, wants in checks:
         dom = ""
@@ -211,6 +280,29 @@ setTimeout(function(){
         if re.search(r"\(function\(\)|localStorage\.|querySelector\(", visible):
             failures.append(f"{label}: script source visible as page text")
 
+    # Does it fit a phone? One representative page per template that a visitor
+    # actually lands on.
+    for page, label in [(f"/{city.name}", "city page"),
+                        ("/index.html", "homepage"),
+                        ("/explore.html", "explore"),
+                        (f"/{city.stem}/{tree.name}", "tree page"),
+                        ("/cities.html", "cities index"),
+                        ("/account.html", "account")]:
+        r = fits_at_375(chrome, base, page)
+        if r is None:
+            failures.append(f"{label}: could not measure whether it fits 375px")
+            continue
+        if r.get("over"):
+            failures.append("%s: %d element(s) run off the right edge at 375px: %s"
+                            % (label, len(r["over"]), "; ".join(r["over"][:3])))
+        elif r.get("scroll", 0) > r.get("vw", 375) + 1:
+            failures.append("%s: page scrolls sideways at 375px (%dpx wide)"
+                            % (label, r["scroll"]))
+
+    try:
+        fit_page.unlink()
+    except OSError:
+        pass
     server.shutdown()
     if failures:
         print(f"SMOKE FAILED: {len(failures)} problem(s)")
