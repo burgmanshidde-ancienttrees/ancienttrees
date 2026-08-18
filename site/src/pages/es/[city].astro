@@ -19,6 +19,7 @@ import SignInModal from "../../components/SignInModal.astro";
 import AppModal from "../../components/AppModal.astro";
 import { TREE_ACTIONS_JS } from "../../lib/tree-actions-js";
 import { SIGNIN_JS } from "../../lib/signin-js";
+import { VISITED_SYNC_JS } from "../../lib/visited-sync-js";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, type CityEntry } from "../../lib/trees";
 import { usablePhoto, imgSrcset, creditRequired } from "../../lib/images";
 import { speciesIcon } from "../../lib/species-icons";
@@ -180,5 +181,5 @@ const qslug = QUESTION_SLUG.es;
   </div>
   <SignInModal es />
   <AppModal es />
-  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + cityMapScript(markers, [avgLat, avgLng], null, [], []) + SHEET_JS} />
+  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + VISITED_SYNC_JS + cityMapScript(markers, [avgLat, avgLng], null, [], []) + SHEET_JS} />
 </Base>

@@ -13,6 +13,7 @@ import { SAVED_LIST_JS } from "../lib/saved-list-js";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 import SignInModal from "../components/SignInModal.astro";
 import { SIGNIN_JS } from "../lib/signin-js";
+import { VISITED_SYNC_JS } from "../lib/visited-sync-js";
 
 const canonical = `${BASE_URL}/account`;
 ---
@@ -71,7 +72,7 @@ const canonical = `${BASE_URL}/account`;
   </section>
   <SignInModal />
 </main>
-<Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + SAVED_LIST_JS + `
+<Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + VISITED_SYNC_JS + SAVED_LIST_JS + `
 <script>
 (function() {
   var SB = "${SUPABASE_URL}";
