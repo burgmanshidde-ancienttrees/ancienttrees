@@ -56,8 +56,15 @@ export const SEARCH_WIDGET_JS = `
     });
     IDX.c.forEach(function(c) {
       var i = norm(c.city).indexOf(q);
-      if (i === 0) places.push({kind: 'city', it: c});
-      else if (i > 0 || norm(c.country).indexOf(q) === 0) places.push({kind: 'city', it: c});
+      if (i === 0) { places.push({kind: 'city', it: c}); return; }
+      // The city's name in other languages (c.a), so Den Haag finds The Hague
+      // and Firenze finds Florence. Start-of-name only, the same bar the
+      // English name clears at i === 0, because a substring match across ten
+      // spellings per city turns two letters into a wall of results. The row
+      // still shows the English name: that is what the page is called.
+      var alt = c.a && c.a.some(function(n) { return norm(n).indexOf(q) === 0; });
+      if (alt) { places.push({kind: 'city', it: c}); return; }
+      if (i > 0 || norm(c.country).indexOf(q) === 0) places.push({kind: 'city', it: c});
     });
     IDX.s.forEach(function(s) {
       if (norm(s.n).indexOf(q) === 0) species.push({kind: 'species', it: s});

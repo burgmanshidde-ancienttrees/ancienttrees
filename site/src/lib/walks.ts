@@ -1,3 +1,13 @@
+// KEEP THIS, and keep data/walk-routes.json with it. On 2026-08-18 Hidde took
+// the walking routes off the web ("die ik niet beschikbaar wil maken op web"),
+// so the city pages no longer render a walk picker and no longer call
+// planWalks(). He said in the same breath why this file stays: "de functie
+// hebben we later dus wel nog nodig voor app dus gooi de info niet weg."
+// Walking is one of the product's four verbs and the app is where it lands, so
+// this is a feature parked on the shelf, not dead code to tidy away. The route
+// cache (data/walk-routes.json), scripts/route_walks.py and
+// scripts/walk_planning.py are part of the same shelf.
+//
 // Ported from the walk-planning system, build_site.py:1231-1530. Works out,
 // at build time, every honest walk a city's trees allow: single-link
 // clustering (a walk is a chain, not a blob), a nearest-neighbour route

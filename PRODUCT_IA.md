@@ -68,7 +68,24 @@ The collect button sits above the story (Atlas Obscura's law). Logged-out it sti
 
 Stays the workhorse it is. Order tightens to: map with the pins, then the walks (see the ruling below), then the trees with collect buttons on each row, then explore-onward links. The question pages, species pages and collections keep feeding it from below.
 
-## Walks live INSIDE the city page. Ruled by Hidde, 2026-08-06
+## Walks are an APP feature. Ruled by Hidde, 2026-08-18, superseding the section below
+
+His words: "je mag van mij de walking routes achter een kleinere knop zetten op de kaart, dat is een diepere filter dan, die ik niet beschikbaar wil maken op web, maar die je naar de landingspagina van de app brengt omdat ze daar beschikbaar zijn, zodat er meer ruimte is voor de kaart en de bomen."
+
+So the web city page no longer offers walks. Where the green route capsule, the walk picker and the drawn route line used to sit, there is one small pill on the map reading "Walking routes, in the app", linking to /app. The map and the trees get the space back.
+
+Two reasons this is a continuation rather than a reversal, and one cost worth naming.
+
+It is line 10 of this document finally applied: **web reads, app walks.** Routes are navigation, navigation is what an app is for, and giving the web a half version of it was always the odd part. And it turns the deepest filter on the page into the one honest reason to want the app, which is the only app hook the site has ever had that is a feature rather than a promise.
+
+The cost: walking is one of the four verbs, and the web now delivers three of them. The pill has to carry that weight, so it says where the routes are instead of implying they are here. Worth watching in the funnel; `data-ev="walks-app"` is the event.
+
+**Nothing is deleted.** Hidde, same day: "de functie hebben we later dus wel nog nodig voor app dus gooi de info niet weg." `site/src/lib/walks.ts`, `data/walk-routes.json`, `scripts/route_walks.py` and `scripts/walk_planning.py` all stay, with a note at the top of walks.ts saying why, so no future tidy-up reads them as dead code.
+
+## The superseded ruling: walks live INSIDE the city page. Hidde, 2026-08-06
+
+Kept because its two constraints still bind whenever walks come back, on any surface: no walk URLs, and no walk may hide a tree from a crawler.
+
 
 His words, and they are a standing no rather than a preference: "I'm not asking for extra pages. I never want extra pages for extra walks." A walk is **a feature within the city page, never a page of its own.**
 

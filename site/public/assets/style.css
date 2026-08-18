@@ -631,6 +631,34 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .walks { position: absolute; left: 1rem; bottom: 1.2rem; z-index: 5;
   display: flex; flex-direction: column; align-items: flex-start;
   max-width: min(440px, calc(100% - 2rem)); }
+/* What sits on the map now that the walking routes have left the web (Hidde,
+   2026-08-18: "die ik niet beschikbaar wil maken op web - maar die je naar de
+   landingspagina van de app brengt... zodat er meer ruimte is voor de kaart en
+   de bomen"). One small pill instead of a green primary button, a walk picker
+   and a sheet. It names where the routes are rather than implying they are
+   here: a button reading "Walking routes" that opens an app page is a bait
+   unless it says so on its face. */
+.map-tools { display: flex; align-items: center; gap: 0.5rem; }
+.map-cta, .map-gps { background: #fff; border: 1px solid var(--cream-dark);
+  border-radius: 999px; box-shadow: 0 4px 18px rgba(0,0,0,0.14);
+  color: var(--ink); font-family: var(--sans); cursor: pointer; }
+.map-cta { display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.45rem 0.85rem 0.45rem 0.7rem; text-decoration: none; }
+.map-cta:hover { background: var(--cream); }
+.map-cta-ic { width: 18px; height: 18px; color: var(--moss); flex: 0 0 auto; }
+.map-cta-text { display: flex; flex-direction: column; line-height: 1.15;
+  font-size: 13.5px; font-weight: 600; }
+.map-cta-sub { font-size: 11.5px; font-weight: 400; color: var(--ink-light); }
+.map-gps { display: inline-flex; align-items: center; justify-content: center;
+  width: 40px; height: 40px; padding: 0; flex: 0 0 auto; }
+.map-gps .gps-ic { width: 20px; height: 20px; }
+.map-gps[aria-pressed="true"] { color: #1E6FD9; border-color: #1E6FD9; }
+/* PARKED, not dead: the .walk-* and .route-* rules from here down style the
+   walk picker and route capsule that came off the web on 2026-08-18 (see
+   PRODUCT_IA.md's walks ruling). They are kept for the same reason walks.ts
+   is: "gooi de info niet weg", the feature lands in the app. Note that the
+   .tree-bar:not(.walk-bar) rules elsewhere are NOT part of this; they style
+   the tree page's own bar and are live. */
 /* The Spanish city page builds its capsule as .route-bar rather than
    .tree-bar, and had never been given any of this, which did not show while
    the bar was a full-width strip pinned to the bottom. Floating it over the
@@ -826,19 +854,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
      wraps. */
   .walks { bottom: calc(var(--sheet-peek, 4.5rem) + 0.6rem); z-index: 15;
     transition: bottom 260ms cubic-bezier(0.22, 0.61, 0.36, 1), opacity 160ms linear; }
-  .walks .tree-bar, .walks .route-bar { border-radius: 999px; border: 1px solid var(--cream-dark);
-    margin: 0 0.75rem; padding: 0.5rem 0.75rem;
-    box-shadow: 0 4px 16px rgba(26, 32, 18, 0.18); }
-  /* The capsule lost ~27px to its own margin when it stopped spanning the
-     screen, which was enough to clip a long walk name at BOTH ends, because
-     the label is centred and hidden rather than truncated. The distance and
-     the time are the half a visitor needs; the name is the half that can
-     take an ellipsis. */
-  .walks .route-go { justify-content: center; align-items: flex-start; min-width: 0;
-    flex-direction: column; gap: 0; line-height: 1.25; }
-  .walks .route-go .route-name { flex: 0 1 auto; min-width: 0;
-    overflow: hidden; text-overflow: ellipsis; }
-  .walks .route-go .route-meta { flex: 0 0 auto; }
+  .map-tools { margin: 0 0.75rem; }
   :root[data-sheet="half"] .walks,
   :root[data-sheet="full"] .walks { opacity: 0; pointer-events: none; }
 
