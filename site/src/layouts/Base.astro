@@ -8,6 +8,7 @@
 //  2. TITLE_MAX/DESC_MAX are enforced by throwing at build time (the Astro
 //     equivalent of build_site.py's ERRORS.append(), which collected and
 //     reported at the very end of the build instead).
+import { STYLE_HREF } from "../lib/asset-hash";
 import {
   AUTH_ENABLED,
   SUPABASE_URL,
@@ -82,7 +83,7 @@ const year = new Date().getFullYear();
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="alternate icon" type="image/x-icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href={STYLE_HREF}>
 <Fragment set:html={headExtra} />
 </head>
 <body>
