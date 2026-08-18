@@ -2,7 +2,7 @@
 // Contract D — Collection page. Ported from build_collection_page(), build_site.py:3667-3746.
 import { getCollection, type CollectionEntry } from "astro:content";
 import Base from "../../layouts/Base.astro";
-import SaveHeart from "../../components/SaveHeart.astro";
+import TreeCard from "../../components/TreeCard.astro";
 import SignInModal from "../../components/SignInModal.astro";
 import { TREE_ACTIONS_JS } from "../../lib/tree-actions-js";
 import { SIGNIN_JS } from "../../lib/signin-js";
@@ -83,22 +83,9 @@ const headExtra = ldScript(graph) + (isDraft ? '\n<meta name="robots" content="n
     {sections.map(({ city, cslug, rows }) => (
       <Fragment>
         <h2><a class="coll-city" href={`/${cslug}`}>{city.data.city}</a></h2>
-        {rows.map(({ tree: t, note, slug: tslug }) => {
-          const ph = usablePhoto(t);
-          return (
-            <div class={`entry${ph ? " has-thumb" : ""}`}>
-              {ph && ph.url && (
-                <div class="entry-thumb">
-                  <img {...imgSrcset(ph.url, [300, 600], "140px")} alt={t.name} loading="lazy" />
-                </div>
-              )}
-              <div class="entry-body">
-                <h3><a href={`/${cslug}/${tslug}`}>{t.name}</a> <span class="tree-label">{t.age_estimate ?? ""}</span></h3>
-                <p>{note}</p>
-              </div>
-            </div>
-          );
-        })}
+        {rows.map(({ tree: t, note, slug: tslug }) => (
+          <TreeCard tree={t} citySlug={cslug} treeSlug={tslug} note={note} />
+        ))}
         <p class="coll-citycta"><a href={`/${cslug}`}>See all {city.data.trees.length} trees in {city.data.city} on the map →</a></p>
       </Fragment>
     ))}

@@ -1,0 +1,113 @@
+---
+// ONE way to show a tree, everywhere (Hidde, 2026-08-18: "kunnen we niet een
+// centraal component maken zodat we bomen overal op dezelfde manier weergeven
+// ... ik denk dat de stadslijst nu het beste is ... en als we in de toekomst
+// daar verbeteringen doorvoeren zorgen dat dat overal gebeurt consistent, of
+// het nou andere taal of andere pagina is").
+//
+// Before this there were two: the city page's .tree-card, which he judged the
+// best, and a smaller .entry used on the park, species and collection pages,
+// with a 96px square thumb and one sentence. Every improvement to one of them
+// missed the other, which is the same failure the 2026-08-14 audit found with
+// hearts and the sign-in dialog and drew the same conclusion from: a
+// user-facing thing that renders on nine page types in two languages has to
+// be a component, because parity by hand does not survive the page count.
+//
+// The city card wins, as he said. What changes per page is how much TEXT it
+// carries, and that is not a style choice: the story is 150-250 unique words
+// and the city page is its canonical home, so repeating it on the species,
+// park and collection pages would put the same paragraphs on four URLs, which
+// SEO_GEO_BLUEPRINT.md's P3 forbids and Google reads as thin duplication.
+// Hence one component, one look, two text lengths.
+import { usablePhoto, imgSrcset, creditRequired } from "../lib/images";
+import { bestTimeShort } from "../lib/phenology";
+import SaveHeart from "./SaveHeart.astro";
+
+interface Props {
+  tree: any;
+  citySlug: string;
+  treeSlug: string;
+  /** The map number. Present on the city page, absent everywhere else, and it
+   *  is what the meta/story indent lines up with, so no number means no indent. */
+  index?: number;
+  /** "full" gives the whole story, and belongs only on the tree's own city
+   *  page. "compact" gives its first sentence. */
+  variant?: "full" | "compact";
+  /** Overrides the text entirely, for a collection's own line about the tree. */
+  note?: string;
+  /** The city page heads its cards with h2; pages that group by city already
+   *  spent their h2 on the city name. */
+  headingLevel?: 2 | 3;
+  /** A species page repeating one species name down the whole page is noise. */
+  omitSpecies?: boolean;
+  lang?: "en" | "es";
+  /** The Spanish city page carries its own translated name, species and age. */
+  overrides?: { name?: string; species?: string; age?: string; story?: string };
+}
+
+const {
+  tree, citySlug, treeSlug, index, variant = "compact", note,
+  headingLevel = 3, omitSpecies = false, lang = "en", overrides,
+} = Astro.props as Props;
+
+const L = lang === "es"
+  ? { more: "Leer más y cómo llegar →", save: "Guardar", saved: "Guardado" }
+  : { more: "Read more and get directions →", save: "Save", saved: "Saved" };
+
+const name = overrides?.name ?? tree.name;
+const species = overrides?.species ?? tree.species ?? "";
+const age = overrides?.age ?? tree.age_estimate ?? "";
+const story = overrides?.story ?? tree.story ?? "";
+const photo = usablePhoto(tree);
+const href = lang === "es" ? `/es/${citySlug}/${treeSlug}` : `/${citySlug}/${treeSlug}`;
+
+// A compact card takes the first sentence. Splitting on ". " alone cut
+// "Quercus robur. It stands..." in the wrong place on any story opening with
+// an abbreviation, so the split needs a following capital.
+function firstSentence(s: string): string {
+  const m = s.match(/^.*?[.!?](?=\s+[A-Z"'(])/);
+  const out = (m ? m[0] : s).trim();
+  return out.length > 200 ? out.slice(0, 197).trimEnd() + "..." : out;
+}
+
+const text = note ?? (variant === "full" ? story : firstSentence(story));
+// The meta line is the same three facts in the same order on every page, which
+// is most of what "shown the same way" means to a reader.
+const metaParts = [omitSpecies ? "" : species, age, (tree.location?.neighbourhood ?? "").trim()]
+  .map((s) => (s ?? "").trim())
+  .filter(Boolean);
+const bestTime = bestTimeShort(tree);
+
+function esc(s: string): string {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+const metaHtml = metaParts.map(esc).join(" &middot; ") + (bestTime ?? "");
+---
+<article
+  class:list={["tree-card", { "tree-card-nonum": index === undefined }]}
+  id={index === undefined ? undefined : `tree-${index}`}
+  data-tree-id={tree.id}
+>
+  {photo && photo.url && (
+    <Fragment>
+      <div class="tree-card-photo">
+        <img {...imgSrcset(photo.url, [500, 900], "(max-width: 800px) 100vw, 560px")} alt={name} loading="lazy" />
+      </div>
+      {creditRequired(photo.license) && (
+        <p class="tree-card-credit">Photo: {photo.attribution} ({photo.license})</p>
+      )}
+    </Fragment>
+  )}
+  <div class="tree-card-top">
+    {index !== undefined && <span class="tree-num">{index}</span>}
+    {headingLevel === 2 ? (
+      <h2 class="tree-name">{name}{tree.label && <span class="tree-label">{tree.label}</span>}</h2>
+    ) : (
+      <h3 class="tree-name">{name}{tree.label && <span class="tree-label">{tree.label}</span>}</h3>
+    )}
+  </div>
+  {metaHtml && <p class="tree-meta" set:html={metaHtml} />}
+  {text && <p class="tree-story">{text}</p>}
+  <p class="tree-more"><a href={href}>{L.more}</a></p>
+  <SaveHeart treeId={tree.id} treeName={name} compact labelSave={L.save} labelSaved={L.saved} />
+</article>

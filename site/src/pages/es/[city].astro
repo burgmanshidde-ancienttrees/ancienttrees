@@ -14,7 +14,7 @@
 // become the next work, not silent debt.
 import { getCollection } from "astro:content";
 import Base from "../../layouts/Base.astro";
-import SaveHeart from "../../components/SaveHeart.astro";
+import TreeCard from "../../components/TreeCard.astro";
 import SignInModal from "../../components/SignInModal.astro";
 import { TREE_ACTIONS_JS } from "../../lib/tree-actions-js";
 import { SIGNIN_JS } from "../../lib/signin-js";
@@ -134,27 +134,11 @@ const qslug = QUESTION_SLUG.es;
         </p>
       </div>
       {trees.map((t, i) => {
-        const cphoto = usablePhoto(t);
         const x = tr.trees[t.id];
         return (
-          <article class="tree-card" id={`tree-${i + 1}`} data-tree-id={t.id}>
-            {cphoto && cphoto.url && (
-              <Fragment>
-                <div class="tree-card-photo">
-                  <img {...imgSrcset(cphoto.url, [500, 900], "(max-width: 800px) 100vw, 560px")} alt={x.name} loading="lazy" />
-                </div>
-                {creditRequired(cphoto.license) && <p class="tree-card-credit">Foto: {cphoto.attribution} ({cphoto.license})</p>}
-              </Fragment>
-            )}
-            <div class="tree-card-top">
-              <span class="tree-num">{i + 1}</span>
-              <h2 class="tree-name">{x.name}</h2>
-            </div>
-            <p class="tree-meta" set:html={`${esc(x.species)} &middot; ${esc(x.age_estimate)} &middot; ${esc(t.location?.neighbourhood ?? "")}`} />
-            <p class="tree-story">{x.story}</p>
-            <p class="tree-more"><a href={`/es/${cslug}/${tslugs[t.id]}`}>Leer más y cómo llegar →</a></p>
-            <SaveHeart treeId={t.id} treeName={t.name} compact labelSave="Guardar" labelSaved="Guardado" />
-          </article>
+          <TreeCard tree={t} citySlug={cslug} treeSlug={tslugs[t.id]} index={i + 1}
+                    variant="full" headingLevel={2} lang="es"
+                    overrides={{ name: x.name, species: x.species, age: x.age_estimate, story: x.story }} />
         );
       })}
       <div class="panel-foot">

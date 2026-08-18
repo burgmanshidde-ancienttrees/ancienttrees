@@ -10,6 +10,9 @@ import { BASE_URL } from "../lib/schema";
 import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
 import SignInModal from "../components/SignInModal.astro";
 import { SIGNIN_JS } from "../lib/signin-js";
+// The cards carry a save heart now, so this page needs the delegated handler
+// that paints and toggles it, exactly like every other page that shows one.
+import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 
 const canonical = `${BASE_URL}/saved`;
 const SAVED_PAGE_JS = `
@@ -20,23 +23,47 @@ const SAVED_PAGE_JS = `
   function localMap() {
     try { return JSON.parse(localStorage.getItem('at_saved_v1') || '{}'); } catch (e) { return {}; }
   }
+  // The same card the rest of the site shows (Hidde, 2026-08-18: one component,
+  // one way of showing a tree). This page cannot use TreeCard.astro because it
+  // renders from localStorage in the browser, so it emits that component's
+  // markup instead, and any change to the card has to be made in both places.
+  // What it cannot fill is species, age and the photograph: a save stores only
+  // a name and a url, so the card renders with those slots empty rather than
+  // with invented content. The city name comes from the search index, which is
+  // a static file the search box already fetches.
+  var CITY = {};
+  function esc(t) { return String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); }
+  function card(id, it) {
+    var city = CITY[it.u] || '';
+    return '<article class="tree-card tree-card-nonum" data-tree-id="' + esc(id) + '">'
+      + '<div class="tree-card-top"><h3 class="tree-name">' + esc(it.n) + '</h3></div>'
+      + (city ? '<p class="tree-meta">' + esc(city) + '</p>' : '')
+      + '<p class="tree-more"><a href="' + esc(it.u) + '">Read more and get directions &rarr;</a></p>'
+      + '<button class="save-btn heart-btn heart-compact" type="button" data-tree="' + esc(id) + '"'
+      + ' data-name="' + esc(it.n) + '" data-url="' + esc(it.u) + '" data-l-save="Save" data-l-saved="Saved"'
+      + ' aria-pressed="true" aria-label="Saved ' + esc(it.n) + '">'
+      + '<svg class="heart" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21C6.5 16.3 3.5 13 3.5 9.6 3.5 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.5 2 4.5 4.6 0 3.4-3 6.7-8.5 11.4z"/></svg>'
+      + '<span>Saved</span></button>'
+      + '</article>';
+  }
+  var lastMap = {};
   function render(map) {
+    lastMap = map;
     var ids = Object.keys(map);
-    list.textContent = '';
-    if (!ids.length) { empty.hidden = false; list.hidden = true; return; }
+    if (!ids.length) { list.innerHTML = ''; empty.hidden = false; list.hidden = true; return; }
     empty.hidden = true;
     ids.sort(function(a, b) { return map[a].n < map[b].n ? -1 : 1; });
-    ids.forEach(function(id) {
-      var li = document.createElement('li');
-      var a = document.createElement('a');
-      a.href = map[id].u;
-      a.textContent = map[id].n;
-      li.appendChild(a);
-      list.appendChild(li);
-    });
+    list.innerHTML = ids.map(function(id) { return '<li>' + card(id, map[id]) + '</li>'; }).join('');
     list.hidden = false;
+    if (window.atPaintSaves) window.atPaintSaves();
   }
   render(localMap());
+  // Fill in the city names once, then repaint. A failure here costs a line of
+  // context on each card and nothing else.
+  fetch('/search-index.json').then(function(r) { return r.json(); }).then(function(j) {
+    (j.t || []).forEach(function(row) { CITY['/' + row.u] = row.c; });
+    render(lastMap);
+  }).catch(function() {});
   // Signed in: the list is the union of this device and the account.
   var s = null;
   try { s = JSON.parse(localStorage.getItem('ancienttrees_session')); } catch (e) {}
@@ -71,5 +98,5 @@ const SAVED_PAGE_JS = `
     <p id="saved-empty" hidden>Nothing saved yet. Open any tree and tap <b>&#9825; Save</b> to keep it here for the day you walk past. <a href="/explore">Find a tree near you</a>.</p>
     <SignInModal />
   </main>
-  <Fragment slot="scripts" set:html={SIGNIN_JS + SAVED_PAGE_JS} />
+  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + SAVED_PAGE_JS} />
 </Base>
