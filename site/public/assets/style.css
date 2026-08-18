@@ -975,8 +975,9 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .worthit-more { font-size: 13px; color: var(--moss); }
 .worthit-more[hidden] { display: none; }
 .save-btn[aria-pressed="true"] { border-color: var(--moss); color: var(--moss); }
-.saved-list { margin: 1rem 0 2rem; padding-left: 1.2rem; }
-.saved-list li { margin: 0.4rem 0; }
+/* The saved list holds tree cards now, not bullet points (2026-08-18). */
+.saved-list { margin: 1rem 0 2rem; padding-left: 0; list-style: none; }
+.saved-list li { margin: 0; }
 /* "Worth the visit?" (2026-08-14, DECISIONS.md). Quiet by design: a text-size
    question and two small buttons, never a component that outshouts the story.
    Stacked into rows 2026-08-16, when the vote and the problem report were split
