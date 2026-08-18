@@ -15,7 +15,10 @@ export async function GET() {
     version,
     trees: trees.length,
     cities: citySlugs.size,
-    // Where the full dataset lives, so a client never hardcodes the path.
+    // Where each dataset lives, so a client never hardcodes a path and we can
+    // move one without shipping a new build to the store.
     trees_url: "/api/trees.json",
+    species_url: "/api/species.json",
+    walks_url: "/api/walks.json",
   }), { headers: { "Content-Type": "application/json" } });
 }
