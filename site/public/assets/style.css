@@ -369,14 +369,14 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .section-heading { font-family: var(--sans); font-size: 1.7rem; font-weight: 700; letter-spacing: -0.015em; margin-bottom: 1.5rem; }
 .prose { font-size: 15px; font-weight: 300; color: var(--ink-mid); line-height: 1.75; max-width: 640px; margin-bottom: 2.5rem; }
 .city-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 2px; background: var(--cream-dark); border: 1px solid var(--cream-dark); margin-bottom: 3rem; }
-.explore-page { margin-top: var(--header-h); }
-/* The app part (head + split) fills exactly one screen; anything after it, like
-   the prose section, lives below the fold. The prose used to sit INSIDE the
-   fixed-height flex column, which squeezed the split to 20px and let the map's
-   own min-height paint over the text that followed. */
-.explore-app { display: flex; flex-direction: column; height: calc(100vh - var(--header-h)); }
-.explore-split { display: flex; flex: 1; min-height: 0; }
-.ex-panel { width: 360px; flex-shrink: 0; overflow-y: auto; background: #fff; border-right: 1px solid var(--cream-dark); padding: 0.9rem; }
+/* /explore uses the city page's layout since 2026-08-18 (Hidde: "kunnen we
+   dezelfde logica interactie doorvoeren op de algehele kaart pagina, en kunnen
+   we die paginas consistent met elkaar houden"). Both are .split / .panel /
+   .stage, and on a phone both are the same bottom sheet driven by the same
+   SHEET_JS, so an improvement to one is an improvement to both. The panel's
+   own layout rules therefore live with .panel, not here; what stays below is
+   the list of what is in view, which is this page's alone. */
+#ex-panel { padding: 0.9rem; }
 .exc-cityhead { display: flex; align-items: baseline; justify-content: space-between; gap: 0.75rem; margin: 0.2rem 0.2rem 0.8rem; }
 .exc-cityhead h2 { font-size: 1.05rem; font-weight: 800; letter-spacing: -0.01em; }
 .exc-cityhead a { font-size: 12.5px; font-weight: 700; color: var(--moss); white-space: nowrap; }
@@ -394,10 +394,7 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .cindex-country { font-size: 1.05rem; font-weight: 800; margin: 1.6rem 0 0.6rem; }
 .cindex-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0.35rem 1rem; }
 .exc-empty { font-size: 13px; color: var(--ink-mid); padding: 0.5rem; }
-@media (max-width: 800px) {
-  .explore-split { flex-direction: column-reverse; }
-  .ex-panel { width: 100%; height: 38vh; border-right: none; border-top: 1px solid var(--cream-dark); }
-}
+.panel-head .ex-search { margin-top: 0.75rem; display: block; width: 100%; }
 .explore-head { padding: 1.1rem 2rem 0.9rem; display: grid; grid-template-columns: 1fr auto; gap: 0.2rem 1.5rem; align-items: center; }
 .explore-head h1 { font-size: 1.45rem; font-weight: 800; letter-spacing: -0.015em; }
 .explore-head p { font-size: 13px; color: var(--ink-mid); margin-top: 0.2rem; max-width: 46rem; grid-column: 1; }
@@ -463,10 +460,14 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
   .ex-search { grid-column: 1; grid-row: auto; min-width: 0; margin-top: 0.4rem; }
 }
 .explore-now-chip { display: inline-block; background: #F3E4C3; color: #8A6414; font-weight: 700; font-size: 11.5px; border-radius: 999px; padding: 2px 10px; margin-left: 0.4rem; }
-.explore-map { flex: 1; min-height: 320px; }
 /* The map is the page; this sits under it, for readers and for search engines
    that cannot read a canvas. Never above the fold. */
-.explore-prose { padding: 2rem 2rem 3rem; max-width: 48rem; font-family: var(--sans); }
+/* The prose moved INTO the sheet on 2026-08-18, as the city page's FAQ and
+   links already were, so the layout could become one screen on both pages
+   without putting text somewhere a phone cannot reach. Still never above the
+   fold, still there for readers and for search engines that cannot read a
+   canvas. */
+.explore-prose { padding: 1.5rem 0 0; max-width: 48rem; font-family: var(--sans); }
 .explore-prose h2 { font-size: 1.05rem; font-weight: 750; letter-spacing: -0.01em; margin: 1.4rem 0 0.4rem; }
 .explore-prose h2:first-child { margin-top: 0; }
 .explore-prose p { font-size: 14.5px; font-weight: 300; color: var(--ink-mid); line-height: 1.7; margin-bottom: 0.5rem; }

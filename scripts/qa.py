@@ -287,6 +287,12 @@ def check_sheet_integrity():
     This is the same shape as the hearts-need-the-dialog check above: a set of
     parts that must never separate. So it is enforced the same way, against the
     built pages rather than the templates, because what ships is what matters.
+
+    Widened on 2026-08-18 to every page built on the .split layout, which is
+    now /explore as well as the city pages (Hidde: "kunnen we die paginas
+    consistent met elkaar houden"). That is the point of keying on the layout
+    rather than on a page name: a future page that adopts the split gets the
+    same sheet or it does not ship.
     """
     out = []
     root = Path(__file__).resolve().parent.parent
@@ -300,9 +306,10 @@ def check_sheet_integrity():
     broken = []
     for page in sorted(DIST.rglob("*.html")):
         html = page.read_text(encoding="utf-8")
-        # panel-head is the split city layout's own marker, and unlike the
-        # class="panel" attribute it cannot be missed by an attribute reorder.
-        if "panel-head" not in html:
+        # The layout is the trigger, not the page: any page built on .split
+        # owes the sheet its parts. panel-head is that layout's own marker and,
+        # unlike a class attribute, cannot be missed by an attribute reorder.
+        if "panel-head" not in html and 'class="split"' not in html:
             continue
         missing = [why for token, why in need if token not in html]
         if missing:

@@ -68,6 +68,21 @@ The collect button sits above the story (Atlas Obscura's law). Logged-out it sti
 
 Stays the workhorse it is. Order tightens to: map with the pins, then the walks (see the ruling below), then the trees with collect buttons on each row, then explore-onward links. The question pages, species pages and collections keep feeding it from below.
 
+## The map pages are one layout and one interaction. Ruled by Hidde, 2026-08-18
+
+His words: "kunnen we dezelfde logica interactie doorvoeren op de algehele kaart pagina, en kunnen we die paginas consistent met elkaar houden, en dit onthouden."
+
+**Every page whose subject is a map is built the same way.** One markup skeleton, `.split` / `.panel` / `.stage`, and on a phone one bottom sheet with three detents driven by one script, `site/src/lib/sheet-js.ts`. That is the city page in both languages and /explore, and it is the shape any future map page takes.
+
+The rules that follow from it, in order of how easily they get broken:
+
+- **A new map page adopts the skeleton, it does not invent one.** /explore had its own `.explore-app` / `.explore-split` / `.ex-panel` until this ruling, which is how it ended up with a 38vh drawer while the city page got a Maps-style sheet on the same day.
+- **An improvement goes in the shared piece, never in one page.** The sheet script, the sheet CSS and TreeCard.astro are the shared pieces. A fix made in a page is a fix the other pages will not get, which is the failure this ruling exists to stop.
+- **Content that is not the map lives inside the sheet.** The layout is one screen tall, so anything below it is unreachable. The city page's FAQ and links already lived in the panel; /explore's prose moved there for the same reason. It stays in the served HTML either way, which is what keeps it indexed.
+- **`check_sheet_integrity()` in scripts/qa.py enforces it**, and deliberately keys on the LAYOUT rather than on a page name: a page carrying `.split` must also carry the sheet id, its grab handle, its inner scroller and its script, or the deploy fails. Removing that check needs Hidde.
+
+One deliberate exception, and it is a question rather than a settled answer: /explore's panel lists what is currently in view as compact rows, not as full tree cards, because a map sidebar is a legend of what is on screen rather than a reading list. If that reads as inconsistent, the rows become TreeCard markup the way /saved already does.
+
 ## Walks are an APP feature. Ruled by Hidde, 2026-08-18, superseding the section below
 
 His words: "je mag van mij de walking routes achter een kleinere knop zetten op de kaart, dat is een diepere filter dan, die ik niet beschikbaar wil maken op web, maar die je naar de landingspagina van de app brengt omdat ze daar beschikbaar zijn, zodat er meer ruimte is voor de kaart en de bomen."
