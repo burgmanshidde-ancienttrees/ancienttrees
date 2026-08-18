@@ -76,6 +76,20 @@ const text = note ?? (variant === "full" ? story : firstSentence(story));
 // else there is no such handler, and a list whose titles do nothing is a
 // list that looks broken.
 const linkName = index === undefined;
+// AllTrails, Airbnb and Booking all make the WHOLE card the click target, and
+// ours only looked that way: it lit up on hover and then only the two links
+// inside it actually did anything (Hidde, 2026-08-18: "overal kan je aan de
+// hoverstaat zien dat je een boom selecteert, maar dan moet je ook wel overal
+// kunnen klikken, niet alleen de tekst"). The fix is the stretched-link
+// pattern rather than wrapping the card in an anchor, because a card contains
+// a Save button and a credit link, and interactive content cannot be nested
+// inside a link. One real link in the accessibility tree, the whole card
+// clickable, and the text still selectable.
+//
+// The city page is the exception and keeps no stretched link: there a tap on
+// the card selects the tree's pin and opens it in the sheet, which is already
+// whole-card behaviour and is the thing that would break if the card
+// navigated instead.
 // The meta line is the same three facts in the same order on every page, which
 // is most of what "shown the same way" means to a reader.
 const metaParts = [omitSpecies ? "" : species, age, (tree.location?.neighbourhood ?? "").trim()]
@@ -89,7 +103,7 @@ function esc(s: string): string {
 const metaHtml = metaParts.map(esc).join(" &middot; ") + (bestTime ?? "");
 ---
 <article
-  class:list={["tree-card", { "tree-card-nonum": index === undefined }]}
+  class:list={["tree-card", { "tree-card-nonum": index === undefined, "tree-card-link": linkName }]}
   id={index === undefined ? undefined : `tree-${index}`}
   data-tree-id={tree.id}
 >

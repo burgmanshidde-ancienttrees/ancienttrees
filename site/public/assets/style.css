@@ -147,6 +147,15 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
    click that does nothing. */
 .tree-card { padding: 1.75rem; border-bottom: 1px solid var(--cream-dark); border-left: 3px solid transparent; transition: border-color 0.2s, background 0.2s; }
 .panel .tree-card { cursor: pointer; }
+/* The stretched link: everywhere except the city page's map-linked list, the
+   whole card is the click target, which is what its hover state has always
+   promised. The Save button and any credit link sit above the overlay so they
+   stay separately clickable. */
+.tree-card-link { position: relative; cursor: pointer; }
+.tree-card-link .tree-name a::after { content: ""; position: absolute; inset: 0; }
+.tree-card-link .save-btn,
+.tree-card-link .tree-more,
+.tree-card-link .tree-card-credit { position: relative; z-index: 1; }
 /* No map number means nothing to indent under: the 2.15rem on the meta, the
    story and the link is the width of .tree-num plus its gap. */
 .tree-card-nonum .tree-meta, .tree-card-nonum .tree-story, .tree-card-nonum .tree-more { margin-left: 0; }
