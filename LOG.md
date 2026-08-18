@@ -12,6 +12,18 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-18 (session, late) - The app data feed, and three things Hidde caught on his own account
+
+**/api/version.json and /api/trees.json.** How a new tree reaches an app without a new build: the app ships with a snapshot, asks the 85-byte version file on launch, and pulls the 798 KB (gzipped) dataset only when the content hash differs. Data is not code, so App Store review is not involved. Live and verified: both files agree on version `16e011987b841e89`, 1,377 trees, 133 cities, and every tree carries `precision`, access, transport and its photo's licence, so an app cannot show a rough pin as exact or a picture without its credit. Useful whether or not the app happens.
+
+**The 0 trees / 0 cities on /account** read the check-in log, which is app-only on a phone since 2026-08-14, so they sat at zero above a list full of saved trees. They count the saved trees now, owned by the same script that draws the list so they cannot disagree with it.
+
+**Yours moved from Explore to Account**, which is where Strava, AllTrails and Google Maps keep it. Account became a small dropdown, wearing an avatar on a phone so the bar stays on one line.
+
+**The whole tree card is clickable**, using the stretched-link pattern. It lit up on hover on every page and then only its two links did anything.
+
+**A correction worth recording, because it changed advice I had already given.** I argued against building premium features partly on "2.4% of visits do anything". That window runs from 08-08, and until 08-16 every product event was being dropped (`sendBeacon` cannot preflight, commit f240bc2). The number measured our own broken instrument, not behaviour. Since the fix events flow, and a save now reaches the events table, verified by clicking one. Check what the meter is doing before quoting it.
+
 ## 2026-08-18 (session, evening) - Four bugs Hidde found by using it, and the walk overlay
 
 **The sheet froze when you zoomed out.** Far enough out, a city page swaps its list for a "Cities in view" chooser, and that code hid every child of .panel except itself. Since this morning's sheet those children are the grab handle and the body, so it hid the one thing you can drag. The chooser now lives inside .sheet-body.
