@@ -2459,3 +2459,46 @@ and guessing version numbers is a waste of a window. Ask instead.
 monumental-tree layer carries and where the current endpoint lives. That is the
 municipality's desk, not the foundation's, so it is a separate thread from
 Clara's.
+
+## The Netherlands, opened by three tree foundations in one week (2026-08-18)
+
+Three replies to batch 005 turned into the country's whole data picture. All
+three were unprompted, all three named sources, and two of them named the same
+one we had wrongly parked.
+
+**IMPORTED: Landelijk Register Monumentale Bomen v2024 (Bomenstichting).**
+`data/registers/netherlands-lrmb.json`, 16,094 trees with surveyed coordinates.
+Licence from their own DCAT catalogue: "Onder bronvermelding te gebruiken:
+(c)Bomenstichting", plus Hidde's own written permission by email. It carries
+`visitable` and `owner_category` per tree, so hard rule 10 becomes a filter
+rather than a hunt, and `planted_band` gives a decade. Slices, counting only
+visitable and non-private: Utrecht 253, Amsterdam 206, Haarlem 125,
+'s-Gravenhage 86, Rotterdam 63, Leiden 54.
+
+**Amsterdam, Hanna Hirsch (Bomenstichting Amsterdam).** Sent the city's own
+monumental-trees walking booklet as a PDF with permission for data and
+photographs. Thirty curated centre trees, of which twelve were new to us and
+are now written. The booklet cites a number per tree on monumentalebomen.nl,
+which is how the register above was found. Read it with `scripts/pdf_text.py`;
+the file sits in Hidde's Downloads, not the repo.
+
+**Den Haag, Clara Visser (chair, Bomenstichting Den Haag).** Four pointers:
+the city's own tree app at ddh.maps.arcgis.com (all street trees, ordinary and
+monumental); ~1,300 monumental and 6 veteran trees with a walking route
+"Groen met historie" on hethaagsegroen.nl; monumentaltrees.com; and their own
+haagsebomen.bomenstichtingdenhaag.nl, "bomen met een verhaal", explicitly not
+all monumental. Note her count of ~1,300 against the national register's 116
+for 's-Gravenhage: the municipal list is far larger than the national one, so
+the city app is worth scouting on its own.
+
+**Leiden, Eduard Groen (board, Bomenbond Rijnland).** openbomenkaart.org holds
+84,000 Leiden street trees WITH planting dates, built from data the makers
+requested from the municipality, and he says the Excel can be requested
+directly. He has personally surveyed the trees in Van der Werfpark, De Burcht
+and Rembrandtpark. He also points at the LRMB and at monumentaltrees.com.
+
+**One source all three of them offered that we must not take: monumentaltrees.com.**
+Hard rule 1 forbids using its content beyond fact verification, because its own
+terms prohibit commercial reuse. They suggested it in good faith and the answer
+is still no. Worth knowing before a reply thanks them for it.
+
