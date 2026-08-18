@@ -831,6 +831,12 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   .sheet-grab::before { content: ""; display: block; width: 2.25rem; height: 4px;
     margin: 0.55rem auto 0.15rem; border-radius: 999px; background: var(--cream-dark); }
   .sheet-grab .panel-head { padding: 0.35rem 1.1rem 0.8rem; border-bottom: 0; }
+  /* The header is fixed and the list slides underneath it, so without an edge
+     the first visible line reads as a sentence cut in half rather than as
+     content passing behind a bar. A hairline and a breath of shadow is the
+     convention every scrolling sheet uses. */
+  .sheet-grab { border-bottom: 1px solid var(--cream-dark);
+    box-shadow: 0 2px 6px rgba(26, 32, 18, 0.05); position: relative; z-index: 1; }
   .sheet-count { display: block; font-size: 13px; color: var(--ink-light); }
   .sheet-body { flex: 1 1 auto; overflow-y: hidden; -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain; touch-action: pan-y; }
@@ -884,7 +890,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   .bar-logo { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--sans); font-weight: 800; font-size: 1.02rem; letter-spacing: 0.07em; text-decoration: none; color: var(--ink); }
   .bar-links { display: flex; align-items: center; white-space: nowrap; }
   .bar-links a.bar-secondary { display: none; }
-  .city-intro { padding: 0.9rem 1.1rem 1.1rem; }
+  .city-intro { padding: 1rem 1.1rem 1.1rem; }
   .panel-head { padding: 1.25rem 1.1rem 1rem; }
   .panel-head h1 { font-size: 1.6rem; }
   .home-hero { height: 60vh; }
