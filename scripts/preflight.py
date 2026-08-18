@@ -257,6 +257,30 @@ def check_cross_city_duplicates():
     return out
 
 
+def check_search_names():
+    """Not a gate, a nag. Every published city should carry its name in other
+    languages so the site search finds Den Haag as well as The Hague (Hidde,
+    2026-08-18), but a city missing them is a missing nicety, not a broken
+    page, and failing a deploy over it would block a night run from shipping a
+    city behind a network call. So this prints and never fails. The night run
+    regenerates them, which is what makes it standard practice rather than
+    something anyone has to remember."""
+    f = os.path.join("data", "city-aliases.json")
+    if not os.path.exists(f):
+        return []
+    with open(f, encoding="utf-8") as fh:
+        doc = json.load(fh)
+    accounted = set(doc.get("search_names", {})) | set(doc.get("no_other_names", {})) \
+        | set(doc.get("unresolved_names", {}))
+    missing = sorted(os.path.basename(p)[:-5] for p in glob.glob("data/cities/*.json")
+                     if os.path.basename(p)[:-5] not in accounted)
+    if not missing:
+        return []
+    return ["%d city/cities have never been looked up in other languages (%s). "
+            "Run: python3 scripts/city_names.py"
+            % (len(missing), ", ".join(missing[:8]))]
+
+
 def main():
     problems = check_id_prefixes() + check_pin_upgrades() + check_cross_city_duplicates()
     files = sorted(glob.glob("data/cities/*.json"))
@@ -268,6 +292,8 @@ def main():
             problems += check_contract_b(os.path.basename(p)[:-5], json.load(fh2))
     for line in problems:
         print("FAIL " + line)
+    for line in check_search_names():
+        print("NOTE " + line)
     print("preflight: %d cities checked, %d problems" % (len(files), len(problems)))
     return 1 if problems else 0
 

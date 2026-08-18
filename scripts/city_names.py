@@ -235,13 +235,21 @@ def main():
     doc = json.loads(ALIASES.read_text(encoding="utf-8"))
     known = doc.get("search_names", {})
     articles = doc.get("wikipedia_titles", {})
+    # Cities recorded as having nothing to add, so a later run does not ask
+    # Wikipedia about Breda every night for the rest of the project. Together
+    # with search_names these three blocks are a complete ledger of every
+    # published city, which is what lets preflight say "this one was never
+    # looked at" rather than "this one has no names".
+    english_only = doc.get("no_other_names", {})
+    stuck = doc.get("unresolved_names", {})
+    seen_before = set(known) | set(english_only) | set(stuck)
 
     todo = []
     for f in sorted(CITIES.glob("*.json")):
         slug = f.stem
         if args.city and slug != args.city:
             continue
-        if not args.all and not args.city and slug in known:
+        if not args.all and not args.city and slug in seen_before:
             continue
         todo.append((slug, json.loads(f.read_text(encoding="utf-8"))))
 
@@ -255,21 +263,29 @@ def main():
         here = centroid(data)
         if not here:
             unresolved.append((slug, "no tree coordinates to place it by"))
+            stuck[slug] = "no tree coordinates to place it by"
             continue
         art, why = resolve(data["city"], data.get("country", ""), here)
         if not art:
-            unresolved.append((slug, "no article within %d km, tried %s" % (MAX_KM, why)))
+            reason = "no article within %d km, tried %s" % (MAX_KM, why)
+            unresolved.append((slug, reason))
+            stuck[slug] = reason
             continue
         names = pick_names(data["city"], art["langlinks"])
         articles[slug] = art["title"]
         if names:
             known[slug] = names
+            english_only.pop(slug, None)
         else:
             empty.append(slug)
+            english_only[slug] = art["title"]
+        stuck.pop(slug, None)
         print("  %-24s %-26s %s" % (slug, art["title"], ", ".join(names[:5]) or "(no other names)"))
         time.sleep(0.2)
 
     doc["search_names"] = dict(sorted(known.items()))
+    doc["no_other_names"] = dict(sorted(english_only.items()))
+    doc["unresolved_names"] = dict(sorted(stuck.items()))
     doc["wikipedia_titles"] = dict(sorted(articles.items()))
     doc["search_names_note"] = NOTE
     ALIASES.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
