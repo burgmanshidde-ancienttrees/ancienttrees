@@ -113,8 +113,13 @@ def fetch_gsc(today):
     # and no amount of page data or query data alone says why. The pair does:
     # a page seen a lot and clicked rarely is either ranking for the wrong
     # question or showing the wrong snippet, and those need opposite fixes.
+    # 1,000 rather than 200 since 2026-08-18. This pull now feeds the depth
+    # table's "where does it really rank" column as well as the seen-not-clicked
+    # line, and at 200 rows sorted by clicks the low-click cities that column
+    # exists to diagnose, Palermo and Bath among them, were exactly the ones
+    # falling off the end.
     pairs = q({"startDate": start, "endDate": end, "dimensions": ["page", "query"],
-               "rowLimit": 200, "dataState": "all"})
+               "rowLimit": 1000, "dataState": "all"})
     return days, queries, pages, gap_queries, pairs
 
 
@@ -207,7 +212,7 @@ def find_content_gap(gap_queries):
     return max(misses, key=lambda r: r["impressions"])
 
 
-def demand_lines(pages):
+def demand_lines(pages, pairs=None):
     """Every page with real demand, as a table, so the depth rule has a list.
 
     CLAUDE.md sends photo, pin and best_time work only to pages Search Console
@@ -245,14 +250,37 @@ def demand_lines(pages):
     # city at or above its expected rate has a RANK problem (only a better
     # position helps), and one well below it has a SNIPPET problem (title,
     # description and thumbnail are worth rewriting).
+    # The city's BIGGEST SINGLE QUERY and where that one query actually ranks,
+    # added 2026-08-18 because the column beside it was being over-read, by me
+    # among others. `Position` is impression-weighted ACROSS a city's pages, so
+    # it is an average, and comparing an average against the CTR curve is only
+    # honest when the underlying positions are tight. A city averaging 9.8 out
+    # of one query at 3 and another at 30 behaves nothing like a city sitting
+    # at 9.8, and the curve comparison will call the first a snippet problem
+    # when it is nothing of the kind. So print the one query that carries the
+    # most impressions and its own position: when that number is close to the
+    # average, the snippet reading holds; when it is far off, the average was
+    # never the thing to reason from.
+    top_q = {}
+    for r in (pairs or []):
+        page = r["keys"][0].replace("https://ancienttrees.app", "").strip("/")
+        city = page.split("/")[0] if page else ""
+        if not city:
+            continue
+        cur = top_q.get(city)
+        if cur is None or r["impressions"] > cur[1]:
+            top_q[city] = (r["keys"][1], r["impressions"], r.get("position", 0))
+
     out = ["", "**Depth is allowed on these cities** (10+ impressions in the window;"
                " photos, pins and best_time go here and nowhere else):", "",
-           "| City | Clicks | Impressions | CTR | Position | Normal at that position |",
-           "|---|---:|---:|---:|---:|---:|"]
+           "| City | Clicks | Impressions | CTR | Position | Normal there | Biggest query, and where it really sits |",
+           "|---|---:|---:|---:|---:|---:|---|"]
     for c, cl, im, pos in rows:
         ctr = 100.0 * cl / im if im else 0
-        out.append("| %s | %d | %d | %.1f%% | %.1f | %.1f%% |"
-                   % (c, cl, im, ctr, pos, expected_ctr(pos)))
+        q = top_q.get(c)
+        qcell = ("%s (i%d, p%.0f)" % (clean_query(q[0]), q[1], q[2])) if q else "-"
+        out.append("| %s | %d | %d | %.1f%% | %.1f | %.1f%% | %s |"
+                   % (c, cl, im, ctr, pos, expected_ctr(pos), qcell))
     return out
 
 
@@ -319,7 +347,7 @@ def gsc_section(gsc):
         "- Top pages (10d): " + "; ".join(
             "%s (c%d/i%d)" % (r["keys"][0].replace("https://ancienttrees.app", ""), r["clicks"], r["impressions"]) for r in pages[:5]) if pages else "- Top pages: none",
         gap_line,
-        *demand_lines(pages),
+        *demand_lines(pages, pairs),
         *leak_lines,
     ]
     return "\n".join(lines), {"clicks": latest["clicks"], "impressions": latest["impressions"],
