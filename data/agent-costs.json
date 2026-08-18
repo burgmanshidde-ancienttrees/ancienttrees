@@ -2346,6 +2346,13 @@
         "note": "Session work, tokens not tracked by the harness. Rung 7 page-gap work: pagegaps.py found Turner's Oak had crossed the 3-tree publish gate (Brussels' new second oak this session, plus the existing Amsterdam and first Brussels entries). Wrote the species intro from the three trees' own facts. pagegaps.py now clean (0 missing).",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "amsterdam",
+        "kind": "write",
+        "tokens": 134815,
+        "trees": 11,
+        "note": "11 of 12 written from the LRMB register joined to the city's own walking booklet. ams_029 refused: its own register historie records the tree felled between 2011 and 2014, which surfaced that the LRMB carries entries outliving their trees; a dead-entry filter is now stored with the register (175 of 16,094)."
       }
     ]
   }
