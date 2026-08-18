@@ -145,10 +145,18 @@ setTimeout(function(){
             ('class="ats-drop"', "shared search dropdown (one interaction, home and explore)"),
         ]),
         (f"{base}/{city.name}", f"city page ({city.stem})", [
-            # The walk banner became the capsule + sheet on 2026-08-14
-            # (Hidde: the chips "are taking over too much of the screen").
-            ('class="tree-bar walk-bar"', "the walk capsule"),
-            ('id="route-go"', "the walk's primary link inside the capsule"),
+            # The walk banner became a capsule on 2026-08-14, and the walking
+            # routes left the web entirely on 2026-08-18 (Hidde: "die ik niet
+            # beschikbaar wil maken op web"). What must exist on the map now is
+            # the pill that says where the routes are, and the sheet the whole
+            # phone layout hangs on: on 2026-08-17 that sheet shipped as CSS
+            # with no markup and no script, which served a city page with no
+            # map and no way to scroll, and every check including this one
+            # stayed green.
+            ('class="map-cta"', "the pill pointing at the app's walking routes"),
+            ('id="sheet"', "the bottom sheet the phone layout is built on"),
+            ('class="sheet-body"', "the sheet's inner scroller, without which the list cannot scroll"),
+            ("atSheetFocus", "the sheet script"),
             ("maplibregl-canvas", "map canvas (JS ran, map constructed)"),
         ]),
         (f"{base}/{city.stem}/{tree.name}", f"tree page ({tree.stem})", [
