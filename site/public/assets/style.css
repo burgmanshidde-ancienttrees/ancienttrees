@@ -86,7 +86,10 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .nav-acct summary { display: inline-flex; align-items: center; justify-content: center;
   width: 32px; height: 32px; border-radius: 50%; background: var(--surface);
   border: 1px solid var(--cream-dark); color: var(--ink); }
-.nav-acct summary::after { content: none; }
+/* .nav-drop summary::after is declared later in this file, so an equally
+   specific rule here loses. Naming both classes wins on specificity instead
+   of on order, which is the version that survives someone moving a block. */
+.nav-drop.nav-acct summary::after { content: none; }
 .nav-acct summary:hover { background: var(--cream-dark); }
 .nav-acct .acct-avatar { display: inline-flex; width: 18px; height: 18px;
   background: none; border-radius: 0; }
