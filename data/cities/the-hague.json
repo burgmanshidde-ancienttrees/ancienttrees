@@ -2,11 +2,11 @@
   "city": "The Hague",
   "country": "Netherlands",
   "status": "needs_curation",
-  "intro": "The Hague's oldest tree is not in a park at all: it grows behind a locked gate in an almshouse courtyard, still tended by the elderly women who live there, exactly as it has been since 1638. That pattern repeats across the city's genuinely remarkable trees: an oak protected by a prince's four-century-old promise, a linden that escaped a formal garden's discipline by outliving it, a chestnut that dodged two rounds of royal demolition. The newest addition is barely a century old and earns its place for what a neighbourhood made of it, not its rings.",
-  "meta_description": "The Hague's oldest tree, a 1638 pear, still grows in a locked almshouse courtyard. Five verified locations, from a royal oak to a gnome-tree tradition.",
+  "intro": "The Hague's oldest tree grows behind a locked gate in an almshouse courtyard, still tended by the women who live there, exactly as it has been since 1638. The rest of the list is far easier to reach. Four minutes north of Den Haag Centraal an 18th century oak stands on the old deer meadow, and nearby a horse chestnut hauled eighty metres across it on steel plates in 1997 rather than felled for a road tunnel. Sixteen trees in all, from an elm that outlived Dutch elm disease to a beech a century older than its own street.",
+  "meta_description": "The Hague's oldest tree, a 1638 pear, grows in a locked almshouse courtyard. Sixteen verified trees, from Koekamp oaks to a chestnut moved on steel plates.",
   "question_answer": "The Hague's oldest tree is the Juttepeer of the Heilige Geesthofje, a pear tree planted in 1638 in the courtyard of a still-functioning almshouse near the Paviljoensgracht. At roughly 388 years old, it is widely considered the oldest pear tree in the Netherlands, and residents still make jelly from its fruit every year.",
-  "question_meta": "A 1638 pear tree in a locked almshouse courtyard, likely the oldest pear tree in the Netherlands, is The Hague's oldest tree. The full five.",
-  "question_context": "The Hague's oldest confirmed tree survives specifically because it never had to compete for space in open, public ground. The Heilige Geesthofje's pear has spent nearly four centuries inside a walled almshouse courtyard that has functioned continuously as a residence since 1616, protected by the same institutional boundary that has kept the almshouse itself intact while the city rebuilt around it. Its closest rival for genuine age, the Koekamp oak at roughly 300 years, took the opposite route: growing in land that was never private at all, protected instead by a 1576 promise from William of Orange that the Haagse Bos would never be logged for timber, a guarantee that has held for four and a half centuries with only one serious interruption, wartime felling under German occupation. Both routes worked. What links every tree on this list, from a 290-year-old escapee of a formal garden to a 94-year-old oak a neighbourhood has turned into a shared piece of folklore, is that each one found a boundary, legal, institutional or simply social, that nobody had reason to cross.",
+  "question_meta": "A 1638 pear tree in a locked almshouse courtyard, likely the oldest pear tree in the Netherlands, is The Hague's oldest tree. All sixteen mapped.",
+  "question_context": "The Hague's oldest tree survives because it never had to compete for space in open, public ground. The Heilige Geesthofje's pear has spent nearly four centuries inside a walled almshouse courtyard that has functioned as a residence since 1616. Its closest rivals took the opposite route. The Koekamp oak, at roughly 300 years, grows on land that was never private at all, protected by a 1576 promise from William of Orange that the Haagse Bos would never be sold or logged, a guarantee that has held with one serious interruption, wartime felling under German occupation. A second oak on the same meadow, and a London Plane out at Leidschendam, are both dated by the national register to somewhere between 1750 and 1800, a fifty year band rather than a date, which puts them between 225 and 275 years old. After those the list drops into the 19th century, onto estate land later built over, into two cemeteries and a painter's garden. What links them is not age but boundary: each one ended up inside something nobody had a reason to cross.",
   "faq": [
     {
       "q": "What is the oldest tree in The Hague?",
@@ -14,11 +14,11 @@
     },
     {
       "q": "Are The Hague's remarkable trees free to visit?",
-      "a": "Four of the five are free and open at any time. The Juttepeer is the exception: its courtyard is only accessible by guided tour, appointment, or during the national Open Monumentendag."
+      "a": "Most are free and open at any hour, including everything on the Koekamp and the Malieveld, the cemetery at Oud Eik en Duin and the estate park at Ockenburgh. Three are not: the Juttepeer's courtyard needs a guided tour, an appointment or Open Monumentendag; the Mesdag garden oak is reached through the museum during opening hours; and the oak in the Jewish cemetery on the Scheveningseweg stands behind a wall that is not open every day."
     },
     {
-      "q": "Why has the Koekamp oak survived so long?",
-      "a": "It grows inside the Haagse Bos, protected by a deed William of Orange signed in 1576 promising the forest would never be sold or logged, a guarantee that has held for over four centuries with one wartime exception."
+      "q": "Which tree in The Hague was moved eighty metres?",
+      "a": "De Koekampkastanje. In March 1997 the horse chestnut was hauled eighty metres across the Koekamp on steel plates, with a hundred tonnes of soil still around its roots, to save it from the Koningstunnel works. The move went into the Guinness Book of Records."
     },
     {
       "q": "What is the Kabouterboom?",
@@ -78,7 +78,10 @@
       },
       "story": "William of Orange personally guaranteed this oak's forest would survive forever, four and a half centuries before anyone thought to count the tree's actual rings. In 1576, with the Eighty Years' War against Spain already underway, Orange signed a deed on behalf of the States of Holland promising that the Haagse Bos and the Koekamp within it would never be sold or logged for timber, a rare 16th-century conservation guarantee that has, remarkably, held. This oak, standing roughly 300 years old inside the Koekamp's fenced deer enclosure, is a direct beneficiary: too young to have existed when Orange made his promise, but growing on land that promise had already protected for well over a century by the time this acorn took root. Red and fallow deer still graze around its base today, the same enclosure function the Koekamp has served for centuries, a working piece of countryside preserved inside a European capital rather than a themed park built to imitate one. The forest's luck ran out only once, briefly: during the German occupation, half of it was felled for military purposes, a rare interruption in an otherwise unbroken run of protection stretching back to a promise a Dutch prince made before his own war was won.",
       "best_time": {
-        "months": [9, 10],
+        "months": [
+          9,
+          10
+        ],
         "kind": "fruit",
         "label": "acorns drop, and a good mast year buries the ground in them"
       },
@@ -112,7 +115,10 @@
       },
       "story": "This linden is the last member standing of a row that stopped existing as a row sometime in the last three centuries. An 18th-century drawing of Clingendael's formal gardens, laid out around 1730, shows several trained lindens planted in a disciplined line, pruned and trellised into the geometric shapes fashionable in Dutch garden design of the period. Every other tree in that row is gone; this one alone survived, and without the regular pruning that once kept it in formation, it has spent three centuries growing into a gnarled, irregular shape that looks nothing like the tidy row it escaped from. That accidental wildness turned out to matter. In 2019, Den Haag became the first Dutch municipality to formally create a veteran tree designation, a status imported from England that protects a tree's final life stage with dedicated fencing and minimal-intervention care rather than the routine pruning applied to younger specimens, and this linden was the first tree in the country to receive it. The designation recognizes exactly what makes the tree valuable now: not tidiness, but the accumulated evidence of three centuries alone, still standing on an estate that has otherwise been rebuilt and replanted around it more than once.",
       "best_time": {
-        "months": [6, 7],
+        "months": [
+          6,
+          7
+        ],
         "kind": "flowers",
         "label": "heavily scented cream flowers, audible with bees from metres away"
       },
@@ -182,7 +188,10 @@
       },
       "story": "A hollow in this oak's trunk has been furnished like a dollhouse for as long as anyone in the neighbourhood can remember, complete with tiny notes left for gnomes nobody has ever claimed to see. At only about 94 years old, the Kabouterboom, the gnome tree, is by far the youngest entry on this list, included for a different reason than the others: generations of children from the surrounding Bosjes van Zanen neighbourhood have treated this specific oak as a shared piece of make-believe, tucking dolls, notes and small gifts into its hollow and low branches, a tradition adults have kept alive rather than outgrown. Nobody organizes it and no sign explains it; parents simply pass the game to their children the way they might pass down any local custom, and the tree accumulates a rotating cast of tiny residents as a result. It sits at the edge of the Clingendael estate, an easy detour from the veteran linden a short walk away, proof that a tree earns a place on a list like this one for reasons that have nothing to do with circumference or century, and everything to do with what a neighbourhood decided to make of it.",
       "best_time": {
-        "months": [9, 10],
+        "months": [
+          9,
+          10
+        ],
         "kind": "fruit",
         "label": "acorns drop, and a good mast year buries the ground in them"
       },
@@ -200,6 +209,340 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "approximate"
+    },
+    {
+      "id": "hag_006",
+      "name": "The Bezuidenhoutseweg Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "225 to 275 years, planted somewhere between 1750 and 1800",
+      "age_min": 226,
+      "age_max": 276,
+      "location": {
+        "address": "Koekamp, beside the Bezuidenhoutseweg, Den Haag",
+        "latitude": 52.083731,
+        "longitude": 4.325343,
+        "neighbourhood": "Haagse Hout"
+      },
+      "story": "Four minutes north of the platforms at Den Haag Centraal, on the old deer meadow called the Koekamp, stands an oak the national register dates to somewhere between 1750 and 1800. That is a fifty year shrug rather than a date, and it still makes the tree at least 225 years old, possibly closer to 275. The Koekamp is why it is here. This strip beside the Haagse Bos has been grazing meadow for centuries, cattle first and deer later, land that was never built on and never laid out as a garden, so the trees on it were left to get old rather than pruned into a design. Not all of them got the chance. During the German occupation a great many trees around the Koekamp went into stoves as firewood or were cut down to clear the line of a tank ditch dug across this side of the city. This oak stayed standing through both. It has no name, no plaque and no recorded history, it belongs to the state forestry service, and it is one of the easiest old trees in the Netherlands to reach: out of the station, over the road, and there it is. If you know who planted it, we would like to hear.",
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1686943: Zomereik, Koekamp, Naast Internationaal Water House Bezuidenhoutseweg, Den Haag, planting band 1750-1800, reason for protection 'monumentaal', owner staatsbosbeheer, recorded as visitable",
+        "Bomenstichting Den Haag, 2026-08-18: the local branch pointed us at the national register as the source for The Hague's monumental trees; register data used with written permission."
+      ],
+      "access": "Free, open parkland on the Koekamp, at any time",
+      "transport": "Four minute walk north from Den Haag Centraal",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "hag_007",
+      "name": "The Westvlietweg Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "225 to 275 years, planted somewhere between 1750 and 1800",
+      "age_min": 226,
+      "age_max": 276,
+      "location": {
+        "address": "Westvlietweg, in front of number 148, by the Zeerust estate, Leidschendam",
+        "latitude": 52.057504,
+        "longitude": 4.350334,
+        "neighbourhood": "Leidschendam"
+      },
+      "story": "Rich families from The Hague and Delft spent the 17th and 18th centuries building country houses along the Vliet, and this plane went into the ground while that fashion was still running. The register dates it to between 1750 and 1800, which makes it somewhere between 225 and 275 years old, standing in front of Zeerust, one of the estates strung along the Westvlietweg. The road is half the reason to come. The Vliet is a canal the Romans dug and the Dutch never stopped using, the Westvlietweg runs alongside it, and the strip is lined with the gates and coach houses of buitenplaatsen, the summer estates merchants built to get out of the city in August. Almost all the planting from that era has been replaced twice over since. This tree has not. It is a London Plane, the hybrid that would go on to become the default street tree of half of Europe, put in here long before anyone knew that is what it would become. The province owns it and the verge is public, so you can stand under it without asking anyone. Be honest with yourself about the trip, though: it is outside the city and it stands alone, so this one is a detour rather than a walk.",
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1686340: Gewone plataan, Zeerust, Westvlietweg voor nr 148, Leidschendam, planting band 1750-1800, reason for protection 'monumentaal', owner provincie, recorded as visitable",
+        "Bomenstichting Den Haag, 2026-08-18: the local branch pointed us at the national register as the source for The Hague's monumental trees; register data used with written permission."
+      ],
+      "access": "Free, on the public verge of the Westvlietweg in Leidschendam",
+      "transport": "Bus from Den Haag Centraal towards Leidschendam and a short walk, roughly 25 to 30 minutes",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "hag_008",
+      "name": "The Koeweide Oak of Ockenburgh",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "about 210 years",
+      "age_min": 206,
+      "age_max": 216,
+      "location": {
+        "address": "North side of the Koeweide, by the country house, Landgoed Ockenburgh, Loosduinen",
+        "latitude": 52.054137,
+        "longitude": 4.219905,
+        "neighbourhood": "Loosduinen"
+      },
+      "story": "Someone wrote a book length poem about this estate a century and a half before the oak was planted. Jacob Westerbaen, a Hague physician who turned poet, built Ockenburgh in the dunes behind Loosduinen in 1654 and then published thousands of lines describing his own grounds, walk by walk, tree by tree. The oak came much later. The register puts it in the 1810s, which makes it a little over two centuries old, growing on the north side of the Koeweide, the old cow pasture beside the country house. What it has watched is the estate's slow public turn. Ockenburgh went from private pleasure ground to a camping site to a municipal park, and the house itself stood derelict for years before it was restored. The dunes behind it were fortified during the German occupation, when the Atlantic Wall ran along this coast and large pieces of the landscape here were cleared for it. The oak kept its place on the pasture edge through all of it. The city owns the estate now and the gates and paths are free, which makes this one of the few two hundred year old trees in the country you can walk up to at any hour of any day.",
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1679705: Zomereik, N.zijde Koeweide bij landhuis Ockenburgh, Landgoed Ockenburgh, Loosduinen, planting band 1810-1820, reason for protection 'monumentaal', owner gemeente, recorded as visitable",
+        "Bomenstichting Den Haag, 2026-08-18: the local branch pointed us at the national register as the source for The Hague's monumental trees; register data used with written permission."
+      ],
+      "access": "Free, the municipal estate park of Ockenburgh, open at any time",
+      "transport": "Tram or bus to Loosduinen and a walk into the estate, roughly 35 to 40 minutes from Den Haag Centraal",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "hag_009",
+      "name": "The Van Soutelandelaan Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "about 210 years",
+      "age_min": 206,
+      "age_max": 216,
+      "location": {
+        "address": "Green behind Van Soutelandelaan 6, Mariahoeve, Den Haag",
+        "latitude": 52.102313,
+        "longitude": 4.321209,
+        "neighbourhood": "Haagse Hout"
+      },
+      "story": "This oak is roughly a century and a half older than every building around it. It stands in the green behind the Van Soutelandelaan, in Mariahoeve, a district that did not exist until the late 1950s, when The Hague ran out of room inside itself and put a whole neighbourhood of flats and low blocks on the estate land north east of the Haagse Bos. The register dates the oak to between 1810 and 1820, so it is somewhere past its 205th year and probably not much past its 215th. It was already a substantial tree when the ground here was still pasture and country house. Planners of that generation usually levelled a site and started from nothing; here the wood was built around instead, and a handful of trees from the estate era still stand between the blocks. A beech of nearly the same age grows about two hundred metres away, which turns this into a short walk with two old trees in it rather than a single stop. Nobody wrote down who planted the oak or why. If you grew up in this corner of Mariahoeve and know the story, tell us.",
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1691853: Zomereik, Achter van Soutelandelaan 6, 's Gravenhage, planting band 1810-1820, reason for protection 'monumentaal', owner gemeente, recorded as visitable",
+        "Bomenstichting Den Haag, 2026-08-18: the local branch pointed us at the national register as the source for The Hague's monumental trees; register data used with written permission."
+      ],
+      "access": "Free, public green behind the Van Soutelandelaan",
+      "transport": "Bus or tram to Mariahoeve, about 20 minutes from Den Haag Centraal",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "hag_010",
+      "name": "The Grandbos Beech",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "about 200 years",
+      "age_min": 196,
+      "age_max": 206,
+      "location": {
+        "address": "Le Grandbos, Van Soutelandelaan at Van Mojalenlaan, Mariahoeve, Den Haag",
+        "latitude": 52.102546,
+        "longitude": 4.323641,
+        "neighbourhood": "Haagse Hout"
+      },
+      "story": "Nothing about the corner of the Van Soutelandelaan and the Van Mojalenlaan announces a two hundred year old tree. The beech stands in a strip of wood called Le Grandbos, a leftover of the estate landscape that was here before Mariahoeve was built over it, and the register dates the tree to the 1820s. Beech does two things worth the walk. Its bark stays smooth and grey for its whole life, so an old trunk reads more like a column than a tree, without the deep furrows that give an oak of the same age away. And it holds autumn better than almost anything else growing in a Dutch street, going copper in late October and keeping it into November, with the fallen leaves staying orange on the ground for weeks afterwards. Underneath it, very little grows. A mature beech takes so much of the light that the ground under the crown stays bare, which is the easiest way to pick one out of a mixed wood from a distance. An oak of nearly the same vintage stands about two hundred metres off, on the other side of the Van Soutelandelaan, so this is a ten minute detour with two trees in it.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when the beech turns copper and keeps it for weeks"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1691852: Beuk, Le Grandbos, Haagse Hout, Van Soutelandelaan/Van Mojalenlaan, 's Gravenhage, planting band 1820-1830, reason for protection 'monumentaal', owner gemeente, recorded as visitable",
+        "Bomenstichting Den Haag, 2026-08-18: the local branch pointed us at the national register as the source for The Hague's monumental trees; register data used with written permission."
+      ],
+      "access": "Free, public wood at the Van Soutelandelaan and Van Mojalenlaan junction",
+      "transport": "Bus or tram to Mariahoeve, about 20 minutes from Den Haag Centraal",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "hag_011",
+      "name": "The Malieveld Elm",
+      "species": "Dutch Elm (Ulmus x hollandica)",
+      "age_estimate": "about 190 years",
+      "age_min": 186,
+      "age_max": 196,
+      "location": {
+        "address": "Malieveld, Den Haag",
+        "latitude": 52.08411,
+        "longitude": 4.318969,
+        "neighbourhood": "Centrum"
+      },
+      "story": "An elm from the 1830s has outlived two epidemics that killed almost everything of its kind. Dutch elm disease takes its name from the country that first identified it, in the years after the First World War, and a second, far more aggressive strain arrived in the 1970s and finished most of what the first had left. Between them they emptied Dutch streets of the tree that had defined them for centuries. This one went into the ground somewhere between 1830 and 1840 and is still standing, on the field where the country goes to be heard. The Malieveld began as a court for pall mall, the ball and mallet game the 17th century was mad about, and became the open ground in the middle of The Hague where farmers park their tractors, unions bring their whistles and hundreds of thousands of people have gathered for one cause or another. Between demonstrations it takes funfairs and circus tents. The elm has stood at the edge of all of it for close to two centuries, a short walk from the parliament buildings everybody comes here to shout at, and almost nobody in those crowds has ever looked up at it.",
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1686946: Monumentaaliep, Malieveld, Den Haag, planting band 1830-1840, reason for protection 'monumentaal', owner gemeente, recorded as visitable; the register's Dutch name 'Monumentaaliep' points at the 'Monumentalis' selection of Ulmus x hollandica, so we record the species at the level we can defend",
+        "Bomenstichting Den Haag, 2026-08-18: the local branch pointed us at the national register as the source for The Hague's monumental trees; register data used with written permission."
+      ],
+      "access": "Free, the open Malieveld, at any time",
+      "transport": "Ten minute walk from Den Haag Centraal",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "hag_012",
+      "name": "De Koekampkastanje",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "about 190 years",
+      "age_min": 186,
+      "age_max": 196,
+      "location": {
+        "address": "Koekamp, at the Malieveld side, Den Haag",
+        "latitude": 52.08361,
+        "longitude": 4.31941,
+        "neighbourhood": "Haagse Hout"
+      },
+      "story": "In March 1997 this horse chestnut was dragged eighty metres across the Koekamp on steel plates, with a hundred tonnes of soil still around its roots, and the operation went into the Guinness Book of Records. It got there by being loved. Many of the trees on this side of the city vanished during the German occupation, burned in stoves for want of coal or felled to clear the line of a tank ditch, and this chestnut came through both. Fifty years later a road nearly did what the war had not. The plan for the Koningstunnel, drawn up in 1995, ran through the chestnut and through a monumental linden standing beside it. The city expected paperwork and got an argument: people were attached to these two trees in a way nobody had budgeted for. The tunnel route was shifted sideways to spare the linden. For the chestnut, engineers asked a stranger question, whether a tree that size could simply be moved, and the answer turned out to be yes. Steel plates went under the root ball and the whole thing was hauled slowly towards the Malieveld. It recovered. The crown is full again and a small sign at the foot of the trunk records what happened, ten minutes from Den Haag Centraal.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "early May, when the white candles open across the whole crown"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1686937: De Koekampkastanje, Koekamp, Den Haag, planting band 1830-1840, reason for protection 'monumentaal', owner gemeente, recorded as visitable; the register's history note records the WWII firewood and tank-ditch losses around the Koekamp, the 1995 Koningstunnel plan, the route shift that saved the neighbouring linden, and the March 1997 move of 80m on steel plates under a 100-tonne root ball, entered in the Guinness Book of Records",
+        "Bomenstichting Den Haag, 2026-08-18: the local branch pointed us at the national register as the source for The Hague's monumental trees; register data used with written permission."
+      ],
+      "access": "Free, on the Koekamp beside the Malieveld, at any time",
+      "transport": "Ten minute walk from Den Haag Centraal",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "hag_013",
+      "name": "The Mesdag Garden Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "about 190 years",
+      "age_min": 186,
+      "age_max": 196,
+      "location": {
+        "address": "Garden of De Mesdag Collectie, Laan van Meerdervoort 7F, Den Haag",
+        "latitude": 52.085951,
+        "longitude": 4.297932,
+        "neighbourhood": "Centrum"
+      },
+      "story": "Hendrik Willem Mesdag painted the largest painting in the Netherlands, and this oak was already forty or fifty years old when he did it. The Panorama Mesdag, finished in 1881, is a cylindrical view of the Scheveningen beach fourteen metres high and a hundred and twenty round, and Mesdag lived a short walk from it, at Laan van Meerdervoort 7, in the house that is now a museum of the collection he built. The garden came with the house. The register dates this oak to the 1830s, which puts it a little under two centuries old, and notes a second oak of exactly the same age standing next to it, two trees side by side. Mesdag bought paintings the way other people buy furniture, filling the house with Barbizon and Hague School canvases until it needed a purpose built gallery bolted onto the back to hold them. The oaks were the view from all of it, and they were here before the collection, before the panorama and before the street reached this far. You reach them through De Mesdag Collectie in his old house. It is the only tree on this list that comes with a room full of Corots.",
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1684633: Zomereik, V. Mesdagmuseum, Laan v. Meerdervoort 7F, 's Gravenhage, planting band 1830-1840, reason for protection 'monumentaal', owner overige staat, recorded as visitable; the register's history note reads 'Tuin voormalig huis schilder H.W. Mesdag. Er staat een tweede evenoude eik naast (P518)'",
+        "Bomenstichting Den Haag, 2026-08-18: the local branch pointed us at the national register as the source for The Hague's monumental trees; register data used with written permission."
+      ],
+      "access": "In the garden of De Mesdag Collectie at Laan van Meerdervoort 7, reached through the museum during its opening hours",
+      "transport": "Tram along the Laan van Meerdervoort, or a 25 minute walk from Den Haag Centraal",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "hag_014",
+      "name": "The Oud Eik en Duin Chestnut",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "about 190 years",
+      "age_min": 186,
+      "age_max": 196,
+      "location": {
+        "address": "Begraafplaats Oud Eik en Duin, Laan van Eik en Duinen, Segbroek, Den Haag",
+        "latitude": 52.067574,
+        "longitude": 4.263478,
+        "neighbourhood": "Segbroek"
+      },
+      "story": "A ruined medieval chapel stands a few steps from this chestnut and is six centuries older than anything else growing on the site. Oud Eik en Duin opened as a cemetery in 1830, after a royal decree ended the practice of burying the dead inside Dutch churches and pushed new burial grounds out past the edge of town. The ground it took was already old. The chapel of Eik en Duinen, founded in the 13th century and a pilgrimage spot for centuries after, sits roofless in the middle of it, wrecked in the wars of the 16th century and left standing as a ruin ever since. The register dates this horse chestnut to the 1830s, the same decade the cemetery opened, though nobody recorded whether it belongs to the first planting or arrived some years later. Either way it has spent close to two centuries doing what cemetery trees do, growing undisturbed on land nobody is permitted to develop, which is the best thing that can happen to a tree in a city. Oud Eik en Duin is one of the largest and oldest burial grounds in The Hague, it is free, and it is open to walk through in daylight.",
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1686847: Witte paardenkastanje, Begraafplaats Oud Eik en Duin, Laan van Eik en Duinen, Segbroek, 's Gravenhage, planting band 1830-1840, reason for protection 'monumentaal', owner stichting, recorded as visitable",
+        "Bomenstichting Den Haag, 2026-08-18: the local branch pointed us at the national register as the source for The Hague's monumental trees; register data used with written permission."
+      ],
+      "access": "Free, Oud Eik en Duin cemetery, open in daylight hours",
+      "transport": "Tram to the Laan van Eik en Duinen, about 25 minutes from Den Haag Centraal",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "hag_016",
+      "name": "The Van Hogenhoucklaan Beech",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "about 190 years, and the register's own note puts it loosely in the first half of the 19th century",
+      "age_min": 186,
+      "age_max": 196,
+      "location": {
+        "address": "In the green strip by Van Hogenhoucklaan 63, Benoordenhout, Den Haag",
+        "latitude": 52.098365,
+        "longitude": 4.318365,
+        "neighbourhood": "Benoordenhout"
+      },
+      "story": "This beech has added about a centimetre of girth a year for the last three decades, and that number is the reason anyone looked twice at it. The Van Hogenhoucklaan was laid out with its houses around 1930, and the beeches along it, mixed with American limes and a few oaks, look like they went in with the street. This one does not. It is noticeably thicker than its neighbours, and a tree growing at a centimetre a year is not one that got fat quickly; it is one that has been at it a great deal longer. The register's own surveyor lands on the first half of the 19th century, which would make it roughly a century older than the road it lines. That is an estimate rather than a date, and it is the honest kind: a measured trunk, a measured growth rate, and a conclusion stated as a probability instead of a year. Beech keeps smooth grey bark for life, so age never shows in the surface the way it does on an oak. It shows in the diameter, which is exactly what caught the surveyor's eye. Stand at the end of the green strip and look down the row. The odd one out is not hard to find.",
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1686907: Beuk Van Hogenhoucklaan, In het plantsoen bij Van Hogenhoucklaan 63, Den Haag, planting band 1830-1840, reason for protection 'potentieel', owner gemeente, recorded as visitable; the register's history note reads that the houses date from around 1930, that the beech avenue may date from then, but that this beech stands out by its thickness, has grown only 1 cm a year over the last 30 years and probably dates from the first half of the 19th century. That note places the tree in front of number 61 while the address line gives 63, a two-house discrepancy the surveyed coordinate settles.",
+        "Bomenstichting Den Haag, 2026-08-18: the local branch pointed us at the national register as the source for The Hague's monumental trees; register data used with written permission."
+      ],
+      "access": "Free, in the public green strip on the Van Hogenhoucklaan",
+      "transport": "Bus to Benoordenhout, about 15 minutes from Den Haag Centraal",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "hag_017",
+      "name": "The Oak of the Scheveningseweg Jewish Cemetery",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "about 180 years",
+      "age_min": 176,
+      "age_max": 186,
+      "location": {
+        "address": "Joodse begraafplaats, Scheveningseweg, Den Haag",
+        "latitude": 52.089203,
+        "longitude": 4.295708,
+        "neighbourhood": "Zorgvliet"
+      },
+      "story": "This oak was planted in a burial ground that had already been in use for a century and a half. The Jewish cemeteries on the Scheveningseweg date from the 1690s, opened outside the built up city because that was where the Jewish community of The Hague was permitted to bury its dead, on ground either side of the straight road Constantijn Huygens had laid out three decades earlier to link the city with the sea. The register dates the oak to the 1840s, which puts it a little under two centuries old. Jewish burial custom leaves a cemetery undisturbed once the graves are in place, so ground like this is often the least altered land in an old European city, and trees on it grow up without the pruning, digging and replanting that shapes a park. What came later is not the tree's story, but it is the ground's. The Jewish population of The Hague numbered around seventeen thousand before the war and most of them did not come back. The cemeteries survived. The oak stands inside the wall, in a quiet place that is not open every day, so check the hours before you make the trip.",
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1689457: Zomereik, Joodse begraafplaats, Scheveningseweg, Den Haag, planting band 1840-1850, reason for protection 'monumentaal', owner stichting, recorded as visitable",
+        "Bomenstichting Den Haag, 2026-08-18: the local branch pointed us at the national register as the source for The Hague's monumental trees; register data used with written permission."
+      ],
+      "access": "In the Jewish cemetery on the Scheveningseweg, an enclosed burial ground that is not open every day; check the opening hours before travelling",
+      "transport": "Tram along the Scheveningseweg, about 15 minutes from Den Haag Centraal",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }

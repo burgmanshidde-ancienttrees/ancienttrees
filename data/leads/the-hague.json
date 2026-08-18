@@ -1,0 +1,29 @@
+{
+  "city": "The Hague",
+  "leads": [],
+  "blocked": [
+    {
+      "proposed_id": "hag_015",
+      "name_nl": "Beuk",
+      "species": "European Beech (Fagus sylvatica)",
+      "location": {
+        "address": "Haagse Schoolvereniging, Nassaulaan 26, Den Haag",
+        "latitude": 52.086016,
+        "longitude": 4.30832
+      },
+      "plantjaar_band": "1830-1840",
+      "register": "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1686918, reason for protection 'potentieel', owner gemeente, recorded as visitable",
+      "reason": "School grounds. CLAUDE.md hard rule 10 ships a tree on school grounds only where there is real evidence the grounds are genuinely open (a public path crossing them, a public park the school merely borders, open at weekends). The register's bezoekbaar=ja flag is the only evidence we have, and it is not enough to write an honest access line for a private school garden behind a house on the Nassaulaan. Held as a lead, not rejected: one confirmation that the garden is open, or that the beech is visible from public ground on the Nassaulaan, unblocks it as a view-only entry with the pin on the viewing place.",
+      "date": "2026-08-18",
+      "source_pass": "the-hague LRMB write pass"
+    }
+  ],
+  "notes": [
+    {
+      "about": "hag_002, The Koekamp Oak",
+      "found": "2026-08-18",
+      "what": "Its approximate pin (52.0838873,4.3225274) sits beside the register's 'Zomereiken Hertenkamp', a group of SEVENTEEN oaks planted 1700-1750, which also matches our stated age of about 300 years. hag_006, added the same day, is the register's separate SINGLE oak 193 m east at the Bezuidenhoutseweg end, band 1750-1800. So they are two different trees and were correctly written as two.",
+      "but": "If hag_002 is one of the seventeen rather than a distinguishable individual, it fails the collectible-point test and should become one entry describing the Hertenkamp oaks, or be repinned onto whichever oak the story is actually about. Needs eyes on the Koekamp or a source naming an individual tree. Not touched by this pass."
+    }
+  ]
+}
