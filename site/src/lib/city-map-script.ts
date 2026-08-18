@@ -386,9 +386,15 @@ function readSeen() {
   try { return JSON.parse(localStorage.getItem(SEEN_KEY)) || []; }
   catch (e) { return []; }
 }
-function writeSeen(list) {
+function writeSeen(list, changed, on) {
   try { localStorage.setItem(SEEN_KEY, JSON.stringify(list)); } catch (e) {}
+  // The log is local first and always: the tick never waits on a network.
+  // visited-sync-js.ts carries it to the account when there is one, so a
+  // collection survives a new phone (Hidde's paywall copy sells it as a
+  // journal, and a journal that one cleared browser erases is not one).
+  if (changed && window.atPushVisited) { window.atPushVisited(changed, on); }
 }
+window.atPaintPassport = function() { try { paintPassport(); } catch (e) {} };
 
 function paintPassport() {
   var seen = readSeen();
@@ -441,7 +447,7 @@ document.querySelectorAll('.seen-btn').forEach(function(btn) {
 
     if (seen.indexOf(id) !== -1) {
       seen.splice(seen.indexOf(id), 1);
-      writeSeen(seen);
+      writeSeen(seen, id, false);
       paintPassport();
       return;
     }
@@ -457,7 +463,7 @@ document.querySelectorAll('.seen-btn').forEach(function(btn) {
       if (away <= parseFloat(btn.dataset.radius)) {
         var list = readSeen();
         if (list.indexOf(id) === -1) { list.push(id); }
-        writeSeen(list);
+        writeSeen(list, id, true);
         paintPassport();
       } else {
         var far = away > 2000 ? Math.round(away / 1000) + ' km' : Math.round(away) + ' m';
