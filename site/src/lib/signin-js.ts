@@ -31,6 +31,47 @@ export const SIGNIN_JS = `
     } catch (e) {}
     history.replaceState(null, '', location.pathname);
   }
+  // Keep the session alive. Supabase hands out an access token that lasts an
+  // hour and a refresh token that lasts far longer, and until 2026-08-18
+  // nothing ever used the second one. So an hour after signing in, session()
+  // started returning null everywhere: saves stopped syncing to the account,
+  // the union on /account stopped running, and nothing said so. Hidde hit it
+  // exactly that way ("im logged in saving trees but nothing is showing up"),
+  // and on a second device there was nothing to show.
+  //
+  // Refresh on load when the token is spent or within five minutes of it, then
+  // tell the save code to run its sync, because that code has already decided
+  // there was no session by the time this resolves.
+  (function refreshIfStale() {
+    var s = null;
+    try { s = JSON.parse(localStorage.getItem('ancienttrees_session')); } catch (e) { return; }
+    if (!s || !s.refresh_token) return;
+    if (s.expires_at > Date.now() / 1000 + 300) return;
+    fetch(SB + '/auth/v1/token?grant_type=refresh_token', {
+      method: 'POST',
+      headers: { 'apikey': SBK, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ refresh_token: s.refresh_token })
+    }).then(function(r) { return r.ok ? r.json() : null; })
+      .then(function(j) {
+        if (!j || !j.access_token) {
+          // The refresh token is spent or revoked. Clear it rather than leave
+          // a dead session that makes the site look signed in.
+          try { localStorage.removeItem('ancienttrees_session'); } catch (e) {}
+          return;
+        }
+        try {
+          localStorage.setItem('ancienttrees_session', JSON.stringify({
+            access_token: j.access_token,
+            refresh_token: j.refresh_token || s.refresh_token,
+            expires_at: Math.floor(Date.now() / 1000) + (j.expires_in || 3600)
+          }));
+        } catch (e) {}
+        try { sessionStorage.removeItem('at_saves_synced'); } catch (e) {}
+        if (window.atSyncSaves) window.atSyncSaves();
+      })
+      .catch(function() {});
+  })();
+
   var dlg = document.getElementById('signin-dialog');
   if (!dlg) return;
   window.atOpenSignIn = function() {
