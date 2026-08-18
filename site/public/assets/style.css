@@ -100,10 +100,18 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .nav-drop summary::-webkit-details-marker { display: none; }
 .nav-drop summary::after { content: " ▾"; font-size: 10px; }
 .nav-drop[open] summary { color: var(--moss); }
-.nav-drop-menu { position: absolute; right: 0; top: 2rem; background: #fff; border: none; border-radius: 16px; box-shadow: 0 6px 30px rgba(26,32,18,0.16); padding: 0.6rem 0; min-width: 13rem; z-index: 40; }
-.nav-drop-menu a { display: flex; align-items: center; gap: 0.7rem; padding: 0.5rem 1.1rem; margin: 0; font-size: 13.5px; font-weight: 600; color: var(--ink); }
-.nav-drop-menu .mi { display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%; background: var(--surface); color: var(--ink); flex-shrink: 0; }
-.nav-drop-menu .mi svg { width: 16px; height: 16px; }
+/* A dropdown, not a settings screen. It was nearly full-bleed on a phone with
+   46px between rows and a filled circle behind every icon, which is why it read
+   as a takeover rather than a menu (Hidde, 2026-08-18: "het menu voelt nog
+   steeds niet kloppen"). Rows are now the ordinary 40px, the icons lost their
+   chips, and the panel is capped so the map stays visible behind it. */
+.nav-drop-menu { position: absolute; right: 0; top: 2.4rem; background: #fff; border: none; border-radius: 14px; box-shadow: 0 8px 28px rgba(26,32,18,0.18); padding: 0.4rem 0; min-width: 12rem; max-width: 15rem; z-index: 40; }
+.nav-drop-menu a { display: flex; align-items: center; gap: 0.65rem; padding: 0.5rem 0.9rem; margin: 0; font-size: 14px; font-weight: 600; color: var(--ink); line-height: 1.2; }
+.nav-drop-menu .mi { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; color: var(--ink-light); flex-shrink: 0; }
+.nav-drop-menu .mi svg { width: 17px; height: 17px; }
+/* A secondary action belongs below a rule, not under the Browse heading as
+   though suggesting a tree were a category to browse. */
+.nav-drop-menu a.nav-aside { border-top: 1px solid var(--cream-dark); margin-top: 0.35rem; padding-top: 0.6rem; color: var(--ink-mid); font-weight: 500; }
 .nav-drop-menu a:hover { background: var(--cream); }
 .only-mobile { display: none; }
 /* The header, as Hidde wants it (2026-08-01): Map stands alone in the bar
@@ -305,13 +313,12 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
   .only-mobile { display: block; }
   .nav-drop-menu a.only-mobile { display: flex; }
   .bar-links a.bar-map { font-size: 13px; padding: 0.35rem 0.2rem; }
-  /* Komoot's mobile header, looked at rather than remembered (2026-08-18):
-     logo mark, one filled pill, one menu button. No standalone text links.
-     Ours had five items in three different weights, which is what Hidde meant
-     by the layout feeling awkward. Map is the first item inside the menu
-     already, so on a phone it stops being its own link, and the menu becomes
-     an icon button that matches the account avatar beside it. */
-  .bar-links a.bar-map { display: none; }
+  /* The mobile bar: mark, Map, menu, account, pill. Dropping the wordmark
+     saved 115px and on its own fixed the overflow; hiding Map as well was a
+     second cut that was never needed, and it took the MAP out of the phone
+     navigation entirely. The map is the product (CLAUDE.md's value
+     proposition), and it was not even in the menu to fall back to. */
+  .bar-links a.bar-map { font-weight: 700; }
   .nav-drop { margin-left: 0; }
   .nav-drop summary { display: inline-flex; align-items: center; justify-content: center;
     width: 32px; height: 32px; padding: 0; border-radius: 50%;
