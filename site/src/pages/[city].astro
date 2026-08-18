@@ -207,16 +207,18 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
           <p class="eyebrow">{country}</p>
           <h1>Ancient Trees in <em>{cityName}</em></h1>
           <p class="sheet-count">{trees.length} trees on the map</p>
-          <p class="lede">{intro}</p>
-          {esTr && <p class="lang-alt">Esta página también está disponible <a href={`/es/${cslug}`}>en español</a>.</p>}
-          <p class="passport" id="passport" hidden>
-            <strong><span id="passport-count">0</span> of {trees.length}</strong> visited in {cityName}
-            <span class="passport-total" id="passport-total"></span>
-            <button type="button" class="passport-save" id="passport-save">Save or move to another device</button>
-          </p>
         </div>
       </div>
       <div class="sheet-body">
+      <div class="city-intro">
+        <p class="lede">{intro}</p>
+        {esTr && <p class="lang-alt">Esta página también está disponible <a href={`/es/${cslug}`}>en español</a>.</p>}
+        <p class="passport" id="passport" hidden>
+          <strong><span id="passport-count">0</span> of {trees.length}</strong> visited in {cityName}
+          <span class="passport-total" id="passport-total"></span>
+          <button type="button" class="passport-save" id="passport-save">Save or move to another device</button>
+        </p>
+      </div>
       {trees.map((t, i) => {
         const cphoto = usablePhoto(t);
         const bestTimeChip = bestTimeShort(t);

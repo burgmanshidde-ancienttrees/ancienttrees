@@ -110,7 +110,15 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 /* ---- City page: split layout, map is the stage ---- */
 .split { display: flex; height: 100vh; padding-top: var(--header-h); }
 .panel { width: 30rem; max-width: 45vw; height: 100%; overflow-y: auto; background: var(--cream); border-right: 1px solid var(--cream-dark); flex-shrink: 0; }
-.panel-head { padding: 2rem 1.75rem 1.5rem; border-bottom: 1px solid var(--cream-dark); }
+.panel-head { padding: 2rem 1.75rem 1.5rem; }
+/* The city intro left the header on 2026-08-18 and became the first block
+   of the scrolling list (Hidde: "als je gaat scrollen dan zou ik alleen de
+   titel laten staan niet de tekst om optimaal gebruik te maken van de
+   ruimte"). On a phone the header is fixed furniture, so a four-line
+   clamped intro sat there permanently, truncated and unreadable, taking a
+   tree card's worth of room. In the scroll area it is shown whole and it
+   scrolls away. The divider follows it so the desktop panel is unchanged. */
+.city-intro { padding: 0 1.75rem 1.5rem; border-bottom: 1px solid var(--cream-dark); }
 /* Two pieces of furniture that belong to the phone sheet only. Without
    these the desktop split renders a stray back button and a tree count
    under the heading, because their display rules live inside the phone
@@ -837,12 +845,8 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   .panel[data-detent="peek"] .panel-head h1,
   .panel[data-detent="half"] .panel-head h1 { font-size: 1.15rem; margin-bottom: 0.15rem;
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .panel[data-detent="peek"] .panel-head .lede,
-  .panel[data-detent="half"] .panel-head .lede { display: none; }
   .panel[data-detent="peek"] .panel-head .eyebrow,
-  .panel[data-detent="half"] .panel-head .eyebrow,
-  .panel[data-detent="peek"] .panel-head .lang-alt,
-  .panel[data-detent="peek"] .panel-head .passport { display: none; }
+  .panel[data-detent="half"] .panel-head .eyebrow { display: none; }
   /* The count is the peek's subtitle and the half's orientation line; at full
      the intro says it better. */
   .panel[data-detent="full"] .sheet-count { display: none; }
@@ -863,8 +867,8 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   .panel.is-detail .sheet-back { display: inline-flex; align-items: center; gap: 0.4rem;
     font-family: inherit; font-size: 13px; background: none; border: 0; color: var(--moss);
     padding: 0.2rem 0; cursor: pointer; }
-  .panel.is-detail .panel-head h1, .panel.is-detail .panel-head .lede,
-  .panel.is-detail .panel-head .eyebrow, .panel.is-detail .panel-head .lang-alt,
+  .panel.is-detail .panel-head h1, .panel.is-detail .panel-head .eyebrow,
+  .panel.is-detail .city-intro,
   .panel.is-detail .sheet-count, .panel.is-detail .panel-foot { display: none; }
   .panel.is-detail .tree-card { display: none; }
   .panel.is-detail .tree-card.is-open { display: block; }
@@ -880,8 +884,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   .bar-logo { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--sans); font-weight: 800; font-size: 1.02rem; letter-spacing: 0.07em; text-decoration: none; color: var(--ink); }
   .bar-links { display: flex; align-items: center; white-space: nowrap; }
   .bar-links a.bar-secondary { display: none; }
-  /* Get to the trees faster: the intro is still fully in the HTML. */
-  .panel-head .lede { display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+  .city-intro { padding: 0.9rem 1.1rem 1.1rem; }
   .panel-head { padding: 1.25rem 1.1rem 1rem; }
   .panel-head h1 { font-size: 1.6rem; }
   .home-hero { height: 60vh; }

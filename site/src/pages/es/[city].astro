@@ -121,6 +121,10 @@ const qslug = QUESTION_SLUG.es;
         <p class="eyebrow">España</p>
         <h1>Árboles históricos de <em>{tr.city}</em></h1>
         <p class="sheet-count">{trees.length} árboles en el mapa</p>
+      </div>
+      </div>
+      <div class="sheet-body">
+      <div class="city-intro">
         <p class="lede">{tr.intro}</p>
         <p class="lang-alt">This page also exists <a href={`/${cslug}`}>in English</a>.</p>
         <p class="passport" id="passport" hidden>
@@ -129,8 +133,6 @@ const qslug = QUESTION_SLUG.es;
           <button type="button" class="passport-save" id="passport-save">Guardar o pasar a otro dispositivo</button>
         </p>
       </div>
-      </div>
-      <div class="sheet-body">
       {trees.map((t, i) => {
         const cphoto = usablePhoto(t);
         const x = tr.trees[t.id];

@@ -402,6 +402,29 @@ jobs:
       # standing ratchet.
       #
       # So the workflow measures the run rather than trusting it. Always a record
+      # A new city should get its name in other languages without anyone
+      # remembering to ask for it (Hidde, 2026-08-18: "bouw het zo dat als we in
+      # de toekomst steden of namen toevoegen dit standaard practice is"). The
+      # generator only queries cities it has never seen, so on a night that
+      # published nothing this makes zero network calls and commits nothing.
+      - name: Names in other languages for any new city
+        if: always()
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set +e
+          python3 scripts/city_names.py || echo "lookup failed, next run picks it up"
+          git add data/city-aliases.json
+          git diff --cached --quiet && { echo "no new cities to name"; exit 0; }
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin \
+            "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git commit -q -m "Search names for the cities opened this run"
+          git pull --rebase -q
+          git push -q || echo "names recorded locally, push refused"
+
       # in data/run-health.json (minutes, turns, commands the allowlist refused,
       # trees that reached data/cities, claims left behind); a LOG.md stub only
       # when the run wrote none of its own. It cannot fail the job: the work is
