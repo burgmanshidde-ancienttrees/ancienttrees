@@ -52,7 +52,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Yoshimenedera_Yuryunomatsu.jpg",
         "license": "CC BY-SA 3.0",
         "attribution": "PlusMinus, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 2294,
+        "height": 971
       },
       "curation_status": "ai_generated",
       "notes": "OpenStreetMap carries a contributor-mapped, heritage-tagged node named \"遊龍松\" (Yuryu-matsu) at this spot, matching the tree's own Japanese name exactly and its 1932 national-monument designation; its species tag (Pinus thunbergii) contradicts our own two independent sources, which agree this is a five-needle pine (Pinus parviflora, matching the story's description), so the location was used but the species tag was not.",
@@ -84,7 +86,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Rikushu-no-matsu_pine_tree_in_Rokuonji_Temple.JPG",
         "license": "CC BY-SA 4.0",
         "attribution": "そらみみ (Soramimi), Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3205,
+        "height": 2404
       },
       "curation_status": "ai_generated",
       "notes": "OpenStreetMap carries a contributor-mapped, survey-sourced node named \"陸舟の松\" (Rikushu Pine) at this spot, matching the tree's own name exactly. Photo URL fixed 2026-07-28: the stored thumb path (commons/thumb/8/8e/...) 404'd, caught by a full site-wide hash-path check against Commons' API; the real current path is 4/4f. Fetched and viewed directly, the same boat-shaped trained pine beside Kinkaku-ji's roofline, before swapping.",
@@ -115,7 +119,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/%E5%AE%9D%E6%B3%89%E9%99%A2_01.JPG",
         "license": "CC BY-SA 3.0",
         "attribution": "Maechan0360, CC BY-SA 3.0, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 2048,
+        "height": 1536
       },
       "curation_status": "flagged",
       "notes": "The 2021 source describing the tree recovering vigor implies a period of decline; no source gives a clear cause or timeline for that decline. A candidate photo captioned \"Hosen-in, Bankan-en (Garden)\" was viewed directly on an earlier pass and rejected: it shows an illuminated Japanese maple against a bamboo grove at night, not a pine at all, so the garden-name caption evidently covers more than just this one tree. A second candidate, Commons file \"宝泉院_01.JPG\" (Category:Goḳō-no-matsu, Hōsen-in, the tree's own name), was downloaded and viewed directly this pass: it is the temple's signature framed-garden shot, the pine's gnarled poled branches seen through the guest-hall window with tatami in the foreground, an unambiguous match. Approved. Pin corrected 2026-07-28, about 625m: the previous coordinate was a street-level address estimate that turned out to be a genuine error, not just imprecise; OpenStreetMap carries two independently mapped nodes both named Hosen-in within about 150m of each other, one explicitly tagged with this entry's own street number (187), used here instead. The temple is a single small building around one guest hall and garden, so this building-level point puts a visitor at the pine itself, not just in the neighbourhood.",
@@ -152,7 +158,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Grand_Ginkgo_Tree_in_West_Honganji_Temple.JPG",
         "license": "CC BY-SA 3.0",
         "attribution": "そらみみ (Soramimi), Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3264,
+        "height": 2448
       },
       "curation_status": "ai_generated",
       "notes": "Photo (\"Grand Ginkgo Tree in West Honganji Temple\") viewed directly: shows a massive, wide, low-spreading ginkgo fenced off in a temple courtyard, consistent with the Sakasa Icho (inverted ginkgo) shape the story describes. Approved.",
@@ -182,7 +190,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Giant_Gion_weeping_sakura_%2851472103367%29.jpg",
         "license": "CC BY 2.0",
         "attribution": "Raita Futo, Wikimedia Commons (via Flickr)",
-        "status": "approved"
+        "status": "approved",
+        "width": 5844,
+        "height": 3896
       },
       "curation_status": "flagged",
       "notes": "Age range reflects a genuine discrepancy between sources counting from the 1949 planting (about 77 years) versus the 1928 seed collection (about 90+ years). Presented as a range rather than picking one figure, per the site's honesty standard. Photo is captioned as the Gion weeping sakura in Maruyama Park with embedded coordinates (35.0035, 135.7805) within about 50m of this entry's pin; a text-search workflow cannot visually confirm the frame, so flagged found_needs_check per house practice.",
@@ -250,7 +260,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/%E6%96%B0%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE_-_%E6%A8%9F%E9%BE%8D%E5%BC%81%E8%B2%A1%E5%A4%A9.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Cakoko23, Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3264,
+        "height": 2448
       },
       "curation_status": "ai_generated",
       "notes": "Photo is titled \"Shoryu Benzaiten\" (樟龍弁財天), an alternate name Japanese-language sources confirm is used for this exact great camphor at Imakumano Shrine, since its large limbs are said to resemble a dragon and the tree is worshipped as the seat of a dragon-riding Benzaiten. Embedded coordinates (34.9843, 135.7742) sit within about 50m of this entry's pin. A text-search workflow cannot visually confirm the tree fills the frame, so flagged found_needs_check per house practice.",
@@ -281,7 +293,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Semboin_subtemple_in_Daigoji_%283471809451%29.jpg",
         "license": "CC BY-SA 2.0",
         "attribution": "KimonBerlin, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3504,
+        "height": 2336
       },
       "curation_status": "flagged",
       "notes": "Pin corrected 2026-07-27 (about 185m): OpenStreetMap carries a contributor-mapped, survey-sourced node named \"太閤しだれ桜\" (Taiko shidarezakura, literally \"Taiko weeping cherry\") at this position, an exact and distinctive name match to this entry, replacing the previous estimate from Daigo-ji's general temple address. Story explicitly states this is not the original Hideyoshi-era tree, to avoid the misleading impression the name invites. Photo viewed directly 2026-07-28: an old, thick, mossy, gnarled weeping cherry in full bloom, bamboo-propped, beside a temple wall, matching the story's description exactly; one of only four images in Commons' dedicated \"Sakura at Sanbō-in\" subcategory (not the broader Daigo-ji sakura category), consistent with this being the sub-temple's single named, famous specimen rather than an arbitrary garden cherry.",
@@ -564,7 +578,9 @@
       "location_precision": "approximate",
       "curation_status": "flagged",
       "best_time": {
-        "months": [4],
+        "months": [
+          4
+        ],
         "kind": "flowers",
         "label": "early April, when single and double blossom open together on one crown"
       },

@@ -51,7 +51,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Hangman%27s_Elm%2C_Washington_Square_Park%2C_NYC_%28October_2023%29.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Marty Aligata (Msact), Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 2968,
+        "height": 3943
       },
       "curation_status": "flagged",
       "notes": "Age given as a range (300-346 years) because sources genuinely disagree, from NYC Parks' cautious 'more than 300 years' to a commonly cited 346. Pin confirmed 2026-07-27: OpenStreetMap carries a contributor-mapped, survey-sourced node named \"Hangman's Elm\" (species Ulmus procera, planted 1679, matching this entry's high-end age estimate of 346 years almost exactly), a few metres from the existing estimate.",
@@ -119,7 +121,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Camperdown_Elm_Prospect_Park_Brooklyn.jpg",
         "license": "CC BY-SA 2.0",
         "attribution": "Garry R. Osgood, Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 1150,
+        "height": 710
       },
       "curation_status": "ai_generated",
       "notes": "Pin corrected 2026-07-27 (about 70m): OpenStreetMap carries a contributor-mapped, survey-sourced node named \"Camperdown Elm\" (species Ulmus glabra 'Camperdownii', planted 1872, matching this entry's own planting year exactly), replacing the previous Boathouse-area estimate. Photo URL fixed 2026-07-28: the stored thumb path (commons/thumb/e/e0/...) 404'd, caught by a site-wide hash-path check against Commons' API; the real current path is 2/20. Fetched and viewed directly to confirm it's still the same weeping, umbrella-canopied elm before swapping.",
@@ -149,7 +153,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Two_Old_Sassafras_Trees%2C_Green-Wood_Cemetery%2C_Brooklyn%2C_NY_-_September_19%2C_2015.jpg",
         "license": "CC BY-SA 3.0",
         "attribution": "Marty Aligata, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 1712,
+        "height": 2288
       },
       "curation_status": "flagged",
       "notes": "Age is explicitly uncertain in the source material itself (Green-Wood's own write-up says there is no way to confirm age without coring the tree, and cautions that cemetery growing conditions likely make the tree larger than its age alone would suggest). Coordinates are for the cemetery's main entrance, not a surveyed point for the tree's specific location inside the grounds. Photo viewed directly: two large old trees a few feet apart in the cemetery, headstones visible, an exact match to the story's own description of the tree appearing as a pair of trunks.",
@@ -186,7 +192,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Queens_Giant_%28Tree%29_04072024.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Bruce Schaff, Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3621,
+        "height": 5432
       },
       "curation_status": "ai_generated",
       "notes": "Coordinates taken directly from the confirmed photo's embedded GPS metadata (40°45'10.8\"N, 73°44'49.2\"W), a rare case of a precisely surveyed point for the tree itself rather than an estimate. Photo URL fixed 2026-07-28: the stored path (commons/e/ef/...) 404'd, caught by the same site-wide hash-path check that found Madrid's and the Camperdown Elm's broken links; the real current path is 6/67. Fetched and viewed directly (a tall bare-branched tree towering above its neighbours in a leaf-litter forest) to confirm it's still the same tree before swapping.",

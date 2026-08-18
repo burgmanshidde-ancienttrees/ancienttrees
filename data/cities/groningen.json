@@ -48,7 +48,9 @@
       "access": "Visible from the public road (Noorddijkerweg); De Rollen is a private working farm, not open to visitors",
       "transport": "About 5km northeast of Groningen city centre; a 20-minute bike ride or bus toward Noorddijk/Ruischerbrug, then a short walk along Noorddijkerweg",
       "best_time": {
-        "months": [7],
+        "months": [
+          7
+        ],
         "label": "July, when the lime flowers turn the dooryard into a hum of bees",
         "kind": "flowers"
       },
@@ -131,7 +133,7 @@
       "location": {
         "address": "Noorderplantsoen, Kruissingel",
         "latitude": 53.2235104,
-        "longitude": 6.5547600,
+        "longitude": 6.55476,
         "neighbourhood": "Binnenstad-Noord"
       },
       "story": "The oldest tree in Noorderplantsoen is not a native Dutch species at all. Somewhere along the park's paths grows a ginkgo more than 140 years old, planted not long after the park itself was laid out over Groningen's demolished 17th-century fortifications, following an 1874 law that finally let the city expand past its old walls. Locals call it the eendenpootboom, the duck's foot tree, for the shape of its fan-like leaves, and the nickname is more accurate botany than most: ginkgo is the last surviving member of an entire plant family that predates most of the trees around it by tens of millions of years, a genuine living fossil rather than a figure of speech. In several Asian countries the species carries religious weight, planted at temples and eaten for its seeds, though the seeds are mildly toxic and best left alone here. Noorderplantsoen itself holds more than fifty labelled tree species along a marked route, the kind of park where a stroller with fifteen minutes to spare can read the name of nearly everything overhead, and this ginkgo is the one specimen old enough to have watched the entire park grow up around it, fortress moat turned ornamental pond and all.",
@@ -141,7 +143,9 @@
       "access": "Free, open park at any time",
       "transport": "10-15 minute walk from Groningen Centraal station, in the city centre",
       "best_time": {
-        "months": [11],
+        "months": [
+          11
+        ],
         "label": "November, when the fan-shaped leaves turn gold and drop almost overnight",
         "kind": "autumn colour"
       },

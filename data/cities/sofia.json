@@ -114,10 +114,11 @@
       "access": "Free, public park, open daily",
       "transport": "Lozenets district, Ulitsa Sveta Gora; about a 20 minute walk from Vasil Levski Stadium",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/The_Meadow_Slaveykov%27s_oaks%2C_Sofia%2C_2012_-_001.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Peter Kirkov, Sofia Code, CC BY-SA 4.0, via Wikimedia Commons",
-        "status": "approved"
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing",
+        "note": "Was a CC BY-SA 4.0 Commons file by Peter Kirkov; deleted from Commons and returning 404 by 2026-08-18, found by scripts/photo_check.py. The page showed a broken image until then."
       },
       "curation_status": "flagged",
       "location_precision": "approximate"

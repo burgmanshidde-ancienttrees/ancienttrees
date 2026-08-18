@@ -57,7 +57,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/R%C3%B6th-Linde.jpg",
         "license": "Public Domain",
         "attribution": "Holger Heinzmann, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 428,
+        "height": 262
       },
       "curation_status": "flagged",
       "notes": "The Thirty Years' War planting date is local tradition, not a documented record; the 300-350 year range comes from the tree's own Wikipedia entry and matches independently, but no source gives a single precise figure. Photo viewed directly: shows a large, mature, dome-shaped linden standing alone on a grassy plot beside a rural-looking building, consistent with the tree's setting near Gut Nederling. Approved. Cross-checked against an OpenStreetMap node (denotation=natural_monument, name=Röth-Linde) within 5m of this entry's own coordinates: independent confirmation the pin is already right.",
@@ -78,7 +80,10 @@
       },
       "story": "This oak has outlasted the village it once stood outside, the Bavarian duchy that once ruled the land, and most of its own major branches. A 2017 recommendation from the Sendling-Westpark district's citizen assembly, arguing for the tree's protection and continued care, dates it at roughly 600 years old, which would put its origins in the 1420s, a period when Munich was still ruled directly by Wittelsbach dukes and when Duke Albrecht III married in the city in 1436. No source directly connects the tree's planting to that or any specific historical event, so any such link stays unclaimed here. What is documented is more recent damage: three major limbs have been removed over the years and a fourth broke off on its own, thinning a crown that once spread wide with the snake-like, twisting branch pattern typical of very old pedunculate oaks. A new protective fence went up around the trunk in July 2022 to keep the compacted soil at the roots from getting worse. The tree still stands at the eastern corner of the small park that carries its name, a six-century survivor now fenced off from the joggers and dog walkers who pass it daily.",
       "best_time": {
-        "months": [9, 10],
+        "months": [
+          9,
+          10
+        ],
         "kind": "fruit",
         "label": "acorns drop, and a good mast year buries the ground in them"
       },
@@ -92,7 +97,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Stieleiche-Sendling-Westpark-1.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Tkarcher, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 4624,
+        "height": 3472
       },
       "curation_status": "flagged",
       "notes": "The approximately 600-year age comes from a district citizen-assembly document rather than a dendrological survey; baumkunde.de independently suggests a planting date around 1440, consistent with but not identical to that figure. Any connection to Duke Albrecht III's 1436 wedding is local speculation found in searches but not confirmed by either source, so it is not stated as fact in the story. Pin corrected 2026-07-27, about 1.4km: German Wikipedia's own list of Munich's Naturdenkmäler (already a cited source) carries per-tree coordinates; independently geocoded 'Krüner Platz' via Nominatim to cross-check rather than trust the table blindly, and it lands within about 100m of the table's figure, confirming the table over the previous stored point, which was the actual error. Photo found and approved 2026-07-28: file titled \"Stieleiche (Naturdenkmal) in Sendling-Westpark\", an exact species and district match. Viewed directly: a massive old oak with a heavily gnarled, twisting branch structure and thick low limbs behind a garden fence, consistent with the story's description of storm-thinned limbs and the July 2022 protective fence.",
@@ -113,7 +120,10 @@
       },
       "story": "Twelve thousand schoolchildren planted this oak in one afternoon, or at least watched a handful of their classmates do it. On 1 July 1871, weeks after the peace treaty ending the Franco-Prussian War was signed in Frankfurt, Munich staged a peace festival at the Flaucher meadows along the Isar: a procession of children, city councillors and guests gathered while selected boys and girls set a young oak sapling into the ground. A plaque at the site still reads, in German, Reich and Peace Oak, planted by the youth of the city of Munich on 1 July 1871, making this one of the few trees on this list with an exact, undisputed planting date rather than an estimate. Similar Friedenseichen went into the ground across German cities that year, each one a small piece of civic theatre marking the unification of the German Empire under Kaiser Wilhelm I as much as the peace itself. This one has had a century and a half since to grow into an ordinary, unremarkable-looking oak in a riverside park, its real distinction lying entirely in the date rather than the trunk.",
       "best_time": {
-        "months": [9, 10],
+        "months": [
+          9,
+          10
+        ],
         "kind": "fruit",
         "label": "acorns drop, and a good mast year buries the ground in them"
       },
@@ -127,7 +137,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Friedenseiche_Flaucheranlagen_Muenchen-1.jpg",
         "license": "CC BY-SA 3.0",
         "attribution": "Rufus46, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3648,
+        "height": 5472
       },
       "curation_status": "flagged",
       "notes": "Planting date (1 July 1871) is explicit on the tree's own plaque per stadtgeschichte-muenchen.de, so age is calculated directly rather than estimated. Photo viewed directly: shows a large solitary oak on a park lawn with a memorial stone at its base, consistent with a commemorative planting. Approved. Pin corrected 2026-07-27, about 1.3km, using German Wikipedia's Naturdenkmäler list coordinates (see muc_002 for the cross-check that validated this table against an independent Nominatim geocode).",
@@ -164,7 +176,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Naturdenkmal_Rotbuche_Englischer_Garten_M%C3%BCnchen.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Peterf, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 2821,
+        "height": 3591
       },
       "curation_status": "flagged",
       "notes": "Age given only as 'over 300 years' in the city's own Naturdenkmal register (via baumkunde.de and the Wikipedia list drawing on it); no more precise figure or measurement found. Pin corrected 2026-07-27, about 1.6km, using that same Wikipedia list's per-tree coordinates (see muc_002 for the cross-check that validated this table). Photo found and approved 2026-07-28: file titled \"Naturdenkmal Rotbuche Englischer Garten München\", the photographer's own title naming this as the specific protected specimen rather than any beech in the park. Viewed directly: a single tall, mature beech standing alone in an open grass clearing, bare in winter, consistent with the Englischer Garten's open meadow sections.",
@@ -194,7 +208,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Zwei_Flatterulmen_Ulmus_laevis_Englischer_Garten_Muenchen-1.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Peterf, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3521,
+        "height": 5292
       },
       "curation_status": "flagged",
       "notes": "'No older elms known in the city area' is the register's own wording, a comparative claim rather than an absolute age; no individual figure exists for either tree. Photo viewed directly: shows a tall, mature tree with a complex, high-branching crown rising above the surrounding autumn canopy in a park setting, consistent with the paired elms. Approved. Pin corrected 2026-07-27, about 1.5km: German Wikipedia's Naturdenkmäler list gives this exact coordinate, and independently, the approved photo's own file description places the trees 'in der Weggabelung etwa 200m nordwestlich des Monopteros' (at the path fork about 200m northwest of the Monopteros); geocoding the Monopteros directly and projecting 200m northwest lands within about 70m of the Wikipedia table's point, a genuine independent cross-check rather than trusting one source alone.",
@@ -231,7 +247,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Farnblaettrige_Buche_Englischer_Garten_Muenchen-1.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Peterf, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 4050,
+        "height": 3615
       },
       "curation_status": "flagged",
       "notes": "Protected for rarity of form rather than age; no source gives a planting date or age estimate, so the age range here is a rough guess based on trunk girth rather than a documented figure, flagged accordingly. Photo viewed directly: shows a large dome-shaped beech with a finely textured autumn canopy in a park setting with benches beneath it, consistent with a protected specimen beech. Approved. Pin corrected 2026-07-27, about 1.4km, using German Wikipedia's Naturdenkmäler list coordinates (see muc_005 for the independent Monopteros cross-check that validated this same table for its immediate neighbour).",
@@ -252,7 +270,10 @@
       },
       "story": "This oak grows in the one part of a royal palace garden built to look like it wasn't designed at all. The Dörfchen, or little village, is a cluster of rustic farm-style buildings inside Nymphenburg Palace Park, built from 1803 as a picturesque contrast to the palace's formal Baroque and later English-landscape grounds surrounding it, complete with a working dairy and a chapel meant to evoke ordinary rural life for an audience that never had to live it. The oak stands near the Brunnhaus, on the way toward the Badenburg pavilion and the park's Großer See lake, and Munich's own natural monument register singles it out as unique in size within the city, a claim about scale rather than age, since no source gives the tree a documented planting date or precise age. What is certain is that it has grown large enough, inside grounds that have been continuously maintained by the Bavarian royal family and its successors since the 17th century, to earn individual legal protection in a park already full of centuries-old formal avenues.",
       "best_time": {
-        "months": [9, 10],
+        "months": [
+          9,
+          10
+        ],
         "kind": "fruit",
         "label": "acorns drop, and a good mast year buries the ground in them"
       },
@@ -266,7 +287,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Naturdenkmal_Stieleiche_im_Winter_Schlosspark_Nymphenburg_M%C3%BCnchen.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Peterf, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 2560,
+        "height": 3744
       },
       "curation_status": "flagged",
       "notes": "No source gives this specific oak a documented age; 'unique in size within the city area' is the register's own claim about scale, not age, and is presented as such. Photo found via the city's own Naturdenkmal list, whose Commons category and filename explicitly name this exact tree. Viewed directly: shows a tall, thick-trunked oak with a gnarled, moss-covered lower crown, budding in early spring, next to a rustic tiled-roof building, consistent with the Dörfchen's farm-style setting. Approved. Pin corrected 2026-07-27, about 550m, using German Wikipedia's Naturdenkmäler list coordinates (see muc_002 for the cross-check that validated this table).",
@@ -296,7 +319,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Acht_Zuergelbaeume_Oskar-von-Miller-Ring_Muenchen-2.jpg",
         "license": "CC BY-SA 3.0",
         "attribution": "Rufus46, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 4680,
+        "height": 3400
       },
       "curation_status": "flagged",
       "notes": "Presented as an ensemble of eight trees per the city's own register entry; no individual age or planting date documented for any of the eight. Photo found via the city's own Naturdenkmal list, whose Commons category and filename explicitly name this exact group. Viewed directly: shows a dense cluster of mature trees on a grass strip beside a road, with a Siemens-branded office building behind them, matching the story's own description exactly. Approved. Pin corrected 2026-07-27, about 415m, using German Wikipedia's Naturdenkmäler list coordinates (see muc_002 for the cross-check that validated this table).",
@@ -332,7 +357,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Schnurbaum_am_Karolinenplatz_%28von_S%29_-_2021-07-05_-_142b.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Martinus KE, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 2736,
+        "height": 3648
       },
       "curation_status": "flagged",
       "notes": "Attribution resolved by checking the file's own description page directly: Martinus KE, CC BY-SA 4.0. Photo viewed directly: shows a large tree with fine, compound pinnate foliage (consistent with Sophora japonica) beside a residential building near the square. Approved. Pin corrected 2026-07-27, about 280m, using German Wikipedia's Naturdenkmäler list coordinates (see muc_002 for the cross-check that validated this table).",
@@ -362,7 +389,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Naturdenkmal_Bergulme_Maximiliansplatz_M%C3%BCnchen.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Peterf, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 2838,
+        "height": 3998
       },
       "curation_status": "flagged",
       "notes": "No individual age or planting date documented; rarity is explicitly tied to Dutch elm disease losses across the city rather than this tree's own age. Photo viewed directly: shows a tall mature tree in a city square with buildings visible behind the canopy, consistent with a Maximiliansplatz specimen. Approved. Pin tightened 2026-07-27, about 85m, using German Wikipedia's Naturdenkmäler list coordinates (see muc_002 for the cross-check that validated this table).",
@@ -400,7 +429,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nymphenburg_Blutbuche_Badenburg-1.jpg",
         "license": "CC BY-SA 3.0",
         "attribution": "Rufus46, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 2000,
+        "height": 1536
       },
       "curation_status": "flagged",
       "notes": "Age undated: Munich's Naturdenkmal ordinance carries no age or girth column, and no second source gives this tree a date, so the 150-250 range is inferred from Sckell's documented 1799-1823 landscape redesign rather than measured. Existence, species, location and protection are legally attested by the 2021 ordinance; ownership is Freistaat Bayern, public parkland. Flagged because the ordinance is effectively the only source on the tree itself. Photo viewed directly at 1280px before approval: daylight, colour, deep blue sky, the dark purple crown unmistakable against the green trees beside it, trunk visible at the base, and the yellow baroque Badenburg in frame at left, which corroborates the register's stated Badenburg connection. Survives a wide card crop; the tree holds the centre band.",
@@ -440,7 +471,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Naturdenkmal_Sommerlinde_am_Badenburger_See_im_Winter.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "NiamhNature, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3648,
+        "height": 5472
       },
       "curation_status": "flagged",
       "notes": "The 180-year figure comes from baumkunde.de register entry 4054, a community-compiled German tree register, used here as a lead and named as such in the story rather than as an authority; the city ordinance carries no age column. Its coordinates (48.15457, 11.49279) fall about 33 m from the ordinance's, which independently corroborates the pin. Flagged because the only numeric age is volunteer-sourced. Photo viewed directly at 1280px before approval and run through the Cadiz test deliberately, since it is a bare winter shot: it is daylight and in colour, not black and white, with blue sky, warm brown far bank and ice on the lake. The tree fills the left and centre of the frame with trunk and full crown readable, a bench at its base for scale and the Badenburg visible across the water. It survives a wide card crop because the trunk and the heavy lateral limbs sit in the centre band. Approved. The bare silhouette best_time is the register's own stated reason for protection, not an invented peak.",
@@ -471,7 +504,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Schlosspark_Nymphenburg_Naturdenkmal_Farnblaettrige_Buche-1.jpg",
         "license": "CC BY-SA 3.0",
         "attribution": "Rufus46, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 1650,
+        "height": 2200
       },
       "curation_status": "flagged",
       "notes": "Named 'of the Amalienburg' deliberately: muc_006 is already 'The Fern-leaved Beech', in the Englischer Garten, and two entries cannot share a name. Same species, different tree, roughly 7 km apart. The 180-year figure and the vitality note come from baumkunde.de register entry 4055, a community-compiled German register, used as a lead and attributed in the story rather than treated as authority; the city ordinance carries no age column. Its coordinates (48.15538, 11.50030) fall about 15 m from the ordinance's, independently corroborating the pin, and its 2019 condition note is the only vitality evidence available for any tree in this cluster. Photo viewed directly at 1280px before approval: daylight, colour, the tree fills the frame with the smooth silvery trunk running the full height and the finely cut foliage readable, path and boulders at the base for scale. Survives a wide card crop, trunk squarely in the centre band. Approved.",

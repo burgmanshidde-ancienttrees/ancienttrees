@@ -89,7 +89,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/2025_Leidsebosje%2C_Asd%2C_dikke_plataan_noord_%28A%29.jpg",
         "license": "CC0 1.0",
         "attribution": "Ceescamel, Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3468,
+        "height": 4624
       },
       "curation_status": "ai_generated",
       "location_precision": "approximate",
@@ -149,7 +151,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/2022_Wertheimpark%2C_Asd-Gewone_vleugelnoot_%281%29.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Ceescamel, Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 4624,
+        "height": 3468
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
@@ -186,7 +190,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Cycad_%40_De_Hortus_Botanicus_%40_Amsterdam_%2821679155561%29.jpg",
         "license": "CC BY 2.0",
         "attribution": "Guilhem Vellut, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3968,
+        "height": 2976
       },
       "curation_status": "flagged",
       "notes": "Age estimate is sourced from the Hortus's own garden records and plant database; independent third-party confirmation was not found. Coordinates corrected 2026-07-26 from a general Hortus street geocode to the Palmenkas (Palm House) building itself, located via OpenStreetMap building data (52.3663, 4.9081); this is the specific greenhouse the story places the cycad in, though the Palm House holds more than one Encephalartos specimen so the pin cannot distinguish which one inside the glasshouse. Photo downloaded and viewed directly 2026-07-27: shows two large barrel-potted cycads facing each other inside a Victorian-style glasshouse, one with an interpretive placard, matching the story's own detail that the 300-year male cycad and a roughly 200-year female cycad grow opposite each other in this exact Palm House. Cannot distinguish which specimen in frame is which, but the paired composition itself corroborates the described planting, so approved as an illustration of the pair rather than a single confirmed specimen.",
@@ -216,7 +222,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Huge_city_tree_in_Amsterdam-East%2C_on_the_Zeeburgerdijk.jpg",
         "license": "CC0 1.0",
         "attribution": "Fons Heijnsbroek (FotoDutch), via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3456,
+        "height": 2592
       },
       "curation_status": "flagged",
       "notes": "Sources give a planting date range of 1900-1915 rather than a single year. Coordinates now taken from the approved photo's own GPS EXIF data (52.366153, 4.934188), which matches bomenbieb.nl's independent description of the tree standing \"on the grassy corner by the bridge to Panamalaan.\" Photo dated 2013, before the 2015 truck-damage repair, so shows an earlier state of the same tree, but the position itself is unchanged.",
@@ -246,7 +254,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Lomanstraat_foto_1.JPG",
         "license": "Public domain",
         "attribution": "Alf van Beem, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 4608,
+        "height": 3456
       },
       "curation_status": "flagged",
       "notes": "Species is the regionally typical London plane but not explicitly confirmed in sources found. Exact planting date is not documented; estimated from the Plan Zuid development timeline (council approval 1917). The wartime survival story is explicitly unverified local lore, not a sourced fact. Photo viewed directly 2026-07-26 and confirmed: it shows a narrow Plan-Zuid street with tall plane trees interlocking overhead into exactly the tunnel effect the story describes, matching the Commons 'Lomanstraat, Amsterdam' category. Approved.",
@@ -315,7 +325,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Amsterdam_free_photo_of_old_city_square_Amstelveld_with_tree_branches_in_winter_and_an_old_wooden_church%2C_Fons_Heijnsbroek%2C_01-2022.jpg",
         "license": "CC0 1.0",
         "attribution": "Fons Heijnsbroek (FotoDutch), via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 4724,
+        "height": 3543
       },
       "curation_status": "ai_generated",
       "notes": "Corrected 2026-07-26: the previous coordinate (52.3573, 4.8975) was found to be wrong, not merely approximate, roughly 550m from the actual Amstelveld/Amstelkerk (verified against Wikipedia's Amstelkerk coordinates and OpenStreetMap/Nominatim, both placing the square at approximately 52.362, 4.896). Re-centered on the square, then cross-checked against Amsterdam's municipal tree registry (stamgegevens WFS), which resolves the earlier open question: within the square's several dozen Pterocarya fraxinifolia, exactly three are tagged 'Monument' and share a distinct 1930 planting date (ids 1158361, 1158363, 1158364), set apart from the surrounding 1945 and later plantings. That matches the sources' account of three oldest, most valuable specimens singled out for underground root protection. Pin is the average position of those three trees. Age updated to 96 years (2026 minus 1930) from the prior 100+ placeholder.",

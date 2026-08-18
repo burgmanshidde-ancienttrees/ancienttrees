@@ -50,7 +50,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Totteridge_Yew%2C_St_Andrew%27s_church%2C_Totteridge.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Philafrenzy, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3723,
+        "height": 3438
       },
       "curation_status": "ai_generated",
       "notes": "Was single-sourced to monumentaltrees.com, which CLAUDE.md's own research workflow says to use for verification only, not as a citable source; London's single most prominent claim (\"the oldest living thing in London\") stood on one non-citable link. Added exploring-london.com as a genuine independent second source, checked directly: it corroborates the age range (1,000-2,000 years), the girth (25ft, matching this entry's \"nearly eight metres\"), the tree's Great Trees of London listing, and the 2008 Conservation Foundation/Ancient Yew Group/Barnet Council survey that named it possibly London's oldest tree.",
@@ -80,7 +82,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Richmond_Park%2C_The_Royal_Oak_%281%29.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "AndyScott, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3000,
+        "height": 1999
       },
       "curation_status": "ai_generated",
       "notes": "Coordinates taken from the tree's own Woodland Trust Ancient Tree Inventory entry (ID 40404), grid reference TQ1938873126, converted from OSGB36 to WGS84. The ATI page carries no language obscuring or rounding this location (unlike some sensitive ATI entries), and the tree is a well-known, publicly signposted landmark, so the precise grid reference is used directly rather than the previous general \"near Pen Ponds\" estimate.",
@@ -110,7 +114,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/The_Cheapside_Plane_%281%29.jpg",
         "license": "CC0 1.0",
         "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3024,
+        "height": 4032
       },
       "curation_status": "ai_generated",
       "notes": "Source URLs backfilled 2026-07-28: Atlas Obscura and Look Up London both independently corroborate the St Peter Cheap site, the 1853 cab-company advert, the 1901 'most valuable tree' claim and the Wordsworth connection.",
@@ -140,7 +146,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Berkeley_Plane_%281%29.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3024,
+        "height": 4032
       },
       "curation_status": "ai_generated",
       "notes": "Two independent sources now back the planting date, Bouverie attribution, 2008 valuation and Great Trees of London designation. This entry describes the square's plane trees collectively (30+ specimens, one individually named and valued); coordinates mark the square itself rather than one specific trunk among many, so location_precision stays approximate honestly.",
@@ -178,7 +186,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Greenwich_Park_Sweet_Chestnut_%281%29.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 4032,
+        "height": 3024
       },
       "curation_status": "ai_generated",
       "notes": "Replaces the dead/fallen Queen Elizabeth's Oak on 2026-07-27 per Hidde's living-trees rule. Coordinates upgraded 2026-07-28 to Woodland Trust ATI open-data record Id 2919 (girth 7.26m, Ancient, alive, verified 2021), the only ancient chestnut in that corner of the Flower Garden and ~30m from the approved photo's EXIF point, so precision is confirmed. Great-Tree identification is convergent (Wikipedia lists the Great Tree chestnut in the Flower Garden; this is the garden's largest ancient chestnut) and phrased as attributed. Deliberately NOT claiming Tree of the Year 2023: that shortlisted chestnut stands in the avenue near the Roman Temple, ~350m away. Age derives from the documented 1660-64 planting, not a ring count.",
@@ -214,7 +224,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Charlton_House_Mulberry_Tree_%2801%29.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Ethan Doyle White, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3448,
+        "height": 4592
       },
       "curation_status": "ai_generated",
       "notes": "Source URLs backfilled 2026-07-28: Morus Londinium (a Woodland Trust/academic mulberry-mapping project) and London Remembers both corroborate the 1608 planting and James I connection independently. Location corrected the same pass: a systematic geocode audit flagged the stored coordinate as 1055m from Charlton House; Nominatim's own geocode of Charlton House, Charlton Road places it at 51.4807, 0.0371 (postcode SE7 7TH, not the stored SE7 8RE), matching this entry's own 'Charlton, South East London' neighbourhood. Fixed.",
@@ -244,7 +256,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Fulham_Palace_Oak_%282%29.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3024,
+        "height": 4032
       },
       "curation_status": "ai_generated",
       "notes": "Species corrected 2026-07-22: original data said Pedunculate Oak (Quercus robur), but Fulham Palace's own site and independent photo captions identify it as Holm Oak (Quercus ilex), possibly the oldest in Britain. Photo now found. Location corrected 2026-07-28: a geocode audit flagged the stored coordinate as roughly 1km from Fulham Palace itself; Nominatim's own geocode agrees on two separate queries (51.4704-51.4705, -0.2152 to -0.2154), one of them matching this entry's own postcode (SW6 6EA) exactly. Moved onto the palace grounds; still confirmed since the palace itself, not just a neighbourhood, is now correctly pinpointed.",
@@ -274,7 +288,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Kew_Gardens_Pagoda_Tree_P1170594.JPG",
         "license": "CC BY-SA 3.0",
         "attribution": "Deror avi, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3000,
+        "height": 4000
       },
       "curation_status": "ai_generated",
       "notes": "Both named sources place the five trees at distinct spots across Kew (the pagoda tree by the Hive, the oriental plane by the Orangery, the elm and locust each their own specimen), so a single coordinate for the group is a garden-level estimate rather than a pin on any one trunk; location_precision stays approximate honestly rather than picking one tree's spot to represent all five.",
@@ -310,7 +326,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Mulberry_tree%2C_Sayes_Court_Park_-_geograph.org.uk_-_6124238.jpg",
         "license": "CC BY-SA 2.0",
         "attribution": "Robin Webster, via Geograph Britain and Ireland / Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 1024,
+        "height": 768
       },
       "curation_status": "ai_generated",
       "notes": "Source URLs backfilled 2026-07-28: Atlas Obscura and Morus Londinium (a Woodland Trust/academic mulberry-mapping project) both corroborate the Evelyn garden, the tree's age and the Peter the Great story; both also independently note historians doubt Peter himself planted it, consistent with this entry's own careful phrasing ('may have survived even that') rather than crediting him with planting it. Location corrected the same pass: the stored coordinate was about 700m from Sayes Court Street itself, whose Nominatim geocode (51.484, -0.031) agrees closely with the independently found Sayes Court Park coordinate from a parks-data source (51.4848, -0.0310). Moved onto the actual street/park cluster.",
@@ -340,7 +358,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Barney_of_Barn_Elms_plane_tree_2026-05-06.jpg",
         "license": "CC BY 4.0",
         "attribution": "Matt Brown, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 4032,
+        "height": 3024
       },
       "curation_status": "flagged",
       "notes": "Coordinates updated 2026-07-22 from the EXIF geotag on a CC BY 4.0 photo captioned 'Barney of Barn Elms' (Matt Brown, May 2026). A second independent source found 2026-07-26: Open Plaques records a Great Trees of London commemorative plaque for this exact tree ('the oldest in London... platanus x hispanica') at 51.47441, -0.23106, about 9 metres from the EXIF position, close enough to be the same tree. Location precision upgraded on that agreement. Story rewritten 2026-07-28 to reach the standard word count, grounded entirely in facts already established above, no new claims added.",

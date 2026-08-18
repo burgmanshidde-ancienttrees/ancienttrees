@@ -49,7 +49,12 @@
       ],
       "access": "Free, open public square",
       "transport": "In the centre of Setubal, a few minutes on foot from the station",
-      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "ai_generated",
       "notes": "An ensemble entry that passes the collectible-point test: six trees ringing one stone tank, with a single obvious place to stand. Age is the 2009 assessment carried forward; the register and the parish agree to within six years across every species here.",
       "location_precision": "confirmed"
@@ -78,7 +83,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Q98444729.jpg",
         "license": "CC BY-SA 3.0",
         "attribution": "Vanbasten 23, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3000,
+        "height": 4000
       },
       "curation_status": "ai_generated",
       "notes": "The register gives 60 years at the 2015 measurement, so about 71 today. The parish records a larger girth than the register (4.06m against 3.38m), which is base against breast height rather than a disagreement.",
@@ -104,11 +111,19 @@
       ],
       "access": "Free, open public square",
       "transport": "In the centre, about 200 m from Largo Jose Afonso",
-      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "ai_generated",
       "notes": "Two registered trees of the same species metres apart, distinguished in the register only by girth, so this entry is the pair. The spring flowering is stated by the parish itself rather than inferred from the species.",
       "best_time": {
-        "months": [4, 5],
+        "months": [
+          4,
+          5
+        ],
         "label": "April and May, when the whole crown turns orange",
         "kind": "flowers"
       },
@@ -134,7 +149,12 @@
       ],
       "access": "Free, public waterfront garden",
       "transport": "On the Sado waterfront, about 10 min walk from the centre",
-      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "flagged",
       "notes": "The 150-year register figure at the 2016 measurement is the highest in Setubal and is unconfirmed anywhere else; the parish records no age at all for this tree. Published as a register claim with the range left wide rather than repeated as fact.",
       "location_precision": "confirmed"
@@ -159,7 +179,12 @@
       ],
       "access": "Free, public street",
       "transport": "North of the centre, about 20 min walk or a short bus ride",
-      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "ai_generated",
       "notes": "Two registered pines metres apart, separated in the register only by girth (4.15m and 3.20m), so this entry is the pair and the pin is the larger. Age is the 2009 assessment carried forward, matching the parish figure to within six years.",
       "location_precision": "confirmed"
@@ -184,7 +209,12 @@
       ],
       "access": "Free, public park",
       "transport": "About 10 min walk from the centre",
-      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "ai_generated",
       "notes": "Register gives 100 years at the 2009 assessment, so about 117 today. The parish calls the park the Jardim do Bonfim while the register writes Parque do Bonfim; the parish name is used here.",
       "location_precision": "confirmed"
@@ -209,7 +239,12 @@
       ],
       "access": "Free, public street",
       "transport": "About 10 min walk from the centre, in the Montalvao district",
-      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "ai_generated",
       "notes": "Register gives 51 years at the 2015 measurement, so about 62 today. Summer flowering is species knowledge rather than a Setubal-specific source, so no best_time is claimed.",
       "location_precision": "confirmed"
@@ -234,7 +269,12 @@
       ],
       "access": "Free, public street",
       "transport": "North of the centre, about 18 min walk",
-      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "ai_generated",
       "notes": "Two registered poplars metres apart, distinguished only by girth (3.34m and 3.00m), so this entry is the pair. Register gives 86 years at the 2015 measurement, tracing to the 2009 assessment, so about 97 today.",
       "location_precision": "confirmed"
@@ -259,11 +299,19 @@
       ],
       "access": "Free, public street",
       "transport": "East of the centre, about 15 min walk",
-      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "ai_generated",
       "notes": "Register gives 66 years at the 2015 measurement, so about 83 today. The fishing-net use is stated by the parish, not inferred.",
       "best_time": {
-        "months": [11, 12],
+        "months": [
+          11,
+          12
+        ],
         "label": "late autumn, when the clusters of pink peppercorns turn red",
         "kind": "fruit"
       },
@@ -289,11 +337,19 @@
       ],
       "access": "Free, public garden",
       "transport": "East of the centre, about 12 min walk",
-      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "flagged",
       "notes": "The only single-sourced tree on this page: it sits in Sao Sebastiao parish, outside the Uniao de Freguesias route that independently corroborates the other nine. Register gives 85 years at the 2009 assessment, so about 102 today.",
       "best_time": {
-        "months": [10, 11],
+        "months": [
+          10,
+          11
+        ],
         "label": "October and November, when the pink drupes hang in strings",
         "kind": "fruit"
       },

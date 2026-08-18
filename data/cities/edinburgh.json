@@ -50,7 +50,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Craigmillar_inner_court.jpg",
         "license": "CC BY-SA 3.0",
         "attribution": "Jonathan Oldenbuck, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 1200,
+        "height": 1600
       },
       "curation_status": "flagged",
       "notes": "Age genuinely disputed: Historic Environment Scotland's own cautious figure is 300+ years; the Mary Queen of Scots planting legend requires 450+. Presented as a range, legend labelled as tradition rather than fact. Photo verified directly against its Commons file page: CC BY-SA 3.0 / GFDL, captioned as showing large yew trees in the inner courtyard, categorised under Taxus baccata in Scotland. Location corrected 2026-07-28: the stored coordinate had been about 2.2km from the actual castle, caught by a systematic geocode audit and confirmed independently two ways, Nominatim's own geocode of \"Craigmillar Castle Road, Bingham, Craigmillar\" (which resolves to this exact postcode, EH16 4SY, already cited in this entry's own address) and Wikipedia's stated coordinate for Craigmillar Castle (55.9259, -3.1406), agreeing within 40m of each other. Pin now sits on the castle itself; still approximate since it isn't a survey of the courtyard specifically.",
@@ -86,7 +88,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Sweet_Chestnut_at_the_Royal_Botanic_Garden_Edinburgh_-_geograph.org.uk_-_7080129.jpg",
         "license": "CC BY-SA 2.0",
         "attribution": "M J Richardson, via Geograph Britain and Ireland / Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 5184,
+        "height": 3888
       },
       "curation_status": "flagged",
       "notes": "No source gives a specific planting date, only that it predates the garden's 1820 move to Inverleith. Age range is an estimate, not a measurement. Location corrected 2026-07-23: RBGE's own story page (stories.rbge.org.uk/archives/15890) places this tree on the Pond Lawn, not the Rock Garden as previously written here; fixed in address and story. Photo verified directly on Commons: CC BY-SA 2.0, captioned simply 'Sweet Chestnut at the Royal Botanic Garden Edinburgh', matched to this specific tree via RBGE's own description of a 200+ year old sweet chestnut in decline that received crown reduction, which lines up with the Geograph photo's own description.",
@@ -208,7 +212,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Ulmus_%27Wentworthii%27%2C_Holyrood.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Max Coleman, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 4000,
+        "height": 3000
       },
       "curation_status": "ai_generated",
       "notes": "Planting date and age corroborated across RBGE's own account, ScienceAlert and BBC News. Exact position within the 10 acre garden not specified in any source found, so pin is garden level rather than the specific trees. Photo verified directly on Commons, filed under Category:Ulmus in Edinburgh with 'Holyrood' in the title, taken by Max Coleman (the RBGE botanist credited in the rediscovery story), distinct from a different Wentworth elm photo in the same category taken at RBGE itself.",
@@ -303,7 +309,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Footpath_through_beech_trees_-_geograph.org.uk_-_1065352.jpg",
         "license": "CC BY-SA 2.0",
         "attribution": "Callum Black, via Geograph Britain and Ireland / Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 640,
+        "height": 480
       },
       "curation_status": "flagged",
       "notes": "This is an ensemble claim about the reserve's tree cover generally, not one dated individual specimen; presented and pinned as such. Photo re-verified 2026-07-23: filed on Commons under Category:Hermitage of Braid, captioned 'Footpath through beech trees, one of many footpaths in the Hermitage of Braid', coordinates match the reserve. It illustrates the ensemble tree cover the entry describes rather than proving the specific '130 feet' height claim, which is an acceptable match for a claim about the reserve's beech generally, so approved.",

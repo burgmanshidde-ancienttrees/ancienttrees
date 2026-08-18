@@ -56,7 +56,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Roma_-_ginko_-_202109220753.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Carlo8688, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3000,
+        "height": 4000
       },
       "curation_status": "flagged",
       "notes": "Replaces The Quercia del Tasso on 2026-07-27: verified via Italian-language sources (ilgiornale.it's coverage of a 2025 exhibition at the Museo di Roma in Trastevere dedicated to the tree) that the oak on the Gianicolo is now explicitly described as 'secco, morto, corroso' (dry, dead, decayed), propped up inside a small wall, not the living tree the old entry's own sources had left ambiguous ('what remains of a monumental tree'). This is the same violation of Hidde's 'we doen niet aan dode bomen' rule (CLAUDE.md Step 1) as Queen Elizabeth's Oak and Stock im Eisen, found while sweeping Rome's suspects from the same list. Id rom_001 reused; a redirect for the old slug (quercia-del-tasso) is registered in scripts/build_site.py's RENAMED_TREE_SLUGS. This replacement is sourced to Rome's own municipal monumental-tree page and a dedicated registry-style page (alberimonumentali.info, used for verification of size/location only, not copied); the circa-1900s planting date and Wurts/Tower estate history are corroborated by independent general sources (Wikipedia's Villa Sciarra and Henrietta Tower articles, Walks in Rome) but not a single primary planting record, so flagged. No open-licensed photo found; one Flickr photo of this exact tree exists but is marked all-rights-reserved, not usable. Photo found and approved 2026-07-28 via Wikidata's Roma monumental-tree register (item tagged with this exact address, uploaded through Wiki Loves Monuments Italia 2021): viewed directly (fetched full image, not just metadata), shows an unmistakable ginkgo in full golden autumn foliage over a leaf-carpeted clearing with a visitor path and sign, matching this entry's own November best_time description exactly. Upgraded to confirmed 2026-07-28: Italy's official AMI national monumental-trees register lists a 'Ginco' at 'Villa Sciarra - Viale Adolfo Leducq' with circumference 310cm and height 25.0m, matching this story's own already-cited figures (just over three metres around, a 25 metre crown) exactly. Read with a purpose-built binary XLS parser (this session's tools could not parse MASAF's legacy .xls format with any library, so one was hand-written against the OLE2/BIFF8 spec), about 220m from the previous estimate.",
@@ -89,7 +91,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Platano_secolare_Villa_Borghese_Roma.JPG",
         "license": "CC BY-SA 3.0",
         "attribution": "Patafisik, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 1712,
+        "height": 2288
       },
       "curation_status": "flagged",
       "notes": "Coordinates now come from Italy's national monumental tree registry (MASAF), which lists a single individually-catalogued Platanus orientalis at this exact site (Villa Borghese, Valle dei Platani), matching Adonis's description as the grove's one officially registered specimen; moved from a park-wide estimate to this registry point, about 290m away. The registry's own growth-based estimate gives 407 years against the 425 cited elsewhere, the same order of disagreement already carried openly on rom_005 and rom_006, so the age range here is left as is rather than resolved. Photo (2009, Patafisik) downloaded and viewed directly 2026-07-27: shows a large oriental plane with a prominent hollow cavity in its trunk, standing among several similarly aged planes in a grassy grove, an unusually strong match to Adonis's own described hollow trunk and grove setting. The file's own caption does not name Adonis specifically among the grove's nine survivors, so approved as an honest illustration of the tree and its grove rather than a certain single-specimen match, the same standard used elsewhere on this project for ensemble scenes.",
@@ -119,7 +123,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Scalone_Monumentale%2C_below_the_Fontana_degli_Undici_Zampilli_-_Orto_botanico_-_Rome%2C_Italy_-_DSC00275.jpg",
         "license": "CC0 1.0",
         "attribution": "Daderot, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 5472,
+        "height": 3648
       },
       "curation_status": "flagged",
       "notes": "Two trees described as one entry, matching how the garden itself presents them (a pair flanking the staircase). Age range is a general foresters' estimate; no source gives an exact planting year for either specimen. Photo viewed directly: shows the monumental staircase at the Fontana degli Undici Zampilli flanked by two large trees with gnarled branches and mottled bark, an unambiguous match to the story's own description.",
@@ -169,7 +175,11 @@
       },
       "story": "Sources disagree by a century and a half on how old this cedar is, and the disagreement is the most honest thing anyone can say about it. One detailed study of Villa Doria Pamphilj's tree collection places its planting in the 1600s, when the Pamphilj family first laid out the estate, which would make it over 300 years old. The tree's own entry in Italy's national monumental tree registry gives a calculated age closer to 150 years, with a trunk 4.6 meters around and a height of 30 meters. Both figures describe the same cedar, shading the belvedere terrace above the Lago del Giglio in Rome's largest public park. What is not disputed is the setting: Villa Doria Pamphilj was a private hunting and pleasure ground until the Italian state expropriated it in 1965, and this cedar, whichever planting it dates to, has shaded cardinals, princes and now Sunday joggers from the same terrace above the same ornamental lake. It is listed as the only individually registered monumental tree in a park that otherwise counts its history in family names rather than tree ages.",
       "best_time": {
-        "months": [9, 10, 11],
+        "months": [
+          9,
+          10,
+          11
+        ],
         "kind": "fruit",
         "label": "upright barrel cones that sit on the branches like eggs"
       },
@@ -184,7 +194,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Cedro_del_Libano%2C_Parco_di_Villa_Doria_Pamphilj.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Albarubescens, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 4608,
+        "height": 3456
       },
       "curation_status": "flagged",
       "notes": "Age disputed between two sources by up to 170 years (17th-century planting theory vs. a 150-year registry estimate); the expropriation year (1965) is given by secondary sources and should be checked against a primary record. Pin corrected 2026-07-26, a real correction of about 1.2km, not just imprecision: two Wiki Loves Monuments Italia photos independently titled \"Cedro del Libano\" at Villa Doria Pamphilj (by different photographers, 2021 and a companion shot from the lake canal) carry identical embedded GPS at 41.882956, 12.444775, which also matches Italy's national monumental tree registry (MASAF, AMI code 27/H501/RM/12, locality \"Villa Pamphili - Belvedere del Lago del Giglio\") to the hundredth of an arcsecond, byte-identical across two separate spreadsheet fetches. The previous pin was roughly 1.2km away, closer to the Via Aurelia Antica entrance than to the Belvedere itself. Photo downloaded and viewed directly 2026-07-27: close-up of blue-green needle clusters and upright barrel cones unmistakably Cedrus libani, consistent with the file's own title and the confirmed GPS. Approved.",
@@ -215,7 +227,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Leccio_secolare%2C_laghetto_di_Villa_Borghese.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Albarubescens, Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 4276,
+        "height": 3061
       },
       "curation_status": "flagged",
       "notes": "Age genuinely disputed: the national registry's measured estimate (176 years) contradicts the traditional account (up to 300 years, tied to the 1784 garden redesign). Presented as a range rather than resolved.",
@@ -236,7 +250,11 @@
       },
       "story": "This cedar shares its hillside with the dead of a revolution. It grows between the Fontana dell'Acqua Paola and the Mausoleo Ossario Garibaldino, the 1941 monument holding the remains of those killed defending Rome's short-lived Republic in 1849 and fighting to make the city Italy's capital between 1860 and 1870. Officially measured for the national monumental tree registry, it stands about 20 meters tall with a trunk 5.74 meters around, and its documented age of roughly 146 years puts its planting in the 1870s, soon after Rome became the capital of a unified Italy in 1871 and this hillside turned from battlefield into a place of civic memory. Cedars of Lebanon are not native anywhere near the Gianicolo; Roman nobility, and later the new Italian state, planted them across the city's hilltop gardens as a shorthand for permanence and old-world grandeur, the same reasoning that put cedars in half the noble villas on this list. This one has outlasted the reasoning: nobody plants status symbols on a war memorial today, but the tree stayed, and it is now the memorial's oldest living feature.",
       "best_time": {
-        "months": [9, 10, 11],
+        "months": [
+          9,
+          10,
+          11
+        ],
         "kind": "fruit",
         "label": "upright barrel cones that sit on the branches like eggs"
       },
@@ -270,7 +288,11 @@
       },
       "story": "A few meters from Villa Celimontana's Aleppo pine grows its opposite in almost every way: straight where the pine leans, dense and dark where the pine is sparse, native to a mountain range a thousand kilometers further east. This cedar of Lebanon is one of two of Rome's officially monumental trees inside the villa, both standing along Viale Cardinale Francesco Spellman near the main entrance at Piazza della Navicella. Ciriaco Mattei began turning the site's vineyards into an ornamental garden in 1572, and cedars of Lebanon, prized in noble Roman gardens for their biblical associations with endurance, show up across the city's hilltop villas from the 1600s onward. No record fixes the year this particular tree went into the ground, only its registry status as a monumental specimen for its age, dimensions and form, so this account treats its age as undocumented rather than claim a number it cannot back. The villa passed to the Italian Geographical Society in 1926 and became public parkland in 1928, and the cedar, whatever its exact age, has outlasted every institution that has owned the ground beneath it.",
       "best_time": {
-        "months": [9, 10, 11],
+        "months": [
+          9,
+          10,
+          11
+        ],
         "kind": "fruit",
         "label": "upright barrel cones that sit on the branches like eggs"
       },
@@ -284,7 +306,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Cedro_del_Libano_-_Villa_Celimontana.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Beatrice, Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3995,
+        "height": 2653
       },
       "curation_status": "flagged",
       "notes": "No source gives a planting date or age figure; the municipal registry designates it monumental without a number. Age range here is a conservative placeholder, not a sourced estimate. Pin corrected 2026-07-26: the already-approved photo's own embedded GPS (41.885192, 12.494350) places this named, identified cedar precisely; a second independent Commons photo of the same named tree by a different photographer (Albarubescens, 2019) carries an almost identical GPS reading, and a third (Piroetta, 2021) lands about 26m away, consistent with the same tree. Also cross-checked against the neighbouring Aleppo pine's (rom_009) MASAF registry point, about 20-25m away, matching this story's \"a few meters apart\" framing.",
@@ -345,7 +369,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Fitolacca_arborea_%28Phytolacca_dioica%29%2C_scalinata_del_Campidoglio%2C_Roma_%281%29.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Albarubescens, Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 4608,
+        "height": 3456
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed"
@@ -476,7 +502,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Ippocastano_vetusto%2C_Campidoglio%2C_Roma.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Albarubescens, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 4222,
+        "height": 3045
       },
       "curation_status": "flagged",
       "notes": "Sheet 01/H501/RM/12, 345cm, 20m, criteria a) age/size and f) landscape value. Roma Capitale's own monumental-tree page names it independently and places it on the right of the Cordonata on via delle Tre Pile, which is the second source for existence and location. No age published; range is a placeholder, not an estimate. Pin: the register's DMS (41 deg 53' 36,25\", 12 deg 28' 55,88\") converts to the national list's decimal figure exactly, and two Wiki Loves Monuments Italia photographs by different contributors carry embedded GPS identical to it, so the position is independently confirmed rather than register-only. Photo downloaded at 960px and viewed directly 2026-08-05: a big horse chestnut in full green leaf against blue sky, daylight, in colour, filling the left two thirds of the frame with the Capitoline balustrade behind and a cypress at the right edge; the centre band of the image is canopy, so it survives the wide card crop. Trunk is not visible (the shot looks up from the ramp), which is the one departure from the Cadiz standard; approved anyway as the best of eight candidates, the alternatives being more distant views with the Vittoriano dominating. Only Aesculus on Rome's register. best_time set to fruit rather than the April flower candles deliberately: September is one of the two thinnest months on the season shelf and the conkers on a public stair are the more useful reason to go.",
@@ -497,7 +525,11 @@
       },
       "story": "Rome's own list of monumental trees does not describe this cedar on its own. It describes it as accompanied by a monumental holm oak, and the two really do stand 70 metres apart at the same water. That phrasing is the giveaway: this tree was never meant to be looked at as a specimen. When Marcantonio IV Borghese remade the grounds in the 1780s he was buying a painting, not a collection. His architects Antonio and Mario Asprucci dug an artificial lake, put an island in it, built a small Ionic temple to Aesculapius on the island in 1786, and planted around all of it to make the view from the bank look like a landscape that had always been there. The cedar is scenery, and it is doing the job two and a half centuries later: 4.1 metres around, 22 metres tall, a flat candelabra crown leaning out over the rowing boats. Cedrus libani was the prestige tree of that generation of Roman gardens, planted in half the noble villas on this list, but most of those sit on lawns and terraces. This one has water under it, which is why it is the one people photograph.",
       "best_time": {
-        "months": [9, 10, 11],
+        "months": [
+          9,
+          10,
+          11
+        ],
         "kind": "fruit",
         "label": "upright barrel cones that sit on the branches like eggs"
       },
@@ -512,7 +544,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Cedro_del_Libano%2C_laghetto_di_Villa_Borghese.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Albarubescens, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3152,
+        "height": 4093
       },
       "curation_status": "flagged",
       "notes": "Sheet 22/H501/RM/12, 410cm, 22m. Roma Capitale's monumental-tree page names it independently and explicitly pairs it with the monumental holm oak, which is our rom_006, 70m away; that pairing is the second source and also the reason this entry exists, since it thickens an existing walk rather than adding a lonely point. No age published anywhere. The 120-200 range is a placeholder consistent with the growth-based figures the national registry calculates for comparable Roman cedars (146 years at 574cm on rom_007, about 150 at 460cm on rom_005), and the story does not state a number. Pin independently confirmed: three Commons photographs by the same Wiki Loves Monuments contributor, taken 2018, 2020 and 2022, all carry embedded GPS identical to the register coordinate to six decimals. Photo (2022) downloaded at 960px and viewed directly 2026-08-05: the whole tree in summer daylight, in colour, filling the frame above the lake basin and its iron railing, trunk and candelabra crown both readable, centre band all tree. A clean Cadiz-standard match. The 2020 file by the same author was rejected: it is a close-up of trunk and branches only. Temple of Aesculapius date (1786) and the Asprucci attribution come from the villa's standard history, not from the register.",
@@ -609,7 +643,11 @@
       "curation_status": "ai_generated",
       "story": "No cedar on Rome's monumental register is thicker than this one. Six metres around the trunk, 28 metres up, standing beside the staircase Giuseppe Valadier designed for the Casino Nobile. The surveyor who wrote its entry reached for the word guardiano.\n\nNobody knows when it was planted, and that is worth saying plainly, because the register carries a girth for it and no birth year at all. What exists instead is the estate's history. The Torlonia family bought the grounds in 1797, and the English-style landscaping that brought ornamental conifers into Roman villas came later in the nineteenth century. That puts the cedar somewhere between 150 and 220 years old, which is an inference from the garden rather than a date from a document.\n\nIts neighbours have been unusual. The park holds a pink granite obelisk the cedar now rivals for height, a mock-medieval house covered in owls, and from 1925 to 1943 Mussolini, who rented the whole estate as his private residence for a token sum. The villa was occupied, then left to fall apart for decades, then repaired and opened as a public park. The cedar came through all of it standing where it stands now. Roma Capitale's own description of the villa calls it colossal, which for once is not municipal enthusiasm. It was measured again in March 2026 and found in good health.",
       "best_time": {
-        "months": [9, 10, 11],
+        "months": [
+          9,
+          10,
+          11
+        ],
         "kind": "fruit",
         "label": "upright barrel cones that sit on the branches like eggs"
       },

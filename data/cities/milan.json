@@ -117,7 +117,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Celtis_australis_-_Giardini_Pubblici_-_Milano.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Sordelli, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 6000,
+        "height": 4724
       },
       "curation_status": "flagged",
       "notes": "The 164-year age figure comes from RAMI's registry only; the second source (comune.milano.it) confirms species, location and monumental status but not that specific number, so the age is flagged as single-sourced.",
@@ -189,7 +191,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Catalpa_guastalla.jpg",
         "license": "CC BY-SA 3.0",
         "attribution": "Fontema, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 2560,
+        "height": 1920
       },
       "curation_status": "flagged",
       "notes": "The 136-year age figure comes from RAMI's registry only; independent sources confirm the tree, species and garden history but not that specific figure, so it is flagged as single-sourced.",
@@ -227,7 +231,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Quercia_rossa_di_Porta_Ticinese.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Saggittarius A, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3456,
+        "height": 4004
       },
       "curation_status": "ai_generated",
       "notes": "The 'oldest tree in Milan' superlative repeated in some local press is not adopted here, per hard rule 8: the ginkgo pair at the Orto Botanico di Brera (mil_004) is considerably older and better documented. The 1924 planting/memorial story is corroborated by two independent press sources plus RAMI's registry entry.",
@@ -265,7 +271,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Parco_Trotter%2C_quercia_rossa_centenaria.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Carlo Dell'Orto, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 2735,
+        "height": 4103
       },
       "curation_status": "ai_generated",
       "notes": "Photo fetched and viewed directly 2026-07-28: a tall, mature tree with a substantial trunk towering over a park path with children and bicycles, the filename itself naming this exact park and species ('Parco Trotter, quercia rossa centenaria', centenarian red oak), consistent with this entry's own description of the tallest tree on the list.",
@@ -331,7 +339,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Platano_comune_a01.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Alberto Panzani, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 2594,
+        "height": 6016
       },
       "curation_status": "flagged",
       "notes": "Genuine age dispute between a 2013 dendrochronological core sample (about 187 years) and the popular Napoleonic-era legend (over 250 years); presented as a range with the scientific figure given more weight, per hard rule 8/P7. This is a different, still-living tree from the similarly aged plane at Villa Litta (also in Affori), which was felled in 2015 after a fungal disease; only a trunk cross-section of that one survives, noted in this city's FAQ rather than listed as a tree to visit. Pin corrected 2026-07-28, about 490m: Italy's volunteer-run RAMI tree registry (ilregistrodeglialberi.it) names this exact tree 'Platano di Affori' at Via Astesani, and OpenStreetMap/Nominatim independently geocodes 'Via Astesani, Affori' to within about 7m of RAMI's own coordinate, two independent sources converging tightly. Upgraded to confirmed.",
@@ -368,7 +378,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Noce_del_Caucaso_parco_Sempione_Milano.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Carlodell, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 2900,
+        "height": 1635
       },
       "curation_status": "flagged",
       "notes": "No age or planting date documented anywhere found; age range is a wide, honest estimate from trunk girth and the park's 1893 redesign, not a measured figure.",
@@ -437,7 +449,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Platano_comune_%283%29.jpg",
         "license": "CC BY-SA 3.0",
         "attribution": "Sordelli, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3307,
+        "height": 5000
       },
       "curation_status": "flagged",
       "notes": "Two independent sources on existence, species and size: the Comune di Milano's own monumental-tree page (VTA inventory 43474, height 30 m, diameter at breast height 160 cm) and the national MASAF register (Platanus acerifolia, Giardini Indro Montanelli, girth 483 cm, height 32 m). Neither gives an age, and no planting record survives for this park, so the range is an honest estimate from girth alone. Pin is approximate on purpose: the two sources agree on latitude to five decimals but their longitudes sit about 165 m apart (register 9.200014, comune 9.197869), so the tree is somewhere along that line in the northern half of the gardens. Distinct from mil_002, the much wider 'grande' plane (830 cm girth) about 260 m south.",
@@ -474,7 +488,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Pterocarya_fraxinifolia_-_Giardini_Pubblici_-_Milano.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Sordelli, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 5096,
+        "height": 4967
       },
       "curation_status": "flagged",
       "notes": "Existence, species and size from the national MASAF register (Pterocarya fraxinifolia, Giardini Indro Montanelli, girth 550 cm, height 20 m). The second source is the Comune di Milano's monumental-tree page for the Parco Sempione wingnut, which names this tree by the city's own inventory number ('Assieme a quella dei Giardini Montanelli, Pterocaria VTA 36443, e la pterocaria piu datata tra quelle presenti in citta'), confirming both its existence and its standing as one of the two oldest of its species in the city. No age figure exists anywhere; the range is an honest estimate from girth. Only one source publishes a coordinate, so the pin stays approximate. Photo downloaded and viewed at 960px this pass and approved against the Cadiz standard: the tree fills the frame in flat May daylight, the broad low crown and the multi-stemmed base are both readable, and the centre band of the card crop is all tree. Its description reads 'Caucasian wingnut, Giardini Pubblici, Milano' and its photographer, Sordelli, also took the hackberry photo already published on mil_003 in this same park; the file carries no geotag, but the register lists only one wingnut in these gardens, so the identification is safe. NOTE for a later pass: mil_010's story calls the Sempione wingnut's companion 'a companion specimen nearby', which the comune source shows is this tree, 1.6 km away in a different park, not a neighbour.",

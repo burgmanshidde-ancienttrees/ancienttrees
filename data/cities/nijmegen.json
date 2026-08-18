@@ -77,7 +77,9 @@
       "access": "Free, public park, open daily",
       "transport": "Central Nijmegen; 10 minute walk from Nijmegen railway station",
       "best_time": {
-        "months": [11],
+        "months": [
+          11
+        ],
         "label": "November, when the ginkgo turns gold",
         "kind": "autumn colour"
       },
@@ -111,7 +113,10 @@
       "access": "Free, public park, open daily",
       "transport": "South Nijmegen, Brakkenstein; near Radboud University and Radboudumc, reachable by bus along Heyendaalseweg",
       "best_time": {
-        "months": [10, 11],
+        "months": [
+          10,
+          11
+        ],
         "label": "October and November, when the beech leaves turn copper before they fall",
         "kind": "autumn colour"
       },
@@ -153,7 +158,14 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "approximate",
-      "best_time": { "months": [9, 10], "label": "September and October, when the conkers ripen and fall", "kind": "fruit" }
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September and October, when the conkers ripen and fall",
+        "kind": "fruit"
+      }
     },
     {
       "id": "nij_005",

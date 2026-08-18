@@ -1,153 +1,155 @@
 {
- "city": "Braga",
- "country": "Portugal",
- "status": "needs_curation",
- "intro": "Braga's oldest tree is North American: a tulip tree of about 285 years in the baroque garden of the Palacio dos Biscainhos, now the city museum, and one of ten finalists for Portugal's Tree of the Year in 2026. Out at Santa Tecla, a cork oak and a group of three oaks share one square and were protected in the same act in 2012. At the foot of the Bom Jesus funicular, an oak and a plane both carry the same official name, the tree of the embrace.",
- "meta_description": "Braga's protected trees: a 285-year-old tulip tree at the Biscainhos museum, a cork oak and three oaks at Santa Tecla, and the Trees of the Embrace.",
- "question_meta": "Braga's oldest tree is the tulip tree in the Biscainhos garden, about 285 years old and a 2026 Tree of the Year finalist. Where it stands, plus three more.",
- "question_answer": "The oldest tree in Braga is the tulip tree in the garden of the Palacio dos Biscainhos, at roughly 285 years. That figure is solid by the standards of this page: Portugal's register of trees of public interest dated it to 270 years when it measured it in 2010, and newspaper coverage of its 2026 Tree of the Year nomination independently places the planting in the reign of Joao V, who died in 1750. Nothing else in the city is close. The cork oak at Santa Tecla is about 165 years old, the oak and plane at the Bom Jesus funicular around 115, and the three oaks sharing the Santa Tecla square around a century.",
- "question_context": "Every age on this page starts in the same place, Portugal's national register of trees of public interest, which records an age at the moment of measurement rather than a running figure. All four of these entries were classified in 2010 or 2011, so the years since have been added and the result rounded, which is why the numbers read as approximate. Where local reporting gives a different height or crown spread, as it does for the tulip tree, both figures are stated rather than reconciled. Two of the four entries cover more than one tree, because the register itself lists them that way: the three oaks of Santa Tecla are a single grouped classification, and the oak and plane at Bom Jesus share one registered name. All four are free to visit and none is gated, though the Biscainhos garden keeps museum hours and closes on Mondays. Two further classified trees stand in the walled grounds of the Mosteiro de Tibaes, which are closed to visitors while building works run.",
- "faq": [
-  {
-   "q": "What is the oldest tree in Braga?",
-   "a": "The tulip tree in the garden of the Palacio dos Biscainhos, at around 285 years. The national register dated it to 270 years in 2010, and it was a finalist for Portugal's Tree of the Year in 2026."
-  },
-  {
-   "q": "Are Braga's protected trees free to visit?",
-   "a": "Yes. The Biscainhos garden is free to enter, though it keeps museum hours and closes on Mondays; the palace's indoor exhibit is a separate ticket you do not need to see the tree. Santa Tecla and the Bom Jesus funicular station are open public ground at any hour."
-  },
-  {
-   "q": "Why are two trees called the Trees of the Embrace?",
-   "a": "Both an oak and a plane at the Bom Jesus funicular station carry that name, arvore do Abraco, in their own official register entries, classified together in 2010. No source we have found explains where the name came from. If you know, tell us."
-  },
-  {
-   "q": "Can I see them all in one walk?",
-   "a": "No. These are three separate stops. The Biscainhos garden is in the centre, Santa Tecla is about 1.5 kilometres east, roughly a 25 minute walk, and the Bom Jesus funicular is 5 kilometres out and served by city bus."
-  }
- ],
- "hero_tree_id": "brg_001",
- "oldest_tree_id": "brg_001",
- "trees": [
-  {
-   "id": "brg_001",
-   "name": "The Tulip Tree of Biscainhos",
-   "species": "Tulip Tree (Liriodendron tulipifera)",
-   "age_estimate": "roughly 285 years",
-   "age_min": 270,
-   "age_max": 300,
-   "location": {
-    "address": "Jardim do Palacio dos Biscainhos, Rua dos Biscainhos, Braga",
-    "latitude": 41.5509,
-    "longitude": -8.4303,
-    "neighbourhood": "UF Braga (Maximinos, Se e Cividade)"
-   },
-   "story": "Portugal shortlisted this tree for its Tree of the Year in 2026, one of ten finalists nationally. It is a tulip tree, Liriodendron tulipifera, native to the eastern United States, and the coverage of that shortlist calls it the largest of its kind in the country.\n\nThe measurements depend on who took them. Portugal's register of trees of public interest recorded 6.5 metres round the trunk, 27.4 metres tall and a crown of 18 metres when it classified the tree in 2010. The 2026 reporting gives 30 metres and 19. Both are plausible for a tree that has kept growing, and neither is picked here as the winner.\n\nAge is firmer. The register put it at 270 years at that 2010 measurement, which makes it roughly 285 now, and the newspaper coverage places the planting in the reign of Joao V, who died in 1750. It went into the baroque garden of the Palacio dos Biscainhos, a hectare of formal beds, orchard and kitchen garden behind a Braga townhouse that is now the city's museum.\n\nIt was planted as one of a symmetrical pair. The other tulip tree lasted until the late 1970s; a replacement went in nearby in 1997 and is still an obviously young tree. The gap between the two is the clearest thing on the site for understanding what 285 years actually does.",
-   "how_to_recognise": "The very large one. A second, much smaller tulip tree stands nearby, planted in 1997 to replace the original's lost twin, and no visitor could mistake the two for the same age.",
-   "verified_sources": [
-    "data/registers/portugal-icnf.json (processo KNJ1/554)",
-    "https://ominho.pt/tulipeiro-de-braga-e-carvalho-da-povoa-de-lanhoso-candidatos-a-arvore-do-ano/"
-   ],
-   "access": "Free. The Biscainhos museum garden is open Tuesday to Sunday, 10:00-12:30 and 14:00-17:30 (closed Mondays and some holidays); garden entry is free, just ask at reception. The palace's indoor exhibit is a separate paid ticket (EUR 2), not needed to see the tree.",
-   "transport": "Central Braga, an easy walk from the historic centre / cathedral.",
-   "location_precision": "confirmed",
-   "curation_status": "flagged",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  },
-  {
-   "id": "brg_002",
-   "name": "The Cork Oak of Santa Tecla",
-   "species": "Cork Oak (Quercus suber)",
-   "age_estimate": "roughly 165 years",
-   "age_min": 150,
-   "age_max": 180,
-   "location": {
-    "address": "Largo de Santa Tecla, Calcada de Santa Tecla, Braga",
-    "latitude": 41.54725,
-    "longitude": -8.40855,
-    "neighbourhood": "Braga (Sao Vitor)"
-   },
-   "story": "The parish spent about six years asking before this cork oak was protected. When the classification came through they marked it on 21 March 2012, World Forest Day, with fourth-year pupils from the primary school up the road, who were handed the job of guarding it.\n\nThe national register gives the trunk 3.5 metres round, the tree 15 metres tall, and the crown 21 metres across, which is wider than the tree is high. That shape is the point of it. Largo de Santa Tecla is a square people actually use, and what a crown like that produces on a Minho summer afternoon is shade. The register dated the tree to 150 years at the 2011 measurement, so about 165 now.\n\nQuercus suber is the tree the cork industry is built on, and Portugal produces more cork than any other country. The bark is the reason: thick, spongy, fire-resistant, and it grows back after stripping, which almost no other tree manages. A cork oak standing in a public square is generally left unharvested and keeps that bark, deeply furrowed and pale, a surface that looks several sizes too big for the trunk underneath.\n\nThree oaks classified in the same act stand about sixty metres away, so the whole stop takes a minute.",
-   "how_to_recognise": "The tree with corky, deeply furrowed pale bark and evergreen leaves. The three oaks sixty metres away have smoother bark and drop their leaves in winter.",
-   "verified_sources": [
-    "data/registers/portugal-icnf.json (processo KNJ1/610)",
-    "https://correiodominho.pt/noticias/classificacao-do-sobreiro-e-carvalhos-de-santa-tecla/60375",
-    "monumentaltrees.com (French-language record, girth and height match the register exactly, used only as corroboration per the site's rules, not as a source)"
-   ],
-   "access": "Free. Stands in Largo de Santa Tecla, a public square used as a neighbourhood gathering space, open at all times.",
-   "transport": "About 1.5km from central Braga; a 20-25 minute walk, or a short bus/taxi ride.",
-   "location_precision": "confirmed",
-   "curation_status": "flagged",
-   "photo": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/%C3%81rvore_isolada_em_Santa_Tecla.jpg",
-    "license": "CC0",
-    "attribution": "Joseolgon, via Wikimedia Commons",
-    "status": "approved"
-   }
-  },
-  {
-   "id": "brg_003",
-   "name": "The Three Oaks of Santa Tecla",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "age_estimate": "around a century",
-   "age_min": 85,
-   "age_max": 115,
-   "location": {
-    "address": "Largo de Santa Tecla, Calcada de Santa Tecla, Braga",
-    "latitude": 41.5473,
-    "longitude": -8.4078,
-    "neighbourhood": "Braga (Sao Vitor)"
-   },
-   "story": "Three oaks, one entry. Portugal's register of trees of public interest classifies these as a conjunto arboreo, a single grouped listing, and gives one set of figures for all three: 2.7 metres round, 16.7 metres tall, and 85 years old when they were measured in 2011, so around a century now. It does not say which of the three the tape went round, or whether the number is an average.\n\nThey stand in the same square as the cork oak, sixty metres off, and were protected in the same act, celebrated at the same ceremony on World Forest Day in March 2012. The local paper covering it described the oaks as one of the main attractions of Largo de Santa Tecla, valued for shade in summer and for the space underneath them, which the neighbourhood uses as its own.\n\nQuercus robur is the common oak of northern Europe, and northern Portugal is near the warm edge of where it grows well. The name comes from the acorns: they hang on long stalks, peduncles, while the leaves sit almost directly on the twig, which is the reverse of the arrangement on a sessile oak and the quickest way to tell the two apart in autumn.",
-   "how_to_recognise": "The group of three deciduous oaks in the square, standing together about sixty metres from the single cork oak with the thick corky bark.",
-   "verified_sources": [
-    "data/registers/portugal-icnf.json (processo KNJ3/073)",
-    "https://correiodominho.pt/noticias/classificacao-do-sobreiro-e-carvalhos-de-santa-tecla/60375"
-   ],
-   "access": "Free. Same public square as the Cork Oak of Santa Tecla (brg_002), open at all times.",
-   "transport": "About 1.5km from central Braga; a 20-25 minute walk, or a short bus/taxi ride.",
-   "location_precision": "confirmed",
-   "curation_status": "flagged",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  },
-  {
-   "id": "brg_006",
-   "name": "The Trees of the Embrace",
-   "species": "Pedunculate Oak and London Plane (Quercus robur, Platanus x acerifolia)",
-   "age_estimate": "around a century",
-   "age_min": 90,
-   "age_max": 120,
-   "location": {
-    "address": "Estacao do Elevador do Bom Jesus do Monte, Braga",
-    "latitude": 41.5543,
-    "longitude": -8.3809,
-    "neighbourhood": "UF Nogueiro e Tenoes"
-   },
-   "story": "An oak and a plane standing twenty metres apart at the foot of the Bom Jesus funicular are registered under the same name: arvore do Abraco, the tree of the embrace. That is not a nickname picked up from a guidebook. It is written into each tree's own entry in Portugal's register of trees of public interest, and both were classified on the same day in July 2010.\n\nWhat nobody has written down is why. No source we have found explains the name: whether the two crowns once met over the path, whether it belongs to a story attached to the sanctuary on the hill above, or whether it is simply what people in Tenoes have always called them. If you know where the name comes from, tell us and it goes on the page.\n\nBoth trees were put at 100 years old when they were measured in 2010, which makes them around 115 now. The oak is the heavier of the two, 3.7 metres round with a crown almost 25 metres across; the plane is slimmer at 2.55 metres and marginally the taller at 26.\n\nThey stand at the station of the Elevador do Bom Jesus, the water-counterbalanced funicular that has hauled pilgrims up to the sanctuary since 1882. Looking at the trees costs nothing. The ride is a separate ticket.",
-   "how_to_recognise": "Two trees of different species, twenty metres apart by the funicular station. The heavier one with the wide spreading crown is the oak; the taller with mottled, flaking bark is the plane.",
-   "verified_sources": [
-    "data/registers/portugal-icnf.json (processo KNJ1/558 and KNJ1/559)",
-    "https://ominho.pt/braga-tem-oito-arvores-antigas-de-interesse-publico-esta-tem-27-metros-e-270-anos/"
-   ],
-   "access": "Free. Standing at the funicular (Elevador do Bom Jesus) station, a public spot at the base of the Bom Jesus do Monte sanctuary hill, open at all times; the funicular itself is a separate paid ride up the hill and not needed to see the trees.",
-   "transport": "About 5km east of central Braga; city bus to Bom Jesus do Monte, then a short walk to the funicular station.",
-   "location_precision": "confirmed",
-   "curation_status": "flagged",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  }
- ]
+  "city": "Braga",
+  "country": "Portugal",
+  "status": "needs_curation",
+  "intro": "Braga's oldest tree is North American: a tulip tree of about 285 years in the baroque garden of the Palacio dos Biscainhos, now the city museum, and one of ten finalists for Portugal's Tree of the Year in 2026. Out at Santa Tecla, a cork oak and a group of three oaks share one square and were protected in the same act in 2012. At the foot of the Bom Jesus funicular, an oak and a plane both carry the same official name, the tree of the embrace.",
+  "meta_description": "Braga's protected trees: a 285-year-old tulip tree at the Biscainhos museum, a cork oak and three oaks at Santa Tecla, and the Trees of the Embrace.",
+  "question_meta": "Braga's oldest tree is the tulip tree in the Biscainhos garden, about 285 years old and a 2026 Tree of the Year finalist. Where it stands, plus three more.",
+  "question_answer": "The oldest tree in Braga is the tulip tree in the garden of the Palacio dos Biscainhos, at roughly 285 years. That figure is solid by the standards of this page: Portugal's register of trees of public interest dated it to 270 years when it measured it in 2010, and newspaper coverage of its 2026 Tree of the Year nomination independently places the planting in the reign of Joao V, who died in 1750. Nothing else in the city is close. The cork oak at Santa Tecla is about 165 years old, the oak and plane at the Bom Jesus funicular around 115, and the three oaks sharing the Santa Tecla square around a century.",
+  "question_context": "Every age on this page starts in the same place, Portugal's national register of trees of public interest, which records an age at the moment of measurement rather than a running figure. All four of these entries were classified in 2010 or 2011, so the years since have been added and the result rounded, which is why the numbers read as approximate. Where local reporting gives a different height or crown spread, as it does for the tulip tree, both figures are stated rather than reconciled. Two of the four entries cover more than one tree, because the register itself lists them that way: the three oaks of Santa Tecla are a single grouped classification, and the oak and plane at Bom Jesus share one registered name. All four are free to visit and none is gated, though the Biscainhos garden keeps museum hours and closes on Mondays. Two further classified trees stand in the walled grounds of the Mosteiro de Tibaes, which are closed to visitors while building works run.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Braga?",
+      "a": "The tulip tree in the garden of the Palacio dos Biscainhos, at around 285 years. The national register dated it to 270 years in 2010, and it was a finalist for Portugal's Tree of the Year in 2026."
+    },
+    {
+      "q": "Are Braga's protected trees free to visit?",
+      "a": "Yes. The Biscainhos garden is free to enter, though it keeps museum hours and closes on Mondays; the palace's indoor exhibit is a separate ticket you do not need to see the tree. Santa Tecla and the Bom Jesus funicular station are open public ground at any hour."
+    },
+    {
+      "q": "Why are two trees called the Trees of the Embrace?",
+      "a": "Both an oak and a plane at the Bom Jesus funicular station carry that name, arvore do Abraco, in their own official register entries, classified together in 2010. No source we have found explains where the name came from. If you know, tell us."
+    },
+    {
+      "q": "Can I see them all in one walk?",
+      "a": "No. These are three separate stops. The Biscainhos garden is in the centre, Santa Tecla is about 1.5 kilometres east, roughly a 25 minute walk, and the Bom Jesus funicular is 5 kilometres out and served by city bus."
+    }
+  ],
+  "hero_tree_id": "brg_001",
+  "oldest_tree_id": "brg_001",
+  "trees": [
+    {
+      "id": "brg_001",
+      "name": "The Tulip Tree of Biscainhos",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "age_estimate": "roughly 285 years",
+      "age_min": 270,
+      "age_max": 300,
+      "location": {
+        "address": "Jardim do Palacio dos Biscainhos, Rua dos Biscainhos, Braga",
+        "latitude": 41.5509,
+        "longitude": -8.4303,
+        "neighbourhood": "UF Braga (Maximinos, Se e Cividade)"
+      },
+      "story": "Portugal shortlisted this tree for its Tree of the Year in 2026, one of ten finalists nationally. It is a tulip tree, Liriodendron tulipifera, native to the eastern United States, and the coverage of that shortlist calls it the largest of its kind in the country.\n\nThe measurements depend on who took them. Portugal's register of trees of public interest recorded 6.5 metres round the trunk, 27.4 metres tall and a crown of 18 metres when it classified the tree in 2010. The 2026 reporting gives 30 metres and 19. Both are plausible for a tree that has kept growing, and neither is picked here as the winner.\n\nAge is firmer. The register put it at 270 years at that 2010 measurement, which makes it roughly 285 now, and the newspaper coverage places the planting in the reign of Joao V, who died in 1750. It went into the baroque garden of the Palacio dos Biscainhos, a hectare of formal beds, orchard and kitchen garden behind a Braga townhouse that is now the city's museum.\n\nIt was planted as one of a symmetrical pair. The other tulip tree lasted until the late 1970s; a replacement went in nearby in 1997 and is still an obviously young tree. The gap between the two is the clearest thing on the site for understanding what 285 years actually does.",
+      "how_to_recognise": "The very large one. A second, much smaller tulip tree stands nearby, planted in 1997 to replace the original's lost twin, and no visitor could mistake the two for the same age.",
+      "verified_sources": [
+        "data/registers/portugal-icnf.json (processo KNJ1/554)",
+        "https://ominho.pt/tulipeiro-de-braga-e-carvalho-da-povoa-de-lanhoso-candidatos-a-arvore-do-ano/"
+      ],
+      "access": "Free. The Biscainhos museum garden is open Tuesday to Sunday, 10:00-12:30 and 14:00-17:30 (closed Mondays and some holidays); garden entry is free, just ask at reception. The palace's indoor exhibit is a separate paid ticket (EUR 2), not needed to see the tree.",
+      "transport": "Central Braga, an easy walk from the historic centre / cathedral.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "brg_002",
+      "name": "The Cork Oak of Santa Tecla",
+      "species": "Cork Oak (Quercus suber)",
+      "age_estimate": "roughly 165 years",
+      "age_min": 150,
+      "age_max": 180,
+      "location": {
+        "address": "Largo de Santa Tecla, Calcada de Santa Tecla, Braga",
+        "latitude": 41.54725,
+        "longitude": -8.40855,
+        "neighbourhood": "Braga (Sao Vitor)"
+      },
+      "story": "The parish spent about six years asking before this cork oak was protected. When the classification came through they marked it on 21 March 2012, World Forest Day, with fourth-year pupils from the primary school up the road, who were handed the job of guarding it.\n\nThe national register gives the trunk 3.5 metres round, the tree 15 metres tall, and the crown 21 metres across, which is wider than the tree is high. That shape is the point of it. Largo de Santa Tecla is a square people actually use, and what a crown like that produces on a Minho summer afternoon is shade. The register dated the tree to 150 years at the 2011 measurement, so about 165 now.\n\nQuercus suber is the tree the cork industry is built on, and Portugal produces more cork than any other country. The bark is the reason: thick, spongy, fire-resistant, and it grows back after stripping, which almost no other tree manages. A cork oak standing in a public square is generally left unharvested and keeps that bark, deeply furrowed and pale, a surface that looks several sizes too big for the trunk underneath.\n\nThree oaks classified in the same act stand about sixty metres away, so the whole stop takes a minute.",
+      "how_to_recognise": "The tree with corky, deeply furrowed pale bark and evergreen leaves. The three oaks sixty metres away have smoother bark and drop their leaves in winter.",
+      "verified_sources": [
+        "data/registers/portugal-icnf.json (processo KNJ1/610)",
+        "https://correiodominho.pt/noticias/classificacao-do-sobreiro-e-carvalhos-de-santa-tecla/60375",
+        "monumentaltrees.com (French-language record, girth and height match the register exactly, used only as corroboration per the site's rules, not as a source)"
+      ],
+      "access": "Free. Stands in Largo de Santa Tecla, a public square used as a neighbourhood gathering space, open at all times.",
+      "transport": "About 1.5km from central Braga; a 20-25 minute walk, or a short bus/taxi ride.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/%C3%81rvore_isolada_em_Santa_Tecla.jpg",
+        "license": "CC0",
+        "attribution": "Joseolgon, via Wikimedia Commons",
+        "status": "approved",
+        "width": 4000,
+        "height": 3000
+      }
+    },
+    {
+      "id": "brg_003",
+      "name": "The Three Oaks of Santa Tecla",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "around a century",
+      "age_min": 85,
+      "age_max": 115,
+      "location": {
+        "address": "Largo de Santa Tecla, Calcada de Santa Tecla, Braga",
+        "latitude": 41.5473,
+        "longitude": -8.4078,
+        "neighbourhood": "Braga (Sao Vitor)"
+      },
+      "story": "Three oaks, one entry. Portugal's register of trees of public interest classifies these as a conjunto arboreo, a single grouped listing, and gives one set of figures for all three: 2.7 metres round, 16.7 metres tall, and 85 years old when they were measured in 2011, so around a century now. It does not say which of the three the tape went round, or whether the number is an average.\n\nThey stand in the same square as the cork oak, sixty metres off, and were protected in the same act, celebrated at the same ceremony on World Forest Day in March 2012. The local paper covering it described the oaks as one of the main attractions of Largo de Santa Tecla, valued for shade in summer and for the space underneath them, which the neighbourhood uses as its own.\n\nQuercus robur is the common oak of northern Europe, and northern Portugal is near the warm edge of where it grows well. The name comes from the acorns: they hang on long stalks, peduncles, while the leaves sit almost directly on the twig, which is the reverse of the arrangement on a sessile oak and the quickest way to tell the two apart in autumn.",
+      "how_to_recognise": "The group of three deciduous oaks in the square, standing together about sixty metres from the single cork oak with the thick corky bark.",
+      "verified_sources": [
+        "data/registers/portugal-icnf.json (processo KNJ3/073)",
+        "https://correiodominho.pt/noticias/classificacao-do-sobreiro-e-carvalhos-de-santa-tecla/60375"
+      ],
+      "access": "Free. Same public square as the Cork Oak of Santa Tecla (brg_002), open at all times.",
+      "transport": "About 1.5km from central Braga; a 20-25 minute walk, or a short bus/taxi ride.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "brg_006",
+      "name": "The Trees of the Embrace",
+      "species": "Pedunculate Oak and London Plane (Quercus robur, Platanus x acerifolia)",
+      "age_estimate": "around a century",
+      "age_min": 90,
+      "age_max": 120,
+      "location": {
+        "address": "Estacao do Elevador do Bom Jesus do Monte, Braga",
+        "latitude": 41.5543,
+        "longitude": -8.3809,
+        "neighbourhood": "UF Nogueiro e Tenoes"
+      },
+      "story": "An oak and a plane standing twenty metres apart at the foot of the Bom Jesus funicular are registered under the same name: arvore do Abraco, the tree of the embrace. That is not a nickname picked up from a guidebook. It is written into each tree's own entry in Portugal's register of trees of public interest, and both were classified on the same day in July 2010.\n\nWhat nobody has written down is why. No source we have found explains the name: whether the two crowns once met over the path, whether it belongs to a story attached to the sanctuary on the hill above, or whether it is simply what people in Tenoes have always called them. If you know where the name comes from, tell us and it goes on the page.\n\nBoth trees were put at 100 years old when they were measured in 2010, which makes them around 115 now. The oak is the heavier of the two, 3.7 metres round with a crown almost 25 metres across; the plane is slimmer at 2.55 metres and marginally the taller at 26.\n\nThey stand at the station of the Elevador do Bom Jesus, the water-counterbalanced funicular that has hauled pilgrims up to the sanctuary since 1882. Looking at the trees costs nothing. The ride is a separate ticket.",
+      "how_to_recognise": "Two trees of different species, twenty metres apart by the funicular station. The heavier one with the wide spreading crown is the oak; the taller with mottled, flaking bark is the plane.",
+      "verified_sources": [
+        "data/registers/portugal-icnf.json (processo KNJ1/558 and KNJ1/559)",
+        "https://ominho.pt/braga-tem-oito-arvores-antigas-de-interesse-publico-esta-tem-27-metros-e-270-anos/"
+      ],
+      "access": "Free. Standing at the funicular (Elevador do Bom Jesus) station, a public spot at the base of the Bom Jesus do Monte sanctuary hill, open at all times; the funicular itself is a separate paid ride up the hill and not needed to see the trees.",
+      "transport": "About 5km east of central Braga; city bus to Bom Jesus do Monte, then a short walk to the funicular station.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
 }

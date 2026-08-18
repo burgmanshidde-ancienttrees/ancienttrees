@@ -47,11 +47,19 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/%EC%84%9C%EC%9A%B8_%EB%AC%B8%EB%AC%98_%EC%9D%80%ED%96%89%EB%82%98%EB%AC%B4_%281%29.jpg",
         "license": "KOGL Type 1",
         "attribution": "Cultural Heritage Administration of Korea, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 600,
+        "height": 800
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "best_time": { "months": [11], "kind": "autumn colour", "label": "mid-to-late November, when the canopy turns gold" }
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "mid-to-late November, when the canopy turns gold"
+      }
     },
     {
       "id": "seo_002",
@@ -78,7 +86,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Korea-Seoul-Changdeokgung-Chinese_Juniper-01.jpg",
         "license": "CC BY 2.0",
         "attribution": "karendotcom127, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 1536,
+        "height": 2048
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed"
@@ -108,11 +118,19 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Banghakdongginkotree.jpg",
         "license": "CC BY-SA 3.0",
         "attribution": "Mechurii, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 1024,
+        "height": 1024
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "best_time": { "months": [11], "kind": "autumn colour", "label": "November, when its huge crown turns bright yellow" }
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "November, when its huge crown turns bright yellow"
+      }
     },
     {
       "id": "seo_004",
@@ -134,7 +152,12 @@
       ],
       "access": "Free, visible from the street and the Constitutional Court's public front garden.",
       "transport": "Anguk Station (Line 3), Exit 1, about a 5 minute walk.",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "flagged",
       "location_precision": "confirmed"
     },
@@ -158,10 +181,21 @@
       ],
       "access": "Free, standing at a public road intersection.",
       "transport": "Geumcheon-gu Office Station (Line 1), then village bus Geumcheon-01 to the Ginkgo Tree stop, 2 minute walk.",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "best_time": { "months": [11], "kind": "autumn colour", "label": "November, when all the ginkgos on the intersection turn gold together" }
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "November, when all the ginkgos on the intersection turn gold together"
+      }
     },
     {
       "id": "seo_006",
@@ -187,11 +221,19 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/%EC%84%9C%EC%9A%B8_%ED%99%94%EC%96%91%EB%8F%99_%EB%8A%90%ED%8B%B0%EB%82%98%EB%AC%B4.jpg",
         "license": "KOGL Type 1",
         "attribution": "Cultural Heritage Administration of Korea, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 1200,
+        "height": 1051
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "best_time": { "months": [11], "kind": "autumn colour", "label": "November, when the crown turns a deep orange-brown" }
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "November, when the crown turns a deep orange-brown"
+      }
     },
     {
       "id": "seo_007",
@@ -218,7 +260,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/%EC%84%9C%EC%9A%B8_%EC%8B%A0%EB%A6%BC%EB%8F%99_%EA%B5%B4%EC%B0%B8%EB%82%98%EB%AC%B4.jpg",
         "license": "KOGL Type 1",
         "attribution": "Cultural Heritage Administration of Korea, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 600,
+        "height": 800
       },
       "curation_status": "flagged",
       "location_precision": "approximate"
@@ -244,10 +288,22 @@
       ],
       "access": "Free, in the main courtyard of Jogyesa Temple, open daily.",
       "transport": "Jonggak Station (Line 1), Exit 2, about a 5 minute walk.",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "ai_generated",
       "location_precision": "approximate",
-      "best_time": { "months": [7, 8], "kind": "flowers", "label": "July and August, when it drapes the courtyard in cream-colored flower clusters" }
+      "best_time": {
+        "months": [
+          7,
+          8
+        ],
+        "kind": "flowers",
+        "label": "July and August, when it drapes the courtyard in cream-colored flower clusters"
+      }
     }
   ]
 }
