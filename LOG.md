@@ -18,6 +18,18 @@ Written by the workflow's Run health step, not by the run. 0.0 minutes of its 12
 
 This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
 
+## 2026-08-18 (session) - The menu, investigated properly this time
+
+Hidde: "ik vind t menu nog steeds niet kloppen, onderzoek het en maak het beter." Opened at 375px and on desktop and found three faults rather than guessing at one.
+
+**The map had left the phone navigation entirely.** Fixing the bar overflow earlier took two cuts where one would do: dropping the wordmark saved 115px and fixed it on its own, and hiding the Map link as well removed the product's core from the bar with nothing in the menu to fall back to. On a phone there was no way to reach the map from the navigation at all. That is the one that mattered and it was mine, from an hour before.
+
+**The panel read as a takeover, not a dropdown.** Nearly full width at 375px, 46px between rows, a filled circle behind every icon. Rows are the ordinary 36px now, the icons lost their chips, and the panel is capped at 15rem so the map stays visible behind it. Measured after: 192px wide, 36px rows, on both widths.
+
+**"Suggest a tree" sat under the BROWSE heading**, as though suggesting a tree were a category to browse. It sits below a rule now.
+
+On the reference, stated plainly because two of tonight's faults came from inventing instead of looking: AllTrails is behind a slider bot-check I will not solve, and Komoot's own drawer would not open for me, so the row sizing is ordinary dropdown practice rather than a copy of theirs. Their HEADER shape (mark, one pill, one menu button) is what the bar already follows, and that part I did see.
+
 ## 2026-08-18 (session, late night) - The paywall is set, and the app prep it obliges
 
 Hidde set the paywall line and left ("doe het gewoon ik ga weg"). Everything below is live and verified.
