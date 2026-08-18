@@ -12,6 +12,20 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-18 (session, evening) - Four bugs Hidde found by using it, and the walk overlay
+
+**The sheet froze when you zoomed out.** Far enough out, a city page swaps its list for a "Cities in view" chooser, and that code hid every child of .panel except itself. Since this morning's sheet those children are the grab handle and the body, so it hid the one thing you can drag. The chooser now lives inside .sheet-body.
+
+**The photograph became a poster.** The card is drawn for a 480px panel; on a full-width page it stretched to the column. Capped at the panel's own width, everywhere.
+
+**Saved trees moved under /account.** They were a top-level menu item beside Account, which is not how Strava, AllTrails or Google Maps do it. The list lives in lib/saved-list-js.ts, /saved redirects and stays alive.
+
+**Sign-ins were silently expiring after an hour, and this was the serious one.** Supabase gives an access token good for 60 minutes and a refresh token good for far longer; we stored both and used only the first. So an hour after signing in, saves stopped reaching the account and nothing said so. Locally the heart still worked, which is why it looks fine until you open a second device. signin-js now refreshes on load and re-runs the sync.
+
+**The walking-routes pill opens an overlay instead of leaving the city.** Three lines of what the app does, one waitlist field (source `walks-modal`, so it is tellable apart from /app), the full page one tap away, and a cross that puts you back where you were. It reuses SignInModal's dialog rather than inventing a second modal shape.
+
+**The lesson underneath three of these**, and it is now in the convention memory: two were caused by not following our own component, and one by a rule that predated the sheet. Hidde's words: "onthou altijd om niet zelf te gaan experimenteren."
+
 ## 2026-08-18 (session) - /explore becomes the same page as a city page, and saved trees keep their photograph
 
 **One layout for every map page.** /explore had its own `.explore-app` / `.explore-split` / `.ex-panel` and a 38vh drawer on a phone, while the city page got a Google Maps sheet the same morning. It now uses the same skeleton and the same SHEET_JS: peek, half, full, tap the map to collapse. The prose moved into the sheet, as the city page's FAQ already was, so nothing sits below a one-screen layout where a phone cannot reach it. Verified at 375px: peek shows the title and the search field, half shows "Cities in view" and then the prose.
