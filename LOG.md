@@ -12,6 +12,27 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-18 (session, late night) - The paywall is set, and the app prep it obliges
+
+Hidde set the paywall line and left ("doe het gewoon ik ga weg"). Everything below is live and verified.
+
+**FOR HIDDE, one thing needs your hands.** `supabase/visited.sql` needs one paste into the Supabase SQL editor, exactly like saves.sql. Until it runs, the personal tree log stays as local as it is today: every request 404s, is caught, nothing breaks. After it runs, ticking off a tree survives a new phone.
+
+**The paywall line is recorded, in DECISIONS.md 2026-08-18 with your copy verbatim.** €19.95 a year, 7-day trial, four features behind it. CLAUDE.md's "still undecided" section now points there. Your instruction with it was "we moeten dit verhaal waar gaan maken", so the rest of this entry is the distance between the promise and the product, closed where it could be closed tonight.
+
+| Promise | Was | Now |
+|---|---|---|
+| Curated tree walks | data existed, reachable by nothing | `/api/walks.json`, 175 walks, 78 with a real routed shape |
+| Season Radar | fired for 383 of 1,377 trees | 546, and honestly silent on the rest |
+| Personal tree log | localStorage only, one browser | syncs to the account as a union, like saves |
+| Full offline access | feeds carry everything but photographs | unchanged; the app caches pictures itself |
+
+**Season Radar, and what it refuses to do.** 163 trees gained a peak from phenology we had already written. A species moment rated `nice` or `unseen` earns nothing, so 343 trees stayed silent on purpose: if every deciduous tree claimed a peak the badge would be lit all year and stop being a reason to go anywhere. The months carry the same latitude shift the site applies at render, since a stored best_time is read literally. The remaining 484 are species with no phenology file at all, led by Mediterranean Hackberry, Coast Redwood and Atlas Cedar. That is writing, and it is ordinary night-run work.
+
+**Also tonight, from your phone screenshots:** the nav bar overflowed by 37px so "Get the app" ran off the screen, the account control was a bare icon beside a stray caret, and two menus could stand open at once. All three fixed, and the mobile bar now follows Komoot's shape (mark, one menu button, one avatar, one pill) because AllTrails sits behind a bot check I will not solve. A photo on Sofia's Oak of Pencho Slaveykov had been a dead Commons link showing a broken frame; found by the new `scripts/photo_check.py` and retired.
+
+**And the check that answers your question about QA.** None of the four layers could see whether a page FITS a phone. The smoke test now loads six representative pages in a 375px iframe and fails the deploy if anything runs past the right edge. It caught the homepage card shelf on its first run, which turned out to be a legitimate side-scroller, so it learned to look for a scrolling ancestor first. Recorded as QA layer 3b; removing it needs you.
+
 ## 2026-08-18 (session, night) - Responsive breakage, and the check that should have existed
 
 Hidde walked the site on his own phone and found what a screenshot makes obvious and no gate had noticed. His question was the useful part: "we hebben toch een qa proces? hoe kunnen we dit voorkomen in de toekomst, loop je jezelf wel na?"
