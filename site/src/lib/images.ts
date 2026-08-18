@@ -127,13 +127,29 @@ export function imgSrcsetAttrs(url: string, widths: number[], sizes: string): st
   return `src="${esc(src)}" srcset="${esc(srcset)}" sizes="${esc(s)}"`;
 }
 
-/** Whether the licence forces a visible on-page credit (Hidde, 2026-07-29:
- * record always, display only when the licence requires it). */
+/** Does this licence legally oblige us to name somebody on the page?
+ *
+ * Only CC BY and CC BY-SA and their kin do. Everything else does not: our own
+ * photographs, CC0, public domain, the Unsplash licence, and a photograph used
+ * with the holder's written permission.
+ *
+ * This used to work the other way round, returning true unless the licence
+ * appeared on a short free-list, which put a credit under everything it did not
+ * recognise. Hidde, 2026-08-18: "stop met overal spastisch foto verwijzingen
+ * onder zetten, ook de foto die ik in de pekingtuin heb toegevoegd heeft geen
+ * referentie nodig." His own photograph of the Pekingtuin oak was captioned
+ * "Photo: Ancient Trees (Own photograph)", which is the site crediting itself.
+ *
+ * CLAUDE.md has said since 2026-07-29 that credits are recorded always and
+ * DISPLAYED only when the licence requires it. So this is a bug against an
+ * existing rule rather than a new rule, and the default belongs the other way:
+ * no credit unless something demands one. */
 export function creditRequired(licenseStr?: string | null): boolean {
   const lic = (licenseStr ?? "").toLowerCase();
-  if (!lic) return true;
-  const free = ["cc0", "public domain", "publicdomain", "unsplash", "pdm"];
-  return !free.some((f) => lic.includes(f));
+  if (!lic) return false;
+  if (lic.includes("cc0") || lic.includes("public domain") || lic.includes("publicdomain")) return false;
+  return /\bcc[ -]?by\b/.test(lic) || lic.includes("attribution")
+      || lic.includes("share-alike") || lic.includes("sharealike");
 }
 
 export interface Photo {
