@@ -75,101 +75,103 @@ Search Console, the last 10 days Google will give us (its data lags 2-3 days, so
 
 **Depth is allowed on these cities** (10+ impressions in the window; photos, pins and best_time go here and nowhere else):
 
-| City | Clicks | Impressions | CTR | Position | Normal at that position |
-|---|---:|---:|---:|---:|---:|
-| rome | 3 | 199 | 1.5% | 15.2 | 1.2% |
-| palermo | 2 | 177 | 1.1% | 9.8 | 2.6% |
-| amsterdam | 2 | 146 | 1.4% | 12.4 | 1.7% |
-| barcelona | 4 | 140 | 2.9% | 8.3 | 3.3% |
-| prague | 6 | 131 | 4.6% | 7.9 | 3.5% |
-| lisbon | 1 | 115 | 0.9% | 11.2 | 2.1% |
-| vienna | 8 | 114 | 7.0% | 9.5 | 2.7% |
-| london | 0 | 113 | 0.0% | 21.0 | 0.8% |
-| bath | 1 | 105 | 1.0% | 8.6 | 3.2% |
-| cambridge | 0 | 96 | 0.0% | 30.4 | 0.4% |
-| paris | 5 | 94 | 5.3% | 21.0 | 0.8% |
-| boston | 0 | 92 | 0.0% | 15.5 | 1.2% |
-| florence | 0 | 91 | 0.0% | 9.9 | 2.5% |
-| malaga | 0 | 89 | 0.0% | 19.9 | 0.8% |
-| new-york | 3 | 88 | 3.4% | 16.5 | 1.1% |
-| dublin | 6 | 85 | 7.1% | 14.2 | 1.4% |
-| istanbul | 1 | 77 | 1.3% | 12.7 | 1.7% |
-| naples | 0 | 77 | 0.0% | 7.9 | 3.6% |
-| brussels | 1 | 73 | 1.4% | 21.8 | 0.7% |
-| singapore | 1 | 70 | 1.4% | 14.9 | 1.2% |
-| budapest | 1 | 69 | 1.4% | 9.4 | 2.8% |
-| geneva | 0 | 69 | 0.0% | 11.0 | 2.1% |
-| washington-dc | 2 | 64 | 3.1% | 14.0 | 1.4% |
-| valencia | 1 | 61 | 1.6% | 8.5 | 3.3% |
-| milan | 0 | 58 | 0.0% | 9.9 | 2.5% |
-| porto | 2 | 54 | 3.7% | 7.3 | 3.9% |
-| nice | 1 | 53 | 1.9% | 10.2 | 2.4% |
-| edinburgh | 1 | 51 | 2.0% | 17.5 | 1.0% |
-| bristol | 1 | 49 | 2.0% | 16.2 | 1.1% |
-| madrid | 0 | 48 | 0.0% | 7.9 | 3.6% |
-| granada | 0 | 47 | 0.0% | 12.1 | 1.8% |
-| dubrovnik | 2 | 45 | 4.4% | 6.9 | 4.1% |
-| seoul | 0 | 45 | 0.0% | 18.7 | 0.9% |
-| munich | 3 | 44 | 6.8% | 8.9 | 3.0% |
-| the-hague | 3 | 42 | 7.1% | 5.9 | 5.2% |
-| es | 0 | 42 | 0.0% | 12.4 | 1.7% |
-| copenhagen | 0 | 41 | 0.0% | 10.8 | 2.2% |
-| sintra | 2 | 40 | 5.0% | 6.7 | 4.3% |
-| antwerp | 1 | 39 | 2.6% | 15.0 | 1.2% |
-| hong-kong | 1 | 39 | 2.6% | 11.4 | 2.0% |
-| oslo | 1 | 39 | 2.6% | 10.3 | 2.4% |
-| venice | 1 | 39 | 2.6% | 7.6 | 3.7% |
-| bologna | 0 | 39 | 0.0% | 7.0 | 4.0% |
-| reykjavik | 0 | 38 | 0.0% | 13.2 | 1.6% |
-| seville | 0 | 37 | 0.0% | 7.6 | 3.7% |
-| lyon | 0 | 36 | 0.0% | 13.5 | 1.5% |
-| kyoto | 5 | 35 | 14.3% | 11.7 | 1.9% |
-| tokyo | 1 | 35 | 2.9% | 23.5 | 0.7% |
-| berlin | 0 | 33 | 0.0% | 16.2 | 1.1% |
-| athens | 2 | 32 | 6.2% | 15.4 | 1.2% |
-| bangkok | 1 | 32 | 3.1% | 10.5 | 2.3% |
-| zurich | 1 | 32 | 3.1% | 9.4 | 2.8% |
-| cadiz | 1 | 29 | 3.4% | 6.9 | 4.1% |
-| leiden | 3 | 28 | 10.7% | 12.0 | 1.8% |
-| helsinki | 1 | 28 | 3.6% | 8.4 | 3.3% |
-| krakow | 1 | 27 | 3.7% | 7.0 | 4.0% |
-| padua | 1 | 27 | 3.7% | 6.9 | 4.1% |
-| cork | 3 | 25 | 12.0% | 17.7 | 1.0% |
-| glasgow | 1 | 25 | 4.0% | 23.8 | 0.6% |
-| osaka | 0 | 25 | 0.0% | 6.9 | 4.1% |
-| oxford | 0 | 25 | 0.0% | 7.6 | 3.7% |
-| belgrade | 0 | 22 | 0.0% | 14.1 | 1.4% |
-| portland | 0 | 22 | 0.0% | 17.4 | 1.0% |
-| utrecht | 0 | 22 | 0.0% | 14.2 | 1.4% |
-| rotterdam | 0 | 19 | 0.0% | 10.4 | 2.4% |
-| turin | 1 | 18 | 5.6% | 4.8 | 7.2% |
-| haarlem | 0 | 18 | 0.0% | 46.1 | 0.4% |
-| split | 0 | 18 | 0.0% | 8.3 | 3.4% |
-| alicante | 0 | 17 | 0.0% | 6.9 | 4.1% |
-| genoa | 0 | 17 | 0.0% | 6.8 | 4.2% |
-| ljubljana | 0 | 16 | 0.0% | 4.7 | 7.3% |
-| warsaw | 0 | 16 | 0.0% | 11.1 | 2.1% |
-| groningen | 2 | 15 | 13.3% | 24.3 | 0.6% |
-| maastricht | 1 | 15 | 6.7% | 11.1 | 2.1% |
-| setubal | 0 | 15 | 0.0% | 7.9 | 3.5% |
-| palma-de-mallorca | 0 | 14 | 0.0% | 9.8 | 2.6% |
-| breda | 0 | 13 | 0.0% | 15.5 | 1.2% |
-| lucca | 0 | 13 | 0.0% | 11.7 | 1.9% |
-| nijmegen | 0 | 13 | 0.0% | 16.2 | 1.1% |
-| guimaraes | 0 | 12 | 0.0% | 8.1 | 3.5% |
-| chicago | 1 | 11 | 9.1% | 10.4 | 2.4% |
-| cordoba | 1 | 11 | 9.1% | 16.4 | 1.1% |
-| bordeaux | 0 | 11 | 0.0% | 8.0 | 3.5% |
-| caserta | 0 | 11 | 0.0% | 19.6 | 0.8% |
-| den-bosch | 0 | 11 | 0.0% | 7.4 | 3.8% |
-| portugal | 0 | 11 | 0.0% | 51.7 | 0.4% |
-| sofia | 0 | 11 | 0.0% | 5.6 | 5.7% |
-| stockholm | 0 | 11 | 0.0% | 7.8 | 3.6% |
-| zaragoza | 0 | 11 | 0.0% | 6.9 | 4.1% |
-| arnhem | 0 | 10 | 0.0% | 10.3 | 2.4% |
-| como | 0 | 10 | 0.0% | 22.3 | 0.7% |
-| strasbourg | 0 | 10 | 0.0% | 7.0 | 4.0% |
+| City | Clicks | Impressions | CTR | Position | Normal there | Biggest query, and where it really sits |
+|---|---:|---:|---:|---:|---:|---|
+| rome | 3 | 199 | 1.5% | 15.2 | 1.2% | trees in rome (i14, p22) |
+| palermo | 2 | 177 | 1.1% | 9.8 | 2.6% | palermo tree (i6, p10) |
+| amsterdam | 2 | 146 | 1.4% | 12.4 | 1.7% | amsterdam tree (i6, p13) |
+| barcelona | 4 | 140 | 2.9% | 8.3 | 3.3% | high tree barcelona (i4, p10) |
+| prague | 6 | 131 | 4.6% | 7.9 | 3.5% | four trees prague (i2, p21) |
+| lisbon | 1 | 115 | 0.9% | 11.2 | 2.1% | oldest tree in lisbon (i7, p9) |
+| vienna | 8 | 114 | 7.0% | 9.5 | 2.7% | sulzwiese (i2, p6) |
+| london | 0 | 113 | 0.0% | 21.0 | 0.8% | oldest tree in london (i3, p54) |
+| bath | 1 | 105 | 1.0% | 8.6 | 3.2% | the giant plane tree bath (i5, p10) |
+| cambridge | 0 | 96 | 0.0% | 30.4 | 0.4% | apple tree of newton (i4, p47) |
+| paris | 5 | 94 | 5.3% | 21.0 | 0.8% | paris trees (i2, p62) |
+| boston | 0 | 92 | 0.0% | 15.5 | 1.2% | boston trees (i1, p54) |
+| florence | 0 | 91 | 0.0% | 9.9 | 2.5% | florence trees (i5, p11) |
+| malaga | 0 | 89 | 0.0% | 19.9 | 0.8% | árboles históricos de málaga (i14, p74) |
+| new-york | 3 | 88 | 3.4% | 16.5 | 1.1% | ancient elm (i1, p54) |
+| dublin | 6 | 85 | 7.1% | 14.2 | 1.4% | buchanan tree (i1, p10) |
+| istanbul | 1 | 77 | 1.3% | 12.7 | 1.7% | archeologisch museum van istanbul (i1, p1) |
+| naples | 0 | 77 | 0.0% | 7.9 | 3.6% | a tree in naples (i3, p9) |
+| brussels | 1 | 73 | 1.4% | 21.8 | 0.7% | belgian tree (i5, p58) |
+| singapore | 1 | 70 | 1.4% | 14.9 | 1.2% | oldest tree in singapore (i20, p11) |
+| budapest | 1 | 69 | 1.4% | 9.4 | 2.8% | in budapest? (i1, p4) |
+| geneva | 0 | 69 | 0.0% | 11.0 | 2.1% | - |
+| washington-dc | 2 | 64 | 3.1% | 14.0 | 1.4% | survey lodge ranger station (i7, p11) |
+| valencia | 1 | 61 | 1.6% | 8.5 | 3.3% | ficus centenarios de la glorieta (i2, p10) |
+| milan | 0 | 58 | 0.0% | 9.9 | 2.5% | - |
+| porto | 2 | 54 | 3.7% | 7.3 | 3.9% | alameda dos platanos (i4, p8) |
+| nice | 1 | 53 | 1.9% | 10.2 | 2.4% | - |
+| edinburgh | 1 | 51 | 2.0% | 17.5 | 1.0% | old tree near me (i1, p68) |
+| bristol | 1 | 49 | 2.0% | 16.2 | 1.1% | bristol trees (i5, p53) |
+| madrid | 0 | 48 | 0.0% | 7.9 | 3.6% | oldest tree in madrid (i3, p15) |
+| granada | 0 | 47 | 0.0% | 12.1 | 1.8% | granada orange trees (i1, p64) |
+| dubrovnik | 2 | 45 | 4.4% | 6.9 | 4.1% | trsteno plane tree (i3, p13) |
+| seoul | 0 | 45 | 0.0% | 18.7 | 0.9% | common trees in korea (i1, p52) |
+| munich | 3 | 44 | 6.8% | 8.9 | 3.0% | - |
+| the-hague | 3 | 42 | 7.1% | 5.9 | 5.2% | juttepeer (i2, p3) |
+| es | 0 | 42 | 0.0% | 12.4 | 1.7% | árboles históricos de málaga (i4, p16) |
+| copenhagen | 0 | 41 | 0.0% | 10.8 | 2.2% | trees in copenhagen (i2, p29) |
+| sintra | 2 | 40 | 5.0% | 6.7 | 4.3% | how old is it? (i1, p3) |
+| antwerp | 1 | 39 | 2.6% | 15.0 | 1.2% | den brandt park (i2, p70) |
+| hong-kong | 1 | 39 | 2.6% | 11.4 | 2.0% | kam tin tree house (i6, p11) |
+| oslo | 1 | 39 | 2.6% | 10.3 | 2.4% | oak tree near me (i1, p3) |
+| venice | 1 | 39 | 2.6% | 7.6 | 3.7% | are there palm trees in venice italy (i2, p10) |
+| bologna | 0 | 39 | 0.0% | 7.0 | 4.0% | trees hours (i1, p11) |
+| reykjavik | 0 | 38 | 0.0% | 13.2 | 1.6% | oldest tree in iceland (i2, p8) |
+| seville | 0 | 37 | 0.0% | 7.6 | 3.7% | - |
+| lyon | 0 | 36 | 0.0% | 13.5 | 1.5% | near lyon (i1, p10) |
+| kyoto | 5 | 35 | 14.3% | 11.7 | 1.9% | kyoto tree (i6, p8) |
+| tokyo | 1 | 35 | 2.9% | 23.5 | 0.7% | - |
+| berlin | 0 | 33 | 0.0% | 16.2 | 1.1% | east berlin germany plants (i1, p77) |
+| athens | 2 | 32 | 6.2% | 15.4 | 1.2% | athens trees (i3, p9) |
+| bangkok | 1 | 32 | 3.1% | 10.5 | 2.3% | bangkok trees (i1, p9) |
+| zurich | 1 | 32 | 3.1% | 9.4 | 2.8% | zurich (i1, p2) |
+| cadiz | 1 | 29 | 3.4% | 6.9 | 4.1% | ficus cadiz (i1, p10) |
+| leiden | 3 | 28 | 10.7% | 12.0 | 1.8% | "oldest of its species" ginkgo park (i2, p6) |
+| helsinki | 1 | 28 | 3.6% | 8.4 | 3.3% | helsinki tree (i1, p8) |
+| krakow | 1 | 27 | 3.7% | 7.0 | 4.0% | - |
+| padua | 1 | 27 | 3.7% | 6.9 | 4.1% | - |
+| cork | 3 | 25 | 12.0% | 17.7 | 1.0% | trees cork (i2, p71) |
+| glasgow | 1 | 25 | 4.0% | 23.8 | 0.6% | oldest tree in glasgow (i1, p11) |
+| osaka | 0 | 25 | 0.0% | 6.9 | 4.1% | meoto kusu (i1, p7) |
+| oxford | 0 | 25 | 0.0% | 7.6 | 3.7% | - |
+| belgrade | 0 | 22 | 0.0% | 14.1 | 1.4% | - |
+| portland | 0 | 22 | 0.0% | 17.4 | 1.0% | trees in portland or (i1, p55) |
+| utrecht | 0 | 22 | 0.0% | 14.2 | 1.4% | ginkgo utrecht (i2, p8) |
+| rotterdam | 0 | 19 | 0.0% | 10.4 | 2.4% | - |
+| turin | 1 | 18 | 5.6% | 4.8 | 7.2% | - |
+| haarlem | 0 | 18 | 0.0% | 46.1 | 0.4% | noble tree (i8, p57) |
+| split | 0 | 18 | 0.0% | 8.3 | 3.4% | - |
+| alicante | 0 | 17 | 0.0% | 6.9 | 4.1% | ja (i1, p2) |
+| genoa | 0 | 17 | 0.0% | 6.8 | 4.2% | - |
+| ljubljana | 0 | 16 | 0.0% | 4.7 | 7.3% | trees ljubljana (i1, p7) |
+| warsaw | 0 | 16 | 0.0% | 11.1 | 2.1% | oldest tree in poland (i1, p53) |
+| groningen | 2 | 15 | 13.3% | 24.3 | 0.6% | trees (i2, p8) |
+| maastricht | 1 | 15 | 6.7% | 11.1 | 2.1% | - |
+| setubal | 0 | 15 | 0.0% | 7.9 | 3.5% | francisco soveral (i1, p8) |
+| palma-de-mallorca | 0 | 14 | 0.0% | 9.8 | 2.6% | mallorca trees (i1, p11) |
+| breda | 0 | 13 | 0.0% | 15.5 | 1.2% | ulvenhoutselaan (i1, p13) |
+| lucca | 0 | 13 | 0.0% | 11.7 | 1.9% | lucca tree (i3, p10) |
+| nijmegen | 0 | 13 | 0.0% | 16.2 | 1.1% | oldest tree in the netherlands (i1, p5) |
+| guimaraes | 0 | 12 | 0.0% | 8.1 | 3.5% | - |
+| chicago | 1 | 11 | 9.1% | 10.4 | 2.4% | oldest tree in chicago (i1, p7) |
+| cordoba | 1 | 11 | 9.1% | 16.4 | 1.1% | jacaranda cordoba (i1, p12) |
+| bordeaux | 0 | 11 | 0.0% | 8.0 | 3.5% | caucasian elm (i1, p9) |
+| caserta | 0 | 11 | 0.0% | 19.6 | 0.8% | douglas fir teaching garden (i1, p81) |
+| den-bosch | 0 | 11 | 0.0% | 7.4 | 3.8% | - |
+| portugal | 0 | 11 | 0.0% | 51.7 | 0.4% | portuguese trees (i2, p66) |
+| sofia | 0 | 11 | 0.0% | 5.6 | 5.7% | - |
+| stockholm | 0 | 11 | 0.0% | 7.8 | 3.6% | - |
+| zaragoza | 0 | 11 | 0.0% | 6.9 | 4.1% | - |
+| arnhem | 0 | 10 | 0.0% | 10.3 | 2.4% | - |
+| como | 0 | 10 | 0.0% | 22.3 | 0.7% | lake como tree (i2, p58) |
+| strasbourg | 0 | 10 | 0.0% | 7.0 | 4.0% | - |
+- Seen, not clicked: /rome (c0/i42, 0.0%) for trees in rome (i14, p22); rome tree (i5, p58); roman trees (i4, p27)
 - Seen, not clicked: /cambridge/newtons-apple-tree (c0/i31, 0.0%) for apple tree of newton (i4, p47); isaac newton apple tree (i3, p46); cambridge newton tree (i3, p54)
+- Seen, not clicked: /singapore/oldest-tree (c0/i21, 0.0%) for oldest tree in singapore (i20, p11); singapore national tree (i1, p3)
 
 **Who they are**
 Audience, 28 days of search (182 clicks, 8025 impressions):
