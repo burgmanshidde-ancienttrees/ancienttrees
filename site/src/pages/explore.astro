@@ -21,6 +21,7 @@ import { byCityListOrderEntry } from "../lib/city-order";
 import SignInModal from "../components/SignInModal.astro";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 import { SIGNIN_JS } from "../lib/signin-js";
+import { SHEET_JS } from "../lib/sheet-js";
 
 function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -155,21 +156,27 @@ const searchFormHtml = searchForm("explore", "ex-q", "ex-search");
 const mapScript = exploreMapScript(features, cityRows);
 const scripts = mapScript + SEARCH_WIDGET_JS;
 ---
-<Base title={title} description={description} canonical={canonical} headExtra={mapHead()}>
-<main class="explore-page">
-  <div class="explore-app">
-    <div class="explore-head">
-      <h1>The ancient tree map</h1>
-      <p>Every tree on the site, each verified, each with its story. Zoom in to a city and pick one; gold means at its best this month.</p>
-      <Fragment set:html={searchFormHtml} />
-    </div>
-    <div class="explore-split">
-      <aside id="ex-panel" class="ex-panel" aria-live="polite"></aside>
-      <div id="map" class="explore-map"></div>
+<Base title={title} description={description} canonical={canonical} headExtra={mapHead()} footer={false}>
+  <div class="split">
+    <aside class="panel" id="sheet">
+      <div class="sheet-grab">
+        <div class="panel-head">
+          <h1>The ancient tree map</h1>
+          <p class="sheet-count">Every tree on the site. Zoom in and pick one; gold means at its best this month.</p>
+          <Fragment set:html={searchFormHtml} />
+        </div>
+      </div>
+      <div class="sheet-body">
+        <div id="ex-panel" aria-live="polite"></div>
+        <div class="panel-foot">
+          <Fragment set:html={exploreProse} />
+        </div>
+      </div>
+    </aside>
+    <div class="stage">
+      <div id="map" class="map"></div>
     </div>
   </div>
-  <Fragment set:html={exploreProse} />
-</main>
-<SignInModal />
-<Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + scripts} />
+  <SignInModal />
+  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + scripts + SHEET_JS} />
 </Base>
