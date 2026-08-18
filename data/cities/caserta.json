@@ -2,8 +2,8 @@
   "city": "Caserta",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Caserta's remarkable trees are all in one place, and it is not the town. In 1786 Maria Carolina had 23 hectares at the top of the royal park turned into the first landscape garden in Italy, and John Andrew Graefer filled it with species nobody in Campania had seen. What survives is a walk of a few hundred metres past a cedar seven and three quarter metres round, a Douglas fir of forty metres, a plane that grew sideways, and a yew that was already old when it was carried in.",
-  "meta_description": "Ten monumental trees inside the English Garden of the Reggia di Caserta: a cedar 7.75 m round, a 40 m Douglas fir, and a yew older than the garden.",
+  "intro": "Caserta's remarkable trees split between two places. Most stand inside the English Garden of the Reggia, 23 hectares Maria Carolina had planted in 1786 as Italy's first landscape garden, past a cedar seven and three quarter metres round, a Douglas fir of forty metres and a plane that grew sideways. Three more stand free in Piazza Vanvitelli, the town's own square: a Chilean monkey puzzle, a casuarina and a yew, within fifty metres of each other and open at any hour.",
+  "meta_description": "Caserta's monumental trees: eleven inside the Reggia's English Garden, a cedar 7.75 m round among them, plus three free in Piazza Vanvitelli.",
   "question_meta": "Caserta's oldest tree is almost certainly the yew at the Bath of Venus, already mature when it was set in place in the 1790s.",
   "question_answer": "Caserta's oldest tree is almost certainly the European yew at the Bath of Venus, in the English Garden of the Reggia. The Campania regional register calls it one of the patriarchs of the garden and records that it was already a mature tree when it was put in place at the garden's creation in the 1790s, which puts it comfortably past 250 years even though the age field on the same record says only 150. The Douglas fir and the camphor tree a few hundred metres downhill are each given about 200 years, and no tree in Caserta has been dated by counting rings.",
   "question_context": "Every age on this page comes from one place, the Campania regional register of monumental trees, and every age on it is an eta presunta, an estimate. The national MASAF register lists the same trees with the same girths and heights but carries no age field at all, so the two agree on what stands where and only one of them says how old it is. That matters more here than in most cities, because almost nothing in this garden is native and almost nothing was planted before 1786. Maria Carolina commissioned the garden that year on the advice of Sir William Hamilton, the British ambassador in Naples, and John Andrew Graefer, the gardener sent to build it, spent a decade collecting exotics from Capri, Salento and Palermo. Under Giovanni Gussone and Nicola Terracciano it later became a working botanical garden. So most of these trees are between 150 and 240 years old, and where a register says 200 it means the first planting rather than a measurement. The park also loses trees in storms, most recently a monumental Monterey cypress in December 2019, so treat any single specimen as something to check before a long trip.",
@@ -14,11 +14,11 @@
     },
     {
       "q": "Do you have to pay to see them?",
-      "a": "Yes. All ten stand inside the English Garden of the Reggia di Caserta, which is covered by the combined Royal Park and English Garden ticket, 9 euro plus a 1 euro online fee. A 3 euro park-only ticket exists but excludes the English Garden. Closed Tuesdays."
+      "a": "For most of them. Eleven stand inside the English Garden of the Reggia di Caserta, covered by the combined Royal Park and English Garden ticket, 9 euro plus a 1 euro online fee (a 3 euro park-only ticket exists but excludes the English Garden; closed Tuesdays). The other three, a monkey puzzle, a casuarina and a yew, grow in Piazza Vanvitelli, the town's own square, free and open at any hour."
     },
     {
       "q": "Can you walk between them?",
-      "a": "Easily, once you are there. Nine of the ten sit within about 200 metres of each other in the flat southern part of the English Garden that the royal gardeners called the Palco, and the yew is 500 metres further up. Getting to the garden is the long part: it is roughly 2.5 km from the palace gate along the main axis, or take the electric shuttle."
+      "a": "Easily, in two separate walks. Inside the English Garden, nine of the eleven sit within about 200 metres of each other in the flat southern part the royal gardeners called the Palco, with the yew 500 metres further up; getting to the garden is the long part, roughly 2.5 km from the palace gate along the main axis, or take the electric shuttle. The three free trees in Piazza Vanvitelli form their own short walk, all within fifty metres of each other in the town centre."
     },
     {
       "q": "Which is the strangest?",
@@ -344,6 +344,128 @@
       "curation_status": "ai_generated",
       "notes": "MASAF sheet 44/B963/CE/15 and Campania scheda 271 agree on 720 cm girth, the second-thickest trunk in the whole Caserta register after cas_001's cedar of Lebanon (775 cm).",
       "location_precision": "approximate"
+    },
+    {
+      "id": "cas_011",
+      "name": "The Third Plane of the English Garden",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "about 150 years",
+      "age_min": 130,
+      "age_max": 200,
+      "location": {
+        "address": "Giardino Inglese, Reggia di Caserta, Viale Douhet 2/a, 81100 Caserta",
+        "latitude": 41.09184,
+        "longitude": 14.32994,
+        "neighbourhood": "Giardino Inglese"
+      },
+      "story": "Caserta's monumental register now credits this garden with three London planes, and this one is the third thickest tree in the whole city register regardless of species, five metres sixty around and thirty metres tall. Only the cedar of Lebanon by the Palco and the garden's other giant plane, near the entrance, beat it.\n\nThe English Garden was laid out for Queen Maria Carolina starting in 1786, one of the first landscape gardens of its kind on the European continent, informal and winding where the rest of the Reggia's grounds run in strict Baroque lines. Three planes surviving from roughly the same planting era says something about the site more than about any one tree: deep soil, an unbroken water supply from the garden's own network of streams and pools, and two and a half centuries without the hard pruning street planes usually get. Left alone, Platanus x acerifolia does not stay a tidy shape, it becomes what stands here, a straight trunk carrying a huge, high canopy.\n\nThe register puts its age at roughly 150 years, later than the garden's founding but still older than the unification of Italy. Free to see once inside; the garden itself is a paid section of the wider Reggia grounds.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_272.html"
+      ],
+      "access": "Paid. Inside the English Garden of the Reggia di Caserta, covered by the combined Royal Park and English Garden ticket (9 euro, plus 1 euro if booked online). Closed Tuesdays.",
+      "transport": "Caserta station faces the palace. From the park gate it is about 2.5 km up the main axis to the English Garden, or take the electric shuttle.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "MASAF sheet 45/B963/CE/15 and Campania scheda 272 agree on 560cm girth. Fourth-thickest entry in the Caserta register overall (after cas_001's cedar at 775cm and cas_010's plane at 720cm), third-thickest tree species-unspecific per the leads file's own ranking. Age taken directly from the register's stated '150 years' rather than derived from girth; band widened symmetrically since the register gives no error margin.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cas_012",
+      "name": "The Araucaria of Piazza Vanvitelli",
+      "species": "Monkey Puzzle (Araucaria araucana)",
+      "age_estimate": "over 200 years",
+      "age_min": 200,
+      "age_max": 225,
+      "location": {
+        "address": "Piazza Luigi Vanvitelli, 81100 Caserta",
+        "latitude": 41.075083,
+        "longitude": 14.332083,
+        "neighbourhood": "Caserta town centre"
+      },
+      "story": "Every other tree on this page stands behind a ticket gate. This one grows in the middle of Caserta's own civic square, free for anyone to walk up to, a Chilean monkey puzzle 330 centimetres around and 25 metres tall with the palace itself visible over its crown.\n\nPiazza Vanvitelli used to be the town's market square before it became a public garden in the late 1800s, planted in two phases and then reworked again in 1995 to recover the original specimens. Campania's own monumental register ties this tree's age directly to that first planting, putting it at over 200 years, among the oldest trees this city protects and one of the very few outside the Reggia's grounds.\n\nAraucaria araucana is native to the volcanic slopes of Chile and Argentina, its stiff, spiralled, spine-tipped leaves an adaptation against browsing dinosaurs that vanished tens of millions of years before anyone planted one in a European market square. It shares this square with a casuarina and a yew, both also on the region's monumental list, all three within fifty metres of each other on ground that costs nothing to visit.",
+      "verified_sources": [
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_48.html",
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      ],
+      "access": "Free, public square (Piazza Vanvitelli), open at all hours",
+      "transport": "Short walk east of the Reggia di Caserta, close to Caserta railway station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Girth 330cm and height 25m confirmed identically by MASAF (07/B963/CE/15) and Campania scheda 48. Age is the source's own inference ('la monumentalita e legata all'eta, riconducibile al momento della realizzazione della piazza, agli inizi dell'800'), not this project's bridge: the regional register itself ties the tree's age to the square's construction date, stated here as their claim, not sharpened beyond 'over 200 years'.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "cas_013",
+      "name": "The Casuarina of Piazza Vanvitelli",
+      "species": "Horsetail Casuarina (Casuarina equisetifolia)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 270,
+      "location": {
+        "address": "Piazza Luigi Vanvitelli, 81100 Caserta",
+        "latitude": 41.075272,
+        "longitude": 14.332242,
+        "neighbourhood": "Caserta town centre"
+      },
+      "story": "Casuarina equisetifolia looks like a conifer and is not one. The drooping, needle-like growths that give it a pine's silhouette are jointed green stems; the actual leaves are reduced to tiny scales at each joint, an adaptation from its native coastlines of Australia and the Pacific islands, where the species holds sand dunes together in wind that would strip a broadleaf tree bare. In the centre of Piazza Vanvitelli, Caserta's town square, it just looks like an unusually feathery pine.\n\nCampania's monumental register measures its trunk at 270 centimetres, close to the minimum three metre threshold the region sets for the species and, together with its 15 metre height and its age, enough to earn it protected status. Like its two square-mates, the araucaria and the yew nearby, its planting is tied to the square's own history: laid out in phases from the late nineteenth century, on ground that had been Caserta's market square before that.\n\nA casuarina this size, this far from a coastline, is a small oddity in its own right. It costs nothing to see, stands in the open square rather than behind any gate, and shares its fifty metres of ground with two other protected trees.",
+      "verified_sources": [
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_49.html",
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      ],
+      "access": "Free, public square (Piazza Vanvitelli), open at all hours",
+      "transport": "Short walk east of the Reggia di Caserta, close to Caserta railway station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Girth 270cm and height 15m confirmed identically by MASAF (08/B963/CE/15) and Campania scheda 49. No age estimate: the regional card ties the tree to the square's general planting period ('stessa periodo di realizzazione della piazza') without a number, unlike its araucaria neighbour which gets an explicit 'over 200 years'; repeating that vaguer phrasing as a number would be sharpening a vague source, which the honesty rule forbids.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "cas_014",
+      "name": "The Yew of Piazza Vanvitelli",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 270,
+      "location": {
+        "address": "Piazza Luigi Vanvitelli, 81100 Caserta, in the flower bed on the Via Alois side",
+        "latitude": 41.075377,
+        "longitude": 14.332408,
+        "neighbourhood": "Caserta town centre"
+      },
+      "story": "A European yew growing in a flower bed on the Via Alois side of Piazza Vanvitelli is easy to miss next to its two showier square-mates, the monkey puzzle and the feathery casuarina a few steps away. It is no less protected: Campania's monumental register measures its trunk at 270 centimetres, well past the 250 centimetre minimum the region sets for the species, on a tree only 12 metres tall.\n\nThat gap between girth and height is normal for a yew. The species grows slowly and thickens for centuries after most trees would have stopped, which is exactly why an unremarkable-looking specimen can carry an old trunk. The register ties this one's age to the square's own history rather than giving a number, the same reasoning it gives the araucaria and casuarina nearby: planted when Piazza Vanvitelli was first laid out as a garden, on what had been the town's market square before.\n\nFree, outdoors, and in a civic square rather than behind the Reggia's paid gate, this yew and its two neighbours are the only entries on this page that cost nothing to see.",
+      "verified_sources": [
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_50.html",
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      ],
+      "access": "Free, public square (Piazza Vanvitelli), open at all hours",
+      "transport": "Short walk east of the Reggia di Caserta, close to Caserta railway station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Girth 270cm and height 12m confirmed identically by MASAF (09/B963/CE/15) and Campania scheda 50. No age estimate: the regional card states the age 'coincide con quella della piazza' without a number; not sharpened into one.",
+      "location_precision": "confirmed"
     }
   ]
 }
