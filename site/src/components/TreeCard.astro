@@ -19,7 +19,7 @@
 // park and collection pages would put the same paragraphs on four URLs, which
 // SEO_GEO_BLUEPRINT.md's P3 forbids and Google reads as thin duplication.
 // Hence one component, one look, two text lengths.
-import { usablePhoto, imgSrcset, creditRequired } from "../lib/images";
+import { usablePhoto, imgSrcset, thumbUrl, creditRequired } from "../lib/images";
 import { bestTimeShort } from "../lib/phenology";
 import SaveHeart from "./SaveHeart.astro";
 
@@ -120,5 +120,8 @@ const metaHtml = metaParts.map(esc).join(" &middot; ") + (bestTime ?? "");
   {metaHtml && <p class="tree-meta" set:html={metaHtml} />}
   {text && <p class="tree-story">{text}</p>}
   <p class="tree-more"><a href={href}>{L.more}</a></p>
-  <SaveHeart treeId={tree.id} treeName={name} compact labelSave={L.save} labelSaved={L.saved} />
+  <SaveHeart treeId={tree.id} treeName={name} compact labelSave={L.save} labelSaved={L.saved}
+             treeUrl={href}
+             photo={photo?.url ? thumbUrl(photo.url, 500) : undefined}
+             meta={metaParts.join(" \u00b7 ") || undefined} />
 </article>

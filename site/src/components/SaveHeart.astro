@@ -8,14 +8,27 @@
 //
 // Labels ride on data attributes so the Spanish pages stay Spanish without a
 // second component (paint() reads data-l-save / data-l-saved).
+// The heart also carries what /saved needs to draw the same card the tree was
+// saved FROM (Hidde, 2026-08-18: "het is wel leuk als de saved trees of het
+// tree component altijd de foto gebruikt als die er is"). A save has always
+// stored a name and a url; it now stores the photograph and the meta line too,
+// so the saved list is the same card rather than a poorer cousin.
+//
+// treeUrl matters beyond the picture: the handler used location.pathname,
+// which is the CITY page when you save from a city list, so every tree saved
+// from a list linked back to the city instead of to itself.
 interface Props {
   treeId: string;
   treeName: string;
   compact?: boolean;
   labelSave?: string;
   labelSaved?: string;
+  treeUrl?: string;
+  photo?: string;
+  meta?: string;
 }
-const { treeId, treeName, compact = false, labelSave = "Save", labelSaved = "Saved" } = Astro.props;
+const { treeId, treeName, compact = false, labelSave = "Save", labelSaved = "Saved",
+        treeUrl, photo, meta } = Astro.props;
 ---
 <button
   class={`save-btn heart-btn${compact ? " heart-compact" : ""}`}
@@ -24,6 +37,9 @@ const { treeId, treeName, compact = false, labelSave = "Save", labelSaved = "Sav
   data-name={treeName}
   data-l-save={labelSave}
   data-l-saved={labelSaved}
+  data-url={treeUrl}
+  data-photo={photo}
+  data-meta={meta}
   aria-pressed="false"
   aria-label={`${labelSave} ${treeName}`}
 >

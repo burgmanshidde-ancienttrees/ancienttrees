@@ -35,12 +35,22 @@ const SAVED_PAGE_JS = `
   function esc(t) { return String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); }
   function card(id, it) {
     var city = CITY[it.u] || '';
+    // The photograph and the meta line ride along with the save since
+    // 2026-08-18, so a saved tree looks like the card it was saved from.
+    // Saves made before that carry neither, and those slots stay empty rather
+    // than showing a placeholder.
+    var meta = it.m ? (city ? it.m + ' \u00b7 ' + city : it.m) : city;
     return '<article class="tree-card tree-card-nonum" data-tree-id="' + esc(id) + '">'
-      + '<div class="tree-card-top"><h3 class="tree-name">' + esc(it.n) + '</h3></div>'
-      + (city ? '<p class="tree-meta">' + esc(city) + '</p>' : '')
+      + (it.p ? '<div class="tree-card-photo"><img src="' + esc(it.p) + '" alt="' + esc(it.n)
+                + '" loading="lazy"></div>' : '')
+      + '<div class="tree-card-top"><h3 class="tree-name"><a href="' + esc(it.u) + '">'
+        + esc(it.n) + '</a></h3></div>'
+      + (meta ? '<p class="tree-meta">' + esc(meta) + '</p>' : '')
       + '<p class="tree-more"><a href="' + esc(it.u) + '">Read more and get directions &rarr;</a></p>'
       + '<button class="save-btn heart-btn heart-compact" type="button" data-tree="' + esc(id) + '"'
-      + ' data-name="' + esc(it.n) + '" data-url="' + esc(it.u) + '" data-l-save="Save" data-l-saved="Saved"'
+      + ' data-name="' + esc(it.n) + '" data-url="' + esc(it.u) + '"'
+      + ' data-photo="' + esc(it.p || '') + '" data-meta="' + esc(it.m || '') + '"'
+      + ' data-l-save="Save" data-l-saved="Saved"'
       + ' aria-pressed="true" aria-label="Saved ' + esc(it.n) + '">'
       + '<svg class="heart" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21C6.5 16.3 3.5 13 3.5 9.6 3.5 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.5 2 4.5 4.6 0 3.4-3 6.7-8.5 11.4z"/></svg>'
       + '<span>Saved</span></button>'
@@ -74,7 +84,7 @@ const SAVED_PAGE_JS = `
     .then(function(rows) {
       if (!rows) return;
       var map = localMap();
-      rows.forEach(function(r) { if (!map[r.tree_id]) map[r.tree_id] = { n: r.name, u: r.url }; });
+      rows.forEach(function(r) { if (!map[r.tree_id]) map[r.tree_id] = { n: r.name, u: r.url, p: '', m: '' }; });
       try { localStorage.setItem('at_saved_v1', JSON.stringify(map)); } catch (e) {}
       render(map);
       document.getElementById('saved-sub').textContent = 'Signed in: these follow your account to any device.';

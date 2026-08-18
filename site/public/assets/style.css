@@ -125,6 +125,7 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
    under the heading, because their display rules live inside the phone
    media query. */
 .sheet-back, .sheet-count { display: none; }
+.sheet-note { font-size: 13px; color: var(--ink-light); }
 .eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 0.75rem; }
 .panel-head h1 { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 1.9rem; font-weight: 400; line-height: 1.2; margin-bottom: 0.75rem; }
 .panel-head h1 em { font-style: normal; color: var(--moss); font-weight: 800; letter-spacing: 0; }
@@ -870,6 +871,11 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   /* The count is the peek's subtitle and the half's orientation line; at full
      the intro says it better. */
   .panel[data-detent="full"] .sheet-count { display: none; }
+  /* /explore's peek is its title and its search field, which is the primary
+     action on a map page. Its description would double the peek's height for
+     something a visitor reads once. The city page's own peek line is a COUNT
+     ("16 trees on the map") and stays: it is the one fact worth a peek. */
+  .panel[data-detent="peek"] .sheet-note { display: none; }
   .sheet-body { padding-bottom: calc(1.5rem + env(safe-area-inset-bottom)); }
 
   /* Maps floats its primary action over the map, just above the sheet, and
