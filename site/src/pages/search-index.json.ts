@@ -11,6 +11,7 @@ import { getCollection } from "astro:content";
 import { cityIsRenderable, slugify } from "../lib/trees";
 import { groupTreesBySpecies, SPECIES_MIN_TREES } from "../lib/species";
 import { byCityListOrderEntry } from "../lib/city-order";
+import { citySearchNames } from "../lib/city-aliases";
 
 export async function GET() {
   const allCities = byCityListOrderEntry((await getCollection("cities")).filter(cityIsRenderable));
@@ -24,11 +25,18 @@ export async function GET() {
     if ((byCountryCount.get(intro.data.country) ?? 0) >= 3) countryPages.set(intro.data.country, intro.data.slug);
   }
 
-  const c: { city: string; country: string; n: number; u: string }[] = [];
+  // A city's name in other languages, so the search finds Den Haag as well as
+  // The Hague. Shipped on the row rather than as a second lookup table because
+  // the widget already walks these rows once per keystroke.
+  const searchNames = citySearchNames();
+
+  const c: { city: string; country: string; n: number; u: string; a?: string[] }[] = [];
   const t: { n: string; c: string; u: string }[] = [];
   for (const entry of allCities) {
     const d = entry.data;
-    c.push({ city: d.city, country: d.country, n: d.trees.length, u: entry.id });
+    const alt = searchNames[entry.id];
+    c.push({ city: d.city, country: d.country, n: d.trees.length, u: entry.id,
+             ...(alt && alt.length ? { a: alt } : {}) });
     for (const tree of d.trees) {
       t.push({ n: tree.name, c: d.city, u: `${entry.id}/${slugify(tree.name)}` });
     }

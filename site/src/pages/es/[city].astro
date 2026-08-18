@@ -23,7 +23,7 @@ import { usablePhoto, imgSrcset, creditRequired } from "../../lib/images";
 import { speciesIcon } from "../../lib/species-icons";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
 import { mapHead } from "../../lib/map";
-import { planWalks, walkRouteFor, mapsRouteUrl, kmLabel, type WalkMarker, type Walk } from "../../lib/walks";
+import { type WalkMarker } from "../../lib/walks";
 import { cityMapScript } from "../../lib/city-map-script";
 import { SHEET_JS } from "../../lib/sheet-js";
 import { translatedCities, cityTranslation, hreflangLinks, QUESTION_SLUG, type CityTranslation } from "../../lib/i18n";
@@ -109,23 +109,6 @@ function esDuration(minutes: number): string {
   return `${m} min`;
 }
 
-const walks: Walk[] = planWalks(markers);
-const route = walks[0] ?? null;
-if (route) {
-  for (const w of walks) {
-    const routed = walkRouteFor(cslug, w.order.map((i) => trees[i].id));
-    if (routed) {
-      if (routed.reversed) w.order = [...w.order].reverse();
-      w.shape = routed.shape;
-      w.km = routed.km ?? w.km;
-      w.minutes = routed.minutes ?? w.minutes;
-    }
-    w.url = mapsRouteUrl(w.order.map((i) => [markers[i].lat, markers[i].lng]));
-    w.duration = esDuration(w.minutes);
-    w.label = w.count < markers.length ? `Recorre ${w.count} de estos árboles` : `Recorre los ${w.count} árboles`;
-  }
-}
-const firstWalk = walks[0] ?? null;
 const qslug = QUESTION_SLUG.es;
 ---
 <Base title={tr.title} description={tr.meta_description} canonical={canonical} headExtra={headExtra} footer={false} lang="es">
@@ -194,19 +177,19 @@ const qslug = QUESTION_SLUG.es;
     </aside>
     <div class="stage">
       <div id="map" class="map"></div>
-      {firstWalk && (
-        <div class="walks" id="walk">
-          <div class="route-bar">
-            <a class="route-go" id="route-go" href={firstWalk.url} target="_blank" rel="noopener">
-              <span id="route-label">{firstWalk.label}</span>
-              <span class="route-meta" id="route-meta">unos {kmLabel(firstWalk.km)} km, {firstWalk.duration} a pie</span>
-            </a>
-            <button type="button" class="route-gps" id="gps-btn" aria-pressed="false">Dónde estoy</button>
-          </div>
+      <div class="walks" id="walk">
+        <div class="map-tools">
+          <a class="map-cta" href="/app" data-ev="walks-app">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="map-cta-ic"><path d="M5 19c0-2.2 1.8-4 4-4h6c2.2 0 4-1.8 4-4s-1.8-4-4-4H9" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="5" cy="19" r="2.2" fill="currentColor"/><circle cx="19" cy="5" r="2.2" fill="currentColor"/></svg>
+            <span class="map-cta-text">Rutas a pie<span class="map-cta-sub">en la aplicación</span></span>
+          </a>
+          <button type="button" class="map-gps" id="gps-btn" aria-pressed="false" aria-label="Dónde estoy">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="gps-ic"><circle cx="12" cy="12" r="3.2" fill="currentColor"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/><circle cx="12" cy="12" r="7.5" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+          </button>
         </div>
-      )}
+      </div>
     </div>
   </div>
   <SignInModal es />
-  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + cityMapScript(markers, [avgLat, avgLng], route, [], walks) + SHEET_JS} />
+  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + cityMapScript(markers, [avgLat, avgLng], null, [], []) + SHEET_JS} />
 </Base>
