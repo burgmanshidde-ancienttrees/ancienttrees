@@ -67,12 +67,23 @@ f.addEventListener('load', function() {
     try {
       var d = f.contentDocument, w = f.contentWindow;
       var vw = d.documentElement.clientWidth, out = [];
+      // Running past the edge is only a fault when the visitor cannot get
+      // there. A shelf with overflow-x:auto is SUPPOSED to hold cards beyond
+      // the fold, which is how the homepage's card row tripped the first
+      // version of this check on the day it was written.
+      function inScroller(el) {
+        for (var p = el.parentElement; p && p !== d.body; p = p.parentElement) {
+          var ox = w.getComputedStyle(p).overflowX;
+          if (ox === 'auto' || ox === 'scroll') return true;
+        }
+        return false;
+      }
       d.querySelectorAll('body *').forEach(function(el) {
         var r = el.getBoundingClientRect();
         if (!r.width && !r.height) return;
         var cs = w.getComputedStyle(el);
         if (cs.visibility === 'hidden' || cs.display === 'none') return;
-        if (r.right > vw + 1) {
+        if (r.right > vw + 1 && !inScroller(el)) {
           out.push(el.tagName + '.' + String(el.className).slice(0, 40)
                    + ' right=' + Math.round(r.right));
         }
