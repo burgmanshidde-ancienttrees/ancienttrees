@@ -48,7 +48,7 @@ De Olifantsiep: je hebt gelijk. Er stond dat een vrachtwagen in 2015 een stuk va
 
 De populier: ik kon geen meting vinden die standhoudt, dus de pagina noemt hem niet langer de hoogste van Amsterdam. Er staat nu de vraag bij, met de iep van de Oudemanhuispoort erbij. Weet jij wat die iep meet?
 
-Waarom Engels: de site is voor mensen die ergens rondlopen en iets willen gaan zien, en dat zijn voor een groot deel bezoekers die in het Engels zoeken.
+Waarom Engels: ik wil de kaart voor de hele wereld beschikbaar maken, of in elk geval voor zoveel mogelijk mensen, en dan kom je op één taal uit.
 
 De keuze: ik ben begonnen bij de bijzondere-bomenkaart van de gemeente, die gebruik ik al, en bij wat ik uit twee onafhankelijke bronnen kon bevestigen. Dat er in het Vondelpark en het centrum meer moois staat klopt, en daar kan ik jouw hulp goed gebruiken. Welke bomen zou jij toevoegen?
 
