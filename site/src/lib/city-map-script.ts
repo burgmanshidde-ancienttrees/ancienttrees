@@ -100,6 +100,13 @@ if (OTHER_CITIES.features.length) {
 }
 var CHOOSER_CITIES = ${chooserCitiesJson};
 var cityPanel = document.querySelector('.panel');
+// The chooser goes INSIDE the sheet's scroller, never beside it. .panel's own
+// children are the grab handle and the body, and the loop below hides every
+// sibling of the chooser: appending here meant that zooming out until other
+// cities appeared hid the grab handle itself, which is the only thing you can
+// drag, so the sheet froze where it stood (Hidde, 2026-08-18: "dan loopt de
+// bottombar vast, je kunt hem dan niet omhoog slepen").
+var chooserHost = (cityPanel && cityPanel.querySelector('.sheet-body')) || cityPanel;
 var chooserBox = null;
 var chooserOn = false;
 var homeZoom = null;
@@ -108,7 +115,7 @@ function ensureChooserBox() {
   chooserBox = document.createElement('div');
   chooserBox.className = 'panel-chooser';
   chooserBox.style.display = 'none';
-  cityPanel.appendChild(chooserBox);
+  chooserHost.appendChild(chooserBox);
   return chooserBox;
 }
 function chooserCard(c) {
@@ -124,8 +131,8 @@ function updatePanelMode() {
   if (!chooserOn && z <= onAt) { chooserOn = true; }
   else if (chooserOn && z >= onAt + 1) { chooserOn = false; }
   var box = ensureChooserBox();
-  for (var i = 0; i < cityPanel.children.length; i++) {
-    var el = cityPanel.children[i];
+  for (var i = 0; i < chooserHost.children.length; i++) {
+    var el = chooserHost.children[i];
     if (el !== box) { el.style.display = chooserOn ? 'none' : ''; }
   }
   if (chooserOn) {
