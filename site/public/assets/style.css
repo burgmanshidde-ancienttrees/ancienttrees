@@ -76,6 +76,15 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .bar-links a.bar-login { color: var(--ink-mid); }
 .bar-links a.bar-cta { color: #fff; background: var(--moss); font-weight: 700; border: 1px solid var(--moss); border-radius: 999px; padding: 0.45rem 1rem; }
 .nav-drop { display: inline-block; position: relative; margin-left: 1.25rem; }
+/* The account menu wears an avatar on a phone, where the bar has to stay on
+   one line, and the word beside it everywhere else. */
+.nav-acct summary { display: inline-flex; align-items: center; gap: 0.45rem; }
+.acct-avatar { width: 26px; height: 26px; }
+.acct-avatar svg { width: 15px; height: 15px; }
+@media (max-width: 800px) { .nav-acct .acct-word { display: none; }
+  .nav-acct summary::after { content: none; }
+  .nav-acct { margin-left: 0.55rem; } }
+@media (min-width: 801px) { .nav-acct .acct-avatar { display: none; } }
 .nav-drop summary { font-size: 13px; font-weight: 700; color: var(--ink); cursor: pointer; list-style: none; }
 .nav-drop summary::-webkit-details-marker { display: none; }
 .nav-drop summary::after { content: " ▾"; font-size: 10px; }

@@ -55,7 +55,7 @@ const canonical = `${BASE_URL}/account`;
     <h1>Your <em>trees</em>.</h1>
     <p class="acct-sub"><strong id="in-email"></strong></p>
     <div class="stat-row">
-      <div class="stat"><b id="n-trees">0</b><span>trees</span></div>
+      <div class="stat"><b id="n-trees">0</b><span>saved trees</span></div>
       <div class="stat alt"><b id="n-cities">0</b><span>cities</span></div>
     </div>
     <p class="acct-sub" id="in-note">Your saved trees follow this account to any device. Your collection (the trees you have stood in front of) is still on this device; the app brings that too.</p>
@@ -103,15 +103,10 @@ const canonical = `${BASE_URL}/account`;
       if (n <= 0) { clearInterval(cooldown); btn.disabled = false; btn.textContent = "Resend link"; }
     }, 1000);
   }
-  function localStats() {
-    try {
-      var seen = JSON.parse(localStorage.getItem("ancienttrees_seen")) || [];
-      document.getElementById("n-trees").textContent = seen.length;
-      var cities = {};
-      seen.forEach(function(id) { cities[id.slice(0, 3)] = 1; });
-      document.getElementById("n-cities").textContent = Object.keys(cities).length;
-    } catch (e) {}
-  }
+  // The saved-list script owns these two numbers now (lib/saved-list-js.ts):
+  // they count the saved trees this page lists, not the check-in log, which
+  // is app-only on a phone and therefore permanently zero here.
+  function localStats() {}
   function signedIn(session) {
     try { localStorage.setItem("ancienttrees_session", JSON.stringify(session)); } catch (e) {}
     fetch(SB + "/auth/v1/user", { headers: { "apikey": KEY, "Authorization": "Bearer " + session.access_token } })
