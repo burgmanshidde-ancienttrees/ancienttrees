@@ -12,6 +12,22 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-18 (session) - One tree card, walks off the web, and cities findable in their own language
+
+Four asks from Hidde in one session, all live. The map fix that started it has its own entry below.
+
+**Walking routes leave the web.** "die ik niet beschikbaar wil maken op web, maar die je naar de landingspagina van de app brengt, zodat er meer ruimte is voor de kaart en de bomen." The green route capsule, the walk picker and the drawn route line are gone from both city pages; one small pill on the map reads "Walking routes, in the app" and links to /app (`data-ev="walks-app"`). This is PRODUCT_IA.md line 10 applied, web reads and app walks, and it makes the deepest filter on the page the one app hook that is a feature rather than a promise. The cost, worth watching: walking is one of the four verbs and the web now delivers three. Nothing was deleted, on his instruction ("de functie hebben we later dus wel nog nodig voor app dus gooi de info niet weg"): walks.ts, data/walk-routes.json and both scripts stay, each with a note saying why, and the walk CSS is marked parked.
+
+**One tree card, everywhere.** "kunnen we niet een centraal component maken zodat we bomen overal op dezelfde manier weergeven." There were two: the city page's .tree-card and a smaller .entry with a 96px thumb on the park, species, collection and country pages, so every improvement to one missed the other. `components/TreeCard.astro` is now the only one, used by both city pages, parks, species, collections and countries. What varies is how much TEXT it carries, and that is not taste: the story is unique 150-250 words whose canonical home is the city page, so repeating it on four URLs is what P3 forbids. City pages get the full story, everyone else the first sentence or a collection's own note. Language is a prop, so the Spanish page is the same component rather than a copy that drifts. /saved stops being a list of links and shows the same card, emitted from JS because it renders from localStorage; it cannot fill species, age or the photograph, so those slots stay empty rather than invented.
+
+**Cities findable in their own language.** "het is wel handig als steden als den haag ook te vinden zijn in hun eigen taal." Den Haag, Firenze, Wien, München, Napoli, Praha, Lisboa, Warschau and Kopenhagen all now find the right page. `scripts/city_names.py` generates them from Wikipedia's langlinks: 131 of 133 cities, 1169 names. A city is confirmed by coordinates and never by name, because Wikipedia's "Cordoba" is a disambiguation page. Standard practice from here, as he asked: nightly.yml regenerates for any city opened that run and queries only cities it has never seen, and preflight prints a NOTE naming any city never looked up.
+
+**The city intro stops being truncated.** It sat in the fixed sheet header at four clamped lines. It now lives in the scrolling body, shown whole, and scrolls away leaving the title.
+
+**Two new ratchet checks in qa.py**, tenth and eleventh: a page carrying the bottom-sheet CSS must carry its markup and script, and no page may ship the retired .entry tree markup.
+
+**FOR HIDDE.** Cloudflare emailed that ancienttrees.app was removed after four weeks without a nameserver change. Checked: nothing is broken and nothing needs doing. The domain never ran through Cloudflare, DNS is at TransIP pointing straight at GitHub Pages, and the site is served by GitHub. The only thing we use is the cookieless Web Analytics beacon, which is a separate product that works on sites Cloudflare does not proxy; it is still loading and still posting, and this morning's digest still read 510 visits. Re-adding the domain would put Cloudflare in front of GitHub Pages, which is a real change to the serving path and needs a reason, not an email.
+
 ## 2026-08-18 (session) - The phone city page had no map, and could not be scrolled
 
 Hidde: "gister is er een ux verbetering op de stadspagina gemaakt maar vastgelopen nu is de kaart niet meer zichtbaar."
