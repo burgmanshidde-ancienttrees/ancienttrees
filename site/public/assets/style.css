@@ -305,10 +305,22 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
   .only-mobile { display: block; }
   .nav-drop-menu a.only-mobile { display: flex; }
   .bar-links a.bar-map { font-size: 13px; padding: 0.35rem 0.2rem; }
+  /* Komoot's mobile header, looked at rather than remembered (2026-08-18):
+     logo mark, one filled pill, one menu button. No standalone text links.
+     Ours had five items in three different weights, which is what Hidde meant
+     by the layout feeling awkward. Map is the first item inside the menu
+     already, so on a phone it stops being its own link, and the menu becomes
+     an icon button that matches the account avatar beside it. */
+  .bar-links a.bar-map { display: none; }
   .nav-drop { margin-left: 0; }
-  .nav-drop summary { font-size: 13px; padding: 0.35rem 0.2rem; }
+  .nav-drop summary { display: inline-flex; align-items: center; justify-content: center;
+    width: 32px; height: 32px; padding: 0; border-radius: 50%;
+    background: var(--surface); border: 1px solid var(--cream-dark); color: var(--ink); }
+  .nav-drop summary::after { content: none; }
   .nav-drop summary .sum-desktop { display: none; }
-  .nav-drop summary .sum-mobile { display: inline; }
+  .nav-drop summary .sum-mobile { display: inline-flex; }
+  .nav-drop summary .sum-mobile svg { width: 17px; height: 17px; }
+  .bar-links { gap: 0.5rem; }
   .nav-drop-menu { position: fixed; left: 0.75rem; right: 0.75rem; top: 3.4rem; min-width: 0; }
   .bar-links a.bar-cta { padding: 0.35rem 0.6rem; font-size: 12px; white-space: nowrap; }
   .footer-cols { flex-direction: column; gap: 1.5rem; }
