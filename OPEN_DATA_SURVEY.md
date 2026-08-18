@@ -163,8 +163,34 @@ maps.amsterdam.nl/open_geodata/terms.php, proving sentence: "U mag de dataset
 zowel voor niet-commerciele als commerciele doeleinden gebruiken" (commercial
 use explicitly allowed, no attribution required). Imported to
 data/registers/amsterdam-bijzondere-bomen.json with the licence block. This is
-the municipal-open-data route CLAUDE.md prefers for NL; the national
-Bomenstichting register below stays CC-BY-NC and stays a lead list only.
+the municipal-open-data route CLAUDE.md prefers for NL.
+
+**CORRECTION, 2026-08-18: the national Bomenstichting register may not be
+CC-BY-NC after all, and this is the single biggest open question in this file.**
+The line above used to end by parking it as a lead list on an NC verdict.
+monumentalebomen.nl turns out to be an **ArcGIS Open Data Hub**, and its own
+dataset catalogue at `https://www.monumentalebomen.nl/data.json` states the
+licence for every one of its six datasets as:
+
+> "Onder bronvermelding te gebruiken: ©Bomenstichting"
+
+Usable with source attribution. No non-commercial clause anywhere in that
+metadata. Either the licence changed with LRMB v2024, or the earlier scouting
+read the website's general terms rather than the dataset's own.
+
+What is behind it, measured 2026-08-18 against the live FeatureServer
+`https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1`:
+**16,094 monumental trees**, 267 in Amsterdam alone, with fields that answer the
+questions that cost us the most time. `plantjaar` (a decade band or "Leeftijd
+onbekend"), `locatie`, `naam_boom`, `historie`, `reden`, and critically
+**`bezoekbaar` (ja/nee) and `categorie_eigenaar` (gemeente / particulier /
+stichting)**, which settle hard rule 10 from the data itself rather than from a
+per-tree hunt. That is the Den Bosch pattern at national scale.
+
+**Do not import until the licence is confirmed in writing.** The cheapest route
+exists and costs nothing: we are already corresponding with Bomenstichting
+Amsterdam, who wrote in this week to correct two of our own pages. Ask them.
+Until an answer arrives this stays a lead list, exactly as before.
 
 ## Spain: the regional registers, scouted 2026-08-04
 
