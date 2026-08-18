@@ -119,6 +119,7 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
    tree card's worth of room. In the scroll area it is shown whole and it
    scrolls away. The divider follows it so the desktop panel is unchanged. */
 .city-intro { padding: 0 1.75rem 1.5rem; border-bottom: 1px solid var(--cream-dark); }
+.city-intro-more { display: none; }
 /* Two pieces of furniture that belong to the phone sheet only. Without
    these the desktop split renders a stray back button and a tree count
    under the heading, because their display rules live inside the phone
@@ -902,7 +903,19 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   .bar-logo { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--sans); font-weight: 800; font-size: 1.02rem; letter-spacing: 0.07em; text-decoration: none; color: var(--ink); }
   .bar-links { display: flex; align-items: center; white-space: nowrap; }
   .bar-links a.bar-secondary { display: none; }
-  .city-intro { padding: 1rem 1.1rem 1.1rem; }
+  /* Clamped, and one tap opens it. At full length the intro pushed the first
+     tree card most of a screen down, which is the opposite of what the list
+     is for; unreadable-and-stuck was the older mistake, so it opens rather
+     than staying cut. */
+  .city-intro { padding: 1rem 1.1rem 1.1rem; cursor: pointer; }
+  .city-intro .lede { display: -webkit-box; -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; overflow: hidden; }
+  .city-intro.is-open .lede { -webkit-line-clamp: unset; overflow: visible; }
+  .city-intro-more { display: inline-block; margin-top: 0.35rem; padding: 0;
+    background: none; border: 0; cursor: pointer;
+    font-family: var(--sans); font-size: 13px; font-weight: 500; color: var(--moss); }
+  .city-intro.is-open { cursor: auto; }
+  .city-intro.is-open .city-intro-more { display: none; }
   .panel-head { padding: 1.25rem 1.1rem 1rem; }
   .panel-head h1 { font-size: 1.6rem; }
   .home-hero { height: 60vh; }
