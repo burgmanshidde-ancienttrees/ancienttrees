@@ -12,6 +12,12 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-18 - Night run 2026-08-18 05:20 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 15.3 minutes of its 120 minute window, 116 turns, 27 commands refused by the allowlist, ended clean (success). 6 commit(s), none of them a published tree. Claims left behind: seville, zaragoza, Las Vegas, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
 ## 2026-08-18 (session) - Krakow: 10 to 16 trees, off the READY leads shelf
 
 `visitors.py`: 275 visits, 427 page views over the last 7 days (2026-08-11 to 2026-08-18), trending down toward the end (83 on 08-16, 44 on 08-17, 2 so far on 08-18). `prepare.py`: 32 cities staged for verify, 0 trees awaiting a writer. Step 0: no unprocessed Supabase submissions (SUPABASE_SERVICE_KEY present, 6 rows total, all already processed). `health.py` rung 2 clear (smoke, build/deploy, digest, fresh-eyes, weekly all green/recent; REVIEW.md's one BLOCKER already answered on 2026-08-17, Milan's Archdevil). Nothing published found wrong.
