@@ -219,6 +219,27 @@ document.addEventListener('click', function(e) {
 // swaps Log in for your avatar; ours swaps the word, which is the honest
 // minimum for a site without profile pictures. Session shape is the one
 // /account and the save sync already use.
+// Two <details> menus do not know about each other, so opening Account while
+// Explore stood open stacked one panel over the other (Hidde's screenshot,
+// 2026-08-18). Every menu bar closes its siblings; this is that, in four
+// lines, plus a click outside and Escape, which is the rest of the same
+// convention.
+(function() {
+  var drops = document.querySelectorAll('header.bar details.nav-drop');
+  drops.forEach(function(d) {
+    d.addEventListener('toggle', function() {
+      if (!d.open) return;
+      drops.forEach(function(o) { if (o !== d) o.open = false; });
+    });
+  });
+  document.addEventListener('click', function(e) {
+    if (e.target.closest('header.bar details.nav-drop')) return;
+    drops.forEach(function(d) { d.open = false; });
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') drops.forEach(function(d) { d.open = false; });
+  });
+})();
 (function() {
   try {
     var s = JSON.parse(localStorage.getItem('ancienttrees_session'));

@@ -12,6 +12,12 @@ const photoSchema = z
     license: z.string().nullable().optional(),
     attribution: z.string().nullable().optional(),
     status: z.enum(["missing", "found_needs_check", "approved", "held"]).optional(),
+    // Recorded by scripts/photo_check.py. Zod strips keys it does not name, so
+    // leaving these out meant the app feed shipped 353 photos with null
+    // dimensions while the data files held them all along.
+    width: z.number().int().nullable().optional(),
+    height: z.number().int().nullable().optional(),
+    note: z.string().nullable().optional(),
   })
   .partial()
   .optional();
