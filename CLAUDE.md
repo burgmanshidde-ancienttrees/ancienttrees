@@ -597,7 +597,15 @@ A run may not open this on its own. Building toward it is fine and welcome: keep
 
 **Where the account track actually stands (2026-08-14, superseding the 2026-07-29 snapshot).** OPEN, on Hidde's explicit ruling, overruling the wait-for-evidence recommendation after hearing it. Live: magic-link sign-in (field-tested since July), the one sign-in dialog on gated features, cloud sync of saved trees as a union, /account linked in the nav, and a delete flow calling the server's delete_user() function. The deletion gate he set in July is honoured in design (the saves table cascades on user deletion) and still owed one end-to-end proof: his own paste of supabase/saves.sql plus one save-sync-delete round trip (LOG.md 2026-08-14, FOR HIDDE). The privacy-page facts (no personal name, "Ancient Trees" as contact) are unchanged.
 
-### The interim paywall line is still undecided
+### The paywall line, SET by Hidde 2026-08-18
+
+€19.95 a year with a 7-day trial, and four features behind it: Season Radar alerts, curated tree walks, a personal tree log with badges and photo upload, and full offline access. Every tree, story and location stays free on web and in the app. The copy he wrote is recorded verbatim in DECISIONS.md 2026-08-18; use that wording rather than inventing a new pitch, and do not put the price on the website until he says it goes live ("wss" is his own word for how settled it is).
+
+His instruction with it was "we moeten dit verhaal waar gaan maken", so the gap between the promise and the product is now work rather than a footnote. What is actually true today: offline is nearly ready (the feeds carry everything but the pictures), walks exist as data and are served at /api/walks.json, Season Radar can fire for about a quarter of the map (34 species with phenology, 383 trees with a best_time), and the personal log has never left localStorage. Payment itself is still his alone under hard rule 2 and nothing about it gets built without him.
+
+The superseded section, kept because its reasoning still holds:
+
+### The interim paywall line was undecided until then
 
 Hidde's instinct is that web and app should draw the line in roughly the same place: a lot free, with the genuinely good features behind a subscription. That points at content free everywhere (every tree, story and location, on both platforms, which is also what keeps the site indexable and serves goal 1) and payment attached to the features that get people out and bring them back: routes past several trees, a log of which ones you have visited, offline maps, a nudge when a tree near you is at its best.
 
