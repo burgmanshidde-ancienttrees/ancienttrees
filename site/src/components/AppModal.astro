@@ -1,0 +1,112 @@
+---
+// The walking-routes overlay (Hidde, 2026-08-18: "als je op de wandelknop
+// drukt er een overlay komt met de app voordelen en dat je je kan inschrijven,
+// iets korter dan de landingspagina misschien, waar ook een kruisje in is
+// zodat je weer terug kan naar de stad waar je was").
+//
+// Deliberately NOT a new pattern. This is SignInModal's dialog, the same
+// <dialog class="collect-dialog"> with the same close button in the same
+// corner, because the site already converges gated features on one modal shape
+// (Hidde, 2026-08-14, from AllTrails) and following our own component is what
+// "the convention" means here.
+//
+// Why an overlay rather than the link it replaced: the walking routes left the
+// web on 2026-08-18 and the pill used to navigate to /app, which threw away
+// the city the visitor was reading. A dialog keeps their place, which is the
+// whole reason he asked for the cross.
+//
+// Shorter than /app on purpose: three lines of what the app does, one field.
+// The full page is one tap away for anyone who wants it.
+import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
+
+interface Props { es?: boolean }
+const { es = false } = Astro.props;
+const T = es ? {
+  title: "Las rutas a pie están en la app",
+  sub: "Los árboles de esta ciudad, encadenados en un paseo, con la ruta en el bolsillo.",
+  f1: "Un paseo que une los mejores árboles cercanos",
+  f2: "Funciona sin cobertura, en mitad del parque",
+  f3: "Marca cada árbol ante el que te has parado",
+  placeholder: "tu@ejemplo.com",
+  send: "Avísame",
+  note: "Te escribimos el día que abra. Un email. Nada más.",
+  sent: "Estás en la lista. Te escribiremos cuando la app esté lista.",
+  fail: "No ha salido. Inténtalo de nuevo en un momento.",
+  more: "Ver todo lo que hace",
+  close: "Cerrar",
+} : {
+  title: "Walking routes live in the app",
+  sub: "This city's trees, strung into one afternoon, with the route in your pocket.",
+  f1: "A walk that links the best trees near you",
+  f2: "Works with no signal, in the middle of a park",
+  f3: "Tick off every tree you have stood in front of",
+  placeholder: "you@example.com",
+  send: "Tell me first",
+  note: "We write to you the day it opens. One email. Nothing else.",
+  sent: "You are on the list. We will email you when the app is ready.",
+  fail: "That did not go through. Try again in a moment.",
+  more: "See everything it does",
+  close: "Close",
+};
+---
+<dialog id="app-dialog" class="collect-dialog signin-dialog app-dialog">
+  <button type="button" class="signin-close" id="app-close" aria-label={T.close}>&#10005;</button>
+  <p class="signin-mark" aria-hidden="true">&#127795;</p>
+  <div id="app-ask">
+    <h3>{T.title}</h3>
+    <p>{T.sub}</p>
+    <ul class="app-dialog-list">
+      <li>{T.f1}</li>
+      <li>{T.f2}</li>
+      <li>{T.f3}</li>
+    </ul>
+    <form id="app-wl" class="signin-form" autocomplete="email">
+      <input type="email" id="app-wl-email" placeholder={T.placeholder} aria-label="Email address" required>
+      <button type="submit" class="go-btn">{T.send}</button>
+    </form>
+    <p class="signin-fine" id="app-wl-note">{T.note}</p>
+    <a class="go-btn ghost signin-more" href="/app" data-ev="app-cta">{T.more}</a>
+  </div>
+  <div id="app-sent" hidden>
+    <h3>{T.sent}</h3>
+  </div>
+</dialog>
+<script is:inline define:vars={{ FAIL: T.fail, SB: SUPABASE_URL, SBK: SUPABASE_KEY }}>
+  (function() {
+    var dlg = document.getElementById('app-dialog');
+    if (!dlg) return;
+    window.atOpenApp = function() {
+      if (dlg.showModal) { dlg.showModal(); } else { location.href = '/app'; }
+      try { at.track('walks-app'); } catch (e) {}
+    };
+    document.getElementById('app-close').addEventListener('click', function() { dlg.close(); });
+    // Clicking the backdrop closes it, the way every dialog on the site does.
+    dlg.addEventListener('click', function(e) { if (e.target === dlg) dlg.close(); });
+    document.addEventListener('click', function(e) {
+      var t = e.target.closest('[data-app-modal]');
+      if (!t) return;
+      e.preventDefault();
+      window.atOpenApp();
+    });
+    var f = document.getElementById('app-wl');
+    var note = document.getElementById('app-wl-note');
+    f.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var email = document.getElementById('app-wl-email').value.trim();
+      if (!email) return;
+      note.textContent = '...';
+      try { at.track('waitlist-submit'); } catch (err) {}
+      fetch(SB + '/rest/v1/waitlist', {
+        method: 'POST',
+        headers: { 'apikey': SBK, 'Content-Type': 'application/json',
+                   'Prefer': 'return=minimal' },
+        body: JSON.stringify({ email: email, source: 'walks-modal' })
+      }).then(function(r) {
+        if (r.ok || r.status === 409) {
+          document.getElementById('app-ask').hidden = true;
+          document.getElementById('app-sent').hidden = false;
+        } else { note.textContent = FAIL; }
+      }).catch(function() { note.textContent = FAIL; });
+    });
+  })();
+</script>
