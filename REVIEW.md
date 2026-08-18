@@ -13,6 +13,100 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-08-18
+
+Reviewed since the last review commit (`04097cc`, 2026-08-17 07:18 UTC): 120
+commits, roughly 24 hours of night-run and session work. New: Singapore (18
+trees, first cluster in the Botanic Gardens), five island city pages
+(Hilo/Big Island, Tenerife, Madeira, Sardinia, Crete, Cyprus), an Islands
+section on /explore (added to the nav, then correctly pulled back out of the
+nav while the section itself stayed, per commits 8225a77/0b88552). Grown:
+Krakow (10 to 16), Brussels (20 to 23), Caserta (10 to 14), Naples (to its
+target of 20), Palermo (to 14), Vilnius (to 10), Bratislava (5 to 10 across
+two passes), Graz (8 to 10), Alicante and Lyon (both closed to 10). Warsaw's
+Sowinski's Linden retired (delisted dead since 2012, redirect added). New
+species pages: Turner's Oak, Scots Pine. Two pages rewritten to answer the
+query people actually typed (Central Park's oldest-tree question, Newton's
+Apple Tree). A caught-before-shipping incident worth noting as a pass, not a
+finding: a Cyprus verify pass caught WebSearch's own AI summary inventing two
+measurements for an olive tree; the fabrication was discarded and never
+reached `data/cities/`, and the lesson is now written into BRIEF_RESEARCH.md.
+Also fixed this window: a photo-credit bug that would have published a
+photographer's email address (caught before merge; verified no email string
+survives anywhere in `data/cities/`). Ran `python3 scripts/qa.py` (2083
+pages, clean), `python3 scripts/superlatives.py` (386 claims, no collisions)
+and `python3 scripts/health.py` (rung 2 clear) against the built site.
+
+**WARN — Three trees published in this window carry `location_precision:
+"confirmed"` without the provenance documentation every sibling entry in the
+same city files uses for that claim, and in two cases the published
+coordinate does not match the register point cited as the source.**
+
+`data/cities/naples.json` nap_018, nap_019 and nap_020 (published in
+64f9961, "Naples reaches its target of 20") are the only three of Naples' 20
+trees with no `notes` field at all. Every other entry, including the other
+`confirmed` ones, states in `notes` why: typically "MASAF and Campania agree
+... position to sub-metre" with both sources' coordinates quoted (nap_013,
+nap_014, nap_015, nap_016). These three have no equivalent sentence anywhere
+in the file, on disk, or in CURATION.md; the story text discusses girth and
+height agreement between the two registers but never their coordinates.
+
+`data/cities/caserta.json` cas_012, cas_013 and cas_014 (the Piazza
+Vanvitelli trio, published in 7320e3b) show the same gap, and for two of the
+three it is checkable against the cited source rather than just undocumented.
+The register file the trees themselves cite, `data/registers/italy-masaf.json`
+(sheet_ids 07/08/09, B963/CE/15), gives its own coordinates for all three:
+07 matches the published cas_012 pin exactly (0 m). But 08 (the casuarina)
+sits at 41.075528,14.332417 against the published cas_013 pin of
+41.075272,14.332242, **32 metres away**, and 09 (the yew) sits at
+41.07535,14.332183 against the published cas_014 pin of 41.075377,14.332408,
+**19 metres away**. The pre-publish leads file (`data/leads/caserta.json`,
+diff in 7320e3b) carried the MASAF coordinates unchanged right up to the
+point of shipping, so the published pins were moved sometime during this
+pass, not carried over from a source. Nothing in the tree's `notes`, `story`,
+`CURATION.md` or any `data/research/` file says why, or names the evidence
+that justified the move (an aerial check, a site description, anything
+matching the project's own `PIN_NEW_EVIDENCE` pattern in
+`scripts/preflight.py`). It may well be a genuine improvement, cas_014's
+address even hints at one ("in the flower bed on the Via Alois side"), but as
+written there is no way to tell a deliberate correction from a transcription
+drift, on the one field the project has repeatedly ruled is the only one
+that really matters (CLAUDE.md, "the one field that carries the product").
+
+Why this is a WARN and not a BLOCKER: nothing here proves either pin is
+actually wrong, both squares are compact (well under the distances involved),
+and `scripts/preflight.py`'s `check_pin_upgrades()` doesn't catch this shape
+of case because these are new trees, not upgrades of an existing recorded
+pin. This is process drift against the project's own convention, not a
+demonstrated broken pin. Worth a rung-3 look: either recover why cas_013 and
+cas_014 moved from their cited source and write it down, or pull them back to
+the register point; and add the missing `notes` sentence to nap_018-020
+explaining what actually grounds "confirmed" for each.
+
+**Nothing else found at BLOCKER or WARN.** Spot-checked and clean: the
+Hawaii/Hilo import (the 12x girth unit-conversion bug and the 1.1km-grid
+coordinate problem, both named in their own commit messages, are genuinely
+fixed; all 5 Hilo trees are honestly `approximate`, none upgraded to
+`confirmed` on grid-level coordinates); the five new island cities
+(Tenerife, Madeira, Sardinia, Crete, Cyprus) for hard-rule-10 access
+(no private land, honest access lines, disputed ages left as ranges rather
+than sharpened); the Islands nav/page pairing (no dead link: the section
+lives on /explore, reachable via the existing "Map" nav item, and is not
+itself in the dropdown); the photo-credit fix (verified no email-shaped
+string survives in any `data/cities/*.json` photo credit field); the
+WebSearch-fabrication catch on Cyprus (the invented figures never reached a
+published tree); Bali's narrow, explicitly-quoted exception to the
+2026-08-15 rich-tourists rule (a place-level exception the country-level
+rule itself anticipates, not a quiet reopening of a paused country); and the
+day-by-day search and signup tables in DATA.md, which remain in the ruled
+format. No em dashes, banned words, or bridge claims found in the reviewed
+pages. REVIEW.md's 2026-08-17 BLOCKER (Milan's Archdevil hackberry) is
+recorded answered in `data/review-answers.json` and `health.py` confirms it
+current; spot-checked mil_019 directly and the courtyard/park distinction
+now matches the comune's own source rather than an invented bridge claim.
+
+---
+
 ## 2026-08-17
 
 Reviewed since the last review commit (`f72c8d5`, 2026-08-16 07:02 UTC): 131
