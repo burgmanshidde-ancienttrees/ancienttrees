@@ -12,6 +12,24 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-18 (session) - The phone city page had no map, and could not be scrolled
+
+Hidde: "gister is er een ux verbetering op de stadspagina gemaakt maar vastgelopen nu is de kaart niet meer zichtbaar."
+
+**What was live, on every city page in both languages, since 2026-08-17 21:02.** The Google Maps bottom sheet landed as CSS only. `style.css` made `.panel` a fixed, full-height sheet at z-index 20 whose position is driven by a transform, and made `.stage` (the map) an absolute layer at z-index 1 underneath it. The markup that gives the sheet a grab handle and an inner scroller was never added, and `sheet-js.ts` was written and imported by nobody. So the transform was never set: the sheet sat at translateY(0) covering the map completely, and the `overflow: hidden` that belongs on `.sheet-body` sat on the panel itself, which meant the tree list could not be scrolled either. A phone visitor saw one tree card and no way to reach the other thirty. Desktop was untouched throughout, which is why nothing caught it: the build passed, the smoke test passed, the deploy went green.
+
+**What now ships, which is the rest of that work rather than a revert.** The four movements Hidde asked for again today, in his words "veel meer zoals google maps is waar de kaart groot wordt als je daarmee interacteert en andersom met de lijst" and "als je op een boom specifiek klikt dat dan de informatie van die boom alleen opent onderin":
+
+1. The page opens as a map, with the sheet at a peek: the city name, the tree count, a drag handle.
+2. Dragging or tapping the header moves it through half and full; the map shrinks, the list grows.
+3. Tapping a pin or a card opens THAT tree alone, with its story, Save and directions, and a back link to the list. Nothing is removed from the DOM, only hidden with a class, so a crawler still sees the whole city.
+4. Touching the map drops the sheet back to the peek. The zoom controls and the walk capsule are exempt, so using them does not collapse the list.
+
+Two things fixed while wiring it up. The walk capsule was pinned to the bottom under a z-20 sheet, so it was invisible; it now floats just above the peek and fades out once the sheet covers the map. And a tapped pin used to fly to the centre of the map ELEMENT, which is behind the sheet: the map now recentres on the part of it you can still see.
+
+**The ratchet.** `check_sheet_integrity()` in `scripts/qa.py`, the tenth. If the stylesheet carries the sheet layout, every built city page must also carry the id, the grab handle, the inner scroller and the script. It is the same shape as the hearts-need-the-dialog check: parts that must never separate. Proven against yesterday's exact output, which it catches.
+
+Verified at 375px and at 1280px in a browser, against the live page with the change injected, because there is no local Node and no local build: peek, half, full, one-tree detail, back, and touch-to-collapse each looked at rather than inferred. What the browser could not exercise is a real finger drag and the flyTo offset, which needs the deployed map script; both are worth a look on a phone once this deploys.
 ## 2026-08-18 - Night run 2026-08-18 11:15 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.

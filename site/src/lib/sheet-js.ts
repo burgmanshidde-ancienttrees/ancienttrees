@@ -21,6 +21,12 @@
 // Desktop is untouched: there the split layout is already Maps-shaped (list
 // left, map right), so every listener here is behind the same media query the
 // stylesheet uses, checked once via matchMedia.
+//
+// Landed 2026-08-18. The CSS for all of this shipped on 08-17 without the
+// markup or this script, which left the sheet pinned at translateY(0) over the
+// map: on every phone the city page showed no map at all and could not be
+// scrolled, because the overflow that should sit on .sheet-body was sitting on
+// a .panel that had no inner scroller. Three parts, one deploy, always.
 export const SHEET_JS = `
 <script>
 (function() {
@@ -31,7 +37,7 @@ export const SHEET_JS = `
 
   var grab = sheet.querySelector('.sheet-grab');
   var body = sheet.querySelector('.sheet-body');
-  var back = sheet.querySelector('.sheet-back');
+  if (!grab || !body) return;
   var DETENTS = ['peek', 'half', 'full'];
   var at = 'peek';
 
@@ -39,15 +45,23 @@ export const SHEET_JS = `
     at = name;
     sheet.classList.toggle('is-animating', animate !== false);
     sheet.dataset.detent = name;
+    // The walk capsule and the map's own controls read the detent off the root
+    // element, so they can move out of the sheet's way in CSS rather than by
+    // being repositioned here.
+    document.documentElement.dataset.sheet = name;
     // The offset is computed rather than declared in CSS, because the peek has
     // to be exactly one header tall and the header's height depends on the
     // city name wrapping. A hardcoded number is wrong on every long name.
     sheet.style.transform = 'translateY(' + offsetFor(name) + 'px)';
+    document.documentElement.style.setProperty('--sheet-peek', peekHeight() + 'px');
     // Only the full sheet scrolls its own body; at peek and half a drag
     // anywhere moves the sheet instead, which is what Maps does and what stops
-    // the two gestures fighting each other.
-    body.style.overflowY = name === 'full' ? 'auto' : 'hidden';
-    if (name !== 'full') body.scrollTop = 0;
+    // the two gestures fighting each other. One tree opened at half is the
+    // exception: its story is longer than half a screen, and a sheet that
+    // shows two thirds of a paragraph with no way down is worse than no sheet.
+    var scrolls = name === 'full' || sheet.classList.contains('is-detail');
+    body.style.overflowY = scrolls ? 'auto' : 'hidden';
+    if (!scrolls) body.scrollTop = 0;
   }
 
   function offsetFor(name) {
@@ -69,7 +83,7 @@ export const SHEET_JS = `
     if (!mq.matches) return;
     // A drag that starts on the scrolled body should scroll it, not move the
     // sheet, unless the body is already at its top and the pull is downward.
-    if (at === 'full' && e.target.closest('.sheet-body') && body.scrollTop > 0) return;
+    if (e.target.closest('.sheet-body') && body.scrollTop > 0) return;
     dragging = true;
     startY = lastY = e.touches ? e.touches[0].clientY : e.clientY;
     startOff = offsetFor(at);
@@ -119,16 +133,22 @@ export const SHEET_JS = `
   document.addEventListener('touchend', onUp);
 
   // Tapping the peek header opens it, because a bar that only responds to a
-  // drag hides its own affordance from anyone who has not tried.
-  grab.addEventListener('click', function() {
+  // drag hides its own affordance from anyone who has not tried. A tap on the
+  // back button is that button's job, not the header's.
+  grab.addEventListener('click', function(e) {
     if (!mq.matches) return;
+    if (e.target.closest('.sheet-back')) return;
     if (at === 'peek') setDetent('half');
   });
 
   // --- movement 4: touching the map gives the map back --------------------
-  stage.addEventListener('pointerdown', function() {
+  // A tap on a pin is a tap on a tree, not on the map: it arrives here first
+  // (pointerdown precedes click), and collapsing on it would fight the detail
+  // view that the same tap is about to open.
+  stage.addEventListener('pointerdown', function(e) {
     if (!mq.matches) return;
-    if (at !== 'peek') setDetent('peek');
+    if (e.target.closest('.pin-tree, .walks, .maplibregl-ctrl, .panel-chooser')) return;
+    if (at !== 'peek') { closeTree(); setDetent('peek'); }
   });
 
   // --- movement 3: one tree, with its actions ------------------------------
@@ -142,41 +162,59 @@ export const SHEET_JS = `
     if (!found) return;
     sheet.classList.add('is-detail');
     sheet.dataset.tree = id;
-    if (at === 'peek') setDetent('half');
     body.scrollTop = 0;
+    setDetent(at === 'full' ? 'full' : 'half');
   }
   function closeTree() {
+    if (!sheet.classList.contains('is-detail')) return;
     sheet.classList.remove('is-detail');
     sheet.dataset.tree = '';
     document.querySelectorAll('.tree-card.is-open').forEach(function(c) {
       c.classList.remove('is-open');
     });
+    setDetent(at, false);
   }
 
   document.addEventListener('click', function(e) {
-    if (!mq.matches) return;
-    var open = e.target.closest('[data-open-tree]');
-    if (open) {
-      var card = open.closest('.tree-card');
-      if (card && card.dataset.treeId) { openTree(card.dataset.treeId); }
-      return;
-    }
     if (e.target.closest('.sheet-back')) { closeTree(); }
   });
 
-  // The map script already scrolls a card into view when its pin is tapped
-  // (city-map-script.ts). On a phone that card is inside this sheet, so the
-  // same tap should also promote it, which is Maps' behaviour exactly.
+  // The map script already marks a card active when its pin is tapped, and
+  // when the card itself is tapped (city-map-script.ts). On a phone that card
+  // is inside this sheet, so the same tap should also promote it to the detail
+  // view, which is Maps' behaviour exactly.
   window.atSheetFocus = function(id) {
-    if (!mq.matches) return;
+    if (!mq.matches || !id) return;
     openTree(id);
+  };
+
+  // Where the sheet will COME TO REST, not where it is: the map wants to know
+  // this the instant a pin is tapped, and at that moment the sheet is still
+  // sliding, so a getBoundingClientRect would read the old position and put
+  // the tree behind the sheet anyway.
+  window.atSheetTop = function() {
+    if (!mq.matches) return null;
+    return (window.innerHeight - sheet.offsetHeight) + offsetFor(at);
   };
 
   // Reset cleanly when the layout crosses into the desktop split, where the
   // sheet does not exist as a concept.
   mq.addEventListener('change', function() {
-    if (!mq.matches) { sheet.style.transform = ''; closeTree(); }
-    else setDetent('peek', false);
+    if (!mq.matches) {
+      sheet.style.transform = '';
+      sheet.removeAttribute('data-detent');
+      delete document.documentElement.dataset.sheet;
+      body.style.overflowY = '';
+      closeTree();
+    } else {
+      setDetent('peek', false);
+    }
+  });
+
+  // The peek is one header tall, so it has to be re-measured whenever the
+  // header can change height: a rotation, a keyboard, a font arriving late.
+  window.addEventListener('resize', function() {
+    if (mq.matches) setDetent(at, false);
   });
 
   if (mq.matches) setDetent('peek', false);
