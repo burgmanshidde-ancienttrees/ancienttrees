@@ -39,7 +39,7 @@ export const SAVED_LIST_JS = `
     // Saves made before that carry neither, and those slots stay empty rather
     // than showing a placeholder.
     var meta = it.m ? (city ? it.m + ' \u00b7 ' + city : it.m) : city;
-    return '<article class="tree-card tree-card-nonum" data-tree-id="' + esc(id) + '">'
+    return '<article class="tree-card tree-card-nonum tree-card-link" data-tree-id="' + esc(id) + '">'
       + (it.p ? '<div class="tree-card-photo"><img src="' + esc(it.p) + '" alt="' + esc(it.n)
                 + '" loading="lazy"></div>' : '')
       + '<div class="tree-card-top"><h3 class="tree-name"><a href="' + esc(it.u) + '">'
