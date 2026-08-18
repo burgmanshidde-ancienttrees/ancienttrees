@@ -2,19 +2,19 @@
   "city": "Leiden",
   "country": "Netherlands",
   "status": "needs_curation",
-  "intro": "The Netherlands' oldest botanical garden anchors Leiden's tree story: Hortus Botanicus, founded in 1590, still keeps a tulip tree sown by its most famous professor in 1716, a ginkgo grafted with a female branch in 1935, and a golden chain tree whose true age was only settled after a myth about its origin turned out to be wrong. Beyond the garden walls, a beech named for a 19th-century student writer clings on at the city's medieval fortress mound, while South Holland's thickest tree waits, grafted and gnarled, in a cemetery on the city's edge.",
-  "meta_description": "Leiden's oldest tree is a 1716 tulip tree sown by Herman Boerhaave himself. Six verified trees, real stories, one currently fighting for its life.",
-  "question_answer": "Leiden's oldest documented tree is the Tulip Tree of Boerhaave in the Hortus Botanicus, sown on 12 October 1716 by professor Herman Boerhaave from seed shipped from Virginia, making it roughly 310 years old. The garden itself calls it the oldest tree of its species anywhere on the European continent.",
-  "question_meta": "A 1716 tulip tree sown by Herman Boerhaave himself is Leiden's oldest documented tree. The full six, including one currently under threat.",
-  "question_context": "Leiden's oldest-tree claim rests on unusually good paperwork: the Hortus Botanicus itself has a dated planting record naming Herman Boerhaave, the seed's origin in Virginia, and even the London merchant who shipped it, which is why the Tulip Tree of Boerhaave anchors this page with more confidence than most European cities can offer for anything close to 300 years old. The garden's Golden Chain Tree very nearly beat it: a popular story once dated it to 1601, but the Hortus's own archival research debunked that in the 1930s and settled on the 1720s instead, a rare case of an institution correcting its own legend downward rather than letting it stand. Everything else on this list is honestly younger and, in two cases, in worse health than its age alone would suggest. The Beets Beech on the Burcht mound and the grafted beech at Groenesteeg cemetery are both documented from the 19th century, both genuinely remarkable, and both currently fighting root disease that their respective caretakers are actively trying to treat rather than simply watching. None of that uncertainty changes what each tree has already lived through; it only means a visit sooner is better than one deferred.",
+  "intro": "Ten of Leiden's fourteen remarkable trees stand inside one garden. Hortus Botanicus, founded in 1590, keeps a tulip tree sown by professor Herman Boerhaave in 1716, a date-plum with holes where a maple once grew inside its trunk, the first zelkovas ever to leave Japan, the thickest horse chestnut in the Netherlands, and a catalpa held out of the canal by cables tied to a neighbouring tree. Beyond the garden walls: a beech named for a student writer on the medieval fortress mound, South Holland's thickest beech in a cemetery, and two old planes in the Plantsoen along the Singel.",
+  "meta_description": "Fourteen verified old trees in Leiden, ten of them inside a botanical garden founded in 1590, including the first zelkovas ever to leave Japan.",
+  "question_answer": "Leiden's oldest documented tree is the Tulip Tree of Boerhaave in the Hortus Botanicus, sown on 12 October 1716 by professor Herman Boerhaave from seed shipped from Virginia, making it roughly 310 years old. The garden itself calls it the oldest tree of its species anywhere on the European continent. A date-plum in the same garden, dated 1740, is next.",
+  "question_meta": "A 1716 tulip tree sown by Herman Boerhaave himself is Leiden's oldest documented tree. The full fourteen, including one fighting for its life.",
+  "question_context": "Leiden's oldest-tree claim rests on unusually good paperwork: the Hortus Botanicus has a dated planting record naming Herman Boerhaave, the seed's origin in Virginia and even the London merchant who shipped it, which is why the Tulip Tree of Boerhaave anchors this page with more confidence than most European cities can offer for anything close to 300 years old. The garden's date-plum, recorded as 1740, comes next, and its Golden Chain Tree very nearly beat both: a popular story once dated it to 1601 until the Hortus's own archival research debunked that in the 1930s and settled on the 1720s instead, a rare case of an institution correcting its own legend downward rather than letting it stand. Most of the others come from the national monumental tree register, which records a planting decade rather than a year, so several ages on this page are given as bands of twenty to fifty years instead of single dates. Two trees are honestly in trouble: the Beets Beech on the Burcht mound and the beech at Groenesteeg cemetery are both fighting root fungus, the second under active treatment by its caretakers. None of that changes what each of them has already lived through.",
   "faq": [
     {
       "q": "What is the oldest tree in Leiden?",
-      "a": "The Tulip Tree of Boerhaave in the Hortus Botanicus, sown in 1716 by professor Herman Boerhaave from Virginia seed, roughly 310 years old and, per the garden itself, the oldest of its species in Europe."
+      "a": "The Tulip Tree of Boerhaave in the Hortus Botanicus, sown in 1716 by professor Herman Boerhaave from Virginia seed, roughly 310 years old and, per the garden itself, the oldest of its species in Europe. The garden's date-plum, from 1740, is the next oldest."
     },
     {
       "q": "Are Leiden's remarkable trees free to visit?",
-      "a": "Four of the six stand in the Hortus Botanicus, which charges garden admission (around 14 euros). The Burcht and Groenesteeg cemetery are both free and open to the public year-round."
+      "a": "Ten of the fourteen stand in the Hortus Botanicus, which charges garden admission (around 14 euros). The Burcht mound, Groenesteeg cemetery and the Plantsoen park along the Singel are all free and open year-round."
     },
     {
       "q": "What is the thickest tree in Leiden?",
@@ -63,15 +63,16 @@
       "age_min": 235,
       "age_max": 245,
       "location": {
-        "address": "Hortus Botanicus Leiden, Rapenburg 73",
-        "latitude": 52.1571,
-        "longitude": 4.4843,
+        "address": "Hortus Botanicus Leiden, beside the glasshouse in the north-west of the garden",
+        "latitude": 52.156844,
+        "longitude": 4.483318,
         "neighbourhood": "Academiewijk"
       },
       "story": "Planted in 1785, this ginkgo spent a century and a half as what botanists call, without much romance, a male specimen, producing only the small catkins that never make seed. In 1935, gardeners grafted several female twigs onto its branches, cut from a ginkgo at Huis ten Donck, a country estate near Rotterdam. Only one graft took. It still lives today, a single genetically female branch grown into an otherwise male tree, and every autumn that one branch alone produces the species' distinctive plum-like seeds, whose fleshy coating gives off a smell closer to rancid butter than to fruit, an insect lure rather than a flaw. Ginkgo biloba is the sole surviving member of an entire plant order, its lineage traceable in the fossil record to roughly 270 million years ago, long before flowering plants existed at all, which makes this specific tree's mid-1930s surgery a strange collision of eras: a living fossil, tinkered with using the grafting techniques of a 20th-century orchard. The Hortus built its greenhouse complex around the tree in 1938, close enough that the ginkgo effectively anchors the entire glasshouse wing rather than sitting apart from it.",
       "verified_sources": [
         "https://hortusleiden.nl/de-hortus/collectie/bijzondere-bomen/ginkgo-biloba",
-        "https://hortusleiden.nl/zien-en-doen/ontdek-de-botanische-tuin/historie"
+        "https://hortusleiden.nl/zien-en-doen/ontdek-de-botanische-tuin/historie",
+        "https://www.bomenstichting.nl/"
       ],
       "access": "Paid entry to Hortus Botanicus Leiden (around 14 euros for adults)",
       "transport": "15 minute walk from Leiden Centraal station",
@@ -89,7 +90,7 @@
         "status": "approved"
       },
       "curation_status": "ai_generated",
-      "location_precision": "approximate"
+      "location_precision": "confirmed"
     },
     {
       "id": "lei_003",
@@ -99,15 +100,16 @@
       "age_min": 175,
       "age_max": 190,
       "location": {
-        "address": "Hortus Botanicus Leiden, beside the garden pond",
-        "latitude": 52.1571,
-        "longitude": 4.4843,
+        "address": "Hortus Botanicus Leiden, Rapenburg 73",
+        "latitude": 52.156006,
+        "longitude": 4.484126,
         "neighbourhood": "Academiewijk"
       },
       "story": "An Englishman gave this tree its first paper trail. George Loddiges, a London nurseryman whose own family ran one of Europe's great commercial gardens, documented it in 1836, and the Hortus dates the tree itself to around 1840, making it a weeping beech, a cultivar with heavy main branches held almost horizontal and side branches that trail down to the ground, grafted onto ordinary beech rootstock since the weeping form does not come true from seed. It grows directly beside the garden's pond next to an equally old fernleaf beech, the two forming one of the Hortus's most photographed corners, dense green tents a visitor can walk directly beneath rather than merely past. Age has not been kind to the original tree lately; its condition has been declining for some years, enough that the Hortus planted a younger weeping beech beside it in 1982, a gift after the sapling appeared at Amsterdam's Floriade garden show that year, deliberately positioned as an eventual successor rather than a separate attraction. Nothing here pretends the older tree will stand forever. It has already outlived the nurseryman who first wrote it down by more than a century, and for now it is still the one worth walking to.",
       "verified_sources": [
         "https://hortusleiden.nl/de-hortus/collectie/bijzondere-bomen/treurbeuk",
-        "https://hortusleiden.nl/zien-en-doen/ontdek-de-botanische-tuin/historie"
+        "https://hortusleiden.nl/zien-en-doen/ontdek-de-botanische-tuin/historie",
+        "https://www.bomenstichting.nl/"
       ],
       "access": "Paid entry to Hortus Botanicus Leiden (around 14 euros for adults)",
       "transport": "15 minute walk from Leiden Centraal station",
@@ -118,7 +120,7 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "confirmed"
     },
     {
       "id": "lei_004",
@@ -195,16 +197,17 @@
       "age_min": 190,
       "age_max": 215,
       "location": {
-        "address": "Groenesteeg cemetery",
-        "latitude": 52.1569347,
-        "longitude": 4.5031226,
+        "address": "Groenesteeg cemetery, in the middle of the burial ground, Groenesteeg, Leiden",
+        "latitude": 52.157429,
+        "longitude": 4.503538,
         "neighbourhood": "Groenoord"
       },
       "story": "Two beech varieties grafted together, growing at different rates for two centuries, is why this one looks nothing like a normal beech. A copper beech was grafted low onto a common green beech rootstock, standard practice since copper beech does not breed true from seed, but the mismatched growth rates produced an unusually broad, gnarled base, branches starting barely two metres up, topping out into a comparatively slender 15-metre crown that still spreads 24 metres wide. Groenesteeg cemetery was laid out in 1813 over one of Leiden's demolished city fortifications, and the tree was likely planted around that founding date, making it roughly 200 years old, a genuine rarity since few beeches live that long anywhere. Measured at 6.5 metres in circumference, it is officially the thickest beech in the Netherlands and the thickest tree in the entire province of South Holland, wide enough that calling it merely large undersells the effect of walking up to the trunk itself. In October 2025 it placed fourth in the national Boom van het Jaar (Tree of the Year) public vote, drawing over a thousand votes on its own oddity and scale alone, beaten only by a giant sequoia in Enschede and two other regional finalists. Like its neighbour on the Burcht mound, it is fighting a root fungus, though here the cemetery's caretakers are actively treating it, with annual nutrient injections and a policy of leaving fallen leaves in place to feed the soil around its base.",
       "verified_sources": [
         "https://sleutelstad.nl/2025/10/09/beuk-op-leidse-begraafplaats-mogelijk-mooiste-boom-van-nederland/",
         "https://sleutelstad.nl/2025/10/15/beuk-groenesteeg-vierde-in-verkiezing-boom-van-het-jaar/",
-        "https://bomenbieb.nl/bijzondere-bomen/bruine-beuk-groenesteeg/"
+        "https://bomenbieb.nl/bijzondere-bomen/bruine-beuk-groenesteeg/",
+        "https://www.bomenstichting.nl/"
       ],
       "access": "Free, cemetery open to visitors during daylight hours year-round",
       "transport": "20 minute walk, or a short bike ride, from Leiden Centraal station",
@@ -215,7 +218,254 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "lei_007",
+      "name": "The Date-plum of the Hortus",
+      "species": "Date-plum (Diospyros lotus)",
+      "age_estimate": "planted 1700-1750, so between 275 and 325 years",
+      "age_min": 276,
+      "age_max": 326,
+      "location": {
+        "address": "Hortus Botanicus Leiden, Rapenburg 73, in the collection garden",
+        "latitude": 52.156779,
+        "longitude": 4.483508,
+        "neighbourhood": "Academiewijk"
+      },
+      "story": "Children call this one the Halloween tree, and the holes in its trunk have a stranger history than the nickname suggests. Late in the 19th century a maple seeded itself inside the trunk of the date-plum and grew there. Nobody took it out for roughly forty years, until 1931, and the cavities it left behind were then packed with concrete. Another forty years passed before the tree surgeons at Copijn removed that concrete again, which is how the openings you can see today came to exist. Iron pins were fitted inside what was left of the trunk to hold it together, and they are still doing that work. The national monumental tree register dates the tree to 1740, which would make it the second oldest in the Hortus Botanicus after the tulip tree Herman Boerhaave sowed in 1716. Its recorded planting band is wider, 1700 to 1750, so read the age as somewhere between 275 and 325 years in the same bed. Date-plums are either male or female, and this is a male, so it never fruits. The blue-black fruit the species is named for hangs on a younger female specimen the garden keeps in the fern garden instead. This tree offers a hollow trunk held up by ironmongery and a nickname it earned honestly.",
+      "verified_sources": [
+        "https://www.bomenstichting.nl/",
+        "https://hortusleiden.gardenexplorer.org/taxon-6383.aspx"
+      ],
+      "access": "Paid entry to Hortus Botanicus Leiden (around 14 euros for adults)",
+      "transport": "15 minute walk from Leiden Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "lei_009",
+      "name": "The Old Plane of the Plantsoen",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "planted 1800-1850, so between 175 and 225 years",
+      "age_min": 176,
+      "age_max": 226,
+      "location": {
+        "address": "Plantsoen, at number 1, Leiden",
+        "latitude": 52.15453,
+        "longitude": 4.502568,
+        "neighbourhood": "Plantsoen"
+      },
+      "story": "This plane tree was already standing before the park around it existed. The Plantsoen was laid out between 1835 and 1842 as a job-creation scheme, an English landscape park built over Leiden's demolished bolwerken, the earthworks that had defended the city until they stopped being useful. Salomon van der Paauw designed it, which is why there are no straight paths, why the sightlines keep opening onto the water of the Singel, and why there has been an aviary here since 1867. The register dates this plane to the 1820s and calls it the oldest tree in the park, older than the layout it stands in. Its formal planting band is wider, 1800 to 1850, so its age is somewhere between 175 and 225 years. Planes became the workhorse of European city parks because they put up with compacted soil, air that would finish off a beech, and hard pruning, which is why so many survive from exactly this period of municipal park building. Most of them went into new ground as young stock. This one, by the register's dating, was already a tree when the diggers arrived. Stand at Plantsoen number 1 and look up the trunk: the flaking bark gives the species away, and above it sits a crown that has had two centuries to fill out.",
+      "verified_sources": [
+        "https://www.bomenstichting.nl/"
+      ],
+      "access": "Free, public city park, open at any time",
+      "transport": "20 minute walk from Leiden Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "lei_010",
+      "name": "The Horse Chestnut of the Witte Singel",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "planted 1800-1850, so between 175 and 225 years",
+      "age_min": 176,
+      "age_max": 226,
+      "location": {
+        "address": "Hortus Botanicus Leiden, on the Witte Singel waterside",
+        "latitude": 52.15603,
+        "longitude": 4.483498,
+        "neighbourhood": "Academiewijk"
+      },
+      "story": "At 5.8 metres round, this is the thickest horse chestnut in the Netherlands by the national monumental tree register's own measurement. It stands at the edge of the Hortus Botanicus with its roots almost in the water of the Witte Singel, and the register's note dates it to 1841, inside a recorded planting band of 1800 to 1850. There is a hollow in the trunk on the water side, fitted with iron pins to stop the remaining wood pulling itself apart, which is the standard treatment for a veteran that has outgrown its own structural margin. It has a problem every horse chestnut in northern Europe now shares. The horse chestnut leaf miner, a moth whose larvae eat the tissue between the two surfaces of a leaf, reached the Netherlands in the late 1990s and browns the foliage from midsummer onward. It disfigures without usually killing, so a chestnut in August looks considerably worse than it is. Come in May instead, when the flower candles are up and none of that has started. Horse chestnuts went into Dutch cities by the thousand in exactly this period, mostly along avenues and canal banks, and almost none of them reached this girth. Conkers drop here in September, onto a bank where the water does half the collecting for you.",
+      "verified_sources": [
+        "https://www.bomenstichting.nl/"
+      ],
+      "access": "Paid entry to Hortus Botanicus Leiden (around 14 euros for adults)",
+      "transport": "15 minute walk from Leiden Centraal station",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when the white flower candles stand up over the water"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "lei_011",
+      "name": "The Siebold Zelkova",
+      "species": "Saw-leaf Zelkova (Zelkova serrata)",
+      "age_estimate": "the register's band says 1800-1850 while its own note says 1858, so between 165 and 225 years",
+      "age_min": 166,
+      "age_max": 226,
+      "location": {
+        "address": "Hortus Botanicus Leiden, in the Japanese garden",
+        "latitude": 52.155604,
+        "longitude": 4.484404,
+        "neighbourhood": "Academiewijk"
+      },
+      "story": "These are the first zelkovas that ever left Japan. Philipp Franz von Siebold, the physician who spent the 1820s on the Dutch trading post at Deshima and sent home more Japanese plants than any European before him, brought zelkovas out with him in 1830. Two of them ended up here. One grew as a single trunk and stands at the centre of the Japanese garden; this one came up with five stems, so the register measures its girth on the thickest of them, about two metres, which undersells the mass of the thing considerably. The dating needs stating plainly, because the register disagrees with itself. Its planting band puts the tree between 1800 and 1850, while its own note says the two Leiden zelkovas went into the ground in 1858 and 1860. Take the age as somewhere between 165 and 225 years, and if you know which is right, tell us. Zelkova serrata is a relative of the elm that turned out to be largely resistant to Dutch elm disease, which is a good part of why it appeared on European planting lists after the 1970s, when the elms were dying in every city on the continent. This tree predates that fashion by more than a century, and it got here because one man wanted Japan in a Dutch garden.",
+      "verified_sources": [
+        "https://www.bomenstichting.nl/"
+      ],
+      "access": "Paid entry to Hortus Botanicus Leiden (around 14 euros for adults)",
+      "transport": "15 minute walk from Leiden Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "lei_012",
+      "name": "The Fern-leaved Beech of the Nut Field",
+      "species": "Fern-leaved Beech (Fagus sylvatica f. asplenifolia)",
+      "age_estimate": "planted 1800-1850, and 1818 by the register's own note, so between 175 and 225 years",
+      "age_min": 176,
+      "age_max": 226,
+      "location": {
+        "address": "Hortus Botanicus Leiden, along the path on the Notenveld",
+        "latitude": 52.156398,
+        "longitude": 4.484092,
+        "neighbourhood": "Academiewijk"
+      },
+      "story": "The oldest fern-leaved beech in the Netherlands is also one of the three thickest, and it has had two centuries of elbow room to get that way. The register puts it in the ground in 1818, while the Hortus was growing and being relaid in the English landscape style, out on the open patch the garden calls the Notenveld, the nut field, among trees kept here for what they drop. Nothing crowds it, so it grew the way a beech grows when nothing is competing for the light: outward rather than upward, into one enormous low dome. Fern-leaved beech is a form of the ordinary European beech whose leaves are cut into narrow lobes, fine enough that from a few metres away the crown reads as feathered rather than leafed. Up close the trunk does something else entirely. It is vaulted and swollen, bulging in some places and open in others, the sort of surface people put a hand on without quite deciding to. Come in spring and the ground competes for attention: stinzenplanten, the old Dutch estate bulbs that naturalise under mature trees, come up in sheets underneath before the beech leafs out and takes the light back. The formal planting band on the register runs 1800 to 1850, so the age is between 175 and 225 years.",
+      "verified_sources": [
+        "https://www.bomenstichting.nl/"
+      ],
+      "access": "Paid entry to Hortus Botanicus Leiden (around 14 euros for adults)",
+      "transport": "15 minute walk from Leiden Centraal station",
+      "best_time": {
+        "months": [
+          4
+        ],
+        "kind": "fresh leaves",
+        "label": "April, when the stinzen bulbs flower underneath and the fern-cut leaves open"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "lei_013",
+      "name": "The Grafted Ash of the Hortus",
+      "species": "Narrow-Leaved Ash (Fraxinus angustifolia)",
+      "age_estimate": "planted 1810-1820, so between 206 and 216 years",
+      "age_min": 206,
+      "age_max": 216,
+      "location": {
+        "address": "Hortus Botanicus Leiden, Rapenburg 73",
+        "latitude": 52.156248,
+        "longitude": 4.483885,
+        "neighbourhood": "Academiewijk"
+      },
+      "story": "This ash has spent two hundred years slowly swallowing its own graft. It was planted in 1818 and grafted, probably at around two metres up the stem, where the join left the swelling that grafts always leave. The Dutch word for that bulge is slobbertrui, a baggy jumper, and on this tree it has travelled downward. The register records the swelling sinking further down the trunk decade by decade, until today it sits a few decimetres above the soil on one side and less than a decimetre on the other. Partly because of all that accumulated tissue, the register calls it the thickest narrow-leaved ash in the country. Fraxinus angustifolia comes from southern Europe and North Africa, drier and warmer country than a botanical garden in the Dutch coastal plain, and it wears the family look in a slimmer cut: leaflets narrower and more sharply pointed than the common ash standing beside every ditch in the province. Its recorded planting band runs 1810 to 1820, which puts it a little past two hundred years old. The garden's fern-leaved beech went into the ground the same year. Ash dieback has been working through Europe's ash population for two decades now, killing young and old alike, which makes a healthy veteran of this size worth the detour on its own.",
+      "verified_sources": [
+        "https://www.bomenstichting.nl/"
+      ],
+      "access": "Paid entry to Hortus Botanicus Leiden (around 14 euros for adults)",
+      "transport": "15 minute walk from Leiden Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "lei_016",
+      "name": "The Leaning Catalpa of the Hortus",
+      "species": "Catalpa (Catalpa sp.)",
+      "age_estimate": "planted 1820-1830, so between 196 and 206 years",
+      "age_min": 196,
+      "age_max": 206,
+      "location": {
+        "address": "Hortus Botanicus Leiden, along the water behind the glasshouse",
+        "latitude": 52.156217,
+        "longitude": 4.483291,
+        "neighbourhood": "Academiewijk"
+      },
+      "story": "This catalpa is kept out of the canal by cables tied to another tree on this list. It stands right on the edge of the singel behind the glasshouse, and at some point it leaned far enough that it was going to end up in the water. The answer was anchors, run across to the zelkova in the Japanese garden, and that arrangement is what still holds it upright. Two monumental trees, one carrying the other. The register dates it to 1820, inside a recorded band of 1820 to 1830, and counts it among the five thickest catalpas in the Netherlands. The catalpas planted across Europe came mostly from the American south and arrived in the 18th century for exactly the reason people still plant them: outsized heart-shaped leaves that come late and drop early, upright trusses of white flowers marked purple and yellow in the throat, then long thin seed pods that hang on all winter like forgotten string. It is a soft-wooded, brittle tree, never built for two centuries of Dutch wind on an exposed bank, which makes the cabling less an indignity than the reason there is still anything here to look at. Walk behind the glasshouse and follow the line of the water until you find the one that is not standing straight.",
+      "verified_sources": [
+        "https://www.bomenstichting.nl/"
+      ],
+      "access": "Paid entry to Hortus Botanicus Leiden (around 14 euros for adults)",
+      "transport": "15 minute walk from Leiden Centraal station",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "flowers",
+        "label": "late June and July, when the white flower trusses open"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "lei_018",
+      "name": "The Plane at Plantsoen 11",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "planted 1850-1860, so between 166 and 176 years",
+      "age_min": 166,
+      "age_max": 176,
+      "location": {
+        "address": "Plantsoen, on the Singel at number 11, Leiden",
+        "latitude": 52.153972,
+        "longitude": 4.502612,
+        "neighbourhood": "Plantsoen"
+      },
+      "story": "The London plane is a hybrid nobody set out to make. Somewhere in the 17th century an oriental plane from the eastern Mediterranean crossed with an American one, probably in a nursery, and the accident grew faster than either parent, shrugged off coal smoke and put up with having its roots under paving. Europe then planted it in every city it had. This one went into the Plantsoen in the 1850s, on the stretch of the park at number 11, more than a decade after the park itself was finished in 1842. The Plantsoen was Leiden's first proper public park, cut into the line of the old defensive bolwerken between 1835 and 1842 as work for the unemployed, to a design by Salomon van der Paauw, and it is now part of the Singelpark, the green ring the city has been stitching back together around its historic centre. The register notes that no other part of that ring carries as many different old trees. Bark is the thing to look at here. Planes shed theirs in irregular plates, one reason they cope with dirty city air, and it leaves an old trunk looking like military camouflage in cream, olive and grey. This one has had roughly 170 years of shedding, and it stands on the water, which is the view the whole park was drawn around.",
+      "verified_sources": [
+        "https://www.bomenstichting.nl/"
+      ],
+      "access": "Free, public city park, open at any time",
+      "transport": "20 minute walk from Leiden Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }

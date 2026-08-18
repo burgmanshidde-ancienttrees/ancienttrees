@@ -354078,8 +354078,8 @@
    "status": 1
   }
  ],
- "dead_entries_warning": "642 entries contain a felling word somewhere in `history`, but most are prose about OTHER trees (a stump counted for rings, a predecessor on the site). The tighter test below finds the ones whose own history says THIS tree is gone. Amsterdam's white horse chestnut on the Weteringschans (nr 1686107) is the worked example, found 2026-08-18 by a write pass that refused to write it: \"De boom is tussen januari 2011 en mei 2014 geveld, zo blijkt uit foto's op streetview.\" A register entry outliving its tree is normal; publishing one breaks the rule that a dead tree never ships. ALWAYS run this before treating an entry as live.",
- "dead_entries_regex": "\\b(?:de\\s+)?(?:boom|linde|eik|beuk|kastanje|iep|plataan|populier|es|esdoorn|conifeer|exemplaar)\\b[^.]{0,60}?\\b(is|werd|zijn|werden)\\b[^.]{0,40}?\\b(geveld|gekapt|gerooid|omgewaaid|omgezaagd|verwijderd|dood|afgestorven)\\b|\\bniet meer aanwezig\\b|\\bis verdwenen\\b|\\bbestaat niet meer\\b",
+ "dead_entries_warning": "642 entries contain a felling word somewhere in `history`, but most are prose about OTHER trees (a stump counted for rings, a predecessor on the site). The tighter test below finds the ones whose own history says THIS tree is gone. Amsterdam's white horse chestnut on the Weteringschans (nr 1686107) is the worked example, found 2026-08-18 by a write pass that refused to write it: \"De boom is tussen januari 2011 en mei 2014 geveld, zo blijkt uit foto's op streetview.\" A register entry outliving its tree is normal; publishing one breaks the rule that a dead tree never ships. ALWAYS run this before treating an entry as live. WIDENED 2026-08-18 after a Leiden write pass refused lei_014, a copper beech whose history ends \"Gevolgd door het rooien van de boom, november 1987\": the first pattern required the tree as grammatical subject and missed the nominalised form. That single miss is the argument for never trusting this filter alone; a writer reading the history is the real check.",
+ "dead_entries_regex": "\\b(?:de\\s+)?(?:boom|linde|eik|beuk|kastanje|iep|plataan|populier|es|esdoorn|conifeer|exemplaar)\\b[^.]{0,60}?\\b(?:is|werd|zijn|werden)\\b[^.]{0,40}?\\b(?:geveld|gekapt|gerooid|omgewaaid|omgezaagd|verwijderd|dood|afgestorven)\\b|\\bhet (?:rooien|kappen|vellen|verwijderen) van de boom\\b|\\b(?:geveld|gekapt|gerooid|omgezaagd) in \\d{4}\\b|\\bniet meer aanwezig\\b|\\bis verdwenen\\b|\\bbestaat niet meer\\b",
  "dead_entries_found": [
   1695456,
   1680618,
@@ -354152,6 +354152,7 @@
   1682104,
   1690753,
   1677679,
+  1687838,
   1686470,
   1680686,
   1679309,
@@ -354184,6 +354185,7 @@
   1687891,
   1682625,
   1695211,
+  1677936,
   1682889,
   1689349,
   1695656,
@@ -354203,6 +354205,7 @@
   1682441,
   1689157,
   1678643,
+  1689439,
   1685547,
   1687435,
   1677527,
@@ -354210,6 +354213,7 @@
   1692345,
   1691052,
   1683161,
+  1679547,
   1681186,
   1691381,
   1690153,
@@ -354256,5 +354260,6 @@
   1696989,
   1697121,
   1697360
- ]
+ ],
+ "dedupe_warning": "Matching a register entry against trees we already publish by COORDINATE fails when our own pin is approximate. Leiden 2026-08-18: three of twelve candidates were trees already live (the Hortus ginkgo, the weeping beech, the Groenesteeg beech) and all three cleared a 50 m filter, at 73, 122 and 62 m, because our published pins shared one generic Hortus coordinate. The register's own coordinate is the better one, so the fix runs the other way: where a candidate lands near an APPROXIMATE pin of ours, treat it as the same tree and use the register coordinate to upgrade our pin, rather than publishing a second entry. Widen the radius to ~200 m whenever the published pin is approximate."
 }

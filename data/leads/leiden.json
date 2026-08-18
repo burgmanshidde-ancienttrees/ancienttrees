@@ -1,0 +1,40 @@
+{
+  "city": "Leiden",
+  "country": "Netherlands",
+  "city_slug": "leiden",
+  "note": "Written during the 2026-08-18 writing pass over data/research/leiden-lrmb-ready.json (Landelijk Register Monumentale Bomen v2024, Bomenstichting, used with written permission). Four of the twelve register entries in that file were refused. Recorded here so a later register import does not re-add them.",
+  "leads": [
+    {
+      "name": "Bruine beuk, Hortus entrance (LRMB 1679547)",
+      "species": "Fagus sylvatica f. purpurea",
+      "lat": 52.155626,
+      "lng": 4.484047,
+      "status": "blocked",
+      "why": "Felled. The register's own historie note ends 'Gevolgd door het rooien van de boom, november 1987': planted 1816, giant polypore infection from 1984, removed November 1987. The entry survives in the register as a historical record, not as a standing tree. Never publish."
+    },
+    {
+      "name": "Japanse Notenboom / Ginkgo, Hortus (LRMB 1679548)",
+      "species": "Ginkgo biloba",
+      "lat": 52.156844,
+      "lng": 4.483318,
+      "status": "blocked",
+      "why": "Already published as lei_002, The Ginkgo of the Hortus. Same tree: 1785, female branch grafted 1935, glasshouse complex built around it in 1938. The register's surveyed coordinate has been applied to lei_002 and its pin upgraded to confirmed."
+    },
+    {
+      "name": "Treurbeuk, Hortus (LRMB 1690081)",
+      "species": "Fagus sylvatica 'Pendula'",
+      "lat": 52.156006,
+      "lng": 4.484126,
+      "status": "blocked",
+      "why": "Already published as lei_003, The Weeping Beech of the Hortus. Same tree: planted around 1840, successor obtained in 1982 from the Amsterdam Floriade. The register's surveyed coordinate has been applied to lei_003 and its pin upgraded to confirmed."
+    },
+    {
+      "name": "De bruine beuk van de Groenesteeg (LRMB 1690124)",
+      "species": "Fagus sylvatica f. purpurea",
+      "lat": 52.157429,
+      "lng": 4.503538,
+      "status": "blocked",
+      "why": "Already published as lei_006, The Groenesteeg Beech. Same tree: the thickest beech in South Holland, in the middle of Groenesteeg cemetery. It slipped the 50m dedupe filter because our published pin was approximate and 62m off. The register's surveyed coordinate has been applied to lei_006 and its pin upgraded to confirmed."
+    }
+  ]
+}
