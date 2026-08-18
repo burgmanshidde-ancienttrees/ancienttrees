@@ -55,7 +55,15 @@
         "height": 1704
       },
       "curation_status": "ai_generated",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June to July, when it flowers",
+        "kind": "flowers"
+      }
     },
     {
       "id": "utr_002",
@@ -86,7 +94,14 @@
         "height": 2272
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "November: the whole crown turns butter gold, then drops in a day or two",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "utr_003",
@@ -151,7 +166,16 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: red arils on female trees, the only part that is not poisonous",
+        "kind": "fruit"
+      }
     },
     {
       "id": "utr_005",
@@ -182,7 +206,15 @@
         "height": 2448
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June to July, when it flowers",
+        "kind": "flowers"
+      }
     }
   ]
 }

@@ -56,7 +56,15 @@
         "height": 628
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "war_002",
@@ -180,7 +188,15 @@
       },
       "curation_status": "flagged",
       "notes": "Two oaks, both protected, both at this spot per register + Lazienki Museum's own page (girth 450cm, height 28m, 'almost two centuries'). Museum page says 'Romantic Garden', register says 'near the New Orangery'; both real, closely-sited features inside the same park, very likely the same pair, not asserted as identical beyond that since no single source states it explicitly.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "war_007",
@@ -210,7 +226,15 @@
       },
       "curation_status": "flagged",
       "notes": "Register + Wilanow's own monument-tree inventory (27 of 28 living, none matching this description as the dead one) confirm the tree is alive and protected. The Sobieski-planting legend is named but not dated to this specific tree (bridge-claim avoided): no source ties this individual specimen to his tenure, so age stays undocumented. A reported girth 'over 4m' could not be independently confirmed this pass (the specific subpage 404'd); treat as unconfirmed.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June to July, when it flowers",
+        "kind": "flowers"
+      }
     },
     {
       "id": "war_008",

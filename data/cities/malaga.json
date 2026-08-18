@@ -56,7 +56,16 @@
       },
       "curation_status": "flagged",
       "notes": "Age (approximately 400 years) and the Velez-Malaga transplant origin come from the garden's own official page; a second, independent source (a garden-focused travel blog) corroborates the tree's age and significance but not an independent measurement, so this is closer to single-sourced than the project's usual two-independent-sources bar, kept per the same standard applied to other institutions' own authoritative pages elsewhere on this site. Photo verified directly: shows a large, heavily gnarled olive with a plaque at its base inside a curved white-walled plaza named 'Plaza del Olivo Centenario' (Centenary Olive Plaza), an exact match.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: the harvest, when the fruit turns from green to black",
+        "kind": "fruit"
+      }
     },
     {
       "id": "mlg_002",

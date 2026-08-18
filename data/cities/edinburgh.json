@@ -56,7 +56,16 @@
       },
       "curation_status": "flagged",
       "notes": "Age genuinely disputed: Historic Environment Scotland's own cautious figure is 300+ years; the Mary Queen of Scots planting legend requires 450+. Presented as a range, legend labelled as tradition rather than fact. Photo verified directly against its Commons file page: CC BY-SA 3.0 / GFDL, captioned as showing large yew trees in the inner courtyard, categorised under Taxus baccata in Scotland. Location corrected 2026-07-28: the stored coordinate had been about 2.2km from the actual castle, caught by a systematic geocode audit and confirmed independently two ways, Nominatim's own geocode of \"Craigmillar Castle Road, Bingham, Craigmillar\" (which resolves to this exact postcode, EH16 4SY, already cited in this entry's own address) and Wikipedia's stated coordinate for Craigmillar Castle (55.9259, -3.1406), agreeing within 40m of each other. Pin now sits on the castle itself; still approximate since it isn't a survey of the courtyard specifically.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: red arils on female trees, the only part that is not poisonous",
+        "kind": "fruit"
+      }
     },
     {
       "id": "edi_002",
@@ -155,7 +164,16 @@
       },
       "curation_status": "ai_generated",
       "notes": "Planting date (1826) independently corroborated by RBGE's own Living Collection page and treecare.org.uk, an independent arboretum-tracking site. The single best documented age of any Edinburgh entry. Photo candidate rejected 2026-07-30: the 2026-07-30 found_needs_check pick (iNaturalist observation 128445057, tonyrebelo, 2022-07-06, photo 218172733) is the RBGE Botanics' Atlas Cedar (Cedrus atlantica), not this entry's Cedar of Lebanon (Cedrus libani); confirmed via the observation's own current community taxon field, not just visual judgement, and the blue-grey glaucous foliage and cascading habit in the photo itself matches Atlas Cedar's look over Lebanon Cedar's flatter, greener tiers. A same-bounding-box iNaturalist search for genuine Cedrus libani near RBGE turned up only a Davidson's Mains specimen and a Merchiston Castle School specimen, both different gardens entirely, no usable candidate at RBGE itself. Reverted to missing rather than left pending, so a future session doesn't approve a mismatched species by trusting the prior note's visual description alone.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: upright barrel cones that sit on the branches like eggs",
+        "kind": "fruit"
+      }
     },
     {
       "id": "edi_005",
@@ -276,7 +294,15 @@
       },
       "curation_status": "flagged",
       "notes": "Single source only, no age or planting date available anywhere. Included on visual/curiosity merit per CLAUDE.md's qualifying criteria (visually spectacular), not on age, and flagged as such throughout rather than implying verified antiquity.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: winged seeds that spin down in pairs",
+        "kind": "fruit"
+      }
     },
     {
       "id": "edi_009",

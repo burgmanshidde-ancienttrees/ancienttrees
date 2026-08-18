@@ -58,7 +58,15 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "Register kod 101079, isop_id 44659. Girth 435cm (turistika.cz/city sources) versus 440cm in the AOPK register, record last changed 2024-06-16; measurement-year drift rather than a conflict. Flagged because no dated post-2020 news item or observation was found confirming it standing, though the register record was updated in 2024 and Wikimedia Commons carries 2026 photographs of this tree."
+      "notes": "Register kod 101079, isop_id 44659. Girth 435cm (turistika.cz/city sources) versus 440cm in the AOPK register, record last changed 2024-06-16; measurement-year drift rather than a conflict. Flagged because no dated post-2020 news item or observation was found confirming it standing, though the register record was updated in 2024 and Wikimedia Commons carries 2026 photographs of this tree.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "brq_002",
@@ -90,7 +98,15 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "Register kod 106252, isop_id 56771. A separately named and separately protected oak 130m from brq_001, not a register twin. Girth 410cm (2004) and 423cm (2010) per Encyklopedie dejin Brna, 480cm in the AOPK register whose record was last updated 2018-03-02. Flagged because the freshest photo evidence found for this specific tree dates from 3 May 2015."
+      "notes": "Register kod 106252, isop_id 56771. A separately named and separately protected oak 130m from brq_001, not a register twin. Girth 410cm (2004) and 423cm (2010) per Encyklopedie dejin Brna, 480cm in the AOPK register whose record was last updated 2018-03-02. Flagged because the freshest photo evidence found for this specific tree dates from 3 May 2015.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "brq_003",

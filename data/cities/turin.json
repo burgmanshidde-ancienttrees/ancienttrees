@@ -211,7 +211,15 @@
       },
       "curation_status": "flagged",
       "notes": "Regional register card 007/L219/TO/01: 400 cm girth, 28 m, crown 15 m, age band over 200, publicly owned. Second source is Quotidiano Piemontese, which places a 28 m Quercus robur 'nei pressi della Rocaille vicina al retro della Facolta di Architettura'. Flagged on pin, not on facts: the rock garden area is broad and Parco del Valentino holds other large oaks, and the register coordinate is single-sourced because MASAF repeats it rather than confirming it. Marked approximate for that reason.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "tor_006",

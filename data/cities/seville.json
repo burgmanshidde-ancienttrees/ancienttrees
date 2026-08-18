@@ -584,7 +584,15 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "Single source, the municipal catalogue, hence flagged; the sevilla.org per-tree page is the same authority rather than a second source. The catalogue is dated July 2022 and has no expiry: one tree in it, ficha 45 on the Plaza de la Encarnacion, was felled in October 2023, so a designation here is not a live check. Every condition word in the story is the catalogue's own. No age is claimed because the catalogue records none. Coordinate matches the stated emplazamiento (the Banos de Dona Maria de Padilla under the Patio del Crucero) to within about 15 metres, which is why this pin is confirmed while two other Alcazar entries added the same day are not."
+      "notes": "Single source, the municipal catalogue, hence flagged; the sevilla.org per-tree page is the same authority rather than a second source. The catalogue is dated July 2022 and has no expiry: one tree in it, ficha 45 on the Plaza de la Encarnacion, was felled in October 2023, so a designation here is not a live check. Every condition word in the story is the catalogue's own. No age is claimed because the catalogue records none. Coordinate matches the stated emplazamiento (the Banos de Dona Maria de Padilla under the Patio del Crucero) to within about 15 metres, which is why this pin is confirmed while two other Alcazar entries added the same day are not.",
+      "best_time": {
+        "months": [
+          4,
+          5
+        ],
+        "label": "April to May, when it flowers",
+        "kind": "flowers"
+      }
     },
     {
       "id": "sev_018",

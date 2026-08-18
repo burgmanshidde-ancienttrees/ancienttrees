@@ -57,7 +57,16 @@
       },
       "curation_status": "flagged",
       "notes": "The register lists an olive at the Largo do Mosteiro, in front of the Fundacao, with no age recorded. Independent sources describe Wellington's tree as an olive standing at the former convent and now in the middle of the road there, which matches this entry's species and position, but no source explicitly links the classified tree to the tradition. Published as a tradition, not as a fact, and the age range is deliberately wide because the register gives none.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: the harvest, when the fruit turns from green to black",
+        "kind": "fruit"
+      }
     },
     {
       "id": "bsc_002",
@@ -272,7 +281,15 @@
       },
       "curation_status": "flagged",
       "notes": "ICNF processo AIP01110411I: girth 4.92 m, height 24 m, crown 20.7 m, 300 years at the 2016 measurement, so about 310 now. Wikipedia's forest article names oak among the species of the forest's relic native cover, corroborating species and presence; the age rests on the register alone.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          8,
+          9
+        ],
+        "label": "August to September: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "bsc_009",

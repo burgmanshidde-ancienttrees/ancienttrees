@@ -56,7 +56,16 @@
       },
       "curation_status": "ai_generated",
       "notes": "Registered on Italy's regional monumental tree list (RAMI ID #6491) with a specific GPS survey point. Planting date and attribution to Micheli corroborated by a second independent source.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: red arils on female trees, the only part that is not poisonous",
+        "kind": "fruit"
+      }
     },
     {
       "id": "flo_002",
@@ -150,7 +159,15 @@
       },
       "curation_status": "flagged",
       "notes": "One of the six trees the Comune di Firenze already owns and recognises as monumental in its own right (per the municipality's own press materials on the wider 19-candidate/6-recognised registry). No planting date or documented age has surfaced anywhere; age range is a wide, honest estimate from trunk girth and height alone.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "flo_005",
@@ -240,7 +257,16 @@
       },
       "curation_status": "flagged",
       "notes": "No individual planting date or age has been documented for this specific tree; age range bounded loosely by the Bobolino garden's known construction under Poggi (1865-1877), not a measured figure. Regional monumental-tree status (RAMI, 'regional significance') is distinct from the Comune di Firenze's separate list of six municipally-owned recognised trees, which this tree is not part of; worded carefully to avoid conflating the two registries.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: upright barrel cones that sit on the branches like eggs",
+        "kind": "fruit"
+      }
     },
     {
       "id": "flo_008",
@@ -372,7 +398,15 @@
       },
       "curation_status": "ai_generated",
       "notes": "MASAF 06/D612/FI/09. Three sources: the garden's own monumental-trees page (planted first half of the 1800s, heavily pruned in the 1980s against a fungal disease), RAMI 6488 (planted 1827, survey 14 Oct 2021, girth 5.75 m, height 10.00 m, past crown reduction for Dutch elm disease, GPS 43.778827/11.261576), and MASAF (girth 610 cm, height 30.0 m). REGISTER TRAP: MASAF's 30 m height predates the pruning and must never be quoted as current; the story uses the 2021 figure and explains the gap. Girth differs between sources (610 vs 575 cm) because they measure at different heights, so the story says 'close to six metres' rather than picking one. Both registers also use the older synonym Zelkova crenata. Alive, health surveyed 2021, inside the ticketed garden. No superlative claimed, so no conflict with flo_003's 'widest trunk in the city' (670 cm).",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: the whole crown turns orange-brown, the tree's best-known moment after its shape",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "flo_012",

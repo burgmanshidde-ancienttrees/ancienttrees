@@ -166,7 +166,15 @@
       },
       "curation_status": "flagged",
       "notes": "Kongens Have's founding (1606) and the c.1664/c.1700 planting of Kavalergangen and Damegangen are documented by the official Danish heritage agency's Trap Danmark entry and corroborated by Danish Wikipedia; both also state that virtually no original trees remain in those two avenues. The claim that Husalle's lindens are 'among the oldest in the country' comes from the same sources but without an exact planting date for that specific avenue, so the age range given here (300-360 years) reflects the garden's documented 1660s-1700s planting era generally rather than a dated record for Husalle itself. This entry represents the avenue as a whole rather than a single named tree.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June to July, when it flowers",
+        "kind": "flowers"
+      }
     },
     {
       "id": "cop_005",
@@ -297,7 +305,15 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: winged seeds that spin down in pairs",
+        "kind": "fruit"
+      }
     },
     {
       "id": "cop_009",
@@ -363,7 +379,15 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "cop_011",
@@ -531,7 +555,15 @@
         "status": "found_needs_check",
         "commons_file": "File:Klopstocks Eg, 2012-08-09.JPG"
       },
-      "story": "Denmark protected this oak by law in 1956 and still cannot date it within four centuries. The Danish Dendrological Society's register gives 800 years as a maximum rather than an estimate, which is a different kind of number: the most the tree could be, not the best guess at what it is. So the range here runs from 400 to 800 years, and nobody has narrowed it.\n\nWhat has been measured: 6.05 metres round, 1.93 metres through, alive at the last field report. A storm in 2013 broke off a large branch and the tree carried on without further loss.\n\nThe name belongs to Friedrich Gottlieb Klopstock, the German poet who came to Denmark in 1751 at the invitation of Frederik V, stayed twenty years, and spent his summers at Gramlille on Lyngby Hovedgade, a short walk from here. Nothing is recorded about what he did under this particular tree. It carries his name the way a street does, by association with the neighbourhood he lived in. It has also been called Monrads Eg, after D.G. Monrad. A memorial plaque went up in 1984.\n\nThe oak stands right beside Prinsessestien, a public path through Lyngby Aamose in the Molleaadalen valley, about 12 km northwest of Copenhagen and a quarter of an hour on foot from Sorgenfri station."
+      "story": "Denmark protected this oak by law in 1956 and still cannot date it within four centuries. The Danish Dendrological Society's register gives 800 years as a maximum rather than an estimate, which is a different kind of number: the most the tree could be, not the best guess at what it is. So the range here runs from 400 to 800 years, and nobody has narrowed it.\n\nWhat has been measured: 6.05 metres round, 1.93 metres through, alive at the last field report. A storm in 2013 broke off a large branch and the tree carried on without further loss.\n\nThe name belongs to Friedrich Gottlieb Klopstock, the German poet who came to Denmark in 1751 at the invitation of Frederik V, stayed twenty years, and spent his summers at Gramlille on Lyngby Hovedgade, a short walk from here. Nothing is recorded about what he did under this particular tree. It carries his name the way a street does, by association with the neighbourhood he lived in. It has also been called Monrads Eg, after D.G. Monrad. A memorial plaque went up in 1984.\n\nThe oak stands right beside Prinsessestien, a public path through Lyngby Aamose in the Molleaadalen valley, about 12 km northwest of Copenhagen and a quarter of an hour on foot from Sorgenfri station.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "cop_016",
@@ -563,7 +595,15 @@
         "status": "found_needs_check",
         "commons_file": "File:Englaenderegen (1854146904).jpg"
       },
-      "story": "This oak was dying, and treasure hunters saved it by accident. Generations of digging around its roots broke up the packed soil and let air back in, which is what the Danish Dendrological Society's register credits with its recovery. Nobody was trying to help the tree. They were looking for a chest of money.\n\nThe name, Englaenderegen, the Englishman's oak, comes from the British siege of Copenhagen in 1807. Two soldiers, tired of service, are said to have stolen their regiment's pay chest and buried it beside a freestanding oak northeast of the Hermitage. Neither came back for it, and one confessed on his deathbed to a priest. Searches followed for over a hundred years, including one made at the request of Queen Victoria, and nothing has ever been found. The chest is legend. The holes were real, and they are the part that mattered.\n\nThe register measures the trunk at 5.46 metres round and 1.74 metres through, and dates it at 240 to 360 years using a growth formula applied to 1995 measurements, which puts it at roughly 270 to 390 now. It stands by the pond Magasindammen in Jaegersborg Dyrehave, the royal deer park north of Copenhagen, and the Nature Agency marks the site wheelchair accessible. Getting there is the long part: 35 to 40 minutes on foot from Klampenborg station, past Eremitageslottet."
+      "story": "This oak was dying, and treasure hunters saved it by accident. Generations of digging around its roots broke up the packed soil and let air back in, which is what the Danish Dendrological Society's register credits with its recovery. Nobody was trying to help the tree. They were looking for a chest of money.\n\nThe name, Englaenderegen, the Englishman's oak, comes from the British siege of Copenhagen in 1807. Two soldiers, tired of service, are said to have stolen their regiment's pay chest and buried it beside a freestanding oak northeast of the Hermitage. Neither came back for it, and one confessed on his deathbed to a priest. Searches followed for over a hundred years, including one made at the request of Queen Victoria, and nothing has ever been found. The chest is legend. The holes were real, and they are the part that mattered.\n\nThe register measures the trunk at 5.46 metres round and 1.74 metres through, and dates it at 240 to 360 years using a growth formula applied to 1995 measurements, which puts it at roughly 270 to 390 now. It stands by the pond Magasindammen in Jaegersborg Dyrehave, the royal deer park north of Copenhagen, and the Nature Agency marks the site wheelchair accessible. Getting there is the long part: 35 to 40 minutes on foot from Klampenborg station, past Eremitageslottet.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     }
   ]
 }

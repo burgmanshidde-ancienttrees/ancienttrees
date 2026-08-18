@@ -156,7 +156,14 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "November: the whole crown turns butter gold, then drops in a day or two",
+        "kind": "autumn colour"
+      }
     }
   ]
 }

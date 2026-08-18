@@ -788,7 +788,15 @@
       },
       "curation_status": "flagged",
       "notes": "Girth 130cm and the region's ranking (eighth thickest white mulberry in the region) from the official remarkable-trees inventory (register id 644). A specific claim about a failed Belgian silk industry tied to this species, present in the leads file, was not independently corroborated this pass and is left out of the story rather than repeated unverified. No age estimate: no planting record and no published growth factor for white mulberry in this climate was found this pass.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June to July: pale sweet fruit, the leaves that fed the silk trade",
+        "kind": "fruit"
+      }
     },
     {
       "id": "bru_023",

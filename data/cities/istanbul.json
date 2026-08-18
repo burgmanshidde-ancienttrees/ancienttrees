@@ -449,7 +449,16 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          8,
+          9,
+          10
+        ],
+        "label": "August to October: red arils on female trees, the only part that is not poisonous",
+        "kind": "fruit"
+      }
     }
   ]
 }

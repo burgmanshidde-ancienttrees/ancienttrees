@@ -57,7 +57,14 @@
       },
       "notes": "Photo viewed directly 2026-07-31: the trunk carries its own 'MARRONNIER OFFICIEL' plaque explaining the 1818 phenology tradition, unambiguously identifying the tree, daylight, colour, well framed with the Promenade de la Treille context visible behind it. Approved.",
       "curation_status": "ai_generated",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "label": "May, when it flowers",
+        "kind": "flowers"
+      }
     },
     {
       "id": "gen_002",
@@ -88,7 +95,16 @@
         "height": 3456
       },
       "curation_status": "ai_generated",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: upright barrel cones that sit on the branches like eggs",
+        "kind": "fruit"
+      }
     },
     {
       "id": "gen_003",
@@ -120,7 +136,16 @@
       },
       "notes": "Photo viewed directly 2026-07-31: a large, unmistakable cedar of Lebanon fills most of the frame in a fenced parkland setting, daylight, colour, well framed. Approved.",
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: upright barrel cones that sit on the branches like eggs",
+        "kind": "fruit"
+      }
     },
     {
       "id": "gen_004",
@@ -241,7 +266,15 @@
       },
       "how_to_recognise": "A fenced quiet zone is drawn around it to keep feet off the roots, which no other tree in the garden has. Nearest way in is the Avenue de la Paix gate.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "gen_008",
@@ -272,7 +305,16 @@
       },
       "how_to_recognise": "A very large cedar standing at the kerb opposite number 53 Route de Frontenex, with road and building right up to it rather than lawn.",
       "curation_status": "ai_generated",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: upright barrel cones that sit on the branches like eggs",
+        "kind": "fruit"
+      }
     },
     {
       "id": "gen_009",
@@ -340,7 +382,16 @@
       },
       "how_to_recognise": "The huge cedar at the Port-Noir end of the park, 40 m tall and over 7 m round. A second, slightly smaller cedar stands about 50 m off through the trees: this is the bigger one.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: upright barrel cones that sit on the branches like eggs",
+        "kind": "fruit"
+      }
     },
     {
       "id": "gen_011",

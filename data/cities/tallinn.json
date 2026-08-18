@@ -56,7 +56,15 @@
       },
       "how_to_recognise": "An old hollow lime beside Niguliste church, down to two main branches, with the base sealed against rot.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          7,
+          8
+        ],
+        "label": "July to August, when it flowers",
+        "kind": "flowers"
+      }
     },
     {
       "id": "tln_002",
@@ -157,7 +165,15 @@
       },
       "how_to_recognise": "Two limes of matched size standing together in front of Lai 29. The far pavement is the place to stand, where both fit in one view.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          7,
+          8
+        ],
+        "label": "July to August, when it flowers",
+        "kind": "flowers"
+      }
     }
   ]
 }

@@ -157,7 +157,16 @@
       },
       "curation_status": "flagged",
       "notes": "FLAGGED ON VITALITY, ON SOURCES AND ON ACCESS. Ficha 52: girth 1.20 m at 1.30 m, 1.30 m at base, 13 m tall, condition 'bueno' in 2005, owner Universidad de Zaragoza per the Ordenanza's Anejo III. No source of any date confirms the yew still stands; the building is exhaustively documented and none of that documentation mentions its trees. THE BOTANICAL GARDEN CLAIM DOES NOT CHECK OUT AS THE BOOK STATES IT, which is why the story calls it tradition rather than fact: the historic Jardin Botanico de Zaragoza was founded in 1796 in the Huerta de Santa Catalina entered from Calle San Miguel 30, not on this plot, and was wrecked in the Sitios; the garden in Parque Grande is a separate 20th century one inaugurated in 1927. The 2006 book's own wording is 'quiza supervivientes', perhaps survivors. ACCESS UNRESOLVED: it could not be established whether the recinto is freely walkable or whether the yews stand in an internal courtyard. That must be settled before publication, because the access line as written promises less than a visitor needs to know. Both catalogue sources are the same document in two forms. Coordinate is datum-corrected from ED50.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          8,
+          9,
+          10
+        ],
+        "label": "August to October: red arils on female trees, the only part that is not poisonous",
+        "kind": "fruit"
+      }
     },
     {
       "id": "zar_005",
@@ -186,6 +195,15 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: the harvest, when the fruit turns from green to black",
+        "kind": "fruit"
       }
     },
     {

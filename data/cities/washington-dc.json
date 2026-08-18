@@ -177,7 +177,15 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          5,
+          6
+        ],
+        "label": "May to June: pale sweet fruit, the leaves that fed the silk trade",
+        "kind": "fruit"
+      }
     },
     {
       "id": "wdc_006",
@@ -206,7 +214,15 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: the whole crown turns orange-brown, the tree's best-known moment after its shape",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "wdc_007",
@@ -434,6 +450,14 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: clear yellow, one of the most reliable autumn trees",
+        "kind": "autumn colour"
       }
     },
     {

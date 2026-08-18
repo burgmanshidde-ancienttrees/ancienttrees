@@ -126,7 +126,16 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          7,
+          8,
+          9
+        ],
+        "label": "July to September: long green catkins of winged nutlets hang from every branch",
+        "kind": "fruit"
+      }
     },
     {
       "id": "bre_004",

@@ -55,7 +55,16 @@
       },
       "curation_status": "flagged",
       "notes": "The tree's existence, location (southeast wall of the churchyard) and general antiquity are corroborated by two independent sources (The Oxford Sausage, citing an 1892 Chambers Journal account, and Sacred Destinations, describing 'the huge yew tree south of the church' independently in the context of a churchyard cross). The specific '1,600 years' figure traces to a single 19th-century magazine account and is treated as local tradition rather than verified fact; a separate summary attributed to yew specialists frames the tree as having 'a good claim to being contemporary with the original Norman church' (roughly 850 years) instead, a full order of magnitude more conservative. Presented as a wide, honest range rather than picking a side, with the dramatic figure explicitly framed as legend in the story. No girth measurement found from the Ancient Yew Group's own database this run. Coordinates are the church's Nominatim-geocoded point, not a surveyed point for the trunk itself. Photo checked and declined: a Wikimedia Commons file ('Iffley church entrance and yew tree - geograph.org.uk - 735655.jpg', CC BY-SA 2.0) shows a yew near the church entrance, but its own photographer's caption states explicitly 'one of them - but not this one - was estimated to be twice as old as the church', i.e. the churchyard has multiple yews and this photograph is confirmed by its own description to be a different, non-famous one. Not used; a real gap, not a guess.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: red arils on female trees, the only part that is not poisonous",
+        "kind": "fruit"
+      }
     },
     {
       "id": "oxf_002",
@@ -87,7 +96,16 @@
       },
       "curation_status": "ai_generated",
       "notes": "Well documented by project standards: the Ancient Yew Group's dedicated database entry (girth 241cm at 30cm height, age estimate ~369 years as of a November 2014 site visit, planting date sourced directly to Bobart's own handwritten notes, noting the modest girth reflects heavy clipping in its early decades, GPS 51.75055/-1.2481532) and Cherwell (the Oxford student newspaper) reporting the February 2020 Storm Ciara damage and the garden's expectation of full recovery. No post-2020 source found confirming current condition directly, but multiple current-dated tourism and garden pages (checked this run) continue to describe the yew in the present tense as the garden's oldest specimen, six years being ample recovery time for yew regrowth per the Ancient Yew Group's own account of the species. Age range calculated from the 1645 planting date to 2026. Photo: Wikimedia Commons file 'Oxford Botanic Garden, yew tree - geograph.org.uk - 3911752.jpg' (Stephen Craven, CC BY-SA 2.0), geotagged 51.750560/-1.248139, essentially identical to the Ancient Yew Group's own coordinate for tree 2762, strong confirmation this photographs the same specimen rather than one of the garden's other yews. Coordinates updated to the Ancient Yew Group's own GPS reading, upgrading precision.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: red arils on female trees, the only part that is not poisonous",
+        "kind": "fruit"
+      }
     },
     {
       "id": "oxf_003",
@@ -185,7 +203,15 @@
       },
       "curation_status": "flagged",
       "notes": "Oxford Alumni magazine's own mapping feature gives the specific measurements (33m height, 14m crown spread, national champion status) for this named specimen on North Walk. No precise planting date found in any source; age range is a wide, honest estimate based on the species' typical growth rate to reach 33m and the Parks' 1864 opening as an upper bound on how long the site has existed for planting, not a sourced figure for this specific tree. RHS's species page corroborates Zelkova carpinifolia's Dutch Elm disease immunity as a general species fact, not specific to this tree, cited for that general context only.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: the whole crown turns orange-brown, the tree's best-known moment after its shape",
+        "kind": "autumn colour"
+      }
     }
   ]
 }

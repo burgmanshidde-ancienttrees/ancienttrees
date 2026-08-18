@@ -119,7 +119,15 @@
       },
       "curation_status": "ai_generated",
       "notes": "Same two-source basis as the Willow-Leaved Ash. No distinguishing Ancient Tree Inventory or iNaturalist record identifies this specific specimen among York's several beeches, so its coordinate is only the garden's general location, not tree-level; marked approximate.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "yor_004",

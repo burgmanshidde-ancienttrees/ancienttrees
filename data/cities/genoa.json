@@ -224,7 +224,15 @@
       "access": "Same park as gnv_005; see that entry for hours.",
       "transport": "Same as gnv_005.",
       "location_precision": "confirmed",
-      "curation_status": "flagged"
+      "curation_status": "flagged",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "gnv_009",
@@ -278,7 +286,16 @@
       "access": "Same park as gnv_009; see that entry for hours and pricing.",
       "transport": "Same as gnv_009.",
       "location_precision": "confirmed",
-      "curation_status": "flagged"
+      "curation_status": "flagged",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: upright barrel cones that sit on the branches like eggs",
+        "kind": "fruit"
+      }
     }
   ]
 }

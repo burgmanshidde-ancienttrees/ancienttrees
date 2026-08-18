@@ -58,7 +58,15 @@
       },
       "curation_status": "flagged",
       "notes": "Existence, age estimate and 2025 storm damage confirmed independently by STV News, Forestry Journal and the Wikipedia entry citing multiple press sources; the Ancient Tree Inventory (treeId 145911) corroborates the ancient/heritage classification and gives the surveyed grid reference used for coordinates here. Long-term survival remains genuinely uncertain: a January 2025 council statement described the tree as sound and expected to live decades, but an August 2025 Ancient Tree Inventory visitor comment notes a further limb loss and the database itself lists living status as 'Unknown'. The 1969 dual-carriageway protest, including the teacher's and school's names, is sourced to one detailed local-history blog citing a 1969 Daily Record report; not independently re-confirmed elsewhere, so treated as likely but not fully corroborated. Photo viewed directly 2026-07-31: a large, unmistakable tree with autumn-gold foliage fills the frame behind a protective iron fence on a grass verge, daylight, colour, well framed. Approved.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: winged seeds that spin down in pairs",
+        "kind": "fruit"
+      }
     },
     {
       "id": "gla_002",
@@ -122,7 +130,16 @@
       },
       "curation_status": "flagged",
       "notes": "The two groves (22 and 66 yews) and their relative ages by girth are documented by the Ancient Yew Group's dedicated site survey, visited October 2021, cross-checked against Friends of King's Park's own history page for the Aikenhead House ownership timeline and 1805-1823 landscaping dates. No precise planting date exists for either grove, only the estate's documented landscaping window, so the age range is an estimate rather than a recorded figure. Coordinates are the Ancient Yew Group's own GPS reading for their tagged specimen in the older east grove; the entry represents the wider two-grove planting of 88 trees, not a single named tree, in the same way other ensemble entries on this site are pinned to one representative point.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: red arils on female trees, the only part that is not poisonous",
+        "kind": "fruit"
+      }
     },
     {
       "id": "gla_004",
