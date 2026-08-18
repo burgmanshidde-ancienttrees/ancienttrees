@@ -211,6 +211,7 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
       <div class="sheet-body">
       <div class="city-intro">
         <p class="lede">{intro}</p>
+        <button type="button" class="city-intro-more">Read more</button>
         {esTr && <p class="lang-alt">Esta página también está disponible <a href={`/es/${cslug}`}>en español</a>.</p>}
         <p class="passport" id="passport" hidden>
           <strong><span id="passport-count">0</span> of {trees.length}</strong> visited in {cityName}

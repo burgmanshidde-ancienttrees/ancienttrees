@@ -67,7 +67,10 @@ export const SHEET_JS = `
   function offsetFor(name) {
     var h = sheet.offsetHeight;
     if (name === 'full') return 0;
-    if (name === 'half') return Math.round(h * 0.45);
+    // Raised from 0.45 on 2026-08-18 ("kun je de lijst in de map view iets
+    // hoger zetten"): the half detent is where the list is read, so it gets
+    // the larger share and the map keeps enough to stay a map.
+    if (name === 'half') return Math.round(h * 0.36);
     return h - peekHeight();
   }
 
@@ -150,6 +153,21 @@ export const SHEET_JS = `
     if (e.target.closest('.pin-tree, .walks, .maplibregl-ctrl, .panel-chooser')) return;
     if (at !== 'peek') { closeTree(); setDetent('peek'); }
   });
+
+  // The city intro is clamped on a phone, because at full length it pushed the
+  // first tree most of a screen down (Hidde, 2026-08-18: "de tekst onder de
+  // titel wel afkappen want die is te lang, maar klikbaar maken als je m wel
+  // wilt lezen"). Tapping it opens it, and it stays open: a block that
+  // collapses again under the next tap moves the list while you are reading
+  // it. Desktop never clamps, so this does nothing there.
+  var intro = document.querySelector('.city-intro');
+  if (intro) {
+    intro.addEventListener('click', function(e) {
+      if (!mq.matches || intro.classList.contains('is-open')) return;
+      if (e.target.closest('a')) return;
+      intro.classList.add('is-open');
+    });
+  }
 
   // --- movement 3: one tree, with its actions ------------------------------
   function openTree(id) {
