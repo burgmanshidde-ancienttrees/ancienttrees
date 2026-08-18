@@ -20,6 +20,10 @@ empty, which is how the booklet's planting years and register numbers were
 lost. When that happens the numbers usually live in whatever register the
 document cites, which is the better source anyway.
 """
+import re
+import sys
+import zlib
+
 
 def streams(data):
     for m in re.finditer(rb'stream\r?\n', data):
