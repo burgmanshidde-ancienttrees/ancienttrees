@@ -71,6 +71,11 @@ function firstSentence(s: string): string {
 }
 
 const text = note ?? (variant === "full" ? story : firstSentence(story));
+// On the city page the whole card is the click target: it selects the tree's
+// pin on the map, so the name is not a link and must not become one. Anywhere
+// else there is no such handler, and a list whose titles do nothing is a
+// list that looks broken.
+const linkName = index === undefined;
 // The meta line is the same three facts in the same order on every page, which
 // is most of what "shown the same way" means to a reader.
 const metaParts = [omitSpecies ? "" : species, age, (tree.location?.neighbourhood ?? "").trim()]
@@ -101,9 +106,15 @@ const metaHtml = metaParts.map(esc).join(" &middot; ") + (bestTime ?? "");
   <div class="tree-card-top">
     {index !== undefined && <span class="tree-num">{index}</span>}
     {headingLevel === 2 ? (
-      <h2 class="tree-name">{name}{tree.label && <span class="tree-label">{tree.label}</span>}</h2>
+      <h2 class="tree-name">
+        {linkName ? <a href={href}>{name}</a> : name}
+        {tree.label && <span class="tree-label">{tree.label}</span>}
+      </h2>
     ) : (
-      <h3 class="tree-name">{name}{tree.label && <span class="tree-label">{tree.label}</span>}</h3>
+      <h3 class="tree-name">
+        {linkName ? <a href={href}>{name}</a> : name}
+        {tree.label && <span class="tree-label">{tree.label}</span>}
+      </h3>
     )}
   </div>
   {metaHtml && <p class="tree-meta" set:html={metaHtml} />}
