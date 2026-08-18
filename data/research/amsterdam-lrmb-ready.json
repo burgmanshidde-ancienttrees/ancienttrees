@@ -1,0 +1,331 @@
+{
+  "city": "Amsterdam",
+  "source": "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), joined on LOCATION to the city's own monumental-trees walking booklet. Both used with written permission given to Hidde by email, 2026-08-18.",
+  "note": "Matched on the booklet's location text, never on species name: a name-only match picked the wrong specimen for five of twelve, because Amsterdam has several trees of the same species on the register.",
+  "trees": [
+    {
+      "id": "ams_021",
+      "name_nl": "Hollandse Iep - Oudemanhuispoort",
+      "location": {
+        "latitude": 52.369375,
+        "longitude": 4.896028,
+        "address": "In de zuidwesthoek van de binnentuin van de Oudemanhuispoort",
+        "neighbourhood": "tuin"
+      },
+      "location_precision": "confirmed",
+      "plantjaar_band": "1890-1900",
+      "register": {
+        "source": "Landelijk Register Monumentale Bomen v2024, Bomenstichting",
+        "nr": 1692908,
+        "reden": "dendrologisch",
+        "historie": "In 1890 geplant. ",
+        "eigenaar": "gemeente",
+        "bezoekbaar": "ja"
+      },
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ams_022",
+      "name_nl": "Wilhelminalinde",
+      "location": {
+        "latitude": 52.370265,
+        "longitude": 4.891022,
+        "address": "Amsterdam Museum, Kalverstraat 92, Amsterdam\n",
+        "neighbourhood": "plein"
+      },
+      "location_precision": "confirmed",
+      "plantjaar_band": "1890-1900",
+      "register": {
+        "source": "Landelijk Register Monumentale Bomen v2024, Bomenstichting",
+        "nr": 1686754,
+        "reden": "herdenkingsboom",
+        "historie": "Deze herdenkingsboom is geplant in 1898 bij de kroning van Koningin Wilhelmina. Zie foto hieronder. Begin 2025 is de boom opgenomen op de lijst van 200 kampioenbomen in Amsterdam.",
+        "eigenaar": "gemeente",
+        "bezoekbaar": "ja"
+      },
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ams_023",
+      "name_nl": "Bruine beuk",
+      "location": {
+        "latitude": 52.363112,
+        "longitude": 4.893155,
+        "address": "Tuin Museum Van Loon, Keizersgracht 672, Amsterdam",
+        "neighbourhood": "tuin"
+      },
+      "location_precision": "confirmed",
+      "plantjaar_band": "1890-1900",
+      "register": {
+        "source": "Landelijk Register Monumentale Bomen v2024, Bomenstichting",
+        "nr": 1692220,
+        "reden": "monumentaal",
+        "historie": "in collectie foto's 1923 waarop jonge boom zichtbaar is.",
+        "eigenaar": "stichting",
+        "bezoekbaar": "ja"
+      },
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ams_024",
+      "name_nl": "Italiaanse populier",
+      "location": {
+        "latitude": 52.360151,
+        "longitude": 4.883487,
+        "address": "Tuin bij Rijksmuseum, Jan Luijkenstraat t.o.nr 18,Amsterdam",
+        "neighbourhood": "tuin"
+      },
+      "location_precision": "confirmed",
+      "plantjaar_band": "1910-1920",
+      "register": {
+        "source": "Landelijk Register Monumentale Bomen v2024, Bomenstichting",
+        "nr": 1686058,
+        "reden": "monumentaal",
+        "historie": "Het Rijksmuseum dateert van het einde van de 19e eeuw. De populieren zijn begin 20ste eeuw geplant. Ze vormen een omlijsting voor de historische poort.",
+        "eigenaar": "gemeente",
+        "bezoekbaar": "ja"
+      },
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ams_025",
+      "name_nl": "Ruwe iep",
+      "location": {
+        "latitude": 52.358639,
+        "longitude": 4.891595,
+        "address": "Weteringplantsoen achter het Van Randwijk-monument, Amsterdam",
+        "neighbourhood": "plantsoen"
+      },
+      "location_precision": "confirmed",
+      "plantjaar_band": "1900-1910",
+      "register": {
+        "source": "Landelijk Register Monumentale Bomen v2024, Bomenstichting",
+        "nr": 1686109,
+        "reden": "monumentaal",
+        "historie": "onbekend",
+        "eigenaar": "gemeente",
+        "bezoekbaar": "ja"
+      },
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ams_026",
+      "name_nl": "Tempelboom",
+      "location": {
+        "latitude": 52.359273,
+        "longitude": 4.89092,
+        "address": "Verkeersplein Weteringplantsoen, Amsterdam",
+        "neighbourhood": "plantsoen"
+      },
+      "location_precision": "confirmed",
+      "plantjaar_band": "1910-1920",
+      "register": {
+        "source": "Landelijk Register Monumentale Bomen v2024, Bomenstichting",
+        "nr": 1686108,
+        "reden": "monumentaal",
+        "historie": "onbekend",
+        "eigenaar": "gemeente",
+        "bezoekbaar": "ja"
+      },
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ams_027",
+      "name_nl": "Scheve populier Weteringschans",
+      "location": {
+        "latitude": 52.359143,
+        "longitude": 4.8901,
+        "address": "Amsterdam, Eerste Weteringplantsoen (Weteringschans, hoek Weteringcircuit)",
+        "neighbourhood": "plantsoen"
+      },
+      "location_precision": "confirmed",
+      "plantjaar_band": "1900-1910",
+      "register": {
+        "source": "Landelijk Register Monumentale Bomen v2024, Bomenstichting",
+        "nr": 1686110,
+        "reden": "monumentaal",
+        "historie": "De Canadese populier is te vinden aan de Weteringschans (hoek Weteringcircuit) en heeft als plantjaar 1900-1910. De Weteringschans, die tot 1850 de Schans heette, werd aangelegd op de tussen 1820 en 1840 geslechte stadswallen. De Canadapopulier is een kruising van 2 andere populieren, ontstaan rond 1750 in Frankrijk. Dit exemplaar staat bekend als de ‘scheve’ populier en de indrukwekkende boom (stamomtrek meer dan 5 meter) staat inderdaad flink scheef, maar is niet per se minder stabiel. De boom maakt extra zware wortels, zodat hij toch goed overeind blijft. De boom leunt richting weg en wordt om veiligheidsredenen regelmatig gesnoeid. Jaarlijkse controle is nodig en tot op heden mag de ''scheve populier'' hier blijven staan.",
+        "eigenaar": "gemeente",
+        "bezoekbaar": "ja"
+      },
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ams_028",
+      "name_nl": "Gewone plataan",
+      "location": {
+        "latitude": 52.359525,
+        "longitude": 4.888959,
+        "address": "1ste Weteringplantsoen, Amsterdam",
+        "neighbourhood": "plantsoen"
+      },
+      "location_precision": "confirmed",
+      "plantjaar_band": "1880-1890",
+      "register": {
+        "source": "Landelijk Register Monumentale Bomen v2024, Bomenstichting",
+        "nr": 1686054,
+        "reden": "monumentaal",
+        "historie": "onbekend",
+        "eigenaar": "gemeente",
+        "bezoekbaar": "ja"
+      },
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ams_029",
+      "name_nl": "Witte paardenkastanje",
+      "location": {
+        "latitude": 52.359491,
+        "longitude": 4.890771,
+        "address": "Op Verkeersplein Weteringschans, Amsterdam",
+        "neighbourhood": "plantsoen"
+      },
+      "location_precision": "confirmed",
+      "plantjaar_band": "1900-1910",
+      "register": {
+        "source": "Landelijk Register Monumentale Bomen v2024, Bomenstichting",
+        "nr": 1686107,
+        "reden": "monumentaal",
+        "historie": "Boom is volgens gemeente Amsterdam in 1880 geplant. De Bomenstichting had een plantjaar 1900 - 1910 aangegeven. De boom is tussen januari 2011 en mei 2014 geveld, zo blijkt uit foto''s op streetview. ",
+        "eigenaar": "gemeente",
+        "bezoekbaar": "ja"
+      },
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ams_030",
+      "name_nl": "Honingboom Falckplantsoen",
+      "location": {
+        "latitude": 52.360293,
+        "longitude": 4.896473,
+        "address": "Amsterdam, Reguliersgracht/Falckstraat (Falckplantsoen t.o nr 1)",
+        "neighbourhood": "plein"
+      },
+      "location_precision": "confirmed",
+      "plantjaar_band": "1900-1910",
+      "register": {
+        "source": "Landelijk Register Monumentale Bomen v2024, Bomenstichting",
+        "nr": 1686062,
+        "reden": "monumentaal",
+        "historie": "De Honingboom is, samen met een minder ontwikkeld exemplaar, te zien bij Reguliersgracht hoek Falckstraat, centrum van Amsterdam. Het plantjaar is 1890-1900. De Falckstraat (in 1870 vernoemd naar belangrijke Amsterdammer) is een brede straat doordat de straat is aangelegd op een rond 1869 gedempt gedeelte van de Achtergracht. Het gevolg is dat de honingboom een ruime standplaats heeft. Deze prachtige soort komt uit de vlinderbloemenfamilie. Hij heeft geveerde blaadjes en brede kronen. In augustus bloeit de boom met een zee van schitterende, witte schermachtige bloemen. Deze boom komt van nature voor in Korea en China. Kenmerkend voor de geregistreerde boom is de grote, deels overgroeide, stamwond a/d zuidzijde. Door de brede kroon is regelmatig onderhoud nodig (snoeien van zware overhangende takken). ",
+        "eigenaar": "gemeente",
+        "bezoekbaar": "ja"
+      },
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ams_031",
+      "name_nl": "Gewone esdoorn",
+      "location": {
+        "latitude": 52.368249,
+        "longitude": 4.9092,
+        "address": "Achter Wertheimmonument, Wertheimpark, Amsterdam",
+        "neighbourhood": "tuin"
+      },
+      "location_precision": "confirmed",
+      "plantjaar_band": "1910-1920",
+      "register": {
+        "source": "Landelijk Register Monumentale Bomen v2024, Bomenstichting",
+        "nr": 1686154,
+        "reden": "dendrologisch",
+        "historie": "onbekend",
+        "eigenaar": "gemeente",
+        "bezoekbaar": "ja"
+      },
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ams_032",
+      "name_nl": "Hollandse iep Amsterdam Centraal",
+      "location": {
+        "latitude": 52.3787,
+        "longitude": 4.898534,
+        "address": "Amsterdam, Stationsplein (voor Amsterdam Centraal)",
+        "neighbourhood": "stedelijk"
+      },
+      "location_precision": "confirmed",
+      "plantjaar_band": "1900-1910",
+      "register": {
+        "source": "Landelijk Register Monumentale Bomen v2024, Bomenstichting",
+        "nr": 1694179,
+        "reden": "monumentaal",
+        "historie": "De Hollandse iep is te vinden op Stationsplein voor Amsterdam Centraal. Deze iep is het laatste exemplaar van meer dan 30 iepen die geplant zijn rondom 1900, na de bouw van het treinstation in 1889. Door de nare iepziekte (vanaf de jaren 1920) zijn er in ons land honderdduizenden iepen gekapt. Ook het iepenbestand in Amsterdam werd zwaar getroffen. Het is uniek dat deze boom de ziekte nog altijd heeft overleefd en zich kan handhaven op deze locatie. De boom is beeldbepalend op dit zeer drukke verkeerspunt van trams en voetgangers. Bij waarneming in 2022 zijn er voor het station enkele jonge iepen geplant. Mogelijk keert het oude boombeeld uit het verleden weer terug. De conditie van het laatste oude exemplaar is in ieder geval redelijk en de stamomtrek neemt jaarlijks met ruim een centimeter toe. Bij de laatste waarneming (2022) meten we ruim 3 meter!",
+        "eigenaar": "gemeente",
+        "bezoekbaar": "ja"
+      },
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
