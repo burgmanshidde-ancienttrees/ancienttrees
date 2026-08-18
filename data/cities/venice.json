@@ -120,7 +120,16 @@
       },
       "curation_status": "flagged",
       "notes": "Corrected 2026-07-28: the previous version of this entry claimed a 'century-old' cedar, but neither of its two cited sources (Wikipedia, italianbotanicalheritage.com) actually mentions a cedar at all, italianbotanicalheritage.com instead names an Araucaria araucana as the garden's signature specimen. That age claim had no real source and has been removed. What is actually documented, across two independent Italian-language accounts of a 2008 art-pilgrimage event plus a third general source confirming cedars are a distinctive present-day feature of the island's planting, is three young Cedars of Lebanon planted 21 January 2008, brought from Bcharre and the Cedars of God forest by a Venice art student. Kept on the list under the 'historically significant' qualifying criterion (CLAUDE.md Step 1) rather than age, same pattern as Lisbon's Giant Rubber Tree, and labelled honestly so nobody expects a century-old trunk. The Araucaria mentioned by italianbotanicalheritage.com was not adopted as a replacement candidate this pass; worth checking for a second source in a future pass. 2026-07-29: Commons and iNaturalist searches for San Lazzaro degli Armeni cedars came back empty; a small, 17-19 year old planting on a guided-tour-only monastery island is unlikely to have public photo coverage. Genuine dead end.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: upright barrel cones that sit on the branches like eggs",
+        "kind": "fruit"
+      }
     },
     {
       "id": "ven_004",
@@ -212,7 +221,16 @@
       },
       "curation_status": "flagged",
       "notes": "Olive's age given only as 'secolare' (century-old) without a specific figure. Candidate photo (File:San_Servolo_Aug_2020_1.jpg) viewed directly this pass: it's a distant aerial of the whole island, buildings and general greenery only, no garden or tree distinguishable. Not usable; resolved from found_needs_check to missing rather than leaving it unresolved.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          10,
+          11,
+          12
+        ],
+        "label": "October to December: the harvest, when the fruit turns from green to black",
+        "kind": "fruit"
+      }
     },
     {
       "id": "ven_007",

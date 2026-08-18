@@ -58,7 +58,16 @@
       },
       "curation_status": "ai_generated",
       "notes": "Age is documented rather than estimated: the tree appears on a 1741 plan of the courtyard, corroborated by the municipal singular-trees catalogue and by regional television reporting the 2018 DNA study. Tourist sources calling it 'almost a thousand years old' have no documentary basis and are not used here.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: the harvest, when the fruit turns from green to black",
+        "kind": "fruit"
+      }
     },
     {
       "id": "cdb_002",

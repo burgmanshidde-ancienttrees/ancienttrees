@@ -117,7 +117,16 @@
       },
       "curation_status": "ai_generated",
       "notes": "Coordinates corrected 2026-07-26 to the tree's own OpenStreetMap node (id 3497610360, named \"Tejo del Palacio de Velázquez del Retiro\", an exact name match to this tree and its Spanish Wikipedia article). Photo (iNaturalist observation 307498789, 13-15m from the confirmed pin, tagged cultivated) viewed directly: dense yew foliage with multiple visible trunks, consistent with the tree's own three-trunked description.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          8,
+          9,
+          10
+        ],
+        "label": "August to October: red arils on female trees, the only part that is not poisonous",
+        "kind": "fruit"
+      }
     },
     {
       "id": "mad_004",
@@ -221,7 +230,15 @@
       },
       "curation_status": "ai_generated",
       "notes": "Coordinates corrected 2026-07-26 to the tree's own OpenStreetMap node (id 3170278093, \"Olmo del Caúcaso del Real Jardín Botánico\", tagged Zelkova carpinifolia matching this entry's species).",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: the whole crown turns orange-brown, the tree's best-known moment after its shape",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "mad_007",
@@ -415,7 +432,16 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "Age is given as a range because the sources genuinely disagree: the singular-tree documentation says about 120 years, Telemadrid's August 2024 survey says 232, and a separate account dates the surrounding garden and its cedars to 1871. Flagged rather than resolved, per the site's honesty standard. Pin comes from the individually named OpenStreetMap node 'Cedro del Libano' carrying Wikidata Q108653756 (40.413975, -3.6927964), which agrees with the published coordinate to about three metres. More than one cedar stands in this garden; the catalogued specimen is the large one beside the Velazquez statue, which is the tree both records point at."
+      "notes": "Age is given as a range because the sources genuinely disagree: the singular-tree documentation says about 120 years, Telemadrid's August 2024 survey says 232, and a separate account dates the surrounding garden and its cedars to 1871. Flagged rather than resolved, per the site's honesty standard. Pin comes from the individually named OpenStreetMap node 'Cedro del Libano' carrying Wikidata Q108653756 (40.413975, -3.6927964), which agrees with the published coordinate to about three metres. More than one cedar stands in this garden; the catalogued specimen is the large one beside the Velazquez statue, which is the tree both records point at.",
+      "best_time": {
+        "months": [
+          8,
+          9,
+          10
+        ],
+        "label": "August to October: upright barrel cones that sit on the branches like eggs",
+        "kind": "fruit"
+      }
     },
     {
       "id": "mad_013",
@@ -543,7 +569,16 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "notes": "Catalogued as 'Cedro del Parque del Retiro'. Existence and location independently confirmed by Telemadrid's August 2024 survey, which places a centenarian cedar beside the Martinez Campos monument. Pin is the individually named OpenStreetMap node carrying Wikidata Q108653804 (40.4173579, -3.6808949), about eight metres from the published coordinate. The claim that it is the tallest of the Retiro's catalogued trees is checked against the other Retiro entries in this file and their recorded heights, not asserted city-wide."
+      "notes": "Catalogued as 'Cedro del Parque del Retiro'. Existence and location independently confirmed by Telemadrid's August 2024 survey, which places a centenarian cedar beside the Martinez Campos monument. Pin is the individually named OpenStreetMap node carrying Wikidata Q108653804 (40.4173579, -3.6808949), about eight metres from the published coordinate. The claim that it is the tallest of the Retiro's catalogued trees is checked against the other Retiro entries in this file and their recorded heights, not asserted city-wide.",
+      "best_time": {
+        "months": [
+          8,
+          9,
+          10
+        ],
+        "label": "August to October: upright barrel cones that sit on the branches like eggs",
+        "kind": "fruit"
+      }
     },
     {
       "id": "mad_017",

@@ -56,7 +56,16 @@
       },
       "curation_status": "ai_generated",
       "notes": "MASAF sheet 18/B963/CE/15 (775 cm, 16 m) and Campania scheda 213 agree on the measurements. Both give the same coordinate, which MASAF also gives to three other trees, so it is a garden centroid rather than the trunk. Age is 'over 150 years' in the regional register only; MASAF has no age field.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          8,
+          9,
+          10
+        ],
+        "label": "August to October: upright barrel cones that sit on the branches like eggs",
+        "kind": "fruit"
+      }
     },
     {
       "id": "cas_002",
@@ -125,7 +134,16 @@
       },
       "curation_status": "flagged",
       "notes": "Flagged on age: the Campania card (scheda 245) gives 150 years in its age field but states in its own text that the tree was already adult when placed here at the garden's creation, which cannot both be true. MASAF sheet 34/B963/CE/15 gives 392 cm and 20 m at the same coordinate. The Reggia's own Bath of Venus page independently confirms a monumental yew at the spring, which is the strongest third-party corroboration on this page. The regional card also contains a stray sentence about the 'camelia madre' that belongs to a different record.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          8,
+          9,
+          10
+        ],
+        "label": "August to October: red arils on female trees, the only part that is not poisonous",
+        "kind": "fruit"
+      }
     },
     {
       "id": "cas_004",
@@ -465,7 +483,16 @@
       },
       "curation_status": "flagged",
       "notes": "Girth 270cm and height 12m confirmed identically by MASAF (09/B963/CE/15) and Campania scheda 50. No age estimate: the regional card states the age 'coincide con quella della piazza' without a number; not sharpened into one.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          8,
+          9,
+          10
+        ],
+        "label": "August to October: red arils on female trees, the only part that is not poisonous",
+        "kind": "fruit"
+      }
     }
   ]
 }

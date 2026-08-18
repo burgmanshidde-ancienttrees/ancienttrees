@@ -56,7 +56,15 @@
       },
       "curation_status": "flagged",
       "notes": "Register (id 224) plus krizom-krazom.eu (independent Slovak protected-trees resource) agree on species, 18m height, 311cm girth, 16m crown, and the 1996 protection citing cultural/scientific/landscape/historical/aesthetic value. Age is derived: krizom-krazom gives 80 years at the 1996 designation, so age_min/max (100-120) is 2026-adjusted from that dated figure, not a fresh guess. No third source or recent photo found confirming today's vitality.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          8,
+          9
+        ],
+        "label": "August to September, when it flowers",
+        "kind": "flowers"
+      }
     },
     {
       "id": "brt_002",

@@ -90,7 +90,16 @@
       },
       "curation_status": "flagged",
       "notes": "The legend is well documented and independently corroborated (church history, Wikipedia, city sources), but no source ties this specific trunk to the 1342 date or the Wamba legend, and the register itself gives no age. Published on the strength of the legend and the site, with the age question left explicitly open rather than implied.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: the harvest, when the fruit turns from green to black",
+        "kind": "fruit"
+      }
     },
     {
       "id": "gui_003",
@@ -193,7 +202,15 @@
         "attribution": null,
         "status": "missing"
       },
-      "notes": "Split out of the register's six-species conjunto (KNJ2/007) as a single collectible point: the oak at the baroque circular tank, which is the one tree the property's own botanical guide singles out and the one place in the park with an obvious spot to stand. Age deliberately left empty, the register's 290 years is a figure for the whole group and cannot be this trunk's, since the group includes a eucalyptus. Pin is the register's coordinate for the conjunto, not the tank, hence approximate. Access verdict 2026-08-14: the pousada's own gardens page says the park is for guests and visitors (hospedes e visitantes), which is the property stating its own access; no hours are published, so the access line says so."
+      "notes": "Split out of the register's six-species conjunto (KNJ2/007) as a single collectible point: the oak at the baroque circular tank, which is the one tree the property's own botanical guide singles out and the one place in the park with an obvious spot to stand. Age deliberately left empty, the register's 290 years is a figure for the whole group and cannot be this trunk's, since the group includes a eucalyptus. Pin is the register's coordinate for the conjunto, not the tank, hence approximate. Access verdict 2026-08-14: the pousada's own gardens page says the park is for guests and visitors (hospedes e visitantes), which is the property stating its own access; no hours are published, so the access line says so.",
+      "best_time": {
+        "months": [
+          8,
+          9
+        ],
+        "label": "August to September: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "gui_006",

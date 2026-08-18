@@ -97,7 +97,16 @@
       },
       "curation_status": "ai_generated",
       "notes": "Position confirmed via OpenStreetMap's individually mapped 'Cedre de Jussieu' natural monument node, tagged start_date 1734, matching the sourced planting year.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: upright barrel cones that sit on the branches like eggs",
+        "kind": "fruit"
+      }
     },
     {
       "id": "par_003",
@@ -302,7 +311,15 @@
       },
       "curation_status": "ai_generated",
       "notes": "Position confirmed via the Ville de Paris open tree registry: the only Zelkova carpinifolia among five Zelkovas in the Avenue Foch garden, and the sole one flagged remarquable (circumference 445cm, height 27m).",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: the whole crown turns orange-brown, the tree's best-known moment after its shape",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "par_009",
@@ -403,6 +420,14 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: the whole crown turns orange-brown, the tree's best-known moment after its shape",
+        "kind": "autumn colour"
       }
     },
     {
@@ -519,7 +544,14 @@
       "access": "Free, public garden, open daily (standard Paris square hours)",
       "transport": "Rambuteau (Metro 11) or Chatelet-Les Halles, 4-5 min walk",
       "location_precision": "confirmed",
-      "curation_status": "ai_generated"
+      "curation_status": "ai_generated",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "label": "May, when it flowers",
+        "kind": "flowers"
+      }
     },
     {
       "id": "par_018",
@@ -902,7 +934,16 @@
       },
       "how_to_recognise": "There are two wingnuts in this square, sixty metres apart. This is the SMALLER one at 371 cm; the other is 416 cm and carries no date.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          7,
+          8,
+          9
+        ],
+        "label": "July to September: long green catkins of winged nutlets hang from every branch",
+        "kind": "fruit"
+      }
     },
     {
       "id": "par_030",
@@ -933,7 +974,14 @@
       },
       "how_to_recognise": "A broad even crown 21 m tall, in the same terraced garden as the plane and the wingnut.",
       "curation_status": "ai_generated",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "label": "May, when it flowers",
+        "kind": "flowers"
+      }
     },
     {
       "id": "par_031",
@@ -964,7 +1012,14 @@
       },
       "how_to_recognise": "Near the garden's obelisk, at one of the entrances.",
       "curation_status": "ai_generated",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "label": "May, when it flowers",
+        "kind": "flowers"
+      }
     },
     {
       "id": "par_032",

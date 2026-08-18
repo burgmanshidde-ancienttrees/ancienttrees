@@ -57,7 +57,15 @@
       },
       "curation_status": "flagged",
       "notes": "Age correction (folk estimate of 500 years versus dendrochronological finding of roughly 230) confirmed by the Botanical Garden's own official page and repeated in Polish Wikipedia's entry on the garden. Coordinates are the garden's general address point, not a surveyed position for the specific tree within the 9.6-hectare grounds.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "kra_002",
@@ -90,7 +98,15 @@
       },
       "curation_status": "flagged",
       "notes": "History (1790 road-cutting, Bartyzel's protection from 1923-2010, 2010 naming, 2017 community restoration, 2018 Tree of the Year entry) confirmed across the official Krakow senior-citizens news page and a Nasze Miasto Krakow local news article giving the '240-year-old' figure; the age range here (240-250) allows for the years since that undated article. Exact coordinates are Zakopianska street's general area (Nominatim-geocoded), not a surveyed point for the specific tree, which sources place near a former bus depot on that street without a precise address.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "kra_003",
@@ -360,7 +376,15 @@
       },
       "curation_status": "flagged",
       "notes": "Girth 402cm and the 1987 designation from Krakow's registry list as reproduced on Polish Wikipedia, cross-checked against GDOS/CRFOP (PL.ZIPOP.1393.PP.1261011.914, gid 72100). Age DERIVED from girth; the published growth factor for littleleaf linden is an exact species match, giving roughly 151 years, stated as 130-175. Not to be narrowed without a dendrochronological source.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June to July, when it flowers",
+        "kind": "flowers"
+      }
     },
     {
       "id": "kra_011",
@@ -453,7 +477,15 @@
       },
       "curation_status": "flagged",
       "notes": "Two register entries, oak (kodinspire .2978, gid 209491, girth 336cm) and ginkgo (kodinspire .2979, gid 209492, girth 305cm), roughly 20m apart at ul. Batorego 14 and 12 respectively per Polish Wikipedia's reproduction of the register. Shipped as one entry since only one coordinate point is verified for the pair and they read as one destination; location_precision reflects that, not a surveyed pin on either individual trunk. No age estimate attempted: no published growth factor found this pass for standard-form Quercus robur or Ginkgo biloba in this climate.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "kra_014",
@@ -484,7 +516,15 @@
       },
       "curation_status": "flagged",
       "notes": "Girth 263cm and the 2007 designation from Krakow's registry list as reproduced on Polish Wikipedia, cross-checked against GDOS/CRFOP (PL.ZIPOP.1393.PP.1261011.944, gid 72126). No age derived: kra_009, the only other published Krakow oak with a girth-based estimate, is a columnar cultivar (Quercus robur 'Fastigiata') with a different growth habit and is not a safe proxy for a standard-form oak.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "kra_015",
@@ -515,7 +555,15 @@
       },
       "curation_status": "flagged",
       "notes": "Girth 259cm and the 2004 designation from Krakow's registry list as reproduced on Polish Wikipedia, cross-checked against GDOS/CRFOP (PL.ZIPOP.1393.PP.1261011.911, gid 72098). Age DERIVED by scaling against kra_007 (same species, same register, same published small-leaved lime growth factor).",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June to July, when it flowers",
+        "kind": "flowers"
+      }
     },
     {
       "id": "kra_016",

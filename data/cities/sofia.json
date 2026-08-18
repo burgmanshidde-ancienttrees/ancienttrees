@@ -121,7 +121,15 @@
         "note": "Was a CC BY-SA 4.0 Commons file by Peter Kirkov; deleted from Commons and returning 404 by 2026-08-18, found by scripts/photo_check.py. The page showed a broken image until then."
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "sof_004",

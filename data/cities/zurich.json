@@ -115,7 +115,15 @@
       },
       "curation_status": "flagged",
       "notes": "The 1474 planting record, the 1861 storm, the rejected replacement species and their replanting with lindens within 15 years, and the 1971 women's-suffrage linden are corroborated between a Zurich lifestyle site's feature on Lindenhof and the city's own official garden-monument documentation. Species given as Small-leaved Lime (Tilia cordata), the most common lime species in historic Central European civic plantings, though no source specifies the exact species planted in each era; flagged accordingly. Age range deliberately wide and honest: this entry represents a continuously replanted site rather than a single dateable tree.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June to July, when it flowers",
+        "kind": "flowers"
+      }
     },
     {
       "id": "zur_004",

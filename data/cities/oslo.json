@@ -54,7 +54,15 @@
       },
       "curation_status": "flagged",
       "notes": "Age (500-600 years), trunk circumference (about 8m) and status as Oslo's oldest tree come from a single source, Oslo municipality's own city-planning magazine feature on the city's trees; no independent second source found. The name's connection to painter Edvard Munch is this project's own inference from his documented residence at nearby Ekely, not a sourced claim; flagged as unconfirmed in the story text itself rather than stated as fact.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "osl_002",
@@ -84,7 +92,15 @@
       },
       "curation_status": "flagged",
       "notes": "The 1751 rococo garden, Bernt Anker's 1778 takeover and linden planting, and the 1998 partial replacement for the metro entrance are corroborated between Oslo byleksikon (the city's own historical encyclopedia) and Store norske leksikon's Dronningparken entry. No source gives a precise planting year for the surviving lindens beyond 'from Anker's time' (from 1778), so the age range reflects that decade rather than a single dated planting.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          7,
+          8
+        ],
+        "label": "July to August, when it flowers",
+        "kind": "flowers"
+      }
     },
     {
       "id": "osl_003",

@@ -56,7 +56,15 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "Land Berlin Naturdenkmal register id 6-99/B (Tilia cordata, Winter-Linde), Flur 110037-14-82, matching the official gazette PDF word for word. Flagged: only one source found, the Land Berlin register itself, and no independent second source. The register carries no age or vitality field, which is standard for this dataset."
+      "notes": "Land Berlin Naturdenkmal register id 6-99/B (Tilia cordata, Winter-Linde), Flur 110037-14-82, matching the official gazette PDF word for word. Flagged: only one source found, the Land Berlin register itself, and no independent second source. The register carries no age or vitality field, which is standard for this dataset.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June to July, when it flowers",
+        "kind": "flowers"
+      }
     },
     {
       "id": "pot_002",
@@ -124,7 +132,15 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "Land Berlin Naturdenkmal register id 6-105/B (Quercus robur, Stiel-Eiche), Flur 110037-14-130, matching the imported WFS register entry and the official gazette word for word. Flagged: one source only, no independent second source, and no genuine girth or age figure found. A search summary claiming a '130cm circumference' was checked against the source PDF and is the Flur parcel number, not a measurement; it is deliberately not recorded here and must not be reintroduced."
+      "notes": "Land Berlin Naturdenkmal register id 6-105/B (Quercus robur, Stiel-Eiche), Flur 110037-14-130, matching the imported WFS register entry and the official gazette word for word. Flagged: one source only, no independent second source, and no genuine girth or age figure found. A search summary claiming a '130cm circumference' was checked against the source PDF and is the Flur parcel number, not a measurement; it is deliberately not recorded here and must not be reintroduced.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "pot_004",

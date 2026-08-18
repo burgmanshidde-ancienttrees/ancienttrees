@@ -124,7 +124,15 @@
       },
       "curation_status": "ai_generated",
       "notes": "Viewed directly: a gnarled, wide-crowned oak on a roadside slope in full autumn colour, unmistakably the register's entry 551, whose Commons file description states its exact position, 'na skarpie ul. Niepolomicka, podnoze Gory Luizy' (on the slope of Niepolomicka street, foot of Mount Luiza), matching this entry precisely.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "gda_004",
@@ -153,7 +161,15 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
+        "kind": "autumn colour"
+      }
     }
   ]
 }

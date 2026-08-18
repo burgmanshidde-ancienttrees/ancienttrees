@@ -302,7 +302,16 @@
       },
       "curation_status": "ai_generated",
       "notes": "Pin corrected 2026-07-28 (about 1.4km, from a street-corner estimate) via NYC's Forestry Tree Points dataset, using a 48-inch-DBH outlier as the reasoning (every other citywide yew topped out in the teens and 20s). Corrected again 2026-07-29, about 46m: NYC Parks' own Great Trees page for this exact entry (nycgovparks.org/facilities/great-trees/121) links directly to NYC Tree Map ID 5095477, a 17-inch DBH yew at a slightly different point within the same memorial grove. Preferred this over the previous DBH-outlier inference because it is a direct, official Great-Trees-to-Tree-Map linkage for this specific listing rather than a size-based guess; the grove holds 144 yews of varying size, so DBH alone was never a reliable way to single one out. Two Commons photos of the park entrance (CC BY 4.0 and CC BY-SA 3.0, both Jim.henderson) were found and viewed directly but declined as this tree's photo: both show the park's general tree line from Victory Boulevard, not this specific yew isolated from the other 143 memorial evergreens.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          8,
+          9,
+          10
+        ],
+        "label": "August to October: red arils on female trees, the only part that is not poisonous",
+        "kind": "fruit"
+      }
     },
     {
       "id": "nyc_009",

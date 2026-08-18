@@ -59,6 +59,15 @@
         "status": "approved",
         "width": 5120,
         "height": 3840
+      },
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: the harvest, when the fruit turns from green to black",
+        "kind": "fruit"
       }
     },
     {

@@ -87,7 +87,15 @@
       },
       "curation_status": "flagged",
       "notes": "Register (id 117) and Wikipedia geocode within 2m; Volksgarten's own Wikipedia article independently confirms the park holds several Naturdenkmal trees. The park's oak-row age (70-100 years) is NOT applied to this specific tree since no source confirms it belongs to that row (bridge-claim avoided). No girth or planting date found.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "grz_003",
@@ -241,7 +249,15 @@
       },
       "curation_status": "flagged",
       "notes": "Register (id 15) and Wikipedia geocode within 2m. Wikipedia records a field-measured girth (280cm, 2015), captured as girth_cm. No age derived: no verified published growth-rate citation for Quercus robur was in hand this pass, so age_estimate stays empty rather than guessed.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "grz_008",
@@ -272,7 +288,15 @@
       },
       "curation_status": "flagged",
       "notes": "Register (id 16) and Wikipedia geocode within 3m. Field-measured girth 490cm (2015), captured as girth_cm, substantially thicker than its same-day-protected neighbour (280cm) 40m away. Confirmed as two distinct, separately measured trees, not a corrupted duplicate registration. No age derived, same reasoning as grz_007.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "grz_009",

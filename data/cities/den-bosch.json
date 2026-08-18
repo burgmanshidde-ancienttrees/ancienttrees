@@ -89,7 +89,15 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "The thicker of the two maples on the bastion, over four metres round against the other's three, and the one standing nearer the road."
+      "how_to_recognise": "The thicker of the two maples on the bastion, over four metres round against the other's three, and the one standing nearer the road.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: clear yellow, sometimes red",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "dbo_003",

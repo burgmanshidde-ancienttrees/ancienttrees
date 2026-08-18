@@ -60,7 +60,16 @@
       },
       "curation_status": "ai_generated",
       "notes": "Register 26/E715/LU/09 gives 655 cm girth and 20 m. The garden's own figure is 5.97 m and 22 m, and the city's walls itinerary prints 5.76 m as a diameter, which is both a different tree's girth figure and a unit error. The register measurement is used here. Planting year 1822 is stated independently by the garden and by LuccaInDiretta. Photo file is titled Abies cedrus on Commons but shows the Lebanon cedar in this garden.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: upright barrel cones that sit on the branches like eggs",
+        "kind": "fruit"
+      }
     },
     {
       "id": "luc_002",

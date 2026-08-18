@@ -86,7 +86,16 @@
       },
       "curation_status": "flagged",
       "notes": "The 400-year figure is a general estimate repeated across city sources rather than a documented planting record, typical for old olive trees; presented as an estimate rather than a precise age. Pin corrected ~1.1km via the regional Catálogo de Árboles Monumentales y Singulares: the only Olea europaea recorded anywhere in Valencia's official monumental-tree dataset, marked at 350-plus years (this entry's own low-end estimate), sits within a cluster of catalogued date palms and eucalyptus in this same San Marcelino/Patraix pocket, consistent with the park's own mixed planting.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: the harvest, when the fruit turns from green to black",
+        "kind": "fruit"
+      }
     },
     {
       "id": "vlc_003",
@@ -483,7 +492,15 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: the whole crown turns orange-brown, the tree's best-known moment after its shape",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "vlc_016",

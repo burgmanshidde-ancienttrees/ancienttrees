@@ -146,7 +146,16 @@
       },
       "curation_status": "flagged",
       "notes": "1753 documentary reference and dimensions (10m height, 250cm circumference) from the park's own official page; a second, independent local heritage site corroborates the yew's inclusion among Capodimonte's monumental trees generally. Age range given as a broad estimate consistent with the 1753 reference rather than a precise figure, honestly reflecting how difficult yews are to date exactly. Pin corrected 2026-07-26 against Campania's regional monumental-tree register (scheda 201, \"il Tasso\"), which gives 40.868440, 14.252714, an identical 10m height and 250cm circumference, a strong identity match. No usable photo found.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          8,
+          9,
+          10
+        ],
+        "label": "August to October: red arils on female trees, the only part that is not poisonous",
+        "kind": "fruit"
+      }
     },
     {
       "id": "nap_005",
@@ -599,7 +608,16 @@
       },
       "how_to_recognise": "A tiered cedar in the Principessa Jolanda gardens, on the Capodimonte hill. The plane that stood on the same staircase came down in a 2022 storm, so it is now the big conifer there.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          8,
+          9,
+          10
+        ],
+        "label": "August to October: upright barrel cones that sit on the branches like eggs",
+        "kind": "fruit"
+      }
     },
     {
       "id": "nap_019",

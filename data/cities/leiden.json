@@ -53,7 +53,15 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: clear yellow, one of the most reliable autumn trees",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "lei_002",

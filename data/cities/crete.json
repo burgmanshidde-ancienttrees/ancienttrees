@@ -57,7 +57,16 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "THE ANCHOR TREE, and its age is a genuine open scientific dispute, report both figures, do not resolve it. Tree-ring analysis (O. Rackham & J. Moody, 'The Making of the Cretan Landscape', 1996, cited in F.R. Riley, Oxford Journal of Archaeology 21(1), 2002) found the tree to be AT LEAST 2,000 years old. Separately, scientists from the University of Crete have estimated it at 4,000 years old (widely reported, e.g. Forbes 2025, Greek press 2025-2026), which would make it the oldest known living olive in the world; this estimate is not tied to a single peer-reviewed paper, it is consistently attributed to 'University of Crete scientists' across sources without a named study. English Wikipedia states plainly: 'The exact age of the tree cannot be determined,' and that 'there is not yet an agreed upon scientific method to ascertain the age of olive trees.' Radiocarbon dating is impossible because the heartwood has rotted away and been lost over the centuries (normal for ancient olives, not a defect of this specimen). Physical facts, not in dispute: trunk perimeter 12.5 m, diameter 4.6 m, hollow trunk, still fruiting, grafted with the Tsounati cultivar. Declared a protected natural monument in 1997 by the Region of Crete. Branches woven into olive wreaths for winners at the 2004 Athens and 2008 Beijing Olympics. Two Geometric-period (c. 900-700 BCE) cemeteries were found near the tree, suggestive but not proof of the tree's own age; Wikipedia itself only calls it 'a possible indicator', and the story deliberately does not bridge it. Pin is an OSM natural=tree node named 'Elia Vouvon' beside the museum building."
+      "notes": "THE ANCHOR TREE, and its age is a genuine open scientific dispute, report both figures, do not resolve it. Tree-ring analysis (O. Rackham & J. Moody, 'The Making of the Cretan Landscape', 1996, cited in F.R. Riley, Oxford Journal of Archaeology 21(1), 2002) found the tree to be AT LEAST 2,000 years old. Separately, scientists from the University of Crete have estimated it at 4,000 years old (widely reported, e.g. Forbes 2025, Greek press 2025-2026), which would make it the oldest known living olive in the world; this estimate is not tied to a single peer-reviewed paper, it is consistently attributed to 'University of Crete scientists' across sources without a named study. English Wikipedia states plainly: 'The exact age of the tree cannot be determined,' and that 'there is not yet an agreed upon scientific method to ascertain the age of olive trees.' Radiocarbon dating is impossible because the heartwood has rotted away and been lost over the centuries (normal for ancient olives, not a defect of this specimen). Physical facts, not in dispute: trunk perimeter 12.5 m, diameter 4.6 m, hollow trunk, still fruiting, grafted with the Tsounati cultivar. Declared a protected natural monument in 1997 by the Region of Crete. Branches woven into olive wreaths for winners at the 2004 Athens and 2008 Beijing Olympics. Two Geometric-period (c. 900-700 BCE) cemeteries were found near the tree, suggestive but not proof of the tree's own age; Wikipedia itself only calls it 'a possible indicator', and the story deliberately does not bridge it. Pin is an OSM natural=tree node named 'Elia Vouvon' beside the museum building.",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: the harvest, when the fruit turns from green to black",
+        "kind": "fruit"
+      }
     },
     {
       "id": "crt_002",
@@ -88,7 +97,16 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "Second major Cretan ancient olive, on the opposite (eastern, Lasithi) side of the island from Vouves. Official municipal source (ierapetra.gr, 'Memorial Olive of Azoria') states: tree-ring analysis dates its planting to between 1350 and 1100 BCE, i.e. roughly 3,100-3,400 years old depending on when measured. Widely-repeated press figure (Greek and international, e.g. GreekReporter Aug 2026) rounds this to 'about 3,250 years old.' Both figures come from the same underlying ring-count method and are consistent with each other, unlike Vouves; recorded as a range (3000-3400) rather than a single fabricated midpoint. Declared a natural monument per EFSYN coverage of the official designation. Trunk: diameter 4.9 m, circumference 14.20 m. Reportedly the oldest known example of olive grafting in the world: the visible tree is a 'mouratoelia' cultivar grafted onto a wild olive (agrielia) rootstock; repeated across sources but the original scientific paper making that superlative claim was not found, so written per hard rule 8 with its source named in the prose. Branches used for the winner's wreath of the women's Olympic marathon at the 2004 Athens Games. Alive and fruiting per both the municipal page and GreekReporter (Aug 2026). Coordinates from cretanbeaches.com's stated GPS converted to decimal. Species string trimmed at write time from 'Olive (Olea europaea), local mouratoelia variety grafted onto a wild olive rootstock' to the canonical common+Latin form; the grafting detail moved into the story."
+      "notes": "Second major Cretan ancient olive, on the opposite (eastern, Lasithi) side of the island from Vouves. Official municipal source (ierapetra.gr, 'Memorial Olive of Azoria') states: tree-ring analysis dates its planting to between 1350 and 1100 BCE, i.e. roughly 3,100-3,400 years old depending on when measured. Widely-repeated press figure (Greek and international, e.g. GreekReporter Aug 2026) rounds this to 'about 3,250 years old.' Both figures come from the same underlying ring-count method and are consistent with each other, unlike Vouves; recorded as a range (3000-3400) rather than a single fabricated midpoint. Declared a natural monument per EFSYN coverage of the official designation. Trunk: diameter 4.9 m, circumference 14.20 m. Reportedly the oldest known example of olive grafting in the world: the visible tree is a 'mouratoelia' cultivar grafted onto a wild olive (agrielia) rootstock; repeated across sources but the original scientific paper making that superlative claim was not found, so written per hard rule 8 with its source named in the prose. Branches used for the winner's wreath of the women's Olympic marathon at the 2004 Athens Games. Alive and fruiting per both the municipal page and GreekReporter (Aug 2026). Coordinates from cretanbeaches.com's stated GPS converted to decimal. Species string trimmed at write time from 'Olive (Olea europaea), local mouratoelia variety grafted onto a wild olive rootstock' to the canonical common+Latin form; the grafting detail moved into the story.",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: the harvest, when the fruit turns from green to black",
+        "kind": "fruit"
+      }
     },
     {
       "id": "crt_003",
