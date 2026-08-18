@@ -899,6 +899,69 @@ def audience_section(today, cf_token, short=False):
     return "\n".join(out)
 
 
+
+def night_shift(today):
+    """What the night runs actually achieved, as a table, every day.
+
+    Hidde, 2026-08-18: "Wat hebben de nachtjes bereikt en kun je dat standaard
+    in de daily digest vertellen." Until now the digest reported utilisation, an
+    attempts-versus-worked count, which answers whether the windows were USED
+    and not whether anything came out of them. He had to ask what the runs
+    achieved, which is the question, so it goes in the file rather than in a
+    person's memory.
+
+    It reads data/run-health.json, which the workflow writes after every run
+    whether the run says anything or not. That is the point of that file: a run
+    that gives up is exactly the run that skips its own LOG.md entry.
+
+    The denials column is the one to watch. It went dark for two days when the
+    SDK renamed its field and was repaired on 2026-08-17; the first full night
+    after showed 10 to 27 refused commands per run, which is a wall nobody could
+    see before and is the best current lead on why short runs stop early.
+    """
+    path = os.path.join(ROOT, "data", "run-health.json")
+    try:
+        doc = json.load(open(path, encoding="utf-8"))
+        runs = doc.get("runs", []) if isinstance(doc, dict) else list(doc)
+    except Exception:
+        return None
+    yday = (today - datetime.timedelta(days=1)).isoformat()
+    # A night belongs to the day it ENDS on, so take everything from 18:00 the
+    # previous day onward: a run starting 23:16 and one starting 05:20 are the
+    # same night's work and reading them into different days hides that.
+    since = yday + "T18"
+    rows = [r for r in runs if str(r.get("started", "")) >= since]
+    if not rows:
+        return None
+    mins = sum(r.get("minutes") or 0 for r in rows)
+    trees = sum(r.get("trees") or 0 for r in rows)
+    commits = sum(r.get("commits") or 0 for r in rows)
+    idle = sum(1 for r in rows if not (r.get("trees") or 0))
+    out = ["", "**What the night shift did**", "",
+           "| Started | Minutes | Turns | Trees | Commits | Refused |",
+           "|---|---:|---:|---:|---:|---:|"]
+    for r in rows:
+        out.append("| %s | %s | %s | %s | %s | %s |" % (
+            str(r.get("started"))[5:16], r.get("minutes") if r.get("minutes") is not None else "-",
+            r.get("turns") or 0, r.get("trees") or 0, r.get("commits") or 0,
+            r.get("denials") if r.get("denials") is not None else "-"))
+    out.append("| **%d runs** | **%.0f** | | **%d** | **%d** | |"
+               % (len(rows), mins, trees, commits))
+    note = []
+    if idle:
+        note.append("%d of %d produced no trees" % (idle, len(rows)))
+    d = [r.get("denials") for r in rows if r.get("denials")]
+    if d:
+        note.append("%d to %d commands refused per run" % (min(d), max(d)))
+    unlogged = sum(1 for r in rows if r.get("logged") is False)
+    if unlogged:
+        note.append("%d wrote nothing to LOG.md" % unlogged)
+    if note:
+        out.append("")
+        out.append("- " + "; ".join(note) + ".")
+    return "\n".join(out)
+
+
 def fetch_machine(today):
     """Chain utilization from the GitHub Actions API: attempts vs runs that got
     real work time. Answers Hidde's standing question (2026-07-28) whether his
@@ -1120,6 +1183,7 @@ def main():
     block(audience_section, today, token, today.weekday() != 0)
 
     block(fetch_rum, token, today)
+    block(night_shift, today)
     block(fetch_machine, today)
     gsc_text = "\n\n".join(blocks)
 
