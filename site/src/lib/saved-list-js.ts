@@ -55,16 +55,36 @@ export const SAVED_LIST_JS = `
       + '<span>Saved</span></button>'
       + '</article>';
   }
+  // The two counters at the top of /account used to read the CHECK-IN list,
+  // which is app-only on a phone since 2026-08-14, so they showed 0 trees and
+  // 0 cities directly above a list full of saved trees and read as broken
+  // (Hidde, 2026-08-18: "waar slaan de 0 cities en 0 trees op?"). They now
+  // count what the page actually shows, which is also the only number a
+  // visitor can move from here.
+  function stats(ids, map) {
+    var nt = document.getElementById('n-trees');
+    var nc = document.getElementById('n-cities');
+    if (!nt || !nc) return;
+    var cities = {};
+    ids.forEach(function(id) {
+      var u = (map[id] && map[id].u) || '';
+      var seg = u.split('/')[1];
+      if (seg) cities[seg] = 1;
+    });
+    nt.textContent = ids.length;
+    nc.textContent = Object.keys(cities).length;
+  }
   var lastMap = {};
   function render(map) {
     lastMap = map;
     var ids = Object.keys(map);
-    if (!ids.length) { list.innerHTML = ''; empty.hidden = false; list.hidden = true; return; }
+    if (!ids.length) { list.innerHTML = ''; empty.hidden = false; list.hidden = true; stats([], {}); return; }
     empty.hidden = true;
     ids.sort(function(a, b) { return map[a].n < map[b].n ? -1 : 1; });
     list.innerHTML = ids.map(function(id) { return '<li>' + card(id, map[id]) + '</li>'; }).join('');
     list.hidden = false;
     if (window.atPaintSaves) window.atPaintSaves();
+    stats(ids, map);
   }
   render(localMap());
   // Fill in the city names once, then repaint. A failure here costs a line of
