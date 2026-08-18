@@ -22,7 +22,9 @@ Recorded where it acts rather than in a note, per the ratchet: PRODUCT_IA.md car
 
 Found while wiring that: **the save handler stored `location.pathname` as the tree's url**, which on a city list is the CITY page. So every tree saved from a list has been linking back to the city instead of to itself, since hearts went on cards on 2026-08-14. Fixed; older saves keep whatever url they were stored with.
 
-**FOR HIDDE, one thing worth a decision.** style.css is served unfingerprinted at a fixed path, so a returning visitor can get new HTML with a cached old stylesheet. That is not theoretical: it happened in this session's own check, and the result was a city map that rendered blank because the new markup met the old positioning rules. It resolves itself once the cache expires, and it will happen again on every layout change. The standard fix is a content hash in the filename. It is a build change, so it is flagged rather than done.
+**The stylesheet is fingerprinted, and that was a real bug rather than a precaution.** style.css sat in public/ at a fixed path, so its URL never changed however much the file did, and a returning visitor got fresh HTML with a cached stylesheet. It happened in this session's own check: /explore's map rendered as an empty grey rectangle because the new markup met the old positioning rules. It cures itself when the cache expires and recurs on every layout change, which is the worst shape a bug can have.
+
+`site/src/lib/asset-hash.ts` computes a content hash once per build and the link carries it as `?v=`. Verified live: every page type carries `?v=b99cb9d2bd`, that URL serves the 84 KB stylesheet, and the hash equals the sha1 of the shipped file, so it moves exactly when the bytes move. The font beside it is left alone; its bytes never change.
 
 ## 2026-08-18 (session) - One tree card, walks off the web, and cities findable in their own language
 
