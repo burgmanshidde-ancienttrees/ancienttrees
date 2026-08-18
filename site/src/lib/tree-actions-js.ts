@@ -68,6 +68,9 @@ export const TREE_ACTIONS_JS = `
     });
   }
   window.atPaintSaves = function() { paint(saved()); };
+  // signin-js calls this after refreshing an expired token: by then this file
+  // has already run and concluded there was no session.
+  window.atSyncSaves = syncSaves;
   paint(saved());
   syncSaves();
   document.addEventListener('click', function(e) {
