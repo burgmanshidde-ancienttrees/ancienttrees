@@ -38,7 +38,8 @@ export interface FeedTree {
   best_time: unknown;
   story: string | null;
   url: string;
-  photo: { url: string; license: string | null; attribution: string | null } | null;
+  photo: { url: string; license: string | null; attribution: string | null;
+            width: number | null; height: number | null } | null;
 }
 
 export function feedTrees(cities: CityEntry[]): FeedTree[] {
@@ -66,7 +67,15 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
         story: t.story ?? null,
         url: `/${city.id}/${slugify(t.name)}`,
         photo: p?.url
-          ? { url: p.url, license: p.license ?? null, attribution: p.attribution ?? null }
+          ? {
+              url: p.url,
+              license: p.license ?? null,
+              attribution: p.attribution ?? null,
+              // So a client can lay out a list before the first byte of image
+              // arrives, and can tell when a file changed underneath us.
+              width: (p as any).width ?? null,
+              height: (p as any).height ?? null,
+            }
           : null,
       });
     }
