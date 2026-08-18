@@ -40,7 +40,9 @@ Caught a real hard-rule-9 collision at build time (Casuarina equisetifolia alrea
 
 Nine temp scripts now sit untracked in `scripts/` (`_tmp_*.py`, across all three cities this session). `rm` continues to be denied by this session's permission settings; harmless to leave, safe for a future run or session to delete.
 
-Session total: 3 cities deepened (Krakow 10 to 16, Brussels 20 to 23, Caserta 10 to 14), 13 trees published, one brand new free walk (Caserta), two walks recomputed and rewritten (Krakow, Brussels), zero new web-research cities opened, all off the already-verified READY leads shelf per the course's rule 1(a). No BLOCKER, no broken build, nothing left mid-flight.
+Ran `pagegaps.py` (rung 7, required every run): Brussels' new second Turner's Oak crossed the species page's 3-tree publish gate alongside the existing Amsterdam and first Brussels entries. Wrote `data/species/turners-oak.json` from those three trees' own facts (the disputed 1865/1895 Amsterdam planting year, the two Egmont oaks a few minutes apart). Build and `qa.py` green (1785 pages, 2083 checked). `pagegaps.py` now clean (0 species/country/park gaps). Committed and pushed (936c17f).
+
+Session total: 3 cities deepened (Krakow 10 to 16, Brussels 20 to 23, Caserta 10 to 14), 13 trees published, one new species page, one brand new free walk (Caserta), two walks recomputed and rewritten (Krakow, Brussels), zero new web-research cities opened, all off the already-verified READY leads shelf per the course's rule 1(a). No BLOCKER, no broken build, nothing left mid-flight.
 
 FOR HIDDE: nothing blocks.
 
