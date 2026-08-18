@@ -26,6 +26,16 @@ Left three temp scripts untracked in `scripts/` (`_tmp_*.py`) because `rm` was d
 
 FOR HIDDE: nothing blocks. The leads.py DONE-marker false positive (noted above and in CURATION.md) is a minor data-quality finding, not fixed this pass since it fails safe; worth a look if it recurs.
 
+## 2026-08-18 (session) - Brussels: 20 to 23 trees, second READY-leads city this session
+
+Continued the same rule 1(a) pass into a second city. `leads.py --ready` listed 6 Brussels leads; shipped the 3 with the strongest basis (second Turner's Oak of Parc d'Egmont, White Mulberries pair at the Passage de Milan gate, Turkish Hazel of the Grand Sablon single-sourced and flagged) and left 3 genuinely weaker ones as leads (a shrub-scale holly, a group entry with an ambiguous per-tree girth, a maple whose register health rating flags "middling defects" and needs checking before it ships). The second Turner's Oak was already named directly in the published bru_011's own story ("A second, taller Turner's oak grows a few minutes away"), so this was known-good and simply unwritten; caught and avoided repeating a measurement conflation on Wood Wide Web's atlas page that bru_011's own notes had already flagged.
+
+Walk recomputed rather than assumed: the new trees fall inside the existing Egmont cluster and also pull in the Grand Sablon hazel (about 400m away in reality), producing one 13-tree, 1.0km walk. Left it as one walk rather than forcing a split into smaller groups: `walk_planning.py` clusters by distance (900m radius), not tree count, and CLAUDE.md's "four to eight trees" language reads as typical shape rather than a hard cap. `preflight.py` caught two stale count promises (question_meta and one FAQ answer still said "twenty" after the count moved to 23); fixed both. Build and `qa.py` green (1780 pages, 2078 checked), `superlatives.py` clean (no crown collisions). Ran `tree_index.py`. Logged the pass. Claimed and released `brussels`. Committed and pushed (22e001f).
+
+Six temp scripts now sit untracked in `scripts/` (`_tmp_*.py`, this session's and the last one's), none staged or committed. `rm` continues to be denied by this session's permission settings; harmless to leave, safe for a future run or session to delete.
+
+FOR HIDDE: nothing blocks.
+
 ## 2026-08-17 - Night run 2026-08-17 23:16 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 12.4 minutes of its 120 minute window, 79 turns, 17 commands refused by the allowlist, ended clean (success). 7 commit(s), none of them a published tree. Claims left behind: yakushima, krakow, rome, perugia, berlin, paris, kyoto, ottawa, which block the top of the queue until they expire.
