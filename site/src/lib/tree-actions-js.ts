@@ -82,11 +82,16 @@ export const TREE_ACTIONS_JS = `
       if (ds) cloud('DELETE', '/rest/v1/saves?tree_id=eq.' + encodeURIComponent(b.dataset.tree), null, ds).catch(function() {});
     }
     else {
-      map[b.dataset.tree] = { n: b.dataset.name, u: location.pathname };
+      // data-url is the tree's own page. Falling back to location.pathname is
+      // what this did everywhere, and on a city list that is the CITY page, so
+      // every tree saved from a list used to link back to the city.
+      map[b.dataset.tree] = { n: b.dataset.name, u: b.dataset.url || location.pathname,
+                              p: b.dataset.photo || '', m: b.dataset.meta || '' };
       try { at.track('save'); } catch (err) {}
       var cs = session();
       if (cs) cloud('POST', '/rest/v1/saves?on_conflict=user_id,tree_id',
-        [{ tree_id: b.dataset.tree, name: b.dataset.name, url: location.pathname }], cs).catch(function() {});
+        [{ tree_id: b.dataset.tree, name: b.dataset.name,
+           url: b.dataset.url || location.pathname }], cs).catch(function() {});
       // AllTrails converges every gated tap on one signup surface; ours is
       // this dialog, and until accounts open its ask is the app. Shown on the
       // FIRST save only: the save itself always works instantly and locally,
