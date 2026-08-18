@@ -58,7 +58,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Paris_-_Square_Ren%C3%A9_Viviani_-_robinier_-_1601.jpg",
         "license": "CC BY-SA 3.0",
         "attribution": "Ordifana75, Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 768,
+        "height": 1024
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed"
@@ -89,7 +91,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Cedrus_libani_%28Jardin_des_Plantes_de_Paris%29_1.jpg",
         "license": "Public domain",
         "attribution": "Tangopaso, Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 4416,
+        "height": 3312
       },
       "curation_status": "ai_generated",
       "notes": "Position confirmed via OpenStreetMap's individually mapped 'Cedre de Jussieu' natural monument node, tagged start_date 1734, matching the sourced planting year.",
@@ -128,7 +132,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/RobinierdeRobin.JPG",
         "license": "Public domain",
         "attribution": "Spiridon Manoliu, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3648,
+        "height": 2736
       },
       "curation_status": "ai_generated",
       "notes": "Position confirmed via OpenStreetMap's 'Robinier de Robin' natural monument node near the Ecole de Botanique, matching a local history account of Vespasien Robin's 1636 planting. Photo's own caption names this exact tree ('Robinier de Robin du XVIIe siecle, Jardin des Plantes de Paris'), not just the species.",
@@ -160,7 +166,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Platane_de_Buffon_%28Jardin_des_Plantes_de_Paris%29.jpg",
         "license": "Public domain",
         "attribution": "Tangopaso, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3312,
+        "height": 4416
       },
       "curation_status": "ai_generated",
       "notes": "Position confirmed via OpenStreetMap's 'Platane de Buffon' natural monument node, tagged 'Plante par Buffon en 1785', matching the sourced date exactly.",
@@ -191,7 +199,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Platane_du_parc_Monceau_1.jpg",
         "license": "Public domain",
         "attribution": "Tangopaso, Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 2112,
+        "height": 2816
       },
       "curation_status": "ai_generated",
       "notes": "Position confirmed via the Ville de Paris open tree registry: the only Platanus orientalis in Parc Monceau flagged remarquable, circumference 645cm and height 31m, matching the story's figures.",
@@ -222,7 +232,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Sesquoiadendron_giganteum_in_Parc_des_Buttes-Chaumont_Paris_July_2026.jpg",
         "license": "CC BY 4.0",
         "attribution": "Heidi Meudt (Stitchbird2), via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3060,
+        "height": 4080
       },
       "curation_status": "ai_generated",
       "notes": "Position confirmed via the Ville de Paris open tree registry: the only Sequoiadendron giganteum in the park flagged remarquable (circumference 553cm, height 33m). Second independent source found, sequoias.eu's national survey of giant sequoias in France, which lists this specimen at 40m/485cm circumference; figures vary by measurement date but confirm the same tree. Photo's own embedded GPS coordinates (48.87968, 2.38057) land about 10m from this pin, an independent confirmation.",
@@ -252,7 +264,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/P1380770_Paris_IV_orme_St-Gervais_rwk.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Mbzt, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 1507,
+        "height": 2000
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed"
@@ -282,7 +296,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Jardins_de_l%27avenue_Foch%2C_Paris_16e_28.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Polymagou, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3648,
+        "height": 4549
       },
       "curation_status": "ai_generated",
       "notes": "Position confirmed via the Ville de Paris open tree registry: the only Zelkova carpinifolia among five Zelkovas in the Avenue Foch garden, and the sole one flagged remarquable (circumference 445cm, height 27m).",
@@ -351,7 +367,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Styphnolobium_japonicum_in_Parc_des_Buttes-Chaumont_Paris_July_2026_02.jpg",
         "license": "CC BY 4.0",
         "attribution": "Heidi Meudt, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 4080,
+        "height": 3060
       },
       "curation_status": "ai_generated",
       "notes": "Position confirmed via the Ville de Paris open tree registry: the only Styphnolobium japonicum in the park flagged remarquable (circumference 410cm, height 12m), slightly larger than the 375cm/10m widely reported in press coverage, consistent with continued growth since those articles were written.",

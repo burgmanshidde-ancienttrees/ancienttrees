@@ -54,7 +54,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/ID_01L21902L219TO01_Noce_del_Caucaso_05_Giardino_Sambuy_Piazza_Carlo_Felice_Torino.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Matthewlunas, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3888,
+        "height": 2592
       },
       "curation_status": "ai_generated",
       "notes": "Regional register card 002/L219/TO/01: 605 cm girth, 27 m, age band 100-200, publicly owned. Turismo Torino's route and both press lists independently place a Pterocarya fraxinifolia of 27 m in the Giardino Sambuy opposite Porta Nuova, which is the second source for existence, species and place. Age is single-sourced to the register band and given as a range for that reason. MASAF's national file repeats the same coordinates and girth, so national and regional count as one source, not two. Photo file is named for this exact register card number.",
@@ -94,7 +96,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Platano_piazza_Cavour_1.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Pampuco, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3456,
+        "height": 4608
       },
       "curation_status": "ai_generated",
       "notes": "Regional register card 003/L219/TO/01: 550 cm girth, 34 m, crown 30 m, age band 100-200, publicly owned. Turismo Torino's route and the press lists give 33.5 m for the same tree, so the height is rounded differently rather than disputed. The age band is the register's; the narrower figure comes from MuseoTorino and Mole24, which both date the garden's laying out and its large tree planting to 1872-1875. That is the garden's date, not a measurement of this trunk, so the range is kept wide. Commons has 14 photographs filed under this exact register card number, not yet reviewed; this pass hit its three-photo limit first.",
@@ -126,7 +130,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/ID_01L21904L219TO01_Ginkgo_di_piazza_Cavour_05_Giardini_Cavour_Torino.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Matthewlunas, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 2553,
+        "height": 3888
       },
       "curation_status": "ai_generated",
       "notes": "Regional register card 004/L219/TO/01: 370 cm girth, 27 m, crown 22 m, age band 100-200, publicly owned. Second source for existence, species, place and height is Turismo Torino's route plus both press lists. The designation reason, particular vegetative architecture, is published by Mole24's table rather than by the register layer itself. Photo file is named for this exact register card number and shows the whole tree in daylight with the trunk readable. Sex not recorded anywhere, so the story makes no fruit claim.",
@@ -165,7 +171,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Bagolaro_Parco_del_Valentino.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Emmanuelbaltasar, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 6000,
+        "height": 4000
       },
       "curation_status": "ai_generated",
       "notes": "Regional register card 008/L219/TO/01: 475 cm girth, 23 m, crown 16 m, age band 100-200, publicly owned. Second source is Turismo Torino's route and both press lists, which all place a 23 m Celtis australis in Parco del Valentino. The photo shows an isolated dome-crowned tree on open lawn at the north end of the park, which matches the register point and the Commons file naming it for Corso Massimo d'Azeglio. No best_time set: the autumn fruit is real but small, and the badge is kept for moments worth crossing town for.",
@@ -197,7 +205,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Farnia_monumentale_Valentino_2.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Ivan Ruggiero, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 2407,
+        "height": 3591
       },
       "curation_status": "flagged",
       "notes": "Regional register card 007/L219/TO/01: 400 cm girth, 28 m, crown 15 m, age band over 200, publicly owned. Second source is Quotidiano Piemontese, which places a 28 m Quercus robur 'nei pressi della Rocaille vicina al retro della Facolta di Architettura'. Flagged on pin, not on facts: the rock garden area is broad and Parco del Valentino holds other large oaks, and the register coordinate is single-sourced because MASAF repeats it rather than confirming it. Marked approximate for that reason.",
@@ -261,7 +271,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Platano_Viale_Matteo_Maria_Boiardo_2.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Ivan Ruggiero, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 2488,
+        "height": 2662
       },
       "curation_status": "flagged",
       "notes": "Regional register card 012/L219/TO/01: 510 cm girth, 36 m, crown 27 m, age band 100-200, publicly owned. Second tallest of the fourteen Turin register trees, after 010/L219/TO/01 at 40 m. Second source is Turismo Torino's route and both press lists, all placing a 36 m plane at the Borgo Medievale. Flagged on pin only: several large planes stand along this stretch of Viale Virgilio and the register coordinate is single-sourced, so it is marked approximate. The three oaks mentioned are register card 013/L219/TO/01, filed as a GRUPPO with no girth, height or age, and blocked in data/leads/turin.json.",

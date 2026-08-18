@@ -1,251 +1,253 @@
 {
- "city": "Cagliari",
- "country": "Italy",
- "status": "needs_curation",
- "intro": "Cagliari's biggest tree stands on the square outside the central railway station: a Moreton Bay fig with a trunk twelve metres round, fenced at the base and closely watched. A second fig, 9.8 metres round, holds the corner where Via Roma meets the waterfront. The Giardini Pubblici, Sardinia's oldest public park, adds a twinned pair of figs, a honey locust and a jacaranda that turns violet in May. Further out in Pirri, a cypress older than the cemetery around it. Six of the seven stand within a kilometre and a half.",
- "meta_description": "Cagliari's monumental trees: a fig twelve metres round outside the station, another on the Via Roma waterfront, and three in Sardinia's oldest park.",
- "question_meta": "Cagliari's oldest tree is the cypress in the Pirri cemetery, over two hundred years old and older than the graveyard. Where it stands, plus six more.",
- "question_answer": "The oldest tree in Cagliari is the cypress in the Pirri cemetery, which Sardinian press covering its 2025 protection puts at more than two hundred years old: it was already standing when the burial ground was consecrated in November 1913. The only tree here that comes close is the Tintitaco in the Parco della Rimembranza, and its own record disagrees with itself, roughly 166 years on the Italian tree registry against about 200 in local reporting. The figs are younger than both. The two on the city squares are given 140 to 150 years, and the pair in the Giardini Pubblici anywhere between 140 and 195, a range nobody has narrowed.",
- "question_context": "Ages are the soft part of the record in Cagliari, and it is worth knowing why. Italy's national register of monumental trees, which covers every tree on this page, measures girth and height and carries no age field at all. Every year given here therefore comes from somewhere else: local and regional newspapers, the council's own designation notices, or the independent Italian tree registry, which is the only source that has dated the Tintitaco. Where two of those disagree, this page gives both figures rather than choosing. Access is simpler. All seven trees stand on free public ground, six of them within a kilometre and a half of each other in the centre, and the seventh four kilometres out in Pirri, on a bus route. Two qualifications: a precautionary fence rings the ground under the station fig, so you can stand beside it and not under it, and the Pirri cypress is in a working cemetery with visiting hours. Two further register trees in Cagliari were checked and left off, a Norfolk Island pine and a coral tree, both standing on private ground.",
- "faq": [
-  {
-   "q": "What is the oldest tree in Cagliari?",
-   "a": "The cypress in the Pirri cemetery, put at over two hundred years old by regional press. It was already growing on the site when the cemetery was consecrated in 1913."
-  },
-  {
-   "q": "What is the biggest tree in Cagliari?",
-   "a": "The Moreton Bay fig on Piazza Matteotti, outside the central railway station, with a trunk twelve metres round on the national register's measurement. The fig on Via Roma is next at 9.8 metres."
-  },
-  {
-   "q": "Why is the fig outside the station fenced off?",
-   "a": "As a precaution against branch drop, since November 2025. A University of Sassari assessment in January 2025 found no risk of structural collapse, and the city says the tree is healthy and under continuous management. You can stand beside it but not under the crown."
-  },
-  {
-   "q": "Can I see them all in one walk?",
-   "a": "Six of the seven, yes. The station fig, the Via Roma fig, the Tintitaco and the three Giardini Pubblici trees sit within about a kilometre and a half of each other. The Pirri cypress is four kilometres out and needs a bus."
-  }
- ],
- "hero_tree_id": "cag_004",
- "oldest_tree_id": "cag_006",
- "trees": [
-  {
-   "id": "cag_004",
-   "name": "The Ficus of Piazza Matteotti",
-   "species": "Moreton Bay Fig (Ficus macrophylla)",
-   "age_estimate": "roughly 140-150 years",
-   "age_min": 140,
-   "age_max": 150,
-   "location": {
-    "address": "Piazza Giacomo Matteotti, Cagliari (in front of Cagliari's central railway station)",
-    "latitude": 39.214939,
-    "longitude": 9.109703,
-    "neighbourhood": "Marina, opposite the port and central station"
-   },
-   "story": "Twelve metres around the trunk. That is the largest girth Italy's national register of monumental trees records for any tree in Cagliari, and it belongs to a fig from the far side of the world standing on the square outside the central railway station.\n\nFicus macrophylla comes from the coastal forests of eastern Australia, and at this size it stops behaving like a street tree. Aerial roots come down from the limbs, thicken where they meet the ground and fuse into a base with no clean edge to put a tape around. Local reporting puts the tree at 140 to 150 years old.\n\nThe fence is the first thing a visitor notices. The city ringed the ground under the canopy in November 2025 as a precaution against branch drop, so you can stand beside the tree but not walk under it. It is not a sign of decline. A University of Sassari team assessed the trunk in January 2025 with a dendrodensimeter, an instrument that reads the density of the wood as it drills, and reported no risk of structural collapse and no damage from the building works going on in the piazza. In April 2026 the councillor responsible for the city's green spaces said the same thing plainly: the tree is healthy, and has been under continuous technical management since 2019.",
-   "verified_sources": [
-    "https://www.cagliaritoday.it/cronaca/ficus-monumentale-sta-bene-parla-giua-marassi.html (23 April 2026, fetched via curl with browser user agent, WebFetch itself 403s this host)",
-    "https://www.vistanet.it/cagliari/2025/08/03/i-meravigliosi-ficus-magnolioide-di-piazza-matteotti-a-cagliari-sapete-quanti-anni-hanno/ (3 Aug 2025)",
-    "MASAF national monumental trees register, sheet 03/B354/CA/20 (italy-masaf)"
-   ],
-   "access": "Free, public square; a temporary precautionary fence currently rings the ground beneath the canopy (branch-drop risk), so visitors can see and stand near the tree but not walk directly under the crown",
-   "transport": "Directly outside Cagliari's central railway station (Stazione di Cagliari); city buses converge on the piazza",
-   "location_precision": "confirmed",
-   "curation_status": "flagged",
-   "photo": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Cagliari_Ficus_trees_2.jpg",
-    "license": "CC BY-SA 4.0",
-    "attribution": "Smiley.toerist, via Wikimedia Commons",
-    "status": "approved"
-   }
-  },
-  {
-   "id": "cag_005",
-   "name": "The Ficus of Piazza Ingrao",
-   "species": "Moreton Bay Fig (Ficus macrophylla)",
-   "age_estimate": "roughly 140 years",
-   "age_min": 130,
-   "age_max": 150,
-   "location": {
-    "address": "Piazza F.P. Ingrao, at the junction of Via Roma, Via Regina Margherita and Via XX Settembre, Cagliari",
-    "latitude": 39.212133,
-    "longitude": 9.116408,
-    "neighbourhood": "Marina, Via Roma waterfront"
-   },
-   "story": "Local press calls this the fig that survived the bombs. Cagliari was hit hard from the air in 1943 and the Moreton Bay fig on the corner where Via Roma meets Via Regina Margherita came through it, which is a large part of why the city is fond of it.\n\nCagliariNews dates the planting to about 1883, when the harbour front was being laid out as the Parterre della Darsena, so the tree is over 140 years old. Italy's national register of monumental trees measures the trunk at 9.8 metres round, second in the city only to the fig outside the railway station, five minutes west along the same waterfront.\n\nSardinia added it to the regional list of monumental trees on 21 January 2025, on the same day as the cypress in the Pirri cemetery. The case local reporting made for it was not only age. A canopy this size over one of Cagliari's busiest junctions cools the air under it, takes in what the traffic puts out, and holds resident and migrating birds through the year. It is a working tree in a place that badly needs one, and the fact that it is Australian, like every other big fig in this city, has stopped being remarkable to anybody who lives here.",
-   "verified_sources": [
-    "https://cagliarinews.it/tre-nuovi-alberi-monumentali-a-cagliari-tra-loro-il-ficus-di-via-roma-sopravvissuto-alle-bombe/",
-    "https://www.comune.cagliari.it/portale/page/it/tre_alberature_cittadine_sono_state_inserite_nellelenco_regionale_degli_alberi_monumentali?contentId=NVT210625",
-    "MASAF national monumental trees register, sheet 09/B354/CA/20 (italy-masaf)"
-   ],
-   "access": "Free, public square on the Via Roma waterfront",
-   "transport": "5-10 minutes' walk from Piazza Matteotti / the central railway station, along Via Roma",
-   "location_precision": "confirmed",
-   "curation_status": "flagged",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  },
-  {
-   "id": "cag_001",
-   "name": "The Twin Figs of Giardini Pubblici",
-   "species": "Moreton Bay Fig (Ficus macrophylla)",
-   "age_estimate": "roughly 140-195 years",
-   "age_min": 140,
-   "age_max": 195,
-   "location": {
-    "address": "Giardini Pubblici, main entrance at Largo Giuseppe Dessi / Via Badas (end of Viale Regina Elena), Cagliari",
-    "latitude": 39.225,
-    "longitude": 9.117,
-    "neighbourhood": "Giardini Pubblici, between Castello and La Vega"
-   },
-   "story": "The national register does not measure these two figs separately. It files them as an insieme omogeneo, a homogeneous group, which is how they read from the path: two Moreton Bay figs of much the same size and age, standing together on the avenue near the main entrance of the Giardini Pubblici.\n\nThey are the quieter half of Cagliari's fig story. The park opened between 1866 and 1873 on ground the city had used for its bastion and its lazzaretto, which makes it the oldest public park in Sardinia, and these two went in early enough that published estimates of their age start at 140 years and run as far as 195. Nobody has narrowed that. The city's own pages and the local press cite different figures and neither has been withdrawn.\n\nIn November 2021 the council put three of the park's trees onto the Sardinian regional list of monumental trees: this pair and the honey locust a short walk away. Regional money followed, earmarked for maintenance on the park's protected trees. What that buys is time. A Ficus macrophylla at this size carries limbs longer than most trees are tall, drops aerial roots from them and thickens the ones that reach soil into props, and keeping that structure standing over a public path is the whole job.",
-   "how_to_recognise": "The pair of big figs standing together on the avenue near the main entrance. The honey locust and the jacaranda are elsewhere in the park and are far lighter, more open trees.",
-   "verified_sources": [
-    "https://www.comune.cagliari.it/portale/page/it/tre_esemplari_arborei_dei_giardini_pubblici_nellelenco_regionale_degli_alberi_monumentali?contentId=NVT75021",
-    "https://www.vistanet.it/cagliari/2019/04/14/lo-straordinario-ficus-magnolioide-dei-giardini-pubblici-il-gigante-buono-della-citta/",
-    "MASAF national monumental trees register, sheet 07/B354/CA/20 (italy-masaf)"
-   ],
-   "access": "Free entry, public park, open daily dawn to dusk (Comune di Cagliari, Sardinia's oldest public park)",
-   "transport": "Bus lines 6 and 7 to the Via Regina Elena stop; roughly 10 minutes' walk from Piazza Yenne",
-   "location_precision": "confirmed",
-   "curation_status": "flagged",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  },
-  {
-   "id": "cag_002",
-   "name": "The Spino di Giuda of Giardini Pubblici",
-   "species": "Honey Locust (Gleditsia triacanthos)",
-   "age_estimate": "roughly 120-150 years",
-   "age_min": 120,
-   "age_max": 150,
-   "location": {
-    "address": "Giardini Pubblici, Viale Regina Elena, Cagliari",
-    "latitude": 39.225861,
-    "longitude": 9.116308,
-    "neighbourhood": "Giardini Pubblici, between Castello and La Vega"
-   },
-   "story": "Italians call this species spino di Giuda, Judas's thorn, and the local name for this particular tree sometimes adds inerme: thornless. That is the joke of it. A wild Gleditsia triacanthos defends itself with branched spines that grow in bunches straight out of the trunk, long enough to go through a boot. The form planted in parks has had them bred out.\n\nIt is the third of the three Giardini Pubblici trees Cagliari's council put onto the Sardinian regional list of monumental trees in November 2021, alongside the pair of Moreton Bay figs a short walk away, and by some distance the least obvious of them. The national register measured its trunk at 2.94 metres round in 2020 and nobody has taped it since. No source gives it a documented age; the figures that circulate for the park's protected trees put it somewhere over a century, and that is as close as the record comes.\n\nHoney locust is a tree of central North America and it does not look like the figs at all. The leaves are pinnate and small enough to read as ferns from underneath, they come late and go early, and the seed pods are long, dark and twisted, hanging in the crown well after the leaves have gone.",
-   "how_to_recognise": "In the Giardini Pubblici, a three-metre trunk under small fern-like leaves and long twisted seed pods. Not one of the figs, which are several times heavier at the base.",
-   "verified_sources": [
-    "https://www.comune.cagliari.it/portale/page/it/tre_esemplari_arborei_dei_giardini_pubblici_nellelenco_regionale_degli_alberi_monumentali?contentId=NVT75021",
-    "https://www.vistanet.it/cagliari/2021/11/19/cagliari-tre-piante-dei-giardini-pubblici-diventano-alberi-monumentali/",
-    "MASAF national monumental trees register, sheet 06/B354/CA/20 (italy-masaf)"
-   ],
-   "access": "Free entry, public park, open daily dawn to dusk",
-   "transport": "Bus lines 6 and 7 to the Via Regina Elena stop; roughly 10 minutes' walk from Piazza Yenne",
-   "location_precision": "confirmed",
-   "curation_status": "flagged",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  },
-  {
-   "id": "cag_003",
-   "name": "The Jacaranda of Giardini Pubblici",
-   "species": "Blue Jacaranda (Jacaranda mimosifolia)",
-   "age_estimate": "roughly 100-150 years",
-   "age_min": 100,
-   "age_max": 150,
-   "location": {
-    "address": "Giardini Pubblici, Viale Regina Elena, Cagliari",
-    "latitude": 39.225556,
-    "longitude": 9.116389,
-    "neighbourhood": "Giardini Pubblici, between Castello and La Vega"
-   },
-   "story": "For a few weeks each May this tree stops being green. Jacaranda mimosifolia flowers in violet-blue trumpets across the entire crown, and what falls carpets the ground beneath it in the same colour, which is why the species has been planted in warm cities from Pretoria to Lisbon to Sydney.\n\nIt is the odd one out among the Giardini Pubblici's protected trees, and much the smallest: Italy's national register of monumental trees gives it 1.74 metres round and 16 metres tall, against figs that go to twelve. Its record is also the thinnest here. That register is the only source that has measured this tree on its own, and when regional funding for maintenance of the park's monumental trees came round in 2025 the coverage named the jacaranda without adding an age or a condition report specific to it. So the century or more given on this page is an estimate in line with the trees standing around it, not a dated figure, and it should be read that way.\n\nThe species comes from the dry forests of northwestern Argentina and Bolivia. It flowers on bare or barely-leafed branches, which is what produces the effect: no green to dilute it, just the whole shape of the tree in one colour for a fortnight.",
-   "how_to_recognise": "The smallest of the park's protected trees, under two metres round, and the only one that flowers violet-blue. Out of flower, look for fine fern-like foliage.",
-   "best_time": {
-    "months": [
-     5
-    ],
-    "kind": "flowers",
-    "label": "May, when the whole crown turns violet-blue"
-   },
-   "verified_sources": [
-    "MASAF national monumental trees register, sheet 01/B354/CA/20 (italy-masaf)",
-    "https://www.comune.cagliari.it/portale/page/it/tre_esemplari_arborei_dei_giardini_pubblici_nellelenco_regionale_degli_alberi_monumentali?contentId=NVT75021"
-   ],
-   "access": "Free entry, public park, open daily dawn to dusk",
-   "transport": "Bus lines 6 and 7 to the Via Regina Elena stop; roughly 10 minutes' walk from Piazza Yenne",
-   "location_precision": "confirmed",
-   "curation_status": "flagged",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  },
-  {
-   "id": "cag_007",
-   "name": "The Tintitaco",
-   "species": "Prosopis torquata",
-   "age_estimate": "roughly 165-200 years",
-   "age_min": 165,
-   "age_max": 200,
-   "location": {
-    "address": "Parco della Rimembranza, Via Sonnino, Cagliari",
-    "latitude": 39.215002,
-    "longitude": 9.120562,
-    "neighbourhood": "central Cagliari, near Via Sonnino"
-   },
-   "story": "This tree has no English name. Sardinians call it the tintitaco, the Italian tree registry that keeps the fullest record of it translates that as the Admiral's Tree, and Prosopis torquata, a thorny mesquite from the dry country of northwestern Argentina, is otherwise close to unknown in European parks.\n\nThe name points at the story local sources tell. An English naval commander, a ship that put into Cagliari to sit out a storm with a cargo of exotic plants, and this one left behind as a gift to the city. It is repeated in several places and documented in none, so read it as the city's own account rather than as a record.\n\nThe measurements come with the same caution. The national register lists the trunk at 3 metres round; the Italian tree registry gives 5.7 metres, taken at ground level because the trunk divides low, at about 1.3 metres. Both are right at the height they were measured. Age splits the same way: roughly 166 years on the registry's most recent update, around 200 in local reporting, and no figure at all on the national sheet.\n\nThe state of it is not in dispute. One heavy limb rests on scaffolding and a metal cage holds the trunk on one side. It is alive, protected under Sardinian law, and very obviously being kept that way.",
-   "verified_sources": [
-    "https://ilregistrodeglialberi.it/13529-tintitaco-cagliari-ca-sardegna (RAMI register)",
-    "https://www.admaioramedia.it/pagine/notizie_dettaglio.asp?Id_notizia=10892",
-    "MASAF national monumental trees register, sheet 02/B354/CA/20 (italy-masaf)"
-   ],
-   "access": "Free, public park (Parco della Rimembranza / Parco delle Rimembranze), open daily",
-   "transport": "Roughly 15-20 minutes' walk from the city centre, or a short bus ride to Via Sonnino",
-   "location_precision": "confirmed",
-   "curation_status": "flagged",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  },
-  {
-   "id": "cag_006",
-   "name": "The Cypress of Pirri Cemetery",
-   "species": "Mediterranean Cypress (Cupressus sempervirens)",
-   "age_estimate": "over 200 years",
-   "age_min": 200,
-   "age_max": 260,
-   "location": {
-    "address": "Cimitero di Pirri, Via Gioachino Murat, Cagliari",
-    "latitude": 39.242603,
-    "longitude": 9.133544,
-    "neighbourhood": "Pirri"
-   },
-   "story": "The cemetery came second. Pirri's burial ground was consecrated on 8 November 1913 and this cypress was already standing on the site, more than two hundred years old by the reckoning of the Sardinian press that covered its protection in 2025.\n\nThat makes it, on the published figures, the oldest tree on this page. It is also improbably heavy for its species. Italy's national register of monumental trees puts the trunk at 6.3 metres round, where a Mediterranean cypress normally goes up as a narrow dark column and stays that way for centuries.\n\nCupressus sempervirens has been the tree of Mediterranean burial grounds since long before this one was planted: evergreen, so it never looks dead, and slow enough to outlast everyone buried beneath it. The unusual part here is the order of events. This tree did not arrive to mark the graves, the graves arrived around the tree, and generations of Pirri residents have used it as a landmark rather than a monument.\n\nSardinia added it to the regional list of monumental trees on 21 January 2025, the same day as the fig on Via Roma. Pirri is a district about four kilometres out from the old centre, on a city bus route, and this is a working cemetery rather than a garden: visiting hours, quiet, and people there with a reason.",
-   "verified_sources": [
-    "https://www.unionesarda.it/en/sardinia/cagliari-three-new-additions-to-the-regional-list-of-monumental-trees-a9c9mhcj",
-    "https://cagliarinews.it/tre-nuovi-alberi-monumentali-a-cagliari-tra-loro-il-ficus-di-via-roma-sopravvissuto-alle-bombe/",
-    "MASAF national monumental trees register, sheet 08/B354/CA/20 (italy-masaf)"
-   ],
-   "access": "Free, public municipal cemetery; open during standard cemetery visiting hours",
-   "transport": "Roughly 4 km from the historic centre; CTM city bus lines serve Pirri directly",
-   "location_precision": "confirmed",
-   "curation_status": "flagged",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  }
- ]
+  "city": "Cagliari",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Cagliari's biggest tree stands on the square outside the central railway station: a Moreton Bay fig with a trunk twelve metres round, fenced at the base and closely watched. A second fig, 9.8 metres round, holds the corner where Via Roma meets the waterfront. The Giardini Pubblici, Sardinia's oldest public park, adds a twinned pair of figs, a honey locust and a jacaranda that turns violet in May. Further out in Pirri, a cypress older than the cemetery around it. Six of the seven stand within a kilometre and a half.",
+  "meta_description": "Cagliari's monumental trees: a fig twelve metres round outside the station, another on the Via Roma waterfront, and three in Sardinia's oldest park.",
+  "question_meta": "Cagliari's oldest tree is the cypress in the Pirri cemetery, over two hundred years old and older than the graveyard. Where it stands, plus six more.",
+  "question_answer": "The oldest tree in Cagliari is the cypress in the Pirri cemetery, which Sardinian press covering its 2025 protection puts at more than two hundred years old: it was already standing when the burial ground was consecrated in November 1913. The only tree here that comes close is the Tintitaco in the Parco della Rimembranza, and its own record disagrees with itself, roughly 166 years on the Italian tree registry against about 200 in local reporting. The figs are younger than both. The two on the city squares are given 140 to 150 years, and the pair in the Giardini Pubblici anywhere between 140 and 195, a range nobody has narrowed.",
+  "question_context": "Ages are the soft part of the record in Cagliari, and it is worth knowing why. Italy's national register of monumental trees, which covers every tree on this page, measures girth and height and carries no age field at all. Every year given here therefore comes from somewhere else: local and regional newspapers, the council's own designation notices, or the independent Italian tree registry, which is the only source that has dated the Tintitaco. Where two of those disagree, this page gives both figures rather than choosing. Access is simpler. All seven trees stand on free public ground, six of them within a kilometre and a half of each other in the centre, and the seventh four kilometres out in Pirri, on a bus route. Two qualifications: a precautionary fence rings the ground under the station fig, so you can stand beside it and not under it, and the Pirri cypress is in a working cemetery with visiting hours. Two further register trees in Cagliari were checked and left off, a Norfolk Island pine and a coral tree, both standing on private ground.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Cagliari?",
+      "a": "The cypress in the Pirri cemetery, put at over two hundred years old by regional press. It was already growing on the site when the cemetery was consecrated in 1913."
+    },
+    {
+      "q": "What is the biggest tree in Cagliari?",
+      "a": "The Moreton Bay fig on Piazza Matteotti, outside the central railway station, with a trunk twelve metres round on the national register's measurement. The fig on Via Roma is next at 9.8 metres."
+    },
+    {
+      "q": "Why is the fig outside the station fenced off?",
+      "a": "As a precaution against branch drop, since November 2025. A University of Sassari assessment in January 2025 found no risk of structural collapse, and the city says the tree is healthy and under continuous management. You can stand beside it but not under the crown."
+    },
+    {
+      "q": "Can I see them all in one walk?",
+      "a": "Six of the seven, yes. The station fig, the Via Roma fig, the Tintitaco and the three Giardini Pubblici trees sit within about a kilometre and a half of each other. The Pirri cypress is four kilometres out and needs a bus."
+    }
+  ],
+  "hero_tree_id": "cag_004",
+  "oldest_tree_id": "cag_006",
+  "trees": [
+    {
+      "id": "cag_004",
+      "name": "The Ficus of Piazza Matteotti",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "roughly 140-150 years",
+      "age_min": 140,
+      "age_max": 150,
+      "location": {
+        "address": "Piazza Giacomo Matteotti, Cagliari (in front of Cagliari's central railway station)",
+        "latitude": 39.214939,
+        "longitude": 9.109703,
+        "neighbourhood": "Marina, opposite the port and central station"
+      },
+      "story": "Twelve metres around the trunk. That is the largest girth Italy's national register of monumental trees records for any tree in Cagliari, and it belongs to a fig from the far side of the world standing on the square outside the central railway station.\n\nFicus macrophylla comes from the coastal forests of eastern Australia, and at this size it stops behaving like a street tree. Aerial roots come down from the limbs, thicken where they meet the ground and fuse into a base with no clean edge to put a tape around. Local reporting puts the tree at 140 to 150 years old.\n\nThe fence is the first thing a visitor notices. The city ringed the ground under the canopy in November 2025 as a precaution against branch drop, so you can stand beside the tree but not walk under it. It is not a sign of decline. A University of Sassari team assessed the trunk in January 2025 with a dendrodensimeter, an instrument that reads the density of the wood as it drills, and reported no risk of structural collapse and no damage from the building works going on in the piazza. In April 2026 the councillor responsible for the city's green spaces said the same thing plainly: the tree is healthy, and has been under continuous technical management since 2019.",
+      "verified_sources": [
+        "https://www.cagliaritoday.it/cronaca/ficus-monumentale-sta-bene-parla-giua-marassi.html (23 April 2026, fetched via curl with browser user agent, WebFetch itself 403s this host)",
+        "https://www.vistanet.it/cagliari/2025/08/03/i-meravigliosi-ficus-magnolioide-di-piazza-matteotti-a-cagliari-sapete-quanti-anni-hanno/ (3 Aug 2025)",
+        "MASAF national monumental trees register, sheet 03/B354/CA/20 (italy-masaf)"
+      ],
+      "access": "Free, public square; a temporary precautionary fence currently rings the ground beneath the canopy (branch-drop risk), so visitors can see and stand near the tree but not walk directly under the crown",
+      "transport": "Directly outside Cagliari's central railway station (Stazione di Cagliari); city buses converge on the piazza",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Cagliari_Ficus_trees_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Smiley.toerist, via Wikimedia Commons",
+        "status": "approved",
+        "width": 2736,
+        "height": 3648
+      }
+    },
+    {
+      "id": "cag_005",
+      "name": "The Ficus of Piazza Ingrao",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "roughly 140 years",
+      "age_min": 130,
+      "age_max": 150,
+      "location": {
+        "address": "Piazza F.P. Ingrao, at the junction of Via Roma, Via Regina Margherita and Via XX Settembre, Cagliari",
+        "latitude": 39.212133,
+        "longitude": 9.116408,
+        "neighbourhood": "Marina, Via Roma waterfront"
+      },
+      "story": "Local press calls this the fig that survived the bombs. Cagliari was hit hard from the air in 1943 and the Moreton Bay fig on the corner where Via Roma meets Via Regina Margherita came through it, which is a large part of why the city is fond of it.\n\nCagliariNews dates the planting to about 1883, when the harbour front was being laid out as the Parterre della Darsena, so the tree is over 140 years old. Italy's national register of monumental trees measures the trunk at 9.8 metres round, second in the city only to the fig outside the railway station, five minutes west along the same waterfront.\n\nSardinia added it to the regional list of monumental trees on 21 January 2025, on the same day as the cypress in the Pirri cemetery. The case local reporting made for it was not only age. A canopy this size over one of Cagliari's busiest junctions cools the air under it, takes in what the traffic puts out, and holds resident and migrating birds through the year. It is a working tree in a place that badly needs one, and the fact that it is Australian, like every other big fig in this city, has stopped being remarkable to anybody who lives here.",
+      "verified_sources": [
+        "https://cagliarinews.it/tre-nuovi-alberi-monumentali-a-cagliari-tra-loro-il-ficus-di-via-roma-sopravvissuto-alle-bombe/",
+        "https://www.comune.cagliari.it/portale/page/it/tre_alberature_cittadine_sono_state_inserite_nellelenco_regionale_degli_alberi_monumentali?contentId=NVT210625",
+        "MASAF national monumental trees register, sheet 09/B354/CA/20 (italy-masaf)"
+      ],
+      "access": "Free, public square on the Via Roma waterfront",
+      "transport": "5-10 minutes' walk from Piazza Matteotti / the central railway station, along Via Roma",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "cag_001",
+      "name": "The Twin Figs of Giardini Pubblici",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "roughly 140-195 years",
+      "age_min": 140,
+      "age_max": 195,
+      "location": {
+        "address": "Giardini Pubblici, main entrance at Largo Giuseppe Dessi / Via Badas (end of Viale Regina Elena), Cagliari",
+        "latitude": 39.225,
+        "longitude": 9.117,
+        "neighbourhood": "Giardini Pubblici, between Castello and La Vega"
+      },
+      "story": "The national register does not measure these two figs separately. It files them as an insieme omogeneo, a homogeneous group, which is how they read from the path: two Moreton Bay figs of much the same size and age, standing together on the avenue near the main entrance of the Giardini Pubblici.\n\nThey are the quieter half of Cagliari's fig story. The park opened between 1866 and 1873 on ground the city had used for its bastion and its lazzaretto, which makes it the oldest public park in Sardinia, and these two went in early enough that published estimates of their age start at 140 years and run as far as 195. Nobody has narrowed that. The city's own pages and the local press cite different figures and neither has been withdrawn.\n\nIn November 2021 the council put three of the park's trees onto the Sardinian regional list of monumental trees: this pair and the honey locust a short walk away. Regional money followed, earmarked for maintenance on the park's protected trees. What that buys is time. A Ficus macrophylla at this size carries limbs longer than most trees are tall, drops aerial roots from them and thickens the ones that reach soil into props, and keeping that structure standing over a public path is the whole job.",
+      "how_to_recognise": "The pair of big figs standing together on the avenue near the main entrance. The honey locust and the jacaranda are elsewhere in the park and are far lighter, more open trees.",
+      "verified_sources": [
+        "https://www.comune.cagliari.it/portale/page/it/tre_esemplari_arborei_dei_giardini_pubblici_nellelenco_regionale_degli_alberi_monumentali?contentId=NVT75021",
+        "https://www.vistanet.it/cagliari/2019/04/14/lo-straordinario-ficus-magnolioide-dei-giardini-pubblici-il-gigante-buono-della-citta/",
+        "MASAF national monumental trees register, sheet 07/B354/CA/20 (italy-masaf)"
+      ],
+      "access": "Free entry, public park, open daily dawn to dusk (Comune di Cagliari, Sardinia's oldest public park)",
+      "transport": "Bus lines 6 and 7 to the Via Regina Elena stop; roughly 10 minutes' walk from Piazza Yenne",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "cag_002",
+      "name": "The Spino di Giuda of Giardini Pubblici",
+      "species": "Honey Locust (Gleditsia triacanthos)",
+      "age_estimate": "roughly 120-150 years",
+      "age_min": 120,
+      "age_max": 150,
+      "location": {
+        "address": "Giardini Pubblici, Viale Regina Elena, Cagliari",
+        "latitude": 39.225861,
+        "longitude": 9.116308,
+        "neighbourhood": "Giardini Pubblici, between Castello and La Vega"
+      },
+      "story": "Italians call this species spino di Giuda, Judas's thorn, and the local name for this particular tree sometimes adds inerme: thornless. That is the joke of it. A wild Gleditsia triacanthos defends itself with branched spines that grow in bunches straight out of the trunk, long enough to go through a boot. The form planted in parks has had them bred out.\n\nIt is the third of the three Giardini Pubblici trees Cagliari's council put onto the Sardinian regional list of monumental trees in November 2021, alongside the pair of Moreton Bay figs a short walk away, and by some distance the least obvious of them. The national register measured its trunk at 2.94 metres round in 2020 and nobody has taped it since. No source gives it a documented age; the figures that circulate for the park's protected trees put it somewhere over a century, and that is as close as the record comes.\n\nHoney locust is a tree of central North America and it does not look like the figs at all. The leaves are pinnate and small enough to read as ferns from underneath, they come late and go early, and the seed pods are long, dark and twisted, hanging in the crown well after the leaves have gone.",
+      "how_to_recognise": "In the Giardini Pubblici, a three-metre trunk under small fern-like leaves and long twisted seed pods. Not one of the figs, which are several times heavier at the base.",
+      "verified_sources": [
+        "https://www.comune.cagliari.it/portale/page/it/tre_esemplari_arborei_dei_giardini_pubblici_nellelenco_regionale_degli_alberi_monumentali?contentId=NVT75021",
+        "https://www.vistanet.it/cagliari/2021/11/19/cagliari-tre-piante-dei-giardini-pubblici-diventano-alberi-monumentali/",
+        "MASAF national monumental trees register, sheet 06/B354/CA/20 (italy-masaf)"
+      ],
+      "access": "Free entry, public park, open daily dawn to dusk",
+      "transport": "Bus lines 6 and 7 to the Via Regina Elena stop; roughly 10 minutes' walk from Piazza Yenne",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "cag_003",
+      "name": "The Jacaranda of Giardini Pubblici",
+      "species": "Blue Jacaranda (Jacaranda mimosifolia)",
+      "age_estimate": "roughly 100-150 years",
+      "age_min": 100,
+      "age_max": 150,
+      "location": {
+        "address": "Giardini Pubblici, Viale Regina Elena, Cagliari",
+        "latitude": 39.225556,
+        "longitude": 9.116389,
+        "neighbourhood": "Giardini Pubblici, between Castello and La Vega"
+      },
+      "story": "For a few weeks each May this tree stops being green. Jacaranda mimosifolia flowers in violet-blue trumpets across the entire crown, and what falls carpets the ground beneath it in the same colour, which is why the species has been planted in warm cities from Pretoria to Lisbon to Sydney.\n\nIt is the odd one out among the Giardini Pubblici's protected trees, and much the smallest: Italy's national register of monumental trees gives it 1.74 metres round and 16 metres tall, against figs that go to twelve. Its record is also the thinnest here. That register is the only source that has measured this tree on its own, and when regional funding for maintenance of the park's monumental trees came round in 2025 the coverage named the jacaranda without adding an age or a condition report specific to it. So the century or more given on this page is an estimate in line with the trees standing around it, not a dated figure, and it should be read that way.\n\nThe species comes from the dry forests of northwestern Argentina and Bolivia. It flowers on bare or barely-leafed branches, which is what produces the effect: no green to dilute it, just the whole shape of the tree in one colour for a fortnight.",
+      "how_to_recognise": "The smallest of the park's protected trees, under two metres round, and the only one that flowers violet-blue. Out of flower, look for fine fern-like foliage.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when the whole crown turns violet-blue"
+      },
+      "verified_sources": [
+        "MASAF national monumental trees register, sheet 01/B354/CA/20 (italy-masaf)",
+        "https://www.comune.cagliari.it/portale/page/it/tre_esemplari_arborei_dei_giardini_pubblici_nellelenco_regionale_degli_alberi_monumentali?contentId=NVT75021"
+      ],
+      "access": "Free entry, public park, open daily dawn to dusk",
+      "transport": "Bus lines 6 and 7 to the Via Regina Elena stop; roughly 10 minutes' walk from Piazza Yenne",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "cag_007",
+      "name": "The Tintitaco",
+      "species": "Prosopis torquata",
+      "age_estimate": "roughly 165-200 years",
+      "age_min": 165,
+      "age_max": 200,
+      "location": {
+        "address": "Parco della Rimembranza, Via Sonnino, Cagliari",
+        "latitude": 39.215002,
+        "longitude": 9.120562,
+        "neighbourhood": "central Cagliari, near Via Sonnino"
+      },
+      "story": "This tree has no English name. Sardinians call it the tintitaco, the Italian tree registry that keeps the fullest record of it translates that as the Admiral's Tree, and Prosopis torquata, a thorny mesquite from the dry country of northwestern Argentina, is otherwise close to unknown in European parks.\n\nThe name points at the story local sources tell. An English naval commander, a ship that put into Cagliari to sit out a storm with a cargo of exotic plants, and this one left behind as a gift to the city. It is repeated in several places and documented in none, so read it as the city's own account rather than as a record.\n\nThe measurements come with the same caution. The national register lists the trunk at 3 metres round; the Italian tree registry gives 5.7 metres, taken at ground level because the trunk divides low, at about 1.3 metres. Both are right at the height they were measured. Age splits the same way: roughly 166 years on the registry's most recent update, around 200 in local reporting, and no figure at all on the national sheet.\n\nThe state of it is not in dispute. One heavy limb rests on scaffolding and a metal cage holds the trunk on one side. It is alive, protected under Sardinian law, and very obviously being kept that way.",
+      "verified_sources": [
+        "https://ilregistrodeglialberi.it/13529-tintitaco-cagliari-ca-sardegna (RAMI register)",
+        "https://www.admaioramedia.it/pagine/notizie_dettaglio.asp?Id_notizia=10892",
+        "MASAF national monumental trees register, sheet 02/B354/CA/20 (italy-masaf)"
+      ],
+      "access": "Free, public park (Parco della Rimembranza / Parco delle Rimembranze), open daily",
+      "transport": "Roughly 15-20 minutes' walk from the city centre, or a short bus ride to Via Sonnino",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "cag_006",
+      "name": "The Cypress of Pirri Cemetery",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "age_estimate": "over 200 years",
+      "age_min": 200,
+      "age_max": 260,
+      "location": {
+        "address": "Cimitero di Pirri, Via Gioachino Murat, Cagliari",
+        "latitude": 39.242603,
+        "longitude": 9.133544,
+        "neighbourhood": "Pirri"
+      },
+      "story": "The cemetery came second. Pirri's burial ground was consecrated on 8 November 1913 and this cypress was already standing on the site, more than two hundred years old by the reckoning of the Sardinian press that covered its protection in 2025.\n\nThat makes it, on the published figures, the oldest tree on this page. It is also improbably heavy for its species. Italy's national register of monumental trees puts the trunk at 6.3 metres round, where a Mediterranean cypress normally goes up as a narrow dark column and stays that way for centuries.\n\nCupressus sempervirens has been the tree of Mediterranean burial grounds since long before this one was planted: evergreen, so it never looks dead, and slow enough to outlast everyone buried beneath it. The unusual part here is the order of events. This tree did not arrive to mark the graves, the graves arrived around the tree, and generations of Pirri residents have used it as a landmark rather than a monument.\n\nSardinia added it to the regional list of monumental trees on 21 January 2025, the same day as the fig on Via Roma. Pirri is a district about four kilometres out from the old centre, on a city bus route, and this is a working cemetery rather than a garden: visiting hours, quiet, and people there with a reason.",
+      "verified_sources": [
+        "https://www.unionesarda.it/en/sardinia/cagliari-three-new-additions-to-the-regional-list-of-monumental-trees-a9c9mhcj",
+        "https://cagliarinews.it/tre-nuovi-alberi-monumentali-a-cagliari-tra-loro-il-ficus-di-via-roma-sopravvissuto-alle-bombe/",
+        "MASAF national monumental trees register, sheet 08/B354/CA/20 (italy-masaf)"
+      ],
+      "access": "Free, public municipal cemetery; open during standard cemetery visiting hours",
+      "transport": "Roughly 4 km from the historic centre; CTM city bus lines serve Pirri directly",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
 }

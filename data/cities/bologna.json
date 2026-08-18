@@ -50,7 +50,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Montagnola_%2C.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Aneta Malinowska, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3944,
+        "height": 2736
       },
       "curation_status": "flagged",
       "notes": "Ensemble entry describing the park's surviving Napoleonic-era plane trees rather than one dated individual specimen, consistent with how the sources themselves describe the planting (roughly ten monumental specimens among fifty total). 1805 redesign and circumference figures (1-1.5m diameter, several over 4m circumference) corroborated across two independent sources. 2026-07-29: found via the same Wiki Loves Monuments Italia photographer (Aneta Malinowska) already used for bol_002's sequoia and bol_006's ginkgo, who shot a dedicated series of Bologna's monumental/veteran trees. File:Montagnola ,.jpg, geotagged 44.5026,11.3464 (about 40m from this entry's own pin), described on its own Commons page as an autumn shot of mature trees in the park. 2026-07-29 (later session): downloaded and personally viewed the file. Shows plane trunks with the species' characteristic pale, patchy bark in the foreground, alongside the park's own 1896-dated ironwork and balustrade visible in frame, confirming both the species and the specific park. Approved.",
@@ -80,7 +82,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Giardini_margherita_albero_monumentale.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Aneta Malinowska, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 2976,
+        "height": 3968
       },
       "curation_status": "flagged",
       "notes": "Dimensions (37.4m height, 520cm circumference) from a dedicated Bologna monumental-trees article, corroborated by Wikipedia's sourced article on the gardens' history and general species collection. No individual planting date documented. Photo found 2026-07-28, filename 'Giardini margherita albero monumentale' (monumental tree), Italian caption naming the species directly as 'sequoia sempreverde', an exact match to this entry's own Coast Redwood identification, the only sequoia species this park is sourced as holding. Viewed directly: a dramatic upward shot of the massive, deeply fissured fibrous red bark and multi-stemmed trunk unmistakable as Sequoia sempervirens, with an official monument tag visible attached to the bark. Approved. Pin corrected ~110m via Italy's national monumental tree registry (RAMI), whose own entry for this exact tree records an identical 37.40m height and 5.20m circumference.",
@@ -110,7 +114,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Statua_Minghetti_e_Platano.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 1000,
+        "height": 750
       },
       "curation_status": "flagged",
       "notes": "Height (39.5m) and circumference (455cm) corroborated across two independent sources, including the 'tallest monumental tree in the province' superlative, presented as sourced rather than independently verified against a full provincial register. Photo verified directly: shows the Minghetti statue directly in front of the described plane tree canopy, an exact match to the square and story. Pin tightened 2026-07-27: the only Platanus tree node OpenStreetMap maps in the piazza sits about 17m from the prior address-level estimate; kept `approximate` since the node itself carried no name or registry reference tying it individually to this tree. Upgraded to confirmed: Italy's official AMI national monumental-trees register lists a 'Platano comune' at Piazza Minghetti itself (record naming the exact square, species matching London Plane), read with a purpose-built binary XLS parser and independently landing about 11m from the already-tightened OSM node, two independent sources converging on the same point.",
@@ -140,7 +146,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Piazza_malpighi-platano_orientale.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Aneta Malinowska, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3000,
+        "height": 4496
       },
       "curation_status": "flagged",
       "notes": "Dimensions (36m height, 520cm circumference), the Cavallerizza/Rusconi origin story and the ~1825 planting estimate corroborated across two independent dedicated tree-history sources. Photo verified directly: coordinates in the file's own metadata match the geocoded address closely, and the image clearly shows a large plane canopy over the same elevated garden setting described in the story. Pin cross-checked against Italy's national monumental tree registry (MASAF, AMI code 14/A944/BO/08, \"Palazzo Rusconi - Piazza Malpighi 16\", Platano orientale), read identically across two independent fetches of the source spreadsheet; moved 15m to the registry point.",
@@ -170,7 +178,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/4.rizzoli_cedro_dell%27himalaya_%2812%29.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Aneta Malinowska, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3344,
+        "height": 2508
       },
       "curation_status": "flagged",
       "notes": "Dimensions (29.2m height, 520cm circumference) and AMI listing from a dedicated tree article; the 1896 institutional history corroborated independently by a city archive/library source. Planting date is an estimate tied to the hospital's 1896 opening rather than a documented planting record. 2026-07-29: found via the same photographer (Aneta Malinowska, Wiki Loves Monuments Italia) whose dedicated Bologna monumental-tree series also supplied bol_001, bol_002 and bol_006's photos. File:4.rizzoli cedro dell'himalaya (12).jpg, filename naming this exact tree, geotagged 44.4811,11.3408, essentially identical to this entry's own AMI-registry pin. 2026-07-29 (later session): downloaded and personally viewed the file, plus confirmed via the Commons API that its own description reads 'cedro dell'Himalaya'. Shows a single-stemmed conifer with the species' characteristic weeping, cascading branch tips beside a garden bust on a plinth, consistent with an institutional garden setting. Approved. Pin corrected by about 130m to Italy's national monumental tree registry point (MASAF, AMI code 03/A944/BO/08, \"Istituto Ortopedico Rizzoli - Via Pupilli 1\", Cedro dell'Himalaya), read identically across two independent fetches of the source spreadsheet.",
@@ -206,7 +216,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Piazza_cavour%2C.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Aneta Malinowska, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3000,
+        "height": 4496
       },
       "curation_status": "flagged",
       "notes": "Height (29.5m) and circumference (338cm) corroborated across the official RAMI registry entry and an independent local-history article covering the Lucio Dalla connection. A same-named 'Ginkgo di piazza Cavour' Wikimedia Commons category exists but documents a different tree entirely, in Turin, not Bologna; not used here to avoid the wrong-city mixup. 2026-07-29: found via the correct Bologna-specific source this time, File:Piazza cavour,.jpg by Aneta Malinowska (Wiki Loves Monuments Italia 2020, part of her dedicated Bologna monumental/veteran-tree series), whose own Commons page explicitly describes a Ginkgo biloba in Piazza Cavour, Bologna, geotagged 44.4913,11.3439, essentially this entry's own pin. 2026-07-29 (later session): downloaded and personally viewed the file; the square's own CAVOUR and TAXI signage is legible in frame, confirming the location beyond the geotag alone. Approved. Pin cross-checked against Italy's national monumental tree registry (MASAF, AMI code 12/A944/BO/08, \"Piazza Cavour\", Ginco), read identically across two independent fetches of the source spreadsheet; moved 22m to the registry point.",
@@ -302,7 +314,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Cedro_dell%27Himalaya_nel_Parco_di_Villa_Ghigi.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Ugeorge, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3000,
+        "height": 2000
       },
       "curation_status": "flagged",
       "notes": "Callisto Ghigi planting attribution and general park history from a dedicated local-press feature; dimensions (159cm diameter, 24m height) and lightning-damage detail from the tree's own Wikimedia Commons category structured data. No individual planting date documented. Photo found 2026-07-28, correctly inside the dedicated 'Villa Ghigi (Bologna) - Cedro dell'Himalaya' Commons category this entry already cites as a source (unlike the earlier search-surfaced candidates that turned out to be the Vallerano mixup, flagged and avoided). Viewed directly: a single large Cedrus deodara with the species' characteristic drooping habit, standing on an open lawn behind the same split-rail wooden fence visible in the park's other confirmed photos, with a hilltop villa in the distance, matching the story's own description of its position on the open lawn. Approved. Location confirmed 2026-07-27: an OpenStreetMap tree node tagged `denotation=natural_monument` with a MASAF national-registry reference (`ref:masaf=08/A944/BO/08`) and the same Commons category name, resolving the Vallerano mixup: this node is unambiguously the Bologna specimen, not the same-species tree elsewhere.",

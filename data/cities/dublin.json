@@ -51,7 +51,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/The_Hungry_Tree_at_Kings_Inns_%28geograph_4572088%29.jpg",
         "license": "CC BY-SA 2.0",
         "attribution": "Declan Maher, via Geograph Britain and Ireland / Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3264,
+        "height": 2448
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed"
@@ -100,7 +102,11 @@
       },
       "story": "Local tradition puts this yew at over seven hundred years old. A more cautious estimate, based on girth alone, still lands at over five hundred. Either figure makes it older than the house whose garden it now shares, built in 1710, and very likely the oldest living thing in County Dublin. Jonathan Swift, Dean of St Patrick's Cathedral, is said to have sat beneath it while writing and while courting Esther Vanhomrigh, the Vanessa of his poems, who lived nearby in Celbridge. Nobody can confirm the story, and old trees near famous writers tend to collect this kind of legend whether or not it happened, so take the Swift connection as folklore worth repeating rather than a documented fact. What is certain is the tree itself: a girth of five metres, split with age, still green, standing in a corner of a garden ringed with benches for visitors to sit exactly where Swift supposedly did. The Old Glebe is a private home and only opens to the public on set dates each year, under Ireland's Section 482 scheme for historic houses: all of May, all of June, and nine days in mid-August, 10am to 2pm. Check the dates before making the trip.",
       "best_time": {
-        "months": [9, 10, 11],
+        "months": [
+          9,
+          10,
+          11
+        ],
         "kind": "fruit",
         "label": "red arils on female trees, the only part that is not poisonous"
       },
@@ -135,7 +141,11 @@
       },
       "story": "A double row of yews in Ireland's national botanic garden may predate the garden itself by roughly sixty years. Thomas Tickell, a minor poet and friend of the essayist Joseph Addison, lived on this land from 1736 until his death in 1740, and is said to have planted this avenue in Addison's memory. The Dublin Society did not acquire the site to found the gardens until 1795, more than fifty years after Tickell died, a gap none of the surviving accounts explain, so treat the 1730s planting date as informed tradition rather than settled fact. What survives is real regardless of who is right: a dark, formal walk of clipped yew running through a garden otherwise built for scientific display rather than sentiment, doing exactly what a memorial avenue is supposed to do, nearly three centuries on. Whether Joseph Addison ever actually visited Glasnevin is a question the garden's own historians admit they cannot answer, but his name has outlasted the argument regardless. The National Botanic Gardens are free to enter and open every day of the year except Christmas Day.",
       "best_time": {
-        "months": [9, 10, 11],
+        "months": [
+          9,
+          10,
+          11
+        ],
         "kind": "fruit",
         "label": "red arils on female trees, the only part that is not poisonous"
       },
@@ -209,7 +219,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Platanus_orientalis-Trinity_College_Dublin.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Yair Haklai, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 4032,
+        "height": 1908
       },
       "curation_status": "ai_generated",
       "notes": "Photo viewed directly: shows two large, burred-trunk plane trees standing together in a campus quadrangle. That resolves the earlier open question (the caption alone didn't tie it to New Square rather than the campus's other notable plane, the Provost's Plane, dub_005): the Provost's Plane is a single tree, so a photographed pair can only be this entry. Approved. Species corrected 2026-07-26 from London Plane to Oriental Plane: both the approved photo's own Commons filename ('Platanus_orientalis-Trinity_College_Dublin.jpg') and an independent field identification in GBIF's Heritage Trees of Ireland dataset (CC-BY 4.0, 2009 survey, two Platanus orientalis records 15m apart matching this exact pair) agree on the species, against the original ai_generated field. Pin tightened to the midpoint of those two GBIF-surveyed points.",
@@ -270,7 +282,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/St_Anne%27s_Park_is_the_second_largest_municipal_park_in_Dublin_-_panoramio_%2830%29.jpg",
         "license": "CC BY-SA 3.0",
         "attribution": "William Murphy, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 6000,
+        "height": 4000
       },
       "curation_status": "ai_generated",
       "notes": "Photo verified on Commons: filed under both Category:Saint Anne's Park, Dublin and Category:Quercus ilex (cultivated), showing a straight avenue of dense dark evergreen trees consistent with the holm oak avenue described. Pin resolved 2026-07-28: the European Garden Heritage Network's own account (eghn.org) explicitly states Main Avenue itself, not the separate All Saints Avenue elsewhere in the park, is 'lined with Austrian Pine and Holm Oak'. Queried OpenStreetMap for the park's named ways and found Main Avenue mapped as an actual surveyed path (running roughly east-west, several nodes between -6.178 and -6.194 longitude at ~53.372 latitude); the pin now sits on that mapped path rather than an estimate, replacing the earlier address's confusing reference to All Saints Road, which belongs to a real but different avenue in the same park (a prior pass's OSM candidate near All Saints Road, previously left unresolved as possibly unrelated, is that separate All Saints Avenue, not this one). Upgraded to confirmed since the pin now sits on the actual named, sourced avenue this entry describes.",
@@ -291,7 +305,10 @@
       },
       "story": "The oldest tree on the Farmleigh estate predates the Guinness family who made the place famous by about a century. This sycamore, standing at the edge of what is still called the donkey field, is estimated at over 220 years old, meaning it was already mature when Edward Cecil Guinness bought Farmleigh in 1873 and began rebuilding the house around it. Everything else here, the cedars, the sequoias, the Thuja avenue Guinness planted along the main approach, arrived later as part of his deliberate planting scheme. The sycamore did not: it was simply already there, a survivor of whatever farmland stood on this ground before Farmleigh existed as a name. Today the house serves as the Irish state's official guesthouse for visiting dignitaries, but the 78 acres of grounds around it are free to the public every day, a rare arrangement for a working state property. Farmleigh's own visitor material points to this tree specifically as the oldest thing growing on the estate. No independent survey has verified that figure beyond the estate's own long-standing estimate, so it is presented here as tradition rather than a laboratory result.",
       "best_time": {
-        "months": [9, 10],
+        "months": [
+          9,
+          10
+        ],
         "kind": "fruit",
         "label": "winged seeds that spin down in pairs"
       },
@@ -305,7 +322,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/20130526_Farmleigh_AcerPseudoplatanus_Cutler_P1470345.jpg",
         "license": "CC BY-SA 2.0",
         "attribution": "Wendy Cutler, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 1200,
+        "height": 900
       },
       "curation_status": "flagged",
       "notes": "The '220 years' age and 'donkey field' location both trace back to a single repeated estate description rather than two independently verifiable sources; included per the single-source rule with the gap stated in the story itself. Photo candidate found 2026-07-26 (Commons file captioned 'Acer pseudoplatanus (the large tree), at Farmleigh'), downloaded and viewed directly 2026-07-27: shows a single massive, ancient, low-branching sycamore with a protective fence around its base, in an open parkland setting, exactly matching the described landmark tree. Approved.",
@@ -326,7 +345,10 @@
       },
       "story": "An avenue of oaks in Corkagh Park once led somewhere: to a country house that no longer exists. Oak Avenue was the main approach to Corkagh House, seat of the Finlay and Colley families from the 18th century until the last of the estate's two big houses burned down in the late 1970s. Some of the oaks that lined that approach are still standing, over two hundred years old, planted long before the fire and long before Dublin City Council opened the wider 300 acre demesne to the public in 1986. New oaks have been planted alongside the survivors since, close enough in age that telling the two generations apart takes a trained eye rather than a glance. Archaeologists working on the park's masterplan turned up the foundations of a medieval castle and a moated site here in 2023, a reminder that people have been building and rebuilding on this ground since at least 1326, when Corkagh first appears in the records as part of the Archbishop of Dublin's manor. The oaks are the one part of that long history still doing the job they always did: marking a way in.",
       "best_time": {
-        "months": [9, 10],
+        "months": [
+          9,
+          10
+        ],
         "kind": "fruit",
         "label": "acorns drop, and a good mast year buries the ground in them"
       },
@@ -448,7 +470,10 @@
       },
       "story": "A nurseryman in County Offaly once took cuttings from this exact tree and started selling clones of it. Zelkova carpinifolia 'Glasnevin' is a named cultivar, propagated by Jan Ravensberg from material taken off this specific specimen in the National Botanic Gardens, one of the more unusual honours a single tree in Dublin has received: not just admired, but copied and put into commercial circulation under its own place name. The species itself, the Caucasian elm, comes from the mountains between the Black Sea and the Caspian, and grows into a distinctive multi-stemmed, upright vase shape rather than the single trunk most elms produce, its bark smooth grey brown until age begins to plate it. Unlike Ireland's native elms, decimated by Dutch elm disease through the twentieth century, Zelkova carpinifolia carries strong natural resistance to the fungus, part of why old specimens like this one still stand where true elms mostly do not. The Tree Council of Ireland's 2009 heritage survey puts it at 150 to 200 years old then, roughly 165 to 215 now, the oldest of the garden's newly catalogued specimens, though no source gives a firm planting date. Autumn turns it a rich copper before the leaves drop. It stands 200 metres from Addison's Walk, well within the same visit.",
       "best_time": {
-        "months": [10, 11],
+        "months": [
+          10,
+          11
+        ],
         "kind": "autumn colour",
         "label": "the whole crown turns orange-brown, the tree's best-known moment after its shape"
       },

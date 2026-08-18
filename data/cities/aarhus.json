@@ -1,249 +1,249 @@
 {
- "city": "Aarhus",
- "country": "Denmark",
- "status": "needs_curation",
- "intro": "Aarhus keeps its oldest trees on a former manor estate rather than downtown. Five of the seven trees here stand in and around Moesgård Museum's park, a walk that takes in Denmark's largest wild service tree, filed twice in the national register, and a beech so twisted it earned the nickname the Happy Pig. The other two stand apart: a churchyard oak Danish women planted in 1916 to mark their first vote, and a roadside oak protected by law since 1965.",
- "meta_description": "Aarhus's oldest trees cluster at Moesgård: Denmark's largest wild service tree, a 40-metre silver fir, and a beech twisted into the Happy Pig.",
- "question_meta": "Aarhus's likely oldest tree is the Oak of Skåde, protected since 1965 and estimated at 150-250 years from its girth. No tree here has a dated planting.",
- "question_answer": "No tree in Aarhus carries a confirmed planting date old enough to call it the oldest with certainty. The best candidate is the Oak of Skåde on Elmehøjvej, protected by Danish law since 1965 and estimated, from its 3.76 metre girth, at somewhere between 150 and 250 years old, though nobody has dated it directly. Denmark's largest wild service tree, in Moesgård Museum's park, carries a more precise register estimate of up to about 145 years, given in 2010 and left unrevised by a fuller 2022 re-survey.",
- "question_context": "This page draws on the Dansk Træregister (DDF), the volunteer-run national tree register, checked against Aarhus's own heritage sources where they exist. The register rarely dates a tree outright: it gives a girth, a status, and sometimes an age a surveyor has inferred rather than measured. The Oak of Skåde is a case in point. It has stood under a 1965 protection order for sixty years, but no source has ever put a year on its planting; the 150 to 250 year range here comes from its girth alone. The wild service tree at Moesgård has a firmer number, a register estimate of up to 145 years given in 2010, which a fuller 2022 re-survey left unrevised. Denmark keeps almost nothing older than its parish churchyards and royal estates, which is why five of these seven trees stand on one former manor's grounds: land that stayed under one family's care long enough that nobody got around to cutting the trees down.",
- "faq": [
-  {
-   "q": "What is the oldest tree in Aarhus?",
-   "a": "Most likely the Oak of Skåde on Elmehøjvej, protected since 1965 and estimated at 150 to 250 years old from its girth, though nobody has dated it directly. Denmark's largest wild service tree, at Moesgård, carries a firmer register estimate of up to about 145 years."
-  },
-  {
-   "q": "Are these trees free to visit?",
-   "a": "Yes, every one. Moesgård's park and forest are open to the public even though the museum building itself charges entry, the Oak of Skåde stands at the roadside on public ground, and the Women's Oak of Viby stands on municipal land opposite a churchyard."
-  },
-  {
-   "q": "Can I see them all in one walk?",
-   "a": "Five cluster inside and around Moesgård's park within about 1.3 kilometres of each other: the Wild Service Tree, Silver Fir, Hornbeam and Black Locust in the park itself, and the Happy Pig beech a short walk north in Skåde Skov. The Oak of Skåde is about 1.8 kilometres further along the same bus route and can extend that outing on foot or be visited separately. The Women's Oak of Viby, on the other side of the city near the light rail, is a separate trip."
-  },
-  {
-   "q": "Which tree is the most remarkable?",
-   "a": "The Wild Service Tree of Moesgård. It is very likely the largest of its species in Denmark, a tree that rarely grows this big anywhere in the country, and its crown turns deep crimson in October."
-  }
- ],
- "hero_tree_id": "aar_001",
- "oldest_tree_id": "aar_007",
- "trees": [
-  {
-   "id": "aar_001",
-   "name": "The Wild Service Tree of Moesgård",
-   "species": "Wild Service Tree (Sorbus torminalis)",
-   "age_estimate": "up to about 145 years (2010 register estimate)",
-   "age_min": 100,
-   "age_max": 145,
-   "location": {
-    "address": "Moesgård Museum park, east of the old manor buildings, Højbjerg, Aarhus",
-    "latitude": 56.08711,
-    "longitude": 10.2286,
-    "neighbourhood": "Moesgård / Højbjerg"
-   },
-   "story": "Denmark's largest wild service tree grows in a museum park, and it is a species most Danes could not name. The national tree register holds it twice. A 2010 report called it presumably the largest wild service tree in Denmark and possibly in Europe. A second surveyor came back in 2022, measured it properly and recorded it as simply alive: 17.5 metres tall, 1.38 metres through the trunk, and 4.33 metres around when the tape is dropped to knee height, because the stem splits into two and then several more about a metre up. Both entries carry the same coordinates, so this is one tree filed twice rather than a pair.\n\nSorbus torminalis is scarce this far north and rarely gets near this size. Its Danish name, tarmvridrøn, and its Latin one both point at the same old use of the fruit, a remedy for gripes and colic. The berries are hard and brown and only edible once frost has softened them, and in October the whole crown turns deep crimson, which is the other reason people hunt the species out.\n\nDanish Wikipedia's article on the species names this park as the home of the country's largest specimen, which supports the register, though the claim may trace back to the same original observation rather than a second measurement. The register rates it nationally noteworthy, its top tier, and put a maximum age of about 145 years on it in 2010.",
-   "best_time": {
-    "months": [
-     10
-    ],
-    "kind": "autumn colour",
-    "label": "October, when the crown turns deep crimson"
-   },
-   "verified_sources": [
-    "http://www.dendron.dk/dtr/detaljer.asp?Individual_ID=1767",
-    "http://www.dendron.dk/dtr/detaljer.asp?Individual_ID=472",
-    "https://da.wikipedia.org/wiki/Tarmvridr%C3%B8n"
-   ],
-   "access": "Free, in Moesgård's open park grounds (the museum building itself has paid entry; the surrounding park and forest are open to the public)",
-   "transport": "Bus line 18 from central Aarhus to Moesgaard Museum, roughly 27-30 minutes, then a short walk into the park east of the manor buildings",
-   "location_precision": "confirmed",
-   "curation_status": "flagged",
-   "photo": {
-    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/235070539/medium.jpg",
-    "license": "CC BY",
-    "attribution": "Skjold Søndergaard, via iNaturalist",
-    "status": "held",
-    "note": "a good veteran trunk in daylight and in leaf, but the upper crown is cropped and there is no distance to the pin, so it may be any wild service tree in the Moesgard woods"
-   }
-  },
-  {
-   "id": "aar_002",
-   "name": "The Silver Fir by Moesgård's Small Cemetery",
-   "species": "Silver Fir (Abies alba)",
-   "age_estimate": "not documented",
-   "age_min": 100,
-   "age_max": 160,
-   "location": {
-    "address": "Moesgård Museum park, beside the small family cemetery on the park's eastern edge, Højbjerg, Aarhus",
-    "latitude": 56.08761,
-    "longitude": 10.23005,
-    "neighbourhood": "Moesgård / Højbjerg"
-   },
-   "story": "Forty and a half metres of silver fir stand at the far edge of Moesgård's park, over a graveyard that belongs to a family rather than a parish. The burial ground was begun in 1870 by the Dahls, who then owned the manor, walled with a low stone fence and screened by planting. In 1926 fourteen graves were moved into it from Søndre Kirkegård in Aarhus when that cemetery was cleared. The fir stands beside them.\n\nThe height is the point. A surveyor recorded it in March 2022 at 40.5 metres, 3.91 metres round, alive and healthy. That is a serious size for Abies alba anywhere, and an unusual one in Denmark, where the species is a planted guest from the mountains of central Europe rather than a native. No source records its age. The register leaves the field empty, and so does this page.\n\nSilver fir carries its cones upright on the upper branches, standing on the limbs like candles, and they fall apart scale by scale where they grow instead of dropping whole. You will not find one intact on the ground under this tree, however long you look. The compensation is that everything worth seeing is forty metres over your head, which is a fair excuse to stand still for a while in a quiet corner of the park.",
-   "verified_sources": [
-    "http://www.dendron.dk/dtr/detaljer.asp?Individual_ID=1769",
-    "https://aarhuswiki.dk/wiki/Moesg%C3%A5rd_herreg%C3%A5rd"
-   ],
-   "access": "Free, in Moesgård's open park grounds (the museum building itself has paid entry; the surrounding park and forest are open to the public)",
-   "transport": "Bus line 18 from central Aarhus to Moesgaard Museum, roughly 27-30 minutes, then a short walk into the park",
-   "location_precision": "confirmed",
-   "curation_status": "flagged",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  },
-  {
-   "id": "aar_003",
-   "name": "The Hornbeam of Moesgård",
-   "species": "Hornbeam (Carpinus betulus)",
-   "age_estimate": "not documented",
-   "age_min": 80,
-   "age_max": 140,
-   "location": {
-    "address": "Moesgård Museum park, north side of the park's eastern end, Højbjerg, Aarhus",
-    "latitude": 56.08772,
-    "longitude": 10.22837,
-    "neighbourhood": "Moesgård / Højbjerg"
-   },
-   "story": "The surveyor who measured this hornbeam filed a small complaint along with the numbers: a fine tree, but it stands a little in the shade of some plane trees. He recorded it in March 2022 at 19 metres tall and 2.69 metres round, alive and healthy, and rated it regionally noteworthy.\n\nNineteen metres is a lot of hornbeam. The species usually reads as a hedge or a clipped avenue, because that is what people do to it: it takes cutting better than almost anything and comes back denser each time. Left alone it makes a tall tree with a fluted, muscled trunk that looks poured rather than grown, and wood so hard that Europe used it for cogwheels, mill gearing and butchers' blocks until metal took the work over. The Danish name, avnbøg, files it with the beeches it is not related to.\n\nIt stands on the north side of the eastern end of Moesgård's park, the half laid out as a landscape garden with its trees set clear of one another. Only the tree register carries it, with a GPS position and a photograph, and no source anywhere gives it an age. Take the shade note as a tip: come when the sun is low and behind you, and the trunk does the work.",
-   "verified_sources": [
-    "http://www.dendron.dk/dtr/detaljer.asp?Individual_ID=1768"
-   ],
-   "access": "Free, in Moesgård's open park grounds (the museum building itself has paid entry; the surrounding park and forest are open to the public)",
-   "transport": "Bus line 18 from central Aarhus to Moesgaard Museum, roughly 27-30 minutes, then a short walk into the park",
-   "location_precision": "confirmed",
-   "curation_status": "flagged",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  },
-  {
-   "id": "aar_004",
-   "name": "The Black Locust on Moesgård's Mound",
-   "species": "Black Locust (Robinia pseudoacacia)",
-   "age_estimate": "not documented",
-   "age_min": 90,
-   "age_max": 150,
-   "location": {
-    "address": "Moesgård Museum park, on an artificial burial mound a few hundred metres east of the manor buildings, Højbjerg, Aarhus",
-    "latitude": 56.0865,
-    "longitude": 10.22976,
-    "neighbourhood": "Moesgård / Højbjerg"
-   },
-   "story": "A dead crown is not usually a reason to walk anywhere. This black locust has one, and it stands on a mound somebody built, which between them make it the strangest thing in the park. It is 4.98 metres around and 15.5 metres tall, and when the tree register surveyed it in March 2022 the verdict was alive but weak, with a large part of the crown dead and the tree weakened by age.\n\nRead that girth carefully. Black locust grows fast and thickens early, so five metres of trunk means far less here than the same figure would on an oak. The species is North American, brought to Europe in the early seventeenth century and named after Jean Robin, gardener to the French kings, and it arrived in Danish parks as an exotic with rot-proof timber and hanging white flowers in early summer. It also breaks. Brittle wood under a heavy crown is why old locusts end up looking like this one.\n\nThe mound is man-made, the register says, though no source names who raised it or when. And that survey is four years old now, so a tree already shedding its crown then may have shed more since. Worth knowing before you go, and worth telling us what you find when you get there.",
-   "verified_sources": [
-    "http://www.dendron.dk/dtr/detaljer.asp?Individual_ID=1770"
-   ],
-   "access": "Free, in Moesgård's open park grounds (the museum building itself has paid entry; the surrounding park and forest are open to the public)",
-   "transport": "Bus line 18 from central Aarhus to Moesgaard Museum, roughly 27-30 minutes, then a short walk into the park",
-   "location_precision": "confirmed",
-   "curation_status": "flagged",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  },
-  {
-   "id": "aar_005",
-   "name": "The Happy Pig (Den Glade Gris)",
-   "species": "European Beech (Fagus sylvatica)",
-   "age_estimate": "not documented",
-   "age_min": null,
-   "age_max": null,
-   "location": {
-    "address": "Skåde Skov near Ørnereden, close to Moesgård, Højbjerg, Aarhus",
-    "latitude": 56.09756,
-    "longitude": 10.23855,
-    "neighbourhood": "Skåde / Højbjerg"
-   },
-   "story": "Somebody looked at this beech and saw a pig. The name stuck: Den Glade Gris, the Happy Pig. It grows in Skåde Skov near Ørnereden, up the forest paths north of Moesgård, and the only official record of it is one register entry sent in by email in July 2020, carrying a GPS position and a description of its growth form: twisted and stunted.\n\nThat is the entire file. No height, no girth, no age, no planting date. What there is instead is a shape, and shapes like this are made rather than born. A beech browsed by animals, snapped by snow or bent by wind while it is young grows up with its trunk wandering, and once the habit is set it keeps it for the rest of a long life. Danish woods are full of straight beech grown for timber, which is exactly why the crooked ones get named.\n\nIt reads best in January and February. A beech in leaf hides its own frame, and the frame is the whole point of this one. If you find it, tell us how big it has got and what it actually looks like to you, because nobody has ever measured it and one person's pig is another person's dragon.",
-   "best_time": {
-    "months": [
-     1,
-     2
-    ],
-    "kind": "bare silhouette",
-    "label": "January and February, when the leaves are gone and the twisted frame shows"
-   },
-   "verified_sources": [
-    "http://www.dendron.dk/dtr/detaljer.asp?Individual_ID=1615"
-   ],
-   "access": "Free, public forest (Skåde Skov / Moesgård Skov), open access",
-   "transport": "Bus line 18 from central Aarhus towards Moesgaard Museum, then a walk into Skåde Skov towards Ørnereden (roughly 1.2km north of the main Moesgård tree cluster, along forest paths)",
-   "location_precision": "confirmed",
-   "curation_status": "flagged",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  },
-  {
-   "id": "aar_006",
-   "name": "The Women's Oak of Viby (Kvindeegen)",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "age_estimate": "about 110 years (planted 1916)",
-   "age_min": 105,
-   "age_max": 115,
-   "location": {
-    "address": "Kirkevej, opposite the entrance to Viby Church's churchyard, Viby J, Aarhus",
-    "latitude": 56.128,
-    "longitude": 10.16532,
-    "neighbourhood": "Viby J"
-   },
-   "story": "Danish women voted for the first time in 1915. The year after, the Viby branch of Dansk Kvindesamfund planted an oak to mark it, on a patch of ground the municipality handed over opposite the entrance to the churchyard. It is still there, and still called Kvindernes Eg, the Women's Oak.\n\nIt is the youngest tree on this list and the only one planted for a reason anybody bothered to write down. Trees of this kind went in across Denmark after the constitutional change of 5 June 1915, which gave the vote to women and to servants at a stroke. This one has stood through Viby's growth from a parish outside Aarhus into a suburb inside it; the light rail now stops a short walk from the church gate.\n\nThe national tree register logged it in 2008 as alive and regionally noteworthy, then made a mess of its age. The file says 110 years, and also that the figure applies to 2008, which would put the planting in 1898, eighteen years before it happened. The planting year is the part two independent sources agree on, so count from 1916: about 110 years now, which is roughly the age at which an oak stops reading as a young tree and starts reading as a fixture.",
-   "verified_sources": [
-    "http://www.dendron.dk/dtr/detaljer.asp?Individual_ID=222",
-    "https://aarhuswiki.dk/wiki/Kvindernes_Eg"
-   ],
-   "access": "Free, open access, public roadside space opposite Viby Church",
-   "transport": "Viby J station (Aarhus Letbane light rail and regional trains), short walk to Viby Church on Kirkevej",
-   "location_precision": "confirmed",
-   "curation_status": "flagged",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  },
-  {
-   "id": "aar_007",
-   "name": "The Oak of Skåde",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "age_estimate": "not documented",
-   "age_min": 150,
-   "age_max": 250,
-   "location": {
-    "address": "Roadside on Elmehøjvej, Skåde, Aarhus (protected since 1965)",
-    "latitude": 56.10311,
-    "longitude": 10.22265,
-    "neighbourhood": "Skåde / Højbjerg"
-   },
-   "story": "Danish protection orders normally cover coastlines, moors and the ground around churches. In 1965 one was placed on a single oak at the side of Elmehøjvej. The national register of protected sites still carries it, with directions that end by telling you the oak stands on the left of the road.\n\nIt is not a giant by the standards of protected oaks elsewhere in Europe. A surveyor put it at 16 metres tall and 3.76 metres round in 2019, alive and in good order. Nobody has dated it. An open-grown pedunculate oak takes a long time to lay down that much trunk, which points at something between one and a half and two and a half centuries, but that is arithmetic rather than a record, and no source gives a planting year.\n\nThe protection date is the more useful number. In 1965 somebody in Skåde thought a roadside tree was worth writing into law, at a time when the suburb around it was filling in, and sixty years later it is still at the kerb. That is not how most roadside oaks end up.\n\nStand at the verge and look at the crown rather than the trunk. A tree grown in the open spreads sideways because nothing has ever crowded it out of the light, and this one has had all the room it wanted.",
-   "verified_sources": [
-    "http://www.dendron.dk/dtr/detaljer.asp?Individual_ID=1250",
-    "https://www.fredninger.dk/fredning/skaade-trae/"
-   ],
-   "access": "Free, visible and reachable from the public road (Elmehøjvej); it stands at the roadside, not on private land",
-   "transport": "Bus lines serving Skåde/Emiliedalsvej (e.g. 18 or 100) from central Aarhus, then roughly 10-15 minute walk along Elmehøjvej",
-   "location_precision": "confirmed",
-   "curation_status": "flagged",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  }
- ]
+  "city": "Aarhus",
+  "country": "Denmark",
+  "status": "needs_curation",
+  "intro": "Aarhus keeps its oldest trees on a former manor estate rather than downtown. Five of the seven trees here stand in and around Moesgård Museum's park, a walk that takes in Denmark's largest wild service tree, filed twice in the national register, and a beech so twisted it earned the nickname the Happy Pig. The other two stand apart: a churchyard oak Danish women planted in 1916 to mark their first vote, and a roadside oak protected by law since 1965.",
+  "meta_description": "Aarhus's oldest trees cluster at Moesgård: Denmark's largest wild service tree, a 40-metre silver fir, and a beech twisted into the Happy Pig.",
+  "question_meta": "Aarhus's likely oldest tree is the Oak of Skåde, protected since 1965 and estimated at 150-250 years from its girth. No tree here has a dated planting.",
+  "question_answer": "No tree in Aarhus carries a confirmed planting date old enough to call it the oldest with certainty. The best candidate is the Oak of Skåde on Elmehøjvej, protected by Danish law since 1965 and estimated, from its 3.76 metre girth, at somewhere between 150 and 250 years old, though nobody has dated it directly. Denmark's largest wild service tree, in Moesgård Museum's park, carries a more precise register estimate of up to about 145 years, given in 2010 and left unrevised by a fuller 2022 re-survey.",
+  "question_context": "This page draws on the Dansk Træregister (DDF), the volunteer-run national tree register, checked against Aarhus's own heritage sources where they exist. The register rarely dates a tree outright: it gives a girth, a status, and sometimes an age a surveyor has inferred rather than measured. The Oak of Skåde is a case in point. It has stood under a 1965 protection order for sixty years, but no source has ever put a year on its planting; the 150 to 250 year range here comes from its girth alone. The wild service tree at Moesgård has a firmer number, a register estimate of up to 145 years given in 2010, which a fuller 2022 re-survey left unrevised. Denmark keeps almost nothing older than its parish churchyards and royal estates, which is why five of these seven trees stand on one former manor's grounds: land that stayed under one family's care long enough that nobody got around to cutting the trees down.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Aarhus?",
+      "a": "Most likely the Oak of Skåde on Elmehøjvej, protected since 1965 and estimated at 150 to 250 years old from its girth, though nobody has dated it directly. Denmark's largest wild service tree, at Moesgård, carries a firmer register estimate of up to about 145 years."
+    },
+    {
+      "q": "Are these trees free to visit?",
+      "a": "Yes, every one. Moesgård's park and forest are open to the public even though the museum building itself charges entry, the Oak of Skåde stands at the roadside on public ground, and the Women's Oak of Viby stands on municipal land opposite a churchyard."
+    },
+    {
+      "q": "Can I see them all in one walk?",
+      "a": "Five cluster inside and around Moesgård's park within about 1.3 kilometres of each other: the Wild Service Tree, Silver Fir, Hornbeam and Black Locust in the park itself, and the Happy Pig beech a short walk north in Skåde Skov. The Oak of Skåde is about 1.8 kilometres further along the same bus route and can extend that outing on foot or be visited separately. The Women's Oak of Viby, on the other side of the city near the light rail, is a separate trip."
+    },
+    {
+      "q": "Which tree is the most remarkable?",
+      "a": "The Wild Service Tree of Moesgård. It is very likely the largest of its species in Denmark, a tree that rarely grows this big anywhere in the country, and its crown turns deep crimson in October."
+    }
+  ],
+  "hero_tree_id": "aar_001",
+  "oldest_tree_id": "aar_007",
+  "trees": [
+    {
+      "id": "aar_001",
+      "name": "The Wild Service Tree of Moesgård",
+      "species": "Wild Service Tree (Sorbus torminalis)",
+      "age_estimate": "up to about 145 years (2010 register estimate)",
+      "age_min": 100,
+      "age_max": 145,
+      "location": {
+        "address": "Moesgård Museum park, east of the old manor buildings, Højbjerg, Aarhus",
+        "latitude": 56.08711,
+        "longitude": 10.2286,
+        "neighbourhood": "Moesgård / Højbjerg"
+      },
+      "story": "Denmark's largest wild service tree grows in a museum park, and it is a species most Danes could not name. The national tree register holds it twice. A 2010 report called it presumably the largest wild service tree in Denmark and possibly in Europe. A second surveyor came back in 2022, measured it properly and recorded it as simply alive: 17.5 metres tall, 1.38 metres through the trunk, and 4.33 metres around when the tape is dropped to knee height, because the stem splits into two and then several more about a metre up. Both entries carry the same coordinates, so this is one tree filed twice rather than a pair.\n\nSorbus torminalis is scarce this far north and rarely gets near this size. Its Danish name, tarmvridrøn, and its Latin one both point at the same old use of the fruit, a remedy for gripes and colic. The berries are hard and brown and only edible once frost has softened them, and in October the whole crown turns deep crimson, which is the other reason people hunt the species out.\n\nDanish Wikipedia's article on the species names this park as the home of the country's largest specimen, which supports the register, though the claim may trace back to the same original observation rather than a second measurement. The register rates it nationally noteworthy, its top tier, and put a maximum age of about 145 years on it in 2010.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the crown turns deep crimson"
+      },
+      "verified_sources": [
+        "http://www.dendron.dk/dtr/detaljer.asp?Individual_ID=1767",
+        "http://www.dendron.dk/dtr/detaljer.asp?Individual_ID=472",
+        "https://da.wikipedia.org/wiki/Tarmvridr%C3%B8n"
+      ],
+      "access": "Free, in Moesgård's open park grounds (the museum building itself has paid entry; the surrounding park and forest are open to the public)",
+      "transport": "Bus line 18 from central Aarhus to Moesgaard Museum, roughly 27-30 minutes, then a short walk into the park east of the manor buildings",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/235070539/medium.jpg",
+        "license": "CC BY",
+        "attribution": "Skjold Søndergaard, via iNaturalist",
+        "status": "held",
+        "note": "a good veteran trunk in daylight and in leaf, but the upper crown is cropped and there is no distance to the pin, so it may be any wild service tree in the Moesgard woods"
+      }
+    },
+    {
+      "id": "aar_002",
+      "name": "The Silver Fir by Moesgård's Small Cemetery",
+      "species": "Silver Fir (Abies alba)",
+      "age_estimate": "not documented",
+      "age_min": 100,
+      "age_max": 160,
+      "location": {
+        "address": "Moesgård Museum park, beside the small family cemetery on the park's eastern edge, Højbjerg, Aarhus",
+        "latitude": 56.08761,
+        "longitude": 10.23005,
+        "neighbourhood": "Moesgård / Højbjerg"
+      },
+      "story": "Forty and a half metres of silver fir stand at the far edge of Moesgård's park, over a graveyard that belongs to a family rather than a parish. The burial ground was begun in 1870 by the Dahls, who then owned the manor, walled with a low stone fence and screened by planting. In 1926 fourteen graves were moved into it from Søndre Kirkegård in Aarhus when that cemetery was cleared. The fir stands beside them.\n\nThe height is the point. A surveyor recorded it in March 2022 at 40.5 metres, 3.91 metres round, alive and healthy. That is a serious size for Abies alba anywhere, and an unusual one in Denmark, where the species is a planted guest from the mountains of central Europe rather than a native. No source records its age. The register leaves the field empty, and so does this page.\n\nSilver fir carries its cones upright on the upper branches, standing on the limbs like candles, and they fall apart scale by scale where they grow instead of dropping whole. You will not find one intact on the ground under this tree, however long you look. The compensation is that everything worth seeing is forty metres over your head, which is a fair excuse to stand still for a while in a quiet corner of the park.",
+      "verified_sources": [
+        "http://www.dendron.dk/dtr/detaljer.asp?Individual_ID=1769",
+        "https://aarhuswiki.dk/wiki/Moesg%C3%A5rd_herreg%C3%A5rd"
+      ],
+      "access": "Free, in Moesgård's open park grounds (the museum building itself has paid entry; the surrounding park and forest are open to the public)",
+      "transport": "Bus line 18 from central Aarhus to Moesgaard Museum, roughly 27-30 minutes, then a short walk into the park",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "aar_003",
+      "name": "The Hornbeam of Moesgård",
+      "species": "Hornbeam (Carpinus betulus)",
+      "age_estimate": "not documented",
+      "age_min": 80,
+      "age_max": 140,
+      "location": {
+        "address": "Moesgård Museum park, north side of the park's eastern end, Højbjerg, Aarhus",
+        "latitude": 56.08772,
+        "longitude": 10.22837,
+        "neighbourhood": "Moesgård / Højbjerg"
+      },
+      "story": "The surveyor who measured this hornbeam filed a small complaint along with the numbers: a fine tree, but it stands a little in the shade of some plane trees. He recorded it in March 2022 at 19 metres tall and 2.69 metres round, alive and healthy, and rated it regionally noteworthy.\n\nNineteen metres is a lot of hornbeam. The species usually reads as a hedge or a clipped avenue, because that is what people do to it: it takes cutting better than almost anything and comes back denser each time. Left alone it makes a tall tree with a fluted, muscled trunk that looks poured rather than grown, and wood so hard that Europe used it for cogwheels, mill gearing and butchers' blocks until metal took the work over. The Danish name, avnbøg, files it with the beeches it is not related to.\n\nIt stands on the north side of the eastern end of Moesgård's park, the half laid out as a landscape garden with its trees set clear of one another. Only the tree register carries it, with a GPS position and a photograph, and no source anywhere gives it an age. Take the shade note as a tip: come when the sun is low and behind you, and the trunk does the work.",
+      "verified_sources": [
+        "http://www.dendron.dk/dtr/detaljer.asp?Individual_ID=1768"
+      ],
+      "access": "Free, in Moesgård's open park grounds (the museum building itself has paid entry; the surrounding park and forest are open to the public)",
+      "transport": "Bus line 18 from central Aarhus to Moesgaard Museum, roughly 27-30 minutes, then a short walk into the park",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "aar_004",
+      "name": "The Black Locust on Moesgård's Mound",
+      "species": "Black Locust (Robinia pseudoacacia)",
+      "age_estimate": "not documented",
+      "age_min": 90,
+      "age_max": 150,
+      "location": {
+        "address": "Moesgård Museum park, on an artificial burial mound a few hundred metres east of the manor buildings, Højbjerg, Aarhus",
+        "latitude": 56.0865,
+        "longitude": 10.22976,
+        "neighbourhood": "Moesgård / Højbjerg"
+      },
+      "story": "A dead crown is not usually a reason to walk anywhere. This black locust has one, and it stands on a mound somebody built, which between them make it the strangest thing in the park. It is 4.98 metres around and 15.5 metres tall, and when the tree register surveyed it in March 2022 the verdict was alive but weak, with a large part of the crown dead and the tree weakened by age.\n\nRead that girth carefully. Black locust grows fast and thickens early, so five metres of trunk means far less here than the same figure would on an oak. The species is North American, brought to Europe in the early seventeenth century and named after Jean Robin, gardener to the French kings, and it arrived in Danish parks as an exotic with rot-proof timber and hanging white flowers in early summer. It also breaks. Brittle wood under a heavy crown is why old locusts end up looking like this one.\n\nThe mound is man-made, the register says, though no source names who raised it or when. And that survey is four years old now, so a tree already shedding its crown then may have shed more since. Worth knowing before you go, and worth telling us what you find when you get there.",
+      "verified_sources": [
+        "http://www.dendron.dk/dtr/detaljer.asp?Individual_ID=1770"
+      ],
+      "access": "Free, in Moesgård's open park grounds (the museum building itself has paid entry; the surrounding park and forest are open to the public)",
+      "transport": "Bus line 18 from central Aarhus to Moesgaard Museum, roughly 27-30 minutes, then a short walk into the park",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "aar_005",
+      "name": "The Happy Pig (Den Glade Gris)",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Skåde Skov near Ørnereden, close to Moesgård, Højbjerg, Aarhus",
+        "latitude": 56.09756,
+        "longitude": 10.23855,
+        "neighbourhood": "Skåde / Højbjerg"
+      },
+      "story": "Somebody looked at this beech and saw a pig. The name stuck: Den Glade Gris, the Happy Pig. It grows in Skåde Skov near Ørnereden, up the forest paths north of Moesgård, and the only official record of it is one register entry sent in by email in July 2020, carrying a GPS position and a description of its growth form: twisted and stunted.\n\nThat is the entire file. No height, no girth, no age, no planting date. What there is instead is a shape, and shapes like this are made rather than born. A beech browsed by animals, snapped by snow or bent by wind while it is young grows up with its trunk wandering, and once the habit is set it keeps it for the rest of a long life. Danish woods are full of straight beech grown for timber, which is exactly why the crooked ones get named.\n\nIt reads best in January and February. A beech in leaf hides its own frame, and the frame is the whole point of this one. If you find it, tell us how big it has got and what it actually looks like to you, because nobody has ever measured it and one person's pig is another person's dragon.",
+      "best_time": {
+        "months": [
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "January and February, when the leaves are gone and the twisted frame shows"
+      },
+      "verified_sources": [
+        "http://www.dendron.dk/dtr/detaljer.asp?Individual_ID=1615"
+      ],
+      "access": "Free, public forest (Skåde Skov / Moesgård Skov), open access",
+      "transport": "Bus line 18 from central Aarhus towards Moesgaard Museum, then a walk into Skåde Skov towards Ørnereden (roughly 1.2km north of the main Moesgård tree cluster, along forest paths)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "aar_006",
+      "name": "The Women's Oak of Viby (Kvindeegen)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "about 110 years (planted 1916)",
+      "age_min": 105,
+      "age_max": 115,
+      "location": {
+        "address": "Kirkevej, opposite the entrance to Viby Church's churchyard, Viby J, Aarhus",
+        "latitude": 56.128,
+        "longitude": 10.16532,
+        "neighbourhood": "Viby J"
+      },
+      "story": "Danish women voted for the first time in 1915. The year after, the Viby branch of Dansk Kvindesamfund planted an oak to mark it, on a patch of ground the municipality handed over opposite the entrance to the churchyard. It is still there, and still called Kvindernes Eg, the Women's Oak.\n\nIt is the youngest tree on this list and the only one planted for a reason anybody bothered to write down. Trees of this kind went in across Denmark after the constitutional change of 5 June 1915, which gave the vote to women and to servants at a stroke. This one has stood through Viby's growth from a parish outside Aarhus into a suburb inside it; the light rail now stops a short walk from the church gate.\n\nThe national tree register logged it in 2008 as alive and regionally noteworthy, then made a mess of its age. The file says 110 years, and also that the figure applies to 2008, which would put the planting in 1898, eighteen years before it happened. The planting year is the part two independent sources agree on, so count from 1916: about 110 years now, which is roughly the age at which an oak stops reading as a young tree and starts reading as a fixture.",
+      "verified_sources": [
+        "http://www.dendron.dk/dtr/detaljer.asp?Individual_ID=222",
+        "https://aarhuswiki.dk/wiki/Kvindernes_Eg"
+      ],
+      "access": "Free, open access, public roadside space opposite Viby Church",
+      "transport": "Viby J station (Aarhus Letbane light rail and regional trains), short walk to Viby Church on Kirkevej",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "aar_007",
+      "name": "The Oak of Skåde",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "age_min": 150,
+      "age_max": 250,
+      "location": {
+        "address": "Roadside on Elmehøjvej, Skåde, Aarhus (protected since 1965)",
+        "latitude": 56.10311,
+        "longitude": 10.22265,
+        "neighbourhood": "Skåde / Højbjerg"
+      },
+      "story": "Danish protection orders normally cover coastlines, moors and the ground around churches. In 1965 one was placed on a single oak at the side of Elmehøjvej. The national register of protected sites still carries it, with directions that end by telling you the oak stands on the left of the road.\n\nIt is not a giant by the standards of protected oaks elsewhere in Europe. A surveyor put it at 16 metres tall and 3.76 metres round in 2019, alive and in good order. Nobody has dated it. An open-grown pedunculate oak takes a long time to lay down that much trunk, which points at something between one and a half and two and a half centuries, but that is arithmetic rather than a record, and no source gives a planting year.\n\nThe protection date is the more useful number. In 1965 somebody in Skåde thought a roadside tree was worth writing into law, at a time when the suburb around it was filling in, and sixty years later it is still at the kerb. That is not how most roadside oaks end up.\n\nStand at the verge and look at the crown rather than the trunk. A tree grown in the open spreads sideways because nothing has ever crowded it out of the light, and this one has had all the room it wanted.",
+      "verified_sources": [
+        "http://www.dendron.dk/dtr/detaljer.asp?Individual_ID=1250",
+        "https://www.fredninger.dk/fredning/skaade-trae/"
+      ],
+      "access": "Free, visible and reachable from the public road (Elmehøjvej); it stands at the roadside, not on private land",
+      "transport": "Bus lines serving Skåde/Emiliedalsvej (e.g. 18 or 100) from central Aarhus, then roughly 10-15 minute walk along Elmehøjvej",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
 }

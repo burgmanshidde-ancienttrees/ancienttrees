@@ -36,13 +36,16 @@
       "age_max": 196,
       "location": {
         "address": "Royal Avenue entrance, Royal Victoria Park, Bath BA1 2LR",
-        "latitude": 51.385700,
-        "longitude": -2.367300,
+        "latitude": 51.3857,
+        "longitude": -2.3673,
         "neighbourhood": "Royal Victoria Park"
       },
       "story": "When Royal Victoria Park opened in 1830 as one of England's first public parks, its designers lined the south side of Royal Avenue with elms. Dutch Elm disease reached Britain in the 1970s and worked through the country's mature elms with brutal efficiency, and this avenue was no exception, except for one tree. It is called an elm, but it is genetically a Zelkova, a close relative that happens to be immune to the fungus that carries the disease, which is the only reason it is still standing while its neighbours are long gone. This particular variety traces back to a specimen the 18th-century nurseryman James Gordon brought into cultivation in Britain, distinct enough from the wild Caucasian Elm that it carries his name, 'James Gordon', and most of the Caucasian Elms now growing across the UK are propagated from that same original stock rather than the species as it grows in the wild. Nearly two centuries after the park's founders planted it as one tree among many in a fashionable avenue, it stands alone as the last living piece of Royal Victoria Park's original planting scheme, just inside the gates on Royal Avenue, its irregular, densely branched crown looking nothing like the elms it once stood beside.",
       "best_time": {
-        "months": [10, 11],
+        "months": [
+          10,
+          11
+        ],
         "kind": "autumn colour",
         "label": "the whole crown turns orange-brown, the tree's best-known moment after its shape"
       },
@@ -72,7 +75,7 @@
       "location": {
         "address": "Abbey Green, Bath BA1 1NW",
         "latitude": 51.380508,
-        "longitude": -2.358880,
+        "longitude": -2.35888,
         "neighbourhood": "City centre, south of Bath Abbey"
       },
       "story": "Abbey Green is a small paved square tucked into the medieval streets just south of Bath Abbey, and a single giant London Plane fills nearly all of it, its canopy reaching over the surrounding Georgian facades. Local tradition holds it was planted as a sapling in 1793, which would make it one of the oldest deliberately planted trees of its kind anywhere. Mary Shelley lived at 5 Abbey Churchyard, overlooking the green, while writing most of Frankenstein between 1816 and 1817, and if the 1793 date is right, she would have looked out at this same tree. Historical maps complicate the story: the tree does not appear on an 1852 survey of the area but is clearly present by 1888, which points to a planting closer to the 1880s instead, six decades later than the popular legend claims. Either date makes it a serious tree, not a young one, and the square's own nickname, the Hanging Tree, comes from a separate and even less documented local legend about executions once carried out beneath its branches. Whichever story is true, the tree itself is real, and every December the city strings it with lights for the Bath Christmas Market, wrapped entirely around its trunk.",
@@ -86,7 +89,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/London_plane_at_Abbey_Green%2C_Bath_2025-07-23.jpg",
         "license": "CC0",
         "attribution": "Andy Li (Onthewings), CC0, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 8160,
+        "height": 6144
       },
       "curation_status": "flagged",
       "notes": "The 1793 planting date is widely repeated (travel and heritage sites, tourism copy) but is a local tradition rather than a documented fact. A second, independently reasoned account (map evidence: absent from an 1852 survey, present by 1888) points to a much later planting, roughly 1880s, making the tree 138-146 years old rather than 233. Presented honestly as a range rather than picking one story; the Frankenstein connection is framed as conditional on the earlier date being correct, since the later date would rule it out entirely. The 'Hanging Tree' execution legend is separately sourced local folklore with no primary documentation found; mentioned as the square's own nickname, not stated as fact.",
@@ -101,8 +106,8 @@
       "age_max": 210,
       "location": {
         "address": "The Circus, Bath BA1 2ET",
-        "latitude": 51.386200,
-        "longitude": -2.363800,
+        "latitude": 51.3862,
+        "longitude": -2.3638,
         "neighbourhood": "City centre"
       },
       "story": "The Circus is three curved terraces of Grade I listed townhouses arranged into a full circle, John Wood the Elder's answer to the Colosseum and one of the defining images of Georgian Bath. For its first decades the ring at the centre was paved stone setts sitting over a reservoir that supplied the surrounding houses with water. In 1800 the residents enclosed that centre as a private garden, grassed it over, and planted five London Planes, reportedly to cut down on the dust that horse-drawn carriages kicked up on the surrounding road. Those five trees, believed to date to around 1820, have since grown enormous, their canopies now higher than the roofline of the houses they were planted to shield, and they have become inseparable enough from the Circus's identity that Bath and North East Somerset Council names them as one of the features contributing to the whole ensemble's Grade I listing. Stand in the centre of the green today and the five trunks, the curving stone facades and the sky framed between them make one of the most photographed views in a city that has no shortage of them.",
@@ -131,8 +136,8 @@
       "age_max": 180,
       "location": {
         "address": "The Great Dell, Royal Victoria Park, Bath BA1 2NQ",
-        "latitude": 51.388500,
-        "longitude": -2.373500,
+        "latitude": 51.3885,
+        "longitude": -2.3735,
         "neighbourhood": "Royal Victoria Park, Botanical Gardens"
       },
       "story": "The Great Dell is a disused stone quarry on the northern edge of Royal Victoria Park's Botanical Gardens, planted out in the Victorian era with conifers that had only just started arriving in Britain from the west coast of North America and the mountains of South America. Coast Redwood seed first reached British growers in the 1840s, and the tree that now dominates the Dell, by far its tallest, is one of that first generation of plantings finding out how a California native would fare in an English quarry. It shares the space with an evergreen Monkey Puzzle from Chile and Argentina and English Oaks that predate the quarry's conversion into a garden, but the redwood is the one visitors notice first, its soft, fibrous red-brown bark rising well above the surrounding tree line before the ground was ever cut into a walkway. An aerial walkway now runs along the back of the Dell at canopy height, built so visitors can look across at the redwood's crown rather than straight up at its trunk from the quarry floor. It remains, by any measure taken here, the tallest tree in the whole of Royal Victoria Park.",
@@ -161,13 +166,17 @@
       "age_max": 296,
       "location": {
         "address": "Near the Sham Bridge, Prior Park Landscape Garden, Ralph Allen Drive, Bath BA2 5AH",
-        "latitude": 51.365800,
-        "longitude": -2.345700,
+        "latitude": 51.3658,
+        "longitude": -2.3457,
         "neighbourhood": "Widcombe"
       },
       "story": "Ralph Allen made his fortune modernising Britain's postal system and quarrying the honey-coloured stone that built Georgian Bath, and in the 1730s he spent part of it building Prior Park, a landscape garden on the hillside above the city designed with advice from the poet Alexander Pope and, later, Capability Brown. A group of yews planted along the path east of Prior Park's Sham Bridge, a stone structure built to look older and more ruined than it is, dates to that same original 18th-century design, contemporaries of the garden's famous Palladian bridge rather than later Victorian additions. A second, similar band of yews marks the woodland's northern edge near the dam between the estate's middle and northern ponds. Yew is one of the few species that can genuinely outlast a garden's fashions without needing replacement, and these have simply kept growing in the positions Pope and Allen's landscapers chose for them nearly three centuries ago, dark evergreen anchors in a garden built to look like a series of paintings from every angle. In winter they draw one of the more unusual visitors to the grounds: hawfinches, a shy finch rarely seen in Britain, feed on yew seeds here.",
       "best_time": {
-        "months": [9, 10, 11],
+        "months": [
+          9,
+          10,
+          11
+        ],
         "kind": "fruit",
         "label": "red arils on female trees, the only part that is not poisonous"
       },

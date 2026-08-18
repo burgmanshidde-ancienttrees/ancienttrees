@@ -112,7 +112,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/H%C3%BCseyin_Avni_dede_%C3%A7%C4%B1nar%C4%B1.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Janabaevazizbek, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 4284,
+        "height": 5712
       },
       "curation_status": "ai_generated",
       "notes": "Photo's own GPS metadata (41.0107, 28.9657) lands within about 50 metres of the existing pin, corroborating the location.",
@@ -203,7 +205,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Karacaahmet_myownphotography2013.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Evangelidis, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 768,
+        "height": 1024
       },
       "curation_status": "flagged",
       "notes": "Nine cypresses at Karacaahmet officially carry Monument Tree status from Istanbul's Parks and Gardens Department, but no source specifies which one this entry refers to individually or gives an age for any single trunk. The cemetery's cypress-planting tradition dates to 1582, but like Kameido Tenjin's wisteria in Tokyo this is a continuous practice rather than proof any one tree is that old, so the age range is left wide. Pin refined 2026-07-27 and set to confirmed: Turkey's national monumental-tree GIS layer (services5.arcgis.com/26ObnytmBZ58Wbj8, feature service turkiye_anit_agaclari) shows exactly 8 individually protected Cupressus sempervirens clustered within about 300m of this point, matching this entry's own 'nine cypresses' claim closely enough (one may be recorded slightly outside the immediate cluster or since removed) to treat the cemetery position itself as confirmed, even though no single trunk among the nine is individually distinguished. Photo shows the cemetery's cypress canopy generally, not one identified trunk, which matches that same honesty caveat.",
@@ -323,7 +327,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/%C4%B0shak_A%C4%9Fa_Fountain%2C_Beykoz_Meadow-4.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Nanahuatl, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 5184,
+        "height": 3456
       },
       "curation_status": "flagged",
       "notes": "These are 3-4 individual plane trees on Beykoz Çayırı rather than one tree; the 400-500 year figure is an average forestry estimate, not a per-tree age. Pin corrected 2026-07-27, about 1km: OpenStreetMap carries a leisure=park feature individually named 'Beykoz Çayırı' in Ortaçeşme Mahallesi, and Turkey's national monumental-tree GIS layer independently shows a dense cluster of a dozen-plus protected Platanus orientalis at essentially the same coordinates, confirming this as the real meadow rather than the previous stored guess. Pin tightened further 2026-07-27, about 260m, to the exact centroid of three individually registered Platanus orientalis in that same GIS layer (ages 390, 406 and 406, all within 150m of each other), a clean match on species, count ('three or four individually protected') and age range to this entry's own description. Treated as confirmed: unlike ist_001 and ist_002's nearby Bahçeköy records, these three all carry the matching Platanus orientalis species with no discrepancy.",

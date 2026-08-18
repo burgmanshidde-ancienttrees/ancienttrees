@@ -1,156 +1,158 @@
 {
- "city": "Wroclaw",
- "country": "Poland",
- "status": "needs_curation",
- "intro": "Every oak on this page stands on Wielka Wyspa, the Great Island between the Oder and its canal, and no two of them are more than about a kilometre and a half apart. Three were protected on the same day in February 1953. The oldest is called Dziadek, Grandpa, and is held up by steel clamps; another survives because a mayor bought its riverbank in 1865; a third has been hit by lightning; the fourth is the one still in good shape.",
- "meta_description": "Four ancient oaks on Wroclaw's Wielka Wyspa, all within a short walk: Dziadek, the oldest tree in the city, and the oak a mayor bought a riverbank to save.",
- "question_meta": "Wroclaw's oldest tree is the Dziadek Oak, put at 440 to 460 years and held up by steel braces. Where it stands, plus three more oaks nearby.",
- "question_answer": "Wroclaw's oldest tree is the Dziadek Oak, Grandpa, on ul. Kopernika at the edge of Park Szczytnicki, reported at somewhere between 440 and 460 years old and measured at 652.5 centimetres round in 2019. It is also the most fragile of the four here: the trunk carries serious damage and the branches are reinforced with elastic bindings and steel clamps. Poland's national register records the protection and nothing else, having no column for age or girth anywhere in it, so both the age and the measurements come from a dedicated survey of the monument trees of Wielka Wyspa rather than from the state.",
- "question_context": "The oaks here are pomniki przyrody, Polish natural monuments, and three of them were designated in one sitting on 16 February 1953, decisions 2/53, 3/53 and 5/53. The fourth waited until April 1976. That register is the reason this page is thin on ages: it records a species, a position and a designation date, and has no field for age or girth at all, so every measurement quoted here comes instead from a dedicated survey of the monument trees of Wielka Wyspa, which visited them recently enough to report their condition as well as their size. Two of the four have a reported age and two genuinely do not, and rather than guess, those two ship with a girth and a height and no number for their years. The condition notes are worth reading before you go: one oak is hollow inside, one is braced with clamps, one has been struck by lightning and one is in good health. All four stand on public ground within about a kilometre and a half of each other, on the island formed by the Oder and its canal, which makes them a single afternoon on foot.",
- "faq": [
-  {
-   "q": "What is the oldest tree in Wroclaw?",
-   "a": "The Dziadek Oak, Grandpa, on ul. Kopernika beside Park Szczytnicki, reported at 440 to 460 years old and measured at 652.5 centimetres round in 2019. Its branches are held up with elastic bindings and steel clamps."
-  },
-  {
-   "q": "Are Wroclaw's monument oaks free to visit?",
-   "a": "Yes, all four. Two stand on public streets or pavements, one on the open riverside boulevard along the Oder canal and one inside Park Szczytnicki. No gate, no ticket and no opening hours."
-  },
-  {
-   "q": "Can I see them all in one walk?",
-   "a": "Yes. They sit on Wielka Wyspa within about a kilometre and a half of each other, so the whole set is an easy afternoon on foot, with Park Szczytnicki and the Hala Stulecia on the same route."
-  },
-  {
-   "q": "How old are the other oaks?",
-   "a": "Two of them have no published age at all. Poland's register carries no age field, and no survey has put a number on the Piotr Wlast or Jan Stanko oaks, so those two are described here by girth, height and the year they were protected instead."
-  }
- ],
- "hero_tree_id": "wro_002",
- "oldest_tree_id": "wro_002",
- "trees": [
-  {
-   "id": "wro_001",
-   "name": "The Jan Dzierzon Oak",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "age_estimate": "roughly 400 years",
-   "age_min": 350,
-   "age_max": 450,
-   "location": {
-    "address": "Bulwar on the Odra Canal embankment, ul. Bartla, Wroclaw",
-    "latitude": 51.112528854034636,
-    "longitude": 17.07139933719504,
-    "neighbourhood": "Szczytniki, on the riverside path between the Zwierzyniecki and Szczytnicki bridges"
-   },
-   "location_precision": "confirmed",
-   "access": "Free, on the public riverside boulevard/embankment along the Oder canal, open at all times",
-   "transport": "Tram stops serving Most Zwierzyniecki, about 10 minutes' walk along the river path",
-   "story": "In 1865 the mayor of Breslau bought a piece of riverbank so that this oak would not be cut down. Artur Hobrecht made the purchase on the city's behalf and the tree carried his name for the next eighty years, the Hobrecht-Eiche, until Breslau became Wroclaw in 1945 and the new Polish city renamed it for Jan Dzierzon, the Silesian priest and beekeeper who worked out that drones hatch from unfertilised eggs. It has been a protected natural monument since 16 February 1953, decision 5/53, one of three on this page designated on the same day. A dedicated survey of the monument trees of Wielka Wyspa puts it at 652 centimetres round and 22 metres tall, which is within half a centimetre of the girth recorded for Dziadek, a kilometre away. Poland's national register has no column for either figure, so the measurements come from that survey rather than from the state. The same survey is blunt about its condition: the interior is substantially decayed, the trunk is hollow and the structure is poor. The tree is alive and comes into leaf, standing on the open boulevard along the Oder canal between the Zwierzyniecki and Szczytnicki bridges, where anyone can walk up to it at any hour.",
-   "verified_sources": [
-    "GDOS CRFOP register: http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.0264011.2307",
-    "https://przyrodniczo.pl/pomniki-przyrody/pomniki-przyrody-wielka-wyspa/ (dedicated survey of Wielka Wyspa's monument trees, with current measurements and health notes)"
-   ],
-   "curation_status": "flagged",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  },
-  {
-   "id": "wro_002",
-   "name": "The Dziadek Oak",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "age_estimate": "roughly 440-460 years",
-   "age_min": 440,
-   "age_max": 460,
-   "location": {
-    "address": "ul. Mikolaja Kopernika, in front of the State Labour Inspectorate training centre, Wroclaw",
-    "latitude": 51.107148078268914,
-    "longitude": 17.083586999998182,
-    "neighbourhood": "Dabie, on the edge of Park Szczytnicki"
-   },
-   "location_precision": "confirmed",
-   "access": "Free; the tree stands on the public street/pavement in front of the training centre building, not inside its grounds",
-   "transport": "Tram/bus stops on ul. Kopernika, a few minutes' walk from Park Szczytnicki",
-   "story": "Wroclaw's oldest tree is called Grandpa and it is held together with steel. Dziadek is reported at somewhere between 440 and 460 years old, which puts its start in the era when this was Habsburg Breslau, and its trunk now carries damage serious enough that the branches are reinforced with elastic bindings and clamps. The measurements tell the same story from another angle: 652.5 centimetres round in 2019, up from 629 in 2015, against a height of only 17 metres, the shortest and thickest of the four oaks on this page. A trunk that wide under a crown that low is what a very old tree looks like once it has begun losing its upper limbs. It has been a protected monument since 16 February 1953, decision 2/53. What it has stood through includes the Prussian takeover of Silesia, two centuries of German Breslau and the eighty-day siege of 1945 that left most of the city in ruins and changed both its country and its language. It stands on the public pavement of ul. Kopernika, in front of a training centre but not inside its grounds, on the edge of Park Szczytnicki. Poland's register records the protection and nothing about the tree's size; those numbers come from a survey of the island's monument trees.",
-   "best_time": {
-    "months": [
-     1,
-     2
-    ],
-    "kind": "bare silhouette",
-    "label": "midwinter, when the leaves are gone and you can see how much of this trunk is still holding on"
-   },
-   "verified_sources": [
-    "GDOS CRFOP register: http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.0264011.2288",
-    "https://przyrodniczo.pl/pomniki-przyrody/pomniki-przyrody-wielka-wyspa/ (dedicated survey of Wielka Wyspa's monument trees, with current measurements and health notes)"
-   ],
-   "curation_status": "flagged",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  },
-  {
-   "id": "wro_003",
-   "name": "The Piotr Wlast Oak",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "age_estimate": "",
-   "age_min": null,
-   "age_max": null,
-   "location": {
-    "address": "ul. Wroblewskiego 3, Wroclaw",
-    "latitude": 51.10438722433906,
-    "longitude": 17.083528458162082,
-    "neighbourhood": "Dabie, near Park Szczytnicki and the Wroclaw Zoo"
-   },
-   "location_precision": "confirmed",
-   "access": "Free, standing on public ground",
-   "transport": "Bus/tram stops near the Wroclaw Zoo entrance on ul. Wroblewskiego, a few minutes' walk",
-   "story": "This is the one in the group that is not falling apart. Its three companions on Wielka Wyspa are variously hollow, lightning-struck and clamped together; this oak was recorded in good health at the last survey, with a large, well-formed crown and no bracing, standing 25 metres tall on 510 centimetres of girth. It has been a protected natural monument since 16 February 1953, decision 3/53, the same morning's work as two of the others. The name is a dedication rather than a date. Piotr Wlostowic, Piotr Wlast, was a twelfth-century Silesian magnate and founder of monasteries whose reputation is tied to this region, and nobody is claiming the tree goes back to him: no independent age estimate for this oak has been found at all, and Poland's national register carries no age field to consult. So it ships here with its girth, its height and its designation date, and without a number for its years. It stands on public ground on ul. Wroblewskiego, a few minutes from the entrance to Wroclaw's zoo, which opened in 1865 and is the oldest in Poland. Free, open, and the healthiest tree of this walk.",
-   "verified_sources": [
-    "GDOS CRFOP register: http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.0264011.2289",
-    "https://przyrodniczo.pl/pomniki-przyrody/pomniki-przyrody-wielka-wyspa/ (dedicated survey of Wielka Wyspa's monument trees, with current measurements and health notes)"
-   ],
-   "curation_status": "flagged",
-   "photo": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/D%C4%85b_W%C5%82asta.jpg",
-    "license": "CC BY-SA 3.0",
-    "attribution": "Siliesiac, via Wikimedia Commons",
-    "status": "approved"
-   }
-  },
-  {
-   "id": "wro_004",
-   "name": "The Jan Stanko Oak",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "age_estimate": "",
-   "age_min": null,
-   "age_max": null,
-   "location": {
-    "address": "Park Szczytnicki, near the narrowing of the park pond, Wroclaw",
-    "latitude": 51.112707198862694,
-    "longitude": 17.080944440964227,
-    "neighbourhood": "Szczytniki"
-   },
-   "location_precision": "confirmed",
-   "access": "Free, inside the public Park Szczytnicki, open at all times",
-   "transport": "Tram stops around Hala Stulecia (Centennial Hall) / Park Szczytnicki, a short walk",
-   "story": "Lightning found this oak and it is still in leaf. The strike left it in poor structural condition, which is the surveyors' phrase and not a euphemism, and it went on growing: 554 centimetres round and 26 metres tall, the tallest of the four oaks on this page. It stands inside Park Szczytnicki near the narrowing of the park pond, a few minutes from the Hala Stulecia, Max Berg's concrete dome of 1913 that went on the UNESCO list in 2006 and drew the world's architects to this corner of the city. Unlike the other three, this tree was not protected in the 1953 batch. Its designation came on 2 April 1976, decision 26/76, twenty-three years later. It carries the name of Jan Stanko, the fifteenth-century physician and naturalist who compiled one of the earliest catalogues of Central European plants and animals, which is a fair patron for a tree in a park built as a botanical showpiece. No age estimate for it exists in any source found: the register that protects it records a species, a position and a date, and has no column for age or girth anywhere in it, so the girth and height here come from a dedicated survey of the island's monument trees.",
-   "verified_sources": [
-    "GDOS CRFOP register: http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.0264011.2287",
-    "https://przyrodniczo.pl/pomniki-przyrody/pomniki-przyrody-wielka-wyspa/ (dedicated survey of Wielka Wyspa's monument trees, with current measurements and health notes)"
-   ],
-   "curation_status": "flagged",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  }
- ]
+  "city": "Wroclaw",
+  "country": "Poland",
+  "status": "needs_curation",
+  "intro": "Every oak on this page stands on Wielka Wyspa, the Great Island between the Oder and its canal, and no two of them are more than about a kilometre and a half apart. Three were protected on the same day in February 1953. The oldest is called Dziadek, Grandpa, and is held up by steel clamps; another survives because a mayor bought its riverbank in 1865; a third has been hit by lightning; the fourth is the one still in good shape.",
+  "meta_description": "Four ancient oaks on Wroclaw's Wielka Wyspa, all within a short walk: Dziadek, the oldest tree in the city, and the oak a mayor bought a riverbank to save.",
+  "question_meta": "Wroclaw's oldest tree is the Dziadek Oak, put at 440 to 460 years and held up by steel braces. Where it stands, plus three more oaks nearby.",
+  "question_answer": "Wroclaw's oldest tree is the Dziadek Oak, Grandpa, on ul. Kopernika at the edge of Park Szczytnicki, reported at somewhere between 440 and 460 years old and measured at 652.5 centimetres round in 2019. It is also the most fragile of the four here: the trunk carries serious damage and the branches are reinforced with elastic bindings and steel clamps. Poland's national register records the protection and nothing else, having no column for age or girth anywhere in it, so both the age and the measurements come from a dedicated survey of the monument trees of Wielka Wyspa rather than from the state.",
+  "question_context": "The oaks here are pomniki przyrody, Polish natural monuments, and three of them were designated in one sitting on 16 February 1953, decisions 2/53, 3/53 and 5/53. The fourth waited until April 1976. That register is the reason this page is thin on ages: it records a species, a position and a designation date, and has no field for age or girth at all, so every measurement quoted here comes instead from a dedicated survey of the monument trees of Wielka Wyspa, which visited them recently enough to report their condition as well as their size. Two of the four have a reported age and two genuinely do not, and rather than guess, those two ship with a girth and a height and no number for their years. The condition notes are worth reading before you go: one oak is hollow inside, one is braced with clamps, one has been struck by lightning and one is in good health. All four stand on public ground within about a kilometre and a half of each other, on the island formed by the Oder and its canal, which makes them a single afternoon on foot.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Wroclaw?",
+      "a": "The Dziadek Oak, Grandpa, on ul. Kopernika beside Park Szczytnicki, reported at 440 to 460 years old and measured at 652.5 centimetres round in 2019. Its branches are held up with elastic bindings and steel clamps."
+    },
+    {
+      "q": "Are Wroclaw's monument oaks free to visit?",
+      "a": "Yes, all four. Two stand on public streets or pavements, one on the open riverside boulevard along the Oder canal and one inside Park Szczytnicki. No gate, no ticket and no opening hours."
+    },
+    {
+      "q": "Can I see them all in one walk?",
+      "a": "Yes. They sit on Wielka Wyspa within about a kilometre and a half of each other, so the whole set is an easy afternoon on foot, with Park Szczytnicki and the Hala Stulecia on the same route."
+    },
+    {
+      "q": "How old are the other oaks?",
+      "a": "Two of them have no published age at all. Poland's register carries no age field, and no survey has put a number on the Piotr Wlast or Jan Stanko oaks, so those two are described here by girth, height and the year they were protected instead."
+    }
+  ],
+  "hero_tree_id": "wro_002",
+  "oldest_tree_id": "wro_002",
+  "trees": [
+    {
+      "id": "wro_001",
+      "name": "The Jan Dzierzon Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 400 years",
+      "age_min": 350,
+      "age_max": 450,
+      "location": {
+        "address": "Bulwar on the Odra Canal embankment, ul. Bartla, Wroclaw",
+        "latitude": 51.112528854034636,
+        "longitude": 17.07139933719504,
+        "neighbourhood": "Szczytniki, on the riverside path between the Zwierzyniecki and Szczytnicki bridges"
+      },
+      "location_precision": "confirmed",
+      "access": "Free, on the public riverside boulevard/embankment along the Oder canal, open at all times",
+      "transport": "Tram stops serving Most Zwierzyniecki, about 10 minutes' walk along the river path",
+      "story": "In 1865 the mayor of Breslau bought a piece of riverbank so that this oak would not be cut down. Artur Hobrecht made the purchase on the city's behalf and the tree carried his name for the next eighty years, the Hobrecht-Eiche, until Breslau became Wroclaw in 1945 and the new Polish city renamed it for Jan Dzierzon, the Silesian priest and beekeeper who worked out that drones hatch from unfertilised eggs. It has been a protected natural monument since 16 February 1953, decision 5/53, one of three on this page designated on the same day. A dedicated survey of the monument trees of Wielka Wyspa puts it at 652 centimetres round and 22 metres tall, which is within half a centimetre of the girth recorded for Dziadek, a kilometre away. Poland's national register has no column for either figure, so the measurements come from that survey rather than from the state. The same survey is blunt about its condition: the interior is substantially decayed, the trunk is hollow and the structure is poor. The tree is alive and comes into leaf, standing on the open boulevard along the Oder canal between the Zwierzyniecki and Szczytnicki bridges, where anyone can walk up to it at any hour.",
+      "verified_sources": [
+        "GDOS CRFOP register: http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.0264011.2307",
+        "https://przyrodniczo.pl/pomniki-przyrody/pomniki-przyrody-wielka-wyspa/ (dedicated survey of Wielka Wyspa's monument trees, with current measurements and health notes)"
+      ],
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "wro_002",
+      "name": "The Dziadek Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 440-460 years",
+      "age_min": 440,
+      "age_max": 460,
+      "location": {
+        "address": "ul. Mikolaja Kopernika, in front of the State Labour Inspectorate training centre, Wroclaw",
+        "latitude": 51.107148078268914,
+        "longitude": 17.083586999998182,
+        "neighbourhood": "Dabie, on the edge of Park Szczytnicki"
+      },
+      "location_precision": "confirmed",
+      "access": "Free; the tree stands on the public street/pavement in front of the training centre building, not inside its grounds",
+      "transport": "Tram/bus stops on ul. Kopernika, a few minutes' walk from Park Szczytnicki",
+      "story": "Wroclaw's oldest tree is called Grandpa and it is held together with steel. Dziadek is reported at somewhere between 440 and 460 years old, which puts its start in the era when this was Habsburg Breslau, and its trunk now carries damage serious enough that the branches are reinforced with elastic bindings and clamps. The measurements tell the same story from another angle: 652.5 centimetres round in 2019, up from 629 in 2015, against a height of only 17 metres, the shortest and thickest of the four oaks on this page. A trunk that wide under a crown that low is what a very old tree looks like once it has begun losing its upper limbs. It has been a protected monument since 16 February 1953, decision 2/53. What it has stood through includes the Prussian takeover of Silesia, two centuries of German Breslau and the eighty-day siege of 1945 that left most of the city in ruins and changed both its country and its language. It stands on the public pavement of ul. Kopernika, in front of a training centre but not inside its grounds, on the edge of Park Szczytnicki. Poland's register records the protection and nothing about the tree's size; those numbers come from a survey of the island's monument trees.",
+      "best_time": {
+        "months": [
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "midwinter, when the leaves are gone and you can see how much of this trunk is still holding on"
+      },
+      "verified_sources": [
+        "GDOS CRFOP register: http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.0264011.2288",
+        "https://przyrodniczo.pl/pomniki-przyrody/pomniki-przyrody-wielka-wyspa/ (dedicated survey of Wielka Wyspa's monument trees, with current measurements and health notes)"
+      ],
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "wro_003",
+      "name": "The Piotr Wlast Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "ul. Wroblewskiego 3, Wroclaw",
+        "latitude": 51.10438722433906,
+        "longitude": 17.083528458162082,
+        "neighbourhood": "Dabie, near Park Szczytnicki and the Wroclaw Zoo"
+      },
+      "location_precision": "confirmed",
+      "access": "Free, standing on public ground",
+      "transport": "Bus/tram stops near the Wroclaw Zoo entrance on ul. Wroblewskiego, a few minutes' walk",
+      "story": "This is the one in the group that is not falling apart. Its three companions on Wielka Wyspa are variously hollow, lightning-struck and clamped together; this oak was recorded in good health at the last survey, with a large, well-formed crown and no bracing, standing 25 metres tall on 510 centimetres of girth. It has been a protected natural monument since 16 February 1953, decision 3/53, the same morning's work as two of the others. The name is a dedication rather than a date. Piotr Wlostowic, Piotr Wlast, was a twelfth-century Silesian magnate and founder of monasteries whose reputation is tied to this region, and nobody is claiming the tree goes back to him: no independent age estimate for this oak has been found at all, and Poland's national register carries no age field to consult. So it ships here with its girth, its height and its designation date, and without a number for its years. It stands on public ground on ul. Wroblewskiego, a few minutes from the entrance to Wroclaw's zoo, which opened in 1865 and is the oldest in Poland. Free, open, and the healthiest tree of this walk.",
+      "verified_sources": [
+        "GDOS CRFOP register: http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.0264011.2289",
+        "https://przyrodniczo.pl/pomniki-przyrody/pomniki-przyrody-wielka-wyspa/ (dedicated survey of Wielka Wyspa's monument trees, with current measurements and health notes)"
+      ],
+      "curation_status": "flagged",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/D%C4%85b_W%C5%82asta.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Siliesiac, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3096,
+        "height": 2290
+      }
+    },
+    {
+      "id": "wro_004",
+      "name": "The Jan Stanko Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Park Szczytnicki, near the narrowing of the park pond, Wroclaw",
+        "latitude": 51.112707198862694,
+        "longitude": 17.080944440964227,
+        "neighbourhood": "Szczytniki"
+      },
+      "location_precision": "confirmed",
+      "access": "Free, inside the public Park Szczytnicki, open at all times",
+      "transport": "Tram stops around Hala Stulecia (Centennial Hall) / Park Szczytnicki, a short walk",
+      "story": "Lightning found this oak and it is still in leaf. The strike left it in poor structural condition, which is the surveyors' phrase and not a euphemism, and it went on growing: 554 centimetres round and 26 metres tall, the tallest of the four oaks on this page. It stands inside Park Szczytnicki near the narrowing of the park pond, a few minutes from the Hala Stulecia, Max Berg's concrete dome of 1913 that went on the UNESCO list in 2006 and drew the world's architects to this corner of the city. Unlike the other three, this tree was not protected in the 1953 batch. Its designation came on 2 April 1976, decision 26/76, twenty-three years later. It carries the name of Jan Stanko, the fifteenth-century physician and naturalist who compiled one of the earliest catalogues of Central European plants and animals, which is a fair patron for a tree in a park built as a botanical showpiece. No age estimate for it exists in any source found: the register that protects it records a species, a position and a date, and has no column for age or girth anywhere in it, so the girth and height here come from a dedicated survey of the island's monument trees.",
+      "verified_sources": [
+        "GDOS CRFOP register: http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.0264011.2287",
+        "https://przyrodniczo.pl/pomniki-przyrody/pomniki-przyrody-wielka-wyspa/ (dedicated survey of Wielka Wyspa's monument trees, with current measurements and health notes)"
+      ],
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
 }

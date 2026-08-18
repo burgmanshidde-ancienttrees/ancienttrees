@@ -53,7 +53,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/KuninkaanTammi.jpg",
         "license": "Public domain",
         "attribution": "KLS, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3000,
+        "height": 4000
       },
       "curation_status": "flagged",
       "location_precision": "approximate"
@@ -177,7 +179,9 @@
       "curation_status": "ai_generated",
       "location_precision": "approximate",
       "best_time": {
-        "months": [5],
+        "months": [
+          5
+        ],
         "label": "early May, when the pear blossoms",
         "kind": "flowers"
       }
@@ -270,7 +274,9 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "best_time": {
-        "months": [9],
+        "months": [
+          9
+        ],
         "label": "late September, when the berries turn bright orange",
         "kind": "fruit"
       }

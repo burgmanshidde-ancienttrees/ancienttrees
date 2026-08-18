@@ -1,154 +1,154 @@
 {
- "city": "Crete",
- "country": "Greece",
- "status": "needs_curation",
- "kind": "island",
- "intro": "Crete's four trees are 190 kilometres apart at the extremes, so this is a driving list rather than a walk. Two are ancient olives at opposite ends of the island, at Ano Vouves near Chania in the west and at Kavousi in Lasithi in the east, and both are dated in thousands of years by methods that argue with each other. The other two are plane trees, one filling a mountain village square at Krasi, one keeping its leaves all winter at Gortyn.",
- "meta_description": "Crete's four remarkable trees: two ancient olives at opposite ends of the island, one ring-dated to the Bronze Age, and two extraordinary plane trees.",
- "question_meta": "Crete's oldest undisputed tree is the olive at Azoria near Kavousi, roughly 3,000 to 3,400 years. The famous Vouves olive cannot be settled.",
- "oldest_tree_id": "crt_002",
- "question_answer": "The oldest tree on Crete whose age nobody argues about is the olive at Azoria, a kilometre south of Kavousi in Lasithi. Ring analysis reported by the municipality of Ierapetra dates its planting to between 1350 and 1100 BCE, which makes it roughly 3,000 to 3,400 years old. The far more famous olive at Ano Vouves, near Chania at the other end of the island, may well be older, but nobody can settle it: ring work published in 1996 gives a floor of at least 2,000 years, while scientists at the University of Crete have estimated 4,000.",
- "question_context": "Crete's age question is complicated by the fact that olives are close to undateable. They hollow out as they grow old and lose the heartwood that a ring count or a radiocarbon test would need, which is why the island's two great olives arrive with such different kinds of number. The tree at Ano Vouves near Chania has a published floor from ring analysis, at least 2,000 years, and a widely repeated estimate from University of Crete scientists of 4,000, which would make it the oldest living olive known anywhere. English Wikipedia states plainly that its exact age cannot be determined and that no agreed scientific method for dating olives exists. The olive at Azoria near Kavousi, at the eastern end of the island, is the one nobody argues about: ring analysis places its planting between 1350 and 1100 BCE, and municipal and press sources settle on roughly 3,250 years. Crete's two plane trees carry no age at all. The one at Krasi is 24 metres round and the one at Gortyn is evergreen, and neither has been dated, because planes regenerate from the root and a huge base can be renewal rather than one continuous stem.",
- "faq": [
-  {
-   "q": "What is the oldest tree in Crete?",
-   "a": "The olive at Azoria, a kilometre south of Kavousi in Lasithi, is the oldest with a figure nobody disputes: ring analysis dates its planting to between 1350 and 1100 BCE, roughly 3,000 to 3,400 years ago. The olive of Vouves near Chania may be older, but estimates for it range from at least 2,000 years to 4,000 and there is no agreed way to date an olive."
-  },
-  {
-   "q": "Why can nobody agree how old the olive tree of Vouves is?",
-   "a": "Its heartwood rotted away long ago, which is normal for an ancient olive and which removes the material any dating method needs. Ring analysis published in 1996 established only a floor, at least 2,000 years. A separate estimate attributed to University of Crete scientists puts it at 4,000. English Wikipedia notes that the exact age cannot be determined and that no agreed scientific method for dating olive trees yet exists."
-  },
-  {
-   "q": "Do you need a car, and how far apart are these trees?",
-   "a": "A car, and yes, they are far apart. Vouves sits near Kolymvari in the far west, about 40 minutes from Chania. Kavousi is at the eastern end of the island in Lasithi, roughly 190 kilometres away. Krasi is inland from Malia on the north coast and Gortyn is in the Messara plain 45 km south of Heraklion. Two of them fit into a day; all four do not."
-  },
-  {
-   "q": "Can you see the plane tree at Gortyn without paying?",
-   "a": "Plan on a ticket. The tree stands at the back of the Gortyn archaeological site near the Odeon and the Law Code, rather than by the entrance, and the site charges admission and keeps daylight hours."
-  }
- ],
- "trees": [
-  {
-   "id": "crt_001",
-   "name": "The Olive Tree of Vouves",
-   "species": "Olive (Olea europaea)",
-   "age_estimate": "contested: at least 2,000 years, possibly up to 4,000",
-   "age_min": 2000,
-   "age_max": 4000,
-   "location": {
-    "address": "Ano Vouves, Kolymvari, Platanias municipality, Chania regional unit, Crete, Greece",
-    "latitude": 35.4868591,
-    "longitude": 23.7868,
-    "neighbourhood": "Ano Vouves village, next to the Olive Tree Museum of Vouves"
-   },
-   "story": "Two sets of scientists have dated this olive and their answers differ by two thousand years. Ring analysis by Oliver Rackham and Jennifer Moody, published in 1996, established a floor and no more: at least 2,000 years old. Scientists at the University of Crete have since put it at 4,000, a figure now repeated from the Greek press to Forbes, and one that would make it the oldest living olive known anywhere. Neither number can be checked. The tree's heartwood rotted away centuries ago, which is what happens to ancient olives rather than a fault in this one, and it removes the material any dating method needs. English Wikipedia's summary is blunt: the exact age cannot be determined, and there is no agreed scientific method for dating olive trees at all.\n\nThe trunk is not in dispute. It measures 12.5 metres around and 4.6 metres across, hollowed into a twisting shell with the grain running in curves. The tree still fruits, grafted with the Tsounati cultivar, and the Region of Crete declared it a protected natural monument in 1997. Branches from it were woven into victory wreaths at the Athens Olympics in 2004 and Beijing in 2008. Two Geometric-period cemeteries were found nearby, which tells you people were here three thousand years ago and nothing whatsoever about the tree.",
-   "verified_sources": [
-    "https://en.wikipedia.org/wiki/Olive_tree_of_Vouves",
-    "https://el.wikipedia.org/wiki/%CE%95%CE%BB%CE%B9%CE%AC_%CF%84%CF%89%CE%BD_%CE%92%CE%BF%CF%85%CE%B2%CF%8E%CE%BD",
-    "https://www.forbes.com/sites/scotttravers/2025/03/23/meet-the-4000-year-old-olive-tree-that-saw-the-rise-and-fall-of-alexander-the-greats-empire-a-biologist-explains/"
-   ],
-   "access": "Paid entry through the small Olive Tree Museum of Vouves beside the tree, historically a nominal fee of a euro or two, though some recent visitors report no charge. Museum open daily 10:00-19:00 from April to October, by appointment from November to March. Signposted, and no permission is needed.",
-   "transport": "No public transport nearby. A car is the realistic way: roughly 25 minutes from Kolymvari and about 40 minutes from Chania.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed",
-   "notes": "THE ANCHOR TREE, and its age is a genuine open scientific dispute, report both figures, do not resolve it. Tree-ring analysis (O. Rackham & J. Moody, 'The Making of the Cretan Landscape', 1996, cited in F.R. Riley, Oxford Journal of Archaeology 21(1), 2002) found the tree to be AT LEAST 2,000 years old. Separately, scientists from the University of Crete have estimated it at 4,000 years old (widely reported, e.g. Forbes 2025, Greek press 2025-2026), which would make it the oldest known living olive in the world; this estimate is not tied to a single peer-reviewed paper, it is consistently attributed to 'University of Crete scientists' across sources without a named study. English Wikipedia states plainly: 'The exact age of the tree cannot be determined,' and that 'there is not yet an agreed upon scientific method to ascertain the age of olive trees.' Radiocarbon dating is impossible because the heartwood has rotted away and been lost over the centuries (normal for ancient olives, not a defect of this specimen). Physical facts, not in dispute: trunk perimeter 12.5 m, diameter 4.6 m, hollow trunk, still fruiting, grafted with the Tsounati cultivar. Declared a protected natural monument in 1997 by the Region of Crete. Branches woven into olive wreaths for winners at the 2004 Athens and 2008 Beijing Olympics. Two Geometric-period (c. 900-700 BCE) cemeteries were found near the tree, suggestive but not proof of the tree's own age; Wikipedia itself only calls it 'a possible indicator', and the story deliberately does not bridge it. Pin is an OSM natural=tree node named 'Elia Vouvon' beside the museum building."
-  },
-  {
-   "id": "crt_002",
-   "name": "The Olive Tree of Azoria (Kavousi)",
-   "species": "Olive (Olea europaea)",
-   "age_estimate": "roughly 3,000 to 3,400 years",
-   "age_min": 3000,
-   "age_max": 3400,
-   "location": {
-    "address": "On the road from Kavousi toward Avgos, about 1 km south of Kavousi village, next to the Azoria archaeological site, Ierapetra municipality, Lasithi regional unit, Crete, Greece",
-    "latitude": 35.11522,
-    "longitude": 25.86123,
-    "neighbourhood": "Azoria, near Kavousi"
-   },
-   "story": "Somebody grafted this tree in the Bronze Age and it is still carrying the join. The crown you look at is a mouratoelia, a local eating cultivar, growing on a wild olive rootstock underneath, and Greek and international sources describe it as the oldest known example of olive grafting anywhere in the world. That claim is repeated everywhere and traced to no single paper, so take it as the consensus rather than a citation.\n\nThe age is firmer than that, and firmer than Crete's more famous olive in the west. Ring analysis reported by the municipality of Ierapetra dates the planting to between 1350 and 1100 BCE, putting the tree somewhere around 3,000 to 3,400 years old, and the press has settled on about 3,250. One method, one range, and the sources agree with each other, which is not something the olive at Vouves can offer.\n\nIt stands about a kilometre south of Kavousi on the road toward Avgos, beside the excavated settlement of Azoria that gives it its name, signposted from the eastern entrance of the village as the old olive. The trunk runs 14.2 metres around and 4.9 metres across. It still bears fruit. Branches from it made the winner's wreath for the women's marathon at the Athens Olympics in 2004, and Greece has declared it a protected monument of nature.",
-   "verified_sources": [
-    "https://www.ierapetra.gr/index.php/en/history-culture/minoan-ancient-roman-period/269-mnimiaki-elia-azoria-2",
-    "https://www.efsyn.gr/efkriti/koinonia/217033_diatiriteo-mnimeio-tis-fysis-i-arhaia-elia-kaboysioy",
-    "https://greekreporter.com/2026/08/07/ancient-olive-tree-crete-kavousi/"
-   ],
-   "access": "Free, publicly signposted ('Old Olive Tree' / palia elia signs from the east entrance of Kavousi). It stands beside a public road next to the Azoria archaeological site, and no permission is needed.",
-   "transport": "No public transport. A car is the realistic way: about 1 km south of Kavousi village, roughly 20 minutes from Ierapetra and about an hour from Agios Nikolaos.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed",
-   "notes": "Second major Cretan ancient olive, on the opposite (eastern, Lasithi) side of the island from Vouves. Official municipal source (ierapetra.gr, 'Memorial Olive of Azoria') states: tree-ring analysis dates its planting to between 1350 and 1100 BCE, i.e. roughly 3,100-3,400 years old depending on when measured. Widely-repeated press figure (Greek and international, e.g. GreekReporter Aug 2026) rounds this to 'about 3,250 years old.' Both figures come from the same underlying ring-count method and are consistent with each other, unlike Vouves; recorded as a range (3000-3400) rather than a single fabricated midpoint. Declared a natural monument per EFSYN coverage of the official designation. Trunk: diameter 4.9 m, circumference 14.20 m. Reportedly the oldest known example of olive grafting in the world: the visible tree is a 'mouratoelia' cultivar grafted onto a wild olive (agrielia) rootstock; repeated across sources but the original scientific paper making that superlative claim was not found, so written per hard rule 8 with its source named in the prose. Branches used for the winner's wreath of the women's Olympic marathon at the 2004 Athens Games. Alive and fruiting per both the municipal page and GreekReporter (Aug 2026). Coordinates from cretanbeaches.com's stated GPS converted to decimal. Species string trimmed at write time from 'Olive (Olea europaea), local mouratoelia variety grafted onto a wild olive rootstock' to the canonical common+Latin form; the grafting detail moved into the story."
-  },
-  {
-   "id": "crt_003",
-   "name": "The Plane Tree of Krasi",
-   "species": "Oriental Plane (Platanus orientalis)",
-   "age_estimate": "",
-   "age_min": null,
-   "age_max": null,
-   "location": {
-    "address": "Megali Vrisi square, Krasi, Hersonissos municipality, Heraklion regional unit, Crete, Greece",
-    "latitude": 35.2343444,
-    "longitude": 25.467237,
-    "neighbourhood": "the village square, beside the stone spring-fountain"
-   },
-   "story": "The trunk measures roughly 24 metres around, which is among the largest recorded for a plane tree in Europe. Local practice turns that number straight into an age: each metre of perimeter is said to stand for a century, so the village puts the tree at 2,400 years. That is arithmetic performed on a tape measure rather than evidence about the tree, and it is worth saying why the sum is unsafe here in particular. Oriental planes regenerate from the root. A stool this size can be many centuries of renewal rather than one stem that has lived continuously since antiquity, so a vast perimeter is not the same thing as a vast age. Nobody has dated this one. If you know of a study that has, tell us.\n\nWhat the tree unarguably is: the centre of Krasi, a village 600 metres up on the road from Malia toward the Lasithi plateau. It grows in the Megali Vrisi square beside a stone fountain that still runs all year, and the tavernas put their tables under the canopy, so the square works as a room with a roof rather than a monument behind a rope. Sources report it as a proclaimed monument of nature; the declaring instrument itself was not traced. In a Cretan July, the shade is the whole argument.",
-   "verified_sources": [
-    "https://www.cretanbeaches.com/en/flora/monumental-trees/plane-tree-of-krassi",
-    "https://exploringgreece.tv/en/greece/crete/krasi-the-village-of-crete-with-the-perennial-plane-tree-2000-years-old/68556/"
-   ],
-   "access": "Free. It stands in the open village square at Krasi, about 600 m above sea level, beside the stone fountain that still runs all year. Tavernas sit under the canopy, so the square is in daily use rather than fenced off.",
-   "transport": "Krasi is roughly 12 km inland from Malia on the Heraklion coast, up the road towards the Lasithi plateau. A car is the realistic way; the tree is in the village square and cannot be missed.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate",
-   "notes": "GIRTH IS THE SOLID FACT AND THE AGE IS NOT. Two independent sources give the trunk perimeter as about 24 metres (cretanbeaches.com's monumental-trees series and exploringgreece.tv), which is the figure published, and it makes this one of the largest plane trees in Europe. Described as an officially proclaimed Monument of Nature; the declaring instrument was not located, so the status is stated as reported rather than as verified. AGE: NO NUMBER PUBLISHED AS FACT. cretanbeaches.com states the age as 'estimated at 2400 years, as it is said that each meter of the perimeter represents 100 years of growth' - a local rule of thumb, not a published growth rate for the species, and arithmetic performed on the girth rather than evidence about the tree. Other sources round it to 'more than 2000'. age_estimate is left EMPTY on purpose. The botanical reason the figure is shaky is stated on the page: oriental planes regenerate from the root, so a huge perimeter can describe a stool that has renewed itself many times rather than one continuously living stem. PIN: village-level from Nominatim; no OSM natural=tree node was retrievable (Overpass returned 504 twice), so precision is approximate and the access line points at the square rather than a trunk."
-  },
-  {
-   "id": "crt_004",
-   "name": "The Evergreen Plane of Gortyn",
-   "species": "Oriental Plane (Platanus orientalis)",
-   "age_estimate": "",
-   "age_min": null,
-   "age_max": null,
-   "location": {
-    "address": "Gortyn archaeological site, Agioi Deka, Gortyna municipality, Heraklion regional unit, Crete, Greece",
-    "latitude": 35.0590445,
-    "longitude": 24.9512647,
-    "neighbourhood": "at the back of the archaeological site, near the Odeon and the Law Code"
-   },
-   "story": "Every other oriental plane on Crete is bare in January. This one is not. The tree at Gortyn is Platanus orientalis var. cretica, an evergreen form of a deciduous species, reported from perhaps fifty places on the island and from almost nowhere else, and it holds its leaves straight through the winter. That is the reason to walk to the back of the archaeological site, and it is a better reason than the one the guidebooks give.\n\nThe guidebook reason is Europa. Gortyn is where Zeus, in the shape of a bull, is said to have carried her, and their union under a plane tree is stamped on the city's own ancient coins. That story belongs to the place and not to this trunk, and nothing connects the two. Read the coins as evidence of how long people here have associated the site with a plane tree, which is genuinely interesting, and not as a birth certificate for the one growing there now.\n\nNobody has dated it, and there is a botanical reason why nobody easily could. Planes regenerate from the root, so what looks eternal can be a succession of new stems on an old base, and the sources describing this one note that in its present form it is relatively small. It is protected, it is evergreen, and its age is an open question. If you know more, tell us.",
-   "verified_sources": [
-    "https://www.cretanbeaches.com/en/flora/monumental-trees/plane-tree-of-gortys",
-    "https://www.explorecrete.com/archaeology/en_0100_gortys_platanos"
-   ],
-   "access": "Paid entry to the Gortyn archaeological site, open daylight hours. The tree stands at the back of the enclosure, near the Odeon and the Law Code, rather than by the entrance, so plan on buying a ticket.",
-   "transport": "Gortyn lies beside the old national road at Agioi Deka, about 45 km south of Heraklion in the Messara plain. A car, or the Heraklion to Mires bus; the site entrance is on the main road.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate",
-   "notes": "WHAT MAKES THIS TREE WORTH A PAGE IS BOTANICAL, NOT MYTHOLOGICAL. It is an evergreen plane, Platanus orientalis var. cretica, a rare Cretan variety that keeps its leaves through winter while every ordinary oriental plane drops them. About fifty such trees are reported on the island. The Gortyn tree and the ones at Azogires in Chania are described as declared protected natural monuments. THE MYTH IS A FACT ABOUT THE PLACE, NOT ABOUT THIS TRUNK, and the story deliberately keeps them apart: Gortyn is where Zeus, in bull form, is said to have brought Europa, and their union under a plane is depicted on the city's ancient coins, but nothing ties the individual tree standing there today to that story. AGE: NOT ESTABLISHABLE, AND THE SOURCE SAYS WHY. cretanbeaches.com: 'plane trees are constantly regenerating from their roots, seeming eternal, but actually being new trees', and it notes this tree 'in its current form seems relatively small'. So the honest reading is a continuous rootstock rather than an ancient stem, and age_estimate stays EMPTY. PIN: site-level from Nominatim, approximate; the sources place the tree at the back of the enclosure but give no coordinate, and no OSM natural=tree node was found. The access field as delivered by verification carried an instruction to establish on the ground whether the tree can be seen from the road outside; that was rewritten at write time into reader-facing prose, since it is not established, the honest line is to plan on a ticket."
-  }
- ]
+  "city": "Crete",
+  "country": "Greece",
+  "status": "needs_curation",
+  "kind": "island",
+  "intro": "Crete's four trees are 190 kilometres apart at the extremes, so this is a driving list rather than a walk. Two are ancient olives at opposite ends of the island, at Ano Vouves near Chania in the west and at Kavousi in Lasithi in the east, and both are dated in thousands of years by methods that argue with each other. The other two are plane trees, one filling a mountain village square at Krasi, one keeping its leaves all winter at Gortyn.",
+  "meta_description": "Crete's four remarkable trees: two ancient olives at opposite ends of the island, one ring-dated to the Bronze Age, and two extraordinary plane trees.",
+  "question_meta": "Crete's oldest undisputed tree is the olive at Azoria near Kavousi, roughly 3,000 to 3,400 years. The famous Vouves olive cannot be settled.",
+  "oldest_tree_id": "crt_002",
+  "question_answer": "The oldest tree on Crete whose age nobody argues about is the olive at Azoria, a kilometre south of Kavousi in Lasithi. Ring analysis reported by the municipality of Ierapetra dates its planting to between 1350 and 1100 BCE, which makes it roughly 3,000 to 3,400 years old. The far more famous olive at Ano Vouves, near Chania at the other end of the island, may well be older, but nobody can settle it: ring work published in 1996 gives a floor of at least 2,000 years, while scientists at the University of Crete have estimated 4,000.",
+  "question_context": "Crete's age question is complicated by the fact that olives are close to undateable. They hollow out as they grow old and lose the heartwood that a ring count or a radiocarbon test would need, which is why the island's two great olives arrive with such different kinds of number. The tree at Ano Vouves near Chania has a published floor from ring analysis, at least 2,000 years, and a widely repeated estimate from University of Crete scientists of 4,000, which would make it the oldest living olive known anywhere. English Wikipedia states plainly that its exact age cannot be determined and that no agreed scientific method for dating olives exists. The olive at Azoria near Kavousi, at the eastern end of the island, is the one nobody argues about: ring analysis places its planting between 1350 and 1100 BCE, and municipal and press sources settle on roughly 3,250 years. Crete's two plane trees carry no age at all. The one at Krasi is 24 metres round and the one at Gortyn is evergreen, and neither has been dated, because planes regenerate from the root and a huge base can be renewal rather than one continuous stem.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Crete?",
+      "a": "The olive at Azoria, a kilometre south of Kavousi in Lasithi, is the oldest with a figure nobody disputes: ring analysis dates its planting to between 1350 and 1100 BCE, roughly 3,000 to 3,400 years ago. The olive of Vouves near Chania may be older, but estimates for it range from at least 2,000 years to 4,000 and there is no agreed way to date an olive."
+    },
+    {
+      "q": "Why can nobody agree how old the olive tree of Vouves is?",
+      "a": "Its heartwood rotted away long ago, which is normal for an ancient olive and which removes the material any dating method needs. Ring analysis published in 1996 established only a floor, at least 2,000 years. A separate estimate attributed to University of Crete scientists puts it at 4,000. English Wikipedia notes that the exact age cannot be determined and that no agreed scientific method for dating olive trees yet exists."
+    },
+    {
+      "q": "Do you need a car, and how far apart are these trees?",
+      "a": "A car, and yes, they are far apart. Vouves sits near Kolymvari in the far west, about 40 minutes from Chania. Kavousi is at the eastern end of the island in Lasithi, roughly 190 kilometres away. Krasi is inland from Malia on the north coast and Gortyn is in the Messara plain 45 km south of Heraklion. Two of them fit into a day; all four do not."
+    },
+    {
+      "q": "Can you see the plane tree at Gortyn without paying?",
+      "a": "Plan on a ticket. The tree stands at the back of the Gortyn archaeological site near the Odeon and the Law Code, rather than by the entrance, and the site charges admission and keeps daylight hours."
+    }
+  ],
+  "trees": [
+    {
+      "id": "crt_001",
+      "name": "The Olive Tree of Vouves",
+      "species": "Olive (Olea europaea)",
+      "age_estimate": "contested: at least 2,000 years, possibly up to 4,000",
+      "age_min": 2000,
+      "age_max": 4000,
+      "location": {
+        "address": "Ano Vouves, Kolymvari, Platanias municipality, Chania regional unit, Crete, Greece",
+        "latitude": 35.4868591,
+        "longitude": 23.7868,
+        "neighbourhood": "Ano Vouves village, next to the Olive Tree Museum of Vouves"
+      },
+      "story": "Two sets of scientists have dated this olive and their answers differ by two thousand years. Ring analysis by Oliver Rackham and Jennifer Moody, published in 1996, established a floor and no more: at least 2,000 years old. Scientists at the University of Crete have since put it at 4,000, a figure now repeated from the Greek press to Forbes, and one that would make it the oldest living olive known anywhere. Neither number can be checked. The tree's heartwood rotted away centuries ago, which is what happens to ancient olives rather than a fault in this one, and it removes the material any dating method needs. English Wikipedia's summary is blunt: the exact age cannot be determined, and there is no agreed scientific method for dating olive trees at all.\n\nThe trunk is not in dispute. It measures 12.5 metres around and 4.6 metres across, hollowed into a twisting shell with the grain running in curves. The tree still fruits, grafted with the Tsounati cultivar, and the Region of Crete declared it a protected natural monument in 1997. Branches from it were woven into victory wreaths at the Athens Olympics in 2004 and Beijing in 2008. Two Geometric-period cemeteries were found nearby, which tells you people were here three thousand years ago and nothing whatsoever about the tree.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Olive_tree_of_Vouves",
+        "https://el.wikipedia.org/wiki/%CE%95%CE%BB%CE%B9%CE%AC_%CF%84%CF%89%CE%BD_%CE%92%CE%BF%CF%85%CE%B2%CF%8E%CE%BD",
+        "https://www.forbes.com/sites/scotttravers/2025/03/23/meet-the-4000-year-old-olive-tree-that-saw-the-rise-and-fall-of-alexander-the-greats-empire-a-biologist-explains/"
+      ],
+      "access": "Paid entry through the small Olive Tree Museum of Vouves beside the tree, historically a nominal fee of a euro or two, though some recent visitors report no charge. Museum open daily 10:00-19:00 from April to October, by appointment from November to March. Signposted, and no permission is needed.",
+      "transport": "No public transport nearby. A car is the realistic way: roughly 25 minutes from Kolymvari and about 40 minutes from Chania.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "THE ANCHOR TREE, and its age is a genuine open scientific dispute, report both figures, do not resolve it. Tree-ring analysis (O. Rackham & J. Moody, 'The Making of the Cretan Landscape', 1996, cited in F.R. Riley, Oxford Journal of Archaeology 21(1), 2002) found the tree to be AT LEAST 2,000 years old. Separately, scientists from the University of Crete have estimated it at 4,000 years old (widely reported, e.g. Forbes 2025, Greek press 2025-2026), which would make it the oldest known living olive in the world; this estimate is not tied to a single peer-reviewed paper, it is consistently attributed to 'University of Crete scientists' across sources without a named study. English Wikipedia states plainly: 'The exact age of the tree cannot be determined,' and that 'there is not yet an agreed upon scientific method to ascertain the age of olive trees.' Radiocarbon dating is impossible because the heartwood has rotted away and been lost over the centuries (normal for ancient olives, not a defect of this specimen). Physical facts, not in dispute: trunk perimeter 12.5 m, diameter 4.6 m, hollow trunk, still fruiting, grafted with the Tsounati cultivar. Declared a protected natural monument in 1997 by the Region of Crete. Branches woven into olive wreaths for winners at the 2004 Athens and 2008 Beijing Olympics. Two Geometric-period (c. 900-700 BCE) cemeteries were found near the tree, suggestive but not proof of the tree's own age; Wikipedia itself only calls it 'a possible indicator', and the story deliberately does not bridge it. Pin is an OSM natural=tree node named 'Elia Vouvon' beside the museum building."
+    },
+    {
+      "id": "crt_002",
+      "name": "The Olive Tree of Azoria (Kavousi)",
+      "species": "Olive (Olea europaea)",
+      "age_estimate": "roughly 3,000 to 3,400 years",
+      "age_min": 3000,
+      "age_max": 3400,
+      "location": {
+        "address": "On the road from Kavousi toward Avgos, about 1 km south of Kavousi village, next to the Azoria archaeological site, Ierapetra municipality, Lasithi regional unit, Crete, Greece",
+        "latitude": 35.11522,
+        "longitude": 25.86123,
+        "neighbourhood": "Azoria, near Kavousi"
+      },
+      "story": "Somebody grafted this tree in the Bronze Age and it is still carrying the join. The crown you look at is a mouratoelia, a local eating cultivar, growing on a wild olive rootstock underneath, and Greek and international sources describe it as the oldest known example of olive grafting anywhere in the world. That claim is repeated everywhere and traced to no single paper, so take it as the consensus rather than a citation.\n\nThe age is firmer than that, and firmer than Crete's more famous olive in the west. Ring analysis reported by the municipality of Ierapetra dates the planting to between 1350 and 1100 BCE, putting the tree somewhere around 3,000 to 3,400 years old, and the press has settled on about 3,250. One method, one range, and the sources agree with each other, which is not something the olive at Vouves can offer.\n\nIt stands about a kilometre south of Kavousi on the road toward Avgos, beside the excavated settlement of Azoria that gives it its name, signposted from the eastern entrance of the village as the old olive. The trunk runs 14.2 metres around and 4.9 metres across. It still bears fruit. Branches from it made the winner's wreath for the women's marathon at the Athens Olympics in 2004, and Greece has declared it a protected monument of nature.",
+      "verified_sources": [
+        "https://www.ierapetra.gr/index.php/en/history-culture/minoan-ancient-roman-period/269-mnimiaki-elia-azoria-2",
+        "https://www.efsyn.gr/efkriti/koinonia/217033_diatiriteo-mnimeio-tis-fysis-i-arhaia-elia-kaboysioy",
+        "https://greekreporter.com/2026/08/07/ancient-olive-tree-crete-kavousi/"
+      ],
+      "access": "Free, publicly signposted ('Old Olive Tree' / palia elia signs from the east entrance of Kavousi). It stands beside a public road next to the Azoria archaeological site, and no permission is needed.",
+      "transport": "No public transport. A car is the realistic way: about 1 km south of Kavousi village, roughly 20 minutes from Ierapetra and about an hour from Agios Nikolaos.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Second major Cretan ancient olive, on the opposite (eastern, Lasithi) side of the island from Vouves. Official municipal source (ierapetra.gr, 'Memorial Olive of Azoria') states: tree-ring analysis dates its planting to between 1350 and 1100 BCE, i.e. roughly 3,100-3,400 years old depending on when measured. Widely-repeated press figure (Greek and international, e.g. GreekReporter Aug 2026) rounds this to 'about 3,250 years old.' Both figures come from the same underlying ring-count method and are consistent with each other, unlike Vouves; recorded as a range (3000-3400) rather than a single fabricated midpoint. Declared a natural monument per EFSYN coverage of the official designation. Trunk: diameter 4.9 m, circumference 14.20 m. Reportedly the oldest known example of olive grafting in the world: the visible tree is a 'mouratoelia' cultivar grafted onto a wild olive (agrielia) rootstock; repeated across sources but the original scientific paper making that superlative claim was not found, so written per hard rule 8 with its source named in the prose. Branches used for the winner's wreath of the women's Olympic marathon at the 2004 Athens Games. Alive and fruiting per both the municipal page and GreekReporter (Aug 2026). Coordinates from cretanbeaches.com's stated GPS converted to decimal. Species string trimmed at write time from 'Olive (Olea europaea), local mouratoelia variety grafted onto a wild olive rootstock' to the canonical common+Latin form; the grafting detail moved into the story."
+    },
+    {
+      "id": "crt_003",
+      "name": "The Plane Tree of Krasi",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Megali Vrisi square, Krasi, Hersonissos municipality, Heraklion regional unit, Crete, Greece",
+        "latitude": 35.2343444,
+        "longitude": 25.467237,
+        "neighbourhood": "the village square, beside the stone spring-fountain"
+      },
+      "story": "The trunk measures roughly 24 metres around, which is among the largest recorded for a plane tree in Europe. Local practice turns that number straight into an age: each metre of perimeter is said to stand for a century, so the village puts the tree at 2,400 years. That is arithmetic performed on a tape measure rather than evidence about the tree, and it is worth saying why the sum is unsafe here in particular. Oriental planes regenerate from the root. A stool this size can be many centuries of renewal rather than one stem that has lived continuously since antiquity, so a vast perimeter is not the same thing as a vast age. Nobody has dated this one. If you know of a study that has, tell us.\n\nWhat the tree unarguably is: the centre of Krasi, a village 600 metres up on the road from Malia toward the Lasithi plateau. It grows in the Megali Vrisi square beside a stone fountain that still runs all year, and the tavernas put their tables under the canopy, so the square works as a room with a roof rather than a monument behind a rope. Sources report it as a proclaimed monument of nature; the declaring instrument itself was not traced. In a Cretan July, the shade is the whole argument.",
+      "verified_sources": [
+        "https://www.cretanbeaches.com/en/flora/monumental-trees/plane-tree-of-krassi",
+        "https://exploringgreece.tv/en/greece/crete/krasi-the-village-of-crete-with-the-perennial-plane-tree-2000-years-old/68556/"
+      ],
+      "access": "Free. It stands in the open village square at Krasi, about 600 m above sea level, beside the stone fountain that still runs all year. Tavernas sit under the canopy, so the square is in daily use rather than fenced off.",
+      "transport": "Krasi is roughly 12 km inland from Malia on the Heraklion coast, up the road towards the Lasithi plateau. A car is the realistic way; the tree is in the village square and cannot be missed.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "GIRTH IS THE SOLID FACT AND THE AGE IS NOT. Two independent sources give the trunk perimeter as about 24 metres (cretanbeaches.com's monumental-trees series and exploringgreece.tv), which is the figure published, and it makes this one of the largest plane trees in Europe. Described as an officially proclaimed Monument of Nature; the declaring instrument was not located, so the status is stated as reported rather than as verified. AGE: NO NUMBER PUBLISHED AS FACT. cretanbeaches.com states the age as 'estimated at 2400 years, as it is said that each meter of the perimeter represents 100 years of growth' - a local rule of thumb, not a published growth rate for the species, and arithmetic performed on the girth rather than evidence about the tree. Other sources round it to 'more than 2000'. age_estimate is left EMPTY on purpose. The botanical reason the figure is shaky is stated on the page: oriental planes regenerate from the root, so a huge perimeter can describe a stool that has renewed itself many times rather than one continuously living stem. PIN: village-level from Nominatim; no OSM natural=tree node was retrievable (Overpass returned 504 twice), so precision is approximate and the access line points at the square rather than a trunk."
+    },
+    {
+      "id": "crt_004",
+      "name": "The Evergreen Plane of Gortyn",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Gortyn archaeological site, Agioi Deka, Gortyna municipality, Heraklion regional unit, Crete, Greece",
+        "latitude": 35.0590445,
+        "longitude": 24.9512647,
+        "neighbourhood": "at the back of the archaeological site, near the Odeon and the Law Code"
+      },
+      "story": "Every other oriental plane on Crete is bare in January. This one is not. The tree at Gortyn is Platanus orientalis var. cretica, an evergreen form of a deciduous species, reported from perhaps fifty places on the island and from almost nowhere else, and it holds its leaves straight through the winter. That is the reason to walk to the back of the archaeological site, and it is a better reason than the one the guidebooks give.\n\nThe guidebook reason is Europa. Gortyn is where Zeus, in the shape of a bull, is said to have carried her, and their union under a plane tree is stamped on the city's own ancient coins. That story belongs to the place and not to this trunk, and nothing connects the two. Read the coins as evidence of how long people here have associated the site with a plane tree, which is genuinely interesting, and not as a birth certificate for the one growing there now.\n\nNobody has dated it, and there is a botanical reason why nobody easily could. Planes regenerate from the root, so what looks eternal can be a succession of new stems on an old base, and the sources describing this one note that in its present form it is relatively small. It is protected, it is evergreen, and its age is an open question. If you know more, tell us.",
+      "verified_sources": [
+        "https://www.cretanbeaches.com/en/flora/monumental-trees/plane-tree-of-gortys",
+        "https://www.explorecrete.com/archaeology/en_0100_gortys_platanos"
+      ],
+      "access": "Paid entry to the Gortyn archaeological site, open daylight hours. The tree stands at the back of the enclosure, near the Odeon and the Law Code, rather than by the entrance, so plan on buying a ticket.",
+      "transport": "Gortyn lies beside the old national road at Agioi Deka, about 45 km south of Heraklion in the Messara plain. A car, or the Heraklion to Mires bus; the site entrance is on the main road.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "WHAT MAKES THIS TREE WORTH A PAGE IS BOTANICAL, NOT MYTHOLOGICAL. It is an evergreen plane, Platanus orientalis var. cretica, a rare Cretan variety that keeps its leaves through winter while every ordinary oriental plane drops them. About fifty such trees are reported on the island. The Gortyn tree and the ones at Azogires in Chania are described as declared protected natural monuments. THE MYTH IS A FACT ABOUT THE PLACE, NOT ABOUT THIS TRUNK, and the story deliberately keeps them apart: Gortyn is where Zeus, in bull form, is said to have brought Europa, and their union under a plane is depicted on the city's ancient coins, but nothing ties the individual tree standing there today to that story. AGE: NOT ESTABLISHABLE, AND THE SOURCE SAYS WHY. cretanbeaches.com: 'plane trees are constantly regenerating from their roots, seeming eternal, but actually being new trees', and it notes this tree 'in its current form seems relatively small'. So the honest reading is a continuous rootstock rather than an ancient stem, and age_estimate stays EMPTY. PIN: site-level from Nominatim, approximate; the sources place the tree at the back of the enclosure but give no coordinate, and no OSM natural=tree node was found. The access field as delivered by verification carried an instruction to establish on the ground whether the tree can be seen from the road outside; that was rewritten at write time into reader-facing prose, since it is not established, the honest line is to plan on a ticket."
+    }
+  ]
 }

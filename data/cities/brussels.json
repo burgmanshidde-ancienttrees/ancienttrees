@@ -95,7 +95,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Dilbeek_Kasterlindenstraat_Grensboom_%281%29_-_235489_-_onroerenderfgoed.jpg",
         "license": "CC BY 4.0",
         "attribution": "Geert Van der Linden / Flanders Immovable Heritage Agency, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 1440,
+        "height": 1080
       },
       "curation_status": "ai_generated",
       "notes": "Documentary trail (1777 Ferraris map, 1821 and 1858 surveys, Chalon's early 20th century measurement) is unusually solid for a single tree, corroborated across the official heritage inventory and an independent citizen blog. Photo verified on Commons: Flanders Immovable Heritage Agency's own inventory photo of the Dilbeek Kasterlindenstraat boundary tree, matching the described location precisely. Pin corrected 2026-07-28: the stored coordinate (50.8672, 4.2965) turned out to be about 1.3km from the real Kasterlindenstraat, discovered while Nominatim-geocoding the street named in this entry's own sources. Triangulated three independent ways: Kasterlindenstraat's own OSM geocode, neighbouring Kerselaarstraat's, and a direct name match for 'In De Linde' (a real cafe at 177 Kasterlindenstraat, exactly the landmark this entry's own story already names), all converging on the same spot. The heritage inventory page (inventaris.onroerenderfgoed.be/erfgoedobjecten/302035) confirms the crossroads/cemetery description but its own precise coordinate isn't exposed through this session's tooling; Brussels' own remarkable-tree register (sites.heritage.brussels) is blocked (403) for the same reason prior passes found, still true 2026-07-29. Resolved to confirmed 2026-07-29: an OpenStreetMap node individually named \"Kasterlinde\" (this entry's exact tree name, not just a street or landmark match) sits 15m from the prior anchor, at 50.8557989, 4.2898155. Treated as a surveyed point for the tree itself rather than another nearby anchor, since the node's name is the tree, not a building or street.",
@@ -125,7 +127,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Parc_L%C3%A9opold-Bruxelles_%2Cplatane_d%27OrientP5070020.JPG",
         "license": "CC BY-SA 3.0",
         "attribution": "Ben2~commonswiki, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 1920,
+        "height": 2560
       },
       "curation_status": "ai_generated",
       "notes": "Circumference and 2024 legal inventory listing corroborated by the official heritage inventory; monumentaltrees.com used for cross-check only, per hard rule 1, not copied. Photo verified on Commons, captioned in French as this exact tree: 'notable tree, bicentennial oriental plane, Parc Leopold, Brussels'.",
@@ -162,7 +166,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Le_bois_de_la_Cambre5.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "GdML, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 2448,
+        "height": 3264
       },
       "curation_status": "flagged",
       "notes": "Presented deliberately as an ensemble, not one dated specimen: no individual tree here has a documented planting date. The UNESCO designation applies to a separate, protected 270 hectare section of the wider Sonian Forest, not to Bois de la Cambre itself; the story is careful to say so rather than implying this park is inside the listed zone. Photo shows the pond and Chalet Robinson area framed by mature deciduous canopy, a fair representative shot for this ensemble entry.",
@@ -367,7 +373,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Dreef_in_Jubelpark_Brussel.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Sam.Donvil, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 4912,
+        "height": 3264
       },
       "curation_status": "flagged",
       "notes": "The transplanting story (mature trees moved from the old Leopold Quarter cemetery, Bois de la Cambre and the Sonian Forest when the park was built in 1880) is well corroborated, but no individual chestnut in the avenue has a confirmed age; the range given assumes a plausible age at transplanting plus the 146 years since 1880. Photo shows a tree-lined avenue in Cinquantenaire/Jubelpark, a fair representative shot for this ensemble entry. Pin tightened 2026-07-27 via Bruxelles Environnement's managed-tree WFS: 11 Aesculus hippocastanum recorded across the park's grounds, consistent with the source's count of about fifteen registered remarkable trees there; moved about 210m to the centroid of that cluster, the same honest-ensemble treatment as Amsterdam's Amstelveld wingnuts.",

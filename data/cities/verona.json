@@ -50,7 +50,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Giardini_Piazza_Bra_e_Arena-XE3F2394a.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Claconvr, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 6000,
+        "height": 4000
       },
       "curation_status": "flagged",
       "notes": "1873 planting date, dimensions (nearly 20m, 16 tonnes) and the 2025 stabilisation work corroborated across multiple independent Veronese press outlets covering the same event in real time (veronaoggi.it, giornaleadige.it, larena.it, veronanews.net, primadituttoverona.it all covered the story). Photo found 2026-07-28 in Piazza Bra's own Commons category, geotagged at 45.4389,10.9928, essentially this entry's own stored coordinate. Viewed directly: the square's central fountain (the same fountain this entry's own story describes the cedar as standing beside since the 1873 layout) ringed by mature cedars with the Arena visible behind, consistent with the story's own description of this tree as 'one of the last survivors' of that original planting scheme. Honest caveat: several cedar-shaped trees are visible around the fountain, not one trunk isolated and confirmed as the specific stabilised specimen, so approved as a representative shot of the tree in its documented setting rather than a single-tree portrait.",
@@ -80,7 +82,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Platano_piazza_Indipendenza-Verona_03.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Mauzzan, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3024,
+        "height": 3024
       },
       "curation_status": "flagged",
       "notes": "Dimensions (505cm circumference, 35.5m height) from the official AMI national monumental-trees listing, corroborated by the city's own press office covering the same tree as part of its tree-heritage app project. No individual planting date documented beyond 'already mature by 1941'. Photo verified directly: shows a large plane trunk and canopy in a garden square setting with a stone balustrade, consistent with the described location. Pin refined 2026-07-27 and set to confirmed: ilregistrodeglialberi.it, a registry aggregator explicitly citing this tree's AMI listing, gives GPS coordinates (45.442705, 11.000061) with an identical circumference and height (505cm, 35.50m) to this entry's own figures, an exact match rather than a mere corroboration.",
@@ -117,7 +121,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Ginkgo_biloba_piazza_Indipendenza_Verona.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Garonzi Stefania, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 2736,
+        "height": 3648
       },
       "curation_status": "flagged",
       "notes": "Dimensions (323cm average circumference, 23.5m average height) from the official AMI national monumental-trees listing; the tree's own dedicated Wikimedia Commons category (structured data, coordinates matching Piazza Indipendenza) independently corroborates its identity and location. Presented as a group entry since the register itself lists it that way rather than as one single specimen. Photo verified directly: shows unmistakable ginkgo fan-shaped foliage and bark, matching the species and general setting. Coordinates now taken from the register's own GIS record for this entry (its circumference and height match this story's figures exactly, confirmed identically across two independent fetches of the source spreadsheet), about 45m from the previous square-wide estimate. The plane tree and cedar entries in the same register file could not be matched with the same confidence this pass (the tool's reads of those two rows were inconsistent across attempts), so ver_002 and ver_004 stay approximate rather than risk a wrong pin.",
@@ -177,7 +183,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Italian_garden%2C_Giardino_Giusti%2C_Verona%2C_Italy%2C_August_2025_01.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Annika of Nine, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 4352,
+        "height": 3264
       },
       "curation_status": "flagged",
       "notes": "Ensemble entry describing the garden's cypress avenue as it exists today, deliberately not claiming the historic Goethe cypress is still standing. The 2020 storm loss and subsequent replanting corroborated across two independent local press sources. An earlier candidate set of 1993-94 architectural documentation photos predates the storm and was correctly not used. 2026-07-29: a real post-storm candidate found, File:Italian garden, Giardino Giusti, Verona, Italy, August 2025 01.jpg (CC BY-SA 4.0, Annika of Nine), photographed August 2025, five years after the replanting. Its Commons page describes a formal Italian garden avenue of tall cypress trees with a fountain, matching this entry exactly and dated to well after the loss the story describes. 2026-07-29 (later session): downloaded and personally viewed the file. Shows the formal cypress avenue with clipped box hedges and the garden's stone fountain, matching this entry's framing. Approved.",

@@ -50,7 +50,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Naturdenkmal_726_GuentherZ_2011-08-29_3165_Wien01_Singerstrasse11_Platane.JPG",
         "license": "CC BY 3.0",
         "attribution": "GuentherZ, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 1331,
+        "height": 1800
       },
       "curation_status": "ai_generated",
       "notes": "Naturdenkmal Nr. 726, protected since 20 October 1987. Age figure is the 1987 survey's '>250 years' projected forward to 2026; no more recent measurement has surfaced. Location upgraded to confirmed: the approved photo's own Commons geolocation data (48°12'27.15\"N 16°22'27.82\"E, added by the photographer, Vienna monument specialist GuentherZ) places the tree itself, about 80m from the previous courtyard estimate.",
@@ -86,7 +88,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/GuentherZ_Naturdenkmal_569_2010-02-27_0152_Wien01_Stadtpark_Ginkgo.jpg",
         "license": "CC BY 3.0",
         "attribution": "GuentherZ, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 1800,
+        "height": 1205
       },
       "curation_status": "flagged",
       "notes": "Replaces the dead Stock im Eisen relic on 2026-07-27 per Hidde's 'we doen niet aan dode bomen' rule (CLAUDE.md Step 1); id vie_002 reused so the existing URL keeps resolving, same precedent as Barcelona's bcn_008 swap. Naturdenkmal Nr. 569, protected since 3 July 1973 (Vienna's own Naturdenkmal list). The circa-1900 planting date and Heinrich Braun attribution are corroborated across independent secondary sources (cityabc.at's Stadtpark walking-route page and general web search) but not yet traced to a primary municipal record, so flagged. Photo resolved 2026-07-28: a prior pass found only GuentherZ's companion photo of the tree's Naturdenkmal plaque and left the entry honestly missing rather than use a plaque photo to stand in for the tree; a wider same-photographer search this pass found the tree photo itself from the same 2010-02-27 shoot (three sequential files: 0152/0153 the tree, 0155 the plaque), CC BY 3.0. Viewed both directly: 0152 shows a mature bare-winter tree above Stadtpark's grand facades, and 0155 shows the plaque itself nailed to the bark reading \"WIENER NATURDENKMAL NR: 569 GINKGO BILOBA\" plus a second plaque \"FACHERBLATTERBAUM Ginkgo biloba\", the exact German nickname this entry's own story already quotes, taken minutes apart in the same sequence, about as strong an identity match as a citizen photo can carry. Approved on 0152 as the representative tree photo. Pin upgraded to confirmed 2026-07-28: German Wikipedia's own Liste der Naturdenkmäler in Wien/Innere Stadt carries this exact tree's own surveyed coordinate (Breitengrad/Längengrad 48.206070/16.380028, Grundstücksnummer 1343/1) read directly from the article's raw wikitext template rather than a rendered summary, replacing the Schubert-monument landmark anchor previously used. The same table row's own photo field cites GuentherZ's file 0153 from the same 2010-02-27 sequence as this entry's approved photo, independently corroborating that photo as the correct tree.",
@@ -123,7 +127,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Horse_chestnut_tree_at_Prater_Hauptallee.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Herzi Pinki, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 6000,
+        "height": 4000
       },
       "curation_status": "ai_generated",
       "notes": "Corrected 2026-07-29: the entry previously stated the two oldest survivors as 236 and 266 years old, citing two sources that, re-checked directly, did not actually support that figure (German Wikipedia's Hauptallee article names no individual tree ages at all; traveltips.at only says the avenue's trees date to the 19th century). Traced the 236/266 figures to monumentaltrees.com via web search, permitted for verification only under hard rule 1, never as a citable source, and unreachable this session (HTTP 403) to confirm even that. Resolved properly rather than just softened: queried Vienna's own Baumkataster (data.wien.gv.at WFS, layer ogdwien:BAUMKATOGD) with a CQL_FILTER on OBJEKT_STRASSE (avoiding the BBOX reprojection problem that returned zero features on an earlier attempt this session, since the layer's native coordinates are in a projected CRS, not lat/long) and got real per-tree data: 251 individually registered trees on Hauptallee, 247 of them Aesculus hippocastanum, with real planting years. The oldest, BAUM_ID 39288 (254cm girth, planted 1840, at 48.20571418/16.41414589 in EPSG:4326), is now this entry's anchor tree and pin, replacing the old avenue-midpoint estimate and the unverifiable 236/266 claim with a specific, government-registered, individually documented specimen. Requeried this same record a second time before applying to guard against the single-query extraction inconsistency this session hit once (a different BAUM_ID's planting year came back differently across two summarized reads); this one held steady both times.",
@@ -160,7 +166,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Ginkgo_biloba_%28Sch%C3%B6nbrunn%29_natural_monument_%28male_tree_with_female_branch%2C_imported_in_1781%29_2008.jpg",
         "license": "CC BY-SA 3.0",
         "attribution": "Wolfgang H. Wögerer, Wien, Austria, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 1800,
+        "height": 1200
       },
       "curation_status": "ai_generated",
       "notes": "Naturdenkmal Nr. 110, protected since 4 February 1939. Pin and location corrected 2026-07-27: the stored coordinates and \"near the Wagenburg, Hietzinger Allee\" description (originally cross-checked only against monumentaltrees.com, used for verification not as a source) were about 700m from the tree's actual position. Vienna's own Naturdenkmal register, published as a table on German Wikipedia's List of Natural Monuments in Hietzing, gives this specific entry (Nr. 110, Ginkgo biloba, imported 1781, oldest in Austria, protected since 4 February 1939, an exact match on every fact) individual coordinates placing it in Schönbrunn's Botanical Garden, not near the Wagenburg. Moved to that point and corrected the story/transport text to match.",
@@ -190,7 +198,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/GuentherZ_Naturdenkmal_009_2010-02-26_0095_Wien03_Rennweg14_Mozartplatane.jpg",
         "license": "CC BY 3.0",
         "attribution": "GuentherZ, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 1071,
+        "height": 1600
       },
       "curation_status": "ai_generated",
       "notes": "Naturdenkmal Nr. 9, protected since 22 December 1936. Coordinates from the Wikimedia Commons category page for this natural monument.",
@@ -220,7 +230,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Naturdenkmal_564_GuentherZ_2010-08-25_0128_Wien01_Rathauspark_Platane.JPG",
         "license": "CC BY 3.0",
         "attribution": "GuentherZ, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 1205,
+        "height": 1800
       },
       "curation_status": "flagged",
       "notes": "One of three plane trees in Rathauspark individually registered as natural monuments (Nr. 564, 566, 567), protected since 3 July 1973; this entry covers the specific tree identified by the park's own registry as the oldest, tree catalogue number 252. Location upgraded to confirmed: the approved photo's own Commons geolocation data (48°12'36.34\"N 16°21'33.07\"E, added by the photographer, Vienna monument specialist GuentherZ) places the tree itself, about 150m from the previous park-address estimate.",
@@ -251,7 +263,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Wiener_Naturdenkmal_376_-_Morgenl%C3%A4ndische_Platane_%28Innere_Stadt%29_o.JPG",
         "license": "CC BY-SA 3.0 AT",
         "attribution": "Michael Kranewitter, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 6000,
+        "height": 4000
       },
       "curation_status": "flagged",
       "notes": "Naturdenkmal Nr. 376 (girth 3.6 m, height and crown 20 m each) is confirmed by two independent sources. The '200 years old' figure and the Empress Elisabeth nickname story appear only in secondary tourism sources, not in either primary source, so age is flagged as a single-source estimate. Location upgraded to confirmed: baumkunde.de (a German tree register site) gives this tree's own surveyed geo-coordinates, tied to its Naturdenkmal 376 designation, about 150m from the previous fountain-area estimate.",
@@ -272,7 +286,10 @@
       },
       "story": "Its crown alone covers more ground than most Viennese apartment buildings. The pedunculate oak of the Sulzwiese, a meadow in the Grüner Prater away from the funfair and the Ferris wheel, has a canopy that spreads roughly 45 metres across, wide enough that someone standing under one edge of it cannot see a person standing under the other through the branches. The trunk itself is a comparatively modest 4.28 metres around, which tells you this tree grew in the open, in full sun, with nothing crowding its sides, rather than competing for light in a forest the way most old oaks do. That kind of open-grown oak puts its energy into width rather than height, and the Sulzwiese oak is a textbook result: a low, spreading giant rather than a tall one. No planting record has surfaced to say exactly how old it is, so any figure here is an estimate rather than a fact, but a crown this size on an open-grown oak typically points to somewhere between 150 and 250 years, a wide range stated honestly rather than rounded to something tidier. Vienna registered it as Naturdenkmal Nr. 846, one of eighteen protected natural monuments in the Prater's home district of Leopoldstadt, and it remains one of the most photographed trees in the park precisely because its shape is so unusual.",
       "best_time": {
-        "months": [9, 10],
+        "months": [
+          9,
+          10
+        ],
         "kind": "fruit",
         "label": "acorns drop, and a good mast year buries the ground in them"
       },
@@ -286,7 +303,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Stieleiche846.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Clemens Mosch, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3864,
+        "height": 5152
       },
       "curation_status": "flagged",
       "notes": "Naturdenkmal Nr. 846. Girth (4.28 m) and crown diameter (approx. 45 m) are confirmed by two independent sources; age is not documented anywhere found and is estimated from size only, so it is flagged. Coordinates taken from the EXIF geotag on the CC BY-SA 4.0 photo of this specific tree.",
@@ -316,7 +335,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Sequoiadendron_Poetzleinsdorf_Vienna_Austria_1680x1125.jpg",
         "license": "CC BY-SA 3.0",
         "attribution": "ZavosBrachides, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 1680,
+        "height": 1125
       },
       "curation_status": "flagged",
       "notes": "Part of Naturdenkmal Nr. 62 (Pötzleinsdorfer Schlosspark's protected trees and tree groups). No individual girth or planting-year record found for this pair; age range is bounded only by the species' known arrival in Europe (1853), not by a measurement or record specific to these trees. Coordinates from the geotag on the source photo, which names Naturdenkmal 62 directly.",
@@ -352,7 +373,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Wiener_Naturdenkmal_817_-_Ginko%2C_Mammutbaum_%28W%C3%A4hring%29_b.JPG",
         "license": "CC BY-SA 3.0 AT",
         "attribution": "Michael Kranewitter, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 4000,
+        "height": 6000
       },
       "curation_status": "flagged",
       "notes": "Naturdenkmal Nr. 817, protected since 25 January 2010, covering both the ginkgo and the giant sequoia at this address as a single designation. Ginkgo age ('around 100 years') is as stated at the time of the 2010 survey; no updated measurement has surfaced, so current age is an estimate projected forward.",
@@ -458,7 +481,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Wiener_Naturdenkmal_562_-_Geschlitztbl%C3%A4ttrige_Rotbuche_%28Innere_Stadt%29_d.JPG",
         "license": "CC BY-SA 3.0 AT",
         "attribution": "Michael Kranewitter, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 4000,
+        "height": 6000
       },
       "curation_status": "ai_generated",
       "notes": "Naturdenkmal Nr. 562, protected 3 July 1973 (Vienna monument register, register_id 3257648, 48.210209/16.359763). Baumkataster BAUM_ID 146749 at 48.2101646/16.3598198, 6.5 m away: PFLANZJAHR 1873, girth 600 cm, height class 5 (21-25 m), crown class 8 (>21 m). The 'thickest trunk in the park' claim is checked, not asserted: a query of all 449 Baumkataster records with OBJEKT_STRASSE '01., Rathauspark' returns 600 cm here against 597, 534 and 526 for the three protected planes, so it is the maximum. It does not conflict with vie_006's claim to be the park's OLDEST tree, which is a different superlative, but see data/research/vienna-extra.md: the Baumkataster dates vie_006 to 1876, not the 1783 that entry's story asserts, and that needs re-checking separately. Species string uses the corpus's existing common name 'Fern-leaved Beech' (Cordoba carries a Fagus sylvatica f. asplenifolia under it) with the cultivar name the Vienna registers actually use. Photo viewed directly at 960x1440 before approval: daylight, colour, the tree fills the frame, the buttressed base and the limb structure both readable, the Naturdenkmal plaque visible on a limb at upper right, and the centre band of the frame is trunk, so it survives the wide card crop.",
@@ -496,7 +521,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Schmerlingplatz_Persische_Parrotie.jpg",
         "license": "CC BY-SA 3.0 AT",
         "attribution": "Thomas Ledl, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 3551,
+        "height": 2377
       },
       "curation_status": "flagged",
       "notes": "Naturdenkmal Nr. 477, protected 5 November 1956 'aufgrund ihrer Seltenheit' (Vienna monument register, register_id 3257543, listed under the address Schmerlingplatz, 48.206851/16.359083). Baumkataster BAUM_ID 225310 at 48.20679769/16.35896258, 10.7 m away, the widest offset of any match in this pass: PFLANZJAHR 1940, girth 460 cm, height class 2 (6-10 m), crown class 6 (16-18 m). AGE IS FLAGGED, and this is the one place in this batch where the two departments do not sit comfortably together: a tree planted in 1940 would have been sixteen years old when the city declared it a natural monument in 1956. That is not impossible, since the decree's stated ground is the species' rarity rather than the tree's age, but 460 cm of fused base in 86 years is fast even for a multi-stemmed parrotia, so the age range here is deliberately open at the top and no precise figure is claimed. The girth is a base measurement across fused stems, not a single trunk, which the story says in plain words rather than in a number. Photo viewed directly at 960x643 before approval: daylight, colour, correctly exposed, the tree fills the frame with crown and base both readable, centre band is tree. Overhead tram wires cross the upper third, which is honest to the place.",
@@ -571,7 +598,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Stadtpark_Japanischer_Schnurbaum.jpg",
         "license": "CC BY-SA 3.0 AT",
         "attribution": "Thomas Ledl, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 2448,
+        "height": 3538
       },
       "curation_status": "ai_generated",
       "notes": "Naturdenkmal Nr. 276, protected 16 December 1941 (Vienna monument register, register_id 3257446, 48.203669/16.379102). Baumkataster BAUM_ID 193786 at the same point to within 0.0 m: PFLANZJAHR 1860, girth 444 cm, height class 5 (21-25 m), crown class 6 (16-18 m). Note the Baumkataster still files the species under the old name Sophora japonica; the corpus canonical name is 'Japanese Pagoda Tree (Styphnolobium japonicum)', which seven other trees on the site already use. A second, much younger pagoda tree (BAUM_ID 193723, 1938, 238 cm) stands 18 m away and is not the monument. The 1860-versus-1862 point is stated as the tension it is rather than resolved, because the register's planting year is the city's own figure and no planting document has been seen. Photo viewed directly at 960x1387 before approval: daylight, colour, blue sky, the tree fills the frame from root flare to crown, the low fork clearly readable, a small white stone monument behind it for scale. Portrait format, but the tree is centred so the wide card crop still lands on trunk and lower crown.",
@@ -717,7 +746,10 @@
       },
       "story": "In September 1941 three trees in one corner of Schönbrunn's botanical garden were put under protection. A survey of Vienna's natural monuments printed in 1949 went back through the list and marked one of them destroyed by war events, a Japanese pagoda tree that stood about thirty metres from here. This oak is one of the two that came through. The yew twelve metres away is the other.\n\nNo source will give it an age. The register recorded none in 1941 and has recorded none since, so what there is to go on is the trunk: 6.21 metres around, measured a metre off the ground. A tree that thick has been growing for centuries, but girth alone will not say how many and nobody has counted, so any single figure you see for this oak is somebody's estimate.\n\nThe ground explains the tree. This was the Habsburgs' own botanical garden, begun in the 1750s and stocked from imperial collecting expeditions, and Schönbrunn is federal property rather than municipal, which is why Vienna's city tree inventory has no record of this oak at all. The pedunculate oak was there as the native, the plainest thing in a garden full of imports.\n\nCome in through the Hietzinger Tor. The botanical garden is free and open daily; the Palm House and the Gloriette a short walk away are separate tickets and a different afternoon.",
       "best_time": {
-        "months": [9, 10],
+        "months": [
+          9,
+          10
+        ],
         "kind": "fruit",
         "label": "acorns drop, and a good mast year buries the ground in them"
       },
@@ -752,7 +784,11 @@
       },
       "story": "Nobody has measured this tree. There is no girth on file, no height, no age and no photograph in the usual archives. What exists is a line in Vienna's register of natural monuments, number 181, protected on 4 September 1941, and a printed survey from 1949 that lists it again with nothing written beside it.\n\nThat blank is the point. The same 1949 survey marks the tree that stood about thirty metres away, a Japanese pagoda tree carrying number 179, as destroyed by war events. This yew and the oak twelve metres from it carry no such note, which is the nearest thing to a wartime health certificate a tree can hold.\n\nYews reward exactly this kind of neglect. Taxus baccata grows slowly, tolerates deep shade and hard cutting, and can carry on for centuries without ever getting spectacular enough to attract a tape measure, which is roughly how a protected tree spends eighty-five years on a government list without acquiring a single number.\n\nSo this one comes with an honest hole in it. It stands in the corner of Schönbrunn's botanical garden near the Hietzinger Tor, it has been there since before the bombing, and it looks the same in February as it does in July, which is what a yew is for. The garden itself is free and open daily. If you get a tape around it, tell us what it says.",
       "best_time": {
-        "months": [9, 10, 11],
+        "months": [
+          9,
+          10,
+          11
+        ],
         "kind": "fruit",
         "label": "red arils on female trees, the only part that is not poisonous"
       },
@@ -844,7 +880,10 @@
       },
       "story": "Vienna protects this oak as a natural monument and has published almost nothing else about it. No planting year, no trunk measurement, no entry in the city's tree cadastre, which lists Vienna's street and park trees by the hundred thousand. There is a register line saying the tree is protected, and there is the tree.\n\nBetter to say that plainly than to fill it in. A pedunculate oak in the third district is unusual on its own account: Vienna's streets were planted with planes, limes and maples, species that tolerate a pavement, while Quercus robur is a tree of heavy field soil and river meadow and rarely gets a city street to itself. This one stands on Grimmelshausengasse, a short residential road in Landstrasse, roughly midway between the Stadtpark and Rennweg, and somebody with the authority to do it decided it was worth protecting.\n\nThe street is named after Hans Jakob Christoffel von Grimmelshausen, who published Simplicissimus in 1668, drawing on his own childhood in the Thirty Years War, and produced one of the first great novels in German and still one of the bleakest. The oak is nowhere near that old. Nothing at all says how old it is, which is why the age here is empty rather than approximate. Go for the tree, not for the paperwork.",
       "best_time": {
-        "months": [9, 10],
+        "months": [
+          9,
+          10
+        ],
         "kind": "fruit",
         "label": "acorns drop, and a good mast year buries the ground in them"
       },

@@ -51,7 +51,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Tembusu_tree_at_Lawn_E%2C_Singapore_Botanic_Gardens_20240210_182325.jpg",
         "license": "CC BY 4.0",
         "attribution": "ZKang123, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 4000,
+        "height": 3000
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed"
@@ -80,7 +82,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Heritage_Rain_Tree_looming_over_steps_leading_out_of_Fort_Canning_Park_onto_Hill_Street_-_2022-05-27.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Wzhkevin, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 4032,
+        "height": 3024
       },
       "curation_status": "ai_generated",
       "notes": "Planting date undocumented; age_min/age_max are an inference from girth and species growth rate, not a sourced figure. A different Fort Canning heritage tree, a Burmese banyan, collapsed nearby in January 2021; this is not that tree, and remains standing.",
@@ -110,7 +114,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Heritage_Madras_Thorn_tree_in_Fort_Canning_Park_-_2022-07-26.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Wzhkevin, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 4032,
+        "height": 3024
       },
       "curation_status": "flagged",
       "notes": "Age genuinely undocumented; NParks' own register gives no planting date or estimate, only girth growth since 2001, so age_min/age_max are left at 0 rather than guessed. 'Largest of its kind' is NParks' own register claim about its own designated trees, not an unqualified cross-site superlative.",

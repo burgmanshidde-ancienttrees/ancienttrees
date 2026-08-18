@@ -1,227 +1,227 @@
 {
- "city": "Madeira",
- "country": "Portugal",
- "status": "needs_curation",
- "kind": "island",
- "intro": "Four of Madeira's six trees stand within a few kilometres of central Funchal, which makes them a genuine afternoon: a botanical garden, a public park, a garden at Monte and a dragon tree grove at Neves. The other two are drives. Queimadas, above Santana on the north coast, is about an hour away, and the til grove at Fanal on the Paul da Serra plateau is an hour and a quarter of mountain road in the opposite direction. Four of the six carry no recorded age at all.",
- "meta_description": "Madeira's six remarkable trees: a witch-shaped til in the Fanal laurel forest, a dragon tree grove, and four register giants nobody has ever dated.",
- "question_meta": "Madeira's oldest listed tree is the Witch Tree in the til grove at Fanal, several hundred years old. The Funchal giants carry no recorded age.",
- "oldest_tree_id": "mdr_005",
- "question_answer": "The oldest tree on this list is the Witch Tree at Fanal, a til (Ocotea foetens) in the protected grove on the Paul da Serra plateau above Porto Moniz. Estimates for it run from several hundred years to 500 or 600, and Madeira's own register dates the grove around it only as centenas de anos, hundreds of years, describing a stand referenced as predating the Portuguese settlement of the island in 1419. That is the loosest kind of answer and it is the best one available, because the four monumental trees in and around Funchal carry no recorded age at all.",
- "question_context": "Madeira's age question runs into a flat wall: the island's own register of monumental trees mostly does not carry ages. Four of the six trees here, the ginkgo in the Jardim Botanico, the cypress at Quinta Magnolia, the copper beech at Monte and the Douglas fir at Queimadas, are listed for size alone, with sem referencia, no reference, in the age column. The survey recorded height and perimeter, not years. That leaves the two native stands. The dragon trees at Neves are described as centenarios, over a century, and no more precisely than that. The til grove at Fanal is dated only as centenas de anos, hundreds of years, and is referenced as predating the Portuguese arrival on an uninhabited island in 1419; the single tree within it that visitors know as the Witch Tree is put at 500 or 600 years by tourism sources, with nothing published behind that number. So the honest ranking is Fanal first, Neves second, and four undated giants after them. The Douglas fir is the trap here: it is the tallest tree on the list at 39 metres, and Douglas firs grow fast, so height says nothing about its age.",
- "faq": [
-  {
-   "q": "What is the oldest tree in Madeira?",
-   "a": "Of the trees on this list, the Witch Tree in the til grove at Fanal, on the Paul da Serra plateau above Porto Moniz. The register dates the grove only as hundreds of years and references it as predating the settlement of the island in 1419; tourism sources put the individual tree at 500 or 600 years without publishing any working."
-  },
-  {
-   "q": "Why do so many of Madeira's monumental trees have no age?",
-   "a": "Because the island's register lists them for size. Each entry records height, trunk perimeter and condition, and the age column on the ginkgo, the cypress at Quinta Magnolia, the copper beech at Monte and the Douglas fir at Queimadas simply reads sem referencia, no reference. Nobody has cored them. If you have a planting record for any of the four, we would like it."
-  },
-  {
-   "q": "Do you need a car, and how far apart are these trees?",
-   "a": "For four of them, no. The botanical garden, Quinta Magnolia, the Emperor's Garden at Monte and the dragon trees at Neves are all within a few kilometres of central Funchal, reachable by bus or cable car. The other two need a car: Queimadas at Santana is about an hour's drive, and Fanal is an hour and a quarter of mountain road across the Paul da Serra plateau in the opposite direction."
-  },
-  {
-   "q": "Is the Witch Tree at Fanal signposted?",
-   "a": "No. There is no sign, no arrow and no marked path to it, and visitors regularly report hunting around the grove before they find it. Our pin marks the part of the grove it stands in rather than the trunk itself. Morning fog is when Fanal looks the way it does in photographs."
-  }
- ],
- "trees": [
-  {
-   "id": "mdr_001",
-   "name": "The Ginkgo of the Botanical Garden",
-   "species": "Ginkgo (Ginkgo biloba)",
-   "age_estimate": "not documented",
-   "age_min": null,
-   "age_max": null,
-   "girth_cm": 162,
-   "location": {
-    "address": "Jardim Botânico da Madeira Eng.º Rui Vieira, Caminho do Meio, Funchal",
-    "latitude": 32.662444,
-    "longitude": -16.895056,
-    "neighbourhood": "Santa Maria Maior, Funchal"
-   },
-   "story": "Madeira's official register of monumental trees records this ginkgo for exactly one reason, size, and where the age should go it says sem referencia, no reference. Nobody has dated it. What the surveyors did measure is 18 metres of height and a trunk 1.62 metres round, which is a substantial specimen of a tree that has no obvious business thriving at this latitude and manages it anyway.\n\nGinkgo biloba is the last species left of an entire lineage, with no close living relative anywhere, and it reached European gardens only in the eighteenth century. This one grows in the Jardim Botanico da Madeira on the slope above Funchal, among roughly 3,000 species pulled in from every continent the garden could reach, ten minutes out of the city by bus or a cable car ride down from Monte.\n\nThe garden opened to the public in 1960, which dates the garden and not the tree. Nobody has recorded when this ginkgo went in. If you have a planting record, or a girth measured more recently than the survey, send it to us.\n\nAnd then in November the crown turns butter gold and drops the lot inside a few days, which is the week to be standing under it.",
-   "best_time": {
-    "months": [
-     11
-    ],
-    "kind": "autumn colour",
-    "label": "November, when the crown turns gold and drops it in a few days"
-   },
-   "verified_sources": [
-    "https://ifcn.madeira.gov.pt/images/FotosArtigos/Florestas/ASMAC/ASMAC90.pdf",
-    "https://ifcn.madeira.gov.pt/en/quintas-e-jardins/jardin-botanico-da-madeira-eng-rui-vieira/informacao-ao-visitante.html"
-   ],
-   "access": "Paid entry, EUR 7.50 adult, open daily 09:00-18:00 (last admission 30 min before close)",
-   "transport": "Bus 29, 30, 31 or 31A from central Funchal (about 10 minutes), or the Teleférico do Jardim Botânico cable car from Monte. No car needed for this one.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed",
-   "notes": "Register entry ASMAC n.87/90 (island code FSMMGB01), the IFCN/VALCONMAC official inventory of Madeira's singular and monumental trees (Duarte Olim survey, undated but citing the 2018/2021 regional legal framework for monumental trees). Height 18.0m, maximum perimeter 1.62m (162cm), notable reason 'Tamanho' (size). No age reference given in the register ('Sem referencia'); the garden itself opened to the public in 1960 but that is the garden's founding, not a documented planting date for this specific tree, so age stays undocumented per the bridge-claim rule and the story states the distinction explicitly. One large ginkgo is catalogued among the garden's collection of roughly 3000 species; second source is the garden's own official visitor-information page confirming continued public operation, hours and fee, not a tree-specific corroboration. Flagged because the second source verifies the site rather than the individual specimen; the register is otherwise a single official government source. Alive: garden actively operating in 2026 per its own site. best_time set from data/phenology/ginkgo.json, which rates the autumn colour 'worth the trip'."
-  },
-  {
-   "id": "mdr_002",
-   "name": "The Cypress of Quinta Magnolia",
-   "species": "Mexican Cypress (Cupressus lusitanica)",
-   "age_estimate": "not documented",
-   "age_min": null,
-   "age_max": null,
-   "girth_cm": 606,
-   "location": {
-    "address": "Quinta Magnólia, Rua Dr. Pita, Funchal",
-    "latitude": 32.644167,
-    "longitude": -16.925056,
-    "neighbourhood": "São Martinho, Funchal"
-   },
-   "story": "Madeirans call this species cedro-das-barracas, the shed cedar, because the young leading shoot was traditionally cut off so the crown would thicken outward into a roof of shade. Nobody did that to this one. It went up instead: 29.5 metres tall on a trunk 6.06 metres around, more than a metre of solid diameter, which the island's register singles out as exceptional for a Cupressus lusitanica and enough to make it one of the largest of its kind on Madeira.\n\nThe species is not Portuguese, whatever the name says. It comes from Mexico and Central America, and it took its Latin name from trees already growing in Portugal rather than from anywhere near its actual origin.\n\nIts age is not recorded. The register gives its condition as bom, good, and notes that it is under permanent technical monitoring, which is what the island does with trees it has no intention of losing. Nobody has dated it, and if you know when it was planted, tell us.\n\nIt stands in Quinta Magnolia, a public park of some 40,000 square metres in the middle of Funchal, free and open from eight in the morning until eight at night, which makes this the easiest tree on the list to go and see.",
-   "verified_sources": [
-    "https://ifcn.madeira.gov.pt/images/FotosArtigos/Florestas/ASMAC/ASMAC92.pdf",
-    "https://lifecooler.com/artigo/atividades/jardim-quinta-magnolia/355743/"
-   ],
-   "access": "Free entry, open daily 08:00-20:00",
-   "transport": "Central Funchal park, walkable from the Lido seafront area or a short bus or taxi ride from the city centre. No car needed for this one.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed",
-   "notes": "Register entry ASMAC n.92 (island code FSMCL01). Height 29.5m, maximum perimeter 6.06m (606cm), notable reason 'Tamanho' (size), condition 'Bom' (good) with permanent technical monitoring. The register calls it one of the largest specimens of its species on the island, over 1m trunk diameter and 30m+ height being noted as exceptional for Cupressus lusitanica. No age reference in the register; locally known as 'cedro-das-barracas' because its young leader shoot was traditionally cut to thicken the crown into a shade bower. Second source (lifecooler.com, corroborated by visitmadeira.com and madeira-web.com) confirms Quinta Magnolia as a real, currently operating 40,000sqm public park with free entry 08:00-20:00, but does not name this specific tree, so flagged as site-level rather than tree-specific corroboration, same caveat as mdr_001. Alive: park in active public use in 2026. Species string trimmed at write time from 'Mexican Cypress (Cupressus lusitanica), locally cedro-das-barracas' to the canonical common+Latin form; the local name moved into the story."
-  },
-  {
-   "id": "mdr_003",
-   "name": "The Copper Beech of the Emperor's Garden",
-   "species": "Copper Beech (Fagus sylvatica var. purpurea)",
-   "age_estimate": "not documented",
-   "age_min": null,
-   "age_max": null,
-   "girth_cm": 352,
-   "location": {
-    "address": "Quinta Jardins do Imperador, Beco do Pico, Monte, Funchal",
-    "latitude": 32.674972,
-    "longitude": -16.907861,
-    "neighbourhood": "Monte, Funchal"
-   },
-   "story": "The last Emperor of Austria died in this garden. Karl I, deposed in 1918 and exiled to Madeira, spent his final months at what was then Quinta do Monte and died there in 1922, which is why the estate is now the Jardins do Imperador, the Emperor's Garden.\n\nThe tree that dominates it is a copper beech, 36 metres tall on a trunk 3.52 metres round. That is an odd thing to find here. Fagus sylvatica is a northern European forest tree and this is a subtropical island in the Atlantic; what makes it possible is Monte itself, high on the slope above Funchal in the belt of cloud that the trade winds push up against the mountain. The parish is permanently damp and several degrees cooler than the seafront, and the beech behaves accordingly.\n\nMadeira's monumental tree register lists it for size, records its condition as good, and gives its age as sem referencia, no reference. Nobody has dated it, and the estate's own history does not settle it. If you know when this beech was planted, tell us.\n\nEntry costs around a euro, often nothing on Sundays, and the Monte cable car from Funchal stops a short walk away.",
-   "verified_sources": [
-    "https://ifcn.madeira.gov.pt/images/FotosArtigos/Florestas/ASMAC/ASMAC100.pdf",
-    "https://www.tripadvisor.com/Attraction_Review-g189167-d8317880-Reviews-Quinta_Jardins_do_Imperador-Funchal_Madeira_Madeira_Islands.html"
-   ],
-   "access": "Paid entry, around EUR 1 (often free on Sundays), open weekdays 09:30-17:30, Sundays and holidays 10:30-17:30",
-   "transport": "Monte parish, reachable by the Monte cable car from Funchal plus a short walk, or by bus toward Monte. No car needed for this one.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed",
-   "notes": "Register entry ASMAC n.100 (island code FMFSp01). Height 36.0m, maximum perimeter 3.52m (352cm), notable reason 'Tamanho' (size), condition 'Bom' (good). No age reference in the register. The estate, formerly Quinta do Monte, is where the exiled Emperor Karl I of Austria-Hungary lived and died in 1922; the register's historical notes describe the quinta's history, and a tree reportedly planted to mark Napoleon Bonaparte's passage into his own exile is mentioned for the estate generally but NOT tied to this specific beech, so that anecdote is deliberately left out of the story entirely rather than repeated near it, per the bridge-claim rule. Second source: TripAdvisor reviews and madeiralovers.com confirm the garden is real, open to paying visitors, with the stated hours and fee, corroborating the site but not the specific beech (same site-level caveat as mdr_001/002). Alive: garden operating and reviewed as of 2026. No best_time set: the phenology file rates European beech autumn colour highly, but this specimen sits at 32.6N in a permanently humid cloud belt at the extreme edge of the species' range and no source describes its colouring, so an invented peak was avoided."
-  },
-  {
-   "id": "mdr_004",
-   "name": "The Douglas Fir of Queimadas",
-   "species": "Douglas Fir (Pseudotsuga menziesii)",
-   "age_estimate": "not documented",
-   "age_min": null,
-   "age_max": null,
-   "girth_cm": 361,
-   "location": {
-    "address": "Parque Florestal das Queimadas, Santana",
-    "latitude": 32.784111,
-    "longitude": -16.906722,
-    "neighbourhood": "Santana"
-   },
-   "story": "A Douglas fir has no business in a laurel forest, and this one is 39 metres tall. It is the tallest tree on this list, a North American conifer planted inside Parque Florestal das Queimadas, which sits in the laurisilva that UNESCO listed as World Heritage: the largest surviving remnant of the laurel forest that once covered much of southern Europe. Madeira's register lists it for size at 3.61 metres round, condition good, age no reference.\n\nWorth being straight about what it is. Nothing here is native, and it is on this page because it is a genuinely large specimen at a place people already come to, not because it belongs to the forest around it.\n\nThat place is the trailhead for PR9, the Levada do Caldeirao Verde, one of the walks that brings people to Madeira in the first place, and the register calls Queimadas one of the most visited sites on the island. The park is free and open, with the levada path running off into the laurel.\n\nNobody has dated the fir, and there is a reason not to guess from its height: Douglas firs grow fast, so a big one need not be an old one. If you find a planting record, send it.",
-   "verified_sources": [
-    "https://ifcn.madeira.gov.pt/images/FotosArtigos/Florestas/ASMAC/ASMAC97.pdf",
-    "https://www.tripadvisor.com/Attraction_Review-g1178716-d9581328-Reviews-Parque_Florestal_das_Queimadas-Santana_Madeira_Madeira_Islands.html"
-   ],
-   "access": "Free, public forest park",
-   "transport": "By car from Funchal via Santana, roughly 1 hour to 1 hour 15 minutes of driving; there is no practical public transport to the park, so a car is the realistic way.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed",
-   "notes": "Register entry ASMAC n.97 (island code SSPM01). Height 39.0m, maximum perimeter 3.61m (361cm), notable reason 'Tamanho' (size), condition 'Bom' (good). No age reference in the register. Queimadas Forest Park is the well-known trailhead for PR9, the Levada do Caldeirao Verde walk, and sits inside Madeira's laurisilva UNESCO area; the register notes it as one of the most visited sites on the island. Second source (TripAdvisor plus AllTrails and visitmadeira.com) confirms the park is real, free, and actively visited in 2026, but describes the park generally rather than this specific Douglas fir, so flagged as site-level corroboration only, same caveat as the other register entries. Alive: park in active public use in 2026. This is a planted exotic conifer inside a native-forest park, included on the size/register merit alone, not as a laurisilva specimen, and the story says so outright."
-  },
-  {
-   "id": "mdr_005",
-   "name": "The Witch Tree of Fanal",
-   "species": "Til / Stinkwood (Ocotea foetens)",
-   "age_estimate": "several hundred years",
-   "age_min": 200,
-   "age_max": 600,
-   "location": {
-    "address": "Fanal, Paul da Serra plateau, Ribeira da Janela, Porto Moniz (within the officially designated Nucleo de Tis - Fanal)",
-    "latitude": 32.8116362,
-    "longitude": -17.144537,
-    "neighbourhood": "Fanal, Porto Moniz"
-   },
-   "story": "The grove these trees belong to was already standing when the Portuguese found Madeira uninhabited in 1419. Fanal is a protected 20-hectare nucleus of til, Ocotea foetens, on the Paul da Serra plateau inside the UNESCO laurel forest, and the island's register dates it only as centenas de anos, hundreds of years, referencing a stand that predates settlement. The eight trunks the surveyors measured run from 0.68 to 2.28 metres round.\n\nOne tree in it has become the one everybody photographs. Travel and photography sources call it the Witch Tree, arvore da bruxa, for a trunk that twists hard and limbs that read as outstretched arms under a coat of moss. Tourist literature puts it at 500 or 600 years; the register will say no more than hundreds, and neither figure rests on a measurement, so this page does not sharpen it.\n\nNothing on the ground names it. There is no sign, no arrow and no path to the trunk, and visitors regularly report hunting around the grove before they find it, which is why our pin marks the area rather than the tree. Come in the morning fog if you can. That is when Fanal looks the way it does in the photographs, and when the tis stop reading as trees.",
-   "verified_sources": [
-    "https://ifcn.madeira.gov.pt/images/FotosArtigos/Florestas/ASMAC/ASMAC77.pdf",
-    "https://mymodernmet.com/fanal-forest-albert-dros/",
-    "https://beyondmadeira.com/see-do/fanal-witch-tree",
-    "OSM node 11893400096 (natural=tree, name='Witch tree', denotation=natural_monument)"
-   ],
-   "access": "Free, public land inside the Madeira Natural Park, rated 'muito facil' (very easy) by the register; a short walk from the Fanal parking area, but there is no on-site signage naming or pointing to this specific tree",
-   "transport": "By car only; roughly 1 hour to 1 hour 15 minutes from Funchal via the ER209, and well over an hour back, because Paul da Serra is mountain plateau driving rather than a suburban hop.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate",
-   "notes": "The til grove at Fanal is officially designated as 'Nucleo de Tis - Fanal' (ASMAC n.77, island code PMRJOF01, register coordinates 32.809278,-17.141472), a 20-hectare nucleus of Ocotea foetens inside the laurisilva UNESCO World Heritage area, documented with 8 trunk perimeters (2.28, 2.27, 1.43, 0.68, 1.59, 1.05, 1.54 and 1.47m) and age given only as 'centenas de anos' (hundreds of years), referenced as predating Madeira's 1419 settlement. That register entry alone would be a grove, not a collectible point. However, one specific specimen within this nucleus is independently and repeatedly identified across multiple travel and photography sources as the 'Witch Tree' or 'arvore da bruxa': a single ancient til with a dramatically twisted, moss-hung trunk and limbs read as outstretched arms, treated as Fanal's single most photographed tree (mymodernmet.com, journeyera.com, beyondmadeira.com which has a page dedicated to this one tree, rexby.com). A community-contributed OpenStreetMap node (id 11893400096) independently tags this exact spot 'Witch tree' with denotation=natural_monument, roughly 350m from the register's stated nucleus coordinate, i.e. within the same grove area. Combining the official register (existence, species, protected status, rough age) with the independent OSM identification plus multiple independent travel/photography write-ups (identity, fame, appearance) clears the two-source bar for THIS specimen, distinct from the grove as a whole. Flagged and location_precision approximate rather than confirmed because sources explicitly warn there is no signage and visitors 'need to search and guess' to find it, so the pin should be read as 'this area of the grove', not a surveyed trunk position, and the story says exactly that. Age_min/max is a broad band reflecting tourism-source claims of '500 to 600 years' against the register's vaguer 'hundreds of years'; treated as an estimate repeated no more precisely than the sources allow, not a derived calculation, and the story keeps the grove's pre-1419 dating separate from the individual tree's band. Alive: multiple 2024-2026 travel and photography posts describe visiting it recently; Madeira's 2016 wildfire is known to have reached parts of the island's laurisilva but no source reports damage to this specific grove or tree."
-  },
-  {
-   "id": "mdr_006",
-   "name": "The Dragon Tree Grove of Neves",
-   "species": "Dragon Tree (Dracaena draco)",
-   "age_estimate": "over a century",
-   "age_min": 100,
-   "age_max": null,
-   "girth_cm": 477,
-   "location": {
-    "address": "Jardim do Nucleo dos Dragoeiros das Neves, Caminho da Portada, Sitio das Neves, Sao Goncalo, Funchal",
-    "latitude": 32.64875,
-    "longitude": -16.869667,
-    "neighbourhood": "Sao Goncalo, Funchal"
-   },
-   "story": "The Regional Government of Madeira bought this piece of land for one reason: the trees standing on it. The Nucleo dos Dragoeiros das Neves is a small purpose-built garden in Sao Goncalo, five kilometres out of central Funchal, laid out around what the island's register calls a notable group of centenary dragon trees. It has an information centre, opening hours, a phone number and guided visits available on request, which is remarkable treatment for a garden you can cross in a minute, and it tells you how little of Madeira's original dragon tree population is left.\n\nDracaena draco is native here and to the Canaries and almost nowhere else, and it grows slowly enough to make the register's word centenarios mean something: roughly ten years to reach two or three metres. The thickest trunk in the group measures 4.77 metres around and the stand reaches 13 metres. The register gives no age beyond centenary, and this page invents none.\n\nCut the bark and the sap runs red. That is dragon's blood, imported into Europe for centuries as a dye, a varnish and a medicine, and the trees were tapped hard for it. Entry is free, the information centre keeps weekday hours, and the whole visit takes twenty minutes.",
-   "verified_sources": [
-    "https://ifcn.madeira.gov.pt/images/FotosArtigos/Florestas/ASMAC/ASMAC86.pdf",
-    "https://ifcn.madeira.gov.pt/pt/divulgacao/centros-de-rececao/centro-de-informacao-do-nucleo-dos-dragoeiros-das-neves.html",
-    "https://visitmadeira.com/en/what-to-do/culture-passionates/gardens/nucleo-dos-dragoeiros-garden/"
-   ],
-   "access": "Free entry, public garden with an information centre open Monday-Friday 09:00-12:30 and 14:00-17:30; guided visits available by contacting the centre",
-   "transport": "About 5 km from central Funchal by road; no direct public transport noted, so a taxi or car is the realistic way.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "ai_generated",
-   "location_precision": "confirmed",
-   "notes": "Register entry ASMAC n.86 (island code FSGDD01): 'Nucleo de Dragoeiros', height 13.0m, maximum perimeter 4.77m (477cm), age 'Sem referencia' but description calls the group 'um notavel grupo de dragoeiros centenarios' (a notable group of centenary dragon trees), so 'over a century' is repeated as vaguely as the register states it, not sharpened. Purpose-built conservation garden acquired by the Regional Government of Madeira specifically to protect this group; unlike the Fanal til nucleus this is a compact, purpose-built, named garden (not a stretch of forest) with its own official IFCN information centre page confirming address, phone, opening hours and free access, independently corroborated by the tourism board (visitmadeira.com). Treated as ONE ensemble entry under the rule that allows a compact famous grouping with one obvious place to stand: the garden itself, not any single trunk, is the destination, and it is signposted and staffed, unlike Fanal's informally-nicknamed specimen. Dragon trees are native to Madeira and the Canaries and slow-growing (roughly 10 years to reach 2-3m per IFCN), consistent with 'centenary' framing. Alive: information centre and garden actively described as operating in 2026 sources. No best_time: dragon trees flower and fruit irregularly and look much the same year-round."
-  }
- ]
+  "city": "Madeira",
+  "country": "Portugal",
+  "status": "needs_curation",
+  "kind": "island",
+  "intro": "Four of Madeira's six trees stand within a few kilometres of central Funchal, which makes them a genuine afternoon: a botanical garden, a public park, a garden at Monte and a dragon tree grove at Neves. The other two are drives. Queimadas, above Santana on the north coast, is about an hour away, and the til grove at Fanal on the Paul da Serra plateau is an hour and a quarter of mountain road in the opposite direction. Four of the six carry no recorded age at all.",
+  "meta_description": "Madeira's six remarkable trees: a witch-shaped til in the Fanal laurel forest, a dragon tree grove, and four register giants nobody has ever dated.",
+  "question_meta": "Madeira's oldest listed tree is the Witch Tree in the til grove at Fanal, several hundred years old. The Funchal giants carry no recorded age.",
+  "oldest_tree_id": "mdr_005",
+  "question_answer": "The oldest tree on this list is the Witch Tree at Fanal, a til (Ocotea foetens) in the protected grove on the Paul da Serra plateau above Porto Moniz. Estimates for it run from several hundred years to 500 or 600, and Madeira's own register dates the grove around it only as centenas de anos, hundreds of years, describing a stand referenced as predating the Portuguese settlement of the island in 1419. That is the loosest kind of answer and it is the best one available, because the four monumental trees in and around Funchal carry no recorded age at all.",
+  "question_context": "Madeira's age question runs into a flat wall: the island's own register of monumental trees mostly does not carry ages. Four of the six trees here, the ginkgo in the Jardim Botanico, the cypress at Quinta Magnolia, the copper beech at Monte and the Douglas fir at Queimadas, are listed for size alone, with sem referencia, no reference, in the age column. The survey recorded height and perimeter, not years. That leaves the two native stands. The dragon trees at Neves are described as centenarios, over a century, and no more precisely than that. The til grove at Fanal is dated only as centenas de anos, hundreds of years, and is referenced as predating the Portuguese arrival on an uninhabited island in 1419; the single tree within it that visitors know as the Witch Tree is put at 500 or 600 years by tourism sources, with nothing published behind that number. So the honest ranking is Fanal first, Neves second, and four undated giants after them. The Douglas fir is the trap here: it is the tallest tree on the list at 39 metres, and Douglas firs grow fast, so height says nothing about its age.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Madeira?",
+      "a": "Of the trees on this list, the Witch Tree in the til grove at Fanal, on the Paul da Serra plateau above Porto Moniz. The register dates the grove only as hundreds of years and references it as predating the settlement of the island in 1419; tourism sources put the individual tree at 500 or 600 years without publishing any working."
+    },
+    {
+      "q": "Why do so many of Madeira's monumental trees have no age?",
+      "a": "Because the island's register lists them for size. Each entry records height, trunk perimeter and condition, and the age column on the ginkgo, the cypress at Quinta Magnolia, the copper beech at Monte and the Douglas fir at Queimadas simply reads sem referencia, no reference. Nobody has cored them. If you have a planting record for any of the four, we would like it."
+    },
+    {
+      "q": "Do you need a car, and how far apart are these trees?",
+      "a": "For four of them, no. The botanical garden, Quinta Magnolia, the Emperor's Garden at Monte and the dragon trees at Neves are all within a few kilometres of central Funchal, reachable by bus or cable car. The other two need a car: Queimadas at Santana is about an hour's drive, and Fanal is an hour and a quarter of mountain road across the Paul da Serra plateau in the opposite direction."
+    },
+    {
+      "q": "Is the Witch Tree at Fanal signposted?",
+      "a": "No. There is no sign, no arrow and no marked path to it, and visitors regularly report hunting around the grove before they find it. Our pin marks the part of the grove it stands in rather than the trunk itself. Morning fog is when Fanal looks the way it does in photographs."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mdr_001",
+      "name": "The Ginkgo of the Botanical Garden",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 162,
+      "location": {
+        "address": "Jardim Botânico da Madeira Eng.º Rui Vieira, Caminho do Meio, Funchal",
+        "latitude": 32.662444,
+        "longitude": -16.895056,
+        "neighbourhood": "Santa Maria Maior, Funchal"
+      },
+      "story": "Madeira's official register of monumental trees records this ginkgo for exactly one reason, size, and where the age should go it says sem referencia, no reference. Nobody has dated it. What the surveyors did measure is 18 metres of height and a trunk 1.62 metres round, which is a substantial specimen of a tree that has no obvious business thriving at this latitude and manages it anyway.\n\nGinkgo biloba is the last species left of an entire lineage, with no close living relative anywhere, and it reached European gardens only in the eighteenth century. This one grows in the Jardim Botanico da Madeira on the slope above Funchal, among roughly 3,000 species pulled in from every continent the garden could reach, ten minutes out of the city by bus or a cable car ride down from Monte.\n\nThe garden opened to the public in 1960, which dates the garden and not the tree. Nobody has recorded when this ginkgo went in. If you have a planting record, or a girth measured more recently than the survey, send it to us.\n\nAnd then in November the crown turns butter gold and drops the lot inside a few days, which is the week to be standing under it.",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "November, when the crown turns gold and drops it in a few days"
+      },
+      "verified_sources": [
+        "https://ifcn.madeira.gov.pt/images/FotosArtigos/Florestas/ASMAC/ASMAC90.pdf",
+        "https://ifcn.madeira.gov.pt/en/quintas-e-jardins/jardin-botanico-da-madeira-eng-rui-vieira/informacao-ao-visitante.html"
+      ],
+      "access": "Paid entry, EUR 7.50 adult, open daily 09:00-18:00 (last admission 30 min before close)",
+      "transport": "Bus 29, 30, 31 or 31A from central Funchal (about 10 minutes), or the Teleférico do Jardim Botânico cable car from Monte. No car needed for this one.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Register entry ASMAC n.87/90 (island code FSMMGB01), the IFCN/VALCONMAC official inventory of Madeira's singular and monumental trees (Duarte Olim survey, undated but citing the 2018/2021 regional legal framework for monumental trees). Height 18.0m, maximum perimeter 1.62m (162cm), notable reason 'Tamanho' (size). No age reference given in the register ('Sem referencia'); the garden itself opened to the public in 1960 but that is the garden's founding, not a documented planting date for this specific tree, so age stays undocumented per the bridge-claim rule and the story states the distinction explicitly. One large ginkgo is catalogued among the garden's collection of roughly 3000 species; second source is the garden's own official visitor-information page confirming continued public operation, hours and fee, not a tree-specific corroboration. Flagged because the second source verifies the site rather than the individual specimen; the register is otherwise a single official government source. Alive: garden actively operating in 2026 per its own site. best_time set from data/phenology/ginkgo.json, which rates the autumn colour 'worth the trip'."
+    },
+    {
+      "id": "mdr_002",
+      "name": "The Cypress of Quinta Magnolia",
+      "species": "Mexican Cypress (Cupressus lusitanica)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 606,
+      "location": {
+        "address": "Quinta Magnólia, Rua Dr. Pita, Funchal",
+        "latitude": 32.644167,
+        "longitude": -16.925056,
+        "neighbourhood": "São Martinho, Funchal"
+      },
+      "story": "Madeirans call this species cedro-das-barracas, the shed cedar, because the young leading shoot was traditionally cut off so the crown would thicken outward into a roof of shade. Nobody did that to this one. It went up instead: 29.5 metres tall on a trunk 6.06 metres around, more than a metre of solid diameter, which the island's register singles out as exceptional for a Cupressus lusitanica and enough to make it one of the largest of its kind on Madeira.\n\nThe species is not Portuguese, whatever the name says. It comes from Mexico and Central America, and it took its Latin name from trees already growing in Portugal rather than from anywhere near its actual origin.\n\nIts age is not recorded. The register gives its condition as bom, good, and notes that it is under permanent technical monitoring, which is what the island does with trees it has no intention of losing. Nobody has dated it, and if you know when it was planted, tell us.\n\nIt stands in Quinta Magnolia, a public park of some 40,000 square metres in the middle of Funchal, free and open from eight in the morning until eight at night, which makes this the easiest tree on the list to go and see.",
+      "verified_sources": [
+        "https://ifcn.madeira.gov.pt/images/FotosArtigos/Florestas/ASMAC/ASMAC92.pdf",
+        "https://lifecooler.com/artigo/atividades/jardim-quinta-magnolia/355743/"
+      ],
+      "access": "Free entry, open daily 08:00-20:00",
+      "transport": "Central Funchal park, walkable from the Lido seafront area or a short bus or taxi ride from the city centre. No car needed for this one.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Register entry ASMAC n.92 (island code FSMCL01). Height 29.5m, maximum perimeter 6.06m (606cm), notable reason 'Tamanho' (size), condition 'Bom' (good) with permanent technical monitoring. The register calls it one of the largest specimens of its species on the island, over 1m trunk diameter and 30m+ height being noted as exceptional for Cupressus lusitanica. No age reference in the register; locally known as 'cedro-das-barracas' because its young leader shoot was traditionally cut to thicken the crown into a shade bower. Second source (lifecooler.com, corroborated by visitmadeira.com and madeira-web.com) confirms Quinta Magnolia as a real, currently operating 40,000sqm public park with free entry 08:00-20:00, but does not name this specific tree, so flagged as site-level rather than tree-specific corroboration, same caveat as mdr_001. Alive: park in active public use in 2026. Species string trimmed at write time from 'Mexican Cypress (Cupressus lusitanica), locally cedro-das-barracas' to the canonical common+Latin form; the local name moved into the story."
+    },
+    {
+      "id": "mdr_003",
+      "name": "The Copper Beech of the Emperor's Garden",
+      "species": "Copper Beech (Fagus sylvatica var. purpurea)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 352,
+      "location": {
+        "address": "Quinta Jardins do Imperador, Beco do Pico, Monte, Funchal",
+        "latitude": 32.674972,
+        "longitude": -16.907861,
+        "neighbourhood": "Monte, Funchal"
+      },
+      "story": "The last Emperor of Austria died in this garden. Karl I, deposed in 1918 and exiled to Madeira, spent his final months at what was then Quinta do Monte and died there in 1922, which is why the estate is now the Jardins do Imperador, the Emperor's Garden.\n\nThe tree that dominates it is a copper beech, 36 metres tall on a trunk 3.52 metres round. That is an odd thing to find here. Fagus sylvatica is a northern European forest tree and this is a subtropical island in the Atlantic; what makes it possible is Monte itself, high on the slope above Funchal in the belt of cloud that the trade winds push up against the mountain. The parish is permanently damp and several degrees cooler than the seafront, and the beech behaves accordingly.\n\nMadeira's monumental tree register lists it for size, records its condition as good, and gives its age as sem referencia, no reference. Nobody has dated it, and the estate's own history does not settle it. If you know when this beech was planted, tell us.\n\nEntry costs around a euro, often nothing on Sundays, and the Monte cable car from Funchal stops a short walk away.",
+      "verified_sources": [
+        "https://ifcn.madeira.gov.pt/images/FotosArtigos/Florestas/ASMAC/ASMAC100.pdf",
+        "https://www.tripadvisor.com/Attraction_Review-g189167-d8317880-Reviews-Quinta_Jardins_do_Imperador-Funchal_Madeira_Madeira_Islands.html"
+      ],
+      "access": "Paid entry, around EUR 1 (often free on Sundays), open weekdays 09:30-17:30, Sundays and holidays 10:30-17:30",
+      "transport": "Monte parish, reachable by the Monte cable car from Funchal plus a short walk, or by bus toward Monte. No car needed for this one.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Register entry ASMAC n.100 (island code FMFSp01). Height 36.0m, maximum perimeter 3.52m (352cm), notable reason 'Tamanho' (size), condition 'Bom' (good). No age reference in the register. The estate, formerly Quinta do Monte, is where the exiled Emperor Karl I of Austria-Hungary lived and died in 1922; the register's historical notes describe the quinta's history, and a tree reportedly planted to mark Napoleon Bonaparte's passage into his own exile is mentioned for the estate generally but NOT tied to this specific beech, so that anecdote is deliberately left out of the story entirely rather than repeated near it, per the bridge-claim rule. Second source: TripAdvisor reviews and madeiralovers.com confirm the garden is real, open to paying visitors, with the stated hours and fee, corroborating the site but not the specific beech (same site-level caveat as mdr_001/002). Alive: garden operating and reviewed as of 2026. No best_time set: the phenology file rates European beech autumn colour highly, but this specimen sits at 32.6N in a permanently humid cloud belt at the extreme edge of the species' range and no source describes its colouring, so an invented peak was avoided."
+    },
+    {
+      "id": "mdr_004",
+      "name": "The Douglas Fir of Queimadas",
+      "species": "Douglas Fir (Pseudotsuga menziesii)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 361,
+      "location": {
+        "address": "Parque Florestal das Queimadas, Santana",
+        "latitude": 32.784111,
+        "longitude": -16.906722,
+        "neighbourhood": "Santana"
+      },
+      "story": "A Douglas fir has no business in a laurel forest, and this one is 39 metres tall. It is the tallest tree on this list, a North American conifer planted inside Parque Florestal das Queimadas, which sits in the laurisilva that UNESCO listed as World Heritage: the largest surviving remnant of the laurel forest that once covered much of southern Europe. Madeira's register lists it for size at 3.61 metres round, condition good, age no reference.\n\nWorth being straight about what it is. Nothing here is native, and it is on this page because it is a genuinely large specimen at a place people already come to, not because it belongs to the forest around it.\n\nThat place is the trailhead for PR9, the Levada do Caldeirao Verde, one of the walks that brings people to Madeira in the first place, and the register calls Queimadas one of the most visited sites on the island. The park is free and open, with the levada path running off into the laurel.\n\nNobody has dated the fir, and there is a reason not to guess from its height: Douglas firs grow fast, so a big one need not be an old one. If you find a planting record, send it.",
+      "verified_sources": [
+        "https://ifcn.madeira.gov.pt/images/FotosArtigos/Florestas/ASMAC/ASMAC97.pdf",
+        "https://www.tripadvisor.com/Attraction_Review-g1178716-d9581328-Reviews-Parque_Florestal_das_Queimadas-Santana_Madeira_Madeira_Islands.html"
+      ],
+      "access": "Free, public forest park",
+      "transport": "By car from Funchal via Santana, roughly 1 hour to 1 hour 15 minutes of driving; there is no practical public transport to the park, so a car is the realistic way.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Register entry ASMAC n.97 (island code SSPM01). Height 39.0m, maximum perimeter 3.61m (361cm), notable reason 'Tamanho' (size), condition 'Bom' (good). No age reference in the register. Queimadas Forest Park is the well-known trailhead for PR9, the Levada do Caldeirao Verde walk, and sits inside Madeira's laurisilva UNESCO area; the register notes it as one of the most visited sites on the island. Second source (TripAdvisor plus AllTrails and visitmadeira.com) confirms the park is real, free, and actively visited in 2026, but describes the park generally rather than this specific Douglas fir, so flagged as site-level corroboration only, same caveat as the other register entries. Alive: park in active public use in 2026. This is a planted exotic conifer inside a native-forest park, included on the size/register merit alone, not as a laurisilva specimen, and the story says so outright."
+    },
+    {
+      "id": "mdr_005",
+      "name": "The Witch Tree of Fanal",
+      "species": "Til / Stinkwood (Ocotea foetens)",
+      "age_estimate": "several hundred years",
+      "age_min": 200,
+      "age_max": 600,
+      "location": {
+        "address": "Fanal, Paul da Serra plateau, Ribeira da Janela, Porto Moniz (within the officially designated Nucleo de Tis - Fanal)",
+        "latitude": 32.8116362,
+        "longitude": -17.144537,
+        "neighbourhood": "Fanal, Porto Moniz"
+      },
+      "story": "The grove these trees belong to was already standing when the Portuguese found Madeira uninhabited in 1419. Fanal is a protected 20-hectare nucleus of til, Ocotea foetens, on the Paul da Serra plateau inside the UNESCO laurel forest, and the island's register dates it only as centenas de anos, hundreds of years, referencing a stand that predates settlement. The eight trunks the surveyors measured run from 0.68 to 2.28 metres round.\n\nOne tree in it has become the one everybody photographs. Travel and photography sources call it the Witch Tree, arvore da bruxa, for a trunk that twists hard and limbs that read as outstretched arms under a coat of moss. Tourist literature puts it at 500 or 600 years; the register will say no more than hundreds, and neither figure rests on a measurement, so this page does not sharpen it.\n\nNothing on the ground names it. There is no sign, no arrow and no path to the trunk, and visitors regularly report hunting around the grove before they find it, which is why our pin marks the area rather than the tree. Come in the morning fog if you can. That is when Fanal looks the way it does in the photographs, and when the tis stop reading as trees.",
+      "verified_sources": [
+        "https://ifcn.madeira.gov.pt/images/FotosArtigos/Florestas/ASMAC/ASMAC77.pdf",
+        "https://mymodernmet.com/fanal-forest-albert-dros/",
+        "https://beyondmadeira.com/see-do/fanal-witch-tree",
+        "OSM node 11893400096 (natural=tree, name='Witch tree', denotation=natural_monument)"
+      ],
+      "access": "Free, public land inside the Madeira Natural Park, rated 'muito facil' (very easy) by the register; a short walk from the Fanal parking area, but there is no on-site signage naming or pointing to this specific tree",
+      "transport": "By car only; roughly 1 hour to 1 hour 15 minutes from Funchal via the ER209, and well over an hour back, because Paul da Serra is mountain plateau driving rather than a suburban hop.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "The til grove at Fanal is officially designated as 'Nucleo de Tis - Fanal' (ASMAC n.77, island code PMRJOF01, register coordinates 32.809278,-17.141472), a 20-hectare nucleus of Ocotea foetens inside the laurisilva UNESCO World Heritage area, documented with 8 trunk perimeters (2.28, 2.27, 1.43, 0.68, 1.59, 1.05, 1.54 and 1.47m) and age given only as 'centenas de anos' (hundreds of years), referenced as predating Madeira's 1419 settlement. That register entry alone would be a grove, not a collectible point. However, one specific specimen within this nucleus is independently and repeatedly identified across multiple travel and photography sources as the 'Witch Tree' or 'arvore da bruxa': a single ancient til with a dramatically twisted, moss-hung trunk and limbs read as outstretched arms, treated as Fanal's single most photographed tree (mymodernmet.com, journeyera.com, beyondmadeira.com which has a page dedicated to this one tree, rexby.com). A community-contributed OpenStreetMap node (id 11893400096) independently tags this exact spot 'Witch tree' with denotation=natural_monument, roughly 350m from the register's stated nucleus coordinate, i.e. within the same grove area. Combining the official register (existence, species, protected status, rough age) with the independent OSM identification plus multiple independent travel/photography write-ups (identity, fame, appearance) clears the two-source bar for THIS specimen, distinct from the grove as a whole. Flagged and location_precision approximate rather than confirmed because sources explicitly warn there is no signage and visitors 'need to search and guess' to find it, so the pin should be read as 'this area of the grove', not a surveyed trunk position, and the story says exactly that. Age_min/max is a broad band reflecting tourism-source claims of '500 to 600 years' against the register's vaguer 'hundreds of years'; treated as an estimate repeated no more precisely than the sources allow, not a derived calculation, and the story keeps the grove's pre-1419 dating separate from the individual tree's band. Alive: multiple 2024-2026 travel and photography posts describe visiting it recently; Madeira's 2016 wildfire is known to have reached parts of the island's laurisilva but no source reports damage to this specific grove or tree."
+    },
+    {
+      "id": "mdr_006",
+      "name": "The Dragon Tree Grove of Neves",
+      "species": "Dragon Tree (Dracaena draco)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_max": null,
+      "girth_cm": 477,
+      "location": {
+        "address": "Jardim do Nucleo dos Dragoeiros das Neves, Caminho da Portada, Sitio das Neves, Sao Goncalo, Funchal",
+        "latitude": 32.64875,
+        "longitude": -16.869667,
+        "neighbourhood": "Sao Goncalo, Funchal"
+      },
+      "story": "The Regional Government of Madeira bought this piece of land for one reason: the trees standing on it. The Nucleo dos Dragoeiros das Neves is a small purpose-built garden in Sao Goncalo, five kilometres out of central Funchal, laid out around what the island's register calls a notable group of centenary dragon trees. It has an information centre, opening hours, a phone number and guided visits available on request, which is remarkable treatment for a garden you can cross in a minute, and it tells you how little of Madeira's original dragon tree population is left.\n\nDracaena draco is native here and to the Canaries and almost nowhere else, and it grows slowly enough to make the register's word centenarios mean something: roughly ten years to reach two or three metres. The thickest trunk in the group measures 4.77 metres around and the stand reaches 13 metres. The register gives no age beyond centenary, and this page invents none.\n\nCut the bark and the sap runs red. That is dragon's blood, imported into Europe for centuries as a dye, a varnish and a medicine, and the trees were tapped hard for it. Entry is free, the information centre keeps weekday hours, and the whole visit takes twenty minutes.",
+      "verified_sources": [
+        "https://ifcn.madeira.gov.pt/images/FotosArtigos/Florestas/ASMAC/ASMAC86.pdf",
+        "https://ifcn.madeira.gov.pt/pt/divulgacao/centros-de-rececao/centro-de-informacao-do-nucleo-dos-dragoeiros-das-neves.html",
+        "https://visitmadeira.com/en/what-to-do/culture-passionates/gardens/nucleo-dos-dragoeiros-garden/"
+      ],
+      "access": "Free entry, public garden with an information centre open Monday-Friday 09:00-12:30 and 14:00-17:30; guided visits available by contacting the centre",
+      "transport": "About 5 km from central Funchal by road; no direct public transport noted, so a taxi or car is the realistic way.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "notes": "Register entry ASMAC n.86 (island code FSGDD01): 'Nucleo de Dragoeiros', height 13.0m, maximum perimeter 4.77m (477cm), age 'Sem referencia' but description calls the group 'um notavel grupo de dragoeiros centenarios' (a notable group of centenary dragon trees), so 'over a century' is repeated as vaguely as the register states it, not sharpened. Purpose-built conservation garden acquired by the Regional Government of Madeira specifically to protect this group; unlike the Fanal til nucleus this is a compact, purpose-built, named garden (not a stretch of forest) with its own official IFCN information centre page confirming address, phone, opening hours and free access, independently corroborated by the tourism board (visitmadeira.com). Treated as ONE ensemble entry under the rule that allows a compact famous grouping with one obvious place to stand: the garden itself, not any single trunk, is the destination, and it is signposted and staffed, unlike Fanal's informally-nicknamed specimen. Dragon trees are native to Madeira and the Canaries and slow-growing (roughly 10 years to reach 2-3m per IFCN), consistent with 'centenary' framing. Alive: information centre and garden actively described as operating in 2026 sources. No best_time: dragon trees flower and fruit irregularly and look much the same year-round."
+    }
+  ]
 }
