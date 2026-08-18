@@ -9,6 +9,10 @@
 import Base from "../layouts/Base.astro";
 import { BASE_URL } from "../lib/schema";
 import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
+import { SAVED_LIST_JS } from "../lib/saved-list-js";
+import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
+import SignInModal from "../components/SignInModal.astro";
+import { SIGNIN_JS } from "../lib/signin-js";
 
 const canonical = `${BASE_URL}/account`;
 ---
@@ -58,8 +62,16 @@ const canonical = `${BASE_URL}/account`;
     <p class="acct-actions"><button type="button" id="signout" class="acct-link">Sign out</button></p>
     <p class="acct-actions"><button type="button" id="del-acct" class="acct-link danger">Delete my account</button></p>
   </section>
+
+  <section class="acct-saved" id="saved">
+    <h2>Saved trees</h2>
+    <p class="prose-block" id="saved-sub">The trees you tapped Save on, kept on this device. Sign in above and they follow you to any device.</p>
+    <ul id="saved-list" class="saved-list" hidden></ul>
+    <p id="saved-empty" hidden>Nothing saved yet. Open any tree and tap <b>&#9825; Save</b> to keep it here for the day you walk past. <a href="/explore">Find a tree near you</a>.</p>
+  </section>
+  <SignInModal />
 </main>
-<Fragment slot="scripts" set:html={`
+<Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + SAVED_LIST_JS + `
 <script>
 (function() {
   var SB = "${SUPABASE_URL}";
