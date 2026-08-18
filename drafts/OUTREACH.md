@@ -650,3 +650,32 @@ Worth noting for the machinery: the thank-you was the first mail ever sent to
 an address already in the register, and it went through the `resend_reason`
 door rather than around it. The register now says why that address has two
 mails, which is the whole point of the door.
+
+**The most valuable reply so far came from Bomenstichting Amsterdam (2026-08-17,
+Hanna Hirsch), and two of her eight points were errors on our own pages.**
+The Olifantsiep: our story said a truck tore off part of the trunk in 2015,
+while the source we ourselves cite, her own organisation's, says a lorry hit
+the slurftak (the elephant-trunk BRANCH) "enkele jaren geleden" and that the
+city fitted a support to keep that branch from breaking off. A branch became a
+trunk in translation, a prevention became a wound, and the year was invented.
+The Vondelpark poplar: "the tallest tree in Amsterdam" stood twice in one story
+and neither citation supports it. Both fixed and pushed before the reply went
+out, which is the only reason the reply could open with what changed rather
+than with thanks.
+
+Her other six points, kept here because they are a to-do list written by
+somebody who knows the city: the site is in English (fair question, answered),
+the selection misses better trees in the Vondelpark and the centre (she is
+right, and she is the person to ask), nine of our twenty Amsterdam trees sit
+behind a ticket at Artis or the Hortus so the WALK should lean on the free ones
+(not fixed yet, and the mail says so rather than implying it is done), the
+Bomenstichting has its own centre walking and cycling route whose data she
+offers us in writing, the city's bijzondere-bomen map (already in the repo,
+5,827 entries under Amsterdam's open licence), and Hans Kaljee, the municipal
+tree consultant whose book on Amsterdam's hundred finest trees appears early
+next year, whom she offers to put us in touch with.
+
+The lesson for the next batch, and it is the argument for writing to societies
+rather than to institutions: an expert who reads the page finds in ten minutes
+what our own verification missed for weeks. A parks department that never
+answers cannot do that.
