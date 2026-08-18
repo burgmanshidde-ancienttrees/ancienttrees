@@ -342,6 +342,27 @@
    "cities_touched": 3,
    "trees": 13,
    "logged": true
+  },
+  {
+   "started": "2026-08-18T05:20:01+00:00",
+   "date": "2026-08-18",
+   "run_id": "32102460284",
+   "minutes": 15.3,
+   "minutes_basis": "measured",
+   "turns": 116,
+   "denials": 27,
+   "denials_source": "permission_denials: Bash",
+   "ended": "success",
+   "tokens": 19682600,
+   "claims_held": [
+    "seville",
+    "zaragoza",
+    "Las Vegas"
+   ],
+   "commits": 6,
+   "cities_touched": 0,
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
