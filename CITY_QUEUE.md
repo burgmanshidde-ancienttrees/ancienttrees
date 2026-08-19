@@ -226,15 +226,15 @@ so qa.py fails the deploy when the table and the json disagree.
 | 29 | Perth | 16.42 | 180,478 | 6 | - | 1 | - | 10 | predicted (travel demand) |
 | 30 | Sintra | 9.49 | 46,889 | 5 | 3 | 1 | 6 | 20 | measured |
 | 31 | Washington DC | 14.71 | 606,731 | 14 | 1 | 2 | - | 20 | measured |
-| 32 | Los Angeles | 14.41 | 665,559 | - | - | - | - | 10 | predicted (travel demand) |
+| 32 | Los Angeles | 14.41 | 665,559 | 7 | - | - | - | 10 | predicted (travel demand) |
 | 33 | Venice | 9.10 | 267,527 | 11 | 6 | 1 | 4 | 30 | measured |
 | 34 | Bari | 8.65 | 86,456 | - | - | - | 8 | 10 | predicted (travel demand) |
 | 35 | Budapest | 14.32 | 283,807 | 12 | 1 | 3 | - | 30 | measured |
 | 36 | Seville | 7.16 | 170,545 | 20 | 6 | 2 | - | 20 | measured |
 | 37 | Granada | 8.90 | 86,361 | 10 | 3 | 2 | 4 | 20 | measured |
-| 38 | Seattle | 12.43 | 398,724 | - | - | - | - | 10 | predicted (travel demand) |
+| 38 | Seattle | 12.43 | 398,724 | 5 | - | - | - | 10 | predicted (travel demand) |
 | 39 | Hawaii | 12.39 | - | - | - | - | - | 10 | predicted (travel demand) |
-| 40 | Dallas | 12.29 | - | - | - | - | - | 10 | predicted (travel demand) |
+| 40 | Dallas | 12.29 | - | 8 | - | 1 | - | 10 | predicted (travel demand) |
 | 41 | Houston | 12.22 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 42 | Cologne | 12.17 | 191,812 | - | - | - | - | 10 | predicted (travel demand) |
 | 43 | Leiden | 6.00 | 33,227 | 14 | 4 | 1 | 129 | 20 | measured |
@@ -255,7 +255,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 58 | Asheville | 10.45 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 59 | Hamburg | 10.27 | 191,221 | - | - | - | - | 10 | predicted (travel demand) |
 | 60 | Bristol | 10.26 | 163,983 | 5 | 1 | - | - | 20 | measured |
-| 61 | Mexico City | 9.97 | 566,583 | - | - | - | - | 10 | predicted (travel demand) |
+| 61 | Mexico City | 9.97 | 566,583 | 9 | - | - | - | 10 | predicted (travel demand) |
 | 62 | Bali | 9.95 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 63 | Kyoto | 6.39 | 142,353 | 18 | 8 | 2 | - | 20 | measured |
 | 64 | Edinburgh | 9.68 | 292,981 | 15 | 4 | 1 | - | 30 | measured |
