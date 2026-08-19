@@ -12,6 +12,60 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-19 (session, second round) - Four more off the top, and a correction to how I picked them
+
+Hidde asked for the next four cities still at zero. I took them by queue rank
+and got it wrong: rank here is demand times how cheap a city is for us, so
+Bari and Hawaii came out on top because we already hold their registers, not
+because anyone searches for them. He said so plainly ("ik zat meer aan sydney
+enzo te denken niet bari", then "is dat echt de grootste prio stad nu?").
+Both passes were killed two minutes in, about 27k tokens, and Mexico City took
+the slot. The lesson is worth keeping: our own score answers "what is cheapest
+per tree", and he was asking "what is biggest", and those are different
+questions the ranking quietly merges.
+
+**Four cities live, 29 trees.** Los Angeles 7, Dallas 8, Mexico City 9,
+Seattle 5. The site is at 141 cities.
+
+| City | Trees | Cost/tree | What carried it |
+|---|---:|---:|---|
+| Dallas | 8 | 27k | The Texas Big Tree Registry's ArcGIS layer, found through the app's JS bundle after the documented host hung, plus txhtc.org's named historic trees |
+| Mexico City | 9 | 32k | SEDEMA's 2025 Arboles Patrimoniales declaration, a register nobody here had scouted, with tree-level GPS and measured trunks |
+| Los Angeles | 7 | 40k | No register exists (LAMC 46.00 protects species, not trees); figs dated from the buildings put up beside them |
+| Seattle | 5 | 55k | No register either; the Heritage Tree programme names trees and publishes no data, so every entry came from park and university documents |
+
+**The measured pattern across both rounds, eight cities.** A city where some
+authority once published a list of individual trees costs 25k to 32k per
+published tree. A city where none exists costs 40k to 76k and yields fewer
+trees. That is the whole spread, and it does not track city size at all. The
+first question before opening a city is not how big it is; it is whether
+anybody there ever wrote a list.
+
+**Three entries were pulled at the merge, and two of them are the same rule.**
+El Pino in East Los Angeles, the bunya pine from Blood In Blood Out, stands in
+the front yard of a private house; the verify pass had it as view-only, which
+covers an institution's wall and not somebody's home. Eugenio in Mexico City
+sits inside a residential lot by SEDEMA's own location field. Both are
+recorded in full in their leads files so the call can be reversed in a minute
+if Hidde disagrees. The third, the Chavez Ravine Arboretum, is a hundred
+species over a hillside rather than one place to stand, and what belongs there
+is its Queensland kauri, held as a lead until somebody pins that trunk.
+
+**What the passes caught before it could ship**, which is the part of this
+work that never shows on the site: a state champion black willow in Dallas cut
+down by accident in 2015, three Comanche marker trees dead since 1998, a giant
+sequoia at Green Lake removed in December 2025, LA's Encino Oak fallen in
+1998, and both of Mexico City's famous ahuehuetes, El Sargento dried out in
+1969 and the Noche Triste tree that the city's own venue page calls a ruin.
+Two of those were the trees I sent the pass to find.
+
+**A register to promote, and it needs ten minutes rather than a run.** SEDEMA's
+Arboles Patrimoniales KML carries all twelve declared trees with coordinates,
+species and girth, and its licence sentence has not been read at the source,
+which is the gate before it can go into data/registers/. Recorded in
+data/register-scouting.json with the one data fault it carries: the height
+column has lost its decimal point, so 22 metres reads as 2200.
+
 ## 2026-08-19 (session) - Four unopened cities off the top of the queue, and three of them opened
 
 Hidde asked for a run on the prioritised cities that have no register and no
