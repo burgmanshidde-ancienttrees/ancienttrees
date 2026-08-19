@@ -21,7 +21,7 @@ export async function GET() {
   for (const city of cities) {
     const ts = renderableTrees(city);
     treesBySlug.set(city.id, ts);
-    for (const t of ts) idToTree.set(t.id, { ...t, citySlug: city.id, city: city.data.city });
+    for (const t of ts) idToTree.set(t.id, { ...t, citySlug: city.id, city: city.data.city, country: city.data.country });
   }
 
   const collections = (await getCollection("collectionPages"))
