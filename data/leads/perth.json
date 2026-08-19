@@ -1,0 +1,46 @@
+{
+ "leads": [
+  {
+   "name": "Boundary Tree, Baskerville (Swan Locations 4 and 5)",
+   "source": "Wikidata Q66974768 / inHerit dbce1c8d-c815-4860-8db2-e7c61ec47012",
+   "reason": "Flooded Gum (Eucalyptus rudis) marked by Gov. James Stirling and Surveyor General J.S. Roe from 1829, on the Swan River bank at Memorial Ave, Baskerville, ~25km from Perth centre. Alive (living, fresh growth despite fire/termite damage), WA State Heritage listed, but this pass found no coordinates, no confirmed public-transport route within the day-trip boundary, and no stated public access/ownership. Second source (ABC News) confirms age and heritage listing but not access. Needs a coordinate fix and an access check before it can ship."
+  },
+  {
+   "name": "Tum Tum Tree (Norfolk Island Hibiscus)",
+   "source": "National Trust WA Significant Tree Register (FRE06T), 130-135 High Street, Fremantle; inHerit a212263a-bef9-4d60-8e9a-ec9407fd1e06",
+   "reason": "Norfolk Island Hibiscus (Lagunaria patersonii), planted c.1950, no statutory heritage listing (Tree Society register 1997 and National Trust recognition only). inHerit describes it as standing in a car park serving an adjacent residential flat complex, which reads as access attached to private flats rather than confirmed open public ground; only condition data is from a 1997 streetscape survey. Needs a current access check (is the carpark/laneway genuinely open to the public, e.g. as Tum Tum Tree Lane) and a second independent source before it can ship."
+  },
+  {
+   "name": "Moreton Bay Fig, 1076 Hay Street / Harvest Terrace corner, West Perth",
+   "source": "National Trust WA Significant Tree Register (PER13T); trusttrees.org.au/tree/WA/West_Perth/1076_Hay_Street",
+   "reason": "Single tree, road reserve corner site (public land per search snippets, not yet confirmed by a direct fetch). National Trust register: diameter 2m, height 20m, age given as 150 yrs, classified 11 Mar 2015, condition good. Only one source found and directly confirmed this pass (National Trust); the inHerit record for this specific tree could not be located among several similarly-named Moreton Bay Fig records checked (Bassendean, Bunbury records found instead, both different trees). Needs a second independent source before it ships."
+  },
+  {
+   "name": "Cork Oak, Karrakatta Cemetery, Karrakatta",
+   "source": "National Trust WA Significant Tree Register (NED01T)",
+   "reason": "Single tree, Karrakatta Cemetery is public land and generally open. Not researched beyond the register listing this pass due to time; no age, girth or second source gathered yet."
+  },
+  {
+   "name": "Moreton Bay Fig Trees, King's Square (St John's Square), Fremantle",
+   "source": "National Trust WA Significant Tree Register (FRE03T, listed as 6 trees, St Johns Square); inHerit 7b0ffc3a-49b3-4b0d-b31d-31c2be040164; mysay.fremantle.wa.gov.au/figtrees",
+   "reason": "Register describes 6 Moreton Bay Figs planted 1890s by Philip Webster, linking St John's Church to Fremantle Town Hall, a compact civic-square ensemble that could pass the collectible-point test. But a 2018 council decision (confirmed via the council's own MySay Fremantle page) removed and replaced at least 2 of the original trees (the 'Christmas Fig' and Tree No.5) due to decline, with a London Plane and a new fig planted in their place. The register's '6 trees' description is stale. Needs a current on-the-ground count of how many original fig trees remain before this can ship as either a single ensemble or as individually verified survivors."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Tree, 1 Bannister Street",
+   "source": "Wikidata Q66976526",
+   "reason": "Wikidata's own entry name states 'tree removed'; State Registered Place designation for a tree that no longer stands. Dead/gone, never ships."
+  },
+  {
+   "name": "Ellen's Brook Estate - Cape Lilac Tree",
+   "source": "Wikidata Q66975154",
+   "reason": "City of Swan Heritage List / site visit source states the tree was removed following a 2016 site visit. Dead/gone, never ships."
+  },
+  {
+   "name": "Webster's Fig Tree (Moreton Bay Fig), 195 High Street, Fremantle",
+   "source": "National Trust WA register (FRE04T); freotopia.org; fremantle.wa.gov.au",
+   "reason": "Well documented and alive (independent 2023 arborist report, active 2024 council protection dispute), but stands in the front garden of Cranworth Villa, a private residential property (now flanked by a commercial chemist building). Hard rule on private land: front gardens and private houses' grounds stay out whatever the register says, however fine the tree. Blocked on access, not on any factual doubt."
+  }
+ ]
+}
