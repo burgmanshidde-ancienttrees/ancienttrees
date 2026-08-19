@@ -57,8 +57,23 @@ on:
     # Cron reliability is NOT the reason for any of this and never was; all 12
     # knocks measured on 2026-08-16 fired on schedule, which retires the older
     # note in this file about GitHub dropping 5-7 of 9.
-    - cron: "0 20,23 * * *"
-    - cron: "0 2,5,8,11 * * *"
+    # 2026-08-18, Hidde: "deze week ben ik van plan vooral aan de app te werken
+    # en zelf weinig te initieren rondom data ophalen - zullen we meer runs
+    # laten starten in github om wel genoeg steden binnen te laten komen?"
+    #
+    # NINE knocks, every two hours from 18:00 to 10:00 UTC, still capped at 120
+    # minutes each. The reason this is safe THIS WEEK and not in general: the
+    # constraint on usage has never been the ceiling, it has been the runs
+    # stalling. Measured the night of 08-17/18: four runs, 68 minutes used of a
+    # possible 720, three of them producing nothing. So the ceiling is
+    # theoretical and more knocks mainly buys more chances at a window that
+    # works. What makes it safe is that he is not competing for the window
+    # himself this week; the moment he is back on heavy sessions this drops
+    # back to six, which is the line below.
+    #     six-knock line to restore:  - cron: "0 20,23 * * *"
+    #                                 - cron: "0 2,5,8,11 * * *"
+    - cron: "0 18,20,22 * * *"
+    - cron: "0 0,2,4,6,8,10 * * *"
   workflow_dispatch: {}
 
 permissions:
