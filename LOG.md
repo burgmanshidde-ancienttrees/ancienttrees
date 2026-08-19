@@ -12,6 +12,59 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-19 (session, continued) - Ottawa opened, 8 trees, one bridge-claim trap caught
+
+Continued down the ladder after Hawaii. `city_queue.py --next` still showed
+Bari on top (deprioritized, see above) and most of Hidde's 17 named cities
+already opened by earlier sessions today. Picked **Ottawa** (rank 49, not one
+of the 17 but carrying 119 scouted register candidates already sitting in
+`data/research/ottawa-register-candidates.json`), which fits "open it from a
+register" under the 2026-08-19 ruling even though it wasn't named outright.
+
+The register (Canada's National Capital Commission, "A Living Legacy:
+Remarkable Trees of Canada's Capital", Open Government Licence Canada v2.0,
+already cleared in OPEN_DATA_SURVEY.md) is the richest one scouted so far:
+real per-tree descriptive prose, not just a data table. Grouped its 114
+entries by distance and found 8 within half a kilometre of Parliament Hill,
+across Confederation Square, Confederation Park and Major's Hill Park, a
+genuinely tight downtown cluster. Claimed Ottawa, dispatched a hand-built
+verify brief against the register plus independent sources for each tree.
+
+**The pass caught a real bridge-claim trap.** The register's own description
+of "The Response" linden mentions, in the very next sentence, that the
+National War Memorial beside it ("The Response" is the memorial's formal
+name) was unveiled in 1939 by King George VI. Nothing says the tree itself
+was planted then; the pass confirmed independently that "The Response" names
+the memorial, not the tree, and shipped the tree's age as undocumented rather
+than inheriting the monument's date. Three other trees (a linden pair and a
+horse chestnut) carry a genuine circa-1900 estimate tied to William Saunders'
+Central Experimental Farm nursery, independently corroborated as a real
+mechanism, carried forward with the register's own "likely"/"circa" hedging
+intact rather than sharpened. A Serbian spruce trio ships as one entry (three
+trunks, one place to stand) per the ensemble rule.
+
+Fixed three species names at merge to match the corpus's existing canonical
+common names (Small-leaved Lime, Large-leaved Lime, Horse Chestnut) that the
+write pass correctly flagged rather than silently using non-canonical ones.
+Since three trees tie on the same age estimate, set `oldest_tree_id`
+explicitly to one of them and had the question page state the tie honestly
+rather than picking a false winner.
+
+`npm --prefix site run build` clean (1922 pages), `preflight.py` clean (143
+cities), `superlatives.py` clean (414 claims, no collisions). Same
+shallow-checkout `qa.py` sitemap-lastmod note as the Hawaii entry below,
+environmental to this sandbox, not this change. Ran the free
+`photo_hunt.py --recheck` sweep (candidates found for 3 of 8), nothing
+judged. `tree_index.py` refreshed.
+
+| Pass | Trees | Cost |
+|---|---:|---:|
+| Ottawa verify | 8 | 100k |
+| Ottawa write | 8 | 46k |
+
+Released the Ottawa claim. Ottawa is now 8 of its 10-tree target. Continuing
+down the ladder.
+
 ## 2026-08-19 (session) - Hawaii (the Big Island) opened at Kalopa State Park, 6 trees
 
 Visits (7-day): 336 visits, 524 views, trending up (67 on 08-18, 37 so far on
