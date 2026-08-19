@@ -13,6 +13,89 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-08-19
+
+Reviewed since the last review commit (`8ca5ccd`, 2026-08-18 07:07 UTC): 75
+commits to `328879f`, roughly a day and a half spanning the tail of a
+research/product session (Dutch national register import, Amsterdam/The
+Hague/Leiden batches, the paywall copy, saved-trees-to-account, walking
+routes leaving the web) and a morning largely spent on the iOS app and on
+CITY_QUEUE.md's targets and ordering (three corrections in one morning,
+recorded in DECISIONS.md 2026-08-19). Ran `python3 scripts/qa.py` (2113
+pages, clean) and `python3 scripts/superlatives.py` (395 claims, no
+collisions) against the built site.
+
+**WARN — `scripts/city_queue.py --next`'s STAGE 1 header claims Hidde
+authorized from-zero web research for 181 cities; he named 17.** The command
+is the one `nightly.yml` tells every run to use for city order
+(`.github/workflows/nightly.yml:232`). Its printed header reads: "STAGE 1,
+OPEN THE UNOPENED: every ranked city with no trees yet, to 10, as fast as
+they go... A register is NOT required here; he named these cities, which is
+what rule 1(d) asks for before from-zero research" (`scripts/city_queue.py`
+lines 414-417, mirroring the code comment at lines 390-403). The list under
+that header is `s1 = [c for c in doc["cities"] if c.get("rank") and not
+c.get("trees", 0)]`, i.e. every ranked city with zero trees, currently 181 of
+them, printed to 40. CITY_QUEUE.md itself gets this right: Hidde named a
+specific 17 ("Seattle, Dallas, Houston, Cologne, Perth, Sydney, Las Vegas,
+Frankfurt, Bilbao, Dubai, Kansas City, Mexico City, Vancouver, Manchester,
+Taipei, Buenos Aires and Hawaii") and the file scopes "from-zero web research
+is ON" to "these". The script generalised that named list into "every city
+with no trees" and kept the sentence saying he named them. Running the
+command today, the STAGE 1 list includes Bari, Girona, Chiang Mai, Jerusalem,
+Asheville, Hamburg, Bali, Santorini, Edmonton, Turku, Winnipeg, Canberra,
+Tampere, Pisa, Leipzig, Taipei, Salamanca, Hiroshima, Adelaide, San
+Francisco, Luang Prabang, Oahu and Buenos Aires alongside the 17 he actually
+named, all under the same "he named these cities" line.
+
+This is exactly the failure mode CLAUDE.md's rule 1(d) exists to prevent
+("From-zero web research on a city is off unless Hidde asks for that city by
+name: Baarn cost 556k tokens across three passes for zero trees"), and the
+tool's own most prominent output now reads as blanket permission for it. The
+script does partially self-correct 30 lines later, under "WHAT YOU CAN
+ACTUALLY MOVE": "Everything else on the lists above needs from-zero web
+research, which is OFF unless Hidde names the city" — so a run that reads the
+whole output would find the correct rule, but the STAGE 1 header and the
+narrower footer directly contradict each other in one command's output, and
+a run skimming for "what's next" meets the wrong one first. No run has acted
+on the wider list yet: the only city work claimed or shipped this window
+(Sydney, Las Vegas, Frankfurt, Perth) is inside Hidde's actual 17. Fix is
+mechanical: either print only the named 17 under the "he named these" claim,
+or drop that claim from the general unopened-list header and let the
+"WHAT YOU CAN ACTUALLY MOVE" section carry the rule 1(d) boundary alone.
+
+**Nothing else found at BLOCKER or WARN.** Spot-checked and clean: the
+Dutch national register import (`data/registers/netherlands-lrmb.json`,
+16,094 trees) carries the licence correction and Hidde's written permission
+recorded in OPEN_DATA_SURVEY.md before any tree shipped; the Amsterdam,
+Leiden and The Hague batches drawn from it (ams_021-029, leiden and
+the-hague growth) carry `verified_sources` naming both the register entry
+and the Amsterdam booklet, honest `access` lines, and no em dashes or bridge
+claims; `location_precision: "approximate"` on The Hague's four register-only
+trees (hag_001/002/003/005) renders the "pin approximate" chip on their tree
+pages, confirmed on `koekamp-oak.html`. The paywall copy recorded in
+DECISIONS.md 2026-08-18 is not live on the site (no "19.95" or price string
+found anywhere in `site/dist`, per CLAUDE.md's "do not put the price on the
+website until he says it goes live"). The walks-leave-the-web change
+(`810c4af`) is consistent end to end: no route capsule or walk picker in the
+built city pages, one "Walking routes, in the app" pill wired to `/app` with
+`data-ev="walks-app"`, and `/api/walks.json` serves the same data to a future
+app client rather than nothing, matching the same-day "gooi de info niet weg"
+instruction. `data/city-queue.json` targets are clean, all 10/20/30, no
+leftover 50s from the ladder that was killed mid-session. The nightly
+cron change (`f81c294`) is exactly nine knocks (3 + 6) matching DECISIONS.md
+2026-08-19's "every two hours from 18:00 to 10:00 UTC" and its six-knock
+restore line is left in a comment. `Jerusalem` appearing in the unopened-city
+list is not itself a violation of the 2026-08-16 "out of focus" ruling: that
+ruling's own text says the queue still ranks those cities and only
+`scout_next.py`'s register-scouting `--target` is gated on it; nothing reads
+`out_of_focus` from `city_queue.py`. The 2026-08-18 WARN (Naples nap_018-020
+missing pin provenance, Caserta cas_013/014 pin drift from the cited
+register point) is unchanged this window, so it is not restated here; it
+remains open rung-3 work. No new BLOCKER; REVIEW.md's WARN log otherwise
+matches `health.py`'s read of it.
+
+---
+
 ## 2026-08-18
 
 Reviewed since the last review commit (`04097cc`, 2026-08-17 07:18 UTC): 120
