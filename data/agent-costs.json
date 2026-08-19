@@ -2537,6 +2537,24 @@
         "note": "6 Kalopa trees, one park cluster; register heights excluded per verify, no ages and no best_time anywhere",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "Ottawa",
+        "kind": "verify",
+        "tokens": 100000,
+        "trees": 8,
+        "note": "NCC register cluster (Confederation Sq/Park, Major's Hill Park); caught a bridge-claim trap on the Response Linden (1939 memorial date, not the tree)",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "Ottawa",
+        "kind": "write",
+        "tokens": 46000,
+        "trees": 8,
+        "note": "8 NCC-register trees, one context, 3 given best_time",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }

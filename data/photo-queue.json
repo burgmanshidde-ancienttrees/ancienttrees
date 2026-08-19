@@ -31346,6 +31346,140 @@
      "obs_location": "20.0401341226,-155.4409427689"
     }
    ]
+  },
+  "ott_001": {
+   "city": "Ottawa",
+   "name": "The Response Linden",
+   "checked": "2026-08-19",
+   "sweep": 5,
+   "candidates": []
+  },
+  "ott_002": {
+   "city": "Ottawa",
+   "name": "The Vitifolia Linden (west of the pair)",
+   "checked": "2026-08-19",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "iNat obs 170753562 (Tilia americana)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/296206701/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/170753562",
+     "licence": "CC BY",
+     "author": "(c) Adriana Nelly Correa Sandoval, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "45.4267383333,-75.6974116667"
+    },
+    {
+     "title": "iNat obs 170753562 (Tilia americana)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/296206821/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/170753562",
+     "licence": "CC BY",
+     "author": "(c) Adriana Nelly Correa Sandoval, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "45.4267383333,-75.6974116667"
+    }
+   ]
+  },
+  "ott_003": {
+   "city": "Ottawa",
+   "name": "The Vitifolia Linden (east of the pair)",
+   "checked": "2026-08-19",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "iNat obs 170753562 (Tilia americana)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/296206701/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/170753562",
+     "licence": "CC BY",
+     "author": "(c) Adriana Nelly Correa Sandoval, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "45.4267383333,-75.6974116667"
+    },
+    {
+     "title": "iNat obs 170753562 (Tilia americana)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/296206821/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/170753562",
+     "licence": "CC BY",
+     "author": "(c) Adriana Nelly Correa Sandoval, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "45.4267383333,-75.6974116667"
+    }
+   ]
+  },
+  "ott_004": {
+   "city": "Ottawa",
+   "name": "The Yellow-wood of Major's Hill Park",
+   "checked": "2026-08-19",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "iNat obs 121738621 (Cladrastis kentukea)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/206040580/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/121738621",
+     "licence": "CC BY-SA",
+     "author": "(c) Andy, some rights reserved (CC BY-SA)",
+     "source": "inaturalist",
+     "obs_location": "45.4272962,-75.6964251997"
+    },
+    {
+     "title": "iNat obs 121738621 (Cladrastis kentukea)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/206040600/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/121738621",
+     "licence": "CC BY-SA",
+     "author": "(c) Andy, some rights reserved (CC BY-SA)",
+     "source": "inaturalist",
+     "obs_location": "45.4272962,-75.6964251997"
+    }
+   ]
+  },
+  "ott_005": {
+   "city": "Ottawa",
+   "name": "The Serbian Spruce Trio",
+   "checked": "2026-08-19",
+   "sweep": 5,
+   "candidates": []
+  },
+  "ott_006": {
+   "city": "Ottawa",
+   "name": "The Mackenzie King Pear",
+   "checked": "2026-08-19",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Alexander Mackenzie Headshot.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Alexander_Mackenzie_Headshot.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Alexander_Mackenzie_Headshot.jpg",
+     "licence": "Public domain",
+     "author": "Unknown authorUnknown author",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Alexander Mackenzie (politician) Category:PD Canada Category:PD US expired Category:Template Unknown (author)"
+    },
+    {
+     "title": "File:Mackenzie Bowell.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/02/Mackenzie_Bowell.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Mackenzie_Bowell.jpg",
+     "licence": "Public domain",
+     "author": "",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Files with no machine-readable author Category:Mackenzie Bowell Category:Media lacking author information Category:PD-old missing SDC copyright status Category:PD Canada"
+    }
+   ]
+  },
+  "ott_007": {
+   "city": "Ottawa",
+   "name": "The Ottawa Improvement Commission Horse Chestnut",
+   "checked": "2026-08-19",
+   "sweep": 5,
+   "candidates": []
+  },
+  "ott_008": {
+   "city": "Ottawa",
+   "name": "The Tulip Season Willow",
+   "checked": "2026-08-19",
+   "sweep": 5,
+   "candidates": []
   }
  },
  "notes": [

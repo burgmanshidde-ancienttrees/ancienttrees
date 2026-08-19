@@ -10,6 +10,17 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-19 - Ottawa: opened, 8 trees, all flagged (single-sourced tree-specific facts), 8 photos missing
+
+New city, Confederation Square / Confederation Park / Major's Hill Park
+cluster from the NCC's "A Living Legacy" register. All 8 `curation_status:
+flagged` and `location_precision: confirmed` (tree-level register
+coordinates, not grid-rounded). Caught and did not publish a bridge claim
+(the National War Memorial's 1939 unveiling date almost inherited onto the
+adjacent linden). Three trees share one circa-1900 age estimate from a single
+document; the question page states the tie rather than picking a winner.
+Photos: 0 of 8, API sweep queued candidates for 3, none judged.
+
 ## 2026-08-19 - Hawaii (the Big Island): opened, 6 trees, 0 flagged as unusable, 6 photos missing
 
 New city, Kalopa Native Forest State Park cluster on the Hamakua coast (a
