@@ -174,46 +174,36 @@ def near(pts, lat, lng, km=5.0):
 
 
 def target_for(demand, measured, impressions=0, travel=0):
-    """How far a city goes. RAISED 2026-08-19 on Hidde's ruling.
+    """How far a city goes. Three numbers, and 50 is not one of them.
 
-    His words, the week he moved onto the app and handed the data work to the
-    machine: "Ook wil ik graag prio boven nieuwe steden en tot max 30 dan
-    steden tot 50 te laten groeien." Two changes in one sentence.
+    Hidde, 2026-08-19, correcting the version written an hour earlier: "we
+    willen helemaal geen 50 bomen in bath mss max 20. kunnen we vanaf nu gewoon
+    voor 30 grote bomen streven bij grote stad en bevestigd."
 
-    **The ceiling rises.** A city Google has confirmed now aims at 30 rather
-    than at the old 10/20/30/50 ladder by size, and the ones actually earning
-    impressions go to 50. The old bands were keyed to English Wikipedia
-    pageviews, a proxy this project retired on 2026-08-15 in favour of travel
-    demand, so they were measuring with a ruler nobody uses any more.
+        not confirmed by Search Console       10
+        confirmed, ordinary city              20
+        confirmed, big city                   30
 
-    **And deepening now OUTRANKS opening new cities**, which is the reversal of
-    the 2026-08-13 sprint rule ("nothing deepens while it runs"). That rule was
-    right for its moment: pages had to exist before Google could judge them.
-    133 cities later Google has judged plenty of them, and the evidence says
-    depth on a page with demand is worth more than another page with none.
-    The rule lives in CITY_QUEUE.md's order section; this function only sets
-    the number.
+    **The 50 tier is gone entirely**, not narrowed. It survived about an hour
+    and he was right to kill it: thirty remarkable trees is already a lot of
+    city, and a page that needs fifty is a page padded past the point where
+    every entry deserves its spot. Exclusivity is the product (CLAUDE.md), so a
+    higher ceiling buys nothing and risks the one thing that makes collecting
+    work.
 
-    Unconfirmed cities still stop at 10. That half is unchanged and it is the
-    load-bearing half: a city nobody searches for does not earn thirty trees,
-    and the 80/20 rule still ends any city the moment its next tree gets hard
-    to find. A target is a ceiling and a stopping point, never a quota, and the
-    floor stays four verified trees or no page.
+    The 20/30 split is city size, and size is travel demand, the term the queue
+    already ranks by. Bath is the worked example he named: it ranks well, which
+    is why the impressions-only version handed it 50, but it is a small city and
+    tops out at 20. Rome and Amsterdam carry 30.
+
+    Unchanged and load-bearing: an unconfirmed city stops at 10, the floor is
+    four verified trees or no page, and the 80/20 rule ends any city the moment
+    its next tree gets hard to find. A target is a ceiling and a stopping point,
+    never a quota. Cadiz at 5 is finished work.
     """
     if not measured:
         return 10
-    # 50 needs BOTH proven demand and enough city to hold fifty trees. The first
-    # version of this used impressions alone and handed Dubrovnik (4 trees) and
-    # Bath (5) a target of 50, which is not a ceiling anybody would reach: those
-    # are small places that rank well, not big places. Travel demand is the size
-    # term the queue already ranks by, and 8,000 is roughly its top forty.
-    #
-    # The 80/20 rule still ends any city the moment its next tree gets hard to
-    # find, so an unreachable target was never dangerous, only misleading: a run
-    # reading "Bath 5 to 50" would think there were 45 trees waiting there.
-    if (impressions or 0) >= 50 and (travel or 0) >= 8000:
-        return 50
-    return 30
+    return 30 if (travel or 0) >= 8000 else 20
 
 
 def measure(pts):
