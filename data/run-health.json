@@ -499,6 +499,23 @@
    "cities_touched": 3,
    "trees": 10,
    "logged": true
+  },
+  {
+   "started": "2026-08-19T20:34:29+00:00",
+   "date": "2026-08-19",
+   "run_id": "32299236687",
+   "minutes": 87.3,
+   "minutes_basis": "measured",
+   "turns": 296,
+   "denials": 45,
+   "denials_source": "permission_denials: Bash, Monitor",
+   "ended": "success",
+   "tokens": 80402563,
+   "claims_held": [],
+   "commits": 10,
+   "cities_touched": 4,
+   "trees": 24,
+   "logged": true
   }
  ],
  "schedule_changes": [
