@@ -1,0 +1,96 @@
+{
+ "leads": [
+  {
+   "name": "Heritage Oak Walk, Descanso Gardens",
+   "reason": "Descanso Gardens (1418 Descanso Drive, La Canada Flintridge, paid admission) publicizes five heritage coast live oaks (Quercus agrifolia) aged 300-500 years, with a self-guided map locating each. Good candidate but not pinned this pass: the oaks are described as spread across multiple garden sections (Oak Woodland, Oak Grove, Camellia Forest, California Garden), which risks failing the one-collectible-point test rather than being a compact ensemble like the LA Plaza figs, and no source found gives individual coordinates or names for the five trees. The gardens own 24MB visitor map PDF (descansogardens.org/wp-content/uploads/2023/09/descanso-map.pdf) was downloaded but not machine-readable in this pass (image-heavy). A session with the ability to view the map, or a call/email to the gardens, could pin one or more of the five as a proper cluster.",
+   "sources": [
+    "https://www.hortmag.com/visit-descanso-gardens-to-explore-the-rich-history-of-southern-california",
+    "https://patch.com/california/lacanadaflintridge/heritage-oak-walk-at-descanso-gardens"
+   ]
+  },
+  {
+   "name": "Crystal Springs Heritage Sycamore, Griffith Park",
+   "reason": "A giant native California sycamore (Platanus racemosa) at the Crystal Springs picnic area, designated a City of LA Heritage Tree, believed up to roughly 200 years old. NOT verified this pass because its survival is genuinely in question: the city approved a youth-baseball-fields project in 2014 that called for removing this exact tree, and Friends of Griffith Park filed litigation on 2023-09-14 specifically over its threatened destruction. No source found this pass confirms whether the tree still stands or was removed as part of that project. Do not publish until a fresh search (or a call to Friends of Griffith Park / LA Rec and Parks) confirms current status either way; this is the same shape of trap as the Encino Oak, just unresolved rather than settled.",
+   "sources": [
+    "https://friendsofgriffithpark.org/save-the-sycamore-tree-event-saturday-september-13/",
+    "https://citywatchla.com/index.php/archive/7541-griffith-park-sycamore-tree-protest-100-plus-lawsuit-announced"
+   ]
+  },
+  {
+   "name": "The Queensland Kauri of the Chavez Ravine Arboretum",
+   "species": "Queensland Kauri (Agathis robusta)",
+   "reason": "The arboretum itself was verified as an entry and pulled: 100-plus species across a hillside is a park, not one collectible point with one place to stand. The publishable tree inside it is the kauri, believed the oldest and largest in the United States, and what is missing is its own coordinate. One pass with a source that pins that trunk turns this into a good entry.",
+   "verified_sources": [
+    "https://en.wikipedia.org/wiki/Chavez_Ravine_Arboretum",
+    "http://bigorangelandmarks.blogspot.com/2007/07/no-48-chavez-ravine-arboretum.html"
+   ],
+   "location": {
+    "address": "Chavez Ravine Arboretum, Elysian Park, 1025 Elysian Park Dr, Los Angeles, CA 90012 (just north of Dodger Stadium)",
+    "latitude": 34.083,
+    "longitude": -118.238,
+    "neighbourhood": "Elysian Park"
+   }
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Encino Oak Tree (Lang Oak)",
+   "reason": "DEAD. HCM #24, a Valley Oak (Quercus lobata) estimated 1000+ years old, fell during El Nino storms on 1998-02-07, weakened by bacterial infection. Stump preserved at the site near Ventura Blvd/Louise Ave in Encino. Never ships per hard rule against dead trees.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Encino_Oak_Tree",
+    "https://www.hmdb.org/m.asp?m=165309"
+   ]
+  },
+  {
+   "name": "Anne Frank LA Sapling",
+   "reason": "Not a qualifying tree: a young memorial sapling (grown from chestnuts of the original Amsterdam tree) planted 2024-05-26 in the Pico Union Project community garden. Neither old nor visually spectacular; a two-year-old sapling is not worth crossing town for regardless of its symbolic lineage.",
+   "sources": [
+    "https://annefrankla.org/the-sapling-project"
+   ]
+  },
+  {
+   "name": "Moreton Bay fig pair, \"Balboa Park\"",
+   "reason": "Not an LA candidate: the famous Moreton Bay fig in Balboa Park belongs to Balboa Park in San Diego (Prado area, planted c.1910-1914 for the 1915 exposition), roughly 190 km from Los Angeles, well outside the day-trip boundary. No matching \"Balboa Park\" pair of figs was found in the LA area (checked Anthony C. Beilenson Park/Balboa Park in Encino/Lake Balboa; nothing on record there). The brief candidate appears to be a scouting mix-up between the two same-named parks; recorded here so a future pass does not re-chase it.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Moreton_Bay_Fig_Tree_(Balboa_Park)"
+   ]
+  },
+  {
+   "name": "Old Verdugo oak, Descanso Gardens",
+   "reason": "DEAD. A roughly 400-year-old (at time of 1854 survey) boundary oak of Rancho La Canada, sometimes called a living monument to the old rancho era; PBS SoCal/Lost LA confirms it \"finally succumbed to death by natural causes\" and only a bronze plaque now marks the spot in Descanso Gardens.",
+   "sources": [
+    "https://www.pbssocal.org/shows/lost-la/these-boundary-trees-are-remnants-of-californias-lost-mexican-era-ranchos"
+   ]
+  },
+  {
+   "name": "Lassen Street olive trees",
+   "reason": "Not a collectible point: a linear row of olive trees (Olea europaea) planted 1893 along Lassen St in Chatsworth, stretching across multiple blocks between Topanga Canyon Blvd and Farralone Ave (68 of the original trees reported surviving as of the 2010s). This is a street feature experienced by driving/walking a stretch of road, the same shape as the La Rambla plane trees this project has already ruled out: there is no single obvious place to stand. A designated LA Historic-Cultural Monument, so worth a second look if a single standout specimen within the row is ever identified.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lassen_Street_olive_trees"
+   ]
+  },
+  {
+   "name": "\"Old Glory\" Oak, Pico Canyon Park, Stevenson Ranch",
+   "reason": "Not blocked on evidence, but out of range: a Valley Oak believed 400+ years old, moved and saved from development in 2002, newly designated an LA County Historic Landmark (2024-09-24). Genuinely alive and a strong story. But Stevenson Ranch/Pico Canyon Park sits in the Santa Clarita Valley, well beyond the roughly 30-minute-by-public-transport day-trip boundary from central LA and is not realistically transit-reachable at all. Worth revisiting if this project ever opens a separate Santa Clarita Valley page rather than folding it into Los Angeles.",
+   "sources": [
+    "https://laist.com/news/climate-environment/old-glory-oak-tree-now-a-la-county-historic-landmark"
+   ]
+  },
+  {
+   "name": "El Pino (Bunya Pine, East Los Angeles)",
+   "species": "Bunya Pine (Araucaria bidwillii)",
+   "reason": "Stands in the front yard of a private house. The view-only allowance covers a tree behind an institution's wall, not somebody's home: hard rule 10's home clause does not bend, and the owner never asked to have strangers sent to his corner. Verified, famous and correct in every other respect, which is why it is recorded here in full rather than forgotten.",
+   "verified_sources": [
+    "https://en.wikipedia.org/wiki/El_Pino_(The_Pine_Tree)",
+    "https://lataco.com/el-pino-history",
+    "https://www.theeastsiderla.com/neighborhoods/east_los_angeles/end-of-year-prank-revives-interest-in-east-las-towering-el-pino/article_e5d24e74-4fca-11eb-a5a6-f3f0b5598439.html"
+   ],
+   "location": {
+    "address": "SE corner of Folsom Street and N. Indiana Street, East Los Angeles, CA (Wellington Heights)",
+    "latitude": 34.0432,
+    "longitude": -118.1924,
+    "neighbourhood": "East Los Angeles"
+   }
+  }
+ ]
+}

@@ -1,0 +1,53 @@
+[
+ {
+  "id": "bar_001",
+  "name": "The Ombu of Piazza Umberto I",
+  "species": "Ombu (Phytolacca dioica)",
+  "age_estimate": "roughly 70 years",
+  "age_min": 60,
+  "age_max": 85,
+  "girth_cm": 250,
+  "location": {
+   "address": "Giardini di Piazza Umberto I, Bari",
+   "latitude": 41.12045,
+   "longitude": 16.869717,
+   "neighbourhood": "Murattiano (Piazza Umberto I gardens)"
+  },
+  "verified_sources": [
+   "data/registers/italy-masaf.json (sheet 07/A662/BA/16)",
+   "data/registers/puglia-alberi-monumentali.json (register_id 07/A662/BA/16)",
+   "https://luoghi.italianbotanicalheritage.com/en/the-ombu-tree-in-giardini-di-piazza-umberto-i/",
+   "https://www.ambienteambienti.com/bari-piazza-umberto-salvaguardare-alberi/"
+  ],
+  "access": "Free, public garden, open daily",
+  "transport": "Bari Centrale railway station, about 5 minutes' walk",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Ombu / fitolacca arborea, one of Puglia's official Monumental Trees (Puglia regional register + MASAF national register, same tree, both give girth 250cm). Independently corroborated by italianbotanicalheritage.com, which gives the SAME circumference (8.2 ft = 250cm, a clean cross-check) and height ~6m/20ft, and confirms it stands in the Giardini di Piazza Umberto I. Species arrived in Italy from South American pampas in the mid-19th century as an ornamental import; the garden itself was laid out from two merged 19th-century gardens, redesigned around the 1905 equestrian statue of Umberto I. No source dates THIS specimen's planting, so age is left empty rather than bridging the garden's 1905/19th-century history onto the tree (bridge-claim trap). Phytolacca dioica is fast-growing and soft-wooded, so girth-based age estimation is unreliable for the species; flag age as a reader question rather than guess. A second, separate monumental tree (the 'pianta mangiafumo', Nolina longifolia) stands a few metres away in the same garden bed, delivered as bar_002. Register twin note: this tree appears once in italy-masaf.json and once in puglia-alberi-monumentali.json (same register_id 07/A662/BA/16, same coordinates within 30m) plus once in Wikidata (Q55742460); folded into one entry as instructed. UPDATE: ambienteambienti.com (an urban-decor civic association, UDA/Fondazione Tatarella, in a 2020s letter to Bari's mayor about root/asphalt damage) states the tree 'fu probabilmente piantumato negli anni 50' (was probably planted in the 1950s) - a real source's vague, hedged claim about THIS specimen, not a bridge from the garden's history. Kept broad (age_min 60 / age_max 85) rather than sharpened to a single decade, and the 'probabilmente' hedge is preserved here for the writer. Same article also documents current condition: trunk has tilted seeking light away from nearby holm oaks, root plate damaged by surrounding asphalt, a civic group has asked the comune for a modest (~1000 euro) conservation intervention. This is also independent confirmation the tree was alive and standing as of the article's writing."
+ },
+ {
+  "id": "bar_002",
+  "name": "The Mangiafumo of Piazza Umberto I",
+  "species": "Ponytail Palm / Elephant's Foot (Nolina longifolia)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 300,
+  "location": {
+   "address": "Giardini di Piazza Umberto I, Bari",
+   "latitude": 41.120114,
+   "longitude": 16.869308,
+   "neighbourhood": "Murattiano (Piazza Umberto I gardens)"
+  },
+  "verified_sources": [
+   "data/registers/italy-masaf.json (sheet 08/A662/BA/16)",
+   "data/registers/puglia-alberi-monumentali.json (register_id 08/A662/BA/16)",
+   "https://www.barinedita.it/bari-report-notizie/n3579-dal-faggio-dei-baracconi-alla-quercia-di-macri--ecco-i-74-alberi-monumentali-della-puglia"
+  ],
+  "access": "Free, public garden, open daily",
+  "transport": "Bari Centrale railway station, about 5 minutes' walk",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Locally called 'la mangiafumo' ('the smoke-eater', an Italian folk nickname for Nolina/Beaucarnea species, believed by locals to purify air). Bari's regional/national monumental-tree register (girth 300cm, height 4.5m) is corroborated independently by Barinedita, a Bari news outlet, whose survey of Puglia's 74 official monumental trees names 'la fitolacca arborea e la mangiafumo presenti nei giardini di Piazza Umberto' among Bari's four monumental trees (alongside the Carrassi pine and Carbonara holm oak, this pass's bar_004 and bar_005 candidates). Stands a few metres from bar_001 (the Ombu/Fitolacca) in the same garden bed; register twin, appears once in italy-masaf.json and once in puglia-alberi-monumentali.json (same register_id 08/A662/BA/16), folded into one entry. No age source found; species (a slow-growing caudiciform, native to Mexico/Central America, ornamental import) has no established growth-rate-to-age conversion available to this pass, so age is left empty rather than guessed. Girth alone (300cm) is unusually large for the species, part of why it is designated monumental. It is a smoke-fed evergreen/succulent tree, not deciduous, so no seasonal calendar peak expected."
+ }
+]
