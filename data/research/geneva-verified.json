@@ -1,0 +1,122 @@
+[
+ {
+  "id": "gen_015",
+  "name": "The Plane of the University Garden",
+  "species": "London Plane (Platanus x acerifolia)",
+  "age_estimate": "at least about 150 years",
+  "age_min": 148,
+  "age_max": 230,
+  "girth_cm": 538,
+  "location": {
+   "address": "Promenade des Bastions, standing alone at the entrance facing the university garden",
+   "latitude": 46.1996,
+   "longitude": 6.14514,
+   "neighbourhood": "Bastions"
+  },
+  "verified_sources": [
+   "https://vector.sitg.ge.ch/arcgis/rest/services/SIPV_ICA_ARBRE_ISOLE/FeatureServer/0 (SITG canton register, id_arbre 220263, REMARQUABLE=Autre, observed 2024-10-14)",
+   "http://web.archive.org/web/20250722034140/https://www.tdg.ch/ces-arbres-remarquables-qui-racontent-geneve-462792647437 (Tribune de Genève, city arborist Roger Beer)"
+  ],
+  "access": "Free, open public promenade at any time (same park as gen_001)",
+  "transport": "Central Vieille-Ville/Plainpalais, a few minutes' walk from Bel-Air or Plainpalais tram stops",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "story": "This plane did not grow here. A plaque at its foot records that it was transplanted from the Place des Alpes to the Promenade des Bastions in 1878, and a tree big enough to be worth moving was already a tree when it made the trip. So 1878 is a floor for its age rather than a birthday. How much older it is, nobody has established, and the canton's register carries no planting date at all.\n\nWhat it moved into was the best address in Geneva for a specimen tree. The Bastions served as the city's botanical garden from 1817 until 1904, so a plane arriving in 1878 was being placed by people whose profession was placing plants. The collection later left for the lakeside. The tree stayed, and has outgrown everything the garden left behind.\n\nIt now measures 5.38 metres around and 31 metres tall, under a crown 38 metres across, wider than the tree is high, which is what a plane does when nothing crowds it for a century and a half. The canton's inventory files its development stage as senescent. It stands alone facing the entrance on the university garden side, inside a ring of barriers whose purpose is to stop students chaining bicycles to it, and Geneva's city arborist describes it as looking rather like the king of the courtyard.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  }
+ },
+ {
+  "id": "gen_016",
+  "name": "The Hackberries of Place de l'Université",
+  "species": "Mediterranean Hackberry (Celtis australis)",
+  "age_estimate": "roughly a century old",
+  "age_min": 80,
+  "age_max": 130,
+  "girth_cm": 330,
+  "location": {
+   "address": "Place de l'Université, facing Uni Bastions",
+   "latitude": 46.19859,
+   "longitude": 6.14411,
+   "neighbourhood": "Bastions"
+  },
+  "verified_sources": [
+   "https://vector.sitg.ge.ch/arcgis/rest/services/SIPV_ICA_ARBRE_ISOLE/FeatureServer/0 (SITG canton register, id_arbre 223030, REMARQUABLE=Autre, observed 2024-10-16, vitality Bon)",
+   "http://web.archive.org/web/20250722034140/https://www.tdg.ch/ces-arbres-remarquables-qui-racontent-geneve-462792647437 (Tribune de Genève, city arborist Roger Beer)"
+  ],
+  "access": "Free, open public square at any time",
+  "transport": "Central Vieille-Ville/Plainpalais, a few minutes' walk from Bel-Air or Plainpalais tram stops",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "story": "A fungus is eating these three from the inside, and the city said so itself. In 2020 Geneva's arborist told the Tribune de Genève that the micocouliers de Provence on the Place de l'Université are being hollowed out and risk coming down, which is a candid thing for a municipality to volunteer about trees it has listed as remarkable. The canton's inventory then recorded good vitality at its last field visit in 2024. Both readings can be true of a hollowing tree, which is why these are watched rather than felled.\n\nThere are three of them, standing together facing the entrance of Uni Bastions, close enough to read as one destination and collected here as one; the pin marks the group rather than a particular trunk. At this spot the register measures 3.3 metres of girth and 18 metres of height. They went in during the early 20th century, and the exact year is not recoverable from the record.\n\nMediterranean hackberry is a southern species living at the cool edge of its range in Geneva, which is part of why a set of them at this size is worth the canton's attention. In Provence its wood was the standard material for pitchforks, whip handles and walking sticks, chosen because it bends a long way before it breaks. These three have shaded a century of students crossing the square, and are now being tested from the inside instead.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  }
+ },
+ {
+  "id": "gen_017",
+  "name": "The Oriental Plane of Domaine de Penthes",
+  "species": "Oriental Plane (Platanus orientalis)",
+  "age_estimate": "roughly 120 years",
+  "age_min": 100,
+  "age_max": 150,
+  "girth_cm": 559,
+  "location": {
+   "address": "Domaine de Penthes, Chemin de l'Impératrice 18, Pregny-Chambesy",
+   "latitude": 46.23322,
+   "longitude": 6.14336,
+   "neighbourhood": "Pregny-Chambesy"
+  },
+  "verified_sources": [
+   "https://vector.sitg.ge.ch/arcgis/rest/services/SIPV_ICA_ARBRE_ISOLE/FeatureServer/0 (SITG canton register, id_arbre 177764, REMARQUABLE=Autre, observed date on file, vitality Excellent)",
+   "http://web.archive.org/web/20250722034140/https://www.tdg.ch/ces-arbres-remarquables-qui-racontent-geneve-462792647437 (Tribune de Genève, city arborist Roger Beer)"
+  ],
+  "access": "Free, public garden maintained by the City of Geneva's botanical garden service; the château itself housed the Museum of the Swiss Abroad, which closed in 2022 after the foundation's bankruptcy, but the grounds remain open to the public. Exact daily hours not confirmed in this pass.",
+  "transport": "Bus toward Chambesy/Pregny, or roughly 25 minutes on foot from the botanical garden (same road as gen_011 and gen_013)",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "story": "Geneva has plane trees along half its streets and almost none of the tree they came from. The London plane that lines European cities is a hybrid, and this is the parent that gave it its name and most of its looks: Platanus orientalis, which the city's arborist calls a rare specimen on Genevan soil. It is also the tree the Tribune de Genève picked to open its walking tour of the canton's remarkable trees, which tells you where the professionals would start.\n\nIt stands in the garden of the Château de Penthes above the lake, 5.59 metres around and 20 metres tall, carrying a crown 25 metres wide. The canton's inventory rates its vitality excellent, which is not a given at that size. An arborist puts it at around 120 years and thinks the château's owners planted it, but that is his estimate rather than a record, he gave it in 2020, and no document naming the planting has turned up.\n\nThe grounds are nine hectares, free to walk, and kept by the gardeners of the city's botanical garden. The museum inside the château closed in 2022 when its foundation went bankrupt, and the garden simply carried on without it. Elsewhere on the lawn stands the stump of a giant sequoia that lightning finished in 1993, another of the estate's imported trophies. The plane has had better luck.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  }
+ },
+ {
+  "id": "gen_018",
+  "name": "The Holm Oak of Cimetière des Rois",
+  "species": "Holm Oak (Quercus ilex)",
+  "age_estimate": "roughly 60 to 80 years",
+  "age_min": 55,
+  "age_max": 90,
+  "girth_cm": 264,
+  "location": {
+   "address": "Cimetière des Rois (Cimetière de Plainpalais), at the main entrance",
+   "latitude": 46.202665511170906,
+   "longitude": 6.137656373840929,
+   "neighbourhood": "Plainpalais"
+  },
+  "verified_sources": [
+   "https://vector.sitg.ge.ch/arcgis/rest/services/SIPV_ICA_ARBRE_ISOLE/FeatureServer/0 (SITG canton register, id_arbre 286334, REMARQUABLE=Autre, observed 2012-09-04, vitality Bon)",
+   "http://web.archive.org/web/20250722034140/https://www.tdg.ch/ces-arbres-remarquables-qui-racontent-geneve-462792647437 (Tribune de Genève, city arborist Roger Beer)"
+  ],
+  "access": "Free, public cemetery grounds, open during standard cemetery daylight hours",
+  "transport": "Plainpalais tram stop (lines 12/15), short walk",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "story": "This oak is nearly twice as wide as it is tall. Twelve metres of height, a crown twenty metres across, a trunk 2.64 metres round, and it sits at the main entrance of the Cimetière des Rois, the plot Geneva keeps for the people it wants to remember. Everyone going in or coming out passes under it.\n\nHolm oak is a Mediterranean evergreen and has no obvious business this far north, yet the canton lists two of them as remarkable trees, this one and another in Parc Geisendorf, and the city's arborist rates the pair as equals. Being evergreen it looks the same in February as in July, which at a cemetery gate is closer to a job than a habit.\n\nBehind it lies Jorge Luis Borges, who chose Geneva over Buenos Aires for the end and got a headstone carved with Old English, and somewhere behind it lies John Calvin, who asked in 1564 to be buried without a marker and was obeyed so completely that the stone bearing his initials marks a guess at the spot rather than the spot. A cemetery full of certainties about who is there and vagueness about exactly where.\n\nThe canton's last recorded field visit, in 2012, put the tree in good condition. Its planting is filed only as mid twentieth century, no closer. Which makes this a young tree keeping very old company.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  }
+ }
+]

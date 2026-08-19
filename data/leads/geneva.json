@@ -1,7 +1,28 @@
 {
   "city": "geneva",
-  "leads": [],
+  "leads": [
+    {
+      "reason": "London Plane (Platanus x hispanica), girth 550cm, height 34m, vitality Bon, planted 1920 per register (not a bucket date, real month/day given). SITG id_arbre 178454, situation 'Parc, square, espace vert', coords (46.20757,6.17360), 180m from gen_010 (Great Cedar of Port-Noir, Parc des Eaux-Vives). Reverse-geocodes to 'Plateau de Frontenex', which English Wikipedia's Parc des Eaux Vives article confirms is the upper boundary of that same public park (bounded by Quai Gustave-Ador below and Frontenex plateau above), so the site is almost certainly public and joins the existing gen_009/gen_010/gen_014 cluster there. Not delivered this pass only because no independent tree-specific source (age, history, or a named mention) was found in the ~40 minute window; the general park confirmation is location-only, not species/age corroboration. Worth a second look: search 'plateau de Frontenex platane' or the Ville de Geneve's own 150-arbres guide (https://www.geneve.ch/document/parcs-geneve-guide-arbres-decouvrir), not yet checked.",
+      "species": "Platanus x hispanica",
+      "coordinates": [46.20757, 6.17360]
+    },
+    {
+      "reason": "Pinus nigra subsp. laricio (Corsican Pine), girth 355cm, height 28m, vitality Bon. SITG id_arbre 131168, coords (46.21576,6.11951), 2.63km from centre, situation 'Autre'. Genuinely remarkable species and size but 2.6km out and situation field unclear on public access; not chased this pass.",
+      "species": "Pinus nigra subsp. laricio",
+      "coordinates": [46.21576, 6.11951]
+    },
+    {
+      "reason": "Pinus laricio, girth 397cm, height 30m, vitality Excellent, planted 1866-04-01 (a real dated month, not a 01-01 bucket value, so likely a genuine planting-era record). SITG id_arbre 146414, coords (46.22865,6.13773), only 124m from gen_013 (Service Tree of Chambesy, Route de Pregny). Strong candidate for a future pass: real planting date plus Excellent vitality plus tight cluster fit. Not verified this pass for lack of time; no second source checked yet.",
+      "species": "Pinus laricio",
+      "coordinates": [46.22865, 6.13773]
+    }
+  ],
   "blocked": [
+    {
+      "reason": "Cluster of large, high-girth register trees (Fagus sylvatica f. sylvatica girth 606cm planted 1815-03-01 id 28613; Pinus nigra subsp. laricio girth 675cm planted 1865-03-01 id 157668; Calocedrus decurrens girth 557cm planted 1865-03-01 id 135821; Quercus robur 'Fastigiata' girth 542cm planted 1865-03-01 id 28594; Cedrus atlantica 'Glauca' girth 515cm planted 1864-03-01; several Pinus sylvestris/nigra and a second Fagus) all sitting at roughly 46.233-46.237N, 6.140-6.145E. These carry genuine dated planting years (not 01-01 bucket values) and would be excellent trees, but they reverse-geocode to 'Mission permanente de France, 36 Route de Pregny' and 'Chateau de Pregny, 32 Route de Pregny', which per web search is the historic Rothschild 'Terre de Pregny' estate, now used as a diplomatic mission, roughly 400-600m north of the actually-public Parc de l'Imperatrice (which is a small, ~30,000 sqm domain per Wikipedia and does not extend this far). Access to a diplomatic mission's private grounds cannot be assumed open under hard rule 10. Do not publish any of this cluster without direct evidence the specific grounds are open to the public (a signposted public path through the estate, published visiting hours, etc.); none was found this pass.",
+      "species": "mixed (Fagus sylvatica, Pinus nigra, Calocedrus decurrens, Quercus robur, Cedrus atlantica)",
+      "coordinates": [46.2346, 6.1420]
+    },
     {
       "reason": "Likely duplicate of already-published gen_002 (Cedars of Parc Beaulieu). SITG register entry: Cedrus libani, circumference 680cm, planted 1735-01-01, vitality Bon, at (46.21416,6.13736), 0.9km from centre. Within about 70m of gen_002's published coordinates (46.2147406,6.1377497), and 1735 matches the Beaulieu cedars' documented planting story exactly (Bernard de Jussieu seed gift to Baron de Sellon). Almost certainly one of the two Beaulieu cedars already on the site, not a new tree. Do not republish without checking gen_002's story against this specific register id first.",
       "species": "Cedrus libani",

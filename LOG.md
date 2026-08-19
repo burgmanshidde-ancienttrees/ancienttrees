@@ -12,6 +12,51 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-19 (night run) - Geneva deepened to 18, Bari's two written stories held off the shelf
+
+Visits (7-day): 334 visits, 521 views; 2026-08-19 alone 35/57. Ran health.py
+(rung 2 clear, 0 BLOCKER), checked REVIEW.md's newest WARN (city_queue.py's
+STAGE 1 header) and the prior 2026-08-18 WARN (Naples/Caserta pin
+provenance): both already fixed by earlier commits today (33f6e21 and the
+city_queue.py star-marker fix), nothing left to do at rung 2 or 3. Reader
+submissions: all 6 in Supabase already in data/submissions-processed.json,
+nothing new.
+
+Rung 4: `prepare.py`'s shelf had Geneva's register file (122 SITG candidates)
+staged and Bari's two verified-but-unwritten trees (bar_001, bar_002)
+waiting on a writer. Claimed Geneva, dispatched a verify pass against the
+canton's own remarkable-tree register (it carries a vitality field, one of
+the few that do): **4 new trees, gen_015 to gen_018**, filtering out 14
+near-duplicates of already-published trees and catching a placeholder-date
+trap (the register buckets unknown plantings under 1912-01-01 or
+1962-01-01, which would have read as a real year). One likely-private
+diplomatic-estate cluster (Rothschild's former Terre de Pregny) went to
+blocked rather than shipped. Geneva is now 18 of its 20-tree target.
+
+Wrote stories for both Geneva's 4 and Bari's 2 in one batch (BRIEF_WRITING.md
+rules; the writer caught two species-name mismatches, Geneva's plane and
+hackberry entries used non-canonical common names, fixed at merge before
+build). Merged and published Geneva's 4. **Held Bari's 2 back**: below the
+four-tree floor on their own, and LOG.md's own second-round entry today
+records Hidde saying explicitly he meant big-name cities when picking the
+next unopened city, not Bari ("ik zat meer aan sydney enzo te denken niet
+bari"), and killing an earlier Bari pass for exactly that reason. Continuing
+to open Bari today would have repeated a correction from earlier the same
+session. The two written stories stay in data/research/bari-verified.json,
+nothing thrown away, ready the day either the floor is cleared or Hidde
+names Bari himself.
+
+`npm --prefix site ci && npm --prefix site run build` clean (1893 pages),
+`preflight.py` clean (141 cities), `qa.py` clean (2207 pages), `superlatives.py`
+clean (411 claims, no collisions).
+
+| Pass | Trees | Cost |
+|---|---:|---:|
+| Geneva verify | 4 | 172k |
+| Bari+Geneva write | 4 merged (+2 held) | 110k |
+
+Released the Geneva claim. Continuing down the ladder.
+
 ## 2026-08-19 (session, second round) - Four more off the top, and a correction to how I picked them
 
 Hidde asked for the next four cities still at zero. I took them by queue rank

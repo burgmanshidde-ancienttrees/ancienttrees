@@ -2477,6 +2477,20 @@
     "tokens": 143682,
     "trees": 20,
     "note": "20 stories across three new cities, 209-228 words; the writer caught two species-name collisions it was not allowed to fix and handed them to the merge, which is the division of labour working"
+   },
+   {
+    "target": "geneva",
+    "kind": "verify",
+    "tokens": 171586,
+    "trees": 4,
+    "note": "register-backed deepen pass on the SITG canton register (14 near-duplicates of already-published trees filtered out of 122 candidates); caught a placeholder-date trap (1912-01-01/1962-01-01 era buckets) and a likely-private diplomatic-estate cluster, both recorded as leads/blocked rather than shipped"
+   },
+   {
+    "target": "bari+geneva",
+    "kind": "write",
+    "tokens": 110009,
+    "trees": 4,
+    "note": "6 stories written (2 Bari, 4 Geneva) but only Geneva's 4 merged; Bari held back below the 4-tree floor and because Hidde said today he meant big-name cities, not Bari, so its 2 written stories stay on the shelf unmerged"
    }
   ]
  }
