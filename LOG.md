@@ -12,6 +12,16 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-19 (session) - The phone header: one control, and the stale CSS that was un-centring it
+
+Hidde on the mobile nav: the hamburger was not centred and the bar looked odd, so put everything under it.
+
+**The centring was not a design slip, it was a duplicate.** The `@media (max-width: 800px)` block describing the mobile header existed THREE times in style.css. The first styled the summary as a 32px circle with the icon flex-centred; the two later copies re-declared it as a padded inline box with `display: inline` on the icon, and being later they won. An inline SVG sits on the text baseline, so it hung high and left inside the circle. The duplicates are deleted, the header is described in one place, and the icon now measures dead centre (dx 0, dy 0 in a 40px button, measured at 375px).
+
+**And the bar is now the mark plus one button.** Map, the account avatar and the "Get the app" pill carry `.only-desktop` and reappear inside the panel: Map first under Browse, a Yours group with saved trees and account, then Suggest a tree, then the CTA as a full-width green button. Desktop is untouched. Two side effects worth naming: this reverses the earlier rule that Map stays a persistent bar item at every width (it is first in the panel instead, which is what that rule was protecting), and the wordmark comes back below 480px, because the bar now wants ~220px of a 375px screen instead of 412px. Recorded in DECISIONS.md.
+
+Verified with eyes at 375px, 768px and 1280px against the real stylesheet: nothing runs off the right edge, the panel is 351px wide on a phone and caps at 352px anchored right on a tablet, and it scrolls rather than running off a short screen.
+
 ## 2026-08-19 (session) - The night shift had been dead for 27 hours, and the queue got its new shape
 
 **Start with the thing that was actually broken, because it explains the quiet.** Between 08-18 05:19 and this morning, **eight consecutive night runs failed**, each after 30 to 40 seconds, one turn, no commits. That is the usage-limit signature this file already describes ("attempts that hit the usage limit die in seconds and cost nothing"), and it means the machine did nothing at all for 27 hours while `run-health.json` recorded eight tidy "success" rows. Hidde confirmed the weekly limit had run out and has since reset. Worth saying plainly where it went: 08-16 and 08-17 spent 2.3M and 3.0M tokens, most of it on the five island pages, which was the work he asked for and was also what ate the week.

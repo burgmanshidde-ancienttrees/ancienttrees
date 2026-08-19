@@ -89,18 +89,36 @@ const year = new Date().getFullYear();
 <body>
 <header class="bar">
   <a href="/" class="bar-logo"><svg width="25" height="22" viewBox="0 0 68 64" fill="none" aria-hidden="true"><ellipse cx="34" cy="24" rx="24" ry="16" fill="#3A5222"/><circle cx="20" cy="23" r="11" fill="#4A6B2A"/><circle cx="48" cy="23" r="11" fill="#4A6B2A"/><circle cx="34" cy="12" r="11" fill="#5B7F35"/><circle cx="25" cy="15" r="7" fill="#86A34D"/><circle cx="51" cy="14" r="3.2" fill="#D9A13F"/><path d="M31 62 h5.6 l-1.2-16 c2.6-1.8 5.4-4.4 7-6.6 l-1.6-1.4 c-1.8 2-4 3.8-5.6 4.6 l-.3-5.8 h-2 l-.4 8.4 c-1.6-.9-3.6-2.7-5-4.4 l-1.6 1.4 c1.8 2.5 4.4 4.9 6.4 6z" fill="#6B4F33"/></svg><span>Ancient Trees</span></a>
+  {/* Below 800px the bar is the mark and one menu button, and EVERYTHING lives
+      in the panel: Map, the browse facets, the account and the app CTA (Hidde,
+      2026-08-19: "gooi dan alles onder het hamburger menu"). That is the
+      convention rather than an idea of ours: AllTrails, Airbnb and Booking all
+      keep a single control on the right of a phone header and put every
+      destination, the account and the primary CTA inside the panel. Three
+      controls crowded next to a wordmark is what made this bar read as odd.
+      The only-mobile/only-desktop pair is what swaps them; nothing is dropped
+      at either width. */}
   <nav class="bar-links">
-    <a href="/explore" class="bar-map">Map</a>
+    <a href="/explore" class="bar-map only-desktop">Map</a>
     <details class="nav-drop">
       <summary aria-label="Menu"><span class="sum-desktop">Explore</span><span class="sum-mobile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span></summary>
       <div class="nav-drop-menu">
         <p class="nav-group">Browse</p>
+        <a href="/explore" class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6.5v13L9 17l6 2.5 6-2.5v-13L15 6.5 9 4z"/><path d="M9 4v13M15 6.5v13"/></svg></span>Map</a>
         <a href="/cities"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l5-3v16M9 21V10l6 2v9M15 21V7l5 2v12"/><path d="M2 21h20"/></svg></span>Cities</a>
         <a href="/countries"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 3 2.6 15 0 18M12 3c-2.6 3-2.6 15 0 18"/></svg></span>Countries</a>
         <a href="/species"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20C6 10 12 4 20 4c0 8-6 14-16 16z"/><path d="M4 20c4-6 8-9 12-11"/></svg></span>Species</a>
         <a href="/parks"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M12 12c0-4 3-7 7-7 0 4-3 7-7 7z"/><path d="M12 12c0-3.5-2.5-6-6-6 0 3.5 2.5 6 6 6z"/></svg></span>Parks</a>
         <a href="/collections"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12a1 1 0 0 1 1 1v16l-7-4-7 4V5a1 1 0 0 1 1-1z"/></svg></span>Collections</a>
+        {AUTH_ENABLED && (
+          <Fragment>
+            <p class="nav-group only-mobile">Yours</p>
+            <a href="/account#saved" class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C6.5 16.3 3.5 13 3.5 9.6 3.5 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.5 2 4.5 4.6 0 3.4-3 6.7-8.5 11.4z"/></svg></span><span>Saved trees</span></a>
+            <a href="/account" class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span><span>Your account</span></a>
+          </Fragment>
+        )}
         <a href="/contribute" class="nav-aside"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>Suggest a tree</a>
+        <a href="/app" class="nav-cta only-mobile" data-ev="app-cta">Get the app</a>
       </div>
     </details>
     {/* What is YOURS hangs off the account, not off Explore (Hidde,
@@ -109,16 +127,16 @@ const year = new Date().getFullYear();
         the saved list behind the avatar, because Explore is where you browse
         the site and the account is where you find your own things. */}
     {AUTH_ENABLED && (
-      <details class="nav-drop nav-acct">
+      <details class="nav-drop nav-acct only-desktop">
         <summary id="bar-login" aria-label="Account"><span class="mi acct-avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span><span class="acct-word">Account</span></summary>
         <div class="nav-drop-menu">
           <p class="nav-group">Yours</p>
           <a href="/account#saved"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C6.5 16.3 3.5 13 3.5 9.6 3.5 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.5 2 4.5 4.6 0 3.4-3 6.7-8.5 11.4z"/></svg></span>Saved trees</a>
-          <a href="/account"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span>Your account</a>
+          <a href="/account"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span><span>Your account</span></a>
         </div>
       </details>
     )}
-    <a href="/app" class="bar-cta" data-ev="app-cta">Get the app</a>
+    <a href="/app" class="bar-cta only-desktop" data-ev="app-cta">Get the app</a>
   </nav>
 </header>
 <slot />
