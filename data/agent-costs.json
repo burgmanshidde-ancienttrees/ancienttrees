@@ -2491,6 +2491,20 @@
     "tokens": 110009,
     "trees": 4,
     "note": "6 stories written (2 Bari, 4 Geneva) but only Geneva's 4 merged; Bari held back below the 4-tree floor and because Hidde said today he meant big-name cities, not Bari, so its 2 written stories stay on the shelf unmerged"
+   },
+   {
+    "target": "vienna",
+    "kind": "verify",
+    "tokens": 202377,
+    "trees": 2,
+    "note": "Wien Naturdenkmale register had 334 unmined candidates but most near-centre ones were private courtyards or villa gardens (confirmed via de.wikipedia district Naturdenkmaler lists); only 2 of ~10 checked had a clean public-access signal, an expensive ratio worth remembering before dispatching Vienna again"
+   },
+   {
+    "target": "vienna",
+    "kind": "write",
+    "tokens": 81520,
+    "trees": 2,
+    "note": "2-tree batch, ~40k/tree against the ~12k a 15-20 tree batch gets; also caught a species-binomial mismatch (Platanus x hybrida vs the corpus's x acerifolia) and a superlative collision with vie_013's thickest-in-park claim, avoided in the prose rather than the data"
    }
   ]
  }

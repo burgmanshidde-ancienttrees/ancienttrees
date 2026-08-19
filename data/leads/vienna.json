@@ -17,7 +17,7 @@
         "girth_cm": 597,
         "offset_m": 5.2
       },
-      "why_not_yet": "Rathauspark's second-thickest tree at 597 cm, but it is a London plane in a park that already publishes one (vie_006) plus the fern-leaved beech added this pass. Three planes in one park is padding."
+      "why_not_yet": "Rathauspark's second-thickest tree at 597 cm, but it is a London plane in a park that already publishes one (vie_006) plus the fern-leaved beech added this pass. Three planes in one park is padding. UPDATE (verify pass, 2026-08-19): verified and delivered to data/research/vienna-verified.json as vie_026, despite the padding concern noted above, since it is the strongest remaining candidate in the park and the age caveat is recorded in verify_notes. The sibling 3257650 was left here deliberately to avoid a third plane in the same park."
     },
     {
       "register_id": 3257650,
@@ -448,6 +448,66 @@
       "longitude": null,
       "baumkataster": null,
       "why_not_yet": "Checked this pass (verify session, 2026-08-09) as a possible third cluster around the published vie_009 (Giant Sequoias of Pötzleinsdorfer Schlosspark). All addresses found (Khevenhuellerstrasse, Franz-Barwig-Weg, Glanzinggasse, Wilbrandtgasse, Hackenbergweg) read as private villa streets in this part of Doebling/Waehring, typical of Vienna's 18th/19th-district garden-villa belt; none checked individually for public access, but the pattern strongly suggests private gardens rather than a walkable public cluster. Not pursued further given the time budget; a future pass could still check each address before writing this off completely."
+    },
+    {
+      "register_id": 3257478,
+      "name": "Platane",
+      "species": "Platanus x hybrida",
+      "place": "13., Huegelgasse, vor Nr. 7",
+      "latitude": 48.190158,
+      "longitude": 16.285557,
+      "baumkataster": null,
+      "why_not_yet": "UPDATE (verify pass, 2026-08-19): verified and delivered to data/research/vienna-verified.json as vie_027. Kept here for completeness and traceability."
+    },
+    {
+      "register_id": 3257507,
+      "name": "Morgenlaendische Platane",
+      "species": "Platanus orientalis",
+      "place": "13., Wattmanngasse 8",
+      "latitude": 48.183983,
+      "longitude": 16.297178,
+      "baumkataster": null,
+      "why_not_yet": "Checked this pass (verify session, 2026-08-19): a strong specimen, girth 4.2m, height 24m, crown 17m, which de.wikipedia.org Liste der Naturdenkmaeler in Wien/Hietzing dates to the second half of the 18th century (a real source estimate, not derived by us). Only 280m from the published Schoenbrunn cluster (vie_004/020/021/022), so geographically ideal. Held back on access alone: the Wikipedia description gives no courtyard note (unlike several other entries in the same list, which explicitly say so when private), but it also gives no street-facing note either, unlike the Huegelgasse plane delivered this pass which is explicitly 'vor Nr. 7'. Overpass shows only an ordinary villa building at that address, no park or public-access tag. Genuinely the best undelivered lead in Vienna right now; a future pass should try a Vienna tree-walk blog or the Bezirksmuseum Hietzing before writing it off."
+    },
+    {
+      "register_id": 3257483,
+      "name": "Ginkgo",
+      "species": "Ginkgo biloba",
+      "place": "13., Neue-Welt-Gasse 14",
+      "latitude": 48.186606,
+      "longitude": 16.291642,
+      "baumkataster": null,
+      "why_not_yet": "Checked this pass (verify session, 2026-08-19): girth 3m, crown 16m, height about 16m, protected for its size, crown form and townscape-defining effect per de.wikipedia.org Liste der Naturdenkmaeler in Wien/Hietzing, which suggests street visibility but is not a positive access statement. Overpass shows only ordinary villa buildings nearby, the same Cottage/Hietzing garden-villa belt that blocked the Poetzleinsdorf-area candidates on 2026-08-09. Not delivered on that precedent. 550m from the delivered Huegelgasse plane (vie_027) and 130m from the Neue-Welt-Gasse 11 holly below; the three together could become a small satellite cluster if access on any of them is ever confirmed."
+    },
+    {
+      "register_id": 3247641,
+      "name": "Stechpalme",
+      "species": "Ilex aquifolium",
+      "place": "13., Neue-Welt-Gasse 11",
+      "latitude": 48.186376,
+      "longitude": 16.29086,
+      "baumkataster": null,
+      "why_not_yet": "Checked this pass (verify session, 2026-08-19): protected for beauty and rarity per de.wikipedia.org Liste der Naturdenkmaeler in Wien/Hietzing, no girth or age given, no access statement either way. Same villa-belt caution as the Neue-Welt-Gasse 14 ginkgo above. Not pursued further this pass."
+    },
+    {
+      "register_id": null,
+      "name": "2 Kugeltrompetenbaeume (Catalpa bignonioides Nana), Schrankgasse 7-9",
+      "species": "Catalpa bignonioides Nana",
+      "place": "7., Schrankgasse 7-9, Parkanlage",
+      "latitude": 48.203742,
+      "longitude": 16.354461,
+      "baumkataster": null,
+      "why_not_yet": "CORRECTION (verify pass, 2026-08-19): register_ids 3257961 and 3257962, previously left in this file as verifying fine but weaker or off the Ring walk. de.wikipedia.org Liste der Naturdenkmaeler in Wien/Neubau states they stand on either side of a footpath through a small public park, not a courtyard as their lack of a Baumkataster record would otherwise suggest. So the earlier access assumption was wrong; the real objection is remarkability, not access: the Baumkataster (checked 2026-08-05 per vienna-extra.md) dates the two trees to 1977 and 2016, too young to be genuinely old, and their interest is an ornamental globe-crown effect rather than age or spectacle. Left undelivered on that basis, not on access."
+    },
+    {
+      "register_id": null,
+      "name": "Four Platanus entries, Meiereistrasse 3 (Krieau/Prater)",
+      "species": "Platanus (unspecified)",
+      "place": "2., Meiereistrasse 3 (register_ids 3257979-3257982)",
+      "latitude": 48.2088,
+      "longitude": 16.4175,
+      "baumkataster": null,
+      "why_not_yet": "Checked this pass (verify session, 2026-08-19): Nominatim resolves the point to a sculptor's studio building at Meiereistrasse 245, an address-numbering mismatch against the register's Meiereistrasse 3 that was not resolved this pass. The area is the Krieau/WU-Campus part of the Prater, closer to sports and institutional grounds than to the Hauptallee's open public avenue. Access not established either way; not pursued further given the time budget."
     }
   ],
   "blocked": [

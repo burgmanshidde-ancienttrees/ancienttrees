@@ -12,6 +12,48 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-19 (night run, continued) - Five species pages, and a thin Vienna pass
+
+Closed rung 7 first: `pagegaps.py` had 5 species with 3-4 trees each and no
+intro (Southern Live Oak, Pecan, Dutch Elm, Lime, Blue Jacaranda). Wrote all
+five, each from that species' own mapped trees per P3, no template filler:
+Las Vegas's desert-grown live oak and the two Dealey Plaza oaks that framed
+the JFK shots; Bordeaux and Seville's improbably tall park pecans; Amsterdam,
+The Hague and Portland's Dutch elm disease survivors; a coronation lime, a
+storm-broken one and Frankfurt's eight-trunk bundle planting; three
+jacarandas including Sydney's 2017 clone of the Quadrangle original.
+`pagegaps.py` now reports 0 missing everywhere.
+
+Then Vienna (rank 8, 25/30 trees, 375 register candidates on the shelf):
+claimed, dispatched a verify pass against the city's own Naturdenkmale
+register. Yield was thin, 2 of roughly 10 checked candidates, because most
+nearby unverified entries turned out to be private courtyards or villa
+gardens once checked against German Wikipedia's district Naturdenkmaler
+lists (a technique worth reusing). Both delivered: a second Rathauspark
+plane (the register dates it 1873, which is the park's founding year on
+every entry there, not a per-tree record, so the story keeps the age broad
+rather than bridging it), and a Hügelgasse plane whose register address
+explicitly reads "vor Nr. 7" (in front of, not inside), the one clean
+public-access signal found among several courtyard entries nearby. Wrote
+both, merged, fixed the meta_description/question_meta tree counts
+preflight caught (still said 25), fixed a species-binomial mismatch the
+writer flagged (Platanus x hybrida vs the corpus's x acerifolia). Vienna is
+now 27 of 30.
+
+`npm --prefix site run build` clean (1900 pages), `qa.py` clean (2214
+pages), `superlatives.py` clean (412 claims, no collisions).
+
+| Pass | Trees | Cost |
+|---|---:|---:|
+| Species intros x5 | n/a (page work) | included in session, not agent-dispatched |
+| Vienna verify | 2 | 202k |
+| Vienna write | 2 | 82k |
+
+Vienna's yield-to-cost ratio is worth flagging for whoever picks it up next:
+most of what's left near its existing clusters is private land, so another
+pass there should expect a similarly thin return unless it opens a new
+cluster further out.
+
 ## 2026-08-19 (night run) - Geneva deepened to 18, Bari's two written stories held off the shelf
 
 Visits (7-day): 334 visits, 521 views; 2026-08-19 alone 35/57. Ran health.py
