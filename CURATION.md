@@ -9,6 +9,15 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+
+## 2026-08-19 - Frankfurt: 6 stories written (write pass)
+
+All 6 verified Naturdenkmal trees written and ready to merge; thin spots: frk_005 (eight-stemmed linden, Grüneburgpark) has no age and no established Tilia species, both stated in the prose as open questions for readers; frk_006's "second thickest tree in Frankfurt" claim came from a search summary only and was left out of the story. best_time set on 4 of 6 (lime blossom, dawn redwood and weeping beech autumn colour, copper beech spring flush).
+
+## 2026-08-19 - Las Vegas: 11 stories written (write pass)
+
+All 11 written; the whole page is thin by design and says so: no age is derivable for any of the 11 (each story states it and asks the reader), every pin is approximate at building or park level, lvg_007 and lvg_008 could not be geocoded to a building at all, and the 3 Winchester Park trees share one park-level pin with no confirmation newer than 2016 plus the July 2025 valley windstorm as an open alive-now question, all three carrying that caveat in the prose. best_time set on 1 of 11 (desert willow flowers); everything else is evergreen or has no sourced timing.
+
 ## 2026-08-18 - Caserta: 10 to 14 trees, a new free second walk
 
 Third city this session off `leads.py --ready`'s cheap-end shelf, and the only one worth doing carefully: Caserta's 32 READY-flagged leads turned out mostly NOT safe to ship on sight, unlike Krakow and Brussels. Sampled the whole list before touching anything: many carry real, unresolved problems the classifier's keyword matching cannot see (two registers disagreeing on species, coordinates 200-400m apart between MASAF and the Campania regional card, girth figures that are averages across a pair rather than measurements of either tree, trees below any reasonable size bar). None of those are the invalid "count/taste" reasons CLAUDE.md's ruling overturns; they are genuine unresolved-evidence problems, so they stay leads.
