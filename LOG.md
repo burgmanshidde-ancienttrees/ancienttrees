@@ -12,6 +12,70 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-19 (session, continued) - Caserta deepened to its 20-tree target from its own READY leads
+
+After Bilbao, switched to rule 1(a) of "the course after the fortnight":
+writing up already-verified stock is cheaper than opening anything else, and
+`leads.py` showed 30 READY leads for Caserta alone, already published at
+14/20. Read all 30 by hand rather than trusting the READY label blindly,
+because several carried real unresolved caveats in their own
+`why_not_published` field (a Cephalotaxus fortunei with an implausible
+25m/450cm figure "may be a mis-measurement", a Zelkova whose two registers
+disagree on SPECIES not just detail, an Osage orange whose girth field
+literally reads "sdraiata" instead of a number). leads.py's fail-open design
+would happily hand those over as READY; picking through them by hand and
+choosing only the 6 marked "Count only", meaning the sole reason they were
+held back originally was the pre-2026-08-02 ten-tree cap doctrine that
+CLAUDE.md has since killed, kept this pass honest without costing a
+verification cycle.
+
+**The six**: Bottle Tree (Kurrajong), Chir Pine, Turkey Oak, Southern
+Magnolia, Osage Orange and Mediterranean Hackberry, all cross-sourced
+against Italy's national MASAF register and Campania's own regional detail
+card, both already cited in the leads file. Wrote all six in one pass,
+merged as cas_015 through cas_020. Caserta is now 20 of 20, its target hit
+exactly with real trees rather than padding.
+
+**Two build failures caught at merge**, both hard rule 9 (one species, one
+common name): the write pass correctly left `species` untouched, but its
+values (`Kurrajong`, plain `Hackberry`) collided with the corpus's existing
+canonical forms for the same Latin binomial (`Bottle Tree` already used in
+Barcelona, `Mediterranean Hackberry` already used in Ferrara and others).
+Fixed both, and renamed/lightly reworded the Kurrajong entry's title and
+opening sentence so the page's species chip and its prose agree.
+
+**Fixed the city's own count promises**, since a sixth of its trees just
+appeared: intro, meta_description and two FAQ answers said eleven paid /
+three free; now sixteen paid (all in the English Garden) and four free (the
+existing three in Piazza Vanvitelli plus a new magnolia standing right at
+the palace gate on Piazza Carlo di Borbone, a different square). Also caught
+and fixed a count-promise false trigger at preflight ("the sixteen stand"
+read as a claim about all twenty trees; rephrased to "sixteen of the twenty
+trees here stand").
+
+`npm --prefix site run build` clean (1934 pages), `preflight.py` clean (144
+cities), `superlatives.py` clean (414 claims, no collisions). Same
+shallow-checkout `qa.py` sitemap-lastmod note as the other entries tonight.
+Ran the free `photo_hunt.py --recheck` sweep (0 new candidates, an honest
+gap this register just doesn't help with). `tree_index.py` refreshed;
+`leads.py --city caserta` confirmed all 6 auto-detected as DONE by
+coordinate match, no manual leads-file edit needed.
+
+| Pass | Trees | Cost |
+|---|---:|---:|
+| Caserta write (from existing leads) | 6 | 47k |
+
+## GIT PUSH BLOCKED, roughly 21:34 to past 22:00 UTC: this entry and the
+Bilbao/Caserta commits are sitting locally, not yet on origin. The GitHub
+installation token embedded in this sandbox's remote URL expired mid-session
+and did not refresh on repeated retries (roughly a dozen attempts over 20+
+minutes). This is an infrastructure issue, not a data or process one: every
+build/QA/preflight check above passed clean on the actual commits. FOR
+HIDDE: if this entry is missing from the live LOG.md when you read it,
+check whether the Hawaii/Ottawa commits (which did push successfully early
+in this session) are the last ones you see, and know that Bilbao and this
+Caserta expansion exist, verified and ready, waiting on a push.
+
 ## 2026-08-19 (session, continued) - Bilbao opened, 4 trees, honestly thin and scattered
 
 Continued down the ladder after Ottawa. Checked `data/leads/*.json` for cheap

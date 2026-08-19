@@ -10,6 +10,22 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-19 - Caserta: deepened to target (14 to 20), 6 new trees from its own leads file
+
+Six trees written from already-verified MASAF/Campania register leads that
+had only been held back by the pre-2026-08-02 count cap: Bottle Tree
+(Kurrajong), Chir Pine, Turkey Oak, Southern Magnolia (free, Piazza Carlo di
+Borbone), Osage Orange and Mediterranean Hackberry (all `location_precision:
+approximate`, `curation_status: flagged`, matching the rest of the city).
+Deliberately excluded from this pass: several other READY-labelled leads in
+the same file whose own `why_not_published` notes flag real unresolved
+problems (implausible measurements, a disputed species identity between two
+registers, a girth field that reads "sdraiata" instead of a number) rather
+than a stale count objection; those stay in data/leads/caserta.json for a
+pass that can actually resolve them. City intro/meta/FAQ counts updated
+(11 paid/3 free to 16 paid/4 free). Photos: 0 new candidates on the API
+sweep, an honest gap.
+
 ## 2026-08-19 - Bilbao: opened, 4 trees (at the floor), all flagged, 4 photos missing, 7 leads and 3 blocked recorded
 
 New city, from-zero web research (no usable Basque/Bizkaia register).
