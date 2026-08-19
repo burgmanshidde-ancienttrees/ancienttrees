@@ -76,51 +76,49 @@ for research from zero.
 
 The floor is unchanged: four verified trees or no page.
 
-**REVERSED 2026-08-19 by Hidde, and this replaces the 2026-08-13 sprint.** His
-words, the week he moved onto the app and handed the data work to the machine:
-"Ook wil ik graag prio boven nieuwe steden en tot max 30 dan steden tot 50 te
-laten groeien."
+**Settled 2026-08-19, after two corrections the same morning.** Both are Hidde's
+and the second overrides the first, so read them in order.
 
-1. **DEEPENING NOW OUTRANKS OPENING NEW CITIES.** This is the exact reversal of
-   the rule it replaces, which said "nothing deepens while the sprint runs".
-   That rule was right for its moment: a page has to exist before Google can
-   judge it, and in August the site had far more unopened cities than judged
-   ones. 133 published cities later Google has judged plenty, and the evidence
-   points the other way, because depth on a page with demand compounds while
-   another page nobody finds does not. So a run picks a city that already has
-   readers before it picks a city that has none.
+1. **OPEN THE UNOPENED CITIES FIRST.** He said it after looking at the list
+   itself: "persoonlijk denk ik dat deze steden zonder register toch starten
+   interessanter is dan verdiepen... deze zsm naar 10 krijgen." He named
+   Seattle, Dallas, Houston, Cologne, Perth, Sydney, Las Vegas, Frankfurt,
+   Bilbao, Dubai, Kansas City, Mexico City, Vancouver, Manchester, Taipei,
+   Buenos Aires and Hawaii: all ranked, all at zero trees, most with no
+   register behind them. The reasoning is in the numbers he was reading. A new
+   city taken to 10 is a page that can start ranking; a thirtieth tree in Rome
+   is marginal.
 
-2. **The ceiling rises to 30, and to 50 where the city can carry it.**
+   **This means from-zero web research is ON for these**, which is normally off.
+   Rule one (d) has always allowed it when Hidde names the city, and he has.
+   Expect them to cost web-research rates rather than register rates, and use
+   the 80/20 rule hard: a city that will not give up four good trees cheaply is
+   not a city to grind on.
+
+2. **Then deepen, to these targets.** The 50 tier lasted about an hour and he
+   killed it: "we willen helemaal geen 50 bomen in bath mss max 20. kunnen we
+   vanaf nu gewoon voor 30 grote bomen streven bij grote stad en bevestigd."
 
    | state | target |
    |---|---:|
-   | not confirmed by Search Console | 10 |
-   | confirmed | 30 |
-   | confirmed AND 50+ impressions AND 8,000+ travel demand | 50 |
+   | new city or village, not confirmed by Search Console | 10 |
+   | confirmed city | 20 |
+   | confirmed BIG city (8,000+ travel demand) | 30 |
 
-   The old 10/20/30/50 ladder by Wikipedia pageviews is retired: it measured
-   with a ruler this project stopped using on 2026-08-15 when travel demand
-   replaced fame. The 50 tier needs BOTH proven demand and enough city to hold
-   fifty trees, because the first version of this rule used impressions alone
-   and handed Dubrovnik (4 trees) and Bath (5) a target of 50. Those are small
-   places that rank well, not big places, and a target nobody could reach is
-   misleading even when it is harmless.
+   Thirty remarkable trees is already a lot of city. A page that needs fifty is
+   a page padded past the point where every entry deserves its spot, and
+   exclusivity is the product. Bath is the worked example: it ranks well, which
+   is why an impressions-only rule briefly handed it 50, but it is a small city
+   and stops at 20.
 
-3. **The 80/20 rule still governs everything above** (his words: "eeuwig tokens
+3. **The 80/20 rule governs everything above** (his words: "eeuwig tokens
    gebruiken tot deze max te halen is niet de strategie... als het er wat
    minder zijn maar het wordt te moeilijk om de volgende te vinden ga gewoon
-   door"). A target is a ceiling and a stopping point, never a quota: the moment
-   the next tree gets hard to find, the city is done for now. Cadiz at 5 is
-   finished work and always was.
+   door"). A target is a ceiling and a stopping point, never a quota. Cadiz at
+   5 is finished work.
 
-4. **The queue re-ranks itself daily.** The data digest feeds Search Console
-   back into `data/city-queue.json`, so a Palermo that starts performing climbs
-   on its own and nothing waits for Hidde.
-
-**What this costs, stated because it is a big number.** 2,634 trees stand
-between the 133 published cities and their new targets. That is not a plan for
-a week, it is a direction: work the cities with readers, take each as far as it
-goes cheaply, and stop when it stops being cheap.
+4. **The queue re-ranks itself daily** from the digest's Search Console
+   readback, so a city that starts performing climbs on its own.
 
 What the target is NOT, unchanged: never a quota, never a floor, and the bar
 per tree never moves. A city above its target (Barcelona at 46) is finished,

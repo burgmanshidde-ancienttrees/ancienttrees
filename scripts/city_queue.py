@@ -388,38 +388,46 @@ def main():
     a = ap.parse_args()
 
     if a.next:
-        # ORDER REVERSED 2026-08-19 by Hidde: "prio boven nieuwe steden en tot
-        # max 30 dan steden tot 50 te laten groeien." Deepening a city that
-        # already has readers now comes FIRST, and opening a city with none
-        # comes second. The 2026-08-13 sprint said the opposite, correctly for
-        # its moment, when the site had far more unopened cities than
-        # Google-judged ones. His 80/20 rule rides along unchanged: stop at the
-        # target, and stop EARLIER the moment the next tree gets hard to find.
+        # ORDER, settled 2026-08-19 after Hidde looked at the actual list and
+        # corrected the version written an hour earlier: "persoonlijk denk ik
+        # dat deze steden zonder register toch starten interessanter is dan
+        # verdiepen... deze zsm naar 10 krijgen." He named Seattle, Dallas,
+        # Houston, Cologne, Perth, Sydney, Las Vegas, Frankfurt, Bilbao, Dubai,
+        # Kansas City, Mexico City, Vancouver, Manchester, Taipei, Buenos Aires
+        # and Hawaii, all ranked, all at zero trees, several with no register.
+        #
+        # So OPENING comes first again and deepening second. The reasoning is
+        # visible in the numbers he was reading: a new city taken to 10 is a
+        # page that can start ranking, while a thirtieth tree in Rome is
+        # marginal. It also means from-zero research on a named city is on,
+        # which rule 1(d) already allows when Hidde names the city.
+        #
+        # What did NOT come back with it: the old 10/20/30/50 ladder. Targets
+        # are 10 unconfirmed, 20 confirmed, 30 for a big confirmed city, set the
+        # same morning and unchanged by this.
         doc = load_source()
-        s1 = [c for c in doc["cities"] if c.get("rank") and c.get("target")
+        s1 = [c for c in doc["cities"] if c.get("rank") and not c.get("trees", 0)]
+        s2 = [c for c in doc["cities"] if c.get("rank") and c.get("target")
               and c.get("trees", 0) and c.get("trees", 0) < c["target"]]
-        s2 = [c for c in doc["cities"] if c.get("rank") and not c.get("trees", 0)]
         s1.sort(key=lambda c: c["rank"])
         s2.sort(key=lambda c: c["rank"])
-        print("STAGE 1, DEEPENING: cities that already have readers, taken")
-        print("toward 30, or 50 where the city can carry it. Top-down, take the")
-        print("first you can move cheaply. 80/20: when the next tree gets hard")
-        print("to find, move on, never grind.\n")
-        print("  #  city             now target  ready  register")
+        print("STAGE 1, OPEN THE UNOPENED: every ranked city with no trees yet,")
+        print("to 10, as fast as they go. Hidde, 2026-08-19: starting these beats")
+        print("deepening. A register is NOT required here; he named these cities,")
+        print("which is what rule 1(d) asks for before from-zero research.\n")
+        print("  #  city             register  ready")
         for c in s1[:40]:
+            print("%3d  %-16s %9d %6d" % (
+                c["rank"], c["city"][:16], c.get("register", 0), c.get("ready", 0)))
+        print("\nSTAGE 2, DEEPENING: once stage 1 has nothing left that moves")
+        print("cheaply. Targets are 20, or 30 for a big confirmed city.\n")
+        print("  #  city             now target  ready  register")
+        for c in s2[:20]:
             print("%3d  %-16s %4d %6d %6d %9d" % (
                 c["rank"], c["city"][:16], c.get("trees", 0),
                 c["target"], c.get("ready", 0), c.get("register", 0)))
-        print("\nSTAGE 2, NEW CITIES: only once stage 1 has nothing left that")
-        print("moves cheaply (Hidde, 2026-08-19: deepening has priority over")
-        print("opening new cities). Listed so the later work stays visible.\n")
-        print("  #  city             target  ready  register")
-        for c in s2[:20]:
-            print("%3d  %-16s %6d %6d %9d" % (
-                c["rank"], c["city"][:16],
-                c.get("target") or 10, c.get("ready", 0), c.get("register", 0)))
-        print("\nStage 1: %d cities, %d trees to target. Stage 2: %d cities unopened."
-              % (len(s1), sum(c["target"] - c.get("trees", 0) for c in s1), len(s2)))
+        print("\nStage 1: %d cities unopened. Stage 2: %d cities, %d trees to target."
+              % (len(s1), len(s2), sum(c["target"] - c.get("trees", 0) for c in s2)))
 
         # WHAT A RUN CAN ACTUALLY MOVE, added 2026-08-16 from the night's own
         # numbers. The lists above are the STRATEGIC order and are correct as
