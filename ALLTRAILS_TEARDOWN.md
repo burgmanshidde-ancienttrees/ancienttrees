@@ -99,17 +99,41 @@ promising a reminder two days before. Feature rows below use small screenshots
 rather than icons, and the CTA is `Probeer Plus gratis` with `Annuleren wanneer
 je wilt` under it.
 
+## 6. Two things a second pass through the frames found
+
+**The action bar is sticky and horizontally scrollable.** On the full route page
+the bottom carries `Begin` (green), `Downloaden`, `Opslaan`, and it stays there
+while the page scrolls. Begin is always first and always the only coloured one.
+So the primary verb is never something you scroll to find, on any screen, in any
+state. That is a stronger version of the point above: it is not that Begin sits
+under the elevation chart, it is that Begin is pinned to the bottom of the phone
+everywhere the route exists.
+
+**The progress screen does not hide its empty state.** Maand / Jaar / Alle
+segmented control, a bar chart by month, then a grid of stat tiles: Afstand 0.2,
+Hoogteverschil 8, Voltooid 1, Bewogen tijd 0. One bar on the whole chart and they
+show it anyway, at full size, with the months labelled underneath.
+
+That is worth copying and it is not obvious. Our collect screen will be empty for
+every single user on the day it launches, and the instinct will be to hide the
+chart until it has data. AllTrails shows the scaffolding first: the shape of what
+you are about to fill in is itself the invitation. An empty grid of tree stamps
+with the outlines drawn does more work than a message saying you have not
+collected anything yet.
+
 ---
 
 ## What we take
 
-1. **Begin as a one-word primary action on the map sheet**, not a link inside a
-   story. This is the fix for `directions` never having fired.
+1. **Begin as a one-word primary action, pinned to the bottom of the phone**
+   wherever a walk exists, not a link inside a story. This is the fix for
+   `directions` never having fired.
 2. **The map inset on every card**, so a walk's shape is visible before opening.
 3. **The floating map toggle**, one control, so list and map stop being two
    destinations.
 4. **The four-stat row with labelled units**, both on web and in the app.
-5. **Illustrated stamps for the collection**, not a grid of ticks.
+5. **Illustrated stamps for the collection**, not a grid of ticks, and drawn as
+   empty outlines from day one rather than hidden until there is data.
 6. **The trial timeline box**, close to verbatim, when the paywall ships.
 
 ## What we do not take
