@@ -324,8 +324,13 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
      media block further down the file, which won on order. The duplicates are
      gone; this is the only place the mobile bar is described. */
   .nav-drop summary { display: inline-flex; align-items: center; justify-content: center;
-    width: 40px; height: 40px; padding: 0; border-radius: 50%;
+    position: relative; width: 40px; height: 40px; padding: 0; border-radius: 50%;
     background: var(--surface); border: 1px solid var(--cream-dark); color: var(--ink); }
+  /* 40px reads right in a 56px bar, and 40px is under the 44px every phone
+     platform asks for. The circle stays 40 and the TAP AREA is 48, which is
+     the usual way out of that trade and matters more here than it used to:
+     this button is now the only navigation on a phone. */
+  .nav-drop summary::before { content: ""; position: absolute; inset: -4px; }
   .nav-drop[open] summary { background: var(--cream-dark); }
   .nav-drop summary::after { content: none; }
   .nav-drop summary .sum-desktop { display: none; }
