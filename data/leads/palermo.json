@@ -1,29 +1,14 @@
 {
   "leads": [
     {
-      "sheet_id": "17/G273/PA/19",
-      "species": "Ficus macrophylla (Palazzo Pantelleria, Piazza Giovanni Meli)",
-      "reason": "MASAF register, girth 1010cm, height 17m, 517m from pal_001 (Piazza Marina). A genuinely strong candidate in the city-centre cluster, not chosen this pass only because Villa Malfitano and Villa Tasca's figs were stronger on both size and available second-sourcing within the 40-minute window. Worth a first look on any future Palermo top-up."
-    },
-    {
       "sheet_id": "18/G273/PA/19",
       "species": "Ficus virens (Piazza Virgilio)",
-      "reason": "MASAF register, girth 1000cm, height 20m, 602m from pal_004. Different fig species (Ficus virens/Fico bianco rather than macrophylla) which would add species variety to a page that is currently all Ficus macrophylla among its figs. UPDATE (2026-08-17 verify pass): searched for a genuine second source and found none within the time window (no monumentaltrees.com entry located, no dedicated local page beyond the register itself); the register/existence side is solid but the two-independent-sources bar is not yet cleared. Not a known problem, just unproven so far."
-    },
-    {
-      "sheet_id": "14/G273/PA/19",
-      "species": "Ficus macrophylla (Giardino Inglese)",
-      "reason": "MASAF register, girth 820cm, 332m from pal_006 (Villa Trabia). Not researched this pass; no known issue."
+      "reason": "MASAF register, girth 1000cm, height 20m, 602m from pal_004. Different fig species (Ficus virens/Fico bianco rather than macrophylla) which would add species variety to a page that is currently all Ficus macrophylla among its figs. UPDATE (2026-08-19 verify pass): tried again, two more searches plus a direct fetch of lasiciliainrete.it's 'Fico Bianco di Piazza Virgilio' page. That page confirmed it just republishes the register row (girth/height match exactly, no independent facts, one uncredited 'web' photo) and does not count as a second source, same pattern as the Ucciardone platano below. No other dedicated page or news piece found. Register/existence side remains solid; the two-independent-sources bar still not cleared after two separate passes now. Worth a monumentaltrees.com browser-session look before trying web search again."
     },
     {
       "sheet_id": "08/G273/PA/19 (second entry, 'Villa Trabia alle Terre Rosse')",
       "species": "Ficus macrophylla",
       "reason": "MASAF register, girth 680cm, only 188m from the already-published pal_006 (Villa Trabia fig, girth 480cm per that entry's own notes). Not a coordinate-duplicate (188m is outside the 80m radius, and pal_006's own story already says 'roughly twenty other fig trees share the grounds' at Villa Trabia), but shipping this one too would mean two very similar Villa Trabia fig entries on one page; left as a lead rather than a second Villa Trabia tree this pass, especially since it is actually the larger-girth specimen and could eventually replace or supplement pal_006 rather than simply duplicate it. Worth a dedicated look at which of the two Villa Trabia figs (480cm vs 680cm) is the better entry, or whether both could work as one combined story."
-    },
-    {
-      "sheet_id": "33/G273/PA/19",
-      "species": "Carya illinoinensis / Pecan (Orto Botanico)",
-      "reason": "MASAF register, girth 560cm, height 30m, 208m from pal_003 (Orto Botanico fig). A giant pecan inside the same botanical garden already on the page; would add non-fig species variety. Not researched this pass."
     },
     {
       "sheet_id": "37/G273/PA/19",
@@ -43,7 +28,7 @@
     {
       "sheet_id": "05/G273/PA/19",
       "species": "Platanus acerifolia / Platano comune (Via Piano dell'Ucciardone)",
-      "reason": "MASAF/Sicilia register, girth 420cm, height 28m. A dedicated page exists at lasiciliainrete.it ('Platano dell'Ucciardone') but on the pattern seen elsewhere on that domain this pass (see the Villa Trabia Araucaria and Villa Malfitano Yucca entries) it appears to just republish the same national-decree row rather than add independent facts, so it likely does not clear the two-independent-sources bar on its own; not fetched and checked directly this pass for time. Worth a direct look plus a search for the Ucciardone prison neighbourhood's own history (the tree stands by Palermo's Ucciardone prison), which might supply real context."
+      "reason": "MASAF/Sicilia register, girth 420cm, height 28m. UPDATE (2026-08-19 verify pass): fetched lasiciliainrete.it's 'Platano dell'Ucciardone' page directly and confirmed it is a register republication only (exact girth/height match, credited 'web' photo, no independent facts) - does not clear the two-source bar on its own. A search for the Ucciardone prison neighbourhood's own history did not turn up a dedicated piece on this specific tree in the time available. Still just the one source; worth a direct look at comune.palermo.it's tree register or a local history blog on a future pass."
     },
     {
       "sheet_id": "15/G273/PA/19",
@@ -51,5 +36,11 @@
       "reason": "MASAF/Sicilia register, girth 410cm, height 10m. Giardino Inglese (Piersanti Mattarella Park) is well documented as a public 1851 exotic-plant garden (English Wikipedia), which is good general context but not a source naming this specific tree; searched for a dedicated second source this pass (cefalunews.org, venipedia.it, lasiciliainrete.it, monumentaltrees.com) without success in the time available. venipedia.it 403s automated fetches; cefalunews.org's automated summary garbled the register's girth-cm column into a fake 'years' age for every tree in it (a live example of the units/fields trap BRIEF_RESEARCH.md warns about, do not trust that page's numbers for anything). Worth a browser-session look at monumentaltrees.com's Giardino Inglese pages, which do exist for at least one other tree there (a Ficus macrophylla, https://www.monumentaltrees.com/en/ita/sicily/palermo/4318_giardinoinglese/)."
     }
   ],
-  "blocked": []
+  "blocked": [
+    {
+      "sheet_id": "17/G273/PA/19",
+      "species": "Ficus macrophylla (Palazzo Pantelleria, Piazza Giovanni Meli)",
+      "reason": "MASAF register, girth 1010cm, height 17m, a genuinely large fig and previously left as an open lead. Researched this pass (2026-08-19): the tree grows in the internal/inner courtyard of Palazzo Pantelleria-Varvaro, a privately owned historic palace. Multiple sources describe visiting as guided tours led personally by the owner ('il padrone di casa', e.g. palermotoday.it's 'Palazzo Pantelleria Varvaro apre le porte, visite guidate in compagnia del padrone di casa', 10 May 2026) rather than standing public access. This is a courtyard of a dwelling under hard rule 10, which does not bend regardless of the tree's quality: BLOCKED, not a lead. If a future pass finds evidence of regular, ticketed, standing public opening hours (not a one-off event), revisit."
+    }
+  ]
 }

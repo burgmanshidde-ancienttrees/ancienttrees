@@ -54,6 +54,34 @@ most of what's left near its existing clusters is private land, so another
 pass there should expect a similarly thin return unless it opens a new
 cluster further out.
 
+Then Palermo (rank 2, 14/20 trees, 43 register candidates, all from Italy's
+national monumental-tree registry). Claimed, verified 4: a Giardino Inglese
+fig, a Giardini Reali fig that has grown around and partly engulfed a stone
+pine over the decades ("l'abbraccio"), a pecan with a Monstera vine coiled
+up its trunk in the Orto Botanico, and a flame tree 85m from the
+already-published Dragon Tree at the same nursery address. One correctly
+avoided: a register entry with an extraordinary 36-metre "girth" turned out
+to be the same coordinates as the already-published pal_001 at Piazza
+Marina, crown spread rather than trunk, not a new tree. One correctly
+blocked: a fig inside a private palace courtyard, visitable only on
+owner-guided tours, held under hard rule 10. The write pass caught and cut
+a draft sentence that would have bridged the embracing fig's ~135-year
+estimate to the Norman kings, and correctly gave the largest-fig-in-Palermo
+superlative to the already-live pal_001 rather than claiming it twice.
+Fixed the meta_description/question_meta tree counts (still said 14) at
+merge. Palermo is now 18 of 20.
+
+`npm --prefix site run build` clean (1904 pages), `qa.py` clean (2218
+pages), `superlatives.py` clean (412 claims, no collisions).
+
+| Pass | Trees | Cost |
+|---|---:|---:|
+| Palermo verify | 4 | 95k |
+| Palermo write | 4 | 91k |
+
+Released the Palermo claim. Stopping here for this run; the site builds
+clean end to end and every rung down to page gaps has been checked today.
+
 ## 2026-08-19 (night run) - Geneva deepened to 18, Bari's two written stories held off the shelf
 
 Visits (7-day): 334 visits, 521 views; 2026-08-19 alone 35/57. Ran health.py

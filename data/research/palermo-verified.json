@@ -1,0 +1,131 @@
+[
+  {
+    "id": "pal_015",
+    "name": "The Fig of the Giardino Inglese",
+    "species": "Moreton Bay Fig (Ficus macrophylla)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 820,
+    "location": {
+      "address": "Giardino Inglese (Piersanti Mattarella Park), Palermo",
+      "latitude": 38.131489,
+      "longitude": 13.351822,
+      "neighbourhood": "Libertà"
+    },
+    "verified_sources": [
+      "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf (sheet 14/G273/PA/19, same D.M. n. 5450 del 19/12/2017 dataset as the national MASAF register: girth 820cm, height 11m, locality 'Giardino Inglese')",
+      "https://it.wikipedia.org/wiki/Giardino_inglese_di_Palermo (confirms, independently of the register, that the park holds 'diversi grandi esemplari di Ficus macrophylla' among plants brought over from the Orto Botanico; general corroboration of species and park, not a tree-specific measurement)"
+    ],
+    "access": "Free public park (Giardino Inglese / Piersanti Mattarella Park), open daylight hours, no ticket.",
+    "transport": "Via della Libertà area, roughly 1.1km from the Villa Trabia cluster (pal_006/pal_011) already on the page; walkable extension of that cluster.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "story": "Eight metres round the trunk and eleven metres tall: this is a fig that spent its growth going sideways. It stands in the Giardino Inglese, the long public park Giovan Battista Filippo Basile laid out from 1851 as Palermo pushed north out of its old walls along Via della Libertà, and of the several big Moreton Bay Figs growing there it is the one Sicily's register of monumental trees actually measured, at 820 centimetres of girth and 11 metres of height. The park's figs trace back to stock raised at the Orto Botanico across town, which is where most of this city's Australian giants began. Ficus macrophylla behaves the same way wherever it is comfortable: branches send roots down, the roots reach soil and thicken into trunks of their own, and a single stem slowly turns into a colonnade. The garden around it has changed names along with the century. It carries Piersanti Mattarella's name now, after the president of Sicily shot dead in Palermo in 1980, and on a warm afternoon it is full of people treating it as a park rather than a memorial. Nobody has published an age for this tree. The Italian register has no age column, and no one appears to have dated this specimen. If you have seen a figure for it, send it over and we will add it."
+  },
+  {
+    "id": "pal_016",
+    "name": "The Embracing Fig of the Giardini Reali",
+    "species": "Moreton Bay Fig (Ficus macrophylla)",
+    "age_estimate": "roughly 135 years",
+    "age_min": 115,
+    "age_max": 155,
+    "girth_cm": 1000,
+    "location": {
+      "address": "Giardini Reali, Palazzo dei Normanni (Palazzo Reale), Palermo",
+      "latitude": 38.111049,
+      "longitude": 13.352358,
+      "neighbourhood": "Albergheria / Palazzo Reale"
+    },
+    "verified_sources": [
+      "https://ilregistrodeglialberi.it/15837-ficus-grande-dei-giardini-reali-ficus-della-baia-di-moreton-palermo-pa-sicilia (RAMI, Registro degli Alberi Monumentali d'Italia: girth ~10.00m, height ~20.00m, estimated age ~136 years, health rated 'Eccellente', described as 'il maggiore dei tre Ficus macrophylla presenti nei curatissimi Giardini Reali' - the largest of three Ficus macrophylla in the gardens)",
+      "https://www.federicosecondo.org/en/the-royal-gardens/ (official heritage page of the Sicilian Regional Assembly/ARS, which occupies Palazzo dei Normanni: confirms three Ficus macrophylla in the Royal Gardens, 'one of which embraces a large Pinus pinea')",
+      "https://renneritalia.com/il-ficus-che-veglia-su-palermo/ (independent nature-writing piece, confirms the same fact in Italian: 'il ficus del giardino pensile di Palazzo dei Normanni, che ha cinto in un abbraccio mortale un grosso esemplare di pino domestico')"
+    ],
+    "access": "Inside the Giardini Reali of Palazzo dei Normanni (seat of the Sicilian Regional Assembly). Paid entry to the gardens (a few euros per search results, not independently verified on a fetched pricing page); opening days are limited and vary, apparently closed some weekdays for parliamentary business. State the caveat plainly and tell readers to check current hours before visiting rather than quoting an unverified schedule.",
+    "transport": "Piazza del Parlamento entrance; roughly 1.1km from the Orto Botanico cluster (pal_003 etc) and an easy walk from Palazzo Bonanno (pal_007).",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "story": "A stone pine in the Royal Gardens is slowly disappearing into a fig. Over the decades this Ficus macrophylla has grown around a large Pinus pinea beside it and taken part of it inside itself. The Sicilian Regional Assembly, which occupies the Palazzo dei Normanni above the garden, describes the fig as embracing the pine. An Italian nature writer, less diplomatically, called it a deadly embrace. Both are looking at the same thing.\n\nIt is the largest of the three Moreton Bay Figs in the Giardini Reali, ten metres round and twenty metres tall, and the register that recorded it rates its health as excellent. Its age is a dendrological estimate rather than a documented planting: roughly 135 years, which in honest terms means somewhere between about 115 and 155. That leaves it younger and far smaller than the fig in Piazza Marina, which is the one holding Palermo's records.\n\nWhat it grows on is the other half of the story. The Giardini Reali are a terraced garden on top of the walls of the Palazzo dei Normanni, the palace the Norman kings raised over the old city and which now houses the island's parliament. Against that the fig is a newcomer, and it is still the thing people stop for.\n\nThat is also the catch for a visitor. The gardens open on limited days around parliamentary business and charge an entry fee, so check the current hours before you cross town for this one."
+  },
+  {
+    "id": "pal_017",
+    "name": "The Pecan of the Orto Botanico",
+    "species": "Pecan (Carya illinoinensis)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 560,
+    "location": {
+      "address": "Orto Botanico di Palermo, Via Lincoln, Palermo",
+      "latitude": 38.112394,
+      "longitude": 13.373081,
+      "neighbourhood": "Kalsa"
+    },
+    "verified_sources": [
+      "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf (sheet 33/G273/PA/19, same D.M. n. 5450 del 19/12/2017 dataset as the national MASAF register: girth 560cm, height 30m, locality 'Orto Botanico')",
+      "https://www.periscopionline.it/safari-alberi-giganti-palermo-orto-botanico-301463.html (independent local feature on the Orto Botanico's giant trees, describing this specific pecan and a large Monstera deliciosa vine coiled around its trunk like ivy)"
+    ],
+    "access": "Paid entry (Orto Botanico di Palermo ticket, around 6 euros, same as pal_003/pal_012 already on the page).",
+    "transport": "Same garden as pal_003 and pal_012, a short walk from both; 20 min walk from Palermo Centrale station.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "story": "The vine wound around this trunk is a houseplant. Monstera deliciosa is the thing sold in pots at knee height across northern Europe, and in the Orto Botanico it has been left to do what it does in the wild, climbing a pecan the way ivy climbs a wall.\n\nThe tree underneath is worth the look on its own. Thirty metres tall and 5.6 metres round, it is one of the giants in a garden full of them, and it belongs on another continent entirely. Carya illinoinensis is the pecan of the American South, a river-bottom hickory from the Mississippi basin, and it has put on full American height in a walled garden a few streets from the Sicilian coast. That is the point of the place. Palermo's botanical garden has spent two centuries working out which foreign species will take to this heat and this soil, and the answer here was emphatic.\n\nIt is easy to walk past, which is the usual fate of a tall straight tree standing among Australian figs that grow sideways and drop columns from their branches. Look up instead, and then look at what is climbing it.\n\nNobody has published an age for it. The Italian register carries girth and height and has no age column at all, and the local writing about the garden's giants describes this tree without dating it. If you know when it went in, tell us and it goes on the page."
+  },
+  {
+    "id": "pal_018",
+    "name": "The Flame Tree of Vivai Lo Porto",
+    "species": "Flame Tree (Brachychiton acerifolius)",
+    "age_estimate": "over 150 years",
+    "age_min": 150,
+    "age_max": null,
+    "girth_cm": 450,
+    "location": {
+      "address": "Vivai Lo Porto, Corso Calatafimi 262, Palermo",
+      "latitude": 38.105936,
+      "longitude": 13.338078,
+      "neighbourhood": "Calatafimi"
+    },
+    "verified_sources": [
+      "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf (sheet 25/G273/PA/19, same D.M. n. 5450 del 19/12/2017 dataset as the national MASAF register: girth 450cm, height 20m, locality 'Vivai Lo Porto', name_it 'Albero del fuoco')",
+      "https://luoghi.italianbotanicalheritage.com/en/lo-porto-nursery/ (Italian Botanical Heritage's record for this same nursery: 'a beautiful Sterculia, which is over one hundred and fifty years old, one of the most important trees of Palermo' - this is the same source already used for the already-published pal_014 Dragon Tree at this site)"
+    ],
+    "access": "Vivai Lo Porto is a working plant nursery and garden centre, not a park: open to anyone who walks in during business hours (Mon-Sat 7:30-18:00, Sun 7:30-13:30 per public listings, same as already stated for pal_014), no ticket or purchase required to view the grounds. Reads as a business, not a garden attraction; say so.",
+    "transport": "Corso Calatafimi, roughly 85m from the already-published pal_014 (Dragon Tree of Vivai Lo Porto): the two form a two-tree stop at one address, not a duplicate of each other.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "story": "Sicily's register of monumental trees files this one as the Albero del fuoco, the tree of fire, and the name is literal. Brachychiton acerifolius sheds its leaves before it flowers, then covers the bare branches in small scarlet bells, so a big one in bloom carries down the whole length of the street. It does not do it in full every year, which is normal for the species and is part of why people remember the years it does.\n\nThis is a big one: 4.5 metres round, 20 metres tall, and described by Italian Botanical Heritage as over one hundred and fifty years old and one of the most important trees in Palermo. That is exactly as precise as the dating gets, and it stays there.\n\nIt grows in a plant nursery. Corso Calatafimi 262 was an eighteenth century estate belonging to the last Inquisitor of Sicily, then a nineteenth century garden of acclimatisation, and the Lo Porto family have been selling plants from the ground since 1960. The tree was standing here long before the tills were.\n\nEighty-five metres away is Palermo's largest dragon tree, also on this page, so one address gets you both. You walk in during opening hours and nobody stops you, but it is worth knowing that this is a working nursery rather than a garden arranged for visitors.",
+    "best_time": {
+      "months": [
+        5,
+        6
+      ],
+      "kind": "flowers",
+      "label": "May and June, when it flowers scarlet on bare branches"
+    }
+  }
+]
