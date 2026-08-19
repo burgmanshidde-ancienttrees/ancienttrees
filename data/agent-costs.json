@@ -2470,6 +2470,13 @@
     "trees": 0,
     "wasted": 12000,
     "note": "stopped for the same reason; the Big Island candidate file it left behind is kept and costs nothing to reuse"
+   },
+   {
+    "target": "LA+Seattle+Dallas",
+    "kind": "write",
+    "tokens": 143682,
+    "trees": 20,
+    "note": "20 stories across three new cities, 209-228 words; the writer caught two species-name collisions it was not allowed to fix and handed them to the merge, which is the division of labour working"
    }
   ]
  }
