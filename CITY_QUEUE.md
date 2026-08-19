@@ -218,8 +218,8 @@ so qa.py fails the deploy when the table and the json disagree.
 | 21 | Cambridge | 20.33 | 97,974 | 5 | 2 | 1 | - | 20 | measured |
 | 22 | Sydney | 19.69 | 305,304 | - | - | - | - | 10 | predicted (travel demand) |
 | 23 | Boston | 19.36 | 385,902 | 10 | 1 | 1 | - | 30 | measured |
-| 24 | Las Vegas | 19.29 | - | - | - | - | - | 10 | predicted (travel demand) |
-| 25 | Frankfurt | 18.06 | 150,379 | - | - | - | - | 10 | predicted (travel demand) |
+| 24 | Las Vegas | 19.29 | - | 11 | - | 2 | - | 10 | predicted (travel demand) |
+| 25 | Frankfurt | 18.06 | 150,379 | 6 | - | 1 | - | 10 | predicted (travel demand) |
 | 26 | The Hague | 8.90 | 236,723 | 16 | 1 | 3 | 166 | 20 | measured |
 | 27 | New York | 17.42 | 1,124,326 | 20 | 5 | 2 | - | 30 | measured |
 | 28 | Madrid | 11.42 | 274,553 | 17 | 10 | 2 | - | 20 | measured |
