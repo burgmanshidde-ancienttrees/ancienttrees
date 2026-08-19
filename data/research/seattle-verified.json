@@ -1,0 +1,121 @@
+[
+ {
+  "id": "sea_001",
+  "name": "Seward Park's Big Tree",
+  "species": "Douglas Fir (Pseudotsuga menziesii)",
+  "age_estimate": "roughly 400 to 500 years",
+  "age_min": 400,
+  "age_max": 500,
+  "girth_cm": 670,
+  "location": {
+   "address": "Seward Park old-growth forest interior, 5895 Lake Washington Blvd S, Seattle, WA 98118 (exact grove location within the ~120-acre old-growth remnant is not published by any source found)",
+   "latitude": 47.55056,
+   "longitude": -122.26444,
+   "neighbourhood": "Seward Park"
+  },
+  "verified_sources": [
+   "https://sewardpark.org/big-tree/",
+   "https://seattlemag.com/food-and-culture/how-one-special-sign-sparked-vandalism-tree/",
+   "https://en.wikipedia.org/wiki/Seward_Park,_Seattle"
+  ],
+  "access": "Free, city park, open trails during park hours",
+  "transport": "King County Metro Route 50 stops at Seward Park Ave S and S Orcas St, at the park entrance; the old-growth interior is a further walk into the peninsula",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Two independent sources: Friends of Seward Park (FoSP, community stewardship org) big-tree page and a Seattle Magazine feature both call this Douglas fir the oldest/largest tree in Seattle, designated a Heritage Tree by PlantAmnesty (plaque later removed to stop erosion/vandalism from foot traffic). FoSP gives facts: 7 feet across (diameter, converted here to ~670cm circumference assuming a circular trunk, so treat girth as an estimate from a diameter figure not a direct tape measurement), 150 feet tall, 500 years old, survived Puget Lowlands fires of 1508 and 1701 (visible fire scars/burned bark). Seattle Magazine gives 400+ years, calls it growing before the Pilgrims arrived. Age range recorded as 400-500 to cover both figures rather than picking one. Hosts an active bald eagle nest historically. NOT the same tree as the seattle.gov Seward Park Tree Walk PDF focus tree #1 near the Audubon building, which the walk itself says is only 100-200 years old -- do not conflate. Exact coordinates of the specific tree were not found in any source; the old-growth forest covers roughly 120 acres of the Bailey Peninsula, so the pin here marks the park/peninsula centre only, honestly approximate. A future pass or reader visiting FoSP in person or checking their trail map for the marked Heritage Tree location could tighten this to confirmed."
+ },
+ {
+  "id": "sea_002",
+  "name": "The Volunteer Park Giant Sequoia",
+  "species": "Giant Sequoia (Sequoiadendron giganteum)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "location": {
+   "address": "Near E Highland Drive, Volunteer Park, 1247 15th Ave E, Seattle, WA 98112",
+   "latitude": 47.6301,
+   "longitude": -122.3147,
+   "neighbourhood": "Capitol Hill"
+  },
+  "verified_sources": [
+   "https://seattle.gov/documents/Departments/Trees/GetInvovled/TreeWalks/CH_VolunteerPark_NELoopGuidedTour.pdf",
+   "https://www.seattletimes.com/pacific-nw-magazine/rare-and-massive-giant-sequoias-flourish-in-seattle/"
+  ],
+  "access": "Free, city park, open daylight hours",
+  "transport": "Metro routes 10 and 12 stop within a few blocks on 15th Ave E / E Galer St; about a 5 minute walk",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Existence and species confirmed by Seattle Parks Departments own Tree Ambassador guided-tour PDF (tree #9 on the NE Loop of the Volunteer Park Tree Walk), which places it at E Highland Drive, calls it an excellent specimen with spongy fibrous bark. IMPORTANT CAVEAT: that same PDF describes the tree as one of the worlds largest trees by volume, growing to 280 feet high and 26 feet in diameter -- this is almost certainly the SPECIES potential (Sequoiadendron giganteum is the most massive tree species on Earth by volume, confirmed independently by a Seattle Times Jan 2026 feature on the species in Seattle), not a measurement of this specific tree. Volunteer Park was landscaped by the Olmsted Brothers 1904-1912 and a Capitol Hill Seattle News piece (paywalled/blocked to fetch, so treated as unverified) claims the parks oldest trees likely date from then, but no source ties THIS sequoia to a specific planting year, so no age is recorded rather than bridging the parks Olmsted-era date onto the tree (the bridge-claim trap). A giant sequoia planted with the original Olmsted design would be roughly 115-120 years old by 2026, which is plausible but undocumented for this specimen -- flag and ask the reader. No girth was found in any source; do not confuse the species-level 26-foot-diameter figure with this trees actual girth. Location is the NE corner of Volunteer Park near E Highland Drive per the official tree walk map; approximate because no tree-level coordinate exists, only a numbered-map position."
+ },
+ {
+  "id": "sea_003",
+  "name": "The Grand Fir of Kubota Garden",
+  "species": "Grand Fir (Abies grandis)",
+  "age_estimate": "roughly 200 years",
+  "age_min": 150,
+  "age_max": 250,
+  "girth_cm": null,
+  "location": {
+   "address": "Base of the Spring Pond, below the Terrace Overlook, Kubota Garden, 9817 55th Ave S, Seattle, WA 98178",
+   "latitude": 47.5132,
+   "longitude": -122.2663,
+   "neighbourhood": "Rainier Beach"
+  },
+  "verified_sources": [
+   "https://www.seattle.gov/documents/Departments/Trees/GetInvovled/TreeWalks/SE_KubotaTreeWalk.pdf"
+  ],
+  "access": "Free, city park (Seattle Parks), open daylight hours",
+  "transport": "Metro Route 106 stops on Renton Ave S near the garden entrance; about a 5-10 minute walk",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Single strong source so far: the joint Seattle Trees for Seattle / Kubota Garden Foundation volunteer-curated Tree Walk PDF (stop 6), which states this is 139 feet tall, estimated 200 years old, and was one of the few remaining trees on the site when Fujitaro Kubota bought the then-logged property in 1927 -- meaning it predates the garden itself, a genuine remnant of the original Pacific Northwest forest inside a cultivated Japanese garden, which is the strongest single fact for the story. Tried to find a second independent source (Wikipedia Kubota Garden article, HistoryLink.org file 3077 which 403d, a Kubota Garden Foundation history-timeline PDF which 404d): none corroborated the specific tree or its age, so this is flagged rather than confirmed on the two-source bar. Species and rough age are plausible (grand fir is native and can live 250+ years) and the source is an official joint city/foundation document, comparable in weight to a register entry. Location is landmark-described (base of Spring Pond, below Terrace Overlook) rather than GPS-pinned, so approximate; the pin here marks the garden entrance/general area only. Kubota Garden also has other candidates from the same PDF not pursued this pass for time: stop 8, a single surviving ~90-year-old Tanyosho Pine (Pinus densiflora Umbraculifera) from an original planted avenue of 15-20 (the survivor is a collectible point, the original avenue would not be); stop 14, a Japanese White Pine (Pinus parvifolia Glauca), Kubotas own favorite tree, pruned for over 80 years but no clear age given. Both are recorded as leads."
+ },
+ {
+  "id": "sea_004",
+  "name": "The Bigcone Douglas Fir of Washington Park Arboretum",
+  "species": "Bigcone Douglas Fir (Pseudotsuga macrocarpa)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "location": {
+   "address": "Upper Trail, just south of the Pacific Connections New Zealand Forest Garden, Washington Park Arboretum, 2300 Arboretum Drive E, Seattle, WA 98112",
+   "latitude": 47.6339,
+   "longitude": -122.2947,
+   "neighbourhood": "Madison Valley / Washington Park Arboretum"
+  },
+  "verified_sources": [
+   "https://botanicgardens.uw.edu/about/blog/2022/01/25/champion-trees-of-the-washington-park-arboretum/"
+  ],
+  "access": "Free, public arboretum, open daylight hours",
+  "transport": "Metro Route 11 stops on Madison St near the Arboretum entrances; several trailheads within a 5-10 minute walk of stops",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Designated a Washington State champion tree (largest known specimen of its species in the state) per Robert Van Pelts 2003 book Champion Trees of Washington State, and independently listed and currently being re-measured by the University of Washington Botanic Gardens (official managers of the Arboretum) in their own Jan 2022 blog post on the Arboretums champion trees -- book plus the institutions own ongoing verification effort count as the two threads, though both trace back to the same original 2003 survey, so treat with some caution and flag. Remarkable because Pseudotsuga macrocarpa is native only to a narrow range in the mountains of southern California and has by far the largest cones in the Douglas fir genus; seeing a state-champion specimen of it in Seattle is a genuine botanical curiosity. No age or girth published in the source found; UWBG confirms it is located on the Upper Trail just south of the Pacific Connections New Zealand Forest Garden, which is at the south end of the Arboretum, but gives no GPS coordinate, so location is approximate and the pin here marks the general Arboretum area, not the tree itself. Other Arboretum champion trees from the same source, recorded as leads rather than pursued this pass: Malus fusca (Western Crabapple) on the trail from the Graham Visitors Center to the Witt Winter Garden; Nothofagus antarctica (Antarctic Beech) near the canoe landing on the peninsula north of Foster Island Drive, flagged in the source itself as having lost a large stem about 10 years ago and being re-evaluated for champion status, i.e. current health/vitality unconfirmed; Sorbus aria (Whitebeam) in the B.O. Mulligan Sorbus Collection east of the Fiddleheads Forest School classroom. The Arboretum overall has one confirmed old survivor already: a native Thuja plicata (Western Red Cedar) that predates the 1934 founding as one of the few unlogged trees on the site (found via WebSearch summary only, not yet fetched from a primary source, so recorded as a lead rather than delivered this pass)."
+ },
+ {
+  "id": "sea_005",
+  "name": "The AYPE Lombardy Poplar",
+  "species": "Lombardy Poplar (Populus nigra 'Italica')",
+  "age_estimate": "roughly 115 to 120 years",
+  "age_min": 110,
+  "age_max": 125,
+  "girth_cm": null,
+  "location": {
+   "address": "Corner of Stevens Way and Grant Lane, across from Architecture Hall, University of Washington campus, Seattle, WA 98195",
+   "latitude": 47.6556,
+   "longitude": -122.3057,
+   "neighbourhood": "University District"
+  },
+  "verified_sources": [
+   "https://depts.washington.edu/treetour/51_lpoplar.html",
+   "https://be.uw.edu/spaces/architecture-hall/"
+  ],
+  "access": "Free, open university campus grounds",
+  "transport": "Link light rail U District or UW Station; multiple Metro routes serve the campus; short walk to Stevens Way",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Primary source is the University of Washingtons own official Campus Tree Tour page (depts.washington.edu/treetour), which states plainly: this large Lombardy poplar across the street from the Architecture Building on the corner of Stevens Way and Grant Place has a burly trunk that dates from the 1909 Alaska-Yukon-Pacific Exposition (AYPE), which was held on this exact part of campus. That is a documented planting-era date for this specific tree (not a bridge claim from the park/campus general history, since the source explicitly ties the trunk itself to the 1909 event), so age is derived as roughly 115-120 years (2026 minus 1909, with a broad band). Second source (be.uw.edu, UW College of Built Environments) independently confirms Architecture Hall itself served as the Fine Arts Palace for the 1909 AYPE, corroborating the location and date context though not the tree itself directly, so still flagged rather than fully confirmed. NOTE: two OTHER large Lombardy poplars are claimed elsewhere as record-holders and must not be confused with this one: a 2002 Seattle Times article (archive.seattletimes.com, fetched directly) quotes Seattle tree expert Arthur Lee Jacobson calling a Lombardy poplar near the corner of South Lake Washington Boulevard and South Atlantic Street the biggest in the Northern Hemisphere; a separate WebSearch snippet (unverified, not fetched from a primary page, treat as a lead only) claims the largest in North America is in Washington Park Arboretum at 142 ft high, 10 ft diameter. All three may be genuinely different trees. This entry does not claim to be the biggest of anything, only the documented AYPE-era survivor; the other two are recorded as separate leads for a future pass to verify and pin properly rather than risk two of our own pages claiming the same crown (hard rule 8). No girth found for this specific tree. Location is precise to a named street corner but not GPS-surveyed, so approximate; coordinates given are the general campus centroid."
+ }
+]

@@ -1,0 +1,87 @@
+{
+  "city": "Seattle",
+  "leads": [
+    {
+      "name": "Capitol Hill Wishing Tree",
+      "species": "cypress (species not established)",
+      "note": "2099 E Galer St, corner of E Galer St and 21st Ave E. From data/research/seattle-wikidata-candidates.json (Q134005953). Notable for a community wish-writing tradition since 2013, not for the tree's own age or size, which no source states. Borderline on the 'genuinely old OR visually spectacular OR historically significant' bar: the significance is a social practice attached to an ordinary cypress rather than a remarkable tree. A writer or later pass should judge whether the cultural angle alone clears the bar. Sources found: en.wikipedia.org/wiki/Capitol_Hill_Wishing_Tree, capitolhillseattle.com/2016/08/the-capitol-hill-wishing-tree/ (not fetched)."
+    },
+    {
+      "name": "Anne Frank Tree at Peace Park",
+      "species": "unknown",
+      "note": "47.655575, -122.318802 per data/research/seattle-wikidata-candidates.json (Q140073088). Not researched this pass at all; time-boxed out. Worth a look next pass, likely a sapling/memorial planting rather than an old tree, so check age and remarkability before pursuing."
+    },
+    {
+      "name": "UW Quad Yoshino Cherry Trees",
+      "species": "Yoshino Cherry (Prunus x yedoensis)",
+      "note": "University of Washington Quad. Famous, widely photographed, but an avenue/ensemble of dozens of trees rather than one collectible point, per the brief's own caution about the UW cherries. No single named individual identified. Treat as blocked for a page entry; could support a collection or a species-page mention instead."
+    },
+    {
+      "name": "Volunteer Park Camperdown Elm",
+      "species": "Camperdown Elm (Ulmus glabra 'Camperdownii')",
+      "note": "Volunteer Park, closer to E Prospect St, per the official seattle.gov Volunteer Park Tree Walk PDF (SW Loop, tree #45): 'long, horizontal limbs growing to 25 feet', grafted high onto American/Siberian Elm or Scottish Elm stock. Distinctive weeping form, genuinely photogenic. No age or second source found this pass; needs a age/planting-date search and one more corroborating source."
+    },
+    {
+      "name": "Lombardy Poplar, S Lake Washington Blvd & S Atlantic St",
+      "species": "Lombardy Poplar (Populus nigra 'Italica')",
+      "note": "Per a 2002 Seattle Times article (archive.seattletimes.com/archive/20020812/bigtree12m/, fetched directly and confirmed), Seattle tree expert Arthur Lee Jacobson called this the biggest Lombardy poplar in the Northern Hemisphere. Different tree from sea_005 (the AYPE poplar on the UW campus). Needs a current-day second source (the claim is 24 years old) and exact coordinates for the intersection before it can ship; flagging here so it is not confused with or duplicated against sea_005."
+    },
+    {
+      "name": "Lombardy Poplar, Washington Park Arboretum (\"largest in North America\")",
+      "species": "Lombardy Poplar (Populus nigra 'Italica')",
+      "note": "A WebSearch snippet (not fetched from a primary page, so treat as unverified per the search-summary-is-a-lead rule) claims: 'The largest Lombardy poplar in North America is in the Washington Park Arboretum, north Seattle. It is 142 ft. high and nearly 10 ft. in diameter.' Possibly a THIRD distinct poplar from the two above, or the same claim mis-attributed. Needs a primary source and a check against the S Lake Washington Blvd claim before either can ship, to avoid two of our own pages (or two entries) claiming the same crown."
+    },
+    {
+      "name": "Kubota Garden Tanyosho Pine",
+      "species": "Tanyosho Pine (Pinus densiflora 'Umbraculifera')",
+      "note": "Historic Core Garden near the Heart Bridge, Kubota Garden. Per the official seattle.gov/Kubota Garden Foundation Tree Walk PDF (stop 8): the sole survivor of an original avenue of 15-20 planted by Fujitaro Kubota, now about 90 years old. The survivor itself is a single collectible point (the original avenue would not have been). Same source as sea_003."
+    },
+    {
+      "name": "Kubota Garden Japanese White Pine",
+      "species": "Japanese White Pine (Pinus parvifolia 'Glauca')",
+      "note": "Japanese Garden section, Kubota Garden. Per the same official Tree Walk PDF (stop 14): Fujitaro Kubota's own favorite tree, 'carefully pruned for over 80 years'. No clear planting date or age given, only the pruning duration. Needs a bit more digging on age before it can carry an age_estimate."
+    },
+    {
+      "name": "Washington Park Arboretum: Antarctic Beech",
+      "species": "Antarctic Beech (Nothofagus antarctica)",
+      "note": "Near the canoe landing on the peninsula north of Foster Island Drive, Washington Park Arboretum. Washington State champion tree per Van Pelt's 2003 book, per botanicgardens.uw.edu/about/blog/2022/01/25/champion-trees-of-the-washington-park-arboretum/. The source itself says a large stem broke out about 10 years ago and its champion status is being re-evaluated, so current vitality/appearance is uncertain. Check current health before publishing."
+    },
+    {
+      "name": "Washington Park Arboretum: Malus fusca (Western Crabapple)",
+      "species": "Western Crabapple (Malus fusca)",
+      "note": "On the trail from the Graham Visitors Center to the Witt Winter Garden, Washington Park Arboretum. State champion per the same UWBG blog source as sea_004. A native species, less visually striking than the other champions; not pursued this pass for time."
+    },
+    {
+      "name": "Washington Park Arboretum: Sorbus aria (Whitebeam)",
+      "species": "Whitebeam (Sorbus aria)",
+      "note": "B.O. Mulligan Sorbus Collection, east of the Fiddleheads Forest School classroom, Washington Park Arboretum. State champion per the same UWBG blog source as sea_004. Not pursued this pass for time."
+    },
+    {
+      "name": "Washington Park Arboretum old-growth Western Red Cedar",
+      "species": "Western Red Cedar (Thuja plicata)",
+      "note": "Per a WebSearch summary of a UW Botanic Gardens blog post ('Glimpse into the past - a Surplus of Cedar'), a native cedar that predates the Arboretum's 1934 founding, one of the few trees the Pope Lumber Company's 1880s logging missed. Not fetched directly this pass (search-summary-is-a-lead rule applies), no exact location found. Worth pursuing next pass: this would be the Arboretum's own equivalent of sea_003's Kubota Grand Fir, a pre-development survivor."
+    },
+    {
+      "name": "Seward Park Tree Walk stop 1, Douglas Fir near Audubon Center",
+      "species": "Douglas Fir (Pseudotsuga menziesii)",
+      "note": "South terrace of the Audubon Society Building, Seward Park, per the official seattle.gov Seward Park Tree Walk PDF. Explicitly only 100-200 years old per that source, i.e. a different and younger tree than sea_001 (the park's ~400-500 year old Big Tree). Not remarkable enough on its own to pursue as a separate entry given sea_001 already covers the park; noted here only so a future pass does not conflate the two."
+    },
+    {
+      "name": "Discovery Park old-growth Douglas fir stand (Wolf Tree Nature Trail / Loop Trail)",
+      "species": "Douglas Fir (Pseudotsuga menziesii)",
+      "note": "A grove/stand along the Loop Trail and Wolf Tree Nature Trail, not one named individual, so an ensemble rather than a collectible point per the brief's rule on avenues and whole woods. The only source found (bloomatree.com, a tree-care company blog) contained a literal '(placeholder: confirm with park inventory)' note in its own text, i.e. is unreliable filler content, not a real source. If a single named/mapped individual Douglas fir turns up in Discovery Park's own park history pages or HistoryLink's File 11161, that would be worth a real pass."
+    },
+    {
+      "name": "Seattle Heritage Tree Program full list (250+ trees)",
+      "species": "various",
+      "note": "Run jointly by the City and PlantAmnesty since 1996. Individual entries only visible as gold icons on the interactive Seattle Tree Inventory map (rectech.seattle.gov/trees or similar), which is a full inventory tool our semantic filter treats as bulk data, not a designation list to import wholesale. A future pass could browse the map for named/notable individual Heritage Trees (the nomination categories are Specimen, Historic, Landmark, Collection) to research one at a time, the way this pass found the Seward Park and Volunteer Park trees independently. Not a register import candidate, a browsing resource."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Green Lake Giant Sequoia",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "reason": "DEAD/REMOVED. 5834 Woodlawn Ave N, Seattle. Per treeactionseattle.org/campaigns/green-lakes-giant-sequoia, this tree was slated for removal to make way for a residential driveway despite a campaign and an alternative site plan to save it; the campaign page itself lists its status as 'Removed' as of 2025-12-17. Never ship. Recorded so no future pass rediscovers it and wastes time before finding the same removal notice."
+    }
+  ]
+}

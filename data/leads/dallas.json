@@ -1,0 +1,62 @@
+{
+ "city": "Dallas",
+ "leads": [
+  {
+   "name": "Blackjack Oak, City of Dallas park (Texas Big Tree Registry TreeID 6436)",
+   "species": "Blackjack Oak (Quercus marilandica)",
+   "reason": "County-champion-caliber blackjack oak from the Texas Big Tree Registry ArcGIS layer (circumference 121 in / 307 cm, height 61 ft, spread 81 ft, measured 2025-09-03, org City of Dallas, public). Coordinates 32.76527778, -96.75583333 but no named park identified this pass (reverse search pointed vaguely at the Oak Cliff / Lake Cliff / South Dallas area, no confident match). No second independent source found. Needs: which park, and a corroborating source, before it can verify."
+  },
+  {
+   "name": "Oriental Arborvitae, Cox Cemetery (Texas Big Tree Registry TreeID 58)",
+   "species": "Oriental Arborvitae (Thuja orientalis / Platycladus orientalis)",
+   "reason": "Texas STATE CHAMPION per the registry (circumference 85 in / 216 cm, height 42 ft, measured 2002-05-15) at Cox Cemetery near White Rock Lake (32.84135, -96.73135), a public pioneer cemetery (400+ marked graves, oldest stone 1848). Register is the only source found; a web search turned up plenty on the cemetery itself but nothing on this specific tree. Also a judgement call: an ornamental non-native cemetery arborvitae may read as a curiosity rather than an epic, walk-worthy tree even as a state champion. Needs a second source and a look at whether it clears the remarkable bar."
+  },
+  {
+   "name": "Bur Oak, City of Coppell (Texas Big Tree Registry TreeID 915)",
+   "species": "Bur Oak (Quercus macrocarpa)",
+   "reason": "Large bur oak (circumference 179 in / 455 cm, height 77 ft) at 32.98411111, -96.98019444, organization City of Coppell PARD. Coppell is a separate suburb roughly 24 km northwest of downtown Dallas, likely outside the ~30 minute day-trip boundary for a Dallas city page; would need its own city entry or a transit-time check before use here."
+  },
+  {
+   "name": "Chalk Maple, Dallas Arboretum (Texas Big Tree Registry TreeID 1253)",
+   "species": "Chalk Maple (Acer leucoderme)",
+   "reason": "Small state-registry entry (circumference 27 in / 69 cm) inside the Dallas Arboretum grounds. Modest size, not obviously remarkable on its own; recorded here as a pointer in case the Arboretum is researched in depth later (paid entry, per the brief that is allowed if access says so)."
+  },
+  {
+   "name": "Storytelling Place Comanche Marker Tree, Great Trinity Forest",
+   "species": "Texas Red Oak (Quercus texana / buckleyi)",
+   "reason": "TxHTC-documented Comanche marker tree on white limestone in the Great Trinity Forest's White Rock Heritage District, over 150 years old per TxHTC (data gathered 2002-08-06, https://txhtc.org/trees/story-telling-place-comanche-marker-tree/). Original trunk is gone; what stands today is regrowth from the old stump, so it may not read as visually a single epic tree. No precise address or coordinates given, no independent second source found, and no confirmation the stump/regrowth is still alive and standing today (source is 23 years old). Needs a current-status check, a second source and a real location before it could verify."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Champion Black Willow, White Rock Lake / East Lawther Drive",
+   "species": "Black Willow (Salix nigra)",
+   "reason": "DEAD. Was the Texas state champion black willow (circumference 265 in, added to the registry 2011) near East Lawther Drive east of White Rock Lake. Accidentally cut down by a city contractor stump-grinding crew in early Feb 2015 (NBC5, CultureMap Dallas, D Magazine, CBS News all covered it). Another black willow has since taken the state champion title elsewhere in Texas, not confirmed to be in Dallas. Never ship this entry."
+  },
+  {
+   "name": "Gateway Park Comanche Marker Tree",
+   "species": "Pecan (Carya illinoinensis)",
+   "reason": "DEAD. Per TxHTC (https://txhtc.org/trees/gateway-park-comanche-marker-tree/), officially recognized by the Comanche Tribal Government in 1997, but the tree was already in poor health from surrounding development and was lost in the Memorial Day storm of 25 May 1998. Page itself is headed 'Deceased 1998'."
+  },
+  {
+   "name": "Bird's Fort Trail Comanche Marker Tree",
+   "species": "Bur Oak (Quercus macrocarpa)",
+   "reason": "DEAD. Per TxHTC (https://txhtc.org/trees/birds-fort-trail-comanche-marker-tree/), discovered 2011, died 2018. Page headed 'Deceased 2018'."
+  },
+  {
+   "name": "Irving Escarpment Ridge Comanche Marker Tree",
+   "species": "Post Oak (Quercus stellata)",
+   "reason": "DEAD. Per TxHTC (https://txhtc.org/trees/irving-escarpment-ridge-comanche-marker-tree/), lost to extended heat and drought in 2011. Page headed 'Deceased 2011'."
+  },
+  {
+   "name": "Texas Discovery Gardens Cottonwood, Fair Park",
+   "species": "Cottonwood (Populus sp.)",
+   "reason": "DEAD/REMOVED. Per TxHTC (https://txhtc.org/trees/texas-discovery-gardens-cottonwood/ and /texas-discovery-gardens-cottonwood-3/), declared historic in 2003 after witnessing roughly 50 State Fairs, but it later became a safety hazard (sloughing bark and branches) and was removed by Preservation Tree Services; two sections were kept and carved into sculptures now displayed at the Natural Learning Center. Never ship as a living entry."
+  },
+  {
+   "name": "Cedar Ridge Comanche Marker Tree",
+   "species": "Eastern Red Cedar (Juniperus virginiana)",
+   "reason": "PRIVATE LAND. Per TxHTC (https://txhtc.org/trees/cedar-ridge-comanche-marker-tree/), the Comanche Nation Tribal Elder Council visited the tree in 2002 only at the invitation of the landowner. No evidence found this pass of general public access; treat as private under hard rule 10 unless a later pass finds the site has since opened to visitors."
+  }
+ ]
+}

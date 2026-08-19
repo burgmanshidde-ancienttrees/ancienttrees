@@ -1,0 +1,246 @@
+[
+  {
+    "id": "mex_001",
+    "name": "El Sabino de San Juan",
+    "species": "Montezuma Cypress (Taxodium mucronatum)",
+    "age_estimate": "roughly 500 years (legendary date, unverified)",
+    "age_min": 300,
+    "age_max": 500,
+    "girth_cm": 1854,
+    "location": {
+      "address": "Plazuela de San Juan Bautista, Calle Plazuela San Juan, Barrio San Juan (Colonia Xacalco), Xochimilco, CP 16000",
+      "latitude": 19.26583,
+      "longitude": -99.10655,
+      "neighbourhood": "Barrio de San Juan, Xochimilco"
+    },
+    "verified_sources": [
+      "https://proyectos.sedema.cdmx.gob.mx/arbolespatrimoniales/arboles.html (KML placemark 7, SEDEMA official Arboles Patrimoniales register, coordinates + species + circumference)",
+      "https://www.excelsior.com.mx/comunidad/ahuehuete-de-casi-500-anos-colapsa-en-xochimilco/1264245",
+      "https://www.eluniversal.com.mx/metropoli/cdmx/cae-ahuehuete-de-500-anos-de-antiguedad-en-xochimilco/"
+    ],
+    "access": "Free, standing in a public plazuela (small plaza) in the barrio of San Juan, open at all times.",
+    "transport": "In central Xochimilico, within walking distance (roughly 1-1.5 km) of the Xochimilico historic centre and the Tren Ligero Xochimilico terminus; exact walk time not independently confirmed.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "SEDEMA's official 'Arboles Patrimoniales' register (KML, Aug 2025 gazette-backed declaration) lists this ahuehuete at Plazuela San Juan Bautista, Xochimilico: total height recorded as 24.5 m (matches an independently found figure of '24.5 metros' for this same tree elsewhere), trunk diameter (DAP) 590 cm, circumference 1853.544 cm -> girth_cm rounded to 1854. That girth is unusually large for the city's other patrimonial ahuehuetes (next-largest here is ~1382 cm), so treat it as a single-source figure pending a second measurement. Age: local legend (chronicler Rodolfo Cordero Lopez) holds it was planted by Cuauhtemoc in 1521 in gratitude to the Xochimilca people; this is a story, not a documented planting date, so age_estimate is left broad and the 500-year figure is reported as legend, never sharpened. IMPORTANT CAUTION FOR ALIVE-NOW CHECK: multiple news sources (Excelsior, El Universal, Lopez Doriga) report that in September 2018 this same tree ('El Sabino', ~500 years old, Plazuela San Juan Bautista) partially collapsed/broke in strong winds after specialists from Universidad de Chapingo had flagged inadequate maintenance a year earlier. However, SEDEMA's own Arboles Patrimoniales register was compiled and the tree measured/declared in 2025, seven years after that event, which is strong evidence a living remainder still stands and was assessed as 'Buena' or similar recent condition (full condition field was truncated in the fetched KML text and should be re-checked). Delivered flagged rather than confidently 'alive and undamaged' because the 2018 collapse is real and its long-term aftermath (full tree vs. surviving portion) was not independently re-confirmed by a post-2018 photo or article in this pass; the writer should say plainly that the tree lost part of its structure in 2018 and note it stands today per the 2025 official register."
+  },
+  {
+    "id": "mex_002",
+    "name": "El Viejo del Agua (Ahuehuete de Santa Catarina)",
+    "species": "Montezuma Cypress (Taxodium mucronatum)",
+    "age_estimate": "roughly 700 years (city's own estimate, basis not published)",
+    "age_min": 500,
+    "age_max": 700,
+    "girth_cm": 1382,
+    "location": {
+      "address": "Prolongacion Tlatenco 20, Colonia Santa Catarina, Azcapotzalco, CP 02250 (behind the Escuela Primaria Sotero Prieto, next to the Parroquia de Santa Catarina Martir)",
+      "latitude": 19.49106,
+      "longitude": -99.17713,
+      "neighbourhood": "Barrio de Santa Catarina, Azcapotzalco"
+    },
+    "verified_sources": [
+      "https://proyectos.sedema.cdmx.gob.mx/arbolespatrimoniales/arboles.html (KML placemark 6, SEDEMA official Arboles Patrimoniales register)",
+      "https://www.infobae.com/mexico/2025/06/28/declaran-patrimonio-natural-de-la-ciudad-de-mexico-a-arbol-con-700-anos-de-edad-en-azcapotzalco/",
+      "https://www.jefaturadegobierno.cdmx.gob.mx/comunicacion/nota/clara-brugada-declara-patrimonio-natural-un-ahuehuete-de-700-anos-y-anuncia-plan-de-proteccion-y-conservacion-de-los-arboles-de-la-ciudad"
+    ],
+    "access": "Free, standing beside the Santa Catarina Martir parish/plaza in the historic barrio; publicly visible year round.",
+    "transport": "In the Barrio de Santa Catarina, Azcapotzalco; nearest Metro is Camarones (Linea 7) or El Rosario area, roughly 2 km away. Exact walk time not independently confirmed.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Named 'El Viejo del Agua' (ahuehuete = Nahuatl for 'old one of the water') on 27-28 June 2025 by Mexico City's Head of Government Clara Brugada, the first tree declared under the new 'Arboles Patrimoniales' programme, timed to the 700th anniversary of the founding of Tenochtitlan. Multiple outlets (Infobae, the Jefatura de Gobierno's own press release, Publimetro) independently report the '700 years' figure but none states how it was derived (no growth-rate or ring-count method given) -- treat as a claim repeated at face value, not a derived estimate, hence the broad 500-700 band rather than a sharp 700. SEDEMA's own register gives circumference 1382.30 cm (girth_cm 1382) and total height recorded as '2700' in the source KML, which is almost certainly 27.00 m with the decimal stripped (the same register has several other height fields that read as physically impossible four-digit numbers, e.g. 2200, 2750, 2800, all of which resolve to sane 22-28 m figures once divided by 100; flagging this as a register data-quality issue for future passes). Stands behind a primary school and beside the parish church; described in press coverage as a living witness the community rallied around, consistent with being alive and in good condition as of the June 2025 declaration."
+  },
+  {
+    "id": "mex_003",
+    "name": "Laureano",
+    "species": "Indian Laurel (Ficus microcarpa)",
+    "age_estimate": "disputed: sources give 35 years and separately 100-115 years",
+    "age_min": 35,
+    "age_max": 115,
+    "girth_cm": 282,
+    "location": {
+      "address": "Miguel Laurent 48, corner of Calle Fresas, Colonia Tlacoquemecatl del Valle, Benito Juarez, CP 03200",
+      "latitude": 19.37758,
+      "longitude": -99.17546,
+      "neighbourhood": "Tlacoquemecatl del Valle, Benito Juarez"
+    },
+    "verified_sources": [
+      "https://proyectos.sedema.cdmx.gob.mx/arbolespatrimoniales/arboles.html (KML placemark 12, SEDEMA official Arboles Patrimoniales register)",
+      "https://www.eluniversal.com.mx/metropoli/laureano-sera-declarado-arbol-patrimonial-de-la-cdmx-inmobiliaria-pretendia-talarlo/",
+      "https://www.eluniversal.com.mx/tendencias/que-es-un-laureano-el-arbol-centenario-que-lograron-proteger-en-cdmx/"
+    ],
+    "access": "Free, stands on the public sidewalk at the street corner; visible and reachable at any time.",
+    "transport": "In Colonia Tlacoquemecatl del Valle, Benito Juarez, roughly 1.5 km from Metro Division del Norte (Linea 3); walk time not independently confirmed.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "A neighbourhood-famous sidewalk tree that a real-estate developer intended to fell for a construction project; residents and the alcaldia Benito Juarez, working with SEDEMA, agreed not to touch it and it was formally declared an Arbol Patrimonial on the same 27-28 June 2025 occasion as the other trees in this batch, named 'Laureano' by the community. SEDEMA's register gives total height 23 m, trunk diameter (DAP) 90 cm, circumference 282 cm (girth_cm 282), crown width nearly 20 m. AGE CONFLICT, delivered per the two-source rule rather than resolved: El Universal's own coverage gives two different ages for the same tree in different pieces, 35 years in one and 100-115 years ('mas de 100 anos') in another describing it as centenario; do not silently pick one, state both to the reader and flag it. Its rescue-from-felling story and the sidewalk-corner setting (readable trunk and crown from the street) make it a strong collectible point independent of the age question."
+  },
+  {
+    "id": "mex_004",
+    "name": "Eugenio",
+    "species": "Shamel Ash (Fraxinus uhdei)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 383,
+    "location": {
+      "address": "Cerrada de Eugenia 28, Colonia Del Valle, Benito Juarez, CP 03100",
+      "latitude": 19.38827,
+      "longitude": -99.16593,
+      "neighbourhood": "Del Valle, Benito Juarez"
+    },
+    "verified_sources": [
+      "https://proyectos.sedema.cdmx.gob.mx/arbolespatrimoniales/arboles.html (KML placemark 13, SEDEMA official Arboles Patrimoniales register)",
+      "https://politica.expansion.mx/cdmx/2025/08/09/vecinos-lamentan-autorizacion-para-talar-el-arbol-eugenito-en-cdmx"
+    ],
+    "access": "Free, standing inside/beside the residential lot at Cerrada de Eugenia 28-32, visible from the street; register lists the location type as 'interior of the property', so confirm on the ground whether it reads as street-visible or set back.",
+    "transport": "In Colonia Del Valle, Benito Juarez, close to Eje 5 Sur; nearest Metro is roughly 1-1.5 km away (Etiopia/Plaza de la Transparencia or Division del Norte, Linea 3). Walk time not independently confirmed.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Nominated 13 June 2024 by the 'Colectivo de Vecinos de Cerrada de Eugenia' and formally declared an Arbol Patrimonial. IMPORTANT DISAMBIGUATION: a different, unprotected Fraxinus uhdei nearby, nicknamed 'Eugenito', was legally felled on 6 August 2025 by a construction company (Adince) under a 2024 permit predating the patrimonial declaration; several news stories about 'Eugenito' being cut down could be mistaken for this tree. 'Eugenio' itself is NOT the felled tree and retains its protected status as of this pass (per Expansion's own reporting, which explicitly distinguishes the two). SEDEMA's register gives total height recorded as '3000' (almost certainly 30.00 m, decimal stripped, consistent with the register-wide pattern noted on mex_002), trunk diameter (DAP) 122 cm, circumference 383.28 cm (girth_cm 383). No age figure found in any source; leave age_estimate empty rather than guess, and the page should ask readers if anyone knows a planting date. Location type in the register reads as being just inside the property line rather than fully on the public sidewalk; a pass with local eyes should confirm exactly how visible/accessible it is before publishing the access line as final."
+  },
+  {
+    "id": "mex_005",
+    "name": "Ahuehuete de Parque Espana",
+    "species": "Montezuma Cypress (Taxodium mucronatum)",
+    "age_estimate": "about 105 years (documented planting date, 21 September 1921)",
+    "age_min": 104,
+    "age_max": 106,
+    "girth_cm": 503,
+    "location": {
+      "address": "Inside Parque Espana, Avenida Sonora, Colonia Roma Norte, Cuauhtemoc, CP 06700",
+      "latitude": 19.41603,
+      "longitude": -99.17037,
+      "neighbourhood": "Roma Norte, Cuauhtemoc"
+    },
+    "verified_sources": [
+      "https://proyectos.sedema.cdmx.gob.mx/arbolespatrimoniales/arboles.html (KML placemark 5, SEDEMA official Arboles Patrimoniales register)",
+      "https://www.excelsior.com.mx/comunidad/el-parque-espana-y-su-ahuehuete-cumplen-100-anos/1472787",
+      "https://www.eluniversal.com.mx/metropoli/declaran-patrimonio-natural-de-cdmx-a-dos-ahuehuetes-ubicados-en-tacuba-y-parque-espana-ya-suman-varios-ejemplares/"
+    ],
+    "access": "Free, standing inside the public Parque Espana, open daily during park hours.",
+    "transport": "In Roma Norte; roughly 900 m from Metro Insurgentes (Linea 1) or Metrobus Alvaro Obregon, about a 10-12 minute walk.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Planted 21 September 1921 to mark the park's inauguration for the centenary of Mexican independence; Excelsior's 2021 centenary piece quotes the planting date directly and describes the tree that year as 'leafy, full of life' and among the tallest in the park, a genuine documented-planting-date estimate rather than a legend. El Universal separately confirms it as one of the two ahuehuetes (with Tacuba) declared Patrimonio Natural in the June 2025 SEDEMA batch, which post-dates and re-confirms the 2021 alive report. NOTE: an unrelated search snippet (foodandpleasure.com) gave the same tree's age as '127 years', which does not match either the 1921 planting date (105 years in 2026) or any cited source found in this pass; that figure is not used and looks like an error in that outlet. SEDEMA register: total height '2800' in the source KML almost certainly 28.00 m (decimal-stripped, see mex_002 note), trunk diameter (DAP) 160 cm, circumference 502.66 cm (girth_cm rounded to 503), crown roughly 16 x 23 m."
+  },
+  {
+    "id": "mex_006",
+    "name": "Ahuehuete del Jardin de San Fernando",
+    "species": "Montezuma Cypress (Taxodium mucronatum)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 550,
+    "location": {
+      "address": "Eje 1 Poniente Guerrero S/N, inside the Jardin de San Fernando, corner of Avenida Hidalgo and Calle San Fernando, Colonia Guerrero, Cuauhtemoc, CP 06300",
+      "latitude": 19.43835,
+      "longitude": -99.14887,
+      "neighbourhood": "Guerrero, Cuauhtemoc"
+    },
+    "verified_sources": [
+      "https://proyectos.sedema.cdmx.gob.mx/arbolespatrimoniales/arboles.html (KML placemark 2, SEDEMA official Arboles Patrimoniales register)",
+      "https://www.eluniversal.com.mx/metropoli/gobierno-de-cdmx-declara-a-los-arboles-jardin-san-fernando-y-glorieta-de-ahuehuetes-como-patrimonio-natural-de-la-ciudad/"
+    ],
+    "access": "Free, standing inside the small public Jardin de San Fernando, open daily; the adjoining Panteon de San Fernando (a separate, ticketed historic cemetery where Benito Juarez is buried) is not the tree's location.",
+    "transport": "In the Guerrero neighbourhood; roughly 600-800 m from Metro Hidalgo (Lineas 2 and 3), a short walk.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "One of the earliest pair declared under SEDEMA's 2025 Arboles Patrimoniales programme, together with the Glorieta de Ahuehuetes tree in Azcapotzalco (mex not yet delivered as its own entry this pass; see leads). El Universal's coverage of the joint decree gives height approximately 25 m and trunk diameter 158 cm per the official decree text, which sits close to but not identical with SEDEMA's own register figures (DAP 175 cm, circumference 549.78 cm, girth_cm 550, crown 22 x 16 m, height recorded as 28 m in the KML); the two figures likely come from different measurement passes, note the discrepancy rather than silently picking one. No age figure found in any source for this specimen; leave age_estimate empty and let the page ask readers. The Jardin de San Fernando itself is a small historic square in the Guerrero neighbourhood, distinct from the adjacent, separately-managed Panteon de San Fernando."
+  },
+  {
+    "id": "mex_007",
+    "name": "Ahuehuete de Tacuba",
+    "species": "Montezuma Cypress (Taxodium mucronatum)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 1005,
+    "location": {
+      "address": "Avenida Marina Nacional 368, corner with Golfo de Bengala, Colonia Tacuba, Miguel Hidalgo, CP 11410",
+      "latitude": 19.45763,
+      "longitude": -99.18879,
+      "neighbourhood": "Tacuba, Miguel Hidalgo"
+    },
+    "verified_sources": [
+      "https://proyectos.sedema.cdmx.gob.mx/arbolespatrimoniales/arboles.html (KML placemark 1, SEDEMA official Arboles Patrimoniales register)",
+      "https://www.eluniversal.com.mx/metropoli/declaran-patrimonio-natural-de-cdmx-a-dos-ahuehuetes-ubicados-en-tacuba-y-parque-espana-ya-suman-varios-ejemplares/"
+    ],
+    "access": "Free, standing on the public sidewalk (banqueta) at the street corner, visible and reachable at any time.",
+    "transport": "In the historic Tacuba neighbourhood (site of the Noche Triste/Noche Victoriosa retreat route); roughly 900 m-1 km from Metro Tacuba (Linea 2 and 7 interchange).",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Declared Patrimonio Natural together with the Parque Espana ahuehuete (mex_005) in the same SEDEMA decree; El Universal's coverage names both trees and their boroughs but gives no measurements or age for this specimen. SEDEMA's register: total height recorded as '2200' in the source KML, almost certainly 22.00 m once the stripped decimal is restored (see the register data-quality note on mex_002), trunk diameter (DAP) 320 cm, circumference 1005.31 cm (girth_cm rounded to 1005), crown 18 m wide. No age figure found in any source; left empty. Sits on a street corner in Tacuba, the same historic district as the (dead, blocked) Arbol de la Noche Victoriosa a short distance away; a good honest contrast for the writer, a living heritage tree standing near the famous dead one, but the two are not the same tree and should never be conflated."
+  },
+  {
+    "id": "mex_008",
+    "name": "Ahuehuete de San Diego Churubusco",
+    "species": "Montezuma Cypress (Taxodium mucronatum)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 484,
+    "location": {
+      "address": "Calle 20 de Agosto S/N, inside the grounds of the Ex-Convento de Churubusco / Parque del Monumento a la Batalla de Churubusco, Colonia San Diego Churubusco, Coyoacan, CP 04120",
+      "latitude": 19.35416,
+      "longitude": -99.14853,
+      "neighbourhood": "San Diego Churubusco, Coyoacan"
+    },
+    "verified_sources": [
+      "https://proyectos.sedema.cdmx.gob.mx/arbolespatrimoniales/arboles.html (KML placemark 3, SEDEMA official Arboles Patrimoniales register)",
+      "https://www.eluniversal.com.mx/metropoli/ahuehuetes-rio-magdalena-y-san-diego-churubusco-son-declarados-patrimonio-natural-de-cdmx-ya-suman-10-arboles-centenarios/"
+    ],
+    "access": "Free, standing in the public plaza/park around the former convent (which today houses the Museo Nacional de las Intervenciones); open during park hours.",
+    "transport": "In Coyoacan, roughly 500-700 m from Metro General Anaya (Linea 2).",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "TWIN TRUNKS: the SEDEMA register records two diameter/circumference readings for this specimen (DAP 154.00 and 161.00 cm; circumference 483.80 and 505.79 cm), i.e. either a forked multi-stem tree or two trees registered as one entry; girth_cm given here uses the first listed figure, 483.80 rounded to 484; a writer or later pass should clarify on the ground whether this is one tree with two stems or two adjacent trees folded into one register entry (see the register-twins rule). Height recorded as '20,2' (comma as decimal separator) = 20.2 m, crown roughly 16.5 m. El Universal confirms the declaration and location (Coyoacan, paired with a 'Rio Magdalena' ahuehuete, mex_009) but gives no additional measurements or age. Stands on the grounds of the Ex-Convento de Churubusco, site of the 1847 Battle of Churubusco (Mexican-American War) and now the Museo Nacional de las Intervenciones; strong historical setting even without a documented tree age."
+  },
+  {
+    "id": "mex_009",
+    "name": "Ahuehuete de Rio Magdalena (Callejon del Rio)",
+    "species": "Montezuma Cypress (Taxodium mucronatum)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 565,
+    "location": {
+      "address": "Callejon del Rio S/N, on the camellon (median) behind the Casa Hogar CAHOVA DIF Nacional, Colonia Santa Catarina, Coyoacan, CP 04010",
+      "latitude": 19.35149,
+      "longitude": -99.1775,
+      "neighbourhood": "Barrio de Santa Catarina, Coyoacan"
+    },
+    "verified_sources": [
+      "https://proyectos.sedema.cdmx.gob.mx/arbolespatrimoniales/arboles.html (KML placemark 9, SEDEMA official Arboles Patrimoniales register)",
+      "https://www.eluniversal.com.mx/metropoli/ahuehuetes-rio-magdalena-y-san-diego-churubusco-son-declarados-patrimonio-natural-de-cdmx-ya-suman-10-arboles-centenarios/"
+    ],
+    "access": "Free, standing on a public median (camellon) along the historic Callejon del Rio, following the course of the Rio Magdalena; open at all times.",
+    "transport": "In the Barrio de Santa Catarina, Coyoacan, an easy walk (roughly 700-900 m) from the Jardin Centenario / Coyoacan historic centre; nearest Metrobus is Av. Miguel Angel de Quevedo, about 1 km away.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "News coverage names this pair 'Rio Magdalena y San Diego Churubusco'; the register's own address (Callejon del Rio, Barrio Santa Catarina) sits along the historic course of the Rio Magdalena, so this is very likely the same tree the press calls the 'Rio Magdalena' ahuehuete, though no source states the two names refer to the identical specimen explicitly -- flagged for that reason. SEDEMA register: total height recorded as '2660' in the source KML, almost certainly 26.60 m (decimal-stripped, see mex_002 note), trunk diameter (DAP) 180 cm, circumference 565.49 cm (girth_cm rounded to 565), crown 15 m wide. No age figure found. Forms a walkable pair (roughly 700 m apart) with the Francisco Sosa fresno (mex_010) in the same Barrio de Santa Catarina, both a short walk from Coyoacan's historic centre and the Viveros de Coyoacan park."
+  },
+  {
+    "id": "mex_010",
+    "name": "Fresno de Santa Catarina (Avenida Francisco Sosa)",
+    "species": "Shamel Ash (Fraxinus uhdei)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 613,
+    "location": {
+      "address": "Avenida Francisco Sosa 202, Colonia Santa Catarina, Coyoacan, CP 04010",
+      "latitude": 19.3494,
+      "longitude": -99.17045,
+      "neighbourhood": "Barrio de Santa Catarina, Coyoacan"
+    },
+    "verified_sources": [
+      "https://proyectos.sedema.cdmx.gob.mx/arbolespatrimoniales/arboles.html (KML placemark 8, SEDEMA official Arboles Patrimoniales register)",
+      "https://www.eluniversal.com.mx/metropoli/declaran-a-fresno-de-santa-catarina-como-patrimonio-natural-de-la-cdmx-suman-12-arboles-protegidos/"
+    ],
+    "access": "Free, standing on the public sidewalk (banqueta) of the property at number 202, visible and reachable at any time.",
+    "transport": "In the Barrio de Santa Catarina, Coyoacan, on the historic Avenida Francisco Sosa, an easy walk (roughly 700-900 m) from the Jardin Centenario / Coyoacan historic centre.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "The 12th and last tree declared in this SEDEMA batch, confirmed by El Universal as a fresno (ash) on Avenida Francisco Sosa, Coyoacan, but the article gives no measurements or age. SEDEMA register: total height recorded as '2650' in the source KML, almost certainly 26.50 m (decimal-stripped, see mex_002 note), trunk diameter (DAP) 195 cm, circumference 612.61 cm (girth_cm rounded to 613), crown roughly 26 m wide. No age figure found; left empty. Avenida Francisco Sosa is one of Coyoacan's best-known historic streets, lined with colonial-era houses; this tree and the Rio Magdalena ahuehuete (mex_009) sit roughly 700 m apart in the same barrio and form a natural walking pair a short distance from the Jardin Centenario, Viveros de Coyoacan and the Coyoacan historic centre."
+  }
+]

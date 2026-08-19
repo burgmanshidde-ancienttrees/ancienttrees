@@ -1,0 +1,195 @@
+[
+ {
+  "id": "dal_001",
+  "name": "The Line-of-Sight Oak",
+  "species": "Live Oak (Quercus virginiana)",
+  "age_estimate": "about 85-90 years",
+  "age_min": 80,
+  "age_max": 95,
+  "girth_cm": 247,
+  "location": {
+   "address": "Dealey Plaza, near the Elm Street pergola, West End Historic District, Dallas, TX",
+   "latitude": 32.7796,
+   "longitude": -96.809,
+   "neighbourhood": "West End Historic District"
+  },
+  "verified_sources": [
+   "https://txhtc.org/trees/dealey-plaza-grove/",
+   "https://en.wikipedia.org/wiki/Grassy_knoll"
+  ],
+  "access": "Free, a public city park (Dealey Plaza), open at all times",
+  "transport": "DART West End station, about 5-8 minute walk",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Live Oak in Dealey Plaza, Dallas, one of the trees the Texas Historic Tree Coalition (formerly Dallas Historic Tree Coalition) individually named and measured when it designated the Dealey Plaza Grove historic on 6 Nov 1999. TxHTC calls this the line-of-sight tree: bullets fired at President Kennedy on 22 Nov 1963 passed through its canopy as the presidential limousine emerged from behind it on Elm Street. Measurements per TxHTC (dated Nov 1999): height 30 ft, crown spread 60 ft, circumference 97.4 in (247 cm, girth_cm converted from inches). TxHTC estimated age over 60 years as of 1999 (i.e. planted in the late 1930s, when Dealey Plaza itself was built) -- age_estimate here is derived from that documented planting era for these specific trees, not a bridge from the park date alone. Wikipedia Grassy knoll article independently corroborates that ten tall, wide, low-hanging live oaks stood in the plaza on the day of the assassination and that live oaks remain today. Dealey Plaza was designated a National Historic Landmark District in 1993; the tree grove itself was declared historic by the city in 1999. No exact tree-level GPS found; location_precision approximate, pin set to the pergola area of the plaza near where TxHTC places the line-of-sight tree on the grassy-knoll side of Elm Street. TxHTC also separately measured two other named trees in the same grove worth noting for a later pass: the Grassy Knoll Live Oak (delivered separately as dal_002) and the Houston Street Live Oak (131.95 in circumference, part of a row of six along the fountains, less individually distinguished, recorded as a lead)."
+ },
+ {
+  "id": "dal_002",
+  "name": "The Grassy Knoll Oak",
+  "species": "Live Oak (Quercus virginiana)",
+  "age_estimate": "about 85-90 years",
+  "age_min": 80,
+  "age_max": 95,
+  "girth_cm": 319,
+  "location": {
+   "address": "The grassy knoll, Dealey Plaza, north side of Elm Street, West End Historic District, Dallas, TX",
+   "latitude": 32.7789,
+   "longitude": -96.8089,
+   "neighbourhood": "West End Historic District"
+  },
+  "verified_sources": [
+   "https://txhtc.org/trees/dealey-plaza-grove/",
+   "https://en.wikipedia.org/wiki/Grassy_knoll"
+  ],
+  "access": "Free, a public city park (Dealey Plaza), open at all times",
+  "transport": "DART West End station, about 5-8 minute walk",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Live Oak on the grassy knoll itself, the low rise on the north side of Elm Street in Dealey Plaza that became one of the most disputed patches of ground in American history: some witnesses to the 22 Nov 1963 Kennedy assassination believed a shot came from behind the picket fence at its top, though police found no gunman there. Individually named and measured by the Texas Historic Tree Coalition (formerly Dallas Historic Tree Coalition) when it declared the Dealey Plaza Grove historic on 6 Nov 1999: height 40 ft, crown spread 96 ft, circumference 125.6 in (319 cm, girth_cm converted from inches), largest of the three named trees in that record. TxHTC dates the grove to the late 1930s planting that finished Dealey Plazas construction, over 60 years old as of the 1999 measurement -- basis for the age estimate here. Wikipedia Grassy knoll independently confirms ten tall, wide, low-hanging live oaks stood on the knoll on the day of the assassination and that live oaks remain there today. Same grove and same designation event as dal_001 (Line-of-Sight Oak), a separate named tree at a different, equally iconic spot within the same small plaza (the two stand roughly 60-100m apart, both easily reached on the same short walk). No exact tree-level GPS found; location_precision approximate, pin set to the grassy knoll landform itself (32.7789, -96.8089 per public landmark listings), which is a compact, unambiguous place to stand."
+ },
+ {
+  "id": "dal_003",
+  "name": "The W.W. Glover Cemetery Post Oak",
+  "species": "Post Oak (Quercus stellata)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 422,
+  "location": {
+   "address": "6650 Military Parkway, Dallas, TX 75227 (W.W. Glover Cemetery)",
+   "latitude": 32.77289983,
+   "longitude": -96.70589983,
+   "neighbourhood": "Urbandale"
+  },
+  "verified_sources": [
+   "https://tfsgis02.tfs.tamu.edu/arcgis/rest/services/BigTreeRegistry/BigTreeRegistry/MapServer/1 (Texas Big Tree Registry, Texas A&M Forest Service, TreeID 2356)",
+   "https://www.constellationoflivingmemorials.org/wwglover"
+  ],
+  "access": "Free, a public pioneer cemetery on a one-acre plot at 6650 Military Parkway; volunteer-maintained and generally visitable, guided tours can be arranged via cemetery@dallascounty.org",
+  "transport": "No nearby DART rail station; nearest is a car or rideshare, roughly 15 minutes from downtown Dallas",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Texas Big Tree Registry (Texas A&M Forest Service, TreeID 2356) lists this as the Dallas County champion Post Oak: circumference 166 in (422 cm, girth_cm converted), height 50 ft, spread 49 ft, measured 2020-09-10, marked public (PublicOrPrivate=1), condition code 2, organization W.W. Glover Cemetery. Coordinates are the registers own tree-level lat/lon, which is why location_precision is confirmed. Second source, constellationoflivingmemorials.org, independently calls it the largest post oak tree in Dallas County per the same registry and gives the cemetery its own history: founded on land acquired 1844 by settler George W. Glover, deeded 1872 to his son William Wald Glover, first burial 1857 (5-year-old Sarah Beeman), over 70 pioneer-era graves, last used 1951, now volunteer-maintained, a Texas historical marker site. No source gives the trees own age or a documented planting date, so age_estimate is left empty rather than guessed: post oaks are notably slow-growing and long-lived (some Texas specimens exceed 300-400 years), which is context, not a dated claim for this individual tree. Worth asking the reader for a girth-based estimate or a known planting story. Species is a single, unambiguous register field (Quercus stellata), not flagged for that reason; curation_status flagged only because age is undocumented."
+ },
+ {
+  "id": "dal_004",
+  "name": "The Bur Oak at Big Spring",
+  "species": "Bur Oak (Quercus macrocarpa)",
+  "age_estimate": "over 235 years",
+  "age_min": 235,
+  "age_max": 260,
+  "girth_cm": 375,
+  "location": {
+   "address": "Big Spring Preserve, Great Trinity Forest, near Pemberton Hill Road, Dallas, TX 75217",
+   "latitude": 32.72957,
+   "longitude": -96.71877,
+   "neighbourhood": "Pleasant Grove / Pemberton Hill, Great Trinity Forest"
+  },
+  "verified_sources": [
+   "https://txhtc.org/trees/the-bur-oak-at-big-spring/",
+   "https://dallastrinitytrails.blogspot.com/2014/04/big-spring-bur-oak-becomes-official.html"
+  ],
+  "access": "Free, a public city-owned nature preserve in the Great Trinity Forest; park near the Texas Horse Park entrance, 811 Pemberton Hill Road",
+  "transport": "No nearby DART rail; nearest is a car or rideshare, roughly 15-20 minutes from downtown Dallas",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Bur Oak growing beside Big Spring, a natural spring on the edge of the Great Trinity Forest in southern Dallas. Declared an Official Historic Tree by the Texas Historic Tree Coalition on 29 March 2014; TxHTCs own record (data gathered that day) gives: estimated age over 235 years, height 60 ft, crown spread 65 ft, and circumference recorded as 47 inch DIAMETER (not circumference) -- girth_cm here is converted from that diameter via pi (47 in = 119.4 cm diameter, circumference approx 375 cm); flag this conversion for the writer. Second source, a Dallas Trinity Trails blog post from the same week, independently covers the same designation ceremony and figures. History per TxHTC: Big Spring was one of the first Dallas-area sites settled by Europeans, claimed 1842 by John Beeman (whose daughter Margaret married Dallas founder John Neely Bryan in 1843); Sam Houston and his Indian Treaty Delegation camped at the spring in summer 1843 while the oak was, per TxHTCs own account, about 60 years old already. City of Dallas bought the spring and bottomlands in 2003 (Great Trinity Forest Project) and designated the surrounding 15 acres a Historic Overlay District in 2016, the first time Dallas used that designation for a site rather than a building. No tree-level GPS found; location_precision approximate, pin set to the Big Spring Preserve area (coordinates per bigspringdallas.org, 32\u00b043.774N 96\u00b043.126W). Age given as over 235 years is TxHTCs own dated estimate for this specific tree (as of 2014), not a bridge claim; note for the writer it is now roughly a decade older than that 2014 figure."
+ },
+ {
+  "id": "dal_005",
+  "name": "The Centennial Tree",
+  "species": "Bur Oak (Quercus macrocarpa)",
+  "age_estimate": "over 250 years",
+  "age_min": 250,
+  "age_max": 280,
+  "girth_cm": 488,
+  "location": {
+   "address": "Reverchon Park, 3505 Maple Avenue, Dallas, TX 75219",
+   "latitude": 32.8004,
+   "longitude": -96.8129,
+   "neighbourhood": "Oak Lawn"
+  },
+  "verified_sources": [
+   "https://arbormasters.com/centennial-tree/",
+   "https://dallascityhall.com/projects/forestry/Pages/Historic-Trees-and-Forest-Overlay.aspx"
+  ],
+  "access": "Free, a public city park (Reverchon Park), open daily",
+  "transport": "DART Cityplace/Uptown or Katy Trail area; roughly 10-15 minute walk from the nearest DART rail stop, easier by bike or car",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Bur Oak in Reverchon Park, Dallas, estimated over 250 years old per Arbor Masters (TreeTech), making it older than the city itself; stands about 70 ft tall with a trunk circumference of roughly 16 ft (488 cm, girth_cm converted from feet). Named the Centennial Tree in 1936 when a celebration for the Texas Centennial of independence from Mexico was held at the tree site. Given official protected status in 2015 under the City of Dallas Historic Tree Preservation Program (the citys own forestry/historic-trees page confirms the program and its protections, serving as the second, independent source for the trees standing and protected status; the specific 250+ year age figure is Arbor Masters own). No exact tree-level coordinates found in either source; location_precision approximate, pin set to Reverchon Park (park entrance near Maple Ave and Oak Lawn Ave). Bur oaks are exceptionally long-lived and this age is broadly consistent with its size, but the age figure itself rests on Arbor Masters account rather than a dendrological measurement in the sources found this pass -- flag for the writer as a single-source age claim worth a second look if time allows."
+ },
+ {
+  "id": "dal_006",
+  "name": "The West Dallas Gateway Pecan",
+  "species": "Pecan (Carya illinoinensis)",
+  "age_estimate": "about 175 years",
+  "age_min": 165,
+  "age_max": 190,
+  "girth_cm": null,
+  "location": {
+   "address": "West end of the Commerce Street Bridge at Beckley Avenue, West Dallas, Dallas, TX",
+   "latitude": 32.7746,
+   "longitude": -96.8125,
+   "neighbourhood": "West Dallas"
+  },
+  "verified_sources": [
+   "https://txhtc.org/trees/west-dallas-gateway-pecan/",
+   "https://oakcliff.advocatemag.com/2022/11/gateway-pecan-tree/"
+  ],
+  "access": "Free, standing on public right-of-way/parkland at a city street intersection, visible and reachable at all times",
+  "transport": "No nearby DART rail station; nearest is a car, bike or rideshare, roughly 10 minutes from downtown Dallas across the Commerce Street bridge",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Pecan tree that has stood at the west end of the Commerce Street Bridge over the Trinity River, on the south side of its intersection with Beckley Avenue, since before the first bridge there was built in 1855 -- TxHTC calls it as old as the city of Dallas itself and dates it to over 175 years. It watched the last bison herds and their hunters, then cattle drives on the Shawnee Trail/Texas Road, then the automobile age; it sat in the Trinity River floodplain and survived floods in 1866, 1871, 1890 and 1908. Neighbour Katherine Homan led a campaign that saved the tree from a 2009 city intersection redesign; it has since lost three major limbs and been hit by vehicles multiple times but survives. Formally recognized by the Texas Historic Tree Coalition in 2023 with a permanent designation plaque, a partnership between the Fort Worth Avenue Development Group and the Trinity Park Conservancy. Second source, an Oak Cliff Advocate news article (Nov 2022) on the same recognition, independently corroborates the age, location and history. No girth/circumference figure found in either source this pass -- leave girth_cm empty rather than guess. No tree-level GPS found; location_precision approximate, pin set near the Beckley Avenue/Commerce Street Trinity River crossing (coordinates estimated from OSM road geometry, not a mapped tree location) -- a session with map tooling should tighten this before publishing, since the tree stands at a specific, well-documented street corner."
+ },
+ {
+  "id": "dal_007",
+  "name": "The Ferris Plaza Live Oaks",
+  "species": "Southern Live Oak (Quercus virginiana)",
+  "age_estimate": "about 75 years",
+  "age_min": 65,
+  "age_max": 90,
+  "girth_cm": 335,
+  "location": {
+   "address": "400 South Houston Street, Dallas, TX 75202 (Ferris Plaza)",
+   "latitude": 32.77639,
+   "longitude": -96.80667,
+   "neighbourhood": "West End Historic District / Downtown"
+  },
+  "verified_sources": [
+   "https://txhtc.org/trees/ferris-plaza-live-oak-grove/",
+   "https://en.wikipedia.org/wiki/Ferris_Plaza",
+   "https://downtowndallasparks.org/beautifying-the-front-door-of-dallas-with-ferris-plaza/"
+  ],
+  "access": "Free, a small public plaza (0.9 acres) in downtown Dallas, open at all times",
+  "transport": "DART Union Station / West End station, about 2-3 minute walk (Ferris Plaza sits directly across from Union Station)",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "A compact grove of live oaks (19 stand today per TxHTC) around the fountain at Ferris Plaza, a small (0.9-acre) downtown plaza across from Dallas Union Station, first laid out as part of George Kessler master plan (1910/1918) and long known as the gateway to the city before Dealey Plaza was built. Named for Royal A. Ferris, who donated the fountain. TxHTC dates the current grove to a 1949-50 replanting, visible in period photographs, and gives: estimated age 75 years, height up to 50 ft, average trunk DBH 30 in (range 21-36 in) across the grove, and circumference up to 11 ft (335 cm, girth_cm converted, largest tree). Wikipedia independently confirms the plazas address, coordinates, size and Kessler-plan history (though not the trees specifically); downtowndallasparks.org independently confirms live oaks present by 1977-78 and still framing the plaza today, serving as the second source for the trees themselves. Historically significant beyond the trees own age: the plaza was the meeting point for a 1965 NAACP-led civil rights march of over 2,000 people supporting the Selma, Alabama voting-rights protests. In 1998 the City of Dallas and Belo Corporation proposed removing 21 mature live oaks here (rumoured to displace a grackle roost); Steve Houser, the Texas Historic Tree Coalition and Mayor Laura Miller stopped the plan. TxHTC frames the page as an argument for FUTURE historic designation rather than confirming the grove already holds it, so treat historic-designation status as pending/proposed, not confirmed, for the writer. Location_precision set confirmed because the plaza itself is small and unambiguous (coordinates per Wikipedia); the grove of 19 individual trees ring the one fountain, so any spot in the plaza puts a visitor in front of several of them."
+ },
+ {
+  "id": "dal_008",
+  "name": "The Moore Park Big Tree Grove",
+  "species": "Pecan (Carya illinoinensis)",
+  "age_estimate": "roughly 150 years, disputed",
+  "age_min": 125,
+  "age_max": 190,
+  "girth_cm": 472,
+  "location": {
+   "address": "1900 E. 8th Street, Dallas, TX 75203 (Moore Park), on the south bank of Cedar Creek near its confluence with the Trinity River",
+   "latitude": 32.7484,
+   "longitude": -96.793,
+   "neighbourhood": "East Oak Cliff"
+  },
+  "verified_sources": [
+   "https://txhtc.org/trees/moore-park-big-tree-grove/",
+   "https://www.greensourcetexas.org/articles/oak-cliff-tree-grove-receives-permanent-protection"
+  ],
+  "access": "Free, a public city park (Moore Park), open at all times",
+  "transport": "No nearby DART rail station; nearest is a car, bike or rideshare, roughly 10 minutes from downtown Dallas",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "A grove of 16 old trees (14 Pecans, one Bur Oak, one Bois dArc/Osage Orange per the second source; TxHTCs own prose says 16 Pecans, one Bur Oak and one Bois dArc, a minor internal discrepancy worth noting) on the south bank of Cedar Creek near its confluence with the Trinity River, less than two miles south of downtown Dallas, inside Moore Park. Predates the parks own founding: the grove sits on land first settled by John McClannahan Crockett (an early Dallas attorney, its second mayor and a Lt. Governor of Texas), who bought it in 1869-70; the Cabell family owned it after 1887 until the Dallas Park Board bought the land in 1938. The park was created that year as Eighth Street Negro Park, one of only five Dallas parks then set aside for the citys Black community, and renamed for civil rights leader Will Moore at a Juneteenth ceremony in 1940. Formally declared a Historic Tree Grove by the City of Dallas and TxHTC on 3 Nov 2023, one of six sites approved that round, among the first since Dallas created the historic-tree designation in 2018. AGE CONFLICT, flag for the writer: TxHTCs own official Related Data box (gathered 3 Nov 2023) gives estimated age 155 to 190 years, height 70-80 ft, crownspread over 100 ft, circumference 10 to 15.5 ft (girth_cm here, 472 cm, converted from the top of that range); but the second source, Green Source Texas, quotes the same designation event as at least 125 years old, but speculated to be older, and TxHTCs own prose elsewhere on the same page says at least 150 years old and separately describes the single largest tree as 48 in trunk DIAMETER (circumference approx 383 cm, not the 472 cm above), 80 ft tall, 70 ft crown. Deliver the range as-is rather than picking a winner. No tree-level GPS found; location_precision approximate, pin set to Moore Park (1900 E 8th St / OSM park centroid)."
+ }
+]

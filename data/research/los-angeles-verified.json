@@ -1,0 +1,176 @@
+[
+ {
+  "id": "lax_002",
+  "name": "The Miramar Moreton Bay Fig",
+  "species": "Moreton Bay Fig (Ficus macrophylla)",
+  "age_estimate": "roughly 135 years, planted around 1889-1890",
+  "age_min": 130,
+  "age_max": 140,
+  "girth_cm": null,
+  "location": {
+   "address": "Fairmont Miramar Hotel entrance, 101 Wilshire Blvd / 1133 Ocean Avenue, Santa Monica, CA 90401",
+   "latitude": 34.01791,
+   "longitude": -118.5015,
+   "neighbourhood": "Santa Monica"
+  },
+  "verified_sources": [
+   "https://smconservancy.org/property/miramar-moreton-bay-fig-tree/",
+   "https://evendo.com/locations/california/santa-monica/landmark/miramar-moreton-bay-fig-tree",
+   "https://www.fairmont.com/en/hotels/santa-monica/fairmont-miramar-hotel-bungalows/venues/moreton-bay-circle.html"
+  ],
+  "access": "Free. Stands in the Fairmont Miramar Hotel entrance courtyard on Ocean Avenue, open to the public to walk up and view; it is a working hotel entrance rather than a park, so behave accordingly.",
+  "transport": "Santa Monica; Expo Line (E Line) to Downtown Santa Monica station, then about a 10 minute walk west to Ocean Avenue.",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Ficus macrophylla, over 80 feet tall with a canopy about 120 feet wide, one of the largest Moreton Bay figs in California. Planted in the 1880s-1890s by Georgina Jones, wife of Santa Monica founder Senator John Percival Jones, in the rose garden of the Jones mansion that once stood on the site; the hotel grew up around the tree. Declared a Santa Monica landmark 1976-08-17, one of the citys first designated landmarks, cited for both its link to the founding family and its botanical value. The hotel now has a venue named Moreton Bay Circle built around it. No independent girth measurement found; height and canopy spread are given consistently across sources."
+ },
+ {
+  "id": "lax_003",
+  "name": "The Moreton Bay Fig at St. Johns Presbyterian Church",
+  "species": "Moreton Bay Fig (Ficus macrophylla)",
+  "age_estimate": "roughly 150 years, planted in 1875",
+  "age_min": 145,
+  "age_max": 155,
+  "girth_cm": null,
+  "location": {
+   "address": "11000 National Blvd (at Military Ave), Palms, Los Angeles, CA 90064",
+   "latitude": 34.0283,
+   "longitude": -118.4258,
+   "neighbourhood": "Palms"
+  },
+  "verified_sources": [
+   "https://en.wikipedia.org/wiki/Moreton_Bay_Fig_Tree_(Los_Angeles,_California)",
+   "http://bigorangelandmarks.blogspot.com/2007/04/no-19-moreton-bay-fig-tree.html",
+   "https://www.stjohnspres.org/our-history"
+  ],
+  "access": "Free. Stands on the grounds of St. Johns Presbyterian Church and is visible from the public sidewalk at National Blvd and Military Ave; the church itself is open Tue-Fri 9am-3:30pm and Sun 9am-2pm for a closer look.",
+  "transport": "Palms neighbourhood, west LA; nearest Expo Line (E Line) stop is Palms station, then about a 10-15 minute walk.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Los Angeles Historic-Cultural Monument No. 19, designated 1963, planted 1875 by the Smith family to shade their La Ballona Ranch cottage decades before the Presbyterian church was built around it (church complex established 1962); one source says it was planted in honor of the owners firstborn son. Predates almost every other LA fig on this list except the Plaza trees. Utility company has had to cut into the crown over the years for overhead line clearance, a recurring conservation friction point. No independent girth or height figure found in the sources checked (monumentaltrees.com lists a page for this tree but was not used beyond noting its existence, per hard rule 1). Coordinates are the church/intersection location rather than a tree-specific survey point, so precision is approximate."
+ },
+ {
+  "id": "lax_004",
+  "name": "The Plaza Fig Trees",
+  "species": "Moreton Bay Fig (Ficus macrophylla)",
+  "age_estimate": "roughly 150 years, planted in 1875",
+  "age_min": 145,
+  "age_max": 155,
+  "girth_cm": null,
+  "location": {
+   "address": "Los Angeles Plaza (the Plaza/gazebo at El Pueblo de Los Angeles Historical Monument), near Olvera Street, Downtown Los Angeles, CA 90012",
+   "latitude": 34.0569,
+   "longitude": -118.2378,
+   "neighbourhood": "Downtown Los Angeles / El Pueblo"
+  },
+  "verified_sources": [
+   "https://lataco.com/144-year-old-tree-fell-in-los-angeles",
+   "https://en.wikipedia.org/wiki/Elijah_H._Workman",
+   "https://www.pbssocal.org/shows/lost-la/majestic-mammoths-a-brief-history-of-l-a-s-moreton-bay-fig-trees"
+  ],
+  "access": "Free. Stand in the open plaza around the gazebo at El Pueblo de Los Angeles / Olvera Street, open to the public at all times as a city park and historic monument.",
+  "transport": "Downtown LA; Union Station (Metro Rail B/D/L lines, Metrolink, Amtrak) is directly across Alameda St, about a 5 minute walk.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Ensemble entry: three surviving Moreton Bay figs (Ficus macrophylla) of an original quartet planted in 1875 by horticulturist Elijah Hook Workman around the historic Los Angeles Plaza, among the oldest documented tree plantings in the city, predating even the St Johns Church fig by association with the citys founding plaza. A fourth, 144-year-old tree in the group fell on 2019-03-02 during a Chinese lantern festival (no injuries); the city confirmed at the time that the three remaining trees posed no public safety risk, and El Pueblo Historical Monument planned a community process to decide on a replacement planting. FLAGGED because the most recent direct confirmation the three survivors are still standing and healthy is from 2019 reporting plus general, undated tourism copy describing fig trees still shading the plaza gazebo; no dated 2024-2026 photo or inspection report was found this pass. This is a single collectible ensemble entry (the plaza as a whole, one obvious place to stand) rather than three separate points; coordinates mark the plaza/gazebo area rather than individual trunks."
+ },
+ {
+  "id": "lax_005",
+  "name": "The Oldest Palm Tree in Los Angeles",
+  "species": "Desert Fan Palm (Washingtonia filifera)",
+  "age_estimate": "documented in Los Angeles since the 1850s, at least 170 years, likely older since it was already a mature palm when first transplanted",
+  "age_min": 170,
+  "age_max": null,
+  "girth_cm": null,
+  "location": {
+   "address": "Exposition Park Drive at the Figueroa St entrance to Exposition Park, near W 39th St, Los Angeles, CA 90037",
+   "latitude": 34.0142,
+   "longitude": -118.2833,
+   "neighbourhood": "Exposition Park"
+  },
+  "verified_sources": [
+   "https://en.wikipedia.org/wiki/Oldest_palm_tree_in_Los_Angeles",
+   "https://www.hmdb.org/m.asp?m=155323",
+   "https://lamag.com/urbandevelopment/citydig-las-oldest-palm-tree/"
+  ],
+  "access": "Free. Stands beside Exposition Park Drive at the Figueroa St entrance, a public city/state park, open daily.",
+  "transport": "Expo Line (E Line) Expo Park/USC station is directly adjacent, about a 2-5 minute walk.",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "A desert fan palm believed dug up from a desert oasis and first replanted on San Pedro St in the 1850s, moved again in 1889 to shade the entrance of the Southern Pacific Railroads Arcade Depot on Alameda St, then saved and moved a third time on 1914-09-05 to its current spot at Exposition Park when the depot closed, per a commemorative plaque at its base. About 100 feet (30m) tall. Carries a visible dent partway up the trunk, possibly drought or maintenance damage from mid-20th century; maintenance crews now use cherry pickers rather than climbing spikes to remove fronds and protect the trunk. Widely reported (2024 HartBeat blog, Planetizen, LAMag CityDig) as still standing and healthy. No girth figure found in sources checked. A striking story tree: three relocations across LAs early railroad history and it survived every one."
+ },
+ {
+  "id": "lax_006",
+  "name": "The Arboretum Coast Live Oak",
+  "species": "Coast Live Oak (Quercus agrifolia)",
+  "age_estimate": "over 200 years",
+  "age_min": 200,
+  "age_max": null,
+  "girth_cm": null,
+  "location": {
+   "address": "Los Angeles County Arboretum & Botanic Garden, 301 N Baldwin Ave, Arcadia, CA 91007 (Stop 2 on the self-guided tour, north/uphill from the Entrance Rotunda, by the Celebration Garden)",
+   "latitude": 34.14139,
+   "longitude": -118.05361,
+   "neighbourhood": "Arcadia"
+  },
+  "verified_sources": [
+   "https://arboretum.org/wp-content/uploads/2012/04/self_guided_walking_tour-2016-17.pdf",
+   "https://www.uncharted101.com/a-day-in-paradise-exploring-the-la-arboretum/"
+  ],
+  "access": "Paid entry to the Los Angeles County Arboretum & Botanic Garden (around  general admission as of a 2024/2025 visitor report; check current pricing). Open daily during garden hours; easy parking on site.",
+  "transport": "Arcadia; Metro Gold/A Line Arcadia station, then roughly a 15-20 minute walk, or local bus/rideshare.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "The Arboretums own self-guided walking tour names this coast live oak as Stop 2, over 200 years old and standing before the Gabrielino/Tongva people who lived on the site (Aleupkigna, place of many waters) were displaced, predating the 1880s Baldwin ranch era by centuries. As of the tour document, the oak was being treated for a fungal disease and visitors were asked to stay out from under the branches, so treat vitality as good-but-monitored rather than guaranteed; a reader visit or a fresher Arboretum source would firm this up. No girth or precise coordinates published; location here is the general Stop 2 description (uphill/north of the entrance rotunda) rather than a surveyed point, hence approximate. Independent travel blog (uncharted101.com) corroborates the same 200-year, pre-Arcadia claim in near-identical language, suggesting both draw on the Arboretums own signage/tour rather than independent research, which is why this is flagged rather than confident."
+ },
+ {
+  "id": "lax_008",
+  "name": "The Beverly Hills Moreton Bay Fig",
+  "species": "Moreton Bay Fig (Ficus macrophylla)",
+  "age_estimate": "over 100 years",
+  "age_min": 100,
+  "age_max": null,
+  "girth_cm": null,
+  "location": {
+   "address": "Beverly Gardens Park, beside the Electric Fountain, at Santa Monica Blvd and Wilshire Blvd, Beverly Hills, CA 90210",
+   "latitude": 34.06745,
+   "longitude": -118.41037,
+   "neighbourhood": "Beverly Hills"
+  },
+  "verified_sources": [
+   "https://juliadelorme.com/moreton-bay-fig-tree-in-beverly-hills-ca-a-unique-place/",
+   "https://www.tripadvisor.com/Attraction_Review-g32070-d15555191-Reviews-Moreton_Bay_Fig_tree-Beverly_Hills_California.html",
+   "https://www.laconservancy.org/learn/historic-places/beverly-gardens-park/"
+  ],
+  "access": "Free. Stands in Beverly Gardens Park, a public linear park running along Santa Monica Blvd, open at all times.",
+  "transport": "Beverly Hills; Metro D (Purple) Line Wilshire/Rodeo station is about a 10 minute walk south.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Said to have been planted by Burton Green, the oilman and developer who founded Beverly Hills in 1906 and commissioned Beverly Gardens Park (landscape architect Wilbur D. Cook, gardens completed by 1931). Sources describe it as over 100 years old and among the largest Moreton Bay figs in the US, standing beside the 1931 Electric Fountain gifted by the Harold Lloyd family. FLAGGED: sourcing is blog/tourism-level rather than an institutional record (LA Conservancys own Beverly Gardens Park page corroborates the park history and Burton Green connection but was not confirmed to name this specific tree), no girth or independent planting-year source found, and coordinates mark the fountain/park location rather than a surveyed trunk position."
+ },
+ {
+  "id": "lax_009",
+  "name": "The Auto Club Moreton Bay Fig",
+  "species": "Moreton Bay Fig (Ficus macrophylla)",
+  "age_estimate": "over 130 years, planted in 1894",
+  "age_min": 130,
+  "age_max": 135,
+  "girth_cm": null,
+  "location": {
+   "address": "2601 S Figueroa St (at W Adams Blvd), Los Angeles, CA 90007, Automobile Club of Southern California headquarters",
+   "latitude": 34.0311,
+   "longitude": -118.2776,
+   "neighbourhood": "University Park / Downtown-adjacent"
+  },
+  "verified_sources": [
+   "https://www.pbssocal.org/shows/lost-la/majestic-mammoths-a-brief-history-of-l-a-s-moreton-bay-fig-trees",
+   "http://bigorangelandmarks.blogspot.com/2007/10/no-72-automobile-club-of-southern.html",
+   "https://news.aaa-calif.com/news/historic-auto-club-building-in-los-angeles-celebrates-centennial"
+  ],
+  "access": "Free to view from the Figueroa St sidewalk, where the tree guards the entrance to the Auto Club headquarters courtyard; the building is a working AAA member service branch, open to the public during business hours for a closer look, and the tree is decorated and publicly celebrated each December with a holiday tree-lighting event.",
+  "transport": "Just south of Downtown LA near USC; Expo Line (E Line) Expo Park/USC or Jefferson/USC stations, then about a 10-15 minute walk.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Planted in 1894 by Charles C. Chapman outside his own Figueroa St residence, decades before the Automobile Club of Southern California bought the site and built its Spanish Colonial Revival headquarters (Sumner Hunt and Silas Burns, opened 1923-01-27) around the already-mature tree. The Auto Club threw the tree a 100th birthday party in 1994 and still hosts an annual public holiday tree-lighting for it. Branches spread over 100 feet with aerial roots that have hardened into buttress trunks. FLAGGED: no independent girth or height figure found, and the coordinate given is estimated from the street address (Figueroa St at Adams Blvd) rather than a surveyed GPS point, hence approximate precision."
+ }
+]
