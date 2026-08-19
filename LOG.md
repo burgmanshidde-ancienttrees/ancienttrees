@@ -97,12 +97,20 @@ dispatched a from-zero research+verify pass following CLAUDE's "name the
 places first" technique (parks, university grounds, sacred ground, then local
 press, then a generic sweep).
 
-**Result is honestly thin.** 4 trees, right at the floor, cost 180k tokens
-(45k/tree, well above the 27-55k range other from-zero cities ran today) and
-the pass stopped there deliberately rather than grinding for a cheaper fifth,
-per the 80/20 rule. None of the four sit in one walkable cluster: they are
-scattered across four different neighbourhoods, 1.5 to 3km apart, and the
-page says so plainly rather than dressing it up as a walk. Three of the four
+**Result is honestly thin on sourcing, though it walks better than first
+reported.** 4 trees, right at the floor, cost 180k tokens (45k/tree, well
+above the 27-55k range other from-zero cities ran today) and the pass
+stopped there deliberately rather than grinding for a cheaper fifth, per the
+80/20 rule. The verify pass's own eyeballed distances ("1.5 to 3km apart,
+not one walkable cluster") did not survive a coordinate check afterward:
+three of the four, Deusto, the Misericordia garden and Dona Casilda, sit
+within 0.93km of each other, and the fourth (the Albia planes downtown) is
+1.08 to 1.38km from that group, all well inside the project's own 2km
+clustering threshold. Corrected the page copy (intro, meta_description, the
+"one walk" FAQ) to describe one walk of roughly 25-30 minutes rather than
+four unconnected stops; the lesson for a future brief is to compute
+distances rather than estimate them by eye once coordinates exist. Three of
+the four
 carry only a vague "centenario" (over a century) age claim with no
 measurement; one (the Dona Casilda horse chestnut) was flagged by the verify
 pass itself for near-identical wording across its two sources, a real risk
