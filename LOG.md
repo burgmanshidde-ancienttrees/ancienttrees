@@ -12,6 +12,72 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-19 (session) - Hawaii (the Big Island) opened at Kalopa State Park, 6 trees
+
+Visits (7-day): 336 visits, 524 views, trending up (67 on 08-18, 37 so far on
+08-19). Ran `health.py` (rung 2 clear, 0 BLOCKER), checked Supabase directly
+(SUPABASE_URL isn't a real env var, hardcoded in site/src/lib/site-config.ts;
+fetched all 6 rows, 0 unprocessed). `prepare.py`'s shelf had 40 cities staged
+for verify and Bari's 2 verified-but-unwritten trees still held below the
+floor, per the standing Hidde ruling not to open Bari; left both alone rather
+than re-litigate.
+
+Rung 4: `city_queue.py --next` puts Bari first but Hidde's 2026-08-19 ruling
+in CITY_QUEUE.md says open the unopened big-name cities first. Of the 17 he
+named, most (Dallas, Mexico City, Seattle, LA, Frankfurt, Las Vegas and
+others) were already opened earlier today by other sessions. Picked **Hawaii**
+(rank 39, the Big Island, deliberately kept separate from Hilo which already
+covers the town): city-queue.json's own note flagged 30+ unpublished
+register trees at Kona, Volcano and the Hamakua coast, and a prior session's
+scouting sat unused in `data/research/hawaii-bigisland-candidates.json`.
+
+Grouped the 38 register candidates by coordinate rather than trusting
+`passcheck.py --brief` (its radius search centres on the wrong point for this
+entry and returned zero matches). Six trees shared one exact coordinate:
+Kalopa Native Forest State Park on the Hamakua coast, a 0.7-mile loop through
+one of the last old-growth native forest stands on the island. Claimed
+Hawaii, dispatched a hand-built verify brief (passcheck's own brief was
+unusable here) against the register plus DLNR's own trail page.
+
+**The pass earned its cost.** It caught a dead tree before publication: the
+one Kona candidate outside the Kalopa cluster, a Moreton Bay Fig gifted by
+Queen Kapiolani in 1882, was cut to a stump in October 2025 after internal rot
+failed a branch (Big Island Now, fetched directly), despite the register's own
+"Excellent" vitality rating. And it caught three implausible register
+heights (a "184 ft" koa, "170 ft" hame, "84 ft" kopiko 'ula, all 2-3x their
+species' documented ceilings) and excluded them rather than publishing them;
+the girths on the same three specimens are trustworthy and became the leading
+facts instead (a hame normally 4-10m tall carrying a 2.16m trunk, a kopiko
+'ula normally slender at 3.26m round). None of the six carry a recorded age;
+said so plainly per the standing rule rather than guessing.
+
+Wrote all six stories in one batch, built the city file by hand (schema
+matched against hilo.json and las-vegas.json for the no-age oldest_tree_id
+pattern: named the largest-girth tree, the Larger Ohi'a Lehua, as both hero
+and "oldest" while the question page explains honestly that girth is not
+age). `preflight.py` caught an over-length intro and question_meta on first
+pass, trimmed both to fit Contract C. Ran the free `photo_hunt.py --recheck`
+sweep (1 candidate found for 5 of 6 trees, nothing judged, this runner can't
+reach upload.wikimedia.org). Ran `tree_index.py` (62,141 trees tracked).
+
+`npm --prefix site ci && npm --prefix site run build` clean (1912 pages),
+`preflight.py` clean (142 cities), `superlatives.py` clean (413 claims, no
+collisions). `qa.py` reports one failure (sitemap lastmod all identical) that
+traces to this sandbox's shallow git checkout (`git rev-parse
+--is-shallow-repository` is true here, depth 1), not to this change; flagging
+rather than chasing a fix for an environment issue outside this session's
+control.
+
+| Pass | Trees | Cost |
+|---|---:|---:|
+| Hawaii verify | 6 | 95k |
+| Hawaii write | 6 | 70k |
+
+Released the Hawaii claim. Hawaii is now 6 of its 10-tree target; the Kona
+leads (a likely royal-banyan-cutting Indian Banyan and an unidentified
+Chinese Banyan) sit in data/leads/hawaii.json for a future pass that has time
+to pin them individually. Continuing down the ladder.
+
 ## 2026-08-19 (night run, continued) - Five species pages, and a thin Vienna pass
 
 Closed rung 7 first: `pagegaps.py` had 5 species with 3-4 trees each and no
