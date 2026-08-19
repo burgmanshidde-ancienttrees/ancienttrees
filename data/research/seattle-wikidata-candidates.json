@@ -1,0 +1,36 @@
+{
+ "city": "Seattle",
+ "radius_km": 30,
+ "source": "Wikidata SPARQL (CC0); a lead to verify, never a publishable fact",
+ "count": 2,
+ "trees": [
+  {
+   "qid": "Q134005953",
+   "name": "Capitol Hill Wishing Tree",
+   "latitude": 47.632253,
+   "longitude": -122.304869,
+   "country": "United States",
+   "species": null,
+   "admin": "Seattle",
+   "planted_year": null,
+   "commons_image": "http://commons.wikimedia.org/wiki/Special:FilePath/Seattle%2C%20August%2025%2C%202024%20-%20108%20%28cropped%29.jpg",
+   "designation": null,
+   "source": "https://www.wikidata.org/wiki/Q134005953",
+   "km_from_centre": 3.7
+  },
+  {
+   "qid": "Q140073088",
+   "name": "Anne Frank Tree at Peace Park",
+   "latitude": 47.655575,
+   "longitude": -122.318802,
+   "country": "United States",
+   "species": null,
+   "admin": "Seattle",
+   "planted_year": null,
+   "commons_image": null,
+   "designation": null,
+   "source": "https://www.wikidata.org/wiki/Q140073088",
+   "km_from_centre": 5.8
+  }
+ ]
+}
