@@ -379,6 +379,16 @@ def rebuild_list(live, order):
     return len(rows)
 
 
+NAMED_BY_HIDDE = [
+    # 2026-08-19, verbatim from his own message and recorded in CITY_QUEUE.md.
+    # This list is the SCOPE of "from-zero web research is on", not a synonym
+    # for "unopened": see the WARN answered in the --next printer below.
+    "Seattle", "Dallas", "Houston", "Cologne", "Perth", "Sydney", "Las Vegas",
+    "Frankfurt", "Bilbao", "Dubai", "Kansas City", "Mexico City", "Vancouver",
+    "Manchester", "Taipei", "Buenos Aires", "Hawaii",
+]
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true",
@@ -411,14 +421,26 @@ def main():
               and c.get("trees", 0) and c.get("trees", 0) < c["target"]]
         s1.sort(key=lambda c: c["rank"])
         s2.sort(key=lambda c: c["rank"])
+        # The star matters, and it is the whole of the 2026-08-19 fresh-eyes
+        # WARN: Hidde named SEVENTEEN cities, and this list is every ranked
+        # city with no trees, currently ten times that. The header used to say
+        # "he named these cities" over all of them, which reads as blanket
+        # permission for from-zero web research and is exactly what rule 1(d)
+        # exists to stop. Named is named; the rest still need a register, a
+        # lead file or a Wikidata cluster before a pass is worth dispatching.
+        named = {c.lower() for c in NAMED_BY_HIDDE}
         print("STAGE 1, OPEN THE UNOPENED: every ranked city with no trees yet,")
         print("to 10, as fast as they go. Hidde, 2026-08-19: starting these beats")
-        print("deepening. A register is NOT required here; he named these cities,")
-        print("which is what rule 1(d) asks for before from-zero research.\n")
+        print("deepening.\n")
+        print("  * = one of the 17 he named on 2026-08-19, so from-zero web")
+        print("      research is ON there (rule 1(d)). Everywhere else on this")
+        print("      list, from-zero is still OFF: open it from a register, a")
+        print("      leads file or a Wikidata cluster, or leave it.\n")
         print("  #  city             register  ready")
         for c in s1[:40]:
-            print("%3d  %-16s %9d %6d" % (
-                c["rank"], c["city"][:16], c.get("register", 0), c.get("ready", 0)))
+            print("%3d %s%-16s %9d %6d" % (
+                c["rank"], "* " if c["city"].lower() in named else "  ",
+                c["city"][:16], c.get("register", 0), c.get("ready", 0)))
         print("\nSTAGE 2, DEEPENING: once stage 1 has nothing left that moves")
         print("cheaply. Targets are 20, or 30 for a big confirmed city.\n")
         print("  #  city             now target  ready  register")
