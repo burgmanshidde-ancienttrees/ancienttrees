@@ -2419,6 +2419,57 @@
     "tokens": 127892,
     "trees": 12,
     "note": "12 stories, 217-243 words; Gija Jumulu's 3200km transplant and Sydney's two replacements led with rather than buried; two species-name collisions caught by the writer and fixed at the merge"
+   },
+   {
+    "target": "Seattle",
+    "kind": "verify",
+    "tokens": 206129,
+    "trees": 5,
+    "note": "no register exists; the city's Heritage Tree Program pages, official tree-walk PDFs and a Seattle Times archive fetch gave 5 trees and 15 leads, and caught a giant sequoia removed in December 2025 before it could ship"
+   },
+   {
+    "target": "Dallas",
+    "kind": "verify",
+    "tokens": 213198,
+    "trees": 8,
+    "note": "the Texas Big Tree Registry's ArcGIS layer plus a local historic-tree coalition beat the generic sweep; five already-dead trees blocked, including a state champion cut down by accident in 2015"
+   },
+   {
+    "target": "Los Angeles",
+    "kind": "verify",
+    "tokens": 196110,
+    "trees": 9,
+    "note": "figs dominate LA's documented record, 5 of 9; the Encino Oak confirmed fallen 1998 and blocked; two entries pulled at the merge, El Pino for standing in a private front yard and the Chavez Ravine Arboretum for not being one collectible point"
+   },
+   {
+    "target": "Mexico City",
+    "kind": "verify",
+    "tokens": 175838,
+    "trees": 10,
+    "note": "both famous candidates are dead; found SEDEMA's 2025 Arboles Patrimoniales register with tree-level GPS and girth, which nobody had scouted, and verified 10 from it"
+   },
+   {
+    "target": "Mexico City",
+    "kind": "write",
+    "tokens": 112460,
+    "trees": 10,
+    "note": "10 stories, 212-228 words, no best_time anywhere; five trees ask the reader for an age and the two famous dead trees stay context rather than entries"
+   },
+   {
+    "target": "Bari",
+    "kind": "verify",
+    "tokens": 15000,
+    "trees": 0,
+    "wasted": 15000,
+    "note": "stopped two minutes in: Hidde said he meant big-name cities, not small register-cheap ones, so the pass was killed and Mexico City took its slot"
+   },
+   {
+    "target": "Hawaii",
+    "kind": "verify",
+    "tokens": 12000,
+    "trees": 0,
+    "wasted": 12000,
+    "note": "stopped for the same reason; the Big Island candidate file it left behind is kept and costs nothing to reuse"
    }
   ]
  }
