@@ -2505,6 +2505,20 @@
     "tokens": 81520,
     "trees": 2,
     "note": "2-tree batch, ~40k/tree against the ~12k a 15-20 tree batch gets; also caught a species-binomial mismatch (Platanus x hybrida vs the corpus's x acerifolia) and a superlative collision with vie_013's thickest-in-park claim, avoided in the prose rather than the data"
+   },
+   {
+    "target": "palermo",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 4,
+    "note": "italy-masaf register deepen pass; correctly recognised a 36m-girth register entry as the already-published pal_001 (Piazza Marina fig, crown spread not trunk girth) rather than a new tree, and blocked a private-courtyard fig at Palazzo Pantelleria under hard rule 10"
+   },
+   {
+    "target": "palermo",
+    "kind": "write",
+    "tokens": 91000,
+    "trees": 4,
+    "note": "4 stories, 1 best_time (flame tree, May-June flowering); writer caught and cut a draft sentence bridging the embracing fig's age to the Norman kings, and correctly ceded the largest-fig-in-Palermo superlative to the live pal_001"
    }
   ]
  }
