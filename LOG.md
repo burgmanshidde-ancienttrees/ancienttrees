@@ -20,9 +20,9 @@ agreed: Sydney (#22), Las Vegas (#24), Frankfurt (#25) and Perth (#29), all
 four on the seventeen he named on 2026-08-19, which is what rule 1(d) needs.
 Four verify passes in parallel, then two write passes.
 
-**Three cities live, 23 trees.** Frankfurt 6, Las Vegas 11, Perth 6. Sydney
-needed a second pass to clear the four-tree floor and now has 6, published
-with the rest.
+**Four cities live, 29 trees.** Frankfurt 6, Las Vegas 11, Perth 6, Sydney 6.
+Sydney needed a second pass to clear the four-tree floor and only just made
+it; the other three cleared it first time.
 
 | City | Trees | What carried it |
 |---|---:|---|
