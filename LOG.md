@@ -12,6 +12,64 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-19 (session) - Four unopened cities off the top of the queue, and three of them opened
+
+Hidde asked for a run on the prioritised cities that have no register and no
+trees. The queue already had that as its stage 1, so the ask and the list
+agreed: Sydney (#22), Las Vegas (#24), Frankfurt (#25) and Perth (#29), all
+four on the seventeen he named on 2026-08-19, which is what rule 1(d) needs.
+Four verify passes in parallel, then two write passes.
+
+**Three cities live, 23 trees.** Frankfurt 6, Las Vegas 11, Perth 6. Sydney
+needed a second pass to clear the four-tree floor and now has 6, published
+with the rest.
+
+| City | Trees | What carried it |
+|---|---:|---|
+| Frankfurt | 6 | de.wikipedia's Naturdenkmal list joined to the city's own Amtsblatt gazette, because frankfurt.de is Cloudflare-blocked (now on the fetch blocklist) |
+| Las Vegas | 11 | The 2015 Nevada Big Tree Register, cross-checked against UNLV's own November 2025 piece naming the same champions, which is also the alive-now evidence |
+| Perth | 6 | The National Trust WA register plus Wikidata; Kings Park and the CBD figs |
+| Sydney | 6 | Two passes. The City's 2,504-entry register turned out to be mostly avenue plantings and does not cover the Botanic Garden or the Domain |
+
+**What the passes refused, which is the part worth reading.** A well
+documented fig in Fremantle that stands in a private front garden. Two
+Wikidata entries whose own names say the tree was removed. A kauri at
+Elizabeth Bay House that is probably on an apartment block's grounds. A
+Hunters Hill fig that traces to a private house. Fremantle's King's Square
+fig ensemble, where the register still lists six trees and the council's own
+page says two were replaced in 2018, so it stays a lead until somebody counts
+them on the ground.
+
+**Las Vegas is honest rather than impressive, deliberately.** Girths from 51
+to 234 centimetres, no age on any of them, every pin approximate at building
+or park level. The question page says so outright: nobody has published an
+age, the register measures size and not years, the city dates from 1905, and
+the biggest trunk is not the same thing as the oldest tree. It asks the reader
+for UNLV's planting records.
+
+**Two of Sydney's six are replacements, and they lead with it.** The
+Quadrangle jacaranda is a 2017 clone of the 1928 tree that died in 2016, and
+its story opens by saying it is about nine years old. The Wishing Tree is a
+1930s replacement whose own plaque admits it will never match its predecessor.
+
+**Answered the pin WARN from the 2026-08-18 review before starting.** Naples'
+three undocumented "confirmed" pins turned out to be grounded at 17, 1 and 2
+metres from their register sheets and now say so. Caserta's casuarina and yew
+were 32 and 19 metres from their cited points and each sat nearer the other's
+point than its own, which reads as a swap; both are back on the coordinate
+their own source gives, and the yew's unsourced "Via Alois side" description
+went with them, since Via Alois runs east and the register puts it west.
+
+**And today's review WARN, fixed the same hour.** `city_queue.py --next`
+printed "he named these cities" over all 181 unopened cities. Seventeen were
+named. The named ones now carry a star and the header says from-zero research
+is off everywhere else.
+
+FOR HIDDE, one thing, no action needed today: every city page ends with "see
+all N remarkable ancient trees in [City]", and on Las Vegas that sits under
+our own sentence saying nothing there is ancient. It is template copy on all
+137 cities and "ancient trees" is the brand, so I have not touched it.
+
 ## 2026-08-19 (session) - The phone header: one control, and the stale CSS that was un-centring it
 
 Hidde on the mobile nav: the hamburger was not centred and the bar looked odd, so put everything under it.
