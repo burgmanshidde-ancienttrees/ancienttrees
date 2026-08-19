@@ -10,6 +10,23 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-19 - Bilbao: opened, 4 trees (at the floor), all flagged, 4 photos missing, 7 leads and 3 blocked recorded
+
+New city, from-zero web research (no usable Basque/Bizkaia register).
+All 4 `location_precision: approximate` (park-level, no tree individually
+pinned) and `curation_status: flagged`. Three of four carry only a vague
+"over a century" age with no measurement; the Dona Casilda horse chestnut's
+two sources use near-identical wording, flagged in the story as likely
+sharing one original line rather than confirming independently. Not one
+walkable cluster: four neighbourhoods, 1.5-3km apart, page says so. 7 leads
+in data/leads/bilbao.json (ombu, ginkgo and dragon tree present in Dona
+Casilda but unpinned; a second sequoia at an institutional garden with
+unclear access; the Plaza Ametzola tree named by a DEIA feature but no
+species/size found; the unusable Bizkaia singular-tree catalogue). 3 blocked
+as confirmed dead (Arbol Gordo de Arbieto, Tilo del Arenal, El Abuelo of
+Arriquibar, all per a DEIA feature). Photos: 0 of 4, API sweep queued
+candidates for 2.
+
 ## 2026-08-19 - Ottawa: opened, 8 trees, all flagged (single-sourced tree-specific facts), 8 photos missing
 
 New city, Confederation Square / Confederation Park / Major's Hill Park
