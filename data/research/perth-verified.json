@@ -1,0 +1,148 @@
+[
+ {
+  "id": "per_001",
+  "name": "Gija Jumulu",
+  "species": "Boab (Adansonia gregorii)",
+  "age_estimate": "over 750 years",
+  "age_min": 750,
+  "age_max": 2000,
+  "girth_cm": null,
+  "location": {
+   "address": "Two Rivers Lookout, end of Forrest Carpark, Kings Park, Perth",
+   "latitude": -31.962224,
+   "longitude": 115.841033,
+   "neighbourhood": "Kings Park"
+  },
+  "verified_sources": [
+   "https://www.bgpa.wa.gov.au/gija-jumulu",
+   "https://en.wikipedia.org/wiki/Gija_Jumulu",
+   "https://www.wa.gov.au/government/media-statements/Carpenter%20Labor%20Government/Giant-boab-puts-down-roots-in-Kings-Park-20080720"
+  ],
+  "access": "Free, Kings Park is open daily",
+  "transport": "Kings Park, walkable from Perth CBD (~2-3 km) or via CAT bus/Kings Park shuttle",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Not a native-grown tree: a boab transplanted 3,200 km by truck from Telegraph Creek near Warmun in the Kimberley to Kings Park, replanted 20 July 2008 after a Gija farewell ceremony (14 July 2008). Longest known land journey of a living tree this size. 18m tall, 37 tonnes, estimated over 750 years old (could live another 1250). Named by the Gija people, traditional owners near Warmun; 'jumulu' is their word for boab. Removed originally to make way for a road bridge on Great Northern Highway. Suffered superficial bark damage in transit, assessed healthy in 2016. Species can photosynthesize through bark when leafless in winter dry season; new growth typically from December. Flag reason: tree's history is unusual (transplanted, not grown in place) so the writer should frame it honestly as a relocated specimen rather than implying it has always stood in Kings Park."
+ },
+ {
+  "id": "per_002",
+  "name": "The Moreton Bay Fig Tree, Royal Perth Hospital",
+  "species": "Moreton Bay Fig (Ficus macrophylla)",
+  "age_estimate": "roughly 130-140 years",
+  "age_min": 120,
+  "age_max": 150,
+  "girth_cm": 942,
+  "location": {
+   "address": "Murray Street, in front of Kirkman House, Royal Perth Hospital, Perth",
+   "latitude": -31.954802,
+   "longitude": 115.864659,
+   "neighbourhood": "Perth CBD"
+  },
+  "verified_sources": [
+   "https://inherit.dplh.wa.gov.au/public/inventory/details/734b1ad0-7b63-4035-ad90-3ba261fe8027",
+   "https://trusttrees.org.au/tree/WA/Perth/Murray_Street"
+  ],
+  "access": "Free, visible from the Murray Street footpath in front of Kirkman House",
+  "transport": "Perth CBD, walkable, ~1 km from the Perth train station / Elizabeth Quay",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "WA State Heritage List (adopted 20 Dec 1985), National Trust WA tree classification (1 Dec 1975), Register of the National Estate (interim, 21 Mar 1978). Planted early 1900s, exact date and planter unknown (inHerit). National Trust register (trusttrees.org.au) measured it 6 Nov 2018: diameter 3m (girth_cm converted via pi x 300cm = 942), height 36m, condition good, classified 24 Feb 2019, age given there as approximately 130 years (so roughly 138 by 2026); age is derived from the register's own estimate at measurement, add years since. Stands in front of Kirkman House (built 1909), described as 'a dominant element in streetscape, unique in form and character in city centre' and a longtime informal meeting place for hospital staff and visitors. Flag reason: exact planting date and planter unrecorded; age is the register's own estimate, not a documented planting record."
+ },
+ {
+  "id": "per_003",
+  "name": "Port Jackson Fig, The Cloisters",
+  "species": "Port Jackson Fig (Ficus rubiginosa)",
+  "age_estimate": "roughly 139 years",
+  "age_min": 135,
+  "age_max": 145,
+  "girth_cm": 390,
+  "location": {
+   "address": "202 St Georges Terrace (Mt Newman House / The Cloisters), Perth",
+   "latitude": -31.953447,
+   "longitude": 115.853348,
+   "neighbourhood": "Perth CBD (West End)"
+  },
+  "verified_sources": [
+   "https://inherit.dplh.wa.gov.au/public/inventory/printsinglerecord/7a49751f-e3e0-4596-b144-e084c7219fa6",
+   "https://en.wikipedia.org/wiki/The_Cloisters_(Perth)"
+  ],
+  "access": "Free, stands in the forecourt of Mt Newman House / The Cloisters office complex, visible from St Georges Terrace",
+  "transport": "Perth CBD, walkable, ~1 km from Perth train station",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Documented planting date: given as a small tree in 1887 by a tenant of The Cloisters (both inHerit and Wikipedia agree), so age is derived directly from a documented planting date for this specimen, not a bridge claim. WA State Heritage List, joint listing with The Cloisters building 20 Oct 1995 (also adopted to heritage list 20 Dec 1985); National Trust classification; Register of the National Estate (Indicative Place). Height 18m, circumference 3.9m (girth_cm 390), canopy spread 15.3 x 18.2m, condition very good. Notable as a 'successful attempt to rehabilitate mature existing tree and integrate into major city development': the tree was specifically preserved during the 1971 redevelopment when the modern Mt Newman House office tower was built around The Cloisters (architects Howlett & Bailey), and again during a later steel redevelopment. Stands in the office complex forecourt, publicly visible/accessible from the street and forecourt."
+ },
+ {
+  "id": "per_004",
+  "name": "The Proclamation Tree",
+  "species": "Moreton Bay Fig (Ficus macrophylla)",
+  "age_estimate": "roughly 136 years",
+  "age_min": 130,
+  "age_max": 140,
+  "girth_cm": null,
+  "location": {
+   "address": "Mayor's Park, corner of Adelaide, Parry and Queen Victoria Streets, Fremantle",
+   "latitude": -32.050255,
+   "longitude": 115.749996,
+   "neighbourhood": "Fremantle"
+  },
+  "verified_sources": [
+   "https://inherit.dplh.wa.gov.au/public/inventory/printsinglerecord/57d5aa92-9420-4b54-bd88-41d3517e5aef",
+   "https://freopedia.org/Marmion_Memorial"
+  ],
+  "access": "Free, public park (Mayor's Park / traffic island)",
+  "transport": "Fremantle town centre; Fremantle train station approx. 700m walk. Fremantle is within the day-trip boundary, roughly 30 minutes by train from Perth CBD",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Documented planting: planted 21 October 1890 by Governor Sir William Robinson to celebrate the granting of self-government to the Colony of Western Australia (WA Holiday Guide, corroborated by inHerit dating the tree's heritage record from 1890). Age derived directly from this documented planting date, not a bridge claim. Freopedia (Fremantle local history wiki) independently gives 'now 130 years old' as of a Nov 2023 update, consistent with an 1890 planting. Stands over the William Marmion Memorial (Celtic cross, unveiled 1902), which it has since grown to partly obscure. WA State Register of Heritage Places (16 Jul 1993), City of Fremantle Heritage List (2007), National Trust tree classification (1 Dec 1980), Register of the National Estate (24 Jun 1997). Located on a traffic island / small park at the corner of Adelaide, Parry and Queen Victoria Streets, historically the entry point to Fremantle's main streets."
+ },
+ {
+  "id": "per_005",
+  "name": "The Old Jarrah Tree",
+  "species": "Jarrah (Eucalyptus marginata)",
+  "age_estimate": "estimated 400 to 800 years",
+  "age_min": 400,
+  "age_max": 800,
+  "girth_cm": null,
+  "location": {
+   "address": "Corner of Third Road and Church Avenue (near 206 Jull St), Armadale",
+   "latitude": -32.154,
+   "longitude": 116.017,
+   "neighbourhood": "Armadale"
+  },
+  "verified_sources": [
+   "https://en.wikipedia.org/wiki/Old_Jarrah_Tree",
+   "https://www.mediastatements.wa.gov.au/Pages/Gallop/2003/02/State-Government-heritage-lists-jarrah-tree,-Armadale.aspx",
+   "https://inherit.dplh.wa.gov.au/public/inventory/details/6e3eaf7e-a3ca-4843-a21f-bad1f8e1da9e"
+  ],
+  "access": "Free and outdoors, beside the public carpark on the site of the former Armadale Primary School, which the tree served from 1904 until 1987. We have not confirmed whether the ground immediately around the trunk is fenced, so treat it as a tree you can certainly see and may not be able to walk up to.",
+  "transport": "Armadale, on the Armadale train line, roughly 35-40 minutes by train from Perth station plus a short walk; a day trip beyond the strict 30-minute boundary but close and a single direct line",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "One of only three trees or groups of trees heritage-listed in WA. Age 400-800 years is the register's own estimate (basis not detailed in sources; likely girth/growth-form judgement for old-growth jarrah, no girth figure found this pass). Ringbarked by vandals in 1997; responded with epicormic shoots on its north side; canopy about three-quarters dead/gone and height roughly halved by past lopping, but assessed stable, i.e. alive. Conservation Order issued 14 Nov 1997 after 1,147 public submissions favoured protecting it; WA State Heritage Register listing 9 Sep 2003; Heritage Agreement 2002. On part of the Bicentennial Heritage Tree Trail. Land originally sold by early settler Thomas Saw to the Minister for Education for a school site; tree played a role in Armadale schoolchildren's play from 1904 to 1987. Flag reasons: (1) exact current public-access status (fenced school ground vs open carpark/reserve) not confirmed by these sources and needs a ground check or a more specific source before publishing a confident access line, consistent with the schools carve-out in hard rule 10; (2) coordinates are Wikidata's, matching Wikipedia's stated cross-street, but no source gives a tree-level GPS reading, so precision is approximate rather than confirmed; (3) no girth figure found this pass."
+ },
+ {
+  "id": "per_006",
+  "name": "The Fraser Avenue Red Flowering Gum",
+  "species": "Red-flowering Gum (Corymbia ficifolia)",
+  "age_estimate": "roughly 97 years (planted 1929)",
+  "age_min": 90,
+  "age_max": 100,
+  "girth_cm": 628,
+  "location": {
+   "address": "1082 Kings Park Road, Fraser Avenue, Kings Park, West Perth",
+   "latitude": -31.9591,
+   "longitude": 115.8474,
+   "neighbourhood": "Kings Park"
+  },
+  "verified_sources": [
+   "https://trusttrees.org.au/tree/WA/West_Perth/1082_Kings_Park_Road",
+   "https://honouravenueskingspark.com.au/past/wacp-history"
+  ],
+  "access": "Free, Kings Park is open daily; stands near the main Fraser Avenue entrance",
+  "transport": "Kings Park, walkable from Perth CBD (~2-3 km) or via CAT bus/Kings Park shuttle",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Documented planting date: one of 100 scarlet-flowering gums (Corymbia ficifolia) planted 29 September 1929 by members of the Centenary Committee, Kings Park Board and other dignitaries, led by Hon A Lovekin MLA, President of the Kings Park Board, to mark WA's 1929 centenary (each planter given an inscribed silver trowel). Fraser Avenue's original 1898 planting (for Queen Victoria's Jubilee) and the 1929 replanting both suffered patch canker disease in the 1930s; most were replaced in 1938 with Lemon-Scented Gums. This tree is THE ONLY SURVIVOR of the 1929 centenary planting, which is its main claim to remarkability. National Trust WA register (measured 2014): diameter 2m (girth_cm converted via pi x 200cm = 628), height 11m, condition excellent, age given there as 97 (as of 2014, so roughly 111 by 2026 if using that baseline, though the register's own 'age' field may already track from a fixed reference; I have used the documented 1929 planting date directly for age_min/max rather than compounding the register's own age figure, to avoid double counting). Location given as 'north east of the main entry (Fraser Avenue) to Kings Park'; coordinates here are an approximation for that area, not a tree-level GPS reading, hence approximate precision. Flag reason: precise coordinates within Fraser Avenue not confirmed; age figure reconciled from two slightly different register statements (97 yrs in 2014 vs. 1929 planting date), both point to the same tree, difference is measurement-vintage rather than disagreement."
+ }
+]
