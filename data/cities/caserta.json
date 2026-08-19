@@ -2,8 +2,8 @@
   "city": "Caserta",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Caserta's remarkable trees split between two places. Most stand inside the English Garden of the Reggia, 23 hectares Maria Carolina had planted in 1786 as Italy's first landscape garden, past a cedar seven and three quarter metres round, a Douglas fir of forty metres and a plane that grew sideways. Three more stand free in Piazza Vanvitelli, the town's own square: a Chilean monkey puzzle, a casuarina and a yew, within fifty metres of each other and open at any hour.",
-  "meta_description": "Caserta's monumental trees: eleven inside the Reggia's English Garden, a cedar 7.75 m round among them, plus three free in Piazza Vanvitelli.",
+  "intro": "Caserta's remarkable trees split between three places now. Sixteen stand inside the English Garden of the Reggia, 23 hectares Maria Carolina had planted in 1786 as Italy's first landscape garden, past a cedar seven and three quarter metres round, a Douglas fir of forty metres and a plane that grew sideways. A magnolia stands free right at the palace gate on Piazza Carlo di Borbone, and three more, a Chilean monkey puzzle, a casuarina and a yew, stand free in Piazza Vanvitelli, the town's own square.",
+  "meta_description": "Caserta's monumental trees: sixteen inside the Reggia's English Garden, a cedar 7.75 m round among them, plus four free in its piazzas.",
   "question_meta": "Caserta's oldest tree is almost certainly the yew at the Bath of Venus, already mature when it was set in place in the 1790s.",
   "question_answer": "Caserta's oldest tree is almost certainly the European yew at the Bath of Venus, in the English Garden of the Reggia. The Campania regional register calls it one of the patriarchs of the garden and records that it was already a mature tree when it was put in place at the garden's creation in the 1790s, which puts it comfortably past 250 years even though the age field on the same record says only 150. The Douglas fir and the camphor tree a few hundred metres downhill are each given about 200 years, and no tree in Caserta has been dated by counting rings.",
   "question_context": "Every age on this page comes from one place, the Campania regional register of monumental trees, and every age on it is an eta presunta, an estimate. The national MASAF register lists the same trees with the same girths and heights but carries no age field at all, so the two agree on what stands where and only one of them says how old it is. That matters more here than in most cities, because almost nothing in this garden is native and almost nothing was planted before 1786. Maria Carolina commissioned the garden that year on the advice of Sir William Hamilton, the British ambassador in Naples, and John Andrew Graefer, the gardener sent to build it, spent a decade collecting exotics from Capri, Salento and Palermo. Under Giovanni Gussone and Nicola Terracciano it later became a working botanical garden. So most of these trees are between 150 and 240 years old, and where a register says 200 it means the first planting rather than a measurement. The park also loses trees in storms, most recently a monumental Monterey cypress in December 2019, so treat any single specimen as something to check before a long trip.",
@@ -14,11 +14,11 @@
     },
     {
       "q": "Do you have to pay to see them?",
-      "a": "For most of them. Eleven stand inside the English Garden of the Reggia di Caserta, covered by the combined Royal Park and English Garden ticket, 9 euro plus a 1 euro online fee (a 3 euro park-only ticket exists but excludes the English Garden; closed Tuesdays). The other three, a monkey puzzle, a casuarina and a yew, grow in Piazza Vanvitelli, the town's own square, free and open at any hour."
+      "a": "For most of them. Sixteen stand inside the English Garden of the Reggia di Caserta, covered by the combined Royal Park and English Garden ticket, 9 euro plus a 1 euro online fee (a 3 euro park-only ticket exists but excludes the English Garden; closed Tuesdays). Four more are free: a magnolia right at the palace gate on Piazza Carlo di Borbone, and a monkey puzzle, a casuarina and a yew in Piazza Vanvitelli, the town's own square."
     },
     {
       "q": "Can you walk between them?",
-      "a": "Easily, in two separate walks. Inside the English Garden, nine of the eleven sit within about 200 metres of each other in the flat southern part the royal gardeners called the Palco, with the yew 500 metres further up; getting to the garden is the long part, roughly 2.5 km from the palace gate along the main axis, or take the electric shuttle. The three free trees in Piazza Vanvitelli form their own short walk, all within fifty metres of each other in the town centre."
+      "a": "In three parts. Inside the English Garden, sixteen of the twenty trees here stand in the same stretch of the flat southern Palco and the paths just above it, with the yew and one Osage orange further up near the top of the garden; getting to the garden is the long part, roughly 2.5 km from the palace gate along the main axis, or take the electric shuttle. A magnolia stands free right at that palace gate, on Piazza Carlo di Borbone, easy to see on the way in or out. The three free trees in Piazza Vanvitelli form their own short walk, all within fifty metres of each other in the town centre, about 2 km from the palace."
     },
     {
       "q": "Which is the strangest?",
@@ -493,6 +493,209 @@
         "label": "August to October: red arils on female trees, the only part that is not poisonous",
         "kind": "fruit"
       }
+    },
+    {
+      "id": "cas_015",
+      "name": "The Bottle Tree of the English Garden",
+      "species": "Bottle Tree (Brachychiton populneus)",
+      "age_estimate": "about 150 years",
+      "age_min": 130,
+      "age_max": 200,
+      "girth_cm": 360,
+      "location": {
+        "address": "Giardino Inglese, Reggia di Caserta, Viale Douhet 2/a, 81100 Caserta",
+        "latitude": 41.09316,
+        "longitude": 14.32965,
+        "neighbourhood": "Giardino Inglese"
+      },
+      "verified_sources": [
+        "MASAF register (Alberi Monumentali d'Italia), record 35/B963/CE/15",
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_262.html"
+      ],
+      "access": "Paid. Inside the English Garden of the Reggia di Caserta, covered by the combined Royal Park and English Garden ticket (9 euro, plus 1 euro if booked online). Closed Tuesdays.",
+      "transport": "Caserta station faces the palace. From the park gate it is about 2.5 km up the main axis to the English Garden, or take the electric shuttle.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "An Australian bottle tree, also called a kurrajong at home, stands thirty-five metres tall in a Bourbon queen's garden, roughly twice the height the species usually reaches. Brachychiton populneus grows across the dry eastern half of Australia, where most specimens top out somewhere between fifteen and twenty metres. The register puts this one at thirty-five, with three metres sixty around the trunk, which makes it an exceptional tree for the species by a wide margin.\n\nKurrajong belongs to the mallow family, alongside cotton, cacao and the baobab, and it shares the baobab's habit of storing water in a swollen trunk. Australian graziers cut the branches to feed stock through drought, the fibrous bark was worked into cord, and the seeds are edible once roasted. None of that has ever been asked of this one. It stands in the English Garden at the top of the Reggia's grounds, the informal twenty-three hectares laid out from 1786 for a queen who wanted a botanical collection rather than another parterre, and it has spent its whole life being watered by an aqueduct and looked at.\n\nThe Campania register credits it with about a hundred and fifty years. That figure is the register's own estimate rather than a ring count, and the national list carries the same trunk, the same height and no age at all.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A tall, columnar tree with small dark leaves and a smooth grey trunk, in the flatter southern part of the garden."
+    },
+    {
+      "id": "cas_016",
+      "name": "The Himalayan Chir Pine of the English Garden",
+      "species": "Chir Pine (Pinus roxburghii)",
+      "age_estimate": "about 150 years",
+      "age_min": 130,
+      "age_max": 200,
+      "girth_cm": 350,
+      "location": {
+        "address": "Giardino Inglese, Reggia di Caserta, Viale Douhet 2/a, 81100 Caserta",
+        "latitude": 41.09431,
+        "longitude": 14.33149,
+        "neighbourhood": "Giardino Inglese"
+      },
+      "verified_sources": [
+        "MASAF register (Alberi Monumentali d'Italia), record 41/B963/CE/15",
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_268.html"
+      ],
+      "access": "Paid. Inside the English Garden of the Reggia di Caserta, covered by the combined Royal Park and English Garden ticket (9 euro, plus 1 euro if booked online). Closed Tuesdays.",
+      "transport": "Caserta station faces the palace. From the park gate it is about 2.5 km up the main axis to the English Garden, or take the electric shuttle.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The chir pine is tapped for resin on Himalayan foothills from Pakistan to Nepal, and one of them grows in the garden of a Bourbon palace outside Naples. Pinus roxburghii is a tree of dry slopes between roughly 500 and 2,000 metres, where whole local economies run on it: resin for turpentine and rosin, timber for building, and needles swept up in quantity for fodder, fuel and bedding. Those needles are among the longest of any pine, up to thirty centimetres, carried in drooping bundles of three, so the crown reads looser and shaggier than any European pine standing near it.\n\nThis one is twenty-five metres tall with three metres fifty around the trunk. A Himalayan pine is not garden decoration, it is a collector's tree, and the English Garden spent much of the nineteenth century working as a botanical collection under Giovanni Gussone and later Nicola Terracciano, who filled it with species nobody in Campania had grown before. The queen it was built for in 1786 wanted a garden that would beat the other royal gardens of Europe, and the botanists who came after her kept buying.\n\nThe register puts the pine at about a hundred and fifty years and marks the number as an estimate. Nothing in this garden has been dated by counting rings, so read it as a period rather than a date.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A pine with unusually long, drooping needles in bundles of three, up to 30cm long, giving the crown a shaggy look unlike any nearby conifer."
+    },
+    {
+      "id": "cas_017",
+      "name": "The Turkey Oak of the English Garden",
+      "species": "Turkey Oak (Quercus cerris)",
+      "age_estimate": "about 150 years",
+      "age_min": 130,
+      "age_max": 200,
+      "girth_cm": 345,
+      "location": {
+        "address": "Giardino Inglese, Reggia di Caserta, Viale Douhet 2/a, 81100 Caserta",
+        "latitude": 41.09392,
+        "longitude": 14.33173,
+        "neighbourhood": "Giardino Inglese"
+      },
+      "verified_sources": [
+        "MASAF register (Alberi Monumentali d'Italia), record 48/B963/CE/15",
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_275.html"
+      ],
+      "access": "Paid. Inside the English Garden of the Reggia di Caserta, covered by the combined Royal Park and English Garden ticket (9 euro, plus 1 euro if booked online). Closed Tuesdays.",
+      "transport": "Caserta station faces the palace. From the park gate it is about 2.5 km up the main axis to the English Garden, or take the electric shuttle.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "In a garden collected out of Australia, the Himalaya and California, this oak grows wild in the hills a few kilometres away. Quercus cerris is native across southern Europe and Asia Minor, and grand gardens of the nineteenth century planted it anyway, because it grows faster than almost any other oak and reaches size while the owner is still alive to see it. This one is thirty-five metres tall with three metres forty-five around the trunk.\n\nIt is easy to identify once you look down. The acorn cups are covered in long whiskery scales, shaggy as a thistle head, and the acorns take two seasons to ripen instead of one. The leaves are rough to the touch, deeply and irregularly cut, and many of them hang on brown into the winter.\n\nWhat the tree has watched from this spot is the end of a dynasty. The English Garden was Bourbon royal property for its first seventy years, laid out from 1786 and stocked with imports for a queen. In 1860 the Kingdom of the Two Sicilies fell, and the palace and its grounds passed to the House of Savoy and then to the Italian state, which is who charges for the ticket today. The register's hundred and fifty years is an estimate rather than a measurement, so this oak may have arrived just before that change of ownership or just after it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "An oak with rough, deeply cut leaves and acorns in whiskery, thistle-like cups."
+    },
+    {
+      "id": "cas_018",
+      "name": "The Southern Magnolia of Piazza Carlo di Borbone",
+      "species": "Southern Magnolia (Magnolia grandiflora)",
+      "age_estimate": "about 150 years",
+      "age_min": 130,
+      "age_max": 200,
+      "girth_cm": 440,
+      "location": {
+        "address": "Piazza Carlo di Borbone, Reggia di Caserta, 81100 Caserta",
+        "latitude": 41.09309,
+        "longitude": 14.32993,
+        "neighbourhood": "Reggia di Caserta grounds"
+      },
+      "verified_sources": [
+        "MASAF register (Alberi Monumentali d'Italia), record 32/B963/CE/15",
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_243.html"
+      ],
+      "access": "Free. On the palace grounds at Piazza Carlo di Borbone, in front of the Reggia; open as part of the public square, no ticket needed to see it from the piazza.",
+      "transport": "Caserta station faces the palace directly across the piazza.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Four metres forty around the trunk is a great deal of magnolia, and this one asks nobody for a ticket. It grows on Piazza Carlo di Borbone, the elliptical square in front of the Reggia, rather than behind the wall of the English Garden up the hill, twenty-five metres tall and open to anyone at any hour.\n\nMagnolia grandiflora comes from the warm southeastern United States and has been planted as a specimen tree across Europe since the middle of the eighteenth century, for two reasons. The leaves stay on all year, dark and leathery on top with a rust-coloured felt underneath that is worth turning one over to see. And the flowers are enormous, cream white, up to thirty centimetres across and scented of lemon, opening a few at a time through the summer rather than all at once, so the tree is never covered in them and never quite out of them either.\n\nThe building behind it has had a stranger life than the tree. By 1944 the palace was Allied headquarters in the Mediterranean, and on 29 April 1945 the surrender of German forces in Italy was signed inside it. The magnolia was well grown by then: the Campania register credits it with about a hundred and fifty years, an estimate rather than a recorded planting date, which would have made it roughly eighty years old on the morning of the signing.",
+      "best_time": {
+        "months": [
+          5,
+          6,
+          7
+        ],
+        "kind": "flowers",
+        "label": "May to July, when the white flowers open, up to thirty centimetres across and smelling of lemon"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The large evergreen tree with huge white summer flowers on Piazza Carlo di Borbone, right in front of the palace."
+    },
+    {
+      "id": "cas_019",
+      "name": "The Upright Osage Orange of the English Garden",
+      "species": "Osage Orange (Maclura pomifera)",
+      "age_estimate": "about 200 years",
+      "age_min": 160,
+      "age_max": 220,
+      "girth_cm": 260,
+      "location": {
+        "address": "Giardino Inglese, Reggia di Caserta, Viale Douhet 2/a, 81100 Caserta",
+        "latitude": 41.09728,
+        "longitude": 14.33162,
+        "neighbourhood": "Giardino Inglese, upper garden"
+      },
+      "verified_sources": [
+        "MASAF register (Alberi Monumentali d'Italia), record 16/B963/CE/15",
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_189.html"
+      ],
+      "access": "Paid. Inside the English Garden of the Reggia di Caserta, covered by the combined Royal Park and English Garden ticket (9 euro, plus 1 euro if booked online). Closed Tuesdays.",
+      "transport": "Caserta station faces the palace. From the park gate it is about 2.5 km up the main axis to the English Garden, or take the electric shuttle.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The best bow wood in North America grows in a royal garden outside Naples. Maclura pomifera takes its English name from the Osage nation, whose bows were traded far beyond their own country, and the wood behind that reputation is heavy, springy and so rot-resistant that a fence post cut from it outlasts the fence. Before barbed wire, American farmers planted the tree in thorny hedgerows across thousands of miles of the Midwest.\n\nThe fruit is the reason to come in autumn. Each one is the size of a grapefruit, green, wrinkled like a brain, heavy enough to be worth not parking under, full of sticky white latex and eaten by almost nothing alive. One well-argued theory holds that its dispersers were the mastodons and giant ground sloths that disappeared from North America some thirteen thousand years ago, which would make every fruit dropped here an offer to a customer who no longer exists. They come down through September and October and lie where they land.\n\nTwo Osage oranges in this garden hold monumental status, and the register describes this one as the upright specimen: two metres sixty around the trunk, twenty-five metres tall, and about two hundred years old by the register's estimate. Taken at face value that puts it within thirty years of the garden's creation in 1786, which would make it one of the older residents of a collection built almost entirely out of foreigners.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "kind": "fruit",
+        "label": "September and October, when grapefruit-sized green fruit thump down and lie where they land"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "In the upper garden; a wide, low tree, unmistakable in autumn when grapefruit-sized green fruit litter the ground beneath it."
+    },
+    {
+      "id": "cas_020",
+      "name": "The Hackberry of the English Garden",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "age_estimate": "about 200 years",
+      "age_min": 160,
+      "age_max": 220,
+      "girth_cm": 350,
+      "location": {
+        "address": "Giardino Inglese, Reggia di Caserta, Viale Douhet 2/a, 81100 Caserta",
+        "latitude": 41.09503,
+        "longitude": 14.33129,
+        "neighbourhood": "Giardino Inglese"
+      },
+      "verified_sources": [
+        "MASAF register (Alberi Monumentali d'Italia), record 28/B963/CE/15",
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_239.html"
+      ],
+      "access": "Paid. Inside the English Garden of the Reggia di Caserta, covered by the combined Royal Park and English Garden ticket (9 euro, plus 1 euro if booked online). Closed Tuesdays.",
+      "transport": "Caserta station faces the palace. From the park gate it is about 2.5 km up the main axis to the English Garden, or take the electric shuttle.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Ancient writers put this tree forward as the lotus that made Odysseus's crew forget the way home. Celtis australis carries small dark fruit on long stalks, sweet and vaguely date-like when ripe, which is enough to keep the identification alive; a thorny North African shrub, Ziziphus lotus, has an equally old claim on the same story, and nobody has settled it.\n\nThe wood is not in dispute. Hackberry is hard and flexible in a way few Mediterranean broadleaves are, and Italian workshops turned it for centuries into tool handles, walking sticks, whip stocks and the long forks used for turning hay. It is also one of the standard shade trees of the Italian piazza, planted for a wide canopy and for roots that put up with being paved over.\n\nThis one has been asked to do neither job. Three metres fifty around the trunk and twenty-five metres tall, it stands in the English Garden among kurrajongs, redwoods and Himalayan pines, which is an odd room for a species most Italians walk past without looking up. The trees around it were shipped in from four continents for a queen who wanted a collection. The hackberry needed no shipping at all: the species grows wild across Italy and through the Mediterranean basin. The register gives it about two hundred years, an estimate rather than a count, which makes it one of the longer-standing things in a garden laid out from 1786.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A broad-canopied tree with small dark fruit on long stalks, among the garden's imported specimens."
     }
   ]
 }
