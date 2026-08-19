@@ -1,0 +1,266 @@
+[
+ {
+  "id": "lvg_001",
+  "name": "The Heritage Oak of Grant Hall",
+  "species": "Heritage Live Oak (Quercus virginiana)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 117,
+  "location": {
+   "address": "Academic Mall near Grant Hall, UNLV campus, 4505 S Maryland Pkwy, Las Vegas, NV 89154",
+   "latitude": 36.1085352,
+   "longitude": -115.1383231,
+   "neighbourhood": "UNLV campus (Academic Mall)"
+  },
+  "verified_sources": [
+   "https://forestry.nv.gov/uploads/missions/20210712_AMT_2015_Nevada_Big_Tree_Register.pdf",
+   "https://www.unlv.edu/news/article/rooted-champions"
+  ],
+  "access": "Free. Public university campus, open grounds, walkable any time the campus is open.",
+  "transport": "On the UNLV campus; nearest RTC bus stops serve Maryland Parkway, short walk in.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Nevada Big Tree Register (2015) lists 'Heritage Live' Quercus virginiana as a state champion at Clark, University of Nevada, Las Vegas: circumference 46in, height 56ft, spread 41ft, crown pts 10, total 112. UNLV's own Nov 4 2025 news article 'Rooted in Champions' (unlv.edu/news/article/rooted-champions, by Ren McMullin & Becca Schwartz) independently confirms this tree is CURRENTLY a state champion, describes it as a hybrid of English oak height and Bur oak width, ~60 feet tall, on the Academic Mall near Grant Hall, providing summer shade. Small height discrepancy (56ft in 2015 vs ~60ft described in 2025) is consistent with a decade of growth, not a conflict. No exact coordinates in either source; pin is the OSM/Nominatim position of Grant Hall itself, not the tree, so approximate. Age not given by either source and not derivable from girth alone without a published growth rate for this Quercus virginiana x macrocarpa hybrid; leave age empty and let the page ask."
+ },
+ {
+  "id": "lvg_002",
+  "name": "The Weeping Camperdown Elm at Carlson",
+  "species": "Camperdown Elm (Ulmus glabra 'Camperdownii')",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 79,
+  "location": {
+   "address": "By the William D. Carlson Education Building, UNLV campus, 4505 S Maryland Pkwy, Las Vegas, NV 89154",
+   "latitude": 36.1091651,
+   "longitude": -115.139717,
+   "neighbourhood": "UNLV campus"
+  },
+  "verified_sources": [
+   "https://forestry.nv.gov/uploads/missions/20210712_AMT_2015_Nevada_Big_Tree_Register.pdf",
+   "https://www.unlv.edu/news/article/rooted-champions"
+  ],
+  "access": "Free. Public university campus, open grounds, walkable any time the campus is open.",
+  "transport": "On the UNLV campus; nearest RTC bus stops serve Maryland Parkway, short walk in.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Nevada Big Tree Register (2015): Camperdown Elm, Ulmus glabra 'Camperdownii', Clark/UNLV, circumference 31in, height 11ft, spread 21ft, total 48pts. UNLV's Nov 4 2025 'Rooted in Champions' article independently confirms this exact champion is still standing, 'by the Carlson Education Building', height 'just 11 feet' (matches the 2015 register exactly, consistent for a mutated weeping cultivar grafted at a fixed height). Article notes the whole species descends from a single mutant tree found by the Earl of Camperdown in Scotland in 1835 (a species-level fact, not this tree's planting date, so no age is claimed for this specimen). Building-level pin only, not the tree itself, hence approximate."
+ },
+ {
+  "id": "lvg_003",
+  "name": "The Kissing Tree of Carlson Hill",
+  "species": "Weeping Mulberry (Morus alba 'Pendula')",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 173,
+  "location": {
+   "address": "Grassy hill just outside the William D. Carlson Education Building, UNLV campus, 4505 S Maryland Pkwy, Las Vegas, NV 89154",
+   "latitude": 36.1091651,
+   "longitude": -115.139717,
+   "neighbourhood": "UNLV campus"
+  },
+  "verified_sources": [
+   "https://forestry.nv.gov/uploads/missions/20210712_AMT_2015_Nevada_Big_Tree_Register.pdf",
+   "https://www.unlv.edu/news/article/rooted-champions"
+  ],
+  "access": "Free. Public university campus, open grounds, walkable any time the campus is open.",
+  "transport": "On the UNLV campus; nearest RTC bus stops serve Maryland Parkway, short walk in.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Nevada Big Tree Register (2015): Weeping Mulberry, Morus alba 'Pendula', Clark/UNLV, circumference 68in, height 18ft, spread 31ft, total 94pts. UNLV's Nov 4 2025 'Rooted in Champions' article independently confirms it as still standing on 'the grassy hill just outside the Carlson Education Building', now described as 20ft tall/30ft wide (close to the 2015 figures, consistent with a decade's growth), calls it a campus favourite nicknamed the 'kissing tree' with its own fan Instagram account, used by children on Take Your Child to Work Day. Strong recent-activity evidence for alive-now. Building-level pin, not the tree itself, hence approximate."
+ },
+ {
+  "id": "lvg_004",
+  "name": "The Yew Pine of White Hall",
+  "species": "Buddhist Pine (Podocarpus macrophyllus)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 51,
+  "location": {
+   "address": "Against White Hall, UNLV campus, 4505 S Maryland Pkwy, Las Vegas, NV 89154",
+   "latitude": 36.1102662,
+   "longitude": -115.1423813,
+   "neighbourhood": "UNLV campus"
+  },
+  "verified_sources": [
+   "https://forestry.nv.gov/uploads/missions/20210712_AMT_2015_Nevada_Big_Tree_Register.pdf",
+   "https://www.unlv.edu/news/article/rooted-champions"
+  ],
+  "access": "Free. Public university campus, open grounds, walkable any time the campus is open.",
+  "transport": "On the UNLV campus; nearest RTC bus stops serve Maryland Parkway, short walk in.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Nevada Big Tree Register (2015): Yew-pine, Podocarpus macrophyllus, Clark/UNLV, circumference 20in, height 24ft, spread 13ft, total 47pts. UNLV's Nov 4 2025 article independently confirms it, 'tucked away against White Hall... surrounded by recently renovated landscaping', height '24-foot evergreen' matching the 2015 register exactly. Also known as Buddhist pine; not actually a yew or pine despite the name. Building-level pin (White Hall Annex, nearest OSM match), not the tree itself, hence approximate."
+ },
+ {
+  "id": "lvg_005",
+  "name": "The Chir Pine of the Geoscience Building",
+  "species": "Chir Pine (Pinus roxburghii)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 122,
+  "location": {
+   "address": "Outside the Lilly Fong Geoscience Building, UNLV campus, 4505 S Maryland Pkwy, Las Vegas, NV 89154",
+   "latitude": 36.1083026,
+   "longitude": -115.141036,
+   "neighbourhood": "UNLV campus"
+  },
+  "verified_sources": [
+   "https://forestry.nv.gov/uploads/missions/20210712_AMT_2015_Nevada_Big_Tree_Register.pdf",
+   "https://www.unlv.edu/news/article/rooted-champions"
+  ],
+  "access": "Free. Public university campus, open grounds, walkable any time the campus is open.",
+  "transport": "On the UNLV campus; nearest RTC bus stops serve Maryland Parkway, short walk in.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Nevada Big Tree Register (2015): Chir Pine, Pinus roxburghii, Clark/UNLV, circumference 48in, height 52ft, spread 25ft, total 106pts. UNLV's Nov 4 2025 article independently confirms it, 'standing tall at 52 feet outside the Lilly Fong Geosciences Building', height matching the 2015 register exactly. Himalayan native, common in the Southwest for its tolerance of acidic soil. Building-level pin, not the tree itself, hence approximate."
+ },
+ {
+  "id": "lvg_006",
+  "name": "The Sissoo of Barrick Museum",
+  "species": "Sissoo Tree (Dalbergia sissoo)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 147,
+  "location": {
+   "address": "Barrick Museum parking lot, UNLV campus, 4505 S Maryland Pkwy, Las Vegas, NV 89154",
+   "latitude": 36.1069903,
+   "longitude": -115.1411406,
+   "neighbourhood": "UNLV campus"
+  },
+  "verified_sources": [
+   "https://forestry.nv.gov/uploads/missions/20210712_AMT_2015_Nevada_Big_Tree_Register.pdf",
+   "https://www.unlv.edu/news/article/rooted-champions"
+  ],
+  "access": "Free. Public university campus, open grounds (a parking lot tree, but freely walkable), walkable any time the campus is open.",
+  "transport": "On the UNLV campus; nearest RTC bus stops serve Maryland Parkway, short walk in.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Nevada Big Tree Register (2015): Sissoo Tree, Dalbergia sissoo, Clark/UNLV, circumference 58in, height 48ft, spread 29ft, total 113pts. UNLV's Nov 4 2025 article independently confirms it, 'Indian rosewood... provides valuable shade in the Barrick Museum parking lot', notes it is rare in the city because many municipalities avoid planting the fast-growing, hardy species. No exact height given in 2025 piece but description matches. Museum-lot-level pin, not the tree itself, hence approximate."
+ },
+ {
+  "id": "lvg_007",
+  "name": "The Desert Willow of the Research Administration Building",
+  "species": "Desert Willow (Chilopsis linearis)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 152,
+  "location": {
+   "address": "By the Research Administration Building, UNLV campus, 4505 S Maryland Pkwy, Las Vegas, NV 89154 (exact building position not confirmed this pass; use the general campus pin and ask on the ground)",
+   "latitude": 36.1077,
+   "longitude": -115.1414,
+   "neighbourhood": "UNLV campus"
+  },
+  "verified_sources": [
+   "https://forestry.nv.gov/uploads/missions/20210712_AMT_2015_Nevada_Big_Tree_Register.pdf",
+   "https://www.unlv.edu/news/article/rooted-champions"
+  ],
+  "access": "Free. Public university campus, open grounds, walkable any time the campus is open.",
+  "transport": "On the UNLV campus; nearest RTC bus stops serve Maryland Parkway, short walk in.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Nevada Big Tree Register (2015): Desert-willow, Chilopsis linearis, Clark/UNLV, circumference 60in, height 42ft, spread 34ft, total 110pts. UNLV's Nov 4 2025 article independently confirms it, 'located by the Research Administration Building', 'this 42-foot tree' matching the 2015 register height exactly, blooms bright pink late spring through summer, pruned into a different shape than its wild Red Rock Canyon cousins. Could NOT geocode 'Research Administration Building' as a named building this pass (OSM/Nominatim returned no match); coordinates given are the general UNLV campus centroid, not a specific building, so this is a park-level pin honestly labelled approximate rather than a faked building-level one. A later pass should confirm the building's current name/location on a campus map."
+ },
+ {
+  "id": "lvg_008",
+  "name": "The Texas Olive Behind the Paint Shop",
+  "species": "Texas Olive (Cordia boissieri)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 102,
+  "location": {
+   "address": "Behind the campus paint shop, near UNLV Facilities Management, 4505 S Maryland Pkwy, Las Vegas, NV 89154 (exact building position not confirmed this pass)",
+   "latitude": 36.1073036,
+   "longitude": -115.1456164,
+   "neighbourhood": "UNLV campus"
+  },
+  "verified_sources": [
+   "https://forestry.nv.gov/uploads/missions/20210712_AMT_2015_Nevada_Big_Tree_Register.pdf",
+   "https://www.unlv.edu/news/article/rooted-champions"
+  ],
+  "access": "Free. Public university campus, open grounds, walkable any time the campus is open. This one sits behind a maintenance building rather than on a public mall, so it is less obviously a destination than the others; still open ground.",
+  "transport": "On the UNLV campus; nearest RTC bus stops serve Maryland Parkway, short walk in.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Nevada Big Tree Register (2015): Texas Olive, Cordia boissieri, Clark/UNLV, circumference 40in, height 20ft, spread 14ft, total 64pts. UNLV's Nov 4 2025 article independently confirms it, 'the 20-foot Texas olive planted behind the paint shop on campus', height matching the 2015 register exactly, grows white flowers loved by hummingbirds and an olive-like (inedible) fruit. Could not geocode 'paint shop' as a named building; pin uses UNLV's Facilities Management Administration building as the nearest identifiable anchor, which is a guess at the general area rather than a confirmed position, hence approximate. A later pass should confirm on a campus facilities map."
+ },
+ {
+  "id": "lvg_009",
+  "name": "The Coolibah Eucalyptus of Winchester Park",
+  "species": "Coolibah (Eucalyptus microtheca)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 203,
+  "location": {
+   "address": "Winchester Park (Winchester Dondero Cultural Center), Las Vegas, NV 89121",
+   "latitude": 36.1328154,
+   "longitude": -115.1086102,
+   "neighbourhood": "Winchester"
+  },
+  "verified_sources": [
+   "https://forestry.nv.gov/uploads/missions/20210712_AMT_2015_Nevada_Big_Tree_Register.pdf",
+   "https://www.reviewjournal.com/local/local-nevada/forest-aficionados-search-tall-and-wide-for-nevadas-champion-trees/"
+  ],
+  "access": "Free. Clark County-run public park, open during park hours.",
+  "transport": "Winchester Park, near Desert Inn Road and McLeod Drive, central Las Vegas valley; RTC bus routes serve Desert Inn Road.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Nevada Big Tree Register (2015): Coolibah Eucalyptus, Eucalyptus microtheca, Clark, Las Vegas, Winchester Park, circumference 80in, height 70ft, spread 47ft, total 162pts. The Las Vegas Review-Journal's 2016 piece on the Nevada Big Tree Register independently confirms 'three more champions grow at the Winchester Cultural Center, a county-run park near Desert Inn Road and McLeod Drive', which corroborates the GROUP of three champions at this park (matching the register's three Winchester entries by count and location) but does not name this species individually, so the second source is weaker than a per-species confirmation. No source newer than 2016 found this pass confirming this specific tree; Las Vegas saw a significant windstorm in July 2025 that uprooted many mature trees valley-wide and an ongoing tree-death problem reported locally in 2025 (Fox5 Vegas, Sept 2025), which makes alive-now a real open question here rather than a formality. Flagged for that reason; not known to be dead. Park-level pin (Winchester Park centroid), not the tree itself, hence approximate."
+ },
+ {
+  "id": "lvg_010",
+  "name": "The Lemon Eucalyptus of Winchester Park",
+  "species": "Lemon-scented Gum (Eucalyptus citriodora)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 234,
+  "location": {
+   "address": "Winchester Park (Winchester Dondero Cultural Center), Las Vegas, NV 89121",
+   "latitude": 36.1328154,
+   "longitude": -115.1086102,
+   "neighbourhood": "Winchester"
+  },
+  "verified_sources": [
+   "https://forestry.nv.gov/uploads/missions/20210712_AMT_2015_Nevada_Big_Tree_Register.pdf",
+   "https://www.reviewjournal.com/local/local-nevada/forest-aficionados-search-tall-and-wide-for-nevadas-champion-trees/"
+  ],
+  "access": "Free. Clark County-run public park, open during park hours.",
+  "transport": "Winchester Park, near Desert Inn Road and McLeod Drive, central Las Vegas valley; RTC bus routes serve Desert Inn Road.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Nevada Big Tree Register (2015): Lemon Eucalyptus, Eucalyptus citriodora (now usually classified as Corymbia citriodora), Clark, Las Vegas, Winchester Park, circumference 92in, height 84ft, spread 64ft, total 192pts. At 84ft this would be one of the tallest trees in the whole Las Vegas dataset if still standing at that height. The Las Vegas Review-Journal's 2016 piece on the Nevada Big Tree Register independently confirms 'three more champions grow at the Winchester Cultural Center, a county-run park near Desert Inn Road and McLeod Drive', which corroborates the GROUP of three champions at this park (matching the register's three Winchester entries by count and location) but does not name this species individually, so the second source is weaker than a per-species confirmation. No source newer than 2016 found this pass confirming this specific tree; Las Vegas saw a significant windstorm in July 2025 that uprooted many mature trees valley-wide and an ongoing tree-death problem reported locally in 2025 (Fox5 Vegas, Sept 2025), which makes alive-now a real open question here rather than a formality. Flagged for that reason; not known to be dead. Park-level pin (Winchester Park centroid), not the tree itself, hence approximate."
+ },
+ {
+  "id": "lvg_011",
+  "name": "The Shiny Xylosma of Winchester Park",
+  "species": "Shiny Xylosma (Xylosma congestum)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 140,
+  "location": {
+   "address": "Winchester Park (Winchester Dondero Cultural Center), Las Vegas, NV 89121",
+   "latitude": 36.1328154,
+   "longitude": -115.1086102,
+   "neighbourhood": "Winchester"
+  },
+  "verified_sources": [
+   "https://forestry.nv.gov/uploads/missions/20210712_AMT_2015_Nevada_Big_Tree_Register.pdf",
+   "https://www.reviewjournal.com/local/local-nevada/forest-aficionados-search-tall-and-wide-for-nevadas-champion-trees/"
+  ],
+  "access": "Free. Clark County-run public park, open during park hours.",
+  "transport": "Winchester Park, near Desert Inn Road and McLeod Drive, central Las Vegas valley; RTC bus routes serve Desert Inn Road.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Nevada Big Tree Register (2015): Shiny Xylosma, Xylosma congestum, Clark, Las Vegas, Winchester Park, circumference 55in, height 24ft, spread 28ft, total 86pts. Normally a large shrub or small tree; a state champion of a species usually grown as a hedge is a genuinely unusual collectible point, worth naming as such in the story. The Las Vegas Review-Journal's 2016 piece on the Nevada Big Tree Register independently confirms 'three more champions grow at the Winchester Cultural Center, a county-run park near Desert Inn Road and McLeod Drive', which corroborates the GROUP of three champions at this park (matching the register's three Winchester entries by count and location) but does not name this species individually, so the second source is weaker than a per-species confirmation. No source newer than 2016 found this pass confirming this specific tree; Las Vegas saw a significant windstorm in July 2025 that uprooted many mature trees valley-wide and an ongoing tree-death problem reported locally in 2025 (Fox5 Vegas, Sept 2025), which makes alive-now a real open question here rather than a formality. Flagged for that reason; not known to be dead. Park-level pin (Winchester Park centroid), not the tree itself, hence approximate."
+ }
+]

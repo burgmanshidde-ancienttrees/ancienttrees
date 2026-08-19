@@ -1,0 +1,47 @@
+{
+  "leads": [
+    {
+      "id": "lvg_lead_holly_oak",
+      "name": "Holly Oak, UNLV (near White Hall)",
+      "species": "Holly Oak / Holm Oak (Quercus ilex, likely)",
+      "reason": "Named as a current UNLV state champion in UNLV's own Nov 4 2025 news article ('Rooted in Champions'), found next to White Hall, recently pruned. Could not find a matching entry in the 2015 Nevada Big Tree Register text extraction under Quercus ilex, Holly, Holm, or similar; the register's only 'Holly' genus entries (Ilex aquifolium, Ilex opaca) are both at University of Nevada, RENO, not Las Vegas, and are a different genus entirely (Ilex vs Quercus). So this tree currently has only ONE independent source (the UNLV article) rather than two. Needs either a second source or a located register entry (possibly a later/different edition of the Big Tree Register than the 2015 PDF used this pass) before it can ship.",
+      "source": "https://www.unlv.edu/news/article/rooted-champions"
+    },
+    {
+      "id": "lvg_lead_mondell_pine",
+      "name": "Mondell (Afghan) Pine, UNLV (behind Carlson Education Building)",
+      "species": "Mondell/Afghan Pine (Pinus eldarica)",
+      "reason": "Named as a current UNLV state champion in UNLV's Nov 4 2025 article, 'behind the Carlson Education Building', noted as recovering from a prolonged dry spell during the pandemic. The 2015 Nevada Big Tree Register DOES carry a 'Mondale (Afghan)' Pinus eldarica entry, but its location is given as 'Washoe, Reno, Private Property', not UNLV/Clark/Las Vegas. That is a genuine conflict rather than a typo (Reno and Las Vegas are ~440 miles apart), so the register entry cannot be used as this tree's second source without resolving the discrepancy. Possible explanations: a Las Vegas co-champion was added to a later register edition not seen this pass, or UNLV's article is describing county/campus-level recognition rather than the outright state champion. Needs a second, Las-Vegas-specific source before it ships.",
+      "source": "https://www.unlv.edu/news/article/rooted-champions"
+    },
+    {
+      "id": "lvg_lead_madrone",
+      "name": "Strawberry Tree / Madrone, UNLV campus",
+      "species": "Strawberry Tree (Arbutus unedo)",
+      "reason": "In the 2015 Nevada Big Tree Register as a UNLV champion (Clark, University of Nevada, Las Vegas; circumference 58in, height 21ft, spread 24ft, total 85pts). NOT among the 10 champions UNLV's own Nov 4 2025 'Rooted in Champions' article names as current campus champions, which raises a real alive-now/still-champion question this pass could not resolve either way (it may have died, been dethroned by a larger specimen, or simply not have made the article's list of highlights). Single-sourced (register only) for current status; needs a second, more recent source before shipping.",
+      "source": "https://forestry.nv.gov/uploads/missions/20210712_AMT_2015_Nevada_Big_Tree_Register.pdf"
+    },
+    {
+      "id": "lvg_lead_paloverde",
+      "name": "Blue Paloverde, UNLV campus",
+      "species": "Blue Paloverde (Parkinsonia florida, syn. Cercidium floridum)",
+      "reason": "In the 2015 Nevada Big Tree Register as a UNLV champion (Clark, University of Nevada, Las Vegas; circumference 44in, height 41ft, spread 43ft, total 96pts). Same issue as the Madrone above: absent from UNLV's own current (Nov 2025) list of 10 champions. Single-sourced for current status; needs a second, more recent source before shipping.",
+      "source": "https://forestry.nv.gov/uploads/missions/20210712_AMT_2015_Nevada_Big_Tree_Register.pdf"
+    },
+    {
+      "id": "lvg_lead_chinese_tallow",
+      "name": "Chinese Tallow, The Springs Preserve",
+      "species": "Chinese Tallow (Sapium sebiferum / Triadica sebifera)",
+      "reason": "In the 2015 Nevada Big Tree Register as a Springs Preserve champion (Clark, Las Vegas, The Springs Preserve; nominator Rod Haulenbeek). Circumference/height/spread figures did not extract cleanly from the PDF text stream for this specific row (likely a genuine gap in the source document rather than an extraction failure, since neighbouring rows extracted fine). No independent second source found this pass despite targeted searching (Springs Preserve's own site, local press); the 2016 Review-Journal piece names UNLV and Winchester Park by location but never mentions Springs Preserve. Single-sourced; needs a second source and its measurements before it can ship.",
+      "source": "https://forestry.nv.gov/uploads/missions/20210712_AMT_2015_Nevada_Big_Tree_Register.pdf"
+    },
+    {
+      "id": "lvg_lead_texas_live_oak",
+      "name": "Texas Live Oak, The Springs Preserve",
+      "species": "Texas Live Oak (Quercus fusiformis)",
+      "reason": "In the 2015 Nevada Big Tree Register as a Springs Preserve champion (Clark, Las Vegas, The Springs Preserve; circumference 34in, height 33ft, spread 24ft, total 73pts). No independent second source found this pass; see the Chinese Tallow entry above for the same gap. Single-sourced; needs a second source before it can ship.",
+      "source": "https://forestry.nv.gov/uploads/missions/20210712_AMT_2015_Nevada_Big_Tree_Register.pdf"
+    }
+  ],
+  "blocked": []
+}
