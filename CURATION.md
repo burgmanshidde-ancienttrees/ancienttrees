@@ -10,6 +10,14 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-19 - Perth: 6 stories written (write pass)
+
+All 6 written. Gija Jumulu's story states in its first line that the boab did not grow in Kings Park (dug up in the Kimberley in 2008, trucked 3,200 km, replanted 20 July 2008), so no reader can discover the relocation elsewhere and feel misled; per_005 (Old Jarrah, Armadale) carries both its honest caveats in the prose, the approximate cross-street pin and the unconfirmed fencing, so it promises a sighting and not a walk to the trunk. Two trees have no published girth (per_004 Proclamation Tree, per_005 Old Jarrah) and both ask the reader for it. best_time set on 2 of 6: the boab's leafless winter trunk (bare silhouette, Jun-Aug) and the Fraser Avenue red flowering gum's scarlet summer (Jan-Feb). The four figs and the ringbarked jarrah get none.
+
+## 2026-08-19 - Sydney: 6 stories written (write pass)
+
+All 6 written. Two are living replacements and say so in their opening lines rather than trading on the original's fame: syd_002 (Quad Jacaranda) opens with "about nine years old", a 2017 clone of the 1928 tree that fell in October 2016, and syd_006 (Wishing Tree) is the 1930s replacement for the c.1816 pine removed in 1945, led by its own plaque admitting it will never match its predecessor. syd_004 (Vailele fig) rests on Hunter's Hill Council's register alone and the story keeps that visible, including that the c.1900 date is one council's reading of two photographs. No girth exists for any of the 6; syd_001, syd_004 and syd_005 ask the reader for one. best_time set on 1 of 6 (jacaranda flowers, late Oct-Nov); the rest are evergreen. NOTE for the merging session: two species names collide with names already published, and hard rule 9 fails the build on this. syd_001 has "Queensland Kauri Pine (Agathis robusta)" against the live "Queensland Kauri (Agathis robusta)", and syd_002 has "Jacaranda (Jacaranda mimosifolia)" against the live "Blue Jacaranda (Jacaranda mimosifolia)". Left unchanged here because a write pass changes no verified field; the stories use plain language and read correctly under either name.
+
 ## 2026-08-19 - Frankfurt: 6 stories written (write pass)
 
 All 6 verified Naturdenkmal trees written and ready to merge; thin spots: frk_005 (eight-stemmed linden, Grüneburgpark) has no age and no established Tilia species, both stated in the prose as open questions for readers; frk_006's "second thickest tree in Frankfurt" claim came from a search summary only and was left out of the story. best_time set on 4 of 6 (lime blossom, dawn redwood and weeping beech autumn colour, copper beech spring flush).
