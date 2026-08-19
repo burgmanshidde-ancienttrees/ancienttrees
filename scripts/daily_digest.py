@@ -368,13 +368,29 @@ def clean_query(q):
 
 
 def fetch_cloudflare(token, today):
-    """Return list of per-day dicts for the last 8 days, oldest first."""
+    """Per-day zone numbers for the last 8 days, oldest first, or [] if the
+    zone is gone.
+
+    This has always been structurally zero (see the note beside zone_block
+    below: nothing is proxied, DNS lives at the registrar and points straight
+    at GitHub Pages), and on 2026-08-18 Cloudflare removed the domain from the
+    account entirely because its nameservers were never pointed there. From
+    then on this raised, and the raise killed the whole digest before it could
+    write a line: on 2026-08-19 the daily numbers simply stopped, and Search
+    Console, the signups and the beacon went unreported with them.
+
+    So a missing zone is now an empty list rather than an exception. The one
+    number anybody quotes comes from fetch_rum(), which is ACCOUNT-scoped Web
+    Analytics and is unaffected by any of this; it kept working throughout.
+    """
     zones = api(
         "https://api.cloudflare.com/client/v4/zones?name=" + ZONE_NAME,
         token=token,
     )
     if not zones.get("success") or not zones.get("result"):
-        raise RuntimeError("cannot list zone: %s" % json.dumps(zones.get("errors")))
+        print("NOTE: no Cloudflare zone for %s, so no proxied-traffic block. "
+              "Expected since 2026-08-18; the beacon numbers are unaffected." % ZONE_NAME)
+        return []
     tag = zones["result"][0]["id"]
 
     query = {
@@ -1141,8 +1157,12 @@ def main():
     try:
         days = fetch_cloudflare(token, today)
     except (RuntimeError, urllib.error.URLError, KeyError) as e:
-        print("SKIP: Cloudflare fetch failed: %s" % e)
-        return 1
+        # Never fatal. This block is a bonus; the numbers that matter come from
+        # Search Console, Supabase and the beacon, and losing all of those
+        # because a proxy we do not use went away is how 2026-08-19 lost its
+        # digest entirely.
+        print("NOTE: Cloudflare zone fetch failed (%s); carrying on without it." % e)
+        days = []
 
     # The hierarchy, agreed with Hidde 2026-08-09. The old entry was a
     # collection: fifteen true things in the order they happened to be
