@@ -12,6 +12,67 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-19 (session, continued) - Bilbao opened, 4 trees, honestly thin and scattered
+
+Continued down the ladder after Ottawa. Checked `data/leads/*.json` for cheap
+already-verified stock (Caserta alone had 30 READY leads, per rule 1(a) of
+"the course after the fortnight") but weighed that against Hidde's more
+recent 2026-08-19 ruling in CITY_QUEUE.md that opening unopened cities beats
+deepening published ones ("a new city taken to 10 is a page that can start
+ranking; a thirtieth tree in Rome is marginal"); Caserta at 14/20 read as
+closer to that marginal case than to a genuine gap, so left those leads
+staged for a session that picks up rule 1(a) explicitly, and continued
+opening instead.
+
+Picked **Bilbao**, one of the 17 cities Hidde named by name (from-zero web
+research explicitly authorised there). Confirmed first that no usable
+register exists: `passcheck.py --brief` found nothing within 20km, and
+OPEN_DATA_SURVEY.md separately records the Basque Country's own singular-tree
+decree as a dead end (legal catalogue, download 404). Claimed Bilbao,
+dispatched a from-zero research+verify pass following CLAUDE's "name the
+places first" technique (parks, university grounds, sacred ground, then local
+press, then a generic sweep).
+
+**Result is honestly thin.** 4 trees, right at the floor, cost 180k tokens
+(45k/tree, well above the 27-55k range other from-zero cities ran today) and
+the pass stopped there deliberately rather than grinding for a cheaper fifth,
+per the 80/20 rule. None of the four sit in one walkable cluster: they are
+scattered across four different neighbourhoods, 1.5 to 3km apart, and the
+page says so plainly rather than dressing it up as a walk. Three of the four
+carry only a vague "centenario" (over a century) age claim with no
+measurement; one (the Dona Casilda horse chestnut) was flagged by the verify
+pass itself for near-identical wording across its two sources, a real risk
+they share one original tourist-board line rather than confirming
+independently, and the story says so outright rather than presenting it as
+double-sourced. Two of the four (the Albia planes, the Misericordia garden)
+ship as ensemble entries, the garden or square itself being the destination
+rather than one named tree, which the collectible-point rule allows for a
+compact, famous, one-place-to-stand site.
+
+Fixed a build failure at merge: the write pass correctly left `species`
+fields untouched, but two candidate values collided with the corpus's
+existing canonical names (`Platanus x hispanica` vs the corpus's
+`Platanus x acerifolia` for London Plane, and a multi-species "mixed: ..."
+string in the ensemble entry that broke hard rule 9's parser entirely).
+Fixed both to the existing canonical forms; picked the Canary Island date
+palm, the one specimen the story itself calls out ("a tall palm dominates
+the middle"), as the ensemble's representative species tag.
+
+`npm --prefix site run build` clean (1928 pages), `preflight.py` clean (144
+cities), `superlatives.py` clean (414 claims, no collisions). Same
+shallow-checkout `qa.py` sitemap-lastmod note as the two entries below,
+environmental to this sandbox. Ran the free `photo_hunt.py --recheck` sweep
+(candidates for 2 of 4), nothing judged. `tree_index.py` refreshed.
+
+| Pass | Trees | Cost |
+|---|---:|---:|
+| Bilbao verify | 4 | 180k |
+| Bilbao write | 4 | 52k |
+
+Released the Bilbao claim. Bilbao is now 4 of its 10-tree target, at the
+floor; growing it further needs either a reader tip or a session willing to
+spend well above the usual from-zero rate. Continuing down the ladder.
+
 ## 2026-08-19 (session, continued) - Ottawa opened, 8 trees, one bridge-claim trap caught
 
 Continued down the ladder after Hawaii. `city_queue.py --next` still showed

@@ -1,0 +1,46 @@
+{
+  "leads": [
+    {
+      "candidate": "Ombu (Phytolacca dioica), Parque de Dona Casilda de Iturrizar",
+      "reason": "Species presence in the park confirmed by multiple sources (a distinctive, visually spectacular species with a swollen anomalous trunk), but no source names, measures or locates an individual specimen within the 115,200 sqm park. Needs a site visit, a park map/interpretive-sign photo, or a geotagged iNaturalist/Wikimedia observation to become a pinnable candidate."
+    },
+    {
+      "candidate": "Ginkgo biloba, Parque de Dona Casilda de Iturrizar",
+      "reason": "Same as the ombu: species confirmed present (botanikasestao blog, bilbaovisitavirtual.eus) but no individual specimen named, aged or located."
+    },
+    {
+      "candidate": "Dracaena draco (dragon tree), Parque de Dona Casilda de Iturrizar",
+      "reason": "Species confirmed present per botanikasestao blog post 1. No age, size or location found for a specific specimen."
+    },
+    {
+      "candidate": "Sequoiadendron giganteum, jardin del Instituto Social de la Marina, Begona",
+      "reason": "botanikasestao blog names a giant sequoia at this specific institutional garden in Begona (distinct from the one in Parque de la Misericordia already delivered as bil_003). Only one source found (a blog inventory list), no second source, no size, no confirmed public access to this institution's grounds. Worth a follow-up search specifically for 'Instituto Social de la Marina' + jardin + Begona, and an access check before it could ship (hard rule 10: is this genuinely open ground or does a visitor need to talk past a reception desk)."
+    },
+    {
+      "candidate": "The tree of Plaza Ametzola (unnamed species)",
+      "reason": "DEIA's 2024-01-28 feature on Bilbao's four emblematic trees describes a living tree ('habita', present tense) in Plaza Ametzola next to the Vista Alegre bullring, locally considered the square's real namesake ('la plaza del arbol'). No species, age or size given anywhere in the fetched article. Needs a fresh search for species identification before it can be verified; currently just a place and a claim of local fame."
+    },
+    {
+      "candidate": "Notable trees in Parque de Etxebarria (oak, beech, maple)",
+      "reason": "Bilbao.eus press release on the park's 2020s-era renovation describes Acer freemanii, Quercus robur and Fagus sylvatica purpurea reaching '25-30 cm caliber', which reads as recently planted/young ornamental stock rather than remarkable old trees. Not pursued further; if older specimens exist elsewhere in this park a future pass should check, but this specific press release does not support a candidate."
+    },
+    {
+      "candidate": "Un-named specimens from the Bizkaia/Basque singular-tree catalogue (deuda foral)",
+      "reason": "The Diputacion Foral de Bizkaia maintains a legal 'natural monuments' list (formerly 'arboles singulares') per Ley 9/2021; a 2021 DEIA article describes a municipal Bilbao inventory of ~3,000 tracked specimens with some GPS-referenced. Both exist but no usable machine-readable list was found or fetched this pass (matches OPEN_DATA_SURVEY.md's existing verdict that Euskadi's singular-tree register is a dead end for import). The five Bizkaia-wide 'natural monuments' named in search results (two centenary holm oaks in Muxika and Garai, a hybrid oak in Artzentzales) are all OUTSIDE Bilbao proper (other municipalities), so out of scope for this city page; worth checking for a Bizkaia-wide or day-trip-cluster page some other day."
+    }
+  ],
+  "blocked": [
+    {
+      "candidate": "Arbol Gordo de Arbieto (giant oak, historic Abando)",
+      "reason": "Dead. Per DEIA (2024-01-28), this ancient oak died in April 1881 at roughly 691 years old; site now built over near Jardines de Albia. Never a collectible entry (hard rule: no dead trees), may appear as historical color in prose about the area."
+    },
+    {
+      "candidate": "Tilo del Arenal (lime/linden tree, El Arenal)",
+      "reason": "Dead. Per DEIA (2024-01-28), planted 1809, moved from Abando in 1916, felled by a storm on the night of 1 April 1948 at 132 years old. A named cafe on El Arenal preserves its memory in decor, but the tree itself is gone. Never a collectible entry."
+    },
+    {
+      "candidate": "El Abuelo / the last Castano de Indias of Plaza Arriquibar",
+      "reason": "Dead. Per DEIA (2024-01-28), the last survivor of the original chestnut planting in this square, nicknamed 'El Abuelo' by neighbours, was felled in 2018. Never a collectible entry."
+    }
+  ]
+}
