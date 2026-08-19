@@ -188,6 +188,13 @@
       "Berlini",
       "Berlyn"
     ],
+    "bilbao": [
+      "Bilbau",
+      "Bilbo",
+      "Bilbaum",
+      "Bilbaw",
+      "Bilbo / Bilbao"
+    ],
     "bologna": [
       "Bologne",
       "Bolonia",
@@ -1000,6 +1007,17 @@
       "ma tomo Usilu",
       "Ōhoro"
     ],
+    "ottawa": [
+      "Otava",
+      "Ottavia",
+      "Otavo",
+      "Otawa",
+      "Ottav",
+      "Ottava",
+      "Tótsoh Nílį́",
+      "Uwtayhuwa",
+      "ma Otawa"
+    ],
     "oxford": [
       "Oksford",
       "Oksfordas",
@@ -1583,6 +1601,7 @@
     "belgrade": "Belgrade",
     "bergamo": "Bergamo",
     "berlin": "Berlin",
+    "bilbao": "Bilbao",
     "bologna": "Bologna",
     "bordeaux": "Bordeaux",
     "boston": "Boston",
@@ -1659,6 +1678,7 @@
     "nuremberg": "Nuremberg",
     "osaka": "Osaka",
     "oslo": "Oslo",
+    "ottawa": "Ottawa",
     "oxford": "Oxford",
     "padua": "Padua",
     "palermo": "Palermo",
@@ -1717,5 +1737,7 @@
     "breda": "Breda",
     "sintra": "Sintra"
   },
-  "unresolved_names": {}
+  "unresolved_names": {
+    "hawaii": "no article within 40 km, tried Hawaii (Hawaii, 312 km away); Hawaii, United States (Hawaii, 312 km away); search: List of United States cities by population; search: Honolulu; search: 2026 United States House of Representatives elections in Hawaii"
+  }
 }
