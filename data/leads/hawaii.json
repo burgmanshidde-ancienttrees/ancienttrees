@@ -1,0 +1,24 @@
+{
+ "leads": [
+  {
+   "register_id": "1205",
+   "name": null,
+   "species": "Indian Banyan (Ficus benghalensis)",
+   "reason": "Real, plausible historic tree but not individually confirmed. Register gives coords 19.64,-155.99 (North Kona, park-level grid only), no locality/position_source string, girth_cm 2301.2 (over 23m, sanity-flagged: this is enormous even for a banyan, though the Lahaina Banyan's canopy/aggregate girth is reported around 0.25 miles so a huge multi-trunk figure is not implausible for the species -- it is unclear whether 2301.2cm is a single trunk or an aggregate/buttressed mass, and the register does not say). Researched North Kona's historic banyan lineage: Queen Kapiolani gave four trees to Kona in 1882, two of which were Indian Banyan cuttings from the Iolani Palace banyan, one planted at Hulihee Palace and one (transplanted 1906 by the Maguire family) now standing near Kailua Pier by the King Kamehameha Hotel; both reportedly still stand today (source: Ho'okuleana LLC 'Along Ali'i Drive', 2017, via imagesofoldhawaii.com, cross-referenced against bigislandnow.com's 2025-11-02 article on the Burgess fig). Both sites are genuinely public (a state-registered historic home/museum with public grounds, and a hotel/pier waterfront). Could not determine which of the two this register entry (or if a third, different Indian Banyan) refers to, and could not independently corroborate the 2301.2cm girth against a named specimen within the time window. Worth a dedicated single-tree pass: search 'Hulihee Palace banyan tree' and 'King Kamehameha Hotel Kailua banyan' directly, or contact either site, to pin identity and confirm the tree is alive and correctly sized before publishing."
+  },
+  {
+   "register_id": "1206",
+   "name": null,
+   "species": "Chinese Banyan (Ficus microcarpa)",
+   "reason": "No girth recorded, locality only 'Kona' (no address), coords 19.64,-156.0 (park-level grid). No independent source found identifying a specific notable Chinese Banyan in Kailua-Kona within the time window; general searching surfaced the Burgess/Banyan Court Moreton Bay fig and the two royal Indian Banyan cuttings but nothing matching this species and location. Needs a dedicated search pass before it can be verified or placed."
+  }
+ ],
+ "blocked": [
+  {
+   "register_id": "1172",
+   "name": "The Burgess Moreton Bay Fig (Kona Banyan Court)",
+   "species": "Moreton Bay Fig (Ficus macrophylla)",
+   "reason": "DEAD. Confirmed via Big Island Now (2025-11-02, 'Iconic Ali'i Drive in Kona changed forever after loss of 80-foot tree', fetched directly) and corroborated by Kauai Now's syndication of the same story: internal rot caused a branch to fail on 2025-10-24, the whole tree was removed by 2025-10-26 for public safety, and only a 20-foot stump remains at Kona Banyan Court on Ali'i Drive. The tree was planted in 1882 as a gift from Queen Kapiolani to Alexander Burgess (matches the register's owner_name 'Burgess, Inc.' and locality 'Portion of Kailua Village, North Kona' exactly). An arborist said it 'may try to regrow' from the stump and locals have discussed carving the remaining trunk into a ki'i, but as it stands today there is no living crown: this fails hard rule 'we do not do dead trees' outright. Do not publish as a collectible entry. If the stump regrows a canopy in future years, or if the carved ki'i becomes a notable public artifact in its own right, that would be a new, separate research question, not a revival of this entry. The register's own 'Excellent' vitality rating for this tree is stale/wrong as of 2026; register vitality fields cannot be trusted for currency, exactly as the rulebook warns."
+  }
+ ]
+}

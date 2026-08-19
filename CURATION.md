@@ -10,6 +10,22 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-19 - Hawaii (the Big Island): opened, 6 trees, 0 flagged as unusable, 6 photos missing
+
+New city, Kalopa Native Forest State Park cluster on the Hamakua coast (a
+koa, a hame, two kopiko 'ula, two ohi'a lehua), all `location_precision:
+approximate` (the register rounds coordinates to about 1km and all six share
+one grid cell). 3 of 6 carry `curation_status: flagged` for the register's own
+implausible height figures, excluded from the record rather than published;
+girths are trustworthy and used instead. No tree has a documented age; the
+page says so plainly and asks readers rather than guessing. One Kona
+candidate (a Moreton Bay Fig gifted 1882, "Excellent" vitality in the
+register) was blocked as dead, cut to a stump October 2025. Two more Kona
+banyans went to leads, real candidates (one plausibly a surviving 1882 royal
+banyan cutting) that need a dedicated identification pass. Photos: 0 of 6,
+API sweep queued 1 candidate each for 5 of 6, none judged (this session's
+egress cannot reach upload.wikimedia.org).
+
 ## 2026-08-19 - Dallas: 8 stories written (write pass)
 
 All 8 written. The two Dealey Plaza oaks (dal_001, dal_002) carry the 22 November 1963 shooting plainly and at different lengths: dal_001 leads on the shots passing through its canopy, dal_002 leads on being the largest of the three trees the Texas Historic Tree Coalition measured and gives the disputed knoll two sentences, no more. Both ensembles say in the prose that they are groups: dal_007 names the fountain as the place to stand and separates the largest trunk (about 11 ft round) from the grove average (30 in diameter), and dal_008 leads on Moore Park's 1938 founding as one of five parks for the city's Black residents and its 1940 Juneteenth renaming, then states the age conflict as a 125 to 190 year span across three sources rather than picking one. dal_003 (county champion post oak) has no age in any source and asks the reader for one; dal_006 has no girth and asks for that. best_time set on 1 of 8 (dal_008, pecans down in October and November); the live oaks and the winter-bare bur oaks get none.
