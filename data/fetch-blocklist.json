@@ -181,6 +181,12 @@
    "seen": "2026-08-17",
    "cost": "two attempts on the Cyprus pass",
    "workaround": "its coordinates appear in the search snippet; treat those as approximate and say so"
+  },
+  "frankfurt.de": {
+   "behaviour": "Cloudflare 'Just a moment...' 403 to both curl (browser user agent included) and WebFetch. Fast fail, not a hang, so it costs a second rather than a window",
+   "seen": "2026-08-19",
+   "cost": "the Frankfurt verify pass could not read the city register directly",
+   "workaround": "de.wikipedia's 'Liste der Naturdenkmale in Frankfurt am Main', fetched as WIKITEXT and joined to the city's own gazette (Amtsblatt Nr. 44/2025), carries the same register content; that join delivered the whole pass. Wayback snapshots of frankfurt.de load, but archive.org's availability API starts 429-ing after roughly 6 to 8 calls"
   }
  }
 }

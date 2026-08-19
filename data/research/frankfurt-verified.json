@@ -1,0 +1,148 @@
+[
+ {
+  "id": "frk_001",
+  "name": "The Eschersheimer Linde",
+  "species": "Large-leaved Lime (Tilia platyphyllos)",
+  "age_estimate": "over 300 years",
+  "age_min": 300,
+  "age_max": 340,
+  "girth_cm": 500,
+  "location": {
+   "address": "Eschersheimer Landstraße, between Am Lindenbaum and Hinter den Ulmen, Eschersheim",
+   "latitude": 50.153333,
+   "longitude": 8.660833,
+   "neighbourhood": "Eschersheim"
+  },
+  "verified_sources": [
+   "https://web.archive.org/web/20251028075203/https://frankfurt.de/themen/umwelt-und-gruen/umwelt-und-gruen-a-z/im-gruenen/baeume/naturdenkmale/eschersheimer-linde",
+   "https://de.wikipedia.org/wiki/Eschersheimer_Linde",
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Frankfurt_am_Main"
+  ],
+  "access": "Free, standing directly on the public street (Eschersheimer Landstraße), always visible",
+  "transport": "Lindenbaum U-Bahn station (U1/U2/U3/U8) right beside it; the subway curves around the tree",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "City natural monument register (Amtsblatt Nr. 44/2025, list refreshed Oct 2025, tree confirmed on the current list) gives species Sommer-Linde/Tilia platyphyllos (note: the Wikipedia list-page short description called it a Winterlinde, but both the city detail page and the dedicated Wikipedia article on this specific tree say Tilia platyphyllos/Sommerlinde -- trust the tree-specific sources). Planted end of 17th century as a landmark on the then-open Eschersheimer Landstrasse, originally called Kleine Linde (an older, larger Grosse Linde stood nearby and collapsed in a 1923 storm). Naturdenkmal status since 1937. Height ~25m, girth ~5m. Received tree surgery in 1955 and 1974, drainage in 1968 and artificial irrigation/aeration in 1984 because street paving and sealed surfaces were choking its roots. The Lindenbaum U-Bahn station and the street Am Lindenbaum are both named after it; the U-Bahn line was built with a slight curve specifically to avoid the tree. Good witnessed-history anecdote for the story."
+ },
+ {
+  "id": "frk_002",
+  "name": "The Dawn Redwood of the Botanical Garden",
+  "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+  "age_estimate": "about 75 years",
+  "age_min": 70,
+  "age_max": 80,
+  "girth_cm": 572,
+  "location": {
+   "address": "Botanischer Garten Frankfurt, East Asia section, opposite the flat-roof building, right of the bee house, Westend-Nord",
+   "latitude": 50.126419,
+   "longitude": 8.657908,
+   "neighbourhood": "Westend-Nord"
+  },
+  "verified_sources": [
+   "https://www.botanischergarten-frankfurt.de/pflanzen/pflanzen-von-a-z/metasequoia-glyptostroboides/",
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Frankfurt_am_Main"
+  ],
+  "access": "Free entry to the Botanical Garden (Botanischer Garten Frankfurt, next to the Palmengarten), open during garden hours",
+  "transport": "Bockenheimer Warte U-Bahn/tram hub, about 10 minute walk; or Westend tram stops closer to the garden entrance",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "City natural monument register (Amtsblatt Nr. 44/2025, current Oct 2025 list). Independently confirmed by the Botanical Garden own plant-by-plant page, which is the strongest possible second source since it is the institution that grows the tree. Began life around 1950 as a cutting (Steckling). Trunk girth measured at 5.72 m (own page states this, dated to the page publication, no exact measurement date given) at 1.3m height per DDG (Deutsche Dendrologische Gesellschaft) champion-tree convention, making it currently the second-strongest recorded Metasequoia glyptostroboides in Germany per the DDG champion trees list (www.ddg-web.de). Height up to 35m for the species generally; garden own page does not give this specimen exact height. Species is a living fossil, thought extinct until rediscovered alive in central China in 1943. Age estimated from the ~1950 planting date (documented planting date for this specimen, not a bridge claim), so about 75-76 years as of 2026. Good witnessed-history anecdote: this exact tree is older than the species knowledge was until 1943 the tree was known only from fossils."
+ },
+ {
+  "id": "frk_003",
+  "name": "The Weeping Beech of the Palmengarten",
+  "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+  "age_estimate": "about 180 years",
+  "age_min": 175,
+  "age_max": 185,
+  "girth_cm": 405,
+  "location": {
+   "address": "Palmengarten Frankfurt, west of the Palmenhaus, by the Gesellschaftshaus, Westend-Süd",
+   "latitude": 50.121852,
+   "longitude": 8.655912,
+   "neighbourhood": "Westend-Süd"
+  },
+  "verified_sources": [
+   "https://www.baumkunde.de/baumregister/8980-haenge_buche_im_palmengarten_frankfurt_am_main/",
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Frankfurt_am_Main"
+  ],
+  "access": "Paid entry to the Palmengarten (botanical garden with an admission ticket)",
+  "transport": "Bockenheimer Warte or Westend U-Bahn stations, short walk to the Palmengarten entrance",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Planted 1845 per Frankfurts own tree cadastre (Baumkataster), cited by baumkunde.de, an independent tree registry that also visited and measured it (girth 4.05m, height 16m, visit 11.06.2023, condition vital with some branch breakage). Newly confirmed on the citys official Naturdenkmal register in 2025 (baumkunde notes seit 2025 Naturdenkmal der Stadt Frankfurt). Its drooping branches have rooted where they touch the ground, forming a kind of leafy hall/room beneath the canopy, a strong visual detail for the story. Located right by the Gesellschaftshaus in the western part of the Palmengarten."
+ },
+ {
+  "id": "frk_004",
+  "name": "The Copper Beech of the Palmengarten",
+  "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+  "age_estimate": "about 210 years",
+  "age_min": 205,
+  "age_max": 215,
+  "girth_cm": 450,
+  "location": {
+   "address": "Palmengarten Frankfurt, middle section of the park (on the meadow), Westend-Süd",
+   "latitude": 50.123028,
+   "longitude": 8.655685,
+   "neighbourhood": "Westend-Süd"
+  },
+  "verified_sources": [
+   "https://www.baumkunde.de/baumregister/8649-blutbuche_im_palmengarten_frankfurt/",
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Frankfurt_am_Main"
+  ],
+  "access": "Paid entry to the Palmengarten (botanical garden with an admission ticket)",
+  "transport": "Bockenheimer Warte or Westend U-Bahn stations, short walk to the Palmengarten entrance",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Grafted (veredeltes) specimen, planting year 1815 per Frankfurts own tree cadastre (Baumkataster Frankfurt), cited by baumkunde.de, an independent tree registry that measured girth 4.5m on 19.08.2022 and recorded condition vital on the same visit. Newly confirmed on the citys official Naturdenkmal register in 2025 (baumkunde notes seit 2025 Naturdenkmal der Stadt Frankfurt), designated for beauty and rarity. Predates the Palmengarten itself, which opened in 1871, so the tree stood on this ground for decades before the garden was built around it (worth checking/using carefully in the story, as this is a real fact from the planting date rather than a bridge claim)."
+ },
+ {
+  "id": "frk_005",
+  "name": "The Eight-Stemmed Linden of Grüneburgpark",
+  "species": "Lime (Tilia sp.)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "location": {
+   "address": "Grüneburgpark, at a path crossing in the middle of the park, near the small childrens playground, Westend",
+   "latitude": 50.128129,
+   "longitude": 8.661711,
+   "neighbourhood": "Westend"
+  },
+  "verified_sources": [
+   "https://stadtundnatur.wordpress.com/2025/09/10/naturdenkmal-achtstammige-linde-im-gruneburgpark/",
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Frankfurt_am_Main"
+  ],
+  "access": "Free, public park (Grüneburgpark), open at all times",
+  "transport": "Miquel-/Adickesallee or Holzhausenstraße bus/tram stops; about 10-15 minute walk from Bockenheimer Warte U-Bahn",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "A bundle planting (Bundelpflanzung) of eight lime/linden stems grown as one tree, at a path intersection in the middle of Grüneburgpark near the small childrens playground. Confirmed as a newly designated 2025 natural monument by both the official register (Wikipedia mirror of Amtsblatt Nr. 44/2025) and stadtundnatur, a long-running independent Frankfurt green-space blog that posted about this exact designation on 2025-09-10, shortly before the register went live, and which otherwise tracks tree felling and park issues in this city closely (credible local watchdog). A WebSearch summary claimed a 1920 planting date and over 100 years old, but that figure did not appear on any page actually fetched this pass (not on the stadtundnatur post, which gives no age), so it is NOT recorded as age_estimate per the no-fabrication rule; age left empty and flagged for the writer to ask readers or find a citable source. Exact common lime species (Tilia cordata vs platyphyllos vs x europaea) not stated in either source; safe to say Tilia sp. and ask readers."
+ },
+ {
+  "id": "frk_006",
+  "name": "The Plane Tree at the Nebbiensches Gartenhaus",
+  "species": "London Plane (Platanus x acerifolia)",
+  "age_estimate": "about 210 years",
+  "age_min": 205,
+  "age_max": 215,
+  "girth_cm": 713,
+  "location": {
+   "address": "Bockenheimer Anlage, behind the Nebbiensches Gartenhaus, Innenstadt",
+   "latitude": 50.1176,
+   "longitude": 8.6765,
+   "neighbourhood": "Innenstadt"
+  },
+  "verified_sources": [
+   "https://www.flurbaum.de/f-stadt.html",
+   "https://www.baumkunde.de/baumregister/6394-platane_in_der_bockenheimer_anlage_in_frankfurt/",
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Frankfurt_am_Main"
+  ],
+  "access": "Free, public park (Bockenheimer Anlage), unrestricted access confirmed by an October 2025 independent tree survey",
+  "transport": "Alte Oper or Bockenheimer Warte U-Bahn stations, a few minutes walk through the Anlagenring park",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Two independent measurements agree closely: flurbaum.de (an independent big-tree survey of Frankfurt, dated Stand Oktober 2025) gives girth 713cm at 1.3m height, height ~35m, crown width ~26m, germination around 1815, planted 1820, and explicitly states access is unbeschraenkt moeglich (oeffentlich) i.e. unrestricted public access. baumkunde.de independently measured the same tree at 704cm girth on 19.08.2022, condition vital, also citing an 1820 planting date. Both agree it stands directly behind the Nebbiensches Gartenhaus, a neoclassical garden pavilion built 1810 in the Bockenheimer Anlage (part of Frankfurts Wallanlagen ring park around the old city). Reportedly the second-thickest tree in Frankfurt by trunk girth per a WebSearch summary; not independently confirmed on a fetched page so treat that specific superlative claim as unverified and optional for the story. Officially on the citys Naturdenkmal register (entry 028, Wikipedia mirror of Amtsblatt Nr. 44/2025). Good anecdote: stands beside a historic garden pavilion in the ring of parks that replaced Frankfurts old city walls."
+ }
+]
