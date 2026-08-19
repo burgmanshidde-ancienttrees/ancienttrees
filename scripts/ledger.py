@@ -89,6 +89,13 @@ td.num{text-align:right;font-variant-numeric:tabular-nums}
 .count{color:var(--muted);font-size:.82rem}
 footer{color:var(--faint);font-size:.78rem;max-width:70ch}
 @media (max-width:640px){body{padding:1.4rem .8rem 3rem}}
+.rule{margin:2.2rem 0 1rem;padding:1.2rem 1.4rem;background:var(--surface);
+  border-radius:12px;border:1px solid rgba(0,0,0,.07)}
+.rule h2{margin:0 0 .6rem;font-size:1.05rem}
+.rule p{margin:.5rem 0;color:var(--muted);line-height:1.55}
+.rule-table{border-collapse:collapse;margin:.6rem 0}
+.rule-table td{padding:.3rem .9rem .3rem 0;color:var(--muted)}
+.rule-table td:last-child{text-align:right;color:var(--ink)}
 </style>"""
 
 
@@ -167,6 +174,24 @@ def build():
 <tbody id="rows"></tbody>
 </table>
 </div>
+<section class="rule">
+<h2>What the machine works on, and how far it takes a city</h2>
+<p><strong>First: open the cities that have no trees yet</strong>, to ten, as fast as they
+go. Set 19 August 2026, reading this very table: a new city taken to ten is a page that
+can start ranking, while a thirtieth tree in a city we already cover is marginal. Cities
+with no register behind them count here too; from-zero research is normally off and is on
+for these because they were named.</p>
+<p><strong>Then deepen</strong>, to one of three numbers:</p>
+<table class="rule-table">
+<tr><td>new city or village, not yet confirmed by Search Console</td><td><b>10</b></td></tr>
+<tr><td>confirmed city</td><td><b>20</b></td></tr>
+<tr><td>confirmed big city, 8,000+ travel demand</td><td><b>30</b></td></tr>
+</table>
+<p>Thirty is the ceiling everywhere. A page that needs fifty is a page padded past the
+point where every entry deserves its spot, and that exclusivity is the product. Every
+target is a ceiling and a stopping point, never a quota: the moment the next tree gets
+hard to find, the city is finished for now. Cadiz at five is finished work.</p>
+</section>
 <footer>Trees, photographs and register supply are counted from the project's own
 data. Impressions and clicks come from Search Console and are a ten-day window, so a
 zero means the page was not served in that window rather than that it does not exist.
