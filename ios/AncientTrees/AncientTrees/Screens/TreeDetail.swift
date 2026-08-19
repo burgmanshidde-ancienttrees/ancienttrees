@@ -14,16 +14,22 @@ struct TreeDetail: View {
     let catalogue: Catalogue
     @Environment(Saved.self) private var saved
     @State private var showFullStory = false
+    @State private var reporting = false
 
     var body: some View {
         ZStack(alignment: .bottom) {
             ScrollView {
                 VStack(alignment: .leading, spacing: 16) {
+                    hero
                     header
                     facts
                     if tree.precision.needsWarning { approximateNote }
                     story
                     accessBlock
+                    Button { reporting = true } label: {
+                        Label("Something here is wrong", systemImage: "exclamationmark.bubble")
+                            .font(.footnote)
+                    }
                     Color.clear.frame(height: 90)   // room for the pinned bar
                 }
                 .padding(.horizontal, 20)
@@ -33,6 +39,51 @@ struct TreeDetail: View {
         }
         .navigationTitle(tree.name)
         .navigationBarTitleDisplayMode(.inline)
+        .sheet(isPresented: $reporting) { ContributeView(about: tree) }
+    }
+
+    /// The photograph, or the species drawn, edge to edge. AllTrails leads every
+    /// route with a picture and it is most of why their pages feel like an
+    /// invitation rather than a database record.
+    @ViewBuilder private var hero: some View {
+        if let p = tree.photo, let url = Photos.thumb(p.url, width: 960) {
+            AsyncImage(url: url) { img in
+                img.resizable().aspectRatio(contentMode: .fill)
+            } placeholder: {
+                heroFallback
+            }
+            .frame(height: 240)
+            .clipped()
+            .clipShape(.rect(cornerRadius: 14))
+            // Same reason as the card: on the image the credit is clipped away
+            // with the overflow, and a CC BY-SA photograph without its credit is
+            // a licence breach.
+            .overlay(alignment: .bottomLeading) {
+                if let c = Photos.credit(p) {
+                    Text(c).font(.system(size: 10)).foregroundStyle(.white.opacity(0.95))
+                        .padding(.horizontal, 7).padding(.vertical, 4)
+                        .background(.black.opacity(0.45), in: .rect(cornerRadius: 5))
+                        .padding(8)
+                }
+            }
+        } else {
+            heroFallback.frame(height: 200).clipShape(.rect(cornerRadius: 14))
+        }
+    }
+
+    private var heroFallback: some View {
+        ZStack {
+            LinearGradient(colors: [Color(red: 0.20, green: 0.35, blue: 0.20),
+                                    Color(red: 0.36, green: 0.49, blue: 0.31)],
+                           startPoint: .topLeading, endPoint: .bottomTrailing)
+            VStack(spacing: 10) {
+                SpeciesMark(species: tree.species, color: .white.opacity(0.9))
+                    .frame(width: 78, height: 78)
+                Text("Nobody has published a photograph of this tree under a licence we can use.")
+                    .font(.caption2).foregroundStyle(.white.opacity(0.8))
+                    .multilineTextAlignment(.center).padding(.horizontal, 28)
+            }
+        }
     }
 
     private var header: some View {

@@ -18,8 +18,18 @@ struct ContentView: View {
         .first(where: { $0.hasPrefix("-tab=") })
         .flatMap { Int($0.dropFirst(5)) } ?? 0
 
+    /// Debug only, same reason as the tab argument: this Mac cannot tap the
+    /// simulator's location permission dialog, so screenshots would all be
+    /// Amsterdam. `-at=38.11,13.36` starts somewhere else.
+    private var debugOrigin: (lat: Double, lng: Double)? {
+        guard let a = ProcessInfo.processInfo.arguments
+                .first(where: { $0.hasPrefix("-at=") })?.dropFirst(4).split(separator: ","),
+              a.count == 2, let la = Double(a[0]), let ln = Double(a[1]) else { return nil }
+        return (lat: la, lng: ln)
+    }
+
     private var origin: (lat: Double, lng: Double) {
-        location.coordinate ?? (lat: 52.3731, lng: 4.8922)   // Dam square, until we know better
+        debugOrigin ?? location.coordinate ?? (lat: 52.3731, lng: 4.8922)   // Dam square
     }
 
     var body: some View {
@@ -27,7 +37,7 @@ struct ContentView: View {
             if let cat = store.catalogue {
                 TabView(selection: $tab) {
                     NavigationStack { MapTab(catalogue: cat, origin: origin,
-                                             located: location.coordinate != nil) }
+                                             located: location.coordinate != nil || debugOrigin != nil) }
                         .tag(0)
                         .tabItem { Label("Map", systemImage: "map.fill") }
 
@@ -36,7 +46,7 @@ struct ContentView: View {
                         .tabItem { Label("Explore", systemImage: "square.grid.2x2") }
 
                     NavigationStack { HereView(catalogue: cat, origin: origin,
-                                               located: location.coordinate != nil) }
+                                               located: location.coordinate != nil || debugOrigin != nil) }
                         .tag(2)
                         .tabItem { Label("Here", systemImage: "dot.viewfinder") }
 
@@ -89,14 +99,22 @@ struct MapTab: View {
             } else if near.isEmpty {
                 NothingNearby(catalogue: catalogue)
             } else {
-                List(near, id: \.tree.id) { hit in
-                    NavigationLink {
-                        TreeDetail(tree: hit.tree, catalogue: catalogue)
-                    } label: {
-                        TreeRow(tree: hit.tree, km: hit.km)
+                ScrollView {
+                    LazyVStack(spacing: 14) {
+                        ForEach(near, id: \.tree.id) { hit in
+                            NavigationLink {
+                                TreeDetail(tree: hit.tree, catalogue: catalogue)
+                            } label: {
+                                TreeCard(tree: hit.tree, km: hit.km)
+                            }
+                            .buttonStyle(.plain)
+                        }
+                        Color.clear.frame(height: 70)
                     }
+                    .padding(.horizontal, 16)
+                    .padding(.top, 8)
                 }
-                .listStyle(.plain)
+                .background(Color(.systemGroupedBackground))
             }
 
             Button {
@@ -115,33 +133,6 @@ struct MapTab: View {
         .navigationDestination(item: $selected) { t in
             TreeDetail(tree: t, catalogue: catalogue)
         }
-    }
-}
-
-struct TreeRow: View {
-    let tree: Tree
-    let km: Double
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 6) {
-            HStack(alignment: .firstTextBaseline) {
-                Text(tree.name).font(.headline)
-                Spacer()
-                Text(distance).font(.subheadline).foregroundStyle(.secondary).monospacedDigit()
-            }
-            Text(tree.commonName).font(.subheadline).foregroundStyle(.secondary)
-            HStack(spacing: 10) {
-                if let age = tree.age { Label(age, systemImage: "clock") }
-                if tree.precision.needsWarning { Label("pin is approximate", systemImage: "scope") }
-            }
-            .font(.caption).foregroundStyle(.secondary).labelStyle(.titleAndIcon)
-        }
-        .padding(.vertical, 4)
-    }
-
-    /// Metres under a kilometre: "0.3 km" reads as further than "330 m".
-    private var distance: String {
-        km < 1 ? "\(Int((km * 1000).rounded())) m" : String(format: "%.1f km", km)
     }
 }
 
