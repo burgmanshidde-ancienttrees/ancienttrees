@@ -277,3 +277,25 @@ Bologna's register held one genuine, cheap addition: a grey walnut (Juglans cine
 
 ber_016 (Lietzensee Plane), ber_017 (Lietzensee Wingnut) and ber_018 (Karpfenteich Elm, Schlosspark Charlottenburg) were verified and merged into data/cities/berlin.json by a night run whose LOG.md entry was never finished (a permission-list bug broke builds right around then; see LOG.md 2026-08-10). Logging the gap now since the data was already live. `plan_walks()` confirms these four Charlottenburg-area trees (with the already-published ber_004 Swamp Cypress) do not form a computed walk: Lietzensee's pair sits 170m apart, the palace-park pair sits 66m apart, but the two pairs are 1.9km apart, just past the 900m walk-clustering radius, so each pair alone is one tree short of the 3-tree floor. Two register-only leads in the same palace garden (Echte Mispel and Kirschpflaume, both "Eigenart, landeskundliche Gründe" designations, no age, no second source found across three separate checks now) were judged too marginal to ship just to force a third tree into the cluster. Stays an honest gap: Berlin has two real destinations in the same corner of the city, Lietzensee and Schlosspark Charlottenburg, about a 25 minute walk apart, but no single page walk connects them yet.
 
+
+## 2026-08-19 — Caserta and Naples pins (answering the 2026-08-18 WARN)
+
+The fresh-eyes review flagged six trees published as `confirmed` without a
+recorded basis. Checked all six against the MASAF register they cite:
+
+- Naples nap_018, nap_019, nap_020 are grounded: 17m, 1m and 2m from their
+  own register sheets (08, 18 and 03 of F839/NA/15), and for the cedar the
+  next entry in the same garden is a different species 41m away, so the
+  identification is unambiguous. The pins stand; each now carries a `notes`
+  sentence saying so, which is what was actually missing.
+- Caserta cas_013 (casuarina) and cas_014 (yew) were 32m and 19m from their
+  cited register points, and each sat nearer the OTHER's point than its own,
+  which reads as a swap rather than as imprecision. No basis for the move was
+  recorded anywhere. Both are back on the coordinate their own source gives.
+  The yew's address also claimed "the flower bed on the Via Alois side"; Via
+  Alois runs east of the square (14.3338) and the register puts the yew on
+  the west side (14.3322), so that description was dropped from the address
+  and the story rather than left contradicting the pin.
+  Open to correction: nobody has stood in that square for us. A reader who
+  has can settle which trunk is which in one message.
+- cas_012 (araucaria) sits exactly on its register point and needed nothing.
