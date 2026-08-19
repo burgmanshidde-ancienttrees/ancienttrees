@@ -1,0 +1,78 @@
+{
+ "city": "Los Angeles",
+ "radius_km": 35,
+ "source": "Wikidata SPARQL (CC0); a lead to verify, never a publishable fact",
+ "count": 5,
+ "trees": [
+  {
+   "qid": "Q140073096",
+   "name": "Anne Frank LA Sapling",
+   "latitude": 34.046596,
+   "longitude": -118.275475,
+   "country": "United States",
+   "species": null,
+   "admin": "Los Angeles",
+   "planted_year": null,
+   "commons_image": null,
+   "designation": null,
+   "source": "https://www.wikidata.org/wiki/Q140073096",
+   "km_from_centre": 2.4
+  },
+  {
+   "qid": "Q65090493",
+   "name": "Historic Fan Palm",
+   "latitude": 34.014041,
+   "longitude": -118.283257,
+   "country": "United States",
+   "species": null,
+   "admin": null,
+   "planted_year": null,
+   "commons_image": "http://commons.wikimedia.org/wiki/Special:FilePath/Oldest%20palm%20tree%20in%20Los%20Angeles%2C%20California%2C%20US.jpg",
+   "designation": null,
+   "source": "https://www.wikidata.org/wiki/Q65090493",
+   "km_from_centre": 5.0
+  },
+  {
+   "qid": "Q5351846",
+   "name": "El Pino",
+   "latitude": 34.04325,
+   "longitude": -118.192361,
+   "country": "United States",
+   "species": "Araucaria bidwillii",
+   "admin": "Los Angeles",
+   "planted_year": null,
+   "commons_image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bunya%2C%20cultivated%2C%20Los%20Angeles.jpg",
+   "designation": null,
+   "source": "https://www.wikidata.org/wiki/Q5351846",
+   "km_from_centre": 5.4
+  },
+  {
+   "qid": "Q113380044",
+   "name": "Moreton Bay Fig Tree",
+   "latitude": 34.028333,
+   "longitude": -118.425833,
+   "country": "United States",
+   "species": "Moreton Bay fig",
+   "admin": "Los Angeles",
+   "planted_year": null,
+   "commons_image": "http://commons.wikimedia.org/wiki/Special:FilePath/LAHCM%2019%20-%20Moreton%20Bay%20Fig%20Tree%20%28Los%20Angeles%2C%20California%29.jpg",
+   "designation": "Los Angeles Historic-Cultural Monument",
+   "source": "https://www.wikidata.org/wiki/Q113380044",
+   "km_from_centre": 16.4
+  },
+  {
+   "qid": "Q5375456",
+   "name": "Encino Oak Tree",
+   "latitude": 34.160249,
+   "longitude": -118.509873,
+   "country": "United States",
+   "species": null,
+   "admin": "Los Angeles",
+   "planted_year": null,
+   "commons_image": "http://commons.wikimedia.org/wiki/Special:FilePath/Encino%20Oak%20Tree.jpg",
+   "designation": "Los Angeles Historic-Cultural Monument",
+   "source": "https://www.wikidata.org/wiki/Q5375456",
+   "km_from_centre": 26.9
+  }
+ ]
+}
