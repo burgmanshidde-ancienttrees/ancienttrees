@@ -1,0 +1,51 @@
+[
+  {
+    "id": "syd_001",
+    "name": "The Bidwill Kauri Pine",
+    "species": "Queensland Kauri Pine (Agathis robusta)",
+    "age_estimate": "roughly 170 years",
+    "age_min": 150,
+    "age_max": 180,
+    "girth_cm": null,
+    "location": {
+      "address": "Palm Grove, Royal Botanic Garden Sydney, Mrs Macquaries Road, Sydney NSW 2000",
+      "latitude": -33.8628,
+      "longitude": 151.2157,
+      "neighbourhood": "Royal Botanic Garden Sydney"
+    },
+    "verified_sources": [
+      "https://www.botanicgardens.org.au/discover-and-learn/watch-listen-read/christmas-trees-royal-botanic-garden-sydney-meet-ancient",
+      "http://www.landarc.com.au/uploads/8/2/3/0/8230432/rbg_domain_heritage_trees_noel_ruting.pdf"
+    ],
+    "access": "Free; Royal Botanic Garden Sydney, open daily",
+    "transport": "10 minute walk from Martin Place or St James stations",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Planted 1853 in the Palm Grove (Bed 28a) from seed collected by first Garden Director John Carne Bidwill at Maryborough, Qld, 1 Jan 1849 (RBG official source: botanicgardens.org.au 'Christmas Trees' article, and Palm Grove page). Called the 'type' specimen, the first of the species planted in the Gardens, over 170 years old, may live over 300 years, described as rising well above the Palm Grove canopy, one of the tallest trees in the garden. Independently corroborated by 'Heritage Trees in the Domain, Royal Botanic Garden Sydney' (Noel Ruting, LandArc, 30 Oct 2015 final draft), which discusses a comparable companion Agathis robusta in the Domain's Central Avenue (dbh 1.05m, height 31m, canopy spread 16m) explicitly as sharing similar size to 'the Agathis robusta planted in 1853 in the Botanic Garden (Bed 28a - historic palm grove)... the type specimen'. That measurement belongs to the COMPANION Domain tree, not this one; do not attribute it to this specimen (bridge-claim risk), so girth_cm is left null here. No exact GPS coordinate sourced for the Palm Grove specimen itself; location_precision is honestly approximate to the Palm Grove area within the Royal Botanic Garden Sydney, not to the individual trunk. Condition/vitality: both sources describe it as a thriving mature specimen as of their publication (2015 heritage study; RBG's own current visitor content), no death or removal reported. City of Sydney's Register of Significant Trees does not cover the Royal Botanic Garden (it is managed by the Botanic Gardens Trust, a separate authority), so it is not a source here."
+  },
+  {
+    "id": "syd_002",
+    "name": "The Quad Jacaranda",
+    "species": "Jacaranda (Jacaranda mimosifolia)",
+    "age_estimate": "not documented; the current tree is a 2017 clone, the site has carried a jacaranda since 1928",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Main Quadrangle (south-eastern corner), University of Sydney, Camperdown NSW 2006",
+      "latitude": -33.886111,
+      "longitude": 151.189167,
+      "neighbourhood": "Camperdown"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Jacaranda,_University_of_Sydney",
+      "https://feeds.bbci.co.uk/news/world-australia-37819712",
+      "https://www.sydney.edu.au/news-opinion/news/2017/07/21/flame-tree-joins-jacaranda-companion-in-quadrangle.html"
+    ],
+    "access": "Free; university campus grounds, the Quadrangle is generally open to visitors during daylight/campus hours",
+    "transport": "10 minute walk from Redfern station, or bus along City Road/Parramatta Road",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "NOT an ancient tree: this is the Elm-of-Saint-Gervais case (CLAUDE.md precedent), a living replanting of a beloved original, so flagged for the writer to describe honestly rather than as an old tree. The original jacaranda was planted in 1928 by Associate Professor Eben Gowrie Waterhouse in the south-eastern corner of the Quadrangle; university folklore held that a student who had not started studying by the time it bloomed was doomed to fail their exams (widely reported, including by the BBC on its death). It died and toppled on 28 October 2016 (root fungal infection) after 88 years. The university planted a genetically identical clone on 20 July 2017, so the tree standing today is roughly a decade old, not 1928-old. Coordinates from Wikipedia's geo-coordinate for the tree's Quadrangle position (33 53'10\"S 151 11'21\"E), matches the existing Wikidata candidate (Q28036700) exactly, treated as confirmed tree-level. Species and cultural-history facts corroborated independently by BBC News (2016) in addition to the University's own reporting and Wikipedia. Alive and growing as of the university's 2017 announcement; no report found of it failing since."
+  }
+]
