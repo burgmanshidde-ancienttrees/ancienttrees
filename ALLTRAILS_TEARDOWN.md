@@ -156,3 +156,79 @@ asking people to tick a tree they stood in front of, which is a deliberate act
 rather than a passive one. Nothing in these recordings shows how to make that
 tick feel earned rather than like homework, and that is the design problem our
 collect verb actually has.
+
+---
+
+# Google Maps, and our own site
+
+Added 2026-08-19 after Hidde said the Google Maps map is the better one and,
+separately, that we have made good decisions on our own site that a competitor
+teardown should not overwrite.
+
+## Why he is right about the map, in product terms rather than taste
+
+**AllTrails' map is built for lines and ours has to show points.** A route has no
+location, it has a course, so a pin is always a compromise there and that is why
+AllTrails clusters into labels reading "2 routes". A tree is exactly what a pin
+wants to be: one point, one place to stand. Google Maps is the reference for that
+problem and it is the only map problem they have been solving for twenty years.
+Our own convention rule already names Google Maps as a standing reference. I
+looked at the wrong one of the four.
+
+## The saved model, and the two options it exposes
+
+Google Maps' Opgeslagen tab is a sheet over the map: recent places, then **Je
+lijsten** with a `+ Nieuwe lijst` pill, then rows carrying an icon, a name, and a
+count, "Privélijst, 158 plaatsen". AllTrails' equivalent is Parkstempels,
+illustrated badges per national park, plus a stats screen.
+
+So the two references disagree about what collecting IS, and the choice is real:
+
+- **Badges** are a game. Finite, designed, satisfying to complete, and they only
+  work if the set is closed and someone drew it.
+- **Lists** are a tool. Infinite, user-named, and they work from the first save.
+
+Worth knowing while deciding: Hidde's own Google Maps carries 158 favourites, 257
+starred and 279 in "Wil ik heen". He is a list-keeper, heavily, and he is not
+collecting badges anywhere. That is one user and not a study, but it is the user
+who has to want this.
+
+The likely answer is both, in order: lists first because they work on day one
+with any number of trees, badges later once there are enough trees for a set to
+be worth closing. Our own paywall line already promises "a personal tree log with
+badges", so this is a sequencing question, not a scope one.
+
+## What our own site already gets right, and should survive into the app
+
+Looked at on a 375px phone, which is what an app would be.
+
+**The pins are better than AllTrails'.** Ours are illustrated species silhouettes
+in a circle with a number badge, so the pin tells you what KIND of tree it is
+before you tap. AllTrails uses one brown marker for everything. This is the
+painterly art direction paying off in the one place a map has almost no room to
+say anything, and it should not be traded away for a generic dot.
+
+**The base map choice is right.** Positron, light grey, so green pins carry. A
+satellite or a terrain base would bury them.
+
+**The homepage headline is better than theirs.** "Trees worth the walk, wherever
+you are", over a photograph of somebody walking rather than of a tree. It sells
+the afternoon, which is the actual promise. AllTrails' equivalent is a search
+field and a list.
+
+**The sheet already exists**, with a drag handle, titled with the city and the
+count. The skeleton Google Maps uses is largely there; what is missing is the
+detents and what the sheet does when a pin is tapped.
+
+## What our own site gets wrong, seen the same way
+
+**Pins overlap into an unreadable pile.** Amsterdam at city zoom stacks roughly
+ten pins in the centre, several clipped behind each other, badges half hidden.
+There is no clustering, so the densest and most interesting part of the map is
+the least readable part. Google Maps solves this by zoom-dependent decluttering
+and it is the single biggest visible gap between their map and ours.
+
+**The map paints late enough to be caught empty.** Opening Amsterdam cold showed
+the style, sprites and fonts loaded with the pins floating on blank grey before
+the vector tiles arrived. It resolves, so it is latency and not a bug, but the
+first frame a phone shows on mobile data is a map with no map in it.
