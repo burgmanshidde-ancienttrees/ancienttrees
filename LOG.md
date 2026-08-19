@@ -12,6 +12,22 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-19 (session) - The night shift had been dead for 27 hours, and the queue got its new shape
+
+**Start with the thing that was actually broken, because it explains the quiet.** Between 08-18 05:19 and this morning, **eight consecutive night runs failed**, each after 30 to 40 seconds, one turn, no commits. That is the usage-limit signature this file already describes ("attempts that hit the usage limit die in seconds and cost nothing"), and it means the machine did nothing at all for 27 hours while `run-health.json` recorded eight tidy "success" rows. Hidde confirmed the weekly limit had run out and has since reset. Worth saying plainly where it went: 08-16 and 08-17 spent 2.3M and 3.0M tokens, most of it on the five island pages, which was the work he asked for and was also what ate the week.
+
+**The daily digest was throwing away its own entry.** It wrote DATA.md, committed, and then died on `git pull --rebase` with "you have unstaged changes", so the commit was discarded and 08-17 simply had no row. The cause: `city_queue.py` rewrites `LEDGER.html`, which was not in the digest's `git add` list. Fixed twice over, because the list will go stale again: LEDGER.html is named now, and the pull runs with `rebase.autoStash=true` so the next unnamed file cannot kill a run the same way.
+
+**A correction to my own diagnosis, which is the useful part of the day.** Yesterday I read Palermo and Bath (CTR near 1% at average position 9) as a snippet problem. It is not. The digest's depth table shows an IMPRESSION-WEIGHTED AVERAGE across a city's pages, and comparing an average against the CTR curve is only honest when the underlying positions are tight. Crossed against the per-query data, Palermo's biggest query sits at **position 10**, Bath's at **10**, Florence's at **11**, while Vienna, which earns 7%, sits at **6**. Four places over the fold is the entire story, and no title rewrite reaches it. Paris makes the point from the other side: 5.3% CTR while its biggest query ranks 62, so its clicks come from somewhere the average hides. The depth table now prints each city's biggest query and that query's own position, and the pairs pull went from 200 rows to 1,000, because the low-click cities the column exists to diagnose were the ones falling off the end.
+
+**The digest now reports what the night shift ACHIEVED**, not just whether it ran (Hidde: "kun je dat standaard in de daily digest vertellen"). Utilisation answered whether the windows were used; he had to ask what came out of them. New table, every day, straight from `run-health.json`: minutes, turns, trees, commits and refused commands per run.
+
+**And that last column is now readable for the first time.** The denials meter, dead for two days after the SDK renamed its field, was repaired on 08-17 and immediately showed **10 to 27 refused Bash commands per run**. The 05:20 run took 27 refusals in fifteen minutes and produced nothing. That is the best lead we have on why short runs stop early, and the next thing worth seeing is WHICH commands.
+
+**Hidde's three rulings on the queue are in DECISIONS.md** and only summarised here: targets are 10 / 20 / 30 with the 50 tier deleted, opening the unopened cities now outranks deepening, and the cron runs nine times a day this week while he is on the app. The LEDGER.html artifact was regenerated and republished on its existing URL, and now carries a block explaining the rule it renders, which it never did.
+
+**FOR HIDDE:** nothing is blocked on you. The night runs pick up the new order from 18:00 UTC. The two standing asks are unchanged: ten Request Indexing submissions in Search Console, and the Sydney licence email in `drafts/permission-us-registers.md`, which is now more valuable than it was because Sydney sits at rank 22 on tonight's open-these-first list.
+
 ## 2026-08-19 - Night run 2026-08-19 08:24 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.
