@@ -1,48 +1,63 @@
 {
-  "leads": [
-    {
-      "name": "Ahuehuete del Jardin Ramon Lopez Velarde",
-      "location_hint": "Avenida Cuauhtemoc S/N, inside Jardin Ramon Lopez Velarde, Colonia Roma Sur, Cuauhtemoc (19.40912, -99.1553)",
-      "reason": "In the SEDEMA Arboles Patrimoniales register (KML placemark 4) with coordinates, species (Taxodium mucronatum) and measurements (circumference 505.80 cm, height recorded as '2750' in the source, almost certainly 27.50 m once the register's stripped-decimal pattern is corrected). No dedicated news article naming this specific tree was found in this pass (only the aggregate '4 ahuehuetes in Cuauhtemoc' count in general coverage), so it is one source short of the two-independent-source bar rather than doubtful. Ninth/tenth in line for this pass's 40-minute window, not rejected on merit.",
-      "sources": [
-        "https://proyectos.sedema.cdmx.gob.mx/arbolespatrimoniales/arboles.html"
-      ]
-    },
-    {
-      "name": "Glorieta de los Ahuehuetes",
-      "location_hint": "Glorieta Los Ahuehuetes, Colonia San Juan Tihuaca, Azcapotzalco (19.4882805, -99.20099)",
-      "reason": "In the SEDEMA register (KML placemark 10), declared in the same decree as the Jardin de San Fernando ahuehuete per El Universal's paired coverage (title names both). Circumference 289.03 cm, height recorded as '2300' (almost certainly 23.00 m). Not pursued further for a dedicated second source in this pass's window; worth a companion entry alongside mex_006 (San Fernando) since both were declared together, or alongside the Azcapotzalco cluster (mex_002, mex_009's sibling area is Coyoacan not Azcapotzalco -- pairs geographically with mex_002 instead, roughly 2.6 km away).",
-      "sources": [
-        "https://proyectos.sedema.cdmx.gob.mx/arbolespatrimoniales/arboles.html",
-        "https://www.eluniversal.com.mx/metropoli/gobierno-de-cdmx-declara-a-los-arboles-jardin-san-fernando-y-glorieta-de-ahuehuetes-como-patrimonio-natural-de-la-ciudad/"
-      ]
-    },
-    {
-      "name": "Ahuehuete de la Plaza Luis Pasteur (Juarista)",
-      "location_hint": "Avenida Insurgentes Sur S/N, inside Plaza Luis Pasteur, corner of Calzada Manuel Villalongin, Colonia Tabacalera, Cuauhtemoc (19.43188, -99.15885)",
-      "reason": "In the SEDEMA register (KML placemark 11) with coordinates and measurements (circumference 502.66 cm, height recorded as '2400', almost certainly 24.00 m). Site page listed it under the nickname 'Juarista'. No dedicated news article found this pass confirming the nickname or details beyond the register; one source short of the bar, not rejected on merit.",
-      "sources": [
-        "https://proyectos.sedema.cdmx.gob.mx/arbolespatrimoniales/arboles.html"
-      ]
-    }
-  ],
-  "blocked": [
-    {
-      "name": "El Sargento (Ahuehuete de Moctezuma)",
-      "location_hint": "Bosque de Chapultepec, Calzada del Rey, near Banos de Moctezuma",
-      "reason": "Dead. Multiple sources (Wikipedia, El Sol de Mexico, IMER) agree it dried up/was declared dead in 1969 after roughly 500 years; only the trunk/remains stand today as a historic site along Calzada del Rey. Fails the alive-now bar (hard rule: no dead-tree entries).",
-      "sources": [
-        "https://en.wikipedia.org/wiki/El_Sargento",
-        "https://oem.com.mx/elsoldemexico/cultura/el-sargento-el-ahuehuete-de-mas-de-500-anos-que-se-cree-planto-nezahualcoyotl-en-cdmx-21529010"
-      ]
-    },
-    {
-      "name": "Arbol de la Noche Triste / Arbol de la Noche Victoriosa",
-      "location_hint": "Calzada Mexico-Tacuba 453, Popotla",
-      "reason": "Dead. City's own venue page (mexicocity.cdmx.gob.mx) states in English translation 'the tree is today, sadly, a ruin.' Burned twice (vandalism fire 1980s and an earlier one); what stands is a fenced trunk/relic, not a living tree. Fails the alive-now bar.",
-      "sources": [
-        "https://mexicocity.cdmx.gob.mx/venues/tree-of-the-victorious-night/?lang=en"
-      ]
-    }
-  ]
+ "leads": [
+  {
+   "name": "Ahuehuete del Jardin Ramon Lopez Velarde",
+   "location_hint": "Avenida Cuauhtemoc S/N, inside Jardin Ramon Lopez Velarde, Colonia Roma Sur, Cuauhtemoc (19.40912, -99.1553)",
+   "reason": "In the SEDEMA Arboles Patrimoniales register (KML placemark 4) with coordinates, species (Taxodium mucronatum) and measurements (circumference 505.80 cm, height recorded as '2750' in the source, almost certainly 27.50 m once the register's stripped-decimal pattern is corrected). No dedicated news article naming this specific tree was found in this pass (only the aggregate '4 ahuehuetes in Cuauhtemoc' count in general coverage), so it is one source short of the two-independent-source bar rather than doubtful. Ninth/tenth in line for this pass's 40-minute window, not rejected on merit.",
+   "sources": [
+    "https://proyectos.sedema.cdmx.gob.mx/arbolespatrimoniales/arboles.html"
+   ]
+  },
+  {
+   "name": "Glorieta de los Ahuehuetes",
+   "location_hint": "Glorieta Los Ahuehuetes, Colonia San Juan Tihuaca, Azcapotzalco (19.4882805, -99.20099)",
+   "reason": "In the SEDEMA register (KML placemark 10), declared in the same decree as the Jardin de San Fernando ahuehuete per El Universal's paired coverage (title names both). Circumference 289.03 cm, height recorded as '2300' (almost certainly 23.00 m). Not pursued further for a dedicated second source in this pass's window; worth a companion entry alongside mex_006 (San Fernando) since both were declared together, or alongside the Azcapotzalco cluster (mex_002, mex_009's sibling area is Coyoacan not Azcapotzalco -- pairs geographically with mex_002 instead, roughly 2.6 km away).",
+   "sources": [
+    "https://proyectos.sedema.cdmx.gob.mx/arbolespatrimoniales/arboles.html",
+    "https://www.eluniversal.com.mx/metropoli/gobierno-de-cdmx-declara-a-los-arboles-jardin-san-fernando-y-glorieta-de-ahuehuetes-como-patrimonio-natural-de-la-ciudad/"
+   ]
+  },
+  {
+   "name": "Ahuehuete de la Plaza Luis Pasteur (Juarista)",
+   "location_hint": "Avenida Insurgentes Sur S/N, inside Plaza Luis Pasteur, corner of Calzada Manuel Villalongin, Colonia Tabacalera, Cuauhtemoc (19.43188, -99.15885)",
+   "reason": "In the SEDEMA register (KML placemark 11) with coordinates and measurements (circumference 502.66 cm, height recorded as '2400', almost certainly 24.00 m). Site page listed it under the nickname 'Juarista'. No dedicated news article found this pass confirming the nickname or details beyond the register; one source short of the bar, not rejected on merit.",
+   "sources": [
+    "https://proyectos.sedema.cdmx.gob.mx/arbolespatrimoniales/arboles.html"
+   ]
+  }
+ ],
+ "blocked": [
+  {
+   "name": "El Sargento (Ahuehuete de Moctezuma)",
+   "location_hint": "Bosque de Chapultepec, Calzada del Rey, near Banos de Moctezuma",
+   "reason": "Dead. Multiple sources (Wikipedia, El Sol de Mexico, IMER) agree it dried up/was declared dead in 1969 after roughly 500 years; only the trunk/remains stand today as a historic site along Calzada del Rey. Fails the alive-now bar (hard rule: no dead-tree entries).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/El_Sargento",
+    "https://oem.com.mx/elsoldemexico/cultura/el-sargento-el-ahuehuete-de-mas-de-500-anos-que-se-cree-planto-nezahualcoyotl-en-cdmx-21529010"
+   ]
+  },
+  {
+   "name": "Arbol de la Noche Triste / Arbol de la Noche Victoriosa",
+   "location_hint": "Calzada Mexico-Tacuba 453, Popotla",
+   "reason": "Dead. City's own venue page (mexicocity.cdmx.gob.mx) states in English translation 'the tree is today, sadly, a ruin.' Burned twice (vandalism fire 1980s and an earlier one); what stands is a fenced trunk/relic, not a living tree. Fails the alive-now bar.",
+   "sources": [
+    "https://mexicocity.cdmx.gob.mx/venues/tree-of-the-victorious-night/?lang=en"
+   ]
+  },
+  {
+   "name": "Eugenio (Shamel Ash, Cerrada de Eugenia, Benito Juarez)",
+   "species": "Shamel Ash (Fraxinus uhdei)",
+   "reason": "Stands inside a private residential lot; SEDEMA's own register gives the location type as the interior of the property. Hard rule 10's home clause does not bend, and it was applied to Los Angeles's El Pino the same day, so it applies here. Verified, declared patrimonial in 2025 and correct in every other respect, and carefully distinguished from the tree called Eugenito that was felled nearby on 6 August 2025. If a source ever shows the tree stands on ground the public may walk on, it ships.",
+   "verified_sources": [
+    "https://proyectos.sedema.cdmx.gob.mx/arbolespatrimoniales/arboles.html (KML placemark 13, SEDEMA official Arboles Patrimoniales register)",
+    "https://politica.expansion.mx/cdmx/2025/08/09/vecinos-lamentan-autorizacion-para-talar-el-arbol-eugenito-en-cdmx"
+   ],
+   "location": {
+    "address": "Cerrada de Eugenia 28, Colonia Del Valle, Benito Juarez, CP 03100",
+    "latitude": 19.38827,
+    "longitude": -99.16593,
+    "neighbourhood": "Del Valle, Benito Juarez"
+   }
+  }
+ ]
 }
