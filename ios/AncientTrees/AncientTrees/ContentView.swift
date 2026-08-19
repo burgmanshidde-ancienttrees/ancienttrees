@@ -11,6 +11,7 @@ import MapKit
 struct ContentView: View {
     @State private var store = CatalogueStore()
     @State private var saved = Saved()
+    @State private var entitlement = Entitlement()
     @State private var location = LocationProvider()
     // Screenshotting each tab needs a way to open on one, because this Mac's
     // simulator panel is not available and simctl cannot tap. Debug only.
@@ -45,16 +46,22 @@ struct ContentView: View {
                         .tag(1)
                         .tabItem { Label("Explore", systemImage: "square.grid.2x2") }
 
-                    NavigationStack { HereView(catalogue: cat, origin: origin,
-                                               located: location.coordinate != nil || debugOrigin != nil) }
+                    NavigationStack { SavedView(catalogue: cat, origin: origin) }
                         .tag(2)
-                        .tabItem { Label("Here", systemImage: "dot.viewfinder") }
+                        .tabItem { Label("Saved", systemImage: "heart") }
 
                     NavigationStack { YouView(catalogue: cat) }
                         .tag(3)
                         .tabItem { Label("You", systemImage: "person.crop.circle") }
                 }
                 .environment(saved)
+                .environment(entitlement)
+                // Same debug scaffolding as -tab and -at: no simulator panel
+                // here, so a screen that is only reachable by tapping cannot
+                // otherwise be looked at before it ships.
+                .sheet(isPresented: .constant(ProcessInfo.processInfo.arguments.contains("-paywall"))) {
+                    PaywallView(feature: .walkBeyondFirst).environment(entitlement)
+                }
             } else if let err = store.loadError {
                 ContentUnavailableView("Something is wrong with the catalogue",
                                        systemImage: "exclamationmark.triangle",

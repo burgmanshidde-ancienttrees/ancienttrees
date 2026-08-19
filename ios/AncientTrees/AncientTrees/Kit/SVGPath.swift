@@ -26,7 +26,14 @@ enum SVG {
         var rest = Substring(s)
         while let open = rest.range(of: "<\(tag) ") {
             rest = rest[open.upperBound...]
-            guard let dRange = rest.range(of: " d=\"") ?? rest.range(of: "d=\""),
+            // Whichever comes FIRST, not whichever is non-nil. `<path d="…"`
+            // has no space before d, so `?? ` picked up the ` d="` of a LATER
+            // tag and silently skipped this path: the cedar drew one tier of
+            // three. Every icon with a bare `<path d=` lost paths this way.
+            let spaced = rest.range(of: " d=\"")
+            let bare = rest.range(of: "d=\"")
+            let candidates = [spaced, bare].compactMap { $0 }
+            guard let dRange = candidates.min(by: { $0.lowerBound < $1.lowerBound }),
                   let close = rest[dRange.upperBound...].firstIndex(of: "\"") else { continue }
             out.append(String(rest[dRange.upperBound..<close]))
         }

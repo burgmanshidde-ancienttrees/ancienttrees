@@ -22,6 +22,7 @@ struct MapTab: View {
     @State private var selected: Tree?
     @State private var sheetHeight: SheetHeight = .peek
     @State private var query = ""
+    @Environment(Saved.self) private var saved
 
     /// A wide net for the map itself: pins the user can pan to matter, and
     /// MapKit clusters whatever it is given.
@@ -58,8 +59,48 @@ struct MapTab: View {
         }
     }
 
+    /// Close enough to see it. Beyond this the honest thing is to point rather
+    /// than to offer a tick, because a tick you can press from your sofa is
+    /// worth nothing to collect.
+    private let arrivedKm = 0.12
+
+    private var arrived: Tree? {
+        guard query.isEmpty, selected == nil,
+              let first = listed.first, first.km <= arrivedKm else { return nil }
+        return first.tree
+    }
+
     @ViewBuilder private var sheet: some View {
-        if let t = selected { selectedTree(t) } else { list }
+        if let t = selected {
+            selectedTree(t)
+        } else {
+            VStack(spacing: 0) {
+                if let t = arrived { arrivalCard(t) }
+                list
+            }
+        }
+    }
+
+    /// The moment the whole product exists for, surfaced where the user already
+    /// is instead of in a tab that would sit dead the rest of the month.
+    private func arrivalCard(_ t: Tree) -> some View {
+        VStack(spacing: 10) {
+            Text("You are standing in front of").font(.caption).foregroundStyle(.secondary)
+            Text(t.name).font(.title3.bold()).multilineTextAlignment(.center)
+            Button {
+                saved.toggleVisited(t.id)
+            } label: {
+                Label(saved.isVisited(t.id) ? "Ticked off" : "I have seen this one",
+                      systemImage: saved.isVisited(t.id) ? "checkmark.seal.fill" : "checkmark.seal")
+                    .font(.subheadline.weight(.semibold))
+                    .frame(maxWidth: .infinity).padding(.vertical, 13)
+            }
+            .buttonStyle(.borderedProminent)
+            .tint(saved.isVisited(t.id) ? .gray : Color(red: 0.20, green: 0.35, blue: 0.20))
+        }
+        .padding(16)
+        .background(Color(.secondarySystemBackground), in: .rect(cornerRadius: 14))
+        .padding(.horizontal, 16).padding(.bottom, 6)
     }
 
     private var list: some View {

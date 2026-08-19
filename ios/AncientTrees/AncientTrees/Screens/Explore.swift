@@ -30,6 +30,14 @@ struct ExploreView: View {
         .sorted { $0.1 < $1.1 }.prefix(8).map(\.0)
     }
 
+    private func walkRow(_ w: Walk) -> some View {
+        VStack(alignment: .leading, spacing: 3) {
+            Text(w.name).font(.subheadline.weight(.medium))
+            Text("\(w.city) · \(w.count) trees · \(w.duration)")
+                .font(.caption).foregroundStyle(.secondary)
+        }
+    }
+
     var body: some View {
         List {
             if !atTheirBest.isEmpty {
@@ -51,16 +59,23 @@ struct ExploreView: View {
                 }
             }
 
-            Section("Walks near you") {
-                ForEach(walksNear, id: \.name) { w in
-                    NavigationLink { WalkDetail(walk: w, catalogue: catalogue) } label: {
-                        VStack(alignment: .leading, spacing: 3) {
-                            Text(w.name).font(.subheadline.weight(.medium))
-                            Text("\(w.city) · \(w.count) trees · \(w.duration)")
-                                .font(.caption).foregroundStyle(.secondary)
+            Section {
+                ForEach(Array(walksNear.enumerated()), id: \.element.name) { i, w in
+                    if i == 0 {
+                        NavigationLink { WalkDetail(walk: w, catalogue: catalogue) } label: {
+                            walkRow(w)
                         }
+                    } else {
+                        // Gate on intent, and only after one real taste: the
+                        // nearest walk opens, the rest ask. Somebody who has
+                        // walked one knows what is being sold.
+                        LockedRow(feature: .walkBeyondFirst) { walkRow(w) }
                     }
                 }
+            } header: {
+                Text("Walks near you")
+            } footer: {
+                Text("The nearest walk is open to everyone.")
             }
 
             Section("Places") {
@@ -89,6 +104,14 @@ struct CityView: View {
     let origin: (lat: Double, lng: Double)
 
     private var trees: [Tree] { catalogue.trees.filter { $0.citySlug == slug } }
+
+    private func walkRow(_ w: Walk) -> some View {
+        VStack(alignment: .leading, spacing: 3) {
+            Text(w.name).font(.subheadline.weight(.medium))
+            Text("\(w.city) · \(w.count) trees · \(w.duration)")
+                .font(.caption).foregroundStyle(.secondary)
+        }
+    }
 
     var body: some View {
         List {
