@@ -20,10 +20,11 @@ which city, which country, published or not. Order lives in one place.
 
 THE TARGET COLUMN lives in CITY_QUEUE.md, not here.
 
-Ruled by Hidde 2026-08-12: ten trees everywhere first, twenty-five once Search
-Console confirms a city. `target_for()` below is the whole implementation and
-carries the reasoning; the rule, its two superseded versions and why they were
-wrong are written once in CITY_QUEUE.md's "How far to take a city" section.
+Ruled by Hidde 2026-08-19, replacing the 2026-08-13 sprint: DEEPENING OUTRANKS
+opening new cities, confirmed cities aim at 30, and the biggest confirmed ones
+at 50. `target_for()` below is the whole implementation and carries the
+reasoning; the rule and every superseded version are written once in
+CITY_QUEUE.md's "How far to take a city" section.
 
 This docstring used to restate the rule in full, and within the hour it was
 describing the previous version while the code did something else, which is the
@@ -172,27 +173,47 @@ def near(pts, lat, lng, km=5.0):
     return sum(1 for a, b in pts if abs(a - lat) < dlat and abs(b - lng) < dlng)
 
 
-def target_for(demand, measured):
-    """Hidde's staircase, ruled 2026-08-13: everyone gets to 10 first, and only
-    a city Google has confirmed climbs further, by size. "stadje 10 bomen,
-    grote stad 20, mega stad 30, metropool tot max 50." Size comes from the
-    demand column (English Wikipedia pageviews), the proxy the queue already
-    ranks by; `measured` is the basis column saying Search Console has spoken.
+def target_for(demand, measured, impressions=0, travel=0):
+    """How far a city goes. RAISED 2026-08-19 on Hidde's ruling.
 
-    The target is a ceiling and a stopping point, and his 80/20 rule governs
-    reaching it: when the next tree gets hard to find, move on to the next
-    city rather than grinding out the max ("eeuwig tokens gebruiken tot deze
-    max te halen is niet de strategie"). The floor stays four or no page."""
+    His words, the week he moved onto the app and handed the data work to the
+    machine: "Ook wil ik graag prio boven nieuwe steden en tot max 30 dan
+    steden tot 50 te laten groeien." Two changes in one sentence.
+
+    **The ceiling rises.** A city Google has confirmed now aims at 30 rather
+    than at the old 10/20/30/50 ladder by size, and the ones actually earning
+    impressions go to 50. The old bands were keyed to English Wikipedia
+    pageviews, a proxy this project retired on 2026-08-15 in favour of travel
+    demand, so they were measuring with a ruler nobody uses any more.
+
+    **And deepening now OUTRANKS opening new cities**, which is the reversal of
+    the 2026-08-13 sprint rule ("nothing deepens while it runs"). That rule was
+    right for its moment: pages had to exist before Google could judge them.
+    133 cities later Google has judged plenty of them, and the evidence says
+    depth on a page with demand is worth more than another page with none.
+    The rule lives in CITY_QUEUE.md's order section; this function only sets
+    the number.
+
+    Unconfirmed cities still stop at 10. That half is unchanged and it is the
+    load-bearing half: a city nobody searches for does not earn thirty trees,
+    and the 80/20 rule still ends any city the moment its next tree gets hard
+    to find. A target is a ceiling and a stopping point, never a quota, and the
+    floor stays four verified trees or no page.
+    """
     if not measured:
         return 10
-    d = demand or 0
-    if d >= 700_000:
-        return 50   # metropool: London, New York class
-    if d >= 300_000:
-        return 30   # mega stad: Rome, Prague, Barcelona class
-    if d >= 100_000:
-        return 20   # grote stad: Vienna, Lisbon, Porto class
-    return 10       # stadje: Cadiz, Sintra class; confirmed changes nothing
+    # 50 needs BOTH proven demand and enough city to hold fifty trees. The first
+    # version of this used impressions alone and handed Dubrovnik (4 trees) and
+    # Bath (5) a target of 50, which is not a ceiling anybody would reach: those
+    # are small places that rank well, not big places. Travel demand is the size
+    # term the queue already ranks by, and 8,000 is roughly its top forty.
+    #
+    # The 80/20 rule still ends any city the moment its next tree gets hard to
+    # find, so an unreachable target was never dangerous, only misleading: a run
+    # reading "Bath 5 to 50" would think there were 45 trees waiting there.
+    if (impressions or 0) >= 50 and (travel or 0) >= 8000:
+        return 50
+    return 30
 
 
 def measure(pts):
@@ -277,7 +298,7 @@ def enrich(doc, live):
             c.update(status="published", trees=info["trees"], photos=info["photos"],
                      walks=info["walks"], register=info["register"],
                      ready=info["ready"], supply=supply,
-                     target=target_for(c.get("demand"), c["basis"].startswith("measured")))
+                     target=target_for(c.get("demand"), c["basis"].startswith("measured"), c.get("impressions_10d"), c.get("travel")))
         else:
             # An unpublished city still has register supply around it; it just
             # has no trees to average a centre from. Look the city itself up.
@@ -286,7 +307,7 @@ def enrich(doc, live):
             supply = reg
             c.update(status="pending", trees=0, photos=0, walks=0,
                      register=reg, ready=0, supply=reg,
-                     target=target_for(c.get("demand"), c["basis"].startswith("measured")))
+                     target=target_for(c.get("demand"), c["basis"].startswith("measured"), c.get("impressions_10d"), c.get("travel")))
         c["ease"] = round(ease_for(c.get("country", ""), supply), 2)
         c["work_score"] = round((c.get("score") or 0) * c["ease"], 2)
     ranked = sorted([c for c in doc["cities"] if c.get("score") is not None],
@@ -377,38 +398,38 @@ def main():
     a = ap.parse_args()
 
     if a.next:
-        # Two stages, worked in this order. Stage 1 is the sprint: every ranked
-        # city to 10, because a page must exist before Google can judge it.
-        # Stage 2 is deepening, only on Google-confirmed cities, up the
-        # 20/30/50 staircase. Hidde, 2026-08-13: "zo snel mogelijk bij de top
-        # 100 10 bomen bij elke stad... daarna verdiepen op degene die echt
-        # goed presteren." His 80/20 rule rides along: stop at the target, and
-        # stop EARLIER the moment the next tree gets hard to find.
+        # ORDER REVERSED 2026-08-19 by Hidde: "prio boven nieuwe steden en tot
+        # max 30 dan steden tot 50 te laten groeien." Deepening a city that
+        # already has readers now comes FIRST, and opening a city with none
+        # comes second. The 2026-08-13 sprint said the opposite, correctly for
+        # its moment, when the site had far more unopened cities than
+        # Google-judged ones. His 80/20 rule rides along unchanged: stop at the
+        # target, and stop EARLIER the moment the next tree gets hard to find.
         doc = load_source()
-        s1 = [c for c in doc["cities"] if c.get("rank") and c.get("trees", 0) < 10]
-        s2 = [c for c in doc["cities"] if c.get("rank") and c.get("target")
-              and 10 <= c.get("trees", 0) < c["target"]]
+        s1 = [c for c in doc["cities"] if c.get("rank") and c.get("target")
+              and c.get("trees", 0) and c.get("trees", 0) < c["target"]]
+        s2 = [c for c in doc["cities"] if c.get("rank") and not c.get("trees", 0)]
         s1.sort(key=lambda c: c["rank"])
         s2.sort(key=lambda c: c["rank"])
-        print("STAGE 1, the sprint: every ranked city to 10 trees. Top-down,")
-        print("take the first you can move cheaply. 80/20: when the next tree")
-        print("gets hard to find, move to the next city, never grind.\n")
-        print("  #  city             now  gap  ready  register")
-        for c in s1:
-            print("%3d  %-16s %4d %4d %6d %9d" % (
-                c["rank"], c["city"][:16], c.get("trees", 0),
-                10 - c.get("trees", 0), c.get("ready", 0), c.get("register", 0)))
-        print("\nSTAGE 2, deepening: PAUSED while any ranked city above can still")
-        print("be moved to 10 cheaply (Hidde, 2026-08-13: breadth over depth in")
-        print("the whole top 250). Listed only so the later work stays visible.\n")
+        print("STAGE 1, DEEPENING: cities that already have readers, taken")
+        print("toward 30, or 50 where the city can carry it. Top-down, take the")
+        print("first you can move cheaply. 80/20: when the next tree gets hard")
+        print("to find, move on, never grind.\n")
         print("  #  city             now target  ready  register")
-        for c in s2:
+        for c in s1[:40]:
             print("%3d  %-16s %4d %6d %6d %9d" % (
                 c["rank"], c["city"][:16], c.get("trees", 0),
                 c["target"], c.get("ready", 0), c.get("register", 0)))
-        print("\nStage 1: %d cities, %d trees. Stage 2: %d cities, %d trees."
-              % (len(s1), sum(10 - c.get("trees", 0) for c in s1),
-                 len(s2), sum(c["target"] - c.get("trees", 0) for c in s2)))
+        print("\nSTAGE 2, NEW CITIES: only once stage 1 has nothing left that")
+        print("moves cheaply (Hidde, 2026-08-19: deepening has priority over")
+        print("opening new cities). Listed so the later work stays visible.\n")
+        print("  #  city             target  ready  register")
+        for c in s2[:20]:
+            print("%3d  %-16s %6d %6d %9d" % (
+                c["rank"], c["city"][:16],
+                c.get("target") or 10, c.get("ready", 0), c.get("register", 0)))
+        print("\nStage 1: %d cities, %d trees to target. Stage 2: %d cities unopened."
+              % (len(s1), sum(c["target"] - c.get("trees", 0) for c in s1), len(s2)))
 
         # WHAT A RUN CAN ACTUALLY MOVE, added 2026-08-16 from the night's own
         # numbers. The lists above are the STRATEGIC order and are correct as
@@ -472,7 +493,7 @@ def main():
           % (len(doc["cities"]), len(order)))
     print("rendered: %d rows in CITY_QUEUE.md, %d entries in city-list.json"
           % (len(order), n))
-    print("%d cities are Google-confirmed and climb the 20/30/50 staircase; "
+    print("%d cities are Google-confirmed and aim at 30 or 50; "
           "the rest aim at 10" % len(confirmed))
 
     # LEDGER.html is Hidde's own view of the same numbers, and it is rebuilt
