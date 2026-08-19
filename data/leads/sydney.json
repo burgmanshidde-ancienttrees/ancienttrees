@@ -1,0 +1,42 @@
+{
+  "leads": [
+    {
+      "candidate": "Massive white fig (Ficus virens), Domain 'outliers' group near Central Avenue/northern fig plantation",
+      "reason": "Exceptional single-tree candidate (height 20m, canopy spread 36m, dbh 2.50m, likely 1850s-1870s planting) documented in detail in 'Heritage Trees in the Domain, Royal Botanic Garden Sydney' (Noel Ruting, LandArc, 30 Oct 2015 final draft, landarc.com.au PDF), but only one independent source found this pass and no tree-level coordinate or precise 'lawn/bed' location translatable to GPS without the report's own site plan. Needs a second independent source and a real coordinate before it can ship. girth_cm if used: pi*250cm = ~785cm (buttressed fig mass, not a clean trunk measurement, must say so)."
+    },
+    {
+      "candidate": "The Wishing Tree, Royal Botanic Garden Sydney (Norfolk Island Pine, Araucaria heterophylla)",
+      "reason": "The historically famous tree (planted c.1816-1818, a 200-year local wishing tradition, widely reported including on nsw.gov.au) died in 1945. The tree standing today is a replacement planted after 1945, so roughly 80 years old, not the historic specimen. This is close to the Elm-of-Saint-Gervais precedent but the replacement's own planting date was not found this pass (nsw.gov.au does not give it), and its species/identity as a like-for-like Norfolk Island Pine was not independently confirmed. Worth a second pass: find the replacement's actual planting date and confirm species, then it may ship as a living-replanting entry."
+    },
+    {
+      "candidate": "Hunters Hill Moreton Bay Fig Tree (Wikidata Q116026869, NSW State Heritage Register, coords -33.8304, 151.13618)",
+      "reason": "Existing Wikidata candidate with a State Heritage Register reference (P3449: 1800191) but the exact SHR listing page was not located this pass (search for the ID returned only Hunter's Hill Council's separate local Significant Tree Register PDFs, a different register). Needs the actual SHR citation fetched directly and a second source before shipping. Do not confuse with the Gale Street/Woolwich fig below, which is a different, nearby tree."
+    },
+    {
+      "candidate": "Moreton Bay Fig, Gale Street verge outside 2 The Point Road, Woolwich (Hunter's Hill Significant Tree Register)",
+      "reason": "Public street tree, individually assessed, landmark foreshore specimen, remnant planting associated with the historic house 'Vailele'. Full profile sheet at huntershill.nsw.gov.au (April 2015, GPS given as MGA northing 6254310.062 / easting 330863.171, not yet converted to lat/lon this pass). Only one source (the Council register) found this pass; needs a second independent source (news, Trust history, or State Heritage listing) and coordinate conversion before it can ship."
+    },
+    {
+      "candidate": "Queensland Kauri Pine, Elizabeth Bay House garden, Elizabeth Bay (Museums of History NSW / mhnsw.au)",
+      "reason": "'A towering old Queensland kauri pine, standing alongside a hoop pine... likely a survivor from the latter days of the estate established by Colonial Secretary Alexander Macleay', pre-1875/1882 subdivision, so potentially older than the Royal Botanic Garden's 1853 type specimen. Elizabeth Bay House is a public museum (Sydney Living Museums/MHNSW), plausibly open access. Only one source found this pass (mhnsw.au, fetched via curl after WebFetch 403'd); needs a second independent source and an exact location/coordinate."
+    },
+    {
+      "candidate": "Bland Oak, Carramar (Wikidata Q56290806, 23km / ~23km from centre)",
+      "reason": "Not researched this pass; carried over from the earlier Wikidata candidates file. At 23km from the centre it needs a transport-time check against the ~30 minute day-trip boundary before it can even be considered part of a Sydney cluster; do not assume it qualifies."
+    },
+    {
+      "candidate": "Ficus henneana (syn. F. superba var. henneana), Domain fig group, plaque reads '1930s' but 'appears to be a specimen of considerable age' per the LandArc heritage report",
+      "reason": "Source itself flags the plaque date as doubtful ('No further records have been found for this specimen'). Age genuinely uncertain and would need to ship with a plainly stated open question rather than a plaque date treated as fact. One source only; not pursued further this pass."
+    }
+  ],
+  "blocked": [
+    {
+      "candidate": "Central Avenue fig avenue, the Domain (Royal Botanic Garden Sydney)",
+      "reason": "Whole avenue plantation (Moreton Bay figs, Port Jackson figs, white figs, Flindersia australis etc across a 1850s planting scheme), not one collectible point with one obvious place to stand. The individually outstanding specimens within it (the Palm Grove-companion kauri, the massive white fig outlier) are recorded separately above as leads/verified; the avenue as a whole is blocked as an ensemble under the collectible-point rule."
+    },
+    {
+      "candidate": "Hills Weeping Fig avenue, Elizabeth Street / College Street, Hyde Park (City of Sydney Register of Significant Trees, landuse=Public Park, ~20 individual register rows)",
+      "reason": "City of Sydney's own ArcGIS Register of Significant Trees (services1.arcgis.com/.../Register_of_Significant_Trees_view) returns this as a large group of individually-listed street/avenue trees (Hills Weeping Fig, Hoop Pine, Moreton Bay Fig, Cooks Pine, Port Jackson Fig, London Plane, Jacaranda etc) lining Hyde Park's boundary streets and the Hay Street/Eddy Avenue and Cathedral/William Street corridors. None stood out as an individually named, singular collectible point on this pass; the group reads as street-avenue planting, blocked under the same ensemble rule as the Domain avenue and as the register's condition/access fields were not individually checked. NOTE: the City of Sydney register has NO import licence (their terms forbid reproducing content without written authorisation) and was used here only as a lead/verification source per the brief, never copied wholesale."
+    }
+  ]
+}
