@@ -216,14 +216,14 @@ so qa.py fails the deploy when the table and the json disagree.
 | 19 | Geneva | 14.32 | 162,269 | 14 | 4 | 3 | 133 | 20 | measured |
 | 20 | Brussels | 14.13 | 176,863 | 23 | 4 | 1 | 436 | 30 | measured |
 | 21 | Cambridge | 20.33 | 97,974 | 5 | 2 | 1 | - | 20 | measured |
-| 22 | Sydney | 19.69 | 305,304 | - | - | - | - | 10 | predicted (travel demand) |
+| 22 | Sydney | 19.69 | 305,304 | 6 | - | - | - | 10 | predicted (travel demand) |
 | 23 | Boston | 19.36 | 385,902 | 10 | 1 | 1 | - | 30 | measured |
 | 24 | Las Vegas | 19.29 | - | 11 | - | 2 | - | 10 | predicted (travel demand) |
 | 25 | Frankfurt | 18.06 | 150,379 | 6 | - | 1 | - | 10 | predicted (travel demand) |
 | 26 | The Hague | 8.90 | 236,723 | 16 | 1 | 3 | 166 | 20 | measured |
 | 27 | New York | 17.42 | 1,124,326 | 20 | 5 | 2 | - | 30 | measured |
 | 28 | Madrid | 11.42 | 274,553 | 17 | 10 | 2 | - | 20 | measured |
-| 29 | Perth | 16.42 | 180,478 | - | - | - | - | 10 | predicted (travel demand) |
+| 29 | Perth | 16.42 | 180,478 | 6 | - | 1 | - | 10 | predicted (travel demand) |
 | 30 | Sintra | 9.49 | 46,889 | 5 | 3 | 1 | 6 | 20 | measured |
 | 31 | Washington DC | 14.71 | 606,731 | 14 | 1 | 2 | - | 20 | measured |
 | 32 | Los Angeles | 14.41 | 665,559 | - | - | - | - | 10 | predicted (travel demand) |
