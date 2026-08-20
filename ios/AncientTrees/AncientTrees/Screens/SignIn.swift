@@ -57,7 +57,7 @@ struct SignInSheet: View {
             .padding(.bottom, 26)
         }
         .scrollBounceBehavior(.basedOnSize)
-        .presentationDetents([.height(560), .large])
+        .presentationDetents([.height(660), .large])
         .presentationDragIndicator(.visible)
     }
 
