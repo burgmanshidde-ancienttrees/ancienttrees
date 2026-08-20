@@ -42,6 +42,44 @@ habitat, characteristics, last updated 2021), which may or may not carry
 coordinates; not checked this pass. Prefer the CHA spatial API first since it
 is the authoritative designating body's own coordinates.
 
+## Texas Big Tree Registry (Houston #36): non-commercial licence, real API found, thin Harris County yield (scouted 2026-08-20)
+
+Found while `scout_next.py --target` pointed at Houston (#36, one of Hidde's
+17 named from-zero cities). `texasforestinfo.tamu.edu/BigTreeRegistry` is a
+JavaScript app (Angular, same shape as the Lithuania/Sweden stalls in the
+2026-08-15 round), but unlike those its backend is reachable directly:
+POST `https://texasforestinfo.tamu.edu/BigTreeRegistry/Home/GetAllTrees` with
+`{"species": "<Latin name>"}` returns every registered specimen of that
+species statewide as JSON, with `LatDec`/`LongDec` coordinates, circumference,
+height, spread, county, a `PublicOrPrivate` flag (meaning unconfirmed, values
+0/1 seen, not documented anywhere found) and champion-status flags.
+`Home/GetSpeciesList` lists all 352 species to loop over.
+
+**Licence: DISQUALIFIED for bulk import.** Texas A&M Forest Service's own
+usage terms (`tfsweb.tamu.edu/accessibility-site-policies-and-public-notices/`)
+state content is offered "for personal, educational, and other
+**non-commercial** purposes" with a citation requirement. That is a
+non-commercial term, which CLAUDE.md's register-layer rule disqualifies
+outright regardless of how good the data is. Ruled the same as Nevada below:
+**usable as a verification/lead source for hand-verified entries only**, never
+imported to `data/registers/`.
+
+**The Harris County yield itself is thin.** Looped all 352 species
+(`data/research/houston-texas-big-tree-harris.json`, 18 rows, kept as a
+research file rather than a leads file since none of this is verified): most
+are modest ornamentals (crapemyrtle, yaupon holly, winged elm) with
+circumferences in the 70-150cm range, well below what this site usually
+ships. The one standout is a 246cm live oak (`Quercus virginiana`, TreeID
+43463, 29.817,-95.546, `PublicOrPrivate: 1`). **A real register pitfall
+caught in the raw data**: 4 of the 18 rows tagged `CountyName: "Harris"`
+carry coordinates in the Texas Panhandle near Amarillo (36.4,-102.5), roughly
+800km from Houston, so `CountyName` cannot be trusted without a coordinate
+sanity check, exactly the kind of register fault CLAUDE.md's "what registers
+get wrong" section warns about. A from-zero web research pass on Houston (per
+rule 1d, explicitly authorised for this city) should treat this file as one
+weak input among several, not a register to build the city from; the live
+oak is worth chasing, the rest is marginal.
+
 ## Nevada Big Tree Register: usable as a verification/lead source, not for bulk import (scouted 2026-08-18)
 
 Found while `scout_next.py --target` pointed at Las Vegas (#22, no supply, no verdict). The Nevada Division of Forestry publishes a statewide champion-tree PDF, `forestry.nv.gov/uploads/missions/20210712_AMT_2015_Nevada_Big_Tree_Register.pdf` (2015 edition, ~300+ entries statewide, common name, scientific name, circumference/height/spread/crown/total points, nominator, county and location). WebFetch cannot read it (returns "corrupted/binary"); a plain `curl` download followed by a pure-stdlib `zlib`-stream extraction of the PDF's text objects works and needs no new dependency.
