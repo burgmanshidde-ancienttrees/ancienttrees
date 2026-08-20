@@ -49,10 +49,10 @@
       "access": "Free, in the public Schlossberg hill park, open at all times",
       "transport": "Tram 3 or 5 to the Schlossbergbahn stop, then a short walk up the hill (a paid funicular also runs)",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Naturdenkmal_1270_Schlo%C3%9Fberg_Graz_2022-08-03_02.jpg",
+        "license": "CC0",
+        "attribution": "Leonhard Lenz, via Wikimedia Commons",
+        "status": "approved"
       },
       "curation_status": "flagged",
       "notes": "Register (id 118) plus Wikipedia's Naturdenkmal list agree within 3m on location. Register gives species as Acer campestre; Wikipedia's entry only says 'Ahorn' (maple, genus level), so species rests on the register alone. No age or girth found in either source.",
@@ -80,10 +80,10 @@
       "access": "Free, public park (4.6 ha), open on all sides, no entry fee",
       "transport": "Short walk from Graz Hauptbahnhof (about 1km)",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Eiche_Volksgarten_Graz_1269_%281%29.JPG",
+        "license": "CC BY-SA 3.0 at",
+        "attribution": "Gerdsch, via Wikimedia Commons",
+        "status": "approved"
       },
       "curation_status": "flagged",
       "notes": "Register (id 117) and Wikipedia geocode within 2m; Volksgarten's own Wikipedia article independently confirms the park holds several Naturdenkmal trees. The park's oak-row age (70-100 years) is NOT applied to this specific tree since no source confirms it belongs to that row (bridge-claim avoided). No girth or planting date found.",
@@ -350,10 +350,10 @@
       "access": "Paid entry: stands inside Schlosspark Eggenberg, the grounds of Schloss Eggenberg (UNESCO World Heritage palace), about 57 metres from the Eggenberg Weymouth Pine.",
       "transport": "Graz public transport toward the Eggenberg district; Eggenberger Allee 90 is the palace's signposted main entrance",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Blutbuche_Graz%2C_Eggenberger_Allee_90_02.jpg",
+        "license": "CC BY-SA 3.0 at",
+        "attribution": "Kulac, via Wikimedia Commons",
+        "status": "approved"
       },
       "curation_status": "flagged",
       "notes": "Flagged for two narrow reasons, not existence: (1) absent from the City of Graz's own live municipal GIS layer (checked directly; the other nine Eggenberg trees all appear in it, this one does not), so the two-source bar rests on Austria's national register (via Wikipedia) plus a dated, geo-tagged Commons photo rather than two independent GIS layers. (2) Alive-now evidence is a single 2014 photograph, 12 years old, no more recent sighting found. Location itself is solid: register coordinates and photo GPS agree to six decimal places.",
