@@ -15,6 +15,16 @@
       "reason": "Pinus laricio, girth 397cm, height 30m, vitality Excellent, planted 1866-04-01 (a real dated month, not a 01-01 bucket value, so likely a genuine planting-era record). SITG id_arbre 146414, coords (46.22865,6.13773), only 124m from gen_013 (Service Tree of Chambesy, Route de Pregny). Strong candidate for a future pass: real planting date plus Excellent vitality plus tight cluster fit. Not verified this pass for lack of time; no second source checked yet.",
       "species": "Pinus laricio",
       "coordinates": [46.22865, 6.13773]
+    },
+    {
+      "reason": "Cedrus deodara, girth 579cm (the largest deodara found this pass), height 32m, but vitality Médiocre and no planting date. SITG id_arbre 173744, coords (46.21921,6.15063), about 90m from the nominal centre of Parc Mon-Repos and roughly 90m from gen_019 (The Himalayan Cedar of Parc Mon Repos, delivered this pass) and gen_012 (The Secheron Plane, already published), so it sits at the same Mon Repos green space. Not delivered because a declining-vitality reading plus no second source felt like the weaker of two very similar candidates in the same 100m; gen_019 (Bon vitality, fresher 2024 observation) was chosen instead. Worth a look for a future pass, or as a second Mon Repos entry once the city wants a denser cluster there.",
+      "species": "Cedrus deodara",
+      "coordinates": [46.21921, 6.15063]
+    },
+    {
+      "reason": "Cedrus deodara, girth 405cm, height 30m, vitality Bon, planted 1912-01-01 (real date, not a placeholder), SITG id_arbre 152313, coords (46.22322,6.14904), inside the botanical garden about 200m from gen_020 (The Himalayan Cedar of the Botanical Garden, delivered this pass, also planted 1912, girth 500cm) and about 90m from gen_007. Same planting cohort as gen_020, almost certainly, but its register observation is from 2012 (13 years old) against gen_020's 2025 observation, so gen_020 was preferred as the fresher, larger, better-evidenced of the pair. Keep this one in reserve if the garden ever wants a third cedar rather than researching from zero.",
+      "species": "Cedrus deodara",
+      "coordinates": [46.22322, 6.14904]
     }
   ],
   "blocked": [
