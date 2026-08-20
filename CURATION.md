@@ -154,6 +154,35 @@ Build/superlatives/qa all clean (same pre-existing sitemap-lastmod warning
 as the other four Dutch passes today). Photos: none hunted, per this
 runner's no-photo-judging rule.
 
+## 2026-08-20 (session, continued) - Rotterdam: deepened 5 to 9, one bridge claim caught and dropped
+
+Sixth Dutch city off the same shelf. Two exceptional finds: the Lijnbaan
+plane, a second May-1940-bombing survivor (planted 1851 in a hospital
+garden; only the tree and the hospital's entrance gate survived the
+bombing; the 1960s Lijnbaan extension literally bent the street to spare
+it; nominated for the 2019 national Tree of the Year), and the
+Eendrachtsplein memorial yew (1947, initiated by Rotterdam Philharmonic
+violinist Willem Ganter after the war). The register's own history text for
+the yew claims it stands where Zadkine's famous "De Verwoeste Stad" statue
+was unveiled in 1953; independent search consistently places that statue at
+Plein 1940/Leuvehaven, not Eendrachtsplein, so the connection reads like the
+register conflating two different memorials. Dropped the Zadkine claim
+entirely and wrote the story from only what corroborates, rather than
+publish an uncertain bridge claim on a page whose whole intro is about
+buildings that didn't survive being confused with objects that did.
+Separately dropped a "Bruine beuk Koningin Emmaplein" candidate 54m from the
+already-published rot_005: same species, and the register's own text
+describes a single monumental copper beech on that square, so almost
+certainly the same tree rather than a second one. Also shipped a 4-tree
+mixed plane group at Delftseplein station forecourt (1860, 3 London plane
+plus 1 Oriental plane) and a plainer Westersingel plane. All
+`curation_status: flagged`, `location_precision: confirmed`, clean against
+`dead_entries_regex`. Walk planner formed two walks (6 and 3 trees). Preflight
+caught a stale "plus four more" count promise in `question_meta`, fixed to
+eight. Build/superlatives/qa all clean (same pre-existing sitemap-lastmod
+warning as the rest of today's Dutch passes). Photos: none hunted, per this
+runner's no-photo-judging rule.
+
 ## 2026-08-19 - Caserta: deepened to target (14 to 20), 6 new trees from its own leads file
 
 Six trees written from already-verified MASAF/Campania register leads that
