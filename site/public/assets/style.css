@@ -1101,12 +1101,18 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .worthit-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
 .worthit-compact { margin: 0.5rem 0 0; }
 .worthit-q { font-weight: 700; }
-.worthit-btn { font-size: 16px; line-height: 1; padding: 0.35rem 0.7rem; border: 1px solid var(--cream-dark); border-radius: 999px; background: #fff; cursor: pointer; }
+.worthit-btn { font-size: 16px; line-height: 1; min-width: 44px; min-height: 44px; padding: 0.35rem 0.7rem;
+  border: 1px solid var(--cream-dark); border-radius: 999px; background: #fff; cursor: pointer; }
 .worthit-btn:hover { border-color: var(--moss); }
 /* Deliberately quieter than the thumbs: reporting a fault is the rarer errand,
    and the convention (Google Maps, AllTrails) is a plain secondary control
    beside the opinion, never a button competing with it. */
-.worthit-report { font-family: inherit; font-size: 12.5px; line-height: 1; padding: 0.4rem 0.75rem; border: 1px solid var(--cream-dark); border-radius: 999px; background: #fff; color: var(--ink-light); cursor: pointer; }
+.worthit-report { position: relative; font-family: inherit; font-size: 12.5px; line-height: 1;
+  padding: 0.4rem 0.75rem; border: 1px solid var(--cream-dark); border-radius: 999px;
+  background: #fff; color: var(--ink-light); cursor: pointer; }
+/* Quiet by design, so it keeps its 27 points of ink and gets 44 of area. */
+.worthit-report::after { content: ""; position: absolute; left: 0; right: 0;
+  top: 50%; height: 44px; transform: translateY(-50%); }
 .worthit-report:hover { border-color: var(--moss); color: var(--moss); }
 .worthit-done, .worthit-thanks { color: var(--moss); font-weight: 700; }
 .worthit-why { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; }
@@ -1151,7 +1157,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
    asset is dropped in. */
 .oauth-btn { display: block; width: 100%; text-align: center; border-radius: 999px;
   font-family: inherit; font-size: 14px; font-weight: 700; cursor: pointer;
-  padding: 0.75rem 1.5rem; margin: 0.25rem 0 0.5rem;
+  min-height: 44px; padding: 0.75rem 1.5rem; margin: 0.25rem 0 0.5rem;
   background: var(--cream); color: var(--ink); border: 1.5px solid var(--cream-dark); }
 .oauth-btn:hover { border-color: var(--ink-light); }
 .account-page .oauth-btn { max-width: 22rem; }
