@@ -3,7 +3,7 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Maastricht's most remarkable trees sit on the edges of the things that shaped the city: a chestnut on a working farm above Amby, a grove of giant sequoias in a cemetery that has taken the city's dead since 1812, and a stand of 300-year-old oaks marking the outline of a baron's star-shaped forest garden above Kasteel Neercanne. Closer to the centre, Stadspark, one of the oldest city parks in the Netherlands, holds the country's tallest recorded plane tree alongside three beeches nearly as old as the park's own 19th-century layout.",
-  "meta_description": "Maastricht's oldest trees range from a contested-age farm chestnut to 300-year-old star-forest oaks. Five verified trees, real stories, real locations.",
+  "meta_description": "Maastricht's oldest trees range from a contested-age farm chestnut to 300-year-old star-forest oaks. Ten verified trees, real stories, real locations.",
   "question_answer": "Maastricht's oldest tree with a reliable date is a stand of oaks ringing the edge of Cannerbos, a star-shaped forest garden Baron Daniel Wolfgang van Dopff laid out around 1700 beside Kasteel Neercanne, making them roughly 300 years old. A farm chestnut in Amby may be close in age or even older, but its planting date is genuinely disputed and unconfirmed.",
   "question_meta": "The 300-year-old oaks of Cannerbos, planted around a baron's 1700 star forest, are Maastricht's oldest reliably dated tree. The full five.",
   "question_context": "Maastricht's oldest-tree claim goes to whichever standard matters more, a reliable date or a possibly older but unconfirmed one. The Cannerbos oaks ring the edge of a star-shaped forest garden a baron laid out around 1700, and their roughly 300-year age is treated as trustworthy because it is tied to a single, dated landscaping event rather than a guess from girth alone. The Molenweg chestnut could plausibly be just as old or older, but its own documentation shows real disagreement: the Bomenstichting's national register estimates an 1750-1800 planting, a 2022 measurement suggested 1800 plus or minus 40 years, and a persistent local legend crediting Russian Cossacks during the 1814 siege of Maastricht has been investigated and dismissed as implausible by the tree's own researchers. Only a core sample would settle it, and none has been taken. Stadspark's three oldest beeches and its record-height plane tree are both well measured but comparatively young, 150 to 160 years old, products of the park's 19th-century expansion rather than survivors of its 17th-century linden-lined origins, none of which are known to still stand.",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Maastricht's remarkable trees free to visit?",
-      "a": "Four of the five are free and open to the public at any time. The Molenweg chestnut stands on working farmland and is visible only from the access road."
+      "a": "Nine of the ten are free and open to the public at any time. The Molenweg chestnut stands on working farmland and is visible only from the access road."
     },
     {
       "q": "Where is the tallest plane tree in the Netherlands?",
@@ -192,6 +192,156 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate"
+    },
+    {
+      "id": "maa_006",
+      "name": "The Juliana Birth Linden",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "~120 years",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Keizer Karelplein 15, Maastricht",
+        "latitude": 50.849826,
+        "longitude": 5.686959,
+        "neighbourhood": "Centrum"
+      },
+      "story": "This lime was planted on Keizer Karelplein to mark the birth of Princess Juliana in April 1909, the future queen who would go on to reign over the Netherlands for 32 years, and the tree still carries a small royal fence around its base. What that fence does not carry is any mention of Juliana at all: the register notes, with some evident amusement, that the ironwork skips the commemoration entirely and instead repeats a single instruction six times over, no bicycles.\n\nThe tree stands at Keizer Karelplein, one of three squares that ring the Basilica of Saint Servaas, Maastricht's oldest surviving church and the burial place of the city's first bishop. Juliana herself never had any particular connection to Maastricht beyond the timing of her birth, which was enough in 1909 for a municipality to plant a tree and forget, or simply never get around to, actually saying why. It stands in the open square today, free to see, a two minute walk from a second monumental linden on the neighbouring Vrijthof.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1679958)",
+        "https://nl.wikipedia.org/wiki/Juliana_der_Nederlanden"
+      ],
+      "access": "Free, public square, open at any time",
+      "transport": "Centrum, central Maastricht; about a 10 minute walk from Maastricht station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "maa_007",
+      "name": "The Linden of Vrijthof",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "~140 years",
+      "age_min": 136,
+      "age_max": 146,
+      "location": {
+        "address": "Vrijthof 25, beside the former rijkswacht building, Maastricht",
+        "latitude": 50.849297,
+        "longitude": 5.687839,
+        "neighbourhood": "Centrum"
+      },
+      "story": "Vrijthof takes its name from the churchyard it once was, the free forecourt of the Basilica of Saint Servaas that doubled as a burial ground through the Middle Ages, before it became the wide public square that now hosts Maastricht's Christmas market and biggest outdoor terraces. Archaeological digs beneath the paving have turned up Roman infrastructure and early medieval graves, so the square's actual history runs back roughly two thousand years even though almost nothing visible on it does.\n\nThis common lime, dated by the register to around 1880 to 1890, is one of the square's more recent arrivals by that measure, standing beside what was once the rijkswacht building at the square's edge. Common lime is itself a hybrid, a natural cross between the small-leaved and large-leaved lime that was the default civic tree across Dutch and Belgian cities for centuries. It grows in the open square, free, a two minute walk from a second commemorative linden on the neighbouring Keizer Karelplein, both sharing the same historic church complex without either predating it by more than a fraction.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1679959)",
+        "https://nl.wikipedia.org/wiki/Vrijthof_(Maastricht)"
+      ],
+      "access": "Free, public square, open at any time",
+      "transport": "Centrum, central Maastricht; about a 10 minute walk from Maastricht station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "maa_008",
+      "name": "The Black Walnuts of Nolenspark",
+      "species": "Black Walnut (Juglans nigra)",
+      "age_estimate": "~130 years",
+      "age_min": 126,
+      "age_max": 136,
+      "location": {
+        "address": "Monseigneur Nolenspark, Maastricht",
+        "latitude": 50.843902,
+        "longitude": 5.692219,
+        "neighbourhood": "Jekerdal"
+      },
+      "story": "Maastricht's Stadspark grew westward in 1886, absorbing the ground that became Monseigneur Nolenspark and Henri Hermanspark, under the design of Lievin Rosseels, son of the Leuven landscape architect Egidius Rosseels who had laid out the park's earlier southward expansion in the 1860s. This group of black walnuts, an American species grown here for its wood and its nuts rather than any native pedigree, most likely went into the ground during that same 1886 westward push, though no record fixes the planting to a specific year.\n\nThe walnuts share the park with a run of other trees from the same expansion, weeping silver limes along the water, a pair of tulip trees, and the row of planes further along Van Heylerhofflaan that includes the tallest recorded plane in the Netherlands, all part of one coordinated late-19th-century planting scheme rather than separate additions over time. They stand in the open park, free, on ground that was still farmland or open country before Rosseels arrived to make it a park.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1696516)",
+        "https://nl.wikipedia.org/wiki/Stadspark_Maastricht"
+      ],
+      "access": "Free, open public park at any time",
+      "transport": "10-15 minute walk from Maastricht centre",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "maa_009",
+      "name": "The Weeping Silver Limes of Haet ende Nijt",
+      "species": "Weeping Silver Lime (Tilia tomentosa 'Pendula')",
+      "age_estimate": "~160 years",
+      "age_min": 156,
+      "age_max": 166,
+      "location": {
+        "address": "Monseigneur Nolenspark, along the bank of Haet ende Nijt, Maastricht",
+        "latitude": 50.844059,
+        "longitude": 5.692875,
+        "neighbourhood": "Jekerdal"
+      },
+      "story": "Haet ende Nijt, Hate and Envy, is the pointedly named moated monument at the heart of Stadspark's western reach, and when Lievin Rosseels redesigned this stretch of the park in 1886 he deliberately removed the five-sided earthen bank that had partly enclosed it, so that the monument would sit fully surrounded by water and read more clearly from the paths around it. This group of weeping silver limes grows along that same bank, planted a little earlier, the register dates them to the 1860s, during the park's first southward expansion rather than the later westward one.\n\nWeeping silver lime is a cultivated, downward-branching form of the ordinary silver lime, its leaves silvery on the underside and prone to catching wind in a way that makes the whole canopy shimmer, a trait 19th-century park designers prized enough to plant it beside water on purpose. The trees stand in the open along the bank, free, one stop among several from the same era, the black walnuts and tulip trees a short walk further into the same park.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1696509)",
+        "https://nl.wikipedia.org/wiki/Stadspark_Maastricht"
+      ],
+      "access": "Free, open public park at any time",
+      "transport": "10-15 minute walk from Maastricht centre",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "maa_010",
+      "name": "The Tulip Trees of Nolenspark",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "age_estimate": "~140 years",
+      "age_min": 136,
+      "age_max": 146,
+      "location": {
+        "address": "Monseigneur Nolenspark, near Van Heylerhofflaan, Maastricht",
+        "latitude": 50.843755,
+        "longitude": 5.693092,
+        "neighbourhood": "Jekerdal"
+      },
+      "story": "These two tulip trees likely went into Monseigneur Nolenspark during the same 1886 westward expansion of Maastricht's Stadspark that brought in the park's black walnuts and its weeping silver limes along the Haet ende Nijt bank, all under Lievin Rosseels' design. Nobody recorded the exact planting year for this pair specifically, so the register places them in the same general period as the rest of the expansion rather than on a dated line of its own.\n\nTulip tree is not related to the tulip at all, named only for flowers shaped like the bulb, and it is one of the tallest-growing hardwoods in eastern North America, capable of well over 50 metres in its native range even if Dutch specimens rarely approach that. Its leaves have a distinctive squared-off tip, unlike almost any other tree grown in Europe, which makes it one of the easiest species in this park to identify at a glance even without a label. The pair stands in the open near Van Heylerhofflaan, free, close enough to Stadspark's record-holding plane row and the park's other 1880s plantings to make one stop worth several.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1696506)",
+        "https://nl.wikipedia.org/wiki/Stadspark_Maastricht"
+      ],
+      "access": "Free, open public park at any time",
+      "transport": "10-15 minute walk from Maastricht centre",
+      "best_time": {
+        "months": [6],
+        "label": "June, when the tulip-shaped flowers open high in the canopy",
+        "kind": "flowers"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }
