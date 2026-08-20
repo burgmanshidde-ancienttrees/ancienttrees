@@ -27,9 +27,35 @@ struct ContentView: View {
     @State private var rootSheet: RootSheet?
     @State private var primerAnswered = false
     /// One path per tab, so tapping the tab you are already on can empty it.
-    /// Arrays rather than NavigationPath because clearing one is `= []` and
-    /// because every route in this app is the same type.
-    @State private var paths: [Int: [Route]] = [:]
+    ///
+    /// FOUR SEPARATE ARRAYS, not a dictionary keyed by tab. The dictionary
+    /// version compiled, looked right and silently killed every link in the
+    /// app: `Binding(get: { paths[id] ?? [] }, set: { paths[id] = $0 })` hands
+    /// SwiftUI a fresh array on every read, so a push never settled and tapping
+    /// a tree card did nothing at all, on the map AND on Explore. Two UI tests
+    /// caught it; nothing in a screenshot could have.
+    @State private var mapPath: [Route] = []
+    @State private var explorePath: [Route] = []
+    @State private var collectPath: [Route] = []
+    @State private var profilePath: [Route] = []
+
+    private func path(_ id: Int) -> Binding<[Route]> {
+        switch id {
+        case 0: $mapPath
+        case 1: $explorePath
+        case 2: $collectPath
+        default: $profilePath
+        }
+    }
+
+    private func clearPath(_ id: Int) {
+        switch id {
+        case 0: mapPath = []
+        case 1: explorePath = []
+        case 2: collectPath = []
+        default: profilePath = []
+        }
+    }
     @State private var debugTree: String?
 
     /// Everything the root can put over the app. An enum rather than a pile of
@@ -78,7 +104,7 @@ struct ContentView: View {
     private var tabSelection: Binding<Int> {
         Binding(get: { tab },
                 set: { new in
-                    if new == tab { paths[new] = [] }
+                    if new == tab { clearPath(new) }
                     tab = new
                 })
     }
@@ -87,8 +113,7 @@ struct ContentView: View {
     /// once rather than inline at ten separate call sites.
     private func stack<Root: View>(_ id: Int, _ cat: Catalogue,
                                    @ViewBuilder root: () -> Root) -> some View {
-        NavigationStack(path: Binding(get: { paths[id] ?? [] },
-                                      set: { paths[id] = $0 })) {
+        NavigationStack(path: path(id)) {
             root()
                 .navigationDestination(for: Route.self) { route in
                     destination(route, cat)

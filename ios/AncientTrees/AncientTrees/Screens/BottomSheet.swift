@@ -95,8 +95,15 @@ struct BottomSheet<Content: View>: View {
             .frame(maxHeight: .infinity, alignment: .bottom)
             // simultaneous, not exclusive: the scroll view has to keep working
             // for every gesture this one does not want.
+            //
+            // And minimumDistance is 18 rather than 4, which is not a tuning
+            // preference. At 4 this gesture won the tap-versus-drag arbitration
+            // against the cards underneath, so tapping a tree in the list did
+            // nothing at all: the finger moves a point or two on any real tap.
+            // Three UI tests caught it, which is the entire reason they exist,
+            // because a card that does not open is invisible in a screenshot.
             .simultaneousGesture(
-                DragGesture(minimumDistance: 4)
+                DragGesture(minimumDistance: 18)
                     .onChanged { value in
                         // Claim the gesture only in the cases the rules above
                         // describe. Everything else belongs to the list.

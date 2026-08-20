@@ -251,9 +251,10 @@ struct MapTab: View {
                 searchField
                 ForEach(listed, id: \.tree.id) { hit in
                     NavigationLink(value: Route.tree(hit.tree.id)) {
-                        TreeCard(tree: hit.tree, km: hit.km)
+                        TreeCard(tree: hit.tree, km: hit.km, showsInset: false)
                     }
                     .buttonStyle(.plain)
+                    .accessibilityIdentifier("tree-card")
                 }
                 if listed.isEmpty {
                     Text(query.isEmpty
@@ -516,7 +517,7 @@ struct MapTab: View {
                 }
                 .buttonStyle(.plain)
             }
-            TreeCard(tree: t, km: t.distanceKm(from: origin.lat, origin.lng))
+            TreeCard(tree: t, km: t.distanceKm(from: origin.lat, origin.lng), showsInset: false)
             NavigationLink(value: Route.tree(t.id)) {
                 Label("Read why it is worth the walk", systemImage: "book")
             }
