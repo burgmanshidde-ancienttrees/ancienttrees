@@ -38,6 +38,55 @@ Build clean throughout (last full build 1993 pages), qa.py clean (one pre-existi
 
 FOR HIDDE: nothing blocks. Noticed you're live in a concurrent session on the iOS app while this was running (pulled and rebased around your pushes cleanly, no conflicts).
 
+## 2026-08-20 (session) - Portland doubles to twenty, and a build check that was crying wolf
+
+Hidde noticed the US is now our largest audience and asked which American
+cities are worth doing. Our own Search Console agrees with him and more
+strongly than he put it: usa 36 clicks on 2,085 impressions, against gbr 16 on
+1,207 and nld 18 on 472. So the question was measured rather than guessed, and
+three of the four routes turned out closed. Those verdicts are in
+data/register-scouting.json; the short version is that there is no index
+shortcut for US cities and the route is per city.
+
+**The answer was not a new city. It was Portland**, which had 389 unmined
+heritage trees sitting in a register imported a week ago, licence already
+cleared, private-yard filter already applied on import, and 30 measured
+impressions. The cheapest ten trees available anywhere on the site.
+
+Chosen as a cluster rather than by size. Seven of the ten sit inside 600 metres
+in Irvington and now make a second loop of about 1.5 km: nine Caucasian
+wingnuts along two blocks of NE Knott Street, a pair of London planes and a 35
+metre elm on NE 18th, a horse chestnut, a pair of catalpas and a sycamore. The
+other three stand alone and earn it: the Mount Tabor sequoia at 42 metres
+beside the reservoir, a seven metre beech closing the end of a Parkrose street
+where the tarmac ran out, and a Lombardy poplar of 9.75 metres, which is close
+to absurd for a species usually rotten at fifty.
+
+Units were checked rather than trusted, since the service labels none: 122
+inches of diameter times pi gives exactly the 32 feet recorded, so the register
+is internally consistent.
+
+**Two checks fired, one rightly and one wrongly, and both are worth reading.**
+
+The build refused `Smoothleaf Elm` for Ulmus minor because Paris already
+publishes it as Field Elm. That is hard rule 9 working exactly as designed: I
+had carried the register's wording straight through.
+
+The smoke test then failed on /explore, and that one was crying wolf. Measured
+in a real browser at 375px rather than guessed: MapLibre's canvas is 400 wide
+inside a .map container of 375 carrying overflow:hidden, so it is clipped, the
+page scrollWidth is exactly 375 and nothing is off the screen. `inScroller()`
+only looked for overflow-x auto or scroll and did not count hidden or clip as
+containment. Ten more trees changed how fast the map settles, which is all it
+took to expose a latent false positive. Fixed, and the fix does not weaken the
+check: an ancestor that clips really does clip, and if it is itself too wide
+the loop catches it on its own turn.
+
+**Still on the list from that conversation:** the pins on Boston, New York and
+Washington DC, which are our three most-served US pages and carry 9 of 10, 12
+of 20 and 12 of 14 approximate pins between them. And New Orleans, where the
+Live Oak Society has 249 registered live oaks in City Park alone.
+
 ## 2026-08-20 (session) - Austin and Houston open, nine trees, from two Texas registers
 
 Both live, build and smoke test green, pages checked in the browser.
