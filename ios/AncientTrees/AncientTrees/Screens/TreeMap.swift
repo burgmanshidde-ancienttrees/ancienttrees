@@ -30,6 +30,14 @@ struct TreeMap: UIViewRepresentable {
     var routeIsReal = true
     /// Off on a walk's map, where the camera belongs to the route.
     var showsRecentre = false
+    /// How wide the first look is. Four kilometres suits "what is near me"; a
+    /// tree's own page wants the street it stands in, and at four kilometres the
+    /// tree itself disappears into a cluster bubble.
+    var spanMeters: CLLocationDistance = 4000
+    /// Off on a tree's own page. Clustering is right when the question is "what
+    /// is around here" and wrong when the answer is already known: the subject
+    /// of the page was disappearing into a bubble marked 11.
+    var clusters = true
     /// What the map is currently looking at, reported back so the list under it
     /// can be a list of what you are looking at. Optional because a walk's map
     /// does not want it.
@@ -43,6 +51,7 @@ struct TreeMap: UIViewRepresentable {
         map.delegate = context.coordinator
         map.showsUserLocation = true
         map.pointOfInterestFilter = .excludingAll   // our pins are the point
+        TreePinView.clusteringEnabled = clusters
         map.register(TreePinView.self,
                      forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
         map.register(ClusterView.self,
@@ -67,15 +76,15 @@ struct TreeMap: UIViewRepresentable {
             map.addSubview(recentre)
             NSLayoutConstraint.activate([
                 recentre.trailingAnchor.constraint(equalTo: map.safeAreaLayoutGuide.trailingAnchor, constant: -12),
-                recentre.topAnchor.constraint(equalTo: map.safeAreaLayoutGuide.topAnchor, constant: 56),
+                recentre.topAnchor.constraint(equalTo: map.safeAreaLayoutGuide.topAnchor, constant: 112),
                 recentre.widthAnchor.constraint(equalToConstant: 44),
                 recentre.heightAnchor.constraint(equalToConstant: 44),
             ])
         }
         if let focus {
             map.setRegion(MKCoordinateRegion(center: focus,
-                                             latitudinalMeters: 4000,
-                                             longitudinalMeters: 4000), animated: false)
+                                             latitudinalMeters: spanMeters,
+                                             longitudinalMeters: spanMeters), animated: false)
         }
         return map
     }
@@ -189,9 +198,13 @@ struct TreeMap: UIViewRepresentable {
 /// better than AllTrails' single brown marker, so the app keeps the idea: the
 /// pin says what KIND of tree it is before you tap it.
 final class TreePinView: MKMarkerAnnotationView {
+    /// Set by whichever map is being built. A static because MKMapView makes
+    /// these itself and there is nowhere to hand it an argument.
+    static var clusteringEnabled = true
+
     override var annotation: MKAnnotation? {
         didSet {
-            clusteringIdentifier = "tree"
+            clusteringIdentifier = Self.clusteringEnabled ? "tree" : nil
             // .required, deliberately, and it was briefly changed away from on
             // 2026-08-20 to let MapKit cull colliding labels. Reverted: it made
             // no visible difference in Paris, and what it buys in tidiness it
