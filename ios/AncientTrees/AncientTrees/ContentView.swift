@@ -1,8 +1,16 @@
-// The four verbs, one tab each: find, walk, collect, season.
+// Four tabs: Map, Explore, Collect, Profile. Hidde's own division, 2026-08-20,
+// recorded in DECISIONS.md with his words for each.
 //
-// The tab bar is the product's own doctrine rather than a copy of AllTrails',
-// though theirs is the evidence that verbs work as tabs: Verkennen, Opgeslagen,
-// Navigeer, Activiteit. Three of their four map onto ours almost exactly.
+// The four verbs are untouched as the product; two of them stopped being
+// destinations and became controls. WALK is a filter on the map rather than a
+// tab, and SEASON is a pulse on the pins rather than a tab, because that is
+// where you would reach for either. The website made the same move when season
+// left its nav on 2026-07-29.
+//
+// What this replaced was Saved and You, which were both nouns about storage and
+// which split one idea across two screens: the lists in one, the score in the
+// other, and the account buried under both. Collect is the game and Profile is
+// the admin, which is the split AllTrails and Google Maps both make.
 
 import SwiftUI
 import CoreLocation
@@ -141,13 +149,13 @@ struct ContentView: View {
                         .tag(1)
                         .tabItem { Label("Explore", systemImage: "square.grid.2x2") }
 
-                    stack(2, cat) { SavedView(catalogue: cat, origin: origin) }
+                    stack(2, cat) { CollectView(catalogue: cat, origin: origin) }
                         .tag(2)
-                        .tabItem { Label("Saved", systemImage: "heart") }
+                        .tabItem { Label("Collect", systemImage: "checkmark.seal") }
 
-                    stack(3, cat) { YouView(catalogue: cat) }
+                    stack(3, cat) { ProfileView(catalogue: cat) }
                         .tag(3)
-                        .tabItem { Label("You", systemImage: "person.crop.circle") }
+                        .tabItem { Label("Profile", systemImage: "person.crop.circle") }
                 }
                 .environment(saved)
                 .environment(store)
