@@ -4,22 +4,26 @@
   {
    "name": "Blackjack Oak, City of Dallas park (Texas Big Tree Registry TreeID 6436)",
    "species": "Blackjack Oak (Quercus marilandica)",
-   "reason": "County-champion-caliber blackjack oak from the Texas Big Tree Registry ArcGIS layer (circumference 121 in / 307 cm, height 61 ft, spread 81 ft, measured 2025-09-03, org City of Dallas, public). Coordinates 32.76527778, -96.75583333 but no named park identified this pass (reverse search pointed vaguely at the Oak Cliff / Lake Cliff / South Dallas area, no confident match). No second independent source found. Needs: which park, and a corroborating source, before it can verify."
+   "reason": "County-champion-caliber blackjack oak from the Texas Big Tree Registry ArcGIS layer (circumference 121 in / 307 cm, height 61 ft, spread 81 ft, measured 2025-09-03, org City of Dallas, public). Coordinates 32.76527778, -96.75583333 but no named park identified this pass (reverse search pointed vaguely at the Oak Cliff / Lake Cliff / South Dallas area, no confident match). No second independent source found. Needs: which park, and a corroborating source, before it can verify. OWNER per the registry: City of Dallas. That field is what actually answers hard rule 10, better than any flag: a city parks department, a university campus, a county precinct or a churchyard is a yes, and the access line still has to say honestly what a visitor meets.",
+   "owner": "City of Dallas"
   },
   {
    "name": "Oriental Arborvitae, Cox Cemetery (Texas Big Tree Registry TreeID 58)",
    "species": "Oriental Arborvitae (Thuja orientalis / Platycladus orientalis)",
-   "reason": "Texas STATE CHAMPION per the registry (circumference 85 in / 216 cm, height 42 ft, measured 2002-05-15) at Cox Cemetery near White Rock Lake (32.84135, -96.73135), a public pioneer cemetery (400+ marked graves, oldest stone 1848). Register is the only source found; a web search turned up plenty on the cemetery itself but nothing on this specific tree. Also a judgement call: an ornamental non-native cemetery arborvitae may read as a curiosity rather than an epic, walk-worthy tree even as a state champion. Needs a second source and a look at whether it clears the remarkable bar."
+   "reason": "Texas STATE CHAMPION per the registry (circumference 85 in / 216 cm, height 42 ft, measured 2002-05-15) at Cox Cemetery near White Rock Lake (32.84135, -96.73135), a public pioneer cemetery (400+ marked graves, oldest stone 1848). Register is the only source found; a web search turned up plenty on the cemetery itself but nothing on this specific tree. Also a judgement call: an ornamental non-native cemetery arborvitae may read as a curiosity rather than an epic, walk-worthy tree even as a state champion. Needs a second source and a look at whether it clears the remarkable bar. OWNER per the registry: Cox Cemetery. That field is what actually answers hard rule 10, better than any flag: a city parks department, a university campus, a county precinct or a churchyard is a yes, and the access line still has to say honestly what a visitor meets.",
+   "owner": "Cox Cemetery"
   },
   {
    "name": "Bur Oak, City of Coppell (Texas Big Tree Registry TreeID 915)",
    "species": "Bur Oak (Quercus macrocarpa)",
-   "reason": "Large bur oak (circumference 179 in / 455 cm, height 77 ft) at 32.98411111, -96.98019444, organization City of Coppell PARD. Coppell is a separate suburb roughly 24 km northwest of downtown Dallas, likely outside the ~30 minute day-trip boundary for a Dallas city page; would need its own city entry or a transit-time check before use here."
+   "reason": "Large bur oak (circumference 179 in / 455 cm, height 77 ft) at 32.98411111, -96.98019444, organization City of Coppell PARD. Coppell is a separate suburb roughly 24 km northwest of downtown Dallas, likely outside the ~30 minute day-trip boundary for a Dallas city page; would need its own city entry or a transit-time check before use here. OWNER per the registry: City of Coppell PARD. That field is what actually answers hard rule 10, better than any flag: a city parks department, a university campus, a county precinct or a churchyard is a yes, and the access line still has to say honestly what a visitor meets.",
+   "owner": "City of Coppell PARD"
   },
   {
    "name": "Chalk Maple, Dallas Arboretum (Texas Big Tree Registry TreeID 1253)",
    "species": "Chalk Maple (Acer leucoderme)",
-   "reason": "Small state-registry entry (circumference 27 in / 69 cm) inside the Dallas Arboretum grounds. Modest size, not obviously remarkable on its own; recorded here as a pointer in case the Arboretum is researched in depth later (paid entry, per the brief that is allowed if access says so)."
+   "reason": "Small state-registry entry (circumference 27 in / 69 cm) inside the Dallas Arboretum grounds. Modest size, not obviously remarkable on its own; recorded here as a pointer in case the Arboretum is researched in depth later (paid entry, per the brief that is allowed if access says so). OWNER per the registry: Dallas Arboretum. That field is what actually answers hard rule 10, better than any flag: a city parks department, a university campus, a county precinct or a churchyard is a yes, and the access line still has to say honestly what a visitor meets.",
+   "owner": "Dallas Arboretum"
   },
   {
    "name": "Storytelling Place Comanche Marker Tree, Great Trinity Forest",
@@ -27,35 +31,9 @@
    "reason": "TxHTC-documented Comanche marker tree on white limestone in the Great Trinity Forest's White Rock Heritage District, over 150 years old per TxHTC (data gathered 2002-08-06, https://txhtc.org/trees/story-telling-place-comanche-marker-tree/). Original trunk is gone; what stands today is regrowth from the old stump, so it may not read as visually a single epic tree. No precise address or coordinates given, no independent second source found, and no confirmation the stump/regrowth is still alive and standing today (source is 23 years old). Needs a current-status check, a second source and a real location before it could verify."
   },
   {
-   "name": "Cedrus deodara, Texas Big Tree Registry TreeID 337",
-   "species": "Cedrus deodara",
-   "reason": "State champion or co-champion. Circumference 120 in (3.05 m), spread 69.0 ft, condition code 2, county tag Dallas, 5.8 km from the centre of Dallas. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable.",
-   "location": {
-    "latitude": 32.80472222,
-    "longitude": -96.74472222
-   },
-   "sources": [
-    "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
-   ],
-   "girth_cm": 305
-  },
-  {
-   "name": "Juglans nigra, Texas Big Tree Registry TreeID 1037",
-   "species": "Juglans nigra",
-   "reason": "State champion or co-champion. Circumference 155 in (3.94 m), spread 69.5 ft, condition code 3, county tag Dallas, 6.4 km from the centre of Dallas. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable.",
-   "location": {
-    "latitude": 32.80644444,
-    "longitude": -96.73861111
-   },
-   "sources": [
-    "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
-   ],
-   "girth_cm": 394
-  },
-  {
    "name": "Quercus stellata, Texas Big Tree Registry TreeID 2356",
    "species": "Quercus stellata",
-   "reason": "State champion or co-champion. Circumference 166 in (4.22 m), spread 49.0 ft, condition code 2, county tag Dallas, 8.5 km from the centre of Dallas. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable.",
+   "reason": "State champion or co-champion. Circumference 166 in (4.22 m), spread 49.0 ft, condition code 2, county tag Dallas, 8.5 km from the centre of Dallas. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable. OWNER per the registry: W.W. Glover Cemetery. That field is what actually answers hard rule 10, better than any flag: a city parks department, a university campus, a county precinct or a churchyard is a yes, and the access line still has to say honestly what a visitor meets.",
    "location": {
     "latitude": 32.77289983,
     "longitude": -96.70589983
@@ -63,64 +41,13 @@
    "sources": [
     "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
    ],
-   "girth_cm": 422
-  },
-  {
-   "name": "Catalpa bignonioides, Texas Big Tree Registry TreeID 760",
-   "species": "Catalpa bignonioides",
-   "reason": "State champion or co-champion. Circumference 284 in (7.21 m), spread 57.5 ft, condition code 3, county tag Dallas, 9.8 km from the centre of Dallas. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable.",
-   "location": {
-    "latitude": 32.82,
-    "longitude": -96.70611111
-   },
-   "sources": [
-    "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
-   ],
-   "girth_cm": 721
-  },
-  {
-   "name": "Fraxinus berlandieriana, Texas Big Tree Registry TreeID 675",
-   "species": "Fraxinus berlandieriana",
-   "reason": "State champion or co-champion. Circumference 181 in (4.60 m), spread 103.5 ft, condition code 2, county tag Dallas, 11.6 km from the centre of Dallas. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable.",
-   "location": {
-    "latitude": 32.84913889,
-    "longitude": -96.70741667
-   },
-   "sources": [
-    "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
-   ],
-   "girth_cm": 460
-  },
-  {
-   "name": "Ulmus americana, Texas Big Tree Registry TreeID 1096",
-   "species": "Ulmus americana",
-   "reason": "State champion or co-champion. Circumference 212 in (5.38 m), spread 93.0 ft, condition code 2, county tag Dallas, 11.7 km from the centre of Dallas. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable.",
-   "location": {
-    "latitude": 32.87258333,
-    "longitude": -96.84769444
-   },
-   "sources": [
-    "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
-   ],
-   "girth_cm": 538
-  },
-  {
-   "name": "Vitex agnus-castus, Texas Big Tree Registry TreeID 285",
-   "species": "Vitex agnus-castus",
-   "reason": "State champion or co-champion. Circumference 138 in (3.51 m), spread 42.0 ft, condition code 4, county tag Dallas, 22.0 km from the centre of Dallas. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable.",
-   "location": {
-    "latitude": 32.58277778,
-    "longitude": -96.74916667
-   },
-   "sources": [
-    "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
-   ],
-   "girth_cm": 351
+   "girth_cm": 422,
+   "owner": "W.W. Glover Cemetery"
   },
   {
    "name": "Fraxinus pennsylvanica, Texas Big Tree Registry TreeID 7433",
    "species": "Fraxinus pennsylvanica",
-   "reason": "State champion or co-champion. Circumference 130 in (3.30 m), spread 79.0 ft, condition code ?, county tag Dallas, 22.4 km from the centre of Dallas. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable.",
+   "reason": "State champion or co-champion. Circumference 130 in (3.30 m), spread 79.0 ft, condition code ?, county tag Dallas, 22.4 km from the centre of Dallas. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable. OWNER per the registry: Dallas County. That field is what actually answers hard rule 10, better than any flag: a city parks department, a university campus, a county precinct or a churchyard is a yes, and the access line still has to say honestly what a visitor meets.",
    "location": {
     "latitude": 32.57947694,
     "longitude": -96.74588083
@@ -128,12 +55,13 @@
    "sources": [
     "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
    ],
-   "girth_cm": 330
+   "girth_cm": 330,
+   "owner": "Dallas County"
   },
   {
    "name": "Salix nigra, Texas Big Tree Registry TreeID 1134",
    "species": "Salix nigra",
-   "reason": "State champion or co-champion. Circumference 258 in (6.55 m), spread 103.0 ft, condition code 2, county tag Tarrant, 27.3 km from the centre of Dallas. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable.",
+   "reason": "State champion or co-champion. Circumference 258 in (6.55 m), spread 103.0 ft, condition code 2, county tag Tarrant, 27.3 km from the centre of Dallas. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable. OWNER per the registry: City of Fort Worth. That field is what actually answers hard rule 10, better than any flag: a city parks department, a university campus, a county precinct or a churchyard is a yes, and the access line still has to say honestly what a visitor meets.",
    "location": {
     "latitude": 32.80880556,
     "longitude": -96.50719444
@@ -141,12 +69,13 @@
    "sources": [
     "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
    ],
-   "girth_cm": 655
+   "girth_cm": 655,
+   "owner": "City of Fort Worth"
   },
   {
    "name": "Fraxinus pennsylvanica, Texas Big Tree Registry TreeID 1214",
    "species": "Fraxinus pennsylvanica",
-   "reason": "State champion or co-champion. Circumference 173 in (4.39 m), spread 85.0 ft, condition code 3, county tag Tarrant, 31.7 km from the centre of Dallas. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable.",
+   "reason": "State champion or co-champion. Circumference 173 in (4.39 m), spread 85.0 ft, condition code 3, county tag Tarrant, 31.7 km from the centre of Dallas. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable. OWNER per the registry: City of Grapevine. That field is what actually answers hard rule 10, better than any flag: a city parks department, a university campus, a county precinct or a churchyard is a yes, and the access line still has to say honestly what a visitor meets.",
    "location": {
     "latitude": 32.96655556,
     "longitude": -97.05063889
@@ -154,12 +83,13 @@
    "sources": [
     "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
    ],
-   "girth_cm": 439
+   "girth_cm": 439,
+   "owner": "City of Grapevine"
   },
   {
    "name": "Quercus shumardii, Texas Big Tree Registry TreeID 221",
    "species": "Quercus shumardii",
-   "reason": "State champion or co-champion. Circumference 168 in (4.27 m), spread 95.0 ft, condition code 2, county tag Tarrant, 31.8 km from the centre of Dallas. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable.",
+   "reason": "State champion or co-champion. Circumference 168 in (4.27 m), spread 95.0 ft, condition code 2, county tag Tarrant, 31.8 km from the centre of Dallas. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable. OWNER per the registry: City of Grapevine. That field is what actually answers hard rule 10, better than any flag: a city parks department, a university campus, a county precinct or a churchyard is a yes, and the access line still has to say honestly what a visitor meets.",
    "location": {
     "latitude": 32.97416667,
     "longitude": -97.04361111
@@ -167,12 +97,13 @@
    "sources": [
     "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
    ],
-   "girth_cm": 427
+   "girth_cm": 427,
+   "owner": "City of Grapevine"
   },
   {
    "name": "Acer negundo, Texas Big Tree Registry TreeID 910",
    "species": "Acer negundo",
-   "reason": "State champion or co-champion. Circumference 107 in (2.72 m), spread 59.0 ft, condition code 3, county tag Tarrant, 32.0 km from the centre of Dallas. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable.",
+   "reason": "State champion or co-champion. Circumference 107 in (2.72 m), spread 59.0 ft, condition code 3, county tag Tarrant, 32.0 km from the centre of Dallas. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable. OWNER per the registry: City of Grapevine. That field is what actually answers hard rule 10, better than any flag: a city parks department, a university campus, a county precinct or a churchyard is a yes, and the access line still has to say honestly what a visitor meets.",
    "location": {
     "latitude": 32.97888889,
     "longitude": -97.04083333
@@ -180,46 +111,8 @@
    "sources": [
     "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
    ],
-   "girth_cm": 272
-  },
-  {
-   "name": "Ulmus americana, Texas Big Tree Registry TreeID 937",
-   "species": "Ulmus americana",
-   "reason": "State champion or co-champion. Circumference 216 in (5.49 m), spread 88.0 ft, condition code 1, county tag Tarrant, 32.9 km from the centre of Dallas. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable.",
-   "location": {
-    "latitude": 32.87583333,
-    "longitude": -97.12869444
-   },
-   "sources": [
-    "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
-   ],
-   "girth_cm": 549
-  },
-  {
-   "name": "Pistacia chinensis, Texas Big Tree Registry TreeID 883",
-   "species": "Pistacia chinensis",
-   "reason": "State champion or co-champion. Circumference 163 in (4.14 m), spread 74.0 ft, condition code 2, county tag Rockwall, 36.4 km from the centre of Dallas. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable.",
-   "location": {
-    "latitude": 32.93372222,
-    "longitude": -96.45466667
-   },
-   "sources": [
-    "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
-   ],
-   "girth_cm": 414
-  },
-  {
-   "name": "Pinus elliottii var. elliottii, Texas Big Tree Registry TreeID 1093",
-   "species": "Pinus elliottii var. elliottii",
-   "reason": "State champion or co-champion. Circumference 99 in (2.51 m), spread 44.0 ft, condition code 2, county tag Tarrant, 37.1 km from the centre of Dallas. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable.",
-   "location": {
-    "latitude": 32.91347222,
-    "longitude": -97.15883333
-   },
-   "sources": [
-    "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
-   ],
-   "girth_cm": 251
+   "girth_cm": 272,
+   "owner": "City of Grapevine"
   }
  ],
  "blocked": [
@@ -252,12 +145,124 @@
    "name": "Cedar Ridge Comanche Marker Tree",
    "species": "Eastern Red Cedar (Juniperus virginiana)",
    "reason": "PRIVATE LAND. Per TxHTC (https://txhtc.org/trees/cedar-ridge-comanche-marker-tree/), the Comanche Nation Tribal Elder Council visited the tree in 2002 only at the invitation of the landowner. No evidence found this pass of general public access; treat as private under hard rule 10 unless a later pass finds the site has since opened to visitors."
+  },
+  {
+   "name": "Cedrus deodara, Texas Big Tree Registry TreeID 337",
+   "species": "Cedrus deodara",
+   "location": {
+    "latitude": 32.80472222,
+    "longitude": -96.74472222
+   },
+   "sources": [
+    "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
+   ],
+   "why_blocked": "PRIVATE LAND. The Texas Big Tree Registry's PublicOrPrivate flag is 0 on this tree, and the flag is not the undocumented mystery an earlier pass took it for: across all 660 swept trees, flag 1 belongs to Big Bend and Guadalupe Mountains National Parks, Sam Houston National Forest, state natural areas and TxDOT districts, while flag 0 belongs to Big Tree Ranch, X-Arrow Ranch, Little Sandy Hunting & Fishing Club and similar. It means what it says. The registry also sets Display 0 on almost all of them, so it withholds these locations from its own public map, and hard rule 10 is absolute about not undoing that: the coordinates only reached us because the backend returns what the front end hides. Never ship unless a source shows the site is genuinely open to visitors."
+  },
+  {
+   "name": "Juglans nigra, Texas Big Tree Registry TreeID 1037",
+   "species": "Juglans nigra",
+   "location": {
+    "latitude": 32.80644444,
+    "longitude": -96.73861111
+   },
+   "sources": [
+    "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
+   ],
+   "why_blocked": "PRIVATE LAND. The Texas Big Tree Registry's PublicOrPrivate flag is 0 on this tree, and the flag is not the undocumented mystery an earlier pass took it for: across all 660 swept trees, flag 1 belongs to Big Bend and Guadalupe Mountains National Parks, Sam Houston National Forest, state natural areas and TxDOT districts, while flag 0 belongs to Big Tree Ranch, X-Arrow Ranch, Little Sandy Hunting & Fishing Club and similar. It means what it says. The registry also sets Display 0 on almost all of them, so it withholds these locations from its own public map, and hard rule 10 is absolute about not undoing that: the coordinates only reached us because the backend returns what the front end hides. Never ship unless a source shows the site is genuinely open to visitors."
+  },
+  {
+   "name": "Catalpa bignonioides, Texas Big Tree Registry TreeID 760",
+   "species": "Catalpa bignonioides",
+   "location": {
+    "latitude": 32.82,
+    "longitude": -96.70611111
+   },
+   "sources": [
+    "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
+   ],
+   "why_blocked": "PRIVATE LAND. The Texas Big Tree Registry's PublicOrPrivate flag is 0 on this tree, and the flag is not the undocumented mystery an earlier pass took it for: across all 660 swept trees, flag 1 belongs to Big Bend and Guadalupe Mountains National Parks, Sam Houston National Forest, state natural areas and TxDOT districts, while flag 0 belongs to Big Tree Ranch, X-Arrow Ranch, Little Sandy Hunting & Fishing Club and similar. It means what it says. The registry also sets Display 0 on almost all of them, so it withholds these locations from its own public map, and hard rule 10 is absolute about not undoing that: the coordinates only reached us because the backend returns what the front end hides. Never ship unless a source shows the site is genuinely open to visitors."
+  },
+  {
+   "name": "Fraxinus berlandieriana, Texas Big Tree Registry TreeID 675",
+   "species": "Fraxinus berlandieriana",
+   "location": {
+    "latitude": 32.84913889,
+    "longitude": -96.70741667
+   },
+   "sources": [
+    "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
+   ],
+   "why_blocked": "PRIVATE LAND. The Texas Big Tree Registry's PublicOrPrivate flag is 0 on this tree, and the flag is not the undocumented mystery an earlier pass took it for: across all 660 swept trees, flag 1 belongs to Big Bend and Guadalupe Mountains National Parks, Sam Houston National Forest, state natural areas and TxDOT districts, while flag 0 belongs to Big Tree Ranch, X-Arrow Ranch, Little Sandy Hunting & Fishing Club and similar. It means what it says. The registry also sets Display 0 on almost all of them, so it withholds these locations from its own public map, and hard rule 10 is absolute about not undoing that: the coordinates only reached us because the backend returns what the front end hides. Never ship unless a source shows the site is genuinely open to visitors."
+  },
+  {
+   "name": "Ulmus americana, Texas Big Tree Registry TreeID 1096",
+   "species": "Ulmus americana",
+   "location": {
+    "latitude": 32.87258333,
+    "longitude": -96.84769444
+   },
+   "sources": [
+    "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
+   ],
+   "why_blocked": "PRIVATE LAND. The Texas Big Tree Registry's PublicOrPrivate flag is 0 on this tree, and the flag is not the undocumented mystery an earlier pass took it for: across all 660 swept trees, flag 1 belongs to Big Bend and Guadalupe Mountains National Parks, Sam Houston National Forest, state natural areas and TxDOT districts, while flag 0 belongs to Big Tree Ranch, X-Arrow Ranch, Little Sandy Hunting & Fishing Club and similar. It means what it says. The registry also sets Display 0 on almost all of them, so it withholds these locations from its own public map, and hard rule 10 is absolute about not undoing that: the coordinates only reached us because the backend returns what the front end hides. Never ship unless a source shows the site is genuinely open to visitors."
+  },
+  {
+   "name": "Vitex agnus-castus, Texas Big Tree Registry TreeID 285",
+   "species": "Vitex agnus-castus",
+   "location": {
+    "latitude": 32.58277778,
+    "longitude": -96.74916667
+   },
+   "sources": [
+    "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
+   ],
+   "why_blocked": "PRIVATE LAND. The Texas Big Tree Registry's PublicOrPrivate flag is 0 on this tree, and the flag is not the undocumented mystery an earlier pass took it for: across all 660 swept trees, flag 1 belongs to Big Bend and Guadalupe Mountains National Parks, Sam Houston National Forest, state natural areas and TxDOT districts, while flag 0 belongs to Big Tree Ranch, X-Arrow Ranch, Little Sandy Hunting & Fishing Club and similar. It means what it says. The registry also sets Display 0 on almost all of them, so it withholds these locations from its own public map, and hard rule 10 is absolute about not undoing that: the coordinates only reached us because the backend returns what the front end hides. Never ship unless a source shows the site is genuinely open to visitors."
+  },
+  {
+   "name": "Ulmus americana, Texas Big Tree Registry TreeID 937",
+   "species": "Ulmus americana",
+   "location": {
+    "latitude": 32.87583333,
+    "longitude": -97.12869444
+   },
+   "sources": [
+    "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
+   ],
+   "why_blocked": "PRIVATE LAND. The Texas Big Tree Registry's PublicOrPrivate flag is 0 on this tree, and the flag is not the undocumented mystery an earlier pass took it for: across all 660 swept trees, flag 1 belongs to Big Bend and Guadalupe Mountains National Parks, Sam Houston National Forest, state natural areas and TxDOT districts, while flag 0 belongs to Big Tree Ranch, X-Arrow Ranch, Little Sandy Hunting & Fishing Club and similar. It means what it says. The registry also sets Display 0 on almost all of them, so it withholds these locations from its own public map, and hard rule 10 is absolute about not undoing that: the coordinates only reached us because the backend returns what the front end hides. Never ship unless a source shows the site is genuinely open to visitors."
+  },
+  {
+   "name": "Pistacia chinensis, Texas Big Tree Registry TreeID 883",
+   "species": "Pistacia chinensis",
+   "location": {
+    "latitude": 32.93372222,
+    "longitude": -96.45466667
+   },
+   "sources": [
+    "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
+   ],
+   "why_blocked": "PRIVATE LAND. The Texas Big Tree Registry's PublicOrPrivate flag is 0 on this tree, and the flag is not the undocumented mystery an earlier pass took it for: across all 660 swept trees, flag 1 belongs to Big Bend and Guadalupe Mountains National Parks, Sam Houston National Forest, state natural areas and TxDOT districts, while flag 0 belongs to Big Tree Ranch, X-Arrow Ranch, Little Sandy Hunting & Fishing Club and similar. It means what it says. The registry also sets Display 0 on almost all of them, so it withholds these locations from its own public map, and hard rule 10 is absolute about not undoing that: the coordinates only reached us because the backend returns what the front end hides. Never ship unless a source shows the site is genuinely open to visitors."
+  },
+  {
+   "name": "Pinus elliottii var. elliottii, Texas Big Tree Registry TreeID 1093",
+   "species": "Pinus elliottii var. elliottii",
+   "location": {
+    "latitude": 32.91347222,
+    "longitude": -97.15883333
+   },
+   "sources": [
+    "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
+   ],
+   "why_blocked": "PRIVATE LAND. The Texas Big Tree Registry's PublicOrPrivate flag is 0 on this tree, and the flag is not the undocumented mystery an earlier pass took it for: across all 660 swept trees, flag 1 belongs to Big Bend and Guadalupe Mountains National Parks, Sam Houston National Forest, state natural areas and TxDOT districts, while flag 0 belongs to Big Tree Ranch, X-Arrow Ranch, Little Sandy Hunting & Fishing Club and similar. It means what it says. The registry also sets Display 0 on almost all of them, so it withholds these locations from its own public map, and hard rule 10 is absolute about not undoing that: the coordinates only reached us because the backend returns what the front end hides. Never ship unless a source shows the site is genuinely open to visitors."
   }
  ],
  "notes": [
   {
    "date": "2026-08-20",
    "note": "Swept from the corrected Texas Big Tree Registry pull (scripts/texas_big_trees.py). Circumference is INCHES: an earlier Houston pass read it as centimetres and concluded the state was thin. Coordinates decide which city a tree belongs to, never CountyName."
+  },
+  {
+   "date": "2026-08-20",
+   "note": "PublicOrPrivate decoded from the data itself: flag 1 is national parks, national forests, state natural areas and TxDOT; flag 0 is ranches and hunting clubs. Flag 0 trees moved to blocked under hard rule 10, since the registry also hides them from its own public map and their coordinates only reached us because the backend returns what the front end withholds. OrganizationName names the owner and is the field a verify pass should lead with."
   }
  ]
 }

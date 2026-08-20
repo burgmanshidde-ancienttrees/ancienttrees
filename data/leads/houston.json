@@ -2,35 +2,9 @@
  "city": "Houston",
  "leads": [
   {
-   "name": "Lagerstroemia indica, Texas Big Tree Registry TreeID 990",
-   "species": "Lagerstroemia indica",
-   "reason": "State champion or co-champion. Circumference 110 in (2.79 m), spread 53.0 ft, condition code 2, county tag Harris, 4.8 km from the centre of Houston. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable.",
-   "location": {
-    "latitude": 29.72708333,
-    "longitude": -95.40119444
-   },
-   "sources": [
-    "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
-   ],
-   "girth_cm": 279
-  },
-  {
-   "name": "Acer rubrum, Texas Big Tree Registry TreeID 2353",
-   "species": "Acer rubrum",
-   "reason": "State champion or co-champion. Circumference 121 in (3.07 m), spread 55.0 ft, condition code 2, county tag Harris, 6.6 km from the centre of Houston. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable.",
-   "location": {
-    "latitude": 29.74369722,
-    "longitude": -95.43582222
-   },
-   "sources": [
-    "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
-   ],
-   "girth_cm": 307
-  },
-  {
    "name": "Quercus virginiana, Texas Big Tree Registry TreeID 43463",
    "species": "Quercus virginiana",
-   "reason": "State champion or co-champion. Circumference 246 in (6.25 m), spread 131.0 ft, condition code 2, county tag Harris, 18.1 km from the centre of Houston. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable.",
+   "reason": "State champion or co-champion. Circumference 246 in (6.25 m), spread 131.0 ft, condition code 2, county tag Harris, 18.1 km from the centre of Houston. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable. OWNER per the registry: John Knox Presbyterian Church. That field is what actually answers hard rule 10, better than any flag: a city parks department, a university campus, a county precinct or a churchyard is a yes, and the access line still has to say honestly what a visitor meets.",
    "location": {
     "latitude": 29.81711111,
     "longitude": -95.5456
@@ -38,12 +12,13 @@
    "sources": [
     "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
    ],
-   "girth_cm": 625
+   "girth_cm": 625,
+   "owner": "John Knox Presbyterian Church"
   },
   {
    "name": "Ulmus alata, Texas Big Tree Registry TreeID 2341",
    "species": "Ulmus alata",
-   "reason": "State champion or co-champion. Circumference 110 in (2.79 m), spread 80.0 ft, condition code 2, county tag Harris, 30.7 km from the centre of Houston. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable.",
+   "reason": "State champion or co-champion. Circumference 110 in (2.79 m), spread 80.0 ft, condition code 2, county tag Harris, 30.7 km from the centre of Houston. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable. OWNER per the registry: Harris County Precinct 4. That field is what actually answers hard rule 10, better than any flag: a city parks department, a university campus, a county precinct or a churchyard is a yes, and the access line still has to say honestly what a visitor meets.",
    "location": {
     "latitude": 30.03205556,
     "longitude": -95.31286111
@@ -51,12 +26,13 @@
    "sources": [
     "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
    ],
-   "girth_cm": 279
+   "girth_cm": 279,
+   "owner": "Harris County Precinct 4"
   },
   {
    "name": "Carya illinoinensis, Texas Big Tree Registry TreeID 1280",
    "species": "Carya illinoinensis",
-   "reason": "State champion or co-champion. Circumference 184 in (4.67 m), spread 81.0 ft, condition code 2, county tag Fort Bend, 32.1 km from the centre of Houston. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable.",
+   "reason": "State champion or co-champion. Circumference 184 in (4.67 m), spread 81.0 ft, condition code 2, county tag Fort Bend, 32.1 km from the centre of Houston. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable. OWNER per the registry: City of Sugar Land. That field is what actually answers hard rule 10, better than any flag: a city parks department, a university campus, a county precinct or a churchyard is a yes, and the access line still has to say honestly what a visitor meets.",
    "location": {
     "latitude": 29.63444444,
     "longitude": -95.66916667
@@ -64,38 +40,13 @@
    "sources": [
     "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
    ],
-   "girth_cm": 467
-  },
-  {
-   "name": "Quercus virginiana, Texas Big Tree Registry TreeID 43465",
-   "species": "Quercus virginiana",
-   "reason": "State champion or co-champion. Circumference 247 in (6.27 m), spread 121.0 ft, condition code 2, county tag Fort Bend, 34.0 km from the centre of Houston. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable.",
-   "location": {
-    "latitude": 29.620225,
-    "longitude": -95.68226389
-   },
-   "sources": [
-    "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
-   ],
-   "girth_cm": 627
-  },
-  {
-   "name": "Quercus virginiana, Texas Big Tree Registry TreeID 1174",
-   "species": "Quercus virginiana",
-   "reason": "State champion or co-champion. Circumference 256 in (6.50 m), spread 94.0 ft, condition code 2, county tag Fort Bend, 34.0 km from the centre of Houston. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable.",
-   "location": {
-    "latitude": 29.62030556,
-    "longitude": -95.68261111
-   },
-   "sources": [
-    "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
-   ],
-   "girth_cm": 650
+   "girth_cm": 467,
+   "owner": "City of Sugar Land"
   },
   {
    "name": "Juniperus virginiana var. virginiana, Texas Big Tree Registry TreeID 1260",
    "species": "Juniperus virginiana var. virginiana",
-   "reason": "State champion or co-champion. Circumference 148 in (3.76 m), spread 56.0 ft, condition code 3, county tag Harris, 40.0 km from the centre of Houston. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable.",
+   "reason": "State champion or co-champion. Circumference 148 in (3.76 m), spread 56.0 ft, condition code 3, county tag Harris, 40.0 km from the centre of Houston. ONE source only: the registry. Needs a second independent source, a check that it is alive, the exact spot, and a hard rule 10 access check, since the registry's PublicOrPrivate flag is undocumented and its county tags are unreliable. OWNER per the registry: Inverness Houston POA, INC. That field is what actually answers hard rule 10, better than any flag: a city parks department, a university campus, a county precinct or a churchyard is a yes, and the access line still has to say honestly what a visitor meets.",
    "location": {
     "latitude": 30.07780556,
     "longitude": -95.56405556
@@ -103,14 +54,68 @@
    "sources": [
     "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
    ],
-   "girth_cm": 376
+   "girth_cm": 376,
+   "owner": "Inverness Houston POA, INC"
   }
  ],
- "blocked": [],
+ "blocked": [
+  {
+   "name": "Lagerstroemia indica, Texas Big Tree Registry TreeID 990",
+   "species": "Lagerstroemia indica",
+   "location": {
+    "latitude": 29.72708333,
+    "longitude": -95.40119444
+   },
+   "sources": [
+    "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
+   ],
+   "why_blocked": "PRIVATE LAND. The Texas Big Tree Registry's PublicOrPrivate flag is 0 on this tree, and the flag is not the undocumented mystery an earlier pass took it for: across all 660 swept trees, flag 1 belongs to Big Bend and Guadalupe Mountains National Parks, Sam Houston National Forest, state natural areas and TxDOT districts, while flag 0 belongs to Big Tree Ranch, X-Arrow Ranch, Little Sandy Hunting & Fishing Club and similar. It means what it says. The registry also sets Display 0 on almost all of them, so it withholds these locations from its own public map, and hard rule 10 is absolute about not undoing that: the coordinates only reached us because the backend returns what the front end hides. Never ship unless a source shows the site is genuinely open to visitors."
+  },
+  {
+   "name": "Acer rubrum, Texas Big Tree Registry TreeID 2353",
+   "species": "Acer rubrum",
+   "location": {
+    "latitude": 29.74369722,
+    "longitude": -95.43582222
+   },
+   "sources": [
+    "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
+   ],
+   "why_blocked": "PRIVATE LAND. The Texas Big Tree Registry's PublicOrPrivate flag is 0 on this tree, and the flag is not the undocumented mystery an earlier pass took it for: across all 660 swept trees, flag 1 belongs to Big Bend and Guadalupe Mountains National Parks, Sam Houston National Forest, state natural areas and TxDOT districts, while flag 0 belongs to Big Tree Ranch, X-Arrow Ranch, Little Sandy Hunting & Fishing Club and similar. It means what it says. The registry also sets Display 0 on almost all of them, so it withholds these locations from its own public map, and hard rule 10 is absolute about not undoing that: the coordinates only reached us because the backend returns what the front end hides. Never ship unless a source shows the site is genuinely open to visitors."
+  },
+  {
+   "name": "Quercus virginiana, Texas Big Tree Registry TreeID 43465",
+   "species": "Quercus virginiana",
+   "location": {
+    "latitude": 29.620225,
+    "longitude": -95.68226389
+   },
+   "sources": [
+    "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
+   ],
+   "why_blocked": "PRIVATE LAND. The Texas Big Tree Registry's PublicOrPrivate flag is 0 on this tree, and the flag is not the undocumented mystery an earlier pass took it for: across all 660 swept trees, flag 1 belongs to Big Bend and Guadalupe Mountains National Parks, Sam Houston National Forest, state natural areas and TxDOT districts, while flag 0 belongs to Big Tree Ranch, X-Arrow Ranch, Little Sandy Hunting & Fishing Club and similar. It means what it says. The registry also sets Display 0 on almost all of them, so it withholds these locations from its own public map, and hard rule 10 is absolute about not undoing that: the coordinates only reached us because the backend returns what the front end hides. Never ship unless a source shows the site is genuinely open to visitors."
+  },
+  {
+   "name": "Quercus virginiana, Texas Big Tree Registry TreeID 1174",
+   "species": "Quercus virginiana",
+   "location": {
+    "latitude": 29.62030556,
+    "longitude": -95.68261111
+   },
+   "sources": [
+    "Texas Big Tree Registry, Texas A&M Forest Service (texasforestinfo.tamu.edu/BigTreeRegistry). Non-commercial licence: usable as a lead and verification source, never imported. See OPEN_DATA_SURVEY.md."
+   ],
+   "why_blocked": "PRIVATE LAND. The Texas Big Tree Registry's PublicOrPrivate flag is 0 on this tree, and the flag is not the undocumented mystery an earlier pass took it for: across all 660 swept trees, flag 1 belongs to Big Bend and Guadalupe Mountains National Parks, Sam Houston National Forest, state natural areas and TxDOT districts, while flag 0 belongs to Big Tree Ranch, X-Arrow Ranch, Little Sandy Hunting & Fishing Club and similar. It means what it says. The registry also sets Display 0 on almost all of them, so it withholds these locations from its own public map, and hard rule 10 is absolute about not undoing that: the coordinates only reached us because the backend returns what the front end hides. Never ship unless a source shows the site is genuinely open to visitors."
+  }
+ ],
  "notes": [
   {
    "date": "2026-08-20",
    "note": "Swept from the corrected Texas Big Tree Registry pull (scripts/texas_big_trees.py). Circumference is INCHES: an earlier Houston pass read it as centimetres and concluded the state was thin. Coordinates decide which city a tree belongs to, never CountyName."
+  },
+  {
+   "date": "2026-08-20",
+   "note": "PublicOrPrivate decoded from the data itself: flag 1 is national parks, national forests, state natural areas and TxDOT; flag 0 is ranches and hunting clubs. Flag 0 trees moved to blocked under hard rule 10, since the registry also hides them from its own public map and their coordinates only reached us because the backend returns what the front end withholds. OrganizationName names the owner and is the field a verify pass should lead with."
   }
  ]
 }
