@@ -1,0 +1,159 @@
+{
+ "city": "Houston",
+ "country": "United States",
+ "status": "needs_curation",
+ "intro": "Houston does not do walks, and neither does this page. The city sprawls across seventeen hundred square kilometres and its oldest trees are scattered accordingly: a live oak with a forty metre crown on a church lawn in Spring Branch, the tallest winged elm in Texas on a creek trail in the far north, a pecan on the edge of Sugar Land with a footpath named after it, and a live oak in Klein that a gas station nearly took down until schoolchildren wrote letters. Four trees, four drives. Each one is worth the parking.",
+ "meta_description": "Four remarkable trees around Houston: a live oak with a 40 metre crown, the tallest winged elm in Texas, and the oak schoolchildren saved.",
+ "question_meta": "Houston's oldest tree is the Kissing Tree at Klein, a live oak that marks an 1848 homestead. Where it stands, and three more worth the drive.",
+ "question_answer": "The oldest tree around Houston is almost certainly the Kissing Tree at Klein, a live oak that Strack family records place at the site of Herman Strack's homestead and blacksmith shop, settled in 1848, and which was already the meeting tree for the settlement then. Nobody has put a firm number of years on it. The largest is a different tree: a live oak on the lawn of John Knox Presbyterian Church in Spring Branch, measured in March 2026 at 625 centimetres round and twenty three metres tall, with a crown spreading forty metres. Neither is in central Houston, because central Houston does not have a documented old tree of that order.",
+ "question_context": "Measurements here come from the Texas Big Tree Registry, kept by the Texas A&M Forest Service, which records circumference, height and crown spread with the date each was taken. That is unusually good for a tree register, which is why the girths on this page are exact and the ages are not: the registry has no age field at all, and nobody has cored these trees. Where a year appears it comes from a settlement date or a plaque rather than from the wood. The registry publishes in inches and feet, and the figures here are converted. It also marks which of its trees stand on public land and which do not, and withholds the positions of the private ones, so several large Houston trees are deliberately absent from this page. The one thing the registry is good at, and most registers are not, is telling you a tree was alive recently: three of these four were measured in the last twelve months.",
+ "hero_tree_id": "hou_001",
+ "oldest_tree_id": "hou_003",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Houston?",
+   "a": "Probably the Kissing Tree at Klein, north of the city, which marks the site of Herman Strack's 1848 homestead and was the settlement's gathering tree. No firm age has been published for it. The biggest is the live oak at John Knox Presbyterian Church in Spring Branch, 625 centimetres round when it was measured in March 2026."
+  },
+  {
+   "q": "Are any of these in central Houston?",
+   "a": "No, and that is the honest answer rather than an omission. The nearest is the Spring Branch live oak, about eighteen kilometres west of downtown. Central Houston has large trees but no documented veteran of this order on ground the public can reach; the two registry trees closest to downtown both stand on private land, and the registry withholds their positions."
+  },
+  {
+   "q": "How do you know these trees are still alive?",
+   "a": "Because they were measured recently and the registry records the date. The Spring Branch live oak and the Sugar Land pecan were measured in March 2026 and the winged elm in December 2025. That is a better answer than most tree registers can give, since almost none of them carry a vitality field at all."
+  },
+  {
+   "q": "Why is a tree of 279 centimetres on a list with one of 625?",
+   "a": "Because it is the state champion winged elm, and champion status is scored on trunk, height and crown together rather than girth alone. At thirty metres it is a tall tree for its species, and there is no larger winged elm recorded in Texas."
+  }
+ ],
+ "trees": [
+  {
+   "id": "hou_001",
+   "name": "The John Knox Live Oak",
+   "species": "Southern Live Oak (Quercus virginiana)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "John Knox Presbyterian Church, 2525 Gessner Road",
+    "latitude": 29.81711,
+    "longitude": -95.5456,
+    "neighbourhood": "Spring Branch"
+   },
+   "story": "The crown is the thing. Forty metres across, on a trunk 625 centimetres round and a tree only twenty three metres tall, which is the live oak habit taken to its conclusion: this species does not race upward, it spreads until the branches come back down to meet you. The Texas A&M Forest Service measured it in March 2026, so those are current numbers rather than remembered ones.\n\nIt stands on the front lawn of a Presbyterian church on Gessner Road, in a part of Spring Branch that was farmland when the congregation broke ground in 1961. The church's own history mentions picnics held under the big trees at the front of the property, which is roughly what a tree this shape is for.\n\nNo age has been published. Live oaks are difficult to date without coring and nobody appears to have done it. What can be said is that a live oak reaching six metres of girth in a climate like this one has had a long time and a lot of water, and that it was clearly here before the church was.\n\nThe grounds are open, and a churchyard has never been a bad place to stand and look up.",
+   "verified_sources": [
+    "https://texasforestinfo.tamu.edu/BigTreeRegistry (Texas Big Tree Registry, Texas A&M Forest Service, measured March 2026)",
+    "https://www.johnknoxhouston.org/history-of-john-knox.html"
+   ],
+   "access": "Free. Church grounds, open. The tree stands on the front lawn, visible from Gessner Road.",
+   "transport": "About 18 km west of downtown Houston. Drive; there is parking on site.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "A low, enormously wide live oak on an open church lawn, far broader than it is tall, with limbs reaching almost to the grass.",
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "hou_002",
+   "name": "The Old Pecan Tree",
+   "species": "Pecan (Carya illinoinensis)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Old Pecan Tree Trail, Sugar Land",
+    "latitude": 29.63444,
+    "longitude": -95.66917,
+    "neighbourhood": "Sugar Land, Fort Bend County"
+   },
+   "story": "There is a footpath in Sugar Land called Old Pecan Tree Trail, and it is named after exactly what you would hope. The tree is a pecan of 467 centimetres round and twenty eight metres tall, with a crown spreading twenty five metres, measured by the Texas A&M Forest Service in March 2026. Trail guides rank it among the twenty five largest trees in Texas, which is scored on trunk, height and crown together.\n\nPecan is the state tree, and it is one of the few state trees anywhere chosen for something other than looks: it feeds people. A tree this size drops a serious crop, and in a good year the ground beneath it is worth walking slowly across in October.\n\nThe trail is short, well under a kilometre, and the tree is the reason it exists. That is the useful thing about a path named for a tree: nobody has to explain where to go.\n\nNo age has been recorded. Pecans of this girth in the Brazos bottomlands are generally reckoned in centuries rather than decades, but nobody has counted the rings and this page is not going to guess.",
+   "verified_sources": [
+    "https://texasforestinfo.tamu.edu/BigTreeRegistry (Texas Big Tree Registry, Texas A&M Forest Service, measured March 2026)",
+    "https://www.trailforks.com/trails/old-pecan-tree/"
+   ],
+   "access": "Free. Public hiking trail, open daylight hours.",
+   "transport": "About 32 km southwest of downtown Houston, in Sugar Land. Drive.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "A tall, straight-trunked pecan standing well clear of the trees around it, on the short trail that carries its name.",
+   "curation_status": "ai_generated",
+   "location_precision": "confirmed",
+   "best_time": {
+    "months": [
+     10
+    ],
+    "label": "October, when the nuts come down",
+    "kind": "fruit"
+   }
+  },
+  {
+   "id": "hou_003",
+   "name": "The Kissing Tree",
+   "species": "Southern Live Oak (Quercus virginiana)",
+   "age_estimate": "already the settlement's meeting tree in 1848",
+   "age_min": 180,
+   "age_max": 300,
+   "location": {
+    "address": "Behind the Circle K at Stuebner Airline Road, Klein",
+    "latitude": 30.0316,
+    "longitude": -95.502,
+    "neighbourhood": "Klein, Harris County"
+   },
+   "story": "Herman Strack landed at Galveston in 1848, a blacksmith out of Prussia and the first of five brothers to settle north Harris County. Family records put his homestead and forge at this tree. It got its name from what happened under it afterwards: couples met here, and a good number of proposals were made in its shade.\n\nEverything else the Stracks built is gone. When the family restaurant closed in 2014 a developer bought the land for a Circle K, and the tree stood where the forecourt entrance needed to be. That was very nearly the end of it. Students at Klein Oaks High School ran a letter-writing campaign, Circle K eventually pledged to keep the tree, and three years later the Texas A&M Forest Service made it a Famous Tree of Texas.\n\nSo it is a live oak hung with Spanish moss on a patch of grass behind a filling station, and it is the last physical trace of a settlement that gave the whole district its name. Nobody has dated it. It was already the tree everyone met at in 1848, which puts a floor under the number if not a ceiling.",
+   "verified_sources": [
+    "https://www.houstonchronicle.com/life/article/A-living-legend-Klein-s-Kissing-Tree-the-15273233.php",
+    "https://famoustreesoftexas.tfs.tamu.edu/ (Texas A&M Forest Service, Famous Trees of Texas)",
+    "https://www.hmdb.org/m.asp?m=136070"
+   ],
+   "access": "Free. Public access, on open ground behind a filling station.",
+   "transport": "About 33 km north of downtown Houston, at Klein. Drive.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "A broad live oak draped in Spanish moss, standing alone on a grass patch behind a Circle K forecourt.",
+   "curation_status": "ai_generated",
+   "location_precision": "approximate"
+  },
+  {
+   "id": "hou_004",
+   "name": "The Spring Creek Winged Elm",
+   "species": "Winged Elm (Ulmus alata)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Spring Creek Greenway Trail, Harris County Precinct 4",
+    "latitude": 30.03206,
+    "longitude": -95.31286,
+    "neighbourhood": "Spring Creek Greenway"
+   },
+   "story": "This is the largest winged elm recorded in Texas, and it is not a large tree. The trunk is 279 centimetres round, which for the species is remarkable and for this page is modest. Champion status is scored on trunk, height and crown added together, and where this tree wins is height: thirty metres, which is tall for an elm that usually tops out well short of that, with a twenty four metre crown above it.\n\nWinged elm gets its name from the corky ridges that run down either side of the younger twigs, wide enough to look deliberate. On a tree this old you will find them out at the ends of the branches rather than on the trunk, so it is worth picking up a fallen twig.\n\nIt stands on the Spring Creek Greenway, a long ribbon of bottomland forest that Harris County has been stitching together along the creek for years, and which is one of the largest urban forested corridors in the country. The Forest Service measured the tree in December 2025.\n\nNo age is recorded. Winged elm is not a long-lived species, so this one is old for its kind rather than old in the way an oak is old.",
+   "verified_sources": [
+    "https://texasforestinfo.tamu.edu/BigTreeRegistry (Texas Big Tree Registry, Texas A&M Forest Service, state champion, measured December 2025)"
+   ],
+   "access": "Free. Public county greenway trail, open daylight hours.",
+   "transport": "About 31 km north of downtown Houston. Drive to a greenway trailhead.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "A notably tall, slender elm in bottomland forest beside Spring Creek, with corky ridges running along the younger twigs.",
+   "curation_status": "flagged",
+   "location_precision": "approximate"
+  }
+ ]
+}
