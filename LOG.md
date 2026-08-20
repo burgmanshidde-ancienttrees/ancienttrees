@@ -38,6 +38,52 @@ Build clean throughout (last full build 1993 pages), qa.py clean (one pre-existi
 
 FOR HIDDE: nothing blocks. Noticed you're live in a concurrent session on the iOS app while this was running (pulled and rebased around your pushes cleanly, no conflicts).
 
+## 2026-08-20 (session) - Texas was written off this morning over a unit error, and it holds three cities
+
+A scouting pass earlier today found the Texas Big Tree Registry's backend,
+looped all 352 species by hand to answer one question about Houston, kept the
+18 Harris County rows, threw the rest away and concluded the yield was thin
+because most trees measured "70-150cm". They are 70 to 150 INCHES.
+
+The raw data settles it without needing a source. The standout live oak carries
+`Spread: 131`, and 131 feet is a forty metre crown on a live oak while 131
+metres is impossible. So that tree is 6.25 metres round rather than 2.46, and a
+whole county was misjudged by a factor of 2.54. It is the ICNF trap pointing the
+other way, the second time a unit has done this to us, and the conversion now
+lives in code instead of in a reading.
+
+**`scripts/texas_big_trees.py`** sweeps the state once (660 trees, kept) and
+reads it per city with the distance filter and the inch conversion built in, so
+nobody loops 352 species by hand again. `CountyName` still cannot be trusted:
+rows tagged Harris carry Panhandle coordinates 800 km away.
+
+**Then a second correction, and this one cut the supply rather than raising it.**
+`PublicOrPrivate` was recorded as an undocumented flag. The data documents it:
+flag 1 is Big Bend and Guadalupe Mountains National Parks, Sam Houston National
+Forest, state natural areas and TxDOT; flag 0 is Big Tree Ranch, X-Arrow Ranch
+and Little Sandy Hunting & Fishing Club. The registry also sets `Display: 0` on
+almost all of the latter, so it withholds those locations from its own public
+map and their coordinates only reached us because the backend returns what the
+front end hides. Hard rule 10 is absolute about not undoing that, so 19 of the
+33 leads moved straight to blocked rather than waiting for an access check
+somebody might pass later.
+
+**What is banked, on public ground, with the owner named on every entry:**
+
+| city | rank | ready to verify | the owners |
+|---|---|---|---|
+| Austin | 182 | 4, exactly the floor | City of Austin PARD (the 4.29 m bastard oak, 700 m from the centre), UT Austin, Sunset Valley, Pflugerville |
+| Houston | 36 | 4 | John Knox Presbyterian Church holds the 6.25 m live oak, then Harris County Precinct 4, City of Sugar Land, and an HOA still to check |
+| Dallas | 204 | 8 to deepen with | already live at 8; Grapevine and Coppell are really Fort Worth's |
+
+A churchyard and a university campus are both explicit yeses under hard rule 10,
+so Houston and Austin can each reach four on public ground.
+
+**What is left is a verify pass and nothing more:** a second independent source
+per tree, a check that it is alive, and an honest access line. The coordinates
+come from the registry and are probably sound. Claims are released, so a night
+run can take this straight off the shelf.
+
 ## 2026-08-20 (session) - The night runs were handing back an hour and three quarters, and now they do not
 
 The runs were not being killed. That was the whole finding, and it took
