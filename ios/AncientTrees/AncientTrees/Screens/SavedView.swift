@@ -8,6 +8,10 @@ struct SavedView: View {
     let catalogue: Catalogue
     let origin: (lat: Double, lng: Double)
     @Environment(Saved.self) private var saved
+    @Environment(Account.self) private var account
+    @State private var signingIn = false
+
+    private let brand = Color(red: 0.20, green: 0.35, blue: 0.20)
 
     private var visited: [Tree] {
         saved.entries.values.filter { $0.visitedAt != nil }
@@ -25,6 +29,8 @@ struct SavedView: View {
             LazyVStack(spacing: 14) {
                 if visited.isEmpty && wishlist.isEmpty { empty }
 
+                if !account.isSignedIn && !(visited.isEmpty && wishlist.isEmpty) { backupBar }
+
                 if !wishlist.isEmpty {
                     header("Want to see", wishlist.count)
                     ForEach(wishlist) { card($0) }
@@ -33,12 +39,42 @@ struct SavedView: View {
                     header("Stood in front of", visited.count)
                     ForEach(visited) { card($0) }
                 }
-                Color.clear.frame(height: 40)
+                Color.clear.frame(height: 96)   // clear of the floating tab bar
             }
             .padding(.horizontal, 16).padding(.top, 8)
         }
         .background(Color(.systemGroupedBackground))
         .navigationTitle("Saved")
+        .sheet(isPresented: $signingIn) {
+            SignInSheet(reason: .keepCollection(saved.savedCount), localCount: saved.savedCount)
+                .environment(account)
+                .environment(saved)
+        }
+    }
+
+    /// The passive half of the account ask, and probably the one that does most
+    /// of the work. It interrupts nobody, it states a fact rather than a pitch,
+    /// and it sits on the screen people open when they already care about what
+    /// is on it. A prompt has to be timed; this only has to be true.
+    private var backupBar: some View {
+        Button { signingIn = true } label: {
+            HStack(spacing: 12) {
+                Image(systemName: "exclamationmark.icloud")
+                    .font(.title3).foregroundStyle(brand)
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Kept on this phone only")
+                        .font(.subheadline.weight(.semibold))
+                    Text("Sign in and they follow you to a new phone and to the website.")
+                        .font(.caption).foregroundStyle(.secondary)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                Spacer(minLength: 4)
+                Image(systemName: "chevron.right").font(.caption).foregroundStyle(.tertiary)
+            }
+            .padding(14)
+            .background(Color(.secondarySystemBackground), in: .rect(cornerRadius: 12))
+        }
+        .buttonStyle(.plain)
     }
 
     private func header(_ t: String, _ n: Int) -> some View {
