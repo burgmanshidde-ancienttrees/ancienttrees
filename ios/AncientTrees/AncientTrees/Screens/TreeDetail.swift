@@ -26,6 +26,7 @@ struct TreeDetail: View {
                     if tree.precision.needsWarning { approximateNote }
                     story
                     accessBlock
+                    if tree.photo == nil { offerPhoto }
                     Button { reporting = true } label: {
                         Label("Something here is wrong", systemImage: "exclamationmark.bubble")
                             .font(.footnote)
@@ -152,6 +153,30 @@ struct TreeDetail: View {
         }
         .font(.footnote)
         .foregroundStyle(.secondary)
+    }
+
+    /// The highest-intent moment there is for this feature: you are on a tree
+    /// with no photograph, and 1077 of our 1435 trees are in that state. Asking
+    /// here beats a row in settings, and it measures demand for the feature
+    /// exactly where somebody would use it.
+    private var offerPhoto: some View {
+        LockedRow(feature: .photoUpload) {
+            HStack(alignment: .top, spacing: 12) {
+                SpeciesMark(species: tree.species,
+                            color: Color(red: 0.20, green: 0.35, blue: 0.20).opacity(0.55))
+                    .frame(width: 34, height: 34)
+                VStack(alignment: .leading, spacing: 3) {
+                    Text("Nobody has photographed this one")
+                        .font(.subheadline.weight(.semibold))
+                    Text("If you are standing in front of it, yours could be the picture on this page.")
+                        .font(.caption).foregroundStyle(.secondary)
+                }
+            }
+            .padding(.vertical, 4)
+        }
+        .padding(14)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Color(.secondarySystemBackground), in: .rect(cornerRadius: 12))
     }
 
     private var actionBar: some View {
