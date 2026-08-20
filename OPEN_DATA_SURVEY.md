@@ -42,7 +42,7 @@ habitat, characteristics, last updated 2021), which may or may not carry
 coordinates; not checked this pass. Prefer the CHA spatial API first since it
 is the authoritative designating body's own coordinates.
 
-## Texas Big Tree Registry (Houston #36): non-commercial licence, real API found, thin Harris County yield (scouted 2026-08-20)
+## Texas Big Tree Registry: non-commercial licence, real API, and a good yield once the units are read right (scouted 2026-08-20, corrected the same day)
 
 Found while `scout_next.py --target` pointed at Houston (#36, one of Hidde's
 17 named from-zero cities). `texasforestinfo.tamu.edu/BigTreeRegistry` is a
@@ -64,21 +64,37 @@ outright regardless of how good the data is. Ruled the same as Nevada below:
 **usable as a verification/lead source for hand-verified entries only**, never
 imported to `data/registers/`.
 
-**The Harris County yield itself is thin.** Looped all 352 species
-(`data/research/houston-texas-big-tree-harris.json`, 18 rows, kept as a
-research file rather than a leads file since none of this is verified): most
-are modest ornamentals (crapemyrtle, yaupon holly, winged elm) with
-circumferences in the 70-150cm range, well below what this site usually
-ships. The one standout is a 246cm live oak (`Quercus virginiana`, TreeID
-43463, 29.817,-95.546, `PublicOrPrivate: 1`). **A real register pitfall
-caught in the raw data**: 4 of the 18 rows tagged `CountyName: "Harris"`
-carry coordinates in the Texas Panhandle near Amarillo (36.4,-102.5), roughly
-800km from Houston, so `CountyName` cannot be trusted without a coordinate
-sanity check, exactly the kind of register fault CLAUDE.md's "what registers
-get wrong" section warns about. A from-zero web research pass on Houston (per
-rule 1d, explicitly authorised for this city) should treat this file as one
-weak input among several, not a register to build the city from; the live
-oak is worth chasing, the rest is marginal.
+**CORRECTED 2026-08-20, same day, by a second look: the yield is NOT thin, and
+the paragraph that said so had a unit error.** The registry publishes
+imperial. `Circumference` is INCHES and `Spread` is FEET, which the raw data
+settles on its own: the live oak below carries `Spread: 131`, and 131 feet is a
+forty metre crown on a live oak while 131 metres is impossible. So the standout
+tree is 246 inches, which is **6.25 metres round**, not the 2.46 m the first
+pass recorded, and the "modest ornamentals in the 70-150cm range" were really
+1.8 to 3.8 metres. That is the ICNF trap pointing the other way (metres read as
+centimetres there, inches read as centimetres here), and it is why every
+register import gets a physical sanity check before anyone quotes it.
+
+**What the corrected sweep actually holds.** `scripts/texas_big_trees.py`
+exists now so nobody loops 352 species by hand again: `--fetch` sweeps the
+whole state once (660 trees, kept in `data/research/texas-big-tree-registry.json`)
+and `--near <city>` reads it with a distance filter and the inch conversion
+built in. Within 40 km, above 250 cm of girth:
+
+| city | registry trees | above 250 cm | the standout |
+|---|---|---|---|
+| Dallas | 28 | 17 | a 7.21 m catalpa, 9.8 km out; a 6.55 m black willow; two American elms at 5.4 m |
+| Austin | 15 | 10 | a 4.29 m bastard oak 700 m from the centre; a 4.88 m pecan |
+| Houston | 13 | 8 | three live oaks at 6.25, 6.27 and 6.50 m; a 4.67 m pecan |
+| Fort Worth | 20 | 11 | shares the Tarrant County cluster with Dallas |
+| San Antonio | 6 | 4 | |
+| El Paso | 3 | 2 | |
+
+Every one of those is a champion or co-champion, so the registry is one source
+and a good one. What it does not give is the second source, the access check or
+whether the tree is alive today, and `CountyName` still cannot be trusted: rows
+tagged Harris carry Panhandle coordinates 800 km away, which is why the script
+filters on distance and prints the county only as a label.
 
 ## Nevada Big Tree Register: usable as a verification/lead source, not for bulk import (scouted 2026-08-18)
 
