@@ -4,6 +4,44 @@ Measured 2026-07-21. The question changed halfway through, and so did the answer
 
 It started as "can open data get us to every city in the world", which assumed publishing hundreds of trees per city. Hidde rejected that the same day: ten per city is what makes the passport work, and scarcity is the mechanism rather than a limitation. See BACKLOG.md. So the surviving question is narrower and more useful: **can open data cut the dull half of a city run, finding candidates and fixing coordinates, so runs spend their time on stories?**
 
+## South Korea (Seoul #33): a promising national GIS API, licence unconfirmed, stalled here (scouted 2026-08-20)
+
+Found while `scout_next.py --target` pointed at Seoul (#33, no supply, no
+verdict). South Korea's Natural Monument system (천연기념물, Cultural Heritage
+Administration, 국가유산청, formerly 문화재청) designates old/giant trees
+individually alongside animals, geological formations and whole groves, which
+is exactly the semantic-filter shape this project wants rather than a bulk
+tree inventory.
+
+**The candidate source:** 국가유산청_문화재 공간 정보 ("Cultural Heritage Spatial
+Information"), a free OpenAPI (XML) plus file download on the public data
+portal (`data.go.kr/data/3070426/openapi.do`), also browsable at
+`gis-heritage.go.kr`. It covers all ~15,000 nationally and locally designated
+heritage items with coordinates, area, regulated zone and heritage-type
+classification, which would let a scout filter to Natural Monument type and
+then to tree entries within that, the same two-step filter the MASAF/regional
+split already uses in Italy.
+
+**Stalled on licence, not on existence.** The dataset page states "이용허락범위
+제한 없음" (no restriction on scope of use) and lists the data as free, and
+Korean government open data is required by the 2014 Copyright Act amendment
+(Article 24-2) to carry a 공공누리 (KOGL) type badge, of which KOGL Type 1 is
+CC-BY-equivalent. But WebFetch's summarised read of the page did not surface
+which KOGL type number is actually attached, and CLAUDE.md's register-layer
+rule requires a proving sentence naming the specific licence before import,
+not an inference from the surrounding legal framework. **Next step is a
+session with real browser rendering** (this sandbox's WebFetch tool
+summarises rather than renders, and the badge is likely an image or a
+JS-rendered element) reading the KOGL type badge directly off the dataset
+page, or fetching the OpenAPI response itself, which may carry a licence
+field in its metadata envelope.
+
+**Also found, not yet compared:** a Korea Institute of Science and Technology
+Information dataset literally named "Korean Natural Monuments" (species,
+habitat, characteristics, last updated 2021), which may or may not carry
+coordinates; not checked this pass. Prefer the CHA spatial API first since it
+is the authoritative designating body's own coordinates.
+
 ## Nevada Big Tree Register: usable as a verification/lead source, not for bulk import (scouted 2026-08-18)
 
 Found while `scout_next.py --target` pointed at Las Vegas (#22, no supply, no verdict). The Nevada Division of Forestry publishes a statewide champion-tree PDF, `forestry.nv.gov/uploads/missions/20210712_AMT_2015_Nevada_Big_Tree_Register.pdf` (2015 edition, ~300+ entries statewide, common name, scientific name, circumference/height/spread/crown/total points, nominator, county and location). WebFetch cannot read it (returns "corrupted/binary"); a plain `curl` download followed by a pure-stdlib `zlib`-stream extraction of the PDF's text objects works and needs no new dependency.
