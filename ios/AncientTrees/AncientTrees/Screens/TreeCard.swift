@@ -28,14 +28,14 @@ struct TreeCard: View {
                 if saved.isVisited(tree.id) { ticked }
             }
             VStack(alignment: .leading, spacing: 5) {
-                Text(tree.name).font(.headline).lineLimit(3)
+                Text(tree.name).font(.cardTitle).foregroundStyle(Brand.ink).lineLimit(3)
                 meta
             }
             .padding(.horizontal, 12).padding(.vertical, 10)
         }
-        .background(Color(.secondarySystemGroupedBackground))
+        .background(Brand.surface)
         .clipShape(.rect(cornerRadius: corner))
-        .shadow(color: .black.opacity(0.06), radius: 6, y: 3)
+        .shadow(color: .black.opacity(0.07), radius: 8, y: 3)
     }
 
     @ViewBuilder private var image: some View {
@@ -93,7 +93,7 @@ struct TreeCard: View {
                 .font(.system(size: 15, weight: .semibold))
                 .foregroundStyle(saved.isSaved(tree.id) ? .pink : .white)
                 .padding(9)
-                .background(.black.opacity(0.28), in: .circle)
+                .background(.black.opacity(0.38), in: .circle)
         }
         .buttonStyle(.plain)
         .accessibilityLabel(saved.isSaved(tree.id)

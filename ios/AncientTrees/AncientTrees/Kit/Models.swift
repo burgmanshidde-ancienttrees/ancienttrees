@@ -135,6 +135,34 @@ public struct SpeciesFeed: Codable, Sendable {
     public let species: [Species]
 }
 
+/// One hand-curated collection: the website's own, not derived here. Thirteen of
+/// them exist and they are the most inspiring thing this project owns, which is
+/// why Explore is built out of them rather than out of a list of cities.
+public struct TreeCollection: Codable, Hashable, Sendable, Identifiable {
+    public let slug: String
+    public let title: String
+    public let intro: String?
+    public let trees: [String]
+
+    public var id: String { slug }
+}
+
+/// A named park, country or species with the trees in it. Decoded loosely on
+/// purpose: /api/browse.json carries four facets and the app uses what it can.
+public struct BrowseFacet: Codable, Hashable, Sendable, Identifiable {
+    public let slug: String?
+    public let name: String
+    public let trees: [String]?
+    public let count: Int?
+
+    public var id: String { slug ?? name }
+}
+
+public struct BrowseFeed: Codable, Sendable {
+    public let version: String
+    public let collections: [TreeCollection]
+}
+
 /// `/api/version.json`, the cheap call that says whether anything changed.
 public struct VersionInfo: Codable, Sendable {
     public let version: String

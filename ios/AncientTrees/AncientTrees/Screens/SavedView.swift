@@ -55,7 +55,7 @@ struct SavedView: View {
             }
             .padding(.horizontal, 16).padding(.top, 8)
         }
-        .background(Color(.systemGroupedBackground))
+        .brandGround()
         .navigationTitle("Saved")
         .searchable(text: $search, prompt: "Search your trees")
         .sheet(isPresented: $signingIn) {
@@ -73,10 +73,11 @@ struct SavedView: View {
         Button { signingIn = true } label: {
             HStack(spacing: 12) {
                 Image(systemName: "exclamationmark.icloud")
-                    .font(.title3).foregroundStyle(brand)
+                    .font(.title3).foregroundStyle(Brand.moss)
                 VStack(alignment: .leading, spacing: 2) {
                     Text("Kept on this phone only")
-                        .font(.subheadline.weight(.semibold))
+                        .font(.brand(16, .bold, relativeTo: .subheadline))
+                        .foregroundStyle(Brand.ink)
                     Text("Sign in and they follow you to a new phone and to the website.")
                         .font(.caption).foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
@@ -85,18 +86,19 @@ struct SavedView: View {
                 Image(systemName: "chevron.right").font(.caption).foregroundStyle(.tertiary)
             }
             .padding(14)
-            .background(Color(.secondarySystemBackground), in: .rect(cornerRadius: 12))
+            .brandCard(12)
         }
         .buttonStyle(.plain)
     }
 
     private func header(_ t: String, _ n: Int) -> some View {
-        HStack {
-            Text(t).font(.headline)
-            Text("\(n)").font(.subheadline).foregroundStyle(.secondary).monospacedDigit()
+        HStack(alignment: .firstTextBaseline) {
+            Text(t).font(.shelfTitle).foregroundStyle(Brand.ink)
+            Text("\(n)").font(.subheadline.weight(.semibold))
+                .foregroundStyle(Brand.inkSoft).monospacedDigit()
             Spacer()
         }
-        .padding(.top, 6)
+        .padding(.top, 8)
     }
 
     private func card(_ t: Tree) -> some View {
@@ -135,7 +137,8 @@ struct SavedView: View {
                 }
             }
             .padding(.top, 30)
-            Text("Nothing saved yet").font(.headline)
+            Text("Nothing saved yet").font(.brand(20, .heavy, relativeTo: .title3))
+                .foregroundStyle(Brand.ink)
             Text("Tap the heart on a tree to keep it here, and tick it off once you have stood in front of it. There are \(catalogue.trees.count) to find.")
                 .font(.footnote).foregroundStyle(.secondary)
                 .multilineTextAlignment(.center).padding(.horizontal, 24)
