@@ -3,7 +3,7 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Haarlem's oldest trees mostly grow from the same source: fashionable 19th-century Dutch landscape design, and especially one family, the Zochers, who reshaped a demolished fortress line into Kenaupark, redesigned the medieval Haarlemmerhout, and laid out the Kleverlaan cemetery in the English landscape style within a few decades of each other. Older still is a beech carved by an exiled king passing time at his own government estate, and a plane tree thick enough to need several people to encircle it, growing in the garden of the province's own seat of government.",
-  "meta_description": "Haarlem's oldest trees include a beech carved by an exiled king and the province's own thickest plane. Four verified locations, real stories.",
+  "meta_description": "Haarlem's oldest trees include a beech carved by an exiled king and the province's own thickest plane. Nine verified locations, real stories.",
   "question_answer": "Haarlem's oldest documented tree is the Lodewijk Napoleon Beech in the Haarlemmerhout, carved with a crowned royal monogram by the exiled King of Holland sometime between 1808 and 1810. The carving itself has now grown over almost entirely, but the tree, likely well over 230 years old, still stands in the Netherlands' oldest public park.",
   "question_meta": "A beech carved by an exiled king between 1808 and 1810 is Haarlem's oldest documented tree, its carving now nearly grown over. The full four.",
   "question_context": "Haarlem's age claims split along a clear line: the Lodewijk Napoleon Beech has an actual historical event pinned to it, a specific exiled king carving a specific mark in a specific two-year window, which is why it anchors this list as the oldest despite nobody having counted its rings. The other three candidates are honestly less certain. Haarlem's thickest tree, the Provinciehuis plane, has no recorded planting date at all; its size alone suggests a 19th-century origin, but that is inference from girth rather than a documented fact. The Kleverlaan cemetery's yew and Kenaupark's copper beech both belong to the Zocher family's 19th-century landscape schemes, laid out within a few decades of each other, and both are old enough to anchor their respective grounds without either source giving a precise age. None of that uncertainty is unusual for city trees planted before municipal record-keeping became routine; it simply means the crowned R carved into one beech's bark, however faded now, remains the single most specific piece of evidence this city's tree history has to offer.",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Haarlem's remarkable trees free to visit?",
-      "a": "Yes, all four stand in public parks or a public cemetery, open during normal hours at no charge."
+      "a": "Yes, all nine stand in public parks or a public cemetery, open during normal hours at no charge."
     },
     {
       "q": "What is Haarlem's thickest tree?",
@@ -159,6 +159,151 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate"
+    },
+    {
+      "id": "haa_005",
+      "name": "The Weeping Beech of Prinsenhof",
+      "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+      "age_estimate": "~120 years",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Prinsenhof, Haarlem",
+        "latitude": 52.381508,
+        "longitude": 4.633483,
+        "neighbourhood": "Centrum"
+      },
+      "story": "Prinsenhof has been a garden for longer than Haarlem has had a monarchy to name a park after: a monastery garden from before 1477, when the monastery's own graveyard took over the ground, then in 1721 the city's official herb garden, the stadskruidentuin, moved in and stayed. What visitors walk through today is a municipal plantsoen that still keeps a working herb collection alongside a monumental weeping beech planted in the early twentieth century, threading a line from convent medicine to civic parkland that most Dutch cities cannot draw so cleanly on one plot.\n\nWeeping beech is not a wild form but a cultivated one, Fagus sylvatica 'Pendula', its branches trained downward rather than reaching for light, giving it the look of a tree perpetually caught mid-collapse even in full health. The garden sits within a few dozen metres of a chestnut and, a short walk further, an oak in the neighbouring Wijngaardtuin, both from the same run of Haarlem gardens built on old monastic ground. It stands in the open, free, on land that has been under cultivation of one kind or another for well over five centuries even if this particular tree has only seen a small fraction of that.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1690402)"
+      ],
+      "access": "Free, public park, open at any time",
+      "transport": "10 minute walk from Haarlem Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "haa_006",
+      "name": "The Oak of Wijngaardtuin",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "~150 years",
+      "age_min": 146,
+      "age_max": 156,
+      "location": {
+        "address": "Wijngaardtuin, near the statue Ontmoeting, Haarlem",
+        "latitude": 52.382488,
+        "longitude": 4.637152,
+        "neighbourhood": "Centrum"
+      },
+      "story": "The Wijngaardtuin, the vineyard garden, takes its name from a monastery vineyard planted here in the sixteenth century, land that stayed under religious cultivation for generations before the city took it over as public parkland. At the end of the nineteenth century the garden was redesigned, probably by L.P. Zocher, of the same landscape architecture dynasty that reshaped Haarlemmerhout and laid out Kenaupark within a few decades of the same commission. This pedunculate oak dates from that redesign, planted somewhere around 1870 to 1880.\n\nIt stands near a statue called Ontmoeting, Meeting, one of the more recent additions to a garden whose actual history runs back roughly five centuries to vines rather than oaks. A short walk away, in the neighbouring Prinsenhof, a weeping beech from the same general period grows on ground with an even older monastic pedigree; together the two gardens form a small, walkable stretch of what used to be entirely religious land, given over to public use only after the buildings that once justified the walls came down. The oak grows in the open, free to walk up to at any time, no different from any other city park tree except for what the ground beneath it used to grow instead.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1691594)"
+      ],
+      "access": "Free, public park, open at any time",
+      "transport": "10 minute walk from Haarlem Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "haa_007",
+      "name": "The Bald Cypresses of Kenaupark",
+      "species": "Bald Cypress (Taxodium distichum)",
+      "age_estimate": "~130 years",
+      "age_min": 126,
+      "age_max": 136,
+      "location": {
+        "address": "Kenaupark, near number 29, Haarlem",
+        "latitude": 52.386643,
+        "longitude": 4.633581,
+        "neighbourhood": "Kenaupark"
+      },
+      "story": "Six bald cypresses grow together on the lowest, wettest ground in Kenaupark, and that placement is not an accident. Taxodium distichum is one of the few conifers that tolerates standing water, native to swamps across the southeastern United States, and whoever planted this group at the end of the nineteenth century clearly knew the species well enough to put it exactly where an ordinary tree would struggle. Grouping conifers this way was a habit of the Zocher family, the father-and-son landscape architects who designed Kenaupark in 1865 on the site of Haarlem's demolished fortifications, with the villas around the park going up in the years immediately after.\n\nThe register lists the six as a single monumental entry rather than six separate trees, treating the grove as the thing worth protecting rather than any one trunk within it, the same logic behind the Kenaupark plane group and copper beech nearby. Bald cypress sheds its needles every autumn despite being a conifer, one of the few in temperate gardens that does, so the low ground it occupies goes from green to rust orange for a few weeks before going bare. It stands in the open park, free, a few steps from the existing Kenaupark copper beech and its neighbouring plane grove.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1690479)"
+      ],
+      "access": "Free, open park at any time",
+      "transport": "5 minute walk from Haarlem Centraal station",
+      "best_time": {
+        "months": [11],
+        "label": "November, when the needles turn rust orange before dropping",
+        "kind": "autumn colour"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "haa_008",
+      "name": "The Planes of Kenaupark",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "~160 years",
+      "age_min": 156,
+      "age_max": 166,
+      "location": {
+        "address": "Kenaupark, near number 10, Haarlem",
+        "latitude": 52.386649,
+        "longitude": 4.633187,
+        "neighbourhood": "Kenaupark"
+      },
+      "story": "Three London planes stand together near the start of Kenaupark, planted in the opening years after the Zocher family laid the park out in 1865 over the demolished line of Haarlem's old city fortifications. The villas that now ring the park went up in the years right after, so these planes are older than almost every building that faces them, among the first plantings to go into ground that had been earthworks and moat a few years before.\n\nLondon plane is itself a hybrid, a cross between the American sycamore and the Oriental plane first bred in seventeenth-century Europe, prized for tolerating exactly the compacted, disturbed soil a newly filled-in fortification would offer. The register treats the three trees as one monumental entry rather than three individual ones, the group rather than any single trunk being the thing judged worth protecting, matching how the park's bald cypress grove a few dozen metres away is registered. They stand in the open on public parkland, free to walk past any day, close enough to Kenaupark's copper beech and lime that a single stop here takes in four of the park's oldest plantings at once.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1690478)"
+      ],
+      "access": "Free, open park at any time",
+      "transport": "5 minute walk from Haarlem Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "haa_009",
+      "name": "The Common Lime of Kenaupark",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "~110 years",
+      "age_min": 106,
+      "age_max": 116,
+      "location": {
+        "address": "Kenaupark, near numbers 15/17, Haarlem",
+        "latitude": 52.387162,
+        "longitude": 4.634392,
+        "neighbourhood": "Kenaupark"
+      },
+      "story": "This common lime is the youngest of Kenaupark's protected trees, planted in the early twentieth century, decades after the Zocher family's 1865 design had already matured into the park visitors walk today. Most of Kenaupark's oldest plantings, its plane trees and bald cypress grove, went in during the park's first years; this lime is a later addition to an already-established landscape, close enough to the original design that the register still lists it as part of the same historic planting scheme rather than treating it as a later intrusion.\n\nCommon lime is itself a hybrid rather than a distinct wild species, a natural cross between the small-leaved and large-leaved lime that was the default street and park tree across Dutch cities for centuries, valued for tolerating pruning and city conditions better than most trees its size. This one grows within a hundred metres of Kenaupark's copper beech, its plane group and its bald cypresses, on ground that was open fortification earthworks within living memory of the people who first planted here. It stands in the open park, free, a few minutes' walk from Haarlem Centraal station.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1691588)"
+      ],
+      "access": "Free, open park at any time",
+      "transport": "5 minute walk from Haarlem Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }
