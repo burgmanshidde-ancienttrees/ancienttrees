@@ -132,6 +132,28 @@ Build/superlatives/qa all clean (same pre-existing sitemap-lastmod warning
 as the other three Dutch passes today). Photos: none hunted, per this
 runner's no-photo-judging rule.
 
+## 2026-08-20 (session, continued) - Maastricht: deepened 5 to 10 from the same fresh Netherlands register
+
+Fifth Dutch city off the same shelf. Two central lindens 85m apart at the
+squares ringing the Basilica of Saint Servaas (a 1909 birth-tree for Princess
+Juliana at Keizer Karelplein, whose own commemorative ironwork skips her name
+entirely and repeats "no bicycles" six times instead; a second linden at
+Vrijthof, the former churchyard-turned-main-square), plus three grove
+entries from Monseigneur Nolenspark's 1886 westward expansion, designed by
+Lievin Rosseels (son of the Leuven landscape architect who designed the
+park's earlier stretch): black walnuts, weeping silver limes along the
+Haet ende Nijt moat, and a pair of tulip trees. Dropped a sixth candidate, a
+Nolenspark plane group, after finding it sits 240m from the already-published
+maa_005 ("Tallest Plane Tree in the Netherlands", itself at approximate
+precision on the same street): different register point, same species, same
+street, judged too easy to confuse with the existing entry to be worth
+shipping. All `curation_status: flagged`, `location_precision: confirmed`,
+clean against `dead_entries_regex`. Walk planner grouped 7 of Maastricht's
+10 trees into one 1.6km, 21 minute walk. Preflight clean on first pass.
+Build/superlatives/qa all clean (same pre-existing sitemap-lastmod warning
+as the other four Dutch passes today). Photos: none hunted, per this
+runner's no-photo-judging rule.
+
 ## 2026-08-19 - Caserta: deepened to target (14 to 20), 6 new trees from its own leads file
 
 Six trees written from already-verified MASAF/Campania register leads that
