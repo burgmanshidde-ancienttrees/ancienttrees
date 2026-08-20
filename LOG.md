@@ -357,6 +357,29 @@ He said to do all of it that I could, so this is the audit's open list minus the
 
 **Still yours, unchanged from this morning:** the four dashboard actions. Three of them gate work that is written and sitting there, and one of them, the `{{ .Token }}` line, now also gates about an hour of website work rather than just the app.
 
+## 2026-08-20 (session, evening) - The iOS app, rebuilt: accounts, a design of its own, and the four tabs
+
+A long session with Hidde at the keyboard most of it, on his phone for the second half. **The app is the thing that changed today; the website only got small fixes.** If you are reading this cold, `UX_AUDIT.md` has every finding and `DECISIONS.md` has the three rulings he made.
+
+**FOR HIDDE, what is left on your side.** Only two things, and one is money.
+
+1. **`{{ .Token }}` in Supabase's Magic Link email template.** I cannot measure this one. Without it the six digit code in the app does nothing; Google still works.
+2. **The Apple Developer Program, 99 euro a year.** Sign in with Apple cannot work on a free Apple ID at all, and TestFlight needs it. Your call, and you need it before the App Store anyway.
+
+**What Hidde already did, measured rather than assumed:** the Google provider is on in Supabase and the authorize endpoint hands out a real client id, `ancienttrees://auth-callback` is in the redirect allow-list, `public.visited` now exists, and the Google Cloud consent screen is External and In production. Do not send him to redo any of that.
+
+**What shipped in the app.** Sign-in exists at all, with three ways in: Apple, Google (through a system sheet, no SDK, so no new dependency in the product) and an emailed six digit code. The collection syncs to the same Supabase the website uses, so one person is one person across both. The app can now UPDATE ITSELF: Sync.swift had been written on 08-19 and called by nothing, so a tree the night runs added could not reach a phone without App Store review. It asks /api/version.json on launch and on pull to refresh. Verified end to end: a fresh install showed 1,406 trees and after a refresh and a restart, 1,526.
+
+The app also stopped looking like the Settings app: cream ground, Gabarito from the website bundled under its OFL licence, cards where the photograph does the work. Tabs are **Home, Map, Collect, Profile**, with Home first on Hidde's ruling, overruling my argument for the map. Season became a gold pulse on the pins rather than a tab, walks became a filter on the map with the nearest one free.
+
+**Do not re-hunt these, they are answered.** The white screen on his phone was **Xcode**: the app sat PAUSED in the debugger with four attach activities queued, half of them mine from `devicectl`. It was never an app bug. Navigation being "dead app-wide" was also wrong: my test had `.accessibilityIdentifier` inside TreeCard, where the heart button inherited it, so the test tapped the heart. And `displayPriority` on the map pins was tried away from `.required` and reverted; it hides pins, not labels.
+
+**Three real bugs Hidde found by using it, and all three were invisible in a screenshot.** The sheet's drag threshold at 4 points ate taps on tree cards. Every card rendering a real MKMapSnapshotter froze Home on a phone. And Home rebuilt four groupings over 1,535 trees on every frame while scrolling. The simulator showed none of them: it has a Mac's network and a Mac's processor.
+
+**The gap that produced all of that, and the next thing worth building:** the app has no CI. The website cannot deploy with a red test; the app has nothing between a push and his phone, which is why he found every one of these and I found none. Nine tests exist and run locally. Putting them on a macOS runner is roughly half an hour and it would have caught the tap bug outright. It will never catch stutter, which is the argument for TestFlight rather than against CI.
+
+**And the honest headline on where the app stands against AllTrails:** the shape now matches, the material does not. 366 of 1,535 trees have a photograph. Every one of their cards is a photo; a quarter of ours are. That is not a design problem and no layout fixes it.
+
 ## 2026-08-20 (session) - A UX audit of both products, and the app can now be signed into
 
 Hidde asked for the iOS app to be improved for one thing, getting as many people as possible to make an account, through the eyes of somebody who had just moved here from AllTrails, and then for a UX audit of the site and the app with it. Both are done. The full audit with every finding ranked is **`UX_AUDIT.md`**; this is the short version.
