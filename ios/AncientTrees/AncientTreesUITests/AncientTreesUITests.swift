@@ -116,6 +116,33 @@ final class AncientTreesUITests: XCTestCase {
                       "the map was panned away and the list still claims to be near you")
     }
 
+    /// Explore is built out of the website's own collections, which reach the
+    /// app through /api/browse.json. If that feed ever stops carrying them the
+    /// screen quietly loses most of itself, and a screenshot of the top of it
+    /// would not show that at all.
+    @MainActor
+    func testExploreCarriesTheCollections() throws {
+        let app = launch(["-tab=1"])
+        XCTAssertTrue(app.staticTexts["Our favourite tree cities"].waitForExistence(timeout: 12),
+                      "the places shelf is missing")
+
+        // Down past the season shelf, the walks and the cities.
+        var found = false
+        for _ in 0..<8 where !found {
+            app.swipeUp(velocity: .fast)
+            // A collection heading is inside its own NavigationLink, so
+            // accessibility flattens it into the button's label rather than
+            // leaving it as loose text. Check both.
+            for name in ["Trees Planted by Kings and Their Gardeners",
+                         "The Ginkgos Worth a November Trip",
+                         "The Great Planes of Europe",
+                         "Europe's Most Remarkable Yews"] {
+                if app.buttons[name].exists || app.staticTexts[name].exists { found = true }
+            }
+        }
+        XCTAssertTrue(found, "no curated collection shelf rendered on Explore")
+    }
+
     /// The sheet the whole account funnel runs through. If it does not present,
     /// nothing downstream of it can work, and it presented from a launch
     /// argument rather than a tap so that failure would be invisible.

@@ -40,24 +40,39 @@ public final class CatalogueStore {
 
     // MARK: - loading
 
-    /// Read the newest catalogue on disk, which is the downloaded one if there
-    /// is one and the bundled one otherwise.
+    /// Read the newest catalogue, file by file: the downloaded copy where there
+    /// is one, and the bundled copy for anything it does not have.
+    ///
+    /// An OVERLAY rather than a replacement, and that distinction is a bug this
+    /// found rather than a nicety. The first version preferred the download
+    /// directory wholesale, which broke the moment a new feed was added: a phone
+    /// that had already synced trees, walks and species held a complete-looking
+    /// download directory with no browse.json in it, so it showed zero
+    /// collections. And it would have stayed that way, because refresh() asks
+    /// whether the version changed and the version had not: the phone was up to
+    /// date with a file it had never heard of. Falling back per file means a new
+    /// feed works on the old download the first time it is asked for.
     public func loadBundled() {
-        if let c = decode(from: Self.downloadDirectory) {
-            catalogue = c
-            return
+        let dir = Self.downloadDirectory
+        let bundle = Self.bundleURLs
+
+        func read(_ name: String, _ bundled: URL?) -> Data? {
+            if let dir, let d = try? Data(contentsOf: dir.appending(path: "\(name).json")) { return d }
+            return bundled.flatMap { try? Data(contentsOf: $0) }
         }
-        guard let b = Self.bundleURLs else {
+
+        guard let trees = read("trees", bundle?.trees),
+              let walks = read("walks", bundle?.walks) else {
             loadError = "the bundled catalogue is missing from the app"
             return
         }
         do {
-            catalogue = try decode(trees: Data(contentsOf: b.trees),
-                                   walks: Data(contentsOf: b.walks),
-                                   species: b.species.flatMap { try? Data(contentsOf: $0) },
-                                   browse: b.browse.flatMap { try? Data(contentsOf: $0) })
+            catalogue = try decode(trees: trees,
+                                   walks: walks,
+                                   species: read("species", bundle?.species),
+                                   browse: read("browse", bundle?.browse))
         } catch {
-            loadError = "the bundled catalogue would not decode: \(error)"
+            loadError = "the catalogue would not decode: \(error)"
         }
     }
 
@@ -112,15 +127,6 @@ public final class CatalogueStore {
         return (t, w,
                 Bundle.main.url(forResource: "species", withExtension: "json"),
                 Bundle.main.url(forResource: "browse", withExtension: "json"))
-    }
-
-    private func decode(from dir: URL?) -> Catalogue? {
-        guard let dir,
-              let t = try? Data(contentsOf: dir.appending(path: "trees.json")),
-              let w = try? Data(contentsOf: dir.appending(path: "walks.json")) else { return nil }
-        let s = try? Data(contentsOf: dir.appending(path: "species.json"))
-        let b = try? Data(contentsOf: dir.appending(path: "browse.json"))
-        return try? decode(trees: t, walks: w, species: s, browse: b)
     }
 
     private func decode(trees: Data, walks: Data, species: Data?, browse: Data?) throws -> Catalogue {
