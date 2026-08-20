@@ -13,6 +13,43 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-08-20
+
+Reviewed since the last review commit (`9700788`, 2026-08-19 12:02 UTC): 99
+commits to `d778755`, an unusually large window spanning a full session on
+the iOS app (accounts, Sign in with Apple, the freemium paywall screen, a Map
+tab rebuild) alongside the usual night-run and session data work (Los
+Angeles, Seattle, Dallas, Mexico City, Ottawa, Bilbao, Hawaii/Big Island,
+Copenhagen and Tallinn photo/tree additions, Vienna, Palermo, Geneva, Lyon,
+and a run of Dutch cities: Arnhem, Utrecht, Groningen, Haarlem, Maastricht,
+Rotterdam). Ran `python3 scripts/qa.py` (2287 pages, clean), `python3
+scripts/superlatives.py` (419 claims, no collisions) and `python3
+scripts/health.py` (rung 2 clear, no BLOCKER) against the built site.
+
+Spot-checked the highest-risk-looking items by reading the actual diffs and
+built output rather than trusting commit messages: the iOS paywall screen
+(`Entitlement.swift`, `Paywall.swift`) shows Hidde's own 2026-08-18 price and
+never processes a purchase, only a waitlist join, so hard rule 2 (no taking
+payments) is not touched; Las Vegas' removal of three published trees
+(state-champion status but 51-102cm trunks) was Hidde's own editorial call in
+session, with redirects added in `redirect-map.ts` for all three retired
+slugs, so hard rule 3 is not touched; "Walks draw their line" turned out to
+be `ios/.../Screens/TreeMap.swift`, the app's own walk view, not a
+reappearance of walk routes on the web city page (PRODUCT_IA.md's
+2026-08-18 ruling that walks left the web is intact, verified against the
+built city pages: no route capsule anywhere in `site/dist`). The new Ottawa,
+Mexico City and Bilbao tree stories read clean against TONE_OF_VOICE.md and
+the bridge-claim rule: uncertainty is stated plainly ("nobody wrote down...
+if you know its age, tell us") rather than bridged into a false precision,
+sources are named per claim, and the new photographs (Skovfogedegen, Kelch's
+Linden, the Eschersheimer Linde, Mexico City's ahuehuete) all carry a
+verified CC BY-SA licence and attribution that renders on the built tree
+page. The sign-in dialog trim (`SignInModal.astro`) uses `textContent`, not
+`innerHTML`, to insert the saved tree's name, so no injection risk from a
+tree name string.
+
+Nothing found at BLOCKER or WARN. Not a Monday, so no corpus-rot audit this
+entry.
 ## 2026-08-19
 
 Reviewed since the last review commit (`8ca5ccd`, 2026-08-18 07:07 UTC): 75
