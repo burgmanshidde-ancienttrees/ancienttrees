@@ -685,8 +685,31 @@ def default_holder():
     return f"session-{sid[:8]}" if sid else "session"
 
 
+# How many places one holder may have open at once. Two is a working pair: a
+# verify running while the previous city's write is merged. Three is already a
+# stretch and four is spraying.
+MAX_OPEN_CLAIMS = 3
+
+
 def do_claim(target, kind, by):
     doc, live = load_inflight()
+
+    # The prompt has said "claim only what this window can finish" since
+    # 2026-08-13, and it has been ignored twice: fourteen cities claimed that
+    # day for zero published, and eight on 2026-08-17 in a twelve-minute run
+    # that produced nothing. A claim nobody finishes fences a city off from
+    # every other run for up to ninety minutes, so the top of the queue ends up
+    # locked behind work that was never done. A lesson that lands twice becomes
+    # a mechanism here rather than a third writing of the same sentence.
+    mine = [c for c in live if c.get("by") == by]
+    if len(mine) >= MAX_OPEN_CLAIMS:
+        print(f"REFUSED: you already hold {len(mine)} open claims "
+              f"({', '.join(c.get('target', '?') for c in mine)}).")
+        print("Finish and release one before claiming another. A claim nobody")
+        print("finishes locks that city away from every other run until it expires.")
+        print(f"  python3 scripts/passcheck.py --release {mine[0].get('target', '<place>')}")
+        return 1
+
     existing = claims_for(target, live)
     if existing:
         c = existing[0]
