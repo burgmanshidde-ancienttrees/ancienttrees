@@ -375,6 +375,30 @@
    "country": "United States",
    "status": "blocked",
    "note": "SCOUTED 2026-08-20 (one of Hidde's 17 named from-zero cities). Texas Big Tree Registry (texasforestinfo.tamu.edu/BigTreeRegistry) has a real, reachable JSON API (POST Home/GetAllTrees with a species name, coordinates included) but Texas A&M Forest Service's own terms restrict use to personal/educational/non-commercial purposes, which disqualifies it for bulk import under the register-layer licence rule. Looped all 352 species for Harris County: only 18 rows, mostly modest ornamentals, one standout 246cm live oak; kept as data/research/houston-texas-big-tree-harris.json (a research file, not a leads file, since nothing here is verified). Ruled usable as a hand-verify lead source only, same treatment as Nevada. Houston needs a normal from-zero research pass; this register is a minor input, not the backbone."
+  },
+  {
+   "place": "San Francisco",
+   "country": "United States",
+   "status": "stalled",
+   "note": "SCOUTED 2026-08-20. DataSF's Street Tree List (tkzw-k3nq) carries a qLegalStatus field, and filtering it to 'Landmark tree' is a semantic filter rather than the forbidden bulk inventory: 244 trees individually designated by city ordinance. LICENCE IS CLEAN, PDDL 1.0, public domain, which CLAUDE.md names as acceptable. 187 are maintained by DPW or Rec/Park, so the visitor stands on the pavement. THE CATCH, and it is most of the story: 167 of those 187 are Canary Island Date Palms on Dolores Street, one designated avenue planting, which is the La Rambla case and is at most ONE entry rather than 167. What is left is a stand of 12 blue gums at 1661 Octavia and a handful of singletons, several of them modest ornamentals. So San Francisco's real trees (the Presidio cypresses, Golden Gate Park, the Moon Tree) need from-zero research; the landmark register alone does not open the city."
+  },
+  {
+   "place": "Live Oak Society (US South)",
+   "country": "United States",
+   "status": "stalled",
+   "note": "SCOUTED 2026-08-20, not yet mined. The Louisiana Garden Club Federation has registered live oaks since 1934 and the roll now passes 10,000 trees across 14 states, published as PDFs on lgcfinc.org with registration number, tree name, location, parish, girth and sponsor. Junior League is 8 to 16 feet of girth, Centenarian is over 16. NEW ORLEANS CITY PARK ALONE HOLDS 249 REGISTERED TREES, which is a dense walkable cluster in a public park in a city we do not cover. No coordinates in the roll, so pins need separate work, and girths are in feet. It is a garden club rather than a government body, so treat it as a lead and verification source like Nevada and Texas, never an import. Serves New Orleans (#160), Savannah (#207), Charleston, Baton Rouge and Mobile."
+  },
+  {
+   "place": "National Champion Tree Program",
+   "country": "United States",
+   "status": "empty",
+   "note": "SCOUTED 2026-08-20 and it is not the shortcut it looks like. The programme moved from American Forests to the University of Tennessee in 2023 (nationalchampiontree.org). No API found; the WordPress REST endpoint carries no tree post type and the register is published as PDFs. More to the point, champion trees are champions by species points and mostly stand in remote forests and on ranches: the Texas equivalent, which we did sweep, held only 13 to 28 trees within 40 km of each big city, most of them on private land. A national champion register is not a route to urban trees."
+  },
+  {
+   "place": "US city heritage-tree registers (sweep)",
+   "country": "United States",
+   "status": "empty",
+   "note": "SWEPT 2026-08-20 across both indexes that matter. Socrata's federated catalogue (api.us.socrata.com) returns exactly one US heritage/landmark tree dataset, Norfolk's Significant Trees. ArcGIS Hub returns a long tail of small municipalities and student projects (Mountain View has nine near-duplicate layers from San Jose State) plus Fort Worth. No big-audience US city publishes one this way. Portland is the exception and is already imported. Conclusion: there is no index shortcut for US cities; the route is per city, and the Austin result says a STORY register beats a measurement register when one exists."
   }
  ],
  "out_of_focus": {
