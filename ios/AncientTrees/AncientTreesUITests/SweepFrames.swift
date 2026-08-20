@@ -34,6 +34,7 @@ final class SweepFrames: XCTestCase {
         ("city",         ["-tab=0", "-open=city:aarhus"]),
         ("species",      ["-tab=0", "-open=species:Aleppo Pine"]),
         ("collection",   ["-tab=0", "-open=collection:ancient-oaks-of-europe"]),
+        ("walk",         ["-tab=0", "-open=walk:aarhus|Moesgård / Højbjerg"]),
         ("signin",       ["-tab=0", "-signin"]),
         ("paywall",      ["-tab=0", "-paywall"]),
         ("primer",       ["-tab=0", "-primer"]),

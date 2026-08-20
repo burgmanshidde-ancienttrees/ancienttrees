@@ -53,19 +53,60 @@ from layout_rules import MIN_TAP, DRIFT_MAX, SAME  # noqa: E402
 ROW = re.compile(
     r"^(?P<indent> *)(?:→)?(?P<type>[A-Za-z][\w ()'-]*?), "
     r"0x[0-9a-f]+, \{\{(?P<x>-?[\d.]+), (?P<y>-?[\d.]+)\}, "
-    r"\{(?P<w>-?[\d.]+), (?P<h>-?[\d.]+)\}\}(?P<rest> .*)?$")
+    # `(?P<rest> .*)` here would need a SPACE after the frame and the dump has a
+    # COMMA: `}}, identifier: 'heart'`. Every labelled element in the app failed
+    # to parse because of it, so the first working version of this check
+    # measured nothing but anonymous containers and reported the app clean.
+    r"\{(?P<w>-?[\d.]+), (?P<h>-?[\d.]+)\}\}(?P<rest>.*)$")
 LABEL = re.compile(r"label: '(.*?)'")
 IDENT = re.compile(r"identifier: '(.*?)'")
 
-TAPPABLE = {"Button", "Link", "Switch", "Slider", "Segmented Control"}
+TAPPABLE = {"Button", "Link", "Switch", "Slider", "SegmentedControl"}
 # Elements that carry no visual of their own, so a drift in them is a container
-# artefact rather than something a reader can see.
-INVISIBLE = {"Application", "Window", "Other", "Scroll View", "Collection View",
-             "Table", "Cell", "Navigation Bar", "Tab Bar", "Any"}
+# artefact rather than something a reader can see. SwiftUI's own spelling, taken
+# from a real dump: "ScrollView", not "Scroll View", and the first version of
+# this list used the wrong one throughout, which is why a ScrollView was
+# reported as a drift on the sign-in sheet.
+INVISIBLE = {"Application", "Window", "Other", "ScrollView", "CollectionView",
+             "Table", "Cell", "NavigationBar", "TabBar", "Any", "Group"}
+SCROLLERS = ("ScrollView", "CollectionView", "Table")
+
+# What a person can actually SEE. Only these are judged, because a fault in a
+# container repeats itself down every anonymous box inside it: one scroll view
+# hanging 20 points over the edge reported itself 24 times, once per nameless
+# wrapper, and none of those 24 lines named the thing a reader would notice.
+# The leaf is the finding; the container is only how it got there.
+VISIBLE = {"StaticText", "Image", "TextField", "SecureTextField", "SearchField",
+           "TextView", "Toggle", "ProgressIndicator", "Icon"} | TAPPABLE
+
+# iOS draws its own furniture into the same tree and some of it is enormous: a
+# 2196 point wide backdrop behind the tab bar, and a dimming overlay hanging 120
+# points off the left. Ours are never a multiple of the screen wide, and they do
+# not carry Apple's identifiers.
+SYSTEM_IDS = {"AdditionalDimmingOverlay", "PopoverDimmingView"}
+# Apple's own furniture inside a sheet, by label: the little grey handle at the
+# top is 24 points tall and always will be.
+SYSTEM_LABELS = {"Sheet Grabber", "Legal"}
+
+# Furniture we do not lay out and cannot fix. Apple draws its own "Legal" link
+# into every MapKit view at 29 by 11 points, and a tab bar centres its items in
+# equal columns rather than aligning them to the page's margin, so both would
+# report forever without anything to do about either.
+NOT_OURS = ("Map", "TabBar")
+
+
+def inside(el, types):
+    p = el.parent
+    while p is not None:
+        if p.type in types:
+            return True
+        p = p.parent
+    return False
 
 
 class El:
-    __slots__ = ("type", "x", "y", "w", "h", "label", "ident", "depth", "parent")
+    __slots__ = ("type", "x", "y", "w", "h", "label", "ident", "depth", "parent",
+                 "_horizontal")
 
     def __init__(self, m):
         self.type = m.group("type").strip()
@@ -76,6 +117,7 @@ class El:
         self.ident = (IDENT.search(rest).group(1) if IDENT.search(rest) else "")
         self.depth = len(m.group("indent"))
         self.parent = None
+        self._horizontal = False
 
     @property
     def right(self):
@@ -124,30 +166,40 @@ def link(screen):
 
 
 def in_shelf(el):
-    """True when something above this element is a horizontal scroller.
-
-    A shelf is detected rather than declared: a scroll view whose own children
-    reach past its right edge scrolls sideways, and everything inside it is
-    supposed to run off the screen.
-    """
+    """True when something above this element is a horizontal scroller."""
     p = el.parent
     while p is not None:
-        if p.type in ("Scroll View", "Collection View") and getattr(p, "_horizontal", False):
+        if getattr(p, "_horizontal", False):
             return True
         p = p.parent
     return False
 
 
 def mark_shelves(screen):
+    """Find the horizontal shelves, and ONLY the horizontal shelves.
+
+    The first version called any scroller a shelf as soon as one child spilled a
+    single point over its edge, and a row of buttons whose first one starts at
+    x=-3.5 spills exactly like that. The tree page's action bar was therefore
+    exempted from every check, and the check missed a heart button hanging four
+    points off the right of the screen, which is the precise bug this whole file
+    exists to catch.
+
+    A real shelf is not a few points wider than its frame, it is MUCH wider:
+    there are more cards than fit. Half a screen of overflow is the line.
+    """
     kids = collections.defaultdict(list)
     for el in screen["els"]:
         if el.parent is not None:
             kids[id(el.parent)].append(el)
     for el in screen["els"]:
-        if el.type in ("Scroll View", "Collection View"):
+        el._horizontal = False
+        if el.type in SCROLLERS and el.w > 0:
             children = kids.get(id(el), [])
-            el._horizontal = any(c.right > el.right + SAME or c.x < el.x - SAME
-                                 for c in children)
+            if not children:
+                continue
+            span = max(c.right for c in children) - min(c.x for c in children)
+            el._horizontal = span > el.w * 1.5
 
 
 def check(screen):
@@ -157,11 +209,24 @@ def check(screen):
     els = screen["els"]
 
     for el in els:
-        if el.w <= 0 or el.h <= 0:
+        if (el.w <= 0 or el.h <= 0 or el.ident in SYSTEM_IDS
+                or el.label in SYSTEM_LABELS):
             continue
-        on_screen = -SAME < el.x < W - SAME and el.y < screen["h"]
+        if el.type not in VISIBLE or inside(el, NOT_OURS):
+            continue
+        # Nothing of ours is half again as wide as the phone. What is, is
+        # Apple's: the backdrop behind the tab bar measures 2196 points.
+        if el.w > W * 1.5:
+            continue
+        on_screen = el.x < W - SAME and el.y < screen["h"]
         if not on_screen:
             continue
+
+        # Off the LEFT edge counts too, and is how the tree page's "Take me
+        # there" button sat at x=-3.5 without anyone noticing.
+        if el.x < -SAME and not in_shelf(el):
+            findings.append(("CLIPPED", el,
+                             f"starts at x={el.x:.0f}, so it hangs off the left edge"))
 
         if el.right > W + SAME and not in_shelf(el):
             findings.append(("CLIPPED", el,
@@ -177,13 +242,18 @@ def check(screen):
     lefts = collections.defaultdict(list)
     for el in els:
         if (el.type not in INVISIBLE and el.w > 40 and el.h > 4
-                and 0 <= el.x < W / 2 and not in_shelf(el)):
+                and 0 <= el.x < W / 2 and not in_shelf(el)
+                and not inside(el, NOT_OURS)):
             lefts[round(el.x * 2) / 2].append(el)
     if lefts:
         dominant = max(lefts, key=lambda x: len(lefts[x]))
         for x, group in sorted(lefts.items()):
             gap = abs(x - dominant)
-            if SAME < gap <= DRIFT_MAX:
+            # Below two points is the shape of the glyphs, not the layout: a
+            # line of text reports the bounds of its letters, so one string
+            # starting at 0.5 and another at 1.5 is the difference between an F
+            # and a J rather than a mistake anyone made.
+            if 2.0 <= gap <= DRIFT_MAX:
                 findings.append(("DRIFT", group[0],
                                  f"starts at x={x:g} while {len(lefts[dominant])} "
                                  f"other things on this screen start at x={dominant:g}"
