@@ -20,6 +20,10 @@ struct FilterChipLabel: View {
             if !on { Capsule().strokeBorder(Brand.hairline, lineWidth: 1) }
         }
         .shadow(color: .black.opacity(on ? 0 : 0.05), radius: 3, y: 1)
+        // The capsule stays 32 points tall, which is what a filter chip should
+        // look like over a map. The thing a finger has to hit is 44.
+        .frame(height: 44)
+        .contentShape(.rect)
     }
 }
 

@@ -275,7 +275,8 @@ def run_test(device, scratch):
     sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
     import appsweep
 
-    udid = appsweep.udid_for(device, dict(appsweep.DEVICES).get(device, ""))
+    udid = device if "-" in device and len(device) == 36 else \
+        appsweep.udid_for(device, dict(appsweep.DEVICES).get(device, ""))
     device_dir = pathlib.Path.home() / "Library/Developer/CoreSimulator/Devices" / udid
     for stale in device_dir.rglob(DUMP_NAME):
         stale.unlink()
@@ -291,7 +292,11 @@ def run_test(device, scratch):
          # throwaway CLONE of the simulator and deletes it when the run ends,
          # taking the file with it. The test passed three times and left
          # nothing behind before this line existed.
-         "-parallel-testing-enabled", "NO"],
+         "-parallel-testing-enabled", "NO",
+         # The CI runner has no signing identity and does not need one to run a
+         # simulator test.
+         "CODE_SIGNING_ALLOWED=NO", "CODE_SIGNING_REQUIRED=NO",
+         "CODE_SIGN_IDENTITY="],
         cwd=APP_DIR, capture_output=True, text=True)
 
     found = sorted(device_dir.rglob(DUMP_NAME), key=lambda p: p.stat().st_mtime)
@@ -306,7 +311,9 @@ def run_test(device, scratch):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--device", default="iPhone SE (sweep)",
-                    help="the phone to measure on; the smallest is the honest one")
+                    help="the phone to measure on, by name or by udid; the "
+                         "smallest is the honest one. CI passes a udid because "
+                         "a runner's simulator names are not ours to predict")
     ap.add_argument("--dump", default=None, help="a saved test output to judge")
     ap.add_argument("--json", action="store_true", help="findings as JSON")
     args = ap.parse_args()

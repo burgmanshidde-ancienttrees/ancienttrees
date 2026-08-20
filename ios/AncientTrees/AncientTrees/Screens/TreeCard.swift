@@ -28,7 +28,7 @@ struct TreeCard: View {
         VStack(alignment: .leading, spacing: 0) {
             ZStack(alignment: .topTrailing) {
                 image
-                heart.padding(10)
+                heart.padding(6)
                 if saved.isVisited(tree.id) { ticked }
             }
             VStack(alignment: .leading, spacing: 5) {
@@ -44,16 +44,23 @@ struct TreeCard: View {
 
     @ViewBuilder private var image: some View {
         if let p = tree.photo, let url = Photos.thumb(p.url, width: 500) {
-            AsyncImage(url: url) { phase in
-                switch phase {
-                case .success(let img):
-                    img.resizable().aspectRatio(contentMode: .fill)
-                default:
-                    placeholder.overlay(ProgressView().tint(.white))
+            // The same empty box with the photograph laid over it as the tree
+            // page's hero, and for the same reason: a .fill image proposes the
+            // width its own picture wants, and a card that does that makes the
+            // page it sits on wider than the phone.
+            Color.clear
+                .frame(height: imageHeight)
+                .overlay {
+                    AsyncImage(url: url) { phase in
+                        switch phase {
+                        case .success(let img):
+                            img.resizable().aspectRatio(contentMode: .fill)
+                        default:
+                            placeholder.overlay(ProgressView().tint(.white))
+                        }
+                    }
                 }
-            }
-            .frame(height: imageHeight)
-            .clipped()
+                .clipped()
             // The little map in the corner, from the AllTrails frames. On a
             // route it shows the shape; on a tree it shows the SETTING, and that
             // answers the thing a photograph of a trunk cannot: park, canal or
@@ -108,6 +115,12 @@ struct TreeCard: View {
                 .foregroundStyle(saved.isSaved(tree.id) ? .pink : .white)
                 .padding(9)
                 .background(.black.opacity(0.38), in: .circle)
+                // The CIRCLE stays 35 points because a bigger one would sit on
+                // the photograph; the TAP TARGET is 44, which is Apple's
+                // minimum and was being missed by nine points on every card in
+                // the app. Measured by scripts/appfit.py, not noticed by eye.
+                .frame(width: 44, height: 44)
+                .contentShape(.rect)
         }
         .buttonStyle(.plain)
         .accessibilityLabel(saved.isSaved(tree.id)

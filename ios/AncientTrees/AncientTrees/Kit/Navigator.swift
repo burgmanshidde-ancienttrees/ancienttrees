@@ -24,5 +24,10 @@ public final class Navigator {
     /// it, MapTab selects it and clears it.
     public var showOnMap: String?
 
+    /// Which of Explore's two modes is showing: the shelves or the map. Lives
+    /// here rather than in the view so that "show me this tree on the map" can
+    /// flip it from anywhere, the same way showOnMap already crosses tabs.
+    public var exploreShowsMap = false
+
     public init() {}
 }

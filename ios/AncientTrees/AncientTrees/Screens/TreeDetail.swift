@@ -56,6 +56,8 @@ struct TreeDetail: View {
                           subject: Text(tree.name),
                           message: Text("\(tree.name), \(tree.city).")) {
                     Image(systemName: "square.and.arrow.up")
+                        .frame(width: 44, height: 44)
+                        .contentShape(.rect)
                 }
                 .accessibilityLabel("Share this tree")
             }
@@ -77,14 +79,28 @@ struct TreeDetail: View {
     @ViewBuilder private var hero: some View {
         if let p = tree.photo, let url = Photos.thumb(p.url, width: 960) {
             VStack(alignment: .leading, spacing: 6) {
-                AsyncImage(url: url) { img in
-                    img.resizable().aspectRatio(contentMode: .fill)
-                } placeholder: {
-                    heroFallback
-                }
-                .frame(height: 240)
-                .clipped()
-                .clipShape(.rect(cornerRadius: 14))
+                // AN EMPTY BOX WITH THE PHOTOGRAPH LAID OVER IT, not a
+                // photograph with a height. A .fill image asks for the width
+                // its own picture wants (a landscape shot 240 points tall asks
+                // for about 410) and everything around it grows to match: on a
+                // 375 point phone the whole tree page sat 19.5 points to the
+                // left, the photograph against the left edge and the heart
+                // button hanging off the right. One unbounded image moved every
+                // element on the screen, and adding maxWidth did not fix it,
+                // because a frame's maximum still yields to the image's ideal.
+                // An overlay never takes part in layout at all, which is the
+                // only version that cannot do this again.
+                Color.clear
+                    .frame(height: 240)
+                    .overlay {
+                        AsyncImage(url: url) { img in
+                            img.resizable().aspectRatio(contentMode: .fill)
+                        } placeholder: {
+                            heroFallback
+                        }
+                    }
+                    .clipped()
+                    .clipShape(.rect(cornerRadius: 14))
                 if let c = Photos.credit(p) {
                     Text(c)
                         .font(.caption2)

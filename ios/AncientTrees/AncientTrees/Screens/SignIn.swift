@@ -240,12 +240,18 @@ struct SignInSheet: View {
             Text("We store your email address and the trees you collect. Nothing else, no advertising, and you can delete the lot from this app.")
                 .font(.caption2).foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
+            // Both of these were text a finger has to find: "Privacy" measured
+            // 37 by 13 points and "Not now" 55 by 17, against Apple's 44 by 44.
+            // The words stay the same size; the area around them is the target.
             Link("Privacy", destination: URL(string: "https://ancienttrees.app/privacy")!)
                 .font(.caption2)
+                .frame(minWidth: 44, minHeight: 44)
+                .contentShape(.rect)
             Button("Not now") { dismiss() }
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
-                .padding(.top, 10)
+                .frame(minWidth: 44, minHeight: 44)
+                .contentShape(.rect)
         }
         .padding(.top, 2)
     }
