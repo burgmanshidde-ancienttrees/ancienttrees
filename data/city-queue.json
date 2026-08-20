@@ -41,12 +41,12 @@
    "demand": 124310,
    "basis": "measured",
    "status": "published",
-   "trees": 18,
+   "trees": 21,
    "photos": 7,
-   "walks": 2,
-   "register": 41,
+   "walks": 3,
+   "register": 37,
    "ready": 0,
-   "supply": 41,
+   "supply": 37,
    "target": 20,
    "impressions_10d": 184,
    "clicks_10d": 3,
@@ -741,30 +741,6 @@
   },
   {
    "rank": 34,
-   "city": "Hawaii",
-   "country": "United States",
-   "slug": "hawaii",
-   "score": 12.39,
-   "demand": null,
-   "basis": "predicted (travel demand)",
-   "status": "published",
-   "trees": 6,
-   "photos": 0,
-   "walks": 1,
-   "register": 6,
-   "ready": 0,
-   "supply": 6,
-   "target": 10,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
-   "ease": 1.12,
-   "work_score": 13.88,
-   "travel": 12388,
-   "why_pooled": "The Big Island, distinct from Kauai, Maui and Oahu which are already ranked. Hawaii has an Exceptional Trees law with county registries behind it, which is a register in all but name.",
-   "note": "Rank 43 was worked on 2026-08-17 and produced data/cities/hilo.json, five protected trees in and around the town of Hilo, three of them in Kalakaua Park. The ISLAND row stays pending on purpose: Kona, Volcano and the Hamakua coast are untouched and the register holds 30 more publishable Big Island trees, so a page called Hawaii would promise an island and deliver a town."
-  },
-  {
-   "rank": 35,
    "city": "Granada",
    "country": "Spain",
    "slug": "granada",
@@ -786,7 +762,7 @@
    "travel": 2387
   },
   {
-   "rank": 36,
+   "rank": 35,
    "city": "Lyon",
    "country": "France",
    "slug": "lyon",
@@ -808,7 +784,7 @@
    "travel": 6418
   },
   {
-   "rank": 37,
+   "rank": 36,
    "city": "Houston",
    "country": "United States",
    "slug": "houston",
@@ -830,7 +806,7 @@
    "travel": 12217
   },
   {
-   "rank": 38,
+   "rank": 37,
    "city": "Cologne",
    "country": "Germany",
    "slug": "cologne",
@@ -852,7 +828,7 @@
    "travel": 12174
   },
   {
-   "rank": 39,
+   "rank": 38,
    "city": "Leiden",
    "country": "Netherlands",
    "slug": "leiden",
@@ -874,7 +850,7 @@
    "travel": 2177
   },
   {
-   "rank": 40,
+   "rank": 39,
    "city": "Munich",
    "country": "Germany",
    "slug": "munich",
@@ -896,7 +872,7 @@
    "travel": 14048
   },
   {
-   "rank": 41,
+   "rank": 40,
    "city": "Girona",
    "country": "Spain",
    "slug": "girona",
@@ -918,7 +894,7 @@
    "travel": 7867
   },
   {
-   "rank": 42,
+   "rank": 41,
    "city": "Bristol",
    "country": "United Kingdom",
    "slug": "bristol",
@@ -940,7 +916,7 @@
    "travel": 6082
   },
   {
-   "rank": 43,
+   "rank": 42,
    "city": "Tokyo",
    "country": "Japan",
    "slug": "tokyo",
@@ -962,51 +938,7 @@
    "travel": 1928
   },
   {
-   "rank": 44,
-   "city": "Bilbao",
-   "country": "Spain",
-   "slug": "bilbao",
-   "score": 7.72,
-   "demand": 133133,
-   "basis": "predicted (travel demand)",
-   "status": "published",
-   "trees": 4,
-   "photos": 0,
-   "walks": 1,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 10,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
-   "ease": 1.5,
-   "work_score": 11.58,
-   "travel": 7722
-  },
-  {
-   "rank": 45,
-   "city": "Ottawa",
-   "country": "Canada",
-   "slug": "ottawa",
-   "score": 7.62,
-   "demand": null,
-   "basis": "predicted (travel demand)",
-   "status": "published",
-   "trees": 8,
-   "photos": 0,
-   "walks": 1,
-   "register": 119,
-   "ready": 0,
-   "supply": 119,
-   "target": 10,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
-   "ease": 1.5,
-   "work_score": 11.43,
-   "travel": 7621
-  },
-  {
-   "rank": 46,
+   "rank": 43,
    "city": "Chiang Mai",
    "country": "Thailand",
    "slug": "chiang-mai",
@@ -1028,7 +960,7 @@
    "travel": 22838
   },
   {
-   "rank": 47,
+   "rank": 44,
    "city": "Jerusalem",
    "country": "Israel",
    "slug": "jerusalem",
@@ -1050,7 +982,7 @@
    "travel": 11167
   },
   {
-   "rank": 48,
+   "rank": 45,
    "city": "Copenhagen",
    "country": "Denmark",
    "slug": "copenhagen",
@@ -1072,7 +1004,7 @@
    "travel": 10483
   },
   {
-   "rank": 49,
+   "rank": 46,
    "city": "Bologna",
    "country": "Italy",
    "slug": "bologna",
@@ -1094,7 +1026,7 @@
    "travel": 7616
   },
   {
-   "rank": 50,
+   "rank": 47,
    "city": "Dubai",
    "country": "United Arab Emirates",
    "slug": "dubai",
@@ -1116,7 +1048,7 @@
    "travel": 11017
   },
   {
-   "rank": 51,
+   "rank": 48,
    "city": "Padua",
    "country": "Italy",
    "slug": "padua",
@@ -1138,7 +1070,7 @@
    "travel": 5422
   },
   {
-   "rank": 52,
+   "rank": 49,
    "city": "Edinburgh",
    "country": "United Kingdom",
    "slug": "edinburgh",
@@ -1160,7 +1092,7 @@
    "travel": 8512
   },
   {
-   "rank": 53,
+   "rank": 50,
    "city": "Utrecht",
    "country": "Netherlands",
    "slug": "utrecht",
@@ -1182,7 +1114,7 @@
    "travel": 5267
   },
   {
-   "rank": 54,
+   "rank": 51,
    "city": "Kansas City",
    "country": "United States",
    "slug": "kansas-city",
@@ -1204,7 +1136,7 @@
    "travel": 10512
   },
   {
-   "rank": 55,
+   "rank": 52,
    "city": "Asheville",
    "country": "United States",
    "slug": "asheville",
@@ -1226,7 +1158,7 @@
    "travel": 10445
   },
   {
-   "rank": 56,
+   "rank": 53,
    "city": "Berlin",
    "country": "Germany",
    "slug": "berlin",
@@ -1248,7 +1180,7 @@
    "travel": 21405
   },
   {
-   "rank": 57,
+   "rank": 54,
    "city": "Hamburg",
    "country": "Germany",
    "slug": "hamburg",
@@ -1270,7 +1202,7 @@
    "travel": 10268
   },
   {
-   "rank": 58,
+   "rank": 55,
    "city": "Groningen",
    "country": "Netherlands",
    "slug": "groningen",
@@ -1292,7 +1224,7 @@
    "travel": 5676
   },
   {
-   "rank": 59,
+   "rank": 56,
    "city": "Bali",
    "country": "Indonesia",
    "slug": "bali",
@@ -1315,7 +1247,7 @@
    "why_pooled": "Hidde's own ask, 2026-08-17. Sacred banyans in temple precincts are the whole supply story here: the Bunut Bolong with a road through its roots, the Monkey Forest banyans at Ubud, the kepuh and waringin planted at village temples across the island. Temple ground is exactly the sacred-ground pattern the search doctrine says to look at first."
   },
   {
-   "rank": 60,
+   "rank": 57,
    "city": "Reykjavik",
    "country": "Iceland",
    "slug": "reykjavik",
@@ -1337,7 +1269,7 @@
    "travel": 5535
   },
   {
-   "rank": 61,
+   "rank": 58,
    "city": "Haarlem",
    "country": "Netherlands",
    "slug": "haarlem",
@@ -1359,7 +1291,7 @@
    "travel": 2006
   },
   {
-   "rank": 62,
+   "rank": 59,
    "city": "Krakow",
    "country": "Poland",
    "slug": "krakow",
@@ -1381,7 +1313,7 @@
    "travel": 8345
   },
   {
-   "rank": 63,
+   "rank": 60,
    "city": "Santorini",
    "country": "Greece",
    "slug": "santorini",
@@ -1404,7 +1336,7 @@
    "kind": "island"
   },
   {
-   "rank": 64,
+   "rank": 61,
    "city": "Vancouver",
    "country": "Canada",
    "slug": "vancouver",
@@ -1427,7 +1359,7 @@
    "travel": 9466
   },
   {
-   "rank": 65,
+   "rank": 62,
    "city": "Edmonton",
    "country": "Canada",
    "slug": "edmonton",
@@ -1449,7 +1381,7 @@
    "travel": 9377
   },
   {
-   "rank": 66,
+   "rank": 63,
    "city": "Oslo",
    "country": "Norway",
    "slug": "oslo",
@@ -1471,7 +1403,7 @@
    "travel": 7046
   },
   {
-   "rank": 67,
+   "rank": 64,
    "city": "Turku",
    "country": "Finland",
    "slug": "turku",
@@ -1493,7 +1425,7 @@
    "travel": 9236
   },
   {
-   "rank": 68,
+   "rank": 65,
    "city": "Winnipeg",
    "country": "Canada",
    "slug": "winnipeg",
@@ -1515,7 +1447,7 @@
    "travel": 9214
   },
   {
-   "rank": 69,
+   "rank": 66,
    "city": "Canberra",
    "country": "Australia",
    "slug": "canberra",
@@ -1537,7 +1469,7 @@
    "travel": 9137
   },
   {
-   "rank": 70,
+   "rank": 67,
    "city": "Cork",
    "country": "Ireland",
    "slug": "cork",
@@ -1559,7 +1491,7 @@
    "travel": 3880
   },
   {
-   "rank": 71,
+   "rank": 68,
    "city": "Portland",
    "country": "United States",
    "slug": "portland",
@@ -1582,7 +1514,7 @@
    "travel": 6119
   },
   {
-   "rank": 72,
+   "rank": 69,
    "city": "Manchester",
    "country": "United Kingdom",
    "slug": "manchester",
@@ -1604,7 +1536,7 @@
    "travel": 9056
   },
   {
-   "rank": 73,
+   "rank": 70,
    "city": "Tampere",
    "country": "Finland",
    "slug": "tampere",
@@ -1626,7 +1558,7 @@
    "travel": 8784
   },
   {
-   "rank": 74,
+   "rank": 71,
    "city": "Pisa",
    "country": "Italy",
    "slug": "pisa",
@@ -1648,7 +1580,7 @@
    "travel": 5853
   },
   {
-   "rank": 75,
+   "rank": 72,
    "city": "Nice",
    "country": "France",
    "slug": "nice",
@@ -1670,7 +1602,7 @@
    "travel": 9822
   },
   {
-   "rank": 76,
+   "rank": 73,
    "city": "Leipzig",
    "country": "Germany",
    "slug": "leipzig",
@@ -1692,7 +1624,7 @@
    "travel": 8604
   },
   {
-   "rank": 77,
+   "rank": 74,
    "city": "Genoa",
    "country": "Italy",
    "slug": "genoa",
@@ -1714,7 +1646,7 @@
    "travel": 2634
   },
   {
-   "rank": 78,
+   "rank": 75,
    "city": "Taipei",
    "country": "Taiwan",
    "slug": "taipei",
@@ -1736,7 +1668,7 @@
    "travel": 8375
   },
   {
-   "rank": 79,
+   "rank": 76,
    "city": "Salamanca",
    "country": "Spain",
    "slug": "salamanca",
@@ -1758,7 +1690,7 @@
    "travel": 5495
   },
   {
-   "rank": 80,
+   "rank": 77,
    "city": "Hiroshima",
    "country": "Japan",
    "slug": "hiroshima",
@@ -1780,7 +1712,7 @@
    "travel": 5550
   },
   {
-   "rank": 81,
+   "rank": 78,
    "city": "Kyoto",
    "country": "Japan",
    "slug": "kyoto",
@@ -1802,7 +1734,7 @@
    "travel": 5488
   },
   {
-   "rank": 82,
+   "rank": 79,
    "city": "Adelaide",
    "country": "Australia",
    "slug": "adelaide",
@@ -1824,7 +1756,7 @@
    "travel": 8145
   },
   {
-   "rank": 83,
+   "rank": 80,
    "city": "Alicante",
    "country": "Spain",
    "slug": "alicante",
@@ -1846,7 +1778,7 @@
    "travel": 2661
   },
   {
-   "rank": 84,
+   "rank": 81,
    "city": "Maastricht",
    "country": "Netherlands",
    "slug": "maastricht",
@@ -1868,7 +1800,7 @@
    "travel": 5358
   },
   {
-   "rank": 85,
+   "rank": 82,
    "city": "Rotterdam",
    "country": "Netherlands",
    "slug": "rotterdam",
@@ -1890,7 +1822,7 @@
    "travel": 7237
   },
   {
-   "rank": 86,
+   "rank": 83,
    "city": "San Francisco",
    "country": "United States",
    "slug": "san-francisco",
@@ -1912,7 +1844,7 @@
    "travel": 8084
   },
   {
-   "rank": 87,
+   "rank": 84,
    "city": "Lucca",
    "country": "Italy",
    "slug": "lucca",
@@ -1934,7 +1866,7 @@
    "travel": 1792
   },
   {
-   "rank": 88,
+   "rank": 85,
    "city": "Nijmegen",
    "country": "Netherlands",
    "slug": "nijmegen",
@@ -1956,7 +1888,7 @@
    "travel": 4219
   },
   {
-   "rank": 89,
+   "rank": 86,
    "city": "Turin",
    "country": "Italy",
    "slug": "turin",
@@ -1978,7 +1910,7 @@
    "travel": 5978
   },
   {
-   "rank": 90,
+   "rank": 87,
    "city": "Osaka",
    "country": "Japan",
    "slug": "osaka",
@@ -2000,7 +1932,7 @@
    "travel": 10140
   },
   {
-   "rank": 91,
+   "rank": 88,
    "city": "Luang Prabang",
    "country": "Laos",
    "slug": "luang-prabang",
@@ -2022,7 +1954,7 @@
    "travel": 7493
   },
   {
-   "rank": 92,
+   "rank": 89,
    "city": "Oahu",
    "country": "United States",
    "slug": "oahu",
@@ -2045,7 +1977,7 @@
    "kind": "island"
   },
   {
-   "rank": 93,
+   "rank": 90,
    "city": "Buenos Aires",
    "country": "Argentina",
    "slug": "buenos-aires",
@@ -2067,7 +1999,7 @@
    "travel": 14653
   },
   {
-   "rank": 94,
+   "rank": 91,
    "city": "Kauai",
    "country": "United States",
    "slug": "kauai",
@@ -2090,7 +2022,7 @@
    "kind": "island"
   },
   {
-   "rank": 95,
+   "rank": 92,
    "city": "Bergen",
    "country": "Norway",
    "slug": "bergen",
@@ -2112,7 +2044,7 @@
    "travel": 7304
   },
   {
-   "rank": 96,
+   "rank": 93,
    "city": "Cadiz",
    "country": "Spain",
    "slug": "cadiz",
@@ -2134,7 +2066,7 @@
    "travel": 3583
   },
   {
-   "rank": 97,
+   "rank": 94,
    "city": "Zurich",
    "country": "Switzerland",
    "slug": "zurich",
@@ -2156,7 +2088,7 @@
    "travel": 6363
   },
   {
-   "rank": 98,
+   "rank": 95,
    "city": "Istanbul",
    "country": "Turkey",
    "slug": "istanbul",
@@ -2178,7 +2110,7 @@
    "travel": 15198
   },
   {
-   "rank": 99,
+   "rank": 96,
    "city": "Glasgow",
    "country": "United Kingdom",
    "slug": "glasgow",
@@ -2200,7 +2132,7 @@
    "travel": 17161
   },
   {
-   "rank": 100,
+   "rank": 97,
    "city": "Hong Kong",
    "country": "China",
    "slug": "hong-kong",
@@ -2223,7 +2155,7 @@
    "travel": 2136
   },
   {
-   "rank": 101,
+   "rank": 98,
    "city": "Gyeongju",
    "country": "South Korea",
    "slug": "gyeongju",
@@ -2245,7 +2177,7 @@
    "travel": 6943
   },
   {
-   "rank": 102,
+   "rank": 99,
    "city": "Siena",
    "country": "Italy",
    "slug": "siena",
@@ -2267,7 +2199,7 @@
    "travel": 4616
   },
   {
-   "rank": 103,
+   "rank": 100,
    "city": "Santiago de Compostela",
    "country": "Spain",
    "slug": "santiago-de-compostela",
@@ -2289,7 +2221,7 @@
    "travel": 4520
   },
   {
-   "rank": 104,
+   "rank": 101,
    "city": "Liverpool",
    "country": "United Kingdom",
    "slug": "liverpool",
@@ -2311,7 +2243,7 @@
    "travel": 6457
   },
   {
-   "rank": 105,
+   "rank": 102,
    "city": "Zagreb",
    "country": "Croatia",
    "slug": "zagreb",
@@ -2333,7 +2265,7 @@
    "travel": 6420
   },
   {
-   "rank": 106,
+   "rank": 103,
    "city": "Dresden",
    "country": "Germany",
    "slug": "dresden",
@@ -2355,7 +2287,7 @@
    "travel": 6405
   },
   {
-   "rank": 107,
+   "rank": 104,
    "city": "Bogota",
    "country": "Colombia",
    "slug": "bogota",
@@ -2377,7 +2309,7 @@
    "travel": 12771
   },
   {
-   "rank": 108,
+   "rank": 105,
    "city": "Shanghai",
    "country": "China",
    "slug": "shanghai",
@@ -2399,7 +2331,7 @@
    "travel": 12753
   },
   {
-   "rank": 109,
+   "rank": 106,
    "city": "Rio de Janeiro",
    "country": "Brazil",
    "slug": "rio-de-janeiro",
@@ -2421,7 +2353,7 @@
    "travel": 12714
   },
   {
-   "rank": 110,
+   "rank": 107,
    "city": "Antwerp",
    "country": "Belgium",
    "slug": "antwerp",
@@ -2443,7 +2375,7 @@
    "travel": 5046
   },
   {
-   "rank": 111,
+   "rank": 108,
    "city": "Athens",
    "country": "Greece",
    "slug": "athens",
@@ -2465,7 +2397,7 @@
    "travel": 9244
   },
   {
-   "rank": 112,
+   "rank": 109,
    "city": "Helsinki",
    "country": "Finland",
    "slug": "helsinki",
@@ -2487,7 +2419,7 @@
    "travel": 9002
   },
   {
-   "rank": 113,
+   "rank": 110,
    "city": "Detroit",
    "country": "United States",
    "slug": "detroit",
@@ -2509,7 +2441,7 @@
    "travel": 6264
   },
   {
-   "rank": 114,
+   "rank": 111,
    "city": "Freiburg",
    "country": "Germany",
    "slug": "freiburg",
@@ -2531,7 +2463,7 @@
    "travel": 6178
   },
   {
-   "rank": 115,
+   "rank": 112,
    "city": "Setubal",
    "country": "Portugal",
    "slug": "setubal",
@@ -2553,7 +2485,7 @@
    "travel": 752
   },
   {
-   "rank": 116,
+   "rank": 113,
    "city": "Gothenburg",
    "country": "Sweden",
    "slug": "gothenburg",
@@ -2575,7 +2507,7 @@
    "travel": 5945
   },
   {
-   "rank": 117,
+   "rank": 114,
    "city": "Denver",
    "country": "United States",
    "slug": "denver",
@@ -2597,7 +2529,7 @@
    "travel": 5829
   },
   {
-   "rank": 118,
+   "rank": 115,
    "city": "Malta",
    "country": "Malta",
    "slug": "malta",
@@ -2620,7 +2552,7 @@
    "why_pooled": "Small, hugely visited, and it protects trees by law: the Bidnija olives are claimed as Roman-era and there is a national tree-protection framework to check for data."
   },
   {
-   "rank": 119,
+   "rank": 116,
    "city": "Beijing",
    "country": "China",
    "slug": "beijing",
@@ -2642,7 +2574,7 @@
    "travel": 11460
   },
   {
-   "rank": 120,
+   "rank": 117,
    "city": "Alice Springs",
    "country": "Australia",
    "slug": "alice-springs",
@@ -2664,7 +2596,7 @@
    "travel": 5712
   },
   {
-   "rank": 121,
+   "rank": 118,
    "city": "Breda",
    "country": "Netherlands",
    "slug": "breda",
@@ -2686,7 +2618,7 @@
    "travel": 2561
   },
   {
-   "rank": 122,
+   "rank": 119,
    "city": "Caserta",
    "country": "Italy",
    "slug": "caserta",
@@ -2708,7 +2640,7 @@
    "travel": 632
   },
   {
-   "rank": 123,
+   "rank": 120,
    "city": "Funchal",
    "country": "Portugal",
    "slug": "funchal",
@@ -2730,7 +2662,7 @@
    "travel": 3769
   },
   {
-   "rank": 124,
+   "rank": 121,
    "city": "Sacramento",
    "country": "United States",
    "slug": "sacramento",
@@ -2752,7 +2684,7 @@
    "travel": 5660
   },
   {
-   "rank": 125,
+   "rank": 122,
    "city": "Bruges",
    "country": "Belgium",
    "slug": "bruges",
@@ -2774,7 +2706,7 @@
    "travel": 5604
   },
   {
-   "rank": 126,
+   "rank": 123,
    "city": "Vilnius",
    "country": "Lithuania",
    "slug": "vilnius",
@@ -2796,7 +2728,7 @@
    "travel": 14797
   },
   {
-   "rank": 127,
+   "rank": 124,
    "city": "Avignon",
    "country": "France",
    "slug": "avignon",
@@ -2818,7 +2750,7 @@
    "travel": 5538
   },
   {
-   "rank": 128,
+   "rank": 125,
    "city": "San Diego",
    "country": "United States",
    "slug": "san-diego",
@@ -2840,7 +2772,7 @@
    "travel": 5530
   },
   {
-   "rank": 129,
+   "rank": 126,
    "city": "Galway",
    "country": "Ireland",
    "slug": "galway",
@@ -2862,7 +2794,7 @@
    "travel": 3645
   },
   {
-   "rank": 130,
+   "rank": 127,
    "city": "Phuket",
    "country": "Thailand",
    "slug": "phuket",
@@ -2884,7 +2816,7 @@
    "travel": 10930
   },
   {
-   "rank": 131,
+   "rank": 128,
    "city": "Rovaniemi",
    "country": "Finland",
    "slug": "rovaniemi",
@@ -2906,7 +2838,7 @@
    "travel": 5383
   },
   {
-   "rank": 132,
+   "rank": 129,
    "city": "Guimaraes",
    "country": "Portugal",
    "slug": "guimaraes",
@@ -2928,7 +2860,7 @@
    "travel": 1269
   },
   {
-   "rank": 133,
+   "rank": 130,
    "city": "Philadelphia",
    "country": "United States",
    "slug": "philadelphia",
@@ -2950,7 +2882,7 @@
    "travel": 5341
   },
   {
-   "rank": 134,
+   "rank": 131,
    "city": "Aarhus",
    "country": "Denmark",
    "slug": "aarhus",
@@ -2972,7 +2904,7 @@
    "travel": 20920
   },
   {
-   "rank": 135,
+   "rank": 132,
    "city": "Trieste",
    "country": "Italy",
    "slug": "trieste",
@@ -2994,7 +2926,7 @@
    "travel": 5727
   },
   {
-   "rank": 136,
+   "rank": 133,
    "city": "Sapporo",
    "country": "Japan",
    "slug": "sapporo",
@@ -3016,7 +2948,7 @@
    "travel": 3513
   },
   {
-   "rank": 137,
+   "rank": 134,
    "city": "Warsaw",
    "country": "Poland",
    "slug": "warsaw",
@@ -3038,7 +2970,7 @@
    "travel": 9607
   },
   {
-   "rank": 138,
+   "rank": 135,
    "city": "Salt Lake City",
    "country": "United States",
    "slug": "salt-lake-city",
@@ -3060,7 +2992,7 @@
    "travel": 5156
   },
   {
-   "rank": 139,
+   "rank": 136,
    "city": "Lagos",
    "country": "Portugal",
    "slug": "lagos",
@@ -3083,7 +3015,7 @@
    "travel": 3430
   },
   {
-   "rank": 140,
+   "rank": 137,
    "city": "Lund",
    "country": "Sweden",
    "slug": "lund",
@@ -3105,7 +3037,7 @@
    "travel": 5141
   },
   {
-   "rank": 141,
+   "rank": 138,
    "city": "Las Vegas",
    "country": "United States",
    "slug": "las-vegas",
@@ -3127,7 +3059,7 @@
    "travel": 19286
   },
   {
-   "rank": 142,
+   "rank": 139,
    "city": "Kobe",
    "country": "Japan",
    "slug": "kobe",
@@ -3149,7 +3081,7 @@
    "travel": 3404
   },
   {
-   "rank": 143,
+   "rank": 140,
    "city": "Cardiff",
    "country": "United Kingdom",
    "slug": "cardiff",
@@ -3171,7 +3103,7 @@
    "travel": 5085
   },
   {
-   "rank": 144,
+   "rank": 141,
    "city": "Heraklion",
    "country": "Greece",
    "slug": "heraklion",
@@ -3193,7 +3125,7 @@
    "travel": 4963
   },
   {
-   "rank": 145,
+   "rank": 142,
    "city": "Marseille",
    "country": "France",
    "slug": "marseille",
@@ -3215,7 +3147,7 @@
    "travel": 4964
   },
   {
-   "rank": 146,
+   "rank": 143,
    "city": "Sydney",
    "country": "Australia",
    "slug": "sydney",
@@ -3237,7 +3169,7 @@
    "travel": 19694
   },
   {
-   "rank": 147,
+   "rank": 144,
    "city": "Lausanne",
    "country": "Switzerland",
    "slug": "lausanne",
@@ -3259,7 +3191,7 @@
    "travel": 4900
   },
   {
-   "rank": 148,
+   "rank": 145,
    "city": "Riga",
    "country": "Latvia",
    "slug": "riga",
@@ -3281,7 +3213,7 @@
    "travel": 4904
   },
   {
-   "rank": 149,
+   "rank": 146,
    "city": "Oxford",
    "country": "United Kingdom",
    "slug": "oxford",
@@ -3303,7 +3235,7 @@
    "travel": 4851
   },
   {
-   "rank": 150,
+   "rank": 147,
    "city": "Split",
    "country": "Croatia",
    "slug": "split",
@@ -3325,7 +3257,7 @@
    "travel": 3874
   },
   {
-   "rank": 151,
+   "rank": 148,
    "city": "Den Bosch",
    "country": "Netherlands",
    "slug": "den-bosch",
@@ -3347,7 +3279,7 @@
    "travel": 1425
   },
   {
-   "rank": 152,
+   "rank": 149,
    "city": "Christchurch",
    "country": "New Zealand",
    "slug": "christchurch",
@@ -3369,7 +3301,7 @@
    "travel": 4834
   },
   {
-   "rank": 153,
+   "rank": 150,
    "city": "Nagoya",
    "country": "Japan",
    "slug": "nagoya",
@@ -3391,7 +3323,7 @@
    "travel": 3168
   },
   {
-   "rank": 154,
+   "rank": 151,
    "city": "Miami",
    "country": "United States",
    "slug": "miami",
@@ -3413,7 +3345,7 @@
    "travel": 4740
   },
   {
-   "rank": 155,
+   "rank": 152,
    "city": "Palma de Mallorca",
    "country": "Spain",
    "slug": "palma-de-mallorca",
@@ -3435,7 +3367,7 @@
    "travel": 2838
   },
   {
-   "rank": 156,
+   "rank": 153,
    "city": "Auckland",
    "country": "New Zealand",
    "slug": "auckland",
@@ -3457,7 +3389,7 @@
    "travel": 4673
   },
   {
-   "rank": 157,
+   "rank": 154,
    "city": "Zaragoza",
    "country": "Spain",
    "slug": "zaragoza",
@@ -3479,7 +3411,7 @@
    "travel": 2902
   },
   {
-   "rank": 158,
+   "rank": 155,
    "city": "Basel",
    "country": "Switzerland",
    "slug": "basel",
@@ -3501,7 +3433,7 @@
    "travel": 4588
   },
   {
-   "rank": 159,
+   "rank": 156,
    "city": "Cordoba",
    "country": "Spain",
    "slug": "cordoba",
@@ -3524,7 +3456,7 @@
    "travel": 1654
   },
   {
-   "rank": 160,
+   "rank": 157,
    "city": "Frankfurt",
    "country": "Germany",
    "slug": "frankfurt",
@@ -3546,7 +3478,7 @@
    "travel": 18059
   },
   {
-   "rank": 161,
+   "rank": 158,
    "city": "Menorca",
    "country": "Spain",
    "slug": "menorca",
@@ -3569,7 +3501,7 @@
    "why_pooled": "The Balears register is already imported at data/registers/balears-arbres-singulars.json, so supply may be in hand already rather than needing a scout."
   },
   {
-   "rank": 162,
+   "rank": 159,
    "city": "Bergamo",
    "country": "Italy",
    "slug": "bergamo",
@@ -3591,7 +3523,7 @@
    "travel": 2289
   },
   {
-   "rank": 163,
+   "rank": 160,
    "city": "New Orleans",
    "country": "United States",
    "slug": "new-orleans",
@@ -3613,7 +3545,7 @@
    "travel": 4428
   },
   {
-   "rank": 164,
+   "rank": 161,
    "city": "Tasmania",
    "country": "Australia",
    "slug": "tasmania",
@@ -3636,7 +3568,7 @@
    "kind": "island"
   },
   {
-   "rank": 165,
+   "rank": 162,
    "city": "Naha",
    "country": "Japan",
    "slug": "naha",
@@ -3659,7 +3591,7 @@
    "travel": 2842
   },
   {
-   "rank": 166,
+   "rank": 163,
    "city": "Bordeaux",
    "country": "France",
    "slug": "bordeaux",
@@ -3681,7 +3613,7 @@
    "travel": 3041
   },
   {
-   "rank": 167,
+   "rank": 164,
    "city": "Ravenna",
    "country": "Italy",
    "slug": "ravenna",
@@ -3703,7 +3635,7 @@
    "travel": 2773
   },
   {
-   "rank": 168,
+   "rank": 165,
    "city": "San Sebastian",
    "country": "Spain",
    "slug": "san-sebastian",
@@ -3725,7 +3657,7 @@
    "travel": 2802
   },
   {
-   "rank": 169,
+   "rank": 166,
    "city": "Belfast",
    "country": "United Kingdom",
    "slug": "belfast",
@@ -3747,7 +3679,7 @@
    "travel": 4149
   },
   {
-   "rank": 170,
+   "rank": 167,
    "city": "Perth",
    "country": "Australia",
    "slug": "perth",
@@ -3769,7 +3701,7 @@
    "travel": 16418
   },
   {
-   "rank": 171,
+   "rank": 168,
    "city": "Tel Aviv",
    "country": "Israel",
    "slug": "tel-aviv",
@@ -3791,7 +3723,7 @@
    "travel": 4091
   },
   {
-   "rank": 172,
+   "rank": 169,
    "city": "Stuttgart",
    "country": "Germany",
    "slug": "stuttgart",
@@ -3813,7 +3745,7 @@
    "travel": 4085
   },
   {
-   "rank": 173,
+   "rank": 170,
    "city": "Arnhem",
    "country": "Netherlands",
    "slug": "arnhem",
@@ -3835,7 +3767,7 @@
    "travel": 1821
   },
   {
-   "rank": 174,
+   "rank": 171,
    "city": "Interlaken",
    "country": "Switzerland",
    "slug": "interlaken",
@@ -3857,7 +3789,7 @@
    "travel": 4061
   },
   {
-   "rank": 175,
+   "rank": 172,
    "city": "Salzburg",
    "country": "Austria",
    "slug": "salzburg",
@@ -3879,7 +3811,7 @@
    "travel": 2711
   },
   {
-   "rank": 176,
+   "rank": 173,
    "city": "Como",
    "country": "Italy",
    "slug": "como",
@@ -3901,7 +3833,7 @@
    "travel": 3846
   },
   {
-   "rank": 177,
+   "rank": 174,
    "city": "Azores",
    "country": "Portugal",
    "slug": "azores",
@@ -3924,7 +3856,7 @@
    "kind": "island"
   },
   {
-   "rank": 178,
+   "rank": 175,
    "city": "Kanazawa",
    "country": "Japan",
    "slug": "kanazawa",
@@ -3946,7 +3878,7 @@
    "travel": 2531
   },
   {
-   "rank": 179,
+   "rank": 176,
    "city": "Stockholm",
    "country": "Sweden",
    "slug": "stockholm",
@@ -3968,7 +3900,7 @@
    "travel": 11280
   },
   {
-   "rank": 180,
+   "rank": 177,
    "city": "Nantes",
    "country": "France",
    "slug": "nantes",
@@ -3990,7 +3922,7 @@
    "travel": 3835
   },
   {
-   "rank": 181,
+   "rank": 178,
    "city": "Kuala Lumpur",
    "country": "Malaysia",
    "slug": "kuala-lumpur",
@@ -4012,7 +3944,7 @@
    "travel": 7609
   },
   {
-   "rank": 182,
+   "rank": 179,
    "city": "Taormina",
    "country": "Italy",
    "slug": "taormina",
@@ -4034,7 +3966,7 @@
    "travel": 2350
   },
   {
-   "rank": 183,
+   "rank": 180,
    "city": "Niagara Falls",
    "country": "Canada",
    "slug": "niagara-falls",
@@ -4056,7 +3988,7 @@
    "travel": 3680
   },
   {
-   "rank": 184,
+   "rank": 181,
    "city": "Los Angeles",
    "country": "United States",
    "slug": "los-angeles",
@@ -4078,7 +4010,7 @@
    "travel": 14409
   },
   {
-   "rank": 185,
+   "rank": 182,
    "city": "Austin",
    "country": "United States",
    "slug": "austin",
@@ -4101,7 +4033,7 @@
    "travel": 3648
   },
   {
-   "rank": 186,
+   "rank": 183,
    "city": "Strasbourg",
    "country": "France",
    "slug": "strasbourg",
@@ -4123,7 +4055,7 @@
    "travel": 9796
   },
   {
-   "rank": 187,
+   "rank": 184,
    "city": "Perugia",
    "country": "Italy",
    "slug": "perugia",
@@ -4145,7 +4077,7 @@
    "travel": 1149
   },
   {
-   "rank": 188,
+   "rank": 185,
    "city": "Wellington",
    "country": "New Zealand",
    "slug": "wellington",
@@ -4167,7 +4099,7 @@
    "travel": 3595
   },
   {
-   "rank": 189,
+   "rank": 186,
    "city": "Rothenburg ob der Tauber",
    "country": "Germany",
    "slug": "rothenburg-ob-der-tauber",
@@ -4189,7 +4121,7 @@
    "travel": 3085
   },
   {
-   "rank": 190,
+   "rank": 187,
    "city": "Bangkok",
    "country": "Thailand",
    "slug": "bangkok",
@@ -4211,7 +4143,7 @@
    "travel": 26588
   },
   {
-   "rank": 191,
+   "rank": 188,
    "city": "Belgrade",
    "country": "Serbia",
    "slug": "belgrade",
@@ -4233,7 +4165,31 @@
    "travel": 6639
   },
   {
-   "rank": 192,
+   "rank": 189,
+   "city": "Hawaii",
+   "country": "United States",
+   "slug": "hawaii",
+   "score": 3.1,
+   "demand": null,
+   "basis": "published, never ranked (may be uncrawled)",
+   "status": "published",
+   "trees": 6,
+   "photos": 0,
+   "walks": 1,
+   "register": 6,
+   "ready": 0,
+   "supply": 6,
+   "target": 10,
+   "impressions_10d": 0,
+   "clicks_10d": 0,
+   "ease": 1.12,
+   "work_score": 3.47,
+   "travel": 12388,
+   "why_pooled": "The Big Island, distinct from Kauai, Maui and Oahu which are already ranked. Hawaii has an Exceptional Trees law with county registries behind it, which is a register in all but name.",
+   "note": "Rank 43 was worked on 2026-08-17 and produced data/cities/hilo.json, five protected trees in and around the town of Hilo, three of them in Kalakaua Park. The ISLAND row stays pending on purpose: Kona, Volcano and the Hamakua coast are untouched and the register holds 30 more publishable Big Island trees, so a page called Hawaii would promise an island and deliver a town."
+  },
+  {
+   "rank": 190,
    "city": "Montpellier",
    "country": "France",
    "slug": "montpellier",
@@ -4255,7 +4211,7 @@
    "travel": 3470
   },
   {
-   "rank": 193,
+   "rank": 191,
    "city": "Ljubljana",
    "country": "Slovenia",
    "slug": "ljubljana",
@@ -4277,7 +4233,7 @@
    "travel": 11929
   },
   {
-   "rank": 194,
+   "rank": 192,
    "city": "Kotor",
    "country": "Montenegro",
    "slug": "kotor",
@@ -4299,7 +4255,7 @@
    "travel": 6858
   },
   {
-   "rank": 195,
+   "rank": 193,
    "city": "Rhodes",
    "country": "Greece",
    "slug": "rhodes",
@@ -4321,7 +4277,7 @@
    "travel": 3425
   },
   {
-   "rank": 196,
+   "rank": 194,
    "city": "Brighton",
    "country": "United Kingdom",
    "slug": "brighton",
@@ -4343,7 +4299,7 @@
    "travel": 3402
   },
   {
-   "rank": 197,
+   "rank": 195,
    "city": "Busan",
    "country": "South Korea",
    "slug": "busan",
@@ -4365,7 +4321,7 @@
    "travel": 3315
   },
   {
-   "rank": 198,
+   "rank": 196,
    "city": "Chania",
    "country": "Greece",
    "slug": "chania",
@@ -4387,7 +4343,7 @@
    "travel": 3299
   },
   {
-   "rank": 199,
+   "rank": 197,
    "city": "Segovia",
    "country": "Spain",
    "slug": "segovia",
@@ -4409,7 +4365,7 @@
    "travel": 2167
   },
   {
-   "rank": 200,
+   "rank": 198,
    "city": "Cape Town",
    "country": "South Africa",
    "slug": "cape-town",
@@ -4431,7 +4387,7 @@
    "travel": 6575
   },
   {
-   "rank": 201,
+   "rank": 199,
    "city": "Santiago",
    "country": "Chile",
    "slug": "santiago",
@@ -4454,7 +4410,7 @@
    "travel": 3251
   },
   {
-   "rank": 202,
+   "rank": 200,
    "city": "Sarajevo",
    "country": "Bosnia and Herzegovina",
    "slug": "sarajevo",
@@ -4476,7 +4432,7 @@
    "travel": 6310
   },
   {
-   "rank": 203,
+   "rank": 201,
    "city": "Trento",
    "country": "Italy",
    "slug": "trento",
@@ -4498,7 +4454,7 @@
    "travel": 1504
   },
   {
-   "rank": 204,
+   "rank": 202,
    "city": "Seattle",
    "country": "United States",
    "slug": "seattle",
@@ -4520,7 +4476,7 @@
    "travel": 12434
   },
   {
-   "rank": 205,
+   "rank": 203,
    "city": "Lucerne",
    "country": "Switzerland",
    "slug": "lucerne",
@@ -4542,7 +4498,7 @@
    "travel": 3098
   },
   {
-   "rank": 206,
+   "rank": 204,
    "city": "Dallas",
    "country": "United States",
    "slug": "dallas",
@@ -4564,7 +4520,7 @@
    "travel": 12294
   },
   {
-   "rank": 207,
+   "rank": 205,
    "city": "Malmo",
    "country": "Sweden",
    "slug": "malmo",
@@ -4586,7 +4542,7 @@
    "travel": 3068
   },
   {
-   "rank": 208,
+   "rank": 206,
    "city": "Lille",
    "country": "France",
    "slug": "lille",
@@ -4608,7 +4564,7 @@
    "travel": 3064
   },
   {
-   "rank": 209,
+   "rank": 207,
    "city": "Savannah",
    "country": "United States",
    "slug": "savannah",
@@ -4631,7 +4587,7 @@
    "travel": 3046
   },
   {
-   "rank": 210,
+   "rank": 208,
    "city": "Brisbane",
    "country": "Australia",
    "slug": "brisbane",
@@ -4653,7 +4609,7 @@
    "travel": 12731
   },
   {
-   "rank": 211,
+   "rank": 209,
    "city": "Hobart",
    "country": "Australia",
    "slug": "hobart",
@@ -4675,7 +4631,7 @@
    "travel": 4922
   },
   {
-   "rank": 212,
+   "rank": 210,
    "city": "Corsica",
    "country": "France",
    "slug": "corsica",
@@ -4698,7 +4654,7 @@
    "kind": "island"
   },
   {
-   "rank": 213,
+   "rank": 211,
    "city": "Sao Paulo",
    "country": "Brazil",
    "slug": "sao-paulo",
@@ -4720,7 +4676,7 @@
    "travel": 5929
   },
   {
-   "rank": 214,
+   "rank": 212,
    "city": "Mechelen",
    "country": "Belgium",
    "slug": "mechelen",
@@ -4742,7 +4698,7 @@
    "travel": 2931
   },
   {
-   "rank": 215,
+   "rank": 213,
    "city": "Nuremberg",
    "country": "Germany",
    "slug": "nuremberg",
@@ -4762,6 +4718,50 @@
    "impressions_10d": 0,
    "clicks_10d": 0,
    "travel": 7756
+  },
+  {
+   "rank": 214,
+   "city": "Bilbao",
+   "country": "Spain",
+   "slug": "bilbao",
+   "score": 1.93,
+   "demand": 133133,
+   "basis": "published, never ranked (may be uncrawled)",
+   "status": "published",
+   "trees": 4,
+   "photos": 0,
+   "walks": 1,
+   "register": 0,
+   "ready": 0,
+   "supply": 0,
+   "target": 10,
+   "impressions_10d": 0,
+   "clicks_10d": 0,
+   "ease": 1.5,
+   "work_score": 2.9,
+   "travel": 7722
+  },
+  {
+   "rank": 215,
+   "city": "Ottawa",
+   "country": "Canada",
+   "slug": "ottawa",
+   "score": 1.91,
+   "demand": null,
+   "basis": "published, never ranked (may be uncrawled)",
+   "status": "published",
+   "trees": 8,
+   "photos": 0,
+   "walks": 1,
+   "register": 119,
+   "ready": 0,
+   "supply": 119,
+   "target": 10,
+   "impressions_10d": 0,
+   "clicks_10d": 0,
+   "ease": 1.5,
+   "work_score": 2.86,
+   "travel": 7621
   },
   {
    "rank": 216,
