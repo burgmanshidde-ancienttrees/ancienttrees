@@ -3,9 +3,9 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Groningen's oldest tree keeps company with cows, not city planners: a lime planted in 1684 still stands before a private farmhouse northeast of the centre, decades before Groningen laid out a single public park. Its younger rivals cluster in the Sterrebos, an 18th-century star-shaped forest whose oaks turned out, after a 2024 storm and a ring count, to be far older than anyone had assumed. One of the park's rarest trees, a sessile oak spared from a paving project in 2025, is still fighting for root space today.",
-  "meta_description": "Groningen's oldest tree is a 1684 lime at a private farm, older than any tree in its parks. Sixteen verified locations, real stories, one under threat.",
+  "meta_description": "Groningen's oldest tree is a 1684 lime at a private farm, older than any tree in its parks. Nineteen verified locations, real stories, one under threat.",
   "question_answer": "Groningen's oldest tree is a Common Lime at De Rollen, a moated farm on the city's northeastern edge, planted in 1684 and now roughly 340 years old. The Dutch national heritage register calls it plainly the oldest tree in the province, older than anything in the city's own celebrated parks by more than a century.",
-  "question_meta": "A 1684 lime at a moated farm called De Rollen, on Groningen's edge, is the city and province's oldest documented tree. The full sixteen.",
+  "question_meta": "A 1684 lime at a moated farm called De Rollen, on Groningen's edge, is the city and province's oldest documented tree. The full nineteen.",
   "question_context": "Groningen's age claims split cleanly into documented and inferred. The Common Lime at De Rollen carries an actual date, 1684, recorded in the Rijksdienst voor het Cultureel Erfgoed's own listing for the farm and repeated in the municipality's 2018 monumental tree policy, which is why it anchors this page as the oldest tree in the city despite standing on private farmland rather than in a park built for visitors. Sterrebos's surviving oaks come close on a technicality: when a storm toppled one of their number in January 2024, a ring count revealed a germination year of around 1758, nearly 130 years earlier than the previous estimate, and heritage officials now assume its still-standing neighbours share that birth year, though none of the survivors have themselves been individually dated. The rest of the list is honestly younger and more provisional: Noorderplantsoen's ginkgo rests on a single municipal source, and Groenestein's plane tree is inferred from the size of its trunk and the age of the estate around it rather than any planting record. None of that uncertainty is unusual for trees planted before anyone thought to write the date down.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Groningen's remarkable trees free to visit?",
-      "a": "All are free. Fifteen of the sixteen stand on public ground; the De Rollen lime is on working farmland and is visible only from the public road, Noorddijkerweg. Most public trees are open at any time, though the walled Prinsentuin garden and the Oude Hortus keep their own daily opening hours."
+      "a": "All are free. Eighteen of the nineteen stand on public ground; the De Rollen lime is on working farmland and is visible only from the public road, Noorddijkerweg. Most public trees are open at any time, though the walled Prinsentuin garden and the Oude Hortus keep their own daily opening hours."
     },
     {
       "q": "What is Groningen's rarest tree?",
@@ -519,6 +519,95 @@
       "curation_status": "ai_generated",
       "verify_notes": "Register (netherlands-lrmb nr 1680852, n_trees: 2) records this Quercus petraea Mespilifolia (medlar-leaved sessile oak, one of the best-known cultivars of the species, with a broad loose crown, somewhat drooping branches and shallow-grooved bark on old specimens like this one) on the east edge of Noorderplantsoen near Werfstraat 10. Register text notes the registration covers a small group but singles out the specimen clearly visible from the adjoining residential street as the genuinely monumental one. Planted_band 1880-1890, consistent with the parks 1880 opening (Rijksmonument since 1971 per Wikipedia); age estimate ~136-146 years as of 2026. As with the plane-tree pair above, the pin represents a small group rather than one exact trunk, so location_precision is approximate. Second source: English Wikipedias Noorderplantsoen article confirms the parks 1880 opening, protected status and its stated diversity of over fifty tree species, of which this cultivar oak is one of the more distinctive.",
       "story": "Most oaks in Noorderplantsoen are the ordinary native kind, but this one carries a cultivar name, Mespilifolia, medlar-leaved, for foliage that reads narrower and more textured than a typical sessile oak's. It grows on the park's eastern edge, clearly visible from the residential street the park backs onto, which is exactly why the Dutch national monumental tree register singles it out from the small group it was registered alongside as the specimen worth calling monumental.\n\nQuercus petraea \"Mespilifolia\" grows a broad, loose crown with branches that droop slightly at the tips, and old specimens like this one develop a shallow-grooved bark distinct from the deeper furrows of a standard sessile oak. The register dates the planting to the 1880s, putting it close in age to the park's own founding in 1880, when the city converted its demolished city-wall moat into the landscaped park that still carries national monument protection today.\n\nOne of more than fifty tree species planted along Noorderplantsoen's paths, this oak is the kind of tree a visitor might walk past without a second look from the street side and stop for once they know the cultivar name to look for. Free, public parkland, roughly a fifteen minute walk from Centraal station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "gro_017",
+      "name": "The Plane Tree of Poortershoes",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "about 180 years",
+      "age_min": 175,
+      "age_max": 185,
+      "girth_cm": null,
+      "location": {
+        "address": "Oosterweg 13, in front of the Poortershoes, Groningen",
+        "latitude": 53.212442,
+        "longitude": 6.574856,
+        "neighbourhood": "Oosterpoort"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1696114)",
+        "https://www.monumentaltrees.com/nl/nld/groningen/groningen/30546_oosterweg13/"
+      ],
+      "access": "Free, stands along the public Oosterweg street in front of the Poortershoes, now a busy neighbourhood community centre; open at any time",
+      "transport": "About a 20-25 minute walk or short bus ride from Groningen Centraal station, in the Oosterpoort neighbourhood",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This plane is older than the building it fronts. The Poortershoes at Oosterweg 13 went up in 1881 as a school for the children of Groningen's bargemen, but the city's own archive dates the tree in front of it to 1846, thirty five years earlier, which makes it a monument in its own right rather than a landscaping choice that came with the building.\n\nIt has had the last laugh since. The school closed long ago and the building is now a neighbourhood community centre for Oosterpoort, while the plane keeps growing against it: the register notes the tree leans slightly from competing with the facade for light, and its roots have started pushing against the wall hard enough to crack the masonry. Nobody has cut it back for that.\n\nAt roughly 180 years old it is healthy and in good structure by the city's own assessment, standing right on the public street rather than behind any gate, in front of a building that has already outlived one purpose and is well into its second.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "gro_018",
+      "name": "The ANWB Linden of Wilhelminakade",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "about 100 years",
+      "age_min": 96,
+      "age_max": 106,
+      "girth_cm": null,
+      "location": {
+        "address": "Wilhelminakade, corner of Oranjesingel, Groningen",
+        "latitude": 53.219796,
+        "longitude": 6.553689,
+        "neighbourhood": "Oranjebuurt"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1683807)"
+      ],
+      "access": "Free, public street corner, open at any time",
+      "transport": "About a 15 minute walk from Groningen Centraal station, west of Noorderplantsoen",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The organisation this tree was planted for was not yet fifty years old when it got its own tree, whatever the sign says. Groningen planted a line of lindens along the Wilhelminakade in 1928 to honour the ANWB, then still a cyclists' union rather than the roadside-assistance name it later became, and the register calls it the union's fiftieth anniversary. The ANWB itself dates its founding to 1883, which makes 1928 the forty fifth year, not the fiftieth. Nobody has explained the gap, and this page will not invent one.\n\nThe tree itself is plainer than its arithmetic problem. It is a common lime on a street corner, healthy apart from one dead branch, its base ringed with dozens of small knobbly regrowth points where the city has repeatedly cut back suckering growth over the better part of a century. That kind of pollarding scar is usually the surest sign of a genuinely old street tree: a young one has not been cut back often enough to show it.\n\nFree to see, on the public corner of Wilhelminakade and Oranjesingel, no gate involved.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "gro_019",
+      "name": "The Wedding Lime of Herewegbuurt",
+      "species": "Lime (Tilia sp., recorded by the register as \"zwarte linde\"/black lime)",
+      "age_estimate": "about 90 years",
+      "age_min": 85,
+      "age_max": 92,
+      "girth_cm": null,
+      "location": {
+        "address": "Verlengde Oosterweg 2, small park at the corner of three streets, Groningen",
+        "latitude": 53.208381,
+        "longitude": 6.577455,
+        "neighbourhood": "Herewegbuurt (Oud-Zuid)"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1683805)",
+        "https://nl.wikipedia.org/wiki/Oranjeboom_(herdenkingsboom)"
+      ],
+      "access": "Free, small public park/playground on a street corner, open at any time",
+      "transport": "About a 20 minute walk or short bus ride from Groningen Centraal station, in the Herewegbuurt south of the centre",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This lime was planted for a wedding that took place five hundred kilometres away. On 7 January 1937 Princess Juliana married Prince Bernhard in The Hague, and Dutch municipalities across the country marked the occasion the way they had for royal weddings for a century before smartphones existed: by planting a tree. Groningen put this one on a small playground at the corner of three streets in Herewegbuurt, one black lime among what Wikipedia's own record of the tradition shows were dozens planted the same year in towns from Beekbergen to Bodegraven.\n\nNinety years on, the city rates its condition as reasonable rather than excellent, and its trunk has thickened by about fifty centimetres of girth over the last twenty years of measurement alone. A bench now circles the base, which is either a sign of respect or the easiest way to stop anyone parking a bike against the trunk.\n\nFree, public and unfenced, sharing a corner with a children's playground. Nobody has pinned down the tree's exact cultivar, so if you know limes, the page could use your eye.",
       "photo": {
         "url": null,
         "license": null,
