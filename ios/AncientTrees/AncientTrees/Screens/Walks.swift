@@ -49,11 +49,24 @@ struct WalkDetail: View {
 
     private var trees: [Tree] { catalogue.trees(of: walk) }
 
+    /// The cached routed shape when there is one, otherwise the order the trees
+    /// are visited. The map draws the second dashed so nobody reads it as a path.
+    private var routeLine: [CLLocationCoordinate2D] {
+        if let shape = walk.shape, shape.count > 1 {
+            return shape.compactMap { p in
+                p.count == 2 ? CLLocationCoordinate2D(latitude: p[1], longitude: p[0]) : nil
+            }
+        }
+        return trees.map { .init(latitude: $0.lat, longitude: $0.lng) }
+    }
+
     var body: some View {
         ZStack(alignment: .bottom) {
             VStack(spacing: 0) {
                 TreeMap(trees: trees,
                         focus: trees.first.map { .init(latitude: $0.lat, longitude: $0.lng) },
+                        route: routeLine,
+                        routeIsReal: walk.shape != nil,
                         selected: $selected)
                     .frame(maxHeight: .infinity)
                 List {
@@ -77,7 +90,16 @@ struct WalkDetail: View {
                 .listStyle(.plain)
                 .frame(height: 240)
             }
-            beginBar
+            VStack(spacing: 0) {
+                if walk.shape == nil {
+                    Text("The line shows the order, not the route: nobody has walked this one for us yet.")
+                        .font(.caption2).foregroundStyle(.secondary)
+                        .padding(.horizontal, 16).padding(.vertical, 6)
+                        .frame(maxWidth: .infinity)
+                        .background(.bar)
+                }
+                beginBar
+            }
         }
         .navigationTitle(walk.name)
         .navigationBarTitleDisplayMode(.inline)

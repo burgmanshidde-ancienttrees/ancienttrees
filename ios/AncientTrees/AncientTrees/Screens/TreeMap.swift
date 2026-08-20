@@ -24,6 +24,10 @@ final class TreeAnnotation: NSObject, MKAnnotation {
 struct TreeMap: UIViewRepresentable {
     let trees: [Tree]
     var focus: CLLocationCoordinate2D?
+    /// A walk's line. Real when route_walks.py cached a routed shape, otherwise
+    /// the order the trees are visited, which is NOT the path a walker takes.
+    var route: [CLLocationCoordinate2D] = []
+    var routeIsReal = true
     @Binding var selected: Tree?
 
     func makeCoordinator() -> Coordinator { Coordinator(self) }
@@ -38,6 +42,7 @@ struct TreeMap: UIViewRepresentable {
         map.register(ClusterView.self,
                      forAnnotationViewWithReuseIdentifier: MKMapViewDefaultClusterAnnotationViewReuseIdentifier)
         map.addAnnotations(trees.map(TreeAnnotation.init))
+        context.coordinator.setRoute(route, real: routeIsReal, on: map)
         if let focus {
             map.setRegion(MKCoordinateRegion(center: focus,
                                              latitudinalMeters: 4000,
@@ -52,11 +57,39 @@ struct TreeMap: UIViewRepresentable {
         guard have != want else { return }
         map.removeAnnotations(map.annotations.filter { $0 is TreeAnnotation })
         map.addAnnotations(trees.map(TreeAnnotation.init))
+        context.coordinator.setRoute(route, real: routeIsReal, on: map)
     }
 
     final class Coordinator: NSObject, MKMapViewDelegate {
         let parent: TreeMap
+        private var drawn = 0
         init(_ p: TreeMap) { parent = p }
+
+        func setRoute(_ pts: [CLLocationCoordinate2D], real: Bool, on map: MKMapView) {
+            guard pts.count != drawn else { return }
+            drawn = pts.count
+            map.removeOverlays(map.overlays)
+            guard pts.count > 1 else { return }
+            let line = MKPolyline(coordinates: pts, count: pts.count)
+            line.title = real ? "real" : "guessed"
+            map.addOverlay(line)
+        }
+
+        func mapView(_ map: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+            let r = MKPolylineRenderer(overlay: overlay)
+            r.strokeColor = UIColor(red: 0.20, green: 0.35, blue: 0.20, alpha: 0.9)
+            r.lineWidth = 5
+            r.lineCap = .round
+            // A dashed line where we do not have a routed shape, because a solid
+            // line between trunks claims a path nobody checked. 78 of 179 walks
+            // carry a real route; the rest only carry an order.
+            if (overlay.title ?? "") == "guessed" {
+                r.lineDashPattern = [2, 10]
+                r.lineWidth = 4
+                r.strokeColor = UIColor(red: 0.20, green: 0.35, blue: 0.20, alpha: 0.55)
+            }
+            return r
+        }
 
         func mapView(_ map: MKMapView, didSelect view: MKAnnotationView) {
             if let a = view.annotation as? TreeAnnotation {
