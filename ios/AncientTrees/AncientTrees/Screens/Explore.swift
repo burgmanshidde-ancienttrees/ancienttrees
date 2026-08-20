@@ -38,20 +38,47 @@ struct ExploreView: View {
         }
     }
 
+    /// One shelf card. TreeCard already carries the photograph, the heart and
+    /// the ticked state, so this only adds the reason the tree is on this shelf
+    /// at all, which is the thing it is about to do this month.
+    private func seasonCard(_ t: Tree) -> some View {
+        VStack(alignment: .leading, spacing: 6) {
+            TreeCard(tree: t, km: t.distanceKm(from: origin.lat, origin.lng))
+            if let b = t.bestTime {
+                Text(b.label)
+                    .font(.caption).foregroundStyle(.secondary)
+                    .lineLimit(2).fixedSize(horizontal: false, vertical: true)
+                    .padding(.horizontal, 12)
+            }
+        }
+        .frame(width: 260)
+    }
+
     var body: some View {
         List {
             if !atTheirBest.isEmpty {
                 Section {
-                    ForEach(atTheirBest.prefix(5)) { t in
-                        NavigationLink { TreeDetail(tree: t, catalogue: catalogue) } label: {
-                            VStack(alignment: .leading, spacing: 3) {
-                                Text(t.name).font(.subheadline.weight(.medium))
-                                if let b = t.bestTime {
-                                    Text(b.label).font(.caption).foregroundStyle(.secondary)
+                    // A shelf of cards rather than rows of text. This is the best
+                    // idea in the product and it was rendering as a table of
+                    // contents: a list of names in a system font, on the one
+                    // screen whose entire job is to make somebody want to go
+                    // outside this week. The website already draws this as a
+                    // photo shelf and AllTrails leads every list with a picture.
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(alignment: .top, spacing: 12) {
+                            ForEach(atTheirBest.prefix(8)) { t in
+                                NavigationLink {
+                                    TreeDetail(tree: t, catalogue: catalogue)
+                                } label: {
+                                    seasonCard(t)
                                 }
+                                .buttonStyle(.plain)
                             }
                         }
+                        .padding(.horizontal, 16).padding(.vertical, 10)
                     }
+                    .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
+                    .listRowBackground(Color.clear)
                 } header: {
                     Text("At their best in \(monthName)")
                 } footer: {
@@ -69,13 +96,21 @@ struct ExploreView: View {
                         // Gate on intent, and only after one real taste: the
                         // nearest walk opens, the rest ask. Somebody who has
                         // walked one knows what is being sold.
-                        LockedRow(feature: .walkBeyondFirst) { walkRow(w) }
+                        LockedRow(feature: .walkBeyondFirst) {
+                            HStack(alignment: .top) {
+                                walkRow(w)
+                                Spacer(minLength: 8)
+                                Text("Plus")
+                                    .font(.caption2.weight(.semibold))
+                                    .foregroundStyle(.secondary)
+                            }
+                        }
                     }
                 }
             } header: {
                 Text("Walks near you")
             } footer: {
-                Text("The nearest walk is open to everyone.")
+                Text("The nearest walk is open to everyone. The others come with Plus, which is not open yet.")
             }
 
             Section("Places") {
@@ -111,6 +146,22 @@ struct CityView: View {
             Text("\(w.city) · \(w.count) trees · \(w.duration)")
                 .font(.caption).foregroundStyle(.secondary)
         }
+    }
+
+    /// One shelf card. TreeCard already carries the photograph, the heart and
+    /// the ticked state, so this only adds the reason the tree is on this shelf
+    /// at all, which is the thing it is about to do this month.
+    private func seasonCard(_ t: Tree) -> some View {
+        VStack(alignment: .leading, spacing: 6) {
+            TreeCard(tree: t, km: t.distanceKm(from: origin.lat, origin.lng))
+            if let b = t.bestTime {
+                Text(b.label)
+                    .font(.caption).foregroundStyle(.secondary)
+                    .lineLimit(2).fixedSize(horizontal: false, vertical: true)
+                    .padding(.horizontal, 12)
+            }
+        }
+        .frame(width: 260)
     }
 
     var body: some View {

@@ -16,6 +16,7 @@ struct ContentView: View {
     @State private var account = Account()
     @State private var nudge = Nudge()
     @State private var rootSheet: RootSheet?
+    @State private var primerAnswered = false
 
     /// Everything the root can put over the app. An enum rather than a pile of
     /// booleans so there is exactly one sheet modifier below.
@@ -49,12 +50,23 @@ struct ContentView: View {
         debugOrigin ?? location.coordinate ?? (lat: 52.3731, lng: 4.8922)   // Dam square
     }
 
+    /// Shown once, and only when iOS has genuinely not been asked yet.
+    private var needsPrimer: Bool {
+        guard debugOrigin == nil || ProcessInfo.processInfo.arguments.contains("-primer") else { return false }
+        if primerAnswered { return false }
+        return location.status == .notDetermined
+    }
+
     var body: some View {
         Group {
             if let cat = store.catalogue {
                 TabView(selection: $tab) {
-                    NavigationStack { MapTab(catalogue: cat, origin: origin,
-                                             located: location.coordinate != nil || debugOrigin != nil) }
+                    NavigationStack {
+                        MapTab(catalogue: cat, origin: origin,
+                               located: location.coordinate != nil || debugOrigin != nil,
+                               locationDenied: location.status == .denied || location.status == .restricted,
+                               onUseMyLocation: { location.request() })
+                    }
                         .tag(0)
                         .tabItem { Label("Map", systemImage: "map.fill") }
 
@@ -100,11 +112,17 @@ struct ContentView: View {
                 ProgressView()
             }
         }
+        .overlay {
+            if needsPrimer {
+                LocationPrimer(treeCount: store.catalogue?.trees.count ?? 0,
+                               onAllow: { primerAnswered = true; location.request() },
+                               onSkip: { primerAnswered = true })
+                    .transition(.opacity)
+            }
+        }
+        .animation(.easeInOut(duration: 0.2), value: needsPrimer)
         .task {
             store.loadBundled()
-            // Forcing an origin with -at= is the screenshot path, and asking for
-            // a permission we are about to ignore only puts a dialog in the way.
-            if debugOrigin == nil { location.request() }
             // Same debug scaffolding as -tab and -at: no simulator panel here,
             // so a screen only reachable by tapping cannot otherwise be looked
             // at before it ships.
@@ -147,11 +165,22 @@ struct NothingNearby: View {
 final class LocationProvider: NSObject, CLLocationManagerDelegate {
     private let manager = CLLocationManager()
     var coordinate: (lat: Double, lng: Double)?
+    /// Exposed so the app can tell the three cases apart: never asked, refused,
+    /// and allowed. They want different screens, and until now nothing could
+    /// distinguish them because nothing read the status at all.
+    var status: CLAuthorizationStatus
 
     override init() {
+        status = manager.authorizationStatus
         super.init()
         manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+        // Deliberately does NOT ask here. The system dialog is a single shot,
+        // and asking it before anybody has been told why is how a refusal
+        // becomes permanent. LocationPrimer asks, and calls request().
+        if status == .authorizedWhenInUse || status == .authorizedAlways {
+            manager.startUpdatingLocation()
+        }
     }
 
     func request() {
@@ -162,6 +191,13 @@ final class LocationProvider: NSObject, CLLocationManagerDelegate {
     func locationManager(_ m: CLLocationManager, didUpdateLocations locs: [CLLocation]) {
         guard let l = locs.last else { return }
         coordinate = (lat: l.coordinate.latitude, lng: l.coordinate.longitude)
+    }
+
+    func locationManagerDidChangeAuthorization(_ m: CLLocationManager) {
+        status = m.authorizationStatus
+        if status == .authorizedWhenInUse || status == .authorizedAlways {
+            m.startUpdatingLocation()
+        }
     }
 
     func locationManager(_ m: CLLocationManager, didFailWithError error: Error) {}
