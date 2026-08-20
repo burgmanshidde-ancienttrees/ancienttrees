@@ -1135,6 +1135,10 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   background: var(--cream); color: var(--ink); border: 1.5px solid var(--cream-dark); }
 .oauth-btn:hover { border-color: var(--ink-light); }
 .account-page .oauth-btn { max-width: 22rem; }
+/* The dialog centres its own text, the account page does not, so the separator
+   between the two ways in was hanging off to the left under a full-width
+   button. */
+.account-page .signin-or { max-width: 22rem; text-align: center; }
 .signin-fine { font-size: 12px !important; margin-top: 0.9rem !important; }
 .nav-group { font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase;
   color: var(--ink-light); margin: 0.5rem 0 0.15rem; padding: 0 0.9rem; }
