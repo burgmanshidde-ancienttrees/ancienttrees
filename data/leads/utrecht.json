@@ -25,7 +25,7 @@
       "longitude": 5.129136,
       "place": "Park Lepelenburg tegenover Swanenberg, a/h water, Utrecht",
       "planted_band": "1910-1920",
-      "reason": "gemeente-owned, visitable ja, in the Lepelenburg cluster alongside utr_016. Not verified this pass."
+      "reason": "gemeente-owned, visitable ja, in the Lepelenburg cluster alongside utr_016. Checked this pass: nl.wikipedia.org/wiki/Lepelenburg names no individual trees at all (only an unrelated note about 4 trees preserved inside a 1955 temporary concert building). kanokaartutrecht.nl's canal-tree route (see utr_018 note) covers Zonnenburg/Stadsbuitengracht/Oudegracht stretches, not Lepelenburg, so no match there either. Still a lead."
     },
     {
       "register_nr": 1678149,
@@ -79,7 +79,7 @@
       "longitude": 5.128047,
       "place": "Tegenover Leeuwenberghkerk, Servaasbolwerk, Utrecht",
       "planted_band": "1890-1900",
-      "reason": "gemeente-owned, visitable ja, visible ja, Servaasbolwerk cluster, same species as utr_015 but different specimen and much older band. Strong candidate for a follow-up pass; not verified this pass for lack of time."
+      "reason": "gemeente-owned, visitable ja, visible ja, Servaasbolwerk cluster, same species as utr_015 but different specimen and much older band. Checked this pass: no independent source found for THIS register nr. kanokaartutrecht.nl's 19-stop canal-side monumental-trees route (see utr_018's verify_notes) does list two other copper beeches nearby, but under different register numbers (1689875 near Stadsbuitengracht/Zonnenburg, girth 400cm; 1688569 near Wittevrouwenbrug, girth 430cm, noted as damaged by reuzenzwam/giant polypore) -- neither is 1688712, so do not bridge these onto this tree. Still a lead; still needs its own source."
     },
     {
       "register_nr": 1688783,
@@ -124,16 +124,7 @@
       "longitude": 5.128886,
       "place": "Aan voetpad noordzijde Sterrenwacht, Servaasbolwerk, Utrecht",
       "planted_band": "1830-1840",
-      "reason": "gemeente-owned, visitable ja, Zonnenburg/Sterrenwacht cluster, one of the oldest bands in the whole candidate set. Strong candidate for a follow-up pass."
-    },
-    {
-      "register_nr": 1678123,
-      "name": "Gewone plataan (Common Plane)",
-      "latitude": 52.08586,
-      "longitude": 5.129031,
-      "place": "Plantsoen a/d Servaasbolwerk, noordzijde Sterrewacht, Utrecht",
-      "planted_band": "1830-1840",
-      "reason": "gemeente-owned, visitable ja, visible ja, Zonnenburg/Sterrenwacht cluster, same age band as utr_013/014. Not verified this pass; strong follow-up candidate."
+      "reason": "gemeente-owned, visitable ja, Zonnenburg/Sterrenwacht cluster, one of the oldest bands in the whole candidate set. Checked this pass: no independent second source found. Searched web + monumentaltrees.com's Zocherpark page (403s automated fetches) + the Bomenstichting 'Langs monumentale bomen in Utrecht' PDF and the Wilhelminapark 'Rondje Oude Reuzen' PDF, both of which use a custom-encoded font that defeats text extraction (tried twice, gave up per the two-attempts rule; a browser-rendered read, not a raw fetch, would be needed). kanokaartutrecht.nl's canal-side monumental-trees route (19 numbered trees, each citing an LRMB register nr, see the Gewone plataan/utr_018 note) does NOT include this hornbeam's register nr among its 19 stops. Still just a lead."
     },
     {
       "register_nr": 1691749,
