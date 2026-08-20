@@ -2728,6 +2728,24 @@
     "note": "3 SITG-register cedars added to the existing Mon Repos/Botanical Garden/La Grange walk stops; all single-source flagged, no independent second source found for any of the three within the window",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "utrecht",
+    "kind": "verify",
+    "tokens": 160000,
+    "trees": 7,
+    "note": "Register-led verify pass, Wilhelminapark and Servaasbolwerk/Zonnenburg/Lepelenburg bastion-park clusters; 7 shipped (2 flagged: a genuine source date conflict, a park-level-only second source), 18 leads and 14 blocked recorded",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "groningen",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 6,
+    "note": "Register-led verify pass, Oude Hortus and Nieuwe Kerkhof/Noorderplantsoen clusters; 6 shipped (1 flagged), caught and dropped a search-summary fabrication trap (Utrecht's ginkgo claim wrongly attached to Groningen's); 4 blocked (2 private courtyards, 2 already-felled), 3 leads",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
