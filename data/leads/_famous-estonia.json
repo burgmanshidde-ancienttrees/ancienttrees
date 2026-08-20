@@ -1,0 +1,61 @@
+{
+ "country": "Estonia",
+ "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+ "leads": [
+  {
+   "name": "Offering trees in Estonia",
+   "lat": 59.5301299,
+   "lng": 25.90451902,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:13001_Kalmistu.jpg",
+    "https://commons.wikimedia.org/wiki/File:13002_Ohvrip%C3%A4rn_P%C3%BCha_p%C3%A4rn.jpg",
+    "https://commons.wikimedia.org/wiki/File:H%C3%A4rm%C3%A4_m%C3%A4nd_ja_ts%C3%A4sson_2013_s%C3%BCgis.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Haabersti white willow",
+   "lat": null,
+   "lng": null,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Haabersti_h%C3%B5beremmelgas,_white_willow_in_Haabersti,_Tallinn_(Salix_alba)_01.jpg",
+    "https://commons.wikimedia.org/wiki/File:Haabersti_h%C3%B5beremmelgas,_white_willow_in_Haabersti,_Tallinn_(Salix_alba)_02.jpg",
+    "https://commons.wikimedia.org/wiki/File:Haabersti_h%C3%B5beremmelgas,_white_willow_in_Haabersti,_Tallinn_(Salix_alba)_03.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Mäe Niin",
+   "lat": 59.272208,
+   "lng": 24.829189,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:M%C3%A4e_niin.jpg",
+    "https://commons.wikimedia.org/wiki/File:M%C3%A4e_niin_2.jpg",
+    "https://commons.wikimedia.org/wiki/File:P%C3%A4rn.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Quercus robur in Estonia (famous specimens)",
+   "lat": null,
+   "lng": null,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Harilik_tamm_talvel.jpg",
+    "https://commons.wikimedia.org/wiki/File:Jaaksoni_tamm.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kaarli_tamm_OlariPilnik-50_1.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Sargvere ash",
+   "lat": null,
+   "lng": null,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Sargvere_park.jpg",
+    "https://commons.wikimedia.org/wiki/File:Sargvere_saar.jpg",
+    "https://commons.wikimedia.org/wiki/File:Sargvere_saar_2019_-_001.jpg"
+   ],
+   "status": "lead"
+  }
+ ]
+}
