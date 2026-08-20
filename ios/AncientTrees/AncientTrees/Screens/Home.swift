@@ -43,27 +43,49 @@ struct HomeView: View {
     let origin: (lat: Double, lng: Double)
     @Environment(CatalogueStore.self) private var store
     @State private var search = ""
+    /// Worked out once rather than on every redraw.
+    ///
+    /// These were computed properties, and each of them groups or sorts all
+    /// 1,535 trees: the cities, the top species, the walks, what is at its best.
+    /// SwiftUI re-evaluates a body constantly while a finger is on the screen,
+    /// so scrolling Home meant re-grouping fifteen hundred trees per frame and
+    /// the screen locked up. Hidde: "de app doet niks loop vast op homescherm
+    /// kan niet scrollen."
+    @State private var deck = Shelves()
+
+    struct Shelves {
+        var atTheirBest: [Tree] = []
+        var cities: [(slug: String, name: String, country: String, count: Int)] = []
+        var walksNear: [Walk] = []
+        var species: [(name: String, count: Int)] = []
+    }
 
     private var month: Int { Calendar.current.component(.month, from: Date()) }
     private var monthName: String { DateFormatter().monthSymbols[month - 1] }
 
-    private var atTheirBest: [Tree] {
-        catalogue.atTheirBest(inMonth: month, near: origin.lat, origin.lng, withinKm: 150)
-    }
+    private var atTheirBest: [Tree] { deck.atTheirBest }
+    private var cities: [(slug: String, name: String, country: String, count: Int)] { deck.cities }
+    private var walksNear: [Walk] { deck.walksNear }
 
-    private var cities: [(slug: String, name: String, country: String, count: Int)] {
-        Dictionary(grouping: catalogue.trees, by: \.citySlug)
+    /// Rebuilt when the catalogue changes under us, which it now does, or when
+    /// the map has moved somewhere far enough to change what is near.
+    private func buildShelves() {
+        var s = Shelves()
+        s.atTheirBest = catalogue.atTheirBest(inMonth: month, near: origin.lat, origin.lng, withinKm: 150)
+        s.cities = Dictionary(grouping: catalogue.trees, by: \.citySlug)
             .map { (slug: $0.key, name: $0.value[0].city,
                     country: $0.value[0].country, count: $0.value.count) }
             .sorted { $0.count > $1.count }
-    }
-
-    private var walksNear: [Walk] {
-        catalogue.walks.compactMap { w -> (Walk, Double)? in
+        s.walksNear = catalogue.walks.compactMap { w -> (Walk, Double)? in
             guard let f = catalogue.trees(of: w).first else { return nil }
             return (w, f.distanceKm(from: origin.lat, origin.lng))
         }
         .sorted { $0.1 < $1.1 }.prefix(8).map(\.0)
+        s.species = Dictionary(grouping: catalogue.trees, by: \.commonName)
+            .map { (name: $0.key, count: $0.value.count) }
+            .sorted { $0.count > $1.count }
+            .prefix(18).map { $0 }
+        deck = s
     }
 
     var body: some View {
@@ -79,6 +101,7 @@ struct HomeView: View {
         .navigationTitle("Home")
         .searchable(text: $search, prompt: "Search a place, a tree or a species")
         .refreshable { await store.refresh() }
+        .task(id: catalogue.version) { buildShelves() }
     }
 
     /// The website leads with one tree rather than with a grid, and so does
@@ -157,12 +180,7 @@ struct HomeView: View {
         }
     }
 
-    private var topSpeciesHere: [(name: String, count: Int)] {
-        Dictionary(grouping: catalogue.trees, by: \.commonName)
-            .map { (name: $0.key, count: $0.value.count) }
-            .sorted { $0.count > $1.count }
-            .prefix(18).map { $0 }
-    }
+    private var topSpeciesHere: [(name: String, count: Int)] { deck.species }
 
     // MARK: - the browse state
 
@@ -217,7 +235,8 @@ struct HomeView: View {
                     ForEach(trees) { t in
                         NavigationLink(value: Route.tree(t.id)) {
                             VStack(alignment: .leading, spacing: 6) {
-                                TreeCard(tree: t, km: t.distanceKm(from: origin.lat, origin.lng))
+                                TreeCard(tree: t, km: t.distanceKm(from: origin.lat, origin.lng),
+                                         showsInset: false)
                                 if season, let b = t.bestTime {
                                     Text(b.label)
                                         .font(.caption).foregroundStyle(Brand.inkSoft)
@@ -311,6 +330,8 @@ struct HomeView: View {
     }
 
     private func cityCard(_ c: (slug: String, name: String, country: String, count: Int)) -> some View {
+        // Cheap because it stops at the first hit, but it is still a scan of
+        // every tree per card, so it only runs for the fourteen cards drawn.
         let cover = catalogue.trees.first { $0.citySlug == c.slug && $0.photo != nil }
         return VStack(alignment: .leading, spacing: 0) {
             ZStack(alignment: .bottomLeading) {
