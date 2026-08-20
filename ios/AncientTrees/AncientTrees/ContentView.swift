@@ -33,6 +33,7 @@ struct ContentView: View {
     @State private var navigator = Navigator()
     @State private var rootSheet: RootSheet?
     @State private var primerAnswered = false
+    @State private var slowStart = false
     /// One path per tab, so tapping the tab you are already on can empty it.
     ///
     /// FOUR SEPARATE ARRAYS, not a dictionary keyed by tab. The dictionary
@@ -223,8 +224,31 @@ struct ContentView: View {
                 ContentUnavailableView("Something is wrong with the catalogue",
                                        systemImage: "exclamationmark.triangle",
                                        description: Text(err))
+                    .brandGround()
             } else {
-                ProgressView()
+                // A bare ProgressView on no background is a WHITE SCREEN, and a
+                // white screen tells nobody anything. Hidde got one on his own
+                // phone and there was no way to tell from it whether the app
+                // had crashed, hung, or simply not finished reading 2.5 MB of
+                // JSON. So it says what it is doing, on the app's own ground,
+                // and says something else if it is taking too long.
+                VStack(spacing: 14) {
+                    SpeciesMark(species: "Pedunculate Oak", color: Brand.moss)
+                        .frame(width: 54, height: 54)
+                    ProgressView()
+                    if slowStart {
+                        Text("This is taking longer than it should. Force quit and open it again, and if it keeps happening, tell us.")
+                            .font(.footnote).foregroundStyle(Brand.inkSoft)
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal, 40)
+                    }
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .brandGround()
+                .task {
+                    try? await Task.sleep(for: .seconds(6))
+                    slowStart = true
+                }
             }
         }
         .overlay {
