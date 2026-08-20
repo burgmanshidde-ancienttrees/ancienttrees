@@ -1,0 +1,88 @@
+# The gate the app did not have.
+#
+# The website cannot deploy with a red test. The app had nothing at all between
+# a push and Hidde's phone, and on 2026-08-20 that showed: he found three real
+# bugs in one evening and I found none, including one where tapping a tree card
+# did nothing because a drag gesture had a four point threshold. Nine tests
+# existed and ran only on my machine, which is the same as not existing.
+#
+# Free because the repository is public: GitHub does not bill macOS minutes for
+# public repos, so this costs nothing and needed no ruling from Hidde.
+#
+# WHAT THIS CANNOT DO, said here so nobody trusts it further than it goes. It
+# builds and taps; it cannot feel. Both of the freezes he found were smooth in
+# the simulator and instant on a phone, because a runner has a Mac's processor
+# and a Mac's network. Stutter, jank and "this does not feel right" stay his,
+# and that is the argument for TestFlight rather than against this.
+
+name: iOS app
+
+on:
+  push:
+    paths:
+      - 'ios/**'
+      - '.github/workflows/ios.yml'
+  pull_request:
+    paths:
+      - 'ios/**'
+  workflow_dispatch:
+
+concurrency:
+  group: ios-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: macos-15
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Which Xcode
+        run: |
+          sudo xcode-select -s /Applications/Xcode_26.6.app/Contents/Developer 2>/dev/null || true
+          xcodebuild -version
+
+      # The runner's simulator list changes with every image update, so the
+      # destination is discovered rather than hardcoded. A pinned device name is
+      # the commonest reason an iOS workflow rots without anybody touching it.
+      - name: Pick a simulator
+        id: sim
+        run: |
+          NAME=$(xcrun simctl list devices available \
+                 | grep -oE '^ +iPhone [^(]+' | sed 's/^ *//;s/ *$//' | tail -1)
+          if [ -z "$NAME" ]; then
+            echo "no iPhone simulator on this runner"; xcrun simctl list devices; exit 1
+          fi
+          echo "name=$NAME" >> "$GITHUB_OUTPUT"
+          echo "Using: $NAME"
+
+      - name: Build and test
+        run: |
+          set -o pipefail
+          xcodebuild test \
+            -project ios/AncientTrees/AncientTrees.xcodeproj \
+            -scheme AncientTrees \
+            -destination "platform=iOS Simulator,name=${{ steps.sim.outputs.name }}" \
+            -derivedDataPath /tmp/dd \
+            -retry-tests-on-failure -test-iterations 2 \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" \
+            | grep -E "Test case|error:|warning: .*deprecat|\*\* (TEST|BUILD)" || true
+          # grep swallows the exit code, so ask xcodebuild again for the verdict.
+          test -f /tmp/dd/Logs/Test/*.xcresult 2>/dev/null || true
+
+      - name: Verdict
+        run: |
+          R=$(ls -td /tmp/dd/Logs/Test/*.xcresult 2>/dev/null | head -1)
+          if [ -z "$R" ]; then echo "no test results were produced"; exit 1; fi
+          xcrun xcresulttool get test-results summary --path "$R" > /tmp/summary.json
+          python3 - <<'PY'
+          import json
+          d = json.load(open("/tmp/summary.json"))
+          passed, failed = d.get("passedTests", 0), d.get("failedTests", 0)
+          print(f"{passed} passed, {failed} failed")
+          for f in d.get("testFailures", []):
+              print("FAILED:", f.get("testName"), "-", f.get("failureText", "")[:200])
+          raise SystemExit(1 if failed or passed == 0 else 0)
+          PY
