@@ -7,19 +7,31 @@
 // magic link (our equivalent of their Google one-tap), the account page as
 // More options, the app as the dark button.
 //
-// Open it from any script with atOpenSignIn(), or any element carrying
+// Open it from any script with atOpenSignIn(treeName), or any element carrying
 // data-signin. The email flow happens inline (same OTP endpoint the account
 // page uses) and the magic link returns to the CURRENT page; signin-js.ts
 // parses the token hash on every page that includes this component, so
 // logging in never loses the visitor's place.
+//
+// Trimmed to ONE job on 2026-08-20. It used to offer three: the email form,
+// "More options", and "Get the app" as a filled dark button. "More options"
+// linked to /account, which carries the same single email form and nothing
+// more, so it was a fork in a road the visitor was already walking down. The
+// app stays, as a plain link rather than a second primary button, because it
+// is a different decision and it should not compete with this one.
+//
+// And the subtitle names the tree when there is one to name. A save that just
+// happened is the reason the dialog is open, and "The Wertheimpark Wingnut is
+// saved on this device only" is a sentence about the visitor. The generic line
+// is a sentence about us.
 interface Props { es?: boolean }
 const { es = false } = Astro.props;
 const T = es ? {
   title: "Tus árboles en todos tus dispositivos",
   sub: "Una cuenta gratuita, un email, sin contraseña. Tus árboles guardados te siguen a cualquier dispositivo.",
+  subNamed: "%s está guardado solo en este dispositivo. Una cuenta gratuita, un email, sin contraseña, y tus árboles te siguen a todas partes.",
   placeholder: "tu@ejemplo.com",
   send: "Envíame un enlace de acceso",
-  more: "Más opciones",
   or: "o",
   app: "Descarga la app",
   fine: 'Solo guardamos tu dirección de email, para los enlaces de acceso y nada más. <a href="/privacy">Privacidad</a>',
@@ -29,9 +41,9 @@ const T = es ? {
 } : {
   title: "Keep your trees on every device",
   sub: "One free account, one email, no password. Your saved trees follow you everywhere.",
+  subNamed: "%s is saved on this device only. One free account, one email, no password, and your trees follow you everywhere.",
   placeholder: "you@example.com",
   send: "Email me a sign-in link",
-  more: "More options",
   or: "or",
   app: "Get the app",
   fine: 'We store only your email address, for sign-in links and nothing else. <a href="/privacy">Privacy</a>',
@@ -45,14 +57,13 @@ const T = es ? {
   <p class="signin-mark" aria-hidden="true">&#127795;</p>
   <div id="signin-ask">
     <h3>{T.title}</h3>
-    <p>{T.sub}</p>
+    <p id="signin-sub" data-generic={T.sub} data-named={T.subNamed}>{T.sub}</p>
     <form id="signin-form" class="signin-form" autocomplete="email">
       <input type="email" id="signin-email" placeholder={T.placeholder} aria-label="Email address" required>
       <button type="submit" class="go-btn">{T.send}</button>
     </form>
-    <a class="go-btn ghost signin-more" href="/account">{T.more}</a>
     <p class="signin-or">{T.or}</p>
-    <a class="go-btn signin-app" href="/app" data-ev="app-cta">{T.app}</a>
+    <a class="signin-applink" href="/app" data-ev="app-cta">{T.app}</a>
     <p class="signin-fine" set:html={T.fine}></p>
   </div>
   <div id="signin-sent" hidden>
