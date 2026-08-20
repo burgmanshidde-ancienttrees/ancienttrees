@@ -35,6 +35,7 @@ struct MapTab: View {
     /// Where the map is looking. nil until it has been moved, so the first list
     /// is still the list of what is near you.
     @State private var mapRegion: MKCoordinateRegion?
+    @State private var filters = MapFilters()
     @Environment(Saved.self) private var saved
     @Environment(Account.self) private var account
     @Environment(Nudge.self) private var nudge
@@ -50,7 +51,15 @@ struct MapTab: View {
     /// Cheap to do: 1,500 annotations is nothing for MKMapView, the pins carry
     /// a clusteringIdentifier so MapKit collapses them by zoom on its own, and
     /// the set never changes so updateUIView stops churning entirely.
-    private var mapTrees: [Tree] { catalogue.trees }
+    private var mapTrees: [Tree] {
+        guard filters.isOn else { return catalogue.trees }
+        return catalogue.trees.filter {
+            filters.keeps($0, month: month)
+                && filters.keepsDistance($0.distanceKm(from: focus.lat, focus.lng))
+        }
+    }
+
+    private var month: Int { Calendar.current.component(.month, from: Date()) }
     /// The point the list is about: where the map is looking once it has been
     /// moved, and where you are standing until then.
     private var focus: (lat: Double, lng: Double) {
@@ -76,11 +85,14 @@ struct MapTab: View {
 
     private var listed: [(tree: Tree, km: Double)] {
         let near = catalogue.nearest(to: focus.lat, focus.lng, limit: 60, withinKm: reachKm)
+            .filter { filters.keeps($0.tree, month: month) && filters.keepsDistance($0.km) }
         guard !query.isEmpty else { return near }
         let q = query.lowercased()
         return catalogue.trees
             .filter { $0.name.lowercased().contains(q) || $0.city.lowercased().contains(q)
                       || $0.species.lowercased().contains(q) }
+            .filter { filters.keeps($0, month: month)
+                        && filters.keepsDistance($0.distanceKm(from: focus.lat, focus.lng)) }
             .prefix(40)
             .map { ($0, $0.distanceKm(from: focus.lat, focus.lng)) }
     }
@@ -112,7 +124,17 @@ struct MapTab: View {
         // it, and worse, "Near Amsterdam" was a statement of a problem with no
         // way to fix it. It is a chip now, and when we do not know where you
         // are it is the button that finds out.
-        .overlay(alignment: .top) { whereChip }
+        // The chips float over the map rather than sitting in the sheet, which
+        // is where Google Maps puts them and for the reason this needed moving:
+        // inside the sheet they were below the peek height, so the one control
+        // that changes what the whole screen shows was invisible until you
+        // dragged. A filter you cannot see is a filter nobody uses.
+        .overlay(alignment: .top) {
+            VStack(spacing: 8) {
+                whereChip
+                filterRow
+            }
+        }
         .task {
             if let id = debugSelect, let t = catalogue.tree(id) {
                 selected = t
@@ -248,6 +270,52 @@ struct MapTab: View {
             }
             .buttonStyle(.plain)
         }
+    }
+
+    /// Four filters and no more, deliberately. The map is the one screen where
+    /// every control added takes something away from the thing it is for, and
+    /// Google Maps is restrained here on purpose. These four are the questions
+    /// people actually ask: is it worth going NOW, can I see what it looks like,
+    /// can I walk there, and is it the kind of tree I like.
+    private var filterRow: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 8) {
+                FilterChip(label: "At their best", icon: "sparkles",
+                           on: filters.peakingNow) { filters.peakingNow.toggle() }
+                FilterChip(label: "With a photo", icon: "photo",
+                           on: filters.withPhoto) { filters.withPhoto.toggle() }
+                FilterChip(label: "Within 2 km", icon: "figure.walk",
+                           on: filters.walkable) { filters.walkable.toggle() }
+
+                Menu {
+                    Button("Any species") { filters.species = nil }
+                    Divider()
+                    ForEach(topSpecies, id: \.self) { sp in
+                        Button(sp) { filters.species = sp }
+                    }
+                } label: {
+                    FilterChipLabel(label: filters.species ?? "Species",
+                                    icon: "leaf", on: filters.species != nil)
+                }
+
+                if filters.isOn {
+                    Button {
+                        filters = MapFilters()
+                    } label: {
+                        FilterChipLabel(label: "Clear", icon: "xmark", on: false)
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+            .padding(.horizontal, 14)
+        }
+        .scrollClipDisabled()
+    }
+
+    private var topSpecies: [String] {
+        Array(Dictionary(grouping: catalogue.trees, by: \.commonName)
+            .sorted { $0.value.count > $1.value.count }
+            .prefix(14).map(\.key))
     }
 
     private var searchField: some View {

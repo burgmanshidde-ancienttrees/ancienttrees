@@ -17,6 +17,7 @@ struct TreeDetail: View {
     @Environment(Nudge.self) private var nudge
     @State private var showFullStory = false
     @State private var reporting = false
+    @State private var tappedNearby: Tree?
 
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -25,6 +26,12 @@ struct TreeDetail: View {
                     hero
                     header
                     facts
+                    // Where it is, on the page rather than one tap away in
+                    // Apple Maps. Their route page has exactly this and ours did
+                    // not, which left the app behind our own website on the one
+                    // field that decides whether somebody gets there: the site's
+                    // tree page has carried a map since it shipped.
+                    mapCard
                     if tree.precision.needsWarning { approximateNote }
                     story
                     accessBlock
@@ -88,6 +95,50 @@ struct TreeDetail: View {
         } else {
             heroFallback.frame(height: 200).clipShape(.rect(cornerRadius: 14))
         }
+    }
+
+    /// The tree, and whatever else of ours is within a few streets, because the
+    /// second most useful thing after "where is it" is "is it worth the trip on
+    /// its own or are there three more round the corner".
+    private var nearbyTrees: [Tree] {
+        catalogue.nearest(to: tree.lat, tree.lng, limit: 8, withinKm: 0.5).map(\.tree)
+    }
+
+    private var mapCard: some View {
+        VStack(spacing: 0) {
+            TreeMap(trees: nearbyTrees,
+                    focus: .init(latitude: tree.lat, longitude: tree.lng),
+                    spanMeters: 600,
+                    clusters: false,
+                    selected: $tappedNearby)
+                .frame(height: 220)
+            // Tapping another pin does not silently swap the page under you; it
+            // offers, and the offer is a real link so the back button behaves.
+            if let n = tappedNearby, n.id != tree.id {
+                NavigationLink(value: Route.tree(n.id)) {
+                    HStack(spacing: 10) {
+                        SpeciesMark(species: n.species, color: Brand.moss)
+                            .frame(width: 26, height: 26)
+                        VStack(alignment: .leading, spacing: 1) {
+                            Text(n.name).font(.subheadline.weight(.semibold))
+                                .foregroundStyle(Brand.ink).lineLimit(1)
+                            Text(String(format: "%.0f m away", n.distanceKm(from: tree.lat, tree.lng) * 1000))
+                                .font(.caption).foregroundStyle(Brand.inkSoft)
+                        }
+                        Spacer()
+                        Image(systemName: "chevron.right").font(.caption)
+                            .foregroundStyle(Brand.inkSoft.opacity(0.6))
+                    }
+                    .padding(.horizontal, 14).padding(.vertical, 11)
+                    .background(Brand.surface)
+                }
+                .buttonStyle(.plain)
+                .transition(.move(edge: .bottom).combined(with: .opacity))
+            }
+        }
+        .clipShape(.rect(cornerRadius: 14))
+        .shadow(color: .black.opacity(0.07), radius: 8, y: 3)
+        .animation(.easeOut(duration: 0.18), value: tappedNearby?.id)
     }
 
     private var heroFallback: some View {
