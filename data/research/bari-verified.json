@@ -61,5 +61,31 @@
    "attribution": null,
    "status": "missing"
   }
+ },
+ {
+  "id": "bar_003",
+  "name": "The Pine of Carrassi",
+  "species": "Aleppo Pine (Pinus halepensis)",
+  "age_estimate": "roughly 150 years",
+  "age_min": 120,
+  "age_max": 180,
+  "girth_cm": 570,
+  "location": {
+   "address": "Corso Alcide De Gasperi, corner of Via Ugo La Malfa, Carrassi, Bari",
+   "latitude": 41.098572,
+   "longitude": 16.871306,
+   "neighbourhood": "Carrassi"
+  },
+  "verified_sources": [
+   "data/registers/puglia-alberi-monumentali.json (register_id 06/A662/BA/16)",
+   "data/registers/italy-masaf.json (sheet_id 06/A662/BA/16)",
+   "https://www.barinedita.it/storie-e-interviste/n3098-il-pino-di-carrassi-e-il-leccio-di-carbonara--ecco-i-due-alberi-monumentali-di-bari (Barinedita, 3 Jan 2018)",
+   "https://luoghi.italianbotanicalheritage.com/en/carrassi-pine/ (Italian Botanical Heritage)"
+  ],
+  "access": "Free, public roadside plot. The tree stands in a small enclosed bed behind a low concrete wall right at the street corner, visible and reachable from the pavement at any time; no gate, ticket or permission needed.",
+  "transport": "Carrassi district, about 3 km south of Bari Centrale station; reachable by city bus along Corso Alcide De Gasperi, no rail nearby.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Two independent sources beyond the register: Barinedita (3 Jan 2018, in-person visit) places it exactly at the De Gasperi/Via Ugo La Malfa corner, describes a small plot enclosed by a low concrete wall, trunk split into three main branches, one branch amputated about 20 years before the 2018 article after breaking in heavy snow. Locals use the spot as a landmark (children climb it, couples meet there). Italian Botanical Heritage's English page corroborates location, girth (19 ft = approx 580 cm, matching the register's 570 cm) and rough height, but calls it a 'stone pine (Pinus pinea)' rather than the register's Pinus halepensis (Aleppo pine) - SPECIES CONFLICT, flagged rather than resolved; Barinedita's own text just says 'pino' without a species. Height also disagrees: register says 17 m, both secondary sources converge on about 13 m. Age is an estimate, not a measurement: botanist Pietro Medagli (University of Salento) is quoted giving 'roughly 150 years' for both this pine and the Carbonara leccio (candidate from the same brief, blocked separately for access), while explicitly cautioning that precise dating of either is very difficult; treat 150 as a named expert's best guess, not a derived figure. No sourced confirmation newer than the 2018 article that the tree is still standing, so flagged for that too - but note this is NOT the pine felled in June 2025 (BariToday, 13 June 2025, 'Pino storico in corso Alcide De Gasperi verso l'abbattimento'): that dead tree stood at the De Gasperi corner with Via Pende, a different intersection on the same street, confirmed by the article's own image filename and dateline."
  }
 ]

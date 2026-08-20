@@ -1,0 +1,50 @@
+[
+  {
+    "id": "lyo_012",
+    "name": "The Anne Frank Chestnut",
+    "species": "Horse Chestnut (Aesculus hippocastanum)",
+    "age_estimate": "planted December 2014, about 12 years old",
+    "age_min": 11,
+    "age_max": 12,
+    "location": {
+      "address": "Place Marc-Aron, rue Moncey, 69003 Lyon",
+      "latitude": 45.76063,
+      "longitude": 4.84927,
+      "neighbourhood": "Part-Dieu, 3rd arrondissement"
+    },
+    "verified_sources": [
+      "https://www.wikidata.org/wiki/Q63253791",
+      "https://www.lyonembellissement.com/articles/120722-un-marronnier-souvenir-d-anne-frank-place-marc-aron"
+    ],
+    "access": "Free, public square, open at all times",
+    "transport": "Short walk from Place Guichard - Bourse du Travail metro station (Line B), same street (rue Moncey)",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Not an ancient tree, a historically significant memorial one: this chestnut is a direct cutting from the famous horse chestnut in Amsterdam that Anne Frank described watching from her hiding place, and which is quoted in her diary. The Amsterdam original (estimated 160-180 years old) fell in a storm on 23 August 2010; the Anne Frank Foundation took roughly 150 cuttings beforehand and distributed saplings worldwide (Amsterdam, Washington DC, Jerusalem, Paris, Lyon among them). Lyon's cutting was planted at the centre of Place Marc-Aron on 2 December 2014, in a ceremony, replacing a statue called 'Renaissance' that had been removed during the square's renovation. Two independent sources agree on the planting date, species and location: Wikidata Q63253791 (coordinates) and Lyon Embellissement (local heritage association), a third corroborating source (lyonmag.com, two separate articles, one on the planting itself dated close to Dec 2014) was found via search but not directly fetched (403 on the France3 regional news article; lyonmag.com articles found via search snippet only, not fetched directly, so not counted as a verified source here, only Wikidata + Lyon Embellissement are cited). Curation_status flagged only because the tree is young rather than because any fact is in doubt: worth including in the writer's brief as a deliberate exception to the site's usual old-tree focus, on the historically-significant branch of the qualifying rule. No girth recorded; sapling-to-young-tree size, not yet a large specimen. Publicly accessible square in the Part-Dieu district, open at all times, no access restriction found."
+  },
+  {
+    "id": "lyo_013",
+    "name": "The Plane Tree of Place Antoine-Rivoire",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "planted 1894, about 132 years old",
+    "age_min": 131,
+    "age_max": 132,
+    "location": {
+      "address": "Place Antoine-Rivoire, 69002 Lyon",
+      "latitude": 45.764722,
+      "longitude": 4.834444,
+      "neighbourhood": "Cordeliers, 2nd arrondissement"
+    },
+    "verified_sources": [
+      "https://fr.wikipedia.org/wiki/Place_Antoine-Rivoire",
+      "https://www.guichetdusavoir.org/question/voir/69078",
+      "https://www.petit-bulletin.fr/article-75494-des-arbres-et-des-datas-decouvrir-lyon-par-ses-arbres-d-alignement.html"
+    ],
+    "age_estimate_basis": "documented planting date",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "access": "Free, public square, open at all times",
+    "transport": "About 5 min walk from Cordeliers metro station (Line A)",
+    "verify_notes": "A single large plane tree standing at the centre of a small, well-defined 1,200 sq m square in the heart of the Presqu'ile, on rue du President-Edouard-Herriot at the junction of rues des Forces, Fromagerie, Gentil and Saint-Nizier. Three independent sources agree on the 1894 planting date and location: French Wikipedia's article on the square (which also gives the coordinates used here, taken as the square's centre where the tree stands, so treated as confirmed rather than approximate given the tree is the sole one at the square's centre), the Guichet du Savoir (Lyon's municipal library public reference service, citing the Metropole's own street-tree database) and Petit Bulletin's 2020s data-journalism piece on Lyon's alignment trees, which independently calls it 'l'arbre le plus ancien recense' (the oldest tree on record) in the city's 100,000+ tree street database, while noting nearly 45% of that database's trees carry no planting date so this is the oldest KNOWN date rather than a claim of being the oldest tree outright. The same Petit Bulletin piece is worth quoting for the writer: a Lyon Metropole official (Pierre Athanaze) states Lyon's plane trees are 19th-century plantings and none reach the 300-400 year ages some other regional trees do, so this tree should not be oversold as ancient, only as the oldest dated street tree the city can point to. Historical hook: the square itself occupies the site of the old Saint-Nizier parish cemetery, in use from the 16th century and suppressed during the French Revolution, so the tree grows on a site that was a burial ground for centuries before it was planted. Square renamed 1934 for Antoine Rivoire (1858-1932), a founder of the Lyon trade fair and tourism board; former name Place de la Fromagerie. No girth recorded in any source checked."
+  }
+]
