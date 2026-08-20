@@ -17,12 +17,12 @@
    "reason": "Both stand 'ingebouwd op het terrein van RUG' (built into the university's grounds); the plane's own 2023 register note says construction activity on site made it hard to inspect. Public accessibility of this specific spot on Rijksuniversiteit Groningen's terrain was not established this pass. Needs a check on whether this is open campus ground or gated, per the school/campus access test, before verifying further."
   },
   {
-   "register_nr": null,
-   "name": "Huwelijks lindeboom Groningen",
-   "species": "Lime/Linden (Tilia sp.)",
-   "latitude": 53.20838,
-   "longitude": 6.57745,
-   "reason": "Not researched this pass (time-boxed). Coordinates put it near the Zuiderplantsoen/Sterrebos cluster (gro_002, gro_003) rather than the Oude Hortus/Noorderplantsoen cluster this pass prioritized. Worth a look for a southern-cluster follow-up pass; register age band 1930-1940 makes it a younger tree so the story would need to lean on the name/history rather than age."
+   "register_nr": 1680046,
+   "name": "Leilindes Pepergasthuis Groningen",
+   "species": "Pollarded Lime, ensemble of 11 (Tilia sp.)",
+   "latitude": 53.217258,
+   "longitude": 6.571846,
+   "reason": "New candidate found this pass. Register (nr 1680046) records 11 pollarded lindens ('leivorm') on the binnenplaats of the Pepergasthuis (Sint Geertruidsgasthuis), a historic hofje founded 1405 on Peperstraat, gemeente-owned, visitable listed as 'ja', in good condition with visible old tree-surgery scars from the 1980s. A genuinely good candidate (compact, historic, named ensemble) but access is a real judgement call, not a clean yes: a general source on Groningen's hofjes says 'most hofjes are freely accessible, respect residents' privacy', but this specific courtyard was recently sold to a private investor, which local reporting says has created uncertainty about its future ('mensen weten niet wat er gaat gebeuren met de binnenplaats'), and no source found this pass explicitly confirms public entry to THIS courtyard today. Per BRIEF_RESEARCH.md's 'when in doubt, leave it out', left as a lead rather than shipped; a future pass should look for explicit signage/visiting-hours confirmation or treat a site visit report as decisive."
   }
  ],
  "blocked": [
@@ -57,6 +57,22 @@
    "latitude": 53.222575,
    "longitude": 6.560554,
    "reason": "Register history: 2002 advice to thin the crown, then a 2015 observation that the tree had been sawn down to 3 m height ('afgezaagd tot op 3 meter hoogte'). Not a standing collectible tree; blocked as effectively removed, matching the brief's own flag on this entry."
+  },
+  {
+   "register_nr": 1680048,
+   "name": "Witte paardenkastanje Pelstergasthuis Groningen",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "latitude": 53.215533,
+   "longitude": 6.567169,
+   "reason": "Register's own history ends: 'En toen viel de boom spontaan om! Zie laatste waarneming' (and then the tree spontaneously fell over! see latest observation), following a multi-year record of a bracket-fungus infection (dikrand tondelzwam, korstjeshoutskoolzwam) at the trunk base. Dead/fallen, confirmed by the register's own last entry. Blocked, we doen niet aan dode bomen. Also note: even before falling, it stood 'in het hofje... tegen de gevel geklemd' (clamped against the facade in the hofje courtyard), so it would also have needed an access check."
+  },
+  {
+   "register_nr": 1694831,
+   "name": "Zwarte moerbei RUG (Huis met de 13 tempels)",
+   "species": "Black Mulberry (Morus nigra)",
+   "latitude": 53.219818,
+   "longitude": 6.564954,
+   "reason": "Great story (planted 1780 by resident Isabella Berchuis-de Sevornin as a memento of her Zeeland youth; a 2012 plaque added by a descendant; a cutting now grows in Middelburg) but register itself lists visitable as 'op afspraak' (by appointment only) and visible as 'nee' (not visible), standing in the achtertuin (back garden) of the private house at Oude Boteringestraat 23. Blocked per the private-land rule: not genuinely open to visitors."
   }
  ]
 }
