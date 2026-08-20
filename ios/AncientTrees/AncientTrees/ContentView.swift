@@ -107,6 +107,12 @@ struct ContentView: View {
             } else {
                 ContentUnavailableView("That walk is gone", systemImage: "figure.walk")
             }
+        case .collection(let slug):
+            if let c = cat.collections.first(where: { $0.slug == slug }) {
+                CollectionView(collection: c, catalogue: cat, origin: origin)
+            } else {
+                ContentUnavailableView("That collection is gone", systemImage: "square.stack")
+            }
         case .city(let slug):
             CityView(slug: slug,
                      name: cat.trees.first(where: { $0.citySlug == slug })?.city ?? slug,

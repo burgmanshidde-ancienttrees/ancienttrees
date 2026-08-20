@@ -10,20 +10,30 @@ public struct Catalogue: Sendable {
     public let trees: [Tree]
     public let walks: [Walk]
     public let species: [Species]
+    /// The website's hand-curated collections, which Explore is built out of.
+    public let collections: [TreeCollection]
 
     private let byId: [String: Tree]
     private let walksByCity: [String: [Walk]]
 
-    public init(trees: [Tree], walks: [Walk], species: [Species], version: String) {
+    public init(trees: [Tree], walks: [Walk], species: [Species],
+                collections: [TreeCollection] = [], version: String) {
         self.trees = trees
         self.walks = walks
         self.species = species
+        self.collections = collections
         self.version = version
         self.byId = Dictionary(trees.map { ($0.id, $0) }, uniquingKeysWith: { a, _ in a })
         self.walksByCity = Dictionary(grouping: walks, by: { $0.citySlug })
     }
 
     public func tree(_ id: String) -> Tree? { byId[id] }
+
+    /// A collection's trees, skipping any id the feed no longer carries, so a
+    /// collection that lost a tree still works.
+    public func trees(of collection: TreeCollection) -> [Tree] {
+        collection.trees.compactMap { byId[$0] }
+    }
 
     public func walks(inCity slug: String) -> [Walk] { walksByCity[slug] ?? [] }
 

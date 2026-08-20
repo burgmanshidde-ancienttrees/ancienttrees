@@ -23,4 +23,5 @@ public enum Route: Hashable {
     case tree(String)                          // tree id
     case walk(city: String, name: String)      // a walk is only unique per city
     case city(String)                          // city slug
+    case collection(String)                    // collection slug
 }

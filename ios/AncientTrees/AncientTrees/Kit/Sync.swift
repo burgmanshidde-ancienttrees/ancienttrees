@@ -10,6 +10,9 @@ public enum Feed {
     public static var trees: URL { base.appending(path: "/api/trees.json") }
     public static var walks: URL { base.appending(path: "/api/walks.json") }
     public static var species: URL { base.appending(path: "/api/species.json") }
+    /// The facets the website already had and the app ignored for a day:
+    /// collections, parks, countries, species counts.
+    public static var browse: URL { base.appending(path: "/api/browse.json") }
 }
 
 public struct Sync: Sendable {

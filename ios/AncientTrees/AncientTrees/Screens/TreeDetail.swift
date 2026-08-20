@@ -40,6 +40,7 @@ struct TreeDetail: View {
             }
             actionBar
         }
+        .brandGround()
         .navigationTitle(tree.name)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
@@ -106,8 +107,10 @@ struct TreeDetail: View {
 
     private var header: some View {
         VStack(alignment: .leading, spacing: 6) {
-            Text(tree.name).font(.largeTitle.bold())
-            Text(tree.species).font(.subheadline).foregroundStyle(.secondary)
+            Text(tree.name)
+                .font(.brand(32, .black, relativeTo: .largeTitle))
+                .foregroundStyle(Brand.ink)
+            Text(tree.species).font(.subheadline).foregroundStyle(Brand.inkSoft)
         }
     }
 
@@ -121,16 +124,17 @@ struct TreeDetail: View {
             Divider().frame(height: 34)
             fact(tree.precision == .confirmed ? "Exact" : "Approximate", "Pin")
         }
-        .padding(.vertical, 12)
+        .padding(.vertical, 14)
         .frame(maxWidth: .infinity)
-        .background(Color(.secondarySystemBackground), in: .rect(cornerRadius: 12))
+        .brandCard(14)
     }
 
     private func fact(_ value: String, _ label: String) -> some View {
         VStack(spacing: 3) {
-            Text(value).font(.footnote.weight(.semibold)).multilineTextAlignment(.center)
+            Text(value).font(.brand(14, .bold, relativeTo: .footnote))
+                .foregroundStyle(Brand.ink).multilineTextAlignment(.center)
                 .lineLimit(2).minimumScaleFactor(0.8)
-            Text(label).font(.caption2).foregroundStyle(.secondary)
+            Text(label).font(.caption2).foregroundStyle(Brand.inkSoft)
         }
         .frame(maxWidth: .infinity)
         .padding(.horizontal, 6)
@@ -184,7 +188,8 @@ struct TreeDetail: View {
                     .frame(width: 34, height: 34)
                 VStack(alignment: .leading, spacing: 3) {
                     Text("Nobody has photographed this one")
-                        .font(.subheadline.weight(.semibold))
+                        .font(.brand(16, .bold, relativeTo: .subheadline))
+                        .foregroundStyle(Brand.ink)
                     Text("If you are standing in front of it, yours could be the picture on this page.")
                         .font(.caption).foregroundStyle(.secondary)
                 }
@@ -193,7 +198,7 @@ struct TreeDetail: View {
         }
         .padding(14)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Color(.secondarySystemBackground), in: .rect(cornerRadius: 12))
+        .brandCard(12)
     }
 
     private var actionBar: some View {
@@ -204,10 +209,8 @@ struct TreeDetail: View {
                                                 MKLaunchOptionsDirectionsModeWalking])
             } label: {
                 Label("Take me there", systemImage: "location.fill")
-                    .font(.headline).frame(maxWidth: .infinity).padding(.vertical, 14)
             }
-            .buttonStyle(.borderedProminent)
-            .tint(Color(red: 0.20, green: 0.35, blue: 0.20))
+            .buttonStyle(BrandButtonStyle())
 
             Button {
                 saved.toggleVisited(tree.id)
@@ -221,9 +224,13 @@ struct TreeDetail: View {
                 }
             } label: {
                 Image(systemName: saved.isVisited(tree.id) ? "checkmark.seal.fill" : "checkmark.seal")
-                    .font(.headline).padding(.vertical, 14).padding(.horizontal, 16)
+                    .font(.title3)
+                    .foregroundStyle(saved.isVisited(tree.id) ? Brand.moss : Brand.inkSoft)
+                    .frame(width: 52, height: 52)
+                    .background(Brand.surface, in: .circle)
+                    .overlay { Circle().strokeBorder(Brand.hairline, lineWidth: 1) }
             }
-            .buttonStyle(.bordered)
+            .buttonStyle(.plain)
             .accessibilityLabel(saved.isVisited(tree.id)
                                 ? "Ticked off. Tap to undo"
                                 : "I have stood in front of this tree")
@@ -236,15 +243,30 @@ struct TreeDetail: View {
                 }
             } label: {
                 Image(systemName: saved.isSaved(tree.id) ? "heart.fill" : "heart")
-                    .font(.headline).padding(.vertical, 14).padding(.horizontal, 16)
+                    .font(.title3)
+                    .foregroundStyle(saved.isSaved(tree.id) ? .pink : Brand.inkSoft)
+                    .frame(width: 52, height: 52)
+                    .background(Brand.surface, in: .circle)
+                    .overlay { Circle().strokeBorder(Brand.hairline, lineWidth: 1) }
             }
-            .buttonStyle(.bordered)
+            .buttonStyle(.plain)
             .accessibilityLabel(saved.isSaved(tree.id) ? "Saved. Tap to remove" : "Save this tree")
             .sensoryFeedback(.selection, trigger: saved.isSaved(tree.id))
         }
         .padding(.horizontal, 16)
         .padding(.bottom, 8)
         .padding(.top, 10)
-        .background(.bar)
+        // Opaque, with a short fade above it. At 96 percent the story showed
+        // through the bar as ghost text, which reads as a rendering fault
+        // rather than as translucency.
+        .background(alignment: .top) {
+            VStack(spacing: 0) {
+                LinearGradient(colors: [Brand.ground.opacity(0), Brand.ground],
+                               startPoint: .top, endPoint: .bottom)
+                    .frame(height: 18)
+                Brand.ground
+            }
+            .ignoresSafeArea(edges: .bottom)
+        }
     }
 }

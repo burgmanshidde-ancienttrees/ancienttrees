@@ -54,7 +54,8 @@ public final class CatalogueStore {
         do {
             catalogue = try decode(trees: Data(contentsOf: b.trees),
                                    walks: Data(contentsOf: b.walks),
-                                   species: b.species.flatMap { try? Data(contentsOf: $0) })
+                                   species: b.species.flatMap { try? Data(contentsOf: $0) },
+                                   browse: b.browse.flatMap { try? Data(contentsOf: $0) })
         } catch {
             loadError = "the bundled catalogue would not decode: \(error)"
         }
@@ -76,13 +77,15 @@ public final class CatalogueStore {
 
         // Rule 2: everything decodes before anything is written.
         let speciesData = await fetch(Feed.species)
+        let browseData = await fetch(Feed.browse)
         guard let treeData = await fetch(Feed.trees),
               let walkData = await fetch(Feed.walks),
-              let fresh = try? decode(trees: treeData, walks: walkData, species: speciesData)
+              let fresh = try? decode(trees: treeData, walks: walkData,
+                                      species: speciesData, browse: browseData)
         else { return }
 
         let before = catalogue?.trees.count ?? 0
-        write(trees: treeData, walks: walkData, species: speciesData)
+        write(trees: treeData, walks: walkData, species: speciesData, browse: browseData)
         catalogue = fresh
         lastAdded = max(0, fresh.trees.count - before)
     }
@@ -103,10 +106,12 @@ public final class CatalogueStore {
         return base.appending(path: "catalogue", directoryHint: .isDirectory)
     }
 
-    private static var bundleURLs: (trees: URL, walks: URL, species: URL?)? {
+    private static var bundleURLs: (trees: URL, walks: URL, species: URL?, browse: URL?)? {
         guard let t = Bundle.main.url(forResource: "trees", withExtension: "json"),
               let w = Bundle.main.url(forResource: "walks", withExtension: "json") else { return nil }
-        return (t, w, Bundle.main.url(forResource: "species", withExtension: "json"))
+        return (t, w,
+                Bundle.main.url(forResource: "species", withExtension: "json"),
+                Bundle.main.url(forResource: "browse", withExtension: "json"))
     }
 
     private func decode(from dir: URL?) -> Catalogue? {
@@ -114,18 +119,21 @@ public final class CatalogueStore {
               let t = try? Data(contentsOf: dir.appending(path: "trees.json")),
               let w = try? Data(contentsOf: dir.appending(path: "walks.json")) else { return nil }
         let s = try? Data(contentsOf: dir.appending(path: "species.json"))
-        return try? decode(trees: t, walks: w, species: s)
+        let b = try? Data(contentsOf: dir.appending(path: "browse.json"))
+        return try? decode(trees: t, walks: w, species: s, browse: b)
     }
 
-    private func decode(trees: Data, walks: Data, species: Data?) throws -> Catalogue {
+    private func decode(trees: Data, walks: Data, species: Data?, browse: Data?) throws -> Catalogue {
         let dec = JSONDecoder()
         let tf = try dec.decode(TreeFeed.self, from: trees)
         let wf = try dec.decode(WalkFeed.self, from: walks)
         let sp = species.flatMap { try? dec.decode(SpeciesFeed.self, from: $0) }?.species ?? []
-        return Catalogue(trees: tf.trees, walks: wf.walks, species: sp, version: tf.version)
+        let co = browse.flatMap { try? dec.decode(BrowseFeed.self, from: $0) }?.collections ?? []
+        return Catalogue(trees: tf.trees, walks: wf.walks, species: sp,
+                         collections: co, version: tf.version)
     }
 
-    private func write(trees: Data, walks: Data, species: Data?) {
+    private func write(trees: Data, walks: Data, species: Data?, browse: Data?) {
         guard let dir = Self.downloadDirectory else { return }
         try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
         // .atomic so a kill mid-write leaves the previous file rather than half
@@ -134,6 +142,9 @@ public final class CatalogueStore {
         try? walks.write(to: dir.appending(path: "walks.json"), options: .atomic)
         if let species {
             try? species.write(to: dir.appending(path: "species.json"), options: .atomic)
+        }
+        if let browse {
+            try? browse.write(to: dir.appending(path: "browse.json"), options: .atomic)
         }
     }
 }
