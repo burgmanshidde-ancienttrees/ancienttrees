@@ -10,6 +10,47 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-20 (session) - Arnhem: deepened 4 to 9 from the freshly-staged Netherlands register
+
+Bari checked first per the shelf's own writing queue: register genuinely
+exhausted (only 4 designated monumental trees exist in the whole city, one
+already correctly blocked on university-grounds access, one on a school
+courtyard with no evidence of public access), stays at 3 verified trees
+below the 4-tree floor, from-zero research off (not one of Hidde's 17 named
+cities). Checked Rome/Florence/Milan/Vienna's leads.py-flagged READY trees
+by hand next: all turned out stale (one was a duplicate register id for an
+already-published Bari tree; Vienna's "Alser Straße" plane turned out to be
+an exact-coordinate duplicate of the already-published vie_024) or carrying
+real unresolved caveats their own notes already named (single MASAF-only
+source with a failed second-source hunt, an unresolved size discrepancy
+across three sources for a Milan plane in a piazza with several planes).
+None of that shipped.
+
+`prepare.py`'s staging shelf held a genuinely fresh one instead: Arnhem's
+190 freshly-staged Dutch LRMB (Landelijk Register Monumentale Bomen)
+candidates, never touched by a prior pass. A tight cluster around
+Velperplein/Musispark, 0.21 to 0.32km from each other, all `visitable: ja`,
+`owner_category: gemeente`. Ran every candidate's `history` text against the
+register's own `dead_entries_regex` before shipping anything: caught and
+excluded a copper beech in the same cluster whose own history field says it
+was felled in 2000 after fungal damage. Shipped 5: a Scarlet Oak, a Weeping
+Japanese Pagoda Tree (registered for rarity, not age), a second Oriental
+Plane, a Black Walnut with a documented fungal decline-and-apparent-recovery
+history, and a Sessile Oak, all `curation_status: flagged` (single
+register source per tree) and `location_precision: confirmed`. Corroborated
+the shared 1880 Leonard Springer park-design context, common to four of the
+five, via nl.wikipedia and an Arnhem municipal heritage document; the
+Pagoda Tree has no such context (registered for species rarity, "dendrologisch",
+not the 1880 planting) and says so plainly in its own story. The build's walk
+planner independently grouped 6 of Arnhem's 9 trees (5 new plus the existing
+poplar) into one 0.6km, 8 minute walk, unprompted, confirming the cluster
+reads as a real afternoon rather than a scattered list. Intro/meta/FAQ counts
+updated 4 to 9. Preflight, superlatives and the full site build all clean;
+qa.py's one flagged item is the pre-existing sitemap-lastmod warning from
+this sandbox's shallow git checkout (documented in prior entries, not a
+real defect). Photos: none hunted, per this runner's no-photo-judging rule;
+an honest gap for all 9.
+
 ## 2026-08-19 - Caserta: deepened to target (14 to 20), 6 new trees from its own leads file
 
 Six trees written from already-verified MASAF/Campania register leads that
