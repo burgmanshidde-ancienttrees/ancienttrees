@@ -1,0 +1,1039 @@
+{
+ "source": "Famous Trees of Texas, Texas A&M Forest Service",
+ "url": "https://famoustreesoftexas.tfs.tamu.edu/ (data behind the dashboard at tfsfrd.tamu.edu/storymaps/FamousTrees/, feature service services5.arcgis.com/ELI1iJkCzTIagHkp/arcgis/rest/services/TestTrees/FeatureServer/0)",
+ "licence": "NON-COMMERCIAL, the same Texas A&M Forest Service terms as the Big Tree Registry, so this is a lead and verification source and never an import. The Picture urls are NOT usable: no open licence.",
+ "warning": "THIS REGISTER CONTAINS DEAD AND REMOVED TREES. It is a history register, not a survey of what stands. Austin's Washington Elm was removed in 2000, its Memorial Pecan in the early 1990s and Governor Hogg's gravesite pecans are gone, and in each case the only place that says so is the prose of the Information field. Read every entry before treating it as a living tree.",
+ "count": 103,
+ "trees": [
+  {
+   "OBJECTID": 1,
+   "TreeName": "Goose Island Oak",
+   "Information": "The Goose Island Oak, also known as \"The Big Tree\", was once designated Texas State Champion Live Oak in 1966. It was even featured in Ripley's Believe It or Not. The colossal live oak is estimated to be about 1,100 years old. It has survived deadly and destructive hurricanes, disease, and man. <a href='https://famoustreesoftexas.tfs.tamu.edu/goose-island-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/1.jpg",
+   "longitude": -96.9759,
+   "latitude": 28.1463,
+   "Chapter": 1,
+   "GlobalID": "66bff9c0-a547-43cc-82c4-b1b45c6c4128"
+  },
+  {
+   "OBJECTID": 2,
+   "TreeName": "Treaty Oak",
+   "Information": "With the massive spreading crown and powerful branches of the Treaty Oak, the Indians respectfully called it \"the father of the forest.\" Stephen F. Austin signed the first boundary line agreement with the local natives directly under the Treaty Oak. Today, you can find its memorialized offspring, objects made from its trimmed wood and the name itself tied to innumerable Texas businesses. <a href='https://famoustreesoftexas.tfs.tamu.edu/treaty-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/2.jpg",
+   "longitude": -97.7554,
+   "latitude": 30.2717,
+   "Chapter": 1,
+   "GlobalID": "79dc45ea-5e10-48da-b5ff-ce4fe687a15b"
+  },
+  {
+   "OBJECTID": 3,
+   "TreeName": "Indian Marker Tree",
+   "Information": "Texas' trees provided medicine, food, shelter, weaponry, utensils, transportation, art and inspiration to Indian tribes. These nomadic people marked their favorite camps through marker trees, such as this live oak on Hamilton Creek. Also called trail trees, or trail marker trees, they have been described as the \"early road maps\" for Native Americans. <a href='Hubbard Ginkgo' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/3.jpg",
+   "longitude": -98.2316,
+   "latitude": 30.7569,
+   "Chapter": 1,
+   "GlobalID": "f4b4e7b0-d28b-459a-937a-00f242565c06"
+  },
+  {
+   "OBJECTID": 4,
+   "TreeName": "Kissing Oak",
+   "Information": "It was Senator Sam Houston's spontaneous decision to kiss a number of women on Friday, July 24, 1857, that forever connected him to this tree in San Marcos. At one point the Kissing Oak was mentioned as the Kissing Oaks, a reference to the grove of trees on the banks of the San Marcos River, where citizens gathered to hear Houston's address. Today, that grove has been reduced to two remaining live oaks near the River House. <a href='https://famoustreesoftexas.tfs.tamu.edu/kissing-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/4.jpg",
+   "longitude": -97.9362,
+   "latitude": 29.8865,
+   "Chapter": 1,
+   "GlobalID": "421508ce-80d9-4e6a-9642-e35eb917d7af"
+  },
+  {
+   "OBJECTID": 5,
+   "TreeName": "Ranger Oaks",
+   "Information": "Under the Ranger Oaks, John Coffee \"Jack\" Hays and other Rangers would strategize and recruit. The Texas Rangers are the oldest state law enforcement body in the United States, and the Ranger Oaks, still standing, remain among the oldest historic witnesses to Seguin's glorious past. <a href='https://famoustreesoftexas.tfs.tamu.edu/ranger-oaks/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/5.jpg",
+   "longitude": -97.9661,
+   "latitude": 29.5697,
+   "Chapter": 1,
+   "GlobalID": "1d2ba79d-4066-4bd0-9a3c-1db95a1e168f"
+  },
+  {
+   "OBJECTID": 6,
+   "TreeName": "Bailey's Oak",
+   "Information": "An unusual request of James Briton Bailey to be buried standing and facing West was realized in 1832 under the giant Bailey's Oak. Bailey made this request in his will, stating \"he had always moved westward and never looked up to any man.\" For years after his death, sometimes a flash of light known as Bailey's light was noticed by the residents to rise out of the ground. <a href='https://famoustreesoftexas.tfs.tamu.edu/baileys-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/6.jpg",
+   "longitude": -95.5288,
+   "latitude": 29.137,
+   "Chapter": 1,
+   "GlobalID": "97094334-b0c9-4811-aee6-1313a299303a"
+  },
+  {
+   "OBJECTID": 7,
+   "TreeName": "Freedmen's Bois d'Arc",
+   "Information": "In 1865, under the branches of two bois d'arc trees, slaves and masters from fourteen plantations assembled together to hear the reading of the Emancipation Proclamation. The trees died, but even in death they offered inspiration to sculptor Earl Jones, whose ancestor worked on the very plantation where the trees once stood. <a href='https://famoustreesoftexas.tfs.tamu.edu/freedmens-bois-darc/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/7.jpg",
+   "longitude": -95.7516,
+   "latitude": 29.0806,
+   "Chapter": 1,
+   "GlobalID": "29932e35-0a45-4d24-962e-a12f091c7e27"
+  },
+  {
+   "OBJECTID": 8,
+   "TreeName": "Indian Mound Oak",
+   "Information": "For years, this ancient red oak guarded over the last of four prehistoric Indian burial mounds in the center of Nacogdoches, \"The Oldest Town in Texas.\" The town may no longer have the historic Indian Mound Oak, which died in the 1980s, but it still harbors a vibrant tree community. <a href='https://famoustreesoftexas.tfs.tamu.edu/indian-mound-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/8.jpg",
+   "longitude": -94.6509,
+   "latitude": 31.6055,
+   "Chapter": 1,
+   "GlobalID": "e0be65ca-83b1-43ca-aae6-b8a60470bb67"
+  },
+  {
+   "OBJECTID": 9,
+   "TreeName": "Houston Campaign Oak",
+   "Information": "On June 24, 1849, while shaded by this picturesque stately oak, U.S. Senator Sam Houston announced his desire to represent the state of Texas for a second term. On June 12, 1857, Houston again chose the Houston Campaign Oak as his political venue. The tree was felled August 1, 1987 as a consequence of man-made encroachments. <a href='http://texasforestservice.tamu.edu/websites/FamousTreesOfTexas/TreeLayout.aspx?pageid=16039' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/9.jpg",
+   "longitude": -94.369,
+   "latitude": 32.5476,
+   "Chapter": 1,
+   "GlobalID": "9c0ede2e-27e2-49b8-8a45-c41e7aaeb069"
+  },
+  {
+   "OBJECTID": 10,
+   "TreeName": "Hubbard Ginkgo",
+   "Information": "In 1889, U.S. Envoy to Japan and former Texas Governor Richard Bennett Hubbard returned from Japan with a unique gift for Texas—two ginkgo tree seedlings. In Japan, Korea, and the tree's native country of China, the ginkgo is considered sacred by Buddhists. The Hubbard Ginkgo, named in his honor, remains his living legacy. <a href='http://texasforestservice.tamu.edu/websites/FamousTreesOfTexas/TreeLayout.aspx?pageid=16042' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/10.jpg",
+   "longitude": -95.3055,
+   "latitude": 32.3521,
+   "Chapter": 1,
+   "GlobalID": "910a75f9-dac1-4882-8e4a-66fa85319c8e"
+  },
+  {
+   "OBJECTID": 11,
+   "TreeName": "Peach Point Oaks",
+   "Information": "The serene and historic woodland plantation known as Peach Point is tied to one of the most famous individuals in Texas history, Stephen F. Austin. This fertile and picturesque land surrounded by large, moss-covered oaks and then-abundant wild peach trees, was settled in 1832 at the request of Austin, by his sister Emily and her husband James Franklin Perry.  Austin's nephew planted an oak tree on the lawn at the birth of each of his children. Today, Peach Point remains in the possession of Perry family. <a href='https://famoustreesoftexas.tfs.tamu.edu/peach-point-oaks/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/11.jpg",
+   "longitude": -95.4698,
+   "latitude": 28.9732,
+   "Chapter": 1,
+   "GlobalID": "1a7bbccb-da02-4efb-9abd-ad6cafbdc638"
+  },
+  {
+   "OBJECTID": 12,
+   "TreeName": "Burges Oak",
+   "Information": "In 1915, Richard F. Burges introduced a bill in the Texas Legislature to create a new state agency to govern and nurture the forest of Texas—the Texas Forest Service. The same year he brought a sapling live oak from California and planted it in his yard, against the common wisdom of the day that oak trees could not survive the harsh desert climate. Mr. Burges nurtured his live oak to maturity and the Burges Oak remains a testament to the tenacity of live oaks and early residents of Texas. <a href='https://famoustreesoftexas.tfs.tamu.edu/burges-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/12.jpg",
+   "longitude": -106.495,
+   "latitude": 31.7626,
+   "Chapter": 1,
+   "GlobalID": "a0254a36-f77b-4066-ab36-41f3613cf720"
+  },
+  {
+   "OBJECTID": 13,
+   "TreeName": "Washington Elm",
+   "Information": "This beautiful white elm, which stood on the state capitol grounds at Austin, was planted in 1932 to commemorate the 200th birthday of George Washington, father of the American Republic. The tree was removed in 2000 due to storm damage and advanced decay. <a href='https://famoustreesoftexas.tfs.tamu.edu/washington-elm/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/13.jpg",
+   "longitude": -97.7394,
+   "latitude": 30.2731,
+   "Chapter": 1,
+   "GlobalID": "1773f011-db6b-47f6-b87b-e2131aa0de6b"
+  },
+  {
+   "OBJECTID": 14,
+   "TreeName": "Founders' Oak",
+   "Information": "The region's early inhabitants—Native Americans, Spaniards, and the first German settlers (who founded New Braunfels in 1845)—all sought shelter and shade under this massive live oak tree. Due to its advancing age and size, the tree requires limb support. The Founders' Oak continues to influence the tree—loving community, remaining perhaps the best loved tree of them all. <a href='https://famoustreesoftexas.tfs.tamu.edu/founders-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/14.jpg",
+   "longitude": -98.1361,
+   "latitude": 29.7114,
+   "Chapter": 2,
+   "GlobalID": "d02babaa-c5ad-4cd5-bebf-56e457ad425b"
+  },
+  {
+   "OBJECTID": 15,
+   "TreeName": "Old Evergreen Tree",
+   "Information": "This long-lived live oak was once the center of Evergreen, one of Lee County's earliest settlements and a vibrant community through 1870—when the railroad passed it by. This amazingly durable tree left an impression on many, long after Evergreen town had permanently disappeared. The tree is still serene and resplendent, and almost all that remains of the ghost town. <a href='https://famoustreesoftexas.tfs.tamu.edu/old-evergreen-tree/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/15.jpg",
+   "longitude": -96.9545,
+   "latitude": 30.2704,
+   "Chapter": 2,
+   "GlobalID": "23e09b81-c411-4565-9832-158929513f40"
+  },
+  {
+   "OBJECTID": 16,
+   "TreeName": "Ross Oak",
+   "Information": "For years, this magnificent tree has been quietly biding its time on a city—owned lot near downtown Waco. At present, it stands at the back a small house. The ancient Ross Oak has already seen many of Waco's highlights, beginning in 1839 with the overnight stay of one man—Shapley Prince Ross. This stay led to Ross' (a captain of the Texas Rangers) acceptance, a decade later, of one of the first lots offered in the new city of Waco. <a href='https://famoustreesoftexas.tfs.tamu.edu/ross-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/16.jpg",
+   "longitude": -97.1303,
+   "latitude": 31.5488,
+   "Chapter": 2,
+   "GlobalID": "561809ef-543a-4326-bf29-71c99f12232b"
+  },
+  {
+   "OBJECTID": 17,
+   "TreeName": "Boat-Landing Cottonwood",
+   "Information": "Contributing to the growth of Stephen F. Austin's new colony was the Boat-Landing Cottonwood, so-named because riverboats were tied up there for loading and unloading cargo at the busy Commercio Plaza. The tree that was once an impressive landmark for riverboat captains navigating the Brazos River was removed in 1974 due to advanced decay. <a href='https://famoustreesoftexas.tfs.tamu.edu/boat-landing-cottonwood/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/17.jpg",
+   "longitude": -96.1038,
+   "latitude": 29.82,
+   "Chapter": 2,
+   "GlobalID": "d66e149d-bd1f-42f3-b982-2b44bd86b5fd"
+  },
+  {
+   "OBJECTID": 18,
+   "TreeName": "Turner Redcedar",
+   "Information": "In 1835, Ruffin C. Turner received title to a league and a labor of land in the Zavalla Colony. On the brow of a small hill in the southwest corner of his land, within a few hundred yards of Indian Springs, Turner built his house under the shade of a giant eastern redcedar. The Turner Redcedar succumbed to drought in 2011. <a href='https://famoustreesoftexas.tfs.tamu.edu/turner-redcedar/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/18.jpg",
+   "longitude": -93.9028,
+   "latitude": 30.8016,
+   "Chapter": 2,
+   "GlobalID": "1d94fba6-5776-4cd5-8e91-66a226c258ec"
+  },
+  {
+   "OBJECTID": 19,
+   "TreeName": "Seiders Oak",
+   "Information": "While on foot searching for livestock near his home in 1842, Gideon White was surrounded by Indians on horseback. He took position behind a thicket of oak trees and fought back with his gun. The numerous bullet holes and arrow marks were visible on the trees for decades. In 1865, General George Armstrong Custer and his men camped at the springs—named for Edwards Seiders who married White's daughter—under these sheltering live oaks. <a href='https://famoustreesoftexas.tfs.tamu.edu/seiders-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/19.jpg",
+   "longitude": -97.7474,
+   "latitude": 30.3059,
+   "Chapter": 2,
+   "GlobalID": "b247e1f7-9b39-4829-9160-31f9eb1eef66"
+  },
+  {
+   "OBJECTID": 20,
+   "TreeName": "Kyle Auction Oak",
+   "Information": "In the 1870s, the International and Great Northern Railroad Company proposed building a new town and purchased land from the Moore and Kyle families for the town site of Kyle, which was named after Fergus Kyle-father of Edwin Kyle (former dean emeritus at Texas A&M University). In the shade of the giant Kyle Auction Oak, the business lots and most of the residential lots were sold at auction. <a href='https://famoustreesoftexas.tfs.tamu.edu/kyle-auction-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/20.jpg",
+   "longitude": -97.8799,
+   "latitude": 29.9879,
+   "Chapter": 2,
+   "GlobalID": "8c2763fb-d26e-4223-a9b4-7bf00c57f468"
+  },
+  {
+   "OBJECTID": 21,
+   "TreeName": "Plainview Hackberries",
+   "Information": "In 1887, E.L. Lowe and Z.T. Maxwell established a town and noted that the view in all directions was obstructed only by the two hackberry groves, and they chose to name their town Plainview. The hackberry trees eventually succumbed to old age and harsh climate, but they played a small part in Texas history by pointing the way to pioneers. <a href='https://famoustreesoftexas.tfs.tamu.edu/plainview-hackberries/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/21.jpg",
+   "longitude": -101.699,
+   "latitude": 34.1801,
+   "Chapter": 2,
+   "GlobalID": "ebcfd677-b910-4e9e-9ce9-2214a3fd339d"
+  },
+  {
+   "OBJECTID": 22,
+   "TreeName": "O'Brien Oak",
+   "Information": "The O'Brien Oak was reported to be the site of the county's early court sessions, and later it shaded a \"lover's lane\" near the George W. O'Brien home for generations of Texans. Captain O'Brien cared deeply for this tree and fought for its preservation. In March 1975, the beloved tree was struck by lightning and never fully recovered and was felled in 1978. <a href='https://famoustreesoftexas.tfs.tamu.edu/obrien-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/22.jpg",
+   "longitude": -94.0919,
+   "latitude": 30.0747,
+   "Chapter": 2,
+   "GlobalID": "7dd12efb-d1de-41e1-a807-9c01b7ebc626"
+  },
+  {
+   "OBJECTID": 23,
+   "TreeName": "Tee Pee City Cottonwood",
+   "Information": "The vanished village of Tee Pee City—the first settlement of Motley County-was once sheltered by this mammoth cottonwood growing at the confluence of Tee Pee Creek and the Middle Pease River in northwest Texas. The cottonwood died sometime in the 1980s and only the town's 1936 historical marker was left standing. <a href='https://famoustreesoftexas.tfs.tamu.edu/teepee-city-cottonwood/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/23.jpg",
+   "longitude": -100.584,
+   "latitude": 34.0938,
+   "Chapter": 2,
+   "GlobalID": "61860c33-12d5-4439-815b-279d4b41328d"
+  },
+  {
+   "OBJECTID": 24,
+   "TreeName": "Steel's Tavern Oaks",
+   "Information": "Fort Worth was established as a military post in 1849. Located in, what was then, the northeast corner of the Fort Plaza, these live oak trees are the only remnants of the original fort grounds still standing.  These trees, commonly known as Steel’s Tavern Oaks, also mark the location of Fort Worth’s first hotel and stage coach terminal built in 1855.<a href='https://famoustreesoftexas.tfs.tamu.edu/steels-tavern-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/101.jpg",
+   "longitude": -97.334709,
+   "latitude": 32.757786,
+   "Chapter": 2,
+   "GlobalID": "d63808d7-7c7d-4c84-a2e8-b2eab3ca9c7e"
+  },
+  {
+   "OBJECTID": 25,
+   "TreeName": "Kissing Tree",
+   "Information": "Kissing Tree, so named because the tree was popular among couples and many proposals took place under its branches, is the last tangible reminder of the Strack family settlement.  Herman Strack, a blacksmith who emigrated with his family in 1848, was the first of five Strack brothers to settle in north Harris County. Strack raised cattle, ran a smithy, and sold barrels of tar harvested from pine trees at his homestead to downtown Houston customers. Several years ago, Kissing Tree was nearly lost to make way for a convenience store parking lot. Thanks to a grassroots movement within the community, the property where the tree grows was purchased to create Kissing Tree Park. <a href='https://famoustreesoftexas.tfs.tamu.edu/kissing-tree/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/102.jpg",
+   "longitude": -95.501956,
+   "latitude": 30.031623,
+   "Chapter": 2,
+   "GlobalID": "3165d65a-3b6f-4c62-9c6f-3030b4159f31"
+  },
+  {
+   "OBJECTID": 26,
+   "TreeName": "Deaf Smith Oak",
+   "Information": "During battle, it was a common practice to climb trees to do reconnaissance, and in mid-October 1835,  frontiersman, scout, and military spy, Erastus \"Deaf\" Smith did just that, climbing a tall live oak to obtain tactical information on the Mexican Army. He was then effectively able to spy on the advance movement of Mexican troops near Cibolo Creek.  <a href='https://famoustreesoftexas.tfs.tamu.edu/deaf-smith-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/24.jpg",
+   "longitude": -98.104,
+   "latitude": 29.3761,
+   "Chapter": 3,
+   "GlobalID": "5f713351-5447-467e-aa30-2a15a375a492"
+  },
+  {
+   "OBJECTID": 27,
+   "TreeName": "Ben Milam Cypress",
+   "Information": "A tall bald cypress used by Mexican snipers to pick off soldiers as they came to the San Antonio River for water was the platform of the historic assassination of Colonel Benjamin Milam, the man credited with winning the siege of Bexar in 1835. \"Who will go with old Ben Milam?\" was the rallying cry that began the six-day advance. Milam didn't live to see the victory; he was shot two days later and died instantly. <a href='https://famoustreesoftexas.tfs.tamu.edu/ben-milam-cypress/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/25.jpg",
+   "longitude": -98.4924,
+   "latitude": 29.4252,
+   "Chapter": 3,
+   "GlobalID": "d7d71823-8425-4665-835a-21b046382c04"
+  },
+  {
+   "OBJECTID": 28,
+   "TreeName": "Burnt Oak",
+   "Information": "The branches of this ancient live oak may well have felt the brush of Mexican and Spanish leather and the sting of rifle balls during Texas' struggle for independence. It was certainly a witness to many of the events which took place in 1835. Beneath the spreading limbs of this tree one can almost smell the cooking fires and the sweat of men and horses. <a href='https://famoustreesoftexas.tfs.tamu.edu/burnt-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/26.jpg",
+   "longitude": -98.4245,
+   "latitude": 29.3769,
+   "Chapter": 3,
+   "GlobalID": "640777f2-5ab2-43b4-9e1e-6a5d2557b131"
+  },
+  {
+   "OBJECTID": 29,
+   "TreeName": "Mission Anaqua",
+   "Information": "For decades, this venerable anaqua graced the grounds of Our Lady of Refuge Church in Refugio, the original site of the historic Refugio Mission near the Mission River. During the fight for independence in 1836, General Houston spoke to Dr. James Grant's men here, in an attempt to have them reconsider their ill-fated battle at Agua Dulce. On March 21, 2011, after many earnest attempts to save the once beautiful tree, continuing deterioration resulted in its removal. <a href='https://famoustreesoftexas.tfs.tamu.edu/mission-anaqua/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/27.jpg",
+   "longitude": -97.2762,
+   "latitude": 28.2954,
+   "Chapter": 3,
+   "GlobalID": "9d0c96bd-35c4-4483-921b-239d6951a987"
+  },
+  {
+   "OBJECTID": 30,
+   "TreeName": "Urrea Oaks",
+   "Information": "These oaks once provided shelter for Mexican Army General Jose de Urrea as he prepared to take the town of Refugio.   Urrea, and this action, was directly responsible for the Goliad massacre of Col James W. Fannin and over 100 Texas soldiers on Palm Sunday, 1836. <a href='https://famoustreesoftexas.tfs.tamu.edu/urrea-oaks/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/28.jpg",
+   "longitude": -97.2855,
+   "latitude": 28.2881,
+   "Chapter": 3,
+   "GlobalID": "e73b950a-9a5b-43ef-b55a-5448ad72d9d5"
+  },
+  {
+   "OBJECTID": 31,
+   "TreeName": "Sam Houston Oak",
+   "Information": "General Sam Houston set up camp under the Sam Houston Oak (also referred to as the Runaway Scrape Oak), a mere nine days after the signing of the Texas Declaration of Independence. This shady live oak near Peach Creek acted as the Commander-in-Chief's official headquarters-and where he regrouped with his men to hatch the plan that resulted in the victory over Santa Anna at San Jacinto a month later. <a href='http://texasforestservice.tamu.edu/websites/FamousTreesOfTexas/TreeLayout.aspx?pageid=16135' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/29.jpg",
+   "longitude": -97.3082,
+   "latitude": 29.4762,
+   "Chapter": 3,
+   "GlobalID": "5f844396-d138-4473-a749-fc5221a428e7"
+  },
+  {
+   "OBJECTID": 32,
+   "TreeName": "Orozimbo Oak",
+   "Information": "This once towering oak near West Columbia lorded over the two-story plantation home, \"Orozimbo\", of Dr. James Aeneas E. Phelps (1800-1847), a Texas Army surgeon and one of Austin's \"Old Three Hundred\" colonists. Santa Anna was held prisoner at this plantation in the months following his defeat at San Jacinto in 1836.  The Orozimbo Oak was destroyed by a fire set by campers in 1981. <a href='https://famoustreesoftexas.tfs.tamu.edu/orozimbo-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/30.jpg",
+   "longitude": -95.5745,
+   "latitude": 29.2533,
+   "Chapter": 3,
+   "GlobalID": "9031d0a9-0ac1-4f55-967f-19c8db4124d1"
+  },
+  {
+   "OBJECTID": 33,
+   "TreeName": "Auction Oaks",
+   "Information": "In 1839, under Judge Edwin Waller's direction, the new city Austin began to take shape. The most valuable lots had been set aside for the capitol and state buildings, and in August the remaining lots were sold at public auction. In the cooling shade of the Auction Oaks, 217 lots were sold, raising $300,000—enough to pay for the public buildings. <a href='https://famoustreesoftexas.tfs.tamu.edu/auction-oaks/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/31.jpg",
+   "longitude": -97.749,
+   "latitude": 30.2681,
+   "Chapter": 3,
+   "GlobalID": "33da2ee5-ed1f-4789-a5f4-1d689b5f025c"
+  },
+  {
+   "OBJECTID": 34,
+   "TreeName": "Houston Campsite Oak",
+   "Information": "The Houston Campsite Oak is the crown jewel of what is now Grapevine Springs Park. Its leafy canopy filters sunlight, twinkling hues of green and gold. Texas Republic President Sam Houston camped here in 1843 while arranging the first peace treaty between Native Americans and the Republic of Texas. The Houston Campsite Oak continues to reign over the landscape as modern Texans hold council beneath its canopy. <a href='http://texasforestservice.tamu.edu/websites/FamousTreesOfTexas/TreeLayout.aspx?pageid=18016' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/32.jpg",
+   "longitude": -97.001,
+   "latitude": 32.9522,
+   "Chapter": 3,
+   "GlobalID": "61ebfb71-4b33-4dd5-9814-d0b384affeee"
+  },
+  {
+   "OBJECTID": 35,
+   "TreeName": "Zachary Taylor Oak",
+   "Information": "A plaque near this stately live oak in Rockport is all that reveals its early connection to General (and future U.S. President) Zachary Taylor and the annexation of Texas. In July 1845, peace was elusive as Mexican forces continued to plague Texas and Texas awaited annexation into the United States. But today, the tree rests peacefully within a quiet city park. <a href='https://famoustreesoftexas.tfs.tamu.edu/zachary-taylor-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/33.jpg",
+   "longitude": -97.056,
+   "latitude": 28.0192,
+   "Chapter": 3,
+   "GlobalID": "a385bd70-2af9-44bb-8158-1406363609a8"
+  },
+  {
+   "OBJECTID": 36,
+   "TreeName": "Which Way Tree",
+   "Information": "During the Texas revolution after the fall of the Alamo, Sam Houston and his army fled to the east to retreat from Santa Anna’s advancing troops and regroup. The road east from Washington-on-the-Brazos forked at the settlement of New Kentucky. Houston and his men stopped there on April 16, 1836.  Near the junction stood a large oak tree with limbs pointing toward each road. One led northeast to safety; the other to battle. As the story goes, Houston supposedly looked at the tree to choose the right path. That path led to victory at San Jacinto and the Republic of Texas was born. <a href='https://famoustreesoftexas.tfs.tamu.edu/which-way-tree/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/103.jpg",
+   "longitude": -95.760596,
+   "latitude": 30.078819,
+   "Chapter": 3,
+   "GlobalID": "bbfc3a76-8008-43c0-9468-e021315fec9e"
+  },
+  {
+   "OBJECTID": 37,
+   "TreeName": "Las Cuevas Ebony",
+   "Information": "Holding steadfast to its vantage point on the north bank of the Rio Grande River, the Las Cuevas Ebony epitomizes the old guard-loyal, dutiful, and resilient. Its long-running campaign is to serve as the riverbank anchor for the last hand-pulled cable ferry on the U.S.-Mexico border. This spot served as the crossing for General Zachary Taylor in 1846 and an 1875 battle over cattle rustling. <a href='https://famoustreesoftexas.tfs.tamu.edu/las-cuevas-ebony/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/34.jpg",
+   "longitude": -98.5647,
+   "latitude": 26.2399,
+   "Chapter": 4,
+   "GlobalID": "d5f78a1f-1d4d-4e6c-aaf4-250f0f7b047f"
+  },
+  {
+   "OBJECTID": 38,
+   "TreeName": "Turner Oak",
+   "Information": "This tree's history has all the elements of a good novel: colorful characters, buried treasure, and intrigue. The Turner Oak is located on what was once Charles Turner's family farm (settled in 1851). Turner, with the help of a trusted slave buried his gold—worth thousands of dollars—under this giant live oak. <a href='https://famoustreesoftexas.tfs.tamu.edu/turner-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/35.jpg",
+   "longitude": -97.3661,
+   "latitude": 32.7617,
+   "Chapter": 4,
+   "GlobalID": "d087fd91-d223-49ab-b762-6c078709052e"
+  },
+  {
+   "OBJECTID": 39,
+   "TreeName": "Muster Oak",
+   "Information": "Since 1837, when Fayette county was organized, this mighty oak has been the emotional meeting point for brave men prepared to serve and defend their country. It was also the place where families and friends said their goodbyes—often for the last time. The Muster Oak is a living memorial to the soldiers of Fayette County. <a href='https://famoustreesoftexas.tfs.tamu.edu/muster-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/36.jpg",
+   "longitude": -96.8786,
+   "latitude": 29.9058,
+   "Chapter": 4,
+   "GlobalID": "a8bea041-750a-4230-9b16-ed7f8ce5ffb9"
+  },
+  {
+   "OBJECTID": 40,
+   "TreeName": "Dueling Oak",
+   "Information": "On February 1837, in a clearing near this giant live oak, two noted military leaders—Brigadier generals Felix Huston and Albert Sidney Johnston—faced one another, pistols in hand, preparing for what could be their final battle. The oak remains much as it was on the day of the duel—stoically lording over this field of honor. <a href='https://famoustreesoftexas.tfs.tamu.edu/dueling-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/37.jpg",
+   "longitude": -96.668,
+   "latitude": 28.9126,
+   "Chapter": 4,
+   "GlobalID": "e3dd595d-109a-473f-a5c1-094f965dd9e5"
+  },
+  {
+   "OBJECTID": 41,
+   "TreeName": "Old Bayview Mesquite",
+   "Information": "Just as people can be famous for the wrong reasons, so too can a tree. When the mesquite tree succumbed in 1987, tree-ring dating revealed the tree, though quite old, was not present during the state's first military funeral in 1845. Even so, in later years the Old Bayview Mesquite served as a poignant reminder of the lives lost to wartime events. <a href='https://famoustreesoftexas.tfs.tamu.edu/old-bayview-mesquite/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/38.jpg",
+   "longitude": -97.3994,
+   "latitude": 27.8009,
+   "Chapter": 4,
+   "GlobalID": "cb1dc986-3792-473b-b20b-f166ecf6519e"
+  },
+  {
+   "OBJECTID": 42,
+   "TreeName": "Parker Oaks",
+   "Information": "In 1860, Isaac Parker brought his niece, Cynthia Ann Parker, and her infant daughter to a log cabin tucked in a post oak grove, when they were recaptured from the Comanche. Cynthia was known to retreat to these oaks for refuge and solace. The Parker Oaks remain as refuge for the mournful and shelter from the storm. <a href='https://famoustreesoftexas.tfs.tamu.edu/parker-oaks/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/39.jpg",
+   "longitude": -97.2041,
+   "latitude": 32.8095,
+   "Chapter": 4,
+   "GlobalID": "d8d0ef9b-56f8-4503-9ade-ace6d7a60efe"
+  },
+  {
+   "OBJECTID": 43,
+   "TreeName": "Twin Oaks",
+   "Information": "Between these trees young William Willis took refuge on Dec. 24, 1866. He was riding a mule to a dance when attacked by Indians. Shot in the back by an arrow, Willis died three weeks later. <a href='https://famoustreesoftexas.tfs.tamu.edu/twin-oaks/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/40.jpg",
+   "longitude": -98.1263,
+   "latitude": 31.6936,
+   "Chapter": 4,
+   "GlobalID": "e628d892-2e10-4b78-984f-7251eafcaaf6"
+  },
+  {
+   "OBJECTID": 44,
+   "TreeName": "Cattle Raisers Oak",
+   "Information": "In mid-February 1877, a sober, determined group of about forty Texas ranchers assembled around a lone post oak to organize war against a common enemy—cattle rustlers. From the first meeting under this oak tree, the Texas and Southwestern Cattle Raisers Association developed into one of Texas agriculture's largest organizations. <a href='https://famoustreesoftexas.tfs.tamu.edu/cattle-raisers-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/41.jpg",
+   "longitude": -98.5927,
+   "latitude": 33.107,
+   "Chapter": 4,
+   "GlobalID": "83105ade-a8ad-4d3b-b8de-d158e755f61c"
+  },
+  {
+   "OBJECTID": 45,
+   "TreeName": "Rough Riders Pecan",
+   "Information": "The Rough Riders Pecan was once known as the Theodore Roosevelt Tree—a fitting honor since the future president organized his all-volunteer cavalry here for critical Spanish-American War of 1898. The Rough Riders were formed to assist the U.S. Army. The tree died following road widening in the 1990s, but the fighting spirit of the Rough Riders lives on. <a href='https://famoustreesoftexas.tfs.tamu.edu/rough-riders-pecan/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/42.jpg",
+   "longitude": -98.4817,
+   "latitude": 29.3765,
+   "Chapter": 4,
+   "GlobalID": "13e6396f-c55d-45c0-81fd-7ef4e28b2cd2"
+  },
+  {
+   "OBJECTID": 46,
+   "TreeName": "Goliad Anaqua",
+   "Information": "In the 1930s, during Civilian Conservation Corps restoration of the Mission Espiritu Santo, Architect Raiford L. Stripling found this large evergreen tree, the Goliad Anaqua, growing from the foundation of the original Spanish mission. Instead of destroying it, he elected to relocate the tree. <a href='https://famoustreesoftexas.tfs.tamu.edu/goliad-anacua/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/43.jpg",
+   "longitude": -97.387,
+   "latitude": 28.6572,
+   "Chapter": 4,
+   "GlobalID": "d01329b0-ac4f-4720-9ee0-7688629742ac"
+  },
+  {
+   "OBJECTID": 47,
+   "TreeName": "Battle Oaks",
+   "Information": "These three live oak trees are remnant of a once larger grove present on the original forty acres of the University of Texas campus when it opened in 1883. Legend says that when word was received that Northern troops had reached Galveston during the Civil War, the hill of oaks was destroyed to erect a fortress and protect the Texas Capitol. <a href='https://famoustreesoftexas.tfs.tamu.edu/battle-oaks/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/44.jpg",
+   "longitude": -97.7408,
+   "latitude": 30.2875,
+   "Chapter": 4,
+   "GlobalID": "8a2bc852-4c61-4a33-b6f5-0e1fd60bfd86"
+  },
+  {
+   "OBJECTID": 48,
+   "TreeName": "Choctaw Robinson Oak",
+   "Information": "The venerable Comanche County oak provided the perfect venue to spread the Gospel. In 1869 Reverend William Robinson made himself right at home under this large live oak, laying his pistol in its fork and preaching to anyone who would listen. Robinson was also known as \"Choctaw Bill.\" <a href='https://famoustreesoftexas.tfs.tamu.edu/choctaw-robinson-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/45.jpg",
+   "longitude": -98.3355,
+   "latitude": 31.885,
+   "Chapter": 5,
+   "GlobalID": "e4472b39-1026-471a-bded-da85b179b785"
+  },
+  {
+   "OBJECTID": 49,
+   "TreeName": "Panna Maria Oaks",
+   "Information": "Upon the arrival from Poland in 1854, the Polish pioneers celebrated with a Midnight Mass, conducted by Father Moczygemba, under a grove of these live oak trees. The immigrants soon built the first Polish church in America nearby. The Panna Maria Oaks still stand—the special masses held under the branches then are the same as they are today. <a href='https://famoustreesoftexas.tfs.tamu.edu/panna-maria-oaks/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/46.jpg",
+   "longitude": -97.8972,
+   "latitude": 28.9579,
+   "Chapter": 5,
+   "GlobalID": "4bad3295-d71f-4295-b8e1-e531d2bfd064"
+  },
+  {
+   "OBJECTID": 50,
+   "TreeName": "Old North Church Oak",
+   "Information": "This tree was known as the Meeting Oak (later Old North Church Oak) and sheltered the oldest Protestant cemetery in Nacogdoches County—the earliest grave dating to 1833. The Old North Church, formally organized in 1838, is the oldest missionary Baptist church in Texas. The tree was toppled by the Category Five winds of Hurricane Rita in 2005. <a href='https://famoustreesoftexas.tfs.tamu.edu/old-north-church-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/47.jpg",
+   "longitude": -94.6552,
+   "latitude": 31.6714,
+   "Chapter": 5,
+   "GlobalID": "2184444e-ffa8-41e5-b98e-6f5b4d22ed10"
+  },
+  {
+   "OBJECTID": 51,
+   "TreeName": "Masonic Oak",
+   "Information": "For nearly 200 years the Masonic Oak in Brazoria has represented the Texas roots of this international organization. It was under this large, moss-covered oak tree in March 1835 that six Masons gathered together to organize the first Masonic Order of Texas. Today, there are over 80,000 active Masons and 846 lodges in Texas. <a href='https://famoustreesoftexas.tfs.tamu.edu/masonic-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/48.jpg",
+   "longitude": -95.5718,
+   "latitude": 29.0557,
+   "Chapter": 5,
+   "GlobalID": "35a62fa3-6a08-4b4d-925d-45edd3592406"
+  },
+  {
+   "OBJECTID": 52,
+   "TreeName": "Baptist Oak",
+   "Information": "In 1849, with little more than a strong sense of faith and a forged conviction to establish a sacred place of worship, twelve early settlers of Goliad met under this picturesque oak to organize the area's first Baptist church. <a href='https://famoustreesoftexas.tfs.tamu.edu/baptist-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/49.jpg",
+   "longitude": -97.3936,
+   "latitude": 28.6665,
+   "Chapter": 5,
+   "GlobalID": "eeb96257-72d8-4d53-b3f8-244559b0259f"
+  },
+  {
+   "OBJECTID": 53,
+   "TreeName": "Church Oak",
+   "Information": "Beside the Saints Peter and Paul Catholic Church in New Braunfels stands a sturdy live oak whose history is lost except for the legend on a large concrete marker placed by the tree in 1917. Tradition says that under this tree Mass was offered by the Abbe Em Domenech in 1849. <a href='https://famoustreesoftexas.tfs.tamu.edu/church-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/50.jpg",
+   "longitude": -98.1288,
+   "latitude": 29.7046,
+   "Chapter": 5,
+   "GlobalID": "28459674-6f28-454c-83bc-ac2459acf37f"
+  },
+  {
+   "OBJECTID": 54,
+   "TreeName": "Waugh Campground Oak",
+   "Information": "During his campaign for governor in 1857, U.S. Senator Sam Houston stood under the Waugh Campground Oak in Caldwell and hotly debated the day's issues with Judge Andrew S. Broaddus. The site of church camp-meetings as early as 1841, the tree died in the late 1990s. <a href='https://famoustreesoftexas.tfs.tamu.edu/waugh-campground-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/51.jpg",
+   "longitude": -96.6819,
+   "latitude": 30.5964,
+   "Chapter": 5,
+   "GlobalID": "5ab9ccd2-d2ef-4102-b785-dcc6845c2151"
+  },
+  {
+   "OBJECTID": 55,
+   "TreeName": "Wiemers Oak",
+   "Information": "In 1857, at a church service held beneath this live oak on his own property, John Wiemers was converted. The next night, his wife, too, was converted. Weather permitting, many of the pioneers' summer and mid-week prayer meetings were held under the shade of this beautiful oak. <a href='https://famoustreesoftexas.tfs.tamu.edu/wiemers-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/52.jpg",
+   "longitude": -99.061,
+   "latitude": 29.3792,
+   "Chapter": 5,
+   "GlobalID": "8d7bdd05-db9a-4fdb-bce9-8dafe8eec2e6"
+  },
+  {
+   "OBJECTID": 56,
+   "TreeName": "Bloys Symbolic Oak",
+   "Information": "On October 10, 1890, 48 West Texas worshippers—half of them children—met for the first time under this oak tree. The Bloys Symbolic Oak, a gray oak known by many as the Union Tree, is symbolic of the union of different faiths joined in the first camp meeting. Reverend William Benjamin Bloys, who held the first meeting, was known spread the Gospel by any means necessary, travelling hundreds of miles by buggy to do so. <a href='https://famoustreesoftexas.tfs.tamu.edu/bloys-symbolic-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/53.jpg",
+   "longitude": -104.139,
+   "latitude": 30.5387,
+   "Chapter": 5,
+   "GlobalID": "ba58e3df-ae7c-4c55-ade6-9d3d0f823706"
+  },
+  {
+   "OBJECTID": 57,
+   "TreeName": "Cart War Oak",
+   "Information": "In a battle over business, Goliad citizens used a live oak, with its strong limbs and documented history as a \"hanging tree,\" to execute numerous Cart War participants in 1857-until the Texas Rangers stepped in and restored law and order. <a href='https://famoustreesoftexas.tfs.tamu.edu/cart-war-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/54.jpg",
+   "longitude": -97.3918,
+   "latitude": 28.6663,
+   "Chapter": 6,
+   "GlobalID": "623db9fc-a8d0-4c8d-b6a4-9d2121fb0307"
+  },
+  {
+   "OBJECTID": 58,
+   "TreeName": "Bandera Hanging Tree",
+   "Information": "Over one hundred and fifty years ago, under what is today known as the Bandera Hanging Tree (or sometimes the \"Hangman's Oak\"), the lives of eight confederate soldiers were needlessly cut short. In 1863, using the live oak tree for gallows, a group of rogue soldiers hung seven men and brutally shot the other. <a href='https://famoustreesoftexas.tfs.tamu.edu/bandera-hanging-tree/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/55.jpg",
+   "longitude": -99.0697,
+   "latitude": 29.7059,
+   "Chapter": 6,
+   "GlobalID": "89de9f32-2113-421f-b0e2-f8e811cbc159"
+  },
+  {
+   "OBJECTID": 59,
+   "TreeName": "Page's Tree",
+   "Information": "For nearly two hundred years this towering oak has shaded the graves of those laid to rest in the historic Clarksville Cemetery. The sturdy oak, now branded Page's Tree, was routinely used in the fight for \"justice\"—so much so that early residents simply referred to it as the \"Hanging Tree.\" Judicial law put an end to the hangings that began with the sentencing of a man named Page, his son, his son-in-law, and a hired hand. <a href='https://famoustreesoftexas.tfs.tamu.edu/pages-tree/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/56.jpg",
+   "longitude": -95.0548,
+   "latitude": 33.6095,
+   "Chapter": 6,
+   "GlobalID": "a6fab8f0-73bb-4073-a3ce-1f1cae6caf49"
+  },
+  {
+   "OBJECTID": 60,
+   "TreeName": "Columbus Court Oak",
+   "Information": "Following the defeat of Santa Anna in 1836, people returned to their homes and began a period of reconstruction. There was no place to hold court in Colorado County except under this majestic live oak, lending the tree a historical importance and value that continues even in death. <a href='https://famoustreesoftexas.tfs.tamu.edu/columbus-court-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/57.jpg",
+   "longitude": -96.5392,
+   "latitude": 29.7058,
+   "Chapter": 6,
+   "GlobalID": "1eb9758c-d9f3-4cbb-943c-bbeaf0b0d8dc"
+  },
+  {
+   "OBJECTID": 61,
+   "TreeName": "Whipping Oak",
+   "Information": "In frontier days, it was common to punish the guilty by having them publicly whipped. After sentencing, Guadalupe County prisoners were tied to this oak tree in Seguin to mete out justice. The Whipping Oak in Seguin's Central Park still retains the 3-inch iron ring used to secure the guilty, a silent witness to frontier justice. <a href='https://famoustreesoftexas.tfs.tamu.edu/whipping-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/58.jpg",
+   "longitude": -97.9641,
+   "latitude": 29.5683,
+   "Chapter": 6,
+   "GlobalID": "720a6946-fdcb-4f03-9817-738f8454ffd0"
+  },
+  {
+   "OBJECTID": 62,
+   "TreeName": "Kyle Hanging Tree",
+   "Information": "During the 1840s, Kyle Ranch cowboys rounding up stray cows discovered a man hanging from a limb of a lone oak, about a quarter mile from Col. Claiborne Kyle's home. Not knowing who he was or why he had been hanged, they cut the body down and buried it beside the tree in an unmarked grave. <a href='https://famoustreesoftexas.tfs.tamu.edu/kyle-hanging-tree/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/59.jpg",
+   "longitude": -97.8984,
+   "latitude": 29.9594,
+   "Chapter": 6,
+   "GlobalID": "b3f82c2f-3f67-4bb7-a5d2-520675e3fe6c"
+  },
+  {
+   "OBJECTID": 63,
+   "TreeName": "Pioneer Oak",
+   "Information": "This majestic Southern red oak was a sister to the oak under which District Judge Oran M. Roberts convened the first session of the Third Judicial Court in 1850. In 1876, the courthouse was destroyed by a fire, which also killed the historic oak. Following road expansion in 1997, the Pioneer Oak, too, died; its age was estimated at 320 years. <a href='https://famoustreesoftexas.tfs.tamu.edu/pioneer-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/60.jpg",
+   "longitude": -95.8508,
+   "latitude": 32.2049,
+   "Chapter": 6,
+   "GlobalID": "a7e6f57d-a03f-49b9-939e-2c19d00c5e83"
+  },
+  {
+   "OBJECTID": 64,
+   "TreeName": "Tombstone Oak",
+   "Information": "Since 1884, this live oak tree and the mark it bears served as the first gravestone for outlaw-turned-lawman, John King Fisher. Accused of being a horse thief when he was just 15, John King Fisher was well on his way to becoming a notorious outlaw. But by the age of 30, he had transformed himself into an effective and popular lawman. <a href='https://famoustreesoftexas.tfs.tamu.edu/tombstone-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/61.jpg",
+   "longitude": -99.7934,
+   "latitude": 29.2143,
+   "Chapter": 6,
+   "GlobalID": "c5c17c85-675d-456d-83a6-727705408349"
+  },
+  {
+   "OBJECTID": 65,
+   "TreeName": "Hallettsville Hanging Tree",
+   "Information": "There was no mistaking the 1878 sentence—death by hanging. Judge Everett Lewis wanted the Indian boy known as \"Pocket\" to be hanged under this live oak, until he was \"dead, dead, dead.\" He was, after all, a convicted murderer... <a href='https://famoustreesoftexas.tfs.tamu.edu/hallettsville-hanging-tree/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/62.jpg",
+   "longitude": -96.9435,
+   "latitude": 29.4562,
+   "Chapter": 6,
+   "GlobalID": "b2af90a8-d3a8-43f2-9200-6477806d81b5"
+  },
+  {
+   "OBJECTID": 66,
+   "TreeName": "Center Hanging Oak",
+   "Information": "Many a Texas county has seen acts of mob violence, including lynchings called \"necktie parties,\" and Shelby County is no exception. The county's last two hangings of record there occurred in the 1920s, and both were performed using the same limb of a giant Southern red oak tree on the courthouse square in Center. <a href='https://famoustreesoftexas.tfs.tamu.edu/center-hanging-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/63.jpg",
+   "longitude": -94.181,
+   "latitude": 31.7947,
+   "Chapter": 6,
+   "GlobalID": "3e2b064f-2f8e-4aa4-b41b-695079258f29"
+  },
+  {
+   "OBJECTID": 67,
+   "TreeName": "Fleming Oak",
+   "Information": "The city name alone—Comanche—reminds us this area was once at the heart of Indian country. Today, the link to the past remains rooted in the ancient Fleming Oak. That the live oak still stands is largely credited to early pioneer and Civil War veteran Martin V. Fleming, the tree's namesake. <a href='https://famoustreesoftexas.tfs.tamu.edu/fleming-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/64.jpg",
+   "longitude": -98.6048,
+   "latitude": 31.8978,
+   "Chapter": 7,
+   "GlobalID": "29832ea4-ef72-4e54-acab-33393d7ae4a8"
+  },
+  {
+   "OBJECTID": 68,
+   "TreeName": "Live Oak County Charter Oak",
+   "Information": "Live Oak county's first officials were elected under this tree in 1856. In 1956, the Charter Oak was again in the spotlight for the county's centennial celebration. The 150th celebration included a reenactment of the signing of the charter under the tree, introductions of descendants of the original signers, and the planting of 150 live oak seedlings. <a href='https://famoustreesoftexas.tfs.tamu.edu/live-oak-county-charter-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/65.jpg",
+   "longitude": -98.0428,
+   "latitude": 28.2989,
+   "Chapter": 7,
+   "GlobalID": "efe740f1-6219-456f-897d-5e77d5ad8f6b"
+  },
+  {
+   "OBJECTID": 69,
+   "TreeName": "Courthouse Cedar",
+   "Information": "For nearly 175 years the Courthouse Cedar is one tree that has defied convention, having been relocated a number of times and stood watch over five county courthouses. The gnarled Courthouse Cedar is only a fraction of what it used to be, but it has withstood much over the years—relocations, wrecking crews, and severe drought, to name but a few. <a href='https://famoustreesoftexas.tfs.tamu.edu/courthouse-cedar/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/66.jpg",
+   "longitude": -96.3708,
+   "latitude": 30.6735,
+   "Chapter": 7,
+   "GlobalID": "29243c17-1198-419c-a6ba-40f909366bb9"
+  },
+  {
+   "OBJECTID": 70,
+   "TreeName": "Liberty Courthouse Oak",
+   "Information": "This beautiful oak tree has long graced the plaza of Liberty, standing beside seven courthouses and observing the activities of the first Presidents of the Republic of Texas. In 1836, the tree witnessed David G. Burnet, a local lawyer, as he went off to fulfill his duties as an interim President of the newly independent Republic of Texas. <a href='https://famoustreesoftexas.tfs.tamu.edu/liberty-courthouse-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/67.jpg",
+   "longitude": -94.7961,
+   "latitude": 30.0595,
+   "Chapter": 7,
+   "GlobalID": "6d836cf8-ee9a-49dd-b205-167970dd6a56"
+  },
+  {
+   "OBJECTID": 71,
+   "TreeName": "Bell County Charter Oak",
+   "Information": "Strength, durability and stature—qualities of live oak trees—are the same characteristics citizens look for in their elected leaders. The Bell County Charter Oak was the very spot chosen for the county's first election in April 1850. Over the years many individuals have helped preserve the Bell County Charter Oak for posterity. <a href='https://famoustreesoftexas.tfs.tamu.edu/bell-county-charter-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/68.jpg",
+   "longitude": -97.4416,
+   "latitude": 31.0658,
+   "Chapter": 7,
+   "GlobalID": "01f2b6f6-aeb3-4b9c-96d3-97e69649d8d2"
+  },
+  {
+   "OBJECTID": 72,
+   "TreeName": "Bosque County Oak",
+   "Information": "When alive, the Bosque County Oak (also referred to as the \"Election Oak\") had the unique distinction of being the one tree to bring together a determined group of pioneers seeking unity and leadership for their fledgling county. Under this grand live oak, Bosque County was formally organized on August 7, 1854. <a href='https://famoustreesoftexas.tfs.tamu.edu/bosque-county-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/69.jpg",
+   "longitude": -97.5529,
+   "latitude": 31.7154,
+   "Chapter": 7,
+   "GlobalID": "d0abd6a1-6c03-48ac-942c-5c42db88486d"
+  },
+  {
+   "OBJECTID": 73,
+   "TreeName": "District Court Oak",
+   "Information": "On June 2, 1856, pioneer James J. Beeman permitted the first Parker County District Court to be held in a post oak grove on his property. Today, only one stoic post oak remains out of the original grove; in some ways, the court remains in session. <a href='https://famoustreesoftexas.tfs.tamu.edu/district-court-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/70.jpg",
+   "longitude": -97.7636,
+   "latitude": 32.8552,
+   "Chapter": 7,
+   "GlobalID": "72f81cff-952c-4651-b185-a19baab836ac"
+  },
+  {
+   "OBJECTID": 74,
+   "TreeName": "Log Cabin Oaks",
+   "Information": "These trees once sheltered the area's first public building-an inauspicious log house made of elm, cedar and cypress built in 1847. At various times it was used as a church, a school and a courthouse. Many of the oak trees were damaged in the 1874 blaze; others were later removed due to a road widening. <a href='https://famoustreesoftexas.tfs.tamu.edu/log-cabin-oaks/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/71.jpg",
+   "longitude": -97.9381,
+   "latitude": 29.8851,
+   "Chapter": 7,
+   "GlobalID": "a4b47c52-d177-425c-9f33-51da6198c3c9"
+  },
+  {
+   "OBJECTID": 75,
+   "TreeName": "Traders Oak",
+   "Information": "More than just centers of commerce and conversation, trading posts were the cornerstones of frontier life. In 1849, in a log cabin behind this giant live oak tree,  traders Henry Clay Daggett and Archibald Franklin Leonard opened the Daggett-Leonard mercantile store a mile from the newly established military post-Fort Worth. <a href='https://famoustreesoftexas.tfs.tamu.edu/traders-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/72.jpg",
+   "longitude": -97.3315,
+   "latitude": 32.7745,
+   "Chapter": 7,
+   "GlobalID": "1506b7a6-2eb0-4660-9503-e797a71328f5"
+  },
+  {
+   "OBJECTID": 76,
+   "TreeName": "Kimble Court Oaks",
+   "Information": "The usual courtroom dignities were absent during the first district court session of Kimble County, held in 1876 under a large live oak tree in the pretty valley of Kimbleville. At the time there was no formal jail, and Texas Rangers had to chain prisoners to nearby trees to await trial. The Kimble Court Oaks are still presiding. <a href='https://famoustreesoftexas.tfs.tamu.edu/kimble-court-oaks/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/73.jpg",
+   "longitude": -99.7555,
+   "latitude": 30.5134,
+   "Chapter": 7,
+   "GlobalID": "1cc4b082-2931-4b5c-ae5e-e347c3b7b1be"
+  },
+  {
+   "OBJECTID": 77,
+   "TreeName": "Commissioners Court Oak",
+   "Information": "On July 22, 1891, Judge Charles E. Davidson convened the first Commissioners Court under this sturdy live oak tree. The first District Court, presided by Judge Winchester Kelso of Eagle Pass, was also held under the Commissioners Court Oak. <a href='https://famoustreesoftexas.tfs.tamu.edu/commissioners-court-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/74.jpg",
+   "longitude": -101.201,
+   "latitude": 30.7118,
+   "Chapter": 7,
+   "GlobalID": "6c247d7e-4ceb-4c3c-bb6f-6f463752bb7a"
+  },
+  {
+   "OBJECTID": 78,
+   "TreeName": "Rio Frio Landmark Oak",
+   "Information": "This gargantuan live oak tree has influenced the tiny town for generations, acting as a key reference point from which all land in Rio Frio was platted. Between 1880 and 1890, settler Newman Patterson used just two bearing points to lay out the entire village of Rio Frio—the colossal oak tree to the west and School house Mountain to the east. <a href='https://famoustreesoftexas.tfs.tamu.edu/rio-frio-landmark-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/75.jpg",
+   "longitude": -99.7376,
+   "latitude": 29.6351,
+   "Chapter": 8,
+   "GlobalID": "3773a878-fe15-4258-865a-457aeec18e9a"
+  },
+  {
+   "OBJECTID": 79,
+   "TreeName": "Half-Way Oak",
+   "Information": "For more than two hundred years, travelers in southern Stephens County have relied on the Half-Way Oak to mark their arrival at the midway point en route to a safe haven. The tree was so named because of its location half way between Breckenridge and towns to the south: Cisco, Eastland, and Ranger. <a href='https://famoustreesoftexas.tfs.tamu.edu/half-way-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/76.jpg",
+   "longitude": -98.8932,
+   "latitude": 32.5633,
+   "Chapter": 8,
+   "GlobalID": "b046efe6-5bce-423a-8394-e6ab6ad8b0cd"
+  },
+  {
+   "OBJECTID": 80,
+   "TreeName": "Old Baldy",
+   "Information": "Old Baldy, a towering bald cypress tree available for refuge to thousands of people who accompanied Spanish Franciscan explorers, still stands sentry along Onion Creek in what is now McKinney Falls State Park. A granite outcropping near the confluence of the creeks shows faint swales and ancient hoof marks that indicate the frequent passage of large expeditions that moved past, or under, Old Baldy. <a href='https://famoustreesoftexas.tfs.tamu.edu/old-baldy/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/77.jpg",
+   "longitude": -97.7236,
+   "latitude": 30.1841,
+   "Chapter": 8,
+   "GlobalID": "86c7a127-21aa-41ff-b38b-fecd97b926c4"
+  },
+  {
+   "OBJECTID": 81,
+   "TreeName": "Wedding Oak",
+   "Information": "In Texas, no other tree may symbolizes love and marriage more than the Wedding Oak. The town of San Saba has long acknowledged this picturesque tree as its central meeting place for lovers, both past and present. Today local businesses continue to use the Wedding Oak and its symbolism—strength, stability and longevity—as both promotion and inspiration. <a href='http://texasforestservice.tamu.edu/websites/FamousTreesOfTexas/TreeLayout.aspx?pageid=16082' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/78.jpg",
+   "longitude": -98.7397,
+   "latitude": 31.2047,
+   "Chapter": 8,
+   "GlobalID": "5d57e34d-0a14-4f3c-b536-8da8476de837"
+  },
+  {
+   "OBJECTID": 82,
+   "TreeName": "Borden Oak",
+   "Information": "The Borden Oak was one of the few trees that survived both the Great Galveston Storm of 1900 and the grade raising of the entire island that purposely followed the storm. This oak has an unusual feature: it has its own deed restriction-purchased by the Galveston Historical Foundation in 1972 to protect the tree from construction damage or destruction. <a href='https://famoustreesoftexas.tfs.tamu.edu/borden-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/79.jpg",
+   "longitude": -94.8056,
+   "latitude": 29.2953,
+   "Chapter": 8,
+   "GlobalID": "36146c64-9d54-41cc-9f2a-bc17cf7a3579"
+  },
+  {
+   "OBJECTID": 83,
+   "TreeName": "Center Oak",
+   "Information": "Looking at the remains of this live oak today, it's hard to imagine that town life once bustled beneath its broad canopy. But in the late nineteenth century, the town of Hughes Store was a hub of human activity. A land survey in the 1870s pegged this live oak as the exact geographical center of Texas, prompting the town's name change to Center City. <a href='https://famoustreesoftexas.tfs.tamu.edu/center-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/80.jpg",
+   "longitude": -98.4117,
+   "latitude": 31.469,
+   "Chapter": 8,
+   "GlobalID": "dd3f4b71-878d-4470-a67c-5ba95e8013a8"
+  },
+  {
+   "OBJECTID": 84,
+   "TreeName": "Tannahill Oak",
+   "Information": "In 1874, Robert Watt Tannahill quarried and cut stones to build a house that would end up serving settlers and travelers along the frontier west of Fort Worth in many ways. With walls up to twenty inches thick and trees nearby providing shade—including this magnificent live oak—the hilltop homestead was a welcome and sheltering place. <a href='https://famoustreesoftexas.tfs.tamu.edu/tannahill-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/81.jpg",
+   "longitude": -97.4868,
+   "latitude": 32.7787,
+   "Chapter": 8,
+   "GlobalID": "1b9eb054-38d7-47a2-b324-ccff7431d183"
+  },
+  {
+   "OBJECTID": 85,
+   "TreeName": "Landmark Cottonwood",
+   "Information": "For centuries, the Landmark Cottonwood served as an important landmark for the area's nomadic Indian tribes and early pioneers. It was also used to guide military and stage drivers safely cross the South Canadian River. Its location forever connects it to the infamous Military Trail and Stage Line. <a href='https://famoustreesoftexas.tfs.tamu.edu/landmark-cottonwood/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/82.jpg",
+   "longitude": -100.186,
+   "latitude": 35.8873,
+   "Chapter": 8,
+   "GlobalID": "7dd96e4c-94bf-4d23-b627-6e46487598e3"
+  },
+  {
+   "OBJECTID": 86,
+   "TreeName": "Century Tree",
+   "Information": "\"Walk under the boughs of the Century Tree with a lover and you will be together forever\"—so goes the tradition at Texas A&M University. The Century Tree, likely planted around the turn of the twentieth century, has been the site of numerous marriage proposals, weddings, and photographs over the years. <a href='https://famoustreesoftexas.tfs.tamu.edu/century-tree/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/83.jpg",
+   "longitude": -96.3414,
+   "latitude": 30.6159,
+   "Chapter": 8,
+   "GlobalID": "62ce76dc-5552-4f44-b445-996e65597e4f"
+  },
+  {
+   "OBJECTID": 87,
+   "TreeName": "Heart O'Texas Oak",
+   "Information": "Although the Center Oak was purported to be the center of Texas in the 1870s, in 1922, this live oak tree in McCulloch County was determined by the US Geodetic Survey to be a new kind of geographical center of the State of Texas: the Heart O' Texas Oak stands at a point that divides the second largest state in the Union into four equal areas. <a href='https://famoustreesoftexas.tfs.tamu.edu/heart-otexas-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/84.jpg",
+   "longitude": -99.1369,
+   "latitude": 31.3996,
+   "Chapter": 8,
+   "GlobalID": "9486c97b-69b5-49dc-9a35-c17fc080a51f"
+  },
+  {
+   "OBJECTID": 88,
+   "TreeName": "La Bahia Pecan",
+   "Information": "Overlooking the historic ferry crossing below the point where the Navasota and Brazos Rivers meet, the La Bahia Pecan likely began its life when a nut dropped from the saddlebags of a trader in the early 1800s. Through the rise and fall—and rise again—of Washington county, the La Bahia Pecan has stood quietly by, offering shade, harbor, and even sustenance. <a href='https://famoustreesoftexas.tfs.tamu.edu/la-bahia-pecan/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/85.jpg",
+   "longitude": -96.1548,
+   "latitude": 30.3287,
+   "Chapter": 8,
+   "GlobalID": "84787c85-cd1d-45be-867e-c53cd8cddca3"
+  },
+  {
+   "OBJECTID": 89,
+   "TreeName": "Goodnight-Loving Pecan",
+   "Information": "In 1866, underneath the large pecan tree near the home of his mother in Black Springs (now Oran), a young Palo Pinto County cattleman named Charles Goodnight met with Oliver Loving, a prominent rancher, to forge the partnership that blazed a new cattle trail eventually spanning some 2,000 miles. <a href='https://famoustreesoftexas.tfs.tamu.edu/goodnight-loving-pecan/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/86.jpg",
+   "longitude": -98.162,
+   "latitude": 32.9603,
+   "Chapter": 9,
+   "GlobalID": "5513e2f4-f2f0-4b5c-bb09-aadc5a422b00"
+  },
+  {
+   "OBJECTID": 90,
+   "TreeName": "Governor Hogg Pecan",
+   "Information": "Governor James Stephen Hogg was elected the 20th governor of Texas in 1891. He died at the age of 54 in 1906. In accordance with Hogg's final request, two pecan trees were planted at his head, and a native black walnut at his feet. Though his gravesite trees are gone, Governor Hogg's call to plant trees across the land of Texas has been realized. <a href='https://famoustreesoftexas.tfs.tamu.edu/governor-hogg-pecan/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/87.jpg",
+   "longitude": -97.7262,
+   "latitude": 30.2779,
+   "Chapter": 9,
+   "GlobalID": "11ee0b69-3c69-4ce2-9038-e7ca3a296030"
+  },
+  {
+   "OBJECTID": 91,
+   "TreeName": "Castroville Pecan",
+   "Information": "Henry Castro was the namesake of the first permanent settlement between San Antonio and the Rio Grande. Gathered under this massive and leafy pecan tree, French and the German settlers recruited by Castro officially founded Castroville in 1842. The Castroville Pecan died during a freeze in 1985, but a new sapling, grown from nuts from the original, now grows in its place. <a href='https://famoustreesoftexas.tfs.tamu.edu/castroville-pecan/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/88.jpg",
+   "longitude": -98.8749,
+   "latitude": 29.3542,
+   "Chapter": 9,
+   "GlobalID": "a7d7a618-984d-4de8-a922-870ca2c4a5a3"
+  },
+  {
+   "OBJECTID": 92,
+   "TreeName": "Grigsby Pecan",
+   "Information": "Joseph Grigsby (1771-1841), a settler who migrated from Kentucky, reportedly became the first cotton grower in East Texas. Grigsby served as a three-time Representative in the Congress of the Republic of Texas.  He died in 1841 and was buried under this majestic pecan tree, as were four of his children. Eventually, the Grigsby Pecan died in a storm. <a href='https://famoustreesoftexas.tfs.tamu.edu/grigsby-pecan/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/89.jpg",
+   "longitude": -93.9427,
+   "latitude": 29.9929,
+   "Chapter": 9,
+   "GlobalID": "af9e99a6-107e-4977-ace2-2ffb3a89d78e"
+  },
+  {
+   "OBJECTID": 93,
+   "TreeName": "Houston Pecan",
+   "Information": "In 1847, while Sam Houston was returning from a campaign trip, he had need of a buggy whip to spur his slow horse. Having none, he stopped beside the road and pulled up a young pecan sapling, which served his purpose well. He planted the sapling in his yard and it grew into a beautiful tree of immense proportions. The tree died in 1974. <a href='http://texasforestservice.tamu.edu/websites/FamousTreesOfTexas/TreeLayout.aspx?pageid=16040' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/90.jpg",
+   "longitude": -95.5536,
+   "latitude": 30.7154,
+   "Chapter": 9,
+   "GlobalID": "81c3d127-3bac-4050-8640-a02e9df0ee27"
+  },
+  {
+   "OBJECTID": 94,
+   "TreeName": "San Saba Mother Pecan",
+   "Information": "E. E. Risien (1853-1940), an Englishman began his pecan breeding work with one small twig on a tree he called the San Saba Mother Pecan, perhaps the most famous pecan tree in Texas. For more than two hundred years this large and shapely tree has thrived near the junction of the San Saba and Colorado Rivers; in its prime, it was highly valued for its delicious nuts. <a href='https://famoustreesoftexas.tfs.tamu.edu/san-saba-mother-pecan/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/91.jpg",
+   "longitude": -98.5949,
+   "latitude": 31.2516,
+   "Chapter": 9,
+   "GlobalID": "4bf6370b-78f6-4181-806b-b00bfa52ad12"
+  },
+  {
+   "OBJECTID": 95,
+   "TreeName": "Original Burkett Pecan",
+   "Information": "J. H. Burkett created the popular Burkett Pecan variety. His two sons, Omar and Joe, first discovered the parent tree for the Burkett Pecan in the fall of 1900. Recognizing a valuable specimen, Burkett took steps to transfer the buds to other root stock by grafting. In July 1903, one graft survived and became the Original Burkett Pecan. <a href='https://famoustreesoftexas.tfs.tamu.edu/original-burkett-pecan/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/92.jpg",
+   "longitude": -99.1614,
+   "latitude": 32.3781,
+   "Chapter": 9,
+   "GlobalID": "7a02f191-6fc0-4872-aa45-1b73a9eb21cf"
+  },
+  {
+   "OBJECTID": 96,
+   "TreeName": "Memorial Pecan",
+   "Information": "On May 30, 1945, the Texas Federation of Women's Clubs planted this tree in a Memorial Day ceremony at the state capitol to honor the heroic service of Texans in World War II. The original tree was removed during a capitol expansion project in the early 1990s, and its wood was reportedly used to make benches for the capitol. <a href='https://famoustreesoftexas.tfs.tamu.edu/memorial-pecan/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/93.jpg",
+   "longitude": -97.7407,
+   "latitude": 30.2756,
+   "Chapter": 9,
+   "GlobalID": "b5a8b7eb-6c89-4ae9-8a34-6a41b066f9d1"
+  },
+  {
+   "OBJECTID": 97,
+   "TreeName": "Big Tree Ranch Bald Cypress",
+   "Information": "Big. Massive. Towering. These are the words often used to describe the incredibly large bald cypress growing at the aptly named Big Tree Ranch in Concan. Naturally, with size comes the question of age, and a core sample taken in 2009 gave the cypress a conservative age estimate of more than six hundred years. <a href='https://famoustreesoftexas.tfs.tamu.edu/big-tree-ranch-baldcypress/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/94.jpg",
+   "longitude": -99.6969,
+   "latitude": 29.4855,
+   "Chapter": 10,
+   "GlobalID": "924f4132-a82e-4cb6-b34d-6b1eab47716c"
+  },
+  {
+   "OBJECTID": 98,
+   "TreeName": "Rio Grande Cottonwood",
+   "Information": "Cottonwoods have persevered in Texas for centuries. For 40 years the giant Rio Grande Cottonwood in Fort Davis reigned as a National Big Tree Champion. The pride and joy of Fort Davis, it was lost in 2011, a victim of the Rockhouse Fire—one in a long list of destructive wildfires that raged in Texas that year. <a href='https://famoustreesoftexas.tfs.tamu.edu/rio-grande-cottonwood/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/95.jpg",
+   "longitude": -103.8609,
+   "latitude": 30.6246,
+   "Chapter": 10,
+   "GlobalID": "3dd2c690-3ab5-4dbe-b0d6-383a3dc9546f"
+  },
+  {
+   "OBJECTID": 99,
+   "TreeName": "Jumbo Hollis Pecan",
+   "Information": "The Jumbo Hollis Pecan produced the largest pecan nuts in the world, weighing in at 33 pecans to the pound (most are 70 - 80 per pound). This achievement was featured in Robert L. Ripley's Believe It Or Not column. In 1919, the 36th Texas Legislature made the Jumbo Hollis the official state tree. The tree also produced 1,015 pounds of nuts the same year. <a href='https://famoustreesoftexas.tfs.tamu.edu/jumbo-hollis-pecan/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/96.jpg",
+   "longitude": -98.5132,
+   "latitude": 31.1008,
+   "Chapter": 10,
+   "GlobalID": "80d69f25-c2c6-44e7-bd47-ba8a52f21d4c"
+  },
+  {
+   "OBJECTID": 100,
+   "TreeName": "Columbus Live Oak",
+   "Information": "The Columbus Live Oak is estimated to be over 500 years old, and continues to generate interest from both big tree enthusiasts and history buffs. Yet another interesting feature of this well-loved tree is its prominent structural support—it has three substantial steel poles helping to bear the weight of its larger branches. <a href='https://famoustreesoftexas.tfs.tamu.edu/columbus-live-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/97.jpg",
+   "longitude": -96.5513,
+   "latitude": 29.7066,
+   "Chapter": 10,
+   "GlobalID": "11ea19de-b85d-448c-a6b8-1fe9b45fa486"
+  },
+  {
+   "OBJECTID": 101,
+   "TreeName": "Cabinet Oak",
+   "Information": "Known as the Texas White House, the LBJ Ranch House, home of President Lyndon B. Johnson, was a center of political activity for more than 20 years. Gracing the lawn in front of the office door, stands the Cabinet Oak. The president liked to hold his staff meetings under the live oak and discuss the issues of the day. <a href='https://famoustreesoftexas.tfs.tamu.edu/cabinet-oak/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/98.jpg",
+   "longitude": -98.6247,
+   "latitude": 30.2409,
+   "Chapter": 10,
+   "GlobalID": "d88c36ca-d0e8-45e4-86d6-30f3a22fcc3c"
+  },
+  {
+   "OBJECTID": 102,
+   "TreeName": "Rusk County Loblolly Pine",
+   "Information": "Bigger, older trees play a vital role in absorbing carbon dioxide from our atmosphere. In Texas, the elder statesman that towers high above the others is the Rusk County Loblolly Pine. The champion tree's identification as the largest of its kind in the Texas Big Tree Registry also helps ensure its protection and continued longevity. <a href='http://texasforestservice.tamu.edu/websites/FamousTreesOfTexas/TreeLayout.aspx?pageid=26888' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/99.jpg",
+   "longitude": -94.5791,
+   "latitude": 31.8658,
+   "Chapter": 10,
+   "GlobalID": "c44488b0-5c1e-42d2-a874-d560d9bf548d"
+  },
+  {
+   "OBJECTID": 103,
+   "TreeName": "Runyon's Esenbeckia",
+   "Information": "Texas has its share of rare trees, owing to its vast geography and climate zones, but perhaps none are rarer than the species named for the South Texas botanist and photographer, Robert Runyon (1881 - 1968). Only a handful of trees are known to exist—this one, and a grove of fifteen trees, now protected as part of the Lower Rio Grande National Wildlife Refuge system. <a href='https://famoustreesoftexas.tfs.tamu.edu/runyons-esenbeckia/' style='color:yellow' target='_blank'>More Info</a>",
+   "Picture": "http://tfsfrd.tamu.edu/storymaps/FamousTrees/pics/100.jpg",
+   "longitude": -97.5024,
+   "latitude": 25.9024,
+   "Chapter": 10,
+   "GlobalID": "00b8f569-d549-468a-9202-bbb0e6ddde46"
+  }
+ ]
+}
