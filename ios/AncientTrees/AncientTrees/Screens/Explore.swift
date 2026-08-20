@@ -11,16 +11,25 @@ struct ExploreView: View {
     let catalogue: Catalogue
     let origin: (lat: Double, lng: Double)
     @Environment(Saved.self) private var saved
+    @Environment(CatalogueStore.self) private var store
+    @State private var search = ""
 
     private var month: Int { Calendar.current.component(.month, from: Date()) }
     private var monthName: String { DateFormatter().monthSymbols[month - 1] }
     private var atTheirBest: [Tree] {
         catalogue.atTheirBest(inMonth: month, near: origin.lat, origin.lng, withinKm: 150)
     }
-    private var cities: [(slug: String, name: String, count: Int)] {
+    private var cities: [(slug: String, name: String, country: String, count: Int)] {
         Dictionary(grouping: catalogue.trees, by: \.citySlug)
-            .map { (slug: $0.key, name: $0.value[0].city, count: $0.value.count) }
+            .map { (slug: $0.key, name: $0.value[0].city,
+                    country: $0.value[0].country, count: $0.value.count) }
             .sorted { $0.count > $1.count }
+    }
+
+    private var matchingCities: [(slug: String, name: String, country: String, count: Int)] {
+        guard !search.isEmpty else { return cities }
+        let q = search.lowercased()
+        return cities.filter { $0.name.lowercased().contains(q) || $0.country.lowercased().contains(q) }
     }
     private var walksNear: [Walk] {
         catalogue.walks.compactMap { w -> (Walk, Double)? in
@@ -67,9 +76,7 @@ struct ExploreView: View {
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack(alignment: .top, spacing: 12) {
                             ForEach(atTheirBest.prefix(8)) { t in
-                                NavigationLink {
-                                    TreeDetail(tree: t, catalogue: catalogue)
-                                } label: {
+                                NavigationLink(value: Route.tree(t.id)) {
                                     seasonCard(t)
                                 }
                                 .buttonStyle(.plain)
@@ -89,7 +96,7 @@ struct ExploreView: View {
             Section {
                 ForEach(Array(walksNear.enumerated()), id: \.element.name) { i, w in
                     if i == 0 {
-                        NavigationLink { WalkDetail(walk: w, catalogue: catalogue) } label: {
+                        NavigationLink(value: Route.walk(city: w.citySlug, name: w.name)) {
                             walkRow(w)
                         }
                     } else {
@@ -113,22 +120,32 @@ struct ExploreView: View {
                 Text("The nearest walk is open to everyone. The others come with Plus, which is not open yet.")
             }
 
-            Section("Places") {
-                ForEach(cities.prefix(30), id: \.slug) { c in
-                    NavigationLink {
-                        CityView(slug: c.slug, name: c.name, catalogue: catalogue, origin: origin)
-                    } label: {
+            Section {
+                ForEach(matchingCities, id: \.slug) { c in
+                    NavigationLink(value: Route.city(c.slug)) {
                         HStack {
-                            Text(c.name)
+                            VStack(alignment: .leading, spacing: 1) {
+                                Text(c.name)
+                                Text(c.country).font(.caption).foregroundStyle(.secondary)
+                            }
                             Spacer()
                             Text("\(c.count)").font(.caption).foregroundStyle(.secondary)
                                 .monospacedDigit()
                         }
                     }
                 }
+            } header: {
+                Text(search.isEmpty ? "All \(cities.count) places" : "\(matchingCities.count) places")
             }
         }
         .navigationTitle("Explore")
+        // Every city, not the first thirty. The list was capped at 30 of 119, so
+        // eighty-nine cities existed in the data and could not be reached from
+        // this screen at all, and there was no search to find them with either.
+        .searchable(text: $search, prompt: "Search a place or a country")
+        // Pull to refresh, which now has something to do: the catalogue can
+        // actually change under the app since CatalogueStore learned to fetch.
+        .refreshable { await store.refresh() }
     }
 }
 
@@ -170,7 +187,7 @@ struct CityView: View {
             if !walks.isEmpty {
                 Section("Walks") {
                     ForEach(walks, id: \.name) { w in
-                        NavigationLink { WalkDetail(walk: w, catalogue: catalogue) } label: {
+                        NavigationLink(value: Route.walk(city: w.citySlug, name: w.name)) {
                             Text("\(w.name) · \(w.count) trees · \(w.duration)")
                                 .font(.subheadline)
                         }
@@ -179,7 +196,7 @@ struct CityView: View {
             }
             Section("\(trees.count) trees") {
                 ForEach(trees) { t in
-                    NavigationLink { TreeDetail(tree: t, catalogue: catalogue) } label: {
+                    NavigationLink(value: Route.tree(t.id)) {
                         VStack(alignment: .leading, spacing: 2) {
                             Text(t.name).font(.subheadline.weight(.medium))
                             Text(t.commonName).font(.caption).foregroundStyle(.secondary)

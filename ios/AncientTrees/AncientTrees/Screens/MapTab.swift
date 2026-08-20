@@ -26,6 +26,9 @@ struct MapTab: View {
     @State private var selected: Tree?
     @State private var sheetHeight: SheetHeight = .peek
     @State private var query = ""
+    /// Where the map is looking. nil until it has been moved, so the first list
+    /// is still the list of what is near you.
+    @State private var mapRegion: MKCoordinateRegion?
     @Environment(Saved.self) private var saved
     @Environment(Account.self) private var account
     @Environment(Nudge.self) private var nudge
@@ -42,15 +45,38 @@ struct MapTab: View {
     /// a clusteringIdentifier so MapKit collapses them by zoom on its own, and
     /// the set never changes so updateUIView stops churning entirely.
     private var mapTrees: [Tree] { catalogue.trees }
+    /// The point the list is about: where the map is looking once it has been
+    /// moved, and where you are standing until then.
+    private var focus: (lat: Double, lng: Double) {
+        guard let c = mapRegion?.center else { return origin }
+        return (lat: c.latitude, lng: c.longitude)
+    }
+
+    /// How far to look, which has to follow the zoom. Half the visible height,
+    /// floored at fifty kilometres so a street-level view still fills the list
+    /// rather than showing the four trees actually on screen.
+    private var reachKm: Double {
+        guard let s = mapRegion?.span else { return 50 }
+        return max(50, s.latitudeDelta * 111.0 / 2)
+    }
+
+    /// True when the map is still looking at roughly where you are standing, so
+    /// the chip can stop saying "near you" the moment that stops being true.
+    private var lookingAtYou: Bool {
+        guard let c = mapRegion?.center else { return true }
+        return CLLocation(latitude: c.latitude, longitude: c.longitude)
+            .distance(from: CLLocation(latitude: origin.lat, longitude: origin.lng)) < 3000
+    }
+
     private var listed: [(tree: Tree, km: Double)] {
-        let near = catalogue.nearest(to: origin.lat, origin.lng, limit: 60, withinKm: 50)
+        let near = catalogue.nearest(to: focus.lat, focus.lng, limit: 60, withinKm: reachKm)
         guard !query.isEmpty else { return near }
         let q = query.lowercased()
         return catalogue.trees
             .filter { $0.name.lowercased().contains(q) || $0.city.lowercased().contains(q)
                       || $0.species.lowercased().contains(q) }
             .prefix(40)
-            .map { ($0, $0.distanceKm(from: origin.lat, origin.lng)) }
+            .map { ($0, $0.distanceKm(from: focus.lat, focus.lng)) }
     }
 
     var body: some View {
@@ -58,6 +84,7 @@ struct MapTab: View {
             TreeMap(trees: mapTrees,
                     focus: .init(latitude: origin.lat, longitude: origin.lng),
                     showsRecentre: true,
+                    region: $mapRegion,
                     selected: $selected)
                 .ignoresSafeArea(edges: [.top, .horizontal])
             BottomSheet(height: $sheetHeight) {
@@ -144,16 +171,16 @@ struct MapTab: View {
             LazyVStack(spacing: 12) {
                 searchField
                 ForEach(listed, id: \.tree.id) { hit in
-                    NavigationLink {
-                        TreeDetail(tree: hit.tree, catalogue: catalogue)
-                    } label: {
+                    NavigationLink(value: Route.tree(hit.tree.id)) {
                         TreeCard(tree: hit.tree, km: hit.km)
                     }
                     .buttonStyle(.plain)
                 }
                 if listed.isEmpty {
                     Text(query.isEmpty
-                         ? "No tree of ours within fifty kilometres."
+                         ? (lookingAtYou
+                            ? "No tree of ours within fifty kilometres."
+                            : "No tree of ours in view. Try moving the map.")
                          : "Nothing matches “\(query)”.")
                         .font(.footnote).foregroundStyle(.secondary).padding(.top, 30)
                 }
@@ -164,7 +191,14 @@ struct MapTab: View {
     }
 
     @ViewBuilder private var whereChip: some View {
-        if located {
+        if located && !lookingAtYou {
+            Label("Trees in this area", systemImage: "map")
+                .font(.subheadline.weight(.semibold))
+                .padding(.horizontal, 14).padding(.vertical, 8)
+                .background(.regularMaterial, in: .capsule)
+                .shadow(color: .black.opacity(0.12), radius: 6, y: 2)
+                .padding(.top, 10)
+        } else if located {
             Label("Near you", systemImage: "location.fill")
                 .font(.subheadline.weight(.semibold))
                 .padding(.horizontal, 14).padding(.vertical, 8)
@@ -231,9 +265,7 @@ struct MapTab: View {
                     .buttonStyle(.plain)
                 }
                 TreeCard(tree: t, km: t.distanceKm(from: origin.lat, origin.lng))
-                NavigationLink {
-                    TreeDetail(tree: t, catalogue: catalogue)
-                } label: {
+                NavigationLink(value: Route.tree(t.id)) {
                     Label("Read why it is worth the walk", systemImage: "book")
                         .font(.subheadline.weight(.semibold))
                         .frame(maxWidth: .infinity).padding(.vertical, 13)

@@ -17,6 +17,10 @@ struct ContentView: View {
     @State private var nudge = Nudge()
     @State private var rootSheet: RootSheet?
     @State private var primerAnswered = false
+    /// One path per tab, so tapping the tab you are already on can empty it.
+    /// Arrays rather than NavigationPath because clearing one is `= []` and
+    /// because every route in this app is the same type.
+    @State private var paths: [Int: [Route]] = [:]
     @State private var debugTree: String?
 
     /// Everything the root can put over the app. An enum rather than a pile of
@@ -58,36 +62,89 @@ struct ContentView: View {
         return location.status == .notDetermined
     }
 
+    /// Tapping the tab you are already on empties that tab's stack, which is
+    /// what every iOS app with tabs has done since tabs existed and what this
+    /// one did not do at all: once you were four trees deep the only way out
+    /// was four taps on Back.
+    private var tabSelection: Binding<Int> {
+        Binding(get: { tab },
+                set: { new in
+                    if new == tab { paths[new] = [] }
+                    tab = new
+                })
+    }
+
+    /// One tab's navigation stack, with every destination in this app declared
+    /// once rather than inline at ten separate call sites.
+    private func stack<Root: View>(_ id: Int, _ cat: Catalogue,
+                                   @ViewBuilder root: () -> Root) -> some View {
+        NavigationStack(path: Binding(get: { paths[id] ?? [] },
+                                      set: { paths[id] = $0 })) {
+            root()
+                .navigationDestination(for: Route.self) { route in
+                    destination(route, cat)
+                }
+        }
+    }
+
+    /// Looked up by id at render time on purpose: the catalogue can be replaced
+    /// under an open screen now that the app downloads a newer one, and a view
+    /// holding a stale struct would quietly keep showing yesterday's story.
+    @ViewBuilder
+    private func destination(_ route: Route, _ cat: Catalogue) -> some View {
+        switch route {
+        case .tree(let id):
+            if let t = cat.tree(id) {
+                TreeDetail(tree: t, catalogue: cat)
+            } else {
+                ContentUnavailableView("That tree is no longer on the map",
+                                       systemImage: "tree",
+                                       description: Text("It may have been removed after a correction."))
+            }
+        case .walk(let city, let name):
+            if let w = cat.walks(inCity: city).first(where: { $0.name == name }) {
+                WalkDetail(walk: w, catalogue: cat)
+            } else {
+                ContentUnavailableView("That walk is gone", systemImage: "figure.walk")
+            }
+        case .city(let slug):
+            CityView(slug: slug,
+                     name: cat.trees.first(where: { $0.citySlug == slug })?.city ?? slug,
+                     catalogue: cat, origin: origin)
+        }
+    }
+
     var body: some View {
         Group {
             if let cat = store.catalogue {
-                TabView(selection: $tab) {
-                    NavigationStack {
+                TabView(selection: tabSelection) {
+                    stack(0, cat) {
                         if let id = debugTree, let t = cat.tree(id) {
                             TreeDetail(tree: t, catalogue: cat)
                         } else {
-                        MapTab(catalogue: cat, origin: origin,
-                               located: location.coordinate != nil || debugOrigin != nil,
-                               locationDenied: location.status == .denied || location.status == .restricted,
-                               onUseMyLocation: { location.request() })
+                            MapTab(catalogue: cat, origin: origin,
+                                   located: location.coordinate != nil || debugOrigin != nil,
+                                   locationDenied: location.status == .denied || location.status == .restricted,
+                                   onUseMyLocation: { location.request() })
                         }
                     }
                         .tag(0)
                         .tabItem { Label("Map", systemImage: "map.fill") }
 
-                    NavigationStack { ExploreView(catalogue: cat, origin: origin) }
+                    stack(1, cat) { ExploreView(catalogue: cat, origin: origin) }
                         .tag(1)
                         .tabItem { Label("Explore", systemImage: "square.grid.2x2") }
 
-                    NavigationStack { SavedView(catalogue: cat, origin: origin) }
+                    stack(2, cat) { SavedView(catalogue: cat, origin: origin) }
                         .tag(2)
                         .tabItem { Label("Saved", systemImage: "heart") }
 
-                    NavigationStack { YouView(catalogue: cat) }
+                    stack(3, cat) { YouView(catalogue: cat) }
                         .tag(3)
                         .tabItem { Label("You", systemImage: "person.crop.circle") }
                 }
                 .environment(saved)
+                .environment(store)
                 .environment(entitlement)
                 .environment(account)
                 .environment(nudge)
@@ -128,6 +185,10 @@ struct ContentView: View {
         .animation(.easeInOut(duration: 0.2), value: needsPrimer)
         .task {
             store.loadBundled()
+            // Ask whether anything changed. A few dozen bytes, and it is the
+            // difference between an app that follows the database and an app
+            // frozen at whatever shipped.
+            Task { await store.refresh() }
             // Same debug scaffolding as -tab and -at: no simulator panel here,
             // so a screen only reachable by tapping cannot otherwise be looked
             // at before it ships.

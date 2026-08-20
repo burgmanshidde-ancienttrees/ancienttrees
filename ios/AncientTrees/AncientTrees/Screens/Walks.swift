@@ -21,9 +21,7 @@ struct WalksView: View {
 
     var body: some View {
         List(walks.prefix(40), id: \.walk.name) { item in
-            NavigationLink {
-                WalkDetail(walk: item.walk, catalogue: catalogue)
-            } label: {
+            NavigationLink(value: Route.walk(city: item.walk.citySlug, name: item.walk.name)) {
                 VStack(alignment: .leading, spacing: 5) {
                     Text(item.walk.name).font(.headline)
                     Text(item.walk.city).font(.subheadline).foregroundStyle(.secondary)
@@ -71,9 +69,7 @@ struct WalkDetail: View {
                     .frame(maxHeight: .infinity)
                 List {
                     ForEach(Array(trees.enumerated()), id: \.element.id) { i, t in
-                        NavigationLink {
-                            TreeDetail(tree: t, catalogue: catalogue)
-                        } label: {
+                        NavigationLink(value: Route.tree(t.id)) {
                             HStack(spacing: 12) {
                                 Text("\(i + 1)")
                                     .font(.caption.bold()).foregroundStyle(.white)
