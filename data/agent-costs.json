@@ -2710,6 +2710,15 @@
     "note": "session pass, in-context, no agent dispatched. Rank 20, much higher priority than the Dutch cities worked earlier today, with 436 register entries within reach per city-queue.json. The register itself (data/registers/brussels-arbres-remarquables.json, Brussels' own official legal inventory, CC BY 4.0) carries no address/place text, only coordinates and a heritage.brussels detail-page URL per tree; that URL turned out to be a heavy JS site whose static HTML (fetched via curl with a browser UA per the known 403-to-WebFetch workaround) returns only navigation menus, not tree-specific content. Used OpenStreetMap Nominatim reverse geocoding (read-only public API, gear for us under hard rule 5, no product impact) to identify the general area instead: a dense cluster of legally-inscribed trees landed at the Jardin du Mont des Arts, confirmed via web search as a genuine public garden (1910 World's Fair origin, rebuilt 1957-58 over an underground car park). Shipped 3 (oak, ailanthus, Caucasian wingnut), all `location_precision: approximate` since the exact garden identification is inferred from geocoding rather than stated by the register itself, matching the existing bru_023 single-source pattern (curation_status flagged, a `notes` field spelling out the single-source and inferred-location caveats, age left undocumented since the register gives girth and legal status but no planting date). Brussels 23 to 26. Preflight clean. Build/superlatives/qa all clean (same pre-existing sitemap-lastmod warning as every other pass today).",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "Bari",
+    "kind": "verify",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session, in-band; access check on the two day-trip candidates the prior commit named (La Grave carob grove Polignano a Mare, Sovereto pine Terlizzi). Neither cleared hard rule 10: the carob grove reads as private agricultural land with no source confirming visibility from the nearby public road, and the Sovereto pine can't be confirmed alive given two independent 2025 reports of fallen century-old trees in that exact area. Recorded both as blocked-with-reasons in data/leads/bari.json so a future pass does not re-search the same question; Bari stays at 3 verified trees below the 4-tree floor.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
