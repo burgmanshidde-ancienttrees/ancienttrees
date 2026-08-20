@@ -14632,7 +14632,9 @@
      "author": "C.R. Adamson, Miami/Teichnor, Boston",
      "lat": null,
      "lng": null,
-     "cats": "Category:Champion (train) Category:EMD E6 locomotives Category:PD US no notice Category:Postcards of trains in the United States"
+     "cats": "Category:Champion (train) Category:EMD E6 locomotives Category:PD US no notice Category:Postcards of trains in the United States",
+     "judged": "reject",
+     "verdict": "a 1941 photograph of the Atlantic Coast Line; a name match on Champion"
     }
    ]
   },
@@ -15847,7 +15849,9 @@
      "author": "C.R. Adamson, Miami/Teichnor, Boston",
      "lat": null,
      "lng": null,
-     "cats": "Category:Champion (train) Category:EMD E6 locomotives Category:PD US no notice Category:Postcards of trains in the United States"
+     "cats": "Category:Champion (train) Category:EMD E6 locomotives Category:PD US no notice Category:Postcards of trains in the United States",
+     "judged": "reject",
+     "verdict": "the same 1941 railway photograph, offered for a second tree"
     }
    ]
   },
@@ -26531,7 +26535,9 @@
      "author": "Didier Descouens",
      "lat": 43.60775375,
      "lng": 1.46056867,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cimetière de Terre-Cabade - Section 2 Category:Files with coordinates missing SDC location of creation Category:Graves in the Cimetière de Terre-Cabade Category:Images by Archaeodontosaurus Toulouse Category:November 2020 in Toulouse Category:Occitanie photographs taken on 2020-11-05 Category:Occitanie photographs taken on 2020-12-11 Category:Sculptures by Albert-Ernest Carrier-Belleuse Category:Sculptures in the Cimetière de Terre-Cabade Category:Self-published work Category:Statues of women in the Cimetière de Terre-Cabade Category:Toulouse in the 19th century Category:Valued Images by Archaeodontosaurus Category:Valued images of Toulouse Category:Valued images of sculptures in Toulouse Category:Valued images promoted 2021-01 Category:Valued images sorted by promotion date"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cimetière de Terre-Cabade - Section 2 Category:Files with coordinates missing SDC location of creation Category:Graves in the Cimetière de Terre-Cabade Category:Images by Archaeodontosaurus Toulouse Category:November 2020 in Toulouse Category:Occitanie photographs taken on 2020-11-05 Category:Occitanie photographs taken on 2020-12-11 Category:Sculptures by Albert-Ernest Carrier-Belleuse Category:Sculptures in the Cimetière de Terre-Cabade Category:Self-published work Category:Statues of women in the Cimetière de Terre-Cabade Category:Toulouse in the 19th century Category:Valued Images by Archaeodontosaurus Category:Valued images of Toulouse Category:Valued images of sculptures in Toulouse Category:Valued images promoted 2021-01 Category:Valued images sorted by promotion date",
+     "judged": "reject",
+     "verdict": "a grave in Terre-Cabade 415m from the pin"
     }
    ]
   },
@@ -33322,7 +33328,9 @@
      "lat": 34.028008,
      "lng": -118.425622,
      "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Moreton Bay Fig Tree (Los Angeles) Category:Self-published work",
-     "source": "wikidata/Q113380044"
+     "source": "wikidata/Q113380044",
+     "judged": "reject",
+     "verdict": "the same file as the approved one, offered twice"
     },
     {
      "title": "File:LAHCM 19 - Moreton Bay Fig Tree (Los Angeles, California).jpg",
@@ -33349,7 +33357,9 @@
      "licence": "CC BY-SA",
      "author": "(c) Lena Struwe, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "34.0563266091,-118.2388065879"
+     "obs_location": "34.0563266091,-118.2388065879",
+     "judged": "reject",
+     "verdict": "iNaturalist detail shot, weak light, no tree as subject"
     }
    ]
   },
@@ -33377,7 +33387,9 @@
      "author": "Clyde Charles Brown",
      "lat": 34.01397719,
      "lng": -118.28301036,
-     "cats": "Category:CC-BY-SA-4.0 Category:Exposition Park palm tree Category:Files with coordinates missing SDC location of creation Category:Uploaded with LrMediaWiki"
+     "cats": "Category:CC-BY-SA-4.0 Category:Exposition Park palm tree Category:Files with coordinates missing SDC location of creation Category:Uploaded with LrMediaWiki",
+     "judged": "approve",
+     "verdict": "the palm alone against a clear sky, trunk to crown, unmistakably the subject"
     },
     {
      "title": "File:Palm tree expo park banc california stadium.jpg",
@@ -33387,7 +33399,9 @@
      "author": "Seauton, 24 February 2019",
      "lat": 34.014026,
      "lng": -118.2831961,
-     "cats": "Category:CC-BY-SA-4.0 Category:Exposition Park palm tree Category:Files with coordinates missing SDC location of creation Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Exposition Park palm tree Category:Files with coordinates missing SDC location of creation Category:Self-published work",
+     "judged": "reject",
+     "verdict": "bare plane branches across the top and the stadium taking half the frame; the other file shows the palm clean"
     },
     {
      "title": "File:Palm tree expo park coliseum peristyle.jpg",
@@ -33470,7 +33484,9 @@
      "author": "Vitorjcj",
      "lat": 32.67626471,
      "lng": -16.90711148,
-     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Pittosporum coriaceum Category:Self-published work Category:Uploaded with Mobile/Android"
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Pittosporum coriaceum Category:Self-published work Category:Uploaded with Mobile/Android",
+     "judged": "reject",
+     "verdict": "a Pittosporum coriaceum offered for a copper beech, 160m away; wrong species"
     }
    ]
   },
@@ -33494,7 +33510,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "32.8109699997,-17.1446916"
+     "obs_location": "32.8109699997,-17.1446916",
+     "judged": "reject",
+     "verdict": "same observation, grey fog, no whole tree"
     },
     {
      "title": "iNat obs 348125183 (Ocotea foetens)",
@@ -33558,7 +33576,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:2012 in Funchal Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Images from Wiki Loves Monuments 2021 Category:Images from Wiki Loves Monuments 2021 in Portugal Category:Images from Wiki Loves Monuments 2021 in Portugal - Madeira Category:Núcleo dos Dragoeiros Category:Photos taken by DarwIn Category:Portugal photographs taken on 2012-03-03 Category:Self-published work Category:Uploaded via Campaign:wlm-pt",
-     "source": "wikidata/Q109303182"
+     "source": "wikidata/Q109303182",
+     "judged": "approve",
+     "verdict": "the dragon tree grove itself, several crowns whole against a blue sky; the ensemble is the destination and it is what the frame shows"
     },
     {
      "title": "iNat obs 199348553 (Dracaena draco)",
@@ -33567,7 +33587,9 @@
      "licence": "CC BY",
      "author": "(c) Vítor Jorge, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "32.6487945994,-16.8696976081"
+     "obs_location": "32.6487945994,-16.8696976081",
+     "judged": "reject",
+     "verdict": "iNat detail; the Commons file already approved shows the grove whole"
     },
     {
      "title": "iNat obs 199348553 (Dracaena draco)",
@@ -33633,7 +33655,9 @@
      "author": "ProtoplasmaKid",
      "lat": 19.416181,
      "lng": -99.170494,
-     "cats": "Category:Ahuehuete Inaugural (Parque España) Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images of Cuauhtémoc by User:ProtoplasmaKid Category:Self-published work"
+     "cats": "Category:Ahuehuete Inaugural (Parque España) Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images of Cuauhtémoc by User:ProtoplasmaKid Category:Self-published work",
+     "judged": "reject",
+     "verdict": "the trunk half hidden behind an agave bed, no crown, the tree does not dominate"
     },
     {
      "title": "File:Parque España - Ciudad de México - 14 - Ahuehuete inaugural.jpg",
@@ -33643,7 +33667,9 @@
      "author": "ProtoplasmaKid",
      "lat": 19.415569,
      "lng": -99.170896,
-     "cats": "Category:Ahuehuete Inaugural (Parque España) Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images of Cuauhtémoc by User:ProtoplasmaKid Category:Photos taken with WMMX camera Category:Self-published work Category:Taken with Nikon D5200"
+     "cats": "Category:Ahuehuete Inaugural (Parque España) Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images of Cuauhtémoc by User:ProtoplasmaKid Category:Photos taken with WMMX camera Category:Self-published work Category:Taken with Nikon D5200",
+     "judged": "approve",
+     "verdict": "the 1921 centenary plaque at the foot proves it is this ahuehuete; trunk and canopy in daylight colour. Not a wide portrait, but honest and identified"
     }
    ]
   },
@@ -33685,7 +33711,9 @@
      "author": "José Luiz",
      "lat": 19.354904,
      "lng": -99.149008,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Information field template with formatting Category:José Luiz uploads Category:June 2024 in Mexico City Category:Patio Menor of ex-Monastery of San Diego Churubusco Category:Self-published work Category:Unidentified trees in Mexico"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Information field template with formatting Category:José Luiz uploads Category:June 2024 in Mexico City Category:Patio Menor of ex-Monastery of San Diego Churubusco Category:Self-published work Category:Unidentified trees in Mexico",
+     "judged": "reject",
+     "verdict": "an orange tree in the monastery garden; the file is titled Unidentified tree and it is not an ahuehuete"
     },
     {
      "title": "File:Unidentified tree - Patio Menor - Ex-Monastery of San Diego Churubusco - Mexico 2024 (2).jpg",
@@ -33695,7 +33723,9 @@
      "author": "José Luiz",
      "lat": 19.354904,
      "lng": -99.149008,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Information field template with formatting Category:José Luiz uploads Category:June 2024 in Mexico City Category:Patio Menor of ex-Monastery of San Diego Churubusco Category:Self-published work Category:Unidentified trees in Mexico"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Information field template with formatting Category:José Luiz uploads Category:June 2024 in Mexico City Category:Patio Menor of ex-Monastery of San Diego Churubusco Category:Self-published work Category:Unidentified trees in Mexico",
+     "judged": "reject",
+     "verdict": "same unidentified orange tree, second crop"
     }
    ]
   },
@@ -33757,7 +33787,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:Australia photos taken with Canon PowerShot SX60 HS Category:CC-BY-SA-4.0 Category:January 2021 in Perth, Western Australia Category:Moreton Bay Fig Tree, Royal Perth Hospital Category:Self-published work",
-     "source": "wikidata/Q66975672"
+     "source": "wikidata/Q66975672",
+     "judged": "approve",
+     "verdict": "the Royal Perth Hospital fig whole against a blue sky, spreading crown and buttressed trunk both readable, in leaf"
     },
     {
      "title": "File:Kirkman House and Moreton Bay Fig Tree, Royal Perth Hospital, January 2021 01.jpg",
@@ -33767,7 +33799,9 @@
      "author": "Calistemon",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:January 2021 in Perth, Western Australia Category:Kirkman House, Royal Perth Hospital Category:Moreton Bay Fig Tree, Royal Perth Hospital Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:January 2021 in Perth, Western Australia Category:Kirkman House, Royal Perth Hospital Category:Moreton Bay Fig Tree, Royal Perth Hospital Category:Self-published work",
+     "judged": "reject",
+     "verdict": "same fig, but Kirkman House takes the centre of the frame; the other file shows the tree whole"
     },
     {
      "title": "File:Kirkman House and Moreton Bay Fig Tree, Royal Perth Hospital, January 2021 02.jpg",
@@ -33836,7 +33870,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:CC-BY-SA-4.0 Category:March 2022 in Perth, Western Australia Category:Port Jackson Fig, Mt Newman House Category:Self-published work",
-     "source": "wikidata/Q66975958"
+     "source": "wikidata/Q66975958",
+     "judged": "reject",
+     "verdict": "photo_light scores it POOR"
     }
    ]
   },
@@ -33865,7 +33901,9 @@
      "author": "Sam Wilson  (taken with Panasonic Lumix DMC-FT1)",
      "lat": -32.05015,
      "lng": 115.74996,
-     "cats": "Category:CC-BY-SA-2.5-AU Category:Files with coordinates missing SDC location of creation Category:Fremantle Boys' School Category:Photos by Sam Wilson Category:Proclamation Tree Category:Taken with Panasonic Lumix DMC-FT1 Category:Uploaded with Commonist"
+     "cats": "Category:CC-BY-SA-2.5-AU Category:Files with coordinates missing SDC location of creation Category:Fremantle Boys' School Category:Photos by Sam Wilson Category:Proclamation Tree Category:Taken with Panasonic Lumix DMC-FT1 Category:Uploaded with Commonist",
+     "judged": "reject",
+     "verdict": "a close-up of the Proclamation Tree plaque; no tree in frame"
     },
     {
      "title": "File:2013-08-11 0948 Fremantle Proclamation Tree.JPG",
@@ -33875,7 +33913,9 @@
      "author": "Sam Wilson  (taken with Panasonic Lumix DMC-FT1)",
      "lat": -32.05014897,
      "lng": 115.7499552,
-     "cats": "Category:CC-BY-SA-2.5-AU Category:Files with coordinates missing SDC location of creation Category:Freopedia round 1 Category:Photos by Sam Wilson Category:Proclamation Tree Category:Taken with Panasonic Lumix DMC-FT1 Category:Uploaded with Commonist"
+     "cats": "Category:CC-BY-SA-2.5-AU Category:Files with coordinates missing SDC location of creation Category:Freopedia round 1 Category:Photos by Sam Wilson Category:Proclamation Tree Category:Taken with Panasonic Lumix DMC-FT1 Category:Uploaded with Commonist",
+     "judged": "reject",
+     "verdict": "the root plate and plaque only, crown entirely out of frame, street behind"
     },
     {
      "title": "File:Proclamation Tree and Marmion Memorial, July 2026 01.jpg",
@@ -33924,7 +33964,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:Armadale, Western Australia Category:CC-BY-2.5-AU Category:Eucalyptus marginata Category:Photographs by Gnangarra Category:Photos by Gnangarra in use Category:State Register of Heritage Places (Armadale LGA) Category:Taken with Pentax K100D",
-     "source": "wikidata/Q437976"
+     "source": "wikidata/Q437976",
+     "judged": "reject",
+     "verdict": "photo_light scores it POOR"
     },
     {
      "title": "iNat obs 47083440 (Eucalyptus marginata)",
@@ -33973,7 +34015,9 @@
      "licence": "CC BY",
      "author": "(c) Arden Hoover, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "47.6304783333,-122.3133383333"
+     "obs_location": "47.6304783333,-122.3133383333",
+     "judged": "reject",
+     "verdict": "same observation, detail only"
     },
     {
      "title": "iNat obs 213286446 (Sequoiadendron giganteum)",
@@ -34000,7 +34044,9 @@
      "author": "Leslie Seaton from Seattle, WA, USA",
      "lat": 47.512424,
      "lng": -122.264701,
-     "cats": "Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Kubota Garden"
+     "cats": "Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Kubota Garden",
+     "judged": "reject",
+     "verdict": "looking straight up an unnamed conifer 148m from the pin; the whole tree is not readable and nothing proves it is the Kubota grand fir"
     },
     {
      "title": "iNat obs 259311794 (Picea abies)",
@@ -34009,7 +34055,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "47.513625,-122.2676805556"
+     "obs_location": "47.513625,-122.2676805556",
+     "judged": "reject",
+     "verdict": "iNat observation of Picea abies offered for a grand fir; wrong species"
     },
     {
      "title": "iNat obs 259311794 (Picea abies)",
@@ -34055,7 +34103,9 @@
      "author": "Leslie Seaton from Seattle, WA, USA",
      "lat": 47.635089,
      "lng": -122.294826,
-     "cats": "Category:CC-BY-2.0 Category:Ethnobotany Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR"
+     "cats": "Category:CC-BY-2.0 Category:Ethnobotany Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR",
+     "judged": "reject",
+     "verdict": "photo_light scores it POOR, and it is a stand of three species rather than our tree"
     },
     {
      "title": "File:Henry Kohankie Tree (5177382935).jpg",
@@ -34065,7 +34115,9 @@
      "author": "Leslie Seaton from Seattle, WA, USA",
      "lat": 47.633065,
      "lng": -122.294483,
-     "cats": "Category:CC-BY-2.0 Category:Ethnobotany Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Taken with Canon EOS 450D"
+     "cats": "Category:CC-BY-2.0 Category:Ethnobotany Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Taken with Canon EOS 450D",
+     "judged": "reject",
+     "verdict": "photo_light scores it POOR"
     },
     {
      "title": "File:Magnolia (5177988740).jpg",
@@ -34148,7 +34200,9 @@
      "author": "rheins",
      "lat": -33.862042,
      "lng": 151.216572,
-     "cats": "Category:Australia photographs taken on 2013-04-30 Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation (34° S, 151° E) Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 5226993 Category:Royal Botanic Gardens, Sydney"
+     "cats": "Category:Australia photographs taken on 2013-04-30 Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation (34° S, 151° E) Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 5226993 Category:Royal Botanic Gardens, Sydney",
+     "judged": "reject",
+     "verdict": "a fallen dragon's blood tree, not the Bidwill kauri"
     },
     {
      "title": "File:Sulphur Crested Cockatoo in Tree - Flickr - GregTheBusker.jpg",
@@ -34158,7 +34212,9 @@
      "author": "Greg Schechter from San Francisco, USA",
      "lat": -33.861845,
      "lng": 151.216297,
-     "cats": "Category:Australia photographs taken on 2009-03-02 Category:CC-BY-2.0 Category:Cacatua galerita Category:Files uploaded by Josve05a (Greg Schechter) Category:Files with coordinates missing SDC location of creation (34° S, 151° E) Category:Flickr images reviewed by FlickreviewR Category:Photographs by Greg Schechter"
+     "cats": "Category:Australia photographs taken on 2009-03-02 Category:CC-BY-2.0 Category:Cacatua galerita Category:Files uploaded by Josve05a (Greg Schechter) Category:Files with coordinates missing SDC location of creation (34° S, 151° E) Category:Flickr images reviewed by FlickreviewR Category:Photographs by Greg Schechter",
+     "judged": "reject",
+     "verdict": "a cockatoo photograph; the tree is incidental"
     },
     {
      "title": "iNat obs 259217559 (Agathis robusta)",
@@ -34195,7 +34251,9 @@
      "lat": -33.886092,
      "lng": 151.188805,
      "cats": "Category:Australia photographs taken on 2014-11-04 Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation (34° S, 151° E) Category:Flickr images verified by UploadWizard Category:Jacaranda, University of Sydney Category:November 2014 in New South Wales",
-     "source": "wikidata/Q28036700"
+     "source": "wikidata/Q28036700",
+     "judged": "reject",
+     "verdict": "photo_light scores it POOR"
     },
     {
      "title": "File:Jacaranda in the quadrangle of University of Sydney, blooming in November 2019.jpg",
@@ -34205,7 +34263,9 @@
      "author": "Whiteghost.ink",
      "lat": -33.886058,
      "lng": 151.188811,
-     "cats": "Category:Australia photographs taken on 2019-11-03 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (34° S, 151° E) Category:Jacaranda, University of Sydney Category:November 2019 in Sydney Category:Self-published work Category:Taken with iPhone 7 (main camera)"
+     "cats": "Category:Australia photographs taken on 2019-11-03 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (34° S, 151° E) Category:Jacaranda, University of Sydney Category:November 2019 in Sydney Category:Self-published work Category:Taken with iPhone 7 (main camera)",
+     "judged": "reject",
+     "verdict": "the sandstone quadrangle takes four fifths of the frame and the jacaranda in it is a thin young replacement"
     },
     {
      "title": "File:SydneyUniversity MainQuadrangle Jacaranda crop.jpg",
@@ -34257,7 +34317,9 @@
      "author": "Notmeus",
      "lat": -33.889376,
      "lng": 151.179641,
-     "cats": "Category:Australia photographs taken on 2020-05-06 Category:CC-BY-SA-4.0 Category:Camperdown, New South Wales Category:Files with coordinates missing SDC location of creation (34° S, 151° E) Category:May 2020 in Sydney Category:Newtown, New South Wales Category:Self-published work Category:Taken with Oppo R17 Pro"
+     "cats": "Category:Australia photographs taken on 2020-05-06 Category:CC-BY-SA-4.0 Category:Camperdown, New South Wales Category:Files with coordinates missing SDC location of creation (34° S, 151° E) Category:May 2020 in Sydney Category:Newtown, New South Wales Category:Self-published work Category:Taken with Oppo R17 Pro",
+     "judged": "reject",
+     "verdict": "an area view of Camperdown and Newtown from 577m; no fig as subject"
     }
    ]
   },
