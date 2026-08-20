@@ -74,7 +74,15 @@ export const SIGNIN_JS = `
 
   var dlg = document.getElementById('signin-dialog');
   if (!dlg) return;
-  window.atOpenSignIn = function() {
+  window.atOpenSignIn = function(treeName) {
+    // Name the tree that was just saved. The generic line stays for every
+    // other entry point, and a missing name is not an error, it is the
+    // ordinary case on the account page and in the nav.
+    var sub = document.getElementById('signin-sub');
+    if (sub) {
+      var tpl = treeName ? sub.getAttribute('data-named') : null;
+      sub.textContent = tpl ? tpl.replace('%s', treeName) : sub.getAttribute('data-generic');
+    }
     if (dlg.showModal) { dlg.showModal(); } else { location.href = '/account'; }
   };
   document.addEventListener('click', function(e) {

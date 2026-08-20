@@ -437,6 +437,14 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .sr-link a { color: var(--moss); font-weight: 600; text-decoration: none; }
 .sr-link a:hover { text-decoration: underline; }
 .account-page { max-width: 480px; }
+/* The account form stacks on a phone. Side by side, "Email me a sign-in link"
+   is wide enough that the field shrank until its placeholder read
+   "you@exampl", on the one page whose entire job is getting an address typed
+   into it. Scoped to .account-page so the homepage hero search is untouched. */
+@media (max-width: 560px) {
+  .account-page .hero-search { flex-direction: column; }
+  .account-page .hero-search .go-btn { width: 100%; }
+}
 .proto-note { background: #FDF6E3; border: 1px solid #EADFA9; border-radius: 8px; padding: 8px 12px; font-size: 12.5px; color: #7A6A2F; margin-bottom: 1.4rem; }
 .acct-card h1 { margin-bottom: 0.5rem; }
 .acct-sub { color: var(--ink-mid); margin-bottom: 1.1rem; }
@@ -1099,6 +1107,11 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .signin-more { margin-bottom: 0.2rem; }
 .signin-or { margin: 0.4rem 0 !important; }
 .signin-app { background: #23261e; }
+/* The app is a different decision from signing in, so it stopped being a second
+   filled button in the dialog on 2026-08-20 and became a plain link. One filled
+   button, one job. */
+.signin-applink { display: inline-block; font-size: 14px; font-weight: 700;
+  color: var(--ink); text-decoration: underline; }
 .signin-fine { font-size: 12px !important; margin-top: 0.9rem !important; }
 .nav-group { font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase;
   color: var(--ink-light); margin: 0.5rem 0 0.15rem; padding: 0 0.9rem; }

@@ -106,7 +106,7 @@ export const TREE_ACTIONS_JS = `
       // we ask once a visit and never block it.
       if (!cs && window.atOpenSignIn && !sessionStorage.getItem('at_save_ask')) {
         sessionStorage.setItem('at_save_ask', '1');
-        window.atOpenSignIn();
+        window.atOpenSignIn(b.dataset.name);
       }
     }
     try { localStorage.setItem(KEY, JSON.stringify(map)); } catch (err) {}
