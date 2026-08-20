@@ -29,6 +29,9 @@ import threading
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from layout_rules import MIN_TAP, DRIFT_MAX, SAME, PHONE_W  # noqa: E402
+
 DIST = Path(__file__).resolve().parent.parent / "site" / "dist"
 
 CHROME_CANDIDATES = [
@@ -111,6 +114,178 @@ f.addEventListener('load', function() {
   }, 1200);
 });
 </script>"""
+
+
+# The same three rules the app is judged by (scripts/layout_rules.py), applied
+# to the site. DRIFT is the one this adds: two things that should share a left
+# edge and sit a few points apart. Hidde found it by eye twice in two days, on
+# the phone header and then on /explore, and asked the obvious question: "kunnen
+# we zorgen dat jij de alignment altijd van de website in de gaten houdt?"
+#
+# How it decides what "should share a left edge" means, because a naive version
+# flags every page:
+#   * A COLUMN is any element whose visible children are stacked vertically.
+#     Anything laid out as a row (flex-row, multi-column grid) is not a column
+#     and neither are its children compared, because horizontal offsets inside a
+#     row ARE the layout.
+#   * A column child's GUTTER is the leftmost place it puts ink: walk down until
+#     you reach text, an image, a control, or a row, and take that edge.
+#   * An element that paints a box (background or border) and is INSET from its
+#     parent contributes its box edge, because a pill's box is what the eye
+#     lines up. A full-bleed card contributes its text instead, for the same
+#     reason: nobody sees its edges.
+#   * Centred and right-aligned text is skipped outright. Its left edge is a
+#     function of its length, not of a gutter.
+#   * Anything inside a horizontal scroller is skipped, exactly as in the fit
+#     check above.
+# Two gutters in one column that differ by more than SAME and at most DRIFT_MAX
+# are a fault. Bigger differences are deliberate insets and are left alone.
+ALIGN_HARNESS = """<!doctype html><meta charset="utf-8"><title>align</title>
+<style>html,body{margin:0}iframe{border:0;height:900px}</style>
+<iframe id="f"></iframe><pre id="r">pending</pre>
+<script>
+var p = new URLSearchParams(location.search);
+var f = document.getElementById('f');
+f.style.width = (p.get('w') || '375') + 'px';
+f.src = p.get('u');
+f.addEventListener('load', function() {
+  setTimeout(function() {
+    try {
+      var d = f.contentDocument, w = f.contentWindow;
+      var HTML = 'http://www.w3.org/1999/xhtml', SAME = %(same)s, DRIFT = %(drift)s, TAP = %(tap)s;
+      function cs(el) { return w.getComputedStyle(el); }
+      function vis(el) {
+        var s = cs(el);
+        if (s.display === 'none' || s.visibility === 'hidden' || s.opacity === '0') return false;
+        if (s.position === 'absolute' || s.position === 'fixed') return false;
+        var r = el.getBoundingClientRect();
+        return r.width >= 1 && r.height >= 1;
+      }
+      function inScroller(el, stop) {
+        for (var q = el.parentElement; q && q !== stop && q !== d.body; q = q.parentElement) {
+          var ox = cs(q).overflowX;
+          if (ox === 'auto' || ox === 'scroll') return true;
+        }
+        return false;
+      }
+      function rowish(el) {
+        var s = cs(el);
+        if (s.display === 'flex' || s.display === 'inline-flex') return s.flexDirection.indexOf('row') === 0;
+        if (s.display === 'grid' || s.display === 'inline-grid') return (s.gridTemplateColumns || 'none').split(' ').length > 1;
+        return false;
+      }
+      function centred(el) { var a = cs(el).textAlign; return a === 'center' || a === 'right' || a === 'end'; }
+      function contentLeft(el) {
+        var r = el.getBoundingClientRect(), s = cs(el);
+        return r.left + parseFloat(s.borderLeftWidth || 0) + parseFloat(s.paddingLeft || 0);
+      }
+      function paints(el) {
+        var s = cs(el), bg = s.backgroundColor || '';
+        var clear = bg === 'transparent' || /,\s*0\)$/.test(bg);
+        return !clear || parseFloat(s.borderLeftWidth || 0) > 0;
+      }
+      function inset(el) {
+        return paints(el) && el.parentElement
+               && Math.abs(el.getBoundingClientRect().left - contentLeft(el.parentElement)) > SAME;
+      }
+      function ownText(el) {
+        for (var i = 0; i < el.childNodes.length; i++) {
+          var n = el.childNodes[i];
+          if (n.nodeType === 3 && n.textContent.trim()) return true;
+        }
+        return false;
+      }
+      var LEAF = {IMG:1, SVG:1, CANVAS:1, INPUT:1, BUTTON:1, TEXTAREA:1, SELECT:1, VIDEO:1, HR:1};
+      function sel(el) {
+        var c = (el.className && typeof el.className === 'string')
+              ? '.' + el.className.trim().split(/\s+/).slice(0, 2).join('.') : '';
+        return el.tagName.toLowerCase() + (el.id ? '#' + el.id : '') + c;
+      }
+      function gutter(el, stop) {
+        var best = null, who = null;
+        (function walk(n) {
+          if (n.namespaceURI !== HTML || !vis(n) || inScroller(n, stop) || centred(n)) return;
+          var L;
+          if (LEAF[n.tagName.toUpperCase()] || rowish(n) || ownText(n) || !n.children.length) {
+            L = inset(n) ? n.getBoundingClientRect().left : contentLeft(n);
+          } else if (inset(n)) {
+            L = n.getBoundingClientRect().left;
+          } else {
+            for (var i = 0; i < n.children.length; i++) walk(n.children[i]);
+            return;
+          }
+          if (best === null || L < best - 0.01) { best = L; who = sel(n); }
+        })(el);
+        return best === null ? null : {left: best, who: who};
+      }
+      function stacked(kids) {
+        for (var i = 1; i < kids.length; i++) {
+          var a = kids[i - 1].getBoundingClientRect(), b = kids[i].getBoundingClientRect();
+          if (b.top < a.bottom - 2) return false;
+        }
+        return true;
+      }
+      var drift = [], seen = {}, all = d.querySelectorAll('body *');
+      for (var i = 0; i < all.length; i++) {
+        var col = all[i];
+        if (col.namespaceURI !== HTML || !vis(col) || rowish(col)) continue;
+        if (LEAF[col.tagName.toUpperCase()] || inScroller(col, null)) continue;
+        var kids = [];
+        for (var j = 0; j < col.children.length; j++) {
+          var k = col.children[j];
+          if (k.namespaceURI === HTML && vis(k) && !centred(k)) kids.push(k);
+        }
+        if (kids.length < 2 || !stacked(kids)) continue;
+        var gs = [];
+        for (var m = 0; m < kids.length; m++) {
+          var g = gutter(kids[m], col);
+          if (g) gs.push({sel: sel(kids[m]), left: g.left, who: g.who});
+        }
+        for (var a2 = 0; a2 < gs.length; a2++) for (var b2 = a2 + 1; b2 < gs.length; b2++) {
+          var gap = Math.abs(gs[a2].left - gs[b2].left);
+          if (gap <= SAME || gap > DRIFT) continue;
+          var key = sel(col) + '|' + Math.round(gs[a2].left) + '|' + Math.round(gs[b2].left);
+          if (seen[key]) continue;
+          seen[key] = 1;
+          drift.push('in ' + sel(col) + ': ' + gs[a2].sel + ' starts at ' + Math.round(gs[a2].left * 10) / 10
+                     + ' but ' + gs[b2].who + ' at ' + Math.round(gs[b2].left * 10) / 10
+                     + ' (' + Math.round(gap * 10) / 10 + ' off)');
+        }
+      }
+      // Reported, not enforced: see the note where this is printed.
+      var small = [];
+      d.querySelectorAll('button, [role=button], a').forEach(function(el) {
+        if (!vis(el) || !paints(el)) return;
+        var r = el.getBoundingClientRect();
+        if (r.width < TAP - SAME || r.height < TAP - SAME)
+          small.push(sel(el) + ' ' + Math.round(r.width) + 'x' + Math.round(r.height));
+      });
+      document.getElementById('r').textContent = 'RESULT ' + JSON.stringify({
+        drift: drift.slice(0, 6), nsmall: small.length, small: small.slice(0, 3)
+      });
+    } catch (e) {
+      document.getElementById('r').textContent = 'RESULT ' + JSON.stringify({error: String(e)});
+    }
+  }, 2500);
+});
+</script>""" % {"same": SAME, "drift": DRIFT_MAX, "tap": MIN_TAP}
+
+
+def drifts_at(chrome, base, page, width):
+    """Does everything in a column start on the same line? See ALIGN_HARNESS."""
+    url = "%s/__align.html?w=%d&u=%s" % (base, width, page)
+    out = subprocess.run(
+        [chrome, "--headless=new", "--disable-gpu", "--no-sandbox",
+         "--window-size=%d,900" % (width + 60), "--virtual-time-budget=20000",
+         "--dump-dom", url],
+        capture_output=True, text=True, timeout=120).stdout
+    m = re.search(r"RESULT (\{.*?\})</pre>", out, re.S)
+    if not m:
+        return None
+    try:
+        return json.loads(m.group(1).replace("&quot;", '"').replace("&amp;", "&"))
+    except Exception:
+        return None
 
 
 def fits_at_375(chrome, base, page):
@@ -281,6 +456,8 @@ setTimeout(function(){
     # rather than shipped so it can never reach a visitor.
     fit_page = DIST / "__fit.html"
     fit_page.write_text(HARNESS, encoding="utf-8")
+    align_page = DIST / "__align.html"
+    align_page.write_text(ALIGN_HARNESS, encoding="utf-8")
 
     failures = []
     for url, label, wants in checks:
@@ -324,10 +501,48 @@ setTimeout(function(){
             failures.append("%s: page scrolls sideways at 375px (%dpx wide)"
                             % (label, r["scroll"]))
 
-    try:
-        fit_page.unlink()
-    except OSError:
-        pass
+    # Does everything line up? Same three rules as the app (layout_rules.py),
+    # at the two widths the site is actually read at.
+    pages = [(f"/{city.name}", "city page"),
+             ("/index.html", "homepage"),
+             ("/explore.html", "explore"),
+             (f"/{city.stem}/{tree.name}", "tree page"),
+             ("/cities.html", "cities index"),
+             ("/account.html", "account"),
+             ("/netherlands.html", "country page")]
+    small_seen = []
+    for page, label in pages:
+        for width in (PHONE_W, 1280):
+            r = drifts_at(chrome, base, page, width)
+            if r is None:
+                failures.append(f"{label}: could not measure alignment at {width}px")
+                continue
+            if r.get("error"):
+                failures.append(f"{label} at {width}px: alignment probe failed: {r['error']}")
+                continue
+            for d in r.get("drift", []):
+                failures.append(f"DRIFT {label} at {width}px: {d}")
+            if width == PHONE_W and r.get("nsmall"):
+                small_seen.append((label, r["nsmall"], r.get("small", [])))
+
+    # SMALL is measured and PRINTED but does not fail the build, which is the one
+    # place the two platforms deliberately differ. The app gates it because it
+    # started clean; the site has dozens of controls under 44 points (the save
+    # heart is 67x26 on every card), and fixing those is a design pass with
+    # Hidde rather than something to spring on a deploy. Print it so the number
+    # cannot quietly grow while nobody is looking.
+    if small_seen:
+        total = sum(n for _, n, _ in small_seen)
+        print(f"SMALL: {total} control(s) under {MIN_TAP:.0f}x{MIN_TAP:.0f} at {PHONE_W}px "
+              f"(reported, not gated)")
+        for label, n, examples in small_seen:
+            print(f"  {label}: {n}" + (f" e.g. {', '.join(examples)}" if examples else ""))
+
+    for page in (fit_page, align_page):
+        try:
+            page.unlink()
+        except OSError:
+            pass
     server.shutdown()
     if failures:
         print(f"SMOKE FAILED: {len(failures)} problem(s)")
