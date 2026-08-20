@@ -2602,6 +2602,15 @@
     "note": "2 trees verified (Anne Frank memorial chestnut, 1894 plane at Place Antoine-Rivoire); 2 more moved to leads, still single-sourced",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "bari, lyon",
+    "kind": "write",
+    "tokens": 15000,
+    "trees": 2,
+    "note": "session write pass on the shelf, in-context, no agent dispatched: 3 stories written (bar_003, lyo_012, lyo_013). Lyon's 2 merged (12 trees now); Bari's 3 stay unmerged, still below the 4-tree floor with its register exhausted (both remaining candidates blocked on hard rule 10)",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

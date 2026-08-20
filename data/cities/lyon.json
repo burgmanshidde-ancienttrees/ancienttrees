@@ -5,7 +5,7 @@
   "intro": "Lyon keeps a formal, published list of its remarkable trees: four carry the national Arbre Remarquable label, and one park holds the collective Ensemble Arboré Remarquable label for its whole 8,800-tree collection. That park, the Tête d'Or, exists because 19th century Lyonnais wanted a green space to rival Paris's Bois de Boulogne, and two Swiss brothers gave them one with species from four continents. What survives elsewhere is quieter: a giant chestnut in a half-wild park, a cedar on a Saône island where monks gardened for a thousand years, an oak collection planted the year before the First World War.",
   "meta_description": "Lyon labels its remarkable trees by law. Meet a pine first grown in Europe via Kew in 1856, a giant chestnut, and an island cedar monks once tended.",
   "question_answer": "Lyon has no single documented oldest tree, but its most precisely dated remarkable tree is the Pin de Bunge, also called the Pin de Napoléon, in the Parc de la Tête d'Or, planted around 1856 during the park's creation and now roughly 170 years old. It carries France's national Arbre Remarquable label and is described by the label association as having no equivalent elsewhere in the country.",
-  "question_meta": "Lyon's most precisely dated remarkable tree is an 1856 Chinese pine in Parc de la Tête d'Or. Its story, exact location, and eight more labelled trees.",
+  "question_meta": "Lyon's most precisely dated remarkable tree is an 1856 Chinese pine in Parc de la Tête d'Or. Its story, exact location, and eleven more remarkable trees.",
   "question_context": "Lyon is one of the few cities on this list with an actual published inventory to work from: the city government maintains a list of nationally labelled Arbres Remarquables, awarded by the A.R.B.R.E.S. association, and the Metropole publishes open data on protected trees across Greater Lyon. That inventory favours species rarity, size and documented planting circumstances over sheer age, which is why the Pin de Bunge, a Chinese species first introduced to Europe through Kew Gardens in the 19th century, anchors this list rather than an oak or a yew. It stands along the perimeter path of the Tête d'Or's arboretum, a five minute walk from the Boulevard des Belges entrance, in a park that itself holds France's Ensemble Arboré Remarquable label for the whole collection. Older individual claims exist elsewhere in the city, a cedar on the Saône island of Île Barbe where monks are documented gardening for over a thousand years, but none carry the same precisely dated planting record the Pin de Bunge does.",
   "faq": [
     {
@@ -22,7 +22,7 @@
     },
     {
       "q": "Are Lyon's remarkable trees free to see?",
-      "a": "Yes. All ten are free to see with no entry fee, from the island garden of Île Barbe, reachable on foot via a footbridge over the Saône, to a rare oak on an ordinary Villeurbanne street corner."
+      "a": "Yes. All of them are free to see with no entry fee, from the island garden of Île Barbe, reachable on foot via a footbridge over the Saône, to a rare oak on an ordinary Villeurbanne street corner."
     }
   ],
   "trees": [
@@ -363,6 +363,65 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       }
+    },
+    {
+      "id": "lyo_012",
+      "name": "The Anne Frank Chestnut",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "planted December 2014, about 12 years old",
+      "age_min": 11,
+      "age_max": 12,
+      "location": {
+        "address": "Place Marc-Aron, rue Moncey, 69003 Lyon",
+        "latitude": 45.76063,
+        "longitude": 4.84927,
+        "neighbourhood": "Part-Dieu, 3rd arrondissement"
+      },
+      "story": "This chestnut is not old. It is barely twelve, planted at the centre of Place Marc-Aron in December 2014 to replace a statue called Renaissance that the square's renovation had removed. What makes it worth a stop is where it comes from: it is a cutting from the horse chestnut Anne Frank could see through the attic window of her hiding place in Amsterdam, the tree she described in her diary as one of the only things connecting her to the outside world.\n\nThat original tree fell in a storm on 23 August 2010. Before it went, the Anne Frank Foundation had already taken roughly 150 cuttings and sent saplings to institutions and public spaces worldwide, Washington DC, Jerusalem and Paris among them, so the tree from the diary kept growing in dozens of places after the original one did not. Lyon's arrived on rue Moncey in a public ceremony and now stands in a small square two minutes' walk from Place Guichard metro station, marked by nothing more than its own planting.\n\nIt will not be Lyon's oldest or largest tree for a very long time, maybe not ever. It is here because of what it descends from rather than what it has personally witnessed, the one entry on this list whose whole story predates its own roots.",
+      "verified_sources": [
+        "https://www.wikidata.org/wiki/Q63253791",
+        "https://www.lyonembellissement.com/articles/120722-un-marronnier-souvenir-d-anne-frank-place-marc-aron"
+      ],
+      "access": "Free, public square, open at all times",
+      "transport": "Short walk from Place Guichard - Bourse du Travail metro station (Line B), same street (rue Moncey)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "lyo_013",
+      "name": "The Plane Tree of Place Antoine-Rivoire",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "planted 1894, about 132 years old",
+      "age_min": 131,
+      "age_max": 132,
+      "location": {
+        "address": "Place Antoine-Rivoire, 69002 Lyon",
+        "latitude": 45.764722,
+        "longitude": 4.834444,
+        "neighbourhood": "Cordeliers, 2nd arrondissement"
+      },
+      "story": "Lyon's street-tree database holds over 100,000 records, and barely more than half of them carry a planting date at all. Of the ones that do, this plane is the oldest: put in the ground in 1894, at the centre of a square barely bigger than a tennis court in the heart of the Presqu'ile. A city forestry official is on record saying plainly that none of Lyon's plane trees reach the three or four centuries some regional specimens do, so call this the oldest dated tree in the city's records rather than its oldest tree outright.\n\nThe square itself has buried more history than its tree has years. From the 16th century until the French Revolution it was the parish cemetery of Saint-Nizier, the church that still stands two streets over. The Revolution cleared the cemetery, and the square that replaced it was called Place de la Fromagerie until 1934, when it was renamed for Antoine Rivoire, a founder of Lyon's trade fair and tourism board.\n\nThe plane tree stands alone at the centre of it now, at the junction of four small streets, on ground that spent three centuries as a burial ground before anyone planted anything there at all.",
+      "verified_sources": [
+        "https://fr.wikipedia.org/wiki/Place_Antoine-Rivoire",
+        "https://www.guichetdusavoir.org/question/voir/69078",
+        "https://www.petit-bulletin.fr/article-75494-des-arbres-et-des-datas-decouvrir-lyon-par-ses-arbres-d-alignement.html"
+      ],
+      "access": "Free, public square, open at all times",
+      "transport": "About 5 min walk from Cordeliers metro station (Line A)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
     }
   ]
 }
