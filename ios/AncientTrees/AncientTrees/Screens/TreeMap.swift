@@ -175,10 +175,43 @@ final class TreePinView: MKMarkerAnnotationView {
             // map whose entire job is showing where the trees are, a vanished
             // tree is a worse bug than two names that overlap.
             displayPriority = .required
-            markerTintColor = UIColor(red: 0.20, green: 0.35, blue: 0.20, alpha: 1)
-            glyphImage = UIImage(systemName: "tree.fill")
             canShowCallout = false
+
+            // A tree having its moment right now is gold and it breathes
+            // (Hidde, 2026-08-20: "als ze in bloei staan, zie je ze een beetje
+            // pulseren"). This is where the season verb lives now that it is not
+            // a tab: not a badge you have to go and look at, but the map itself
+            // telling you which of these is worth today rather than any day.
+            //
+            // It has to stay SCARCE to mean anything, and the data makes that
+            // true on its own: 571 of 1,535 trees carry a best_time at all, and
+            // only the ones whose month is this month pulse, so a screen full of
+            // pins has a handful breathing on it rather than all of them.
+            let now = Calendar.current.component(.month, from: Date())
+            let peaking = (annotation as? TreeAnnotation)?.tree.bestTime?.isNow(now) ?? false
+            markerTintColor = peaking
+                ? UIColor(red: 0.85, green: 0.63, blue: 0.25, alpha: 1)
+                : UIColor(red: 0.20, green: 0.35, blue: 0.20, alpha: 1)
+            glyphImage = UIImage(systemName: peaking ? "sparkles" : "tree.fill")
+            setPulsing(peaking)
         }
+    }
+
+    private static let pulseKey = "at.pulse"
+
+    /// A slow breath rather than a blink. Reduce Motion turns it off, because a
+    /// map covered in animation is exactly what that setting exists for.
+    private func setPulsing(_ on: Bool) {
+        layer.removeAnimation(forKey: Self.pulseKey)
+        guard on, !UIAccessibility.isReduceMotionEnabled else { return }
+        let pulse = CABasicAnimation(keyPath: "transform.scale")
+        pulse.fromValue = 1.0
+        pulse.toValue = 1.18
+        pulse.duration = 1.1
+        pulse.autoreverses = true
+        pulse.repeatCount = .infinity
+        pulse.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
+        layer.add(pulse, forKey: Self.pulseKey)
     }
 }
 

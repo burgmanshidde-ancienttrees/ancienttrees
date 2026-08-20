@@ -1,26 +1,25 @@
-// You: what you have collected, and where it is kept.
+// Profile: the account and the admin, and nothing else.
 //
-// Rebuilt twice on 2026-08-20. First from a settings list whose top row was the
-// dead text "Signed in ... not yet", and then again off `List` entirely, because
-// a screen made of inset-grouped rows IS the Settings app however good the copy
-// on it is.
+// New on 2026-08-20 out of the old You tab, which was doing three jobs: the
+// score, the account and the settings shelf. The score went to Collect where the
+// game is, and what is left here is what Hidde asked for in one line: "hier zijn
+// al je persoonlijke dingen in ... je accountinstellingen, en weet ik veel alles
+// wat je bij een account zoekt, vindt".
 //
-// The shape now is AllTrails' Activity tab, which their teardown describes
-// exactly: a stats card, then Parkstempels drawn as illustrated badges, then the
-// log. Ours are species rather than national parks, and drawing them is the one
-// idea in that teardown we had listed as "what we take" and had not taken.
+// A quiet screen on purpose. This is the tab people open twice a year, which is
+// exactly why it should not be competing for attention: AllTrails and Google
+// Maps both keep the profile boring and put the collection somewhere else.
 //
-// The stamps are the point, and the non-obvious rule about them comes straight
-// from watching their app: THE UNCOLLECTED ONES ARE DRAWN TOO. AllTrails shows
-// its progress chart with a single bar on it rather than hiding the chart until
-// there is data, and an empty grid of outlines does more work than any sentence
-// saying you have not collected anything: the shape of what you are about to
-// fill in is the invitation. Every user of this app on its first day has zero,
-// so this screen has to be worth looking at at zero.
+// Suggest a tree lives here as its FIXED home, and that is the whole of the
+// decision not to give it a fifth tab. The moments that actually produce a
+// submission are contextual and already exist elsewhere in the app: standing at
+// a tree with no photograph, the "something here is wrong" button, an empty
+// search. Those ask where somebody has just noticed the gap themselves. This is
+// only the place it can be found when somebody goes looking for it.
 
 import SwiftUI
 
-struct YouView: View {
+struct ProfileView: View {
     let catalogue: Catalogue
     @Environment(Saved.self) private var saved
     @Environment(Account.self) private var account
@@ -29,36 +28,20 @@ struct YouView: View {
     @State private var confirmingDelete = false
     @State private var deleteFailed = false
 
-    private var visited: [Tree] {
-        saved.entries.values.filter { $0.visitedAt != nil }.compactMap { catalogue.tree($0.treeId) }
-    }
-    private var countries: Int { Set(visited.map(\.country)).count }
-    private var cities: Int { Set(visited.map(\.citySlug)).count }
-    private var collectedSpecies: Set<String> { Set(visited.map(\.commonName)) }
-
-    /// The set to fill in: the species we map most, so the grid is worth
-    /// completing rather than arbitrary.
-    private var stampSpecies: [String] {
-        Dictionary(grouping: catalogue.trees, by: \.commonName)
-            .sorted { $0.value.count > $1.value.count }
-            .prefix(18).map(\.key)
-    }
-
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 26) {
-                statsCard
-                stampCard
+            VStack(alignment: .leading, spacing: 22) {
                 if account.isSignedIn { signedInCard } else { signedOutCard }
+                contributeCard
                 linksCard
                 plusCard
+                version
                 Color.clear.frame(height: 80)
             }
-            .padding(.horizontal, 16)
-            .padding(.top, 6)
+            .padding(.horizontal, 16).padding(.top, 6)
         }
         .brandGround()
-        .navigationTitle("You")
+        .navigationTitle("Profile")
         .sheet(isPresented: $signingIn) {
             SignInSheet(reason: saved.savedCount > 0 ? .keepCollection(saved.savedCount) : .general,
                         localCount: saved.savedCount)
@@ -77,68 +60,6 @@ struct YouView: View {
         } message: {
             Text("Nothing was deleted. Try again, or write to info@ancienttrees.app and we will do it by hand.")
         }
-    }
-
-    // MARK: - the numbers
-
-    private var statsCard: some View {
-        VStack(spacing: 14) {
-            HStack(spacing: 0) {
-                tile("\(visited.count)", "Trees")
-                Divider().frame(height: 42)
-                tile("\(cities)", cities == 1 ? "Place" : "Places")
-                Divider().frame(height: 42)
-                tile("\(collectedSpecies.count)", "Species")
-                Divider().frame(height: 42)
-                tile("\(countries)", countries == 1 ? "Country" : "Countries")
-            }
-            Text("Out of \(catalogue.trees.count.formatted(.number.locale(Locale(identifier: "en_US")))) trees we map in \(Set(catalogue.trees.map(\.country)).count) countries.")
-                .font(.caption).foregroundStyle(Brand.inkSoft)
-        }
-        .padding(.vertical, 18).padding(.horizontal, 8)
-        .frame(maxWidth: .infinity)
-        .brandCard()
-    }
-
-    private func tile(_ value: String, _ label: String) -> some View {
-        VStack(spacing: 3) {
-            Text(value)
-                .font(.brand(26, .black, relativeTo: .title))
-                .foregroundStyle(Brand.ink).monospacedDigit()
-            Text(label).font(.caption2).foregroundStyle(Brand.inkSoft)
-        }
-        .frame(maxWidth: .infinity)
-    }
-
-    // MARK: - the stamps
-
-    private var stampCard: some View {
-        VStack(alignment: .leading, spacing: 14) {
-            HStack(alignment: .firstTextBaseline) {
-                Text("Species collected").font(.brand(19, .heavy, relativeTo: .title3))
-                    .foregroundStyle(Brand.ink)
-                Spacer()
-                Text("\(collectedSpecies.count) of \(stampSpecies.count)")
-                    .font(.subheadline.weight(.semibold))
-                    .foregroundStyle(Brand.inkSoft).monospacedDigit()
-            }
-            LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 10), count: 6),
-                      spacing: 14) {
-                ForEach(stampSpecies, id: \.self) { s in
-                    let got = collectedSpecies.contains(s)
-                    SpeciesMark(species: s, color: got ? Brand.moss : Brand.inkSoft.opacity(0.28))
-                        .frame(height: 34)
-                        .accessibilityLabel(got ? "\(s), collected" : "\(s), not yet")
-                }
-            }
-            Text(collectedSpecies.isEmpty
-                 ? "Tick a tree off and its species fills in here."
-                 : "The eighteen species we map most. Rarer ones count too, they are just not drawn here yet.")
-                .font(.caption).foregroundStyle(Brand.inkSoft)
-        }
-        .padding(18)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .brandCard()
     }
 
     // MARK: - the account
@@ -160,7 +81,7 @@ struct YouView: View {
                 .font(.footnote).foregroundStyle(Brand.inkSoft)
             Button("Keep my trees") { signingIn = true }
                 .buttonStyle(BrandButtonStyle())
-            Text("One tap with Apple, or one email. No password, and nothing else stored.")
+            Text("One tap with Apple or Google, or one email. No password, and nothing else stored.")
                 .font(.caption2).foregroundStyle(Brand.inkSoft)
                 .frame(maxWidth: .infinity, alignment: .center)
         }
@@ -176,6 +97,10 @@ struct YouView: View {
                 .foregroundStyle(Brand.moss)
             Text(account.email ?? "Signed in")
                 .font(.footnote).foregroundStyle(Brand.inkSoft)
+            // Named because Apple hands out a private relay address and Google
+            // does not, so two sign-ins can be two accounts. Somebody who can
+            // read the address can work that out; somebody who cannot just
+            // thinks we lost their trees.
             Text("Your trees are kept under this address. Sign in on ancienttrees.app with the same one and your collection is there too; a different one starts a separate collection.")
                 .font(.caption).foregroundStyle(Brand.inkSoft)
             Divider()
@@ -189,13 +114,33 @@ struct YouView: View {
         .brandCard()
     }
 
+    // MARK: - contributing
+
+    private var contributeCard: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("Know a tree we are missing?")
+                .font(.brand(18, .bold, relativeTo: .headline)).foregroundStyle(Brand.ink)
+            Text("We map \(catalogue.trees.count.formatted(.number.locale(Locale(identifier: "en_US")))) and there are a great many more. If you know a good one, or a whole city worth mapping, tell us.")
+                .font(.footnote).foregroundStyle(Brand.inkSoft)
+            Link(destination: URL(string: "https://ancienttrees.app/contribute")!) {
+                Text("Suggest a tree")
+                    .font(.brand(17, .bold, relativeTo: .headline))
+                    .foregroundStyle(Brand.moss)
+                    .frame(maxWidth: .infinity).padding(.vertical, 14)
+                    .background(Brand.surface, in: .capsule)
+                    .overlay { Capsule().strokeBorder(Brand.moss.opacity(0.35), lineWidth: 1.5) }
+            }
+        }
+        .padding(18)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .brandCard()
+    }
+
     // MARK: - the quiet rows
 
     private var linksCard: some View {
         VStack(spacing: 0) {
             link("The website", "safari", "https://ancienttrees.app")
-            Divider().padding(.leading, 48)
-            link("Suggest a tree", "plus.circle", "https://ancienttrees.app/contribute")
             Divider().padding(.leading, 48)
             link("Privacy", "lock", "https://ancienttrees.app/privacy")
         }
@@ -222,14 +167,18 @@ struct YouView: View {
             Text("Coming with Plus").font(.eyebrow).textCase(.uppercase)
                 .foregroundStyle(Brand.inkSoft).tracking(0.8)
             VStack(spacing: 0) {
-                LockedRow(feature: .badges) { plusRow("Badges", "rosette") }
+                LockedRow(feature: .photoUpload) { plusRow("Your photo on the tree's page", "camera") }
+                Divider().padding(.leading, 48)
+                LockedRow(feature: .badges) { plusRow("Badges and the visited seal", "rosette") }
+                Divider().padding(.leading, 48)
+                LockedRow(feature: .walkBeyondFirst) { plusRow("Every walk", "figure.walk") }
                 Divider().padding(.leading, 48)
                 LockedRow(feature: .offlineDownload) { plusRow("Offline maps", "arrow.down.circle") }
                 Divider().padding(.leading, 48)
                 LockedRow(feature: .seasonAlerts) { plusRow("Season alerts", "bell") }
             }
             .brandCard()
-            Text("Every tree, story and location stays free, here and on the website.")
+            Text("Ticking trees off, your list and every tree, story and location stay free, here and on the website.")
                 .font(.caption).foregroundStyle(Brand.inkSoft)
         }
     }
@@ -240,5 +189,11 @@ struct YouView: View {
             Text(title).font(.callout).foregroundStyle(Brand.ink)
         }
         .padding(.horizontal, 16).padding(.vertical, 14)
+    }
+
+    private var version: some View {
+        Text("\(catalogue.trees.count.formatted(.number.locale(Locale(identifier: "en_US")))) trees, updated whenever you open the app.")
+            .font(.caption2).foregroundStyle(Brand.inkSoft.opacity(0.8))
+            .frame(maxWidth: .infinity, alignment: .center)
     }
 }
