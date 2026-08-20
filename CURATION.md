@@ -238,6 +238,30 @@ none hunted, per this runner's no-photo-judging rule.
 cities, 36 trees (Arnhem 4→9, Utrecht 5→9, Groningen 5→10, Haarlem 4→9,
 Maastricht 5→10, Rotterdam 5→9, Nijmegen 5→8, The Hague 16→21).**
 
+## 2026-08-20 (session, continued) - Brussels: deepened 23 to 26, geocoded the register by hand
+
+Rank 20, higher priority than any Dutch city worked today, 436 register
+entries within reach. Brussels' own official inventory
+(data/registers/brussels-arbres-remarquables.json, CC BY 4.0) carries no
+address text, only coordinates and a heritage.brussels URL per tree; that
+site returned only navigation menus to a curl fetch (the known
+403-to-WebFetch workaround gets a 200, but the page itself is JS-rendered).
+Used OpenStreetMap Nominatim reverse geocoding instead (a read-only public
+API, gear for us under hard rule 5's carve-out, no product impact) to place
+a dense cluster of legally-inscribed trees at the Jardin du Mont des Arts,
+confirmed by web search as a genuine public garden (1910 World's Fair
+origin, rebuilt 1957-58 as a suspended garden over an underground car
+park). Shipped 3 (a pedunculate oak, an ailanthus, a Caucasian wingnut),
+all `location_precision: approximate` since the specific garden is inferred
+from geocoding rather than stated by the register, matching the existing
+bru_023 single-source pattern exactly: `curation_status: flagged`, a
+`notes` field spelling out both the single-source and inferred-location
+caveats, age left undocumented since the register gives girth and legal
+status but no planting date. Brussels 23 to 26. Preflight clean.
+Build/superlatives/qa all clean (same pre-existing sitemap-lastmod warning
+as every other pass today). Photos: none hunted, per this runner's
+no-photo-judging rule.
+
 ## 2026-08-19 - Caserta: deepened to target (14 to 20), 6 new trees from its own leads file
 
 Six trees written from already-verified MASAF/Campania register leads that
