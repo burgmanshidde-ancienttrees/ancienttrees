@@ -15,6 +15,10 @@ struct TreeCard: View {
     @Environment(Saved.self) private var saved
 
     private let corner: CGFloat = 14
+    /// The picture grows with the reader's text size. A fixed 190 next to text
+    /// set three sizes larger reads as a stamp rather than as a photograph, and
+    /// the name under it was clipped at two lines besides.
+    @ScaledMetric(relativeTo: .headline) private var imageHeight: CGFloat = 190
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
@@ -24,7 +28,7 @@ struct TreeCard: View {
                 if saved.isVisited(tree.id) { ticked }
             }
             VStack(alignment: .leading, spacing: 5) {
-                Text(tree.name).font(.headline).lineLimit(2)
+                Text(tree.name).font(.headline).lineLimit(3)
                 meta
             }
             .padding(.horizontal, 12).padding(.vertical, 10)
@@ -44,7 +48,7 @@ struct TreeCard: View {
                     placeholder.overlay(ProgressView().tint(.white))
                 }
             }
-            .frame(height: 190)
+            .frame(height: imageHeight)
             .clipped()
             // No credit painted over the photograph (Hidde, 2026-08-20: "please
             // dont refer to wikicommons or whatever with an overlay on the tree,
@@ -58,7 +62,7 @@ struct TreeCard: View {
             // CC BY or BY-SA picture with no credit anywhere at all, which is
             // what shipped once before and is the reason this comment exists.
         } else {
-            noPhoto.frame(height: 190)
+            noPhoto.frame(height: imageHeight)
         }
     }
 

@@ -30,6 +30,10 @@ struct TreeMap: UIViewRepresentable {
     var routeIsReal = true
     /// Off on a walk's map, where the camera belongs to the route.
     var showsRecentre = false
+    /// What the map is currently looking at, reported back so the list under it
+    /// can be a list of what you are looking at. Optional because a walk's map
+    /// does not want it.
+    var region: Binding<MKCoordinateRegion?>? = nil
     @Binding var selected: Tree?
 
     func makeCoordinator() -> Coordinator { Coordinator(self) }
@@ -114,6 +118,28 @@ struct TreeMap: UIViewRepresentable {
                 r.strokeColor = UIColor(red: 0.20, green: 0.35, blue: 0.20, alpha: 0.55)
             }
             return r
+        }
+
+        /// Pan the map and the list follows. Google Maps, Apple Maps and Airbnb
+        /// all do a version of this, because a list that keeps describing where
+        /// you were standing while you look at Paris is answering a question
+        /// nobody is asking any more.
+        ///
+        /// Throttled by distance rather than by time: a pan fires this a lot,
+        /// and re-sorting fifteen hundred trees for every three metres would be
+        /// work nobody can see. Three hundred metres is under one screen at
+        /// street zoom, so the list still feels live.
+        func mapView(_ map: MKMapView, regionDidChangeAnimated animated: Bool) {
+            guard let binding = parent.region else { return }
+            let c = map.region.center
+            if let last = binding.wrappedValue {
+                let a = CLLocation(latitude: last.center.latitude, longitude: last.center.longitude)
+                let b = CLLocation(latitude: c.latitude, longitude: c.longitude)
+                guard a.distance(from: b) > 300
+                        || abs(last.span.latitudeDelta - map.region.span.latitudeDelta) > 0.01
+                else { return }
+            }
+            binding.wrappedValue = map.region
         }
 
         func mapView(_ map: MKMapView, didSelect view: MKAnnotationView) {

@@ -74,6 +74,48 @@ final class AncientTreesUITests: XCTestCase {
         }
     }
 
+    /// Tapping the tab you are already on goes back to the top of it. This is
+    /// the reason every NavigationLink in the app became a value on 2026-08-20,
+    /// so it is the thing that has to be asserted rather than assumed.
+    @MainActor
+    func testTappingTheActiveTabGoesBackToTheTop() throws {
+        let app = launch(["-tab=0"])
+
+        let firstCard = app.buttons.containing(
+            NSPredicate(format: "label CONTAINS[c] 'km' OR label CONTAINS[c] 'years'")
+        ).firstMatch
+        XCTAssertTrue(firstCard.waitForExistence(timeout: 10))
+        firstCard.tap()
+        XCTAssertTrue(app.buttons["Take me there"].waitForExistence(timeout: 5),
+                      "a tree page did not open")
+
+        app.buttons["Map"].tap()
+        XCTAssertTrue(app.staticTexts["Near you"].waitForExistence(timeout: 5),
+                      "tapping the active tab did not return to the map")
+    }
+
+    /// Panning the map has to move the list under it, which is the one thing in
+    /// this app that cannot be checked from a screenshot: it only happens after
+    /// a finger has dragged something.
+    @MainActor
+    func testPanningTheMapMovesTheList() throws {
+        let app = launch(["-tab=0"])
+        XCTAssertTrue(app.staticTexts["Near you"].waitForExistence(timeout: 10),
+                      "the map did not open on the user")
+
+        // Drag the map itself, well above the sheet, several times so the centre
+        // clears the three kilometres that separates "near you" from "this area".
+        let map = app.otherElements.firstMatch
+        for _ in 0..<4 {
+            map.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.22))
+               .press(forDuration: 0.05,
+                      thenDragTo: map.coordinate(withNormalizedOffset: CGVector(dx: 0.1, dy: 0.22)))
+        }
+
+        XCTAssertTrue(app.staticTexts["Trees in this area"].waitForExistence(timeout: 6),
+                      "the map was panned away and the list still claims to be near you")
+    }
+
     /// The sheet the whole account funnel runs through. If it does not present,
     /// nothing downstream of it can work, and it presented from a launch
     /// argument rather than a tap so that failure would be invisible.

@@ -10,18 +10,30 @@ struct SavedView: View {
     @Environment(Saved.self) private var saved
     @Environment(Account.self) private var account
     @State private var signingIn = false
+    @State private var search = ""
 
     private let brand = Color(red: 0.20, green: 0.35, blue: 0.20)
 
     private var visited: [Tree] {
-        saved.entries.values.filter { $0.visitedAt != nil }
+        matching(saved.entries.values.filter { $0.visitedAt != nil }
             .sorted { ($0.visitedAt ?? .distantPast) > ($1.visitedAt ?? .distantPast) }
-            .compactMap { catalogue.tree($0.treeId) }
+            .compactMap { catalogue.tree($0.treeId) })
     }
     private var wishlist: [Tree] {
-        saved.entries.values.filter { $0.visitedAt == nil }
+        matching(saved.entries.values.filter { $0.visitedAt == nil }
             .sorted { $0.savedAt > $1.savedAt }
-            .compactMap { catalogue.tree($0.treeId) }
+            .compactMap { catalogue.tree($0.treeId) })
+    }
+
+    /// A collection is meant to grow, and a few hundred entries is a lot to
+    /// scroll past to find the oak you meant.
+    private func matching(_ list: [Tree]) -> [Tree] {
+        guard !search.isEmpty else { return list }
+        let q = search.lowercased()
+        return list.filter {
+            $0.name.lowercased().contains(q) || $0.city.lowercased().contains(q)
+                || $0.species.lowercased().contains(q)
+        }
     }
 
     var body: some View {
@@ -45,6 +57,7 @@ struct SavedView: View {
         }
         .background(Color(.systemGroupedBackground))
         .navigationTitle("Saved")
+        .searchable(text: $search, prompt: "Search your trees")
         .sheet(isPresented: $signingIn) {
             SignInSheet(reason: .keepCollection(saved.savedCount), localCount: saved.savedCount)
                 .environment(account)
@@ -87,12 +100,27 @@ struct SavedView: View {
     }
 
     private func card(_ t: Tree) -> some View {
-        NavigationLink {
-            TreeDetail(tree: t, catalogue: catalogue)
-        } label: {
+        NavigationLink(value: Route.tree(t.id)) {
             TreeCard(tree: t, km: t.distanceKm(from: origin.lat, origin.lng))
         }
         .buttonStyle(.plain)
+        // The way out. A heart on the card toggles it too, but a card is not a
+        // row and there is nothing to swipe, so the long press carries the
+        // destructive action the way it does on a Home Screen icon.
+        .contextMenu {
+            Button(role: .destructive) {
+                saved.toggleSaved(t.id)
+            } label: {
+                Label("Remove from saved", systemImage: "heart.slash")
+            }
+            if saved.isVisited(t.id) {
+                Button {
+                    saved.toggleVisited(t.id)
+                } label: {
+                    Label("Not stood in front of it after all", systemImage: "arrow.uturn.backward")
+                }
+            }
+        }
     }
 
     /// Shown at full size rather than hidden behind a message, the way
