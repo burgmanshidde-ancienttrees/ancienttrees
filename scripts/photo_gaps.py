@@ -96,7 +96,17 @@ def queue():
 
 
 def names_match(tree, cand):
-    """How likely this file actually shows THIS tree. 0 means do not look.
+    """How likely this file actually shows THIS tree. 0 means look last.
+
+    It does NOT mean discard, and photo_fetch.py must never use it as a gate.
+    Checked against this pass on 2026-08-20: of the twelve photographs approved
+    that day, three scored exactly 0 here. Skovfogedegen, Kelch-Linde and
+    L'olivastro di Luras all name the tree and none of them contains a word
+    this function recognises as a plant, because Danish, Estonian and Italian
+    do not spell one the way the list does. 1,561 of the 1,906 unjudged
+    candidates on photo-less trees score 0, so a gate here would have thrown
+    away a quarter of the day's results along with the noise. It orders; a
+    person decides.
 
     The weighting is taken from scripts/photo_shortlist.py, which a night run
     wrote independently the same morning this file was written; two tools for
@@ -145,7 +155,15 @@ def names_match(tree, cand):
     # weighting, because the photograph a tree page needs was never taken.
     # So a candidate must carry at least one signal that a PLANT is the
     # subject: a species word, or a word for tree in some language.
-    plant = set(GENERIC) | {"oak", "beech", "fig", "plane", "cedar", "yew",
+    #
+    # GENERIC is folded in for the tree words it carries (tree, boom, arbre,
+    # albero), but NOT for its two connectives. "of" and "the" are not plant
+    # words, and because this test is a substring test, "of" made the gate pass
+    # on almost any English title: "Statue of Queen Wilhelmina.jpg" scored 21
+    # against Rotterdam's Wilhelmina Linden and was fetched and looked at.
+    # Measured 2026-08-20 across the queue: 77 unjudged candidates passed this
+    # gate on a connective alone.
+    plant = (set(GENERIC) - {"of", "the"}) | {"oak", "beech", "fig", "plane", "cedar", "yew",
                             "lime", "linden", "elm", "pine", "cypress", "olive",
                             "chestnut", "maple", "birch", "willow", "poplar",
                             "ginkgo", "mulberry", "palm", "eucalyptus", "ficus",
@@ -156,6 +174,14 @@ def names_match(tree, cand):
     # "Trees in Perugia" almost regardless of subject, so testing cats let a
     # Raphael painting score 4 and an equestrian bronze score 58. The title is
     # what the uploader chose to call the thing.
+    #
+    # Do NOT be tempted to widen this list with more short words for tree. It
+    # is a SUBSTRING test, and short words collide: adding the Polish "dab"
+    # rescues five photographs of roundabouts, because "roundabout" contains
+    # it. The substring behaviour is deliberate and load-bearing in the other
+    # direction, since compound languages bury the tree word inside the name
+    # (Blutbuche, Skovfogedegen), so it cannot simply become word matching
+    # either. Widen it only with a measurement of what it newly admits.
     if not any(w in title for w in plant):
         return 0
     return max(score, 0)
