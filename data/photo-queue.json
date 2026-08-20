@@ -1043,8 +1043,8 @@
   "bat_004": {
    "city": "Bath",
    "name": "The Coast Redwood of the Great Dell",
-   "checked": "2026-08-14",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Tree-lined path across High Common - geograph.org.uk - 7910537.jpg",
@@ -1061,8 +1061,8 @@
   "bat_005": {
    "city": "Bath",
    "name": "The Yews of Prior Park",
-   "checked": "2026-08-14",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "bel_001": {
@@ -1224,16 +1224,37 @@
   "bol_007": {
    "city": "Bologna",
    "name": "The Ginkgo of the Botanical Garden",
-   "checked": "2026-08-14",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "bol_010": {
    "city": "Bologna",
    "name": "The Camphor of San Michele in Bosco",
-   "checked": "2026-08-14",
-   "sweep": 4,
-   "candidates": []
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:4.rizzoli cedro dell'himalaya (12).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/4.rizzoli_cedro_dell%27himalaya_%2812%29.jpg/960px-4.rizzoli_cedro_dell%27himalaya_%2812%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:4.rizzoli_cedro_dell%27himalaya_(12).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "AnetaMalinowskaART",
+     "lat": 44.481111,
+     "lng": 11.340833,
+     "cats": "Category:Busts in Bologna Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2022 Category:Images from Wiki Loves Monuments 2022 in Italy Category:Images from Wiki Loves Monuments 2022 in Italy - Emilia-Romagna Category:Images from Wiki Loves Monuments 2022 in Italy - traditional contest Category:Images from Wiki Loves Monuments 2022 in Italy - veteran trees Category:Images from Wiki Loves Monuments 2022 in Italy - without local award Category:Self-published work Category:Trees in Bologna Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Cedro dell'himalaya.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Cedro_dell%27himalaya.jpg/960px-Cedro_dell%27himalaya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cedro_dell%27himalaya.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Aneta Malinowska ART",
+     "lat": 44.480939,
+     "lng": 11.340839,
+     "cats": "Category:Busts in Bologna Category:CC-BY-SA-4.0 Category:Cedrus deodara in Italy Category:Cultural heritage monuments in Italy with known IDs Category:Francesco Rizzoli Category:Images from Wiki Loves Monuments 2020 Category:Images from Wiki Loves Monuments 2020 in Italy Category:Images from Wiki Loves Monuments 2020 in Italy - Emilia-Romagna Category:Images from Wiki Loves Monuments 2020 in Italy - veteran trees Category:Images from Wiki Loves Monuments 2020 in Italy - without local award Category:Italy photographs taken on 2020-08-13 Category:Self-published work Category:Trees in Bologna Category:Uploaded via Campaign:wlm-it"
+    }
+   ]
   },
   "bre_001": {
    "city": "Breda",
@@ -4974,16 +4995,38 @@
   "ber_011": {
    "city": "Berlin",
    "name": "The Great Oak of Pfaueninsel",
-   "checked": "2026-08-14",
-   "sweep": 4,
-   "candidates": []
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Der Lennesche Rosengarten (Lenne's Rose Garten) - geo.hlipp.de - 26259.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/86/Der_Lennesche_Rosengarten_%28Lenne%27s_Rose_Garten%29_-_geo.hlipp.de_-_26259.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Der_Lennesche_Rosengarten_(Lenne%27s_Rose_Garten)_-_geo.hlipp.de_-_26259.jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Colin Smith on geo.hlipp.de",
+     "lat": 52.43085,
+     "lng": 13.12124,
+     "cats": "Category:CC-BY-SA-2.0 Category:Files with coordinates missing SDC location of creation Category:Flora of Berlin Category:Germany photographs taken on 2012-07-31 Category:Images from Geograph Deutschland Category:Uploaded with pattypan"
+    }
+   ]
   },
   "ber_012": {
    "city": "Berlin",
    "name": "The Tuereiche (Door Oak) of Pfaueninsel",
-   "checked": "2026-08-14",
-   "sweep": 4,
-   "candidates": []
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Der Lennesche Rosengarten (Lenne's Rose Garten) - geo.hlipp.de - 26259.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/86/Der_Lennesche_Rosengarten_%28Lenne%27s_Rose_Garten%29_-_geo.hlipp.de_-_26259.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Der_Lennesche_Rosengarten_(Lenne%27s_Rose_Garten)_-_geo.hlipp.de_-_26259.jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Colin Smith on geo.hlipp.de",
+     "lat": 52.43085,
+     "lng": 13.12124,
+     "cats": "Category:CC-BY-SA-2.0 Category:Files with coordinates missing SDC location of creation Category:Flora of Berlin Category:Germany photographs taken on 2012-07-31 Category:Images from Geograph Deutschland Category:Uploaded with pattypan"
+    }
+   ]
   },
   "ber_013": {
    "city": "Berlin",
@@ -11809,16 +11852,16 @@
   "bos_002": {
    "city": "Boston",
    "name": "The Peters Hill White Oak",
-   "checked": "2026-08-14",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [],
    "exhausted": "2026-08-08: no candidate anywhere; the Arboretum's own stream carries no accession numbers, so no white oak photo can be tied to the Peters Hill tree."
   },
   "bos_003": {
    "city": "Boston",
    "name": "The Franklin Tree of the Explorers Garden",
-   "checked": "2026-08-14",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Franklinia alatamaha (6309569077).jpg",
@@ -11835,8 +11878,8 @@
   "bos_004": {
    "city": "Boston",
    "name": "The Dawn Redwood of the Public Garden",
-   "checked": "2026-08-14",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:MA 2 wb-MA 28 nb Beacon Street at Cheers, April 2025.jpg",
@@ -11864,8 +11907,8 @@
   "bos_005": {
    "city": "Boston",
    "name": "The Original Dawn Redwood of the Arboretum",
-   "checked": "2026-08-14",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Dawn Redwood - panoramio.jpg",
@@ -11901,8 +11944,8 @@
   "bos_006": {
    "city": "Boston",
    "name": "The Wilson Paperbark Maple",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [],
    "exhausted": "2026-08-08: paperbark maple photographs at the Arboretum are bark and leaf details with no accession number, so accession 12488 cannot be identified."
   },
@@ -14019,8 +14062,8 @@
   "ber_014": {
    "city": "Berlin",
    "name": "The Ferry Landing Plane",
-   "checked": "2026-08-14",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:20250802 xl 1516-Platane Forst Grunewald Jagen 100.jpg (Wikidata Q60466460)",
@@ -14032,15 +14075,36 @@
      "lng": 13.121575,
      "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Photographs taken on 2025-08-02 Category:Self-published work Category:Uploaded with Mobile/Android Category:Wirtshaus zur Pfaueninsel",
      "source": "wikidata/Q60466460"
+    },
+    {
+     "title": "File:20250802 xl 1516-Platane Forst Grunewald Jagen 100.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/20250802_xl_1516-Platane_Forst_Grunewald_Jagen_100.jpg/960px-20250802_xl_1516-Platane_Forst_Grunewald_Jagen_100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:20250802_xl_1516-Platane_Forst_Grunewald_Jagen_100.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Molgreen",
+     "lat": 52.42811944,
+     "lng": 13.121575,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Photographs taken on 2025-08-02 Category:Self-published work Category:Uploaded with Mobile/Android Category:Wirtshaus zur Pfaueninsel"
     }
    ]
   },
   "ber_015": {
    "city": "Berlin",
    "name": "The Cut-Leaf Oak of Pfaueninsel",
-   "checked": "2026-08-14",
-   "sweep": 4,
-   "candidates": []
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Der Lennesche Rosengarten (Lenne's Rose Garten) - geo.hlipp.de - 26259.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/86/Der_Lennesche_Rosengarten_%28Lenne%27s_Rose_Garten%29_-_geo.hlipp.de_-_26259.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Der_Lennesche_Rosengarten_(Lenne%27s_Rose_Garten)_-_geo.hlipp.de_-_26259.jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Colin Smith on geo.hlipp.de",
+     "lat": 52.43085,
+     "lng": 13.12124,
+     "cats": "Category:CC-BY-SA-2.0 Category:Files with coordinates missing SDC location of creation Category:Flora of Berlin Category:Germany photographs taken on 2012-07-31 Category:Images from Geograph Deutschland Category:Uploaded with pattypan"
+    }
+   ]
   },
   "nyc_017": {
    "city": "New York",
@@ -14428,8 +14492,8 @@
   "bos_007": {
    "city": "Boston",
    "name": "The Larz Anderson Hinoki Cypress",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Pamela Anderson 2024 Headshot by Norman Wong.jpg",
@@ -14446,8 +14510,8 @@
   "bos_008": {
    "city": "Boston",
    "name": "The Sapporo Katsuras",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "chi_001": {
@@ -15286,8 +15350,8 @@
   "ber_016": {
    "city": "Berlin",
    "name": "The Lietzensee Plane",
-   "checked": "2026-08-14",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer 2024-06-16 10.jpg (Wikidata Q125774026)",
@@ -15319,14 +15383,114 @@
      "lat": 52.50709,
      "lng": 13.28649,
      "cats": "Category:Berlin photographs taken on 2023-05-08 Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Hotels in Berlin-Charlottenburg Category:Lietzensee Category:Lietzenseeufer (Berlin-Charlottenburg) Category:May 2023 in Berlin-Charlottenburg Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer 2024-06-16 01.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Westufer_2024-06-16_01.jpg/960px-Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Westufer_2024-06-16_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee,_n%C3%B6rdlicher_Teil,_Westufer_2024-06-16_01.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.50749593,
+     "lng": 13.28631167,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer 2024-06-16 02.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Westufer_2024-06-16_02.jpg/960px-Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Westufer_2024-06-16_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee,_n%C3%B6rdlicher_Teil,_Westufer_2024-06-16_02.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.50749895,
+     "lng": 13.28632125,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer 2024-06-16 03.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Westufer_2024-06-16_03.jpg/960px-Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Westufer_2024-06-16_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee,_n%C3%B6rdlicher_Teil,_Westufer_2024-06-16_03.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.50750347,
+     "lng": 13.28633563,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer 2024-06-16 04.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Westufer_2024-06-16_04.jpg/960px-Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Westufer_2024-06-16_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee,_n%C3%B6rdlicher_Teil,_Westufer_2024-06-16_04.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.50754173,
+     "lng": 13.28668349,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer 2024-06-16 05.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Westufer_2024-06-16_05.jpg/960px-Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Westufer_2024-06-16_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee,_n%C3%B6rdlicher_Teil,_Westufer_2024-06-16_05.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.50752442,
+     "lng": 13.28669244,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer 2024-06-16 06.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Westufer_2024-06-16_06.jpg/960px-Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Westufer_2024-06-16_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee,_n%C3%B6rdlicher_Teil,_Westufer_2024-06-16_06.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.50745154,
+     "lng": 13.28673288,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer 2024-06-16 07.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Westufer_2024-06-16_07.jpg/960px-Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Westufer_2024-06-16_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee,_n%C3%B6rdlicher_Teil,_Westufer_2024-06-16_07.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.50741999,
+     "lng": 13.28670132,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer 2024-06-16 08.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Westufer_2024-06-16_08.jpg/960px-Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Westufer_2024-06-16_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee,_n%C3%B6rdlicher_Teil,_Westufer_2024-06-16_08.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.50741848,
+     "lng": 13.28671954,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer 2024-06-16 09.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Westufer_2024-06-16_09.jpg/960px-Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Westufer_2024-06-16_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee,_n%C3%B6rdlicher_Teil,_Westufer_2024-06-16_09.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.50743723,
+     "lng": 13.28672295,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer 2024-06-16 10.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Westufer_2024-06-16_10.jpg/960px-Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Westufer_2024-06-16_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Ahornbl%C3%A4ttrige_Platane_Lietzensee,_n%C3%B6rdlicher_Teil,_Westufer_2024-06-16_10.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Ahornblättrige Platane Lietzensee, nördlicher Teil, Westufer Category:Photographs by Leonhard Lenz Category:Self-published work"
     }
    ]
   },
   "ber_017": {
    "city": "Berlin",
    "name": "The Lietzensee Wingnut",
-   "checked": "2026-08-14",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 2024-06-16 13.jpg (Wikidata Q125774050)",
@@ -15358,14 +15522,114 @@
      "lat": 52.50709,
      "lng": 13.28649,
      "cats": "Category:Berlin photographs taken on 2023-05-08 Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Hotels in Berlin-Charlottenburg Category:Lietzensee Category:Lietzenseeufer (Berlin-Charlottenburg) Category:May 2023 in Berlin-Charlottenburg Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 2024-06-16 01.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Ostufer%2C_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_01.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Ostufer%2C_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee,_n%C3%B6rdlicher_Teil,_Ostufer,_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_01.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.50775383,
+     "lng": 13.29085343,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 2024-06-16 02.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Ostufer%2C_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_02.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Ostufer%2C_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee,_n%C3%B6rdlicher_Teil,_Ostufer,_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_02.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.50776065,
+     "lng": 13.29084879,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 2024-06-16 03.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Ostufer%2C_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_03.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Ostufer%2C_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee,_n%C3%B6rdlicher_Teil,_Ostufer,_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_03.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.50774706,
+     "lng": 13.29085943,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 2024-06-16 04.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Ostufer%2C_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_04.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Ostufer%2C_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee,_n%C3%B6rdlicher_Teil,_Ostufer,_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_04.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.50772896,
+     "lng": 13.29087361,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 2024-06-16 05.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Ostufer%2C_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_05.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Ostufer%2C_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee,_n%C3%B6rdlicher_Teil,_Ostufer,_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_05.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.50772443,
+     "lng": 13.29087716,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 2024-06-16 06.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Ostufer%2C_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_06.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Ostufer%2C_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee,_n%C3%B6rdlicher_Teil,_Ostufer,_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_06.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.50771634,
+     "lng": 13.29088517,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 2024-06-16 07.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Ostufer%2C_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_07.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Ostufer%2C_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee,_n%C3%B6rdlicher_Teil,_Ostufer,_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_07.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.50771329,
+     "lng": 13.29088901,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 2024-06-16 08.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Ostufer%2C_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_08.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Ostufer%2C_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee,_n%C3%B6rdlicher_Teil,_Ostufer,_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_08.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.50771278,
+     "lng": 13.29088965,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 2024-06-16 09.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Ostufer%2C_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_09.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Ostufer%2C_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee,_n%C3%B6rdlicher_Teil,_Ostufer,_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_09.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.50770973,
+     "lng": 13.29089348,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 2024-06-16 12.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Ostufer%2C_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_12.jpg/960px-Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee%2C_n%C3%B6rdlicher_Teil%2C_Ostufer%2C_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Kaukasische_Fl%C3%BCgelnuss_Lietzensee,_n%C3%B6rdlicher_Teil,_Ostufer,_auf_H%C3%B6he_Lietzenseeufer_5_2024-06-16_12.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Kaukasische Flügelnuss Lietzensee, nördlicher Teil, Ostufer, auf Höhe Lietzenseeufer 5 Category:Photographs by Leonhard Lenz Category:Self-published work"
     }
    ]
   },
   "ber_018": {
    "city": "Berlin",
    "name": "The Karpfenteich Elm",
-   "checked": "2026-08-14",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich 2024-06-16 04.jpg (Wikidata Q125772701)",
@@ -15377,6 +15641,126 @@
      "lng": 13.29589966,
      "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich Category:Photographs by Leonhard Lenz Category:Self-published work",
      "source": "wikidata/Q125772701"
+    },
+    {
+     "title": "File:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich 2024-06-16 01.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg%2C_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_01.jpg/960px-Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg%2C_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg,_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_01.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.52410091,
+     "lng": 13.2961613,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich 2024-06-16 02.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg%2C_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_02.jpg/960px-Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg%2C_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg,_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_02.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.52411979,
+     "lng": 13.29611294,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich 2024-06-16 03.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg%2C_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_03.jpg/960px-Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg%2C_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg,_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_03.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.5242199,
+     "lng": 13.29591394,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich 2024-06-16 05.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg%2C_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_05.jpg/960px-Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg%2C_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg,_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_05.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.52412548,
+     "lng": 13.29597485,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich 2024-06-16 06.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg%2C_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_06.jpg/960px-Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg%2C_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg,_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_06.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.52411673,
+     "lng": 13.29597722,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich 2024-06-16 07.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg%2C_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_07.jpg/960px-Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg%2C_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg,_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_07.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.52411047,
+     "lng": 13.29597891,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich 2024-06-16 08.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg%2C_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_08.jpg/960px-Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg%2C_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg,_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_08.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.52410421,
+     "lng": 13.2959806,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich 2024-06-16 09.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg%2C_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_09.jpg/960px-Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg%2C_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg,_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_09.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.52409921,
+     "lng": 13.29598195,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich 2024-06-16 10.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg%2C_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_10.jpg/960px-Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg%2C_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg,_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_10.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.52409747,
+     "lng": 13.29599634,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich 2024-06-16 11.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg%2C_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_11.jpg/960px-Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg%2C_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg,_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_11.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 52.52410128,
+     "lng": 13.29601156,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich 2024-06-16 12.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg%2C_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_12.jpg/960px-Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg%2C_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg,_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_12.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich 2024-06-16 13.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg%2C_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_13.jpg/960px-Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg%2C_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Flatter-Ulme_Park_Schloss_Charlottenburg,_s%C3%BCd%C3%B6stliche_Ecke_Karpfenteich_2024-06-16_13.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Flatter-Ulme Park Schloss Charlottenburg, südöstliche Ecke Karpfenteich Category:Photographs by Leonhard Lenz Category:Self-published work"
     },
     {
      "title": "iNat obs 357238826 (Ulmus)",
@@ -15401,8 +15785,8 @@
   "bos_009": {
    "city": "Boston",
    "name": "The Longfellow Linden",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Boston skyline from Longfellow Bridge September 2017 panorama 2.jpg",
@@ -15419,8 +15803,8 @@
   "bos_010": {
    "city": "Boston",
    "name": "The Houghton Beech",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "bud_009": {
@@ -17587,9 +17971,40 @@
   "bol_011": {
    "city": "Bologna",
    "name": "The Grey Walnut of the Botanical Garden",
-   "checked": "2026-08-14",
-   "sweep": 4,
-   "candidates": []
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Baraccano (o barbacane) delle mura trecentesche di Bologna - panoramio.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Baraccano_%28o_barbacane%29_delle_mura_trecentesche_di_Bologna_-_panoramio.jpg/960px-Baraccano_%28o_barbacane%29_delle_mura_trecentesche_di_Bologna_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Baraccano_(o_barbacane)_delle_mura_trecentesche_di_Bologna_-_panoramio.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Carlo Pelagalli",
+     "lat": 44.500515,
+     "lng": 11.356049,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs taken on 2009-05-30 Category:Photos from Panoramio Category:Photos from Panoramio ID 410152 Category:Third wall of Bologna"
+    },
+    {
+     "title": "File:Baraccano (o barbacane) delle mura trecentesche di Bologna - panoramio - Carlo Pelagalli.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Baraccano_%28o_barbacane%29_delle_mura_trecentesche_di_Bologna_-_panoramio_-_Carlo_Pelagalli.jpg/960px-Baraccano_%28o_barbacane%29_delle_mura_trecentesche_di_Bologna_-_panoramio_-_Carlo_Pelagalli.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Baraccano_(o_barbacane)_delle_mura_trecentesche_di_Bologna_-_panoramio_-_Carlo_Pelagalli.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Carlo Pelagalli",
+     "lat": 44.499727,
+     "lng": 11.356162,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs taken on 2009-05-30 Category:Photos from Panoramio Category:Photos from Panoramio ID 410152 Category:Third wall of Bologna"
+    },
+    {
+     "title": "File:Tratto delle mura trecentesche di Bologna - panoramio.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Tratto_delle_mura_trecentesche_di_Bologna_-_panoramio.jpg/960px-Tratto_delle_mura_trecentesche_di_Bologna_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tratto_delle_mura_trecentesche_di_Bologna_-_panoramio.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Carlo Pelagalli",
+     "lat": 44.500274,
+     "lng": 11.356081,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs taken on 2009-05-30 Category:Photos from Panoramio Category:Photos from Panoramio ID 410152 Category:Third wall of Bologna"
+    }
+   ]
   },
   "bcn_034": {
    "city": "Barcelona",
@@ -18428,36 +18843,15 @@
   "bgm_001": {
    "city": "Bergamo",
    "name": "The Bald Cypresses of Parco Marenzi",
-   "checked": "2026-08-13",
-   "sweep": 4,
-   "candidates": [
-    {
-     "title": "File:Recoaro Terme - Libocedro monumentale 01.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Recoaro_Terme_-_Libocedro_monumentale_01.jpg/960px-Recoaro_Terme_-_Libocedro_monumentale_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Recoaro_Terme_-_Libocedro_monumentale_01.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Syrio",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Recoaro Terme - Libocedro monumentale 02.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Recoaro_Terme_-_Libocedro_monumentale_02.jpg/960px-Recoaro_Terme_-_Libocedro_monumentale_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Recoaro_Terme_-_Libocedro_monumentale_02.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Syrio",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    }
-   ]
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
   },
   "bgm_002": {
    "city": "Bergamo",
    "name": "The Atlas Cedar of Parco Caprotti",
-   "checked": "2026-08-13",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "iNat obs 372232752 (Cedrus atlantica)",
@@ -18482,15 +18876,15 @@
   "bgm_003": {
    "city": "Bergamo",
    "name": "The Strawberry Tree of Via alla Rocca",
-   "checked": "2026-08-13",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "bgm_004": {
    "city": "Bergamo",
    "name": "The Silk Mulberries of Giardino Paul Harris",
-   "checked": "2026-08-13",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "bgm_005": {
@@ -18535,22 +18929,22 @@
   "bgm_006": {
    "city": "Bergamo",
    "name": "The Himalayan Cedar of Villa Piccinelli",
-   "checked": "2026-08-13",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "bgm_007": {
    "city": "Bergamo",
    "name": "The Pagoda Trees of Villa Piccinelli",
-   "checked": "2026-08-13",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "bol_012": {
    "city": "Bologna",
    "name": "The Atlas Cedar of Villa delle Rose",
-   "checked": "2026-08-14",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Bologna - Cedro dell'Atlante - 2023-09-05 13-12-13 001.jpg (Wikidata Q55741338)",
@@ -19863,9 +20257,59 @@
   "bol_008": {
    "city": "Bologna",
    "name": "The Cypress of Carducci's Tomb",
-   "checked": "2026-08-14",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
+    {
+     "title": "File:Bologna, Cimitero Monumentale della Certosa di Bologna 01.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Bologna%2C_Cimitero_Monumentale_della_Certosa_di_Bologna_01.jpg/960px-Bologna%2C_Cimitero_Monumentale_della_Certosa_di_Bologna_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bologna,_Cimitero_Monumentale_della_Certosa_di_Bologna_01.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Mattis",
+     "lat": 44.496225,
+     "lng": 11.31007333,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images by Mattana-Bologna (Italy) Category:Monument Ossuary of the Great War (Certosa, Cloister VI) Category:Monuments to the martyrs of Fascism (Certosa, Cloister VI) Category:Self-published work"
+    },
+    {
+     "title": "File:Bologna, Cimitero Monumentale della Certosa di Bologna 02.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Bologna%2C_Cimitero_Monumentale_della_Certosa_di_Bologna_02.JPG/960px-Bologna%2C_Cimitero_Monumentale_della_Certosa_di_Bologna_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bologna,_Cimitero_Monumentale_della_Certosa_di_Bologna_02.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "Mattis",
+     "lat": 44.49619833,
+     "lng": 11.31005,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images by Mattana-Bologna (Italy) Category:Monuments to the martyrs of Fascism (Certosa, Cloister VI) Category:Self-published work"
+    },
+    {
+     "title": "File:Bologna, Cimitero Monumentale della Certosa di Bologna 04.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Bologna%2C_Cimitero_Monumentale_della_Certosa_di_Bologna_04.JPG/960px-Bologna%2C_Cimitero_Monumentale_della_Certosa_di_Bologna_04.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bologna,_Cimitero_Monumentale_della_Certosa_di_Bologna_04.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "Mattis",
+     "lat": 44.49603667,
+     "lng": 11.30927333,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images by Mattana-Bologna (Italy) Category:Monument Ossuary of the Great War (Certosa, Cloister VI) Category:On OSM Category:Self-published work"
+    },
+    {
+     "title": "File:Bologna, Cimitero Monumentale della Certosa di Bologna 20.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Bologna%2C_Cimitero_Monumentale_della_Certosa_di_Bologna_20.JPG/960px-Bologna%2C_Cimitero_Monumentale_della_Certosa_di_Bologna_20.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bologna,_Cimitero_Monumentale_della_Certosa_di_Bologna_20.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "Mattis",
+     "lat": 44.49635833,
+     "lng": 11.309735,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Grave of Oppi (Certosa, Cloister VI) Category:Images by Mattana-Bologna (Italy) Category:Self-published work"
+    },
+    {
+     "title": "File:Bologna, Cimitero Monumentale della Certosa di Bologna 21.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Bologna%2C_Cimitero_Monumentale_della_Certosa_di_Bologna_21.JPG/960px-Bologna%2C_Cimitero_Monumentale_della_Certosa_di_Bologna_21.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bologna,_Cimitero_Monumentale_della_Certosa_di_Bologna_21.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "Mattis",
+     "lat": 44.49617167,
+     "lng": 11.309975,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Grave of Atti (Certosa, Cloister VI) Category:Images by Mattana-Bologna (Italy) Category:Self-published work"
+    },
     {
      "title": "File:Giosue-Carducci-1907.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/5/53/Giosue-Carducci-1907.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
@@ -26755,8 +27199,8 @@
   "bgm_008": {
    "city": "Bergamo",
    "name": "The Horse Chestnut of Viale delle Rimembranze",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Parco delle Rimembranze - Bergamo - panoramio.jpg",
@@ -26773,8 +27217,8 @@
   "brg_001": {
    "city": "Braga",
    "name": "The Tulip Tree of Biscainhos",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Biscainhos Garden Braga (6).JPG (Wikidata Q98443983)",
@@ -26821,8 +27265,8 @@
   "brg_003": {
    "city": "Braga",
    "name": "The Three Oaks of Santa Tecla",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Árvore isolada em Santa Tecla.jpg",
@@ -26839,9 +27283,19 @@
   "brg_006": {
    "city": "Braga",
    "name": "The Trees of the Embrace",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
+    {
+     "title": "File:Platano Bom Jesus.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Platano_Bom_Jesus.jpg/960px-Platano_Bom_Jesus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Platano_Bom_Jesus.jpg",
+     "licence": "CC0",
+     "author": "Joseolgon",
+     "lat": 41.55502597,
+     "lng": -8.38090597,
+     "cats": "Category:CC-Zero Category:Famous trees in Portugal Category:Files with coordinates missing SDC location of creation Category:Photographs taken on 2020-09-17 Category:Self-published work Category:Trees in Braga Category:Uploaded with Mobile/Android"
+    },
     {
      "title": "iNat obs 213084434 (Quercus orocantabrica)",
      "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/376570018/medium.jpg",
@@ -26856,8 +27310,8 @@
   "bne_002": {
    "city": "Brisbane",
    "name": "The Old Government House Fig",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Fig Tree House Lane Cove River.jpg",
@@ -26910,8 +27364,8 @@
   "bne_003": {
    "city": "Brisbane",
    "name": "The Macadamia Nut Tree",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Litoria fallax, Eastern Dwarf Tree Frog, Brisbane.jpg",
@@ -26964,8 +27418,8 @@
   "bne_004": {
    "city": "Brisbane",
    "name": "The Banyan Tree of City Botanic Gardens",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:City Botanic Gardens Banyan tree IMG 9189 (2218673982).jpg",
@@ -27028,8 +27482,8 @@
   "bne_005": {
    "city": "Brisbane",
    "name": "Prince Albert's Cook Pine",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Christmas tree in 2019 at Parliament House, Brisbane, Queensland 01.jpg",
@@ -27141,8 +27595,8 @@
   "bne_006": {
    "city": "Brisbane",
    "name": "The Eagle Street Fig Trees",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Christmas tree at Central Plaza Two, 66 Eagle Street, Brisbane, 2024, 01.jpg",
@@ -27223,134 +27677,14 @@
      "lat": -27.467981,
      "lng": 153.029555,
      "cats": "Category:Australia photographs taken on 2013-06-11 Category:CC-BY-SA-3.0 Category:Eagle Street Fig Trees Category:Files with coordinates missing SDC location of creation Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio"
-    },
-    {
-     "title": "File:Annex, 12 Creek Street, Brisbane in February 2020.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Annex%2C_12_Creek_Street%2C_Brisbane_in_February_2020.jpg/960px-Annex%2C_12_Creek_Street%2C_Brisbane_in_February_2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Annex,_12_Creek_Street,_Brisbane_in_February_2020.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Kgbo",
-     "lat": -27.467283,
-     "lng": 153.029969,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Bus and Ferry Travel Day with Vision Australia Eagle St Brisbane L1090551.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Bus_and_Ferry_Travel_Day_with_Vision_Australia_Eagle_St_Brisbane_L1090551.jpg/960px-Bus_and_Ferry_Travel_Day_with_Vision_Australia_Eagle_St_Brisbane_L1090551.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Bus_and_Ferry_Travel_Day_with_Vision_Australia_Eagle_St_Brisbane_L1090551.jpg",
-     "licence": "CC0",
-     "author": "John Robert McPherson",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Bus and Ferry Travel Day with Vision Australia Eagle St Brisbane L1090552.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Bus_and_Ferry_Travel_Day_with_Vision_Australia_Eagle_St_Brisbane_L1090552.jpg/960px-Bus_and_Ferry_Travel_Day_with_Vision_Australia_Eagle_St_Brisbane_L1090552.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Bus_and_Ferry_Travel_Day_with_Vision_Australia_Eagle_St_Brisbane_L1090552.jpg",
-     "licence": "CC0",
-     "author": "John Robert McPherson",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Bus and Ferry Travel Day with Vision Australia Eagle St Brisbane L1090553.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Bus_and_Ferry_Travel_Day_with_Vision_Australia_Eagle_St_Brisbane_L1090553.jpg/960px-Bus_and_Ferry_Travel_Day_with_Vision_Australia_Eagle_St_Brisbane_L1090553.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Bus_and_Ferry_Travel_Day_with_Vision_Australia_Eagle_St_Brisbane_L1090553.jpg",
-     "licence": "CC0",
-     "author": "John Robert McPherson",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Bus and Ferry Travel Day with Vision Australia Eagle St Brisbane L1090555.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Bus_and_Ferry_Travel_Day_with_Vision_Australia_Eagle_St_Brisbane_L1090555.jpg/960px-Bus_and_Ferry_Travel_Day_with_Vision_Australia_Eagle_St_Brisbane_L1090555.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Bus_and_Ferry_Travel_Day_with_Vision_Australia_Eagle_St_Brisbane_L1090555.jpg",
-     "licence": "CC0",
-     "author": "John Robert McPherson",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Creek Street, Brisbane 06.2013 060.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Creek_Street%2C_Brisbane_06.2013_060.jpg/960px-Creek_Street%2C_Brisbane_06.2013_060.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Creek_Street,_Brisbane_06.2013_060.jpg",
-     "licence": "CC BY-SA 3.0",
-     "author": "Chris Olszewski",
-     "lat": -27.46783333,
-     "lng": 153.03,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Creek Street, Brisbane 06.2013 061.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Creek_Street%2C_Brisbane_06.2013_061.jpg/960px-Creek_Street%2C_Brisbane_06.2013_061.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Creek_Street,_Brisbane_06.2013_061.jpg",
-     "licence": "CC BY-SA 3.0",
-     "author": "Chris Olszewski",
-     "lat": -27.46783333,
-     "lng": 153.03,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Creek Street, Brisbane 06.2013 064.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Creek_Street%2C_Brisbane_06.2013_064.jpg/960px-Creek_Street%2C_Brisbane_06.2013_064.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Creek_Street,_Brisbane_06.2013_064.jpg",
-     "licence": "CC BY-SA 3.0",
-     "author": "Kgbo",
-     "lat": -27.46783333,
-     "lng": 153.03,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Creek Street, Brisbane 06.2013 066.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Creek_Street%2C_Brisbane_06.2013_066.jpg/960px-Creek_Street%2C_Brisbane_06.2013_066.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Creek_Street,_Brisbane_06.2013_066.jpg",
-     "licence": "CC BY-SA 3.0",
-     "author": "Kgbo",
-     "lat": -27.46783333,
-     "lng": 153.03,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Creek Street, Brisbane 06.2013 067.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Creek_Street%2C_Brisbane_06.2013_067.jpg/960px-Creek_Street%2C_Brisbane_06.2013_067.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Creek_Street,_Brisbane_06.2013_067.jpg",
-     "licence": "CC BY-SA 3.0",
-     "author": "Kgbo",
-     "lat": -27.46783333,
-     "lng": 153.03,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Creek Street, Brisbane 06.2013 068.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Creek_Street%2C_Brisbane_06.2013_068.jpg/960px-Creek_Street%2C_Brisbane_06.2013_068.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Creek_Street,_Brisbane_06.2013_068.jpg",
-     "licence": "CC BY-SA 3.0",
-     "author": "Kgbo",
-     "lat": -27.46783333,
-     "lng": 153.03,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Creek Street, Brisbane 06.2013 069.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Creek_Street%2C_Brisbane_06.2013_069.jpg/960px-Creek_Street%2C_Brisbane_06.2013_069.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Creek_Street,_Brisbane_06.2013_069.jpg",
-     "licence": "CC BY-SA 3.0",
-     "author": "Kgbo",
-     "lat": -27.46783333,
-     "lng": 153.03,
-     "source": "commons/famous"
     }
    ]
   },
   "bne_007": {
    "city": "Brisbane",
    "name": "The Crows Ash",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "bne_008": {
@@ -31772,6 +32106,13 @@
     }
    ],
    "checked": "2026-08-20"
+  },
+  "brt_006": {
+   "city": "Bratislava",
+   "name": "The Plane of Kysucká Street",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
   }
  },
  "notes": [
