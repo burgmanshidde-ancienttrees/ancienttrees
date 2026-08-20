@@ -12,6 +12,50 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-20 (session) - A photo viewing pass: 12 photographs approved, 105 candidates rejected, 8 cities off the zero-photo list
+
+Hidde asked to have another go at photographs for the cities with none. `health.py` rung 2 clear first (smoke, deploy, digest, fresh-eyes all green, no BLOCKER), so this was rung 6 work.
+
+**Approved 12, and 8 cities came off the zero-photo list** (53 to 45): Graz (3: the Schlossberg field maple and the Volksgarten oak, both with their Naturdenkmal sign in frame, plus the Eggenberg copper beech), Sardinia (2: both olivastri, Luras and Santa Maria Navarrese), Copenhagen (Skovfogedegen), Tallinn (Kelch's linden), Perth (the Royal Perth Hospital fig), Los Angeles (2: the LAHCM 19 fig and the oldest palm), Madeira (the Neves dragon tree grove) and Mexico City (the Parque Espana ahuehuete).
+
+**Rejected 105 and recorded every reason**, which is the half of this work that pays next time: an unrecorded reject is an image the following pass pays to judge again.
+
+What the rejects actually were, because the pattern is worth knowing before the next pass:
+
+| Failure | Examples |
+|---|---|
+| Not a photograph of a tree at all | three portraits of men called Zakrzewski for Poznan's maple, two Canadian prime ministers for the Mackenzie King pear, a Raphael for Perugia, a c.1650 map and an ESA satellite image for Maastricht, a 1941 railway photograph for two Chicago champions |
+| Right species, wrong individual | Copenhagen's pacifier tree came back from Aarhus AND from Ostre Anlaeg, neither being the Frederiksberg hornbeam; a Julianaboom in Beekbergen; a Kampen stadspark for Maastricht |
+| One file offered for several trees | two Assistens cemetery avenue shots offered for all seven Copenhagen trees in that cemetery; one iNat observation for both Ottawa Vitifolia lindens and again for both Kalopa kopiko |
+| Detail, not portrait | the whole iNaturalist lane here is macro botany: hands holding flowers and leaves, no tree in the frame |
+| Composition or light | Sydney's quad jacaranda (sandstone takes four fifths of the frame, and the tree in it is a thin young replacement), several POOR photo_light scores |
+
+**Two things learned that are worth carrying forward.** First, a tree's own `verified_sources` sometimes already names the Commons file, and that is the strongest identity evidence available: Graz's copper beech was solved that way, by a file GPS-tagged at the register coordinate, after the sweep's own top candidate turned out to be a different copper beech in the Schlosspark. Only 4 photo-less trees currently carry such a reference, but it is a free check. Second, `photo_fetch.py`'s geotag and distance filtering is doing real work: everything that survived to an approval sat within 24m of our pin, and everything at 400m-plus was noise.
+
+**One judgement call recorded as such:** Mexico City's ahuehuete is a trunk-dominant frame rather than a wide portrait, approved because the 1921 centenary plaque at its foot settles that it is this tree and not another ahuehuete in a city full of them. Identified and honest beat wide and unproven.
+
+**Also fixed a real defect found on the way.** `photo_apply.py` wrote city files at indent 1 with no trailing newline, which is not what data/cities holds, so approving a single photograph reformatted the entire file: Graz arrived as a 724-line diff for a four-line change, and a real edit hidden inside that much churn is a review nobody can do. It writes indent 2 with a trailing newline now, matching `photo_check.py` and `season_backfill.py`.
+
+FOR HIDDE: nothing blocks. The remaining 45 empty cities are mostly genuinely empty on Commons rather than unlooked-at: Caserta (20 trees), Melbourne, Hobart, Las Vegas, Dallas and Zaragoza returned no open-licence candidate at all across two sweeps. The cheaper next move for those is `famous_trees.py`, which finds trees we do not map that arrive with a photograph already attached, rather than hunting a photograph for a tree nobody has photographed.
+
+## 2026-08-20 (session) - A UX audit of both products, and the app can now be signed into
+
+Hidde asked for the iOS app to be improved for one thing, getting as many people as possible to make an account, through the eyes of somebody who had just moved here from AllTrails, and then for a UX audit of the site and the app with it. Both are done. The full audit with every finding ranked is **`UX_AUDIT.md`**; this is the short version.
+
+**FOR HIDDE: four things in your Supabase and Xcode dashboards, and three of them gate work that is already written and sitting there.** They are listed with exact locations at the bottom of UX_AUDIT.md. In one line each: add `{{ .Token }}` to the Magic Link email template (gates the app's email sign-in), enable the Apple provider with `app.ancienttrees.AncientTrees` as a client ID (gates Sign in with Apple, the single biggest lever in the whole audit), paste `supabase/visited.sql` into the SQL editor (the table has never been created, so the tick log has no cloud half on either platform), and accept Xcode's prompt about Sign in with Apple next time you build to your own phone.
+
+**You answered two questions this morning and both are now in DECISIONS.md:** Apple sign-in is allowed, and the account wall is soft, meaning saving and ticking work with no account and the ask arrives when there is something to lose.
+
+**The biggest finding is not about accounts at all.** `NSLocationWhenInUseUsageDescription` was missing from the app's Info.plist. iOS refuses to show the location dialog when that key is absent, so it was never shown to anybody, and the app fell through to its hardcoded fallback: **every user of the app, anywhere in the world, opened it on Dam square in Amsterdam.** The dialog appears now, confirmed by running it. This ranks above the account work because no sign-in screen converts a person who was shown the wrong city.
+
+**Two more that were live and broken.** The paywall's "Tell me when this opens" posted a `note` column that does not exist on the waitlist table, so every press was rejected with a 400 while the screen said we would write to them, and the code set its success state without reading the result. It now posts columns that exist, carries the email address it needs to keep that promise, and says so when it fails. And three `.sheet` modifiers were stacked on one view, of which SwiftUI honours one.
+
+**What the account work actually is:** Sign in with Apple and an emailed six digit code (never a magic link, so the app is never left), against the same Supabase project the website has used since July, so somebody who signed in on ancienttrees.app opens the app already holding their collection. Sign-in merges the two sides as a union rather than letting either overwrite the other. Tokens live in the Keychain. The You tab, which used to be a settings list led by the dead text "Signed in ... not yet", now leads with the account. Prompts fire at the first tick and the third save, three times ever at most.
+
+**On the website:** the sign-in dialog offered three calls to action, and the middle one, "More options", linked to /account, which carries the same single email form and nothing else. It is gone, the app is a plain link rather than a competing primary, and the subtitle now names the tree that was just saved. On /account at 375px the email field had shrunk next to its long button until the placeholder read "you@exampl". Both are live and both CI jobs are green.
+
+**Left open on purpose, with reasons in the audit:** the homepage's "Explore trees near you" is an underlined text link when it is the core action of the entire product, the Explore tab in the app is a table of contents with no photograph on it, and the tree page's action bar colours Save rather than "Take me there", which is a real trade between your two goals and should be settled by what the bar is earning rather than by taste.
+
 ## 2026-08-20 (session, continued) - Palermo deepens to 21: a verify pass on the Villa Tasca cluster, and a real answer-page bug caught by the build
 
 Answered REVIEW.md's 2026-08-18 WARN too (Naples pin-provenance notes and Caserta's Piazza Vanvitelli pins): both already fixed in a prior session, just never logged.
