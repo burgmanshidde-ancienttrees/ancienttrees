@@ -99,8 +99,7 @@ struct MapTab: View {
                 // sheet instead of scrolling past them. At full height the list
                 // scrolls, and the grabber at the top stays outside the scroll
                 // view so there is always a way back down.
-                sheet.scrollDisabled(sheetHeight != .full)
-                    .scrollDismissesKeyboard(.immediately)
+                sheet
             }
         }
         // The title used to float over the map as bare text with nothing behind
@@ -167,8 +166,7 @@ struct MapTab: View {
     }
 
     private var list: some View {
-        ScrollView {
-            LazyVStack(spacing: 12) {
+        LazyVStack(spacing: 12) {
                 searchField
                 ForEach(listed, id: \.tree.id) { hit in
                     NavigationLink(value: Route.tree(hit.tree.id)) {
@@ -185,9 +183,8 @@ struct MapTab: View {
                         .font(.footnote).foregroundStyle(.secondary).padding(.top, 30)
                 }
             }
-            .padding(.horizontal, 16)
-            .padding(.bottom, 110)      // clear of the floating tab bar
-        }
+        .padding(.horizontal, 16)
+        .padding(.bottom, 110)      // clear of the floating tab bar
     }
 
     @ViewBuilder private var whereChip: some View {
@@ -254,26 +251,21 @@ struct MapTab: View {
     /// One tapped pin, shown in the sheet rather than pushed onto a page, so the
     /// map stays visible behind the decision.
     private func selectedTree(_ t: Tree) -> some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 12) {
-                HStack {
-                    Spacer()
-                    Button { selected = nil } label: {
-                        Image(systemName: "xmark.circle.fill")
-                            .font(.title3).foregroundStyle(.secondary)
-                    }
-                    .buttonStyle(.plain)
+        VStack(alignment: .leading, spacing: 12) {
+            HStack {
+                Spacer()
+                Button { selected = nil } label: {
+                    Image(systemName: "xmark.circle.fill")
+                        .font(.title3).foregroundStyle(Brand.inkSoft)
                 }
-                TreeCard(tree: t, km: t.distanceKm(from: origin.lat, origin.lng))
-                NavigationLink(value: Route.tree(t.id)) {
-                    Label("Read why it is worth the walk", systemImage: "book")
-                        .font(.subheadline.weight(.semibold))
-                        .frame(maxWidth: .infinity).padding(.vertical, 13)
-                }
-                .buttonStyle(.borderedProminent)
-                .tint(Color(red: 0.20, green: 0.35, blue: 0.20))
+                .buttonStyle(.plain)
             }
-            .padding(.horizontal, 16).padding(.bottom, 24)
+            TreeCard(tree: t, km: t.distanceKm(from: origin.lat, origin.lng))
+            NavigationLink(value: Route.tree(t.id)) {
+                Label("Read why it is worth the walk", systemImage: "book")
+            }
+            .buttonStyle(BrandButtonStyle())
         }
+        .padding(.horizontal, 16).padding(.bottom, 110)
     }
 }

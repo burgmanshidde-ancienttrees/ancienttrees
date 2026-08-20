@@ -116,6 +116,43 @@ final class AncientTreesUITests: XCTestCase {
                       "the map was panned away and the list still claims to be near you")
     }
 
+    /// The sheet and the list handing the gesture back and forth, which is the
+    /// one interaction in this app that cannot be seen in a screenshot and that
+    /// Hidde found broken twice in a row: first dragging up scrolled the trees
+    /// instead of raising the sheet, then dragging down scrolled instead of
+    /// lowering it. Measured by where the search field sits: high on the screen
+    /// means the sheet is open, low means it is back at its peek.
+    @MainActor
+    func testTheSheetAndTheListTakeTurns() throws {
+        let app = launch(["-tab=0"])
+        let field = app.textFields.firstMatch
+        XCTAssertTrue(field.waitForExistence(timeout: 12), "no search field in the sheet")
+
+        let peekY = field.frame.origin.y
+        let screen = app.frame.height
+
+        // Anchored on the search field rather than on a point in the list: a
+        // drag that starts on a tree card can be taken as a tap and open the
+        // tree, which is what happened the first time this was written. The
+        // field is inside the same scrolling content, so it tests the same
+        // thing and cannot navigate anywhere.
+        //
+        // And a long press before the drag, so nothing is read as a flick.
+        app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
+        field.press(forDuration: 0.35,
+                    thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.12)))
+        let openY = field.frame.origin.y
+        XCTAssertLessThan(openY, peekY - screen * 0.2,
+                          "dragging up over the list did not raise the sheet")
+
+        // And back down from the top of the list, which is the half that was
+        // still missing.
+        field.press(forDuration: 0.35,
+                    thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.92)))
+        XCTAssertGreaterThan(field.frame.origin.y, openY + screen * 0.2,
+                             "dragging down from the top of the list did not lower the sheet")
+    }
+
     /// Explore is built out of the website's own collections, which reach the
     /// app through /api/browse.json. If that feed ever stops carrying them the
     /// screen quietly loses most of itself, and a screenshot of the top of it
