@@ -923,7 +923,7 @@ all N remarkable ancient trees in [City]", and on Las Vegas that sits under
 our own sentence saying nothing there is ancient. It is template copy on all
 137 cities and "ancient trees" is the brand, so I have not touched it.
 
-## 2026-08-19 (session) - The phone header: one control, and the stale CSS that was un-centring it
+## 2026-08-20 (session) - The phone header: one control, and the stale CSS that was un-centring it
 
 Hidde on the mobile nav: the hamburger was not centred and the bar looked odd, so put everything under it.
 
