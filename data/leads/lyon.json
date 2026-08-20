@@ -23,6 +23,54 @@
       "latitude": 45.77158,
       "longitude": 4.8614,
       "reason": "Single source only (the Metropole de Lyon register). Searched for a named tree, park or street matching this coordinate plus the species in French and English; results returned only nursery/horticultural pages about the species in general, nothing about this specific specimen or its site. No street address or park name given in the register entry itself, which makes a targeted second-source search hard without first identifying the exact site from the coordinates. Worth revisiting with a reverse-geocode of the coordinate to a street name before searching again."
+    },
+    {
+      "register_id": null,
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "locality": "'parc municipal Blanchoud', stated 5th arrondissement, Lyon; exact location not found",
+      "latitude": null,
+      "longitude": null,
+      "reason": "2026-08-20 pass: found via the guichetdusavoir.org library Q&A service (fetched directly, not from a search summary), which quotes the booklet 'Arbres remarquables du Rhone' (2000): 'Le cedre du Liban dans le parc municipal Blanchoud dans le 5e : plus de 30 metres de haut et 6,50 m de circonference (page 44).' That is one real source with a specific citation, but a park called 'Blanchoud' could not be located under that name in any current map, Ville de Lyon page or ruesdelyon.net listing searched this pass. CAUTION: a WebSearch AI summary conflated this tree with the already-published lyo_006 (Atlas Cedar of Parc de la Chapelle, 9th arrondissement, a Cedrus atlantica, not Cedrus libani), inventing a 'Blanchoud/Sabattier house' bicentennial cedar with lyo_006's own measurements (28m, 32m crown, 635cm). That invented merge was discarded; do not repeat it. The Parc de la Chapelle grounds (18 rue de la Chapelle, formerly the Sabatier property, per ruesdelyon.net fetched directly) are a distinct, already-published park with a real 6.75m-circumference Atlas cedar of its own, unrelated to this lead. Needs someone to identify the actual 'parc Blanchoud', possibly a renamed or absorbed 5th-arrondissement park, before this can be pinned or even confirmed as still standing; no age was estimated because a park could not be confirmed, let alone a coordinate."
+    },
+    {
+      "register_id": 4345,
+      "species": "Atlas Cedar, weeping blue form (Cedrus atlantica 'Glauca Pendula')",
+      "locality": "Square Henri Dor, Lyon",
+      "latitude": 45.783089,
+      "longitude": 4.835148,
+      "reason": "Single source only (the register). Searched 'square Henri Dor' Lyon cedre; results returned only unrelated squares (Henri Pensier, Ninon Vallin) and a furniture shop. No independent page naming this square or its cedar was found this pass."
+    },
+    {
+      "register_id": null,
+      "species": "London Plane (Platanus x acerifolia), group of 3",
+      "locality": "Impasse de Chazieres / 'Les Hauts de Saone', Lyon 4th (Croix-Rousse plateau, overlooking the Saone valley); register_ids 4291, 4293, 4294, three separate trunks within about 20m of each other",
+      "latitude": 45.781089,
+      "longitude": 4.813995,
+      "reason": "Single source only (the register), condition text: 'groupe de 3 platanes de 35 m de haut. Visibles de la vallee de la Saone.' A physically striking, compact triplet that could be a genuine ensemble entry, but searches for the impasse and the planting found only real-estate listings and street-index pages, nothing naming or corroborating these specific trees. Worth a second look with a site-specific search once a park/viewpoint name for this exact spot is known."
+    },
+    {
+      "register_id": null,
+      "species": "Pedunculate Oak (Quercus robur), a register twin: two entries metres apart, same address, same condition text",
+      "locality": "27 quai Clemenceau, Lyon; register_ids 4251 and 4252",
+      "latitude": 45.792877,
+      "longitude": 4.827912,
+      "reason": "Single source only (the register). Would fold into one entry per the twins rule if it ever verifies. Searched 'quai Clemenceau' plus chene pedoncule and arbre remarquable; nothing found naming this tree independently, only general Lyon remarkable-tree overview pages. Address is a quai (public embankment road), not obviously a private garden, but no source confirms public accessibility either; would need that checked before shipping even with a second source."
+    },
+    {
+      "register_id": 3989,
+      "species": "Southern Magnolia (Magnolia grandiflora)",
+      "locality": "2 et 2bis rue Viret, Villeurbanne",
+      "latitude": 45.774574,
+      "longitude": 4.875385,
+      "reason": "Single source only (the register), condition text: 'Forme naturelle remarquable, belle dimension, rapport au lieu, grande visibilite.' About 300m from the already-published lyo_011 (Pedunculate Oak of Rue Viret). Searched 'rue Viret' Villeurbanne magnolia; results returned only the already-published oak, nothing on this magnolia. Street-number address, public/private status of the specific spot not established either."
+    },
+    {
+      "register_id": 4323,
+      "species": "Southern Magnolia (Magnolia grandiflora)",
+      "locality": "17 rue des Aqueducs, 69005 Lyon (Point du Jour), about 90m from the newly-verified lyo_014 cedar",
+      "latitude": 45.757766,
+      "longitude": 4.795454,
+      "reason": "Single source only (the register), and the register's own condition text calls it 'Jeune magnolia de beau developpement' (young magnolia, still developing), which cuts against the genuinely-old bar on its own; no other qualifying trait (no claim of visual spectacle or history) found this pass. Recorded because it sits right next to lyo_014 in case it matures into a candidate or a reader flags it."
     }
   ],
   "blocked": [

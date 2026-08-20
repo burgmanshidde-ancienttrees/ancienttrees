@@ -422,6 +422,36 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "lyo_014",
+      "name": "The Cedar of Square Gabrielle Dupond-Ebrard",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Square Gabrielle Dupond-Ebrard, 28-29 rue des Aqueducs, 69005 Lyon (Point du Jour)",
+        "latitude": 45.758251,
+        "longitude": 4.793938,
+        "neighbourhood": "Point du Jour, Lyon 5th arrondissement"
+      },
+      "story": "The square's namesake hid people from the Gestapo two streets from here. Gabrielle Dupond-Ebrard lived at 13 avenue du Point du Jour until 1985, working with the Combat resistance network under Pierre Guillain de Benouville, and her house served as a secretariat and shelter for refugees during the German occupation. Lyon later named this small square after her, and the cedar growing in it now outranks almost everything else about the place: a local streets guide calls it simply the square's main feature.\n\nNobody has measured it. The city's own register of remarkable trees lists it only as a very large specimen, with no planting year and no girth on file, unusual for a species normally easy to date from its own architecture. Cedar of Lebanon grows a tiered, almost horizontal branch structure as it ages, each level wider than the one above it, so the size the register does record is at least visible rather than guessed.\n\nThe square sits about 450 metres from the giant chestnut of Parc de la Garde, already on this list, so the two make an easy pair on the same walk through Point du Jour. If you know how old this cedar is, or can get a tape around the trunk, tell us.",
+      "verified_sources": [
+        "Metropole de Lyon PLU-H remarkable-tree register (register_id 4318, condition: Tres grand exemplaire, last surveyed 2019-04-19)",
+        "https://www.ruesdelyon.net/square/917-square-gabielle-dupond-ebrard.html"
+      ],
+      "access": "Free, public municipal square, open street-level access, no gate or entry restriction found.",
+      "transport": "Point du Jour neighbourhood, Lyon 5th arrondissement; served by TCL buses in the area.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }
