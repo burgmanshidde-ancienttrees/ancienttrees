@@ -12,6 +12,24 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-20 (session) - Toulouse submission checked, four Dutch cities deepened, a species page gap closed
+
+`python3 scripts/visitors.py`: 383 visits, 609 page views over 7 days (13th 17, 14th 34, 15th 33, 16th 83, 17th 44, 18th 67, 19th 42, 20th 63), flat, no single city dominating.
+
+**Reader submission (rung 1):** three duplicate rows (a form double-submit) from a reader named Katy questioned tls_002's Wych Elm identification (hairless leaves, atypical shape) and noted two elms stand a few metres apart at the spot. Re-checked Toulouse's own open-data API directly: it still returns Ulmus glabra at the exact coordinate and is the only tree in the area flagged remarkable by the city, among 14 nearby elms including an unflagged Ulmus laevis 15m away that better matches the reader's description (smoother leaves). Left the species as the register states it, added a verify_notes entry and one story sentence so a future visitor trusts the pin over the nearest elm, logged in CURATION.md. All 3 rows marked processed.
+
+**Species page gap closed:** Lombardy Poplar (3 trees: Amsterdam, Seattle, Portland), hand-written intro grounded in each tree's own facts.
+
+**Four register-backed verify passes off the shelf, all dispatched to the `verify` agent and merged in-session:**
+- Lyon 12 to 13 (Square Gabrielle Dupond-Ebrard cedar, joins the Point du Jour cluster; 7 more candidates left as leads, mostly single-source or private-garden)
+- Groningen 16 to 19 (Poortershoes plane predating its 1881 building by 35 years, an ANWB linden with a flagged arithmetic error in its own commemorative date, a 1937 royal-wedding lime)
+- Utrecht 16 to 18 (the Markiezeneik of Amelisweerd, 2022 Dutch Tree of the Year and the named protest symbol against an A27 widening the Raad van State cancelled in March 2026; the thickest plane in the Zocherpark bastion chain, 629cm)
+- Rotterdam, Haarlem and Maastricht dispatched and still running at time of writing.
+
+Fixed a real stale-count bug caught by preflight.py in both Groningen and Utrecht: meta_description, question_meta and one FAQ answer still promised the pre-deepen tree count.
+
+Build, preflight and QA all clean after every merge. Costs logged to data/agent-costs.json.
+
 ## 2026-08-20 (session) - The two DRIFT findings left on /cities are the check misreading itself, not the page
 
 Diagnosed, deliberately not fixed, because another run is mid-calibration on this check and I cannot run headless Chrome in this worktree to prove a fix.
