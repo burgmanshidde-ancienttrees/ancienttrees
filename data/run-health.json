@@ -633,6 +633,28 @@
    "cities_touched": 8,
    "trees": 16,
    "logged": true
+  },
+  {
+   "started": "2026-08-20T10:16:27+00:00",
+   "date": "2026-08-20",
+   "run_id": "32358110845",
+   "minutes": 19.3,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 133,
+   "denials": 31,
+   "denials_source": "permission_denials: Bash(cat), Bash(curl), Bash(echo), Bash(for), Bash(git), Bash(if), Bash(printf), Bash(python3), Bash(wc), Edit, Write",
+   "ended": "success",
+   "tokens": 5170858,
+   "claims_held": [
+    "vienna",
+    "munich",
+    "utrecht"
+   ],
+   "commits": 3,
+   "cities_touched": 0,
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
