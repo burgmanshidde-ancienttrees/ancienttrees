@@ -35,6 +35,27 @@ struct EditorialSuggestions {
     }
 }
 
+struct SpotSplit {
+
+    /// The sheet's one decision: what is close enough to be the tree the
+    /// person is standing before. At the Wertheimpark gate the wingnut leads;
+    /// in a town we do not map, nothing is near and the add-path is the story.
+    @Test func nearbyLeadsWithTheNearestAndFarFindsNothing() throws {
+        let store = CatalogueStore()
+        store.loadBundled()
+        let cat = try #require(store.catalogue, "the bundled catalogue did not load")
+
+        let atWertheimpark = (lat: 52.3667, lng: 4.9086)
+        let near = SpotSheet.nearby(origin: atWertheimpark, trees: cat.trees)
+        #expect(near.first?.id == "ams_004", "the wingnut is not first at its own gate")
+        #expect(near.count <= 5)
+
+        let farField = (lat: 52.03, lng: 5.91)
+        #expect(SpotSheet.nearby(origin: farField, trees: cat.trees).isEmpty,
+                "an empty field claims a nearby tree")
+    }
+}
+
 struct CatalogueDecoding {
 
     @Test func theBundledBrowseFeedCarriesTheCollections() throws {

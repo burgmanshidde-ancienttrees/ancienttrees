@@ -32,13 +32,20 @@ import CoreText
 // MARK: - Colour
 
 public enum Brand {
-    /// The ground. Cream rather than system grey, which is the single biggest
-    /// reason the old screens read as Settings.
-    public static let ground = Color(light: 0xF7F6F1, dark: 0x14180F)
-    /// A card, a sheet, anything sitting on the ground.
+    /// The ground. WHITE, ruled by Hidde 2026-08-20 evening: "ik heb nog nooit
+    /// een app met een vieze achtergrond kleur gezien kijk aub af naar
+    /// conventies en stop met dingen verzinnen." The site's cream is the
+    /// site's; every reference app (AllTrails, Komoot, Airbnb, Google Maps)
+    /// stands on white, and transplanting the web ground here read as dirty
+    /// rather than warm. The identity lives in moss, gold, ink and Gabarito,
+    /// not in tinting the page.
+    public static let ground = Color(light: 0xFFFFFF, dark: 0x14180F)
+    /// A card, a sheet, anything sitting on the ground; on the white ground
+    /// the card shadow does the separating, the AllTrails way.
     public static let surface = Color(light: 0xFFFFFF, dark: 0x1E241A)
-    /// A quieter surface, for a row inside a card.
-    public static let surfaceMuted = Color(light: 0xF1EFE7, dark: 0x262D20)
+    /// A quieter surface, for a row inside a card. Neutral grey, not cream,
+    /// same ruling as the ground.
+    public static let surfaceMuted = Color(light: 0xF2F2F2, dark: 0x262D20)
     public static let ink = Color(light: 0x26301E, dark: 0xECEFE4)
     public static let inkSoft = Color(light: 0x5C6350, dark: 0xA3AC93)
     /// The one colour that means "press this".
@@ -46,7 +53,7 @@ public enum Brand {
     public static let canopy = Color(light: 0x3A5222, dark: 0x5B7F35)
     /// Reserved for the season badge, so "at its best now" stays scarce.
     public static let gold = Color(light: 0xD9A13F, dark: 0xE0B463)
-    public static let hairline = Color(light: 0xE3E2D8, dark: 0x333B29)
+    public static let hairline = Color(light: 0xE6E6E6, dark: 0x333B29)
 }
 
 extension Color {
