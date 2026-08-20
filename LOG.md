@@ -12,6 +12,18 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-20 (session) - The two DRIFT findings left on /cities are the check misreading itself, not the page
+
+Diagnosed, deliberately not fixed, because another run is mid-calibration on this check and I cannot run headless Chrome in this worktree to prove a fix.
+
+The smoke test has been red since b9b7777 added DRIFT. 4ad2262 fixed most of it and was right to: `.cindex-grid` now carries `margin-left: -0.45rem` so a card's TEXT lands on the same line as the country heading above it. Look at /cities and it is correct.
+
+The two findings that survive are the check measuring the wrong edge. `.cindex-grid` paints nothing, no background and no border, so by the rule 4ad2262 itself wrote down it should contribute its TEXT edge. It contributes its BOX edge instead: `rowish()` in scripts/smoke_test.py treats any multi-column grid as a stopping point, so the walk never reaches the cards and `contentLeft()` returns the container's own left, which the negative margin has pulled 7.2px out. That 7.2 is the 0.45rem, which is why both findings report exactly it.
+
+The narrow fix is to let a non-painting rowish container hand back the leftmost text edge of its children rather than its own content edge; the walk already takes the minimum, so recursing would give the first card's text edge, which is the number the headings agree with. Whoever holds this check should make that call, not me.
+
+Until then `health.py` rung 2 reads red on a site that is not broken, so a run should check this entry before spending a window on it.
+
 ## 2026-08-20 (session) - Three funnel events were counted twice; the old numbers are inflated
 
 `app-cta`, `directions` and `walks-app` each had two click listeners claiming them, so one click inserted two rows in the events table. Every figure for those three in DATA.md before today is roughly double the truth, and `app-cta` was worse than doubled because it also fired on the two links tagged `walks-app`, which point at /app. **When the counts drop tomorrow, that is the fix, not a regression.** DATA.md now says so at the top, in the preamble the digest rewrites each day, so the warning cannot be pushed off the page by newer entries.
