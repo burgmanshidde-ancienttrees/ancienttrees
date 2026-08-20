@@ -589,6 +589,28 @@ def _now():
     return datetime.datetime.now(datetime.timezone.utc)
 
 
+def night_run_expiry_hours(default=2.5):
+    """How long a night-run claim can possibly be alive, derived not remembered.
+
+    A night-run claim cannot outlive the job holding it, so the honest number is
+    the workflow's own cap plus a little slack. Writing it down instead made it
+    wrong: this file said "the job is killed at 60 minutes" and set 1.5 hours,
+    while timeout-minutes had been 120 since 2026-08-17 (c61b64c). Under a
+    two-hour window that expiry frees a city out from under a run that is still
+    working on it, which is the opposite of what the claim is for.
+
+    run_health.py already reads this same number the same way. A constant
+    describing a value that lives in another file goes stale silently, which is
+    the lesson this project has now learned in three separate files."""
+    try:
+        wf = os.path.join(ROOT, ".github", "workflows", "nightly.yml")
+        with open(wf, encoding="utf-8") as fh:
+            m = re.search(r"^\s*timeout-minutes:\s*(\d+)", fh.read(), re.M)
+        return round(int(m.group(1)) / 60.0 + 0.5, 2) if m else default
+    except OSError:
+        return default
+
+
 def load_inflight():
     """The claim file, with expired claims already dropped.
 
@@ -608,7 +630,8 @@ def load_inflight():
     except Exception:
         return {"expire_hours": 4, "claims": []}, []
     default_hours = doc.get("expire_hours", 4)
-    by_holder = doc.get("expire_hours_by_holder", {"night-run": 1.5})
+    by_holder = dict(doc.get("expire_hours_by_holder", {}))
+    by_holder["night-run"] = night_run_expiry_hours()
     live = []
     for c in doc.get("claims", []):
         try:
@@ -959,8 +982,43 @@ def brief(arg, live):
     return 0
 
 
+def print_claims():
+    """Every claim standing right now, and how close each is to expiring.
+
+    There was no way to ask this, which is why the continuation prompt in
+    nightly.yml referenced a flag that did not exist. A run inheriting a window
+    needs one question answered before anything else: what did the attempt
+    before me lock, and is it mine to finish or to release."""
+    doc, live = load_inflight()
+    if not live:
+        print("No claims standing. Every place is free.")
+        return 0
+    now = datetime.datetime.now(datetime.timezone.utc)
+    default_hours = doc.get("expire_hours", 4)
+    by_holder = dict(doc.get("expire_hours_by_holder", {}))
+    by_holder["night-run"] = night_run_expiry_hours()
+    print("%d claim(s) standing:\n" % len(live))
+    for c in sorted(live, key=lambda x: str(x.get("claimed_at", ""))):
+        by = c.get("by", "?")
+        hours = by_holder.get(by, default_hours)
+        left = "?"
+        try:
+            stamp = c.get("claimed_at") or c.get("at")
+            at = datetime.datetime.fromisoformat(str(stamp).replace("Z", "+00:00"))
+            mins = hours * 60 - (now - at).total_seconds() / 60.0
+            left = "%.0f min left" % mins if mins > 0 else "expiring now"
+        except (TypeError, ValueError):
+            pass
+        print("  %-22s %-7s by %-22s %s" % (c.get("target", "?"), c.get("kind", "?"), by, left))
+    print("\nFinish it or release it:")
+    print("  python3 scripts/passcheck.py --release <place>")
+    return 0
+
+
 def main():
     args = sys.argv[1:]
+    if "--claims" in args:
+        return print_claims()
     if "--pending" in args:
         print_pending()
         return 0

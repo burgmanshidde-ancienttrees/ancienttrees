@@ -365,17 +365,99 @@ def prepend_log(entry):
     return False
 
 
+# The window is two hours (timeout-minutes in nightly.yml) and runs keep handing
+# it back after five. Measured over the 20 runs from 2026-08-15: the ones that
+# shipped nothing ended with is_error false and subtype success after 47 to 122
+# turns, having committed a claim and stopped. Nothing killed them. They decided
+# they were done.
+#
+# The prompt has told them otherwise since 2026-08-13 ("do not stop after one
+# item ... keep going until the usage limit stops you or the clock runs out"),
+# and the workflow already carries a note from 2026-08-15 about four runs in a
+# row doing exactly this. Written twice, ignored twice, which is where this
+# project stops writing and starts building. Measurement came first and is now
+# in; this is the cure.
+#
+# One continuation, never a loop: there is a single extra step in the workflow,
+# so the worst case is two attempts inside one already-paid-for window. It fires
+# only for the case that is pure waste, an early voluntary stop with no trees.
+# A run that died on the usage limit is left alone, because a second attempt
+# would die in seconds for the same reason.
+PROBE_MINUTES = 20      # under this, with nothing shipped, the window is worth another go
+PROBE_MIN_TURNS = 5     # below this it never really started: usage limit, not a decision
+
+
+def merge_results(first, second):
+    """One window, two attempts: report the window, not the last attempt.
+
+    The continuation writes its own execution record, and both attempts default
+    to the same path on the runner, so reading only one of them would understate
+    the window by exactly the amount the continuation was added to recover. The
+    meter exists to be trusted, so it adds the halves and says there were two.
+    Anything not additive (is_error, subtype) is taken from the LAST attempt,
+    because that is the one that decided how the window ended."""
+    if not second:
+        return first
+    if not first:
+        return second
+    out = dict(second)
+    for key in ("duration_ms", "num_turns", "total_cost_usd"):
+        a, b = first.get(key), second.get(key)
+        if isinstance(a, (int, float)) and isinstance(b, (int, float)):
+            out[key] = a + b
+        elif isinstance(a, (int, float)):
+            out[key] = a
+    for key in DENIAL_KEYS:
+        a, b = first.get(key), second.get(key)
+        if isinstance(a, list) and isinstance(b, list):
+            out[key] = a + b
+        elif isinstance(a, (int, float)) and isinstance(b, (int, float)):
+            out[key] = a + b
+        elif key in first and key not in out:
+            out[key] = a
+    out["attempts"] = 2
+    return out
+
+
+def probe(result, changed, minutes):
+    """(should_continue, one-line reason). Never raises: unknown means no."""
+    if not isinstance(result, dict) or not result:
+        return False, "no execution record, so nothing can be judged"
+    if result.get("is_error"):
+        return False, "the run reported an error; a retry would repeat it"
+    turns = result.get("num_turns")
+    if isinstance(turns, (int, float)) and turns < PROBE_MIN_TURNS:
+        return False, f"only {turns} turn(s): the usage limit, not a decision"
+    if minutes is None:
+        return False, "duration unknown, so the window cannot be judged"
+    if minutes >= PROBE_MINUTES:
+        return False, f"used {minutes} min of its window"
+    if changed is None:
+        return False, "cannot resolve what changed, so assume it worked"
+    if (changed.get("trees") or 0) > 0:
+        return False, f"shipped {changed['trees']} tree(s) in {minutes} min"
+    return True, (f"stopped after {minutes} min with {changed.get('commits', 0)} commit(s) "
+                  f"and no trees; {int(PROBE_MINUTES)}+ min of window left unused")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--execution-file", default=os.environ.get("CLAUDE_EXECUTION_FILE"))
+    ap.add_argument("--execution-file-2", default=os.environ.get("CLAUDE_EXECUTION_FILE_2"),
+                    help="the continuation attempt's record, when the window got one")
     ap.add_argument("--since-sha", default=os.environ.get("RUN_START_SHA"))
     ap.add_argument("--by", default="night-run")
     ap.add_argument("--run-id", default=os.environ.get("GITHUB_RUN_ID"))
     ap.add_argument("--started", default=os.environ.get("RUN_STARTED_AT"))
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--probe", action="store_true",
+                    help="judge only: should this window get one more attempt? "
+                         "Writes continue=yes|no to GITHUB_OUTPUT, records nothing.")
     args = ap.parse_args()
 
     result = read_result(args.execution_file)
+    if not args.probe and args.execution_file_2 and args.execution_file_2 != args.execution_file:
+        result = merge_results(result, read_result(args.execution_file_2))
     changed = what_changed(args.since_sha)
     now = datetime.datetime.now(datetime.timezone.utc)
 
@@ -404,12 +486,25 @@ def main():
         except (TypeError, ValueError):
             minutes_basis = "unknown: no duration and no parseable start time"
 
+    if args.probe:
+        # Judge only. This runs BEFORE the record is written, changes nothing on
+        # disk, and releases no claim: the window is not over yet.
+        go, why = probe(result, changed, minutes if minutes_basis == "measured" else None)
+        print(("continue: %s" % ("yes" if go else "no")) + " (%s)" % why)
+        out = os.environ.get("GITHUB_OUTPUT")
+        if out:
+            with open(out, "a") as fh:
+                fh.write("continue=%s\n" % ("yes" if go else "no"))
+                fh.write("reason=%s\n" % why.replace("\n", " ")[:200])
+        return 0
+
     record = {
         "started": started_iso,
         "date": now.strftime("%Y-%m-%d"),
         "run_id": args.run_id,
         "minutes": minutes,
         "minutes_basis": minutes_basis,
+        "attempts": result.get("attempts", 1),
         "turns": result.get("num_turns"),
         "denials": denials,
         "denials_source": denials_source,
