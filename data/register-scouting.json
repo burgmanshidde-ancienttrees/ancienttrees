@@ -369,6 +369,12 @@
    "country": "South Korea",
    "status": "stalled",
    "note": "SCOUTED 2026-08-20 (Seoul #33, no supply, no verdict). The candidate source is real and promising: 국가유산청_문화재 공간 정보 (Cultural Heritage Administration's heritage spatial information API), data.go.kr/data/3070426/openapi.do, free OpenAPI plus file download, ~15,000 designated heritage items nationwide with coordinates and heritage-type classification, which would let a scout filter to Natural Monument (천연기념물) type and then to tree entries the same way the MASAF/regional split works in Italy. Stalled on licence, not existence: the page says usage scope is unrestricted and Korean government open data is required to carry a KOGL (공공누리) type badge, but this pass's tooling (WebFetch, which summarises rather than renders) could not read which KOGL type number is actually attached, and CLAUDE.md requires a proving sentence naming the specific licence before import. Next: a session with real browser rendering reads the badge directly, or checks the OpenAPI response's own metadata envelope for a licence field."
+  },
+  {
+   "place": "Houston",
+   "country": "United States",
+   "status": "blocked",
+   "note": "SCOUTED 2026-08-20 (one of Hidde's 17 named from-zero cities). Texas Big Tree Registry (texasforestinfo.tamu.edu/BigTreeRegistry) has a real, reachable JSON API (POST Home/GetAllTrees with a species name, coordinates included) but Texas A&M Forest Service's own terms restrict use to personal/educational/non-commercial purposes, which disqualifies it for bulk import under the register-layer licence rule. Looped all 352 species for Harris County: only 18 rows, mostly modest ornamentals, one standout 246cm live oak; kept as data/research/houston-texas-big-tree-harris.json (a research file, not a leads file, since nothing here is verified). Ruled usable as a hand-verify lead source only, same treatment as Nevada. Houston needs a normal from-zero research pass; this register is a minor input, not the backbone."
   }
  ],
  "out_of_focus": {
