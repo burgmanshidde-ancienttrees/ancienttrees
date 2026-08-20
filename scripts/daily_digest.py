@@ -12,6 +12,7 @@ import datetime
 import glob
 import json
 import os
+import subprocess
 import sys
 import urllib.error
 import urllib.parse
@@ -975,7 +976,57 @@ def night_shift(today):
     if note:
         out.append("")
         out.append("- " + "; ".join(note) + ".")
+
+    made = night_work(since)
+    if made:
+        out.append("")
+        out.append("**What they made**")
+        out.append("")
+        for line in made:
+            out.append("- " + line)
     return "\n".join(out)
+
+
+def night_work(since):
+    """The night's actual work, as the machine's own commit subjects.
+
+    Hidde, 2026-08-20: "en wat hebben de nachtruns gedaan en kun je dat
+    toevoegen aan de daily digest". The table above already answered how MUCH
+    (minutes, turns, trees, commits) and he still had to ask what they DID,
+    which means the table was answering the wrong question. Counts tell you the
+    windows were used; they do not tell you a city opened.
+
+    Read from git rather than from LOG.md on purpose: three of last night's five
+    runs wrote nothing to LOG.md at all, and a run that gives up is exactly the
+    run that skips its own entry. Its commits are still there.
+
+    Filtered to the machine's own commits and to real work: claims, releases,
+    run-health stubs, log entries and index regenerations are bookkeeping, and
+    listing them would bury the four cities that actually opened.
+    """
+    bot = "claude[bot]"
+    noise = ("Run health", "Claim ", "Release ", "Reclaim ", "LOG:", "Log ",
+             "Regenerate", "Update first-seen", "Daily data digest",
+             "Archive log", "Merge branch", "Push the ")
+    try:
+        out = subprocess.run(
+            ["git", "-C", ROOT, "log", f"--since={since.replace('T', ' ')}:00",
+             "--pretty=%ae\t%s"],
+            capture_output=True, text=True, timeout=60)
+        if out.returncode != 0:
+            return []
+    except Exception:
+        return []
+    lines = []
+    for row in out.stdout.strip().splitlines():
+        if "\t" not in row:
+            continue
+        email, subject = row.split("\t", 1)
+        if bot not in email or subject.startswith(noise):
+            continue
+        lines.append(subject.strip())
+    # Newest first is how git gives them and how LOG.md reads, so keep it.
+    return lines[:14]
 
 
 def fetch_machine(today):
