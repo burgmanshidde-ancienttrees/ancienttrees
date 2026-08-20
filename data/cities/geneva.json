@@ -641,6 +641,99 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "gen_019",
+      "name": "The Himalayan Cedar of Parc Mon Repos",
+      "species": "Himalayan Cedar (Cedrus deodara)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 418,
+      "location": {
+        "address": "Parc Mon Repos, off Avenue de France, Secheron",
+        "latitude": 46.21783547778332,
+        "longitude": 6.150551937978501,
+        "neighbourhood": "Secheron"
+      },
+      "verified_sources": [
+        "SITG cantonal register (Systeme d'Information du Territoire Geneve), layer SIPV arbres remarquables, no_inventaire not recorded on this row (id_arbre 65964, objectid 63923), circumference 418cm, height 28m, crown diameter 23m, vitality Bon, development stage Adulte, observed 2024-06-05, situation 'Parc, square, espace vert'",
+        "Nominatim reverse geocode places the tree 89m from the nominal centre point of Parc Mon-Repos (46.2185365,6.1499995), inside the park rather than on the street grid, corroborating the register's 'park/green space' situation field"
+      ],
+      "access": "Free, park green space open at any time",
+      "transport": "Short walk from Gare Cornavin or the Secheron rail stop",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "SITG register (Geneva canton's own tree cadastre) records this as a single, individually surveyed specimen (own id_arbre/objectid, not a placeholder row), 418cm circumference, 28m tall, 23m crown, vitality Bon, most recently observed 2024-06-05 (recent living evidence). No planting date in the register (planted field null, marked as a placeholder). Girth recorded per house rule for future age derivation; no growth-rate source found this pass that I trust enough to turn it into an age, so age_estimate is left empty rather than guessed. Sits about 80-90m from the already-published gen_012 (The Secheron Plane), which is documented in our own file as standing in 'a park green space off Avenue de France, Secheron' with the same locational uncertainty (which exact green space) already flagged there; this candidate shares that same ambiguity and the same honest answer. Flagged rather than confirmed-sourced because only one source (the register) was found within the time window: searched Ville de Geneve promenade guides, a Tribune de Geneve feature on Geneva's remarkable trees (tdg.ch, too-many-redirects on fetch, could not load), and general web search for 'Parc Mon Repos cedre Himalaya' with no independent tree-specific hit. Location itself is confirmed because the coordinate is the register's own per-tree cadastral point (id_arbre-level), the same standard already used for this city's other SITG-sourced confirmed trees (gen_007 to gen_014). Would join the existing Secheron stop on the walk (gen_012) as a second, different-species tree at essentially the same location; a writer describing both should be careful not to conflate them as one entry, they are two separate specimens roughly 90m apart in the same green space.",
+      "story": "A second giant grows a stone's throw from the Secheron Plane, and this one is a conifer rather than a plane: a Himalayan cedar, native to the high valleys of Kashmir and Nepal, brought to Europe's parks in the nineteenth century as one of the era's fashionable new conifers. Geneva's cantonal register puts it at 4.18 metres round the trunk, 28 metres tall and a crown spanning 23 metres, and rates its health good on a 2024 field visit, the freshest survey of any tree on this list.\n\nLike its neighbour the plane, this cedar's exact park is not pinned down by any source found so far. The coordinates are precise, the green space off Avenue de France is not named with certainty (Secheron, Mon Repos and the Perle du Lac all border the same avenue), and the two trees stand close enough, about ninety metres apart, that a single stop covers both without walking anywhere else. The register carries no planting date, so this cedar's age is simply unknown rather than estimated. What is measured is measured well: a girth that would take three adults to encircle, on a species that can live for centuries in the right conditions. The nearest way in is the same one that reaches the plane, a short walk from Gare Cornavin or the Secheron rail stop.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "gen_020",
+      "name": "The Himalayan Cedar of the Botanical Garden",
+      "species": "Himalayan Cedar (Cedrus deodara)",
+      "age_estimate": "roughly 114 years, planted in 1912",
+      "age_min": 110,
+      "age_max": 118,
+      "girth_cm": 500,
+      "location": {
+        "address": "Conservatoire et Jardin botaniques de Geneve, near the Avenue de la Paix entrance",
+        "latitude": 46.22411950710174,
+        "longitude": 6.147033058016539,
+        "neighbourhood": "Secheron"
+      },
+      "verified_sources": [
+        "SITG cantonal register, layer SIPV arbres remarquables, no_inventaire 19800132I0 (id_arbre 260351, objectid 164974), circumference 500cm, height 34m, crown diameter 25m, vitality Bon, development stage Adulte, planted 1912-01-01 (recorded as a real date, not the register's placeholder-date flag), most recently observed 2025-08-08, situation 'Parc, square, espace vert'",
+        "French Wikipedia, 'Conservatoire et Jardin botaniques de la ville de Geneve': the garden moved to its present Ariana-estate site (this Avenue de la Paix / Secheron location) in 1904 under John Briquet, with the winter garden and grounds built out in 1910-1911, which is the same window the register's 1912 planting date falls in; this corroborates that the register's date is plausible for the garden's known founding-era landscaping, though the Wikipedia article does not name this individual cedar"
+      ],
+      "access": "Free, open garden during opening hours",
+      "transport": "Tram to Nations or the botanical garden stop, then a short walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "This is a second, separate Cedrus deodara inside the botanical garden, about 155m from the already-published gen_007 (The Venerable Oak of the Botanical Garden) and roughly 200m from a very similar third register entry (id_arbre 152313, also Cedrus deodara, also planted 1912, girth 405cm) that was reviewed but not delivered this pass because its evidence is older (last observed 2012) and this one is fresher and slightly larger; the 152313 entry is worth a future look if a second garden cedar is ever wanted instead of this one. The 1912 planting date is recorded in the register as a genuine dated value (planted_is_placeholder_date: false), which is the register's own way of distinguishing real records from filler dates, so I have used it directly rather than deriving from girth. Age given as a broad band (110-118 years) around the 2026-1912=114 year figure rather than a single sharp number. Flagged because the two-source bar is thin: I have the register plus circumstantial historical corroboration that the garden's grounds date from the right era, but no source names this specific cedar. Worth noting for the writer: the garden is a scientific collection, so an accession record or a specimen label naming this tree may exist on-site or in the garden's own database, which a future pass or a reader visit could confirm.",
+      "story": "This cedar's growth and the garden's own site are almost exactly the same age. The Conservatoire et Jardin botaniques moved to its present Avenue de la Paix grounds in 1904 under director John Briquet, with the winter garden and surrounding landscaping built out over the following years; the cantonal register separately dates this Himalayan cedar's planting to 1912, a genuine recorded year rather than a placeholder, squarely inside that same building-out window.\n\nIt has grown into one of the garden's largest specimens: five metres round the trunk, 34 metres tall, a crown spreading 25 metres, most recently surveyed in August 2025 in good health. That makes it roughly a century old, younger than the garden's own oak nearby, which predates the garden itself by close to two centuries, but old enough to have stood through both world wars and the whole of the garden's modern development.\n\nA second, slightly smaller Himalayan cedar from the same 1912 planting stands about two hundred metres away, last surveyed over a decade ago; this is the fresher and larger of the pair. Enter from Avenue de la Paix and the tree stands a short walk from the gate.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "gen_021",
+      "name": "The Atlas Cedar of Parc La Grange",
+      "species": "Atlas Cedar (Cedrus atlantica)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 553,
+      "location": {
+        "address": "Parc La Grange, near Avenue Alice-et-William-Favre, Eaux-Vives",
+        "latitude": 46.20397796303007,
+        "longitude": 6.166093084644993,
+        "neighbourhood": "Eaux-Vives"
+      },
+      "verified_sources": [
+        "SITG cantonal register, layer SIPV arbres remarquables (id_arbre 94697, objectid 56899), circumference 553cm, diameter 176cm, height 29m, trunk height 2m, crown diameter 23m, vitality Bon, development stage Adulte, last observed 2014-01-29, situation 'Parc, square, espace vert'",
+        "Nominatim reverse geocode: 34 Avenue Alice-et-William-Favre, which matches the same street named in the already-published gen_003's own address field ('Parc La Grange, avenue William Favre, near the main house'), confirming the coordinate sits inside Parc La Grange rather than on the adjoining street"
+      ],
+      "access": "Free, open park at any time",
+      "transport": "Bus or tram to Eaux-Vives, then a short walk, roughly 15 minutes from the centre",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Substantial Atlas cedar, 553cm circumference (176cm diameter), 29m tall, vitality Bon, a genuinely large specimen distinct from gen_003 (a Cedar of Lebanon, Cedrus libani, 762cm girth per its own story, elsewhere in the same park near the main house). No planting date in the register. Searched Ville de Geneve's own 'Promenade du Parc la Grange au Parc des Eaux-Vives' educational trail page: it names 21 specific trees on a numbered trail including a Cedar of Lebanon, a hornbeam, a Caucasian wingnut, a Montpellier maple and a Spanish fir, but does not list an Atlas cedar, so this specimen is evidently not one of the trail's stops (or the trail's summary I could fetch did not surface it) and I found no independent source naming this exact tree. Tried monumentaltrees.com's Parc La Grange page for corroboration; it 403s automated fetches (documented site behaviour, hard rule 1 already treats it as verification-only via a human browser session, which this pass does not have), so it could not be checked this pass. The weakest point of this candidate is the observation date: last surveyed 2014-01-29, eleven years old, the oldest 'alive' evidence of the three trees in this delivery. It is still the register's own record of a living, Bon-vitality tree, not a historical mention, but a future pass should look for anything more recent before this is treated as solid. Girth recorded per house rule; no age derived because I have no growth-rate source for Cedrus atlantica in this climate that I trust enough to turn into a figure I'd stand behind, so age_estimate is left empty for the page to ask the reader instead.",
+      "story": "Parc La Grange keeps two enormous cedars from two different mountain ranges. One, near the main house, is a Cedar of Lebanon descended from seed gifted in 1735. The other, over five and a half metres round the trunk, is an Atlas cedar, native not to the Levant but to the Atlas Mountains of Morocco and Algeria, and Geneva's cantonal register rates it in good health with a canopy 23 metres across and a height of 29 metres.\n\nCedar of Lebanon and Atlas cedar look similar enough at a glance, both broad and flat topped with the same grey green needles, that telling them apart takes a second look at the cones rather than a first glance at the silhouette. This one has no documented planting date, and the register's last field visit was in 2014, over a decade old now, the oldest confirmed sighting of any tree on this list. It is still a genuinely large specimen in a park built around genuinely large trees, worth remembering as a second cedar rather than a repeat of the one most visitors are pointed toward. This one stands elsewhere in the same grounds, near Avenue Alice-et-William-Favre, roughly fifteen minutes from the city centre by bus or tram.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

@@ -2719,6 +2719,15 @@
     "note": "session, in-band; access check on the two day-trip candidates the prior commit named (La Grave carob grove Polignano a Mare, Sovereto pine Terlizzi). Neither cleared hard rule 10: the carob grove reads as private agricultural land with no source confirming visibility from the nearby public road, and the Sovereto pine can't be confirmed alive given two independent 2025 reports of fallen century-old trees in that exact area. Recorded both as blocked-with-reasons in data/leads/bari.json so a future pass does not re-search the same question; Bari stays at 3 verified trees below the 4-tree floor.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "geneva",
+    "kind": "verify",
+    "tokens": 85000,
+    "trees": 3,
+    "note": "3 SITG-register cedars added to the existing Mon Repos/Botanical Garden/La Grange walk stops; all single-source flagged, no independent second source found for any of the three within the window",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
