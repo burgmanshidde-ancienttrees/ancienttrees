@@ -1,0 +1,34 @@
+{
+ "city": "Bari",
+ "leads": [],
+ "blocked": [
+  {
+   "name": "Aleppo Pine of Villa Sbisa",
+   "species": "Pinus halepensis Mill. (register); girth 370 cm, height 24 m",
+   "location": {
+    "latitude": 41.111372,
+    "longitude": 16.8814
+   },
+   "sources": [
+    "data/registers/puglia-alberi-monumentali.json (register_id 09/A662/BA/16)",
+    "data/registers/italy-masaf.json (sheet_id 09/A662/BA/16)",
+    "https://www.barinedita.it/reportage/n5182-bari-quell-armoniosa-dimora-circondata-da-un-monumentale-giardino--e-villa-sbisa- (Barinedita reportage)"
+   ],
+   "why_blocked": "Fails hard rule 10 test 1 (public access without permission). Villa Sbisa is a Liberty-era villa on Via Amendola now used by the University of Bari's Department of Soil, Plant and Food Sciences (Di.s.s.a.). Barinedita's own reportage, based on an on-site visit with the professor who manages the property, states plainly the garden is 'not open to the general public', the street gate on Via Amendola is 'permanently locked by a padlock', the villa is 'not visible from the street' and is 'visitable only by accessing the university campus', with access essentially limited to staff and students. No FAI Giornate di Primavera/Autunno listing found for it in searches covering 2025-2026. The pine itself (24 m, declared monumental in 2019) is real and well documented, but the site fails the access test the same way as Rome's San Sisto nursery cluster: reachable only by scheduled/staff access, not by a visitor turning up. Revisit if a scheduled open day (FAI, university open house) is documented."
+  },
+  {
+   "name": "Leccio of Carbonara (Scuola Armando Diaz)",
+   "species": "Quercus ilex L. (Leccio); girth 215 cm, height 12 m",
+   "location": {
+    "latitude": 41.070761,
+    "longitude": 16.872072
+   },
+   "sources": [
+    "data/registers/puglia-alberi-monumentali.json (register_id 05/A662/BA/16)",
+    "data/registers/italy-masaf.json (sheet_id 05/A662/BA/16)",
+    "https://www.barinedita.it/storie-e-interviste/n3098-il-pino-di-carrassi-e-il-leccio-di-carbonara--ecco-i-due-alberi-monumentali-di-bari (Barinedita, 3 Jan 2018)"
+   ],
+   "why_blocked": "Stands in the internal courtyard ('giardino interno') of the Armando Diaz primary school (CD Bari, Carbonara), a working elementary school with children on site during the day. CLAUDE.md's school exception under hard rule 10 requires real evidence of standing public access (a public path through the grounds, a park the school merely borders, a documented weekend opening); searches found only sporadic civic/ecological events at the school ('Tutti uniti per la scuola Diaz', Jan 2025; wall-cleaning volunteer days) rather than any routine open-to-the-public access to the courtyard itself. Barinedita's 2018 piece itself describes access as limited to the school grounds. Does not verify for hard rule 10; a documented standing public-access arrangement (open weekends, a public path) would flip this."
+  }
+ ]
+}

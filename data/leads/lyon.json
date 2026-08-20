@@ -14,7 +14,15 @@
       "locality": "Square Gustave-Auguste Ferrie, angle rue Jacques-Louis Henon et rue Deleuvre, 69004 Lyon",
       "latitude": 45.779871,
       "longitude": 4.825132,
-      "reason": "Single source only (the register). Square Ferrie itself is well documented (Ville de Lyon, ruesdelyon.net, mairie4.lyon.fr) as a public garden on the Croix-Rousse plateau, but nothing found names this specific oak, or the neighbouring cedars/beeches at the same square (register_ids 4215, 4216, 4218, 4219), individually. About 800m from lyo_008 (Parc de la Cerisaie), so worth another look if a second source surfaces; the whole square could also be considered as a compact ensemble candidate (a public square with a labelled cedar/oak/beech grouping) rather than one tree, which would need a fresh judgement call under the collectible-point rule."
+      "reason": "Single source only (the register). Square Ferrie itself is well documented (Ville de Lyon, ruesdelyon.net, mairie4.lyon.fr) as a public garden on the Croix-Rousse plateau, but nothing found names this specific oak, or the neighbouring cedars/beeches at the same square (register_ids 4215, 4216, 4218, 4219), individually. About 800m from lyo_008 (Parc de la Cerisaie), so worth another look if a second source surfaces; the whole square could also be considered as a compact ensemble candidate (a public square with a labelled cedar/oak/beech grouping) rather than one tree, which would need a fresh judgement call under the collectible-point rule. Re-checked 2026-08-20: fetched ruesdelyon.net's own Square Ferrie page directly, it names no individual trees or species at all, only 'une ceinture d'arbres' generically. Still single-sourced, still a lead."
+    },
+    {
+      "register_id": null,
+      "species": "Hop Hornbeam (Ostrya carpinifolia)",
+      "locality": "unnamed site, 2.0 km from centre, register condition note: mature specimen, rare species, notable landscape visibility",
+      "latitude": 45.77158,
+      "longitude": 4.8614,
+      "reason": "Single source only (the Metropole de Lyon register). Searched for a named tree, park or street matching this coordinate plus the species in French and English; results returned only nursery/horticultural pages about the species in general, nothing about this specific specimen or its site. No street address or park name given in the register entry itself, which makes a targeted second-source search hard without first identifying the exact site from the coordinates. Worth revisiting with a reverse-geocode of the coordinate to a street name before searching again."
     }
   ],
   "blocked": [
