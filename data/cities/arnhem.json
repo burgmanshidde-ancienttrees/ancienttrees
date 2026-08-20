@@ -2,8 +2,8 @@
   "city": "Arnhem",
   "country": "Netherlands",
   "status": "needs_curation",
-  "intro": "Arnhem's oldest trees keep watch at doorways: three chestnuts at the gate of a castle, an oak above a slope no drought can dry out, a plane tree beside the village church that watched German soldiers move in and Allied paratroopers fight past without either burning it down. All four survive on the strength of where they happened to stand rather than any special protection, at a castle entrance, a hillside spring, a dike, and the last surviving stretch of the city's old moat. None require a ticket.",
-  "meta_description": "Arnhem's oldest tree is likely a ~370-year-old chestnut trio guarding Kasteel Zijpendaal's gate. Four verified trees, real stories, how to reach each one.",
+  "intro": "Arnhem's oldest trees keep watch at doorways: three chestnuts at the gate of a castle, an oak above a slope no drought can dry out, a plane tree beside the village church that watched German soldiers move in and Allied paratroopers fight past without either burning it down. A tight cluster in Velperplein park, laid out after an 1880 design competition, adds five more within a few steps of the city's 19th-century concert hall. None require a ticket.",
+  "meta_description": "Arnhem's oldest tree is likely a ~370-year-old chestnut trio guarding Kasteel Zijpendaal's gate. Nine verified trees, real stories, how to reach each one.",
   "question_answer": "Arnhem's oldest tree is very likely one of De Poortwachters, three sweet chestnuts planted around 1650 to 1700 at the entrance to Kasteel Zijpendaal, now roughly 350 to 375 years old. Locals have nicknamed the two thickest Hans and Gretel and the leaner third the Witch.",
   "question_meta": "Three 350-year-old chestnuts guarding a castle gate are likely Arnhem's oldest trees. Where to find them, and the city's other three.",
   "question_context": "De Poortwachters, three sweet chestnuts standing together at the entrance to Kasteel Zijpendaal in Gulden Bodem park, are the best-documented candidates for Arnhem's oldest tree, planted somewhere between 1650 and 1700 and now measured at roughly 750, 718 and 472 centimetres around. A local legend credits Karel van Egmond, the last independent Duke of Guelders, with planting them personally; the dates rule that out, since he died in 1538, more than a century before these trees are estimated to have gone in. What the legend gets right is the trees' role: everyone who has visited the castle since has had to walk between them, which is likely how they earned their name. A competing candidate is the Huissensedijk plane tree beside the Bonifatiuskerk in Elden, whose age is less settled: estimates for its planting range from 1725 to 1800, a spread wide enough that on its earliest possible date it could be older than the chestnuts, and on its latest, younger than the poplar. Given that uncertainty, the chestnuts are the safer answer. All three stand in a park bought whole by the municipality in 1899 and open, free, every day.",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Arnhem's ancient trees free to visit?",
-      "a": "Yes, all four are in public parks or beside public streets with free access."
+      "a": "Yes, all nine are in public parks or beside public streets with free access."
     },
     {
       "q": "Which Arnhem tree is the thickest of its kind in the Netherlands?",
@@ -151,6 +151,161 @@
       ],
       "access": "Free, public park, open daily",
       "transport": "City centre, behind Musis Sacrum; about a 10 minute walk from Arnhem Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "arn_005",
+      "name": "The Scarlet Oak of Velperplein",
+      "species": "Scarlet Oak (Quercus coccinea)",
+      "age_estimate": "~120 years",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Velperpleinpark, near the corner with Van Muijwijkstraat, Arnhem",
+        "latitude": 51.983777,
+        "longitude": 5.912916,
+        "neighbourhood": "Markt"
+      },
+      "story": "Nineteen designers entered a public competition in 1880 for what to do with a canal the city had just filled in, and Leonard Springer's plan, entered under the motto Natura, Ars et Technica, beat all of them. The park he built over the old Jansgracht became the Velperplein plantsoen, and this scarlet oak is one of its survivors, a North American species with no obvious business looking so at home in a Dutch civic square. Scarlet oak earns its planting for one trick, a canopy that turns a genuinely deep red most European oaks cannot manage, which is presumably why someone chose it here.\n\nThe municipal monumental tree register dates its planting to somewhere around 1900 to 1910, a generation or two after Springer's own scheme went in rather than part of it, though the register's own file admits an earlier date is possible too. Either way it has stood through the plein's complete rebuilding between 1995 and 2005, when new roads, cycle paths, a bus station and a parking garage entrance were dug in around it. It grows in the park's southeast corner, a few steps from Musis Sacrum's front doors, unfenced and unticketed. If you know its planting date more precisely than the council does, tell us.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1687159)",
+        "https://nl.wikipedia.org/wiki/Leonard_Springer",
+        "https://geo1.arnhem.nl/ruimtelijkeplannen/plannen/NL.IMRO.0202.731-/NL.IMRO.0202.731-0301/t_NL.IMRO.0202.731-0301_5.8.html"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "Velperplein, city centre; about a 15 minute walk from Arnhem Centraal station",
+      "best_time": {
+        "months": [10, 11],
+        "label": "October into November, when the canopy turns a deep, genuine scarlet",
+        "kind": "autumn colour"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "arn_006",
+      "name": "The Weeping Pagoda Tree of Musis Sacrum",
+      "species": "Weeping Japanese Pagoda Tree (Styphnolobium japonicum 'Pendula')",
+      "age_estimate": "~120 years",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Velperplein, in front of Musis Sacrum, Arnhem",
+        "latitude": 51.983258,
+        "longitude": 5.912875,
+        "neighbourhood": "Markt"
+      },
+      "story": "Arnhem's national tree register keeps two grounds for protecting a tree, being old or being rare, and this weeping pagoda tree qualifies on the second alone. Nobody has recorded when it went into the ground; the council's own file says simply unknown. The shape gives away what it is: Styphnolobium japonicum 'Pendula', a grafted, deliberately weeping form of the Japanese pagoda tree, its branches trained to cascade rather than reach, so that in summer the white, faintly honey-scented flowers hang close enough to brush a passer-by's shoulder instead of drifting overhead.\n\nIt stands directly in front of Musis Sacrum, Arnhem's concert hall since 1847, on the roadside edge of the Velperplein rather than tucked into the park behind it, which is presumably why the register lists its setting as street rather than garden. Municipal survey work puts its planting band at 1900 to 1910, two or three generations after the concert hall itself went up. No ticket, no gate: it stands on open pavement outside a building that still hosts Arnhem's own orchestra. Nobody has published an independent account of this specific tree beyond the national register, so treat the date as the council's best estimate rather than a settled fact.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1677471)"
+      ],
+      "access": "Free, public pavement, viewable anytime",
+      "transport": "Velperplein, city centre; about a 15 minute walk from Arnhem Centraal station",
+      "best_time": {
+        "months": [7],
+        "label": "July, when its weeping branches hang thick with honey-scented white flowers",
+        "kind": "flowers"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "arn_007",
+      "name": "The Oriental Plane of Velperplein",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "~120 years",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Velperplein, near the corner with Muijlwijkstraat, Arnhem",
+        "latitude": 51.983843,
+        "longitude": 5.912836,
+        "neighbourhood": "Markt"
+      },
+      "story": "Arnhem already has one Oriental plane with a claim to national fame, a giant beside a village church in Elden with a trunk over seven metres round. This is a second, smaller one, growing in the Velperplein park in the city centre, and its interest is where it grows rather than its size. Oriental plane is not the hybrid London plane that lines half of Europe's boulevards; it is the older, straight species, native from the Balkans to Iran, and this one has spent well over a century on a small, endlessly rebuilt city island rather than open ground.\n\nThe monumental tree register puts its planting around 1900 to 1910 and links it, cautiously, to Leonard Springer's prize-winning 1880 design for the park, built over a filled-in canal after the city ran a public competition for the site; the register's own dating and that 1880 connection do not quite line up, so the link is a guess rather than a documented fact, and it is told here as one. What is not in doubt is that the tree has outlasted the square around it twice, once when the park went in and again when the whole plein was rebuilt for new roads, cycle paths and a bus station between 1995 and 2005. It stands in the open, free to walk up to any day of the year.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1687155)",
+        "https://nl.wikipedia.org/wiki/Leonard_Springer",
+        "https://geo1.arnhem.nl/ruimtelijkeplannen/plannen/NL.IMRO.0202.731-/NL.IMRO.0202.731-0301/t_NL.IMRO.0202.731-0301_5.8.html"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "Velperplein, city centre; about a 15 minute walk from Arnhem Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "arn_008",
+      "name": "The Black Walnut of Velperplein",
+      "species": "Black Walnut (Juglans nigra)",
+      "age_estimate": "~120 years",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Velperplein, green strip northwest of Musis Sacrum, Arnhem",
+        "latitude": 51.983651,
+        "longitude": 5.912375,
+        "neighbourhood": "Markt"
+      },
+      "story": "Every few years since 2006, whoever surveys Arnhem's monumental trees has come back to this black walnut and written down bad news: a conspicuous wound low on the trunk, a crown that had visibly thinned since the 1990s, deadwood spotted in 2014. In 2024 the surveyor found something new growing in the trunk cavity, a resin-varnish fungus, though likely a young colony rather than an advanced infection. And yet the same notes say that in recent years the tree has stood full and healthy in leaf, which reads either as a genuine recovery or as a walnut simply refusing to follow its own file.\n\nIt grows in the strip of park on the northwest side of Velperplein, planted, the city's register guesses, around the same time as Leonard Springer's 1880 design for the square, though the tree's own dated band puts it a generation later, 1900 to 1910. Black walnut is an American import, grown here for its wood and its nuts rather than any native pedigree, and this one has outlived the plein's late 1990s and early 2000s rebuild, the new roads, cycle paths, bus station and a parking garage tunnel dug in around it. It still stands, free to see, on a corner of green between a 19th-century concert hall and a theatre.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1687157)"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "Velperplein, city centre; about a 15 minute walk from Arnhem Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "arn_009",
+      "name": "The Sessile Oak of Musispark",
+      "species": "Sessile Oak (Quercus petraea)",
+      "age_estimate": "~130 years",
+      "age_min": 126,
+      "age_max": 136,
+      "location": {
+        "address": "Musispark (also called Lauwersgrachtpark), along Eusebiusbuitensingel near Parkstraat, Arnhem",
+        "latitude": 51.980552,
+        "longitude": 5.915432,
+        "neighbourhood": "Markt"
+      },
+      "story": "Sonsbeek Park's oaks get most of Arnhem's attention, but a fifteen minute walk closer to the station, in the smaller Musispark behind Musis Sacrum, a sessile oak has been standing since roughly the 1890s with nobody much noticing. The monumental tree register ties its planting to a renovation of the singel plantsoenen, Arnhem's ring of canal-side parks, carried out to Leonard Springer's design around 1890, a decade after his prize-winning Velperplein scheme across the water.\n\nSessile oak differs from the pedunculate oak that fills most of the Netherlands by carrying its acorns on short stalks pressed close to the twig rather than dangling on long stems, worth checking if you want to be sure which species you are standing under. This one grows about 65 metres from a Canadian poplar the national register lists as the oldest of its kind in the country, so a single stop in this park puts two record-adjacent trees within sight of each other. Both are free to reach, along Eusebiusbuitensingel near the start of Parkstraat, no gate and no ticket. The register is the only source that has written this tree down; a Gelderlander photograph or an older map naming a firmer planting date would be welcome.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1695405)",
+        "https://nl.wikipedia.org/wiki/Leonard_Springer"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "Musispark, city centre; about a 15 minute walk from Arnhem Centraal station",
       "photo": {
         "url": null,
         "license": null,
