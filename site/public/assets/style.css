@@ -857,7 +857,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .suggest-form input:focus, .suggest-form select:focus, .suggest-form textarea:focus { outline: 2px solid var(--moss); outline-offset: 1px; }
 .suggest-form .go-btn { align-self: flex-start; cursor: pointer; border: none; font-family: inherit; }
 .sg-note { font-size: 13px; color: var(--ink-mid); min-height: 1em; }
-.report-btn { display: inline-block; margin: 4px 6px 0 0; padding: 5px 12px; border: 1px solid var(--cream-dark); border-radius: 999px; font-size: 12.5px; color: var(--ink-mid); text-decoration: none; }
+.report-btn { display: inline-flex; align-items: center; min-height: 44px; box-sizing: border-box; margin: 4px 6px 0 0; padding: 5px 12px; border: 1px solid var(--cream-dark); border-radius: 999px; font-size: 12.5px; color: var(--ink-mid); text-decoration: none; }
 .report-btn:hover { border-color: var(--moss); color: var(--moss); }
 .subtle-suggest { font-size: 13px; color: var(--ink-light); }
 .subtle-suggest a { color: var(--moss); }
