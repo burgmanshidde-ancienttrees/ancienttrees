@@ -29,6 +29,17 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 Fixed a real stale-count bug caught by preflight.py in both Groningen and Utrecht: meta_description, question_meta and one FAQ answer still promised the pre-deepen tree count.
 
 Build, preflight and QA all clean after every merge. Costs logged to data/agent-costs.json.
+## 2026-08-20 (session, evening) - The app is rebuilt on the five-slot bar, and it stands on white
+
+Hidde's verdict on the first app build ("conceptueel gaat het niet goed", the features "moeten verder worden uitgedacht") became a decided structure (DECISIONS.md, top entry) and this rebuild, executed against docs/superpowers/plans/2026-08-20-app-five-slot-rebuild.md:
+
+- **The bar**: Explore, Saved, Spot (a centre BUTTON presenting a sheet, the Strava/Untappd pattern), Collect, Profile. Home and the map became two faces of Explore behind AllTrails' floating pill; the separate Map tab is gone.
+- **Nothing opens empty**, his explicit requirement for the middle three: Saved's day zero is suggestions with live hearts (Editorial.suggestions, photo-first, nearest-first, unit-tested), Collect's day zero is a mission naming one real tree with one green action, and Spot always shows both outcomes (tick what we map within 400 m; add what we miss, through the site's own submissions channel, kind "tree", GPS riding along).
+- **Two of his corrections landed where they act**: the ground is WHITE and the muted surfaces neutral (Style.swift records his words; no app stands on cream) and the bar wears conventional glyphs (magnifier, heart, plus-circle, rosette, person) instead of invented ones.
+- **The findings list he confirmed is worked through**: no literal tab-label headings, the tree page's name renders once, the tab bar hides on pushed pages, one search prompt everywhere, and `scripts/appcopy.py` now greps the app's string literals for em dashes, banned words, builder-speak and forever-promises the way qa.py guards the site (it caught the "licence we can use" hero line; that copy is now "No photograph of this tree yet.").
+- **Coordination**: two other sessions were live in this checkout tonight; work was split by file over cross-session messages, their hit-target and image-width fixes landed separately (abc7937, 0e90238), no collisions.
+
+Not built, deliberately: walk Begin-mode (next plan), photo capture in Spot (needs Hidde's storage yes), walk/place hearts in Saved (schema change). Launch args for screenshots: -map, -spot, tabs renumbered 0/1/3/4.
 
 ## 2026-08-20 (session) - The two DRIFT findings left on /cities are the check misreading itself, not the page
 
