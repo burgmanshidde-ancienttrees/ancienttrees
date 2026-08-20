@@ -1,407 +1,407 @@
 {
-  "note": "The scouting ledger: what is known about the register behind each place, so a scout starts from the queue's top and not from whatever is interesting. Written 2026-08-16 after a round drifted into Estonia and Lithuania (#65 and #22) while Toronto, Montreal and Sydney (#8, #10, #14) sat untouched, because the scouting order was coming from the data instead of from the queue. Read by scripts/scout_next.py. Detail and proving sentences live in OPEN_DATA_SURVEY.md; this file is the index, one line each.",
-  "status_values": {
-    "imported": "a register file exists in data/registers/",
-    "blocked": "found, and unusable for a stated reason (licence, non-commercial, withheld locations). Do not re-scout without a new angle.",
-    "stalled": "found, reachable, and something specific is in the way. The note says what to try next.",
-    "empty": "scouted properly and there is no semantically filtered register. Cheap sources other than a register are the route here.",
-    "unscouted": "never actually checked. Being named in a previous pass's 'not reached' list counts as unscouted."
+ "note": "The scouting ledger: what is known about the register behind each place, so a scout starts from the queue's top and not from whatever is interesting. Written 2026-08-16 after a round drifted into Estonia and Lithuania (#65 and #22) while Toronto, Montreal and Sydney (#8, #10, #14) sat untouched, because the scouting order was coming from the data instead of from the queue. Read by scripts/scout_next.py. Detail and proving sentences live in OPEN_DATA_SURVEY.md; this file is the index, one line each.",
+ "status_values": {
+  "imported": "a register file exists in data/registers/",
+  "blocked": "found, and unusable for a stated reason (licence, non-commercial, withheld locations). Do not re-scout without a new angle.",
+  "stalled": "found, reachable, and something specific is in the way. The note says what to try next.",
+  "empty": "scouted properly and there is no semantically filtered register. Cheap sources other than a register are the route here.",
+  "unscouted": "never actually checked. Being named in a previous pass's 'not reached' list counts as unscouted."
+ },
+ "places": [
+  {
+   "place": "Toronto",
+   "country": "Canada",
+   "status": "stalled",
+   "note": "SCOUTED 2026-08-16. The city's own open data has only the street-tree inventory, which the semantic filter forbids. The real source is the Ontario Heritage Tree Program (Forests Canada / Ontario Urban Forest Council), an ArcGIS FeatureServer behind their StoryMap: 112 trees province-wide with species, an age estimate and a Public/Private flag, 38 within 30 km of Toronto. Its ArcGIS item carries an empty licenseInfo, so it is saved as data/leads/toronto.json (27 public leads, 11 excluded as private land) rather than imported. Next: licence ask to Forests Canada in the next outreach batch."
   },
-  "places": [
-    {
-      "place": "Toronto",
-      "country": "Canada",
-      "status": "stalled",
-      "note": "SCOUTED 2026-08-16. The city's own open data has only the street-tree inventory, which the semantic filter forbids. The real source is the Ontario Heritage Tree Program (Forests Canada / Ontario Urban Forest Council), an ArcGIS FeatureServer behind their StoryMap: 112 trees province-wide with species, an age estimate and a Public/Private flag, 38 within 30 km of Toronto. Its ArcGIS item carries an empty licenseInfo, so it is saved as data/leads/toronto.json (27 public leads, 11 excluded as private land) rather than imported. Next: licence ask to Forests Canada in the next outreach batch."
-    },
-    {
-      "place": "Montreal",
-      "country": "Canada",
-      "status": "blocked",
-      "note": "SCOUTED 2026-08-16. Montreal has a real curated register and it is not on the open-data portal: montroyal.montreal.ca/inventaires, the City's own Site officiel du Mont-Royal, carries 63 individual arbre-remarquable pages, each with per-tree coordinates, the property owner, a planting period, species notes and a written statement of dendrological and cultural interest. Quality is comparable to Sydney's. BLOCKED: montroyal.montreal.ca/credits states '(c) Tous droits reserves, Ville de Montreal', with no reuse terms anywhere on the site. Deliberately NOT scraped, unlike Toronto: Toronto's was an open API with no stated licence, this is website content with an explicit all-rights-reserved notice, and copying the compilation is not the same act as querying an open endpoint. donnees.montreal.ca carries only the full public-tree inventory, which the semantic filter forbids. Next: licence ask to the Bureau du Mont-Royal."
-    },
-    {
-      "place": "Sydney",
-      "country": "Australia",
-      "status": "blocked",
-      "note": "SOLVED the endpoint 2026-08-16 and blocked on licence. City of Sydney Register of Significant Trees, 2,504 entries, ArcGIS FeatureServer services1.arcgis.com/cNVyNtjGVZybOQWZ/ArcGIS/rest/services/Register_of_Significant_Trees_view/FeatureServer/0, open and queryable. It is the richest register found anywhere: species, common name, height, spread, year_of_planting, statement_of_significance, address, owner, and two fields the corpus says registers never have, condition (coded, including Dead) and accessibilility (Public access / Visible from street / No public access). BUT the AGOL item carries an empty licenseInfo, the dataset is not on the CC BY 4.0 data hub, and cityofsydney.nsw.gov.au's own terms say content must not be reproduced without written authorisation. Not imported, and the refusal is now explicit rather than merely absent: the register sweep found the City's own sibling layers 'RST Existing view' and 'RST Future nomination view', both carrying licenseInfo 'For public viewing only inside of City of Sydney Significant Tree Register. Not for individual re-use.' So this is a stated no, not an oversight, and the licence ask sent 2026-08-16 is the only route. Next: a licence request to the City, which is Hidde's to send."
-    },
-    {
-      "place": "Perth",
-      "country": "Australia",
-      "status": "stalled",
-      "note": "SCOUTED 2026-08-16. The city's own open data has only 'Trees in the City', a public-tree inventory the semantic filter forbids. The real source is the National Trust of Western Australia's Significant Tree Register, published as a PDF (nationaltrustwa.com.au/wp-content/uploads/2025/02/National-Trust-Significant-Tree-Register-November-2024.pdf, readable, 64 entries parsed): code, common name, a count, and a street address. 24 entries are Perth metro, including the Fremantle Proclamation Tree. Several are avenues or groups (one of 73, one of 38) that fail the collectible-point test. NO coordinates, so every entry needs geocoding, and NO licence is stated; the National Trust WA is a charity, so this is a permission ask like the others. inHerit, the state heritage database, also carries 'Significant Trees' records but is explicitly All Rights Reserved and its entries are vague groupings including back-yard trees."
-    },
-    {
-      "place": "Adelaide",
-      "country": "Australia",
-      "status": "stalled",
-      "note": "Significant Tree is a state Development Act designation administered per council (Adelaide, Burnside, Prospect, Unley), so it is several lists rather than one fetch. Next: check whether SA's planning portal publishes a consolidated overlay."
-    },
-    {
-      "place": "Vancouver",
-      "country": "Canada",
-      "status": "unscouted",
-      "note": "Named but not reached, 2026-08-13."
-    },
-    {
-      "place": "Los Angeles",
-      "country": "United States",
-      "status": "empty",
-      "note": "SCOUTED 2026-08-16, and the verdict is that there is nothing of our kind to find. LA's 'protected tree' status is a SPECIES RULE, not a register: LAMC 46.00 protects any indigenous oak, western sycamore, laurel bay, southern black walnut, Mexican elderberry or toyon over 4 inches DBH. That is a rule about a category, so it names no individual tree and cannot be filtered into a candidate list. 'Heritage trees' designated by council resolution exist in the ordinance's wording but no published register of them was found. Wikidata holds 3 within 15 km. Route here is not a register at all: named individual trees via local sources, or nothing."
-    },
-    {
-      "place": "Estonia",
-      "country": "Estonia",
-      "status": "imported",
-      "note": "EELIS kr_yksikobjektid, 555 trees, CC BY 4.0. Covers Tallinn (#65) with 56 within 15 km."
-    },
-    {
-      "place": "Lithuania",
-      "country": "Lithuania",
-      "status": "imported",
-      "note": "STVK gamtos paveldo objektai off the map's public vector tiles; commercial reuse permitted per data.gov.lt. Covers Vilnius (#22)."
-    },
-    {
-      "place": "Steiermark",
-      "country": "Austria",
-      "status": "imported",
-      "note": "SOLVED 2026-08-16 by scripts/eu_register_sweep.py, after a morning of guessing Austrian hostnames got nowhere. data.gv.at has replaced its CKAN API with a JavaScript app, but data.europa.eu aggregates the same DCAT records and states the licence outright: 'Naturdenkmale Graz' (stadt-graz_naturdenkmale, Stadt Graz Stadtvermessungsamt) is CC BY 4.0 with an ArcGIS query endpoint at geodaten.graz.at, and Land Steiermark publishes its own Naturdenkmale.zip shapefile under the same licence. Graz imported: data/registers/graz-naturdenkmale.json, 90 entries, 36 public. The EU sweep also shows CC BY natural-monument datasets for Salzburg, Tyrol, Lower Austria, Upper Austria, Burgenland, Vorarlberg and Vienna, so the rest of Austria is now a fetch rather than a hunt.",
-      "covers": [
-        "Graz"
-      ]
-    },
-    {
-      "place": "Sweden",
-      "country": "Sweden",
-      "status": "stalled",
-      "note": "Naturvaardsverket naturvaardsregistret covers naturminne and advertises WMS/WFS/REST, but the geoserver answers 'Service WFS is disabled'. Next: the REST route, untried."
-    },
-    {
-      "place": "Saxony",
-      "country": "Germany",
-      "status": "empty",
-      "note": "State FND layer is areal-only (2026-08-13). But volunteers have mapped 936 trees under 'natural monument in Saxony' on Wikidata, which is why Dresden (#68) shows 209 within 15 km. Route here is the Wikidata layer, not the state.",
-      "covers": [
-        "Dresden",
-        "Leipzig"
-      ]
-    },
-    {
-      "place": "Hessen",
-      "country": "Germany",
-      "status": "empty",
-      "note": "No ND feature type in the open Schutzgebiete WFS (2026-08-13). 790 trees on Wikidata under 'Single natural monument in Hesse'; Frankfurt (#16) shows 55 within 15 km.",
-      "covers": [
-        "Frankfurt"
-      ]
-    },
-    {
-      "place": "Baden-Wuerttemberg",
-      "country": "Germany",
-      "status": "blocked",
-      "note": "Non-commercial-equivalent licence (2026-08-13). Covers Stuttgart, Heidelberg, Freiburg. Do not re-scout.",
-      "covers": [
-        "Stuttgart",
-        "Heidelberg",
-        "Freiburg"
-      ]
-    },
-    {
-      "place": "Catalonia",
-      "country": "Spain",
-      "status": "blocked",
-      "note": "Licence, unchanged since the first sweep.",
-      "covers": [
-        "Barcelona",
-        "Girona",
-        "Tarragona"
-      ]
-    },
-    {
-      "place": "United Kingdom",
-      "country": "United Kingdom",
-      "status": "blocked",
-      "note": "Ancient Tree Inventory disqualified as an import on licence, 2026-08-06; permission path open and it is Hidde's to ask. The London gate stands."
-    },
-    {
-      "place": "Nordrhein-Westfalen",
-      "country": "Germany",
-      "status": "empty",
-      "covers": [
-        "Cologne"
-      ],
-      "note": "No ND feature type in the open Schutzgebiete WFS (2026-08-13). CHECKED AND CORRECTED 2026-08-20: this line used to end 'Wikidata is the route for Cologne, not the state', and that is not true. Measured against data/research/wikidata-remarkable-trees.json (4,704 German trees, all with coordinates): ZERO within 10 km of Cologne, one within 25 km (the Boxhohn-Eiche at Troisdorf, 17.3 km), ten within 40 km. Cologne itself has nothing on Wikidata. So Wikidata is a route for the Rhineland at day-trip range and not a route for the city, and a run that opens Cologne from this note will spend its window discovering that. Cologne needs a municipal source (the city's own Naturdenkmal list or Baumkataster) or the from-zero research Hidde switched on for it on 2026-08-19."
-    },
-    {
-      "place": "Japan",
-      "country": "Japan",
-      "status": "imported",
-      "covers": [
-        "Hiroshima",
-        "Sapporo",
-        "Kobe",
-        "Nagoya",
-        "Kamakura",
-        "Nikko",
-        "Nara"
-      ],
-      "note": "SOLVED 2026-08-16, scripts/jp_kyoju.py. Three things had to be found and none is guessable: pagination is _command=changepage with a ZERO-BASED page number (js/pager.js), the CSRF token ROTATES on every response so each request must carry the previous page's token, and place_filter=3 is a fake radius search that returns the national total of 76,368 whatever marker you give it. All three fail silently with HTTP 200 and a re-rendered empty form, so a crawler that misses any of them reads one page of a thousand-record prefecture and reports success. Only place_filter=1 with prefecture_code filters. The licence caveat is solved by a FIELD rather than judgement: every row carries ユーザ, and the ministry's own 1988/2000 survey records read 'Admin', so citizen submissions (whose copyright stays with the poster, outside PDL 1.0) are excluded mechanically. CORRECTION to the 2026-08-04 entry, which said the database gives 'girth, height, species, and location': there are NO COORDINATES. Location is prefecture, municipality and an address line, and the schema carries a position-disclosure field with a reason-for-withholding beside it, which is hard rule 10 written into the source. So it is a lead source, not a map layer, and pinning is a separate job. Hiroshima done: data/leads/hiroshima.json, 102 ministry records, with girth, species and a vitality field (67 good, 24 partly dead, 4 near death). Remaining prefectures are one command each: 1 Hokkaido/Sapporo, 23 Aichi/Nagoya, 28 Hyogo/Kobe, 14 Kanagawa/Kamakura."
-    },
-    {
-      "place": "Sintra",
-      "country": "",
-      "status": "imported",
-      "note": "Portugal ICNF (arvoredo de interesse publico) is imported nationally and covers Sintra. Not a scouting gap, a ledger gap: the tool read it as unscouted because nobody had written the line."
-    },
-    {
-      "place": "Cadiz",
-      "country": "",
-      "status": "imported",
-      "note": "Andalucia REDIAM is imported and covers Cadiz. Ledger gap rather than a scouting gap. Cadiz ships 5 trees and is a finished compact city per CLAUDE.md, so the gap-to-10 is not a target."
-    },
-    {
-      "place": "Bari",
-      "country": "",
-      "status": "imported",
-      "note": "SOLVED 2026-08-16. Puglia's REGIONAL list, dati.puglia.it CKAN 'elenco-degli-alberi-monumentali-della-regione-puglia', CC BY 4.0, 180 trees with per-tree GIS coordinates, girth, height and an urban-context flag. Richer than the MASAF national file already held, which carries no age and no vitality. 5 trees within 15 km of Bari and 30 within 30 km. Imported to data/registers/puglia-alberi-monumentali.json; cross-check against italy-masaf.json before publishing so a tree is not entered twice. THE GENERAL LESSON, already recorded for Campania and Lazio and confirmed again: in Italy the region beats the national file."
-    },
-    {
-      "place": "Lyon",
-      "country": "",
-      "status": "imported",
-      "note": "SOLVED 2026-08-16. Metropole de Lyon publishes its PLU-H ponctual prescription layer for arbres remarquables on data.grandlyon.com under Licence Ouverte: 429 trees, 397 within 15 km of the centre, with species, a location description and a free-prose phytosanitary condition field. Imported. Caveat: it is a PLANNING layer, so a row can be a small stand rather than one trunk ('deux arbres' appears in the condition text), and both fields need reading before a row is treated as one collectible point."
-    },
-    {
-      "place": "Bratislava",
-      "country": "",
-      "status": "imported",
-      "note": "SOLVED 2026-08-16. Slovakia's state register of chranene stromy, SOPSR geoserver WFS, CC BY 4.0: 1,199 designations nationally of which 320 are single trees, 31 within 15 km of Bratislava (23 singles). Every entry links to its own state-register page at data.sopsr.sk, which is a ready second source. Pocet_stromov says how many trees a designation covers, so anything above 1 is a group."
-    },
-    {
-      "place": "The Hague",
-      "country": "",
-      "status": "stalled",
-      "note": "Scouted 2026-08-16. The city's open-data portal (den-haag-opendata.opendatasoft.com) carries only the full tree inventory, which the semantic filter forbids; a search of it for boom/bomen returns mooring posts, benches and the hoofdboomstructuur, no monumental list. The monumental-trees list DOES exist and was adopted by the council on 2026-03-31, but it lives in raadsstukken and on the Haagse Bomenkaart viewer rather than as a dataset. Next: read the Bomenkaart viewer's network calls the way stvk.lt was solved. Note Bomenstichting Den Haag was mailed on 2026-08-16 in another batch."
-    },
-    {
-      "place": "Seattle",
-      "country": "",
-      "status": "empty",
-      "note": "Scouted 2026-08-16. 'SPR Tree View' is the Parks department's full tree inventory, forbidden by the semantic filter, and the 'Heritage_Trees_Map' hit belongs to Normandy Park, a separate suburb 25 km south. Seattle's own Heritage Tree Program is run with PlantAmnesty and publishes no open dataset found this pass. Route here is not a register."
-    },
-    {
-      "place": "Bilbao",
-      "country": "",
-      "status": "blocked",
-      "note": "Euskadi's singular trees exist legally (Decreto 265/1995) but survive only inside a 1:25,000 protected-areas polygon set whose metadata says otherRestrictions and whose download 404s, per the 2026-08-04 Spanish scout. Unchanged. Not a register we can use."
-    },
-    {
-      "place": "Hamburg",
-      "country": "",
-      "status": "empty",
-      "note": "Hamburg's Naturdenkmale register is imported and is tiny: 12 entries state-wide, 2 usable, none with coordinates (2026-08-13). The 'Tree Register Hamburg' item found in the ArcGIS sweep resolves to transparenz.hamburg.de's full Strassenbaumkataster, which the semantic filter forbids. Route here is Wikidata or a non-register source."
-    },
-    {
-      "place": "Jerusalem",
-      "country": "",
-      "status": "stalled",
-      "note": "Probed 2026-08-16 and not resolved. No heritage-tree dataset surfaced on data.gov.il in an English-language search, and the KKL-JNF material is editorial rather than a register. Israel does declare natural monuments through the Nature and Parks Authority, which is the specific thing to check next, in Hebrew, rather than searching for 'heritage trees'."
-    },
-    {
-      "place": "Dubrovnik",
-      "country": "",
-      "status": "stalled",
-      "note": "Croatia returns ZERO datasets in the data.europa.eu sweep for every remarkable-tree phrase tried. Croatia does designate 'spomenik prirode' including individual trees through the Ministry of Environment's nature-protection register, which is the thing to check next; it was not reached this pass."
-    },
-    {
-      "place": "Mexico City",
-      "country": "Mexico City",
-      "status": "stalled",
-      "note": "SCOUTED 2026-08-16. SEDEMA runs a real Arboles Patrimoniales programme with a public map; the GeoJSON behind it is at proyectos.sedema.cdmx.gob.mx/arbolespatrimoniales/Data/, reachable and open, 13 declared trees across 5 boroughs with species, full address, girth, DBH, crown, a condition field and coordinates. Ten are ahuehuetes including a 1,005 cm giant at Tacuba and a 1,382 cm one at Santa Catarina. Saved as data/leads/mexico-city.json rather than a register because NO LICENCE is stated anywhere on the programme site. UNIT TRAP: the height and crown columns are labelled metres and hold centimetres. The programme takes nominations, so it grows. Next: a licence ask to SEDEMA."
-    },
-    {
-      "place": "Chiang Mai",
-      "country": "Chiang Mai",
-      "status": "empty",
-      "note": "SCOUTED 2026-08-16. Thailand has no government register of individual heritage trees that this pass could find. What exists is not a substitute: Changthong Heritage Park is a private paid-entry collection of trees TRANSPLANTED from elsewhere, which fails the premise of standing where a tree has stood for centuries, and the tree-ordination sites (Saraphi road rubber trees) are a cultural practice rather than a list. Route here is not a register."
-    },
-    {
-      "place": "Dubai",
-      "country": "Dubai",
-      "status": "empty",
-      "note": "Not scouted in depth and recorded as empty on reasoning rather than a search, which is the honest label: the UAE has no ancient-tree tradition of the kind this project maps, Dubai's tree stock is almost entirely modern irrigated planting, and the queue's own demand figure is travel demand rather than tree demand. If anything exists it is the Al Ain oases (UNESCO, date palms) which are a different country-level story and not Dubai."
-    },
-    {
-      "place": "Israel",
-      "country": "Israel",
-      "status": "blocked",
-      "note": "OUT OF FOCUS (Hidde, 2026-08-16). Two probes found no heritage-tree dataset on data.gov.il; the declared natural-monument decree list was the one thing left unchecked and is not worth checking while Israel is out of scope. Kept as a record so nobody re-opens it by accident."
-    },
-    {
-      "place": "Sicily (Palermo, Catania, Messina)",
-      "country": "Italy",
-      "status": "exhausted",
-      "note": "SCOUTED 2026-08-17, and the answer is a negative worth keeping. The Regione Siciliana DOES publish its own Elenco degli Alberi Monumentali di Sicilia (updated 17.07.2026, on regione.sicilia.it), covering the whole island including Catania and Messina, so it looks at first like the regional unlock that Campania and Lazio turned out to be. It is not. It is the SAME underlying dataset as the national MASAF register: same sheet ids, same decree D.M. n. 5450 del 19/12/2017, identical girth and height figures, republished with one field added, the criteri di monumentalita saying why each tree was designated, plus a yes/no on proposal for notevole interesse pubblico. NO age field and NO vitality field, which are the two things a page needs most and the two things Campania's per-tree cards and Lazio's xlsx actually provide. It also does NOT count as a second independent source on top of MASAF, because it is the same data. Do not re-scout this: for Sicilian cities, age and vitality still have to come from a garden's own records, a university page or the local press, one tree at a time."
-    },
-    {
-      "place": "Tenerife",
-      "country": "",
-      "status": "stalled",
-      "note": "SCOUTED 2026-08-17 (island scout, Atlantic group). Authority: Cabildo de Tenerife (island-wide portal, 12 trees, JS-rendered, licence not yet checked) PLUS a genuine new find: Ayuntamiento de Santa Cruz de Tenerife open data portal, dataset 'arboles-singulares'. URL: https://www.santacruzdetenerife.es/opendata/dataset/7850581f-371b-4307-a635-3a8c2802a964/resource/4e82859e-052c-4de2-a70a-abff7be9e297/download/arboles_singulares.json (also .csv, .xls, .kml siblings); Cabildo portal: custodiadelterritorio-style JS site, url not re-fetched this pass, see BRIEF's own Tenerife note. Licence: CC BY, proven: the dataset page (https://www.santacruzdetenerife.es/opendata/dataset/arboles-singulares) links http://www.opendefinition.org/licenses/cc-by under class='...license'. This is a genuine open-data licence, verified by fetching the dataset page directly (HTTP 200).. Fields: NOM_COMUN, GENERO, ESPECIE, FAMILIA, ORIGEN, GEOCODIGO, coordinates (GeoJSON Point, WGS84, tree-level), UTM_X/UTM_Y. No age field, no girth field, no vitality field, no access field. ENLACE field for a per-tree detail page says 'coming soon, in process' for every entry checked, so no richer per-tree page exists yet.. Count: 63 designated singular trees, all within the municipality of Santa Cruz de Tenerife (the island's capital, not the whole island). This is IN ADDITION to the Cabildo's island-wide 12, which the existing Tenerife page (4 trees) already draws from.. This is a genuine new register the existing OPEN_DATA_SURVEY.md and passcheck do not know about: a municipal 'arboles singulares' open-data catalogue for the capital, semantically filtered (designated singular trees, not a bulk street-tree inventory) and CC BY licensed, confirmed by fetching the licence page directly rather than trusting a search summary. What is missing before it can ship as a register file: age, girth and vitality are all absent, so every candidate still needs the normal two-source verify pass and a species/age lookup elsewhere (iNaturalist, the future 'ficha' pages once published, or WebSearch per tree). Species names in this file are Spanish common names and Latin binomials split across GENERO+ESPECIE (needs joining, e.g. 'Acacia' + 'nilotica'). Next step for a build pass: python3-import this JSON into data/registers/tenerife-santacruz-arboles-singulares.json with a licence block, then cluster_register.py it against the existing 4 Tenerife trees to see what's walkable from the capital. The Cabildo's separate island-wide 12-tree JS portal (source of the existing Drago Milenario / Vilaflor pines entries) was not re-scouted this pass since the brief already established it as a lead list without a proven licence; treat it as unscouted-for-licence rather than re-verified."
-    },
-    {
-      "place": "Gran Canaria",
-      "country": "",
-      "status": "stalled",
-      "note": "SCOUTED 2026-08-17 (island scout, Atlantic group). Authority: Cabildo de Gran Canaria, Catalogo Insular de Arboles Singulares (Decreto 15 November 2021), plus a separate municipal catalogue for the capital: Ayuntamiento de Las Palmas de Gran Canaria. URL: https://custodiadelterritorio.grancanaria.com/en/arboles-singulares (insular, per-tree 'ficha' pages on a Liferay CMS); https://lpgcsostenible.laspalmasgc.es/wp-content/uploads/2025/02/Catalogo_arboles_LPGC.pdf (municipal, 326 specimens across 181 fichas). Licence: NOT PROVEN for either source. The insular custodiadelterritorio.grancanaria.com page fetched clean (HTTP 200, 320KB) but is a per-tree CMS page with no licence statement found in the fetched HTML head or footer. The municipal PDF sits on lpgcsostenible.laspalmasgc.es, whose /aviso-legal returned a 301 redirect this pass did not follow (time-boxed); no licence sentence quotable yet from either. Until one is fetched and quoted, both stay ungated for import despite good data.. Fields: Insular catalogue (per news coverage, not yet fetched from a per-tree ficha this pass): age (explicitly, up to 400 years for the oldest, e.g. the acebuche of Llano Parra and the sabina of Tirma), a visitability/access flag (11 of the insular 77-85 are recorded as not accessible to visitors, which is exactly the field hard rule 10 needs), species, dimensions. Municipal PDF: not opened this pass, format and fields unconfirmed beyond '326 specimens, 181 fichas' from press coverage.. Count: Insular: sources disagree, 77 or 85 selected from a field survey of 273 candidates (both figures appear in different press pieces, so treat as approximate until the primary source is read). Municipal (Las Palmas de Gran Canaria, the capital): 326 specimens across 181 fichas, covering the whole city, so likely several within any walkable cluster of the capital.. Genuinely promising: this is the first Canary source in this pass with an AGE field and an explicit access/visitability flag, which is rarer than most mainland Spanish regional registers this project has imported. What is in the way is purely licence proof and structured data extraction, not a designation question. Next steps for whoever picks this up: (1) fetch https://lpgcsostenible.laspalmasgc.es/aviso-legal with -L to follow the redirect and quote its reuse terms, or find a dedicated Cabildo/Ayuntamiento open-data portal (datos.grancanaria.com or similar, searched for but not found this pass); (2) if no open licence exists, the per-tree custodiadelterritorio fichas may still be usable as a verification source under the same rules as monumentaltrees.com, i.e. one browser-viewed page at a time, never bulk. Also worth noting for whoever verifies: the insular catalogue's own legal basis is unsettled (a legal report found the Cabildo lacks competence to enforce the ordinance pending a regional biodiversity law), which affects protection status, not whether the trees themselves are real, old or worth a visit."
-    },
-    {
-      "place": "La Palma",
-      "country": "",
-      "status": "empty",
-      "note": "SCOUTED 2026-08-17 (island scout, Atlantic group). Authority: none found. URL: None. Licence: n/a, no register found. Fields: n/a. Count: n/a. Searched for a Cabildo de La Palma singular-tree catalogue analogous to Tenerife and Gran Canaria's; found none. Search results returned only Gran Canaria coverage and a 2019 press line noting that historically 'only Tenerife has an insular catalogue of trees and singular groves besides Gran Canaria', implying La Palma had none as of that date. Properly scouted for this pass (two targeted searches, no promising lead surfaced); route for a future city pass is the cheap non-register path: local press ('la palma arbol mas viejo/singular'), the Caldera de Taburiente national park's own visitor materials, and monumentaltrees.com as a cross-check, one tree at a time."
-    },
-    {
-      "place": "La Gomera",
-      "country": "",
-      "status": "empty",
-      "note": "SCOUTED 2026-08-17 (island scout, Atlantic group). Authority: none found as a formal catalogue; the island's known trees are the Drago Milenario-adjacent Garajonay laurisilva forest and named individual dragon trees such as the Drago de Agalan. URL: None. Licence: n/a, no register found. Fields: n/a. Count: n/a. No Cabildo de La Gomera singular-tree register surfaced. What did surface is press coverage of the Drago de Agalan (over 400 years old per multiple local press pieces, the oldest and largest dragon tree on La Gomera) and the Garajonay National Park laurisilva itself (UNESCO World Heritage, over 10% of the island). Garajonay is a protected forest, not a collectible point under this project's own rule (an avenue or a whole wood is blocked), so any entry from here would be individual named trees like the Drago de Agalan, verified the ordinary two-source way, not a register import. Route for a future pass: local press plus the national park's own published visitor/species materials (parquesnacionales.es), same cheap non-register path as La Palma."
-    },
-    {
-      "place": "Madeira",
-      "country": "",
-      "status": "stalled",
-      "note": "SCOUTED 2026-08-17 (island scout, Atlantic group). Authority: Instituto das Florestas e Conservacao da Natureza (IFCN Madeira), VALCONMAC/ASMAC survey 'Arvores e bosques singulares da Madeira e Porto Santo'. URL: ifcn.madeira.gov.pt/images/FotosArtigos/Florestas/ASMAC/ASMACnn.pdf (numbered PDF cards; the exact nn range a previous pass walked, 71-100, is not fully reproducible: this pass spot-checked ASMAC85.pdf and got a 404, so the working numbers need re-walking rather than assumed). Licence: NOT PROVEN. This pass fetched ifcn.madeira.gov.pt's homepage directly (HTTP 200 after a 301 to /pt/, 909KB) and searched it for any data-reuse licence statement (Creative Commons, 'dados abertos', 'reutilizacao'). None found; every 'licenca' hit on the page is a hunting or fishing permit, unrelated to data reuse. Portuguese public bodies often allow free reuse of official documents by default, but that is not the same as a quotable licence sentence, and this register-layer's own rule treats the absence of one as a hard gate regardless of how good the data is.. Fields: Per OPEN_DATA_SURVEY.md 2026-08-17 (a prior pass, not re-verified here): species, height, maximum perimeter/perimeters, a rough age note, WGS84 coordinates, and an access-and-ownership field. That access field is unusually good: it already blocked 4 of 12 entries for this project (a private hotel garden, a children's care institution, a private rural hotel).. Count: 11 Madeira entries plus 1 on Porto Santo, per the prior pass; not recounted this pass since the PDF numbering did not reproduce cleanly on the one spot-check tried.. This island was flagged in the brief as already scouted by a same-day commit (b36f949, OPEN_DATA_SURVEY.md), and that write-up is thorough on content but records no licence proof, which this pass tried and failed to supply. Two things for whoever picks this up next: (1) find the actual working PDF numbers again (71-100 did not hold at 85 this pass, HTTP 404) by browsing the ASMAC listing page on ifcn.madeira.gov.pt rather than guessing numbers cold; (2) look specifically for a Portuguese open-data portal covering the autonomous region (dados.gov.pt sometimes carries regional bodies, or IFCN may have its own 'dados abertos' section not linked from the homepage) since that is where a quotable CC-style licence is most likely to live, rather than a plain institutional PDF page. Until a licence sentence is found, this register-layer import stays gated even though the underlying data is exactly what this project wants (age note plus access field together)."
-    },
-    {
-      "place": "Azores",
-      "country": "",
-      "status": "unscouted",
-      "note": "SCOUTED 2026-08-17 (island scout, Atlantic group). Authority: Direção Regional dos Recursos Florestais e Ordenamento Territorial (DRRF), Secretaria Regional da Agricultura e Alimentação, drrf.azores.gov.pt; confirmed that the Azores keep their own forestry administration separate from the mainland. URL: https://drrf.azores.gov.pt/ and https://drrf.azores.gov.pt/areas-de-atuacao/ found and not yet fetched directly this pass. Licence: not reached. Fields: not reached. Count: not reached. Confirmed precondition first, per the brief: portugal-icnf.json's own scope field states it is 'the complete national register, all 18 mainland districts' with zero entries matching 'acor'/'azor' anywhere in the 555 rows, so the Azores are genuinely uncovered by what we already hold. One search for a monumental/classified-tree register under DRRF surfaced the department itself but no register page or dataset; a second, more targeted search (the Portuguese legal term 'arvore de interesse publico', which is how mainland Portugal's AIP designation is named, applied to Acores) was not run this pass, out of time. That specific search is the right next step before concluding empty: Portugal's AIP classification is a national legal category and the Azores may run their own parallel list under it the way Madeira runs ASMAC outside ICNF. Left honestly unscouted rather than guessed at."
-    },
-    {
-      "place": "Corsica",
-      "country": "",
-      "status": "stalled",
-      "note": "SCOUTED 2026-08-17 (island scout, Atlantic group). Authority: Office de l'Environnement de la Corse (OEC) with the Conservatoire botanique national de Corse, programme name 'L'arburi nutevuli' / 'Arbres remarquables de Corse', running since 2004. URL: https://www.oec.corsica/L-arburi-nutevuli_a19.html (fetched directly, HTTP 200, 96KB); a Facebook page 'Arbres Remarquables de Corse' and a photo gallery at oec.corsica/photos also exist per search but were not fetched. Licence: not found. The fetched page is almost entirely navigation/menu markup; no licence, CC or data-reuse statement was found in it. Three linked PDFs on the page (Fiche_INV_2013.pdf, Fiche_INV_peuplements_2013.pdf, Fiche_INV_Notice_2013.pdf, all on the old oec.fr domain) read as SUBMISSION forms for nominating a tree to the inventory, not the inventory's own output, so they are not a data source even before a licence question.. Fields: not confirmed from the primary source. A WebSearch summary (a lead, not evidence per this project's own rule on search summaries) described roughly 200 'vegetation monuments' selected by a technical commission meeting twice a year, as of December 2023, but this pass could not locate the actual list, map or dataset behind that number on oec.corsica itself; the fetched page's real body text did not surface in a quick extraction (mostly jQuery menu code), so a longer read of the same page, or its photo gallery and Facebook page, is the honest next step.. Count: unconfirmed, roughly 200 per an unverified search summary, not seen on the primary source. This is a real, active, government-linked programme, not a dead end, so it earns 'stalled' rather than 'empty'. What is in the way is purely navigation: the page found is a landing page describing the programme and how to submit a nomination, not the register output itself. Next step: look for a Corsica open-data portal (the Collectivité de Corse may run one separately from OEC) or ask the OEC site for a public map/liste rather than the landing page, and read the fetched HTML's actual article body (article id 9582608 in the page's own JS) rather than the menu chrome that dominated this pass's quick extraction."
-    },
-    {
-      "place": "Sardinia",
-      "country": "",
-      "status": "stalled",
-      "note": "SCOUTED 2026-08-17 (island scout, Atlantic group). Authority: Regione Sardegna, Corpo Forestale e di Vigilanza Ambientale (CFVA) and the FoReSTAS agency, publishing through Sardegna Geoportale; explicitly tied to the national 'Elenco degli Alberi Monumentali d'Italia' under Legge 10/2013 and the decree of 23/10/2014, the same legal framework Sicily's register turned out to republish verbatim. URL: http://www.sardegnageoportale.it/index.php?xsl=2425&s=377329&v=2&c=14469&t=1&tb=14401 (fetched, HTTP 200, 17KB); also https://www.sardegnaambiente.it (CFVA activity pages) and it.wikipedia.org/wiki/Alberi_monumentali_della_Sardegna. Licence: not found this pass. The geoportale page fetched clean but no CC/IODL/open-data licence phrase was found in its 17KB (a thin page, likely mostly a viewer shell rather than the data itself). Sardegna Geoportale elsewhere in this project's experience often publishes under IODL (Italian Open Data Licence), but that has not been quoted from this specific page yet.. Fields: unconfirmed from the primary source this pass; search results describe it as 'a geographic layer containing the points corresponding to the monumental trees censused... included in the List of Monumental Trees of Italy', which is the same framing Sicily's register used before turning out to be a same-data republish with no age or vitality field.. Count: 431 trees regionwide per an October 2025 update (search summary, not yet primary-source verified), described as the Italian region with the most monumental trees, concentrated in the Barbagia/Ogliastra sub-region rather than near the main coastal towns; our existing italy-masaf.json already holds 4 entries near the island per the brief.. Genuinely undecided, and it matters more than Sicily's answer did because Sardinia is a bigger island with more entries. Sicily's precedent (same sheet ids, same decree, no age/vitality, not an independent second source) is the way to bet, but Piemonte and Puglia are the counter-precedent: both are Italian regions this project already imports as SEPARATE, richer register files (piemonte-alberi-monumentali.json, puglia-alberi-monumentali.json) alongside italy-masaf.json, so 'regional geoportal republishing MASAF' is not automatically a dead end for Italian regions in general. This pass ran out of time before opening the geoportal layer's actual attribute table (the fetched page is a viewer/search shell, not raw data) to settle which case Sardinia is. Next step, ten minutes: open the geoportale's underlying WFS/download link (usually a 'scarica dati' or API link off this same page) and check for an age or vitality column before concluding either way; do not re-fetch the landing page, go straight for the data endpoint."
-    },
-    {
-      "place": "Yakushima",
-      "country": "",
-      "status": "stalled",
-      "note": "Status corrected 2026-08-17 from 'imported': the Japanese giant-tree database is proven and the script exists, but 975 Kagoshima records carry NO coordinates, exactly like Hiroshima's 102, so they are leads until geocoded against a named shrine or address. SCOUTED 2026-08-17 (island scout, Pacific and east Med group). Authority: Environment Ministry / kyoju.biodic.go.jp giant-tree database (same national register already imported for Hiroshima/Sapporo/Kobe/Nagoya/Kamakura/Nikko/Nara per data/register-scouting.json's Japan entry), PLUS the Agency for Cultural Affairs national Natural Monument database (data/registers/japan-bunkacho.json, already held).. URL: https://kyoju.biodic.go.jp/?_action=gtsearch, run via scripts/jp_kyoju.py --prefecture 46 (Kagoshima, which includes Yakushima-cho). Licence: PDL 1.0, already proven in OPEN_DATA_SURVEY.md 2026-08-04 for this exact database (Admin-authored rows only, per the field-based filter jp_kyoju.py already applies). No new licence work needed.. Fields: species, girth (幹周), height (樹高), a vitality field (健全度, health condition), confirmation date. NO coordinates: this database gives prefecture/municipality/address only, same caveat already recorded for the whole Japan entry, so pinning individual Yakushima cedars (the Jomon Sugi, Kigen Sugi, Yakusugi land) is a separate job per tree, same as Hiroshima's leads file.. Count: Confirmed by running the script live this pass: prefecture 46 (Kagoshima) returns 975 records total (crawl started, ~100 fetched before this pass stopped it to stay in budget; not filtered to Yakushima-cho yet). The Agency for Cultural Affairs national register (already imported, data/registers/japan-bunkacho.json) carries exactly ONE Yakushima-area entry, '屋久島スギ原始林' (Yakushima Sugi Primeval Forest, a whole-forest area designation at 30.3287,130.5042), which is an ensemble/wood and fails the collectible-point test on its own; it is NOT the Jomon Sugi or another single named tree, so it cannot be used as a per-tree register entry.. Two things settle this. (1) The mechanism already exists and is proven: python3 scripts/jp_kyoju.py --prefecture 46 --out data/leads/yakushima.json is the exact next command, same licence and same script already trusted for seven other cities. It ran live this pass (55s, reached page 2 of the results before being stopped to respect the pass timebox) and returned real records, confirming the endpoint answers for Kagoshima prefecture. (2) The famous named cedars (Jomon Sugi, Kigen Sugi, Wilson's Stump) will very likely appear inside those 975 records by name or address, but the database gives no coordinates for any of them, so a follow-up verify pass still needs to place each one from tourism/park sources (Forestry Agency Yakushima Kokumin-rin trail materials, the observation-deck coordinates published for Jomon Sugi specifically) the way Hiroshima's pass separated register data from pinning. This is register-backed verify work (rung 4b in CLAUDE.md, ~0.4k tokens/tree), not from-zero research. Kagoshima's server was noticeably slower than the prefectures already crawled (roughly 5-8s per page fetch versus the faster prefectures), so a future pull should expect a longer run, not a hang; it did not time out, it was simply mid-crawl when this pass moved on."
-    },
-    {
-      "place": "Cyprus",
-      "country": "",
-      "status": "stalled",
-      "note": "NOT YET IMPORTED, status corrected 2026-08-17: the scouting pass recorded this as 'imported', which in this ledger means a file exists in data/registers/, and none does. The source is proven and ready: data.gov.cy, CC BY 4.0, 81 trees with species, girth, height and AGE IN YEARS, which almost no register carries. The specific thing in the way is that it has no coordinates, only village and district, so every pin would be approximate and each tree needs geocoding the way Hiroshima's did. Also flagged before anyone trusts the ages: several look patterned (313, 513, 1508) and want the sanity check BRIEF_RESEARCH.md demands of any register number. SCOUTED 2026-08-17 (island scout, Pacific and east Med group). Authority: Republic of Cyprus Department of Forests (Τμήμα Δασών), Ministry of Agriculture, Natural Resources and Environment, published on the National Open Data Portal (data.gov.cy). URL: https://data.gov.cy/el/dataset/memonomena-dentra-mnimeia-tis-fysis-ektos-ton-kratikon-dason ; direct file https://data.gov.cy/sites/default/files/TreeMonumentsOutsideStateForests.csv (fetched clean via curl, 82 lines incl header). Licence: Creative Commons Attribution 4.0 International (CC BY 4.0), stated directly on the dataset page. Proven by fetch, not by search summary.. Fields: Species (Greek common name), District (Λευκωσίας/Λεμεσού/Πάφου/Λάρνακας/Αμμοχώστου), Village, circumference at chest height (m), height (m), AGE IN YEARS, official proclamation date. No coordinates, only village + district, so location_precision stays approximate until each tree is geocoded to its village. No vitality field.. Count: 81 trees nationwide (this dataset is explicitly 'outside state forests' only; Forestry Dept press material cited separately says roughly 68 more isolated trees plus 2 groups sit inside state forests, but no second dataset for those was found on the portal this pass, so treat that subset as unscouted rather than covered). By district: Limassol 31, Paphos 28, Nicosia 13, Larnaca 5, Famagusta 4. Zero in Kyrenia/Famagusta-north, i.e. the Turkish-administered area: this Republic-of-Cyprus dataset almost certainly does not and cannot cover the north, which sits outside the Republic's Forestry Department jurisdiction; whether Northern Cyprus keeps any equivalent list was not checked this pass and stays unscouted.. Strong find, same tier as Bratislava/Bari/Lyon: real licence, real age field (rare), fetched and spot-read directly rather than trusted from a search summary. One register pitfall worth flagging for whoever imports it: several age values look suspiciously patterned (313, 513, 213, 133, 1508, 708...) which may be 'years since a fixed reference date' rather than a clean age-at-designation figure; sanity-check a few against known trees (e.g. the Apaisia terebinth widely reported as Cyprus's oldest tree, a candidate row here as Τρέμιθος/Apaisia at 1,508) before trusting the column at face value, per BRIEF_RESEARCH.md's register-pitfalls section. Next step for a build pass: import as data/registers/cyprus-forestry-monuments.json, then geocode by village for pinning, same shape as other village-only registers."
-    },
-    {
-      "place": "Crete",
-      "country": "",
-      "status": "empty",
-      "note": "SCOUTED 2026-08-17 (island scout, Pacific and east Med group). Authority: Greek Ministry of Environment and Energy / regional Dasarcheio (forestry service), designation 'Διατηρητέο Μνημείο της Φύσης' (Preserved Natural Monument) under Law 998/1979 (originally Legislative Decree 86/1969).. URL: https://el.wikipedia.org/wiki/Διατηρητέα_μνημεία_της_φύσης (fetched; a prose/list article citing ΦΕΚ gazette numbers, not a data table); no data.gov.gr or ypen.gov.gr dataset found for this designation this pass. Licence: No data licence to prove: there is no dataset. The designations exist only as individual ΦΕΚ (Government Gazette) publications and prose lists (el.wikipedia.org's own article on the topic cites ΦΕΚ numbers, not a database).. Fields: n/a, no register exists as data. The prose article names a handful of Crete entries (Cretan Cephalanthero at Kamarai, two oaks at Korfes, two olives at Almyropotamos, an evergreen plane in Heraklion, cypress forests and a plane/elm in Chania) but with no coordinates, age or girth given, just place names.. Count: roughly 6-7 named natural-monument entries for Crete in the national list, none near Heraklion/Chania town centre itself per the article's wording (Korfes, Almyropotamos, Vlatos, Palaiochora, Aidona Kalambaka are all outlying villages).. The national designation is real but is not a usable register: it is ΦΕΚ prose, not data. The much stronger route for Crete, named in the brief and confirmed this pass, is the Olive Tree of Vouves (Ano Vouves, near Kolymvari, roughly 25 km from Chania): a single, famous, individually documented tree with its own museum (visited by 20,000+ people/year), a peer-reviewed genetics paper (PMC8620074) discussing its origin, and an official 'natural heritage monument' declaration by the Region of Crete. Age is genuinely disputed across sources (2,000 to 4,000 years, no agreed dating method for olives), which is exactly the kind of range BRIEF_RESEARCH.md says to report honestly rather than pick a winner. This is a from-zero verify candidate, not a register import: two independent sources already surfaced (Wikipedia's own dedicated 'Olive tree of Vouves' article, the museum's own ABEA.gr page, the PMC paper) and it clears the collectible-point and access bars easily (public museum site). Recommend a verify pass name this tree directly rather than searching further."
-    },
-    {
-      "place": "Rhodes",
-      "country": "",
-      "status": "empty",
-      "note": "SCOUTED 2026-08-17 (island scout, Pacific and east Med group). Authority: Greek Ministry of Environment and Energy / regional Dasarcheio (forestry service), designation 'Διατηρητέο Μνημείο της Φύσης' (Preserved Natural Monument) under Law 998/1979 (originally Legislative Decree 86/1969).. URL: https://el.wikipedia.org/wiki/Διατηρητέα_μνημεία_της_φύσης (fetched; a prose/list article citing ΦΕΚ gazette numbers, not a data table); no data.gov.gr or ypen.gov.gr dataset found for this designation this pass. Licence: No data licence to prove: there is no dataset. The designations exist only as individual ΦΕΚ (Government Gazette) publications and prose lists (el.wikipedia.org's own article on the topic cites ΦΕΚ numbers, not a database).. Fields: n/a, no register exists as data.. Count: one national entry found for Rhodes: a cypress forest at 'Katarti', Empona, which is an AREA/forest designation, not an individual tree, and fails the collectible-point test on its face (an avenue or whole wood is blocked per BRIEF_RESEARCH.md).. No individual named monumental tree surfaced for Rhodes this pass, national or otherwise. Genuinely empty rather than merely unscouted: the one hit is explicitly a forest/grove designation, not a candidate. Route here is the generic sweep (Rhodes Old Town gardens, the Valley of the Butterflies, monastery grounds) rather than any register, and this pass did not have time to run it; record as empty for the register question specifically, and leave named-tree discovery for a from-zero verify pass."
-    },
-    {
-      "place": "Corfu",
-      "country": "",
-      "status": "empty",
-      "note": "SCOUTED 2026-08-17 (island scout, Pacific and east Med group). Authority: Greek Ministry of Environment and Energy / regional Dasarcheio (forestry service), designation 'Διατηρητέο Μνημείο της Φύσης' (Preserved Natural Monument) under Law 998/1979 (originally Legislative Decree 86/1969).. URL: https://el.wikipedia.org/wiki/Διατηρητέα_μνημεία_της_φύσης (fetched; a prose/list article citing ΦΕΚ gazette numbers, not a data table); no data.gov.gr or ypen.gov.gr dataset found for this designation this pass. Licence: No data licence to prove: there is no dataset. The designations exist only as individual ΦΕΚ (Government Gazette) publications and prose lists (el.wikipedia.org's own article on the topic cites ΦΕΚ numbers, not a database).. Fields: n/a, no register exists as data.. Count: zero entries for Corfu found in the national Preserved Natural Monument list per the Wikipedia article fetched this pass.. Not represented at all in the national designation. Corfu is known informally for old olive groves (a UNESCO-recognised agricultural landscape) but that is a landscape-scale claim, not individual named trees, and this pass did not have time to search for a specific candidate. Route here is the generic sweep and local sources (Achilleion grounds, Mon Repos estate gardens, Paleokastritsa monastery), not a register."
-    },
-    {
-      "place": "Santorini",
-      "country": "",
-      "status": "empty",
-      "note": "SCOUTED 2026-08-17 (island scout, Pacific and east Med group). Authority: Greek Ministry of Environment and Energy / regional Dasarcheio (forestry service), designation 'Διατηρητέο Μνημείο της Φύσης' (Preserved Natural Monument) under Law 998/1979 (originally Legislative Decree 86/1969).. URL: https://el.wikipedia.org/wiki/Διατηρητέα_μνημεία_της_φύσης (fetched; a prose/list article citing ΦΕΚ gazette numbers, not a data table); no data.gov.gr or ypen.gov.gr dataset found for this designation this pass. Licence: No data licence to prove: there is no dataset. The designations exist only as individual ΦΕΚ (Government Gazette) publications and prose lists (el.wikipedia.org's own article on the topic cites ΦΕΚ numbers, not a database).. Fields: n/a, no register exists as data.. Count: zero. Not represented in the national list, and this matches the brief's own expectation: Santorini is a volcanic island with almost no trees (thin soil, wind exposure, no permanent surface water), so a genuinely empty result here is a real verdict, not a gap in the search.. Confirms the brief's stated expectation rather than adding a new finding: Greece has no central register as data, and Santorini specifically has essentially no tree candidates regardless. Do not spend further search time here; if a future pass wants to check, the only plausible angle is a single old vineyard specimen or a monastery courtyard tree, not a monumental-tree hunt."
-    },
-    {
-      "place": "Oahu",
-      "country": "",
-      "status": "imported",
-      "note": "IMPORTED 2026-08-17 to data/registers/hawaii-exceptional-trees.json by scripts/import_hawaii_exceptional.py. 339 designated trees across all four counties, 289 publishable after the semantic filter. CC0 1.0, proven from the dataset's own metadata endpoint. Every row has coordinates; 217 carry a trunk circumference and 301 a condition reading; there is no age field. The filter removed 39 trees on Schofield Barracks and Wheeler Army Airfield under hard rule 10, 10 groves and rows under the collectible-point test, and 1 dead-tree location. SCOUTED 2026-08-17 (island scout, Pacific and east Med group). Authority: City & County of Honolulu, Department of Parks and Recreation, Division of Urban Forestry, publishing the 'Exceptional Trees On Oahu' dataset on the Honolulu Open Data Portal (Socrata). Despite the name, confirmed by querying the live data (not a search summary) that it carries entries tagged for Kauai, Maui, the Big Island and Moloka'i/Lanai too, not Oahu alone.. URL: https://data.honolulu.gov/Recreation/Exceptional-Trees-On-Oahu/84fd-3fzf ; queried directly via the Socrata API, e.g. https://data.honolulu.gov/resource/84fd-3fzf.json?$limit=5 (curl -m 20, HTTP 200, real rows). Licence: CC0 1.0 Universal (Public Domain Dedication), confirmed by fetching the dataset's own metadata API (https://data.honolulu.gov/api/views/84fd-3fzf.json), licenseId 'CC0_10', attribution 'Department of Parks and Recreation'. The best licence found on this whole pass: no attribution even required.. Fields: species (scientific_name, common_name), height, diameter_in, trunk_circumference (girth, though many rows read 'null'), a live TREE CONDITION / vitality field ('Excellent', 'Good' etc, coded), crown spread, land_use, a plain-English location_description ('Foster Botanical Garden, 180 N. Vineyard Blvd.', 'Schofield Barracks...'), an island code, and TREE-LEVEL LATITUDE/LONGITUDE on every row queried. No age field, so age here would need the growth-rate/girth route or stay an honest gap per BRIEF_RESEARCH.md.. Count: ~240 of the 339 statewide rows are coded Oahu ('O' 236 + 'Oahu' spelled out 4). Includes central-Honolulu landmarks by name (Foster Botanical Garden, Queen's Medical Center, Ala Moana Beach Park), so a meaningful share sits in or near town; exact walking-distance count not run this pass.. This is the best find of the pass: coordinates, condition/vitality and a public-domain licence together, which no European register scouted so far has matched all three of. One caveat worth flagging for a build pass: some rows describe a GROVE ('Grove [11]', a baobab grove at Ala Moana) rather than one trunk, which fails the collectible-point rule and needs filtering per row, same discipline as Lyon's PLU-H layer. Also worth checking before import: whether Hawai'i County (Big Island) and Maui/Kauai maintain their OWN separate, richer registries alongside feeding this one (the brief's search for a Hawaii County ArcGIS 'Exceptional Trees' layer, id 59, 404'd this pass at gis.hawaiicounty.gov/arcgis/rest/services/COHGIS_Public/COHGIS_Public/MapServer/59, so that specific URL is stale or renamed, not proof no county-level layer exists). Next step for a build pass: import as data/registers/hawaii-exceptional-trees.json directly from the Socrata endpoint (no scraping needed, it is a real API), then cluster per island."
-    },
-    {
-      "place": "Maui",
-      "country": "",
-      "status": "imported",
-      "note": "IMPORTED 2026-08-17 to data/registers/hawaii-exceptional-trees.json by scripts/import_hawaii_exceptional.py. 339 designated trees across all four counties, 289 publishable after the semantic filter. CC0 1.0, proven from the dataset's own metadata endpoint. Every row has coordinates; 217 carry a trunk circumference and 301 a condition reading; there is no age field. The filter removed 39 trees on Schofield Barracks and Wheeler Army Airfield under hard rule 10, 10 groves and rows under the collectible-point test, and 1 dead-tree location. SCOUTED 2026-08-17 (island scout, Pacific and east Med group). Authority: City & County of Honolulu, Department of Parks and Recreation, Division of Urban Forestry, publishing the 'Exceptional Trees On Oahu' dataset on the Honolulu Open Data Portal (Socrata). Despite the name, confirmed by querying the live data (not a search summary) that it carries entries tagged for Kauai, Maui, the Big Island and Moloka'i/Lanai too, not Oahu alone.. URL: https://data.honolulu.gov/Recreation/Exceptional-Trees-On-Oahu/84fd-3fzf ; queried directly via the Socrata API, e.g. https://data.honolulu.gov/resource/84fd-3fzf.json?$limit=5 (curl -m 20, HTTP 200, real rows). Licence: CC0 1.0 Universal (Public Domain Dedication), confirmed by fetching the dataset's own metadata API (https://data.honolulu.gov/api/views/84fd-3fzf.json), licenseId 'CC0_10', attribution 'Department of Parks and Recreation'. The best licence found on this whole pass: no attribution even required.. Fields: species (scientific_name, common_name), height, diameter_in, trunk_circumference (girth, though many rows read 'null'), a live TREE CONDITION / vitality field ('Excellent', 'Good' etc, coded), crown spread, land_use, a plain-English location_description ('Foster Botanical Garden, 180 N. Vineyard Blvd.', 'Schofield Barracks...'), an island code, and TREE-LEVEL LATITUDE/LONGITUDE on every row queried. No age field, so age here would need the growth-rate/girth route or stay an honest gap per BRIEF_RESEARCH.md.. Count: 29 of 339 rows coded 'M' (Maui). Proximity to Kahului/Wailuku or Lahaina not broken out this pass; location_description strings would answer it in a follow-up read, not new research.. This is the best find of the pass: coordinates, condition/vitality and a public-domain licence together, which no European register scouted so far has matched all three of. One caveat worth flagging for a build pass: some rows describe a GROVE ('Grove [11]', a baobab grove at Ala Moana) rather than one trunk, which fails the collectible-point rule and needs filtering per row, same discipline as Lyon's PLU-H layer. Also worth checking before import: whether Hawai'i County (Big Island) and Maui/Kauai maintain their OWN separate, richer registries alongside feeding this one (the brief's search for a Hawaii County ArcGIS 'Exceptional Trees' layer, id 59, 404'd this pass at gis.hawaiicounty.gov/arcgis/rest/services/COHGIS_Public/COHGIS_Public/MapServer/59, so that specific URL is stale or renamed, not proof no county-level layer exists). Next step for a build pass: import as data/registers/hawaii-exceptional-trees.json directly from the Socrata endpoint (no scraping needed, it is a real API), then cluster per island."
-    },
-    {
-      "place": "Kauai",
-      "country": "",
-      "status": "imported",
-      "note": "IMPORTED 2026-08-17 to data/registers/hawaii-exceptional-trees.json by scripts/import_hawaii_exceptional.py. 339 designated trees across all four counties, 289 publishable after the semantic filter. CC0 1.0, proven from the dataset's own metadata endpoint. Every row has coordinates; 217 carry a trunk circumference and 301 a condition reading; there is no age field. The filter removed 39 trees on Schofield Barracks and Wheeler Army Airfield under hard rule 10, 10 groves and rows under the collectible-point test, and 1 dead-tree location. SCOUTED 2026-08-17 (island scout, Pacific and east Med group). Authority: City & County of Honolulu, Department of Parks and Recreation, Division of Urban Forestry, publishing the 'Exceptional Trees On Oahu' dataset on the Honolulu Open Data Portal (Socrata). Despite the name, confirmed by querying the live data (not a search summary) that it carries entries tagged for Kauai, Maui, the Big Island and Moloka'i/Lanai too, not Oahu alone.. URL: https://data.honolulu.gov/Recreation/Exceptional-Trees-On-Oahu/84fd-3fzf ; queried directly via the Socrata API, e.g. https://data.honolulu.gov/resource/84fd-3fzf.json?$limit=5 (curl -m 20, HTTP 200, real rows). Licence: CC0 1.0 Universal (Public Domain Dedication), confirmed by fetching the dataset's own metadata API (https://data.honolulu.gov/api/views/84fd-3fzf.json), licenseId 'CC0_10', attribution 'Department of Parks and Recreation'. The best licence found on this whole pass: no attribution even required.. Fields: species (scientific_name, common_name), height, diameter_in, trunk_circumference (girth, though many rows read 'null'), a live TREE CONDITION / vitality field ('Excellent', 'Good' etc, coded), crown spread, land_use, a plain-English location_description ('Foster Botanical Garden, 180 N. Vineyard Blvd.', 'Schofield Barracks...'), an island code, and TREE-LEVEL LATITUDE/LONGITUDE on every row queried. No age field, so age here would need the growth-rate/girth route or stay an honest gap per BRIEF_RESEARCH.md.. Count: 24 of 339 rows coded 'K' (Kauai). Proximity to Lihue not broken out this pass.. This is the best find of the pass: coordinates, condition/vitality and a public-domain licence together, which no European register scouted so far has matched all three of. One caveat worth flagging for a build pass: some rows describe a GROVE ('Grove [11]', a baobab grove at Ala Moana) rather than one trunk, which fails the collectible-point rule and needs filtering per row, same discipline as Lyon's PLU-H layer. Also worth checking before import: whether Hawai'i County (Big Island) and Maui/Kauai maintain their OWN separate, richer registries alongside feeding this one (the brief's search for a Hawaii County ArcGIS 'Exceptional Trees' layer, id 59, 404'd this pass at gis.hawaiicounty.gov/arcgis/rest/services/COHGIS_Public/COHGIS_Public/MapServer/59, so that specific URL is stale or renamed, not proof no county-level layer exists). Next step for a build pass: import as data/registers/hawaii-exceptional-trees.json directly from the Socrata endpoint (no scraping needed, it is a real API), then cluster per island."
-    },
-    {
-      "place": "Big Island",
-      "country": "",
-      "status": "imported",
-      "note": "IMPORTED 2026-08-17 to data/registers/hawaii-exceptional-trees.json by scripts/import_hawaii_exceptional.py. 339 designated trees across all four counties, 289 publishable after the semantic filter. CC0 1.0, proven from the dataset's own metadata endpoint. Every row has coordinates; 217 carry a trunk circumference and 301 a condition reading; there is no age field. The filter removed 39 trees on Schofield Barracks and Wheeler Army Airfield under hard rule 10, 10 groves and rows under the collectible-point test, and 1 dead-tree location. SCOUTED 2026-08-17 (island scout, Pacific and east Med group). Authority: City & County of Honolulu, Department of Parks and Recreation, Division of Urban Forestry, publishing the 'Exceptional Trees On Oahu' dataset on the Honolulu Open Data Portal (Socrata). Despite the name, confirmed by querying the live data (not a search summary) that it carries entries tagged for Kauai, Maui, the Big Island and Moloka'i/Lanai too, not Oahu alone.. URL: https://data.honolulu.gov/Recreation/Exceptional-Trees-On-Oahu/84fd-3fzf ; queried directly via the Socrata API, e.g. https://data.honolulu.gov/resource/84fd-3fzf.json?$limit=5 (curl -m 20, HTTP 200, real rows). Licence: CC0 1.0 Universal (Public Domain Dedication), confirmed by fetching the dataset's own metadata API (https://data.honolulu.gov/api/views/84fd-3fzf.json), licenseId 'CC0_10', attribution 'Department of Parks and Recreation'. The best licence found on this whole pass: no attribution even required.. Fields: species (scientific_name, common_name), height, diameter_in, trunk_circumference (girth, though many rows read 'null'), a live TREE CONDITION / vitality field ('Excellent', 'Good' etc, coded), crown spread, land_use, a plain-English location_description ('Foster Botanical Garden, 180 N. Vineyard Blvd.', 'Schofield Barracks...'), an island code, and TREE-LEVEL LATITUDE/LONGITUDE on every row queried. No age field, so age here would need the growth-rate/girth route or stay an honest gap per BRIEF_RESEARCH.md.. Count: 38 of 339 rows coded 'B' (Big Island), the largest county share after Oahu. Proximity to Hilo or Kailua-Kona not broken out this pass. Note a Hawaii County ArcGIS 'Exceptional Trees' layer may exist separately (id 59 hinted at by a search result) but the specific URL tried 404'd this pass; worth one more look before assuming the county has no richer layer of its own.. This is the best find of the pass: coordinates, condition/vitality and a public-domain licence together, which no European register scouted so far has matched all three of. One caveat worth flagging for a build pass: some rows describe a GROVE ('Grove [11]', a baobab grove at Ala Moana) rather than one trunk, which fails the collectible-point rule and needs filtering per row, same discipline as Lyon's PLU-H layer. Also worth checking before import: whether Hawai'i County (Big Island) and Maui/Kauai maintain their OWN separate, richer registries alongside feeding this one (the brief's search for a Hawaii County ArcGIS 'Exceptional Trees' layer, id 59, 404'd this pass at gis.hawaiicounty.gov/arcgis/rest/services/COHGIS_Public/COHGIS_Public/MapServer/59, so that specific URL is stale or renamed, not proof no county-level layer exists). Next step for a build pass: import as data/registers/hawaii-exceptional-trees.json directly from the Socrata endpoint (no scraping needed, it is a real API), then cluster per island."
-    },
-    {
-      "place": "Las Vegas",
-      "country": "United States",
-      "status": "stalled",
-      "note": "SCOUTED 2026-08-18. Nevada Division of Forestry's 2015 Nevada Big Tree Register (statewide champion-tree PDF) carries at least 11 UNLV campus champions, 3 at Winchester Park and 2 at The Springs Preserve, all in Clark County/Las Vegas, all genuinely walkable clusters. No explicit open-licence statement found (only a generic accuracy disclaimer on a sibling NV.gov site), so not imported as a register file; used as a verification/lead source for hand-verified layer-1 entries instead, same treatment as Toronto's Ontario Heritage Tree data. Full writeup and extraction method in OPEN_DATA_SURVEY.md. Next: a verify pass to place each UNLV tree on campus (the register gives no street address) and find per-tree second sources."
-    },
-    {
-      "place": "Mexico City",
-      "country": "Mexico",
-      "status": "found",
-      "note": "FOUND 2026-08-19 by the verify pass, not by a scout, and it is a real register nobody had. SEDEMA (the city's environment secretariat) ran a formal Arboles Patrimoniales declaration in 2025, published in the official gazette, and its project site proyectos.sedema.cdmx.gob.mx/arbolespatrimoniales/ publishes a Google My Maps KML carrying tree-level GPS, species, trunk diameter and circumference for all 12 declared trees. Ten of them are now verified and written. NOT imported to data/registers/ because the licence sentence has not been read at the primary source yet, which is the gate OPEN_DATA_SURVEY.md sets; do that before promoting it. One data fault to carry forward: the 'Altura total (m)' field has its decimal point stripped on most rows, so 22.00 m reads as 2200."
-    },
-    {
-      "place": "South Korea",
-      "country": "South Korea",
-      "status": "stalled",
-      "note": "SCOUTED 2026-08-20 (Seoul #33, no supply, no verdict). The candidate source is real and promising: 국가유산청_문화재 공간 정보 (Cultural Heritage Administration's heritage spatial information API), data.go.kr/data/3070426/openapi.do, free OpenAPI plus file download, ~15,000 designated heritage items nationwide with coordinates and heritage-type classification, which would let a scout filter to Natural Monument (천연기념물) type and then to tree entries the same way the MASAF/regional split works in Italy. Stalled on licence, not existence: the page says usage scope is unrestricted and Korean government open data is required to carry a KOGL (공공누리) type badge, but this pass's tooling (WebFetch, which summarises rather than renders) could not read which KOGL type number is actually attached, and CLAUDE.md requires a proving sentence naming the specific licence before import. Next: a session with real browser rendering reads the badge directly, or checks the OpenAPI response's own metadata envelope for a licence field."
-    }
-  ],
-  "out_of_focus": {
-    "note": "Regions Hidde ruled out of focus on 2026-08-16: \"israel africa india and russia ar out of focus\". Read by scripts/scout_next.py, which skips them so --target never points there and no run spends a window scouting them. This is a SCOPE decision, not a judgement about the trees: the queue still ranks these cities by demand, and nothing published is removed. Reversing it means deleting a line here.",
-    "countries": [
-      "Israel",
-      "India",
-      "Russia"
-    ],
-    "regions": [
-      "Africa"
-    ],
-    "africa_countries": [
-      "South Africa",
-      "Morocco",
-      "Egypt",
-      "Kenya",
-      "Tanzania",
-      "Tunisia",
-      "Namibia",
-      "Ethiopia",
-      "Ghana",
-      "Senegal",
-      "Uganda",
-      "Nigeria",
-      "Algeria",
-      "Zimbabwe",
-      "Botswana",
-      "Zambia",
-      "Mozambique",
-      "Rwanda",
-      "Madagascar"
-    ],
-    "affects": "3 ranked cities as of 2026-08-16: Jerusalem (#51), Tel Aviv (#143), Cape Town (#171). Jerusalem's half-finished Israel scout is closed by this rather than left stalled."
+  {
+   "place": "Montreal",
+   "country": "Canada",
+   "status": "blocked",
+   "note": "SCOUTED 2026-08-16. Montreal has a real curated register and it is not on the open-data portal: montroyal.montreal.ca/inventaires, the City's own Site officiel du Mont-Royal, carries 63 individual arbre-remarquable pages, each with per-tree coordinates, the property owner, a planting period, species notes and a written statement of dendrological and cultural interest. Quality is comparable to Sydney's. BLOCKED: montroyal.montreal.ca/credits states '(c) Tous droits reserves, Ville de Montreal', with no reuse terms anywhere on the site. Deliberately NOT scraped, unlike Toronto: Toronto's was an open API with no stated licence, this is website content with an explicit all-rights-reserved notice, and copying the compilation is not the same act as querying an open endpoint. donnees.montreal.ca carries only the full public-tree inventory, which the semantic filter forbids. Next: licence ask to the Bureau du Mont-Royal."
+  },
+  {
+   "place": "Sydney",
+   "country": "Australia",
+   "status": "blocked",
+   "note": "SOLVED the endpoint 2026-08-16 and blocked on licence. City of Sydney Register of Significant Trees, 2,504 entries, ArcGIS FeatureServer services1.arcgis.com/cNVyNtjGVZybOQWZ/ArcGIS/rest/services/Register_of_Significant_Trees_view/FeatureServer/0, open and queryable. It is the richest register found anywhere: species, common name, height, spread, year_of_planting, statement_of_significance, address, owner, and two fields the corpus says registers never have, condition (coded, including Dead) and accessibilility (Public access / Visible from street / No public access). BUT the AGOL item carries an empty licenseInfo, the dataset is not on the CC BY 4.0 data hub, and cityofsydney.nsw.gov.au's own terms say content must not be reproduced without written authorisation. Not imported, and the refusal is now explicit rather than merely absent: the register sweep found the City's own sibling layers 'RST Existing view' and 'RST Future nomination view', both carrying licenseInfo 'For public viewing only inside of City of Sydney Significant Tree Register. Not for individual re-use.' So this is a stated no, not an oversight, and the licence ask sent 2026-08-16 is the only route. Next: a licence request to the City, which is Hidde's to send."
+  },
+  {
+   "place": "Perth",
+   "country": "Australia",
+   "status": "stalled",
+   "note": "SCOUTED 2026-08-16. The city's own open data has only 'Trees in the City', a public-tree inventory the semantic filter forbids. The real source is the National Trust of Western Australia's Significant Tree Register, published as a PDF (nationaltrustwa.com.au/wp-content/uploads/2025/02/National-Trust-Significant-Tree-Register-November-2024.pdf, readable, 64 entries parsed): code, common name, a count, and a street address. 24 entries are Perth metro, including the Fremantle Proclamation Tree. Several are avenues or groups (one of 73, one of 38) that fail the collectible-point test. NO coordinates, so every entry needs geocoding, and NO licence is stated; the National Trust WA is a charity, so this is a permission ask like the others. inHerit, the state heritage database, also carries 'Significant Trees' records but is explicitly All Rights Reserved and its entries are vague groupings including back-yard trees."
+  },
+  {
+   "place": "Adelaide",
+   "country": "Australia",
+   "status": "stalled",
+   "note": "Significant Tree is a state Development Act designation administered per council (Adelaide, Burnside, Prospect, Unley), so it is several lists rather than one fetch. Next: check whether SA's planning portal publishes a consolidated overlay."
+  },
+  {
+   "place": "Vancouver",
+   "country": "Canada",
+   "status": "unscouted",
+   "note": "Named but not reached, 2026-08-13."
+  },
+  {
+   "place": "Los Angeles",
+   "country": "United States",
+   "status": "empty",
+   "note": "SCOUTED 2026-08-16, and the verdict is that there is nothing of our kind to find. LA's 'protected tree' status is a SPECIES RULE, not a register: LAMC 46.00 protects any indigenous oak, western sycamore, laurel bay, southern black walnut, Mexican elderberry or toyon over 4 inches DBH. That is a rule about a category, so it names no individual tree and cannot be filtered into a candidate list. 'Heritage trees' designated by council resolution exist in the ordinance's wording but no published register of them was found. Wikidata holds 3 within 15 km. Route here is not a register at all: named individual trees via local sources, or nothing."
+  },
+  {
+   "place": "Estonia",
+   "country": "Estonia",
+   "status": "imported",
+   "note": "EELIS kr_yksikobjektid, 555 trees, CC BY 4.0. Covers Tallinn (#65) with 56 within 15 km."
+  },
+  {
+   "place": "Lithuania",
+   "country": "Lithuania",
+   "status": "imported",
+   "note": "STVK gamtos paveldo objektai off the map's public vector tiles; commercial reuse permitted per data.gov.lt. Covers Vilnius (#22)."
+  },
+  {
+   "place": "Steiermark",
+   "country": "Austria",
+   "status": "imported",
+   "note": "SOLVED 2026-08-16 by scripts/eu_register_sweep.py, after a morning of guessing Austrian hostnames got nowhere. data.gv.at has replaced its CKAN API with a JavaScript app, but data.europa.eu aggregates the same DCAT records and states the licence outright: 'Naturdenkmale Graz' (stadt-graz_naturdenkmale, Stadt Graz Stadtvermessungsamt) is CC BY 4.0 with an ArcGIS query endpoint at geodaten.graz.at, and Land Steiermark publishes its own Naturdenkmale.zip shapefile under the same licence. Graz imported: data/registers/graz-naturdenkmale.json, 90 entries, 36 public. The EU sweep also shows CC BY natural-monument datasets for Salzburg, Tyrol, Lower Austria, Upper Austria, Burgenland, Vorarlberg and Vienna, so the rest of Austria is now a fetch rather than a hunt.",
+   "covers": [
+    "Graz"
+   ]
+  },
+  {
+   "place": "Sweden",
+   "country": "Sweden",
+   "status": "stalled",
+   "note": "Naturvaardsverket naturvaardsregistret covers naturminne and advertises WMS/WFS/REST, but the geoserver answers 'Service WFS is disabled'. Next: the REST route, untried."
+  },
+  {
+   "place": "Saxony",
+   "country": "Germany",
+   "status": "empty",
+   "note": "State FND layer is areal-only (2026-08-13). But volunteers have mapped 936 trees under 'natural monument in Saxony' on Wikidata, which is why Dresden (#68) shows 209 within 15 km. Route here is the Wikidata layer, not the state.",
+   "covers": [
+    "Dresden",
+    "Leipzig"
+   ]
+  },
+  {
+   "place": "Hessen",
+   "country": "Germany",
+   "status": "empty",
+   "note": "No ND feature type in the open Schutzgebiete WFS (2026-08-13). 790 trees on Wikidata under 'Single natural monument in Hesse'; Frankfurt (#16) shows 55 within 15 km.",
+   "covers": [
+    "Frankfurt"
+   ]
+  },
+  {
+   "place": "Baden-Wuerttemberg",
+   "country": "Germany",
+   "status": "blocked",
+   "note": "Non-commercial-equivalent licence (2026-08-13). Covers Stuttgart, Heidelberg, Freiburg. Do not re-scout.",
+   "covers": [
+    "Stuttgart",
+    "Heidelberg",
+    "Freiburg"
+   ]
+  },
+  {
+   "place": "Catalonia",
+   "country": "Spain",
+   "status": "blocked",
+   "note": "Licence, unchanged since the first sweep.",
+   "covers": [
+    "Barcelona",
+    "Girona",
+    "Tarragona"
+   ]
+  },
+  {
+   "place": "United Kingdom",
+   "country": "United Kingdom",
+   "status": "blocked",
+   "note": "Ancient Tree Inventory disqualified as an import on licence, 2026-08-06; permission path open and it is Hidde's to ask. The London gate stands."
+  },
+  {
+   "place": "Nordrhein-Westfalen",
+   "country": "Germany",
+   "status": "empty",
+   "covers": [
+    "Cologne"
+   ],
+   "note": "No ND feature type in the open Schutzgebiete WFS (2026-08-13). CHECKED AND CORRECTED 2026-08-20: this line used to end 'Wikidata is the route for Cologne, not the state', and that is not true. Measured against data/research/wikidata-remarkable-trees.json (4,704 German trees, all with coordinates): ZERO within 10 km of Cologne, one within 25 km (the Boxhohn-Eiche at Troisdorf, 17.3 km), ten within 40 km. Cologne itself has nothing on Wikidata. So Wikidata is a route for the Rhineland at day-trip range and not a route for the city, and a run that opens Cologne from this note will spend its window discovering that. Cologne needs a municipal source (the city's own Naturdenkmal list or Baumkataster) or the from-zero research Hidde switched on for it on 2026-08-19."
+  },
+  {
+   "place": "Japan",
+   "country": "Japan",
+   "status": "imported",
+   "covers": [
+    "Hiroshima",
+    "Sapporo",
+    "Kobe",
+    "Nagoya",
+    "Kamakura",
+    "Nikko",
+    "Nara"
+   ],
+   "note": "SOLVED 2026-08-16, scripts/jp_kyoju.py. Three things had to be found and none is guessable: pagination is _command=changepage with a ZERO-BASED page number (js/pager.js), the CSRF token ROTATES on every response so each request must carry the previous page's token, and place_filter=3 is a fake radius search that returns the national total of 76,368 whatever marker you give it. All three fail silently with HTTP 200 and a re-rendered empty form, so a crawler that misses any of them reads one page of a thousand-record prefecture and reports success. Only place_filter=1 with prefecture_code filters. The licence caveat is solved by a FIELD rather than judgement: every row carries ユーザ, and the ministry's own 1988/2000 survey records read 'Admin', so citizen submissions (whose copyright stays with the poster, outside PDL 1.0) are excluded mechanically. CORRECTION to the 2026-08-04 entry, which said the database gives 'girth, height, species, and location': there are NO COORDINATES. Location is prefecture, municipality and an address line, and the schema carries a position-disclosure field with a reason-for-withholding beside it, which is hard rule 10 written into the source. So it is a lead source, not a map layer, and pinning is a separate job. Hiroshima done: data/leads/hiroshima.json, 102 ministry records, with girth, species and a vitality field (67 good, 24 partly dead, 4 near death). Remaining prefectures are one command each: 1 Hokkaido/Sapporo, 23 Aichi/Nagoya, 28 Hyogo/Kobe, 14 Kanagawa/Kamakura."
+  },
+  {
+   "place": "Sintra",
+   "country": "",
+   "status": "imported",
+   "note": "Portugal ICNF (arvoredo de interesse publico) is imported nationally and covers Sintra. Not a scouting gap, a ledger gap: the tool read it as unscouted because nobody had written the line."
+  },
+  {
+   "place": "Cadiz",
+   "country": "",
+   "status": "imported",
+   "note": "Andalucia REDIAM is imported and covers Cadiz. Ledger gap rather than a scouting gap. Cadiz ships 5 trees and is a finished compact city per CLAUDE.md, so the gap-to-10 is not a target."
+  },
+  {
+   "place": "Bari",
+   "country": "",
+   "status": "imported",
+   "note": "SOLVED 2026-08-16. Puglia's REGIONAL list, dati.puglia.it CKAN 'elenco-degli-alberi-monumentali-della-regione-puglia', CC BY 4.0, 180 trees with per-tree GIS coordinates, girth, height and an urban-context flag. Richer than the MASAF national file already held, which carries no age and no vitality. 5 trees within 15 km of Bari and 30 within 30 km. Imported to data/registers/puglia-alberi-monumentali.json; cross-check against italy-masaf.json before publishing so a tree is not entered twice. THE GENERAL LESSON, already recorded for Campania and Lazio and confirmed again: in Italy the region beats the national file."
+  },
+  {
+   "place": "Lyon",
+   "country": "",
+   "status": "imported",
+   "note": "SOLVED 2026-08-16. Metropole de Lyon publishes its PLU-H ponctual prescription layer for arbres remarquables on data.grandlyon.com under Licence Ouverte: 429 trees, 397 within 15 km of the centre, with species, a location description and a free-prose phytosanitary condition field. Imported. Caveat: it is a PLANNING layer, so a row can be a small stand rather than one trunk ('deux arbres' appears in the condition text), and both fields need reading before a row is treated as one collectible point."
+  },
+  {
+   "place": "Bratislava",
+   "country": "",
+   "status": "imported",
+   "note": "SOLVED 2026-08-16. Slovakia's state register of chranene stromy, SOPSR geoserver WFS, CC BY 4.0: 1,199 designations nationally of which 320 are single trees, 31 within 15 km of Bratislava (23 singles). Every entry links to its own state-register page at data.sopsr.sk, which is a ready second source. Pocet_stromov says how many trees a designation covers, so anything above 1 is a group."
+  },
+  {
+   "place": "The Hague",
+   "country": "",
+   "status": "stalled",
+   "note": "Scouted 2026-08-16. The city's open-data portal (den-haag-opendata.opendatasoft.com) carries only the full tree inventory, which the semantic filter forbids; a search of it for boom/bomen returns mooring posts, benches and the hoofdboomstructuur, no monumental list. The monumental-trees list DOES exist and was adopted by the council on 2026-03-31, but it lives in raadsstukken and on the Haagse Bomenkaart viewer rather than as a dataset. Next: read the Bomenkaart viewer's network calls the way stvk.lt was solved. Note Bomenstichting Den Haag was mailed on 2026-08-16 in another batch."
+  },
+  {
+   "place": "Seattle",
+   "country": "",
+   "status": "empty",
+   "note": "Scouted 2026-08-16. 'SPR Tree View' is the Parks department's full tree inventory, forbidden by the semantic filter, and the 'Heritage_Trees_Map' hit belongs to Normandy Park, a separate suburb 25 km south. Seattle's own Heritage Tree Program is run with PlantAmnesty and publishes no open dataset found this pass. Route here is not a register."
+  },
+  {
+   "place": "Bilbao",
+   "country": "",
+   "status": "blocked",
+   "note": "Euskadi's singular trees exist legally (Decreto 265/1995) but survive only inside a 1:25,000 protected-areas polygon set whose metadata says otherRestrictions and whose download 404s, per the 2026-08-04 Spanish scout. Unchanged. Not a register we can use."
+  },
+  {
+   "place": "Hamburg",
+   "country": "",
+   "status": "empty",
+   "note": "Hamburg's Naturdenkmale register is imported and is tiny: 12 entries state-wide, 2 usable, none with coordinates (2026-08-13). The 'Tree Register Hamburg' item found in the ArcGIS sweep resolves to transparenz.hamburg.de's full Strassenbaumkataster, which the semantic filter forbids. Route here is Wikidata or a non-register source."
+  },
+  {
+   "place": "Jerusalem",
+   "country": "",
+   "status": "stalled",
+   "note": "Probed 2026-08-16 and not resolved. No heritage-tree dataset surfaced on data.gov.il in an English-language search, and the KKL-JNF material is editorial rather than a register. Israel does declare natural monuments through the Nature and Parks Authority, which is the specific thing to check next, in Hebrew, rather than searching for 'heritage trees'."
+  },
+  {
+   "place": "Dubrovnik",
+   "country": "",
+   "status": "stalled",
+   "note": "Croatia returns ZERO datasets in the data.europa.eu sweep for every remarkable-tree phrase tried. Croatia does designate 'spomenik prirode' including individual trees through the Ministry of Environment's nature-protection register, which is the thing to check next; it was not reached this pass."
+  },
+  {
+   "place": "Mexico City",
+   "country": "Mexico City",
+   "status": "stalled",
+   "note": "SCOUTED 2026-08-16. SEDEMA runs a real Arboles Patrimoniales programme with a public map; the GeoJSON behind it is at proyectos.sedema.cdmx.gob.mx/arbolespatrimoniales/Data/, reachable and open, 13 declared trees across 5 boroughs with species, full address, girth, DBH, crown, a condition field and coordinates. Ten are ahuehuetes including a 1,005 cm giant at Tacuba and a 1,382 cm one at Santa Catarina. Saved as data/leads/mexico-city.json rather than a register because NO LICENCE is stated anywhere on the programme site. UNIT TRAP: the height and crown columns are labelled metres and hold centimetres. The programme takes nominations, so it grows. Next: a licence ask to SEDEMA."
+  },
+  {
+   "place": "Chiang Mai",
+   "country": "Chiang Mai",
+   "status": "empty",
+   "note": "SCOUTED 2026-08-16. Thailand has no government register of individual heritage trees that this pass could find. What exists is not a substitute: Changthong Heritage Park is a private paid-entry collection of trees TRANSPLANTED from elsewhere, which fails the premise of standing where a tree has stood for centuries, and the tree-ordination sites (Saraphi road rubber trees) are a cultural practice rather than a list. Route here is not a register."
+  },
+  {
+   "place": "Dubai",
+   "country": "Dubai",
+   "status": "empty",
+   "note": "Not scouted in depth and recorded as empty on reasoning rather than a search, which is the honest label: the UAE has no ancient-tree tradition of the kind this project maps, Dubai's tree stock is almost entirely modern irrigated planting, and the queue's own demand figure is travel demand rather than tree demand. If anything exists it is the Al Ain oases (UNESCO, date palms) which are a different country-level story and not Dubai."
+  },
+  {
+   "place": "Israel",
+   "country": "Israel",
+   "status": "blocked",
+   "note": "OUT OF FOCUS (Hidde, 2026-08-16). Two probes found no heritage-tree dataset on data.gov.il; the declared natural-monument decree list was the one thing left unchecked and is not worth checking while Israel is out of scope. Kept as a record so nobody re-opens it by accident."
+  },
+  {
+   "place": "Sicily (Palermo, Catania, Messina)",
+   "country": "Italy",
+   "status": "exhausted",
+   "note": "SCOUTED 2026-08-17, and the answer is a negative worth keeping. The Regione Siciliana DOES publish its own Elenco degli Alberi Monumentali di Sicilia (updated 17.07.2026, on regione.sicilia.it), covering the whole island including Catania and Messina, so it looks at first like the regional unlock that Campania and Lazio turned out to be. It is not. It is the SAME underlying dataset as the national MASAF register: same sheet ids, same decree D.M. n. 5450 del 19/12/2017, identical girth and height figures, republished with one field added, the criteri di monumentalita saying why each tree was designated, plus a yes/no on proposal for notevole interesse pubblico. NO age field and NO vitality field, which are the two things a page needs most and the two things Campania's per-tree cards and Lazio's xlsx actually provide. It also does NOT count as a second independent source on top of MASAF, because it is the same data. Do not re-scout this: for Sicilian cities, age and vitality still have to come from a garden's own records, a university page or the local press, one tree at a time."
+  },
+  {
+   "place": "Tenerife",
+   "country": "",
+   "status": "stalled",
+   "note": "SCOUTED 2026-08-17 (island scout, Atlantic group). Authority: Cabildo de Tenerife (island-wide portal, 12 trees, JS-rendered, licence not yet checked) PLUS a genuine new find: Ayuntamiento de Santa Cruz de Tenerife open data portal, dataset 'arboles-singulares'. URL: https://www.santacruzdetenerife.es/opendata/dataset/7850581f-371b-4307-a635-3a8c2802a964/resource/4e82859e-052c-4de2-a70a-abff7be9e297/download/arboles_singulares.json (also .csv, .xls, .kml siblings); Cabildo portal: custodiadelterritorio-style JS site, url not re-fetched this pass, see BRIEF's own Tenerife note. Licence: CC BY, proven: the dataset page (https://www.santacruzdetenerife.es/opendata/dataset/arboles-singulares) links http://www.opendefinition.org/licenses/cc-by under class='...license'. This is a genuine open-data licence, verified by fetching the dataset page directly (HTTP 200).. Fields: NOM_COMUN, GENERO, ESPECIE, FAMILIA, ORIGEN, GEOCODIGO, coordinates (GeoJSON Point, WGS84, tree-level), UTM_X/UTM_Y. No age field, no girth field, no vitality field, no access field. ENLACE field for a per-tree detail page says 'coming soon, in process' for every entry checked, so no richer per-tree page exists yet.. Count: 63 designated singular trees, all within the municipality of Santa Cruz de Tenerife (the island's capital, not the whole island). This is IN ADDITION to the Cabildo's island-wide 12, which the existing Tenerife page (4 trees) already draws from.. This is a genuine new register the existing OPEN_DATA_SURVEY.md and passcheck do not know about: a municipal 'arboles singulares' open-data catalogue for the capital, semantically filtered (designated singular trees, not a bulk street-tree inventory) and CC BY licensed, confirmed by fetching the licence page directly rather than trusting a search summary. What is missing before it can ship as a register file: age, girth and vitality are all absent, so every candidate still needs the normal two-source verify pass and a species/age lookup elsewhere (iNaturalist, the future 'ficha' pages once published, or WebSearch per tree). Species names in this file are Spanish common names and Latin binomials split across GENERO+ESPECIE (needs joining, e.g. 'Acacia' + 'nilotica'). Next step for a build pass: python3-import this JSON into data/registers/tenerife-santacruz-arboles-singulares.json with a licence block, then cluster_register.py it against the existing 4 Tenerife trees to see what's walkable from the capital. The Cabildo's separate island-wide 12-tree JS portal (source of the existing Drago Milenario / Vilaflor pines entries) was not re-scouted this pass since the brief already established it as a lead list without a proven licence; treat it as unscouted-for-licence rather than re-verified."
+  },
+  {
+   "place": "Gran Canaria",
+   "country": "",
+   "status": "stalled",
+   "note": "SCOUTED 2026-08-17 (island scout, Atlantic group). Authority: Cabildo de Gran Canaria, Catalogo Insular de Arboles Singulares (Decreto 15 November 2021), plus a separate municipal catalogue for the capital: Ayuntamiento de Las Palmas de Gran Canaria. URL: https://custodiadelterritorio.grancanaria.com/en/arboles-singulares (insular, per-tree 'ficha' pages on a Liferay CMS); https://lpgcsostenible.laspalmasgc.es/wp-content/uploads/2025/02/Catalogo_arboles_LPGC.pdf (municipal, 326 specimens across 181 fichas). Licence: NOT PROVEN for either source. The insular custodiadelterritorio.grancanaria.com page fetched clean (HTTP 200, 320KB) but is a per-tree CMS page with no licence statement found in the fetched HTML head or footer. The municipal PDF sits on lpgcsostenible.laspalmasgc.es, whose /aviso-legal returned a 301 redirect this pass did not follow (time-boxed); no licence sentence quotable yet from either. Until one is fetched and quoted, both stay ungated for import despite good data.. Fields: Insular catalogue (per news coverage, not yet fetched from a per-tree ficha this pass): age (explicitly, up to 400 years for the oldest, e.g. the acebuche of Llano Parra and the sabina of Tirma), a visitability/access flag (11 of the insular 77-85 are recorded as not accessible to visitors, which is exactly the field hard rule 10 needs), species, dimensions. Municipal PDF: not opened this pass, format and fields unconfirmed beyond '326 specimens, 181 fichas' from press coverage.. Count: Insular: sources disagree, 77 or 85 selected from a field survey of 273 candidates (both figures appear in different press pieces, so treat as approximate until the primary source is read). Municipal (Las Palmas de Gran Canaria, the capital): 326 specimens across 181 fichas, covering the whole city, so likely several within any walkable cluster of the capital.. Genuinely promising: this is the first Canary source in this pass with an AGE field and an explicit access/visitability flag, which is rarer than most mainland Spanish regional registers this project has imported. What is in the way is purely licence proof and structured data extraction, not a designation question. Next steps for whoever picks this up: (1) fetch https://lpgcsostenible.laspalmasgc.es/aviso-legal with -L to follow the redirect and quote its reuse terms, or find a dedicated Cabildo/Ayuntamiento open-data portal (datos.grancanaria.com or similar, searched for but not found this pass); (2) if no open licence exists, the per-tree custodiadelterritorio fichas may still be usable as a verification source under the same rules as monumentaltrees.com, i.e. one browser-viewed page at a time, never bulk. Also worth noting for whoever verifies: the insular catalogue's own legal basis is unsettled (a legal report found the Cabildo lacks competence to enforce the ordinance pending a regional biodiversity law), which affects protection status, not whether the trees themselves are real, old or worth a visit."
+  },
+  {
+   "place": "La Palma",
+   "country": "",
+   "status": "empty",
+   "note": "SCOUTED 2026-08-17 (island scout, Atlantic group). Authority: none found. URL: None. Licence: n/a, no register found. Fields: n/a. Count: n/a. Searched for a Cabildo de La Palma singular-tree catalogue analogous to Tenerife and Gran Canaria's; found none. Search results returned only Gran Canaria coverage and a 2019 press line noting that historically 'only Tenerife has an insular catalogue of trees and singular groves besides Gran Canaria', implying La Palma had none as of that date. Properly scouted for this pass (two targeted searches, no promising lead surfaced); route for a future city pass is the cheap non-register path: local press ('la palma arbol mas viejo/singular'), the Caldera de Taburiente national park's own visitor materials, and monumentaltrees.com as a cross-check, one tree at a time."
+  },
+  {
+   "place": "La Gomera",
+   "country": "",
+   "status": "empty",
+   "note": "SCOUTED 2026-08-17 (island scout, Atlantic group). Authority: none found as a formal catalogue; the island's known trees are the Drago Milenario-adjacent Garajonay laurisilva forest and named individual dragon trees such as the Drago de Agalan. URL: None. Licence: n/a, no register found. Fields: n/a. Count: n/a. No Cabildo de La Gomera singular-tree register surfaced. What did surface is press coverage of the Drago de Agalan (over 400 years old per multiple local press pieces, the oldest and largest dragon tree on La Gomera) and the Garajonay National Park laurisilva itself (UNESCO World Heritage, over 10% of the island). Garajonay is a protected forest, not a collectible point under this project's own rule (an avenue or a whole wood is blocked), so any entry from here would be individual named trees like the Drago de Agalan, verified the ordinary two-source way, not a register import. Route for a future pass: local press plus the national park's own published visitor/species materials (parquesnacionales.es), same cheap non-register path as La Palma."
+  },
+  {
+   "place": "Madeira",
+   "country": "",
+   "status": "stalled",
+   "note": "SCOUTED 2026-08-17 (island scout, Atlantic group). Authority: Instituto das Florestas e Conservacao da Natureza (IFCN Madeira), VALCONMAC/ASMAC survey 'Arvores e bosques singulares da Madeira e Porto Santo'. URL: ifcn.madeira.gov.pt/images/FotosArtigos/Florestas/ASMAC/ASMACnn.pdf (numbered PDF cards; the exact nn range a previous pass walked, 71-100, is not fully reproducible: this pass spot-checked ASMAC85.pdf and got a 404, so the working numbers need re-walking rather than assumed). Licence: NOT PROVEN. This pass fetched ifcn.madeira.gov.pt's homepage directly (HTTP 200 after a 301 to /pt/, 909KB) and searched it for any data-reuse licence statement (Creative Commons, 'dados abertos', 'reutilizacao'). None found; every 'licenca' hit on the page is a hunting or fishing permit, unrelated to data reuse. Portuguese public bodies often allow free reuse of official documents by default, but that is not the same as a quotable licence sentence, and this register-layer's own rule treats the absence of one as a hard gate regardless of how good the data is.. Fields: Per OPEN_DATA_SURVEY.md 2026-08-17 (a prior pass, not re-verified here): species, height, maximum perimeter/perimeters, a rough age note, WGS84 coordinates, and an access-and-ownership field. That access field is unusually good: it already blocked 4 of 12 entries for this project (a private hotel garden, a children's care institution, a private rural hotel).. Count: 11 Madeira entries plus 1 on Porto Santo, per the prior pass; not recounted this pass since the PDF numbering did not reproduce cleanly on the one spot-check tried.. This island was flagged in the brief as already scouted by a same-day commit (b36f949, OPEN_DATA_SURVEY.md), and that write-up is thorough on content but records no licence proof, which this pass tried and failed to supply. Two things for whoever picks this up next: (1) find the actual working PDF numbers again (71-100 did not hold at 85 this pass, HTTP 404) by browsing the ASMAC listing page on ifcn.madeira.gov.pt rather than guessing numbers cold; (2) look specifically for a Portuguese open-data portal covering the autonomous region (dados.gov.pt sometimes carries regional bodies, or IFCN may have its own 'dados abertos' section not linked from the homepage) since that is where a quotable CC-style licence is most likely to live, rather than a plain institutional PDF page. Until a licence sentence is found, this register-layer import stays gated even though the underlying data is exactly what this project wants (age note plus access field together)."
+  },
+  {
+   "place": "Azores",
+   "country": "",
+   "status": "unscouted",
+   "note": "SCOUTED 2026-08-17 (island scout, Atlantic group). Authority: Direção Regional dos Recursos Florestais e Ordenamento Territorial (DRRF), Secretaria Regional da Agricultura e Alimentação, drrf.azores.gov.pt; confirmed that the Azores keep their own forestry administration separate from the mainland. URL: https://drrf.azores.gov.pt/ and https://drrf.azores.gov.pt/areas-de-atuacao/ found and not yet fetched directly this pass. Licence: not reached. Fields: not reached. Count: not reached. Confirmed precondition first, per the brief: portugal-icnf.json's own scope field states it is 'the complete national register, all 18 mainland districts' with zero entries matching 'acor'/'azor' anywhere in the 555 rows, so the Azores are genuinely uncovered by what we already hold. One search for a monumental/classified-tree register under DRRF surfaced the department itself but no register page or dataset; a second, more targeted search (the Portuguese legal term 'arvore de interesse publico', which is how mainland Portugal's AIP designation is named, applied to Acores) was not run this pass, out of time. That specific search is the right next step before concluding empty: Portugal's AIP classification is a national legal category and the Azores may run their own parallel list under it the way Madeira runs ASMAC outside ICNF. Left honestly unscouted rather than guessed at."
+  },
+  {
+   "place": "Corsica",
+   "country": "",
+   "status": "stalled",
+   "note": "SCOUTED 2026-08-17 (island scout, Atlantic group). Authority: Office de l'Environnement de la Corse (OEC) with the Conservatoire botanique national de Corse, programme name 'L'arburi nutevuli' / 'Arbres remarquables de Corse', running since 2004. URL: https://www.oec.corsica/L-arburi-nutevuli_a19.html (fetched directly, HTTP 200, 96KB); a Facebook page 'Arbres Remarquables de Corse' and a photo gallery at oec.corsica/photos also exist per search but were not fetched. Licence: not found. The fetched page is almost entirely navigation/menu markup; no licence, CC or data-reuse statement was found in it. Three linked PDFs on the page (Fiche_INV_2013.pdf, Fiche_INV_peuplements_2013.pdf, Fiche_INV_Notice_2013.pdf, all on the old oec.fr domain) read as SUBMISSION forms for nominating a tree to the inventory, not the inventory's own output, so they are not a data source even before a licence question.. Fields: not confirmed from the primary source. A WebSearch summary (a lead, not evidence per this project's own rule on search summaries) described roughly 200 'vegetation monuments' selected by a technical commission meeting twice a year, as of December 2023, but this pass could not locate the actual list, map or dataset behind that number on oec.corsica itself; the fetched page's real body text did not surface in a quick extraction (mostly jQuery menu code), so a longer read of the same page, or its photo gallery and Facebook page, is the honest next step.. Count: unconfirmed, roughly 200 per an unverified search summary, not seen on the primary source. This is a real, active, government-linked programme, not a dead end, so it earns 'stalled' rather than 'empty'. What is in the way is purely navigation: the page found is a landing page describing the programme and how to submit a nomination, not the register output itself. Next step: look for a Corsica open-data portal (the Collectivité de Corse may run one separately from OEC) or ask the OEC site for a public map/liste rather than the landing page, and read the fetched HTML's actual article body (article id 9582608 in the page's own JS) rather than the menu chrome that dominated this pass's quick extraction."
+  },
+  {
+   "place": "Sardinia",
+   "country": "",
+   "status": "stalled",
+   "note": "SCOUTED 2026-08-17 (island scout, Atlantic group). Authority: Regione Sardegna, Corpo Forestale e di Vigilanza Ambientale (CFVA) and the FoReSTAS agency, publishing through Sardegna Geoportale; explicitly tied to the national 'Elenco degli Alberi Monumentali d'Italia' under Legge 10/2013 and the decree of 23/10/2014, the same legal framework Sicily's register turned out to republish verbatim. URL: http://www.sardegnageoportale.it/index.php?xsl=2425&s=377329&v=2&c=14469&t=1&tb=14401 (fetched, HTTP 200, 17KB); also https://www.sardegnaambiente.it (CFVA activity pages) and it.wikipedia.org/wiki/Alberi_monumentali_della_Sardegna. Licence: not found this pass. The geoportale page fetched clean but no CC/IODL/open-data licence phrase was found in its 17KB (a thin page, likely mostly a viewer shell rather than the data itself). Sardegna Geoportale elsewhere in this project's experience often publishes under IODL (Italian Open Data Licence), but that has not been quoted from this specific page yet.. Fields: unconfirmed from the primary source this pass; search results describe it as 'a geographic layer containing the points corresponding to the monumental trees censused... included in the List of Monumental Trees of Italy', which is the same framing Sicily's register used before turning out to be a same-data republish with no age or vitality field.. Count: 431 trees regionwide per an October 2025 update (search summary, not yet primary-source verified), described as the Italian region with the most monumental trees, concentrated in the Barbagia/Ogliastra sub-region rather than near the main coastal towns; our existing italy-masaf.json already holds 4 entries near the island per the brief.. Genuinely undecided, and it matters more than Sicily's answer did because Sardinia is a bigger island with more entries. Sicily's precedent (same sheet ids, same decree, no age/vitality, not an independent second source) is the way to bet, but Piemonte and Puglia are the counter-precedent: both are Italian regions this project already imports as SEPARATE, richer register files (piemonte-alberi-monumentali.json, puglia-alberi-monumentali.json) alongside italy-masaf.json, so 'regional geoportal republishing MASAF' is not automatically a dead end for Italian regions in general. This pass ran out of time before opening the geoportal layer's actual attribute table (the fetched page is a viewer/search shell, not raw data) to settle which case Sardinia is. Next step, ten minutes: open the geoportale's underlying WFS/download link (usually a 'scarica dati' or API link off this same page) and check for an age or vitality column before concluding either way; do not re-fetch the landing page, go straight for the data endpoint."
+  },
+  {
+   "place": "Yakushima",
+   "country": "",
+   "status": "stalled",
+   "note": "Status corrected 2026-08-17 from 'imported': the Japanese giant-tree database is proven and the script exists, but 975 Kagoshima records carry NO coordinates, exactly like Hiroshima's 102, so they are leads until geocoded against a named shrine or address. SCOUTED 2026-08-17 (island scout, Pacific and east Med group). Authority: Environment Ministry / kyoju.biodic.go.jp giant-tree database (same national register already imported for Hiroshima/Sapporo/Kobe/Nagoya/Kamakura/Nikko/Nara per data/register-scouting.json's Japan entry), PLUS the Agency for Cultural Affairs national Natural Monument database (data/registers/japan-bunkacho.json, already held).. URL: https://kyoju.biodic.go.jp/?_action=gtsearch, run via scripts/jp_kyoju.py --prefecture 46 (Kagoshima, which includes Yakushima-cho). Licence: PDL 1.0, already proven in OPEN_DATA_SURVEY.md 2026-08-04 for this exact database (Admin-authored rows only, per the field-based filter jp_kyoju.py already applies). No new licence work needed.. Fields: species, girth (幹周), height (樹高), a vitality field (健全度, health condition), confirmation date. NO coordinates: this database gives prefecture/municipality/address only, same caveat already recorded for the whole Japan entry, so pinning individual Yakushima cedars (the Jomon Sugi, Kigen Sugi, Yakusugi land) is a separate job per tree, same as Hiroshima's leads file.. Count: Confirmed by running the script live this pass: prefecture 46 (Kagoshima) returns 975 records total (crawl started, ~100 fetched before this pass stopped it to stay in budget; not filtered to Yakushima-cho yet). The Agency for Cultural Affairs national register (already imported, data/registers/japan-bunkacho.json) carries exactly ONE Yakushima-area entry, '屋久島スギ原始林' (Yakushima Sugi Primeval Forest, a whole-forest area designation at 30.3287,130.5042), which is an ensemble/wood and fails the collectible-point test on its own; it is NOT the Jomon Sugi or another single named tree, so it cannot be used as a per-tree register entry.. Two things settle this. (1) The mechanism already exists and is proven: python3 scripts/jp_kyoju.py --prefecture 46 --out data/leads/yakushima.json is the exact next command, same licence and same script already trusted for seven other cities. It ran live this pass (55s, reached page 2 of the results before being stopped to respect the pass timebox) and returned real records, confirming the endpoint answers for Kagoshima prefecture. (2) The famous named cedars (Jomon Sugi, Kigen Sugi, Wilson's Stump) will very likely appear inside those 975 records by name or address, but the database gives no coordinates for any of them, so a follow-up verify pass still needs to place each one from tourism/park sources (Forestry Agency Yakushima Kokumin-rin trail materials, the observation-deck coordinates published for Jomon Sugi specifically) the way Hiroshima's pass separated register data from pinning. This is register-backed verify work (rung 4b in CLAUDE.md, ~0.4k tokens/tree), not from-zero research. Kagoshima's server was noticeably slower than the prefectures already crawled (roughly 5-8s per page fetch versus the faster prefectures), so a future pull should expect a longer run, not a hang; it did not time out, it was simply mid-crawl when this pass moved on."
+  },
+  {
+   "place": "Cyprus",
+   "country": "",
+   "status": "stalled",
+   "note": "NOT YET IMPORTED, status corrected 2026-08-17: the scouting pass recorded this as 'imported', which in this ledger means a file exists in data/registers/, and none does. The source is proven and ready: data.gov.cy, CC BY 4.0, 81 trees with species, girth, height and AGE IN YEARS, which almost no register carries. The specific thing in the way is that it has no coordinates, only village and district, so every pin would be approximate and each tree needs geocoding the way Hiroshima's did. Also flagged before anyone trusts the ages: several look patterned (313, 513, 1508) and want the sanity check BRIEF_RESEARCH.md demands of any register number. SCOUTED 2026-08-17 (island scout, Pacific and east Med group). Authority: Republic of Cyprus Department of Forests (Τμήμα Δασών), Ministry of Agriculture, Natural Resources and Environment, published on the National Open Data Portal (data.gov.cy). URL: https://data.gov.cy/el/dataset/memonomena-dentra-mnimeia-tis-fysis-ektos-ton-kratikon-dason ; direct file https://data.gov.cy/sites/default/files/TreeMonumentsOutsideStateForests.csv (fetched clean via curl, 82 lines incl header). Licence: Creative Commons Attribution 4.0 International (CC BY 4.0), stated directly on the dataset page. Proven by fetch, not by search summary.. Fields: Species (Greek common name), District (Λευκωσίας/Λεμεσού/Πάφου/Λάρνακας/Αμμοχώστου), Village, circumference at chest height (m), height (m), AGE IN YEARS, official proclamation date. No coordinates, only village + district, so location_precision stays approximate until each tree is geocoded to its village. No vitality field.. Count: 81 trees nationwide (this dataset is explicitly 'outside state forests' only; Forestry Dept press material cited separately says roughly 68 more isolated trees plus 2 groups sit inside state forests, but no second dataset for those was found on the portal this pass, so treat that subset as unscouted rather than covered). By district: Limassol 31, Paphos 28, Nicosia 13, Larnaca 5, Famagusta 4. Zero in Kyrenia/Famagusta-north, i.e. the Turkish-administered area: this Republic-of-Cyprus dataset almost certainly does not and cannot cover the north, which sits outside the Republic's Forestry Department jurisdiction; whether Northern Cyprus keeps any equivalent list was not checked this pass and stays unscouted.. Strong find, same tier as Bratislava/Bari/Lyon: real licence, real age field (rare), fetched and spot-read directly rather than trusted from a search summary. One register pitfall worth flagging for whoever imports it: several age values look suspiciously patterned (313, 513, 213, 133, 1508, 708...) which may be 'years since a fixed reference date' rather than a clean age-at-designation figure; sanity-check a few against known trees (e.g. the Apaisia terebinth widely reported as Cyprus's oldest tree, a candidate row here as Τρέμιθος/Apaisia at 1,508) before trusting the column at face value, per BRIEF_RESEARCH.md's register-pitfalls section. Next step for a build pass: import as data/registers/cyprus-forestry-monuments.json, then geocode by village for pinning, same shape as other village-only registers."
+  },
+  {
+   "place": "Crete",
+   "country": "",
+   "status": "empty",
+   "note": "SCOUTED 2026-08-17 (island scout, Pacific and east Med group). Authority: Greek Ministry of Environment and Energy / regional Dasarcheio (forestry service), designation 'Διατηρητέο Μνημείο της Φύσης' (Preserved Natural Monument) under Law 998/1979 (originally Legislative Decree 86/1969).. URL: https://el.wikipedia.org/wiki/Διατηρητέα_μνημεία_της_φύσης (fetched; a prose/list article citing ΦΕΚ gazette numbers, not a data table); no data.gov.gr or ypen.gov.gr dataset found for this designation this pass. Licence: No data licence to prove: there is no dataset. The designations exist only as individual ΦΕΚ (Government Gazette) publications and prose lists (el.wikipedia.org's own article on the topic cites ΦΕΚ numbers, not a database).. Fields: n/a, no register exists as data. The prose article names a handful of Crete entries (Cretan Cephalanthero at Kamarai, two oaks at Korfes, two olives at Almyropotamos, an evergreen plane in Heraklion, cypress forests and a plane/elm in Chania) but with no coordinates, age or girth given, just place names.. Count: roughly 6-7 named natural-monument entries for Crete in the national list, none near Heraklion/Chania town centre itself per the article's wording (Korfes, Almyropotamos, Vlatos, Palaiochora, Aidona Kalambaka are all outlying villages).. The national designation is real but is not a usable register: it is ΦΕΚ prose, not data. The much stronger route for Crete, named in the brief and confirmed this pass, is the Olive Tree of Vouves (Ano Vouves, near Kolymvari, roughly 25 km from Chania): a single, famous, individually documented tree with its own museum (visited by 20,000+ people/year), a peer-reviewed genetics paper (PMC8620074) discussing its origin, and an official 'natural heritage monument' declaration by the Region of Crete. Age is genuinely disputed across sources (2,000 to 4,000 years, no agreed dating method for olives), which is exactly the kind of range BRIEF_RESEARCH.md says to report honestly rather than pick a winner. This is a from-zero verify candidate, not a register import: two independent sources already surfaced (Wikipedia's own dedicated 'Olive tree of Vouves' article, the museum's own ABEA.gr page, the PMC paper) and it clears the collectible-point and access bars easily (public museum site). Recommend a verify pass name this tree directly rather than searching further."
+  },
+  {
+   "place": "Rhodes",
+   "country": "",
+   "status": "empty",
+   "note": "SCOUTED 2026-08-17 (island scout, Pacific and east Med group). Authority: Greek Ministry of Environment and Energy / regional Dasarcheio (forestry service), designation 'Διατηρητέο Μνημείο της Φύσης' (Preserved Natural Monument) under Law 998/1979 (originally Legislative Decree 86/1969).. URL: https://el.wikipedia.org/wiki/Διατηρητέα_μνημεία_της_φύσης (fetched; a prose/list article citing ΦΕΚ gazette numbers, not a data table); no data.gov.gr or ypen.gov.gr dataset found for this designation this pass. Licence: No data licence to prove: there is no dataset. The designations exist only as individual ΦΕΚ (Government Gazette) publications and prose lists (el.wikipedia.org's own article on the topic cites ΦΕΚ numbers, not a database).. Fields: n/a, no register exists as data.. Count: one national entry found for Rhodes: a cypress forest at 'Katarti', Empona, which is an AREA/forest designation, not an individual tree, and fails the collectible-point test on its face (an avenue or whole wood is blocked per BRIEF_RESEARCH.md).. No individual named monumental tree surfaced for Rhodes this pass, national or otherwise. Genuinely empty rather than merely unscouted: the one hit is explicitly a forest/grove designation, not a candidate. Route here is the generic sweep (Rhodes Old Town gardens, the Valley of the Butterflies, monastery grounds) rather than any register, and this pass did not have time to run it; record as empty for the register question specifically, and leave named-tree discovery for a from-zero verify pass."
+  },
+  {
+   "place": "Corfu",
+   "country": "",
+   "status": "empty",
+   "note": "SCOUTED 2026-08-17 (island scout, Pacific and east Med group). Authority: Greek Ministry of Environment and Energy / regional Dasarcheio (forestry service), designation 'Διατηρητέο Μνημείο της Φύσης' (Preserved Natural Monument) under Law 998/1979 (originally Legislative Decree 86/1969).. URL: https://el.wikipedia.org/wiki/Διατηρητέα_μνημεία_της_φύσης (fetched; a prose/list article citing ΦΕΚ gazette numbers, not a data table); no data.gov.gr or ypen.gov.gr dataset found for this designation this pass. Licence: No data licence to prove: there is no dataset. The designations exist only as individual ΦΕΚ (Government Gazette) publications and prose lists (el.wikipedia.org's own article on the topic cites ΦΕΚ numbers, not a database).. Fields: n/a, no register exists as data.. Count: zero entries for Corfu found in the national Preserved Natural Monument list per the Wikipedia article fetched this pass.. Not represented at all in the national designation. Corfu is known informally for old olive groves (a UNESCO-recognised agricultural landscape) but that is a landscape-scale claim, not individual named trees, and this pass did not have time to search for a specific candidate. Route here is the generic sweep and local sources (Achilleion grounds, Mon Repos estate gardens, Paleokastritsa monastery), not a register."
+  },
+  {
+   "place": "Santorini",
+   "country": "",
+   "status": "empty",
+   "note": "SCOUTED 2026-08-17 (island scout, Pacific and east Med group). Authority: Greek Ministry of Environment and Energy / regional Dasarcheio (forestry service), designation 'Διατηρητέο Μνημείο της Φύσης' (Preserved Natural Monument) under Law 998/1979 (originally Legislative Decree 86/1969).. URL: https://el.wikipedia.org/wiki/Διατηρητέα_μνημεία_της_φύσης (fetched; a prose/list article citing ΦΕΚ gazette numbers, not a data table); no data.gov.gr or ypen.gov.gr dataset found for this designation this pass. Licence: No data licence to prove: there is no dataset. The designations exist only as individual ΦΕΚ (Government Gazette) publications and prose lists (el.wikipedia.org's own article on the topic cites ΦΕΚ numbers, not a database).. Fields: n/a, no register exists as data.. Count: zero. Not represented in the national list, and this matches the brief's own expectation: Santorini is a volcanic island with almost no trees (thin soil, wind exposure, no permanent surface water), so a genuinely empty result here is a real verdict, not a gap in the search.. Confirms the brief's stated expectation rather than adding a new finding: Greece has no central register as data, and Santorini specifically has essentially no tree candidates regardless. Do not spend further search time here; if a future pass wants to check, the only plausible angle is a single old vineyard specimen or a monastery courtyard tree, not a monumental-tree hunt."
+  },
+  {
+   "place": "Oahu",
+   "country": "",
+   "status": "imported",
+   "note": "IMPORTED 2026-08-17 to data/registers/hawaii-exceptional-trees.json by scripts/import_hawaii_exceptional.py. 339 designated trees across all four counties, 289 publishable after the semantic filter. CC0 1.0, proven from the dataset's own metadata endpoint. Every row has coordinates; 217 carry a trunk circumference and 301 a condition reading; there is no age field. The filter removed 39 trees on Schofield Barracks and Wheeler Army Airfield under hard rule 10, 10 groves and rows under the collectible-point test, and 1 dead-tree location. SCOUTED 2026-08-17 (island scout, Pacific and east Med group). Authority: City & County of Honolulu, Department of Parks and Recreation, Division of Urban Forestry, publishing the 'Exceptional Trees On Oahu' dataset on the Honolulu Open Data Portal (Socrata). Despite the name, confirmed by querying the live data (not a search summary) that it carries entries tagged for Kauai, Maui, the Big Island and Moloka'i/Lanai too, not Oahu alone.. URL: https://data.honolulu.gov/Recreation/Exceptional-Trees-On-Oahu/84fd-3fzf ; queried directly via the Socrata API, e.g. https://data.honolulu.gov/resource/84fd-3fzf.json?$limit=5 (curl -m 20, HTTP 200, real rows). Licence: CC0 1.0 Universal (Public Domain Dedication), confirmed by fetching the dataset's own metadata API (https://data.honolulu.gov/api/views/84fd-3fzf.json), licenseId 'CC0_10', attribution 'Department of Parks and Recreation'. The best licence found on this whole pass: no attribution even required.. Fields: species (scientific_name, common_name), height, diameter_in, trunk_circumference (girth, though many rows read 'null'), a live TREE CONDITION / vitality field ('Excellent', 'Good' etc, coded), crown spread, land_use, a plain-English location_description ('Foster Botanical Garden, 180 N. Vineyard Blvd.', 'Schofield Barracks...'), an island code, and TREE-LEVEL LATITUDE/LONGITUDE on every row queried. No age field, so age here would need the growth-rate/girth route or stay an honest gap per BRIEF_RESEARCH.md.. Count: ~240 of the 339 statewide rows are coded Oahu ('O' 236 + 'Oahu' spelled out 4). Includes central-Honolulu landmarks by name (Foster Botanical Garden, Queen's Medical Center, Ala Moana Beach Park), so a meaningful share sits in or near town; exact walking-distance count not run this pass.. This is the best find of the pass: coordinates, condition/vitality and a public-domain licence together, which no European register scouted so far has matched all three of. One caveat worth flagging for a build pass: some rows describe a GROVE ('Grove [11]', a baobab grove at Ala Moana) rather than one trunk, which fails the collectible-point rule and needs filtering per row, same discipline as Lyon's PLU-H layer. Also worth checking before import: whether Hawai'i County (Big Island) and Maui/Kauai maintain their OWN separate, richer registries alongside feeding this one (the brief's search for a Hawaii County ArcGIS 'Exceptional Trees' layer, id 59, 404'd this pass at gis.hawaiicounty.gov/arcgis/rest/services/COHGIS_Public/COHGIS_Public/MapServer/59, so that specific URL is stale or renamed, not proof no county-level layer exists). Next step for a build pass: import as data/registers/hawaii-exceptional-trees.json directly from the Socrata endpoint (no scraping needed, it is a real API), then cluster per island."
+  },
+  {
+   "place": "Maui",
+   "country": "",
+   "status": "imported",
+   "note": "IMPORTED 2026-08-17 to data/registers/hawaii-exceptional-trees.json by scripts/import_hawaii_exceptional.py. 339 designated trees across all four counties, 289 publishable after the semantic filter. CC0 1.0, proven from the dataset's own metadata endpoint. Every row has coordinates; 217 carry a trunk circumference and 301 a condition reading; there is no age field. The filter removed 39 trees on Schofield Barracks and Wheeler Army Airfield under hard rule 10, 10 groves and rows under the collectible-point test, and 1 dead-tree location. SCOUTED 2026-08-17 (island scout, Pacific and east Med group). Authority: City & County of Honolulu, Department of Parks and Recreation, Division of Urban Forestry, publishing the 'Exceptional Trees On Oahu' dataset on the Honolulu Open Data Portal (Socrata). Despite the name, confirmed by querying the live data (not a search summary) that it carries entries tagged for Kauai, Maui, the Big Island and Moloka'i/Lanai too, not Oahu alone.. URL: https://data.honolulu.gov/Recreation/Exceptional-Trees-On-Oahu/84fd-3fzf ; queried directly via the Socrata API, e.g. https://data.honolulu.gov/resource/84fd-3fzf.json?$limit=5 (curl -m 20, HTTP 200, real rows). Licence: CC0 1.0 Universal (Public Domain Dedication), confirmed by fetching the dataset's own metadata API (https://data.honolulu.gov/api/views/84fd-3fzf.json), licenseId 'CC0_10', attribution 'Department of Parks and Recreation'. The best licence found on this whole pass: no attribution even required.. Fields: species (scientific_name, common_name), height, diameter_in, trunk_circumference (girth, though many rows read 'null'), a live TREE CONDITION / vitality field ('Excellent', 'Good' etc, coded), crown spread, land_use, a plain-English location_description ('Foster Botanical Garden, 180 N. Vineyard Blvd.', 'Schofield Barracks...'), an island code, and TREE-LEVEL LATITUDE/LONGITUDE on every row queried. No age field, so age here would need the growth-rate/girth route or stay an honest gap per BRIEF_RESEARCH.md.. Count: 29 of 339 rows coded 'M' (Maui). Proximity to Kahului/Wailuku or Lahaina not broken out this pass; location_description strings would answer it in a follow-up read, not new research.. This is the best find of the pass: coordinates, condition/vitality and a public-domain licence together, which no European register scouted so far has matched all three of. One caveat worth flagging for a build pass: some rows describe a GROVE ('Grove [11]', a baobab grove at Ala Moana) rather than one trunk, which fails the collectible-point rule and needs filtering per row, same discipline as Lyon's PLU-H layer. Also worth checking before import: whether Hawai'i County (Big Island) and Maui/Kauai maintain their OWN separate, richer registries alongside feeding this one (the brief's search for a Hawaii County ArcGIS 'Exceptional Trees' layer, id 59, 404'd this pass at gis.hawaiicounty.gov/arcgis/rest/services/COHGIS_Public/COHGIS_Public/MapServer/59, so that specific URL is stale or renamed, not proof no county-level layer exists). Next step for a build pass: import as data/registers/hawaii-exceptional-trees.json directly from the Socrata endpoint (no scraping needed, it is a real API), then cluster per island."
+  },
+  {
+   "place": "Kauai",
+   "country": "",
+   "status": "imported",
+   "note": "IMPORTED 2026-08-17 to data/registers/hawaii-exceptional-trees.json by scripts/import_hawaii_exceptional.py. 339 designated trees across all four counties, 289 publishable after the semantic filter. CC0 1.0, proven from the dataset's own metadata endpoint. Every row has coordinates; 217 carry a trunk circumference and 301 a condition reading; there is no age field. The filter removed 39 trees on Schofield Barracks and Wheeler Army Airfield under hard rule 10, 10 groves and rows under the collectible-point test, and 1 dead-tree location. SCOUTED 2026-08-17 (island scout, Pacific and east Med group). Authority: City & County of Honolulu, Department of Parks and Recreation, Division of Urban Forestry, publishing the 'Exceptional Trees On Oahu' dataset on the Honolulu Open Data Portal (Socrata). Despite the name, confirmed by querying the live data (not a search summary) that it carries entries tagged for Kauai, Maui, the Big Island and Moloka'i/Lanai too, not Oahu alone.. URL: https://data.honolulu.gov/Recreation/Exceptional-Trees-On-Oahu/84fd-3fzf ; queried directly via the Socrata API, e.g. https://data.honolulu.gov/resource/84fd-3fzf.json?$limit=5 (curl -m 20, HTTP 200, real rows). Licence: CC0 1.0 Universal (Public Domain Dedication), confirmed by fetching the dataset's own metadata API (https://data.honolulu.gov/api/views/84fd-3fzf.json), licenseId 'CC0_10', attribution 'Department of Parks and Recreation'. The best licence found on this whole pass: no attribution even required.. Fields: species (scientific_name, common_name), height, diameter_in, trunk_circumference (girth, though many rows read 'null'), a live TREE CONDITION / vitality field ('Excellent', 'Good' etc, coded), crown spread, land_use, a plain-English location_description ('Foster Botanical Garden, 180 N. Vineyard Blvd.', 'Schofield Barracks...'), an island code, and TREE-LEVEL LATITUDE/LONGITUDE on every row queried. No age field, so age here would need the growth-rate/girth route or stay an honest gap per BRIEF_RESEARCH.md.. Count: 24 of 339 rows coded 'K' (Kauai). Proximity to Lihue not broken out this pass.. This is the best find of the pass: coordinates, condition/vitality and a public-domain licence together, which no European register scouted so far has matched all three of. One caveat worth flagging for a build pass: some rows describe a GROVE ('Grove [11]', a baobab grove at Ala Moana) rather than one trunk, which fails the collectible-point rule and needs filtering per row, same discipline as Lyon's PLU-H layer. Also worth checking before import: whether Hawai'i County (Big Island) and Maui/Kauai maintain their OWN separate, richer registries alongside feeding this one (the brief's search for a Hawaii County ArcGIS 'Exceptional Trees' layer, id 59, 404'd this pass at gis.hawaiicounty.gov/arcgis/rest/services/COHGIS_Public/COHGIS_Public/MapServer/59, so that specific URL is stale or renamed, not proof no county-level layer exists). Next step for a build pass: import as data/registers/hawaii-exceptional-trees.json directly from the Socrata endpoint (no scraping needed, it is a real API), then cluster per island."
+  },
+  {
+   "place": "Big Island",
+   "country": "",
+   "status": "imported",
+   "note": "IMPORTED 2026-08-17 to data/registers/hawaii-exceptional-trees.json by scripts/import_hawaii_exceptional.py. 339 designated trees across all four counties, 289 publishable after the semantic filter. CC0 1.0, proven from the dataset's own metadata endpoint. Every row has coordinates; 217 carry a trunk circumference and 301 a condition reading; there is no age field. The filter removed 39 trees on Schofield Barracks and Wheeler Army Airfield under hard rule 10, 10 groves and rows under the collectible-point test, and 1 dead-tree location. SCOUTED 2026-08-17 (island scout, Pacific and east Med group). Authority: City & County of Honolulu, Department of Parks and Recreation, Division of Urban Forestry, publishing the 'Exceptional Trees On Oahu' dataset on the Honolulu Open Data Portal (Socrata). Despite the name, confirmed by querying the live data (not a search summary) that it carries entries tagged for Kauai, Maui, the Big Island and Moloka'i/Lanai too, not Oahu alone.. URL: https://data.honolulu.gov/Recreation/Exceptional-Trees-On-Oahu/84fd-3fzf ; queried directly via the Socrata API, e.g. https://data.honolulu.gov/resource/84fd-3fzf.json?$limit=5 (curl -m 20, HTTP 200, real rows). Licence: CC0 1.0 Universal (Public Domain Dedication), confirmed by fetching the dataset's own metadata API (https://data.honolulu.gov/api/views/84fd-3fzf.json), licenseId 'CC0_10', attribution 'Department of Parks and Recreation'. The best licence found on this whole pass: no attribution even required.. Fields: species (scientific_name, common_name), height, diameter_in, trunk_circumference (girth, though many rows read 'null'), a live TREE CONDITION / vitality field ('Excellent', 'Good' etc, coded), crown spread, land_use, a plain-English location_description ('Foster Botanical Garden, 180 N. Vineyard Blvd.', 'Schofield Barracks...'), an island code, and TREE-LEVEL LATITUDE/LONGITUDE on every row queried. No age field, so age here would need the growth-rate/girth route or stay an honest gap per BRIEF_RESEARCH.md.. Count: 38 of 339 rows coded 'B' (Big Island), the largest county share after Oahu. Proximity to Hilo or Kailua-Kona not broken out this pass. Note a Hawaii County ArcGIS 'Exceptional Trees' layer may exist separately (id 59 hinted at by a search result) but the specific URL tried 404'd this pass; worth one more look before assuming the county has no richer layer of its own.. This is the best find of the pass: coordinates, condition/vitality and a public-domain licence together, which no European register scouted so far has matched all three of. One caveat worth flagging for a build pass: some rows describe a GROVE ('Grove [11]', a baobab grove at Ala Moana) rather than one trunk, which fails the collectible-point rule and needs filtering per row, same discipline as Lyon's PLU-H layer. Also worth checking before import: whether Hawai'i County (Big Island) and Maui/Kauai maintain their OWN separate, richer registries alongside feeding this one (the brief's search for a Hawaii County ArcGIS 'Exceptional Trees' layer, id 59, 404'd this pass at gis.hawaiicounty.gov/arcgis/rest/services/COHGIS_Public/COHGIS_Public/MapServer/59, so that specific URL is stale or renamed, not proof no county-level layer exists). Next step for a build pass: import as data/registers/hawaii-exceptional-trees.json directly from the Socrata endpoint (no scraping needed, it is a real API), then cluster per island."
+  },
+  {
+   "place": "Las Vegas",
+   "country": "United States",
+   "status": "stalled",
+   "note": "SCOUTED 2026-08-18. Nevada Division of Forestry's 2015 Nevada Big Tree Register (statewide champion-tree PDF) carries at least 11 UNLV campus champions, 3 at Winchester Park and 2 at The Springs Preserve, all in Clark County/Las Vegas, all genuinely walkable clusters. No explicit open-licence statement found (only a generic accuracy disclaimer on a sibling NV.gov site), so not imported as a register file; used as a verification/lead source for hand-verified layer-1 entries instead, same treatment as Toronto's Ontario Heritage Tree data. Full writeup and extraction method in OPEN_DATA_SURVEY.md. Next: a verify pass to place each UNLV tree on campus (the register gives no street address) and find per-tree second sources."
+  },
+  {
+   "place": "Mexico City",
+   "country": "Mexico",
+   "status": "found",
+   "note": "FOUND 2026-08-19 by the verify pass, not by a scout, and it is a real register nobody had. SEDEMA (the city's environment secretariat) ran a formal Arboles Patrimoniales declaration in 2025, published in the official gazette, and its project site proyectos.sedema.cdmx.gob.mx/arbolespatrimoniales/ publishes a Google My Maps KML carrying tree-level GPS, species, trunk diameter and circumference for all 12 declared trees. Ten of them are now verified and written. NOT imported to data/registers/ because the licence sentence has not been read at the primary source yet, which is the gate OPEN_DATA_SURVEY.md sets; do that before promoting it. One data fault to carry forward: the 'Altura total (m)' field has its decimal point stripped on most rows, so 22.00 m reads as 2200."
+  },
+  {
+   "place": "South Korea",
+   "country": "South Korea",
+   "status": "stalled",
+   "note": "SCOUTED 2026-08-20 (Seoul #33, no supply, no verdict). The candidate source is real and promising: 국가유산청_문화재 공간 정보 (Cultural Heritage Administration's heritage spatial information API), data.go.kr/data/3070426/openapi.do, free OpenAPI plus file download, ~15,000 designated heritage items nationwide with coordinates and heritage-type classification, which would let a scout filter to Natural Monument (천연기념물) type and then to tree entries the same way the MASAF/regional split works in Italy. Stalled on licence, not existence: the page says usage scope is unrestricted and Korean government open data is required to carry a KOGL (공공누리) type badge, but this pass's tooling (WebFetch, which summarises rather than renders) could not read which KOGL type number is actually attached, and CLAUDE.md requires a proving sentence naming the specific licence before import. Next: a session with real browser rendering reads the badge directly, or checks the OpenAPI response's own metadata envelope for a licence field."
   }
+ ],
+ "out_of_focus": {
+  "note": "Regions Hidde ruled out of focus on 2026-08-16: \"israel africa india and russia ar out of focus\". Read by scripts/scout_next.py, which skips them so --target never points there and no run spends a window scouting them. This is a SCOPE decision, not a judgement about the trees: the queue still ranks these cities by demand, and nothing published is removed. Reversing it means deleting a line here.",
+  "countries": [
+   "Israel",
+   "India",
+   "Russia"
+  ],
+  "regions": [
+   "Africa"
+  ],
+  "africa_countries": [
+   "South Africa",
+   "Morocco",
+   "Egypt",
+   "Kenya",
+   "Tanzania",
+   "Tunisia",
+   "Namibia",
+   "Ethiopia",
+   "Ghana",
+   "Senegal",
+   "Uganda",
+   "Nigeria",
+   "Algeria",
+   "Zimbabwe",
+   "Botswana",
+   "Zambia",
+   "Mozambique",
+   "Rwanda",
+   "Madagascar"
+  ],
+  "affects": "3 ranked cities as of 2026-08-16: Jerusalem (#51), Tel Aviv (#143), Cape Town (#171). Jerusalem's half-finished Israel scout is closed by this rather than left stalled."
+ }
 }
