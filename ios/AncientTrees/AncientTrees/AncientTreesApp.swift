@@ -41,6 +41,13 @@ struct AncientTreesApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                // The whole app presses in moss, not in system blue. Without
+                // this, iOS tints the selected tab, the map's locate button and
+                // every text field's caret and placeholder link with its own
+                // accent, so four screens out of fourteen had a blue element on
+                // them and the app read as half-finished. Found by the first
+                // screenshot sweep on 2026-08-20, on the first screenshot.
+                .tint(Brand.moss)
                 .task { AncientTreesApp.configureAppearance() }
         }
     }

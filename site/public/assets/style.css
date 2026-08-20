@@ -329,7 +329,7 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
   .only-desktop { display: none !important; }
   .only-mobile { display: block; }
   .nav-drop-menu a.only-mobile { display: flex; }
-  /* The mobile bar is the mark and ONE control (Hidde, 2026-08-19: "gooi dan
+  /* The mobile bar is the mark and ONE control (Hidde, 2026-08-20: "gooi dan
      alles onder het hamburger menu"). Map, the account avatar and the app pill
      all carry .only-desktop and move into the panel below, which is what
      AllTrails, Airbnb and Booking do on a phone. The version before this had

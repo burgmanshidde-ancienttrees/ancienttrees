@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """What counts as a layout fault. One file, both platforms.
 
-Hidde, 2026-08-21: "kun je vervolgens zorgen dat de CI voor app en web dezelfde
+Hidde, 2026-08-20: "kun je vervolgens zorgen dat de CI voor app en web dezelfde
 kwaliteit nastreven". They did not. The app could measure a four-point drift
 (appfit.py, written 2026-08-20) while the website had no idea what a drift was,
 and the website had a fit check the app did not judge in CI. Two gates, two

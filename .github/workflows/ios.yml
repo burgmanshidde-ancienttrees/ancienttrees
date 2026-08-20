@@ -80,6 +80,11 @@ jobs:
       - name: Build and test
         run: |
           set -o pipefail
+          # The whole log goes to a file and only the interesting lines to the
+          # console. SweepFrames prints every screen's element tree between
+          # <<<SWEEP markers, which is thousands of lines nobody reads and the
+          # exact input the layout check below needs, so grep may filter what
+          # the console shows and must not filter what is kept.
           xcodebuild test \
             -project ios/AncientTrees/AncientTrees.xcodeproj \
             -scheme AncientTrees \
@@ -87,7 +92,8 @@ jobs:
             -derivedDataPath /tmp/dd \
             -retry-tests-on-failure -test-iterations 2 \
             CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" \
-            | grep -E "Test case|error:|warning: .*deprecat|\*\* (TEST|BUILD)" || true
+            > /tmp/xcodebuild.log 2>&1 || true
+          grep -E "Test case|error:|warning: .*deprecat|\*\* (TEST|BUILD)" /tmp/xcodebuild.log || true
           # grep swallows the exit code, so ask xcodebuild again for the verdict.
           test -f /tmp/dd/Logs/Test/*.xcresult 2>/dev/null || true
 
@@ -105,3 +111,23 @@ jobs:
               print("FAILED:", f.get("testName"), "-", f.get("failureText", "")[:200])
           raise SystemExit(1 if failed or passed == 0 else 0)
           PY
+
+      # The app MEASURED its own layout since 2026-08-20 and judged none of it:
+      # SweepFrames printed the frames, the grep above threw them away, and the
+      # run went green with a heading four points off the card under it. This is
+      # the step that reads them, and it applies the same three rules the
+      # website's smoke test applies to rendered pages, from the same file
+      # (scripts/layout_rules.py). Hidde, 2026-08-20: "kun je vervolgens zorgen
+      # dat de CI voor app en web dezelfde kwaliteit nastreven."
+      #
+      # It runs even when the tests failed, because a layout finding is worth
+      # having in the same log as the failure that hid it.
+      - name: Does it line up (CLIPPED / DRIFT / SMALL)
+        if: always()
+        run: |
+          if ! grep -q "<<<SWEEP " /tmp/xcodebuild.log; then
+            echo "SweepFrames produced no measurements; nothing to judge."
+            echo "That is a failure of the sweep, not a clean app."
+            exit 1
+          fi
+          python3 scripts/appfit.py --dump /tmp/xcodebuild.log
