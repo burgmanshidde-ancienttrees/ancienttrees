@@ -73,6 +73,7 @@ struct MapTab: View {
                 // scrolls, and the grabber at the top stays outside the scroll
                 // view so there is always a way back down.
                 sheet.scrollDisabled(sheetHeight != .full)
+                    .scrollDismissesKeyboard(.immediately)
             }
         }
         // The title used to float over the map as bare text with nothing behind
@@ -131,6 +132,7 @@ struct MapTab: View {
             }
             .buttonStyle(.borderedProminent)
             .tint(saved.isVisited(t.id) ? .gray : Color(red: 0.20, green: 0.35, blue: 0.20))
+            .sensoryFeedback(.success, trigger: saved.isVisited(t.id)) { _, now in now }
         }
         .padding(16)
         .background(Color(.secondarySystemBackground), in: .rect(cornerRadius: 14))

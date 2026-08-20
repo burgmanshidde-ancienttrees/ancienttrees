@@ -46,27 +46,20 @@ struct TreeCard: View {
             }
             .frame(height: 190)
             .clipped()
-            // The credit sits on the CLIPPED frame, not on the image. On the
-            // image it is positioned against the scaled bitmap, which overflows
-            // the frame, so .clipped() cut it away and two CC BY-SA photographs
-            // shipped with no attribution at all. That is a licence breach
-            // rather than a cosmetic bug: the credit is the licence's price.
-            .overlay(alignment: .bottomLeading) {
-                if let c = Photos.credit(p) { creditTag(c) }
-            }
+            // No credit painted over the photograph (Hidde, 2026-08-20: "please
+            // dont refer to wikicommons or whatever with an overlay on the tree,
+            // put it somwhere small on the deeper page"). A card is a thumbnail
+            // that exists to make somebody tap it, and a dark chip over the
+            // trunk is the one thing on it that is not the tree.
+            //
+            // The attribution is not dropped, it MOVED: the tree page carries it
+            // under the photograph, one tap away, which is how Wikipedia's own
+            // apps and every image search do it. What is never allowed is a
+            // CC BY or BY-SA picture with no credit anywhere at all, which is
+            // what shipped once before and is the reason this comment exists.
         } else {
             noPhoto.frame(height: 190)
         }
-    }
-
-    private func creditTag(_ c: String) -> some View {
-        Text(c)
-            .font(.system(size: 9))
-            .foregroundStyle(.white.opacity(0.95))
-            .lineLimit(1)
-            .padding(.horizontal, 6).padding(.vertical, 3)
-            .background(.black.opacity(0.45), in: .rect(cornerRadius: 4))
-            .padding(6)
     }
 
     private var placeholder: some View {
@@ -99,6 +92,10 @@ struct TreeCard: View {
                 .background(.black.opacity(0.28), in: .circle)
         }
         .buttonStyle(.plain)
+        .accessibilityLabel(saved.isSaved(tree.id)
+                            ? "Saved \(tree.name). Tap to remove"
+                            : "Save \(tree.name)")
+        .sensoryFeedback(.selection, trigger: saved.isSaved(tree.id))
     }
 
     private var ticked: some View {

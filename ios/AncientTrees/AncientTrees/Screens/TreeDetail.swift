@@ -42,31 +42,46 @@ struct TreeDetail: View {
         }
         .navigationTitle(tree.name)
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                ShareLink(item: URL(string: "https://ancienttrees.app" + tree.url)!,
+                          subject: Text(tree.name),
+                          message: Text("\(tree.name), \(tree.city).")) {
+                    Image(systemName: "square.and.arrow.up")
+                }
+                .accessibilityLabel("Share this tree")
+            }
+        }
         .sheet(isPresented: $reporting) { ContributeView(about: tree) }
     }
 
     /// The photograph, or the species drawn, edge to edge. AllTrails leads every
     /// route with a picture and it is most of why their pages feel like an
     /// invitation rather than a database record.
+    ///
+    /// The credit sits UNDER it rather than painted across it.
+    ///
+    /// This is the only place the attribution appears now, which is deliberate:
+    /// cards stopped carrying it on 2026-08-20 because a dark chip over the
+    /// trunk is the one thing on a card that is not the tree. A CC BY or BY-SA
+    /// licence obliges a credit and this is it, in the ordinary place a caption
+    /// goes, which is also what every image search and Wikipedia's own apps do.
     @ViewBuilder private var hero: some View {
         if let p = tree.photo, let url = Photos.thumb(p.url, width: 960) {
-            AsyncImage(url: url) { img in
-                img.resizable().aspectRatio(contentMode: .fill)
-            } placeholder: {
-                heroFallback
-            }
-            .frame(height: 240)
-            .clipped()
-            .clipShape(.rect(cornerRadius: 14))
-            // Same reason as the card: on the image the credit is clipped away
-            // with the overflow, and a CC BY-SA photograph without its credit is
-            // a licence breach.
-            .overlay(alignment: .bottomLeading) {
+            VStack(alignment: .leading, spacing: 6) {
+                AsyncImage(url: url) { img in
+                    img.resizable().aspectRatio(contentMode: .fill)
+                } placeholder: {
+                    heroFallback
+                }
+                .frame(height: 240)
+                .clipped()
+                .clipShape(.rect(cornerRadius: 14))
                 if let c = Photos.credit(p) {
-                    Text(c).font(.system(size: 10)).foregroundStyle(.white.opacity(0.95))
-                        .padding(.horizontal, 7).padding(.vertical, 4)
-                        .background(.black.opacity(0.45), in: .rect(cornerRadius: 5))
-                        .padding(8)
+                    Text(c)
+                        .font(.caption2)
+                        .foregroundStyle(.secondary)
+                        .lineLimit(2)
                 }
             }
         } else {
@@ -209,6 +224,10 @@ struct TreeDetail: View {
                     .font(.headline).padding(.vertical, 14).padding(.horizontal, 16)
             }
             .buttonStyle(.bordered)
+            .accessibilityLabel(saved.isVisited(tree.id)
+                                ? "Ticked off. Tap to undo"
+                                : "I have stood in front of this tree")
+            .sensoryFeedback(.success, trigger: saved.isVisited(tree.id)) { _, now in now }
 
             Button {
                 saved.toggleSaved(tree.id)
@@ -220,6 +239,8 @@ struct TreeDetail: View {
                     .font(.headline).padding(.vertical, 14).padding(.horizontal, 16)
             }
             .buttonStyle(.bordered)
+            .accessibilityLabel(saved.isSaved(tree.id) ? "Saved. Tap to remove" : "Save this tree")
+            .sensoryFeedback(.selection, trigger: saved.isSaved(tree.id))
         }
         .padding(.horizontal, 16)
         .padding(.bottom, 8)
