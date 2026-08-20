@@ -467,6 +467,41 @@ def trend_section(gsc):
     return "\n".join(out)
 
 
+def _selftest_trend():
+    """Prove trend_section on known input. `python3 scripts/daily_digest.py --selftest`.
+
+    Exists because this section cannot be checked against the live API without
+    the GSC secrets, and because the digest refuses to rewrite a day it has
+    already written: a mistake here would sit unseen until tomorrow's entry.
+    """
+    def pg(page, imp, clicks, pos):
+        return {"keys": ["https://ancienttrees.app" + page], "impressions": imp,
+                "clicks": clicks, "position": pos}
+    def qy(q, imp):
+        return {"keys": [q], "impressions": imp, "clicks": 0, "position": 10}
+    now = [pg("/palermo", 184, 3, 10.1), pg("/prague", 136, 8, 7.6),
+           pg("/ottawa", 40, 1, 14.0), pg("/rome", 214, 1, 15.0),
+           pg("/london", 131, 0, 22.1), pg("/tiny", 4, 0, 40.0)]
+    before = [pg("/palermo", 120, 2, 13.0), pg("/prague", 140, 7, 7.4),
+              pg("/rome", 260, 4, 12.0), pg("/london", 150, 1, 19.0)]
+    out = trend_section(([], [qy("new query", 4)], now, [], [], before, []))
+    fails = []
+    def want(cond, msg):
+        if not cond:
+            fails.append(msg)
+    want("/palermo | 184 | +64" in out, "a page that gained should be listed with its gain")
+    want("+2.9" in out, "an improved position should read as a positive move")
+    want("/ottawa" in out and "Newly ranking" in out, "a page absent before is newly ranking")
+    want("/tiny" not in out, "under 15 impressions is noise and must not appear")
+    want("/prague" not in out, "a flat page belongs in neither list")
+    want("/rome" in out.split("**Slipping**")[-1], "a page that fell belongs under Slipping")
+    want(out.index("Climbing") < out.index("Slipping"), "climbing comes first, on purpose")
+    for f in fails:
+        print("  FAIL " + f)
+    print("trend self-test: " + ("all passed" if not fails else "%d FAILED" % len(fails)))
+    return 1 if fails else 0
+
+
 def clean_query(q):
     """Search Console hands back whatever the visitor typed, operators and
     all. A query like `quercus aggressive -site:reddit.com -s` is a real
@@ -1287,6 +1322,11 @@ def build_entry(days, today, gsc_text):
 """ % (yday.isoformat(), verdict, zone_block, gsc_text, conclusion)
 
 
+def _maybe_selftest():
+    if "--selftest" in sys.argv:
+        raise SystemExit(_selftest_trend())
+
+
 def main():
     token = os.environ.get("CLOUDFLARE_ANALYTICS_TOKEN")
     if not token:
@@ -1474,4 +1514,5 @@ def promote(pages):
 
 
 if __name__ == "__main__":
+    _maybe_selftest()
     sys.exit(main())
