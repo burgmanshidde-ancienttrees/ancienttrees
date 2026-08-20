@@ -199,6 +199,27 @@ final class AncientTreesUITests: XCTestCase {
                       "Spot took the selection with it; the bar must stay where it was")
     }
 
+    /// Spot's whole design is that it never has a dead state: near our trees
+    /// it offers ticking WITH the add-path beneath; in the middle of nowhere
+    /// it offers the add-form as the headline.
+    @MainActor
+    func testSpotAlwaysOffersBothOutcomes() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["-at=52.3667,4.9086", "-spot"]   // Wertheimpark gate
+        app.launch()
+        XCTAssertTrue(app.staticTexts["Which tree did you find?"].waitForExistence(timeout: 10),
+                      "no tick list next to a tree we map")
+        XCTAssertTrue(app.staticTexts["Standing before a tree we miss?"].exists,
+                      "the add-path is missing from the tick list")
+
+        let far = XCUIApplication()
+        far.launchArguments = ["-at=52.03,5.91", "-spot"]       // a field near Arnhem
+        far.launch()
+        XCTAssertTrue(far.staticTexts["No tree on our map here"].waitForExistence(timeout: 10),
+                      "the add-form is not the headline where we map nothing")
+        XCTAssertTrue(far.buttons["Send it in"].exists)
+    }
+
     /// The pill is the only door between Explore's two faces, so it has to
     /// actually swap them: shelves to map, and back.
     @MainActor
