@@ -71,10 +71,24 @@ f.addEventListener('load', function() {
       // there. A shelf with overflow-x:auto is SUPPOSED to hold cards beyond
       // the fold, which is how the homepage's card row tripped the first
       // version of this check on the day it was written.
+      //
+      // 'hidden' and 'clip' count too, and leaving them out cost a deploy on
+      // 2026-08-20. MapLibre sizes its drawing canvas larger than the box it
+      // draws into: on /explore at 375px the canvas measured 400 wide inside a
+      // .map container of 375 with overflow:hidden. Nothing was off the screen,
+      // the page's scrollWidth was exactly 375 and there was no horizontal
+      // scroll, but the check called it a failure and turned the smoke run red.
+      //
+      // This does not weaken the check, which is the thing to be sure of before
+      // touching it. An ancestor with overflow:hidden genuinely clips: its child
+      // CANNOT appear past the viewport edge. And if that ancestor is itself too
+      // wide, the loop still catches the ancestor on its own turn. So the nav bar
+      // that ran 37 pixels off Hidde's screen, which is why this check exists,
+      // would still be caught: it had no clipping ancestor.
       function inScroller(el) {
         for (var p = el.parentElement; p && p !== d.body; p = p.parentElement) {
           var ox = w.getComputedStyle(p).overflowX;
-          if (ox === 'auto' || ox === 'scroll') return true;
+          if (ox === 'auto' || ox === 'scroll' || ox === 'hidden' || ox === 'clip') return true;
         }
         return false;
       }
