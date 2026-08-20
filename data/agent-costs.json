@@ -2638,6 +2638,15 @@
     "note": "session pass, in-context, no agent dispatched: register-backed verify+write from the freshly-staged Netherlands LRMB candidates (data/research/arnhem-register-candidates.json). Bari checked first and confirmed dead-ended (register exhausted, both remaining candidates already correctly blocked); Rome/Florence/Milan/Vienna READY leads checked by hand and found stale or already-caveated (single-source holds, access questions, one duplicate of an already-published tree). Velperplein/Musispark cluster (0.21-0.32km from centre) verified against dead_entries_regex per tree (caught and excluded one felled 2000 copper beech from the same cluster), corroborated the shared 1880 Leonard Springer park-design context via nl.wikipedia and arnhem.nl heritage docs. 5 trees written and merged (arn_005-009), Arnhem 4 to 9. Build/preflight/superlatives/qa all clean (qa.py pre-existing sitemap-lastmod warning only, shallow checkout).",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "utrecht",
+    "kind": "verify",
+    "tokens": 0,
+    "trees": 4,
+    "note": "session pass, in-context, no agent dispatched: register-backed verify+write from the freshly-staged Netherlands LRMB candidates (data/research/utrecht-register-candidates.json, 316 entries). Found and avoided a near-miss: a DUIC news article describing a specific 184-year-old elm in Zocherplantsoen terminally infected with Dutch elm disease, being preserved as a dead standing snag; excluded BOTH Hollandse iep (elm) candidates from the same Hieronymusplantsoen cluster since neither could be positively distinguished from the tree in that article. Also caught a near-duplicate: a Hollandse linde register point 80m from the already-published utr_005 (Onder de Linden), which already represents that whole canal-side row at approximate precision; dropped rather than double-published. Shipped 4: a Copper Beech and a 4-tree Oriental Plane grove (both Zocher-attributed 1835 plantings in Hieronymusplantsoen, one with a genuine register self-contradiction on planting decade stated honestly in the story), a second Oriental Plane at Janskerkhof, and a London Plane at Lucasbolwerk (corroborated against the Stadsschouwburg theatre's independently documented 1941 construction date). All dead_entries_regex-clean. Utrecht 5 to 9. Build/preflight/superlatives/qa clean (same pre-existing sitemap-lastmod warning, shallow checkout).",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

@@ -51,6 +51,42 @@ this sandbox's shallow git checkout (documented in prior entries, not a
 real defect). Photos: none hunted, per this runner's no-photo-judging rule;
 an honest gap for all 9.
 
+## 2026-08-20 (session, continued) - Utrecht: deepened 5 to 9 from the same fresh Netherlands register
+
+Same shelf, next Dutch city by rank (50 vs Arnhem's 170). 316 freshly-staged
+LRMB candidates, concentrated around the Zocherpark/singel ring that circles
+Utrecht's historic centre. Caught two things worth recording so a later pass
+does not repeat the check from scratch: a DUIC news article describes a
+specific, named, 184-year-old elm in "Zocherplantsoen" now terminally
+infected with Dutch elm disease and being preserved as a dead standing snag
+rather than felled; two Hollandse iep (elm) register candidates sat in the
+same Hieronymusplantsoen cluster this pass was drawing from, and neither
+could be positively ruled out as that tree, so both were dropped rather than
+risk publishing a documented terminal case as a normal collectible. Separately,
+a "Hollandse linde" register point 80m from the already-published utr_005
+(Onder de Linden) turned out to be the same canal-side double row that entry
+already covers at approximate precision, not a new distinct tree; dropped as
+a near-duplicate rather than shipped as a second entry for the same feature.
+
+Shipped 4: a Copper Beech and a 4-tree Oriental Plane grove, both dated by
+the municipality to an 1835 planting under J.D. Zocher's remaking of
+Utrecht's old defensive ring into parkland (the beech's own register carries
+a genuine, unresolved internal contradiction between that 1835 municipal
+date and an 1880s Bomenstichting registration date; stated as a disagreement
+in the story rather than resolved by picking one), a second Oriental Plane at
+Janskerkhof churchyard square, and a London Plane at Lucasbolwerk, corroborated
+against the independently documented 1941 construction date of the
+Stadsschouwburg theatre it now fronts. All four `curation_status: flagged`
+(single register source per tree beyond the general park-history
+corroboration), `location_precision: confirmed`. The build's walk planner
+grouped 8 of Utrecht's 9 trees (all but the outlying Uithof Linden) into one
+1.6km, 21 minute walk. Intro/meta/FAQ counts updated 5 to 9; the intro
+needed trimming back into Contract C's 60-100 word band after the update,
+caught by `preflight.py`. Build/preflight/superlatives/qa all clean (same
+pre-existing sitemap-lastmod warning as the Arnhem pass, this sandbox's
+shallow checkout). Photos: none hunted, per this runner's no-photo-judging
+rule.
+
 ## 2026-08-19 - Caserta: deepened to target (14 to 20), 6 new trees from its own leads file
 
 Six trees written from already-verified MASAF/Campania register leads that

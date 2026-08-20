@@ -2,8 +2,8 @@
   "city": "Utrecht",
   "country": "Netherlands",
   "status": "needs_curation",
-  "intro": "Utrecht's oldest trees live behind walls more often than in open parks, protected first by a university's own working garden and later by simple survival. The city's genuine standout is a walled botanical garden barely bigger than a single city block, home to a ginkgo that predates the Netherlands' current constitution and a Chinese tree so rare it took a missionary decades to bring seeds to Europe at all. Add a farmhouse linden absorbed whole by a modern science campus, and a canal named for its own trees since the 1600s.",
-  "meta_description": "Utrecht's oldest trees hide behind garden walls: a 260-year ginkgo, a rare handkerchief tree, a farmhouse linden. Five verified locations, real stories.",
+  "intro": "Utrecht's oldest trees live behind walls more often than in open parks, protected first by a university's own working garden and later by simple survival. The city's genuine standout is a walled botanical garden barely bigger than a single city block, home to a ginkgo that predates the Netherlands' current constitution and a Chinese tree so rare it took a missionary decades to bring seeds to Europe at all. Add a farmhouse linden absorbed whole by a science campus, and a park cluster of century-old planes planted when the city's old defences became parkland.",
+  "meta_description": "Utrecht's oldest trees hide behind garden walls: a 260-year ginkgo, a rare handkerchief tree, a farmhouse linden. Nine verified locations, real stories.",
   "question_answer": "Utrecht's oldest tree is the Uithof Linden, a common lime planted around 1750 beside a 17th-century farmhouse that gave its name to what is now Utrecht Science Park. At roughly 275 years old, it predates the university campus built up around it by two centuries, one of the oldest Dutch lindens still standing anywhere.",
   "question_meta": "A 275-year-old linden beside a 17th-century farmhouse, now swallowed by a university science campus, is Utrecht's oldest tree. The full five.",
   "question_context": "Utrecht keeps its oldest trees in two very different settings, and the contrast says something about how a Dutch city actually preserves age. The Uithof Linden and the Oude Hortus's three specimens all survive because they sat inside a boundary somebody drew and then defended: a farmhouse's private dooryard in one case, a university garden's walls in the other, both places where nobody had reason to fell an inconvenient tree for centuries. The Nieuwegracht's canal lindens took the opposite route, out in the open on a public street since the 1600s, which is also why they are honestly the youngest of the five: street trees get replaced when they die or block a view, and at least one full replanting happened there sometime between the original 1660 planting scheme and the roughly 1830-dated lime trees standing today. Between the walled survivors and the replanted street trees sits the real explanation for why this city's canal-lined image and its handful of genuinely centuries-old specimens rarely overlap on the same tree.",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Utrecht's remarkable trees free to visit?",
-      "a": "Three of the five, all in the Oude Hortus, require a paid ticket to the Universiteitsmuseum. The Uithof Linden and the Nieuwegracht's canal lindens are free and visible from public streets at any time."
+      "a": "Three of the nine, all in the Oude Hortus, require a paid ticket to the Universiteitsmuseum. The other six, including the Uithof Linden, the Nieuwegracht's canal lindens and the Hieronymusplantsoen and Lucasbolwerk trees, are free and visible from public streets or parks at any time."
     },
     {
       "q": "Why does Utrecht have so few very old street trees?",
@@ -215,6 +215,121 @@
         "label": "June to July, when it flowers",
         "kind": "flowers"
       }
+    },
+    {
+      "id": "utr_006",
+      "name": "The Copper Beech of Hieronymusplantsoen",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "roughly 135 to 190 years, sources disagree",
+      "age_min": 136,
+      "age_max": 191,
+      "location": {
+        "address": "Hieronymusplantsoen, in front of the Vrije School building, Utrecht",
+        "latitude": 52.090818,
+        "longitude": 5.12718,
+        "neighbourhood": "Binnenstad"
+      },
+      "story": "Utrecht's own tree register cannot agree with itself about this copper beech. One entry, filed for the national Bomenstichting listing, dates its planting to the 1880s. The municipality's own separate file says something older, that it was planted along with the rest of Hieronymusplantsoen by the landscape architect J.D. Zocher in 1835, part of the decades-long project that turned Utrecht's old medieval walls and moat into the ring of parks still circling the historic centre today. Both cannot be right, and nobody has settled which, so this page states both rather than picking the more flattering one.\n\nEither way it has stood on this small rise in the plantsoen for well over a century, its purple-red leaves a deliberate accent against the plane and elm green Zocher planted around it. Copper beech is not a distinct species but a colour form of the ordinary beech, propagated by grafting, because a beech grown from its own seed reverts to green more often than not, which makes every specimen a small act of continued human intervention rather than a wild event. It grows on open parkland in front of the building known locally as the Vrije School, no fence and no ticket. If a photograph or a planting record settles which date is right, tell us.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1689880)",
+        "https://nl.wikipedia.org/wiki/Zocherpark"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "Hieronymusplantsoen, Binnenstad; about a 15 minute walk from Utrecht Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "utr_007",
+      "name": "The Zocher Planes of Hieronymusplantsoen",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "~185 years",
+      "age_min": 176,
+      "age_max": 191,
+      "location": {
+        "address": "Hieronymusplantsoen, opposite the Vrije School building, Utrecht",
+        "latitude": 52.090897,
+        "longitude": 5.127367,
+        "neighbourhood": "Binnenstad"
+      },
+      "story": "Four Oriental planes stand together on one spot in Hieronymusplantsoen, registered nationally as a single monumental entry because whoever surveyed them treated the group, not any one trunk, as the thing worth protecting. Utrecht's municipal records date the planting to 1835, part of J.D. Zocher's decades-long project to turn the old defensive moat and city walls circling Utrecht into a continuous ring of English-style landscape parks, of which Hieronymusplantsoen is one surviving stretch.\n\nOriental plane is the straight species behind the hybrid London plane that lines most European streets, native from the Balkans to Iran and far less commonly planted in the Netherlands than its hybrid offspring. Four of them together, close to two centuries old, read as something closer to a small grove than four separate specimens, standing opposite the same building that borders the plantsoen's copper beech and, a short walk further, one of the country's most celebrated botanical gardens. They grow in the open on public parkland, unfenced, free to see any day. The register gives a single planting year for the whole group; nobody has independently dated an individual trunk within it, so treat 1835 as the group's founding date rather than a measurement of any one tree.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1688667)",
+        "https://nl.wikipedia.org/wiki/Zocherpark"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "Hieronymusplantsoen, Binnenstad; about a 15 minute walk from Utrecht Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "utr_008",
+      "name": "The Oriental Plane of Janskerkhof",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "~130 years",
+      "age_min": 126,
+      "age_max": 136,
+      "location": {
+        "address": "Janskerkhof, near number 13, northeast corner by the former Kantongerecht courthouse, Utrecht",
+        "latitude": 52.093628,
+        "longitude": 5.122842,
+        "neighbourhood": "Binnenstad"
+      },
+      "story": "Janskerkhof looks like a churchyard and mostly still is one, a square in central Utrecht built around the Gothic Jans Church, with a weekly flower market and, in its northeast corner near the old cantonal courthouse, a single Oriental plane the municipality dates to 1900. That makes it the youngest of the register's Utrecht street trees rather than the oldest, and its interest is less about age than about staying put: more than a century in a paved civic square that has hosted markets and gatherings throughout, without losing the tree that anchors its corner.\n\nOriental plane sheds bark in patches as it grows, the way a sycamore does, leaving a mottled grey, green and cream trunk that reads almost camouflaged against stone. This one has had over a century of pavement compaction and passing traffic to contend with, which the register does not comment on beyond dating the planting, so no vitality note beyond that exists yet. It stands in the open square, free to walk up to any day, opposite number 13 Janskerkhof. Nobody has published an independent account of this specific tree beyond the municipal register, so treat the date as the council's own record rather than a cross-checked fact.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1691554)"
+      ],
+      "access": "Free, public square, open at all times",
+      "transport": "Janskerkhof, Binnenstad; about a 12 minute walk from Utrecht Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "utr_009",
+      "name": "The Plane of Lucasbolwerk",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "~130 years",
+      "age_min": 126,
+      "age_max": 136,
+      "location": {
+        "address": "Lucasbolwerk, directly in front of the Stadsschouwburg, Utrecht",
+        "latitude": 52.093092,
+        "longitude": 5.126544,
+        "neighbourhood": "Binnenstad"
+      },
+      "story": "This London plane was already forty years old, well established on the Lucasbolwerk, when Utrecht's city theatre went up facing it in 1941. The Stadsschouwburg, designed by the Dutch modernist architect Willem Dudok and opened that September, is the newer thing on this stretch of the old singel parkland by a wide margin: the municipal tree register dates the plane's own planting to around 1900, part of the general planting of Utrecht's 19th-century park ring rather than anything tied to the building that came decades later.\n\nLucasbolwerk itself is one of the bastions of Utrecht's old city fortifications, absorbed into the landscaped singel park that rings the historic centre, the same project that gave the city Hieronymusplantsoen and the Zocherpark further along the water. The plane has spent well over a century watching that transformation from bastion to theatre forecourt, and now stands as the tree most people photograph the Stadsschouwburg's facade past without quite registering. It grows in the open on public parkland directly opposite the theatre entrance, free to see, no ticket needed even if the building behind it does require one.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1688670)",
+        "https://nl.wikipedia.org/wiki/Stadsschouwburg_Utrecht"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "Lucasbolwerk, Binnenstad; about a 14 minute walk from Utrecht Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }
