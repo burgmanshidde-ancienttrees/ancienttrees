@@ -121,7 +121,18 @@ def fetch_gsc(today):
     # falling off the end.
     pairs = q({"startDate": start, "endDate": end, "dimensions": ["page", "query"],
                "rowLimit": 1000, "dataState": "all"})
-    return days, queries, pages, gap_queries, pairs
+    # The window BEFORE this one, so the digest can say what is climbing rather
+    # than only what is big. Hidde, 2026-08-20: "kun je ook winnaars en
+    # verliezers toevoegen aan de daily digest maar vooral google search trend
+    # positief". A level tells you where you stand; only a delta tells you
+    # whether anything you did worked, and this file had no delta at all.
+    pstart = (today - datetime.timedelta(days=20)).isoformat()
+    pend = (today - datetime.timedelta(days=10)).isoformat()
+    prev_pages = q({"startDate": pstart, "endDate": pend, "dimensions": ["page"],
+                    "rowLimit": 5000, "dataState": "all"})
+    prev_queries = q({"startDate": pstart, "endDate": pend, "dimensions": ["query"],
+                      "rowLimit": 5000, "dataState": "all"})
+    return days, queries, pages, gap_queries, pairs, prev_pages, prev_queries
 
 
 # The industry CTR-by-position curve, rounded from the public studies that
@@ -288,7 +299,7 @@ def demand_lines(pages, pairs=None):
 def gsc_section(gsc):
     if gsc is None:
         return ("Search Console: GSC_* secrets not configured; section skipped.", None)
-    days, queries, pages, gap_queries, pairs = gsc
+    days, queries, pages, gap_queries, pairs = gsc[:5]
     days = [d for d in days if d.get("impressions") or d.get("clicks")]
     if not days:
         return ("Search Console: connected, but Google returned no rows for the window.", None)
@@ -354,6 +365,106 @@ def gsc_section(gsc):
     return "\n".join(lines), {"clicks": latest["clicks"], "impressions": latest["impressions"],
                                "prev_clicks": prev["clicks"] if prev else 0,
                                "prev_impressions": prev["impressions"] if prev else 0}
+
+
+def _short_page(url):
+    path = str(url).replace("https://ancienttrees.app", "").rstrip("/")
+    return path or "/"
+
+
+def trend_section(gsc):
+    """What is climbing, and what is slipping, against the previous ten days.
+
+    Hidde, 2026-08-20, and the emphasis is his: "vooral google search trend
+    positief". The digest reported levels only, so a page that doubled and a
+    page that halved looked identical as long as they ended on the same number.
+    Nothing in the file could tell him whether a rewrite worked.
+
+    Climbing comes first and gets the longer table on purpose. Losses matter,
+    but a daily report that leads with them trains you to stop reading it, and
+    the useful action is almost always "do more of what moved" rather than
+    "mourn what fell".
+
+    Two guards against reading noise as a trend. A page needs 15 impressions in
+    the current window to appear at all, because a jump from 1 to 4 is a
+    rounding error with a big percentage on it. And NEW means genuinely absent
+    before, which on a site opening four cities a night is the most common kind
+    of good news and deserves saying separately.
+    """
+    if gsc is None or len(gsc) < 7:
+        return None
+    _, _, pages, _, _, prev_pages, prev_queries = gsc
+    if not pages:
+        return None
+
+    def index(rows):
+        out = {}
+        for r in rows:
+            key = (r.get("keys") or [""])[0]
+            out[key] = r
+        return out
+
+    now, before = index(pages), index(prev_pages)
+    MIN = 15
+
+    climbed, arrived, slipped = [], [], []
+    for key, r in now.items():
+        imp = r.get("impressions") or 0
+        if imp < MIN:
+            continue
+        old = before.get(key)
+        if old is None:
+            arrived.append((imp, _short_page(key), r.get("clicks") or 0,
+                            r.get("position") or 0))
+            continue
+        d_imp = imp - (old.get("impressions") or 0)
+        # Position: lower is better, so an improvement is a positive number.
+        d_pos = (old.get("position") or 0) - (r.get("position") or 0)
+        row = (_short_page(key), imp, d_imp, r.get("position") or 0, d_pos,
+               (r.get("clicks") or 0) - (old.get("clicks") or 0))
+        if d_imp > 0 or d_pos > 0.5:
+            climbed.append(row)
+        elif d_imp < 0 and d_pos < -0.5:
+            slipped.append(row)
+
+    climbed.sort(key=lambda x: -x[2])
+    arrived.sort(reverse=True)
+    slipped.sort(key=lambda x: x[2])
+
+    out = ["", "**Climbing** (this ten days against the ten before it)", ""]
+    if climbed:
+        out += ["| Page | Impressions | Change | Position | Moved | Clicks |",
+                "|---|---:|---:|---:|---:|---:|"]
+        for name, imp, d_imp, pos, d_pos, d_clk in climbed[:8]:
+            out.append("| %s | %d | %+d | %.1f | %s | %+d |" % (
+                name, imp, d_imp, pos,
+                ("%+.1f" % d_pos) if abs(d_pos) >= 0.1 else "-", d_clk))
+    else:
+        out.append("Nothing gained ground this window.")
+
+    if arrived:
+        out += ["", "**Newly ranking** (no impressions at all ten days ago)", "",
+                "| Page | Impressions | Clicks | Position |", "|---|---:|---:|---:|"]
+        for imp, name, clk, pos in arrived[:6]:
+            out.append("| %s | %d | %d | %.1f |" % (name, imp, clk, pos))
+
+    if slipped:
+        out += ["", "**Slipping**", "",
+                "| Page | Impressions | Change | Position | Moved |",
+                "|---|---:|---:|---:|---:|"]
+        for name, imp, d_imp, pos, d_pos, _ in slipped[:4]:
+            out.append("| %s | %d | %+d | %.1f | %+.1f |" % (name, imp, d_imp, pos, d_pos))
+
+    # Queries that are new, which is where a content gap turns into a page.
+    qnow = {(r.get("keys") or [""])[0]: r for r in (gsc[1] or [])}
+    qbefore = {(r.get("keys") or [""])[0] for r in (prev_queries or [])}
+    fresh = [(r.get("impressions") or 0, k) for k, r in qnow.items()
+             if k not in qbefore and (r.get("impressions") or 0) >= 3]
+    if fresh:
+        fresh.sort(reverse=True)
+        out += ["", "- New queries this window: "
+                + ", ".join("%s (i%d)" % (k, i) for i, k in fresh[:5]) + "."]
+    return "\n".join(out)
 
 
 def clean_query(q):
@@ -1245,6 +1356,9 @@ def main():
         gsc_data = fetch_gsc(today)
         gsc_text, gsc_latest = gsc_section(gsc_data)
         blocks.append("**Where demand is going to waste**\n\n" + gsc_text)
+        trend = trend_section(gsc_data)
+        if trend:
+            blocks.append(trend.strip())
     except Exception as e:
         blocks.append("Search Console: fetch failed today (%s); numbers resume tomorrow." % e)
 
