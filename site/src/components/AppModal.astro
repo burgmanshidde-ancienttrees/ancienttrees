@@ -75,9 +75,12 @@ const T = es ? {
   (function() {
     var dlg = document.getElementById('app-dialog');
     if (!dlg) return;
+    // No at.track here. Every element that opens this dialog is a
+    // [data-app-modal] link that also carries the walks-app event attribute,
+    // so the one attribute listener in Base.astro counts the click
+    // (FUNNELS.md, 2026-08-14). Tracking it here too counted it twice.
     window.atOpenApp = function() {
       if (dlg.showModal) { dlg.showModal(); } else { location.href = '/app'; }
-      try { at.track('walks-app'); } catch (e) {}
     };
     document.getElementById('app-close').addEventListener('click', function() { dlg.close(); });
     // Clicking the backdrop closes it, the way every dialog on the site does.

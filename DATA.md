@@ -5,6 +5,15 @@ workflow. Numbers are for the previous UTC day. While volume is tiny the
 conclusion says so plainly; noise is never narrated as trend (Hidde's
 standing rule, 2026-07-27).
 
+Three event counts changed meaning on 2026-08-20, and the fall in them is the
+fix rather than a regression. Until that date `app-cta`, `directions` and
+`walks-app` were each counted by two click listeners at once, so one click
+inserted two rows. Read any figure for those three from before 2026-08-20 as
+roughly double the real number, and do not compare one across that date.
+`app-cta` was worse than doubled: it also fired on the two `walks-app` links,
+because those point at /app and the listener matched the href. Every other
+event on the list is unaffected.
+
 ## 2026-08-19 (previous UTC day)
 
 **Today: a waitlist arrived yesterday (9 total).**
