@@ -29,6 +29,8 @@ const canonical = `${BASE_URL}/account`;
     <p class="hero-kicker">Your tree collection</p>
     <h1>Sign in to keep it <em>everywhere</em>.</h1>
     <p class="acct-sub">One email, no password. We send you a sign-in link; your collected trees follow you to any device.</p>
+    <button type="button" class="oauth-btn" id="acct-google">Continue with Google</button>
+    <p class="signin-or">or</p>
     <form id="acct-form" class="hero-search" autocomplete="email">
       <input type="email" id="acct-email" placeholder="you@example.com" aria-label="Email address" required>
       <button type="submit" class="go-btn">Email me a sign-in link</button>
@@ -55,6 +57,11 @@ const canonical = `${BASE_URL}/account`;
     <p class="hero-kicker">Signed in</p>
     <h1>Your <em>trees</em>.</h1>
     <p class="acct-sub"><strong id="in-email"></strong></p>
+    <!-- Said plainly because Google and Apple hand out different addresses, and
+         Apple's is a private relay by default. Somebody who signs in with Apple
+         on the phone and Google here would otherwise see an empty collection and
+         conclude we lost it. Naming the address makes that understandable. -->
+    <p class="acct-fine">Your trees are kept under this address. Signing in with a different one starts a separate collection.</p>
     <div class="stat-row">
       <div class="stat"><b id="n-trees">0</b><span>saved trees</span></div>
       <div class="stat alt"><b id="n-cities">0</b><span>cities</span></div>
