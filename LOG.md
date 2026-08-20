@@ -12,6 +12,76 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-20 (session) - 9 Dutch/Belgian cities deepened, 39 trees, from a fresh national register import
+
+`visitors.py`: 349 visits, 534 page views over the last 7 days (13-20 Aug),
+climbing from 17 to a mid-week peak of 83 (16th) and settling around 40-70
+since. `prepare.py`'s shelf held 40 cities staged for verify and 3 verified-
+but-unwritten Bari trees; Step 0 found no submissions (all 6 processed rows
+already resolved), health clear (rung 2), nothing published wrong.
+
+Checked Bari (top of the staged shelf) first: genuinely register-exhausted,
+only 4 monumental trees exist in the whole city and two are already
+correctly blocked on access, leaving 3 stuck one short of the 4-tree floor
+with from-zero research off. Checked the READY leads.py output for Rome,
+Florence, Milan and Vienna by hand next, since those rank far higher than
+anything eventually worked: all turned out stale or already-caveated by
+earlier passes (a duplicate register id, a duplicate of an already-published
+tree, unresolved single-source and size-discrepancy flags already recorded
+in their own notes). None of that shipped.
+
+Pivoted to the Netherlands' national LRMB register
+(`data/registers/netherlands-lrmb.json`, imported 2026-08-18, licensed CC-BY
+with Hidde's own written permission), working down `city_queue.py`'s rank
+order among Dutch cities: **Arnhem 4→9, Utrecht 5→9, Groningen 5→10, Haarlem
+4→9, Maastricht 5→10, Rotterdam 5→9, Nijmegen 5→8**, then **The Hague 16→21**
+(rank 24, its own pre-staged shelf already fully consumed, so this one
+required mining the raw register by hand), then **Brussels 23→26** (rank 20,
+Belgium's own official register, no address text at all, general locations
+worked out via OpenStreetMap reverse geocoding and shipped honestly at
+`approximate` precision). 39 trees total, all `curation_status: flagged`
+(single official-register source per tree, as the rules allow), checked
+individually against the Dutch register's own `dead_entries_regex` for
+felled/removed language in the free-text history field.
+
+**Four real traps caught and NOT shipped, worth naming because each would
+have been a quiet factual error**: a Bari register "candidate" that was a
+duplicate id for an already-published tree; a Vienna plane at the exact
+coordinates of an already-published tree (leads.py had not flagged it
+DONE); a Rotterdam memorial yew whose register text claims a connection to
+Zadkine's famous "De Verwoeste Stad" statue, which independent search
+places at a different square entirely, so the claim was dropped rather than
+repeated; and a Nijmegen "Wilhelmina linde" whose independently-documented
+history says the original coronation tree was replaced at an unrecorded
+date, with the register's own planting band predating the coronation it
+supposedly marks. Also skipped a felled-in-2000 Arnhem beech (caught by the
+regex), a diseased-and-dying Utrecht elm a news article couldn't be ruled
+out from, and several cemetery/avenue register entries whose `n_trees`
+counts (12 to 325) marked them as mass plantings rather than collectible
+points.
+
+Every city's walk planner formed at least one new or reshaped multi-tree
+walk from today's additions (Arnhem: 6 trees, 0.6km; Utrecht: 8 trees,
+1.6km; Groningen: 6 trees, 2.5km; Haarlem: 6 trees, 1.2km; Maastricht: 7
+trees, 1.6km; Rotterdam: two walks, 6+3 trees; The Hague: three walks;
+Brussels: folded into the existing central walk) — the cluster-first
+doctrine holding up city after city rather than needing to be argued for
+each time. Ran `preflight.py`, `superlatives.py` (420 claims, no
+collisions), `tree_index.py` and a full `npm --prefix site run build` after
+every single city (9 builds total), plus `qa.py` each time (one
+pre-existing sitemap-lastmod warning throughout, this sandbox's shallow git
+checkout, not a real defect). Preflight caught and fixed two stale count
+promises along the way (Rotterdam's `question_meta`, The Hague's
+`meta_description` over its character limit) before either could have
+shipped. Logged every pass to `data/agent-costs.json`. Photos: none
+hunted, per this runner's no-photo-judging rule; all new trees carry an
+honest `missing` photo gap.
+
+Committed and pushed after every city (9 commits, each with its own claim/
+release round trip via `passcheck.py`); one push landed between two
+unrelated concurrent commits (a homepage styling change, a fresh-eyes
+review run) and needed a clean rebase, no conflicts.
+
 ## 2026-08-20 (session) - A photo viewing pass: 13 photographs approved, 115 candidates rejected, 8 cities off the zero-photo list
 
 Hidde asked to have another go at photographs for the cities with none. `health.py` rung 2 clear first (smoke, deploy, digest, fresh-eyes all green, no BLOCKER), so this was rung 6 work.
