@@ -105,6 +105,48 @@ minute decision once the numbers are on the table.
 
 ---
 
+## The convention walk, 2026-08-20 (later)
+
+Hidde, having run the app on his own phone: "kun je uberhaupt de app doorlopen
+en kijken of er interactie conventie worden overgeslagen". A grep found most of
+it and needed no opinion: `sensoryFeedback` 0, `ShareLink` 0,
+`accessibilityLabel` 0, `refreshable` 0, `searchable` 0,
+`scrollDismissesKeyboard` 0.
+
+| # | Convention | Severity | Status |
+|---|---|---|---|
+| 25 | **The app could never update its own data.** Sync.swift was written and nothing called it; CatalogueStore only read the bundled copy. A tree added by a night run could not reach a phone without App Store review | Blocker | Fixed |
+| 26 | The list did not follow the map. Pan to Paris and it still described where you were standing | High | Fixed |
+| 27 | Explore listed 30 of 119 places, and 89 cities were unreachable from that screen | High | Fixed |
+| 28 | No haptic feedback anywhere, including on the tick, which is the product's own verb | High | Fixed |
+| 29 | No way to share a tree, on a project whose recorded binding constraint is distribution | High | Fixed |
+| 30 | Every icon-only button read to VoiceOver as "button" | High | Fixed |
+| 31 | Dragging the sheet up scrolled the list instead of raising the sheet | High | Fixed |
+| 32 | Tapping the active tab did nothing. Four trees deep, the only way out was four taps on Back | Medium | Fixed |
+| 33 | No pull to refresh, no search on Saved, no way to remove a saved tree except the heart | Medium | Fixed |
+| 34 | The keyboard sat over the search results | Medium | Fixed |
+| 35 | The card's photograph sat at a fixed 190pt and names clipped at two lines under large Dynamic Type | Low | Fixed |
+
+Two things about how these were verified, because it is the interesting part.
+
+**The catalogue refresh was proved rather than asserted.** A fresh install showed
+1,406 trees in 38 countries; after a refresh and a full restart it showed 1,526
+in 39. That also proves the downloaded copy persists and is preferred on launch.
+
+**Two of them cannot be seen in a screenshot at all**, because they only happen
+after a finger drags something, so they became UI tests instead: one pans the map
+and asserts the chip stops saying "Near you", one opens a tree and taps the
+active tab and asserts it lands back on the map. The suite is five tests and the
+other three cover the way back from a tree, ticking, and the sign-in sheet
+presenting.
+
+**One change was tried and reverted the same hour:** `displayPriority` away from
+`.required`, to let MapKit cull colliding pin labels. It made no visible
+difference in Paris and it lets MapKit hide a PIN rather than only a label, which
+on this map is the worse bug.
+
+---
+
 ## What needs Hidde, and it is four dashboard actions
 
 None of these are code. Three of them gate work that is already written and
