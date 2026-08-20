@@ -87,6 +87,29 @@ pre-existing sitemap-lastmod warning as the Arnhem pass, this sandbox's
 shallow checkout). Photos: none hunted, per this runner's no-photo-judging
 rule.
 
+## 2026-08-20 (session, continued) - Groningen: deepened 5 to 10 from the same fresh Netherlands register
+
+Third Dutch city off the same shelf, next by rank after Utrecht. A central
+cluster around Martinikerkhof, Akerkhof, Prinsentuin and Guyotplein, all
+within 0.7km of each other. Shipped 5: an oak at Martinikerkhof (shipped with
+an honest note that the municipality's own 2021 survey rates its condition
+moderate to poor and declining, since a struggling tree is still a living one
+and not a reason to withhold it), a horse chestnut in the walled 1626
+Prinsentuin garden (free entry confirmed independently, not just from the
+register), a horse chestnut at Akerkhof (corroborated against the
+municipality's own account of a recent square redevelopment that explicitly
+preserved this tree while removing three others, which also confirms recent
+vitality), a sycamore at Guyotplein, and a Siberian Balsam Poplar (Populus x
+berolinensis, a documented 1865 Berlin hybrid) at the Engelenpoortje alley,
+which was itself closed to the public from 2012 to 2020 and is open again
+now. All `curation_status: flagged`, `location_precision: confirmed`, all
+clean against the register's `dead_entries_regex`. Build's walk planner
+grouped 6 of Groningen's 10 trees into one 2.5km, 33 minute central walk.
+Preflight clean on the first pass. Build/superlatives/qa all clean (same
+pre-existing sitemap-lastmod warning as the other two Dutch passes today,
+this sandbox's shallow checkout). Photos: none hunted, per this runner's
+no-photo-judging rule.
+
 ## 2026-08-19 - Caserta: deepened to target (14 to 20), 6 new trees from its own leads file
 
 Six trees written from already-verified MASAF/Campania register leads that
