@@ -673,7 +673,20 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .poster-search { width: min(640px, 94vw); padding: 0.35rem 0.6rem 0.35rem 0.4rem; box-shadow: 0 10px 40px rgba(0,0,0,0.28); margin-top: 0; }
 .poster-search input { font-size: 16.5px; padding: 0.65rem 0.5rem; }
 .hero-links { display: flex; gap: 1.8rem; margin-top: 1.3rem; flex-wrap: wrap; justify-content: center; }
-.hero-link { background: none; border: none; cursor: pointer; font-family: inherit; color: #fff; font-size: 15.5px; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+/* The hero's own action, made pressable on 2026-08-20. It was an underlined
+   text link under a big white search field, which made the weakest thing on the
+   page the core action of the entire product: the value proposition is "I open
+   it, it knows where I am, it shows me a cool tree nearby", and search is the
+   fallback for when that is not what you want. AllTrails, Komoot and Google
+   Maps all put a filled pill here and none of them ships this as a text link.
+   The search field stays where it is; this now reads as at least its equal. */
+.hero-cta { display: inline-flex; align-items: center; gap: 0.5rem;
+  background: var(--moss); color: #fff; text-decoration: none;
+  font-family: inherit; font-size: 16px; font-weight: 700;
+  padding: 0.8rem 1.6rem; border-radius: 999px; border: none; cursor: pointer;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.30); }
+.hero-cta:hover { background: #3d5a22; }
+.hero-cta svg { flex: none; }
 .home-hero.poster .near-me-result { color: #fff; font-weight: 600; margin-top: 0.9rem; text-shadow: 0 1px 8px rgba(0,0,0,0.4); }
 .mission { max-width: 44rem; margin: 2.5rem auto 0; padding: 1.6rem 2rem 0; border-top: 1px solid var(--cream-dark); text-align: center; }
 .mission p { font-family: var(--sans); font-size: 14.5px; font-weight: 300; color: var(--ink-mid); line-height: 1.7; }
