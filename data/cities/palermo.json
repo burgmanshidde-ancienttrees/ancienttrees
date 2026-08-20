@@ -2,9 +2,10 @@
   "city": "Palermo",
   "country": "Italy",
   "status": "needs_curation",
+  "oldest_tree_id": "pal_003",
   "intro": "Palermo grows one species obsessively. Ficus macrophylla, the Moreton Bay fig, arrived from Australia in the 19th century and found a climate it liked even better than home, filling the city's villas and squares with trees whose aerial roots thicken into trunks of their own. The most famous, in Piazza Marina, is currently fighting a fungal infection that has cost it half its canopy. Its own parent tree still thrives quietly in the Botanical Garden nearby. Between the two: a fig turned into a murdered judge's memorial, two rare dragon trees, and a palm avenue inside Italy's first public garden.",
-  "meta_description": "Palermo's eighteen most remarkable trees: a fungus-fighting giant fig, its own 180-year-old parent, and a mafia judge's living memorial.",
-  "question_meta": "Palermo's oldest tree is a 181-year-old fig in the Orto Botanico, parent to the more famous giant in Piazza Marina. Its story and seventeen more.",
+  "meta_description": "Palermo's most remarkable trees: a fungus-fighting giant fig, its own 180-year-old parent, and a mafia judge's living memorial.",
+  "question_meta": "Palermo's oldest tree is a 181-year-old fig in the Orto Botanico, parent to the more famous giant in Piazza Marina. Its story and twenty more.",
   "question_answer": "Palermo's oldest tree is the Ficus macrophylla of the Orto Botanico, planted in 1845 and now about 181 years old, its canopy measured at roughly 3,000 square metres, reportedly the largest of any tree in Europe. It grows inside the city's botanical garden, a short walk from the historic centre.",
   "question_context": "Palermo's fig population is unusually well documented because most of it traces back to a handful of 19th century plantings, several still identifiable today. The Orto Botanico's own specimen, planted in 1845, is the oldest and best studied: 180 years of growth have built a canopy now measured at roughly 3,000 square metres, reportedly the largest of any tree in Europe, held up by 44 secondary trunks that grow down from the branches as aerial roots. Its more famous descendant in Piazza Marina, grown from a cutting taken off this tree in the 1860s, is currently fighting a fungal infection that has cost it half its own canopy. A third fig outside the home of murdered judge Giovanni Falcone is younger still, planted only decades ago, but carries its own civic weight as a memorial renewed every year on the anniversary of his 1992 killing. The botanical garden charges standard entry; Piazza Marina, a short walk away, is free.",
   "faq": [
@@ -600,6 +601,96 @@
         "kind": "flowers",
         "label": "May and June, when it flowers scarlet on bare branches"
       }
+    },
+    {
+      "id": "pal_019",
+      "name": "The London Plane of Villa Tasca",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "around 200 years",
+      "age_min": 180,
+      "age_max": 220,
+      "girth_cm": 465,
+      "location": {
+        "address": "Parco di Villa Tasca, Viale Regione Siciliana Sud Est 397, 90135 Palermo",
+        "latitude": 38.100542,
+        "longitude": 13.32815,
+        "neighbourhood": "Villa Tasca / Passo di Rigano"
+      },
+      "story": "Italy has exactly one nationally registered monumental plane tree in Sicily, and it stands in the private grounds of Villa Tasca on the ring road toward Monreale, not in the historic centre most visitors see. The trunk is four metres sixty-five around, thirty metres tall, and a foundation that tracks Italy's giant trees puts its age at around two centuries, without publishing how they arrived at the number, so treat that as their estimate rather than a measured fact.\n\nThe tree stands 184 metres from Villa Tasca's other headline specimen, the sprawling Moreton Bay fig that shades half the garden's swan lake, on the far side of the water. Where the fig grows outward into a colonnade of secondary trunks that makes its true size a matter of definition, this plane keeps to one recognisable trunk and crown, plain columnar bulk rather than a spreading thicket.\n\nLondon planes are hybrids, first bred in seventeenth century Europe by crossing an American species with an Oriental one, and they became the default street tree of nineteenth century cities because almost nothing kills them, not compacted soil, not pollution, not routine pruning. What makes this one worth the ticket price is rarer: on a whole island covered in ornamental gardens built by the same wealthy families who imported half the trees on this list, nobody registered a second one.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://www.gianttrees.org/it/alberi-giganti/platano-di-villa-tasca"
+      ],
+      "access": "Paid entry, Parco di Villa Tasca (same grounds and ticket as the already-published Fig of Villa Tasca, pal_010; sources disagree on exact hours, confirm before publishing a specific time)",
+      "transport": "On Viale Regione Siciliana, the ring road toward Monreale; not walkable from the historic centre, reachable by bus or car",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "pal_020",
+      "name": "The Cook Pine of Villa Tasca",
+      "species": "Cook Pine (Araucaria columnaris)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 370,
+      "location": {
+        "address": "Parco di Villa Tasca, Viale Regione Siciliana Sud Est 397, 90135 Palermo",
+        "latitude": 38.098897,
+        "longitude": 13.327883,
+        "neighbourhood": "Villa Tasca / Passo di Rigano"
+      },
+      "story": "Villa Tasca's swan lake has a fig tree spreading permanent shade over one shore and a very different tree standing on the other: a Cook pine, thirty-eight metres tall by the national register's own measurement, growing in the narrow, leaning column that gives the species its slightly off-kilter look in photographs.\n\nAraucaria columnaris comes from a single small stretch of the Pacific, New Caledonia's Isle of Pines, where eighteenth century European sailors mistook whole hillsides of the tree for a colonnade of stone columns and gave the island its name because of it. Palermo's specimen has travelled a long way from that coastline to end up leaning over a Sicilian swan lake instead.\n\nNobody has published an age for this tree, and no story about it should invent one. What is documented is the girth, three metres seventy, and the company it keeps: a Norfolk Island pine stands 35 metres away, a different species entirely despite the family resemblance, and the two of them frame the same lake that the garden's famous fig dominates from the opposite bank.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://www.grey-panthers.it/speciale/speciali/giardini-italia-scoperta-natura/palermo-villa-tasca/"
+      ],
+      "access": "Paid entry, Parco di Villa Tasca (same grounds and ticket as pal_010 and pal_019)",
+      "transport": "On Viale Regione Siciliana, the ring road toward Monreale; not walkable from the historic centre, reachable by bus or car",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "pal_021",
+      "name": "The Norfolk Island Pine of Villa Tasca",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 480,
+      "location": {
+        "address": "Parco di Villa Tasca, Viale Regione Siciliana Sud Est 397, 90135 Palermo",
+        "latitude": 38.098767,
+        "longitude": 13.327511,
+        "neighbourhood": "Villa Tasca / Passo di Rigano"
+      },
+      "story": "Thirty-five metres from Villa Tasca's Cook pine stands a second, easily confused conifer: a Norfolk Island pine, four metres eighty around, growing in the same lakeside garden. Both belong to the genus Araucaria and both come from small Pacific islands charted by the same eighteenth century voyage, but they hold their branches differently. The Norfolk pine keeps a symmetrical, tiered crown, layer stacked evenly on layer, while its neighbour grows in a narrower, leaning column. Once you know to look, the two are easy to tell apart from any distance.\n\nIt shares its garden with a menagerie of large ornamental cycads and the two other headline trees already on this page, the sprawling fig and the Cook pine, part of a Romantic era garden expanded through the second half of the nineteenth century by the Tasca family. No age has been published for this individual and none is claimed here.\n\nNorfolk Island pines are a familiar houseplant everywhere in miniature, sold small and potted as an indoor Christmas tree substitute. Almost nobody who buys one sees what it becomes given an actual island climate and a century or two of room to grow: a genuine forest giant, capable of passing sixty metres in the wild, though nothing like that height here.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://www.grey-panthers.it/speciale/speciali/giardini-italia-scoperta-natura/palermo-villa-tasca/"
+      ],
+      "access": "Paid entry, Parco di Villa Tasca (same grounds and ticket as pal_010, pal_019 and pal_020)",
+      "transport": "On Viale Regione Siciliana, the ring road toward Monreale; not walkable from the historic centre, reachable by bus or car",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }

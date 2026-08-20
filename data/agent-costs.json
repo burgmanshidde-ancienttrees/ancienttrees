@@ -2611,6 +2611,24 @@
     "note": "session write pass on the shelf, in-context, no agent dispatched: 3 stories written (bar_003, lyo_012, lyo_013). Lyon's 2 merged (12 trees now); Bari's 3 stay unmerged, still below the 4-tree floor with its register exhausted (both remaining candidates blocked on hard rule 10)",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "palermo",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 3,
+    "note": "Villa Tasca cluster deepened: London Plane, Cook Pine, Norfolk Island Pine, all within 200m of the existing pal_010 fig, all corroborated beyond the register. Rejected 3 more on species-ID ambiguity, avenue/no-collectible-point and closed-pending-restoration access",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "palermo",
+    "kind": "write",
+    "tokens": 12000,
+    "trees": 3,
+    "note": "session write pass, in-context: 3 stories written and merged (pal_019-021), Palermo 18 to 21 (past its 20-tree target, judged worth it, all in one tight cluster). Set oldest_tree_id to pin the fig (pal_003, documented 1845 planting) over the new plane's vaguer estimate, since the build's auto-derivation would otherwise have silently swapped the oldest-tree answer to the weaker-evidenced tree",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
