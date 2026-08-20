@@ -335,18 +335,18 @@ so qa.py fails the deploy when the table and the json disagree.
 | 138 | Salt Lake City | 5.16 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 139 | Lagos | 3.43 | 34,452 | - | - | - | - | 10 | predicted (travel demand) |
 | 140 | Lund | 5.14 | - | - | - | - | - | 10 | predicted (travel demand) |
-| 141 | Kobe | 3.40 | 54,798 | - | - | - | - | 10 | predicted (travel demand) |
-| 142 | Cardiff | 5.08 | - | - | - | - | - | 10 | predicted (travel demand) |
-| 143 | Heraklion | 4.96 | 66,359 | - | - | - | - | 10 | predicted (travel demand) |
-| 144 | Marseille | 4.96 | 182,033 | - | - | - | - | 10 | predicted (travel demand) |
-| 145 | Sydney | 4.92 | 305,304 | 6 | - | - | - | 10 | published, never ranked (may be uncrawled) |
-| 146 | Lausanne | 4.90 | 68,242 | - | - | - | - | 10 | predicted (travel demand) |
-| 147 | Riga | 4.90 | 108,918 | - | - | - | - | 10 | predicted (travel demand) |
-| 148 | Oxford | 4.87 | 111,583 | 5 | 1 | 1 | - | 20 | measured |
-| 149 | Split | 4.87 | 132,399 | 4 | - | 1 | - | 20 | measured |
-| 150 | Den Bosch | 2.43 | 39,682 | 11 | 1 | 1 | 119 | 20 | measured |
-| 151 | Christchurch | 4.83 | 104,874 | - | - | - | - | 10 | predicted (travel demand) |
-| 152 | Las Vegas | 4.82 | - | 11 | - | 2 | - | 10 | published, never ranked (may be uncrawled) |
+| 141 | Las Vegas | 4.82 | - | 8 | - | 2 | - | 10 | published, never ranked (may be uncrawled) |
+| 142 | Kobe | 3.40 | 54,798 | - | - | - | - | 10 | predicted (travel demand) |
+| 143 | Cardiff | 5.08 | - | - | - | - | - | 10 | predicted (travel demand) |
+| 144 | Heraklion | 4.96 | 66,359 | - | - | - | - | 10 | predicted (travel demand) |
+| 145 | Marseille | 4.96 | 182,033 | - | - | - | - | 10 | predicted (travel demand) |
+| 146 | Sydney | 4.92 | 305,304 | 6 | - | - | - | 10 | published, never ranked (may be uncrawled) |
+| 147 | Lausanne | 4.90 | 68,242 | - | - | - | - | 10 | predicted (travel demand) |
+| 148 | Riga | 4.90 | 108,918 | - | - | - | - | 10 | predicted (travel demand) |
+| 149 | Oxford | 4.87 | 111,583 | 5 | 1 | 1 | - | 20 | measured |
+| 150 | Split | 4.87 | 132,399 | 4 | - | 1 | - | 20 | measured |
+| 151 | Den Bosch | 2.43 | 39,682 | 11 | 1 | 1 | 119 | 20 | measured |
+| 152 | Christchurch | 4.83 | 104,874 | - | - | - | - | 10 | predicted (travel demand) |
 | 153 | Nagoya | 3.17 | 83,437 | - | - | - | 1 | 10 | predicted (travel demand) |
 | 154 | Miami | 4.74 | 278,558 | - | - | - | - | 10 | predicted (travel demand) |
 | 155 | Palma de Mallorca | 2.84 | 84,075 | 5 | 1 | 1 | 8 | 20 | measured |

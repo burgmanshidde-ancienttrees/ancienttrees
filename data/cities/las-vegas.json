@@ -2,7 +2,7 @@
   "city": "Las Vegas",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "Nevada keeps a register of its biggest trees, and a surprising number of the state's champions grow on one university campus in the middle of the Mojave. Eight stand on the UNLV campus, close enough to walk between in an afternoon, and three more sit together in Winchester Park to the north. Nothing here is ancient. What is remarkable is the collection: the largest recorded coolibah, chir pine, Indian rosewood and Texas olive in Nevada, in a city where all but one of them is an import.",
+  "intro": "Nevada keeps a register of its biggest trees, and a surprising number of the state's champions grow on one university campus in the middle of the Mojave. Five stand on the UNLV campus, close enough to walk between in an afternoon, and three more sit together in Winchester Park to the north. Nothing here is ancient. What is remarkable is the collection: the largest recorded coolibah, chir pine, Indian rosewood and lemon-scented gum in Nevada, in a city where all but one of them is an import.",
   "meta_description": "Nevada's champion trees on the UNLV campus and in Winchester Park: the state's largest coolibah, chir pine, Indian rosewood and weeping mulberry.",
   "oldest_tree_id": "lvg_010",
   "question_answer": "No tree in Las Vegas has a documented age, and that is the honest answer rather than a gap we are hiding: Nevada's Big Tree Register measures girth, height and crown spread, not years, and none of the trees on this list carries a recorded planting date. The biggest trunk anyone has measured belongs to the Lemon Eucalyptus of Winchester Park at 234 centimetres round, which makes it the largest rather than provably the oldest, because girth runs at wildly different speeds from one species to the next. The city itself only dates from 1905, which puts a low ceiling on how old a planted tree here can be.",
@@ -15,7 +15,7 @@
     },
     {
       "q": "Where are Las Vegas's champion trees?",
-      "a": "Eight are on the UNLV campus, spread around the academic mall and the buildings behind it, and three stand together in Winchester Park about five kilometres north-east. Both are free and open."
+      "a": "Five are on the UNLV campus, spread around the academic mall and the buildings behind it, and three stand together in Winchester Park about five kilometres north-east. Both are free and open."
     },
     {
       "q": "How exact are the locations on this page?",
@@ -58,36 +58,6 @@
       }
     },
     {
-      "id": "lvg_002",
-      "name": "The Weeping Camperdown Elm at Carlson",
-      "species": "Camperdown Elm (Ulmus glabra 'Camperdownii')",
-      "age_estimate": "not documented",
-      "age_min": null,
-      "age_max": null,
-      "girth_cm": 79,
-      "location": {
-        "address": "By the William D. Carlson Education Building, UNLV campus, 4505 S Maryland Pkwy, Las Vegas, NV 89154",
-        "latitude": 36.1091651,
-        "longitude": -115.139717,
-        "neighbourhood": "UNLV campus"
-      },
-      "story": "Every Camperdown elm on earth descends from one mutant tree. It was found on the Earl of Camperdown's estate in Scotland in 1835, a wych elm that grew sideways and downwards instead of up, and because it could not pass that habit on by seed, the nursery trade cloned it. Each one since has been grafted onto an elm trunk at a fixed height, so the branches fall from the same point like water off a fountain.\n\nNevada's champion is the one by the Carlson Education Building at UNLV, and it is 11 feet tall. That is not a stunted measurement or a young tree. The graft sets the height and everything after that goes outward and down, so 21 feet of spread on a 31-inch trunk is what a large one looks like. The Nevada Big Tree Register recorded those figures in 2015 and the university reported the same 11 feet in November 2025, which for this cultivar is the expected answer rather than a stalled one.\n\nNobody has recorded when it was planted, and a grafted clone gives you nothing to date it from. If a campus records office or an old photograph can settle it, we would like to hear.\n\nOur pin marks the Carlson building, not the tree, so look for the low green dome on the ground beside it. Then duck under. The inside is a cage of crossing branches, and that is the reason anyone plants them.",
-      "verified_sources": [
-        "https://forestry.nv.gov/uploads/missions/20210712_AMT_2015_Nevada_Big_Tree_Register.pdf",
-        "https://www.unlv.edu/news/article/rooted-champions"
-      ],
-      "access": "Free. Public university campus, open grounds, walkable any time the campus is open.",
-      "transport": "On the UNLV campus; nearest RTC bus stops serve Maryland Parkway, short walk in.",
-      "location_precision": "approximate",
-      "curation_status": "flagged",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      }
-    },
-    {
       "id": "lvg_003",
       "name": "The Kissing Tree of Carlson Hill",
       "species": "Weeping Mulberry (Morus alba 'Pendula')",
@@ -102,36 +72,6 @@
         "neighbourhood": "UNLV campus"
       },
       "story": "The state champion weeping mulberry has its own fan account on Instagram. Students at UNLV call it the kissing tree, they photograph it, they meet under it, and on Take Your Child to Work Day the children go inside it, because a weeping mulberry is essentially a tent: the branches come off the top of the trunk and hang to the ground on every side, leaving a hollow in the middle.\n\nThe Nevada Big Tree Register measured it in 2015 at 68 inches around, 18 feet tall and 31 feet across, the largest recorded Morus alba 'Pendula' in the state. In November 2025 the university described it at about 20 feet tall and 30 feet wide, still on the grassy hill outside the Carlson Education Building, which is how we know it is alive.\n\nIts age is unknown. No planting date has been published, and a grafted weeping cultivar is not something a girth measurement can date honestly. If you know, tell us.\n\nStart here if you are only walking part of the campus. Seven more state champions stand within a few minutes of it, but this is the one people actually use, which is a fair test of a tree. The pin marks the Carlson building rather than the trunk; the hill is right outside, and you will recognise the shape immediately.",
-      "verified_sources": [
-        "https://forestry.nv.gov/uploads/missions/20210712_AMT_2015_Nevada_Big_Tree_Register.pdf",
-        "https://www.unlv.edu/news/article/rooted-champions"
-      ],
-      "access": "Free. Public university campus, open grounds, walkable any time the campus is open.",
-      "transport": "On the UNLV campus; nearest RTC bus stops serve Maryland Parkway, short walk in.",
-      "location_precision": "approximate",
-      "curation_status": "flagged",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      }
-    },
-    {
-      "id": "lvg_004",
-      "name": "The Buddhist Pine of White Hall",
-      "species": "Buddhist Pine (Podocarpus macrophyllus)",
-      "age_estimate": "not documented",
-      "age_min": null,
-      "age_max": null,
-      "girth_cm": 51,
-      "location": {
-        "address": "Against White Hall, UNLV campus, 4505 S Maryland Pkwy, Las Vegas, NV 89154",
-        "latitude": 36.1102662,
-        "longitude": -115.1423813,
-        "neighbourhood": "UNLV campus"
-      },
-      "story": "It is not a pine, it is not a yew, and it holds a state record. Podocarpus macrophyllus comes from Japan and southern China and is sold across the world as a clipped hedge or a patio plant, which is why the largest one recorded in Nevada is a 24-foot specimen pressed against the side of White Hall on the UNLV campus.\n\nThe Nevada Big Tree Register measured it in 2015 at 20 inches around, 24 feet tall, 13 feet across. That is the slimmest trunk in this city's entry by a distance. Big-tree registers work species by species rather than by absolute size, so a champion is simply the largest known example of its kind, and for a plant most people keep in a container, this is what the ceiling looks like. UNLV reported the same 24 feet in November 2025, in landscaping that has recently been redone around it.\n\nNo age is recorded and none can be derived: there is no published growth rate for this species under desert irrigation, and inventing one would be worse than leaving the field empty. If you know when it was planted, tell us.\n\nThe coordinates mark the building, not the trunk. Once you are there it is easy: dark, leathery, narrow leaves in dense whorls, like a yew hedge that got away from somebody.",
       "verified_sources": [
         "https://forestry.nv.gov/uploads/missions/20210712_AMT_2015_Nevada_Big_Tree_Register.pdf",
         "https://www.unlv.edu/news/article/rooted-champions"
@@ -237,36 +177,6 @@
         "https://www.unlv.edu/news/article/rooted-champions"
       ],
       "access": "Free. Public university campus, open grounds, walkable any time the campus is open.",
-      "transport": "On the UNLV campus; nearest RTC bus stops serve Maryland Parkway, short walk in.",
-      "location_precision": "approximate",
-      "curation_status": "flagged",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      }
-    },
-    {
-      "id": "lvg_008",
-      "name": "The Texas Olive Behind the Paint Shop",
-      "species": "Texas Olive (Cordia boissieri)",
-      "age_estimate": "not documented",
-      "age_min": null,
-      "age_max": null,
-      "girth_cm": 102,
-      "location": {
-        "address": "Behind the campus paint shop, near UNLV Facilities Management, 4505 S Maryland Pkwy, Las Vegas, NV 89154 (exact building position not confirmed this pass)",
-        "latitude": 36.1073036,
-        "longitude": -115.1456164,
-        "neighbourhood": "UNLV campus"
-      },
-      "story": "Nevada's champion Texas olive grows behind the paint shop. Not on the mall, not by a lecture hall, not anywhere a university would put a specimen tree: it stands on the working side of the UNLV campus, behind the buildings where the maintenance crews are, and no larger Cordia boissieri has been recorded in the state.\n\nThe Nevada Big Tree Register measured it in 2015 at 40 inches around and 20 feet tall, with a 14-foot spread. The university confirmed the same 20 feet in November 2025 and described what it does through the year: white trumpet flowers that hummingbirds work over, then a fruit that looks like an olive and is not one, and should not be eaten.\n\nThe species comes from the lower Rio Grande, south Texas and northern Mexico, and is planted across the Southwest for the flowers rather than for anything useful.\n\nTwo things before you walk out to it. No planting date has been published, so this page gives no age. And our pin is the weakest on this page: we could not place the campus paint shop on a public map, so the coordinates point at the facilities management area, which is a neighbourhood rather than a spot. If you find the tree, send us where it is and the pin gets fixed the same day.",
-      "verified_sources": [
-        "https://forestry.nv.gov/uploads/missions/20210712_AMT_2015_Nevada_Big_Tree_Register.pdf",
-        "https://www.unlv.edu/news/article/rooted-champions"
-      ],
-      "access": "Free. Public university campus, open grounds, walkable any time the campus is open. This one sits behind a maintenance building rather than on a public mall, so it is less obviously a destination than the others; still open ground.",
       "transport": "On the UNLV campus; nearest RTC bus stops serve Maryland Parkway, short walk in.",
       "location_precision": "approximate",
       "curation_status": "flagged",

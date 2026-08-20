@@ -76,7 +76,19 @@ const CROSS_CITY_MERGED_TREE_SLUGS: [string, string, string, string][] = [
 // describing it as living, ~190 years old) was never checked against the
 // official record. Hard rule 2: a tree known to be dead never ships. Pulled
 // rather than fabricating a replacement at the same slug.
+// las-vegas lvg_002/004/008 (2026-08-20): published the day before as Nevada
+// state champions and pulled on size after Hidde asked what exactly we had put
+// there if none of it is old. Every fact verified; they were simply too small
+// to be worth a walk. At 51, 79 and 102 cm round they were among the smallest
+// trees on the site, against a median of 375, and the 51 cm podocarpus was the
+// smallest of all 1435. The eight that stay have a reason to stand there: the
+// two big Winchester Park eucalypts, the mulberry students actually meet under,
+// the one native, and the three anomalies of a species growing where it should
+// not. Stories and sources kept in data/leads/las-vegas.json.
 const REMOVED_TREE_SLUGS: [string, string][] = [
+  ["las-vegas", "weeping-camperdown-elm-at-carlson"],
+  ["las-vegas", "buddhist-pine-of-white-hall"],
+  ["las-vegas", "texas-olive-behind-the-paint-shop"],
   ["lyon", "cedar-of-ile-barbe"],
   ["munich", "copper-beech-of-nymphenburg"],
   ["munich", "nymphenburg-lime"],
