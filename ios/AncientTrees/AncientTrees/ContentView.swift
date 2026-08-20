@@ -200,7 +200,7 @@ struct ContentView: View {
                         }
                     }
                         .tag(0)
-                        .tabItem { Label("Explore", systemImage: "binoculars.fill") }
+                        .tabItem { Label("Explore", systemImage: "magnifyingglass") }
 
                     stack(1, cat) { SavedView(catalogue: cat, origin: origin) }
                         .tag(1)
@@ -214,13 +214,12 @@ struct ContentView: View {
 
                     stack(3, cat) { CollectView(catalogue: cat, origin: origin) }
                         .tag(3)
-                        .tabItem { Label("Collect", systemImage: "checkmark.seal") }
+                        .tabItem { Label("Collect", systemImage: "rosette") }
 
                     stack(4, cat) { ProfileView(catalogue: cat) }
                         .tag(4)
                         .tabItem { Label("Profile", systemImage: "person.crop.circle") }
                 }
-                .tint(Brand.moss)
                 .environment(saved)
                 .environment(store)
                 .environment(entitlement)
