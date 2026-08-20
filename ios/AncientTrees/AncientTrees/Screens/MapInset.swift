@@ -20,6 +20,30 @@
 import SwiftUI
 import MapKit
 
+/// One at a time, and never more than two.
+///
+/// MKMapSnapshotter is not a thumbnail generator, it is a map render, and Home
+/// puts dozens of cards on screen at once across its shelves. Firing one per
+/// card froze the app on the home screen: Hidde could not scroll at all. A
+/// gate is the fix rather than a smaller image, because the cost is per render
+/// and not per pixel.
+actor SnapshotGate {
+    static let shared = SnapshotGate()
+    private var running = 0
+    private var waiting: [CheckedContinuation<Void, Never>] = []
+
+    func enter() async {
+        if running < 2 { running += 1; return }
+        await withCheckedContinuation { waiting.append($0) }
+        running += 1
+    }
+
+    func leave() {
+        running -= 1
+        if !waiting.isEmpty { waiting.removeFirst().resume() }
+    }
+}
+
 @MainActor
 enum MapThumb {
     private static let cache = NSCache<NSString, UIImage>()
@@ -38,6 +62,8 @@ enum MapThumb {
         options.pointOfInterestFilter = .excludingAll
         options.traitCollection = UITraitCollection(userInterfaceStyle: dark ? .dark : .light)
 
+        await SnapshotGate.shared.enter()
+        defer { Task { await SnapshotGate.shared.leave() } }
         guard let shot = try? await MKMapSnapshotter(options: options).start() else { return nil }
 
         // The dot is drawn on rather than left to the snapshotter, which has no
@@ -88,6 +114,10 @@ struct MapInset: View {
         }
         .shadow(color: .black.opacity(side == nil ? 0 : 0.18), radius: 4, y: 2)
         .task(id: scheme) {
+            // A card that scrolls past in half a second should never have cost
+            // a map render. Anything still on screen after this is worth one.
+            try? await Task.sleep(for: .milliseconds(400))
+            if Task.isCancelled { return }
             let w = side ?? UIScreen.main.bounds.width - 40
             image = await MapThumb.snapshot(lat: lat, lng: lng,
                                             size: CGSize(width: w * 2, height: (side ?? height) * 2),
