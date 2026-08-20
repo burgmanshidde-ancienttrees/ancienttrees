@@ -10,8 +10,13 @@ import UIKit
 
 @main
 struct AncientTreesApp: App {
-    init() {
-        // The brand face has to exist before the first view asks for it.
+    /// Registering the brand font and styling the navigation bar used to happen
+    /// in init(), which runs before any view exists. Anything that hangs there
+    /// gives a white screen with nothing to read: no view, no console output, no
+    /// crash report. It runs on the first view's appearance now, so the worst
+    /// case is an unstyled first frame rather than a blank app.
+    @MainActor static func configureAppearance() {
+// The brand face has to exist before the first view asks for it.
         BrandFont.register()
 
         // A large navigation title is drawn by UIKit, so SwiftUI cannot set its
@@ -36,6 +41,7 @@ struct AncientTreesApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .task { AncientTreesApp.configureAppearance() }
         }
     }
 }
