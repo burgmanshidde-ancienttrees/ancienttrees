@@ -81,16 +81,17 @@ jobs:
         run: |
           set -o pipefail
           # The whole log goes to a file and only the interesting lines to the
-          # console. SweepFrames prints every screen's element tree between
-          # <<<SWEEP markers, which is thousands of lines nobody reads and the
-          # exact input the layout check below needs, so grep may filter what
-          # the console shows and must not filter what is kept.
+          # console. SweepFrames is skipped here and run by the layout step
+          # below instead: it takes two minutes, its measurements never appear
+          # in this log whatever we do with grep, and the step that needs them
+          # runs it properly.
           xcodebuild test \
             -project ios/AncientTrees/AncientTrees.xcodeproj \
             -scheme AncientTrees \
             -destination "id=${{ steps.sim.outputs.udid }}" \
             -derivedDataPath /tmp/dd \
             -retry-tests-on-failure -test-iterations 2 \
+            -skip-testing:AncientTreesUITests/SweepFrames \
             CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" \
             > /tmp/xcodebuild.log 2>&1 || true
           grep -E "Test case|error:|warning: .*deprecat|\*\* (TEST|BUILD)" /tmp/xcodebuild.log || true
@@ -125,9 +126,12 @@ jobs:
       - name: Does it line up (CLIPPED / DRIFT / SMALL)
         if: always()
         run: |
-          if ! grep -q "<<<SWEEP " /tmp/xcodebuild.log; then
-            echo "SweepFrames produced no measurements; nothing to judge."
-            echo "That is a failure of the sweep, not a clean app."
-            exit 1
-          fi
-          python3 scripts/appfit.py --dump /tmp/xcodebuild.log
+          # appfit.py runs the sweep ITSELF rather than reading it out of the
+          # log above, and it has to. XCTest does not forward a test's standard
+          # output to xcodebuild, so the <<<SWEEP markers this step used to look
+          # for never reached the log on any machine: the step could only ever
+          # print "no measurements" and fail. SweepFrames writes a file instead,
+          # and appfit disables parallel testing so the file survives, because a
+          # UI test otherwise runs on a throwaway CLONE of the simulator that is
+          # deleted with the file inside it.
+          python3 scripts/appfit.py --device "${{ steps.sim.outputs.udid }}"
