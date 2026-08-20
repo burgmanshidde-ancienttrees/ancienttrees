@@ -1,5 +1,12 @@
-// Four tabs: Map, Explore, Collect, Profile. Hidde's own division, 2026-08-20,
+// Four tabs: Home, Map, Collect, Profile. Hidde's own division, 2026-08-20,
 // recorded in DECISIONS.md with his words for each.
+//
+// HOME IS FIRST, and that is Hidde overruling me on the same day ("nee map als
+// tweede tab"). My argument for the map opening the app was that the website
+// leads with inspiration because it does not know where you are while the app
+// does, and that the north star sentence is "I open it, it knows where I am".
+// He heard it and decided otherwise, which is his call and not mine; this
+// comment exists so the reasoning is not lost rather than to relitigate it.
 //
 // The four verbs are untouched as the product; two of them stopped being
 // destinations and became controls. WALK is a filter on the map rather than a
@@ -34,15 +41,15 @@ struct ContentView: View {
     /// SwiftUI a fresh array on every read, so a push never settled and tapping
     /// a tree card did nothing at all, on the map AND on Explore. Two UI tests
     /// caught it; nothing in a screenshot could have.
+    @State private var homePath: [Route] = []
     @State private var mapPath: [Route] = []
-    @State private var explorePath: [Route] = []
     @State private var collectPath: [Route] = []
     @State private var profilePath: [Route] = []
 
     private func path(_ id: Int) -> Binding<[Route]> {
         switch id {
-        case 0: $mapPath
-        case 1: $explorePath
+        case 0: $homePath
+        case 1: $mapPath
         case 2: $collectPath
         default: $profilePath
         }
@@ -50,8 +57,8 @@ struct ContentView: View {
 
     private func clearPath(_ id: Int) {
         switch id {
-        case 0: mapPath = []
-        case 1: explorePath = []
+        case 0: homePath = []
+        case 1: mapPath = []
         case 2: collectPath = []
         default: profilePath = []
         }
@@ -147,6 +154,8 @@ struct ContentView: View {
             } else {
                 ContentUnavailableView("That collection is gone", systemImage: "square.stack")
             }
+        case .species(let name):
+            SpeciesView(commonName: name, catalogue: cat, origin: origin)
         case .city(let slug):
             CityView(slug: slug,
                      name: cat.trees.first(where: { $0.citySlug == slug })?.city ?? slug,
@@ -158,7 +167,11 @@ struct ContentView: View {
         Group {
             if let cat = store.catalogue {
                 TabView(selection: tabSelection) {
-                    stack(0, cat) {
+                    stack(0, cat) { HomeView(catalogue: cat, origin: origin) }
+                        .tag(0)
+                        .tabItem { Label("Home", systemImage: "house") }
+
+                    stack(1, cat) {
                         if let id = debugTree, let t = cat.tree(id) {
                             TreeDetail(tree: t, catalogue: cat)
                         } else {
@@ -168,12 +181,8 @@ struct ContentView: View {
                                    onUseMyLocation: { location.request() })
                         }
                     }
-                        .tag(0)
-                        .tabItem { Label("Map", systemImage: "map.fill") }
-
-                    stack(1, cat) { ExploreView(catalogue: cat, origin: origin) }
                         .tag(1)
-                        .tabItem { Label("Explore", systemImage: "square.grid.2x2") }
+                        .tabItem { Label("Map", systemImage: "map.fill") }
 
                     stack(2, cat) { CollectView(catalogue: cat, origin: origin) }
                         .tag(2)
@@ -190,7 +199,7 @@ struct ContentView: View {
                 .environment(nudge)
                 .environment(navigator)
                 .onChange(of: navigator.showOnMap) { _, new in
-                    if new != nil { tab = 0 }
+                    if new != nil { tab = 1 }
                 }
                 // ONE sheet modifier, driven by one optional, because SwiftUI
                 // honours only one per view and stacking three meant the ask

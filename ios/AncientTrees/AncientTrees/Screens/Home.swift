@@ -1,3 +1,20 @@
+// Home: the website's homepage, on a phone.
+//
+// Renamed from Explore on 2026-08-20 (Hidde: "Home - this is the explore page -
+// based on our homepage on the website ... really try and recreate the web
+// homepage experience here"). It is the second tab, not the first, and that is
+// the one thing of his proposal I did not take: the website opens on
+// inspiration because it does not know where you are, and the app does. Opening
+// on anything but the map would be copying the website onto a device that can
+// do better. PRODUCT_IA.md's own reason for moving the map OFF the homepage was
+// that a sparse WORLD map advertises incompleteness, and that reason does not
+// transfer to a map that opens on your street.
+//
+// The order follows PRODUCT_IA.md's homepage order, with one deliberate
+// omission. The website's second block is the four verbs explained as sections;
+// in the app the verbs ARE the tab bar, so repeating them here is exactly the
+// duplication that document warns about ("tighten, never duplicate").
+//
 // Browse, rebuilt on 2026-08-20 as shelves rather than as a settings list.
 //
 // It was a `List`: season rows, walk rows, city rows, all in Apple's default
@@ -21,7 +38,7 @@
 
 import SwiftUI
 
-struct ExploreView: View {
+struct HomeView: View {
     let catalogue: Catalogue
     let origin: (lat: Double, lng: Double)
     @Environment(CatalogueStore.self) private var store
@@ -52,15 +69,99 @@ struct ExploreView: View {
     var body: some View {
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 30) {
+                if search.isEmpty { hero } else { EmptyView() }
                 if search.isEmpty { shelves } else { results }
                 Color.clear.frame(height: 90)        // clear of the floating tab bar
             }
             .padding(.top, 6)
         }
         .brandGround()
-        .navigationTitle("Explore")
+        .navigationTitle("Home")
         .searchable(text: $search, prompt: "Search a place, a tree or a species")
         .refreshable { await store.refresh() }
+    }
+
+    /// The website leads with one tree rather than with a grid, and so does
+    /// this: its "Tree of the month" block, which is the app's equivalent of a
+    /// hero photo you cannot have on a phone without eating the whole screen.
+    /// Picks the nearest tree that is at its best right now AND has a
+    /// photograph, because a hero without a picture is a headline.
+    @ViewBuilder private var hero: some View {
+        if let t = atTheirBest.first(where: { $0.photo != nil }) {
+            NavigationLink(value: Route.tree(t.id)) {
+                VStack(alignment: .leading, spacing: 0) {
+                    ZStack(alignment: .bottomLeading) {
+                        if let p = t.photo, let url = Photos.thumb(p.url, width: 900) {
+                            AsyncImage(url: url) { img in
+                                img.resizable().aspectRatio(contentMode: .fill)
+                            } placeholder: {
+                                LinearGradient(colors: [Brand.canopy, Brand.moss],
+                                               startPoint: .topLeading, endPoint: .bottomTrailing)
+                            }
+                            .frame(height: 260).clipped()
+                        }
+                        LinearGradient(colors: [.clear, .black.opacity(0.75)],
+                                       startPoint: .center, endPoint: .bottom)
+                        VStack(alignment: .leading, spacing: 6) {
+                            Chip(text: "At its best now", tint: Brand.gold, filled: true)
+                            Text(t.name)
+                                .font(.brand(26, .black, relativeTo: .title))
+                                .foregroundStyle(.white)
+                                .multilineTextAlignment(.leading)
+                            if let b = t.bestTime {
+                                Text(b.label).font(.subheadline)
+                                    .foregroundStyle(.white.opacity(0.9))
+                                    .lineLimit(2)
+                            }
+                        }
+                        .padding(16)
+                    }
+                    .frame(height: 260)
+                }
+                .clipShape(.rect(cornerRadius: 16))
+                .shadow(color: .black.opacity(0.10), radius: 10, y: 4)
+                .padding(.horizontal, 16)
+            }
+            .buttonStyle(.plain)
+        }
+    }
+
+    /// The compact directory PRODUCT_IA.md asks for at the foot of the
+    /// homepage: present for the determined, invisible as furniture.
+    private var speciesShelf: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            ShelfHeader(title: "By species",
+                        subtitle: "\(Set(catalogue.trees.map(\.commonName)).count) kinds of tree on the map.")
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 8) {
+                    ForEach(topSpeciesHere, id: \.name) { sp in
+                        NavigationLink(value: Route.species(sp.name)) {
+                            HStack(spacing: 8) {
+                                SpeciesMark(species: sp.name, color: Brand.moss)
+                                    .frame(width: 26, height: 26)
+                                VStack(alignment: .leading, spacing: 0) {
+                                    Text(sp.name).font(.brand(14, .bold, relativeTo: .subheadline))
+                                        .foregroundStyle(Brand.ink).lineLimit(1)
+                                    Text("\(sp.count)").font(.caption2)
+                                        .foregroundStyle(Brand.inkSoft).monospacedDigit()
+                                }
+                            }
+                            .padding(.horizontal, 12).padding(.vertical, 9)
+                            .brandCard(12)
+                        }
+                        .buttonStyle(.plain)
+                    }
+                }
+                .padding(.horizontal, 16).padding(.bottom, 4)
+            }
+        }
+    }
+
+    private var topSpeciesHere: [(name: String, count: Int)] {
+        Dictionary(grouping: catalogue.trees, by: \.commonName)
+            .map { (name: $0.key, count: $0.value.count) }
+            .sorted { $0.count > $1.count }
+            .prefix(18).map { $0 }
     }
 
     // MARK: - the browse state
@@ -76,6 +177,7 @@ struct ExploreView: View {
         if !walksNear.isEmpty { walkShelf }
 
         cityShelf
+        speciesShelf
 
         // Every collection the website has, each as its own row. The order is
         // the feed's, which is the order somebody chose.
