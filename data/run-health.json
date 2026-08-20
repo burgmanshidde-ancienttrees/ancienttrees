@@ -595,6 +595,23 @@
    "cities_touched": 2,
    "trees": 5,
    "logged": true
+  },
+  {
+   "started": "2026-08-20T06:21:21+00:00",
+   "date": "2026-08-20",
+   "run_id": "32339238020",
+   "minutes": 55.5,
+   "minutes_basis": "measured",
+   "turns": 434,
+   "denials": 11,
+   "denials_source": "permission_denials: Bash(curl), Bash(echo), Bash(git), Bash(if), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 121537161,
+   "claims_held": [],
+   "commits": 22,
+   "cities_touched": 9,
+   "trees": 39,
+   "logged": true
   }
  ],
  "schedule_changes": [
