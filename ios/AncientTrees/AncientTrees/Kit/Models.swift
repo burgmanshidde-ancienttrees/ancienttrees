@@ -91,6 +91,8 @@ public struct Walk: Codable, Hashable, Sendable {
     public let minutes: Int
     public let duration: String
     public let combined: Bool
+    /// GeoJSON order, [lng, lat], present on 78 of 179 walks where
+    /// scripts/route_walks.py cached a real routed line.
     public let shape: [[Double]]?
 
     enum CodingKeys: String, CodingKey {
