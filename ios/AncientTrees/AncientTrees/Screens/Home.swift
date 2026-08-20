@@ -98,7 +98,11 @@ struct HomeView: View {
             .padding(.top, 6)
         }
         .brandGround()
-        .navigationTitle("Home")
+        // No literal tab-label heading: the content is the heading. The empty
+        // inline title keeps the bar (searchable lives in it) without the word
+        // "Home" shouting over the hero.
+        .navigationTitle("")
+        .navigationBarTitleDisplayMode(.inline)
         .searchable(text: $search, prompt: "Search a place, a tree or a species")
         .refreshable { await store.refresh() }
         .task(id: catalogue.version) { buildShelves() }

@@ -25,10 +25,12 @@ final class SweepFrames: XCTestCase {
 
     /// name -> the launch arguments that open it.
     private static let screens: [(String, [String])] = [
-        ("home",         ["-tab=0"]),
-        ("map",          ["-tab=1"]),
-        ("collect",      ["-tab=2"]),
-        ("profile",      ["-tab=3"]),
+        ("explore",      ["-tab=0"]),
+        ("map",          ["-map"]),
+        ("saved",        ["-tab=1"]),
+        ("spot",         ["-spot"]),
+        ("collect",      ["-tab=3"]),
+        ("profile",      ["-tab=4"]),
         ("tree",         ["-tab=0", "-open=tree:ath_004"]),
         ("tree-nophoto", ["-tab=0", "-open=tree:vln_010"]),
         ("city",         ["-tab=0", "-open=city:aarhus"]),
@@ -38,7 +40,7 @@ final class SweepFrames: XCTestCase {
         ("signin",       ["-tab=0", "-signin"]),
         ("paywall",      ["-tab=0", "-paywall"]),
         ("primer",       ["-tab=0", "-primer"]),
-        ("contribute",   ["-tab=3", "-contribute"]),
+        ("contribute",   ["-tab=4", "-contribute"]),
     ]
 
     /// The file appfit.py goes looking for.
