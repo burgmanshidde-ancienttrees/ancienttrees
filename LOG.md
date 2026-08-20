@@ -42,6 +42,26 @@ What the same check did find is a real bug of the exact kind CLAUDE.md already n
 
 FOR HIDDE: nothing blocks. The remaining 45 empty cities are mostly genuinely empty on Commons rather than unlooked-at: Caserta (20 trees), Melbourne, Hobart, Las Vegas, Dallas and Zaragoza returned no open-licence candidate at all across two sweeps. The cheaper next move for those is `famous_trees.py`, which finds trees we do not map that arrive with a photograph already attached, rather than hunting a photograph for a tree nobody has photographed.
 
+## 2026-08-20 (session, later) - Everything from the audit that did not need Hidde
+
+He said to do all of it that I could, so this is the audit's open list minus the four things that are his and the two that need a decision or data. Five shipped.
+
+**The homepage has a button.** "Explore trees near you" was an underlined text link under a big white search field, which made the weakest affordance on the page the core action of the whole product. It is a filled pill with a pin on it reading "Trees near you". The search field is untouched and now reads as the second option, which is what it is.
+
+**The location permission is primed before iOS asks.** Yesterday's fix made the system dialog appear at all; the expensive mistake left was being refused by somebody who would have said yes if they had known what it was for, and iOS gives exactly one shot at that question. There is a screen in front of it now that says what you get rather than what we need, with a "Not now" that leaves the shot unspent. This sits upstream of every save and therefore of every account.
+
+**Explore leads with photographs.** "At their best in August" is the best idea in the product and it was rendering as rows of plain text. It is a shelf of cards now, the same card the map sheet uses.
+
+**A locked walk says "Plus" instead of showing a bare padlock**, and the footer now says the honest half that was missing: Plus is not open yet. A lock with no price behind it reads as a thing you could buy today.
+
+**The map's title became a control.** "Near Amsterdam" floated over the map as bare text, stating a problem with no way to fix it. It is a chip now, and when we do not know where you are it is the button that finds out, or the way into Settings if the answer was already no. Apple's own recentre button sits top right; once you had panned away there had been no way back to yourself at all.
+
+**One risk taken and then checked rather than assumed.** Hiding the map's navigation bar so that chip could float meant the pushed tree page might lose its back button, which would trap somebody on a tree: a far worse bug than the cosmetic one being fixed, and not something a screenshot can see. `AncientTreesUITests` now taps a card, asserts there is a way back and taps it. Three UI tests, all passing: the way back, ticking a tree, and the sign-in sheet presenting.
+
+**One new finding, made visible by fixing another.** Now that the season shelf shows photographs, the first card under "At their best in August" is a leafless wingnut in a car park. The layout is right and the picture contradicts the header. That is a photo pass, not a layout job, and it is finding 24 in UX_AUDIT.md.
+
+**Still yours, unchanged from this morning:** the four dashboard actions. Three of them gate work that is written and sitting there, and one of them, the `{{ .Token }}` line, now also gates about an hour of website work rather than just the app.
+
 ## 2026-08-20 (session) - A UX audit of both products, and the app can now be signed into
 
 Hidde asked for the iOS app to be improved for one thing, getting as many people as possible to make an account, through the eyes of somebody who had just moved here from AllTrails, and then for a UX audit of the site and the app with it. Both are done. The full audit with every finding ranked is **`UX_AUDIT.md`**; this is the short version.
