@@ -110,6 +110,28 @@ pre-existing sitemap-lastmod warning as the other two Dutch passes today,
 this sandbox's shallow checkout). Photos: none hunted, per this runner's
 no-photo-judging rule.
 
+## 2026-08-20 (session, continued) - Haarlem: deepened 4 to 9, closing a gap the city's own page already pointed at
+
+Fourth Dutch city off the same shelf. Haarlem's existing haa_004 story
+already namechecked "monumental planes, a cypress grove, oaks, a walnut and
+a stand of chestnuts" as Kenaupark neighbours nobody had actually added; this
+pass added three of them from the freshly-staged register: a 6-tree bald
+cypress grove and a 3-tree plane grove (both within 80m of haa_004, both
+historically tied to the same 1865 Zocher park design already in the city's
+intro), and a common lime from the same park's later planting phase. Two
+more came from a small cluster of former monastery gardens 0.5km away: a
+weeping beech in Prinsenhof (monastery ground since before 1477, the city's
+herb garden since 1721) and an oak in the neighbouring Wijngaardtuin
+(a 16th-century monastery vineyard, redesigned late 19th century probably by
+L.P. Zocher, same family). Skipped two nearby chestnut candidates with
+status 5 and "onbekend" history out of caution rather than confirmed cause.
+All `curation_status: flagged`, `location_precision: confirmed`, all clean
+against `dead_entries_regex`. Walk planner grouped 6 of Haarlem's 9 trees
+into one 1.2km, 16 minute walk. Preflight clean on the first pass.
+Build/superlatives/qa all clean (same pre-existing sitemap-lastmod warning
+as the other three Dutch passes today). Photos: none hunted, per this
+runner's no-photo-judging rule.
+
 ## 2026-08-19 - Caserta: deepened to target (14 to 20), 6 new trees from its own leads file
 
 Six trees written from already-verified MASAF/Campania register leads that

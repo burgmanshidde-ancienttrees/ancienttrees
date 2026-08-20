@@ -2656,6 +2656,15 @@
     "note": "session pass, in-context, no agent dispatched: register-backed verify+write from freshly-staged Netherlands LRMB candidates (data/research/groningen-register-candidates.json, 65 entries). Central square/alley cluster: Martinikerkhof oak (shipped honestly noting the municipality's own 2021 survey rates its condition moderate to poor and declining, not excluded since a declining-but-alive tree is not a dead one), Prinsentuin horse chestnut (walled 1626 Renaissance garden, free entry confirmed independently), Akerkhof horse chestnut (corroborated against the municipality's own account of a recent redevelopment that explicitly preserved it while removing three other trees), Guyotplein sycamore, Engelenpoortje Siberian balsam poplar (Populus x berolinensis, a documented 1865 Berlin hybrid; the alley itself was closed to the public 2012-2020, confirmed via nl.wikipedia). All dead_entries_regex-clean. Groningen 5 to 10. Build's walk planner grouped 6 of the 10 into one 2.5km, 33 minute central walk. Preflight clean on first pass (unlike Utrecht, no intro-length fix needed). Build/superlatives/qa all clean (same pre-existing sitemap-lastmod warning, shallow checkout).",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "haarlem",
+    "kind": "verify",
+    "tokens": 0,
+    "trees": 5,
+    "note": "session pass, in-context, no agent dispatched: register-backed verify+write from freshly-staged Netherlands LRMB candidates (data/research/haarlem-register-candidates.json, 255 entries). Two small clusters: Prinsenhof weeping beech and Wijngaardtuin oak (both former monastery gardens, 0.27km apart), and three Kenaupark additions (a 6-tree bald cypress grove, a 3-tree plane grove, a common lime) all within 80m of the already-published haa_004 copper beech, which itself already namechecked 'monumental planes, a cypress grove... and a stand of chestnuts' as neighbours it had never actually added. All register history text ties back to the same Zocher landscape-architect family already established in this city's own intro (Kenaupark 1865, Wijngaardtuin redesign). All dead_entries_regex-clean; skipped two status-5 candidates with 'onbekend' history near the ones shipped, out of caution rather than confirmed cause. Haarlem 4 to 9. Walk planner grouped 6 of the 9 into one 1.2km, 16 minute walk. Preflight clean on first pass. Build/superlatives/qa all clean (same pre-existing sitemap-lastmod warning as the other three Dutch passes today).",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
