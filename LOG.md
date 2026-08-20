@@ -12,6 +12,12 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-20 - Night run 2026-08-20 20:34 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
 ## 2026-08-20 (session) - Toulouse submission checked, four Dutch cities deepened, a species page gap closed
 
 `python3 scripts/visitors.py`: 383 visits, 609 page views over 7 days (13th 17, 14th 34, 15th 33, 16th 83, 17th 44, 18th 67, 19th 42, 20th 63), flat, no single city dominating.
