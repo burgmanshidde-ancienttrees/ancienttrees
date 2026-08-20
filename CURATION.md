@@ -10,6 +10,25 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-20 (autonomous run) - Toulouse submission: elm ID correction checked, not changed
+
+Reader submission (3 duplicate rows, same content, a form double-submit)
+questioned tls_002's species: hairless leaves, shape said to be atypical
+for Wych Elm (Ulmus glabra), plus a note that two elms stand a few metres
+apart at the spot and another nearby. Re-queried Toulouse's own open-data
+API directly for id 15138: it still returns Ulmus glabra at essentially
+our exact coordinate and remains the sole tree in the area flagged
+remarquable=Ville de Toulouse. Found 14 elms within 150m, including one
+Ulmus laevis (id 15143) about 15m away, unflagged. Laevis has notably
+smoother leaves than glabra, so the reader most likely looked at that
+neighbouring tree rather than tls_002. Left the species as the register
+states it (our only source, government-trusted per the register-layer
+rule), added a verify_notes entry recording the correction and the check,
+and added one sentence to the story noting the cluster of elms so a
+future visitor trusts the pin over the first elm they see. Stayed
+`flagged` (unchanged; a second independent source still does not exist).
+All 3 rows marked processed.
+
 ## 2026-08-20 (session) - Arnhem: deepened 4 to 9 from the freshly-staged Netherlands register
 
 Bari checked first per the shelf's own writing queue: register genuinely
