@@ -1,23 +1,14 @@
-// Four tabs: Home, Map, Collect, Profile. Hidde's own division, 2026-08-20,
-// recorded in DECISIONS.md with his words for each.
+// Five slots: Explore, Saved, Spot, Collect, Profile. Hidde's bar, decided
+// 2026-08-20 evening after two earlier same-day layouts; the full reasoning
+// lives in DECISIONS.md and the reading is short: left looks (free), the
+// centre contributes (free, and it is a BUTTON rather than a place), right
+// owns (where Plus lives).
 //
-// HOME IS FIRST, and that is Hidde overruling me on the same day ("nee map als
-// tweede tab"). My argument for the map opening the app was that the website
-// leads with inspiration because it does not know where you are while the app
-// does, and that the north star sentence is "I open it, it knows where I am".
-// He heard it and decided otherwise, which is his call and not mine; this
-// comment exists so the reasoning is not lost rather than to relitigate it.
-//
-// The four verbs are untouched as the product; two of them stopped being
-// destinations and became controls. WALK is a filter on the map rather than a
-// tab, and SEASON is a pulse on the pins rather than a tab, because that is
-// where you would reach for either. The website made the same move when season
-// left its nav on 2026-07-29.
-//
-// What this replaced was Saved and You, which were both nouns about storage and
-// which split one idea across two screens: the lists in one, the score in the
-// other, and the account buried under both. Collect is the game and Profile is
-// the admin, which is the split AllTrails and Google Maps both make.
+// Explore carries the old Home and Map as two modes of one tab behind
+// AllTrails' floating pill; his Home-first ruling from that afternoon survives
+// as the shelves opening the tab. Spot is the Strava/Untappd centre pattern:
+// selecting it presents a sheet and the bar stays where it was. WALK stays a
+// filter on the map and SEASON a pulse on the pins, exactly as before.
 
 import SwiftUI
 import CoreLocation
@@ -42,25 +33,25 @@ struct ContentView: View {
     /// SwiftUI a fresh array on every read, so a push never settled and tapping
     /// a tree card did nothing at all, on the map AND on Explore. Two UI tests
     /// caught it; nothing in a screenshot could have.
-    @State private var homePath: [Route] = []
-    @State private var mapPath: [Route] = []
+    @State private var explorePath: [Route] = []
+    @State private var savedPath: [Route] = []
     @State private var collectPath: [Route] = []
     @State private var profilePath: [Route] = []
 
     private func path(_ id: Int) -> Binding<[Route]> {
         switch id {
-        case 0: $homePath
-        case 1: $mapPath
-        case 2: $collectPath
+        case 0: $explorePath
+        case 1: $savedPath
+        case 3: $collectPath
         default: $profilePath
         }
     }
 
     private func clearPath(_ id: Int) {
         switch id {
-        case 0: homePath = []
-        case 1: mapPath = []
-        case 2: collectPath = []
+        case 0: explorePath = []
+        case 1: savedPath = []
+        case 3: collectPath = []
         default: profilePath = []
         }
     }
@@ -71,10 +62,15 @@ struct ContentView: View {
     enum RootSheet: Identifiable, Equatable {
         case signIn(SignInReason)
         case paywall(Feature)
+        /// The centre button's sheet. A case here rather than its own boolean
+        /// because SwiftUI honours one sheet modifier per view, which is the
+        /// whole reason this enum exists.
+        case spot
         var id: String {
             switch self {
             case .signIn(let r): "signin-" + r.id
             case .paywall(let f): "paywall-" + f.rawValue
+            case .spot: "spot"
             }
         }
     }
@@ -133,6 +129,10 @@ struct ContentView: View {
     private var tabSelection: Binding<Int> {
         Binding(get: { tab },
                 set: { new in
+                    // Spot is a button wearing a tab's clothes, the Strava and
+                    // Untappd centre pattern: selecting it presents the sheet
+                    // and the bar stays exactly where it was.
+                    if new == 2 { rootSheet = .spot; return }
                     if new == tab { clearPath(new) }
                     tab = new
                 })
@@ -189,31 +189,38 @@ struct ContentView: View {
         Group {
             if let cat = store.catalogue {
                 TabView(selection: tabSelection) {
-                    stack(0, cat) { HomeView(catalogue: cat, origin: origin) }
-                        .tag(0)
-                        .tabItem { Label("Home", systemImage: "house") }
-
-                    stack(1, cat) {
+                    stack(0, cat) {
                         if let id = debugTree, let t = cat.tree(id) {
                             TreeDetail(tree: t, catalogue: cat)
                         } else {
-                            MapTab(catalogue: cat, origin: origin,
-                                   located: location.coordinate != nil || debugOrigin != nil,
-                                   locationDenied: location.status == .denied || location.status == .restricted,
-                                   onUseMyLocation: { location.request() })
+                            ExploreTab(catalogue: cat, origin: origin,
+                                       located: location.coordinate != nil || debugOrigin != nil,
+                                       locationDenied: location.status == .denied || location.status == .restricted,
+                                       onUseMyLocation: { location.request() })
                         }
                     }
-                        .tag(1)
-                        .tabItem { Label("Map", systemImage: "map.fill") }
+                        .tag(0)
+                        .tabItem { Label("Explore", systemImage: "binoculars.fill") }
 
-                    stack(2, cat) { CollectView(catalogue: cat, origin: origin) }
+                    stack(1, cat) { SavedView(catalogue: cat, origin: origin) }
+                        .tag(1)
+                        .tabItem { Label("Saved", systemImage: "heart") }
+
+                    // Never actually shown: the selection binding intercepts 2
+                    // and presents the Spot sheet instead.
+                    Color.clear
                         .tag(2)
+                        .tabItem { Label("Spot", systemImage: "plus.circle.fill") }
+
+                    stack(3, cat) { CollectView(catalogue: cat, origin: origin) }
+                        .tag(3)
                         .tabItem { Label("Collect", systemImage: "checkmark.seal") }
 
-                    stack(3, cat) { ProfileView(catalogue: cat) }
-                        .tag(3)
+                    stack(4, cat) { ProfileView(catalogue: cat) }
+                        .tag(4)
                         .tabItem { Label("Profile", systemImage: "person.crop.circle") }
                 }
+                .tint(Brand.moss)
                 .environment(saved)
                 .environment(store)
                 .environment(entitlement)
@@ -221,7 +228,7 @@ struct ContentView: View {
                 .environment(nudge)
                 .environment(navigator)
                 .onChange(of: navigator.showOnMap) { _, new in
-                    if new != nil { tab = 1 }
+                    if new != nil { tab = 0; navigator.exploreShowsMap = true }
                 }
                 // ONE sheet modifier, driven by one optional, because SwiftUI
                 // honours only one per view and stacking three meant the ask
@@ -236,6 +243,9 @@ struct ContentView: View {
                     case .paywall(let feature):
                         PaywallView(feature: feature)
                             .environment(entitlement).environment(account).environment(saved)
+                    case .spot:
+                        SpotSheet(catalogue: cat, origin: origin)
+                            .environment(saved).environment(navigator)
                     }
                 }
                 .onChange(of: nudge.pending) { _, new in
@@ -312,6 +322,14 @@ struct ContentView: View {
                 rootSheet = .signIn(.keepTree("The Last Elm of Stationsplein"))
             } else if args.contains("-paywall") {
                 rootSheet = .paywall(.walkBeyondFirst)
+            } else if args.contains("-spot") {
+                // The centre button's sheet, openable without a finger.
+                rootSheet = .spot
+            }
+            // -map opens Explore in its map mode, because the pill needs a tap
+            // and simctl has no finger. Debug scaffolding like -tab and -at.
+            if args.contains("-map") {
+                navigator.exploreShowsMap = true
             }
             // Every change to the collection follows the person to their
             // account, if they have one. Wired here rather than inside Saved so

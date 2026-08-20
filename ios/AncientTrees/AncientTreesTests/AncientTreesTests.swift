@@ -9,6 +9,32 @@ import Testing
 import Foundation
 @testable import AncientTrees
 
+struct EditorialSuggestions {
+
+    /// The day-zero suggestion picker behind Saved and Collect: photographs
+    /// first, nearest first, never a tree the person already has, capped.
+    @Test func suggestionsPreferPhotosExcludeOwnedAndStayOrdered() throws {
+        let store = CatalogueStore()
+        store.loadBundled()
+        let cat = try #require(store.catalogue, "the bundled catalogue did not load")
+        let origin = (lat: 52.3731, lng: 4.8922)   // Dam square
+
+        let all = Editorial.suggestions(catalogue: cat, origin: origin, excluding: [])
+        #expect(all.count == 6)
+        #expect(all.allSatisfy { $0.photo != nil },
+                "a day-zero suggestion led with a photo-less tree")
+
+        let owned = Set(all.prefix(2).map(\.id))
+        let rest = Editorial.suggestions(catalogue: cat, origin: origin, excluding: owned)
+        #expect(!rest.contains { owned.contains($0.id) },
+                "a suggestion offered a tree the person already has")
+
+        let distances = all.map { Geo.km(origin, ($0.lat, $0.lng)) }
+        #expect(distances == distances.sorted(),
+                "photo-carrying suggestions are not nearest-first")
+    }
+}
+
 struct CatalogueDecoding {
 
     @Test func theBundledBrowseFeedCarriesTheCollections() throws {

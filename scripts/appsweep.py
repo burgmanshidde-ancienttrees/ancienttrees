@@ -103,10 +103,12 @@ def screens(sub):
     network before there is anything worth photographing.
     """
     return [
-        ("home",          ["-tab=0"], 4),
-        ("map",           ["-tab=1"], 7),
-        ("collect",       ["-tab=2"], 4),
-        ("profile",       ["-tab=3"], 4),
+        ("explore",       ["-tab=0"], 4),
+        ("map",           ["-map"], 7),
+        ("saved",         ["-tab=1"], 4),
+        ("spot",          ["-spot"], 5),
+        ("collect",       ["-tab=3"], 4),
+        ("profile",       ["-tab=4"], 4),
         ("tree",          ["-tab=0", f'-open=tree:{sub["tree"]}'], 6),
         ("tree-nophoto",  ["-tab=0", f'-open=tree:{sub["tree_nophoto"]}'], 5),
         ("city",          ["-tab=0", f'-open=city:{sub["city"]}'], 5),
@@ -116,7 +118,7 @@ def screens(sub):
         ("signin",        ["-tab=0", "-signin"], 5),
         ("paywall",       ["-tab=0", "-paywall"], 5),
         ("primer",        ["-tab=0", "-primer"], 5),
-        ("contribute",    ["-tab=3", "-contribute"], 5),
+        ("contribute",    ["-tab=4", "-contribute"], 5),
     ]
 
 

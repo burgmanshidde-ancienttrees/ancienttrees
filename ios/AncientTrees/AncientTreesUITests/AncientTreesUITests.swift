@@ -32,7 +32,7 @@ final class AncientTreesUITests: XCTestCase {
     /// Hiding the map's navigation bar must not hide the pushed page's.
     @MainActor
     func testTreePageFromTheMapHasAWayBack() throws {
-        let app = launch(["-tab=1"])
+        let app = launch(["-map"])
 
         // The sheet's first card, whatever tree it happens to be today.
         let firstCard = app.buttons.matching(identifier: "tree-card").firstMatch
@@ -44,8 +44,9 @@ final class AncientTreesUITests: XCTestCase {
         XCTAssertTrue(back.waitForExistence(timeout: 5),
                       "a tree opened from the map has no back button, so the person is trapped")
         back.tap()
-        XCTAssertTrue(app.buttons["Map"].waitForExistence(timeout: 5),
-                      "back did not return to the map tab")
+        // Explore is still in map mode, so the pill offers the way to the list.
+        XCTAssertTrue(app.buttons["List"].waitForExistence(timeout: 5),
+                      "back did not return to Explore's map")
     }
 
     /// Ticking a tree off is the product's own verb and the moment the account
@@ -57,7 +58,7 @@ final class AncientTreesUITests: XCTestCase {
     /// which the thing it covers was never once exercised.
     @MainActor
     func testTickingATreeKeepsIt() throws {
-        let app = launch(["-tab=1"])
+        let app = launch(["-map"])
 
         let firstCard = app.buttons.matching(identifier: "tree-card").firstMatch
         XCTAssertTrue(firstCard.waitForExistence(timeout: 12))
@@ -78,7 +79,7 @@ final class AncientTreesUITests: XCTestCase {
     /// so it is the thing that has to be asserted rather than assumed.
     @MainActor
     func testTappingTheActiveTabGoesBackToTheTop() throws {
-        let app = launch(["-tab=1"])
+        let app = launch(["-map"])
 
         let firstCard = app.buttons.matching(identifier: "tree-card").firstMatch
         XCTAssertTrue(firstCard.waitForExistence(timeout: 10))
@@ -86,7 +87,7 @@ final class AncientTreesUITests: XCTestCase {
         XCTAssertTrue(app.buttons["Take me there"].waitForExistence(timeout: 5),
                       "a tree page did not open")
 
-        app.buttons["Map"].tap()
+        app.tabBars.buttons["Explore"].tap()
         XCTAssertTrue(app.staticTexts["Near you"].waitForExistence(timeout: 5),
                       "tapping the active tab did not return to the map")
     }
@@ -96,7 +97,7 @@ final class AncientTreesUITests: XCTestCase {
     /// a finger has dragged something.
     @MainActor
     func testPanningTheMapMovesTheList() throws {
-        let app = launch(["-tab=1"])
+        let app = launch(["-map"])
         XCTAssertTrue(app.staticTexts["Near you"].waitForExistence(timeout: 10),
                       "the map did not open on the user")
 
@@ -121,7 +122,7 @@ final class AncientTreesUITests: XCTestCase {
     /// means the sheet is open, low means it is back at its peek.
     @MainActor
     func testTheSheetAndTheListTakeTurns() throws {
-        let app = launch(["-tab=1"])
+        let app = launch(["-map"])
         let field = app.textFields.firstMatch
         XCTAssertTrue(field.waitForExistence(timeout: 12), "no search field in the sheet")
 
@@ -178,12 +179,48 @@ final class AncientTreesUITests: XCTestCase {
         XCTAssertTrue(found, "no curated collection shelf rendered on Explore")
     }
 
+    /// The bar Hidde set on 2026-08-20, evening: five slots, and the middle one
+    /// is a button rather than a place. Selecting Spot must present the sheet
+    /// and leave the bar exactly where it was, because a "tab" that steals the
+    /// selection strands the person on a screen that does not exist.
+    @MainActor
+    func testFiveSlotBar() throws {
+        let app = launch()
+        for label in ["Explore", "Saved", "Spot", "Collect", "Profile"] {
+            XCTAssertTrue(app.tabBars.buttons[label].waitForExistence(timeout: 10),
+                          "tab \(label) is missing from the bar")
+        }
+        app.tabBars.buttons["Spot"].tap()
+        XCTAssertTrue(app.otherElements["spot-sheet"].waitForExistence(timeout: 5),
+                      "selecting Spot did not present the sheet")
+        app.swipeDown(velocity: .fast)
+        XCTAssertTrue(app.tabBars.buttons["Explore"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.tabBars.buttons["Explore"].isSelected,
+                      "Spot took the selection with it; the bar must stay where it was")
+    }
+
+    /// The pill is the only door between Explore's two faces, so it has to
+    /// actually swap them: shelves to map, and back.
+    @MainActor
+    func testPillSwapsListAndMap() throws {
+        let app = launch(["-tab=0"])
+        let pill = app.buttons["explore-pill"]
+        XCTAssertTrue(pill.waitForExistence(timeout: 10), "no pill on Explore")
+        pill.tap()
+        XCTAssertTrue(app.staticTexts["Near you"].waitForExistence(timeout: 8),
+                      "the pill did not open the map")
+        XCTAssertTrue(app.buttons["List"].exists, "the pill did not relabel to List")
+        app.buttons["List"].tap()
+        XCTAssertTrue(app.staticTexts["Our favourite tree cities"].waitForExistence(timeout: 8),
+                      "the pill did not return to the shelves")
+    }
+
     /// The sheet the whole account funnel runs through. If it does not present,
     /// nothing downstream of it can work, and it presented from a launch
     /// argument rather than a tap so that failure would be invisible.
     @MainActor
     func testTheSignInSheetPresents() throws {
-        let app = launch(["-tab=3", "-signin"])
+        let app = launch(["-tab=4", "-signin"])
         XCTAssertTrue(app.staticTexts["That one is yours"].waitForExistence(timeout: 10),
                       "the sign-in sheet did not present")
         XCTAssertTrue(app.buttons["Email me a code"].exists,
