@@ -373,8 +373,19 @@ jobs:
           # boundary was never the list. Deliberately still absent: xargs and any
           # shell that takes a command string, because those turn one allowed
           # entry into all of them. The denylist below is unchanged.
+          #
+          # Not widened again on 2026-08-20, deliberately, and that is the point.
+          # Refusals ran 7 to 45 per run that night, worse than the eight that
+          # triggered the last widening, and run-health could only say the wall
+          # was made of "Bash". Guessing which binaries to add has now been
+          # tried once and did not work, so what changed instead is the record:
+          # run_health.py logs the denied BINARY, first word only, no arguments,
+          # so tomorrow names the wall instead of counting it. Two exceptions
+          # went in because they need no evidence: Monitor, which a run reached
+          # for and which is not a shell at all, and touch/printf, which sit
+          # beside the plumbing already allowed.
           claude_args: |
-            --allowedTools "Bash(git:*),Bash(python3:*),Bash(npm:*),Bash(npx:*),Bash(cd:*),Bash(curl:*),Bash(gh run:*),Bash(gh workflow:*),Bash(ls:*),Bash(cat:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(grep:*),Bash(find:*),Bash(mkdir:*),Bash(sort:*),Bash(uniq:*),Bash(diff:*),Bash(sed:*),Bash(awk:*),Bash(echo:*),Bash(jq:*),Bash(cut:*),Bash(tr:*),Bash(date:*),Bash(basename:*),Bash(dirname:*),Bash(cp:*),Bash(mv:*),Bash(test:*),Task,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
+            --allowedTools "Bash(git:*),Bash(python3:*),Bash(npm:*),Bash(npx:*),Bash(cd:*),Bash(curl:*),Bash(gh run:*),Bash(gh workflow:*),Bash(ls:*),Bash(cat:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(grep:*),Bash(find:*),Bash(mkdir:*),Bash(sort:*),Bash(uniq:*),Bash(diff:*),Bash(sed:*),Bash(awk:*),Bash(echo:*),Bash(jq:*),Bash(cut:*),Bash(tr:*),Bash(date:*),Bash(basename:*),Bash(dirname:*),Bash(cp:*),Bash(mv:*),Bash(test:*),Bash(touch:*),Bash(printf:*),Task,Monitor,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
             --disallowedTools "Bash(rm:*),Bash(sudo:*),Bash(gh repo:*),Bash(gh secret:*),Bash(gh auth:*),Bash(git clean:*),Bash(git reset --hard:*),Bash(find:* -delete)"
       # Continuous mode. GitHub fires the schedule only a handful of times a day
       # for this repo, so most open usage windows go unused. When a token is
