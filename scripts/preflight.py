@@ -267,6 +267,55 @@ def check_cross_city_duplicates():
     return out
 
 
+# A stack of pins is a SMELL, not a defect, and this prints rather than fails
+# for a reason worth stating. Six trees on one coordinate along a 0.7 mile
+# signposted loop is fine: you park, you walk, you see all six. The same six
+# inside a 1.4 square kilometre cemetery sends somebody to one point and leaves
+# them searching, which is the one failure this project cannot afford. The
+# difference is the size of the site, and no script can measure that from a
+# city file. So it names the stack and a person decides.
+STACK_LIMIT = 4
+
+
+def check_stacked_pins():
+    """Trees in one city sharing an identical coordinate.
+
+    Found 2026-08-20 by Hidde, who looked at the Hawaii page, saw one map pin
+    labelled 6 and said it seemed unlikely. He was right to doubt it: the state
+    register rounds coordinates to two decimals, about a kilometre, and all six
+    Kalopa trees came through on the same grid point. The page had said so in
+    three places and the map still read as broken.
+
+    Nineteen cities carried a stack that day. Most are pairs and threes inside
+    one small garden, which is what `approximate` is for. The three fixes, in
+    order of preference: pin the place a visitor should actually go to (Hawaii
+    moved from the register's rounded grid point to the park itself), say in
+    `access` where within the site to look, or fold the trees into one entry
+    when they really are one destination. Never spread pins apart to fill the
+    gap, which would invent precision and is the error this whole field exists
+    to prevent."""
+    out = []
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            d = json.load(fh)
+        seen = {}
+        for t in d.get("trees") or []:
+            loc = t.get("location") or {}
+            key = (loc.get("latitude"), loc.get("longitude"))
+            if key[0] is None:
+                continue
+            seen.setdefault(key, []).append(t.get("id"))
+        for key, ids in seen.items():
+            if len(ids) >= STACK_LIMIT:
+                out.append("%s: %d trees share one coordinate %.5f,%.5f (%s). "
+                           "Pin the place a visitor should go to and say in "
+                           "access where to look; never spread pins apart to "
+                           "fake precision."
+                           % (d.get("city") or path, len(ids), key[0], key[1],
+                              ", ".join(ids)))
+    return out
+
+
 def check_search_names():
     """Not a gate, a nag. Every published city should carry its name in other
     languages so the site search finds Den Haag as well as The Hague (Hidde,
@@ -292,7 +341,8 @@ def check_search_names():
 
 
 def main():
-    problems = check_id_prefixes() + check_pin_upgrades() + check_cross_city_duplicates()
+    problems = (check_id_prefixes() + check_pin_upgrades()
+                + check_cross_city_duplicates())
     files = sorted(glob.glob("data/cities/*.json"))
     for p in files:
         problems += check_city(p)
@@ -302,7 +352,7 @@ def main():
             problems += check_contract_b(os.path.basename(p)[:-5], json.load(fh2))
     for line in problems:
         print("FAIL " + line)
-    for line in check_search_names():
+    for line in check_stacked_pins() + check_search_names():
         print("NOTE " + line)
     print("preflight: %d cities checked, %d problems" % (len(files), len(problems)))
     return 1 if problems else 0
