@@ -1,0 +1,155 @@
+{
+ "city": "New Orleans",
+ "country": "United States",
+ "status": "needs_curation",
+ "intro": "Three of these four stand within six hundred metres of each other in City Park, on a strip between City Park Avenue and Bayou Metairie that never flooded, not even in 2005. The bayou spent centuries dropping silt and raised the land a metre above the rest of the park, which is why the city's oldest live oaks are the ones on the high ground. Two are reckoned between seven and nine hundred years old and one stands on wooden crutches. The fourth is uptown by the zoo, and joined a society whose members are all trees in 1934.",
+ "meta_description": "Four remarkable oaks in New Orleans: a 700-year live oak on crutches, the last of the duelling oaks, and the Tree of Life beside the zoo.",
+ "question_meta": "New Orleans's oldest tree is the McDonogh Oak in City Park, reckoned at 700 to 800 years. Where it stands, and three more worth the walk.",
+ "question_answer": "The oldest tree in New Orleans is the McDonogh Oak, a southern live oak in the Old Grove of City Park, between City Park Avenue and Bayou Metairie. City Park puts it at 700 to 800 years and other accounts stretch to 900, which would make it older than the city by five centuries. The trunk is over eight metres round and the crown reaches about forty six metres across, wide enough that the longest branches now rest on wooden crutches. The Anseman Oak, a few hundred metres west in the same grove, is given the same range and by some accounts is the older of the two. Nobody has cored either, so the honest answer is that they are the two oldest and the order between them is not settled.",
+ "question_context": "Ages here are estimates from City Park and from the Old-Growth Forest Network, which added this grove in 2018 as the first site in Louisiana. None comes from a core sample. Live oak is difficult to date because it grows fast when young, slows unpredictably and often hollows, so a range of two centuries is the honest width. Girths are firmer: the trunk figures come from measured surveys and from the Live Oak Society, which has registered live oaks since 1934 and now lists over ten thousand across fourteen states. Two hundred and forty nine of them stand in City Park, more registered live oaks than anywhere else on earth. That society is a garden club rather than a government body, so it is used here to find and cross-check trees rather than as a register in its own right. Where a pin is marked approximate it means the street or the grove is known and the trunk is not, which in a grove of hundreds of old oaks is worth saying plainly.",
+ "hero_tree_id": "nol_001",
+ "oldest_tree_id": "nol_001",
+ "faq": [
+  {
+   "q": "What is the oldest tree in New Orleans?",
+   "a": "The McDonogh Oak in City Park's Old Grove, reckoned at 700 to 800 years and by some accounts up to 900. The Anseman Oak, in the same grove, is given the same range. Neither has been cored, so which of the two is older is not settled."
+  },
+  {
+   "q": "Why did these survive Hurricane Katrina when so much of the park flooded?",
+   "a": "Because of where they stand. The Old Grove sits on the strip between City Park Avenue and Bayou Metairie, and centuries of the bayou overflowing left silt there that raised the ground above the rest of the park. City Park records that the Old Grove did not sit in water in 2005. The trees are old because the ground is high, and the ground is high because of the bayou."
+  },
+  {
+   "q": "What is the Live Oak Society?",
+   "a": "A society founded in 1934 whose members are all trees, with one human secretary to register them. A live oak qualifies at eight feet of girth. The roll now passes ten thousand trees across fourteen states, and 249 of them are in City Park, which is more registered live oaks in one place than anywhere else. The Tree of Life in Audubon Park was one of the 43 founding members."
+  },
+  {
+   "q": "Are these free to visit?",
+   "a": "Yes, all four. City Park and Audubon Park are both open public parks with no entry charge. The Tree of Life stands outside the zoo fence, so you do not need a zoo ticket to reach it."
+  }
+ ],
+ "trees": [
+  {
+   "id": "nol_001",
+   "name": "The McDonogh Oak",
+   "species": "Southern Live Oak (Quercus virginiana)",
+   "age_estimate": "700 to 800 years, and by some accounts up to 900",
+   "age_min": 700,
+   "age_max": 900,
+   "location": {
+    "address": "Old Grove, City Park, between City Park Avenue and Bayou Metairie",
+    "latitude": 29.98403,
+    "longitude": -90.09509,
+    "neighbourhood": "City Park"
+   },
+   "story": "The branches are too heavy for the tree now, so they rest on wooden crutches. That is the first thing you notice and the whole story in one image: a crown about forty six metres across on a trunk of eight metres, held up because nobody is willing to cut it back.\n\nCity Park reckons it at seven to eight hundred years, which puts its first century somewhere around the time the Choctaw were the only people here and five hundred years before the French arrived. It lost a major limb in 1981, which is why there is a cement patch as well as the props.\n\nThe reason it is still standing is geological rather than lucky. The Old Grove sits on the strip between City Park Avenue and Bayou Metairie, and the bayou spent centuries overflowing and dropping silt, which raised this ground about a metre above the rest of the park. When the levees failed in 2005 and most of City Park went under, the Old Grove stayed dry.\n\nThere is a plaque at the foot of the trunk. It is a considerable understatement.",
+   "verified_sources": [
+    "https://neworleanscitypark.org/venues/mcdonogh-oak/",
+    "https://www.oldgrowthforest.net/la-historic-live-oak-grove-city-park",
+    "https://www.sierraclub.org/louisiana/blog/2018/10/new-orleans-city-park-s-oak-grove-joins-national-old-growth-forest-network"
+   ],
+   "access": "Free. Public city park, open daily.",
+   "transport": "City Park, about 6 km north of the French Quarter. Canal Streetcar to City Park / Museum, then a walk west along the grove.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "The only tree in the grove with wooden props under its lower branches, and a plaque at the base of the trunk.",
+   "curation_status": "ai_generated",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "nol_002",
+   "name": "The Anseman Oak",
+   "species": "Southern Live Oak (Quercus virginiana)",
+   "age_estimate": "somewhere between 500 and 900 years",
+   "age_min": 500,
+   "age_max": 900,
+   "location": {
+    "address": "City Park, just inside the Anseman Avenue entrance, on City Park Avenue opposite North Alexander Street",
+    "latitude": 29.984,
+    "longitude": -90.0994,
+    "neighbourhood": "City Park"
+   },
+   "story": "Victor Anseman was a florist who retired and then gave the last fifteen years of his life to a park. In 1891 he pulled together the business and political people of the city into the City Park Improvement Association, which is the reason there is a park here at all rather than a subdivision. He died in 1904 and they named this oak after him.\n\nIt is a good choice of monument. The tree is given the same range as the McDonogh Oak, five hundred to nine hundred years, and some accounts make it the older of the two. Neither has been cored, so the order between them is a matter of who is doing the estimating.\n\nIt stands at the western end of the same high strip of ground, just inside the entrance that also carries his name. The pin here marks the entrance rather than the trunk, because the grove holds hundreds of old oaks and pretending to know which metre is the one would be a promise this page cannot keep. Walk in from City Park Avenue opposite North Alexander and look for the biggest thing standing.",
+   "verified_sources": [
+    "https://www.sierraclub.org/louisiana/blog/2018/10/new-orleans-city-park-s-oak-grove-joins-national-old-growth-forest-network",
+    "https://www.oldgrowthforest.net/la-historic-live-oak-grove-city-park",
+    "https://neworleanshistorical.org/items/show/115"
+   ],
+   "access": "Free. Public city park, open daily.",
+   "transport": "City Park, about 6 km north of the French Quarter. Enter from City Park Avenue at the Anseman Avenue entrance.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "A very large spreading live oak just inside the entrance, at the western end of the old grove along City Park Avenue.",
+   "curation_status": "flagged",
+   "location_precision": "approximate"
+  },
+  {
+   "id": "nol_003",
+   "name": "The Dueling Oak",
+   "species": "Southern Live Oak (Quercus virginiana)",
+   "age_estimate": "about 300 years",
+   "age_min": 250,
+   "age_max": 350,
+   "location": {
+    "address": "City Park, where Dueling Oaks Drive meets Dreyfous Drive, beside the sculpture garden",
+    "latitude": 29.9856,
+    "longitude": -90.0939,
+    "neighbourhood": "City Park"
+   },
+   "story": "Between 1834 and 1844 there were stretches when scarcely a day passed without a duel being fought under these trees. Creole New Orleans settled its arguments here with swords and pistols, over insults, politics, cards and women, and the oaks were the address everyone understood without being told.\n\nThere were two. A hurricane took one in 1949 and the other is still standing, roughly three hundred years old, twenty one metres tall on a trunk seven and a half metres round.\n\nWhat makes it worth the walk now is the contrast rather than the gore. The tree stands where Dueling Oaks Drive meets Dreyfous Drive, which puts it a few steps from the Besthoff Sculpture Garden and the art museum. So the spot where men shot each other over remarks at dinner is now the quietest corner of the park, full of people looking at bronze.\n\nThe pin marks the junction rather than the trunk. You will not need it: there is only one oak there with a story attached.",
+   "verified_sources": [
+    "https://neworleanshistorical.org/items/show/109",
+    "https://www.theadvocate.com/gambit/new_orleans/news/blake_pontchartrain/article_4f2e2e10-c820-5d29-8cb1-61499d8f962a.html"
+   ],
+   "access": "Free. Public city park, open daily.",
+   "transport": "City Park, beside the New Orleans Museum of Art. Canal Streetcar to City Park / Museum.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "A single old live oak at the road junction just south of the sculpture garden, on the drive that carries its name.",
+   "curation_status": "flagged",
+   "location_precision": "approximate"
+  },
+  {
+   "id": "nol_004",
+   "name": "The Tree of Life",
+   "species": "Southern Live Oak (Quercus virginiana)",
+   "age_estimate": "about 285 years, from a planting date of around 1740",
+   "age_min": 255,
+   "age_max": 300,
+   "location": {
+    "address": "Audubon Park, on the river side of the zoo, by the giraffe enclosure",
+    "latitude": 29.921,
+    "longitude": -90.1293,
+    "neighbourhood": "Uptown"
+   },
+   "story": "Eleven metres round, eighteen tall, and a crown reaching close to fifty metres across, which means the limbs left the trunk, ran horizontally as far as they could, and then came back down to the grass. That is why this is the most climbed and most photographed tree in Louisiana: it invites you up without asking you to be able to climb.\n\nThe sign by it gives a planting date of around 1740. A better story says Etienne de Bore, the first mayor of New Orleans and the man who worked out how to granulate sugar commercially, planted it in 1771 as a wedding present for his wife. That version is tradition rather than record, and it has the wrong decade, but it has stuck hard enough that the tree carries his name as often as its other one.\n\nIn 1934 it became one of the forty three founding members of the Live Oak Society, an organisation whose members are all trees and whose only human is a secretary who keeps the roll.\n\nIt stands outside the zoo fence, so you do not need a ticket. The giraffes are on the other side.",
+   "verified_sources": [
+    "https://en.wikipedia.org/wiki/Tree_of_Life_(Louisiana)",
+    "https://audubonnatureinstitute.org/tree-of-life",
+    "https://www.atlasobscura.com/places/the-tree-of-life-2-new-orleans-louisiana"
+   ],
+   "access": "Free. Public park, outside the zoo fence, no ticket needed.",
+   "transport": "Audubon Park, about 8 km upriver from the French Quarter. St Charles Streetcar to Audubon Park, then walk toward the river.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "An enormous low live oak with limbs running horizontally to the ground and back up again, right against the zoo fence.",
+   "curation_status": "ai_generated",
+   "location_precision": "confirmed"
+  }
+ ]
+}
