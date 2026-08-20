@@ -18,6 +18,10 @@ struct MapTab: View {
     let catalogue: Catalogue
     let origin: (lat: Double, lng: Double)
     let located: Bool
+    /// iOS has been asked and said no. A different sentence from "not yet
+    /// asked", because the only way out of this one is Settings.
+    var locationDenied: Bool = false
+    var onUseMyLocation: () -> Void = {}
 
     @State private var selected: Tree?
     @State private var sheetHeight: SheetHeight = .peek
@@ -46,14 +50,19 @@ struct MapTab: View {
         ZStack(alignment: .bottom) {
             TreeMap(trees: mapTrees,
                     focus: .init(latitude: origin.lat, longitude: origin.lng),
+                    showsRecentre: true,
                     selected: $selected)
                 .ignoresSafeArea(edges: [.top, .horizontal])
             BottomSheet(height: $sheetHeight) {
                 sheet
             }
         }
-        .navigationTitle(located ? "Near you" : "Near Amsterdam")
-        .navigationBarTitleDisplayMode(.inline)
+        // The title used to float over the map as bare text with nothing behind
+        // it, and worse, "Near Amsterdam" was a statement of a problem with no
+        // way to fix it. It is a chip now, and when we do not know where you
+        // are it is the button that finds out.
+        .overlay(alignment: .top) { whereChip }
+        .toolbar(.hidden, for: .navigationBar)
         .onChange(of: selected) { _, new in
             // Tapping a pin raises the sheet to that tree, the way Google Maps
             // turns the sheet into the place you tapped.
@@ -131,6 +140,41 @@ struct MapTab: View {
             }
             .padding(.horizontal, 16)
             .padding(.bottom, 110)      // clear of the floating tab bar
+        }
+    }
+
+    @ViewBuilder private var whereChip: some View {
+        if located {
+            Label("Near you", systemImage: "location.fill")
+                .font(.subheadline.weight(.semibold))
+                .padding(.horizontal, 14).padding(.vertical, 8)
+                .background(.regularMaterial, in: .capsule)
+                .shadow(color: .black.opacity(0.12), radius: 6, y: 2)
+                .padding(.top, 10)
+        } else {
+            Button {
+                if locationDenied {
+                    if let u = URL(string: UIApplication.openSettingsURLString) {
+                        UIApplication.shared.open(u)
+                    }
+                } else {
+                    onUseMyLocation()
+                }
+            } label: {
+                HStack(spacing: 6) {
+                    Image(systemName: "location.slash")
+                    Text("Near Amsterdam")
+                    Text("·").foregroundStyle(.secondary)
+                    Text(locationDenied ? "Turn on location" : "Use my location")
+                        .foregroundStyle(Color(red: 0.20, green: 0.35, blue: 0.20))
+                }
+                .font(.subheadline.weight(.semibold))
+                .padding(.horizontal, 14).padding(.vertical, 8)
+                .background(.regularMaterial, in: .capsule)
+                .shadow(color: .black.opacity(0.12), radius: 6, y: 2)
+                .padding(.top, 10)
+            }
+            .buttonStyle(.plain)
         }
     }
 

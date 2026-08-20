@@ -28,6 +28,8 @@ struct TreeMap: UIViewRepresentable {
     /// the order the trees are visited, which is NOT the path a walker takes.
     var route: [CLLocationCoordinate2D] = []
     var routeIsReal = true
+    /// Off on a walk's map, where the camera belongs to the route.
+    var showsRecentre = false
     @Binding var selected: Tree?
 
     func makeCoordinator() -> Coordinator { Coordinator(self) }
@@ -43,6 +45,29 @@ struct TreeMap: UIViewRepresentable {
                      forAnnotationViewWithReuseIdentifier: MKMapViewDefaultClusterAnnotationViewReuseIdentifier)
         map.addAnnotations(trees.map(TreeAnnotation.init))
         context.coordinator.setRoute(route, real: routeIsReal, on: map)
+        // MKUserTrackingButton rather than a button of our own. It is Apple's
+        // control, it already knows the three states (off, following, heading)
+        // and every iOS user has used it in Maps. The convention rule says take
+        // the one people are trained on. Without it there was no way back to
+        // yourself at all once you had panned away, which on a map whose whole
+        // premise is "near you" is the one control you cannot leave out.
+        if showsRecentre {
+            let recentre = MKUserTrackingButton(mapView: map)
+            recentre.translatesAutoresizingMaskIntoConstraints = false
+            recentre.backgroundColor = UIColor.systemBackground.withAlphaComponent(0.92)
+            recentre.layer.cornerRadius = 10
+            recentre.layer.shadowColor = UIColor.black.cgColor
+            recentre.layer.shadowOpacity = 0.15
+            recentre.layer.shadowRadius = 5
+            recentre.layer.shadowOffset = CGSize(width: 0, height: 2)
+            map.addSubview(recentre)
+            NSLayoutConstraint.activate([
+                recentre.trailingAnchor.constraint(equalTo: map.safeAreaLayoutGuide.trailingAnchor, constant: -12),
+                recentre.topAnchor.constraint(equalTo: map.safeAreaLayoutGuide.topAnchor, constant: 56),
+                recentre.widthAnchor.constraint(equalToConstant: 44),
+                recentre.heightAnchor.constraint(equalToConstant: 44),
+            ])
+        }
         if let focus {
             map.setRegion(MKCoordinateRegion(center: focus,
                                              latitudinalMeters: 4000,
