@@ -1,41 +1,42 @@
 {
-  "common_name": "Sweet Chestnut",
-  "habit": "deciduous",
-  "leaf": [
-    5,
-    6,
-    7,
-    8,
-    9,
-    10
-  ],
-  "flowers": [
-    6,
-    7
-  ],
-  "fruit": [
-    10
-  ],
-  "colour": [
-    10,
-    11
-  ],
-  "bare": [
-    11,
-    12,
-    1,
-    2,
-    3,
-    4
-  ],
-  "intensity": {
-    "flowers": "striking",
-    "fruit": "worth the trip",
-    "colour": "nice"
-  },
-  "fruit_label": "chestnuts in spiny burs, ripe and gatherable in October",
-  "sources": [
-    "https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/a-z-of-british-trees/",
-    "https://www.treesandshrubsonline.org/"
-  ]
+ "common_name": "Sweet Chestnut",
+ "habit": "deciduous",
+ "leaf": [
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "flowers": [
+  6,
+  7
+ ],
+ "fruit": [
+  10
+ ],
+ "colour": [
+  10,
+  11
+ ],
+ "bare": [
+  11,
+  12,
+  1,
+  2,
+  3,
+  4
+ ],
+ "intensity": {
+  "flowers": "striking",
+  "fruit": "worth the trip",
+  "colour": "nice"
+ },
+ "fruit_label": "chestnuts in spiny burs, ripe and gatherable in October",
+ "sources": [
+  "https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/a-z-of-british-trees/",
+  "https://www.treesandshrubsonline.org/"
+ ],
+ "flowers_label": "long cream catkins cover the whole crown at midsummer, with a heavy sweet smell that people either like or very much do not"
 }

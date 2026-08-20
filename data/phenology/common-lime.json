@@ -1,41 +1,42 @@
 {
-  "common_name": "Common Lime",
-  "habit": "deciduous",
-  "leaf": [
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10
-  ],
-  "flowers": [
-    6,
-    7
-  ],
-  "fruit": [
-    8,
-    9
-  ],
-  "colour": [
-    10
-  ],
-  "bare": [
-    11,
-    12,
-    1,
-    2,
-    3
-  ],
-  "intensity": {
-    "flowers": "striking",
-    "fruit": "nice",
-    "colour": "nice"
-  },
-  "flower_label": "heavily scented cream flowers, audible with bees from metres away",
-  "sources": [
-    "https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/a-z-of-british-trees/",
-    "https://www.treesandshrubsonline.org/"
-  ]
+ "common_name": "Common Lime",
+ "habit": "deciduous",
+ "leaf": [
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "flowers": [
+  6,
+  7
+ ],
+ "fruit": [
+  8,
+  9
+ ],
+ "colour": [
+  10
+ ],
+ "bare": [
+  11,
+  12,
+  1,
+  2,
+  3
+ ],
+ "intensity": {
+  "flowers": "striking",
+  "fruit": "nice",
+  "colour": "nice"
+ },
+ "flower_label": "heavily scented cream flowers, audible with bees from metres away",
+ "sources": [
+  "https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/a-z-of-british-trees/",
+  "https://www.treesandshrubsonline.org/"
+ ],
+ "flowers_label": "pale yellow tufts on papery bracts, heavily scented, and the aphids that follow leave everything below the crown tacky with honeydew"
 }
