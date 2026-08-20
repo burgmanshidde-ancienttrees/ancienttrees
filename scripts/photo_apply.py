@@ -79,6 +79,20 @@ def clean_author(raw):
     return first.strip(" .,;:-")[:80]
 
 
+def write_city(path, city):
+    """Write a city file the way every other writer here does: indent 2 and a
+    trailing newline.
+
+    This wrote indent=1 and no final newline, which is not what data/cities
+    holds, so approving one photograph reformatted the whole file: a one-field
+    change arrived as a 724-line diff on Graz. A real edit hidden inside that
+    much churn is a review nobody can do.
+    """
+    with open(path, "w") as fh:
+        json.dump(city, fh, indent=2, ensure_ascii=False)
+        fh.write("\n")
+
+
 def credit(cand):
     author = clean_author(cand.get("author"))
     if "inaturalist" in (cand.get("source") or ""):
@@ -132,7 +146,7 @@ def main():
             "attribution": credit(cand),
             "status": "approved",
         }
-        json.dump(city, open(path, "w"), indent=1, ensure_ascii=False)
+        write_city(path, city)
         print(f"{tree_id}: approved -> {tree['photo']['url']}")
         print(f"          {tree['photo']['license']} / {tree['photo']['attribution']}")
     elif verb == "hold":
@@ -144,7 +158,7 @@ def main():
             "status": "held",
             "note": reason,
         }
-        json.dump(city, open(path, "w"), indent=1, ensure_ascii=False)
+        write_city(path, city)
         print(f"{tree_id}: held ({reason})")
     else:
         print(f"{tree_id}: rejected ({reason})")

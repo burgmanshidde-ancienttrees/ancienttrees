@@ -719,6 +719,16 @@
      "obs_location": "41.4142206765,2.152627632",
      "judged": "rejected: viewed as pixels, canopy from underneath, no readable trunk or crown",
      "judged_date": "2026-08-08"
+    },
+    {
+     "title": "File:Tronc d'arbre al mig de columnes del Parc Güell.jpeg",
+     "url": "https://commons.wikimedia.org/wiki/File:Tronc_d%27arbre_al_mig_de_columnes_del_Parc_G%C3%BCell.jpeg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Tronc_d%27arbre_al_mig_de_columnes_del_Parc_G%C3%BCell.jpeg/960px-Tronc_d%27arbre_al_mig_de_columnes_del_Parc_G%C3%BCell.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "licence": "Public domain",
+     "author": "Josep Maria Armengol i Bas",
+     "source": "commons",
+     "judged": "reject",
+     "verdict": "photo_light scores it POOR, almost colourless: it reads as black and white, which this site does not publish"
     }
    ],
    "exhausted": "2026-08-08: all six iNaturalist photos are foliage, flower and pod close-ups"
@@ -1491,8 +1501,8 @@
   "bri_001": {
    "city": "Bristol",
    "name": "The Domesday Oak",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Ashton Court Estate trees - geograph.org.uk - 6053876.jpg",
@@ -1539,8 +1549,8 @@
   "bri_002": {
    "city": "Bristol",
    "name": "The Sweet Chestnut of Ashton Park",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Bare Trees - geograph.org.uk - 5724564.jpg",
@@ -1577,15 +1587,15 @@
   "bri_003": {
    "city": "Bristol",
    "name": "The Cedar of Lebanon at Blaise Castle",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "bri_004": {
    "city": "Bristol",
    "name": "The Oak of Kings Weston",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Estate trees - geograph.org.uk - 6802589.jpg",
@@ -1612,99 +1622,120 @@
   "bru_001": {
    "city": "Brussels",
    "name": "The Chene Josephine",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "bru_005": {
    "city": "Brussels",
    "name": "The Giant Sequoia of Parc de Woluwe",
-   "checked": "2026-08-16",
-   "sweep": 4,
-   "candidates": []
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Thècle du bouleau (Thecla betulae), Parc de Woluwé, Bruxelles (42687087554).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Th%C3%A8cle_du_bouleau_%28Thecla_betulae%29%2C_Parc_de_Woluw%C3%A9%2C_Bruxelles_%2842687087554%29.jpg/960px-Th%C3%A8cle_du_bouleau_%28Thecla_betulae%29%2C_Parc_de_Woluw%C3%A9%2C_Bruxelles_%2842687087554%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Th%C3%A8cle_du_bouleau_(Thecla_betulae),_Parc_de_Woluw%C3%A9,_Bruxelles_(42687087554).jpg",
+     "licence": "CC BY 2.0",
+     "author": "Frank Vassen from Brussels, Belgium",
+     "lat": 50.825369,
+     "lng": 4.426063,
+     "cats": "Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation (50° N, 4° E) Category:Flickr images reviewed by FlickreviewR 2 Category:Insects of Woluwe Park Category:Lycaenidae of Belgium Category:Photographs by Frank Vassen Category:Thecla betulae"
+    },
+    {
+     "title": "File:Thècle du chêne (Favonius quercus), Parc de Woluwé, Bruxelles (42211102825).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Th%C3%A8cle_du_ch%C3%AAne_%28Favonius_quercus%29%2C_Parc_de_Woluw%C3%A9%2C_Bruxelles_%2842211102825%29.jpg/960px-Th%C3%A8cle_du_ch%C3%AAne_%28Favonius_quercus%29%2C_Parc_de_Woluw%C3%A9%2C_Bruxelles_%2842211102825%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Th%C3%A8cle_du_ch%C3%AAne_(Favonius_quercus),_Parc_de_Woluw%C3%A9,_Bruxelles_(42211102825).jpg",
+     "licence": "CC BY 2.0",
+     "author": "Frank Vassen from Brussels, Belgium",
+     "lat": 50.826026,
+     "lng": 4.427597,
+     "cats": "Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation (50° N, 4° E) Category:Flickr images reviewed by FlickreviewR 2 Category:Insects of Woluwe Park Category:Lycaenidae of Belgium Category:Neozephyrus quercus Category:Photographs by Frank Vassen"
+    }
+   ]
   },
   "bru_006": {
    "city": "Brussels",
    "name": "The Purple Beech of Parc Tournay-Solvay",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "bru_007": {
    "city": "Brussels",
    "name": "The Douglas Fir of the Hippodrome",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "bru_008": {
    "city": "Brussels",
    "name": "The Sophora of the Abbaye de la Cambre",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "bru_009": {
    "city": "Brussels",
    "name": "The Black Mulberry of the Botanical Garden",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "bru_011": {
    "city": "Brussels",
    "name": "The Turner's Oak of Parc d'Egmont",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "bru_012": {
    "city": "Brussels",
    "name": "The Ginkgo of Parc d'Egmont",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "bru_013": {
    "city": "Brussels",
    "name": "The Tulip Tree of Parc d'Egmont",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "bru_014": {
    "city": "Brussels",
    "name": "The Great Sycamore of Parc d'Egmont",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "bru_015": {
    "city": "Brussels",
    "name": "The Cedar of Lebanon of Parc d'Egmont",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "bru_016": {
    "city": "Brussels",
    "name": "The Red Oak of Parc d'Egmont",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "bsc_001": {
    "city": "Bucaco",
    "name": "Wellington's Olive",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "bsc_002": {
    "city": "Bucaco",
    "name": "The Bunya Pine by the Palace Hotel",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "iNat obs 20157911 (Araucaria araucana)",
@@ -1729,8 +1760,8 @@
   "bsc_003": {
    "city": "Bucaco",
    "name": "The Blue Gum on the Hotel Road",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Blue fairytales (7987998342).jpg",
@@ -1747,15 +1778,15 @@
   "bsc_004": {
    "city": "Bucaco",
    "name": "King Regnans",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "bsc_005": {
    "city": "Bucaco",
    "name": "The Redwoods of Santo Elias",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "buc_001": {
@@ -6401,7 +6432,9 @@
      "author": "Andre Hospers",
      "lat": 53.221336,
      "lng": 6.555253,
-     "cats": "Category:CC-BY-4.0 Category:Noorderplantsoen Category:Self-published work Category:Uploads by Ahospers"
+     "cats": "Category:CC-BY-4.0 Category:Noorderplantsoen Category:Self-published work Category:Uploads by Ahospers",
+     "judged": "reject",
+     "verdict": "winter skating scene in the Noorderplantsoen, 244m away, no ginkgo as subject"
     },
     {
      "title": "File:1094.Noorderplantsoen.Park.Ijs.Winter.Schaatsen.Sneeuw.Groningen.jpg",
@@ -6411,7 +6444,9 @@
      "author": "Andre Hospers",
      "lat": 53.225861,
      "lng": 6.554833,
-     "cats": "Category:CC-BY-4.0 Category:Noorderplantsoen Category:Self-published work Category:Uploads by Ahospers"
+     "cats": "Category:CC-BY-4.0 Category:Noorderplantsoen Category:Self-published work Category:Uploads by Ahospers",
+     "judged": "reject",
+     "verdict": "same skating series, 261m away"
     },
     {
      "title": "File:1107.Noorderplantsoen.Park.Ijs.Winter.Schaatsen.Sneeuw.Groningen.jpg",
@@ -7564,7 +7599,9 @@
      "author": "Kleon3",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Extracted images Category:Montages of Maastricht Category:Self-published work Category:Tongerseweg (Maastricht)"
+     "cats": "Category:CC-BY-SA-4.0 Category:Extracted images Category:Montages of Maastricht Category:Self-published work Category:Tongerseweg (Maastricht)",
+     "judged": "reject",
+     "verdict": "a five-panel montage of Tongerseweg street scenes in winter; no sequoia as subject"
     },
     {
      "title": "File:Maastricht, sloop vestingwerk omgeving Tongerseweg, 1917.jpg",
@@ -7574,7 +7611,9 @@
      "author": "Unknown photographer",
      "lat": null,
      "lng": null,
-     "cats": "Category:1917 in Maastricht Category:CC-BY-SA-3.0 Category:Demolitions in Maastricht Category:Hoge Fronten (Maastricht) Category:People at work in Maastricht Category:People of Maastricht Category:Photographs of Maastricht in HCL Category:Template Unknown (artist) Category:Tongerseweg (Maastricht)"
+     "cats": "Category:1917 in Maastricht Category:CC-BY-SA-3.0 Category:Demolitions in Maastricht Category:Hoge Fronten (Maastricht) Category:People at work in Maastricht Category:People of Maastricht Category:Photographs of Maastricht in HCL Category:Template Unknown (artist) Category:Tongerseweg (Maastricht)",
+     "judged": "reject",
+     "verdict": "archival demolition photograph of the fortifications"
     }
    ]
   },
@@ -7636,7 +7675,9 @@
      "author": "Basvb",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:Images from Wiki Loves Monuments 2011 Category:Images from Wiki Loves Monuments 2011 in the Netherlands Category:License migration redundant Category:Netherlands photographs taken on 2011-09-12 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Stadspark (Kampen) Category:Taken with Canon PowerShot G6"
+     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:Images from Wiki Loves Monuments 2011 Category:Images from Wiki Loves Monuments 2011 in the Netherlands Category:License migration redundant Category:Netherlands photographs taken on 2011-09-12 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Stadspark (Kampen) Category:Taken with Canon PowerShot G6",
+     "judged": "reject",
+     "verdict": "the Stadspark in KAMPEN, not Maastricht"
     }
    ]
   },
@@ -7654,7 +7695,9 @@
      "author": "Gustav Droysen",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-PD-Mark Category:Extracted images Category:Maps of Belgium in the 17th century Category:Maps of the Low Countries in the 17th century Category:Maps of the Netherlands in the 17th century Category:Maps pieces from Allgemeiner Historischer Handatlas Category:Maps showing 1650 Category:PD-old-100-expired"
+     "cats": "Category:CC-PD-Mark Category:Extracted images Category:Maps of Belgium in the 17th century Category:Maps of the Low Countries in the 17th century Category:Maps of the Netherlands in the 17th century Category:Maps pieces from Allgemeiner Historischer Handatlas Category:Maps showing 1650 Category:PD-old-100-expired",
+     "judged": "reject",
+     "verdict": "a c.1650 map of the Netherlands"
     },
     {
      "title": "File:Zeeland, Netherlands ESA22256852.jpeg",
@@ -7664,7 +7707,9 @@
      "author": "European Space Agency",
      "lat": null,
      "lng": null,
-     "cats": "Category:2020 in Zeeland Category:Attribution Copernicus Category:CC-BY-SA-3.0-IGO Category:Content created by the European Space Agency Category:ESA files uploaded by OptimusPrimeBot Category:Featured pictures of the Netherlands Category:Featured pictures on Wikimedia Commons Category:Large images Category:Photos of the Netherlands by Sentinel-2 Category:Satellite pictures of South Holland Islands Category:Square photos of the Netherlands"
+     "cats": "Category:2020 in Zeeland Category:Attribution Copernicus Category:CC-BY-SA-3.0-IGO Category:Content created by the European Space Agency Category:ESA files uploaded by OptimusPrimeBot Category:Featured pictures of the Netherlands Category:Featured pictures on Wikimedia Commons Category:Large images Category:Photos of the Netherlands by Sentinel-2 Category:Satellite pictures of South Holland Islands Category:Square photos of the Netherlands",
+     "judged": "reject",
+     "verdict": "an ESA satellite image of Zeeland"
     }
    ]
   },
@@ -8660,7 +8705,9 @@
      "author": "FakirNL",
      "lat": null,
      "lng": null,
-     "cats": "Category:Bridges in Nijmegen Category:CC-BY-SA-4.0 Category:Files by User:FakirNL/Nijmegen Category:Kronenburgerpark Category:Self-published work"
+     "cats": "Category:Bridges in Nijmegen Category:CC-BY-SA-4.0 Category:Files by User:FakirNL/Nijmegen Category:Kronenburgerpark Category:Self-published work",
+     "judged": "reject",
+     "verdict": "a walkway in Kronenburgerpark, no ginkgo as subject"
     },
     {
      "title": "File:Nijmegen, Kronenburgerpark, centrum.jpg",
@@ -8682,7 +8729,9 @@
      "author": "Michielverbeek",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:Kronenburgertoren (Nijmegen) Category:License migration redundant Category:Netherlands photographs taken on 2010-12-20 Category:Quality images Category:Quality images of Gelderland Category:Quality images of snow Category:Rijksmonumenten with known IDs Category:Self-published work Category:Snow in Gelderland Category:Taken with Canon PowerShot G10"
+     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:Kronenburgertoren (Nijmegen) Category:License migration redundant Category:Netherlands photographs taken on 2010-12-20 Category:Quality images Category:Quality images of Gelderland Category:Quality images of snow Category:Rijksmonumenten with known IDs Category:Self-published work Category:Snow in Gelderland Category:Taken with Canon PowerShot G10",
+     "judged": "reject",
+     "verdict": "the Kruittoren tower in Kronenburgerpark, not the ginkgo"
     },
     {
      "title": "File:Nijmegen kronenburgerpark.JPG",
@@ -8756,7 +8805,9 @@
      "author": "Erik Wannee",
      "lat": null,
      "lng": null,
-     "cats": "Category:2010 sculptures in the Netherlands Category:2011 in Apeldoorn Category:Beekbergen Category:Blue sculptures in the Netherlands Category:CC-Zero Category:Julianabomen Category:Sculptures in Apeldoorn Category:Self-published work Category:Taken with Panasonic Lumix DMC-GH1 Category:Tree shelters in the Netherlands"
+     "cats": "Category:2010 sculptures in the Netherlands Category:2011 in Apeldoorn Category:Beekbergen Category:Blue sculptures in the Netherlands Category:CC-Zero Category:Julianabomen Category:Sculptures in Apeldoorn Category:Self-published work Category:Taken with Panasonic Lumix DMC-GH1 Category:Tree shelters in the Netherlands",
+     "judged": "reject",
+     "verdict": "the Julianaboom railing in BEEKBERGEN, a different tree in a different town"
     },
     {
      "title": "File:Tijdens de jubileumfeesten wordt de Julianaboom geplant, links burgemeester Hustinx. Rechts de (voo F54314.jpeg",
@@ -8766,7 +8817,9 @@
      "author": "J.F.M. Trum, Fotopersbureau Gelderland",
      "lat": null,
      "lng": null,
-     "cats": "Category:1948 in Nijmegen Category:CC-BY-SA-4.0 Category:Charles Hustinx (1902) Category:Images from Fotopersbureau Gelderland Category:Julianabomen Category:Uploaded with pattypan"
+     "cats": "Category:1948 in Nijmegen Category:CC-BY-SA-4.0 Category:Charles Hustinx (1902) Category:Images from Fotopersbureau Gelderland Category:Julianabomen Category:Uploaded with pattypan",
+     "judged": "reject",
+     "verdict": "archival photograph of the planting ceremony; not a photograph of the tree today"
     }
    ]
   },
@@ -9507,7 +9560,9 @@
      "author": "Sander de Jong",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:GFDL Category:License migration redundant Category:Netherlands photographs taken on 2007-03-11 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Canon PowerShot A530 Category:Wilhelmina, Noorderhoogebrug"
+     "cats": "Category:CC-BY-SA-3.0 Category:GFDL Category:License migration redundant Category:Netherlands photographs taken on 2007-03-11 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Canon PowerShot A530 Category:Wilhelmina, Noorderhoogebrug",
+     "judged": "reject",
+     "verdict": "Wilhelmina street scene in Noorderhoogebrug, Groningen; not the Rotterdam linden"
     },
     {
      "title": "File:Wilhelmina as a young woman.jpg",
@@ -9517,7 +9572,9 @@
      "author": "Unknown authorUnknown author",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-PD-Mark Category:PD-Art (PD-old-100-expired) Category:PD-Art missing SDC copyright status Category:PD-old-100-expired Category:PD-old missing SDC copyright status Category:Portrait photographs of Wilhelmina of the Netherlands Category:Portrait photographs of women wearing tiaras (diadems) Category:Queen Wilhelmina’s Wedding Gift Tiara Category:Template Unknown (author) Category:Wilhelmina of the Netherlands in 1901"
+     "cats": "Category:CC-PD-Mark Category:PD-Art (PD-old-100-expired) Category:PD-Art missing SDC copyright status Category:PD-old-100-expired Category:PD-old missing SDC copyright status Category:Portrait photographs of Wilhelmina of the Netherlands Category:Portrait photographs of women wearing tiaras (diadems) Category:Queen Wilhelmina’s Wedding Gift Tiara Category:Template Unknown (author) Category:Wilhelmina of the Netherlands in 1901",
+     "judged": "reject",
+     "verdict": "a portrait of Queen Wilhelmina as a young woman"
     }
    ]
   },
@@ -14593,7 +14650,9 @@
      "author": "Reloadad",
      "lat": null,
      "lng": null,
-     "cats": "Category:Assistens Kirkegård (København) Category:CC-BY-SA-4.0 Category:Self-published work"
+     "cats": "Category:Assistens Kirkegård (København) Category:CC-BY-SA-4.0 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "a poplar avenue in the cemetery; no single subject and the wrong species for a handkerchief tree"
     },
     {
      "title": "File:Assistens Kirkegård, Copenhagen.jpg",
@@ -14603,7 +14662,9 @@
      "author": "Jonaseckerbom",
      "lat": 55.69109444,
      "lng": 12.54510278,
-     "cats": "Category:Assistens Kirkegård (København) Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Photographs taken on 2024-10-27 Category:Self-published work Category:Uploaded with Mobile/Android"
+     "cats": "Category:Assistens Kirkegård (København) Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Photographs taken on 2024-10-27 Category:Self-published work Category:Uploaded with Mobile/Android",
+     "judged": "reject",
+     "verdict": "a beech avenue 555m from the pin, offered for two different trees at once; neither is the subject"
     }
    ]
   },
@@ -14621,7 +14682,9 @@
      "author": "Reloadad",
      "lat": null,
      "lng": null,
-     "cats": "Category:Assistens Kirkegård (København) Category:CC-BY-SA-4.0 Category:Self-published work"
+     "cats": "Category:Assistens Kirkegård (København) Category:CC-BY-SA-4.0 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "a poplar avenue, not a weeping beech; the same file was also offered for cop_006"
     },
     {
      "title": "File:Assistens Kirkegård, Copenhagen.jpg",
@@ -14631,7 +14694,9 @@
      "author": "Jonaseckerbom",
      "lat": 55.69109444,
      "lng": 12.54510278,
-     "cats": "Category:Assistens Kirkegård (København) Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Photographs taken on 2024-10-27 Category:Self-published work Category:Uploaded with Mobile/Android"
+     "cats": "Category:Assistens Kirkegård (København) Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Photographs taken on 2024-10-27 Category:Self-published work Category:Uploaded with Mobile/Android",
+     "judged": "reject",
+     "verdict": "a beech avenue 520m from the pin, no single tree to stand at; the same file was also offered for cop_006"
     }
    ]
   },
@@ -15016,7 +15081,9 @@
      "author": "Stan Shebs",
      "lat": null,
      "lng": null,
-     "cats": "Category:Aarhus in the 2000s Category:August 2003 Denmark photographs Category:CC-BY-SA-2.5 Category:CC-BY-SA-3.0 Category:GFDL Category:License migration redundant Category:Pacifier trees Category:Photos by Stan Shebs Category:Self-published work Category:Taken with Olympus C-700UZ Category:Trees in Denmark"
+     "cats": "Category:Aarhus in the 2000s Category:August 2003 Denmark photographs Category:CC-BY-SA-2.5 Category:CC-BY-SA-3.0 Category:GFDL Category:License migration redundant Category:Pacifier trees Category:Photos by Stan Shebs Category:Self-published work Category:Taken with Olympus C-700UZ Category:Trees in Denmark",
+     "judged": "reject",
+     "verdict": "the AARHUS pacifier tree, not the Frederiksberg Have one; Denmark has several"
     },
     {
      "title": "File:Pacifier Tree - Østre Anlæg - Copenhagen - DSC07336.JPG",
@@ -15026,7 +15093,9 @@
      "author": "Daderot",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-Zero Category:Files uploaded by Daderot Category:Pacifier trees Category:Self-published work Category:Taken with Sony DSC-H55 Category:Østre Anlæg"
+     "cats": "Category:CC-Zero Category:Files uploaded by Daderot Category:Pacifier trees Category:Self-published work Category:Taken with Sony DSC-H55 Category:Østre Anlæg",
+     "judged": "reject",
+     "verdict": "the Ostre Anlaeg pacifier tree, a different park and a different species from our hornbeam in Frederiksberg Have"
     }
    ]
   },
@@ -18936,7 +19005,9 @@
      "author": "Marcel Delboy",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-PD-Mark Category:PD-old-70-expired Category:Postcards published by Marcel Delboy Category:Types bordelais (collection Delboy)"
+     "cats": "Category:CC-PD-Mark Category:PD-old-70-expired Category:Postcards published by Marcel Delboy Category:Types bordelais (collection Delboy)",
+     "judged": "reject",
+     "verdict": "a Types bordelais historical postcard, not a tree photograph"
     },
     {
      "title": "File:Bordeaux - Types bordelais 23 - Laitière.jpg",
@@ -18946,7 +19017,9 @@
      "author": "Marcel Delboy",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-PD-Mark Category:Milkmaids in France Category:PD-old-70-expired Category:Postcards published by Marcel Delboy Category:Types bordelais (collection Delboy)"
+     "cats": "Category:CC-PD-Mark Category:Milkmaids in France Category:PD-old-70-expired Category:Postcards published by Marcel Delboy Category:Types bordelais (collection Delboy)",
+     "judged": "reject",
+     "verdict": "a Types bordelais postcard of a milkmaid"
     }
    ]
   },
@@ -19009,7 +19082,9 @@
      "author": "Marcel Delboy",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-PD-Mark Category:Milkmaids in France Category:PD-old-70-expired Category:Postcards published by Marcel Delboy Category:Types bordelais (collection Delboy)"
+     "cats": "Category:CC-PD-Mark Category:Milkmaids in France Category:PD-old-70-expired Category:Postcards published by Marcel Delboy Category:Types bordelais (collection Delboy)",
+     "judged": "reject",
+     "verdict": "the same postcard, offered for a second tree"
     }
    ]
   },
@@ -19051,7 +19126,9 @@
      "author": "Marcel Delboy",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-PD-Mark Category:PD-old-70-expired Category:Postcards published by Marcel Delboy Category:Types bordelais (collection Delboy)"
+     "cats": "Category:CC-PD-Mark Category:PD-old-70-expired Category:Postcards published by Marcel Delboy Category:Types bordelais (collection Delboy)",
+     "judged": "reject",
+     "verdict": "the same postcard series, no tree"
     },
     {
      "title": "File:Bordeaux - Types bordelais 23 - Laitière.jpg",
@@ -19061,29 +19138,31 @@
      "author": "Marcel Delboy",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-PD-Mark Category:Milkmaids in France Category:PD-old-70-expired Category:Postcards published by Marcel Delboy Category:Types bordelais (collection Delboy)"
+     "cats": "Category:CC-PD-Mark Category:Milkmaids in France Category:PD-old-70-expired Category:Postcards published by Marcel Delboy Category:Types bordelais (collection Delboy)",
+     "judged": "reject",
+     "verdict": "the same postcard, offered for a third tree"
     }
    ]
   },
   "bsc_007": {
    "city": "Bucaco",
    "name": "The Cedro-do-Bucaco of the First Fall",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "bsc_008": {
    "city": "Bucaco",
    "name": "The Pedunculate Oak of the Capela de Sao Pedro",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "bsc_009": {
    "city": "Bucaco",
    "name": "The Cork Oak of the Lago Grande",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "iNat obs 125603573 (Quercus suber)",
@@ -19543,7 +19622,9 @@
      "author": "Sailko",
      "lat": 43.112998,
      "lng": 12.392072,
-     "cats": "Category:All media supported by Wikimedia CH Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Images by Sailko - Supported by Wikimedia CH Category:Italian MiBAC disclaimer warning Category:Photographs by User:Sailko Category:Photographs of decorative arts by User:Sailko - Decorative painting Category:Self-published work Category:Trinity and Saints by Raffaello Sanzio and Pietro Perugino"
+     "cats": "Category:All media supported by Wikimedia CH Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Images by Sailko - Supported by Wikimedia CH Category:Italian MiBAC disclaimer warning Category:Photographs by User:Sailko Category:Photographs of decorative arts by User:Sailko - Decorative painting Category:Self-published work Category:Trinity and Saints by Raffaello Sanzio and Pietro Perugino",
+     "judged": "reject",
+     "verdict": "a Raphael painting; a name match on Perugino, not a tree"
     },
     {
      "title": "File:Raffaello, trinità (1505-1508) e santi del perugino (1521), grottesche nell'intradosso 04.jpg",
@@ -19553,7 +19634,9 @@
      "author": "Sailko",
      "lat": 43.112998,
      "lng": 12.392072,
-     "cats": "Category:All media supported by Wikimedia CH Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Images by Sailko - Supported by Wikimedia CH Category:Italian MiBAC disclaimer warning Category:Photographs by User:Sailko Category:Photographs of decorative arts by User:Sailko - Decorative painting Category:Self-published work Category:Trinity and Saints by Raffaello Sanzio and Pietro Perugino"
+     "cats": "Category:All media supported by Wikimedia CH Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Images by Sailko - Supported by Wikimedia CH Category:Italian MiBAC disclaimer warning Category:Photographs by User:Sailko Category:Photographs of decorative arts by User:Sailko - Decorative painting Category:Self-published work Category:Trinity and Saints by Raffaello Sanzio and Pietro Perugino",
+     "judged": "reject",
+     "verdict": "same painting, second crop"
     },
     {
      "title": "File:Raffaello, trinità (1505-1508) e santi del perugino (1521), grottesche nell'intradosso 05.jpg",
@@ -26412,7 +26495,9 @@
      "author": "Didier Descouens",
      "lat": 43.60684586,
      "lng": 1.45955682,
-     "cats": "Category:Base Mérimée Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in France with known IDs Category:Egyptian Revival architecture in France Category:Images by Archaeodontosaurus Toulouse Category:Main gate of the Cimetière de Terre-Cabade Category:Monuments historiques in Toulouse Category:Monuments historiques inscrits Category:Mérimée with PA parameter Category:November 2020 in Toulouse Category:Occitanie photographs taken on 2020-11-05 Category:Self-published work Category:Urbain Vitry Category:Valued Images by Archaeodontosaurus Category:Valued images of Toulouse Category:Valued images of buildings in Toulouse Category:Valued images promoted 2020-12 Category:Valued images sorted by promotion date"
+     "cats": "Category:Base Mérimée Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in France with known IDs Category:Egyptian Revival architecture in France Category:Images by Archaeodontosaurus Toulouse Category:Main gate of the Cimetière de Terre-Cabade Category:Monuments historiques in Toulouse Category:Monuments historiques inscrits Category:Mérimée with PA parameter Category:November 2020 in Toulouse Category:Occitanie photographs taken on 2020-11-05 Category:Self-published work Category:Urbain Vitry Category:Valued Images by Archaeodontosaurus Category:Valued images of Toulouse Category:Valued images of buildings in Toulouse Category:Valued images promoted 2020-12 Category:Valued images sorted by promotion date",
+     "judged": "reject",
+     "verdict": "the cemetery gate, 498m from the pin, no hackberry as subject"
     },
     {
      "title": "File:31 - Toulouse - Terre-Cabade - Marcel Langer.jpg",
@@ -26434,7 +26519,9 @@
      "author": "Didier Descouens",
      "lat": 43.60686111,
      "lng": 1.46032727,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cimetière de Terre-Cabade - Section 1 Category:December 2020 in Toulouse Category:Files with coordinates missing SDC location of creation Category:Graves in the Cimetière de Terre-Cabade Category:Images by Archaeodontosaurus Toulouse Category:Occitanie photographs taken on 2020-12-11 Category:People of Toulouse by name Category:Photographs taken on 2020-12-11 Category:Self-published work Category:Toulouse in the 19th century Category:Valued Images by Archaeodontosaurus Category:Valued images of Toulouse Category:Valued images promoted 2021-02 Category:Valued images sorted by promotion date"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cimetière de Terre-Cabade - Section 1 Category:December 2020 in Toulouse Category:Files with coordinates missing SDC location of creation Category:Graves in the Cimetière de Terre-Cabade Category:Images by Archaeodontosaurus Toulouse Category:Occitanie photographs taken on 2020-12-11 Category:People of Toulouse by name Category:Photographs taken on 2020-12-11 Category:Self-published work Category:Toulouse in the 19th century Category:Valued Images by Archaeodontosaurus Category:Valued images of Toulouse Category:Valued images promoted 2021-02 Category:Valued images sorted by promotion date",
+     "judged": "reject",
+     "verdict": "a grave in Terre-Cabade, 437m away"
     },
     {
      "title": "File:31 - Toulouse - Terre-Cabade - Tombe d'Auguste Toulza par Carrier-Belleuse.jpg",
@@ -27713,8 +27800,8 @@
   "bne_009": {
    "city": "Brisbane",
    "name": "The Weeping Figs at Alice Street Gate",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:BCBG Ficus Religiosa Leaf Detail.JPG",
@@ -27751,8 +27838,8 @@
   "brq_001": {
    "city": "Brno",
    "name": "The Moravian Square Oak",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Dub letní na Moravském náměstí, Brno (6).JPG (Wikidata Q26786604)",
@@ -27780,8 +27867,8 @@
   "brq_002": {
    "city": "Brno",
    "name": "The Old Town Gate Oak",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Brno - Moravské náměstí, park, obr21.jpg (Wikidata Q73601821)",
@@ -27808,8 +27895,8 @@
   "brq_003": {
    "city": "Brno",
    "name": "The Horse Chestnut of Rooseveltova",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Jírovec maďal na Roosveltově ulici v Brně.JPG (Wikidata Q26789633)",
@@ -27866,8 +27953,8 @@
   "brq_005": {
    "city": "Brno",
    "name": "The Plane Tree of St Anne's",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Platan u sv. Anny 2.jpg (Wikidata Q12045528)",
@@ -27879,14 +27966,84 @@
      "lng": null,
      "cats": "Category:CC-BY-SA-3.0 Category:Platan u svaté Anny Category:Self-published work Category:Taken with Panasonic Lumix DMC-FX3",
      "source": "wikidata/Q12045528"
+    },
+    {
+     "title": "File:Platan javorolistý na Hybešově, 2012.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Platan_javorolist%C3%BD_na_Hybe%C5%A1ov%C4%9B%2C_2012.JPG/960px-Platan_javorolist%C3%BD_na_Hybe%C5%A1ov%C4%9B%2C_2012.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Platan_javorolist%C3%BD_na_Hybe%C5%A1ov%C4%9B,_2012.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Michal Klajban",
+     "lat": 49.189325,
+     "lng": 16.60125833,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Images by User:Podzemnik Category:Images of Czechia by User:Podzemnik Category:Platan javorolistý na Hybešově Category:Self-published work Category:Taken with Panasonic Lumix DMC-FZ38"
+    },
+    {
+     "title": "File:Platan u svaté Anny, Brno.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Platan_u_svat%C3%A9_Anny%2C_Brno.JPG/960px-Platan_u_svat%C3%A9_Anny%2C_Brno.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Platan_u_svat%C3%A9_Anny,_Brno.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Michal Klajban",
+     "lat": 49.189725,
+     "lng": 16.60156944,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Images by User:Podzemnik Category:Images of Czechia by User:Podzemnik Category:Platan u svaté Anny Category:Self-published work Category:Taken with Panasonic Lumix DMC-FZ38"
+    },
+    {
+     "title": "File:Platan u svaté Anny, Brno (1).JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Platan_u_svat%C3%A9_Anny%2C_Brno_%281%29.JPG/960px-Platan_u_svat%C3%A9_Anny%2C_Brno_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Platan_u_svat%C3%A9_Anny,_Brno_(1).JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Michal Klajban",
+     "lat": 49.18999167,
+     "lng": 16.601625,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Images by User:Podzemnik Category:Images of Czechia by User:Podzemnik Category:Saint Anne's University Hospital Brno Category:Self-published work Category:Taken with Panasonic Lumix DMC-FZ38"
+    },
+    {
+     "title": "File:Platan u svaté Anny, Brno (2).JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Platan_u_svat%C3%A9_Anny%2C_Brno_%282%29.JPG/960px-Platan_u_svat%C3%A9_Anny%2C_Brno_%282%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Platan_u_svat%C3%A9_Anny,_Brno_(2).JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Michal Klajban",
+     "lat": 49.18988056,
+     "lng": 16.60156944,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Images by User:Podzemnik Category:Images of Czechia by User:Podzemnik Category:Platan u svaté Anny Category:Self-published work Category:Taken with Panasonic Lumix DMC-FZ38"
+    },
+    {
+     "title": "File:Platan u svaté Anny, Brno (3).JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Platan_u_svat%C3%A9_Anny%2C_Brno_%283%29.JPG/960px-Platan_u_svat%C3%A9_Anny%2C_Brno_%283%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Platan_u_svat%C3%A9_Anny,_Brno_(3).JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Michal Klajban",
+     "lat": 49.18988056,
+     "lng": 16.60156944,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Images by User:Podzemnik Category:Images of Czechia by User:Podzemnik Category:Platan u svaté Anny Category:Self-published work Category:Taken with Panasonic Lumix DMC-FZ38"
+    },
+    {
+     "title": "File:Platan u svaté Anny, Brno (4).JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Platan_u_svat%C3%A9_Anny%2C_Brno_%284%29.JPG/960px-Platan_u_svat%C3%A9_Anny%2C_Brno_%284%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Platan_u_svat%C3%A9_Anny,_Brno_(4).JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Michal Klajban",
+     "lat": 49.18988056,
+     "lng": 16.60156944,
+     "cats": "Category:CC-BY-SA-3.0 Category:Diseases and disorders of Platanus Category:Files with coordinates missing SDC location of creation Category:Images by User:Podzemnik Category:Images of Czechia by User:Podzemnik Category:Platan u svaté Anny Category:Self-published work Category:Taken with Panasonic Lumix DMC-FZ38"
+    },
+    {
+     "title": "File:Platan u svaté Anny, Brno (5).JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Platan_u_svat%C3%A9_Anny%2C_Brno_%285%29.JPG/960px-Platan_u_svat%C3%A9_Anny%2C_Brno_%285%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Platan_u_svat%C3%A9_Anny,_Brno_(5).JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Michal Klajban",
+     "lat": 49.18991111,
+     "lng": 16.60140278,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Images by User:Podzemnik Category:Images of Czechia by User:Podzemnik Category:Platan u svaté Anny Category:Self-published work Category:Taken with Panasonic Lumix DMC-FZ38"
     }
    ]
   },
   "brq_006": {
    "city": "Brno",
    "name": "The Plane Tree of Benešova",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Platan javorolistý na Divadelní, Brno.JPG (Wikidata Q26786608)",
@@ -27908,14 +28065,84 @@
      "lat": 49.192995,
      "lng": 16.613672,
      "cats": "Category:Benešova (Brno) Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Mediagrant:Fotíme Česko Category:Mediagrant 2019 Category:Photos taken with WMCZ camera Category:Tram track Moravské náměstí - Hlavní nádraží - Nové sady Category:Uploaded with VicuñaUploader"
+    },
+    {
+     "title": "File:Benešova street, north part, Brno.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Bene%C5%A1ova_street%2C_north_part%2C_Brno.jpg/960px-Bene%C5%A1ova_street%2C_north_part%2C_Brno.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bene%C5%A1ova_street,_north_part,_Brno.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Pavel Hrdlička (Czech Wikipedia user Packa)",
+     "lat": 49.19395,
+     "lng": 16.61433,
+     "cats": "Category:Benešova (Brno) Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Mediagrant:Fotíme Česko Category:Mediagrant 2019 Category:Newer part of the Morava Palace Category:Photos taken with WMCZ camera Category:Tram track Moravské náměstí - Hlavní nádraží - Nové sady Category:Uploaded with VicuñaUploader"
+    },
+    {
+     "title": "File:Platan javorolistý na Divadelní, Brno.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Platan_javorolist%C3%BD_na_Divadeln%C3%AD%2C_Brno.JPG/960px-Platan_javorolist%C3%BD_na_Divadeln%C3%AD%2C_Brno.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Platan_javorolist%C3%BD_na_Divadeln%C3%AD,_Brno.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Michal Klajban",
+     "lat": 49.19426111,
+     "lng": 16.61473056,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Images by User:Podzemnik Category:Images of Czechia by User:Podzemnik Category:Platan javorolistý (Benešova) Category:Taken with Panasonic Lumix DMC-FZ38"
+    },
+    {
+     "title": "File:Platan javorolistý na Divadelní, Brno (1).JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Platan_javorolist%C3%BD_na_Divadeln%C3%AD%2C_Brno_%281%29.JPG/960px-Platan_javorolist%C3%BD_na_Divadeln%C3%AD%2C_Brno_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Platan_javorolist%C3%BD_na_Divadeln%C3%AD,_Brno_(1).JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Michal Klajban",
+     "lat": 49.19419444,
+     "lng": 16.61443333,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Images by User:Podzemnik Category:Images of Czechia by User:Podzemnik Category:Platan javorolistý (Benešova) Category:Taken with Panasonic Lumix DMC-FZ38"
+    },
+    {
+     "title": "File:Platan javorolistý na Divadelní, Brno (2).JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Platan_javorolist%C3%BD_na_Divadeln%C3%AD%2C_Brno_%282%29.JPG/960px-Platan_javorolist%C3%BD_na_Divadeln%C3%AD%2C_Brno_%282%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Platan_javorolist%C3%BD_na_Divadeln%C3%AD,_Brno_(2).JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Michal Klajban",
+     "lat": 49.19419444,
+     "lng": 16.61443333,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Images by User:Podzemnik Category:Images of Czechia by User:Podzemnik Category:Platan javorolistý (Benešova) Category:Taken with Panasonic Lumix DMC-FZ38"
+    },
+    {
+     "title": "File:Platan javorolistý na Divadelní, Brno (3).JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Platan_javorolist%C3%BD_na_Divadeln%C3%AD%2C_Brno_%283%29.JPG/960px-Platan_javorolist%C3%BD_na_Divadeln%C3%AD%2C_Brno_%283%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Platan_javorolist%C3%BD_na_Divadeln%C3%AD,_Brno_(3).JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Michal Klajban",
+     "lat": 49.19443611,
+     "lng": 16.61453333,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Images by User:Podzemnik Category:Images of Czechia by User:Podzemnik Category:Platan javorolistý (Benešova) Category:Taken with Panasonic Lumix DMC-FZ38"
+    },
+    {
+     "title": "File:Platan javorolistý na Divadelní, Brno (4).JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Platan_javorolist%C3%BD_na_Divadeln%C3%AD%2C_Brno_%284%29.JPG/960px-Platan_javorolist%C3%BD_na_Divadeln%C3%AD%2C_Brno_%284%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Platan_javorolist%C3%BD_na_Divadeln%C3%AD,_Brno_(4).JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Michal Klajban",
+     "lat": 49.19443611,
+     "lng": 16.61453333,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Images by User:Podzemnik Category:Images of Czechia by User:Podzemnik Category:Platan javorolistý (Benešova) Category:Taken with Panasonic Lumix DMC-FZ38"
+    },
+    {
+     "title": "File:Platan javorolistý na Divadelní, Brno (5).JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Platan_javorolist%C3%BD_na_Divadeln%C3%AD%2C_Brno_%285%29.JPG/960px-Platan_javorolist%C3%BD_na_Divadeln%C3%AD%2C_Brno_%285%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Platan_javorolist%C3%BD_na_Divadeln%C3%AD,_Brno_(5).JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Michal Klajban",
+     "lat": 49.19432778,
+     "lng": 16.61469167,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Images by User:Podzemnik Category:Images of Czechia by User:Podzemnik Category:Platan javorolistý (Benešova) Category:Taken with Panasonic Lumix DMC-FZ38"
     }
    ]
   },
   "brq_007": {
    "city": "Brno",
    "name": "Professor Chudoba's Plane",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Brno, střed, památný platan javorolistý (Platanus hispanica).JPG (Wikidata Q26786589)",
@@ -27937,35 +28164,45 @@
      "lat": 49.20113333,
      "lng": 16.59951111,
      "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Images by User:Podzemnik Category:Images of Czechia by User:Podzemnik Category:Platan javorolistý na Veveří Category:Self-published work Category:Taken with Panasonic Lumix DMC-FZ38"
+    },
+    {
+     "title": "File:Památný platan javorolistý na roku Pekárenské a Veveří.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Pam%C3%A1tn%C3%BD_platan_javorolist%C3%BD_na_roku_Pek%C3%A1rensk%C3%A9_a_Veve%C5%99%C3%AD.jpg/960px-Pam%C3%A1tn%C3%BD_platan_javorolist%C3%BD_na_roku_Pek%C3%A1rensk%C3%A9_a_Veve%C5%99%C3%AD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Pam%C3%A1tn%C3%BD_platan_javorolist%C3%BD_na_roku_Pek%C3%A1rensk%C3%A9_a_Veve%C5%99%C3%AD.jpg",
+     "licence": "CC BY 3.0",
+     "author": "Dezidor",
+     "lat": 49.20124167,
+     "lng": 16.59928611,
+     "cats": "Category:CC-BY-3.0 Category:Files by User:Dezidor Category:Files with coordinates missing SDC location of creation Category:Platan javorolistý na Veveří Category:Self-published work Category:Taken with Canon Digital IXUS 800 IS"
     }
    ]
   },
   "bru_017": {
    "city": "Brussels",
    "name": "The London Plane of Parc d'Egmont",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "bru_018": {
    "city": "Brussels",
    "name": "The Horse Chestnut of Parc d'Egmont",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "bru_019": {
    "city": "Brussels",
    "name": "The Oriental Plane of Parc d'Egmont",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "bru_020": {
    "city": "Brussels",
    "name": "The Kentucky Coffeetree of Parc d'Egmont",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": []
   },
   "bsc_010": {
@@ -28356,7 +28593,9 @@
      "lat": 45.836567,
      "lng": 9.04225,
      "cats": "Category:Aesculus hippocastanum in Italy Category:Aesculus hippocastanum in the Northern Hemisphere in September 2018 Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-27 Category:Santi Filippo e Giacomo in Quarcino Category:Self-published work Category:September 2018 in Como Category:Uploaded via Campaign:wlm-it Category:Veteran trees in Como Category:WLM Lake Como - selection",
-     "source": "wikidata/Q55741768"
+     "source": "wikidata/Q55741768",
+     "judged": "reject",
+     "verdict": "the chestnut sits distant and backlit behind a row of trees with stone benches taking the foreground; the tree has to be searched for"
     },
     {
      "title": "File:20181213 quarcino 2162.jpg",
@@ -28443,8 +28682,8 @@
   "bne_010": {
    "city": "Brisbane",
    "name": "The Mahogany of Commerce",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Litoria fallax, Eastern Dwarf Tree Frog, Brisbane.jpg",
@@ -28515,8 +28754,8 @@
   "bne_011": {
    "city": "Brisbane",
    "name": "The Tamarind Tree",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-20",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Memorial Bamboo Tree (15873581480).jpg",
@@ -28616,7 +28855,9 @@
      "author": "LMih",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:Photos by User:LMih Bratislava Category:Rudnayovo námestie, Bratislava Category:Self-published work"
+     "cats": "Category:CC-BY-SA-3.0 Category:Photos by User:LMih Bratislava Category:Rudnayovo námestie, Bratislava Category:Self-published work",
+     "judged": "reject",
+     "verdict": "a building facade on Rudnayovo square, no tree in frame"
     },
     {
      "title": "File:Bratislava, Rudnayovo námestie, schody.JPG",
@@ -28626,7 +28867,9 @@
      "author": "Palickap",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Rudnayovo námestie, Bratislava Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Rudnayovo námestie, Bratislava Category:Self-published work",
+     "judged": "reject",
+     "verdict": "the steps on Rudnayovo square, no tree as subject"
     },
     {
      "title": "File:Bratislava, Rudnayovo námestie.jpg",
@@ -28714,7 +28957,9 @@
      "author": "Lure",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:Self-published work Category:Taken with Nikon D3100 Category:Šulekova 3, Bratislava"
+     "cats": "Category:CC-BY-SA-3.0 Category:Self-published work Category:Taken with Nikon D3100 Category:Šulekova 3, Bratislava",
+     "judged": "reject",
+     "verdict": "poor exposure and no oak as subject"
     },
     {
      "title": "File:Bratislava Šulekova 03 03.jpg",
@@ -28724,7 +28969,9 @@
      "author": "Lure",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:Self-published work Category:Taken with Nikon D3100 Category:Šulekova 3, Bratislava"
+     "cats": "Category:CC-BY-SA-3.0 Category:Self-published work Category:Taken with Nikon D3100 Category:Šulekova 3, Bratislava",
+     "judged": "reject",
+     "verdict": "a doorway on Sulekova, no tree in frame"
     },
     {
      "title": "File:Bratislava Šulekova 05 04.jpg",
@@ -28808,7 +29055,9 @@
      "author": "Wizzard",
      "lat": 48.153303,
      "lng": 17.102481,
-     "source": "commons/famous"
+     "source": "commons/famous",
+     "judged": "reject",
+     "verdict": "likely the right birch, but half hidden behind a lamppost with the house taking the frame; fails the card crop"
     },
     {
      "title": "File:Dolný Lieskov kaštieľ 08.jpg",
@@ -28818,7 +29067,9 @@
      "author": "Ľuboš Repta",
      "lat": null,
      "lng": null,
-     "source": "commons/famous"
+     "source": "commons/famous",
+     "judged": "reject",
+     "verdict": "Dolny Lieskov manor, a different place entirely"
     },
     {
      "title": "File:Ginko Masarykova.jpg",
@@ -29160,7 +29411,9 @@
      "author": "Leonhard Lenz",
      "lat": 47.076706,
      "lng": 15.437834,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Flora of Graz in August Category:Graz photographs taken on 2022-08-03 Category:Media from WikiDaheim 2023 in Austria/Natural heritage Category:Media from WikiDaheim 2023 in Austria/all Category:Media from WikiDaheim 2023 in Austria not for prejury Category:Photographs by Leonhard Lenz Category:Self-published work Category:Steirisches Naturdenkmal 1270"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Flora of Graz in August Category:Graz photographs taken on 2022-08-03 Category:Media from WikiDaheim 2023 in Austria/Natural heritage Category:Media from WikiDaheim 2023 in Austria/all Category:Media from WikiDaheim 2023 in Austria not for prejury Category:Photographs by Leonhard Lenz Category:Self-published work Category:Steirisches Naturdenkmal 1270",
+     "judged": "reject",
+     "verdict": "crown only, looking up; the trunk base is out of frame. The other file of the same tree shows it whole"
     },
     {
      "title": "File:Naturdenkmal 1270 Schloßberg Graz 2022-08-03 02.jpg",
@@ -29170,7 +29423,9 @@
      "author": "Leonhard Lenz",
      "lat": 47.076648,
      "lng": 15.4378595,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Flora of Graz in August Category:Graz photographs taken on 2022-08-03 Category:Media from WikiDaheim 2023 in Austria/Natural heritage Category:Media from WikiDaheim 2023 in Austria/all Category:Media from WikiDaheim 2023 in Austria not for prejury Category:Photographs by Leonhard Lenz Category:Self-published work Category:Steirisches Naturdenkmal 1270"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Flora of Graz in August Category:Graz photographs taken on 2022-08-03 Category:Media from WikiDaheim 2023 in Austria/Natural heritage Category:Media from WikiDaheim 2023 in Austria/all Category:Media from WikiDaheim 2023 in Austria not for prejury Category:Photographs by Leonhard Lenz Category:Self-published work Category:Steirisches Naturdenkmal 1270",
+     "judged": "approve",
+     "verdict": "whole tree from the path, trunk to crown, in leaf, daylight; the Naturdenkmal 1270 sign at the base fixes the identity, 10m from our pin"
     },
     {
      "title": "File:Naturdenkmal 1270 Schloßberg Graz 2022-08-03 03.jpg",
@@ -29216,7 +29471,9 @@
      "author": "Gerdsch",
      "lat": 47.07363,
      "lng": 15.426221,
-     "cats": "Category:Austria photographs taken on 2014-05-03 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:Self-published work Category:Steirisches Naturdenkmal 1269 Category:Taken with Panasonic Lumix DMC-TZ8 Category:Trees in Graz Category:Uploaded via Campaign:wle-at-nd"
+     "cats": "Category:Austria photographs taken on 2014-05-03 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:Self-published work Category:Steirisches Naturdenkmal 1269 Category:Taken with Panasonic Lumix DMC-TZ8 Category:Trees in Graz Category:Uploaded via Campaign:wle-at-nd",
+     "judged": "approve",
+     "verdict": "the oak alone on its lawn, crown and trunk both readable, in leaf; 3m from our pin and the file names Naturdenkmal 1269"
     },
     {
      "title": "File:Eiche Volksgarten Graz 1269 (2).JPG",
@@ -29226,7 +29483,9 @@
      "author": "Gerdsch",
      "lat": 47.07363,
      "lng": 15.426221,
-     "cats": "Category:Austria photographs taken on 2014-05-03 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:On OSM Category:Self-published work Category:Steirisches Naturdenkmal 1269 Category:Taken with Panasonic Lumix DMC-TZ8 Category:Uploaded via Campaign:wle-at-nd"
+     "cats": "Category:Austria photographs taken on 2014-05-03 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:On OSM Category:Self-published work Category:Steirisches Naturdenkmal 1269 Category:Taken with Panasonic Lumix DMC-TZ8 Category:Uploaded via Campaign:wle-at-nd",
+     "judged": "reject",
+     "verdict": "same oak as the approved file; portrait crop loses the lawn and the sky is blown"
     },
     {
      "title": "File:Eiche Volksgarten Graz 1269 (3).JPG",
@@ -29314,7 +29573,9 @@
      "author": "Gerdsch",
      "lat": 47.07363,
      "lng": 15.426221,
-     "cats": "Category:Austria photographs taken on 2014-05-03 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:Self-published work Category:Steirisches Naturdenkmal 1269 Category:Taken with Panasonic Lumix DMC-TZ8 Category:Trees in Graz Category:Uploaded via Campaign:wle-at-nd"
+     "cats": "Category:Austria photographs taken on 2014-05-03 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:Self-published work Category:Steirisches Naturdenkmal 1269 Category:Taken with Panasonic Lumix DMC-TZ8 Category:Trees in Graz Category:Uploaded via Campaign:wle-at-nd",
+     "judged": "reject",
+     "verdict": "this is the Volksgarten OAK file (Naturdenkmal 1269) attached to the plane tree (1290); wrong tree"
     },
     {
      "title": "File:Eiche Volksgarten Graz 1269 (2).JPG",
@@ -29581,7 +29842,9 @@
      "author": "Florentin Quapp",
      "lat": null,
      "lng": null,
-     "cats": "Category:Austria photographs taken on 2014-05-25 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:Self-published work Category:Steirisches Naturdenkmal 1506 Category:Taken with Canon EOS 5D Mark II Category:Uploaded via Campaign:wle-at-nd"
+     "cats": "Category:Austria photographs taken on 2014-05-25 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:Self-published work Category:Steirisches Naturdenkmal 1506 Category:Taken with Canon EOS 5D Mark II Category:Uploaded via Campaign:wle-at-nd",
+     "judged": "hold",
+     "verdict": "a copper beech in the Schlosspark, but our tree is the register beech at Eggenberger Allee 90; Eggenberg has more than one and this file proves neither"
     },
     {
      "title": "File:Graz Schloss Eggenberg Haupttor Tulpenbaum-3045-2.jpg",
@@ -29616,6 +29879,17 @@
      "lat": null,
      "lng": null,
      "cats": "Category:Animals at Schloss Eggenberg, Graz Category:Austria photographs taken on 2024-05-16 Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Austria with known IDs Category:May 2024 in Graz Category:Media from WikiDaheim 2024 in Austria/Cultural heritage monuments Category:Media from WikiDaheim 2024 in Austria/all Category:Media from WikiDaheim in Austria check done Category:Nature of Austria in May 2024 Category:Park benches in Graz Category:Pavo cristatus (captive, male) Category:Prejury selection for WikiDaheim 2024 in Austria Category:Quality images Category:Quality images by Isiwal Category:Quality images from Wiki Loves Monuments Austria 2024 Category:Quality images of Graz Category:Quality images of Pavo cristatus Category:Quality images of birds in Austria Category:Quality images supported by Wikimedia Österreich in 2024 Category:Self-published work"
+    },
+    {
+     "title": "File:Blutbuche Graz, Eggenberger Allee 90 02.jpg",
+     "url": "https://commons.wikimedia.org/wiki/File:Blutbuche_Graz,_Eggenberger_Allee_90_02.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Blutbuche_Graz%2C_Eggenberger_Allee_90_02.jpg/960px-Blutbuche_Graz%2C_Eggenberger_Allee_90_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "licence": "CC BY-SA 3.0 at",
+     "author": "Kulac",
+     "source": "commons",
+     "note": "named in the tree's own verified_sources",
+     "judged": "approve",
+     "verdict": "the register beech itself, GPS-tagged at the Naturdenkmal 1506 coordinate our own source names; whole tree on the lawn, trunk and crown, in leaf"
     }
    ]
   },
@@ -30305,7 +30579,9 @@
      "author": "Unknown authorUnknown author",
      "lat": null,
      "lng": null,
-     "cats": "Category:Images from Nowości Illustrowane (1918) Category:PD-Poland Category:Template Unknown (author) Category:Wincenty Zakrzewski"
+     "cats": "Category:Images from Nowości Illustrowane (1918) Category:PD-Poland Category:Template Unknown (author) Category:Wincenty Zakrzewski",
+     "judged": "reject",
+     "verdict": "a portrait of Wincenty Zakrzewski; name match on the maple's name"
     },
     {
      "title": "File:Witold Zakrzewski (1918-1992).jpg",
@@ -30315,7 +30591,9 @@
      "author": "Centralna Agencja Fotograficzna",
      "lat": null,
      "lng": null,
-     "cats": "Category:PD-Poland Category:Witold Zakrzewski (lawyer)"
+     "cats": "Category:PD-Poland Category:Witold Zakrzewski (lawyer)",
+     "judged": "reject",
+     "verdict": "a portrait of Witold Zakrzewski; same name match"
     },
     {
      "title": "File:Władysław Zakrzewski (major, -1929).jpg",
@@ -30402,7 +30680,9 @@
      "author": "Adrian Grycuk",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0-PL Category:Corrected by Jacek Halicki Category:Krzysztof Śmiszek Category:Self-published work Category:Valued images of people of Poland Category:Valued images of politicians Category:Valued images promoted 2020-05 Category:Valued images sorted by promotion date"
+     "cats": "Category:CC-BY-SA-3.0-PL Category:Corrected by Jacek Halicki Category:Krzysztof Śmiszek Category:Self-published work Category:Valued images of people of Poland Category:Valued images of politicians Category:Valued images promoted 2020-05 Category:Valued images sorted by promotion date",
+     "judged": "reject",
+     "verdict": "a portrait of the politician Krzysztof Smiszek; the oak is named Krzysztof"
     }
    ]
   },
@@ -31581,7 +31861,9 @@
      "licence": "CC BY",
      "author": "(c) Richard Jacob, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "20.0395901956,-155.440582148"
+     "obs_location": "20.0395901956,-155.440582148",
+     "judged": "reject",
+     "verdict": "a koa seedling on nursery ground, not the Kalopa koa"
     }
    ]
   },
@@ -31605,7 +31887,9 @@
      "licence": "CC BY",
      "author": "(c) Richard Jacob, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "20.0398170615,-155.4408787738"
+     "obs_location": "20.0398170615,-155.4408787738",
+     "judged": "reject",
+     "verdict": "iNat detail shot, and the same observation is offered for both kopiko trees"
     }
    ]
   },
@@ -31622,7 +31906,9 @@
      "licence": "CC BY",
      "author": "(c) Richard Jacob, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "20.0398170615,-155.4408787738"
+     "obs_location": "20.0398170615,-155.4408787738",
+     "judged": "reject",
+     "verdict": "same observation as haw_003; identifies neither of the two kopiko"
     }
    ]
   },
@@ -31639,7 +31925,9 @@
      "licence": "CC BY",
      "author": "(c) Richard Jacob, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "20.0401341226,-155.4409427689"
+     "obs_location": "20.0401341226,-155.4409427689",
+     "judged": "reject",
+     "verdict": "iNat detail, poor light, and the same observation is offered for both ohi'a"
     }
    ]
   },
@@ -31656,7 +31944,9 @@
      "licence": "CC BY",
      "author": "(c) Richard Jacob, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "20.0401341226,-155.4409427689"
+     "obs_location": "20.0401341226,-155.4409427689",
+     "judged": "reject",
+     "verdict": "same observation as haw_005; identifies neither of the two ohi'a"
     }
    ]
   },
@@ -31680,7 +31970,9 @@
      "licence": "CC BY",
      "author": "(c) Adriana Nelly Correa Sandoval, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "45.4267383333,-75.6974116667"
+     "obs_location": "45.4267383333,-75.6974116667",
+     "judged": "reject",
+     "verdict": "leaf and flower detail from the same observation, no tree in frame"
     },
     {
      "title": "iNat obs 170753562 (Tilia americana)",
@@ -31706,7 +31998,9 @@
      "licence": "CC BY",
      "author": "(c) Adriana Nelly Correa Sandoval, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "45.4267383333,-75.6974116667"
+     "obs_location": "45.4267383333,-75.6974116667",
+     "judged": "reject",
+     "verdict": "same observation as ott_002, detail only"
     },
     {
      "title": "iNat obs 170753562 (Tilia americana)",
@@ -31732,7 +32026,9 @@
      "licence": "CC BY-SA",
      "author": "(c) Andy, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "45.4272962,-75.6964251997"
+     "obs_location": "45.4272962,-75.6964251997",
+     "judged": "reject",
+     "verdict": "a hand holding leaves, same observation, no tree in frame"
     },
     {
      "title": "iNat obs 121738621 (Cladrastis kentukea)",
@@ -31944,7 +32240,9 @@
      "author": "Thiotrix",
      "lat": 39.988644,
      "lng": 9.689076,
-     "source": "commons/famous"
+     "source": "commons/famous",
+     "judged": "approve",
+     "verdict": "textbook: the whole olivastro inside its railing with the interpretive sign, daylight, 9m from our pin"
     },
     {
      "title": "File:Olivastri di Santa Maria Navarrese, Baunei, Sardinia 2.jpg",
@@ -31971,7 +32269,9 @@
      "author": "Robur.q",
      "lat": 41.006865,
      "lng": 9.25489667,
-     "source": "commons/famous"
+     "source": "commons/famous",
+     "judged": "approve",
+     "verdict": "the whole trunk mass and lower crown of the plurimillennial olivastro, daylight, 24m from our pin; the trunk is what this tree is famous for"
     },
     {
      "title": "File:Luras - Olivastri millenari (01).JPG",
@@ -31981,7 +32281,9 @@
      "author": "Gianni Careddu",
      "lat": null,
      "lng": null,
-     "source": "commons/famous"
+     "source": "commons/famous",
+     "judged": "reject",
+     "verdict": "distant view across the valley with foreground branches; the tree has to be searched for"
     },
     {
      "title": "File:Luras - Olivastri millenari (02).JPG",
@@ -32411,6 +32713,1557 @@
   "pal_021": {
    "city": "Palermo",
    "name": "The Norfolk Island Pine of Villa Tasca",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "bru_021": {
+   "city": "Brussels",
+   "name": "The Second Turner's Oak of Parc d'Egmont",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "bru_022": {
+   "city": "Brussels",
+   "name": "The White Mulberries of the Passage de Milan Gate",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "bru_023": {
+   "city": "Brussels",
+   "name": "The Turkish Hazel of the Grand Sablon",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "dal_001": {
+   "city": "Dallas",
+   "name": "The Line-of-Sight Oak",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "dal_002": {
+   "city": "Dallas",
+   "name": "The Grassy Knoll Oak",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "dal_003": {
+   "city": "Dallas",
+   "name": "The W.W. Glover Cemetery Post Oak",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "dal_004": {
+   "city": "Dallas",
+   "name": "The Bur Oak at Big Spring",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "dal_005": {
+   "city": "Dallas",
+   "name": "The Centennial Tree",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "iNat obs 262992582 (Quercus macrocarpa)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/472376758/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/262992582",
+     "licence": "CC BY",
+     "author": "(c) Sam Kieschnick, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "32.8002163349,-96.812040601"
+    },
+    {
+     "title": "iNat obs 262992582 (Quercus macrocarpa)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/472376787/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/262992582",
+     "licence": "CC BY",
+     "author": "(c) Sam Kieschnick, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "32.8002163349,-96.812040601"
+    }
+   ]
+  },
+  "dal_006": {
+   "city": "Dallas",
+   "name": "The West Dallas Gateway Pecan",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "dal_007": {
+   "city": "Dallas",
+   "name": "The Ferris Plaza Live Oaks",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "dal_008": {
+   "city": "Dallas",
+   "name": "The Moore Park Big Tree Grove",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "frk_001": {
+   "city": "Frankfurt",
+   "name": "The Eschersheimer Linde",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Eschersheimer Linde (frontal).jpg (Wikidata Q1367071)",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Eschersheimer_Linde_%28frontal%29.jpg/960px-Eschersheimer_Linde_%28frontal%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Eschersheimer_Linde_(frontal).jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Emsturm",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Eschersheimer Linde Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014, DE-HE Category:Images from Wiki Loves Earth 2014 in Germany Category:Images from Wiki Loves Earth missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wle-de",
+     "source": "wikidata/Q1367071"
+    },
+    {
+     "title": "File:Am Lindenbaum, 1, Eschersheim, Frankfurt am Main.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Am_Lindenbaum%2C_1%2C_Eschersheim%2C_Frankfurt_am_Main.jpg/960px-Am_Lindenbaum%2C_1%2C_Eschersheim%2C_Frankfurt_am_Main.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Am_Lindenbaum,_1,_Eschersheim,_Frankfurt_am_Main.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "GeorgDerReisende",
+     "lat": 50.153327,
+     "lng": 8.661451,
+     "cats": "Category:Am Lindenbaum (Frankfurt am Main) Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Frankfurt-Eschersheim Category:Files with coordinates missing SDC location of creation (50° N, 8° E) Category:GeorgDerReisende/Frankfurt am Main/Eschersheim Category:Self-published work"
+    },
+    {
+     "title": "File:Am Lindenbaum, 2, Eschersheim, Frankfurt am Main.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Am_Lindenbaum%2C_2%2C_Eschersheim%2C_Frankfurt_am_Main.jpg/960px-Am_Lindenbaum%2C_2%2C_Eschersheim%2C_Frankfurt_am_Main.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Am_Lindenbaum,_2,_Eschersheim,_Frankfurt_am_Main.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "GeorgDerReisende",
+     "lat": 50.153566,
+     "lng": 8.661919,
+     "cats": "Category:Am Lindenbaum (Frankfurt am Main) Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Frankfurt-Eschersheim Category:Files with coordinates missing SDC location of creation (50° N, 8° E) Category:GeorgDerReisende/Frankfurt am Main/Eschersheim Category:Self-published work"
+    },
+    {
+     "title": "File:Am Lindenbaum, 5, Eschersheim, Frankfurt am Main.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Am_Lindenbaum%2C_5%2C_Eschersheim%2C_Frankfurt_am_Main.jpg/960px-Am_Lindenbaum%2C_5%2C_Eschersheim%2C_Frankfurt_am_Main.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Am_Lindenbaum,_5,_Eschersheim,_Frankfurt_am_Main.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "GeorgDerReisende",
+     "lat": 50.153481,
+     "lng": 8.662185,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Frankfurt-Eschersheim Category:Files with coordinates missing SDC location of creation (50° N, 8° E) Category:GeorgDerReisende/Frankfurt am Main/Eschersheim Category:Self-published work Category:Siedlung Am Lindenbaum (Frankfurt am Main)"
+    },
+    {
+     "title": "File:Eschersheimer Landstraße Frankfurt am Main-Eschersheim 2024-04-13 02.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Eschersheimer_Landstra%C3%9Fe_Frankfurt_am_Main-Eschersheim_2024-04-13_02.jpg/960px-Eschersheimer_Landstra%C3%9Fe_Frankfurt_am_Main-Eschersheim_2024-04-13_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Eschersheimer_Landstra%C3%9Fe_Frankfurt_am_Main-Eschersheim_2024-04-13_02.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 50.15473538,
+     "lng": 8.65899091,
+     "cats": "Category:CC-Zero Category:Eschersheimer Landstraße Category:Files with coordinates missing SDC location of creation (50° N, 8° E) Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Eschersheimer Linde (Detail).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Eschersheimer_Linde_%28Detail%29.jpg/960px-Eschersheimer_Linde_%28Detail%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Eschersheimer_Linde_(Detail).jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Emsturm",
+     "lat": 50.1535026,
+     "lng": 8.6607514,
+     "cats": "Category:CC-BY-SA-3.0 Category:Eschersheimer Linde Category:Files with coordinates missing SDC location of creation (50° N, 8° E) Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014, DE-HE Category:Images from Wiki Loves Earth 2014 in Germany Category:Images from Wiki Loves Earth missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wle-de"
+    },
+    {
+     "title": "File:Eschersheimer Linde (frontal).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Eschersheimer_Linde_%28frontal%29.jpg/960px-Eschersheimer_Linde_%28frontal%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Eschersheimer_Linde_(frontal).jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Emsturm",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Eschersheimer Linde Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014, DE-HE Category:Images from Wiki Loves Earth 2014 in Germany Category:Images from Wiki Loves Earth missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wle-de"
+    },
+    {
+     "title": "File:Frankfurt-Eschersheim Lindenbaum.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Frankfurt-Eschersheim_Lindenbaum.JPG/960px-Frankfurt-Eschersheim_Lindenbaum.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Frankfurt-Eschersheim_Lindenbaum.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Daviidos",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Eschersheimer Linde Category:Self-published work Category:Taken with Canon PowerShot SX230 HS"
+    },
+    {
+     "title": "File:Straße um die Eschersheimer Linde.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Stra%C3%9Fe_um_die_Eschersheimer_Linde.jpg/960px-Stra%C3%9Fe_um_die_Eschersheimer_Linde.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Stra%C3%9Fe_um_die_Eschersheimer_Linde.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Emsturm",
+     "lat": 50.152948,
+     "lng": 8.6612251,
+     "cats": "Category:CC-BY-SA-3.0 Category:Eschersheimer Landstraße Category:Eschersheimer Linde Category:Files with coordinates missing SDC location of creation (50° N, 8° E) Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014, DE-HE Category:Images from Wiki Loves Earth 2014 in Germany Category:Images from Wiki Loves Earth missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wle-de"
+    }
+   ]
+  },
+  "frk_002": {
+   "city": "Frankfurt",
+   "name": "The Dawn Redwood of the Botanical Garden",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "frk_003": {
+   "city": "Frankfurt",
+   "name": "The Weeping Beech of the Palmengarten",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Frankfurt, Palmengarten, 1-Millionen-Spendenbaum.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Frankfurt%2C_Palmengarten%2C_1-Millionen-Spendenbaum.jpg/960px-Frankfurt%2C_Palmengarten%2C_1-Millionen-Spendenbaum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Frankfurt,_Palmengarten,_1-Millionen-Spendenbaum.jpg",
+     "licence": "CC0",
+     "author": "Karsten Ratzke",
+     "lat": 50.12205,
+     "lng": 8.655814,
+     "cats": "Category:CC-Zero Category:E.R. Nele Category:Files with coordinates missing SDC location of creation (50° N, 8° E) Category:Red sculptures in Germany Category:Sculptures in Frankfurt-Westend Category:Sculptures in gardens and parks in Germany Category:Self-published work Category:Specimens in Palmengarten Frankfurt"
+    },
+    {
+     "title": "File:Frankfurt am Main, Palmengarten, Waterfall.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Frankfurt_am_Main%2C_Palmengarten%2C_Waterfall.jpg/960px-Frankfurt_am_Main%2C_Palmengarten%2C_Waterfall.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_am_Main,_Palmengarten,_Waterfall.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Dr. Thomas Liptak",
+     "lat": 50.122597,
+     "lng": 8.654243,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Hesse with known ID Category:Frankfurt am Main photographs taken on 2026-08-07 Category:Information field template with formatting Category:Palmengarten Frankfurt Category:Self-published work Category:Waterfalls in Hesse"
+    },
+    {
+     "title": "File:Frankfurt am Main, Palmengarten, im Palmenhaus (3).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Frankfurt_am_Main%2C_Palmengarten%2C_im_Palmenhaus_%283%29.jpg/960px-Frankfurt_am_Main%2C_Palmengarten%2C_im_Palmenhaus_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_am_Main,_Palmengarten,_im_Palmenhaus_(3).jpg",
+     "licence": "CC BY 3.0",
+     "author": "Dguendel",
+     "lat": 50.12213889,
+     "lng": 8.65669444,
+     "cats": "Category:1990 in Frankfurt am Main Category:CC-BY-3.0 Category:GFDL Category:License migration redundant Category:Palmenhaus (Palmengarten Frankfurt) Category:Self-published work"
+    },
+    {
+     "title": "File:Palmengarten Frankfurt in May 2026 02.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Palmengarten_Frankfurt_in_May_2026_02.jpg/960px-Palmengarten_Frankfurt_in_May_2026_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Palmengarten_Frankfurt_in_May_2026_02.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Sdkb",
+     "lat": 50.122181,
+     "lng": 8.656814,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 8° E) Category:Images taken by Sdkb Category:May 2026 in Frankfurt am Main Category:Palmenhaus (Palmengarten Frankfurt) Category:Self-published work"
+    },
+    {
+     "title": "File:Palmengarten Frankfurt in May 2026 07.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Palmengarten_Frankfurt_in_May_2026_07.jpg/960px-Palmengarten_Frankfurt_in_May_2026_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Palmengarten_Frankfurt_in_May_2026_07.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Sdkb",
+     "lat": 50.123786,
+     "lng": 8.657492,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 8° E) Category:Images taken by Sdkb Category:May 2026 in Frankfurt am Main Category:Self-published work Category:Tropicarium (Palmengarten Frankfurt)"
+    },
+    {
+     "title": "File:Palmengarten Frankfurt in May 2026 14.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Palmengarten_Frankfurt_in_May_2026_14.jpg/960px-Palmengarten_Frankfurt_in_May_2026_14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Palmengarten_Frankfurt_in_May_2026_14.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Sdkb",
+     "lat": 50.124111,
+     "lng": 8.656858,
+     "cats": "Category:Building entrances in Germany Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 8° E) Category:Images taken by Sdkb Category:May 2026 in Frankfurt am Main Category:Self-published work Category:Tropicarium (Palmengarten Frankfurt)"
+    },
+    {
+     "title": "File:Ruth Cahn, Palmengarten Frankfurt.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Ruth_Cahn%2C_Palmengarten_Frankfurt.jpg/960px-Ruth_Cahn%2C_Palmengarten_Frankfurt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ruth_Cahn,_Palmengarten_Frankfurt.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Ruth Cahn (1875-1966)",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-4.0 Category:Gouache paintings Category:Palmengarten Frankfurt Category:Ruth Cahn"
+    },
+    {
+     "title": "iNat obs 197606321 (Fagus sylvatica)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/348084838/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/197606321",
+     "licence": "CC BY-SA",
+     "author": "(c) Nick T., some rights reserved (CC BY-SA)",
+     "source": "inaturalist",
+     "obs_location": "50.121710703,8.6557671304"
+    }
+   ]
+  },
+  "frk_004": {
+   "city": "Frankfurt",
+   "name": "The Copper Beech of the Palmengarten",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Frankfurt, Palmengarten, 1-Millionen-Spendenbaum.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Frankfurt%2C_Palmengarten%2C_1-Millionen-Spendenbaum.jpg/960px-Frankfurt%2C_Palmengarten%2C_1-Millionen-Spendenbaum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Frankfurt,_Palmengarten,_1-Millionen-Spendenbaum.jpg",
+     "licence": "CC0",
+     "author": "Karsten Ratzke",
+     "lat": 50.12205,
+     "lng": 8.655814,
+     "cats": "Category:CC-Zero Category:E.R. Nele Category:Files with coordinates missing SDC location of creation (50° N, 8° E) Category:Red sculptures in Germany Category:Sculptures in Frankfurt-Westend Category:Sculptures in gardens and parks in Germany Category:Self-published work Category:Specimens in Palmengarten Frankfurt"
+    },
+    {
+     "title": "File:Frankfurt am Main, Palmengarten, Waterfall.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Frankfurt_am_Main%2C_Palmengarten%2C_Waterfall.jpg/960px-Frankfurt_am_Main%2C_Palmengarten%2C_Waterfall.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_am_Main,_Palmengarten,_Waterfall.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Dr. Thomas Liptak",
+     "lat": 50.122597,
+     "lng": 8.654243,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Hesse with known ID Category:Frankfurt am Main photographs taken on 2026-08-07 Category:Information field template with formatting Category:Palmengarten Frankfurt Category:Self-published work Category:Waterfalls in Hesse"
+    },
+    {
+     "title": "File:Frankfurt am Main, Palmengarten, im Palmenhaus (3).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Frankfurt_am_Main%2C_Palmengarten%2C_im_Palmenhaus_%283%29.jpg/960px-Frankfurt_am_Main%2C_Palmengarten%2C_im_Palmenhaus_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_am_Main,_Palmengarten,_im_Palmenhaus_(3).jpg",
+     "licence": "CC BY 3.0",
+     "author": "Dguendel",
+     "lat": 50.12213889,
+     "lng": 8.65669444,
+     "cats": "Category:1990 in Frankfurt am Main Category:CC-BY-3.0 Category:GFDL Category:License migration redundant Category:Palmenhaus (Palmengarten Frankfurt) Category:Self-published work"
+    },
+    {
+     "title": "File:Palmengarten Frankfurt in May 2026 02.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Palmengarten_Frankfurt_in_May_2026_02.jpg/960px-Palmengarten_Frankfurt_in_May_2026_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Palmengarten_Frankfurt_in_May_2026_02.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Sdkb",
+     "lat": 50.122181,
+     "lng": 8.656814,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 8° E) Category:Images taken by Sdkb Category:May 2026 in Frankfurt am Main Category:Palmenhaus (Palmengarten Frankfurt) Category:Self-published work"
+    },
+    {
+     "title": "File:Palmengarten Frankfurt in May 2026 07.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Palmengarten_Frankfurt_in_May_2026_07.jpg/960px-Palmengarten_Frankfurt_in_May_2026_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Palmengarten_Frankfurt_in_May_2026_07.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Sdkb",
+     "lat": 50.123786,
+     "lng": 8.657492,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 8° E) Category:Images taken by Sdkb Category:May 2026 in Frankfurt am Main Category:Self-published work Category:Tropicarium (Palmengarten Frankfurt)"
+    },
+    {
+     "title": "File:Palmengarten Frankfurt in May 2026 14.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Palmengarten_Frankfurt_in_May_2026_14.jpg/960px-Palmengarten_Frankfurt_in_May_2026_14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Palmengarten_Frankfurt_in_May_2026_14.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Sdkb",
+     "lat": 50.124111,
+     "lng": 8.656858,
+     "cats": "Category:Building entrances in Germany Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 8° E) Category:Images taken by Sdkb Category:May 2026 in Frankfurt am Main Category:Self-published work Category:Tropicarium (Palmengarten Frankfurt)"
+    },
+    {
+     "title": "File:Ruth Cahn, Palmengarten Frankfurt.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Ruth_Cahn%2C_Palmengarten_Frankfurt.jpg/960px-Ruth_Cahn%2C_Palmengarten_Frankfurt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ruth_Cahn,_Palmengarten_Frankfurt.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Ruth Cahn (1875-1966)",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-4.0 Category:Gouache paintings Category:Palmengarten Frankfurt Category:Ruth Cahn"
+    }
+   ]
+  },
+  "frk_005": {
+   "city": "Frankfurt",
+   "name": "The Eight-Stemmed Linden of Grüneburgpark",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Grüneburgpark Frankfurt am Main 2021-08-17 01.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Gr%C3%BCneburgpark_Frankfurt_am_Main_2021-08-17_01.jpg/960px-Gr%C3%BCneburgpark_Frankfurt_am_Main_2021-08-17_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gr%C3%BCneburgpark_Frankfurt_am_Main_2021-08-17_01.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-Zero Category:Grüneburgpark Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Grüneburgpark Frankfurt am Main 2021-08-17 02.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Gr%C3%BCneburgpark_Frankfurt_am_Main_2021-08-17_02.jpg/960px-Gr%C3%BCneburgpark_Frankfurt_am_Main_2021-08-17_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gr%C3%BCneburgpark_Frankfurt_am_Main_2021-08-17_02.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-Zero Category:Grüneburgpark Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Grüneburgpark Frankfurt am Main 2021-08-17 03.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Gr%C3%BCneburgpark_Frankfurt_am_Main_2021-08-17_03.jpg/960px-Gr%C3%BCneburgpark_Frankfurt_am_Main_2021-08-17_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gr%C3%BCneburgpark_Frankfurt_am_Main_2021-08-17_03.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-Zero Category:Grüneburgpark Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Grüneburgpark Frankfurt am Main 2021-08-17 04.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Gr%C3%BCneburgpark_Frankfurt_am_Main_2021-08-17_04.jpg/960px-Gr%C3%BCneburgpark_Frankfurt_am_Main_2021-08-17_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gr%C3%BCneburgpark_Frankfurt_am_Main_2021-08-17_04.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-Zero Category:Grüneburgpark Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Grüneburgpark Frankfurt am Main 2021-08-17 05.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Gr%C3%BCneburgpark_Frankfurt_am_Main_2021-08-17_05.jpg/960px-Gr%C3%BCneburgpark_Frankfurt_am_Main_2021-08-17_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gr%C3%BCneburgpark_Frankfurt_am_Main_2021-08-17_05.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-Zero Category:Grüneburgpark Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Grüneburgpark Frankfurt am Main 2021-08-17 06.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Gr%C3%BCneburgpark_Frankfurt_am_Main_2021-08-17_06.jpg/960px-Gr%C3%BCneburgpark_Frankfurt_am_Main_2021-08-17_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gr%C3%BCneburgpark_Frankfurt_am_Main_2021-08-17_06.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-Zero Category:Grüneburgpark Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Grüneburgpark Frankfurt am Main 2024-10-02 15.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Gr%C3%BCneburgpark_Frankfurt_am_Main_2024-10-02_15.jpg/960px-Gr%C3%BCneburgpark_Frankfurt_am_Main_2024-10-02_15.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gr%C3%BCneburgpark_Frankfurt_am_Main_2024-10-02_15.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 50.1249799,
+     "lng": 8.66319538,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation (50° N, 8° E) Category:Grüneburgpark Category:Photographs by Leonhard Lenz Category:Self-published work"
+    },
+    {
+     "title": "File:Grüneburgpark Frankfurt am Main 2024-10-02 17.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Gr%C3%BCneburgpark_Frankfurt_am_Main_2024-10-02_17.jpg/960px-Gr%C3%BCneburgpark_Frankfurt_am_Main_2024-10-02_17.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gr%C3%BCneburgpark_Frankfurt_am_Main_2024-10-02_17.jpg",
+     "licence": "CC0",
+     "author": "Leonhard Lenz",
+     "lat": 50.12496276,
+     "lng": 8.66322741,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation (50° N, 8° E) Category:Grüneburgpark Category:Photographs by Leonhard Lenz Category:Self-published work"
+    }
+   ]
+  },
+  "frk_006": {
+   "city": "Frankfurt",
+   "name": "The Plane Tree at the Nebbiensches Gartenhaus",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "hbi_001": {
+   "city": "Hilo",
+   "name": "The Kalakaua Park Banyan",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "hbi_002": {
+   "city": "Hilo",
+   "name": "The Haili Street Kamani",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "hbi_003": {
+   "city": "Hilo",
+   "name": "The Rainbow Falls Banyan",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Banyon Tree, Rainbow Falls, Hilo, Hawaii by Ethel Shelhamer Dunn Gripper.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Banyon_Tree%2C_Rainbow_Falls%2C_Hilo%2C_Hawaii_by_Ethel_Shelhamer_Dunn_Gripper.jpg/960px-Banyon_Tree%2C_Rainbow_Falls%2C_Hilo%2C_Hawaii_by_Ethel_Shelhamer_Dunn_Gripper.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Banyon_Tree,_Rainbow_Falls,_Hilo,_Hawaii_by_Ethel_Shelhamer_Dunn_Gripper.jpg",
+     "licence": "Public domain",
+     "author": "Ethel Shelhamer Dunn Gripper",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Author died more than 70 years ago public domain images Category:Banyans in Hawaii Category:Banyans in art Category:CC-PD-Mark Category:Ethel Shelhamer Dunn Gripper Category:PD-old missing SDC copyright status Category:Paintings of Hawaii (island)"
+    },
+    {
+     "title": "File:Ficus microcarpa 451236025.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Ficus_microcarpa_451236025.jpg/960px-Ficus_microcarpa_451236025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ficus_microcarpa_451236025.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Nick T.",
+     "lat": 19.71881299,
+     "lng": -155.10977128,
+     "cats": "Category:CC-BY-SA-4.0 Category:Ficus microcarpa Category:Files with coordinates missing SDC location of creation Category:INaturalist images reviewed by iNaturalistReviewBot Category:Media from iNaturalist Category:Uploaded with iNaturalist2Commons"
+    },
+    {
+     "title": "iNat obs 225283713 (Ficus microcarpa)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/399401839/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/225283713",
+     "licence": "CC BY",
+     "author": "(c) Lisa Wiencek Gerbec, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "19.7192836,-155.109422"
+    }
+   ]
+  },
+  "hbi_004": {
+   "city": "Hilo",
+   "name": "The Divi-Divi of Kalakaua Park",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "hbi_005": {
+   "city": "Hilo",
+   "name": "The Loulu Palm of Kalakaua Park",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "lvg_001": {
+   "city": "Las Vegas",
+   "name": "The Heritage Oak of Grant Hall",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "lvg_003": {
+   "city": "Las Vegas",
+   "name": "The Kissing Tree of Carlson Hill",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "lvg_005": {
+   "city": "Las Vegas",
+   "name": "The Chir Pine of the Geoscience Building",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "lvg_006": {
+   "city": "Las Vegas",
+   "name": "The Sissoo of Barrick Museum",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "lvg_007": {
+   "city": "Las Vegas",
+   "name": "The Desert Willow of the Research Administration Building",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "lvg_009": {
+   "city": "Las Vegas",
+   "name": "The Coolibah Eucalyptus of Winchester Park",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "lvg_010": {
+   "city": "Las Vegas",
+   "name": "The Lemon Eucalyptus of Winchester Park",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "lvg_011": {
+   "city": "Las Vegas",
+   "name": "The Shiny Xylosma of Winchester Park",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "lax_002": {
+   "city": "Los Angeles",
+   "name": "The Miramar Moreton Bay Fig",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "lax_003": {
+   "city": "Los Angeles",
+   "name": "The Moreton Bay Fig at St. Johns Presbyterian Church",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:LAHCM 19 - Moreton Bay Fig Tree (Los Angeles, California).jpg (Wikidata Q113380044)",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/LAHCM_19_-_Moreton_Bay_Fig_Tree_%28Los_Angeles%2C_California%29.jpg/960px-LAHCM_19_-_Moreton_Bay_Fig_Tree_%28Los_Angeles%2C_California%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:LAHCM_19_-_Moreton_Bay_Fig_Tree_(Los_Angeles,_California).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Jengod",
+     "lat": 34.028008,
+     "lng": -118.425622,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Moreton Bay Fig Tree (Los Angeles) Category:Self-published work",
+     "source": "wikidata/Q113380044"
+    },
+    {
+     "title": "File:LAHCM 19 - Moreton Bay Fig Tree (Los Angeles, California).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/LAHCM_19_-_Moreton_Bay_Fig_Tree_%28Los_Angeles%2C_California%29.jpg/960px-LAHCM_19_-_Moreton_Bay_Fig_Tree_%28Los_Angeles%2C_California%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:LAHCM_19_-_Moreton_Bay_Fig_Tree_(Los_Angeles,_California).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Jengod",
+     "lat": 34.028008,
+     "lng": -118.425622,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Moreton Bay Fig Tree (Los Angeles) Category:Self-published work"
+    }
+   ]
+  },
+  "lax_004": {
+   "city": "Los Angeles",
+   "name": "The Plaza Fig Trees",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "iNat obs 18366068 (Ficus)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/28071017/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/18366068",
+     "licence": "CC BY-SA",
+     "author": "(c) Lena Struwe, some rights reserved (CC BY-SA)",
+     "source": "inaturalist",
+     "obs_location": "34.0563266091,-118.2388065879"
+    }
+   ]
+  },
+  "lax_005": {
+   "city": "Los Angeles",
+   "name": "The Oldest Palm Tree in Los Angeles",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Los Angeles Washingtonia Robusta.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Los_Angeles_Washingtonia_Robusta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Los_Angeles_Washingtonia_Robusta.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Waltarrrrr",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1875 in California Category:Arecaceae in California Category:CC-BY-SA-3.0 Category:GFDL Category:License migration redundant Category:March 2010 in Los Angeles Category:Ornamental trees in Los Angeles Category:Self-published work Category:Trees planted in 1875 Category:United States photographs taken on 2010-03-17 Category:Uploaded with en.wp upload wizard Category:Washingtonia robusta (avenues)"
+    },
+    {
+     "title": "File:Oldest palm tree in Los Angeles, California, US.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Oldest_palm_tree_in_Los_Angeles%2C_California%2C_US.jpg/960px-Oldest_palm_tree_in_Los_Angeles%2C_California%2C_US.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Oldest_palm_tree_in_Los_Angeles,_California,_US.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Clyde Charles Brown",
+     "lat": 34.01397719,
+     "lng": -118.28301036,
+     "cats": "Category:CC-BY-SA-4.0 Category:Exposition Park palm tree Category:Files with coordinates missing SDC location of creation Category:Uploaded with LrMediaWiki"
+    },
+    {
+     "title": "File:Palm tree expo park banc california stadium.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Palm_tree_expo_park_banc_california_stadium.jpg/960px-Palm_tree_expo_park_banc_california_stadium.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Palm_tree_expo_park_banc_california_stadium.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Seauton, 24 February 2019",
+     "lat": 34.014026,
+     "lng": -118.2831961,
+     "cats": "Category:CC-BY-SA-4.0 Category:Exposition Park palm tree Category:Files with coordinates missing SDC location of creation Category:Self-published work"
+    },
+    {
+     "title": "File:Palm tree expo park coliseum peristyle.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Palm_tree_expo_park_coliseum_peristyle.jpg/960px-Palm_tree_expo_park_coliseum_peristyle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Palm_tree_expo_park_coliseum_peristyle.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Seauton, 24 February 2019",
+     "lat": 34.014026,
+     "lng": -118.2831961,
+     "cats": "Category:CC-BY-SA-4.0 Category:Exposition Park palm tree Category:Files with coordinates missing SDC location of creation Category:Self-published work"
+    },
+    {
+     "title": "File:Southern Pacific Railroad palm tree at Expo Park 2024a.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Southern_Pacific_Railroad_palm_tree_at_Expo_Park_2024a.jpg/960px-Southern_Pacific_Railroad_palm_tree_at_Expo_Park_2024a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Southern_Pacific_Railroad_palm_tree_at_Expo_Park_2024a.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Antony-22",
+     "lat": 34.014019,
+     "lng": -118.283311,
+     "cats": "Category:CC-BY-SA-4.0 Category:Exposition Park palm tree Category:Files with coordinates missing SDC location of creation Category:Media by Antony-22 Category:Self-published work"
+    },
+    {
+     "title": "File:Southern Pacific Railroad palm tree at Expo Park 2024b.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Southern_Pacific_Railroad_palm_tree_at_Expo_Park_2024b.jpg/960px-Southern_Pacific_Railroad_palm_tree_at_Expo_Park_2024b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Southern_Pacific_Railroad_palm_tree_at_Expo_Park_2024b.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Antony-22",
+     "lat": 34.014072,
+     "lng": -118.283242,
+     "cats": "Category:CC-BY-SA-4.0 Category:Exposition Park palm tree Category:Files with coordinates missing SDC location of creation Category:Media by Antony-22 Category:Plaques referencing 1914 in the United States Category:Self-published work"
+    }
+   ]
+  },
+  "lax_006": {
+   "city": "Los Angeles",
+   "name": "The Arboretum Coast Live Oak",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "lax_008": {
+   "city": "Los Angeles",
+   "name": "The Beverly Hills Moreton Bay Fig",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "lax_009": {
+   "city": "Los Angeles",
+   "name": "The Auto Club Moreton Bay Fig",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "mdr_001": {
+   "city": "Madeira",
+   "name": "The Ginkgo of the Botanical Garden",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "mdr_002": {
+   "city": "Madeira",
+   "name": "The Cypress of Quinta Magnolia",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "mdr_003": {
+   "city": "Madeira",
+   "name": "The Copper Beech of the Emperor's Garden",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Pittosporum Coriaceum tree - Jardins do Imperador.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Pittosporum_Coriaceum_tree_-_Jardins_do_Imperador.jpg/960px-Pittosporum_Coriaceum_tree_-_Jardins_do_Imperador.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Pittosporum_Coriaceum_tree_-_Jardins_do_Imperador.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Vitorjcj",
+     "lat": 32.67626471,
+     "lng": -16.90711148,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Pittosporum coriaceum Category:Self-published work Category:Uploaded with Mobile/Android"
+    }
+   ]
+  },
+  "mdr_004": {
+   "city": "Madeira",
+   "name": "The Douglas Fir of Queimadas",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "mdr_005": {
+   "city": "Madeira",
+   "name": "The Witch Tree of Fanal",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "iNat obs 348125183 (Ocotea foetens)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/634850893/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/348125183",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "32.8109699997,-17.1446916"
+    },
+    {
+     "title": "iNat obs 348125183 (Ocotea foetens)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/634851591/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/348125183",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "32.8109699997,-17.1446916"
+    },
+    {
+     "title": "iNat obs 291833069 (Ocotea foetens)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/525101822/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/291833069",
+     "licence": "CC BY",
+     "author": "(c) Mário de Pinto Balsemão, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "32.8116478997,-17.1447144997"
+    },
+    {
+     "title": "iNat obs 108363672 (Ocotea foetens)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/182433426/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/108363672",
+     "licence": "CC BY",
+     "author": "(c) William Stephens, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "32.8110991216,-17.1443864321"
+    },
+    {
+     "title": "iNat obs 291832625 (Ocotea foetens)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/525101024/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/291832625",
+     "licence": "CC BY",
+     "author": "(c) Mário de Pinto Balsemão, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "32.8118140997,-17.1447754"
+    },
+    {
+     "title": "iNat obs 291832517 (Ocotea foetens)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/525100888/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/291832517",
+     "licence": "CC BY",
+     "author": "(c) Mário de Pinto Balsemão, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "32.8117942,-17.1446924"
+    }
+   ]
+  },
+  "mdr_006": {
+   "city": "Madeira",
+   "name": "The Dragon Tree Grove of Neves",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Núcleo dos Dragoeiros das Neves, Funchal, Madeira - 2012-03-03 - DSC04664.jpg (Wikidata Q109303182)",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/N%C3%BAcleo_dos_Dragoeiros_das_Neves%2C_Funchal%2C_Madeira_-_2012-03-03_-_DSC04664.jpg/960px-N%C3%BAcleo_dos_Dragoeiros_das_Neves%2C_Funchal%2C_Madeira_-_2012-03-03_-_DSC04664.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:N%C3%BAcleo_dos_Dragoeiros_das_Neves,_Funchal,_Madeira_-_2012-03-03_-_DSC04664.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Paulo SP/ Wikimedia",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2012 in Funchal Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Portugal with known IDs Category:Images from Wiki Loves Monuments 2021 Category:Images from Wiki Loves Monuments 2021 in Portugal Category:Images from Wiki Loves Monuments 2021 in Portugal - Madeira Category:Núcleo dos Dragoeiros Category:Photos taken by DarwIn Category:Portugal photographs taken on 2012-03-03 Category:Self-published work Category:Uploaded via Campaign:wlm-pt",
+     "source": "wikidata/Q109303182"
+    },
+    {
+     "title": "iNat obs 199348553 (Dracaena draco)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/351547195/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/199348553",
+     "licence": "CC BY",
+     "author": "(c) Vítor Jorge, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "32.6487945994,-16.8696976081"
+    },
+    {
+     "title": "iNat obs 199348553 (Dracaena draco)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/351547210/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/199348553",
+     "licence": "CC BY",
+     "author": "(c) Vítor Jorge, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "32.6487945994,-16.8696976081"
+    },
+    {
+     "title": "iNat obs 256888618 (Dracaena draco)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/460692353/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/256888618",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "32.6487,-16.8701216667"
+    },
+    {
+     "title": "iNat obs 256888618 (Dracaena draco)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/460692362/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/256888618",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "32.6487,-16.8701216667"
+    }
+   ]
+  },
+  "mex_001": {
+   "city": "Mexico City",
+   "name": "El Sabino de San Juan",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "mex_002": {
+   "city": "Mexico City",
+   "name": "El Viejo del Agua (Ahuehuete de Santa Catarina)",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "mex_003": {
+   "city": "Mexico City",
+   "name": "Laureano",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "mex_005": {
+   "city": "Mexico City",
+   "name": "Ahuehuete de Parque Espana",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Ahuehuete de 1921, Parque España, Ciudad de México.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Ahuehuete_de_1921%2C_Parque_Espa%C3%B1a%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Ahuehuete_de_1921%2C_Parque_Espa%C3%B1a%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ahuehuete_de_1921,_Parque_Espa%C3%B1a,_Ciudad_de_M%C3%A9xico.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "ProtoplasmaKid",
+     "lat": 19.416181,
+     "lng": -99.170494,
+     "cats": "Category:Ahuehuete Inaugural (Parque España) Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images of Cuauhtémoc by User:ProtoplasmaKid Category:Self-published work"
+    },
+    {
+     "title": "File:Parque España - Ciudad de México - 14 - Ahuehuete inaugural.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Parque_Espa%C3%B1a_-_Ciudad_de_M%C3%A9xico_-_14_-_Ahuehuete_inaugural.jpg/960px-Parque_Espa%C3%B1a_-_Ciudad_de_M%C3%A9xico_-_14_-_Ahuehuete_inaugural.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Parque_Espa%C3%B1a_-_Ciudad_de_M%C3%A9xico_-_14_-_Ahuehuete_inaugural.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "ProtoplasmaKid",
+     "lat": 19.415569,
+     "lng": -99.170896,
+     "cats": "Category:Ahuehuete Inaugural (Parque España) Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images of Cuauhtémoc by User:ProtoplasmaKid Category:Photos taken with WMMX camera Category:Self-published work Category:Taken with Nikon D5200"
+    }
+   ]
+  },
+  "mex_006": {
+   "city": "Mexico City",
+   "name": "Ahuehuete del Jardin de San Fernando",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "mex_007": {
+   "city": "Mexico City",
+   "name": "Ahuehuete de Tacuba",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "mex_008": {
+   "city": "Mexico City",
+   "name": "Ahuehuete de San Diego Churubusco",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Ahuehuete Tree.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/2/22/Ahuehuete_Tree.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Ahuehuete_Tree.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Marianafloresocampo",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Exterior of ex-Monastery of San Diego Churubusco Category:Reto Wikimedia Semana i Wiki Learning Tec de Monterrey - Campus Ciudad de Mexico Category:Self-published work Category:Taxodium mucronatum (cultivated) Category:Trees in Mexico City"
+    },
+    {
+     "title": "File:Unidentified tree - Patio Menor - Ex-Monastery of San Diego Churubusco - Mexico 2024.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Unidentified_tree_-_Patio_Menor_-_Ex-Monastery_of_San_Diego_Churubusco_-_Mexico_2024.jpg/960px-Unidentified_tree_-_Patio_Menor_-_Ex-Monastery_of_San_Diego_Churubusco_-_Mexico_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Unidentified_tree_-_Patio_Menor_-_Ex-Monastery_of_San_Diego_Churubusco_-_Mexico_2024.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "José Luiz",
+     "lat": 19.354904,
+     "lng": -99.149008,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Information field template with formatting Category:José Luiz uploads Category:June 2024 in Mexico City Category:Patio Menor of ex-Monastery of San Diego Churubusco Category:Self-published work Category:Unidentified trees in Mexico"
+    },
+    {
+     "title": "File:Unidentified tree - Patio Menor - Ex-Monastery of San Diego Churubusco - Mexico 2024 (2).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Unidentified_tree_-_Patio_Menor_-_Ex-Monastery_of_San_Diego_Churubusco_-_Mexico_2024_%282%29.jpg/960px-Unidentified_tree_-_Patio_Menor_-_Ex-Monastery_of_San_Diego_Churubusco_-_Mexico_2024_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Unidentified_tree_-_Patio_Menor_-_Ex-Monastery_of_San_Diego_Churubusco_-_Mexico_2024_(2).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "José Luiz",
+     "lat": 19.354904,
+     "lng": -99.149008,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Information field template with formatting Category:José Luiz uploads Category:June 2024 in Mexico City Category:Patio Menor of ex-Monastery of San Diego Churubusco Category:Self-published work Category:Unidentified trees in Mexico"
+    }
+   ]
+  },
+  "mex_009": {
+   "city": "Mexico City",
+   "name": "Ahuehuete de Rio Magdalena (Callejon del Rio)",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "mex_010": {
+   "city": "Mexico City",
+   "name": "Fresno de Santa Catarina (Avenida Francisco Sosa)",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "per_001": {
+   "city": "Perth",
+   "name": "Gija Jumulu",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Gija Jumula.jpg (Wikidata Q5560390)",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Gija_Jumula.jpg/960px-Gija_Jumula.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gija_Jumula.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Martinvl",
+     "lat": -31.9622,
+     "lng": 115.841,
+     "cats": "Category:Adansonia gregorii in Kings Park, Western Australia Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work",
+     "source": "wikidata/Q5560390"
+    },
+    {
+     "title": "File:Boab trees in front of Swan River in Kings Park.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Boab_trees_in_front_of_Swan_River_in_Kings_Park.jpg/960px-Boab_trees_in_front_of_Swan_River_in_Kings_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Boab_trees_in_front_of_Swan_River_in_Kings_Park.jpg",
+     "licence": "Public domain",
+     "author": "Dcoetzee",
+     "lat": -31.961484,
+     "lng": 115.844017,
+     "cats": "Category:Adansonia gregorii in Kings Park, Western Australia Category:Files with coordinates missing SDC location of creation Category:On OSM Category:PD-self Category:Self-published work Category:Taken with Canon PowerShot A75"
+    }
+   ]
+  },
+  "per_002": {
+   "city": "Perth",
+   "name": "The Moreton Bay Fig Tree, Royal Perth Hospital",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Moreton Bay Fig Tree, Royal Perth Hospital, January 2021 02.jpg (Wikidata Q66975672)",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Moreton_Bay_Fig_Tree%2C_Royal_Perth_Hospital%2C_January_2021_02.jpg/960px-Moreton_Bay_Fig_Tree%2C_Royal_Perth_Hospital%2C_January_2021_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Moreton_Bay_Fig_Tree,_Royal_Perth_Hospital,_January_2021_02.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Calistemon",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Australia photos taken with Canon PowerShot SX60 HS Category:CC-BY-SA-4.0 Category:January 2021 in Perth, Western Australia Category:Moreton Bay Fig Tree, Royal Perth Hospital Category:Self-published work",
+     "source": "wikidata/Q66975672"
+    },
+    {
+     "title": "File:Kirkman House and Moreton Bay Fig Tree, Royal Perth Hospital, January 2021 01.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Kirkman_House_and_Moreton_Bay_Fig_Tree%2C_Royal_Perth_Hospital%2C_January_2021_01.jpg/960px-Kirkman_House_and_Moreton_Bay_Fig_Tree%2C_Royal_Perth_Hospital%2C_January_2021_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kirkman_House_and_Moreton_Bay_Fig_Tree,_Royal_Perth_Hospital,_January_2021_01.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Calistemon",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:January 2021 in Perth, Western Australia Category:Kirkman House, Royal Perth Hospital Category:Moreton Bay Fig Tree, Royal Perth Hospital Category:Self-published work"
+    },
+    {
+     "title": "File:Kirkman House and Moreton Bay Fig Tree, Royal Perth Hospital, January 2021 02.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Kirkman_House_and_Moreton_Bay_Fig_Tree%2C_Royal_Perth_Hospital%2C_January_2021_02.jpg/960px-Kirkman_House_and_Moreton_Bay_Fig_Tree%2C_Royal_Perth_Hospital%2C_January_2021_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kirkman_House_and_Moreton_Bay_Fig_Tree,_Royal_Perth_Hospital,_January_2021_02.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Calistemon",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:January 2021 in Perth, Western Australia Category:Kirkman House, Royal Perth Hospital Category:Moreton Bay Fig Tree, Royal Perth Hospital Category:Self-published work"
+    },
+    {
+     "title": "File:Moreton Bay Fig Tree, Royal Perth Hospital, January 2021 01.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Moreton_Bay_Fig_Tree%2C_Royal_Perth_Hospital%2C_January_2021_01.jpg/960px-Moreton_Bay_Fig_Tree%2C_Royal_Perth_Hospital%2C_January_2021_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Moreton_Bay_Fig_Tree,_Royal_Perth_Hospital,_January_2021_01.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Calistemon",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Australia photos taken with Canon PowerShot SX60 HS Category:CC-BY-SA-4.0 Category:January 2021 in Perth, Western Australia Category:Moreton Bay Fig Tree, Royal Perth Hospital Category:Self-published work"
+    },
+    {
+     "title": "File:Moreton Bay Fig Tree, Royal Perth Hospital, January 2021 02.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Moreton_Bay_Fig_Tree%2C_Royal_Perth_Hospital%2C_January_2021_02.jpg/960px-Moreton_Bay_Fig_Tree%2C_Royal_Perth_Hospital%2C_January_2021_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Moreton_Bay_Fig_Tree,_Royal_Perth_Hospital,_January_2021_02.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Calistemon",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Australia photos taken with Canon PowerShot SX60 HS Category:CC-BY-SA-4.0 Category:January 2021 in Perth, Western Australia Category:Moreton Bay Fig Tree, Royal Perth Hospital Category:Self-published work"
+    },
+    {
+     "title": "File:Murray Street upper section under Moreton Bay Fig.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Murray_Street_upper_section_under_Moreton_Bay_Fig.jpg/960px-Murray_Street_upper_section_under_Moreton_Bay_Fig.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Murray_Street_upper_section_under_Moreton_Bay_Fig.jpg",
+     "licence": "CC BY 2.5 au",
+     "author": "JarrahTree",
+     "lat": -31.954772,
+     "lng": 115.864328,
+     "cats": "Category:CC-BY-2.5-AU Category:Files with coordinates missing SDC location of creation Category:Moreton Bay Fig Tree, Royal Perth Hospital Category:Photographs by JarrahTree Category:Self-published work"
+    },
+    {
+     "title": "File:Perth (AU), Murray St, Tree -- 2019 -- 0305.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Perth_%28AU%29%2C_Murray_St%2C_Tree_--_2019_--_0305.jpg/960px-Perth_%28AU%29%2C_Murray_St%2C_Tree_--_2019_--_0305.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Perth_(AU),_Murray_St,_Tree_--_2019_--_0305.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Dietmar Rabich",
+     "lat": -31.954795,
+     "lng": 115.864925,
+     "cats": "Category:Australia photographs taken on 2019-10-04 Category:CC-BY-SA-4.0 Category:Exposure time 1/25 sec Category:F-number f/4 Category:ISO speed rating 12800 Category:Images by XRay (flat list) Category:Information field template with formatting Category:Lens focal length 24 mm Category:Murray Street, Perth Category:Night in Perth Category:October 2019 in Perth, Western Australia Category:Photographs by Dietmar Rabich/Australia Category:Photographs by Dietmar Rabich/Available light photography/Night Category:Photographs by Dietmar Rabich/Quality images Category:Photographs by Dietmar Rabich/Quality images of Australia Category:Photographs by Dietmar Rabich/Quality images of lighting devices Category:Photographs by Dietmar Rabich/Quality images of street furniture Category:Photographs by Dietmar Rabich/Quality images of trees Category:Photographs by Dietmar Rabich/Tree photography Category:Photographs by Dietmar Rabich/Year/2019 Category:Photographs with aspect ratio of 3:2 Category:Quality images Category:Quality images of Perth, Western Australia Category:Quality images of street lights Category:Quality images of trees in Australia Category:Quality night photography in Australia Category:Self-published work Category:Spring 2019 in Australia Category:Spring in Western Australia Category:Street furniture at night Category:Street lights in Western Australia Category:Street lights photographed in 2019 Category:Taken with Canon EOS 5D Mark IV and Canon EF 24-105mm F4L IS II USM Category:Trees in Australia at night Category:Trees in Australia in October Category:Trees in October 2019 Category:Trees in Western Australia Category:Trees in spring in Australia Category:Uploaded with LrMediaWiki Category:Urban trees"
+    }
+   ]
+  },
+  "per_003": {
+   "city": "Perth",
+   "name": "Port Jackson Fig, The Cloisters",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Port Jackson Fig, Mt Newman House, March 2022 04.jpg (Wikidata Q66975958)",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Port_Jackson_Fig%2C_Mt_Newman_House%2C_March_2022_04.jpg/960px-Port_Jackson_Fig%2C_Mt_Newman_House%2C_March_2022_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Port_Jackson_Fig,_Mt_Newman_House,_March_2022_04.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Calistemon",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:March 2022 in Perth, Western Australia Category:Port Jackson Fig, Mt Newman House Category:Self-published work",
+     "source": "wikidata/Q66975958"
+    }
+   ]
+  },
+  "per_004": {
+   "city": "Perth",
+   "name": "The Proclamation Tree",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:William Marmion memorial.JPG (Wikidata Q56053825)",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/William_Marmion_memorial.JPG/960px-William_Marmion_memorial.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:William_Marmion_memorial.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Gruyere",
+     "lat": -32.050322,
+     "lng": 115.749933,
+     "cats": "Category:Australia photographs taken on 2012-12-30 Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:On OSM Category:Proclamation Tree Category:Self-published work Category:Taken with Fujifilm FinePix F550EXR",
+     "source": "wikidata/Q56053825"
+    },
+    {
+     "title": "File:2013-08-04 1049 Proclamation Tree in Fremantle.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/2013-08-04_1049_Proclamation_Tree_in_Fremantle.JPG/960px-2013-08-04_1049_Proclamation_Tree_in_Fremantle.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:2013-08-04_1049_Proclamation_Tree_in_Fremantle.JPG",
+     "licence": "CC BY-SA 2.5 au",
+     "author": "Sam Wilson  (taken with Panasonic Lumix DMC-FT1)",
+     "lat": -32.05015,
+     "lng": 115.74996,
+     "cats": "Category:CC-BY-SA-2.5-AU Category:Files with coordinates missing SDC location of creation Category:Fremantle Boys' School Category:Photos by Sam Wilson Category:Proclamation Tree Category:Taken with Panasonic Lumix DMC-FT1 Category:Uploaded with Commonist"
+    },
+    {
+     "title": "File:2013-08-11 0948 Fremantle Proclamation Tree.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/2013-08-11_0948_Fremantle_Proclamation_Tree.JPG/960px-2013-08-11_0948_Fremantle_Proclamation_Tree.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:2013-08-11_0948_Fremantle_Proclamation_Tree.JPG",
+     "licence": "CC BY-SA 2.5 au",
+     "author": "Sam Wilson  (taken with Panasonic Lumix DMC-FT1)",
+     "lat": -32.05014897,
+     "lng": 115.7499552,
+     "cats": "Category:CC-BY-SA-2.5-AU Category:Files with coordinates missing SDC location of creation Category:Freopedia round 1 Category:Photos by Sam Wilson Category:Proclamation Tree Category:Taken with Panasonic Lumix DMC-FT1 Category:Uploaded with Commonist"
+    },
+    {
+     "title": "File:Proclamation Tree and Marmion Memorial, July 2026 01.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Proclamation_Tree_and_Marmion_Memorial%2C_July_2026_01.jpg/960px-Proclamation_Tree_and_Marmion_Memorial%2C_July_2026_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Proclamation_Tree_and_Marmion_Memorial,_July_2026_01.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Calistemon",
+     "lat": -32.050222,
+     "lng": 115.749947,
+     "cats": "Category:Australia photographs taken on 2026-07-27 Category:CC-BY-SA-4.0 Category:Creative Commons Attribution-Share Alike 4.0 missing SDC copyright license Category:Creative Commons Attribution-Share Alike missing SDC copyright status Category:Files with coordinates missing SDC location of creation Category:July 2026 in Fremantle Category:Proclamation Tree Category:Self-published work Category:Self-published work missing SDC copyright license"
+    },
+    {
+     "title": "File:Proclamation Tree and Marmion Memorial, July 2026 02.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Proclamation_Tree_and_Marmion_Memorial%2C_July_2026_02.jpg/960px-Proclamation_Tree_and_Marmion_Memorial%2C_July_2026_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Proclamation_Tree_and_Marmion_Memorial,_July_2026_02.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Calistemon",
+     "lat": -32.050273,
+     "lng": 115.749982,
+     "cats": "Category:Australia photographs taken on 2026-07-27 Category:CC-BY-SA-4.0 Category:Creative Commons Attribution-Share Alike 4.0 missing SDC copyright license Category:Creative Commons Attribution-Share Alike missing SDC copyright status Category:Files with coordinates missing SDC location of creation Category:July 2026 in Fremantle Category:Proclamation Tree Category:Self-published work Category:Self-published work missing SDC copyright license"
+    },
+    {
+     "title": "File:Proclamation tree.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Proclamation_tree.jpg/960px-Proclamation_tree.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Proclamation_tree.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Sam Wilson  (taken with Samsung Galaxy S21 FE 5G)",
+     "lat": -32.050288,
+     "lng": 115.749753,
+     "cats": "Category:Australia photographs taken on 2025-02-22 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Photos by Sam Wilson Category:Proclamation Tree Category:Self-published work Category:Taken with Samsung Galaxy S21 FE 5G"
+    }
+   ]
+  },
+  "per_005": {
+   "city": "Perth",
+   "name": "The Old Jarrah Tree",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Old jarrah tree gnangarra.JPG (Wikidata Q437976)",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Old_jarrah_tree_gnangarra.JPG/960px-Old_jarrah_tree_gnangarra.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Old_jarrah_tree_gnangarra.JPG",
+     "licence": "CC BY 2.5 au",
+     "author": "Gnangarra",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Armadale, Western Australia Category:CC-BY-2.5-AU Category:Eucalyptus marginata Category:Photographs by Gnangarra Category:Photos by Gnangarra in use Category:State Register of Heritage Places (Armadale LGA) Category:Taken with Pentax K100D",
+     "source": "wikidata/Q437976"
+    },
+    {
+     "title": "iNat obs 47083440 (Eucalyptus marginata)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/74674110/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/47083440",
+     "licence": "CC BY",
+     "author": "(c) Em Lamond, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-32.1541013526,116.0161882639"
+    },
+    {
+     "title": "iNat obs 47083440 (Eucalyptus marginata)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/74674129/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/47083440",
+     "licence": "CC BY",
+     "author": "(c) Em Lamond, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-32.1541013526,116.0161882639"
+    }
+   ]
+  },
+  "per_006": {
+   "city": "Perth",
+   "name": "The Fraser Avenue Red Flowering Gum",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "sea_001": {
+   "city": "Seattle",
+   "name": "Seward Park's Big Tree",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "sea_002": {
+   "city": "Seattle",
+   "name": "The Volunteer Park Giant Sequoia",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "iNat obs 213286446 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/376929011/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/213286446",
+     "licence": "CC BY",
+     "author": "(c) Arden Hoover, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "47.6304783333,-122.3133383333"
+    },
+    {
+     "title": "iNat obs 213286446 (Sequoiadendron giganteum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/376929036/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/213286446",
+     "licence": "CC BY",
+     "author": "(c) Arden Hoover, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "47.6304783333,-122.3133383333"
+    }
+   ]
+  },
+  "sea_003": {
+   "city": "Seattle",
+   "name": "The Grand Fir of Kubota Garden",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:BigTree (3556300859).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/BigTree_%283556300859%29.jpg/960px-BigTree_%283556300859%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:BigTree_(3556300859).jpg",
+     "licence": "CC BY 2.0",
+     "author": "Leslie Seaton from Seattle, WA, USA",
+     "lat": 47.512424,
+     "lng": -122.264701,
+     "cats": "Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Kubota Garden"
+    },
+    {
+     "title": "iNat obs 259311794 (Picea abies)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/465465070/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/259311794",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "47.513625,-122.2676805556"
+    },
+    {
+     "title": "iNat obs 259311794 (Picea abies)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/465465074/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/259311794",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "47.513625,-122.2676805556"
+    },
+    {
+     "title": "iNat obs 36951661 (Pseudotsuga menziesii)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/58495639/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/36951661",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "47.5128560979,-122.2661738937"
+    }
+   ]
+  },
+  "sea_004": {
+   "city": "Seattle",
+   "name": "The Bigcone Douglas Fir of Washington Park Arboretum",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Douglas Fir Spear (5905272613).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Douglas_Fir_Spear_%285905272613%29.jpg/960px-Douglas_Fir_Spear_%285905272613%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Douglas_Fir_Spear_(5905272613).jpg",
+     "licence": "CC BY 2.0",
+     "author": "Leslie Seaton from Seattle, WA, USA",
+     "lat": 47.635089,
+     "lng": -122.294826,
+     "cats": "Category:CC-BY-2.0 Category:Ethnobotany Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Taken with Canon EOS 450D"
+    },
+    {
+     "title": "File:Hemlock, Redcedar, Douglas Fir (5905272513).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hemlock%2C_Redcedar%2C_Douglas_Fir_%285905272513%29.jpg/960px-Hemlock%2C_Redcedar%2C_Douglas_Fir_%285905272513%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Hemlock,_Redcedar,_Douglas_Fir_(5905272513).jpg",
+     "licence": "CC BY 2.0",
+     "author": "Leslie Seaton from Seattle, WA, USA",
+     "lat": 47.635089,
+     "lng": -122.294826,
+     "cats": "Category:CC-BY-2.0 Category:Ethnobotany Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR"
+    },
+    {
+     "title": "File:Henry Kohankie Tree (5177382935).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Henry_Kohankie_Tree_%285177382935%29.jpg/960px-Henry_Kohankie_Tree_%285177382935%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Henry_Kohankie_Tree_(5177382935).jpg",
+     "licence": "CC BY 2.0",
+     "author": "Leslie Seaton from Seattle, WA, USA",
+     "lat": 47.633065,
+     "lng": -122.294483,
+     "cats": "Category:CC-BY-2.0 Category:Ethnobotany Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Taken with Canon EOS 450D"
+    },
+    {
+     "title": "File:Magnolia (5177988740).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Magnolia_%285177988740%29.jpg/960px-Magnolia_%285177988740%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_(5177988740).jpg",
+     "licence": "CC BY 2.0",
+     "author": "Leslie Seaton from Seattle, WA, USA",
+     "lat": 47.633065,
+     "lng": -122.294483,
+     "cats": "Category:CC-BY-2.0 Category:Ethnobotany Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Taken with Canon EOS 450D"
+    },
+    {
+     "title": "File:Spindle Tree (5177988100).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Spindle_Tree_%285177988100%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Spindle_Tree_(5177988100).jpg",
+     "licence": "CC BY 2.0",
+     "author": "Leslie Seaton from Seattle, WA, USA",
+     "lat": 47.633065,
+     "lng": -122.294483,
+     "cats": "Category:CC-BY-2.0 Category:Ethnobotany Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Taken with Canon EOS 450D"
+    },
+    {
+     "title": "File:Spindle Tree Seed (5177385013).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Spindle_Tree_Seed_%285177385013%29.jpg/960px-Spindle_Tree_Seed_%285177385013%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Spindle_Tree_Seed_(5177385013).jpg",
+     "licence": "CC BY 2.0",
+     "author": "Leslie Seaton from Seattle, WA, USA",
+     "lat": 47.633065,
+     "lng": -122.294483,
+     "cats": "Category:CC-BY-2.0 Category:Ethnobotany Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Taken with Canon EOS 450D"
+    },
+    {
+     "title": "File:Vista de Seattle, Washington, Estados Unidos, 2017-09-02, DD 07-08 HDR.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Vista_de_Seattle%2C_Washington%2C_Estados_Unidos%2C_2017-09-02%2C_DD_07-08_HDR.jpg/960px-Vista_de_Seattle%2C_Washington%2C_Estados_Unidos%2C_2017-09-02%2C_DD_07-08_HDR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Vista_de_Seattle,_Washington,_Estados_Unidos,_2017-09-02,_DD_07-08_HDR.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Diego Delso",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Buildings during blue hour in the United States Category:CC-BY-SA-4.0 Category:Dusk in Washington (state) Category:Exposure time 6 sec Category:Featured pictures by User:Poco a poco Category:Featured pictures of Seattle Category:Featured pictures of buildings by User:Poco a poco Category:Featured pictures of skylines Category:Featured pictures of the United States by User:Poco a poco Category:Featured pictures on Commons by User:Poco a poco Category:Featured pictures on Wikimedia Commons Category:Featured pictures on Wikipedia, Bengali Category:Images by User:Poco a poco Category:Images by User:Poco a poco taken in 2017 Category:Images of the United States by User:Poco a poco Category:Long exposure photographs of Washington (state) Category:Pictures of the day (2020) Category:Quality images Category:Quality images by User:Poco a poco Category:Quality images of Seattle Category:Quality images of buildings in Washington (state) Category:Quality images of the United States by User:Poco a poco Category:Quality images with long exposure Category:Seattle night skylines Category:Seattle skylines from within Downtown Category:September 2017 in Seattle Category:Taken with Canon EOS 5DS R Category:Tone-mapped HDR images of cityscapes Category:United States photographs taken on 2017-09-02 Category:Views from Columbia Center"
+    },
+    {
+     "title": "iNat obs 295597595 (Pseudotsuga menziesii)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/532163225/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/295597595",
+     "licence": "CC BY-SA",
+     "author": "(c) Linzy L., some rights reserved (CC BY-SA)",
+     "source": "inaturalist",
+     "obs_location": "47.6334716667,-122.2939216667"
+    },
+    {
+     "title": "iNat obs 295597595 (Pseudotsuga menziesii)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/532163140/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/295597595",
+     "licence": "CC BY-SA",
+     "author": "(c) Linzy L., some rights reserved (CC BY-SA)",
+     "source": "inaturalist",
+     "obs_location": "47.6334716667,-122.2939216667"
+    }
+   ]
+  },
+  "sea_005": {
+   "city": "Seattle",
+   "name": "The AYPE Lombardy Poplar",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "syd_001": {
+   "city": "Sydney",
+   "name": "The Bidwill Kauri Pine",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Fallen Dragon's Blood Tree - 2013.04 - panoramio.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Fallen_Dragon%27s_Blood_Tree_-_2013.04_-_panoramio.jpg/960px-Fallen_Dragon%27s_Blood_Tree_-_2013.04_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Fallen_Dragon%27s_Blood_Tree_-_2013.04_-_panoramio.jpg",
+     "licence": "CC BY 3.0",
+     "author": "rheins",
+     "lat": -33.862042,
+     "lng": 151.216572,
+     "cats": "Category:Australia photographs taken on 2013-04-30 Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation (34° S, 151° E) Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 5226993 Category:Royal Botanic Gardens, Sydney"
+    },
+    {
+     "title": "File:Sulphur Crested Cockatoo in Tree - Flickr - GregTheBusker.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Sulphur_Crested_Cockatoo_in_Tree_-_Flickr_-_GregTheBusker.jpg/960px-Sulphur_Crested_Cockatoo_in_Tree_-_Flickr_-_GregTheBusker.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Sulphur_Crested_Cockatoo_in_Tree_-_Flickr_-_GregTheBusker.jpg",
+     "licence": "CC BY 2.0",
+     "author": "Greg Schechter from San Francisco, USA",
+     "lat": -33.861845,
+     "lng": 151.216297,
+     "cats": "Category:Australia photographs taken on 2009-03-02 Category:CC-BY-2.0 Category:Cacatua galerita Category:Files uploaded by Josve05a (Greg Schechter) Category:Files with coordinates missing SDC location of creation (34° S, 151° E) Category:Flickr images reviewed by FlickreviewR Category:Photographs by Greg Schechter"
+    },
+    {
+     "title": "iNat obs 259217559 (Agathis robusta)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/465271459/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/259217559",
+     "licence": "CC BY",
+     "author": "(c) Bruce Homer-Smith, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-33.8624742441,151.2152508461"
+    },
+    {
+     "title": "iNat obs 259217559 (Agathis robusta)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/465271490/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/259217559",
+     "licence": "CC BY",
+     "author": "(c) Bruce Homer-Smith, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-33.8624742441,151.2152508461"
+    }
+   ]
+  },
+  "syd_002": {
+   "city": "Sydney",
+   "name": "The Quad Jacaranda",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Lilac Flowers of Doom!.jpg (Wikidata Q28036700)",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Lilac_Flowers_of_Doom%21.jpg/960px-Lilac_Flowers_of_Doom%21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lilac_Flowers_of_Doom!.jpg",
+     "licence": "CC BY 2.0",
+     "author": "Jason Tong",
+     "lat": -33.886092,
+     "lng": 151.188805,
+     "cats": "Category:Australia photographs taken on 2014-11-04 Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation (34° S, 151° E) Category:Flickr images verified by UploadWizard Category:Jacaranda, University of Sydney Category:November 2014 in New South Wales",
+     "source": "wikidata/Q28036700"
+    },
+    {
+     "title": "File:Jacaranda in the quadrangle of University of Sydney, blooming in November 2019.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Jacaranda_in_the_quadrangle_of_University_of_Sydney%2C_blooming_in_November_2019.jpg/960px-Jacaranda_in_the_quadrangle_of_University_of_Sydney%2C_blooming_in_November_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Jacaranda_in_the_quadrangle_of_University_of_Sydney,_blooming_in_November_2019.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Whiteghost.ink",
+     "lat": -33.886058,
+     "lng": 151.188811,
+     "cats": "Category:Australia photographs taken on 2019-11-03 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (34° S, 151° E) Category:Jacaranda, University of Sydney Category:November 2019 in Sydney Category:Self-published work Category:Taken with iPhone 7 (main camera)"
+    },
+    {
+     "title": "File:SydneyUniversity MainQuadrangle Jacaranda crop.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/SydneyUniversity_MainQuadrangle_Jacaranda_crop.jpg/960px-SydneyUniversity_MainQuadrangle_Jacaranda_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:SydneyUniversity_MainQuadrangle_Jacaranda_crop.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Toby Hudson",
+     "lat": -33.885928,
+     "lng": 151.188781,
+     "cats": "Category:Australia photographs taken on 2009-11-03 Category:CC-BY-SA-3.0 Category:Extracted images Category:Files with coordinates missing SDC location of creation (34° S, 151° E) Category:GFDL Category:Jacaranda, University of Sydney Category:Jacaranda mimosifolia in Australia Category:License migration redundant Category:November 2009 in New South Wales Category:Photographs by User:99of9 Category:Self-published work Category:Sydney sandstone"
+    },
+    {
+     "title": "File:USYD Jacaranda SEP2019.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/USYD_Jacaranda_SEP2019.jpg/960px-USYD_Jacaranda_SEP2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:USYD_Jacaranda_SEP2019.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Vakrieger",
+     "lat": -33.886171,
+     "lng": 151.189078,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (34° S, 151° E) Category:Jacaranda, University of Sydney Category:Self-published work Category:September 2019 in New South Wales Category:Taken with Google Pixel 4 XL"
+    }
+   ]
+  },
+  "syd_003": {
+   "city": "Sydney",
+   "name": "The Port Jackson Fig of Vaucluse House",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "syd_004": {
+   "city": "Sydney",
+   "name": "The Vailele Moreton Bay Fig",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": []
+  },
+  "syd_005": {
+   "city": "Sydney",
+   "name": "The Camperdown Cemetery Fig",
+   "checked": "2026-08-20",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:View of the Camperdown and Newtown local area.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/View_of_the_Camperdown_and_Newtown_local_area.jpg/960px-View_of_the_Camperdown_and_Newtown_local_area.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:View_of_the_Camperdown_and_Newtown_local_area.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Notmeus",
+     "lat": -33.889376,
+     "lng": 151.179641,
+     "cats": "Category:Australia photographs taken on 2020-05-06 Category:CC-BY-SA-4.0 Category:Camperdown, New South Wales Category:Files with coordinates missing SDC location of creation (34° S, 151° E) Category:May 2020 in Sydney Category:Newtown, New South Wales Category:Self-published work Category:Taken with Oppo R17 Pro"
+    }
+   ]
+  },
+  "syd_006": {
+   "city": "Sydney",
+   "name": "The Wishing Tree",
    "checked": "2026-08-20",
    "sweep": 5,
    "candidates": []
