@@ -8,6 +8,10 @@
     "2026-08-19": {
       "note": "city_queue.py --next already fixed before this run: STAGE 1 header now marks the named 17 with '*' and clarifies from-zero research stays OFF for the rest (lines 424-438). No further action needed.",
       "at": "2026-08-20T04:25:06+00:00"
+    },
+    "2026-08-18": {
+      "note": "Both already fixed before this run: nap_018-020 all carry a 'notes' field with pin provenance (register sheet + distance); cas_013/cas_014 pins are back on their cited MASAF coordinates (41.075528,14.332417 and 41.07535,14.332183, matching the WARN's own figures exactly) with notes explaining the earlier unexplained move and the correction. No further action needed.",
+      "at": "2026-08-20T04:42:32+00:00"
     }
   }
 }
