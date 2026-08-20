@@ -131,7 +131,7 @@
    "covers": [
     "Cologne"
    ],
-   "note": "No ND feature type in the open Schutzgebiete WFS (2026-08-13). Wikidata is the route for Cologne, not the state."
+   "note": "No ND feature type in the open Schutzgebiete WFS (2026-08-13). CHECKED AND CORRECTED 2026-08-20: this line used to end 'Wikidata is the route for Cologne, not the state', and that is not true. Measured against data/research/wikidata-remarkable-trees.json (4,704 German trees, all with coordinates): ZERO within 10 km of Cologne, one within 25 km (the Boxhohn-Eiche at Troisdorf, 17.3 km), ten within 40 km. Cologne itself has nothing on Wikidata. So Wikidata is a route for the Rhineland at day-trip range and not a route for the city, and a run that opens Cologne from this note will spend its window discovering that. Cologne needs a municipal source (the city's own Naturdenkmal list or Baumkataster) or the from-zero research Hidde switched on for it on 2026-08-19."
   },
   {
    "place": "Japan",
