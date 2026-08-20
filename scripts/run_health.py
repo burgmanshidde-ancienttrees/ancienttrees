@@ -92,6 +92,33 @@ DENIAL_KEYS = ("permission_denials_count", "permission_denials",
                "tool_permission_denials", "blocked_tool_uses")
 
 
+def _denial_label(d):
+    """What was refused, in the smallest form that is still useful.
+
+    The first version recorded the TOOL name only, on the reasoning that a
+    denied command can carry a URL or a path from a reader submission and this
+    file is public. The reasoning is right and the result was useless: every
+    night reported "Bash" and nothing else, so 123 refusals across six runs told
+    us the wall was made of shell and never which wall.
+
+    So take the first word of the command, the binary, and nothing after it.
+    `rm`, `xargs`, `chmod`, `swiftc`, `bash` carry no URL, no path and no
+    reader data, and the binary is the entire question: the allowlist is a list
+    of binaries. Anything that does not look like a bare command name is
+    dropped rather than truncated, because a guess at where an argument starts
+    is how a path leaks.
+    """
+    tool = str(d.get("tool_name") or d.get("tool") or d.get("name") or "?")[:24]
+    inp = d.get("tool_input") or d.get("input") or {}
+    cmd = inp.get("command") if isinstance(inp, dict) else None
+    if tool == "Bash" and isinstance(cmd, str):
+        first = cmd.strip().split()[0] if cmd.strip() else ""
+        # A bare binary name only: letters, digits, dash, underscore, dot.
+        if first and re.fullmatch(r"[A-Za-z0-9._-]{1,20}", first):
+            return "Bash(%s)" % first
+    return tool
+
+
 def denials_from(result):
     """How many commands the allowlist refused, and never a silent zero.
 
@@ -119,10 +146,9 @@ def denials_from(result):
             # minutes. Names only, truncated, never arguments: a denied command
             # can carry a URL or a path from a reader submission, and this file
             # is public.
-            return len(v), "%s: %s" % (key, ", ".join(sorted({
-                str((d or {}).get("tool_name") or (d or {}).get("tool")
-                    or (d or {}).get("name") or "?")[:24]
-                for d in v if isinstance(d, dict)})) or "no names in the record")
+            return len(v), "%s: %s" % (key, ", ".join(sorted(
+                {_denial_label(d) for d in v if isinstance(d, dict)}))
+                or "no names in the record")
     # Nested one level, which is where SDKs usually move a counter to.
     for holder in ("permissions", "stats", "metrics", "usage"):
         sub = result.get(holder)
