@@ -392,6 +392,85 @@ jobs:
       # present this step re-dispatches the workflow at the end of every run, so
       # the chain keeps itself alive independently of GitHub's flaky cron.
       #
+      # Was the window handed back early with nothing to show for it?
+      #
+      # Measured across the 20 runs from 2026-08-15: every run that shipped no
+      # trees ended with is_error false after 47 to 122 turns, having committed
+      # a claim and stopped. Nothing killed them. The window is two hours and
+      # they were giving back an hour and three quarters of it.
+      #
+      # The prompt has said "do not stop after one item" since 2026-08-13, and
+      # this file already carries a note from 2026-08-15 about four runs in a
+      # row doing exactly this. Said twice, ignored twice: the project's ratchet
+      # says that stops being a sentence and becomes a mechanism.
+      - name: Is the window worth another go
+        id: probe
+        if: always()
+        continue-on-error: true
+        env:
+          RUN_START_SHA: ${{ steps.start.outputs.sha }}
+          CLAUDE_EXECUTION_FILE: ${{ steps.claude.outputs.execution_file }}
+        run: |
+          set +e
+          if [ -z "$CLAUDE_EXECUTION_FILE" ] || [ ! -f "$CLAUDE_EXECUTION_FILE" ]; then
+            CLAUDE_EXECUTION_FILE="${RUNNER_TEMP:-/home/runner/work/_temp}/claude-execution-output.json"
+          fi
+          # The first attempt's record is about to be overwritten by the second,
+          # since both default to the same path. Keep it so the meter can add up.
+          cp "$CLAUDE_EXECUTION_FILE" "${RUNNER_TEMP:-/home/runner/work/_temp}/attempt-1.json" 2>/dev/null
+          python3 scripts/run_health.py --probe \
+            --execution-file "$CLAUDE_EXECUTION_FILE" \
+            --since-sha "$RUN_START_SHA"
+
+      # ONE continuation, never a loop: this step exists once, so the worst case
+      # is two attempts inside a window that was already paid for. A run that
+      # died on the usage limit does not get here (the probe reads its turn
+      # count), because a second attempt would die in seconds for the same
+      # reason. Turning this off is deleting the step, not a secret.
+      - name: Finish the window
+        id: claude2
+        if: steps.probe.outputs.continue == 'yes'
+        continue-on-error: true
+        uses: anthropics/claude-code-action@v1
+        env:
+          CLOUDFLARE_ANALYTICS_TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          CF_ACCOUNT_TAG: "949aa102070e5f296c9cc0d5bc1e1891"
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: |
+            An attempt in this same window stopped early and shipped nothing:
+            ${{ steps.probe.outputs.reason }}
+
+            You are that window's second and last attempt. Most of it is still
+            unspent, and nothing is wrong: the usage limit did not stop the
+            first attempt and no error was reported. It decided it was done.
+
+            Start here, in this order:
+
+            1. `git pull --rebase --autostash -q`, because the first attempt may
+               have pushed a claim you are about to trip over.
+            2. `python3 scripts/passcheck.py --claims`. Anything the first
+               attempt claimed and did not finish is yours: either FINISH it now,
+               or `--release` it before doing anything else. A claim nobody
+               finishes locks that city away from every other run until it
+               expires, and that is the single strongest predictor in the data
+               of a night that produced nothing.
+            3. Then read CLAUDE.md and execute "The research workflow
+               (autonomous run)" from Step 0, exactly as written.
+
+            The one thing not to repeat: do not spend this attempt on
+            orientation and claiming. Reading state, staging candidates and
+            recording a claim are the cheap half; they are not the work, and a
+            window that contains only those has produced nothing. Prefer what is
+            already staged or already verified, because that work is paid for
+            and only needs finishing.
+
+            Keep going until the usage limit stops you or the clock runs out.
+            Commit the smallest complete step the moment it exists, push it, and
+            write your LOG.md entry even if you ship nothing, so the next run
+            knows what you found.
+
       # Inert without the secret: no SELF_DISPATCH_TOKEN means this exits quietly
       # and the */20 cron remains the only trigger, so adding the step breaks
       # nothing. To turn continuous mode off later, delete the secret.
@@ -448,7 +527,13 @@ jobs:
           git remote set-url origin \
             "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git commit -q -m "Search names for the cities opened this run"
-          git pull --rebase -q
+          # --autostash: the agent leaves unstaged files behind, and a plain
+          # rebase refuses to run with those present. Seen on three runs on
+          # 2026-08-19/20. It only survived because the remote had not moved;
+          # the moment it has, the push is rejected and the record and the
+          # claim release are lost silently, which is the one failure the
+          # claim system exists to prevent.
+          git pull --rebase --autostash -q
           git push -q || echo "names recorded locally, push refused"
 
       # in data/run-health.json (minutes, turns, commands the allowlist refused,
@@ -470,10 +555,22 @@ jobs:
           if [ -z "$CLAUDE_EXECUTION_FILE" ] || [ ! -f "$CLAUDE_EXECUTION_FILE" ]; then
             CLAUDE_EXECUTION_FILE="${RUNNER_TEMP:-/home/runner/work/_temp}/claude-execution-output.json"
           fi
-          python3 scripts/run_health.py \
-            --execution-file "$CLAUDE_EXECUTION_FILE" \
-            --since-sha "$RUN_START_SHA" \
-            --started "$RUN_STARTED_AT"
+          # Two attempts are one window. The probe kept attempt 1 aside before
+          # the continuation overwrote the shared path; passing both makes the
+          # meter report the window rather than only its last half.
+          ATTEMPT_1="${RUNNER_TEMP:-/home/runner/work/_temp}/attempt-1.json"
+          if [ -f "$ATTEMPT_1" ] && [ "${{ steps.probe.outputs.continue }}" = "yes" ]; then
+            python3 scripts/run_health.py \
+              --execution-file "$ATTEMPT_1" \
+              --execution-file-2 "$CLAUDE_EXECUTION_FILE" \
+              --since-sha "$RUN_START_SHA" \
+              --started "$RUN_STARTED_AT"
+          else
+            python3 scripts/run_health.py \
+              --execution-file "$CLAUDE_EXECUTION_FILE" \
+              --since-sha "$RUN_START_SHA" \
+              --started "$RUN_STARTED_AT"
+          fi
           # in-flight.json too: run_health.py releases the claims this run
           # still held, and a release nobody pushes is not a release. That is
           # the same failure the claim system was built around, since a claim
@@ -487,7 +584,13 @@ jobs:
           git remote set-url origin \
             "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git commit -q -m "Run health: what the $(date -u +%H:%M) run did with its window"
-          git pull --rebase -q
+          # --autostash: the agent leaves unstaged files behind, and a plain
+          # rebase refuses to run with those present. Seen on three runs on
+          # 2026-08-19/20. It only survived because the remote had not moved;
+          # the moment it has, the push is rejected and the record and the
+          # claim release are lost silently, which is the one failure the
+          # claim system exists to prevent.
+          git pull --rebase --autostash -q
           git push -q || echo "run health recorded locally, push refused"
 
       - name: Chain status
