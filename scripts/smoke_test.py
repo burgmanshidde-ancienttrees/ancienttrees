@@ -210,14 +210,18 @@ f.addEventListener('load', function() {
         var best = null, who = null;
         (function walk(n) {
           if (n.namespaceURI !== HTML || !vis(n) || inScroller(n, stop) || centred(n)) return;
-          var stop = LEAF[n.tagName.toUpperCase()] || rowish(n) || ownText(n) || !n.children.length;
-          if (!stop && !paints(n)) {
-            for (var i = 0; i < n.children.length; i++) walk(n.children[i]);
-            return;
-          }
           // An inline run's left edge is set by the words in front of it, not by
           // a gutter, so <strong> halfway down a paragraph is not a measurement.
           if (!blockish(n)) return;
+          var stop = LEAF[n.tagName.toUpperCase()] || paints(n) || ownText(n) || !n.children.length;
+          if (!stop) {
+            // Rows are descended into as well. Only the MINIMUM is kept, so a
+            // row hands back its leftmost item's ink, which is where the reader
+            // sees it start. Stopping at the row's own padding box instead read
+            // a multi-column grid as 7px left of its own cards.
+            for (var i = 0; i < n.children.length; i++) walk(n.children[i]);
+            return;
+          }
           var L = paints(n) ? n.getBoundingClientRect().left : contentLeft(n);
           if (best === null || L < best - 0.01) { best = L; who = sel(n); }
         })(el);
