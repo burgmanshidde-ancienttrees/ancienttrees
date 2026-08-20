@@ -32,7 +32,7 @@ final class AncientTreesUITests: XCTestCase {
     /// Hiding the map's navigation bar must not hide the pushed page's.
     @MainActor
     func testTreePageFromTheMapHasAWayBack() throws {
-        let app = launch(["-tab=0"])
+        let app = launch(["-tab=1"])
 
         // The sheet's first card, whatever tree it happens to be today.
         let firstCard = app.buttons.matching(identifier: "tree-card").firstMatch
@@ -57,7 +57,7 @@ final class AncientTreesUITests: XCTestCase {
     /// which the thing it covers was never once exercised.
     @MainActor
     func testTickingATreeKeepsIt() throws {
-        let app = launch(["-tab=0"])
+        let app = launch(["-tab=1"])
 
         let firstCard = app.buttons.matching(identifier: "tree-card").firstMatch
         XCTAssertTrue(firstCard.waitForExistence(timeout: 12))
@@ -78,7 +78,7 @@ final class AncientTreesUITests: XCTestCase {
     /// so it is the thing that has to be asserted rather than assumed.
     @MainActor
     func testTappingTheActiveTabGoesBackToTheTop() throws {
-        let app = launch(["-tab=0"])
+        let app = launch(["-tab=1"])
 
         let firstCard = app.buttons.matching(identifier: "tree-card").firstMatch
         XCTAssertTrue(firstCard.waitForExistence(timeout: 10))
@@ -96,7 +96,7 @@ final class AncientTreesUITests: XCTestCase {
     /// a finger has dragged something.
     @MainActor
     func testPanningTheMapMovesTheList() throws {
-        let app = launch(["-tab=0"])
+        let app = launch(["-tab=1"])
         XCTAssertTrue(app.staticTexts["Near you"].waitForExistence(timeout: 10),
                       "the map did not open on the user")
 
@@ -121,7 +121,7 @@ final class AncientTreesUITests: XCTestCase {
     /// means the sheet is open, low means it is back at its peek.
     @MainActor
     func testTheSheetAndTheListTakeTurns() throws {
-        let app = launch(["-tab=0"])
+        let app = launch(["-tab=1"])
         let field = app.textFields.firstMatch
         XCTAssertTrue(field.waitForExistence(timeout: 12), "no search field in the sheet")
 
@@ -151,13 +151,13 @@ final class AncientTreesUITests: XCTestCase {
                              "dragging down from the top of the list did not lower the sheet")
     }
 
-    /// Explore is built out of the website's own collections, which reach the
+    /// Home is built out of the website's own collections, which reach the
     /// app through /api/browse.json. If that feed ever stops carrying them the
     /// screen quietly loses most of itself, and a screenshot of the top of it
     /// would not show that at all.
     @MainActor
-    func testExploreCarriesTheCollections() throws {
-        let app = launch(["-tab=1"])
+    func testHomeCarriesTheCollections() throws {
+        let app = launch(["-tab=0"])
         XCTAssertTrue(app.staticTexts["Our favourite tree cities"].waitForExistence(timeout: 12),
                       "the places shelf is missing")
 
