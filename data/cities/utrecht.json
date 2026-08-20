@@ -3,9 +3,9 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Utrecht's oldest trees live behind walls more often than in open parks, protected first by a university's own working garden and later by simple survival. The city's genuine standout is a walled botanical garden barely bigger than a single city block, home to a ginkgo that predates the Netherlands' current constitution and a Chinese tree so rare it took a missionary decades to bring seeds to Europe at all. Add a farmhouse linden absorbed whole by a science campus, and a park cluster of century-old planes planted when the city's old defences became parkland.",
-  "meta_description": "Utrecht's oldest trees hide behind garden walls: a 260-year ginkgo, a rare handkerchief tree, a farmhouse linden. Sixteen verified locations, real stories.",
+  "meta_description": "Utrecht's oldest trees hide behind garden walls: a 260-year ginkgo, a rare handkerchief tree, a farmhouse linden. 18 verified locations, real stories.",
   "question_answer": "Utrecht's oldest tree is the Uithof Linden, a common lime planted around 1750 beside a 17th-century farmhouse that gave its name to what is now Utrecht Science Park. At roughly 275 years old, it predates the university campus built up around it by two centuries, one of the oldest Dutch lindens still standing anywhere.",
-  "question_meta": "A 275-year-old linden beside a 17th-century farmhouse, now swallowed by a university science campus, is Utrecht's oldest tree. The full sixteen.",
+  "question_meta": "A 275-year-old linden beside a 17th-century farmhouse, now swallowed by a university science campus, is Utrecht's oldest tree. The full eighteen.",
   "question_context": "Utrecht keeps its oldest trees in two very different settings, and the contrast says something about how a Dutch city actually preserves age. The Uithof Linden and the Oude Hortus's three specimens all survive because they sat inside a boundary somebody drew and then defended: a farmhouse's private dooryard in one case, a university garden's walls in the other, both places where nobody had reason to fell an inconvenient tree for centuries. The Nieuwegracht's canal lindens took the opposite route, out in the open on a public street since the 1600s, which is also why they are honestly the youngest of the five: street trees get replaced when they die or block a view, and at least one full replanting happened there sometime between the original 1660 planting scheme and the roughly 1830-dated lime trees standing today. Between the walled survivors and the replanted street trees sits the real explanation for why this city's canal-lined image and its handful of genuinely centuries-old specimens rarely overlap on the same tree.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Utrecht's remarkable trees free to visit?",
-      "a": "Three of the sixteen, all in the Oude Hortus, require a paid ticket to the Universiteitsmuseum. The other thirteen, including the Uithof Linden, the Nieuwegracht's canal lindens and the trees of Hieronymusplantsoen, Wilhelminapark, Zonnenburg, Servaasbolwerk and Lepelenburg, are free and visible from public streets or parks at any time."
+      "a": "Three of the eighteen, all in the Oude Hortus, require a paid ticket to the Universiteitsmuseum. The other fifteen, including the Uithof Linden, the Markiezeneik of Amelisweerd, the Nieuwegracht's canal lindens and the trees of Hieronymusplantsoen, Wilhelminapark, Zonnenburg, Servaasbolwerk and Lepelenburg, are free and visible from public streets or parks at any time."
     },
     {
       "q": "Why does Utrecht have so few very old street trees?",
@@ -541,6 +541,67 @@
       "curation_status": "flagged",
       "verify_notes": "Register places it beside the Herenstraat bridge (Herenbrug) in Lepelenburg park, owner_category gemeente, visitable ja. Planted band 1900-1910, register's own dating basis not detailed. Wikipedia's Lepelenburg article independently confirms the park's own history (16th-century bastion, converted to parkland around 1860) but does not name or date this specific tree, so this is flagged as a single-source age/species claim per Step 2, corroborated only for park-level context rather than tree-level fact. The Herenbrug itself is dated 1905 by a separate monumentenregister listing, which is consistent with (but does not prove) a tree planted in the same building phase. No girth recorded.",
       "story": "Lepelenburg was a defensive bastion on Utrecht's medieval city wall before it became a park around 1860, part of the same conversion that turned the whole ring of fortifications into the Singelplantsoen. This Oriental plane, the species that gives the London plane half its parentage, stands beside the Herenbrug bridge inside that park, dated by the Dutch national monumental tree register to the early 1900s, a later addition to the grounds rather than one of the original 1860s plantings.\n\nPlatanus orientalis is native to the eastern Mediterranean and southwest Asia, grown across Europe for centuries before its American-crossed hybrid became the more common street tree; a pure Oriental plane like this one is rarer to find in a Dutch park than its more widespread offspring. No girth has been recorded for it, and no source found names or dates this individual tree directly, so the record here rests on the register alone, corroborated only by Lepelenburg's own well documented general history rather than anything specific to this trunk.\n\nIt stands a few minutes' walk from Servaasbolwerk and Zonnenburg, within reach of the other bastion-park trees mapped on this site, on ground that has gone from a soldier's lookout to a footbridge crossing in under two centuries. Free, public parkland near the old city centre.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "utr_017",
+      "name": "The Markiezeneik of Amelisweerd",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 220 to 250 years",
+      "age_min": 220,
+      "age_max": 250,
+      "girth_cm": null,
+      "location": {
+        "address": "Markiezenbos, Landgoed Amelisweerd, Utrecht",
+        "latitude": 52.07117,
+        "longitude": 5.15138,
+        "neighbourhood": "Amelisweerd / Bunnik border"
+      },
+      "verified_sources": [
+        "https://nl.wikipedia.org/wiki/Markiezeneik",
+        "https://www.rtvutrecht.nl/nieuws/3485967/utrechtse-markiezeneik-die-moet-wijken-voor-verbreding-a27-is-boom-van-het-jaar-roept-veel-emoties-op",
+        "https://www.raadvanstate.nl/actueel/nieuws/maart/tracebesluit-amelisweerd-vernietigd/"
+      ],
+      "access": "Free, public forest estate (Landgoed Amelisweerd), open year-round from sunrise to sunset",
+      "transport": "Bus 41 from Utrecht Centraal towards Wijk bij Duurstede to the Oud Amelisweerd stop, roughly 15 minutes, then a short walk into the Markiezenbos",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "An oak became a protest symbol and then won. The Markiezeneik stands in the Markiezenbos, part of the Amelisweerd estate on Utrecht's edge, and for years it was the named face of a campaign against a plan to widen the A27 motorway straight through the wood, a project that would have taken roughly 800 trees along with it. In 2022 the oak won Boom van het Jaar, the Netherlands' national Tree of the Year contest, with nearly 37,000 votes, then placed ninth in the European contest the year after, an unusually direct way for a country to vote on a road scheme.\n\nIn March 2026 the country's highest administrative court, the Raad van State, annulled the underlying decision over unresolved nitrogen rules, killing the widening for now. The oak is still standing to hear about it: planted in the late 18th century by the marquis who then owned the estate, it carries the bark scars of an old lightning strike, healed over now with new growth around the wound.\n\nFree, public forest, open sunrise to sunset. Bus 41 from Utrecht Centraal reaches Oud Amelisweerd in about fifteen minutes, then a short walk into the wood.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "utr_018",
+      "name": "The Thickest Plane of the Zocherpark",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 190 years",
+      "age_min": 186,
+      "age_max": 196,
+      "girth_cm": 629,
+      "location": {
+        "address": "Noordkant Zonnenburg, plantsoen aan de Servaasbolwerk, noordzijde Sterrenwacht, Utrecht",
+        "latitude": 52.08586,
+        "longitude": 5.129031,
+        "neighbourhood": "Binnenstad / Zonnenburg-Servaasbolwerk bastion"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1678123, data/registers/netherlands-lrmb.json",
+        "https://kanokaartutrecht.nl/monumentalebomen.html (independent canal-side monumental-trees guide, tree no. 9 on its route, cites the same register nr 1678123 and adds a girth measurement and height not present in our imported register fields)"
+      ],
+      "access": "Free, public park (gemeente-owned), open during park hours",
+      "transport": "Utrecht Centraal, roughly 15 minute walk",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Zocherpark is not one park but a chain of them: Zonnenburg, Servaasbolwerk, Lepelenburg, Hieronymusplantsoen and Wilhelminapark, roughly three kilometres of bastion parkland laid out where Utrecht's old city walls used to run. Somewhere along that chain grows the thickest London plane of the lot, on the plantsoen just north of the old Sterrenwacht observatory, and a local canal-touring guide has done the measuring nobody else bothered to write down: 629 centimetres round and about 27 metres tall.\n\nThe city's own monumental tree register dates the planting to the 1830s, and the independent route guide narrows that to 1835, putting the tree at around 190 years old, roughly contemporary with the observatory it now shades. It stands close enough to three other registered trees in the same bastion cluster that a visit here becomes a short walk rather than a single stop, though this one carries its own separate register number and is not to be confused with a second plane about 80 metres to the southwest.\n\nFree, public park, open during normal park hours, about 15 minutes' walk from Utrecht Centraal.",
       "photo": {
         "url": null,
         "license": null,
