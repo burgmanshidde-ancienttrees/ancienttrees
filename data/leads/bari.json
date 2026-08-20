@@ -30,5 +30,14 @@
    ],
    "why_blocked": "Stands in the internal courtyard ('giardino interno') of the Armando Diaz primary school (CD Bari, Carbonara), a working elementary school with children on site during the day. CLAUDE.md's school exception under hard rule 10 requires real evidence of standing public access (a public path through the grounds, a park the school merely borders, a documented weekend opening); searches found only sporadic civic/ecological events at the school ('Tutti uniti per la scuola Diaz', Jan 2025; wall-cleaning volunteer days) rather than any routine open-to-the-public access to the courtyard itself. Barinedita's 2018 piece itself describes access as limited to the school grounds. Does not verify for hard rule 10; a documented standing public-access arrangement (open weekends, a public path) would flip this."
   }
+ ],
+ "notes": [
+  {
+   "date": "2026-08-20",
+   "finding": "Bari's IN-CITY register supply is exhausted, and that is why the city sits at 3 verified trees below the 4-tree floor. Puglia's regional register holds 5 unique trees within 20 km (each appearing twice, once in the MASAF national file and once in the regional one, so the ten rows a brief prints are five trees). Three are verified and sitting in data/research/bari-verified.json; the other two are blocked, both correctly and both on evidence: the Villa Sbisa pine is behind a padlocked gate on university property and is not visible from the street, and the Carbonara holm oak stands in a working primary school's courtyard.",
+   "so_the_fourth_tree_must_come_from": "outside the city. Within the day-trip boundary the register offers 32 more trees between 24 and 40 km, and the precedent for using them is Coole Park counting for Galway. The strongest single candidate is the La Grave carob cluster at Polignano a Mare (32.5 km, on the regional railway): FOUR carobs within 51 metres of each other, girths 820, 410, 390 and 350 cm. An 8.2 metre carob is a genuinely spectacular tree. Molfetta offers a 560 cm eucalyptus and a 450 cm carob at 24 to 29 km, and Terlizzi a 470 cm stone pine at 24.5 km.",
+   "the_open_question": "every one of those day-trip entries carries urban:false and a rural locality (Masseria Montepaolo, Macchia Clemente, La Grave), so each needs a hard rule 10 access check before it can ship, and several will fail it the way the two in-city ones did. That check is the expensive part and is the whole of the remaining Bari pass.",
+   "not_a_route": "Wikidata. data/research/bari-wikidata-candidates.json is empty."
+  }
  ]
 }
