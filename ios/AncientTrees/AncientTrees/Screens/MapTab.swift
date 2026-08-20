@@ -30,11 +30,18 @@ struct MapTab: View {
     @Environment(Account.self) private var account
     @Environment(Nudge.self) private var nudge
 
-    /// A wide net for the map itself: pins the user can pan to matter, and
-    /// MapKit clusters whatever it is given.
-    private var mapTrees: [Tree] {
-        catalogue.nearest(to: origin.lat, origin.lng, limit: 400, withinKm: 200).map(\.tree)
-    }
+    /// EVERY tree, because the map is the whole map.
+    ///
+    /// This used to hand MapKit the nearest 400 within 200 km, which meant that
+    /// zooming out from Amsterdam showed the Netherlands and then nothing: no
+    /// Portugal, no Japan, no reason to believe there is a world here. The
+    /// website has never done that, it clusters the whole set, and the app
+    /// looking narrower than the website is the wrong way round.
+    ///
+    /// Cheap to do: 1,500 annotations is nothing for MKMapView, the pins carry
+    /// a clusteringIdentifier so MapKit collapses them by zoom on its own, and
+    /// the set never changes so updateUIView stops churning entirely.
+    private var mapTrees: [Tree] { catalogue.trees }
     private var listed: [(tree: Tree, km: Double)] {
         let near = catalogue.nearest(to: origin.lat, origin.lng, limit: 60, withinKm: 50)
         guard !query.isEmpty else { return near }
@@ -54,7 +61,18 @@ struct MapTab: View {
                     selected: $selected)
                 .ignoresSafeArea(edges: [.top, .horizontal])
             BottomSheet(height: $sheetHeight) {
-                sheet
+                // The arbitration between dragging the sheet and scrolling what
+                // is inside it, which is the whole interaction and was wrong.
+                //
+                // The convention, and Apple Maps, Google Maps and Airbnb all do
+                // exactly this: the finger does ONE thing at a time, and which
+                // one is decided by the sheet's height rather than by where the
+                // finger landed. Below full height the sheet moves and the list
+                // does not scroll, so dragging up over the trees raises the
+                // sheet instead of scrolling past them. At full height the list
+                // scrolls, and the grabber at the top stays outside the scroll
+                // view so there is always a way back down.
+                sheet.scrollDisabled(sheetHeight != .full)
             }
         }
         // The title used to float over the map as bare text with nothing behind

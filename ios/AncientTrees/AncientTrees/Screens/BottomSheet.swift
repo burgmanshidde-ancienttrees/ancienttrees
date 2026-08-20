@@ -33,10 +33,17 @@ struct BottomSheet<Content: View>: View {
             let target = height.points(in: geo.size.height)
             let h = min(max(target - drag, 90), geo.size.height * 0.94)
             VStack(spacing: 0) {
+                // The grabber is the one handle that always works, including
+                // when the content below it is scrolling, because it sits
+                // outside the scroll view. So it gets a real target rather than
+                // a five point line: the capsule is what you see, the padding
+                // around it is what you can actually grab.
                 Capsule()
                     .fill(.tertiary)
                     .frame(width: 40, height: 5)
-                    .padding(.top, 8).padding(.bottom, 6)
+                    .padding(.top, 10).padding(.bottom, 12)
+                    .frame(maxWidth: .infinity)
+                    .contentShape(.rect)
                 content
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
             }

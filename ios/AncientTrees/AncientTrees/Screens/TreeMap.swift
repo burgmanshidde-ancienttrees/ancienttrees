@@ -127,6 +127,9 @@ struct TreeMap: UIViewRepresentable {
                 }
                 map.setVisibleMapRect(rect, edgePadding: .init(top: 80, left: 60, bottom: 260, right: 60),
                                       animated: true)
+                // Without this the cluster stays selected, so tapping the same
+                // pile a second time does nothing and it reads as a dead pin.
+                map.deselectAnnotation(c, animated: false)
             }
         }
     }
@@ -139,6 +142,12 @@ final class TreePinView: MKMarkerAnnotationView {
     override var annotation: MKAnnotation? {
         didSet {
             clusteringIdentifier = "tree"
+            // .required, deliberately, and it was briefly changed away from on
+            // 2026-08-20 to let MapKit cull colliding labels. Reverted: it made
+            // no visible difference in Paris, and what it buys in tidiness it
+            // pays for by allowing MapKit to hide a PIN, not just a label. On a
+            // map whose entire job is showing where the trees are, a vanished
+            // tree is a worse bug than two names that overlap.
             displayPriority = .required
             markerTintColor = UIColor(red: 0.20, green: 0.35, blue: 0.20, alpha: 1)
             glyphImage = UIImage(systemName: "tree.fill")
