@@ -3,9 +3,9 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Rotterdam's old trees are survivors first and monuments second. The German bombing of May 1940 erased most of the city centre in a single night, and the soft, subsiding soil across much of the region shortens most trees' working lives regardless of what happens above ground; the city has barely 3,000 monumental trees against 600,000 total. What remains earned its place the hard way: a plane that predates the park built around it, another that survived the exact firestorm that flattened everything nearby, a coronation linden, a beech that watched the shipping elite build their street.",
-  "meta_description": "Rotterdam's oldest trees survived what the city itself often didn't: the 1940 bombing, the 1953 flood, a canal redesign. Five verified locations.",
+  "meta_description": "Rotterdam's oldest trees survived what the city itself often didn't: the 1940 bombing, the 1953 flood, a canal redesign. Nine verified locations.",
   "question_answer": "Rotterdam's oldest tree is the Plane of het Park, standing since around 1800, before landscape architects Jan David and Louis Paul Zocher designed the park around it in 1852. At roughly 226 years old, it has survived both the 1940 bombing that destroyed much of the city centre and the 1953 flood that put het Park itself underwater.",
-  "question_meta": "A plane tree older than the park around it, standing since 1800, survived the 1940 bombing and the 1953 flood. Rotterdam's oldest, plus four more.",
+  "question_meta": "A plane tree older than the park around it, standing since 1800, survived the 1940 bombing and the 1953 flood. Rotterdam's oldest, plus eight more.",
   "question_context": "Rotterdam's tree ages tell a story most Dutch cities don't have to tell: almost everything old here either predates the 20th century's two great disasters or was planted afterward to replace what didn't survive them. The Park Plane and the Breitenbach Plane both cleared the German bombing of 14 May 1940 that flattened the historic centre a short walk from each of them, and the Park Plane cleared a second disaster besides, the 1953 flood that put much of the park underwater for weeks. That double survival is the actual basis for calling it Rotterdam's oldest confirmed tree rather than simply its most storied one; several other candidates are old enough to be plausible rivals but lack a comparably documented history reaching back before 1900. The Westersingel Plane, the Wilhelmina Linden and the Koningin Emmaplein Beech are all younger by a wide enough margin, planted within a few decades of each other in the 1890s, that the ranking among Rotterdam's oldest three genuinely rests on the two 19th-century-or-earlier planes rather than any of the turn-of-the-century additions.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Rotterdam's remarkable trees free to visit?",
-      "a": "Yes, all five stand in public parks or on public streets, open at any time, no ticket required."
+      "a": "Yes, all nine stand in public parks or on public streets, open at any time, no ticket required."
     },
     {
       "q": "Why does Rotterdam have so few monumental trees?",
@@ -172,6 +172,119 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "approximate"
+    },
+    {
+      "id": "rot_006",
+      "name": "The Lijnbaan Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "~175 years",
+      "age_min": 166,
+      "age_max": 176,
+      "location": {
+        "address": "Small square on the southern end of the Lijnbaan, Rotterdam",
+        "latitude": 51.919277,
+        "longitude": 4.47753,
+        "neighbourhood": "Centrum"
+      },
+      "story": "This plane was likely planted in 1851 in the garden of the Coolsingel hospital, and it was still there in May 1940 when German bombing destroyed most of Rotterdam's city centre in a single night, the hospital included. Only the tree and the building's entrance gate came through. The gate stands beside the plane today, the two of them forming what Rotterdammers now treat as an accidental monument neither was designed to be.\n\nThe tree nearly lost a different fight two decades later. When the Lijnbaan, one of Europe's first purpose-built pedestrian shopping streets, was extended and renovated in the 1960s, the plan called for a dead straight line the tree and gate stood directly in the way of. Shopkeepers fought the compromise that saved them and lost; the street bent anyway, a small square was built around the tree instead, and the shops went up around that. A Rotterdam poet, Pascale Duin, later wrote it an ode calling it a silent witness. In 2019 it was nominated to represent the whole province of Zuid-Holland in the national Tree of the Year contest. It stands free, in the open, one of two Rotterdam planes known to have survived the exact night that erased almost everything around them.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1689886)"
+      ],
+      "access": "Free, public square, open at any time",
+      "transport": "Centrum, central Rotterdam; about a 10 minute walk from Rotterdam Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "rot_007",
+      "name": "The Memorial Yew of Eendrachtsplein",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "~99 years",
+      "age_min": 95,
+      "age_max": 105,
+      "location": {
+        "address": "Eendrachtsplein 3, Rotterdam",
+        "latitude": 51.91675,
+        "longitude": 4.47267,
+        "neighbourhood": "Centrum"
+      },
+      "story": "Rotterdam spent its first postwar years rebuilding rather than remembering, and it took one person to insist on a place to do both: Willem Ganter, first violinist of the Rotterdam Philharmonic Orchestra, who raised money for a memorial tree at the garden of the police station on Eendrachtsplein, a spot the city had trusted people to gather at even during the occupation. A 20-year-old European yew was ordered from England and planted in 1947, already a substantial tree rather than a sapling, because a memorial planted small would have taken decades to look like one.\n\nThe yew has had a harder life since than the plan intended. A new tram line cut through the area, then a metro line in 1983, and the police eventually moved out of the building entirely, which is now a cafe. The tree itself once grew on two trunks and now stands on one, having lost the other somewhere along the way, and simply outlasted every change around it regardless. Had Ganter chosen a less tenacious species, none of this would have survived to be told. It stands free, in the open, beside the entrance of the building it has outlived every use of.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1696535)",
+        "https://rotterdam.knnv.nl/herdenkingsboom-eendrachtsplein/"
+      ],
+      "access": "Free, public street, viewable at any time",
+      "transport": "Centrum, central Rotterdam; about a 12 minute walk from Rotterdam Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "rot_008",
+      "name": "The Planes of Delftseplein",
+      "species": "London Plane and Oriental Plane (Platanus x acerifolia and Platanus orientalis)",
+      "age_estimate": "~166 years",
+      "age_min": 156,
+      "age_max": 176,
+      "location": {
+        "address": "Delftseplein, just east of Rotterdam Centraal station, Rotterdam",
+        "latitude": 51.925058,
+        "longitude": 4.472281,
+        "neighbourhood": "Centrum"
+      },
+      "story": "Four planes, three London and one Oriental, went into the ground together around 1860 as planting around a pond that once sat in front of Rotterdam's original Centraal Station entrance. The pond and that entrance are both gone, replaced by later station buildings, but the trees stayed on Delftseplein through every rebuild the station itself went through, including the one that flattened most of the surrounding neighbourhood in May 1940.\n\nMixing Oriental plane in with the more common London plane hybrid in one planting was not unusual for 19th-century Dutch civic gardening, a hedge against uncertainty about which would thrive better on reclaimed, disturbed ground next to a working rail yard. Whichever species won that test is no longer the point; all four have made it past a century and a half. They stand together, free, immediately east of the current station building, close enough that anyone stepping off a train into Rotterdam is likely to walk past the oldest trees on the whole route without knowing it.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1695282)"
+      ],
+      "access": "Free, public square, open at any time",
+      "transport": "Immediately east of Rotterdam Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "rot_009",
+      "name": "The Plane of Westersingel",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "~120 years",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Westersingel at the crossing with Mauritsweg and Witte de Withstraat, Rotterdam",
+        "latitude": 51.914869,
+        "longitude": 4.474794,
+        "neighbourhood": "Centrum"
+      },
+      "story": "This London plane stands at a junction most people pass through rather than stop at, where the Westersingel canal crosses the Mauritsweg and Witte de Withstraat, planted sometime around 1900 to 1910 as the streets around it took their current shape. It is younger than the two more storied planes elsewhere on the same Westersingel, the one that survived the 1940 bombing and the one a South African poet once read verse beneath, and it carries no comparable story of its own beyond simply having grown steadily at a crossing for over a century.\n\nThat plainness is not nothing. Most street trees this old in a heavily bombed, heavily rebuilt city do not make it, and this one has, standing through whatever traffic patterns and canal-side redevelopment the junction has seen since the Edwardian era. It grows in the open, free, on the same short stretch of canal that carries two of Rotterdam's more famous trees, worth a stop on the same walk rather than a destination by itself.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1686363)"
+      ],
+      "access": "Free, public street, open at any time",
+      "transport": "Centrum, central Rotterdam; about a 12 minute walk from Rotterdam Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }

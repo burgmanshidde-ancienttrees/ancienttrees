@@ -2674,6 +2674,15 @@
     "note": "session pass, in-context, no agent dispatched: register-backed verify+write from freshly-staged Netherlands LRMB candidates (data/research/maastricht-register-candidates.json, 105 entries). Two central lindens 85m apart (Keizer Karelplein's Juliana birth-tree, planted 1909; Vrijthof's own linden), both at the squares ringing the Basilica of Saint Servaas, plus three grove entries from Monseigneur Nolenspark's 1886 Rosseels-designed westward park expansion (black walnuts, weeping silver limes along the Haet ende Nijt moat, tulip trees). Dropped a sixth candidate, a Nolenspark plane group, after finding it sits 240m from the existing maa_005 ('Tallest Plane Tree in the Netherlands', itself an approximate-precision entry on the same street) -- different register point but same species and same street, judged too easily confused with the existing entry to be worth the risk. All dead_entries_regex-clean. Maastricht 5 to 10. Walk planner grouped 7 of the 10 into one 1.6km, 21 minute walk. Preflight clean on first pass. Build/superlatives/qa all clean (same pre-existing sitemap-lastmod warning as the other four Dutch passes today).",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "rotterdam",
+    "kind": "verify",
+    "tokens": 0,
+    "trees": 4,
+    "note": "session pass, in-context, no agent dispatched: register-backed verify+write from freshly-staged Netherlands LRMB candidates (data/research/rotterdam-register-candidates.json, 76 entries). Found the Lijnbaan plane, a second May-1940-bombing survivor with an exceptional documented story (1851 hospital garden, only the tree and the hospital's gate survived the bombing, the 1960s Lijnbaan extension bent the street to save it, a 2019 Tree of the Year nomination), and the Eendrachtsplein memorial yew (1947, initiated by Rotterdam Philharmonic violinist Willem Ganter). Caught and DROPPED the register's own Zadkine 'De Verwoeste Stad' connection for the yew: independent search places that statue consistently at Plein 1940/Leuvehaven, not Eendrachtsplein, so the register's own narrative looks like it conflates two things; wrote the story from only the well-corroborated tree facts rather than repeat an unverifiable bridge claim. Also caught and dropped a 'Bruine beuk Koningin Emmaplein' candidate 54m from the already-published rot_005 -- same species, and the register's own text describes 'a monumental copper beech' (singular) on that square, so almost certainly the same tree already published. Also shipped a 4-tree mixed plane group at Delftseplein (station forecourt, 1860) and a plainer Westersingel plane. All dead_entries_regex-clean. Rotterdam 5 to 9. Walk planner formed two walks, 6 and 3 trees. Preflight caught and fixed a stale 'plus four more' count promise in question_meta. Build/superlatives/qa all clean (same pre-existing sitemap-lastmod warning as the rest of today's Dutch passes).",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
