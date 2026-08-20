@@ -27,7 +27,10 @@ struct ProfileView: View {
     @State private var signingIn = false
     @State private var confirmingDelete = false
     @State private var deleteFailed = false
-    @State private var contributing = false
+    /// Debug scaffolding, same family as -tab and -open in ContentView: the
+    /// screenshot sweep cannot tap, and this sheet is otherwise only reachable
+    /// by tapping a card on this screen.
+    @State private var contributing = ProcessInfo.processInfo.arguments.contains("-contribute")
 
     var body: some View {
         ScrollView {

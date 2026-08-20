@@ -94,6 +94,27 @@ struct ContentView: View {
         return (lat: la, lng: ln)
     }
 
+    /// `-open=tree:lon_001`, `-open=city:london`, `-open=species:Pedunculate Oak`,
+    /// `-open=collection:europe`, `-open=walk:london|The City churchyards`.
+    /// The walk separator is a pipe because a walk needs two values and a
+    /// colon already separates the kind.
+    static func debugRoute(_ spec: String) -> Route? {
+        guard let colon = spec.firstIndex(of: ":") else { return nil }
+        let kind = String(spec[spec.startIndex..<colon])
+        let value = String(spec[spec.index(after: colon)...])
+        switch kind {
+        case "tree": return .tree(value)
+        case "city": return .city(value)
+        case "collection": return .collection(value)
+        case "species": return .species(value)
+        case "walk":
+            let parts = value.split(separator: "|", maxSplits: 1).map(String.init)
+            guard parts.count == 2 else { return nil }
+            return .walk(city: parts[0], name: parts[1])
+        default: return nil
+        }
+    }
+
     private var origin: (lat: Double, lng: Double) {
         debugOrigin ?? location.coordinate ?? (lat: 52.3731, lng: 4.8922)   // Dam square
     }
@@ -275,6 +296,17 @@ struct ContentView: View {
             // looked at or screenshotted at all.
             if let id = args.first(where: { $0.hasPrefix("-tree=") })?.dropFirst(6) {
                 debugTree = String(id)
+            }
+            // -open=<kind>:<value> PUSHES a screen onto the current tab, which
+            // is how a person actually arrives at one. Every route in this app
+            // is reachable this way, so the screenshot sweep can look at all of
+            // them rather than only at the four tab roots. Debug scaffolding
+            // like -tab and -at, and the reason it exists is the sweep:
+            // scripts/appsweep.py cannot tap, and a screen nobody can open is a
+            // screen that ships unseen.
+            if let spec = args.first(where: { $0.hasPrefix("-open=") })?.dropFirst(6),
+               let route = Self.debugRoute(String(spec)) {
+                path(tab).wrappedValue = [route]
             }
             if args.contains("-signin") {
                 rootSheet = .signIn(.keepTree("The Last Elm of Stationsplein"))
