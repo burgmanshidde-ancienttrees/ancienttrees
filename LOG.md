@@ -945,6 +945,20 @@ all N remarkable ancient trees in [City]", and on Las Vegas that sits under
 our own sentence saying nothing there is ancient. It is template copy on all
 137 cities and "ancient trees" is the brand, so I have not touched it.
 
+## 2026-08-20 (session) - Alignment is measured now, and both platforms read one rulebook
+
+Hidde saw it on /explore: the panel's heading sat at 28 and the city list under it at 17.6, and he asked the question that mattered more than the fix. "Kunnen we zorgen dat jij de alignment altijd van de website in de gaten houdt?"
+
+**The check.** The smoke test now measures DRIFT on seven pages at 375 and 1280. A COLUMN is anything whose visible children are stacked; each child's GUTTER is the leftmost place it puts ink; two gutters in one column that sit more than 0.6 and at most 11 points apart are a fault. Bigger gaps are deliberate insets and are left alone. What it took to stop it crying wolf, since a naive version flags every page: something that paints a visible box contributes its box edge and everything else its text edge, inline runs are skipped because a <strong> mid-paragraph has no gutter, centred text is skipped because its left edge is a function of its length, and a row hands back its leftmost item rather than its own padding box.
+
+**What it found, all real, all fixed:** /explore's panel (one --panel-x token now feeds the head, the list, the intro and the prose, at both widths); every tree card on every page, where a 3px transparent border-left held the slot for the selected-pin bar and pushed the text 3px right of the heading above it (it is an inset shadow now, which takes no space); /netherlands' ranked rows carrying 0.2rem nobody else had; /cities' whole card grid sitting 7px right of its own country headings.
+
+**Then the second half of his ask: "zorg dat de CI voor app en web dezelfde kwaliteit nastreven".** They did not. The app could measure a four-point drift and threw the numbers away, because SweepFrames printed them and ios.yml's grep discarded them; the website had no idea what a drift was. Now `scripts/layout_rules.py` holds the three thresholds and both sides import it, appfit.py and appsweep.py and SweepFrames.swift are committed (they were untracked, which is the same as not existing), and ios.yml runs appfit.py over the full xcodebuild log so CLIPPED, DRIFT and SMALL fail the app build the way a red smoke test says the site is broken.
+
+**One deliberate difference, said out loud rather than hidden.** SMALL is gated on the app and only PRINTED on the web: the site has 22 controls under 44x44 at 375px, the save heart at 67x26 on every card among them. Fixing those is a design pass, not something to spring on a deploy.
+
+**FOR HIDDE:** nothing is blocked on you. One thing the check cannot see, because it only compares inside a column: a phone has three different gutters on it (bar 16, map panel 17.6, content pages 24). Worth one decision from you some time, and then it is a one-line change.
+
 ## 2026-08-20 (session) - The phone header: one control, and the stale CSS that was un-centring it
 
 Hidde on the mobile nav: the hamburger was not centred and the bar looked odd, so put everything under it.
