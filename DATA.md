@@ -179,6 +179,41 @@ Search Console, the last 10 days Google will give us (its data lags 2-3 days, so
 - Seen, not clicked: /cambridge/newtons-apple-tree (c0/i38, 0.0%) for isaac newton apple tree (i5, p45); apple tree of newton (i4, p47); oldest apple tree (i3, p35)
 - Seen, not clicked: /singapore/oldest-tree (c0/i29, 0.0%) for oldest tree in singapore (i26, p10); singapore national tree (i2, p3); angsana meaning (i1, p3)
 
+**Climbing** (this ten days against the ten before it)
+
+| Page | Impressions | Change | Position | Moved | Clicks |
+|---|---:|---:|---:|---:|---:|
+| /prague | 125 | +65 | 7.7 | +3.6 | +3 |
+| /barcelona | 95 | +58 | 8.4 | - | -1 |
+| /geneva | 61 | +53 | 11.4 | -2.6 | +0 |
+| /dubrovnik | 51 | +48 | 6.2 | +1.1 | +4 |
+| /cambridge/newtons-apple-tree | 46 | +44 | 45.8 | +3.2 | +0 |
+| /seoul | 47 | +42 | 19.2 | -11.6 | +0 |
+| /palermo | 169 | +40 | 10.1 | -1.2 | +3 |
+| /budapest | 41 | +40 | 9.6 | -2.6 | +1 |
+
+**Newly ranking** (no impressions at all ten days ago)
+
+| Page | Impressions | Clicks | Position |
+|---|---:|---:|---:|
+| /bath/plane-tree-of-abbey-green | 98 | 0 | 9.7 |
+| /madrid | 49 | 0 | 9.8 |
+| /copenhagen | 34 | 0 | 11.4 |
+| /es/malaga | 31 | 0 | 10.3 |
+| /species/moreton-bay-fig | 25 | 0 | 38.3 |
+| /porto/alameda-dos-platanos-of-jardim-da-cordoaria | 25 | 0 | 6.0 |
+
+**Slipping**
+
+| Page | Impressions | Change | Position | Moved |
+|---|---:|---:|---:|---:|
+| /kyoto | 20 | -32 | 13.4 | -3.1 |
+| /istanbul | 30 | -20 | 15.6 | -5.0 |
+| /tokyo | 16 | -19 | 33.1 | -14.2 |
+| /nice | 29 | -13 | 17.3 | -10.8 |
+
+- New queries this window: oldest tree in central park (i4), dutch elm amsterdam (i4).
+
 **Who they are**
 Audience, 28 days of search (210 clicks, 9162 impressions):
 - Countries: usa c36/i2085; nld c18/i472; gbr c16/i1207; deu c14/i338; esp c10/i489
@@ -218,9 +253,10 @@ AI: arrivals from an assistant that cited us: none yet
 | 08-19T22:29 | 5.4 | 47 | 0 | 2 | 7 |
 | 08-20T00:27 | 6.9 | 65 | 0 | 1 | 8 |
 | 08-20T02:46 | 16.4 | 118 | 0 | 6 | 15 |
-| **5 runs** | **182** | | **34** | **28** | |
+| 08-20T04:23 | 26.7 | 204 | 5 | 13 | 15 |
+| **6 runs** | **209** | | **39** | **41** | |
 
-- 3 of 5 produced no trees; 7 to 45 commands refused per run; 3 wrote nothing to LOG.md.
+- 3 of 6 produced no trees; 7 to 45 commands refused per run; 3 wrote nothing to LOG.md.
 
 Machine: 6 chain attempts yesterday, 3 got real work time (~160 min total). Dead-in-seconds attempts cost nothing; few get-throughs means the usage window was full or closed.
 
