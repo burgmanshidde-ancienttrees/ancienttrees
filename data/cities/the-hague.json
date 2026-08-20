@@ -2,8 +2,8 @@
   "city": "The Hague",
   "country": "Netherlands",
   "status": "needs_curation",
-  "intro": "The Hague's oldest tree grows behind a locked gate in an almshouse courtyard, still tended by the women who live there, exactly as it has been since 1638. The rest of the list is far easier to reach. Four minutes north of Den Haag Centraal an 18th century oak stands on the old deer meadow, and nearby a horse chestnut hauled eighty metres across it on steel plates in 1997 rather than felled for a road tunnel. Sixteen trees in all, from an elm that outlived Dutch elm disease to a beech a century older than its own street.",
-  "meta_description": "The Hague's oldest tree, a 1638 pear, grows in a locked almshouse courtyard. Sixteen verified trees, from Koekamp oaks to a chestnut moved on steel plates.",
+  "intro": "The Hague's oldest tree grows behind a locked gate in an almshouse courtyard, still tended by the women who live there, exactly as it has been since 1638. The rest of the list is far easier to reach. Four minutes north of Den Haag Centraal an 18th century oak stands on the old deer meadow, and nearby a horse chestnut hauled eighty metres across it on steel plates in 1997 rather than felled for a road tunnel. Twenty-one trees in all, from a royal garden cypress to a row of chestnuts beside the Hofvijver.",
+  "meta_description": "The Hague's oldest tree, a 1638 pear, grows in a locked courtyard. 21 verified trees, from Koekamp oaks to a chestnut moved on steel plates.",
   "question_answer": "The Hague's oldest tree is the Juttepeer of the Heilige Geesthofje, a pear tree planted in 1638 in the courtyard of a still-functioning almshouse near the Paviljoensgracht. At roughly 388 years old, it is widely considered the oldest pear tree in the Netherlands, and residents still make jelly from its fruit every year.",
   "question_meta": "A 1638 pear tree in a locked almshouse courtyard, likely the oldest pear tree in the Netherlands, is The Hague's oldest tree. All sixteen mapped.",
   "question_context": "The Hague's oldest tree survives because it never had to compete for space in open, public ground. The Heilige Geesthofje's pear has spent nearly four centuries inside a walled almshouse courtyard that has functioned as a residence since 1616. Its closest rivals took the opposite route. The Koekamp oak, at roughly 300 years, grows on land that was never private at all, protected by a 1576 promise from William of Orange that the Haagse Bos would never be sold or logged, a guarantee that has held with one serious interruption, wartime felling under German occupation. A second oak on the same meadow, and a London Plane out at Leidschendam, are both dated by the national register to somewhere between 1750 and 1800, a fifty year band rather than a date, which puts them between 225 and 275 years old. After those the list drops into the 19th century, onto estate land later built over, into two cemeteries and a painter's garden. What links them is not age but boundary: each one ended up inside something nobody had a reason to cross.",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are The Hague's remarkable trees free to visit?",
-      "a": "Most are free and open at any hour, including everything on the Koekamp and the Malieveld, the cemetery at Oud Eik en Duin and the estate park at Ockenburgh. Three are not: the Juttepeer's courtyard needs a guided tour, an appointment or Open Monumentendag; the Mesdag garden oak is reached through the museum during opening hours; and the oak in the Jewish cemetery on the Scheveningseweg stands behind a wall that is not open every day."
+      "a": "Most are free and open at any hour, including everything on the Koekamp, the Malieveld, the Vijverberg and Huijgenspark, the cemetery at Oud Eik en Duin and the estate park at Ockenburgh. Four are not: the Juttepeer's courtyard needs a guided tour, an appointment or Open Monumentendag; the Mesdag garden oak is reached through the museum during opening hours; the oak in the Jewish cemetery on the Scheveningseweg stands behind a wall that is not open every day; and the Paleistuin cypress is closed on the occasional day a state visit requires it."
     },
     {
       "q": "Which tree in The Hague was moved eighty metres?",
@@ -600,6 +600,156 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       }
+    },
+    {
+      "id": "hag_018",
+      "name": "The Bald Cypress of Paleistuin",
+      "species": "Bald Cypress (Taxodium distichum)",
+      "age_estimate": "~130 years",
+      "age_min": 126,
+      "age_max": 136,
+      "location": {
+        "address": "Paleistuin, behind Paleis Noordeinde, Den Haag",
+        "latitude": 52.081248,
+        "longitude": 4.304317,
+        "neighbourhood": "Centrum"
+      },
+      "story": "This bald cypress grows on a lawn in the garden behind Paleis Noordeinde, the working palace where the King of the Netherlands keeps his office, on ground first laid out as a private garden in the early 17th century by Frederik Hendrik, son of William of Orange, for his mother, and known for centuries afterward as the Prinsessentuin. What was once strictly royal property has been open to the public for generations now, a fact many visitors to the palace's public face on the street never realise extends to the grounds behind it.\n\nThe register dates the tree's planting to the 1890s, part of what it calls the garden's older planting scheme, well after Frederik Hendrik's original 17th-century design but still well over a century ago. Taxodium distichum is native to swamps across the southeastern United States and, unusually for a conifer, drops its needles every autumn, so it goes from green to rust orange before standing bare through winter alongside the garden's ponds and statues. The garden is free, open from sunrise to sunset, closed only on the occasional day a state visit requires it.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1685516)",
+        "https://nl.wikipedia.org/wiki/Paleistuin"
+      ],
+      "access": "Free, public garden, open sunrise to sunset; occasionally closed for state visits",
+      "transport": "Centrum, central Den Haag; about a 15 minute walk from Den Haag Centraal station",
+      "best_time": {
+        "months": [11],
+        "label": "November, when the needles turn rust orange before dropping",
+        "kind": "autumn colour"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "hag_019",
+      "name": "The Chestnuts of Vijverberg",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "~190 years",
+      "age_min": 186,
+      "age_max": 196,
+      "location": {
+        "address": "Lange Vijverberg and Korte Vijverberg, beside the Hofvijver, Den Haag",
+        "latitude": 52.081187,
+        "longitude": 4.313838,
+        "neighbourhood": "Centrum"
+      },
+      "story": "The Vijverberg exists because of a hole in the ground. When the Hofvijver, the rectangular pond that still sits beside the Binnenhof and reflects the seat of Dutch government in postcards by the thousand, was enlarged centuries ago, the excavated sand was piled up along one side, raising the ground into the low ridge that gives this street its name, hill by the pond. Rich families built townhouses along it from the 17th century on, most with gardens facing the water.\n\nThis row of seven horse chestnuts, planted around the 1830s, lines that same historic ground today, tall enough now to shade the water they were planted to look out over. Horse chestnut is not native to the Netherlands, imported as an ornamental from the Balkans, but it became the default tree for exactly this kind of grand civic promenade across Dutch cities for two centuries running. The trees stand in the open, free, on one of the most photographed short stretches of pavement in the country, a few minutes' walk from the Binnenhof itself.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1686927)",
+        "https://nl.wikipedia.org/wiki/Lange_Vijverberg"
+      ],
+      "access": "Free, public street, open at any time",
+      "transport": "Centrum, central Den Haag; about a 10 minute walk from Den Haag Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "hag_020",
+      "name": "The Planes of the Grote Kerk",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "~130 years",
+      "age_min": 126,
+      "age_max": 136,
+      "location": {
+        "address": "Around the Grote Kerk, Riviervismarkt, Den Haag",
+        "latitude": 52.076925,
+        "longitude": 4.306934,
+        "neighbourhood": "Centrum"
+      },
+      "story": "These two London planes grow on what used to be a graveyard, the register's own note for the site reading simply planted on the former churchyard, a detail that explains why open lawn survives at all around a church this central. The Grote Kerk, Den Haag's largest and oldest church, has stood on this ground since the 15th century, and burials around it continued for centuries after, until the practice was banned inside growing Dutch cities on public health grounds and this plot became open space instead.\n\nThe two planes date from around the 1890s, late arrivals relative to the church itself but still well over a century old, standing on the Riviervismarkt square that wraps around the building. London plane, a hybrid of the American sycamore and the Oriental plane, tolerates compacted urban soil better than almost any other large tree, which is likely why it was the obvious choice once the ground stopped being used for its original purpose. The trees grow in the open, free, on a square that still draws markets and events the way the site has for centuries, just without the graves.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1684632)",
+        "https://nl.wikipedia.org/wiki/Grote_of_Sint-Jacobskerk_(Den_Haag)"
+      ],
+      "access": "Free, public square, open at any time",
+      "transport": "Centrum, central Den Haag; about a 12 minute walk from Den Haag Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "hag_021",
+      "name": "The Planes of Huijgenspark",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "~150 years",
+      "age_min": 146,
+      "age_max": 156,
+      "location": {
+        "address": "Huijgenspark, opposite the TGM hof, Huijgenstraat, Den Haag",
+        "latitude": 52.073457,
+        "longitude": 4.321022,
+        "neighbourhood": "Stationsbuurt"
+      },
+      "story": "Huijgenspark carried an uglier name for most of its early life, Bogt van Guinea, until a murder in the neighbourhood in 1873 gave the city reason to rename it after Constantijn Huygens, the Hague-born diplomat, poet and composer whose son would go on to discover Saturn's rings. Before the park existed at all, this stretch was the busy road out toward Delft, lined with inns and wagon-hire businesses for travellers leaving the walled city, one of the few built-up areas outside The Hague's old canal ring.\n\nThese London planes went into the newly laid-out park around the 1870s, not long after it was first established in 1860 on the ground between Huijgensstraat and the old Bogt. The park was renovated in 2002, its planting refreshed and its paths repaved, but the planes from the original layout survived that work intact. They stand in the open today, free, in a park whose own name change still quietly marks a crime nobody living remembers the details of.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1684631)",
+        "https://nl.wikipedia.org/wiki/Huijgenspark"
+      ],
+      "access": "Free, public park, open at any time",
+      "transport": "Stationsbuurt, Den Haag; about a 10 minute walk from Den Haag Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "hag_022",
+      "name": "The Hungarian Oaks of Huijgenspark",
+      "species": "Hungarian Oak (Quercus frainetto)",
+      "age_estimate": "~120 years",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Huijgenspark, west side, opposite Huijgensstraat 12-17, Den Haag",
+        "latitude": 52.073103,
+        "longitude": 4.321614,
+        "neighbourhood": "Stationsbuurt"
+      },
+      "story": "Hungarian oak is a species most Dutch park visitors walk past without recognising, a large-leaved Balkan and southeast European oak that reaches the Netherlands only through deliberate 19th and early 20th-century planting rather than any natural range of its own. This group of three, dated by the register to around 1900 to 1910, grows on the west side of Huijgenspark, a generation younger than the park's own planes but from the same era of civic tree planting that filled Dutch municipal parks with species collected from across the continent.\n\nThe park itself replaced a busy coaching-inn district on the old road to Delft, renamed in 1873 for the polymath Constantijn Huygens after having carried the considerably less flattering name Bogt van Guinea for its first two centuries. Hungarian oak's leaves are larger and more deeply lobed than the native pedunculate oak's, worth a close look for anyone wanting to tell the two apart on sight. The trees stand in the open, free, a short walk from the park's older plane grove on the opposite side of the same green space.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1686871)",
+        "https://nl.wikipedia.org/wiki/Huijgenspark"
+      ],
+      "access": "Free, public park, open at any time",
+      "transport": "Stationsbuurt, Den Haag; about a 10 minute walk from Den Haag Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }

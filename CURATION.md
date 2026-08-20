@@ -208,14 +208,35 @@ site of 300 victims of the February 1944 bombing of Nijmegen). All
 all clean (same pre-existing sitemap-lastmod warning as the rest of today's
 Dutch passes). Photos: none hunted, per this runner's no-photo-judging rule.
 
-**Today's Dutch register run in total: Arnhem 4→9, Utrecht 5→9, Groningen
-5→10, Haarlem 4→9, Maastricht 5→10, Rotterdam 5→9, Nijmegen 5→8, 31 trees
-across 7 cities from the freshly-staged LRMB register, all from the same
-shelf `prepare.py` had already stocked. Three name-collision or bridge-claim
-traps caught along the way (Bari's duplicate register id, Vienna's duplicate
-plane, Rotterdam's Zadkine misattribution, Nijmegen's replaced coronation
-tree and duplicate Julianaboom) are recorded in each city's own entry above
-rather than repeated here.**
+## 2026-08-20 (session, continued) - The Hague: deepened 16 to 21, mined the raw register by hand
+
+Rank 24 in CITY_QUEUE.md, much higher priority than the seven cities worked
+earlier today, but its own pre-staged shelf file
+(data/research/the-hague-lrmb-ready.json) turned out already fully consumed:
+every id in it already exists in data/cities/the-hague.json except one
+correctly-held-back "potentieel" beech. So this pass mined
+data/registers/netherlands-lrmb.json directly, replicating prepare.py's own
+filter (visitable=ja, not particulier, not within 60m of a published tree)
+by hand within 3km of the centre. Confirmed via independent search that the
+Paleistuin, the garden behind the King's working palace at Noordeinde, is
+genuinely free and open to the public sunrise to sunset (closed only for
+occasional state visits) before shipping its bald cypress. Skipped the Lange
+Voorhout linden avenue outright, 325 trees in one register entry, a mass
+planting rather than a collectible point by any reading of the rule.
+Shipped 5: the Paleistuin cypress, a 7-tree horse chestnut row along the
+Vijverberg beside the Hofvijver (the pond beside the Binnenhof), a 2-tree
+plane pair at the Grote Kerk (planted on the church's own former graveyard),
+and a plane group plus a Hungarian oak group in Huijgenspark. All
+`curation_status: flagged`, `location_precision: confirmed`, clean against
+`dead_entries_regex`. Walk planner folded all 5 into three existing or
+reshaped walks. Preflight caught a meta_description 3 characters over
+Contract C's limit, fixed. Build/superlatives/qa all clean (same
+pre-existing sitemap-lastmod warning as every other pass today). Photos:
+none hunted, per this runner's no-photo-judging rule.
+
+**Today's Dutch register total, all from the same national LRMB import: 8
+cities, 36 trees (Arnhem 4→9, Utrecht 5→9, Groningen 5→10, Haarlem 4→9,
+Maastricht 5→10, Rotterdam 5→9, Nijmegen 5→8, The Hague 16→21).**
 
 ## 2026-08-19 - Caserta: deepened to target (14 to 20), 6 new trees from its own leads file
 
