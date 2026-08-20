@@ -12,13 +12,13 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
-## 2026-08-20 (session) - A photo viewing pass: 12 photographs approved, 104 candidates rejected, 7 cities off the zero-photo list
+## 2026-08-20 (session) - A photo viewing pass: 13 photographs approved, 115 candidates rejected, 8 cities off the zero-photo list
 
 Hidde asked to have another go at photographs for the cities with none. `health.py` rung 2 clear first (smoke, deploy, digest, fresh-eyes all green, no BLOCKER), so this was rung 6 work.
 
-**Approved 12. `photo_gaps.py` counts 46 of 144 published cities with no photograph, down from 53 when this started**, so seven cities came off that list: Graz (3: the Schlossberg field maple and the Volksgarten oak, both with their Naturdenkmal sign in frame, plus the Eggenberg copper beech), Sardinia (2: both olivastri, Luras and Santa Maria Navarrese), Copenhagen (Skovfogedegen), Perth (the Royal Perth Hospital fig), Los Angeles (2: the LAHCM 19 fig and the oldest palm), Madeira (the Neves dragon tree grove) and Mexico City (the Parque Espana ahuehuete). The twelfth is Tallinn's Kelch's linden, a photo-less tree in a city that already had one picture.
+**Approved 13. `photo_gaps.py` counts 45 of 144 published cities with no photograph, down from 53 when this started**, so eight cities came off that list: Graz (3: the Schlossberg field maple and the Volksgarten oak, both with their Naturdenkmal sign in frame, plus the Eggenberg copper beech), Sardinia (2: both olivastri, Luras and Santa Maria Navarrese), Copenhagen (Skovfogedegen), Perth (the Royal Perth Hospital fig), Los Angeles (2: the LAHCM 19 fig and the oldest palm), Madeira (the Neves dragon tree grove) Mexico City (the Parque Espana ahuehuete) and Frankfurt (the Eschersheimer Linde). The thirteenth is Tallinn's Kelch's linden, a photo-less tree in a city that already had one picture.
 
-**Rejected 104 and recorded every reason**, which is the half of this work that pays next time: an unrecorded reject is an image the following pass pays to judge again.
+**Rejected 115 and recorded every reason**, which is the half of this work that pays next time: an unrecorded reject is an image the following pass pays to judge again.
 
 What the rejects actually were, because the pattern is worth knowing before the next pass:
 
@@ -34,9 +34,13 @@ What the rejects actually were, because the pattern is worth knowing before the 
 
 **One judgement call recorded as such:** Mexico City's ahuehuete is a trunk-dominant frame rather than a wide portrait, approved because the 1921 centenary plaque at its foot settles that it is this tree and not another ahuehuete in a city full of them. Identified and honest beat wide and unproven.
 
+**The ranking function is not a filter, and today proved it in both directions.** `names_match()` in photo_gaps.py documents "0 means do not look", and photo_fetch.py fetches those candidates anyway. The obvious improvement is to make it a gate. Measured before writing it: **three of today's thirteen approvals score exactly 0 there.** Skovfogedegen, Kelch-Linde and L'olivastro di Luras all name their tree in the filename, and none of them contains a word the function recognises as a plant, because Danish, Estonian and Italian do not spell one the way the list does. 1,625 of 1,906 unjudged candidates score 0, so a gate would have thrown away a quarter of the day's results with the noise. That is the 58-trees-written-off lesson pointing the other way, and the docstring now says so with the counter-examples in it, because the idea is tempting enough that somebody will have it again.
+
+What the same check did find is a real bug of the exact kind CLAUDE.md already names. The plant-word test is a SUBSTRING test, and the word set folded in `GENERIC` wholesale, which includes **"of"**. So the gate passed on almost any English title: "Statue of Queen Wilhelmina.jpg" scored 21 against Rotterdam's Wilhelmina Linden and was duly fetched and looked at, along with 76 other candidates riding on a connective. Removed the two connectives; 64 more candidates now correctly sort last. Resisted the follow-up temptation to widen the plant list with more languages, having measured it: adding the Polish "dab" rescues five photographs of roundabouts, because "roun**dab**out" contains it. The comment now carries that measurement so the next person does not have to rediscover it.
+
 **Also fixed a real defect found on the way.** `photo_apply.py` wrote city files at indent 1 with no trailing newline, which is not what data/cities holds, so approving a single photograph reformatted the entire file: Graz arrived as a 724-line diff for a four-line change, and a real edit hidden inside that much churn is a review nobody can do. It writes indent 2 with a trailing newline now, matching `photo_check.py` and `season_backfill.py`.
 
-FOR HIDDE: nothing blocks. The remaining 46 empty cities are mostly genuinely empty on Commons rather than unlooked-at: Caserta (20 trees), Melbourne, Hobart, Las Vegas, Dallas and Zaragoza returned no open-licence candidate at all across two sweeps. The cheaper next move for those is `famous_trees.py`, which finds trees we do not map that arrive with a photograph already attached, rather than hunting a photograph for a tree nobody has photographed.
+FOR HIDDE: nothing blocks. The remaining 45 empty cities are mostly genuinely empty on Commons rather than unlooked-at: Caserta (20 trees), Melbourne, Hobart, Las Vegas, Dallas and Zaragoza returned no open-licence candidate at all across two sweeps. The cheaper next move for those is `famous_trees.py`, which finds trees we do not map that arrive with a photograph already attached, rather than hunting a photograph for a tree nobody has photographed.
 
 ## 2026-08-20 (session) - A UX audit of both products, and the app can now be signed into
 
