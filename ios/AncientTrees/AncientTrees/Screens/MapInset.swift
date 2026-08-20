@@ -26,13 +26,14 @@ enum MapThumb {
 
     static func cached(_ key: String) -> UIImage? { cache.object(forKey: key as NSString) }
 
-    static func snapshot(lat: Double, lng: Double, size: CGSize, dark: Bool) async -> UIImage? {
-        let key = "\(lat),\(lng),\(Int(size.width)),\(dark)"
+    static func snapshot(lat: Double, lng: Double, size: CGSize,
+                         dark: Bool, meters: CLLocationDistance = 500) async -> UIImage? {
+        let key = "\(lat),\(lng),\(Int(size.width)),\(Int(size.height)),\(dark)"
         if let hit = cached(key) { return hit }
 
         let options = MKMapSnapshotter.Options()
         options.region = MKCoordinateRegion(center: .init(latitude: lat, longitude: lng),
-                                            latitudinalMeters: 500, longitudinalMeters: 500)
+                                            latitudinalMeters: meters, longitudinalMeters: meters)
         options.size = size
         options.pointOfInterestFilter = .excludingAll
         options.traitCollection = UITraitCollection(userInterfaceStyle: dark ? .dark : .light)
@@ -59,7 +60,10 @@ enum MapThumb {
 struct MapInset: View {
     let lat: Double
     let lng: Double
-    var side: CGFloat = 72
+    /// A square thumbnail in a card's corner, or nil for the wide strip the
+    /// tree page uses as its way to the map.
+    var side: CGFloat? = 72
+    var height: CGFloat = 72
 
     @Environment(\.colorScheme) private var scheme
     @State private var image: UIImage?
@@ -74,18 +78,21 @@ struct MapInset: View {
                 Color.clear
             }
         }
-        .frame(width: side, height: side)
-        .clipShape(.rect(cornerRadius: 10))
+        .frame(width: side, height: side ?? height)
+        .frame(maxWidth: side == nil ? .infinity : nil)
+        .clipShape(.rect(cornerRadius: side == nil ? 0 : 10))
         .overlay {
-            if image != nil {
+            if image != nil, side != nil {
                 RoundedRectangle(cornerRadius: 10).strokeBorder(.white.opacity(0.9), lineWidth: 2)
             }
         }
-        .shadow(color: .black.opacity(0.18), radius: 4, y: 2)
+        .shadow(color: .black.opacity(side == nil ? 0 : 0.18), radius: 4, y: 2)
         .task(id: scheme) {
+            let w = side ?? UIScreen.main.bounds.width - 40
             image = await MapThumb.snapshot(lat: lat, lng: lng,
-                                            size: CGSize(width: side * 2, height: side * 2),
-                                            dark: scheme == .dark)
+                                            size: CGSize(width: w * 2, height: (side ?? height) * 2),
+                                            dark: scheme == .dark,
+                                            meters: side == nil ? 700 : 500)
         }
         .accessibilityHidden(true)      // the card already says where the tree is
     }
