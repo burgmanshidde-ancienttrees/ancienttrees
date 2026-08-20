@@ -12,6 +12,18 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-20 (session) - Cleared the writing shelf: Lyon to 12, Bari's 3 verified trees stay held below the 4-tree floor
+
+`python3 scripts/visitors.py`: 330 visits, 511 page views over the last 7 days (13th 17, 14th 34, 15th 33, 16th 83, 17th 44, 18th 67, 19th 42, 20th 10 so far). `prepare.py` said the shelf was already stocked: 40 cities staged for verify, 5 trees awaiting a writer (bari 3, lyon 2). Followed the prompt's own instruction to finish what's staged before starting anything fresh.
+
+Step 0: `health.py` rung 2 clear (smoke, deploy, digest, fresh-eyes all green, no BLOCKER). REVIEW.md's one open WARN (2026-08-19, `city_queue.py --next`'s STAGE 1 header over-claiming Hidde's authorization for from-zero research) turned out already fixed in the code (the `*`-marks-the-named-17 fix is live at lines 424-438); answered it in the ledger rather than re-doing the work. Supabase submissions: all 6 rows already processed and previously resolved (checked CURATION.md for each; nothing left to do). Nothing published found wrong.
+
+Wrote the 3 missing stories on the shelf (bar_003 The Pine of Carrassi, lyo_012 The Anne Frank Chestnut, lyo_013 The Plane Tree of Place Antoine-Rivoire) directly in-session rather than dispatching a writing pass for such a small batch. **Lyon merged: 10 to 12 trees**, both new entries sit within 1.3-2.4km of Lyon's existing clusters (checked by distance, not by name), fixed a stale "all ten" FAQ line and a "eight more" `question_meta` promise that `preflight.py` caught. Ran `tree_index.py`, `npm --prefix site ci && npm --prefix site run build` (1936 pages, clean), `qa.py` (1 pre-existing sitemap-lastmod warning from this sandbox's shallow git checkout, not a real defect: `deploy.yml` uses `fetch-depth: 0`), `superlatives.py` (415 claims, no collisions).
+
+**Bari's 3 verified trees (bar_001, bar_002, bar_003) stay unmerged.** Puglia's register for Bari is exhausted: only 4 monumental trees are designated in the whole city, and the other one is blocked (a Villa Sbisa pine, university grounds with no public access) alongside a second already-blocked school-courtyard leccio. That leaves exactly 3 usable, one short of the 4-tree floor, and finding a 4th means from-zero web research, which rule 1(d) keeps off for Bari (not one of Hidde's 17 named cities). Left the 3 fully written and ready in `data/research/bari-verified.json` for whenever a register import, reader submission or a name from Hidde unlocks a 4th tree.
+
+Logged both to `data/agent-costs.json` under 2026-08-20. Committed and pushed.
+
 ## 2026-08-20 - Night run 2026-08-20 02:46 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 16.4 minutes of its 120 minute window, 118 turns, 15 commands refused by the allowlist, ended clean (success). 6 commit(s), none of them a published tree. Claims left behind: bari, lyon, krakow, warsaw, which block the top of the queue until they expire.
