@@ -2755,6 +2755,15 @@
     "note": "Reader submission (3 duplicate rows, elm species correction) checked directly against city open-data API, not changed: register still says Ulmus glabra at the exact coordinate and uniquely flags it remarkable; found the likely explanation (a non-flagged Ulmus laevis 15m away). Added verify_notes and one story sentence, no new tree, all 3 rows marked processed.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "lombardy-poplar",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 0,
+    "note": "Species page gap closed (pagegaps.py): hand-written intro for Lombardy Poplar (3 trees: Amsterdam, Seattle, Portland), grounded in each tree own story facts. In-session, no agent dispatched.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
