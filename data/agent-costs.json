@@ -2764,6 +2764,15 @@
     "note": "Species page gap closed (pagegaps.py): hand-written intro for Lombardy Poplar (3 trees: Amsterdam, Seattle, Portland), grounded in each tree own story facts. In-session, no agent dispatched.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "lyon",
+    "kind": "verify",
+    "tokens": 137245,
+    "trees": 1,
+    "note": "Deepen pass via verify subagent: 1 new tree (Square Gabrielle Dupond-Ebrard cedar, joins Point du Jour cluster near lyo_004) confirmed via register + independent local-streets-site source; most register candidates nearby were single-source-only or private-garden and stayed leads (7 new leads recorded); story written and merged in-session (Lyon 12 to 13).",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
