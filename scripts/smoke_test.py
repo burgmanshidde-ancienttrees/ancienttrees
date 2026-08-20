@@ -184,9 +184,14 @@ f.addEventListener('load', function() {
         var clear = bg === 'transparent' || /,\s*0\)$/.test(bg);
         return !clear || parseFloat(s.borderLeftWidth || 0) > 0;
       }
-      function inset(el) {
-        return paints(el) && el.parentElement
-               && Math.abs(el.getBoundingClientRect().left - contentLeft(el.parentElement)) > SAME;
+      // A box the reader can see lines up by its edge; everything else lines up
+      // by its text. That is why a tinted fact table inside a text column is not
+      // a fault (its border sits on the gutter) while a padded row with no
+      // background is (nothing marks the 7px it steals).
+      function blockish(el) {
+        var disp = cs(el).display;
+        if (disp.indexOf('inline') !== 0) return true;
+        return paints(el) || !!LEAF[el.tagName.toUpperCase()];
       }
       function ownText(el) {
         for (var i = 0; i < el.childNodes.length; i++) {
@@ -205,15 +210,15 @@ f.addEventListener('load', function() {
         var best = null, who = null;
         (function walk(n) {
           if (n.namespaceURI !== HTML || !vis(n) || inScroller(n, stop) || centred(n)) return;
-          var L;
-          if (LEAF[n.tagName.toUpperCase()] || rowish(n) || ownText(n) || !n.children.length) {
-            L = inset(n) ? n.getBoundingClientRect().left : contentLeft(n);
-          } else if (inset(n)) {
-            L = n.getBoundingClientRect().left;
-          } else {
+          var stop = LEAF[n.tagName.toUpperCase()] || rowish(n) || ownText(n) || !n.children.length;
+          if (!stop && !paints(n)) {
             for (var i = 0; i < n.children.length; i++) walk(n.children[i]);
             return;
           }
+          // An inline run's left edge is set by the words in front of it, not by
+          // a gutter, so <strong> halfway down a paragraph is not a measurement.
+          if (!blockish(n)) return;
+          var L = paints(n) ? n.getBoundingClientRect().left : contentLeft(n);
           if (best === null || L < best - 0.01) { best = L; who = sel(n); }
         })(el);
         return best === null ? null : {left: best, who: who};
