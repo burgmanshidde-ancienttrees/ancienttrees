@@ -1,0 +1,62 @@
+{
+ "leads": [
+  {
+   "register_nr": 1680853,
+   "name": "Zwarte populier Noorderplantsoen Groningen",
+   "species": "Black Poplar (Populus nigra), possibly common poplar per register's own doubt",
+   "latitude": 53.223791,
+   "longitude": 6.554769,
+   "reason": "Register (netherlands-lrmb nr 1680853) calls this the tallest/thickest tree in Noorderplantsoen ('de koning van het plantsoen') but its own 2020 note records large sections of dying bark and says the tree is entering its final phase, though still alive with enough sap flow for lush foliage as of the register's last update. It also sits only 31.2 m from the already-published gro_004 (The Duck's Foot Tree of Noorderplantsoen, Ginkgo biloba) per the brief's near_published flag, a different species but close enough that a health recheck and a clearer sense of it as its own distinct stop (not just 'more park trees near the ginkgo') should happen before it ships. Not blocked: nothing here says it is dead, and a declining-but-alive veteran is exactly the kind of tree this project wants once its status is current."
+  },
+  {
+   "register_nr": [1680064, 1680065],
+   "name": "Gewone plataan RUG / Hollandse iep (pair, adjacent coordinates)",
+   "species": "London Plane (Platanus x acerifolia) and Dutch Elm",
+   "latitude": 53.223438,
+   "longitude": 6.568251,
+   "reason": "Both stand 'ingebouwd op het terrein van RUG' (built into the university's grounds); the plane's own 2023 register note says construction activity on site made it hard to inspect. Public accessibility of this specific spot on Rijksuniversiteit Groningen's terrain was not established this pass. Needs a check on whether this is open campus ground or gated, per the school/campus access test, before verifying further."
+  },
+  {
+   "register_nr": null,
+   "name": "Huwelijks lindeboom Groningen",
+   "species": "Lime/Linden (Tilia sp.)",
+   "latitude": 53.20838,
+   "longitude": 6.57745,
+   "reason": "Not researched this pass (time-boxed). Coordinates put it near the Zuiderplantsoen/Sterrebos cluster (gro_002, gro_003) rather than the Oude Hortus/Noorderplantsoen cluster this pass prioritized. Worth a look for a southern-cluster follow-up pass; register age band 1930-1940 makes it a younger tree so the story would need to lean on the name/history rather than age."
+  }
+ ],
+ "blocked": [
+  {
+   "register_nr": 1691164,
+   "name": "Beuk binnentuin Turfsingel Groningen",
+   "species": "European Beech (Fagus sylvatica)",
+   "latitude": 53.221719,
+   "longitude": 6.567044,
+   "reason": "Register's own text: stands in the 'binnentuin van een appartement' (inner courtyard of an apartment building), 'niet zichtbaar vanaf de Turfsingel' (not visible from the street), only the top of the crown visible from Hofstraat or partly from beside the Adventkerk. Private residential courtyard, not genuinely open to visitors. Blocked per the private-land rule."
+  },
+  {
+   "register_nr": 1691165,
+   "name": "Zwarte walnoot binnentuin Turfsingel Groningen",
+   "species": "Black Walnut (Juglans nigra)",
+   "latitude": 53.221912,
+   "longitude": 6.567117,
+   "reason": "Register's own text: stands in the 'achtertuin van een woning' (back garden of a private house). Private residential garden, not genuinely open to visitors. Blocked per the private-land rule."
+  },
+  {
+   "register_nr": 1680043,
+   "name": "Kaukasische vleugelnoot",
+   "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+   "latitude": 53.22258,
+   "longitude": 6.560628,
+   "reason": "Register's entire history note reads: 'Boom is op 3 meter afgezaagd i.v.m. gevaarzetting' (the tree was sawn down to 3 m because it was a hazard). Not a standing, collectible tree in its recorded form; blocked as effectively removed. Could be revisited if it has since resprouted into a real crown, but nothing in the source confirms that."
+  },
+  {
+   "register_nr": 1680049,
+   "name": "Ruwe iep (afgezaagd)",
+   "species": "Wych Elm (Ulmus glabra)",
+   "latitude": 53.222575,
+   "longitude": 6.560554,
+   "reason": "Register history: 2002 advice to thin the crown, then a 2015 observation that the tree had been sawn down to 3 m height ('afgezaagd tot op 3 meter hoogte'). Not a standing collectible tree; blocked as effectively removed, matching the brief's own flag on this entry."
+  }
+ ]
+}

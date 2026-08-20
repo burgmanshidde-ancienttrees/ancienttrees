@@ -1,0 +1,280 @@
+{
+  "leads": [
+    {
+      "register_nr": 1688710,
+      "name": "Gewone esdoorn (Norway/sycamore maple)",
+      "latitude": 52.086034,
+      "longitude": 5.128765,
+      "place": "Zonnenburg, net ten zuiden van de herdenkingsbeuk, Utrecht",
+      "planted_band": "1880-1890",
+      "reason": "gemeente-owned, visitable ja, visible ja, in the same Zonnenburg cluster as utr_013/utr_014/utr_015. Not verified this pass for lack of time; needs a second source beyond the register."
+    },
+    {
+      "register_nr": 1688669,
+      "name": "Bruine beuk (Copper Beech)",
+      "latitude": 52.089072,
+      "longitude": 5.130142,
+      "place": "Maliebaan-rotonde, t.h.v. nr 9, Utrecht",
+      "planted_band": "1880-1890",
+      "reason": "CAUTION before publishing: register's own history field says 'boom is geveld vanwege ernstige aantasting door de reuzenzwam' (tree was felled due to severe infection by giant polypore fungus). Register status flag is 5. This tree may be DEAD; verify news/street view before ever using it. Do not ship without checking currently."
+    },
+    {
+      "register_nr": 1688782,
+      "name": "Gele pavia (Yellow buckeye)",
+      "latitude": 52.089458,
+      "longitude": 5.129136,
+      "place": "Park Lepelenburg tegenover Swanenberg, a/h water, Utrecht",
+      "planted_band": "1910-1920",
+      "reason": "gemeente-owned, visitable ja, in the Lepelenburg cluster alongside utr_016. Not verified this pass."
+    },
+    {
+      "register_nr": 1678149,
+      "name": "Hollandse iep (Dutch Elm)",
+      "latitude": 52.088123,
+      "longitude": 5.138844,
+      "place": "West ingang Wilhelminapark, Utrecht",
+      "planted_band": "1880-1890",
+      "reason": "gemeente-owned, visitable ja, Wilhelminapark cluster (same cluster as utr_010/011/012). Not verified this pass."
+    },
+    {
+      "register_nr": 1688673,
+      "name": "Hemelboom (Tree of Heaven)",
+      "latitude": 52.089192,
+      "longitude": 5.130403,
+      "place": "Maliebaan t.h.v.nr 13, rotonde Maliebaan/Maliesingel, Utrecht",
+      "planted_band": "1890-1900",
+      "reason": "gemeente-owned, visitable ja, on a roundabout island (check pedestrian access honestly before publishing). Not verified this pass."
+    },
+    {
+      "register_nr": 1684532,
+      "name": "Treurwilg (Weeping Willow)",
+      "latitude": 52.089248,
+      "longitude": 5.127685,
+      "place": "Lepelenburg t.o. 17 t/m 39, Utrecht",
+      "planted_band": "1910-1920",
+      "reason": "gemeente-owned, visitable ja, herdenkingsboom (memorial tree), Lepelenburg cluster. Note: a different Lepelenburg weeping willow (planted 1934, Queen Mother Emma memorial) is documented as having fallen down per a DUIC news search result during this pass; confirm THIS entry is still standing and is not that fallen tree before using it."
+    },
+    {
+      "register_nr": 1689877,
+      "name": "Tempelboom (Pagoda tree / Styphnolobium japonicum)",
+      "latitude": 52.089505,
+      "longitude": 5.129104,
+      "place": "Lepelenburg tegenover Swanenberg, Utrecht",
+      "planted_band": "1950-1960",
+      "reason": "gemeente-owned, visitable ja, Lepelenburg cluster. Younger tree (only ~70-80 years). Not verified this pass."
+    },
+    {
+      "register_nr": 1688790,
+      "name": "Venijnboom (Yew)",
+      "latitude": 52.08514,
+      "longitude": 5.126795,
+      "place": "Oude Hortus, Nieuwe Gracht, Utrecht (n_trees: 2, register records a pair)",
+      "planted_band": "1860-1870",
+      "reason": "publiekrechtelijke organisatie (public body), visitable ja, but visible 'nee' and it is inside the Oude Hortus botanical garden, which already has three published trees (utr_002/003/004) and may have paid/restricted entry hours; check the garden's own access rules before publishing. Register records this as a pair (n_trees 2), so if used it should ship as one entry per the register-twins rule."
+    },
+    {
+      "register_nr": 1688712,
+      "name": "Bruine beuk (Copper Beech)",
+      "latitude": 52.087912,
+      "longitude": 5.128047,
+      "place": "Tegenover Leeuwenberghkerk, Servaasbolwerk, Utrecht",
+      "planted_band": "1890-1900",
+      "reason": "gemeente-owned, visitable ja, visible ja, Servaasbolwerk cluster, same species as utr_015 but different specimen and much older band. Strong candidate for a follow-up pass; not verified this pass for lack of time."
+    },
+    {
+      "register_nr": 1688783,
+      "name": "Witte paardenkastanje (White Horse Chestnut)",
+      "latitude": 52.090038,
+      "longitude": 5.127723,
+      "place": "Naast brug Herenstraat/Lepelenburg, Utrecht",
+      "planted_band": "1910-1920",
+      "reason": "gemeente-owned, visitable ja, right beside utr_016 (Oriental Plane), same bridge. Good cluster candidate for a follow-up pass."
+    },
+    {
+      "register_nr": 1693098,
+      "name": "Zilverlinde (Silver Lime), row of 4",
+      "latitude": 52.089634,
+      "longitude": 5.138117,
+      "place": "Van Hogendorpstraat thv nr 15",
+      "planted_band": "1900-1910",
+      "reason": "gemeente-owned, visitable ja, n_trees 4 (a row, not one point; would need the register-twins/ensemble test applied). Near Wilhelminapark. Not verified this pass."
+    },
+    {
+      "register_nr": 1678148,
+      "name": "Hollandse linde (Dutch Lime)",
+      "latitude": 52.088356,
+      "longitude": 5.139233,
+      "place": "Nabij V.Limburg-Stirumlaan, Wilhelminapark, Utrecht",
+      "planted_band": "1880-1890",
+      "reason": "gemeente-owned, visitable ja, Wilhelminapark cluster. Not verified this pass; good candidate for follow-up, only the general park-level Wikipedia/rijksmonument context was found, no tree-specific second source yet."
+    },
+    {
+      "register_nr": 1678147,
+      "name": "Zilveresdoorn (Silver Maple), pair",
+      "latitude": 52.087817,
+      "longitude": 5.139382,
+      "place": "z-westen van Burgm.F.Andreamonument, Wilhelminapark, Utrecht",
+      "planted_band": "1880-1890",
+      "reason": "gemeente-owned, visitable ja, n_trees 2 (register records a pair near the Andrea monument). Wilhelminapark cluster."
+    },
+    {
+      "register_nr": 1688711,
+      "name": "Gewone haagbeuk (Common Hornbeam)",
+      "latitude": 52.086086,
+      "longitude": 5.128886,
+      "place": "Aan voetpad noordzijde Sterrenwacht, Servaasbolwerk, Utrecht",
+      "planted_band": "1830-1840",
+      "reason": "gemeente-owned, visitable ja, Zonnenburg/Sterrenwacht cluster, one of the oldest bands in the whole candidate set. Strong candidate for a follow-up pass."
+    },
+    {
+      "register_nr": 1678123,
+      "name": "Gewone plataan (Common Plane)",
+      "latitude": 52.08586,
+      "longitude": 5.129031,
+      "place": "Plantsoen a/d Servaasbolwerk, noordzijde Sterrewacht, Utrecht",
+      "planted_band": "1830-1840",
+      "reason": "gemeente-owned, visitable ja, visible ja, Zonnenburg/Sterrenwacht cluster, same age band as utr_013/014. Not verified this pass; strong follow-up candidate."
+    },
+    {
+      "register_nr": 1691749,
+      "name": "Gewone plataan (Common Plane), group of 3",
+      "latitude": 52.088289,
+      "longitude": 5.138984,
+      "place": "Direct naast rotonde westrand Wilhelminapark, Utrecht",
+      "planted_band": "1890-1900",
+      "reason": "gemeente-owned, visitable ja, n_trees 3 (register records a small group). Wilhelminapark cluster."
+    },
+    {
+      "register_nr": 1693148,
+      "name": "Krimlinde (row of 10)",
+      "latitude": 52.090898,
+      "longitude": 5.135459,
+      "place": "Wolter Heukelslaan thv nr 20, in a hofje (almshouse courtyard)",
+      "planted_band": "1920-1930",
+      "reason": "owner_category stichting (foundation), visitable ja per register, but it sits inside a 'hofje' (a walled almshouse courtyard, rijksmonument, per register history text: 16 dwellings around a garden with 4 pumps). Hofjes are often open to the public in daytime but this needs an explicit access check before shipping, same caution as churches/convents in hard rule 10. Register itself notes the age is uncertain: 'staan op geboortejaar 1920, maar zouden ook 19e eeuws kunnen zijn' (dated 1920 but could be 19th century)."
+    },
+    {
+      "register_nr": 1678211,
+      "name": "Vegeta iep (Vegeta Elm)",
+      "latitude": 52.085843,
+      "longitude": 5.124038,
+      "place": "In de Warendorfftuin, Vrouw Juttehof, Lange Nieuwstraat 93-95, Utrecht",
+      "planted_band": "1860-1870",
+      "reason": "owner_category gemeente but setting is 'tuin' (garden) inside the Vrouw Juttehof, another hofje/almshouse courtyard. Needs an explicit access check before shipping, same caution as above."
+    }
+  ],
+  "blocked": [
+    {
+      "register_nr": 1688577,
+      "name": "Hollandse linde (Dutch Lime)",
+      "latitude": 52.08808,
+      "longitude": 5.125178,
+      "place": "Op werfkelders, langs de Nieuwegracht, Utrecht",
+      "reason": "Already covered: this coordinate sits within about 90m of the already-published utr_005 'Onder de Linden' entry (52.0874291,5.1257909), which describes exactly this row of lindens on the southern Nieuwegracht between the Quintijnsbrug and Brigittenbrug, sourced from the same Oud-Utrecht article this pass independently found. Do not ship as a separate tree; it is the same collectible ensemble already live. Folding one more individually-registered specimen from this row into a second entry would duplicate utr_005."
+    },
+    {
+      "register_nr": 1678215,
+      "name": "Gewone plataan (Common Plane)",
+      "latitude": 52.09212,
+      "longitude": 5.133337,
+      "place": "Achter Aartsbisschopspaleis, Maliebaan 40, Utrecht",
+      "reason": "Oldest candidate found this pass (planted_band 1700-1750) but the register's own place text says explicitly 'Boom is niet bezoekbaar' (tree is not visitable), directly contradicting the record's own visitable:'ja' flag. Owner_category is religieuze instantie (the Archbishop's Palace, a religious institution) and the tree stands behind the building. Per hard rule 10, treat the explicit non-visitable note as authoritative over the flag. Blocked unless a future pass finds real evidence of public access."
+    },
+    {
+      "register_nr": 1688702,
+      "name": "Bruine beuk (Copper Beech)",
+      "latitude": 52.09238,
+      "longitude": 5.13282,
+      "place": "Achter Aartsbisschoppaleis, Maliebaan 40, Utrecht",
+      "reason": "Same location and owner as 1678215 above (behind the Archbishop's Palace grounds); blocked for the same reason until access evidence exists."
+    },
+    {
+      "register_nr": 1688787,
+      "name": "Venijnboom (Yew)",
+      "latitude": 52.088833,
+      "longitude": 5.125528,
+      "place": "Achter Centre for Generative Leadership, Nieuwe Gracht 36, Utrecht",
+      "reason": "owner_category particulier, visitable nee, visible nee. Private garden."
+    },
+    {
+      "register_nr": 1688692,
+      "name": "Gewone es (Common Ash)",
+      "latitude": 52.090332,
+      "longitude": 5.130894,
+      "place": "Achtertuin Maliebaan 10 of 10a, Utrecht",
+      "reason": "owner_category particulier, visitable nee, visible nee. Private back garden."
+    },
+    {
+      "register_nr": 1688796,
+      "name": "Venijnboom (Yew)",
+      "latitude": 52.088523,
+      "longitude": 5.126875,
+      "place": "Tegen muur achterin de tuin Brigittenstraat 11, Utrecht",
+      "reason": "owner_category particulier, visitable onbekend. Private garden, only glimpsed from a neighbouring path per the register note; not a genuine public viewpoint."
+    },
+    {
+      "register_nr": 1689908,
+      "name": "Bruine beuk (Copper Beech)",
+      "latitude": 52.08874,
+      "longitude": 5.125607,
+      "place": "Achter Nieuwegracht 36, Utrecht (voormalig schoolplein)",
+      "reason": "owner_category particulier, visitable nee, visible nee. Private garden on a former schoolyard."
+    },
+    {
+      "register_nr": 1690083,
+      "name": "Dwergcypres (Dwarf Cypress)",
+      "latitude": 52.086195,
+      "longitude": 5.138286,
+      "place": "Wilhelmiapark 52, Utrecht",
+      "reason": "owner_category particulier, visitable onbekend. Private garden despite the Wilhelminapark-adjacent address."
+    },
+    {
+      "register_nr": 1688573,
+      "name": "Bontbladige iep (Variegated Elm)",
+      "latitude": 52.088479,
+      "longitude": 5.12362,
+      "place": "Hamburgerstraat 21, Utrecht",
+      "reason": "owner_category particulier, visitable onbekend. Private garden."
+    },
+    {
+      "register_nr": 1678210,
+      "name": "Japanse notenboom (Japanese Pagoda Tree)",
+      "latitude": 52.086503,
+      "longitude": 5.124776,
+      "place": "Huize Zuylenspiegel, Zuilenstraat 5, Utrecht",
+      "reason": "owner_category particulier, visitable onbekend. Private house grounds."
+    },
+    {
+      "register_nr": 1688794,
+      "name": "Witte paardenkastanje (White Horse Chestnut)",
+      "latitude": 52.086654,
+      "longitude": 5.124965,
+      "place": "Huize Zuylenspiegel, Zuilenstraat 7, Utrecht",
+      "reason": "owner_category particulier, visitable onbekend. Private house grounds."
+    },
+    {
+      "register_nr": 1689879,
+      "name": "Amerikaanse es (American Ash)",
+      "latitude": 52.090207,
+      "longitude": 5.124295,
+      "place": "Zuidzijde Paushuis, Kromme Nieuwegracht 49, Utrecht",
+      "reason": "owner_category particulier, visitable onbekend. Private grounds despite the notable Paushuis address."
+    },
+    {
+      "register_nr": 1688665,
+      "name": "Witte paardenkastanje (White Horse Chestnut)",
+      "latitude": 52.0899,
+      "longitude": 5.12494,
+      "place": "Gregoriustuin, Nieuwe gracht 20, Utrecht",
+      "reason": "owner_category particulier, visitable onbekend. Private garden."
+    },
+    {
+      "register_nr": 1691618,
+      "name": "Ruwe iep (Wych Elm)",
+      "latitude": 52.090051,
+      "longitude": 5.133241,
+      "place": "2e Korte Baanstraat 2, Utrecht",
+      "reason": "owner_category particulier, visitable onbekend. Private garden."
+    }
+  ]
+}
