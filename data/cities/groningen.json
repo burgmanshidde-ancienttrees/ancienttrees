@@ -3,9 +3,9 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Groningen's oldest tree keeps company with cows, not city planners: a lime planted in 1684 still stands before a private farmhouse northeast of the centre, decades before Groningen laid out a single public park. Its younger rivals cluster in the Sterrebos, an 18th-century star-shaped forest whose oaks turned out, after a 2024 storm and a ring count, to be far older than anyone had assumed. One of the park's rarest trees, a sessile oak spared from a paving project in 2025, is still fighting for root space today.",
-  "meta_description": "Groningen's oldest tree is a 1684 lime at a private farm, older than any tree in its parks. Ten verified locations, real stories, one under threat.",
+  "meta_description": "Groningen's oldest tree is a 1684 lime at a private farm, older than any tree in its parks. Sixteen verified locations, real stories, one under threat.",
   "question_answer": "Groningen's oldest tree is a Common Lime at De Rollen, a moated farm on the city's northeastern edge, planted in 1684 and now roughly 340 years old. The Dutch national heritage register calls it plainly the oldest tree in the province, older than anything in the city's own celebrated parks by more than a century.",
-  "question_meta": "A 1684 lime at a moated farm called De Rollen, on Groningen's edge, is the city and province's oldest documented tree. The full five.",
+  "question_meta": "A 1684 lime at a moated farm called De Rollen, on Groningen's edge, is the city and province's oldest documented tree. The full sixteen.",
   "question_context": "Groningen's age claims split cleanly into documented and inferred. The Common Lime at De Rollen carries an actual date, 1684, recorded in the Rijksdienst voor het Cultureel Erfgoed's own listing for the farm and repeated in the municipality's 2018 monumental tree policy, which is why it anchors this page as the oldest tree in the city despite standing on private farmland rather than in a park built for visitors. Sterrebos's surviving oaks come close on a technicality: when a storm toppled one of their number in January 2024, a ring count revealed a germination year of around 1758, nearly 130 years earlier than the previous estimate, and heritage officials now assume its still-standing neighbours share that birth year, though none of the survivors have themselves been individually dated. The rest of the list is honestly younger and more provisional: Noorderplantsoen's ginkgo rests on a single municipal source, and Groenestein's plane tree is inferred from the size of its trunk and the age of the estate around it rather than any planting record. None of that uncertainty is unusual for trees planted before anyone thought to write the date down.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Groningen's remarkable trees free to visit?",
-      "a": "Nine of the ten stand in public parks or squares, open at any time. The De Rollen lime is on working farmland and is visible only from the public road, Noorddijkerweg."
+      "a": "All are free. Fifteen of the sixteen stand on public ground; the De Rollen lime is on working farmland and is visible only from the public road, Noorddijkerweg. Most public trees are open at any time, though the walled Prinsentuin garden and the Oude Hortus keep their own daily opening hours."
     },
     {
       "q": "What is Groningen's rarest tree?",
@@ -339,6 +339,192 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "gro_011",
+      "name": "The Weeping Beech of the Oude Hortus",
+      "species": "Weeping Beech (Fagus sylvatica \"Pendula\")",
+      "age_estimate": "about 150 years",
+      "age_min": 136,
+      "age_max": 150,
+      "girth_cm": null,
+      "location": {
+        "address": "Oude Hortus, Grote Kruisstraat 2-1 / Grote Rozenstraat, Groningen",
+        "latitude": 53.22315,
+        "longitude": 6.558417,
+        "neighbourhood": "Hortusbuurt"
+      },
+      "verified_sources": [
+        "netherlands-lrmb register entry 1689570 (Landelijk Register Monumentale Bomen / Bomenstichting)",
+        "https://nl.wikipedia.org/wiki/Oude_Hortus_(Groningen)"
+      ],
+      "access": "Free, in the publicly accessible Oude Hortus garden (open during garden hours in the Hortusbuurt)",
+      "transport": "Groningen Centraal station, about 18 minute walk",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "verify_notes": "Register (netherlands-lrmb nr 1689570) records this weeping beech in the Oude Hortus, the University of Groningens former botanical garden (founded 1626 by apothecary Henricus Munting, plants moved to Hortus Haren in 1967, the old garden site remained and is now a public garden per Dutch Wikipedia). The register places its planting in the 1880-1890 band; the gardens own folder text (quoted verbatim in the register entry) calls it \"1876\" and names it \"het pronkjuweel van de Oude Hortus\" (the showpiece/jewel of the Oude Hortus), describing its overhanging crown and noting a glass wall was built into the adjacent Muntinggebouw specifically so the tree is visible from Nieuwe Kijk in t Jatstraat. Given the two figures (1876 from the garden folder vs 1880-1890 register band) age_estimate uses the broader, safer figure: about 150 years (136-150) as of 2026. The tree was given extra protection in 1996 during RUG construction work nearby and the register notes it has stayed healthy since. Register condition assessment: healthy, form Treurvorm (weeping). Two-source basis: the register entry (which itself quotes a third source, the gardens own visitor folder) plus Dutch Wikipedias Oude Hortus article confirming the garden is public and dates from 1626, moved to Haren in 1967. No girth recorded in the sources found; not fabricated.",
+      "story": "A glass wall exists in Groningen because of this tree. When the university rebuilt the Muntinggebouw beside the Oude Hortus, the architects set a window into the new facade specifically so this weeping beech would still be visible from Nieuwe Kijk in 't Jatstraat outside, rather than being hidden behind a solid wall the way ordinary landscaping usually loses to construction. The garden's own visitor folder calls it \"het pronkjuweel van de Oude Hortus,\" the showpiece of the Old Hortus, and its cascading, overhanging crown is the reason: Fagus sylvatica \"Pendula\" grows its branches down and outward rather than up, forming a green curtain rather than a canopy.\n\nThe garden's folder dates the planting to 1876; the Dutch national monumental tree register instead gives a broader 1880s band, so treat the age, around a hundred and fifty years, as bracketed between two sources rather than pinned to one. Construction work by the university in 1996 threatened its roots, and the tree was given formal protection at that point, a decision the glass wall later echoed.\n\nThe Oude Hortus itself began in 1626 as the university's working botanical garden, moved its living collection to Hortus Haren in 1967, and stayed open afterward as public parkland. Free, roughly twenty minutes from Centraal by foot.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "gro_012",
+      "name": "The London Plane of the Oude Hortus",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "about 150 years",
+      "age_min": 145,
+      "age_max": 156,
+      "girth_cm": 400,
+      "location": {
+        "address": "Oude Hortus, Grote Kruisstraat 2-1 / Grote Rozenstraat, Groningen",
+        "latitude": 53.222816,
+        "longitude": 6.55812,
+        "neighbourhood": "Hortusbuurt"
+      },
+      "verified_sources": [
+        "netherlands-lrmb register entry 1696519 (Landelijk Register Monumentale Bomen / Bomenstichting)",
+        "https://nl.wikipedia.org/wiki/Oude_Hortus_(Groningen)"
+      ],
+      "access": "Free, in the publicly accessible Oude Hortus garden (open during garden hours in the Hortusbuurt)",
+      "transport": "Groningen Centraal station, about 18 minute walk",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "verify_notes": "Register (netherlands-lrmb nr 1696519) records a common plane (gewone plataan) on the corner by newer university building in the Oude Hortus, planted 1876, described as a very tall (29 m) specimen with a trunk girth of \"ruim 4 meter\" (just over 4 m = recorded here as girth_cm 400, a floor figure, not a precise measurement) and in good health on a favourable site. Register planted_band is 1870-1880, consistent with the 1876 figure in the same entry. Age given as ~150 years as of 2026 (145-156 to cover both the exact 1876 date and the decade band). Second source: Dutch Wikipedia confirms the Oude Hortus is a public garden dating to 1626, with plants moved to Hortus Haren in 1967 and the old site remaining as a public garden in the Hortusbuurt today, i.e. this tree is genuinely publicly accessible. A WebSearch AI summary separately claimed a plane tree in Oude Hortus has a girth of 5.10 m; that figure was not found on any fetched page (only in the search-engine summary) so it is deliberately NOT used here, per the search-summary caution: only the register-stated \"ruim 4 meter\" is recorded.",
+      "story": "This plane and the weeping beech nearby went into the ground the same year, 1876, on the same patch of former university botanical garden, and one of them has grown into one of the tallest trees in the Oude Hortus. The Dutch national monumental tree register measures it at 29 metres with a trunk just over four metres round, in good health on what the register calls a favourable site, a corner plot beside the garden's newer university building.\n\nLondon plane is the hybrid workhorse of European city planting, bred from American sycamore and Oriental plane and prized for tolerating compacted soil and polluted air better than almost anything else that grows this large, which is most of why it lines so many European streets and squares. This one, though, grows in a garden rather than along a road, part of a collection that began as a teaching ground for medicinal and useful plants in 1626 under the apothecary Henricus Munting.\n\nThe Oude Hortus kept its historic site as public parkland after the university moved its living plant collection to Hortus Haren in 1967, so the garden today is walkable rather than a research facility. Free entry, about twenty minutes on foot from Groningen Centraal.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "gro_013",
+      "name": "The Ginkgo of the Oude Hortus",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "about 130 years",
+      "age_min": 126,
+      "age_max": 136,
+      "girth_cm": null,
+      "location": {
+        "address": "Oude Hortus, entrance opposite Nieuwe Kijk in t Jatstraat 59, Groningen",
+        "latitude": 53.222661,
+        "longitude": 6.557621,
+        "neighbourhood": "Hortusbuurt"
+      },
+      "verified_sources": [
+        "netherlands-lrmb register entry 1696518 (Landelijk Register Monumentale Bomen / Bomenstichting)",
+        "https://www.kunstpuntgroningen.nl/stadsgroen/oude-hortus/"
+      ],
+      "access": "Free, in the publicly accessible Oude Hortus garden (open during garden hours in the Hortusbuurt)",
+      "transport": "Groningen Centraal station, about 18 minute walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Register (netherlands-lrmb nr 1696518) records this three-stemmed ginkgo (its own name field mistranslates it as \"Japanse notenboom\"/Japanese walnut, but the entry text itself correctly identifies it as Ginkgo biloba), planted close to the facade of the former Botanical Laboratory (now replaced by a modern building) in 1896, in reasonable condition with a sound trunk and woodpecker holes higher in the crown; register calls it the thickest ginkgo in the city of Groningen. Age ~130 years as of 2026 (126-136 to span the 1896 date plus the register decade band 1890-1900). FLAG: a WebSearch AI summary and a secondary blog (bomenbieb.nl) both claim \"the oldest Ginkgo biloba in the Netherlands\" stands in an \"Oude Hortus\" that was planted circa 1770 - but fetching bomenbieb.nl directly showed that specific claim is about a DIFFERENT tree, in Utrecht (Oude Hortus Botanicus Utrecht, Lange Nieuwstraat 106), not Groningen. This is exactly the bridge-claim/search-summary trap: two real Oude Hortus botanical gardens exist (Utrecht and Groningen) and the AI search summary conflated them. Do NOT carry the \"oldest in the Netherlands\" claim onto Groningens ginkgo; only the registers own claim (thickest ginkgo in the city of Groningen, planted 1896) is used here. kunstpuntgroningen.nl (fetched) independently confirms an old, multi-stemmed ginkgo stands in the Oude Hortus and calls it notable, serving as the second source for existence/species/location; it does not corroborate an age or ranking claim beyond that.",
+      "story": "Woodpeckers have worked this ginkgo's upper crown for years, and the Dutch national monumental tree register still calls its trunk sound underneath the damage: a three-stemmed specimen planted in 1896 close to the facade of what was then the university's Botanical Laboratory, since replaced by a newer building. The register rates it the thickest ginkgo growing anywhere in the city of Groningen.\n\nGinkgo biloba is a living fossil in the least metaphorical sense available, the last surviving species of a plant family that predates most of the trees around it by tens of millions of years, easy to spot by fan-shaped leaves unlike any other tree's. This one stands roughly a hundred and thirty years old, planted twenty years after the plane and the weeping beech elsewhere in the same garden, during the Oude Hortus's working life as the university's botanical teaching collection.\n\nThe garden itself dates to 1626, founded by the apothecary Henricus Munting, and kept functioning as a research and teaching ground until 1967, when the university's living plant collection moved out to Hortus Haren and left this walled plot as the public garden it remains today. Free, roughly twenty minutes on foot from Centraal station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "gro_014",
+      "name": "The Green Beeches of the Nieuwe Kerkhof",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "roughly 150-160 years",
+      "age_min": 150,
+      "age_max": 166,
+      "girth_cm": null,
+      "location": {
+        "address": "Nieuwe Kerkhof, Nieuwe Boteringestraat, Groningen",
+        "latitude": 53.223027,
+        "longitude": 6.561528,
+        "neighbourhood": "Binnenstad-Noord"
+      },
+      "verified_sources": [
+        "netherlands-lrmb register entry 1680042 (Landelijk Register Monumentale Bomen / Bomenstichting)",
+        "https://en.wikipedia.org/wiki/Nieuwe_Kerk,_Groningen (church context) and general web sources describing old beeches on the Nieuwe Kerkhof lawn"
+      ],
+      "access": "Free, on the open public square (Nieuwe Kerkhof) beside the Nieuwe Kerk",
+      "transport": "Groningen Centraal station, about 18 minute walk",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "verify_notes": "Register (netherlands-lrmb nr 1680042) records a pair (n_trees: 2) of green (ordinary, non-copper) beeches on the Nieuwe Kerkhof, the public square beside the Nieuwe Kerk (1660, Rijksmonument church) in the Hortusbuurt/Binnenstad-Noord area. Register planted_band 1860-1870, so roughly 150-160 years as of 2026 (widened to 150-166 for the band edges). One tree stands in front of the church with a long healed wound; the other stands beside the church with an old broken-limb wound now used by woodpeckers, and a self-seeded oak has established beside that wound. Condition rated ample/sufficient (\"ruim voldoende\") for both beeldbepalende (image-defining) old beeches. This register pin is one point representing a pair rather than one exact trunk, so location_precision is approximate; a visitor will find both trees on the lawn beside the church, not necessarily at these exact coordinates. Second source: general web search independently confirms mature beeches (described elsewhere as part of a larger stand of roughly 32 green beeches on the Nieuwe Kerkhof lawn) are a known feature of this specific square, corroborating existence and location though not this exact pairs individual wounds/condition, which comes from the register alone.",
+      "story": "A parked lawn beside a seventeenth century church holds one of Groningen's largest stands of old beeches, roughly thirty of them by some counts, and the Dutch national monumental tree register singles out two as genuinely exceptional: one standing in front of the Nieuwe Kerk with a long-healed wound in its trunk, the other beside the church carrying an old broken-limb scar that woodpeckers have since hollowed out and that a self-seeded oak has taken root beside.\n\nThe Nieuwe Kerk itself, a protected national monument, was completed in 1660, and the register dates these beeches to the 1860s, roughly two centuries younger than the building they stand beside but old enough to have shaded the square through most of its life as a public space. European beech left unclipped and given room, as these two were, grows a dense, smooth-barked canopy that can live for centuries longer still.\n\nBecause the register records this pair as one entry rather than two separately pinned trunks, the coordinates here mark the general spot on the church lawn rather than one exact tree; both stand within easy sight of each other. Free, open square, a short walk from the city centre.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "gro_015",
+      "name": "The Plane Trees of Noorderplantsoen",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 135-145 years",
+      "age_min": 136,
+      "age_max": 146,
+      "girth_cm": null,
+      "location": {
+        "address": "Noorderplantsoen, near Werfstraat 6, Groningen",
+        "latitude": 53.220002,
+        "longitude": 6.556215,
+        "neighbourhood": "Noorderplantsoenbuurt"
+      },
+      "verified_sources": [
+        "netherlands-lrmb register entry 1680851 (Landelijk Register Monumentale Bomen / Bomenstichting)",
+        "https://en.wikipedia.org/wiki/Noorderplantsoen"
+      ],
+      "access": "Free, in the public Noorderplantsoen park",
+      "transport": "Groningen Centraal station, about 15 minute walk",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "verify_notes": "Register (netherlands-lrmb nr 1680851, n_trees: 2) records a pair of common planes in the Noorderplantsoen near Werfstraat 6. Noorderplantsoen is a former city-wall/moat site converted into an English-landscape-style public park that opened in 1880 (Rijksmonument since 1971, per Wikipedia), holding over fifty tree species along a dedicated tree trail. Register planted_band 1880-1890, consistent with the parks own 1880 opening; age estimate uses the park-opening date as the earliest plausible planting point, roughly 136-146 years as of 2026. The register entry itself gives no individual measurements or condition notes beyond situating the trees in the park. Because the register pin represents a pair rather than one named trunk, and the parks own history (not a per-tree source) supplies the corroboration, location_precision is approximate: a visitor will find the pair in this part of the park, not necessarily at the exact coordinate. Second source: English Wikipedias Noorderplantsoen article, independently confirming the parks 1880 planting, Rijksmonument status and species-rich planting scheme.",
+      "story": "Noorderplantsoen used to be a fortress moat. The park was laid out in 1880 over Groningen's demolished seventeenth century city walls, in the informal English landscape style cities across the Netherlands favoured once their old defences stopped being useful, and it has carried national monument protection since 1971. Along its paths grow more than fifty labelled tree species, among them this pair of London planes, planted close to the park's own opening date and now well past a century old.\n\nThe Dutch national monumental tree register records the pair without individual measurements, situating them near Werfstraat on the park's western side. London plane, a hybrid bred in seventeenth century Europe from American sycamore and Oriental plane, tolerates compacted city soil and hard pruning better than almost any other large tree, which is why it anchors so much of Europe's oldest parkland alongside species chosen purely for looks.\n\nBecause the register treats this as one paired entry rather than two individually pinned trunks, the coordinates mark the general spot rather than one exact tree; the pair stands close enough together to find both without wandering. Free, public parkland, about a fifteen minute walk from Centraal station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "gro_016",
+      "name": "The Mespilifolia Oak of Noorderplantsoen",
+      "species": "Sessile Oak \"Mespilifolia\" (Quercus petraea \"Mespilifolia\")",
+      "age_estimate": "roughly 135-145 years",
+      "age_min": 136,
+      "age_max": 146,
+      "girth_cm": null,
+      "location": {
+        "address": "Noorderplantsoen, east edge of the park near Werfstraat 10, Groningen",
+        "latitude": 53.221001,
+        "longitude": 6.555761,
+        "neighbourhood": "Noorderplantsoenbuurt"
+      },
+      "verified_sources": [
+        "netherlands-lrmb register entry 1680852 (Landelijk Register Monumentale Bomen / Bomenstichting)",
+        "https://en.wikipedia.org/wiki/Noorderplantsoen"
+      ],
+      "access": "Free, in the public Noorderplantsoen park",
+      "transport": "Groningen Centraal station, about 16 minute walk",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "verify_notes": "Register (netherlands-lrmb nr 1680852, n_trees: 2) records this Quercus petraea Mespilifolia (medlar-leaved sessile oak, one of the best-known cultivars of the species, with a broad loose crown, somewhat drooping branches and shallow-grooved bark on old specimens like this one) on the east edge of Noorderplantsoen near Werfstraat 10. Register text notes the registration covers a small group but singles out the specimen clearly visible from the adjoining residential street as the genuinely monumental one. Planted_band 1880-1890, consistent with the parks 1880 opening (Rijksmonument since 1971 per Wikipedia); age estimate ~136-146 years as of 2026. As with the plane-tree pair above, the pin represents a small group rather than one exact trunk, so location_precision is approximate. Second source: English Wikipedias Noorderplantsoen article confirms the parks 1880 opening, protected status and its stated diversity of over fifty tree species, of which this cultivar oak is one of the more distinctive.",
+      "story": "Most oaks in Noorderplantsoen are the ordinary native kind, but this one carries a cultivar name, Mespilifolia, medlar-leaved, for foliage that reads narrower and more textured than a typical sessile oak's. It grows on the park's eastern edge, clearly visible from the residential street the park backs onto, which is exactly why the Dutch national monumental tree register singles it out from the small group it was registered alongside as the specimen worth calling monumental.\n\nQuercus petraea \"Mespilifolia\" grows a broad, loose crown with branches that droop slightly at the tips, and old specimens like this one develop a shallow-grooved bark distinct from the deeper furrows of a standard sessile oak. The register dates the planting to the 1880s, putting it close in age to the park's own founding in 1880, when the city converted its demolished city-wall moat into the landscaped park that still carries national monument protection today.\n\nOne of more than fifty tree species planted along Noorderplantsoen's paths, this oak is the kind of tree a visitor might walk past without a second look from the street side and stop for once they know the cultivar name to look for. Free, public parkland, roughly a fifteen minute walk from Centraal station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

@@ -73,6 +73,35 @@ const PROMISE: PromisePattern[] = [
     allowed: (n) => new Set([n]),
     scope: ALL_COPY,
   },
+  // "Sixteen verified locations, real stories." The standard meta_description
+  // closer, and the one this check never covered: Geneva and Utrecht both
+  // grew today with this exact phrase still naming the old count, caught by
+  // eye rather than by a build failure. Per the ratchet, two cities in one
+  // session is pattern rather than vigilance.
+  {
+    rx: new RegExp(`${NOT_MID_WORD}(${N})\\s+verified\\s+locations?\\b`, "gi"),
+    allowed: (n) => new Set([n]),
+    scope: SUMMARY,
+  },
+  // "Yes, all fourteen." A standing FAQ idiom answering "are they all free /
+  // walkable / etc", always about the whole city. Deliberately anchored on
+  // the "Yes," that opens it, not a bare "all N.": Frankfurt's "Bockenheimer
+  // Warte is the station for all four" means four of that city's six, mid
+  // sentence, and a bare pattern flagged it as a false positive while fixing
+  // the real Geneva bug this pattern exists for.
+  {
+    rx: new RegExp(`\\bYes,\\s+all\\s+${NOT_MID_WORD}(${N})\\.`, "gi"),
+    allowed: (n) => new Set([n]),
+    scope: ALL_COPY,
+  },
+  // "The full six." question_meta's own fixed closer, "...and the full N."
+  // Checked against every current use (2026-08-20): always the total, never
+  // a subset, so no "Yes," anchor is needed here the way "all N." needed one.
+  {
+    rx: new RegExp(`\\bfull\\s+${NOT_MID_WORD}(${N})\\.`, "gi"),
+    allowed: (n) => new Set([n]),
+    scope: ALL_COPY,
+  },
 ];
 
 interface CountPromiseCity {

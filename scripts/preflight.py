@@ -39,6 +39,16 @@ PROMISE = [
      lambda n: {n}, ALL_COPY),
     (re.compile(r"\ball\s+" + NMW + r"(%s)\s+(?:trees?|are|stand|need|needs|remain)\b" % N, re.I),
      lambda n: {n}, ALL_COPY),
+    # "Sixteen verified locations, real stories." The standard meta_description
+    # closer, and the one this check never covered until Geneva and Utrecht
+    # both grew in one session with this exact phrase still naming the old
+    # count.
+    (re.compile(NMW + r"(%s)\s+verified\s+locations?\b" % N, re.I), lambda n: {n}, SUMMARY),
+    # "Yes, all fourteen." Anchored on "Yes," so Frankfurt's "the station for
+    # all four" (four of six, mid sentence) is not a false positive.
+    (re.compile(r"\bYes,\s+all\s+" + NMW + r"(%s)\." % N, re.I), lambda n: {n}, ALL_COPY),
+    # "The full six." question_meta's own fixed closer; always the total.
+    (re.compile(r"\bfull\s+" + NMW + r"(%s)\." % N, re.I), lambda n: {n}, ALL_COPY),
 ]
 
 

@@ -3,9 +3,9 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Utrecht's oldest trees live behind walls more often than in open parks, protected first by a university's own working garden and later by simple survival. The city's genuine standout is a walled botanical garden barely bigger than a single city block, home to a ginkgo that predates the Netherlands' current constitution and a Chinese tree so rare it took a missionary decades to bring seeds to Europe at all. Add a farmhouse linden absorbed whole by a science campus, and a park cluster of century-old planes planted when the city's old defences became parkland.",
-  "meta_description": "Utrecht's oldest trees hide behind garden walls: a 260-year ginkgo, a rare handkerchief tree, a farmhouse linden. Nine verified locations, real stories.",
+  "meta_description": "Utrecht's oldest trees hide behind garden walls: a 260-year ginkgo, a rare handkerchief tree, a farmhouse linden. Sixteen verified locations, real stories.",
   "question_answer": "Utrecht's oldest tree is the Uithof Linden, a common lime planted around 1750 beside a 17th-century farmhouse that gave its name to what is now Utrecht Science Park. At roughly 275 years old, it predates the university campus built up around it by two centuries, one of the oldest Dutch lindens still standing anywhere.",
-  "question_meta": "A 275-year-old linden beside a 17th-century farmhouse, now swallowed by a university science campus, is Utrecht's oldest tree. The full five.",
+  "question_meta": "A 275-year-old linden beside a 17th-century farmhouse, now swallowed by a university science campus, is Utrecht's oldest tree. The full sixteen.",
   "question_context": "Utrecht keeps its oldest trees in two very different settings, and the contrast says something about how a Dutch city actually preserves age. The Uithof Linden and the Oude Hortus's three specimens all survive because they sat inside a boundary somebody drew and then defended: a farmhouse's private dooryard in one case, a university garden's walls in the other, both places where nobody had reason to fell an inconvenient tree for centuries. The Nieuwegracht's canal lindens took the opposite route, out in the open on a public street since the 1600s, which is also why they are honestly the youngest of the five: street trees get replaced when they die or block a view, and at least one full replanting happened there sometime between the original 1660 planting scheme and the roughly 1830-dated lime trees standing today. Between the walled survivors and the replanted street trees sits the real explanation for why this city's canal-lined image and its handful of genuinely centuries-old specimens rarely overlap on the same tree.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Utrecht's remarkable trees free to visit?",
-      "a": "Three of the nine, all in the Oude Hortus, require a paid ticket to the Universiteitsmuseum. The other six, including the Uithof Linden, the Nieuwegracht's canal lindens and the Hieronymusplantsoen and Lucasbolwerk trees, are free and visible from public streets or parks at any time."
+      "a": "Three of the sixteen, all in the Oude Hortus, require a paid ticket to the Universiteitsmuseum. The other thirteen, including the Uithof Linden, the Nieuwegracht's canal lindens and the trees of Hieronymusplantsoen, Wilhelminapark, Zonnenburg, Servaasbolwerk and Lepelenburg, are free and visible from public streets or parks at any time."
     },
     {
       "q": "Why does Utrecht have so few very old street trees?",
@@ -330,6 +330,223 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "utr_010",
+      "name": "The Caucasian Wingnut of Wilhelminapark",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "age_estimate": "roughly 130 years",
+      "age_min": 126,
+      "age_max": 136,
+      "girth_cm": null,
+      "location": {
+        "address": "Wilhelminapark, westrand ligweide, Utrecht",
+        "latitude": 52.086825,
+        "longitude": 5.139205,
+        "neighbourhood": "Wittevrouwen / Wilhelminapark"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688375, data/registers/netherlands-lrmb.json",
+        "https://www.oostkrant.com/oudereuzen/ (Wilhelminapark's own 'Rondje Oude Reuzen' walking route, tree no. 10 on the map is a Kaukasische vleugelnoot)"
+      ],
+      "access": "Free, public park (gemeente-owned), open during park hours",
+      "transport": "Utrecht Centraal, roughly 20 minute walk; or bus/tram to Wilhelminapark stop",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "verify_notes": "Register gives tree-level coordinates on the park's western lawn edge, owner_category gemeente, visitable ja. Planted band 1890-1900 per LRMB register (basis for the decade not detailed in the record itself, so treat as the register's own dating rather than a documented planting record). Independently corroborated as species and location by Wilhelminapark's own 'Rondje Oude Reuzen' (Round of Old Giants) walking route published via oostkrant.com/wilhelminapark.com, which numbers a Kaukasische vleugelnoot as stop 10 on its trail of the park's oldest and most impressive trees; that source gives no independent age figure so age rests on the register alone. Pterocarya fraxinifolia is a river-valley tree from the Caucasus with long hanging fruit strands in summer, notable for wide, low, spreading crowns. No girth recorded in either source. Wilhelminapark itself opened 1898, laid out in English landscape style, and is a national monument (rijksmonument) with roughly 24 monumental trees registered; the park predates or is contemporary with this tree depending on which end of the planted band is right.",
+      "story": "Wilhelminapark opened in 1898, laid out in the informal English landscape style fashionable across the Netherlands at the time, and this wingnut is one of roughly twenty-four trees in it now protected as monumental. Pterocarya fraxinifolia is native to river valleys in the Caucasus and northern Iran, a relative of walnut and hickory rather than anything European, grown here for a wide, low, spreading crown and for the strange fruit it hangs each summer: strings of winged seeds up to half a metre long, dangling like decorations nobody put up on purpose.\n\nThe Dutch national register of monumental trees dates the planting to the 1890s, putting the wingnut among the park's first generation, planted while the layout itself was still new rather than added later. No source gives its girth, and the register carries no basis for the decade beyond its own record, so treat the age as an informed estimate rather than a measurement.\n\nThe park itself keeps an informal walking route past its own oldest trees, called Rondje Oude Reuzen, Round of Old Giants, and this wingnut is stop ten on it, on the western edge of the park's sunbathing lawn. A twenty minute walk from Utrecht Centraal, free, open through the same hours as the rest of the park.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "utr_011",
+      "name": "The Colchis Maple of Wilhelminapark",
+      "species": "Cappadocian Maple (Acer cappadocicum)",
+      "age_estimate": "roughly 140 years",
+      "age_min": 136,
+      "age_max": 146,
+      "girth_cm": null,
+      "location": {
+        "address": "Aan voetpad, westingang tegenover Wilhelminapark 28, Utrecht",
+        "latitude": 52.087906,
+        "longitude": 5.139089,
+        "neighbourhood": "Wittevrouwen / Wilhelminapark"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1689999, data/registers/netherlands-lrmb.json",
+        "https://www.oostkrant.com/oudereuzen/ (Wilhelminapark's own 'Rondje Oude Reuzen' walking route, tree no. 4 is a Colchische esdoorn / Colchis maple)"
+      ],
+      "access": "Free, public park (gemeente-owned), open during park hours",
+      "transport": "Utrecht Centraal, roughly 20 minute walk; or bus/tram to Wilhelminapark stop",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "verify_notes": "Register places it at the park's west entrance footpath, owner_category gemeente, visitable ja, visible ja. Planted band 1880-1890, register's own dating basis not detailed. Independently corroborated by the park's own 'Rondje Oude Reuzen' walking route (oostkrant.com), which names a Colchische esdoorn as stop 4 of the old-giants trail; that source's search snippet gave no independently verifiable age figure (a conflicting '1975' planting year appeared in search summaries but could not be confirmed against the actual route map, which the fetch tools could not render as text, so it is NOT used here per the search-summary rule). Acer cappadocicum is native to the Caucasus and Himalaya, grown for a dense broad crown and deep yellow autumn colour, unusual as a park specimen this size in the Netherlands. No girth recorded in either source.",
+      "story": "Four stops earlier on the same walking route stands a very different tree from the same era: a Cappadocian maple, named for the ancient region of Cappadocia in central Anatolia, though its natural range runs north into the Caucasus too, where it is sometimes called Colchis maple instead, after the kingdom Jason sailed for in the story of the Golden Fleece. It grows at Wilhelminapark's west entrance, on the footpath opposite house number 28, one of the park's original plantings from the 1880s according to the Dutch national monumental tree register.\n\nAcer cappadocicum keeps its leaves a plain green most of the year and then, in autumn, turns a uniform buttery yellow rather than the mixed reds and oranges of most maples, a colour show the park's own walking guide singles it out for. No girth is on record for this tree, and the register gives no basis for its planting decade beyond the record itself, so roughly a hundred and forty years old is an estimate rather than a measurement.\n\nWilhelminapark is a national monument in its own right, laid out in 1898 in the informal English landscape style, and this maple was already an established tree by the time the park's more famous specimens matured around it. It stands free to visit, a short walk or tram ride from the city centre.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "utr_012",
+      "name": "The Catalpa of Wilhelminapark",
+      "species": "Southern Catalpa (Catalpa bignonioides)",
+      "age_estimate": "roughly 130 years",
+      "age_min": 126,
+      "age_max": 136,
+      "girth_cm": null,
+      "location": {
+        "address": "Wilhelminapark, westrand speelweide, Utrecht",
+        "latitude": 52.086537,
+        "longitude": 5.139093,
+        "neighbourhood": "Wittevrouwen / Wilhelminapark"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688600, data/registers/netherlands-lrmb.json",
+        "https://www.oostkrant.com/oudereuzen/ (Wilhelminapark's own 'Rondje Oude Reuzen' walking route, tree no. 17 is a Trompetboom)"
+      ],
+      "access": "Free, public park (gemeente-owned), open during park hours",
+      "transport": "Utrecht Centraal, roughly 20 minute walk; or bus/tram to Wilhelminapark stop",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "verify_notes": "Register places it on the west edge of the park's play meadow, owner_category gemeente, visitable ja. Planted band 1890-1900, register's own dating basis not detailed. Independently corroborated by the park's own 'Rondje Oude Reuzen' walking route (oostkrant.com), which names a Trompetboom as stop 17. Catalpa bignonioides is grown for huge heart-shaped leaves, white orchid-like flower panicles in July, and long bean-like seed pods that hang into winter; it is a broad, low, sprawling tree rather than a tall one, which is worth noting for the photo/pin. No girth recorded in either source.",
+      "story": "Wilhelminapark's own walking guide to its oldest trees calls this one Trompetboom, trumpet tree, the Dutch common name for catalpa, and once it flowers in July the name explains itself: white, orchid-shaped blooms crowd the canopy in dense clusters, followed by seed pods that hang on through winter looking like a stand of thin green beans left out to dry. Catalpa bignonioides grows broad and low rather than tall, its heart-shaped leaves among the largest of any tree commonly planted in Dutch parks.\n\nThe Dutch national monumental tree register dates this specimen to the 1890s, on the west edge of the park's play meadow, one of the original plantings from Wilhelminapark's founding as an English-style landscape park in 1898. No girth is recorded for it in any source found, and the planting decade rests on the register's own dating rather than a documented record, so treat the age, roughly a hundred and thirty years, as an estimate.\n\nIt is stop seventeen on the park's own Rondje Oude Reuzen trail past its oldest and most impressive trees, a route that also passes the wingnut and the Cappadocian maple mapped separately on this site. Free, in a public park a short walk from the centre.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "utr_013",
+      "name": "The Zocher Plane of Zonnenburg",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 190 years",
+      "age_min": 186,
+      "age_max": 196,
+      "girth_cm": null,
+      "location": {
+        "address": "Ten westen van de Sterrenwacht, Zonnenburg, Utrecht",
+        "latitude": 52.085646,
+        "longitude": 5.127886,
+        "neighbourhood": "Binnenstad / Zonnenburg bastion"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688781, data/registers/netherlands-lrmb.json: 'Plantjaar volgens de gemeente: 1835'",
+        "https://www.duic.nl/cultuur/op-pad-met-oud-utrecht-een-rondje-zocher/ (Oud-Utrecht historical society walking tour of the Zocherpark)"
+      ],
+      "access": "Free, public park (gemeente-owned), open during park hours",
+      "transport": "Utrecht Centraal, roughly 15 minute walk",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "verify_notes": "Register's history field for THIS entry (nr 1688781) reads only: 'Plantjaar volgens de gemeente: 1835' (planting year per the municipality: 1835), the year Jan David Zocher jr began laying out the Singelplantsoen (the ring park along Utrecht's old bastions, of which Zonnenburg/Servaasbolwerk is a part). Register's own planted_band for this entry is 1840-1850, close to but not identical to the cited 1835 date; age here is derived from the more specific 1835 municipal figure. Independent corroboration: Oud-Utrecht's own DUIC-published Zocherpark walking tour confirms 1835 is a real, repeated planting year across multiple documented specimens in this same park (an oak behind the Truus van Lier statue, a field maple near Bartholomeusbrug, an oak grove near Maliebrug, an elm at Hieronymusplantsoen, a Sophora at the Vrije School, all dated 1835), which corroborates the PATTERN this register draws on for this park, though that article does not name this specific plane by address. Owner_category gemeente, visitable ja, visible ja: this tree stands on open parkland immediately west of the Sonnenborgh observatory building. No girth recorded. NOTE: a second, separate register entry (nr 1688568, 'Gewone plataan Servaasbolwerk', a different tree about 100m away at Tegenover Servaasbolwerk nr 2) explicitly documents a conflict between the gemeente's 1835 figure and Bomenstichting's own earlier 1900-1910 estimate for THAT tree; do not merge that entry's history with this one, they are different specimens.",
+      "story": "In 1835, the landscape architect Jan David Zocher jr began replacing the demolished defensive ring around old Utrecht with a chain of parks, the Singelplantsoen, that still follows the city's medieval bastions today. This plane, standing just west of the old Sterrenwacht observatory on the Zonnenburg bastion, carries that exact year in the municipality's own planting record, making it one of the oldest trees anywhere along Zocher's design and roughly as old as the park scheme itself.\n\nLondon plane, a hybrid of American sycamore and Oriental plane first bred in seventeenth century Europe, is the workhorse tree of the whole Singelplantsoen chain, planted for fast growth and tolerance of compacted city soil along a route that was walked and cycled hard from the day it opened. No girth is recorded for this specimen, but at close to two centuries old it should be among the largest planes on the route by now.\n\nThe Sterrenwacht itself, Utrecht University's historic observatory, still stands beside it, giving the tree one of the more improbable neighbours on this list: nearly two hundred years of watching people look up at the stars from the building next door. Free, public parkland, a short walk from the old city centre.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "utr_014",
+      "name": "The Servaasbolwerk Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 125 to 190 years, sources disagree",
+      "age_min": 116,
+      "age_max": 191,
+      "girth_cm": null,
+      "location": {
+        "address": "Tegenover Servaasbolwerk nr 2, Utrecht",
+        "latitude": 52.087739,
+        "longitude": 5.128326,
+        "neighbourhood": "Binnenstad / Servaasbolwerk"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688568, data/registers/netherlands-lrmb.json",
+        "https://www.duic.nl/cultuur/op-pad-met-oud-utrecht-een-rondje-zocher/ (Oud-Utrecht: 1835 is the documented start year of Zocher's Singelplantsoen, corroborating the earlier of the two figures)"
+      ],
+      "access": "Free, public park (gemeente-owned), open during park hours",
+      "transport": "Utrecht Centraal, roughly 15 minute walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Genuine source disagreement, recorded honestly rather than resolved: the register's own history field states 'In gemeentelijke lijst staat plantjaar 1835, het startjaar van de aanleg van het Singelplantsoen door J.D. Zocher jr. In de registratie van de Bomenstichting stond 1900-1910 maar dat was vermoedelijk een schatting' (the municipal list gives 1835, the year Zocher began the Singelplantsoen; Bomenstichting's own earlier registration had 1900-1910, probably a guess). So two figures exist for the same tree, 1835 (municipal record, plausible given it matches the park's known founding year) versus 1900-1910 (Bomenstichting's own older, self-described estimate). Flagged rather than picking a winner, per the two-conflicting-sources rule. Oud-Utrecht's DUIC-published Zocherpark tour independently confirms 1835 as the real, documented start year of this park's planting programme, which supports the municipal figure being the more credible of the two without being direct proof for this specific tree. Owner_category gemeente, visitable ja, visible ja: stands in open parkland opposite Servaasbolwerk 2, near the Sonnenborgh observatory grounds. No girth recorded.",
+      "story": "Two dates exist for this plane, and the register that tracks it admits as much rather than picking one. The municipality's own planting list gives 1835, the year Jan David Zocher jr began laying out the Singelplantsoen ring parks this tree still stands in; an earlier entry from the Bomenstichting, the Dutch tree conservation foundation, instead recorded 1900 to 1910, a figure its own more recent register update calls probably a guess. A gap of sixty five years between two sources that both claim to know is unusual enough to state plainly rather than smooth over.\n\nWhat is not in dispute is the tree itself: a London plane standing opposite house number 2 on Servaasbolwerk, part of the same bastion parkland chain as the Zocher Plane mapped separately nearby, and old enough either way to be one of the historic ring's mature specimens. No girth has been recorded.\n\nWhichever date is right, the tree has stood through most or all of the twentieth century on a stretch of parkland built from a demolished city wall, watching the bastion go from defensive earthwork to quiet residential green space. Free, public, a few minutes' walk from Zonnenburg.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "utr_015",
+      "name": "The Liberation Beech of Servaasbolwerk",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "roughly 80 years",
+      "age_min": 76,
+      "age_max": 86,
+      "girth_cm": null,
+      "location": {
+        "address": "Servaasbolwerk, nabij nr 15, Utrecht",
+        "latitude": 52.086268,
+        "longitude": 5.128503,
+        "neighbourhood": "Binnenstad / Servaasbolwerk"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1684533, data/registers/netherlands-lrmb.json (reason: herdenkingsboom / memorial tree)",
+        "https://blog.ernste.net/2015/05/05/bevrijdingsboom-utrecht/ (independent blog post, photographed 2014, identifying it as a bevrijdingsboom/liberation tree, a bruine beuk, at Servaasbolwerk, planted to commemorate the 1945 liberation of the Netherlands)"
+      ],
+      "access": "Free, public park (gemeente-owned), open during park hours",
+      "transport": "Utrecht Centraal, roughly 15 minute walk",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "verify_notes": "A named 'bevrijdingsbeuk' (liberation beech), planted as a living memorial to the Netherlands' liberation from German occupation, May 1945. Register band is 1940-1950 and reason code is herdenkingsboom (memorial tree); the independent blog source (photo dated 2014) confirms species (bruine beuk/copper beech), location (Servaasbolwerk) and the liberation-memorial purpose, but does not give an exact planting year, so age here is kept as the register's band rather than sharpened to 1945 specifically, even though a liberation tree of this kind is very likely planted at or shortly after VE-day 1945. Owner_category gemeente, visitable ja, visible ja. No girth recorded. This is a different, younger tree from the two other Servaasbolwerk-area beeches and planes verified in this pass; it stands out for the story (a living WWII liberation memorial) rather than for sheer age.",
+      "story": "This copper beech was planted to be looked at and remembered, not simply grown. Bevrijdingsbomen, liberation trees, went into the ground across the Netherlands after May 1945 as living memorials to the country's liberation from German occupation, and the Dutch national monumental tree register marks this one at Servaasbolwerk with exactly that designation: a herdenkingsboom, a memorial tree, from the same decade as the liberation itself.\n\nFagus sylvatica f. purpurea, the copper or purple beech, is a straightforward garden variety chosen for its colour rather than any rarity, dark reddish purple leaves through the growing season rather than the species' usual green. An independent record from 2015, a local history blog that photographed the tree and named it directly as a bevrijdingsbeuk, confirms both the species and the memorial purpose without giving an exact planting year, so the age here rests on the register's decade band rather than a specific date tied to the liberation itself.\n\nAt around eighty years old it is the youngest tree on this list by some margin, a reminder planted deliberately rather than grown accidentally into significance, standing on the same historic bastion parkland as the older planes nearby. Free, public, in the heart of the old city.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "utr_016",
+      "name": "The Oriental Plane of Lepelenburg",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "roughly 120 years",
+      "age_min": 116,
+      "age_max": 126,
+      "girth_cm": null,
+      "location": {
+        "address": "Lepelenburg, naast brug Herenstraat, Utrecht",
+        "latitude": 52.089933,
+        "longitude": 5.127577,
+        "neighbourhood": "Binnenstad / Lepelenburg"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1678124, data/registers/netherlands-lrmb.json",
+        "https://nl.wikipedia.org/wiki/Lepelenburg (independent confirmation that Lepelenburg is a former 16th-century bastion converted into parkland around 1860, part of the Zocherpark singel system, consistent with a tree planted after that conversion)"
+      ],
+      "access": "Free, public park (gemeente-owned), open at all times",
+      "transport": "Utrecht Centraal, roughly 15 minute walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Register places it beside the Herenstraat bridge (Herenbrug) in Lepelenburg park, owner_category gemeente, visitable ja. Planted band 1900-1910, register's own dating basis not detailed. Wikipedia's Lepelenburg article independently confirms the park's own history (16th-century bastion, converted to parkland around 1860) but does not name or date this specific tree, so this is flagged as a single-source age/species claim per Step 2, corroborated only for park-level context rather than tree-level fact. The Herenbrug itself is dated 1905 by a separate monumentenregister listing, which is consistent with (but does not prove) a tree planted in the same building phase. No girth recorded.",
+      "story": "Lepelenburg was a defensive bastion on Utrecht's medieval city wall before it became a park around 1860, part of the same conversion that turned the whole ring of fortifications into the Singelplantsoen. This Oriental plane, the species that gives the London plane half its parentage, stands beside the Herenbrug bridge inside that park, dated by the Dutch national monumental tree register to the early 1900s, a later addition to the grounds rather than one of the original 1860s plantings.\n\nPlatanus orientalis is native to the eastern Mediterranean and southwest Asia, grown across Europe for centuries before its American-crossed hybrid became the more common street tree; a pure Oriental plane like this one is rarer to find in a Dutch park than its more widespread offspring. No girth has been recorded for it, and no source found names or dates this individual tree directly, so the record here rests on the register alone, corroborated only by Lepelenburg's own well documented general history rather than anything specific to this trunk.\n\nIt stands a few minutes' walk from Servaasbolwerk and Zonnenburg, within reach of the other bastion-park trees mapped on this site, on ground that has gone from a soldier's lookout to a footbridge crossing in under two centuries. Free, public parkland near the old city centre.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
