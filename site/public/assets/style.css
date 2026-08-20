@@ -71,18 +71,23 @@ button:focus-visible, a:focus-visible, summary:focus-visible,
 
 header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: var(--header-h); display: flex; align-items: center; justify-content: space-between; padding: 0 1.5rem; background: rgba(247,244,238,0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--cream-dark); }
 .bar-logo { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--sans); font-weight: 800; font-size: 1.02rem; letter-spacing: 0.07em; text-decoration: none; color: var(--ink); }
-.bar-links a { font-size: 13px; color: var(--ink-mid); text-decoration: none; margin-left: 1.25rem; }
+/* One flex row, so every control centres on the same line. The bar used to be
+   a block nav whose children aligned on the TEXT BASELINE, which put the 32px
+   account circle and the pill CTA at different heights than the words beside
+   them (Hidde, 2026-08-20: "align deze knoppen aub netjes"). Spacing is the
+   gap, never a margin on each item. */
+.bar-links { display: flex; align-items: center; gap: 1.25rem; }
+.bar-links a { font-size: 13px; color: var(--ink-mid); text-decoration: none; margin-left: 0; }
 .bar-links a:hover { color: var(--moss); }
 .bar-links a.bar-login { color: var(--ink-mid); }
-.bar-links a.bar-cta { color: #fff; background: var(--moss); font-weight: 700; border: 1px solid var(--moss); border-radius: 999px; padding: 0.45rem 1rem; }
-.nav-drop { display: inline-block; position: relative; margin-left: 1.25rem; }
+.bar-links a.bar-cta { display: inline-flex; align-items: center; height: 32px; color: #fff; background: var(--moss); font-weight: 700; border: 1px solid var(--moss); border-radius: 999px; padding: 0 1rem; }
+.nav-drop { display: inline-flex; align-items: center; position: relative; }
 /* The account control, copied from how every app does it rather than invented
    (Hidde, 2026-08-18: "kun je gewoon alltrails namaken en nooit meer zelf
    dingen bedenken"). AllTrails, Strava and Google Maps all use a circular
    avatar button with no caret and no label. The first version here was a bare
    line-art person floating next to a stray dropdown arrow, shipped without
    anyone looking at it on a phone. */
-.nav-acct { margin-left: 0.75rem; }
 .nav-acct summary { display: inline-flex; align-items: center; justify-content: center;
   width: 32px; height: 32px; border-radius: 50%; background: var(--surface);
   border: 1px solid var(--cream-dark); color: var(--ink); }
@@ -96,7 +101,7 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .nav-acct .acct-avatar svg { width: 18px; height: 18px; }
 .nav-acct .acct-word { position: absolute; width: 1px; height: 1px; overflow: hidden;
   clip: rect(0 0 0 0); white-space: nowrap; }
-.nav-drop summary { font-size: 13px; font-weight: 700; color: var(--ink); cursor: pointer; list-style: none; }
+.nav-drop summary { display: inline-flex; align-items: center; font-size: 13px; font-weight: 700; color: var(--ink); cursor: pointer; list-style: none; }
 .nav-drop summary::-webkit-details-marker { display: none; }
 .nav-drop summary::after { content: " ▾"; font-size: 10px; }
 .nav-drop[open] summary { color: var(--moss); }
@@ -673,20 +678,13 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .poster-search { width: min(640px, 94vw); padding: 0.35rem 0.6rem 0.35rem 0.4rem; box-shadow: 0 10px 40px rgba(0,0,0,0.28); margin-top: 0; }
 .poster-search input { font-size: 16.5px; padding: 0.65rem 0.5rem; }
 .hero-links { display: flex; gap: 1.8rem; margin-top: 1.3rem; flex-wrap: wrap; justify-content: center; }
-/* The hero's own action, made pressable on 2026-08-20. It was an underlined
-   text link under a big white search field, which made the weakest thing on the
-   page the core action of the entire product: the value proposition is "I open
-   it, it knows where I am, it shows me a cool tree nearby", and search is the
-   fallback for when that is not what you want. AllTrails, Komoot and Google
-   Maps all put a filled pill here and none of them ships this as a text link.
-   The search field stays where it is; this now reads as at least its equal. */
-.hero-cta { display: inline-flex; align-items: center; gap: 0.5rem;
-  background: var(--moss); color: #fff; text-decoration: none;
-  font-family: inherit; font-size: 16px; font-weight: 700;
-  padding: 0.8rem 1.6rem; border-radius: 999px; border: none; cursor: pointer;
-  box-shadow: 0 6px 22px rgba(0,0,0,0.30); }
-.hero-cta:hover { background: #3d5a22; }
-.hero-cta svg { flex: none; }
+/* The hero's action is TEXT, not a pill (Hidde, 2026-08-20: "hoezo is dit
+   opeens een knop geworden maak er weer dezelfde tekst opmaak van als bij
+   alltrails"). A run turned it into a filled green button that morning and
+   argued AllTrails does the same; AllTrails does not. Under its hero search
+   field sit plain white text links, and the only filled control on the poster
+   is the search itself. Do not re-promote this to a button. */
+.hero-link { background: none; border: none; cursor: pointer; font-family: inherit; color: #fff; font-size: 15.5px; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
 .home-hero.poster .near-me-result { color: #fff; font-weight: 600; margin-top: 0.9rem; text-shadow: 0 1px 8px rgba(0,0,0,0.4); }
 .mission { max-width: 44rem; margin: 2.5rem auto 0; padding: 1.6rem 2rem 0; border-top: 1px solid var(--cream-dark); text-align: center; }
 .mission p { font-family: var(--sans); font-size: 14.5px; font-weight: 300; color: var(--ink-mid); line-height: 1.7; }
