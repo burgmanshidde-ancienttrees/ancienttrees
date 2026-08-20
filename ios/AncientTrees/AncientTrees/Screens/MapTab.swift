@@ -24,6 +24,12 @@ struct MapTab: View {
     var onUseMyLocation: () -> Void = {}
 
     @State private var selected: Tree?
+    /// Debug only, same family as -tab and -at: selecting a pin needs a tap and
+    /// simctl cannot tap, so the one screen that only exists after a tap could
+    /// not be looked at before it shipped.
+    private var debugSelect: String? {
+        ProcessInfo.processInfo.arguments.first { $0.hasPrefix("-select=") }.map { String($0.dropFirst(8)) }
+    }
     @State private var sheetHeight: SheetHeight = .peek
     @State private var query = ""
     /// Where the map is looking. nil until it has been moved, so the first list
@@ -107,6 +113,12 @@ struct MapTab: View {
         // way to fix it. It is a chip now, and when we do not know where you
         // are it is the button that finds out.
         .overlay(alignment: .top) { whereChip }
+        .task {
+            if let id = debugSelect, let t = catalogue.tree(id) {
+                selected = t
+                sheetHeight = .half
+            }
+        }
         .toolbar(.hidden, for: .navigationBar)
         .onChange(of: selected) { _, new in
             // Tapping a pin raises the sheet to that tree, the way Google Maps
@@ -126,9 +138,18 @@ struct MapTab: View {
         return first.tree
     }
 
+    /// What the pager pages over. The tapped tree first if the list does not
+    /// already contain it, which happens when somebody taps a pin outside the
+    /// sixty the list shows.
+    private var pagerTrees: [Tree] {
+        let list = listed.map(\.tree)
+        guard let sel = selected else { return list }
+        return list.contains(where: { $0.id == sel.id }) ? list : [sel] + list
+    }
+
     @ViewBuilder private var sheet: some View {
-        if let t = selected {
-            selectedTree(t)
+        if selected != nil {
+            selectedPager
         } else {
             VStack(spacing: 0) {
                 if let t = arrived { arrivalCard(t) }
@@ -250,6 +271,41 @@ struct MapTab: View {
 
     /// One tapped pin, shown in the sheet rather than pushed onto a page, so the
     /// map stays visible behind the decision.
+    /// Tap a pin and you stay on the map, with the tree in a sheet over it, and
+    /// you can swipe sideways through the others without ever leaving.
+    ///
+    /// Straight out of the AllTrails recordings (Hidde, 2026-08-20: "dat je op
+    /// een boom klikt dat dan de kaart nog in het klein in het plaatje staat en
+    /// dat je heen en weer kan klikken"). Their route tap does not open a page
+    /// either: the whole decision happens on top of the thing being decided
+    /// about, and the map underneath moves with you.
+    private var selectedPager: some View {
+        VStack(spacing: 0) {
+            // The hint sits above the cards rather than under them: below, it
+            // ends up behind the floating tab bar, and it is the one line that
+            // tells you the sideways gesture exists at all.
+            HStack(spacing: 6) {
+                Image(systemName: "arrow.left.and.right")
+                Text("Swipe for the next one nearby")
+            }
+            .font(.caption).foregroundStyle(Brand.inkSoft)
+            .padding(.bottom, 8)
+            .opacity(pagerTrees.count > 1 ? 1 : 0)
+
+            TabView(selection: Binding(
+                get: { selected?.id ?? "" },
+                set: { id in selected = pagerTrees.first { $0.id == id } }
+            )) {
+                ForEach(pagerTrees) { t in
+                    selectedTree(t).tag(t.id)
+                }
+            }
+            .tabViewStyle(.page(indexDisplayMode: .never))
+            .frame(height: 340)
+            Color.clear.frame(height: 100)      // clear of the floating tab bar
+        }
+    }
+
     private func selectedTree(_ t: Tree) -> some View {
         VStack(alignment: .leading, spacing: 12) {
             HStack {
@@ -266,6 +322,6 @@ struct MapTab: View {
             }
             .buttonStyle(BrandButtonStyle())
         }
-        .padding(.horizontal, 16).padding(.bottom, 110)
+        .padding(.horizontal, 16).padding(.bottom, 8)
     }
 }
