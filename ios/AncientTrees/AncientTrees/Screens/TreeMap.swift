@@ -81,6 +81,19 @@ struct TreeMap: UIViewRepresentable {
     }
 
     func updateUIView(_ map: MKMapView, context: Context) {
+        context.coordinator.parent = self
+
+        // Paging through the sheet moves the map with you, which is the whole
+        // point of staying on the map rather than opening a page.
+        if let sel = selected, context.coordinator.centred != sel.id {
+            context.coordinator.centred = sel.id
+            map.setRegion(MKCoordinateRegion(center: .init(latitude: sel.lat, longitude: sel.lng),
+                                             latitudinalMeters: 900, longitudinalMeters: 900),
+                          animated: true)
+        } else if selected == nil {
+            context.coordinator.centred = nil
+        }
+
         let have = Set((map.annotations.compactMap { $0 as? TreeAnnotation }).map(\.tree.id))
         let want = Set(trees.map(\.id))
         guard have != want else { return }
@@ -90,8 +103,16 @@ struct TreeMap: UIViewRepresentable {
     }
 
     final class Coordinator: NSObject, MKMapViewDelegate {
-        let parent: TreeMap
+        /// var, not let, and reassigned on every updateUIView. A coordinator is
+        /// made once and keeps whatever struct it was born with, so a delegate
+        /// method reading `parent.selected` was reading the value from launch
+        /// forever. That is why the map did not follow the pager and why the
+        /// region kept reporting itself while a tree was selected.
+        var parent: TreeMap
         private var drawn = 0
+        /// Which tree the camera was last moved to, so paging does not fight
+        /// itself by re-centring on every redraw.
+        var centred: String?
         init(_ p: TreeMap) { parent = p }
 
         func setRoute(_ pts: [CLLocationCoordinate2D], real: Bool, on map: MKMapView) {
@@ -130,7 +151,10 @@ struct TreeMap: UIViewRepresentable {
         /// work nobody can see. Three hundred metres is under one screen at
         /// street zoom, so the list still feels live.
         func mapView(_ map: MKMapView, regionDidChangeAnimated animated: Bool) {
-            guard let binding = parent.region else { return }
+            // While a tree is selected the camera is being driven by the pager,
+            // so reporting the region back would rebuild the list under the
+            // pager and shuffle what you are swiping through.
+            guard parent.selected == nil, let binding = parent.region else { return }
             let c = map.region.center
             if let last = binding.wrappedValue {
                 let a = CLLocation(latitude: last.center.latitude, longitude: last.center.longitude)

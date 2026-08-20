@@ -50,6 +50,13 @@ struct TreeCard: View {
             }
             .frame(height: imageHeight)
             .clipped()
+            // The little map in the corner, from the AllTrails frames. On a
+            // route it shows the shape; on a tree it shows the SETTING, and that
+            // answers the thing a photograph of a trunk cannot: park, canal or
+            // street corner.
+            .overlay(alignment: .bottomTrailing) {
+                MapInset(lat: tree.lat, lng: tree.lng).padding(10)
+            }
             // No credit painted over the photograph (Hidde, 2026-08-20: "please
             // dont refer to wikicommons or whatever with an overlay on the tree,
             // put it somwhere small on the deeper page"). A card is a thumbnail
@@ -63,6 +70,9 @@ struct TreeCard: View {
             // what shipped once before and is the reason this comment exists.
         } else {
             noPhoto.frame(height: imageHeight)
+                .overlay(alignment: .bottomTrailing) {
+                    MapInset(lat: tree.lat, lng: tree.lng).padding(10)
+                }
         }
     }
 
