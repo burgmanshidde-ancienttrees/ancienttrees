@@ -12,13 +12,13 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
-## 2026-08-20 (session) - A photo viewing pass: 12 photographs approved, 105 candidates rejected, 8 cities off the zero-photo list
+## 2026-08-20 (session) - A photo viewing pass: 12 photographs approved, 104 candidates rejected, 7 cities off the zero-photo list
 
 Hidde asked to have another go at photographs for the cities with none. `health.py` rung 2 clear first (smoke, deploy, digest, fresh-eyes all green, no BLOCKER), so this was rung 6 work.
 
-**Approved 12, and 8 cities came off the zero-photo list** (53 to 45): Graz (3: the Schlossberg field maple and the Volksgarten oak, both with their Naturdenkmal sign in frame, plus the Eggenberg copper beech), Sardinia (2: both olivastri, Luras and Santa Maria Navarrese), Copenhagen (Skovfogedegen), Tallinn (Kelch's linden), Perth (the Royal Perth Hospital fig), Los Angeles (2: the LAHCM 19 fig and the oldest palm), Madeira (the Neves dragon tree grove) and Mexico City (the Parque Espana ahuehuete).
+**Approved 12. `photo_gaps.py` counts 46 of 144 published cities with no photograph, down from 53 when this started**, so seven cities came off that list: Graz (3: the Schlossberg field maple and the Volksgarten oak, both with their Naturdenkmal sign in frame, plus the Eggenberg copper beech), Sardinia (2: both olivastri, Luras and Santa Maria Navarrese), Copenhagen (Skovfogedegen), Perth (the Royal Perth Hospital fig), Los Angeles (2: the LAHCM 19 fig and the oldest palm), Madeira (the Neves dragon tree grove) and Mexico City (the Parque Espana ahuehuete). The twelfth is Tallinn's Kelch's linden, a photo-less tree in a city that already had one picture.
 
-**Rejected 105 and recorded every reason**, which is the half of this work that pays next time: an unrecorded reject is an image the following pass pays to judge again.
+**Rejected 104 and recorded every reason**, which is the half of this work that pays next time: an unrecorded reject is an image the following pass pays to judge again.
 
 What the rejects actually were, because the pattern is worth knowing before the next pass:
 
@@ -36,7 +36,7 @@ What the rejects actually were, because the pattern is worth knowing before the 
 
 **Also fixed a real defect found on the way.** `photo_apply.py` wrote city files at indent 1 with no trailing newline, which is not what data/cities holds, so approving a single photograph reformatted the entire file: Graz arrived as a 724-line diff for a four-line change, and a real edit hidden inside that much churn is a review nobody can do. It writes indent 2 with a trailing newline now, matching `photo_check.py` and `season_backfill.py`.
 
-FOR HIDDE: nothing blocks. The remaining 45 empty cities are mostly genuinely empty on Commons rather than unlooked-at: Caserta (20 trees), Melbourne, Hobart, Las Vegas, Dallas and Zaragoza returned no open-licence candidate at all across two sweeps. The cheaper next move for those is `famous_trees.py`, which finds trees we do not map that arrive with a photograph already attached, rather than hunting a photograph for a tree nobody has photographed.
+FOR HIDDE: nothing blocks. The remaining 46 empty cities are mostly genuinely empty on Commons rather than unlooked-at: Caserta (20 trees), Melbourne, Hobart, Las Vegas, Dallas and Zaragoza returned no open-licence candidate at all across two sweeps. The cheaper next move for those is `famous_trees.py`, which finds trees we do not map that arrive with a photograph already attached, rather than hunting a photograph for a tree nobody has photographed.
 
 ## 2026-08-20 (session) - A UX audit of both products, and the app can now be signed into
 
