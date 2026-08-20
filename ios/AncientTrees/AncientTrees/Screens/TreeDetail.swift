@@ -13,6 +13,8 @@ struct TreeDetail: View {
     let tree: Tree
     let catalogue: Catalogue
     @Environment(Saved.self) private var saved
+    @Environment(Account.self) private var account
+    @Environment(Nudge.self) private var nudge
     @State private var showFullStory = false
     @State private var reporting = false
 
@@ -194,6 +196,14 @@ struct TreeDetail: View {
 
             Button {
                 saved.toggleVisited(tree.id)
+                // The strongest moment this product has: somebody is standing in
+                // front of the thing and has just made a record of it. If we are
+                // ever going to ask, it is here.
+                if saved.isVisited(tree.id) {
+                    nudge.ticked(treeName: tree.name,
+                                 signedIn: account.isSignedIn,
+                                 total: saved.visitedCount)
+                }
             } label: {
                 Image(systemName: saved.isVisited(tree.id) ? "checkmark.seal.fill" : "checkmark.seal")
                     .font(.headline).padding(.vertical, 14).padding(.horizontal, 16)
@@ -202,6 +212,9 @@ struct TreeDetail: View {
 
             Button {
                 saved.toggleSaved(tree.id)
+                if saved.isSaved(tree.id) {
+                    nudge.saved(count: saved.savedCount, signedIn: account.isSignedIn)
+                }
             } label: {
                 Image(systemName: saved.isSaved(tree.id) ? "heart.fill" : "heart")
                     .font(.headline).padding(.vertical, 14).padding(.horizontal, 16)

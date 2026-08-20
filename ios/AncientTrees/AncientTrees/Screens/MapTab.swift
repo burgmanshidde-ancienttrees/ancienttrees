@@ -23,6 +23,8 @@ struct MapTab: View {
     @State private var sheetHeight: SheetHeight = .peek
     @State private var query = ""
     @Environment(Saved.self) private var saved
+    @Environment(Account.self) private var account
+    @Environment(Nudge.self) private var nudge
 
     /// A wide net for the map itself: pins the user can pan to matter, and
     /// MapKit clusters whatever it is given.
@@ -89,6 +91,11 @@ struct MapTab: View {
             Text(t.name).font(.title3.bold()).multilineTextAlignment(.center)
             Button {
                 saved.toggleVisited(t.id)
+                if saved.isVisited(t.id) {
+                    nudge.ticked(treeName: t.name,
+                                 signedIn: account.isSignedIn,
+                                 total: saved.visitedCount)
+                }
             } label: {
                 Label(saved.isVisited(t.id) ? "Ticked off" : "I have seen this one",
                       systemImage: saved.isVisited(t.id) ? "checkmark.seal.fill" : "checkmark.seal")
@@ -123,7 +130,7 @@ struct MapTab: View {
                 }
             }
             .padding(.horizontal, 16)
-            .padding(.bottom, 24)
+            .padding(.bottom, 110)      // clear of the floating tab bar
         }
     }
 

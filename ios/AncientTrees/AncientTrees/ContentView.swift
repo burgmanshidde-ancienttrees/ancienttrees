@@ -13,6 +13,22 @@ struct ContentView: View {
     @State private var saved = Saved()
     @State private var entitlement = Entitlement()
     @State private var location = LocationProvider()
+    @State private var account = Account()
+    @State private var nudge = Nudge()
+    @State private var rootSheet: RootSheet?
+
+    /// Everything the root can put over the app. An enum rather than a pile of
+    /// booleans so there is exactly one sheet modifier below.
+    enum RootSheet: Identifiable, Equatable {
+        case signIn(SignInReason)
+        case paywall(Feature)
+        var id: String {
+            switch self {
+            case .signIn(let r): "signin-" + r.id
+            case .paywall(let f): "paywall-" + f.rawValue
+            }
+        }
+    }
     // Screenshotting each tab needs a way to open on one, because this Mac's
     // simulator panel is not available and simctl cannot tap. Debug only.
     @State private var tab = ProcessInfo.processInfo.arguments
@@ -56,11 +72,25 @@ struct ContentView: View {
                 }
                 .environment(saved)
                 .environment(entitlement)
-                // Same debug scaffolding as -tab and -at: no simulator panel
-                // here, so a screen that is only reachable by tapping cannot
-                // otherwise be looked at before it ships.
-                .sheet(isPresented: .constant(ProcessInfo.processInfo.arguments.contains("-paywall"))) {
-                    PaywallView(feature: .walkBeyondFirst).environment(entitlement)
+                .environment(account)
+                .environment(nudge)
+                // ONE sheet modifier, driven by one optional, because SwiftUI
+                // honours only one per view and stacking three meant the ask
+                // silently never appeared. The ask is presented from the root so
+                // that a tick on a tree page and a third save on the map land in
+                // the same sheet rather than in two near-identical ones.
+                .sheet(item: $rootSheet) { which in
+                    switch which {
+                    case .signIn(let reason):
+                        SignInSheet(reason: reason, localCount: saved.savedCount)
+                            .environment(account).environment(saved)
+                    case .paywall(let feature):
+                        PaywallView(feature: feature)
+                            .environment(entitlement).environment(account).environment(saved)
+                    }
+                }
+                .onChange(of: nudge.pending) { _, new in
+                    if let new { rootSheet = .signIn(new); nudge.pending = nil }
                 }
             } else if let err = store.loadError {
                 ContentUnavailableView("Something is wrong with the catalogue",
@@ -72,7 +102,32 @@ struct ContentView: View {
         }
         .task {
             store.loadBundled()
-            location.request()
+            // Forcing an origin with -at= is the screenshot path, and asking for
+            // a permission we are about to ignore only puts a dialog in the way.
+            if debugOrigin == nil { location.request() }
+            // Same debug scaffolding as -tab and -at: no simulator panel here,
+            // so a screen only reachable by tapping cannot otherwise be looked
+            // at before it ships.
+            let args = ProcessInfo.processInfo.arguments
+            if args.contains("-signin") {
+                rootSheet = .signIn(.keepTree("The Last Elm of Stationsplein"))
+            } else if args.contains("-paywall") {
+                rootSheet = .paywall(.walkBeyondFirst)
+            }
+            // Every change to the collection follows the person to their
+            // account, if they have one. Wired here rather than inside Saved so
+            // the collection keeps knowing nothing about sign-in.
+            saved.onMutate = { [account] id, entry in
+                guard account.isSignedIn else { return }
+                Task { await CloudSync.push(account: account, entry: entry, treeId: id) }
+            }
+            // An hour-old access token is the failure the website shipped with
+            // for three weeks: saves stopped reaching the account and nothing
+            // said so. Refreshing on launch means the app never gets there.
+            if account.isSignedIn {
+                await account.refreshIfNeeded()
+                await CloudSync.merge(account: account, saved: saved)
+            }
         }
     }
 }

@@ -23,9 +23,13 @@ import SwiftUI
 struct PaywallView: View {
     let feature: Feature
     @Environment(Entitlement.self) private var entitlement
+    @Environment(Account.self) private var account
+    @Environment(Saved.self) private var saved
     @Environment(\.dismiss) private var dismiss
     @State private var registered = false
     @State private var sending = false
+    @State private var signingIn = false
+    @State private var failed = false
 
     private let price = "€19.95"
     private let trialDays = 7
@@ -43,6 +47,11 @@ struct PaywallView: View {
                 .padding(.bottom, 110)
             }
             .safeAreaInset(edge: .bottom) { cta }
+            .sheet(isPresented: $signingIn) {
+                SignInSheet(reason: .seasonAlerts, localCount: saved.savedCount)
+                    .environment(account)
+                    .environment(saved)
+            }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
@@ -136,12 +145,22 @@ struct PaywallView: View {
                     .background(Color(.secondarySystemBackground), in: .capsule)
             } else {
                 Button {
+                    // Signed out, this button cannot keep its own promise, so it
+                    // asks the one question that lets it: who are you. That also
+                    // makes the highest-intent screen in the app an account
+                    // surface, which is where AllTrails gets most of theirs.
+                    guard let mail = account.email else { signingIn = true; return }
                     Task {
                         sending = true
                         entitlement.registerInterest(feature)
-                        _ = await Waitlist.join(reason: feature.rawValue)
+                        // Only claim it worked if it worked. The old code threw
+                        // the result away and said yes regardless, which is how
+                        // a button that had never once succeeded still looked
+                        // like it had.
+                        let ok = await Waitlist.join(reason: feature.rawValue, email: mail)
                         sending = false
-                        registered = true
+                        registered = ok
+                        failed = !ok
                     }
                 } label: {
                     HStack {
@@ -154,8 +173,14 @@ struct PaywallView: View {
                 .tint(Color(red: 0.20, green: 0.35, blue: 0.20))
                 .clipShape(.capsule)
                 .disabled(sending)
-                Text("Not open yet. No card, nothing charged.")
-                    .font(.caption2).foregroundStyle(.secondary)
+                Text(failed
+                     ? "That did not go through. Try again in a minute."
+                     : account.isSignedIn
+                       ? "Not open yet. No card, nothing charged."
+                       : "Not open yet. No card, nothing charged. We need an address to write to.")
+                    .font(.caption2)
+                    .foregroundStyle(failed ? .red : .secondary)
+                    .multilineTextAlignment(.center)
             }
         }
         .padding(.horizontal, 20).padding(.bottom, 10).padding(.top, 8)

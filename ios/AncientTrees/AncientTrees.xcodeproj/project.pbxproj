@@ -409,6 +409,8 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.5;
 				MARKETING_VERSION = 1.0;
+				CODE_SIGN_ENTITLEMENTS = AncientTrees.entitlements;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "So the map can open on the remarkable old trees closest to you. Your location never leaves the phone.";
 				PRODUCT_BUNDLE_IDENTIFIER = app.ancienttrees.AncientTrees;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -451,6 +453,8 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.5;
 				MARKETING_VERSION = 1.0;
+				CODE_SIGN_ENTITLEMENTS = AncientTrees.entitlements;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "So the map can open on the remarkable old trees closest to you. Your location never leaves the phone.";
 				PRODUCT_BUNDLE_IDENTIFIER = app.ancienttrees.AncientTrees;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;

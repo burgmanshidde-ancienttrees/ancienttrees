@@ -27,7 +27,23 @@ public final class Saved {
     private let key = "saved.entries.v1"
     public private(set) var entries: [String: Entry] = [:]
 
+    /// Called with every deliberate change so the cloud half can follow, set by
+    /// ContentView because this type has no business knowing about an account.
+    /// A nil entry means the tree was removed.
+    public var onMutate: ((String, Entry?) -> Void)?
+
     public init() { load() }
+
+    /// Take a row that came back from the account. Deliberately does NOT fire
+    /// onMutate: this is the server telling us something, and echoing it
+    /// straight back would be a write for no reason.
+    public func adopt(treeId: String, visitedAt: Date?, savedAt: Date) {
+        let existing = entries[treeId]
+        entries[treeId] = Entry(treeId: treeId,
+                                visitedAt: visitedAt ?? existing?.visitedAt,
+                                savedAt: min(savedAt, existing?.savedAt ?? savedAt))
+        persist()
+    }
 
     public func isSaved(_ id: String) -> Bool { entries[id] != nil }
     public func isVisited(_ id: String) -> Bool { entries[id]?.visitedAt != nil }
@@ -39,6 +55,7 @@ public final class Saved {
         if entries[id] != nil { entries[id] = nil }
         else { entries[id] = Entry(treeId: id, visitedAt: nil, savedAt: Date()) }
         persist()
+        onMutate?(id, entries[id])
     }
 
     /// Ticking a tree off is the point of the whole verb, so it also saves it:
@@ -52,6 +69,7 @@ public final class Saved {
             entries[id] = Entry(treeId: id, visitedAt: Date(), savedAt: existing?.savedAt ?? Date())
         }
         persist()
+        onMutate?(id, entries[id])
     }
 
     private func persist() {

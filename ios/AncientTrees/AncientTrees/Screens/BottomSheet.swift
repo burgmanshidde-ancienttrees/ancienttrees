@@ -12,7 +12,10 @@ enum SheetHeight: CaseIterable {
 
     func points(in total: CGFloat) -> CGFloat {
         switch self {
-        case .peek: 160
+        // Tall enough to clear the floating tab bar AND still show a whole
+        // card. At 160 the tab bar ate most of it and the first tree card was
+        // sliced in half, which is what the sheet is entirely for.
+        case .peek: 268
         case .half: total * 0.52
         case .full: total * 0.92
         }
