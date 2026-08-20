@@ -3,7 +3,7 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Groningen's oldest tree keeps company with cows, not city planners: a lime planted in 1684 still stands before a private farmhouse northeast of the centre, decades before Groningen laid out a single public park. Its younger rivals cluster in the Sterrebos, an 18th-century star-shaped forest whose oaks turned out, after a 2024 storm and a ring count, to be far older than anyone had assumed. One of the park's rarest trees, a sessile oak spared from a paving project in 2025, is still fighting for root space today.",
-  "meta_description": "Groningen's oldest tree is a 1684 lime at a private farm, older than any tree in its parks. Five verified locations, real stories, one under threat.",
+  "meta_description": "Groningen's oldest tree is a 1684 lime at a private farm, older than any tree in its parks. Ten verified locations, real stories, one under threat.",
   "question_answer": "Groningen's oldest tree is a Common Lime at De Rollen, a moated farm on the city's northeastern edge, planted in 1684 and now roughly 340 years old. The Dutch national heritage register calls it plainly the oldest tree in the province, older than anything in the city's own celebrated parks by more than a century.",
   "question_meta": "A 1684 lime at a moated farm called De Rollen, on Groningen's edge, is the city and province's oldest documented tree. The full five.",
   "question_context": "Groningen's age claims split cleanly into documented and inferred. The Common Lime at De Rollen carries an actual date, 1684, recorded in the Rijksdienst voor het Cultureel Erfgoed's own listing for the farm and repeated in the municipality's 2018 monumental tree policy, which is why it anchors this page as the oldest tree in the city despite standing on private farmland rather than in a park built for visitors. Sterrebos's surviving oaks come close on a technicality: when a storm toppled one of their number in January 2024, a ring count revealed a germination year of around 1758, nearly 130 years earlier than the previous estimate, and heritage officials now assume its still-standing neighbours share that birth year, though none of the survivors have themselves been individually dated. The rest of the list is honestly younger and more provisional: Noorderplantsoen's ginkgo rests on a single municipal source, and Groenestein's plane tree is inferred from the size of its trunk and the age of the estate around it rather than any planting record. None of that uncertainty is unusual for trees planted before anyone thought to write the date down.",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Groningen's remarkable trees free to visit?",
-      "a": "Four of the five stand in public parks, open at any time. The De Rollen lime is on working farmland and is visible only from the public road, Noorddijkerweg."
+      "a": "Nine of the ten stand in public parks or squares, open at any time. The De Rollen lime is on working farmland and is visible only from the public road, Noorddijkerweg."
     },
     {
       "q": "What is Groningen's rarest tree?",
@@ -194,6 +194,151 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate"
+    },
+    {
+      "id": "gro_006",
+      "name": "The Siberian Balsam Poplar of Engelenpoortje",
+      "species": "Siberian Balsam Poplar (Populus x berolinensis)",
+      "age_estimate": "~90 years",
+      "age_min": 86,
+      "age_max": 96,
+      "location": {
+        "address": "Engelenpoortje, between Poelestraat and Nieuwe Markt, Groningen",
+        "latitude": 53.218922,
+        "longitude": 6.569112,
+        "neighbourhood": "Binnenstad"
+      },
+      "story": "This poplar is not a species anyone would find growing wild anywhere. Populus x berolinensis was bred in 1865 in Berlin's botanical garden, a deliberate cross between a Siberian laurel-leaf poplar and the tall, narrow Lombardy poplar, made for exactly the trait it shows here, height with a narrow enough crown to survive in a gap between buildings barely wider than the tree itself.\n\nIt grows at the Engelenpoortje, a seventeenth-century gated alley named for a long-vanished inn, De Blauwe Engel, that once stood on the corner. The alley has not had a settled recent history: redevelopment around Groningen's Grote Markt closed it to the public in 2012, and it stayed shut for eight years before reopening at the end of 2020. Whether this poplar, which the register dates to the 1930s, stood through that closure without anyone walking past it is not recorded, though a cross this vigorous would have lost little from eight quiet years. It stands today between the shops and houses the alley threads between, free to walk past on the way from Poelestraat to the Nieuwe Markt, exactly as the seventeenth-century gate always intended.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1680039)",
+        "https://nl.wikipedia.org/wiki/Engelenpoort_(Groningen)",
+        "https://nl.wikipedia.org/wiki/Populus_%C3%97_berolinensis"
+      ],
+      "access": "Free, public alley, open at any time",
+      "transport": "Binnenstad, central Groningen; about a 10 minute walk from Groningen Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "gro_007",
+      "name": "The Oak of Martinikerkhof",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "~110 years",
+      "age_min": 106,
+      "age_max": 116,
+      "location": {
+        "address": "Martinikerkhof, Groningen",
+        "latitude": 53.220141,
+        "longitude": 6.569009,
+        "neighbourhood": "Binnenstad"
+      },
+      "story": "For decades in the twentieth century, Groningen parked cars on top of this oak's roots. Martinikerkhof, one of the city's three great squares, spent the years up to the 1970s as a parking lot before the city cleared the cars and let it become what it is today, a quiet, largely car-free green space in the shadow of the Martini Tower. The oak stood through all of it, in the middle of the square, and the municipality's own 2021 survey rates its condition as moderate to poor, noting plainly that the tree appears to be declining in recent years even though the ground around it is now far better than the parking lot it endured for decades. Whatever damage was done may simply have come too late to reverse.\n\nPlanted sometime around 1910 to 1920, the oak is old enough to have watched the square through both its worst years and its recovery, and its trunk base is described as intact even as its crown has thinned. It stands in the open, free, at the centre of Martinikerkhof, a short walk from the tower whose bells have marked Groningen's hours for centuries. If its condition improves or worsens, this page should be updated to match; tell us if you have seen it recently.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1680037)"
+      ],
+      "access": "Free, public square, open at any time",
+      "transport": "Binnenstad, central Groningen; about a 10 minute walk from Groningen Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "gro_008",
+      "name": "The Chestnut of Prinsentuin",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "~170 years",
+      "age_min": 166,
+      "age_max": 176,
+      "location": {
+        "address": "Prinsentuin, entrance on Turfsingel, Groningen",
+        "latitude": 53.221208,
+        "longitude": 6.569052,
+        "neighbourhood": "Binnenstad"
+      },
+      "story": "The Prinsentuin has been walled off from the rest of Groningen since 1626, when it was laid out as a private pleasure garden for the region's stadholders, and the wall is still what makes it feel like a secret in the middle of a busy city centre. Visitors reach it through a gate on the Turfsingel topped with a working sundial from 1731, accurate enough to mark day length and sunrise and sunset as well as the hour, or through a smaller door on Kattenhage. Entry is free and has been for as long as records go back.\n\nThis horse chestnut, which the tree register dates to around 1850 to 1860, is not part of the garden's original seventeenth-century planting, arriving roughly two centuries after the walls went up, but it has still had well over 150 years inside them. Horse chestnut is not native to the Netherlands, imported from the Balkans as an ornamental tree from the sixteenth century onward, and this one has grown up sheltered from wind and street salt by walls built for a stadholder's roses rather than for any tree. It stands in the open garden, free, daily until sunset, a short walk from Martinikerkhof.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1680036)",
+        "https://en.wikipedia.org/wiki/Prinsentuin_(Groningen)"
+      ],
+      "access": "Free, public walled garden, open daily until sunset",
+      "transport": "Binnenstad, central Groningen; about a 10 minute walk from Groningen Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "gro_009",
+      "name": "The Chestnut of Akerkhof",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "~140 years",
+      "age_min": 136,
+      "age_max": 146,
+      "location": {
+        "address": "Akerkhof, around the Akerk church, Groningen",
+        "latitude": 53.216544,
+        "longitude": 6.56166,
+        "neighbourhood": "Binnenstad"
+      },
+      "story": "When Groningen redeveloped the Akerkhof a few years ago to fix a square that had gone dark, dry and unloved, the plan called for cutting three trees and clearing scrub around the church to let light back in. This horse chestnut was not one of them. The municipality's own account of the project says its monumental chestnut and linden trees deliberately kept their place and gained more room as the work went on, while three new trees were planted along the redesigned Brugstraat to make up for what came down.\n\nAkerkhof was a real cemetery from the twelfth century until burials inside the city walls were banned on hygiene grounds and the ground was cleared in 1828, which is most of why an open square with old trees exists here at all. This chestnut, dated by the register to around 1880 to 1890, is younger than that clearance but has still stood through the square's dark spell and its recent recovery. It grows in the open around the Akerk church, free to walk past any time, on a square the city now treats as worth protecting rather than merely tolerating.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1688533)",
+        "https://ruimtevoorjou.groningen.nl/projecten/akerkhof"
+      ],
+      "access": "Free, public square, open at any time",
+      "transport": "Binnenstad, central Groningen; about a 12 minute walk from Groningen Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "gro_010",
+      "name": "The Maple of Guyotplein",
+      "species": "Sycamore (Acer pseudoplatanus)",
+      "age_estimate": "~130 years",
+      "age_min": 126,
+      "age_max": 136,
+      "location": {
+        "address": "Guyotplein, Groningen",
+        "latitude": 53.221616,
+        "longitude": 6.561876,
+        "neighbourhood": "Binnenstad"
+      },
+      "story": "This sycamore grows on a square named for a man most Dutch schoolchildren have never heard of, Henri Daniel Guyot, a Walloon minister who founded the country's first school for deaf children in Groningen in 1790. The square itself started as the planted west side of the Ossenmarkt, given trees in 1754, and only took Guyot's name in 1890, on the centenary of his institute, by which point this specific tree, dated by the register to around 1890 to 1900, was likely just going into the ground.\n\nA monument to Guyot has stood on the square since 1829, decades before it carried his name, and the deaf institute itself operated here for generations before the building later became Groningen's courthouse. The sycamore has outlasted the institute's departure and watched the square's slow shift from an educational address to a judicial one. Sycamore sheds bark in flaking plates as it ages, closer to a plane tree's trunk than to most other maples, worth a look on this one after more than a century of growth. It stands in the open square, free, a short walk from the city's other historic squares.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1680044)",
+        "https://nl.wikipedia.org/wiki/Guyotplein"
+      ],
+      "access": "Free, public square, open at any time",
+      "transport": "Binnenstad, central Groningen; about a 10 minute walk from Groningen Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }

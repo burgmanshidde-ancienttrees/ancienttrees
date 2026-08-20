@@ -2647,6 +2647,15 @@
     "note": "session pass, in-context, no agent dispatched: register-backed verify+write from the freshly-staged Netherlands LRMB candidates (data/research/utrecht-register-candidates.json, 316 entries). Found and avoided a near-miss: a DUIC news article describing a specific 184-year-old elm in Zocherplantsoen terminally infected with Dutch elm disease, being preserved as a dead standing snag; excluded BOTH Hollandse iep (elm) candidates from the same Hieronymusplantsoen cluster since neither could be positively distinguished from the tree in that article. Also caught a near-duplicate: a Hollandse linde register point 80m from the already-published utr_005 (Onder de Linden), which already represents that whole canal-side row at approximate precision; dropped rather than double-published. Shipped 4: a Copper Beech and a 4-tree Oriental Plane grove (both Zocher-attributed 1835 plantings in Hieronymusplantsoen, one with a genuine register self-contradiction on planting decade stated honestly in the story), a second Oriental Plane at Janskerkhof, and a London Plane at Lucasbolwerk (corroborated against the Stadsschouwburg theatre's independently documented 1941 construction date). All dead_entries_regex-clean. Utrecht 5 to 9. Build/preflight/superlatives/qa clean (same pre-existing sitemap-lastmod warning, shallow checkout).",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "groningen",
+    "kind": "verify",
+    "tokens": 0,
+    "trees": 5,
+    "note": "session pass, in-context, no agent dispatched: register-backed verify+write from freshly-staged Netherlands LRMB candidates (data/research/groningen-register-candidates.json, 65 entries). Central square/alley cluster: Martinikerkhof oak (shipped honestly noting the municipality's own 2021 survey rates its condition moderate to poor and declining, not excluded since a declining-but-alive tree is not a dead one), Prinsentuin horse chestnut (walled 1626 Renaissance garden, free entry confirmed independently), Akerkhof horse chestnut (corroborated against the municipality's own account of a recent redevelopment that explicitly preserved it while removing three other trees), Guyotplein sycamore, Engelenpoortje Siberian balsam poplar (Populus x berolinensis, a documented 1865 Berlin hybrid; the alley itself was closed to the public 2012-2020, confirmed via nl.wikipedia). All dead_entries_regex-clean. Groningen 5 to 10. Build's walk planner grouped 6 of the 10 into one 2.5km, 33 minute central walk. Preflight clean on first pass (unlike Utrecht, no intro-length fix needed). Build/superlatives/qa all clean (same pre-existing sitemap-lastmod warning, shallow checkout).",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
