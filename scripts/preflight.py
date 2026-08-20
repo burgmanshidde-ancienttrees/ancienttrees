@@ -316,6 +316,45 @@ def check_stacked_pins():
     return out
 
 
+# The season files are hand-edited and their key names are not guessable. The
+# label for a flowering is `flower_label`, singular, while the month array beside
+# it is `flowers`, plural. On 2026-08-20 I wrote nine flowering descriptions
+# under `flowers_label` because I derived the key from the moment name instead
+# of reading the file, and site/src/lib/phenology.ts never saw one of them. A
+# key nobody reads is worse than a missing one: the work looks done.
+PHENOLOGY_KEYS = {
+    "common_name", "habit", "leaf", "flowers", "fruit", "colour", "bare",
+    "intensity", "flower_label", "fruit_label", "colour_label", "sources",
+}
+PHENOLOGY_MOMENTS = {"leaf", "flowers", "fruit", "colour", "bare"}
+INTENSITIES = {"unseen", "nice", "striking", "worth the trip"}
+
+
+def check_phenology():
+    """Season files: no key the build cannot read, no judgement it cannot parse."""
+    out = []
+    for path in sorted(glob.glob("data/phenology/*.json")):
+        name = os.path.basename(path)
+        try:
+            with open(path, encoding="utf-8") as fh:
+                d = json.load(fh)
+        except Exception as exc:
+            out.append("%s: will not parse (%s)" % (name, str(exc)[:60]))
+            continue
+        for k in d:
+            if k not in PHENOLOGY_KEYS:
+                out.append("%s: unknown key %r. The build reads only %s, so "
+                           "anything else is written and never shown."
+                           % (name, k, ", ".join(sorted(PHENOLOGY_KEYS))))
+        for moment, level in (d.get("intensity") or {}).items():
+            if moment not in PHENOLOGY_MOMENTS:
+                out.append("%s: intensity names %r, which is not a moment" % (name, moment))
+            if level not in INTENSITIES:
+                out.append("%s: intensity %r for %s is not one of %s"
+                           % (name, level, moment, ", ".join(sorted(INTENSITIES))))
+    return out
+
+
 def check_search_names():
     """Not a gate, a nag. Every published city should carry its name in other
     languages so the site search finds Den Haag as well as The Hague (Hidde,
@@ -342,7 +381,7 @@ def check_search_names():
 
 def main():
     problems = (check_id_prefixes() + check_pin_upgrades()
-                + check_cross_city_duplicates())
+                + check_cross_city_duplicates() + check_phenology())
     files = sorted(glob.glob("data/cities/*.json"))
     for p in files:
         problems += check_city(p)
