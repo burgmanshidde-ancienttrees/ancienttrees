@@ -38,6 +38,50 @@ Build clean throughout (last full build 1993 pages), qa.py clean (one pre-existi
 
 FOR HIDDE: nothing blocks. Noticed you're live in a concurrent session on the iOS app while this was running (pulled and rebased around your pushes cleanly, no conflicts).
 
+## 2026-08-20 (session) - Austin and Houston open, nine trees, from two Texas registers
+
+Both live, build and smoke test green, pages checked in the browser.
+
+**Austin, five trees**, and the source that made it possible was a register
+nobody here had found: Famous Trees of Texas, 103 trees with a written history
+each, sitting behind an ArcGIS dashboard the Forest Service does not advertise.
+Six of Austin's ten sit within 2.3 km of the centre, so the page has a real
+walk rather than a list.
+
+| tree | why |
+|---|---|
+| Treaty Oak | poisoned in 1989 with enough Velpar to kill a hundred trees; two thirds died, the rest set acorns again in 1997 |
+| Auction Oaks | 217 lots sold beneath them in 1839, paying for the buildings of a new capital, then decades as a parking lot with asphalt to the trunk |
+| Battle Oaks | on the university's original forty acres, argued out of the Biology building's ground plan in 1923 by a professor of Classics |
+| Old Baldy | a Franciscan wrote about it in 1716; Texas Parks and Wildlife calls it the oldest bald cypress on public land in the state |
+| Seiders Oaks | Gideon White died fighting from behind one of these trunks in 1842 |
+
+**Houston, four trees, and the page says out loud that they are drives.** The
+two registry trees nearest downtown both stand on private land and the registry
+withholds their positions, so central Houston has nothing of this order on
+ground the public can reach. Saying that is better than faking a walk. What it
+does have: a live oak on a church lawn in Spring Branch with a 40 metre crown
+on a 625 cm trunk; the pecan at Sugar Land with a footpath named after it; the
+Kissing Tree at Klein, last trace of the 1848 Strack settlement, which a Circle
+K forecourt nearly took until Klein Oaks High School students wrote letters;
+and the state champion winged elm on the Spring Creek Greenway.
+
+**Dallas gained nothing published, on purpose.** It already carries the post oak
+at Glover Cemetery, and the one remaining close candidate reverse-geocodes to a
+house number on Roberts Avenue with a park and a cemetery both 250 metres off.
+Choosing the nearer park would be the exact bridge claim that put Baarn's pin
+sixty metres wrong. It stays a lead with the reasoning written down.
+
+**Two register faults found and recorded.** The Big Tree Registry publishes
+INCHES, which this morning's pass read as centimetres and used to write Texas
+off as thin. And its `PublicOrPrivate` flag, called undocumented, decodes
+cleanly from the data: flag 1 is national parks, forests and TxDOT, flag 0 is
+ranches and hunting clubs. Nineteen leads moved to blocked on that alone.
+Famous Trees of Texas has a third fault worth carrying: 17 of its 103 trees are
+dead or removed, and the only place that says so is the prose of each entry.
+Austin's own Washington Elm, Memorial Pecan and Governor Hogg pecans are all in
+it and all gone, which the city page now tells the reader.
+
 ## 2026-08-20 (session) - Texas was written off this morning over a unit error, and it holds three cities
 
 A scouting pass earlier today found the Texas Big Tree Registry's backend,

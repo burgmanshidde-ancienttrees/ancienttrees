@@ -263,6 +263,10 @@
   {
    "date": "2026-08-20",
    "note": "PublicOrPrivate decoded from the data itself: flag 1 is national parks, national forests, state natural areas and TxDOT; flag 0 is ranches and hunting clubs. Flag 0 trees moved to blocked under hard rule 10, since the registry also hides them from its own public map and their coordinates only reached us because the backend returns what the front end withholds. OrganizationName names the owner and is the field a verify pass should lead with."
+  },
+  {
+   "date": "2026-08-20",
+   "note": "The blackjack oak (TreeID 6436, 307 cm, City of Dallas, measured September 2025) was chased again and is still not placeable. Reverse geocoding puts 32.76528,-96.75583 at 3915 Roberts Avenue, 75215, a house number on a residential street, with Oakland Cemetery and Leo V. Cheney Park both within 250 metres. Either the coordinate carries about a hundred metres of error and the tree is in one of those, or it stands on a residential lot the city happens to own. Do NOT resolve this by choosing the nearer park: 'there is a park 200 metres away, therefore the tree is in the park' is the bridge claim that put Baarn's pin sixty metres from the tree it described. What settles it is a photograph, a city park tree inventory, or somebody standing there."
   }
  ]
 }
