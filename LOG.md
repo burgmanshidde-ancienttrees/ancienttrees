@@ -12,6 +12,26 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-20 (session) - Geneva, Utrecht and Groningen deepen; a real stale-count bug fixed across 8 cities; two register scouts closed
+
+New session. `python3 scripts/visitors.py`: 351 visits, 536 page views over the last 7 days. Step 0: `health.py` rung 2 clear. Supabase submissions checked (6 rows, all already processed). Nothing published found wrong beyond what's fixed below.
+
+**Bari stays at 3, closed out rather than re-opened.** The prior commit named the La Grave carob grove (Polignano a Mare) and the Terlizzi/Sovereto pine as the remaining day-trip candidates for a 4th tree. Checked both: the carob grove reads as private agricultural land with no source confirming public visibility from the nearby road, and the Sovereto pine can't be confirmed alive given two independent 2025 local reports of fallen century-old trees in that exact area. Recorded both as blocked in `data/leads/bari.json` with a pointer at Molfetta's unchecked candidates for whoever picks this up next.
+
+**Two page gaps closed:** wrote hand intros for Hornbeam and Hungarian Oak species pages (`pagegaps.py` now reports zero missing).
+
+**Three register-backed deepen passes, dispatched to the `verify` agent and merged in-session with hand-written stories:** Geneva 18 to 21 (three SITG-register cedars), Utrecht 9 to 16 (Wilhelminapark and the Servaasbolwerk/Zonnenburg/Lepelenburg bastion-park chain), Groningen 10 to 16 (Oude Hortus and Nieuwe Kerkhof/Noorderplantsoen). One Groningen candidate caught a search-summary fabrication trap (a "oldest ginkgo in the Netherlands" claim that actually belongs to Utrecht's ginkgo, not Groningen's) and was dropped rather than shipped. Fixed 3 hard-rule-9 species naming collisions the build caught along the way.
+
+**Found and fixed a real gap in the stale-tree-count check** (`count-promises.ts`, mirrored in `preflight.py`): it never covered the "N verified locations" meta_description closer or a bare "all N."/"full N." FAQ ending, only patterns followed by a noun like "trees". Widened both, narrowly (anchored on "Yes," for the "all N" case so Frankfurt's genuine "station for all four [of six]" subset reference doesn't false-positive). Running the widened check surfaced 8 real, live stale counts, not just today's own growth: Athens, Bratislava, Dublin, Haarlem and Maastricht were carrying stale question_meta or FAQ text from earlier growth that nothing had caught until now. Fixed all 8; Bratislava's FAQ had never mentioned its 6th tree at all (a separate Bratislava Forest Park specimen 3km from the other five).
+
+**Two register scouting targets closed** (`scout_next.py --target`): South Korea (Seoul #33) has a promising CHA heritage-spatial API but the licence badge couldn't be read by this sandbox's WebFetch, stalled for a session with real browser rendering. Houston (#36, one of Hidde's 17 named cities) has a real, working Texas Big Tree Registry API but it's non-commercial licensed, so verification-lead-only like Nevada's; the Harris County yield itself is thin (18 rows, one real live oak) and caught a register data fault (4 rows tagged Harris County actually sit in the Texas Panhandle, 800km off).
+
+**Two more register-backed verify passes dispatched and still running at time of writing:** Krakow (16 to a 30 target, Poland's national pomniki przyrody register) and Rotterdam (9 to a 20 target, the same Dutch LRMB register that fed today's other three Dutch cities). Will merge and report next entry.
+
+Build clean throughout (last full build 1993 pages), qa.py clean (one pre-existing sitemap-lastmod warning from this sandbox's shallow checkout), superlatives.py clean bar one benign shared species-history phrase on two different London planes.
+
+FOR HIDDE: nothing blocks. Noticed you're live in a concurrent session on the iOS app while this was running (pulled and rebased around your pushes cleanly, no conflicts).
+
 ## 2026-08-20 (session) - The night runs were handing back an hour and three quarters, and now they do not
 
 The runs were not being killed. That was the whole finding, and it took
