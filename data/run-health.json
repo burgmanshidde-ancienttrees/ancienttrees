@@ -535,6 +535,25 @@
    "cities_touched": 0,
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-08-20T00:27:23+00:00",
+   "date": "2026-08-20",
+   "run_id": "32317366676",
+   "minutes": 6.9,
+   "minutes_basis": "measured",
+   "turns": 65,
+   "denials": 8,
+   "denials_source": "permission_denials: Bash",
+   "ended": "success",
+   "tokens": 7693181,
+   "claims_held": [
+    "houston"
+   ],
+   "commits": 1,
+   "cities_touched": 0,
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
