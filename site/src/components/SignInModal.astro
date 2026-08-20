@@ -32,6 +32,7 @@ const T = es ? {
   subNamed: "%s está guardado solo en este dispositivo. Una cuenta gratuita, un email, sin contraseña, y tus árboles te siguen a todas partes.",
   placeholder: "tu@ejemplo.com",
   send: "Envíame un enlace de acceso",
+  google: "Continuar con Google",
   or: "o",
   app: "Descarga la app",
   fine: 'Solo guardamos tu dirección de email, para los enlaces de acceso y nada más. <a href="/privacy">Privacidad</a>',
@@ -44,6 +45,7 @@ const T = es ? {
   subNamed: "%s is saved on this device only. One free account, one email, no password, and your trees follow you everywhere.",
   placeholder: "you@example.com",
   send: "Email me a sign-in link",
+  google: "Continue with Google",
   or: "or",
   app: "Get the app",
   fine: 'We store only your email address, for sign-in links and nothing else. <a href="/privacy">Privacy</a>',
@@ -58,11 +60,12 @@ const T = es ? {
   <div id="signin-ask">
     <h3>{T.title}</h3>
     <p id="signin-sub" data-generic={T.sub} data-named={T.subNamed}>{T.sub}</p>
+    <button type="button" class="oauth-btn" id="signin-google">{T.google}</button>
+    <p class="signin-or">{T.or}</p>
     <form id="signin-form" class="signin-form" autocomplete="email">
       <input type="email" id="signin-email" placeholder={T.placeholder} aria-label="Email address" required>
       <button type="submit" class="go-btn">{T.send}</button>
     </form>
-    <p class="signin-or">{T.or}</p>
     <a class="signin-applink" href="/app" data-ev="app-cta">{T.app}</a>
     <p class="signin-fine" set:html={T.fine}></p>
   </div>

@@ -6,15 +6,26 @@
 // whole reason this exists: an account here is not a new thing to sell, it is
 // the answer to "I ticked six trees and then got a new phone".
 //
-// Two routes in, and the order on screen is deliberate:
+// Three routes in, and the order on screen is deliberate: the taps first, the
+// typing second.
 //
 // 1. SIGN IN WITH APPLE. One Face ID tap, no typing, and the app is never left.
-//    On a phone that is the difference between an account and a shrug. Apple's
-//    own relay address is a real address as far as we are concerned, and it is
-//    better for the person than handing us their actual one.
-// 2. AN EMAILED CODE, typed back into the app. Not a magic link: a link means
+//    On a phone that is the difference between an account and a shrug.
+// 2. GOOGLE, added 2026-08-20 on Hidde's yes, through a system sheet rather than
+//    Google's SDK. See OAuth.swift for why that matters.
+// 3. AN EMAILED CODE, typed back into the app. Not a magic link: a link means
 //    leaving the app for Mail and hoping the way back works, which is where the
 //    website loses people and where an app loses them worse.
+//
+// ONE THING THESE THREE DO NOT SHARE, and it is the trap: Supabase folds two
+// sign-ins into one account when the verified email matches, so Google on the
+// phone and Google on the website are the same person with one collection. But
+// Sign in with Apple hands out a private relay address by default, which is a
+// DIFFERENT address, so Apple on the phone and Google on the laptop are two
+// accounts and the second one looks empty. That is why every screen that shows
+// an account shows which address it is: a person who can see
+// "someone@privaterelay.appleid.com" can work out what happened, and a person
+// who cannot just thinks we lost their trees.
 //
 // What we store is unchanged from the rule Hidde set when he opened the account
 // track (DECISIONS.md 2026-08-14): an email address and a collection, nothing
@@ -204,6 +215,49 @@ public final class Account {
             return
         }
         store(parsed)
+    }
+
+    // MARK: - the Google route
+
+    /// The tokens come back on the callback URL rather than from a token
+    /// exchange, because Supabase does the exchange with Google itself. So this
+    /// builds the session out of the fragment instead of going through send().
+    public func signInWithGoogle() async {
+        state = .working
+        problem = nil
+        guard let f = await OAuth.run(provider: "google") else {
+            state = .signedOut
+            return                                   // cancelled: not an error
+        }
+        guard let access = f["access_token"], let refresh = f["refresh_token"] else {
+            state = .signedOut
+            problem = f["error_description"]?.replacingOccurrences(of: "+", with: " ")
+                ?? "Google sign-in is not switched on yet. Use your email for now."
+            return
+        }
+        let expires = Double(f["expires_in"] ?? "3600") ?? 3600
+        var session = Session(accessToken: access,
+                              refreshToken: refresh,
+                              expiresAt: Date().addingTimeInterval(expires),
+                              userId: "", email: nil)
+        // The callback carries no user, so ask who this is. Without it the
+        // account screen cannot say which address you signed in with, which is
+        // the one thing that makes an Apple relay address versus a Google
+        // address understandable rather than mysterious.
+        if let who = await Self.user(accessToken: access) {
+            session.userId = who.id
+            session.email = who.email
+        }
+        store(session)
+    }
+
+    private static func user(accessToken: String) async -> (id: String, email: String?)? {
+        let r = Supa.request("/auth/v1/user", method: "GET", token: accessToken)
+        guard let (data, resp) = try? await URLSession.shared.data(for: r),
+              let http = resp as? HTTPURLResponse, (200..<300).contains(http.statusCode),
+              let j = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+              let id = j["id"] as? String else { return nil }
+        return (id, j["email"] as? String)
     }
 
     // MARK: - leaving

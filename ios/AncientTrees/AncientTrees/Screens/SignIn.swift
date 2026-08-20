@@ -85,6 +85,32 @@ struct SignInSheet: View {
             .frame(height: 52)
             .clipShape(.capsule)
 
+            // Google under Apple, both above the typed route, which is the
+            // order every consumer app has settled on: the taps first, the
+            // typing second.
+            //
+            // Text rather than Google's coloured G on purpose. Their brand
+            // guidelines require the official asset or their exact spec, and a
+            // hand-drawn approximation of somebody else's logo is worse than
+            // none. Dropping in the real asset is a five minute job before this
+            // ever reaches the App Store.
+            Button {
+                Task {
+                    await account.signInWithGoogle()
+                    await finishIfSignedIn()
+                }
+            } label: {
+                Text("Continue with Google")
+                    .font(.brand(17, .bold, relativeTo: .headline))
+                    .foregroundStyle(Brand.ink)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 15)
+                    .background(Brand.surface, in: .capsule)
+                    .overlay { Capsule().strokeBorder(Brand.hairline, lineWidth: 1.5) }
+            }
+            .buttonStyle(.plain)
+            .disabled(account.state == .working)
+
             HStack(spacing: 12) {
                 Rectangle().fill(.quaternary).frame(height: 1)
                 Text("or").font(.footnote).foregroundStyle(.secondary)

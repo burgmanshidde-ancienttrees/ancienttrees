@@ -72,6 +72,20 @@ export const SIGNIN_JS = `
       .catch(function() {});
   })();
 
+  // Google, added 2026-08-20. One redirect: Supabase talks to Google, Google
+  // sends the person back to Supabase, and Supabase returns them here with the
+  // tokens in the fragment, which the code at the top of this file already
+  // catches on whatever page they were on. Nothing else to wire.
+  window.atOAuth = function(provider) {
+    var back = location.origin + location.pathname;
+    location.href = SB + '/auth/v1/authorize?provider=' + provider
+      + '&redirect_to=' + encodeURIComponent(back);
+  };
+  document.addEventListener('click', function(e) {
+    var g = e.target.closest('#signin-google, #acct-google');
+    if (g) { e.preventDefault(); window.atOAuth('google'); }
+  });
+
   var dlg = document.getElementById('signin-dialog');
   if (!dlg) return;
   window.atOpenSignIn = function(treeName) {

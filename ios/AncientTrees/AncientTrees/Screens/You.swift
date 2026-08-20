@@ -176,7 +176,7 @@ struct YouView: View {
                 .foregroundStyle(Brand.moss)
             Text(account.email ?? "Signed in")
                 .font(.footnote).foregroundStyle(Brand.inkSoft)
-            Text("Signed in on ancienttrees.app with the same address and your collection is there too.")
+            Text("Your trees are kept under this address. Sign in on ancienttrees.app with the same one and your collection is there too; a different one starts a separate collection.")
                 .font(.caption).foregroundStyle(Brand.inkSoft)
             Divider()
             Button("Sign out") { account.signOut() }
