@@ -12,6 +12,66 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-20 (session) - The night runs were handing back an hour and three quarters, and now they do not
+
+The runs were not being killed. That was the whole finding, and it took
+reading `gh run view --log` to see it: every run that shipped no trees ended
+with `is_error: false`, `subtype: success`, after 47 to 122 turns, having
+committed a claim and stopped. No usage limit, no error, no timeout. The
+window is two hours (`timeout-minutes: 120`) and the short ones were using
+five minutes of it.
+
+Measured over the 34 runs since 15 August:
+
+| | runs | duur | beurten | bomen | weigeringen per beurt |
+|---|---|---|---|---|---|
+| kort (<12 min) | 18 | 3,4 min | 32 | 2,0 | 0,06 |
+| lang (>=12 min) | 14 | 27,1 min | 162 | 4,6 | 0,08 |
+
+The denials were where this started and they are not the cause: near
+identical per turn, a constant tax rather than a doctor's note. What does
+correlate almost perfectly is claims left standing. Every zero-tree run left
+some; every run that shipped well left none. And they cascade: the 04:28 run
+left `bari, taormina, catania`, and the 05:55 run inherited all three, added
+`aarhus` and `sorrento`, and died too.
+
+**What was built.** A probe after the agent step judges whether the window is
+worth another go, and one continuation step finishes it. Never a loop, since
+the step exists once, so the worst case is two attempts inside a window that
+was already paid for. A run that died on the usage limit does not qualify,
+because a second attempt would die in seconds for the same reason. Replayed
+over those 34 runs it fires 8 times and skips all 7 of the one-turn deaths.
+
+The prompt has said "do not stop after one item" since 13 August, and this
+file's own workflow carried a note from 15 August about four runs in a row
+doing exactly this. Said twice, ignored twice, which is where this project
+stops writing and starts building.
+
+**Three smaller things found on the way.**
+
+- `git pull --rebase` refused to run on three of the last twelve runs,
+  because the agent left unstaged files behind. It survived only because the
+  remote had not moved; the moment it has, the push is rejected and the
+  run-health record and the claim release vanish silently. `--autostash`.
+- The meter would have reported only the second half of a two-attempt window,
+  understating it by exactly what the continuation recovers. It now adds the
+  halves and records `attempts`.
+- `passcheck` could not list open claims at all, so the continuation prompt
+  referenced a flag that did not exist. `--claims` is real now. And a
+  night-run claim expired after 90 minutes on the strength of a docstring
+  saying the job is killed at 60, while the cap has been 120 since c61b64c,
+  so a city could be freed out from under a run still working on it. The
+  expiry is now read from the workflow instead of remembered, which is the
+  third file to learn that particular lesson.
+
+Also: `passcheck --claim` now refuses a fourth open claim. One run claimed
+eight cities in twelve minutes and published nothing; another claimed
+fourteen on 13 August. The instruction to claim only what the window can
+finish had been written twice and ignored twice.
+
+None of this is proven yet. The next cron knock is the test, and if a
+continuation fires it will show up as `attempts: 2` in `data/run-health.json`.
+
 ## 2026-08-20 (session) - 9 Dutch/Belgian cities deepened, 39 trees, from a fresh national register import
 
 `visitors.py`: 349 visits, 534 page views over the last 7 days (13-20 Aug),
