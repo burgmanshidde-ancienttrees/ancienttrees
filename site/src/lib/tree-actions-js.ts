@@ -74,8 +74,9 @@ export const TREE_ACTIONS_JS = `
   paint(saved());
   syncSaves();
   document.addEventListener('click', function(e) {
-    var d = e.target.closest('.dir-link');
-    if (d) { try { at.track('directions'); } catch (err) {} }
+    // Directions is tracked once, in Base.astro, off the Google Maps href.
+    // Tracking .dir-link here too counted tree-page clicks twice, and only
+    // two of the six directions links on the site carry that class anyway.
     var b = e.target.closest('.save-btn');
     if (!b) return;
     var map = saved();

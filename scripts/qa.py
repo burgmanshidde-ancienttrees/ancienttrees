@@ -245,6 +245,44 @@ def check_save_flow_integrity():
     return out
 
 
+def check_one_owner_per_event():
+    """The twelfth ratchet check, from 2026-08-20.
+
+    Three funnel events were being counted twice, because two click listeners
+    each claimed them: the href-matching listener in Base.astro fired
+    "app-cta" for any /app link while those same links carried
+    data-ev="app-cta", and at.track() calls inside AppModal and the tree
+    actions repeated events the data-ev listener already had. Every number in
+    DATA.md for app-cta, directions and walks-app before that date is roughly
+    double the truth, and nothing could see it.
+
+    So: an event name is either an attribute or a literal at.track() call,
+    never both. This catches the duplication that has a name on both sides;
+    it cannot catch a listener that matches on something other than the event
+    name (the href branch), which is why that branch now tracks exactly the
+    one event that has no attribute to hang off."""
+    root = Path(__file__).resolve().parent.parent
+    src = root / "site" / "src"
+    attrs, calls = {}, {}
+    for f in sorted(src.rglob("*")):
+        if f.suffix not in (".astro", ".ts", ".js") or not f.is_file():
+            continue
+        text = f.read_text(encoding="utf-8")
+        rel = str(f.relative_to(root))
+        for name in re.findall(r'data-ev=["\']([^"\']+)["\']', text):
+            attrs.setdefault(name, set()).add(rel)
+        # Literal single-argument calls only. at.track('search-' + ctx) builds
+        # its name at runtime and has no attribute anywhere to collide with.
+        for name in re.findall(r"at\.track\(\s*['\"]([^'\"]+)['\"]\s*[,)]", text):
+            calls.setdefault(name, set()).add(rel)
+    out = []
+    for name in sorted(set(attrs) & set(calls)):
+        out.append("event %r is counted twice: data-ev in %s and an at.track() "
+                   "call in %s. One owner per event (2026-08-20 double-count)"
+                   % (name, ", ".join(sorted(attrs[name])), ", ".join(sorted(calls[name]))))
+    return out
+
+
 def check_one_tree_card():
     """The eleventh ratchet check, from 2026-08-18.
 
@@ -398,6 +436,7 @@ def main():
     failures += check_save_flow_integrity()
     failures += check_sheet_integrity()
     failures += check_one_tree_card()
+    failures += check_one_owner_per_event()
     pages = sorted(DIST.rglob("*.html"))
     if not pages:
         print(f"QA: no pages found under {DIST}, run (cd site && npx astro build) first")
