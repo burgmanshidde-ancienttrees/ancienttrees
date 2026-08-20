@@ -17,6 +17,7 @@ struct ContentView: View {
     @State private var nudge = Nudge()
     @State private var rootSheet: RootSheet?
     @State private var primerAnswered = false
+    @State private var debugTree: String?
 
     /// Everything the root can put over the app. An enum rather than a pile of
     /// booleans so there is exactly one sheet modifier below.
@@ -62,10 +63,14 @@ struct ContentView: View {
             if let cat = store.catalogue {
                 TabView(selection: $tab) {
                     NavigationStack {
+                        if let id = debugTree, let t = cat.tree(id) {
+                            TreeDetail(tree: t, catalogue: cat)
+                        } else {
                         MapTab(catalogue: cat, origin: origin,
                                located: location.coordinate != nil || debugOrigin != nil,
                                locationDenied: location.status == .denied || location.status == .restricted,
                                onUseMyLocation: { location.request() })
+                        }
                     }
                         .tag(0)
                         .tabItem { Label("Map", systemImage: "map.fill") }
@@ -127,6 +132,12 @@ struct ContentView: View {
             // so a screen only reachable by tapping cannot otherwise be looked
             // at before it ships.
             let args = ProcessInfo.processInfo.arguments
+            // -tree=<id> opens a tree page directly. simctl cannot tap, so
+            // without this the one screen most of the app leads to cannot be
+            // looked at or screenshotted at all.
+            if let id = args.first(where: { $0.hasPrefix("-tree=") })?.dropFirst(6) {
+                debugTree = String(id)
+            }
             if args.contains("-signin") {
                 rootSheet = .signIn(.keepTree("The Last Elm of Stationsplein"))
             } else if args.contains("-paywall") {
