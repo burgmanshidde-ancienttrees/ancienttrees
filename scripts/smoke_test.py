@@ -261,13 +261,38 @@ f.addEventListener('load', function() {
                      + ' (' + Math.round(gap * 10) / 10 + ' off)');
         }
       }
-      // Reported, not enforced: see the note where this is printed.
+      // SMALL: a control the thumb cannot reliably hit. What counts as the
+      // control is the TAP AREA and not the pixels, so an absolutely positioned
+      // ::before or ::after that reaches outside the box counts: that is the
+      // ordinary way to keep a small-looking pill hittable, and a check that
+      // could not see it would push us to make things bigger than they should
+      // look. Measured, not declared, so nobody can opt out with a class.
+      function tap(el) {
+        var r = el.getBoundingClientRect(), W = r.width, H = r.height;
+        ['::before', '::after'].forEach(function(pe) {
+          var s = w.getComputedStyle(el, pe);
+          if (!s || s.content === 'none' || s.position !== 'absolute') return;
+          function out(v) { var n = parseFloat(v); return isNaN(n) ? 0 : Math.max(0, -n); }
+          var ww = r.width + out(s.left) + out(s.right);
+          var hh = r.height + out(s.top) + out(s.bottom);
+          var pw = parseFloat(s.width), ph = parseFloat(s.height);
+          if (s.width !== 'auto' && !isNaN(pw)) ww = Math.max(ww, pw);
+          if (s.height !== 'auto' && !isNaN(ph)) hh = Math.max(hh, ph);
+          W = Math.max(W, ww); H = Math.max(H, hh);
+        });
+        return {w: W, h: H};
+      }
       var small = [];
-      d.querySelectorAll('button, [role=button], a').forEach(function(el) {
+      d.querySelectorAll('button, [role=button], a, summary').forEach(function(el) {
         if (!vis(el) || !paints(el)) return;
-        var r = el.getBoundingClientRect();
-        if (r.width < TAP - SAME || r.height < TAP - SAME)
-          small.push(sel(el) + ' ' + Math.round(r.width) + 'x' + Math.round(r.height));
+        // Inside a closed <details> a control still has a box and no visitor can
+        // reach it; measuring it reports the wrong number for the wrong reason.
+        if (el.closest('details:not([open])') && el.tagName !== 'SUMMARY') return;
+        // MapLibre's own attribution and zoom chrome is not ours to restyle.
+        if (el.closest('.maplibregl-ctrl, .maplibregl-control-container')) return;
+        var b = tap(el);
+        if (b.w < TAP - SAME || b.h < TAP - SAME)
+          small.push(sel(el) + ' ' + Math.round(b.w) + 'x' + Math.round(b.h));
       });
       document.getElementById('r').textContent = 'RESULT ' + JSON.stringify({
         drift: drift.slice(0, 6), nsmall: small.length, small: small.slice(0, 3)
@@ -534,18 +559,15 @@ setTimeout(function(){
             if width == PHONE_W and r.get("nsmall"):
                 small_seen.append((label, r["nsmall"], r.get("small", [])))
 
-    # SMALL is measured and PRINTED but does not fail the build, which is the one
-    # place the two platforms deliberately differ. The app gates it because it
-    # started clean; the site has dozens of controls under 44 points (the save
-    # heart is 67x26 on every card), and fixing those is a design pass with
-    # Hidde rather than something to spring on a deploy. Print it so the number
-    # cannot quietly grow while nobody is looking.
-    if small_seen:
-        total = sum(n for _, n, _ in small_seen)
-        print(f"SMALL: {total} control(s) under {MIN_TAP:.0f}x{MIN_TAP:.0f} at {PHONE_W}px "
-              f"(reported, not gated)")
-        for label, n, examples in small_seen:
-            print(f"  {label}: {n}" + (f" e.g. {', '.join(examples)}" if examples else ""))
+    # SMALL gates here as it does on the app (Hidde, 2026-08-20: "fix beide").
+    # It was reported-only for a day, which was long enough to learn that the
+    # list is four controls rather than the dozens the first count suggested:
+    # the save heart at 26 points tall, the locate button at 40, the primary
+    # pill at 41, and two false readings the check now avoids (a control inside
+    # a closed menu, and MapLibre's own chrome, which is not ours to restyle).
+    for label, n, examples in small_seen:
+        failures.append("SMALL %s at %dpx: %d control(s) under %.0fx%.0f: %s"
+                        % (label, PHONE_W, n, MIN_TAP, MIN_TAP, "; ".join(examples)))
 
     for page in (fit_page, align_page):
         try:
