@@ -5,6 +5,227 @@ workflow. Numbers are for the previous UTC day. While volume is tiny the
 conclusion says so plainly; noise is never narrated as trend (Hidde's
 standing rule, 2026-07-27).
 
+## 2026-08-19 (previous UTC day)
+
+**Today: a waitlist arrived yesterday (9 total).**
+
+**Did the product happen**
+- app-cta:     2 yesterday, last yesterday
+- waitlist-submit: 2 yesterday, last yesterday
+- search-home: 1 yesterday, last yesterday
+- beacon-fix-verify: 0 yesterday, last 4 days ago
+- beacon-test: 0 yesterday, last 4 days ago
+- directions:  0 yesterday, last never
+- save:        0 yesterday, last 2 days ago
+- search-explore: 0 yesterday, last 3 days ago
+- signin-link-sent: 0 yesterday, last never
+- smoke-test:  0 yesterday, last 19 days ago
+- walk-open:   0 yesterday, last 3 days ago
+- walk-start:  0 yesterday, last never
+- walks-app:   0 yesterday, last 2 days ago
+- worthit-not worth it: 0 yesterday, last 3 days ago
+- worthit-worth it: 0 yesterday, last never
+
+| Day | Accounts | Waitlist | Submissions |
+|---|---:|---:|---:|
+| 08-06 | 0 | 0 | 0 |
+| 08-07 | 0 | 1 | 0 |
+| 08-08 | 1 | 1 | 0 |
+| 08-09 | 0 | 0 | 0 |
+| 08-10 | 0 | 0 | 0 |
+| 08-11 | 0 | 0 | 0 |
+| 08-12 | 0 | 0 | 0 |
+| 08-13 | 0 | 0 | 0 |
+| 08-14 | 0 | 1 | 0 |
+| 08-15 | 0 | 0 | 1 |
+| 08-16 | 0 | 0 | 0 |
+| 08-17 | 0 | 1 | 2 |
+| 08-18 | 0 | 1 | 0 |
+| 08-19 | 0 | 1 | 0 |
+| 08-20 | 0 | 0 | 0 |
+| **14 days** | **1** | **6** | **3** |
+- Waitlist:    9 total, newest yesterday
+- Submissions: 3 total, newest 3 days ago
+- Accounts:    3 total, newest 12 days ago
+
+**The funnel, as rates**
+- Seen to clicked: 2.5% (151 of 6163) vs 2.1% the fortnight before
+- Pages per visit: 1.5 (590 visits, 910 pageviews since 2026-08-08)
+- Visits that did something: 7.5% (44 actions on 590 visits)
+
+**Where demand is going to waste**
+
+Search Console, the last 10 days Google will give us (its data lags 2-3 days, so the newest row is never yesterday). Position is an average across every query, so it dips whenever we start ranking for something new:
+
+| Day | Clicks | Impressions | CTR | Position |
+|---|---:|---:|---:|---:|
+| 08-10 | 16 | 394 | 4.1% | 13.5 |
+| 08-11 | 8 | 415 | 1.9% | 12.9 |
+| 08-12 | 9 | 441 | 2.0% | 19.1 |
+| 08-13 | 9 | 445 | 2.0% | 17.6 |
+| 08-14 | 13 | 517 | 2.5% | 14.2 |
+| 08-15 | 15 | 630 | 2.4% | 14.4 |
+| 08-16 | 14 | 723 | 1.9% | 13.9 |
+| 08-17 | 15 | 600 | 2.5% | 14.7 |
+| 08-18 | 19 | 609 | 3.1% | 15.0 |
+| 08-19 | 8 | 449 | 1.8% | 16.3 |
+| **window** | **126** | **5223** | **2.4%** | |
+- Top queries (10d): dutch elm amsterdam (i4, p6); juttepeer (i2, p3); oldest tree in central park (i4, p10); oldest tree in dc (i2, p10); "oldest of its species" ginkgo park (i6, p6)
+- Top pages (10d): / (c8/i56); /prague (c7/i125); /dubrovnik (c4/i51); /vienna (c4/i86); /amsterdam (c3/i127)
+- Content lead: 'alameda dos platanos' has no matching page (i6, p8)
+
+**Depth is allowed on these cities** (10+ impressions in the window; photos, pins and best_time go here and nowhere else):
+
+| City | Clicks | Impressions | CTR | Position | Normal there | Biggest query, and where it really sits |
+|---|---:|---:|---:|---:|---:|---|
+| rome | 1 | 214 | 0.5% | 15.0 | 1.2% | trees in rome (i13, p19) |
+| palermo | 3 | 184 | 1.6% | 10.1 | 2.5% | palermo tree (i5, p10) |
+| barcelona | 4 | 167 | 2.4% | 9.5 | 2.7% | high tree barcelona (i4, p10) |
+| amsterdam | 4 | 154 | 2.6% | 11.9 | 1.8% | amsterdam tree (i4, p10) |
+| lisbon | 3 | 137 | 2.2% | 10.7 | 2.2% | oldest tree in lisbon (i6, p9) |
+| prague | 8 | 136 | 5.9% | 7.6 | 3.7% | four trees prague (i2, p21) |
+| bath | 1 | 132 | 0.8% | 8.8 | 3.1% | the giant plane tree bath (i5, p10) |
+| london | 0 | 131 | 0.0% | 22.1 | 0.7% | oldest tree in london (i4, p52) |
+| vienna | 7 | 119 | 5.9% | 10.1 | 2.5% | trees in austria (i1, p54) |
+| cambridge | 0 | 115 | 0.0% | 31.5 | 0.4% | isaac newton apple tree (i5, p45) |
+| paris | 5 | 108 | 4.6% | 21.4 | 0.7% | paris trees (i2, p62) |
+| boston | 0 | 102 | 0.0% | 17.4 | 1.0% | shaw memorial elms (i2, p10) |
+| singapore | 1 | 98 | 1.0% | 15.7 | 1.1% | oldest tree in singapore (i26, p10) |
+| florence | 0 | 92 | 0.0% | 11.0 | 2.1% | florence tree (i2, p6) |
+| new-york | 3 | 91 | 3.3% | 16.4 | 1.1% | ancient elm (i1, p54) |
+| washington-dc | 3 | 82 | 3.7% | 15.9 | 1.1% | survey lodge ranger station (i9, p11) |
+| malaga | 1 | 81 | 1.2% | 16.1 | 1.1% | árboles históricos de málaga (i9, p74) |
+| geneva | 0 | 79 | 0.0% | 11.9 | 1.8% | - |
+| milan | 0 | 79 | 0.0% | 11.7 | 1.9% | "oldest of its species" ginkgo park (i4, p6) |
+| budapest | 1 | 76 | 1.3% | 9.4 | 2.8% | in budapest? (i1, p4) |
+| es | 0 | 76 | 0.0% | 14.3 | 1.3% | árboles históricos de málaga (i10, p16) |
+| dublin | 6 | 75 | 8.0% | 15.6 | 1.2% | buchanan tree (i1, p10) |
+| brussels | 1 | 75 | 1.3% | 23.2 | 0.7% | belgian tree (i5, p58) |
+| istanbul | 1 | 71 | 1.4% | 13.3 | 1.5% | archeologisch museum van istanbul (i1, p1) |
+| madrid | 0 | 70 | 0.0% | 10.1 | 2.5% | oldest tree in madrid (i3, p15) |
+| dubrovnik | 4 | 69 | 5.8% | 6.9 | 4.1% | trsteno plane tree (i3, p13) |
+| seoul | 0 | 69 | 0.0% | 18.9 | 0.9% | seoul tree (i6, p8) |
+| naples | 0 | 65 | 0.0% | 8.5 | 3.2% | a tree in naples (i3, p9) |
+| valencia | 1 | 60 | 1.7% | 8.7 | 3.2% | ficus centenarios de la glorieta (i2, p10) |
+| bristol | 1 | 58 | 1.7% | 17.3 | 1.0% | bristol trees (i7, p53) |
+| copenhagen | 0 | 55 | 0.0% | 11.1 | 2.1% | trees in copenhagen (i4, p12) |
+| porto | 2 | 53 | 3.8% | 6.5 | 4.5% | alameda dos platanos (i6, p8) |
+| edinburgh | 1 | 52 | 1.9% | 20.1 | 0.8% | old tree near me (i1, p68) |
+| venice | 2 | 50 | 4.0% | 6.7 | 4.3% | trees in venice (i1, p1) |
+| reykjavik | 1 | 49 | 2.0% | 14.7 | 1.3% | oldest tree in iceland (i2, p8) |
+| the-hague | 5 | 48 | 10.4% | 5.7 | 5.6% | juttepeer (i2, p3) |
+| sintra | 3 | 46 | 6.5% | 6.6 | 4.4% | - |
+| hong-kong | 1 | 46 | 2.2% | 11.9 | 1.8% | kam tin tree house (i6, p11) |
+| oslo | 1 | 46 | 2.2% | 10.2 | 2.4% | oak tree near me (i1, p3) |
+| nice | 0 | 43 | 0.0% | 13.7 | 1.5% | - |
+| granada | 0 | 42 | 0.0% | 15.1 | 1.2% | granada orange trees (i1, p64) |
+| seville | 1 | 41 | 2.4% | 9.3 | 2.8% | - |
+| lyon | 0 | 41 | 0.0% | 13.7 | 1.5% | near lyon (i1, p10) |
+| munich | 2 | 40 | 5.0% | 8.3 | 3.3% | - |
+| zurich | 2 | 36 | 5.6% | 9.3 | 2.8% | zurich (i1, p2) |
+| bangkok | 1 | 35 | 2.9% | 10.1 | 2.5% | bangkok trees (i1, p9) |
+| glasgow | 1 | 35 | 2.9% | 18.8 | 0.9% | oldest tree in glasgow (i1, p11) |
+| tokyo | 1 | 35 | 2.9% | 23.2 | 0.7% | - |
+| belgrade | 0 | 35 | 0.0% | 12.3 | 1.7% | - |
+| berlin | 0 | 34 | 0.0% | 15.9 | 1.1% | east berlin germany plants (i1, p77) |
+| krakow | 1 | 32 | 3.1% | 6.8 | 4.2% | - |
+| bologna | 0 | 32 | 0.0% | 6.8 | 4.2% | trees hours (i1, p11) |
+| athens | 3 | 31 | 9.7% | 15.8 | 1.1% | old plane tree (i1, p39) |
+| antwerp | 1 | 31 | 3.2% | 15.3 | 1.2% | klaverbladdreef (i1, p83) |
+| helsinki | 1 | 31 | 3.2% | 8.2 | 3.4% | helsinki tree (i1, p8) |
+| padua | 1 | 31 | 3.2% | 6.6 | 4.4% | - |
+| leiden | 3 | 30 | 10.0% | 11.9 | 1.8% | "oldest of its species" ginkgo park (i2, p6) |
+| cork | 3 | 30 | 10.0% | 16.3 | 1.1% | trees cork (i2, p71) |
+| portland | 0 | 30 | 0.0% | 14.4 | 1.3% | trees in portland or (i1, p55) |
+| kyoto | 2 | 27 | 7.4% | 11.7 | 1.9% | kyoto tree (i5, p7) |
+| utrecht | 0 | 26 | 0.0% | 15.2 | 1.2% | ginkgo utrecht (i2, p8) |
+| groningen | 2 | 25 | 8.0% | 28.2 | 0.5% | big five groningen (i3, p85) |
+| osaka | 0 | 25 | 0.0% | 6.9 | 4.1% | meoto kusu (i1, p7) |
+| cadiz | 0 | 24 | 0.0% | 6.7 | 4.3% | ficus cadiz (i1, p10) |
+| haarlem | 0 | 24 | 0.0% | 42.6 | 0.4% | noble tree (i10, p57) |
+| oxford | 0 | 24 | 0.0% | 7.5 | 3.7% | - |
+| split | 0 | 24 | 0.0% | 8.8 | 3.1% | - |
+| genoa | 0 | 23 | 0.0% | 6.6 | 4.4% | - |
+| alicante | 1 | 20 | 5.0% | 7.2 | 3.9% | ja (i1, p2) |
+| maastricht | 1 | 20 | 5.0% | 10.1 | 2.5% | trees (i1, p8) |
+| rotterdam | 0 | 20 | 0.0% | 10.2 | 2.4% | old tree (i1, p6) |
+| turin | 1 | 19 | 5.3% | 5.6 | 5.8% | alberi monumentali (i1, p8) |
+| lucca | 0 | 19 | 0.0% | 10.4 | 2.4% | lucca tree (i3, p10) |
+| nijmegen | 0 | 19 | 0.0% | 13.1 | 1.6% | oldest tree in the netherlands (i1, p5) |
+| stockholm | 0 | 19 | 0.0% | 8.1 | 3.5% | - |
+| ljubljana | 1 | 17 | 5.9% | 4.9 | 7.1% | trees ljubljana (i1, p7) |
+| setubal | 1 | 17 | 5.9% | 7.4 | 3.8% | - |
+| warsaw | 0 | 17 | 0.0% | 14.1 | 1.4% | oldest tree in poland (i1, p53) |
+| cordoba | 1 | 14 | 7.1% | 14.1 | 1.4% | jacaranda cordoba (i1, p12) |
+| bordeaux | 0 | 14 | 0.0% | 8.3 | 3.4% | caucasian elm (i1, p9) |
+| breda | 0 | 14 | 0.0% | 18.1 | 0.9% | ulvenhoutselaan (i1, p13) |
+| caserta | 0 | 14 | 0.0% | 16.2 | 1.1% | douglas fir teaching garden (i1, p81) |
+| guimaraes | 0 | 14 | 0.0% | 7.8 | 3.6% | - |
+| palma-de-mallorca | 0 | 14 | 0.0% | 9.8 | 2.6% | mallorca trees (i1, p11) |
+| zaragoza | 0 | 14 | 0.0% | 6.6 | 4.4% | - |
+| trieste | 1 | 13 | 7.7% | 12.2 | 1.8% | pino fantasma (i1, p5) |
+| chicago | 1 | 12 | 8.3% | 10.0 | 2.5% | oldest tree in chicago (i1, p7) |
+| sofia | 1 | 12 | 8.3% | 5.3 | 6.3% | - |
+| bergamo | 0 | 12 | 0.0% | 6.9 | 4.1% | parco caprotti (i6, p10) |
+| den-bosch | 0 | 12 | 0.0% | 6.8 | 4.2% | - |
+| strasbourg | 0 | 12 | 0.0% | 7.5 | 3.8% | - |
+| portugal | 0 | 11 | 0.0% | 51.7 | 0.4% | portuguese trees (i2, p66) |
+| thessaloniki | 1 | 10 | 10.0% | 6.8 | 4.2% | - |
+| arnhem | 0 | 10 | 0.0% | 10.3 | 2.4% | - |
+| brisbane | 0 | 10 | 0.0% | 9.9 | 2.5% | buddha tree (i1, p57) |
+| como | 0 | 10 | 0.0% | 22.3 | 0.7% | lake como tree (i2, p58) |
+| hobart | 0 | 10 | 0.0% | 20.8 | 0.8% | oldest trees in tasmania (i1, p61) |
+- Seen, not clicked: /rome (c0/i46, 0.0%) for trees in rome (i13, p19); rome tree (i5, p58); roman trees (i5, p32)
+- Seen, not clicked: /cambridge/newtons-apple-tree (c0/i38, 0.0%) for isaac newton apple tree (i5, p45); apple tree of newton (i4, p47); oldest apple tree (i3, p35)
+- Seen, not clicked: /singapore/oldest-tree (c0/i29, 0.0%) for oldest tree in singapore (i26, p10); singapore national tree (i2, p3); angsana meaning (i1, p3)
+
+**Who they are**
+Audience, 28 days of search (210 clicks, 9162 impressions):
+- Countries: usa c36/i2085; nld c18/i472; gbr c16/i1207; deu c14/i338; esp c10/i489
+- Devices: MOBILE c146/i5034; DESKTOP c64/i4049; TABLET c0/i79
+- Landing pages: / c11/i98; /lisbon c9/i241; /prague c8/i200; /amsterdam c6/i355; /vienna c6/i168
+
+Web Analytics (beacon, real browsers, cookieless):
+Counts are bucketed to the nearest ten by Cloudflare; read the window, not the day.
+
+| Day | Visits | Pageviews |
+|---|---:|---:|
+| 08-12 | 10 | 30 |
+| 08-13 | 10 | 60 |
+| 08-14 | 50 | 70 |
+| 08-15 | 30 | 50 |
+| 08-16 | 110 | 110 |
+| 08-17 | 30 | 90 |
+| 08-18 | 40 | 60 |
+| 08-19 | 40 | 80 |
+| **window** | **320** | **550** |
+- Top paths: / (100); /paris (30); /barcelona (20); /app (20); /copenhagen (20)
+- Referrers: ancienttrees.app (230); (direct) (200); www.google.com (120)
+- Countries: NL (160); US (90); GB (50); PT (40); DK (30)
+- Devices: desktop (300); mobile (250)
+- Page load (8d): p50 574ms, p90 2171ms
+
+Links: external referrers (a link somebody actually clicked): none yet
+AI: arrivals from an assistant that cited us: none yet
+
+
+**What the night shift did**
+
+| Started | Minutes | Turns | Trees | Commits | Refused |
+|---|---:|---:|---:|---:|---:|
+| 08-19T18:41 | 66.1 | 251 | 10 | 9 | 33 |
+| 08-19T20:34 | 87.3 | 296 | 24 | 10 | 45 |
+| 08-19T22:29 | 5.4 | 47 | 0 | 2 | 7 |
+| 08-20T00:27 | 6.9 | 65 | 0 | 1 | 8 |
+| 08-20T02:46 | 16.4 | 118 | 0 | 6 | 15 |
+| **5 runs** | **182** | | **34** | **28** | |
+
+- 3 of 5 produced no trees; 7 to 45 commands refused per run; 3 wrote nothing to LOG.md.
+
+Machine: 6 chain attempts yesterday, 3 got real work time (~160 min total). Dead-in-seconds attempts cost nothing; few get-throughs means the usage window was full or closed.
+
+**Conclusion:** Search is the only channel with real data and it is still small: 8 clicks and 449 impressions on Google's freshest day (day before: c19/i609). Directional at best; no strategic conclusions from these volumes.
+
 ## 2026-08-18 (previous UTC day)
 
 **Today: a waitlist arrived today (9 total).**
