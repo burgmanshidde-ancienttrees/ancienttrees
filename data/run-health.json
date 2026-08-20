@@ -655,6 +655,28 @@
    "cities_touched": 0,
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-08-20T18:48:01+00:00",
+   "date": "2026-08-20",
+   "run_id": "32405155053",
+   "minutes": 23.8,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 219,
+   "denials": 30,
+   "denials_source": "permission_denials: Bash(cd), Bash(echo), Bash(env), Bash(for), Bash(grep), Bash(if), Bash(ls), Bash(mkdir), Bash(pip), Bash(python3), Bash(rm), Bash(test), Bash(which)",
+   "ended": "success",
+   "tokens": 44689421,
+   "claims_held": [
+    "rotterdam",
+    "haarlem",
+    "maastricht"
+   ],
+   "commits": 19,
+   "cities_touched": 4,
+   "trees": 6,
+   "logged": true
   }
  ],
  "schedule_changes": [
