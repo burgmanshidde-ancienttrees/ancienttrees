@@ -12,6 +12,10 @@ import SwiftUI
 struct TreeCard: View {
     let tree: Tree
     var km: Double?
+    /// Off when the card is already sitting on the map (Hidde, 2026-08-20). A
+    /// small map is a WAY to the map, so on a screen that has one it is not a
+    /// shortcut, it is a picture of what you are already looking at.
+    var showsInset = true
     @Environment(Saved.self) private var saved
 
     private let corner: CGFloat = 14
@@ -71,7 +75,7 @@ struct TreeCard: View {
         } else {
             noPhoto.frame(height: imageHeight)
                 .overlay(alignment: .bottomTrailing) {
-                    MapInset(lat: tree.lat, lng: tree.lng).padding(10)
+                    if showsInset { MapInset(lat: tree.lat, lng: tree.lng).padding(10) }
                 }
         }
     }

@@ -35,9 +35,7 @@ final class AncientTreesUITests: XCTestCase {
         let app = launch(["-tab=0"])
 
         // The sheet's first card, whatever tree it happens to be today.
-        let firstCard = app.buttons.containing(
-            NSPredicate(format: "label CONTAINS[c] 'km' OR label CONTAINS[c] 'years'")
-        ).firstMatch
+        let firstCard = app.buttons.matching(identifier: "tree-card").firstMatch
         XCTAssertTrue(firstCard.waitForExistence(timeout: 10), "no tree card in the map sheet")
         firstCard.tap()
 
@@ -52,26 +50,27 @@ final class AncientTreesUITests: XCTestCase {
 
     /// Ticking a tree off is the product's own verb and the moment the account
     /// is asked for, so it must survive the tap rather than only compile.
+    ///
+    /// Asserted unconditionally. The first version wrapped everything in
+    /// `if tick.waitForExistence`, so when the button could not be found the
+    /// test passed while proving nothing, and it sat green through a day in
+    /// which the thing it covers was never once exercised.
     @MainActor
     func testTickingATreeKeepsIt() throws {
         let app = launch(["-tab=0"])
 
-        let firstCard = app.buttons.containing(
-            NSPredicate(format: "label CONTAINS[c] 'km' OR label CONTAINS[c] 'years'")
-        ).firstMatch
-        XCTAssertTrue(firstCard.waitForExistence(timeout: 10))
+        let firstCard = app.buttons.matching(identifier: "tree-card").firstMatch
+        XCTAssertTrue(firstCard.waitForExistence(timeout: 12))
         firstCard.tap()
 
-        let tick = app.buttons.matching(identifier: "checkmark.seal").firstMatch
-        if tick.waitForExistence(timeout: 5) {
-            tick.tap()
-            // The sign-in sheet is allowed to appear here; that is the design.
-            // Either way the tick itself must have registered.
-            XCTAssertTrue(app.buttons.matching(identifier: "checkmark.seal.fill").firstMatch
-                            .waitForExistence(timeout: 5)
-                          || app.staticTexts["That one is yours"].waitForExistence(timeout: 5),
-                          "ticking a tree left no visible trace")
-        }
+        // By the label the button actually carries, not by the symbol's name.
+        let tick = app.buttons["I have stood in front of this tree"]
+        XCTAssertTrue(tick.waitForExistence(timeout: 6), "no tick button on the tree page")
+        tick.tap()
+
+        XCTAssertTrue(app.buttons["Ticked off. Tap to undo"].waitForExistence(timeout: 5)
+                      || app.staticTexts["That one is yours"].waitForExistence(timeout: 5),
+                      "ticking a tree left no visible trace")
     }
 
     /// Tapping the tab you are already on goes back to the top of it. This is
@@ -81,9 +80,7 @@ final class AncientTreesUITests: XCTestCase {
     func testTappingTheActiveTabGoesBackToTheTop() throws {
         let app = launch(["-tab=0"])
 
-        let firstCard = app.buttons.containing(
-            NSPredicate(format: "label CONTAINS[c] 'km' OR label CONTAINS[c] 'years'")
-        ).firstMatch
+        let firstCard = app.buttons.matching(identifier: "tree-card").firstMatch
         XCTAssertTrue(firstCard.waitForExistence(timeout: 10))
         firstCard.tap()
         XCTAssertTrue(app.buttons["Take me there"].waitForExistence(timeout: 5),
@@ -138,8 +135,8 @@ final class AncientTreesUITests: XCTestCase {
         // thing and cannot navigate anywhere.
         //
         // And a long press before the drag, so nothing is read as a flick.
-        app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
-        field.press(forDuration: 0.35,
+        field.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
+             .press(forDuration: 0.35,
                     thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.12)))
         let openY = field.frame.origin.y
         XCTAssertLessThan(openY, peekY - screen * 0.2,
@@ -147,7 +144,8 @@ final class AncientTreesUITests: XCTestCase {
 
         // And back down from the top of the list, which is the half that was
         // still missing.
-        field.press(forDuration: 0.35,
+        field.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
+             .press(forDuration: 0.35,
                     thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.92)))
         XCTAssertGreaterThan(field.frame.origin.y, openY + screen * 0.2,
                              "dragging down from the top of the list did not lower the sheet")

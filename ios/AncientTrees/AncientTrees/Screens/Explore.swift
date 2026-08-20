@@ -126,6 +126,7 @@ struct ExploreView: View {
                             .frame(width: 260)
                         }
                         .buttonStyle(.plain)
+                        .accessibilityIdentifier("tree-card")
                     }
                 }
                 .padding(.horizontal, 16).padding(.bottom, 4)

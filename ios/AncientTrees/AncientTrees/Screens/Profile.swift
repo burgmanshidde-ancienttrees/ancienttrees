@@ -27,6 +27,7 @@ struct ProfileView: View {
     @State private var signingIn = false
     @State private var confirmingDelete = false
     @State private var deleteFailed = false
+    @State private var contributing = false
 
     var body: some View {
         ScrollView {
@@ -42,6 +43,7 @@ struct ProfileView: View {
         }
         .brandGround()
         .navigationTitle("Profile")
+        .sheet(isPresented: $contributing) { ContributeView() }
         .sheet(isPresented: $signingIn) {
             SignInSheet(reason: saved.savedCount > 0 ? .keepCollection(saved.savedCount) : .general,
                         localCount: saved.savedCount)
@@ -122,7 +124,11 @@ struct ProfileView: View {
                 .font(.brand(18, .bold, relativeTo: .headline)).foregroundStyle(Brand.ink)
             Text("We map \(catalogue.trees.count.formatted(.number.locale(Locale(identifier: "en_US")))) and there are a great many more. If you know a good one, or a whole city worth mapping, tell us.")
                 .font(.footnote).foregroundStyle(Brand.inkSoft)
-            Link(destination: URL(string: "https://ancienttrees.app/contribute")!) {
+            // The app's own form, not the website's. A tree page already opens
+            // this natively when somebody reports a mistake, so sending the
+            // other entrance out to Safari was two answers to one question and
+            // it threw people out of the app to give the worse one.
+            Button { contributing = true } label: {
                 Text("Suggest a tree")
                     .font(.brand(17, .bold, relativeTo: .headline))
                     .foregroundStyle(Brand.moss)
@@ -130,6 +136,7 @@ struct ProfileView: View {
                     .background(Brand.surface, in: .capsule)
                     .overlay { Capsule().strokeBorder(Brand.moss.opacity(0.35), lineWidth: 1.5) }
             }
+            .buttonStyle(.plain)
         }
         .padding(18)
         .frame(maxWidth: .infinity, alignment: .leading)

@@ -183,6 +183,7 @@ struct CollectView: View {
             TreeCard(tree: t, km: t.distanceKm(from: origin.lat, origin.lng))
         }
         .buttonStyle(.plain)
+        .accessibilityIdentifier("tree-card")
         .contextMenu {
             Button(role: .destructive) { saved.toggleSaved(t.id) } label: {
                 Label("Remove from saved", systemImage: "heart.slash")
