@@ -1,0 +1,50 @@
+{
+ "country": "Cyprus",
+ "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+ "leads": [
+  {
+   "name": "Giant Black Pine, Troodos",
+   "lat": 34.929439,
+   "lng": 32.871075,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Balanced_stones,_road_to_Giant_Black_Pine,_Troodos,_Cyprus.jpg",
+    "https://commons.wikimedia.org/wiki/File:Giant_Black_Pine_(Pinus_nigra),_Troodos,_Cyprus_01.jpg",
+    "https://commons.wikimedia.org/wiki/File:Giant_Black_Pine_(Pinus_nigra),_Troodos,_Cyprus_02.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Tree of Cape Greco, Cyprus",
+   "lat": 34.975383,
+   "lng": 34.055264,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Juniperus_phoenicea,_Cape_Greco.jpg",
+    "https://commons.wikimedia.org/wiki/File:Tree_of_Cape_Greco_(Juniper_Tree,_The_Tree_of_Life),_Cyprus_01.jpg",
+    "https://commons.wikimedia.org/wiki/File:Tree_of_Cape_Greco_(Juniper_Tree,_The_Tree_of_Life),_Cyprus_02.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Famous Quercus Infectoria, Néo Chōrió",
+   "lat": 35.059178,
+   "lng": 32.326401,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Famous_Quercus_Infectoria,_N%C3%A9o_Ch%C5%8Dri%C3%B3,_Cyprus_01.jpg",
+    "https://commons.wikimedia.org/wiki/File:Famous_Quercus_Infectoria,_N%C3%A9o_Ch%C5%8Dri%C3%B3,_Cyprus_02.jpg",
+    "https://commons.wikimedia.org/wiki/File:Famous_Quercus_Infectoria,_N%C3%A9o_Ch%C5%8Dri%C3%B3,_Cyprus_03.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Terebinth tree of Agia Solomoni Catacomb, Paphos",
+   "lat": 34.761676,
+   "lng": 32.412468,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:A@a_agia_solomoni_church_paphos_cy_-_panoramio_(1).jpg",
+    "https://commons.wikimedia.org/wiki/File:Agia_Salomonis_Paphos_-_panoramio.jpg",
+    "https://commons.wikimedia.org/wiki/File:Agia_Salomonis_Wunschbaum_-_panoramio_-_Arnold_Schott.jpg"
+   ],
+   "status": "lead"
+  }
+ ]
+}
