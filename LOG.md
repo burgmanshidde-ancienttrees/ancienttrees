@@ -12,6 +12,16 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-20 (session) - Three funnel events were counted twice; the old numbers are inflated
+
+`app-cta`, `directions` and `walks-app` each had two click listeners claiming them, so one click inserted two rows in the events table. Every figure for those three in DATA.md before today is roughly double the truth, and `app-cta` was worse than doubled because it also fired on the two links tagged `walks-app`, which point at /app. **When the counts drop tomorrow, that is the fix, not a regression.** DATA.md now says so at the top, in the preamble the digest rewrites each day, so the warning cannot be pushed off the page by newer entries.
+
+What changed: the href-matching listener in Base.astro now tracks only `directions`, which is the one event with no attribute to hang off; everything else is counted once by the single attribute listener, which is the documented mechanism (FUNNELS.md, 2026-08-14). The `at.track` calls duplicating it in AppModal and the tree actions are gone. The footer's "The app" link was counted only through the branch that was removed, so it now carries the attribute and keeps counting.
+
+Per the ratchet, this ships with a check: `check_one_owner_per_event()` in scripts/qa.py fails the build if an event name is both an attribute and a hardcoded `at.track()` call. Verified by reintroducing the bug and watching it fail. It cannot catch a listener matching on something other than the event name, which is exactly the href branch, so that branch is now deliberately down to one event.
+
+Not verified in a browser: no Node in this worktree, so the source-level qa checks were run by hand (all clean) and the build itself is CI's.
+
 ## 2026-08-20 - Night run 2026-08-20 10:16 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 19.3 minutes of its 120 minute window, 133 turns, 31 commands refused by the allowlist, ended clean (success). 3 commit(s), none of them a published tree. Claims left behind: vienna, munich, utrecht, which block the top of the queue until they expire.
