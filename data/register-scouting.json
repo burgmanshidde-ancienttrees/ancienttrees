@@ -399,6 +399,18 @@
    "country": "United States",
    "status": "empty",
    "note": "SWEPT 2026-08-20 across both indexes that matter. Socrata's federated catalogue (api.us.socrata.com) returns exactly one US heritage/landmark tree dataset, Norfolk's Significant Trees. ArcGIS Hub returns a long tail of small municipalities and student projects (Mountain View has nine near-duplicate layers from San Jose State) plus Fort Worth. No big-audience US city publishes one this way. Portland is the exception and is already imported. Conclusion: there is no index shortcut for US cities; the route is per city, and the Austin result says a STORY register beats a measurement register when one exists."
+  },
+  {
+   "place": "Arnold Arboretum (Boston)",
+   "country": "United States",
+   "status": "imported",
+   "note": "SOLVED 2026-08-20 and it is the best per-tree source on this site. The arboretum publishes an accession-level ArcGIS feature service at services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0 carrying LATITUDE/LONGITUDE to eight decimals, ACC_NUM, DBH, HEIGHT, CIRCUMFERENCE with MEASURE_DT, CONDITION, CHECK_DT, GARDEN_LOCATION and an IS_DEAD flag, which no tree register anywhere else has. It moved two Boston pins on the day it was found, by 315 and 255 metres, and needed no inference because our own stories already named the accessions. TWO TRAPS. PLANT_DT is a database date, not a planting date: the 1948 dawn redwood reads 2003, and the accession number is the age signal (3-48 and 524-48 are 1948 accessions). And an accession can carry several plants (*A, *B, *C) hundreds of metres apart, so matching on accession alone can still leave two candidates; where nothing separates them the pin stays approximate. Find it via arcgis.com/sharing/rest/search?q=Arnold+Arboretum; the arboretum's own website returns 403 to plain curl."
+  },
+  {
+   "place": "Central Park and NYC park interiors",
+   "country": "United States",
+   "status": "empty",
+   "note": "SCOUTED 2026-08-20 while trying to sharpen New York's twelve approximate pins, six of them in Central Park. NYC OpenData's Forestry Tree Points (hn5i-inap) has species, dbh, condition and a live update date, but it is a STREET tree layer: a 400 m query around the Central Park West pin returned 300 sidewalk trees (London plane, pin oak, Callery pear) and nothing from the park interior, which the Central Park Conservancy manages separately. The Conservancy's own tree map has no reachable endpoint (maps.centralparknyc.org does not resolve, /tree-map is a 404). New York Botanical Garden and Brooklyn Botanic Garden have no open accession service either; an ArcGIS search returns only student projects and solar-radiation layers. So New York's pins need per-tree work, not a data source, and nobody should re-run this sweep."
   }
  ],
  "out_of_focus": {
