@@ -36,9 +36,12 @@ struct MapTab: View {
     /// is still the list of what is near you.
     @State private var mapRegion: MKCoordinateRegion?
     @State private var filters = MapFilters()
+    @State private var shownWalk: Walk?
+    @Environment(Entitlement.self) private var entitlement
     @Environment(Saved.self) private var saved
     @Environment(Account.self) private var account
     @Environment(Nudge.self) private var nudge
+    @Environment(Navigator.self) private var navigator
 
     /// EVERY tree, because the map is the whole map.
     ///
@@ -51,6 +54,32 @@ struct MapTab: View {
     /// Cheap to do: 1,500 annotations is nothing for MKMapView, the pins carry
     /// a clusteringIdentifier so MapKit collapses them by zoom on its own, and
     /// the set never changes so updateUIView stops churning entirely.
+    /// The walks the site planned, nearest first. The ORDER inside a city is
+    /// left exactly as /api/walks.json delivers it, because that order is a
+    /// decision rather than an accident: walk_planning.py sorts photographed
+    /// walks ahead of bigger ones, on the grounds that somebody decides from the
+    /// pictures whether an afternoon is worth it. Re-sorting here would throw
+    /// that away.
+    private var walksHere: [Walk] {
+        catalogue.walks.compactMap { w -> (Walk, Double)? in
+            guard let f = catalogue.trees(of: w).first else { return nil }
+            return (w, f.distanceKm(from: focus.lat, focus.lng))
+        }
+        .filter { $0.1 < 60 }
+        .sorted { $0.1 < $1.1 }
+        .map(\.0)
+    }
+
+    private var walkRoute: [CLLocationCoordinate2D] {
+        guard let w = shownWalk else { return [] }
+        // The real routed line where route_walks.py cached one, and the order
+        // the trees are visited where it did not. 78 of 179 have a real one.
+        if let shape = w.shape, shape.count > 1 {
+            return shape.map { CLLocationCoordinate2D(latitude: $0[1], longitude: $0[0]) }
+        }
+        return catalogue.trees(of: w).map { .init(latitude: $0.lat, longitude: $0.lng) }
+    }
+
     private var mapTrees: [Tree] {
         guard filters.isOn else { return catalogue.trees }
         return catalogue.trees.filter {
@@ -99,8 +128,10 @@ struct MapTab: View {
 
     var body: some View {
         ZStack(alignment: .bottom) {
-            TreeMap(trees: mapTrees,
+            TreeMap(trees: shownWalk.map { catalogue.trees(of: $0) } ?? mapTrees,
                     focus: .init(latitude: origin.lat, longitude: origin.lng),
+                    route: walkRoute,
+                    routeIsReal: (shownWalk?.shape?.count ?? 0) > 1,
                     showsRecentre: true,
                     region: $mapRegion,
                     selected: $selected)
@@ -141,6 +172,12 @@ struct MapTab: View {
                 sheetHeight = .half
             }
         }
+        .onChange(of: navigator.showOnMap) { _, new in
+            guard let id = new, let t = catalogue.tree(id) else { return }
+            selected = t
+            sheetHeight = .half
+            navigator.showOnMap = nil
+        }
         .toolbar(.hidden, for: .navigationBar)
         .onChange(of: selected) { _, new in
             // Tapping a pin raises the sheet to that tree, the way Google Maps
@@ -174,6 +211,7 @@ struct MapTab: View {
             selectedPager
         } else {
             VStack(spacing: 0) {
+                if shownWalk != nil { walkCard }
                 if let t = arrived { arrivalCard(t) }
                 list
             }
@@ -280,6 +318,7 @@ struct MapTab: View {
     private var filterRow: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 8) {
+                walkChip
                 FilterChip(label: "At their best", icon: "sparkles",
                            on: filters.peakingNow) { filters.peakingNow.toggle() }
                 FilterChip(label: "With a photo", icon: "photo",
@@ -310,6 +349,99 @@ struct MapTab: View {
             .padding(.horizontal, 14)
         }
         .scrollClipDisabled()
+    }
+
+    /// One walk free, the rest behind Plus, which is the rule Entitlement.swift
+    /// already states: nobody buys a thing they have never felt. So the nearest
+    /// walk draws itself on the map for anybody, and asking for the next one is
+    /// what opens the ask.
+    @ViewBuilder private var walkChip: some View {
+        if !walksHere.isEmpty {
+            Button {
+                if shownWalk == nil {
+                    shownWalk = walksHere.first
+                    sheetHeight = .peek
+                } else {
+                    shownWalk = nil
+                }
+            } label: {
+                FilterChipLabel(label: shownWalk == nil ? "See walking routes" : "Hide the walk",
+                                icon: "figure.walk", on: shownWalk != nil)
+            }
+            .buttonStyle(.plain)
+        }
+    }
+
+    /// What the map is showing, said in the sheet, with the one thing a walk
+    /// needs pinned under it. Begin rather than Directions, and it is the only
+    /// coloured control on the screen, per the AllTrails teardown's first
+    /// finding.
+    @ViewBuilder private var walkCard: some View {
+        if let w = shownWalk {
+            VStack(alignment: .leading, spacing: 12) {
+                HStack(alignment: .firstTextBaseline) {
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text(w.name).font(.brand(19, .heavy, relativeTo: .title3))
+                            .foregroundStyle(Brand.ink)
+                        Text(w.city).font(.footnote).foregroundStyle(Brand.inkSoft)
+                    }
+                    Spacer()
+                    Button { shownWalk = nil } label: {
+                        Image(systemName: "xmark.circle.fill")
+                            .font(.title3).foregroundStyle(Brand.inkSoft)
+                    }
+                    .buttonStyle(.plain)
+                }
+                HStack(spacing: 0) {
+                    walkStat("\(w.count)", "trees")
+                    Divider().frame(height: 26)
+                    walkStat(String(format: "%.1f", w.km), "km")
+                    Divider().frame(height: 26)
+                    walkStat("\(w.minutes)", "min")
+                }
+                if (w.shape?.count ?? 0) <= 1 {
+                    // The same honesty the website prints, and the same reason:
+                    // a solid line between trunks claims a path nobody checked.
+                    Label("The line shows the order, not the streets. Only about half our walks have a checked route yet.",
+                          systemImage: "info.circle")
+                        .font(.caption).foregroundStyle(Brand.inkSoft)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                Button {
+                    if let first = catalogue.trees(of: w).first {
+                        MKMapItem(placemark: .init(coordinate: .init(latitude: first.lat, longitude: first.lng)))
+                            .openInMaps(launchOptions: [MKLaunchOptionsDirectionsModeKey:
+                                                        MKLaunchOptionsDirectionsModeWalking])
+                    }
+                } label: {
+                    Label("Begin", systemImage: "location.fill")
+                }
+                .buttonStyle(BrandButtonStyle())
+
+                if walksHere.count > 1 {
+                    LockedRow(feature: .walkBeyondFirst) {
+                        HStack {
+                            Text("\(walksHere.count - 1) more walks near here")
+                                .font(.subheadline).foregroundStyle(Brand.ink)
+                            Spacer()
+                            Chip(text: "Plus", tint: Brand.gold)
+                        }
+                    }
+                }
+            }
+            .padding(16)
+            .brandCard()
+            .padding(.horizontal, 16).padding(.bottom, 4)
+        }
+    }
+
+    private func walkStat(_ value: String, _ unit: String) -> some View {
+        VStack(spacing: 1) {
+            Text(value).font(.brand(17, .bold, relativeTo: .headline))
+                .foregroundStyle(Brand.ink).monospacedDigit()
+            Text(unit).font(.caption2).foregroundStyle(Brand.inkSoft)
+        }
+        .frame(maxWidth: .infinity)
     }
 
     private var topSpecies: [String] {

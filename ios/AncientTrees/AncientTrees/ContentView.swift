@@ -23,6 +23,7 @@ struct ContentView: View {
     @State private var location = LocationProvider()
     @State private var account = Account()
     @State private var nudge = Nudge()
+    @State private var navigator = Navigator()
     @State private var rootSheet: RootSheet?
     @State private var primerAnswered = false
     /// One path per tab, so tapping the tab you are already on can empty it.
@@ -162,6 +163,10 @@ struct ContentView: View {
                 .environment(entitlement)
                 .environment(account)
                 .environment(nudge)
+                .environment(navigator)
+                .onChange(of: navigator.showOnMap) { _, new in
+                    if new != nil { tab = 0 }
+                }
                 // ONE sheet modifier, driven by one optional, because SwiftUI
                 // honours only one per view and stacking three meant the ask
                 // silently never appeared. The ask is presented from the root so

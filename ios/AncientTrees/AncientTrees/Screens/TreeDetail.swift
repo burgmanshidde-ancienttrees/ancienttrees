@@ -17,7 +17,7 @@ struct TreeDetail: View {
     @Environment(Nudge.self) private var nudge
     @State private var showFullStory = false
     @State private var reporting = false
-    @State private var tappedNearby: Tree?
+    @Environment(Navigator.self) private var navigator
 
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -104,41 +104,34 @@ struct TreeDetail: View {
         catalogue.nearest(to: tree.lat, tree.lng, limit: 8, withinKm: 0.5).map(\.tree)
     }
 
+    /// Not a second map: a way to the map.
+    ///
+    /// The first version of this was an interactive 220 point map sitting three
+    /// inches from the tab that opens the real one, which is duplication rather
+    /// than navigation (Hidde, 2026-08-20). A picture cannot be mistaken for a
+    /// map you should be pinching, and the whole picture is the button.
     private var mapCard: some View {
-        VStack(spacing: 0) {
-            TreeMap(trees: nearbyTrees,
-                    focus: .init(latitude: tree.lat, longitude: tree.lng),
-                    spanMeters: 600,
-                    clusters: false,
-                    selected: $tappedNearby)
-                .frame(height: 220)
-            // Tapping another pin does not silently swap the page under you; it
-            // offers, and the offer is a real link so the back button behaves.
-            if let n = tappedNearby, n.id != tree.id {
-                NavigationLink(value: Route.tree(n.id)) {
-                    HStack(spacing: 10) {
-                        SpeciesMark(species: n.species, color: Brand.moss)
-                            .frame(width: 26, height: 26)
-                        VStack(alignment: .leading, spacing: 1) {
-                            Text(n.name).font(.subheadline.weight(.semibold))
-                                .foregroundStyle(Brand.ink).lineLimit(1)
-                            Text(String(format: "%.0f m away", n.distanceKm(from: tree.lat, tree.lng) * 1000))
-                                .font(.caption).foregroundStyle(Brand.inkSoft)
-                        }
-                        Spacer()
-                        Image(systemName: "chevron.right").font(.caption)
-                            .foregroundStyle(Brand.inkSoft.opacity(0.6))
-                    }
-                    .padding(.horizontal, 14).padding(.vertical, 11)
-                    .background(Brand.surface)
+        Button {
+            navigator.showOnMap = tree.id
+        } label: {
+            ZStack(alignment: .bottomLeading) {
+                MapInset(lat: tree.lat, lng: tree.lng, side: nil, height: 150)
+                LinearGradient(colors: [.clear, .black.opacity(0.45)],
+                               startPoint: .center, endPoint: .bottom)
+                HStack(spacing: 6) {
+                    Image(systemName: "map.fill").font(.caption)
+                    Text("Show on the map").font(.brand(15, .bold, relativeTo: .subheadline))
+                    Spacer()
+                    Image(systemName: "arrow.up.right").font(.caption)
                 }
-                .buttonStyle(.plain)
-                .transition(.move(edge: .bottom).combined(with: .opacity))
+                .foregroundStyle(.white)
+                .padding(14)
             }
+            .frame(height: 150)
+            .clipShape(.rect(cornerRadius: 14))
+            .shadow(color: .black.opacity(0.07), radius: 8, y: 3)
         }
-        .clipShape(.rect(cornerRadius: 14))
-        .shadow(color: .black.opacity(0.07), radius: 8, y: 3)
-        .animation(.easeOut(duration: 0.18), value: tappedNearby?.id)
+        .buttonStyle(.plain)
     }
 
     private var heroFallback: some View {
