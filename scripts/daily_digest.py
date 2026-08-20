@@ -126,8 +126,14 @@ def fetch_gsc(today):
     # verliezers toevoegen aan de daily digest maar vooral google search trend
     # positief". A level tells you where you stand; only a delta tells you
     # whether anything you did worked, and this file had no delta at all.
-    pstart = (today - datetime.timedelta(days=20)).isoformat()
-    pend = (today - datetime.timedelta(days=10)).isoformat()
+    # 11 days back to 1 day before this window starts. Search Console counts
+    # startDate and endDate INCLUSIVELY, so the obvious arithmetic (today-20 to
+    # today-10) puts the boundary day in BOTH windows and every delta carries
+    # one day of double counting. Hidde caught it by asking what the +65 was
+    # measured against, which is the useful thing about being asked to explain
+    # a number out loud.
+    pstart = (today - datetime.timedelta(days=21)).isoformat()
+    pend = (today - datetime.timedelta(days=11)).isoformat()
     prev_pages = q({"startDate": pstart, "endDate": pend, "dimensions": ["page"],
                     "rowLimit": 5000, "dataState": "all"})
     prev_queries = q({"startDate": pstart, "endDate": pend, "dimensions": ["query"],
