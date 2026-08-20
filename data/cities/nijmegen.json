@@ -3,7 +3,7 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Nijmegen calls itself the oldest city in the Netherlands, and its trees mostly agree with the claim in spirit if not in age: none predate the Romans, but nearly all of them grow on ground that does. A sycamore chosen tree of the year on a hilltop fort, a ginkgo that accidentally created a garden-centre plant variety, a star-shaped forest's surviving beech circle, a chestnut planted for a specific queen on a specific day, and a Californian giant in a railway workers' park. All five cost nothing to visit.",
-  "meta_description": "Nijmegen's oldest tree is likely a 250-year-old beech circle in a star-shaped forest. Five verified trees, real stories, how to reach each one.",
+  "meta_description": "Nijmegen's oldest tree is likely a 250-year-old beech circle in a star-shaped forest. Eight verified trees, real stories, how to reach each one.",
   "question_answer": "Nijmegen's oldest tree is very likely the beech circle of Sterrenbos, inside Park Brakkenstein, planted as part of an 18th-century star-shaped forest and estimated at 250 to 300 years old. Not every original tree in the ring has survived, but the living beeches still standing there predate everything else on this list.",
   "question_meta": "A circle of 250-300 year old beeches in an 18th-century star forest is likely Nijmegen's oldest tree. Where to find it, and the city's other four.",
   "question_context": "Sterrenbos, the star-shaped pattern of forest avenues at the heart of Park Brakkenstein, was laid out in the 18th century as part of the private Brakkenstein estate, first documented in 1654 though the star planting itself came later. A circle of beeches planted as part of that scheme survives today, and local historians researching Nijmegen's tree stock have identified it as the oldest living tree group within the city's limits, estimated at 250 to 300 years old. That estimate is necessarily a range: no single tree in the ring has been individually dated by ring count, and some of the original beeches have already died of old age over three centuries, leaving visible gaps in what was once a complete circle. What survives is still remarkable for surviving at all, three centuries after the estate that planted it was still private land and roughly a century before Nijmegen's oldest formal parks, Kronenburgerpark and Valkhofpark, existed as public space. The park is free and open today, in the south of the city between Radboud University's campus and a rail line, no ticket or special access required to see what is left of the star.",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Nijmegen's ancient trees free to visit?",
-      "a": "Yes, all five are in public parks with free access."
+      "a": "Yes, all eight are free to visit; seven are in public parks open at any time and one is in a public cemetery open during normal daytime hours."
     },
     {
       "q": "Which Nijmegen tree created a plant variety sold in garden centres?",
@@ -203,6 +203,91 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate"
+    },
+    {
+      "id": "nij_006",
+      "name": "The Hornbeam of Krayenhoffpark",
+      "species": "Hornbeam (Carpinus betulus)",
+      "age_estimate": "~120 years",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Krayenhoffpark, Nijmegen",
+        "latitude": 51.848465,
+        "longitude": 5.851126,
+        "neighbourhood": "Biezen"
+      },
+      "story": "This hornbeam stands close enough to Krayenhoffpark's giant sequoia to be mistaken for an afterthought planted in the famous tree's shadow, but it is roughly the same age and belongs to a species the Dutch have grown for a very different reason. Where the sequoia was an imported curiosity, hornbeam is a native workhorse, historically clipped into hedges and avenues across the Low Countries because it tolerates hard pruning and holds its dead brown leaves through winter, giving a bare hedge some cover even in the coldest months.\n\nThe register dates this one to somewhere around 1900 to 1910, planted while the Biezen neighbourhood around it was still going up to house railway workers from the nearby yards. Left to grow naturally rather than clipped, as this one has been, hornbeam reaches a modest, broad-crowned shape closer to a beech than to the tight hedge most people picture. It grows a few metres from the park's sequoia, free, in the same small green space that gives an otherwise unremarkable railway district its one patch of shade older than most of the houses around it.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1688015)"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "Biezen neighbourhood, Nijmegen; short walk from Nijmegen railway station via Voorstadslaan",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "nij_007",
+      "name": "The Black Locust of Krayenhoffpark",
+      "species": "Black Locust (Robinia pseudoacacia)",
+      "age_estimate": "~140 years",
+      "age_min": 136,
+      "age_max": 146,
+      "location": {
+        "address": "Krayenhoffpark, Nijmegen",
+        "latitude": 51.848602,
+        "longitude": 5.850931,
+        "neighbourhood": "Biezen"
+      },
+      "story": "The Dutch name for this tree translates literally as false Christ's-thorn, a reference to the sharp paired spines that line its young branches, thorns sharp enough that European folklore once linked the species to the biblical crown of thorns despite the tree being a North American import that no one in the region had ever seen before the 17th century. This specimen, dated by the register to around 1880 to 1890, predates its own park: Krayenhoffpark and the railway workers' housing around it were built in the early 20th century, decades after this tree first went into what was then open ground on the edge of the city.\n\nBlack locust fixes nitrogen in the soil through bacteria living on its roots, the same trick clover and beans use, which is part of why it was planted so widely across poor European soils long before anyone understood the chemistry behind why it thrived where other trees struggled. It stands a few steps from the park's hornbeam and its better-known giant sequoia, free, the oldest of the three despite being the least conspicuous.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1688014)"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "Biezen neighbourhood, Nijmegen; short walk from Nijmegen railway station via Voorstadslaan",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "nij_008",
+      "name": "The Chestnut of Begraafplaats Daalseweg",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "age_estimate": "~140 years",
+      "age_min": 136,
+      "age_max": 146,
+      "location": {
+        "address": "Begraafplaats Daalseweg, west side, Nijmegen",
+        "latitude": 51.839463,
+        "longitude": 5.872509,
+        "neighbourhood": "Altrade"
+      },
+      "story": "Four Catholic parishes petitioned Nijmegen's city council in 1884 for permission to open a shared cemetery on the Daalseweg, and the bishop of 's-Hertogenbosch consecrated it the following June. The city architect Jan Jacob Weve designed the grounds around two broad paths crossing at right angles, lined with copper beeches he is himself buried among, and this sweet chestnut grows on the cemetery's west side from roughly the same founding decade. The cemetery closed to new burials in 1948 when a replacement opened elsewhere, and many graves were later cleared for housing, but the grounds survived intact enough to be named a national heritage site in 2002.\n\nThe cemetery holds a harder history than most: 300 victims of the February 1944 bombing of Nijmegen, a raid that killed roughly 800 people in a single afternoon, were buried here. Sweet chestnut is not native this far north, introduced originally by the Romans for its edible nuts, and this one has stood through the cemetery's whole active life and its decades since as a protected historic ground rather than a working one. It grows in the open, free to visit during normal cemetery hours, a short walk from Julianapark's own commemorative chestnut.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1687751)",
+        "https://nl.wikipedia.org/wiki/Begraafplaats_Daalseweg"
+      ],
+      "access": "Free, public cemetery, open during normal daytime hours",
+      "transport": "Altrade neighbourhood, Nijmegen; about a 20 minute walk from Nijmegen railway station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }

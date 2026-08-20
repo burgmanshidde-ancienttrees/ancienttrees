@@ -183,6 +183,40 @@ eight. Build/superlatives/qa all clean (same pre-existing sitemap-lastmod
 warning as the rest of today's Dutch passes). Photos: none hunted, per this
 runner's no-photo-judging rule.
 
+## 2026-08-20 (session, continued) - Nijmegen: deepened 5 to 8, two traps caught, deliberately smaller batch
+
+Seventh and final Dutch city off today's shelf, lower yield on purpose. A
+"Julianaboom" register candidate at Julianapark turned out to be the exact
+same tree as the already-published nij_004. A "Wilhelmina linde" at
+Hertogplein looked like a strong companion piece (a coronation tree for
+Queen Wilhelmina, 1898) until independent search
+(woneninnijmegen.blog/2025/04/04/wilhelminaboom) turned up that the original
+tree was replaced with another at an unrecorded date, and the register's own
+planted_band (1880-1890) predates the 1898 coronation it supposedly
+commemorates anyway; dropped entirely rather than publish an age or a
+commemorative claim for what is very likely not the original specimen. Also
+skipped a Hunnerpark elm (status 5, "onbekend" history, no positive
+confirmation found anywhere) and several cemetery register entries whose
+`n_trees` counts (28, 14, 12) mark them as avenue or hedge plantings rather
+than single collectible points. Shipped 3: a hornbeam and a black locust
+both a few metres from the already-published nij_005 giant sequoia in
+Krayenhoffpark, and a sweet chestnut at the Rijksmonument-listed
+Begraafplaats Daalseweg (Catholic cemetery consecrated 1885, also the burial
+site of 300 victims of the February 1944 bombing of Nijmegen). All
+`curation_status: flagged`, `location_precision: confirmed`, clean against
+`dead_entries_regex`. Preflight clean on first pass. Build/superlatives/qa
+all clean (same pre-existing sitemap-lastmod warning as the rest of today's
+Dutch passes). Photos: none hunted, per this runner's no-photo-judging rule.
+
+**Today's Dutch register run in total: Arnhem 4→9, Utrecht 5→9, Groningen
+5→10, Haarlem 4→9, Maastricht 5→10, Rotterdam 5→9, Nijmegen 5→8, 31 trees
+across 7 cities from the freshly-staged LRMB register, all from the same
+shelf `prepare.py` had already stocked. Three name-collision or bridge-claim
+traps caught along the way (Bari's duplicate register id, Vienna's duplicate
+plane, Rotterdam's Zadkine misattribution, Nijmegen's replaced coronation
+tree and duplicate Julianaboom) are recorded in each city's own entry above
+rather than repeated here.**
+
 ## 2026-08-19 - Caserta: deepened to target (14 to 20), 6 new trees from its own leads file
 
 Six trees written from already-verified MASAF/Campania register leads that
