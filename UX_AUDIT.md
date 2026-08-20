@@ -46,11 +46,14 @@ sign-in screen, however good, converts a person who was shown the wrong city.
 | 7 | Saved tab content ran under the floating tab bar with no bottom inset | Medium | Fixed |
 | 8 | Tree count rendered with the device's locale grouping, so English copy on a Dutch phone read "1.406 trees" | Low | Fixed |
 | 9 | The You tab was a settings list whose top half was four zeros and whose account row was a dead label | High | Fixed |
-| 10 | **Explore is a table of contents.** "At their best in August" is the best idea in the product and it renders as plain text rows with no photograph anywhere on the screen | High | Open |
-| 11 | Locked walks show a bare padlock in a plain list with no word of explanation | Medium | Open |
-| 12 | The map has no recentre-on-me control and no filters | Medium | Open |
-| 13 | "Near you" floats over the map as a bare title with no bar behind it | Low | Open |
+| 10 | **Explore is a table of contents.** "At their best in August" is the best idea in the product and it renders as plain text rows with no photograph anywhere on the screen | High | Fixed |
+| 11 | Locked walks show a bare padlock in a plain list with no word of explanation | Medium | Fixed |
+| 12 | The map has no recentre-on-me control | Medium | Fixed |
+| 13 | "Near you" floats over the map as a bare title with no bar behind it, and "Near Amsterdam" stated a problem with no way to fix it | Medium | Fixed |
 | 14 | The website's homepage advertises a collection screen with species stamps that the app does not have | Medium | Open |
+| 22 | The location permission was never primed. iOS gives one shot, and a refusal cannot be taken back | High | Fixed |
+| 23 | The map has no filters | Low | Open |
+| 24 | **The season shelf shows leafless trees.** Now that "At their best in August" renders photographs, the first card is a bare wingnut in a car park. The layout is right and the photograph contradicts the header | Medium | Open, for a photo pass |
 
 ### What was built for the account, and why in that order
 
@@ -82,16 +85,16 @@ account".
 | 16 | The dialog never named the tree that had just been saved, although a save is the only reason it opens | Medium | Fixed |
 | 17 | On /account at 375px the email field shrank next to its long button until the placeholder read "you@exampl", on the page whose entire job is getting an address typed into it | High | Fixed |
 | 18 | The only web route in is a magic link, so on a phone signing in means leaving the browser for Mail | High | Open, needs a template line |
-| 19 | **"Explore trees near you" is an underlined text link.** The core action of the whole product, and it is the weakest affordance on the homepage, sitting under a search field that is styled as the primary | High | Open |
+| 19 | **"Explore trees near you" is an underlined text link.** The core action of the whole product, and it is the weakest affordance on the homepage, sitting under a search field that is styled as the primary | High | Fixed |
 | 20 | The tree page's action bar carries three peers, with Save coloured and "Take me there" plain. AllTrails colours exactly one, and it is always the go-there verb | Medium | Open, wants data first |
 | 21 | `public.visited` does not exist in the database. visited.sql was written on 2026-08-18 and never run, so the tick log has no cloud half on either platform | High | Needs Hidde |
 
-On 19: this is the highest-value open item on the website and it is a fifteen
-minute change. The homepage sells "wherever you are" in its headline and then
-makes the search field the only thing that looks pressable. The product's own
-north star sentence is "I open it, it knows where I am, it shows me a cool tree
-nearby". That should be a filled button, and the search field should be the
-quieter of the two.
+On 19, now done: it is a filled pill with a pin on it reading "Trees near you",
+which is also shorter and says the thing rather than describing the page it
+opens. The search field is untouched and now reads as the second option, which
+is what it is: the product's own north star sentence is "I open it, it knows
+where I am, it shows me a cool tree nearby", and search is the fallback for when
+that is not what you want.
 
 On 20, and this is the reason it is not done: colouring Save is arguably right
 for the account goal, and colouring "Take me there" is right for goal 1 and for
@@ -109,7 +112,7 @@ sitting there.
 
 | # | Where | What | Gates |
 |---|---|---|---|
-| A | Supabase, Authentication, Email templates, Magic Link | Add `{{ .Token }}` to the template so the mail carries a six digit code as well as a link | The app's email sign-in. Without it the mail arrives with a link only, and the app has nothing to type in |
+| A | Supabase, Authentication, Email templates, Magic Link | Add `{{ .Token }}` to the template so the mail carries a six digit code as well as a link | The app's email sign-in, AND finding 18 on the website, which is roughly an hour's work the moment this line exists |
 | B | Supabase, Authentication, Providers, Apple | Enable it and add `app.ancienttrees.AncientTrees` to the allowed client IDs | Sign in with Apple, the biggest single lever in this whole audit. A probe today got past the provider check into token parsing, so this may already be half done. Worth confirming |
 | C | Supabase, SQL editor | Paste and run `supabase/visited.sql` | The cloud half of the tick log, on the website as well as the app. Until then a tick survives as a save, so nothing is lost, but the date is not kept |
 | D | Xcode, next time you build to your own phone | Accept the prompt to enable Sign in with Apple on the App ID | Device builds only. The simulator is unaffected |
@@ -126,8 +129,12 @@ open item with its reasoning attached.
   alles onder het hamburger menu"). Recorded, not overruled.
 - **The price and anything that takes money.** Hard rule 2.
 - **The tree action bar's colour hierarchy**, for the reason in 20 above.
-- **Onboarding.** A first-run flow that primes the location permission before
-  asking for it would raise the grant rate, and the grant rate is upstream of
-  every save and therefore of every account. It is the next thing worth doing and
-  it is a piece of work rather than a fix, so it is not something to slip into a
-  session that was already this long.
+- **The email code on the website (18).** It is written on the app side and the
+  same one hour on the web, but shipping it before the template carries a token
+  would put a code field in front of an email with no code in it. It waits on A.
+- **Badges and stamps (14).** A day's work for the reward of a collection almost
+  nobody has yet. It is on the list because the homepage already promises it,
+  not because it is next.
+
+Onboarding was on this list when the audit was written and is now done: the
+location primer is finding 22 above.
