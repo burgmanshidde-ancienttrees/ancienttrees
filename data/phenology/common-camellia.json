@@ -34,24 +34,6 @@
  "flower_colour": "#E4899E",
  "flower_peak": 3,
  "flower_days": "six to eight weeks, a few flowers at a time, which is why it carries a whole dull season on its own",
- "peak": {
-  "moment": "flowers",
-  "months": [
-   3
-  ],
-  "share": true,
-  "map": {
-   "effect": "blossom",
-   "colour": "#E4899E",
-   "pulse": true
-  },
-  "surfaces": [
-   "map",
-   "push",
-   "tree",
-   "city"
-  ]
- },
  "sources": [
   "https://www.rhs.org.uk/plants/search-results?query=camellia%20japonica",
   "https://www.treesandshrubsonline.org/articles/camellia/camellia-japonica/"

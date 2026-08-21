@@ -37,26 +37,6 @@
  "flower_label": "deep pink flowers hang the whole length of the falling branches, opening before the leaves and earlier than most cherries",
  "fruit_label": "small dark fruit, easily missed",
  "colour_label": "yellow to bronze",
- "peak": {
-  "moment": "flowers",
-  "months": [
-   3,
-   4
-  ],
-  "share": true,
-  "map": {
-   "effect": "blossom",
-   "colour": "#EBA9C4",
-   "pulse": true
-  },
-  "surfaces": [
-   "map",
-   "push",
-   "tree",
-   "city",
-   "home"
-  ]
- },
  "sources": [
   "https://www.rhs.org.uk/plants/search-results?query=prunus%20subhirtella%20pendula",
   "https://www.treesandshrubsonline.org/articles/prunus/prunus-subhirtella/"
