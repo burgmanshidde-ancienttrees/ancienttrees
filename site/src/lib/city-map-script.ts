@@ -206,6 +206,22 @@ markers.forEach(function(m, idx) {
   el.title = m.name;
   el.innerHTML = '<svg viewBox="0 0 40 40" fill="currentColor" aria-hidden="true">' + m.icon + '</svg>'
                + '<span class="pin-rank">' + m.label + '</span>';
+  // A tree at its peak says so on the map. The particles fall from the CROWN of
+  // the drawn species, not from a generic dot, which is the whole reason the
+  // pins are silhouettes: a ginkgo sheds from a ginkgo. The month is read here
+  // in the browser rather than baked at build time, so a page cached in October
+  // still lights up on the first of November. Months arrive already shifted for
+  // latitude, so a Melbourne ginkgo peaks in May.
+  if (m.peak && m.peak.months.indexOf(new Date().getMonth() + 1) !== -1) {
+    el.classList.add('pin-peak', 'peak-' + m.peak.effect);
+    el.style.setProperty('--peak', m.peak.colour);
+    var bits = document.createElement('span');
+    bits.className = 'pin-bits';
+    bits.setAttribute('aria-hidden', 'true');
+    // Three is enough at this size. More reads as weather rather than a tree.
+    bits.innerHTML = '<i></i><i></i><i></i>';
+    el.appendChild(bits);
+  }
   el.addEventListener('click', function(e) {
     e.stopPropagation();
     setActive(idx, true, true);
