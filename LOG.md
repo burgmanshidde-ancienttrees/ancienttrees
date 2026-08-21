@@ -12,6 +12,36 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-21 (session) - The oldest trees we map, taken off the app and put on the web homepage
+
+Hidde saw the shelf on the app's home screen and wanted it on the website too,
+at the bottom. It is now the last shelf on the homepage, under Parks: ten tree
+cards, each linking to its own page, "2500-4000 years / Sardinia" under the
+name, with "The oldest of all" pointing at the older-than-400-years
+collection.
+
+The ranking is the app's, deliberately, because the both-surfaces rule says the
+behaviour matches even where the design does not: rank by the LOW end of the
+age range, so a tree claiming 200 to 800 years does not outrank one solidly
+dated at 900, and require a photograph. Ten rather than the app's twelve,
+because every shelf on that page prints ten.
+
+One thing had to give way. The shelf claims its photographs before the
+favourites shelf, since a city card can be fronted by any of its trees and a
+tree card can only be its own tree, so London's card moved from the Totteridge
+Yew to the Royal Oak and the yew prints once, on the shelf about the oldest
+trees. That keeps the one-photograph-per-page rule you set on 08-21 intact.
+
+Verified on the deployed page rather than in a screenshot: the browser pane in
+this session photographed white below the fold, so the shelf was measured
+instead. Ten cards, every href resolving 200, no element past the right edge at
+375 or at 1280, the six two-line tree names stretching every card in the row to
+one height. Build and Smoke both green.
+
+What is Japan-heavy about it is the data, not the shelf: three Fukuoka trees
+and two from Nara are genuinely among the ten oldest things we have mapped with
+a photograph.
+
 ## 2026-08-21 - Night run 2026-08-21 20:31 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window (wall clock: cancelled before it could report its own duration), ended clean (cut off at the cap, no result record). Nothing reached data/cities.
