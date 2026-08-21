@@ -146,6 +146,9 @@ struct ContentView: View {
             root()
                 .navigationDestination(for: Route.self) { route in
                     destination(route, cat)
+                        // A pushed page is a reading page; the bar does nothing
+                        // there and AllTrails hides it too. Back is the way out.
+                        .toolbar(.hidden, for: .tabBar)
                 }
         }
     }
@@ -200,26 +203,31 @@ struct ContentView: View {
                         }
                     }
                         .tag(0)
-                        .tabItem { Label("Explore", systemImage: "magnifyingglass") }
+                        .tabItem { Label("Explore", systemImage: "magnifyingglass").environment(\.symbolVariants, .none) }
 
                     stack(1, cat) { SavedView(catalogue: cat, origin: origin) }
                         .tag(1)
-                        .tabItem { Label("Saved", systemImage: "heart") }
+                        .tabItem { Label("Saved", systemImage: "heart").environment(\.symbolVariants, .none) }
 
                     // Never actually shown: the selection binding intercepts 2
                     // and presents the Spot sheet instead.
                     Color.clear
                         .tag(2)
-                        .tabItem { Label("Spot", systemImage: "plus.circle.fill") }
+                        .tabItem { Label("Spot", systemImage: "plus.circle").environment(\.symbolVariants, .none) }
 
                     stack(3, cat) { CollectView(catalogue: cat, origin: origin) }
                         .tag(3)
-                        .tabItem { Label("Collect", systemImage: "rosette") }
+                        .tabItem { Label("Collect", systemImage: "rosette").environment(\.symbolVariants, .none) }
 
                     stack(4, cat) { ProfileView(catalogue: cat) }
                         .tag(4)
-                        .tabItem { Label("Profile", systemImage: "person.crop.circle") }
+                        .tabItem { Label("Profile", systemImage: "person").environment(\.symbolVariants, .none) }
                 }
+                // Outline icons that stay outline when selected, colour doing
+                // the selecting (Careem is Hidde's reference; Airbnb does the
+                // same). The .none variant sits on each Label because iOS
+                // applies its automatic .fill inside the tab item, underneath
+                // an environment set on the TabView itself.
                 .environment(saved)
                 .environment(store)
                 .environment(entitlement)

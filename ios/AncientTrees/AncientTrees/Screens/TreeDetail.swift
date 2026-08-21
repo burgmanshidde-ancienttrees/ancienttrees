@@ -48,7 +48,9 @@ struct TreeDetail: View {
             actionBar
         }
         .brandGround()
-        .navigationTitle(tree.name)
+        // The name renders once, in the body's own heading; a second copy in
+        // the bar was the "title twice" mess from the findings list.
+        .navigationTitle("")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
@@ -158,7 +160,7 @@ struct TreeDetail: View {
             VStack(spacing: 10) {
                 SpeciesMark(species: tree.species, color: .white.opacity(0.9))
                     .frame(width: 78, height: 78)
-                Text("Nobody has published a photograph of this tree under a licence we can use.")
+                Text("No photograph of this tree yet.")
                     .font(.caption2).foregroundStyle(.white.opacity(0.8))
                     .multilineTextAlignment(.center).padding(.horizontal, 28)
             }

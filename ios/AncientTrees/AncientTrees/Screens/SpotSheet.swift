@@ -41,6 +41,22 @@ struct SpotSheet: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
+                HStack {
+                    Spacer()
+                    Button { dismiss() } label: {
+                        Image(systemName: "xmark")
+                            .font(.system(size: 13, weight: .semibold))
+                            .foregroundStyle(Brand.inkSoft)
+                            .frame(width: 30, height: 30)
+                            .background(Brand.surfaceMuted, in: .circle)
+                            // The circle stays 30 points; the finger gets 44.
+                            .frame(width: 44, height: 44)
+                            .contentShape(.rect)
+                    }
+                    .accessibilityLabel("Close")
+                    .accessibilityIdentifier("spot-close")
+                }
+                .padding(.bottom, -26)
                 if let t = ticked {
                     tickedState(t)
                 } else if sent == true {
