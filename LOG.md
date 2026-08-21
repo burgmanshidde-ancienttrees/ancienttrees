@@ -12,6 +12,12 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-21 - Night run 2026-08-21 02:52 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 15.3 minutes of its 120 minute window, 143 turns, 43 commands refused by the allowlist, ended clean (success). 4 commit(s), none of them a published tree. Claims left behind: krakow, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
 ## 2026-08-21 (night run) - Milan +2, Brussels +4 from the shelf; Bari's 4th tree still missing; a passcheck bug fixed
 
 `python3 scripts/visitors.py`: 378 visits, 581 page views over 7 days (14th 34, 15th 33, 16th 83, 17th 44, 18th 67, 19th 42, 20th 74, 21st 1 partial). Flat, no city dominating. `prepare.py`: 40 cities staged for verify, Bari's 3 written trees still awaiting a 4th to clear the floor.
