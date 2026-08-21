@@ -1,9 +1,9 @@
 {
   "slug": "trees-older-than-400-years",
-  "title": "Trees Older Than 400 Years You Can Actually Visit",
+  "title": "The Oldest Trees We Have Mapped",
   "status": "hidde_approved",
-  "meta_description": "Five city trees that predate almost everything around them, from a 2,000 year old yew in London to the 1601 Robinier of Paris. All publicly accessible.",
-  "intro": "Four hundred years is a useful threshold. Older than that, and a tree predates nearly everything around it: the streets, the houses, usually the city's entire modern shape. These are not trees in a forest, where old age is unremarkable. They are survivors standing in churchyards, royal parks and public squares, still reachable by tube or metro, still free to stand under. Every tree in this collection clears the 400 year mark by a verified or conservatively estimated margin, and every one is publicly accessible. Start with the yew that was old before London existed.",
+  "meta_description": "Every tree on our map whose age clears four hundred years, ranked oldest first, from the millennial olives of Crete and Sardinia down. It re-ranks itself whenever we map an older one.",
+  "intro": "Four hundred years is a useful threshold. Older than that and a tree predates nearly everything around it: the streets, the houses, usually the city's entire modern shape. This page ranks every tree we have mapped that clears it, oldest first, and it re-ranks itself the moment we add an older one. One rule keeps it honest, and it costs us entries: a tree qualifies on the LOW end of its estimate, so a tree recorded as one hundred to five hundred years old is not here, however tempting the upper number looks. Where the age is a range, the range is what you see, because that is what the sources say. Start at the top with olives that were already ancient when Rome was a village, and work down to oaks that were merely standing when the printing press arrived.",
   "entries": [
     {
       "city_slug": "london",
@@ -31,5 +31,6 @@
       "note": "The oldest tree in Paris, planted in 1601 by the king's herbalist and still flowering opposite Notre-Dame. The entire Robinia genus is named after the man who planted it."
     }
   ],
-  "seo_title": "Trees Older Than 400 Years You Can Actually Visit"
+  "seo_title": "Trees Older Than 400 Years You Can Actually Visit",
+  "generated": "oldest"
 }
