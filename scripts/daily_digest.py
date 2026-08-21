@@ -880,6 +880,8 @@ def product_section(today):
         for r in rows_:
             if r.get("id") in TEST_SUBMISSION_IDS:
                 continue
+            if (r.get("why") or "").startswith("vote undone"):
+                continue  # a cancelled vote is bookkeeping, not feedback
             if r.get("kind") != "feedback":
                 fp = (str(r.get("created_at"))[:10], r.get("kind"),
                       r.get("city"), r.get("tree"), r.get("why"))
@@ -931,6 +933,8 @@ def product_section(today):
             allrows, _ = _supa(path + sel, key)
             if label == "Submissions":
                 allrows = [r for r in allrows if r.get("id") not in TEST_SUBMISSION_IDS]
+                allrows = [r for r in allrows
+                           if not (r.get("why") or "").startswith("vote undone")]
                 # Same double-submit dedupe as the table above, votes exempt.
                 dedup, seen_fp = [], set()
                 for r in allrows:
