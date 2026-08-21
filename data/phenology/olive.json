@@ -28,14 +28,32 @@
  "bare": [],
  "intensity": {
   "flowers": "nice",
-  "fruit": "striking"
+  "fruit": "worth the trip"
  },
- "fruit_label": "the harvest, when the fruit turns from green to black",
+ "fruit_label": "the harvest: the whole grove is netted and the fruit comes down, and the tree turns from green to black as it goes",
  "sources": [
   "https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/a-z-of-british-trees/",
   "https://www.treesandshrubsonline.org/"
  ],
  "flower_colour": "#EDE9D5",
  "flower_peak": 5,
- "flower_days": "about a fortnight"
+ "flower_days": "about a fortnight",
+ "peak": {
+  "moment": "fruit",
+  "months": [
+   10
+  ],
+  "share": true,
+  "map": {
+   "effect": "fruit-drop",
+   "colour": "#4F3A46",
+   "pulse": true
+  },
+  "surfaces": [
+   "map",
+   "push",
+   "tree",
+   "city"
+  ]
+ }
 }
