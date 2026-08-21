@@ -141,6 +141,18 @@ This entry exists because the run wrote none. The prompt asks every run to log e
 Fixed a real stale-count bug caught by preflight.py in both Groningen and Utrecht: meta_description, question_meta and one FAQ answer still promised the pre-deepen tree count.
 
 Build, preflight and QA all clean after every merge. Costs logged to data/agent-costs.json.
+## 2026-08-21 (session) - The bar moves again, and Begin actually walks with you
+
+Two pieces, both Hidde's call, both live.
+
+**The bar is Map, Explore, Spot, Collect, Profile** (DECISIONS.md, top). His diagnosis of yesterday's build: Saved was a second empty room next to Collect, while the feed we already had is the thing that works. So the pill is gone, the map and the shelves are two tabs (Komoot's split), and want-and-had are two segments inside Collect. Day zero now opens on two full screens instead of two promises.
+
+**Begin is a mode rather than a handoff.** It used to open Apple Maps and our part of the afternoon was over. Now it is a full-screen map with the route drawn, the walk's progress on top, and the next tree as a card: within 120 m the loud button is "I am standing before it", further away it is "Take me there", and ticking always works because GPS is a bonus and never a gate. Progress is `Saved.isVisited` rather than a new store, so a walk survives a kill, syncs to the account and cannot drift from the collection. Web keeps its static walk page; Begin stays app-only, which is the honest answer to the both-surfaces rule.
+
+**Three real bugs the tests caught**, worth knowing because each is a class rather than a one-off: the Spot sheet TRAPPED at launch after another session put its send path behind an account and nobody handed that sheet the account; the map sheet still led with whatever tree was nearest, photograph or not (`Editorial.leadWithAPhotograph` now sits in front of it); and a container `accessibilityIdentifier` on the walk screen stamped itself onto every button inside it, which is the same trap a card once played on its heart button. A `-reset-collection` launch argument makes the day-zero test independent of what other tests ticked.
+
+New launch arguments for the sweep: `-begin=<city>|<walk>`, `-reset-collection`. Both sweep lists know the new screens.
+
 ## 2026-08-20 (session, evening) - The app is rebuilt on the five-slot bar, and it stands on white
 
 Hidde's verdict on the first app build ("conceptueel gaat het niet goed", the features "moeten verder worden uitgedacht") became a decided structure (DECISIONS.md, top entry) and this rebuild, executed against docs/superpowers/plans/2026-08-20-app-five-slot-rebuild.md:

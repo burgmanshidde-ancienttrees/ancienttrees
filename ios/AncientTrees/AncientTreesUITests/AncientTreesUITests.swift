@@ -212,7 +212,9 @@ final class AncientTreesUITests: XCTestCase {
     /// you do not have" failure this rebuild exists to fix.
     @MainActor
     func testCollectDayZeroShowsMission() throws {
-        let app = launch(["-tab=3"])
+        // Explicitly on an empty collection: this test is about day zero, so it
+        // cannot inherit whatever an earlier test on the same simulator ticked.
+        let app = launch(["-tab=3", "-reset-collection"])
         XCTAssertTrue(app.otherElements["collect-mission"].waitForExistence(timeout: 10),
                       "no mission on Collect's day zero")
         XCTAssertFalse(app.staticTexts["Species collected"].exists,
@@ -238,6 +240,42 @@ final class AncientTreesUITests: XCTestCase {
         XCTAssertTrue(far.staticTexts["No tree on our map here"].waitForExistence(timeout: 10),
                       "the add-form is not the headline where we map nothing")
         XCTAssertTrue(far.buttons["Send it in"].exists)
+    }
+
+    /// Begin is the walk verb actually happening: full screen, the route, and
+    /// a tick that advances to the next tree. It used to hand the person to
+    /// Apple Maps, which ended our part of the afternoon.
+    @MainActor
+    func testBeginWalksTheWalk() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["-at=52.3667,4.9086", "-begin=amsterdam|Plantage"]
+        app.launch()
+
+        XCTAssertTrue(app.otherElements["walk-mode"].waitForExistence(timeout: 12),
+                      "Begin did not open the walk")
+        // By the words on it. An identifier on a Button whose label is an
+        // HStack of Spacers does not always survive into the query tree, and a
+        // test that cannot find the button it is about proves nothing.
+        let tick = app.buttons.matching(
+            NSPredicate(format: "label CONTAINS 'standing before it'")).firstMatch
+        XCTAssertTrue(tick.waitForExistence(timeout: 6), "no tick in the walk")
+
+        // Ticking has to MOVE the walk on: the counter climbs and the card
+        // names a different tree. A tick that only lit up would be a screen
+        // pretending to be a walk.
+        let progress = app.staticTexts.matching(NSPredicate(format: "label CONTAINS 'of 14 ticked off'")).firstMatch
+        XCTAssertTrue(progress.waitForExistence(timeout: 6))
+        let before = progress.label
+        tick.tap()
+        XCTAssertTrue(app.staticTexts.matching(
+            NSPredicate(format: "label CONTAINS 'of 14 ticked off' AND NOT label CONTAINS %@",
+                        before.components(separatedBy: " ").first ?? "0")).firstMatch
+            .waitForExistence(timeout: 6),
+                      "ticking a tree did not advance the walk")
+
+        app.buttons["walk-close"].tap()
+        XCTAssertTrue(app.tabBars.buttons["Map"].waitForExistence(timeout: 6),
+                      "leaving the walk did not return to the app")
     }
 
     /// The sheet the whole account funnel runs through. If it does not present,
