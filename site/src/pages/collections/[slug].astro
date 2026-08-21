@@ -57,19 +57,64 @@ const crumbItems: [string, string | null][] = [
 // making a claim its own data does not. That costs the page 44 trees whose
 // upper estimate reaches 400, and it is the difference between a ranking and
 // a boast.
-const ERAS: { min: number; heading: string }[] = [
-  { min: 1000, heading: "Over a thousand years" },
-  { min: 700, heading: "Seven hundred to a thousand years" },
-  { min: 500, heading: "Five to seven hundred years" },
-  { min: 400, heading: "Four to five hundred years" },
-];
-function ageLine(t: { age_min?: number | null; age_max?: number | null; age_estimate?: string | null }): string {
-  const lo = t.age_min ?? 0, hi = t.age_max ?? 0;
-  const n = (x: number) => x.toLocaleString("en-GB");
-  if (lo && hi && hi > lo) return `Roughly ${n(lo)} to ${n(hi)} years old.`;
-  if (lo) return `About ${n(lo)} years old.`;
-  return (t.age_estimate ?? "").trim();
+// Two rankings so far, and the shape is deliberately one shape: a filter, an
+// order, a set of bands and one line of text per tree. A third (rarest
+// species, most northerly) is a config entry, not a new page.
+interface RankMode {
+  qualifies: (t: any) => boolean;
+  /** Sort keys, highest first. */
+  keys: (t: any) => number[];
+  bands: { min: number; heading: string }[];
+  band: (t: any) => number;
+  note: (t: any) => string;
 }
+function n(x: number): string {
+  return x.toLocaleString("en-GB");
+}
+const MODES: Record<string, RankMode> = {
+  // Ranked on the LOWER bound of the age, never the upper: a tree recorded as
+  // "100 to 500 years" has not been shown to be older than four hundred, and
+  // putting it in a list of trees that clear four hundred would be the page
+  // making a claim its own data does not.
+  oldest: {
+    qualifies: (t) => (t.age_min ?? 0) >= 400,
+    keys: (t) => [t.age_min ?? 0, t.age_max ?? 0],
+    band: (t) => t.age_min ?? 0,
+    bands: [
+      { min: 1000, heading: "Over a thousand years" },
+      { min: 700, heading: "Seven hundred to a thousand years" },
+      { min: 500, heading: "Five to seven hundred years" },
+      { min: 400, heading: "Four to five hundred years" },
+    ],
+    note: (t) => {
+      const lo = t.age_min ?? 0, hi = t.age_max ?? 0;
+      if (lo && hi && hi > lo) return `Roughly ${n(lo)} to ${n(hi)} years old.`;
+      if (lo) return `About ${n(lo)} years old.`;
+      return (t.age_estimate ?? "").trim();
+    },
+  },
+  // Girth is measured rather than estimated, so this ranking needs no
+  // conservative reading: a tape around a trunk is a fact. What it does need
+  // is honesty about coverage, which the intro carries: only the trees whose
+  // trunk somebody has actually measured can appear.
+  thickest: {
+    qualifies: (t) => (t.girth_cm ?? 0) >= 400,
+    keys: (t) => [t.girth_cm ?? 0],
+    band: (t) => t.girth_cm ?? 0,
+    bands: [
+      { min: 1000, heading: "Ten metres round and more" },
+      { min: 700, heading: "Seven to ten metres round" },
+      { min: 500, heading: "Five to seven metres round" },
+      { min: 400, heading: "Four to five metres round" },
+    ],
+    note: (t) => {
+      const m = (t.girth_cm ?? 0) / 100;
+      const arms = Math.max(2, Math.round(m / 1.6));
+      return `${m.toFixed(2)} metres round the trunk, about ${arms} people with their arms outstretched.`;
+    },
+  },
+};
+const mode = coll.data.generated ? MODES[coll.data.generated] : null;
 const curatedNote = new Map(coll.data.entries.map((e) => [e.tree_id, e.note]));
 
 const grouped = new Map<string, typeof coll.data.entries>();
@@ -84,22 +129,28 @@ if (!coll.data.generated) {
 
 interface RankRow { tree: any; citySlug: string; city: string; slug: string; note: string; }
 const bands: { heading: string; rows: RankRow[] }[] = [];
-if (coll.data.generated === "oldest") {
-  const all: (RankRow & { lo: number; hi: number })[] = [];
+if (mode) {
+  const all: (RankRow & { keys: number[]; band: number })[] = [];
   for (const [cslug, city] of citiesBySlug) {
     const tslugs = treeSlugsForCity(city);
     for (const t of city.data.trees) {
-      const lo = (t as any).age_min ?? 0;
-      if (lo < 400 || !tslugs[t.id]) continue;
+      if (!mode.qualifies(t) || !tslugs[t.id]) continue;
       all.push({ tree: t, citySlug: cslug, city: city.data.city, slug: tslugs[t.id],
-                 note: curatedNote.get(t.id) ?? ageLine(t as any),
-                 lo, hi: (t as any).age_max ?? lo });
+                 note: curatedNote.get(t.id) ?? mode.note(t),
+                 keys: mode.keys(t), band: mode.band(t) });
     }
   }
-  all.sort((a, b) => b.lo - a.lo || b.hi - a.hi || a.tree.name.localeCompare(b.tree.name));
-  for (const era of ERAS) {
-    const rows = all.filter((r) => r.lo >= era.min && !bands.some((b) => b.rows.includes(r)));
-    if (rows.length) bands.push({ heading: `${era.heading} (${rows.length})`, rows });
+  all.sort((a, b) => {
+    for (let i = 0; i < a.keys.length; i += 1) {
+      if (b.keys[i] !== a.keys[i]) return b.keys[i] - a.keys[i];
+    }
+    return a.tree.name.localeCompare(b.tree.name);
+  });
+  let above = Infinity;
+  for (const b of mode.bands) {
+    const rows = all.filter((r) => r.band >= b.min && r.band < above);
+    above = b.min;
+    if (rows.length) bands.push({ heading: `${b.heading} (${rows.length})`, rows });
   }
 }
 
