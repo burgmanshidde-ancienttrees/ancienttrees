@@ -12,6 +12,55 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-21 (session) - Munich and Vienna each gain one register tree, closing near their targets
+
+7-day visits (visitors.py): 400 visits, 615 page views (14th 34/67, 15th
+33/37, 16th 83/95, 17th 44/75, 18th 67/101, 19th 42/71, 20th 74/134, 21st
+23/35). Step 0: no reader submissions (Supabase checked, 0 unprocessed of
+10), health.py rung 2 clear (0 BLOCKER, 1 WARN, nothing stale). Bari's 3
+verified-but-unpublished trees stay below the 4-tree floor; its 4th tree
+hunt is genuinely exhausted per three prior passes (CURATION.md
+2026-08-20/21), did not re-open it.
+
+Went to `city_queue.py --next` and `data/city-queue.json` for cities
+closest to target with real demand: Rome (30 target, 29 trees, 215
+impressions/10d) and Munich (30 target, 29 trees, 41 impressions/10d) each
+needed exactly one more tree; Vienna (30 target, 27 trees, 115
+impressions/10d) needed three. Rome's remaining 4 leads.py-READY leads all
+carry documented reasons they don't actually ship (day-trip boundary,
+unresolved vitality, not a collectible point per CURATION.md's entry from
+earlier today), so left Rome alone rather than re-litigate that. Read
+Munich's and Vienna's actual leads files by hand rather than trusting
+leads.py's READY count at face value (same lesson as today's earlier
+Rome/Florence/Vienna entry).
+
+Munich: 15 READY leads, all legally protected single trees on public
+land per the 2021 Naturdenkmalverordnung, all missing only age. Picked the
+Nymphenburg Porcelain Manufactory lime for joining the existing muc_007/
+011-014 Nymphenburg cluster (about 0.7km away) and for having a real second
+source, a 2011 local paper piece naming this specific tree, which the
+register alone didn't give it. Shipped as `muc_034`. Munich now 30/30.
+
+Vienna: checked all remaining leads against their own notes rather than
+re-researching. Most are genuinely marginal (unconfirmed courtyard access
+on a strong Prater ginkgo lead, a third plane in an already-covered park,
+two young Kugeltrompetenbaum specimens). One, the Alser Strasse plane,
+was explicitly noted "verifies fine" by an earlier pass and just weaker
+than what got picked then; confirmed via Vienna's own Baumkataster
+(documented 1894 planting date, girth 315cm) and shipped as `vie_028`.
+Vienna now 28/30; updated its meta_description off a stale "Twenty-seven".
+
+Both new trees: `curation_status: flagged` (single-source register data,
+per Step 2), honest `location_precision`, no invented ages, no photo
+judged (this runner's egress blocks Wikimedia image fetches; found one
+CC BY-SA candidate for the Munich tree via the API and left it
+`found_needs_check` for a session that can view it). Ran preflight.py
+(clean), `npm --prefix site ci && npm --prefix site run build` (clean),
+qa.py (one pre-existing sitemap lastmod warning from this sandbox's
+shallow git clone, unrelated to this change), `route_walks.py` (both
+routes walk clean, 2.0km/24-25min), `tree_index.py`, logged to
+data/agent-costs.json. Full detail in CURATION.md. Released both claims.
+
 ## 2026-08-21 (session, with Hidde) - The contributor reply loop: input is core, gets thanked, answered, never dismissed
 
 Hidde's ruling, designed and built in one session: "this process of user giving input is one of the core features of our platform and must be treated with care." Spec in docs/superpowers/specs/2026-08-21-contributor-reply-design.md, plan beside it. What shipped:
