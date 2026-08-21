@@ -7,9 +7,9 @@ function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 }
 
-export function browseCard(href: string, name: string, sub: string, face: string | null): string {
+export function browseCard(href: string, name: string, sub: string, face: string | null, face2: string | null = null): string {
   const ph = face
-    ? `<span class="exc-ph"><img src="${esc(face)}" alt="" loading="lazy"></span>`
+    ? `<span class="exc-ph"><img src="${esc(face)}"${face2 ? ` srcset="${esc(face2)}"` : ""} alt="" loading="lazy"></span>`
     : NO_PHOTO_SVG.replace('class="ctry-ph ctry-noph"', 'class="exc-ph ctry-noph"');
   return `<a class="exc-card" href="${href}">${ph}<span class="exc-body"><b>${esc(name)}</b><span>${sub}</span></span></a>`;
 }

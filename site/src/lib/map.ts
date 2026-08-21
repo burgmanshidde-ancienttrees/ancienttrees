@@ -289,7 +289,7 @@ if (map.isStyleLoaded()) { initTreeLayers(); }
 // cities in view, most likely first, and every click goes straight there.
 var panel = document.getElementById('ex-panel');
 function fmtCard(c) {
-  var ph = c.ph ? '<span class="exc-ph"><img src="' + c.ph + '" alt="" loading="lazy"></span>' : '<span class="exc-ph exc-noph"></span>';
+  var ph = c.ph ? '<span class="exc-ph"><img src="' + c.ph + '"' + (c.ph2 ? ' srcset="' + c.ph2 + '"' : '') + ' alt="" loading="lazy"></span>' : '<span class="exc-ph exc-noph"></span>';
   return '<a class="exc-card" href="' + c.url + '">' + ph +
          '<span class="exc-body"><b>' + c.city + '</b>' +
          '<span>' + c.n + ' trees &middot; ' + c.country + '</span></span></a>';

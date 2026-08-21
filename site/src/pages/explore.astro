@@ -12,7 +12,7 @@
 import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
 import { cityIsRenderable, slugify, type CityEntry } from "../lib/trees";
-import { cityFace } from "../lib/images";
+import { cityFace, cityFaceSrcset } from "../lib/images";
 import { mapHead, exploreMapScript, type ExploreTreeFeature, type ExploreCityRow } from "../lib/map";
 import { haversineKm } from "../lib/walks";
 import { searchForm, SEARCH_WIDGET_JS } from "../lib/search-form";
@@ -70,7 +70,8 @@ const cityRows: ExploreCityRow[] = allCities
       n: trees.length,
       lat: trees.reduce((s, t) => s + (t.location.latitude ?? 0), 0) / trees.length,
       lng: trees.reduce((s, t) => s + (t.location.longitude ?? 0), 0) / trees.length,
-      ph: cityFace(e.data, 400),
+      ph: cityFace(e.data, 172),
+      ph2: cityFaceSrcset(e.data, 86)?.srcset ?? null,
       rank: FAVES.includes(e.id) ? FAVES.indexOf(e.id) : 99,
     };
   })
