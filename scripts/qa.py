@@ -234,14 +234,25 @@ def check_save_flow_integrity():
                    "modal dialog out of the browser's fixed top-layer placement "
                    "(the 2026-08-14 dialog-at-top-of-page bug)")
     hearts_no_dialog = []
+    gated_no_dialog = []
     for page in sorted(DIST.rglob("*.html")):
         html = page.read_text(encoding="utf-8")
         if 'save-btn' in html and 'id="signin-dialog"' not in html:
             hearts_no_dialog.append(str(page.relative_to(DIST)))
+        # Feedback is account-gated since 2026-08-21: a worth-it control or
+        # the contribute form without the dialog would open nothing on tap,
+        # which is the same silent no-op the hearts check exists for.
+        if (('worthit-btn' in html or 'id="suggest"' in html)
+                and 'id="signin-dialog"' not in html):
+            gated_no_dialog.append(str(page.relative_to(DIST)))
     if hearts_no_dialog:
         out.append("%d page(s) render save hearts without the sign-in dialog "
                    "(first-save funnel is a silent no-op there), e.g. %s"
                    % (len(hearts_no_dialog), ", ".join(hearts_no_dialog[:5])))
+    if gated_no_dialog:
+        out.append("%d page(s) render gated feedback controls (worth-it or the "
+                   "contribute form) without the sign-in dialog, e.g. %s"
+                   % (len(gated_no_dialog), ", ".join(gated_no_dialog[:5])))
     return out
 
 

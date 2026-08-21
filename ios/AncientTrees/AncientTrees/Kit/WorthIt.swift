@@ -3,15 +3,20 @@
 // undoes, a down-vote offers the optional why-chips. Same Supabase rows as
 // the web control, so the pipeline behind it cannot tell the surfaces apart.
 // Undo writes a compensating "vote undone" row rather than deleting anything.
+// And gated the same way as the web control, same day's ruling: the options
+// are visible to everyone, acting opens the sign-in sheet, because the
+// account is the reply channel (the Google Maps convention).
 import SwiftUI
 
 struct WorthItView: View {
     let tree: Tree
 
+    @Environment(Account.self) private var account
     @AppStorage private var vote: String
     @State private var whyOpen = false
     @State private var reported: Bool
     @State private var showForm = false
+    @State private var signingIn = false
 
     init(tree: Tree) {
         self.tree = tree
@@ -39,10 +44,16 @@ struct WorthItView: View {
             }
         }
         .sheet(isPresented: $showForm) { ContributeView(about: tree) }
+        .sheet(isPresented: $signingIn) {
+            SignInSheet(reason: .feedback, localCount: 0)
+        }
     }
 
     private func thumb(_ dir: String, _ icon: String) -> some View {
         Button {
+            // Visible to everyone; voting needs the account that lets us
+            // answer (2026-08-21, the Google Maps convention).
+            guard account.isSignedIn else { signingIn = true; return }
             if vote == dir {
                 send("vote undone", vote == "up" ? "worth it" : "not worth it")
                 vote = ""
@@ -79,6 +90,7 @@ struct WorthItView: View {
 
     private func chip(_ label: String, _ reason: String) -> some View {
         Button(label) {
+            guard account.isSignedIn else { signingIn = true; return }
             UserDefaults.standard.set(reason, forKey: "at_wrong_\(tree.id)")
             reported = true
             whyOpen = false
@@ -89,10 +101,12 @@ struct WorthItView: View {
 
     private func send(_ verdict: String, _ reason: String?) {
         let why = reason.map { "\(verdict): \($0)" } ?? verdict
+        let token = account.session?.accessToken
         Task {
             _ = await Submission.sendFeedback(city: tree.city,
                                               tree: "\(tree.id) (\(tree.name))",
-                                              why: why)
+                                              why: why,
+                                              token: token)
         }
     }
 }

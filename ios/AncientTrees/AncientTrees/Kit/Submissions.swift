@@ -36,50 +36,43 @@ public enum Submission {
         public var tree = ""
         public var locationHint = ""
         public var why = ""
-        public var email = ""
         public init() {}
     }
 
     /// Sends it, or says plainly that it did not go. No name field: we never
     /// publish a submitter's name and asking for one we will not use is worse
-    /// than not asking. The email is the reply loop's doorway (2026-08-21):
-    /// optional, used only to thank, ask and answer about this submission.
-    public static func send(_ d: Draft, from page: String?) async -> Bool {
-        var body: [String: Any] = [
+    /// than not asking. Sending needs the signed-in account (2026-08-21, the
+    /// Google Maps convention): the token stamps the row with the sender, and
+    /// the account's email is how the thank-you and the answer reach them.
+    public static func send(_ d: Draft, from page: String?, token: String?) async -> Bool {
+        await post([
             "kind": d.kind.rawValue,
             "city": d.city,
             "tree": d.tree,
             "location_hint": d.locationHint,
             "why": d.why,
             "page": page as Any,
-        ]
-        if !d.email.isEmpty { body["email"] = d.email }
-        if await post(body) { return true }
-        // If the email column does not exist yet the insert fails; the tree
-        // matters more than the address, so retry without it.
-        if body["email"] != nil {
-            body.removeValue(forKey: "email")
-            return await post(body)
-        }
-        return false
+        ], token: token)
     }
 
     /// The worth-it control's channel: kind 'feedback', same shape as the
     /// web control's rows, so the pipeline cannot tell the surfaces apart.
-    public static func sendFeedback(city: String, tree: String, why: String) async -> Bool {
+    public static func sendFeedback(city: String, tree: String, why: String,
+                                    token: String?) async -> Bool {
         await post([
             "kind": "feedback",
             "city": city,
             "tree": tree,
             "why": why,
             "page": "app" as Any,
-        ])
+        ], token: token)
     }
 
-    private static func post(_ body: [String: Any]) async -> Bool {
+    private static func post(_ body: [String: Any], token: String?) async -> Bool {
         var r = URLRequest(url: url)
         r.httpMethod = "POST"
         r.setValue(key, forHTTPHeaderField: "apikey")
+        if let token { r.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization") }
         r.setValue("application/json", forHTTPHeaderField: "Content-Type")
         r.setValue("return=minimal", forHTTPHeaderField: "Prefer")
         r.httpBody = try? JSONSerialization.data(withJSONObject: body)
