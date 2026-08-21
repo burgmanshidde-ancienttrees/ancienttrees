@@ -82,6 +82,7 @@ struct WorthItView: View {
         FlowChips {
             chip("It's dead or gone", "dead or gone")
             chip("Wrong location", "wrong location")
+            chip("Couldn't tell which tree", "could not tell which tree")
             chip("Couldn't reach it", "could not reach it")
             Button("Something else") { showForm = true }
                 .buttonStyle(.bordered).controlSize(.small)
