@@ -143,6 +143,12 @@ const species = defineCollection({
     title: z.string().optional(),
     meta_description: z.string().optional(),
     intro: z.string(),
+    // The photograph this species shows on a card, by tree id. Ranking on
+    // size and shape gets a good picture; it cannot tell a bare winter crown
+    // from a tree in leaf, or a street with parked cars from a portrait
+    // (Hidde, 2026-08-21, on the London Plane and Ginkgo cards). This is the
+    // hero_tree_id a city already has, for the groupings that lacked one.
+    face_tree_id: z.string().optional(),
   }),
 });
 
