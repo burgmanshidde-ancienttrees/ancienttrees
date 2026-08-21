@@ -112,7 +112,9 @@
         "license": "CC BY",
         "attribution": "Nick Knutson, via iNaturalist",
         "status": "held",
-        "note": "good on quality but identity unproven: no coordinates, no temple named, and Bangkok has a planted bodhi at every wat"
+        "note": "good on quality but identity unproven: no coordinates, no temple named, and Bangkok has a planted bodhi at every wat",
+        "width": 375,
+        "height": 500
       },
       "curation_status": "ai_generated",
       "notes": "The thapra.lib.su.ac.th source (Silpakorn University's Rattanakosin temple archive) could only be confirmed via search-indexed snippet this session; direct fetch failed with a socket error on every attempt. The 1864/Rama IV planting date is independently corroborated by becommon.co, an unrelated source, so the fact stands on two sources despite the direct-fetch failure.",

@@ -114,7 +114,9 @@
         "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/211744619/medium.jpeg",
         "license": "CC BY-SA",
         "attribution": "Ingimar, via iNaturalist",
-        "status": "approved"
+        "status": "approved",
+        "width": 281,
+        "height": 500
       },
       "curation_status": "flagged",
       "notes": "Age given is for the current regrown stem only; the original tree's age before it died back or was cut is not recorded in any source found. Story states this honestly rather than implying continuity of age. Photo found 2026-07-26: an iNaturalist observation from the \"Arboles Singulares de Espana\" project, titled \"Garrofer de la Placa de la Natura del Park Guell\", the exact tree by name, 17m from this pin. Viewed directly, shows carob pods on the branches, consistent with the species.",
@@ -256,7 +258,9 @@
         "url": "https://live.staticflickr.com/65535/52138342190_bb26b506ee_b.jpg",
         "license": "CC BY-SA 2.0",
         "attribution": "Josep Trepat Font",
-        "status": "approved"
+        "status": "approved",
+        "width": 768,
+        "height": 1024
       },
       "curation_status": "flagged",
       "notes": "No precise planting date found in either source; both describe the tree only as 'centenaria' (100+ years). Age range left wide to reflect that honestly rather than implying precision that doesn't exist.",
@@ -323,7 +327,9 @@
         "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/363138156/medium.jpeg",
         "license": "CC0",
         "attribution": "Ben Sims, via iNaturalist",
-        "status": "approved"
+        "status": "approved",
+        "width": 375,
+        "height": 500
       },
       "curation_status": "ai_generated",
       "notes": "Photo found 2026-07-26: CC0 iNaturalist observation 15m from this pin. Viewed directly, shows a massive gnarled, rippled trunk in an urban plaza setting consistent with an ombu and with Placa Prim.",

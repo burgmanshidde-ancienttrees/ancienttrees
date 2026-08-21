@@ -235,7 +235,9 @@
         "url": "https://beeldbank.onroerenderfgoed.be/images/192759/content/full",
         "license": "CC BY 4.0",
         "attribution": "Geert Van der Linden / Flanders Immovable Heritage Agency",
-        "status": "approved"
+        "status": "approved",
+        "width": 3648,
+        "height": 2736
       },
       "curation_status": "flagged",
       "notes": "Second source added 2026-07-30: Beeldbank Onroerend Erfgoed (the Flanders heritage agency's separate image-archive database, distinct from the Inventaris record already cited), image 192759, captioned \"Opgaande Canadapopulier\" at Eric Sasselaan, photographed 2011-10-18 by Geert Van der Linden, the same photo already used for this entry's approved photo. Independently confirms species and street. Age range reflects typical Canadian poplar growth rates rather than a documented planting date; included on size and visual grounds, not claimed antiquity. Pin corrected 2026-07-27: the previous coordinates (51.201, 4.395) were about 800m from the actual street, verified by geocoding 'Eric Sasselaan, Antwerpen' directly (Nominatim) and cross-checking the street's own OpenStreetMap geometry, which runs through the Tentoonstellingswijk along the former Brialmont fortress's ravelin moat, exactly as the heritage inventory describes. Moved to the street's curved midsection nearest that former moat. The heritage record itself claims only 15m precision and its exact point sits behind a JS-rendered map this session's tools could not read, so this stays approximate rather than confirmed.",
@@ -273,7 +275,9 @@
         "url": "https://beeldbank.onroerenderfgoed.be/images/186197/content/full",
         "license": "CC BY 4.0",
         "attribution": "Geert Van der Linden / Flanders Immovable Heritage Agency",
-        "status": "approved"
+        "status": "approved",
+        "width": 2048,
+        "height": 1536
       },
       "curation_status": "ai_generated",
       "notes": "Age and planting date are exactly documented (3 September 1994), unusually precise for this list. Included for historical significance rather than age, labelled 'Youngest tree' for honesty, same pattern as other cities' young-but-significant entries. Pin tightened 2026-07-26 via the city's own Groeninventaris tree layer: the only Tilia x europaea recorded on the Grote Markt (a second lime nearby is Tilia cordata, a different species).",
@@ -303,7 +307,9 @@
         "url": "https://beeldbank.onroerenderfgoed.be/images/385816/content/full",
         "license": "CC BY 4.0",
         "attribution": "Kris Vandevorst / Flanders Immovable Heritage Agency",
-        "status": "approved"
+        "status": "approved",
+        "width": 5431,
+        "height": 3405
       },
       "curation_status": "flagged",
       "notes": "Presented deliberately as an ensemble: no individual tree in Den Brandt has a documented age or circumference in the sources checked. The estate's own ownership history (1396, 1790, 1804, 1910, 1911) is documented and used as context only.",

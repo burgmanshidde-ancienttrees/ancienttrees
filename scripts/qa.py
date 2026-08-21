@@ -20,6 +20,7 @@ Checks, all deterministic, no network:
 Exit 1 on any failure, so CI fails the deploy. Run: python3 scripts/qa.py
 """
 import argparse
+import json
 import re
 import sys
 from html.parser import HTMLParser
@@ -216,6 +217,63 @@ def check_one_city_order():
 # check is simply that the dates vary. One distinct date across a thousand pages
 # means the git lookup silently fell back (a shallow clone has no history), and
 # the deploy would ship the old bug without anyone noticing.
+def check_photo_resolution():
+    """A photograph must have the pixels for the box we paint it in.
+
+    Hidde spotted soft thumbnails three times on 2026-08-21 (the country
+    mosaic, the species shelf, the map sidebar) and asked for a fix he would
+    not have to spot again. The cause is never the markup: a source file can
+    simply be smaller than the card. So scripts/photo_res.py measures every
+    photograph once and stores width/height beside the url, the homepage
+    pickers refuse anything under MIN_CARD for a card, and this check is the
+    ratchet that keeps both true.
+
+    It fails on the MISTAKE, never on the gap: a city whose hero is soft while
+    a bigger photograph sits in the same city file is a choice we got wrong and
+    can fix in one edit. A city whose only photograph is small is an honest gap,
+    and blocking a deploy over it would be exactly the kind of gate the mandate
+    warns about. The second failure is the data going stale (run photo_res.py;
+    the digest runs it daily).
+    """
+    MIN_CARD, MIN_HERO = 540, 960
+    out = []
+    root = Path(__file__).resolve().parent.parent
+    total = unmeasured = 0
+    small_heroes = []
+    soft = 0
+    for path in sorted((root / "data" / "cities").glob("*.json")):
+        doc = json.loads(path.read_text(encoding="utf-8"))
+        hero_id = doc.get("hero_tree_id")
+        for t in doc.get("trees", []):
+            p = t.get("photo") or {}
+            if not p.get("url"):
+                continue
+            total += 1
+            w = p.get("width") or 0
+            if not w:
+                unmeasured += 1
+            elif w < MIN_CARD:
+                soft += 1
+        hero = next((t for t in doc.get("trees", [])
+                     if hero_id and t.get("id") == hero_id), None)
+        hero_w = ((hero or {}).get("photo") or {}).get("width") or 0
+        if hero and hero_w and hero_w < MIN_CARD:
+            better = max((((t.get("photo") or {}).get("width") or 0)
+                          for t in doc.get("trees", [])), default=0)
+            if better >= MIN_CARD:
+                small_heroes.append("%s: hero %s is %dpx while a %dpx photo sits "
+                                    "in the same city" % (doc["city"], hero["name"],
+                                                          hero_w, better))
+    if small_heroes:
+        out.append("%d city hero photo(s) soft while a bigger one is available: %s"
+                   % (len(small_heroes), "; ".join(small_heroes[:4])))
+    if total and unmeasured > max(10, total // 20):
+        out.append("%d of %d photographs have no measured width; run "
+                   "`python3 scripts/photo_res.py` (the digest runs it daily)"
+                   % (unmeasured, total))
+    return out
+
+
 def check_save_flow_integrity():
     """Two checks born of 2026-08-14's bugs, per the ratchet.
 
@@ -444,6 +502,7 @@ def main():
 
     failures = []
     failures += check_auth_corpus_agreement()
+    failures += check_photo_resolution()
     failures += check_save_flow_integrity()
     failures += check_sheet_integrity()
     failures += check_one_tree_card()

@@ -102,11 +102,31 @@ function splitOnce(s: string, sep: string): [string, string] {
   return [s.slice(0, i), s.slice(i + sep.length)];
 }
 
-/** src/srcset/sizes attribute string for a photo url, ready to spread into an <img>. */
-export function imgSrcset(url: string, widths: number[], sizes: string) {
+/** The intrinsic pixel width a photo block records, or 0 when unmeasured.
+ * scripts/photo_res.py fills it for every photo and CI keeps it filled. */
+export function photoWidth(p: unknown): number {
+  const w = (p as { width?: number } | null)?.width;
+  return typeof w === "number" && w > 0 ? w : 0;
+}
+
+/** The pixels a card and a hero need on a 2x screen. Mirrors MIN_CARD/MIN_HERO
+ * in scripts/photo_res.py; scripts/qa.py fails a build that breaks the card
+ * one, so a soft thumbnail cannot ship unnoticed again (Hidde, 2026-08-21:
+ * "i want a sustainable solution ... that i dont have to spot it every time"). */
+export const MIN_CARD_PX = 540;
+export const MIN_HERO_PX = 960;
+
+/** src/srcset/sizes attribute string for a photo url, ready to spread into an <img>.
+ *
+ * `intrinsic` is the file's real width. Offering a 960w candidate for a 375px
+ * file is not harmless: the browser picks it, gets 375 pixels back, and paints
+ * them upscaled. Capping the candidates at what exists keeps the markup honest
+ * about the file, which is also what makes the qa check meaningful. */
+export function imgSrcset(url: string, widths: number[], sizes: string, intrinsic = 0) {
   const seen = new Set<string>();
   const pairs: [string, number][] = [];
-  for (const w of widths) {
+  const capped = intrinsic > 0 ? widths.filter((w) => w <= intrinsic) : widths;
+  for (const w of (capped.length ? capped : [Math.min(...widths)])) {
     const u = thumbUrl(url, w);
     if (!seen.has(u)) {
       seen.add(u);
@@ -122,8 +142,8 @@ export function imgSrcset(url: string, widths: number[], sizes: string) {
 }
 
 /** HTML attribute string form, for contexts building raw markup rather than JSX-like props. */
-export function imgSrcsetAttrs(url: string, widths: number[], sizes: string): string {
-  const { src, srcset, sizes: s } = imgSrcset(url, widths, sizes);
+export function imgSrcsetAttrs(url: string, widths: number[], sizes: string, intrinsic = 0): string {
+  const { src, srcset, sizes: s } = imgSrcset(url, widths, sizes, intrinsic);
   return `src="${esc(src)}" srcset="${esc(srcset)}" sizes="${esc(s)}"`;
 }
 

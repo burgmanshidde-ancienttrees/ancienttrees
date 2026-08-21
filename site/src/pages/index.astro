@@ -9,7 +9,7 @@
 import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
 import { cityIsRenderable, renderableTrees, slugify, type CityEntry } from "../lib/trees";
-import { usablePhoto, imgSrcset, imgSrcsetAttrs } from "../lib/images";
+import { usablePhoto, imgSrcset, imgSrcsetAttrs, photoWidth, MIN_CARD_PX } from "../lib/images";
 import { speciesCommon, COUNTRY_MIN_CITIES } from "../lib/species";
 import { groupTreesByPark, PARK_MIN_TREES } from "../lib/parks";
 import { ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
@@ -106,6 +106,68 @@ const directoryHtml =
 // ginkgo standing in for a country, a species and a park (2026-08-21).
 const usedPhotos = new Set<string>();
 
+type AnyTree = CityEntry["data"]["trees"][number];
+/** The best photograph in a set for a CARD, not the first one found.
+ *
+ * Two rules, both from what Hidde saw on 2026-08-21. Big enough first: a file
+ * narrower than MIN_CARD_PX is painted upscaled and looks soft, so it never
+ * fronts a shelf however good the picture is. Then landscape: a card is a 4:3
+ * letterbox, and a portrait shot of a stairway crops to a stairway, which is
+ * how the Oriental Plane came to be represented by steps. Widest wins the
+ * tie, because it survives the biggest box we have.
+ */
+function firstPhoto(trees: AnyTree[]): string | null {
+  const ranked = trees
+    .map((t) => usablePhoto(t))
+    .filter((p): p is NonNullable<typeof p> => Boolean(p?.url) && !usedPhotos.has(p!.url))
+    .map((p) => {
+      const w = photoWidth(p);
+      const h = (p as { height?: number }).height ?? 0;
+      return { url: p.url, w, landscape: w > 0 && h > 0 && w >= h };
+    })
+    .sort((a, b) => {
+      // Big enough is the first sort key, not a filter: a set whose only
+      // photographs are small still shows one, because a real picture of the
+      // tree beats an empty card. It just never wins over a big one.
+      const abig = a.w === 0 || a.w >= MIN_CARD_PX;
+      const bbig = b.w === 0 || b.w >= MIN_CARD_PX;
+      return Number(bbig) - Number(abig)
+        || Number(b.landscape) - Number(a.landscape)
+        || b.w - a.w;
+    });
+  const pick = ranked[0];
+  if (!pick) return null;
+  usedPhotos.add(pick.url);
+  return pick.url;
+}
+/** The intrinsic width of a url we already picked, for the srcset cap. */
+const widthByUrl = new Map<string, number>();
+for (const c of renderable) {
+  for (const t of c.data.trees) {
+    const p = usablePhoto(t);
+    if (p?.url) widthByUrl.set(p.url, photoWidth(p));
+  }
+}
+function cardImg(url: string, sizes: string, widths = [400, 800]): string {
+  return imgSrcsetAttrs(url, widths, sizes, widthByUrl.get(url) ?? 0);
+}
+// A country is a set, and sets get the Spotify/Pinterest treatment: a 2x2
+// mosaic of four trees from four different cities, which reads as breadth
+// where one photo read as one tree.
+function mosaic(urls: string[]): string {
+  return `<span class="shelf-ph shelf-mosaic">` +
+    urls.map((u) => `<img ${cardImg(u, "(max-width: 800px) 36vw, 10vw", [400])} alt="" loading="lazy">`).join("") +
+    `</span>`;
+}
+function shelfCard(href: string, photoUrl: string, title: string, meta: string): string {
+  return (
+    `<a class="shelf-card" href="${href}">` +
+    `<span class="shelf-ph"><img ${cardImg(photoUrl, "(max-width: 800px) 72vw, 20vw")} alt="" loading="lazy"></span>` +
+    `<b>${esc(title)}</b>` +
+    `<span class="shelf-meta">${meta}</span></a>`
+  );
+}
+
 // --- Our favourite tree cities shelf ---
 const FAVOURITE_CITIES = ["barcelona", "rome", "paris", "berlin", "amsterdam", "london", "new-york", "lisbon", "vienna", "edinburgh"];
 const bySlug = new Map(renderable.map((e) => [e.id, e]));
@@ -135,7 +197,7 @@ for (const cs of FAVOURITE_CITIES) {
   usedPhotos.add(photo.url);
   favCards.push(
     `<a class="shelf-card" href="/${cs}">` +
-      `<span class="shelf-ph"><img ${imgSrcsetAttrs(photo.url, [400, 800], "(max-width: 800px) 72vw, 20vw")} alt="" loading="lazy"></span>` +
+      `<span class="shelf-ph"><img ${cardImg(photo.url, "(max-width: 800px) 72vw, 20vw")} alt="" loading="lazy"></span>` +
       `<b>${esc(e.data.city)}</b>` +
       `<span class="shelf-meta">${e.data.trees.length} trees &middot; ${esc(e.data.country)}</span></a>`,
   );
@@ -155,33 +217,6 @@ const favShelf =
 // species, parks. Season keeps its own act block and /in-season; collections
 // keep their directory column. One builder, so the shelves cannot drift
 // apart again.
-type AnyTree = CityEntry["data"]["trees"][number];
-function firstPhoto(trees: AnyTree[]): string | null {
-  for (const t of trees) {
-    const p = usablePhoto(t);
-    if (p?.url && !usedPhotos.has(p.url)) {
-      usedPhotos.add(p.url);
-      return p.url;
-    }
-  }
-  return null;
-}
-// A country is a set, and sets get the Spotify/Pinterest treatment: a 2x2
-// mosaic of four trees from four different cities, which reads as breadth
-// where one photo read as one tree.
-function mosaic(urls: string[]): string {
-  return `<span class="shelf-ph shelf-mosaic">` +
-    urls.map((u) => `<img ${imgSrcsetAttrs(u, [400], "(max-width: 800px) 36vw, 10vw")} alt="" loading="lazy">`).join("") +
-    `</span>`;
-}
-function shelfCard(href: string, photoUrl: string, title: string, meta: string): string {
-  return (
-    `<a class="shelf-card" href="${href}">` +
-    `<span class="shelf-ph"><img ${imgSrcsetAttrs(photoUrl, [400, 800], "(max-width: 800px) 72vw, 20vw")} alt="" loading="lazy"></span>` +
-    `<b>${esc(title)}</b>` +
-    `<span class="shelf-meta">${meta}</span></a>`
-  );
-}
 function wideShelf(heading: string, allHref: string, allLabel: string, cards: string[]): string {
   return cards.length >= 4
     ? `<section class="shelf"><div class="shelf-head"><h2>${heading}</h2>` +
@@ -301,7 +336,7 @@ const scripts = SEARCH_WIDGET_JS;
   </div>
 </div>
 <section class="hero-sub">
-  <p>For people who love being outside. See the remarkable old trees near you, walk a few of them in an afternoon with the story of why each is worth it, and tick off the ones you have stood in front of. Every tree free to explore.</p>
+  <p>Made for people who love being outside. Find remarkable old trees nearby, explore a few of them in an afternoon, read the story behind each one, and tick off the trees you visit.</p>
 </section>
 <Fragment set:html={favShelf} />
 <section class="home-acts">

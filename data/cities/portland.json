@@ -1,662 +1,664 @@
 {
- "city": "Portland",
- "country": "United States",
- "status": "needs_curation",
- "intro": "Portland protects its best trees by city ordinance and has done since 1993, which is why this page can name the tallest tree in town to the metre. Twenty now, in two walks and a scatter. Seven stand within 1.8 kilometres downtown, including two elms facing each other across NW Flanders Street. Seven more make a second walk through Irvington, ending at a line of nine Caucasian wingnuts no planting manual would recommend. The rest are worth the trip alone: a 74 metre Douglas fir, a sequoia beside a reservoir on a volcano, and the city's thickest poplar.",
- "meta_description": "Twenty heritage trees in Portland: a 74-metre Douglas fir, nine Caucasian wingnuts on one street, and the sequoia beside the Mount Tabor reservoir.",
- "question_meta": "Portland's tallest tree is the Balch Creek Douglas fir at 74 metres, in Forest Park. Where it stands, plus nineteen more heritage trees.",
- "question_answer": "Portland's tallest tree is the Douglas fir above Balch Creek in Macleay Park, part of Forest Park, measured at 243 feet or 74.1 metres, which makes it the tallest tree on this whole site by a wide margin. It is free to visit on Portland Parks land. The city's Heritage Tree ordinance has protected individual trees by council vote since 1993, and this page draws on that register and on the city's own field guide to it, From Stumptown to Treetown.",
- "question_context": "Portland's Heritage Tree register is unusually good and unusually blunt: it gives girth, height, species and a per-tree coordinate, and it records ownership, which turns out to matter more than anything else here. Roughly two fifths of the trees on it stand in private front, side or rear yards, and a tree in a rear yard cannot be visited or even seen, so none of those can appear on this page whatever their size. Everything here stands on right-of-way, park or public campus ground where a visitor may simply turn up. The register also lags reality: a delisting ordinance in 2026 confirmed trees dead that its own rows still listed, so each entry here was checked separately for whether the tree is standing. Two figures on this page are disputed between sources and both disputes are stated in the tree's own story rather than resolved silently, because a register and a field guide disagreeing is worth knowing about.",
- "faq": [
-  {
-   "q": "What is the tallest tree in Portland?",
-   "a": "The Douglas fir above Balch Creek in Macleay Park, at 74.1 metres. It is free to visit and stands in Forest Park on city parks land."
-  },
-  {
-   "q": "Are Portland's heritage trees free to visit?",
-   "a": "The ones on this page are, because they were chosen that way. Portland's register also protects trees in private yards, and those are deliberately absent here: a heritage tree in someone's back garden cannot be visited."
-  },
-  {
-   "q": "Can I see them in one walk?",
-   "a": "Seven of the ten, in about 1.8 kilometres through downtown and the near west side. The sequoia, the Douglas fir and the dawn redwood each need their own trip into the hills."
-  },
-  {
-   "q": "Where is the second walk?",
-   "a": "Irvington, about three kilometres northeast of downtown. Seven of these trees sit within six hundred metres of each other there: a line of nine Caucasian wingnuts along NE Knott Street, a pair of London planes and a 35 metre elm on NE 18th, a horse chestnut on NE Thompson, a pair of catalpas on NE 24th and a sycamore on NE 25th. Bus 8 to NE 15th and Knott puts you at the wingnuts, and the whole loop is about a kilometre and a half."
-  },
-  {
-   "q": "Why do so many of these have no age?",
-   "a": "Because Portland's Heritage Tree register does not have an age field. It records girth, height, spread, species, ownership and the year the city designated the tree, and that last number is when somebody noticed rather than when the tree started. The three planes on Overlook Boulevard were designated in 2018 and the largest is 5.4 metres round, which no tree manages in seven years. Where this page gives an age it comes from a separate source, and where it gives none, nobody has published one."
-  }
- ],
- "hero_tree_id": "ptl_009",
- "oldest_tree_id": "ptl_009",
- "trees": [
-  {
-   "id": "ptl_001",
-   "name": "The Watson Beech",
-   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
-   "age_estimate": "roughly 135 years",
-   "age_min": 125,
-   "age_max": 145,
-   "location": {
-    "address": "1875 SW Park Ave (PSU Millar Library entrance)",
-    "latitude": 45.51144544,
-    "longitude": -122.68579051,
-    "neighbourhood": "Downtown / Portland State University campus"
-   },
-   "story": "Portland State University knocked down a Victorian mansion to build its library, then laid out the front lawn around the tree that had stood beside it. The beech is still there. The house is not.\n\nFrank Watson made his money in ironworks and shipbuilding, and around 1890 he and his wife Mary Whalley Watson planted this copper beech beside their new home on the corner of Hall and Park. Sources credit the planting to one or the other of them and do not agree on which. The house came down between 1965 and 1968 to make room for the Millar Library, designed by Skidmore, Owings & Merrill. No record explains why the beech was spared when everything around it was cleared. It simply was, and it ended up the centrepiece of the lawn rather than a casualty of it.\n\nIt now stands about 25.6 metres tall with a trunk 5.71 metres around, and went onto Portland's register as Heritage Tree #54 in 1995. A photograph from 1975 shows students packed shoulder to shoulder on the grass underneath it, which is more or less what the lawn is still for on a warm day.\n\nWhat it has watched is a residential corner turning into a university: Victorian houses giving way to concrete, and then fifty years of students using its shade as somewhere to meet.",
-   "best_time": {
-    "months": [
-     4,
-     5
-    ],
-    "kind": "fresh leaves",
-    "label": "April and May, before the new leaves darken, when the whole crown is closer to red than purple"
-   },
-   "verified_sources": [
-    "data/registers/portland-heritage-trees.json (City of Portland Heritage Tree register, CC BY-SA, objectid 238, Heritage Tree #54)",
-    "Portland Parks & Recreation Urban Forestry, 'From Stumptown to Treetown: A Field Guide for Interpreting Portland's History through its Heritage Trees' by David-Paul B. Hedberg, https://www.portland.gov/trees/documents/stumptown-treetown/download, Stop 1"
-   ],
-   "access": "Free, always open. Stands on the open lawn at the main entrance to PSU's Millar Library, a public university campus walkway.",
-   "transport": "Downtown Portland, on the PSU campus; MAX Blue/Red/Green Line and Portland Streetcar both stop within a couple of minutes' walk (Transit Mall / Kings Hill-SW Salmon station area).",
-   "location_precision": "confirmed",
-   "curation_status": "ai_generated",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  },
-  {
-   "id": "ptl_002",
-   "name": "The Farrell Planetree",
-   "species": "London Plane (Platanus x acerifolia)",
-   "age_estimate": "roughly 145 years",
-   "age_min": 140,
-   "age_max": 150,
-   "location": {
-    "address": "NW corner of SW Park Ave & SW Main St",
-    "latitude": 45.51716693,
-    "longitude": -122.68257458,
-    "neighbourhood": "Downtown"
-   },
-   "story": "The house this tree was planted to shade is now a parking lot. The plane tree has outlived it by more than a century.\n\nAn 1880 photograph shows it as a thin sapling beside the home of Sylvester Farrell, a feed-and-grocery merchant who moved into salmon canning and later sat on Portland's City Council. The tree was reportedly a gift from US Senator J.N. Dolph. Farrell's house is long gone, the corner it stood on has been given over to parked cars, and the plane tree carries on in the planting strip beside them.\n\nPortland made it a Historic Landmark in 1973 and entered it on the new Heritage Tree register the same year as number 2, which makes it one of the first trees the city ever formally protected. It is about 19.2 metres tall with a trunk 4.36 metres around. Locally it gets called a sycamore, which it is not.\n\nPortland's old nickname was Stumptown, earned honestly: the city cleared its native forest fast and left the stumps standing in the streets. This tree belongs to the second chapter, planted on purpose by people who had watched the first forest go. It has now outlasted the man who planted it, the house he planted it for, and the neighbourhood they were both part of.",
-   "verified_sources": [
-    "data/registers/portland-heritage-trees.json (City of Portland Heritage Tree register, CC BY-SA, objectid 441, Heritage Tree #2)",
-    "Portland Parks & Recreation Urban Forestry, 'From Stumptown to Treetown' field guide, https://www.portland.gov/trees/documents/stumptown-treetown/download, Stop 3"
-   ],
-   "access": "Free, always open. Standing in the street planting strip at a downtown corner, fully public.",
-   "transport": "Downtown Portland; MAX Blue/Red/Green Line and Portland Streetcar both stop within a few minutes' walk of the Park Blocks.",
-   "location_precision": "confirmed",
-   "curation_status": "ai_generated",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  },
-  {
-   "id": "ptl_003",
-   "name": "The Eliot Hawthorns",
-   "species": "Lavalle Hawthorn (Crataegus x lavallei)",
-   "age_estimate": "about 60 years",
-   "age_min": 55,
-   "age_max": 62,
-   "location": {
-    "address": "1011 SW 12th Ave (in front of the First Unitarian Church)",
-    "latitude": 45.51842316,
-    "longitude": -122.68542115,
-    "neighbourhood": "Downtown"
-   },
-   "story": "Four trees, four separate heritage numbers. Portland registered these hawthorns individually as Heritage Trees #109 through #112, which is a lot of paperwork for a row most people walk past as a single hedge.\n\nThey stand in the planting strip along SW 12th Ave in front of the First Unitarian Church, all four planted in 1966 and all four added to the register in 1996. Lavalle hawthorns are small trees and these are no exception: 11 to 13.4 metres tall, with trunks between 1.8 and 2.26 metres around. They are also, by a wide margin, the youngest entries in this city.\n\nThey earn their place through the congregation rather than through age. Rev. Thomas Lamb Eliot led this church from 1867 to 1893 and became one of Portland's more consequential citizens, founding social and library associations and lending his name to the Eliot Glacier on Mount Hood. The members he drew in did a good deal of the civic building of early Portland, and the row went in as a tribute to that.\n\nCome in autumn and all four hang with dense clusters of dark red haws while the leaves go bronze. That is the point in the year when the row stops reading as a hedge and starts reading as four trees.",
-   "best_time": {
-    "months": [
-     10,
-     11
-    ],
-    "kind": "fruit",
-    "label": "October and November, when all four trees hang with dark red haws"
-   },
-   "verified_sources": [
-    "data/registers/portland-heritage-trees.json (City of Portland Heritage Tree register, CC BY-SA, objectids 268, 450, 259, 431, Heritage Trees #109-#112)",
-    "Portland Parks & Recreation Urban Forestry, 'From Stumptown to Treetown' field guide, https://www.portland.gov/trees/documents/stumptown-treetown/download, Stop 4"
-   ],
-   "access": "Free, always open. Standing in the sidewalk planting strip in front of the church, fully public.",
-   "transport": "Downtown Portland; MAX Blue/Red/Green Line and Portland Streetcar both stop within a few minutes' walk.",
-   "location_precision": "confirmed",
-   "curation_status": "ai_generated",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  },
-  {
-   "id": "ptl_004",
-   "name": "The Kamm Walnut",
-   "species": "Black Walnut (Juglans nigra)",
-   "age_estimate": "roughly 145 years",
-   "age_min": 140,
-   "age_max": 155,
-   "location": {
-    "address": "1600 SW Salmon St (Lincoln High School, corner of SW Salmon & SW 14th Ave)",
-    "latitude": 45.51902348,
-    "longitude": -122.68757836,
-    "neighbourhood": "Goose Hollow"
-   },
-   "story": "A fourteen-acre estate has been reduced to a single walnut on a school lawn. This is it.\n\nJacob Kamm was a Swiss immigrant who engineered steamships and made a fortune moving freight on the Columbia River with the Oregon Steam and Navigation Company. He built a French Second Empire mansion out here when this was the edge of Portland. His wife Caroline Agusta Gray had grown up among the first missionary families living with the Nez Perce in Idaho.\n\nThe planting date is genuinely unsettled. The tree's own plaque says the 1880s. The city's field guide, in its narrative, dates it to around 1871 and the building of the Kamm house. Nobody has reconciled the two, so the honest answer is somewhere inside that fifteen-year window.\n\nThe Kamms sold up in 1910 and Lincoln High School took the site. When the current school building went up in 1952, architect Hollis Johnston drew his plan around the walnut rather than through it. It stands about 29 metres tall with a trunk 4.24 metres around, close enough to Interstate 405 to hear it. Ask anyone who went to Lincoln and you will usually get a story.\n\nThe tree sits at the edge of school grounds. Look at it from the corner of SW Salmon and SW 14th rather than walking onto the property, particularly on a school day.",
-   "verified_sources": [
-    "data/registers/portland-heritage-trees.json (City of Portland Heritage Tree register, CC BY-SA, objectid 353, Heritage Tree #35)",
-    "Portland Parks & Recreation Urban Forestry, 'From Stumptown to Treetown' field guide, https://www.portland.gov/trees/documents/stumptown-treetown/download, Stop 5"
-   ],
-   "access": "Visible and reachable from the public sidewalk at the SW Salmon/SW 14th corner (register ownership: Portland Public Schools, standing at the edge of the Lincoln High School grounds). Stand at the street corner rather than crossing onto school property, especially during school hours.",
-   "transport": "Goose Hollow, a short walk west of downtown; Portland Streetcar and MAX both have stops within about 10 minutes' walk (Goose Hollow/SW Jefferson MAX station is closest).",
-   "location_precision": "confirmed",
-   "curation_status": "flagged",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  },
-  {
-   "id": "ptl_005",
-   "name": "The Miller Pine",
-   "species": "Austrian Pine (Pinus nigra)",
-   "age_estimate": "roughly 150 years",
-   "age_min": 145,
-   "age_max": 155,
-   "location": {
-    "address": "2028 SW Howards Way",
-    "latitude": 45.51798031,
-    "longitude": -122.69459534,
-    "neighbourhood": "Goose Hollow"
-   },
-   "story": "This 31-metre pine is growing out of a street planter because a florist put it in the ground before there was a street.\n\nThrough the 1870s and 1880s this stretch of Goose Hollow lay outside the city limits and belonged to Henry Miller, one of Portland's first florists, who ran a plant nursery, a seed farm and a floral supply business on the slope. The Austrian pine and a large Cedar of Lebanon a short way off both appear to be imports he planted on his own nursery ground. They were stock and demonstration rather than landscaping, which is why they sit where no landscape architect would have put them.\n\nThe register dates the planting to the late 19th century and added the tree to the Heritage list in 1993. It is roughly 31.1 metres tall with a trunk 3.23 metres around, rising out of a built-out planter at an intersection that did not exist when it was young.\n\nThere is photographic proof of its head start. A 1959 photograph of the Jacob Kamm House, a few blocks east, catches this pine and its cedar neighbour already full grown in the background.\n\nWhat it has watched is a semi-rural nursery district becoming one of the densest neighbourhoods in Portland, with an interstate cut through beside it.",
-   "verified_sources": [
-    "data/registers/portland-heritage-trees.json (City of Portland Heritage Tree register, CC BY-SA, objectid 101, Heritage Tree listed 1993)",
-    "Portland Parks & Recreation Urban Forestry, 'From Stumptown to Treetown' field guide, https://www.portland.gov/trees/documents/stumptown-treetown/download, Stop 6"
-   ],
-   "access": "Free, always open. Standing in a built-out street planter at a Goose Hollow intersection (register ownership: Right Of Way / TriMet), fully public.",
-   "transport": "Goose Hollow; the MAX Blue/Red Line Goose Hollow/SW Jefferson St station is a short walk away.",
-   "location_precision": "confirmed",
-   "curation_status": "ai_generated",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  },
-  {
-   "id": "ptl_006",
-   "name": "The Rockey Elm",
-   "species": "Dutch Elm (Ulmus x hollandica)",
-   "age_estimate": "about 125 years",
-   "age_min": 120,
-   "age_max": 130,
-   "location": {
-    "address": "2330 NW Flanders St",
-    "latitude": 45.52544495,
-    "longitude": -122.69946452,
-    "neighbourhood": "Northwest District"
-   },
-   "story": "A Portland architect once parked his car against this elm so the removal crew could not reach it. It worked.\n\nThe city council had condemned the tree in 1963. The owner of the building in front of it wanted it gone, worried that its roots were working into his foundations, and applied for a removal permit. Lewis Crucher's car bought enough time for Mayor Terry Schrunk to place a moratorium on that permit while the city forester and the city engineer went and looked at the tree themselves.\n\nWhat followed ran in the Oregonian for months: a vigil at the trunk, a poem printed in the paper, and a letter from Dr Eugene W. Rockey recalling that his father had planted the elm in 1900 in front of their newly built house, and had fitted it with a wooden slat guard to stop the family's buggy horse nipping the top off the sapling. The foresters found the tree healthy and safe. The permit was refused.\n\nIt is about 24.4 metres tall with a trunk 4.60 metres around, Heritage Tree #46 since 1995. It had already come through the Columbus Day Storm the year before the council came for it, which means it survived the worst windstorm in the region's recorded history and then very nearly lost to a building permit.\n\nIts opposite number, the Storm Elm, stands directly across Flanders Street.",
-   "verified_sources": [
-    "data/registers/portland-heritage-trees.json (City of Portland Heritage Tree register, CC BY-SA, objectid 349, Heritage Tree #46)",
-    "Portland Parks & Recreation Urban Forestry, 'From Stumptown to Treetown' field guide, https://www.portland.gov/trees/documents/stumptown-treetown/download, Stop 8"
-   ],
-   "access": "Free, always open. Standing in the sidewalk planting strip on NW Flanders St, fully public.",
-   "transport": "Northwest District (Nob Hill area); Portland Streetcar NS Line stops a few blocks south on NW Northrup/Lovejoy; roughly a 10-15 minute walk from the NW 21st/23rd Ave shopping streets.",
-   "location_precision": "confirmed",
-   "curation_status": "ai_generated",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  },
-  {
-   "id": "ptl_007",
-   "name": "The Storm Elm",
-   "species": "English Elm (Ulmus procera)",
-   "age_estimate": "about 125 years",
-   "age_min": 120,
-   "age_max": 125,
-   "location": {
-    "address": "2363 NW Flanders St",
-    "latitude": 45.52554894,
-    "longitude": -122.69974839,
-    "neighbourhood": "Northwest District"
-   },
-   "story": "The Columbus Day Storm of 1962 flattened roughly 15 billion board feet of Pacific Northwest timber and gusted to 116mph over Portland. On the north side of this block, one elm was left standing.\n\nThat is this tree, planted in 1902 or 1903 in the planting strip on NW Flanders St. It is around 24.4 metres tall with a trunk 4.30 metres around, and it went onto the Heritage Tree register as number 36 in 1994. The city's own field guide is blunt about the odds: getting through that night at all was no small thing for a mature elm on an exposed street.\n\nThe storm was not the end of the threat. Dutch elm disease arrived later, carried by a bark beetle that reached North America from Asia by way of Europe, and a smaller elm on the same block was lost to it. The elms still standing here, this one included, are now inoculated against the fungus by the city and by volunteers.\n\nLook across the street while you are here. The Rockey Elm came through the same night and then had to be defended from a removal permit the following year. Two trees, one block, and one decade that tried twice to take them.",
-   "verified_sources": [
-    "data/registers/portland-heritage-trees.json (City of Portland Heritage Tree register, CC BY-SA, objectid 336, Heritage Tree #36)",
-    "Portland Parks & Recreation Urban Forestry, 'From Stumptown to Treetown' field guide, https://www.portland.gov/trees/documents/stumptown-treetown/download, Stop 8"
-   ],
-   "access": "Free, always open. Standing in the sidewalk planting strip on NW Flanders St, fully public.",
-   "transport": "Northwest District (Nob Hill area); Portland Streetcar NS Line stops a few blocks south on NW Northrup/Lovejoy; roughly a 10-15 minute walk from the NW 21st/23rd Ave shopping streets.",
-   "location_precision": "confirmed",
-   "curation_status": "ai_generated",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  },
-  {
-   "id": "ptl_008",
-   "name": "The Patton Road Sequoia",
-   "species": "Giant Sequoia (Sequoiadendron giganteum)",
-   "age_estimate": "",
-   "age_min": 0,
-   "age_max": 0,
-   "location": {
-    "address": "2896 SW Patton Rd",
-    "latitude": 45.50358531,
-    "longitude": -122.70763077,
-    "neighbourhood": "Southwest Hills"
-   },
-   "story": "Forty-five metres of Californian giant sequoia is growing out of a street verge in the Southwest Hills, and nobody has written down when it was planted.\n\nSequoiadendron giganteum belongs in the western Sierra Nevada, several hundred miles south of here, where it grows in scattered groves at altitude. Victorian and Edwardian planters shipped it all over the world, and this one took to Portland's rain well enough to reach 45.1 metres on a residential road. The register carries no planting date and none has surfaced anywhere else, so the age is simply unknown. The trunk says a great many decades. No source says more than that.\n\nThe girth is unsettled too. The city register puts the circumference at 7.07 metres. An independent measurement, taken at a different height on the trunk, gives 6.74 metres. Some of that gap is probably just where the tape went round, but the two figures have never been reconciled, so treat it as somewhere close to seven metres and leave it there.\n\nThe tree stands in the public verge at the entrance to a residence driveway. There is room to stand and look from the road, and that is where to do it: the verge is public, the driveway is not.",
-   "verified_sources": [
-    "data/registers/portland-heritage-trees.json (City of Portland Heritage Tree register, CC BY-SA, objectid 148, Heritage Tree #127 or #158, listed year not specified in this record)",
-    "monumentaltrees.com listing for this Giant Sequoia on SW Patton Rd/SW Park Pl, Portland (viewed for verification only, per hard rule 1: girth 6.74m at 1.40m height, height approx 29m)"
-   ],
-   "access": "Free, always open. Register ownership is Right Of Way, meaning the tree stands in the public street verge; the register's own note ('at the entrance to the residence driveway') describes its position next to a private driveway, not that it is on private land. Stand on the street verge/sidewalk rather than the driveway apron itself.",
-   "transport": "Southwest Hills; no MAX or streetcar nearby, TriMet bus line 51 (Vista) serves the general neighbourhood. Best reached by car or a considerable uphill walk from downtown (roughly 3km, mostly climbing).",
-   "location_precision": "confirmed",
-   "curation_status": "flagged",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  },
-  {
-   "id": "ptl_009",
-   "name": "The Balch Creek Fir",
-   "species": "Douglas Fir (Pseudotsuga menziesii)",
-   "age_estimate": "",
-   "age_min": 0,
-   "age_max": 0,
-   "location": {
-    "address": "Lower Macleay Park / Balch Creek spur trail, near NW Cornell Rd, Forest Park",
-    "latitude": 45.52908333,
-    "longitude": -122.72335,
-    "neighbourhood": "Forest Park"
-   },
-   "story": "This Douglas fir is 74 metres tall. Nothing else in Portland comes close.\n\nThe city register measures it at 243 feet, or 74.1 metres, with a trunk 5.58 metres around and 1.78 metres through. A student piece in the PSU Vanguard, working independently, arrived at exactly the same height and girth, which is reassuring for a measurement that is genuinely hard to take on a tree this size standing in a steep ravine.\n\nIt grows at the bottom of the Balch Creek canyon in Forest Park, one of the largest urban forest reserves in the United States, on the Lower Macleay spur trail about a hundred yards past the stone house ruin that everyone here calls the Witch's Castle. A large stone beside the path marks it. Look up rather than around: at this height the top of the tree is well outside anything you can take in from the trail.\n\nNo age is recorded anywhere, and that is not an oversight. This is not a planted landscape tree with a date attached to it but a survivor in a patch of regrown native forest, and nobody has cored it. The ravine explains the height. Steep, shaded, wet, sheltered from the wind, and never quite worth the trouble of logging.",
-   "verified_sources": [
-    "data/registers/portland-heritage-trees.json (City of Portland Heritage Tree register, CC BY-SA, objectid 211)",
-    "PSU Vanguard, 'Experience Portland's most historic trees', https://psuvanguard.com/experience-portlands-most-historic-trees/"
-   ],
-   "access": "Free, always open. Standing on Portland Parks & Recreation land inside Forest Park/Macleay Park, on the Lower Macleay spur trail about 100 yards from the stone house ('Witch's Castle') ruin along Balch Creek. Reached on foot via a public park trail, not roadside.",
-   "transport": "Access via the Lower Macleay trailhead, 2960 NW Upshur St; TriMet bus lines 15, 26 and 77 stop within a few blocks (NW Thurman/27th-29th or NW Vaughn/27th), then it is roughly a 15-20 minute walk up the Lower Macleay/Wildwood Trail along Balch Creek to reach the tree.",
-   "location_precision": "confirmed",
-   "curation_status": "ai_generated",
-   "photo": {
-    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/230591035/medium.jpeg",
-    "license": "CC BY",
-    "attribution": "Jerry Kensler, via iNaturalist",
-    "status": "approved"
-   }
-  },
-  {
-   "id": "ptl_010",
-   "name": "The Hoyt Dawn Redwood",
-   "species": "Dawn Redwood (Metasequoia glyptostroboides)",
-   "age_estimate": "about 78 years",
-   "age_min": 75,
-   "age_max": 80,
-   "location": {
-    "address": "Hoyt Arboretum, near SW Bray Ln, 4000 SW Fairview Blvd",
-    "latitude": 45.51920938,
-    "longitude": -122.71675588,
-    "neighbourhood": "Arlington Heights / Washington Park"
-   },
-   "story": "Until 1944 the dawn redwood was a fossil. Botanists knew Metasequoia only from imprints in stone and assumed it had been extinct for millions of years, until a living stand turned up in a remote Chinese valley. In 1952 this tree, grown from that discovery, produced cones: the first any dawn redwood had produced in the Western Hemisphere since the species vanished from it.\n\nHow long an absence that was depends who you ask. Portland's register says 8 million years. Travel Oregon and Hoyt Arboretum itself both say about 6 million. Neither number is the tree's age. They describe the gap in the fossil record, not the thing in front of you, which went into the ground in 1948 and is about 78 years old.\n\nThe route here was fast by the standards of botany. Harvard's Arnold Arboretum organised an international seed-collecting expedition to the Chinese stand in 1947, Hoyt Arboretum was among the institutions sent seed, and the seedlings were planted the following year. Four years after that, cones.\n\nIt is now 31.4 metres tall with a trunk 3.29 metres around, and it is an Oregon Heritage Tree. Late in the year it does the thing that makes dawn redwoods worth the walk up: a conifer that turns copper and then goes completely bare.",
-   "best_time": {
-    "months": [
-     10,
-     11
-    ],
-    "kind": "autumn colour",
-    "label": "late October into November, when it turns copper and then bare, which is not what a conifer is supposed to do"
-   },
-   "verified_sources": [
-    "data/registers/portland-heritage-trees.json (City of Portland Heritage Tree register, CC BY-SA, objectid 163)",
-    "Travel Oregon (official state tourism site), 'Dawn Redwood - Heritage Tree', https://traveloregon.com/things-to-do/culture-history/historic-sites-oregon-trail/dawn-redwood-heritage-tree/",
-    "Hoyt Arboretum's own site, https://www.hoytarboretum.org/majestic-redwoods-at-hoyt-arboretum/ and https://www.portland.gov/trees/metasequoia-glyptostroboides"
-   ],
-   "access": "Free, always open, no admission charge. Hoyt Arboretum is a public Portland Parks & Recreation arboretum within Washington Park.",
-   "transport": "MAX Blue/Red Line Washington Park station (the deepest transit station in North America) is about a half-mile walk along the Overlook Trail to the Arboretum Visitor Center, or take the seasonal free Washington Park shuttle from the station to the Hoyt Arboretum stop.",
-   "location_precision": "confirmed",
-   "curation_status": "flagged",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  },
-  {
-   "id": "ptl_011",
-   "name": "The Mount Tabor Sequoia",
-   "species": "Giant Sequoia (Sequoiadendron giganteum)",
-   "age_estimate": "",
-   "age_min": null,
-   "age_max": null,
-   "location": {
-    "address": "Mount Tabor Park, east side of the rectangular reservoir",
-    "latitude": 45.51111,
-    "longitude": -122.59864,
-    "neighbourhood": "Mount Tabor"
-   },
-   "story": "Forty two metres, on a trunk 7.8 metres round, standing beside a reservoir on the side of an extinct volcano. Mount Tabor is one of the few cinder cones inside an American city, and the water bureau built open reservoirs into its slope in the 1890s with the kind of civic architecture usually reserved for banks: balustrades, gatehouses, iron railings.\n\nSomebody planted a giant sequoia next to one of them. It is a Sierra Nevada tree, six hundred kilometres south and two thousand metres up, and it has done better here than most things do at home, because Portland gives it what California increasingly cannot, which is water.\n\nThe city added it to the heritage register in 1997. What it does not record, because the register has no such field, is when it went in. The reservoir dates the site rather than the tree, and joining those two facts would be a guess dressed as a date.\n\nGo to the west side of the park and look for the rectangular reservoir. The tree is on its east bank and there is no mistaking which one it is.",
-   "verified_sources": [
-    "https://www.portland.gov/trees/heritage-trees (City of Portland Heritage Tree register, Portland City Code Title 11; CC BY-SA)"
-   ],
-   "access": "Free. Portland Parks and Recreation, open park.",
-   "transport": "Mount Tabor Park, about 6 km east of downtown. Bus 15 to SE Belmont and Tabor, then uphill.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "A single enormous conifer beside the rectangular reservoir, far taller than the deciduous trees around it, with the deeply furrowed red bark of a sequoia.",
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "ptl_012",
-   "name": "The Powell Butte Poplar",
-   "species": "Lombardy Poplar (Populus nigra 'Italica')",
-   "age_estimate": "",
-   "age_min": null,
-   "age_max": null,
-   "location": {
-    "address": "Mountain View Trail, Pleasant Valley, off SE Powell Boulevard",
-    "latitude": 45.48796,
-    "longitude": -122.4994,
-    "neighbourhood": "Pleasant Valley"
-   },
-   "story": "Lombardy poplars are the disposable tree of the temperate world. They are planted as fast screens, they grow like weeds, they are usually rotten by fifty and gone by seventy, and nobody protects one.\n\nPortland protects this one. The city measured the trunk at 122 inches across, which works out at 9.75 metres around, on a tree thirty five metres tall and only twelve across the crown, which is the columnar habit doing exactly what it is famous for. That girth would be remarkable on an oak. On a Lombardy poplar it is close to absurd, and it is the largest circumference on Portland's entire heritage register.\n\nThe city added it in 2019, one of the most recent designations on a list that started in 1993, which suggests somebody walked past it and thought the same thing you will.\n\nThe measurement comes from the register and we have not found a second one, so treat the number as the city's rather than as gospel. It is on the Mountain View Trail in Pleasant Valley, out on the eastern edge of the city.",
-   "verified_sources": [
-    "https://www.portland.gov/trees/heritage-trees (City of Portland Heritage Tree register, Portland City Code Title 11; CC BY-SA)"
-   ],
-   "access": "Free. Public park trail, open daylight hours.",
-   "transport": "About 17 km southeast of downtown, off SE Powell Boulevard. Drive or bus 9.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "A tall, narrow, columnar poplar with an enormously thick base, standing out against a low skyline.",
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "ptl_013",
-   "name": "The Parkrose Beech",
-   "species": "European Beech (Fagus sylvatica)",
-   "age_estimate": "",
-   "age_min": null,
-   "age_max": null,
-   "location": {
-    "address": "End of NE Thompson Street at 10115, Parkrose Heights",
-    "latitude": 45.53897,
-    "longitude": -122.559,
-    "neighbourhood": "Parkrose Heights"
-   },
-   "story": "Seven metres round and twenty six metres tall, at the end of a residential street in Parkrose Heights, on a strip of unimproved public right of way that never became road.\n\nThat detail is the whole story. A beech of this size in a European park would have a fence around it and a plaque. This one survives because the city ran out of street before it ran out of block, so the tree kept the ground it was standing on and the tarmac stopped short.\n\nEuropean beech holds its dead leaves through winter when young and drops them cleanly once mature, and at this size the trunk is the thing worth looking at: smooth grey bark stretched tight, with the surface rippling where the buttress roots begin. Beech bark does not crack with age the way oak does, so an old one looks like something poured rather than grown.\n\nPortland designated it in 1994, the first year of the register. It has no recorded age, because the register does not have that field.",
-   "verified_sources": [
-    "https://www.portland.gov/trees/heritage-trees (City of Portland Heritage Tree register, Portland City Code Title 11; CC BY-SA)"
-   ],
-   "access": "Free. Public right of way at the street end.",
-   "transport": "About 13 km northeast of downtown. MAX Red Line to Parkrose, then a short walk.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "A very large beech with smooth grey bark closing off the end of the street, its crown far wider than the road.",
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "ptl_014",
-   "name": "The Knott Street Wingnuts",
-   "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
-   "age_estimate": "",
-   "age_min": null,
-   "age_max": null,
-   "location": {
-    "address": "NE Knott Street between 14th and 15th Avenue, Irvington",
-    "latitude": 45.54209,
-    "longitude": -122.65023,
-    "neighbourhood": "Irvington"
-   },
-   "story": "Nine Caucasian wingnuts line two blocks of NE Knott Street, five in front of the church and four across the road from it, and the city numbered every one of them when it designated the lot in 1996.\n\nCaucasian wingnut is not a street tree anywhere. It comes from the forests between the Black Sea and the Caspian, it suckers freely, it wants wet feet, and no municipal planting manual recommends it. Somebody in Irvington planted nine.\n\nWhat you get for that is the catkins. Wingnut hangs green chains of winged seeds up to half a metre long through summer, so the whole line drips at once, which is a thing worth timing a walk for. The leaves are pinnate and ash-like, up to twenty leaflets, and the crowns are far wider than the trunks suggest: the biggest here is 2.3 metres round and throws a crown twenty three metres across.\n\nThey are the reason to start an Irvington walk at this corner. Everything else on this page in this neighbourhood is within six hundred metres of them.",
-   "verified_sources": [
-    "https://www.portland.gov/trees/heritage-trees (City of Portland Heritage Tree register, Portland City Code Title 11; CC BY-SA)"
-   ],
-   "access": "Free. Street trees on the public right of way.",
-   "transport": "NE Knott Street at 15th Avenue, Irvington, about 3 km northeast of downtown. Bus 8 to NE 15th and Knott.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "A line of trees with long ash-like compound leaves and, in summer, hanging chains of winged green seeds. Five on the church side, four opposite.",
-   "curation_status": "flagged",
-   "location_precision": "confirmed",
-   "best_time": {
-    "months": [
-     7
-    ],
-    "label": "July, when the seed chains hang at full length",
-    "kind": "catkins"
-   }
-  },
-  {
-   "id": "ptl_015",
-   "name": "The Eighteenth Avenue Planes",
-   "species": "London Plane (Platanus x acerifolia)",
-   "age_estimate": "",
-   "age_min": null,
-   "age_max": null,
-   "location": {
-    "address": "2407 NE 18th Avenue, Irvington",
-    "latitude": 45.53986,
-    "longitude": -122.64739,
-    "neighbourhood": "Irvington"
-   },
-   "story": "Two London planes stand one behind the other outside the same address, and the city registered them as a pair in 2005, recording one as the north tree and one as the south. The north is 4.8 metres round, the south 4.6, and between them they throw crowns twenty six and twenty seven metres across over a street that is twelve metres wide.\n\nThat is the London plane's entire case for existing. It was a chance hybrid, probably raised in seventeenth century Europe from an American sycamore and an oriental plane, and it turned out to tolerate compacted soil, road salt, drought and filthy air better than anything native to any of those places. Every industrial city in the northern hemisphere planted it. Portland planted these.\n\nThe bark is the giveaway: plane sheds it in plates, so the trunk is a camouflage of cream, olive and grey, and the shed pieces lie around the base like broken crockery.\n\nStand between them and look up. The two crowns have grown into each other and the street disappears.",
-   "verified_sources": [
-    "https://www.portland.gov/trees/heritage-trees (City of Portland Heritage Tree register, Portland City Code Title 11; CC BY-SA)"
-   ],
-   "access": "Free. Street trees on the public right of way.",
-   "transport": "NE 18th Avenue at Brazee, Irvington. Bus 8 to NE 15th and Knott, then four blocks east.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "Two very large planes in line outside one house, with flaking cream and olive bark and crowns meeting overhead.",
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "ptl_016",
-   "name": "The Irvington Elm",
-   "species": "Field Elm (Ulmus minor)",
-   "age_estimate": "",
-   "age_min": null,
-   "age_max": null,
-   "location": {
-    "address": "2546 NE 18th Avenue, Irvington",
-    "latitude": 45.54123,
-    "longitude": -122.64701,
-    "neighbourhood": "Irvington"
-   },
-   "story": "Thirty five metres tall on a trunk 4.5 metres round, which makes this the tallest street tree in Irvington and one of the tallest elms anywhere on this site.\n\nThat it is standing at all is the point. Dutch elm disease reached North America in 1930 and took an estimated hundred million trees, and it rewrote what American streets look like: the elm arch that shaded half the country's residential blocks is largely a photograph now. Portland was luckier than most, partly through geography and partly through an aggressive city programme of inspection and removal, and elms like this one are what luck plus effort left behind.\n\nField elm is the European native, no more resistant than any other, so this tree has simply not been found by the beetle that carries the fungus. Every year it goes unfound is another year.\n\nThe city registered it in 2003. Two blocks south stand the pair of heritage planes; the wingnut line is four blocks west.",
-   "verified_sources": [
-    "https://www.portland.gov/trees/heritage-trees (City of Portland Heritage Tree register, Portland City Code Title 11; CC BY-SA)"
-   ],
-   "access": "Free. Street tree on the public right of way.",
-   "transport": "NE 18th Avenue at Stanton, Irvington. Bus 8, then a short walk east.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "A notably tall elm with a high, vase-shaped crown and small, asymmetric-based leaves rough to the touch.",
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "ptl_017",
-   "name": "The Thompson Street Horsechestnut",
-   "species": "Horse Chestnut (Aesculus hippocastanum)",
-   "age_estimate": "",
-   "age_min": null,
-   "age_max": null,
-   "location": {
-    "address": "1529 NE Thompson Street, Irvington",
-    "latitude": 45.53923,
-    "longitude": -122.64951,
-    "neighbourhood": "Irvington"
-   },
-   "story": "Twenty nine metres is tall for a horse chestnut. The species usually gives up somewhere around twenty five and spends the difference on width instead, so this one, at 4.4 metres round and twenty across the crown, is a horse chestnut behaving like a forest tree.\n\nIt is also a tree with a job. Horse chestnut is the conker tree, and its entire modern distribution outside the Balkans is down to people wanting the fruit: the species is close to endangered in its native Pindus mountains and planted by the million everywhere else. The nuts are inedible, mildly poisonous, and were carried across Europe for centuries anyway because children want them.\n\nSo the two weeks to come are the last of September, when the spiny cases split on the pavement. Before that, in early May, the whole crown goes up in white candles with yellow throats that turn red once each flower has been pollinated, which is a signal to bees and a nice thing to know while standing underneath.\n\nPortland registered it in 2004.",
-   "verified_sources": [
-    "https://www.portland.gov/trees/heritage-trees (City of Portland Heritage Tree register, Portland City Code Title 11; CC BY-SA)"
-   ],
-   "access": "Free. Street tree on the public right of way.",
-   "transport": "NE Thompson Street at 15th Avenue, Irvington. Bus 8 to NE 15th and Knott.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "A tall horse chestnut with big five-fingered leaves and, in autumn, spiny green cases splitting open on the pavement beneath.",
-   "curation_status": "flagged",
-   "location_precision": "confirmed",
-   "best_time": {
-    "months": [
-     9
-    ],
-    "label": "late September, when the conkers drop",
-    "kind": "fruit"
-   }
-  },
-  {
-   "id": "ptl_018",
-   "name": "The Twenty-Fourth Avenue Catalpas",
-   "species": "Northern Catalpa (Catalpa speciosa)",
-   "age_estimate": "",
-   "age_min": null,
-   "age_max": null,
-   "location": {
-    "address": "2827 NE 24th Avenue, Irvington",
-    "latitude": 45.54317,
-    "longitude": -122.64121,
-    "neighbourhood": "Irvington"
-   },
-   "story": "A pair, registered together in 1994, the year Portland's heritage list opened. One is 4.1 metres round and twenty six tall, the other 3.8 and twenty three.\n\nNorthern catalpa is a tree that does everything conspicuously. The leaves are heart shaped and up to thirty centimetres long, so the crown reads as coarse from a distance. In June it flowers in upright trusses of white bells freckled with purple and yellow inside, thousands at once, and the fallen petals cover the pavement. Then it hangs seed pods like bean pods, forty centimetres or more, which stay on through winter and rattle, and which give the tree its American nickname of cigar tree.\n\nIts natural range is small, a patch of the Mississippi basin, and it got everywhere else because railway companies planted it in plantations for fence posts: catalpa wood rots slowly. The fashion collapsed, the trees stayed.\n\nCome in the second half of June. There is not much on this site that beats a large catalpa in full flower, and there are two of them here.",
-   "verified_sources": [
-    "https://www.portland.gov/trees/heritage-trees (City of Portland Heritage Tree register, Portland City Code Title 11; CC BY-SA)"
-   ],
-   "access": "Free. Street trees on the public right of way.",
-   "transport": "NE 24th Avenue at Thompson, Irvington. Bus 8, then five blocks east.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "Two large trees with very big heart-shaped leaves and long thin seed pods hanging through winter.",
-   "curation_status": "flagged",
-   "location_precision": "confirmed",
-   "best_time": {
-    "months": [
-     6
-    ],
-    "label": "the second half of June, when the white bells open",
-    "kind": "flowers"
-   }
-  },
-  {
-   "id": "ptl_019",
-   "name": "The Overlook Planes",
-   "species": "London Plane (Platanus x acerifolia)",
-   "age_estimate": "",
-   "age_min": null,
-   "age_max": null,
-   "location": {
-    "address": "3967 N Overlook Boulevard, Overlook",
-    "latitude": 45.55184,
-    "longitude": -122.68629,
-    "neighbourhood": "Overlook"
-   },
-   "story": "Three planes at one address on Overlook Boulevard, 5.4, 4.8 and 3.9 metres round, and the largest throws a crown thirty one metres across on a tree only twenty one metres tall. That ratio is the whole character of the group: they are wider than they are high, which a plane only manages with room and time.\n\nThe biggest of the three carries the largest London plane girth on Portland's heritage register, and the city designated all three together in 2018, which is late. A tree does not get to 5.4 metres round in seven years, so these were large for a long while before anyone wrote them down. That is normal for street trees and worth knowing when reading any heritage list: the designation year records when a city noticed, not when a tree started.\n\nOverlook sits on the bluff above the Willamette with the industrial river on one side and the West Hills opposite, so the walk out here comes with a view whether or not you care about planes.",
-   "verified_sources": [
-    "https://www.portland.gov/trees/heritage-trees (City of Portland Heritage Tree register, Portland City Code Title 11; CC BY-SA)"
-   ],
-   "access": "Free. Street trees on the public right of way.",
-   "transport": "N Overlook Boulevard, about 5 km north of downtown. MAX Yellow Line to Overlook Park.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "Three large planes together outside one address, crowns much broader than tall, with flaking cream and grey bark.",
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "ptl_020",
-   "name": "The Irvington Sycamore",
-   "species": "American Sycamore (Platanus occidentalis)",
-   "age_estimate": "",
-   "age_min": null,
-   "age_max": null,
-   "location": {
-    "address": "2524 NE 25th Avenue, Irvington",
-    "latitude": 45.54092,
-    "longitude": -122.64004,
-    "neighbourhood": "Irvington"
-   },
-   "story": "The city's note on this tree reads, in full, \"Big 13'\". That is the entire official record, written by whoever measured it in 1999, and it is not wrong: thirteen feet is 3.9 metres round, under a crown twenty six metres across.\n\nAmerican sycamore is the parent that gave the London plane its constitution, and side by side the difference is legible. Sycamore sheds bark higher and harder, so the upper limbs go bone white, and from a distance an old one looks as though someone has painted the top half. The leaves are broader and shallower lobed than the hybrid's, and the seed balls hang singly rather than in pairs, which is the field mark worth remembering.\n\nIt is the eastern end of the Irvington heritage cluster. From here the catalpas are a block north, the elm and the planes are six blocks west, and the wingnut line closes the walk at NE 15th, which is about a kilometre and a half all told.",
-   "verified_sources": [
-    "https://www.portland.gov/trees/heritage-trees (City of Portland Heritage Tree register, Portland City Code Title 11; CC BY-SA)"
-   ],
-   "access": "Free. Street tree on the public right of way.",
-   "transport": "NE 25th Avenue at Thompson, Irvington. Bus 8, then six blocks east.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "A big plane-like tree with strikingly white upper limbs and single hanging seed balls.",
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  }
- ]
+  "city": "Portland",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Portland protects its best trees by city ordinance and has done since 1993, which is why this page can name the tallest tree in town to the metre. Twenty now, in two walks and a scatter. Seven stand within 1.8 kilometres downtown, including two elms facing each other across NW Flanders Street. Seven more make a second walk through Irvington, ending at a line of nine Caucasian wingnuts no planting manual would recommend. The rest are worth the trip alone: a 74 metre Douglas fir, a sequoia beside a reservoir on a volcano, and the city's thickest poplar.",
+  "meta_description": "Twenty heritage trees in Portland: a 74-metre Douglas fir, nine Caucasian wingnuts on one street, and the sequoia beside the Mount Tabor reservoir.",
+  "question_meta": "Portland's tallest tree is the Balch Creek Douglas fir at 74 metres, in Forest Park. Where it stands, plus nineteen more heritage trees.",
+  "question_answer": "Portland's tallest tree is the Douglas fir above Balch Creek in Macleay Park, part of Forest Park, measured at 243 feet or 74.1 metres, which makes it the tallest tree on this whole site by a wide margin. It is free to visit on Portland Parks land. The city's Heritage Tree ordinance has protected individual trees by council vote since 1993, and this page draws on that register and on the city's own field guide to it, From Stumptown to Treetown.",
+  "question_context": "Portland's Heritage Tree register is unusually good and unusually blunt: it gives girth, height, species and a per-tree coordinate, and it records ownership, which turns out to matter more than anything else here. Roughly two fifths of the trees on it stand in private front, side or rear yards, and a tree in a rear yard cannot be visited or even seen, so none of those can appear on this page whatever their size. Everything here stands on right-of-way, park or public campus ground where a visitor may simply turn up. The register also lags reality: a delisting ordinance in 2026 confirmed trees dead that its own rows still listed, so each entry here was checked separately for whether the tree is standing. Two figures on this page are disputed between sources and both disputes are stated in the tree's own story rather than resolved silently, because a register and a field guide disagreeing is worth knowing about.",
+  "faq": [
+    {
+      "q": "What is the tallest tree in Portland?",
+      "a": "The Douglas fir above Balch Creek in Macleay Park, at 74.1 metres. It is free to visit and stands in Forest Park on city parks land."
+    },
+    {
+      "q": "Are Portland's heritage trees free to visit?",
+      "a": "The ones on this page are, because they were chosen that way. Portland's register also protects trees in private yards, and those are deliberately absent here: a heritage tree in someone's back garden cannot be visited."
+    },
+    {
+      "q": "Can I see them in one walk?",
+      "a": "Seven of the ten, in about 1.8 kilometres through downtown and the near west side. The sequoia, the Douglas fir and the dawn redwood each need their own trip into the hills."
+    },
+    {
+      "q": "Where is the second walk?",
+      "a": "Irvington, about three kilometres northeast of downtown. Seven of these trees sit within six hundred metres of each other there: a line of nine Caucasian wingnuts along NE Knott Street, a pair of London planes and a 35 metre elm on NE 18th, a horse chestnut on NE Thompson, a pair of catalpas on NE 24th and a sycamore on NE 25th. Bus 8 to NE 15th and Knott puts you at the wingnuts, and the whole loop is about a kilometre and a half."
+    },
+    {
+      "q": "Why do so many of these have no age?",
+      "a": "Because Portland's Heritage Tree register does not have an age field. It records girth, height, spread, species, ownership and the year the city designated the tree, and that last number is when somebody noticed rather than when the tree started. The three planes on Overlook Boulevard were designated in 2018 and the largest is 5.4 metres round, which no tree manages in seven years. Where this page gives an age it comes from a separate source, and where it gives none, nobody has published one."
+    }
+  ],
+  "hero_tree_id": "ptl_009",
+  "oldest_tree_id": "ptl_009",
+  "trees": [
+    {
+      "id": "ptl_001",
+      "name": "The Watson Beech",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "roughly 135 years",
+      "age_min": 125,
+      "age_max": 145,
+      "location": {
+        "address": "1875 SW Park Ave (PSU Millar Library entrance)",
+        "latitude": 45.51144544,
+        "longitude": -122.68579051,
+        "neighbourhood": "Downtown / Portland State University campus"
+      },
+      "story": "Portland State University knocked down a Victorian mansion to build its library, then laid out the front lawn around the tree that had stood beside it. The beech is still there. The house is not.\n\nFrank Watson made his money in ironworks and shipbuilding, and around 1890 he and his wife Mary Whalley Watson planted this copper beech beside their new home on the corner of Hall and Park. Sources credit the planting to one or the other of them and do not agree on which. The house came down between 1965 and 1968 to make room for the Millar Library, designed by Skidmore, Owings & Merrill. No record explains why the beech was spared when everything around it was cleared. It simply was, and it ended up the centrepiece of the lawn rather than a casualty of it.\n\nIt now stands about 25.6 metres tall with a trunk 5.71 metres around, and went onto Portland's register as Heritage Tree #54 in 1995. A photograph from 1975 shows students packed shoulder to shoulder on the grass underneath it, which is more or less what the lawn is still for on a warm day.\n\nWhat it has watched is a residential corner turning into a university: Victorian houses giving way to concrete, and then fifty years of students using its shade as somewhere to meet.",
+      "best_time": {
+        "months": [
+          4,
+          5
+        ],
+        "kind": "fresh leaves",
+        "label": "April and May, before the new leaves darken, when the whole crown is closer to red than purple"
+      },
+      "verified_sources": [
+        "data/registers/portland-heritage-trees.json (City of Portland Heritage Tree register, CC BY-SA, objectid 238, Heritage Tree #54)",
+        "Portland Parks & Recreation Urban Forestry, 'From Stumptown to Treetown: A Field Guide for Interpreting Portland's History through its Heritage Trees' by David-Paul B. Hedberg, https://www.portland.gov/trees/documents/stumptown-treetown/download, Stop 1"
+      ],
+      "access": "Free, always open. Stands on the open lawn at the main entrance to PSU's Millar Library, a public university campus walkway.",
+      "transport": "Downtown Portland, on the PSU campus; MAX Blue/Red/Green Line and Portland Streetcar both stop within a couple of minutes' walk (Transit Mall / Kings Hill-SW Salmon station area).",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ptl_002",
+      "name": "The Farrell Planetree",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 145 years",
+      "age_min": 140,
+      "age_max": 150,
+      "location": {
+        "address": "NW corner of SW Park Ave & SW Main St",
+        "latitude": 45.51716693,
+        "longitude": -122.68257458,
+        "neighbourhood": "Downtown"
+      },
+      "story": "The house this tree was planted to shade is now a parking lot. The plane tree has outlived it by more than a century.\n\nAn 1880 photograph shows it as a thin sapling beside the home of Sylvester Farrell, a feed-and-grocery merchant who moved into salmon canning and later sat on Portland's City Council. The tree was reportedly a gift from US Senator J.N. Dolph. Farrell's house is long gone, the corner it stood on has been given over to parked cars, and the plane tree carries on in the planting strip beside them.\n\nPortland made it a Historic Landmark in 1973 and entered it on the new Heritage Tree register the same year as number 2, which makes it one of the first trees the city ever formally protected. It is about 19.2 metres tall with a trunk 4.36 metres around. Locally it gets called a sycamore, which it is not.\n\nPortland's old nickname was Stumptown, earned honestly: the city cleared its native forest fast and left the stumps standing in the streets. This tree belongs to the second chapter, planted on purpose by people who had watched the first forest go. It has now outlasted the man who planted it, the house he planted it for, and the neighbourhood they were both part of.",
+      "verified_sources": [
+        "data/registers/portland-heritage-trees.json (City of Portland Heritage Tree register, CC BY-SA, objectid 441, Heritage Tree #2)",
+        "Portland Parks & Recreation Urban Forestry, 'From Stumptown to Treetown' field guide, https://www.portland.gov/trees/documents/stumptown-treetown/download, Stop 3"
+      ],
+      "access": "Free, always open. Standing in the street planting strip at a downtown corner, fully public.",
+      "transport": "Downtown Portland; MAX Blue/Red/Green Line and Portland Streetcar both stop within a few minutes' walk of the Park Blocks.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ptl_003",
+      "name": "The Eliot Hawthorns",
+      "species": "Lavalle Hawthorn (Crataegus x lavallei)",
+      "age_estimate": "about 60 years",
+      "age_min": 55,
+      "age_max": 62,
+      "location": {
+        "address": "1011 SW 12th Ave (in front of the First Unitarian Church)",
+        "latitude": 45.51842316,
+        "longitude": -122.68542115,
+        "neighbourhood": "Downtown"
+      },
+      "story": "Four trees, four separate heritage numbers. Portland registered these hawthorns individually as Heritage Trees #109 through #112, which is a lot of paperwork for a row most people walk past as a single hedge.\n\nThey stand in the planting strip along SW 12th Ave in front of the First Unitarian Church, all four planted in 1966 and all four added to the register in 1996. Lavalle hawthorns are small trees and these are no exception: 11 to 13.4 metres tall, with trunks between 1.8 and 2.26 metres around. They are also, by a wide margin, the youngest entries in this city.\n\nThey earn their place through the congregation rather than through age. Rev. Thomas Lamb Eliot led this church from 1867 to 1893 and became one of Portland's more consequential citizens, founding social and library associations and lending his name to the Eliot Glacier on Mount Hood. The members he drew in did a good deal of the civic building of early Portland, and the row went in as a tribute to that.\n\nCome in autumn and all four hang with dense clusters of dark red haws while the leaves go bronze. That is the point in the year when the row stops reading as a hedge and starts reading as four trees.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "fruit",
+        "label": "October and November, when all four trees hang with dark red haws"
+      },
+      "verified_sources": [
+        "data/registers/portland-heritage-trees.json (City of Portland Heritage Tree register, CC BY-SA, objectids 268, 450, 259, 431, Heritage Trees #109-#112)",
+        "Portland Parks & Recreation Urban Forestry, 'From Stumptown to Treetown' field guide, https://www.portland.gov/trees/documents/stumptown-treetown/download, Stop 4"
+      ],
+      "access": "Free, always open. Standing in the sidewalk planting strip in front of the church, fully public.",
+      "transport": "Downtown Portland; MAX Blue/Red/Green Line and Portland Streetcar both stop within a few minutes' walk.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ptl_004",
+      "name": "The Kamm Walnut",
+      "species": "Black Walnut (Juglans nigra)",
+      "age_estimate": "roughly 145 years",
+      "age_min": 140,
+      "age_max": 155,
+      "location": {
+        "address": "1600 SW Salmon St (Lincoln High School, corner of SW Salmon & SW 14th Ave)",
+        "latitude": 45.51902348,
+        "longitude": -122.68757836,
+        "neighbourhood": "Goose Hollow"
+      },
+      "story": "A fourteen-acre estate has been reduced to a single walnut on a school lawn. This is it.\n\nJacob Kamm was a Swiss immigrant who engineered steamships and made a fortune moving freight on the Columbia River with the Oregon Steam and Navigation Company. He built a French Second Empire mansion out here when this was the edge of Portland. His wife Caroline Agusta Gray had grown up among the first missionary families living with the Nez Perce in Idaho.\n\nThe planting date is genuinely unsettled. The tree's own plaque says the 1880s. The city's field guide, in its narrative, dates it to around 1871 and the building of the Kamm house. Nobody has reconciled the two, so the honest answer is somewhere inside that fifteen-year window.\n\nThe Kamms sold up in 1910 and Lincoln High School took the site. When the current school building went up in 1952, architect Hollis Johnston drew his plan around the walnut rather than through it. It stands about 29 metres tall with a trunk 4.24 metres around, close enough to Interstate 405 to hear it. Ask anyone who went to Lincoln and you will usually get a story.\n\nThe tree sits at the edge of school grounds. Look at it from the corner of SW Salmon and SW 14th rather than walking onto the property, particularly on a school day.",
+      "verified_sources": [
+        "data/registers/portland-heritage-trees.json (City of Portland Heritage Tree register, CC BY-SA, objectid 353, Heritage Tree #35)",
+        "Portland Parks & Recreation Urban Forestry, 'From Stumptown to Treetown' field guide, https://www.portland.gov/trees/documents/stumptown-treetown/download, Stop 5"
+      ],
+      "access": "Visible and reachable from the public sidewalk at the SW Salmon/SW 14th corner (register ownership: Portland Public Schools, standing at the edge of the Lincoln High School grounds). Stand at the street corner rather than crossing onto school property, especially during school hours.",
+      "transport": "Goose Hollow, a short walk west of downtown; Portland Streetcar and MAX both have stops within about 10 minutes' walk (Goose Hollow/SW Jefferson MAX station is closest).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ptl_005",
+      "name": "The Miller Pine",
+      "species": "Austrian Pine (Pinus nigra)",
+      "age_estimate": "roughly 150 years",
+      "age_min": 145,
+      "age_max": 155,
+      "location": {
+        "address": "2028 SW Howards Way",
+        "latitude": 45.51798031,
+        "longitude": -122.69459534,
+        "neighbourhood": "Goose Hollow"
+      },
+      "story": "This 31-metre pine is growing out of a street planter because a florist put it in the ground before there was a street.\n\nThrough the 1870s and 1880s this stretch of Goose Hollow lay outside the city limits and belonged to Henry Miller, one of Portland's first florists, who ran a plant nursery, a seed farm and a floral supply business on the slope. The Austrian pine and a large Cedar of Lebanon a short way off both appear to be imports he planted on his own nursery ground. They were stock and demonstration rather than landscaping, which is why they sit where no landscape architect would have put them.\n\nThe register dates the planting to the late 19th century and added the tree to the Heritage list in 1993. It is roughly 31.1 metres tall with a trunk 3.23 metres around, rising out of a built-out planter at an intersection that did not exist when it was young.\n\nThere is photographic proof of its head start. A 1959 photograph of the Jacob Kamm House, a few blocks east, catches this pine and its cedar neighbour already full grown in the background.\n\nWhat it has watched is a semi-rural nursery district becoming one of the densest neighbourhoods in Portland, with an interstate cut through beside it.",
+      "verified_sources": [
+        "data/registers/portland-heritage-trees.json (City of Portland Heritage Tree register, CC BY-SA, objectid 101, Heritage Tree listed 1993)",
+        "Portland Parks & Recreation Urban Forestry, 'From Stumptown to Treetown' field guide, https://www.portland.gov/trees/documents/stumptown-treetown/download, Stop 6"
+      ],
+      "access": "Free, always open. Standing in a built-out street planter at a Goose Hollow intersection (register ownership: Right Of Way / TriMet), fully public.",
+      "transport": "Goose Hollow; the MAX Blue/Red Line Goose Hollow/SW Jefferson St station is a short walk away.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ptl_006",
+      "name": "The Rockey Elm",
+      "species": "Dutch Elm (Ulmus x hollandica)",
+      "age_estimate": "about 125 years",
+      "age_min": 120,
+      "age_max": 130,
+      "location": {
+        "address": "2330 NW Flanders St",
+        "latitude": 45.52544495,
+        "longitude": -122.69946452,
+        "neighbourhood": "Northwest District"
+      },
+      "story": "A Portland architect once parked his car against this elm so the removal crew could not reach it. It worked.\n\nThe city council had condemned the tree in 1963. The owner of the building in front of it wanted it gone, worried that its roots were working into his foundations, and applied for a removal permit. Lewis Crucher's car bought enough time for Mayor Terry Schrunk to place a moratorium on that permit while the city forester and the city engineer went and looked at the tree themselves.\n\nWhat followed ran in the Oregonian for months: a vigil at the trunk, a poem printed in the paper, and a letter from Dr Eugene W. Rockey recalling that his father had planted the elm in 1900 in front of their newly built house, and had fitted it with a wooden slat guard to stop the family's buggy horse nipping the top off the sapling. The foresters found the tree healthy and safe. The permit was refused.\n\nIt is about 24.4 metres tall with a trunk 4.60 metres around, Heritage Tree #46 since 1995. It had already come through the Columbus Day Storm the year before the council came for it, which means it survived the worst windstorm in the region's recorded history and then very nearly lost to a building permit.\n\nIts opposite number, the Storm Elm, stands directly across Flanders Street.",
+      "verified_sources": [
+        "data/registers/portland-heritage-trees.json (City of Portland Heritage Tree register, CC BY-SA, objectid 349, Heritage Tree #46)",
+        "Portland Parks & Recreation Urban Forestry, 'From Stumptown to Treetown' field guide, https://www.portland.gov/trees/documents/stumptown-treetown/download, Stop 8"
+      ],
+      "access": "Free, always open. Standing in the sidewalk planting strip on NW Flanders St, fully public.",
+      "transport": "Northwest District (Nob Hill area); Portland Streetcar NS Line stops a few blocks south on NW Northrup/Lovejoy; roughly a 10-15 minute walk from the NW 21st/23rd Ave shopping streets.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ptl_007",
+      "name": "The Storm Elm",
+      "species": "English Elm (Ulmus procera)",
+      "age_estimate": "about 125 years",
+      "age_min": 120,
+      "age_max": 125,
+      "location": {
+        "address": "2363 NW Flanders St",
+        "latitude": 45.52554894,
+        "longitude": -122.69974839,
+        "neighbourhood": "Northwest District"
+      },
+      "story": "The Columbus Day Storm of 1962 flattened roughly 15 billion board feet of Pacific Northwest timber and gusted to 116mph over Portland. On the north side of this block, one elm was left standing.\n\nThat is this tree, planted in 1902 or 1903 in the planting strip on NW Flanders St. It is around 24.4 metres tall with a trunk 4.30 metres around, and it went onto the Heritage Tree register as number 36 in 1994. The city's own field guide is blunt about the odds: getting through that night at all was no small thing for a mature elm on an exposed street.\n\nThe storm was not the end of the threat. Dutch elm disease arrived later, carried by a bark beetle that reached North America from Asia by way of Europe, and a smaller elm on the same block was lost to it. The elms still standing here, this one included, are now inoculated against the fungus by the city and by volunteers.\n\nLook across the street while you are here. The Rockey Elm came through the same night and then had to be defended from a removal permit the following year. Two trees, one block, and one decade that tried twice to take them.",
+      "verified_sources": [
+        "data/registers/portland-heritage-trees.json (City of Portland Heritage Tree register, CC BY-SA, objectid 336, Heritage Tree #36)",
+        "Portland Parks & Recreation Urban Forestry, 'From Stumptown to Treetown' field guide, https://www.portland.gov/trees/documents/stumptown-treetown/download, Stop 8"
+      ],
+      "access": "Free, always open. Standing in the sidewalk planting strip on NW Flanders St, fully public.",
+      "transport": "Northwest District (Nob Hill area); Portland Streetcar NS Line stops a few blocks south on NW Northrup/Lovejoy; roughly a 10-15 minute walk from the NW 21st/23rd Ave shopping streets.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ptl_008",
+      "name": "The Patton Road Sequoia",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "",
+      "age_min": 0,
+      "age_max": 0,
+      "location": {
+        "address": "2896 SW Patton Rd",
+        "latitude": 45.50358531,
+        "longitude": -122.70763077,
+        "neighbourhood": "Southwest Hills"
+      },
+      "story": "Forty-five metres of Californian giant sequoia is growing out of a street verge in the Southwest Hills, and nobody has written down when it was planted.\n\nSequoiadendron giganteum belongs in the western Sierra Nevada, several hundred miles south of here, where it grows in scattered groves at altitude. Victorian and Edwardian planters shipped it all over the world, and this one took to Portland's rain well enough to reach 45.1 metres on a residential road. The register carries no planting date and none has surfaced anywhere else, so the age is simply unknown. The trunk says a great many decades. No source says more than that.\n\nThe girth is unsettled too. The city register puts the circumference at 7.07 metres. An independent measurement, taken at a different height on the trunk, gives 6.74 metres. Some of that gap is probably just where the tape went round, but the two figures have never been reconciled, so treat it as somewhere close to seven metres and leave it there.\n\nThe tree stands in the public verge at the entrance to a residence driveway. There is room to stand and look from the road, and that is where to do it: the verge is public, the driveway is not.",
+      "verified_sources": [
+        "data/registers/portland-heritage-trees.json (City of Portland Heritage Tree register, CC BY-SA, objectid 148, Heritage Tree #127 or #158, listed year not specified in this record)",
+        "monumentaltrees.com listing for this Giant Sequoia on SW Patton Rd/SW Park Pl, Portland (viewed for verification only, per hard rule 1: girth 6.74m at 1.40m height, height approx 29m)"
+      ],
+      "access": "Free, always open. Register ownership is Right Of Way, meaning the tree stands in the public street verge; the register's own note ('at the entrance to the residence driveway') describes its position next to a private driveway, not that it is on private land. Stand on the street verge/sidewalk rather than the driveway apron itself.",
+      "transport": "Southwest Hills; no MAX or streetcar nearby, TriMet bus line 51 (Vista) serves the general neighbourhood. Best reached by car or a considerable uphill walk from downtown (roughly 3km, mostly climbing).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ptl_009",
+      "name": "The Balch Creek Fir",
+      "species": "Douglas Fir (Pseudotsuga menziesii)",
+      "age_estimate": "",
+      "age_min": 0,
+      "age_max": 0,
+      "location": {
+        "address": "Lower Macleay Park / Balch Creek spur trail, near NW Cornell Rd, Forest Park",
+        "latitude": 45.52908333,
+        "longitude": -122.72335,
+        "neighbourhood": "Forest Park"
+      },
+      "story": "This Douglas fir is 74 metres tall. Nothing else in Portland comes close.\n\nThe city register measures it at 243 feet, or 74.1 metres, with a trunk 5.58 metres around and 1.78 metres through. A student piece in the PSU Vanguard, working independently, arrived at exactly the same height and girth, which is reassuring for a measurement that is genuinely hard to take on a tree this size standing in a steep ravine.\n\nIt grows at the bottom of the Balch Creek canyon in Forest Park, one of the largest urban forest reserves in the United States, on the Lower Macleay spur trail about a hundred yards past the stone house ruin that everyone here calls the Witch's Castle. A large stone beside the path marks it. Look up rather than around: at this height the top of the tree is well outside anything you can take in from the trail.\n\nNo age is recorded anywhere, and that is not an oversight. This is not a planted landscape tree with a date attached to it but a survivor in a patch of regrown native forest, and nobody has cored it. The ravine explains the height. Steep, shaded, wet, sheltered from the wind, and never quite worth the trouble of logging.",
+      "verified_sources": [
+        "data/registers/portland-heritage-trees.json (City of Portland Heritage Tree register, CC BY-SA, objectid 211)",
+        "PSU Vanguard, 'Experience Portland's most historic trees', https://psuvanguard.com/experience-portlands-most-historic-trees/"
+      ],
+      "access": "Free, always open. Standing on Portland Parks & Recreation land inside Forest Park/Macleay Park, on the Lower Macleay spur trail about 100 yards from the stone house ('Witch's Castle') ruin along Balch Creek. Reached on foot via a public park trail, not roadside.",
+      "transport": "Access via the Lower Macleay trailhead, 2960 NW Upshur St; TriMet bus lines 15, 26 and 77 stop within a few blocks (NW Thurman/27th-29th or NW Vaughn/27th), then it is roughly a 15-20 minute walk up the Lower Macleay/Wildwood Trail along Balch Creek to reach the tree.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/230591035/medium.jpeg",
+        "license": "CC BY",
+        "attribution": "Jerry Kensler, via iNaturalist",
+        "status": "approved",
+        "width": 375,
+        "height": 500
+      }
+    },
+    {
+      "id": "ptl_010",
+      "name": "The Hoyt Dawn Redwood",
+      "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+      "age_estimate": "about 78 years",
+      "age_min": 75,
+      "age_max": 80,
+      "location": {
+        "address": "Hoyt Arboretum, near SW Bray Ln, 4000 SW Fairview Blvd",
+        "latitude": 45.51920938,
+        "longitude": -122.71675588,
+        "neighbourhood": "Arlington Heights / Washington Park"
+      },
+      "story": "Until 1944 the dawn redwood was a fossil. Botanists knew Metasequoia only from imprints in stone and assumed it had been extinct for millions of years, until a living stand turned up in a remote Chinese valley. In 1952 this tree, grown from that discovery, produced cones: the first any dawn redwood had produced in the Western Hemisphere since the species vanished from it.\n\nHow long an absence that was depends who you ask. Portland's register says 8 million years. Travel Oregon and Hoyt Arboretum itself both say about 6 million. Neither number is the tree's age. They describe the gap in the fossil record, not the thing in front of you, which went into the ground in 1948 and is about 78 years old.\n\nThe route here was fast by the standards of botany. Harvard's Arnold Arboretum organised an international seed-collecting expedition to the Chinese stand in 1947, Hoyt Arboretum was among the institutions sent seed, and the seedlings were planted the following year. Four years after that, cones.\n\nIt is now 31.4 metres tall with a trunk 3.29 metres around, and it is an Oregon Heritage Tree. Late in the year it does the thing that makes dawn redwoods worth the walk up: a conifer that turns copper and then goes completely bare.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when it turns copper and then bare, which is not what a conifer is supposed to do"
+      },
+      "verified_sources": [
+        "data/registers/portland-heritage-trees.json (City of Portland Heritage Tree register, CC BY-SA, objectid 163)",
+        "Travel Oregon (official state tourism site), 'Dawn Redwood - Heritage Tree', https://traveloregon.com/things-to-do/culture-history/historic-sites-oregon-trail/dawn-redwood-heritage-tree/",
+        "Hoyt Arboretum's own site, https://www.hoytarboretum.org/majestic-redwoods-at-hoyt-arboretum/ and https://www.portland.gov/trees/metasequoia-glyptostroboides"
+      ],
+      "access": "Free, always open, no admission charge. Hoyt Arboretum is a public Portland Parks & Recreation arboretum within Washington Park.",
+      "transport": "MAX Blue/Red Line Washington Park station (the deepest transit station in North America) is about a half-mile walk along the Overlook Trail to the Arboretum Visitor Center, or take the seasonal free Washington Park shuttle from the station to the Hoyt Arboretum stop.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ptl_011",
+      "name": "The Mount Tabor Sequoia",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Mount Tabor Park, east side of the rectangular reservoir",
+        "latitude": 45.51111,
+        "longitude": -122.59864,
+        "neighbourhood": "Mount Tabor"
+      },
+      "story": "Forty two metres, on a trunk 7.8 metres round, standing beside a reservoir on the side of an extinct volcano. Mount Tabor is one of the few cinder cones inside an American city, and the water bureau built open reservoirs into its slope in the 1890s with the kind of civic architecture usually reserved for banks: balustrades, gatehouses, iron railings.\n\nSomebody planted a giant sequoia next to one of them. It is a Sierra Nevada tree, six hundred kilometres south and two thousand metres up, and it has done better here than most things do at home, because Portland gives it what California increasingly cannot, which is water.\n\nThe city added it to the heritage register in 1997. What it does not record, because the register has no such field, is when it went in. The reservoir dates the site rather than the tree, and joining those two facts would be a guess dressed as a date.\n\nGo to the west side of the park and look for the rectangular reservoir. The tree is on its east bank and there is no mistaking which one it is.",
+      "verified_sources": [
+        "https://www.portland.gov/trees/heritage-trees (City of Portland Heritage Tree register, Portland City Code Title 11; CC BY-SA)"
+      ],
+      "access": "Free. Portland Parks and Recreation, open park.",
+      "transport": "Mount Tabor Park, about 6 km east of downtown. Bus 15 to SE Belmont and Tabor, then uphill.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A single enormous conifer beside the rectangular reservoir, far taller than the deciduous trees around it, with the deeply furrowed red bark of a sequoia.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "ptl_012",
+      "name": "The Powell Butte Poplar",
+      "species": "Lombardy Poplar (Populus nigra 'Italica')",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Mountain View Trail, Pleasant Valley, off SE Powell Boulevard",
+        "latitude": 45.48796,
+        "longitude": -122.4994,
+        "neighbourhood": "Pleasant Valley"
+      },
+      "story": "Lombardy poplars are the disposable tree of the temperate world. They are planted as fast screens, they grow like weeds, they are usually rotten by fifty and gone by seventy, and nobody protects one.\n\nPortland protects this one. The city measured the trunk at 122 inches across, which works out at 9.75 metres around, on a tree thirty five metres tall and only twelve across the crown, which is the columnar habit doing exactly what it is famous for. That girth would be remarkable on an oak. On a Lombardy poplar it is close to absurd, and it is the largest circumference on Portland's entire heritage register.\n\nThe city added it in 2019, one of the most recent designations on a list that started in 1993, which suggests somebody walked past it and thought the same thing you will.\n\nThe measurement comes from the register and we have not found a second one, so treat the number as the city's rather than as gospel. It is on the Mountain View Trail in Pleasant Valley, out on the eastern edge of the city.",
+      "verified_sources": [
+        "https://www.portland.gov/trees/heritage-trees (City of Portland Heritage Tree register, Portland City Code Title 11; CC BY-SA)"
+      ],
+      "access": "Free. Public park trail, open daylight hours.",
+      "transport": "About 17 km southeast of downtown, off SE Powell Boulevard. Drive or bus 9.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A tall, narrow, columnar poplar with an enormously thick base, standing out against a low skyline.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "ptl_013",
+      "name": "The Parkrose Beech",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "End of NE Thompson Street at 10115, Parkrose Heights",
+        "latitude": 45.53897,
+        "longitude": -122.559,
+        "neighbourhood": "Parkrose Heights"
+      },
+      "story": "Seven metres round and twenty six metres tall, at the end of a residential street in Parkrose Heights, on a strip of unimproved public right of way that never became road.\n\nThat detail is the whole story. A beech of this size in a European park would have a fence around it and a plaque. This one survives because the city ran out of street before it ran out of block, so the tree kept the ground it was standing on and the tarmac stopped short.\n\nEuropean beech holds its dead leaves through winter when young and drops them cleanly once mature, and at this size the trunk is the thing worth looking at: smooth grey bark stretched tight, with the surface rippling where the buttress roots begin. Beech bark does not crack with age the way oak does, so an old one looks like something poured rather than grown.\n\nPortland designated it in 1994, the first year of the register. It has no recorded age, because the register does not have that field.",
+      "verified_sources": [
+        "https://www.portland.gov/trees/heritage-trees (City of Portland Heritage Tree register, Portland City Code Title 11; CC BY-SA)"
+      ],
+      "access": "Free. Public right of way at the street end.",
+      "transport": "About 13 km northeast of downtown. MAX Red Line to Parkrose, then a short walk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A very large beech with smooth grey bark closing off the end of the street, its crown far wider than the road.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "ptl_014",
+      "name": "The Knott Street Wingnuts",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "NE Knott Street between 14th and 15th Avenue, Irvington",
+        "latitude": 45.54209,
+        "longitude": -122.65023,
+        "neighbourhood": "Irvington"
+      },
+      "story": "Nine Caucasian wingnuts line two blocks of NE Knott Street, five in front of the church and four across the road from it, and the city numbered every one of them when it designated the lot in 1996.\n\nCaucasian wingnut is not a street tree anywhere. It comes from the forests between the Black Sea and the Caspian, it suckers freely, it wants wet feet, and no municipal planting manual recommends it. Somebody in Irvington planted nine.\n\nWhat you get for that is the catkins. Wingnut hangs green chains of winged seeds up to half a metre long through summer, so the whole line drips at once, which is a thing worth timing a walk for. The leaves are pinnate and ash-like, up to twenty leaflets, and the crowns are far wider than the trunks suggest: the biggest here is 2.3 metres round and throws a crown twenty three metres across.\n\nThey are the reason to start an Irvington walk at this corner. Everything else on this page in this neighbourhood is within six hundred metres of them.",
+      "verified_sources": [
+        "https://www.portland.gov/trees/heritage-trees (City of Portland Heritage Tree register, Portland City Code Title 11; CC BY-SA)"
+      ],
+      "access": "Free. Street trees on the public right of way.",
+      "transport": "NE Knott Street at 15th Avenue, Irvington, about 3 km northeast of downtown. Bus 8 to NE 15th and Knott.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A line of trees with long ash-like compound leaves and, in summer, hanging chains of winged green seeds. Five on the church side, four opposite.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          7
+        ],
+        "label": "July, when the seed chains hang at full length",
+        "kind": "catkins"
+      }
+    },
+    {
+      "id": "ptl_015",
+      "name": "The Eighteenth Avenue Planes",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "2407 NE 18th Avenue, Irvington",
+        "latitude": 45.53986,
+        "longitude": -122.64739,
+        "neighbourhood": "Irvington"
+      },
+      "story": "Two London planes stand one behind the other outside the same address, and the city registered them as a pair in 2005, recording one as the north tree and one as the south. The north is 4.8 metres round, the south 4.6, and between them they throw crowns twenty six and twenty seven metres across over a street that is twelve metres wide.\n\nThat is the London plane's entire case for existing. It was a chance hybrid, probably raised in seventeenth century Europe from an American sycamore and an oriental plane, and it turned out to tolerate compacted soil, road salt, drought and filthy air better than anything native to any of those places. Every industrial city in the northern hemisphere planted it. Portland planted these.\n\nThe bark is the giveaway: plane sheds it in plates, so the trunk is a camouflage of cream, olive and grey, and the shed pieces lie around the base like broken crockery.\n\nStand between them and look up. The two crowns have grown into each other and the street disappears.",
+      "verified_sources": [
+        "https://www.portland.gov/trees/heritage-trees (City of Portland Heritage Tree register, Portland City Code Title 11; CC BY-SA)"
+      ],
+      "access": "Free. Street trees on the public right of way.",
+      "transport": "NE 18th Avenue at Brazee, Irvington. Bus 8 to NE 15th and Knott, then four blocks east.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Two very large planes in line outside one house, with flaking cream and olive bark and crowns meeting overhead.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "ptl_016",
+      "name": "The Irvington Elm",
+      "species": "Field Elm (Ulmus minor)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "2546 NE 18th Avenue, Irvington",
+        "latitude": 45.54123,
+        "longitude": -122.64701,
+        "neighbourhood": "Irvington"
+      },
+      "story": "Thirty five metres tall on a trunk 4.5 metres round, which makes this the tallest street tree in Irvington and one of the tallest elms anywhere on this site.\n\nThat it is standing at all is the point. Dutch elm disease reached North America in 1930 and took an estimated hundred million trees, and it rewrote what American streets look like: the elm arch that shaded half the country's residential blocks is largely a photograph now. Portland was luckier than most, partly through geography and partly through an aggressive city programme of inspection and removal, and elms like this one are what luck plus effort left behind.\n\nField elm is the European native, no more resistant than any other, so this tree has simply not been found by the beetle that carries the fungus. Every year it goes unfound is another year.\n\nThe city registered it in 2003. Two blocks south stand the pair of heritage planes; the wingnut line is four blocks west.",
+      "verified_sources": [
+        "https://www.portland.gov/trees/heritage-trees (City of Portland Heritage Tree register, Portland City Code Title 11; CC BY-SA)"
+      ],
+      "access": "Free. Street tree on the public right of way.",
+      "transport": "NE 18th Avenue at Stanton, Irvington. Bus 8, then a short walk east.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A notably tall elm with a high, vase-shaped crown and small, asymmetric-based leaves rough to the touch.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "ptl_017",
+      "name": "The Thompson Street Horsechestnut",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "1529 NE Thompson Street, Irvington",
+        "latitude": 45.53923,
+        "longitude": -122.64951,
+        "neighbourhood": "Irvington"
+      },
+      "story": "Twenty nine metres is tall for a horse chestnut. The species usually gives up somewhere around twenty five and spends the difference on width instead, so this one, at 4.4 metres round and twenty across the crown, is a horse chestnut behaving like a forest tree.\n\nIt is also a tree with a job. Horse chestnut is the conker tree, and its entire modern distribution outside the Balkans is down to people wanting the fruit: the species is close to endangered in its native Pindus mountains and planted by the million everywhere else. The nuts are inedible, mildly poisonous, and were carried across Europe for centuries anyway because children want them.\n\nSo the two weeks to come are the last of September, when the spiny cases split on the pavement. Before that, in early May, the whole crown goes up in white candles with yellow throats that turn red once each flower has been pollinated, which is a signal to bees and a nice thing to know while standing underneath.\n\nPortland registered it in 2004.",
+      "verified_sources": [
+        "https://www.portland.gov/trees/heritage-trees (City of Portland Heritage Tree register, Portland City Code Title 11; CC BY-SA)"
+      ],
+      "access": "Free. Street tree on the public right of way.",
+      "transport": "NE Thompson Street at 15th Avenue, Irvington. Bus 8 to NE 15th and Knott.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A tall horse chestnut with big five-fingered leaves and, in autumn, spiny green cases splitting open on the pavement beneath.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9
+        ],
+        "label": "late September, when the conkers drop",
+        "kind": "fruit"
+      }
+    },
+    {
+      "id": "ptl_018",
+      "name": "The Twenty-Fourth Avenue Catalpas",
+      "species": "Northern Catalpa (Catalpa speciosa)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "2827 NE 24th Avenue, Irvington",
+        "latitude": 45.54317,
+        "longitude": -122.64121,
+        "neighbourhood": "Irvington"
+      },
+      "story": "A pair, registered together in 1994, the year Portland's heritage list opened. One is 4.1 metres round and twenty six tall, the other 3.8 and twenty three.\n\nNorthern catalpa is a tree that does everything conspicuously. The leaves are heart shaped and up to thirty centimetres long, so the crown reads as coarse from a distance. In June it flowers in upright trusses of white bells freckled with purple and yellow inside, thousands at once, and the fallen petals cover the pavement. Then it hangs seed pods like bean pods, forty centimetres or more, which stay on through winter and rattle, and which give the tree its American nickname of cigar tree.\n\nIts natural range is small, a patch of the Mississippi basin, and it got everywhere else because railway companies planted it in plantations for fence posts: catalpa wood rots slowly. The fashion collapsed, the trees stayed.\n\nCome in the second half of June. There is not much on this site that beats a large catalpa in full flower, and there are two of them here.",
+      "verified_sources": [
+        "https://www.portland.gov/trees/heritage-trees (City of Portland Heritage Tree register, Portland City Code Title 11; CC BY-SA)"
+      ],
+      "access": "Free. Street trees on the public right of way.",
+      "transport": "NE 24th Avenue at Thompson, Irvington. Bus 8, then five blocks east.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Two large trees with very big heart-shaped leaves and long thin seed pods hanging through winter.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          6
+        ],
+        "label": "the second half of June, when the white bells open",
+        "kind": "flowers"
+      }
+    },
+    {
+      "id": "ptl_019",
+      "name": "The Overlook Planes",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "3967 N Overlook Boulevard, Overlook",
+        "latitude": 45.55184,
+        "longitude": -122.68629,
+        "neighbourhood": "Overlook"
+      },
+      "story": "Three planes at one address on Overlook Boulevard, 5.4, 4.8 and 3.9 metres round, and the largest throws a crown thirty one metres across on a tree only twenty one metres tall. That ratio is the whole character of the group: they are wider than they are high, which a plane only manages with room and time.\n\nThe biggest of the three carries the largest London plane girth on Portland's heritage register, and the city designated all three together in 2018, which is late. A tree does not get to 5.4 metres round in seven years, so these were large for a long while before anyone wrote them down. That is normal for street trees and worth knowing when reading any heritage list: the designation year records when a city noticed, not when a tree started.\n\nOverlook sits on the bluff above the Willamette with the industrial river on one side and the West Hills opposite, so the walk out here comes with a view whether or not you care about planes.",
+      "verified_sources": [
+        "https://www.portland.gov/trees/heritage-trees (City of Portland Heritage Tree register, Portland City Code Title 11; CC BY-SA)"
+      ],
+      "access": "Free. Street trees on the public right of way.",
+      "transport": "N Overlook Boulevard, about 5 km north of downtown. MAX Yellow Line to Overlook Park.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Three large planes together outside one address, crowns much broader than tall, with flaking cream and grey bark.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "ptl_020",
+      "name": "The Irvington Sycamore",
+      "species": "American Sycamore (Platanus occidentalis)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "2524 NE 25th Avenue, Irvington",
+        "latitude": 45.54092,
+        "longitude": -122.64004,
+        "neighbourhood": "Irvington"
+      },
+      "story": "The city's note on this tree reads, in full, \"Big 13'\". That is the entire official record, written by whoever measured it in 1999, and it is not wrong: thirteen feet is 3.9 metres round, under a crown twenty six metres across.\n\nAmerican sycamore is the parent that gave the London plane its constitution, and side by side the difference is legible. Sycamore sheds bark higher and harder, so the upper limbs go bone white, and from a distance an old one looks as though someone has painted the top half. The leaves are broader and shallower lobed than the hybrid's, and the seed balls hang singly rather than in pairs, which is the field mark worth remembering.\n\nIt is the eastern end of the Irvington heritage cluster. From here the catalpas are a block north, the elm and the planes are six blocks west, and the wingnut line closes the walk at NE 15th, which is about a kilometre and a half all told.",
+      "verified_sources": [
+        "https://www.portland.gov/trees/heritage-trees (City of Portland Heritage Tree register, Portland City Code Title 11; CC BY-SA)"
+      ],
+      "access": "Free. Street tree on the public right of way.",
+      "transport": "NE 25th Avenue at Thompson, Irvington. Bus 8, then six blocks east.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A big plane-like tree with strikingly white upper limbs and single hanging seed balls.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
 }

@@ -113,7 +113,9 @@
         "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/554654043/original.jpg",
         "license": "CC BY",
         "attribution": "Juan Cruzado Cortés, via iNaturalist",
-        "status": "approved"
+        "status": "approved",
+        "width": 1536,
+        "height": 2048
       },
       "curation_status": "ai_generated",
       "notes": "Coordinates corrected 2026-07-26 to the tree's own OpenStreetMap node (id 3497610360, named \"Tejo del Palacio de Velázquez del Retiro\", an exact name match to this tree and its Spanish Wikipedia article). Photo (iNaturalist observation 307498789, 13-15m from the confirmed pin, tagged cultivated) viewed directly: dense yew foliage with multiple visible trunks, consistent with the tree's own three-trunked description.",
@@ -356,7 +358,9 @@
         "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/434001895/original.jpeg",
         "license": "CC BY 4.0",
         "attribution": "Cenaida, via iNaturalist",
-        "status": "approved"
+        "status": "approved",
+        "width": 1536,
+        "height": 2048
       },
       "curation_status": "flagged",
       "notes": "Age is estimated from the park's known 1784-1839 construction period rather than a specific planting-date source. Location corrected 2026-07-28: a geocode audit flagged the stored coordinate as roughly 1.4km from El Capricho. Nominatim's own geocode of the park's official name, \"Jardin historico El Capricho de la Alameda Osuna,\" places it at 40.4563, -3.5980, matching the Barajas neighbourhood already stated here. Moved onto the park; still approximate since no source gives the Casa del Cura hermitage's own position within it. Photo added 2026-07-29: an iNaturalist CC BY observation (Cenaida, 22 Sept 2024, id 243394911) of a Pinus pinea inside El Capricho, viewed directly and confirmed as a genuine stone-pine photo taken in a shrubby, wooded corner of the park. Held at found_needs_check rather than approved because the park's own documentation describes several catalogued stone pines near the Casa del Cura meadow, and this photo's generic place_guess cannot confirm it is specifically the one singled out as the singular specimen rather than one of its neighbours. A 2026-07-31 session with working image tooling rendered it directly and agrees with this read: the frame shows two to three similar stone-pine trunks together from below, with no way to tell which, if any, is the catalogued specimen rather than a neighbour. Left at found_needs_check; this is an identity question a photo can't settle, not a framing or quality one, so a future session would need a source that individually locates the catalogued tree before promoting any photo here.",

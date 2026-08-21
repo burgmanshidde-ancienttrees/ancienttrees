@@ -27,6 +27,10 @@ export interface FeedTree {
   name: string;
   species: string | null;
   age: string | null;
+  /// Numeric bounds where the city file has them: the app sorts an
+  /// "oldest trees" shelf on these, which a prose age cannot do.
+  age_min: number | null;
+  age_max: number | null;
   lat: number;
   lng: number;
   city: string;
@@ -62,6 +66,8 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
         name: t.name,
         species: t.species ?? null,
         age: t.age_estimate ?? null,
+        age_min: (t as any).age_min ?? null,
+        age_max: (t as any).age_max ?? null,
         lat: loc.latitude,
         lng: loc.longitude,
         city: city.data.city,

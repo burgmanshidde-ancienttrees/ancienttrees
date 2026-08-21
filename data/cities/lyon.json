@@ -50,7 +50,9 @@
         "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/212211177/medium.jpg",
         "license": "CC BY",
         "attribution": "Julien Lepage, via iNaturalist",
-        "status": "approved"
+        "status": "approved",
+        "width": 500,
+        "height": 281
       },
       "curation_status": "flagged",
       "notes": "The 'Pin de Napoléon' nickname's origin is not documented in any source checked; not claimed as connected to Napoleon himself, only reported as a local name. A matching photo exists on Flickr (user Michele 69600) but is marked All Rights Reserved, not a usable open licence, so not used per hard rule 4. Photo viewed directly: shows a multi-trunked pine with distinctive pale, mottled grey-cream-green patchwork bark, exactly the trait the story describes, beside a small park information sign. Approved.",
@@ -378,11 +380,13 @@
         "neighbourhood": "Part-Dieu, 3rd arrondissement"
       },
       "story": "This chestnut is not old. It is barely twelve, planted at the centre of Place Marc-Aron in December 2014 to replace a statue called Renaissance that the square's renovation had removed. What makes it worth a stop is where it comes from: it is a cutting from the horse chestnut Anne Frank could see through the attic window of her hiding place in Amsterdam, the tree she described in her diary as one of the only things connecting her to the outside world.\n\nThat original tree fell in a storm on 23 August 2010. Before it went, the Anne Frank Foundation had already taken roughly 150 cuttings and sent saplings to institutions and public spaces worldwide, Washington DC, Jerusalem and Paris among them, so the tree from the diary kept growing in dozens of places after the original one did not. Lyon's arrived on rue Moncey in a public ceremony and now stands in a small square two minutes' walk from Place Guichard metro station, marked by nothing more than its own planting.\n\nIt will not be Lyon's oldest or largest tree for a very long time, maybe not ever. It is here because of what it descends from rather than what it has personally witnessed, the one entry on this list whose whole story predates its own roots.",
-   "best_time": {
-    "months": [5],
-    "kind": "flowers",
-    "label": "May, when white candles stand upright over the whole crown"
-   },
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when white candles stand upright over the whole crown"
+      },
       "verified_sources": [
         "https://www.wikidata.org/wiki/Q63253791",
         "https://www.lyonembellissement.com/articles/120722-un-marronnier-souvenir-d-anne-frank-place-marc-aron"
@@ -443,11 +447,15 @@
         "neighbourhood": "Point du Jour, Lyon 5th arrondissement"
       },
       "story": "The square's namesake hid people from the Gestapo two streets from here. Gabrielle Dupond-Ebrard lived at 13 avenue du Point du Jour until 1985, working with the Combat resistance network under Pierre Guillain de Benouville, and her house served as a secretariat and shelter for refugees during the German occupation. Lyon later named this small square after her, and the cedar growing in it now outranks almost everything else about the place: a local streets guide calls it simply the square's main feature.\n\nNobody has measured it. The city's own register of remarkable trees lists it only as a very large specimen, with no planting year and no girth on file, unusual for a species normally easy to date from its own architecture. Cedar of Lebanon grows a tiered, almost horizontal branch structure as it ages, each level wider than the one above it, so the size the register does record is at least visible rather than guessed.\n\nThe square sits about 450 metres from the giant chestnut of Parc de la Garde, already on this list, so the two make an easy pair on the same walk through Point du Jour. If you know how old this cedar is, or can get a tape around the trunk, tell us.",
-   "best_time": {
-    "months": [9, 10, 11],
-    "kind": "fruit",
-    "label": "autumn, when upright barrel cones sit on the branches like eggs"
-   },
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "kind": "fruit",
+        "label": "autumn, when upright barrel cones sit on the branches like eggs"
+      },
       "verified_sources": [
         "Metropole de Lyon PLU-H remarkable-tree register (register_id 4318, condition: Tres grand exemplaire, last surveyed 2019-04-19)",
         "https://www.ruesdelyon.net/square/917-square-gabielle-dupond-ebrard.html"
