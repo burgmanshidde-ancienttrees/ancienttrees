@@ -124,6 +124,22 @@ chip row, unreachable; full now stops 124 points short of the top. Neither
 shows on a 17 Pro, which is the phone the app was being looked at on.
 Re-verified on the merge: both phones green, 0 findings.
 
+**And main's new walk test had the last red.** It read "1 of 14 ticked
+off" on the runner (it launched without `-reset-collection`, so a tick from
+an earlier test was still there), tapped, and then waited for a label
+that does NOT CONTAIN "1", which "2 of 14" never satisfies. It launches
+clean now and waits for the exact next count. Read from the result bundle
+the workflow now keeps, without a local reproduction.
+
+**The runner is on Xcode 16.4, not 26.6.** The workflow's "Which Xcode"
+step selects Xcode_26.6 with `|| true` and the macos-15 image does not
+have it, so every CI build is against the iOS 18 SDK on an iOS 18
+simulator, while this Mac builds with 26.6 on iOS 26. That is why the
+runner saw a 40 point pill where this Mac saw 44, and why main's
+SpeciesGlyph compiled here and not there. Left as it is for now: it is a
+real second compiler, which today caught a real bug, and the fix (a
+runner image that has 26.6) is a choice for a session with Hidde.
+
 FOR HIDDE: the three gate changes above loosen what the app's layout check
 sees, and your ratchet says removing a check needs you. None is removed,
 but nav-bar exemption, sheet isolation and the 0.957 read-back are calls I
