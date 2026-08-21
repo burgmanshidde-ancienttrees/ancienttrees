@@ -209,21 +209,43 @@ export interface CityEntryLike {
   trees?: TreeLike[];
 }
 
-/** The city's face photo url at card size: hero_tree_id first, else the
- * first tree with a usable photo, else null. */
+/** The city's face photo url at card size: the hero tree when it has a photo
+ * big enough for the box, else the biggest landscape photograph in the city,
+ * else whatever there is.
+ *
+ * Hero-or-first-found was how a 375px file came to front a city everywhere
+ * (Hidde, 2026-08-21, on soft thumbnails in the map sidebar). The rank is the
+ * same one the homepage shelves use: enough pixels first, landscape second,
+ * widest third, because these boxes are all letterboxes.
+ */
 export function cityFace(cityData: CityEntryLike, width = 400): string | null {
-  const hero = cityData.hero_tree_id;
   const trees = cityData.trees ?? [];
-  if (hero) {
-    const t = trees.find((t) => t.id === hero);
-    if (t) {
-      const p = usablePhoto(t);
-      if (p?.url) return thumbUrl(p.url, width);
-    }
-  }
-  for (const t of trees) {
-    const p = usablePhoto(t);
-    if (p?.url) return thumbUrl(p.url, width);
-  }
-  return null;
+  const rank = (t: TreeLike | undefined) => {
+    if (!t) return null;
+    const p = usablePhoto(t) as { url?: string; width?: number; height?: number } | null;
+    if (!p?.url) return null;
+    const w = photoWidth(p);
+    const h = p.height ?? 0;
+    return { url: p.url, big: w === 0 || w >= MIN_CARD_PX, landscape: w > 0 && h > 0 && w >= h, w };
+  };
+  const hero = cityData.hero_tree_id
+    ? rank(trees.find((t) => t.id === cityData.hero_tree_id)) : null;
+  if (hero?.big) return thumbUrl(hero.url, width);
+  const best = trees
+    .map(rank)
+    .filter((c): c is NonNullable<typeof c> => c !== null)
+    .sort((a, b) => Number(b.big) - Number(a.big)
+      || Number(b.landscape) - Number(a.landscape) || b.w - a.w)[0];
+  if (best) return thumbUrl(best.url, width);
+  return hero ? thumbUrl(hero.url, width) : null;
+}
+
+/** The same face, as a 1x/2x pair for a fixed-size box. A retina screen paints
+ * an 86 point sidebar thumbnail with 172 pixels; asking for 86 is what made
+ * those look soft. */
+export function cityFaceSrcset(cityData: CityEntryLike, boxWidth: number): { src: string; srcset: string } | null {
+  const one = cityFace(cityData, boxWidth);
+  if (!one) return null;
+  const two = cityFace(cityData, boxWidth * 2);
+  return { src: one, srcset: two === one ? one + " 1x" : `${one} 1x, ${two} 2x` };
 }
