@@ -104,6 +104,13 @@ has already offered something, the ask is not a new one at all: accept theirs
 and name the form it could take, following their lead rather than opening a
 second front.
 
-Both are now in `scripts/mailcheck.py` (DECLINING WHAT THEY OFFERED, ASKING
-TWICE), the second reading data/outreach-sent.json so it knows what this
-address was already asked.
+**And no sentence that promises to arrange something unnamed.** The rewrite
+still ended the paragraph with "diga-me o que precisa de mim e eu trato do
+resto", and he cut it: "wij regelen de rest, wat moet er dan geregeld worden,
+haal maar weg." There was nothing to arrange, so the sentence was there to
+sound willing. It is the same fault as the sentence that announces what the
+next sentence will do, and the same fix: say the concrete thing or say nothing.
+
+All three are now in `scripts/mailcheck.py` (DECLINING WHAT THEY OFFERED,
+ASKING TWICE, PROMISING UNNAMED WORK); the second reads
+data/outreach-sent.json so it knows what this address was already asked.

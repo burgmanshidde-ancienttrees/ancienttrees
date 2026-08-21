@@ -33,6 +33,8 @@ Four failure modes, all recorded, all mine:
    the refusal down and the mail becomes a rejection letter; talk past it and
    answer the half we do want, and nothing is lost.
 6. ASKING TWICE. The same ask to somebody who already had it reads as need.
+7. PROMISING UNNAMED WORK. "I'll take care of the rest" commits to nothing and
+   invents an arrangement nobody asked for.
 
 What it CANNOT check is the positive half, which is where his own drafts win,
 so read this before writing rather than only after. A mail of his GIVES before
@@ -121,6 +123,21 @@ CHECKS = [
         r"[^.!?\n]{0,70}"
         r"(?:is not (?:necessary|needed)|isn't necessary|n(?:ã|a)o (?:é|e) preciso|"
         r"niet nodig|hoeft niet|nicht n(?:ö|oe)tig)",
+    ]),
+    # Hidde, 2026-08-21, on "Diga-me o que precisa de mim e eu trato do resto":
+    # "wij regelen de rest, wat moet er dan geregeld worden, haal maar weg."
+    # A sentence that promises unnamed work is filler wearing a suit: it commits
+    # to nothing, it invents an arrangement neither side asked for, and it makes
+    # the writer sound busy rather than useful. Say the concrete thing or say
+    # nothing.
+    ("PROMISING UNNAMED WORK", [
+        r"(?:trato|tratamos) do resto", r"o resto (?:fico|ficamos) (?:eu|n(?:ó|o)s)",
+        r"(?:de rest|het overige) regel ik", r"regel ik verder",
+        r"I(?:'ll| will) (?:take care of|handle|sort out) the rest",
+        r"leave the rest to me", r"del resto me encargo",
+        r"den Rest (?:mache|erledige) ich",
+        r"(?:zeg maar|diga-me|dime|sag mir|tell me) (?:maar )?(?:wat|o que|lo que|was|what)"
+        r"[^.!?\n]{0,40}(?:nodig|precisa|necesita|brauchen|need)",
     ]),
     ("PROCESS-PITCHING", [
         r"two independent sources", r"\bwe verify\b", r"\bour (?:process|method|workflow)\b",
