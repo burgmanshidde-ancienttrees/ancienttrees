@@ -1,0 +1,66 @@
+{
+ "common_name": "Judas Tree",
+ "habit": "deciduous",
+ "leaf": [
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "flowers": [
+  4,
+  5
+ ],
+ "fruit": [
+  8,
+  9,
+  10,
+  11
+ ],
+ "colour": [
+  10
+ ],
+ "bare": [
+  11,
+  12,
+  1,
+  2,
+  3,
+  4
+ ],
+ "intensity": {
+  "flowers": "worth the trip",
+  "fruit": "nice",
+  "colour": "nice"
+ },
+ "flower_label": "magenta pea flowers open straight out of the bare trunk and the oldest branches, not from the twigs, so the whole frame of the tree flowers at once",
+ "flower_colour": "#C8477E",
+ "flower_peak": 5,
+ "flower_days": "two to three weeks, before a single leaf is out",
+ "fruit_label": "flat purple-brown pods hang in bunches and stay on through winter",
+ "colour_label": "clear yellow, and the heart-shaped leaves fall quickly",
+ "peak": {
+  "moment": "flowers",
+  "months": [
+   5
+  ],
+  "share": true,
+  "map": {
+   "effect": "blossom",
+   "colour": "#C8477E",
+   "pulse": true
+  },
+  "surfaces": [
+   "map",
+   "push",
+   "tree",
+   "city"
+  ]
+ },
+ "sources": [
+  "https://www.rhs.org.uk/plants/3617/cercis-siliquastrum/details",
+  "https://www.treesandshrubsonline.org/articles/cercis/cercis-siliquastrum/"
+ ]
+}
