@@ -76,7 +76,9 @@ struct TreeMap: UIViewRepresentable {
             map.addSubview(recentre)
             NSLayoutConstraint.activate([
                 recentre.trailingAnchor.constraint(equalTo: map.safeAreaLayoutGuide.trailingAnchor, constant: -12),
-                recentre.topAnchor.constraint(equalTo: map.safeAreaLayoutGuide.topAnchor, constant: 112),
+                // 208 = the sheet's peek height plus a hair, so the button
+                // sits just above the lip of the sheet rather than behind it.
+                recentre.bottomAnchor.constraint(equalTo: map.bottomAnchor, constant: -208),
                 recentre.widthAnchor.constraint(equalToConstant: 44),
                 recentre.heightAnchor.constraint(equalToConstant: 44),
             ])

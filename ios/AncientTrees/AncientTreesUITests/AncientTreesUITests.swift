@@ -30,6 +30,15 @@ final class AncientTreesUITests: XCTestCase {
         XCUIDevice.shared.appearance = .light
     }
 
+    /// At peek the sheet takes no taps, by design since 2026-08-21: a finger
+    /// there belongs to the sheet so a swipe up raises it instead of opening
+    /// whatever card it started on. So a test that wants a card raises the
+    /// sheet first, exactly as a person does.
+    @MainActor
+    private func raiseSheet(_ app: XCUIApplication) {
+        app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.88)).tap()
+    }
+
     private func launch(_ args: [String] = []) -> XCUIApplication {
         let app = XCUIApplication()
         // A fixed origin keeps the test off the location permission dialog and
@@ -45,6 +54,7 @@ final class AncientTreesUITests: XCTestCase {
     @MainActor
     func testTreePageFromTheMapHasAWayBack() throws {
         let app = launch(["-map"])
+        raiseSheet(app)
 
         // The sheet's first card, whatever tree it happens to be today.
         let firstCard = app.buttons.matching(identifier: "tree-card").firstMatch
@@ -60,49 +70,26 @@ final class AncientTreesUITests: XCTestCase {
                       "back did not return to the map tab")
     }
 
-    /// Ticking a tree off is the product's own verb and the moment the account
-    /// is asked for, so it must survive the tap rather than only compile.
-    ///
-    /// Asserted unconditionally. The first version wrapped everything in
-    /// `if tick.waitForExistence`, so when the button could not be found the
-    /// test passed while proving nothing, and it sat green through a day in
-    /// which the thing it covers was never once exercised.
+    /// Collecting is something you do standing in front of the tree, so the
+    /// tree PAGE cannot do it (Hidde, 2026-08-21: "die collect-knop die ik
+    /// zomaar aan kan klikken, die moet daar weg"). The page keeps the heart,
+    /// which is a wish rather than a claim; the tick lives in Spot, where
+    /// being near is what puts a tree in front of you.
     @MainActor
-    func testTickingATreeKeepsIt() throws {
+    func testATreePageCannotCollectForYou() throws {
         let app = launch(["-map"])
-
+        raiseSheet(app)
         let firstCard = app.buttons.matching(identifier: "tree-card").firstMatch
         XCTAssertTrue(firstCard.waitForExistence(timeout: 12))
         firstCard.tap()
-
-        // By the label the button actually carries, not by the symbol's name.
-        let tick = app.buttons["I have stood in front of this tree"]
-        XCTAssertTrue(tick.waitForExistence(timeout: 6), "no tick button on the tree page")
-        tick.tap()
-
-        XCTAssertTrue(app.buttons["Ticked off. Tap to undo"].waitForExistence(timeout: 5)
-                      || app.staticTexts["That one is yours"].waitForExistence(timeout: 5),
-                      "ticking a tree left no visible trace")
-    }
-
-    /// A pushed tree page hides the tab bar (Hidde's own finding: it sits
-    /// there doing nothing), and Back restores it. Replaced the old
-    /// tap-the-active-tab test, whose gesture needs the bar this design hides.
-    @MainActor
-    func testThePushedPageHidesTheBarAndBackRestoresIt() throws {
-        let app = launch(["-map"])
-
-        let firstCard = app.buttons.matching(identifier: "tree-card").firstMatch
-        XCTAssertTrue(firstCard.waitForExistence(timeout: 10))
-        firstCard.tap()
-        XCTAssertTrue(app.buttons["Take me there"].waitForExistence(timeout: 5),
+        XCTAssertTrue(app.buttons["Take me there"].waitForExistence(timeout: 6),
                       "a tree page did not open")
-        XCTAssertFalse(app.tabBars.buttons["Map"].isHittable,
-                       "the tab bar is still sitting on a tree page")
 
-        app.navigationBars.buttons.firstMatch.tap()
-        XCTAssertTrue(app.tabBars.buttons["Map"].waitForExistence(timeout: 5),
-                      "back did not bring the bar home")
+        XCTAssertFalse(app.buttons["I have stood in front of this tree"].exists,
+                       "the tree page still collects for you")
+        XCTAssertTrue(app.buttons.matching(
+            NSPredicate(format: "label BEGINSWITH 'Save '")).firstMatch.exists,
+                      "the heart went with the tick; it should not have")
     }
 
     /// Panning the map has to move the list under it, which is the one thing in

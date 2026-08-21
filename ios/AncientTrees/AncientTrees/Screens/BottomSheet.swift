@@ -41,7 +41,7 @@ enum SheetHeight: CaseIterable {
         // Tall enough to clear the floating tab bar AND still show a whole
         // card. At 160 the tab bar ate most of it and the first tree card was
         // sliced in half, which is what the sheet is entirely for.
-        case .peek: 268
+        case .peek: 196
         case .half: total * 0.52
         // Full stops 124 points short of the top, never 8 percent of it: on
         // an iPhone SE 8 percent is 53 points, and the sheet's search field
@@ -88,11 +88,27 @@ struct BottomSheet<Content: View>: View {
                         .frame(maxWidth: .infinity, alignment: .top)
                 }
                 .scrollDisabled(height != .full || handingOff)
+                // At peek the content is a PREVIEW, not a control panel. Every
+                // finger that lands here belongs to the sheet, so a swipe up
+                // raises it instead of half-raising it and opening whatever
+                // card it started on (Hidde, 2026-08-21: "het is bijna
+                // onmogelijk om de lijst omhoog te swipen zonder de boom aan
+                // te klikken. Als ik omhoog swipe moet het ding omhoog komen
+                // en dan pas moet ik erop kunnen klikken"). Google Maps and
+                // Apple Maps both do exactly this.
+                .allowsHitTesting(height != .peek)
                 .onScrollGeometryChange(for: CGFloat.self) { $0.contentOffset.y } action: { _, y in
                     atTop = y <= 1
                 }
             }
             .frame(height: h)
+            .overlay {
+                if height == .peek {
+                    Color.clear
+                        .contentShape(.rect)
+                        .onTapGesture { withAnimation(.spring(duration: 0.28)) { height = .half } }
+                }
+            }
             .frame(maxWidth: .infinity)
             .background(.regularMaterial)
             .clipShape(.rect(topLeadingRadius: 16, topTrailingRadius: 16))

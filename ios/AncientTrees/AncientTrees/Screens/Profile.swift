@@ -28,11 +28,13 @@ struct ProfileView: View {
     let catalogue: Catalogue
     @Environment(Saved.self) private var saved
     @Environment(Account.self) private var account
+    @Environment(Navigator.self) private var navigator
 
     @State private var signingIn = false
     @State private var confirmingDelete = false
     @State private var deleteFailed = false
     @State private var plusPitch = false
+    @State private var showingAccount = false
     /// Debug scaffolding, same family as -tab and -open in ContentView: the
     /// screenshot sweep cannot tap, and this sheet is otherwise only reachable
     /// by tapping a card on this screen.
@@ -42,8 +44,8 @@ struct ProfileView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 18) {
                 identity
-                plusCard
                 contributeCard
+                plusCard
                 linksCard
                 version
                 accountControls
@@ -56,6 +58,7 @@ struct ProfileView: View {
         .navigationBarTitleDisplayMode(.inline)
         .sheet(isPresented: $contributing) { ContributeView() }
         .sheet(isPresented: $plusPitch) { PaywallView(feature: .seasonAlerts) }
+        .sheet(isPresented: $showingAccount) { accountSheet }
         .sheet(isPresented: $signingIn) {
             SignInSheet(reason: saved.savedCount > 0 ? .keepCollection(saved.savedCount) : .general,
                         localCount: saved.savedCount)
@@ -97,8 +100,10 @@ struct ProfileView: View {
                     Text(account.email ?? "Signed in")
                         .font(.brand(18, .bold, relativeTo: .headline))
                         .foregroundStyle(Brand.ink).lineLimit(1)
+                    // A count is a promise that the things counted are
+                    // somewhere; this is the way there (Hidde, 2026-08-21).
                     Text("\(saved.visitedCount) collected · \(saved.savedCount) saved")
-                        .font(.footnote).foregroundStyle(Brand.inkSoft)
+                        .font(.footnote).foregroundStyle(Brand.moss)
                 } else {
                     Text("Sign in")
                         .font(.brand(18, .bold, relativeTo: .headline))
@@ -121,7 +126,9 @@ struct ProfileView: View {
         // profile page with a sign-in prompt does it. A pill button beside the
         // text squeezed the sentence into a four-line column.
         .contentShape(.rect)
-        .onTapGesture { if !account.isSignedIn { signingIn = true } }
+        .onTapGesture {
+            if account.isSignedIn { navigator.selectTab = 3 } else { signingIn = true }
+        }
         .accessibilityIdentifier("profile-signin")
     }
 
@@ -135,7 +142,7 @@ struct ProfileView: View {
         VStack(alignment: .leading, spacing: 10) {
             HStack(spacing: 10) {
                 Image(systemName: "leaf.fill").font(.title3).foregroundStyle(Brand.gold)
-                Text("Ancient Trees Plus")
+                Text("Plus")
                     .font(.brand(19, .heavy, relativeTo: .headline)).foregroundStyle(Brand.ink)
             }
             Text("Season alerts, curated walks, your own photographs and badges, and the whole map offline.")
@@ -185,6 +192,20 @@ struct ProfileView: View {
 
     private var linksCard: some View {
         VStack(spacing: 0) {
+            if account.isSignedIn {
+                Button { showingAccount = true } label: {
+                    HStack(spacing: 12) {
+                        Image(systemName: "envelope").frame(width: 20).foregroundStyle(Brand.moss)
+                        Text("Account").font(.callout).foregroundStyle(Brand.ink)
+                        Spacer()
+                        Image(systemName: "chevron.right")
+                            .font(.caption).foregroundStyle(Brand.inkSoft.opacity(0.6))
+                    }
+                    .padding(.horizontal, 16).frame(height: 48)
+                    .contentShape(.rect)
+                }
+                Divider().padding(.leading, 48)
+            }
             link("The website", "safari", "https://ancienttrees.app")
             Divider().padding(.leading, 48)
             link("Privacy", "lock", "https://ancienttrees.app/privacy")
@@ -211,6 +232,42 @@ struct ProfileView: View {
             .font(.caption2).foregroundStyle(Brand.inkSoft.opacity(0.8))
             .frame(maxWidth: .infinity, alignment: .center)
             .padding(.top, 4)
+    }
+
+    /// What we hold, in one screen, because "where do I change my email
+    /// address" deserves an answer rather than a missing row (Hidde,
+    /// 2026-08-21). Changing the address itself is not built: it needs a
+    /// verified swap on the server and it moves somebody's whole collection,
+    /// so it is Hidde's to open rather than mine.
+    private var accountSheet: some View {
+        NavigationStack {
+            VStack(alignment: .leading, spacing: 16) {
+                Text("Signed in as")
+                    .font(.footnote).foregroundStyle(Brand.inkSoft)
+                Text(account.email ?? "Signed in")
+                    .font(.brand(20, .bold)).foregroundStyle(Brand.ink)
+                Text("Your collection is kept under this address. Sign in on ancienttrees.app with the same one and it is there too.")
+                    .font(.footnote).foregroundStyle(Brand.inkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+                Text("We hold your email address and the trees you have saved and collected. Nothing else.")
+                    .font(.footnote).foregroundStyle(Brand.inkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+                Text("To use a different address, write to info@ancienttrees.app and we will move your collection across.")
+                    .font(.footnote).foregroundStyle(Brand.inkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+                Spacer()
+            }
+            .padding(20)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .brandGround()
+            .navigationTitle("Account")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Done") { showingAccount = false }
+                }
+            }
+        }
     }
 
     // MARK: - the two that go last
