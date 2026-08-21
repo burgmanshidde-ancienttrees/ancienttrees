@@ -47,6 +47,21 @@ public struct BestTime: Codable, Hashable, Sendable {
     public func isNow(_ month: Int) -> Bool { months.contains(month) }
 }
 
+/// The species' one moment of the year worth a trip, and what this pin should
+/// do about it. Computed on the server from data/phenology and already shifted
+/// for the tree's latitude, so the app never has to know that a Melbourne
+/// ginkgo turns in May. The same field drives the website's map, which is the
+/// point: one calculation, two surfaces, the same tree lighting up on the same
+/// day (Hidde, 2026-08-21).
+public struct Peak: Codable, Hashable, Sendable {
+    public let months: [Int]
+    public let effect: String
+    public let colour: String
+
+    /// Is this tree having its moment in the given month?
+    public func isNow(_ month: Int) -> Bool { months.contains(month) }
+}
+
 public struct Tree: Codable, Identifiable, Hashable, Sendable {
     public let id: String
     public let name: String
@@ -65,10 +80,11 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
     public let precision: Precision
     public let photo: Photo?
     public let bestTime: BestTime?
+    public let peak: Peak?
 
     enum CodingKeys: String, CodingKey {
         case id, name, species, age, lat, lng, city, country, neighbourhood
-        case access, transport, story, url, precision, photo
+        case access, transport, story, url, precision, photo, peak
         case citySlug = "city_slug"
         case bestTime = "best_time"
     }
@@ -121,6 +137,13 @@ public struct TreeFeed: Codable, Sendable {
     public let version: String
     public let count: Int
     public let trees: [Tree]
+}
+
+/// Identity for the places SwiftUI needs one: presenting Begin as a
+/// fullScreenCover, mostly. City slug plus name, which is what makes a walk
+/// unique in the feed as well.
+extension Walk: Identifiable {
+    public var id: String { citySlug + "|" + name }
 }
 
 public struct WalkFeed: Codable, Sendable {
