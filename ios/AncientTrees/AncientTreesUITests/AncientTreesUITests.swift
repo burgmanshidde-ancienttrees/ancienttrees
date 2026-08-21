@@ -24,7 +24,9 @@ final class AncientTreesUITests: XCTestCase {
         let app = XCUIApplication()
         // A fixed origin keeps the test off the location permission dialog and
         // makes the list deterministic: Amsterdam always has trees near it.
-        app.launchArguments = ["-at=52.3731,4.8922"] + args
+        // And a clean collection, because serial testing shares one simulator
+        // across every test and a tick left by one would greet the next.
+        app.launchArguments = ["-at=52.3731,4.8922", "-reset"] + args
         app.launch()
         return app
     }
@@ -266,7 +268,7 @@ final class AncientTreesUITests: XCTestCase {
     @MainActor
     func testSpotAlwaysOffersBothOutcomes() throws {
         let app = XCUIApplication()
-        app.launchArguments = ["-at=52.3667,4.9086", "-spot"]   // Wertheimpark gate
+        app.launchArguments = ["-at=52.3667,4.9086", "-reset", "-spot"]   // Wertheimpark gate
         app.launch()
         XCTAssertTrue(app.staticTexts["Which tree did you find?"].waitForExistence(timeout: 10),
                       "no tick list next to a tree we map")
@@ -274,7 +276,7 @@ final class AncientTreesUITests: XCTestCase {
                       "the add-path is missing from the tick list")
 
         let far = XCUIApplication()
-        far.launchArguments = ["-at=52.03,5.91", "-spot"]       // a field near Arnhem
+        far.launchArguments = ["-at=52.03,5.91", "-reset", "-spot"]       // a field near Arnhem
         far.launch()
         XCTAssertTrue(far.staticTexts["No tree on our map here"].waitForExistence(timeout: 10),
                       "the add-form is not the headline where we map nothing")
