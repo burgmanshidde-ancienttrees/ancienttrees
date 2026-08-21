@@ -107,6 +107,23 @@ const directoryHtml =
 const usedPhotos = new Set<string>();
 
 type AnyTree = CityEntry["data"]["trees"][number];
+const treeById = new Map<string, AnyTree>();
+for (const c of renderable) for (const t of c.data.trees) treeById.set(t.id, t);
+
+// A pinned face wins over any ranking, and is claimed before the shelves run
+// so no other shelf takes it first: only a person can see that a crown is bare
+// or that the parked cars are the subject (Hidde, 2026-08-21, on the London
+// Plane and Ginkgo cards). Set face_tree_id on the species file and the card
+// stops guessing.
+const pinnedSpeciesPhoto = new Map<string, string>();
+for (const intro of speciesIntros) {
+  const id = intro.data.face_tree_id;
+  const url = id ? usablePhoto(treeById.get(id) ?? ({} as AnyTree))?.url : null;
+  if (url) {
+    pinnedSpeciesPhoto.set(intro.data.common_name, url);
+    usedPhotos.add(url);
+  }
+}
 /** The best photograph in a set for a CARD, not the first one found.
  *
  * Two rules, both from what Hidde saw on 2026-08-21. Big enough first: a file
@@ -272,7 +289,7 @@ for (const c of renderable) {
 const speciesCards = speciesSlugs
   .map(([common, slug]) => {
     const trees = treesBySpecies.get(common) ?? [];
-    const photo = firstPhoto(trees);
+    const photo = pinnedSpeciesPhoto.get(common) ?? firstPhoto(trees);
     if (!photo) return null;
     return { n: trees.length, html: shelfCard(`/species/${slug}`, photo, common, `${trees.length} trees`) };
   })
