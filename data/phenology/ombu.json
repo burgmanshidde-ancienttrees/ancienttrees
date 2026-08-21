@@ -1,39 +1,40 @@
 {
-  "common_name": "Ombu",
-  "habit": "evergreen",
-  "leaf": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12
-  ],
-  "flowers": [
-    4,
-    5
-  ],
-  "fruit": [
-    7,
-    8,
-    9
-  ],
-  "colour": [],
-  "bare": [],
-  "intensity": {
-    "flowers": "nice",
-    "fruit": "nice"
-  },
-  "flower_label": "small white flowers cluster at the branch tips in spring",
-  "fruit_label": "clusters of soft berries ripen from green to yellow to black",
-  "sources": [
-    "https://en.jardineriaon.com/ombu-the-tree-of-the-beautiful-shadow.html",
-    "https://en.wikipedia.org/wiki/Phytolacca_dioica"
-  ]
+ "common_name": "Ombu",
+ "habit": "evergreen",
+ "leaf": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12
+ ],
+ "flowers": [
+  4,
+  5
+ ],
+ "fruit": [
+  7,
+  8,
+  9
+ ],
+ "colour": [],
+ "bare": [],
+ "intensity": {
+  "flowers": "nice",
+  "fruit": "nice"
+ },
+ "flower_label": "small white flowers cluster at the branch tips in spring",
+ "fruit_label": "clusters of soft berries ripen from green to yellow to black",
+ "sources": [
+  "https://en.jardineriaon.com/ombu-the-tree-of-the-beautiful-shadow.html",
+  "https://en.wikipedia.org/wiki/Phytolacca_dioica"
+ ],
+ "flower_colour": "#F4F0E4"
 }

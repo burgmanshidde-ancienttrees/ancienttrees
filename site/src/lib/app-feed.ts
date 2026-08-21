@@ -47,7 +47,7 @@ export interface FeedTree {
    * same day rather than each deciding for itself (Hidde, 2026-08-21: app en
    * web gelijk trekken). Null where the species has no peak, and inside the
    * tropics, where phenologyFor refuses to guess a calendar at all. */
-  peak: { months: number[]; effect: string; colour: string } | null;
+  peak: { months: number[]; effect: string; colour: string; level?: string } | null;
   story: string | null;
   url: string;
   photo: { url: string; license: string | null; attribution: string | null;
@@ -80,7 +80,7 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
         best_time: t.best_time ?? null,
         peak: (() => {
           const pk = peakFor(t, loc.latitude);
-          return pk?.map ? { months: pk.months, effect: pk.map.effect, colour: pk.map.colour } : null;
+          return pk?.map ? { months: pk.months, effect: pk.map.effect, colour: pk.map.colour, ...(pk.level ? { level: pk.level } : {}) } : null;
         })(),
         story: t.story ?? null,
         url: `/${city.id}/${slugify(t.name)}`,

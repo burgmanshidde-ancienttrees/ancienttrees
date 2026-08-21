@@ -198,6 +198,7 @@ interface PhenologyEntry {
   fruit_label?: string;
   colour_label?: string;
   peak?: PhenologyPeak;
+  flower_colour?: string;
 }
 
 /** The one moment of the year this species is worth a trip for, and what the
@@ -209,6 +210,9 @@ export interface PhenologyPeak {
   share?: boolean;
   map?: { effect: string; colour: string; pulse?: boolean };
   surfaces?: string[];
+  /** Only set on a derived blossom, so the pin can be quieter for a flowering
+   * that is merely nice than for one worth crossing town for. */
+  level?: string;
 }
 
 let cachedPhenology: Map<string, PhenologyEntry> | null = null;
@@ -327,7 +331,29 @@ export function phenologyFor(tree: Tree, lat: number): PhenologyEntry | null {
  * already refuses to guess a calendar. */
 export function peakFor(tree: Tree, lat: number): PhenologyPeak | null {
   const e = phenologyFor(tree, lat);
-  return e?.peak?.map ? e.peak : null;
+  if (!e) return null;
+  // The curated moment first: one per species, the thing that species is worth
+  // a trip for. Colour, fruit, catkins.
+  if (e.peak?.map) return e.peak;
+  // Then blossom, which is not curated at all. Hidde, 2026-08-21: "alle bomen
+  // die bloeien mogen de animatie van bloei in de kleur van hun bloei, op hun
+  // moment." So a flowering species blooms on the map in its own colour, and
+  // the only disqualification is that nobody can see it. A plane flowers every
+  // April and no one has ever noticed; that is what intensity 'unseen' records.
+  const level = e.intensity?.flowers;
+  if (e.flower_colour && e.flowers?.length && level && level !== "unseen") {
+    return {
+      moment: "flowers",
+      months: e.flowers,
+      share: level === "worth the trip",
+      map: { effect: "blossom", colour: e.flower_colour, pulse: true },
+      // A subtle flowering whispers rather than announces. The pin reads the
+      // level and dials the halo and the petal count down for 'nice'.
+      surfaces: level === "nice" ? ["map"] : ["map", "tree", "city"],
+      level,
+    };
+  }
+  return null;
 }
 
 /** The year as one chart: how much there is to see, month by month. Falls
