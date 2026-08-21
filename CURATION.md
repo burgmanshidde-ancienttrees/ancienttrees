@@ -24,6 +24,30 @@ location or vitality problem, so nothing on the page needed to change.
 Marked processed in `data/submissions-processed.json` (id 10). No email on
 the row, so no reply owed.
 
+## 2026-08-21 (session) - Florence's two cheapest leads (Bobolino pine, Simone Weil cypress) checked, confirmed still single-sourced
+
+Both are held back only for want of a second source per data/leads/florence.json
+(the pine stands 25m from live flo_007, the cypress 90m from the same cluster,
+so either would be a genuinely zero-cost addition if a second source existed).
+Fetched the comune di Firenze's own press release on its 29 monumental trees
+directly (ambiente.comune.fi.it and comune.firenze.it) rather than trusting
+the search summary, which initially and wrongly implied the comune page names
+the pine (it does not; only "Cedro dell'incenso" appears on the Bobolino park
+page itself). The press release does confirm the pine and Cedar of Lebanon at
+Bobolino by name, but also states plainly that the municipal census IS the
+data submitted to the Region and merged into the national MASAF Geoportale:
+"la Regione Toscana ha gia completato l'inserimento dei dati sul Geoportale
+ministeriale". So the comune announcement and the MASAF register are the same
+designation act reported twice, one source, exactly as the leads file already
+warned. intoscana.it's article repeats the same municipal announcement,
+likewise not independent. No RAMI per-tree page or municipal park inventory
+entry found for either tree. Left both as leads; the earlier pass's judgement
+was correct. Also checked the Giardino dell'Iris strawberry tree (corbezzolo):
+confirmed independently that the garden opens only 2-20 May each year, free,
+which settles its access caveat if it ever ships, but found no dedicated
+second source for the tree itself either. No changes made; recorded so a
+future Florence pass does not re-run these same three searches.
+
 ## 2026-08-21 (session) - Munich 29 to 30, Vienna 27 to 28: one register lead each, closing the earlier "not worth a fresh pass" finding
 
 Follows up on the same day's "Rome, Florence and Vienna's leads.py READY
