@@ -24,10 +24,14 @@ public final class Navigator {
     /// it, MapTab selects it and clears it.
     public var showOnMap: String?
 
-    /// Which of Explore's two modes is showing: the shelves or the map. Lives
-    /// here rather than in the view so that "show me this tree on the map" can
-    /// flip it from anywhere, the same way showOnMap already crosses tabs.
-    public var exploreShowsMap = false
+    /// A walk somebody wants to WALK, by city slug and name. The root turns it
+    /// into the full-screen Begin mode and clears it, the same shape as
+    /// showOnMap, so a walk card anywhere can start one without every screen
+    /// owning a copy of that screen.
+    public struct WalkRef: Equatable { public let city: String; public let name: String
+        public init(city: String, name: String) { self.city = city; self.name = name } }
+    public var beginWalk: WalkRef?
+
 
     public init() {}
 }

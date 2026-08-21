@@ -225,12 +225,28 @@ final class TreePinView: MKMarkerAnnotationView {
             // only the ones whose month is this month pulse, so a screen full of
             // pins has a handful breathing on it rather than all of them.
             let now = Calendar.current.component(.month, from: Date())
-            let peaking = (annotation as? TreeAnnotation)?.tree.bestTime?.isNow(now) ?? false
+            let tree = (annotation as? TreeAnnotation)?.tree
+            let peak = tree?.peak
+            let peaking = peak?.isNow(now) ?? false
+
+            // The glyph is the SPECIES, always, not a generic tree icon. That is
+            // what the website's pins have always been and what the app was
+            // missing: a ginkgo pin looks like a ginkgo before you tap it. It
+            // works for every tree, because every tree carries a species while
+            // only a quarter carry a photograph.
+            glyphImage = tree.map { SpeciesGlyph.image(for: $0.commonName) }
+                ?? UIImage(systemName: "tree.fill")
+
+            // And when the species is having its moment, the pin takes the
+            // colour of that moment rather than one shared gold. A ginkgo goes
+            // butter yellow in November, a cherry pink in spring, a beech
+            // copper in October. The colour comes from the feed, computed once
+            // on the server, so this pin and the website's light up the same
+            // tree on the same day.
             markerTintColor = peaking
-                ? UIColor(red: 0.85, green: 0.63, blue: 0.25, alpha: 1)
+                ? (UIColor(hex: peak?.colour) ?? UIColor(red: 0.85, green: 0.63, blue: 0.25, alpha: 1))
                 : UIColor(red: 0.20, green: 0.35, blue: 0.20, alpha: 1)
-            glyphImage = UIImage(systemName: peaking ? "sparkles" : "tree.fill")
-            setPulsing(peaking)
+            setPulsing(peaking, effect: peak?.effect)
         }
     }
 
@@ -238,17 +254,56 @@ final class TreePinView: MKMarkerAnnotationView {
 
     /// A slow breath rather than a blink. Reduce Motion turns it off, because a
     /// map covered in animation is exactly what that setting exists for.
-    private func setPulsing(_ on: Bool) {
+    ///
+    /// The strength follows the moment, matching the website's stylesheet. A
+    /// crown turning gold in three days is a display; acorns landing is a sound
+    /// in the background, so a fruiting pin breathes at less than half the
+    /// amplitude and takes half again as long over it (Hidde, 2026-08-20: "de
+    /// vrucht animatie kan dan wat subtieler").
+    private func setPulsing(_ on: Bool, effect: String?) {
         layer.removeAnimation(forKey: Self.pulseKey)
         guard on, !UIAccessibility.isReduceMotionEnabled else { return }
+        let quiet = effect == "fruit-drop" || effect == "catkins"
         let pulse = CABasicAnimation(keyPath: "transform.scale")
         pulse.fromValue = 1.0
-        pulse.toValue = 1.18
-        pulse.duration = 1.1
+        pulse.toValue = quiet ? 1.07 : 1.18
+        pulse.duration = quiet ? 1.7 : 1.1
         pulse.autoreverses = true
         pulse.repeatCount = .infinity
         pulse.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
         layer.add(pulse, forKey: Self.pulseKey)
+    }
+}
+
+/// The species silhouettes as pin glyphs. SwiftUI draws them, ImageRenderer
+/// turns them into the UIImage MapKit wants, and the result is cached because
+/// a map redraws its annotations constantly and there are only fifteen shapes.
+enum SpeciesGlyph {
+    private static var cache: [String: UIImage] = [:]
+
+    static func image(for commonName: String) -> UIImage? {
+        if let hit = cache[commonName] { return hit }
+        let renderer = ImageRenderer(content:
+            SpeciesMark(species: commonName, color: .white)
+                .frame(width: 22, height: 22))
+        renderer.scale = UIScreen.main.scale
+        guard let img = renderer.uiImage?.withRenderingMode(.alwaysTemplate) else { return nil }
+        cache[commonName] = img
+        return img
+    }
+}
+
+extension UIColor {
+    /// #RRGGBB from the feed. Returns nil rather than black on anything it does
+    /// not understand, so a bad colour falls back to the default rather than
+    /// painting a pin the colour of a hole in the map.
+    convenience init?(hex: String?) {
+        guard var h = hex?.trimmingCharacters(in: .whitespaces) else { return nil }
+        if h.hasPrefix("#") { h.removeFirst() }
+        guard h.count == 6, let v = UInt32(h, radix: 16) else { return nil }
+        self.init(red: CGFloat((v >> 16) & 0xFF) / 255,
+                  green: CGFloat((v >> 8) & 0xFF) / 255,
+                  blue: CGFloat(v & 0xFF) / 255, alpha: 1)
     }
 }
 

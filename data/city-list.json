@@ -76,7 +76,7 @@
    "country": "Austria",
    "slug": "vienna",
    "status": "published",
-   "trees": 27
+   "trees": 28
   },
   {
    "city": "Paris",
@@ -273,7 +273,7 @@
    "country": "Germany",
    "slug": "munich",
    "status": "published",
-   "trees": 29
+   "trees": 30
   },
   {
    "city": "Berlin",
@@ -809,14 +809,6 @@
    "trees": 5
   },
   {
-   "city": "New Orleans",
-   "country": "United States",
-   "slug": "new-orleans",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 4
-  },
-  {
    "city": "San Sebastian",
    "country": "Spain",
    "slug": "san-sebastian",
@@ -1148,6 +1140,14 @@
    "city": "Sorrento",
    "country": "Italy",
    "slug": "sorrento",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 4
+  },
+  {
+   "city": "New Orleans",
+   "country": "United States",
+   "slug": "new-orleans",
    "status": "published",
    "demand_views_90d": null,
    "trees": 4

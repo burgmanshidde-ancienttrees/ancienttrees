@@ -11,6 +11,7 @@ import { cityIsRenderable, renderableTrees, treeSlugsForCity, oldestTree, type C
 import { speciesCommon } from "../lib/species";
 import { usablePhoto, metaImageUrls, ogImageUrl } from "../lib/images";
 import { speciesIcon } from "../lib/species-icons";
+import { peakFor } from "../lib/phenology";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { fitTitle } from "../lib/title";
 import { submitLink, ageToken } from "../lib/tree-copy";
@@ -119,6 +120,7 @@ const crumbItems: [string, string | null][] = [
 
 const markers: WalkMarker[] = trees.map((t, i) => {
   const cphoto = usablePhoto(t);
+  const pk = peakFor(t, t.location.latitude ?? 0);
   return {
     lat: t.location.latitude!,
     lng: t.location.longitude!,
@@ -128,6 +130,7 @@ const markers: WalkMarker[] = trees.map((t, i) => {
     id: t.id,
     area: (t.location.neighbourhood ?? "").trim(),
     shot: Boolean(cphoto),
+    ...(pk?.map ? { peak: { months: pk.months, effect: pk.map.effect, colour: pk.map.colour } } : {}),
   };
 });
 

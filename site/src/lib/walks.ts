@@ -37,6 +37,11 @@ export interface WalkMarker {
   id: string;
   area: string;
   shot: boolean;
+  /** Months this species peaks (already shifted for latitude), the animation
+   * and its colour. Absent for a species with no peak. The month is compared
+   * in the browser, not at build time, so a cached page still lights up on the
+   * right day. */
+  peak?: { months: number[]; effect: string; colour: string };
 }
 
 export interface Walk {

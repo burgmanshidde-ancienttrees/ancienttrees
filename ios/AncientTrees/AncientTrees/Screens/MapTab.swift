@@ -115,7 +115,9 @@ struct MapTab: View {
     private var listed: [(tree: Tree, km: Double)] {
         let near = catalogue.nearest(to: focus.lat, focus.lng, limit: 60, withinKm: reachKm)
             .filter { filters.keeps($0.tree, month: month) && filters.keepsDistance($0.km) }
-        guard !query.isEmpty else { return near }
+        guard !query.isEmpty else {
+            return Editorial.leadWithAPhotograph(near, photo: { $0.tree.photo != nil })
+        }
         let q = query.lowercased()
         return catalogue.trees
             .filter { $0.name.lowercased().contains(q) || $0.city.lowercased().contains(q)
@@ -409,15 +411,12 @@ struct MapTab: View {
                         .fixedSize(horizontal: false, vertical: true)
                 }
                 Button {
-                    if let first = catalogue.trees(of: w).first {
-                        MKMapItem(placemark: .init(coordinate: .init(latitude: first.lat, longitude: first.lng)))
-                            .openInMaps(launchOptions: [MKLaunchOptionsDirectionsModeKey:
-                                                        MKLaunchOptionsDirectionsModeWalking])
-                    }
+                    navigator.beginWalk = .init(city: w.citySlug, name: w.name)
                 } label: {
                     Label("Begin", systemImage: "location.fill")
                 }
                 .buttonStyle(BrandButtonStyle())
+                .accessibilityIdentifier("walk-begin")
 
                 if walksHere.count > 1 {
                     LockedRow(feature: .walkBeyondFirst) {

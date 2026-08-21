@@ -18,6 +18,7 @@
 // the website says it, and a photo carries its licence and attribution so an
 // app cannot show the picture while dropping the credit the licence demands.
 import type { CityEntry } from "./trees";
+import { peakFor } from "./phenology";
 import { renderableTrees, slugify } from "./trees";
 import { usablePhoto } from "./images";
 
@@ -36,6 +37,13 @@ export interface FeedTree {
   transport: string | null;
   precision: string | null;
   best_time: unknown;
+  /** The species' one peak of the year, already shifted for this tree's
+   * latitude, with the animation its pin should run. One field, computed once
+   * on the server, so the app and the website light up the same tree on the
+   * same day rather than each deciding for itself (Hidde, 2026-08-21: app en
+   * web gelijk trekken). Null where the species has no peak, and inside the
+   * tropics, where phenologyFor refuses to guess a calendar at all. */
+  peak: { months: number[]; effect: string; colour: string } | null;
   story: string | null;
   url: string;
   photo: { url: string; license: string | null; attribution: string | null;
@@ -64,6 +72,10 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
         transport: t.transport ?? null,
         precision: t.location_precision ?? null,
         best_time: t.best_time ?? null,
+        peak: (() => {
+          const pk = peakFor(t, loc.latitude);
+          return pk?.map ? { months: pk.months, effect: pk.map.effect, colour: pk.map.colour } : null;
+        })(),
         story: t.story ?? null,
         url: `/${city.id}/${slugify(t.name)}`,
         photo: p?.url

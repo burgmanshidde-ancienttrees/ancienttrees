@@ -26,7 +26,7 @@ final class AncientTreesUITests: XCTestCase {
         // makes the list deterministic: Amsterdam always has trees near it.
         // And a clean collection, because serial testing shares one simulator
         // across every test and a tick left by one would greet the next.
-        app.launchArguments = ["-at=52.3731,4.8922", "-reset"] + args
+        app.launchArguments = ["-at=52.3731,4.8922", "-reset-collection"] + args
         app.launch()
         return app
     }
@@ -57,9 +57,8 @@ final class AncientTreesUITests: XCTestCase {
         XCTAssertTrue(back.waitForExistence(timeout: 5),
                       "a tree opened from the map has no back button, so the person is trapped")
         back.tap()
-        // Explore is still in map mode, so the pill offers the way to the list.
-        XCTAssertTrue(app.buttons["List"].waitForExistence(timeout: 5),
-                      "back did not return to Explore's map")
+        XCTAssertTrue(app.tabBars.buttons["Map"].waitForExistence(timeout: 5),
+                      "back did not return to the map tab")
     }
 
     /// Ticking a tree off is the product's own verb and the moment the account
@@ -99,11 +98,11 @@ final class AncientTreesUITests: XCTestCase {
         firstCard.tap()
         XCTAssertTrue(app.buttons["Take me there"].waitForExistence(timeout: 5),
                       "a tree page did not open")
-        XCTAssertFalse(app.tabBars.buttons["Explore"].isHittable,
+        XCTAssertFalse(app.tabBars.buttons["Map"].isHittable,
                        "the tab bar is still sitting on a tree page")
 
         app.navigationBars.buttons.firstMatch.tap()
-        XCTAssertTrue(app.tabBars.buttons["Explore"].waitForExistence(timeout: 5),
+        XCTAssertTrue(app.tabBars.buttons["Map"].waitForExistence(timeout: 5),
                       "back did not bring the bar home")
     }
 
@@ -193,7 +192,7 @@ final class AncientTreesUITests: XCTestCase {
     /// would not show that at all.
     @MainActor
     func testHomeCarriesTheCollections() throws {
-        let app = launch(["-tab=0"])
+        let app = launch(["-tab=1"])
         XCTAssertTrue(app.descendants(matching: .any)["explore-home"].waitForExistence(timeout: 12),
                       "Explore did not open on its shelves")
 
@@ -230,7 +229,7 @@ final class AncientTreesUITests: XCTestCase {
     @MainActor
     func testFiveSlotBar() throws {
         let app = launch()
-        for label in ["Explore", "Saved", "Spot", "Collect", "Profile"] {
+        for label in ["Map", "Explore", "Spot", "Collect", "Profile"] {
             XCTAssertTrue(app.tabBars.buttons[label].waitForExistence(timeout: 10),
                           "tab \(label) is missing from the bar")
         }
@@ -245,8 +244,8 @@ final class AncientTreesUITests: XCTestCase {
         let close = app.buttons["spot-close"]
         XCTAssertTrue(close.waitForExistence(timeout: 5), "no close control on the Spot sheet")
         close.tap()
-        XCTAssertTrue(app.tabBars.buttons["Explore"].waitForExistence(timeout: 5))
-        XCTAssertTrue(app.tabBars.buttons["Explore"].isSelected,
+        XCTAssertTrue(app.tabBars.buttons["Map"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.tabBars.buttons["Map"].isSelected,
                       "Spot took the selection with it; the bar must stay where it was")
     }
 
@@ -255,7 +254,9 @@ final class AncientTreesUITests: XCTestCase {
     /// you do not have" failure this rebuild exists to fix.
     @MainActor
     func testCollectDayZeroShowsMission() throws {
-        let app = launch(["-tab=3"])
+        // Explicitly on an empty collection: this test is about day zero, so it
+        // cannot inherit whatever an earlier test on the same simulator ticked.
+        let app = launch(["-tab=3", "-reset-collection"])
         XCTAssertTrue(app.otherElements["collect-mission"].waitForExistence(timeout: 10),
                       "no mission on Collect's day zero")
         XCTAssertFalse(app.staticTexts["Species collected"].exists,
@@ -268,7 +269,7 @@ final class AncientTreesUITests: XCTestCase {
     @MainActor
     func testSpotAlwaysOffersBothOutcomes() throws {
         let app = XCUIApplication()
-        app.launchArguments = ["-at=52.3667,4.9086", "-reset", "-spot"]   // Wertheimpark gate
+        app.launchArguments = ["-at=52.3667,4.9086", "-reset-collection", "-spot"]   // Wertheimpark gate
         app.launch()
         XCTAssertTrue(app.staticTexts["Which tree did you find?"].waitForExistence(timeout: 10),
                       "no tick list next to a tree we map")
@@ -276,33 +277,47 @@ final class AncientTreesUITests: XCTestCase {
                       "the add-path is missing from the tick list")
 
         let far = XCUIApplication()
-        far.launchArguments = ["-at=52.03,5.91", "-reset", "-spot"]       // a field near Arnhem
+        far.launchArguments = ["-at=52.03,5.91", "-reset-collection", "-spot"]       // a field near Arnhem
         far.launch()
         XCTAssertTrue(far.staticTexts["No tree on our map here"].waitForExistence(timeout: 10),
                       "the add-form is not the headline where we map nothing")
         XCTAssertTrue(far.buttons["Send it in"].exists)
     }
 
-    /// The pill is the only door between Explore's two faces, so it has to
-    /// actually swap them: shelves to map, and back.
+    /// Begin is the walk verb actually happening: full screen, the route, and
+    /// a tick that advances to the next tree. It used to hand the person to
+    /// Apple Maps, which ended our part of the afternoon.
     @MainActor
-    func testPillSwapsListAndMap() throws {
-        let app = launch(["-tab=0"])
-        let home = app.descendants(matching: .any)["explore-home"]
-        let pill = app.buttons["explore-pill"]
-        XCTAssertTrue(pill.waitForExistence(timeout: 10), "no pill on Explore")
-        XCTAssertTrue(home.exists, "Explore did not open on its shelves")
-        pill.tap()
-        XCTAssertTrue(app.staticTexts["Near you"].waitForExistence(timeout: 8),
-                      "the pill did not open the map")
-        XCTAssertTrue(app.buttons["List"].exists, "the pill did not relabel to List")
-        app.buttons["List"].tap()
-        // The face itself, by its identifier, rather than a shelf heading:
-        // the city shelf is below the fold on an iPhone SE, so its absence
-        // said nothing about the pill.
-        XCTAssertTrue(home.waitForExistence(timeout: 8),
-                      "the pill did not return to the shelves")
-        XCTAssertTrue(app.buttons["Map"].exists, "the pill did not relabel back to Map")
+    func testBeginWalksTheWalk() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["-at=52.3667,4.9086", "-begin=amsterdam|Plantage"]
+        app.launch()
+
+        XCTAssertTrue(app.otherElements["walk-mode"].waitForExistence(timeout: 12),
+                      "Begin did not open the walk")
+        // By the words on it. An identifier on a Button whose label is an
+        // HStack of Spacers does not always survive into the query tree, and a
+        // test that cannot find the button it is about proves nothing.
+        let tick = app.buttons.matching(
+            NSPredicate(format: "label CONTAINS 'standing before it'")).firstMatch
+        XCTAssertTrue(tick.waitForExistence(timeout: 6), "no tick in the walk")
+
+        // Ticking has to MOVE the walk on: the counter climbs and the card
+        // names a different tree. A tick that only lit up would be a screen
+        // pretending to be a walk.
+        let progress = app.staticTexts.matching(NSPredicate(format: "label CONTAINS 'of 14 ticked off'")).firstMatch
+        XCTAssertTrue(progress.waitForExistence(timeout: 6))
+        let before = progress.label
+        tick.tap()
+        XCTAssertTrue(app.staticTexts.matching(
+            NSPredicate(format: "label CONTAINS 'of 14 ticked off' AND NOT label CONTAINS %@",
+                        before.components(separatedBy: " ").first ?? "0")).firstMatch
+            .waitForExistence(timeout: 6),
+                      "ticking a tree did not advance the walk")
+
+        app.buttons["walk-close"].tap()
+        XCTAssertTrue(app.tabBars.buttons["Map"].waitForExistence(timeout: 6),
+                      "leaving the walk did not return to the app")
     }
 
     /// The sheet the whole account funnel runs through. If it does not present,

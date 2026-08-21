@@ -156,7 +156,11 @@ Hidde's ruling, designed and built in one session: "this process of user giving 
 
 **FOR HIDDE, two pastes and the loop is live:**
 1. Supabase SQL editor: run `supabase/contributor-reply.sql` (adds user_id/outcome/reply columns to submissions; user_id stamps itself from the signed-in sender). Until then signed-in submissions still land, just without the reply columns.
-2. GitHub repo settings, Actions secrets: add `OUTREACH_SMTP_HOST`, `OUTREACH_SMTP_PORT`, `OUTREACH_SMTP_USER`, `OUTREACH_SMTP_PASS`, `OUTREACH_FROM` (same values as your local outreach setup). Until then the CI step prints a dry run and sends nothing.
+2. GitHub repo settings, Actions secrets: add `OUTREACH_SMTP_HOST`, `OUTREACH_SMTP_PORT`, `OUTREACH_SMTP_USER`, `OUTREACH_SMTP_PASS`, `OUTREACH_FROM`. Until then the CI step prints a dry run and sends nothing.
+
+Both done by Hidde the same morning; a manual digest run then executed the reply step with the real secrets and reported "nothing waiting", so the loop is live. `OUTREACH_FROM` in CI is `Ancient Trees <burgmans.hidde@gmail.com>`, deliberately not the "Hidde, Ancient Trees" of his outreach letters: the machine sends these unread, so they speak as the product (hard rule 4).
+
+**FOR HIDDE, optional, whenever:** recipients can still see the Gmail address behind the sender name, because Gmail only sends from the account that logs in or a verified alias. The clean route is an address on the domain (`hello@ancienttrees.app` as a Workspace mailbox or a registrar forwarding alias), verified in Gmail under "Send mail as", then `OUTREACH_FROM` changes to it. He agreed it is the right move; nothing blocks on it. **Tried 2026-08-21 and parked:** Gmail's "Add another email address" popup returned "Temporary error (405)" twice, once in the wrong account and once in the right one. Next attempt: first make the TransIP forward (hello@ancienttrees.app to his Gmail), then retry in an incognito window (AdBlock Plus off) with SMTP smtp.gmail.com / 587 / burgmans.hidde@gmail.com / the app password. Until then the mails go out as "Ancient Trees" from his Gmail, which works.
 
 ## 2026-08-21 - Night run 2026-08-21 06:21 UTC ended without saying anything
 
@@ -221,6 +225,18 @@ This entry exists because the run wrote none. The prompt asks every run to log e
 Fixed a real stale-count bug caught by preflight.py in both Groningen and Utrecht: meta_description, question_meta and one FAQ answer still promised the pre-deepen tree count.
 
 Build, preflight and QA all clean after every merge. Costs logged to data/agent-costs.json.
+## 2026-08-21 (session) - The bar moves again, and Begin actually walks with you
+
+Two pieces, both Hidde's call, both live.
+
+**The bar is Map, Explore, Spot, Collect, Profile** (DECISIONS.md, top). His diagnosis of yesterday's build: Saved was a second empty room next to Collect, while the feed we already had is the thing that works. So the pill is gone, the map and the shelves are two tabs (Komoot's split), and want-and-had are two segments inside Collect. Day zero now opens on two full screens instead of two promises.
+
+**Begin is a mode rather than a handoff.** It used to open Apple Maps and our part of the afternoon was over. Now it is a full-screen map with the route drawn, the walk's progress on top, and the next tree as a card: within 120 m the loud button is "I am standing before it", further away it is "Take me there", and ticking always works because GPS is a bonus and never a gate. Progress is `Saved.isVisited` rather than a new store, so a walk survives a kill, syncs to the account and cannot drift from the collection. Web keeps its static walk page; Begin stays app-only, which is the honest answer to the both-surfaces rule.
+
+**Three real bugs the tests caught**, worth knowing because each is a class rather than a one-off: the Spot sheet TRAPPED at launch after another session put its send path behind an account and nobody handed that sheet the account; the map sheet still led with whatever tree was nearest, photograph or not (`Editorial.leadWithAPhotograph` now sits in front of it); and a container `accessibilityIdentifier` on the walk screen stamped itself onto every button inside it, which is the same trap a card once played on its heart button. A `-reset-collection` launch argument makes the day-zero test independent of what other tests ticked.
+
+New launch arguments for the sweep: `-begin=<city>|<walk>`, `-reset-collection`. Both sweep lists know the new screens.
+
 ## 2026-08-20 (session, evening) - The app is rebuilt on the five-slot bar, and it stands on white
 
 Hidde's verdict on the first app build ("conceptueel gaat het niet goed", the features "moeten verder worden uitgedacht") became a decided structure (DECISIONS.md, top entry) and this rebuild, executed against docs/superpowers/plans/2026-08-20-app-five-slot-rebuild.md:

@@ -197,6 +197,18 @@ interface PhenologyEntry {
   flower_label?: string;
   fruit_label?: string;
   colour_label?: string;
+  peak?: PhenologyPeak;
+}
+
+/** The one moment of the year this species is worth a trip for, and what the
+ * map should do about it. Only written where `intensity` already rates that
+ * moment "worth the trip"; scripts/preflight.py refuses any other. */
+export interface PhenologyPeak {
+  moment: string;
+  months: number[];
+  share?: boolean;
+  map?: { effect: string; colour: string; pulse?: boolean };
+  surfaces?: string[];
 }
 
 let cachedPhenology: Map<string, PhenologyEntry> | null = null;
@@ -300,7 +312,22 @@ export function phenologyFor(tree: Tree, lat: number): PhenologyEntry | null {
     const v = e[k];
     if (v && v.length < 12) (out as any)[k] = shift(v, delta);
   }
+  // The peak rides the same shift, and forgetting it would be the worse bug of
+  // the two: a chart six months out is wrong on a page nobody scrolls to, while
+  // a map that lights every ginkgo gold in a Melbourne November is wrong in the
+  // one place the whole feature lives. Melbourne's ginkgos turn in May.
+  if (e.peak?.months?.length) {
+    out.peak = { ...e.peak, months: shift(e.peak.months, delta) };
+  }
   return out;
+}
+
+/** What this tree's pin should do, if anything, and when. Null for a species
+ * with no peak, and for anything inside the tropics, where phenologyFor
+ * already refuses to guess a calendar. */
+export function peakFor(tree: Tree, lat: number): PhenologyPeak | null {
+  const e = phenologyFor(tree, lat);
+  return e?.peak?.map ? e.peak : null;
 }
 
 /** The year as one chart: how much there is to see, month by month. Falls
