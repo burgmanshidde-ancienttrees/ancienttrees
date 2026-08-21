@@ -2820,6 +2820,15 @@
     "note": "Re-checked Square Ferrie cluster and 2 unlocated leads (no new source found); confirmed 2 register entries are duplicates of published lyo_011/lyo_014; the one candidate that verified (Anne Frank chestnut, Wikidata Q63253791) turned out to already be published as lyo_012, a passcheck.py Wikidata-dedup miss worth fixing.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "sitewide",
+    "kind": "photo",
+    "tokens": 0,
+    "trees": 0,
+    "note": "Free API sweep (photo_hunt.py --recheck, session work, no AI tokens): 1073 trees swept, 575 with at least one open-licence candidate now queued for a viewing session. famous_trees.py --country re-run for Canada, Croatia, Norway, South Korea, Thailand: byte-identical to what an earlier pass today already wrote, no new leads.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
