@@ -24,6 +24,40 @@ location or vitality problem, so nothing on the page needed to change.
 Marked processed in `data/submissions-processed.json` (id 10). No email on
 the row, so no reply owed.
 
+## 2026-08-21 (session) - Munich 29 to 30, Vienna 27 to 28: one register lead each, closing the earlier "not worth a fresh pass" finding
+
+Follows up on the same day's "Rome, Florence and Vienna's leads.py READY
+counts checked, not written from" entry below, which correctly declined a
+whole write pass on Vienna's remaining 8 leads but flagged one of them,
+the Alser Strasse plane, as "verifies fine" on its own terms, just weaker
+than the six shipped in an earlier pass. That is a legitimate single-tree
+addition rather than a pass worth dispatching for its own sake, so it went
+in directly: `vie_028`, London Plane, girth 315cm, Vienna's Baumkataster
+gives a documented 1894 planting date (about 130 years), single register
+source plus the city's own tree inventory, `curation_status: flagged`,
+`location_precision: confirmed`, no photo. Took Vienna from 27 to 28
+against a target of 30; the remaining leads (a Prater ginkgo with
+unconfirmed courtyard access, a third Rathauspark plane, two young
+Kugeltrompetenbaum specimens) stay leads for the reasons already on record.
+
+Munich was one tree short of its target (29 of 30) with 15 READY leads,
+all legally protected single trees on public land per the city's 2021
+Naturdenkmalverordnung, most failing only on age (the ordinance carries no
+age or girth column). Picked the Nymphenburg lime at Nordliches
+Schlossrondell 8 for clustering: it sits about 0.7km from the existing
+muc_007/011-014 Nymphenburg walk. Confirmed by a second source (Wochenanzeiger
+Muenchen, 12 Oct 2011, naming this specific tree among eleven declared that
+year), which the register-only leads file did not carry. Ships as `muc_034`,
+`curation_status: flagged` (no age), `location_precision: approximate`. A
+Commons photo (CC BY-SA 4.0, self-published 2020, filename matches this
+tree and its Naturdenkmal designation by name) was found via the API and
+set to `found_needs_check`; not viewed here, this runner's egress blocks
+upload.wikimedia.org.
+
+Both cities' route still walks clean (Munich 2.0km/24min, Vienna
+2.0km/25min per `route_walks.py`). Vienna's meta_description updated from
+"Twenty-seven" to "Twenty-eight". Full detail in LOG.md.
+
 ## 2026-08-21 (night run) - Milan 19 to 21, Brussels 26 to 30: leads.py READY trees, all flagged, no photos
 
 Both were single-source-only register trees that a past pass had correctly
