@@ -105,6 +105,7 @@ struct ContentView: View {
         case "city": return .city(value)
         case "collection": return .collection(value)
         case "species": return .species(value)
+        case "country": return .country(value)
         case "walk":
             let parts = value.split(separator: "|", maxSplits: 1).map(String.init)
             guard parts.count == 2 else { return nil }
@@ -191,6 +192,8 @@ struct ContentView: View {
             } else {
                 ContentUnavailableView("That collection is gone", systemImage: "square.stack")
             }
+        case .country(let name):
+            CountryView(country: name, catalogue: cat, origin: origin)
         case .species(let name):
             SpeciesView(commonName: name, catalogue: cat, origin: origin)
         case .city(let slug):

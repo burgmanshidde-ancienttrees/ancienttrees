@@ -209,10 +209,10 @@ struct SignInSheet: View {
     private var mergedHeadline: String {
         let total = saved.savedCount
         if let m = merged, m > 0 {
-            return "Your collection is safe, and \(m) more came back from your account."
+            return "Signed in, and \(m) more came back from your account."
         }
         if total == 0 { return "You are in." }
-        return total == 1 ? "Your tree is safe." : "Your \(total) trees are safe."
+        return total == 1 ? "Your tree is in your account." : "Your \(total) trees are in your account."
     }
 
     // MARK: - shared pieces

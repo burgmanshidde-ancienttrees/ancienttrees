@@ -67,6 +67,9 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
     public let name: String
     public let species: String
     public let age: String?
+    /// Numeric bounds, where a city file has them. 1,159 of 1,406 trees do.
+    public let ageMin: Int?
+    public let ageMax: Int?
     public let lat: Double
     public let lng: Double
     public let city: String
@@ -84,6 +87,8 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
 
     enum CodingKeys: String, CodingKey {
         case id, name, species, age, lat, lng, city, country, neighbourhood
+        case ageMin = "age_min"
+        case ageMax = "age_max"
         case access, transport, story, url, precision, photo, peak
         case citySlug = "city_slug"
         case bestTime = "best_time"

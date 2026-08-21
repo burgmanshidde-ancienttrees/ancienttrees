@@ -1,21 +1,26 @@
-// Profile: the account and the admin, and nothing else.
+// Profile: the account and the admin, in the order every app people already
+// use puts them.
 //
-// New on 2026-08-20 out of the old You tab, which was doing three jobs: the
-// score, the account and the settings shelf. The score went to Collect where the
-// game is, and what is left here is what Hidde asked for in one line: "hier zijn
-// al je persoonlijke dingen in ... je accountinstellingen, en weet ik veel alles
-// wat je bij een account zoekt, vindt".
+// Rebuilt 2026-08-21. It opened with sign out and delete account, which is the
+// two most destructive controls in the app greeting somebody who came to look
+// at their own page. Hidde, on finding them: "my first button I see is to sign
+// out or delete accounts. Can you please look at conventional profile pages
+// and just create one of those, because this doesn't make any sense at all?"
 //
-// A quiet screen on purpose. This is the tab people open twice a year, which is
-// exactly why it should not be competing for attention: AllTrails and Google
-// Maps both keep the profile boring and put the collection somewhere else.
+// So the conventional order, the one AllTrails, Komoot, Airbnb and Strava all
+// share: WHO you are, then the UPGRADE, then what you can DO, then the quiet
+// links, and only at the very bottom, after everything else, sign out and
+// delete.
 //
-// Suggest a tree lives here as its FIXED home, and that is the whole of the
-// decision not to give it a fifth tab. The moments that actually produce a
-// submission are contextual and already exist elsewhere in the app: standing at
-// a tree with no photograph, the "something here is wrong" button, an empty
-// search. Those ask where somebody has just noticed the gap themselves. This is
-// only the place it can be found when somebody goes looking for it.
+// And no fear anywhere. The old cards told people their trees were "on this
+// phone only" and would be "gone" if they lost it, which is scaring somebody
+// into an account. Hidde: "that's a really weird sort of thing... if that
+// said, then just ask people to sign in. Don't say those things."
+//
+// Suggest a tree keeps its fixed home here, which is the whole of the decision
+// not to give it a fifth tab: the moments that actually produce a submission
+// are contextual and live elsewhere (the Spot button, a tree with no
+// photograph, "something here is wrong"). This is where it can be FOUND.
 
 import SwiftUI
 
@@ -27,6 +32,7 @@ struct ProfileView: View {
     @State private var signingIn = false
     @State private var confirmingDelete = false
     @State private var deleteFailed = false
+    @State private var plusPitch = false
     /// Debug scaffolding, same family as -tab and -open in ContentView: the
     /// screenshot sweep cannot tap, and this sheet is otherwise only reachable
     /// by tapping a card on this screen.
@@ -34,12 +40,13 @@ struct ProfileView: View {
 
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 22) {
-                if account.isSignedIn { signedInCard } else { signedOutCard }
+            VStack(alignment: .leading, spacing: 18) {
+                identity
+                plusCard
                 contributeCard
                 linksCard
-                plusCard
                 version
+                accountControls
                 Color.clear.frame(height: 80)
             }
             .padding(.horizontal, 16).padding(.top, 6)
@@ -48,6 +55,7 @@ struct ProfileView: View {
         .navigationTitle("Profile")
         .navigationBarTitleDisplayMode(.inline)
         .sheet(isPresented: $contributing) { ContributeView() }
+        .sheet(isPresented: $plusPitch) { PaywallView(feature: .seasonAlerts) }
         .sheet(isPresented: $signingIn) {
             SignInSheet(reason: saved.savedCount > 0 ? .keepCollection(saved.savedCount) : .general,
                         localCount: saved.savedCount)
@@ -59,7 +67,7 @@ struct ProfileView: View {
                 Task { deleteFailed = !(await account.deleteAccount()) }
             }
         } message: {
-            Text("Your email address and your collection are removed from our database and cannot be recovered. The trees you ticked stay on this phone.")
+            Text("Your email address and your collection are removed from our database and cannot be recovered.")
         }
         .alert("That did not work", isPresented: $deleteFailed) {
             Button("OK", role: .cancel) {}
@@ -68,52 +76,82 @@ struct ProfileView: View {
         }
     }
 
-    // MARK: - the account
+    // MARK: - who you are
 
-    private var signedOutCard: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            HStack(spacing: 10) {
-                SpeciesMark(species: "Pedunculate Oak", color: Brand.moss)
-                    .frame(width: 34, height: 34)
-                Text(saved.savedCount == 0
-                     ? "Your collection lives on this phone"
-                     : "\(saved.savedCount) collected, on this phone only")
-                    .font(.brand(18, .bold, relativeTo: .headline))
-                    .foregroundStyle(Brand.ink)
+    private var identity: some View {
+        HStack(spacing: 14) {
+            ZStack {
+                Circle().fill(Brand.surfaceMuted)
+                if account.isSignedIn {
+                    Text(String((account.email ?? "?").prefix(1)).uppercased())
+                        .font(.brand(24, .bold)).foregroundStyle(Brand.moss)
+                } else {
+                    Image(systemName: "person").font(.system(size: 24))
+                        .foregroundStyle(Brand.inkSoft)
+                }
             }
-            Text(saved.savedCount == 0
-                 ? "Start ticking trees off and they are kept here. An account keeps them if this phone is lost or replaced, and puts them on the website too."
-                 : "Lose this phone, replace it, or reinstall, and they are gone. An account keeps them, and puts them on the website too.")
-                .font(.footnote).foregroundStyle(Brand.inkSoft)
-            Button("Keep my trees") { signingIn = true }
-                .buttonStyle(BrandButtonStyle())
-            Text("One tap with Apple or Google, or one email. No password, and nothing else stored.")
-                .font(.caption2).foregroundStyle(Brand.inkSoft)
-                .frame(maxWidth: .infinity, alignment: .center)
+            .frame(width: 60, height: 60)
+
+            VStack(alignment: .leading, spacing: 3) {
+                if account.isSignedIn {
+                    Text(account.email ?? "Signed in")
+                        .font(.brand(18, .bold, relativeTo: .headline))
+                        .foregroundStyle(Brand.ink).lineLimit(1)
+                    Text("\(saved.visitedCount) collected · \(saved.savedCount) saved")
+                        .font(.footnote).foregroundStyle(Brand.inkSoft)
+                } else {
+                    Text("Sign in")
+                        .font(.brand(18, .bold, relativeTo: .headline))
+                        .foregroundStyle(Brand.ink)
+                    Text("Your collection follows you to the website and to any phone.")
+                        .font(.footnote).foregroundStyle(Brand.inkSoft)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+            }
+            Spacer(minLength: 0)
+            if !account.isSignedIn {
+                Image(systemName: "chevron.right")
+                    .font(.footnote).foregroundStyle(Brand.inkSoft.opacity(0.6))
+            }
         }
-        .padding(18)
+        .padding(16)
         .frame(maxWidth: .infinity, alignment: .leading)
         .brandCard()
+        // The WHOLE row is the control when signed out, which is how every
+        // profile page with a sign-in prompt does it. A pill button beside the
+        // text squeezed the sentence into a four-line column.
+        .contentShape(.rect)
+        .onTapGesture { if !account.isSignedIn { signingIn = true } }
+        .accessibilityIdentifier("profile-signin")
     }
 
-    private var signedInCard: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Label("Your trees are backed up", systemImage: "checkmark.icloud.fill")
-                .font(.brand(17, .bold, relativeTo: .headline))
-                .foregroundStyle(Brand.moss)
-            Text(account.email ?? "Signed in")
+    // MARK: - the upgrade
+
+    /// Near the top, because on a profile page in any app that has one, the
+    /// upgrade is what the page is FOR. What it replaced was five locked rows
+    /// at the very bottom: a features table read as a list of things you
+    /// cannot have.
+    private var plusCard: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            HStack(spacing: 10) {
+                Image(systemName: "leaf.fill").font(.title3).foregroundStyle(Brand.gold)
+                Text("Ancient Trees Plus")
+                    .font(.brand(19, .heavy, relativeTo: .headline)).foregroundStyle(Brand.ink)
+            }
+            Text("Season alerts, curated walks, your own photographs and badges, and the whole map offline.")
                 .font(.footnote).foregroundStyle(Brand.inkSoft)
-            // Named because Apple hands out a private relay address and Google
-            // does not, so two sign-ins can be two accounts. Somebody who can
-            // read the address can work that out; somebody who cannot just
-            // thinks we lost their trees.
-            Text("Your trees are kept under this address. Sign in on ancienttrees.app with the same one and your collection is there too; a different one starts a separate collection.")
-                .font(.caption).foregroundStyle(Brand.inkSoft)
-            Divider()
-            Button("Sign out") { account.signOut() }
-                .font(.subheadline.weight(.semibold)).foregroundStyle(Brand.moss)
-            Button("Delete account") { confirmingDelete = true }
-                .font(.subheadline).foregroundStyle(.red)
+                .fixedSize(horizontal: false, vertical: true)
+            Button { plusPitch = true } label: {
+                Text("See what is in it")
+                    .font(.brand(16, .bold))
+                    .foregroundStyle(.white)
+                    .frame(maxWidth: .infinity).frame(height: 48)
+                    .background(Brand.moss, in: .capsule)
+            }
+            .buttonStyle(.plain)
+            .accessibilityIdentifier("profile-plus")
+            Text("Every tree, story and location stays free, here and on the website.")
+                .font(.caption2).foregroundStyle(Brand.inkSoft)
         }
         .padding(18)
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -128,15 +166,11 @@ struct ProfileView: View {
                 .font(.brand(18, .bold, relativeTo: .headline)).foregroundStyle(Brand.ink)
             Text("We map \(catalogue.trees.count.formatted(.number.locale(Locale(identifier: "en_US")))) and there are a great many more. If you know a good one, or a whole city worth mapping, tell us.")
                 .font(.footnote).foregroundStyle(Brand.inkSoft)
-            // The app's own form, not the website's. A tree page already opens
-            // this natively when somebody reports a mistake, so sending the
-            // other entrance out to Safari was two answers to one question and
-            // it threw people out of the app to give the worse one.
             Button { contributing = true } label: {
                 Text("Suggest a tree")
-                    .font(.brand(17, .bold, relativeTo: .headline))
+                    .font(.brand(16, .bold))
                     .foregroundStyle(Brand.moss)
-                    .frame(maxWidth: .infinity).padding(.vertical, 14)
+                    .frame(maxWidth: .infinity).frame(height: 48)
                     .background(Brand.surface, in: .capsule)
                     .overlay { Capsule().strokeBorder(Brand.moss.opacity(0.35), lineWidth: 1.5) }
             }
@@ -167,44 +201,42 @@ struct ProfileView: View {
                 Image(systemName: "arrow.up.right")
                     .font(.caption).foregroundStyle(Brand.inkSoft.opacity(0.6))
             }
-            .padding(.horizontal, 16).padding(.vertical, 14)
+            .padding(.horizontal, 16).frame(height: 48)
+            .contentShape(.rect)
         }
-    }
-
-    /// Last on the screen on purpose. Selling three locked features to somebody
-    /// with nothing collected is asking for money before anything has been felt.
-    private var plusCard: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text("Coming with Plus").font(.eyebrow).textCase(.uppercase)
-                .foregroundStyle(Brand.inkSoft).tracking(0.8)
-            VStack(spacing: 0) {
-                LockedRow(feature: .photoUpload) { plusRow("Your photo on the tree's page", "camera") }
-                Divider().padding(.leading, 48)
-                LockedRow(feature: .badges) { plusRow("Badges and the visited seal", "rosette") }
-                Divider().padding(.leading, 48)
-                LockedRow(feature: .walkBeyondFirst) { plusRow("Every walk", "figure.walk") }
-                Divider().padding(.leading, 48)
-                LockedRow(feature: .offlineDownload) { plusRow("Offline maps", "arrow.down.circle") }
-                Divider().padding(.leading, 48)
-                LockedRow(feature: .seasonAlerts) { plusRow("Season alerts", "bell") }
-            }
-            .brandCard()
-            Text("Ticking trees off, your list and every tree, story and location stay free, here and on the website.")
-                .font(.caption).foregroundStyle(Brand.inkSoft)
-        }
-    }
-
-    private func plusRow(_ title: String, _ icon: String) -> some View {
-        HStack(spacing: 12) {
-            Image(systemName: icon).frame(width: 20).foregroundStyle(Brand.inkSoft)
-            Text(title).font(.callout).foregroundStyle(Brand.ink)
-        }
-        .padding(.horizontal, 16).padding(.vertical, 14)
     }
 
     private var version: some View {
         Text("\(catalogue.trees.count.formatted(.number.locale(Locale(identifier: "en_US")))) trees, updated whenever you open the app.")
             .font(.caption2).foregroundStyle(Brand.inkSoft.opacity(0.8))
             .frame(maxWidth: .infinity, alignment: .center)
+            .padding(.top, 4)
+    }
+
+    // MARK: - the two that go last
+
+    @ViewBuilder private var accountControls: some View {
+        if account.isSignedIn {
+            VStack(spacing: 0) {
+                Button { account.signOut() } label: {
+                    HStack {
+                        Text("Sign out").font(.callout).foregroundStyle(Brand.ink)
+                        Spacer()
+                    }
+                    .padding(.horizontal, 16).frame(height: 48)
+                    .contentShape(.rect)
+                }
+                Divider().padding(.leading, 16)
+                Button { confirmingDelete = true } label: {
+                    HStack {
+                        Text("Delete account").font(.callout).foregroundStyle(.red)
+                        Spacer()
+                    }
+                    .padding(.horizontal, 16).frame(height: 48)
+                    .contentShape(.rect)
+                }
+            }
+            .brandCard()
+        }
     }
 }

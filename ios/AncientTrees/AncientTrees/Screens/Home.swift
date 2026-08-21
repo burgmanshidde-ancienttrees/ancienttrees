@@ -55,6 +55,8 @@ struct HomeView: View {
 
     struct Shelves {
         var atTheirBest: [Tree] = []
+        var oldest: [Tree] = []
+        var countries: [(name: String, count: Int, cities: Int, photo: Tree?)] = []
         var cities: [(slug: String, name: String, country: String, count: Int)] = []
         var walksNear: [Walk] = []
         var species: [(name: String, count: Int)] = []
@@ -66,6 +68,7 @@ struct HomeView: View {
     private var atTheirBest: [Tree] { deck.atTheirBest }
     private var cities: [(slug: String, name: String, country: String, count: Int)] { deck.cities }
     private var walksNear: [Walk] { deck.walksNear }
+    private var oldest: [Tree] { deck.oldest }
 
     /// Rebuilt when the catalogue changes under us, which it now does, or when
     /// the map has moved somewhere far enough to change what is near.
@@ -81,6 +84,20 @@ struct HomeView: View {
             return (w, f.distanceKm(from: origin.lat, origin.lng))
         }
         .sorted { $0.1 < $1.1 }.prefix(8).map(\.0)
+        // Oldest by the LOW end of the range, so a tree claiming 200 to 800
+        // years does not outrank one solidly dated at 900. A photograph is
+        // required, because a shelf about the most spectacular thing we have
+        // cannot be a row of placeholders.
+        s.oldest = catalogue.trees
+            .filter { $0.photo != nil && ($0.ageMin ?? 0) > 0 }
+            .sorted { ($0.ageMin ?? 0) > ($1.ageMin ?? 0) }
+            .prefix(12).map { $0 }
+        s.countries = Dictionary(grouping: catalogue.trees, by: \.country)
+            .map { (name: $0.key,
+                    count: $0.value.count,
+                    cities: Set($0.value.map(\.citySlug)).count,
+                    photo: $0.value.first { $0.photo != nil }) }
+            .sorted { $0.count > $1.count }
         s.species = Dictionary(grouping: catalogue.trees, by: \.commonName)
             .map { (name: $0.key, count: $0.value.count) }
             .sorted { $0.count > $1.count }
@@ -91,7 +108,6 @@ struct HomeView: View {
     var body: some View {
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 30) {
-                if search.isEmpty { hero } else { EmptyView() }
                 if search.isEmpty { shelves } else { results }
                 Color.clear.frame(height: 90)        // clear of the floating tab bar
             }
@@ -192,31 +208,68 @@ struct HomeView: View {
 
     // MARK: - the browse state
 
+    /// The feed, as Hidde cut it on 2026-08-21. What went: season (it is the
+    /// map's pulse, not a browse row) and every curated collection (they stay
+    /// on the website, which is where they earn their traffic). What stayed:
+    /// cities, species, walks. What is new: the oldest trees we map, and the
+    /// countries, because both are ways of showing the same database that a
+    /// map cannot.
     @ViewBuilder private var shelves: some View {
-        if !atTheirBest.isEmpty {
-            shelf(title: "At their best in \(monthName)",
-                  subtitle: "A tree only gets this if its moment is worth crossing town for.",
-                  trees: Array(atTheirBest.prefix(8)),
-                  season: true)
-        }
-
         if !walksNear.isEmpty { walkShelf }
 
         cityShelf
-        speciesShelf
 
-        // Every collection the website has, each as its own row. The order is
-        // the feed's, which is the order somebody chose.
-        ForEach(catalogue.collections) { c in
-            let trees = catalogue.trees(of: c)
-            if trees.count >= 3 {
-                shelf(title: c.title,
-                      subtitle: nil,
-                      trees: Array(trees.prefix(10)),
-                      season: false,
-                      more: Route.collection(c.slug))
+        if !oldest.isEmpty {
+            shelf(title: "The oldest trees we map",
+                  subtitle: "Every one of these was already standing before your country looked the way it does.",
+                  trees: oldest,
+                  season: false)
+        }
+
+        countryShelf
+        speciesShelf
+    }
+
+    private var countryShelf: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            ShelfHeader(title: "Tree countries",
+                        subtitle: "\(deck.countries.count) of them, and the count is what we have mapped rather than what is there.")
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(alignment: .top, spacing: 12) {
+                    ForEach(deck.countries.prefix(14), id: \.name) { c in
+                        NavigationLink(value: Route.country(c.name)) { countryCard(c) }
+                            .buttonStyle(.plain)
+                    }
+                }
+                .padding(.horizontal, 16).padding(.bottom, 4)
             }
         }
+    }
+
+    private func countryCard(_ c: (name: String, count: Int, cities: Int, photo: Tree?)) -> some View {
+        VStack(alignment: .leading, spacing: 0) {
+            Color.clear
+                .frame(width: 150, height: 100)
+                .overlay {
+                    if let t = c.photo, let p = t.photo, let url = Photos.thumb(p.url, width: 400) {
+                        AsyncImage(url: url) { img in
+                            img.resizable().aspectRatio(contentMode: .fill)
+                        } placeholder: { Brand.surfaceMuted }
+                    } else {
+                        Brand.surfaceMuted
+                    }
+                }
+                .clipped()
+            VStack(alignment: .leading, spacing: 2) {
+                Text(c.name).font(.brand(15, .bold, relativeTo: .subheadline))
+                    .foregroundStyle(Brand.ink).lineLimit(1)
+                Text("\(c.count) trees · \(c.cities) \(c.cities == 1 ? "place" : "places")")
+                    .font(.caption2).foregroundStyle(Brand.inkSoft)
+            }
+            .padding(.horizontal, 10).padding(.vertical, 9)
+            .frame(width: 150, alignment: .leading)
+        }
+        .brandCard(12)
     }
 
     private func shelf(title: String, subtitle: String?, trees: [Tree],
