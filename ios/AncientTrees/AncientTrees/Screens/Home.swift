@@ -173,33 +173,34 @@ struct HomeView: View {
         }
     }
 
-    /// The compact directory PRODUCT_IA.md asks for at the foot of the
-    /// homepage: present for the determined, invisible as furniture.
+    /// Vertically, because a species is a WORD. Side by side they were a row
+    /// of small labels you had to scroll sideways to read, and reading is the
+    /// whole job of a list of names (Hidde, 2026-08-21).
     private var speciesShelf: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: 8) {
             ShelfHeader(title: "By species",
-                        subtitle: "\(Set(catalogue.trees.map(\.commonName)).count) kinds of tree on the map.")
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 8) {
-                    ForEach(topSpeciesHere, id: \.name) { sp in
-                        NavigationLink(value: Route.species(sp.name)) {
-                            HStack(spacing: 8) {
-                                SpeciesMark(species: sp.name, color: Brand.moss)
-                                    .frame(width: 26, height: 26)
-                                VStack(alignment: .leading, spacing: 0) {
-                                    Text(sp.name).font(.brand(14, .bold, relativeTo: .subheadline))
-                                        .foregroundStyle(Brand.ink).lineLimit(1)
-                                    Text("\(sp.count)").font(.caption2)
-                                        .foregroundStyle(Brand.inkSoft).monospacedDigit()
-                                }
-                            }
-                            .padding(.horizontal, 12).padding(.vertical, 9)
-                            .brandCard(12)
-                        }
-                        .buttonStyle(.plain)
+                        subtitle: "\(Set(catalogue.trees.map(\.commonName)).count) kinds of tree on the map.",
+                        more: .index(.species))
+                .padding(.horizontal, 16)
+            ForEach(topSpeciesHere.prefix(6), id: \.name) { sp in
+                NavigationLink(value: Route.species(sp.name)) {
+                    HStack(spacing: 12) {
+                        SpeciesMark(species: sp.name, color: Brand.moss)
+                            .frame(width: 28, height: 28)
+                        Text(sp.name)
+                            .font(.brand(16, .bold, relativeTo: .subheadline))
+                            .foregroundStyle(Brand.ink).lineLimit(1)
+                        Spacer(minLength: 8)
+                        Text("\(sp.count)")
+                            .font(.subheadline).foregroundStyle(Brand.inkSoft).monospacedDigit()
+                        Image(systemName: "chevron.right")
+                            .font(.caption).foregroundStyle(Brand.inkSoft.opacity(0.6))
                     }
+                    .padding(.horizontal, 16).frame(minHeight: 52)
+                    .brandCard(12)
                 }
-                .padding(.horizontal, 16).padding(.bottom, 4)
+                .buttonStyle(.plain)
+                .padding(.horizontal, 16)
             }
         }
     }
@@ -223,7 +224,8 @@ struct HomeView: View {
             shelf(title: "The oldest trees we map",
                   subtitle: "Every one of these was already standing before your country looked the way it does.",
                   trees: oldest,
-                  season: false)
+                  season: false,
+                  more: .index(.oldest))
         }
 
         countryShelf
@@ -233,7 +235,8 @@ struct HomeView: View {
     private var countryShelf: some View {
         VStack(alignment: .leading, spacing: 12) {
             ShelfHeader(title: "Tree countries",
-                        subtitle: "\(deck.countries.count) of them, and the count is what we have mapped rather than what is there.")
+                        subtitle: "\(deck.countries.count) of them, and the count is what we have mapped rather than what is there.",
+                        more: .index(.countries))
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 12) {
                     ForEach(deck.countries.prefix(14), id: \.name) { c in
@@ -275,21 +278,8 @@ struct HomeView: View {
     private func shelf(title: String, subtitle: String?, trees: [Tree],
                        season: Bool, more: Route? = nil) -> some View {
         VStack(alignment: .leading, spacing: 12) {
-            if let more {
-                NavigationLink(value: more) {
-                    HStack(alignment: .firstTextBaseline) {
-                        Text(title).font(.shelfTitle).foregroundStyle(Brand.ink)
-                            .multilineTextAlignment(.leading)
-                        Spacer(minLength: 8)
-                        Image(systemName: "chevron.right")
-                            .font(.footnote.weight(.bold)).foregroundStyle(Brand.moss)
-                    }
-                    .padding(.horizontal, 16)
-                }
-                .buttonStyle(.plain)
-            } else {
-                ShelfHeader(title: title, subtitle: subtitle)
-            }
+            ShelfHeader(title: title, subtitle: subtitle, more: more)
+                .padding(.horizontal, 16)
 
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 12) {
@@ -376,7 +366,8 @@ struct HomeView: View {
     private var cityShelf: some View {
         VStack(alignment: .leading, spacing: 12) {
             ShelfHeader(title: "Our favourite tree cities",
-                        subtitle: "\(cities.count) places, and every one of them is a good afternoon.")
+                        subtitle: "\(cities.count) places, and every one of them is a good afternoon.",
+                        more: .index(.cities))
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 12) {
                     ForEach(cities.prefix(14), id: \.slug) { c in

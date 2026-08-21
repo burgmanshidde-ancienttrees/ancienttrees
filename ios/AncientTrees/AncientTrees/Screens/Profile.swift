@@ -29,6 +29,7 @@ struct ProfileView: View {
     @Environment(Saved.self) private var saved
     @Environment(Account.self) private var account
     @Environment(Navigator.self) private var navigator
+    @Environment(Units.self) private var units
 
     @State private var signingIn = false
     @State private var confirmingDelete = false
@@ -46,9 +47,10 @@ struct ProfileView: View {
                 identity
                 contributeCard
                 plusCard
-                linksCard
+                settingsCard
+                aboutCard
                 version
-                accountControls
+                signOutRow
                 Color.clear.frame(height: 80)
             }
             .padding(.horizontal, 16).padding(.top, 6)
@@ -188,29 +190,60 @@ struct ProfileView: View {
         .brandCard()
     }
 
-    // MARK: - the quiet rows
+    // MARK: - settings
 
-    private var linksCard: some View {
-        VStack(spacing: 0) {
-            if account.isSignedIn {
-                Button { showingAccount = true } label: {
+    /// The two settings a map app is expected to have and ours did not. No
+    /// website row and no top-level privacy row any more (Hidde, 2026-08-21):
+    /// privacy belongs under About, which is where every app people already
+    /// use keeps it and where the App Store expects to find it.
+    private var settingsCard: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("Settings").font(.eyebrow).textCase(.uppercase)
+                .foregroundStyle(Brand.inkSoft).tracking(0.8)
+                .padding(.leading, 4)
+            VStack(spacing: 0) {
+                HStack(spacing: 12) {
+                    Image(systemName: "ruler").frame(width: 20).foregroundStyle(Brand.moss)
+                    Text("Distances").font(.callout).foregroundStyle(Brand.ink)
+                    Spacer()
+                    Picker("", selection: Binding(
+                        get: { units.unit },
+                        set: { units.unit = $0 })) {
+                        ForEach(DistanceUnit.allCases) { u in Text(u.label).tag(u) }
+                    }
+                    .pickerStyle(.menu)
+                    .tint(Brand.inkSoft)
+                }
+                .padding(.horizontal, 16).frame(height: 48)
+                Divider().padding(.leading, 48)
+                LockedRow(feature: .seasonAlerts) {
                     HStack(spacing: 12) {
-                        Image(systemName: "envelope").frame(width: 20).foregroundStyle(Brand.moss)
-                        Text("Account").font(.callout).foregroundStyle(Brand.ink)
+                        Image(systemName: "bell").frame(width: 20).foregroundStyle(Brand.moss)
+                        Text("Season alerts").font(.callout).foregroundStyle(Brand.ink)
                         Spacer()
-                        Image(systemName: "chevron.right")
-                            .font(.caption).foregroundStyle(Brand.inkSoft.opacity(0.6))
+                        Chip(text: "Plus", tint: Brand.gold)
                     }
                     .padding(.horizontal, 16).frame(height: 48)
-                    .contentShape(.rect)
                 }
-                Divider().padding(.leading, 48)
             }
-            link("The website", "safari", "https://ancienttrees.app")
-            Divider().padding(.leading, 48)
-            link("Privacy", "lock", "https://ancienttrees.app/privacy")
+            .brandCard()
         }
-        .brandCard()
+    }
+
+    // MARK: - about
+
+    private var aboutCard: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("About").font(.eyebrow).textCase(.uppercase)
+                .foregroundStyle(Brand.inkSoft).tracking(0.8)
+                .padding(.leading, 4)
+            VStack(spacing: 0) {
+                link("Privacy", "lock", "https://ancienttrees.app/privacy")
+                Divider().padding(.leading, 48)
+                link("Write to us", "envelope", "mailto:info@ancienttrees.app")
+            }
+            .brandCard()
+        }
     }
 
     private func link(_ title: String, _ icon: String, _ url: String) -> some View {
@@ -256,6 +289,13 @@ struct ProfileView: View {
                     .font(.footnote).foregroundStyle(Brand.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
                 Spacer()
+                Button { confirmingDelete = true } label: {
+                    Text("Delete account")
+                        .font(.callout).foregroundStyle(.red)
+                        .frame(maxWidth: .infinity).frame(height: 48)
+                        .contentShape(.rect)
+                }
+                .buttonStyle(.plain)
             }
             .padding(20)
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -270,28 +310,21 @@ struct ProfileView: View {
         }
     }
 
-    // MARK: - the two that go last
+    // MARK: - the one that goes last
 
-    @ViewBuilder private var accountControls: some View {
+    /// Sign out, and nothing else. Deleting an account is not something you
+    /// should be able to do by mis-tapping the bottom of a profile page, so it
+    /// moved one layer in, under Account (Hidde, 2026-08-21: "most of the time
+    /// they put the click further down").
+    @ViewBuilder private var signOutRow: some View {
         if account.isSignedIn {
-            VStack(spacing: 0) {
-                Button { account.signOut() } label: {
-                    HStack {
-                        Text("Sign out").font(.callout).foregroundStyle(Brand.ink)
-                        Spacer()
-                    }
-                    .padding(.horizontal, 16).frame(height: 48)
-                    .contentShape(.rect)
+            Button { account.signOut() } label: {
+                HStack {
+                    Text("Sign out").font(.callout).foregroundStyle(Brand.ink)
+                    Spacer()
                 }
-                Divider().padding(.leading, 16)
-                Button { confirmingDelete = true } label: {
-                    HStack {
-                        Text("Delete account").font(.callout).foregroundStyle(.red)
-                        Spacer()
-                    }
-                    .padding(.horizontal, 16).frame(height: 48)
-                    .contentShape(.rect)
-                }
+                .padding(.horizontal, 16).frame(height: 48)
+                .contentShape(.rect)
             }
             .brandCard()
         }

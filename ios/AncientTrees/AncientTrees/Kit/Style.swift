@@ -159,6 +159,10 @@ public struct ShelfHeader: View {
     var subtitle: String? = nil
     var trailing: String? = nil
     var action: (() -> Void)? = nil
+    /// The "see all" behind the shelf. A value rather than a closure so a
+    /// header can push onto the tab's own stack without every caller wiring
+    /// navigation by hand.
+    var more: Route? = nil
 
     public var body: some View {
         HStack(alignment: .firstTextBaseline) {
@@ -173,6 +177,18 @@ public struct ShelfHeader: View {
                 }
             }
             Spacer(minLength: 8)
+            if let more {
+                NavigationLink(value: more) {
+                    HStack(spacing: 3) {
+                        Text("See all").font(.subheadline.weight(.semibold))
+                        Image(systemName: "chevron.right").font(.caption2)
+                    }
+                    .foregroundStyle(Brand.moss)
+                    .frame(minHeight: 44)
+                    .contentShape(.rect)
+                }
+                .buttonStyle(.plain)
+            }
             if let trailing, let action {
                 Button(trailing, action: action)
                     .font(.subheadline.weight(.semibold))
