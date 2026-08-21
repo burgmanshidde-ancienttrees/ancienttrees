@@ -32,12 +32,13 @@ struct CollectView: View {
     let origin: (lat: Double, lng: Double)
     @Environment(Saved.self) private var saved
     @Environment(Account.self) private var account
+    @Environment(Sightings.self) private var sightings
 
     @State private var signingIn = false
     @State private var search = ""
     @State private var lane: Lane = .want
 
-    enum Lane: Hashable { case want, seen }
+    enum Lane: Hashable { case want, seen, mine }
 
     private var visited: [Tree] {
         matching(saved.entries.values.filter { $0.visitedAt != nil }
@@ -96,23 +97,36 @@ struct CollectView: View {
                 // segments rather than two tabs (Hidde, 2026-08-21: Saved as
                 // its own tab was a second empty room, and "collect is
                 // natuurlijk eigenlijk gewoen een beetje hetzelfde").
-                if !saved.entries.isEmpty {
+                if !saved.entries.isEmpty || !sightings.yoursOnly.isEmpty {
                     Picker("", selection: $lane) {
                         Text("Want to see").tag(Lane.want)
                         Text("Collected").tag(Lane.seen)
+                        Text("Yours").tag(Lane.mine)
                     }
                     .pickerStyle(.segmented)
                     .accessibilityIdentifier("collect-lane")
 
-                    let list = lane == .want ? wishlist : visited
-                    if list.isEmpty {
-                        Text(lane == .want
-                             ? "Nothing on your list. Tap a heart anywhere to put a tree here."
-                             : "Nothing collected yet. Stand before a tree and use the Spot button.")
-                            .font(.subheadline).foregroundStyle(Brand.inkSoft)
-                            .padding(.top, 4)
+                    if lane == .mine {
+                        // Trees only YOU have: photographed, kept, and still
+                        // yours whether or not we take them for the map.
+                        if sightings.yoursOnly.isEmpty {
+                            Text("Trees you find that we do not map yet appear here. Photograph one with the Spot button.")
+                                .font(.subheadline).foregroundStyle(Brand.inkSoft)
+                                .padding(.top, 4)
+                        } else {
+                            ForEach(sightings.yoursOnly) { sightingCard($0) }
+                        }
                     } else {
-                        ForEach(list) { card($0) }
+                        let list = lane == .want ? wishlist : visited
+                        if list.isEmpty {
+                            Text(lane == .want
+                                 ? "Nothing on your list. Tap a heart anywhere to put a tree here."
+                                 : "Nothing collected yet. Stand before a tree and use the Spot button.")
+                                .font(.subheadline).foregroundStyle(Brand.inkSoft)
+                                .padding(.top, 4)
+                        } else {
+                            ForEach(list) { card($0) }
+                        }
                     }
                 }
                 Color.clear.frame(height: 80)
@@ -223,6 +237,37 @@ struct CollectView: View {
                 }
             }
         }
+    }
+
+    /// One of your own finds: your photograph, what you called it, and where
+    /// the suggestion stands if you offered it. The status is the honest half
+    /// of asking somebody to do work for us (Hidde, 2026-08-21).
+    private func sightingCard(_ s: Sightings.Sighting) -> some View {
+        VStack(alignment: .leading, spacing: 0) {
+            if let img = sightings.image(s) {
+                Image(uiImage: img)
+                    .resizable().aspectRatio(contentMode: .fill)
+                    .frame(height: 170).frame(maxWidth: .infinity)
+                    .clipped()
+            }
+            VStack(alignment: .leading, spacing: 5) {
+                Text(s.name)
+                    .font(.cardTitle).foregroundStyle(Brand.ink)
+                    .lineLimit(2).multilineTextAlignment(.leading)
+                HStack(spacing: 6) {
+                    Text(s.date.formatted(date: .abbreviated, time: .omitted))
+                    if s.status != .mine {
+                        Text("·")
+                        Text(s.status.label)
+                            .foregroundStyle(s.status == .published ? Brand.moss : Brand.inkSoft)
+                    }
+                }
+                .font(.caption).foregroundStyle(Brand.inkSoft)
+            }
+            .padding(.horizontal, 14).padding(.vertical, 12)
+            .frame(maxWidth: .infinity, alignment: .leading)
+        }
+        .brandCard()
     }
 
     /// The passive half of the account ask, and probably the one that does most

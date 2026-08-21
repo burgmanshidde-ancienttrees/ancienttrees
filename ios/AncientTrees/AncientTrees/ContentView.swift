@@ -17,14 +17,15 @@ import CoreLocation
 import MapKit
 
 struct ContentView: View {
-    @State private var store = CatalogueStore()
-    @State private var saved = Saved()
-    @State private var entitlement = Entitlement()
+    @State fileprivate var store = CatalogueStore()
+    @State fileprivate var saved = Saved()
+    @State fileprivate var entitlement = Entitlement()
     @State private var location = LocationProvider()
-    @State private var account = Account()
-    @State private var nudge = Nudge()
-    @State private var navigator = Navigator()
-    @State private var units = Units()
+    @State fileprivate var account = Account()
+    @State fileprivate var nudge = Nudge()
+    @State fileprivate var navigator = Navigator()
+    @State fileprivate var units = Units()
+    @State fileprivate var sightings = Sightings()
     @State private var rootSheet: RootSheet?
     @State private var primerAnswered = false
     @State private var slowStart = false
@@ -161,10 +162,7 @@ struct ContentView: View {
     /// the type-checker's budget (it went over the moment this was inline).
     private func walkMode(_ w: Walk, _ cat: Catalogue) -> some View {
         WalkMode(walk: w, catalogue: cat, origin: origin)
-            .environment(saved)
-            .environment(account)
-            .environment(nudge)
-            .environment(entitlement)
+            .appObjects(self)
     }
 
     /// Looked up by id at render time on purpose: the catalogue can be replaced
@@ -254,13 +252,7 @@ struct ContentView: View {
                 // same). The .none variant sits on each Label because iOS
                 // applies its automatic .fill inside the tab item, underneath
                 // an environment set on the TabView itself.
-                .environment(saved)
-                .environment(store)
-                .environment(entitlement)
-                .environment(account)
-                .environment(nudge)
-                .environment(navigator)
-                .environment(units)
+                .appObjects(self)
                 .onChange(of: navigator.selectTab) { _, new in
                     if let new { tab = new; navigator.selectTab = nil }
                 }
@@ -289,12 +281,7 @@ struct ContentView: View {
                     // crashed on 2026-08-21: it gained an Account read and the
                     // .spot case still injected only Saved and Navigator. Any
                     // view a sheet might contain can read any of these.
-                    .environment(saved)
-                    .environment(store)
-                    .environment(entitlement)
-                    .environment(account)
-                    .environment(nudge)
-                    .environment(navigator)
+                    .appObjects(self)
                 }
                 // DERIVED from the request rather than mirrored into a second
                 // piece of state. The mirror version lost the launch argument
@@ -466,4 +453,24 @@ final class LocationProvider: NSObject, CLLocationManagerDelegate {
     }
 
     func locationManager(_ m: CLLocationManager, didFailWithError error: Error) {}
+}
+
+/// Every store the app has, handed to a view in one line.
+///
+/// SwiftUI sheets and covers do not inherit observables from the view they are
+/// attached to, so each presentation used to repeat the list, and twice in two
+/// days a presentation was one short and the app TRAPPED at launch rather than
+/// degrading: SpotSheet gained an Account read on 2026-08-20 and a Sightings
+/// read on 2026-08-21. A single modifier cannot be one short.
+extension View {
+    func appObjects(_ root: ContentView) -> some View {
+        self.environment(root.saved)
+            .environment(root.store)
+            .environment(root.entitlement)
+            .environment(root.account)
+            .environment(root.nudge)
+            .environment(root.navigator)
+            .environment(root.units)
+            .environment(root.sightings)
+    }
 }
