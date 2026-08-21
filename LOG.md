@@ -12,6 +12,19 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-21 (session, with Hidde) - The contributor reply loop: input is core, gets thanked, answered, never dismissed
+
+Hidde's ruling, designed and built in one session: "this process of user giving input is one of the core features of our platform and must be treated with care." Spec in docs/superpowers/specs/2026-08-21-contributor-reply-design.md, plan beside it. What shipped:
+
+- **Both contribute forms (web and app) ask for an optional email**, labeled honestly: so we can ask a question and tell you what your tip changed, nothing else. The web form also got the double-submit fix (the Toulouse correction of 08-20 arrived as three identical rows), and its name-field hint stopped claiming "so we can write back", which was never true.
+- **Two mail kinds, standing approval given in session**: an automatic thank-you in Hidde's own words within a couple of hours, then the run-composed answer with three outcomes (changed / holds / open question). A "holds" always ends in a question back, never a dismissal; Prague's wrong-location report is the worked example of what we used to file silently. Transport is scripts/contributor_reply.py with the outreach guardrails (dry-run default, do-not-contact beats everything, daily cap, mailcheck gates every answer); wired into data-digest.yml and nightly.yml. Runs compose reply_text per Step 0b's new "Closing the loop" section.
+- **The worth-it thumbs are toggle buttons now, on both surfaces**: press selects, press again undoes (a compensating "vote undone" row, netted out everywhere), the other thumb switches, and a down-vote unfolds the why-chips as an optional follow-up (app-store convention; knowingly amends the 2026-08-16 split, whose core survives). The app had no vote control at all; it was born with this design on the tree page.
+- **Privacy page states the email facts** and stops saying a submitter's name is kept "for credit". The both-surfaces rule (Hidde, same day) is recorded in CLAUDE.md beside the other design checks.
+
+**FOR HIDDE, two pastes and the loop is live:**
+1. Supabase SQL editor: run `supabase/contributor-reply.sql` (adds email/outcome/reply columns to submissions). Until then both forms quietly drop the email on insert and everything else works.
+2. GitHub repo settings, Actions secrets: add `OUTREACH_SMTP_HOST`, `OUTREACH_SMTP_PORT`, `OUTREACH_SMTP_USER`, `OUTREACH_SMTP_PASS`, `OUTREACH_FROM` (same values as your local outreach setup). Until then the CI step prints a dry run and sends nothing.
+
 ## 2026-08-21 - Night run 2026-08-21 06:21 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 20.2 minutes of its 120 minute window, 140 turns, 35 commands refused by the allowlist, ended clean (success). 6 commit(s), none of them a published tree. Claims left behind: seville, caserta, which block the top of the queue until they expire.
