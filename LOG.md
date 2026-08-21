@@ -87,7 +87,8 @@ the result bundle so the next oddity can be read from here.
 Verified locally: full suite green on iPhone SE and iPhone 17 Pro, appfit
 0 findings. CI: tests 16 passed, 0 failed and the layout gate at 0
 findings on runs 32476429195 and 32478930343 (each green on the half the
-other was not); the run on the final commit is the baseline.
+other was not); run 32481289239 on the final commit is the first fully
+green run of this workflow: 16 passed, 0 failed, 0 findings, 23 minutes.
 
 FOR HIDDE: the three gate changes above loosen what the app's layout check
 sees, and your ratchet says removing a check needs you. None is removed,
