@@ -2838,6 +2838,15 @@
     "note": "Free API sweep (photo_hunt.py --recheck, session work, no AI tokens): 1073 trees swept, 575 with at least one open-licence candidate now queued for a viewing session (byte-identical run count to an earlier pass today; queue size unchanged, listed for the day-not-silent convention).",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "Brussels + Lyon",
+    "kind": "depth",
+    "tokens": 0,
+    "trees": 5,
+    "note": "best_time filled from existing data/phenology/ files (no new research) on 5 already-published trees whose species has a real striking/worth-the-trip peak: Brussels bru_024 (Pedunculate Oak, acorns), bru_026 (Caucasian Wingnut, fruit), bru_028 (Japanese Pagoda Tree, flowers), Lyon lyo_012 (Horse Chestnut, flowers), lyo_014 (Cedar of Lebanon, cones). Both cities are on DATA.md depth-allowed list. Checked all 128 species-with-phenology-file matches across the depth-allowed cities first; only these 5 had an intensity above nice, so no others qualified. Build and preflight clean.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
