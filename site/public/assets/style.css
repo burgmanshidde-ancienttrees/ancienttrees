@@ -1104,6 +1104,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .worthit-btn { font-size: 16px; line-height: 1; min-width: 44px; min-height: 44px; padding: 0.35rem 0.7rem;
   border: 1px solid var(--cream-dark); border-radius: 999px; background: #fff; cursor: pointer; }
 .worthit-btn:hover { border-color: var(--moss); }
+.worthit-btn.is-on { border-color: var(--moss); box-shadow: inset 0 0 0 1px var(--moss); }
 /* Deliberately quieter than the thumbs: reporting a fault is the rarer errand,
    and the convention (Google Maps, AllTrails) is a plain secondary control
    beside the opinion, never a button competing with it. */
