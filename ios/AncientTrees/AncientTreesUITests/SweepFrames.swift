@@ -24,23 +24,28 @@ final class SweepFrames: XCTestCase {
     private static let origin = "-at=52.3731,4.8922"
 
     /// name -> the launch arguments that open it.
-    private static let screens: [(String, [String])] = [
-        ("explore",      ["-tab=0"]),
-        ("map",          ["-map"]),
-        ("saved",        ["-tab=1"]),
-        ("spot",         ["-spot"]),
-        ("collect",      ["-tab=3"]),
-        ("profile",      ["-tab=4"]),
-        ("tree",         ["-tab=0", "-open=tree:ath_004"]),
-        ("tree-nophoto", ["-tab=0", "-open=tree:vln_010"]),
-        ("city",         ["-tab=0", "-open=city:aarhus"]),
-        ("species",      ["-tab=0", "-open=species:Aleppo Pine"]),
-        ("collection",   ["-tab=0", "-open=collection:ancient-oaks-of-europe"]),
-        ("walk",         ["-tab=0", "-open=walk:aarhus|Moesgård / Højbjerg"]),
-        ("signin",       ["-tab=0", "-signin"]),
-        ("paywall",      ["-tab=0", "-paywall"]),
-        ("primer",       ["-tab=0", "-primer"]),
-        ("contribute",   ["-tab=4", "-contribute"]),
+    /// Name, launch arguments, and for a screen that is a sheet or an overlay,
+    /// the identifier of its root. A sheet's measurements used to include the
+    /// whole screen behind it, so the paywall was judged against Explore's
+    /// hero chip and the contribute form against the profile under it, and
+    /// both "drifted" from things nobody could see (2026-08-21).
+    private static let screens: [(String, [String], String?)] = [
+        ("explore",      ["-tab=0"], nil),
+        ("map",          ["-map"], nil),
+        ("saved",        ["-tab=1"], nil),
+        ("spot",         ["-spot"], "spot-sheet"),
+        ("collect",      ["-tab=3"], nil),
+        ("profile",      ["-tab=4"], nil),
+        ("tree",         ["-tab=0", "-open=tree:ath_004"], nil),
+        ("tree-nophoto", ["-tab=0", "-open=tree:vln_010"], nil),
+        ("city",         ["-tab=0", "-open=city:aarhus"], nil),
+        ("species",      ["-tab=0", "-open=species:Aleppo Pine"], nil),
+        ("collection",   ["-tab=0", "-open=collection:ancient-oaks-of-europe"], nil),
+        ("walk",         ["-tab=0", "-open=walk:aarhus|Moesgård / Højbjerg"], nil),
+        ("signin",       ["-tab=0", "-signin"], "signin-sheet"),
+        ("paywall",      ["-tab=0", "-paywall"], "paywall-sheet"),
+        ("primer",       ["-tab=0", "-primer"], "primer"),
+        ("contribute",   ["-tab=4", "-contribute"], "contribute-sheet"),
     ]
 
     /// The file appfit.py goes looking for.
@@ -50,7 +55,7 @@ final class SweepFrames: XCTestCase {
     func testDumpEveryScreensFrames() throws {
         continueAfterFailure = true
         var dump = ""
-        for (name, extra) in Self.screens {
+        for (name, extra, root) in Self.screens {
             let app = XCUIApplication()
             app.launchArguments = [Self.origin] + extra
             app.launch()
@@ -65,9 +70,22 @@ final class SweepFrames: XCTestCase {
             // and is not: XCUIElementQuery cannot filter on it, and the test
             // fails on the first screen with "invalid key path".
             _ = app.staticTexts.firstMatch.waitForExistence(timeout: 20)
+            // And let a sheet finish arriving. A sheet zooms in over about
+            // half a second, and a frame read during that is the frame times
+            // 0.957: the Spot sheet's 44 point close button measured 42.1 and
+            // the gate called it small (2026-08-21).
+            if root != nil {
+                _ = app.descendants(matching: .any)[root!].waitForExistence(timeout: 10)
+            }
+            Thread.sleep(forTimeInterval: 1.5)
 
             let size = app.frame.size
-            dump += "<<<SWEEP \(name) \(size.width)x\(size.height)\n"
+            // The root's name travels in the header and appfit.py keeps only
+            // what sits under it: an element's own debugDescription prints
+            // the whole application anyway.
+            dump += "<<<SWEEP \(name) \(size.width)x\(size.height)"
+            if let root { dump += " root=\(root)" }
+            dump += "\n"
             dump += app.debugDescription
             dump += "\nSWEEP>>>\n"
             app.terminate()

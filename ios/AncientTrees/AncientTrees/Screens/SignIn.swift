@@ -59,6 +59,10 @@ struct SignInSheet: View {
         .scrollBounceBehavior(.basedOnSize)
         .presentationDetents([.height(660), .large])
         .presentationDragIndicator(.visible)
+        // One container with a name, so the layout sweep can measure the
+        // sheet on its own rather than together with the screen behind it.
+        .accessibilityElement(children: .contain)
+        .accessibilityIdentifier("signin-sheet")
     }
 
     // MARK: - the ask

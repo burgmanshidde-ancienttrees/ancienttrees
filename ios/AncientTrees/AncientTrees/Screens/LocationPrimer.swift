@@ -51,16 +51,23 @@ struct LocationPrimer: View {
                 }
                 .padding(.bottom, 26)
 
+                // Every line of text on this screen is centred inside the
+                // same 30 point margins and takes the full width between
+                // them, so its frame starts at the margin whatever its
+                // length. A centred line that hugs its own letters starts
+                // wherever its width puts it, and reads as a drift.
                 Text("Trees worth the walk, wherever you are")
                     .font(.largeTitle.bold())
                     .foregroundStyle(.white)
                     .multilineTextAlignment(.center)
-                    .padding(.horizontal, 26)
+                    .frame(maxWidth: .infinity)
+                    .padding(.horizontal, 30)
 
                 Text("We map \(treeCount.formatted(.number.locale(Locale(identifier: "en_US")))) remarkable old trees. Let the map see where you are and it opens on the ones nearest you, with the walk time to each.")
                     .font(.subheadline)
                     .foregroundStyle(.white.opacity(0.85))
                     .multilineTextAlignment(.center)
+                    .frame(maxWidth: .infinity)
                     .padding(.horizontal, 30)
                     .padding(.top, 12)
 
@@ -69,6 +76,7 @@ struct LocationPrimer: View {
                     .font(.footnote)
                     .foregroundStyle(.white.opacity(0.8))
                     .multilineTextAlignment(.center)
+                    .frame(maxWidth: .infinity)
                     .padding(.horizontal, 30)
                     .padding(.top, 18)
 
@@ -82,7 +90,9 @@ struct LocationPrimer: View {
                 }
                 .background(.white, in: .capsule)
                 .foregroundStyle(brand)
-                .padding(.horizontal, 26)
+                // The same 30 as the paragraphs above it; at 26 the button
+                // started four points left of every line of text.
+                .padding(.horizontal, 30)
 
                 Button(action: onSkip) {
                     Text("Not now")
@@ -93,5 +103,7 @@ struct LocationPrimer: View {
                 .padding(.bottom, 10)
             }
         }
+        .accessibilityElement(children: .contain)
+        .accessibilityIdentifier("primer")
     }
 }

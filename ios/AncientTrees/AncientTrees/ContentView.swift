@@ -243,17 +243,28 @@ struct ContentView: View {
                 // that a tick on a tree page and a third save on the map land in
                 // the same sheet rather than in two near-identical ones.
                 .sheet(item: $rootSheet) { which in
-                    switch which {
-                    case .signIn(let reason):
-                        SignInSheet(reason: reason, localCount: saved.savedCount)
-                            .environment(account).environment(saved)
-                    case .paywall(let feature):
-                        PaywallView(feature: feature)
-                            .environment(entitlement).environment(account).environment(saved)
-                    case .spot:
-                        SpotSheet(catalogue: cat, origin: origin)
-                            .environment(saved).environment(navigator)
+                    Group {
+                        switch which {
+                        case .signIn(let reason):
+                            SignInSheet(reason: reason, localCount: saved.savedCount)
+                        case .paywall(let feature):
+                            PaywallView(feature: feature)
+                        case .spot:
+                            SpotSheet(catalogue: cat, origin: origin)
+                        }
                     }
+                    // A sheet does not inherit the environment set on the view
+                    // below this modifier, so every object goes in here, once,
+                    // for every case. Per-case lists were how the Spot sheet
+                    // crashed on 2026-08-21: it gained an Account read and the
+                    // .spot case still injected only Saved and Navigator. Any
+                    // view a sheet might contain can read any of these.
+                    .environment(saved)
+                    .environment(store)
+                    .environment(entitlement)
+                    .environment(account)
+                    .environment(nudge)
+                    .environment(navigator)
                 }
                 .onChange(of: nudge.pending) { _, new in
                     if let new { rootSheet = .signIn(new); nudge.pending = nil }
