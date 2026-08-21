@@ -25,11 +25,17 @@ struct ContributeView: View {
                     }
                 } else {
                     Section {
+                        // Three choices as three rows with a tick, the way
+                        // Settings lists a short choice. The menu style drew
+                        // a 34 point button inside a 44 point row, and the
+                        // layout gate measured the button.
                         Picker("This is", selection: $draft.kind) {
                             ForEach(Submission.Kind.allCases) { k in
                                 Text(k.label).tag(k)
                             }
                         }
+                        .pickerStyle(.inline)
+                        .labelsHidden()
                     }
                     Section("Where") {
                         TextField("Place or city", text: $draft.city)
@@ -74,6 +80,8 @@ struct ContributeView: View {
                     }
                 }
             }
+            .accessibilityElement(children: .contain)
+            .accessibilityIdentifier("contribute-sheet")
             .navigationTitle(sent ? "Sent" : "Tell us")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {

@@ -98,6 +98,10 @@ struct HomeView: View {
             .padding(.top, 6)
         }
         .brandGround()
+        // Explore's list face, named the way its map face is ("explore-map"),
+        // so a test can tell which face is showing without depending on a
+        // shelf that sits below the fold on a small phone.
+        .accessibilityIdentifier("explore-home")
         // No literal tab-label heading: the content is the heading. The empty
         // inline title keeps the bar (searchable lives in it) without the word
         // "Home" shouting over the hero.
@@ -493,10 +497,12 @@ struct CityView: View {
                                     Image(systemName: "chevron.right")
                                         .font(.caption).foregroundStyle(Brand.inkSoft.opacity(0.6))
                                 }
-                                .padding(.horizontal, 14).padding(.vertical, 12)
+                                .padding(.horizontal, 12).padding(.vertical, 12)
+                                .frame(minHeight: 44)
+                                .contentShape(.rect)
                             }
                             .buttonStyle(.plain)
-                            if w.name != walks.last?.name { Divider().padding(.leading, 14) }
+                            if w.name != walks.last?.name { Divider().padding(.leading, 12) }
                         }
                     }
                     .brandCard()

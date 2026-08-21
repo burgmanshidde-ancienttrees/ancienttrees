@@ -196,14 +196,18 @@ struct TreeDetail: View {
     }
 
     private func fact(_ value: String, _ label: String) -> some View {
-        VStack(spacing: 3) {
+        // Leading, not centred: a centred value starts wherever its width
+        // puts it, so "up to 1,500 years" sat seven points right of the card
+        // edge and the layout gate read it as a drift. The fourteen matches
+        // the card's own inset elsewhere on the page.
+        VStack(alignment: .leading, spacing: 3) {
             Text(value).font(.brand(14, .bold, relativeTo: .footnote))
-                .foregroundStyle(Brand.ink).multilineTextAlignment(.center)
+                .foregroundStyle(Brand.ink).multilineTextAlignment(.leading)
                 .lineLimit(2).minimumScaleFactor(0.8)
             Text(label).font(.caption2).foregroundStyle(Brand.inkSoft)
         }
-        .frame(maxWidth: .infinity)
-        .padding(.horizontal, 6)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(.horizontal, 14)
     }
 
     /// The one warning this product must never soften. An approximate pin that
@@ -319,7 +323,10 @@ struct TreeDetail: View {
             .accessibilityLabel(saved.isSaved(tree.id) ? "Saved. Tap to remove" : "Save this tree")
             .sensoryFeedback(.selection, trigger: saved.isSaved(tree.id))
         }
-        .padding(.horizontal, 16)
+        // The same 20 as the page's content above it; at 16 the bar began
+        // four points left of every paragraph, which is the drift the layout
+        // gate exists to catch.
+        .padding(.horizontal, 20)
         .padding(.bottom, 8)
         .padding(.top, 10)
         // Opaque, with a short fade above it. At 96 percent the story showed

@@ -29,6 +29,17 @@ final class AncientTreesUITests: XCTestCase {
         return app
     }
 
+    /// Polls a condition rather than reading a frame once: an XCUI frame read
+    /// during a spring animation is a number from the middle of it.
+    private func waitUntil(timeout: TimeInterval, _ holds: () -> Bool) -> Bool {
+        let end = Date().addingTimeInterval(timeout)
+        while Date() < end {
+            if holds() { return true }
+            RunLoop.current.run(until: Date().addingTimeInterval(0.25))
+        }
+        return holds()
+    }
+
     /// Hiding the map's navigation bar must not hide the pushed page's.
     @MainActor
     func testTreePageFromTheMapHasAWayBack() throws {
@@ -103,16 +114,25 @@ final class AncientTreesUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["Near you"].waitForExistence(timeout: 10),
                       "the map did not open on the user")
 
-        // Drag the map itself, well above the sheet, several times so the centre
-        // clears the three kilometres that separates "near you" from "this area".
-        let map = app.otherElements.firstMatch
-        for _ in 0..<4 {
-            map.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.22))
+        // Drag the map itself, well above the sheet, until the centre clears
+        // the three kilometres that separates "near you" from "this area".
+        // Eight drags of most of the width, not four of less than half: on an
+        // iPhone SE the opening view is about four kilometres wide, so four
+        // short drags landed right on the threshold and the CI runner, which
+        // is slower than this Mac, lost the last one to inertia (2026-08-21).
+        // The chip is checked after every drag, so a pan that gets there
+        // early stops early.
+        // Coordinates on the app itself, not on an element: the map's
+        // identifier lands on several of its children and firstMatch picks a
+        // different one per phone.
+        let area = app.staticTexts["Trees in this area"]
+        for _ in 0..<8 where !area.exists {
+            app.coordinate(withNormalizedOffset: CGVector(dx: 0.9, dy: 0.3))
                .press(forDuration: 0.05,
-                      thenDragTo: map.coordinate(withNormalizedOffset: CGVector(dx: 0.1, dy: 0.22)))
+                      thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.1, dy: 0.3)))
         }
 
-        XCTAssertTrue(app.staticTexts["Trees in this area"].waitForExistence(timeout: 6),
+        XCTAssertTrue(area.waitForExistence(timeout: 6),
                       "the map was panned away and the list still claims to be near you")
     }
 
@@ -128,8 +148,17 @@ final class AncientTreesUITests: XCTestCase {
         let field = app.textFields.firstMatch
         XCTAssertTrue(field.waitForExistence(timeout: 12), "no search field in the sheet")
 
-        let peekY = field.frame.origin.y
         let screen = app.frame.height
+        // The sheet opens at its peek, which is the lower part of the screen.
+        // Asserted outright, because the CI's only record of this test on
+        // 2026-08-21 was "70.5 is not less than 43.0": the field had been
+        // read at y=176 on a 667 point phone before anything was dragged, and
+        // a relative assertion turned that into a riddle. If the sheet ever
+        // opens high again, this line says so in words.
+        XCTAssertTrue(waitUntil(timeout: 8) { field.frame.origin.y > screen * 0.45 },
+                      "the sheet did not open at its peek: the search field sits at "
+                      + "y=\(field.frame.origin.y) on a \(screen) point screen")
+        let peekY = field.frame.origin.y
 
         // Anchored on the search field rather than on a point in the list: a
         // drag that starts on a tree card can be taken as a tap and open the
@@ -141,17 +170,19 @@ final class AncientTreesUITests: XCTestCase {
         field.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
              .press(forDuration: 0.35,
                     thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.12)))
+        XCTAssertTrue(waitUntil(timeout: 4) { field.frame.origin.y < screen * 0.3 },
+                      "dragging up over the list did not raise the sheet: the field went from "
+                      + "y=\(peekY) to y=\(field.frame.origin.y) on a \(screen) point screen")
         let openY = field.frame.origin.y
-        XCTAssertLessThan(openY, peekY - screen * 0.2,
-                          "dragging up over the list did not raise the sheet")
 
         // And back down from the top of the list, which is the half that was
         // still missing.
         field.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
              .press(forDuration: 0.35,
                     thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.92)))
-        XCTAssertGreaterThan(field.frame.origin.y, openY + screen * 0.2,
-                             "dragging down from the top of the list did not lower the sheet")
+        XCTAssertTrue(waitUntil(timeout: 4) { field.frame.origin.y > screen * 0.45 },
+                      "dragging down from the top of the list did not lower the sheet: the field "
+                      + "went from y=\(openY) to y=\(field.frame.origin.y) on a \(screen) point screen")
     }
 
     /// Home is built out of the website's own collections, which reach the
@@ -161,10 +192,19 @@ final class AncientTreesUITests: XCTestCase {
     @MainActor
     func testHomeCarriesTheCollections() throws {
         let app = launch(["-tab=0"])
-        XCTAssertTrue(app.staticTexts["Our favourite tree cities"].waitForExistence(timeout: 12),
-                      "the places shelf is missing")
+        XCTAssertTrue(app.descendants(matching: .any)["explore-home"].waitForExistence(timeout: 12),
+                      "Explore did not open on its shelves")
 
-        // Down past the season shelf, the walks and the cities.
+        // Down past the hero and the season shelf to the cities. Scrolled to,
+        // not assumed: on an iPhone SE the city shelf starts below the fold,
+        // and a lazy stack does not build what is not on screen, so asking
+        // for it without scrolling fails on exactly the phone the CI uses
+        // (2026-08-21, the first green the workflow never had).
+        let places = app.staticTexts["Our favourite tree cities"]
+        for _ in 0..<6 where !places.exists { app.swipeUp(velocity: .fast) }
+        XCTAssertTrue(places.exists, "the places shelf is missing")
+
+        // And on down past the species to the collections.
         var found = false
         for _ in 0..<8 where !found {
             app.swipeUp(velocity: .fast)
@@ -246,15 +286,21 @@ final class AncientTreesUITests: XCTestCase {
     @MainActor
     func testPillSwapsListAndMap() throws {
         let app = launch(["-tab=0"])
+        let home = app.descendants(matching: .any)["explore-home"]
         let pill = app.buttons["explore-pill"]
         XCTAssertTrue(pill.waitForExistence(timeout: 10), "no pill on Explore")
+        XCTAssertTrue(home.exists, "Explore did not open on its shelves")
         pill.tap()
         XCTAssertTrue(app.staticTexts["Near you"].waitForExistence(timeout: 8),
                       "the pill did not open the map")
         XCTAssertTrue(app.buttons["List"].exists, "the pill did not relabel to List")
         app.buttons["List"].tap()
-        XCTAssertTrue(app.staticTexts["Our favourite tree cities"].waitForExistence(timeout: 8),
+        // The face itself, by its identifier, rather than a shelf heading:
+        // the city shelf is below the fold on an iPhone SE, so its absence
+        // said nothing about the pill.
+        XCTAssertTrue(home.waitForExistence(timeout: 8),
                       "the pill did not return to the shelves")
+        XCTAssertTrue(app.buttons["Map"].exists, "the pill did not relabel back to Map")
     }
 
     /// The sheet the whole account funnel runs through. If it does not present,

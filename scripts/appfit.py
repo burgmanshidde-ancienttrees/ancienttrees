@@ -92,7 +92,11 @@ SYSTEM_LABELS = {"Sheet Grabber", "Legal"}
 # into every MapKit view at 29 by 11 points, and a tab bar centres its items in
 # equal columns rather than aligning them to the page's margin, so both would
 # report forever without anything to do about either.
-NOT_OURS = ("Map", "TabBar")
+# And the navigation bar: Back, a toolbar's Cancel and Share are placed and
+# sized by Apple (a toolbar button is 36 tall, Back starts at 16 whatever the
+# page's inset is), so judging them judges iOS. Added 2026-08-21, when the
+# first read of a green-free workflow found six of its findings were these.
+NOT_OURS = ("Map", "TabBar", "NavigationBar")
 
 
 def inside(el, types):
@@ -137,13 +141,16 @@ def parse(dump):
     current = None
     for line in dump.splitlines():
         if line.startswith("<<<SWEEP "):
-            _, name, size = line.split(" ", 2)
+            parts = line.split(" ")
+            name, size = parts[1], parts[2]
+            root = next((p[5:] for p in parts[3:] if p.startswith("root=")), None)
             w, h = size.split("x")
-            current = {"name": name, "w": float(w), "h": float(h), "els": []}
+            current = {"name": name, "w": float(w), "h": float(h), "els": [],
+                       "root": root}
             continue
         if line.startswith("SWEEP>>>"):
             if current:
-                screens.append(link(current))
+                screens.append(under_root(link(current)))
             current = None
             continue
         if current is None:
@@ -152,6 +159,45 @@ def parse(dump):
         if m:
             current["els"].append(El(m))
     return screens
+
+
+def under_root(screen):
+    """Keep only the elements under the screen's named root, when it has one.
+
+    A sheet is measured on its own. Before this, the paywall's list was judged
+    against Explore's hero chip behind it, and the contribute form against the
+    profile it was opened from: a "drift" from something nobody could see.
+    The whole tree is still dumped, because an element's own debugDescription
+    prints the whole application regardless; the cut is made here, by
+    ancestry, which the indentation gives us (2026-08-21).
+    """
+    root = screen.get("root")
+    if not root:
+        return screen
+    roots = [el for el in screen["els"] if el.ident == root]
+    if not roots:
+        print(f"  (no element named {root!r} on {screen['name']}; judging the whole screen)")
+        return screen
+    top = roots[0]
+
+    def under(el):
+        p = el
+        while p is not None:
+            if p is top:
+                return True
+            p = p.parent
+        return False
+
+    screen["els"] = [el for el in screen["els"] if under(el)]
+    # iOS 26 draws a sheet that is not at its large detent as a floating card,
+    # eight points in from each edge, and draws the content inside it through
+    # the same transform: a 44 point button in a 359 point wide sheet measures
+    # 42.1. That is Apple's sheet, not our layout, so the measurements are read
+    # back to layout points, and a control is small only when it is small in
+    # the points we laid it out in.
+    if 0 < top.w < screen["w"] * 0.99:
+        screen["scale"] = top.w / screen["w"]
+    return screen
 
 
 def link(screen):
@@ -202,6 +248,19 @@ def mark_shelves(screen):
             el._horizontal = span > el.w * 1.5
 
 
+def centred(el, W):
+    """True for something laid out around the screen's centre line.
+
+    Centred content shares a centre, not a left edge: a headline, a sentence
+    and a button all centred in the same margins start at 34.5, 43 and 30,
+    because each starts where its own width puts it. The location primer is
+    built that way, as permission screens are, and the left-edge rule has
+    nothing to say about it. Full-width things are not centred in this sense,
+    because they also have a left edge to keep.
+    """
+    return abs((el.x + el.w / 2) - W / 2) <= 2.0 and el.w < W * 0.88
+
+
 def check(screen):
     findings = []
     W = screen["w"]
@@ -233,7 +292,8 @@ def check(screen):
                              f"ends at {el.right:.0f} on a {W:.0f} point screen, "
                              f"so {el.right - W:.0f} points are off the edge"))
 
-        if el.type in TAPPABLE and (el.w < MIN_TAP - SAME or el.h < MIN_TAP - SAME):
+        min_tap = MIN_TAP * screen.get("scale", 1.0)
+        if el.type in TAPPABLE and (el.w < min_tap - SAME or el.h < min_tap - SAME):
             findings.append(("SMALL", el,
                              f"{el.w:.0f} by {el.h:.0f}, under Apple's 44 by 44"))
 
@@ -243,7 +303,7 @@ def check(screen):
     for el in els:
         if (el.type not in INVISIBLE and el.w > 40 and el.h > 4
                 and 0 <= el.x < W / 2 and not in_shelf(el)
-                and not inside(el, NOT_OURS)):
+                and not inside(el, NOT_OURS) and not centred(el, W)):
             lefts[round(el.x * 2) / 2].append(el)
     if lefts:
         dominant = max(lefts, key=lambda x: len(lefts[x]))

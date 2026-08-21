@@ -59,6 +59,8 @@ struct PaywallView: View {
                 }
             }
         }
+        .accessibilityElement(children: .contain)
+        .accessibilityIdentifier("paywall-sheet")
     }
 
     /// Names what they were doing, never the plan. "Download Palermo" converts;
@@ -116,6 +118,7 @@ struct PaywallView: View {
                 HStack(alignment: .top, spacing: 10) {
                     Image(systemName: "checkmark").font(.caption.weight(.bold))
                         .foregroundStyle(Color(red: 0.20, green: 0.35, blue: 0.20))
+                        .frame(width: 18)
                         .padding(.top, 3)
                     VStack(alignment: .leading, spacing: 1) {
                         Text(f.ask).font(.subheadline.weight(.medium))
@@ -131,7 +134,7 @@ struct PaywallView: View {
     private var freeForever: some View {
         Text("Every tree, every story and every location stays free, here and on the website. This pays for the things that make them easier to reach.")
             .font(.footnote).foregroundStyle(.secondary)
-            .padding(14)
+            .padding(16)
             .frame(maxWidth: .infinity, alignment: .leading)
             .background(Color(.secondarySystemBackground), in: .rect(cornerRadius: 12))
     }
@@ -209,6 +212,12 @@ struct LockedRow<Label: View>: View {
                         .foregroundStyle(.secondary)
                 }
             }
+            .frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
+            .contentShape(.rect)
+            // One element the size of the row. A plain button in a list
+            // reports the bounds of its glyphs otherwise, which made five
+            // rows start at five different x positions, one per SF Symbol.
+            .accessibilityElement(children: .combine)
         }
         .buttonStyle(.plain)
         .sheet(isPresented: $asking) { PaywallView(feature: feature) }

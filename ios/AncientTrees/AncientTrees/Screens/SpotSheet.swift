@@ -108,6 +108,9 @@ struct SpotSheet: View {
                             .foregroundStyle(Brand.inkSoft)
                     }
                 }
+                // Two lines of text are 36 points; the finger gets 44.
+                .frame(minHeight: 44)
+                .contentShape(.rect)
             }
             .buttonStyle(.plain)
         }

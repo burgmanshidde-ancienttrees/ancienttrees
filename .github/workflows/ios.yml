@@ -27,6 +27,13 @@ on:
       - 'ios/**'
   workflow_dispatch:
 
+# A newer push cancels the run before it: this is a gate on the newest code,
+# and a verdict on a commit that has already been replaced is not worth a
+# runner's half hour. It is only half of why the first two days showed no
+# green, though: the longer "cancelled" runs died of the job timeout below,
+# which was 30 minutes for a job whose test step alone takes 17 to 29 (the
+# retry of a failing test doubles the slow half), and a timed-out job is
+# listed as "cancelled" as well.
 concurrency:
   group: ios-${{ github.ref }}
   cancel-in-progress: true
@@ -34,7 +41,11 @@ concurrency:
 jobs:
   test:
     runs-on: macos-15
-    timeout-minutes: 30
+    # Measured 2026-08-21: build and test 17 minutes when green, 29 when four
+    # tests fail and retry, plus five for the layout step. 30 cut off every
+    # failing run before its verdict, so the log that could have said WHY the
+    # tests failed was never written.
+    timeout-minutes: 50
 
     steps:
       - uses: actions/checkout@v4
@@ -97,6 +108,20 @@ jobs:
           grep -E "Test case|error:|warning: .*deprecat|\*\* (TEST|BUILD)" /tmp/xcodebuild.log || true
           # grep swallows the exit code, so ask xcodebuild again for the verdict.
           test -f /tmp/dd/Logs/Test/*.xcresult 2>/dev/null || true
+
+      # The result bundle, so a failure on the runner can be read from this
+      # Mac: XCTest photographs the screen at every failed assertion and the
+      # bundle carries the frames, the app's log and the crash, none of which
+      # reaches the console. The CI's SE-only failures of 2026-08-21 cost a
+      # local SE reproduction to understand because this did not exist.
+      - name: Keep the result bundle
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: xcresult-${{ github.run_id }}
+          path: /tmp/dd/Logs/Test/*.xcresult
+          retention-days: 7
+          if-no-files-found: ignore
 
       - name: Verdict
         run: |
