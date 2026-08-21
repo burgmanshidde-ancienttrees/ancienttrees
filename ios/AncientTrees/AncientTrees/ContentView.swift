@@ -249,6 +249,9 @@ struct ContentView: View {
                 .environment(account)
                 .environment(nudge)
                 .environment(navigator)
+                .onChange(of: navigator.selectTab) { _, new in
+                    if let new { tab = new; navigator.selectTab = nil }
+                }
                 .onChange(of: navigator.showOnMap) { _, new in
                     if new != nil { tab = 0 }
                 }

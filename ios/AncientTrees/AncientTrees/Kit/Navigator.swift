@@ -32,6 +32,10 @@ public final class Navigator {
         public init(city: String, name: String) { self.city = city; self.name = name } }
     public var beginWalk: WalkRef?
 
+    /// A tab somebody wants to be on. Set by whoever offers the shortcut,
+    /// cleared by the root, same shape as showOnMap.
+    public var selectTab: Int?
+
 
     public init() {}
 }

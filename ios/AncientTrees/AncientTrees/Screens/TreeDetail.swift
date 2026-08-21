@@ -26,16 +26,26 @@ struct TreeDetail: View {
                     header
                     facts
                     if tree.precision.needsWarning { approximateNote }
+                    // High on the page, under the facts, because it is a
+                    // question about the thing the facts just described
+                    // (Hidde, 2026-08-21).
+                    WorthItView(tree: tree)
                     story
                     accessBlock
-                    // The same control the website carries, born as toggles
-                    // (2026-08-21): sibling of the report button, per the
-                    // vote-and-report split.
-                    WorthItView(tree: tree)
                     if tree.photo == nil { offerPhoto }
                     Button { reporting = true } label: {
                         Label("Something here is wrong", systemImage: "exclamationmark.bubble")
                             .font(.footnote)
+                    }
+                    // Last line on the page, and only where the licence asks
+                    // for it. CC BY and BY-SA oblige a credit; CC0 and public
+                    // domain do not and get none. Moving it here is allowed
+                    // ("in any reasonable manner"), removing it is not.
+                    if let p = tree.photo, let c = Photos.credit(p) {
+                        Text("Photograph: " + c)
+                            .font(.caption2)
+                            .foregroundStyle(Brand.inkSoft.opacity(0.7))
+                            .lineLimit(2)
                     }
                     Color.clear.frame(height: 90)   // room for the pinned bar
                 }
@@ -111,12 +121,7 @@ struct TreeDetail: View {
                         .buttonStyle(.plain)
                         .accessibilityLabel("Show this tree on the map")
                     }
-                if let c = Photos.credit(p) {
-                    Text(c)
-                        .font(.caption2)
-                        .foregroundStyle(.secondary)
-                        .lineLimit(2)
-                }
+
             }
         } else {
             heroFallback.frame(height: 200).clipShape(.rect(cornerRadius: 14))
@@ -195,12 +200,25 @@ struct TreeDetail: View {
     /// says so sends somebody to the right park knowing they will have to look;
     /// one that pretends to be exact sends them to a spot where the tree is not.
     private var approximateNote: some View {
-        Label {
-            Text("This pin marks the area, not the trunk. You may have to look around once you are there.")
-        } icon: {
-            Image(systemName: "scope")
+        VStack(alignment: .leading, spacing: 8) {
+            Label {
+                Text("This pin marks the area, not the trunk. You may have to look around once you are there.")
+            } icon: {
+                Image(systemName: "scope")
+            }
+            .font(.footnote)
+            // The ask belongs here rather than three screens away: the person
+            // reading this line is the one person who can answer it, and
+            // location is the field this project cannot afford to get wrong.
+            Button { reporting = true } label: {
+                Text("Help us place this tree")
+                    .font(.footnote.weight(.semibold))
+                    .foregroundStyle(Brand.moss)
+                    .frame(minHeight: 44)
+                    .contentShape(.rect)
+            }
+            .buttonStyle(.plain)
         }
-        .font(.footnote)
         .padding(12)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(Color.orange.opacity(0.12), in: .rect(cornerRadius: 10))
@@ -260,30 +278,6 @@ struct TreeDetail: View {
                 Label("Take me there", systemImage: "location.fill")
             }
             .buttonStyle(BrandButtonStyle())
-
-            Button {
-                saved.toggleVisited(tree.id)
-                // The strongest moment this product has: somebody is standing in
-                // front of the thing and has just made a record of it. If we are
-                // ever going to ask, it is here.
-                if saved.isVisited(tree.id) {
-                    nudge.ticked(treeName: tree.name,
-                                 signedIn: account.isSignedIn,
-                                 total: saved.visitedCount)
-                }
-            } label: {
-                Image(systemName: saved.isVisited(tree.id) ? "checkmark.seal.fill" : "checkmark.seal")
-                    .font(.title3)
-                    .foregroundStyle(saved.isVisited(tree.id) ? Brand.moss : Brand.inkSoft)
-                    .frame(width: 52, height: 52)
-                    .background(Brand.surface, in: .circle)
-                    .overlay { Circle().strokeBorder(Brand.hairline, lineWidth: 1) }
-            }
-            .buttonStyle(.plain)
-            .accessibilityLabel(saved.isVisited(tree.id)
-                                ? "Ticked off. Tap to undo"
-                                : "I have stood in front of this tree")
-            .sensoryFeedback(.success, trigger: saved.isVisited(tree.id)) { _, now in now }
 
             Button {
                 saved.toggleSaved(tree.id)
