@@ -87,8 +87,14 @@ the result bundle so the next oddity can be read from here.
 Verified locally: full suite green on iPhone SE and iPhone 17 Pro, appfit
 0 findings. CI: tests 16 passed, 0 failed and the layout gate at 0
 findings on runs 32476429195 and 32478930343 (each green on the half the
-other was not); run 32481289239 on the final commit is the first fully
-green run of this workflow: 16 passed, 0 failed, 0 findings, 23 minutes.
+other was not); run 32481289239 was the first fully green run of this
+workflow (16 passed, 0 failed, 0 findings, 23 minutes), and run
+32488114317 is green on the merged main, which is what went into main.
+One thing to know: in that last run the walk test failed its first
+attempt on the runner ("did not advance from 0 of 14") and passed on the
+retry, so it is flaky on the iOS 18 simulator even from a clean start.
+The retry is what made the run green; the flake is main's test and is
+not diagnosed.
 
 **Merged onto the main that moved underneath (bdcd7c8 and after).** Main
 had meanwhile made Map tab 0, Explore the feed at tab 1, deleted the pill,
