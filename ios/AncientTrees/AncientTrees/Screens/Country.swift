@@ -41,7 +41,7 @@ struct CountryView: View {
                         .padding(.horizontal, 20)
                     ForEach(best) { t in
                         NavigationLink(value: Route.tree(t.id)) {
-                            TreeCard(tree: t, km: t.distanceKm(from: origin.lat, origin.lng))
+                            TreeCard(tree: t)
                         }
                         .buttonStyle(.plain)
                         .padding(.horizontal, 20)

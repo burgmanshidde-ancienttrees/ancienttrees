@@ -87,7 +87,7 @@ struct BottomSheet<Content: View>: View {
                     content
                         .frame(maxWidth: .infinity, alignment: .top)
                 }
-                .scrollDisabled(height != .full || handingOff)
+                .scrollDisabled(height == .peek || handingOff)
                 // At peek the content is a PREVIEW, not a control panel. Every
                 // finger that lands here belongs to the sheet, so a swipe up
                 // raises it instead of half-raising it and opening whatever
@@ -128,7 +128,7 @@ struct BottomSheet<Content: View>: View {
                     .onChanged { value in
                         // Claim the gesture only in the cases the rules above
                         // describe. Everything else belongs to the list.
-                        if height != .full {
+                        if height == .peek {
                             drag = value.translation.height
                         } else if atTop && value.translation.height > 0 {
                             handingOff = true

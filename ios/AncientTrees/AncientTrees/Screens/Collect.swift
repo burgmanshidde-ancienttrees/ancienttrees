@@ -209,7 +209,7 @@ struct CollectView: View {
 
     private func card(_ t: Tree) -> some View {
         NavigationLink(value: Route.tree(t.id)) {
-            TreeCard(tree: t, km: t.distanceKm(from: origin.lat, origin.lng))
+            TreeCard(tree: t)
         }
         .buttonStyle(.plain)
         .accessibilityIdentifier("tree-card")
@@ -276,7 +276,7 @@ struct CollectView: View {
                     .font(.subheadline).foregroundStyle(Brand.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
                 NavigationLink(value: Route.tree(t.id)) {
-                    TreeCard(tree: t, km: t.distanceKm(from: origin.lat, origin.lng))
+                    TreeCard(tree: t)
                 }
                 .buttonStyle(.plain)
                 NavigationLink(value: Route.tree(t.id)) {

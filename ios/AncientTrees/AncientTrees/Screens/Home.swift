@@ -296,8 +296,7 @@ struct HomeView: View {
                     ForEach(trees) { t in
                         NavigationLink(value: Route.tree(t.id)) {
                             VStack(alignment: .leading, spacing: 6) {
-                                TreeCard(tree: t, km: t.distanceKm(from: origin.lat, origin.lng),
-                                         showsInset: false)
+                                TreeCard(tree: t)
                                 if season, let b = t.bestTime {
                                     Text(b.label)
                                         .font(.caption).foregroundStyle(Brand.inkSoft)
@@ -480,7 +479,7 @@ struct HomeView: View {
                 ShelfHeader(title: "\(trees.count) trees")
                 ForEach(trees) { t in
                     NavigationLink(value: Route.tree(t.id)) {
-                        TreeCard(tree: t, km: t.distanceKm(from: origin.lat, origin.lng))
+                        TreeCard(tree: t)
                             .padding(.horizontal, 16)
                     }
                     .buttonStyle(.plain)
@@ -508,7 +507,7 @@ struct CollectionView: View {
                 }
                 ForEach(catalogue.trees(of: collection)) { t in
                     NavigationLink(value: Route.tree(t.id)) {
-                        TreeCard(tree: t, km: t.distanceKm(from: origin.lat, origin.lng))
+                        TreeCard(tree: t)
                             .padding(.horizontal, 16)
                     }
                     .buttonStyle(.plain)
@@ -565,7 +564,7 @@ struct CityView: View {
                 ShelfHeader(title: "\(trees.count) trees")
                 ForEach(trees) { t in
                     NavigationLink(value: Route.tree(t.id)) {
-                        TreeCard(tree: t, km: t.distanceKm(from: origin.lat, origin.lng))
+                        TreeCard(tree: t)
                             .padding(.horizontal, 16)
                     }
                     .buttonStyle(.plain)

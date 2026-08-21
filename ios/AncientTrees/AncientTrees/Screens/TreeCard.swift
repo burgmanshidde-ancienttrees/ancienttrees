@@ -12,10 +12,6 @@ import SwiftUI
 struct TreeCard: View {
     let tree: Tree
     var km: Double?
-    /// Off when the card is already sitting on the map (Hidde, 2026-08-20). A
-    /// small map is a WAY to the map, so on a screen that has one it is not a
-    /// shortcut, it is a picture of what you are already looking at.
-    var showsInset = true
     @Environment(Saved.self) private var saved
 
     private let corner: CGFloat = 14
@@ -73,12 +69,6 @@ struct TreeCard: View {
             // route it shows the shape; on a tree it shows the SETTING, and that
             // answers the thing a photograph of a trunk cannot: park, canal or
             // street corner.
-            .overlay(alignment: .bottomTrailing) {
-                // Honoured on BOTH branches. It used to guard only the
-                // photo-less one, so a card in the map's own sheet still drew
-                // a little map on top of the big map behind it.
-                if showsInset { MapInset(lat: tree.lat, lng: tree.lng).padding(10) }
-            }
             // Decorative, and its overflow is what made the card's measured
             // frame taller than the card; the name and meta carry the label.
             .accessibilityHidden(true)
@@ -95,9 +85,6 @@ struct TreeCard: View {
             // what shipped once before and is the reason this comment exists.
         } else {
             noPhoto.frame(height: imageHeight)
-                .overlay(alignment: .bottomTrailing) {
-                    if showsInset { MapInset(lat: tree.lat, lng: tree.lng).padding(10) }
-                }
         }
     }
 
@@ -157,7 +144,6 @@ struct TreeCard: View {
         HStack(spacing: 6) {
             Text(tree.commonName)
             if let age = tree.age { dot; Text(shortAge(age)) }
-            if let km { dot; Text(fmt(km)).monospacedDigit() }
             if tree.precision.needsWarning {
                 dot; Image(systemName: "scope")
             }

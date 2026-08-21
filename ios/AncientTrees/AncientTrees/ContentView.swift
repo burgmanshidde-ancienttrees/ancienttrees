@@ -207,6 +207,14 @@ struct ContentView: View {
         Group {
             if let cat = store.catalogue {
                 TabView(selection: tabSelection) {
+                    // FIVE SIMPLE OUTLINES OF THE SAME WEIGHT, which is the
+                    // whole of the balance Hidde asked for (2026-08-21: "de
+                    // iconen van Komoot voelen lekkerder, kijk goed naar de
+                    // verdeling en balans"). The old row mixed a hairline
+                    // magnifier with a scalloped rosette and a filled plus,
+                    // so it read as five icons borrowed from five apps.
+                    // plus.circle and checkmark.circle rhyme on purpose: add
+                    // and had are the two halves of the same verb.
                     stack(0, cat) {
                         if let id = debugTree, let t = cat.tree(id) {
                             TreeDetail(tree: t, catalogue: cat)
@@ -232,7 +240,7 @@ struct ContentView: View {
 
                     stack(3, cat) { CollectView(catalogue: cat, origin: origin) }
                         .tag(3)
-                        .tabItem { Label("Collect", systemImage: "rosette").environment(\.symbolVariants, .none) }
+                        .tabItem { Label("Collect", systemImage: "checkmark.circle").environment(\.symbolVariants, .none) }
 
                     stack(4, cat) { ProfileView(catalogue: cat) }
                         .tag(4)

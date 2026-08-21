@@ -13,6 +13,7 @@
 
 import SwiftUI
 import MapKit
+import Combine
 
 struct MapTab: View {
     let catalogue: Catalogue
@@ -32,6 +33,8 @@ struct MapTab: View {
     }
     @State private var sheetHeight: SheetHeight = .peek
     @State private var query = ""
+    @State private var promptIndex = 0
+    private let promptTick = Timer.publish(every: 2.6, on: .main, in: .common).autoconnect()
     /// Where the map is looking. nil until it has been moved, so the first list
     /// is still the list of what is near you.
     @State private var mapRegion: MKCoordinateRegion?
@@ -143,6 +146,9 @@ struct MapTab: View {
                     region: $mapRegion,
                     selected: $selected)
                 .ignoresSafeArea(edges: [.top, .horizontal])
+            .onReceive(promptTick) { _ in
+                withAnimation(.easeInOut(duration: 0.25)) { promptIndex = (promptIndex + 1) % 5 }
+            }
             BottomSheet(height: $sheetHeight) {
                 // The arbitration between dragging the sheet and scrolling what
                 // is inside it, which is the whole interaction and was wrong.
@@ -253,7 +259,7 @@ struct MapTab: View {
                 searchField
                 ForEach(listed, id: \.tree.id) { hit in
                     NavigationLink(value: Route.tree(hit.tree.id)) {
-                        TreeCard(tree: hit.tree, km: hit.km, showsInset: false)
+                        TreeCard(tree: hit.tree)
                     }
                     .buttonStyle(.plain)
                     .accessibilityIdentifier("tree-card")
@@ -444,9 +450,14 @@ struct MapTab: View {
 
     private var searchField: some View {
         HStack(spacing: 8) {
-            Image(systemName: "magnifyingglass").foregroundStyle(.secondary)
-            TextField("Search a place, a tree or a species", text: $query)
+            Image(systemName: "magnifyingglass")
+                .font(.system(size: 17, weight: .semibold))
+                .foregroundStyle(Brand.ink)
+            TextField("", text: $query, prompt: Text(searchPrompt)
+                .font(.system(size: 16, weight: .medium))
+                .foregroundColor(Brand.inkSoft))
                 .textFieldStyle(.plain)
+                .font(.system(size: 16, weight: .medium))
                 .autocorrectionDisabled()
                 .onTapGesture { sheetHeight = .full }
             if !query.isEmpty {
@@ -456,9 +467,20 @@ struct MapTab: View {
                 .buttonStyle(.plain)
             }
         }
-        .padding(.horizontal, 12).padding(.vertical, 10)
-        .background(Color(.secondarySystemBackground), in: .capsule)
+        .padding(.horizontal, 14).frame(height: 46)
+        .background(Brand.surface, in: .capsule)
+        .overlay { Capsule().strokeBorder(Brand.hairline, lineWidth: 1) }
+        .shadow(color: .black.opacity(0.05), radius: 4, y: 1)
         .padding(.top, 6)
+    }
+
+    /// What you can look for, one at a time, changing every few seconds. The
+    /// field used to say "Search a place, a tree or a species", which is a
+    /// list nobody reads; a rotating example teaches the same thing by
+    /// showing one at a time (AllTrails does exactly this).
+    private var searchPrompt: String {
+        ["Search a tree", "Search a city", "Search a park",
+         "Search a country", "Search a species"][promptIndex]
     }
 
     /// One tapped pin, shown in the sheet over the map rather than pushed onto
@@ -476,8 +498,7 @@ struct MapTab: View {
         if let t = selected {
             VStack(spacing: 0) {
                 NavigationLink(value: Route.tree(t.id)) {
-                    TreeCard(tree: t, km: t.distanceKm(from: origin.lat, origin.lng),
-                             showsInset: false)
+                    TreeCard(tree: t)
                 }
                 .buttonStyle(.plain)
                 .accessibilityIdentifier("tree-card")
