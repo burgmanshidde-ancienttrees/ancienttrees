@@ -35,6 +35,10 @@ struct TreeDetail: View {
                     if tree.precision.needsWarning { approximateNote }
                     story
                     accessBlock
+                    // The same control the website carries, born as toggles
+                    // (2026-08-21): sibling of the report button, per the
+                    // vote-and-report split.
+                    WorthItView(tree: tree)
                     if tree.photo == nil { offerPhoto }
                     Button { reporting = true } label: {
                         Label("Something here is wrong", systemImage: "exclamationmark.bubble")
