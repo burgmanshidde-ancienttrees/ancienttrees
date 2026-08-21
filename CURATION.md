@@ -10,6 +10,44 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-21 (session) - Bucaco: the Fundacao's nine plaques, read and merged
+
+The files arrived within the hour: nine PDFs of the Trilho das Arvores Notaveis
+plaques (2019, texts validated with the University of Aveiro) and three
+photographs. The nine plaques match our nine remaining Bucaco trees exactly,
+one each.
+
+**What they gave us.** A measured girth for all nine, which is the field this
+project is shortest of (13 trees carried one before today): 240 cm on
+Wellington's Olive up to 865 cm on King Regnans. Heights for four. Two facts
+worth a story edit later: the cork oak "appears to have never been corked", and
+the plaque calls King Regnans the tallest tree in the forest at about 73 m.
+Sources and verify_notes on all nine now cite the plaque by number.
+
+**One correction avoided, and it is the lesson.** The Portuguese layer of the
+PDFs mangles digits through its embedded font: the cypresses' planting year
+extracts as "1_44". Read as 1844 it would have demolished a correct page,
+because our story says the plaque dates the Cedro de Sao Jose to between 1628
+and 1650. The ENGLISH layer of the same plaque is clean: "planted around 1644".
+So the plaque confirms our page rather than contradicting it. Recorded at the
+top of data/research/bucaco-plaques.md for the next run.
+
+**One conflict recorded rather than resolved.** Plaque 07 dates the First Fall
+cypress to around 1644 (about 380 years), while the state measurement from 2016
+that our page cites reads about three centuries. Two official sources seventy
+years apart; the published age still follows the dated state measurement and
+the verify_note carries the plaque's figure. The girth settles the identity at
+least: the plaque's 5.26 m against the 5.25 m already in our story.
+
+**Three photographs are live** on Wellington's Olive, the Bunya Pine and the
+Santa Teresa redwood, all three of which had none. Rotated, resized to 1600 px
+and recompressed from 3 MB originals, hosted by us like the Baarn oak. Credited
+to the Fundacao Mata do Bucaco, with the provenance in the photo note: they are
+NOT under an open licence, they were sent to us by the body that manages the
+forest. Hidde's call, 2026-08-21: "we mogen de foto's gebruiken, anders
+versturen ze die niet." The written confirmation is still asked for in
+drafts/reply-bucaco.md, which now also tells them what we did with the files.
+
 ## 2026-08-21 (session) - Bucaco: the Fundacao's biologist answers, and the Santo Elias redwoods come off
 
 The Fundacao Mata do Bucaco replied to our outreach and had its own biologist

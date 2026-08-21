@@ -8,8 +8,9 @@ gevolgd, en toestemming vragen voor de plaatteksten en foto's. Zonder een
 expliciet ja mag daar niets van op de site (open licentie plus naamsvermelding
 is de regel, en die buigt niet).
 
-De WeTransfer-link verloopt na zeven dagen. Stuur me de bestanden of de link
-zodra je kunt, dan verwerk ik de plaatgegevens.
+De bestanden zijn binnen en verwerkt: negen omtrekken, de hoogtes en drie foto's
+staan live. Deze brief bevestigt dat en vraagt de schriftelijke toestemming na,
+zodat de foto's kunnen blijven staan.
 
 ---
 
@@ -19,7 +20,7 @@ Muito obrigado pela resposta, e agradeça também à vossa bióloga pelo tempo q
 
 Seguimos o conselho dela: as sequoias em frente à Ermida de Santo Elias já não constam da aplicação. Retirámo-las hoje. Se não é possível chegar até elas, não devemos mandar lá ninguém, e o facto de não estarem assinaladas no trilho das árvores notáveis diz tudo.
 
-Sobre as placas informativas e as fotografias: são exactamente o que nos falta, porque a informação validada pela Universidade de Aveiro e pela Fundação é melhor do que qualquer coisa que possamos reunir à distância. Podemos usá-las nas páginas das árvores do Buçaco? Se sim, diga-nos por favor como preferem ser creditados, e se as fotografias podem ficar visíveis publicamente ou apenas os textos. Se preferirem que nada seja publicado, também está bem: nesse caso servem-nos apenas para verificar o que já escrevemos.
+As placas e as fotografias chegaram, muito obrigado. Já as usámos para verificar as nove árvores que temos do Buçaco, e os dados batem certo: o perímetro do cedro junto ao Primeiro Tombo, 5,26 m, confirma que é mesmo a árvore que descrevemos. As três fotografias que enviaram estão agora nas páginas da oliveira, da araucária e da sequoia de Santa Teresa, creditadas à Fundação Mata do Buçaco. Se preferirem outro crédito, ou se preferirem que alguma delas saia, diga-nos e mudamos no próprio dia. E confirmem-nos por escrito, quando puderem, que podemos mantê-las publicadas.
 
 Uma última pergunta, e é a que mais me interessa: no trilho das árvores notáveis, qual é a árvore que os visitantes procuram e que nós ainda não temos? Gostava de acrescentar as que a Fundação considera importantes, e não apenas as que aparecem nos registos.
 
