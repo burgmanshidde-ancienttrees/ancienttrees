@@ -15,14 +15,33 @@ struct WorthItView: View {
     @AppStorage private var vote: String
     @State private var whyOpen = false
     @State private var reported: Bool
-    @State private var showForm = false
+    @State private var detail = ""
+    @State private var detailSent: Bool
     @State private var signingIn = false
+
+    /// The one question whose answer lets a run close the case, per reason
+    /// (Hidde, 2026-08-21: "i want them to tell us which of the two elms it
+    /// is"). Asked inline, never by sending people to the form.
+    private static let asks: [String: (String, String)] = [
+        "dead or gone": ("What did you find there? (optional)",
+                         "A stump, a fallen trunk, nothing at all, and when"),
+        "wrong location": ("Where is it really? (optional)",
+                           "A street corner, a landmark, or a maps pin"),
+        "could not tell which tree": ("Which one did you look at? (optional)",
+                                      "The thicker trunk, the one nearest the path, by the bench"),
+        "could not reach it": ("What stopped you? (optional)",
+                               "A locked gate, a fence, opening hours, private land"),
+        "something else": ("Tell us in a line.",
+                           "What we got wrong, or what we are missing"),
+    ]
 
     init(tree: Tree) {
         self.tree = tree
         _vote = AppStorage(wrappedValue: "", "at_worthit_\(tree.id)")
         _reported = State(initialValue:
             UserDefaults.standard.string(forKey: "at_wrong_\(tree.id)") != nil)
+        _detailSent = State(initialValue:
+            UserDefaults.standard.bool(forKey: "at_wrong_detail_\(tree.id)"))
     }
 
     var body: some View {
@@ -42,8 +61,27 @@ struct WorthItView: View {
                     .font(.footnote.weight(.semibold))
                 chipRow
             }
+            if reported {
+                Text(detailSent ? "Thanks, that helps." : "Thanks, we'll check it.")
+                    .font(.footnote).foregroundStyle(.secondary)
+                if !detailSent, let ask = Self.asks[reason] {
+                    Text(ask.0).font(.footnote.weight(.semibold))
+                    TextField(ask.1, text: $detail, axis: .vertical)
+                        .lineLimit(2...4)
+                        .textFieldStyle(.roundedBorder)
+                    Button("Send") {
+                        guard account.isSignedIn else { signingIn = true; return }
+                        let text = detail.trimmingCharacters(in: .whitespacesAndNewlines)
+                        guard !text.isEmpty else { return }
+                        send("report detail", String(text.prefix(1000)))
+                        UserDefaults.standard.set(true, forKey: "at_wrong_detail_\(tree.id)")
+                        detailSent = true
+                    }
+                    .buttonStyle(.bordered).controlSize(.small)
+                    .disabled(detail.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
+                }
+            }
         }
-        .sheet(isPresented: $showForm) { ContributeView(about: tree) }
         .sheet(isPresented: $signingIn) {
             SignInSheet(reason: .feedback, localCount: 0)
         }
@@ -82,10 +120,14 @@ struct WorthItView: View {
         FlowChips {
             chip("It's dead or gone", "dead or gone")
             chip("Wrong location", "wrong location")
+            chip("Couldn't tell which tree", "could not tell which tree")
             chip("Couldn't reach it", "could not reach it")
-            Button("Something else") { showForm = true }
-                .buttonStyle(.bordered).controlSize(.small)
+            chip("Something else", "something else")
         }
+    }
+
+    private var reason: String {
+        UserDefaults.standard.string(forKey: "at_wrong_\(tree.id)") ?? ""
     }
 
     private func chip(_ label: String, _ reason: String) -> some View {

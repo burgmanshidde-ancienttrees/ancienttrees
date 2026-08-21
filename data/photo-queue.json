@@ -30,7 +30,9 @@
      "author": "Dguendel",
      "lat": 52.36066667,
      "lng": 4.87491667,
-     "cats": "Category:2005 in Amsterdam Category:CC-BY-4.0 Category:Ponds in Amsterdam Category:Rijksmonumenten with known IDs Category:Self-published work Category:Vondelpark"
+     "cats": "Category:2005 in Amsterdam Category:CC-BY-4.0 Category:Ponds in Amsterdam Category:Rijksmonumenten with known IDs Category:Self-published work Category:Vondelpark",
+     "judged": "reject",
+     "verdict": "general Vondelpark pond view, no single tree is the subject, 273 m from the pin"
     },
     {
      "title": "File:Hippies slapen in Vondelpark Amsterdam.jpg",
@@ -40,7 +42,9 @@
      "author": "Rob Croes",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-Zero Category:Hippies in the Netherlands Category:Historical photographs of Vondelpark Category:July 1971 in Amsterdam"
+     "cats": "Category:CC-Zero Category:Hippies in the Netherlands Category:Historical photographs of Vondelpark Category:July 1971 in Amsterdam",
+     "judged": "reject",
+     "verdict": "archival photograph of people sleeping in the park, not a tree"
     },
     {
      "title": "File:Pavilion in Vondelpark Amsterdam.jpg",
@@ -50,7 +54,9 @@
      "author": "Expatiatrix",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-Zero Category:Self-published work Category:Vondelpark"
+     "cats": "Category:CC-Zero Category:Self-published work Category:Vondelpark",
+     "judged": "reject",
+     "verdict": "the Vondelpark pavilion is the subject, not a tree"
     },
     {
      "title": "File:Vlammetjes with chilli sauce - Taproom ‘t Blauwe Theehuis 2024-11-26.jpg",
@@ -73,7 +79,11 @@
      "cats": "Category:CC-BY-SA-4.0 Category:Self-published work Category:Vondelpark"
     }
    ],
-   "exhausted": "2026-08-08: no candidate shows the poplar itself, only general Vondelpark scenes"
+   "exhausted": "2026-08-08: no candidate shows the poplar itself, only general Vondelpark scenes",
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "rejected",
+   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
   },
   "ams_008": {
    "city": "Amsterdam",
@@ -98,7 +108,9 @@
      "author": "IISG",
      "lat": 52.348553,
      "lng": 4.90179,
-     "cats": "Category:1949 in Amsterdam Category:Amstelkade, Amsterdam Category:CC-BY-SA-2.0 Category:Fallen trees in the Netherlands Category:Flickr images reviewed by FlickreviewR 2 Category:Images from IISG Category:Netherlands photographs taken on 1949-03-01 Category:Photographs by Ben van Meerendonk"
+     "cats": "Category:1949 in Amsterdam Category:Amstelkade, Amsterdam Category:CC-BY-SA-2.0 Category:Fallen trees in the Netherlands Category:Flickr images reviewed by FlickreviewR 2 Category:Images from IISG Category:Netherlands photographs taken on 1949-03-01 Category:Photographs by Ben van Meerendonk",
+     "judged": "reject",
+     "verdict": "1949 IISG archival black and white photograph, 768 m from the pin"
     },
     {
      "title": "File:Amsteldijk-Amstelkade 2e Woningbouw der Coop Bouwver Y District Amsterdam Der Vereeniging Eigen Hulp 1922-1923 pic2.JPG",
@@ -108,7 +120,9 @@
      "author": "Alf van Beem",
      "lat": null,
      "lng": null,
-     "cats": "Category:Amsteldijk, Amsterdam Category:Amstelkade, Amsterdam Category:June 2016 in Amsterdam Category:Netherlands photographs taken on 2016-06-18 Category:PD-self Category:Self-published work"
+     "cats": "Category:Amsteldijk, Amsterdam Category:Amstelkade, Amsterdam Category:June 2016 in Amsterdam Category:Netherlands photographs taken on 2016-06-18 Category:PD-self Category:Self-published work",
+     "judged": "reject",
+     "verdict": "archival photograph of the 1920s housing block, not a tree"
     },
     {
      "title": "File:Gezicht op het Amstelkanaal en de Amstelkade gezien vanaf het Muzenplein in Amsterdam-Zuid, waar, SFA001015566.jpg",
@@ -118,10 +132,16 @@
      "author": "Wiel van der Randen",
      "lat": null,
      "lng": null,
-     "cats": "Category:Amstelkade, Amsterdam Category:CC-PD-Mark Category:Images from Spaarnestad Photo Category:Netherlands photographs taken on 1943-05-18 Category:PD-old missing SDC copyright status Category:PD Old Category:Photographs by Wiel van der Randen"
+     "cats": "Category:Amstelkade, Amsterdam Category:CC-PD-Mark Category:Images from Spaarnestad Photo Category:Netherlands photographs taken on 1943-05-18 Category:PD-old missing SDC copyright status Category:PD Old Category:Photographs by Wiel van der Randen",
+     "judged": "reject",
+     "verdict": "archival view over the Amstelkanaal, not a tree"
     }
    ],
-   "exhausted": "2026-08-08: the single candidate is a different street"
+   "exhausted": "2026-08-08: the single candidate is a different street",
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "rejected",
+   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
   },
   "ant_001": {
    "city": "Antwerp",
@@ -1339,9 +1359,15 @@
      "author": "Jordirooca",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Large images Category:Maps of neighbourhoods in Barcelona Category:Pedralbes Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Large images Category:Maps of neighbourhoods in Barcelona Category:Pedralbes Category:Self-published work",
+     "judged": "reject",
+     "verdict": "not a photograph: a locator map of Barcelona districts with Pedralbes shaded red"
     }
-   ]
+   ],
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "rejected",
+   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
   },
   "bcn_024": {
    "city": "Barcelona",
@@ -1357,7 +1383,9 @@
      "author": "Jordirooca",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Large images Category:Maps of neighbourhoods in Barcelona Category:Pedralbes Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Large images Category:Maps of neighbourhoods in Barcelona Category:Pedralbes Category:Self-published work",
+     "judged": "reject",
+     "verdict": "not a photograph: a locator map of Barcelona districts"
     },
     {
      "title": "File:Magnolia Explore DSC02355 - Flickr - tgrauros.jpg",
@@ -1367,9 +1395,15 @@
      "author": "Teresa Grau Ros from Barcelona",
      "lat": 41.387466,
      "lng": 2.117829,
-     "cats": "Category:CC-BY-SA-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr files uploaded by Red panda bot Category:Flickr images missing SDC creator Category:Flickr images reviewed by FlickreviewR 2 Category:Photographs by Teresa Grau Ros Category:Photos in Flickr Explore Category:Spain photographs taken on 2013-06-23 Category:Unidentified Magnolia"
+     "cats": "Category:CC-BY-SA-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr files uploaded by Red panda bot Category:Flickr images missing SDC creator Category:Flickr images reviewed by FlickreviewR 2 Category:Photographs by Teresa Grau Ros Category:Photos in Flickr Explore Category:Spain photographs taken on 2013-06-23 Category:Unidentified Magnolia",
+     "judged": "reject",
+     "verdict": "a magnolia, our tree is a Himalayan cedar"
     }
-   ]
+   ],
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "rejected",
+   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
   },
   "bcn_025": {
    "city": "Barcelona",
@@ -1385,7 +1419,9 @@
      "author": "Jordirooca",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Large images Category:Maps of neighbourhoods in Barcelona Category:Pedralbes Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Large images Category:Maps of neighbourhoods in Barcelona Category:Pedralbes Category:Self-published work",
+     "judged": "reject",
+     "verdict": "not a photograph: a locator map of Barcelona districts"
     },
     {
      "title": "File:Magnolia Explore DSC02355 - Flickr - tgrauros.jpg",
@@ -1395,9 +1431,15 @@
      "author": "Teresa Grau Ros from Barcelona",
      "lat": 41.387466,
      "lng": 2.117829,
-     "cats": "Category:CC-BY-SA-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr files uploaded by Red panda bot Category:Flickr images missing SDC creator Category:Flickr images reviewed by FlickreviewR 2 Category:Photographs by Teresa Grau Ros Category:Photos in Flickr Explore Category:Spain photographs taken on 2013-06-23 Category:Unidentified Magnolia"
+     "cats": "Category:CC-BY-SA-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr files uploaded by Red panda bot Category:Flickr images missing SDC creator Category:Flickr images reviewed by FlickreviewR 2 Category:Photographs by Teresa Grau Ros Category:Photos in Flickr Explore Category:Spain photographs taken on 2013-06-23 Category:Unidentified Magnolia",
+     "judged": "reject",
+     "verdict": "a magnolia, our tree is a Barbary thuja"
     }
-   ]
+   ],
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "rejected",
+   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
   },
   "bcn_026": {
    "city": "Barcelona",
@@ -1895,7 +1937,9 @@
      "author": "bDom - artiste - www.bdom.info from Enghien, Belgique",
      "lat": null,
      "lng": null,
-     "source": "commons/famous"
+     "source": "commons/famous",
+     "judged": "reject",
+     "verdict": "Sao Miguel in the Azores, 1445 km from Lisbon"
     },
     {
      "title": "File:2023 - São Miguel - Açores (53662094789).jpg",
@@ -1905,7 +1949,9 @@
      "author": "bDom - artiste - www.bdom.info from Enghien, Belgique",
      "lat": 37.743522,
      "lng": -25.675356,
-     "source": "commons/famous"
+     "source": "commons/famous",
+     "judged": "reject",
+     "verdict": "Sao Miguel in the Azores, geotag 1445 km from the pin"
     },
     {
      "title": "File:Exemplar de árvore-da-borracha, Jardim António Borges.jpg",
@@ -1915,7 +1961,9 @@
      "author": "NunoSalgueiro96",
      "lat": null,
      "lng": null,
-     "source": "commons/famous"
+     "source": "commons/famous",
+     "judged": "reject",
+     "verdict": "a rubber tree in the Jardim Antonio Borges, Azores, wrong island and wrong species"
     },
     {
      "title": "File:Ficus macrophylla kz08.jpg",
@@ -1997,7 +2045,11 @@
      "lng": null,
      "source": "commons/famous"
     }
-   ]
+   ],
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "rejected",
+   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
   },
   "lis_006": {
    "city": "Lisbon",
@@ -2010,9 +2062,15 @@
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Crossing_between_trees_platforms_%2847995676158%29.jpg/960px-Crossing_between_trees_platforms_%2847995676158%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Crossing_between_trees_platforms_(47995676158).jpg",
      "licence": "CC BY 2.0",
-     "author": "Pedro Ribeiro Simões from Lisboa, Portugal"
+     "author": "Pedro Ribeiro Simões from Lisboa, Portugal",
+     "judged": "reject",
+     "verdict": "photo_light scores it POOR: colour 0.000, reads as black and white"
     }
-   ]
+   ],
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "rejected",
+   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
   },
   "lis_007": {
    "city": "Lisbon",
@@ -2028,7 +2086,9 @@
      "author": "Валерий Дед",
      "lat": 41.147484,
      "lng": -8.656094,
-     "source": "commons/famous"
+     "source": "commons/famous",
+     "judged": "reject",
+     "verdict": "geotag places it 267 km from the pin, in Porto"
     },
     {
      "title": "File:Avenida Dom Carlos I - panoramio.jpg",
@@ -2038,7 +2098,9 @@
      "author": "Mister No",
      "lat": 41.147569,
      "lng": -8.668567,
-     "source": "commons/famous"
+     "source": "commons/famous",
+     "judged": "reject",
+     "verdict": "Avenida Dom Carlos I, geotag 267 km from the pin"
     },
     {
      "title": "File:Foz porto (1586395019).jpg",
@@ -2048,7 +2110,9 @@
      "author": "lilivanili from London, UK",
      "lat": 41.147411,
      "lng": -8.667944,
-     "source": "commons/famous"
+     "source": "commons/famous",
+     "judged": "reject",
+     "verdict": "Foz do Douro, Porto, 267 km from the pin"
     },
     {
      "title": "File:Porto (23963140834).jpg",
@@ -2140,7 +2204,11 @@
      "lng": null,
      "source": "commons/famous"
     }
-   ]
+   ],
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "rejected",
+   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
   },
   "lis_008": {
    "city": "Lisbon",
@@ -2153,9 +2221,15 @@
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Plantano_na_Pra%C3%A7a_Paiva_Couceiro%2C_Lisboa%2C_2024.jpg/960px-Plantano_na_Pra%C3%A7a_Paiva_Couceiro%2C_Lisboa%2C_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Plantano_na_Pra%C3%A7a_Paiva_Couceiro,_Lisboa,_2024.jpg",
      "licence": "CC0",
-     "author": "JnpoJuwan"
+     "author": "JnpoJuwan",
+     "judged": "reject",
+     "verdict": "WRONG SPECIES: a plane tree in the right square, shot from underneath with the crown cut off; our tree is the ginkgo"
     }
-   ]
+   ],
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "rejected",
+   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
   },
   "lis_010": {
    "city": "Lisbon",
@@ -2168,21 +2242,27 @@
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Lisboa%2C_Mouraria_%2853402431884%29.jpg/960px-Lisboa%2C_Mouraria_%2853402431884%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Lisboa,_Mouraria_(53402431884).jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "Šarūnas Burdulis"
+     "author": "Šarūnas Burdulis",
+     "judged": "reject",
+     "verdict": "Mouraria rooftops with builders at work, no tree"
     },
     {
      "title": "File:Lisboa, Mouraria (53402539820).jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Lisboa%2C_Mouraria_%2853402539820%29.jpg/960px-Lisboa%2C_Mouraria_%2853402539820%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Lisboa,_Mouraria_(53402539820).jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "Šarūnas Burdulis"
+     "author": "Šarūnas Burdulis",
+     "judged": "reject",
+     "verdict": "a Mouraria street of painted houses, no tree"
     },
     {
      "title": "File:Lisboa Mouraria (33073936486).jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Lisboa_Mouraria_%2833073936486%29.jpg/960px-Lisboa_Mouraria_%2833073936486%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Lisboa_Mouraria_(33073936486).jpg",
      "licence": "Public domain",
-     "author": "Luxbao"
+     "author": "Luxbao",
+     "judged": "reject",
+     "verdict": "a Mouraria alley with laundry, no tree"
     },
     {
      "title": "File:Mouraria, Lisboa - panoramio.jpg",
@@ -2198,7 +2278,11 @@
      "licence": "CC BY-SA 4.0",
      "author": "Manuel llach"
     }
-   ]
+   ],
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "rejected",
+   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
   },
   "lis_013": {
    "city": "Lisbon",
@@ -2211,21 +2295,27 @@
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Ed_%22Strangler%22_Lewis%2C_autograph%2C_signed_and_dated_card%2C_1949.jpg/960px-Ed_%22Strangler%22_Lewis%2C_autograph%2C_signed_and_dated_card%2C_1949.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Ed_%22Strangler%22_Lewis,_autograph,_signed_and_dated_card,_1949.jpg",
      "licence": "Public domain",
-     "author": "Ed Lewis"
+     "author": "Ed Lewis",
+     "judged": "reject",
+     "verdict": "an autographed card of the wrestler Ed \"Strangler\" Lewis"
     },
     {
      "title": "File:Ed \"Strangler\" Lewis applying head lock, 1924.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Ed_%22Strangler%22_Lewis_applying_head_lock%2C_1924.jpg/960px-Ed_%22Strangler%22_Lewis_applying_head_lock%2C_1924.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Ed_%22Strangler%22_Lewis_applying_head_lock,_1924.jpg",
      "licence": "Public domain",
-     "author": "Chicago Tribune"
+     "author": "Chicago Tribune",
+     "judged": "reject",
+     "verdict": "a 1924 press photograph of the wrestler Ed \"Strangler\" Lewis"
     },
     {
      "title": "File:Long hanging vines of a strangler fig seen from below in Luang Prabang Laos.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Long_hanging_vines_of_a_strangler_fig_seen_from_below_in_Luang_Prabang_Laos.jpg/960px-Long_hanging_vines_of_a_strangler_fig_seen_from_below_in_Luang_Prabang_Laos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Long_hanging_vines_of_a_strangler_fig_seen_from_below_in_Luang_Prabang_Laos.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Basile Morin"
+     "author": "Basile Morin",
+     "judged": "reject",
+     "verdict": "a strangler fig in Luang Prabang, Laos"
     },
     {
      "title": "File:Michael E. Arth \"Strangler figs and palms\" etching 1975.jpg",
@@ -2289,7 +2379,11 @@
      "source": "inaturalist",
      "obs_location": "38.7168312073,-9.1489601135"
     }
-   ]
+   ],
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "rejected",
+   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
   },
   "lis_014": {
    "city": "Lisbon",
@@ -2309,9 +2403,15 @@
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Bare_London_planetree_%28Platanus_%C3%97_hispanica%29_in_winter%2C_Campo_dos_M%C3%A1rtires_da_P%C3%A1tria%2C_Lisbon%2C_Portugal_julesvernex2.jpg/960px-Bare_London_planetree_%28Platanus_%C3%97_hispanica%29_in_winter%2C_Campo_dos_M%C3%A1rtires_da_P%C3%A1tria%2C_Lisbon%2C_Portugal_julesvernex2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Bare_London_planetree_(Platanus_%C3%97_hispanica)_in_winter,_Campo_dos_M%C3%A1rtires_da_P%C3%A1tria,_Lisbon,_Portugal_julesvernex2.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Jules Verne Times Two"
+     "author": "Jules Verne Times Two",
+     "judged": "reject",
+     "verdict": "photo_light scores it POOR: flat, and the filename names a bare London plane, our tree is the weeping fig"
     }
-   ]
+   ],
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "rejected",
+   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
   },
   "lis_018": {
    "city": "Lisbon",
@@ -2324,9 +2424,15 @@
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Silk_floss_tree_%2810313847796%29.jpg/960px-Silk_floss_tree_%2810313847796%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Silk_floss_tree_(10313847796).jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "Peter"
+     "author": "Peter",
+     "judged": "reject",
+     "verdict": "close-up of silk floss blossom; wrong species and no crown or trunk"
     }
-   ]
+   ],
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "rejected",
+   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
   },
   "lis_019": {
    "city": "Lisbon",
@@ -2339,9 +2445,15 @@
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Silk_floss_tree_%2810313847796%29.jpg/960px-Silk_floss_tree_%2810313847796%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Silk_floss_tree_(10313847796).jpg",
      "licence": "CC BY-SA 2.0",
-     "author": "Peter"
+     "author": "Peter",
+     "judged": "reject",
+     "verdict": "close-up of silk floss blossom; wrong species and no crown or trunk"
     }
-   ]
+   ],
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "rejected",
+   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
   },
   "lis_020": {
    "city": "Lisbon",
@@ -2824,21 +2936,27 @@
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ammidown_mausoleum%2C_Oak_Ridge_Cemetery.jpg/960px-Ammidown_mausoleum%2C_Oak_Ridge_Cemetery.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Ammidown_mausoleum,_Oak_Ridge_Cemetery.jpg",
      "licence": "CC0",
-     "author": "Peter Cooper Jr."
+     "author": "Peter Cooper Jr.",
+     "judged": "reject",
+     "verdict": "Ammidown mausoleum, Oak Ridge Cemetery, Illinois"
     },
     {
      "title": "File:Mausoleum Trogen 20201002 DSC4359.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Mausoleum_Trogen_20201002_DSC4359.jpg/960px-Mausoleum_Trogen_20201002_DSC4359.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Mausoleum_Trogen_20201002_DSC4359.jpg",
      "licence": "CC BY 4.0",
-     "author": "PantheraLeo1359531"
+     "author": "PantheraLeo1359531",
+     "judged": "reject",
+     "verdict": "a mausoleum in Trogen, Switzerland"
     },
     {
      "title": "File:Mausoleum of Khoja Ahmed Yasawi in Hazrat-e Turkestan, Kazakhstan.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Mausoleum_of_Khoja_Ahmed_Yasawi_in_Hazrat-e_Turkestan%2C_Kazakhstan.jpg/960px-Mausoleum_of_Khoja_Ahmed_Yasawi_in_Hazrat-e_Turkestan%2C_Kazakhstan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Mausoleum_of_Khoja_Ahmed_Yasawi_in_Hazrat-e_Turkestan,_Kazakhstan.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Petar Milošević"
+     "author": "Petar Milošević",
+     "judged": "reject",
+     "verdict": "the mausoleum of Khoja Ahmed Yasawi, Kazakhstan"
     },
     {
      "title": "File:Mausoleum to Koja Ahmad Yassaui, Turkistan, Kazakhstan (2013).jpg",
@@ -2854,7 +2972,11 @@
      "licence": "CC BY-SA 4.0",
      "author": "Petar Milošević"
     }
-   ]
+   ],
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "rejected",
+   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
   },
   "rom_009": {
    "city": "Rome",
@@ -2867,23 +2989,33 @@
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Roma_celimontana_villa1.JPG/960px-Roma_celimontana_villa1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Roma_celimontana_villa1.JPG",
      "licence": "CC BY-SA 3.0",
-     "author": "Warburg"
+     "author": "Warburg",
+     "judged": "reject",
+     "verdict": "Villa Celimontana lawn with a date palm as the subject, not the Aleppo pine"
     },
     {
      "title": "File:Roma celimontana villa3.JPG",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Roma_celimontana_villa3.JPG/960px-Roma_celimontana_villa3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Roma_celimontana_villa3.JPG",
      "licence": "CC BY-SA 3.0",
-     "author": "Warburg"
+     "author": "Warburg",
+     "judged": "reject",
+     "verdict": "the villa building is the subject, the pine is a cropped edge trunk"
     },
     {
      "title": "File:Villa Celimontana (Rome) (2).jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Villa_Celimontana_%28Rome%29_%282%29.jpg/960px-Villa_Celimontana_%28Rome%29_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Villa_Celimontana_(Rome)_(2).jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Gzen92"
+     "author": "Gzen92",
+     "judged": "reject",
+     "verdict": "the villa building is the subject, no pine portrait"
     }
-   ]
+   ],
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "rejected",
+   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
   },
   "rom_011": {
    "city": "Rome",
@@ -5012,9 +5144,15 @@
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Wien_08_Sch%C3%B6nbornpark_a.jpg/960px-Wien_08_Sch%C3%B6nbornpark_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Wien_08_Sch%C3%B6nbornpark_a.jpg",
      "licence": "CC0",
-     "author": "Gugerell"
+     "author": "Gugerell",
+     "judged": "reject",
+     "verdict": "general Schoenbornpark view with the fountain, no single tree is the subject"
     }
-   ]
+   ],
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "rejected",
+   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
   },
   "vie_012": {
    "city": "Vienna",
@@ -5037,9 +5175,15 @@
      "author": "Colin Smith on geo.hlipp.de",
      "lat": 52.43085,
      "lng": 13.12124,
-     "cats": "Category:CC-BY-SA-2.0 Category:Files with coordinates missing SDC location of creation Category:Flora of Berlin Category:Germany photographs taken on 2012-07-31 Category:Images from Geograph Deutschland Category:Uploaded with pattypan"
+     "cats": "Category:CC-BY-SA-2.0 Category:Files with coordinates missing SDC location of creation Category:Flora of Berlin Category:Germany photographs taken on 2012-07-31 Category:Images from Geograph Deutschland Category:Uploaded with pattypan",
+     "judged": "reject",
+     "verdict": "the Lenne rose garden flower beds on Pfaueninsel, no oak in the frame"
     }
-   ]
+   ],
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "rejected",
+   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
   },
   "ber_012": {
    "city": "Berlin",
@@ -5190,9 +5334,15 @@
      "author": "Kim Traynor",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:Lauriston, Edinburgh Category:Self-published work Category:Streets in Edinburgh Category:Taken with Panasonic Lumix DMC-FS10"
+     "cats": "Category:CC-BY-SA-3.0 Category:Lauriston, Edinburgh Category:Self-published work Category:Streets in Edinburgh Category:Taken with Panasonic Lumix DMC-FS10",
+     "judged": "reject",
+     "verdict": "Lonsdale Terrace tenements in the Lauriston district of central Edinburgh, about 5 km from Lauriston Castle, no monkey puzzle"
     }
-   ]
+   ],
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "rejected",
+   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
   },
   "edi_007": {
    "city": "Edinburgh",
@@ -6456,7 +6606,9 @@
      "author": "Andre Hospers",
      "lat": 53.222953,
      "lng": 6.553267,
-     "cats": "Category:CC-BY-4.0 Category:Noorderplantsoen Category:Self-published work Category:Uploads by Ahospers"
+     "cats": "Category:CC-BY-4.0 Category:Noorderplantsoen Category:Self-published work Category:Uploads by Ahospers",
+     "judged": "reject",
+     "verdict": "winter skating scene on the frozen pond, no single tree subject"
     },
     {
      "title": "File:1107.Noorderplantsoen.Park.Ijs.Winter.Schaatsen.Sneeuw.Groningen.jpg",
@@ -6466,7 +6618,9 @@
      "author": "Andre Hospers",
      "lat": 53.228619,
      "lng": 6.525219,
-     "cats": "Category:CC-BY-4.0 Category:Noorderplantsoen Category:Self-published work Category:Uploads by Ahospers"
+     "cats": "Category:CC-BY-4.0 Category:Noorderplantsoen Category:Self-published work Category:Uploads by Ahospers",
+     "judged": "reject",
+     "verdict": "same winter skating series, 2046 m from the pin"
     },
     {
      "title": "File:20110929 Leliesingel Noorderplantsoen Groningen NL.jpg",
@@ -6476,7 +6630,9 @@
      "author": "Wutsje",
      "lat": 53.21955278,
      "lng": 6.55544167,
-     "cats": "Category:CC-BY-SA-3.0 Category:Information field template with formatting Category:Leliesingel (Groningen) Category:Netherlands photographs taken on 2011-09-29 Category:Noorderplantsoen Category:Rijksmonumenten with known IDs Category:Trees in the Netherlands"
+     "cats": "Category:CC-BY-SA-3.0 Category:Information field template with formatting Category:Leliesingel (Groningen) Category:Netherlands photographs taken on 2011-09-29 Category:Noorderplantsoen Category:Rijksmonumenten with known IDs Category:Trees in the Netherlands",
+     "judged": "reject",
+     "verdict": "wide park view with three trees, none the subject, 442 m from the pin and the yellow crowns do not read as ginkgo"
     },
     {
      "title": "File:20110929 Leliesingel Noorderplantsoen Groningen NL 2.jpg",
@@ -6488,7 +6644,11 @@
      "lng": 6.55566944,
      "cats": "Category:CC-BY-SA-3.0 Category:Information field template with formatting Category:Leliesingel (Groningen) Category:Netherlands photographs taken on 2011-09-29 Category:Noorderplantsoen Category:Rijksmonumenten with known IDs Category:Trees in the Netherlands"
     }
-   ]
+   ],
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "rejected",
+   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
   },
   "gro_005": {
    "city": "Groningen",
@@ -8199,21 +8359,27 @@
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Apennine_Colossus_panorama_%2881988p%29.jpg/960px-Apennine_Colossus_panorama_%2881988p%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Apennine_Colossus_panorama_(81988p).jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Rhododendrites"
+     "author": "Rhododendrites",
+     "judged": "reject",
+     "verdict": "the Apennine Colossus statue in Florence"
     },
     {
      "title": "File:Colossus.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Colossus.jpg/960px-Colossus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Colossus.jpg",
      "licence": "Public domain",
-     "author": "Unknown authorUnknown author"
+     "author": "Unknown authorUnknown author",
+     "judged": "reject",
+     "verdict": "a statue named Colossus, not a tree"
     },
     {
      "title": "File:Colossus of Barletta 02.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Colossus_of_Barletta_02.jpg/960px-Colossus_of_Barletta_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Colossus_of_Barletta_02.jpg",
      "licence": "CC0",
-     "author": "Bernard Gagnon"
+     "author": "Bernard Gagnon",
+     "judged": "reject",
+     "verdict": "the Colossus of Barletta, a bronze statue in Italy"
     },
     {
      "title": "File:Colossus signage.JPG",
@@ -8250,7 +8416,11 @@
      "licence": "CC BY-SA 3.0",
      "author": "Stefan Scheer"
     }
-   ]
+   ],
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "rejected",
+   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
   },
   "nyc_008": {
    "city": "New York",
@@ -9076,21 +9246,27 @@
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Ligne_Petite_Ceinture_parc_Montsouris_Paris.jpg/960px-Ligne_Petite_Ceinture_parc_Montsouris_Paris.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Ligne_Petite_Ceinture_parc_Montsouris_Paris.jpg",
      "licence": "CC BY-SA 3.0",
-     "author": "Myrabella"
+     "author": "Myrabella",
+     "judged": "reject",
+     "verdict": "the Petite Ceinture railway cutting, not a tree portrait"
     },
     {
      "title": "File:Parc Montsouris @ Paris (29860614110).jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Parc_Montsouris_%40_Paris_%2829860614110%29.jpg/960px-Parc_Montsouris_%40_Paris_%2829860614110%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Parc_Montsouris_@_Paris_(29860614110).jpg",
      "licence": "CC BY 2.0",
-     "author": "Guilhem Vellut from Paris, France"
+     "author": "Guilhem Vellut from Paris, France",
+     "judged": "reject",
+     "verdict": "lawn view with two trees, neither filling the frame, no geotag and Parc Montsouris holds many planes"
     },
     {
      "title": "File:Station Tramway Ligne 3a Montsouris Paris 2.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Station_Tramway_Ligne_3a_Montsouris_Paris_2.jpg/960px-Station_Tramway_Ligne_3a_Montsouris_Paris_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Station_Tramway_Ligne_3a_Montsouris_Paris_2.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Chabe01"
+     "author": "Chabe01",
+     "judged": "reject",
+     "verdict": "a tram station, not a tree"
     },
     {
      "title": "File:Station Tramway Ligne 3a Montsouris Paris 3.jpg",
@@ -9113,7 +9289,11 @@
      "licence": "CC BY-SA 4.0",
      "author": "Chabe01"
     }
-   ]
+   ],
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "rejected",
+   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
   },
   "par_010": {
    "city": "Paris",
@@ -9570,7 +9750,9 @@
      "author": "Bic",
      "lat": 51.90805556,
      "lng": 4.47555556,
-     "cats": "Category:Attribution only license Category:CC-BY-SA-4.0 Category:Parklaan, Rotterdam Category:Photographs by User:Bic Category:Self-published work Category:Taken with Samsung Galaxy A8 (2018) Category:Willem-Alexanderbomen"
+     "cats": "Category:Attribution only license Category:CC-BY-SA-4.0 Category:Parklaan, Rotterdam Category:Photographs by User:Bic Category:Self-published work Category:Taken with Samsung Galaxy A8 (2018) Category:Willem-Alexanderbomen",
+     "judged": "reject",
+     "verdict": "WRONG TREE: this is the 2013 Koningslinde for Willem-Alexander, a young sapling with no iron fence, 59 m from our 1898 Wilhelmina Linden"
     },
     {
      "title": "File:Plechtige Inzegening van het huwelijk van Koningin Wilhelmina der Nederlanden en hertog Hendrik van Mecklenburg te 's-Gravenhage, op 7 Februari 1901 (titel op object), RP-P-1902-A-22896E.jpg",
@@ -9580,7 +9762,9 @@
      "author": "Rijksmuseum",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-Zero Category:Emma of Waldeck and Pyrmont in art Category:Mari ten Kate Category:Marriage of Queen Wilhelmina of the Netherlands and Duke Hendrik of Mecklenburg-Schwerin Category:Photogravures in the Rijksmuseum Amsterdam Category:Prints published by Albertus Willem Sijthoff in the Rijksmuseum Amsterdam Category:Stuart Tiara Category:Women with tiaras"
+     "cats": "Category:CC-Zero Category:Emma of Waldeck and Pyrmont in art Category:Mari ten Kate Category:Marriage of Queen Wilhelmina of the Netherlands and Duke Hendrik of Mecklenburg-Schwerin Category:Photogravures in the Rijksmuseum Amsterdam Category:Prints published by Albertus Willem Sijthoff in the Rijksmuseum Amsterdam Category:Stuart Tiara Category:Women with tiaras",
+     "judged": "reject",
+     "verdict": "1901 Rijksmuseum print of a royal wedding, archival, not a tree"
     },
     {
      "title": "File:Portretfoto van Wilhelmina van der Linden uit 1886, 1886, archiefnr 18-02.jpg",
@@ -9590,7 +9774,9 @@
      "author": "Unknown",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-PD-Mark Category:PD-old missing SDC copyright status Category:PD Old Category:Portrait photographs in Tresoar Category:Women of the Netherlands in 1886"
+     "cats": "Category:CC-PD-Mark Category:PD-old missing SDC copyright status Category:PD Old Category:Portrait photographs in Tresoar Category:Women of the Netherlands in 1886",
+     "judged": "reject",
+     "verdict": "1886 portrait photograph of a person named Wilhelmina van der Linden, not a tree"
     },
     {
      "title": "File:Rotterdam statue wilhelmina.jpg",
@@ -9616,7 +9802,11 @@
      "judged": "reject",
      "verdict": "another statue of Queen Wilhelmina"
     }
-   ]
+   ],
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "rejected",
+   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
   },
   "rot_005": {
    "city": "Rotterdam",
@@ -13376,21 +13566,27 @@
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Ever_The_Same_From_Up_Above%2C_St._Paul%27s_Cathedral%2C_London_-_panoramio.jpg/960px-Ever_The_Same_From_Up_Above%2C_St._Paul%27s_Cathedral%2C_London_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Ever_The_Same_From_Up_Above,_St._Paul%27s_Cathedral,_London_-_panoramio.jpg",
      "licence": "CC BY-SA 3.0",
-     "author": "Lawrence W.K. Ho"
+     "author": "Lawrence W.K. Ho",
+     "judged": "reject",
+     "verdict": "photo_light scores it POOR: underexposed"
     },
     {
      "title": "File:London, UK SP 1987.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/London%2C_UK_SP_1987.jpg/960px-London%2C_UK_SP_1987.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:London,_UK_SP_1987.jpg",
      "licence": "CC BY 2.0",
-     "author": "EuroAsia Vizion"
+     "author": "EuroAsia Vizion",
+     "judged": "reject",
+     "verdict": "the cathedral floor from above, interior, no tree"
     },
     {
      "title": "File:London - Queens Head Passage - View South on St Paul's Cathedral 1697 by Sir Christopher Wren.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/London_-_Queens_Head_Passage_-_View_South_on_St_Paul%27s_Cathedral_1697_by_Sir_Christopher_Wren.jpg/960px-London_-_Queens_Head_Passage_-_View_South_on_St_Paul%27s_Cathedral_1697_by_Sir_Christopher_Wren.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:London_-_Queens_Head_Passage_-_View_South_on_St_Paul%27s_Cathedral_1697_by_Sir_Christopher_Wren.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "Txllxt TxllxT"
+     "author": "Txllxt TxllxT",
+     "judged": "reject",
+     "verdict": "the cathedral facade down an alley, the tree is incidental"
     },
     {
      "title": "File:London - St. Paul's Churchyard - View SSW on St Paul's Cathedral 1697 by Sir Christopher Wren.jpg",
@@ -13441,7 +13637,11 @@
      "licence": "CC BY-SA 2.0",
      "author": "Robert Lamb"
     }
-   ]
+   ],
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "rejected",
+   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
   },
   "lon_012": {
    "city": "London",
@@ -15191,6 +15391,16 @@
      "lat": null,
      "lng": null,
      "cats": "Category:Autumn in Amsterdam Category:CC-Zero Category:Gravel paths Category:Photographs by Fons Heijnsbroek in Amsterdam (2021) Category:Plantage neighbourhood of Amsterdam, in photos by Fons Heijnsbroek Category:Self-published work Category:Trees in Amsterdam Category:Urban nature Category:Wertheimpark"
+    },
+    {
+     "title": "File:Berlage door Krop, westkant (2).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Berlage_door_Krop%2C_westkant_%282%29.jpg/960px-Berlage_door_Krop%2C_westkant_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Berlage_door_Krop,_westkant_(2).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ceescamel",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:March 2019 in Amsterdam Category:Netherlands photographs taken on 2019-03-28 Category:Self-published work Category:Standbeeld van H.P. Berlage"
     },
     {
      "title": "File:Breda sporen westkant II.jpg",
@@ -33256,9 +33466,15 @@
      "licence": "CC BY",
      "author": "(c) Lisa Wiencek Gerbec, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "19.7192836,-155.109422"
+     "obs_location": "19.7192836,-155.109422",
+     "judged": "held",
+     "verdict": "HELD: banyan portrait, but the iNaturalist observation calls it Ficus microcarpa while our entry says Ficus benghalensis, no geotag, and the crown is cropped. Question: at Rainbow Falls, is the big aerial-root banyan on the trail beyond the upper viewpoint a single Indian banyan, or are there two or more banyans of different species along that stretch?"
     }
-   ]
+   ],
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "held",
+   "outcome_note": "One banyan portrait, species label disagrees with our entry and there is no geotag; a local can settle which banyan it is."
   },
   "hbi_004": {
    "city": "Hilo",
@@ -34041,7 +34257,7 @@
      "source": "inaturalist",
      "obs_location": "47.6304783333,-122.3133383333",
      "judged": "reject",
-     "verdict": "same observation, detail only"
+     "verdict": "close-up looking up the trunk into the lower limbs, crown not readable"
     },
     {
      "title": "iNat obs 213286446 (Sequoiadendron giganteum)",
@@ -34050,9 +34266,15 @@
      "licence": "CC BY",
      "author": "(c) Arden Hoover, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "47.6304783333,-122.3133383333"
+     "obs_location": "47.6304783333,-122.3133383333",
+     "judged": "reject",
+     "verdict": "close-up looking up the trunk into the lower limbs, crown not readable"
     }
-   ]
+   ],
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "rejected",
+   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
   },
   "sea_003": {
    "city": "Seattle",
@@ -34081,7 +34303,7 @@
      "source": "inaturalist",
      "obs_location": "47.513625,-122.2676805556",
      "judged": "reject",
-     "verdict": "iNat observation of Picea abies offered for a grand fir; wrong species"
+     "verdict": "iNaturalist observation of Picea abies, our tree is Abies grandis, and no geotag"
     },
     {
      "title": "iNat obs 259311794 (Picea abies)",
@@ -34090,7 +34312,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "47.513625,-122.2676805556"
+     "obs_location": "47.513625,-122.2676805556",
+     "judged": "reject",
+     "verdict": "iNaturalist observation of Picea abies, our tree is Abies grandis, and no geotag"
     },
     {
      "title": "iNat obs 36951661 (Pseudotsuga menziesii)",
@@ -34099,9 +34323,15 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "47.5128560979,-122.2661738937"
+     "obs_location": "47.5128560979,-122.2661738937",
+     "judged": "reject",
+     "verdict": "iNaturalist observation of Pseudotsuga menziesii, our tree is Abies grandis, and no geotag"
     }
-   ]
+   ],
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "rejected",
+   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
   },
   "sea_004": {
    "city": "Seattle",
@@ -34117,7 +34347,9 @@
      "author": "Leslie Seaton from Seattle, WA, USA",
      "lat": 47.635089,
      "lng": -122.294826,
-     "cats": "Category:CC-BY-2.0 Category:Ethnobotany Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Taken with Canon EOS 450D"
+     "cats": "Category:CC-BY-2.0 Category:Ethnobotany Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Taken with Canon EOS 450D",
+     "judged": "reject",
+     "verdict": "a hand holding a carved wooden stick, not a tree"
     },
     {
      "title": "File:Hemlock, Redcedar, Douglas Fir (5905272513).jpg",
@@ -34151,7 +34383,9 @@
      "author": "Leslie Seaton from Seattle, WA, USA",
      "lat": 47.633065,
      "lng": -122.294483,
-     "cats": "Category:CC-BY-2.0 Category:Ethnobotany Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Taken with Canon EOS 450D"
+     "cats": "Category:CC-BY-2.0 Category:Ethnobotany Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Taken with Canon EOS 450D",
+     "judged": "reject",
+     "verdict": "filename and subject are a magnolia, our tree is a bigcone Douglas fir"
     },
     {
      "title": "File:Spindle Tree (5177988100).jpg",
@@ -34161,7 +34395,9 @@
      "author": "Leslie Seaton from Seattle, WA, USA",
      "lat": 47.633065,
      "lng": -122.294483,
-     "cats": "Category:CC-BY-2.0 Category:Ethnobotany Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Taken with Canon EOS 450D"
+     "cats": "Category:CC-BY-2.0 Category:Ethnobotany Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Taken with Canon EOS 450D",
+     "judged": "reject",
+     "verdict": "filename and subject are a spindle tree, our tree is a bigcone Douglas fir"
     },
     {
      "title": "File:Spindle Tree Seed (5177385013).jpg",
@@ -34201,7 +34437,11 @@
      "source": "inaturalist",
      "obs_location": "47.6334716667,-122.2939216667"
     }
-   ]
+   ],
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "rejected",
+   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
   },
   "sea_005": {
    "city": "Seattle",
@@ -34247,7 +34487,9 @@
      "licence": "CC BY",
      "author": "(c) Bruce Homer-Smith, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "-33.8624742441,151.2152508461"
+     "obs_location": "-33.8624742441,151.2152508461",
+     "judged": "reject",
+     "verdict": "close-up of the trunk and its label plate, no crown"
     },
     {
      "title": "iNat obs 259217559 (Agathis robusta)",
@@ -34256,9 +34498,15 @@
      "licence": "CC BY",
      "author": "(c) Bruce Homer-Smith, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "-33.8624742441,151.2152508461"
+     "obs_location": "-33.8624742441,151.2152508461",
+     "judged": "reject",
+     "verdict": "close-up of the trunk and its label plate, no crown"
     }
-   ]
+   ],
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "rejected",
+   "outcome_note": "All candidates fail the Cadiz standard; the tree keeps its honest gap."
   },
   "syd_002": {
    "city": "Sydney",
@@ -34299,7 +34547,9 @@
      "author": "Toby Hudson",
      "lat": -33.885928,
      "lng": 151.188781,
-     "cats": "Category:Australia photographs taken on 2009-11-03 Category:CC-BY-SA-3.0 Category:Extracted images Category:Files with coordinates missing SDC location of creation (34° S, 151° E) Category:GFDL Category:Jacaranda, University of Sydney Category:Jacaranda mimosifolia in Australia Category:License migration redundant Category:November 2009 in New South Wales Category:Photographs by User:99of9 Category:Self-published work Category:Sydney sandstone"
+     "cats": "Category:Australia photographs taken on 2009-11-03 Category:CC-BY-SA-3.0 Category:Extracted images Category:Files with coordinates missing SDC location of creation (34° S, 151° E) Category:GFDL Category:Jacaranda, University of Sydney Category:Jacaranda mimosifolia in Australia Category:License migration redundant Category:November 2009 in New South Wales Category:Photographs by User:99of9 Category:Self-published work Category:Sydney sandstone",
+     "judged": "reject",
+     "verdict": "WRONG TREE: the mature 1928 jacaranda that collapsed in October 2016; our entry is explicitly the 2017 clone"
     },
     {
      "title": "File:USYD Jacaranda SEP2019.jpg",
@@ -34309,9 +34559,15 @@
      "author": "Vakrieger",
      "lat": -33.886171,
      "lng": 151.189078,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (34° S, 151° E) Category:Jacaranda, University of Sydney Category:Self-published work Category:September 2019 in New South Wales Category:Taken with Google Pixel 4 XL"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (34° S, 151° E) Category:Jacaranda, University of Sydney Category:Self-published work Category:September 2019 in New South Wales Category:Taken with Google Pixel 4 XL",
+     "judged": "reject",
+     "verdict": "the right tree (2017 clone, geotag 10 m, dated Sep 2019) and well exposed, but the sandstone facade takes about three quarters of the frame and the jacaranda is a thin sapling within it, the same framing failure for which the November 2019 shot of this tree was already rejected"
     }
-   ]
+   ],
+   "judged": "2026-08-21",
+   "judged_date": "2026-08-21",
+   "outcome": "rejected",
+   "outcome_note": "Four candidates, none ships. Two are the tree: both are architectural shots where the Quadrangle wall dominates and the 2017 clone is a sapling inside it. One is the mature 1928 jacaranda that fell in 2016, which our entry explicitly is not. Honest gap until the clone grows or someone photographs it as the subject."
   },
   "syd_003": {
    "city": "Sydney",
@@ -34688,6 +34944,10 @@
   {
    "date": "2026-08-09",
    "note": "Baarn viewing pass, manual Dutch-term hunt after the API sweep returned zero candidates for all five trees. Swept Commons categories (Cantonspark, Kasteel Groeneveld and its Gardens/Icehouse subcategories, Parks in Baarn, Nature of Baarn), Commons geosearch on all three sites, 25 Dutch and English Commons searches, Openverse across five terms, and iNaturalist within 5 km. 40 images rendered and viewed as pixels: 34 Commons, 6 Flickr CC BY. Zero approvals. iNaturalist is a dead end for Baarn: every observation of Metasequoia, Sequoiadendron, Quercus rubra, Fagus sylvatica and Liriodendron in range is CC BY-NC or unlicensed. The pattern across all five trees is the same, these parks are photographed as places (wintertuin, colonnade, ice cellar, castle facade, moat) and never as trees."
+  },
+  {
+   "date": "2026-08-21",
+   "note": "Viewing pass 001, session with working egress, one image request every 3.2 seconds and no 429. 30 trees, 63 candidates; 33 images downloaded and viewed as pixels, the rest closed on hard metadata (wrong continent by geotag, statues and mausoleums, archival prints, wrestler Ed 'Strangler' Lewis for a strangler fig). Zero approvals, one hold (hbi_003). Four rejected by photo_light before any eyes. The two identity catches worth keeping: rot_004's best-scoring candidate is the 2013 Koningslinde for Willem-Alexander standing 59 m from our 1898 Wilhelmina Linden, a young sapling with no iron fence, and syd_002's sharpest candidate is the mature 1928 jacaranda that collapsed in 2016 while our entry is explicitly the 2017 clone. Both would have passed a filename-and-thumbnail check. Also: 'Barcelona Pedralbes.png', attached by the sweep to three separate Barcelona trees, is a district locator map rather than a photograph, so the sweep should skip .png district maps. syd_002's remaining candidate was rejected on the same framing ground an earlier pass used for its near-twin, rather than overturning that precedent for a marginally better version of the same shot."
   }
  ]
 }

@@ -78,13 +78,18 @@ public final class Saved {
         }
     }
 
+    /// Debug scaffolding, same family as -tab and -spot: a UI test that is
+    /// ABOUT the empty state cannot depend on running before the tests that
+    /// fill it. One walk test ticking a tree used to fail Collect's day-zero
+    /// test, and only when the clones happened to share a simulator.
+    private var wipeRequested: Bool {
+        ProcessInfo.processInfo.arguments.contains("-reset-collection")
+    }
+
     private func load() {
-        // `-reset` starts from nothing. Debug scaffolding like `-at` and
-        // `-tab`: the layout sweep and the UI tests share one simulator since
-        // 2026-08-21 (serial testing), and a tree ticked by one test showed
-        // up as a "Seen" badge in the next measurement.
-        if ProcessInfo.processInfo.arguments.contains("-reset") {
+        if wipeRequested {
             UserDefaults.standard.removeObject(forKey: key)
+            return
         }
         guard let d = UserDefaults.standard.data(forKey: key),
               let list = try? JSONDecoder().decode([Entry].self, from: d) else { return }

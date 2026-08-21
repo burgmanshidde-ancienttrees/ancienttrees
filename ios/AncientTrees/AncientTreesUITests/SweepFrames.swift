@@ -22,8 +22,8 @@ final class SweepFrames: XCTestCase {
     /// Same origin as the sweep: fixed, so the location dialog never appears
     /// and "near you" is the same trees every time.
     private static let origin = "-at=52.3731,4.8922"
-    /// Every screen is measured from a clean collection; see Saved.load().
-    private static let clean = "-reset"
+    /// Every screen is measured from a clean collection; Saved's -reset-collection.
+    private static let clean = "-reset-collection"
 
     /// name -> the launch arguments that open it.
     /// Name, launch arguments, and for a screen that is a sheet or an overlay,
@@ -32,10 +32,10 @@ final class SweepFrames: XCTestCase {
     /// hero chip and the contribute form against the profile under it, and
     /// both "drifted" from things nobody could see (2026-08-21).
     private static let screens: [(String, [String], String?)] = [
-        ("explore",      ["-tab=0"], nil),
-        ("map",          ["-map"], nil),
-        ("saved",        ["-tab=1"], nil),
+        ("map",          ["-tab=0"], nil),
+        ("explore",      ["-tab=1"], nil),
         ("spot",         ["-spot"], "spot-sheet"),
+        ("walk-begin",   ["-begin=amsterdam|Plantage"], "walk-mode"),
         ("collect",      ["-tab=3"], nil),
         ("profile",      ["-tab=4"], nil),
         ("tree",         ["-tab=0", "-open=tree:ath_004"], nil),

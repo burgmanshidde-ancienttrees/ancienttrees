@@ -634,6 +634,9 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .shelf-card { display: block; text-decoration: none; color: var(--ink); }
 .shelf-ph { position: relative; display: block; aspect-ratio: 4 / 3; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow); margin-bottom: 0.6rem; background: var(--surface); }
 .shelf-ph img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.25s; }
+.shelf-mosaic { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 2px; background: var(--cream-dark); }
+.shelf-mosaic img { min-height: 0; }
+.shelf-card:hover .shelf-mosaic img { transform: none; }
 .shelf-card:hover .shelf-ph img { transform: scale(1.04); }
 .shelf-now { position: absolute; top: 10px; left: 10px; background: #F3E4C3; color: #8A6414; font-size: 10.5px; font-weight: 700; border-radius: 999px; padding: 3px 10px; }
 .shelf-card b { display: block; font-size: 15px; font-weight: 800; line-height: 1.3; }
@@ -757,6 +760,87 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   line-height: 1; border: 2px solid var(--cream);
   display: flex; align-items: center; justify-content: center; padding: 0 3px; }
 .pin-tree.active .pin-rank { background: var(--cream); color: var(--ink); border-color: var(--moss); }
+
+/* A tree at its peak, on the map. The pin is already a species silhouette, so
+   the effect belongs to the drawn tree: the silhouette takes the peak colour,
+   a soft halo breathes behind it, and the particles leave the CROWN. A ginkgo
+   sheds from a ginkgo.
+
+   Four movements, because the moments are not alike. Blossom and leaves DRIFT:
+   slow, sideways, rotating, they leave the frame. Fruit does not. It falls
+   straight and fast and stays on the ground under the tree, so the ground fills
+   rather than the air. Catkins never fall at all; they hang and sway. And a
+   fruiting pin breathes at less than half the strength of a flowering one,
+   because acorns landing is a quieter event than a whole crown turning gold in
+   three days (Hidde, 2026-08-20: "de vrucht animatie kan dan wat subtieler").
+
+   Three particles per pin. More reads as weather rather than as a tree. */
+/* The silhouette takes the peak colour, and a hairline shadow in a darkened
+   version of that same hue keeps the SHAPE readable when the colour is pale.
+   Without it the horse chestnut's near-white blossom turned the whole tree
+   near-white on a cream pin and the tree disappeared: seen on the map at 3.4x
+   on 2026-08-20. A shadow in the peak's own hue rather than a flat black keeps
+   each species looking like itself, and on a saturated gold it costs nothing. */
+.pin-tree.pin-peak svg { color: var(--peak);
+  filter: drop-shadow(0 0 .7px color-mix(in srgb, var(--peak) 35%, var(--ink)))
+          drop-shadow(0 0 .7px color-mix(in srgb, var(--peak) 35%, var(--ink))); }
+.pin-tree.pin-peak::after {
+  content: ""; position: absolute; inset: -7px; border-radius: 50%; z-index: -1;
+  background: radial-gradient(circle, color-mix(in srgb, var(--peak) 42%, transparent) 0%, transparent 68%);
+  animation: peak-breathe 3.4s ease-in-out infinite; }
+.pin-tree.peak-fruit-drop::after, .pin-tree.peak-catkins::after { opacity: .45; animation-duration: 5s; }
+@keyframes peak-breathe { 0%, 100% { transform: scale(.86); opacity: .5 } 50% { transform: scale(1.14); opacity: 1 } }
+
+.pin-bits { position: absolute; inset: 0; pointer-events: none; overflow: visible; }
+.pin-bits i { position: absolute; left: 50%; top: 9px; width: 4px; height: 3px;
+  margin-left: -2px; border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  background: var(--peak); opacity: 0; }
+.pin-bits i:nth-child(2) { animation-delay: 1.5s }
+.pin-bits i:nth-child(3) { animation-delay: 3s }
+
+/* Drift: blossom and leaves, out of the crown and away. */
+.peak-falling-leaves .pin-bits i, .peak-blossom .pin-bits i {
+  animation: peak-drift 4.5s linear infinite; }
+@keyframes peak-drift {
+  0%   { opacity: 0; transform: translate(0, 0) rotate(0deg) }
+  12%  { opacity: .95 }
+  100% { opacity: 0; transform: translate(11px, 26px) rotate(220deg) }
+}
+/* Blossom petals are near-white on the chestnut and would vanish on a pale
+   map, so they carry a hairline of their own colour darkened, not a second
+   hue: the petal keeps its identity and gains a silhouette. */
+.peak-blossom .pin-bits i { width: 5px; height: 5px; border-radius: 50%;
+  box-shadow: 0 0 0 .5px color-mix(in srgb, var(--peak) 55%, var(--ink)); }
+
+/* Fall: fruit, straight down, and it stays where it lands. */
+.peak-fruit-drop .pin-bits i { width: 3.5px; height: 3.5px; border-radius: 50%;
+  animation: peak-fall 5.5s cubic-bezier(.4,0,.9,.5) infinite; }
+.peak-fruit-drop .pin-bits i:nth-child(2) { left: 41% }
+.peak-fruit-drop .pin-bits i:nth-child(3) { left: 59% }
+@keyframes peak-fall {
+  0%   { opacity: 0; transform: translateY(0) }
+  8%   { opacity: .7 }
+  38%  { opacity: .7; transform: translateY(22px) }
+  40%  { transform: translateY(21px) }
+  42%, 88% { opacity: .55; transform: translateY(22px) }
+  100% { opacity: 0; transform: translateY(22px) }
+}
+
+/* Hang: catkins do not fall. They lengthen and sway from the branches. */
+.peak-catkins .pin-bits i { top: 15px; width: 1.5px; height: 11px; border-radius: 1px;
+  transform-origin: 50% 0; opacity: .75; animation: peak-sway 4s ease-in-out infinite; }
+.peak-catkins .pin-bits i:nth-child(2) { left: 38%; height: 8px }
+.peak-catkins .pin-bits i:nth-child(3) { left: 62%; height: 9px }
+@keyframes peak-sway {
+  0%, 100% { transform: rotate(-9deg) scaleY(.92) }
+  50%      { transform: rotate(9deg) scaleY(1) }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pin-tree.pin-peak::after { animation: none; opacity: .7 }
+  .pin-bits i { animation: none !important; opacity: .6 }
+  .peak-falling-leaves .pin-bits i, .peak-blossom .pin-bits i { transform: translate(6px, 14px) }
+}
 /* The walk. On a phone this sits fixed at the bottom, because that is where a
    thumb is when someone is standing in the street holding a coffee. */
 /* Compact floating card, not a full-width bar: the map and its attribution
@@ -1123,6 +1207,11 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .worthit-thanks[hidden], .worthit-report[hidden] { display: none; }
 .worthit-chip { font-family: inherit; font-size: 12.5px; padding: 0.3rem 0.65rem; border: 1px solid var(--cream-dark); border-radius: 999px; background: var(--cream); cursor: pointer; color: var(--ink); }
 .worthit-chip:hover { border-color: var(--moss); }
+.worthit-detail { display: flex; flex-direction: column; align-items: flex-start; gap: 0.4rem; width: 100%; max-width: 34rem; }
+.worthit-detail[hidden] { display: none; }
+.worthit-detail textarea { width: 100%; box-sizing: border-box; font: inherit; font-size: 14px; padding: 0.5rem 0.65rem; border: 1px solid var(--cream-dark); border-radius: 10px; background: #fff; color: var(--ink); resize: vertical; }
+.worthit-detail textarea:focus { outline: none; border-color: var(--moss); }
+.worthit-detail .worthit-chip { min-height: 44px; padding: 0.3rem 1rem; }
 .which-one { font-size: 13.5px; line-height: 1.5; color: var(--ink); background: var(--cream);
              border-left: 3px solid var(--moss); border-radius: 0 8px 8px 0;
              padding: 0.6rem 0.9rem; margin: 0 0 1rem; }

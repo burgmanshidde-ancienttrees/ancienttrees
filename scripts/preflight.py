@@ -325,7 +325,22 @@ def check_stacked_pins():
 PHENOLOGY_KEYS = {
     "common_name", "habit", "leaf", "flowers", "fruit", "colour", "bare",
     "intensity", "flower_label", "fruit_label", "colour_label", "sources",
+    "peak",
 }
+# `peak` answers the six questions Hidde asked of this database on 2026-08-20:
+# which phenotype, what the calendar looks like, when the peak falls, whether it
+# is worth sharing, what the map should do, and where else it is surfaced. The
+# first two were already answered by habit and the month arrays; the other four
+# were not stored anywhere.
+#
+# It deliberately does NOT repeat the grade. A peak block may only exist where
+# intensity already rates that moment "worth the trip", and the check below
+# enforces it, so the judgement lives in one place and cannot drift from its
+# copy. That is the same rule the layout thresholds got today: a bar written
+# down twice stops being one bar.
+PEAK_KEYS = {"moment", "months", "share", "map", "surfaces"}
+MAP_EFFECTS = {"falling-leaves", "blossom", "fruit-drop", "catkins", "bare-frame"}
+SURFACES = {"map", "push", "tree", "city", "home", "collection"}
 PHENOLOGY_MOMENTS = {"leaf", "flowers", "fruit", "colour", "bare"}
 INTENSITIES = {"unseen", "nice", "striking", "worth the trip"}
 
@@ -346,6 +361,30 @@ def check_phenology():
                 out.append("%s: unknown key %r. The build reads only %s, so "
                            "anything else is written and never shown."
                            % (name, k, ", ".join(sorted(PHENOLOGY_KEYS))))
+        peak = d.get("peak")
+        if isinstance(peak, dict):
+            for k in peak:
+                if k not in PEAK_KEYS:
+                    out.append("%s: peak has unknown key %r" % (name, k))
+            mom = peak.get("moment")
+            if (d.get("intensity") or {}).get(mom) != "worth the trip":
+                out.append("%s: peak names %r but intensity does not rate it "
+                           "'worth the trip'. A peak is not a second opinion; "
+                           "raise the intensity or drop the peak." % (name, mom))
+            for m in peak.get("months") or []:
+                if m not in (d.get(mom) or []):
+                    out.append("%s: peak month %s is not in the %s calendar"
+                               % (name, m, mom))
+            eff = ((peak.get("map") or {}).get("effect"))
+            if eff and eff not in MAP_EFFECTS:
+                out.append("%s: map effect %r is not one of %s"
+                           % (name, eff, ", ".join(sorted(MAP_EFFECTS))))
+            for sfc in peak.get("surfaces") or []:
+                if sfc not in SURFACES:
+                    out.append("%s: surface %r is not one of %s"
+                               % (name, sfc, ", ".join(sorted(SURFACES))))
+        elif peak is not None:
+            out.append("%s: peak must be an object" % name)
         for moment, level in (d.get("intensity") or {}).items():
             if moment not in PHENOLOGY_MOMENTS:
                 out.append("%s: intensity names %r, which is not a moment" % (name, moment))

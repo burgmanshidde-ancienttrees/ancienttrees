@@ -536,6 +536,11 @@ def candidates_for(tree, city=""):
 
         def keeps(title):
             t = title.lower()
+            # A .png/.svg is a map, a diagram or a logo, never a photograph
+            # of a tree: "Barcelona Pedralbes.png" (a district locator map)
+            # was queued against three separate trees on 2026-08-21.
+            if t.endswith((".png", ".svg", ".gif")) or " map" in t or "locator" in t:
+                return False
             if any(mentions(t, r) for r in solo):
                 return True                      # a nickname nobody else uses
             in_city = any(mentions(t, c) for c in city_words)
