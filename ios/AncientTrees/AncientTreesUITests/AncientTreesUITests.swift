@@ -313,7 +313,9 @@ final class AncientTreesUITests: XCTestCase {
     @MainActor
     func testBeginWalksTheWalk() throws {
         let app = XCUIApplication()
-        app.launchArguments = ["-at=52.3667,4.9086", "-begin=amsterdam|Plantage"]
+        // Clean, like every launch: on the shared simulator a tick from an
+        // earlier test otherwise starts this walk at "1 of 14".
+        app.launchArguments = ["-at=52.3667,4.9086", "-reset-collection", "-begin=amsterdam|Plantage"]
         app.launch()
 
         XCTAssertTrue(app.otherElements["walk-mode"].waitForExistence(timeout: 12),
@@ -330,13 +332,13 @@ final class AncientTreesUITests: XCTestCase {
         // pretending to be a walk.
         let progress = app.staticTexts.matching(NSPredicate(format: "label CONTAINS 'of 14 ticked off'")).firstMatch
         XCTAssertTrue(progress.waitForExistence(timeout: 6))
-        let before = progress.label
+        let before = Int(progress.label.components(separatedBy: " ").first ?? "") ?? 0
         tick.tap()
-        XCTAssertTrue(app.staticTexts.matching(
-            NSPredicate(format: "label CONTAINS 'of 14 ticked off' AND NOT label CONTAINS %@",
-                        before.components(separatedBy: " ").first ?? "0")).firstMatch
-            .waitForExistence(timeout: 6),
-                      "ticking a tree did not advance the walk")
+        // The exact next count, not "a label without the old digit": the
+        // runner started at 1, the tick took it to "2 of 14", and "14"
+        // contains a 1, so the old predicate could never be satisfied.
+        XCTAssertTrue(app.staticTexts["\(before + 1) of 14 ticked off"].waitForExistence(timeout: 6),
+                      "ticking a tree did not advance the walk from \(before) of 14")
 
         app.buttons["walk-close"].tap()
         XCTAssertTrue(app.tabBars.buttons["Map"].waitForExistence(timeout: 6),
