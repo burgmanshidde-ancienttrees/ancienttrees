@@ -83,12 +83,17 @@ struct MapTab: View {
     private var mapTrees: [Tree] {
         guard filters.isOn else { return catalogue.trees }
         return catalogue.trees.filter {
-            filters.keeps($0, month: month)
+            filters.keeps($0, month: month, collected: collectedIds)
                 && filters.keepsDistance($0.distanceKm(from: focus.lat, focus.lng))
         }
     }
 
     private var month: Int { Calendar.current.component(.month, from: Date()) }
+    /// The ids you have collected, worked out once per redraw rather than
+    /// asked per tree while filtering fifteen hundred of them.
+    private var collectedIds: Set<String> {
+        Set(saved.entries.values.filter { $0.visitedAt != nil }.map(\.treeId))
+    }
     /// The point the list is about: where the map is looking once it has been
     /// moved, and where you are standing until then.
     private var focus: (lat: Double, lng: Double) {
@@ -114,7 +119,7 @@ struct MapTab: View {
 
     private var listed: [(tree: Tree, km: Double)] {
         let near = catalogue.nearest(to: focus.lat, focus.lng, limit: 60, withinKm: reachKm)
-            .filter { filters.keeps($0.tree, month: month) && filters.keepsDistance($0.km) }
+            .filter { filters.keeps($0.tree, month: month, collected: collectedIds) && filters.keepsDistance($0.km) }
         guard !query.isEmpty else {
             return Editorial.leadWithAPhotograph(near, photo: { $0.tree.photo != nil })
         }
@@ -122,7 +127,7 @@ struct MapTab: View {
         return catalogue.trees
             .filter { $0.name.lowercased().contains(q) || $0.city.lowercased().contains(q)
                       || $0.species.lowercased().contains(q) }
-            .filter { filters.keeps($0, month: month)
+            .filter { filters.keeps($0, month: month, collected: collectedIds)
                         && filters.keepsDistance($0.distanceKm(from: focus.lat, focus.lng)) }
             .prefix(40)
             .map { ($0, $0.distanceKm(from: focus.lat, focus.lng)) }
@@ -313,6 +318,8 @@ struct MapTab: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 8) {
                 walkChip
+                FilterChip(label: "Collected", icon: "checkmark.seal",
+                           on: filters.collectedOnly) { filters.collectedOnly.toggle() }
 
                 Menu {
                     Button("Any species") { filters.species = nil }
