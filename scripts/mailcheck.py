@@ -29,6 +29,10 @@ Four failure modes, all recorded, all mine:
    him to.
 4. PROCESS-PITCHING. Nobody outside this project cares how we verify. Say what
    they get.
+5. DECLINING WHAT THEY OFFERED. Somebody offers a call we do not want. Write
+   the refusal down and the mail becomes a rejection letter; talk past it and
+   answer the half we do want, and nothing is lost.
+6. ASKING TWICE. The same ask to somebody who already had it reads as need.
 
 What it CANNOT check is the positive half, which is where his own drafts win,
 so read this before writing rather than only after. A mail of his GIVES before
@@ -96,11 +100,92 @@ CHECKS = [
         r"incredible tree", r"árvores incríveis", r"árboles increíbles",
         r"arbres increïbles", r"alberi incredibili",
     ]),
+    # Hidde, 2026-08-21, on a reply to Quercus Lisboa that said in so many
+    # words "por agora não é preciso marcarmos uma conversa": "wat een lomp
+    # antwoord... dit is veel te direct dat moet je gewoon professioneel
+    # negeren of overheen praten." She had offered a meeting; he wanted the
+    # promotion and the tips and not the meeting, and the way to get that is to
+    # answer the parts he wants and let the rest go unmentioned. Writing the
+    # refusal down turns a warm reply into a rejection letter, and it does it
+    # in the sentence a person remembers.
+    ("DECLINING WHAT THEY OFFERED", [
+        r"(?:not (?:really )?(?:necessary|needed)|no need|don't think we need|"
+        r"niet nodig|geen behoefte|hoeft niet|n(?:ã|a)o (?:é|e) preciso|n(?:ã|a)o ser(?:á|a) necess(?:á|a)rio|"
+        r"n(?:ã|a)o vejo necessidade|no hace falta|no es necesario|nicht n(?:ö|oe)tig|"
+        r"kein Bedarf)"
+        r"[^.!?\n]{0,70}"
+        r"(?:call|meeting|chat|conversation|talk|gesprek|afspraak|belletje|"
+        r"conversa|reuni(?:ã|a)o|encontro|llamada|reuni(?:ó|o)n|Gespr(?:ä|ae)ch|Termin)",
+        r"(?:call|meeting|chat|conversation|gesprek|afspraak|conversa|"
+        r"reuni(?:ã|a)o|reuni(?:ó|o)n|Gespr(?:ä|ae)ch)"
+        r"[^.!?\n]{0,70}"
+        r"(?:is not (?:necessary|needed)|isn't necessary|n(?:ã|a)o (?:é|e) preciso|"
+        r"niet nodig|hoeft niet|nicht n(?:ö|oe)tig)",
+    ]),
     ("PROCESS-PITCHING", [
         r"two independent sources", r"\bwe verify\b", r"\bour (?:process|method|workflow)\b",
         r"\bcross-referenc", r"\bevery tree is (?:checked|verified)\b",
     ]),
 ]
+
+
+ASK_PATTERNS = [
+    r"\blink\b", r"\blinken\b", r"\blinkje\b", r"\bmention\b",
+    r"\bverlinken\b", r"\bliga(?:ç|c)(?:ã|a)o\b", r"\bhiperliga(?:ç|c)(?:ã|a)o\b",
+    r"\bmen(?:ç|c)(?:ã|a)o\b", r"\bdivulga", r"\benlace\b", r"\bVerweis\b",
+]
+
+
+def repeated_ask_hits(text, body):
+    """The same ask, twice, to the same person. Hidde, 2026-08-21: "je vraagt
+    twee keer om een link dat is te desperate."
+
+    A first mail asks; a reply that asks again for the thing already asked for
+    reads as need rather than as an offer, and need is the one posture that
+    loses these people. The check is mechanical because the memory is: any
+    address already in data/outreach-sent.json has HAD the ask, so a draft to
+    that address repeating it is the second time whether or not this session
+    remembers the first. Addresses are read from the whole file, notes
+    included, because a reply draft names the recipient in its notes."""
+    import json
+    import os
+    path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                        "data", "outreach-sent.json")
+    try:
+        sent = json.load(open(path, encoding="utf-8")).get("sent", [])
+    except Exception:
+        return []
+    already = {}
+    for row in sent:
+        if not isinstance(row, dict):
+            continue
+        addr = (row.get("to") or "").lower()
+        if addr:
+            already.setdefault(addr, row.get("date", "?"))
+    # A reply CAN legitimately carry an ask the first mail did not, and the
+    # cheap way to tell those apart is to make the writer say so in one line
+    # above the separator, where the notes to Hidde live:
+    #     mailcheck-ok: asking-twice - she offered the divulgação herself
+    # A check that has to be argued with in writing stays a check; one that
+    # fires on every reply to a contacted address becomes noise.
+    if re.search(r"^mailcheck-ok:\s*asking-twice\b.+\S", text, re.M | re.I):
+        return []
+    named = [(a, d) for a, d in already.items() if a in text.lower()]
+    # One recipient only. A reply is to a person; a file naming five addresses
+    # is a contact table or a template, and warning on those is how a check
+    # becomes noise nobody reads.
+    if len(named) != 1:
+        return []
+    hits = []
+    for addr, date in named:
+        for pat in ASK_PATTERNS:
+            m = re.search(pat, body, re.I)
+            if m:
+                line = body.splitlines()[body[:m.start()].count("\n")].strip()
+                hits.append(("ASKING TWICE (%s got the ask %s)" % (addr, date),
+                             m.group(0), line[:96]))
+                break
+    return hits
 
 
 def body_of(text):
@@ -131,6 +216,7 @@ def check(path):
     # to quote his own lower-case chat messages verbatim.
     if BODY_SPLIT.search(text):
         hits += lowercase_hits(body)
+    hits += repeated_ask_hits(text, body)
     return hits
 
 

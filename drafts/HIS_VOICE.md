@@ -80,3 +80,30 @@ the sense of unfussy phrasing, never in the sense of leaving a mail unpolished.
 And what is absent: no sentence that announces what the next sentence will do,
 no apology beyond a single inline sorry, no explanation of how the site works,
 no claim about what will never happen.
+
+## Two ways I made a reply lomp (2026-08-21, Quercus Lisboa)
+
+Silvia Moutinho of Quercus wrote back warmly, offered to look at the Lisbon
+trees, offered to promote the platform at one of their field activities, and
+offered a conversation. Hidde wanted the promotion and the tips and not the
+conversation. My draft said so out loud: "por agora não é preciso marcarmos
+uma conversa". His verdict: "wow wat een lomp antwoord... dit is veel te direct
+dat moet je gewoon professioneel negeren of overheen praten."
+
+**Never write down the offer you are declining.** Answer the parts you want,
+warmly and concretely, and leave the rest unmentioned. Nobody chases a reply
+for the paragraph that was not in it, and a mail that refuses something is
+remembered for the refusal. If the meeting matters to them they will ask again,
+and then it is a real question rather than one you invented and rejected.
+
+**One ask per mail, and only one.** The same draft asked for a link on their
+site and then pointed at /contribute and then put a third url under the
+signature. "Je vraagt twee keer om een link dat is te desperate." Two asks read
+as need, and need is the posture that loses these people. Where the other side
+has already offered something, the ask is not a new one at all: accept theirs
+and name the form it could take, following their lead rather than opening a
+second front.
+
+Both are now in `scripts/mailcheck.py` (DECLINING WHAT THEY OFFERED, ASKING
+TWICE), the second reading data/outreach-sent.json so it knows what this
+address was already asked.
