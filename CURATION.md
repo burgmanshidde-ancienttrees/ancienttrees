@@ -10,6 +10,20 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-21 - Submission #10: "not worth it" vote on Paris par_001 (the Robinier of Square Rene-Viviani), no action
+
+A reader used the worth-it control to mark the Robinier not worth the visit,
+with no reason chip and no name/email on the row. Re-read the tree entry: it
+is genuinely the oldest tree in Paris (1601), two independent sources, free
+public square, `location_precision: confirmed`. The likely cause is the
+physical experience rather than a factual error: the story already says
+plainly that concrete props hold up its heaviest limbs, ivy hides much of
+the trunk, and the on-site plaque undersells it. That is an honest account
+of an underwhelming-looking tree with a genuinely remarkable history, not a
+location or vitality problem, so nothing on the page needed to change.
+Marked processed in `data/submissions-processed.json` (id 10). No email on
+the row, so no reply owed.
+
 ## 2026-08-21 (night run) - Milan 19 to 21, Brussels 26 to 30: leads.py READY trees, all flagged, no photos
 
 Both were single-source-only register trees that a past pass had correctly
