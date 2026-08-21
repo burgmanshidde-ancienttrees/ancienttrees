@@ -56,8 +56,8 @@ def reason_text(entry):
 # Seven leads across four cities were affected. The marker is searched across
 # the whole entry, because the run that resolved one wrote it wherever it was
 # standing: in the name, in a note, in `status`.
-DONE = re.compile(r"\bresolved\b|\bdelivered as\b|\balready published\b|"
-                  r"\bpromoted\b|\bshipped as\b", re.I)
+DONE = re.compile(r"\bresolved\b|\bdelivered as\b|\bdelivered to\b|"
+                  r"\balready published\b|\bpromoted\b|\bshipped as\b", re.I)
 
 
 def is_done(entry):
