@@ -3,9 +3,9 @@
  "country": "Belgium",
  "status": "needs_curation",
  "intro": "Brussels is the rare city that has kept a formal, scientific register of its own remarkable trees since 2002, cataloguing more than a thousand specimens by age, rarity and historical weight. That bureaucratic thoroughness is why ages and girths on this list are unusually exact. It also explains an odd trick the city played on itself: when Brussels built the Cinquantenaire park in 1880 for Belgium's fiftieth anniversary, it did not plant saplings. It transplanted fully grown trees from an old cemetery and the edge of the Sonian Forest, so the new park looked centuries old on its opening day.",
- "meta_description": "Brussels has run an official register of its remarkable trees since 2002. Twenty-six verified locations, real stories, and how to reach each one.",
+ "meta_description": "Brussels has run an official register of its remarkable trees since 2002. Thirty verified locations, real stories, and how to reach each one.",
  "question_answer": "Brussels' oldest documented tree is the Chene Josephine, a pedunculate oak in Parc Jacques Brel in Forest, estimated at close to 400 years old from a trunk just over six metres around. Brussels' own heritage inventory calls it probably the oldest oak in the entire Brussels-Capital Region. It stands in a public park that only opened in 1980, though the tree itself long predates it.",
- "question_meta": "The Chene Josephine, a roughly 400 year old oak in Parc Jacques Brel, Forest, is Brussels' oldest documented tree. Where it stands, and twenty-five more.",
+ "question_meta": "The Chene Josephine, a roughly 400 year old oak in Parc Jacques Brel, Forest, is Brussels' oldest documented tree. Where it stands, and twenty-nine more.",
  "question_context": "Chene Josephine's age comes from its girth rather than any planting record: at 6.05 metres in circumference, measured at chest height, foresters use growth-rate tables for pedunculate oak to arrive at a figure close to four centuries, old enough that Brussels' own heritage inventory calls it probably the oldest oak anywhere in the region. No document names a planting date, since the ground it grows on was still part of the Kersbeekbosch, a wood already recorded under that name in 1648, long before anyone thought to write down individual trees within it. The clearest challenger for oldest is the Kasterlinde, a lime tree marking the exact point where three communes meet, documented on maps since 1777 and therefore provably at least two and a half centuries old, though its estimated true age, worked out from girth, comes out younger than the oak's. Parc Jacques Brel itself is a recent public space, only opened by the commune of Forest in 1980 after decades as a private estate, but the oak inside it is the oldest living thing within reach of a Brussels metro station. It costs nothing to visit.",
  "faq": [
   {
@@ -14,7 +14,7 @@
   },
   {
    "q": "Are Brussels' remarkable trees free to visit?",
-   "a": "Yes, all twenty-six stand in public parks, gardens and streets with no admission charge, unusual compared to cities where the oldest trees sit behind a castle or palace gate."
+   "a": "Yes, all thirty stand in public parks, gardens and streets with no admission charge, unusual compared to cities where the oldest trees sit behind a castle or palace gate."
   },
   {
    "q": "Why does Brussels know so much about the age of its own trees?",
@@ -914,6 +914,129 @@
    "curation_status": "flagged",
    "notes": "Single-sourced: only the region's official remarkable-trees inventory (register id 7292) names this tree. The exact garden identification is inferred from OpenStreetMap reverse geocoding of the register's coordinates rather than stated directly by the register, so location_precision is approximate. No age estimate: the register gives girth and legal status but no planting date or growth-rate basis.",
    "location_precision": "approximate"
+  },
+  {
+   "id": "bru_027",
+   "name": "The Pyramidal Holly of Parc d'Egmont",
+   "species": "Pyramidal Holly (Ilex aquifolium 'Pyramidalis')",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Parc d'Egmont, on the western lawns towards the Rue aux Laines side, 1000 Brussels",
+    "latitude": 50.837912,
+    "longitude": 4.356373,
+    "neighbourhood": "Sablon / Bruxelles-Ville"
+   },
+   "story": "Holly is a hedge in most of Brussels, and a sprig on a card in December. Left uncut it becomes a tree, and this is what that looks like: a trunk 1.40 metres round on the western lawns of Parc d'Egmont, which the region's inventory of remarkable trees ranks as the second largest of its cultivar anywhere in Brussels.\n\nThe cultivar is 'Pyramidalis', a narrow, upright selection of the common European holly. A cultivar is not something that turns up in a wood and comes back true from seed. Every 'Pyramidalis' is a cutting of a cutting of one original plant, so this tree and the ones standing in gardens elsewhere in Europe are the same individual, grown on in different soil.\n\nHolly lays down wood very slowly, which is the whole reason 140 centimetres earns a place on an official register while the sycamore on the same lawn carries 397 centimetres and ranks only third of its kind. Nobody has dated this one and the register does not try. It measures, it ranks, and it leaves the years alone. If you know the park's planting records, we would take the correction.\n\nThe park signposts it on its own panel, which spares you the hunt: at a distance a holly this size still reads as a shrub, right up until you are close enough to see the trunk.",
+   "verified_sources": [
+    "https://sites.heritage.brussels/fr/trees/638",
+    "Inventaire du patrimoine arbore remarquable, Region de Bruxelles-Capitale, entry 638 (Ilex aquifolium 'Pyramidalis', girth 140 cm, recorded as the second largest of its cultivar in the Brussels region; signposted on the park's own interpretive panel)"
+   ],
+   "access": "Free, public park, open daily 08:00 to 20:00",
+   "transport": "Metro to Louise, about 5 minutes on foot through the Boulevard de Waterloo entrance",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "notes": "Single-sourced on the region's own remarkable-trees inventory (entry 638), which gives the girth of 140 cm, the ranking as second largest of its cultivar in the Brussels-Capital Region, and the fact that the park's interpretive panel names it. That is a government register, which the register-layer rule accepts as the source for a tree of this kind, but no independent second source names this specific holly, so the entry is flagged. Coordinates are the register's, hence confirmed precision. No age: the inventory records size and rank and carries no planting date, and no growth-rate basis was available, so none was derived. The sycamore girth of 397 cm quoted in the story is our own bru_014, sourced to the same inventory.",
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "bru_028",
+   "name": "The Pagoda Tree of Parc d'Egmont",
+   "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Parc d'Egmont, on the lawns towards the Passage de Milan gate, 1000 Brussels",
+    "latitude": 50.83777,
+    "longitude": 4.35714,
+    "neighbourhood": "Sablon / Bruxelles-Ville"
+   },
+   "story": "Brussels files this tree under a name and a nationality that are both wrong. The register lists it as Sophora japonica. Botanists moved the species to Styphnolobium some time ago and most registers have not caught up, and it was never Japanese in the first place: it is native to China and Korea, and reached Europe by way of Japanese gardens, which is how it collected an epithet that has now outlived two corrections.\n\nIn China it was the tree of the imperial court, planted at palaces and tombs, and by tradition it was a pagoda tree on Coal Hill in Beijing that the last Ming emperor hanged himself from in 1644, with rebel armies already inside the city.\n\nThis one is a quieter proposition. Surveyors walked Parc d'Egmont in July 2019 and entered it on the region's inventory of remarkable trees, where it ranks inside the top thirty of its species for Brussels. There are not many to rank. The pagoda tree has never been planted here in quantity, which is exactly how a specimen of no great size ends up on an official list.\n\nThat survey logged one point on the lawns for the trees it added rather than a coordinate per trunk, so the pin puts you in the right corner of a park you can cross in three minutes and no closer. Nobody has recorded its age.",
+   "verified_sources": [
+    "https://sites.heritage.brussels/fr/trees/7111",
+    "Inventaire du patrimoine arbore remarquable, Region de Bruxelles-Capitale, entry 7111 (listed as Sophora japonica, Parc d'Egmont, surveyed July 2019, ranked in the top thirty of its species in the Brussels region)"
+   ],
+   "access": "Free, public park, open daily 08:00 to 20:00",
+   "transport": "Metro to Louise, about 5 minutes on foot through the Boulevard de Waterloo entrance",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "notes": "Single-sourced on the region's own remarkable-trees inventory (entry 7111), one of three trees the July 2019 Egmont survey added. That register is a government source and is accepted as such under the register-layer rule; no independent second source names this tree, so the entry is flagged. Location_precision is approximate on purpose: the survey recorded a single shared coordinate (50.83777, 4.35714) for the three trees it entered rather than pinning each trunk, and the story says so in plain words. Girth is recorded for the group at up to 164 cm and is not attributed per tree here, because the source does not attribute it per tree either. No age in the register and no growth-rate basis, so none was derived. Deliberately shares no claim with bru_008, the region's sixth-thickest pagoda tree at the Abbaye de la Cambre: different specimen, different ranking, no overlapping content.",
+   "curation_status": "flagged",
+   "location_precision": "approximate",
+   "how_to_recognise": "Light, open, pinnate foliage on a modest trunk, on the lawns towards the Passage de Milan gate. The pin is the survey's shared point for three trees rather than this trunk, so expect to look around once you are through the gate."
+  },
+  {
+   "id": "bru_029",
+   "name": "The Weeping Ash of Parc d'Egmont",
+   "species": "Weeping Ash (Fraxinus excelsior 'Pendula')",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Parc d'Egmont, on the lawns towards the Passage de Milan gate, 1000 Brussels",
+    "latitude": 50.83777,
+    "longitude": 4.35714,
+    "neighbourhood": "Sablon / Bruxelles-Ville"
+   },
+   "story": "A weeping ash has no top of its own. The weeping habit is a mutation that will not throw a leading shoot, so these trees are almost always grafted onto the head of an ordinary ash stem: the trunk rises as far as the grafter's join and then stops, and everything above it falls back down in a dome. Find the change in the bark somewhere around head height and you are looking at the seam between two different plants.\n\nThis one grows on the lawns of Parc d'Egmont and went onto the region's inventory of remarkable trees after a survey in July 2019. It ranks inside the top thirty of its kind recorded in Brussels.\n\nThe species underneath the graft is having a bad century. Ash dieback, a fungus out of east Asia, has worked its way across Belgium over the past fifteen years and killed ash trees at a rate European forestry has no answer to. Nobody can promise what that means for this one, which is an argument for going to look at it rather than against.\n\nThe July survey logged a single coordinate for the trees it added rather than one per trunk, so the pin marks the group and not this stem. No age is recorded, here or anywhere: the inventory measures and ranks, and lets the years alone.",
+   "verified_sources": [
+    "https://sites.heritage.brussels/fr/trees/7109",
+    "Inventaire du patrimoine arbore remarquable, Region de Bruxelles-Capitale, entry 7109 (Fraxinus excelsior f. pendula, Parc d'Egmont, surveyed July 2019, ranked in the top thirty of its species in the Brussels region)"
+   ],
+   "access": "Free, public park, open daily 08:00 to 20:00",
+   "transport": "Metro to Louise, about 5 minutes on foot through the Boulevard de Waterloo entrance",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "notes": "Single-sourced on the region's own remarkable-trees inventory (entry 7109), one of three trees the July 2019 Egmont survey added, and flagged for that reason; the register is a government source and is accepted as such under the register-layer rule. Location_precision is approximate: the survey recorded one shared coordinate (50.83777, 4.35714) for the three 2019 additions instead of pinning each trunk, and the story states that plainly. The register writes the name as Fraxinus excelsior f. pendula; the species field uses the cultivar form 'Pendula' to match the convention already live in the corpus (arn_006, yor_001). Girth for the 2019 group is recorded at up to 164 cm and is not attributed to this tree, because the source does not attribute it either. No age and no growth-rate basis, so none was derived. Nothing in the story asserts anything about this tree's own health: ash dieback is named as a fact about the species in Belgium, not as a diagnosis of this specimen.",
+   "curation_status": "flagged",
+   "location_precision": "approximate",
+   "how_to_recognise": "A small domed tree whose branches all curve back towards the ground, with a straight trunk that stops abruptly at the graft. The pin is the 2019 survey's shared point for three trees, so look around the lawns near the Passage de Milan gate."
+  },
+  {
+   "id": "bru_030",
+   "name": "The Thornless Honey Locust of Parc d'Egmont",
+   "species": "Thornless Honey Locust (Gleditsia triacanthos var. inermis)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Parc d'Egmont, on the lawns towards the Passage de Milan gate, 1000 Brussels",
+    "latitude": 50.83777,
+    "longitude": 4.35714,
+    "neighbourhood": "Sablon / Bruxelles-Ville"
+   },
+   "story": "The inermis on this tree's register entry means unarmed, and it is doing a lot of work. A wild honey locust grows branched spikes straight out of its own trunk, up to twenty centimetres long and hard enough to go through a tyre, which is why the thornless form is the only one anybody puts in a city park.\n\nThe usual explanation for those spikes is that they are about thirteen thousand years out of date. They are sized for animals that no longer exist, the giant ground sloths and mastodons that browsed North American woodland until the end of the last ice age, ate the tree's long twisted pods for the sweet pulp inside and carried the seed off in their guts. The pods still drop every autumn. Now they rot where they land.\n\nSurveyors entered this specimen on the region's inventory of remarkable trees after a pass through Parc d'Egmont in July 2019, and it sits inside the top thirty of its species for Brussels. None of the three trees that survey added is big: the thickest of them measures 164 centimetres round.\n\nThe survey gave one coordinate for the group instead of a pin per tree, so the exact spot inside the park is not on record. Look for the finest leaves in Egmont, leaflets small enough that the shade under a honey locust is barely shade. Nobody has dated it.",
+   "verified_sources": [
+    "https://sites.heritage.brussels/fr/trees/7110",
+    "Inventaire du patrimoine arbore remarquable, Region de Bruxelles-Capitale, entry 7110 (Gleditsia triacanthos var. inermis, Parc d'Egmont, surveyed July 2019, ranked in the top thirty of its species in the Brussels region, group girth recorded up to 164 cm)"
+   ],
+   "access": "Free, public park, open daily 08:00 to 20:00",
+   "transport": "Metro to Louise, about 5 minutes on foot through the Boulevard de Waterloo entrance",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "notes": "Single-sourced on the region's own remarkable-trees inventory (entry 7110), the third of the three trees the July 2019 Egmont survey added, and flagged for that reason; the register is a government source, accepted as such under the register-layer rule. Location_precision is approximate: the survey recorded one shared coordinate (50.83777, 4.35714) for all three 2019 additions rather than pinning each trunk, and the story says so. The 164 cm figure is the register's maximum for the 2019 group and is stated in the story as exactly that, a group maximum, not as this tree's own girth. No age in the register and no growth-rate basis available, so none was derived. The megafauna account of the thorns is presented in the story as the usual explanation rather than as settled fact, because it is a hypothesis about the species and not a claim about this tree. Common name follows the corpus convention of giving a distinct variant its own common name (compare arn_006 Weeping Japanese Pagoda Tree, yor_001 Narrow-Leaved Ash 'Lentiscifolia'); plain Gleditsia triacanthos is already live as Honey Locust in five other cities and is untouched.",
+   "curation_status": "flagged",
+   "location_precision": "approximate",
+   "how_to_recognise": "Very fine, doubly pinnate foliage that casts almost no shadow, on a smooth trunk with no thorns on it. The pin is the 2019 survey's shared point for three trees, so look across the lawns near the Passage de Milan gate."
   }
  ]
 }
