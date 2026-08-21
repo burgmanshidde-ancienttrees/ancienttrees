@@ -147,6 +147,23 @@ column: `email` on submissions. Bounds, all binding:
 - Digest: the thank-you/reply counts join the night-shift accounting via the
   sent-log, no new table.
 
+## Both surfaces (the 2026-08-21 rule, applied to this feature)
+
+The principle is one loop on web and app alike: input is thanked, verified,
+answered, never dismissed. Per surface:
+
+- **Contribute + email field**: the app's contribute screen (`-contribute`)
+  gets the same optional email field with the same label, posting to the
+  same Supabase table, in the same build pass as the web form.
+- **Worth-it thumbs**: the app has NO vote control today (checked
+  2026-08-21: TreeDetail only mentions the idea in a comment). It arrives
+  with this build, born with the toggle design (select, unpress to undo,
+  down-vote unfolds the optional why-chips), native in form, identical in
+  behaviour, on the tree detail screen where the web shows it. The screens
+  it lands on are ones appsweep already photographs.
+- **The mails** are surface-independent by nature: one reply loop,
+  whichever surface the submission came from.
+
 ## Out of scope
 
 Accounts for contributors, an inbox, threading beyond one reply per
