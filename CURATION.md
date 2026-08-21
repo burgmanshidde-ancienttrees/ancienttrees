@@ -10,6 +10,38 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-21 (night run) - Rome, Florence and Vienna's leads.py READY counts checked, not written from
+
+`prepare.py`'s shelf summary and `city_queue.py --next` both pointed at Rome
+(4 ready), Florence (1 ready) and Vienna (10 ready, later 8 after the fix
+below) as cheap write-only passes: below target, register-rich, leads.py
+says READY. Read the actual lead entries behind all three before claiming
+tokens for a write pass, and none were genuinely ready:
+
+- **Rome's 4** each carry a `[SKIPPED 2026-08-14 by the write pass]` note
+  explaining a real reason none matches `data/block-reasons.json`'s patterns:
+  beyond the 30-minute day-trip boundary, an unresolved post-fire vitality
+  check, or a planted grove with no individual specimen (not a collectible
+  point). Correctly excluded before; still correctly excluded now.
+- **Florence's 1** is an unverified RAMI-only list (3 species) needing its
+  own second source per its own text, i.e. exactly the "not verified yet"
+  case the two-source bar exists for, not a done story waiting to be typed.
+- **Vienna's list** was mostly a bug: entries already noted "verified and
+  delivered to data/research/vienna-verified.json as vie_026" (no literal
+  "delivered AS" match) were slipping past `leads.py`'s DONE regex and
+  showing as fresh candidates. Fixed in `scripts/leads.py` (widened DONE to
+  catch "delivered to" as well), dropping Vienna's count from 10 to 8. The
+  remaining 8 are real leads a past pass deliberately left out for legitimate,
+  non-blocking reasons (a third plane in a park that already has two, access
+  still unconfirmed on a Prater ginkgo, a weaker specimen off the main walk),
+  none of which is a fresh six-candidate pass worth dispatching on its own.
+
+None of this changes the shelf's headline numbers being genuinely useful for
+*some* cities (see the Milan/Brussels write pass below, dispatched instead):
+the lesson is that `leads.py`'s READY count is a start, not a verdict, and a
+run should read the `why`/`why_not_published`/`why_not_yet` text before
+claiming a city on the strength of the number alone.
+
 ## 2026-08-21 (night run) - Bari's 4th tree checked and still not found
 
 Bari has 3 fully verified, written trees (`data/research/bari-verified.json`)
