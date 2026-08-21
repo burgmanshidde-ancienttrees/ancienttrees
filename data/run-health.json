@@ -716,6 +716,28 @@
    "cities_touched": 0,
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-08-21T00:29:27+00:00",
+   "date": "2026-08-21",
+   "run_id": "32432846707",
+   "minutes": 28.1,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 228,
+   "denials": 18,
+   "denials_source": "permission_denials: Bash(curl), Bash(echo), Bash(for), Bash(if), Bash(mkdir), Bash(python3), Bash(rm), Bash(tail), Bash(wc)",
+   "ended": "success",
+   "tokens": 45551189,
+   "claims_held": [
+    "utrecht",
+    "krakow",
+    "haarlem"
+   ],
+   "commits": 16,
+   "cities_touched": 2,
+   "trees": 6,
+   "logged": true
   }
  ],
  "schedule_changes": [
