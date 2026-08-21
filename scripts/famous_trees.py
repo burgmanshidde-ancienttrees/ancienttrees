@@ -275,17 +275,37 @@ def main():
             continue
         slug = re.sub(r"[^a-z]+", "-", country.lower()).strip("-")
         path = os.path.join(ROOT, "data", "leads", f"_famous-{slug}.json")
+        # MERGE, never overwrite: a bare re-dump here once erased a hand-added
+        # entry (Greece's Tsagarada plane, tipped by Hidde 2026-08-14, with a
+        # "why" field this sweep knows nothing about) because Commons simply
+        # did not return it that day. Old entries survive by name unless this
+        # sweep re-found them, in which case the sweep's fresher lat/lng/photos
+        # win but any extra hand-written fields (why, status other than
+        # "lead") are kept.
+        old = {}
+        if os.path.exists(path):
+            try:
+                old = {e["name"]: e for e in json.load(open(path, encoding="utf-8"))
+                       .get("leads", []) if e.get("name")}
+            except Exception:
+                old = {}
+        merged = dict(old)
+        for l in leads:
+            fresh = {"name": l["label"], "lat": l["lat"], "lng": l["lng"],
+                      "photos": [p["url"] for p in l["photos"][:3]],
+                      "status": "lead"}
+            prior = old.get(l["label"], {})
+            merged[l["label"]] = {**prior, **fresh}
         json.dump({
             "country": country,
             "note": ("Famous trees Commons has a category for and we do not map. "
                      "Found by scripts/famous_trees.py; each one already has "
                      "photographs and usually coordinates, so the expensive half "
                      "of a research pass is done. Not verified by us, not published."),
-            "leads": [{"name": l["label"], "lat": l["lat"], "lng": l["lng"],
-                       "photos": [p["url"] for p in l["photos"][:3]],
-                       "status": "lead"} for l in leads],
+            "leads": list(merged.values()),
         }, open(path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
-        print(f"wrote {len(leads)} leads to {os.path.relpath(path, ROOT)}")
+        print(f"wrote {len(merged)} leads to {os.path.relpath(path, ROOT)} "
+              f"({len(leads)} from this sweep, {len(merged) - len(leads)} kept from before)")
     return 0
 
 
