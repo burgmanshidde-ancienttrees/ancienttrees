@@ -849,36 +849,69 @@ def product_section(today):
     # hides the only thing worth knowing at this size, which is whether anything
     # arrived this week. Fourteen days, and a column that is entirely zeros is
     # itself the finding rather than a formatting problem.
+    # Two changes on Hidde's ask, 2026-08-21. Saves joined the table ("please
+    # add saves to the table"): a save is a person keeping a tree, the closest
+    # thing to collecting the site has, and it was living as one line in the
+    # events list where nobody weighs it. And submissions split in two, because
+    # one column was hiding the difference that matters most at this size: a
+    # reader SENDING US A TREE (kind tree or city, the contribute form's real
+    # work) is a contributor, while a worth-it thumb or a correction (kind
+    # feedback, correction, privacy) is a reaction. Both are people, only one
+    # is supply, and "Submissions: 3" made them indistinguishable.
     try:
         since = today - datetime.timedelta(days=14)
         series = {}
-        for label, path in (("waitlist", "/rest/v1/waitlist?select=created_at"),
-                            ("submissions", "/rest/v1/submissions?select=id,created_at")):
-            rows_, _ = _supa(path, key)
-            for r in rows_:
-                if label == "submissions" and r.get("id") in TEST_SUBMISSION_IDS:
+
+        def bump(day_, label_):
+            series.setdefault(day_, {})[label_] = series.setdefault(day_, {}).get(label_, 0) + 1
+
+        rows_, _ = _supa("/rest/v1/waitlist?select=created_at", key)
+        for r in rows_:
+            bump(str(r.get("created_at"))[:10], "waitlist")
+        # Dedupe form double-submits before counting: on 2026-08-20 one reader's
+        # Toulouse correction arrived as three identical rows (CURATION.md, same
+        # day) and the digest announced three submissions. Same day, same kind,
+        # same tree, city and text is one submission however many times the
+        # button was pressed. Worth-it votes (kind feedback) are exempt: two
+        # readers giving the same thumb on the same tree the same day are two
+        # people, and the vote control carries no text to tell them apart.
+        rows_, _ = _supa("/rest/v1/submissions?select=id,created_at,kind,city,tree,why", key)
+        seen_sub = set()
+        for r in rows_:
+            if r.get("id") in TEST_SUBMISSION_IDS:
+                continue
+            if r.get("kind") != "feedback":
+                fp = (str(r.get("created_at"))[:10], r.get("kind"),
+                      r.get("city"), r.get("tree"), r.get("why"))
+                if fp in seen_sub:
                     continue
-                d = str(r.get("created_at"))[:10]
-                series.setdefault(d, {})[label] = series.setdefault(d, {}).get(label, 0) + 1
+                seen_sub.add(fp)
+            bump(str(r.get("created_at"))[:10],
+                 "trees" if r.get("kind") in ("tree", "city") else "feedback")
+        rows_, _ = _supa("/rest/v1/events?select=created_at&name=eq.save"
+                         "&created_at=gte.%sT00:00:00" % since.isoformat(), key)
+        for r in rows_:
+            bump(str(r.get("created_at"))[:10], "saves")
         users, _ = _supa("/auth/v1/admin/users?page=1&per_page=1000", key)
         for u in ((users or {}).get("users") or []):
-            d = str(u.get("created_at"))[:10]
-            series.setdefault(d, {})["accounts"] = series.setdefault(d, {}).get("accounts", 0) + 1
+            bump(str(u.get("created_at"))[:10], "accounts")
         days_ = [(since + datetime.timedelta(days=i)).isoformat() for i in range(15)]
         if any(series.get(d) for d in days_):
             out.append("")
-            out.append("| Day | Accounts | Waitlist | Submissions |")
-            out.append("|---|---:|---:|---:|")
+            out.append("| Day | Accounts | Waitlist | Saves | Trees sent | Feedback |")
+            out.append("|---|---:|---:|---:|---:|---:|")
             for d in days_:
                 v = series.get(d, {})
-                out.append("| %s | %d | %d | %d |" % (
-                    d[5:], v.get("accounts", 0), v.get("waitlist", 0), v.get("submissions", 0)))
+                out.append("| %s | %d | %d | %d | %d | %d |" % (
+                    d[5:], v.get("accounts", 0), v.get("waitlist", 0),
+                    v.get("saves", 0), v.get("trees", 0), v.get("feedback", 0)))
             tot = {k: sum(v.get(k, 0) for d, v in series.items() if d in days_)
-                   for k in ("accounts", "waitlist", "submissions")}
-            out.append("| **14 days** | **%d** | **%d** | **%d** |" % (
-                tot["accounts"], tot["waitlist"], tot["submissions"]))
+                   for k in ("accounts", "waitlist", "saves", "trees", "feedback")}
+            out.append("| **14 days** | **%d** | **%d** | **%d** | **%d** | **%d** |" % (
+                tot["accounts"], tot["waitlist"], tot["saves"],
+                tot["trees"], tot["feedback"]))
         else:
-            out.append("- Nothing signed up, joined the waitlist or was submitted in 14 days.")
+            out.append("- Nothing signed up, saved a tree or was submitted in 14 days.")
     except Exception as e:
         out.append("- Sign-up series unreadable (%s)" % str(e)[:60])
 
@@ -893,14 +926,48 @@ def product_section(today):
             out.append("- %s: unreadable (%s)" % (label, str(e)[:60]))
             continue
         try:
-            allrows, _ = _supa(path + "?select=id,created_at", key)
+            sel = ("?select=id,created_at,kind,city,tree,why"
+                   if label == "Submissions" else "?select=id,created_at")
+            allrows, _ = _supa(path + sel, key)
             if label == "Submissions":
                 allrows = [r for r in allrows if r.get("id") not in TEST_SUBMISSION_IDS]
+                # Same double-submit dedupe as the table above, votes exempt.
+                dedup, seen_fp = [], set()
+                for r in allrows:
+                    if r.get("kind") != "feedback":
+                        fp = (str(r.get("created_at"))[:10], r.get("kind"),
+                              r.get("city"), r.get("tree"), r.get("why"))
+                        if fp in seen_fp:
+                            continue
+                        seen_fp.add(fp)
+                    dedup.append(r)
+                allrows = dedup
             total = len(allrows)
             newest_at = max((r.get("created_at") or "" for r in allrows), default=None)
         except Exception:
             newest_at = None
         since = _days_since(newest_at, today)
+        if label == "Submissions":
+            # A tree sent in and a thumbs-up report are different animals
+            # (Hidde, 2026-08-21), so the headline and the total both say
+            # which kind arrived instead of the flattering generic word.
+            trees_n = sum(1 for r in (allrows or [])
+                          if r.get("kind") in ("tree", "city"))
+            if since is not None and since <= 1:
+                yday_ = (today - datetime.timedelta(days=1)).isoformat()
+                fresh = [r for r in allrows if str(r.get("created_at"))[:10] >= yday_]
+                fresh_trees = sum(1 for r in fresh if r.get("kind") in ("tree", "city"))
+                fresh_fb = len(fresh) - fresh_trees
+                parts = []
+                if fresh_trees:
+                    parts.append("%d tree submission%s" % (fresh_trees, "" if fresh_trees == 1 else "s"))
+                if fresh_fb:
+                    parts.append("%d feedback report%s" % (fresh_fb, "" if fresh_fb == 1 else "s"))
+                ATTENTION.append("%s arrived %s (%d total)"
+                                 % (" and ".join(parts) or "a submission", _ago(since), total))
+            out.append("- %-12s %d total (%d trees sent, %d feedback), newest %s" % (
+                label + ":", total, trees_n, total - trees_n, _ago(since)))
+            continue
         if since is not None and since <= 1:
             ATTENTION.append("a %s arrived %s (%d total)"
                              % (label.rstrip("s").lower(), _ago(since), total))
