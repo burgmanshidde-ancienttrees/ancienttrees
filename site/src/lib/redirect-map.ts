@@ -85,7 +85,14 @@ const CROSS_CITY_MERGED_TREE_SLUGS: [string, string, string, string][] = [
 // two big Winchester Park eucalypts, the mulberry students actually meet under,
 // the one native, and the three anomalies of a species growing where it should
 // not. Stories and sources kept in data/leads/las-vegas.json.
+// bucaco/the-redwoods-of-santo-elias (bsc_005, 2026-08-21): the Fundacao Mata
+// do Bucaco replied to our outreach and its biologist asked for these two
+// redwoods to come off the app, because it is not possible to walk to them.
+// That is why the forest's own notable-trees trail does not sign them. The
+// body that manages the forest is the best source on access there is, and our
+// page said "free on foot", which is the one promise we do not leave standing.
 const REMOVED_TREE_SLUGS: [string, string][] = [
+  ["bucaco", "the-redwoods-of-santo-elias"],
   ["las-vegas", "weeping-camperdown-elm-at-carlson"],
   ["las-vegas", "buddhist-pine-of-white-hall"],
   ["las-vegas", "texas-olive-behind-the-paint-shop"],

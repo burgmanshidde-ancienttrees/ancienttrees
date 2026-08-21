@@ -10,6 +10,35 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-21 (session) - Bucaco: the Fundacao's biologist answers, and the Santo Elias redwoods come off
+
+The Fundacao Mata do Bucaco replied to our outreach and had its own biologist
+check the app. Three things came back.
+
+**Every tree we list there is classified of public interest**, and each carries
+an information plaque whose text was validated by the University of Aveiro and
+the Fundacao. They sent the plaque PDFs and photographs by WeTransfer. That is
+a second, authoritative source for the whole Bucaco page, better than anything
+a research pass can assemble remotely, and it is the first time a forest's own
+managers have handed us their field data.
+
+**They asked for the Santo Elias redwoods to be removed** (bsc_005, "The
+Redwoods of Santo Elias"): it is not possible to travel to them, which is why
+the notable-trees trail does not sign them. Done the same day. Our page said
+"free on foot" and marked the pin confirmed, so we were promising a walk that
+cannot be made, which is the one error this site does not leave standing. The
+entry moved to data/leads/bucaco.json as blocked with the reason, the old URL
+redirects to the city page (REMOVED_TREE_SLUGS), and the intro and FAQ now say
+nine trees rather than ten. The walk re-routes itself, since walk-routes.json
+is keyed on the ordered tree ids.
+
+**What is owed:** the plaque texts and photographs may not be published until
+the Fundacao says so in writing, with a credit line they choose. Draft reply
+asking exactly that is in drafts/reply-bucaco.md (mailcheck clean); it also
+asks which tree on their trail visitors look for that we do not have yet.
+FOR HIDDE: the WeTransfer link expires after seven days, so forward the files
+or the link when you can.
+
 ## 2026-08-21 - Submission #10: "not worth it" vote on Paris par_001 (the Robinier of Square Rene-Viviani), no action
 
 A reader used the worth-it control to mark the Robinier not worth the visit,
