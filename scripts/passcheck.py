@@ -832,11 +832,20 @@ def print_archived_notes(slug, place):
         print(f"  ...and more: grep -ri \"{place}\" CURATION.md LOG.md archive/")
 
 
-def print_wikidata(slug):
+def print_wikidata(slug, pub_pts):
     """The CC0 Wikidata candidates harvested by scripts/wikidata_harvest.py.
     Banked 2026-08-09 (1,185 candidates, 660 with images) and wired here the
     same day, because a feed nothing reads is not a feed. Sitelinked articles
-    are where second sources live; an image link is a photo candidate."""
+    are where second sources live; an image link is a photo candidate.
+
+    `probably_ours` is a one-time flag set at harvest time (2026-08-09) and
+    never updated afterwards, so a candidate published AFTER the harvest still
+    reads as fresh forever. Found 2026-08-21: a Lyon verify pass fully
+    re-researched Q63253791 (the Anne Frank chestnut) as "1 not already ours"
+    and only discovered it was already live as lyo_012 by checking the city
+    file directly before banking it. Re-checking proximity against the live
+    published points every time this prints, the same way register candidates
+    already are, catches this without needing the harvest to ever re-run."""
     try:
         d = json.load(open(os.path.join(ROOT, "data", "research",
                                         "wikidata-candidates.json")))
@@ -845,7 +854,10 @@ def print_wikidata(slug):
     block = d.get("cities", {}).get(slug)
     if not block:
         return
-    fresh = [c for c in block.get("candidates", []) if not c.get("probably_ours")]
+    fresh = [c for c in block.get("candidates", [])
+             if not c.get("probably_ours")
+             and not any(km((c["latitude"], c["longitude"]), p) <= NEAR_PUBLISHED_KM
+                         for p in pub_pts)]
     if not fresh:
         return
     print(f"\nWIKIDATA CANDIDATES (CC0, harvested {block.get('harvested')}): "
@@ -966,7 +978,7 @@ def brief(arg, live):
         print("  research from zero and budget accordingly.")
 
     print_leads(slug)
-    print_wikidata(slug)
+    print_wikidata(slug, match["points"] if match else [])
     print_archived_notes(slug, match["city"] if match else arg)
     print_blocklist()
 

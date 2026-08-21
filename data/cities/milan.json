@@ -2,10 +2,10 @@
   "city": "Milan",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Milan's remarkable trees are rarely medieval; the city rebuilt itself too many times, and around itself even more, for old wood to survive by accident. What lasted here did so because an institution kept records (a university's ginkgo pair, brought from China in 1775), a neighbourhood organised (a paulownia a Brera committee saved from a car park in 2016), or a park changed its job entirely (a horse-racing track that became a school for sick children in 1919 and kept its oaks). Nineteen trees, and almost every one owes its survival to a specific human decision.",
-  "meta_description": "Milan's nineteen remarkable trees, from a 1775 ginkgo pair to a plane tree a Brera committee saved from demolition in 2016.",
+  "intro": "Milan's remarkable trees are rarely medieval; the city rebuilt itself too many times, and around itself even more, for old wood to survive by accident. What lasted here did so because an institution kept records (a university's ginkgo pair, brought from China in 1775), a neighbourhood organised (a paulownia a Brera committee saved from a car park in 2016), or a park changed its job entirely (a horse-racing track that became a school for sick children in 1919 and kept its oaks). Twenty-one trees, and almost every one owes its survival to a specific human decision.",
+  "meta_description": "Milan's twenty-one remarkable trees, from a 1775 ginkgo pair to a plane tree a Brera committee saved from demolition in 2016.",
   "question_answer": "Milan's oldest tree is one of a pair of ginkgo trees in the Orto Botanico di Brera, planted in 1775 when the garden's founders imported them directly from China. Both are now around 250 years old and grow a few steps from the garden's 18th-century greenhouse on Via Brera 28.",
-  "question_meta": "Milan's oldest tree is a 250-year-old ginkgo pair at the Orto Botanico di Brera, planted from Chinese seed in 1775. Its story, plus eighteen more trees.",
+  "question_meta": "Milan's oldest tree is a 250-year-old ginkgo pair at the Orto Botanico di Brera, planted from Chinese seed in 1775. Its story, plus twenty more trees.",
   "question_context": "Milan has never been an easy city for an old tree to survive in. Wars, plague and relentless nineteenth and twentieth century redevelopment levelled most of what predates them, so almost nothing on this list is medieval. The one clear exception is the university's own ginkgo biloba pair, a male and a female planted together in 1775 when Abbot Fulgenzio Vitman was building the Orto Botanico di Brera for Empress Maria Theresa's new medical faculty, importing seed directly from China less than two decades after the species had reached Europe at all. Italy's monumental tree registry calculates their age from growth data at 235 years, a little short of the 251 years a straight planting-date count would give; this page states both rather than picking one, since the gap is exactly the kind of rounding error that comes from measuring a slow grower by two different methods. Either way, they are Milan's oldest trees by a wide margin over anything else here, and the garden marked their joint 250th anniversary with a public conference in March 2026.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Milan's remarkable trees free to visit?",
-      "a": "All nineteen on this list are free. Unlike Rome or Florence, none of Milan's most remarkable trees stand inside a paid garden or monument; the closest things to a ticket are Parco Trotter's restricted opening hours, since its grounds double as a working school, and the park of Villa Marietti Radice Fossati, where the Archdevil hackberry grows: the city asks for the discretion due to an inhabited place, because people live in the villa buildings, and says the gate may be passed to visit the park."
+      "a": "All twenty-one on this list are free. Unlike Rome or Florence, none of Milan's most remarkable trees stand inside a paid garden or monument; the closest things to a ticket are Parco Trotter's restricted opening hours, since its grounds double as a working school, and the park of Villa Marietti Radice Fossati, where the Archdevil hackberry grows: the city asks for the discretion due to an inhabited place, because people live in the villa buildings, and says the gate may be passed to visit the park."
     },
     {
       "q": "Why does Milan have so few genuinely ancient trees compared to Rome or Florence?",
@@ -681,6 +681,64 @@
       "notes": "BLOCKER of 2026-08-17 answered rather than obeyed, and the reviewer was right to raise it. It read the entry as a courtyard of a dwelling under hard rule 10's absolute home test. The premise was OUR OWN invented sentence: the first version of this story said the villa's inner courtyard is 'square, arcaded on three sides, and the hackberry stands at the centre of it', which no source says. It is a bridge claim of exactly the kind the corpus names, and as usual the join decided the LOCATION. The comune's own page describes a park and says 'e' possibile varcare il cancello per visitare il parco', it is possible to pass through the gate to visit the park, with the discretion due to an inhabited place. That is the landowner, the Comune di Milano itself, stating that visitors are admitted, which is what hard rule 10 asks for. The buildings are the home; the park is not.\n\nTwo location errors fixed in the same pass, found by reading that page in a browser session because comune.milano.it 403s every plain fetcher. The address said Via Villapizzone 9 and the comune says piazza Villapizzone 3. The pin sat 83 metres from the comune's own marker while claiming 'confirmed'; it now uses the comune's coordinate and says approximate, because that marker is the villa rather than the trunk.",
       "location_precision": "approximate",
       "how_to_recognise": "A very wide hackberry in the villa park, crown spreading over 20 metres. The pin is the comune's own marker for the villa rather than the trunk, so expect to look once you are inside the gate."
+    },
+    {
+      "id": "mil_020",
+      "name": "Il Platano di Viale Montesanto",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Viale Montesanto 4/6, Milano",
+        "latitude": 45.479167,
+        "longitude": 9.195,
+        "neighbourhood": "Porta Nuova"
+      },
+      "story": "A newspaper survey of Milan's monumental trees once put the city's ceiling at 34 metres. Italy's national register disagrees in several places, and this plane is one of them: 38 metres, growing at a street number rather than in a park.\n\nIt stands outside Viale Montesanto 4 to 6, on the ring of boulevards that traces the line of Milan's sixteenth-century Spanish walls, on the stretch between Porta Garibaldi and the Giardini Montanelli. The register gives the trunk at 5.25 metres round. The city's celebrated plane, the Platano di Indro in the Giardini Montanelli, carries 8.36 metres and spent it going sideways into five limbs. This one had a pavement, a road and a row of facades, so it went up.\n\nNobody has published an age for it. The national register carries girth and height and keeps no field for years, and no municipal file or local survey has filled the gap for this particular tree, so the tape measure is the only evidence there is. If you know when this stretch of the viale was planted, tell us and we will say so.\n\nThere is no gate and no opening time. You walk the pavement to number 4 and look up until the crown closes over the road.",
+      "verified_sources": [
+        "MASAF national register of monumental trees, Milano, Viale Montesanto 4/6 (Platanus acerifolia, girth 525 cm, height 38 m)"
+      ],
+      "access": "Free. A street tree on the public pavement, reachable at any hour",
+      "transport": "3 min walk from Repubblica (M3), or about 12 min from Porta Garibaldi FS (M2, M5)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "notes": "Single-sourced: only the MASAF national register of monumental trees names this specific tree, and no second source has been found for it. That register is a government source, which under the register-layer rule is enough to publish on, and the entry is flagged so the thinness is visible in the data as well as in the prose. Girth 525 cm and height 38 m are the register's own figures; coordinates are the register's, hence confirmed precision. No age: the Italian register has no age field and nothing else names this tree. The 34-metre ceiling referred to in the story is Il Giorno's survey, already cited and quoted on mil_018; this entry deliberately does not claim any height crown, because the same register lists a Villa Litta plane at 43 m.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "mil_021",
+      "name": "Il Platano di Piazzale Libia",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Piazzale Libia, Milano",
+        "latitude": 45.453889,
+        "longitude": 9.209444,
+        "neighbourhood": "Porta Romana"
+      },
+      "story": "Milan's best known plane trees stop at 34 metres. This one is 35, and it is standing in the middle of a traffic square.\n\nPiazzale Libia lies about a kilometre out from Porta Romana in the south-east of the city, a junction broad enough to have kept room in the middle of it for a tree this size. Italy's national register of monumental trees lists the plane there at 35 metres on a trunk 4 metres round. That is taller than the register's own entry for the plane in front of the Basilica di Sant'Ambrogio and taller than the one in the Giardini Montanelli that a local survey named among the tallest plants in Milan.\n\nStreet planes almost never get the chance. Across Italy they are cut back on a cycle to clear the wires and the balconies, and a plane that has been topped does not come back to a height like this. Whatever else was done to this tree, nobody took its crown out.\n\nIts age is not recorded anywhere. The national register measures girth and height and stops there, and no other document names this tree at all, so the years are simply missing. Anyone who knows when the square was planted can close that gap for us.\n\nNothing to pay and nothing to open. Cross at the lights, stand under it, and work out how much of the sky it is holding up.",
+      "verified_sources": [
+        "MASAF national register of monumental trees, Milano, Piazzale Libia (Platanus acerifolia, girth 400 cm, height 35 m)"
+      ],
+      "access": "Free. A public street tree on the square, reachable at any hour",
+      "transport": "About 8 min walk east from Porta Romana (M3), or 12 min north from Lodi T.I.B.B. (M3)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "notes": "Single-sourced: only the MASAF national register of monumental trees names this specific tree, and no second source has been found for it. The register is a government source, which under the register-layer rule is enough to publish on; flagged so the thinness shows in the data as well as in the prose. Girth 400 cm, height 35 m and the coordinates are the register's own, hence confirmed precision. No age: the Italian register has no age field. The height comparison in the story is against our own register-sourced figures for mil_016 (34 m) and mil_018 (34 m); no height crown is claimed for this tree, because the same register lists a Villa Litta plane at 43 m.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ],
   "oldest_tree_id": "mil_004"

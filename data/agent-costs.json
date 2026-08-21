@@ -2802,6 +2802,24 @@
     "note": "Access-check pass on Bari's last 3 unchecked day-trip register candidates (Molfetta: Torre di Pettine eucalyptus, Navarino roverella, Macchia Clemente carob), done in-session with WebSearch/WebFetch/Overpass rather than a dispatched subagent, so token cost isn't separately reported by an agent (tokens recorded as 0 per this log's own convention for in-session work). All three moved to blocked (data/leads/bari.json): none clears hard rule 10 with available sources. Bari stays at 3 verified trees, below the 4-tree floor, unpublished. Exhausts the regional register's day-trip supply for this city.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "Milan + Brussels",
+    "kind": "write",
+    "tokens": 62000,
+    "trees": 6,
+    "note": "6 stories from register-only leads.py READY candidates (2 MASAF Milan single-sourced planes, 4 Brussels Egmont register trees), dispatched to write-stories agent; merged, preflight and Astro build clean, count-promise text fixed in intro/meta/faq/question block on both cities.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "lyon",
+    "kind": "verify",
+    "tokens": 55000,
+    "trees": 0,
+    "note": "Re-checked Square Ferrie cluster and 2 unlocated leads (no new source found); confirmed 2 register entries are duplicates of published lyo_011/lyo_014; the one candidate that verified (Anne Frank chestnut, Wikidata Q63253791) turned out to already be published as lyo_012, a passcheck.py Wikidata-dedup miss worth fixing.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
