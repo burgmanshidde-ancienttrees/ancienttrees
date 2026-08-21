@@ -2,7 +2,7 @@
   "city": "Bucaco",
   "country": "Portugal",
   "status": "needs_curation",
-  "intro": "Bucaco is a forest behind a wall, and the wall is the reason it exists. Discalced Carmelite friars enclosed this hillside in 1628 and got two popes to protect it in writing, one bull threatening excommunication for anyone who damaged a tree. Four centuries of that produced 105 hectares holding more than 250 species, including the cypress that Philip Miller named after Portugal from specimens he saw here. The ten trees on this page stand within about a kilometre of each other, and one of them named a species.",
+  "intro": "Bucaco is a forest behind a wall, and the wall is the reason it exists. Discalced Carmelite friars enclosed this hillside in 1628 and got two popes to protect it in writing, one bull threatening excommunication for anyone who damaged a tree. Four centuries of that produced 105 hectares holding more than 250 species, including the cypress that Philip Miller named after Portugal from specimens he saw here. The nine trees on this page stand within about a kilometre of each other, and one of them named a species.",
   "meta_description": "Bucaco's ancient trees: the cedar that named a species, Europe's fourth tallest tree, and three sequoias, all inside one walled forest above Luso.",
   "question_meta": "The Cedro de Sao Jose, a Mexican cypress planted between 1628 and 1650 by the Carmelite friars, is the oldest tree in the Bucaco forest.",
   "question_answer": "The oldest tree in the Mata Nacional do Bucaco is the Cedro de Sao Jose, a Mexican cypress standing in the forecourt of the Ermida de Sao Jose. The forest's own plaque at its foot says it was planted between 1628 and 1650, which makes it roughly 380 years old and the oldest cedar in the forest. It is not really a cedar, and it is not Portuguese: Cupressus lusitanica comes from Mexico and Central America.",
@@ -18,7 +18,7 @@
     },
     {
       "q": "Can you walk between these trees?",
-      "a": "Yes. All ten stand inside the walled forest within about a kilometre, starting at the Largo do Mosteiro beside the Palace Hotel and ending at the Ermida de Sao Jose. Paths are forest paths and the ground is steep in places."
+      "a": "Yes. All nine stand inside the walled forest within about a kilometre, starting at the Largo do Mosteiro beside the Palace Hotel and ending at the Ermida de Sao Jose. Paths are forest paths and the ground is steep in places."
     },
     {
       "q": "Is the tallest tree in Europe here?",
@@ -157,36 +157,6 @@
       },
       "curation_status": "ai_generated",
       "notes": "Height is genuinely disputed: ICNF register 72.9 m and girth 8.65 m at the 2016 measurement; an independent Portuguese roundup gives about 72.6 m and a planting date around 1880; the Giant Trees Foundation, measuring by instrument, gives 64.90 m, girth 8.46 m and an estimated age of 131. The range is published rather than a single figure. Hard rule 8 checked: this is NOT Europe's tallest tree. That is a karri, Eucalyptus diversicolor, at about 73 m in the Mata Nacional de Vale de Canas near Coimbra, measured by the same foundation in 2017. The fourth-in-Europe claim is attributed to the foundation, not asserted by us.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "bsc_005",
-      "name": "The Redwoods of Santo Elias",
-      "species": "Coast Redwood (Sequoia sempervirens)",
-      "age_estimate": "about 147 years",
-      "age_min": 135,
-      "age_max": 160,
-      "location": {
-        "address": "Estrada para a Porta da Rainha, diante da Ermida de Santo Elias, Mata Nacional do Bucaco, 3050-261 Luso",
-        "latitude": 40.3758,
-        "longitude": -8.36147,
-        "neighbourhood": "Ermida de Santo Elias"
-      },
-      "story": "Two coast redwoods stand in front of a hermitage, about ten metres apart, forty-five metres tall, and roughly eight thousand kilometres from the only place on earth they grow wild. Sequoia sempervirens is native to a strip of fog belt along the coast of northern California and southern Oregon, no more than about fifty kilometres wide, and it is the tallest tree species in the world. The reason it does well at Bucaco is the same reason it does well there: this hillside catches sea mist off the Atlantic, and a redwood drinks through its leaves, taking a substantial share of its water directly out of fog rather than up from the roots. The friars did not plant these. They arrived in the second half of the nineteenth century, when the forest had passed to the state and a fashion for collecting the world's conifers was at its peak, and they are among the earlier redwoods in Europe. Their trunks are about five and a half metres round, wrapped in bark that can grow a foot thick, soft and fibrous, fire resistant, and almost impossible to set alight. The two are near twins and the register separates them only by three centimetres of girth, so stand between them and you have seen both.",
-      "verified_sources": [
-        "https://si.icnf.pt/wfs/arv_class",
-        "https://en.wikipedia.org/wiki/Bu%C3%A7aco_Forest"
-      ],
-      "access": "Free on foot. Cars pay 5 euros at the forest gate",
-      "transport": "On the road to the Porta da Rainha, about 400 m east of the Largo do Mosteiro",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "Twins folded: register processos AIP01110429I and AIP01110437I, 10 m apart at 40.37580/-8.36147 and 40.37589/-8.36147, both 45 m tall, girths 5.64 m and 5.67 m, both recorded as standing in front of the Ermida de Santo Elias. One visitor sight, one entry; the second id is recorded in data/leads/bucaco.json. Age of 137 at the 2016 measurement, so about 147 now, rests on the register alone: Wikipedia's account of the forest names sequoias among its remarkable specimens, which corroborates species and presence but not age.",
       "location_precision": "confirmed"
     },
     {
