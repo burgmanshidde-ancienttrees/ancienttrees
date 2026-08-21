@@ -24,6 +24,7 @@ struct ContentView: View {
     @State private var account = Account()
     @State private var nudge = Nudge()
     @State private var navigator = Navigator()
+    @State private var units = Units()
     @State private var rootSheet: RootSheet?
     @State private var primerAnswered = false
     @State private var slowStart = false
@@ -192,6 +193,8 @@ struct ContentView: View {
             } else {
                 ContentUnavailableView("That collection is gone", systemImage: "square.stack")
             }
+        case .index(let kind):
+            IndexView(kind: kind, catalogue: cat, origin: origin)
         case .country(let name):
             CountryView(country: name, catalogue: cat, origin: origin)
         case .species(let name):
@@ -257,6 +260,7 @@ struct ContentView: View {
                 .environment(account)
                 .environment(nudge)
                 .environment(navigator)
+                .environment(units)
                 .onChange(of: navigator.selectTab) { _, new in
                     if let new { tab = new; navigator.selectTab = nil }
                 }

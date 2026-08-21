@@ -26,4 +26,20 @@ public enum Route: Hashable {
     case collection(String)                    // collection slug
     case species(String)                       // common name
     case country(String)                       // country name, as the feed spells it
+    /// The "see all" behind a shelf. Netflix, AllTrails and Airbnb all put one
+    /// in the shelf header, and a shelf without one is a promise that the row
+    /// you can see is everything there is (Hidde, 2026-08-21).
+    case index(Index)
+
+    public enum Index: String, Hashable {
+        case cities, countries, species, oldest
+        public var title: String {
+            switch self {
+            case .cities: "Tree cities"
+            case .countries: "Tree countries"
+            case .species: "Species"
+            case .oldest: "The oldest trees we map"
+            }
+        }
+    }
 }
