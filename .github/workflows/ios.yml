@@ -96,6 +96,13 @@ jobs:
           # below instead: it takes two minutes, its measurements never appear
           # in this log whatever we do with grep, and the step that needs them
           # runs it properly.
+          #
+          # One simulator at a time. Left to itself xcodebuild clones the
+          # simulator and runs the two UI test classes side by side, and on
+          # this runner two apps launching at once took 60 to 110 seconds
+          # each and then "did not have a process ID": the first run whose
+          # real tests all passed (2026-08-21) went red on that alone. Serial
+          # costs a few minutes and measures the app instead of the runner.
           xcodebuild test \
             -project ios/AncientTrees/AncientTrees.xcodeproj \
             -scheme AncientTrees \
@@ -103,6 +110,7 @@ jobs:
             -derivedDataPath /tmp/dd \
             -retry-tests-on-failure -test-iterations 2 \
             -skip-testing:AncientTreesUITests/SweepFrames \
+            -parallel-testing-enabled NO \
             CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" \
             > /tmp/xcodebuild.log 2>&1 || true
           grep -E "Test case|error:|warning: .*deprecat|\*\* (TEST|BUILD)" /tmp/xcodebuild.log || true
