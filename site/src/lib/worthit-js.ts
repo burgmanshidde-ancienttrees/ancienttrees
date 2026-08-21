@@ -115,7 +115,7 @@ export const WORTHIT_JS = `
     // The gate: options visible to everyone, acting needs the account.
     // Opening the why-list stays free (it is looking, not acting).
     if (!session() && !btn.classList.contains('worthit-report')) {
-      if (window.atOpenSignIn) window.atOpenSignIn(box.dataset.name);
+      if (window.atOpenSignIn) window.atOpenSignIn(box.dataset.name, 'feedback');
       return;
     }
 
