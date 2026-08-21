@@ -12,6 +12,22 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-21 (night run) - Milan +2, Brussels +4 from the shelf; Bari's 4th tree still missing; a passcheck bug fixed
+
+`python3 scripts/visitors.py`: 378 visits, 581 page views over 7 days (14th 34, 15th 33, 16th 83, 17th 44, 18th 67, 19th 42, 20th 74, 21st 1 partial). Flat, no city dominating. `prepare.py`: 40 cities staged for verify, Bari's 3 written trees still awaiting a 4th to clear the floor.
+
+**Rung 2 (health):** clear, 0 BLOCKER/WARN.
+
+**Bari's 4th tree, checked and still not found.** The three remaining day-trip register candidates in Molfetta (an isolated eucalyptus, an oak beside a walled private ruin, a carob near a private-house hamlet) all failed hard rule 10 on the evidence available (OSM proximity, on-site reportage). That exhausts Puglia's regional register for Bari; it stays at 3 trees, below the 4-tree floor, until a reader submission or a from-zero sweep turns up a 4th. Full detail in CURATION.md.
+
+**leads.py's READY count checked before trusting it for Rome, Florence and Vienna, and none were genuinely ready** (each carries its own explanation for being skipped that just doesn't match `data/block-reasons.json`'s patterns: day-trip boundary, unresolved vitality, a planted grove, missing second source). Vienna's count also had a real bug: entries already noted "delivered TO ...verified.json" (not "delivered AS") slipped past the DONE regex. Fixed in `scripts/leads.py`.
+
+**Milan (19 to 21) and Brussels (26 to 30) did have genuinely ready material**, once checked by hand: 2 single-sourced MASAF planes in Milan, and the Parc d'Egmont pyramidal holly plus 3 trees a 2019 survey added to that park in Brussels. Dispatched to a write-stories pass, merged, count-promising text fixed, preflight and Astro build clean.
+
+**Lyon verify pass: zero new trees**, but its one live candidate (the Anne Frank chestnut) turned out to already be published as lyo_012, exposing a real passcheck.py bug: the Wikidata section trusted a one-time 2026-08-09 harvest flag with no re-check against what has published since. Fixed to filter by live-coordinate proximity like register candidates already do.
+
+**Also:** `superlatives.py` false-positive fixed (two London Plane pages sharing ordinary species trivia about the hybrid's 17th-century origin were flagged as a crown collision). `photo_hunt.py --recheck` swept 40 more trees for a future viewing session. 5 free `famous_trees.py` country sweeps (Argentina, Taiwan, Brazil, Colombia, Indonesia) for cities on the queue with no register yet.
+
 ## 2026-08-20 - Night run 2026-08-20 22:33 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 22.3 minutes of its 120 minute window, 163 turns, 38 commands refused by the allowlist, ended clean (success). 3 commit(s), none of them a published tree. Claims left behind: munich, utrecht, which block the top of the queue until they expire.
