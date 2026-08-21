@@ -39,24 +39,5 @@
  "sources": [
   "https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/a-z-of-british-trees/",
   "https://www.treesandshrubsonline.org/"
- ],
- "peak": {
-  "moment": "colour",
-  "months": [
-   10,
-   11
-  ],
-  "share": true,
-  "map": {
-   "effect": "falling-leaves",
-   "colour": "#B4552A",
-   "pulse": true
-  },
-  "surfaces": [
-   "map",
-   "push",
-   "tree",
-   "city"
-  ]
- }
+ ]
 }
