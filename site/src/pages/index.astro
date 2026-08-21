@@ -185,6 +185,37 @@ function shelfCard(href: string, photoUrl: string, title: string, meta: string):
   );
 }
 
+// --- The oldest trees we map ---
+// The app's own shelf (Home.swift), brought to the web because it is the one
+// row that shows what the database actually holds rather than a way of
+// slicing it. Same rule on both surfaces: rank by the LOW end of the range,
+// so a tree claiming 200 to 800 years does not outrank one solidly dated at
+// 900, and require a photograph, because a shelf about the most spectacular
+// thing we have cannot be a row of placeholders.
+//
+// It claims its photographs before every other shelf (only the species pins
+// come first), because a city card can be fronted by any of its trees while
+// a tree card can only be its own tree. That is why the favourites loop
+// below skips a picture this shelf has taken.
+function shortAge(t: AnyTree): string {
+  const lo = t.age_min ?? 0;
+  const hi = t.age_max ?? 0;
+  if (lo > 0) return hi > lo ? `${lo}-${hi} years` : `${lo} years`;
+  return "";
+}
+const oldestCards = renderable
+  .flatMap((c) => renderableTrees(c).map((t) => ({ t, city: c.data.city, slug: c.id })))
+  .filter((o) => (o.t.age_min ?? 0) > 0 && usablePhoto(o.t)?.url)
+  .sort((a, b) => (b.t.age_min ?? 0) - (a.t.age_min ?? 0))
+  .slice(0, 12)
+  .map((o) => {
+    const url = usablePhoto(o.t)!.url;
+    usedPhotos.add(url);
+    return shelfCard(`/${o.slug}/${slugify(o.t.name)}`, url, o.t.name,
+      `${shortAge(o.t)} &middot; ${esc(o.city)}`);
+  });
+const oldestShelf = wideShelf("The oldest trees we map", "/collections/trees-older-than-400-years", "The oldest of all", oldestCards);
+
 // --- Our favourite tree cities shelf ---
 const FAVOURITE_CITIES = ["barcelona", "rome", "paris", "berlin", "amsterdam", "london", "new-york", "lisbon", "vienna", "edinburgh"];
 const bySlug = new Map(renderable.map((e) => [e.id, e]));
@@ -198,13 +229,17 @@ for (const cs of FAVOURITE_CITIES) {
     const t = e.data.trees.find((t) => t.id === hero);
     if (t) {
       const p = usablePhoto(t);
-      if (p?.url) photo = { url: p.url };
+      // A pinned hero still loses to the oldest-trees shelf above, which is
+      // the only shelf whose cards cannot swap picture: London's face moves
+      // to another of its trees rather than printing the Totteridge Yew
+      // twice on one page.
+      if (p?.url && !usedPhotos.has(p.url)) photo = { url: p.url };
     }
   }
   if (!photo) {
     for (const t of e.data.trees) {
       const p = usablePhoto(t);
-      if (p?.url) {
+      if (p?.url && !usedPhotos.has(p.url)) {
         photo = { url: p.url };
         break;
       }
@@ -440,6 +475,7 @@ const scripts = SEARCH_WIDGET_JS;
 <Fragment set:html={countriesShelf} />
 <Fragment set:html={speciesShelf} />
 <Fragment set:html={parksShelf} />
+<Fragment set:html={oldestShelf} />
 <main class="page">
   <h2 class="section-heading" id="cities">Ancient trees anywhere</h2>
   <Fragment set:html={directoryHtml} />
