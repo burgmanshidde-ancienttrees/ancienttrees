@@ -130,6 +130,29 @@ jobs:
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
           echo "at=$(date -u +%Y-%m-%dT%H:%M:%S+00:00)" >> "$GITHUB_OUTPUT"
 
+      # The contributor reply loop's transport (spec 2026-08-21): thank-yous
+      # and run-composed answers to readers who left an email, before the run
+      # so a thank-you lands within a couple of hours of any knock. Absent
+      # SMTP secrets = a printed dry run, never broken. Commits its own log
+      # line because the run behind it commits separately.
+      - name: Thank and answer contributors
+        env:
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          OUTREACH_SMTP_HOST: ${{ secrets.OUTREACH_SMTP_HOST }}
+          OUTREACH_SMTP_PORT: ${{ secrets.OUTREACH_SMTP_PORT }}
+          OUTREACH_SMTP_USER: ${{ secrets.OUTREACH_SMTP_USER }}
+          OUTREACH_SMTP_PASS: ${{ secrets.OUTREACH_SMTP_PASS }}
+          OUTREACH_FROM: ${{ secrets.OUTREACH_FROM }}
+        run: |
+          python3 scripts/contributor_reply.py --send
+          if ! git diff --quiet data/outreach-sent.json; then
+            git config user.name "claude[bot]"
+            git config user.email "41898282+claude[bot]@users.noreply.github.com"
+            git add data/outreach-sent.json
+            git commit -m "Contributor replies sent, log updated"
+            git push
+          fi
+
       - name: Run the research workflow from CLAUDE.md
         id: claude
         uses: anthropics/claude-code-action@v1

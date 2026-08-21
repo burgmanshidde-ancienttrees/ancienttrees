@@ -89,6 +89,19 @@ jobs:
             echo "nightly last fired $(( AGE / 3600 ))h ago; healthy"
           fi
 
+      # The contributor reply loop's transport (spec 2026-08-21): thank-yous
+      # and run-composed answers to readers who left an email. Absent SMTP
+      # secrets = the script prints a dry run and sends nothing, never broken.
+      - name: Thank and answer contributors
+        env:
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          OUTREACH_SMTP_HOST: ${{ secrets.OUTREACH_SMTP_HOST }}
+          OUTREACH_SMTP_PORT: ${{ secrets.OUTREACH_SMTP_PORT }}
+          OUTREACH_SMTP_USER: ${{ secrets.OUTREACH_SMTP_USER }}
+          OUTREACH_SMTP_PASS: ${{ secrets.OUTREACH_SMTP_PASS }}
+          OUTREACH_FROM: ${{ secrets.OUTREACH_FROM }}
+        run: python3 scripts/contributor_reply.py --send
+
       - name: Commit if there is a new entry
         run: |
           git config user.name "burgmanshidde-ancienttrees"
@@ -100,8 +113,9 @@ jobs:
           # digest wrote its entry and then threw it away: DATA.md simply had no
           # row for 2026-08-17 and nothing anywhere said why.
           git add DATA.md data/city-queue.json data/city-list.json CITY_QUEUE.md LEDGER.html \
+            data/outreach-sent.json \
             data/city-coords.json data/research/*-register-candidates.json 2>/dev/null || \
-            git add DATA.md data/city-queue.json data/city-list.json CITY_QUEUE.md LEDGER.html data/city-coords.json
+            git add DATA.md data/city-queue.json data/city-list.json CITY_QUEUE.md LEDGER.html data/city-coords.json data/outreach-sent.json
           if git diff --cached --quiet; then
             echo "No new entry today."
           else
