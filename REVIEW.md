@@ -13,6 +13,99 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-08-21
+
+Reviewed since the last review commit (`16adc7d`, 2026-08-20 07:08 UTC): 161
+commits, roughly 24 hours spanning a full session on the iOS app (thin
+outline tab icons, a Spot-sheet close control, the tab bar hidden on pushed
+pages, a new `scripts/appcopy.py` guard that caught a licence-explaining
+hero line) alongside the usual night-run and session data work (a Dutch LRMB
+register run closing 8 cities/36 trees including The Hague to 21 and
+Brussels to 26, a Milan+Brussels leads-file write pass taking Brussels to
+30, two register scouts recorded empty/blocked for Reykjavik and Kansas
+City, and the daily digest gaining a saves/trees-sent/feedback split per
+Hidde's same-day ask). Ran `python3 scripts/qa.py` (2364 pages, clean),
+`python3 scripts/superlatives.py` (430 claims, no collisions) and `python3
+scripts/health.py` (rung 2 clear, no BLOCKER) against the built site.
+
+Spot-checked the highest-risk items against the built output rather than
+commit messages: Brussels' and The Hague's hand-geocoded/hand-mined
+additions (bru_024-030, hag_018-021) all carry honest `location_precision`
+(`approximate` wherever the register gave a shared or inferred point,
+`confirmed` only where the register's own coordinate is used directly) and
+notes stating the inference method, which is exactly what hard rule 2 and
+the location-honesty rule ask for; the built Brussels page's title, FAQ and
+oldest-tree question page all say "30"/"thirty" with no leftover "26" or
+"twenty-six" anywhere, so the count-promising-copy fix mentioned in the
+commit message actually shipped. The homepage hero button churn
+(`25a5b03` then `78b8141` reverting it back to a text link, both Hidde's own
+session) nets to the built homepage still showing the plain text link, so
+there is nothing live to flag. No price string, "trial" or "Season Radar"
+anywhere in `site/dist/app.html`, so CLAUDE.md's "do not put the price on
+the website until he says it goes live" still holds.
+
+**WARN — the night-run continuation fix shipped 2026-08-20 has not been
+shown to fix the thing it was built for, and the three cron knocks since
+are evidence it might not be working.** The 2026-08-20 session diagnosed a
+real problem (runs ending cleanly at 5-25 minutes of a 120-minute window,
+shipping nothing, leaving claims that cascade into the next run) and built
+a continuation step, closing with "None of this is proven yet. The next
+cron knock is the test." `data/run-health.json`'s last three entries, all
+after that fix (2026-08-21T02:52, 04:25, 06:21 UTC), all show `attempts: 2`
+(so the continuation step is firing), all end at 15-26 minutes with 0 trees
+and 4-6 commits, and each leaves a fresh claim (krakow, then oahu, then
+seville+caserta) for LOG.md's own auto-generated "ended without saying
+anything" entry to report. Their denial rates (43/143, 42/198, 35/140 =
+0.21-0.30 per turn) are 2-3x the two most recent successful single-attempt
+runs (18/228 = 0.08, 30/219 = 0.14 on 08-20T00:29 and 08-20T18:48), which
+is worth naming because the same 2026-08-20 session had just concluded from
+the pre-fix dataset that denials were "not the cause: near identical per
+turn, a constant tax". That conclusion was drawn before this data existed
+and the new numbers do not obviously agree with it. Nobody has looked back
+at these three runs since they landed; LOG.md's auto-entries for them are
+the generic "written by the workflow's Run health step" boilerplate with no
+comparison to the fix. This is not proof the fix failed, a run's own
+transcript is hidden by design, but it is three data points in the
+direction the fix was supposed to prevent, and the file that promised to
+check ("the next cron knock is the test") has not been reopened since.
+
+**NOTE — CLAUDE.md's capacity-doctrine paragraph still says night cron
+knocks are "each capped at 60 minutes," which has been wrong since
+2026-08-17/19.** `.github/workflows/nightly.yml` sets `timeout-minutes: 120`
+(comment: "GitHub allows six hours per job; we take 120 minutes"), and
+DECISIONS.md's 2026-08-19 entry and every `run-health.json` record this
+window agree on 120. CLAUDE.md's line was last touched 2026-08-12, before
+the 2026-08-17 change (c61b64c per LOG.md), and reads: "The only trigger is
+nightly.yml's nine cron knocks a day, each capped at 60 minutes, which is
+what DATA.md's utilization meter has been counting all along." A run
+skimming that paragraph for how much time a knock actually has would get
+the wrong number by half. Small, mechanical fix: change "60" to "120" and
+update the utilization-meter framing to match, or drop the specific number
+and point at nightly.yml as the source of truth the way the sibling
+`data/in-flight.json` note now does after the same lesson (see next note).
+
+**NOTE — `data/in-flight.json`'s own `expire_hours_by_holder.night-run`
+(1.5) and its `expire_hours_note` still describe the exact bug the
+2026-08-20 session said it fixed.** That session's log entry: "a night-run
+claim expired after 90 minutes on the strength of a docstring saying the
+job is killed at 60, while the cap has been 120 since c61b64c... The expiry
+is now read from the workflow instead of remembered." `scripts/passcheck.py`
+does now override `by_holder["night-run"]` at runtime via
+`night_run_expiry_hours()`, which greps `timeout-minutes` straight out of
+nightly.yml, so this is cosmetic rather than a live bug: nothing actually
+expires a claim at 90 minutes any more. But the JSON file a human or a run
+would read directly still says 1.5 hours and still explains it with "the
+job is killed at 60 minutes," which is the same stale-docstring shape the
+fix was written to eliminate. Worth a one-line edit to say the number is
+derived from nightly.yml and not to be trusted as written, the way the
+script's own docstring already does.
+
+Nothing else found at BLOCKER or WARN. Not a Monday, so no corpus-rot audit
+this entry beyond the two NOTEs above, which surfaced during the general
+read rather than a scheduled sweep.
+
+---
+
 ## 2026-08-20
 
 Reviewed since the last review commit (`9700788`, 2026-08-19 12:02 UTC): 99
