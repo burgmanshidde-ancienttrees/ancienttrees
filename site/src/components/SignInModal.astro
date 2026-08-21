@@ -30,6 +30,8 @@ const T = es ? {
   title: "Tus árboles en todos tus dispositivos",
   sub: "Una cuenta gratuita, un email, sin contraseña. Tus árboles guardados te siguen a cualquier dispositivo.",
   subNamed: "%s está guardado solo en este dispositivo. Una cuenta gratuita, un email, sin contraseña, y tus árboles te siguen a todas partes.",
+  titleFeedback: "Inicia sesión para opinar",
+  subFeedback: "Cada voto, corrección y sugerencia se comprueba y se responde, y tu cuenta es como te llega la respuesta. Un email, sin contraseña.",
   placeholder: "tu@ejemplo.com",
   send: "Envíame un enlace de acceso",
   google: "Continuar con Google",
@@ -43,6 +45,8 @@ const T = es ? {
   title: "Keep your trees on every device",
   sub: "One free account, one email, no password. Your saved trees follow you everywhere.",
   subNamed: "%s is saved on this device only. One free account, one email, no password, and your trees follow you everywhere.",
+  titleFeedback: "Sign in to have your say",
+  subFeedback: "Every vote, correction and tip gets checked and answered, and your account is how the answer reaches you. One email, no password.",
   placeholder: "you@example.com",
   send: "Email me a sign-in link",
   google: "Continue with Google",
@@ -58,8 +62,8 @@ const T = es ? {
   <button type="button" class="signin-close" id="signin-close" aria-label="Close">&#10005;</button>
   <p class="signin-mark" aria-hidden="true">&#127795;</p>
   <div id="signin-ask">
-    <h3>{T.title}</h3>
-    <p id="signin-sub" data-generic={T.sub} data-named={T.subNamed}>{T.sub}</p>
+    <h3 id="signin-title" data-generic={T.title} data-feedback={T.titleFeedback}>{T.title}</h3>
+    <p id="signin-sub" data-generic={T.sub} data-named={T.subNamed} data-feedback={T.subFeedback}>{T.sub}</p>
     <button type="button" class="oauth-btn" id="signin-google">{T.google}</button>
     <p class="signin-or">{T.or}</p>
     <form id="signin-form" class="signin-form" autocomplete="email">

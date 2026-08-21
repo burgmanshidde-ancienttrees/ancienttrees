@@ -88,14 +88,25 @@ export const SIGNIN_JS = `
 
   var dlg = document.getElementById('signin-dialog');
   if (!dlg) return;
-  window.atOpenSignIn = function(treeName) {
+  window.atOpenSignIn = function(treeName, reason) {
     // Name the tree that was just saved. The generic line stays for every
     // other entry point, and a missing name is not an error, it is the
-    // ordinary case on the account page and in the nav.
+    // ordinary case on the account page and in the nav. A reason of
+    // 'feedback' (the gated vote/report/contribute flows, 2026-08-21) swaps
+    // both lines: nothing was saved, so the save wording would be a lie.
     var sub = document.getElementById('signin-sub');
+    var title = document.getElementById('signin-title');
+    if (title) {
+      title.textContent = title.getAttribute(
+        reason === 'feedback' ? 'data-feedback' : 'data-generic') || title.textContent;
+    }
     if (sub) {
-      var tpl = treeName ? sub.getAttribute('data-named') : null;
-      sub.textContent = tpl ? tpl.replace('%s', treeName) : sub.getAttribute('data-generic');
+      if (reason === 'feedback') {
+        sub.textContent = sub.getAttribute('data-feedback') || sub.getAttribute('data-generic');
+      } else {
+        var tpl = treeName ? sub.getAttribute('data-named') : null;
+        sub.textContent = tpl ? tpl.replace('%s', treeName) : sub.getAttribute('data-generic');
+      }
     }
     if (dlg.showModal) { dlg.showModal(); } else { location.href = '/account'; }
   };
