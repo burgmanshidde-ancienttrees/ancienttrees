@@ -207,7 +207,12 @@ const oldestCards = renderable
   .flatMap((c) => renderableTrees(c).map((t) => ({ t, city: c.data.city, slug: c.id })))
   .filter((o) => (o.t.age_min ?? 0) > 0 && usablePhoto(o.t)?.url)
   .sort((a, b) => (b.t.age_min ?? 0) - (a.t.age_min ?? 0))
-  .slice(0, 12)
+  // Ten, where the app shows twelve: every shelf on this page prints ten and
+  // wideShelf caps at ten anyway, so building twelve only claimed two
+  // photographs that were never rendered and took them from the shelves
+  // below. The ranking is the thing that has to match across the two
+  // surfaces, not the card count.
+  .slice(0, 10)
   .map((o) => {
     const url = usablePhoto(o.t)!.url;
     usedPhotos.add(url);
