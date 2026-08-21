@@ -35,6 +35,9 @@ struct CollectView: View {
 
     @State private var signingIn = false
     @State private var search = ""
+    @State private var lane: Lane = .want
+
+    enum Lane: Hashable { case want, seen }
 
     private var visited: [Tree] {
         matching(saved.entries.values.filter { $0.visitedAt != nil }
@@ -89,13 +92,28 @@ struct CollectView: View {
                 }
                 if !account.isSignedIn && saved.savedCount > 0 { backupBar }
 
-                if !wishlist.isEmpty {
-                    header("Want to see", wishlist.count)
-                    ForEach(wishlist) { card($0) }
-                }
-                if !visited.isEmpty {
-                    header("Stood in front of", visited.count)
-                    ForEach(visited) { card($0) }
+                // Want and had are one idea in two states, so they are two
+                // segments rather than two tabs (Hidde, 2026-08-21: Saved as
+                // its own tab was a second empty room, and "collect is
+                // natuurlijk eigenlijk gewoen een beetje hetzelfde").
+                if !saved.entries.isEmpty {
+                    Picker("", selection: $lane) {
+                        Text("Want to see").tag(Lane.want)
+                        Text("Seen").tag(Lane.seen)
+                    }
+                    .pickerStyle(.segmented)
+                    .accessibilityIdentifier("collect-lane")
+
+                    let list = lane == .want ? wishlist : visited
+                    if list.isEmpty {
+                        Text(lane == .want
+                             ? "Nothing on your list. Tap a heart anywhere to put a tree here."
+                             : "Nothing ticked off yet. Stand before one and use the Spot button.")
+                            .font(.subheadline).foregroundStyle(Brand.inkSoft)
+                            .padding(.top, 4)
+                    } else {
+                        ForEach(list) { card($0) }
+                    }
                 }
                 Color.clear.frame(height: 80)
             }

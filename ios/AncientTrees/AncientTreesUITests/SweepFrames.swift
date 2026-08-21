@@ -25,9 +25,8 @@ final class SweepFrames: XCTestCase {
 
     /// name -> the launch arguments that open it.
     private static let screens: [(String, [String])] = [
-        ("explore",      ["-tab=0"]),
-        ("map",          ["-map"]),
-        ("saved",        ["-tab=1"]),
+        ("map",          ["-tab=0"]),
+        ("explore",      ["-tab=1"]),
         ("spot",         ["-spot"]),
         ("collect",      ["-tab=3"]),
         ("profile",      ["-tab=4"]),
