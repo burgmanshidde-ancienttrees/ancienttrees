@@ -325,7 +325,7 @@ def check_stacked_pins():
 PHENOLOGY_KEYS = {
     "common_name", "habit", "leaf", "flowers", "fruit", "colour", "bare",
     "intensity", "flower_label", "fruit_label", "colour_label", "sources",
-    "peak", "flower_colour",
+    "peak", "flower_colour", "flower_peak", "flower_days",
 }
 # Blossom is not curated the way the other moments are. Hidde, 2026-08-21:
 # "alle bomen die bloeien mogen de animatie van bloei in de kleur van hun bloei,
@@ -377,6 +377,14 @@ def check_phenology():
                 out.append("%s: flower_colour on a flowering rated 'unseen'. "
                            "If nobody can see it, it must not bloom on the map."
                            % name)
+
+        fp = d.get("flower_peak")
+        if fp is not None:
+            if fp not in (d.get("flowers") or []):
+                out.append("%s: flower_peak %r is not one of its flowering months %s"
+                           % (name, fp, d.get("flowers")))
+            if not d.get("flower_colour"):
+                out.append("%s: flower_peak without a flower_colour" % name)
 
         peak = d.get("peak")
         if isinstance(peak, dict):
