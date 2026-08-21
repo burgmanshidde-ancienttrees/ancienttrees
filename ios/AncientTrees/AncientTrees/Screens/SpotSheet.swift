@@ -21,6 +21,10 @@ struct SpotSheet: View {
     @Environment(Account.self) private var account
     @Environment(\.dismiss) private var dismiss
     @State private var adding = false
+    /// The sheet opens on the EXPLANATION, not on a list. Somebody who has
+    /// used it once taps straight past; somebody who has not gets told what
+    /// the button is for.
+    @State private var intro = true
     @State private var why = ""
     @State private var sending = false
     @State private var sent: Bool?
@@ -68,6 +72,13 @@ struct SpotSheet: View {
                     tickedState(t)
                 } else if sent == true {
                     sentState
+                } else if intro {
+                    SpotIntro(nearbyCount: nearbyTrees.count,
+                              onCollect: {
+                                  intro = false
+                                  if nearbyTrees.isEmpty { adding = true; shooting = nil; camera = true }
+                              },
+                              onSuggest: { intro = false; adding = true })
                 } else if adding || nearbyTrees.isEmpty {
                     addForm
                 } else {
@@ -80,7 +91,7 @@ struct SpotSheet: View {
         .brandGround()
         .accessibilityElement(children: .contain)
         .accessibilityIdentifier("spot-sheet")
-        .presentationDetents([.medium, .large])
+        .presentationDetents([.large])
         .presentationDragIndicator(.visible)
         .fullScreenCover(isPresented: $camera) {
             CameraPicker { keep($0) }.ignoresSafeArea()

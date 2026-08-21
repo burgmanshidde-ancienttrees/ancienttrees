@@ -31,7 +31,13 @@ struct MapTab: View {
     private var debugSelect: String? {
         ProcessInfo.processInfo.arguments.first { $0.hasPrefix("-select=") }.map { String($0.dropFirst(8)) }
     }
-    @State private var sheetHeight: SheetHeight = .peek
+    /// Debug scaffolding, same family as -tab and -spot: the sheet opens at
+    /// its peek and a test that wants a CARD would otherwise have to perform
+    /// the raise gesture first, which makes every card test a gesture test as
+    /// well and fails for reasons that have nothing to do with what it covers.
+    /// The gesture itself is still asserted, by the test that is about it.
+    @State private var sheetHeight: SheetHeight =
+        ProcessInfo.processInfo.arguments.contains("-sheet=full") ? .full : .peek
     @State private var query = ""
     @State private var promptIndex = 0
     private let promptTick = Timer.publish(every: 2.6, on: .main, in: .common).autoconnect()
@@ -147,7 +153,7 @@ struct MapTab: View {
                     selected: $selected)
                 .ignoresSafeArea(edges: [.top, .horizontal])
             .onReceive(promptTick) { _ in
-                withAnimation(.easeInOut(duration: 0.25)) { promptIndex = (promptIndex + 1) % 5 }
+                withAnimation(.easeInOut(duration: 0.25)) { promptIndex = (promptIndex + 1) % Self.searchWords.count }
             }
             BottomSheet(height: $sheetHeight) {
                 // The arbitration between dragging the sheet and scrolling what
@@ -453,13 +459,28 @@ struct MapTab: View {
             Image(systemName: "magnifyingglass")
                 .font(.system(size: 17, weight: .semibold))
                 .foregroundStyle(Brand.ink)
-            TextField("", text: $query, prompt: Text(searchPrompt)
-                .font(.system(size: 16, weight: .medium))
-                .foregroundColor(Brand.inkSoft))
-                .textFieldStyle(.plain)
-                .font(.system(size: 16, weight: .medium))
-                .autocorrectionDisabled()
-                .onTapGesture { sheetHeight = .full }
+            ZStack(alignment: .leading) {
+                // The WORD changes, not the sentence. A prompt string swapped
+                // whole gives no animation at all and reads as a glitch; the
+                // AllTrails version keeps "Search a" still and fades the noun
+                // through tree, city, park, country (Hidde, 2026-08-21).
+                if query.isEmpty {
+                    HStack(spacing: 0) {
+                        Text("Search a ")
+                        Text(searchWord)
+                            .id(searchWord)
+                            .transition(.opacity.combined(with: .move(edge: .bottom)))
+                    }
+                    .font(.system(size: 16, weight: .medium))
+                    .foregroundStyle(Brand.inkSoft)
+                    .allowsHitTesting(false)
+                }
+                TextField("", text: $query)
+                    .textFieldStyle(.plain)
+                    .font(.system(size: 16, weight: .medium))
+                    .autocorrectionDisabled()
+                    .onTapGesture { sheetHeight = .full }
+            }
             if !query.isEmpty {
                 Button { query = "" } label: {
                     Image(systemName: "xmark.circle.fill").foregroundStyle(.secondary)
@@ -474,14 +495,9 @@ struct MapTab: View {
         .padding(.top, 6)
     }
 
-    /// What you can look for, one at a time, changing every few seconds. The
-    /// field used to say "Search a place, a tree or a species", which is a
-    /// list nobody reads; a rotating example teaches the same thing by
-    /// showing one at a time (AllTrails does exactly this).
-    private var searchPrompt: String {
-        ["Search a tree", "Search a city", "Search a park",
-         "Search a country", "Search a species"][promptIndex]
-    }
+    /// The four things a person actually looks for here, one at a time.
+    private static let searchWords = ["tree", "city", "park", "country"]
+    private var searchWord: String { Self.searchWords[promptIndex] }
 
     /// One tapped pin, shown in the sheet over the map rather than pushed onto
     /// a page, so the map stays visible behind the decision.

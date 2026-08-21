@@ -234,7 +234,6 @@ struct WalkMode: View {
     }
 
     private func directions(_ t: Tree) {
-        MKMapItem(placemark: .init(coordinate: .init(latitude: t.lat, longitude: t.lng)))
-            .openInMaps(launchOptions: [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking])
+        Directions.walk(lat: t.lat, lng: t.lng)
     }
 }
