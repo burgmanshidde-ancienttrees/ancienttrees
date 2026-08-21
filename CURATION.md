@@ -10,6 +10,22 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-21 (night run) - Milan 19 to 21, Brussels 26 to 30: leads.py READY trees, all flagged, no photos
+
+Both were single-source-only register trees that a past pass had correctly
+found and correctly left in leads.json as thin rather than blocked; per
+CLAUDE.md's ruling that a judgement call about thinness never blocks
+publication, both got written up. Milan: two MASAF-register London planes
+(Viale Montesanto, 38m; Piazzale Libia, 35m), each single-sourced,
+`curation_status: flagged`, no age (the Italian register carries no age
+field). Brussels: the Parc d'Egmont pyramidal holly (140cm girth, second
+largest of its cultivar in the region) plus the three trees a July 2019
+survey added to that park's register entry (a pagoda tree, a weeping ash,
+a thornless honey locust), the latter three sharing one approximate
+coordinate since the register itself recorded a group point rather than
+one per trunk. All 6 flagged, all photo-less. Both cities' count-promising
+copy (intro/meta/faq/question block) updated. Full detail in LOG.md.
+
 ## 2026-08-21 (night run) - Rome, Florence and Vienna's leads.py READY counts checked, not written from
 
 `prepare.py`'s shelf summary and `city_queue.py --next` both pointed at Rome
