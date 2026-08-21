@@ -52,7 +52,8 @@ STOP = {"the", "them", "these", "those", "his", "her", "its", "world", "war",
 # A claim about a SPECIES is a fact about botany, not a crown our tree wears.
 # Two coast redwoods both saying their species is the tallest on earth are both
 # right, and flagging them would train a reader of this report to ignore it.
-NOT_A_CROWN = re.compile("\\bspecies\\b|\\bgenus\\b|\\bfamily\\b|\\bspecimen of\\b", re.I)
+NOT_A_CROWN = re.compile("\\bspecies\\b|\\bgenus\\b|\\bfamily\\b|\\bspecimen of\\b|"
+                          "\\bhybrid\\b|\\bhybrids\\b", re.I)
 
 
 def claims():
@@ -66,7 +67,12 @@ def claims():
                 text = tree.get(field) or ""
                 for m in CLAIM.finditer(text):
                     sup, noun, scope = (g.strip().lower() for g in m.groups())
-                    if noun.split()[0] in STOP or NOT_A_CROWN.search(m.group(0)):
+                    # Check a window before the match too: "London planes are
+                    # hybrids, first bred in..." puts the word that marks this
+                    # as a species fact rather than a crown BEFORE "first",
+                    # outside the matched span itself.
+                    window = text[max(0, m.start() - 40):m.end()]
+                    if noun.split()[0] in STOP or NOT_A_CROWN.search(window):
                         continue
                     out.append({"city": city, "id": tree.get("id"),
                                 "name": tree.get("name"), "sup": sup,
