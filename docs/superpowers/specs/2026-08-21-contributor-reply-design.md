@@ -27,8 +27,10 @@ to us first and asked to hear back.
 
 ## Form changes (site/src/pages/contribute.astro)
 
-- New optional `email` field. Label: "Want to hear what your tip changed?
-  Leave your email and we'll tell you. We use it for nothing else."
+- New optional `email` field. Label (Hidde's ask, verbatim intent: say we
+  may have questions): "Leave your email so we can ask a question if we
+  need to, and tell you what your tip changed. We use it for nothing
+  else."
 - Double-submit fix: disable the submit button on press, show the sending
   state on the button (convention; the Toulouse correction arrived as three
   identical rows because nothing stopped the extra presses).
