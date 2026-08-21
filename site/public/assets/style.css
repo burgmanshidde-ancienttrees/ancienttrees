@@ -799,9 +799,17 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 @keyframes peak-breathe { 0%, 100% { transform: scale(.86); opacity: .5 } 50% { transform: scale(1.14); opacity: 1 } }
 
 .pin-bits { position: absolute; inset: 0; pointer-events: none; overflow: visible; }
+/* Every particle carries a hairline in its own hue darkened, for the reason the
+   silhouette got one: measured on Brussels on 2026-08-21, a pagoda tree's cream
+   blossom sat at 1.05:1 against the map, which is no contrast at all. A flat
+   black ring would fix it and make every species look the same at the edges, so
+   the ring is the particle's own colour mixed toward the ink. On a saturated
+   ginkgo gold it costs nothing visible; on cream it is the whole difference
+   between a petal and nothing. */
 .pin-bits i { position: absolute; left: 50%; top: 9px; width: 4px; height: 3px;
   margin-left: -2px; border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-  background: var(--peak); opacity: 0; }
+  background: var(--peak); opacity: 0;
+  box-shadow: 0 0 0 .75px color-mix(in srgb, var(--peak) 40%, var(--ink)); }
 .pin-bits i:nth-child(2) { animation-delay: 1.5s }
 .pin-bits i:nth-child(3) { animation-delay: 3s }
 
@@ -816,8 +824,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 /* Blossom petals are near-white on the chestnut and would vanish on a pale
    map, so they carry a hairline of their own colour darkened, not a second
    hue: the petal keeps its identity and gains a silhouette. */
-.peak-blossom .pin-bits i { width: 5px; height: 5px; border-radius: 50%;
-  box-shadow: 0 0 0 .5px color-mix(in srgb, var(--peak) 55%, var(--ink)); }
+.peak-blossom .pin-bits i { width: 5px; height: 5px; border-radius: 50%; }
 
 /* Fall: fruit, straight down, and it stays where it lands. */
 .peak-fruit-drop .pin-bits i { width: 3.5px; height: 3.5px; border-radius: 50%;
