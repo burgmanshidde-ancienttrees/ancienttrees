@@ -1033,7 +1033,7 @@
     "kind": "scout",
     "tokens": 124675,
     "trees": 0,
-    "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+    "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
    },
    {
     "target": "barcelona",
@@ -2789,6 +2789,17 @@
     "tokens": 170213,
     "trees": 2,
     "note": "Deepen pass via verify subagent: Markiezeneik of Amelisweerd (2022 Dutch Tree of the Year, protest symbol against a since-cancelled A27 widening) and the thickest plane in the Zocherpark bastion chain (629cm girth); stories written and merged in-session (Utrecht 16 to 18); count-promise text fixed in meta/FAQ.",
+    "wasted": 0,
+    "brief_wrong": false
+   }
+  ],
+  "2026-08-21": [
+   {
+    "target": "bari",
+    "kind": "verify",
+    "tokens": 0,
+    "trees": 0,
+    "note": "Access-check pass on Bari's last 3 unchecked day-trip register candidates (Molfetta: Torre di Pettine eucalyptus, Navarino roverella, Macchia Clemente carob), done in-session with WebSearch/WebFetch/Overpass rather than a dispatched subagent, so token cost isn't separately reported by an agent (tokens recorded as 0 per this log's own convention for in-session work). All three moved to blocked (data/leads/bari.json): none clears hard rule 10 with available sources. Bari stays at 3 verified trees, below the 4-tree floor, unpublished. Exhausts the regional register's day-trip supply for this city.",
     "wasted": 0,
     "brief_wrong": false
    }
