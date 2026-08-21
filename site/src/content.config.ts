@@ -176,6 +176,14 @@ const collectionPages = defineCollection({
     status: z.string().optional(),
     meta_description: z.string().optional(),
     intro: z.string(),
+    // A collection whose entry list is COMPUTED rather than curated, the
+    // pattern Contract F already uses for species pages (blueprint v1.13,
+    // Hidde's yes 2026-08-21). "oldest" ranks every tree whose age's lower
+    // bound clears 400 years, oldest first, and re-ranks itself on every
+    // build, so finding an older tree updates the page by itself. `entries`
+    // stays: a curated note on a tree in the ranking is still used for that
+    // tree, so the hand-written lines are not thrown away.
+    generated: z.enum(["oldest"]).optional(),
     entries: z.array(
       z.object({
         city_slug: z.string(),

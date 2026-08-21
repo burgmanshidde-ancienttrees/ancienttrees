@@ -45,16 +45,73 @@ const crumbItems: [string, string | null][] = [
   [coll.data.title, null],
 ];
 
-// Group entries by city, preserving first-appearance order (matches
-// Python's dict insertion-order grouping, not the global city-list order).
+// A GENERATED collection ranks itself (blueprint v1.13, Hidde 2026-08-21:
+// "ik zou eigenlijk gewoon een chronologische rij van oudste bomen zien die
+// we hebben en dat die bijwerkt als we oudere vinden"). The hand-curated
+// five that used to stand here were picked once and never revisited, while
+// the data had grown to 83 trees clearing the same bar.
+//
+// Ranked on the LOWER bound of the age, never the upper: a tree recorded as
+// "100 to 500 years" has not been shown to be older than four hundred, and
+// putting it in a list of trees that clear four hundred would be the page
+// making a claim its own data does not. That costs the page 44 trees whose
+// upper estimate reaches 400, and it is the difference between a ranking and
+// a boast.
+const ERAS: { min: number; heading: string }[] = [
+  { min: 1000, heading: "Over a thousand years" },
+  { min: 700, heading: "Seven hundred to a thousand years" },
+  { min: 500, heading: "Five to seven hundred years" },
+  { min: 400, heading: "Four to five hundred years" },
+];
+function ageLine(t: { age_min?: number | null; age_max?: number | null; age_estimate?: string | null }): string {
+  const lo = t.age_min ?? 0, hi = t.age_max ?? 0;
+  const n = (x: number) => x.toLocaleString("en-GB");
+  if (lo && hi && hi > lo) return `Roughly ${n(lo)} to ${n(hi)} years old.`;
+  if (lo) return `About ${n(lo)} years old.`;
+  return (t.age_estimate ?? "").trim();
+}
+const curatedNote = new Map(coll.data.entries.map((e) => [e.tree_id, e.note]));
+
 const grouped = new Map<string, typeof coll.data.entries>();
-for (const e of coll.data.entries) {
-  if (!grouped.has(e.city_slug)) grouped.set(e.city_slug, []);
-  grouped.get(e.city_slug)!.push(e);
+if (!coll.data.generated) {
+  // Group entries by city, preserving first-appearance order (matches
+  // Python's dict insertion-order grouping, not the global city-list order).
+  for (const e of coll.data.entries) {
+    if (!grouped.has(e.city_slug)) grouped.set(e.city_slug, []);
+    grouped.get(e.city_slug)!.push(e);
+  }
+}
+
+interface RankRow { tree: any; citySlug: string; city: string; slug: string; note: string; }
+const bands: { heading: string; rows: RankRow[] }[] = [];
+if (coll.data.generated === "oldest") {
+  const all: (RankRow & { lo: number; hi: number })[] = [];
+  for (const [cslug, city] of citiesBySlug) {
+    const tslugs = treeSlugsForCity(city);
+    for (const t of city.data.trees) {
+      const lo = (t as any).age_min ?? 0;
+      if (lo < 400 || !tslugs[t.id]) continue;
+      all.push({ tree: t, citySlug: cslug, city: city.data.city, slug: tslugs[t.id],
+                 note: curatedNote.get(t.id) ?? ageLine(t as any),
+                 lo, hi: (t as any).age_max ?? lo });
+    }
+  }
+  all.sort((a, b) => b.lo - a.lo || b.hi - a.hi || a.tree.name.localeCompare(b.tree.name));
+  for (const era of ERAS) {
+    const rows = all.filter((r) => r.lo >= era.min && !bands.some((b) => b.rows.includes(r)));
+    if (rows.length) bands.push({ heading: `${era.heading} (${rows.length})`, rows });
+  }
 }
 
 let entryCount = 0;
 const listElements: { "@type": string; position: number; name: string; url: string }[] = [];
+for (const band of bands) {
+  for (const r of band.rows) {
+    entryCount += 1;
+    listElements.push({ "@type": "ListItem", position: entryCount, name: r.tree.name,
+                        url: `${BASE_URL}/${r.citySlug}/${r.slug}` });
+  }
+}
 const sections = [...grouped.entries()].map(([cslug, entries]) => {
   const city = citiesBySlug.get(cslug)!;
   const treesById = new Map(city.data.trees.map((t) => [t.id, t]));
@@ -80,6 +137,17 @@ const headExtra = ldScript(graph) + (isDraft ? '\n<meta name="robots" content="n
     <Breadcrumbs items={crumbItems} />
     <h1>{coll.data.title}</h1>
     <div class="prose-block"><p>{coll.data.intro}</p></div>
+    {bands.map((band) => (
+      <Fragment>
+        <h2>{band.heading}</h2>
+        {band.rows.map((r) => (
+          <Fragment>
+            <TreeCard tree={r.tree} citySlug={r.citySlug} treeSlug={r.slug} note={r.note} />
+            <p class="coll-citycta"><a href={`/${r.citySlug}`}>{r.city} &rarr;</a></p>
+          </Fragment>
+        ))}
+      </Fragment>
+    ))}
     {sections.map(({ city, cslug, rows }) => (
       <Fragment>
         <h2><a class="coll-city" href={`/${cslug}`}>{city.data.city}</a></h2>
