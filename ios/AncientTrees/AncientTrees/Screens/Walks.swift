@@ -43,6 +43,7 @@ struct WalksView: View {
 struct WalkDetail: View {
     let walk: Walk
     let catalogue: Catalogue
+    @Environment(Navigator.self) private var navigator
     @State private var selected: Tree?
 
     private var trees: [Tree] { catalogue.trees(of: walk) }
@@ -106,14 +107,15 @@ struct WalkDetail: View {
     private var beginBar: some View {
         HStack(spacing: 12) {
             Button {
-                if let first = trees.first {
-                    let url = URL(string: "maps://?daddr=\(first.lat),\(first.lng)&dirflg=w")!
-                    UIApplication.shared.open(url)
-                }
+                // Begin STAYS in the app now: full-screen map, the route drawn,
+                // tick each tree as you reach it. Handing the person to Apple
+                // Maps was the walk verb advertising itself and then leaving.
+                navigator.beginWalk = .init(city: walk.citySlug, name: walk.name)
             } label: {
                 Label("Begin", systemImage: "location.fill")
                     .font(.headline).frame(maxWidth: .infinity).padding(.vertical, 14)
             }
+            .accessibilityIdentifier("walk-begin")
             .buttonStyle(.borderedProminent)
             .tint(Color(red: 0.20, green: 0.35, blue: 0.20))
 

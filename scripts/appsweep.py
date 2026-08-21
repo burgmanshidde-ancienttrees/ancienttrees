@@ -106,6 +106,7 @@ def screens(sub):
         ("map",           ["-tab=0"], 7),
         ("explore",       ["-tab=1"], 4),
         ("spot",          ["-spot"], 5),
+        ("walk-begin",    ["-begin=amsterdam|Plantage"], 7),
         ("collect",       ["-tab=3"], 4),
         ("profile",       ["-tab=4"], 4),
         ("tree",          ["-tab=0", f'-open=tree:{sub["tree"]}'], 6),

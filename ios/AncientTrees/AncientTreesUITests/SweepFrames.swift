@@ -28,6 +28,7 @@ final class SweepFrames: XCTestCase {
         ("map",          ["-tab=0"]),
         ("explore",      ["-tab=1"]),
         ("spot",         ["-spot"]),
+        ("walk-begin",   ["-begin=amsterdam|Plantage"]),
         ("collect",      ["-tab=3"]),
         ("profile",      ["-tab=4"]),
         ("tree",         ["-tab=0", "-open=tree:ath_004"]),

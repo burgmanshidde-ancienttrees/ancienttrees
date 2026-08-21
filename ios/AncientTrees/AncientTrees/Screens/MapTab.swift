@@ -411,15 +411,12 @@ struct MapTab: View {
                         .fixedSize(horizontal: false, vertical: true)
                 }
                 Button {
-                    if let first = catalogue.trees(of: w).first {
-                        MKMapItem(placemark: .init(coordinate: .init(latitude: first.lat, longitude: first.lng)))
-                            .openInMaps(launchOptions: [MKLaunchOptionsDirectionsModeKey:
-                                                        MKLaunchOptionsDirectionsModeWalking])
-                    }
+                    navigator.beginWalk = .init(city: w.citySlug, name: w.name)
                 } label: {
                     Label("Begin", systemImage: "location.fill")
                 }
                 .buttonStyle(BrandButtonStyle())
+                .accessibilityIdentifier("walk-begin")
 
                 if walksHere.count > 1 {
                     LockedRow(feature: .walkBeyondFirst) {

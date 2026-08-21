@@ -155,6 +155,16 @@ struct ContentView: View {
         }
     }
 
+    /// Begin mode, built here so the TabView's own modifier chain stays inside
+    /// the type-checker's budget (it went over the moment this was inline).
+    private func walkMode(_ w: Walk, _ cat: Catalogue) -> some View {
+        WalkMode(walk: w, catalogue: cat, origin: origin)
+            .environment(saved)
+            .environment(account)
+            .environment(nudge)
+            .environment(entitlement)
+    }
+
     /// Looked up by id at render time on purpose: the catalogue can be replaced
     /// under an open screen now that the app downloads a newer one, and a view
     /// holding a stale struct would quietly keep showing yesterday's story.
@@ -263,6 +273,18 @@ struct ContentView: View {
                             .environment(account).environment(entitlement)
                     }
                 }
+                // DERIVED from the request rather than mirrored into a second
+                // piece of state. The mirror version lost the launch argument
+                // every time: -begin sets the request in the same update in
+                // which the TabView first exists, and an onChange registered by
+                // that same update never sees it as a change. A binding cannot
+                // miss it, because there is nothing to miss.
+                .fullScreenCover(item: Binding(
+                    get: { navigator.beginWalk.flatMap { r in
+                        cat.walks(inCity: r.city).first { $0.name == r.name } } },
+                    set: { if $0 == nil { navigator.beginWalk = nil } })) { w in
+                    walkMode(w, cat)
+                }
                 .onChange(of: nudge.pending) { _, new in
                     if let new { rootSheet = .signIn(new); nudge.pending = nil }
                 }
@@ -337,6 +359,14 @@ struct ContentView: View {
                 rootSheet = .signIn(.keepTree("The Last Elm of Stationsplein"))
             } else if args.contains("-paywall") {
                 rootSheet = .paywall(.walkBeyondFirst)
+            } else if let spec = args.first(where: { $0.hasPrefix("-begin=") })?.dropFirst(7) {
+                // Debug scaffolding like -spot: Begin is only reachable by
+                // tapping, and simctl has no finger. Routed through the
+                // navigator because the catalogue is not in scope here.
+                let parts = spec.split(separator: "|", maxSplits: 1).map(String.init)
+                if parts.count == 2 {
+                    navigator.beginWalk = .init(city: parts[0], name: parts[1])
+                }
             } else if args.contains("-spot") {
                 // The centre button's sheet, openable without a finger.
                 rootSheet = .spot
