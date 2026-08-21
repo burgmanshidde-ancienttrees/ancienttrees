@@ -84,7 +84,9 @@
         "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/287261686/original.jpeg",
         "license": "CC BY 4.0",
         "attribution": "Bruno Peixoto (brunopy), via iNaturalist",
-        "status": "approved"
+        "status": "approved",
+        "width": 1952,
+        "height": 2048
       },
       "curation_status": "flagged",
       "notes": "Existence and species confirmed independently by the Ayuntamiento de Cadiz's own parks pages and two independent Cadiz-focused sources; the 2013 collapse of the Drago del Tinte at the former Escuela de Artes y Oficios is separately confirmed (Andalucia Informacion, plus a Wikimedia Commons photo documenting it before the fall) and this tree is not confused with that one. Age is a genuine, unresolved source disagreement (100 vs 200 years), presented as a range rather than a picked figure. Location is park-level only ('near the north entrance'), no registry or survey point names this specific tree, so kept honestly approximate. Photo found via iNaturalist observation 165917823 (CC BY 4.0) and viewed directly: a large multi-trunk dragon tree beside a children's playground with a domed gazebo behind it, both identifiable Parque Genoves features, confirming this is the park's dragon tree despite one automated field on the same observation carrying a mismatched label ('Drago del Obispado', a different, older dragon tree at the Bishop's Palace elsewhere in the old town); the photo's own visual content, not that label, is what was trusted. Checked 2026-07-28 while tightening cad_003 and cad_005's pins from their own iNaturalist observations: this observation's own recorded GPS (queried directly via the API) is roughly 36.5348, -6.3051, place_guess 'Hotel Atlantico, 11003 Cadiz', nowhere near Parque Genoves. That confirms rather than contradicts the earlier call to trust the photo's visual content over its metadata: the coordinate almost certainly belongs to the Bishop's Palace dragon tree the mismatched label already named, not this one. Deliberately NOT used to move this pin, which stays at its original park-level estimate.",
@@ -114,7 +116,9 @@
         "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/287268653/original.jpeg",
         "license": "CC BY 4.0",
         "attribution": "Bruno Peixoto (brunopy), via iNaturalist",
-        "status": "approved"
+        "status": "approved",
+        "width": 1542,
+        "height": 2048
       },
       "curation_status": "flagged",
       "notes": "Species and 'oldest documented in Europe' claim reported independently by a Cadiz garden specialist blog and a national Spanish news outlet (okdiario), plus the Ayuntamiento de Cadiz's own news confirming a resistograph/tomography inspection and protective support structure after storm damage; the 'oldest in Europe' superlative is presented as reported/attributed rather than independently verified against a primary botanical register, per hard rule 8. Bloom timing (May-June) confirmed by two sources, qualifying for best_time. Photo found via iNaturalist observation 165921565 (CC BY 4.0, place_guess explicitly 'Parque Genoves, Cadiz') and viewed directly: a leaning multi-trunk tree with hanging aerial roots beside a stone-edged basin, its own interpretive sign visible reading 'Arbol de hierro / Metrosideros tomentosa / Myrtaceae / Nueva Zelanda', an exact species and common-name match confirmed on sight rather than caption alone. Coordinates tightened 2026-07-28 to this exact observation's own recorded GPS position (queried directly via the iNaturalist API), which sits inside Parque Genoves and about 130m from the four-tree shared park-centroid point this entry previously used; kept approximate rather than confirmed since a phone geotag next to a labelled sign is strong but not a formal survey.",
@@ -181,7 +185,9 @@
         "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/287262338/original.jpeg",
         "license": "CC BY 4.0",
         "attribution": "Bruno Peixoto (brunopy), via iNaturalist",
-        "status": "approved"
+        "status": "approved",
+        "width": 1542,
+        "height": 2048
       },
       "curation_status": "flagged",
       "notes": "Species and specific in-park location ('behind the cafe bar near the fountain statue') confirmed by two independent sources. No planting date documented anywhere found, so age is presented as a wide, honest estimate rather than invented; bloom month not confirmed precisely enough for Cadiz specifically to set a best_time field, so left unset rather than guessed. Photo found via iNaturalist observation 165918188 (CC BY 4.0) and viewed directly: a tree with the swollen, bottle-shaped, lightly thorned trunk characteristic of Ceiba speciosa, standing in a raised wooden planter among palms and park benches. Its place_guess reads only 'Cadiz', not 'Parque Genoves' specifically, but the coordinates sit close to the confirmed in-park dragon tree and pohutukawa observations, same photographer, same day (2023-06-06), and the species' distinctive trunk makes a different specimen elsewhere in the city unlikely; approved on that basis, weaker than the other two but not a guess. Coordinates tightened 2026-07-28 to this exact observation's own recorded GPS position (queried directly via the iNaturalist API); kept approximate since the underlying place_guess is only city-level, not park-specific.",

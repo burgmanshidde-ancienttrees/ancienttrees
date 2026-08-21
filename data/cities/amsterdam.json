@@ -365,7 +365,9 @@
         "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/207920802/large.jpeg",
         "license": "CC BY",
         "attribution": "Noland Martin, iNaturalist",
-        "status": "approved"
+        "status": "approved",
+        "width": 576,
+        "height": 1024
       },
       "curation_status": "flagged",
       "notes": "An earlier planting date of 1885 appears in one source; the 1907 date is favored here as it matches the documented 1884-1916 timeline of Cuypers' garden construction, but the discrepancy is not fully resolved. Coordinates now taken directly from iNaturalist observation 122778135's own GPS reading (52.359392, 4.885229, 4m positional accuracy), the only wingnut recorded at this location. The species ID on that observation is the observer's own call (casual grade, no independent confirmations) rather than community-verified, noted here for a future curator, but the coordinate itself is independent of the ID and reliable.",

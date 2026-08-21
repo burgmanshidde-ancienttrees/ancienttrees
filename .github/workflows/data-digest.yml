@@ -68,6 +68,11 @@ jobs:
       - name: Stock the staging shelf
         run: python3 scripts/prepare.py
 
+      # Measure any photograph added since yesterday, so the size data the
+      # homepage pickers and qa.py depend on never goes stale (2026-08-21).
+      - name: Measure new photographs
+        run: python3 scripts/photo_res.py || true
+
       # The mutual watchdog. The night runs already redispatch THIS workflow
       # when it goes stale (CLAUDE.md rung 2); until now nothing did the
       # reverse, so a stretch of dropped nightly schedules would only ever be
@@ -113,7 +118,7 @@ jobs:
           # digest wrote its entry and then threw it away: DATA.md simply had no
           # row for 2026-08-17 and nothing anywhere said why.
           git add DATA.md data/city-queue.json data/city-list.json CITY_QUEUE.md LEDGER.html \
-            data/outreach-sent.json \
+            data/outreach-sent.json data/cities \
             data/city-coords.json data/research/*-register-candidates.json 2>/dev/null || \
             git add DATA.md data/city-queue.json data/city-list.json CITY_QUEUE.md LEDGER.html data/city-coords.json data/outreach-sent.json
           if git diff --cached --quiet; then

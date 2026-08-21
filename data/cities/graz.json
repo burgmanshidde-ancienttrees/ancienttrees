@@ -52,7 +52,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Naturdenkmal_1270_Schlo%C3%9Fberg_Graz_2022-08-03_02.jpg",
         "license": "CC0",
         "attribution": "Leonhard Lenz, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 5612,
+        "height": 8384
       },
       "curation_status": "flagged",
       "notes": "Register (id 118) plus Wikipedia's Naturdenkmal list agree within 3m on location. Register gives species as Acer campestre; Wikipedia's entry only says 'Ahorn' (maple, genus level), so species rests on the register alone. No age or girth found in either source.",
@@ -83,7 +85,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Eiche_Volksgarten_Graz_1269_%281%29.JPG",
         "license": "CC BY-SA 3.0 at",
         "attribution": "Gerdsch, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 2506,
+        "height": 1670
       },
       "curation_status": "flagged",
       "notes": "Register (id 117) and Wikipedia geocode within 2m; Volksgarten's own Wikipedia article independently confirms the park holds several Naturdenkmal trees. The park's oak-row age (70-100 years) is NOT applied to this specific tree since no source confirms it belongs to that row (bridge-claim avoided). No girth or planting date found.",
@@ -353,7 +357,9 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Blutbuche_Graz%2C_Eggenberger_Allee_90_02.jpg",
         "license": "CC BY-SA 3.0 at",
         "attribution": "Kulac, via Wikimedia Commons",
-        "status": "approved"
+        "status": "approved",
+        "width": 2848,
+        "height": 4288
       },
       "curation_status": "flagged",
       "notes": "Flagged for two narrow reasons, not existence: (1) absent from the City of Graz's own live municipal GIS layer (checked directly; the other nine Eggenberg trees all appear in it, this one does not), so the two-source bar rests on Austria's national register (via Wikipedia) plus a dated, geo-tagged Commons photo rather than two independent GIS layers. (2) Alive-now evidence is a single 2014 photograph, 12 years old, no more recent sighting found. Location itself is solid: register coordinates and photo GPS agree to six decimal places.",

@@ -35,21 +35,20 @@ const headExtra = ldScript(graph);
   </div>
 
   <form id="suggest" class="suggest-form" autocomplete="off">
-    <label>What are you sending?
-      <select id="sg-kind">
-        <option value="tree">One remarkable tree</option>
-        <option value="city">My city's trees</option>
-        <option value="correction">A correction to something on the site</option>
-        <option value="privacy">A privacy request (remove what I sent in)</option>
-        <option value="press">A press enquiry</option>
-      </select>
+    <!-- The "what are you sending" dropdown is gone (Hidde, 2026-08-21:
+         "isnt this first question useless - i dont need press inquiries here
+         or privacy blabla"). It asked every visitor to classify themselves
+         before they could give us a tree, which is the one thing this form is
+         for. `kind` survives as a hidden field: it still routes Step 0b, and
+         the deep links that set it (a correction from a tree page, a privacy
+         request from the privacy page) still arrive with it set. -->
+    <input type="hidden" id="sg-kind" value="tree">
+    <p class="sg-note" id="sg-kindnote" hidden></p>
+    <label>What tree, or trees, do you want to send?
+      <input type="text" id="sg-tree" placeholder="The plane on the church square">
     </label>
-    <p class="sg-fine">Writing about us? The numbers, image licences and caveats live on the <a href="/press">press page</a>.</p>
     <label>Which city?
       <input type="text" id="sg-city" required placeholder="Utrecht">
-    </label>
-    <label>The tree, or trees
-      <input type="text" id="sg-tree" placeholder="The plane on the church square">
     </label>
     <label>Where does it stand? <span class="sg-hint">A street, a park, or a Google Maps link. The single most useful thing you can give us.</span>
       <input type="text" id="sg-where" placeholder="Domplein, next to the cathedral entrance">
@@ -64,6 +63,8 @@ const headExtra = ldScript(graph);
     <p class="sg-note" id="sg-note"></p>
     <p class="sg-fine">Sending needs a free account, one email and no password, so we can thank you, ask a question if we need to, and tell you what your tip changed. Privacy requests need no account.</p>
   </form>
+
+  <p class="sg-fine">Writing about us? The numbers, image licences and caveats live on the <a href="/press">press page</a>.</p>
 
   <h2>What helps most</h2>
   <ul class="link-list">
@@ -99,6 +100,12 @@ const headExtra = ldScript(graph);
   var kind = params.get('kind');
   var map = {tree: 'tree', city: 'city', home: 'city', correction: 'correction', privacy: 'privacy'};
   if (kind && map[kind]) { document.getElementById('sg-kind').value = map[kind]; }
+  // The dropdown is gone, so a deep link that is not about sending a tree has
+  // to say so in words, or a privacy request looks like a tree form.
+  var kindNote = {correction: 'Sending a correction. Tell us what is wrong and where.',
+                  privacy: 'Sending a privacy request. Say what you would like removed.'};
+  var kn = kindNote[document.getElementById('sg-kind').value];
+  if (kn) { var el = document.getElementById('sg-kindnote'); el.textContent = kn; el.hidden = false; }
   // the page the reader came from already knows the city and the tree
   if (params.get('city')) { document.getElementById('sg-city').value = params.get('city'); }
   if (params.get('tree')) { document.getElementById('sg-tree').value = params.get('tree'); }
