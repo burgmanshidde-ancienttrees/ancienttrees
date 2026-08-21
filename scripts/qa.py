@@ -22,6 +22,7 @@ Exit 1 on any failure, so CI fails the deploy. Run: python3 scripts/qa.py
 import argparse
 import json
 import re
+import struct
 import sys
 from html.parser import HTMLParser
 from pathlib import Path
@@ -217,6 +218,58 @@ def check_one_city_order():
 # check is simply that the dates vary. One distinct date across a thousand pages
 # means the git lookup silently fell back (a shallow clone has no history), and
 # the deploy would ship the old bug without anyone noticing.
+def check_photo_orientation():
+    """A photograph we host ourselves must be upright in its PIXELS, with no
+    EXIF orientation flag left telling the browser to turn it again.
+
+    Hidde, 2026-08-21, twice in two weeks: "je hebt alle fotos weer 90 graden
+    gedraaid erin gezet ... zorg dat het niet nog een keer gebeurt." Both times
+    the cause was the same and it is invisible on the desktop: a phone writes
+    the picture sideways plus an orientation tag, a rotate tool turns the pixels
+    and leaves the tag behind, and the browser then applies the tag on top and
+    the tree lies on its side. Preview, Finder and this repo's own image reader
+    all honour the tag, so the file looks right everywhere except the one place
+    that matters.
+
+    The fix is to rotate the pixels and set the tag to 1, and this is the check
+    that proves it stayed done. Only files we serve ourselves are checkable:
+    Wikimedia and iNaturalist deliver their thumbnails already upright.
+    """
+    out = []
+    root = Path(__file__).resolve().parent.parent
+    photos = root / "site" / "public" / "photos"
+    if not photos.is_dir():
+        return out
+    for f in sorted(photos.glob("*.jpg")) + sorted(photos.glob("*.jpeg")):
+        d = f.read_bytes()
+        i = d.find(b"Exif\x00\x00")
+        if i < 0:
+            continue
+        tiff = i + 6
+        be = d[tiff:tiff + 2] == b"MM"
+        end = ">" if be else "<"
+        try:
+            ifd = tiff + struct.unpack(end + "I", d[tiff + 4:tiff + 8])[0]
+            n = struct.unpack(end + "H", d[ifd:ifd + 2])[0]
+        except Exception:
+            continue
+        for k in range(n):
+            e = ifd + 2 + k * 12
+            try:
+                tag = struct.unpack(end + "H", d[e:e + 2])[0]
+            except Exception:
+                break
+            if tag == 0x0112:
+                val = struct.unpack(end + "H", d[e + 8:e + 10])[0]
+                if val != 1:
+                    out.append(
+                        "%s carries EXIF orientation %d, so a browser rotates it "
+                        "again on top of its pixels. Rotate the pixels upright and "
+                        "set the tag to 1." % (f.name, val))
+                break
+    return out
+
+
 def check_photo_resolution():
     """A photograph must have the pixels for the box we paint it in.
 
@@ -502,6 +555,7 @@ def main():
 
     failures = []
     failures += check_auth_corpus_agreement()
+    failures += check_photo_orientation()
     failures += check_photo_resolution()
     failures += check_save_flow_integrity()
     failures += check_sheet_integrity()
