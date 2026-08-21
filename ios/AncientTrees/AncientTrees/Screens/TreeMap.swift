@@ -278,6 +278,12 @@ final class TreePinView: MKMarkerAnnotationView {
 /// The species silhouettes as pin glyphs. SwiftUI draws them, ImageRenderer
 /// turns them into the UIImage MapKit wants, and the result is cached because
 /// a map redraws its annotations constantly and there are only fifteen shapes.
+/// @MainActor because ImageRenderer is, and because the only caller is a
+/// MapKit annotation view's didSet, which MapKit already runs on the main
+/// thread. The local Debug build accepted the nonisolated version and the iOS
+/// CI job did not: strict concurrency catches what a permissive local build
+/// waves through, which is the whole reason that job exists.
+@MainActor
 enum SpeciesGlyph {
     private static var cache: [String: UIImage] = [:]
 
