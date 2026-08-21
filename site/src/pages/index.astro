@@ -100,6 +100,12 @@ const directoryHtml =
   `<div class="dir-group"><h3>Top species</h3>${speciesCol}</div>` +
   "</div>";
 
+// One photograph appears once per page, whichever shelf claims it first
+// (favourites, then countries, species, parks): Airbnb, AllTrails and Google
+// Maps never repeat a thumbnail on one screen, and Hidde spotted the same
+// ginkgo standing in for a country, a species and a park (2026-08-21).
+const usedPhotos = new Set<string>();
+
 // --- Our favourite tree cities shelf ---
 const FAVOURITE_CITIES = ["barcelona", "rome", "paris", "berlin", "amsterdam", "london", "new-york", "lisbon", "vienna", "edinburgh"];
 const bySlug = new Map(renderable.map((e) => [e.id, e]));
@@ -126,6 +132,7 @@ for (const cs of FAVOURITE_CITIES) {
     }
   }
   if (!photo) continue;
+  usedPhotos.add(photo.url);
   favCards.push(
     `<a class="shelf-card" href="/${cs}">` +
       `<span class="shelf-ph"><img ${imgSrcsetAttrs(photo.url, [400, 800], "(max-width: 800px) 72vw, 20vw")} alt="" loading="lazy"></span>` +
@@ -152,9 +159,20 @@ type AnyTree = CityEntry["data"]["trees"][number];
 function firstPhoto(trees: AnyTree[]): string | null {
   for (const t of trees) {
     const p = usablePhoto(t);
-    if (p?.url) return p.url;
+    if (p?.url && !usedPhotos.has(p.url)) {
+      usedPhotos.add(p.url);
+      return p.url;
+    }
   }
   return null;
+}
+// A country is a set, and sets get the Spotify/Pinterest treatment: a 2x2
+// mosaic of four trees from four different cities, which reads as breadth
+// where one photo read as one tree.
+function mosaic(urls: string[]): string {
+  return `<span class="shelf-ph shelf-mosaic">` +
+    urls.map((u) => `<img ${imgSrcsetAttrs(u, [400], "(max-width: 800px) 36vw, 10vw")} alt="" loading="lazy">`).join("") +
+    `</span>`;
 }
 function shelfCard(href: string, photoUrl: string, title: string, meta: string): string {
   return (
@@ -186,13 +204,21 @@ const countryCards = countryIntros
       .sort((x, y) => renderableTrees(y).length - renderableTrees(x).length);
     if (cities.length < COUNTRY_MIN_CITIES) return null;
     const trees = cities.reduce((n, c) => n + renderableTrees(c).length, 0);
-    // The hero of the biggest city first, then anything with a picture.
-    const lead = cities[0];
-    const heroTree = lead.data.hero_tree_id ? lead.data.trees.find((t) => t.id === lead.data.hero_tree_id) : undefined;
-    const photo = (heroTree && usablePhoto(heroTree)?.url) || firstPhoto(cities.flatMap((c) => c.data.trees));
-    if (!photo) return null;
-    return { trees, html: shelfCard(`/${esc(intro.data.slug)}`, photo, intro.data.country,
-      `${cities.length} ${cities.length === 1 ? "city" : "cities"} &middot; ${trees} trees`) };
+    // Four photographs from four different cities, biggest cities first; a
+    // country with fewer than four photographed cities shows one picture.
+    const urls: string[] = [];
+    for (const c of cities) {
+      const hero = c.data.hero_tree_id ? c.data.trees.find((t) => t.id === c.data.hero_tree_id) : undefined;
+      const u = firstPhoto(hero ? [hero, ...c.data.trees] : c.data.trees);
+      if (u) urls.push(u);
+      if (urls.length === 4) break;
+    }
+    if (urls.length === 0) return null;
+    const meta = `${cities.length} ${cities.length === 1 ? "city" : "cities"} &middot; ${trees} trees`;
+    const html = urls.length === 4
+      ? `<a class="shelf-card" href="/${esc(intro.data.slug)}">${mosaic(urls)}<b>${esc(intro.data.country)}</b><span class="shelf-meta">${meta}</span></a>`
+      : shelfCard(`/${esc(intro.data.slug)}`, urls[0], intro.data.country, meta);
+    return { trees, html };
   })
   .filter((c): c is { trees: number; html: string } => c !== null)
   .sort((x, y) => y.trees - x.trees)

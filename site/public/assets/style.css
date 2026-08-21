@@ -634,6 +634,9 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .shelf-card { display: block; text-decoration: none; color: var(--ink); }
 .shelf-ph { position: relative; display: block; aspect-ratio: 4 / 3; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow); margin-bottom: 0.6rem; background: var(--surface); }
 .shelf-ph img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.25s; }
+.shelf-mosaic { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 2px; background: var(--cream-dark); }
+.shelf-mosaic img { min-height: 0; }
+.shelf-card:hover .shelf-mosaic img { transform: none; }
 .shelf-card:hover .shelf-ph img { transform: scale(1.04); }
 .shelf-now { position: absolute; top: 10px; left: 10px; background: #F3E4C3; color: #8A6414; font-size: 10.5px; font-weight: 700; border-radius: 999px; padding: 3px 10px; }
 .shelf-card b { display: block; font-size: 15px; font-weight: 800; line-height: 1.3; }
