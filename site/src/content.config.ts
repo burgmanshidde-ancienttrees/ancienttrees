@@ -43,6 +43,11 @@ export const treeSchema = z.object({
   age_estimate: z.string().optional(),
   age_min: z.number().nullable().optional(),
   age_max: z.number().nullable().optional(),
+  // Trunk girth at breast height, the one measurement registers agree on and
+  // the only "how big" number that is measured rather than estimated. Declared
+  // here because zod strips what it does not know, which is why the thickest
+  // ranking came out empty the first time it built (2026-08-21).
+  girth_cm: z.number().nullable().optional(),
   location: z.object({
     address: z.string().optional(),
     latitude: z.number().nullable().optional(),
