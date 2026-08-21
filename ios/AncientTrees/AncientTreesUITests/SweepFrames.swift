@@ -22,6 +22,8 @@ final class SweepFrames: XCTestCase {
     /// Same origin as the sweep: fixed, so the location dialog never appears
     /// and "near you" is the same trees every time.
     private static let origin = "-at=52.3731,4.8922"
+    /// Every screen is measured from a clean collection; see Saved.load().
+    private static let clean = "-reset"
 
     /// name -> the launch arguments that open it.
     /// Name, launch arguments, and for a screen that is a sheet or an overlay,
@@ -57,7 +59,7 @@ final class SweepFrames: XCTestCase {
         var dump = ""
         for (name, extra, root) in Self.screens {
             let app = XCUIApplication()
-            app.launchArguments = [Self.origin] + extra
+            app.launchArguments = [Self.origin, Self.clean] + extra
             app.launch()
 
             // The catalogue is 2.5 MB of JSON, so nothing exists for a moment

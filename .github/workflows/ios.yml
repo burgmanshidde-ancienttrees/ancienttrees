@@ -168,3 +168,15 @@ jobs:
           # UI test otherwise runs on a throwaway CLONE of the simulator that is
           # deleted with the file inside it.
           python3 scripts/appfit.py --device "${{ steps.sim.outputs.udid }}"
+
+      # The frames the step above judged, so a finding can be read from this
+      # Mac without re-running the sweep here. The 'Seen' drift of 2026-08-21
+      # was only explicable with the elements around it.
+      - name: Keep the measurements
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: appfit-dump-${{ github.run_id }}
+          path: /tmp/appfit-dump.txt
+          retention-days: 7
+          if-no-files-found: ignore

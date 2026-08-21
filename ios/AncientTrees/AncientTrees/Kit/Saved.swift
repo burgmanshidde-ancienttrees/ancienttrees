@@ -79,6 +79,13 @@ public final class Saved {
     }
 
     private func load() {
+        // `-reset` starts from nothing. Debug scaffolding like `-at` and
+        // `-tab`: the layout sweep and the UI tests share one simulator since
+        // 2026-08-21 (serial testing), and a tree ticked by one test showed
+        // up as a "Seen" badge in the next measurement.
+        if ProcessInfo.processInfo.arguments.contains("-reset") {
+            UserDefaults.standard.removeObject(forKey: key)
+        }
         guard let d = UserDefaults.standard.data(forKey: key),
               let list = try? JSONDecoder().decode([Entry].self, from: d) else { return }
         entries = Dictionary(list.map { ($0.treeId, $0) }, uniquingKeysWith: { a, _ in a })
