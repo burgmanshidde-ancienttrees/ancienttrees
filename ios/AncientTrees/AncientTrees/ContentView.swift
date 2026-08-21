@@ -257,6 +257,12 @@ struct ContentView: View {
                     if let new { tab = new; navigator.selectTab = nil }
                 }
                 .onChange(of: navigator.showOnMap) { _, new in
+                    // POP the map's own stack as well. The tree page you
+                    // tapped the inset on is usually pushed ON the map tab, so
+                    // switching to tab 0 left you looking at the same page and
+                    // the little map read as a dead control (Hidde,
+                    // 2026-08-21: "als ik op het kaartje klik opent hij niet").
+                    if new != nil { mapPath = [] }
                     if new != nil { tab = 0 }
                 }
                 // ONE sheet modifier, driven by one optional, because SwiftUI

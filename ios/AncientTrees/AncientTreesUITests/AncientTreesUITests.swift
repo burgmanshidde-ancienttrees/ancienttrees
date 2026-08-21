@@ -34,19 +34,6 @@ final class AncientTreesUITests: XCTestCase {
     /// there belongs to the sheet so a swipe up raises it instead of opening
     /// whatever card it started on. So a test that wants a card raises the
     /// sheet first, exactly as a person does.
-    @MainActor
-    private func raiseSheet(_ app: XCUIApplication) {
-        // Tap, then WAIT for the cards to become touchable rather than
-        // assuming the animation finished. Under a parallel test run the
-        // 0.28 second spring can still be moving when the next tap lands,
-        // which made this the suite's one flaky test.
-        let card = app.buttons.matching(identifier: "tree-card").firstMatch
-        for _ in 0..<3 {
-            app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.88)).tap()
-            if card.waitForExistence(timeout: 4), card.isHittable { return }
-        }
-    }
-
     private func launch(_ args: [String] = []) -> XCUIApplication {
         let app = XCUIApplication()
         // A fixed origin keeps the test off the location permission dialog and
@@ -61,8 +48,7 @@ final class AncientTreesUITests: XCTestCase {
     /// Hiding the map's navigation bar must not hide the pushed page's.
     @MainActor
     func testTreePageFromTheMapHasAWayBack() throws {
-        let app = launch(["-map"])
-        raiseSheet(app)
+        let app = launch(["-map", "-sheet=full"])
 
         // The sheet's first card, whatever tree it happens to be today.
         let firstCard = app.buttons.matching(identifier: "tree-card").firstMatch
@@ -85,8 +71,7 @@ final class AncientTreesUITests: XCTestCase {
     /// being near is what puts a tree in front of you.
     @MainActor
     func testATreePageCannotCollectForYou() throws {
-        let app = launch(["-map"])
-        raiseSheet(app)
+        let app = launch(["-map", "-sheet=full"])
         let firstCard = app.buttons.matching(identifier: "tree-card").firstMatch
         XCTAssertTrue(firstCard.waitForExistence(timeout: 12))
         firstCard.tap()

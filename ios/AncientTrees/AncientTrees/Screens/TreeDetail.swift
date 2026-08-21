@@ -270,11 +270,7 @@ struct TreeDetail: View {
 
     private var actionBar: some View {
         HStack(spacing: 10) {
-            Button {
-                MKMapItem(placemark: .init(coordinate: .init(latitude: tree.lat, longitude: tree.lng)))
-                    .openInMaps(launchOptions: [MKLaunchOptionsDirectionsModeKey:
-                                                MKLaunchOptionsDirectionsModeWalking])
-            } label: {
+            Button { Directions.walk(to: tree) } label: {
                 Label("Take me there", systemImage: "location.fill")
             }
             .buttonStyle(BrandButtonStyle())
