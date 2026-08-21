@@ -2829,6 +2829,15 @@
     "note": "Free API sweep (photo_hunt.py --recheck, session work, no AI tokens): 1073 trees swept, 575 with at least one open-licence candidate now queued for a viewing session. famous_trees.py --country re-run for Canada, Croatia, Norway, South Korea, Thailand: byte-identical to what an earlier pass today already wrote, no new leads.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "sitewide",
+    "kind": "photo",
+    "tokens": 0,
+    "trees": 0,
+    "note": "Free API sweep (photo_hunt.py --recheck, session work, no AI tokens): 1073 trees swept, 575 with at least one open-licence candidate now queued for a viewing session (byte-identical run count to an earlier pass today; queue size unchanged, listed for the day-not-silent convention).",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
