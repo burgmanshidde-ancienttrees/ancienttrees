@@ -74,7 +74,10 @@ struct TreeCard: View {
             // answers the thing a photograph of a trunk cannot: park, canal or
             // street corner.
             .overlay(alignment: .bottomTrailing) {
-                MapInset(lat: tree.lat, lng: tree.lng).padding(10)
+                // Honoured on BOTH branches. It used to guard only the
+                // photo-less one, so a card in the map's own sheet still drew
+                // a little map on top of the big map behind it.
+                if showsInset { MapInset(lat: tree.lat, lng: tree.lng).padding(10) }
             }
             // Decorative, and its overflow is what made the card's measured
             // frame taller than the card; the name and meta carry the label.

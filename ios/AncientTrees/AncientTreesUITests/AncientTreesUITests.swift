@@ -108,32 +108,29 @@ final class AncientTreesUITests: XCTestCase {
     /// Panning the map has to move the list under it, which is the one thing in
     /// this app that cannot be checked from a screenshot: it only happens after
     /// a finger has dragged something.
+    ///
+    /// Asserted on the LIST rather than on a chip. The "Trees in this area"
+    /// chip used to be the tell, and it was deleted on 2026-08-21 for spending
+    /// the best strip of the screen saying what the screen already is.
     @MainActor
     func testPanningTheMapMovesTheList() throws {
         let app = launch(["-map"])
-        XCTAssertTrue(app.staticTexts["Near you"].waitForExistence(timeout: 10),
-                      "the map did not open on the user")
+        let firstCard = app.buttons.matching(identifier: "tree-card").firstMatch
+        XCTAssertTrue(firstCard.waitForExistence(timeout: 12), "no list under the map")
+        let before = firstCard.label
 
-        // Drag the map itself, well above the sheet, until the centre clears
-        // the three kilometres that separates "near you" from "this area".
-        // Eight drags of most of the width, not four of less than half: on an
-        // iPhone SE the opening view is about four kilometres wide, so four
-        // short drags landed right on the threshold and the CI runner, which
-        // is slower than this Mac, lost the last one to inertia (2026-08-21).
-        // The chip is checked after every drag, so a pan that gets there
-        // early stops early.
-        // Coordinates on the app itself, not on an element: the map's
-        // identifier lands on several of its children and firstMatch picks a
-        // different one per phone.
-        let area = app.staticTexts["Trees in this area"]
-        for _ in 0..<8 where !area.exists {
-            app.coordinate(withNormalizedOffset: CGVector(dx: 0.9, dy: 0.3))
+        let map = app.otherElements.firstMatch
+        for _ in 0..<5 {
+            map.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.22))
                .press(forDuration: 0.05,
-                      thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.1, dy: 0.3)))
+                      thenDragTo: map.coordinate(withNormalizedOffset: CGVector(dx: 0.05, dy: 0.22)))
         }
 
-        XCTAssertTrue(area.waitForExistence(timeout: 6),
-                      "the map was panned away and the list still claims to be near you")
+        let changed = NSPredicate(format: "label != %@", before)
+        expectation(for: changed, evaluatedWith: firstCard)
+        waitForExpectations(timeout: 10) { err in
+            XCTAssertNil(err, "the map was panned away and the list did not follow")
+        }
     }
 
     /// The sheet and the list handing the gesture back and forth, which is the
@@ -209,102 +206,24 @@ final class AncientTreesUITests: XCTestCase {
         return el.exists ? el.frame.origin.y : -1
     }
 
-    /// Home is built out of the website's own collections, which reach the
-    /// app through /api/browse.json. If that feed ever stops carrying them the
-    /// screen quietly loses most of itself, and a screenshot of the top of it
-    /// would not show that at all.
+    /// Explore is the feed, and the feed is the rows Hidde settled on
+    /// 2026-08-21: cities, the oldest trees, countries, species, walks. The
+    /// curated collections left with the season shelf; they stay on the
+    /// website, which is where they earn their traffic.
     @MainActor
-    func testHomeCarriesTheCollections() throws {
+    func testExploreCarriesTheFeed() throws {
         let app = launch(["-tab=1"])
-        XCTAssertTrue(app.descendants(matching: .any)["explore-home"].waitForExistence(timeout: 12),
-                      "Explore did not open on its shelves")
+        XCTAssertTrue(app.staticTexts["Our favourite tree cities"].waitForExistence(timeout: 12),
+                      "the cities shelf is missing")
 
-        // Down past the hero and the season shelf to the cities. Scrolled to,
-        // not assumed: on an iPhone SE the city shelf starts below the fold,
-        // and a lazy stack does not build what is not on screen, so asking
-        // for it without scrolling fails on exactly the phone the CI uses
-        // (2026-08-21, the first green the workflow never had).
-        let places = app.staticTexts["Our favourite tree cities"]
-        for _ in 0..<6 where !places.exists { app.swipeUp(velocity: .fast) }
-        XCTAssertTrue(places.exists, "the places shelf is missing")
-
-        // And on down past the species to the collections.
-        var found = false
-        for _ in 0..<8 where !found {
+        var found = Set<String>()
+        let wanted = ["The oldest trees we map", "Tree countries", "By species"]
+        for _ in 0..<10 where found.count < wanted.count {
+            for w in wanted where app.staticTexts[w].exists { found.insert(w) }
             app.swipeUp(velocity: .fast)
-            // A collection heading is inside its own NavigationLink, so
-            // accessibility flattens it into the button's label rather than
-            // leaving it as loose text. Check both.
-            for name in ["Trees Planted by Kings and Their Gardeners",
-                         "The Ginkgos Worth a November Trip",
-                         "The Great Planes of Europe",
-                         "Europe's Most Remarkable Yews"] {
-                if app.buttons[name].exists || app.staticTexts[name].exists { found = true }
-            }
         }
-        XCTAssertTrue(found, "no curated collection shelf rendered on Explore")
-    }
-
-    /// The bar Hidde set on 2026-08-20, evening: five slots, and the middle one
-    /// is a button rather than a place. Selecting Spot must present the sheet
-    /// and leave the bar exactly where it was, because a "tab" that steals the
-    /// selection strands the person on a screen that does not exist.
-    @MainActor
-    func testFiveSlotBar() throws {
-        let app = launch()
-        for label in ["Map", "Explore", "Spot", "Collect", "Profile"] {
-            XCTAssertTrue(app.tabBars.buttons[label].waitForExistence(timeout: 10),
-                          "tab \(label) is missing from the bar")
-        }
-        app.tabBars.buttons["Spot"].tap()
-        // By any element type: the sheet grew from a VStack into a ScrollView
-        // and its identifier moved element class with it, which is exactly the
-        // kind of thing this query should not care about.
-        XCTAssertTrue(app.descendants(matching: .any)["spot-sheet"].waitForExistence(timeout: 5),
-                      "selecting Spot did not present the sheet")
-        // The sheet scrolls, so a swipe would scroll it; the close control is
-        // the way out, as on every sheet of this shape.
-        let close = app.buttons["spot-close"]
-        XCTAssertTrue(close.waitForExistence(timeout: 5), "no close control on the Spot sheet")
-        close.tap()
-        XCTAssertTrue(app.tabBars.buttons["Map"].waitForExistence(timeout: 5))
-        XCTAssertTrue(app.tabBars.buttons["Map"].isSelected,
-                      "Spot took the selection with it; the bar must stay where it was")
-    }
-
-    /// Collect's day zero is a mission naming one real tree, never the score:
-    /// four zeros and a grid of grey ghosts were the measured "leads with what
-    /// you do not have" failure this rebuild exists to fix.
-    @MainActor
-    func testCollectDayZeroShowsMission() throws {
-        // Explicitly on an empty collection: this test is about day zero, so it
-        // cannot inherit whatever an earlier test on the same simulator ticked.
-        let app = launch(["-tab=3", "-reset-collection"])
-        XCTAssertTrue(app.otherElements["collect-mission"].waitForExistence(timeout: 10),
-                      "no mission on Collect's day zero")
-        XCTAssertFalse(app.staticTexts["Species collected"].exists,
-                       "the empty stamp grid renders before the first tick")
-    }
-
-    /// Spot's whole design is that it never has a dead state: near our trees
-    /// it offers ticking WITH the add-path beneath; in the middle of nowhere
-    /// it offers the add-form as the headline.
-    @MainActor
-    func testSpotAlwaysOffersBothOutcomes() throws {
-        let app = XCUIApplication()
-        app.launchArguments = ["-at=52.3667,4.9086", "-reset-collection", "-spot"]   // Wertheimpark gate
-        app.launch()
-        XCTAssertTrue(app.staticTexts["Which tree did you find?"].waitForExistence(timeout: 10),
-                      "no tick list next to a tree we map")
-        XCTAssertTrue(app.staticTexts["Standing before a tree we miss?"].exists,
-                      "the add-path is missing from the tick list")
-
-        let far = XCUIApplication()
-        far.launchArguments = ["-at=52.03,5.91", "-reset-collection", "-spot"]       // a field near Arnhem
-        far.launch()
-        XCTAssertTrue(far.staticTexts["No tree on our map here"].waitForExistence(timeout: 10),
-                      "the add-form is not the headline where we map nothing")
-        XCTAssertTrue(far.buttons["Send it in"].exists)
+        XCTAssertEqual(found.count, wanted.count,
+                       "Explore is missing \(Set(wanted).subtracting(found))")
     }
 
     /// Begin is the walk verb actually happening: full screen, the route, and

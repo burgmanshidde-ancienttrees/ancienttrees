@@ -25,4 +25,5 @@ public enum Route: Hashable {
     case city(String)                          // city slug
     case collection(String)                    // collection slug
     case species(String)                       // common name
+    case country(String)                       // country name, as the feed spells it
 }

@@ -15,7 +15,6 @@ struct TreeDetail: View {
     @Environment(Saved.self) private var saved
     @Environment(Account.self) private var account
     @Environment(Nudge.self) private var nudge
-    @State private var showFullStory = false
     @State private var reporting = false
     @Environment(Navigator.self) private var navigator
 
@@ -26,12 +25,6 @@ struct TreeDetail: View {
                     hero
                     header
                     facts
-                    // Where it is, on the page rather than one tap away in
-                    // Apple Maps. Their route page has exactly this and ours did
-                    // not, which left the app behind our own website on the one
-                    // field that decides whether somebody gets there: the site's
-                    // tree page has carried a map since it shipped.
-                    mapCard
                     if tree.precision.needsWarning { approximateNote }
                     story
                     accessBlock
@@ -107,6 +100,17 @@ struct TreeDetail: View {
                     }
                     .clipped()
                     .clipShape(.rect(cornerRadius: 14))
+                    // The way to the map, in the corner a card already trained
+                    // people to look at. It replaces the 150 point map card
+                    // that used to sit between the facts and the story and
+                    // pushed the whole story below the fold.
+                    .overlay(alignment: .bottomTrailing) {
+                        Button { navigator.showOnMap = tree.id } label: {
+                            MapInset(lat: tree.lat, lng: tree.lng).padding(10)
+                        }
+                        .buttonStyle(.plain)
+                        .accessibilityLabel("Show this tree on the map")
+                    }
                 if let c = Photos.credit(p) {
                     Text(c)
                         .font(.caption2)
@@ -116,6 +120,13 @@ struct TreeDetail: View {
             }
         } else {
             heroFallback.frame(height: 200).clipShape(.rect(cornerRadius: 14))
+                .overlay(alignment: .bottomTrailing) {
+                    Button { navigator.showOnMap = tree.id } label: {
+                        MapInset(lat: tree.lat, lng: tree.lng).padding(10)
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel("Show this tree on the map")
+                }
         }
     }
 
@@ -124,36 +135,6 @@ struct TreeDetail: View {
     /// its own or are there three more round the corner".
     private var nearbyTrees: [Tree] {
         catalogue.nearest(to: tree.lat, tree.lng, limit: 8, withinKm: 0.5).map(\.tree)
-    }
-
-    /// Not a second map: a way to the map.
-    ///
-    /// The first version of this was an interactive 220 point map sitting three
-    /// inches from the tab that opens the real one, which is duplication rather
-    /// than navigation (Hidde, 2026-08-20). A picture cannot be mistaken for a
-    /// map you should be pinching, and the whole picture is the button.
-    private var mapCard: some View {
-        Button {
-            navigator.showOnMap = tree.id
-        } label: {
-            ZStack(alignment: .bottomLeading) {
-                MapInset(lat: tree.lat, lng: tree.lng, side: nil, height: 150)
-                LinearGradient(colors: [.clear, .black.opacity(0.45)],
-                               startPoint: .center, endPoint: .bottom)
-                HStack(spacing: 6) {
-                    Image(systemName: "map.fill").font(.caption)
-                    Text("Show on the map").font(.brand(15, .bold, relativeTo: .subheadline))
-                    Spacer()
-                    Image(systemName: "arrow.up.right").font(.caption)
-                }
-                .foregroundStyle(.white)
-                .padding(14)
-            }
-            .frame(height: 150)
-            .clipShape(.rect(cornerRadius: 14))
-            .shadow(color: .black.opacity(0.07), radius: 8, y: 3)
-        }
-        .buttonStyle(.plain)
     }
 
     private var heroFallback: some View {
@@ -225,16 +206,14 @@ struct TreeDetail: View {
         .background(Color.orange.opacity(0.12), in: .rect(cornerRadius: 10))
     }
 
+    /// Whole, always. It used to stop at six lines behind a "read the whole
+    /// story" button, which is a paywall made of nothing: the story IS the
+    /// page, and with the map card gone there is room for it (Hidde,
+    /// 2026-08-21: "your text can go up, so you can put the whole story there
+    /// instead of putting that behind the button").
     private var story: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text(tree.story)
-                .lineLimit(showFullStory ? nil : 6)
-                .animation(.default, value: showFullStory)
-            if !showFullStory {
-                Button("Read the whole story") { showFullStory = true }
-                    .font(.footnote.weight(.semibold))
-            }
-        }
+        Text(tree.story)
+            .fixedSize(horizontal: false, vertical: true)
     }
 
     private var accessBlock: some View {

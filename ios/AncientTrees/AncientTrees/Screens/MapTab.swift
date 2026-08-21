@@ -271,21 +271,14 @@ struct MapTab: View {
         .padding(.bottom, 110)      // clear of the floating tab bar
     }
 
+    /// Only the ASK survives here. "Near you" and "Trees in this area" spent
+    /// the best strip on the screen telling somebody looking at a map that
+    /// they were looking at a map (Hidde, 2026-08-21: "that's the whole app,
+    /// so don't waste that space"). When we do not have a location there is
+    /// something real to say, so that half stays.
     @ViewBuilder private var whereChip: some View {
-        if located && !lookingAtYou {
-            Label("Trees in this area", systemImage: "map")
-                .font(.subheadline.weight(.semibold))
-                .padding(.horizontal, 14).padding(.vertical, 8)
-                .background(.regularMaterial, in: .capsule)
-                .shadow(color: .black.opacity(0.12), radius: 6, y: 2)
-                .padding(.top, 10)
-        } else if located {
-            Label("Near you", systemImage: "location.fill")
-                .font(.subheadline.weight(.semibold))
-                .padding(.horizontal, 14).padding(.vertical, 8)
-                .background(.regularMaterial, in: .capsule)
-                .shadow(color: .black.opacity(0.12), radius: 6, y: 2)
-                .padding(.top, 10)
+        if located {
+            EmptyView()
         } else {
             Button {
                 if locationDenied {
@@ -315,19 +308,16 @@ struct MapTab: View {
 
     /// Four filters and no more, deliberately. The map is the one screen where
     /// every control added takes something away from the thing it is for, and
-    /// Google Maps is restrained here on purpose. These four are the questions
-    /// people actually ask: is it worth going NOW, can I see what it looks like,
-    /// can I walk there, and is it the kind of tree I like.
+    /// Two chips, and Hidde cut it to two on 2026-08-21: "walking routes make
+    /// sense, and species. That's it for the filter for now." What went: at
+    /// their best (season is a pulse on the pins, not a filter), with a photo
+    /// (the editorial order already leads with pictures) and within 2 km (the
+    /// list is distance-ordered anyway). Restoring one is a single line, so
+    /// the cost of being wrong here is nothing.
     private var filterRow: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 8) {
                 walkChip
-                FilterChip(label: "At their best", icon: "sparkles",
-                           on: filters.peakingNow) { filters.peakingNow.toggle() }
-                FilterChip(label: "With a photo", icon: "photo",
-                           on: filters.withPhoto) { filters.withPhoto.toggle() }
-                FilterChip(label: "Within 2 km", icon: "figure.walk",
-                           on: filters.walkable) { filters.walkable.toggle() }
 
                 Menu {
                     Button("Any species") { filters.species = nil }

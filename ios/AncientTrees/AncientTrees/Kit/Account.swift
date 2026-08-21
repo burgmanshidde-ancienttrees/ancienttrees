@@ -320,7 +320,7 @@ public enum SignInReason: Equatable, Identifiable {
         // short names. The name belongs in the sentence underneath, where it can
         // wrap without breaking anything.
         case .keepTree: "That one is yours"
-        case .keepCollection(let n): n == 1 ? "Keep your tree safe" : "Keep your \(n) trees safe"
+        case .keepCollection(let n): n == 1 ? "Sign in to keep your tree" : "Sign in to keep your \(n) trees"
         case .seasonAlerts: "Be told when a tree near you peaks"
         case .feedback: "Sign in to have your say"
         }
@@ -329,11 +329,11 @@ public enum SignInReason: Equatable, Identifiable {
     var detail: String {
         switch self {
         case .general:
-            "Right now your collection lives on this phone only. An account keeps it, and puts it on the website too."
+            "An account carries your collection to the website and to any phone you sign in on."
         case .keepTree(let name):
-            "\(name) is ticked off. That record lives on this phone only, so an account is what keeps it, here and on the website."
+            "\(name) is yours. Sign in and your collection follows you to the website and to any phone."
         case .keepCollection:
-            "They live on this phone only. Lose it, replace it, or reinstall, and they are gone. An account keeps them, and puts them on the website too."
+            "Sign in and they follow you to the website and to any phone you use."
         case .seasonAlerts:
             "We can only tell you about a tree if we know where to reach you."
         case .feedback:

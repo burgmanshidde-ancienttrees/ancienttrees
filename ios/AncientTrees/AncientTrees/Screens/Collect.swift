@@ -99,7 +99,7 @@ struct CollectView: View {
                 if !saved.entries.isEmpty {
                     Picker("", selection: $lane) {
                         Text("Want to see").tag(Lane.want)
-                        Text("Seen").tag(Lane.seen)
+                        Text("Collected").tag(Lane.seen)
                     }
                     .pickerStyle(.segmented)
                     .accessibilityIdentifier("collect-lane")
@@ -108,7 +108,7 @@ struct CollectView: View {
                     if list.isEmpty {
                         Text(lane == .want
                              ? "Nothing on your list. Tap a heart anywhere to put a tree here."
-                             : "Nothing ticked off yet. Stand before one and use the Spot button.")
+                             : "Nothing collected yet. Stand before a tree and use the Spot button.")
                             .font(.subheadline).foregroundStyle(Brand.inkSoft)
                             .padding(.top, 4)
                     } else {
@@ -231,13 +231,13 @@ struct CollectView: View {
     private var backupBar: some View {
         Button { signingIn = true } label: {
             HStack(spacing: 12) {
-                Image(systemName: "exclamationmark.icloud")
+                Image(systemName: "person.crop.circle")
                     .font(.title3).foregroundStyle(Brand.moss)
                 VStack(alignment: .leading, spacing: 2) {
-                    Text("Kept on this phone only")
+                    Text("Sign in")
                         .font(.brand(16, .bold, relativeTo: .subheadline))
                         .foregroundStyle(Brand.ink)
-                    Text("Sign in and they follow you to a new phone and to the website.")
+                    Text("Your collection follows you to the website and to any phone.")
                         .font(.caption).foregroundStyle(Brand.inkSoft)
                         .fixedSize(horizontal: false, vertical: true)
                 }
