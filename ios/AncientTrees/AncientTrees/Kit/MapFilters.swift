@@ -25,10 +25,15 @@ struct MapFilters: Equatable {
     var withPhoto = false
     var walkable = false
     var species: String?
+    /// Your own trees on the map (Hidde, 2026-08-21). Not a property of a
+    /// tree, so it is applied with the collection passed in, the same way
+    /// distance is applied with an origin.
+    var collectedOnly = false
 
-    var isOn: Bool { peakingNow || withPhoto || walkable || species != nil }
+    var isOn: Bool { peakingNow || withPhoto || walkable || collectedOnly || species != nil }
 
-    func keeps(_ t: Tree, month: Int) -> Bool {
+    func keeps(_ t: Tree, month: Int, collected: Set<String> = []) -> Bool {
+        if collectedOnly, !collected.contains(t.id) { return false }
         if peakingNow, !(t.bestTime?.isNow(month) ?? false) { return false }
         if withPhoto, t.photo == nil { return false }
         if let species, t.commonName != species { return false }

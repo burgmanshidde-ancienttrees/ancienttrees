@@ -41,8 +41,25 @@ public enum Photos {
     /// CC BY and BY-SA oblige a visible credit. That is the licence's price and
     /// it is never stripped: a photo that cannot carry its credit is replaced,
     /// not shown bare.
+    /// The credit, trimmed to what the licence actually asks for.
+    ///
+    /// CC BY and BY-SA want the author and the terms. The HOST is neither, so
+    /// "via Wikimedia Commons" is dropped: it doubled the length of every
+    /// credit on the site and told the reader nothing they needed (Hidde,
+    /// 2026-08-21, "als de foto referentie subtieler kan"). Where the host is
+    /// all we have, it stays, because a photograph with no attributable name
+    /// still has to say where it came from.
     public static func credit(_ p: Photo) -> String? {
         guard p.creditRequired else { return nil }
-        return [p.attribution, p.license].compactMap { $0 }.joined(separator: " · ")
+        var who = p.attribution
+        if var a = who {
+            for host in [", via Wikimedia Commons", " via Wikimedia Commons",
+                         ", Wikimedia Commons", ", via Flickr", ", via iNaturalist"] {
+                if a.hasSuffix(host) { a = String(a.dropLast(host.count)); break }
+            }
+            who = a.trimmingCharacters(in: .whitespacesAndNewlines)
+            if who?.isEmpty == true { who = p.attribution }
+        }
+        return [who, p.license].compactMap { $0 }.joined(separator: " · ")
     }
 }

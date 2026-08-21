@@ -42,10 +42,10 @@ struct TreeDetail: View {
                     // domain do not and get none. Moving it here is allowed
                     // ("in any reasonable manner"), removing it is not.
                     if let p = tree.photo, let c = Photos.credit(p) {
-                        Text("Photograph: " + c)
-                            .font(.caption2)
-                            .foregroundStyle(Brand.inkSoft.opacity(0.7))
-                            .lineLimit(2)
+                        Text(c)
+                            .font(.system(size: 10))
+                            .foregroundStyle(Brand.inkSoft.opacity(0.45))
+                            .lineLimit(1)
                     }
                     Color.clear.frame(height: 90)   // room for the pinned bar
                 }
