@@ -10,6 +10,28 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-21 (night run) - Bari's 4th tree checked and still not found
+
+Bari has 3 fully verified, written trees (`data/research/bari-verified.json`)
+sitting one short of the 4-tree floor: an ombu and a "mangiafumo" (ponytail
+palm) in Piazza Umberto I gardens, and the Pine of Carrassi. The in-city
+register supply is exhausted (2026-08-20) and the two closest day-trip
+candidates (La Grave carobs, Sovereto pine) were already blocked. This pass
+checked the last three unchecked day-trip candidates from Puglia's regional
+register, all in Molfetta (24-29km, well inside the 30-minute rail day-trip
+boundary at 21-25 minutes each way): the Torre di Pettine eucalyptus, the
+Navarino roverella and the Macchia Clemente carob. All three moved to
+blocked in `data/leads/bari.json`: the eucalyptus sits 300m+ from any
+mapped road (Overpass check), the roverella adjoins a privately walled,
+ruined masseria with no source placing the tree relative to the wall, and
+the carob sits in a private-house contrada with no source confirming it is
+the same tree as the unrelated, definitely-public carrubo secolare in
+Molfetta's Parco Lama Martina (joining those two would be the bridge-claim
+error). That exhausts the regional register's day-trip supply for Bari.
+Bari stays unpublished, 3 trees, until a reader submission, a from-zero
+web sweep, or Hidde widening the day-trip boundary produces a 4th. Claim
+released. Logged in data/agent-costs.json as a zero-yield verify pass.
+
 ## 2026-08-20 (autonomous run) - Toulouse submission: elm ID correction checked, not changed
 
 Reader submission (3 duplicate rows, same content, a form double-submit)

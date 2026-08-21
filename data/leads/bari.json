@@ -55,6 +55,45 @@
     "data/registers/puglia-alberi-monumentali.json (register_id 01/L109/BA/16)"
    ],
    "why_blocked": "Not confirmed alive, and not confirmed as being on the sanctuary's own public ground rather than roadside private land nearby, so it fails BOTH the alive-now check and the access check for now. Sovereto is a genuinely public case in principle, a Marian sanctuary/hamlet reachable by a cycling path from Terlizzi, described in general terms as having 'centuries-old pine trees' in its landscape, which would likely pass hard rule 10's church exception if the register tree specifically stood on sanctuary ground. But two independent 2025 local reports record fallen century-old trees in the immediate area within the last year: pugliareporter.com (20 Oct 2025) reports a giant secular pine fell on Via Rimini, Terlizzi, on private property (confirmed a DIFFERENT tree and location, not this one, so it does not kill this candidate on its own); terlizziviva.it (6 Aug 2025) separately reports another large tree down 'between Sovereto and Via Traiana, on the road from SP231 toward Via Traiana near Villa Ilderis', unspecified species, raising Puliamo Terlizzi's own concern about losing 'historic points of reference if not actually monumental' trees in exactly this area. Neither report names the register's specific Pinus pinea, so this is not a confirmed death, but the register (fetched 2026-08-16) predates both incidents and has no vitality field, and this candidate should not ship without a fresh alive-now check plus a source pinning it inside the sanctuary grounds specifically."
+  },
+  {
+   "name": "Eucalyptus of Torre di Pettine, Molfetta",
+   "species": "Eucalyptus camaldulensis Dehnh. (register); girth 560 cm, height 25 m",
+   "location": {
+    "latitude": 41.179714,
+    "longitude": 16.531186
+   },
+   "sources": [
+    "data/registers/puglia-alberi-monumentali.json (register_id 01/F284/BA/16)",
+    "https://www.molfettaviva.it/notizie/presentato-il-nuovo-atlante-degli-alberi-monumentali-di-puglia-3-sono-di-molfetta/ (names the tree, no access detail)"
+   ],
+   "why_blocked": "Fails hard rule 10 test 1. Checked the register point against OpenStreetMap (Overpass, 2026-08-21): the nearest mapped way of any kind, the unclassified 'Fondo Favale' track that a Moovit routing snippet also names as the way in, sits about 305 m from the tree; the nearest track ways sit 400 to 485 m away. That is deep inside farmland with no road or path anywhere near it on the map, consistent with the locality being named for a private masseria/fortified house (Torre di Pettine, described elsewhere as a small fortified country house) rather than a public site. No source found states the tree is visible or reachable without crossing private fields. Revisit only if a source names a specific public path reaching the tree itself, not just the general area."
+  },
+  {
+   "name": "Roverella of Navarino, Molfetta",
+   "species": "Quercus pubescens Willd. (register); girth 430 cm, height 15 m",
+   "location": {
+    "latitude": 41.162258,
+    "longitude": 16.512172
+   },
+   "sources": [
+    "data/registers/puglia-alberi-monumentali.json (register_id 03/F284/BA/16)",
+    "https://www.barinedita.it/reportage/n4170-molfetta-tra-fantasmi-e-spietate-esecuzioni-la-storia-della-solitaria-masseria-navarino (on-site visit to Masseria Navarino, does not mention the tree)"
+   ],
+   "why_blocked": "Not confirmed open under hard rule 10 test 1. The register point sits about 40 m from a farm track (OSM, 2026-08-21), which is promising, but the only on-site reportage found is Barinedita's visit to Masseria Navarino itself, the ruined and abandoned fortified farmhouse the locality is named for: reached via a narrow, roughly 6 km dirt 'strada vicinale Navarino', privately owned by descendants of the Gadaleta family, and surrounded by 'un alto muro di recinzione' (a high perimeter wall). The article describes olive groves around the masseria but never mentions this oak, so whether the register tree stands inside that walled private compound or outside it on the track cannot be settled from what is findable by search. Do not re-search this exact question without a source that places the tree relative to the wall."
+  },
+  {
+   "name": "Carob of Macchia Clemente, Molfetta",
+   "species": "Ceratonia siliqua L. (register); girth 450 cm, height 11 m",
+   "location": {
+    "latitude": 41.168511,
+    "longitude": 16.578442
+   },
+   "sources": [
+    "data/registers/puglia-alberi-monumentali.json (register_id 05/F284/BA/16)",
+    "https://www.molfettaviva.it/notizie/presentato-il-nuovo-atlante-degli-alberi-monumentali-di-puglia-3-sono-di-molfetta/ (names the tree, no access detail)"
+   ],
+   "why_blocked": "Not confirmed open under hard rule 10 test 1. Macchia Clemente is a scattered rural contrada with private houses (an active real-estate listing for a 'villa' there was found in the same search), and the register point sits closest to a residential-tagged road (OSM, 2026-08-21, about 85 m). A separate famous carrubo secolare stands in Molfetta's Parco Naturale di Lama Martina, a genuinely public park, but nothing found ties that specific tree to this register entry's coordinates rather than merely the same general part of town; joining them would be exactly the bridge-claim error CLAUDE.md warns against, two true facts producing a claim neither source makes. Do not assume the park connection without a source that gives the park's actual boundary or names this tree specifically as being inside it."
   }
  ],
  "notes": [
@@ -68,6 +107,10 @@
   {
    "date": "2026-08-20 (session, continued)",
    "finding": "Ran the access check on the two strongest day-trip candidates named above (La Grave carobs, Sovereto pine) and neither clears hard rule 10 with what's findable by search: the carob grove reads as private agricultural land with a public road nearby but no source confirming visibility from it, and the Sovereto pine cannot be confirmed alive given two independent 2025 reports of fallen century-old trees in that immediate area (neither naming this specific tree, so not a confirmed death, but reason enough not to ship on a 2026-08-16 register extract alone). Both moved from open question to blocked with reasons, so a future pass does not re-run the same searches. Molfetta's three candidates (Torre di Pettine eucalyptus, Navarino roverella, Macchia Clemente carob, 24-29 km) remain genuinely unchecked and are the next place to look if Hidde or a later pass wants to keep pushing on Bari's 4th tree; a coastal watchtower locality name ('Torre di Pettine') is worth checking first, since Puglia's coastal towers usually sit on public paths."
+  },
+  {
+   "date": "2026-08-21 (night run)",
+   "finding": "Checked all three Molfetta candidates named above, the last unchecked day-trip supply within Puglia's regional register for Bari. All three moved to blocked, on the same shape of evidence as the rest of this file: the eucalyptus sits 300+ metres from any mapped road or track (OSM Overpass, deep in private farmland), the roverella stands close to a track but the only on-site source describes the adjoining Masseria Navarino as a walled, privately owned ruin with no mention of the tree, and the carrubo sits near a residential road in a private-house contrada with no source distinguishing it from the unrelated, definitely-public carrubo in Parco Lama Martina. None of the three had a Barinedita-style on-site visit to settle it either way, unlike the in-city trees. That exhausts every day-trip candidate this register offers within roughly 30km; Bari's 4th tree is not coming from Puglia's regional register as currently sourced. It stays at 3 verified trees below the 4-tree floor. The path forward, in order of cost: (1) a reader submission or tip, always the cheapest; (2) a from-zero web sweep for a Bari-area tree entirely outside the register (unlikely to be efficient given the register was already exhaustive for the province); (3) asking Hidde whether to widen the day-trip boundary past 30km for this one city. Do not re-run this exact check again without new source material."
   }
  ]
 }
