@@ -57,6 +57,15 @@ struct WalkMode: View {
         Int(Geo.km(origin, (t.lat, t.lng)) * 1000)
     }
 
+    /// Metres under a kilometre, kilometres above it. "1.924 m" is what a
+    /// grouping separator does to 1924 metres, and to a European eye that
+    /// reads as one and a bit metres.
+    private func distanceLabel(_ t: Tree) -> String {
+        let m = metres(t)
+        return m < 1000 ? "\(m) m away"
+                        : String(format: "%.1f km away", Double(m) / 1000)
+    }
+
     /// Close enough that "are you standing in front of it" is the right
     /// question rather than "shall I take you there". Deliberately loose.
     private func withinReach(_ t: Tree) -> Bool { metres(t) <= 120 }
@@ -159,7 +168,7 @@ struct WalkMode: View {
                     Text(t.name)
                         .font(.brand(17, .bold)).foregroundStyle(Brand.ink)
                         .lineLimit(2)
-                    Text("\(t.commonName) · \(metres(t)) m away")
+                    Text("\(t.commonName) · \(distanceLabel(t))")
                         .font(.footnote).foregroundStyle(Brand.inkSoft)
                 }
                 Spacer(minLength: 0)
