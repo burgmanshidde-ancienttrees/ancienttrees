@@ -41,24 +41,6 @@
  "flower_days": "two to three weeks, before a single leaf is out",
  "fruit_label": "flat purple-brown pods hang in bunches and stay on through winter",
  "colour_label": "clear yellow, and the heart-shaped leaves fall quickly",
- "peak": {
-  "moment": "flowers",
-  "months": [
-   5
-  ],
-  "share": true,
-  "map": {
-   "effect": "blossom",
-   "colour": "#C8477E",
-   "pulse": true
-  },
-  "surfaces": [
-   "map",
-   "push",
-   "tree",
-   "city"
-  ]
- },
  "sources": [
   "https://www.rhs.org.uk/plants/3617/cercis-siliquastrum/details",
   "https://www.treesandshrubsonline.org/articles/cercis/cercis-siliquastrum/"

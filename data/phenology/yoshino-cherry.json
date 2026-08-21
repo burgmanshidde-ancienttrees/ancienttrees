@@ -37,26 +37,6 @@
  "flower_label": "pale pink buds open almost white on bare wood, the whole tree at once, and the display lasts about a week",
  "fruit_label": "small black cherries that the birds take before anyone notices them",
  "colour_label": "bronze and dull yellow, no match for the spring",
- "peak": {
-  "moment": "flowers",
-  "months": [
-   3,
-   4
-  ],
-  "share": true,
-  "map": {
-   "effect": "blossom",
-   "colour": "#F2C2D2",
-   "pulse": true
-  },
-  "surfaces": [
-   "map",
-   "push",
-   "tree",
-   "city",
-   "home"
-  ]
- },
  "sources": [
   "https://www.rhs.org.uk/plants/search-results?query=prunus%20yedoensis",
   "https://www.treesandshrubsonline.org/articles/prunus/prunus-x-yedoensis/"

@@ -392,6 +392,11 @@ def check_phenology():
                 if k not in PEAK_KEYS:
                     out.append("%s: peak has unknown key %r" % (name, k))
             mom = peak.get("moment")
+            if mom == "flowers":
+                out.append("%s: peak.moment is 'flowers'. Blossom is derived from "
+                           "flower_colour and flower_peak, never curated, so a "
+                           "curated one is a second answer that will drift from "
+                           "the first. Drop it and set flower_peak." % name)
             if (d.get("intensity") or {}).get(mom) != "worth the trip":
                 out.append("%s: peak names %r but intensity does not rate it "
                            "'worth the trip'. A peak is not a second opinion; "
