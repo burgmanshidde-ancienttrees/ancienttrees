@@ -183,7 +183,7 @@ const collectionPages = defineCollection({
     // build, so finding an older tree updates the page by itself. `entries`
     // stays: a curated note on a tree in the ranking is still used for that
     // tree, so the hand-written lines are not thrown away.
-    generated: z.enum(["oldest"]).optional(),
+    generated: z.enum(["oldest", "thickest"]).optional(),
     entries: z.array(
       z.object({
         city_slug: z.string(),
