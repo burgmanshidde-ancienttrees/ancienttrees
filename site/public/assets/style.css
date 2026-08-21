@@ -775,7 +775,15 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
    three days (Hidde, 2026-08-20: "de vrucht animatie kan dan wat subtieler").
 
    Three particles per pin. More reads as weather rather than as a tree. */
-.pin-tree.pin-peak svg { color: var(--peak); }
+/* The silhouette takes the peak colour, and a hairline shadow in a darkened
+   version of that same hue keeps the SHAPE readable when the colour is pale.
+   Without it the horse chestnut's near-white blossom turned the whole tree
+   near-white on a cream pin and the tree disappeared: seen on the map at 3.4x
+   on 2026-08-20. A shadow in the peak's own hue rather than a flat black keeps
+   each species looking like itself, and on a saturated gold it costs nothing. */
+.pin-tree.pin-peak svg { color: var(--peak);
+  filter: drop-shadow(0 0 .7px color-mix(in srgb, var(--peak) 35%, var(--ink)))
+          drop-shadow(0 0 .7px color-mix(in srgb, var(--peak) 35%, var(--ink))); }
 .pin-tree.pin-peak::after {
   content: ""; position: absolute; inset: -7px; border-radius: 50%; z-index: -1;
   background: radial-gradient(circle, color-mix(in srgb, var(--peak) 42%, transparent) 0%, transparent 68%);
