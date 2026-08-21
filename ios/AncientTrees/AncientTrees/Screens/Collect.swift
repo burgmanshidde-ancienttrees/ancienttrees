@@ -74,11 +74,20 @@ struct CollectView: View {
     var body: some View {
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 22) {
-                statsCard
-                stampCard
+                // Day zero opens with a MISSION, not with the score. Four
+                // zeros and eighteen grey ghosts were Hidde's own evidence
+                // that the app leads with what you do not have ("Collect is
+                // vier nullen plus achttien grijze spookjes"); the shape-of-
+                // the-grid argument in stampCard's comment below holds once
+                // there is one stamp in it, so the score renders from the
+                // first tick, never before.
+                if allVisited.isEmpty {
+                    mission
+                } else {
+                    statsCard
+                    stampCard
+                }
                 if !account.isSignedIn && saved.savedCount > 0 { backupBar }
-
-                if saved.entries.isEmpty { empty }
 
                 if !wishlist.isEmpty {
                     header("Want to see", wishlist.count)
@@ -93,7 +102,9 @@ struct CollectView: View {
             .padding(.horizontal, 16).padding(.top, 6)
         }
         .brandGround()
-        .navigationTitle("Collect")
+        // No literal tab-label heading; the mission or the score leads.
+        .navigationTitle("")
+        .navigationBarTitleDisplayMode(.inline)
         .searchable(text: $search, prompt: "Search your trees")
         .sheet(isPresented: $signingIn) {
             SignInSheet(reason: .keepCollection(saved.savedCount), localCount: saved.savedCount)
@@ -221,15 +232,57 @@ struct CollectView: View {
         .buttonStyle(.plain)
     }
 
-    private var empty: some View {
-        VStack(spacing: 12) {
-            Text("Nothing collected yet")
-                .font(.brand(20, .heavy, relativeTo: .title3)).foregroundStyle(Brand.ink)
-            Text("Tap the heart on a tree to keep it, and tick it off once you have stood in front of it. There are \(catalogue.trees.count.formatted(.number.locale(Locale(identifier: "en_US")))) to find.")
-                .font(.footnote).foregroundStyle(Brand.inkSoft)
-                .multilineTextAlignment(.center).padding(.horizontal, 20)
+    // MARK: - day zero: a mission, not a score
+
+    /// The nearest tree worth walking to: your nearest heart if you have one,
+    /// the best suggestion nearby if you do not.
+    private var missionTree: Tree? {
+        wishlist.min { $0.distanceKm(from: origin.lat, origin.lng)
+                     < $1.distanceKm(from: origin.lat, origin.lng) }
+        ?? Editorial.suggestions(catalogue: catalogue, origin: origin,
+                                 excluding: Set(saved.entries.keys), limit: 1).first
+    }
+
+    private func distanceLabel(_ t: Tree) -> String {
+        let km = t.distanceKm(from: origin.lat, origin.lng)
+        return km < 1 ? "\(Int(km * 1000)) m" : String(format: "%.1f km", km)
+    }
+
+    @ViewBuilder private var mission: some View {
+        if let t = missionTree {
+            VStack(alignment: .leading, spacing: 12) {
+                Text("Your first tree is \(distanceLabel(t)) away")
+                    .font(.brand(24, .heavy, relativeTo: .title))
+                    .foregroundStyle(Brand.ink)
+                Text("Stand before it and tick it off with the Spot button. Trees, species and places fill your collection, and the years they have seen add up.")
+                    .font(.subheadline).foregroundStyle(Brand.inkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+                NavigationLink(value: Route.tree(t.id)) {
+                    TreeCard(tree: t, km: t.distanceKm(from: origin.lat, origin.lng))
+                }
+                .buttonStyle(.plain)
+                NavigationLink(value: Route.tree(t.id)) {
+                    HStack { Spacer()
+                        Label("Show the way", systemImage: "arrow.turn.up.right")
+                            .font(.brand(17, .bold))
+                        Spacer() }
+                        .padding(.vertical, 15)
+                        .background(Brand.moss, in: .rect(cornerRadius: 15))
+                        .foregroundStyle(.white)
+                }
+                .buttonStyle(.plain)
+            }
+            .accessibilityElement(children: .contain)
+            .accessibilityIdentifier("collect-mission")
+        } else {
+            // Nowhere near any tree we map: honest, and it still points out.
+            VStack(alignment: .leading, spacing: 10) {
+                Text("Nothing collected yet")
+                    .font(.brand(24, .heavy, relativeTo: .title)).foregroundStyle(Brand.ink)
+                Text("There are \(catalogue.trees.count.formatted(.number.locale(Locale(identifier: "en_US")))) trees to find in \(Set(catalogue.trees.map(\.country)).count) countries. Explore the map, save the ones you want, and tick them off as you stand before them.")
+                    .font(.subheadline).foregroundStyle(Brand.inkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
         }
-        .frame(maxWidth: .infinity)
-        .padding(.top, 20)
     }
 }

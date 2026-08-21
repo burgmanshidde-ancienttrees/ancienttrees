@@ -46,6 +46,7 @@ struct ProfileView: View {
         }
         .brandGround()
         .navigationTitle("Profile")
+        .navigationBarTitleDisplayMode(.inline)
         .sheet(isPresented: $contributing) { ContributeView() }
         .sheet(isPresented: $signingIn) {
             SignInSheet(reason: saved.savedCount > 0 ? .keepCollection(saved.savedCount) : .general,

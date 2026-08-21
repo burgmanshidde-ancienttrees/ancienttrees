@@ -74,11 +74,11 @@ final class AncientTreesUITests: XCTestCase {
                       "ticking a tree left no visible trace")
     }
 
-    /// Tapping the tab you are already on goes back to the top of it. This is
-    /// the reason every NavigationLink in the app became a value on 2026-08-20,
-    /// so it is the thing that has to be asserted rather than assumed.
+    /// A pushed tree page hides the tab bar (Hidde's own finding: it sits
+    /// there doing nothing), and Back restores it. Replaced the old
+    /// tap-the-active-tab test, whose gesture needs the bar this design hides.
     @MainActor
-    func testTappingTheActiveTabGoesBackToTheTop() throws {
+    func testThePushedPageHidesTheBarAndBackRestoresIt() throws {
         let app = launch(["-map"])
 
         let firstCard = app.buttons.matching(identifier: "tree-card").firstMatch
@@ -86,10 +86,12 @@ final class AncientTreesUITests: XCTestCase {
         firstCard.tap()
         XCTAssertTrue(app.buttons["Take me there"].waitForExistence(timeout: 5),
                       "a tree page did not open")
+        XCTAssertFalse(app.tabBars.buttons["Explore"].isHittable,
+                       "the tab bar is still sitting on a tree page")
 
-        app.tabBars.buttons["Explore"].tap()
-        XCTAssertTrue(app.staticTexts["Near you"].waitForExistence(timeout: 5),
-                      "tapping the active tab did not return to the map")
+        app.navigationBars.buttons.firstMatch.tap()
+        XCTAssertTrue(app.tabBars.buttons["Explore"].waitForExistence(timeout: 5),
+                      "back did not bring the bar home")
     }
 
     /// Panning the map has to move the list under it, which is the one thing in
@@ -191,12 +193,31 @@ final class AncientTreesUITests: XCTestCase {
                           "tab \(label) is missing from the bar")
         }
         app.tabBars.buttons["Spot"].tap()
-        XCTAssertTrue(app.otherElements["spot-sheet"].waitForExistence(timeout: 5),
+        // By any element type: the sheet grew from a VStack into a ScrollView
+        // and its identifier moved element class with it, which is exactly the
+        // kind of thing this query should not care about.
+        XCTAssertTrue(app.descendants(matching: .any)["spot-sheet"].waitForExistence(timeout: 5),
                       "selecting Spot did not present the sheet")
-        app.swipeDown(velocity: .fast)
+        // The sheet scrolls, so a swipe would scroll it; the close control is
+        // the way out, as on every sheet of this shape.
+        let close = app.buttons["spot-close"]
+        XCTAssertTrue(close.waitForExistence(timeout: 5), "no close control on the Spot sheet")
+        close.tap()
         XCTAssertTrue(app.tabBars.buttons["Explore"].waitForExistence(timeout: 5))
         XCTAssertTrue(app.tabBars.buttons["Explore"].isSelected,
                       "Spot took the selection with it; the bar must stay where it was")
+    }
+
+    /// Collect's day zero is a mission naming one real tree, never the score:
+    /// four zeros and a grid of grey ghosts were the measured "leads with what
+    /// you do not have" failure this rebuild exists to fix.
+    @MainActor
+    func testCollectDayZeroShowsMission() throws {
+        let app = launch(["-tab=3"])
+        XCTAssertTrue(app.otherElements["collect-mission"].waitForExistence(timeout: 10),
+                      "no mission on Collect's day zero")
+        XCTAssertFalse(app.staticTexts["Species collected"].exists,
+                       "the empty stamp grid renders before the first tick")
     }
 
     /// Spot's whole design is that it never has a dead state: near our trees

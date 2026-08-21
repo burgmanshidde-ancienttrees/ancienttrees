@@ -454,7 +454,7 @@ struct MapTab: View {
     private var searchField: some View {
         HStack(spacing: 8) {
             Image(systemName: "magnifyingglass").foregroundStyle(.secondary)
-            TextField("Search a tree, species or place", text: $query)
+            TextField("Search a place, a tree or a species", text: $query)
                 .textFieldStyle(.plain)
                 .autocorrectionDisabled()
                 .onTapGesture { sheetHeight = .full }

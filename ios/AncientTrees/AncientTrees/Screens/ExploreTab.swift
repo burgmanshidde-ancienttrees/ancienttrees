@@ -41,7 +41,9 @@ struct ExploreTab: View {
                   systemImage: navigator.exploreShowsMap ? "list.bullet" : "map.fill")
                 .font(.brand(15, .bold))
                 .padding(.horizontal, 18)
-                .padding(.vertical, 11)
+                // 44 tall: Apple's floor for a tap target, measured by appfit
+                // rather than eyeballed (it shipped at 40 first).
+                .frame(minHeight: 44)
                 .background(Capsule().fill(Brand.ink))
                 .foregroundStyle(Brand.ground)
         }
