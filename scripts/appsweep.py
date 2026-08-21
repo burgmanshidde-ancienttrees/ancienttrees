@@ -103,9 +103,8 @@ def screens(sub):
     network before there is anything worth photographing.
     """
     return [
-        ("explore",       ["-tab=0"], 4),
-        ("map",           ["-map"], 7),
-        ("saved",         ["-tab=1"], 4),
+        ("map",           ["-tab=0"], 7),
+        ("explore",       ["-tab=1"], 4),
         ("spot",          ["-spot"], 5),
         ("collect",       ["-tab=3"], 4),
         ("profile",       ["-tab=4"], 4),

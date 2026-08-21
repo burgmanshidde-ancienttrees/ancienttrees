@@ -4,11 +4,13 @@
 // centre contributes (free, and it is a BUTTON rather than a place), right
 // owns (where Plus lives).
 //
-// Explore carries the old Home and Map as two modes of one tab behind
-// AllTrails' floating pill; his Home-first ruling from that afternoon survives
-// as the shelves opening the tab. Spot is the Strava/Untappd centre pattern:
-// selecting it presents a sheet and the bar stays where it was. WALK stays a
-// filter on the map and SEASON a pulse on the pins, exactly as before.
+// Map is the tool ("I am here") and Explore is the FEED ("I am on the couch"):
+// two tabs rather than one behind a pill, which is the Komoot split and gives
+// the inspiration shelves an address instead of a toggle. Saved is gone as a
+// tab: hearts and ticks are one idea, so Collect carries both as segments.
+// Spot is the Strava/Untappd centre pattern: selecting it presents a sheet and
+// the bar stays where it was. WALK stays a filter on the map and SEASON a
+// pulse on the pins, exactly as before.
 
 import SwiftUI
 import CoreLocation
@@ -33,15 +35,15 @@ struct ContentView: View {
     /// SwiftUI a fresh array on every read, so a push never settled and tapping
     /// a tree card did nothing at all, on the map AND on Explore. Two UI tests
     /// caught it; nothing in a screenshot could have.
+    @State private var mapPath: [Route] = []
     @State private var explorePath: [Route] = []
-    @State private var savedPath: [Route] = []
     @State private var collectPath: [Route] = []
     @State private var profilePath: [Route] = []
 
     private func path(_ id: Int) -> Binding<[Route]> {
         switch id {
-        case 0: $explorePath
-        case 1: $savedPath
+        case 0: $mapPath
+        case 1: $explorePath
         case 3: $collectPath
         default: $profilePath
         }
@@ -49,8 +51,8 @@ struct ContentView: View {
 
     private func clearPath(_ id: Int) {
         switch id {
-        case 0: explorePath = []
-        case 1: savedPath = []
+        case 0: mapPath = []
+        case 1: explorePath = []
         case 3: collectPath = []
         default: profilePath = []
         }
@@ -196,18 +198,18 @@ struct ContentView: View {
                         if let id = debugTree, let t = cat.tree(id) {
                             TreeDetail(tree: t, catalogue: cat)
                         } else {
-                            ExploreTab(catalogue: cat, origin: origin,
-                                       located: location.coordinate != nil || debugOrigin != nil,
-                                       locationDenied: location.status == .denied || location.status == .restricted,
-                                       onUseMyLocation: { location.request() })
+                            MapTab(catalogue: cat, origin: origin,
+                                   located: location.coordinate != nil || debugOrigin != nil,
+                                   locationDenied: location.status == .denied || location.status == .restricted,
+                                   onUseMyLocation: { location.request() })
                         }
                     }
                         .tag(0)
-                        .tabItem { Label("Explore", systemImage: "magnifyingglass").environment(\.symbolVariants, .none) }
+                        .tabItem { Label("Map", systemImage: "map").environment(\.symbolVariants, .none) }
 
-                    stack(1, cat) { SavedView(catalogue: cat, origin: origin) }
+                    stack(1, cat) { HomeView(catalogue: cat, origin: origin) }
                         .tag(1)
-                        .tabItem { Label("Saved", systemImage: "heart").environment(\.symbolVariants, .none) }
+                        .tabItem { Label("Explore", systemImage: "magnifyingglass").environment(\.symbolVariants, .none) }
 
                     // Never actually shown: the selection binding intercepts 2
                     // and presents the Spot sheet instead.
@@ -235,7 +237,7 @@ struct ContentView: View {
                 .environment(nudge)
                 .environment(navigator)
                 .onChange(of: navigator.showOnMap) { _, new in
-                    if new != nil { tab = 0; navigator.exploreShowsMap = true }
+                    if new != nil { tab = 0 }
                 }
                 // ONE sheet modifier, driven by one optional, because SwiftUI
                 // honours only one per view and stacking three meant the ask
@@ -251,8 +253,14 @@ struct ContentView: View {
                         PaywallView(feature: feature)
                             .environment(entitlement).environment(account).environment(saved)
                     case .spot:
+                        // Account rides along too: the sheet's send path is
+                        // account-gated since 374a838, and a sheet reading an
+                        // observable nobody handed it does not degrade, it
+                        // TRAPS at launch. That crash is what the five-slot
+                        // tests caught after the reshuffle.
                         SpotSheet(catalogue: cat, origin: origin)
                             .environment(saved).environment(navigator)
+                            .environment(account).environment(entitlement)
                     }
                 }
                 .onChange(of: nudge.pending) { _, new in
@@ -333,11 +341,9 @@ struct ContentView: View {
                 // The centre button's sheet, openable without a finger.
                 rootSheet = .spot
             }
-            // -map opens Explore in its map mode, because the pill needs a tap
-            // and simctl has no finger. Debug scaffolding like -tab and -at.
-            if args.contains("-map") {
-                navigator.exploreShowsMap = true
-            }
+            // -map is kept as an alias for the map tab so older recipes and
+            // the sweep lists keep working after the map became tab 0.
+            if args.contains("-map") { tab = 0 }
             // Every change to the collection follows the person to their
             // account, if they have one. Wired here rather than inside Saved so
             // the collection keeps knowing nothing about sign-in.

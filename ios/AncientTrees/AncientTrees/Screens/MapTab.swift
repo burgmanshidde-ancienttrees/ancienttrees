@@ -115,7 +115,9 @@ struct MapTab: View {
     private var listed: [(tree: Tree, km: Double)] {
         let near = catalogue.nearest(to: focus.lat, focus.lng, limit: 60, withinKm: reachKm)
             .filter { filters.keeps($0.tree, month: month) && filters.keepsDistance($0.km) }
-        guard !query.isEmpty else { return near }
+        guard !query.isEmpty else {
+            return Editorial.leadWithAPhotograph(near, photo: { $0.tree.photo != nil })
+        }
         let q = query.lowercased()
         return catalogue.trees
             .filter { $0.name.lowercased().contains(q) || $0.city.lowercased().contains(q)
