@@ -415,6 +415,14 @@ For each new submission:
 4. If it does not verify: do not publish it. Record it in CURATION.md under the submission's city with what is missing, so Hidde or a later run can pick it up.
 5. Either way, append the row id to `data/submissions-processed.json` so it is never handled twice, and note the outcome in CURATION.md.
 
+**Closing the loop (Hidde, 2026-08-21: input is core and never dismissed).** After verifying a submission, the run records what happened and, when the reader left an email, writes their answer:
+
+- Set `outcome` on the row via the service key (PATCH `/rest/v1/submissions?id=eq.N`): `changed`, `holds`, or `open_question`.
+- When `email` is present, compose `reply_text` on the row: one short specific paragraph from the verification record. `changed` says what changed, with the page link. `holds` shows the work and ends in a question back, never "you were wrong": the reader stood there and we did not. `open_question` asks for the specific missing piece (which tree, a photo, a girth). Every reply ends by inviting the answer through /contribute (link prefilled with the tree) and more input generally. `scripts/contributor_reply.py` transports it after mailcheck passes; the run never sends mail itself.
+- Rows whose `why` starts with `vote undone` are bookkeeping from the thumbs' undo: mark them processed, verify nothing, mail nothing.
+- A second report on an already-checked tree reopens the question rather than being waved off with the earlier verdict.
+- Log the exchange in the tree's `verify_notes`, so the next run continues the thread instead of restarting it.
+
 A submitted tree that verifies is worth more than a new city researched from scratch, because it proves someone cares about that city. Process submissions first, then continue with the next pending city if the usage window still allows.
 
 ## The mandate
