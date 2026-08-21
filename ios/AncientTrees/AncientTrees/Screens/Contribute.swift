@@ -41,6 +41,14 @@ struct ContributeView: View {
                         Text("We never publish your name, and we do not ask for it.")
                     }
                     Section {
+                        TextField("Email, if you want to hear back", text: $draft.email)
+                            .keyboardType(.emailAddress)
+                            .textInputAutocapitalization(.never)
+                            .autocorrectionDisabled()
+                    } footer: {
+                        Text("Optional. Leave it so we can ask a question if we need to, and tell you what your tip changed. We use it for nothing else.")
+                    }
+                    Section {
                         Button {
                             Task {
                                 sending = true
