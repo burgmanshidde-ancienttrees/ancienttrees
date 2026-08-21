@@ -7,12 +7,17 @@ one of the core features and gets treated with care).
 Two mail kinds, both from "Ancient Trees" via the outreach SMTP creds, with
 standing approval given in session for exactly these two:
 
-  THANK-YOU  templated, to any submission row with an email and no
-             thanked_at. Sent once per address per day however many rows the
+  THANK-YOU  templated, to any submission row we can answer and that has no
+             thanked_at. Sent once per address however many rows a
              double-submit left.
-  ANSWER     the run-composed reply_text, to rows with an email, a
-             reply_text, and no replied_at. mailcheck.py gates every one;
-             a failing draft is held and printed, never sent.
+  ANSWER     the run-composed reply_text, to answerable rows with no
+             replied_at. mailcheck.py gates every one; a failing draft is
+             held and printed, never sent.
+
+Answerable means: the row carries a user_id (feedback is account-gated since
+2026-08-21, the Google Maps convention, so the account is the reply channel;
+the address is resolved from it at send time and never stored twice) or, for
+older rows, a typed email.
 
 DRY RUN by default; --send sends. Missing env prints and exits 0, so a CI
 step can always call it. State lives in the submissions columns, so a lost
@@ -31,7 +36,6 @@ import smtplib
 import subprocess
 import sys
 import tempfile
-import urllib.parse
 import urllib.request
 from email.message import EmailMessage
 
@@ -103,19 +107,41 @@ def main():
 
     try:
         rows = supa("/rest/v1/submissions?select=id,created_at,kind,city,tree,"
-                    "why,email,outcome,reply_text,thanked_at,replied_at"
-                    "&email=not.is.null&order=created_at.asc", key)
+                    "why,user_id,email,outcome,reply_text,thanked_at,replied_at"
+                    "&or=(user_id.not.is.null,email.not.is.null)"
+                    "&order=created_at.asc", key)
     except Exception as e:
-        # Before Hidde pastes the SQL the email column does not exist and this
+        # Before Hidde pastes the SQL these columns do not exist and this
         # select 400s; that is the expected state, not an error worth a red run.
         print("contributor_reply: submissions not readable yet (%s)" % str(e)[:80])
         return 0
-    rows = [r for r in rows or [] if (r.get("email") or "").strip()]
+    rows = rows or []
+
+    # The account IS the reply channel (2026-08-21 ruling): resolve user_id
+    # to the account's email at send time, storing no second copy. The email
+    # column is the legacy/fallback path only.
+    users = {}
+    page = 1
+    while page <= 10:
+        got = supa("/auth/v1/admin/users?page=%d&per_page=1000" % page, key)
+        batch = (got or {}).get("users") or []
+        for u in batch:
+            if u.get("id") and u.get("email"):
+                users[u["id"]] = u["email"]
+        if len(batch) < 1000:
+            break
+        page += 1
+
+    def address(r):
+        return ((r.get("email") or "").strip()
+                or users.get(r.get("user_id") or "", "")).strip()
 
     jobs = []  # (row, subject, body, column_to_stamp)
     thanked_addrs = set()
     for r in rows:
-        addr = r["email"].strip().lower()
+        addr = address(r).lower()
+        if not addr:
+            continue
         why = (r.get("why") or "")
         if r.get("kind") == "privacy":
             print("PRIVACY row %s from %s: handle in session, never auto-mail"
@@ -139,7 +165,7 @@ def main():
 
     server = None
     for r, subject, body, stamp in jobs:
-        addr = r["email"].strip()
+        addr = address(r)
         low = addr.lower()
         if low in dnc or ("@" + low.split("@")[-1]) in dnc:
             print("SKIP %s: on the do-not-contact list, never overridden" % low)
@@ -165,10 +191,13 @@ def main():
         sent_today += 1
         now = datetime.datetime.now(datetime.timezone.utc).isoformat()
         # Stamp every row of this address needing this stamp, so the
-        # double-submit's siblings are covered by the one mail.
+        # double-submit's siblings are covered by the one mail. The address
+        # may come from either column, so match rows by resolving each.
         if stamp == "thanked_at":
-            supa("/rest/v1/submissions?email=eq.%s&thanked_at=is.null"
-                 % urllib.parse.quote(addr), key, "PATCH", {"thanked_at": now})
+            sibling_ids = [str(r2["id"]) for r2 in rows
+                           if address(r2).lower() == low and not r2.get("thanked_at")]
+            supa("/rest/v1/submissions?id=in.(%s)" % ",".join(sibling_ids),
+                 key, "PATCH", {"thanked_at": now})
         else:
             supa("/rest/v1/submissions?id=eq.%s" % r["id"], key, "PATCH",
                  {"replied_at": now})

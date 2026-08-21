@@ -9,6 +9,8 @@ import { fitTitle } from "../lib/title";
 import { submitLink } from "../lib/tree-copy";
 import { byCityListOrder } from "../lib/city-order";
 import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
+import SignInModal from "../components/SignInModal.astro";
+import { SIGNIN_JS } from "../lib/signin-js";
 
 const canonical = `${BASE_URL}/contribute`;
 const title = fitTitle(["Become Your City's Tree Guide", "Map Your City's Ancient Trees"], canonical);
@@ -58,11 +60,9 @@ const headExtra = ldScript(graph);
     <label>Your name <span class="sg-hint">Optional. Never shown on the site.</span>
       <input type="text" id="sg-name" placeholder="First name is fine">
     </label>
-    <label>Your email <span class="sg-hint">Optional. Leave it so we can ask a question if we need to, and tell you what your tip changed. We use it for nothing else.</span>
-      <input type="email" id="sg-email" placeholder="you@example.com">
-    </label>
     <button type="submit" class="go-btn">Send it in</button>
     <p class="sg-note" id="sg-note"></p>
+    <p class="sg-fine">Sending needs a free account, one email and no password, so we can thank you, ask a question if we need to, and tell you what your tip changed. Privacy requests need no account.</p>
   </form>
 
   <h2>What helps most</h2>
@@ -81,11 +81,20 @@ const headExtra = ldScript(graph);
     <Fragment>{i > 0 && <Fragment set:html=" &middot; " />}<a href={`/${p.slug}`}>{p.city}</a></Fragment>
   ))}</p>
 </main>
+<SignInModal />
 <Fragment slot="scripts" set:html={`
 <script>
 (function() {
   var f = document.getElementById('suggest'), note = document.getElementById('sg-note');
   if (!f) return;
+  var FIELDS = ['sg-kind', 'sg-city', 'sg-tree', 'sg-where', 'sg-why', 'sg-name'];
+  var DRAFT = 'at_contribute_draft';
+  function session() {
+    try {
+      var s = JSON.parse(localStorage.getItem('ancienttrees_session'));
+      return (s && s.expires_at > Date.now() / 1000) ? s : null;
+    } catch (e) { return null; }
+  }
   var params = new URLSearchParams(location.search);
   var kind = params.get('kind');
   var map = {tree: 'tree', city: 'city', home: 'city', correction: 'correction', privacy: 'privacy'};
@@ -93,6 +102,16 @@ const headExtra = ldScript(graph);
   // the page the reader came from already knows the city and the tree
   if (params.get('city')) { document.getElementById('sg-city').value = params.get('city'); }
   if (params.get('tree')) { document.getElementById('sg-tree').value = params.get('tree'); }
+  // A draft survives the sign-in round trip: the magic link reloads this
+  // page, and eating a paragraph someone typed would be the worst possible
+  // answer to "please sign in".
+  try {
+    var d = JSON.parse(localStorage.getItem(DRAFT));
+    if (d) FIELDS.forEach(function(id) {
+      var el = document.getElementById(id);
+      if (el && d[id] && !el.value) el.value = d[id];
+    });
+  } catch (e) {}
   var btn = f.querySelector('button[type="submit"]');
   var inFlight = false;
   f.addEventListener('submit', function(e) {
@@ -100,46 +119,57 @@ const headExtra = ldScript(graph);
     if (inFlight) return;
     var city = document.getElementById('sg-city').value.trim();
     if (!city) return;
+    var kindNow = document.getElementById('sg-kind').value;
+    var s = session();
+    // The gate (Hidde, 2026-08-21, the Google Maps convention): anyone can
+    // see and fill the form, sending needs the account that lets us answer.
+    // A privacy request is the one exception: asking for your data back can
+    // never require creating an account first.
+    if (!s && kindNow !== 'privacy') {
+      var draft = {};
+      FIELDS.forEach(function(id) { draft[id] = document.getElementById(id).value; });
+      try { localStorage.setItem(DRAFT, JSON.stringify(draft)); } catch (e) {}
+      note.textContent = 'Almost there: sign in and press send again. What you typed is kept.';
+      if (window.atOpenSignIn) window.atOpenSignIn();
+      return;
+    }
     // One press, one row: the Toulouse correction of 2026-08-20 arrived as
     // three identical rows because nothing stopped the extra presses.
     inFlight = true; btn.disabled = true; btn.textContent = 'Sending...';
     note.textContent = '';
     at.track('suggestion-submit');
-    var payload = {
-      kind: document.getElementById('sg-kind').value,
-      city: city,
-      tree: document.getElementById('sg-tree').value.trim(),
-      location_hint: document.getElementById('sg-where').value.trim(),
-      why: document.getElementById('sg-why').value.trim(),
-      name: document.getElementById('sg-name').value.trim(),
-      page: document.referrer || null
-    };
-    var email = document.getElementById('sg-email').value.trim();
-    if (email) payload.email = email;
-    function post(body) {
-      return fetch('${SUPABASE_URL}/rest/v1/submissions', {
-        method: 'POST',
-        headers: {'apikey': '${SUPABASE_KEY}', 'Content-Type': 'application/json', 'Prefer': 'return=minimal'},
-        body: JSON.stringify(body)
-      });
-    }
-    function fail() {
-      inFlight = false; btn.disabled = false; btn.textContent = 'Send it in';
-      note.textContent = 'That did not go through. Try again in a moment.';
-    }
-    post(payload).then(function(r) {
-      // If the email column does not exist yet the insert 400s; the tree
-      // matters more than the address, so retry without it rather than lose it.
-      if (!r.ok && payload.email) { delete payload.email; return post(payload); }
-      return r;
+    var headers = {'apikey': '${SUPABASE_KEY}', 'Content-Type': 'application/json', 'Prefer': 'return=minimal'};
+    if (s) headers['Authorization'] = 'Bearer ' + s.access_token;
+    fetch('${SUPABASE_URL}/rest/v1/submissions', {
+      method: 'POST',
+      headers: headers,
+      body: JSON.stringify({
+        kind: kindNow,
+        city: city,
+        tree: document.getElementById('sg-tree').value.trim(),
+        location_hint: document.getElementById('sg-where').value.trim(),
+        why: document.getElementById('sg-why').value.trim(),
+        name: document.getElementById('sg-name').value.trim(),
+        page: document.referrer || null
+      })
     }).then(function(r) {
       if (r.ok) {
         f.hidden = true;
-        note.textContent = 'Thank you. Everything sent in is verified against independent sources; confirmed trees go live.';
-      } else { fail(); }
-    }).catch(fail);
+        try { localStorage.removeItem(DRAFT); } catch (e) {}
+        note.textContent = kindNow === 'privacy'
+          ? 'Received. It reaches the people who run this site.'
+          : 'Thank you. Everything sent in is verified against independent sources; confirmed trees go live, and you will hear what your tip changed.';
+      } else {
+        inFlight = false; btn.disabled = false; btn.textContent = 'Send it in';
+        note.textContent = 'That did not go through. Try again in a moment.';
+      }
+    }).catch(function() {
+      inFlight = false; btn.disabled = false; btn.textContent = 'Send it in';
+      note.textContent = 'No connection. Try again in a moment.';
+    });
   });
 })();
 </script>
+${SIGNIN_JS}
 `} />
 </Base>

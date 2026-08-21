@@ -18,6 +18,18 @@
 // complete without a reason, and the standalone report button stays for the
 // up-voter who spotted a wrong pin.
 //
+// And gated behind sign-in, same day, after the convention check he asked
+// for: Google Maps, AllTrails, Waze and Apple Maps all require an account to
+// contribute, because the account IS the reply channel and the authenticity
+// check; only civic tools like FixMyStreet take anonymous reports, and they
+// make an email mandatory instead. His ruling: "people can see the options
+// but have to login to actually give feedback." So the controls render for
+// everyone, and the first tap while signed out opens the one sign-in dialog
+// (atOpenSignIn) instead of counting. Unlike a save, nothing happens locally
+// first: a vote that only existed in one browser would be a lie in the tally.
+// Signed-in posts carry the user's token, so the row arrives with auth.uid()
+// and the reply loop needs no typed email.
+//
 // Where a report goes: the same Supabase submissions table the /contribute form
 // posts to (live since 2026-07-31), kind 'feedback', tree id and city prefilled
 // from the control's own data attributes. Step 0b reads that table, so dead and
@@ -31,12 +43,21 @@ import { SUPABASE_URL, SUPABASE_KEY } from "./site-config";
 export const WORTHIT_JS = `
 <script>
 (function() {
+  function session() {
+    try {
+      var s = JSON.parse(localStorage.getItem('ancienttrees_session'));
+      return (s && s.expires_at > Date.now() / 1000) ? s : null;
+    } catch (e) { return null; }
+  }
   function send(box, verdict, reason) {
+    var s = session();
+    if (!s) return;
     var tree = box.dataset.tree, city = box.dataset.city, name = box.dataset.name;
     try {
       fetch('${SUPABASE_URL}/rest/v1/submissions', {
         method: 'POST',
-        headers: {'apikey': '${SUPABASE_KEY}', 'Content-Type': 'application/json', 'Prefer': 'return=minimal'},
+        headers: {'apikey': '${SUPABASE_KEY}', 'Authorization': 'Bearer ' + s.access_token,
+                  'Content-Type': 'application/json', 'Prefer': 'return=minimal'},
         body: JSON.stringify({
           kind: 'feedback',
           city: city,
@@ -90,6 +111,13 @@ export const WORTHIT_JS = `
     var box = btn.closest('.worthit');
     if (!box) return;
     var tree = box.dataset.tree;
+
+    // The gate: options visible to everyone, acting needs the account.
+    // Opening the why-list stays free (it is looking, not acting).
+    if (!session() && !btn.classList.contains('worthit-report')) {
+      if (window.atOpenSignIn) window.atOpenSignIn(box.dataset.name);
+      return;
+    }
 
     if (btn.classList.contains('worthit-report')) {
       var why = box.querySelector('.worthit-why');

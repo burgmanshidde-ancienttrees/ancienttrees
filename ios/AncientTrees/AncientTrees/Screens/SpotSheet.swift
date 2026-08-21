@@ -17,12 +17,14 @@ struct SpotSheet: View {
     let catalogue: Catalogue
     let origin: (lat: Double, lng: Double)
     @Environment(Saved.self) private var saved
+    @Environment(Account.self) private var account
     @Environment(\.dismiss) private var dismiss
     @State private var adding = false
     @State private var why = ""
     @State private var sending = false
     @State private var sent: Bool?
     @State private var ticked: Tree?
+    @State private var signingIn = false
 
     /// The split the whole sheet stands on: what is close enough to be the
     /// tree the person is standing before. 400 metres is deliberately wide,
@@ -75,6 +77,9 @@ struct SpotSheet: View {
         .accessibilityIdentifier("spot-sheet")
         .presentationDetents([.medium, .large])
         .presentationDragIndicator(.visible)
+        .sheet(isPresented: $signingIn) {
+            SignInSheet(reason: .feedback, localCount: saved.savedCount)
+        }
     }
 
     // MARK: - Tick a tree we map
@@ -188,7 +193,12 @@ struct SpotSheet: View {
                     .font(.footnote)
                     .foregroundStyle(Brand.inkSoft)
             }
-            Button { Task { await send() } } label: {
+            // The form is visible to everyone; sending needs the account that
+            // lets us answer (2026-08-21, the Google Maps convention).
+            Button {
+                if account.isSignedIn { Task { await send() } }
+                else { signingIn = true }
+            } label: {
                 HStack {
                     Spacer()
                     if sending { ProgressView().tint(.white) }
@@ -215,7 +225,8 @@ struct SpotSheet: View {
         d.why = why
         d.locationHint = String(format: "%.5f, %.5f (GPS)", origin.lat, origin.lng)
         d.city = nearbyCityName ?? ""
-        let ok = await Submission.send(d, from: "app:spot")
+        let ok = await Submission.send(d, from: "app:spot",
+                                       token: account.session?.accessToken)
         sending = false
         withAnimation(.snappy) { sent = ok }
     }

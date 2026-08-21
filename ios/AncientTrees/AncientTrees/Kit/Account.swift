@@ -308,6 +308,8 @@ public enum SignInReason: Equatable, Identifiable {
     case keepTree(String)        // just ticked or saved this one
     case keepCollection(Int)     // has this many and nothing backing them up
     case seasonAlerts
+    case feedback                // votes, reports and tips need the account
+                                 // that lets us answer (2026-08-21 ruling)
 
     var headline: String {
         switch self {
@@ -320,6 +322,7 @@ public enum SignInReason: Equatable, Identifiable {
         case .keepTree: "That one is yours"
         case .keepCollection(let n): n == 1 ? "Keep your tree safe" : "Keep your \(n) trees safe"
         case .seasonAlerts: "Be told when a tree near you peaks"
+        case .feedback: "Sign in to have your say"
         }
     }
 
@@ -333,6 +336,8 @@ public enum SignInReason: Equatable, Identifiable {
             "They live on this phone only. Lose it, replace it, or reinstall, and they are gone. An account keeps them, and puts them on the website too."
         case .seasonAlerts:
             "We can only tell you about a tree if we know where to reach you."
+        case .feedback:
+            "Every vote, correction and tip gets checked and answered, and the account is how the answer reaches you. One email, no password."
         }
     }
 }

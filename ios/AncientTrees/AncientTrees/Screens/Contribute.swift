@@ -6,10 +6,12 @@ struct ContributeView: View {
     var about: Tree?
 
     @Environment(\.dismiss) private var dismiss
+    @Environment(Account.self) private var account
     @State private var draft = Submission.Draft()
     @State private var sending = false
     @State private var sent = false
     @State private var failed = false
+    @State private var signingIn = false
 
     var body: some View {
         NavigationStack {
@@ -18,7 +20,7 @@ struct ContributeView: View {
                     Section {
                         Label("Thank you", systemImage: "checkmark.seal.fill")
                             .font(.headline)
-                        Text("Everything sent in is checked against independent sources before it goes live, and a wrong pin gets looked at the same day.")
+                        Text("Everything sent in is checked against independent sources before it goes live, and a wrong pin gets looked at the same day. You will hear what your tip changed.")
                             .font(.footnote).foregroundStyle(.secondary)
                     }
                 } else {
@@ -41,18 +43,15 @@ struct ContributeView: View {
                         Text("We never publish your name, and we do not ask for it.")
                     }
                     Section {
-                        TextField("Email, if you want to hear back", text: $draft.email)
-                            .keyboardType(.emailAddress)
-                            .textInputAutocapitalization(.never)
-                            .autocorrectionDisabled()
-                    } footer: {
-                        Text("Optional. Leave it so we can ask a question if we need to, and tell you what your tip changed. We use it for nothing else.")
-                    }
-                    Section {
+                        // Visible to everyone; sending needs the account that
+                        // lets us answer (2026-08-21, the Google Maps
+                        // convention: the account is the reply channel).
                         Button {
+                            guard account.isSignedIn else { signingIn = true; return }
                             Task {
                                 sending = true
-                                let ok = await Submission.send(draft, from: about?.url)
+                                let ok = await Submission.send(draft, from: about?.url,
+                                                               token: account.session?.accessToken)
                                 sending = false
                                 if ok { sent = true } else { failed = true }
                             }
@@ -67,6 +66,10 @@ struct ContributeView: View {
                         if failed {
                             Text("That did not go through. Try again in a moment.")
                                 .font(.footnote).foregroundStyle(.red)
+                        }
+                    } footer: {
+                        if !account.isSignedIn {
+                            Text("Sending needs a free account, one email and no password, so we can thank you, ask a question if we need to, and tell you what your tip changed.")
                         }
                     }
                 }
@@ -83,6 +86,9 @@ struct ContributeView: View {
                     draft.city = t.city
                     draft.tree = t.name
                 }
+            }
+            .sheet(isPresented: $signingIn) {
+                SignInSheet(reason: .feedback, localCount: 0)
             }
         }
     }

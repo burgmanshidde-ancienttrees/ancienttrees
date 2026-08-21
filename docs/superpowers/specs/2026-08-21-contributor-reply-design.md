@@ -1,5 +1,30 @@
 # Contributor reply loop — design
 
+## Revised the same day: feedback is account-gated, the email field is gone
+
+Hidde asked for the competitor check on the email question and then ruled:
+"create the same flows where people can see the options but have to login to
+actually give feedback." The check: Google Maps, AllTrails, Waze and Apple
+Maps all require an account to contribute (the account is the reply channel
+and the authenticity check, nobody types an email); only civic tools like
+FixMyStreet take anonymous reports, and they make email mandatory instead.
+We follow the consumer-map convention:
+
+- Every feedback control renders for everyone; the first act while signed
+  out opens the one sign-in surface (web: `atOpenSignIn`; app:
+  `SignInSheet(reason: .feedback)`). Nothing is counted locally first.
+- Signed-in posts carry the user's token, so rows arrive with `user_id`
+  (column default `auth.uid()`), and the reply script resolves the address
+  from the account at send time. No typed email field on either surface;
+  the email column stays as legacy/fallback only.
+- The web form persists the typed draft in localStorage across the
+  magic-link round trip, so signing in never eats a submission.
+- The one ungated kind is `privacy`: asking for your data back can never
+  require creating an account first.
+
+Sections below describe the original optional-email design where they
+conflict, this revision wins.
+
 Date: 2026-08-21. Ruled by Hidde in session: "this process of user giving
 input is one of the core features of our platform and must be treated with
 care - we should thank them ask out their email if they want to give and give
