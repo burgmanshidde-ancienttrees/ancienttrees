@@ -55,8 +55,11 @@ const headExtra = ldScript(graph);
     <label>Why is it remarkable?
       <textarea id="sg-why" rows="3" placeholder="Old, huge, a story attached, or simply the tree everyone knows"></textarea>
     </label>
-    <label>Your name <span class="sg-hint">Optional, and only so we can write back. Never shown on the site.</span>
+    <label>Your name <span class="sg-hint">Optional. Never shown on the site.</span>
       <input type="text" id="sg-name" placeholder="First name is fine">
+    </label>
+    <label>Your email <span class="sg-hint">Optional. Leave it so we can ask a question if we need to, and tell you what your tip changed. We use it for nothing else.</span>
+      <input type="email" id="sg-email" placeholder="you@example.com">
     </label>
     <button type="submit" class="go-btn">Send it in</button>
     <p class="sg-note" id="sg-note"></p>
@@ -90,32 +93,51 @@ const headExtra = ldScript(graph);
   // the page the reader came from already knows the city and the tree
   if (params.get('city')) { document.getElementById('sg-city').value = params.get('city'); }
   if (params.get('tree')) { document.getElementById('sg-tree').value = params.get('tree'); }
+  var btn = f.querySelector('button[type="submit"]');
+  var inFlight = false;
   f.addEventListener('submit', function(e) {
     e.preventDefault();
+    if (inFlight) return;
     var city = document.getElementById('sg-city').value.trim();
     if (!city) return;
-    note.textContent = 'Sending...';
+    // One press, one row: the Toulouse correction of 2026-08-20 arrived as
+    // three identical rows because nothing stopped the extra presses.
+    inFlight = true; btn.disabled = true; btn.textContent = 'Sending...';
+    note.textContent = '';
     at.track('suggestion-submit');
-    fetch('${SUPABASE_URL}/rest/v1/submissions', {
-      method: 'POST',
-      headers: {'apikey': '${SUPABASE_KEY}', 'Content-Type': 'application/json', 'Prefer': 'return=minimal'},
-      body: JSON.stringify({
-        kind: document.getElementById('sg-kind').value,
-        city: city,
-        tree: document.getElementById('sg-tree').value.trim(),
-        location_hint: document.getElementById('sg-where').value.trim(),
-        why: document.getElementById('sg-why').value.trim(),
-        name: document.getElementById('sg-name').value.trim(),
-        page: document.referrer || null
-      })
+    var payload = {
+      kind: document.getElementById('sg-kind').value,
+      city: city,
+      tree: document.getElementById('sg-tree').value.trim(),
+      location_hint: document.getElementById('sg-where').value.trim(),
+      why: document.getElementById('sg-why').value.trim(),
+      name: document.getElementById('sg-name').value.trim(),
+      page: document.referrer || null
+    };
+    var email = document.getElementById('sg-email').value.trim();
+    if (email) payload.email = email;
+    function post(body) {
+      return fetch('${SUPABASE_URL}/rest/v1/submissions', {
+        method: 'POST',
+        headers: {'apikey': '${SUPABASE_KEY}', 'Content-Type': 'application/json', 'Prefer': 'return=minimal'},
+        body: JSON.stringify(body)
+      });
+    }
+    function fail() {
+      inFlight = false; btn.disabled = false; btn.textContent = 'Send it in';
+      note.textContent = 'That did not go through. Try again in a moment.';
+    }
+    post(payload).then(function(r) {
+      // If the email column does not exist yet the insert 400s; the tree
+      // matters more than the address, so retry without it rather than lose it.
+      if (!r.ok && payload.email) { delete payload.email; return post(payload); }
+      return r;
     }).then(function(r) {
       if (r.ok) {
         f.hidden = true;
         note.textContent = 'Thank you. Everything sent in is verified against independent sources; confirmed trees go live.';
-      } else {
-        note.textContent = 'That did not go through. Try again in a moment.';
-      }
-    }).catch(function() { note.textContent = 'No connection. Try again in a moment.'; });
+      } else { fail(); }
+    }).catch(fail);
   });
 })();
 </script>
