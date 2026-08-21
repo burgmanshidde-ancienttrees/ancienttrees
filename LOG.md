@@ -90,6 +90,40 @@ findings on runs 32476429195 and 32478930343 (each green on the half the
 other was not); run 32481289239 on the final commit is the first fully
 green run of this workflow: 16 passed, 0 failed, 0 findings, 23 minutes.
 
+**Merged onto the main that moved underneath (bdcd7c8 and after).** Main
+had meanwhile made Map tab 0, Explore the feed at tab 1, deleted the pill,
+folded Saved into Collect, added walk mode, fixed the same Spot crash its
+own way and added `-reset-collection`. So the pill test is gone with the
+pill, the shelf test launches `-tab=1`, the sweep's list is main's with my
+root identifiers (walk mode measured under `walk-mode`), and
+`-reset-collection` is the one wipe argument; my `-reset` never shipped.
+The merge's first SE run then failed two more tests, and the screenshot
+explained it: the simulator was on its side. The launch tests run once per
+UI configuration, landscape included, and on one shared simulator the last
+orientation stays. Every test class and the sweep now start in portrait,
+and the launch tests launch with the same fixed origin as everything else
+so no location dialog is left on the shared simulator either. One more,
+read from XCTest's own screen recording of the failure: the sheet test's
+second gesture was aimed at the search field's frame a moment after the
+first drag, while the sheet was still springing, and landed on the tall
+photo card main now puts first, which opened the tree. Every gesture in
+that test now starts from a settled frame (two reads 0.4 s apart that
+agree), and no assertion message reads a frame that may be gone.
+
+**And the test was right all along: it had found two app bugs on the SE.**
+Staged diagnostics (a long press alone, then drags, frames attached) put
+the first card's tappable frame at y=369.5 under a search field whose
+centre is y=370. A card's photograph is drawn with .fill inside a 190
+point box and `.clipped()` clips the drawing only, so every photo card was
+tappable 33 points above and below its visible edges: through the lower
+half of the search field above it, and into the top of the next card.
+TreeCard's content shape is the visible card now and the photograph is
+hidden from accessibility. Second: at full height on a 667 point phone the
+sheet's top was 53 points down and its search field sat under the floating
+chip row, unreachable; full now stops 124 points short of the top. Neither
+shows on a 17 Pro, which is the phone the app was being looked at on.
+Re-verified on the merge: both phones green, 0 findings.
+
 FOR HIDDE: the three gate changes above loosen what the app's layout check
 sees, and your ratchet says removing a check needs you. None is removed,
 but nav-bar exemption, sheet isolation and the 0.957 read-back are calls I

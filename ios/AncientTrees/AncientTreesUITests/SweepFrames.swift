@@ -56,6 +56,9 @@ final class SweepFrames: XCTestCase {
     @MainActor
     func testDumpEveryScreensFrames() throws {
         continueAfterFailure = true
+        // Portrait: the launch tests may have left the simulator on its side.
+        XCUIDevice.shared.orientation = .portrait
+        XCUIDevice.shared.appearance = .light
         var dump = ""
         for (name, extra, root) in Self.screens {
             let app = XCUIApplication()

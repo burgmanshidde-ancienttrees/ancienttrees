@@ -43,7 +43,12 @@ enum SheetHeight: CaseIterable {
         // sliced in half, which is what the sheet is entirely for.
         case .peek: 268
         case .half: total * 0.52
-        case .full: total * 0.92
+        // Full stops 124 points short of the top, never 8 percent of it: on
+        // an iPhone SE 8 percent is 53 points, and the sheet's search field
+        // then sat under the floating chip row, which is 116 points deep.
+        // A field you cannot reach at full height is no field (2026-08-21,
+        // found by a UI test whose second press kept landing on a chip).
+        case .full: min(total * 0.92, total - 124)
         }
     }
 }
