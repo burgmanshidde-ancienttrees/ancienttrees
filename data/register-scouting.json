@@ -9,6 +9,12 @@
  },
  "places": [
   {
+   "place": "Reykjavik",
+   "country": "Iceland",
+   "status": "empty",
+   "note": "SCOUTED 2026-08-21 (night run). No semantically filtered heritage/protected-tree register found. Iceland's nature protection law (log um natturuvernd) lets a single tree be designated a 'natturumyndun' but no searchable list of which trees hold that status turned up. Land og skogur (the merged Skograektin/Landgraedsla, formerly the forestry service) runs an annual 'Tre arsins' (Tree of the Year) honour since 1989, one tree per year nationwide, which is a lead list not a register: no coordinates or dataset, just a name per year on their site. monumentaltrees.com carries an Iceland height-records page (fact-verification only, hard rule 1 forbids reuse). No open-data portal, ArcGIS layer or municipal catalogue found for Reykjavik specifically. Route forward is from-zero web research on Reykjavik's own parks (Hljomskalagardur, Laugardalur, the botanical garden) plus the Tre arsins list as a lead, not a register import."
+  },
+  {
    "place": "Toronto",
    "country": "Canada",
    "status": "stalled",
