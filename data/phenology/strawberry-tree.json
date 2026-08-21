@@ -1,0 +1,62 @@
+{
+ "common_name": "Strawberry Tree",
+ "habit": "evergreen",
+ "leaf": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12
+ ],
+ "flowers": [
+  10,
+  11,
+  12
+ ],
+ "fruit": [
+  10,
+  11,
+  12
+ ],
+ "colour": [],
+ "bare": [],
+ "intensity": {
+  "flowers": "striking",
+  "fruit": "worth the trip"
+ },
+ "flower_label": "clusters of small white bells hang down through late autumn",
+ "flower_colour": "#F7F3E8",
+ "flower_peak": 11,
+ "flower_days": "six to eight weeks, overlapping the fruit",
+ "fruit_label": "the fruit takes a full twelve months to ripen, so last year's crop turns scarlet on the same branches that are flowering now: white bells and red berries on one tree, which almost nothing else does",
+ "peak": {
+  "moment": "fruit",
+  "months": [
+   12
+  ],
+  "share": true,
+  "map": {
+   "effect": "fruit-drop",
+   "colour": "#D2422C",
+   "pulse": true
+  },
+  "surfaces": [
+   "map",
+   "push",
+   "tree",
+   "city"
+  ]
+ },
+ "sources": [
+  "https://www.rhs.org.uk/plants/1473/arbutus-unedo/details",
+  "https://botanicgardens.uw.edu/about/blog/2016/11/26/december-2016-plant-profile-arbutus-unedo/",
+  "https://pfaf.org/user/cmspage.aspx?pageid=55"
+ ]
+}

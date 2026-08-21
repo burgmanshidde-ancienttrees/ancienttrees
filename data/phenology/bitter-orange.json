@@ -1,0 +1,60 @@
+{
+ "common_name": "Bitter Orange",
+ "habit": "evergreen",
+ "leaf": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12
+ ],
+ "flowers": [
+  4,
+  5
+ ],
+ "fruit": [
+  12,
+  1,
+  2
+ ],
+ "colour": [],
+ "bare": [],
+ "intensity": {
+  "flowers": "worth the trip",
+  "fruit": "worth the trip"
+ },
+ "flower_label": "azahar: small waxy white flowers whose scent fills a whole street, and in Seville it is the smell people plan a trip around",
+ "flower_colour": "#FCF9F0",
+ "flower_peak": 4,
+ "flower_days": "two to three weeks, and the scent carries further than the flowers show",
+ "fruit_label": "the fruit hangs bright orange against dark evergreen leaves through midwinter, ripe from November and picked in January and February",
+ "peak": {
+  "moment": "fruit",
+  "months": [
+   2
+  ],
+  "share": true,
+  "map": {
+   "effect": "fruit-drop",
+   "colour": "#E8862A",
+   "pulse": true
+  },
+  "surfaces": [
+   "map",
+   "push",
+   "tree",
+   "city"
+  ]
+ },
+ "sources": [
+  "https://www.alhambra-patronato.es/en/elemento-del-mes/the-bitter-orange",
+  "https://plantura.garden/uk/fruits/bitter-orange/bitter-orange-overview"
+ ]
+}
