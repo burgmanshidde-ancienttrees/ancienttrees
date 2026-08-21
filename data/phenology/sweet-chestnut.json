@@ -41,5 +41,23 @@
  "flower_label": "long cream catkins cover the whole crown at midsummer, with a heavy sweet smell that people either like or very much do not",
  "flower_colour": "#EFE7C4",
  "flower_peak": 7,
- "flower_days": "two to three weeks"
+ "flower_days": "two to three weeks",
+ "peak": {
+  "moment": "fruit",
+  "months": [
+   10
+  ],
+  "share": true,
+  "map": {
+   "effect": "fruit-drop",
+   "colour": "#8C6239",
+   "pulse": true
+  },
+  "surfaces": [
+   "map",
+   "push",
+   "tree",
+   "city"
+  ]
+ }
 }

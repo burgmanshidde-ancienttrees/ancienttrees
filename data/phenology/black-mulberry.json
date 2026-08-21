@@ -1,40 +1,58 @@
 {
-  "common_name": "Black Mulberry",
-  "habit": "deciduous",
-  "leaf": [
-    5,
-    6,
-    7,
-    8,
-    9,
-    10
+ "common_name": "Black Mulberry",
+ "habit": "deciduous",
+ "leaf": [
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "flowers": [
+  5
+ ],
+ "fruit": [
+  7,
+  8
+ ],
+ "colour": [
+  10
+ ],
+ "bare": [
+  11,
+  12,
+  1,
+  2,
+  3,
+  4
+ ],
+ "intensity": {
+  "flowers": "unseen",
+  "fruit": "worth the trip",
+  "colour": "nice"
+ },
+ "fruit_label": "dark fruit that stains everything under the tree",
+ "sources": [
+  "https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/a-z-of-british-trees/",
+  "https://www.treesandshrubsonline.org/"
+ ],
+ "peak": {
+  "moment": "fruit",
+  "months": [
+   7
   ],
-  "flowers": [
-    5
-  ],
-  "fruit": [
-    7,
-    8
-  ],
-  "colour": [
-    10
-  ],
-  "bare": [
-    11,
-    12,
-    1,
-    2,
-    3,
-    4
-  ],
-  "intensity": {
-    "flowers": "unseen",
-    "fruit": "worth the trip",
-    "colour": "nice"
+  "share": true,
+  "map": {
+   "effect": "fruit-drop",
+   "colour": "#5B2540",
+   "pulse": true
   },
-  "fruit_label": "dark fruit that stains everything under the tree",
-  "sources": [
-    "https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/a-z-of-british-trees/",
-    "https://www.treesandshrubsonline.org/"
+  "surfaces": [
+   "map",
+   "push",
+   "tree",
+   "city"
   ]
+ }
 }

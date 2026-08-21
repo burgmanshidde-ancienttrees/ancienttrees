@@ -41,5 +41,23 @@
  ],
  "flower_colour": "#BCC77E",
  "flower_peak": 5,
- "flower_days": "a week or two"
+ "flower_days": "a week or two",
+ "peak": {
+  "moment": "fruit",
+  "months": [
+   9
+  ],
+  "share": true,
+  "map": {
+   "effect": "catkins",
+   "colour": "#8A9A4B",
+   "pulse": true
+  },
+  "surfaces": [
+   "map",
+   "push",
+   "tree",
+   "city"
+  ]
+ }
 }
