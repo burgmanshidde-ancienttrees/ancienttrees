@@ -39,6 +39,14 @@ struct TreeCard: View {
         }
         .background(Brand.surface)
         .clipShape(.rect(cornerRadius: corner))
+        // The tap area is the visible card and nothing more. The photograph
+        // is drawn with .fill inside a 190 point box and .clipped() clips the
+        // DRAWING only: the image still measured 33 points above and below
+        // the card for hit-testing, so the first card in the map's sheet was
+        // tappable through the lower half of the search field above it, and
+        // a press on the field opened the tree (the SE, 2026-08-21, found by
+        // a UI test that kept landing on a tree page it never asked for).
+        .contentShape(.rect(cornerRadius: corner))
         .shadow(color: .black.opacity(0.07), radius: 8, y: 3)
     }
 
@@ -68,6 +76,9 @@ struct TreeCard: View {
             .overlay(alignment: .bottomTrailing) {
                 MapInset(lat: tree.lat, lng: tree.lng).padding(10)
             }
+            // Decorative, and its overflow is what made the card's measured
+            // frame taller than the card; the name and meta carry the label.
+            .accessibilityHidden(true)
             // No credit painted over the photograph (Hidde, 2026-08-20: "please
             // dont refer to wikicommons or whatever with an overlay on the tree,
             // put it somwhere small on the deeper page"). A card is a thumbnail

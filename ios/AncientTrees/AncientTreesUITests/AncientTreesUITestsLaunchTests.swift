@@ -17,9 +17,19 @@ final class AncientTreesUITestsLaunchTests: XCTestCase {
         continueAfterFailure = false
     }
 
+    override func tearDownWithError() throws {
+        // Leave the simulator the way the other tests expect it; see
+        // AncientTreesUITests.setUpWithError.
+        XCUIDevice.shared.orientation = .portrait
+        XCUIDevice.shared.appearance = .light
+    }
+
     @MainActor
     func testLaunch() throws {
         let app = XCUIApplication()
+        // The same fixed origin as every other test, so the launch never
+        // raises the location dialog on the shared simulator.
+        app.launchArguments = ["-at=52.3731,4.8922", "-reset-collection"]
         app.launch()
 
         // Insert steps here to perform after app launch but before taking a screenshot,

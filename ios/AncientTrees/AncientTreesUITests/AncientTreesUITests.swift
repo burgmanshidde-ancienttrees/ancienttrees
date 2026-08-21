@@ -18,6 +18,16 @@ final class AncientTreesUITests: XCTestCase {
 
     override func setUpWithError() throws {
         continueAfterFailure = false
+        // Portrait, every time. The launch tests run once per UI
+        // configuration, landscape included, and since the suite runs on one
+        // simulator rather than throwaway clones (2026-08-21) the last
+        // orientation stays: a sheet test then found no search field and a
+        // walk's tick landed beside its button, on the SE only.
+        XCUIDevice.shared.orientation = .portrait
+        // And light, for the same reason: the dark configuration sticks too,
+        // and every screenshot a failure leaves behind should look like the
+        // app Hidde sees.
+        XCUIDevice.shared.appearance = .light
     }
 
     private func launch(_ args: [String] = []) -> XCUIApplication {
@@ -29,17 +39,6 @@ final class AncientTreesUITests: XCTestCase {
         app.launchArguments = ["-at=52.3731,4.8922", "-reset-collection"] + args
         app.launch()
         return app
-    }
-
-    /// Polls a condition rather than reading a frame once: an XCUI frame read
-    /// during a spring animation is a number from the middle of it.
-    private func waitUntil(timeout: TimeInterval, _ holds: () -> Bool) -> Bool {
-        let end = Date().addingTimeInterval(timeout)
-        while Date() < end {
-            if holds() { return true }
-            RunLoop.current.run(until: Date().addingTimeInterval(0.25))
-        }
-        return holds()
     }
 
     /// Hiding the map's navigation bar must not hide the pushed page's.
@@ -156,10 +155,10 @@ final class AncientTreesUITests: XCTestCase {
         // read at y=176 on a 667 point phone before anything was dragged, and
         // a relative assertion turned that into a riddle. If the sheet ever
         // opens high again, this line says so in words.
-        XCTAssertTrue(waitUntil(timeout: 8) { field.frame.origin.y > screen * 0.45 },
-                      "the sheet did not open at its peek: the search field sits at "
-                      + "y=\(field.frame.origin.y) on a \(screen) point screen")
-        let peekY = field.frame.origin.y
+        let peekY = settledY(of: field)
+        XCTAssertGreaterThan(peekY, screen * 0.45,
+                             "the sheet did not open at its peek: the search field sits at "
+                             + "y=\(peekY) on a \(screen) point screen")
 
         // Anchored on the search field rather than on a point in the list: a
         // drag that starts on a tree card can be taken as a tap and open the
@@ -168,22 +167,46 @@ final class AncientTreesUITests: XCTestCase {
         // thing and cannot navigate anywhere.
         //
         // And a long press before the drag, so nothing is read as a flick.
+        //
+        // Every gesture starts from a SETTLED frame (settledY above and
+        // below). The sheet springs for 0.28 seconds after a drag, and a press
+        // aimed at where the field was a frame ago lands on the card that has
+        // moved under it, which opens the tree and ends the test on a page
+        // with no search field at all (the SE, 2026-08-21).
         field.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
              .press(forDuration: 0.35,
                     thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.12)))
-        XCTAssertTrue(waitUntil(timeout: 4) { field.frame.origin.y < screen * 0.3 },
-                      "dragging up over the list did not raise the sheet: the field went from "
-                      + "y=\(peekY) to y=\(field.frame.origin.y) on a \(screen) point screen")
-        let openY = field.frame.origin.y
+        let openY = settledY(of: field)
+        XCTAssertLessThan(openY, screen * 0.3,
+                          "dragging up over the list did not raise the sheet: the field went from "
+                          + "y=\(peekY) to y=\(openY) on a \(screen) point screen")
 
         // And back down from the top of the list, which is the half that was
         // still missing.
         field.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
              .press(forDuration: 0.35,
                     thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.92)))
-        XCTAssertTrue(waitUntil(timeout: 4) { field.frame.origin.y > screen * 0.45 },
-                      "dragging down from the top of the list did not lower the sheet: the field "
-                      + "went from y=\(openY) to y=\(field.frame.origin.y) on a \(screen) point screen")
+        let downY = settledY(of: field)
+        XCTAssertGreaterThan(downY, screen * 0.45,
+                             "dragging down from the top of the list did not lower the sheet: the field "
+                             + "went from y=\(openY) to y=\(downY) on a \(screen) point screen")
+    }
+
+    /// The element's y once it has stopped moving: two reads 0.4 seconds
+    /// apart that agree. Returns -1 when the element is gone, so a caller's
+    /// assertion fails with a number rather than with "no matching snapshot",
+    /// which is what reading the frame of a vanished element produces.
+    private func settledY(of el: XCUIElement, timeout: TimeInterval = 6) -> CGFloat {
+        let end = Date().addingTimeInterval(timeout)
+        var last: CGFloat = -1
+        while Date() < end {
+            guard el.exists else { return -1 }
+            let y = el.frame.origin.y
+            if y == last { return y }
+            last = y
+            RunLoop.current.run(until: Date().addingTimeInterval(0.4))
+        }
+        return el.exists ? el.frame.origin.y : -1
     }
 
     /// Home is built out of the website's own collections, which reach the
