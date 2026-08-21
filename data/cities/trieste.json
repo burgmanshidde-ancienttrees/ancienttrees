@@ -58,7 +58,9 @@
       },
       "curation_status": "ai_generated",
       "notes": "Register 11/L424/TS/06, 425 cm girth, 30 m. Age is inferred from the park's documented planting campaign begun spring 1856, not measured: neither MASAF nor the FVG regional decree carries an age field. A second registered redwood (24/L424, 401 cm, 27 m) stands about 60 m southwest and is recorded as a lead. Coordinate agrees between the MASAF decimal value and the FVG decree's sexagesimal one.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 30.0,
+      "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "tri_002",
@@ -89,7 +91,9 @@
       },
       "curation_status": "flagged",
       "notes": "Register 03/L424/TS/06, 410 cm, 18 m, criteria a, b, e, f, g. FLAGGED on species: both MASAF and the FVG regional decree record Cupressus macrocarpa, but a popular description of the park's monumental trees calls the specimen Cupressus sempervirens while giving the same 18 m height. The register is used here as the better authority; the conflict is stated in the story. Age inferred from the 1856 planting campaign.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 18.0,
+      "verify_notes": "Height 18.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "tri_003",
@@ -121,7 +125,9 @@
       },
       "curation_status": "ai_generated",
       "notes": "Register 06/L424/TS/06, 250 cm, 20 m, criteria a, d, e, f, g. Criterion d is botanical rarity. Il Piccolo's survey of the city's 48 monumental trees names this specimen as the pino fantasma at Miramare, which is the independent confirmation of species and location. A popular park description gives its height as about 35 m against the register's 20 m; the register figure is used. Age inferred from the 1856 planting campaign.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 20.0,
+      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "tri_004",
@@ -151,7 +157,9 @@
       },
       "curation_status": "flagged",
       "notes": "Register 01/L424/TS/06, 204 cm, 12 m, criteria a, b, d, e, f. FLAGGED because the only sources are the national MASAF register and the FVG regional decree, which are two publications of the same designation rather than two independent observations. No popular or municipal source names an Arbutus andrachne at Miramare; the park's own material mentions the corbezzolo (Arbutus unedo) stand instead, which is register entry 23/L424 with 59 elements and is not a collectible point. Age inferred from the 1856 planting campaign.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 12.0,
+      "verify_notes": "Height 12.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "tri_005",
@@ -185,7 +193,9 @@
       },
       "curation_status": "ai_generated",
       "notes": "Register 73/L424/TS/06, 542 cm, 34 m. Il Piccolo's survey of the city's 48 monumental trees independently describes the largest tree in the Giardino Pubblico as about 180 years old with a girth approaching 530 cm and reports the paving removal and drainage work; the register's 542 cm is used here. Identifiable on the ground as the largest plane in the garden, which is why the pin is marked confirmed.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 34.0,
+      "verify_notes": "Height 34.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "tri_006",
@@ -224,7 +234,9 @@
         ],
         "label": "May, when it puts up hundreds of white candles at once",
         "kind": "flowers"
-      }
+      },
+      "height_m": 23.0,
+      "verify_notes": "Height 23.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "tri_007",
@@ -264,7 +276,9 @@
         ],
         "label": "September and October, when the shaggy acorn cups are on the tree",
         "kind": "fruit"
-      }
+      },
+      "height_m": 18.0,
+      "verify_notes": "Height 18.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "tri_008",
@@ -295,7 +309,9 @@
       },
       "curation_status": "ai_generated",
       "notes": "Register 54/L424/TS/06, 510 cm, 25 m, locality Viale al Cacciatore. Il Piccolo's survey names the plane at the Viale al Cacciatore / Boschetto roundabout as the oldest tree in the city at over 200 years, which is the independent age source. Its companion 55/L424 (440 cm, 23 m) stands about 25 m away and is recorded as a lead. Pin marked approximate: the two register coordinates are 25 m apart and there is no way to confirm from the data which of the pair carries the 510 cm measurement, though the larger of the two is the one meant.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "height_m": 25.0,
+      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "tri_009",
@@ -326,7 +342,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 22.0,
+      "verify_notes": "Height 22.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "tri_010",
@@ -357,7 +375,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 24.0,
+      "verify_notes": "Height 24.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     }
   ]
 }

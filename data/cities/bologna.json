@@ -88,7 +88,9 @@
       },
       "curation_status": "flagged",
       "notes": "Dimensions (37.4m height, 520cm circumference) from a dedicated Bologna monumental-trees article, corroborated by Wikipedia's sourced article on the gardens' history and general species collection. No individual planting date documented. Photo found 2026-07-28, filename 'Giardini margherita albero monumentale' (monumental tree), Italian caption naming the species directly as 'sequoia sempreverde', an exact match to this entry's own Coast Redwood identification, the only sequoia species this park is sourced as holding. Viewed directly: a dramatic upward shot of the massive, deeply fissured fibrous red bark and multi-stemmed trunk unmistakable as Sequoia sempervirens, with an official monument tag visible attached to the bark. Approved. Pin corrected ~110m via Italy's national monumental tree registry (RAMI), whose own entry for this exact tree records an identical 37.40m height and 5.20m circumference.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 37.5,
+      "verify_notes": "Height 37.5 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "bol_003",
@@ -120,7 +122,9 @@
       },
       "curation_status": "flagged",
       "notes": "Height (39.5m) and circumference (455cm) corroborated across two independent sources, including the 'tallest monumental tree in the province' superlative, presented as sourced rather than independently verified against a full provincial register. Photo verified directly: shows the Minghetti statue directly in front of the described plane tree canopy, an exact match to the square and story. Pin tightened 2026-07-27: the only Platanus tree node OpenStreetMap maps in the piazza sits about 17m from the prior address-level estimate; kept `approximate` since the node itself carried no name or registry reference tying it individually to this tree. Upgraded to confirmed: Italy's official AMI national monumental-trees register lists a 'Platano comune' at Piazza Minghetti itself (record naming the exact square, species matching London Plane), read with a purpose-built binary XLS parser and independently landing about 11m from the already-tightened OSM node, two independent sources converging on the same point.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 39.5,
+      "verify_notes": "Height 39.5 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "bol_004",
@@ -152,7 +156,9 @@
       },
       "curation_status": "flagged",
       "notes": "Dimensions (36m height, 520cm circumference), the Cavallerizza/Rusconi origin story and the ~1825 planting estimate corroborated across two independent dedicated tree-history sources. Photo verified directly: coordinates in the file's own metadata match the geocoded address closely, and the image clearly shows a large plane canopy over the same elevated garden setting described in the story. Pin cross-checked against Italy's national monumental tree registry (MASAF, AMI code 14/A944/BO/08, \"Palazzo Rusconi - Piazza Malpighi 16\", Platano orientale), read identically across two independent fetches of the source spreadsheet; moved 15m to the registry point.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 36.0,
+      "verify_notes": "Height 36.0 m from the italy-masaf register, matched on our own pin (4 m away)."
     },
     {
       "id": "bol_005",
@@ -222,7 +228,9 @@
       },
       "curation_status": "flagged",
       "notes": "Height (29.5m) and circumference (338cm) corroborated across the official RAMI registry entry and an independent local-history article covering the Lucio Dalla connection. A same-named 'Ginkgo di piazza Cavour' Wikimedia Commons category exists but documents a different tree entirely, in Turin, not Bologna; not used here to avoid the wrong-city mixup. 2026-07-29: found via the correct Bologna-specific source this time, File:Piazza cavour,.jpg by Aneta Malinowska (Wiki Loves Monuments Italia 2020, part of her dedicated Bologna monumental/veteran-tree series), whose own Commons page explicitly describes a Ginkgo biloba in Piazza Cavour, Bologna, geotagged 44.4913,11.3439, essentially this entry's own pin. 2026-07-29 (later session): downloaded and personally viewed the file; the square's own CAVOUR and TAXI signage is legible in frame, confirming the location beyond the geotag alone. Approved. Pin cross-checked against Italy's national monumental tree registry (MASAF, AMI code 12/A944/BO/08, \"Piazza Cavour\", Ginco), read identically across two independent fetches of the source spreadsheet; moved 22m to the registry point.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 29.5,
+      "verify_notes": "Height 29.5 m from the italy-masaf register, matched on our own pin (6 m away)."
     },
     {
       "id": "bol_007",
@@ -381,7 +389,9 @@
       },
       "curation_status": "flagged",
       "notes": "Surfaced 2026-08-12 via the italy-masaf.json register (sheet Via Irnerio, name_it 'Noce grigio'), coordinate ~230m from the already-published bol_007 ginkgo, both inside the same Orto Botanico. Two independent press sources (Sestopotere, a Bologna news site, and Visitupbologna, an independent tourism guide) both citing university staff (curator Umberto Mossetti, professor Alberto Minelli) corroborate the tree's existence, species, 32m height and the ongoing conservation project, confirming it is alive now (an 'irreversible aging phase' under active five-year monitoring to preserve it, not a dead tree). GIRTH DISCREPANCY, stated honestly rather than resolved: the region's register gives 420cm, the two press sources both give approximately 471cm (independently matching each other, likely both citing the same university figure, distinct from the register's own survey). No age or planting date found anywhere. Access/transport copied from bol_007 for consistency, same location.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "height_m": 32.5,
+      "verify_notes": "Height 32.5 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "bol_012",
@@ -409,7 +419,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 32.0,
+      "verify_notes": "Height 32.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     }
   ]
 }

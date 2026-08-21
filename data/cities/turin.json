@@ -68,7 +68,9 @@
         "label": "July and August, when it hangs half-metre chains of winged seeds",
         "kind": "catkins"
       },
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 27.0,
+      "verify_notes": "Height 27.0 m from the piemonte-alberi-monumentali register, matched on our own pin (0 m away)."
     },
     {
       "id": "tor_002",
@@ -102,7 +104,9 @@
       },
       "curation_status": "ai_generated",
       "notes": "Regional register card 003/L219/TO/01: 550 cm girth, 34 m, crown 30 m, age band 100-200, publicly owned. Turismo Torino's route and the press lists give 33.5 m for the same tree, so the height is rounded differently rather than disputed. The age band is the register's; the narrower figure comes from MuseoTorino and Mole24, which both date the garden's laying out and its large tree planting to 1872-1875. That is the garden's date, not a measurement of this trunk, so the range is kept wide. Commons has 14 photographs filed under this exact register card number, not yet reviewed; this pass hit its three-photo limit first.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 34.0,
+      "verify_notes": "Height 34.0 m from the piemonte-alberi-monumentali register, matched on our own pin (0 m away)."
     },
     {
       "id": "tor_003",
@@ -143,7 +147,9 @@
         "label": "November, when it turns hard yellow and drops the lot in a day or two",
         "kind": "autumn colour"
       },
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 27.0,
+      "verify_notes": "Height 27.0 m from the piemonte-alberi-monumentali register, matched on our own pin (0 m away)."
     },
     {
       "id": "tor_004",
@@ -177,7 +183,9 @@
       },
       "curation_status": "ai_generated",
       "notes": "Regional register card 008/L219/TO/01: 475 cm girth, 23 m, crown 16 m, age band 100-200, publicly owned. Second source is Turismo Torino's route and both press lists, which all place a 23 m Celtis australis in Parco del Valentino. The photo shows an isolated dome-crowned tree on open lawn at the north end of the park, which matches the register point and the Commons file naming it for Corso Massimo d'Azeglio. No best_time set: the autumn fruit is real but small, and the badge is kept for moments worth crossing town for.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 23.0,
+      "verify_notes": "Height 23.0 m from the piemonte-alberi-monumentali register, matched on our own pin (0 m away)."
     },
     {
       "id": "tor_005",
@@ -219,7 +227,9 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "height_m": 28.0,
+      "verify_notes": "Height 28.0 m from the piemonte-alberi-monumentali register, matched on our own pin (0 m away)."
     },
     {
       "id": "tor_006",
@@ -253,7 +263,9 @@
       },
       "curation_status": "ai_generated",
       "notes": "Regional register card 011/L219/TO/01: 600 cm girth, 26 m, crown 24 m, age band over 200, publicly owned. Largest girth of the five register trees inside Parco del Valentino, which is what 'widest trunk in the park' rests on. Second source is Turismo Torino's route and the press lists, all of which place a 26 m plane 'fronte Eridano'. Set as oldest_tree_id for the page: three trees here share the over-200 band and this is the widest of them, but the register bands rather than dates, so it is the best available answer and not a measured one.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 26.0,
+      "verify_notes": "Height 26.0 m from the piemonte-alberi-monumentali register, matched on our own pin (0 m away)."
     },
     {
       "id": "tor_007",
@@ -287,7 +299,9 @@
       },
       "curation_status": "flagged",
       "notes": "Regional register card 012/L219/TO/01: 510 cm girth, 36 m, crown 27 m, age band 100-200, publicly owned. Second tallest of the fourteen Turin register trees, after 010/L219/TO/01 at 40 m. Second source is Turismo Torino's route and both press lists, all placing a 36 m plane at the Borgo Medievale. Flagged on pin only: several large planes stand along this stretch of Viale Virgilio and the register coordinate is single-sourced, so it is marked approximate. The three oaks mentioned are register card 013/L219/TO/01, filed as a GRUPPO with no girth, height or age, and blocked in data/leads/turin.json.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "height_m": 36.0,
+      "verify_notes": "Height 36.0 m from the piemonte-alberi-monumentali register, matched on our own pin (0 m away)."
     },
     {
       "id": "tor_008",
@@ -319,7 +333,9 @@
       },
       "curation_status": "ai_generated",
       "notes": "Regional register card 010/L219/TO/01: 550 cm girth, 40 m, crown 32 m, age band over 200, publicly owned. Tallest and widest-crowned of the fourteen Turin register trees. Turismo Torino's route and both press lists give 39.5 m for the same tree at the Fontana 12 mesi, so the half metre is a rounding difference between the tourist board and the register rather than a conflict. Commons has 'Platano comune Parco del Valentino.jpg' under CC BY-SA 4.0, not yet viewed and not yet matched to this individual; this pass hit its three-photo limit first.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 40.0,
+      "verify_notes": "Height 40.0 m from the piemonte-alberi-monumentali register, matched on our own pin (0 m away)."
     },
     {
       "id": "tor_009",
@@ -348,7 +364,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 28.0,
+      "verify_notes": "Height 28.0 m from the piemonte-alberi-monumentali register, matched on our own pin (0 m away)."
     },
     {
       "id": "tor_010",
@@ -385,7 +403,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 24.0,
+      "verify_notes": "Height 24.0 m from the piemonte-alberi-monumentali register, matched on our own pin (0 m away)."
     }
   ]
 }

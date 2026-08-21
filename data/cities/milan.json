@@ -239,7 +239,9 @@
       },
       "curation_status": "ai_generated",
       "notes": "The 'oldest tree in Milan' superlative repeated in some local press is not adopted here, per hard rule 8: the ginkgo pair at the Orto Botanico di Brera (mil_004) is considerably older and better documented. The 1924 planting/memorial story is corroborated by two independent press sources plus RAMI's registry entry.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 18.0,
+      "verify_notes": "Height 18.0 m from the italy-masaf register, matched on our own pin (3 m away)."
     },
     {
       "id": "mil_007",
@@ -347,7 +349,9 @@
       },
       "curation_status": "flagged",
       "notes": "Genuine age dispute between a 2013 dendrochronological core sample (about 187 years) and the popular Napoleonic-era legend (over 250 years); presented as a range with the scientific figure given more weight, per hard rule 8/P7. This is a different, still-living tree from the similarly aged plane at Villa Litta (also in Affori), which was felled in 2015 after a fungal disease; only a trunk cross-section of that one survives, noted in this city's FAQ rather than listed as a tree to visit. Pin corrected 2026-07-28, about 490m: Italy's volunteer-run RAMI tree registry (ilregistrodeglialberi.it) names this exact tree 'Platano di Affori' at Via Astesani, and OpenStreetMap/Nominatim independently geocodes 'Via Astesani, Affori' to within about 7m of RAMI's own coordinate, two independent sources converging tightly. Upgraded to confirmed.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 20.0,
+      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (5 m away)."
     },
     {
       "id": "mil_010",
@@ -386,7 +390,9 @@
       },
       "curation_status": "flagged",
       "notes": "No age or planting date documented anywhere found; age range is a wide, honest estimate from trunk girth and the park's 1893 redesign, not a measured figure.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 18.0,
+      "verify_notes": "Height 18.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "mil_011",
@@ -425,7 +431,9 @@
       },
       "curation_status": "flagged",
       "notes": "Species, dimensions and monumental status confirmed by two independent bodies: the national MASAF register (Pterocarya fraxinifolia, Orto Botanico di Brera, girth 470 cm, height 29 m) and the University of Milan's own announcement of the 11 February 2025 designation. Age is single-sourced and vague ('over 80 years', university press release); no ring count or planting record exists, so age_max is an honest upper bound from girth, not a figure anyone has published. Coordinates are the register's garden-level point, roughly 35 m from our own ginkgo entry (mil_004); the arboretum is at the back of the garden, so the pin is approximate rather than surveyed.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "height_m": 29.0,
+      "verify_notes": "Height 29.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "mil_012",
@@ -457,7 +465,9 @@
       },
       "curation_status": "flagged",
       "notes": "Two independent sources on existence, species and size: the Comune di Milano's own monumental-tree page (VTA inventory 43474, height 30 m, diameter at breast height 160 cm) and the national MASAF register (Platanus acerifolia, Giardini Indro Montanelli, girth 483 cm, height 32 m). Neither gives an age, and no planting record survives for this park, so the range is an honest estimate from girth alone. Pin is approximate on purpose: the two sources agree on latitude to five decimals but their longitudes sit about 165 m apart (register 9.200014, comune 9.197869), so the tree is somewhere along that line in the northern half of the gardens. Distinct from mil_002, the much wider 'grande' plane (830 cm girth) about 260 m south.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "height_m": 32.0,
+      "verify_notes": "Height 32.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "mil_013",
@@ -496,7 +506,9 @@
       },
       "curation_status": "flagged",
       "notes": "Existence, species and size from the national MASAF register (Pterocarya fraxinifolia, Giardini Indro Montanelli, girth 550 cm, height 20 m). The second source is the Comune di Milano's monumental-tree page for the Parco Sempione wingnut, which names this tree by the city's own inventory number ('Assieme a quella dei Giardini Montanelli, Pterocaria VTA 36443, e la pterocaria piu datata tra quelle presenti in citta'), confirming both its existence and its standing as one of the two oldest of its species in the city. No age figure exists anywhere; the range is an honest estimate from girth. Only one source publishes a coordinate, so the pin stays approximate. Photo downloaded and viewed at 960px this pass and approved against the Cadiz standard: the tree fills the frame in flat May daylight, the broad low crown and the multi-stemmed base are both readable, and the centre band of the card crop is all tree. Its description reads 'Caucasian wingnut, Giardini Pubblici, Milano' and its photographer, Sordelli, also took the hackberry photo already published on mil_003 in this same park; the file carries no geotag, but the register lists only one wingnut in these gardens, so the identification is safe. NOTE for a later pass: mil_010's story calls the Sempione wingnut's companion 'a companion specimen nearby', which the comune source shows is this tree, 1.6 km away in a different park, not a neighbour.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "height_m": 20.0,
+      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "mil_014",
@@ -593,7 +605,9 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 34.0,
+      "verify_notes": "Height 34.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "mil_017",
@@ -622,7 +636,9 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 33.0,
+      "verify_notes": "Height 33.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "mil_018",
@@ -651,7 +667,9 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 34.0,
+      "verify_notes": "Height 34.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "mil_019",
@@ -711,7 +729,9 @@
       },
       "notes": "Single-sourced: only the MASAF national register of monumental trees names this specific tree, and no second source has been found for it. That register is a government source, which under the register-layer rule is enough to publish on, and the entry is flagged so the thinness is visible in the data as well as in the prose. Girth 525 cm and height 38 m are the register's own figures; coordinates are the register's, hence confirmed precision. No age: the Italian register has no age field and nothing else names this tree. The 34-metre ceiling referred to in the story is Il Giorno's survey, already cited and quoted on mil_018; this entry deliberately does not claim any height crown, because the same register lists a Villa Litta plane at 43 m.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 38.0,
+      "verify_notes": "Height 38.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "mil_021",
@@ -740,7 +760,9 @@
       },
       "notes": "Single-sourced: only the MASAF national register of monumental trees names this specific tree, and no second source has been found for it. The register is a government source, which under the register-layer rule is enough to publish on; flagged so the thinness shows in the data as well as in the prose. Girth 400 cm, height 35 m and the coordinates are the register's own, hence confirmed precision. No age: the Italian register has no age field. The height comparison in the story is against our own register-sourced figures for mil_016 (34 m) and mil_018 (34 m); no height crown is claimed for this tree, because the same register lists a Villa Litta plane at 43 m.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 35.0,
+      "verify_notes": "Height 35.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     }
   ],
   "oldest_tree_id": "mil_004"

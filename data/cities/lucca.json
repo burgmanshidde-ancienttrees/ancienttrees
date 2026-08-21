@@ -69,7 +69,9 @@
         ],
         "label": "September to November: upright barrel cones that sit on the branches like eggs",
         "kind": "fruit"
-      }
+      },
+      "height_m": 20.0,
+      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "luc_002",
@@ -102,7 +104,9 @@
       },
       "curation_status": "ai_generated",
       "notes": "Register 34/E715/LU/09, 576 cm girth, 35 m. The second registered redwood (31/E715/LU/09, 500 cm) stands about 40 m away and is recorded as a folded lead rather than a separate entry, since a visitor reads them as one planting. The garden's own page says three redwoods; the register lists two here. Planting date c.1850 from LuccaInDiretta; the garden dates its redwoods to the first half of the nineteenth century, so the range is left wide. The photo shows one of the garden's redwoods, not certainly this individual.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 35.0,
+      "verify_notes": "Height 35.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "luc_003",
@@ -140,7 +144,9 @@
         "label": "mid-November, when it turns hard yellow and drops it all at once",
         "kind": "autumn colour"
       },
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 26.0,
+      "verify_notes": "Height 26.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "luc_004",
@@ -171,7 +177,9 @@
       },
       "curation_status": "flagged",
       "notes": "Register 09/E715/LU/09, 355 cm girth, 28 m. Flagged on age only: no source dates this tree. The city's own walls itinerary credits the North American cypress by the bastion to Cesare Bicchi, botanical garden director from 1860, which is where the rough range comes from, so it is given as a range and not as a figure.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 28.0,
+      "verify_notes": "Height 28.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "luc_005",
@@ -237,7 +245,9 @@
       },
       "curation_status": "flagged",
       "notes": "Register 08/E715/LU/09, 700 cm girth, 30 m, the largest girth of the 36 register entries in the comune of Lucca. Flagged on age: no source dates it, and the 1840s ceiling is the species introduction date rather than a measurement of this tree. Species and location double-sourced by the register and by La Nazione's report of the 2021 dedication.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 30.0,
+      "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "luc_007",
@@ -266,7 +276,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 30.5,
+      "verify_notes": "Height 30.5 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "luc_008",
@@ -302,7 +314,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 24.0,
+      "verify_notes": "Height 24.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "luc_009",
@@ -330,7 +344,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 30.0,
+      "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "luc_010",
@@ -358,7 +374,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 24.0,
+      "verify_notes": "Height 24.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     }
   ]
 }

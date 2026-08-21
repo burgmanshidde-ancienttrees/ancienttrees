@@ -48,6 +48,11 @@ export const treeSchema = z.object({
   // here because zod strips what it does not know, which is why the thickest
   // ranking came out empty the first time it built (2026-08-21).
   girth_cm: z.number().nullable().optional(),
+  // Height in metres, from a register's own measurement or a plaque, never
+  // read out of our own prose: a story sentence about height is as often
+  // about the species, the neighbour, or the tree before a storm took its
+  // top off. scripts/heights.py fills it; a hand-read figure wins.
+  height_m: z.number().nullable().optional(),
   location: z.object({
     address: z.string().optional(),
     latitude: z.number().nullable().optional(),
@@ -188,7 +193,7 @@ const collectionPages = defineCollection({
     // build, so finding an older tree updates the page by itself. `entries`
     // stays: a curated note on a tree in the ranking is still used for that
     // tree, so the hand-written lines are not thrown away.
-    generated: z.enum(["oldest", "thickest"]).optional(),
+    generated: z.enum(["oldest", "thickest", "tallest"]).optional(),
     entries: z.array(
       z.object({
         city_slug: z.string(),
