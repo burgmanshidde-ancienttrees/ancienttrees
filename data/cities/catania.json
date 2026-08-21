@@ -88,7 +88,9 @@
         "status": "approved",
         "width": 1058,
         "height": 2749
-      }
+      },
+      "height_m": 45.0,
+      "verify_notes": "Height 45.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "cat_003",
@@ -120,7 +122,9 @@
         "status": "approved",
         "width": 3000,
         "height": 4000
-      }
+      },
+      "height_m": 40.0,
+      "verify_notes": "Height 40.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "cat_004",
@@ -153,7 +157,9 @@
         "note": "good frame of a large dragon tree but no coordinate, and Catania has more than one big Dracaena draco",
         "width": 500,
         "height": 281
-      }
+      },
+      "height_m": 7.0,
+      "verify_notes": "Height 7.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     }
   ]
 }

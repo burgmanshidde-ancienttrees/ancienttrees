@@ -385,7 +385,9 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 10.5,
+      "verify_notes": "Height 10.5 m from the italy-masaf register, matched on our own pin (0 m away)."
     }
   ],
   "oldest_tree_id": "ven_001"

@@ -57,7 +57,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 24.0,
+      "verify_notes": "Height 24.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "fer_002",
@@ -90,7 +92,9 @@
         "status": "approved",
         "width": 4000,
         "height": 6000
-      }
+      },
+      "height_m": 23.0,
+      "verify_notes": "Height 23.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "fer_003",
@@ -127,7 +131,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 25.0,
+      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "fer_004",
@@ -166,7 +172,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 19.0,
+      "verify_notes": "Height 19.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "fer_005",
@@ -196,7 +204,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 20.0,
+      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     }
   ]
 }

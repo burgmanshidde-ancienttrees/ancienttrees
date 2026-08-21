@@ -113,6 +113,26 @@ const MODES: Record<string, RankMode> = {
       return `${m.toFixed(2)} metres round the trunk, about ${arms} people with their arms outstretched.`;
     },
   },
+  // Height is the measurement most people picture when they think "big tree",
+  // and the one we hold least of: it comes from a register's own survey or a
+  // plaque, never from our prose. A tree nobody has measured cannot appear,
+  // which the intro says out loud.
+  tallest: {
+    qualifies: (t) => (t.height_m ?? 0) >= 25,
+    keys: (t) => [t.height_m ?? 0],
+    band: (t) => t.height_m ?? 0,
+    bands: [
+      { min: 40, heading: "Forty metres and over" },
+      { min: 33, heading: "Thirty-three to forty metres" },
+      { min: 28, heading: "Twenty-eight to thirty-three metres" },
+      { min: 25, heading: "Twenty-five to twenty-eight metres" },
+    ],
+    note: (t) => {
+      const m = t.height_m ?? 0;
+      const floors = Math.max(2, Math.round(m / 3));
+      return `${m} metres tall, about the height of a ${floors} storey building.`;
+    },
+  },
 };
 const mode = coll.data.generated ? MODES[coll.data.generated] : null;
 const curatedNote = new Map(coll.data.entries.map((e) => [e.tree_id, e.note]));

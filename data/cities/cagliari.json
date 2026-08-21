@@ -58,7 +58,9 @@
         "status": "approved",
         "width": 2736,
         "height": 3648
-      }
+      },
+      "height_m": 22.0,
+      "verify_notes": "Height 22.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "cag_005",
@@ -88,7 +90,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 20.0,
+      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "cag_001",
@@ -150,7 +154,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 15.0,
+      "verify_notes": "Height 15.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "cag_003",
@@ -187,7 +193,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 16.0,
+      "verify_notes": "Height 16.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "cag_007",
@@ -217,7 +225,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 17.0,
+      "verify_notes": "Height 17.0 m from the italy-masaf register, matched on our own pin (1 m away)."
     },
     {
       "id": "cag_006",
@@ -247,7 +257,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 15.0,
+      "verify_notes": "Height 15.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     }
   ]
 }

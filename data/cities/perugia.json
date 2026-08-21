@@ -51,7 +51,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 25.0,
+      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "pgi_002",
@@ -80,7 +82,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 23.0,
+      "verify_notes": "Height 23.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "pgi_003",
@@ -118,7 +122,9 @@
         ],
         "label": "September to November: upright barrel cones that sit on the branches like eggs",
         "kind": "fruit"
-      }
+      },
+      "height_m": 12.5,
+      "verify_notes": "Height 12.5 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "pgi_004",
@@ -156,7 +162,9 @@
         ],
         "label": "September to November: upright barrel cones that sit on the branches like eggs",
         "kind": "fruit"
-      }
+      },
+      "height_m": 18.0,
+      "verify_notes": "Height 18.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "pgi_005",
@@ -185,7 +193,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 21.0,
+      "verify_notes": "Height 21.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "pgi_006",
@@ -215,7 +225,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 15.5,
+      "verify_notes": "Height 15.5 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "pgi_007",
@@ -244,7 +256,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 23.5,
+      "verify_notes": "Height 23.5 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "pgi_008",
@@ -274,7 +288,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 21.0,
+      "verify_notes": "Height 21.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "pgi_009",
@@ -304,7 +320,9 @@
         "attribution": null,
         "status": "missing"
       },
-      "notes": "Promoted from data/leads/perugia.json on 2026-08-14. Single-sourced: the national register is the only document that names it, hence flagged and hence no age. The register locality is a road with no property attached, which is why this one ships where the Viale Roma cedar (paired with a school in the register) and the Sodo degli Ebrei pine (a residential hamlet) do not. Pin is the register coordinate, unverified on the ground, so approximate."
+      "notes": "Promoted from data/leads/perugia.json on 2026-08-14. Single-sourced: the national register is the only document that names it, hence flagged and hence no age. The register locality is a road with no property attached, which is why this one ships where the Viale Roma cedar (paired with a school in the register) and the Sodo degli Ebrei pine (a residential hamlet) do not. Pin is the register coordinate, unverified on the ground, so approximate.",
+      "height_m": 21.0,
+      "verify_notes": "Height 21.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "pgi_010",
@@ -334,7 +352,9 @@
         "attribution": null,
         "status": "missing"
       },
-      "notes": "Promoted from data/leads/perugia.json on 2026-08-14. Single-sourced on the national register, hence flagged and hence no age. Kept as a separate entry rather than folded into pgi_009: the register's twin-folding case is trees metres apart, and these are 153 metres apart on the same lane, which is two places to stand. Pin is the register coordinate, unverified on the ground."
+      "notes": "Promoted from data/leads/perugia.json on 2026-08-14. Single-sourced on the national register, hence flagged and hence no age. Kept as a separate entry rather than folded into pgi_009: the register's twin-folding case is trees metres apart, and these are 153 metres apart on the same lane, which is two places to stand. Pin is the register coordinate, unverified on the ground.",
+      "height_m": 22.0,
+      "verify_notes": "Height 22.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     }
   ]
 }

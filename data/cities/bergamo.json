@@ -52,7 +52,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 32.0,
+      "verify_notes": "Height 32.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "bgm_002",
@@ -81,7 +83,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 25.0,
+      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "bgm_003",
@@ -110,7 +114,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 16.0,
+      "verify_notes": "Height 16.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "bgm_004",
@@ -179,7 +185,9 @@
         "status": "approved",
         "width": 1500,
         "height": 2000
-      }
+      },
+      "height_m": 32.0,
+      "verify_notes": "Height 32.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "bgm_006",
@@ -209,7 +217,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 30.0,
+      "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "bgm_007",
@@ -271,7 +281,7 @@
       "transport": "TEB tramline T1 (Bergamo-Albino), Torre Boldone stop, then a short walk along Viale delle Rimembranze.",
       "location_precision": "confirmed",
       "curation_status": "flagged",
-      "verify_notes": "Register sheet 01/L251/BG/03, girth 391cm, height 27.0m; register coordinates convert exactly to 45.716928, 9.705642, tree-level precision. No dated post-2021 photograph or ground sighting found; alive-and-standing is corroborated by continued listing in the register's October 2025 update rather than by direct recent observation. The story states this plainly and invites a reader to confirm.",
+      "verify_notes": "Register sheet 01/L251/BG/03, girth 391cm, height 27.0m; register coordinates convert exactly to 45.716928, 9.705642, tree-level precision. No dated post-2021 photograph or ground sighting found; alive-and-standing is corroborated by continued listing in the register's October 2025 update rather than by direct recent observation. The story states this plainly and invites a reader to confirm. Height 27.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "photo": {
         "url": null,
         "license": null,
@@ -284,7 +294,8 @@
         ],
         "label": "May, when it flowers",
         "kind": "flowers"
-      }
+      },
+      "height_m": 27.0
     }
   ]
 }

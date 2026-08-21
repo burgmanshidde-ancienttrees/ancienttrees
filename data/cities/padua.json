@@ -57,7 +57,9 @@
         "status": "approved",
         "width": 2448,
         "height": 3264
-      }
+      },
+      "height_m": 12.0,
+      "verify_notes": "Height 12.0 m from the italy-masaf register, matched on our own pin (1 m away)."
     },
     {
       "id": "pad_002",
@@ -299,7 +301,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 9.0,
+      "verify_notes": "Height 9.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "pad_009",

@@ -58,7 +58,9 @@
       },
       "curation_status": "flagged",
       "notes": "Location taken directly from Italy's official AMI national monumental-trees register (read with a purpose-built binary XLS parser), confirmed. Age and history corroborated by Italian Wikipedia and Il Post's March 2026 report on the tree's declining health, which is the source for the disease details in the story; this is a live, evolving situation, worth a status recheck on future passes. The circumference figure is genuinely disputed between sources (20m vs 36m), presented as such rather than picking one. The 'largest tree in Europe' superlative sometimes attached to this tree is deliberately not used here per hard rule 8, since the Orto Botanico's own ficus (pal_003) carries a more specifically sourced canopy-area superlative that would conflict with it. Photo viewed directly: an unmistakable mature Ficus macrophylla with a dense forest of aerial roots and secondary trunks behind an ornamental iron fence, matching the square and story exactly.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 21.0,
+      "verify_notes": "Height 21.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "pal_002",
@@ -91,7 +93,9 @@
       },
       "curation_status": "flagged",
       "notes": "Location taken directly from Italy's official AMI national monumental-trees register (registered under 'historical/cultural/religious value' criterion, matching the memorial status), confirmed, matching the known Via Notarbartolo 23 address exactly. History corroborated by Giornale di Sicilia's 2023 coverage and the Comune di Palermo's own official statement on the anniversary flowerbed motion; monumentaltrees.com was checked for cross-verification only, per hard rule 1, never copied. Age (roughly 90 years) is an attributed estimate rather than a documented planting record, flagged accordingly. The tree's structural stability has been an active concern since at least 2023; worth a recheck on future passes given how dynamic tree-health situations are. Photo (dated 2002) is older but the memorial tradition it depicts is unbroken and renewed annually, confirmed still ongoing by the 2023 sourcing.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 14.5,
+      "verify_notes": "Height 14.5 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "pal_003",
@@ -124,7 +128,9 @@
       },
       "curation_status": "flagged",
       "notes": "Location taken directly from Italy's official AMI national monumental-trees register (Orto Botanico entry matching the 'Fico magnolioide' species and confirmed as the tallest-listed of several ficus specimens the garden holds), confirmed. Age and the 2023 European Tree of the Year placement corroborated by the contest's own official site and Wikipedia's Orto botanico di Palermo article; one source names the species' native range as Queensland/New South Wales and another as Norfolk Island, a minor discrepancy likely reflecting the broader native range rather than a factual conflict, noted rather than resolved. The 'largest canopy in Europe' claim is sourced specifically to the European Tree of the Year contest's own published measurement (roughly 3,000 square metres), a different and more specific metric than the trunk-size superlative sometimes attached to the Piazza Marina fig (pal_001), so both are kept without contradiction. Photo viewed directly: an enormous fig with a person for scale standing beneath its spreading aerial-root canopy, consistent with the garden setting and story.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 25.0,
+      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "pal_004",
@@ -157,7 +163,9 @@
       },
       "curation_status": "flagged",
       "notes": "Location taken directly from Italy's official AMI national monumental-trees register (circumference 590cm matching this story's 'just under six metres'), confirmed. History corroborated independently by APGI (Associazione Parchi e Giardini Italiani) and the Fondazione Whitaker's own site. Exact planting date not documented in any source found, presented as an estimated range tied to the villa's 1880s-90s construction rather than invented. Photo viewed directly: an unmistakable mature dragon tree with the species' distinctive tiered umbrella crown, in a garden setting consistent with Villa Malfitano.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 12.0,
+      "verify_notes": "Height 12.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "pal_005",
@@ -188,7 +196,9 @@
       },
       "curation_status": "flagged",
       "notes": "Location taken directly from Italy's official AMI national monumental-trees register, confirmed. Age (136 years) and condition ('Buona'/good) corroborated independently by the RAMI tree-registry aggregator (ilregistrodeglialberi.it, used for verification only per the same standard applied to monumentaltrees.com), which also explicitly marks the tree as publicly accessible, clearing any hard rule 10 concern about the surrounding Favorita being former royal grounds. No open-licensed photo found on Wikimedia Commons or iNaturalist after a dedicated search; genuinely missing rather than unsearched.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 7.0,
+      "verify_notes": "Height 7.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "pal_006",
@@ -221,7 +231,9 @@
       },
       "curation_status": "flagged",
       "notes": "Location taken directly from Italy's official AMI national monumental-trees register (circumference 480cm, matching this story's 'nearly five metres'), confirmed. History corroborated by Italian Wikipedia and the Comune di Palermo's own tourism page. No source gives an exact planting date for this specific specimen among the roughly twenty ficus at Villa Trabia, so age is presented as a wide, honest estimate rather than invented. Photo viewed directly: a large ficus with characteristic aerial roots and a buttressed trunk over an ornamental stone bench, consistent with a mature specimen at Villa Trabia, though with multiple large figs on the grounds it is not independently confirmed as this exact 480cm specimen; approved with that caveat on record rather than left unphotographed, the same honest-caveat pattern used elsewhere on the site.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 20.0,
+      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "pal_007",
@@ -317,7 +329,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 16.0,
+      "verify_notes": "Height 16.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "pal_010",
@@ -347,7 +361,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 30.0,
+      "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "pal_011",
@@ -378,7 +394,9 @@
       },
       "how_to_recognise": "The tiered, candelabra-shaped conifer in the garden. Do not stand under it in fruiting season: the cones are enormous.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 23.0,
+      "verify_notes": "Height 23.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "pal_012",
@@ -409,7 +427,9 @@
       },
       "how_to_recognise": "Unmistakable: a swollen green bottle of a trunk covered in conical spines, on the avenue of chorisias.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 15.0,
+      "verify_notes": "Height 15.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "pal_013",
@@ -440,7 +460,9 @@
       },
       "how_to_recognise": "A yucca the size of a tree, with a trunk over five metres round, in the villa garden.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 12.0,
+      "verify_notes": "Height 12.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "pal_014",
@@ -471,7 +493,9 @@
       },
       "how_to_recognise": "The biggest dragon tree on the nursery grounds, seven metres round. Two smaller ones are elsewhere in the city, on this same page.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 7.0,
+      "verify_notes": "Height 7.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "pal_015",
@@ -501,7 +525,9 @@
         "attribution": null,
         "status": "missing"
       },
-      "story": "Eight metres round the trunk and eleven metres tall: this is a fig that spent its growth going sideways. It stands in the Giardino Inglese, the long public park Giovan Battista Filippo Basile laid out from 1851 as Palermo pushed north out of its old walls along Via della Libertà, and of the several big Moreton Bay Figs growing there it is the one Sicily's register of monumental trees actually measured, at 820 centimetres of girth and 11 metres of height. The park's figs trace back to stock raised at the Orto Botanico across town, which is where most of this city's Australian giants began. Ficus macrophylla behaves the same way wherever it is comfortable: branches send roots down, the roots reach soil and thicken into trunks of their own, and a single stem slowly turns into a colonnade. The garden around it has changed names along with the century. It carries Piersanti Mattarella's name now, after the president of Sicily shot dead in Palermo in 1980, and on a warm afternoon it is full of people treating it as a park rather than a memorial. Nobody has published an age for this tree. The Italian register has no age column, and no one appears to have dated this specimen. If you have seen a figure for it, send it over and we will add it."
+      "story": "Eight metres round the trunk and eleven metres tall: this is a fig that spent its growth going sideways. It stands in the Giardino Inglese, the long public park Giovan Battista Filippo Basile laid out from 1851 as Palermo pushed north out of its old walls along Via della Libertà, and of the several big Moreton Bay Figs growing there it is the one Sicily's register of monumental trees actually measured, at 820 centimetres of girth and 11 metres of height. The park's figs trace back to stock raised at the Orto Botanico across town, which is where most of this city's Australian giants began. Ficus macrophylla behaves the same way wherever it is comfortable: branches send roots down, the roots reach soil and thicken into trunks of their own, and a single stem slowly turns into a colonnade. The garden around it has changed names along with the century. It carries Piersanti Mattarella's name now, after the president of Sicily shot dead in Palermo in 1980, and on a warm afternoon it is full of people treating it as a park rather than a memorial. Nobody has published an age for this tree. The Italian register has no age column, and no one appears to have dated this specimen. If you have seen a figure for it, send it over and we will add it.",
+      "height_m": 11.0,
+      "verify_notes": "Height 11.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "pal_016",
@@ -562,7 +588,9 @@
         "attribution": null,
         "status": "missing"
       },
-      "story": "The vine wound around this trunk is a houseplant. Monstera deliciosa is the thing sold in pots at knee height across northern Europe, and in the Orto Botanico it has been left to do what it does in the wild, climbing a pecan the way ivy climbs a wall.\n\nThe tree underneath is worth the look on its own. Thirty metres tall and 5.6 metres round, it is one of the giants in a garden full of them, and it belongs on another continent entirely. Carya illinoinensis is the pecan of the American South, a river-bottom hickory from the Mississippi basin, and it has put on full American height in a walled garden a few streets from the Sicilian coast. That is the point of the place. Palermo's botanical garden has spent two centuries working out which foreign species will take to this heat and this soil, and the answer here was emphatic.\n\nIt is easy to walk past, which is the usual fate of a tall straight tree standing among Australian figs that grow sideways and drop columns from their branches. Look up instead, and then look at what is climbing it.\n\nNobody has published an age for it. The Italian register carries girth and height and has no age column at all, and the local writing about the garden's giants describes this tree without dating it. If you know when it went in, tell us and it goes on the page."
+      "story": "The vine wound around this trunk is a houseplant. Monstera deliciosa is the thing sold in pots at knee height across northern Europe, and in the Orto Botanico it has been left to do what it does in the wild, climbing a pecan the way ivy climbs a wall.\n\nThe tree underneath is worth the look on its own. Thirty metres tall and 5.6 metres round, it is one of the giants in a garden full of them, and it belongs on another continent entirely. Carya illinoinensis is the pecan of the American South, a river-bottom hickory from the Mississippi basin, and it has put on full American height in a walled garden a few streets from the Sicilian coast. That is the point of the place. Palermo's botanical garden has spent two centuries working out which foreign species will take to this heat and this soil, and the answer here was emphatic.\n\nIt is easy to walk past, which is the usual fate of a tall straight tree standing among Australian figs that grow sideways and drop columns from their branches. Look up instead, and then look at what is climbing it.\n\nNobody has published an age for it. The Italian register carries girth and height and has no age column at all, and the local writing about the garden's giants describes this tree without dating it. If you know when it went in, tell us and it goes on the page.",
+      "height_m": 30.0,
+      "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "pal_018",
@@ -600,7 +628,9 @@
         ],
         "kind": "flowers",
         "label": "May and June, when it flowers scarlet on bare branches"
-      }
+      },
+      "height_m": 20.0,
+      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "pal_019",
@@ -630,7 +660,9 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 30.0,
+      "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "pal_020",
@@ -660,7 +692,9 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 38.0,
+      "verify_notes": "Height 38.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "pal_021",
@@ -690,7 +724,9 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 36.0,
+      "verify_notes": "Height 36.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     }
   ]
 }
