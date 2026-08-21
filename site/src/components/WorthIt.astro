@@ -37,7 +37,6 @@ interface Props {
   compact?: boolean;
 }
 const { treeId, city, treeName, compact = false } = Astro.props;
-const formLink = `/contribute?kind=correction&city=${encodeURIComponent(city)}&tree=${encodeURIComponent(treeName)}`;
 ---
 <div class={`worthit${compact ? " worthit-compact" : ""}`} data-tree={treeId} data-city={city} data-name={treeName}>
   <div class="worthit-row">
@@ -49,12 +48,16 @@ const formLink = `/contribute?kind=correction&city=${encodeURIComponent(city)}&t
   </div>
   <div class="worthit-why" hidden>
     <span class="worthit-q">What's wrong?</span>
-    <button type="button" class="worthit-chip" data-reason="dead or gone">It's dead or gone</button>
-    <button type="button" class="worthit-chip" data-reason="wrong location">Wrong location</button>
-    <button type="button" class="worthit-chip" data-reason="could not tell which tree">Couldn't tell which tree</button>
-    <button type="button" class="worthit-chip" data-reason="could not reach it">Couldn't reach it</button>
-    <a class="worthit-chip worthit-chip-link" href={formLink}>Something else</a>
+    <button type="button" class="worthit-chip" data-reason="dead or gone" data-q="What did you find there? (optional)" data-ph="A stump, a fallen trunk, nothing at all, and when you were there">It's dead or gone</button>
+    <button type="button" class="worthit-chip" data-reason="wrong location" data-q="Where is it really? (optional)" data-ph="A street corner, a landmark, or paste a maps pin">Wrong location</button>
+    <button type="button" class="worthit-chip" data-reason="could not tell which tree" data-q="Which one did you look at? (optional)" data-ph="The thicker trunk, the one nearest the path, the one by the bench">Couldn't tell which tree</button>
+    <button type="button" class="worthit-chip" data-reason="could not reach it" data-q="What stopped you? (optional)" data-ph="A locked gate, a fence, opening hours, private land">Couldn't reach it</button>
+    <button type="button" class="worthit-chip" data-reason="something else" data-q="Tell us in a line." data-ph="What we got wrong, or what we are missing">Something else</button>
   </div>
   <span class="worthit-thanks" hidden>Thanks, we'll check it.</span>
-  <a class="worthit-more" href={formLink} hidden>Add a detail (optional)</a>
+  <form class="worthit-detail" hidden>
+    <label class="worthit-q" for={`wd-${treeId}`}>Anything that helps us check? (optional)</label>
+    <textarea id={`wd-${treeId}`} rows="2" placeholder=""></textarea>
+    <button type="submit" class="worthit-chip">Send</button>
+  </form>
 </div>

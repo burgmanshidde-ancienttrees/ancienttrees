@@ -34,7 +34,7 @@
 // posts to (live since 2026-07-31), kind 'feedback', tree id and city prefilled
 // from the control's own data attributes. Step 0b reads that table, so dead and
 // wrong-location reports land in the existing correction flow with its same-day
-// rule. No new backend, no accounts, no personal data.
+// rule. No new backend; the account that gates it is the reply channel.
 //
 // Votes are stored and shown to nobody until volume makes a count honest;
 // nothing here renders numbers.
@@ -95,19 +95,54 @@ export const WORTHIT_JS = `
     var rep = box.querySelector('.worthit-report');
     if (rep) rep.setAttribute('aria-expanded', 'true');
   }
+  // One tap did the reporting (Hidde, 2026-08-14: "filling in the form is
+  // quite an effort while a thumb is very inviting"). What unfolds after it
+  // is the one question whose answer lets a run close the case, asked right
+  // here (Hidde, 2026-08-21: "i want them to tell us which of the two elms
+  // it is"), never a redirect to the form: the Google Maps convention is
+  // "Add details (optional)" inside the same sheet, and sending people away
+  // for an optional sentence lost the context when they came back.
   function reportDone(box) {
+    var tree = box.dataset.tree;
     show(box, '.worthit-why', false);
     show(box, '.worthit-report', false);
     show(box, '.worthit-thanks', true);
-    // One tap did the reporting; the form is only for whoever has more to say
-    // (Hidde, 2026-08-14: "filling in the form is quite an effort while a thumb
-    // is very inviting"). Offered, never required.
-    show(box, '.worthit-more', true);
+    var form = box.querySelector('.worthit-detail');
+    if (!form) return;
+    if (localStorage.getItem('at_wrong_detail_' + tree)) {
+      form.hidden = true;
+      box.querySelector('.worthit-thanks').textContent = 'Thanks, that helps.';
+      return;
+    }
+    var reason = localStorage.getItem('at_wrong_' + tree);
+    var chip = reason ? box.querySelector('.worthit-chip[data-reason="' + reason + '"]') : null;
+    var q = form.querySelector('.worthit-q'), ta = form.querySelector('textarea');
+    if (chip && q) q.textContent = chip.dataset.q || q.textContent;
+    if (chip && ta) ta.placeholder = chip.dataset.ph || '';
+    form.hidden = false;
   }
-  document.querySelectorAll('.worthit').forEach(paint);
+  document.querySelectorAll('.worthit').forEach(function(box) {
+    paint(box);
+    if (localStorage.getItem('at_wrong_' + box.dataset.tree)) reportDone(box);
+  });
+  document.addEventListener('submit', function(e) {
+    var form = e.target.closest('.worthit-detail');
+    if (!form) return;
+    e.preventDefault();
+    var box = form.closest('.worthit');
+    if (!session()) {
+      if (window.atOpenSignIn) window.atOpenSignIn(box.dataset.name, 'feedback');
+      return;
+    }
+    var text = (form.querySelector('textarea').value || '').trim();
+    if (!text) return;
+    send(box, 'report detail', text.slice(0, 1000));
+    localStorage.setItem('at_wrong_detail_' + box.dataset.tree, '1');
+    reportDone(box);
+  });
   document.addEventListener('click', function(e) {
     var btn = e.target.closest('.worthit-btn, .worthit-chip, .worthit-report');
-    if (!btn || btn.classList.contains('worthit-chip-link')) return;
+    if (!btn || btn.type === 'submit') return;
     var box = btn.closest('.worthit');
     if (!box) return;
     var tree = box.dataset.tree;
