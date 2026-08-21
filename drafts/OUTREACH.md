@@ -389,6 +389,7 @@ why_them is trusted for ownership now. 106 contacts remain; the daily cap is 40.
 
 | Date | To | Ask | Status |
 |---|---|---|---|
+| 2026-08-21 | Fundação Mata do Buçaco, gabpresidencia@fmb.pt | Reply to their biologist's findings: Santo Elias redwoods removed, their nine plaques merged, three photos live, asks written permission + whether the sequoias are visible from public ground + a link | **sent** |
 | 2026-08-10 | Schloss Schönbrunn Kultur- und Betriebsges.m.b.H., info@schoenbrunn.at | Photos, corrections, the tree we missed, batch 004 | **sent** |
 | 2026-08-10 | Österreichische Bundesgärten (Bundesgärten Wien, Sch, office@bundesgaerten.at | Photos, corrections, the tree we missed, batch 004 | **sent** |
 | 2026-08-10 | Stiftung Preußische Schlösser und Gärten Berlin-Bran, generaldirektion@spsg.de | Photos, corrections, the tree we missed, batch 004 | **sent** |
