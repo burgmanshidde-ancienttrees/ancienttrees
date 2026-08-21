@@ -1,42 +1,43 @@
 {
-  "common_name": "Caucasian Wingnut",
-  "habit": "deciduous",
-  "leaf": [
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10
-  ],
-  "flowers": [
-    4,
-    5
-  ],
-  "fruit": [
-    7,
-    8,
-    9
-  ],
-  "colour": [
-    10
-  ],
-  "bare": [
-    11,
-    12,
-    1,
-    2,
-    3
-  ],
-  "intensity": {
-    "flowers": "nice",
-    "fruit": "worth the trip",
-    "colour": "nice"
-  },
-  "fruit_label": "long green catkins of winged nutlets hang from every branch",
-  "sources": [
-    "https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/a-z-of-british-trees/",
-    "https://www.treesandshrubsonline.org/"
-  ]
+ "common_name": "Caucasian Wingnut",
+ "habit": "deciduous",
+ "leaf": [
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "flowers": [
+  4,
+  5
+ ],
+ "fruit": [
+  7,
+  8,
+  9
+ ],
+ "colour": [
+  10
+ ],
+ "bare": [
+  11,
+  12,
+  1,
+  2,
+  3
+ ],
+ "intensity": {
+  "flowers": "nice",
+  "fruit": "worth the trip",
+  "colour": "nice"
+ },
+ "fruit_label": "long green catkins of winged nutlets hang from every branch",
+ "sources": [
+  "https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/a-z-of-british-trees/",
+  "https://www.treesandshrubsonline.org/"
+ ],
+ "flower_colour": "#BCC77E"
 }

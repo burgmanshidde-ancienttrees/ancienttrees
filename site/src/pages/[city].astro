@@ -130,7 +130,7 @@ const markers: WalkMarker[] = trees.map((t, i) => {
     id: t.id,
     area: (t.location.neighbourhood ?? "").trim(),
     shot: Boolean(cphoto),
-    ...(pk?.map ? { peak: { months: pk.months, effect: pk.map.effect, colour: pk.map.colour } } : {}),
+    ...(pk?.map ? { peak: { months: pk.months, effect: pk.map.effect, colour: pk.map.colour, ...(pk.level ? { level: pk.level } : {}) } } : {}),
   };
 });
 

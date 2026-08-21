@@ -1,43 +1,44 @@
 {
-  "common_name": "Pedunculate Oak",
-  "habit": "deciduous",
-  "leaf": [
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10
-  ],
-  "flowers": [
-    4,
-    5
-  ],
-  "fruit": [
-    9,
-    10
-  ],
-  "colour": [
-    10,
-    11
-  ],
-  "bare": [
-    11,
-    12,
-    1,
-    2,
-    3
-  ],
-  "intensity": {
-    "flowers": "nice",
-    "fruit": "striking",
-    "colour": "nice"
-  },
-  "flower_label": "catkins hang before the leaves are fully out",
-  "fruit_label": "acorns drop, and a good mast year buries the ground in them",
-  "sources": [
-    "https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/a-z-of-british-trees/",
-    "https://www.treesandshrubsonline.org/"
-  ]
+ "common_name": "Pedunculate Oak",
+ "habit": "deciduous",
+ "leaf": [
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "flowers": [
+  4,
+  5
+ ],
+ "fruit": [
+  9,
+  10
+ ],
+ "colour": [
+  10,
+  11
+ ],
+ "bare": [
+  11,
+  12,
+  1,
+  2,
+  3
+ ],
+ "intensity": {
+  "flowers": "nice",
+  "fruit": "striking",
+  "colour": "nice"
+ },
+ "flower_label": "catkins hang before the leaves are fully out",
+ "fruit_label": "acorns drop, and a good mast year buries the ground in them",
+ "sources": [
+  "https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/a-z-of-british-trees/",
+  "https://www.treesandshrubsonline.org/"
+ ],
+ "flower_colour": "#C9CE8A"
 }

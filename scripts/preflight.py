@@ -325,8 +325,14 @@ def check_stacked_pins():
 PHENOLOGY_KEYS = {
     "common_name", "habit", "leaf", "flowers", "fruit", "colour", "bare",
     "intensity", "flower_label", "fruit_label", "colour_label", "sources",
-    "peak",
+    "peak", "flower_colour",
 }
+# Blossom is not curated the way the other moments are. Hidde, 2026-08-21:
+# "alle bomen die bloeien mogen de animatie van bloei in de kleur van hun bloei,
+# op hun moment." So any species whose flowering is visible at all blooms on the
+# map in its own colour, and the only thing that disqualifies one is that nobody
+# can see it: a plane flowers every April and no one has ever noticed. That is
+# what `intensity.flowers == "unseen"` records, and it is the whole gate.
 # `peak` answers the six questions Hidde asked of this database on 2026-08-20:
 # which phenotype, what the calendar looks like, when the peak falls, whether it
 # is worth sharing, what the map should do, and where else it is surfaced. The
@@ -361,6 +367,17 @@ def check_phenology():
                 out.append("%s: unknown key %r. The build reads only %s, so "
                            "anything else is written and never shown."
                            % (name, k, ", ".join(sorted(PHENOLOGY_KEYS))))
+        fc = d.get("flower_colour")
+        if fc is not None:
+            if not (isinstance(fc, str) and re.fullmatch(r"#[0-9A-Fa-f]{6}", fc)):
+                out.append("%s: flower_colour %r is not a #RRGGBB hex" % (name, fc))
+            if not (d.get("flowers") or []):
+                out.append("%s: flower_colour but no flowering months" % name)
+            if (d.get("intensity") or {}).get("flowers") == "unseen":
+                out.append("%s: flower_colour on a flowering rated 'unseen'. "
+                           "If nobody can see it, it must not bloom on the map."
+                           % name)
+
         peak = d.get("peak")
         if isinstance(peak, dict):
             for k in peak:

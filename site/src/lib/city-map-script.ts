@@ -214,6 +214,7 @@ markers.forEach(function(m, idx) {
   // latitude, so a Melbourne ginkgo peaks in May.
   if (m.peak && m.peak.months.indexOf(new Date().getMonth() + 1) !== -1) {
     el.classList.add('pin-peak', 'peak-' + m.peak.effect);
+    if (m.peak.level === 'nice') el.classList.add('peak-quiet');
     el.style.setProperty('--peak', m.peak.colour);
     var bits = document.createElement('span');
     bits.className = 'pin-bits';

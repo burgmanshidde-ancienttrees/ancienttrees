@@ -41,7 +41,7 @@ export interface WalkMarker {
    * and its colour. Absent for a species with no peak. The month is compared
    * in the browser, not at build time, so a cached page still lights up on the
    * right day. */
-  peak?: { months: number[]; effect: string; colour: string };
+  peak?: { months: number[]; effect: string; colour: string; level?: string };
 }
 
 export interface Walk {
