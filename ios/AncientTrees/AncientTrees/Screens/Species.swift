@@ -34,7 +34,7 @@ struct SpeciesView: View {
 
                 ForEach(trees) { t in
                     NavigationLink(value: Route.tree(t.id)) {
-                        TreeCard(tree: t, km: t.distanceKm(from: origin.lat, origin.lng))
+                        TreeCard(tree: t)
                             .padding(.horizontal, 16)
                     }
                     .buttonStyle(.plain)
