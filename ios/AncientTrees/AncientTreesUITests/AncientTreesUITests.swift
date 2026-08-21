@@ -36,7 +36,15 @@ final class AncientTreesUITests: XCTestCase {
     /// sheet first, exactly as a person does.
     @MainActor
     private func raiseSheet(_ app: XCUIApplication) {
-        app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.88)).tap()
+        // Tap, then WAIT for the cards to become touchable rather than
+        // assuming the animation finished. Under a parallel test run the
+        // 0.28 second spring can still be moving when the next tap lands,
+        // which made this the suite's one flaky test.
+        let card = app.buttons.matching(identifier: "tree-card").firstMatch
+        for _ in 0..<3 {
+            app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.88)).tap()
+            if card.waitForExistence(timeout: 4), card.isHittable { return }
+        }
     }
 
     private func launch(_ args: [String] = []) -> XCUIApplication {

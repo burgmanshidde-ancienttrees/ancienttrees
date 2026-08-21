@@ -17,6 +17,7 @@ struct SpotSheet: View {
     let catalogue: Catalogue
     let origin: (lat: Double, lng: Double)
     @Environment(Saved.self) private var saved
+    @Environment(Sightings.self) private var sightings
     @Environment(Account.self) private var account
     @Environment(\.dismiss) private var dismiss
     @State private var adding = false
@@ -25,6 +26,10 @@ struct SpotSheet: View {
     @State private var sent: Bool?
     @State private var ticked: Tree?
     @State private var signingIn = false
+    @State private var camera = false
+    /// The tree the camera is being opened FOR. nil means a tree we do not map.
+    @State private var shooting: Tree?
+    @State private var shot: UIImage?
 
     /// The split the whole sheet stands on: what is close enough to be the
     /// tree the person is standing before. 400 metres is deliberately wide,
@@ -77,6 +82,9 @@ struct SpotSheet: View {
         .accessibilityIdentifier("spot-sheet")
         .presentationDetents([.medium, .large])
         .presentationDragIndicator(.visible)
+        .fullScreenCover(isPresented: $camera) {
+            CameraPicker { keep($0) }.ignoresSafeArea()
+        }
         .sheet(isPresented: $signingIn) {
             SignInSheet(reason: .feedback, localCount: saved.savedCount)
         }
@@ -86,11 +94,11 @@ struct SpotSheet: View {
 
     private var tickList: some View {
         Group {
-            Text("Which tree did you find?")
+            Text("Which tree are you at?")
                 .font(.brand(24, .heavy))
                 .foregroundStyle(Brand.ink)
             ForEach(nearbyTrees) { t in
-                Button { tick(t) } label: { row(t) }
+                Button { collect(t) } label: { row(t) }
                     .buttonStyle(.plain)
             }
             Divider().padding(.vertical, 4)
@@ -100,10 +108,10 @@ struct SpotSheet: View {
                         .font(.system(size: 22))
                         .foregroundStyle(Brand.moss)
                     VStack(alignment: .leading, spacing: 2) {
-                        Text("Standing before a tree we miss?")
+                        Text("A tree we do not have?")
                             .font(.brand(16, .bold))
                             .foregroundStyle(Brand.ink)
-                        Text("Add it, and we will check it out.")
+                        Text("Photograph it and it is yours. Offer it and we will look.")
                             .font(.footnote)
                             .foregroundStyle(Brand.inkSoft)
                     }
@@ -129,8 +137,8 @@ struct SpotSheet: View {
                     .foregroundStyle(Brand.inkSoft)
             }
             Spacer()
-            Image(systemName: saved.isVisited(t.id) ? "checkmark.circle.fill" : "circle")
-                .font(.system(size: 26))
+            Image(systemName: saved.isVisited(t.id) ? "checkmark.circle.fill" : "camera")
+                .font(.system(size: 24))
                 .foregroundStyle(Brand.moss)
         }
         .padding(12)
@@ -153,9 +161,25 @@ struct SpotSheet: View {
         }
     }
 
-    private func tick(_ t: Tree) {
-        if !saved.isVisited(t.id) { saved.toggleVisited(t.id) }
-        withAnimation(.snappy) { ticked = t }
+    /// Collecting one of ours: photograph it, and the photograph IS the
+    /// record. A tap could be done from the sofa; standing there with a camera
+    /// could not (Hidde, 2026-08-21).
+    private func collect(_ t: Tree) {
+        shooting = t
+        camera = true
+    }
+
+    private func keep(_ image: UIImage?) {
+        guard let image else { return }
+        if let t = shooting {
+            if !saved.isVisited(t.id) { saved.toggleVisited(t.id) }
+            sightings.record(treeId: t.id, name: t.name,
+                             lat: t.lat, lng: t.lng, image: image)
+            withAnimation(.snappy) { ticked = t }
+        } else {
+            shot = image
+        }
+        shooting = nil
     }
 
     private func tickedState(_ t: Tree) -> some View {
@@ -166,7 +190,7 @@ struct SpotSheet: View {
             Text("That one is yours")
                 .font(.brand(24, .heavy))
                 .foregroundStyle(Brand.ink)
-            Text("\(t.name) is in your collection.")
+            Text("\(t.name) is in your collection, with your photograph.")
                 .font(.body)
                 .foregroundStyle(Brand.inkSoft)
             doneButton
@@ -177,48 +201,108 @@ struct SpotSheet: View {
 
     private var addForm: some View {
         Group {
-            Text(nearbyTrees.isEmpty ? "No tree on our map here" : "A tree we miss")
+            Text(nearbyTrees.isEmpty ? "No tree of ours here" : "A tree we do not have")
                 .font(.brand(24, .heavy))
                 .foregroundStyle(Brand.ink)
-            Text("Standing before something remarkable? Tell us. We check every tree before it goes on the map.")
+            Text("Photograph it and it joins your own trees. Tell us about it and we will look at it for the map.")
                 .font(.body)
                 .foregroundStyle(Brand.inkSoft)
+
+            // The photograph FIRST, because it is the thing you are here to
+            // do and the thing that keeps the tree yours even if we never
+            // take it.
+            Button { shooting = nil; camera = true } label: {
+                if let shot {
+                    Image(uiImage: shot)
+                        .resizable().aspectRatio(contentMode: .fill)
+                        .frame(height: 170).frame(maxWidth: .infinity)
+                        .clipShape(.rect(cornerRadius: 14))
+                        .overlay(alignment: .bottomTrailing) {
+                            Text("Retake").font(.caption.weight(.semibold))
+                                .foregroundStyle(.white)
+                                .padding(.horizontal, 10).padding(.vertical, 6)
+                                .background(.black.opacity(0.45), in: .capsule)
+                                .padding(10)
+                        }
+                } else {
+                    VStack(spacing: 8) {
+                        Image(systemName: "camera").font(.system(size: 26))
+                            .foregroundStyle(Brand.moss)
+                        Text("Photograph the tree")
+                            .font(.brand(16, .bold)).foregroundStyle(Brand.moss)
+                        Text("Trunk and crown in the frame helps us most")
+                            .font(.caption2).foregroundStyle(Brand.inkSoft)
+                    }
+                    .frame(height: 170).frame(maxWidth: .infinity)
+                    .background(Brand.surface, in: .rect(cornerRadius: 14))
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 14)
+                            .strokeBorder(Brand.hairline, style: StrokeStyle(lineWidth: 1.5, dash: [6, 5]))
+                    }
+                }
+            }
+            .buttonStyle(.plain)
+            .accessibilityIdentifier("spot-camera")
+
             TextField("What makes it special? A name, a species, a story…",
                       text: $why, axis: .vertical)
                 .lineLimit(3...6)
                 .padding(13)
                 .background(Brand.surfaceMuted, in: .rect(cornerRadius: 14))
+
             HStack(spacing: 8) {
-                Image(systemName: "location.fill")
-                    .font(.footnote)
-                    .foregroundStyle(Brand.inkSoft)
-                Text("Your location rides along, so we know which tree.")
-                    .font(.footnote)
-                    .foregroundStyle(Brand.inkSoft)
+                Image(systemName: "lock")
+                    .font(.footnote).foregroundStyle(Brand.inkSoft)
+                Text("Your photograph stays on your phone and in your collection. Offering it is a separate choice.")
+                    .font(.footnote).foregroundStyle(Brand.inkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
             }
-            // The form is visible to everyone; sending needs the account that
+
+            Button { keepMine() } label: {
+                HStack { Spacer()
+                    Label("Keep it as mine", systemImage: "checkmark")
+                        .font(.brand(17, .bold))
+                    Spacer() }
+                    .padding(.vertical, 15)
+                    .background(Brand.moss, in: .rect(cornerRadius: 15))
+                    .foregroundStyle(.white)
+            }
+            .buttonStyle(.plain)
+            .disabled(shot == nil)
+            .opacity(shot == nil ? 0.45 : 1)
+
+            // Offering is the SECOND choice, and it needs the account that
             // lets us answer (2026-08-21, the Google Maps convention).
             Button {
                 if account.isSignedIn { Task { await send() } }
                 else { signingIn = true }
             } label: {
-                HStack {
-                    Spacer()
-                    if sending { ProgressView().tint(.white) }
-                    Text("Send it in").font(.brand(17, .bold))
-                    Spacer()
-                }
-                .padding(.vertical, 15)
-                .background(Brand.moss, in: .rect(cornerRadius: 15))
-                .foregroundStyle(.white)
+                HStack { Spacer()
+                    if sending { ProgressView() }
+                    Text("Keep it and offer it for the map").font(.brand(16, .bold))
+                    Spacer() }
+                    .padding(.vertical, 13)
+                    .background(Brand.surfaceMuted, in: .rect(cornerRadius: 15))
+                    .foregroundStyle(Brand.ink)
             }
+            .buttonStyle(.plain)
             .disabled(sending || why.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
+
             if sent == false {
-                Text("That did not send. Try again in a minute.")
+                Text("That did not send, so it is kept as yours for now. Try offering it again later.")
                     .font(.footnote)
                     .foregroundStyle(Brand.inkSoft)
             }
         }
+    }
+
+    /// Yours and nobody else's: no network, no account, no waiting.
+    private func keepMine() {
+        sightings.record(treeId: nil,
+                         name: why.isEmpty ? "A tree I found" : String(why.prefix(60)),
+                         note: why, lat: origin.lat, lng: origin.lng, image: shot)
+        shot = nil
+        dismiss()
     }
 
     private func send() async {
@@ -230,6 +314,13 @@ struct SpotSheet: View {
         d.city = nearbyCityName ?? ""
         let ok = await Submission.send(d, from: "app:spot",
                                        token: account.session?.accessToken)
+        // Kept either way. A failed send is a network problem, not a reason to
+        // lose somebody's photograph.
+        sightings.record(treeId: nil,
+                         name: why.isEmpty ? "A tree I found" : String(why.prefix(60)),
+                         note: why, lat: origin.lat, lng: origin.lng, image: shot,
+                         status: ok ? .sent : .mine)
+        shot = nil
         sending = false
         withAnimation(.snappy) { sent = ok }
     }
@@ -251,7 +342,7 @@ struct SpotSheet: View {
             Text("Sent. Thank you.")
                 .font(.brand(24, .heavy))
                 .foregroundStyle(Brand.ink)
-            Text("We check every tree before it goes on the map. If it makes it, it will be here.")
+            Text("It is in your collection already. We check every tree before it goes on our map, and you will see where it stands under Collect.")
                 .font(.body)
                 .foregroundStyle(Brand.inkSoft)
             doneButton
