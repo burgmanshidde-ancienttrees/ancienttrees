@@ -10,10 +10,10 @@ boomtips, en nog geen gesprek. Het gesprek wordt daarom nergens genoemd: niet
 afgewezen, gewoon niet beantwoord. Zij komt er zelf op terug als het haar
 menens is.
 
-Eén vraag in de mail, en die gaat over foto's, niet over meer bomen (jouw
-correctie, 2026-08-21). Lissabon heeft 33 bomen, 23 zonder foto en 4 met een
-vage pin, dus foto's zijn het echte gat en het is precies wat een wandelende
-vereniging vanzelf oplevert. De link staat er niet als losse gunst maar als de vorm die
+Twee vragen, in jouw volgorde: foto's eerst (Lissabon heeft 33 bomen, 23 zonder
+foto en maar 4 vage pins, dus daar zit het gat), en daarna of we hun favoriete
+boom missen. Geen verwijzing naar /contribute: zij zit in een mailwisseling, en
+iemand die al schrijft stuur je niet naar een formulier. De link staat er niet als losse gunst maar als de vorm die
 haar eigen aanbod van divulgatie kan aannemen, dus het is haar voorstel dat ik
 aanneem, niet een tweede verzoek.
 
@@ -35,10 +35,13 @@ Muito obrigado pela resposta simpática, fico contente que o projeto vos pareça
 
 A divulgação numa das vossas iniciativas no terreno seria ótima, e uma menção ao ancienttrees.app numa página vossa ajudaria muito a que mais gente em Lisboa encontre estas árvores.
 
-Publicamos 33 árvores em Lisboa e 23 delas ainda não têm fotografia. Se alguém do núcleo passar por uma delas, uma fotografia tirada com o telemóvel é o que mais nos falta, e pode ser enviada aqui: https://ancienttrees.app/contribute
+Publicamos 33 árvores em Lisboa e 23 delas ainda não têm fotografia. Se alguém do núcleo passar por uma delas, uma fotografia tirada com o telemóvel seria muito bem-vinda, basta responder a este email.
+
+E falta-nos alguma árvore? Se tiverem uma favorita que não esteja no site, acrescento-a esta semana.
 
 Com os melhores cumprimentos,
 Hidde
+https://ancienttrees.app/lisbon
 
 ## Wat er staat (Nederlands)
 
@@ -48,7 +51,9 @@ Heel erg bedankt voor je vriendelijke reactie, fijn dat het project jullie inter
 
 Divulgatie bij een van jullie veldactiviteiten zou geweldig zijn, en een vermelding van ancienttrees.app op een pagina van jullie zou enorm helpen om meer mensen in Lissabon deze bomen te laten vinden.
 
-We publiceren 33 bomen in Lissabon en 23 daarvan hebben nog geen foto. Als iemand van het núcleo er langs komt, is een foto met de telefoon wat we het hardst missen, en die kan hier naartoe: https://ancienttrees.app/contribute
+We publiceren 33 bomen in Lissabon en 23 daarvan hebben nog geen foto. Als iemand van het núcleo er langs komt, zou een foto met de telefoon heel welkom zijn, gewoon door deze mail te beantwoorden.
+
+En missen we nog een boom? Als jullie een favoriet hebben die niet op de site staat, voeg ik hem deze week toe.
 
 Met vriendelijke groet,
 Hidde

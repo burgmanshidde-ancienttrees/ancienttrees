@@ -618,6 +618,7 @@ which exists because batch 004 told Schoenbrunn it owned trees it does not.
 | 2026-08-16 | 5 Spanish and Catalan (AEA, AEPJP, Bosques sin Fronteras, Plantipodes-AM, Observatori Forestal de Catalunya) | idem | **sent** |
 | 2026-08-16 | 6 Italian (Societa Botanica Italiana, ISA Italia, Italia Nostra, Carteinregola, Villa Ghigi, Amici del Parco Trotter) | idem | **sent** |
 | 2026-08-16 | 5 UK and Irish (Tree Council, Arboricultural Association, Ancient Tree Forum, Tree Council of Ireland, Kings Weston Action Group) | idem | **sent** |
+| 2026-08-21 | Reply to Quercus Lisboa (Silvia Moutinho), who wrote back offering to promote the platform at a field activity | Yes to the promotion, a mention on their site, photographs for the 23 Lisbon trees without one, and which tree we miss | **sent** |
 
 Built by `scripts/build_batch_005.py`, which reads every tree count from the
 live city files at build time so no mail can quote a number that has moved.

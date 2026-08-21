@@ -111,6 +111,13 @@ haal maar weg." There was nothing to arrange, so the sentence was there to
 sound willing. It is the same fault as the sentence that announces what the
 next sentence will do, and the same fix: say the concrete thing or say nothing.
 
-All three are now in `scripts/mailcheck.py` (DECLINING WHAT THEY OFFERED,
-ASKING TWICE, PROMISING UNNAMED WORK); the second reads
+**And never point a live correspondent at the contribute form.** "Vraag gewoon
+om fotos, stuur ze niet perse naar die contribute pagina." A person who has
+written to us is the best channel there is; a form turns them back into a
+stranger filling in fields, and their photograph arrives without the thread it
+belongs to. Ask in the mail, let them reply to the mail.
+
+All four are now in `scripts/mailcheck.py` (DECLINING WHAT THEY OFFERED,
+ASKING TWICE, PROMISING UNNAMED WORK, FORM LINK IN A LIVE THREAD); ASKING
+TWICE reads
 data/outreach-sent.json so it knows what this address was already asked.

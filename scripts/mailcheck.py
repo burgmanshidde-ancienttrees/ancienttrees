@@ -35,6 +35,8 @@ Four failure modes, all recorded, all mine:
 6. ASKING TWICE. The same ask to somebody who already had it reads as need.
 7. PROMISING UNNAMED WORK. "I'll take care of the rest" commits to nothing and
    invents an arrangement nobody asked for.
+8. FORM LINK IN A LIVE THREAD. Never send a person who is already writing to us
+   off to /contribute. They reply; that is the channel.
 
 What it CANNOT check is the positive half, which is where his own drafts win,
 so read this before writing rather than only after. A mail of his GIVES before
@@ -138,6 +140,14 @@ CHECKS = [
         r"den Rest (?:mache|erledige) ich",
         r"(?:zeg maar|diga-me|dime|sag mir|tell me) (?:maar )?(?:wat|o que|lo que|was|what)"
         r"[^.!?\n]{0,40}(?:nodig|precisa|necesita|brauchen|need)",
+    ]),
+    # Hidde, 2026-08-21: "vraag gewoon om fotos, stuur ze niet perse naar die
+    # contribute pagina." Somebody who has already written to us is the best
+    # channel we will ever have with them, and pointing them at a web form
+    # turns a correspondent back into a stranger filling in fields. The form is
+    # for readers arriving cold; a live thread answers by replying.
+    ("FORM LINK IN A LIVE THREAD", [
+        r"ancienttrees\.app/contribute",
     ]),
     ("PROCESS-PITCHING", [
         r"two independent sources", r"\bwe verify\b", r"\bour (?:process|method|workflow)\b",
