@@ -172,9 +172,31 @@ struct TreeCard: View {
     /// Ages in the feed are sentences ("roughly 131 to 161 years (sources
     /// disagree)"). A card has room for the number, not the caveat, and the
     /// caveat is on the tree's own page where it belongs.
+    /// The age a CARD can carry: a number, not a sentence.
+    ///
+    /// 654 of our ages open with a hedge ("roughly", "about", "over",
+    /// "estimated", "at least"), and several carry a clause after a comma or a
+    /// bracket. On a one-line meta row that reads as "Bethlehem Plane ·
+    /// estimated…" and the reader learns nothing at all (Hidde, 2026-08-21).
+    ///
+    /// So the number wins where the feed has one, which it now does for 1,159
+    /// of 1,406 trees. The hedge is not dropped, it MOVED: the tree page one
+    /// tap away prints the sentence as written, hedge and disagreement and
+    /// all, which is where a claim about what we do and do not know belongs.
     private func shortAge(_ s: String) -> String {
-        if let r = s.range(of: " (") { return String(s[..<r.lowerBound]) }
-        return s
+        if let lo = tree.ageMin, lo > 0 {
+            if let hi = tree.ageMax, hi > lo { return "\(lo)-\(hi) years" }
+            return "\(lo) years"
+        }
+        // No number: trim the sentence back to its first clause and drop the
+        // opening hedge, so at least something readable survives.
+        var t = s
+        if let r = t.range(of: " (") { t = String(t[..<r.lowerBound]) }
+        if let r = t.range(of: ",") { t = String(t[..<r.lowerBound]) }
+        for hedge in ["estimated ", "roughly ", "approximately ", "around ", "about "] {
+            if t.lowercased().hasPrefix(hedge) { t = String(t.dropFirst(hedge.count)); break }
+        }
+        return t
     }
 
     private func fmt(_ km: Double) -> String {
