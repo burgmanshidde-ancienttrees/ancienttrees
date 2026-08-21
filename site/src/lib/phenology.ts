@@ -199,6 +199,16 @@ interface PhenologyEntry {
   colour_label?: string;
   peak?: PhenologyPeak;
   flower_colour?: string;
+  /** The single month the MAP lights up, against `flowers`, which is the wider
+   * band the season chart draws. Almost every tree flowers for one to three
+   * weeks while the band spans two months, so a pin that followed the band
+   * would claim sixty-one days for a display of ten (Hidde, 2026-08-21:
+   * "bloeien bomen uberhaupt een hele maand?"). Which weeks it is cannot be
+   * known: that moves with the year and the place. Which month is likeliest
+   * can be, and it rides the same latitude shift as everything else. */
+  flower_peak?: number;
+  /** How long the display actually lasts, for the reader rather than the map. */
+  flower_days?: string;
 }
 
 /** The one moment of the year this species is worth a trip for, and what the
@@ -323,6 +333,7 @@ export function phenologyFor(tree: Tree, lat: number): PhenologyEntry | null {
   if (e.peak?.months?.length) {
     out.peak = { ...e.peak, months: shift(e.peak.months, delta) };
   }
+  if (e.flower_peak) out.flower_peak = shift([e.flower_peak], delta)[0];
   return out;
 }
 
@@ -344,7 +355,7 @@ export function peakFor(tree: Tree, lat: number): PhenologyPeak | null {
   if (e.flower_colour && e.flowers?.length && level && level !== "unseen") {
     return {
       moment: "flowers",
-      months: e.flowers,
+      months: e.flower_peak ? [e.flower_peak] : e.flowers,
       share: level === "worth the trip",
       map: { effect: "blossom", colour: e.flower_colour, pulse: true },
       // A subtle flowering whispers rather than announces. The pin reads the
