@@ -43,6 +43,32 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FIRST_BATCH = "2026-08-08"
 
 
+def our_subjects():
+    """The subjects we sent, normalised. A reply keeps them behind "Re:".
+
+    Added 2026-08-23, and it closes the hole that mattered most. Hanna Hirsch,
+    chair of Bomenstichting Amsterdam, answered from hhirsch@xs4all.nl, a
+    private address at a free-mail host. The sender filter excludes free-mail
+    domains on purpose, so that mail was never opened and the most useful
+    reply this project has had was invisible to the reader. Hidde spotted it:
+    "volgens mij is er een mail vanuit amsterdam waarop niet geantwoord is."
+
+    Matching the SUBJECT is the fix and it is not a widening of what gets
+    read: a message only qualifies if its subject is one WE wrote, or carries
+    the domain name of the site. A private mail about anything else still
+    stays shut."""
+    d = json.load(open(os.path.join(ROOT, "data", "outreach-sent.json")))
+    out = set()
+    for s2 in d["sent"]:
+        t = (s2.get("subject") or "").strip().lower()
+        for p in ("re:", "fwd:", "fw:", "aw:", "antw:", "r:"):
+            while t.startswith(p):
+                t = t[len(p):].strip()
+        if len(t) > 12:
+            out.add(t)
+    return out
+
+
 def allowed_senders():
     """Addresses we mailed, and their domains. Nothing else is ever opened."""
     d = json.load(open(os.path.join(ROOT, "data", "outreach-sent.json")))
@@ -103,6 +129,7 @@ def main():
         return 1
 
     addrs, domains, FREEMAIL_SEEN = allowed_senders()
+    SUBJECTS = our_subjects()
     d = imaplib.IMAP4_SSL(host)
     d.login(user, pw)
     d.select("INBOX", readonly=True)          # readonly: cannot change his mail
@@ -111,20 +138,64 @@ def main():
              "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][int(m) - 1]
     ok, data = d.search(None, f'(SINCE {int(dd)}-{month}-{y})')
     ids = data[0].split()
-    matched, skipped = [], 0
+    matched, skipped, bounces = [], 0, []
     for i in ids:
         ok, hdr = d.fetch(i, "(BODY.PEEK[HEADER.FIELDS (FROM DATE SUBJECT)])")
         if ok != "OK" or not hdr or not hdr[0]:
             continue
         h = email.message_from_bytes(hdr[0][1])
         frm = email.utils.parseaddr(h.get("From", ""))[1].lower()
-        if not frm or (frm not in addrs and frm.split("@")[-1] not in domains):
+        subj_peek = decode(h.get("Subject"))
+        subj_norm = subj_peek.strip().lower()
+        for pre in ("re:", "fwd:", "fw:", "aw:", "antw:", "r:"):
+            while subj_norm.startswith(pre):
+                subj_norm = subj_norm[len(pre):].strip()
+        # BOUNCES. A dead address answers from mailer-daemon, never from the
+        # address we wrote to, so the sender filter above hid every one of
+        # them: 146 mails out and this reader could not have told us that one
+        # never arrived. Added 2026-08-23. The match is on the postmaster
+        # sender AND the standard delivery-report subjects, so an ordinary
+        # mail from a person is still never opened on a subject alone.
+        bouncer = frm.split("@")[0] in ("mailer-daemon", "postmaster")
+        if bouncer and any(k in subj_peek.lower() for k in
+                           ("delivery status", "undelivered", "returned",
+                            "delivery has failed", "failure notice")):
+            bounces.append((subj_peek, h.get("Date", "")))
+            continue
+        # Never his own outgoing copy. Gmail delivers a copy of anything sent
+        # through its SMTP back to the account, so subject matching alone
+        # pulled in all 146 of our own mails: 172 "replies" out of 277
+        # messages, which is how a filter tells you it is broken.
+        # Never his own outgoing copy, and never a robot. Gmail delivers a
+        # copy of anything sent through its SMTP back to the account, and
+        # subject matching then pulls in all 146 of our own mails. The second
+        # half keeps out Ahrefs, Cloudflare, Search Console and GitHub, which
+        # all put the domain name in their subject lines and are not people.
+        selves = {(os.environ.get("OUTREACH_SMTP_USER") or "").lower().strip()}
+        selves |= {email.utils.parseaddr(os.environ.get("OUTREACH_FROM") or "")[1].lower()}
+        robot = frm.split("@")[0] in ("noreply", "no-reply", "notifications",
+                                      "sc-noreply", "notify", "donotreply")
+        robot = robot or frm.split("@")[-1] in ("notify.cloudflare.com",
+                                                "notifications.github.com",
+                                                "github.com", "ahrefs.com",
+                                                "google.com", "feverup.com")
+        if frm in selves or robot:
+            skipped += 1
+            continue
+        by_subject = "ancienttrees" in subj_norm or subj_norm in SUBJECTS
+        if not frm or (frm not in addrs and frm.split("@")[-1] not in domains
+                       and not by_subject):
             skipped += 1                       # never opened, never printed
             continue
         matched.append((i, frm, decode(h.get("Subject")), h.get("Date", "")))
 
     print(f"inbox since {since}: {len(ids)} messages, {len(matched)} from "
           f"addresses we wrote to, {skipped} never opened.\n")
+    if bounces:
+        print(f"BOUNCES ({len(bounces)}), an address that never received us:")
+        for subj, date in bounces:
+            print(f"  {date}  {subj[:70]}")
+        print()
     for i, frm, subj, date in matched:
         print(f"--- {date}\n    from: {frm}\n    subj: {subj}")
         if read_bodies:
