@@ -1014,6 +1014,26 @@
    "cities_touched": 1,
    "trees": 3,
    "logged": true
+  },
+  {
+   "started": "2026-08-22T07:53:21+00:00",
+   "date": "2026-08-22",
+   "run_id": "32560803824",
+   "minutes": 32.5,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 208,
+   "denials": 22,
+   "denials_source": "permission_denials: Bash, Bash(curl), Bash(echo), Bash(find), Bash(for), Bash(printenv), Bash(python3), Bash(rm), Bash(test), Bash(which)",
+   "ended": "success",
+   "tokens": 16495795,
+   "claims_held": [
+    "haarlem"
+   ],
+   "commits": 11,
+   "cities_touched": 5,
+   "trees": 14,
+   "logged": true
   }
  ],
  "schedule_changes": [
