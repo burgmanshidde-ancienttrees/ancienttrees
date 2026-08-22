@@ -1,0 +1,112 @@
+{
+ "_note": "Dutch overlay for Den Haag, hand-written 2026-08-22. Text only: every coordinate, photo, licence, best_time and walk stays in data/cities/the-hague.json. The search term is 'monumentale bomen', which is what Dutch readers type and what the Bomenstichting itself uses; 'oude bomen' is a translation, not a query. Nothing here is researched: every fact, age, hedge and dispute comes from the English file and is rendered, never sharpened. One correction carried over: the English question_meta says sixteen trees are mapped, the file holds twenty-one, and the Dutch says twenty-one.",
+ "city": "Den Haag",
+ "title": "Monumentale bomen in Den Haag: de 21 mooiste",
+ "meta_description": "De oudste boom van Den Haag is een perenboom uit 1638, achter een hek in een hofje. Plus twintig andere monumentale bomen, van Koekamp tot Hofvijver.",
+ "intro": "De oudste boom van Den Haag staat achter een gesloten hek, in de binnentuin van een hofje, en wordt nog altijd verzorgd door de vrouwen die er wonen, precies zoals sinds 1638. De rest van de lijst is een stuk makkelijker te bereiken. Vier minuten ten noorden van Den Haag Centraal staat een achttiende-eeuwse eik op de oude hertenweide, en vlakbij een paardenkastanje die in 1997 tachtig meter over dat veld werd gesleept op stalen platen, in plaats van te wijken voor een verkeerstunnel. Eenentwintig bomen, van een moerascipres in een paleistuin tot een rij kastanjes langs de Hofvijver.",
+ "question_title": "Wat is de oudste boom van Den Haag? (uit 1638)",
+ "question_meta": "Een perenboom uit 1638 in de gesloten binnentuin van een hofje, waarschijnlijk de oudste peer van Nederland, is de oudste boom van Den Haag.",
+ "question_answer": "De oudste boom van Den Haag is de juttepeer van het Heilige Geesthofje, een perenboom die in 1638 werd geplant in de binnentuin van een nog altijd bewoond hofje bij de Paviljoensgracht. Met ongeveer 388 jaar geldt hij breed als de oudste perenboom van Nederland, en de bewoonsters maken er elk jaar nog gelei van.",
+ "question_context": "De oudste boom van Den Haag heeft het gered omdat hij nooit om ruimte hoefde te vechten op open, openbare grond. De peer van het Heilige Geesthofje staat bijna vier eeuwen binnen een ommuurde binnentuin die sinds 1616 als woonhof functioneert. Zijn naaste concurrenten namen de omgekeerde route. De eik op de Koekamp, ongeveer 300 jaar oud, groeit op grond die juist nooit particulier was, beschermd door een belofte van Willem van Oranje uit 1576 dat het Haagse Bos nooit verkocht of gekapt zou worden, een garantie die standhield op een ernstige onderbreking na: de kap tijdens de Duitse bezetting. Een tweede eik op dezelfde weide, en een gewone plataan verderop bij Leidschendam, zijn door het landelijke register allebei gedateerd op ergens tussen 1750 en 1800, een band van vijftig jaar in plaats van een jaartal, waarmee ze tussen de 225 en 275 jaar oud zijn. Daarna zakt de lijst de negentiende eeuw in, naar landgoedgrond die later werd volgebouwd, naar twee begraafplaatsen en naar de tuin van een schilder. Wat ze bindt is niet leeftijd maar begrenzing: elk van deze bomen kwam terecht binnen iets waar niemand een reden had om overheen te gaan.",
+ "faq": [
+  {
+   "q": "Wat is de oudste boom van Den Haag?",
+   "a": "De juttepeer van het Heilige Geesthofje, een perenboom die in 1638 in de binnentuin van een nog altijd bewoond hofje werd geplant, waarschijnlijk de oudste perenboom van Nederland."
+  },
+  {
+   "q": "Zijn de monumentale bomen van Den Haag gratis te bezoeken?",
+   "a": "De meeste zijn gratis en op elk uur toegankelijk, waaronder alles op de Koekamp, het Malieveld, de Vijverberg en in het Huijgenspark, de begraafplaats Oud Eik en Duin en het landgoedpark Ockenburgh. Vier niet: voor de binnentuin van de juttepeer heb je een rondleiding, een afspraak of Open Monumentendag nodig; de eik in de Mesdag-tuin bereik je via het museum tijdens openingstijden; de eik op de Joodse begraafplaats aan de Scheveningseweg staat achter een muur die niet elke dag open is; en de moerascipres in de Paleistuin is dicht op de enkele dag dat een staatsbezoek dat vraagt."
+  },
+  {
+   "q": "Welke boom in Den Haag is tachtig meter verplaatst?",
+   "a": "De Koekampkastanje. In maart 1997 werd de witte paardenkastanje op stalen platen tachtig meter over de Koekamp gesleept, met honderd ton grond nog om zijn wortels, om hem te redden van de werkzaamheden aan de Koningstunnel. De verplaatsing haalde het Guinness Book of Records."
+  },
+  {
+   "q": "Wat is de Kabouterboom?",
+   "a": "Een eik van ongeveer 94 jaar in de Bosjes van Zanen die generaties buurtkinderen behandelen als een kabouterwoning, met briefjes en kleine poppetjes in de holle stam."
+  }
+ ],
+ "strings_note": "Per-tree fields: name, species (Dutch common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes.",
+ "trees": {
+  "hag_001": {
+   "name": "De juttepeer van het Heilige Geesthofje",
+   "species": "Peer (Pyrus communis)",
+   "age_estimate": "ongeveer 388 jaar",
+   "access": "Beperkt toegankelijk: rondleidingen van het Buitenmuseum, op afspraak of tijdens Open Monumentendag. Niet vrij toegankelijk voor losse bezoekers",
+   "transport": "10 tot 15 minuten lopen vanaf Den Haag Centraal of station Hollands Spoor",
+   "story": "De vrouwen van dit hofje maken al sinds minstens de zeventiende eeuw gelei van de peren van deze boom, en de boom waar ze nu van plukken is zeer waarschijnlijk dezelfde als die van hun voorgangsters vier eeuwen geleden. Hij werd in 1638 geplant in de binnentuin van het Heilige Geesthofje, in 1616 gesticht om vrouwen van onbesproken gedrag onderdak te geven, en geldt breed als de oudste perenboom van Nederland. Een juttepeer: een klein, hard, oud Nederlands ras dat zich beter laat koken en inmaken dan zo van de tak eten. De binnentuin was het grootste deel van zijn geschiedenis een echte moestuin voor de bewoonsters, groente en fruit voor het huishouden en niet voor de sier, en de peer overleefde alles wat er ooit naast stond. Hij draagt nog elk jaar vrucht, geoogst en tot gelei verwerkt door de huidige bewoonsters, in een traditie die niemand formeel hoefde te herstellen omdat hij nooit is opgehouden. De binnentuin ligt niet zomaar open voor voorbijgangers; het hofje is nog altijd bewoond, en bezoeken betekent een rondleiding boeken via het Buitenmuseum, een afspraak maken of komen op Open Monumentendag. Een kleine prijs om naast iets te staan dat zes jaar voor de Nachtwacht de grond in ging."
+  },
+  "hag_002": {
+   "name": "De eik van de Koekamp",
+   "species": "Zomereik (Quercus robur)",
+   "age_estimate": "ongeveer 300 jaar",
+   "access": "Gratis, openbaar park, altijd open",
+   "transport": "Naast station Den Haag Centraal, 5 tot 10 minuten lopen",
+   "story": "Willem van Oranje garandeerde het bos van deze eik persoonlijk het eeuwige leven, viereneenhalve eeuw voordat iemand eraan dacht de jaarringen van de boom zelf te tellen. In 1576, de Tachtigjarige Oorlog tegen Spanje was al aan de gang, tekende Oranje namens de Staten van Holland een akte die beloofde dat het Haagse Bos en de Koekamp daarbinnen nooit verkocht of voor hout gekapt zouden worden, een zeldzame zestiende-eeuwse natuurgarantie die opmerkelijk genoeg standhield. Deze eik, ongeveer 300 jaar oud en staand binnen het omheinde hertenkamp van de Koekamp, profiteert er rechtstreeks van: te jong om te hebben bestaan toen Oranje zijn belofte deed, maar geworteld in grond die door die belofte al ruim een eeuw beschermd was toen deze eikel viel. Edelherten en damherten grazen nog altijd om zijn voet, dezelfde functie die de Koekamp al eeuwen vervult, een werkend stuk platteland bewaard binnen een Europese hoofdstad in plaats van een themapark dat er een nabootst. Het geluk van het bos liep maar één keer af, en kort: tijdens de Duitse bezetting werd de helft ervan gekapt voor militaire doeleinden, een zeldzame onderbreking in een verder ononderbroken reeks bescherming die teruggaat op een belofte die een Nederlandse prins deed voordat zijn eigen oorlog gewonnen was."
+  },
+  "hag_003": {
+   "name": "De veteraanlinde van Clingendael",
+   "species": "Hollandse linde (Tilia x europaea)",
+   "age_estimate": "ongeveer 290 jaar",
+   "access": "Gratis, openbaar landgoedpark, altijd open",
+   "transport": "Tram of bus naar Haagse Hout, daarna een klein stuk lopen, ongeveer 20 tot 25 minuten vanaf het centrum van Den Haag",
+   "story": "Deze linde is de laatste van een rij die ergens in de afgelopen drie eeuwen ophield een rij te zijn. Een achttiende-eeuwse tekening van de formele tuinen van Clingendael, aangelegd rond 1730, laat verschillende geleide linden zien in een strakke lijn, gesnoeid en op latwerk geleid tot de meetkundige vormen die de Nederlandse tuinkunst van die tijd mooi vond. Alle andere bomen uit die rij zijn verdwenen; deze bleef als enige over, en zonder de regelmatige snoei die hem ooit in het gelid hield heeft hij drie eeuwen lang een knoestige, onregelmatige vorm aangenomen die in niets meer lijkt op de nette rij waaraan hij ontsnapte. Die toevallige wildheid bleek er juist toe te doen. In 2019 was Den Haag de eerste Nederlandse gemeente die formeel een status voor veteraanbomen invoerde, overgenomen uit Engeland, die de laatste levensfase van een boom beschermt met een eigen hekwerk en zo min mogelijk ingrijpen in plaats van de gebruikelijke snoei van jongere exemplaren, en deze linde was de eerste boom in het land die hem kreeg. Die status erkent precies wat de boom nu waardevol maakt: geen netheid, maar het opgestapelde bewijs van drie eeuwen alleen staan, op een landgoed dat er meer dan eens omheen is herbouwd en herplant."
+  },
+  "hag_004": {
+   "name": "De Postzegelboom",
+   "species": "Witte paardenkastanje (Aesculus hippocastanum)",
+   "age_estimate": "minstens 150 jaar, stond er al voor 1883",
+   "access": "Gratis, openbare straat, altijd",
+   "transport": "10 tot 15 minuten lopen vanaf Den Haag Centraal",
+   "story": "Op woensdag- en zaterdagmiddag verdrongen zich hier soms wel honderd postzegelverzamelaars tegelijk rond deze witte paardenkastanje, jarenlang ruilend en verkopend onder de takken, tot het gebruik langzaam doodbloedde. Zijn naam, de Postzegelboom, komt van die informele openluchtmarkt en niet van iets botanisch, en de handel liep door in de jaren voor de Tweede Wereldoorlog, toen filatelisten elkaar hier voor het eerst onder het blad begonnen te treffen, tegenover paleis Noordeinde. De boom zelf is tientallen jaren ouder dan die markt: hij stond al als klein boompje in een particuliere tuin toen koning Willem II halverwege de negentiende eeuw alle bebouwing tegenover zijn paleis liet slopen om plaats te maken voor een neogotische galerij. Die gebouwen raakten zelf in verval en gingen in 1883 definitief tegen de vlakte, maar de kastanje, weggestopt in wat ooit iemands tuin was, ontkwam aan beide sloopronden en bleef achter de nieuwe galerij staan. De PTT vond die band belangrijk genoeg om in 1990 een volledige herstelbehandeling door een boomchirurg te betalen, en hield daarmee zowel een monumentale boom als de herinnering aan de markt die hem beroemd maakte in leven."
+  },
+  "hag_005": {
+   "name": "De Kabouterboom",
+   "species": "Zomereik (Quercus robur)",
+   "age_estimate": "ongeveer 94 jaar",
+   "access": "Gratis, openbaar park, altijd open",
+   "transport": "Tram of bus naar Haagse Hout, daarna een klein stuk lopen, ongeveer 20 minuten vanaf het centrum van Den Haag",
+   "story": "Een holte in de stam van deze eik is zolang iemand in de buurt zich kan herinneren ingericht als poppenhuis, compleet met briefjes voor kabouters die nog nooit iemand naar eigen zeggen heeft gezien. Met zijn ongeveer 94 jaar is de Kabouterboom veruit de jongste van deze lijst, en hij staat erop om een andere reden dan de rest: generaties kinderen uit de Bosjes van Zanen behandelen juist deze eik als gedeeld verzinsel en stoppen poppetjes, briefjes en kleine cadeautjes in zijn holte en tussen zijn lage takken, een gewoonte die volwassenen in stand hebben gehouden in plaats van ontgroeid. Niemand organiseert het en geen bordje legt het uit; ouders geven het spel gewoon door aan hun kinderen zoals je elke plaatselijke gewoonte doorgeeft, en de boom houdt daardoor een wisselende bezetting van piepkleine bewoners. Hij staat aan de rand van landgoed Clingendael, een makkelijk uitstapje vanaf de veteraanlinde op korte loopafstand, en is het bewijs dat een boom op een lijst als deze terechtkomt om redenen die niets met omtrek of eeuwen te maken hebben, en alles met wat een buurt van hem heeft gemaakt."
+  },
+  "hag_006": {
+   "name": "De eik van de Bezuidenhoutseweg",
+   "species": "Zomereik (Quercus robur)",
+   "age_estimate": "225 tot 275 jaar, geplant ergens tussen 1750 en 1800",
+   "access": "Gratis, open parkgrond op de Koekamp, altijd",
+   "transport": "Vier minuten lopen ten noorden van Den Haag Centraal",
+   "story": "Vier minuten ten noorden van de perrons van Den Haag Centraal, op de oude hertenweide die de Koekamp heet, staat een eik die het landelijke register dateert op ergens tussen 1750 en 1800. Dat is meer een schouderophalen van vijftig jaar dan een jaartal, en het maakt de boom hoe dan ook minstens 225 jaar oud, mogelijk eerder 275. De Koekamp is de reden dat hij er staat. Deze strook naast het Haagse Bos is eeuwenlang graasweide geweest, eerst voor vee en later voor herten, grond waarop nooit gebouwd is en die nooit als tuin is aangelegd, dus de bomen erop mochten oud worden in plaats van in een ontwerp te worden gesnoeid. Niet alle kregen die kans. Tijdens de Duitse bezetting verdwenen heel wat bomen rond de Koekamp in de kachel of gingen ze om voor de tanktegracht die dwars door deze kant van de stad werd gegraven. Deze eik bleef door allebei heen staan. Hij heeft geen naam, geen bordje en geen opgetekende geschiedenis, hij is van Staatsbosbeheer, en hij is een van de makkelijkst bereikbare oude bomen van Nederland: het station uit, de weg over, en daar staat hij. Weet jij wie hem geplant heeft, laat het ons weten."
+  },
+  "hag_007": {
+   "name": "De plataan van de Westvlietweg",
+   "species": "Gewone plataan (Platanus x acerifolia)",
+   "age_estimate": "225 tot 275 jaar, geplant ergens tussen 1750 en 1800",
+   "access": "Gratis, op de openbare berm van de Westvlietweg in Leidschendam",
+   "transport": "Bus vanaf Den Haag Centraal richting Leidschendam en een klein stuk lopen, ongeveer 25 tot 30 minuten",
+   "story": "Rijke families uit Den Haag en Delft bouwden de zeventiende en achttiende eeuw lang buitenhuizen langs de Vliet, en deze plataan ging de grond in toen die mode nog liep. Het register dateert hem op tussen 1750 en 1800, wat hem ergens tussen de 225 en 275 jaar oud maakt, staand voor Zeerust, een van de buitens die aan de Westvlietweg zijn geregen. De weg is de halve reden om te komen. De Vliet is een kanaal dat de Romeinen groeven en dat de Nederlanders nooit meer hebben laten liggen, de Westvlietweg loopt ernaast, en de strook staat vol met de hekken en koetshuizen van buitenplaatsen, de zomerverblijven die kooplieden bouwden om er in augustus de stad mee uit te zijn. Bijna alle beplanting uit die tijd is inmiddels twee keer vervangen. Deze boom niet. Het is een gewone plataan, de hybride die later de standaard straatboom van half Europa zou worden, hier neergezet lang voordat iemand wist dat dat ervan zou komen. De provincie is eigenaar en de berm is openbaar, dus je kunt eronder gaan staan zonder iemand iets te vragen. Wees wel eerlijk over de reis: hij ligt buiten de stad en hij staat alleen, dus dit is een uitstapje en geen wandeling."
+  },
+  "hag_008": {
+   "name": "De Koeweide-eik van Ockenburgh",
+   "species": "Zomereik (Quercus robur)",
+   "age_estimate": "ongeveer 210 jaar",
+   "access": "Gratis, het gemeentelijke landgoedpark Ockenburgh, altijd open",
+   "transport": "Tram of bus naar Loosduinen en een wandeling het landgoed in, ongeveer 35 tot 40 minuten vanaf Den Haag Centraal",
+   "story": "Iemand schreef een boeklang gedicht over dit landgoed, anderhalve eeuw voordat de eik geplant werd. Jacob Westerbaen, een Haagse arts die dichter werd, bouwde Ockenburgh in 1654 in de duinen achter Loosduinen en publiceerde daarna duizenden regels over zijn eigen terrein, wandeling voor wandeling, boom voor boom. De eik kwam veel later. Het register zet hem in de jaren tien van de negentiende eeuw, wat hem ruim twee eeuwen oud maakt, groeiend aan de noordkant van de Koeweide, de oude koeienwei naast het landhuis. Wat hij heeft zien gebeuren, is de trage overgang van het landgoed naar publiek bezit. Ockenburgh ging van particulier lusthof naar camping naar gemeentepark, en het huis zelf stond jaren te verkommeren voordat het werd hersteld. De duinen erachter werden tijdens de Duitse bezetting versterkt, toen de Atlantikwall langs deze kust liep en grote stukken landschap daarvoor werden geruimd. De eik hield zijn plek aan de rand van de weide door dat alles heen. De stad is nu eigenaar van het landgoed en de hekken en paden zijn gratis, wat dit tot een van de weinige tweehonderd jaar oude bomen van het land maakt waar je op elk uur van elke dag naartoe kunt lopen."
+  },
+  "hag_009": {
+   "name": "De eik van de Van Soutelandelaan",
+   "species": "Zomereik (Quercus robur)",
+   "age_estimate": "ongeveer 210 jaar",
+   "access": "Gratis, openbaar groen achter de Van Soutelandelaan",
+   "transport": "Bus of tram naar Mariahoeve, ongeveer 20 minuten vanaf Den Haag Centraal",
+   "story": "Deze eik is ruwweg anderhalve eeuw ouder dan elk gebouw om hem heen. Hij staat in het groen achter de Van Soutelandelaan, in Mariahoeve, een wijk die pas eind jaren vijftig ontstond, toen Den Haag binnen zijn eigen grenzen geen ruimte meer had en een complete buurt met flats en lage blokken op de landgoedgrond ten noordoosten van het Haagse Bos zette. Het register dateert de eik op tussen 1810 en 1820, dus hij is zijn 205e jaar voorbij en waarschijnlijk niet veel verder dan zijn 215e. Hij was al een forse boom toen de grond hier nog weiland en buitenplaats was. Ontwerpers van die generatie streken een terrein meestal glad en begonnen bij niets; hier is er om het bos heen gebouwd, en tussen de blokken staat nog een handvol bomen uit de landgoedtijd. Op zo'n tweehonderd meter afstand groeit een beuk van bijna dezelfde leeftijd, wat hier een korte wandeling met twee oude bomen van maakt in plaats van één stop. Wie de eik geplant heeft en waarom, heeft niemand opgeschreven. Ben je opgegroeid in deze hoek van Mariahoeve en ken je het verhaal, laat het ons weten."
+  },
+  "hag_010": {
+   "name": "De beuk van Le Grandbos",
+   "species": "Beuk (Fagus sylvatica)",
+   "age_estimate": "ongeveer 200 jaar",
+   "access": "Gratis, openbaar bosje op de hoek Van Soutelandelaan en Van Mojalenlaan",
+   "transport": "Bus of tram naar Mariahoeve, ongeveer 20 minuten vanaf Den Haag Centraal",
+   "story": "Niets aan de hoek van de Van Soutelandelaan en de Van Mojalenlaan kondigt een tweehonderd jaar oude boom aan. De beuk staat in een strook bos die Le Grandbos heet, een restant van het landgoedlandschap dat hier lag voordat Mariahoeve eroverheen werd gebouwd, en het register dateert de boom op de jaren twintig van de negentiende eeuw. Beuk doet twee dingen die de wandeling waard zijn. Zijn bast blijft zijn hele leven glad en grijs, waardoor een oude stam eerder als een zuil leest dan als een boom, zonder de diepe groeven die een eik van dezelfde leeftijd verraden. En hij houdt de herfst beter vast dan bijna alles wat er verder in een Nederlandse straat groeit: koperkleurig eind oktober, en dat tot in november, waarna het gevallen blad nog weken oranje op de grond blijft liggen. Eronder groeit vrijwel niets. Een volgroeide beuk neemt zoveel licht weg dat de bodem onder de kroon kaal blijft, en dat is van een afstand de makkelijkste manier om er een uit een gemengd bos te pikken. Op een meter of tweehonderd, aan de overkant van de Van Soutelandelaan, staat een eik van bijna dezelfde jaargang, dus dit is een omweg van tien minuten met twee bomen erin."
+  }
+ }
+}
