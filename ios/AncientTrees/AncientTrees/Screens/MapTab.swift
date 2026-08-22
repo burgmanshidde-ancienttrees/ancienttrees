@@ -40,6 +40,11 @@ struct MapTab: View {
         ProcessInfo.processInfo.arguments.contains("-sheet=full") ? .full : .peek
     @State private var query = ""
     @State private var promptIndex = 0
+    /// Debug scaffolding, same family as -spot: the search page is only
+    /// reachable by tapping and simctl has no finger. `-search` opens it empty,
+    /// `-search=lis` opens it with that typed.
+    @State private var searching = ProcessInfo.processInfo.arguments
+        .contains { $0 == "-search" || $0.hasPrefix("-search=") }
     private let promptTick = Timer.publish(every: 2.6, on: .main, in: .common).autoconnect()
     /// Where the map is looking. nil until it has been moved, so the first list
     /// is still the list of what is near you.
@@ -126,6 +131,17 @@ struct MapTab: View {
             .distance(from: CLLocation(latitude: origin.lat, longitude: origin.lng)) < 3000
     }
 
+    /// Move the map somewhere a search result asked for. A region rather than
+    /// a camera because that is what the sheet's list reads to decide what is
+    /// "here", so setting one keeps the two in step.
+    private func fly(to lat: Double, lng: Double, span metres: Double) {
+        withAnimation(.easeInOut(duration: 0.35)) {
+            mapRegion = MKCoordinateRegion(center: .init(latitude: lat, longitude: lng),
+                                           latitudinalMeters: metres,
+                                           longitudinalMeters: metres)
+        }
+    }
+
     private var listed: [(tree: Tree, km: Double)] {
         let near = catalogue.nearest(to: focus.lat, focus.lng, limit: 60, withinKm: reachKm)
             .filter { filters.keeps($0.tree, month: month, collected: collectedIds) && filters.keepsDistance($0.km) }
@@ -196,6 +212,29 @@ struct MapTab: View {
             selected = t
             sheetHeight = .half
             navigator.showOnMap = nil
+        }
+        .fullScreenCover(isPresented: $searching) {
+            MapSearch(catalogue: catalogue, origin: origin) { hit in
+                switch hit {
+                case .city(_, _, let lat, let lng):
+                    fly(to: lat, lng: lng, span: 6000)
+                case .country(let name):
+                    // A country has no single point, so go to its biggest city
+                    // rather than to the middle of the sea.
+                    let ts = catalogue.trees.filter { $0.country == name }
+                    if let c = Dictionary(grouping: ts, by: \.citySlug)
+                        .max(by: { $0.value.count < $1.value.count })?.value {
+                        var la = 0.0, ln = 0.0
+                        for t in c { la += t.lat; ln += t.lng }
+                        fly(to: la / Double(c.count), lng: ln / Double(c.count), span: 14000)
+                    }
+                case .species(let name):
+                    filters.species = name
+                case .tree(let t):
+                    fly(to: t.lat, lng: t.lng, span: 1200)
+                    selected = t
+                }
+            }
         }
         .toolbar(.hidden, for: .navigationBar)
         .onChange(of: selected) { _, new in
@@ -455,44 +494,30 @@ struct MapTab: View {
     }
 
     private var searchField: some View {
-        HStack(spacing: 8) {
-            Image(systemName: "magnifyingglass")
-                .font(.system(size: 17, weight: .semibold))
-                .foregroundStyle(Brand.ink)
-            ZStack(alignment: .leading) {
-                // The WORD changes, not the sentence. A prompt string swapped
-                // whole gives no animation at all and reads as a glitch; the
-                // AllTrails version keeps "Search a" still and fades the noun
-                // through tree, city, park, country (Hidde, 2026-08-21).
-                if query.isEmpty {
-                    HStack(spacing: 0) {
-                        Text("Search a ")
-                        Text(searchWord)
-                            .id(searchWord)
-                            .transition(.opacity.combined(with: .move(edge: .bottom)))
-                    }
-                    .font(.system(size: 16, weight: .medium))
-                    .foregroundStyle(Brand.inkSoft)
-                    .allowsHitTesting(false)
+        Button { searching = true } label: {
+            HStack(spacing: 8) {
+                Image(systemName: "magnifyingglass")
+                    .font(.system(size: 17, weight: .semibold))
+                    .foregroundStyle(Brand.ink)
+                HStack(spacing: 0) {
+                    Text("Search a ")
+                    Text(searchWord)
+                        .id(searchWord)
+                        .transition(.opacity.combined(with: .move(edge: .bottom)))
                 }
-                TextField("", text: $query)
-                    .textFieldStyle(.plain)
-                    .font(.system(size: 16, weight: .medium))
-                    .autocorrectionDisabled()
-                    .onTapGesture { sheetHeight = .full }
+                .font(.system(size: 16, weight: .medium))
+                .foregroundStyle(Brand.inkSoft)
+                Spacer(minLength: 0)
             }
-            if !query.isEmpty {
-                Button { query = "" } label: {
-                    Image(systemName: "xmark.circle.fill").foregroundStyle(.secondary)
-                }
-                .buttonStyle(.plain)
-            }
+            .padding(.horizontal, 14).frame(height: 46)
+            .background(Brand.surface, in: .capsule)
+            .overlay { Capsule().strokeBorder(Brand.hairline, lineWidth: 1) }
+            .shadow(color: .black.opacity(0.05), radius: 4, y: 1)
+            .padding(.top, 6)
+            .contentShape(.capsule)
         }
-        .padding(.horizontal, 14).frame(height: 46)
-        .background(Brand.surface, in: .capsule)
-        .overlay { Capsule().strokeBorder(Brand.hairline, lineWidth: 1) }
-        .shadow(color: .black.opacity(0.05), radius: 4, y: 1)
-        .padding(.top, 6)
+        .buttonStyle(.plain)
+        .accessibilityIdentifier("map-search-field")
     }
 
     /// The four things a person actually looks for here, one at a time.
