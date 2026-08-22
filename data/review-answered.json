@@ -18,8 +18,8 @@
       "at": "2026-08-22T06:23:30+00:00"
     },
     "2026-08-22": {
-      "note": "Email-in-CURATION.md WARN: already redacted to 'his own account' by an earlier run today (commit 912f1b7, before this session); verified no live occurrence remains in CURATION.md. The scripts/*.py User-Agent contact addresses and LOG.md's OUTREACH_FROM mention are separate, out of scope for this WARN.",
-      "at": "2026-08-22T08:03:05+00:00"
+      "note": "CURATION.md:16 already redacted to 'his own account' before this run started (commit predates this session); the email only survives inside REVIEW.md's own append-only entry, which is the reviewer's historical record, not a run's to edit. Forward-looking fix already in place, nothing further to do without Hidde on the git-history question.",
+      "at": "2026-08-22T20:31:00+00:00"
     }
   }
 }
