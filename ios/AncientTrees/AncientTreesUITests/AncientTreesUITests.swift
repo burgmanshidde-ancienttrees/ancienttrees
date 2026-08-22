@@ -122,7 +122,11 @@ final class AncientTreesUITests: XCTestCase {
     @MainActor
     func testTheSheetAndTheListTakeTurns() throws {
         let app = launch(["-map"])
-        let field = app.textFields.firstMatch
+        // The search field is a BUTTON since 2026-08-22: it opens the
+        // full-screen search page rather than taking typing in the sheet. It
+        // is still the right anchor for this test, because it sits inside the
+        // same scrolling content and a drag on it cannot navigate anywhere.
+        let field = app.buttons["map-search-field"]
         XCTAssertTrue(field.waitForExistence(timeout: 12), "no search field in the sheet")
 
         let screen = app.frame.height

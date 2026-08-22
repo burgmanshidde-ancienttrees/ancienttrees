@@ -240,6 +240,53 @@ def find_content_gap(gap_queries):
     return max(misses, key=lambda r: r["impressions"])
 
 
+# The language prefixes translated pages live under. A path like /it/rome is
+# not a city called "it", which is exactly how this file read it until
+# 2026-08-22: every Spanish page summed into one fake city row, and the depth
+# rule could have sent photo work there. With seven languages that would be
+# seven fake cities and no way to read the language test at all.
+LANG_PREFIXES = ("es", "it", "nl", "de", "pt", "fr", "ja")
+
+
+def split_path(path):
+    """(lang, city) for a page path. lang is 'en' for the canonical pages."""
+    parts = [p for p in path.strip("/").split("/") if p]
+    if parts and parts[0] in LANG_PREFIXES:
+        return parts[0], (parts[1] if len(parts) > 1 else "")
+    return "en", (parts[0] if parts else "")
+
+
+def language_lines(pages):
+    """What each translated language earns, beside its English twin.
+
+    Contract J v1.13 recorded the measure before anything was built: within
+    four weeks of indexing a translated set should pass its English twin's
+    impressions, and beat its position on the target-language query. Neither
+    half is readable unless a page is attributed to a language AND a city."""
+    if not pages:
+        return []
+    per = {}
+    for r in pages:
+        lang, city = split_path(r["keys"][0].replace("https://ancienttrees.app", ""))
+        if not city:
+            continue
+        c, i, wp = per.get((lang, city), (0, 0, 0.0))
+        per[(lang, city)] = (c + r["clicks"], i + r["impressions"],
+                             wp + r.get("position", 0) * r["impressions"])
+    pairs = [(lg, ct, v) for (lg, ct), v in per.items() if lg != "en"]
+    if not pairs:
+        return ["", "**The language test:** no translated page took an impression in this window yet."]
+    out = ["", "**The language test** (Contract J v1.13: a translated set should pass its"
+               " English twin's impressions within four weeks of indexing):", "",
+           "| Lang | City | Clicks | Impressions | Position | English twin |",
+           "|---|---|---:|---:|---:|---:|"]
+    for lg, ct, v in sorted(pairs, key=lambda x: -x[2][1]):
+        en = per.get(("en", ct), (0, 0, 0.0))
+        pos = (v[2] / v[1]) if v[1] else 0
+        out.append("| %s | %s | %d | %d | %.1f | %d |" % (lg, ct, v[0], v[1], pos, en[1]))
+    return out
+
+
 def demand_lines(pages, pairs=None):
     """Every page with real demand, as a table, so the depth rule has a list.
 
@@ -256,7 +303,12 @@ def demand_lines(pages, pairs=None):
         path = r["keys"][0].replace("https://ancienttrees.app", "").strip("/")
         if not path:
             continue
-        city = path.split("/")[0]
+        lang, city = split_path(path)
+        # A translated page belongs to the language test, not to its city's
+        # English demand: counting it here would inflate the depth rule with
+        # readers the English page never had.
+        if lang != "en":
+            continue
         if city in ("app", "explore", "cities", "contribute", "privacy", "account",
                     "species", "collections", "countries", "parks"):
             continue
@@ -1719,7 +1771,9 @@ def promote(pages):
         path = r["keys"][0].replace("https://ancienttrees.app", "").strip("/")
         if not path:
             continue
-        slug = path.split("/")[0]
+        lang, slug = split_path(path)
+        if lang != "en":
+            continue
         if slug in ("app", "explore", "cities", "contribute", "privacy", "account",
                     "species", "collections", "countries", "parks"):
             continue
