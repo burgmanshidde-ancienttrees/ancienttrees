@@ -1096,6 +1096,27 @@
    "cities_touched": 0,
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-08-22T20:29:20+00:00",
+   "date": "2026-08-22",
+   "run_id": "32596809185",
+   "minutes": 13.1,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 107,
+   "denials": 18,
+   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(grep), Bash(if), Bash(python3), Bash(wc)",
+   "ended": "success",
+   "tokens": 3789466,
+   "claims_held": [
+    "groningen",
+    "utrecht"
+   ],
+   "commits": 4,
+   "cities_touched": 0,
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
