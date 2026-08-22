@@ -1,0 +1,129 @@
+[
+ {
+  "id": "hnl_001",
+  "name": "The Foster Garden Baobab",
+  "species": "African Baobab (Adansonia digitata)",
+  "age_estimate": "planted in the 1930s, roughly 90-100 years",
+  "age_min": 90,
+  "age_max": 100,
+  "girth_cm": 1298.4,
+  "height_m": 20.1,
+  "location": {
+   "address": "180 N. Vineyard Blvd, Honolulu, HI 96817 (Foster Botanical Garden)",
+   "latitude": 21.3167,
+   "longitude": -157.8592,
+   "neighbourhood": "Chinatown / Downtown Honolulu"
+  },
+  "verified_sources": [
+   "https://data.honolulu.gov/resource/84fd-3fzf.json (City and County of Honolulu, Exceptional Trees register, register_id 1)",
+   "http://www.edohawaii.com/baobab/foster.html",
+   "https://www.staradvertiser.com/2023/08/27/features/honolulus-foster-botanical-garden-reopens-as-a-spruced-up-oasis/"
+  ],
+  "access": "Paid entry: $1-5 general admission, $3 for Hawaii residents, $25 annual family pass. Open 9am-4pm daily except Christmas and New Year's Day.",
+  "transport": "On N. Vineyard Blvd in downtown Honolulu, on the edge of Chinatown; several TheBus routes run along Vineyard Blvd past the garden entrance.",
+  "location_precision": "approximate",
+  "curation_status": "ai_generated",
+  "verify_notes": "Nicknamed the 'Dead Rat Tree' locally for its large hanging fuzzy seed pods. Planted in the 1930s (source gives the decade, not a specific year); now roughly 20m/66ft tall per the Hawaii Exceptional Trees register, girth 12.98m circumference (diameter/girth cross-check 'ok' in the register import). Register vitality rating 'Good'; this row carries no assessment date (unlike the ~55 Oahu rows in this register dated Jan-Mar 2017, so treat the vitality call as of unknown but comparable vintage, roughly a decade old). Photographed as part of the garden's own feature spread in the Aug 2023 Honolulu Star-Advertiser piece marking the garden's reopening after a $1.26M ADA-renovation closure, which is good evidence it was alive and standing then. One of ~25 of Oahu's ~100 city-designated 'Exceptional Trees' concentrated in this one 14-acre municipal garden (City and County of Honolulu, Dept. of Parks and Recreation), all within easy walking distance of each other. Garden address given as '180 N. Vineyard Blvd' by the register, Star-Advertiser, Yelp and the Waikiki Trolley stop list; Wikipedia and the NRHP listing instead give '50 North Vineyard Boulevard' for the same property, an unresolved discrepancy in how the garden's own address is quoted across sources, not a location question (all agree it is the one Foster Botanical Garden on Vineyard Blvd). Coordinates are the garden's own published centroid (21.3167, -157.8592, from Wikipedia's cited 21 19'00\"N 157 51'33\"W), not a tree-level pin within the 14-acre grounds, hence approximate."
+ },
+ {
+  "id": "hnl_002",
+  "name": "The Foster Garden Bodhi Tree",
+  "species": "Sacred Fig / Bodhi Tree (Ficus religiosa)",
+  "age_estimate": "about 113 years, planted 1913",
+  "age_min": 112,
+  "age_max": 114,
+  "girth_cm": 728.5,
+  "height_m": 15.4,
+  "location": {
+   "address": "180 N. Vineyard Blvd, Honolulu, HI 96817 (Foster Botanical Garden)",
+   "latitude": 21.3167,
+   "longitude": -157.8592,
+   "neighbourhood": "Chinatown / Downtown Honolulu"
+  },
+  "verified_sources": [
+   "https://data.honolulu.gov/resource/84fd-3fzf.json (City and County of Honolulu, Exceptional Trees register, register_id 420)",
+   "https://en.wikipedia.org/wiki/Bodhi_Tree_in_Honolulu",
+   "https://www.staradvertiser.com/2023/08/27/features/honolulus-foster-botanical-garden-reopens-as-a-spruced-up-oasis/"
+  ],
+  "access": "Paid entry: $1-5 general admission, $3 for Hawaii residents, $25 annual family pass. Open 9am-4pm daily except Christmas and New Year's Day.",
+  "transport": "On N. Vineyard Blvd in downtown Honolulu, on the edge of Chinatown; several TheBus routes run along Vineyard Blvd past the garden entrance.",
+  "location_precision": "approximate",
+  "curation_status": "ai_generated",
+  "verify_notes": "A sacred fig grown from a cutting of the historic Bodhi tree lineage at Bodh Gaya, India, the tree under which the Buddha is said to have attained enlightenment. A sapling was given to Mary Foster in 1913 by Anagarika Dharmapala, the Sri Lankan Buddhist reformer; Foster went on to become a major patron of Buddhism in Hawaii, funding the state's first Buddhist temple (Honpa Hongwanji Mission). This has its own dedicated Wikipedia article ('Bodhi Tree in Honolulu'), a stronger-than-usual second source. Register gives girth 7.29m circumference, height 15.4m/50.5ft, vitality 'Excellent'; no assessment date on this row. Featured in the Aug 2023 Star-Advertiser garden-reopening piece, good evidence it was alive and standing then. One of ~25 of Oahu's ~100 city-designated 'Exceptional Trees' concentrated in this one municipal garden. Coordinates are the garden's published centroid, not a tree-level pin, hence approximate."
+ },
+ {
+  "id": "hnl_003",
+  "name": "The Hillebrand Kapok",
+  "species": "Kapok (Ceiba pentandra)",
+  "age_estimate": "roughly 175 years, planted around 1851",
+  "age_min": 170,
+  "age_max": 180,
+  "girth_cm": 698.0,
+  "height_m": 27.0,
+  "location": {
+   "address": "180 N. Vineyard Blvd, Honolulu, HI 96817 (Foster Botanical Garden)",
+   "latitude": 21.3167,
+   "longitude": -157.8592,
+   "neighbourhood": "Chinatown / Downtown Honolulu"
+  },
+  "verified_sources": [
+   "https://data.honolulu.gov/resource/84fd-3fzf.json (City and County of Honolulu, Exceptional Trees register, register_id 116)",
+   "https://www.honolulumagazine.com/see-photos-of-some-of-honolulus-exceptional-trees/",
+   "https://www.staradvertiser.com/2023/08/27/features/honolulus-foster-botanical-garden-reopens-as-a-spruced-up-oasis/"
+  ],
+  "access": "Paid entry: $1-5 general admission, $3 for Hawaii residents, $25 annual family pass. Open 9am-4pm daily except Christmas and New Year's Day.",
+  "transport": "On N. Vineyard Blvd in downtown Honolulu, on the edge of Chinatown; several TheBus routes run along Vineyard Blvd past the garden entrance.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "FLAGGED for a numeric disagreement, not for existence or identity. Honolulu Magazine (2021, fetched directly, not from a search summary) states Dr. William Hillebrand, the German physician-botanist who founded the garden as his own homestead, planted this kapok around 1851, making it about 170 years old as of that 2021 article (so roughly 175 now) and gives its height as '88 1/2-foot', which matches this register row's height of 88.5ft/27.0m exactly, a strong identity match. But the magazine gives circumference as '151 inches around' (about 3.84m), while the Hawaii Exceptional Trees register gives this same row's girth as 6.98m (698cm, girth-unit cross-check 'ok'). The two published figures do not agree and this pass did not measure the trunk directly, so both are recorded rather than one being silently chosen; kapoks have very large buttress roots and girth varies enormously with the height at which it is measured, which may explain part of the gap but was not confirmed either way. This specific planting date (Hillebrand, ~1851, for this tree by name) is a documented basis for the age estimate, not a bridge claim: the source names this specimen, not just the garden. A second, separate Ceiba pentandra (Kapok) sits on the same register at this garden (register_id 117, girth 493.8cm, height 83.5ft/25.5m); its height does not match the 88.5ft figure closely enough to be the same tree, so it is a second real specimen rather than a register twin of this one. It is left as a lead for a later pass rather than published now, since no dedicated second source was found for it this session. Register vitality for this tree: 'Good', no assessment date on the row. Coordinates are the garden's published centroid, not a tree-level pin, hence approximate."
+ },
+ {
+  "id": "hnl_004",
+  "name": "The Foster Garden Cannonball Tree",
+  "species": "Cannonball Tree (Couroupita guianensis)",
+  "age_estimate": "",
+  "girth_cm": null,
+  "height_m": 29.0,
+  "location": {
+   "address": "180 N. Vineyard Blvd, Honolulu, HI 96817 (Foster Botanical Garden)",
+   "latitude": 21.3167,
+   "longitude": -157.8592,
+   "neighbourhood": "Chinatown / Downtown Honolulu"
+  },
+  "verified_sources": [
+   "https://data.honolulu.gov/resource/84fd-3fzf.json (City and County of Honolulu, Exceptional Trees register, register_id 118)",
+   "https://www.facebook.com/FosterBotanicalGarden/posts/cannonball-tree-couroupita-guianensis-watch-out-for-falling-cannonballs-this-tre/929431895882545/",
+   "https://www.staradvertiser.com/2023/08/27/features/honolulus-foster-botanical-garden-reopens-as-a-spruced-up-oasis/"
+  ],
+  "access": "Paid entry: $1-5 general admission, $3 for Hawaii residents, $25 annual family pass. Open 9am-4pm daily except Christmas and New Year's Day.",
+  "transport": "On N. Vineyard Blvd in downtown Honolulu, on the edge of Chinatown; several TheBus routes run along Vineyard Blvd past the garden entrance.",
+  "location_precision": "approximate",
+  "curation_status": "ai_generated",
+  "verify_notes": "A soft-wooded South American tree that sprouts its flowers and grapefruit-to-cannonball-sized woody fruit directly from the trunk (cauliflory), not from the branches; the garden's own official page has posted a 'watch out for falling cannonballs' warning beside this specimen, since a dropped fruit is heavy enough to hurt someone. Photographed as part of the garden's own feature in the Aug 2023 Star-Advertiser reopening piece, good evidence it was standing then. Register gives height 29.0m/95ft, vitality 'Excellent', no girth recorded on this row and no assessment date. No documented planting date found this pass; age_estimate left empty rather than guessed, per project policy, since nothing in the sources found gives a basis to derive one. Coordinates are the garden's published centroid, not a tree-level pin, hence approximate."
+ },
+ {
+  "id": "hnl_005",
+  "name": "The Foster Garden Quipo",
+  "species": "Quipo (Cavanillesia platanifolia)",
+  "age_estimate": "about 96 years, planted 1930",
+  "age_min": 94,
+  "age_max": 98,
+  "girth_cm": null,
+  "height_m": 25.9,
+  "location": {
+   "address": "180 N. Vineyard Blvd, Honolulu, HI 96817 (Foster Botanical Garden)",
+   "latitude": 21.3167,
+   "longitude": -157.8592,
+   "neighbourhood": "Chinatown / Downtown Honolulu"
+  },
+  "verified_sources": [
+   "https://data.honolulu.gov/resource/84fd-3fzf.json (City and County of Honolulu, Exceptional Trees register, register_id 114)",
+   "http://hawaii50trees.blogspot.com/2009/01/week-of-january-25-quipo-tree-at-foster.html"
+  ],
+  "access": "Paid entry: $1-5 general admission, $3 for Hawaii residents, $25 annual family pass. Open 9am-4pm daily except Christmas and New Year's Day.",
+  "transport": "On N. Vineyard Blvd in downtown Honolulu, on the edge of Chinatown; several TheBus routes run along Vineyard Blvd past the garden entrance.",
+  "location_precision": "approximate",
+  "curation_status": "ai_generated",
+  "verify_notes": "Planted in 1930 per the Honolulu Botanical Gardens' own 'Trees for Hawaii's 50 Years' blog series (2009), fetched and read directly rather than from a search summary. Known for a smooth, greenish, swollen trunk of very soft wood (comparable to balsa), historically cut for canoes and rafts in Panama, and for large winged seedpods. A YouTube video dated May 2022 and a Flickr photo (both found this pass but not treated as sources for facts, only as recency evidence) show the same very large, distinctively swollen-trunked tree still standing at the centre of the garden. IMPORTANT CAUGHT ERROR: a web search's own AI summary claimed this tree is 'about 200 feet tall' and 'the largest of its kind in the US'; neither figure appears on the actual source page it was attributed to, so both are discarded per the search-summary-is-a-lead-never-a-source rule. Height used here (25.9m/85ft) is the Hawaii Exceptional Trees register's own figure instead, which is single-sourced for the specific number, so treat the height as approximate pending a second measurement. No girth recorded on this register row. Register vitality 'Excellent', no assessment date on the row. Coordinates are the garden's published centroid, not a tree-level pin, hence approximate."
+ }
+]
