@@ -36,8 +36,8 @@
       "age_max": 72,
       "location": {
         "address": "Outside the main gate, Trinity College, Trinity Street, Cambridge CB2 1TQ",
-        "latitude": 52.20689,
-        "longitude": 0.115113,
+        "latitude": 52.207236,
+        "longitude": 0.117671,
         "neighbourhood": "City centre"
       },
       "story": "This is not Newton's apple tree, and it is genetically the same tree. The one he described stood at his family home, Woolsthorpe Manor in Lincolnshire, and the falling-apple story comes from accounts he gave late in life rather than from anything in Cambridge. That original died around 1815 to 1820. Before it did, cuttings and grafts were taken and propagated onward as a genetically identical line, and in 1954 Trinity College planted one of them outside its main gate, directly below the room Newton lived in as a student.\n\nSo the tree in front of you is 72 years old and its tissue traces back, graft by graft, to the actual tree behind one of science's most famous stories. That is the whole reason to stop.\n\nIt is a 'Flower of Kent', an old English cooking variety, which means the fruit is edible and unremarkable: tart, disease-prone, nobody's choice for flavour. Newton would have known it as a kitchen apple rather than anything special.\n\nIt stands fenced for protection on Trinity Street, visible from the pavement outside the gate at any hour, and it is a five-minute walk from the older tree on this list, the Milton Mulberry at Christ's College, which was already grown when Newton arrived.",
@@ -65,7 +65,8 @@
         "label": "September, when the historic 'Flower of Kent' apples ripen",
         "kind": "fruit"
       },
-      "how_to_recognise": "A small fenced apple tree on the pavement outside Trinity's main gate on Trinity Street, directly below Newton's old room. It is the only apple tree there."
+      "how_to_recognise": "A small fenced apple tree on the pavement outside Trinity's main gate on Trinity Street, directly below Newton's old room. It is the only apple tree there.",
+      "verify_notes": "Pin corrected 2026-08-22 from 52.20689, 0.115113, which was an exact six-decimal match for Nominatim's centroid of Trinity College as a whole rather than the tree. Moved ~180 m east to the geotag of our own approved photograph of this tree (Geograph 5599349), 52.207236, 0.117671, which agrees with the CB2 1TQ postcode centroid of our own address line (52.206938, 0.117524) to within 60 m. Found by the verify pass on the most-visited tree pages; it was marked confirmed while being false precision, which is the one error this site cannot afford."
     },
     {
       "id": "cam_002",

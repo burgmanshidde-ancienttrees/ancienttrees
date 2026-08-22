@@ -144,7 +144,7 @@
       },
       "story": "Green-Wood Cemetery has counted this as its oldest tree, possibly older than the cemetery itself, which was founded in 1838 on rolling glacial hills chosen specifically because the terrain already supported mature, established woodland. Sassafras trees rarely reach the size or age this specimen has, since the species usually grows as a smaller understory tree that spreads through root suckers rather than living to great individual age; this one, or rather these two, since it appears as a pair of trunks a few feet apart, may be the last survivors of a larger colonial root system that once covered more ground. Nobody has cored the tree to confirm an exact age, and Green-Wood's own arborists are candid that the favorable growing conditions inside a manicured 478 acre cemetery likely inflate its size relative to a wild sassafras of the same age, making size an unreliable proxy for years here. What is certain is that it predates most of the 600,000 people buried around it, a rare case of a cemetery's oldest resident having no grave at all.",
       "verified_sources": [
-        "https://www.green-wood.com/2012/green-woods-great-trees/",
+        "https://web.archive.org/web/20231130120554/https://www.green-wood.com/2012/green-woods-great-trees/",
         "https://arbnet.org/morton-register/green-wood/"
       ],
       "access": "Free, cemetery open daily (check seasonal hours)",
@@ -165,7 +165,8 @@
           10
         ],
         "label": "October, when its leaves turn a mix of yellow, orange and purple, sometimes all on the same branch"
-      }
+      },
+      "verify_notes": "Green-Wood's own great-trees page has gone 404 since it was cited; repointed to the Internet Archive snapshot of the same page rather than dropping the citation. The cemetery's indexed text places this tree in Section 54, between Forest and Locust Avenues, west of Cedar Dell, which is more precise than our current gate-level pin and is the obvious upgrade when somebody geocodes it."
     },
     {
       "id": "nyc_005",
