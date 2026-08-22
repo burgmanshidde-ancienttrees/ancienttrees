@@ -43,7 +43,7 @@
         "https://en.wikipedia.org/wiki/Jardin_des_Plantes,_Toulouse"
       ],
       "access": "Free, public botanical garden (Jardin des Plantes, 7 hectares, open daily)",
-      "transport": "Central Toulouse; Toulouse metro Line B, Palais de Justice or Carmes station, then a short walk (exact stop not independently verified this pass)",
+      "transport": "Central Toulouse; Toulouse metro Line B, Palais de Justice or Carmes station, then a short walk (exact stop not independently verified )",
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
@@ -80,7 +80,7 @@
       ],
       "verify_notes": "Reader correction received 2026-08-20 (via /contribute) questioned the Wych Elm identification: hairless leaves and a shape said to be atypical for Ulmus glabra, and noted two elms a few metres apart at the spot plus another nearby. Re-checked the city's own open-data API directly (data.toulouse-metropole.fr, dataset arbres-urbains, id 15138) on 2026-08-20: it still returns genre Ulmus, espece glabra, at 43.59497/1.45249, essentially exact to our stored coordinate, and remains the ONLY tree in the area carrying remarquable=Ville de Toulouse. Within 150m there are 14 Ulmus specimens, mostly glabra but including one Ulmus laevis (id 15143) roughly 15m from this one, unflagged as remarkable. The reader's 'hairless leaves' description matches U. laevis better than U. glabra, so the likely explanation is that the reader was looking at the neighbouring, non-remarkable tree rather than this one; the register's own species call for the flagged specimen is unchanged and is our only source. Left as flagged rather than upgraded, since a second independent source still does not exist. A leaf photo from the reader would settle it outright; none was offered this round.",
       "access": "Free, public garden area (Boulingrin / Jardin du Grand Rond)",
-      "transport": "Central Toulouse; Toulouse metro Line B, Palais de Justice or Carmes station, then a short walk (exact stop not independently verified this pass)",
+      "transport": "Central Toulouse; Toulouse metro Line B, Palais de Justice or Carmes station, then a short walk (exact stop not independently verified )",
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
@@ -108,7 +108,7 @@
         "https://data.toulouse-metropole.fr/explore/dataset/arbres-urbains/ (id 15353, remarkable_label_source: Ville de Toulouse)"
       ],
       "access": "Free, public garden area (Boulingrin / Jardin du Grand Rond)",
-      "transport": "Central Toulouse; Toulouse metro Line B, Palais de Justice or Carmes station, then a short walk (exact stop not independently verified this pass)",
+      "transport": "Central Toulouse; Toulouse metro Line B, Palais de Justice or Carmes station, then a short walk (exact stop not independently verified )",
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
@@ -165,7 +165,7 @@
         "https://france3-regions.franceinfo.fr/occitanie/haute-garonne/toulouse/5-arbres-remarquables-a-decouvrir-dans-les-jardins-et-parcs-de-cette-grande-ville-du-sud-ouest-3195915.html"
       ],
       "access": "Free, public cemetery, open daily 8h-18h",
-      "transport": "Guilhemery / Cote Pavee district, north-east of the centre; nearest metro/tram stop not verified this pass",
+      "transport": "Guilhemery / Cote Pavee district, north-east of the centre; nearest metro/tram stop not verified",
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
@@ -193,7 +193,7 @@
         "https://data.toulouse-metropole.fr/explore/dataset/arbres-urbains/ (id 4794, remarkable_label_source: Ville de Toulouse)"
       ],
       "access": "Free, public square (Place Anatole France, Saint-Cyprien)",
-      "transport": "Saint-Cyprien district, left bank of the Garonne; nearest metro/tram stop not verified this pass",
+      "transport": "Saint-Cyprien district, left bank of the Garonne; nearest metro/tram stop not verified",
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
@@ -220,8 +220,8 @@
       "verified_sources": [
         "https://data.toulouse-metropole.fr/explore/dataset/arbres-urbains/ (id 8837, remarkable_label_source: Ville de Toulouse)"
       ],
-      "access": "Free, appears to be a public sports-ground/park area (Fer a Cheval, Saint-Cyprien); not independently confirmed this pass",
-      "transport": "Saint-Cyprien district, left bank of the Garonne; nearest metro/tram stop not verified this pass",
+      "access": "Free, appears to be a public sports-ground/park area (Fer a Cheval, Saint-Cyprien); not independently confirmed",
+      "transport": "Saint-Cyprien district, left bank of the Garonne; nearest metro/tram stop not verified",
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
@@ -248,8 +248,8 @@
       "verified_sources": [
         "https://data.toulouse-metropole.fr/explore/dataset/arbres-urbains/ (id 22412, remarkable_label_source: Ville de Toulouse)"
       ],
-      "access": "Free, appears to be a public sports-ground/park area (Fer a Cheval, Saint-Cyprien); not independently confirmed this pass",
-      "transport": "Saint-Cyprien district, left bank of the Garonne; nearest metro/tram stop not verified this pass",
+      "access": "Free, appears to be a public sports-ground/park area (Fer a Cheval, Saint-Cyprien); not independently confirmed",
+      "transport": "Saint-Cyprien district, left bank of the Garonne; nearest metro/tram stop not verified",
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
@@ -277,7 +277,7 @@
         "https://data.toulouse-metropole.fr/explore/dataset/arbres-urbains/ (id 129620, remarkable_label_source: Ville de Toulouse, fetched 2026-08-13)"
       ],
       "access": "Free, public. Stands at the Eglise Saint-Sylve on Rue Calvet; register coordinate sits at the edge of the church building itself, consistent with the church forecourt/approach rather than an enclosed courtyard. Same churchyard-default pattern as other Toulouse church-ground trees on this site.",
-      "transport": "La Colonne / Faubourg Bonnefoy district, north-east of the centre; nearest metro/tram stop not verified this pass",
+      "transport": "La Colonne / Faubourg Bonnefoy district, north-east of the centre; nearest metro/tram stop not verified",
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
@@ -312,7 +312,7 @@
         "https://data.toulouse-metropole.fr/explore/dataset/arbres-urbains/ (id 40105, remarkable_label_source: Ville de Toulouse, fetched 2026-08-13)"
       ],
       "access": "Free, public street tree on Rue de la Solidarite, Soupetard. Register coordinate reverse-geocodes to a street-furniture point (waste basket) directly on the road, about 70 metres from the nearest school entrance (Ecole elementaire publique Soupetard, 37 Rue de la Solidarite) rather than on the school's own grounds, so this is ordinary public street frontage, not a school-access case.",
-      "transport": "Soupetard district, about 2.8km north-east of the centre; nearest metro/tram stop not verified this pass",
+      "transport": "Soupetard district, about 2.8km north-east of the centre; nearest metro/tram stop not verified",
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
