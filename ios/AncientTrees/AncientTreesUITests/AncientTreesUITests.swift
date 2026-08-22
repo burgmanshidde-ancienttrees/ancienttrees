@@ -201,6 +201,62 @@ final class AncientTreesUITests: XCTestCase {
                       "picking a tree in search did not take the map to it")
     }
 
+    /// The bar: four slots, and the middle one is a BUTTON rather than a
+    /// place. Restored on 2026-08-22 after a careless block replacement took
+    /// this and two others out with it, which nothing noticed because a
+    /// deleted test does not fail.
+    @MainActor
+    func testFourSlotBar() throws {
+        let app = launch()
+        for label in ["Map", "Explore", "Add", "Collect"] {
+            XCTAssertTrue(app.tabBars.buttons[label].waitForExistence(timeout: 12),
+                          "tab \(label) is missing from the bar")
+        }
+        XCTAssertFalse(app.tabBars.buttons["Profile"].exists,
+                       "Profile is a tab again; it belongs in the corner")
+
+        app.tabBars.buttons["Add"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["spot-sheet"].waitForExistence(timeout: 6),
+                      "selecting Add did not present the sheet")
+        app.buttons["spot-close"].tap()
+        XCTAssertTrue(app.tabBars.buttons["Map"].waitForExistence(timeout: 6))
+        XCTAssertTrue(app.tabBars.buttons["Map"].isSelected,
+                      "Add took the selection with it; the bar must stay where it was")
+    }
+
+    /// The two verbs are two buttons, and each says only its own name. The
+    /// centre one ADDS a tree we do not have; Collect CLAIMS one we do, from
+    /// the tab where the collection is (Hidde, 2026-08-22: the centre button
+    /// was called Spot while the actual collecting happened under Collect).
+    @MainActor
+    func testAddAndCollectAreSeparateVerbs() throws {
+        let add = XCUIApplication()
+        add.launchArguments = ["-at=52.3667,4.9086", "-reset-collection", "-add"]
+        add.launch()
+        XCTAssertTrue(add.staticTexts["Add a tree we do not have"].waitForExistence(timeout: 12),
+                      "the centre button does not say that it adds a tree")
+        XCTAssertTrue(add.buttons["add-start"].exists)
+
+        let collect = XCUIApplication()
+        collect.launchArguments = ["-at=52.3667,4.9086", "-reset-collection", "-collect-tree"]
+        collect.launch()
+        XCTAssertTrue(collect.staticTexts["Which tree are you at?"].waitForExistence(timeout: 12),
+                      "Collect's own button did not offer the trees around you")
+    }
+
+    /// Collect's day zero is a mission naming one real tree, never four zeros
+    /// and a grid of grey ghosts.
+    @MainActor
+    func testCollectDayZeroShowsMission() throws {
+        let app = launch(["-tab=3"])
+        XCTAssertTrue(app.otherElements["collect-mission"].waitForExistence(timeout: 12),
+                      "no mission on Collect's day zero")
+        XCTAssertFalse(app.staticTexts["Species collected"].exists,
+                       "the empty stamp grid renders before the first tick")
+        XCTAssertTrue(app.buttons["collect-a-tree"].exists,
+                      "Collect has no way to collect a tree")
+    }
+
     /// Explore is the feed, and the feed is the rows Hidde settled on
     /// 2026-08-21: cities, the oldest trees, countries, species, walks. The
     /// curated collections left with the season shelf; they stay on the

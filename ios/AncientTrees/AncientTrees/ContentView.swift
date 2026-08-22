@@ -66,12 +66,12 @@ struct ContentView: View {
         /// The centre button's sheet. A case here rather than its own boolean
         /// because SwiftUI honours one sheet modifier per view, which is the
         /// whole reason this enum exists.
-        case spot
+        case spot(SpotSheet.Mode)
         var id: String {
             switch self {
             case .signIn(let r): "signin-" + r.id
             case .paywall(let f): "paywall-" + f.rawValue
-            case .spot: "spot"
+            case .spot(let m): "spot-" + m.rawValue
             }
         }
     }
@@ -135,7 +135,7 @@ struct ContentView: View {
                     // Spot is a button wearing a tab's clothes, the Strava and
                     // Untappd centre pattern: selecting it presents the sheet
                     // and the bar stays exactly where it was.
-                    if new == 2 { rootSheet = .spot; return }
+                    if new == 2 { rootSheet = .spot(.add); return }
                     if new == tab { clearPath(new) }
                     tab = new
                 })
@@ -244,7 +244,7 @@ struct ContentView: View {
                     // and presents the Spot sheet instead.
                     Color.clear
                         .tag(2)
-                        .tabItem { Label("Spot", systemImage: "plus.circle")
+                        .tabItem { Label("Add", systemImage: "plus.circle")
                             .environment(\.symbolVariants, tab == 2 ? .fill : .none) }
 
                     stack(3, cat) { CollectView(catalogue: cat, origin: origin) }
@@ -259,6 +259,9 @@ struct ContentView: View {
                 // applies its automatic .fill inside the tab item, underneath
                 // an environment set on the TabView itself.
                 .appObjects(self)
+                .onChange(of: navigator.collectNearby) { _, want in
+                    if want { rootSheet = .spot(.collect); navigator.collectNearby = false }
+                }
                 .onChange(of: navigator.push) { _, new in
                     guard let new else { return }
                     path(tab).wrappedValue.append(new)
@@ -288,8 +291,8 @@ struct ContentView: View {
                             SignInSheet(reason: reason, localCount: saved.savedCount)
                         case .paywall(let feature):
                             PaywallView(feature: feature)
-                        case .spot:
-                            SpotSheet(catalogue: cat, origin: origin)
+                        case .spot(let mode):
+                            SpotSheet(catalogue: cat, origin: origin, mode: mode)
                         }
                     }
                     // A sheet does not inherit the environment set on the view
@@ -394,9 +397,11 @@ struct ContentView: View {
                 if parts.count == 2 {
                     navigator.beginWalk = .init(city: parts[0], name: parts[1])
                 }
-            } else if args.contains("-spot") {
+            } else if args.contains("-spot") || args.contains("-add") {
                 // The centre button's sheet, openable without a finger.
-                rootSheet = .spot
+                rootSheet = .spot(.add)
+            } else if args.contains("-collect-tree") {
+                rootSheet = .spot(.collect)
             }
             // -map is kept as an alias for the map tab so older recipes and
             // the sweep lists keep working after the map became tab 0.

@@ -33,6 +33,7 @@ struct CollectView: View {
     @Environment(Saved.self) private var saved
     @Environment(Account.self) private var account
     @Environment(Sightings.self) private var sightings
+    @Environment(Navigator.self) private var navigator
 
     @State private var signingIn = false
     @State private var lane: Lane = .want
@@ -89,6 +90,25 @@ struct CollectView: View {
                 }
                 .padding(.top, 4)
 
+                // The verb lives with the collection, not in the centre of
+                // the bar. That button ADDS a tree we do not have; this one
+                // claims one we do (Hidde, 2026-08-22).
+                Button { navigator.collectNearby = true } label: {
+                    HStack { Spacer()
+                        Label("Collect a tree by photographing it", systemImage: "camera")
+                            .font(.brand(16, .bold))
+                        Spacer() }
+                        .padding(.vertical, 15)
+                        .background(Brand.moss, in: .capsule)
+                        .foregroundStyle(.white)
+                }
+                .buttonStyle(.plain)
+                .accessibilityIdentifier("collect-a-tree")
+
+                Text("Stand in front of a tree we map, photograph it, and it is yours. Trees you add yourself live here too.")
+                    .font(.footnote).foregroundStyle(Brand.inkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+
                 // Day zero opens with a MISSION, not with the score. Four
                 // zeros and eighteen grey ghosts were Hidde's own evidence
                 // that the app leads with what you do not have ("Collect is
@@ -121,7 +141,7 @@ struct CollectView: View {
                         // Trees only YOU have: photographed, kept, and still
                         // yours whether or not we take them for the map.
                         if sightings.yoursOnly.isEmpty {
-                            Text("Trees you find that we do not map yet appear here. Photograph one with the Spot button.")
+                            Text("Trees you add yourself appear here, whether or not they join the map everybody sees.")
                                 .font(.subheadline).foregroundStyle(Brand.inkSoft)
                                 .padding(.top, 4)
                         } else {
@@ -132,7 +152,7 @@ struct CollectView: View {
                         if list.isEmpty {
                             Text(lane == .want
                                  ? "Nothing on your list. Tap a heart anywhere to put a tree here."
-                                 : "Nothing collected yet. Stand before a tree and use the Spot button.")
+                                 : "Nothing collected yet. Stand before a tree and use the button above.")
                                 .font(.subheadline).foregroundStyle(Brand.inkSoft)
                                 .padding(.top, 4)
                         } else {
@@ -326,7 +346,7 @@ struct CollectView: View {
                 Text("Your first tree is \(distanceLabel(t)) away")
                     .font(.brand(24, .heavy, relativeTo: .title))
                     .foregroundStyle(Brand.ink)
-                Text("Stand before it and tick it off with the Spot button. Trees, species and places fill your collection, and the years they have seen add up.")
+                Text("Stand before it, photograph it, and it is yours. Trees, species and places fill your collection, and the years they have seen add up.")
                     .font(.subheadline).foregroundStyle(Brand.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
                 NavigationLink(value: Route.tree(t.id)) {

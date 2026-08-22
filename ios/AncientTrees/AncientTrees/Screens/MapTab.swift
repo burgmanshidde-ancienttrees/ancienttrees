@@ -54,6 +54,7 @@ struct MapTab: View {
     @Environment(Account.self) private var account
     @Environment(Nudge.self) private var nudge
     @Environment(Navigator.self) private var navigator
+    @Environment(Sightings.self) private var sightings
 
     /// EVERY tree, because the map is the whole map.
     ///
@@ -183,7 +184,8 @@ struct MapTab: View {
 
     var body: some View {
         ZStack(alignment: .bottom) {
-            TreeMap(trees: shownWalk.map { catalogue.trees(of: $0) } ?? mapTrees,
+            TreeMap(trees: filters.yoursOnly ? [] : (shownWalk.map { catalogue.trees(of: $0) } ?? mapTrees),
+                    mine: sightings.yoursOnly.map { (id: $0.id, lat: $0.lat, lng: $0.lng, name: $0.name) },
                     focus: .init(latitude: origin.lat, longitude: origin.lng),
                     route: walkRoute,
                     routeIsReal: (shownWalk?.shape?.count ?? 0) > 1,
@@ -431,6 +433,8 @@ struct MapTab: View {
                 walkChip
                 FilterChip(label: "Collected", icon: "checkmark.seal",
                            on: filters.collectedOnly) { filters.collectedOnly.toggle() }
+                FilterChip(label: "Your trees", icon: "leaf",
+                           on: filters.yoursOnly) { filters.yoursOnly.toggle() }
 
                 Menu {
                     Button("Any species") { filters.species = nil }
