@@ -24,8 +24,13 @@
 // happened is the reason the dialog is open, and "The Wertheimpark Wingnut is
 // saved on this device only" is a sentence about the visitor. The generic line
 // is a sentence about us.
-interface Props { es?: boolean }
-const { es = false } = Astro.props;
+// `lang` widened this from a Spanish boolean on 2026-08-22. Modal copy is
+// chrome, which Contract J lets stay English until a language earns a
+// rollout, so an unlisted language gets the English modal rather than a
+// half-translated one.
+interface Props { es?: boolean; lang?: string }
+const { es: esProp = false, lang = "en" } = Astro.props as Props;
+const es = esProp || lang === "es";
 const T = es ? {
   title: "Tus árboles en todos tus dispositivos",
   sub: "Una cuenta gratuita, un email, sin contraseña. Tus árboles guardados te siguen a cualquier dispositivo.",
