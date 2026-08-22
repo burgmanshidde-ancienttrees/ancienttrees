@@ -13,7 +13,6 @@
 
 import SwiftUI
 import MapKit
-import Combine
 
 struct MapTab: View {
     let catalogue: Catalogue
@@ -39,13 +38,11 @@ struct MapTab: View {
     @State private var sheetHeight: SheetHeight =
         ProcessInfo.processInfo.arguments.contains("-sheet=full") ? .full : .peek
     @State private var query = ""
-    @State private var promptIndex = 0
     /// Debug scaffolding, same family as -spot: the search page is only
     /// reachable by tapping and simctl has no finger. `-search` opens it empty,
     /// `-search=lis` opens it with that typed.
     @State private var searching = ProcessInfo.processInfo.arguments
         .contains { $0 == "-search" || $0.hasPrefix("-search=") }
-    private let promptTick = Timer.publish(every: 2.6, on: .main, in: .common).autoconnect()
     /// Where the map is looking. nil until it has been moved, so the first list
     /// is still the list of what is near you.
     @State private var mapRegion: MKCoordinateRegion?
@@ -196,9 +193,6 @@ struct MapTab: View {
                     selected: $selected)
                 .ignoresSafeArea(edges: [.top, .horizontal])
                 .accessibilityIdentifier("tree-map")
-            .onReceive(promptTick) { _ in
-                withAnimation(.easeInOut(duration: 0.25)) { promptIndex = (promptIndex + 1) % Self.searchWords.count }
-            }
             BottomSheet(height: $sheetHeight) {
                 // The arbitration between dragging the sheet and scrolling what
                 // is inside it, which is the whole interaction and was wrong.
@@ -569,7 +563,7 @@ struct MapTab: View {
                 // 2026-08-22). A word that changes under your eyes is a nice
                 // trick on a field you are typing in and a distraction on a
                 // button you are only reading.
-                Text("Search a city, country or tree")
+                Text(Search.placeholder)
                     .font(.system(size: 16, weight: .medium))
                     .foregroundStyle(Brand.inkSoft)
                 Spacer(minLength: 0)
@@ -585,10 +579,6 @@ struct MapTab: View {
         .buttonStyle(.plain)
         .accessibilityIdentifier("map-search-field")
     }
-
-    /// The four things a person actually looks for here, one at a time.
-    private static let searchWords = ["tree", "city", "park", "country"]
-    private var searchWord: String { Self.searchWords[promptIndex] }
 
     /// One tapped pin, shown in the sheet over the map rather than pushed onto
     /// a page, so the map stays visible behind the decision.

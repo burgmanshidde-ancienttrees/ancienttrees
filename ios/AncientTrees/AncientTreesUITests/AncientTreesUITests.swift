@@ -264,7 +264,7 @@ final class AncientTreesUITests: XCTestCase {
     /// argument rather than a tap so that failure would be invisible.
     @MainActor
     func testTheSignInSheetPresents() throws {
-        let app = launch(["-tab=4", "-signin"])
+        let app = launch(["-tab=3", "-signin"])
         XCTAssertTrue(app.staticTexts["That one is yours"].waitForExistence(timeout: 10),
                       "the sign-in sheet did not present")
         XCTAssertTrue(app.buttons["Email me a code"].exists,

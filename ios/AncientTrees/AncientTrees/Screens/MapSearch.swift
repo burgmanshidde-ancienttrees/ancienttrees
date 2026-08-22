@@ -75,7 +75,7 @@ struct MapSearch: View {
             .buttonStyle(.plain)
             .accessibilityLabel("Back to the map")
 
-            TextField("Search a city, a country or a tree", text: $query)
+            TextField(Search.placeholder, text: $query)
                 .textFieldStyle(.plain)
                 .font(.system(size: 17, weight: .medium))
                 .autocorrectionDisabled()

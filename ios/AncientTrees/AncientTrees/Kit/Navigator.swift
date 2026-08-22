@@ -36,6 +36,10 @@ public final class Navigator {
     /// cleared by the root, same shape as showOnMap.
     public var selectTab: Int?
 
+    /// Somewhere to PUSH on whichever tab is showing. Set by anything that
+    /// finds a destination (search, a shortcut), cleared by the root.
+    public var push: Route?
+
 
     public init() {}
 }

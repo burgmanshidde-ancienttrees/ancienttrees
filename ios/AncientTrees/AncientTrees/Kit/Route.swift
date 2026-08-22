@@ -30,6 +30,9 @@ public enum Route: Hashable {
     /// in the shelf header, and a shelf without one is a promise that the row
     /// you can see is everything there is (Hidde, 2026-08-21).
     case index(Index)
+    /// Not a tab any more (Hidde, 2026-08-22): the avatar top right of
+    /// Collect, which is where Komoot keeps it.
+    case profile
 
     public enum Index: String, Hashable {
         case cities, countries, species, oldest
