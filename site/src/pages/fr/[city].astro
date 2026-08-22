@@ -1,5 +1,5 @@
 ---
-// Spanish city pages. Three lines of routing; the whole implementation is
+// French city pages. Three lines of routing; the whole implementation is
 // TranslatedCityPage.astro, shared by every language per Contract J v1.13.
 import { getCollection } from "astro:content";
 import TranslatedCityPage from "../../components/TranslatedCityPage.astro";
@@ -7,8 +7,8 @@ import { cityIsRenderable } from "../../lib/trees";
 import { translatedCityPaths } from "../../lib/i18n";
 
 export async function getStaticPaths() {
-  return translatedCityPaths("es", (await getCollection("cities")).filter(cityIsRenderable) as any);
+  return translatedCityPaths("fr", (await getCollection("cities")).filter(cityIsRenderable) as any);
 }
 const { city, tr } = Astro.props as any;
 ---
-<TranslatedCityPage lang="es" city={city} tr={tr} />
+<TranslatedCityPage lang="fr" city={city} tr={tr} />
