@@ -1,0 +1,78 @@
+---// The one translated-question implementation, shared by every language
+// (Contract J v1.13). Extracted from the Spanish template on 2026-08-22.
+
+// Spanish question page: the /es/ counterpart of /{city}/oldest-tree, at the
+// path a Spanish speaker would actually search. Same P2 discipline as the
+// English contract: the answer in the first two sentences, then context.
+import Base from "../layouts/Base.astro";
+import { cityIsRenderable, renderableTrees, treeSlugsForCity, type CityEntry, type Tree } from "../lib/trees";
+import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
+import { mapHead, singlePinScript } from "../lib/map";
+import { hreflangForCity, QUESTION_SLUG, ui, type CityTranslation } from "../lib/i18n";
+
+
+interface Props {
+  lang: string;
+  city: CityEntry;
+  tr: CityTranslation;
+}
+const { lang, city, tr } = Astro.props as Props;
+const U = ui(lang);
+const qslug = QUESTION_SLUG[lang] ?? "oldest-tree";
+
+const cslug = city.id;
+const trees = renderableTrees(city);
+const tslugs = treeSlugsForCity(city);
+const canonical = `${BASE_URL}/${lang}/${cslug}/${qslug}`;
+
+// Same derivation as the English question page: an explicit oldest_tree_id
+// wins; otherwise the highest documented age_max.
+const pinned = (city.data as any).oldest_tree_id as string | undefined;
+let oldest: Tree = trees[0];
+if (pinned) {
+  oldest = trees.find((t) => t.id === pinned) ?? trees[0];
+} else {
+  for (const t of trees) if ((t.age_max ?? 0) > (oldest.age_max ?? 0)) oldest = t;
+}
+const ox = tr.trees[oldest.id];
+
+const crumbItems: [string, string | null][] = [
+  ["Inicio", BASE_URL],
+  [tr.city, `${BASE_URL}/${lang}/${cslug}`],
+  [U.oldestTreeCrumb, null],
+];
+
+const graph = [
+  ...SITE_SCHEMA,
+  {
+    "@type": "FAQPage",
+    mainEntity: [{ "@type": "Question", name: tr.question_title, acceptedAnswer: { "@type": "Answer", text: tr.question_answer } }],
+  },
+  breadcrumbSchema(crumbItems, canonical),
+];
+const headExtra = mapHead() + "\n" + hreflangForCity(cslug, "question") + "\n" + ldScript(graph);
+const scripts = singlePinScript(oldest.location.latitude!, oldest.location.longitude!);
+---
+<Base title={tr.question_title} description={tr.question_meta} canonical={canonical} headExtra={headExtra} lang={lang}>
+  <main class="content-page">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">{U.home}</a> › <a href={`/${lang}/${cslug}`}>{tr.city}</a> › <span>{U.oldestTreeCrumb}</span></nav>
+    <h1>¿Cuál es el árbol más antiguo de {tr.city}?</h1>
+    <p class="lede">{tr.question_answer}</p>
+    <div class="map-embed"><div id="map" class="map"></div></div>
+    <div class="prose-block"><p>{tr.question_context}</p></div>
+    <div class="action-row">
+      <a class="go-btn" href={`/${lang}/${cslug}/${tslugs[oldest.id]}`}>{U.fullStory}</a>
+      <a class="go-btn ghost" href={`https://www.google.com/maps/dir/?api=1&destination=${oldest.location.latitude},${oldest.location.longitude}`} target="_blank" rel="noopener">Cómo llegar</a>
+    </div>
+    <div class="cta">
+      {U.cityHasMore(tr.city)} <a href={`/${lang}/${cslug}`}>{U.allTreesLink(trees.length, tr.city)}</a>{U.withWalkingRoute}
+    </div>
+    <div class="report">
+      <strong>¿Sabes más que nosotros?</strong>
+      <p class="report-line">Si conoces un árbol más antiguo en {tr.city}, o ves aquí un error, dínoslo y lo corregimos.</p>
+      <a class="report-btn" href="/contribute?kind=correction">Aquí hay algo mal</a>
+      <a class="report-btn" href="/contribute?kind=tree">Sugerir otro árbol</a>
+    </div>
+  </main>
+  <Fragment slot="scripts" set:html={scripts} />
+</Base>
