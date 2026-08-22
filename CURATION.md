@@ -10,6 +10,46 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-22 (session) - The nine most-visited tree pages, checked; Newton's pin was 180 metres wrong
+
+Hidde asked whether the pages people actually see carry errors. A verify pass
+took the nine tree pages with the most Search Console traffic and checked five
+things each: alive, pin, bridge claims, species and age, access. Four real
+problems, all fixed the same hour.
+
+**Newton's Apple Tree, Cambridge, is the serious one.** 113 impressions in ten
+days, zero clicks, and a pin marked `confirmed` that sat at 52.20689, 0.115113,
+an exact six-decimal match for Nominatim's centroid of Trinity College as a
+whole. The tree stands outside the Great Gate, about 180 metres east. Two
+independent checks agree: the geotag of our own approved photograph of this
+tree (Geograph 5599349) and the CB2 1TQ postcode centroid from our own address
+line. Moved to the photograph's coordinate. This is exactly the failure the
+project says it cannot afford, it survived on a well-read page, and no check we
+own would have caught it, because a plausible coordinate inside the right city
+looks like every other coordinate.
+
+**Amsterdam's Last Elm of Stationsplein carried an unflagged conflict.** Our
+age band (about 120 years) comes from the national register's 1900-1910
+planting band; De Correspondent quotes the city's own head tree consultant
+giving 1889, backed by a 1906 archive photograph. Fifteen years apart, both
+real. Recorded in verify_notes, published age left with the register, neither
+picked as winner, per the two-source rule.
+
+**Two smaller ones.** Green-Wood's own great-trees page has 404ed since we
+cited it, so the citation now points at the Internet Archive snapshot rather
+than nothing; and Singapore's Bodhi tree story said Captain Pearl planted the
+hill with nutmeg, where NParks and Wikipedia both say pepper.
+
+**What did NOT need fixing, which is worth as much:** Bath's plane, Malaga's
+ficus avenue, the Athens holm oak, Dublin's sequoia and the Parc Monceau plane
+all held up, pins included; the Paris one matched the city's own tree registry
+to the metre.
+
+Two upgrades left on the table, both cheap and both real: Green-Wood indexes
+the sassafras as Section 54, between Forest and Locust Avenues, which would
+turn an approximate pin into a confirmed one, and Dublin's sequoia still has no
+tree-level coordinate.
+
 ## 2026-08-22 (session) - Nijmegen 11 to 12, one tree, and the rest recorded as leads/blocked
 
 Finished the verify claim the previous attempt in this window left standing
