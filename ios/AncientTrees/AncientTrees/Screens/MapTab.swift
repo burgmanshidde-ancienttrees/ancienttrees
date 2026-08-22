@@ -142,6 +142,20 @@ struct MapTab: View {
         }
     }
 
+    /// How many trees are actually under the view, uncapped.
+    ///
+    /// The strip used to count `listed`, which stops at sixty because that is
+    /// as many cards as anybody scrolls. So it read "60 trees you can see" over
+    /// Amsterdam, over Lisbon and over half of Europe, which is a number that
+    /// looks like information and is not.
+    private var inReach: Int {
+        catalogue.trees.filter {
+            filters.keeps($0, month: month, collected: collectedIds)
+                && filters.keepsDistance($0.distanceKm(from: focus.lat, focus.lng))
+                && $0.distanceKm(from: focus.lat, focus.lng) <= reachKm
+        }.count
+    }
+
     private var listed: [(tree: Tree, km: Double)] {
         let near = catalogue.nearest(to: focus.lat, focus.lng, limit: 60, withinKm: reachKm)
             .filter { filters.keeps($0.tree, month: month, collected: collectedIds) && filters.keepsDistance($0.km) }
@@ -168,6 +182,7 @@ struct MapTab: View {
                     region: $mapRegion,
                     selected: $selected)
                 .ignoresSafeArea(edges: [.top, .horizontal])
+                .accessibilityIdentifier("tree-map")
             .onReceive(promptTick) { _ in
                 withAnimation(.easeInOut(duration: 0.25)) { promptIndex = (promptIndex + 1) % Self.searchWords.count }
             }
@@ -197,8 +212,29 @@ struct MapTab: View {
         // dragged. A filter you cannot see is a filter nobody uses.
         .overlay(alignment: .top) {
             VStack(spacing: 8) {
+                searchField
                 whereChip
                 filterRow
+            }
+        }
+        .overlay(alignment: .bottom) {
+            if sheetHeight == .full {
+                Button {
+                    withAnimation(.spring(duration: 0.28)) { sheetHeight = .peek }
+                } label: {
+                    Label("Map", systemImage: "map.fill")
+                        .font(.brand(15, .bold))
+                        .padding(.horizontal, 18).frame(minHeight: 44)
+                        .background(Capsule().fill(Brand.ink))
+                        .foregroundStyle(Brand.ground)
+                }
+                .buttonStyle(.plain)
+                // Just above the tab bar, which is where AllTrails and Komoot
+                // both float it. At 104 it sat in the MIDDLE of the list and
+                // swallowed taps meant for the card underneath it.
+                .padding(.bottom, 14)
+                .transition(.opacity)
+                .accessibilityIdentifier("back-to-map")
             }
         }
         .task {
@@ -264,11 +300,31 @@ struct MapTab: View {
             selectedCard
         } else {
             VStack(spacing: 0) {
-                if shownWalk != nil { walkCard }
-                if let t = arrived { arrivalCard(t) }
-                list
+                countStrip
+                if sheetHeight != .peek {
+                    if shownWalk != nil { walkCard }
+                    if let t = arrived { arrivalCard(t) }
+                    list
+                }
             }
         }
+    }
+
+    /// What the sheet says when it is only a lip: how many trees are under the
+    /// map you are looking at. Komoot's "511 hardlooproutes", which Hidde asked
+    /// to copy on 2026-08-22, and it does three jobs at once: it says there is
+    /// a list down here, it says how big it is, and being unTAPPABLE it makes
+    /// the lip a handle rather than a row of half-visible cards a thumb keeps
+    /// opening by accident.
+    private var countStrip: some View {
+        Text(inReach == 0
+             ? "No trees in view"
+             : "\(inReach) \(inReach == 1 ? "tree" : "trees") you can see")
+            .font(.brand(16, .bold))
+            .foregroundStyle(Brand.inkSoft)
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 10)
+            .accessibilityIdentifier("map-count")
     }
 
     /// The moment the whole product exists for, surfaced where the user already
@@ -301,7 +357,6 @@ struct MapTab: View {
 
     private var list: some View {
         LazyVStack(spacing: 12) {
-                searchField
                 ForEach(listed, id: \.tree.id) { hit in
                     NavigationLink(value: Route.tree(hit.tree.id)) {
                         TreeCard(tree: hit.tree)
@@ -509,10 +564,11 @@ struct MapTab: View {
                 .foregroundStyle(Brand.inkSoft)
                 Spacer(minLength: 0)
             }
-            .padding(.horizontal, 14).frame(height: 46)
+            .padding(.horizontal, 16).frame(height: 50)
             .background(Brand.surface, in: .capsule)
             .overlay { Capsule().strokeBorder(Brand.hairline, lineWidth: 1) }
-            .shadow(color: .black.opacity(0.05), radius: 4, y: 1)
+            .shadow(color: .black.opacity(0.10), radius: 8, y: 2)
+            .padding(.horizontal, 16)
             .padding(.top, 6)
             .contentShape(.capsule)
         }

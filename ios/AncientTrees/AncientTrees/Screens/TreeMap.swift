@@ -78,7 +78,7 @@ struct TreeMap: UIViewRepresentable {
                 recentre.trailingAnchor.constraint(equalTo: map.safeAreaLayoutGuide.trailingAnchor, constant: -12),
                 // 208 = the sheet's peek height plus a hair, so the button
                 // sits just above the lip of the sheet rather than behind it.
-                recentre.bottomAnchor.constraint(equalTo: map.bottomAnchor, constant: -208),
+                recentre.bottomAnchor.constraint(equalTo: map.bottomAnchor, constant: -120),
                 recentre.widthAnchor.constraint(equalToConstant: 44),
                 recentre.heightAnchor.constraint(equalToConstant: 44),
             ])

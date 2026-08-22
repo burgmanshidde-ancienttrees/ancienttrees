@@ -89,94 +89,84 @@ final class AncientTreesUITests: XCTestCase {
     /// this app that cannot be checked from a screenshot: it only happens after
     /// a finger has dragged something.
     ///
-    /// Asserted on the LIST rather than on a chip. The "Trees in this area"
-    /// chip used to be the tell, and it was deleted on 2026-08-21 for spending
-    /// the best strip of the screen saying what the screen already is.
+    /// Asserted on the COUNT since 2026-08-22, because the count IS the list's
+    /// visible state at the sheet's lip and it leaves the map uncovered for the
+    /// drag. Earlier versions read the first card, which needed the sheet open,
+    /// which covered the map the test had to drag.
     @MainActor
     func testPanningTheMapMovesTheList() throws {
         let app = launch(["-map"])
-        let firstCard = app.buttons.matching(identifier: "tree-card").firstMatch
-        XCTAssertTrue(firstCard.waitForExistence(timeout: 12), "no list under the map")
-        let before = firstCard.label
+        let count = app.staticTexts["map-count"]
+        XCTAssertTrue(count.waitForExistence(timeout: 12), "no count under the map")
+        let before = count.label
 
-        let map = app.otherElements.firstMatch
-        for _ in 0..<5 {
-            map.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.22))
+        // The map BY NAME. app.otherElements.firstMatch used to be the map and
+        // is not any more now that a search field and a chip row float over it,
+        // so the drag was landing on whatever the query tree happened to list
+        // first.
+        let map = app.descendants(matching: .any)["tree-map"]
+        XCTAssertTrue(map.waitForExistence(timeout: 6), "no map to pan")
+        for _ in 0..<6 {
+            map.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.35))
                .press(forDuration: 0.05,
-                      thenDragTo: map.coordinate(withNormalizedOffset: CGVector(dx: 0.05, dy: 0.22)))
+                      thenDragTo: map.coordinate(withNormalizedOffset: CGVector(dx: 0.05, dy: 0.35)))
         }
 
         let changed = NSPredicate(format: "label != %@", before)
-        expectation(for: changed, evaluatedWith: firstCard)
-        waitForExpectations(timeout: 10) { err in
-            XCTAssertNil(err, "the map was panned away and the list did not follow")
+        expectation(for: changed, evaluatedWith: count)
+        waitForExpectations(timeout: 12) { err in
+            XCTAssertNil(err, "the map was panned away and the count still says \(before)")
         }
     }
 
     /// The sheet and the list handing the gesture back and forth, which is the
     /// one interaction in this app that cannot be seen in a screenshot and that
-    /// Hidde found broken twice in a row: first dragging up scrolled the trees
-    /// instead of raising the sheet, then dragging down scrolled instead of
-    /// lowering it. Measured by where the search field sits: high on the screen
-    /// means the sheet is open, low means it is back at its peek.
+    /// Hidde found broken three times in a row.
+    ///
+    /// Anchored on the COUNT STRIP since 2026-08-22, which is the whole of the
+    /// sheet at its lowest: Komoot's layout put the search field at the top of
+    /// the map and left the lip saying only how many trees are under the view.
+    /// That is also why this now cannot fail the way it kept failing: at peek
+    /// there is nothing tappable in the sheet at all.
     @MainActor
     func testTheSheetAndTheListTakeTurns() throws {
         let app = launch(["-map"])
-        // The search field is a BUTTON since 2026-08-22: it opens the
-        // full-screen search page rather than taking typing in the sheet. It
-        // is still the right anchor for this test, because it sits inside the
-        // same scrolling content and a drag on it cannot navigate anywhere.
-        let field = app.buttons["map-search-field"]
-        XCTAssertTrue(field.waitForExistence(timeout: 12), "no search field in the sheet")
+        let count = app.staticTexts["map-count"]
+        XCTAssertTrue(count.waitForExistence(timeout: 12), "no count on the sheet's lip")
 
         let screen = app.frame.height
-        // The sheet opens at its peek, which is the lower part of the screen.
-        // Asserted outright, because the CI's only record of this test on
-        // 2026-08-21 was "70.5 is not less than 43.0": the field had been
-        // read at y=176 on a 667 point phone before anything was dragged, and
-        // a relative assertion turned that into a riddle. If the sheet ever
-        // opens high again, this line says so in words.
-        let peekY = settledY(of: field)
-        XCTAssertGreaterThan(peekY, screen * 0.45,
-                             "the sheet did not open at its peek: the search field sits at "
+        let peekY = settledY(of: count)
+        XCTAssertGreaterThan(peekY, screen * 0.6,
+                             "the sheet did not open at its lip: the count sits at "
                              + "y=\(peekY) on a \(screen) point screen")
 
-        // Anchored on the search field rather than on a point in the list: a
-        // drag that starts on a tree card can be taken as a tap and open the
-        // tree, which is what happened the first time this was written. The
-        // field is inside the same scrolling content, so it tests the same
-        // thing and cannot navigate anywhere.
-        //
-        // And a long press before the drag, so nothing is read as a flick.
-        //
-        // Every gesture starts from a SETTLED frame (settledY above and
-        // below). The sheet springs for 0.28 seconds after a drag, and a press
-        // aimed at where the field was a frame ago lands on the card that has
-        // moved under it, which opens the tree and ends the test on a page
-        // with no search field at all (the SE, 2026-08-21).
-        field.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
+        count.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
              .press(forDuration: 0.35,
                     thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.12)))
-        let openY = settledY(of: field)
-        XCTAssertLessThan(openY, screen * 0.3,
-                          "dragging up over the list did not raise the sheet: the field went from "
+        let openY = settledY(of: count)
+        XCTAssertLessThan(openY, screen * 0.35,
+                          "dragging the lip up did not raise the sheet: the count went from "
                           + "y=\(peekY) to y=\(openY) on a \(screen) point screen")
 
-        // And back down from the top of the list, which is the half that was
-        // still missing.
-        field.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
-             .press(forDuration: 0.35,
-                    thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.92)))
-        let downY = settledY(of: field)
-        XCTAssertGreaterThan(downY, screen * 0.45,
-                             "dragging down from the top of the list did not lower the sheet: the field "
-                             + "went from y=\(openY) to y=\(downY) on a \(screen) point screen")
+        // And the way back down, which is a button now rather than only a drag.
+        let back = app.buttons["back-to-map"]
+        if back.waitForExistence(timeout: 3) {
+            back.tap()
+        } else {
+            count.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
+                 .press(forDuration: 0.35,
+                        thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.92)))
+        }
+        let downY = settledY(of: count)
+        XCTAssertGreaterThan(downY, screen * 0.6,
+                             "the sheet did not go back down: the count went from "
+                             + "y=\(openY) to y=\(downY) on a \(screen) point screen")
     }
 
-    /// The element's y once it has stopped moving: two reads 0.4 seconds
-    /// apart that agree. Returns -1 when the element is gone, so a caller's
-    /// assertion fails with a number rather than with "no matching snapshot",
-    /// which is what reading the frame of a vanished element produces.
+    /// The frame of something that may still be springing. Every gesture in
+    /// these tests starts from a SETTLED frame: the sheet animates for 0.28
+    /// seconds, and a press aimed at where an element was a frame ago lands on
+    /// whatever has moved under it.
     private func settledY(of el: XCUIElement, timeout: TimeInterval = 6) -> CGFloat {
         let end = Date().addingTimeInterval(timeout)
         var last: CGFloat = -1

@@ -21,6 +21,20 @@ struct MapSearch: View {
     @State private var query = ProcessInfo.processInfo.arguments
         .first { $0.hasPrefix("-search=") }.map { String($0.dropFirst(8)) } ?? ""
     @FocusState private var focused: Bool
+    @State private var lane: Lane = .top
+
+    enum Lane: String, CaseIterable, Identifiable {
+        case top, places, species, trees
+        var id: String { rawValue }
+        var label: String {
+            switch self {
+            case .top: "Top results"
+            case .places: "Places"
+            case .species: "Species"
+            case .trees: "Trees"
+            }
+        }
+    }
 
     enum Hit {
         case city(slug: String, name: String, lat: Double, lng: Double)
@@ -32,6 +46,7 @@ struct MapSearch: View {
     var body: some View {
         VStack(spacing: 0) {
             field
+            if query.count >= 2 { lanes }
             Divider()
             ScrollView {
                 LazyVStack(alignment: .leading, spacing: 0) {
@@ -50,9 +65,16 @@ struct MapSearch: View {
 
     private var field: some View {
         HStack(spacing: 10) {
-            Image(systemName: "magnifyingglass")
-                .font(.system(size: 17, weight: .semibold))
-                .foregroundStyle(Brand.ink)
+            Button { dismiss() } label: {
+                Image(systemName: "arrow.left")
+                    .font(.system(size: 17, weight: .semibold))
+                    .foregroundStyle(Brand.ink)
+                    .frame(width: 44, height: 44)
+                    .contentShape(.rect)
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel("Back to the map")
+
             TextField("Search a city, a country or a tree", text: $query)
                 .textFieldStyle(.plain)
                 .font(.system(size: 17, weight: .medium))
@@ -60,18 +82,52 @@ struct MapSearch: View {
                 .textInputAutocapitalization(.never)
                 .focused($focused)
                 .submitLabel(.search)
+
             if !query.isEmpty {
                 Button { query = "" } label: {
-                    Image(systemName: "xmark.circle.fill").foregroundStyle(Brand.inkSoft)
+                    Image(systemName: "xmark.circle.fill")
+                        .foregroundStyle(Brand.inkSoft)
+                        .frame(width: 44, height: 44)
+                        .contentShape(.rect)
                 }
                 .buttonStyle(.plain)
             }
-            Button("Cancel") { dismiss() }
-                .font(.system(size: 16, weight: .medium))
-                .foregroundStyle(Brand.moss)
         }
-        .padding(.horizontal, 16)
-        .frame(height: 56)
+        .padding(.horizontal, 6)
+        .frame(height: 54)
+        .background(Brand.surface, in: .capsule)
+        .overlay { Capsule().strokeBorder(Brand.hairline, lineWidth: 1) }
+        .shadow(color: .black.opacity(0.06), radius: 6, y: 2)
+        .padding(.horizontal, 16).padding(.top, 6).padding(.bottom, 10)
+    }
+
+    /// The chips under the field, which is the piece of Komoot's search that
+    /// does the most work: the hierarchy is a good default and a bad prison,
+    /// and somebody who wants only places should be able to say so.
+    private var lanes: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 8) {
+                ForEach(Lane.allCases) { l in
+                    let on = lane == l
+                    Button { withAnimation(.snappy) { lane = l } } label: {
+                        Text(l.label)
+                            .font(.system(size: 14, weight: .semibold))
+                            .foregroundStyle(on ? .white : Brand.ink)
+                            .padding(.horizontal, 14)
+                            .frame(height: 36)
+                            .background(on ? Brand.canopy : Brand.surface, in: .capsule)
+                            .overlay {
+                                if !on { Capsule().strokeBorder(Brand.hairline, lineWidth: 1) }
+                            }
+                            .frame(height: 44)
+                            .contentShape(.rect)
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+            .padding(.horizontal, 16)
+        }
+        .padding(.bottom, 6)
     }
 
     // MARK: - what an empty field shows
@@ -99,25 +155,34 @@ struct MapSearch: View {
 
     @ViewBuilder private var results: some View {
         let r = ranked
-        if r.places.isEmpty && r.species.isEmpty && r.trees.isEmpty {
-            Text("Nothing matches that yet.")
+        let showPlaces = lane == .top || lane == .places
+        let showSpecies = lane == .top || lane == .species
+        let showTrees = lane == .top || lane == .trees
+        let empty = (!showPlaces || r.places.isEmpty)
+            && (!showSpecies || r.species.isEmpty)
+            && (!showTrees || r.trees.isEmpty)
+
+        if empty {
+            Text(lane == .top
+                 ? "Nothing matches that yet."
+                 : "Nothing under \(lane.label.lowercased()). Try Top results.")
                 .font(.subheadline).foregroundStyle(Brand.inkSoft)
                 .padding(.horizontal, 20).padding(.top, 24)
         }
-        if !r.places.isEmpty {
-            head("Places")
+        if showPlaces && !r.places.isEmpty {
+            if lane == .top { head("Places") }
             ForEach(r.places, id: \.id) { p in
                 row(p.name, p.sub, p.icon) { onPick(p.hit); dismiss() }
             }
         }
-        if !r.species.isEmpty {
-            head("Species")
+        if showSpecies && !r.species.isEmpty {
+            if lane == .top { head("Species") }
             ForEach(r.species, id: \.self) { s in
                 row(s, speciesSub(s), "leaf") { onPick(.species(s)); dismiss() }
             }
         }
-        if !r.trees.isEmpty {
-            head("Trees")
+        if showTrees && !r.trees.isEmpty {
+            if lane == .top { head("Trees") }
             ForEach(r.trees) { t in
                 row(t.name, "\(t.commonName) · \(t.city)", "tree") { onPick(.tree(t)); dismiss() }
             }
@@ -161,7 +226,7 @@ struct MapSearch: View {
         let species = allSpecies.filter { Self.startsAWord(Self.fold($0), q) }
 
         var trees: [Tree] = []
-        if q.count >= 4 {
+        if q.count >= 4 || lane == .trees {
             trees = catalogue.trees.filter {
                 let n = Self.fold($0.name)
                 return n.hasPrefix(q) || n.contains(" " + q)
@@ -170,9 +235,14 @@ struct MapSearch: View {
         }
         // Eight rows, the website's budget: places first, two species, and
         // trees only in whatever room is left.
-        // Eight rows, and each kind takes more of them when the others leave
-        // room. Two species is right when six places matched and absurd when
-        // the query was "oak" and there are eleven of them.
+        // On TOP RESULTS the budget is eight rows, and each kind takes more of
+        // them when the others leave room: two species is right when six
+        // places matched and absurd when the query was "oak". Ask for one kind
+        // by name and the budget goes away, because a lane called Species that
+        // shows two of eleven is a lie about what we have.
+        guard lane == .top else {
+            return (Array(places.prefix(40)), Array(species.prefix(40)), Array(trees.prefix(40)))
+        }
         let p = Array(places.prefix(6))
         let s = Array(species.prefix(p.isEmpty ? 6 : 2))
         let room = max(0, 8 - p.count - s.count)
@@ -197,7 +267,8 @@ struct MapSearch: View {
                     .foregroundStyle(Brand.moss)
                     .frame(width: 24)
                 VStack(alignment: .leading, spacing: 2) {
-                    Text(name).font(.brand(16, .bold)).foregroundStyle(Brand.ink)
+                    highlighted(name)
+                        .font(.brand(16, .regular)).foregroundStyle(Brand.ink)
                         .lineLimit(1)
                     Text(sub).font(.caption).foregroundStyle(Brand.inkSoft).lineLimit(1)
                 }
@@ -207,6 +278,23 @@ struct MapSearch: View {
             .contentShape(.rect)
         }
         .buttonStyle(.plain)
+    }
+
+    /// The letters you typed, in bold, wherever they sit in the name. Komoot
+    /// does this and it is the difference between reading a list and seeing
+    /// why each row is in it.
+    private func highlighted(_ name: String) -> Text {
+        let q = Self.fold(query)
+        guard q.count >= 2, let r = Self.fold(name).range(of: q) else {
+            return Text(name).fontWeight(.bold)
+        }
+        let lo = Self.fold(name).distance(from: Self.fold(name).startIndex, to: r.lowerBound)
+        let hi = lo + q.count
+        let chars = Array(name)
+        guard hi <= chars.count else { return Text(name).fontWeight(.bold) }
+        return Text(String(chars[0..<lo]))
+            + Text(String(chars[lo..<hi])).fontWeight(.black)
+            + Text(String(chars[hi...])).fontWeight(.bold)
     }
 
     private func speciesSub(_ s: String) -> String {
