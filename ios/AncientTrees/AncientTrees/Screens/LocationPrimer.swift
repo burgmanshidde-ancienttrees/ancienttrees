@@ -28,11 +28,11 @@ struct LocationPrimer: View {
     let onAllow: () -> Void
     let onSkip: () -> Void
 
-    private let brand = Color(red: 0.20, green: 0.35, blue: 0.20)
+    private let brand = Brand.canopy
 
     var body: some View {
         ZStack {
-            LinearGradient(colors: [Color(red: 0.13, green: 0.22, blue: 0.13),
+            LinearGradient(colors: [Brand.canopy,
                                     Color(red: 0.24, green: 0.36, blue: 0.22)],
                            startPoint: .top, endPoint: .bottom)
                 .ignoresSafeArea()
