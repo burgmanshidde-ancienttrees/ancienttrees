@@ -700,3 +700,33 @@ The lesson for the next batch, and it is the argument for writing to societies
 rather than to institutions: an expert who reads the page finds in ten minutes
 what our own verification missed for weeks. A parks department that never
 answers cannot do that.
+
+## Batch 006, 2026-08-23: 40 mails, eight languages, and the first time we ask
+
+Forty mails to societies, blogs and groups attached to one place, in Dutch,
+English, French, Polish, Czech, German, Italian and Portuguese. Four of those
+languages are new, and so are four of the countries: **France was 83 published
+trees with no contact anywhere, and Poland, Czechia and Australia were zero.**
+
+**Who is on it was decided by the numbers rather than by instinct.**
+`scripts/outreach_stats.py` now joins what we sent with what came back, and the
+rule it shows is sharper than "societies answer, institutions do not": gardens
+and palaces are 0 of 12, while every useful reply came from a group attached to
+ONE place, whether a tree society, a conservancy, a friends-of group or a
+parish. So this batch carries St Andrew's Totteridge, whose churchyard holds
+the yew, and ARTIS, whose oak is the oldest tree in Amsterdam.
+
+**Spain is deliberately absent.** Both Spanish associations answered batch 005
+with an out-of-office: the secretariat is shut from 1 to 31 August. Writing
+again before September would spend the address for nothing. They go in 007.
+
+**And this is the first batch that asks for a mention**, on Hidde's call, after
+the old no-link-ask rule was tested at zero (see above). Last line, conditional,
+and framed for the trees rather than for us.
+
+Two things the build learned, both now permanent. `mailcheck.py` no longer
+flags a lower-case word after a salutation comma, because German, Czech and
+Polish letters are correctly written that way and the check would have forced
+wrong orthography into forty mails. And the builder counts nouns the Slavic
+way, so Wroclaw's four trees read "4 drzewa" while Krakow's sixteen read
+"16 drzew".
