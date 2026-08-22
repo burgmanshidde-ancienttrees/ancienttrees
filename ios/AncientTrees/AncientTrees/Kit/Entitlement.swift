@@ -56,7 +56,7 @@ public enum Feature: String, Sendable {
         case .badges:
             "A drawn badge for every species, city and country you have stood in front of."
         case .photoUpload:
-            "Photograph a tree nobody has yet, and put it on its page."
+            "Photograph a tree nobody has photographed yet, and put it on its page."
         case .seasonAlerts:
             "A quiet nudge in the week a tree near you is at its best."
         }

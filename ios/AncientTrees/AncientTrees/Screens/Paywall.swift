@@ -180,7 +180,7 @@ struct PaywallView: View {
                      ? "That did not go through. Try again in a minute."
                      : account.isSignedIn
                        ? "Not open yet. No card, nothing charged."
-                       : "Not open yet. No card, nothing charged. We need an address to write to.")
+                       : "Not open yet, so there is no card and nothing to pay. We only need an address to write to.")
                     .font(.caption2)
                     .foregroundStyle(failed ? .red : .secondary)
                     .multilineTextAlignment(.center)
