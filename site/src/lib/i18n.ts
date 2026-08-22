@@ -122,6 +122,9 @@ export interface UIStrings {
   walkRoutes: string;
   inTheApp: string;
   whereAmI: string;
+  cardMore: string;
+  cardSave: string;
+  cardSaved: string;
 }
 
 const EN: UIStrings = {
@@ -147,6 +150,9 @@ const EN: UIStrings = {
   walkRoutes: "Walking routes",
   inTheApp: "in the app",
   whereAmI: "Where am I",
+  cardMore: "Read more and get directions \u2192",
+  cardSave: "Save",
+  cardSaved: "Saved",
 };
 
 const TABLE: Record<string, Partial<UIStrings>> = {
@@ -173,6 +179,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     walkRoutes: "Rutas a pie",
     inTheApp: "en la aplicaci\u00f3n",
     whereAmI: "D\u00f3nde estoy",
+    cardMore: "Leer m\u00e1s y c\u00f3mo llegar \u2192",
+    cardSave: "Guardar",
+    cardSaved: "Guardado",
   },
   it: {
     home: "Home",
@@ -197,6 +206,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     walkRoutes: "Percorsi a piedi",
     inTheApp: "nell'app",
     whereAmI: "Dove mi trovo",
+    cardMore: "Leggi di pi\u00f9 e come arrivare \u2192",
+    cardSave: "Salva",
+    cardSaved: "Salvato",
   },
   nl: {
     home: "Home",
@@ -221,6 +233,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     walkRoutes: "Wandelroutes",
     inTheApp: "in de app",
     whereAmI: "Waar ben ik",
+    cardMore: "Lees meer en route \u2192",
+    cardSave: "Bewaren",
+    cardSaved: "Bewaard",
   },
   de: {
     home: "Start",
@@ -245,6 +260,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     walkRoutes: "Wanderrouten",
     inTheApp: "in der App",
     whereAmI: "Wo bin ich",
+    cardMore: "Mehr lesen und Anfahrt \u2192",
+    cardSave: "Merken",
+    cardSaved: "Gemerkt",
   },
   pt: {
     home: "In\u00edcio",
@@ -269,6 +287,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     walkRoutes: "Percursos a p\u00e9",
     inTheApp: "na aplica\u00e7\u00e3o",
     whereAmI: "Onde estou",
+    cardMore: "Ler mais e como chegar \u2192",
+    cardSave: "Guardar",
+    cardSaved: "Guardado",
   },
   fr: {
     home: "Accueil",
@@ -293,6 +314,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     walkRoutes: "Itin\u00e9raires \u00e0 pied",
     inTheApp: "dans l'application",
     whereAmI: "O\u00f9 suis-je",
+    cardMore: "Lire la suite et l’acc\u00e8s \u2192",
+    cardSave: "Enregistrer",
+    cardSaved: "Enregistr\u00e9",
   },
   ja: {
     home: "\u30db\u30fc\u30e0",
@@ -317,6 +341,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     walkRoutes: "\u5f92\u6b69\u30eb\u30fc\u30c8",
     inTheApp: "\u30a2\u30d7\u30ea\u3067",
     whereAmI: "\u73fe\u5728\u5730",
+    cardMore: "\u8a73\u3057\u304f\u898b\u308b\u30fb\u884c\u304d\u65b9 \u2192",
+    cardSave: "\u4fdd\u5b58",
+    cardSaved: "\u4fdd\u5b58\u6e08\u307f",
   },
 };
 

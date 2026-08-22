@@ -19,8 +19,13 @@
 // The full page is one tap away for anyone who wants it.
 import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
 
-interface Props { es?: boolean }
-const { es = false } = Astro.props;
+// `lang` widened this from a Spanish boolean on 2026-08-22. Modal copy is
+// chrome, which Contract J lets stay English until a language earns a
+// rollout, so an unlisted language gets the English modal rather than a
+// half-translated one.
+interface Props { es?: boolean; lang?: string }
+const { es: esProp = false, lang = "en" } = Astro.props as Props;
+const es = esProp || lang === "es";
 const T = es ? {
   title: "Las rutas a pie están en la app",
   sub: "Los árboles de esta ciudad, encadenados en un paseo, con la ruta en el bolsillo.",

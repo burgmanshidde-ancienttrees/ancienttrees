@@ -20,6 +20,7 @@
 // SEO_GEO_BLUEPRINT.md's P3 forbids and Google reads as thin duplication.
 // Hence one component, one look, two text lengths.
 import { usablePhoto, imgSrcset, thumbUrl, creditRequired } from "../lib/images";
+import { ui } from "../lib/i18n";
 import { bestTimeShort } from "../lib/phenology";
 import SaveHeart from "./SaveHeart.astro";
 
@@ -40,8 +41,11 @@ interface Props {
   headingLevel?: 2 | 3;
   /** A species page repeating one species name down the whole page is noise. */
   omitSpecies?: boolean;
-  lang?: "en" | "es";
-  /** The Spanish city page carries its own translated name, species and age. */
+  /** Any language with a data/i18n/<lang>/ directory; "en" is the canonical
+   * English page. Widened from an "en" | "es" union on 2026-08-22 when
+   * Contract J went to seven languages. */
+  lang?: string;
+  /** A translated city page carries its own translated name, species and age. */
   overrides?: { name?: string; species?: string; age?: string; story?: string };
 }
 
@@ -50,16 +54,20 @@ const {
   headingLevel = 3, omitSpecies = false, lang = "en", overrides,
 } = Astro.props as Props;
 
-const L = lang === "es"
-  ? { more: "Leer más y cómo llegar →", save: "Guardar", saved: "Guardado" }
-  : { more: "Read more and get directions →", save: "Save", saved: "Saved" };
+// Labels come from the one shared table rather than a ternary, which is what
+// stopped scaling the moment there was a third language. ui() falls back to
+// English per key, so an unwritten label shows English instead of blank.
+const U = ui(lang);
+const L = { more: U.cardMore, save: U.cardSave, saved: U.cardSaved };
 
 const name = overrides?.name ?? tree.name;
 const species = overrides?.species ?? tree.species ?? "";
 const age = overrides?.age ?? tree.age_estimate ?? "";
 const story = overrides?.story ?? tree.story ?? "";
 const photo = usablePhoto(tree);
-const href = lang === "es" ? `/es/${citySlug}/${treeSlug}` : `/${citySlug}/${treeSlug}`;
+// The href is functional rather than cosmetic, so it generalises properly:
+// English lives at the root, every other language under its own prefix.
+const href = lang === "en" ? `/${citySlug}/${treeSlug}` : `/${lang}/${citySlug}/${treeSlug}`;
 
 // A compact card takes the first sentence. Splitting on ". " alone cut
 // "Quercus robur. It stands..." in the wrong place on any story opening with
