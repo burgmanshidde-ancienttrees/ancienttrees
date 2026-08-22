@@ -10,6 +10,7 @@
 // component renders it; data/i18n/<lang>/<slug>.json supplies only text, and
 // ui(lang) supplies the chrome labels with English fallback per key.
 import TreeCard from "./TreeCard.astro";
+import LanguagePicker from "./LanguagePicker.astro";
 import SignInModal from "./SignInModal.astro";
 import AppModal from "./AppModal.astro";
 import Base from "../layouts/Base.astro";
@@ -97,7 +98,7 @@ const qslug = QUESTION_SLUG[lang] ?? "oldest-tree";
       <div class="city-intro">
         <p class="lede">{tr.intro}</p>
         <button type="button" class="city-intro-more">{U.readMore}</button>
-        <p class="lang-alt">This page also exists <a href={`/${cslug}`}>in English</a>.</p>
+        <LanguagePicker current={lang} citySlug={cslug} />
         <p class="passport" id="passport" hidden>
           <strong><span id="passport-count">0</span> / {trees.length}</strong> {U.visitedOf(trees.length, tr.city)}
           <span class="passport-total" id="passport-total"></span>

@@ -1,0 +1,43 @@
+---
+// The language switcher, built to the convention rather than invented.
+//
+// What it replaces, and why: the city pages carried a full SENTENCE in the
+// other language ("このページは次の言語でもご覧いただけます 日本語."), which put
+// two languages on one page and read as a fault to whichever reader you were.
+// Hidde spotted it on the English Tokyo page.
+//
+// Convention check, run 2026-08-22 against the two references CLAUDE.md names
+// for this kind of interaction. AllTrails ships a <select> in the footer whose
+// options are AUTONYMS, the language written in its own language, with the
+// region in brackets where variants exist: "Deutsch (Deutschland)",
+// "Español (Latinoamérica)", "Nederlands (Nederland)". komoot does the same
+// thing. Neither redirects on Accept-Language, and neither do we.
+//
+// The insight that fixes the mixed-language problem is that a LIST OF NAMES is
+// not mixed language. "English · Deutsch · 日本語" reads as a set of labels in
+// any language you happen to speak. A sentence does not.
+import { LANG_NAME, languagesForCity } from "../lib/i18n";
+
+interface Props {
+  /** The language of the page this renders on. "en" is the canonical page. */
+  current: string;
+  citySlug: string;
+}
+const { current, citySlug } = Astro.props as Props;
+
+// English always exists; the translations are whatever this city actually has.
+const langs = ["en", ...languagesForCity(citySlug)];
+const href = (l: string) => (l === "en" ? `/${citySlug}` : `/${l}/${citySlug}`);
+---
+{langs.length > 1 && (
+  <nav class="lang-pick" aria-label="Language">
+    {langs.map((l, i) => (
+      <>
+        {i > 0 && <span class="lang-sep" aria-hidden="true">·</span>}
+        {l === current
+          ? <span class="lang-cur" aria-current="true">{LANG_NAME[l] ?? l}</span>
+          : <a href={href(l)} hreflang={l} lang={l}>{LANG_NAME[l] ?? l}</a>}
+      </>
+    ))}
+  </nav>
+)}

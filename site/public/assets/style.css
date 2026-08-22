@@ -1321,3 +1321,13 @@ main.content-page.has-tree-bar { padding-bottom: 5.4rem; }
    not as another place (2026-08-14). */
 .ats-near b::before { content: "\27A4"; display: inline-block; margin-right: 0.45rem;
   color: var(--moss); transform: rotate(-45deg); font-size: 12px; }
+
+/* The language picker. A row of autonyms, the convention AllTrails and komoot
+   both use, replacing a full sentence in the other language that put two
+   languages on one page. Kept small and quiet: it is wayfinding, not a
+   feature, and on a page with one translation it is three words. */
+.lang-pick { margin: .5rem 0 0; font-size: .875rem; color: var(--ink-light); display: flex; flex-wrap: wrap; gap: .35rem; align-items: baseline; }
+.lang-pick a { color: var(--ink-mid); text-decoration: underline; text-underline-offset: 2px; }
+.lang-pick a:hover { color: var(--moss); }
+.lang-cur { color: var(--ink); font-weight: 600; }
+.lang-sep { color: var(--ink-light); }

@@ -444,15 +444,21 @@ export function ui(lang: string): UIStrings {
   return { ...EN, ...(TABLE[lang] ?? {}) };
 }
 
-/** The link text inside that line, also in the target language. */
+/** The autonym: each language's name written in that language.
+ *
+ * Was a link phrase ("en espa\u00f1ol", "in het Nederlands") for the sentence
+ * this replaces. A picker wants bare names, which is what AllTrails and komoot
+ * both show, and which is why a list of them does not read as mixed language:
+ * "English \u00b7 Deutsch \u00b7 \u65e5\u672c\u8a9e" is a set of labels, not prose. */
 export const LANG_NAME: Record<string, string> = {
-  es: "en español",
-  it: "in italiano",
-  nl: "in het Nederlands",
-  de: "auf Deutsch",
-  pt: "em português",
-  fr: "en français",
-  ja: "日本語",
+  en: "English",
+  es: "Espa\u00f1ol",
+  it: "Italiano",
+  nl: "Nederlands",
+  de: "Deutsch",
+  pt: "Portugu\u00eas",
+  fr: "Fran\u00e7ais",
+  ja: "\u65e5\u672c\u8a9e",
 };
 
 /** Reciprocal hreflang link tags for a page that exists in English and in
