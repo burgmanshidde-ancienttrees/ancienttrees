@@ -1,0 +1,272 @@
+{
+ "_note": "Overlay français de Paris, écrit à la main le 2026-08-22. Traduction de rendu, pas de recherche : chaque fait, âge, espèce et note d'accès vient de data/cities/paris.json et y reste vérifié. Le vocabulaire suit celui que lit un Parisien sur un panneau municipal, arbres remarquables, circonférence du tronc, houppier, plutôt qu'un calque de l'anglais. Texte seul : coordonnées, photos, licences et parcours restent dans le fichier anglais.",
+ "city": "Paris",
+ "title": "Arbres remarquables de Paris : les 30 plus beaux",
+ "meta_description": "Paris classe ses arbres remarquables comme des monuments. Le robinier de 1601, planté par l'herboriste du roi, et 29 autres à portée de métro.",
+ "intro": "Paris consigne ses 200 000 arbres d'alignement et de parc dans un registre ouvert et en classe quelques-uns arbres remarquables. Ses deux doyens sont père et fils, deux robiniers faux-acacias élevés il y a quatre siècles à partir de graines américaines par l'herboriste du roi Jean Robin et son fils Vespasien, et tous deux fleurissent encore chaque printemps. On trouve ici le plus vieil arbre de la ville, le plus gros, le plus haut, et une adresse qui porte un orme depuis le Moyen Âge. Chacun est à un trajet de métro.",
+ "question_title": "Quel est le plus vieil arbre de Paris ? (1601)",
+ "question_meta": "Le robinier du square René-Viviani, planté en 1601, est le plus vieil arbre de Paris. Son histoire, son adresse exacte et 29 autres arbres.",
+ "question_answer": "Le plus vieil arbre de Paris est le robinier du square René-Viviani, un robinier faux-acacia planté en 1601 par l'herboriste du roi Jean Robin, aujourd'hui âgé d'environ 425 ans. Il se dresse dans le Quartier latin, juste en face de Notre-Dame, à trois minutes à pied de la station Saint-Michel Notre-Dame.",
+ "question_context": "Paris a ceci de rare parmi les capitales que son plus vieil arbre a un nom, une date de plantation et un planteur. Jean Robin, herboriste d'Henri IV, élève le robinier à partir de graines américaines et le met en terre en 1601, dix-neuf ans avant le départ du Mayflower. Il est toujours là, square René-Viviani, face à Notre-Dame, étayé de béton et à demi caché par le lierre, et il fleurit encore chaque printemps. Le deuxième est son propre fils : en 1636, Vespasien Robin prélève une bouture et la plante dans le nouveau jardin royal des plantes médicinales, aujourd'hui le Jardin des Plantes, où elle a survécu elle aussi. Les deux plus vieux arbres de Paris sont donc un père et son fils documentés, quatre fois centenaires et distants de deux kilomètres. Ce sont deux robiniers faux-acacias, une espèce américaine arrivée en Europe sous forme d'une poignée de graines et baptisée Robinia du nom de la famille. Pour l'âge avec la prestance plutôt qu'avec les papiers, le cèdre de Jussieu, de 1734, est le troisième ancien de la ville. Pour y aller : station Saint-Michel Notre-Dame, puis trois minutes de marche le long de la Seine.",
+ "faq": [
+  {
+   "q": "Quel est le plus vieil arbre de Paris ?",
+   "a": "Un robinier faux-acacia planté en 1601 dans l'actuel square René-Viviani, face à Notre-Dame. Jean Robin, herboriste du roi, l'a élevé à partir de graines américaines, et il fleurit encore chaque printemps."
+  },
+  {
+   "q": "Où voir de vieux arbres à Paris ?",
+   "a": "Au Jardin des Plantes : trois des arbres de cette liste y poussent, dont un robinier de 1636 et le dernier platane que l'on sache planté par Buffon."
+  },
+  {
+   "q": "Les arbres remarquables de Paris sont-ils gratuits ?",
+   "a": "Tous le sont. Ils se trouvent dans des parcs, des squares et le long d'avenues publiques, et chacun est à quelques minutes à pied d'une station de métro ou de RER."
+  },
+  {
+   "q": "Comment Paris protège-t-elle ses arbres remarquables ?",
+   "a": "La ville tient un registre ouvert de ses 200 000 arbres d'alignement et de parc, et en classe quelques-uns arbres remarquables, ce qui leur vaut une protection et des soins dédiés."
+  }
+ ],
+ "strings_note": "Champs par arbre : name, species (nom français courant, même latin), age_estimate, access, transport, story. Histoires de 150 à 250 mots, même exigence que l'anglais, aucun tiret cadratin.",
+ "trees": {
+  "par_001": {
+   "name": "Le Robinier du square René-Viviani",
+   "species": "Robinier faux-acacia (Robinia pseudoacacia)",
+   "age_estimate": "425 ans",
+   "access": "Gratuit, square public, ouvert tous les jours",
+   "transport": "Saint-Michel Notre-Dame (RER B/C, métro 4), 3 min à pied",
+   "story": "Le plus vieil arbre de Paris a été planté en 1601, avant que le Mayflower ne prenne la mer. Jean Robin, herboriste du roi Henri IV, l'a élevé à partir de graines envoyées des Appalaches par le naturaliste anglais John Tradescant. Le genre Robinia porte depuis le nom de Robin. L'arbre occupe un petit square face à Notre-Dame, cathédrale déjà vieille de plusieurs siècles quand le jeune plant est entré en terre. Il a depuis traversé la Commune, perdu sa cime sous un obus allemand pendant la Première Guerre mondiale et vu la cathédrale brûler en 2019. Des béquilles de béton soutiennent aujourd'hui ses branches les plus lourdes et le lierre masque une bonne part du tronc, mais il fleurit toujours chaque printemps. Les Parisiens passent devant tous les jours sans un regard. Une grille basse le protège, avec une plaque qui le vend nettement en dessous de sa valeur. En 2021, National Geographic en a fait un cas d'école de résilience urbaine : quatre siècles de vie parisienne encaissés par un seul arbre américain d'importation."
+  },
+  "par_002": {
+   "name": "Le Cèdre de Jussieu",
+   "species": "Cèdre du Liban (Cedrus libani)",
+   "age_estimate": "290 ans",
+   "access": "Gratuit, Jardin des Plantes ouvert tous les jours",
+   "transport": "Jussieu (métro 7/10) ou Gare d'Austerlitz, 5 min à pied",
+   "story": "La légende veut que ce cèdre ait traversé la Manche dans un chapeau. En 1734, le botaniste Bernard de Jussieu rapporte d'Angleterre deux jeunes plants, et comme le pot s'est brisé en chemin, il aurait fini le voyage avec l'arbre au creux de son tricorne. L'histoire est probablement enjolivée, les historiens du Muséum le reconnaissent eux-mêmes, mais l'arbre, lui, est bien réel : le plus vieux cèdre du Liban de France, planté sur la butte du grand labyrinthe, dans le jardin royal des plantes médicinales devenu le Jardin des Plantes. Il était un jeune sujet sous Louis XV, il a tenu pendant la Révolution tandis que les protecteurs aristocrates du jardin y perdaient la tête, et il a vu la ménagerie se remplir d'animaux confisqués à Versailles. Près de trois siècles plus tard, son tronc fait un mètre et demi d'épaisseur et son houppier aplati se repère de l'autre bout du jardin. Une plaque à son pied donne la date de plantation, pour qui pense à lever les yeux du chemin."
+  },
+  "par_003": {
+   "name": "Le Second Robinier",
+   "species": "Robinier faux-acacia (Robinia pseudoacacia)",
+   "age_estimate": "390 ans",
+   "access": "Gratuit, Jardin des Plantes ouvert tous les jours",
+   "transport": "Jussieu (métro 7/10), 5 min à pied",
+   "story": "Le deuxième plus vieil arbre de Paris est le fils du premier. En 1636, Vespasien Robin, botaniste du roi et fils de Jean Robin, prélève une bouture sur le robinier de son père et la plante dans le tout nouveau jardin royal des plantes médicinales. L'arbre père tient toujours debout à deux kilomètres de là, square René-Viviani. Le fils pousse depuis près de quatre siècles dans ce qui est devenu le Jardin des Plantes, ce qui fait de ce duo, presque à coup sûr, le plus vieux couple père-fils d'arbres d'une ville européenne. Il était déjà adulte quand Buffon dirigeait le jardin au XVIIIe siècle et quand le Muséum d'histoire naturelle a été fondé sous la Révolution. Comme son père, il est étayé, marqué et fleurit encore. Les botanistes continuent d'y prélever des boutures, si bien que la lignée Robin, arrivée d'Amérique sous forme d'une poignée de graines, se propage toujours quatre cents ans plus tard. Peu des sept millions de visiteurs annuels du jardin devinent que cet acacia sans allure est presque la chose la plus ancienne qu'il contienne."
+  },
+  "par_004": {
+   "name": "Le Platane de Buffon",
+   "species": "Platane d'Orient (Platanus orientalis)",
+   "age_estimate": "240 ans",
+   "access": "Gratuit, Jardin des Plantes ouvert tous les jours",
+   "transport": "Gare d'Austerlitz (métro 5/10, RER C), 4 min à pied",
+   "story": "En 1785, quatre ans avant la Révolution, le naturaliste Buffon plante trois platanes d'Orient dans le jardin qu'il dirige depuis un demi-siècle. Voici le survivant. Buffon est alors le savant le plus célèbre d'Europe, auteur d'une histoire naturelle en 36 volumes qui scandalise l'Église en suggérant que la Terre est bien plus ancienne que ne l'admet la Genèse. Il meurt en 1788 et manque la Terreur de cinq ans ; son fils, lui, monte à l'échafaud. L'arbre que ses jardiniers ont mis en terre a continué de pousser à travers tout cela. Les platanes d'Orient étaient déjà admirés dans l'Antiquité, et les Romains en ont planté dans tout leur empire pour l'ombre. Celui-ci a reçu le label national Arbre remarquable en 2001. Il se dresse près de l'allée des platanes du jardin, tronc large et écorce marbrée, assez vieux pour que l'institution autour de lui ait changé trois fois de nom sans qu'il bouge de place. Ses deux frères de la plantation de 1785 ont disparu, ce qui fait de lui le dernier arbre vivant que l'on sache planté par Buffon."
+  },
+  "par_005": {
+   "name": "Le Grand Platane du parc Monceau",
+   "species": "Platane d'Orient (Platanus orientalis)",
+   "age_estimate": "210 ans",
+   "access": "Gratuit, parc ouvert tous les jours",
+   "transport": "Monceau (métro 2), aux grilles du parc",
+   "story": "L'arbre le plus gros de Paris fait sept mètres de tour de taille. Planté en 1814, l'année de l'abdication de Napoléon et du bivouac des armées alliées dans la ville, ce platane d'Orient a grandi dans ce qui était alors le jardin d'agrément privé de la famille d'Orléans. Le parc Monceau avait été dessiné comme une fantaisie aristocratique de ruines et de fabriques, et le platane les a toutes dépassées. Il mesure aujourd'hui 31 mètres de haut, avec un houppier à l'avenant, le plus grand de son espèce dans la ville. Le parc est devenu public sous Haussmann en 1861, et l'arbre a depuis abrité Proust, qui venait s'y promener enfant, et plusieurs générations parmi les joggeurs les mieux habillés de Paris. Son écorce se détache en plaques grises et crème, et ses branches basses sont plus épaisses que la plupart des arbres d'alignement adultes. La ville le compte parmi ses arbres remarquables. Placez-vous au pied du tronc et levez la tête : la première branche part plus haut que les réverbères alentour."
+  },
+  "par_006": {
+   "name": "Le Séquoia des Buttes-Chaumont",
+   "species": "Séquoia géant (Sequoiadendron giganteum)",
+   "age_estimate": "plus de 150 ans",
+   "access": "Gratuit, parc ouvert tous les jours",
+   "transport": "Botzaris ou Buttes-Chaumont (métro 7bis)",
+   "story": "Un géant de Californie pousse sur une ancienne carrière de gypse, dans le Paris populaire. Quand Napoléon III inaugure le parc des Buttes-Chaumont en 1867, ses ingénieurs viennent de transformer une fosse industrielle défigurée en paysage romantique de falaises, de cascades et de temple perché. Parmi les plantations figure un séquoia de la Sierra Nevada, espèce que les botanistes occidentaux n'avaient décrite que quinze ans plus tôt et qui faisait alors sensation dans l'horticulture. C'est aujourd'hui l'arbre le plus haut de Paris, plus de 35 mètres, sur un tronc approchant les cinq mètres de circonférence. Dans son aire d'origine, un tel arbre passerait pour un adolescent : les séquoias vivent trois mille ans, ce qui veut dire que celui-ci pourrait être encore debout quand tous les immeubles visibles depuis le parc auront été remplacés. Le nom de l'espèce honore Sequoyah, l'inventeur de l'écriture cherokee. Les jardiniers en chef du parc en parlent comme du joyau de leur collection."
+  },
+  "par_007": {
+   "name": "L'Orme de Saint-Gervais",
+   "species": "Orme champêtre (Ulmus minor)",
+   "age_estimate": "90 ans (un orme occupe le site depuis le Moyen Âge)",
+   "access": "Gratuit, place publique",
+   "transport": "Hôtel de Ville (métro 1/11), 3 min à pied",
+   "story": "Cet orme n'a rien d'un vieillard. L'adresse, si : un orme se dresse exactement à cet endroit devant l'église Saint-Gervais depuis le Moyen Âge, et pendant des siècles le quartier y a réglé ses affaires. On y remboursait ses dettes à jour convenu, les juges y tranchaient les litiges à l'ombre, et la formule attendez-moi sous l'orme est entrée dans la langue pour dire que l'attente risquait d'être longue. Les successeurs de l'arbre médiéval apparaissent sur de vieilles gravures et jusque dans les balcons en fer forgé des immeubles voisins, où le motif de l'orme a été travaillé dans le métal dans les années 1730. La Révolution a fait abattre l'arbre alors en place, pour des affûts de canon dit-on. L'orme actuel a été planté en 1935, jeune remplaçant occupant l'un des emplacements plantés le plus longtemps sans interruption en Europe. Le bâtiment derrière lui abrite une église depuis le IVe siècle."
+  },
+  "par_008": {
+   "name": "Le Zelkova de l'avenue Foch",
+   "species": "Zelkova du Caucase (Zelkova carpinifolia)",
+   "age_estimate": "175 ans",
+   "access": "Gratuit, pelouses latérales de l'avenue, publiques",
+   "transport": "Porte Dauphine (métro 2), 2 min à pied",
+   "story": "La plus fastueuse avenue de Paris tient son arbre le plus intéressant à l'écart de la chaussée. L'avenue Foch, 120 mètres de large et bordée des appartements les plus chers de la ville, a été tracée dans les années 1850 sous le nom d'avenue de l'Impératrice, voie d'apparat de l'Arc de Triomphe au bois de Boulogne. Sa partie basse a servi de pépinière, et un zelkova du Caucase planté là en 1852 n'en est tout simplement jamais reparti. L'espèce vient des montagnes situées entre la mer Noire et la Caspienne et reste rare en Europe de l'Ouest. Ce sujet atteint aujourd'hui 30 mètres, sur un tronc cannelé et musculeux de près de quatre mètres de circonférence, l'un des plus beaux de son espèce en France. Il a vu l'avenue passer du terrain de parade impérial à la promenade Belle Époque, puis à la forteresse discrète d'ambassades et de vieilles fortunes qu'elle est aujourd'hui. La ville l'a classé parmi ses arbres remarquables. À l'automne, tout le houppier vire à l'orange roux, son second argument après la silhouette."
+  },
+  "par_009": {
+   "name": "Le Platane du parc Montsouris",
+   "species": "Platane commun (Platanus x acerifolia)",
+   "age_estimate": "185 ans",
+   "access": "Gratuit, parc ouvert tous les jours",
+   "transport": "Cité Universitaire (RER B), 2 min à pied",
+   "story": "Ce platane est plus vieux que le parc qui l'entoure. Planté en 1840, il avait déjà une trentaine d'années quand les ingénieurs de Napoléon III se sont mis à tailler le parc Montsouris dans d'anciennes carrières et des terrains de moulins, dans les années 1860, et ils ont dessiné le parc autour d'arbres comme celui-ci. C'est aujourd'hui le poids lourd du 14e arrondissement : six mètres de tour de tronc, 30 mètres de haut, officiellement classé remarquable par la ville. Le parc Montsouris est devenu l'ancrage sud du plan haussmannien qui voulait donner à chaque quartier de Paris son parc paysager à l'anglaise, et les étudiants de la Cité universitaire voisine lisent sous cet arbre depuis un siècle. La ligne du RER passe en tranchée à travers le parc, si bien que plusieurs millions de voyageurs par an frôlent à quelques mètres l'un des plus vieux arbres plantés du sud de Paris sans savoir qu'il est là. Il fait partie du petit nombre d'arbres remarquables classés dans cette moitié de la ville."
+  },
+  "par_010": {
+   "name": "Le Sophora du bord du lac",
+   "species": "Sophora du Japon (Styphnolobium japonicum)",
+   "age_estimate": "150 ans",
+   "access": "Gratuit, parc ouvert tous les jours",
+   "transport": "Buttes-Chaumont (métro 7bis), 5 min à pied",
+   "story": "Certains arbres méritent leur place par la taille, celui-ci par la posture. Le sophora du Japon planté au bord du lac des Buttes-Chaumont est en terre depuis 1873, six ans après l'ouverture du parc, et il passe depuis 150 ans à se pencher lentement vers l'eau. Il est petit pour un arbre remarquable, dix mètres, mais son tronc fait près de quatre mètres de circonférence et sa silhouette basse et tordue devant le lac, avec la falaise artificielle en arrière-plan, en a fait l'un des arbres les plus photographiés du parc. Les sophoras sont arrivés de Chine en Europe dans les années 1740, par les graines d'un missionnaire jésuite, et Paris en a planté avec enthousiasme dans ses nouveaux parcs. Celui-ci a grandi en même temps que la Troisième République, il a traversé les deux sièges de Paris de 1870 et 1871 alors que le parc avait à peine trois ans, et il ombrage aujourd'hui rameurs et pique-niqueurs sur la même berge. La ville le compte parmi ses arbres classés remarquables. Il fleurit tard, en août, et penche un peu plus chaque année."
+  },
+  "par_013": {
+   "name": "Le Zelkova du square Samuel-Paty",
+   "species": "Zelkova du Caucase (Zelkova carpinifolia)",
+   "age_estimate": "non documenté",
+   "access": "Gratuit, square public ouvert, aucune fermeture connue",
+   "transport": "Cluny-La Sorbonne (métro 10) ou Maubert-Mutualité (métro 10), 3 à 4 min à pied",
+   "story": "Paris a perdu la plupart de ses ormes à cause d'un champignon, et celui-ci a survécu en n'étant pas tout à fait un orme. Zelkova carpinifolia est un cousin caucasien des vrais ormes, originaire des montagnes entre mer Noire et Caspienne, et il résiste bien mieux à la graphiose qui a vidé les rues d'une bonne partie de l'Europe. C'est la raison pour laquelle un arbre de cette taille tient encore debout en plein Quartier latin. Le registre municipal lui donne 267 centimètres de circonférence et 20 mètres de haut, et ne lui donne aucun âge. Aucune autre source non plus. L'espèce est arrivée à Paris en 1782, mais c'est une date sur l'espèce, pas sur ce tronc, et rien ne documente sa plantation. Il occupe le petit square qui fait face à la Sorbonne, de l'autre côté de la place Paul-Painlevé, avec le musée de Cluny et les thermes romains à une minute, sur un terrain que les étudiants traversent pour aller en cours depuis aussi longtemps que l'arbre est là. En 2021, le Conseil de Paris a rebaptisé le square du nom de Samuel Paty, le professeur d'histoire-géographie assassiné en 2020. L'arbre a gardé son adresse et perdu l'ancien nom, ce qui arrive plus d'une fois dans une longue vie d'arbre. À l'automne, tout le houppier vire à l'orange roux."
+  },
+  "par_014": {
+   "name": "Les Platanes d'Orient du square Michel-Foucault",
+   "species": "Platane d'Orient (Platanus orientalis)",
+   "age_estimate": "non documenté",
+   "access": "Gratuit, square public ouvert, aucune fermeture connue",
+   "transport": "Maubert-Mutualité (métro 10) ou Cluny-La Sorbonne, 3 à 5 min à pied",
+   "story": "Deux platanes d'Orient se dressent ici à quelques mètres l'un de l'autre, l'un à 470 centimètres de circonférence, l'autre à 415. Cela fait près de neuf mètres de tronc cumulés dans un jardin de poche d'environ 2 000 mètres carrés, et c'est pourquoi ils figurent ici comme une seule entrée et non deux : on se place à un endroit et on lève les yeux sur les deux. Ni l'un ni l'autre n'a d'âge documenté. Le registre municipal note leur circonférence et rien d'autre, aucune source ne donne de date de plantation, et grands et vieux est tout ce que les preuves autorisent à dire. Pour l'échelle, le platane le plus gros de Paris, au parc Monceau, fait huit mètres de tour et date de 1814, et celui du parc Montsouris atteint 605 centimètres et remonte à 1840. Ces deux-là se situent en dessous de ceux-là et au-dessus de presque tout le reste de la ville. Le jardin fait face au Collège de France de l'autre côté de la rue des Écoles et porte le nom de Michel Foucault, qui enseignait dans le bâtiment d'en face. Il a été rebaptisé en 2005, longtemps après que ces troncs eurent atteint leur taille adulte. Un Dante en bronze de Jean-Paul Aubé se tient dessous, et les deux platanes ombragent un défilé continu d'étudiants, de visiteurs montant vers le musée de Cluny et de gens qui déjeunent sur la pente."
+  },
+  "par_015": {
+   "name": "Le Platane du quai Saint-Bernard",
+   "species": "Platane commun (Platanus x acerifolia)",
+   "age_estimate": "non documenté",
+   "access": "Gratuit, quai et jardin de sculptures ouverts (jardin Tino-Rossi), aucune fermeture connue",
+   "transport": "Gare d'Austerlitz (métro 5/10, RER C) ou Jussieu (métro 7/10), 5 à 8 min à pied le long du fleuve",
+   "story": "Ce sont les sculptures qui sont arrivées en dernier. Le jardin Tino-Rossi a été aménagé le long de la Seine en 1980 comme musée de sculpture moderne en plein air, et il a été construit autour de platanes déjà en place : la notice du jardin signale de vieux platanes sur le site avant le jardin lui-même. L'un d'eux figure au registre des arbres remarquables de la ville, quai Saint-Bernard, avec 380 centimètres de circonférence. Lequel, exactement, est le point sur lequel cette entrée doit rester prudente. Le registre mentionne un platane de cette taille à cet endroit du quai et lui donne une position. Une seconde source confirme que de vieux platanes se trouvent bien ici, mais rien au-delà du registre ne distingue ce tronc-là des autres le long de la même promenade. Selon ce classement, c'est l'arbre enregistré ; selon toutes les autres preuves disponibles, c'est un grand platane parmi plusieurs, et aucun d'eux n'a de date de plantation documentée. Cela reste une bonne raison de marcher sur cette portion. Le quai file sous le Jardin des Plantes vers l'Institut du monde arabe, le fleuve d'un côté, des œuvres de bronze et de pierre posées librement dans l'herbe de l'autre. Les platanes sont ce qu'il y a de plus ancien dans le jardin, et la seule partie que personne n'a dessinée."
+  },
+  "par_016": {
+   "name": "Le Hêtre tortillard du square des Arènes de Lutèce",
+   "species": "Hêtre tortillard (Fagus sylvatica 'Tortuosa')",
+   "age_estimate": "environ 120 ans",
+   "access": "Gratuit, square public, ouvert tous les jours (fermeture le soir aux horaires habituels des squares parisiens)",
+   "transport": "Jussieu (métro 7/10) ou Place Monge (métro 7), 4 à 5 min à pied",
+   "story": "Tous les arbres sauvages de cette sorte sur terre poussent dans un seul bois près de Reims. Le hêtre tortillard, ou fau, est une forme à rameaux tordus du hêtre commun, et sa seule population naturelle est celle des Faux de Verzy, un millier de sujets environ dans les collines champenoises. Personne n'a jamais tranché sur la raison de cette croissance. Celui-ci n'est pas arrivé par hasard : c'est un sujet greffé, planté ici vers 1905, une bizarrerie botanique déposée à dessein dans le Quartier latin.\n\nRésultat, un arbre qui se lit comme deux arbres différents selon le mois. De mai à octobre, c'est un dôme bas de feuillage dense devant lequel on passe sans s'arrêter, plus proche d'un grand arbuste que d'un hêtre. En hiver, les feuilles tombent et l'architecture apparaît : un tronc court qui revient sur lui-même, des branches qui s'enroulent et replongent, certaines traînant jusqu'au sol. Le registre municipal lui donne 110 centimètres de circonférence, modeste pour son âge, parce que cette forme dépense sa croissance en largeur plutôt qu'en hauteur.\n\nSon adresse est bien plus connue que lui. Le square a été aménagé autour des arènes de Lutèce mises au jour, amphithéâtre du premier siècle prévu pour quelque 15 000 spectateurs, retrouvé lors de travaux de voirie au XIXe siècle et sauvé en partie par une campagne à laquelle Victor Hugo a prêté son nom. Le hêtre est arrivé longtemps après que cette bataille eut été gagnée."
+  },
+  "par_017": {
+   "name": "Le Marronnier d'Anne Frank",
+   "species": "Marronnier d'Inde (Aesculus hippocastanum)",
+   "age_estimate": "environ 19 ans (planté le 20 juin 2007)",
+   "access": "Gratuit, jardin public, ouvert tous les jours (horaires habituels des squares parisiens)",
+   "transport": "Rambuteau (métro 11) ou Châtelet-Les Halles, 4 à 5 min à pied",
+   "story": "L'arbre dont celui-ci est issu n'existe plus. Le 20 juin 2007, un jeune marronnier d'Inde est mis en terre dans un petit jardin de l'impasse Berthaud, greffé à partir du marronnier qui poussait derrière l'Annexe à Amsterdam, celui qu'Anne Frank voyait depuis la lucarne du grenier et dont elle parle dans son journal. L'original était déjà mal en point quand la greffe a été prélevée, creusé par un champignon et par les mineuses, maintenu debout par une armature d'acier. En août 2010, une tempête l'a jeté à terre. L'arbre parisien poussait alors depuis trois ans.\n\nLa Ville de Paris le classe arbre remarquable, dans un registre par ailleurs peuplé de géants et de centenaires. Celui-ci y figure pour ce qu'il représente plutôt que pour ce qu'il mesure, ce que le classement autorise explicitement. Les mesures sont modestes et ne concordent pas tout à fait : le registre note 100 centimètres de circonférence, un relevé antérieur en donne 72, et l'écart correspond à peu près à ce qu'un jeune marronnier vigoureux prend en dix ans.\n\nLe maire Bertrand Delanoë l'a planté aux côtés de Hans Westra, alors directeur de la Maison d'Anne Frank. Le jardin a ouvert la même année, dans l'enceinte de l'hôtel de Saint-Aignan, du XVIIe siècle, et à son entrée sont inscrits les noms des 11 000 enfants juifs déportés de France. Dix-neuf ans après, c'est toujours un arbre mince avec une longue tâche devant lui."
+  },
+  "par_018": {
+   "name": "Le Figuier du square Georges-Cain",
+   "species": "Figuier commun (Ficus carica)",
+   "age_estimate": "plus d'un siècle (aucune date de plantation documentée)",
+   "access": "Gratuit, square public, ouvert tous les jours (horaires habituels des squares parisiens)",
+   "transport": "Saint-Paul (métro 1) ou Chemin Vert (métro 8), 4 à 6 min à pied",
+   "story": "Un figuier n'a rien à faire à dix mètres de haut, en plein vent, à Paris. Ficus carica est une espèce méditerranéenne, rabattue par les hivers rudes et d'ordinaire palissée contre un mur chaud sous cette latitude, et celui-ci porte un tronc de 145 centimètres de circonférence avec le ciel pour seul abri. Cette taille à cette exposition explique l'essentiel de son classement en arbre remarquable.\n\nPersonne n'a noté sa date de plantation. Tous les récits reprennent la même formule sans date, plus de cent ans, et le registre le classe sans indiquer d'année : la position honnête est qu'il est vieux et que personne n'a écrit à quel point.\n\nLe sol est mieux documenté que l'arbre qui s'y tient. Le square Georges-Cain a été aménagé en 1923 comme dépôt à ciel ouvert du musée Carnavalet voisin, et frontons, colonnes, fragments sculptés et statues arrachés à des immeubles parisiens démolis reposent parmi les plantations, dont un bronze d'Aristide Maillol. Avant tout cela, ces îlots étaient des jardins maraîchers, la culture Sainte-Catherine qui nourrissait la ville médiévale.\n\nLes figuiers vivent moins longtemps que presque tout le reste de cette liste et supportent bien moins le gel. Celui-ci a passé des décennies à gagner cet argument dans un square clos qui reste plus chaud que la rue, ce qui est le tour discret de l'endroit et sans doute la raison de sa présence."
+  },
+  "par_019": {
+   "name": "Le Séquoia des jardins des Champs-Élysées",
+   "species": "Séquoia géant (Sequoiadendron giganteum)",
+   "age_estimate": "environ 175 ans",
+   "access": "Gratuit, jardin public (jardins des Champs-Élysées), ouvert tous les jours",
+   "transport": "Champs-Élysées - Clemenceau (M1, M13), environ 5 min à pied",
+   "story": "L'Europe connaissait à peine cette espèce quand l'arbre est entré en terre. Les séquoias géants sont arrivés de Californie dans les jardins européens dans les années 1850, et le récit le plus complet date celui-ci de 1850, ce qui en ferait l'un des tout premiers plantés à Paris. C'est d'ailleurs pour cela que le registre municipal le retient : le classement vise son âge, pas sa taille. À 19 mètres, c'est un jeune sujet à côté des originaux californiens, où le General Sherman dépasse 80 mètres. Les sources ne s'accordent pas sur le tronc. Paris le mesure à 3,6 mètres de circonférence ; le récit indépendant parle d'un peu plus de trois mètres de diamètre, soit à peu près trois fois plus épais, et il s'agit presque certainement d'une circonférence mal étiquetée. Retenez le chiffre du registre. L'âge est flou de la même façon, donné à environ 165 ans vers 2015 par une source et à environ 140 par une mention de passage ailleurs, si bien que quelque part entre 165 et 180 ans est tout ce que les preuves permettent d'affirmer. Il pousse dans les jardins des Champs-Élysées, les jardins d'agrément dessinés en contrebas de l'avenue, à quelques pas de l'allée Marcel-Proust. Il était déjà adulte pour l'Exposition universelle de 1900 et pour tous les défilés qui ont remonté l'avenue depuis. Son flanc sud-est, celui qui regarde la place de la Concorde, commence à montrer des signes de faiblesse."
+  },
+  "par_020": {
+   "name": "Les Platanes jumeaux de l'avenue Winston-Churchill",
+   "species": "Platane commun (Platanus x acerifolia)",
+   "age_estimate": "plus de 100 ans",
+   "access": "Gratuit, jardin public (jardins des Champs-Élysées), ouvert tous les jours",
+   "transport": "Champs-Élysées - Clemenceau (M1, M13), environ 4 min à pied",
+   "story": "Un tronc de cinq mètres et demi de tour, c'est beaucoup de platane pour une rue de Paris. Deux d'entre eux se dressent à onze mètres l'un de l'autre sur l'avenue Winston-Churchill, dans l'axe qui relie le Grand Palais au Petit Palais, et la ville les enregistre séparément : l'un à 5,05 mètres de circonférence pour 28 mètres de haut, l'autre à 5,55 mètres pour 30 mètres. Depuis le trottoir, ils se lisent comme une paire, et c'est ainsi qu'ils sont traités ici. Aucun des deux n'a de date de plantation. Le registre n'en porte pas et aucune archive connue n'en fournit, si bien que leur âge se déduit de la seule circonférence et que la fourchette reste large : plus d'un siècle à coup sûr, peut-être près du double. Ce qui est datable, c'est le sol sous eux. Alphand a dessiné ces jardins pour Haussmann dans les années 1860, et l'avenue et ses deux palais ont été construits pour l'Exposition universelle de 1900. Les arbres sont soit antérieurs à ce chantier, soit issus de la replantation qui a suivi, et aucune source ne dit laquelle. Les platanes communs encaissent l'air des villes mieux que presque tout, en lâchant leur écorce par plaques au lieu de laisser la suie s'y accumuler, et c'est pourquoi Paris en compte des centaines de milliers. Atteindre cette circonférence demande quand même du temps et un emplacement à travers lequel personne n'a élargi de chaussée. Ces deux-là ont eu les deux."
+  },
+  "par_021": {
+   "name": "Le Magnolia du square d'Ajaccio",
+   "species": "Magnolia à grandes fleurs (Magnolia grandiflora)",
+   "age_estimate": "non documenté",
+   "access": "Gratuit, square public, ouvert tous les jours",
+   "transport": "Invalides (M8, M13, RER C), environ 8 min à pied ; Varenne (M13), environ 5 min à pied",
+   "story": "Cet arbre vient des forêts marécageuses et chaudes du sud-est des États-Unis, et il a atteint douze mètres dans un petit square donnant sur la rue de Grenelle. Le magnolia à grandes fleurs garde son feuillage toute l'année, épais et vernissé, doublé d'un feutre couleur rouille, et il ouvre au début de l'été des fleurs blanc crème larges comme une assiette, parfumées au citron et fanées en deux jours. Paris l'a inscrit à son registre des arbres remarquables avec 163 centimètres de circonférence, chiffre que l'unique relevé indépendant du square reprend exactement. Personne n'a noté son âge. Le square fournit le seul repère chronologique : le square d'Ajaccio, anciennement square des Invalides, a été dessiné par Adolphe Alphand, l'ingénieur de la plupart des parcs d'Haussmann, dans la vague de petits jardins ouverts dans Paris entre les années 1860 et 1880. Le magnolia est-il arrivé avec le square ou une vie d'homme plus tard, aucun document ne le dit, et c'est pourquoi l'estimation donnée ici reste large. Il partage son enclos avec un platane situé à quarante-cinq mètres, également classé, si bien que dix minutes suffisent pour les deux. Magnolia grandiflora est planté un peu partout dans Paris mais se dresse rarement ainsi : l'espèce est frileuse ici, et la plupart des sujets passent leur vie aplatis contre un mur chaud."
+  },
+  "par_022": {
+   "name": "Le Platane du square d'Ajaccio",
+   "species": "Platane commun (Platanus x acerifolia)",
+   "age_estimate": "plus de 100 ans",
+   "access": "Gratuit, square public, ouvert tous les jours",
+   "transport": "Invalides (M8, M13, RER C), environ 8 min à pied ; Varenne (M13), environ 5 min à pied",
+   "story": "Quatre mètres quatre-vingt-dix de tronc, dans un square que l'on traverse en vingt pas. Le registre donne à ce platane 490 centimètres de circonférence et 25 mètres de haut, et l'unique enquête indépendante sur le square d'Ajaccio cite exactement les mêmes 490, le genre d'accord qui rend une mesure digne de confiance. Les deux sources se séparent sur l'espèce. La ville le classe en Platanus x hispanica, le platane commun, l'hybride que l'Europe a planté par millions à partir du XVIIIe siècle. Le guide de visite parle, lui, de platanes d'Orient, l'un des deux parents de cet hybride et un arbre réellement différent. L'inventaire municipal l'emporte ici, mais le désaccord est réel et c'est le genre de chose dont on peut discuter au pied du tronc. Son âge n'est documenté nulle part. Le même guide qualifie les platanes du square de centenaires, et le square date du programme d'Alphand des années 1860 à 1880, donc cent ans est un plancher plutôt qu'un chiffre. L'arbre a par conséquent vu la rue de Grenelle devenir une rue de ministères et d'ambassades, le dôme des Invalides à deux pâtés de maisons à l'est, tout en faisant ce que font les vieux platanes : lâcher chaque été son écorce en plaques de camouflage et prendre un centimètre de ceinture. Il se tient à quarante-cinq mètres d'un magnolia à grandes fleurs lui aussi classé, deux arbres désignés dans un seul petit enclos."
+  },
+  "par_023": {
+   "name": "Le Noisetier de Byzance du square du Temple",
+   "species": "Noisetier de Byzance (Corylus colurna)",
+   "age_estimate": "non documenté",
+   "access": "Gratuit, square public, ouvert tous les jours (fermé la nuit aux horaires habituels des squares parisiens)",
+   "transport": "Temple (M3), environ 3 min à pied ; République (M3/5/8/9/11), environ 6 min à pied",
+   "story": "La plupart des gens se représentent un noisetier comme un buisson que l'on domine du regard. Celui-ci fait seize mètres de haut, sur un tronc de 235 centimètres de circonférence. Corylus colurna, le noisetier de Byzance, est le parent surdimensionné du noisetier de haie, originaire des Balkans, d'Anatolie et du Caucase, et il pousse en un tronc unique et droit sous un houppier en cône bien tenu. Les concepteurs de parcs du XIXe siècle aimaient cette silhouette, et les villes le plantent encore parce qu'il encaisse la chaleur, les sols tassés et le mauvais air. Personne n'a noté sa date de plantation. Paris possède d'autres noisetiers de Byzance de circonférence comparable ou supérieure qui, eux, portent une date, dont un du square Maurice-Gardette enregistré en 1882, si bien que la comparaison situe cet arbre entre quatre-vingts et cent cinquante ans, et c'est tout ce que les preuves permettent. Le terrain a une histoire plus lourde que le jardin ne le laisse croire. C'est l'ancien enclos du Temple, siège parisien des Templiers, puis la prison où Louis XVI et Marie-Antoinette furent détenus avant leur exécution. La tour est tombée en 1808 et le jardin qui l'a remplacée date des années 1850. Il compte aujourd'hui 71 arbres et 191 variétés végétales, souvent venues d'ailleurs : un ginkgo, un sophora du Japon, un ptérocaryer du Caucase, un savonnier et un cognassier de Chine, tous à quelques minutes du noisetier."
+  },
+  "par_024": {
+   "name": "Le Vieux Noisetier du square Maurice-Gardette",
+   "species": "Noisetier de Byzance (Corylus colurna)",
+   "age_estimate": "environ 145 ans",
+   "access": "Gratuit, square public, ouvert tous les jours",
+   "transport": "Saint-Ambroise (M9), environ 5 min à pied ; Voltaire (M9), environ 8 min à pied",
+   "story": "La télévision régionale française a un jour publié un sujet écrit à la première personne par cet arbre, titré « J'ai 145 ans, arrêtez de me casser les noisettes et laissez-moi vieillir tranquillement ». Le grief est fondé. Les noisettes du noisetier de Byzance sont comestibles, elles tombent en quantité au début de l'automne, et les habitants du square Maurice-Gardette les ramassent. Les deux sources divergent sur la date de départ. Le registre municipal enregistre une plantation en 1882 ; le reportage dit 1879. Trois ans d'écart, ce qui lui fait environ 145 ans dans les deux cas et en fait l'un des rares noisetiers de Byzance de Paris à porter une date de plantation. Son tronc mesure 265 centimètres de circonférence et il monte à vingt mètres, de quoi clore le débat sur les noisetiers arbustes. Regardez l'écorce. L'espèce la perd une fois par an en lanières pâles et liégeuses, plus proches d'un bouleau que de ce que l'on attend d'un arbre à noix, et sur un tronc de cette taille l'effet est difficile à manquer. Il partage le square avec un olivier, un ginkgo et un marronnier, dont aucun ne l'écrase. Une réserve sur le superlatif qui le suit partout. La même chaîne a qualifié un autre noisetier parisien, celui du square Jean-XXIII derrière Notre-Dame, de doyen de la ville. Les deux ne peuvent pas être vraies et rien ne tranche, donc celui-ci reste ce qu'il est démontrablement : daté, mesuré et exceptionnellement grand."
+  },
+  "par_025": {
+   "name": "Le Ptérocaryer du square d'Estienne-d'Orves",
+   "species": "Ptérocaryer du Caucase (Pterocarya fraxinifolia)",
+   "age_estimate": "environ 164 ans",
+   "access": "Gratuit, square public, ouvert tous les jours",
+   "transport": "Trinité - d'Estienne d'Orves (M12), environ 2 min à pied, le square est juste à côté de la station",
+   "story": "Remontez les marches du métro Trinité et il est là, vingt-six mètres de haut, réputé le plus vieux ptérocaryer du Caucase vivant de France. Deux sources indépendantes donnent une plantation en 1862 et un tronc de 3,8 mètres de circonférence, et elles s'accordent au centimètre près avec le registre municipal, ce qui est plus rare que cela ne devrait l'être. L'affirmation du doyen national appartient à ces sources et non à nous : aucun comptage de cernes n'a été publié, et une plantation datée de 1862 rend la chose plausible sans la prouver. Pterocarya fraxinifolia vient du Caucase et du nord de l'Iran, une espèce de zone humide qui se plaît dans des sols trop mouillés pour la plupart des feuillus. Il se trahit en plein été, quand des chaînes de fruits ailés vert tendre, longues parfois d'un demi-mètre, pendent au bout des rameaux, et ses feuilles composées, à l'allure de frêne, peuvent atteindre soixante centimètres. Laissée tranquille, l'espèce drageonne depuis ses racines jusqu'à ce qu'un arbre devienne un fourré de lui-même, ce qui rend un tronc unique et net de cette taille digne de l'arrêt. Paris lui a décerné le label Arbre remarquable le 1er avril 2017. Il occupe le petit square devant l'église de la Trinité, dans un quartier rebâti pendant les travaux d'Haussmann : l'arbre et les rues autour de lui ont donc poussé ensemble, et il pousse à côté de cette bouche de métro depuis avant l'existence du métro."
+  },
+  "par_026": {
+   "name": "Le Lilas de Perse du square Boucicaut",
+   "species": "Lilas de Perse (Melia azedarach)",
+   "age_estimate": "non documenté",
+   "access": "Gratuit, square public, ouvert tous les jours, face au Bon Marché",
+   "transport": "Sèvres-Babylone (M10, M12), environ 4 min à pied",
+   "story": "Voici un arbre subtropical qui garde ses fruits pendant un hiver parisien. Melia azedarach appartient à la ceinture chaude qui court de l'Inde à la Chine et se plante d'ordinaire en Méditerranée ; le français l'appelle lilas de Perse, pour les grappes lâches de petites fleurs mauves en étoile qu'il ouvre en été. La suite explique pourquoi l'adresse mérite d'être notée. Ces fleurs deviennent des baies dures, jaune pâle, qui restent sur les rameaux nus longtemps après la chute des feuilles, si bien que l'arbre est à son plus visible en décembre. Les baies sont toxiques pour l'homme, ce qui est bon à savoir si un enfant vous accompagne. Le registre lui donne 155 centimètres de circonférence et dix mètres de haut, et l'enquête indépendante sur les neuf arbres remarquables du 7e arrondissement reprend ces mêmes 155. Ni l'une ni l'autre ne porte de date de plantation, et la documentation du square dit seulement que beaucoup de ses arbres dépassent le siècle, ce qui parle du square et non de cet arbre, donc son âge reste ouvert. Le square Boucicaut a ouvert en 1870 sous le nom de square du Bon-Marché, du nom d'Aristide et Marguerite Boucicaut, dont le magasin lui fait toujours face : prix fixes, marchandise que l'on pouvait toucher avant d'acheter, et le plus ancien grand magasin de Paris. Leur jardin collectionne encore les curiosités, araucarias du Chili et un Cunninghamia lanceolata très rare. Le lilas de Perse est celui qui fructifie dans le froid."
+  },
+  "par_027": {
+   "name": "Le Phellodendron du square Michel-Foucault",
+   "species": "Phellodendron de l'Amour (Phellodendron amurense)",
+   "age_estimate": "environ 100 ans (planté en 1925)",
+   "access": "Gratuit, square public, ouvert tous les jours (24h/24 sur la période vérifiée), chiens admis en laisse",
+   "transport": "Maubert-Mutualité (M10) ou Cluny-La Sorbonne (M10), 3 à 5 min à pied",
+   "story": "Paris classe ce phellodendron de l'Amour parmi ses arbres remarquables, et il porte la preuve d'un siècle passé dehors : une cicatrice de foudre descend le long du tronc. Il partage son jardin de poche, face au Collège de France dans le Quartier latin, avec les deux platanes d'Orient déjà cités ici, sans que presque personne ne regarde au-delà de ces deux-là. Phellodendron amurense surprend dans un square français : l'espèce vient des vallées fluviales du nord-est de la Chine et de l'Extrême-Orient russe, où on la cultive et l'étudie depuis longtemps pour son écorce liégeuse, épaisse et profondément crevassée, bien avant qu'on ne la plante pour son allure. Celui-ci est entré en terre en 1925, et le relevé de la ville le donnait en 2011 à 14 mètres de haut pour un tronc de 1,80 mètre de circonférence, une circonférence due moins à la hauteur qu'à des branches basses et étalées, si bien que le tronc s'épaissit sous le houppier au lieu de filer droit. Ses feuilles composées, à l'allure de frêne, virent chaque automne à un jaune franc. La mesure a maintenant quinze ans et l'arbre a continué de pousser depuis, et cette recherche n'a trouvé que le compte rendu de la ville elle-même : les chiffres sont donc donnés tels qu'enregistrés, pas confirmés deux fois. Cela vaut quand même les deux pas de plus après les platanes."
+  },
+  "par_028": {
+   "name": "Le Platane d'Orient du square Louise-Michel",
+   "species": "Platane d'Orient (Platanus orientalis)",
+   "age_estimate": "environ 170 ans",
+   "access": "Gratuit, jardin municipal public (square Louise-Michel), horaires habituels des parcs parisiens, fermé la nuit",
+   "transport": "Anvers (métro 2) ou Abbesses (métro 12), 5 à 8 min à pied en montant la butte Montmartre",
+   "story": "Des millions de personnes passent devant cet arbre chaque année en allant voir autre chose. Le square Louise-Michel est le jardin en terrasses sous le Sacré-Cœur, celui du grand escalier qui monte la butte Montmartre, et trois arbres remarquables classés par la ville s'y trouvent à moins de 150 mètres les uns des autres. Ce platane d'Orient est le plus vieux et le plus gros des trois.\n\nIl a été planté en 1857, ce qui le place 70 ans avant le jardin qui l'entoure : le square n'a été dessiné qu'en 1927. Le registre municipal et la description publiée du square s'accordent au centimètre, 520 centimètres de circonférence et 28 mètres de haut, un accord plus rare qu'il ne devrait l'être.\n\nUne réserve sur les papiers. Une enquête locale sur le 18e arrondissement décrit un platane d'Orient de 470 centimètres planté en 1840, assez proche pour prêter à confusion et assez différent sur les deux chiffres pour qu'il s'agisse sans doute d'un autre arbre ailleurs dans le quartier. Les chiffres donnés ici sont ceux du registre et du square, pas ceux de cette enquête.\n\nTout le monde, dans l'escalier, regarde la basilique. Le platane est sur le côté, à ne rien faire de particulier, et il le fait depuis avant qu'il y ait une basilique à regarder."
+  },
+  "par_029": {
+   "name": "Le Ptérocaryer du square Louise-Michel",
+   "species": "Ptérocaryer du Caucase (Pterocarya fraxinifolia)",
+   "age_estimate": "environ 125 ans",
+   "access": "Gratuit, jardin municipal public (square Louise-Michel), horaires habituels des parcs parisiens, fermé la nuit",
+   "transport": "Anvers (métro 2) ou Abbesses (métro 12), 5 à 8 min à pied en montant la butte Montmartre",
+   "story": "Il y a deux ptérocaryers du Caucase dans ce square et un seul a une date de naissance. Le registre les liste tous les deux, à soixante mètres l'un de l'autre, à 371 et 416 centimètres de circonférence. Le récit publié du jardin décrit un ptérocaryer de 3,60 mètres planté en 1899, ce qui correspond de près au plus petit des deux et pas du tout au plus grand : la date reste donc ici, sur cet arbre, et le plus gros n'a pas d'âge plutôt qu'un âge emprunté.\n\nLes hauteurs s'alignent moins bien. Ce même récit donne vingt mètres à son ptérocaryer ; le registre en mesure aujourd'hui 26 sur celui-ci. Des années de croissance l'expliqueraient, et le fait que le récit ait décrit l'autre arbre depuis le début aussi, et rien de disponible ne tranche.\n\nCe qui ne se discute pas, c'est ce qui arrive en plein été. Des chaînes de fruits ailés vert pâle pendent à la verticale au bout des rameaux, longues, étroites, sans équivalent sur cette colline, et sur un houppier de cette taille il y en a des centaines à la fois. Venez en février et vous passeriez devant sans un second regard.\n\nIl est entré en terre en 1899, un an avant que le funiculaire ne commence à hisser les visiteurs sur la pente à côté de lui, et il passe depuis chaque été à balancer ses chaînes de graines au-dessus de gens trop occupés à monter pour regarder de côté."
+  },
+  "par_030": {
+   "name": "Le Marronnier du square Louise-Michel",
+   "species": "Marronnier d'Inde (Aesculus hippocastanum)",
+   "age_estimate": "environ 125 ans",
+   "access": "Gratuit, jardin municipal public (square Louise-Michel), horaires habituels des parcs parisiens, fermé la nuit",
+   "transport": "Anvers (métro 2) ou Abbesses (métro 12), 5 à 8 min à pied en montant la butte Montmartre",
+   "story": "Le chiffre le plus connu pour ce marronnier a quarante centimètres de retard. Deux récits publiés du jardin lui donnent un tronc de 330 centimètres ; le registre municipal en mesure aujourd'hui 370. Rien ne cloche. L'arbre a continué de pousser pendant que les papiers restaient en place, ce qui est la plus réjouissante des divergences entre sources.\n\nIl a été planté en 1902, et le registre comme les deux récits s'accordent sur ce point, ce qui en fait l'un des arbres les mieux datés de cette page. En 1902, la basilique au-dessus de lui était un chantier : les travaux du Sacré-Cœur ont couru de 1875 à 1914, si bien que le marronnier a passé sa première douzaine d'années à pousser sous les échafaudages et les grues. Le jardin, lui, est arrivé plus tard encore, dessiné en 1927.\n\nLes marronniers sont l'arbre le plus familier de cette liste et le plus tenu pour acquis. Celui-ci fait 21 mètres sous un houppier large et régulier, et il fait à l'heure les deux choses pour lesquelles on aime l'espèce : des épis de fleurs blanches dressés partout sur lui en mai, des marrons sortis de leur bogue verte sur l'allée en septembre.\n\nUne correction au nom que Paris lui donne. Le marronnier d'Inde ne vient ni d'Inde ni d'ici. Il est sorti des montagnes des Balkans au XVIe siècle, et l'Europe le plante dans ses squares depuis."
+  },
+  "par_031": {
+   "name": "Le Marronnier du square René-Le Gall",
+   "species": "Marronnier d'Inde (Aesculus hippocastanum)",
+   "age_estimate": "environ 130 ans",
+   "access": "Gratuit, square municipal public (square René-Le Gall, aussi appelé jardin des Gobelins), horaires habituels des parcs parisiens, fermé la nuit",
+   "transport": "Corvisart ou Les Gobelins (métro 6/7), 8 à 10 min à pied",
+   "story": "Il y a une rivière sous ce jardin. La Bièvre traversait le quartier des Gobelins à ciel ouvert jusqu'à ce que la ville en enterre les derniers tronçons, souillés par les tanneurs et les teinturiers installés sur ses berges depuis des siècles, et le square René-Le Gall a été aménagé dans les années 1930 sur le terrain qu'elle parcourait. Ce marronnier d'Inde a été planté en 1893 ou 1894, quand l'eau coulait encore à l'air libre.\n\nIl se tient près de l'obélisque du jardin, à l'une des entrées, et ses mesures sont une petite leçon sur la lenteur avec laquelle change un arbre adulte. Un relevé de 2011 notait 18 mètres de haut et 360 centimètres de circonférence. Le registre municipal donne aujourd'hui 17 mètres et 369. Neuf centimètres de ceinture en bien plus d'une décennie, et un mètre de hauteur qui relève du bruit de mesure plutôt que d'un arbre qui rétrécit.\n\nLe square autour de lui est un monument historique, protégé depuis 1997, même si la protection vise le dessin des années 1930 et non ce qui y pousse : rocailles, longue pelouse en contrebas, pavillons de brique et cet obélisque, sur une échelle que la plupart des squares parisiens n'obtiennent jamais.\n\nLe marronnier est l'une des rares choses ici plus vieilles que le dessin. C'était déjà un arbre fait quand les terrassiers sont arrivés, et c'est la seule partie du jardin que personne n'a dessinée."
+  },
+  "par_032": {
+   "name": "Le Platane du square Montholon",
+   "species": "Platane commun (Platanus x acerifolia)",
+   "age_estimate": "plus d'un siècle, sans doute 150 à 160 ans",
+   "access": "Gratuit, square municipal public (square Montholon), ouvert de 9h30 à 21h30 en semaine et de 9h à 21h30 le week-end (horaires variables selon la saison, voir paris.fr), fermé la nuit",
+   "transport": "Cadet ou Poissonnière (métro 7), 5 à 7 min à pied",
+   "story": "Le square Montholon compte deux platanes énormes et la ville n'a écrit l'histoire que de l'un des deux. C'est peut-être celui-ci. La description officielle du square mentionne un platane planté en 1872, haut de 32 mètres, avec un tronc de 432 centimètres de circonférence. Le registre des arbres remarquables n'y liste qu'un seul platane, exactement à cet endroit, à 470 centimètres et 27 mètres. Ce ne sont pas les mêmes chiffres.\n\nOu bien ce tronc a pris 38 centimètres depuis ce relevé, ce qui est parfaitement banal, ou bien le registre a pointé l'autre arbre de la paire, ce qui l'est tout autant. Rien de disponible ne tranche, donc l'âge donné ici reste large, bien plus d'un siècle et probablement davantage, plutôt que de revendiquer 1872 pour un arbre qui ne l'a peut-être pas mérité.\n\nCe qui n'a rien d'ambigu, c'est le tronc devant vous. Quatre mètres soixante-dix le placent parmi les plus gros platanes de Paris, dans un jardin que l'on traverse en une minute.\n\nLe square a ouvert en 1863, l'un des petits jardins publics ouverts dans la ville pendant qu'Haussmann la reconstruisait, et il a été redessiné en 1981. Il donne sur la rue La Fayette, dans le 9e, grilles ouvertes le matin et closes le soir, avec la paire de platanes qui fait l'essentiel du travail pour qu'il paraisse plus ancien qu'il ne l'est."
+  }
+ }
+}

@@ -1,0 +1,264 @@
+{
+ "_note": "Italian overlay for Rome, hand-written 2026-08-22. Rendered from data/cities/rome.json, which stays the source of truth: every coordinate, photo, licence, age and access note lives there and none of it is changed here. The search terms are the one thing that is not a translation: Italy's legal and everyday term is 'alberi monumentali', so the title, meta description and question fields are written the way an Italian reader would search rather than as a literal rendering of the English.",
+ "city": "Roma",
+ "title": "Alberi monumentali di Roma: 29 giganti da vedere",
+ "meta_description": "I 29 alberi più notevoli di Roma: Adone, platano di 425 anni a Villa Borghese, i cedri del Libano delle ville nobiliari e una palma messicana.",
+ "intro": "Le famiglie nobili romane hanno usato gli alberi come simboli di status, come usavano le ville per esporre statue. Il giardiniere del cardinale Scipione Borghese piantò nel Seicento un filare di platani orientali che i forestali considerano oggi i più vecchi alberi vivi della città; i Pamphilj e i Mattei misero un cedro del Libano per giardino di collina. Roma conta 65 alberi monumentali tutelati per legge, più di ogni altra città italiana. Questi ventinove vanno da un platano di 425 anni a una palma del deserto messicano, e tutti tranne due si visitano gratis.",
+ "question_title": "Qual è l'albero più antico di Roma? (425 anni)",
+ "question_meta": "Adone, platano orientale di 425 anni a Villa Borghese, è l'albero più antico di Roma con impianto documentato. Storia, posizione e altri 28 alberi.",
+ "question_answer": "L'albero più antico di Roma è Adone, un platano orientale della Valle dei Platani a Villa Borghese, piantato all'inizio del Seicento dal giardiniere del cardinale Scipione Borghese e oggi intorno ai 425 anni. Si trova dentro Villa Borghese, a pochi minuti a piedi dall'ingresso di Via Pinciana.",
+ "question_context": "Roma ha una leggenda più antica. La Quercia del Tasso, sul Gianicolo, è popolarmente detta millenaria e legata al poeta Torquato Tasso, che secondo la tradizione riposò alla sua ombra prima di morire nel 1595. Nessun dendrologo l'ha mai datata, e questo sito tratta quel numero come folclore e non come un fatto. Adone non ha questo problema. Il giardiniere del cardinale Scipione Borghese, Domenico Savini da Montepulciano, piantò un filare di platani orientali nel parco di caccia privato della villa all'inizio del Seicento, e l'impianto è documentato abbastanza bene perché i forestali italiani contino i superstiti, nove degli undici originari, come gli alberi più antichi accertati della città. Adone è il più grande di loro, un gigante cavo all'ingresso di quella che oggi si chiama Valle dei Platani. Nel 2021 il giardino lo ha clonato da una sola foglia sopravvissuta, per non ripetere la sorte di una quercia vicina della stessa epoca crollata nel 2018. Come arrivarci: si entra a Villa Borghese da Via Pinciana e si seguono le indicazioni per la Valle dei Platani.",
+ "faq": [
+  {
+   "q": "Qual è l'albero più antico di Roma?",
+   "a": "Adone, il platano orientale di 425 anni di Villa Borghese, è l'albero più antico di Roma con una data di impianto documentata. Una quercia più vecchia sul Gianicolo è popolarmente detta millenaria, ma nessuna datazione scientifica sostiene la cifra."
+  },
+  {
+   "q": "Perché a Roma ci sono tanti cedri del Libano?",
+   "a": "Le famiglie nobili romane li usavano come simboli di status nei giardini a partire dal Seicento. Villa Doria Pamphilj e Villa Celimontana piantarono il proprio, apprezzando la specie per le sue associazioni bibliche con la durata e la permanenza."
+  },
+  {
+   "q": "Gli alberi monumentali di Roma si visitano gratis?",
+   "a": "Ventisette dei ventinove di questa lista stanno in parchi e piazze pubbliche a ingresso libero. I due dentro l'Orto Botanico richiedono un biglietto."
+  },
+  {
+   "q": "Come tutela l'Italia i suoi alberi monumentali?",
+   "a": "Una legge nazionale del 2013 permette ai comuni di iscrivere come monumentali gli alberi di età, dimensione o valore storico eccezionali. Roma ne ha 65, più di qualsiasi altra città italiana."
+  }
+ ],
+ "strings_note": "Campi per albero: name, species (nome comune italiano, stesso nome latino), age_estimate, access, transport, story. Storie da 150 a 250 parole, stesso standard dell'inglese, nessun trattino lungo.",
+ "trees": {
+  "rom_001": {
+   "name": "Il Ginkgo di Villa Sciarra",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "120 anni",
+   "access": "Gratuito, accesso libero, parco pubblico di Villa Sciarra",
+   "transport": "15 minuti a piedi da Trastevere, oppure autobus per Via Dandolo / Via Calandrelli",
+   "story": "Gli alberi antichi più famosi di Roma sono cedri e platani, piantati da cardinali e papi in tenute grandiose. Questo ginkgo appartiene a un romano molto diverso: George Washington Wurts, diplomatico americano che comprò questa proprietà collinare nel 1902 e passò il resto della vita a riempirla di piante raccolte ovunque gli capitasse di interessarsi. Lo fece piantare ai primi del Novecento, uno dei primi affermati in città, di una specie che l'Europa conosceva da appena due secoli, arrivata dai giardini dei templi cinesi dove cresce sostanzialmente immutata da prima dell'estinzione dei dinosauri. Il dipartimento ambiente del Comune lo elenca oggi fra la ventina di alberi monumentali ufficiali della città, e lo qualifica su tre fronti insieme: età e dimensione, valore paesaggistico e semplice rarità botanica, perché i ginkgo restano davvero poco comuni nei parchi romani anche un secolo dopo. Il tronco ha superato i tre metri di circonferenza e la chioma arriva a 25 metri, più in alto delle finte rovine costruite nella villa nello stesso periodo. Wurts morì nel 1928 senza vedere il seguito: la vedova, l'ereditiera americana Henrietta Tower Wurts, donò allo Stato italiano l'intera tenuta di sette ettari e mezzo nei primi anni Trenta, a condizione che restasse un parco pubblico. Ogni novembre l'albero fa quello che fanno i ginkgo dappertutto, virando all'oro in pochi giorni invece di sbiadire gradualmente come i vicini."
+  },
+  "rom_002": {
+   "name": "Adone",
+   "species": "Platano orientale (Platanus orientalis)",
+   "age_estimate": "425 anni",
+   "access": "Gratuito, accesso libero, Villa Borghese",
+   "transport": "10 minuti a piedi dalla metro A Spagna, entrando da Via Pinciana",
+   "story": "Nove alberi sono quel che resta degli undici che il cardinale Scipione Borghese piantò qui quattro secoli fa. Adone è il superstite più grande: un enorme platano orientale dal tronco cavo, all'ingresso di quella che oggi si chiama Valle dei Platani, messo a dimora ai primi del Seicento dal giardiniere del cardinale, Domenico Savini da Montepulciano. Con i suoi 425 anni circa, lui e i suoi fratelli sono descritti dai forestali italiani come l'unico nucleo urbano di platani orientali antichi rimasto in Occidente, e come gli alberi vivi più vecchi di Roma. Nel 2021 il giardino lo ha clonato, facendo crescere una piantina da una sola foglia spuntata sul tronco fragile. Il clone, piantato lì accanto come Adone Junior, è geneticamente identico a un albero di quattrocento anni pur avendone sei al momento dell'impianto. Era una polizza contro l'inevitabile: Adone è cavo e puntellato, e una quercia vicina della stessa epoca, soprannominata Quercia del Lupo per un nodo a forma di lupo sul tronco e già descritta in una memoria sui giardini della villa entro il 1650, è crollata in una tempesta nel 2018 dopo tre o cinquecento anni in piedi, le fonti non concordano. Adone continua a mettere foglie ogni primavera, nel parco di caccia che un cardinale costruì molto prima che a qualcuno venisse in mente di chiamarlo giardino pubblico."
+  },
+  "rom_003": {
+   "name": "I platani gemelli delle Undici Fontane",
+   "species": "Platano orientale (Platanus orientalis)",
+   "age_estimate": "350 anni",
+   "access": "Ingresso a pagamento, Orto Botanico di Roma",
+   "transport": "10 minuti a piedi da Trastevere (Piazza Trilussa), oppure tram 8 fino a Piazza Sonnino",
+   "story": "Due platani orientali qui sono più vecchi dell'università che oggi li possiede. L'Orto Botanico di Roma è diventato istituzione statale nel 1883, ma il terreno era giardino privato dei Corsini dal 1660, e questi due alberi, che affiancano la cascata delle undici fontane realizzata da Ferdinando Fuga nel 1742, erano già maturi quando gli ultimi cardinali Corsini ci passavano davanti. I forestali collocano la loro età oltre i 300 anni, fra le più alte accertate a Roma dopo il gruppo di platani di Villa Borghese. La scalinata che incorniciano, la Scalinata delle Undici Fontane, fa scendere l'acqua per cinque vasche di pietra verso undici zampilli separati, uno slancio settecentesco costruito come sfondo per una piantumazione che esisteva già. L'Orto conta oggi 345 esemplari secolari di 130 specie, fra cui querce da sughero, cedri dell'Himalaya e cerri, ma i due platani delle fontane restano l'immagine da cartolina, e incorniciano acqua e pietra come fanno da tre secoli, indipendentemente da quale famiglia o quale Stato abbia avuto l'atto di proprietà del terreno intorno."
+  },
+  "rom_004": {
+   "name": "La quercia da sughero dell'Aranciera",
+   "species": "Quercia da sughero (Quercus suber)",
+   "age_estimate": "226 anni",
+   "access": "Ingresso a pagamento, Orto Botanico di Roma",
+   "transport": "10 minuti a piedi da Trastevere (Piazza Trilussa), oppure tram 8 fino a Piazza Sonnino",
+   "story": "Questa quercia da sughero è stata misurata due volte in tre anni, ed è cresciuta nell'intervallo: 5,00 metri di circonferenza nell'ottobre 2021, 5,30 metri nel gennaio 2024, ancora in aumento a un'età che il registro nazionale degli alberi monumentali fissa a 226 anni. Cresce vicino all'Aranciera, dentro l'Orto Botanico di Roma, una delle diverse querce da sughero che l'università elenca fra i suoi esemplari monumentali, accanto ai cerri e a una coppia di cedri dell'Himalaya presso il vecchio maneggio. La Quercus suber è coltivata in tutto il Mediterraneo occidentale per la corteccia, decorticata ogni dieci anni circa per farne tappi da vino e pavimenti senza uccidere la pianta, e il tronco spugnoso e profondamente fessurato di questo esemplare porta ancora i segni di estrazioni passate, anche se a memoria d'uomo nessuno lo ha più decorticato. Precede di quasi un secolo la fondazione ufficiale del giardino come istituzione statale nel 1883, radicata qui da quando il terreno apparteneva ancora ai Corsini. I visitatori tendono a passarle accanto diretti alla più vistosa sezione giapponese e alle fontane a cascata, ma pochi alberi in città stanno ancora visibilmente diventando più grandi."
+  },
+  "rom_005": {
+   "name": "Il cedro del Belvedere",
+   "species": "Cedro del Libano (Cedrus libani)",
+   "age_estimate": "150-320 anni, discussa",
+   "access": "Gratuito, accesso libero, Villa Doria Pamphilj",
+   "transport": "Autobus 870 o 791 fino all'ingresso di Via Aurelia Antica, poi 10 minuti a piedi",
+   "story": "Le fonti divergono di un secolo e mezzo sull'età di questo cedro, e la divergenza è la cosa più onesta che se ne possa dire. Uno studio dettagliato sulla collezione arborea di Villa Doria Pamphilj colloca l'impianto nel Seicento, quando i Pamphilj tracciarono la tenuta, il che gli darebbe oltre 300 anni. La sua scheda nel registro nazionale degli alberi monumentali calcola invece un'età vicina ai 150 anni, con un tronco di 4,6 metri di circonferenza e un'altezza di 30 metri. Le due cifre descrivono lo stesso cedro, quello che ombreggia la terrazza del belvedere sopra il Lago del Giglio, nel parco pubblico più grande di Roma. Quel che non è in discussione è il contesto: Villa Doria Pamphilj è stata riserva privata di caccia e di svago fino all'esproprio da parte dello Stato italiano nel 1965, e questo cedro, a qualunque impianto risalga, ha fatto ombra a cardinali, principi e ora a chi corre la domenica, dalla stessa terrazza sopra lo stesso lago ornamentale. Risulta l'unico albero monumentale registrato singolarmente in un parco che per il resto conta la propria storia in cognomi di famiglia più che in età degli alberi."
+  },
+  "rom_006": {
+   "name": "Il leccio del laghetto",
+   "species": "Leccio (Quercus ilex)",
+   "age_estimate": "176-300 anni, discussa",
+   "access": "Gratuito, accesso libero, Villa Borghese",
+   "transport": "15 minuti a piedi dalla metro A Spagna, passando per il Giardino del Lago",
+   "story": "Marcantonio IV Borghese fece estirpare seicento lecci nel 1784 per costruire un giardino all'inglese attorno al laghetto di Villa Borghese, e un albero, per fortuna o per scelta, rimase in piedi. È questo leccio, che cresce sul bordo dell'acqua in quello che un tempo si chiamava Piano dei Licini, la piana dei lecci, prima che i paesaggisti del principe decidessero che un lago e un tempietto si addicevano al gusto dell'epoca più di un bosco. Il registro nazionale degli alberi misura il tronco in 4,3 metri di circonferenza e calcola dai dati di accrescimento un'età di 176 anni, cifra che collocherebbe l'impianto dopo il rifacimento voluto da Borghese e non prima. Stime più antiche, basate sulla storia documentata del sito e non su misurazioni dirette, lo avvicinano ai 300 anni e sostengono che sia uno dei pochi superstiti del bosco originario. Non possono avere ragione entrambe. Questa pagina le riporta tutte e due invece di sceglierne una. Su una cosa concordano: la statura dell'albero, 19 metri di altezza, con la chioma sempreverde e densa riflessa nel lago artificiale che due secoli e mezzo fa ha preso il posto di seicento suoi simili."
+  },
+  "rom_007": {
+   "name": "Il cedro del Mausoleo Ossario Garibaldino",
+   "species": "Cedro del Libano (Cedrus libani)",
+   "age_estimate": "146 anni",
+   "access": "Gratuito, accesso libero, Gianicolo",
+   "transport": "Autobus 115 o 870 fino al Gianicolo, poi pochi minuti a piedi",
+   "story": "Questo cedro divide la collina con i morti di una rivoluzione. Cresce fra la Fontana dell'Acqua Paola e il Mausoleo Ossario Garibaldino, il monumento del 1941 che raccoglie i resti di chi cadde difendendo la Repubblica Romana del 1849 e di chi combatté per fare della città la capitale d'Italia fra il 1860 e il 1870. Misurato ufficialmente per il registro nazionale degli alberi monumentali, arriva a circa 20 metri di altezza con un tronco di 5,74 metri di circonferenza, e la sua età documentata di circa 146 anni colloca l'impianto negli anni Settanta dell'Ottocento, poco dopo che Roma era diventata capitale dell'Italia unita nel 1871 e questo pendio era passato da campo di battaglia a luogo di memoria civile. I cedri del Libano non sono spontanei da nessuna parte vicino al Gianicolo: la nobiltà romana, e poi il nuovo Stato italiano, li piantarono nei giardini di collina della città come abbreviazione di permanenza e di grandezza antica, lo stesso ragionamento che ha messo cedri in metà delle ville nobiliari di questa lista. Questo ha superato il ragionamento. Nessuno oggi pianta simboli di status su un sacrario, ma l'albero è rimasto, ed è ormai l'elemento vivo più vecchio del monumento."
+  },
+  "rom_008": {
+   "name": "Il cedro di Villa Celimontana",
+   "species": "Cedro del Libano (Cedrus libani)",
+   "age_estimate": "oltre 100 anni, non documentata",
+   "access": "Gratuito, accesso libero, Villa Celimontana",
+   "transport": "5 minuti a piedi dalla metro B Colosseo, passando per Piazza della Navicella",
+   "story": "A pochi metri dal pino d'Aleppo di Villa Celimontana cresce il suo opposto quasi in tutto: dritto dove il pino pende, denso e scuro dove il pino è rado, originario di una catena montuosa mille chilometri più a est. Questo cedro del Libano è uno dei due alberi monumentali ufficiali di Roma dentro la villa, entrambi lungo Viale Cardinale Francesco Spellman, vicino all'ingresso principale di Piazza della Navicella. Ciriaco Mattei cominciò nel 1572 a trasformare le vigne del sito in giardino ornamentale, e i cedri del Libano, apprezzati nei giardini nobiliari romani per le loro associazioni bibliche con la durata, compaiono nelle ville di collina della città dal Seicento in poi. Nessun documento fissa l'anno in cui questo esemplare è stato messo a dimora, solo la sua iscrizione come monumentale per età, dimensioni e forma, quindi questo racconto tratta la sua età come non documentata invece di rivendicare un numero che non potrebbe sostenere. La villa passò alla Società Geografica Italiana nel 1926 e divenne parco pubblico nel 1928, e il cedro, qualunque sia la sua età esatta, è sopravvissuto a ogni istituzione che ha posseduto il terreno sotto di lui."
+  },
+  "rom_009": {
+   "name": "Il pino d'Aleppo di Villa Celimontana",
+   "species": "Pino d'Aleppo (Pinus halepensis)",
+   "age_estimate": "oltre 100 anni, non documentata",
+   "access": "Gratuito, accesso libero, Villa Celimontana",
+   "transport": "5 minuti a piedi dalla metro B Colosseo, passando per Piazza della Navicella",
+   "story": "Villa Celimontana tiene due alberi monumentali ufficiali di Roma a pochi metri l'uno dall'altro, e questo pino d'Aleppo è il più insolito dei due. Pinus halepensis è una specie costiera mediterranea, più a suo agio sulle scogliere sopra Aleppo o lungo la riviera ligure che sul Celio, e la sua presenza qui si accorda con l'abitudine dei Mattei di piantare esotici: è la famiglia che dal 1572 trasformò una vigna in questo giardino. L'albero sta lungo Viale Cardinale Francesco Spellman, vicino all'ingresso principale della villa a Piazza della Navicella, con la chioma contorta e modellata dal vento in contrasto con il cedro più dritto che gli cresce quasi accanto. Nessuna fonte dà al pino una data di impianto precisa, solo la designazione del registro nazionale come monumentale per età, dimensioni e forma, quindi questo racconto la dichiara non documentata invece di inventare un numero. Certa è la compagnia che ha frequentato: nobili rinascimentali, poi la Società Geografica Italiana, che tiene la villa dal 1926, e ora chi gioca a pallone la domenica sui prati vicini, tutti sotto lo stesso pino inclinato."
+  },
+  "rom_010": {
+   "name": "La fitolacca del Campidoglio",
+   "species": "Fitolacca arborea (Phytolacca dioica)",
+   "age_estimate": "115 anni",
+   "access": "Gratuito, gradinata pubblica, sempre accessibile",
+   "transport": "2 minuti a piedi da Piazza Venezia",
+   "story": "L'albero di strada più improbabile di Roma viene dalla pampa argentina, e deve il suo posto sul Campidoglio a una festa per un cinquantesimo compleanno. Lo piantò nel 1911 il principe Baldassarre Ladislao Odescalchi, l'anno in cui l'Italia celebrava mezzo secolo dall'unità, ai piedi della Cordonata di Michelangelo, accanto alla chiesa di Santa Maria in Aracoeli. È una Phytolacca dioica, chiamata ombù nel suo Sud America d'origine, una sempreverde a crescita rapida con un tronco gonfio e contrafforti che sembra più scolpito che cresciuto. Con circa 115 anni è di gran lunga l'albero più giovane di questa lista, ma niente altro nella copertura arborea del Campidoglio ne regge la scala: la sua chioma ombreggia ormai un tratto della salita verso Piazza del Campidoglio e compete per attenzione con la piattaforma del tempio antico da cui il colle prende il nome. I turisti fotografano la lupa e la piazza disegnata da Michelangelo là sopra; l'albero che davvero ombreggia la loro salita riceve raramente una didascalia. È uno degli alberi monumentali registrati di Roma pur essendo, in termini locali, appena uscito dalla giovinezza."
+  },
+  "rom_011": {
+   "name": "Il cedro dell'Himalaya dell'Istituto di Studi Germanici",
+   "species": "Cedro dell'Himalaya (Cedrus deodara)",
+   "age_estimate": "oltre 100 anni, non documentata",
+   "access": "Gratuito, accesso libero, parco pubblico di Villa Sciarra",
+   "transport": "15 minuti a piedi da Trastevere, oppure autobus per Via Dandolo / Via Calandrelli",
+   "story": "Due registri ufficiali non concordano su questo tronco per quasi due metri. L'elenco nazionale lo dà a cinque metri di circonferenza; l'elenco regionale del Lazio, che è poi la fonte da cui quello nazionale ricava le voci romane, dice 3,3. Descrivono lo stesso deodara accanto alla palazzina principale della villa, e nessuno dei due gli ha mai messo una data. Quello che l'elenco regionale dice, invece, è insolito: dei 65 alberi monumentali del comune di Roma questo è uno dei soli tre designati anche per architettura vegetale, il termine con cui il rilevatore indica un albero la cui forma è essa stessa l'opera costruita. Non l'età. Non la circonferenza. La forma. Cedrus deodara cresce spontaneo fra i 1.500 e i 3.000 metri dell'Himalaya occidentale, dove il nome sanscrito significa legno degli dei e dove il suo legname ha costruito templi. Questo è arrivato qui per le abitudini di acquisto di un americano ricco. George Washington Wurts comprò la collina nel 1902 e passò 26 anni a riempirla di piante prese ovunque gli capitasse di interessarsi, fra cui il ginkgo che sta 130 metri più a valle. La casa dietro il cedro è diventata Istituto Italiano di Studi Germanici nel 1931, tre anni dopo la morte di Wurts, e da allora l'albero è proprietà di un'istituzione."
+  },
+  "rom_012": {
+   "name": "Il podocarpo di Villa Sciarra",
+   "species": "Podocarpo (Podocarpus neriifolius)",
+   "age_estimate": "oltre 100 anni, non documentata",
+   "access": "Gratuito, accesso libero, parco pubblico di Villa Sciarra",
+   "transport": "15 minuti a piedi da Trastevere, oppure autobus per Via Dandolo / Via Calandrelli",
+   "story": "Quasi tutti gli alberi entrano nel registro italiano dei monumentali perché sono vecchi o enormi. Questo c'è perché è strano. Il rilevamento del Lazio indica come motivo una sola lettera, d, rarità botanica, e non elenca nessun altro criterio: non l'età, non la dimensione, non il valore paesaggistico. Con due metri di circonferenza e 18 metri di altezza è un albero discreto in una città piena di esemplari ben più grandi, e lo Stato lo tutela lo stesso, perché a Roma non cresce praticamente nient'altro di simile. I podocarpi sono una famiglia di conifere in gran parte australi, separatasi molto prima che esistessero i pini, e non hanno mai adottato il cono. Il seme sta invece su un peduncolo carnoso e gonfio che diventa viola e viene mangiato dagli uccelli, ed è il motivo per cui Podocarpus neriifolius si è diffuso dalle pendici himalayane alla Nuova Guinea, e per cui le comunità buddiste lo hanno piantato attorno ai templi in tutto quell'areale. Il Comune di Roma definisce questo esemplare splendido ed enorme. Sta su Viale Adolfo Leducq, a una ventina di metri dal ginkgo, comprati entrambi dallo stesso collezionista americano nello stesso decennio, il che fa di questo tratto di vialetto i 50 metri botanicamente più improbabili della città."
+  },
+  "rom_013": {
+   "name": "Il platano di Piazza San Cosimato",
+   "species": "Platano comune (Platanus x acerifolia)",
+   "age_estimate": "oltre 120 anni, non documentata",
+   "access": "Gratuito, piazza pubblica, sempre accessibile",
+   "transport": "Tram 8 fino a Piazza Sonnino, poi 5 minuti a piedi; 10 minuti a piedi da Piazza Trilussa",
+   "story": "Il quartiere ha fatto fare una tomografia a questo albero. I volontari di Trastevere hanno pagato agronomi forestali per esaminare il tronco dall'interno, leggendo la solidità del legno come un ospedale legge un corpo, perché l'albero sta esattamente sopra l'area giochi dei bambini e nessuno voleva tirare a indovinare. Con 5,65 metri di circonferenza ha il tronco di platano più grosso del registro monumentale di Roma, più dei celebrati platani di Villa Borghese, e non cresce nel giardino di un cardinale ma in una piazza di lavoro, con il mercato del mattino, motorini parcheggiati quanto un campo da calcio e una chiesa del decimo secolo. Fino agli anni Ottanta dell'Ottocento qui c'era pascolo aperto, i Prati di San Cosimato, terra da pastura fuori dai vicoli medievali. Quando Roma divenne capitale e Trastevere fu ricostruita, i campi diventarono una piazza triangolare di mercato, e il platano o è sopravvissuto a quel cambiamento o è stato piantato dentro di esso: nessun documento dice quale, e la sua iscrizione al registro nel 2013 annotò la dimensione senza l'età. Platanus x acerifolia è a sua volta un incidente, un ibrido settecentesco fra il platano orientale e quello americano che si rivelò più tollerante dell'aria di città di entrambi i genitori. Roma ne piantò a migliaia. Questo è quello di cui si occupano i vicini."
+  },
+  "rom_014": {
+   "name": "L'ippocastano della Cordonata",
+   "species": "Ippocastano (Aesculus hippocastanum)",
+   "age_estimate": "oltre 100 anni, non documentata",
+   "access": "Gratuito, strada pubblica, sempre accessibile",
+   "transport": "3 minuti a piedi da Piazza Venezia, salendo per Via delle Tre Pile",
+   "story": "Un albero di montagna balcanico non ha nessun motivo di essere così grande su un colle romano. Aesculus hippocastanum cresce spontaneo in una manciata di forre sui monti della Grecia settentrionale, dell'Albania e della Macedonia del Nord, dove le estati sono fresche e il suolo resta umido; l'Europa occidentale lo incontrò solo nel Cinquecento, attraverso Costantinopoli, e lo piantò ovunque come albero da viale. Roma è vicina al limite di quello che l'ippocastano tollera, ed è per questo che la città ne ha esattamente uno sul registro monumentale e per cui un tronco di 3,45 metri di circonferenza qui vale più della stessa cifra a Vienna. Sta su Via delle Tre Pile, la rampa che le auto salgono verso il Campidoglio, sul lato destro della Cordonata di Michelangelo per chi sale. Roma Capitale lo ha registrato per la dimensione e per il valore paesaggistico, cioè per la veduta di cui fa parte più che per l'albero da solo. Quasi tutti quelli che fotografano la scalinata lo fanno stando alla sua ombra. Cinquanta metri più in là, sull'altro fianco della stessa salita, cresce l'ombù argentino, così i due lati della scalinata più famosa di Roma sono tenuti da un albero di montagna balcanico e da uno della pampa sudamericana, e nessuno dei due è romano."
+  },
+  "rom_015": {
+   "name": "Il cedro sopra il laghetto",
+   "species": "Cedro del Libano (Cedrus libani)",
+   "age_estimate": "oltre 130 anni, non documentata",
+   "access": "Gratuito, accesso libero, Villa Borghese",
+   "transport": "15 minuti a piedi dalla metro A Spagna, passando per il Giardino del Lago",
+   "story": "L'elenco romano degli alberi monumentali non descrive questo cedro da solo. Lo descrive come accompagnato da un leccio monumentale, e i due stanno davvero a 70 metri l'uno dall'altro sulla stessa acqua. Quella formula è la spia: questo albero non è mai stato pensato per essere guardato come esemplare. Quando Marcantonio IV Borghese rifece il parco negli anni Ottanta del Settecento stava comprando un quadro, non una collezione. I suoi architetti Antonio e Mario Asprucci scavarono un lago artificiale, ci misero un'isola, costruirono sull'isola un tempietto ionico dedicato a Esculapio nel 1786 e piantarono tutto intorno perché la veduta dalla riva sembrasse un paesaggio da sempre esistito. Il cedro è scenografia, e sta ancora facendo il suo lavoro due secoli e mezzo dopo: 4,1 metri di circonferenza, 22 metri di altezza, una chioma piatta a candelabro che si sporge sopra le barche a remi. Cedrus libani era l'albero di prestigio di quella generazione di giardini romani, piantato in metà delle ville nobiliari di questa lista, ma quasi tutti quelli stanno su prati e terrazze. Questo ha l'acqua sotto, ed è il motivo per cui è quello che la gente fotografa."
+  },
+  "rom_016": {
+   "name": "La sequoia del Pincio",
+   "species": "Sequoia sempreverde (Sequoia sempervirens)",
+   "age_estimate": "oltre 100 anni, non documentata",
+   "access": "Gratuito, accesso libero, giardini del Pincio",
+   "transport": "10 minuti a piedi su per le rampe da Piazza del Popolo, oppure metro A Flaminio",
+   "story": "Trenta metri sono una buona altezza per un albero a Roma e un fallimento per questa specie. Sequoia sempervirens è l'essere vivente più alto della Terra, supera i 110 metri nella fascia di nebbia della California settentrionale, e ci arriva bevendo la nebbia direttamente attraverso le foglie durante un'estate senza pioggia. Roma le offre l'estate senza pioggia e non la nebbia. Così la sequoia del Pincio è cresciuta in larghezza invece che in altezza, 4,2 metri di circonferenza, e finisce comunque fra i cinque alberi più alti dell'intero registro monumentale cittadino, il che dice più sugli alberi di Roma che su questo. Cresce sulla terrazza di Giuseppe Valadier, tracciata fra il 1809 e il 1814 durante l'occupazione francese come passeggiata pubblica sopra Piazza del Popolo, in un momento in cui il giardinaggio romano stava passando dalla geometria potata alle curiosità importate. Nessuno ha pubblicato quando è stata piantata né da chi. È arrivata tardi al registro nazionale, nel gruppo di alberi romani aggiunti dopo quelli ben documentati, e quella scheda è l'unico documento che esista su di lei: specie, circonferenza, altezza, una coordinata. Tutto il resto che vi diranno su questo albero è un'ipotesi, comprese le ipotesi che suonano sicure."
+  },
+  "rom_017": {
+   "name": "La magnolia di Via Corsini",
+   "species": "Magnolia (Magnolia grandiflora)",
+   "age_estimate": "circa 275 anni",
+   "access": "Gratuito, strada pubblica (Via Corsini), il registro RAMI la indica come accessibile. Risolve la questione dell'accesso: sta sulla strada, a Via Corsini 1, non dentro l'Orto Botanico a pagamento né nei giardini privati Corsini.",
+   "transport": "Stessa passeggiata dei platani gemelli delle Undici Fontane, a 109 metri; 10 minuti a piedi da Trastevere",
+   "story": "La magnolia più antica di Roma non sta in un giardino. Sta sul marciapiede di Via Corsini, fuori dal muro del palazzo per il cui giardino era stata piantata, intorno alla metà del Settecento e quindi circa 275 anni fa. L'Orto Botanico accanto, la casa ovvia per un albero così, è diventato istituzione pubblica molto dopo che lei era già in terra.\n\nLe magnolie del sud avevano raggiunto l'Europa dal sud-est americano solo qualche decennio prima, il che rese questa un acquisto da collezionista più che un albero da strada. È cresciuta di conseguenza. Il tronco misura 290 centimetri di circonferenza e la chioma arriva a 18 metri, più vicina a un albero da bosco che all'arbusto potato da cortile a cui la specie di solito si riduce in Italia. Il registro italiano degli alberi monumentali la elenca per età e per dimensione, e per una magnolia quell'accoppiata è rara.\n\nQuello che ha visto è soprattutto il confine davanti a lei che cambia proprietario: i terreni privati di un cardinale che diventano una collezione botanica statale, e Trastevere che da margine della città ne diventa il centro. I rilevatori l'hanno controllata alla fine del 2025 e ne hanno registrato lo stato di salute come buono.\n\nA maggio e giugno fa la cosa per cui la specie era stata importata, aprendo fiori bianco crema grandi come una mano aperta, in alto e fuori portata, e così carichi di profumo che quasi tutti la sentono prima di guardarla."
+  },
+  "rom_018": {
+   "name": "Il cedro del Libano di Villa Torlonia",
+   "species": "Cedro del Libano (Cedrus libani)",
+   "age_estimate": "stimata fra 150 e oltre 200 anni, non documentata",
+   "access": "Gratuito, parco pubblico di Villa Torlonia. Il registro RAMI lo indica come accessibile.",
+   "transport": "Autobus fino all'ingresso di Via Nomentana, oppure 10 minuti a piedi dalla metro B Bologna; 3,5 km dal centro",
+   "story": "Nessun cedro sul registro monumentale di Roma è più grosso di questo. Sei metri di circonferenza, 28 metri di altezza, accanto alla scalinata che Giuseppe Valadier disegnò per il Casino Nobile. Il rilevatore che ne ha scritto la scheda ha usato la parola guardiano.\n\nNessuno sa quando è stato piantato, e vale la pena dirlo chiaramente, perché il registro riporta la sua circonferenza e nessun anno di nascita. Quello che esiste è la storia della tenuta. I Torlonia comprarono i terreni nel 1797, e il paesaggio all'inglese che portò le conifere ornamentali nelle ville romane arrivò più tardi nell'Ottocento. Questo colloca il cedro fra i 150 e i 220 anni, che è una deduzione dal giardino e non una data presa da un documento.\n\nI suoi vicini sono stati insoliti. Il parco ospita un obelisco di granito rosa che il cedro ormai contende in altezza, una finta casa medievale coperta di civette e, dal 1925 al 1943, Mussolini, che affittò l'intera tenuta come residenza privata per una cifra simbolica. La villa fu occupata, poi lasciata andare in rovina per decenni, poi restaurata e aperta come parco pubblico. Il cedro ha attraversato tutto restando dove sta. La descrizione di Roma Capitale lo definisce colossale, e per una volta non è entusiasmo municipale. È stato misurato di nuovo nel marzo 2026 e trovato in buona salute."
+  },
+  "rom_019": {
+   "name": "Il podocarpo di Piazza Vittorio",
+   "species": "Podocarpo (Podocarpus neriifolius)",
+   "age_estimate": "oltre 100 anni, non documentata",
+   "access": "Gratuito, giardino pubblico dentro Piazza Vittorio Emanuele II (Giardino Nicola Calipari). Il registro RAMI lo indica come accessibile.",
+   "transport": "Metro A Vittorio Emanuele, sulla piazza stessa; 1,7 km dal gruppo del Campidoglio",
+   "story": "L'Italia ha messo questo albero nel registro nazionale dei monumentali nell'ottobre 2025 per un motivo solo: non dovrebbe stare qui. Podocarpus neriifolius cresce spontaneo nelle foreste delle pendici himalayane e del sud-est asiatico, e Roma ne conta pochissimi di una certa taglia. Questo è fra i più grandi, 230 centimetri di circonferenza e 20 metri di altezza, nel giardino pubblico dentro Piazza Vittorio Emanuele II.\n\nLa sua età non si conosce. Non sopravvive nessun documento di impianto e nessuno dei due registri che lo elencano porta una data, quindi un secolo, più o meno, è la precisione massima che si possa onestamente dichiarare. La piazza intorno fu tracciata negli anni Ottanta dell'Ottocento per i funzionari della nuova capitale, in uno stile porticato torinese che ancora fa sembrare questo angolo di Roma importato da un'altra città, e un giardino di alberi esotici era esattamente quello che quel decennio piantava.\n\nHa attraversato la versione più inquieta di Roma. La fontana in rovina della piazza, i Trofei di Mario, sta a pochi passi e lo precede di diciassette secoli. Il mercato alimentare che riempì i portici per cent'anni ha traslocato dietro l'angolo nel 2001. Il quartiere è diventato il più poliglotta della città. Il podocarpo, sempreverde e imperturbabile, a febbraio è uguale ad agosto. La sua salute è stata registrata come buona nel novembre 2025."
+  },
+  "rom_020": {
+   "name": "Il pino dell'Himalaya del Colle Oppio",
+   "species": "Pino dell'Himalaya (Pinus roxburghii)",
+   "age_estimate": "oltre 90 anni, probabilmente piantato attorno all'apertura del giardino nel 1936",
+   "access": "Gratuito, parco pubblico del Colle Oppio. Il registro RAMI lo indica come accessibile.",
+   "transport": "5 minuti a piedi dalla metro B Colosseo; a 1 km da Villa Celimontana",
+   "story": "Le radici di questo pino sono cresciute dentro il palazzo di Nerone. Sta sul Colle Oppio esattamente sopra la Domus Aurea, e da qualche parte là sotto, al buio, si sono infilate nel ninfeo di Ulisse e Polifemo.\n\nNon è un albero romano in nessun senso. Pinus roxburghii appartiene alle pendici esterne dell'Himalaya, e questo esemplare fu riportato da lì da Giuseppe Tucci, il tibetologo e inviato di epoca fascista che passò gli anni Trenta viaggiando fra Tibet e Nepal. Era già in piedi quando il giardino del Colle Oppio fu inaugurato nel 1936, il che gli dà almeno novant'anni e ne fa uno dei pochissimi della sua specie in città. Il registro italiano dei monumentali lo ha aggiunto nell'ottobre 2025 per sola rarità botanica: 290 centimetri di circonferenza, 20 metri di altezza.\n\nL'obiezione è reale e va detta nello stesso respiro. Quelle radici sono un problema serio per la rovina sottostante, e i progetti di ridisegno del giardino sopra la Domus Aurea sono stati riportati come intenzionati a togliere gli alberi alti sopra lo scavo esattamente per questo motivo. La stampa aveva già dato questo albero per morente una volta. L'ultimo controllo del registro, a fine 2025, lo ha trovato vivo e in buona salute. Valgono entrambe le cose: sta bene, e sta su un terreno dove l'archeologia ha la pretesa più forte."
+  },
+  "rom_021": {
+   "name": "Il cipresso di Piazza di Siena",
+   "species": "Cipresso comune (Cupressus sempervirens)",
+   "age_estimate": "circa 235 anni, piantato attorno al 1789",
+   "access": "Gratuito, parco pubblico, camminamento attorno all'arena di Piazza di Siena",
+   "transport": "Circa 10-15 minuti a piedi dalla metro A Spagna o Flaminio, dentro Villa Borghese",
+   "story": "Diciotto cipressi circondavano Piazza di Siena quando l'arena fu tracciata nel 1789, parte della siepe e della cintura di alberi progettate dall'architetto Antonio Asprucci per quello che oggi è il concorso ippico internazionale di Roma. Diciassette di quei diciotto non ci sono più. Questo, secondo l'associazione Amici di Villa Borghese, è l'unico superstite, ancora in piedi lungo lo stesso perimetro ovale che l'arena conserva dal Settecento. La storia municipale della piazza conferma lo schema di impianto originario, una siepe di bosso, diciotto cipressi e due boschetti di pini, senza dire quale albero sia l'ultimo del gruppo, quindi la qualifica di superstite poggia sulla parola dell'associazione e non sul conteggio degli anelli di un dendrologo. Quel che non è in discussione è l'arena: ospita il Concorso Ippico Internazionale ogni anno dal 1922, cavalli e cavalieri che girano sullo stesso ovale verde che un cipresso di due secoli guarda da bordo campo da allora. La lettera che ha fatto il nome di questo albero è del 2024, scritta perché Villa Borghese stava perdendo esemplari storici più in fretta di quanto chiunque volesse, compreso un pino molto amato sul vicino Pincio abbattuto nello stesso periodo. Questo cipresso è ciò che la campagna voleva far notare prima che facesse la stessa fine."
+  },
+  "rom_022": {
+   "name": "I bagolari dell'Aranciera",
+   "species": "Bagolaro (Celtis australis)",
+   "age_estimate": "localmente detto risalente al Seicento, senza conferma dendrologica",
+   "access": "Gratuito, parco pubblico",
+   "transport": "Circa 10-15 minuti a piedi dalla metro A Spagna o Flaminio, dentro Villa Borghese",
+   "story": "Un bagolaro nella lecceta dietro il Museo Carlo Bilotti porta un soprannome invece di un certificato: lo chiamano il bagolaro del Seicento, anche se nessuno ha contato gli anelli per dimostrarlo. Quel che è misurato è la circonferenza, circa quattro metri, uguagliata quasi esattamente da un secondo tronco che gli cresce accanto, così vicino che il registro italiano degli alberi li annota come coppia gemellata invece di discutere su quale sia quale. Stanno entrambi nella Lecceta, un tratto di bosco di lecci fra la vecchia aranciera, oggi museo con una collezione di de Chirico e Warhol, e il Muro Torto, il muro di età aureliana che segna questo margine di Roma dal terzo secolo. Villa Borghese conta circa 350 alberi e solo una parte ha uno status monumentale ufficiale; una lettera del 2024 dell'associazione Amici di Villa Borghese ha indicato questo bagolaro fra la trentina che aspetta ancora le carte che lo proteggerebbero. Nessuna fonte ne dà le coordinate esatte, solo una posizione dentro il bosco, quindi trovarlo significa girare per la Lecceta invece di seguire un puntino sulla mappa. Vale per quasi tutti gli alberi più vecchi di Villa Borghese: il parco è sopravvissuto a diversi tentativi di catalogazione formale senza che nessuno ne portasse a termine uno."
+  },
+  "rom_023": {
+   "name": "Il leccio di Piazza Perin del Vaga",
+   "species": "Leccio (Quercus ilex)",
+   "age_estimate": "circa 125 anni",
+   "access": "Gratuito, piazza pubblica, nessuna restrizione",
+   "transport": "Nel quartiere residenziale della Vittoria, al confine con il Flaminio, circa 15-20 minuti a piedi da Piazzale Flaminio o Lepanto (metro A)",
+   "story": "I bambini che si arrampicavano su questo leccio gli hanno dato il nome. Dalla cima gridavano \"Anvedi da quassù se vede tutta Roma\", e da allora l'albero è Tutta Roma. Lo facevano intorno al 1919, quindi era già arrampicabile; il calcolo del registro colloca l'impianto attorno al 1900.\n\nQuel grido ora è agli atti. Quando l'Italia ha aggiunto l'albero all'elenco nazionale dei monumentali nel 2025, fra i criteri c'era il valore storico e culturale accanto alla forma e al portamento, cosa insolita a Roma, dove quasi tutte le voci sono iscritte per la sola dimensione. E questo non è un gigante: 2,80 metri di circonferenza, 18 metri di altezza, misurati nel novembre 2025 e trovati in buona salute.\n\nSta in Piazza Perin del Vaga, una piazza residenziale della Vittoria al confine con il Flaminio, a nord del centro vicino al Tevere e piuttosto lontana da qualunque cosa un visitatore stia altrimenti andando a vedere. Che è più o meno il punto. Qui nessuno ha costruito un monumento. Un albero è andato in terra all'inizio del secolo scorso, una generazione di bambini del quartiere ci è salita sopra, uno di loro ha detto una cosa che valeva la pena ripetere, e cento anni dopo lo Stato italiano l'ha messa per iscritto."
+  },
+  "rom_024": {
+   "name": "Il bagolaro del Parco degli Scipioni",
+   "species": "Bagolaro (Celtis australis)",
+   "age_estimate": "circa 100 anni",
+   "access": "Gratuito, parco pubblico dentro il Parco Regionale dell'Appia Antica, orari normali del parco (circa dalle 7 al tramonto)",
+   "transport": "Ingresso in Via di Porta Latina 16, vicino a Porta Latina nelle Mura Aureliane; circa 20-25 minuti a piedi dal Circo Massimo (metro B), oppure autobus lungo la Via Appia Antica",
+   "story": "Due rilievi ufficiali hanno misurato questo bagolaro e sono andati d'accordo sulla vita a meno di un centimetro: quattro metri di circonferenza. Sull'altezza non vanno d'accordo. Il registro nazionale degli alberi monumentali segna 20 metri. L'ente del Parco dell'Appia Antica, nel suo catalogo degli alberi di pregio, dice 15. Le due cifre sono entrambe correnti, nessuna è stata ritirata, e da qui non c'è modo di sapere quale metro avesse ragione, quindi prendete l'albero come qualcosa fra le due.\n\nHa circa cent'anni, il che lo rende più giovane di quasi tutto quello che ha attorno. Il Parco degli Scipioni è disteso sopra il sepolcro degli Scipioni, la tomba della famiglia che diede il generale che batté Annibale, con il colombario di Pomponio Ila a pochi passi e le Mura Aureliane lungo il bordo. Il parco nella forma attuale è opera di Raffaele de Vico, che lo disegnò intorno al 1929, e questo bagolaro fa parte di quel disegno: un pezzo di paesaggismo novecentesco che è oggi la cosa viva più grande in un parco costruito su terra del terzo secolo avanti Cristo.\n\nL'ente del parco lo definisce uno dei suoi esemplari più importanti, per dimensioni, portamento ed equilibrio della chioma, e ne valuta buona la salute.\n\nUn secondo bagolaro, appena più grosso, sta un centinaio di metri più in là, contro le Mura Aureliane. Anche quello è sul registro. Finora nessun altro l'ha messo per iscritto."
+  },
+  "rom_025": {
+   "name": "Il platano di Viale Jonio",
+   "species": "Platano comune (Platanus x acerifolia)",
+   "age_estimate": "non documentata",
+   "access": "Gratuito, su strada pubblica",
+   "transport": "Montesacro, Roma nord; metro B1 Conca d'Oro, poi una breve passeggiata, oppure autobus lungo la Via Nomentana",
+   "story": "Il secondo platano più grosso del registro romano non cresce nel giardino di una villa. Sta su Viale Jonio a Montesacro, sei chilometri a nord del centro, su una strada con semafori e corsia preferenziale, e misura cinque metri e cinquantatré di circonferenza con trentadue metri sopra. Lo batte solo il platano di Piazza San Cosimato a Trastevere, che ha però il vantaggio di una piazza famosa.\n\nMontesacro era campagna fino agli anni Venti, quando Roma tracciò la Città Giardino Aniene dall'altra parte del fiume Aniene: case basse, giardini, viali alberati, un quartiere intero progettato in una volta sola per chi veniva spinto fuori dal centro. I viali arrivarono con gli alberi. Questo è come viene fuori uno di quegli alberi dopo un secolo in cui le case intorno sono state sostituite a poco a poco da palazzine e lui no.\n\nDue fonti lo registrano, il registro nazionale dei monumentali attraverso l'elenco del Lazio e un avviso del Comune di Roma. Nessuna delle due dà un'età. Le date del quartiere fanno pensare a un albero andato in terra insieme alle strade, ma nessun documento lo dice, quindi resta un'ipotesi.\n\nLa metro B1 fino a Conca d'Oro lascia una breve passeggiata. È lontano da qualunque altra cosa un visitatore stia facendo quel giorno, ed è un albero davvero enorme."
+  },
+  "rom_026": {
+   "name": "Il pino dell'Himalaya di Villa Fiorelli",
+   "species": "Pino dell'Himalaya (Pinus roxburghii)",
+   "age_estimate": "non documentata",
+   "access": "Gratuito, parco pubblico, aperto dalle 07:00 al tramonto",
+   "transport": "Metro A fino a Ponte Lungo, poi pochi minuti a piedi fino a Piazza Villa Fiorelli",
+   "story": "Il registro monumentale di Roma elenca esattamente due pini dell'Himalaya in tutta la città. Uno sta sul Colle Oppio sopra il Colosseo. Questo è l'altro, un paio di chilometri più a est, in un parco di quartiere di novemila metri quadri, con un tronco di 2,97 metri di circonferenza e diciotto metri sopra.\n\nPinus roxburghii cresce spontaneo sulle catene esterne e asciutte dell'Himalaya, dal Kashmir fino al Bhutan, dove viene inciso per la resina come altri alberi vengono incisi per il caucciù. Gli aghi stanno a gruppi di tre e arrivano a trenta centimetri, abbastanza lunghi perché la chioma penda invece di essere ispida, e le pigne sono legnose e grandi come una mano.\n\nIl terreno sotto ha smesso di essere campagna nel luglio 1930, quando il Governatorato di Roma comprò l'ultima terra della famiglia Fiorelli alla condizione esclusiva che fosse destinata a parco pubblico. La vecchia casa padronale fu abbattuta quel settembre. Raffaele De Vico disegnò nel 1931 il giardino che la sostituì, e i palazzi del Tuscolano crebbero tutto intorno.\n\nDue lacune vale la pena dichiararle. Il registro italiano non ha un campo per l'età, quindi nessuno ha datato questo pino. E il resoconto del Comune su cosa cresce nel parco nomina noci, carrubi, susini, un ginkgo e alberi della seta, senza citare nessun pino."
+  },
+  "rom_027": {
+   "name": "Il pioppo nero di Via Conca d'Oro",
+   "species": "Pioppo nero (Populus nigra)",
+   "age_estimate": "non documentata",
+   "access": "Gratuito, su strada pubblica",
+   "transport": "Metro B1 fino a Conca d'Oro, poi una breve passeggiata lungo Via Conca d'Oro; il platano di Viale Jonio sta circa un chilometro più a nord",
+   "story": "Fare di un pioppo nero un monumento è una scommessa contro la specie. Populus nigra cresce in fretta su legno tenero, si scava presto e comincia a perdere rami mentre una quercia della stessa età si sta ancora riempiendo, motivo per cui pochi invecchiano da qualunque parte e ancora meno su una strada di città. Questo misura 4,05 metri di circonferenza con venti metri sopra, all'incrocio fra Via Conca d'Oro e Via Val d'Ala.\n\nIl registro di Roma porta tre pioppi neri. Gli altri due stanno a 14 e 25 chilometri fuori città, uno verso la costa al Risaro e uno a Ostia, il che lascia questo come l'unico che un visitatore possa realisticamente raggiungere.\n\nMontesacro era campagna fino agli anni Venti, quando la città tracciò un quartiere giardino oltre l'Aniene e ne piantò i viali. Niente registra quando questo pioppo è andato in terra, e il registro italiano non avrebbe nemmeno un campo dove scriverlo.\n\nUna cautela. L'elenco regionale del Lazio portava ancora l'albero nell'edizione del novembre 2025, e quell'elenco tiene un foglio separato per gli alberi cancellati, con il motivo di ogni cancellazione, che è la cosa più vicina a un controllo pubblico sull'esistenza di un albero monumentale che questo paese abbia. Nove mesi sono tanti nella vita di un pioppo."
+  },
+  "rom_028": {
+   "name": "Il bagolaro delle Mura Latine",
+   "species": "Bagolaro (Celtis australis)",
+   "age_estimate": "non documentata",
+   "access": "Gratuito, su strada pubblica lungo le Mura Aureliane",
+   "transport": "Accanto a Porta Latina, a un centinaio di metri dall'ingresso del Parco degli Scipioni in Via di Porta Latina 16; circa 20-25 minuti a piedi dal Circo Massimo (metro B)",
+   "story": "Il registro di Roma porta due bagolari e stanno a centoventi metri l'uno dall'altro. Quello dentro il Parco degli Scipioni ha una scheda nel catalogo dell'ente parco, una valutazione di salute e una stima di età. Questo, più grosso di tredici centimetri con i suoi 4,14 metri di circonferenza, ha una riga in un foglio di calcolo.\n\nCresce all'angolo fra Viale delle Mura Latine e Via Latina, lungo le Mura Aureliane. In italiano la specie si chiama bagolaro, e anche spaccasassi, per l'abitudine di radicare dentro muri e rocce e di non farsi spostare. Il muro accanto fu tirato su fra il 271 e il 275, diciannove chilometri di calcestruzzo rivestito di mattoni gettati attorno alla città in quattro anni da un imperatore che aveva smesso di dare per scontata la sicurezza di Roma. La Porta Latina sta pochi passi più a sud.\n\nIl registro dà l'albero a venti metri e annota cosa gli è valso la designazione: le dimensioni, e la forma e il portamento. Non dà un'età, e i bagolari ingrossano in fretta su terreno buono, quindi quattro metri di circonferenza qui non significano i due secoli che la stessa misura suggerirebbe in una quercia.\n\nUna fonte sola, il registro nazionale attraverso l'elenco del Lazio. Il catalogo degli alberi di pregio del Parco dell'Appia Antica descrive in dettaglio il suo vicino e questo non lo nomina."
+  },
+  "rom_029": {
+   "name": "La palma blu di Villa Sciarra",
+   "species": "Palma blu (Brahea armata)",
+   "age_estimate": "non documentata",
+   "access": "Gratuito, accesso libero, parco pubblico di Villa Sciarra",
+   "transport": "15 minuti a piedi in salita da Trastevere, oppure autobus per Via Dandolo / Via Calandrelli",
+   "story": "Una palma dei canyon della Bassa California sta sul registro monumentale di Roma, e il registro è netto sul perché: rarità botanica. Nessuna età, nessuna storia, nessun piantatore famoso. Solo una Brahea armata alta venti metri sul Gianicolo, che lo Stato considera motivo sufficiente da solo.\n\nÈ una pianta del deserto. In Messico cresce in forre rocciose e asciutte dietro la costa del Pacifico, e le sue foglie hanno il colore che il nome promette, un grigio azzurro rigido e ceroso che da lontano sembra metallo più che fogliame. Una volta l'anno emette spighe fiorali che escono dalla chioma e pendono per diversi metri sotto di essa, più lunghe delle foglie da cui sono nate.\n\nVilla Sciarra è arrivata al pubblico attraverso un americano. George Washington Wurts comprò questa collina nel 1902 e passò il resto della vita a riempirla di quel che gli capitava sott'occhio, e la vedova Henrietta Tower Wurts donò l'intera tenuta allo Stato italiano nei primi anni Trenta, a condizione che restasse un parco. Se questa palma fosse una delle sue, nessun documento lo dice.\n\nIl registro dà 2,94 metri di circonferenza e venti metri di altezza. Le palme non depositano anelli di accrescimento, quindi qui l'età non è soltanto non documentata, è inconoscibile."
+  }
+ }
+}
