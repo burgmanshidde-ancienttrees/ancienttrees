@@ -12,6 +12,16 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-22 (session) - Munich 30 to 44: finished the write pass a prior attempt left claimed and unwritten
+
+Second attempt in the same usage window; the first stopped after 10 minutes having only claimed Munich for a write pass and staged 14 verified trees, then decided it was done. Picked the claim up rather than re-orienting from scratch: dispatched `write-stories` on the 14 staged trees (muc_035-048, all single-source from Munich's 2021 Naturdenkmalverordnung register, no age or girth on any of them), merged the result into `data/cities/munich.json`, released the claim.
+
+Caught one thing before merging: the writer delivered muc_035's species as "Sycamore Maple (Acer pseudoplatanus)" against this corpus's canonical "Sycamore (Acer pseudoplatanus)" (10 existing trees use the canonical form) — renamed before merge so hard rule 9 doesn't trip. `best_time` set on 3 of the 14, kept scarce since Munich's other 30 trees already carry 17. Every one of the 14 ships flagged, honest about the missing age/girth, with a direct invitation for a reader to supply either.
+
+Build and `qa.py` clean, one known-false-positive aside: the sitemap lastmod check fails in this sandbox because the local checkout is shallow (4 commits), which isn't a data problem and won't reproduce on the real CI checkout with full history. `superlatives.py`: 432 claims, no collisions. Deleted `data/research/munich-verified.json` (fully merged). Also checked and released nothing else: Bari's 3 written-and-ready trees (data/research/bari-verified.json) remain correctly held below the 4-tree floor, no claim on it, left alone.
+
+FOR HIDDE: nothing blocks. Munich now has 44 trees, still 14/44 with a photo; a photo push there would be the next cheap win.
+
 ## 2026-08-22 (session) - Nijmegen 11 to 14, plus its first photograph
 
 Second attempt in a window whose first attempt claimed Brisbane and

@@ -50,6 +50,16 @@ the sassafras as Section 54, between Forest and Locust Avenues, which would
 turn an approximate pin into a confirmed one, and Dublin's sequoia still has no
 tree-level coordinate.
 
+## 2026-08-22 (session) - Munich 30 to 44: finished a write pass an earlier attempt in this window claimed and left unwritten
+
+A prior attempt in this same usage window claimed Munich for a write pass (14 register-only leads verified and staged in `data/research/munich-verified.json`) and then stopped after 10 minutes without dispatching the pass. This session picked the claim up, dispatched `write-stories` on the 14 trees (muc_035-048), merged the result into `data/cities/munich.json`, and released the claim.
+
+All 14 come from Munich's 2021 Naturdenkmalverordnung, single-source, no age and no girth on any of them; each ships flagged with an honest invitation for a reader to supply a date or a measurement. Caught and fixed one species-naming slip before merging: the writer delivered muc_035 as "Sycamore Maple (Acer pseudoplatanus)" against the corpus canonical "Sycamore (Acer pseudoplatanus)" (10 existing trees use the canonical form); renamed before merge so hard rule 9 and the build's one-species-one-name check don't trip. `best_time` set on 3 of 14 (muc_037 red oak, muc_040 beech, muc_042 maple), kept scarce since Munich already carries 17 best_times across its other 30 trees.
+
+Build and `qa.py` both clean except one pre-existing false positive: `qa.py`'s sitemap lastmod check fails locally because this sandbox's git checkout is shallow (4 commits only), which flattens every page's last-source-commit date to today; this is a checkout-depth artifact, not a data problem, and doesn't reproduce on the real CI checkout.
+
+Munich: 30 to 44 trees, still one published city, still needs a photo push (14/44 have one). Deleted `data/research/munich-verified.json` (fully merged).
+
 ## 2026-08-22 (session) - Nijmegen 11 to 12, one tree, and the rest recorded as leads/blocked
 
 Finished the verify claim the previous attempt in this window left standing

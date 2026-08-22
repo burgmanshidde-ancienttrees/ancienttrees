@@ -1015,6 +1015,421 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate"
+    },
+    {
+      "id": "muc_035",
+      "name": "The Sycamore Maple of Theresienstraße",
+      "species": "Sycamore (Acer pseudoplatanus)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Theresienstraße 90, 80333 München",
+        "latitude": 48.15116,
+        "longitude": 11.56837,
+        "neighbourhood": "Maxvorstadt"
+      },
+      "story": "A mountain tree ended up on a flat city street and outgrew everything on it. Sycamore maples belong to the Alps and the uplands of central Europe, where they root in steep pasture and broken rock; this one stands on the gravel plain the Isar laid down, on Theresienstrasse in Maxvorstadt. Munich's 2021 natural monument ordinance protects it in one line, and that line is a compliment rather than a measurement: a strikingly handsome, dominantly grown tree, effective in the streetscape.\n\nMaxvorstadt was Munich's first planned expansion beyond the medieval walls, a grid drawn from 1805 and now the quarter of the university and the Pinakotheken. Theresienstrasse runs east to west through the middle of it, a long straight of shopfronts, institutes and parked bicycles, and the maple is the one thing on its stretch with a crown worth standing under.\n\nNobody has put a date on it. The ordinance keeps no age column and no girth column, and no other source names this tree, so all that is on record is that the city looked at it and decided it was worth keeping. If you know when it went in, or have taken a tape around the trunk, tell us and we will add it.",
+      "verified_sources": [
+        "Munich Naturdenkmalverordnung 2021, Maxvorstadt 5"
+      ],
+      "access": "Free, public land, no restrictions",
+      "transport": "In Maxvorstadt, a walk from the Josephsplatz tram stop",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "muc_036",
+      "name": "The Horse Chestnut of Gollierplatz",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Gollierplatz, 80339 München",
+        "latitude": 48.1363,
+        "longitude": 11.53612,
+        "neighbourhood": "Schwanthalerhöhe"
+      },
+      "story": "Munich's beer gardens are shaded by this species for an engineering reason. Brewers dug ice cellars along the Isar terraces and planted horse chestnuts over the vaults, because the roots run shallow and do no damage below while the leaves throw a dense, low shade that kept the beer cold through August. The tree came from the mountains of the Balkans and reached central Europe in the sixteenth century as a curiosity; Bavaria put it to work.\n\nThis one is off duty. It stands on Gollierplatz, the green square at the heart of the Westend, and Munich's 2021 natural monument ordinance protects it as a wide-spreading tree that stands out clearly above the others around it. That is worth knowing before you go, because the square has plenty of trees and only one of them is the one you came for: look for the crown that overtops the rest.\n\nThe Westend is a dense grid of tenement blocks thrown up for workers at the end of the nineteenth century, on the rise just above the Theresienwiese, where the Oktoberfest has been held since 1810. Gollierplatz is where the quarter goes to sit down.\n\nThe city recorded no age for it and nobody else has published one. If you know the square's history, or the tree's, we would like to hear it.",
+      "verified_sources": [
+        "Munich Naturdenkmalverordnung 2021, Schwanthalerhöhe 2"
+      ],
+      "access": "Free, public land, no restrictions",
+      "transport": "In Schwanthalerhöhe, close to the Gollierplatz tram stop",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "muc_037",
+      "name": "The Red Oak of Hartmannshofer Park",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Hartmannshofer Park, 80993 München",
+        "latitude": 48.17377,
+        "longitude": 11.49373,
+        "neighbourhood": "Moosach"
+      },
+      "story": "Munich's protection order calls this tree rare, which is an odd thing to say about a red oak. The species is everywhere in European parks: brought over from eastern North America in the eighteenth century for fast timber and for the autumn colour, and planted by the thousand ever since. What is rare is one allowed to reach full size inside a city. The ordinance says so in five words of German that translate as a very large red oak, rare within the city, and leaves it there.\n\nIt stands in Hartmannshofer Park in Moosach, in Munich's north-west, on ground that was estate land before the city reached it. Red oak leaves are the giveaway: big, thin, with bristle tips on each lobe, nothing like the round-lobed native oaks, and in autumn the whole crown goes scarlet rather than the brown that a pedunculate oak settles for. The bark stays smooth and grey far longer than a European oak's, which is another way to be sure you are standing at the right trunk.\n\nNo age is recorded anywhere. Red oaks grow fast, so size is a poor guide here, and guessing would be worse than admitting it. If you know when this one was planted, tell us.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when the crown turns scarlet"
+      },
+      "verified_sources": [
+        "Munich Naturdenkmalverordnung 2021, Moosach 4"
+      ],
+      "access": "Free, public land, no restrictions",
+      "transport": "In Moosach's Hartmannshofer Park",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "muc_038",
+      "name": "The White Willow of the Isar Floodplain",
+      "species": "White Willow (Salix alba)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Isar riverside path, left bank north of the Großlappen treatment works, 80995 München",
+        "latitude": 48.20736,
+        "longitude": 11.64299,
+        "neighbourhood": "Schwabing-Freimann"
+      },
+      "story": "A white willow is normally one of a crowd. It is the pioneer of the gravel bar, the first thing to root after a flood has scoured the bank, and it grows in thickets because that is how the river plants it. This one grew up alone, and Munich's 2021 natural monument ordinance protects it for exactly that: a mighty, solitary and striking tree, rare within the city at this size.\n\nIt stands on the left bank of the Isar in the northern floodplain beyond Freimann, where the river is still allowed to sprawl across shingle and side channels instead of running between engineered banks. The German name for the species is Silberweide, silver willow, and on a windy day you see why: the leaves are white underneath, so a gust turns the whole crown pale in one movement. Nothing else on the riverside path does that.\n\nWillows put on wood fast and hollow out early, which means girth says very little about years here. The city recorded no age, no other source names this tree, and any number we offered would be arithmetic dressed up as a fact. If you have measured it, or watched it through a few floods, we would rather have your account than our guess. The riverside path runs past it and is open all year.",
+      "verified_sources": [
+        "Munich Naturdenkmalverordnung 2021, Schwabing-Freimann 6"
+      ],
+      "access": "Free, public land, no restrictions",
+      "transport": "On the public Isar riverside path in the northern floodplain, Freimann",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "muc_039",
+      "name": "The Horse Chestnut of Kirchtruderinger Straße",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Kirchtruderinger Straße 13, 81829 München",
+        "latitude": 48.12572,
+        "longitude": 11.67243,
+        "neighbourhood": "Trudering-Riem"
+      },
+      "story": "If you find this chestnut brown and blotched in August, autumn has nothing to do with it. Since the 1990s a small moth, the horse chestnut leaf miner, has spread across central Europe and mines the leaves of nearly every chestnut on the continent, browning them weeks early. The tree survives it and keeps flowering; it simply stops looking its best at the exact moment people are out in shirtsleeves. Come in May instead, when the candles are up and the leaf miners have not yet got going.\n\nWhat brought it onto Munich's protected list is bulk. The 2021 ordinance calls it a mighty free-standing tree, rare within the city at this size, and free-standing is the operative word: no neighbours, no competition, a full dome from the ground up. It stands on Kirchtruderinger Strasse, the road named for the church end of Trudering, a farming village east of Munich that had its own parish long before the city grew out to meet it and swallowed it whole.\n\nThe register carries no age and nobody else has published one, which is normal for a street tree that was never famous. Trudering keeps its own local history well. If somebody there knows when this chestnut was planted, we would like to put the year on the page.",
+      "verified_sources": [
+        "Munich Naturdenkmalverordnung 2021, Trudering-Riem 1"
+      ],
+      "access": "Free, public land, no restrictions",
+      "transport": "In Trudering, a few minutes from Trudering S-Bahn station",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "muc_040",
+      "name": "The Beech of Kagerstraße",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Kagerstraße 9, 81929 München",
+        "latitude": 48.10961,
+        "longitude": 11.60667,
+        "neighbourhood": "Ramersdorf-Perlach"
+      },
+      "story": "A beech that still has its lowest branches has never had a neighbour. In a beech wood the low limbs die in the shade of the canopy and drop off, which is why forest beeches stand like grey columns with nothing on them for the first ten metres. An even crown that sweeps all the way down to the grass is the shape of a tree that grew up in the open with all the light to itself, and that is precisely what Munich's 2021 natural monument ordinance records here: a large solitary tree with an even crown reaching down to the ground.\n\nIt stands on Kagerstrasse in Ramersdorf-Perlach, in the south-east of the city, on the sort of residential street where a tree this size is the only thing older than the houses. Fagus sylvatica is the species that would cover most of central Europe if we left it alone, and it casts the deepest shade of any tree here, which is why almost nothing grows underneath one.\n\nThe city recorded no age and no girth, and no second source names it, so the honest answer is that nobody has dated it. If somebody on Kagerstrasse remembers the tree from childhood, or has put a tape around the trunk, that is already more than any register holds.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October and November, when the copper runs from the top of the crown down to the grass"
+      },
+      "verified_sources": [
+        "Munich Naturdenkmalverordnung 2021, Ramersdorf-Perlach 2"
+      ],
+      "access": "Free, public land, no restrictions",
+      "transport": "In Ramersdorf-Perlach, on Kagerstraße",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "muc_041",
+      "name": "The Hornbeam of Wilrampark",
+      "species": "Hornbeam (Carpinus betulus)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Wilrampark, south of the playground, 81929 München",
+        "latitude": 48.1148114,
+        "longitude": 11.6120075,
+        "neighbourhood": "Ramersdorf-Perlach"
+      },
+      "story": "Hornbeam is the hardest wood in the European forest, and it was never meant to become a tree like this. Carpenters cut it for the parts that had to survive being hit: mill cogs, the teeth of wooden gearwheels, butchers' blocks, ox yokes. It blunts tools and it burns hotter than oak. The English name says as much twice over, horn for hardness and beam for tree. A wood that useful was normally coppiced or laid into a hedge and cut back every few years, which is why a full-grown solitary hornbeam is a scarce thing.\n\nThis one was left alone, and Munich's 2021 natural monument ordinance protects it as a solitary tree with an even crown, rare in Munich at this size. It stands in Wilrampark in Ramersdorf-Perlach, just south of the playground, which makes it easy to find and easy to sit under. Look at the trunk rather than the crown: hornbeam grows fluted, with muscular vertical ridges running up it like tensed sinew, and nothing else in the park has that surface.\n\nNo age is on record, here or anywhere else, and the city register keeps no girth column either. If you have put a tape around this trunk, we would like the number for the page.",
+      "verified_sources": [
+        "Munich Naturdenkmalverordnung 2021, Ramersdorf-Perlach 5"
+      ],
+      "access": "Free, public land, no restrictions",
+      "transport": "In Wilrampark, Ramersdorf-Perlach",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "muc_042",
+      "name": "The Norway Maple of Mondstraße",
+      "species": "Norway Maple (Acer platanoides)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Mondstraße, 81547 München",
+        "latitude": 48.11713,
+        "longitude": 11.57537,
+        "neighbourhood": "Untergiesing-Harlaching"
+      },
+      "story": "Snap a leaf stalk off this tree and it bleeds white. That milky sap is the one reliable way to tell a Norway maple from the sycamore maples it otherwise resembles, and it is the sort of trick worth knowing at a trunk where the leaves are twenty metres up. What you can see from the pavement is scale: Munich's 2021 natural monument ordinance calls it a very mighty, singular tree that defines the square it stands in, which is a lot of authority to hand one maple.\n\nThe square is on Mondstrasse in Untergiesing, moon street, on the low ground by the Isar below the terrace that Giesing proper sits on. Giesing was a poor quarter of brickworkers and day labourers long before it was a fashionable one, and its street corners are small, hard and short of green. A tree that determines what one of them looks like is doing real work.\n\nNorway maple is the first of the big shade trees to flower here, in April, in acid yellow-green clusters that open before the leaves and are easy to mistake for early foliage from a distance.\n\nThe register records no age, and no other source names this tree. If you have a date for it, send it over.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the crown turns clear butter yellow over the square"
+      },
+      "verified_sources": [
+        "Munich Naturdenkmalverordnung 2021, Untergiesing-Harlaching 1"
+      ],
+      "access": "Free, public land, no restrictions",
+      "transport": "In Untergiesing-Harlaching, on Mondstraße",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "muc_043",
+      "name": "The Ash of Bleibtreuplatz",
+      "species": "European Ash (Fraxinus excelsior)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Bleibtreuplatz, 81477 München",
+        "latitude": 48.07833,
+        "longitude": 11.51506,
+        "neighbourhood": "Solln"
+      },
+      "story": "Europe is losing its ash trees, so a big one with a full crown is worth going to look at while it is there. A fungus from east Asia turned up in eastern Europe in the early 1990s, spread across the continent within two decades and has killed ash on a scale that has changed what woods look like in a single human lifetime. Munich's 2021 natural monument ordinance says nothing about any of that. It protects this tree in seven words: a mighty tree with a wide, funnel-shaped crown.\n\nFunnel is the right word for a healthy ash. The limbs leave the trunk at a narrow angle and then swing outward and up, so the whole thing opens like a wide beaker rather than spreading like an oak. Dieback shows in the opposite direction, as thinning from the top down and dead twig ends against the sky, which makes this a tree you can assess for yourself in a few seconds from the pavement.\n\nIt stands on Bleibtreuplatz in Solln, a villa suburb of large gardens and quiet corners in Munich's south-west. Nobody has published an age for it. If you pass it often and notice the crown thinning, or if you know when it was planted, tell us and we will update the page.",
+      "verified_sources": [
+        "Munich Naturdenkmalverordnung 2021, Thalkirchen-Obersendling-Forstenried-Fürstenried-Solln 4"
+      ],
+      "access": "Free, public land, no restrictions",
+      "transport": "In Solln, on Bleibtreuplatz",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "muc_044",
+      "name": "The Lime of the Muttenthaler Pond",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Weiher an der Muttenthalerstraße, 81477 München",
+        "latitude": 48.07344,
+        "longitude": 11.5123,
+        "neighbourhood": "Solln"
+      },
+      "story": "The best part of this lime is at the bottom. Munich's 2021 natural monument ordinance gives most trees on its list one clause about size or crown; this one gets a note about its feet, praising a pronounced, wide, chalice-shaped stem base along with the presence it has in the landscape beside the pond. Old limes do that. The trunk flares out at ground level into buttresses that run into the soil like poured wax, and on a big one the flare can be wider than a person can reach around.\n\nIt grows at the water on Muttenthalerstrasse in Solln, at the south-western edge of Munich, where the streets are wide and the gardens are old. A lime and a pond is not an accidental combination in Bavaria. The linden was the tree villages planted where they met, danced and held court, and water and a bench tend to follow the same logic.\n\nGo and stand at the base rather than photographing the crown from across the water, because the base is what the city singled out. Age is the one thing missing: the register has no year and no girth for it, and no second source names the tree at all. Anyone with a tape measure can tell us more than the paperwork does.",
+      "verified_sources": [
+        "Munich Naturdenkmalverordnung 2021, Thalkirchen-Obersendling-Forstenried-Fürstenried-Solln 5"
+      ],
+      "access": "Free, public land, no restrictions",
+      "transport": "In Solln, beside the pond on Muttenthalerstraße",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "muc_045",
+      "name": "The Ash of Pasinger Stadtpark",
+      "species": "European Ash (Fraxinus excelsior)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Pasinger Stadtpark, 81241 München",
+        "latitude": 48.14093,
+        "longitude": 11.45623,
+        "neighbourhood": "Pasing-Obermenzing"
+      },
+      "story": "This ash branches low, and for an ash that is unusual enough to be the reason it is protected. Grown in a wood, Fraxinus excelsior runs straight up as a clean pole and puts its crown out at the top where the light is; foresters like it for exactly that. This one carries a mighty crown set low on the trunk, which is how Munich's 2021 natural monument ordinance describes it, along with the way it dominates the landscape around it. It means the branches are within sight rather than overhead, and the tree reads as a shape rather than a column.\n\nIt stands in Pasinger Stadtpark, the park strung along the Wurm on its way north out of Lake Starnberg, ten minutes on foot from Pasing station. The ash is worth timing: it is the last big tree in the park to come into leaf, often not until well into May, and among the first to drop, which gives it a shorter summer than anything standing next to it. In winter you can pick it out by the buds, matt black and blunt, unlike any other tree here.\n\nThe register carries no age or girth for it and no second source names it, so its years are an open question. Answers welcome.",
+      "verified_sources": [
+        "Munich Naturdenkmalverordnung 2021, Pasing-Obermenzing 1"
+      ],
+      "access": "Free, public land, no restrictions",
+      "transport": "In Pasinger Stadtpark, a short walk from Pasing station",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "muc_046",
+      "name": "The Lime of Landsberger Straße",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Landsberger Straße 486, 81241 München",
+        "latitude": 48.14686,
+        "longitude": 11.46224,
+        "neighbourhood": "Pasing-Obermenzing"
+      },
+      "story": "Landsberger Strasse is the old road west out of Munich, the one that ran to Landsberg and on toward Augsburg before anybody thought of a motorway, and near its far end this lime holds down a corner of Pasing. Munich's 2021 natural monument ordinance protects it as a dominant tree that shapes both the street and the town around it, which is a heavy claim to make about one tree on a busy road. It lands differently here than it would elsewhere in the city, because Pasing was a town in its own right before Munich absorbed it. It still has its own Rathaus, its own market and its own centre of gravity, and the lime stands close to all three.\n\nLarge-leaved lime is the German town tree by long habit: it takes hard pruning, poor soil and traffic, it throws new shoots from the base when it is cut back, and it can keep that up for centuries. Its leaves are the bigger of the two native limes, soft and faintly hairy underneath, and it flowers a fortnight or so ahead of the small-leaved lime in early summer.\n\nNo age has been recorded, by the city or anyone else. Pasing keeps its history close. If a local knows this tree's, we would like to hear it.",
+      "verified_sources": [
+        "Munich Naturdenkmalverordnung 2021, Pasing-Obermenzing 2"
+      ],
+      "access": "Free, public land, no restrictions",
+      "transport": "In Pasing, on Landsberger Straße near the town hall",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "muc_047",
+      "name": "The Oak of Maria-Eich-Straße",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Maria-Eich-Straße 119, 81241 München",
+        "latitude": 48.13452,
+        "longitude": 11.4449,
+        "neighbourhood": "Pasing-Obermenzing"
+      },
+      "story": "Maria-Eich-Strasse means Mary's Oak Street, and this is not that oak. The name belongs to the pilgrimage site at Planegg, out beyond the city boundary at the far end of the road, where by tradition a figure of the Virgin was set into a hollow oak in the early eighteenth century and a chapel grew up around the spot. Whether the street was named for that tree or simply for the place it leads to, the oak standing on it in Obermenzing today is a separate tree with a separate life, and the city protects it on its own account: a dominant tree that shapes the townscape, in the words of Munich's 2021 natural monument ordinance.\n\nObermenzing is the green, villa-and-garden neighbour of Pasing in Munich's west, and a pedunculate oak here is a native on home ground rather than an import. Quercus robur is the species that carried central Europe: pigs were driven out to fatten on its acorns, ships and roof beams came out of its timber, and a single mature one supports more insect species than almost any other tree here.\n\nThe register gives no age and no girth for it. Oaks reward a tape measure more than most. If you bring one, tell us what you find.",
+      "verified_sources": [
+        "Munich Naturdenkmalverordnung 2021, Pasing-Obermenzing 3"
+      ],
+      "access": "Free, public land, no restrictions",
+      "transport": "In Obermenzing, on Maria-Eich-Straße",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "muc_048",
+      "name": "The Yew of Laimer Kirchweg",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Laimer Kirchweg, 80687 München",
+        "latitude": 48.13923,
+        "longitude": 11.49944,
+        "neighbourhood": "Laim"
+      },
+      "story": "Nobody can tell you how old a yew is, and that is a property of the species rather than a gap in the paperwork. Yews grow slowly, then stop and start again for centuries, and the heartwood rots away from the middle while the tree stays perfectly healthy around it, so there is nothing left to count. Every part of it except the red flesh of the berry is poisonous, and it will resprout from a stump that would have finished any other tree here. Taxus baccata is the longest-lived thing that grows in Europe.\n\nThis one stands on Laimer Kirchweg, the old church path of a village that Munich has long since grown around, and the city's 2021 natural monument ordinance protects it as a dominant tree that shapes the townscape. Yews and church paths belong together across Europe, usually with the tree older than the building at the end of the walk, though nothing on record connects this one to that habit.\n\nGo in February. A yew keeps its dark, dense, almost black-green all winter, which is unremarkable in July and the only colour on the street in the dead of the year. The register lists no age and no girth, and if you know either, we would like to have it.",
+      "verified_sources": [
+        "Munich Naturdenkmalverordnung 2021, Laim 2"
+      ],
+      "access": "Free, public land, no restrictions",
+      "transport": "In Laim, on Laimer Kirchweg",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
