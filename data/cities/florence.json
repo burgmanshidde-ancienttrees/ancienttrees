@@ -2,6 +2,7 @@
   "city": "Florence",
   "country": "Italy",
   "status": "needs_curation",
+  "oldest_tree_id": "flo_001",
   "intro": "Florence's old trees split between two origins. The Giardino dei Semplici, a botanical garden founded in 1545 to grow medicine for the Medici, holds the city's oldest documented trees: a yew planted in 1720, a cork oak from 1805, still growing where their directors put them. Almost everything else dates from one decade, the 1860s and 70s, when Florence briefly served as capital of unified Italy and architect Giuseppe Poggi carved new parks and viewpoints across the hills above the Arno. Both eras still stand, mostly overlooked by the millions who come only for the Duomo.",
   "meta_description": "Florence's remarkable trees, from a 1720 botanical-garden yew to the tree nobody notices at Piazzale Michelangelo.",
   "question_answer": "Florence's oldest documented tree is a European yew in the Giardino dei Semplici botanical garden, planted in 1720 by the botanist Pier Antonio Micheli and now around 306 years old. It stands a short walk from Piazza San Marco, behind the entrance ticket of one of the world's oldest university botanical gardens.",
@@ -752,6 +753,38 @@
       "transport": "",
       "height_m": 23.0,
       "verify_notes": "Height 23.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+    },
+    {
+      "id": "flo_023",
+      "name": "The Cypress of the Boboli Gardens",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "age_estimate": "roughly 375 years",
+      "age_min": 350,
+      "age_max": 400,
+      "girth_cm": 357,
+      "height_m": 28.0,
+      "location": {
+        "address": "Giardino di Boboli, Piazza de' Pitti 1, Florence",
+        "latitude": 43.764639,
+        "longitude": 11.251056,
+        "neighbourhood": "Boboli Gardens (Oltrarno)"
+      },
+      "story": "Boboli's most famous cypresses are the double row lining the Viottolone, the avenue that runs straight down the hill from the amphitheatre. This one stands apart from that avenue, its own listed specimen in Italy's monumental tree register, closer to the Pitti Palace end of the garden than to the avenue's cypress ranks.\n\nAt 357 centimetres round and up to 30 metres tall, it is unremarkable in a garden that specialises in exactly this species and exactly this kind of size. What sets it apart is the paperwork: the Tuscan tree register calculates its age at roughly 375 years from what it calls a registered birth year, a documentary basis this page has not been able to independently verify, so take the figure as a considered estimate rather than a fact carved in stone. If it holds, the tree predates the Boboli that most visitors recognise, laid out under later Medici dukes through the seventeenth century, though nothing ties this specific trunk to any one phase of that construction.\n\nThe Boboli Gardens began in 1549 as the Medici's private garden and only opened to the public in 1766. Entry now runs on the same combined ticket as the Uffizi and Pitti Palace, so this cypress is one of the easier stops on the whole Florence page to actually reach: a short walk from the Ponte Vecchio, inside a garden that gets crowded with or without a 375-year-old tree to look for.",
+      "verified_sources": [
+        "https://ilregistrodeglialberi.it/6501-cipresso-comune-firenze-fi-toscana",
+        "data/registers/italy-masaf.json sheet 61/D612/FI/09"
+      ],
+      "access": "Paid entry (Boboli Gardens ticket, part of the Pitti Palace / Uffizi Galleries museum complex)",
+      "transport": "About 7 min walk from Ponte Vecchio; C3 bus stops at Pitti Palace",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "verify_notes": "Two independent sources joined by matching register code (MASAF sheet 61/D612/FI/09 and RAMI id 6501, pins 9m apart). Age of 375 years is RAMI's own stated figure ('calculated from the registered birth year'); the underlying documentary basis was not independently found, so treated as an estimate in the story rather than a fact. Not the 'Bobolino' hillside garden where flo_007/015/016/017/019 stand (0.76 km away); this is the Boboli Gardens proper."
     }
   ]
 }

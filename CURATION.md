@@ -10,6 +10,14 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-22 (session) - Florence 22 to 23: one Boboli Gardens cypress, oldest-tree pin kept on the documented yew
+
+A verify pass steered away from Florence's already-exhausted cheap leads (Bobolino stone pine etc., checked twice on 2026-08-21 and still single-sourced) and toward fresh, unmined MASAF register candidates instead. It found one: flo_023, The Cypress of the Boboli Gardens, Mediterranean Cypress, 357 cm girth, verified via matching MASAF/RAMI register codes 9 m apart. RAMI's own register states an age of "roughly 375 years, calculated from a registered birth year" but the underlying documentary basis was not found independently, so `curation_status: flagged` and the story hedges the figure as an estimate rather than a fact.
+
+That estimate (age_max 400) technically exceeds flo_001's documented 306-year yew, which would have silently flipped the /florence/oldest-tree page's answer to a hedged register guess instead of a precisely documented 1720 planting. Set `oldest_tree_id: "flo_001"` explicitly (same mechanism Amsterdam's cycad uses) rather than let the raw age_max win: flo_001's whole point, already made in the page's own question_context, is that its age is not a guess. Build, qa.py and superlatives.py all clean (qa's one sitemap complaint is the sandbox's shallow git clone, unrelated).
+
+Also this session: redacted Hidde's personal Gmail address from LOG.md (same PRINCIPLES.md #10 issue REVIEW.md flagged in CURATION.md and a run had already fixed there), wrote the Norway Maple species page intro (the one page gap pagegaps.py found), ran a free photo API sweep (40 more trees checked), and dispatched Haarlem and Vienna verify passes (register deepening, both still running/pending write at time of writing).
+
 ## 2026-08-22 (session) - The nine most-visited tree pages, checked; Newton's pin was 180 metres wrong
 
 Hidde asked whether the pages people actually see carry errors. A verify pass
