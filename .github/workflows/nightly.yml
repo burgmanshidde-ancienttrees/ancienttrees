@@ -1,5 +1,18 @@
 name: City research
 
+# The tool permissions live here, at workflow level, and not inside a step,
+# because there are TWO agent steps and the second one silently ran without
+# them. Every continuation on 2026-08-21 was refused Edit and Write, which is
+# to say the attempt built to rescue a wasted window could not write a single
+# file: three runs, 148 turns each, 0 trees, and denial rates three times the
+# healthy ones. The fresh-eyes review caught it the next morning.
+#
+# A list copied into two places is a list that will differ. One name, both
+# steps.
+env:
+  CLAUDE_ALLOWED: "Bash(git:*),Bash(python3:*),Bash(npm:*),Bash(npx:*),Bash(cd:*),Bash(curl:*),Bash(gh run:*),Bash(gh workflow:*),Bash(ls:*),Bash(cat:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(grep:*),Bash(find:*),Bash(mkdir:*),Bash(sort:*),Bash(uniq:*),Bash(diff:*),Bash(sed:*),Bash(awk:*),Bash(echo:*),Bash(jq:*),Bash(cut:*),Bash(tr:*),Bash(date:*),Bash(basename:*),Bash(dirname:*),Bash(cp:*),Bash(mv:*),Bash(test:*),Bash(touch:*),Bash(printf:*),Task,Monitor,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
+  CLAUDE_DISALLOWED: "Bash(rm:*),Bash(sudo:*),Bash(gh repo:*),Bash(gh secret:*),Bash(gh auth:*),Bash(git clean:*),Bash(git reset --hard:*),Bash(find:* -delete)"
+
 on:
   schedule:
     # Two rhythms, set 2026-07-26 now that Hidde is back and talking to
@@ -415,8 +428,8 @@ jobs:
           # for and which is not a shell at all, and touch/printf, which sit
           # beside the plumbing already allowed.
           claude_args: |
-            --allowedTools "Bash(git:*),Bash(python3:*),Bash(npm:*),Bash(npx:*),Bash(cd:*),Bash(curl:*),Bash(gh run:*),Bash(gh workflow:*),Bash(ls:*),Bash(cat:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(grep:*),Bash(find:*),Bash(mkdir:*),Bash(sort:*),Bash(uniq:*),Bash(diff:*),Bash(sed:*),Bash(awk:*),Bash(echo:*),Bash(jq:*),Bash(cut:*),Bash(tr:*),Bash(date:*),Bash(basename:*),Bash(dirname:*),Bash(cp:*),Bash(mv:*),Bash(test:*),Bash(touch:*),Bash(printf:*),Task,Monitor,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
-            --disallowedTools "Bash(rm:*),Bash(sudo:*),Bash(gh repo:*),Bash(gh secret:*),Bash(gh auth:*),Bash(git clean:*),Bash(git reset --hard:*),Bash(find:* -delete)"
+            --allowedTools "${{ env.CLAUDE_ALLOWED }}"
+            --disallowedTools "${{ env.CLAUDE_DISALLOWED }}"
       # Continuous mode. GitHub fires the schedule only a handful of times a day
       # for this repo, so most open usage windows go unused. When a token is
       # present this step re-dispatches the workflow at the end of every run, so
@@ -468,6 +481,9 @@ jobs:
           CF_ACCOUNT_TAG: "949aa102070e5f296c9cc0d5bc1e1891"
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          claude_args: |
+            --allowedTools "${{ env.CLAUDE_ALLOWED }}"
+            --disallowedTools "${{ env.CLAUDE_DISALLOWED }}"
           prompt: |
             An attempt in this same window stopped early and shipped nothing:
             ${{ steps.probe.outputs.reason }}
