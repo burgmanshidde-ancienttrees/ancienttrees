@@ -311,7 +311,7 @@ struct HomeView: View {
     private var walkShelf: some View {
         VStack(alignment: .leading, spacing: 12) {
             ShelfHeader(title: "Walks near you",
-                        subtitle: "The nearest one is open to everyone. The others come with Plus, which is not open yet.")
+                        subtitle: "The nearest one is open to everyone. The rest come with Plus, which we have not opened yet.")
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 12) {
                     ForEach(Array(walksNear.enumerated()), id: \.element.name) { i, w in

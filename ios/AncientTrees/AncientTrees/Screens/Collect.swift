@@ -201,7 +201,7 @@ struct CollectView: View {
             }
             Text(collectedSpecies.isEmpty
                  ? "Tick a tree off and its species fills in here."
-                 : "The eighteen species we map most. Rarer ones count too, they are just not drawn here yet.")
+                 : "The eighteen species we map most. Rarer ones count too; they are simply not drawn here yet.")
                 .font(.caption).foregroundStyle(Brand.inkSoft)
         }
         .padding(18)
@@ -233,7 +233,7 @@ struct CollectView: View {
             }
             if saved.isVisited(t.id) {
                 Button { saved.toggleVisited(t.id) } label: {
-                    Label("Not stood in front of it after all", systemImage: "arrow.uturn.backward")
+                    Label("I have not seen this one after all", systemImage: "arrow.uturn.backward")
                 }
             }
         }

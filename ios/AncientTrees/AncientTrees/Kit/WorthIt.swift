@@ -24,7 +24,7 @@ struct WorthItView: View {
     /// is"). Asked inline, never by sending people to the form.
     private static let asks: [String: (String, String)] = [
         "dead or gone": ("What did you find there? (optional)",
-                         "A stump, a fallen trunk, nothing at all, and when"),
+                         "A stump, a fallen trunk, or nothing at all, and when you were there"),
         "wrong location": ("Where is it really? (optional)",
                            "A street corner, a landmark, or a maps pin"),
         "could not tell which tree": ("Which one did you look at? (optional)",

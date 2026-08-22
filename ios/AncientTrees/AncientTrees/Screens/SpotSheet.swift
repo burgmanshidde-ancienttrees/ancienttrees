@@ -241,7 +241,7 @@ struct SpotSheet: View {
                             .foregroundStyle(Brand.moss)
                         Text("Photograph the tree")
                             .font(.brand(16, .bold)).foregroundStyle(Brand.moss)
-                        Text("Trunk and crown in the frame helps us most")
+                        Text("Trunk and crown in the frame helps us most, if you can manage it")
                             .font(.caption2).foregroundStyle(Brand.inkSoft)
                     }
                     .frame(height: 170).frame(maxWidth: .infinity)
