@@ -972,6 +972,28 @@
    "cities_touched": 0,
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-08-22T05:50:06+00:00",
+   "date": "2026-08-22",
+   "run_id": "32554847487",
+   "minutes": 16.5,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 148,
+   "denials": 36,
+   "denials_source": "permission_denials: Bash, Bash(curl), Bash(echo), Bash(for), Bash(gh), Bash(git), Bash(printenv), Bash(python3), Bash(test), Bash(wc), Edit, Write",
+   "ended": "success",
+   "tokens": 3868345,
+   "claims_held": [
+    "oahu",
+    "salzburg",
+    "nijmegen"
+   ],
+   "commits": 14,
+   "cities_touched": 0,
+   "trees": 0,
+   "logged": true
   }
  ],
  "schedule_changes": [
