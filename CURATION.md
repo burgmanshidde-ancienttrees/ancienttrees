@@ -76,6 +76,23 @@ source names either individual tree, and monumentaltrees.com's own page
 for this exact spot 403'd on every fetch attempt. Two more hangs added to
 the blocklist: reliwiki.nl and Nijmegen's own municipal tree WFS endpoint.
 
+**Photo viewing pass, same session: Nijmegen's first photograph.** Ran
+`photo_hunt.py --city nijmegen` (free, API-only) to seed candidates, then a
+session viewing pass judged 42 candidates across the city's 8 photo-less
+trees against the Cadiz standard. 1 approved: **nij_009, the Kabouterboom**,
+identity settled by hard data rather than by name (the Commons file's own
+GPS sits 25m from our pin, and its caption states an 850cm girth, exactly
+matching our `girth_cm`). 41 rejected, 0 held. Seven trees (nij_001,
+nij_002, nij_003, nij_004, nij_008, nij_012, nij_014) are now documented
+Commons dead ends: the nationally-famous names (Julianaboom, Wilhelminaboom,
+Sterrenbos) kept returning other towns' same-named trees, and should not be
+re-swept without a genuinely new source.
+
+One thing worth a future verify pass rather than a photo pass: two 2020s
+photographs of Hertogplein show the square rebuilt with young trees and no
+crowned iron fence visible, which is the recognition feature nij_012's story
+leans on. Not proof of anything on its own, flagging it here.
+
 Released the Brisbane claim the earlier attempt left standing (558 unnamed
 "significant landscape trees" candidates, no names to work from yet, not
 today's priority per scout_next). Salzburg's claim belongs to a separate,

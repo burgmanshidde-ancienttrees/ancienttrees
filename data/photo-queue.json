@@ -4498,29 +4498,29 @@
   "cad_004": {
    "city": "Cadiz",
    "name": "The Ombu of Parque Genoves",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-22",
+   "sweep": 5,
    "candidates": []
   },
   "cam_003": {
    "city": "Cambridge",
    "name": "The Oriental Plane of Jesus College",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-22",
+   "sweep": 5,
    "candidates": []
   },
   "cam_004": {
    "city": "Cambridge",
    "name": "The Giant Redwood of the Botanic Garden",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-22",
+   "sweep": 5,
    "candidates": []
   },
   "cam_005": {
    "city": "Cambridge",
    "name": "The Cambridge Oak",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-22",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:1126185 II THE OAK PUBLIC HOUSE, 6, LENSFIELD ROAD Cambridge 20250614 0001.jpg",
@@ -4714,8 +4714,8 @@
   "cdb_003": {
    "city": "Cordoba",
    "name": "The Holm Oak of the Viana Palace",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-22",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Spanish Tree (49112902046).jpg",
@@ -4732,29 +4732,29 @@
   "cdb_004": {
    "city": "Cordoba",
    "name": "The Jacaranda of the Orive Garden",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-22",
+   "sweep": 5,
    "candidates": []
   },
   "cdb_005": {
    "city": "Cordoba",
    "name": "The Giant Plane of the Agriculture Gardens",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-22",
+   "sweep": 5,
    "candidates": []
   },
   "cdb_006": {
    "city": "Cordoba",
    "name": "The Split Plane of the Alpargate",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-22",
+   "sweep": 5,
    "candidates": []
   },
   "cdb_007": {
    "city": "Cordoba",
    "name": "The Judas Tree of the San Rafael Cemetery",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-22",
+   "sweep": 5,
    "candidates": []
   },
   "cor_003": {
@@ -8845,7 +8845,11 @@
      "judged": "reject",
      "verdict": "architectural shot of the chapel, no tree beyond bare twigs at the edge, POOR exposure"
     }
-   ]
+   ],
+   "judged": "2026-08-13",
+   "outcome": "rejected",
+   "outcome_note": "All three candidates judged in the 2026-08-13 pass and not re-judged here: two architectural shots of the Sint-Nicolaaskapel and the park gate. Commons has the Valkhofpark buildings, not the sycamore.",
+   "exhausted": "2026-08-13: chapel and gate only, no photograph of the sycamore on Commons"
   },
   "nij_002": {
    "city": "Nijmegen",
@@ -8937,7 +8941,11 @@
      "judged": "reject",
      "verdict": "distant overcast park view, the tree at centre is young and unidentifiable"
     }
-   ]
+   ],
+   "judged": "2026-08-13",
+   "outcome": "rejected",
+   "outcome_note": "All seven candidates were already judged and rejected: the Kronenburgerpark sweep returns the Kruittoren, the footbridge, the walkway and wide park lawns, never the ginkgo.",
+   "exhausted": "2026-08-13: park furniture and the Kruittoren, no ginkgo as subject"
   },
   "nij_003": {
    "city": "Nijmegen",
@@ -8969,7 +8977,11 @@
      "judged": "reject",
      "verdict": "a house facade at a street address 60 km away, the building is the subject"
     }
-   ]
+   ],
+   "judged": "2026-08-13",
+   "outcome": "rejected",
+   "outcome_note": "Both candidates were already judged and rejected, and neither is even in Nijmegen: an 18th-century Utrecht oil painting and a house facade in Sint-Michielsgestel. The name Sterrenbos is what matched, not the place.",
+   "exhausted": "2026-08-13: name-matched to the wrong Sterrenbos twice, nothing of Park Brakkenstein"
   },
   "nij_004": {
    "city": "Nijmegen",
@@ -9013,7 +9025,11 @@
      "judged": "reject",
      "verdict": "archival photograph of the planting ceremony; not a photograph of the tree today"
     }
-   ]
+   ],
+   "judged": "2026-08-13",
+   "outcome": "rejected",
+   "outcome_note": "All three candidates were already judged and rejected. Julianaboom is a national name: the sweep returned the Maastricht ironwork and the Beekbergen railing, plus an archival photograph of the Nijmegen planting ceremony rather than the tree today.",
+   "exhausted": "2026-08-13: two other towns Julianabomen and one archival ceremony shot"
   },
   "nij_005": {
    "city": "Nijmegen",
@@ -19492,8 +19508,8 @@
   "com_003": {
    "city": "Como",
    "name": "The Sycamore of Villa Geno",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-22",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Como - Viale Geno - Platano occidentale - codice 07M17704C933CO03 - 20220910 144810.jpg (Wikidata Q55741763)",
@@ -19505,14 +19521,64 @@
      "lng": 9.0791,
      "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2022 Category:Images from Wiki Loves Monuments 2022 in Italy Category:Images from Wiki Loves Monuments 2022 in Italy - Lake Como Category:Images from Wiki Loves Monuments 2022 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2022 in Italy - traditional contest Category:Images from Wiki Loves Monuments 2022 in Italy - veteran trees Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Veteran trees in Como",
      "source": "wikidata/Q55741763"
+    },
+    {
+     "title": "File:Como - Viale Geno - Cedro dell Himalaya - codice 07M17705C933CO03 - 20220910 143606.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Como_-_Viale_Geno_-_Cedro_dell_Himalaya_-_codice_07M17705C933CO03_-_20220910_143606.jpg/960px-Como_-_Viale_Geno_-_Cedro_dell_Himalaya_-_codice_07M17705C933CO03_-_20220910_143606.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Como_-_Viale_Geno_-_Cedro_dell_Himalaya_-_codice_07M17705C933CO03_-_20220910_143606.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ysogo",
+     "lat": 45.822589,
+     "lng": 9.078181,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2022 Category:Images from Wiki Loves Monuments 2022 in Italy Category:Images from Wiki Loves Monuments 2022 in Italy - Lake Como Category:Images from Wiki Loves Monuments 2022 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2022 in Italy - traditional contest Category:Images from Wiki Loves Monuments 2022 in Italy - veteran trees Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Veteran trees in Como"
+    },
+    {
+     "title": "File:Como - Viale Geno - Cedro dell Himalaya - codice 07M17705C933CO03 - 20220910 143625.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Como_-_Viale_Geno_-_Cedro_dell_Himalaya_-_codice_07M17705C933CO03_-_20220910_143625.jpg/960px-Como_-_Viale_Geno_-_Cedro_dell_Himalaya_-_codice_07M17705C933CO03_-_20220910_143625.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Como_-_Viale_Geno_-_Cedro_dell_Himalaya_-_codice_07M17705C933CO03_-_20220910_143625.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ysogo",
+     "lat": 45.822589,
+     "lng": 9.078181,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2022 Category:Images from Wiki Loves Monuments 2022 in Italy Category:Images from Wiki Loves Monuments 2022 in Italy - Lake Como Category:Images from Wiki Loves Monuments 2022 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2022 in Italy - traditional contest Category:Images from Wiki Loves Monuments 2022 in Italy - veteran trees Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Veteran trees in Como"
+    },
+    {
+     "title": "File:Como - Viale Geno - Platano occidentale - codice 07M17704C933CO03 - 20220910 144810.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Como_-_Viale_Geno_-_Platano_occidentale_-_codice_07M17704C933CO03_-_20220910_144810.jpg/960px-Como_-_Viale_Geno_-_Platano_occidentale_-_codice_07M17704C933CO03_-_20220910_144810.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Como_-_Viale_Geno_-_Platano_occidentale_-_codice_07M17704C933CO03_-_20220910_144810.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ysogo",
+     "lat": 45.824292,
+     "lng": 9.0791,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2022 Category:Images from Wiki Loves Monuments 2022 in Italy Category:Images from Wiki Loves Monuments 2022 in Italy - Lake Como Category:Images from Wiki Loves Monuments 2022 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2022 in Italy - traditional contest Category:Images from Wiki Loves Monuments 2022 in Italy - veteran trees Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Veteran trees in Como"
+    },
+    {
+     "title": "File:Como - Viale Geno - Platano occidentale - codice 07M17704C933CO03 - 20220910 144821.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Como_-_Viale_Geno_-_Platano_occidentale_-_codice_07M17704C933CO03_-_20220910_144821.jpg/960px-Como_-_Viale_Geno_-_Platano_occidentale_-_codice_07M17704C933CO03_-_20220910_144821.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Como_-_Viale_Geno_-_Platano_occidentale_-_codice_07M17704C933CO03_-_20220910_144821.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ysogo",
+     "lat": 45.824292,
+     "lng": 9.0791,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2022 Category:Images from Wiki Loves Monuments 2022 in Italy Category:Images from Wiki Loves Monuments 2022 in Italy - Lake Como Category:Images from Wiki Loves Monuments 2022 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2022 in Italy - traditional contest Category:Images from Wiki Loves Monuments 2022 in Italy - veteran trees Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Veteran trees in Como"
+    },
+    {
+     "title": "File:Villa Geno cedro dell' Himalaya.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Villa_Geno_cedro_dell%27_Himalaya.jpg/960px-Villa_Geno_cedro_dell%27_Himalaya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Villa_Geno_cedro_dell%27_Himalaya.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Mipiacecamminare",
+     "lat": 45.822589,
+     "lng": 9.078181,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-20 Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Veteran trees in Como Category:WLM Lake Como - selection"
     }
    ]
   },
   "com_004": {
    "city": "Como",
    "name": "The Ginkgo of Villa Geno",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-22",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Como - Viale Geno - Ginco - codice 07M17706C933CO03 - 20220910 143824.jpg (Wikidata Q55741765)",
@@ -19524,14 +19590,64 @@
      "lng": 9.078231,
      "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2022 Category:Images from Wiki Loves Monuments 2022 in Italy Category:Images from Wiki Loves Monuments 2022 in Italy - Lake Como Category:Images from Wiki Loves Monuments 2022 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2022 in Italy - traditional contest Category:Images from Wiki Loves Monuments 2022 in Italy - veteran trees Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Veteran trees in Como",
      "source": "wikidata/Q55741765"
+    },
+    {
+     "title": "File:Como - Viale Geno - Cedro dell Himalaya - codice 07M17705C933CO03 - 20220910 143606.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Como_-_Viale_Geno_-_Cedro_dell_Himalaya_-_codice_07M17705C933CO03_-_20220910_143606.jpg/960px-Como_-_Viale_Geno_-_Cedro_dell_Himalaya_-_codice_07M17705C933CO03_-_20220910_143606.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Como_-_Viale_Geno_-_Cedro_dell_Himalaya_-_codice_07M17705C933CO03_-_20220910_143606.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ysogo",
+     "lat": 45.822589,
+     "lng": 9.078181,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2022 Category:Images from Wiki Loves Monuments 2022 in Italy Category:Images from Wiki Loves Monuments 2022 in Italy - Lake Como Category:Images from Wiki Loves Monuments 2022 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2022 in Italy - traditional contest Category:Images from Wiki Loves Monuments 2022 in Italy - veteran trees Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Veteran trees in Como"
+    },
+    {
+     "title": "File:Como - Viale Geno - Cedro dell Himalaya - codice 07M17705C933CO03 - 20220910 143625.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Como_-_Viale_Geno_-_Cedro_dell_Himalaya_-_codice_07M17705C933CO03_-_20220910_143625.jpg/960px-Como_-_Viale_Geno_-_Cedro_dell_Himalaya_-_codice_07M17705C933CO03_-_20220910_143625.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Como_-_Viale_Geno_-_Cedro_dell_Himalaya_-_codice_07M17705C933CO03_-_20220910_143625.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ysogo",
+     "lat": 45.822589,
+     "lng": 9.078181,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2022 Category:Images from Wiki Loves Monuments 2022 in Italy Category:Images from Wiki Loves Monuments 2022 in Italy - Lake Como Category:Images from Wiki Loves Monuments 2022 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2022 in Italy - traditional contest Category:Images from Wiki Loves Monuments 2022 in Italy - veteran trees Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Veteran trees in Como"
+    },
+    {
+     "title": "File:Como - Viale Geno - Platano occidentale - codice 07M17704C933CO03 - 20220910 144810.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Como_-_Viale_Geno_-_Platano_occidentale_-_codice_07M17704C933CO03_-_20220910_144810.jpg/960px-Como_-_Viale_Geno_-_Platano_occidentale_-_codice_07M17704C933CO03_-_20220910_144810.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Como_-_Viale_Geno_-_Platano_occidentale_-_codice_07M17704C933CO03_-_20220910_144810.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ysogo",
+     "lat": 45.824292,
+     "lng": 9.0791,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2022 Category:Images from Wiki Loves Monuments 2022 in Italy Category:Images from Wiki Loves Monuments 2022 in Italy - Lake Como Category:Images from Wiki Loves Monuments 2022 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2022 in Italy - traditional contest Category:Images from Wiki Loves Monuments 2022 in Italy - veteran trees Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Veteran trees in Como"
+    },
+    {
+     "title": "File:Como - Viale Geno - Platano occidentale - codice 07M17704C933CO03 - 20220910 144821.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Como_-_Viale_Geno_-_Platano_occidentale_-_codice_07M17704C933CO03_-_20220910_144821.jpg/960px-Como_-_Viale_Geno_-_Platano_occidentale_-_codice_07M17704C933CO03_-_20220910_144821.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Como_-_Viale_Geno_-_Platano_occidentale_-_codice_07M17704C933CO03_-_20220910_144821.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ysogo",
+     "lat": 45.824292,
+     "lng": 9.0791,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2022 Category:Images from Wiki Loves Monuments 2022 in Italy Category:Images from Wiki Loves Monuments 2022 in Italy - Lake Como Category:Images from Wiki Loves Monuments 2022 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2022 in Italy - traditional contest Category:Images from Wiki Loves Monuments 2022 in Italy - veteran trees Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Veteran trees in Como"
+    },
+    {
+     "title": "File:Villa Geno cedro dell' Himalaya.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Villa_Geno_cedro_dell%27_Himalaya.jpg/960px-Villa_Geno_cedro_dell%27_Himalaya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Villa_Geno_cedro_dell%27_Himalaya.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Mipiacecamminare",
+     "lat": 45.822589,
+     "lng": 9.078181,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-20 Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Veteran trees in Como Category:WLM Lake Como - selection"
     }
    ]
   },
   "com_005": {
    "city": "Como",
    "name": "The Cedar of Villa del Grumello",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-22",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Cedro del Libano - vista dal basso.jpg (Wikidata Q55741770)",
@@ -19543,21 +19659,242 @@
      "lng": 9.067217,
      "cats": "Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it",
      "source": "wikidata/Q55741770"
+    },
+    {
+     "title": "File:Cedro del Libano - dettaglio - corteccia.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Cedro_del_Libano_-_dettaglio_-_corteccia.jpg/960px-Cedro_del_Libano_-_dettaglio_-_corteccia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cedro_del_Libano_-_dettaglio_-_corteccia.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": 45.822831,
+     "lng": 9.067217,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Cedro del Libano - dietro il busto di Ugo Foscolo.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Cedro_del_Libano_-_dietro_il_busto_di_Ugo_Foscolo.jpg/960px-Cedro_del_Libano_-_dietro_il_busto_di_Ugo_Foscolo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cedro_del_Libano_-_dietro_il_busto_di_Ugo_Foscolo.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": 45.822831,
+     "lng": 9.067217,
+     "cats": "Category:Bust of Ugo Foscolo (Como) Category:Busts in Lombardy Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Monuments and memorials in Como Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:WLM Lake Como - selection"
+    },
+    {
+     "title": "File:Cedro del Libano - radici.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Cedro_del_Libano_-_radici.jpg/960px-Cedro_del_Libano_-_radici.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cedro_del_Libano_-_radici.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": 45.822831,
+     "lng": 9.067217,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Cedro del Libano - rami.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Cedro_del_Libano_-_rami.jpg/960px-Cedro_del_Libano_-_rami.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cedro_del_Libano_-_rami.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": 45.822831,
+     "lng": 9.067217,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Cedro del Libano - ritratto di Ugo Foscolo.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Cedro_del_Libano_-_ritratto_di_Ugo_Foscolo.jpg/960px-Cedro_del_Libano_-_ritratto_di_Ugo_Foscolo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cedro_del_Libano_-_ritratto_di_Ugo_Foscolo.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": 45.822831,
+     "lng": 9.067217,
+     "cats": "Category:Bust of Ugo Foscolo (Como) Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Cedro del Libano - tronco.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Cedro_del_Libano_-_tronco.jpg/960px-Cedro_del_Libano_-_tronco.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cedro_del_Libano_-_tronco.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": 45.822831,
+     "lng": 9.067217,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Cedro del Libano - vista dal basso.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Cedro_del_Libano_-_vista_dal_basso.jpg/960px-Cedro_del_Libano_-_vista_dal_basso.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cedro_del_Libano_-_vista_dal_basso.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": 45.822831,
+     "lng": 9.067217,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Cedro del Libano - vista sul busto di Ugo Foscolo.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Cedro_del_Libano_-_vista_sul_busto_di_Ugo_Foscolo.jpg/960px-Cedro_del_Libano_-_vista_sul_busto_di_Ugo_Foscolo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cedro_del_Libano_-_vista_sul_busto_di_Ugo_Foscolo.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": 45.822831,
+     "lng": 9.067217,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:La Villa dietro la magnolia.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/La_Villa_dietro_la_magnolia.jpg/960px-La_Villa_dietro_la_magnolia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:La_Villa_dietro_la_magnolia.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": 45.82287,
+     "lng": 9.0672,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Villa del Grumello (Como) Category:WLM Lake Como - selection"
+    },
+    {
+     "title": "File:Ugo Foscolo davanti al Cedro del Libano.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Ugo_Foscolo_davanti_al_Cedro_del_Libano.jpg/960px-Ugo_Foscolo_davanti_al_Cedro_del_Libano.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ugo_Foscolo_davanti_al_Cedro_del_Libano.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": 45.82287,
+     "lng": 9.0672,
+     "cats": "Category:Bust of Ugo Foscolo (Como) Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Ugo Foscolo davanti al Cedro del Libano 2.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Ugo_Foscolo_davanti_al_Cedro_del_Libano_2.jpg/960px-Ugo_Foscolo_davanti_al_Cedro_del_Libano_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ugo_Foscolo_davanti_al_Cedro_del_Libano_2.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Bust of Ugo Foscolo (Como) Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it"
     }
    ]
   },
   "com_006": {
    "city": "Como",
    "name": "The Ginkgo of Villa del Grumello",
-   "checked": "2026-08-16",
-   "sweep": 4,
-   "candidates": []
+   "checked": "2026-08-22",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Cedro del Libano - dettaglio - corteccia.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Cedro_del_Libano_-_dettaglio_-_corteccia.jpg/960px-Cedro_del_Libano_-_dettaglio_-_corteccia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cedro_del_Libano_-_dettaglio_-_corteccia.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": 45.822831,
+     "lng": 9.067217,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Cedro del Libano - dietro il busto di Ugo Foscolo.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Cedro_del_Libano_-_dietro_il_busto_di_Ugo_Foscolo.jpg/960px-Cedro_del_Libano_-_dietro_il_busto_di_Ugo_Foscolo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cedro_del_Libano_-_dietro_il_busto_di_Ugo_Foscolo.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": 45.822831,
+     "lng": 9.067217,
+     "cats": "Category:Bust of Ugo Foscolo (Como) Category:Busts in Lombardy Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Monuments and memorials in Como Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:WLM Lake Como - selection"
+    },
+    {
+     "title": "File:Cedro del Libano - radici.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Cedro_del_Libano_-_radici.jpg/960px-Cedro_del_Libano_-_radici.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cedro_del_Libano_-_radici.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": 45.822831,
+     "lng": 9.067217,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Cedro del Libano - rami.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Cedro_del_Libano_-_rami.jpg/960px-Cedro_del_Libano_-_rami.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cedro_del_Libano_-_rami.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": 45.822831,
+     "lng": 9.067217,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Cedro del Libano - ritratto di Ugo Foscolo.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Cedro_del_Libano_-_ritratto_di_Ugo_Foscolo.jpg/960px-Cedro_del_Libano_-_ritratto_di_Ugo_Foscolo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cedro_del_Libano_-_ritratto_di_Ugo_Foscolo.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": 45.822831,
+     "lng": 9.067217,
+     "cats": "Category:Bust of Ugo Foscolo (Como) Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Cedro del Libano - tronco.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Cedro_del_Libano_-_tronco.jpg/960px-Cedro_del_Libano_-_tronco.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cedro_del_Libano_-_tronco.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": 45.822831,
+     "lng": 9.067217,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Cedro del Libano - vista dal basso.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Cedro_del_Libano_-_vista_dal_basso.jpg/960px-Cedro_del_Libano_-_vista_dal_basso.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cedro_del_Libano_-_vista_dal_basso.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": 45.822831,
+     "lng": 9.067217,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Cedro del Libano - vista sul busto di Ugo Foscolo.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Cedro_del_Libano_-_vista_sul_busto_di_Ugo_Foscolo.jpg/960px-Cedro_del_Libano_-_vista_sul_busto_di_Ugo_Foscolo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cedro_del_Libano_-_vista_sul_busto_di_Ugo_Foscolo.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": 45.822831,
+     "lng": 9.067217,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:La Villa dietro la magnolia.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/La_Villa_dietro_la_magnolia.jpg/960px-La_Villa_dietro_la_magnolia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:La_Villa_dietro_la_magnolia.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": 45.82287,
+     "lng": 9.0672,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Villa del Grumello (Como) Category:WLM Lake Como - selection"
+    },
+    {
+     "title": "File:Ugo Foscolo davanti al Cedro del Libano.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Ugo_Foscolo_davanti_al_Cedro_del_Libano.jpg/960px-Ugo_Foscolo_davanti_al_Cedro_del_Libano.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ugo_Foscolo_davanti_al_Cedro_del_Libano.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": 45.82287,
+     "lng": 9.0672,
+     "cats": "Category:Bust of Ugo Foscolo (Como) Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Ugo Foscolo davanti al Cedro del Libano 2.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Ugo_Foscolo_davanti_al_Cedro_del_Libano_2.jpg/960px-Ugo_Foscolo_davanti_al_Cedro_del_Libano_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ugo_Foscolo_davanti_al_Cedro_del_Libano_2.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Bust of Ugo Foscolo (Como) Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    }
+   ]
   },
   "com_007": {
    "city": "Como",
    "name": "The Magnolia of Villa del Grumello",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-22",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:La Villa dietro la magnolia.jpg (Wikidata Q55741771)",
@@ -19571,6 +19908,86 @@
      "source": "wikidata/Q55741771"
     },
     {
+     "title": "File:Cedro del Libano - dettaglio - corteccia.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Cedro_del_Libano_-_dettaglio_-_corteccia.jpg/960px-Cedro_del_Libano_-_dettaglio_-_corteccia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cedro_del_Libano_-_dettaglio_-_corteccia.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": 45.822831,
+     "lng": 9.067217,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Cedro del Libano - dietro il busto di Ugo Foscolo.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Cedro_del_Libano_-_dietro_il_busto_di_Ugo_Foscolo.jpg/960px-Cedro_del_Libano_-_dietro_il_busto_di_Ugo_Foscolo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cedro_del_Libano_-_dietro_il_busto_di_Ugo_Foscolo.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": 45.822831,
+     "lng": 9.067217,
+     "cats": "Category:Bust of Ugo Foscolo (Como) Category:Busts in Lombardy Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Monuments and memorials in Como Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:WLM Lake Como - selection"
+    },
+    {
+     "title": "File:Cedro del Libano - radici.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Cedro_del_Libano_-_radici.jpg/960px-Cedro_del_Libano_-_radici.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cedro_del_Libano_-_radici.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": 45.822831,
+     "lng": 9.067217,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Cedro del Libano - rami.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Cedro_del_Libano_-_rami.jpg/960px-Cedro_del_Libano_-_rami.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cedro_del_Libano_-_rami.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": 45.822831,
+     "lng": 9.067217,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Cedro del Libano - ritratto di Ugo Foscolo.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Cedro_del_Libano_-_ritratto_di_Ugo_Foscolo.jpg/960px-Cedro_del_Libano_-_ritratto_di_Ugo_Foscolo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cedro_del_Libano_-_ritratto_di_Ugo_Foscolo.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": 45.822831,
+     "lng": 9.067217,
+     "cats": "Category:Bust of Ugo Foscolo (Como) Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Cedro del Libano - tronco.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Cedro_del_Libano_-_tronco.jpg/960px-Cedro_del_Libano_-_tronco.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cedro_del_Libano_-_tronco.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": 45.822831,
+     "lng": 9.067217,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Cedro del Libano - vista dal basso.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Cedro_del_Libano_-_vista_dal_basso.jpg/960px-Cedro_del_Libano_-_vista_dal_basso.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cedro_del_Libano_-_vista_dal_basso.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": 45.822831,
+     "lng": 9.067217,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Cedro del Libano - vista sul busto di Ugo Foscolo.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Cedro_del_Libano_-_vista_sul_busto_di_Ugo_Foscolo.jpg/960px-Cedro_del_Libano_-_vista_sul_busto_di_Ugo_Foscolo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cedro_del_Libano_-_vista_sul_busto_di_Ugo_Foscolo.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": 45.822831,
+     "lng": 9.067217,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
      "title": "File:La Villa dietro la magnolia.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/La_Villa_dietro_la_magnolia.jpg/960px-La_Villa_dietro_la_magnolia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:La_Villa_dietro_la_magnolia.jpg",
@@ -19579,21 +19996,41 @@
      "lat": 45.82287,
      "lng": 9.0672,
      "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Villa del Grumello (Como) Category:WLM Lake Como - selection"
+    },
+    {
+     "title": "File:Ugo Foscolo davanti al Cedro del Libano.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Ugo_Foscolo_davanti_al_Cedro_del_Libano.jpg/960px-Ugo_Foscolo_davanti_al_Cedro_del_Libano.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ugo_Foscolo_davanti_al_Cedro_del_Libano.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": 45.82287,
+     "lng": 9.0672,
+     "cats": "Category:Bust of Ugo Foscolo (Como) Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+    },
+    {
+     "title": "File:Ugo Foscolo davanti al Cedro del Libano 2.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Ugo_Foscolo_davanti_al_Cedro_del_Libano_2.jpg/960px-Ugo_Foscolo_davanti_al_Cedro_del_Libano_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ugo_Foscolo_davanti_al_Cedro_del_Libano_2.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Daniela Manili Pessina",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Bust of Ugo Foscolo (Como) Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it"
     }
    ]
   },
   "cdb_008": {
    "city": "Cordoba",
    "name": "The Cypress of the Alcazar Entrance",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-22",
+   "sweep": 5,
    "candidates": []
   },
   "cdb_009": {
    "city": "Cordoba",
    "name": "The Siberian Elm of the Alcazar",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-22",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Gardens and Cypresses trees, Avenue of Kings, Alcázar, Cordoba, 21 July 2016 (1).JPG",
@@ -19640,8 +20077,8 @@
   "cdb_010": {
    "city": "Cordoba",
    "name": "The Himalayan Cedar of Plaza del Cardenal Toledo",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-22",
+   "sweep": 5,
    "candidates": []
   },
   "hob_001": {
@@ -28788,8 +29225,8 @@
   "com_008": {
    "city": "Como",
    "name": "The Plane Tree of Piazza Camerlata",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-22",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Platano piazza camerlata como.jpg (Wikidata Q55741767)",
@@ -28831,14 +29268,24 @@
      "lat": null,
      "lng": null,
      "cats": "Category:CC-BY-SA-4.0 Category:Fontana di Camerlata Category:Self-published work"
+    },
+    {
+     "title": "File:Platano piazza camerlata como.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Platano_piazza_camerlata_como.jpg/960px-Platano_piazza_camerlata_como.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Platano_piazza_camerlata_como.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "FrangeCe",
+     "lat": 45.790253,
+     "lng": 9.085039,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2020 Category:Images from Wiki Loves Monuments 2020 in Italy Category:Images from Wiki Loves Monuments 2020 in Italy - Lake Como Category:Images from Wiki Loves Monuments 2020 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2020 in Italy - veteran trees Category:Italy photographs taken on 2020-09-27 Category:Self-published work Category:Taken with Huawei P30 Pro Category:Uploaded via Campaign:wlm-it Category:Veteran trees in Como"
     }
    ]
   },
   "com_009": {
    "city": "Como",
    "name": "The Horse Chestnut of Quarcino",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-22",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Ippocastano chiesa di Quarcino Q5571761.jpg (Wikidata Q55741768)",
@@ -28902,16 +29349,6 @@
      "lat": null,
      "lng": null,
      "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy missing SDC depicts Category:Cultural heritage monuments in Italy missing SDC location of creation Category:Cultural heritage monuments in Italy with known IDs Category:Files uploaded via webapp Wiki Loves Monuments Italia - desktop version in 2023 Category:Images from Wiki Loves Monuments 2023 Category:Images from Wiki Loves Monuments 2023 in Italy Category:Images from Wiki Loves Monuments 2023 in Italy - Lake Como Category:Images from Wiki Loves Monuments 2023 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2023 in Italy - Lombardy - religious buildings Category:Images from Wiki Loves Monuments 2023 in Italy - religious buildings Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Santi Filippo e Giacomo in Quarcino Category:Self-published work"
-    },
-    {
-     "title": "File:Ippocastano chiesa di Quarcino Q5571761.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Ippocastano_chiesa_di_Quarcino_Q5571761.jpg/960px-Ippocastano_chiesa_di_Quarcino_Q5571761.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Ippocastano_chiesa_di_Quarcino_Q5571761.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Olga Fiorini grafico",
-     "lat": 45.836567,
-     "lng": 9.04225,
-     "cats": "Category:Aesculus hippocastanum in Italy Category:Aesculus hippocastanum in the Northern Hemisphere in September 2018 Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-27 Category:Santi Filippo e Giacomo in Quarcino Category:Self-published work Category:September 2018 in Como Category:Uploaded via Campaign:wlm-it Category:Veteran trees in Como Category:WLM Lake Como - selection"
     },
     {
      "title": "File:Ippocastano chiesa di san quarcino sagnino.jpg",
@@ -29028,9 +29465,19 @@
   "cdb_011": {
    "city": "Cordoba",
    "name": "The Chinaberry of the Puerta de Almodóvar",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-22",
+   "sweep": 5,
    "candidates": [
+    {
+     "title": "File:Córdoba Puerta de Almodóvar seen from the east.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/C%C3%B3rdoba_Puerta_de_Almod%C3%B3var_seen_from_the_east.jpg/960px-C%C3%B3rdoba_Puerta_de_Almod%C3%B3var_seen_from_the_east.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:C%C3%B3rdoba_Puerta_de_Almod%C3%B3var_seen_from_the_east.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Ymblanter",
+     "lat": 37.88076,
+     "lng": -4.78381,
+     "cats": "Category:April 2023 in Córdoba, Spain Category:CC-BY-SA-4.0 Category:Calle Puerta de Almodóvar, Córdoba, Spain Category:Files with coordinates missing SDC location of creation Category:Photographs of Spain by Ymblanter Category:Puerta de Almodóvar Category:Self-published work Category:Spain photographs taken on 2022-04-07 Category:Taken with Nikon D3400"
+    },
     {
      "title": "iNat obs 154166441 (Melia azedarach)",
      "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/266350712/medium.jpeg",
@@ -29045,29 +29492,29 @@
   "cdb_013": {
    "city": "Cordoba",
    "name": "The Ginkgo of the Agriculture Gardens",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-22",
+   "sweep": 5,
    "candidates": []
   },
   "cdb_014": {
    "city": "Cordoba",
    "name": "The Casuarinas of the Plaza de Jerónimo Páez",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-22",
+   "sweep": 5,
    "candidates": []
   },
   "cdb_016": {
    "city": "Cordoba",
    "name": "The River Red Gum of the Celia Méndez Garden",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-22",
+   "sweep": 5,
    "candidates": []
   },
   "cdb_017": {
    "city": "Cordoba",
    "name": "The Ash of Santa Marina",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-22",
+   "sweep": 5,
    "candidates": []
   },
   "ali_010": {
@@ -34901,6 +35348,906 @@
     }
    ],
    "checked": "2026-08-21"
+  },
+  "arn_006": {
+   "city": "Arnhem",
+   "name": "The Weeping Pagoda Tree of Musis Sacrum",
+   "checked": "2026-08-22",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Arnhem Rijksmonument 516832 Roggestraat 43, entree Musiskwartier.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Arnhem_Rijksmonument_516832_Roggestraat_43%2C_entree_Musiskwartier.JPG/960px-Arnhem_Rijksmonument_516832_Roggestraat_43%2C_entree_Musiskwartier.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Arnhem_Rijksmonument_516832_Roggestraat_43,_entree_Musiskwartier.JPG",
+     "licence": "CC0",
+     "author": "Havang(nl)",
+     "lat": 51.98177972,
+     "lng": 5.91312306,
+     "cats": "Category:2010 in Arnhem Category:Art Nouveau architecture in Arnhem Category:CC-Zero Category:De Gruyter Category:Houses in Arnhem Category:Images from Wiki Loves Monuments 2010 Category:Netherlands photographs taken on 2010-09-28 Category:Photographs by Henk van Gaal Category:Rijksmonumenten in Arnhem Category:Rijksmonumenten with known IDs Category:Roggestraat (Arnhem) Category:Self-published work Category:Shops in Arnhem Category:Taken with Sony DSC-HX5V"
+    },
+    {
+     "title": "File:Seems like a willow tree, onset of spring - panoramio.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Seems_like_a_willow_tree%2C_onset_of_spring_-_panoramio.jpg/960px-Seems_like_a_willow_tree%2C_onset_of_spring_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Seems_like_a_willow_tree,_onset_of_spring_-_panoramio.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Marikit Louppen",
+     "lat": 51.983228,
+     "lng": 5.912967,
+     "cats": "Category:Buildings in Arnhem Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Netherlands photographs taken on 2011-03-04 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Unidentified trees in the Netherlands"
+    }
+   ]
+  },
+  "arn_007": {
+   "city": "Arnhem",
+   "name": "The Oriental Plane of Velperplein",
+   "checked": "2026-08-22",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Arnhem, ingang parkeergarage bij Velperplein foto3 2016-01-17 09.47.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arnhem%2C_ingang_parkeergarage_bij_Velperplein_foto3_2016-01-17_09.47.jpg/960px-Arnhem%2C_ingang_parkeergarage_bij_Velperplein_foto3_2016-01-17_09.47.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Arnhem,_ingang_parkeergarage_bij_Velperplein_foto3_2016-01-17_09.47.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Michielverbeek",
+     "lat": 51.98333333,
+     "lng": 5.9125,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Netherlands photographs taken on 2016-01-17 Category:Parking in the Netherlands Category:Quality images Category:Quality images of buildings in Gelderland Category:Self-published work Category:Velperplein, Arnhem"
+    },
+    {
+     "title": "File:Arnhem - Velperplein.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Arnhem_-_Velperplein.jpg/960px-Arnhem_-_Velperplein.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Arnhem_-_Velperplein.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Michiel1972",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2009 in Arnhem Category:CC-BY-SA-3.0 Category:Files by User:Michiel1972 Category:GFDL Category:License migration redundant Category:Netherlands photographs taken on 2009-02-25 Category:Self-published work Category:Taken with Canon PowerShot A530 Category:Trolleybus overhead lines in Arnhem Category:Velperplein, Arnhem"
+    },
+    {
+     "title": "File:Arnhem - Velperplein 1900.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Arnhem_-_Velperplein_1900.jpg/960px-Arnhem_-_Velperplein_1900.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Arnhem_-_Velperplein_1900.jpg",
+     "licence": "Public domain",
+     "author": "Unknown authorUnknown author",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Arnhem on photochrome prints Category:CC-PD-Mark Category:Images from the Library of Congress Category:Library of Congress-no known copyright restrictions Category:Musis Sacrum, Arnhem Category:PD-Detroit Category:PD Switzerland (old-unknown) Category:PD US expired Category:Rijksmonumenten missing SDC inception Category:Rijksmonumenten with known IDs Category:Sint-Martinuskerk (Arnhem) Category:Template Unknown (author) Category:Velperplein, Arnhem"
+    },
+    {
+     "title": "File:Arnhem Rijksmonument 516832 Roggestraat 43, entree Musiskwartier.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Arnhem_Rijksmonument_516832_Roggestraat_43%2C_entree_Musiskwartier.JPG/960px-Arnhem_Rijksmonument_516832_Roggestraat_43%2C_entree_Musiskwartier.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Arnhem_Rijksmonument_516832_Roggestraat_43,_entree_Musiskwartier.JPG",
+     "licence": "CC0",
+     "author": "Havang(nl)",
+     "lat": 51.98177972,
+     "lng": 5.91312306,
+     "cats": "Category:2010 in Arnhem Category:Art Nouveau architecture in Arnhem Category:CC-Zero Category:De Gruyter Category:Houses in Arnhem Category:Images from Wiki Loves Monuments 2010 Category:Netherlands photographs taken on 2010-09-28 Category:Photographs by Henk van Gaal Category:Rijksmonumenten in Arnhem Category:Rijksmonumenten with known IDs Category:Roggestraat (Arnhem) Category:Self-published work Category:Shops in Arnhem Category:Taken with Sony DSC-HX5V"
+    },
+    {
+     "title": "File:Arnhem Velperplein 1963.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Arnhem_Velperplein_1963.jpg/960px-Arnhem_Velperplein_1963.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Arnhem_Velperplein_1963.jpg",
+     "licence": "Public domain",
+     "author": "Wouter Hagens",
+     "lat": 51.98375,
+     "lng": 5.91344444,
+     "cats": "Category:1963 in Arnhem Category:Eusebiustoren, Arnhem Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Images with annotations Category:Nillmij Gebouw, (Arnhem) Category:PD-self Category:Self-published work Category:Velperplein, Arnhem"
+    },
+    {
+     "title": "File:Gevelreliëf Rembrandttheater, John Grosman, Velperplein, Arnhem.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Gevelreli%C3%ABf_Rembrandttheater%2C_John_Grosman%2C_Velperplein%2C_Arnhem.jpg/960px-Gevelreli%C3%ABf_Rembrandttheater%2C_John_Grosman%2C_Velperplein%2C_Arnhem.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gevelreli%C3%ABf_Rembrandttheater,_John_Grosman,_Velperplein,_Arnhem.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "FakirNL",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1954 sculptures in the Netherlands Category:CC-BY-SA-4.0 Category:Cinemas in Arnhem Category:Files by User:FakirNL/Arnhem/Reliefs Category:John Grosman Category:Reliefs in Arnhem Category:Self-published work Category:Velperplein, Arnhem"
+    },
+    {
+     "title": "File:Seems like a willow tree, onset of spring - panoramio.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Seems_like_a_willow_tree%2C_onset_of_spring_-_panoramio.jpg/960px-Seems_like_a_willow_tree%2C_onset_of_spring_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Seems_like_a_willow_tree,_onset_of_spring_-_panoramio.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Marikit Louppen",
+     "lat": 51.983228,
+     "lng": 5.912967,
+     "cats": "Category:Buildings in Arnhem Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Netherlands photographs taken on 2011-03-04 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Unidentified trees in the Netherlands"
+    },
+    {
+     "title": "File:Velperplein, Musis Sacrum. overzicht - Arnhem - 20025591 - RCE.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Velperplein%2C_Musis_Sacrum._overzicht_-_Arnhem_-_20025591_-_RCE.jpg/960px-Velperplein%2C_Musis_Sacrum._overzicht_-_Arnhem_-_20025591_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Velperplein,_Musis_Sacrum._overzicht_-_Arnhem_-_20025591_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Gerard Dukker",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Images with coordinates from RCE Category:Musis Sacrum, Arnhem Category:Photographs by Gerard Dukker in Arnhem (1961) Category:Velperplein, Arnhem"
+    },
+    {
+     "title": "File:Velperplein 19-20, voorgevel - Arnhem - 20025594 - RCE.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Velperplein_19-20%2C_voorgevel_-_Arnhem_-_20025594_-_RCE.jpg/960px-Velperplein_19-20%2C_voorgevel_-_Arnhem_-_20025594_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Velperplein_19-20,_voorgevel_-_Arnhem_-_20025594_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "G.Th. Delemarre",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1961 in Arnhem Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Images with coordinates from RCE Category:Photographs by G.Th. Delemarre Category:Velperplein, Arnhem"
+    }
+   ]
+  },
+  "arn_008": {
+   "city": "Arnhem",
+   "name": "The Black Walnut of Velperplein",
+   "checked": "2026-08-22",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Arnhem, ingang parkeergarage bij Velperplein foto3 2016-01-17 09.47.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arnhem%2C_ingang_parkeergarage_bij_Velperplein_foto3_2016-01-17_09.47.jpg/960px-Arnhem%2C_ingang_parkeergarage_bij_Velperplein_foto3_2016-01-17_09.47.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Arnhem,_ingang_parkeergarage_bij_Velperplein_foto3_2016-01-17_09.47.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Michielverbeek",
+     "lat": 51.98333333,
+     "lng": 5.9125,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Netherlands photographs taken on 2016-01-17 Category:Parking in the Netherlands Category:Quality images Category:Quality images of buildings in Gelderland Category:Self-published work Category:Velperplein, Arnhem"
+    },
+    {
+     "title": "File:Arnhem - Velperplein.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Arnhem_-_Velperplein.jpg/960px-Arnhem_-_Velperplein.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Arnhem_-_Velperplein.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Michiel1972",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2009 in Arnhem Category:CC-BY-SA-3.0 Category:Files by User:Michiel1972 Category:GFDL Category:License migration redundant Category:Netherlands photographs taken on 2009-02-25 Category:Self-published work Category:Taken with Canon PowerShot A530 Category:Trolleybus overhead lines in Arnhem Category:Velperplein, Arnhem"
+    },
+    {
+     "title": "File:Arnhem - Velperplein 1900.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Arnhem_-_Velperplein_1900.jpg/960px-Arnhem_-_Velperplein_1900.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Arnhem_-_Velperplein_1900.jpg",
+     "licence": "Public domain",
+     "author": "Unknown authorUnknown author",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Arnhem on photochrome prints Category:CC-PD-Mark Category:Images from the Library of Congress Category:Library of Congress-no known copyright restrictions Category:Musis Sacrum, Arnhem Category:PD-Detroit Category:PD Switzerland (old-unknown) Category:PD US expired Category:Rijksmonumenten missing SDC inception Category:Rijksmonumenten with known IDs Category:Sint-Martinuskerk (Arnhem) Category:Template Unknown (author) Category:Velperplein, Arnhem"
+    },
+    {
+     "title": "File:Arnhem Rijksmonument 516832 Roggestraat 43, entree Musiskwartier.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Arnhem_Rijksmonument_516832_Roggestraat_43%2C_entree_Musiskwartier.JPG/960px-Arnhem_Rijksmonument_516832_Roggestraat_43%2C_entree_Musiskwartier.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Arnhem_Rijksmonument_516832_Roggestraat_43,_entree_Musiskwartier.JPG",
+     "licence": "CC0",
+     "author": "Havang(nl)",
+     "lat": 51.98177972,
+     "lng": 5.91312306,
+     "cats": "Category:2010 in Arnhem Category:Art Nouveau architecture in Arnhem Category:CC-Zero Category:De Gruyter Category:Houses in Arnhem Category:Images from Wiki Loves Monuments 2010 Category:Netherlands photographs taken on 2010-09-28 Category:Photographs by Henk van Gaal Category:Rijksmonumenten in Arnhem Category:Rijksmonumenten with known IDs Category:Roggestraat (Arnhem) Category:Self-published work Category:Shops in Arnhem Category:Taken with Sony DSC-HX5V"
+    },
+    {
+     "title": "File:Arnhem Velperplein 1963.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Arnhem_Velperplein_1963.jpg/960px-Arnhem_Velperplein_1963.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Arnhem_Velperplein_1963.jpg",
+     "licence": "Public domain",
+     "author": "Wouter Hagens",
+     "lat": 51.98375,
+     "lng": 5.91344444,
+     "cats": "Category:1963 in Arnhem Category:Eusebiustoren, Arnhem Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Images with annotations Category:Nillmij Gebouw, (Arnhem) Category:PD-self Category:Self-published work Category:Velperplein, Arnhem"
+    },
+    {
+     "title": "File:Gevelreliëf Rembrandttheater, John Grosman, Velperplein, Arnhem.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Gevelreli%C3%ABf_Rembrandttheater%2C_John_Grosman%2C_Velperplein%2C_Arnhem.jpg/960px-Gevelreli%C3%ABf_Rembrandttheater%2C_John_Grosman%2C_Velperplein%2C_Arnhem.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gevelreli%C3%ABf_Rembrandttheater,_John_Grosman,_Velperplein,_Arnhem.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "FakirNL",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1954 sculptures in the Netherlands Category:CC-BY-SA-4.0 Category:Cinemas in Arnhem Category:Files by User:FakirNL/Arnhem/Reliefs Category:John Grosman Category:Reliefs in Arnhem Category:Self-published work Category:Velperplein, Arnhem"
+    },
+    {
+     "title": "File:Seems like a willow tree, onset of spring - panoramio.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Seems_like_a_willow_tree%2C_onset_of_spring_-_panoramio.jpg/960px-Seems_like_a_willow_tree%2C_onset_of_spring_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Seems_like_a_willow_tree,_onset_of_spring_-_panoramio.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Marikit Louppen",
+     "lat": 51.983228,
+     "lng": 5.912967,
+     "cats": "Category:Buildings in Arnhem Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Netherlands photographs taken on 2011-03-04 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Unidentified trees in the Netherlands"
+    },
+    {
+     "title": "File:Velperplein, Musis Sacrum. overzicht - Arnhem - 20025591 - RCE.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Velperplein%2C_Musis_Sacrum._overzicht_-_Arnhem_-_20025591_-_RCE.jpg/960px-Velperplein%2C_Musis_Sacrum._overzicht_-_Arnhem_-_20025591_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Velperplein,_Musis_Sacrum._overzicht_-_Arnhem_-_20025591_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Gerard Dukker",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Images with coordinates from RCE Category:Musis Sacrum, Arnhem Category:Photographs by Gerard Dukker in Arnhem (1961) Category:Velperplein, Arnhem"
+    },
+    {
+     "title": "File:Velperplein 19-20, voorgevel - Arnhem - 20025594 - RCE.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Velperplein_19-20%2C_voorgevel_-_Arnhem_-_20025594_-_RCE.jpg/960px-Velperplein_19-20%2C_voorgevel_-_Arnhem_-_20025594_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Velperplein_19-20,_voorgevel_-_Arnhem_-_20025594_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "G.Th. Delemarre",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1961 in Arnhem Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Images with coordinates from RCE Category:Photographs by G.Th. Delemarre Category:Velperplein, Arnhem"
+    }
+   ]
+  },
+  "arn_009": {
+   "city": "Arnhem",
+   "name": "The Sessile Oak of Musispark",
+   "checked": "2026-08-22",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Arnhem Rijksmonument 516832 Roggestraat 43, entree Musiskwartier.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Arnhem_Rijksmonument_516832_Roggestraat_43%2C_entree_Musiskwartier.JPG/960px-Arnhem_Rijksmonument_516832_Roggestraat_43%2C_entree_Musiskwartier.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Arnhem_Rijksmonument_516832_Roggestraat_43,_entree_Musiskwartier.JPG",
+     "licence": "CC0",
+     "author": "Havang(nl)",
+     "lat": 51.98177972,
+     "lng": 5.91312306,
+     "cats": "Category:2010 in Arnhem Category:Art Nouveau architecture in Arnhem Category:CC-Zero Category:De Gruyter Category:Houses in Arnhem Category:Images from Wiki Loves Monuments 2010 Category:Netherlands photographs taken on 2010-09-28 Category:Photographs by Henk van Gaal Category:Rijksmonumenten in Arnhem Category:Rijksmonumenten with known IDs Category:Roggestraat (Arnhem) Category:Self-published work Category:Shops in Arnhem Category:Taken with Sony DSC-HX5V"
+    },
+    {
+     "title": "File:Sculptuur 'Dans van jonge voeten' door Eka Thoden van Velzen, Musispark, Arnhem (1).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Sculptuur_%27Dans_van_jonge_voeten%27_door_Eka_Thoden_van_Velzen%2C_Musispark%2C_Arnhem_%281%29.jpg/960px-Sculptuur_%27Dans_van_jonge_voeten%27_door_Eka_Thoden_van_Velzen%2C_Musispark%2C_Arnhem_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Sculptuur_%27Dans_van_jonge_voeten%27_door_Eka_Thoden_van_Velzen,_Musispark,_Arnhem_(1).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "FakirNL",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Dans van jonge voeten (sculpture by Eka Thoden van Velzen, Arnhem) Category:Files by User:FakirNL/Arnhem/Sculptures Category:Self-published work"
+    },
+    {
+     "title": "File:Sculptuur 'Dans van jonge voeten' door Eka Thoden van Velzen, Musispark, Arnhem (2).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Sculptuur_%27Dans_van_jonge_voeten%27_door_Eka_Thoden_van_Velzen%2C_Musispark%2C_Arnhem_%282%29.jpg/960px-Sculptuur_%27Dans_van_jonge_voeten%27_door_Eka_Thoden_van_Velzen%2C_Musispark%2C_Arnhem_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Sculptuur_%27Dans_van_jonge_voeten%27_door_Eka_Thoden_van_Velzen,_Musispark,_Arnhem_(2).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "FakirNL",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Dans van jonge voeten (sculpture by Eka Thoden van Velzen, Arnhem) Category:Files by User:FakirNL/Arnhem/Sculptures Category:Self-published work"
+    }
+   ]
+  },
+  "aus_001": {
+   "city": "Austin",
+   "name": "The Treaty Oak",
+   "checked": "2026-08-22",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Raymond-Morley House, 510 Baylor St. Austin on a tree-lined street.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Raymond-Morley_House%2C_510_Baylor_St._Austin_on_a_tree-lined_street.jpg/960px-Raymond-Morley_House%2C_510_Baylor_St._Austin_on_a_tree-lined_street.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Raymond-Morley_House,_510_Baylor_St._Austin_on_a_tree-lined_street.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Mwhitman6",
+     "lat": 30.27190833,
+     "lng": -97.75563056,
+     "cats": "Category:2014 in Austin, Texas Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Images from Wikipedia Summer of Monuments Category:National Register of Historic Places missing SDC depicts Category:National Register of Historic Places missing SDC location of creation Category:National Register of Historic Places with known IDs Category:Raymond-Morley House Category:Self-published work Category:Taken with iPhone 5S Category:Unreviewed submissions from Wikipedia Summer of Monuments Category:Uploaded via Campaign:wsm"
+    },
+    {
+     "title": "File:Whole Foods Market Headquarters - Austin, Texas (54984998394).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Whole_Foods_Market_Headquarters_-_Austin%2C_Texas_%2854984998394%29.jpg/960px-Whole_Foods_Market_Headquarters_-_Austin%2C_Texas_%2854984998394%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Whole_Foods_Market_Headquarters_-_Austin,_Texas_(54984998394).jpg",
+     "licence": "CC BY 4.0",
+     "author": "ajay_suresh",
+     "lat": 30.270672,
+     "lng": -97.75425,
+     "cats": "Category:2025 Texas photographs by ajay suresh Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images missing SDC published in Category:Flickr images reviewed by FlickreviewR 2 Category:Office buildings in the United States photographed in 2025 Category:Shops in the United States photographed in 2025 Category:Whole Foods Market Headquarters Category:Whole Foods Market in Texas"
+    },
+    {
+     "title": "File:Wroe-Bustin House on a tree-lined street.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Wroe-Bustin_House_on_a_tree-lined_street.jpg/960px-Wroe-Bustin_House_on_a_tree-lined_street.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Wroe-Bustin_House_on_a_tree-lined_street.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Mwhitman6",
+     "lat": 30.2716,
+     "lng": -97.75581389,
+     "cats": "Category:CC-BY-SA-3.0 Category:Images from Wikipedia Summer of Monuments Category:National Register of Historic Places with known IDs Category:Self-published work Category:Taken with iPhone 5S Category:Unreviewed submissions from Wikipedia Summer of Monuments Category:Uploaded via Campaign:wsm Category:Wroe-Bustin House"
+    }
+   ]
+  },
+  "aus_002": {
+   "city": "Austin",
+   "name": "The Auction Oaks",
+   "checked": "2026-08-22",
+   "sweep": 5,
+   "candidates": []
+  },
+  "aus_003": {
+   "city": "Austin",
+   "name": "The Battle Oaks",
+   "checked": "2026-08-22",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Turtle Pond University of Texas Austin.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Turtle_Pond_University_of_Texas_Austin.jpg/960px-Turtle_Pond_University_of_Texas_Austin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Turtle_Pond_University_of_Texas_Austin.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Larry D. Moore",
+     "lat": 30.28693,
+     "lng": -97.73946,
+     "cats": "Category:CC-BY-4.0 Category:Campus of the University of Texas at Austin Category:Files by User:Nv8200p Category:Self-published work Category:Taken with Canon EOS 550D and Canon EF 24-105mm F4L IS USM Category:Trachemys scripta elegans Category:United States photographs taken on 2019-05-18"
+    },
+    {
+     "title": "File:Turtle Pond University of Texas Austin 2.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Turtle_Pond_University_of_Texas_Austin_2.jpg/960px-Turtle_Pond_University_of_Texas_Austin_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Turtle_Pond_University_of_Texas_Austin_2.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Larry D. Moore",
+     "lat": 30.28675,
+     "lng": -97.73945,
+     "cats": "Category:2019 in Austin, Texas Category:CC-BY-4.0 Category:Campus of the University of Texas at Austin Category:Files by User:Nv8200p Category:Self-published work Category:Taken with Canon EOS 550D and Canon EF 24-105mm F4L IS USM Category:Trachemys scripta elegans Category:United States photographs taken on 2019-05-18"
+    },
+    {
+     "title": "File:University of Texas at Austin August 2019 09 (Hogg Memorial Auditorium).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/University_of_Texas_at_Austin_August_2019_09_%28Hogg_Memorial_Auditorium%29.jpg/960px-University_of_Texas_at_Austin_August_2019_09_%28Hogg_Memorial_Auditorium%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:University_of_Texas_at_Austin_August_2019_09_(Hogg_Memorial_Auditorium).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Michael Barera",
+     "lat": 30.28673056,
+     "lng": -97.74011111,
+     "cats": "Category:August 2019 in Austin, Texas Category:CC-BY-SA-3.0 Category:CC-BY-SA-4.0 Category:Campus of the University of Texas at Austin Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Photographs by Michael Barera Category:Self-published work Category:Taken with Sony ILCE-5100 Category:Theaters in Texas Category:United States photographs taken on 2019-08-03"
+    },
+    {
+     "title": "File:University of Texas at Austin August 2019 10 (Littlefield House).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/University_of_Texas_at_Austin_August_2019_10_%28Littlefield_House%29.jpg/960px-University_of_Texas_at_Austin_August_2019_10_%28Littlefield_House%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:University_of_Texas_at_Austin_August_2019_10_(Littlefield_House).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Michael Barera",
+     "lat": 30.28774722,
+     "lng": -97.740675,
+     "cats": "Category:August 2019 in Austin, Texas Category:CC-BY-SA-3.0 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Littlefield House Category:Photographs by Michael Barera Category:Self-published work Category:Taken with Sony ILCE-5100 Category:Torch-style lanterns in Texas Category:United States photographs taken on 2019-08-03"
+    },
+    {
+     "title": "File:University of Texas at Austin August 2019 11 (Littlefield House).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/University_of_Texas_at_Austin_August_2019_11_%28Littlefield_House%29.jpg/960px-University_of_Texas_at_Austin_August_2019_11_%28Littlefield_House%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:University_of_Texas_at_Austin_August_2019_11_(Littlefield_House).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Michael Barera",
+     "lat": 30.28783889,
+     "lng": -97.74056944,
+     "cats": "Category:August 2019 in Austin, Texas Category:CC-BY-SA-3.0 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Littlefield House Category:Photographs by Michael Barera Category:Self-published work Category:Taken with Sony ILCE-5100 Category:Torch-style lanterns in Texas Category:United States photographs taken on 2019-08-03"
+    }
+   ]
+  },
+  "aus_004": {
+   "city": "Austin",
+   "name": "Old Baldy",
+   "checked": "2026-08-22",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "iNat obs 94599224 (Taxodium distichum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/156942303/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/94599224",
+     "licence": "CC BY",
+     "author": "(c) Sophia K, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "30.1840633333,-97.7237466667"
+    },
+    {
+     "title": "iNat obs 94599224 (Taxodium distichum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/156942334/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/94599224",
+     "licence": "CC BY",
+     "author": "(c) Sophia K, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "30.1840633333,-97.7237466667"
+    },
+    {
+     "title": "iNat obs 252800788 (Taxodium distichum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/452582708/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/252800788",
+     "licence": "CC BY",
+     "author": "(c) mattmsa, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "30.1840916667,-97.7236888889"
+    }
+   ]
+  },
+  "aus_005": {
+   "city": "Austin",
+   "name": "The Seiders Oaks",
+   "checked": "2026-08-22",
+   "sweep": 5,
+   "candidates": []
+  },
+  "bru_024": {
+   "city": "Brussels",
+   "name": "The Pedunculate Oak of Mont des Arts",
+   "checked": "2026-08-22",
+   "sweep": 5,
+   "candidates": []
+  },
+  "bru_025": {
+   "city": "Brussels",
+   "name": "The Ailanthus of Mont des Arts",
+   "checked": "2026-08-22",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Brussel-Tree with lights.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Brussel-Tree_with_lights.jpg/960px-Brussel-Tree_with_lights.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Brussel-Tree_with_lights.jpg",
+     "licence": "CC0",
+     "author": "Romaine",
+     "lat": 50.84645,
+     "lng": 4.354561,
+     "cats": "Category:Belgium photographs taken on 2014-12-07 Category:CC-Zero Category:Files with coordinates missing SDC location of creation (50° N, 4° E) Category:Place de l'Agora/Agoraplein Category:Self-published work Category:Trees with string lights"
+    }
+   ]
+  },
+  "bru_026": {
+   "city": "Brussels",
+   "name": "The Caucasian Wingnut of Mont des Arts",
+   "checked": "2026-08-22",
+   "sweep": 5,
+   "candidates": []
+  },
+  "bru_027": {
+   "city": "Brussels",
+   "name": "The Pyramidal Holly of Parc d'Egmont",
+   "checked": "2026-08-22",
+   "sweep": 5,
+   "candidates": []
+  },
+  "bru_028": {
+   "city": "Brussels",
+   "name": "The Pagoda Tree of Parc d'Egmont",
+   "checked": "2026-08-22",
+   "sweep": 5,
+   "candidates": []
+  },
+  "bru_029": {
+   "city": "Brussels",
+   "name": "The Weeping Ash of Parc d'Egmont",
+   "checked": "2026-08-22",
+   "sweep": 5,
+   "candidates": []
+  },
+  "bru_030": {
+   "city": "Brussels",
+   "name": "The Thornless Honey Locust of Parc d'Egmont",
+   "checked": "2026-08-22",
+   "sweep": 5,
+   "candidates": []
+  },
+  "nij_006": {
+   "city": "Nijmegen",
+   "name": "The Hornbeam of Krayenhoffpark",
+   "checked": "2026-08-22",
+   "sweep": 5,
+   "candidates": []
+  },
+  "nij_007": {
+   "city": "Nijmegen",
+   "name": "The Black Locust of Krayenhoffpark",
+   "checked": "2026-08-22",
+   "sweep": 5,
+   "candidates": []
+  },
+  "nij_008": {
+   "city": "Nijmegen",
+   "name": "The Chestnut of Begraafplaats Daalseweg",
+   "checked": "2026-08-22",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Begraafplaats Daalseweg Nijmegen.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Begraafplaats_Daalseweg_Nijmegen.jpg/960px-Begraafplaats_Daalseweg_Nijmegen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Begraafplaats_Daalseweg_Nijmegen.jpg",
+     "licence": "Public domain",
+     "author": "D.F. Blom",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Daalseweg cemetery Nijmegen Category:Jan Jacob Weve Category:Netherlands photographs taken on 2007-04-16 Category:PD-user Category:Rijksmonumenten with known IDs Category:Taken with Canon PowerShot A530",
+     "judged": "reject",
+     "verdict": "viewed as pixels: the cemetery beech avenue, several trunks along a path, not the single sweet chestnut and not one collectible subject",
+     "judged_date": "2026-08-22"
+    },
+    {
+     "title": "File:Buslijn 1 naar Hengstdal op de Daalseweg in Nijmegen.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Buslijn_1_naar_Hengstdal_op_de_Daalseweg_in_Nijmegen.jpg/960px-Buslijn_1_naar_Hengstdal_op_de_Daalseweg_in_Nijmegen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Buslijn_1_naar_Hengstdal_op_de_Daalseweg_in_Nijmegen.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Eduard Bouwman",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Media from Regionaal Archief Nijmegen",
+     "judged": "reject",
+     "verdict": "viewed as pixels: a 1980s bus on the Daalseweg, street photograph, no tree as subject",
+     "judged_date": "2026-08-22"
+    },
+    {
+     "title": "File:Daalseweg Nijmegen.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Daalseweg_Nijmegen.jpg/960px-Daalseweg_Nijmegen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Daalseweg_Nijmegen.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Agora",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Altrade Category:CC-BY-SA-4.0 Category:Daalseweg (Nijmegen) Category:Self-published work Category:Taken with HTC Incredible S",
+     "judged": "reject",
+     "verdict": "viewed as pixels: overcast Daalseweg street view, the chestnut is not in it",
+     "judged_date": "2026-08-22"
+    },
+    {
+     "title": "File:Daalseweg op de kruising van de Groesbeeksedwarsweg en Van den Havestraat. Nijmegen.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Daalseweg_op_de_kruising_van_de_Groesbeeksedwarsweg_en_Van_den_Havestraat._Nijmegen.jpg/960px-Daalseweg_op_de_kruising_van_de_Groesbeeksedwarsweg_en_Van_den_Havestraat._Nijmegen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Daalseweg_op_de_kruising_van_de_Groesbeeksedwarsweg_en_Van_den_Havestraat._Nijmegen.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Roger Veringmeier",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Daalseweg (Nijmegen) Category:Groesbeeksedwarsweg (Nijmegen) Category:Self-published work",
+     "judged": "reject",
+     "verdict": "viewed as pixels: a sunny street crossing with young street trees, not the cemetery chestnut",
+     "judged_date": "2026-08-22"
+    },
+    {
+     "title": "File:Graffiti achterzijde bloemenkraam, Daalseweg, Nijmegen.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Graffiti_achterzijde_bloemenkraam%2C_Daalseweg%2C_Nijmegen.jpg/960px-Graffiti_achterzijde_bloemenkraam%2C_Daalseweg%2C_Nijmegen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Graffiti_achterzijde_bloemenkraam,_Daalseweg,_Nijmegen.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "FakirNL",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Daalseweg (Nijmegen) Category:Files by User:FakirNL/Nijmegen/Murals Category:Graffiti in Nijmegen Category:Self-published work",
+     "judged": "reject",
+     "verdict": "viewed as pixels: a painted hoarding with graffiti, no tree",
+     "judged_date": "2026-08-22"
+    },
+    {
+     "title": "File:Namenmonument Oorlogsdoden door Sjoerd de Vos, Begraafplaats, Daalseweg 207, Nijmegen - lijst rechtsboven.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Namenmonument_Oorlogsdoden_door_Sjoerd_de_Vos%2C_Begraafplaats%2C_Daalseweg_207%2C_Nijmegen_-_lijst_rechtsboven.jpg/960px-Namenmonument_Oorlogsdoden_door_Sjoerd_de_Vos%2C_Begraafplaats%2C_Daalseweg_207%2C_Nijmegen_-_lijst_rechtsboven.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Namenmonument_Oorlogsdoden_door_Sjoerd_de_Vos,_Begraafplaats,_Daalseweg_207,_Nijmegen_-_lijst_rechtsboven.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "FakirNL",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2025 in Nijmegen Category:CC-BY-SA-4.0 Category:Files by User:FakirNL/Nijmegen Category:Gelderland photographs taken on 2025-03-07 Category:Namenmonument Oorlogdoden Daalseweg Category:Self-published work",
+     "judged": "reject",
+     "verdict": "viewed as pixels: a close-up of the war-dead name plaque, no tree",
+     "judged_date": "2026-08-22"
+    },
+    {
+     "title": "File:Theater het Badhuis kunstwerk Moenen en Mariken Jan Samsom rotonde Daalseweg Koolemans Beijnenstraat Nijmegen.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Theater_het_Badhuis_kunstwerk_Moenen_en_Mariken_Jan_Samsom_rotonde_Daalseweg_Koolemans_Beijnenstraat_Nijmegen.jpg/960px-Theater_het_Badhuis_kunstwerk_Moenen_en_Mariken_Jan_Samsom_rotonde_Daalseweg_Koolemans_Beijnenstraat_Nijmegen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Theater_het_Badhuis_kunstwerk_Moenen_en_Mariken_Jan_Samsom_rotonde_Daalseweg_Koolemans_Beijnenstraat_Nijmegen.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Agora",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Balance (Nijmegen) Category:CC-BY-SA-4.0 Category:Daalseweg (Nijmegen) Category:Mariken van Nieumeghen Category:Netherlands photographs taken on 2014-10-25 Category:Self-published work Category:Taken with HTC Incredible S Category:Theaters in Nijmegen",
+     "judged": "reject",
+     "verdict": "viewed as pixels: theatre building and roundabout sculpture, no tree",
+     "judged_date": "2026-08-22"
+    }
+   ],
+   "judged": "2026-08-22",
+   "outcome": "rejected",
+   "outcome_note": "Seven candidates viewed as pixels, all rejected. The Commons sweep on Daalseweg returns the street rather than the cemetery: a bus, a hoarding, a roundabout sculpture, a name plaque. The one cemetery photograph is the beech avenue, not the sweet chestnut on the west side.",
+   "exhausted": "2026-08-22: Daalseweg street furniture plus one beech avenue, no photograph of the chestnut"
+  },
+  "nij_009": {
+   "city": "Nijmegen",
+   "name": "The Kabouterboom",
+   "checked": "2026-08-22",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Close up van de Kabouterboom, een tamme kastanje en de dikste boom van Nederland - Unknown - 20537001 - RCE.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Close_up_van_de_Kabouterboom%2C_een_tamme_kastanje_en_de_dikste_boom_van_Nederland_-_Unknown_-_20537001_-_RCE.jpg/960px-Close_up_van_de_Kabouterboom%2C_een_tamme_kastanje_en_de_dikste_boom_van_Nederland_-_Unknown_-_20537001_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Close_up_van_de_Kabouterboom,_een_tamme_kastanje_en_de_dikste_boom_van_Nederland_-_Unknown_-_20537001_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Bert van As",
+     "lat": 51.827838,
+     "lng": 5.918725,
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Kabouterboom (Beek) Category:Photographs by Bert van As Category:Possible Rijksmonumenten in Gelderland Category:Possible Rijksmonumenten not in place category",
+     "judged": "reject",
+     "verdict": "viewed as pixels: correct tree (RCE, geotagged on our pin) but shot straight up into the crown, the trunk is cut off and the whole tree cannot be read",
+     "judged_date": "2026-08-22"
+    },
+    {
+     "title": "File:Close up van de Kabouterboom, een tamme kastanje en de dikste boom van Nederland - Unknown - 20537002 - RCE.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Close_up_van_de_Kabouterboom%2C_een_tamme_kastanje_en_de_dikste_boom_van_Nederland_-_Unknown_-_20537002_-_RCE.jpg/960px-Close_up_van_de_Kabouterboom%2C_een_tamme_kastanje_en_de_dikste_boom_van_Nederland_-_Unknown_-_20537002_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Close_up_van_de_Kabouterboom,_een_tamme_kastanje_en_de_dikste_boom_van_Nederland_-_Unknown_-_20537002_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Bert van As",
+     "lat": 51.827838,
+     "lng": 5.918725,
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Kabouterboom (Beek) Category:Photographs by Bert van As Category:Possible Rijksmonumenten in Gelderland Category:Possible Rijksmonumenten not in place category",
+     "judged": "reject",
+     "verdict": "viewed as pixels: correct tree, good hollow trunk in colour daylight, but forest shade leaves the hollow a black void and the crown is cropped; beaten outright by Kabouterboom in Beek",
+     "judged_date": "2026-08-22"
+    },
+    {
+     "title": "File:Kabouterboom-Nijmegen.jpeg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Kabouterboom-Nijmegen.jpeg/960px-Kabouterboom-Nijmegen.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kabouterboom-Nijmegen.jpeg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Marczoutendijk",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Kabouterboom (Beek) Category:Self-published work",
+     "judged": "reject",
+     "verdict": "viewed as pixels: bare winter view down the valley path, the tree has to be searched for among the others",
+     "judged_date": "2026-08-22"
+    },
+    {
+     "title": "File:Kabouterboom anno 2024.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Kabouterboom_anno_2024.jpg/960px-Kabouterboom_anno_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kabouterboom_anno_2024.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "FakirNL",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2024 in Berg en Dal (municipality) Category:CC-BY-SA-4.0 Category:Files by User:FakirNL/Berg en Dal Category:Kabouterboom (Beek) Category:Netherlands photographs taken on 2024-10-02 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "viewed as pixels: correct tree in leaf and well exposed, but framed on the trunk alone with the crown cut off, so it reads as a trunk study",
+     "judged_date": "2026-08-22"
+    },
+    {
+     "title": "File:Kabouterboom anno 2024 - verticaal panorama 01.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Kabouterboom_anno_2024_-_verticaal_panorama_01.jpg/960px-Kabouterboom_anno_2024_-_verticaal_panorama_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kabouterboom_anno_2024_-_verticaal_panorama_01.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "FakirNL",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2024 in Berg en Dal (municipality) Category:CC-BY-SA-4.0 Category:Files by User:FakirNL/Berg en Dal Category:Kabouterboom (Beek) Category:Netherlands photographs taken on 2024-10-02 Category:Self-published work Category:Vertical panoramic photographs of trees",
+     "judged": "reject",
+     "verdict": "viewed as pixels: correct tree, trunk and crown both in frame, but a stitched vertical panorama at roughly 1:2.9 with visible seams in the foliage; the wide card crop would take a mid-trunk band only",
+     "judged_date": "2026-08-22"
+    },
+    {
+     "title": "File:Kabouterboom bij Nijmegen.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Kabouterboom_bij_Nijmegen.jpg/960px-Kabouterboom_bij_Nijmegen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kabouterboom_bij_Nijmegen.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Marczoutendijk",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Kabouterboom (Beek) Category:Netherlands photographs taken on 2015-02-06 Category:On OSM Category:Self-published work",
+     "judged": "reject",
+     "verdict": "viewed as pixels: correct tree but bare winter branches against a blown white sky, crown unreadable",
+     "judged_date": "2026-08-22"
+    },
+    {
+     "title": "File:Kabouterboom in Beek.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Kabouterboom_in_Beek.jpg/960px-Kabouterboom_in_Beek.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kabouterboom_in_Beek.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "MPhernambucq",
+     "lat": 51.8275296,
+     "lng": 5.9192396,
+     "cats": "Category:Beek (Berg en Dal) Category:CC-BY-SA-3.0 Category:Castanea sativa Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Photographs taken on 2026-06-07 Category:Self-published work Category:Uploaded with Mobile/Android",
+     "judged": "approve",
+     "verdict": "viewed as pixels: the Kabouterboom in leaf, whole hollow trunk and crown readable, daylight, colour, well exposed, the estate sign in frame; GPS 51.82753/5.91924 sits within about 25 m of our pin and the file description gives the 850 cm girth our entry records",
+     "judged_date": "2026-08-22"
+    },
+    {
+     "title": "File:Zicht op de Kabouterboom, een tamme kastanje en de dikste boom van Nederland - Beek - 20536999 - RCE.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Zicht_op_de_Kabouterboom%2C_een_tamme_kastanje_en_de_dikste_boom_van_Nederland_-_Beek_-_20536999_-_RCE.jpg/960px-Zicht_op_de_Kabouterboom%2C_een_tamme_kastanje_en_de_dikste_boom_van_Nederland_-_Beek_-_20536999_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Zicht_op_de_Kabouterboom,_een_tamme_kastanje_en_de_dikste_boom_van_Nederland_-_Beek_-_20536999_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Bert van As",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Kabouterboom (Beek) Category:Netherlands photographs taken on 2010-07-28 Category:Photographs by Bert van As Category:Quercetea robori-petraeae",
+     "judged": "reject",
+     "verdict": "viewed as pixels: distant woodland view, the tree is a small dark shape in the middle of the undergrowth",
+     "judged_date": "2026-08-22"
+    },
+    {
+     "title": "File:Zicht op de Kabouterboom, een tamme kastanje en de dikste boom van Nederland - Beek - 20537000 - RCE.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Zicht_op_de_Kabouterboom%2C_een_tamme_kastanje_en_de_dikste_boom_van_Nederland_-_Beek_-_20537000_-_RCE.jpg/960px-Zicht_op_de_Kabouterboom%2C_een_tamme_kastanje_en_de_dikste_boom_van_Nederland_-_Beek_-_20537000_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Zicht_op_de_Kabouterboom,_een_tamme_kastanje_en_de_dikste_boom_van_Nederland_-_Beek_-_20537000_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Bert van As",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Kabouterboom (Beek) Category:Netherlands photographs taken on 2010-07-28 Category:Photographs by Bert van As",
+     "judged": "reject",
+     "verdict": "viewed as pixels: same distant framing, the tree has to be searched for",
+     "judged_date": "2026-08-22"
+    }
+   ],
+   "judged": "2026-08-22",
+   "outcome": "approved",
+   "outcome_note": "Nine candidates viewed as pixels, eight rejected and one approved. File:Kabouterboom in Beek.jpg (MPhernambucq, CC BY-SA 3.0, own work, 7 June 2026) shows the hollow trunk and the crown in leaf in even daylight, is geotagged 51.82753/5.91924 within about 25 m of our pin, and its description gives the 850 cm girth this entry records, so identity is settled by geotag and measurement rather than by name. The RCE frames are the same tree and lose on framing: one looks straight up the crown, one crops the crown off. The 2024 vertical panorama shows most of the tree but is a stitched 1:2.9 strip that a wide card crop would reduce to a band of trunk."
+  },
+  "nij_010": {
+   "city": "Nijmegen",
+   "name": "The Limes of the Kopse Hof",
+   "checked": "2026-08-22",
+   "sweep": 5,
+   "candidates": []
+  },
+  "nij_011": {
+   "city": "Nijmegen",
+   "name": "The Yew of the Bartholomeuskerkje",
+   "checked": "2026-08-22",
+   "sweep": 5,
+   "candidates": []
+  },
+  "nij_012": {
+   "city": "Nijmegen",
+   "name": "The Wilhelminaboom of Hertogplein",
+   "checked": "2026-08-22",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:De Wilhelminaboom; op de achtergrond de Nutsschool F20537.jpeg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/De_Wilhelminaboom%3B_op_de_achtergrond_de_Nutsschool_F20537.jpeg/960px-De_Wilhelminaboom%3B_op_de_achtergrond_de_Nutsschool_F20537.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:De_Wilhelminaboom;_op_de_achtergrond_de_Nutsschool_F20537.jpeg",
+     "licence": "CC BY-SA 4.0",
+     "author": "J.F.M. Trum, Fotopersbureau Gelderland",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Hertogplein Nijmegen Category:Images from Fotopersbureau Gelderland Category:Netherlands photographs taken on 1966-03-31 Category:Uploaded with pattypan Category:Wilhelminabomen",
+     "judged": "reject",
+     "verdict": "viewed as pixels: black-and-white archival photograph of a bare tree with earthmovers beside it, fails the colour and daylight rule outright",
+     "judged_date": "2026-08-22"
+    },
+    {
+     "title": "File:Hertogplein Nijmegen - Q1831324.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Hertogplein_Nijmegen_-_Q1831324.jpg/960px-Hertogplein_Nijmegen_-_Q1831324.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Hertogplein_Nijmegen_-_Q1831324.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Hay Kranen",
+     "lat": 51.844272,
+     "lng": 5.868386,
+     "cats": "Category:2020 in Nijmegen Category:CC-BY-4.0 Category:Files by Hay Kranen Category:Files with coordinates missing SDC location of creation (51° N, 5° E) Category:Hertogplein Nijmegen Category:Netherlands photographs taken on 2020-01-26 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "viewed as pixels: winter street view across Hertogplein, no tree as subject and no crowned iron fence anywhere in frame",
+     "judged_date": "2026-08-22"
+    },
+    {
+     "title": "File:Jubileumfeesten, publiek bij de feestelijkheden bij de Wilhelminaboom F54331.jpeg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Jubileumfeesten%2C_publiek_bij_de_feestelijkheden_bij_de_Wilhelminaboom_F54331.jpeg/960px-Jubileumfeesten%2C_publiek_bij_de_feestelijkheden_bij_de_Wilhelminaboom_F54331.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Jubileumfeesten,_publiek_bij_de_feestelijkheden_bij_de_Wilhelminaboom_F54331.jpeg",
+     "licence": "CC BY-SA 4.0",
+     "author": "J.F.M. Trum, Fotopersbureau Gelderland",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1948 in Nijmegen Category:CC-BY-SA-4.0 Category:Hertogplein Nijmegen Category:Images from Fotopersbureau Gelderland Category:Uploaded with pattypan Category:Wilhelminabomen",
+     "judged": "reject",
+     "verdict": "viewed as pixels: sepia archival crowd scene at a jubilee ceremony, not a photograph of the tree today",
+     "judged_date": "2026-08-22"
+    },
+    {
+     "title": "File:Jubileumfeesten, speech van Pater Dr. F. Daniëls, staande bij de Wilhelminaboom F54330.jpeg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Jubileumfeesten%2C_speech_van_Pater_Dr._F._Dani%C3%ABls%2C_staande_bij_de_Wilhelminaboom_F54330.jpeg/960px-Jubileumfeesten%2C_speech_van_Pater_Dr._F._Dani%C3%ABls%2C_staande_bij_de_Wilhelminaboom_F54330.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Jubileumfeesten,_speech_van_Pater_Dr._F._Dani%C3%ABls,_staande_bij_de_Wilhelminaboom_F54330.jpeg",
+     "licence": "CC BY-SA 4.0",
+     "author": "J.F.M. Trum, Fotopersbureau Gelderland",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1948 in Nijmegen Category:CC-BY-SA-4.0 Category:Hertogplein Nijmegen Category:Images from Fotopersbureau Gelderland Category:Uploaded with pattypan Category:Wilhelminabomen",
+     "judged": "reject",
+     "verdict": "viewed as pixels: sepia archival photograph of a speech, the tree is out of frame",
+     "judged_date": "2026-08-22"
+    },
+    {
+     "title": "File:Korfmacher, Hertogplein, Nijmegen.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Korfmacher%2C_Hertogplein%2C_Nijmegen.jpg/960px-Korfmacher%2C_Hertogplein%2C_Nijmegen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Korfmacher,_Hertogplein,_Nijmegen.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "FakirNL",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2008 sculptures in the Netherlands Category:CC-BY-SA-4.0 Category:Files by User:FakirNL/Nijmegen/Sculptures Category:Hertogstraat (Nijmegen) Category:Sculptures in Nijmegen Category:Self-published work",
+     "judged": "reject",
+     "verdict": "viewed as pixels: an information pillar on the pavement is the subject, no tree",
+     "judged_date": "2026-08-22"
+    },
+    {
+     "title": "File:Kunst op het Hertogplein Nijmegen (5751850970).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Kunst_op_het_Hertogplein_Nijmegen_%285751850970%29.jpg/960px-Kunst_op_het_Hertogplein_Nijmegen_%285751850970%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kunst_op_het_Hertogplein_Nijmegen_(5751850970).jpg",
+     "licence": "CC BY 2.0",
+     "author": "FaceMePLS from The Hague, The Netherlands",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1974 sculptures in the Netherlands Category:CC-BY-2.0 Category:FaceMePLS uploads 2022-05-18 Category:Files from Flickr with changed licenses Category:Flickr images reviewed by trusted users Category:Hertogplein Nijmegen Category:Photographs by FaceMePLS Category:Sculpturen van vrouwenfiguren (Oscar Goedhart, Nijmegen) Category:Sculptures of Moirae Category:Sculptures of deities in the Netherlands",
+     "judged": "reject",
+     "verdict": "viewed as pixels: the Hertogplein sculpture against the corner buildings, no tree as subject",
+     "judged_date": "2026-08-22"
+    },
+    {
+     "title": "File:Stadsgezichten Leeuwarden de Wilhelminaboom op het Raadhuisplein met sierhek en, Bestanddeelnr 922-2758.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Stadsgezichten_Leeuwarden_de_Wilhelminaboom_op_het_Raadhuisplein_met_sierhek_en%2C_Bestanddeelnr_922-2758.jpg/960px-Stadsgezichten_Leeuwarden_de_Wilhelminaboom_op_het_Raadhuisplein_met_sierhek_en%2C_Bestanddeelnr_922-2758.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Stadsgezichten_Leeuwarden_de_Wilhelminaboom_op_het_Raadhuisplein_met_sierhek_en,_Bestanddeelnr_922-2758.jpg",
+     "licence": "CC0",
+     "author": "Eric Koch for Anefo",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:1969 in Leeuwarden Category:CC-Zero Category:Images from Anefo Category:Images from Nationaal Archief Category:Netherlands photographs taken on 1969-04-08 Category:Photographs by Eric Koch (flat list) Category:Photographs by Eric Koch in Leeuwarden (1969) Category:Wilhelminaboom (Leeuwarden)",
+     "judged": "reject",
+     "verdict": "the Wilhelminaboom on the Raadhuisplein in LEEUWARDEN, a different tree 150 km away; wrong subject on the metadata alone",
+     "judged_date": "2026-08-22"
+    },
+    {
+     "title": "File:Zutphen, Wilhelminaboom.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Zutphen%2C_Wilhelminaboom.JPG/960px-Zutphen%2C_Wilhelminaboom.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Zutphen,_Wilhelminaboom.JPG",
+     "licence": "CC BY-SA 3.0 nl",
+     "author": "Pacobobo",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2014 in Zutphen Category:CC-BY-SA-3.0-NL Category:Images from War Memorials Netherlands 2014 Category:Netherlands photographs taken on 2014-04-07 Category:Self-published work Category:Taken with Nikon D40 Category:Uploaded via Campaign:WarMemorialsNetherlands Category:War memorials in the Netherlands with known IDs Category:Wilhelminaboom, Zutphen",
+     "judged": "reject",
+     "verdict": "the Wilhelminaboom of ZUTPHEN, a different tree in a different town",
+     "judged_date": "2026-08-22"
+    },
+    {
+     "title": "File:Zutphen, detail Wilhelminaboom.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Zutphen%2C_detail_Wilhelminaboom.JPG/960px-Zutphen%2C_detail_Wilhelminaboom.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Zutphen,_detail_Wilhelminaboom.JPG",
+     "licence": "CC BY-SA 3.0 nl",
+     "author": "Pacobobo",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2014 in Zutphen Category:CC-BY-SA-3.0-NL Category:Images from War Memorials Netherlands 2014 Category:Netherlands photographs taken on 2014-04-07 Category:Self-published work Category:Taken with Nikon D40 Category:Uploaded via Campaign:WarMemorialsNetherlands Category:War memorials in the Netherlands with known IDs Category:Wilhelminaboom, Zutphen",
+     "judged": "reject",
+     "verdict": "a detail of the ZUTPHEN Wilhelminaboom, wrong tree and a close-up",
+     "judged_date": "2026-08-22"
+    }
+   ],
+   "judged": "2026-08-22",
+   "outcome": "rejected",
+   "outcome_note": "Nine candidates judged, six viewed as pixels and three rejected on metadata as other towns Wilhelminabomen (Leeuwarden, Zutphen twice). Nothing shows the Hertogplein lime with its crowned iron fence: what Commons holds for this square is two sepia jubilee ceremony photographs, one black-and-white 1970s bare-tree record, the sculpture, an information pillar and a winter street view.",
+   "exhausted": "2026-08-22: archival and street furniture only, plus three same-name trees in other towns"
+  },
+  "nij_013": {
+   "city": "Nijmegen",
+   "name": "The Beverboom of Park Leeuwenstein",
+   "checked": "2026-08-22",
+   "sweep": 5,
+   "candidates": []
+  },
+  "nij_014": {
+   "city": "Nijmegen",
+   "name": "The Pastorie Chestnut of Lent",
+   "checked": "2026-08-22",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Batenburg Rijksmonument 523603 pastorie Molendijk 1.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Batenburg_Rijksmonument_523603_pastorie_Molendijk_1.JPG/960px-Batenburg_Rijksmonument_523603_pastorie_Molendijk_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Batenburg_Rijksmonument_523603_pastorie_Molendijk_1.JPG",
+     "licence": "CC0",
+     "author": "Havang(nl)",
+     "lat": 51.82260833,
+     "lng": 5.63065833,
+     "cats": "Category:CC-Zero Category:Images from Wiki Loves Monuments 2010 Category:Media with estimated locations Category:Netherlands photographs taken on 2010-09-22 Category:Pastorie (Batenburg) Category:Photographs by Henk van Gaal Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Sony DSC-HX5V",
+     "judged": "reject",
+     "verdict": "a pastorie at Molendijk 1 in BATENBURG, geotagged 51.8226/5.6307, about 18 km west of Lent; wrong place",
+     "judged_date": "2026-08-22"
+    },
+    {
+     "title": "File:Hervormde Pastorie Suameer.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Hervormde_Pastorie_Suameer.JPG/960px-Hervormde_Pastorie_Suameer.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Hervormde_Pastorie_Suameer.JPG",
+     "licence": "CC BY-SA 3.0 nl",
+     "author": "Baykedevries",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0-NL Category:Images from Wiki Loves Monuments 2012 Category:Images from Wiki Loves Monuments 2012 in the Netherlands Category:Netherlands photographs taken on 2012-09-28 Category:Pastorie (Sumar) Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Nikon Coolpix P510",
+     "judged": "reject",
+     "verdict": "the Hervormde pastorie of SUAMEER in Friesland, roughly 150 km away; wrong place",
+     "judged_date": "2026-08-22"
+    }
+   ],
+   "judged": "2026-08-22",
+   "outcome": "rejected",
+   "outcome_note": "Both candidates rejected on place: a pastorie in Batenburg 18 km west (its own geotag says so) and one in Suameer in Friesland. The sweep matched the word pastorie, not Lent. No photograph of the churchyard chestnut on the Pastoor van Laakstraat exists on Commons.",
+   "exhausted": "2026-08-22: pastorie name matches in two other villages, nothing from Lent"
   }
  },
  "notes": [
@@ -34948,6 +36295,10 @@
   {
    "date": "2026-08-21",
    "note": "Viewing pass 001, session with working egress, one image request every 3.2 seconds and no 429. 30 trees, 63 candidates; 33 images downloaded and viewed as pixels, the rest closed on hard metadata (wrong continent by geotag, statues and mausoleums, archival prints, wrestler Ed 'Strangler' Lewis for a strangler fig). Zero approvals, one hold (hbi_003). Four rejected by photo_light before any eyes. The two identity catches worth keeping: rot_004's best-scoring candidate is the 2013 Koningslinde for Willem-Alexander standing 59 m from our 1898 Wilhelmina Linden, a young sapling with no iron fence, and syd_002's sharpest candidate is the mature 1928 jacaranda that collapsed in 2016 while our entry is explicitly the 2017 clone. Both would have passed a filename-and-thumbnail check. Also: 'Barcelona Pedralbes.png', attached by the sweep to three separate Barcelona trees, is a district locator map rather than a photograph, so the sweep should skip .png district maps. syd_002's remaining candidate was rejected on the same framing ground an earlier pass used for its near-twin, rather than overturning that precedent for a marginally better version of the same shot."
+  },
+  {
+   "date": "2026-08-22",
+   "note": "Photo-judging pass on Nijmegen, local session with working egress, one image request every 3.2 seconds across 22 fetches and no rate limiting. 27 previously unjudged candidates closed across nij_008, nij_009, nij_012 and nij_014: 22 viewed as actual pixels and 5 rejected on place metadata alone (two other-town Wilhelminabomen, a Wilhelminaboom detail, and two pastoriewoningen in Batenburg and Suameer, none of them in Nijmegen or Lent). nij_001 to nij_004 already carried candidate verdicts from 2026-08-13 and were not re-judged, only closed at tree level. One approval: nij_009, File:Kabouterboom in Beek.jpg, written into nijmegen.json, which gives Nijmegen its first photograph. The pattern here is the one this queue keeps producing. A tree that is nationally famous has nine candidates and a real photograph; the other seven trees have candidates only because a name matched. Julianaboom, Wilhelminaboom, Sterrenbos and pastorie are all national names, and the sweep returned the Maastricht ironwork, the Zutphen and Leeuwarden Wilhelminabomen, a Sint-Michielsgestel house and two pastoriewoningen 18 and 150 km away. Worth recording for nij_012 specifically: two 2020s photographs of the Hertogplein show the square rebuilt with young trees and no crowned iron fence visible from either angle, which is not proof of anything but is worth a verify pass rather than another photo sweep. Nijmegen nij_001, nij_002, nij_003, nij_004, nij_008, nij_012 and nij_014 are now documented dead ends on Commons and should not be re-swept."
   }
  ]
 }
