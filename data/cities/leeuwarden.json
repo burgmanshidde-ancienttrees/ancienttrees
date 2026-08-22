@@ -1,0 +1,256 @@
+{
+ "city": "Leeuwarden",
+ "country": "Netherlands",
+ "status": "needs_curation",
+ "intro": "Five of these seven stand in the Prinsentuin, which has been an open public walking park for more than two hundred years and is one of the first in the Netherlands. It was laid out between 1822 and 1824 on the old northern ramparts by Lucas Pieters Roodbaard, the Frisian garden architect who also designed the city cemetery a few streets north, where herons now nest in the crowns of his plane trees. The seventh is the oldest and the one to see first: a copper beech by the Westerkerk that the register says will eventually have to come down.",
+ "meta_description": "Seven remarkable trees in Leeuwarden: five in the two-hundred-year-old Prinsentuin, a heron colony in a Roodbaard cemetery, and a beech on borrowed time.",
+ "question_meta": "Leeuwarden's oldest tree is a copper beech by the Westerkerk, banded 1750 to 1800, and the register expects it will have to be felled.",
+ "question_answer": "The oldest tree in Leeuwarden is a copper beech standing by the Westerkerk on the Sint Anthonystraat, which the national register places in a planting band of 1750 to 1800, so between about 225 and 275 years old. It is also the one tree here with a warning attached. The register records that its rooting ground was compacted in the 1990s, that the tree took a blow from which it never recovered, and that although the ground has since been improved its condition has not come back, so it will in time have to be felled. It is standing now. If you want to see the oldest tree in Leeuwarden, this is an argument for going this year rather than in ten.",
+ "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every age on this page is a band and none is narrowed to look precise. The register is the 2024 edition and is the single source for these trees, which is why they are all flagged. It is a careful source: for several of these it records the tree's condition as well as its age, which is where the note about the Westerkerk beech comes from and why we have passed it on rather than quietly leaving it out. The Prinsentuin trees are dated indirectly, because the register reasons from the park's own history that the oldest trees in it must come from between 1830 and 1880 rather than from a record of any individual planting. Pins are as the register surveyed them; where one is marked approximate we know the park and not the trunk.",
+ "hero_tree_id": "lee_001",
+ "oldest_tree_id": "lee_002",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Leeuwarden?",
+   "a": "A copper beech by the Westerkerk, banded 1750 to 1800. The register notes that its growing ground was compacted in the 1990s and its condition never recovered, and that it will eventually have to be felled."
+  },
+  {
+   "q": "How old is the Prinsentuin?",
+   "a": "It has been a public walking park for over two hundred years, which makes it one of the earliest in the Netherlands. The present layout was made between 1822 and 1824 in the existing garden on the former northern fortifications, by the Frisian garden architect Lucas Pieters Roodbaard, in the romantic style. The rampart and canal system it belongs to has been a national monument since 1967."
+  },
+  {
+   "q": "Is there really a heron colony in the old cemetery?",
+   "a": "Yes. The Oude Stadsbegraafplaats on the Jelsummerstraat was laid out in 1833 to a Roodbaard design, is no longer in use and is a national monument. Grey herons nest in the crowns of its old trees and many of the trunks are grown over with ivy."
+  },
+  {
+   "q": "Are they free to visit?",
+   "a": "All seven. The Prinsentuin is an open public park, the old cemetery is open ground and no longer in use, and the Westerkerk beech stands on the street."
+  }
+ ],
+ "trees": [
+  {
+   "id": "lee_001",
+   "name": "The Horse Chestnut of the Prinsentuin",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "age_estimate": "roughly 195 to 205 years, from the register's planting band of 1820 to 1830",
+   "age_min": 196,
+   "age_max": 206,
+   "location": {
+    "address": "Prinsentuin, Groeneweg 1, beside the Historisch Centrum",
+    "latitude": 53.20425,
+    "longitude": 5.79193,
+    "neighbourhood": "Prinsentuin"
+   },
+   "story": "This tree is almost exactly as old as the idea of a public park in this country.\n\nBetween 1822 and 1824 the city had a new garden laid out on the northern fortifications, in the existing grounds, by Lucas Pieters Roodbaard, the Frisian garden architect who spent his career converting Dutch formality into the romantic English manner: curved paths, water, planned views, no straight lines. It has been open to the public ever since, which makes the Prinsentuin one of the first public walking parks in the Netherlands and this chestnut one of the original plantings.\n\nTwo hundred years of people walking under a tree is not neutral. Horse chestnuts suffer badly from compacted ground and this one has had two centuries of feet. It is also the species now under attack across Europe from the leaf miner moth, which browns the foliage from July onward and makes a mature chestnut look half dead by August without actually killing it.\n\nSo come in May, when it is at its unarguable best: white candles held upright all over the crown, in a park laid out by a man who would have chosen it for exactly that.\n\nIt stands beside the Historisch Centrum, on the Groeneweg side.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Open public park.",
+   "transport": "About 1 km north of Leeuwarden station, on foot.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "The big chestnut on the Groeneweg side of the park, next to the Historisch Centrum. In May it is covered in upright white flower spikes.",
+   "best_time": {
+    "months": [
+     5
+    ],
+    "kind": "flowers",
+    "label": "May, when the white candles are up across the whole crown"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "lee_002",
+   "name": "The Copper Beech of the Westerkerk",
+   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+   "age_estimate": "roughly 225 to 275 years, from the register's planting band of 1750 to 1800",
+   "age_min": 226,
+   "age_max": 276,
+   "location": {
+    "address": "By the Westerkerk, Sint Anthonystraat 3",
+    "latitude": 53.20198,
+    "longitude": 5.79431,
+    "neighbourhood": "Centrum"
+   },
+   "story": "The national register does not usually tell you a tree is going to die. About this one it does.\n\nIn the 1990s the ground it roots in was compacted, which for a beech is close to the worst thing that can be done to it: the fine feeding roots sit in the top half metre of soil and they need air in it. The tree took a blow it never came back from. The ground has since been improved and its condition has not recovered, and the register states plainly that it will in time have to be felled.\n\nIt is the oldest tree in Leeuwarden, banded 1750 to 1800, standing by a church whose history runs back to the fifteenth century and which has been reworked repeatedly for the different uses it has been put to.\n\nThere is nothing tragic to look at. A declining old beech is still an enormous dark thing on a city street, and the decline is mostly visible in what is missing: thinner cover at the top of the crown, more light coming through than there should be, dead ends on the upper branches.\n\nThis is the only tree on this site we would tell you to see sooner rather than later.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Stands on the street by the church, reachable at any time.",
+   "transport": "About 800 m north of Leeuwarden station, on foot.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "The large purple-leaved beech beside the Westerkerk on the Sint Anthonystraat, with a noticeably thin upper crown.",
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "lee_003",
+   "name": "The Beech at the Pier Pander Temple",
+   "species": "European Beech (Fagus sylvatica)",
+   "age_estimate": "roughly 175 to 185 years, from the register's planting band of 1840 to 1850",
+   "age_min": 176,
+   "age_max": 186,
+   "location": {
+    "address": "Prinsentuin, at the Pier Pander temple",
+    "latitude": 53.20391,
+    "longitude": 5.78868,
+    "neighbourhood": "Prinsentuin"
+   },
+   "story": "There is a small classical temple in this park, built in 1924 to hold the work of one sculptor.\n\nPier Pander was born in Friesland in 1864, the son of a rag merchant, and got out through talent and patronage: Rome, a career in marble, and an early death in 1919. The temple was raised to his own plans five years later, a domed round building in a public park, to house his sculpture. There are not many Dutch artists with a temple.\n\nThe beech stands beside it. Its date is not certain: the register bands it 1840 to 1850 and notes that trees here could equally have gone in when the temple was built, but photographs from the 1930s argue for the earlier reading. This is the Noorderplantage, laid out in 1843 on the former Noorderdwinger bastion and joined to the Prinsentuin at its eastern end, and the register's general conclusion is that the oldest trees in it date from between 1830 and 1880.\n\nA beech beside a domed white building is a deliberate effect: smooth grey bark against smooth stone, and in summer a canopy dense enough to put the whole temple in shade.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Open public park.",
+   "transport": "About 1 km north of Leeuwarden station, on foot.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "The beech standing against the small domed temple at the western end of the park.",
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "lee_004",
+   "name": "The Plane of the Old City Cemetery",
+   "species": "London Plane (Platanus x acerifolia)",
+   "age_estimate": "roughly 175 to 185 years, from the register's planting band of 1840 to 1850",
+   "age_min": 176,
+   "age_max": 186,
+   "location": {
+    "address": "Oude Stadsbegraafplaats, Jelsummerstraat, on the path between sections 2 and 3",
+    "latitude": 53.20924,
+    "longitude": 5.79096,
+    "neighbourhood": "Vlietzone"
+   },
+   "story": "Grey herons nest in the tops of these trees.\n\nThat is the first thing to know about the old city cemetery, and in February and March it is loud. Herons are colonial breeders, they choose tall trees near water, they start early in the year, and a heronry is not a quiet place: a large ragged nest per fork, birds arriving with sticks, and a noise like an argument in a shed. From below you mostly see the undersides and hear the rest.\n\nThe ground was laid out in 1833 to a design by Lucas Pieters Roodbaard, the same architect as the Prinsentuin, which is why a cemetery here reads like a landscape garden with graves in it. It went out of use long ago and is now a national monument. Ivy has taken many of the trunks.\n\nThe plane is on the path between sections two and three, banded 1840 to 1850, so from the earliest planting. London plane is the classic city tree because it sheds its bark in plates and with it the soot, which is why the trunk is a camouflage of cream, olive and grey.\n\nGo in early spring, before the leaves, when you can see the birds.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Open ground, no longer in use as a cemetery.",
+   "transport": "About 1.5 km north of Leeuwarden station, on the Jelsummerstraat.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "Flaking cream and olive bark, on the path between sections 2 and 3. In late winter, the tree with heron nests in the top.",
+   "best_time": {
+    "months": [
+     3
+    ],
+    "kind": "bare silhouette",
+    "label": "March, bare, with the heron colony visible in the crowns"
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate"
+  },
+  {
+   "id": "lee_005",
+   "name": "The Beech behind Tresoar",
+   "species": "European Beech (Fagus sylvatica)",
+   "age_estimate": "roughly 155 to 165 years, from the register's planting band of 1860 to 1870",
+   "age_min": 156,
+   "age_max": 166,
+   "location": {
+    "address": "Prinsentuin, behind the library building",
+    "latitude": 53.20394,
+    "longitude": 5.79061,
+    "neighbourhood": "Prinsentuin"
+   },
+   "story": "It stands next to the building where Friesland keeps its memory.\n\nTresoar is the Frisian historical and literary centre, the archive of a language with its own literature and its own long argument about being a language. The beech is directly behind it, in the Prinsentuin, on the line of the old northern fortifications that the park was built on and that have been a national monument since 1967.\n\nThe register bands it 1860 to 1870, which places it a generation after Roodbaard's layout rather than in it, planted into a park that already existed.\n\nBeech is the tree that makes a Dutch park feel like a wood. It casts the heaviest shade of any large tree here, dense enough that almost nothing grows under a mature one, so the ground beneath is bare orange leaf litter and roots. That is not neglect, it is the tree winning.\n\nRun your hand over the trunk. Beech bark stays smooth and thin its whole life, which is why people carve it, and why an old one in a public park usually carries a century of initials that have stretched and blurred as the trunk widened.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Open public park.",
+   "transport": "About 1 km north of Leeuwarden station, on foot.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "Smooth grey trunk, bare ground beneath, directly behind the library building.",
+   "best_time": {
+    "months": [
+     10
+    ],
+    "kind": "autumn colour",
+    "label": "October, when it turns copper and the litter goes orange"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "lee_006",
+   "name": "The Ash by the Tea House",
+   "species": "European Ash (Fraxinus excelsior)",
+   "age_estimate": "roughly 145 to 155 years, from the register's planting band of 1870 to 1880",
+   "age_min": 146,
+   "age_max": 156,
+   "location": {
+    "address": "Prinsentuin, on the bank by the Theekoepel",
+    "latitude": 53.20418,
+    "longitude": 5.78888,
+    "neighbourhood": "Prinsentuin"
+   },
+   "story": "The register calls this a very impressive specimen of the species and then adds, in the same breath, that its crown has developed one-sidedly because of the park trees standing next to it.\n\nBoth are true and the second explains the first. A tree that grows up hemmed in on one side puts everything it has into the open side, so you end up with an asymmetric crown reaching out over the path or the water, which reads as dramatic rather than damaged. Roodbaard's successors planted a park; the trees then negotiated among themselves.\n\nIt stands on the bank by the Theekoepel, the tea house, in the Noorderplantage end of the grounds, and the register bands it 1870 to 1880.\n\nAn ash of that age is worth stopping for now more than it was twenty years ago. Ash dieback, a fungal disease that arrived in the Netherlands in 2010, has killed a large share of the country's ash in the years since, and a tolerant mature tree is no longer an ordinary thing. A minority resist it, apparently on genetics rather than luck, and every big healthy one left is a candidate.\n\nBlack buds in winter, in opposite pairs. Nothing else here has them.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Open public park.",
+   "transport": "About 1 km north of Leeuwarden station, on foot.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "A big ash with a lopsided crown leaning away from its neighbours, on the slope by the tea house. Matt black buds in winter.",
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "lee_007",
+   "name": "The Marilandica Poplar",
+   "species": "Canadian Poplar (Populus x canadensis)",
+   "age_estimate": "roughly 145 to 155 years, from the register's planting band of 1870 to 1880",
+   "age_min": 146,
+   "age_max": 156,
+   "location": {
+    "address": "Prinsentuin, centrally, by the Noorder Stadsgracht",
+    "latitude": 53.20456,
+    "longitude": 5.79211,
+    "neighbourhood": "Prinsentuin"
+   },
+   "story": "The trunk is the reason to come. It is deeply grooved and covered in burrs, hard woody swellings the size of fists and heads, which on a poplar of this age turn the bole into something closer to rock than bark.\n\nBurrs are the tree's response to damage or infection: a knot of dormant buds that keeps growing without ever making a shoot, laying down wildly disordered grain. Woodturners prize the timber for exactly that and pay serious money for a burr this size. Standing on a public park bank by a city canal is the safest place it could be.\n\nMarilandica is a named clone of the Canadian poplar, the hybrid of European black poplar and American cottonwood, selected and propagated by cuttings, which means every Marilandica anywhere is genetically the same tree. This one has been growing since the 1870s at the centre of the Prinsentuin by the Noorder Stadsgracht.\n\nPoplars are planted for speed and taken out early because they get brittle. This one has been left, and a century and a half of being left is what produced the trunk.\n\nGo and put your hands on it. That is the whole visit.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Open public park.",
+   "transport": "About 1 km north of Leeuwarden station, on foot.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "Centrally in the park by the canal, the tree with a deeply furrowed trunk covered in large woody burrs.",
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  }
+ ]
+}

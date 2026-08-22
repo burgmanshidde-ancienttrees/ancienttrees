@@ -1140,3 +1140,35 @@ which is not. On a fresh checkout run:
 
 Without that, git falls back to an ordinary conflict, which is exactly the old
 behaviour rather than a breakage.
+
+## Amersfoort, Enschede and Leeuwarden, 2026-08-22
+
+Three more from the Dutch LRMB register, 7 trees each, all flagged, no photos.
+
+**Two trees deliberately left out, both on the school rule.** Amersfoort's plane
+on the Sint Jorisschool schoolyard (Schimmelpenninckkade) and Enschede's oak at
+the Kottenpark Lyceum are both real, both old and both recorded as visitable.
+They stay leads, because a page telling adult strangers to walk onto school
+grounds is not something this site should publish, and no source says either
+site is genuinely open.
+
+**A register history that is wrong, caught before it was copied.** The entry for
+Amersfoort's copper beech at the St Franciscus Xavierius church says the church
+is "also known as De Krijtberg" and "plays an important role in Utrecht". The
+Krijtberg is in Amsterdam. The rest of the entry (church built 1881-83, so the
+beech predates it) is consistent with the tree's own band and is what the page
+uses. This is the register's fourth known error class, alongside wrong units,
+corrupt fields, double-counted twins and stale felled entries: **borrowed prose
+about the wrong building.**
+
+**Leeuwarden's oldest tree is dying and the register says so.** The copper beech
+at the Westerkerk had its rooting ground compacted in the 1990s, never recovered,
+and the register states it will in time have to be felled. It is alive now, so it
+is published, with that fact in the story and an argument for going sooner. If it
+comes down, the page needs updating rather than quietly leaving it up.
+
+Not settled:
+- **Photos: none for any of the three.** Leeuwarden's Prinsentuin and Enschede's
+  Ledeboerpark are both likely to have Commons coverage and are worth a sweep.
+- **Enschede's Het Bouwhuis trees** have no street address in the register at all,
+  only coordinates, so both pins are marked approximate.
