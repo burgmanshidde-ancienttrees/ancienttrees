@@ -35,20 +35,19 @@ struct CollectView: View {
     @Environment(Sightings.self) private var sightings
 
     @State private var signingIn = false
-    @State private var search = ""
     @State private var lane: Lane = .want
 
     enum Lane: Hashable { case want, seen, mine }
 
     private var visited: [Tree] {
-        matching(saved.entries.values.filter { $0.visitedAt != nil }
+        saved.entries.values.filter { $0.visitedAt != nil }
             .sorted { ($0.visitedAt ?? .distantPast) > ($1.visitedAt ?? .distantPast) }
-            .compactMap { catalogue.tree($0.treeId) })
+            .compactMap { catalogue.tree($0.treeId) }
     }
     private var wishlist: [Tree] {
-        matching(saved.entries.values.filter { $0.visitedAt == nil }
+        saved.entries.values.filter { $0.visitedAt == nil }
             .sorted { $0.savedAt > $1.savedAt }
-            .compactMap { catalogue.tree($0.treeId) })
+            .compactMap { catalogue.tree($0.treeId) }
     }
     private var allVisited: [Tree] {
         saved.entries.values.filter { $0.visitedAt != nil }.compactMap { catalogue.tree($0.treeId) }
@@ -66,18 +65,18 @@ struct CollectView: View {
             .prefix(18).map(\.key)
     }
 
-    private func matching(_ list: [Tree]) -> [Tree] {
-        guard !search.isEmpty else { return list }
-        let q = search.lowercased()
-        return list.filter {
-            $0.name.lowercased().contains(q) || $0.city.lowercased().contains(q)
-                || $0.species.lowercased().contains(q)
-        }
-    }
-
     var body: some View {
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 22) {
+                HStack(alignment: .center) {
+                    Text("Collect")
+                        .font(.screenTitle)
+                        .foregroundStyle(Brand.ink)
+                    Spacer(minLength: 8)
+                    ProfileButton()
+                }
+                .padding(.top, 4)
+
                 // Day zero opens with a MISSION, not with the score. Four
                 // zeros and eighteen grey ghosts were Hidde's own evidence
                 // that the app leads with what you do not have ("Collect is
@@ -135,12 +134,7 @@ struct CollectView: View {
         }
         .brandGround()
         // No literal tab-label heading; the mission or the score leads.
-        .navigationTitle("")
-        .navigationBarTitleDisplayMode(.inline)
-        .searchable(text: $search, prompt: "Search your trees")
-        .toolbar {
-            ToolbarItem(placement: .topBarTrailing) { ProfileButton() }
-        }
+        .toolbar(.hidden, for: .navigationBar)
         .sheet(isPresented: $signingIn) {
             SignInSheet(reason: .keepCollection(saved.savedCount), localCount: saved.savedCount)
                 .environment(account).environment(saved)

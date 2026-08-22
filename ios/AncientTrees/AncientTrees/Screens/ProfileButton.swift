@@ -14,14 +14,9 @@ struct ProfileButton: View {
         NavigationLink(value: Route.profile) {
             ZStack {
                 Circle().fill(Brand.surfaceMuted)
-                if account.isSignedIn {
-                    Text(String((account.email ?? "?").prefix(1)).uppercased())
-                        .font(.brand(15, .bold)).foregroundStyle(Brand.moss)
-                } else {
-                    Image(systemName: "person")
-                        .font(.system(size: 15, weight: .medium))
-                        .foregroundStyle(Brand.inkSoft)
-                }
+                Image(systemName: "person.fill")
+                    .font(.system(size: 15))
+                    .foregroundStyle(account.isSignedIn ? Brand.moss : Brand.inkSoft)
             }
             .frame(width: 32, height: 32)
             .frame(width: 44, height: 44)

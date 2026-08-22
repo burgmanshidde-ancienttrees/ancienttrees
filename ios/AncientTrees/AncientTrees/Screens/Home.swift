@@ -110,7 +110,33 @@ struct HomeView: View {
     var body: some View {
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 30) {
-                if search.isEmpty { shelves } else { results }
+                VStack(alignment: .leading, spacing: 12) {
+                    Text("Explore")
+                        .font(.screenTitle)
+                        .foregroundStyle(Brand.ink)
+                    Button { searching = true } label: {
+                        HStack(spacing: 10) {
+                            Image(systemName: "magnifyingglass")
+                                .font(.system(size: 17, weight: .semibold))
+                                .foregroundStyle(Brand.ink)
+                            Text(Search.placeholder)
+                                .font(.system(size: 16, weight: .medium))
+                                .foregroundStyle(Brand.inkSoft)
+                            Spacer(minLength: 0)
+                        }
+                        .padding(.horizontal, 16).frame(height: 50)
+                        .background(Brand.surface, in: .capsule)
+                        .overlay { Capsule().strokeBorder(Brand.hairline, lineWidth: 1) }
+                        .shadow(color: .black.opacity(0.06), radius: 6, y: 2)
+                        .contentShape(.capsule)
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityIdentifier("explore-search")
+                }
+                .padding(.horizontal, 16)
+                .padding(.top, 4)
+
+                shelves
                 Color.clear.frame(height: 90)        // clear of the floating tab bar
             }
             .padding(.top, 6)
@@ -123,21 +149,7 @@ struct HomeView: View {
         // No literal tab-label heading: the content is the heading. The empty
         // inline title keeps the bar (searchable lives in it) without the word
         // "Home" shouting over the hero.
-        .navigationTitle("")
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItem(placement: .topBarTrailing) {
-                Button { searching = true } label: {
-                    Image(systemName: "magnifyingglass")
-                        .font(.system(size: 17, weight: .semibold))
-                        .foregroundStyle(Brand.ink)
-                        .frame(width: 44, height: 44)
-                        .contentShape(.rect)
-                }
-                .accessibilityLabel("Search")
-                .accessibilityIdentifier("explore-search")
-            }
-        }
+        .toolbar(.hidden, for: .navigationBar)
         .fullScreenCover(isPresented: $searching) {
             MapSearch(catalogue: catalogue, origin: origin) { hit in
                 // On the FEED a result is a page, not a camera move.
