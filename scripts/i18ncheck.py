@@ -74,6 +74,14 @@ def check(lang, slug):
     for extra in set(tr) - set(en_ids):
         out.append("%s is translated but not in the English city file" % extra)
 
+    # A tree page's <title> is its NAME, and the build refuses one over 60
+    # characters. The overlay's own title was checked from the start; the names
+    # were not, and a Spanish rendering blew it on the first 46-tree city.
+    for tid, t in tr.items():
+        if len(t.get("name") or "") > 60:
+            out.append("%s: name is %d chars; the tree page title caps at 60"
+                       % (tid, len(t["name"])))
+
     slo, shi = (350, 600) if lang in CJK else (150, 250)
     for tid, t in tr.items():
         for f in TREE_FIELDS:
