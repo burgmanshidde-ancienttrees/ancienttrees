@@ -6,24 +6,268 @@
   "data": "They gave or offered data, photographs, permission or a source.",
   "answer": "They answered a specific question we asked.",
   "no": "A polite decline.",
-  "wrong_target": "The address was not the organisation we thought it was."
+  "wrong_target": "The address was not the organisation we thought it was.",
+  "auto": "An automatic reply: out of office, ticket desk, or a press desk's boilerplate. Not a person, but it proves the address is live and sometimes tells us when to write again."
  },
  "replies": [
-  {"date": "2026-08-12", "org": "DUIC / Oud-Utrecht (Piet van Dijck)", "to_address": "redactie@duic.nl", "type": "press", "country": "Netherlands", "kind": "referral", "gave": "DUIC forwarded the pitch to the city's historical society, which is taking it up as an article in 'Op pad met Oud-Utrecht', planned for the first half of 2027.", "draft": "drafts/reply-oud-utrecht.md"},
-  {"date": null, "org": "Brabants Dagblad (Roel)", "to_address": "stadsredactie@bd.nl", "type": "press", "country": "Netherlands", "kind": "answer", "gave": "Asked which register the Den Bosch trees came from; answered with the municipality's own 1,907-tree register.", "draft": "drafts/reply-brabants-dagblad.md"},
-  {"date": null, "org": "Omroep Brabant (journalist, by telephone)", "to_address": null, "type": "press", "country": "Netherlands", "kind": "correction", "gave": "Stood at a Den Bosch tree and could not tell which one it was. That complaint is why all eleven Den Bosch trees now carry a recognition line.", "draft": "drafts/reply-omroep-brabant.md"},
-  {"date": null, "org": "Dias com Arvores (Paulo V. Araujo)", "to_address": "dias.com.arvores@sapo.pt", "type": "blog", "country": "Portugal", "kind": "data", "gave": "Permission to use his ginkgo photograph, plus a correction about which of his two posts carries his own photographs.", "draft": "drafts/reply-paulo.md"},
-  {"date": null, "org": "Fundacao Mata do Bucaco", "to_address": "gabpresidencia@fmb.pt", "type": "institution", "country": "Portugal", "kind": "answer", "gave": "Answered after batch 002.", "draft": "drafts/reply-bucaco.md"},
-  {"date": null, "org": "Quercus, Nucleo Regional de Lisboa (Silvia Moutinho)", "to_address": "lisboa@quercus.pt", "type": "ngo", "country": "Portugal", "kind": "answer", "gave": "Replied to batch 005.", "draft": "drafts/reply-quercus-lisboa.md"},
-  {"date": null, "org": "Rock Creek Conservancy (Jon Pattee)", "to_address": "info@rockcreekconservancy.org", "type": "ngo", "country": "United States", "kind": "data", "gave": "Named trees in Lafayette Square we publish nothing about; recorded in data/leads/washington-dc.json.", "draft": "drafts/reply-rock-creek.md"},
-  {"date": null, "org": "Baumkunde.de (Wolfgang Schurmann)", "to_address": "webmaster@baumkunde.de", "type": "blog", "country": "Germany", "kind": "data", "gave": "Offered links and a list of ten Munster trees, which would have been a new city for nothing.", "draft": "drafts/reply-baumkunde.md"},
-  {"date": null, "org": "Grun Berlin", "to_address": "service@gruen-berlin.de", "type": "municipality", "country": "Germany", "kind": "referral", "gave": "Sent us to the Strassen- und Grunflachenamt Treptow-Kopenick.", "draft": "drafts/reply-gruen-berlin.md"},
-  {"date": null, "org": "Bayerische Schlosserverwaltung (Susanne Gunther)", "to_address": null, "type": "institution", "country": "Germany", "kind": "no", "gave": "No photographs, no research capacity.", "draft": "drafts/reply-german-gardens.md"},
-  {"date": "2026-08-12", "org": "Sovrintendenza Capitolina, Roma", "to_address": "info@museiincomuneroma.it", "type": "municipality", "country": "Italy", "kind": "answer", "gave": "Confirmed the Villa Torlonia cedar is officially censused and named the two competent offices.", "draft": "drafts/reply-roma-sovrintendenza.md"},
-  {"date": "2026-08-16", "org": "Haagse Hofjes (Rogier Dop)", "to_address": "info@haagsehofjes.nl", "type": "ngo", "country": "Netherlands", "kind": "wrong_target", "gave": "It is a biscuit company, not the almshouse foundation. Address and domain now on the do-not-contact list.", "draft": "drafts/reply-haagse-hofjes.md"},
-  {"date": "2026-08-16", "org": "Vrienden van Sonsbeek", "to_address": "info@vriendenvansonsbeek.nl", "type": "ngo", "country": "Netherlands", "kind": "referral", "gave": "Named Natuur Centrum Arnhem as the desk with the tree expertise; we wrote to them the same hour.", "draft": "drafts/reply-sonsbeek-en-natuurcentrum.md"},
-  {"date": "2026-08-16", "org": "Bomenstichting Den Haag (Clara Visser)", "to_address": "info@bomenstichtingdenhaag.nl", "type": "ngo", "country": "Netherlands", "kind": "data", "gave": "Four sources, including the city's own tree app: nearly 1,300 monumental trees in The Hague, where we publish five. Licence still open.", "draft": "drafts/reply-bomenstichting-den-haag.md"},
-  {"date": "2026-08-17", "org": "Bomenstichting Amsterdam (Hanna Hirsch)", "to_address": "mail@bomenstichtingamsterdam.nl", "type": "ngo", "country": "Netherlands", "kind": "correction", "gave": "Eight points. Two were errors on our pages (the Olifantsiep truck claim, the poplar's tallest-tree crown), both fixed. Also offered her foundation's centre route data and an introduction to Hans Kaljee, the city's tree consultant.", "draft": "drafts/reply-bomenstichting-amsterdam.md"},
-  {"date": "2026-08-22", "org": "Danish Dendrology Society (Peter Hoffmann, chairman)", "to_address": "dtr@dendron.dk", "type": "ngo", "country": "Denmark", "kind": "referral", "gave": "Forwarded our enquiry to Hans Erik Lund, who runs their Tree Register, and said he appreciates making Copenhagen's outstanding trees available to people who do not read Danish.", "draft": null}
+  {
+   "date": "2026-08-12",
+   "org": "DUIC / Oud-Utrecht (Piet van Dijck)",
+   "to_address": "redactie@duic.nl",
+   "type": "press",
+   "country": "Netherlands",
+   "kind": "referral",
+   "gave": "DUIC forwarded the pitch to the city's historical society, which is taking it up as an article in 'Op pad met Oud-Utrecht', planned for the first half of 2027.",
+   "draft": "drafts/reply-oud-utrecht.md"
+  },
+  {
+   "date": null,
+   "org": "Brabants Dagblad (Roel)",
+   "to_address": "stadsredactie@bd.nl",
+   "type": "press",
+   "country": "Netherlands",
+   "kind": "answer",
+   "gave": "Asked which register the Den Bosch trees came from; answered with the municipality's own 1,907-tree register.",
+   "draft": "drafts/reply-brabants-dagblad.md"
+  },
+  {
+   "date": null,
+   "org": "Omroep Brabant (journalist, by telephone)",
+   "to_address": null,
+   "type": "press",
+   "country": "Netherlands",
+   "kind": "correction",
+   "gave": "Stood at a Den Bosch tree and could not tell which one it was. That complaint is why all eleven Den Bosch trees now carry a recognition line.",
+   "draft": "drafts/reply-omroep-brabant.md"
+  },
+  {
+   "date": "2026-08-10",
+   "org": "Dias com Arvores (Paulo V. Araujo)",
+   "to_address": "dias.com.arvores@sapo.pt",
+   "type": "blog",
+   "country": "Portugal",
+   "kind": "data",
+   "gave": "Named the tree we were missing in Porto, the Ginkgo biloba of Parque das Virtudes, and on 08-11 gave permission for his ginkgo photograph. Back from holiday end of August and promised to look for more of his own photographs then.",
+   "draft": "drafts/reply-paulo.md",
+   "needs_reply": false
+  },
+  {
+   "date": null,
+   "org": "Fundacao Mata do Bucaco",
+   "to_address": "gabpresidencia@fmb.pt",
+   "type": "institution",
+   "country": "Portugal",
+   "kind": "answer",
+   "gave": "Answered after batch 002.",
+   "draft": "drafts/reply-bucaco.md"
+  },
+  {
+   "date": "2026-08-16",
+   "org": "Quercus, Nucleo Regional de Lisboa (Silvia Moutinho)",
+   "to_address": "lisboa@quercus.pt",
+   "type": "ngo",
+   "country": "Portugal",
+   "kind": "data",
+   "gave": "Congratulated the project and ASKED FOR COLLABORATION: to show the platform at one of their field events, or another joint action. That is an offer of distribution, which is the thing we have none of. Draft waiting in drafts/reply-quercus-lisboa.md.",
+   "draft": "drafts/reply-quercus-lisboa.md",
+   "needs_reply": true
+  },
+  {
+   "date": "2026-08-10",
+   "org": "Rock Creek Conservancy (Jon Pattee)",
+   "to_address": "info@rockcreekconservancy.org",
+   "type": "ngo",
+   "country": "United States",
+   "kind": "data",
+   "gave": "Those trees are not theirs and they have no photographs, but he named 'the park in front of the White House', which is Lafayette Square, where we publish nothing.",
+   "draft": "drafts/reply-rock-creek.md",
+   "needs_reply": false
+  },
+  {
+   "date": null,
+   "org": "Baumkunde.de (Wolfgang Schurmann)",
+   "to_address": "webmaster@baumkunde.de",
+   "type": "blog",
+   "country": "Germany",
+   "kind": "data",
+   "gave": "Offered links and a list of ten Munster trees, which would have been a new city for nothing.",
+   "draft": "drafts/reply-baumkunde.md"
+  },
+  {
+   "date": "2026-08-11",
+   "org": "Grun Berlin",
+   "to_address": "service@gruen-berlin.de",
+   "type": "municipality",
+   "country": "Germany",
+   "kind": "referral",
+   "gave": "Treptower Park is run by the Strassen- und Grunflachenamt Treptow-Kopenick, not by them. That district office has still not been written to.",
+   "draft": "drafts/reply-gruen-berlin.md",
+   "needs_reply": true
+  },
+  {
+   "date": "2026-08-10",
+   "org": "Bayerische Schlosserverwaltung (Susanne Gunther)",
+   "to_address": null,
+   "type": "institution",
+   "country": "Germany",
+   "kind": "no",
+   "gave": "No photographs, no research capacity.",
+   "draft": "drafts/reply-german-gardens.md",
+   "needs_reply": false,
+   "org_correction": "It is the Baureferat Gartenbau of the city of Munich, not the palace administration: Susanne Gunther is Sachgebietsleitung there. Recorded because our own note guessed wrong."
+  },
+  {
+   "date": "2026-08-12",
+   "org": "Sovrintendenza Capitolina, Roma",
+   "to_address": "info@museiincomuneroma.it",
+   "type": "municipality",
+   "country": "Italy",
+   "kind": "answer",
+   "gave": "The Villa Torlonia cedar is officially censused and on the ministry's own monumental-tree map. The Aranciera hackberry is NOT on that list and they cannot identify which specimen we mean without coordinates, which we hold. They named Ufficio Ville and Dipartimento Tutela Ambientale as the competent offices; neither has been written to.",
+   "draft": "drafts/reply-roma-sovrintendenza.md",
+   "needs_reply": true
+  },
+  {
+   "date": "2026-08-16",
+   "org": "Haagse Hofjes (Rogier Dop)",
+   "to_address": "info@haagsehofjes.nl",
+   "type": "ngo",
+   "country": "Netherlands",
+   "kind": "wrong_target",
+   "gave": "It is a biscuit company, not the almshouse foundation. Address and domain now on the do-not-contact list.",
+   "draft": "drafts/reply-haagse-hofjes.md"
+  },
+  {
+   "date": "2026-08-16",
+   "org": "Vrienden van Sonsbeek",
+   "to_address": "info@vriendenvansonsbeek.nl",
+   "type": "ngo",
+   "country": "Netherlands",
+   "kind": "referral",
+   "gave": "Named Natuur Centrum Arnhem as the desk with the tree expertise; we wrote to them the same hour.",
+   "draft": "drafts/reply-sonsbeek-en-natuurcentrum.md"
+  },
+  {
+   "date": "2026-08-16",
+   "org": "Bomenstichting Den Haag (Clara Visser)",
+   "to_address": "info@bomenstichtingdenhaag.nl",
+   "type": "ngo",
+   "country": "Netherlands",
+   "kind": "data",
+   "gave": "Four sources, including the city's own tree app: nearly 1,300 monumental trees in The Hague, where we publish five. Licence still open.",
+   "draft": "drafts/reply-bomenstichting-den-haag.md"
+  },
+  {
+   "date": "2026-08-17",
+   "org": "Bomenstichting Amsterdam (Hanna Hirsch)",
+   "to_address": "mail@bomenstichtingamsterdam.nl",
+   "type": "ngo",
+   "country": "Netherlands",
+   "kind": "correction",
+   "gave": "Eight points. Two were errors on our pages (the Olifantsiep truck claim, the poplar's tallest-tree crown), both fixed. Also offered her foundation's centre route data and an introduction to Hans Kaljee, the city's tree consultant.",
+   "draft": "drafts/reply-bomenstichting-amsterdam.md"
+  },
+  {
+   "date": "2026-08-22",
+   "org": "Danish Dendrology Society (Peter Hoffmann, chairman)",
+   "to_address": "dtr@dendron.dk",
+   "type": "ngo",
+   "country": "Denmark",
+   "kind": "referral",
+   "gave": "Forwarded our enquiry to Hans Erik Lund, who runs their Tree Register, and said he appreciates making Copenhagen's outstanding trees available to people who do not read Danish.",
+   "draft": null
+  },
+  {
+   "org": "Fundacao Mata do Bucaco (Rita Fernandes, via their biologist)",
+   "date": "2026-08-21",
+   "type": "institution",
+   "country": "Portugal",
+   "kind": "correction",
+   "needs_reply": true,
+   "to_address": "gabpresidencia@fmb.pt",
+   "gave": "Their biologist confirmed all our Bucaco trees are classified of public interest, sent the information plaques and photographs by WeTransfer, and told us to REMOVE the sequoias by the Ermida de Santo Elias because nobody can walk to them. Done the same day: the trees are out, nine girths and the heights are in, three photographs live. The reply asking written permission for the plaque texts and photographs is drafted and unsent.",
+   "draft": "drafts/reply-bucaco.md"
+  },
+  {
+   "org": "Woodland Trust, Ancient Tree Inventory (Kate Lewthwaite)",
+   "date": "2026-08-10",
+   "type": "ngo",
+   "country": "United Kingdom",
+   "kind": "answer",
+   "needs_reply": true,
+   "to_address": "ancienttreeinventory@woodlandtrust.org.uk",
+   "gave": "Asked three questions and said she would discuss with colleagues: what the app is, whether it is a private individual or an institution and whether it is funded, and above all HOW WE WOULD KEEP RECORDS UP TO DATE, which she names as their main reason for not sharing data externally, because trees die and photographs age. This is the 233,000-tree register and the thread has been open and unanswered for twelve days.",
+   "draft": "drafts/woodland-trust-reply.md"
+  },
+  {
+   "org": "Dumbarton Oaks Park Conservancy (Sara Carlson)",
+   "date": "2026-08-13",
+   "type": "ngo",
+   "country": "United States",
+   "kind": "answer",
+   "needs_reply": false,
+   "to_address": "info@dopark.org",
+   "gave": "Said they will come back to our questions. Nothing owed yet."
+  },
+  {
+   "org": "VSSG, Vereinigung Schweizerischer Stadtgartnereien",
+   "date": "2026-08-10",
+   "type": "ngo",
+   "country": "Switzerland",
+   "kind": "referral",
+   "needs_reply": false,
+   "to_address": "info@vssg.ch",
+   "gave": "Forwarded the Platzspitz question to Gruen Stadt Zuerich, with us in copy. Warm, and no move needed until they answer."
+  },
+  {
+   "org": "City of Sydney",
+   "date": "2026-08-16",
+   "type": "municipality",
+   "country": "Australia",
+   "kind": "auto",
+   "needs_reply": false,
+   "to_address": "council@cityofsydney.nsw.gov.au",
+   "gave": "Ten working days."
+  },
+  {
+   "org": "Asociacion Espanola de Arboricultura",
+   "date": "2026-08-16",
+   "type": "ngo",
+   "country": "Spain",
+   "kind": "auto",
+   "needs_reply": false,
+   "to_address": "hola@aearboricultura.org",
+   "gave": "Secretariat CLOSED for the summer from 1 to 31 August. Our mail landed in a shut office."
+  },
+  {
+   "org": "Asociacion Espanola de Parques y Jardines Publicos",
+   "date": "2026-08-16",
+   "type": "ngo",
+   "country": "Spain",
+   "kind": "auto",
+   "needs_reply": false,
+   "to_address": "secretaria@aepjp.org",
+   "gave": "Holiday closure, same as the AEA."
+  },
+  {
+   "org": "De Gelderlander (redactie)",
+   "date": "2026-08-08",
+   "type": "press",
+   "country": "Netherlands",
+   "kind": "auto",
+   "needs_reply": false,
+   "to_address": "redactie@gelderlander.nl",
+   "gave": "Boilerplate: the address is for the newsroom only and a press release may be used without notice. No human read it as a pitch."
+  },
+  {
+   "org": "Quinta da Regaleira",
+   "date": "2026-08-09",
+   "type": "institution",
+   "country": "Portugal",
+   "kind": "auto",
+   "needs_reply": false,
+   "to_address": "info.regaleira@cultursintra.pt",
+   "gave": "Ticket-office autoreply."
+  }
  ]
 }

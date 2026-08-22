@@ -1,0 +1,280 @@
+{
+ "_note": "Dutch overlay for Amsterdam, hand-written 2026-08-22. Text only: every coordinate, photo, licence, best_time and walk stays in data/cities/amsterdam.json. The search term is 'monumentale bomen', which is what Dutch readers type and what the Bomenstichting itself uses; 'oude bomen' is a translation, not a query. Nothing here is researched: every fact, age, hedge and dispute comes from the English file and is rendered, never sharpened.",
+ "city": "Amsterdam",
+ "title": "Monumentale bomen in Amsterdam: de 31 mooiste",
+ "meta_description": "De oudste boom van Amsterdam is een zomereik van 275 jaar in Artis. Plus dertig andere monumentale bomen, van een cycadee tot de hoogste iep.",
+ "intro": "De oudste boom van Amsterdam is 275 jaar oud. Bescheiden naast de duizendjarige taxussen van Londen, en dat verschil zegt iets over de stad: gebouwd op drooggelegd veen, keer op keer opnieuw opgetrokken na brand en oorlog. Wat overbleef, bleef met opzet staan: achter een dierentuinhek, achter kasglas of achter een grachtentuinmuur. Amsterdam werd bovendien een van de grote iepensteden van Europa, en het bereik loopt van de laatste van dertig iepen op het Stationsplein tot de hoogste boom van de stad, een iep van 35 meter op een universiteitsbinnenplaats. Eenentwintig van de eenendertig zijn gratis.",
+ "question_title": "Wat is de oudste boom van Amsterdam? (275 jaar)",
+ "question_meta": "De Heimanseik in Artis, een zomereik van ongeveer 275 jaar, is de oudste boom van Amsterdam. Zijn verhaal, de plek en dertig andere bomen.",
+ "question_answer": "De oudste boom van Amsterdam is de Heimanseik, een zomereik in Artis van naar schatting 275 jaar oud, geworteld sinds ongeveer 1750, decennia voordat de dierentuin er in 1838 omheen werd opgericht. Hij staat bij het chimpanseeverblijf en is te bezoeken met een kaartje voor Artis, op een paar minuten lopen van tramhalte Artis.",
+ "question_context": "Amsterdam staat op veen en is keer op keer opnieuw opgebouwd na branden, overstromingen en ziekten, en daarom heeft de stad niets in de buurt van de duizendjarige taxussen van Londen of de vierhonderd jaar oude acacia's van Parijs. De oudste bevestigde boom, de Heimanseik, dateert van rond 1750 en dankt zijn voortbestaan aan een toevalligheid van de plattegrond: de eik was al volgroeid toen Artis er in 1838 omheen werd aangelegd, dus de dierentuin groeide om de boom heen in plaats van andersom. Hij is genoemd naar Eli Heimans, de veldbioloog die er in 1903 over schreef en hielp het idee te verspreiden dat gewone stadsnatuur nauwkeurige aandacht verdient. In de stam groeien inmiddels twee zwammen, niet ongewoon bij eiken van deze leeftijd, en boomverzorgers inspecteren hem elk jaar om te beoordelen hoelang hij nog veilig kan blijven staan. Zomereiken kunnen zeven eeuwen worden, dus 275 jaar is bescheiden voor de soort, ook al is het een record voor de stad. De nummers twee en drie van Amsterdam zijn vooral iepen en vleugelnoten van 100 tot 175 jaar, overlevers van de iepziekte en van stadsvernieuwing in plaats van van eeuwen met rust gelaten worden. Zo kom je er: tram 14 naar Artis, en dan een klein stukje lopen naar de eik bij het chimpanseeverblijf.",
+ "faq": [
+  {
+   "q": "Wat is de oudste boom van Amsterdam?",
+   "a": "De Heimanseik, een zomereik in Artis van naar schatting 275 jaar oud. Hij is decennia ouder dan de dierentuin zelf en genoemd naar de veldbioloog Eli Heimans, die er in 1903 over schreef."
+  },
+  {
+   "q": "Zijn de monumentale bomen van Amsterdam gratis te bezoeken?",
+   "a": "Eenentwintig van de eenendertig op deze lijst zijn gratis: ze staan in openbare parken, op pleinen, langs straten en op een universiteitsbinnenplaats. Voor de andere tien heb je een kaartje nodig: de Heimanseik en nog twee bomen in Artis, zes in de Hortus Botanicus en een rode beuk in de tuin van Museum Van Loon."
+  },
+  {
+   "q": "Waarom heeft Amsterdam geen oudere bomen zoals Londen of Parijs?",
+   "a": "Amsterdam is gebouwd op drooggelegd veen en is telkens opnieuw opgebouwd na branden, overstromingen en ziekten, en dan vooral de iepziekte. Bijna nergens in de stad blijft een boom langer dan twee eeuwen ongestoord staan."
+  },
+  {
+   "q": "Waarom staan er in Amsterdam zoveel Kaukasische vleugelnoten?",
+   "a": "Drie afzonderlijke groepen, in het Wertheimpark, op het Amstelveld en in de tuin van het Rijksmuseum, zijn alle drie oud geworden binnen beschermde openbare tuinen. Als volgroeid exemplaar is de soort elders in Nederland nog altijd ongewoon."
+  }
+ ],
+ "strings_note": "Per-tree fields: name, species (Dutch common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes.",
+ "trees": {
+  "ams_001": {
+   "name": "De Heimanseik",
+   "species": "Zomereik (Quercus robur)",
+   "age_estimate": "275 jaar",
+   "access": "Betaalde toegang, onderdeel van Artis",
+   "transport": "Tram 14, halte Artis, direct ernaast",
+   "story": "De oudste boom van Amsterdam stond de eerste negentig jaar in zijn eentje. Deze zomereik wortelde rond 1750, bijna een eeuw voordat Artis bestond, op een stuk grond waar later een dierentuin omheen werd gebouwd in plaats van andersom. Hij is de enige boom in het park die ouder is dan de instelling zelf, een echt overblijfsel met een bezoekersbandje dat hij nooit heeft aangevraagd. Orang-oetans gebruikten zijn onderste takken ooit als klimrek tijdens het buitenspelen, tot verzorgers besloten dat een eik van 275 jaar recht had op rust van slingerende primaten. Hij is genoemd naar Eli Heimans, de onderwijzer en veldbioloog die er in 1903 over schreef en de onopvallende stadsnatuur tot een onderwerp maakte dat op zichzelf bewondering verdiende. Zijn naam bleef aan de boom plakken zoals klimop aan een muur. In de stam groeien inmiddels twee zwammen, gewoon genoeg bij eiken van deze leeftijd, en boomverzorgers controleren hem elk jaar om te beoordelen hoelang de stam nog te vertrouwen is. Zomereiken kunnen zeven eeuwen worden, dus met 275 jaar is deze er strikt genomen nog jong. De Amsterdamse bodem laat zelden iets zo ver komen."
+  },
+  "ams_002": {
+   "name": "De platanen van het Leidsebosje",
+   "species": "Gewone plataan (Platanus x acerifolia)",
+   "age_estimate": "165 jaar",
+   "access": "Gratis, openbaar park",
+   "transport": "Tram 1/2/12, Leidseplein, 2 minuten lopen",
+   "story": "Toen de stad in 1925 een brug wilde verbreden, verplaatste Amsterdam twee volgroeide platanen in plaats van ze te kappen. Buurtbewoners bij het Leidseplein hadden zo hard geprotesteerd dat ingenieurs de twee stammen op vlotten lieten drijven en ze een paar meter opzij takelden, wortelkluit en al, om ruimte te maken voor een nieuwe rotonde. Een eeuw later hebben beide bomen hun stamomtrek meer dan verdubbeld: elk meet nu ruim zeven meter, de dikste stammen van de stad. Op een van de twee zit sinds 1989 een houten houthakkertje, gesneden door een onbekende maker, dat de tak lijkt af te zagen waar het zelf op zit. Toen die tak rond 2020 echt weg moest, verhuisden de stadstuinlieden het beeldje naar de andere boom in plaats van de grap werkelijkheid te laten worden. Amsterdam heeft het tweetal inmiddels voorgedragen als rijksmonument, een ongebruikelijke eer voor wat tenslotte gewoon twee straatbomen zijn die ooit in de weg stonden bij de verkeersplanning. Ze staan twee minuten lopen van de trams en taxi's van het Leidseplein, en trekken zich van allebei niets aan."
+  },
+  "ams_003": {
+   "name": "De populier van het Vondelpark",
+   "species": "Canadapopulier (Populus x canadensis 'Serotina')",
+   "age_estimate": "145 jaar",
+   "access": "Gratis, openbaar park, dag en nacht open",
+   "transport": "Tram 2, Emmastraat, of tram 3/12, Van Baerlestraat, daarna 5 tot 10 minuten het park in",
+   "story": "Een van de hoogste bomen van Amsterdam staat langs een fietspad, niet in een bos. De bronnen zijn het oneens over wanneer deze Canadapopulier precies de grond in ging, ergens tussen de aanleg van het park rond 1870 en een expliciet gedocumenteerd 1885, maar hij heeft hoe dan ook zo'n 38,5 meter bereikt, hoger dan de meeste gebouwen van Oud-Zuid eromheen. Zijn stam meet 617 centimeter, de derde van de stad, achter alleen de twee platanen van het Leidsebosje. Populieren groeien snel en worden voor een boom niet oud, zelden meer dan 150 jaar, dus deze zit dichter bij het einde van zijn loopbaan dan bij het begin, en anders dan een eik krijgt hij geen eeuwen meer cadeau. De eigen bomengids van het Vondelpark noemt juist deze populier apart en onderscheidt hem van een even oude es elders in het park die nooit in de buurt van dit formaat kwam. Of er iets hogers in de stad staat, is een open vraag: de iep bij de Oudemanhuispoort is de gebruikelijke concurrent en van die boom hebben we geen meting gevonden die we vertrouwen, dus weet jij het, laat het ons weten. Fietsers en hardlopers gaan er dagelijks onderdoor op de Van Eeghenlaan zonder te merken dat een van de hoogste bomen van deze stad van grachten en gevels een populier is die niemand als monument heeft geplant."
+  },
+  "ams_004": {
+   "name": "De vleugelnoot van het Wertheimpark",
+   "species": "Kaukasische vleugelnoot (Pterocarya fraxinifolia)",
+   "age_estimate": "125 jaar",
+   "access": "Gratis, openbaar park",
+   "transport": "Tram 14, halte Artis, 5 minuten lopen",
+   "story": "Deze boom heeft de naam van zijn eigen park twee keer overleefd. Het Wertheimpark werd in 1812 aangelegd en in 1898 genoemd naar de Joodse filantroop Abraham Carel Wertheim, een jaar na zijn dood. In augustus 1942 hernoemde de door de nazi's benoemde burgemeester het tot Parktuin om die band uit te wissen, en die oorlogsnaam hield stand tot de bevrijding in mei 1945 de oude terugbracht. De vleugelnoot, een Kaukasische soort met brede horizontale takken die tot plankachtige ribben verdikken om hun eigen gewicht te dragen, was toen dat allemaal gebeurde al veertig jaar oud. Zijn kroon spant nu 24 meter in een park van nog geen driekwart hectare, waar zo'n vijftien bomen van meer dan een eeuw oud staan. Sinds 1993 staat in hetzelfde park ook Gebroken Spiegels, het Amsterdamse monument voor de Nederlandse slachtoffers van de Holocaust, en de jaarlijkse herdenking vindt plaats binnen het zicht van deze kroon. De gemeente wees de vleugelnoot in 2002 aan als monumentale boom, een kleiner maar even bewust benoemen dan de naamsveranderingen die het park zelf doormaakte."
+  },
+  "ams_005": {
+   "name": "De broodboom van de Hortus",
+   "species": "Broodboom (Encephalartos altensteinii)",
+   "age_estimate": "300 jaar",
+   "access": "Betaalde toegang, kaartje voor de Hortus Botanicus nodig",
+   "transport": "Tram 14, halte Artis, direct voor de deur",
+   "story": "Deze plant groeide al in Zuid-Afrika toen de Amsterdamse Hortus Botanicus hem in 1850 kocht, en sindsdien groeien ze samen door. Het is een broodboom uit de Oost-Kaap, tegenwoordig geschat op zo'n 300 jaar oud, die de 175 jaar dat hij hier woont in een pot onder glas heeft doorgebracht, in de Palmenkas van de tuin. Cycadeeën als groep zijn in 300 miljoen jaar nauwelijks veranderd en overleefden twee massa-uitstervingen die het grootste deel van het plantenrijk om hen heen wegvaagden, waardoor drie eeuwen van één exemplaar bijna kort lijken. Tegenover hem staat een jonger vrouwelijk exemplaar van ongeveer 200 jaar, en de medewerkers van de Hortus bestuiven de twee elk jaar met de hand, omdat de wespen en kevers die cycadeeën in het wild bestuiven niet in een Amsterdamse kas leven. Een paar meter verderop in dezelfde kas staat een Encephalartos woodii, een cycadee die sinds het begin van de twintigste eeuw in het wild is uitgestorven: elke plant van die soort die vandaag nog ergens leeft, is een kloon van één exemplaar dat in 1895 in Zuid-Afrika werd gevonden. De Hortus kweekt hier sinds 1638 zeldzame en lastige planten, en deze broodboom maakt daar nu bijna de halve geschiedenis van de tuin deel van uit."
+  },
+  "ams_006": {
+   "name": "De Olifantsiep",
+   "species": "Hollandse iep, cultivar 'Belgica' (Ulmus x hollandica 'Belgica')",
+   "age_estimate": "115 jaar",
+   "access": "Gratis, openbare straat",
+   "transport": "Tram 14, omgeving Zeeburgerdijk",
+   "story": "Een vrachtwagen raakte een paar jaar geleden de olifantstak van deze iep, en die tak zit er nog, nu gedragen door een stut die de stad eronder zette om te voorkomen dat hij onder zijn eigen gewicht afscheurt. Amsterdam plantte deze tweestammige iep ergens tussen 1900 en 1915 op de Zeeburgerdijk, volgens gemeentelijke registraties en die van boombeschermers, die elkaar tegenspreken, en zijn bijnaam komt van een zware lage tak waarvan vroege buurtbewoners vonden dat hij op een slurf leek die naar de grond reikte. De stad heeft tienduizenden iepen, per hoofd van de bevolking meer dan bijna waar ook in Europa, een erfenis van het planten van iepen langs de grachten om hun tolerantie voor de vervuilde, natte bodem die een eeuw geleden bij open riolen hoorde. De iepziekte, die in de jaren twintig in Nederland voor het eerst werd vastgesteld en benoemd, vaagde in de decennia daarna enorme aantallen Europese iepen weg, en de Amsterdamse verzameling overleefde vooral dankzij een agressief bestrijdings- en veredelingsprogramma dat al tientallen jaren loopt en nog altijd doorgaat. De Olifantsiep, met een stamomtrek richting vijf meter, heeft een ziekte-epidemie overleefd, die aanrijding en de zware storm van januari 2018, en loopt elk voorjaar weer uit achter een laag hekje waar iedereen tegenaan mag leunen."
+  },
+  "ams_007": {
+   "name": "De Kathedraal van Bomen in de Lomanstraat",
+   "species": "Gewone plataan (Platanus x acerifolia)",
+   "age_estimate": "110 jaar",
+   "access": "Gratis, openbare straat",
+   "transport": "Tram 2, Amstelveenseweg, 5 tot 10 minuten lopen",
+   "story": "Niemand heeft de bomentunnel van de Lomanstraat ontworpen. Toen de straat begin twintigste eeuw werd beplant als onderdeel van Plan Zuid, de uitbreiding van de stad naar het zuiden van architect Hendrik Petrus Berlage, deden de bomen aan beide trottoirs precies wat bomen tussen hoge woonblokken doen: ze helden naar het midden van de straat, op zoek naar het licht boven de gebouwen. Een eeuw van dat overhellen heeft hun kronen boven het wegdek tot één doorlopende groene tunnel in elkaar gehaakt, en de straat is nu een van de meest gefotografeerde van Amsterdam-Zuid, door mensen die eronder gelopen hebben de kathedraal van bomen gedoopt. Een hardnekkig buurtverhaal wil dat de bomen de houtnood van de oorlogswinter overleefden omdat er een Duits kantoor in de straat zat, wat het soort detail is dat te netjes klinkt om te kloppen en dat waarschijnlijk ook niet doet. Wat wel te controleren valt, is eenvoudiger: geef gewone straatbomen tientallen jaren en een smalle strook open lucht, en ze vinden vanzelf een manier om die te sluiten. Niemand in Amsterdam-Zuid hoefde er een kathedraal voor te planten. Die groeide er gewoon."
+  },
+  "ams_008": {
+   "name": "De olijfwilg van de Amstelkade",
+   "species": "Olijfwilg, waarschijnlijk smalbladige olijfwilg (Elaeagnus angustifolia)",
+   "age_estimate": "78 jaar",
+   "access": "Gratis, openbare straat",
+   "transport": "Tram 3 of 4, omgeving Amsteldijk/Rivierenbuurt",
+   "story": "De naam klopt twee keer niet: dit is geen wilg en met olijven heeft hij niets te maken. De olijfwilg aan de Amstelkade is een Elaeagnus, een geslacht van struiken die boom kunnen worden, met zilverachtig, wilgvormig blad en kleine geurende bloemen die uitrijpen tot vruchten die op minuscule olijven lijken, vandaar een naam die op beide punten misleidt. Geplant in 1948, drie jaar nadat Nederland uit de bezetting kwam, is hij langs het Amstelkanaal uitgegroeid tot wat de bomeninventarisatie van de stad zelf een exemplaar noemt dat in Nederland uniek is door de combinatie van formaat en leeftijd. Nergens anders in het land is een vergelijkbare gedocumenteerd. Met nog geen 80 jaar is hij met afstand de jongste boom op deze lijst, opgenomen niet om zijn leeftijd maar omdat Elaeagnus zelden de decennia ongestoorde groei krijgt die nodig zijn om boomformaat te bereiken: de meeste exemplaren blijven struik in een tuin in plaats van langs een openbare straat te staan. Het Amsterdamse register van bijzondere bomen rekent hem tot de meest kenmerkende van de stad, een stille onderscheiding voor een boom die de meeste voorbijgangers voor een gewone wilg zouden aanzien, als ze hem al opmerken."
+  },
+  "ams_009": {
+   "name": "De vleugelnoten van het Amstelveld",
+   "species": "Kaukasische vleugelnoot (Pterocarya fraxinifolia)",
+   "age_estimate": "96 jaar",
+   "access": "Gratis, openbaar plein",
+   "transport": "Tram 4, Prinsengracht of Frederiksplein, paar minuten lopen",
+   "story": "In 2006 wilde de gemeente veertien van deze bomen kappen, en verloor. Het stadsdeel gaf die zomer een kapvergunning af voor ruim een dozijn van de 46 Kaukasische vleugelnoten op het plein, onderdeel van een herinrichtingsplan onder een verouderde bomenverordening. Twee bewoners dienden bezwaar in, daarna een gang naar de rechter, en na een uitspraak van de rechtbank in het voordeel van de gemeente uiteindelijk een beroep bij de Raad van State. Zolang de zaak liep werd er geen boom gekapt, en in 2010 eindigde het geschil met een plein dat volledig opnieuw was ingericht rond de overgebleven vleugelnoten in plaats van in hun plaats. Om de drie oudste en waardevolste exemplaren te beschermen tegen het voet- en karrenverkeer van de herbestrating legden ingenieurs een ondergronds draagsysteem aan dat verdichting van de grond rond hun wortels tegengaat, een opvallend dure toegeving voor een handvol straatbomen. De oppervlakkige wortels duwen de stoeptegels rond het plein nog steeds regelmatig omhoog, wat inmiddels een bekend kenmerk is van een wandeling over het Amstelveld en geen gebrek. De markt die hier op maandag staat, zet zijn kramen op onder precies de kroon die de stad ooit wilde weghalen."
+  },
+  "ams_010": {
+   "name": "De vleugelnoot van het Rijksmuseum",
+   "species": "Kaukasische vleugelnoot (Pterocarya fraxinifolia)",
+   "age_estimate": "119 jaar",
+   "access": "Gratis, tuin van het Rijksmuseum, museumkaartje niet nodig",
+   "transport": "Tram 2, 5 of 12, halte Rijksmuseum/Museumplein, direct ernaast",
+   "story": "De architect van het Rijksmuseum plantte deze boom in zijn eigen tuinontwerp, en de boom overleefde elke verbouwing die het museum daarna doormaakte. Pierre Cuypers, die ook het gebouw zelf ontwierp, legde de omliggende tuinen tussen 1884 en 1916 aan in uitgesproken historische stijlen, neorenaissance parterres naast een wilde landschapstuin, en zette rond 1907 een Kaukasische vleugelnoot bij de directeurswoning in de zuidoosthoek. Bij een inventarisatie in 2014 stond de boom ruim 19 meter hoog met een stam van meer dan vier meter omtrek. Toen het museum tien jaar dicht ging voor de renovatie die in 2013 werd afgerond, ontwierp landschapsbureau Copijn de tuinen helemaal opnieuw en had het terrein leeggemaakt kunnen worden voor iets anders. In plaats daarvan bleef de vleugelnoot staan en werd er omheen gebouwd, een van de weinige volgroeide bomen die het hele project doorstond. Als volwassen exemplaar is de vleugelnoot in Nederland nog altijd ongewoon, wat deze boom in hetzelfde kleine gezelschap plaatst als die in het Wertheimpark en op het Amstelveld aan de andere kant van de stad: drie afzonderlijke groepen van dezelfde soort die alle drie oud werden binnen de openbare tuinen van Amsterdam in plaats van te wijken voor iets nieuwers."
+  },
+  "ams_011": {
+   "name": "De boomhazelaar van de Hortus",
+   "species": "Boomhazelaar (Corylus colurna)",
+   "age_estimate": "ongeveer 230 jaar",
+   "access": "Betaalde toegang, kaartje voor de Hortus Botanicus nodig",
+   "transport": "Tram 14, halte Artis, direct voor de deur (dezelfde halte als de al gepubliceerde broodboom van de Hortus, ams_005)",
+   "story": "De Bomenstichting noemt dit de oudste en dikste boomhazelaar van Nederland: geplant in 1795, en vandaag drie meter in omtrek. Daarmee is hij twee eeuwen jonger dan de Hortus zelf, die hier sinds 1638 zeldzame en lastige planten kweekt, maar ouder dan bijna alles wat er verder in de tuin staat. De boomhazelaar komt oorspronkelijk uit Klein-Azië en de Balkan, een verwant van de kleine hazelaar die de noten levert, maar dan gebouwd op eikenschaal: piramidaal, breed van kroon, in staat om veertig meter te halen. Deze bloeit in januari, wanneer zijn mannelijke katjes hangen en stuifmeel loslaten terwijl de rest van de tuin er kaal bij staat, een kleine voorstelling waar bijna niemand een bezoek op plant. Het plantjaar 1795 en de stamomtrek van 300 centimeter komen allebei uit de administratie van de tuin zelf en niet uit een onafhankelijke opname, dus lees het cijfer als de eigen claim van de Hortus en niet als een vonnis. Hij groeit een paar minuten van de broodboom van de tuin, zelf richting drie eeuwen oud, waardoor twee van de oudste levende wezens van Amsterdam nu dezelfde hoek van de Plantage delen. Toegang kost een kaartje voor de Hortus, zoals altijd: zeldzame planten zijn hier nooit gratis te zien geweest."
+  },
+  "ams_012": {
+   "name": "Het Perzisch ijzerhout van Artis",
+   "species": "Perzisch ijzerhout (Parrotia persica)",
+   "age_estimate": "ongeveer 116 jaar",
+   "access": "Betaalde toegang, onderdeel van Artis",
+   "transport": "Tram 14, halte Artis, direct ernaast",
+   "story": "Artis heeft meer dan achthonderd bomen in tweehonderd soorten, en de man die ervoor zorgt kiest deze. Jan de Jong, boomspecialist van het park, noemt het Perzisch ijzerhout zijn lievelingsboom en omschrijft hem als warrig en grillig, wat nog te bescheiden is. De soort doet iets wat weinig bomen doen: takken die elkaar tijdens de groei raken, vergroeien met elkaar, zodat een oud ijzerhout één geknoopt bouwwerk wordt in plaats van een stam met takken eraan. De bast schilfert in platen af zoals bij een plataan en laat vlekken grijs, groen en bruin achter. Het Amsterdamse register van beschermde bomen voert hem als N1763, geplant in 1910, stam 205 centimeter in omtrek. Daarmee is hij amper een eeuw oud, jong naast de eik dertig meter verderop, die rond 1750 wortelde en de oudste boom van de stad is. De twee liggen op korte loopafstand van elkaar, langs de reuzenschildpadden, en samen leggen ze uit wat Artis is: een dierentuin die in 1838 werd aangelegd door een genootschap dat planten net zo serieus verzamelde als dieren, met de bomen als onderdeel van het plan en niet als decor dat er later bij kwam. Laat in het najaar draagt deze rood, oranje en paars tegelijk in dezelfde kroon. Toegang is een kaartje voor Artis."
+  },
+  "ams_013": {
+   "name": "De kustmammoetboom van Artis",
+   "species": "Kustmammoetboom (Sequoia sempervirens)",
+   "age_estimate": "ongeveer 106 jaar",
+   "access": "Betaalde toegang, onderdeel van Artis",
+   "transport": "Tram 14, halte Artis, direct ernaast",
+   "story": "De hoogste boomsoort ter wereld heeft een exemplaar staan naast een planetarium in het centrum van Amsterdam. Kustmammoetbomen gaan in de mistgordel van Noord-Californië over de 110 meter heen, waar ze een flink deel van hun water rechtstreeks uit de zeemist halen. Deze staat zo'n negenduizend kilometer daarvandaan, op drooggelegd veen, op een breedtegraad die Californië nooit haalt. Het Amsterdamse register van beschermde bomen voert hem als N5627, geplant circa 1920, en die circa is de slag om de arm van het register en niet die van ons. De stam meet 271 centimeter. Na een eeuw is hij nog jong: kustmammoetbomen halen routinematig meer dan duizend jaar, en de oudst bekende zijn ruim het dubbele. Waar de vorm de soort niet verraadt, doet de bast dat wel. Die is dik, vezelig en roodachtig, zacht genoeg om je duim in te drukken, en zorgt ervoor dat de boom de branden afschudt die op een Californische bosbodem al het andere opruimen. Hier is geen vuur en geen mist, alleen een Nederlandse dierentuin die in de negentiende eeuw exoten begon te planten en ze daarna hield. Hij is groenblijvend, dus geen maand laat hem beter zien dan een andere. Het Perzisch ijzerhout en de Heimanseik, de oudste boom van Amsterdam, liggen allebei een paar minuten verderop op dezelfde wandeling. Toegang is een kaartje voor Artis."
+  },
+  "ams_014": {
+   "name": "De gedraaide trompetboom van de Hortus",
+   "species": "Trompetboom (Catalpa bignonioides)",
+   "age_estimate": "ongeveer 116 jaar",
+   "access": "Betaalde toegang, kaartje voor de Hortus Botanicus nodig",
+   "transport": "Tram 14, halte Artis, direct voor de deur",
+   "story": "De stam draait terwijl hij omhoog gaat, een trage kurkentrekker die de landelijke gids voor de monumentale bomen van Amsterdam aanwijst als de reden om stil te staan. Dit is een trompetboom, van huis uit uit een klein gebied in het zuidoosten van de Verenigde Staten en in Europese tuinen veel algemener dan in zijn eigen areaal. Het stadsregister heeft hem als N1776, geplant in 1910, stam 318 centimeter in omtrek; de gids van de Bomenstichting zet de aanplant ergens tussen 1910 en 1920 en meet dezelfde drie meter, en dichter bij elkaar komen twee onafhankelijke bronnen zelden. Het Nederlands heeft twee namen voor de soort en allebei zijn ze letterlijk: trompetboom, naar de crème met gele bloemen met gespikkelde kelen die hem in juli bedekken, en bonenboom, naar de lange dunne zaadpeulen die de winter door blijven hangen en rammelen. De bladeren hebben het formaat van een gespreide hand. Dezelfde gids voegt eraan toe dat catalpa's muggen en vliegen op afstand houden, wat voor een tuin aan de rand van de Plantagegrachten niet de slechtste eigenschap is. De Hortus Botanicus kweekt op deze grond al sinds 1638, dus de trompetboom kwam toen de tuin al 270 jaar bestond en geldt nog altijd als een van de jongere bewoners. Toegang vraagt een kaartje voor de Hortus."
+  },
+  "ams_015": {
+   "name": "De hickory van de Hortus",
+   "species": "Hickory (Carya laciniosa)",
+   "age_estimate": "ongeveer 76 tot 114 jaar (bronnen zijn het oneens over het plantjaar)",
+   "access": "Betaalde toegang, kaartje voor de Hortus Botanicus nodig",
+   "transport": "Tram 14, halte Artis, direct voor de deur",
+   "story": "De Bomenstichting noemt dit de oudste Carya laciniosa van Nederland. De gemeente Amsterdam noteert hem als geplant in 1950, wat dat onmogelijk zou maken. Beide beschrijven dezelfde boom in dezelfde hoek van de Hortus, en ze verschillen achtendertig jaar: de gids van de Bomenstichting geeft 1912, het gemeentelijke register N1768 geeft 1950, met een stam van 251 centimeter omtrek erbij. Niets wat beschikbaar is beslecht het, dus de eerlijke leeftijd ligt ergens tussen de vijfenzeventig en honderdvijftien jaar, en de claim op de oudste van het land houdt alleen stand onder de vroegste datum. Over de soort bestaat geen twijfel, en die komt hier nauwelijks voor. Carya laciniosa komt uit de natte rivierdalen van het Amerikaanse Midwesten, is een naaste verwant van de pecan, en laat ronde noten vallen in een dikke groene bolster die giftig oogt en dat niet is: de pit is zoet en kost echt moeite om bij te komen. De Engelse naam shellbark slaat op de bast, die in lange krullende platen van de stam loskomt en aan beide uiteinden vastzit. Wrijf een blad fijn en het ruikt scherp naar walnoot. Een paar paden verderop staat een boomhazelaar die dezelfde stichting de oudste en dikste van het land noemt, dus deze hoek van de Plantage heeft de gewoonte records te houden die hij niet helemaal kan bewijzen. Toegang vraagt een kaartje voor de Hortus."
+  },
+  "ams_016": {
+   "name": "De Turner-eik van de Hortus",
+   "species": "Turner-eik (Quercus x turneri)",
+   "age_estimate": "ongeveer 131 tot 161 jaar (bronnen zijn het oneens over het plantjaar)",
+   "access": "Betaalde toegang, kaartje voor de Hortus Botanicus nodig",
+   "transport": "Tram 14, halte Artis, direct voor de deur",
+   "story": "Deze eik laat zijn blad in de herfst niet vallen. Hij houdt het vast, donker en leerachtig, de hele Nederlandse winter door, en laat het pas in het voorjaar los wanneer de nieuwe groei het oude blad fysiek van de twijg af duwt. De Turner-eik is een hybride die eind achttiende eeuw in een Engelse kwekerij werd opgekweekt, een kruising tussen de groenblijvende steeneik van de Middellandse Zee en de zomereik van Noord-Europa, en hij nam van beide ouders de helft van zijn habitus over. Hij groeit langzaam en stopt rond de tien meter, wat voor een eik helemaal niets is. De eikels hangen aan lange stelen. De entplaats is nog zichtbaar, zo'n dertig centimeter boven de grond, de naad waar een kweker deze boom aan andermans wortels heeft gezet. Wanneer dat gebeurde, is omstreden. Het Amsterdamse register van beschermde bomen zegt 1865; de gids van de Bomenstichting voor de monumentale bomen van de stad zegt 1895. Dertig jaar verschil, dezelfde boom, en geen van beide laat zien hoe ze eraan komen, dus lees de leeftijd als ergens tussen de 130 en 160 jaar. Hoe dan ook stond hij hier al een eeuw voordat de Universiteit van Amsterdam de tuin in 1987 losliet en een particuliere stichting hem overnam, wat verklaart waarom het register een private eigenaar noemt en niet de stad. Januari is de maand om te komen, wanneer de rest van de tuin kaal is en deze niet. Toegang vraagt een kaartje voor de Hortus."
+  },
+  "ams_017": {
+   "name": "De ginkgo van de Hortus",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "ongeveer 96 tot 136 jaar (bronnen spreken elkaar tegen, en welk exemplaar precies bedoeld wordt is onzeker)",
+   "access": "Betaalde toegang, kaartje voor de Hortus Botanicus nodig",
+   "transport": "Tram 14, halte Artis, direct voor de deur",
+   "story": "De ginkgo is de enige overgebleven soort van een hele orde planten, een lijn die al oud was toen de eerste dinosauriërs verschenen en die hen zesenzestig miljoen jaar heeft overleefd. Al het andere aan die tak is sinds het Jura fossiel. Welke stam dit item precies aanwijst, is minder zeker dan de biologie. De gids van de Bomenstichting noteert een monumentale ginkgo in de Hortus, geplant tussen 1890 en 1900. Het Amsterdamse register zelf vermeldt hier twee ginkgo's, vijftien meter uit elkaar, allebei gedateerd op 1930. De pin ligt op de dikste van het paar, N1771, met 321 centimeter omtrek, omdat stamomtrek een betere maat voor leeftijd is dan een registerdatum, maar niets bewijst tot nu toe dat beide bronnen dezelfde boom beschrijven. Lees de locatie dus als deze hoek van de tuin en niet als één exacte stam, en de leeftijd als ergens tussen de vijfennegentig en honderdvijfendertig jaar. Kom in november. Ginkgobladeren zijn kleine stijve waaiers, ze worden vlak en gelijkmatig goudgeel in plaats van het gevlekte rood van alles eromheen, en daarna laat de boom ze bijna allemaal binnen een paar dagen los, zodat de grond eronder in één keer geel kleurt. Toegang vraagt een kaartje voor de Hortus."
+  },
+  "ams_018": {
+   "name": "De westelijke plataan van het Wertheimpark",
+   "species": "Gewone plataan (Platanus x acerifolia)",
+   "age_estimate": "ongeveer 125 jaar",
+   "access": "Gratis, openbaar park (Wertheimpark)",
+   "transport": "Tram 14, halte Artis, ongeveer 5 minuten lopen",
+   "story": "Vijf meter stam in honderdvijfentwintig jaar is snel werk. Het Amsterdamse register van bijzondere bomen zet de aanplant van deze plataan op 1900 en de omtrek op 500 centimeter; de Bomenstichting, die hetzelfde park opnam voor haar eigen wandelgids langs de monumentale bomen van de stad, beschrijft hier een plataan met een stam van bijna vijf meter. Twee instellingen, één meting, geen discussie.\n\nPlatanen groeien hard als ze jong zijn, en deze had er goede grond voor. Het Wertheimpark werd in 1812 aangelegd als het eerste openbare park van Amsterdam, aan de rand van de Plantage, een buurt die de stad ruim een eeuw eerder had bestemd voor tuinen in plaats van woningen. Het park is klein gebleven, nog geen driekwart hectare, waardoor er zo'n vijftien bomen van meer dan een eeuw oud binnen twee minuten lopen staan.\n\nDit is het exemplaar aan de westkant, aan de zijde van de Plantage Parklaan, op korte afstand van het Auschwitzmonument van Jan Wolkers uit 1977: gebroken spiegels in de grond, zodat de lucht gebarsten terugkomt. De plataan was al veertig jaar oud toen de deportaties begonnen waar dat monument een antwoord op is.\n\nDe stad heeft hem geregistreerd als beschermwaardige houtopstand, de vaste beschermingsklasse en niet de voorlopige. Dat garandeert niets over de gezondheid van een boom, maar het betekent wel dat er iemand met een klembord terugkomt."
+  },
+  "ams_019": {
+   "name": "De oosterse plataan van het Wertheimpark",
+   "species": "Oosterse plataan (Platanus orientalis)",
+   "age_estimate": "ongeveer 125 jaar (bronnen spreken elkaar tegen, zie toelichting)",
+   "access": "Gratis, openbaar park (Wertheimpark)",
+   "transport": "Tram 14, halte Artis, ongeveer 5 minuten lopen",
+   "story": "In een slechte zomer blijft deze plataan groen terwijl zijn neven bruin worden. Plataanziekte, de bladaantasting die gewone platanen in augustus vlekkerig en half kaal achterlaat, deert de oosterse plataan veel minder, en dat is één manier om deze boom eruit te pikken in de groep langs het water van het Wertheimpark.\n\nZijn leeftijd is een echt meningsverschil en geen afrondingskwestie. Het Amsterdamse register van bijzondere bomen geeft als plantjaar 1900. De gids van de Bomenstichting langs de monumentale bomen van de stad dateert wat dezelfde boom lijkt te zijn op 1880 of 1890. Niemand heeft die twee met elkaar verzoend, dus het eerlijke antwoord is ergens tussen de 126 en 146 jaar oud, en deze pagina gaat geen winnaar aanwijzen omwille van een net getal.\n\nDe stam meet 4,42 meter in omtrek. Platanus orientalis is de oudste helft van de afkomst van de gewone plataan, een soort uit het oostelijke Middellandse Zeegebied en West-Azië die Europese tuinen sinds de zestiende eeuw planten, en zijn blad is dieper ingesneden, in smallere vingers, dan dat van de hybride die de meeste Amsterdamse straten vult. In zo'n klein park sta je binnen twee minuten onder allebei en zie je het verschil.\n\nHij staat in een dichte groep van vijf of zes geregistreerde bomen langs het water, met twee Kaukasische vleugelnoten van ongeveer dezelfde leeftijd, wat deze hoek van het park het dichtste van zijn soort in het centrum van Amsterdam maakt."
+  },
+  "ams_020": {
+   "name": "De Leopold-esdoorn van het Wertheimpark",
+   "species": "Noorse esdoorn 'Leopoldii' (Acer platanoides 'Leopoldii')",
+   "age_estimate": "ongeveer 106 jaar",
+   "access": "Gratis, openbaar park (Wertheimpark)",
+   "transport": "Tram 14, halte Artis, ongeveer 5 minuten lopen",
+   "story": "Waar deze boom om draait, gebeurt in april. Acer platanoides 'Leopoldii' opent zijn nieuwe blad roze en wit, gestreept en gespat alsof er verf tegenaan is geflikkerd, voordat het voor de zomer in een gevlekt groen overgaat. De cultivar kwam midden negentiende eeuw uit de kwekerij van Louis van Houtte in Gent, een van de golf bontbladige tuinvormen die de Belgische handel over heel Europa verkocht, en het is de reden dat een esdoorn van tamelijk gewoon formaat op het Amsterdamse register van bijzondere bomen belandde.\n\nGewoon is voor de rest het juiste woord. Het register geeft een plantjaar van 1920 en een omtrek van 262 centimeter, wat voor een Noorse esdoorn van die leeftijd onopvallend is, en het register is ook het enige document waar deze individuele boom überhaupt in wordt genoemd. Al het andere dat over hem bekend is, is bekend over de cultivar in het algemeen.\n\nWat hij wel heeft, is zijn plek. Hij staat langs het water in het Wertheimpark, met een oosterse plataan op achttien meter en twee Kaukasische vleugelnoten ernaast, in een park van driekwart hectare met zo'n vijftien bomen van meer dan een eeuw oud, Artis aan de ene kant en de Hortus een paar minuten verderop. Kom eind april en dit is de enige in de groep die zichtbaar iets doet."
+  },
+  "ams_021": {
+   "name": "De iep van de Oudemanhuispoort",
+   "species": "Hollandse iep (Ulmus x hollandica)",
+   "age_estimate": "ongeveer 135 jaar",
+   "access": "Gratis. De binnentuin van de Oudemanhuispoort, overdag op werkdagen open.",
+   "transport": "Metro of tram naar Rokin, ongeveer 5 minuten lopen",
+   "story": "De hoogste boom van Amsterdam staat in een binnentuin die nauwelijks breder is dan hij hoog is. De Hollandse iep in de Oudemanhuispoort haalt 35 meter, hoger dan wat dan ook in de stad, en de omsluiting is de reden. Bakstenen gebouwen staan aan alle vier de zijden om de tuin heen, dus een boom heeft hier precies één richting tot zijn beschikking, en deze heeft die genomen. Het register zet de aanplant op 1890.\n\nDe Oudemanhuispoort werd in de achttiende eeuw gebouwd als tehuis voor arme ouderen van de stad. Het is nu van de Universiteit van Amsterdam, en de overwelfde gang langs een van de zijden herbergt al ruim een eeuw een boekenmarkt voor tweedehands werk. Duizenden studenten lopen elke dag langs de stam op weg naar college, wat veel loopverkeer is voor een boom waar bijna niemand van gehoord heeft.\n\nDe soort is het andere deel van het verhaal. De iepziekte bereikte Nederland in de jaren twintig en doodde hier iepen bij de honderdduizend, en Amsterdam, van oudsher een iepenstad, verloor een groot deel van zijn bestand. Deze was al ongeveer dertig jaar oud toen de ziekte kwam, en hij staat er nog.\n\nGa op een werkdag naar binnen vanaf de Kloveniersburgwal en kijk de zuidwesthoek in. Het is geen boom die zich vanaf de straat aankondigt, want vanaf de straat zie je hem helemaal niet."
+  },
+  "ams_022": {
+   "name": "De Wilhelminalinde",
+   "species": "Linde (Tilia sp.)",
+   "age_estimate": "128 jaar",
+   "access": "Gratis, naast het Amsterdam Museum aan de Kalverstraat.",
+   "transport": "Tram naar Spui of Dam, ongeveer 3 minuten lopen",
+   "story": "Wilhelmina was al acht jaar koningin voordat iemand haar inhuldigde. Ze erfde de troon in 1890 op haar tiende, haar moeder regeerde als regentes tot ze meerderjarig werd, en de inhuldiging vond uiteindelijk plaats in september 1898. Amsterdam markeerde dat met het planten van een linde, en die linde staat er nog, aan de Kalverstraat.\n\nHet adres is het vreemde deel. De Kalverstraat is de drukste winkelstraat van Nederland, een ravijn van winkelketens waar in een week honderdduizenden mensen doorheen lopen, en de inhuldigingsboom staat er net naast, bij het Amsterdam Museum, in het complex dat vier eeuwen lang het burgerweeshuis van de stad was.\n\nHerdenkingsbomen zijn meestal de meest vergeetbare voorwerpen in een stad. Ze gaan de grond in bij een plechtigheid, de plaquette verweert, en binnen een generatie weet niemand de aanleiding nog. Deze overleefde zijn aanleiding op de meest letterlijke manier die er is: Wilhelmina regeerde achtenvijftig jaar, door twee wereldoorlogen en vijf jaar uitzendingen vanuit Londen naar het bezette Nederland, en trad in 1948 af. De boom was vijftig. Begin 2025 werd hij toegevoegd aan de Amsterdamse lijst van tweehonderd kampioenbomen.\n\nWat hij niet is, is oud. Met ongeveer 128 jaar is hij jonger dan de helft van de bomen op deze pagina, en linden halen routinematig de driehonderd. Welke linde het precies is, hebben we niet vastgesteld; er staan hier meerdere soorten en hybriden onder dezelfde naam. Weet jij het, laat het ons weten."
+  },
+  "ams_023": {
+   "name": "De rode beuk van Van Loon",
+   "species": "Rode beuk (Fagus sylvatica f. purpurea)",
+   "age_estimate": "ongeveer 130 jaar",
+   "access": "Betaalde toegang, de tuin van Museum Van Loon.",
+   "transport": "Tram 24 naar Keizersgracht, ongeveer 3 minuten lopen",
+   "story": "Het beste bewijs voor de leeftijd van deze boom is een foto. In de eigen collectie van Museum Van Loon zit een opname uit 1923 waarop de beuk een jonge boom is, en dat zet de aanplant in de jaren negentig van de negentiende eeuw en maakt hem nu ongeveer 130 jaar oud.\n\nHij staat in een van de laatste gaaf gebleven grachtentuinen van Amsterdam. Het huis op Keizersgracht 672 werd in 1672 gebouwd, de eerste bewoner was Ferdinand Bol, die in Rembrandts atelier werd opgeleid, en de familie Van Loon kocht het in 1884. Achter de strakke parterres staat een koetshuis met een klassieke voorgevel, en de tuin daartussen overleefde de eeuw waarin de meeste Amsterdamse achtertuinen werden volgebouwd, opgedeeld of bestraat voor auto's.\n\nEen rode beuk is in geen enkel zinnig opzicht een wilde plant. Het is een kleurmutatie van de gewone beuk die af en toe in Europese bossen opduikt en die door kwekerijen werd vermeerderd omdat mensen het mooi vonden, dus elke rode beuk in een negentiende-eeuwse tuin staat er omdat iemand hem koos en betaalde. Deze was de sierbeslissing van een welgestelde familie, genomen toen hun huis al tweehonderd jaar oud was, en hij staat nog precies waar ze hem neerzetten.\n\nDe tuin gaat open met een museumkaartje. Hij is klein, ommuurd en stil, midden in een grachtengordel die dat geen van drieën is."
+  },
+  "ams_024": {
+   "name": "De populier van het Rijksmuseum",
+   "species": "Italiaanse populier (Populus nigra 'Italica')",
+   "age_estimate": "ongeveer 110 jaar",
+   "access": "Gratis, de tuin van het Rijksmuseum, dagelijks open.",
+   "transport": "Tram 2 of 12 naar Rijksmuseum, ongeveer 3 minuten lopen",
+   "story": "Deze populier werd geplant als architectuur. Het Rijksmuseum ging in 1885 open en de grond eromheen werd aangelegd als buitendependance van de collectie, gevuld met fragmenten die van gesloopte Nederlandse gebouwen waren gered: poorten, deuromlijstingen, een paviljoen. Begin twintigste eeuw ging er een rij Italiaanse populieren in om een van die historische poorten te omlijsten, en dit is er een van.\n\nDie keuze snap je op het moment dat je de boom ziet. Populus nigra 'Italica' spreidt nauwelijks. Hij groeit als een smalle zuil, en daarom werd hij twee eeuwen lang in rijen door heel Europa geplant om wegen te begeleiden, grenzen te markeren en vlak land een verticaal te geven. In een tuin vol geborgen stenen deuropeningen doet hij het werk van een pilaster.\n\nHet register zet de aanplant tussen 1910 en 1920, dus hij is ongeveer 110 jaar oud, en voor deze cultivar is dat een aanzienlijke leeftijd. Italiaanse populieren zijn snel, zachthoutig en kortlevend naar de maatstaven van de bomen op deze pagina, en de meeste die in datzelfde decennium elders in Europa werden geplant, zijn allang verdwenen. Deze stond er door de evacuatie van de museumcollectie naar schuilplaatsen buiten de stad in oorlogstijd heen, en door de tienjarige verbouwing die het gebouw uitkleedde en het in 2013 heropende, terwijl de tuin eromheen meer dan eens opnieuw werd ingericht.\n\nGratis, met de tuin. De kant van de Jan Luijkenstraat is de rustige ingang."
+  },
+  "ams_025": {
+   "name": "De ruwe iep van het Weteringplantsoen",
+   "species": "Ruwe iep (Ulmus glabra)",
+   "age_estimate": "ongeveer 120 jaar",
+   "access": "Gratis, openbaar plantsoen, altijd open.",
+   "transport": "Tram naar Weteringcircuit, de halte ligt naast het plantsoen",
+   "story": "Niemand weet wanneer deze iep geplant is en het register zegt dat ronduit: geschiedenis onbekend, aanplant ergens tussen 1900 en 1910. Wat wel gedocumenteerd is, is wat ervoor staat. Het Van Randwijk-monument op het Weteringplantsoen draagt de bekendste regel uit het Nederlandse verzetsproza, de waarschuwing van Henk van Randwijk dat een volk dat voor tirannen zwicht meer dan lijf en goed verliest, en dat dan het licht dooft. Van Randwijk leidde tijdens de bezetting de illegale krant Vrij Nederland.\n\nDe boom achter het monument is een ruwe iep, en dat is het interessante aan het bordje. Ulmus glabra geldt meestal als de enige iep die echt in Nederland thuishoort, en hij is zeer vatbaar voor de iepziekte, die in de jaren twintig arriveerde en de rest van de eeuw door het land trok. Een volgroeide ruwe iep midden in een Nederlandse stad is geen alledaags ding. Deze is ongeveer 120 jaar oud, dus hij stond hier al voor beide wereldoorlogen en heeft ze allebei doorstaan.\n\nHij staat in een strook gras en grind tussen de Weteringschans en het water, het soort driehoek dat een stad overhoudt waar twee wegen elkaar niet netjes raken. Gratis, altijd open, en een paar minuten lopen van het Rijksmuseum. Drie andere bomen van deze lijst staan binnen twee minuten."
+  },
+  "ams_026": {
+   "name": "De ginkgo van het Weteringplantsoen",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "ongeveer 110 jaar",
+   "access": "Gratis, op het openbare verkeersplein, altijd zichtbaar.",
+   "transport": "Tram naar Weteringcircuit, de halte ligt naast de boom",
+   "story": "Er groeit een ginkgo op een verkeerseiland aan de Weteringschans, en dat is het onwaarschijnlijkste op deze lijst. De soort is zo'n 200 miljoen jaar oud, ouder dan de bloeiende planten, en overleeft in het wild nog in een handvol Chinese dalen. De Nederlandse naam tempelboom legt vast hoe hij het redde: monniken plantten hem op tempelterreinen en hielden hem in leven terwijl hij overal elders verdween. Deze staat tussen rijstroken.\n\nAmsterdam zette hem ergens tussen 1910 en 1920 neer en het register noteert er verder geen enkele geschiedenis bij, wat past bij een boom die gewoon zijn gang gaat. De ginkgo verdraagt precies de omstandigheden waar andere straatbomen aan doodgaan: verdichte grond, strooizout, uitlaatgassen, wortelruimte van een paar vierkante meter. Meerdere ginkgo's binnen twee kilometer van het hypocentrum in Hiroshima overleefden de bom en groeien nog steeds.\n\nKom in november. Elf maanden lang is dit een groene boom met eigenaardig waaiervormig blad waar mensen zonder een blik langslopen. Dan wordt de hele kroon in ongeveer een week vlak en verzadigd goudgeel, en daarna laat hij alles vallen, vaak in een dag of twee, met een gouden ring op het asfalt eromheen als resultaat. Verkeerseilanden krijgen zelden zo'n moment.\n\nGratis, altijd zichtbaar, en het grootste deel van het jaar makkelijk over het hoofd te zien. De ruwe iep, de scheve populier en de plataan staan allemaal een minuut of twee verderop."
+  },
+  "ams_027": {
+   "name": "De scheve populier van de Weteringschans",
+   "species": "Canadapopulier (Populus x canadensis)",
+   "age_estimate": "ongeveer 120 jaar",
+   "access": "Gratis, openbaar plantsoen, altijd open.",
+   "transport": "Tram naar Weteringcircuit, op de hoek van het Weteringcircuit",
+   "story": "Elk jaar inspecteert Amsterdam deze populier en beslist of hij er nog een jaar bij krijgt. Hij helt, zichtbaar en fors, over de Weteringschans heen, en een stam van meer dan vijf meter omtrek die naar een drukke weg overhangt is een vraag die een stad steeds opnieuw moet beantwoorden. Tot nu toe was het antwoord ja.\n\nDe reden dat dat kan, ligt onder de stoep. Een boom die scheef groeit belast één kant van zijn wortelplaat veel zwaarder dan de andere en reageert door precies daar extra hout aan te leggen waar de trek zit, zodat die wortels tot ankers verdikken. Scheef is niet hetzelfde als instabiel, en deze heeft een eeuw gehad om zichzelf te construeren. De stad snoeit de zware takken aan de wegkant om de belasting laag te houden, en inspecteert hem jaarlijks.\n\nHet is een Canadapopulier, een kruising tussen twee andere populieren die rond 1750 in Frankrijk opdook en daarna om zijn snelheid over het hele continent werd geplant. Snelheid is het punt van de soort en meteen de keerzijde: populieren groeien hard, worden groot en zijn niet voor de lange termijn gebouwd, wat een exemplaar van deze omtrek op 116 tot 126 jaar de moeite van het stilstaan waard maakt.\n\nDe straat waar hij overheen leunt, werd aangelegd op de Amsterdamse stadswallen nadat die tussen 1820 en 1840 waren geslecht, en hield de naam Schans tot 1850. Gratis, altijd aanwezig, en niet te verwarren met de bomen eromheen."
+  },
+  "ams_028": {
+   "name": "De plataan van het Weteringplantsoen",
+   "species": "Gewone plataan (Platanus x acerifolia)",
+   "age_estimate": "ongeveer 140 jaar",
+   "access": "Gratis, openbaar plantsoen, altijd open.",
+   "transport": "Tram naar Weteringcircuit, ongeveer 2 minuten lopen",
+   "story": "Dit is de oudste boom van deze groep en het register heeft er niets over te melden. Aanplant: ergens tussen 1880 en 1890. Reden van bescherming: monumentaal. Geschiedenis: onbekend. Dat is het complete dossier van een plataan die al zo'n 140 jaar op het Eerste Weteringplantsoen staat.\n\nDie datum is het onthouden waard, om wat de grond ernaast net had opgehouden te zijn. De Weteringschans ernaast werd aangelegd over de Amsterdamse stadswallen nadat die tussen 1820 en 1840 waren geslecht. Een plataan die hier in de jaren tachtig van de negentiende eeuw de grond in ging, kwam terwijl die verandering nog vers was en deze hele rand van de stad nieuw.\n\nDe gewone plataan is de standaard stadsboom van Europa, en dat gaat verder dan mode. Hij laat zijn bast in platen los en neemt het vuil daarmee mee, en zo bleef hij een eeuw kolenrook lang in leven en leesbaar terwijl andere soorten zwart werden. Hij verdraagt verdichte wortels, hard snoeien en droogte, en daarom staat dezelfde boom in de straten van Barcelona tot Berlijn. Amsterdam heeft er honderden. Deze is er langer mee bezig dan bijna allemaal.\n\nGratis, aan het rustigere eind van het plantsoen. De scheve populier, de ruwe iep en de ginkgo staan elk binnen twee minuten lopen, wat deze hoek een ongewoon dichte verzameling oude bomen maakt voor het midden van een stad."
+  },
+  "ams_030": {
+   "name": "De honingboom van het Falckplantsoen",
+   "species": "Honingboom (Styphnolobium japonicum)",
+   "age_estimate": "ongeveer 116 tot 136 jaar (het register geeft twee verschillende plantperiodes)",
+   "access": "Gratis, aan de straat.",
+   "transport": "Tram naar Frederiksplein of Weteringcircuit, ongeveer 5 minuten lopen",
+   "story": "In augustus bedekt deze boom zich met witte bloemen, weken nadat elke linde en kastanje in de stad is uitgebloeid. De honingboom is een vlinderbloemige uit Korea en China, met fijn geveerd blad en een kroon die eerder breed dan hoog wordt, en die late zomerbloei is de reden dat mensen hem planten.\n\nHij heeft de ruimte om te spreiden omdat er een gracht is gedempt. De Falckstraat is in 1870 genoemd naar een vooraanstaande Amsterdammer en is ongewoon breed voor het centrum, omdat hij werd aangelegd over een stuk Achtergracht dat rond 1869 werd gedempt. Een gedempte gracht levert een royale straat op, een royale straat levert wortelruimte op, en wortelruimte is hoe een kroon van deze breedte kon gedijen op een hoek van de Reguliersgracht.\n\nZijn leeftijd is echt onbeslist. Het register geeft de plantperiode op twee plaatsen, en twee keer verschillend: een keer de jaren negentig van de negentiende eeuw, een keer de jaren nul van de twintigste. Het eerlijke antwoord is dus ergens tussen de 116 en 136 jaar. De stam draagt aan de zuidkant een grote, deels overgroeide wond, en de stad snoeit de zware overhangende takken volgens schema om de kroon in balans te houden. Naast hem staat een tweede, kleinere honingboom.\n\nGratis, op de straathoek, en de moeite van het timen waard. Het grootste deel van het jaar is dit een goede boom met ongewoon blad. In augustus is hij de reden om er te staan."
+  },
+  "ams_031": {
+   "name": "De esdoorn van het Wertheimpark",
+   "species": "Gewone esdoorn (Acer pseudoplatanus)",
+   "age_estimate": "ongeveer 110 jaar",
+   "access": "Gratis, openbaar park.",
+   "transport": "Tram 14 naar Artis, ongeveer 3 minuten lopen",
+   "story": "Een gewone esdoorn is de meest alledaagse grote boom van Noordwest-Europa, en dat maakt de vraag interessant waarom uitgerekend deze op het landelijke register staat om dendrologische redenen en niet om zijn geschiedenis of herdenkingswaarde. Het register zegt het niet. Onder geschiedenis staat: onbekend. Iemand met een meetlint vond dit exemplaar uitzonderlijk genoeg om te beschermen en liet het daarbij.\n\nHij staat achter het monument voor Abraham Carel Wertheim, de bankier en filantroop naar wie het park in 1898 werd genoemd, een jaar na zijn dood. De boom ging tussen 1910 en 1920 de grond in, dus hij is ongeveer 110 jaar oud en heeft elk van die jaren een paar meter achter dat monument doorgebracht.\n\nAcer pseudoplatanus is een esdoorn die in het Engels de naam sycamore kreeg, die hij daar deelt met een niet-verwante Amerikaanse plataan, en die verwarring is nooit opgeruimd. Hij zaait zichzelf in elk gat in elke Europese stad, groeit overal, en kan als niets hem stoort de vierhonderd jaar halen, wat 110 nauwelijks volwassen maakt. De soort is zo algemeen dat een goed exemplaar over het hoofd wordt gezien, en dat is ongeveer wat hier gebeurde tot het register hem inhaalde.\n\nGratis, in een park van driekwart hectare met zo'n vijftien bomen van meer dan een eeuw oud. Ga kijken of jij eruit krijgt wat degene met het meetlint zag."
+  },
+  "ams_032": {
+   "name": "De laatste iep van het Stationsplein",
+   "species": "Hollandse iep (Ulmus x hollandica)",
+   "age_estimate": "ongeveer 120 jaar",
+   "access": "Gratis, op het openbare plein voor Amsterdam Centraal.",
+   "transport": "Amsterdam Centraal; de boom staat op het plein voor het station",
+   "story": "Na de opening van Amsterdam Centraal in 1889 werden er zo'n dertig iepen voor het station geplant. Daar staat er nog één van.\n\nDe rest ging aan de iepziekte, die in de jaren twintig Nederland bereikte en daarna in het hele land iepen bij de honderdduizend doodde. De schimmel reist mee met de iepenspintkever en blokkeert de watervaten van de boom zelf, zodat een volgroeide iep binnen één zomer van gezond naar dood kan gaan. Het Amsterdamse iepenbestand, een van de grootste van Europa, kreeg zware klappen. Deze boom stond het allemaal door, op een van de drukste stukken grond van Nederland, en opnemers beoordelen zijn conditie nog steeds als redelijk.\n\nHij teert ook niet op zijn verleden. Bij de laatste meting in 2022 was zijn stam ruim drie meter in omtrek, en er is vastgelegd dat hij er elk jaar iets meer dan een centimeter omtrek bij krijgt, wat een boom is die nog zaken doet en niet een die zich vasthoudt.\n\nUit diezelfde opname van 2022 blijkt dat de stad jonge iepen op het plein eromheen heeft geplant. Als die aanslaan, komt het oude beeld voor het station langzaam terug en houdt deze op de laatste van wat dan ook te zijn, wat iedereen die erbij betrokken is liever heeft.\n\nGratis, in de open lucht, zo de hoofddeuren van het station uit. Trams, fietsen en de hele stroom van het station gaan er op een paar meter langs, en bijna niemand kijkt omhoog."
+  }
+ }
+}

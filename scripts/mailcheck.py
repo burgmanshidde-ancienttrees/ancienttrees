@@ -266,10 +266,23 @@ def lowercase_hits(body):
     and anything starting with a digit, which is where the rest of the false
     positives live."""
     starts, bad = [], []
+    prev = ""
     for para in re.split(r"\n\s*\n", body):
         para = " ".join(l.strip() for l in para.strip().split("\n"))
         if not para or para.startswith(("http", "-", "*", ">", "|")) or para[0].isdigit():
             continue
+        # German, Czech and Polish letters continue the sentence after the
+        # salutation comma, so "Guten Tag," / "Dobry den," is correctly
+        # followed by a lower-case word. Flagging that taught nobody anything
+        # about Hidde's voice and would have forced wrong orthography into
+        # forty mails (found 2026-08-22 building batch 006). The rule is
+        # narrow on purpose: only the paragraph DIRECTLY after a line ending
+        # in a comma is exempt, and only its first word.
+        if prev.endswith(","):
+            starts += [x for x in re.split(r"(?<=[.!?])\s+", para)[1:] if x]
+            prev = para
+            continue
+        prev = para
         starts.append(para)
         starts += [s for s in re.split(r"(?<=[.!?])\s+", para)[1:] if s]
     for s in starts:
