@@ -1123,3 +1123,20 @@ Not settled:
   so it may be the oldest tree in the city or may not. The page asks readers for
   a girth measurement at 1.30 metres, which is the number that would settle it.
 - **Photos: none for either city.** Not hunted this pass.
+
+### The in-flight.json merge driver, 2026-08-22
+
+data/in-flight.json conflicted on three separate rebases in one session, because
+a session and a night run were each claiming places at the same time. That is
+the normal case for a coordination file and not a disagreement, so it now has a
+git merge driver (scripts/merge_inflight.py) that unions the claims instead.
+
+One caveat worth knowing: the driver is wired in .gitattributes, which is
+committed, but git requires the driver itself to be registered in local config,
+which is not. On a fresh checkout run:
+
+    git config merge.inflight.name "union the in-flight claims"
+    git config merge.inflight.driver "python3 scripts/merge_inflight.py %O %A %B"
+
+Without that, git falls back to an ordinary conflict, which is exactly the old
+behaviour rather than a breakage.
