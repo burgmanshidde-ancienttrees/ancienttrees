@@ -1,0 +1,272 @@
+{
+ "city": "Zwolle",
+ "country": "Netherlands",
+ "status": "needs_curation",
+ "intro": "Zwolle pulled down its fortifications and made a ring of parks out of the earth, which is why almost every old tree in the city is standing on a seventeenth century rampart. The best of them is a plane on the Potgietersingel: 33.6 metres tall with a trunk 719 centimetres round, which are measured figures rather than estimates. The oldest is a beech in the grounds of a small country house outside town, where Rhijnvis Feith, poet and mayor of Zwolle, spent his free time writing and in 1799 published an ode to the place in 34 verses.",
+ "meta_description": "Seven remarkable trees in Zwolle: a plane 33.6 metres tall on a 17th-century rampart, and a beech in the grounds a mayor wrote a 34-verse ode about.",
+ "question_meta": "Zwolle's oldest tree is a beech at Park Boschwijk, banded 1750 to 1800. The tallest is a 33.6 metre plane on the Potgietersingel.",
+ "question_answer": "The oldest tree in Zwolle is a beech on the west side of the beech avenue in Park Boschwijk, which the national register places in a planting band of 1750 to 1800, so between about 225 and 275 years old. Boschwijk is a small country house just outside the city, and its most famous owner was Rhijnvis Feith, who lived from 1753 to 1824 and was both a poet and mayor of Zwolle. He came here in his free time to write, and in 1799 he published an ode to Boschwijk running to 34 verses. The beech was already a young tree when he was writing, which makes it one of the very few things named in this city that Feith could plausibly have walked past.",
+ "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so most figures on this page are bands rather than measurements, and the beech at Boschwijk carries a band fifty years wide. The plane on the Potgietersingel is the exception: the register gives it a measured height of 33.6 metres and a trunk girth of 719 centimetres, and those two numbers are the firmest facts on this page. The register is the 2024 edition and is the single source for all seven, which is why they are all flagged. One pattern worth knowing before you walk: the singels and the Park Eekhout are laid out on the city's former defensive works, so the ground under these trees is made ground rather than natural soil. That matters for the trees at Boschwijk and at the Kranenburg cemetery, where the register places the tree in a row or a section rather than at a spot, and where a pin is marked approximate we know the grounds and not the trunk. If you find one of these gone, tell us and it comes off the same day.",
+ "hero_tree_id": "zwo_001",
+ "oldest_tree_id": "zwo_002",
+ "faq": [
+  {
+   "q": "What is the biggest tree in Zwolle?",
+   "a": "The plane on the Potgietersingel, at 33.6 metres tall with a trunk 719 centimetres round. Those are the register's own measured figures, which is unusual: almost every other entry gives only a planting decade."
+  },
+  {
+   "q": "What is the oldest tree in Zwolle?",
+   "a": "A beech on the west side of the beech avenue in Park Boschwijk, banded 1750 to 1800 by the national register."
+  },
+  {
+   "q": "Who was Rhijnvis Feith?",
+   "a": "A poet and mayor of Zwolle, 1753 to 1824, and at one time the owner of Boschwijk, the small country house east of the city. He spent his free time there writing, and in 1799 published 'Ode aan Boschwijk', a poem of 34 verses about the place."
+  },
+  {
+   "q": "Are they free to visit?",
+   "a": "All seven. The Potgietersingel, the Park Eekhout, the Van Nahuysplein and the Kranenburg cemetery are public, and Park Boschwijk is open ground east of the city."
+  }
+ ],
+ "trees": [
+  {
+   "id": "zwo_001",
+   "name": "The Plane of the Potgietersingel",
+   "species": "London Plane (Platanus x acerifolia)",
+   "age_estimate": "roughly 175 to 225 years, from the register's planting band of 1800 to 1850",
+   "age_min": 176,
+   "age_max": 226,
+   "girth_cm": 719,
+   "height_m": 33.6,
+   "location": {
+    "address": "Potgietersingel, in the nineteenth century park on the old fortifications",
+    "latitude": 52.50984,
+    "longitude": 6.09194,
+    "neighbourhood": "Potgietersingel"
+   },
+   "story": "Thirty three point six metres tall, and a trunk seven point one nine metres round. Those are measured numbers, not estimates, which makes this tree the most precisely known thing on this page and one of the largest planes in the Netherlands.\n\nSeven metres of girth means roughly two and a quarter metres of diameter. Four adults with their arms out would not close a circle round it.\n\nIt is standing on a defensive earthwork. Zwolle's seventeenth century fortifications were demolished in the nineteenth, as they were in almost every Dutch town, and the earth was reshaped into a ring of singels and parks. So the ground here is made ground, thrown up to stop artillery and then handed to a garden designer, and this plane has had close to two centuries of deep, loose, undisturbed soil that no city street could offer it.\n\nThat is most of the explanation for the size. The other part is the species: planes tolerate everything a city can do to them, and given room they simply keep going.\n\nBark in flaking cream and olive plates, big maple-shaped leaves, and hard bristly seed balls hanging on their stalks all winter.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Public park along the singel, open at any time.",
+   "transport": "About 1 km northwest of Zwolle station, on the Potgietersingel.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "By far the largest tree on the singel, with a trunk you cannot get four people around.",
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "zwo_002",
+   "name": "The Beech of the Boschwijk Avenue",
+   "species": "European Beech (Fagus sylvatica)",
+   "age_estimate": "roughly 225 to 275 years, from the register's planting band of 1750 to 1800",
+   "age_min": 226,
+   "age_max": 276,
+   "location": {
+    "address": "West side of the beech avenue, Park Boschwijk",
+    "latitude": 52.498,
+    "longitude": 6.1393,
+    "neighbourhood": "Boschwijk"
+   },
+   "story": "In 1799 the mayor of Zwolle published a 34 verse poem about this garden.\n\nRhijnvis Feith owned Boschwijk, a small country house not far outside the city, and he was one of the best known Dutch poets of his generation as well as a magistrate and mayor. He came out here in his free time specifically to write. 'Ode aan Boschwijk' is the result, and it is about this ground.\n\nThe beech is banded 1750 to 1800, which means it was somewhere between a sapling and a young tree while he was writing. It stands on the west side of the beukenloofgang, the beech avenue, which is the feature of the place: two rows planted close so the crowns meet overhead and make a green tunnel.\n\nA beech avenue is a designed effect that takes a century to work and then works forever. It is also a slow-motion contest, because beeches planted that close spend their lives shading each other out, so the ones that survive are the ones that got up fastest.\n\nGo in early May, when the new leaves are still translucent green and the tunnel glows rather than darkens.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Open grounds east of the city.",
+   "transport": "About 4 km east of Zwolle station, at Park Boschwijk.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "The heaviest tree on the west row of the beech avenue, thicker in the trunk than its neighbours.",
+   "best_time": {
+    "months": [
+     5
+    ],
+    "kind": "fresh leaves",
+    "label": "early May, when the new leaves make the avenue glow"
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate"
+  },
+  {
+   "id": "zwo_003",
+   "name": "The Horse Chestnut of the Park Eekhout",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "age_estimate": "roughly 165 to 175 years, from the register's planting band of 1850 to 1860",
+   "age_min": 166,
+   "age_max": 176,
+   "location": {
+    "address": "Southeast part of Park Eekhout",
+    "latitude": 52.5095,
+    "longitude": 6.08837,
+    "neighbourhood": "Eekhout"
+   },
+   "story": "A horse chestnut that has reached a hundred and seventy years is doing better than most of its kind manage now.\n\nThe species has had a bad half century in Europe. Bleeding canker, a bacterial infection that leaves rusty weeping patches on the bark, has killed a large share of mature trees since the 1990s. The horse chestnut leaf miner, a moth whose larvae tunnel between the leaf surfaces, arrived in the Netherlands around 2002 and now browns the foliage of nearly every tree in the country from July onward. The moth does not kill, but a tree that loses its leaves two months early every year for twenty years is a weakened tree.\n\nSo an old, big, still standing chestnut is worth registering as the survivor it is.\n\nIt stands in the southeast part of the Park Eekhout, on the ring of the old fortifications, banded 1850 to 1860.\n\nCome in the first half of May, before the miner gets going. That is when the tree does the thing it was planted for: hundreds of upright white flower spikes over the whole crown, each one with a yellow throat that turns red once the flower has been pollinated and no longer wants visitors.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Public park, open at any time.",
+   "transport": "About 900 m northwest of Zwolle station, in the Park Eekhout.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "Big palmate leaves in fans of five to seven leaflets, in the southeast part of the park.",
+   "best_time": {
+    "months": [
+     5
+    ],
+    "kind": "flowers",
+    "label": "early May, when the white candles are up and the throats are still yellow"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "zwo_004",
+   "name": "The Red Oak of Boschwijk",
+   "species": "Northern Red Oak (Quercus rubra)",
+   "age_estimate": "roughly 155 to 165 years, from the register's planting band of 1860 to 1870",
+   "age_min": 156,
+   "age_max": 166,
+   "location": {
+    "address": "By the drive to number 7, west side of Park Boschwijk",
+    "latitude": 52.50048,
+    "longitude": 6.13724,
+    "neighbourhood": "Boschwijk"
+   },
+   "story": "It was planted for one week a year and it delivers.\n\nRed oak is North American, it reached Europe in the seventeenth century, and it was planted across Dutch estates in the nineteenth for a single reason: nothing native here turns that colour. In late October a mature one goes deep scarlet and then rust, and it holds it for a fortnight while the beeches around it are doing their more restrained copper.\n\nThe leaves are the easy way to tell it from a native oak. They are much larger, with pointed lobes ending in tiny bristles, where a pedunculate oak has small soft rounded lobes and no bristles anywhere.\n\nThis one stands by the drive to number 7 on the west side of Boschwijk, banded 1860 to 1870, so it is a generation younger than the beech in the avenue and belongs to a later phase of planting on the same ground.\n\nThe acorns are worth a look too: squat and broad with a shallow saucer of a cup, quite unlike the neat long acorn of a native oak, and they take two years to ripen rather than one.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Open grounds east of the city.",
+   "transport": "About 4 km east of Zwolle station, at Park Boschwijk.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "Large bristle-tipped leaves, by the entrance drive on the west side. In autumn it is the red one.",
+   "best_time": {
+    "months": [
+     10
+    ],
+    "kind": "autumn colour",
+    "label": "late October, when it goes scarlet"
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate"
+  },
+  {
+   "id": "zwo_005",
+   "name": "The Gate Beech of the Park Eekhout",
+   "species": "European Beech (Fagus sylvatica)",
+   "age_estimate": "roughly 155 to 165 years, from the register's planting band of 1860 to 1870",
+   "age_min": 156,
+   "age_max": 166,
+   "location": {
+    "address": "The gate trees, Park Eekhout",
+    "latitude": 52.50938,
+    "longitude": 6.088,
+    "neighbourhood": "Eekhout"
+   },
+   "story": "The register calls these the poortbomen, the gate trees, which is a job description rather than a species.\n\nPlanting a pair of matched trees where a path enters a park is one of the oldest moves in the trade. It makes an entrance out of a gap, and it does it without a gate, a wall or a sign. You know you have arrived somewhere because two large trees have agreed to stand opposite each other. On the way out they frame the street.\n\nThis beech is one of that pair, banded 1860 to 1870, planted into the park that was made on the city's demolished fortifications.\n\nBeech was the right choice for the role and a slightly cruel one. The species casts denser shade than any other large tree here, so a gate flanked by two of them is genuinely darker than the ground on either side, and stepping through is a change in light as well as in place. That is the effect, and it took a century and a half to mature.\n\nThe bark stays smooth and thin all its life, which is why a beech at a park entrance is always the one covered in carved initials.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Public park, open at any time.",
+   "transport": "About 900 m northwest of Zwolle station, at the Park Eekhout.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "One of the pair of large smooth-barked beeches standing either side of the park entrance.",
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "zwo_006",
+   "name": "The Copper Beech by the Fountain",
+   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+   "age_estimate": "roughly 155 to 165 years, from the register's planting band of 1860 to 1870",
+   "age_min": 156,
+   "age_max": 166,
+   "location": {
+    "address": "Van Nahuysplein at the Wilhelminasingel, to the left of the fountain",
+    "latitude": 52.50952,
+    "longitude": 6.09608,
+    "neighbourhood": "Van Nahuysplein"
+   },
+   "story": "A dark tree next to moving water was somebody's decision.\n\nThis is a designed pairing and it still works: a copper beech placed to the left of a fountain on a square at the end of the Wilhelminasingel, planted between 1860 and 1870, when the ring of parks on the old fortifications was being finished and the city was arranging its new edges to be looked at.\n\nPurple foliage was a strong colour to have available. Copper beech is a mutation of the common beech, propagated by grafting rather than seed, and in a nineteenth century planting scheme it functioned as the darkest tone on the palette, the thing you put where the composition needed something heavy. Against pale water and spray it does exactly what was intended.\n\nA hundred and sixty years later it is also just a very large tree in the middle of a city, which is worth going to stand under. The canopy on a mature one is dense enough that the ground beneath stays dry in light rain.\n\nIn the last week of October it turns from purple to a deep burnt copper and the square changes colour with it.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Public square, open at any time.",
+   "transport": "About 700 m north of Zwolle station, at the Van Nahuysplein.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "The big purple-leaved beech standing to the left of the fountain on the square.",
+   "best_time": {
+    "months": [
+     10
+    ],
+    "kind": "autumn colour",
+    "label": "late October, when it turns burnt copper"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "zwo_007",
+   "name": "The Oak of the Kranenburg Cemetery",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "roughly 155 to 165 years, from the register's planting band of 1860 to 1870",
+   "age_min": 156,
+   "age_max": 166,
+   "location": {
+    "address": "New section of the Kranenburg cemetery, Kranenburgweg",
+    "latitude": 52.53229,
+    "longitude": 6.13439,
+    "neighbourhood": "Kranenburg"
+   },
+   "story": "It is in the new section, and it is a century and a half old, which tells you something about the scale a cemetery is planned on.\n\nBurial grounds are the best places in a Dutch city to find big trees, and the reason is mechanical rather than sentimental. The ground is never redeveloped, never dug for services, never paved, never parked on, and nobody is in a hurry. A tree planted at the edge of a cemetery in the 1860s has had the single most stable century and a half available anywhere inside a growing city.\n\nOaks in particular are a standard choice for the setting, for the obvious reason that they outlast everybody in it several times over. Pedunculate oak routinely reaches four hundred years here, so this one is at roughly a third of its life.\n\nIt is easy to identify: acorns on long stalks, and leaves that sit almost directly on the twig with two small lobes clasping back around it.\n\nGo in October. An oak this age in a good mast year covers the ground beneath it, and a quiet cemetery is one of the few places nobody sweeps them up.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Public cemetery, open in daylight. Visit quietly.",
+   "transport": "About 4 km northeast of Zwolle station, on the Kranenburgweg.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "A large oak in the newer section, with acorns on long stalks.",
+   "best_time": {
+    "months": [
+     10
+    ],
+    "kind": "fruit",
+    "label": "October, when the acorns cover the ground"
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate"
+  }
+ ]
+}

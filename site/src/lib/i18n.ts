@@ -83,6 +83,248 @@ export const LANG_INVITE: Record<string, string> = {
   ja: "このページは次の言語でもご覧いただけます",
 };
 
+/** Page chrome, per language.
+ *
+ * Extracted 2026-08-22 when Contract J went from one language to seven. Until
+ * then the Spanish templates carried these ~20 strings inline, which was the
+ * right call for a single test and becomes a maintenance bug at seven: the
+ * same sentence would live in seven files and drift in six of them.
+ *
+ * `ui(lang)` falls back to English per KEY rather than per language, so a
+ * language ships with whatever is written and shows English for the rest
+ * instead of failing to build. That is deliberate and is what Contract J
+ * means by chrome debt being named rather than silent: an untranslated button
+ * is visible to anyone looking at the page, where a missing one is not.
+ *
+ * These are UI labels only. Every sentence a reader is meant to READ comes
+ * from data/i18n/<lang>/<slug>.json and is hand-written per city.
+ */
+export interface UIStrings {
+  home: string;
+  backToTrees: (n: number) => string;
+  treesOnMap: (n: number) => string;
+  headingPrefix: string;
+  readMore: string;
+  visitedOf: (n: number, city: string) => string;
+  saveOrTransfer: string;
+  mappingAll: string;
+  missingOrWrong: (city: string) => string;
+  tellUs: string;
+  goingThere: string;
+  downloadTrees: (n: number) => string;
+  worksOffline: string;
+  faqHeading: string;
+  moreOnOldest: string;
+  oldestQuestion: (city: string) => string;
+  fullAnswer: string;
+  suggestTree: string;
+  sendIt: string;
+  walkRoutes: string;
+  inTheApp: string;
+  whereAmI: string;
+}
+
+const EN: UIStrings = {
+  home: "Home",
+  backToTrees: (n) => `\u2190 The ${n} trees`,
+  treesOnMap: (n) => `${n} trees on the map`,
+  headingPrefix: "Ancient Trees in",
+  readMore: "Read more",
+  visitedOf: (n, city) => `visited in ${city}`,
+  saveOrTransfer: "Save or move to another device",
+  mappingAll: "We are mapping every remarkable tree in the world.",
+  missingOrWrong: (city) => `Do you know one in ${city} we are missing, or see a mistake here?`,
+  tellUs: "Tell us",
+  goingThere: "Going?",
+  downloadTrees: (n) => `Download the ${n} trees`,
+  worksOffline: "as a map file and open it in Google Maps, Organic Maps or any hiking app. It works offline.",
+  faqHeading: "Frequently asked questions",
+  moreOnOldest: "More on the oldest tree",
+  oldestQuestion: (city) => `What is the oldest tree in ${city}?`,
+  fullAnswer: "The full answer, with a map and how to get there.",
+  suggestTree: "Know a tree that belongs on this list?",
+  sendIt: "Send it to us",
+  walkRoutes: "Walking routes",
+  inTheApp: "in the app",
+  whereAmI: "Where am I",
+};
+
+const TABLE: Record<string, Partial<UIStrings>> = {
+  es: {
+    home: "Inicio",
+    backToTrees: (n) => `\u2190 Los ${n} \u00e1rboles`,
+    treesOnMap: (n) => `${n} \u00e1rboles en el mapa`,
+    headingPrefix: "\u00c1rboles hist\u00f3ricos de",
+    readMore: "Leer m\u00e1s",
+    visitedOf: (n, city) => `visitados en ${city}`,
+    saveOrTransfer: "Guardar o pasar a otro dispositivo",
+    mappingAll: "Estamos cartografiando todos los \u00e1rboles singulares del mundo.",
+    missingOrWrong: (city) => `\u00bfConoces uno en ${city} que nos falte, o ves aqu\u00ed un error?`,
+    tellUs: "Cu\u00e9ntanoslo",
+    goingThere: "\u00bfVas a ir?",
+    downloadTrees: (n) => `Descarga los ${n} \u00e1rboles`,
+    worksOffline: "como archivo de mapa y \u00e1brelo en Google Maps, Organic Maps o cualquier aplicaci\u00f3n de senderismo. Funciona sin conexi\u00f3n.",
+    faqHeading: "Preguntas frecuentes",
+    moreOnOldest: "M\u00e1s sobre el \u00e1rbol m\u00e1s antiguo",
+    oldestQuestion: (city) => `\u00bfCu\u00e1l es el \u00e1rbol m\u00e1s antiguo de ${city}?`,
+    fullAnswer: "La respuesta completa, con mapa y c\u00f3mo llegar.",
+    suggestTree: "\u00bfConoces un \u00e1rbol que merezca estar en esta lista?",
+    sendIt: "Env\u00edanoslo",
+    walkRoutes: "Rutas a pie",
+    inTheApp: "en la aplicaci\u00f3n",
+    whereAmI: "D\u00f3nde estoy",
+  },
+  it: {
+    home: "Home",
+    backToTrees: (n) => `\u2190 I ${n} alberi`,
+    treesOnMap: (n) => `${n} alberi sulla mappa`,
+    headingPrefix: "Alberi monumentali di",
+    readMore: "Leggi di pi\u00f9",
+    visitedOf: (n, city) => `visitati a ${city}`,
+    saveOrTransfer: "Salva o trasferisci su un altro dispositivo",
+    mappingAll: "Stiamo mappando tutti gli alberi notevoli del mondo.",
+    missingOrWrong: (city) => `Ne conosci uno a ${city} che ci manca, o vedi un errore qui?`,
+    tellUs: "Segnalacelo",
+    goingThere: "Ci vai?",
+    downloadTrees: (n) => `Scarica i ${n} alberi`,
+    worksOffline: "come file di mappa e aprilo in Google Maps, Organic Maps o in qualsiasi app da escursionismo. Funziona anche offline.",
+    faqHeading: "Domande frequenti",
+    moreOnOldest: "Altro sull'albero pi\u00f9 antico",
+    oldestQuestion: (city) => `Qual \u00e8 l'albero pi\u00f9 antico di ${city}?`,
+    fullAnswer: "La risposta completa, con mappa e indicazioni.",
+    suggestTree: "Conosci un albero che merita di stare in questo elenco?",
+    sendIt: "Inviacelo",
+    walkRoutes: "Percorsi a piedi",
+    inTheApp: "nell'app",
+    whereAmI: "Dove mi trovo",
+  },
+  nl: {
+    home: "Home",
+    backToTrees: (n) => `\u2190 De ${n} bomen`,
+    treesOnMap: (n) => `${n} bomen op de kaart`,
+    headingPrefix: "Monumentale bomen in",
+    readMore: "Lees meer",
+    visitedOf: (n, city) => `bezocht in ${city}`,
+    saveOrTransfer: "Bewaren of naar een ander apparaat overzetten",
+    mappingAll: "We brengen alle bijzondere bomen ter wereld in kaart.",
+    missingOrWrong: (city) => `Ken je er een in ${city} die hier mist, of zie je een fout?`,
+    tellUs: "Laat het ons weten",
+    goingThere: "Ga je erheen?",
+    downloadTrees: (n) => `Download de ${n} bomen`,
+    worksOffline: "als kaartbestand en open het in Google Maps, Organic Maps of een wandelapp naar keuze. Werkt ook zonder internet.",
+    faqHeading: "Veelgestelde vragen",
+    moreOnOldest: "Meer over de oudste boom",
+    oldestQuestion: (city) => `Wat is de oudste boom van ${city}?`,
+    fullAnswer: "Het volledige antwoord, met kaart en route.",
+    suggestTree: "Ken je een boom die in deze lijst thuishoort?",
+    sendIt: "Stuur hem naar ons",
+    walkRoutes: "Wandelroutes",
+    inTheApp: "in de app",
+    whereAmI: "Waar ben ik",
+  },
+  de: {
+    home: "Start",
+    backToTrees: (n) => `\u2190 Die ${n} B\u00e4ume`,
+    treesOnMap: (n) => `${n} B\u00e4ume auf der Karte`,
+    headingPrefix: "Alte B\u00e4ume in",
+    readMore: "Mehr lesen",
+    visitedOf: (n, city) => `in ${city} besucht`,
+    saveOrTransfer: "Sichern oder auf ein anderes Ger\u00e4t \u00fcbertragen",
+    mappingAll: "Wir kartieren alle bemerkenswerten B\u00e4ume der Welt.",
+    missingOrWrong: (city) => `Kennen Sie einen in ${city}, der hier fehlt, oder sehen Sie einen Fehler?`,
+    tellUs: "Sagen Sie es uns",
+    goingThere: "Sie fahren hin?",
+    downloadTrees: (n) => `Die ${n} B\u00e4ume herunterladen`,
+    worksOffline: "als Kartendatei und \u00f6ffnen Sie sie in Google Maps, Organic Maps oder einer Wander-App. Funktioniert auch offline.",
+    faqHeading: "H\u00e4ufige Fragen",
+    moreOnOldest: "Mehr zum \u00e4ltesten Baum",
+    oldestQuestion: (city) => `Welcher ist der \u00e4lteste Baum in ${city}?`,
+    fullAnswer: "Die vollst\u00e4ndige Antwort, mit Karte und Anfahrt.",
+    suggestTree: "Kennen Sie einen Baum, der auf diese Liste geh\u00f6rt?",
+    sendIt: "Schicken Sie ihn uns",
+    walkRoutes: "Wanderrouten",
+    inTheApp: "in der App",
+    whereAmI: "Wo bin ich",
+  },
+  pt: {
+    home: "In\u00edcio",
+    backToTrees: (n) => `\u2190 As ${n} \u00e1rvores`,
+    treesOnMap: (n) => `${n} \u00e1rvores no mapa`,
+    headingPrefix: "\u00c1rvores hist\u00f3ricas de",
+    readMore: "Ler mais",
+    visitedOf: (n, city) => `visitadas em ${city}`,
+    saveOrTransfer: "Guardar ou passar para outro dispositivo",
+    mappingAll: "Estamos a mapear todas as \u00e1rvores not\u00e1veis do mundo.",
+    missingOrWrong: (city) => `Conhece alguma em ${city} que nos falte, ou v\u00ea aqui um erro?`,
+    tellUs: "Diga-nos",
+    goingThere: "Vai l\u00e1?",
+    downloadTrees: (n) => `Descarregue as ${n} \u00e1rvores`,
+    worksOffline: "como ficheiro de mapa e abra-o no Google Maps, Organic Maps ou em qualquer aplica\u00e7\u00e3o de caminhadas. Funciona sem liga\u00e7\u00e3o.",
+    faqHeading: "Perguntas frequentes",
+    moreOnOldest: "Mais sobre a \u00e1rvore mais antiga",
+    oldestQuestion: (city) => `Qual \u00e9 a \u00e1rvore mais antiga de ${city}?`,
+    fullAnswer: "A resposta completa, com mapa e como chegar.",
+    suggestTree: "Conhece uma \u00e1rvore que mere\u00e7a estar nesta lista?",
+    sendIt: "Envie-nos",
+    walkRoutes: "Percursos a p\u00e9",
+    inTheApp: "na aplica\u00e7\u00e3o",
+    whereAmI: "Onde estou",
+  },
+  fr: {
+    home: "Accueil",
+    backToTrees: (n) => `\u2190 Les ${n} arbres`,
+    treesOnMap: (n) => `${n} arbres sur la carte`,
+    headingPrefix: "Arbres remarquables de",
+    readMore: "Lire la suite",
+    visitedOf: (n, city) => `visit\u00e9s \u00e0 ${city}`,
+    saveOrTransfer: "Enregistrer ou transf\u00e9rer vers un autre appareil",
+    mappingAll: "Nous cartographions tous les arbres remarquables du monde.",
+    missingOrWrong: (city) => `Vous en connaissez un \u00e0 ${city} qui manque ici, ou vous voyez une erreur ?`,
+    tellUs: "Dites-le-nous",
+    goingThere: "Vous y allez ?",
+    downloadTrees: (n) => `T\u00e9l\u00e9charger les ${n} arbres`,
+    worksOffline: "comme fichier de carte et ouvrez-le dans Google Maps, Organic Maps ou n'importe quelle application de randonn\u00e9e. Fonctionne hors ligne.",
+    faqHeading: "Questions fr\u00e9quentes",
+    moreOnOldest: "En savoir plus sur l'arbre le plus vieux",
+    oldestQuestion: (city) => `Quel est l'arbre le plus vieux de ${city} ?`,
+    fullAnswer: "La r\u00e9ponse compl\u00e8te, avec une carte et l'acc\u00e8s.",
+    suggestTree: "Vous connaissez un arbre qui a sa place dans cette liste ?",
+    sendIt: "Envoyez-le-nous",
+    walkRoutes: "Itin\u00e9raires \u00e0 pied",
+    inTheApp: "dans l'application",
+    whereAmI: "O\u00f9 suis-je",
+  },
+  ja: {
+    home: "\u30db\u30fc\u30e0",
+    backToTrees: (n) => `\u2190 ${n}\u672c\u306e\u6a39\u6728`,
+    treesOnMap: (n) => `\u5730\u56f3\u4e0a\u306e${n}\u672c`,
+    headingPrefix: "\u306e\u53e4\u6a39",
+    readMore: "\u7d9a\u304d\u3092\u8aad\u3080",
+    visitedOf: (n, city) => `${city}\u3067\u8a2a\u308c\u305f\u6570`,
+    saveOrTransfer: "\u4fdd\u5b58\u3059\u308b\u30fb\u5225\u306e\u7aef\u672b\u306b\u79fb\u3059",
+    mappingAll: "\u4e16\u754c\u4e2d\u306e\u9280\u91cd\u306a\u6a39\u6728\u3092\u5730\u56f3\u306b\u3057\u3066\u3044\u307e\u3059\u3002",
+    missingOrWrong: (city) => `${city}\u3067\u629c\u3051\u3066\u3044\u308b\u6a39\u6728\u3092\u3054\u5b58\u3058\u3067\u3059\u304b\u3001\u307e\u305f\u306f\u8aa4\u308a\u3092\u898b\u3064\u3051\u307e\u3057\u305f\u304b\u3002`,
+    tellUs: "\u304a\u77e5\u3089\u305b\u304f\u3060\u3055\u3044",
+    goingThere: "\u884c\u304d\u307e\u3059\u304b\u3002",
+    downloadTrees: (n) => `${n}\u672c\u5206\u3092\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9`,
+    worksOffline: "\u5730\u56f3\u30d5\u30a1\u30a4\u30eb\u3068\u3057\u3066\u3001Google Maps\u3084Organic Maps\u306a\u3069\u3067\u958b\u3051\u307e\u3059\u3002\u30aa\u30d5\u30e9\u30a4\u30f3\u3067\u3082\u4f7f\u3048\u307e\u3059\u3002",
+    faqHeading: "\u3088\u304f\u3042\u308b\u8cea\u554f",
+    moreOnOldest: "\u6700\u3082\u53e4\u3044\u6a39\u6728\u306b\u3064\u3044\u3066",
+    oldestQuestion: (city) => `${city}\u3067\u6700\u3082\u53e4\u3044\u6a39\u6728\u306f\u3069\u308c\u3067\u3059\u304b\u3002`,
+    fullAnswer: "\u5730\u56f3\u3068\u884c\u304d\u65b9\u3092\u542b\u3080\u5b8c\u5168\u306a\u56de\u7b54\u3067\u3059\u3002",
+    suggestTree: "\u3053\u306e\u30ea\u30b9\u30c8\u306b\u5165\u308b\u3079\u304d\u6a39\u6728\u3092\u3054\u5b58\u3058\u3067\u3059\u304b\u3002",
+    sendIt: "\u304a\u9001\u308a\u304f\u3060\u3055\u3044",
+    walkRoutes: "\u5f92\u6b69\u30eb\u30fc\u30c8",
+    inTheApp: "\u30a2\u30d7\u30ea\u3067",
+    whereAmI: "\u73fe\u5728\u5730",
+  },
+};
+
+/** Chrome strings for `lang`, English wherever that language has no entry. */
+export function ui(lang: string): UIStrings {
+  return { ...EN, ...(TABLE[lang] ?? {}) };
+}
+
 /** The link text inside that line, also in the target language. */
 export const LANG_NAME: Record<string, string> = {
   es: "en español",

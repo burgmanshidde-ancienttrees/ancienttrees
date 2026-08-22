@@ -1172,3 +1172,29 @@ Not settled:
   Ledeboerpark are both likely to have Commons coverage and are worth a sweep.
 - **Enschede's Het Bouwhuis trees** have no street address in the register at all,
   only coordinates, so both pins are marked approximate.
+
+## Dordrecht, Zwolle and Ede, 2026-08-22
+
+Three more from the Dutch LRMB register, 7 trees each, all flagged, no photos.
+
+**Two real measurements captured, which is rare in this register.** Zwolle's
+plane on the Potgietersingel carries a measured height of 33.6 m and a girth of
+719 cm, both now in the data as `height_m` and `girth_cm` so they feed the
+generated thickest and tallest rankings. Dordrecht's black locust in Park
+Merwestein carries something better than a band: municipal research in September
+2020 dated it at 300 to 325 years, which agrees with the register's own
+1700-1750 band and is the firmest age on any Dutch page here.
+
+**Ede's oldest entry is a coppice stool, not a trunk**, and the page says so
+rather than presenting the band as the age of what you see. The register's
+1750-1800 describes when the stool was established; the stems standing on it are
+decades old. Worth remembering the next time a very old band turns up on sandy
+Veluwe ground, because coppice is the normal explanation there.
+
+Not settled:
+- **Dordrecht's Sorghvliet plane** stands on Landgoed Dordwijk, private ground
+  south of the city. The register records it as visitable and the access line
+  tells readers to check before setting out rather than promising them a walk in.
+- **Ede's Pampel oak** is inside Nationaal Park De Hoge Veluwe, which charges
+  admission. Stated in `access`.
+- **Photos: none for any of the three.**
