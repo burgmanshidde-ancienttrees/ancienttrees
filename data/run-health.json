@@ -994,6 +994,26 @@
    "cities_touched": 0,
    "trees": 0,
    "logged": true
+  },
+  {
+   "started": "2026-08-22T06:49:27+00:00",
+   "date": "2026-08-22",
+   "run_id": "32557947484",
+   "minutes": 61.6,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 241,
+   "denials": 33,
+   "denials_source": "permission_denials: Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(git), Bash(grep), Bash(if), Bash(mkdir), Bash(python3), Bash(rm), Bash(wc)",
+   "ended": "success",
+   "tokens": 31908640,
+   "claims_held": [
+    "salzburg"
+   ],
+   "commits": 14,
+   "cities_touched": 1,
+   "trees": 3,
+   "logged": true
   }
  ],
  "schedule_changes": [
