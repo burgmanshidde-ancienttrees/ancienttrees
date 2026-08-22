@@ -12,13 +12,36 @@ It picks a WALK rather than a list: the densest cluster within the given
 radius, best-scored trees first, because a page of six trees scattered over
 nine kilometres is not an afternoon out.
 """
-import json, sys, argparse, os, re
+import json, sys, argparse, os, re, glob
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import nl_candidates as N
 
 def prefix(city):
+    """A three-letter id prefix that no published city is already using.
+
+    Venlo took 'ven', which is Venice's, and the build check caught it one step
+    before Venlo's trees would have overwritten Venetian ones. Two cities
+    sharing a prefix is a data-loss bug rather than a tidiness problem, so this
+    reads what is actually published instead of taking the first three letters
+    and hoping.
+    """
     w = re.sub(r"[^a-z]", "", city.lower())
-    return w[:3]
+    taken = set()
+    for f in glob.glob("data/cities/*.json"):
+        try:
+            for t in json.load(open(f)).get("trees", []):
+                if "_" in (t.get("id") or ""):
+                    taken.add(t["id"].split("_")[0])
+        except Exception:
+            pass
+    # first three letters, then drop the vowels, then walk the alphabet
+    for cand in [w[:3], (w[0] + re.sub(r"[aeiou]", "", w[1:]))[:3], w[:2] + w[-1]]:
+        if len(cand) == 3 and cand not in taken:
+            return cand
+    for c in "abcdefghijklmnopqrstuvwxyz":
+        if w[:2] + c not in taken:
+            return w[:2] + c
+    raise SystemExit("no free id prefix for %r" % city)
 
 def main():
     p = argparse.ArgumentParser()

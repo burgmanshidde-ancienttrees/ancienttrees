@@ -1218,3 +1218,34 @@ by coordinate against every Dutch city file, not by eye.
 
 Two dead trees found in one day, both in the top handful of candidates for their
 city, is the argument for never treating this register as clean.
+
+## Venlo, Deventer and Alkmaar, 2026-08-22
+
+Three more from the Dutch register, 7 trees each, all flagged, no photos.
+
+**A prefix collision caught by the build, not by me.** Venlo was generated with
+the id prefix `ven_`, which belongs to Venice, and two cities sharing a prefix
+overwrite each other's trees. Venlo is now `vnl_`, and `prefix()` in
+scripts/nl_to_research.py reads the published cities and picks a free one
+instead of taking the first three letters and hoping.
+
+**Deventer has the best-argued age on the site.** For the poplar called De Reus
+van De Worp the register dates from a photograph: a 1917 image of the Lange Laan
+in the Ossenwaarde shows the tree small and distant, clearly young, which rules
+out the older datings its girth would suggest. The Worpplantsoen itself is dated
+to a documented 1822 replanting made after the occupying French destroyed the
+old stock, with an earlier 1816 planting redone around 1820 to 1822 because
+drifting ice on the IJssel damaged it.
+
+**Alkmaar's oldest tree changed while the page was being written.** See the note
+above on the Poly storm.
+
+Not settled:
+- **The Steyl sequoia cluster.** The connection this page draws between the
+  missionary orders and three giant sequoias within a kilometre is inference
+  from the addresses, not something the register states. Said so on the page.
+- **Venlo's Vrijbroekweg chestnut** carries an age claim the register attributes
+  to an unnamed elderly passer-by, including a fire in 1870. Passed on as
+  hearsay rather than laundered into a fact; the page tells readers what scar to
+  look for if they want to check it.
+- **Photos: none for any of the three.**
