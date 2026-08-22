@@ -2894,6 +2894,15 @@
     "wasted": 0,
     "brief_wrong": false,
     "note": "Third deepen pass, same day, opening two new stops: Hees (3km west, church square) and Lent (Nijmegen-Noord, across the river). 4 named candidates. 1 shipped (nij_014, Pastorie Chestnut of Lent, a genuine tree-level match against the Rijksmonument listing for its parish square). 2 went to leads (Hees church-square beech and plane, square confirmed but neither individual tree named by any source found), 0 blocked. Two more hosts added to the fetch blocklist (reliwiki.nl, services.nijmegen.nl WFS endpoint, both hang)."
+   },
+   {
+    "target": "nijmegen",
+    "kind": "photo-judge",
+    "tokens": 139207,
+    "trees": 0,
+    "photos": 1,
+    "wasted": 0,
+    "note": "Viewing pass on the photo_hunt.py sweep's Nijmegen queue: 42 candidates across 8 photo-less trees, 22 viewed as pixels (rest already carried 2026-08-13 verdicts). 1 approved: nij_009 the Kabouterboom, identity settled by the file's own GPS (25m from our pin) and its stated girth (850cm, matching our record) rather than by name alone, Nijmegen's first photograph. 41 rejected (wrong tree/wrong town for the nationally-named trees, framing/exposure failures on the rest), 0 held. 7 of the 8 trees are now documented Commons dead ends and should not be re-swept without a new source."
    }
   ]
  }
