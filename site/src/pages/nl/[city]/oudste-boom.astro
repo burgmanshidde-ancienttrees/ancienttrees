@@ -1,5 +1,5 @@
 ---
-// Spanish question page, at the phrase a Spanish speaker actually searches.
+// Dutch question page, at the phrase a Dutch speaker actually searches.
 // Routing only; TranslatedQuestionPage.astro is shared (Contract J v1.13).
 import { getCollection } from "astro:content";
 import TranslatedQuestionPage from "../../../components/TranslatedQuestionPage.astro";
@@ -7,8 +7,8 @@ import { cityIsRenderable } from "../../../lib/trees";
 import { translatedQuestionPaths } from "../../../lib/i18n";
 
 export async function getStaticPaths() {
-  return translatedQuestionPaths("es", (await getCollection("cities")).filter(cityIsRenderable) as any);
+  return translatedQuestionPaths("nl", (await getCollection("cities")).filter(cityIsRenderable) as any);
 }
 const { city, tr } = Astro.props as any;
 ---
-<TranslatedQuestionPage lang="es" city={city} tr={tr} />
+<TranslatedQuestionPage lang="nl" city={city} tr={tr} />

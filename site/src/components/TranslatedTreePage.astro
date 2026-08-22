@@ -1,0 +1,173 @@
+---// The one translated-tree implementation, shared by every language
+// (Contract J v1.13). Extracted from the Spanish template on 2026-08-22.
+
+// Spanish tree page: sibling of ../../[city]/[tree].astro for translated
+// cities. Facts (coordinates, photo, licence) from the canonical city file,
+// text from the overlay. Season block deliberately omitted (its generated
+// labels are English); the collect dialog is translated but points at the
+// same English /app page, which is where the product actually is.
+import Base from "../layouts/Base.astro";
+import SaveHeart from "./SaveHeart.astro";
+import SignInModal from "./SignInModal.astro";
+import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
+import { SIGNIN_JS } from "../lib/signin-js";
+import { cityIsRenderable, renderableTrees, treeSlugsForCity, distLabel, type CityEntry, type Tree } from "../lib/trees";
+import { haversineKm } from "../lib/walks";
+import { usablePhoto, imgSrcset, thumbUrl, creditRequired } from "../lib/images";
+import { speciesIcon } from "../lib/species-icons";
+import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
+import { locationIsApproximate } from "../lib/tree-copy";
+import { mapHead, singlePinScript } from "../lib/map";
+import { hreflangForCity, QUESTION_SLUG, ui, type CityTranslation, type TreeTranslation } from "../lib/i18n";
+
+function esc(s: string): string {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
+
+interface Props {
+  lang: string;
+  city: CityEntry;
+  tree: Tree;
+  x: TreeTranslation;
+  allTrees: Tree[];
+  tr: CityTranslation;
+}
+const { lang, city, tree, x, allTrees, tr } = Astro.props as Props;
+const U = ui(lang);
+const qslug = QUESTION_SLUG[lang] ?? "oldest-tree";
+
+const cslug = city.id;
+const tslugs = treeSlugsForCity(city);
+const tslug = tslugs[tree.id];
+const loc = tree.location;
+const canonical = `${BASE_URL}/${lang}/${cslug}/${tslug}`;
+
+const title = `${x.name}, ${tr.city}`.length <= 60 ? `${x.name}, ${tr.city}` : x.name;
+// Same fill-the-room discipline as the English metaFromStory, inline because
+// the Spanish sentence shapes differ and the helper is four lines.
+function metaEs(story: string): string {
+  const sentences = story.split(/(?<=[.!?]) /);
+  let out = "";
+  for (const s of sentences) {
+    const cand = out ? out + " " + s : s;
+    if (cand.length <= 155) { out = cand; continue; }
+    if (out.length >= 120) break;
+    const cut = cand.slice(0, 154);
+    const sp = cut.lastIndexOf(" ");
+    out = (sp > -1 ? cut.slice(0, sp) : cut).replace(/[,.;:]+$/, "") + "…";
+    break;
+  }
+  return out;
+}
+const description = metaEs(x.story);
+
+function kmBetween(a: { latitude: number; longitude: number }, b: { latitude: number; longitude: number }): number {
+  return haversineKm([a.latitude, a.longitude], [b.latitude, b.longitude]);
+}
+const here = { latitude: loc.latitude!, longitude: loc.longitude! };
+const nearby = allTrees
+  .filter((t) => t.id !== tree.id)
+  .sort((a, b) => kmBetween(here, { latitude: a.location.latitude!, longitude: a.location.longitude! }) - kmBetween(here, { latitude: b.location.latitude!, longitude: b.location.longitude! }))
+  .slice(0, 3);
+
+const crumbItems: [string, string | null][] = [
+  ["Inicio", BASE_URL],
+  [tr.city, `${BASE_URL}/${lang}/${cslug}`],
+  [x.name, null],
+];
+
+const photo = usablePhoto(tree);
+let ogImage = "";
+if (photo?.url) ogImage = `\n<meta property="og:image" content="${esc(thumbUrl(photo.url, 1200))}">`;
+
+const isApprox = locationIsApproximate(tree);
+const graph = [
+  ...SITE_SCHEMA,
+  {
+    "@type": "TouristAttraction",
+    name: x.name,
+    description: x.story.slice(0, 300),
+    isAccessibleForFree: x.access.toLowerCase().startsWith("gratuito"),
+    geo: { "@type": "GeoCoordinates", latitude: loc.latitude, longitude: loc.longitude },
+  },
+  breadcrumbSchema(crumbItems, canonical),
+];
+const headExtra = mapHead() + ogImage + "\n" + hreflangForCity(cslug, "tree", tslug) + "\n" + ldScript(graph);
+const scripts = singlePinScript(loc.latitude!, loc.longitude!);
+---
+<Base title={title} description={description} canonical={canonical} headExtra={headExtra} lang={lang}>
+  <main class="content-page has-tree-bar">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">{U.home}</a> › <a href={`/${lang}/${cslug}`}>{tr.city}</a> › <span>{x.name}</span></nav>
+    <h1>{x.name}</h1>
+    <p class="chip-row">
+      <span class="chip">{x.age_estimate || "edad desconocida"}</span>
+      <span class="chip">{x.species}</span>
+      {isApprox && <span class="chip approx">ubicación aproximada</span>}
+    </p>
+    {photo && photo.url ? (
+      <figure class="tree-photo">
+        <img {...imgSrcset(photo.url, [700, 1100, 1600], "(max-width: 800px) 100vw, 760px")} alt={x.name} loading="lazy" />
+        {creditRequired(photo.license) && <figcaption>Foto: {photo.attribution} ({photo.license})</figcaption>}
+      </figure>
+    ) : (
+      <figure class="tree-noph">
+        <span class="tree-noph-art" aria-hidden="true"><Fragment set:html={`<svg viewBox="0 0 40 40">${speciesIcon(tree)}</svg>`} /></span>
+        <figcaption>
+          <b>{x.species}</b>
+          {/* Never "con tu nombre". We do not publish a submitter's name, on
+              any channel, ruled 2026-08-11; the English page never promised it
+              and this one did. A photographer's credit is a different thing and
+              is owed by the licence, not by us. */}
+          <span>Nadie ha publicado una fotografía de este árbol con una licencia que podamos usar.{" "}
+          <a href="/contribute">Envíanos la tuya</a> y aparecerá en esta página.</span>
+        </figcaption>
+      </figure>
+    )}
+    <div class="action-row">
+      <a class="go-btn" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">Cómo llegar</a>
+      <a class="action-link" href={`/${lang}/${cslug}#walk`}>{U.walkMoreTrees(tr.city)}</a>
+    </div>
+    <div class="prose-block"><p>{x.story}</p></div>
+    <div class="map-embed"><div id="map" class="map"></div></div>
+    <p class="go-note">El botón de arriba abre las indicaciones en tu aplicación de mapas. {x.transport}</p>
+    {isApprox && (
+      <p class="approx-note">
+        El marcador señala la zona correcta de forma aproximada, no el árbol exacto. Está aquí, pero todavía no hemos confirmado la posición precisa sobre el terreno.{" "}
+        <a href="/contribute?kind=correction">¿Sabes exactamente dónde está?</a>
+      </p>
+    )}
+    <dl class="facts">
+      <dt>Especie</dt><dd>{x.species}</dd>
+      <dt>Edad estimada</dt><dd>{x.age_estimate}</dd>
+      <dt>Ubicación</dt><dd>{loc.address ?? ""} ({loc.neighbourhood ?? ""})</dd>
+      <dt>Acceso</dt><dd>{x.access}</dd>
+      <dt>Cómo llegar</dt><dd>{x.transport}</dd>
+    </dl>
+    <h2>Árboles cercanos</h2>
+    <div class="near-cards">
+      {nearby.map((t) => (
+        <a class="near-card" href={`/${lang}/${cslug}/${tslugs[t.id]}`}>
+          <b>{tr.trees[t.id].name}</b>
+          <span>{tr.trees[t.id].age_estimate} · a {distLabel({ latitude: loc.latitude!, longitude: loc.longitude! }, { latitude: t.location.latitude!, longitude: t.location.longitude! })}</span>
+        </a>
+      ))}
+    </div>
+    <div class="cta">
+      {U.whatElseStands(tr.city)} <a href={`/${lang}/${cslug}`}>{U.allTreesLink(allTrees.length, tr.city)}</a> {U.orDiscover} <a href={`/${lang}/${cslug}/${qslug}`}>{U.whichIsOldest(tr.city)}</a>.
+    </div>
+    <div class="report">
+      <strong>Nos vendría bien tu ayuda.</strong>
+      <p class="report-line">Esta página se investigó a distancia. Si conoces este árbol, sabes cosas que nosotros no sabemos.</p>
+      <a class="report-btn" href="/contribute?kind=correction">Aquí hay algo mal</a>
+      <a class="report-btn" href="/contribute?kind=tree">Sugerir otro árbol</a>
+    </div>
+    <div class="tree-bar" aria-label="Acciones">
+      <SaveHeart treeId={x.id} treeName={x.name} labelSave="Guardar" labelSaved="Guardado" />
+      <a class="tb-link dir-link" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">Cómo llegar</a>
+      <a class="tb-link" href={`/${lang}/${cslug}#walk`}>{U.moreTrees}</a>
+    </div>
+    <SignInModal lang={lang} />
+</main>
+  <Fragment slot="scripts" set:html={scripts} />
+</Base>

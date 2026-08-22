@@ -127,6 +127,16 @@ export interface UIStrings {
   cardMore: string;
   cardSave: string;
   cardSaved: string;
+  walkMoreTrees: (city: string) => string;
+  whatElseStands: (city: string) => string;
+  allTreesLink: (n: number, city: string) => string;
+  orDiscover: string;
+  whichIsOldest: (city: string) => string;
+  moreTrees: string;
+  oldestTreeCrumb: string;
+  fullStory: string;
+  cityHasMore: (city: string) => string;
+  withWalkingRoute: string;
 }
 
 const EN: UIStrings = {
@@ -155,6 +165,16 @@ const EN: UIStrings = {
   cardMore: "Read more and get directions \u2192",
   cardSave: "Save",
   cardSaved: "Saved",
+  walkMoreTrees: (c) => `Walk more trees in ${c}`,
+  whatElseStands: (c) => `Want to know what else is still standing in ${c}? See`,
+  allTreesLink: (n, c) => `the ${n} remarkable trees of ${c}`,
+  orDiscover: "or find out",
+  whichIsOldest: (c) => `which is the oldest tree in ${c}`,
+  moreTrees: "More trees",
+  oldestTreeCrumb: "The oldest tree",
+  fullStory: "The full story of this tree",
+  cityHasMore: (c) => `${c} has more trees worth the visit:`,
+  withWalkingRoute: ", with a walking route that passes several of them.",
 };
 
 const TABLE: Record<string, Partial<UIStrings>> = {
@@ -184,6 +204,16 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cardMore: "Leer m\u00e1s y c\u00f3mo llegar \u2192",
     cardSave: "Guardar",
     cardSaved: "Guardado",
+    walkMoreTrees: (c) => `Recorre m\u00e1s \u00e1rboles en ${c}`,
+    whatElseStands: (c) => `\u00bfQuieres saber qu\u00e9 m\u00e1s sigue en pie en ${c}? Mira`,
+    allTreesLink: (n, c) => `los ${n} \u00e1rboles singulares de ${c}`,
+    orDiscover: "o descubre",
+    whichIsOldest: (c) => `cu\u00e1l es el \u00e1rbol m\u00e1s antiguo de ${c}`,
+    moreTrees: "M\u00e1s \u00e1rboles",
+    oldestTreeCrumb: "El \u00e1rbol m\u00e1s antiguo",
+    fullStory: "La historia completa de este \u00e1rbol",
+    cityHasMore: (c) => `${c} tiene m\u00e1s \u00e1rboles que merecen la visita:`,
+    withWalkingRoute: ", con un recorrido a pie que pasa por varios de ellos.",
   },
   it: {
     home: "Home",
@@ -211,6 +241,16 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cardMore: "Leggi di pi\u00f9 e come arrivare \u2192",
     cardSave: "Salva",
     cardSaved: "Salvato",
+    walkMoreTrees: (c) => `Scopri altri alberi a ${c}`,
+    whatElseStands: (c) => `Vuoi sapere che altro \u00e8 rimasto in piedi a ${c}? Guarda`,
+    allTreesLink: (n, c) => `i ${n} alberi monumentali di ${c}`,
+    orDiscover: "oppure scopri",
+    whichIsOldest: (c) => `qual \u00e8 l'albero pi\u00f9 antico di ${c}`,
+    moreTrees: "Altri alberi",
+    oldestTreeCrumb: "L'albero pi\u00f9 antico",
+    fullStory: "La storia completa di questo albero",
+    cityHasMore: (c) => `${c} ha altri alberi che meritano la visita:`,
+    withWalkingRoute: ", con un percorso a piedi che ne tocca diversi.",
   },
   nl: {
     home: "Home",
@@ -238,6 +278,16 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cardMore: "Lees meer en route \u2192",
     cardSave: "Bewaren",
     cardSaved: "Bewaard",
+    walkMoreTrees: (c) => `Loop langs meer bomen in ${c}`,
+    whatElseStands: (c) => `Benieuwd wat er nog meer overeind staat in ${c}? Bekijk`,
+    allTreesLink: (n, c) => `de ${n} monumentale bomen van ${c}`,
+    orDiscover: "of ontdek",
+    whichIsOldest: (c) => `welke de oudste boom van ${c} is`,
+    moreTrees: "Meer bomen",
+    oldestTreeCrumb: "De oudste boom",
+    fullStory: "Het volledige verhaal van deze boom",
+    cityHasMore: (c) => `${c} heeft meer bomen die de moeite waard zijn:`,
+    withWalkingRoute: ", met een wandelroute die er verschillende aandoet.",
   },
   de: {
     home: "Start",
@@ -265,6 +315,16 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cardMore: "Mehr lesen und Anfahrt \u2192",
     cardSave: "Merken",
     cardSaved: "Gemerkt",
+    walkMoreTrees: (c) => `Mehr B\u00e4ume in ${c} ablaufen`,
+    whatElseStands: (c) => `Wissen Sie, was in ${c} sonst noch steht? Sehen Sie`,
+    allTreesLink: (n, c) => `die ${n} alten B\u00e4ume von ${c}`,
+    orDiscover: "oder finden Sie heraus,",
+    whichIsOldest: (c) => `welcher der \u00e4lteste Baum in ${c} ist`,
+    moreTrees: "Mehr B\u00e4ume",
+    oldestTreeCrumb: "Der \u00e4lteste Baum",
+    fullStory: "Die ganze Geschichte dieses Baumes",
+    cityHasMore: (c) => `${c} hat weitere B\u00e4ume, die den Weg lohnen:`,
+    withWalkingRoute: ", mit einem Spaziergang, der an mehreren vorbeif\u00fchrt.",
   },
   pt: {
     home: "In\u00edcio",
@@ -292,6 +352,16 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cardMore: "Ler mais e como chegar \u2192",
     cardSave: "Guardar",
     cardSaved: "Guardado",
+    walkMoreTrees: (c) => `Percorra mais \u00e1rvores em ${c}`,
+    whatElseStands: (c) => `Quer saber o que mais continua de p\u00e9 em ${c}? Veja`,
+    allTreesLink: (n, c) => `as ${n} \u00e1rvores hist\u00f3ricas de ${c}`,
+    orDiscover: "ou descubra",
+    whichIsOldest: (c) => `qual \u00e9 a \u00e1rvore mais antiga de ${c}`,
+    moreTrees: "Mais \u00e1rvores",
+    oldestTreeCrumb: "A \u00e1rvore mais antiga",
+    fullStory: "A hist\u00f3ria completa desta \u00e1rvore",
+    cityHasMore: (c) => `${c} tem mais \u00e1rvores que valem a visita:`,
+    withWalkingRoute: ", com um percurso a p\u00e9 que passa por v\u00e1rias delas.",
   },
   fr: {
     home: "Accueil",
@@ -319,6 +389,16 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cardMore: "Lire la suite et l’acc\u00e8s \u2192",
     cardSave: "Enregistrer",
     cardSaved: "Enregistr\u00e9",
+    walkMoreTrees: (c) => `Parcourez d'autres arbres \u00e0 ${c}`,
+    whatElseStands: (c) => `Envie de savoir ce qui tient encore debout \u00e0 ${c} ? Voyez`,
+    allTreesLink: (n, c) => `les ${n} arbres remarquables de ${c}`,
+    orDiscover: "ou d\u00e9couvrez",
+    whichIsOldest: (c) => `quel est l'arbre le plus vieux de ${c}`,
+    moreTrees: "Plus d'arbres",
+    oldestTreeCrumb: "L'arbre le plus vieux",
+    fullStory: "L'histoire compl\u00e8te de cet arbre",
+    cityHasMore: (c) => `${c} compte d'autres arbres qui valent le d\u00e9tour :`,
+    withWalkingRoute: ", avec un itin\u00e9raire \u00e0 pied qui en relie plusieurs.",
   },
   ja: {
     home: "\u30db\u30fc\u30e0",
@@ -346,6 +426,16 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cardMore: "\u8a73\u3057\u304f\u898b\u308b\u30fb\u884c\u304d\u65b9 \u2192",
     cardSave: "\u4fdd\u5b58",
     cardSaved: "\u4fdd\u5b58\u6e08\u307f",
+    walkMoreTrees: (c) => `${c}\u306e\u4ed6\u306e\u6a39\u6728\u3092\u5DE1\u308b`,
+    whatElseStands: (c) => `${c}\u306b\u4ed6\u306b\u4f55\u304c\u6b8b\u3063\u3066\u3044\u308b\u304b\u3054\u89a7\u304f\u3060\u3055\u3044\u3002`,
+    allTreesLink: (n, c) => `${c}\u306e\u53e4\u6a39${n}\u672c`,
+    orDiscover: "\u307e\u305f\u306f",
+    whichIsOldest: (c) => `${c}\u3067\u6700\u3082\u53e4\u3044\u6a39\u6728`,
+    moreTrees: "\u4ed6\u306e\u6a39\u6728",
+    oldestTreeCrumb: "\u6700\u3082\u53e4\u3044\u6a39\u6728",
+    fullStory: "\u3053\u306e\u6a39\u6728\u306e\u8a73\u3057\u3044\u8a71",
+    cityHasMore: (c) => `${c}\u306b\u306f\u8a2a\u308c\u308b\u4fa1\u5024\u306e\u3042\u308b\u6a39\u6728\u304c\u307e\u3060\u3042\u308a\u307e\u3059\u3002`,
+    withWalkingRoute: "\u5f92\u6b69\u30eb\u30fc\u30c8\u3067\u3044\u304f\u3064\u304b\u3092\u3081\u3050\u308c\u307e\u3059\u3002",
   },
 };
 
@@ -452,3 +542,37 @@ export async function translatedCityPaths(lang: string, allCities: CityLike[]) {
 }
 
 interface CityLike { id: string; data: { trees?: { id: string }[] } }
+
+/** getStaticPaths for a language's tree pages. The 150-250 word bar applies in
+ * every language, so it is enforced here rather than trusted. */
+export async function translatedTreePaths(lang: string, allCities: any[], renderableTrees: any, treeSlugsForCity: any) {
+  const paths: { params: { city: string; tree: string }; props: any }[] = [];
+  for (const slug of translatedCities(lang)) {
+    const city = allCities.find((c) => c.id === slug);
+    if (!city) continue;
+    const tr = cityTranslation(lang, slug)!;
+    const trees = renderableTrees(city);
+    const tslugs = treeSlugsForCity(city);
+    for (const tree of trees) {
+      const x = tr.trees[tree.id];
+      if (!x) throw new Error(`${lang}/${slug}: no translation for ${tree.id}`);
+      const wc = x.story.split(/\s+/).filter(Boolean).length;
+      // Japanese does not space its words, so a token count is meaningless
+      // there; the character bar in the brief stands in for it.
+      if (lang !== "ja" && (wc < 150 || wc > 250)) {
+        throw new Error(`${lang}/${slug}/${tslugs[tree.id]}: story is ${wc} words, the 150-250 bar applies in every language`);
+      }
+      paths.push({ params: { city: slug, tree: tslugs[tree.id] }, props: { city, tree, x, allTrees: trees, tr } });
+    }
+  }
+  return paths;
+}
+
+/** getStaticPaths for a language's question pages. */
+export async function translatedQuestionPaths(lang: string, allCities: any[]) {
+  return translatedCities(lang).map((slug) => {
+    const city = allCities.find((c) => c.id === slug);
+    if (!city) throw new Error(`data/i18n/${lang}/${slug}.json has no matching English city file`);
+    return { params: { city: slug }, props: { city, tr: cityTranslation(lang, slug)! } };
+  });
+}

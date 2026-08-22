@@ -1,5 +1,5 @@
 ---
-// Spanish tree pages. Routing only; TranslatedTreePage.astro is the shared
+// French tree pages. Routing only; TranslatedTreePage.astro is the shared
 // implementation for every language (Contract J v1.13).
 import { getCollection } from "astro:content";
 import TranslatedTreePage from "../../../components/TranslatedTreePage.astro";
@@ -8,8 +8,8 @@ import { translatedTreePaths } from "../../../lib/i18n";
 
 export async function getStaticPaths() {
   const cities = (await getCollection("cities")).filter(cityIsRenderable);
-  return translatedTreePaths("es", cities as any, renderableTrees, treeSlugsForCity);
+  return translatedTreePaths("fr", cities as any, renderableTrees, treeSlugsForCity);
 }
 const p = Astro.props as any;
 ---
-<TranslatedTreePage lang="es" city={p.city} tree={p.tree} x={p.x} allTrees={p.allTrees} tr={p.tr} />
+<TranslatedTreePage lang="fr" city={p.city} tree={p.tree} x={p.x} allTrees={p.allTrees} tr={p.tr} />
