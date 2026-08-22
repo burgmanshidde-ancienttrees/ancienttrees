@@ -1198,3 +1198,23 @@ Not settled:
 - **Ede's Pampel oak** is inside Nationaal Park De Hoge Veluwe, which charges
   admission. Stated in `access`.
 - **Photos: none for any of the three.**
+
+### A second gap in the felled-tree detection, 2026-08-22
+
+Alkmaar's thickest beech, nearly seven metres round in the Alkmaarderhout and
+originally three shoots planted together, was lost in the Poly storm of summer
+2023; about four metres of trunk still stands. The register says so in plain
+Dutch and its own regex missed it, because the word used is "gesneuveld" and the
+regex only knows geveld, gekapt, gerooid, omgewaaid, omgezaagd and verwijderd.
+It was caught one sentence before it would have shipped as the oldest tree in
+Alkmaar.
+
+EXTRA_FELLED in scripts/nl_candidates.py now covers gesneuveld, omgevallen and
+the phrasings that describe a surviving stump ("staat de stam nog", "stamrest",
+"alleen de stam"). Rescanning the whole register with it found 30 further dead
+entries the original regex missed, in Utrecht, Haarlem, Hilversum, Maastricht,
+Zutphen and elsewhere. None of them is on any published page: that was checked
+by coordinate against every Dutch city file, not by eye.
+
+Two dead trees found in one day, both in the top handful of candidates for their
+city, is the argument for never treating this register as clean.

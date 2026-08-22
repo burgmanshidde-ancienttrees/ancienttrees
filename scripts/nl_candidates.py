@@ -32,6 +32,24 @@ def _register():
         _REG_CACHE["d"] = json.load(open(REG))
     return _REG_CACHE["d"]
 
+# Words the register's own regex misses. Each one got a live tree onto a page
+# before it was caught by hand, which is the definition of something that
+# belongs in a check rather than in a memory.
+#
+#   gesneuveld  Alkmaar's thickest beech, nearly seven metres round, was lost in
+#               the Poly storm of summer 2023; about four metres of trunk stands.
+#               Found 2026-08-22 while writing the city, one sentence before it
+#               would have shipped as the oldest tree in Alkmaar.
+#   omgevallen / afgestorven / stormschade variants, on the same principle.
+EXTRA_FELLED = (
+    r"\b(?:is|werd|zijn|werden)\s+(?:helaas\s+)?gesneuveld\b"
+    r"|\bgesneuveld in (?:de|het)\b"
+    r"|\b(?:is|werd)\s+(?:helaas\s+)?omgevallen\b"
+    r"|\bstaat (?:de|het)?\s*stam nog\b"
+    r"|\bstamrest\b|\balleen de stam\b"
+)
+
+
 def looks_felled(history):
     """The register's own test for an entry whose history says THIS tree is gone.
 
@@ -43,7 +61,9 @@ def looks_felled(history):
     if not history:
         return False
     rx = _register().get("dead_entries_regex")
-    return bool(rx and re.search(rx, history, re.I))
+    if rx and re.search(rx, history, re.I):
+        return True
+    return bool(re.search(EXTRA_FELLED, history, re.I))
 
 REG = "data/registers/netherlands-lrmb.json"
 THIS_YEAR = 2026
