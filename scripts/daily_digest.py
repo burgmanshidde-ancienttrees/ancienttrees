@@ -1014,6 +1014,14 @@ def product_section(today):
     return "\n".join(out)
 
 
+# The report chips and the two verdicts, which are OUR words rather than the
+# reader's: a fixed list the control offers, so printing one publishes nothing
+# about the person who tapped it.
+CHIPS = {"wrong location", "dead or gone", "could not reach it",
+         "could not tell which tree", "something else",
+         "worth it", "not worth it"}
+
+
 def feedback_section(today):
     """What readers actually told us, one line each, so the count can be judged.
 
@@ -1061,9 +1069,13 @@ def feedback_section(today):
         tree = (r.get("tree") or r.get("city") or "-")
         # A vote and a chip carry the chip word in the tail; a form submission
         # carries prose, which is the thing we do not print.
+        # A chip comes from a closed list, so it is printed in full: it is our
+        # own vocabulary, not the reader's words, and "14 chars" made the one
+        # thing worth knowing unreadable (Hidde, 2026-08-22: "wat is de notitie
+        # van 14 tekens"). Free prose from the form stays withheld.
         note = "-"
         if detail:
-            note = detail[:22] if len(detail) <= 22 and " " not in detail[:22] else "%d chars" % len(detail)
+            note = detail if detail in CHIPS else "%d chars" % len(detail)
         w = who(r)
         per_acct[w] = per_acct.get(w, 0) + 1
         out.append("| %s | %s | %s | %s | %s | %s |" % (
