@@ -1,0 +1,64 @@
+{
+ "_note": "Spanish overlay for Tenerife, hand-written 2026-08-22 as the first step of the Spanish expansion Hidde approved. Chosen first on impressions per tree: the English page earns 82 impressions over ten days on only four trees, the best ratio of any Spanish city we hold, so it is the cheapest page on the board to put in front of a Spanish-speaking reader. Text only: every coordinate, photo, licence and walk stays in data/cities/tenerife.json.",
+ "city": "Tenerife",
+ "title": "Árboles singulares de Tenerife: el Drago y tres más",
+ "meta_description": "Los cuatro árboles más notables de Tenerife: el Drago Milenario, imposible de datar, y los árboles nativos más alto y más grueso de España.",
+ "intro": "Tenerife es una isla, y esto no es un paseo. Cuatro árboles en tres paradas, con coche entre ellas. Dos pinos canarios que baten récords se alzan a 150 metros el uno del otro en un mirador libre sobre Vilaflor de Chasna, a 1.400 metros de altitud. El drago por el que vienen casi todos los visitantes, el Drago Milenario, está unos 25 kilómetros al norte, en Icod de los Vinos, y un ficus con columnata de raíces aéreas crece unos 20 kilómetros al este, en el jardín botánico del Puerto de la Cruz. Un día cubre los cuatro.",
+ "question_title": "¿Cuál es el árbol más antiguo de Tenerife? (700 años)",
+ "question_meta": "El árbol más antiguo sin discusión de Tenerife es el Pino Gordo, de 700 a 800 años, sobre Vilaflor. El famoso Drago no se puede datar.",
+ "question_answer": "El árbol más antiguo de Tenerife cuya edad nadie discute es el Pino Gordo, un pino canario de unos 700 a 800 años junto a la carretera TF-21, sobre Vilaflor de Chasna. El célebre Drago Milenario de Icod de los Vinos podría ser más viejo, pero su especie no forma anillos anuales de crecimiento y no hay manera de datarlo: la ciencia actual lo sitúa entre 550 y 850 años, la tradición habla de mil o más, y ninguna de las dos cifras se puede comprobar.",
+ "question_context": "La pregunta de la edad tiene en Tenerife una respuesta incómoda, porque el árbol más famoso de la isla es justamente el que nadie puede datar. El Drago Milenario de Icod de los Vinos es una Dracaena draco, y los dragos no forman anillos anuales, así que no hay sección que contar ni forma fiable de leer los años en un tronco construido de este modo. Los trabajos científicos actuales lo sitúan cerca de los 700 años, con un margen de un siglo o más en cualquier dirección. El nombre y la literatura turística dicen mil o más. Las dos cifras circulan y ninguna se puede zanjar. El Pino Gordo, sobre Vilaflor de Chasna, es el árbol más antiguo de esta lista con una estimación que nadie discute: unos 700 a 800 años, sobre un tronco de 9,36 metros de perímetro, el árbol nativo más grueso de España. Su vecino, a 150 metros por el mismo sendero corto, el Pino de las Dos Pernadas, tiene de 500 a 600 años y 56 metros de altura, el árbol nativo más alto de España. El más joven es el Gran Ficus del Puerto de la Cruz, plantado en la década de 1870. Los dos pinos no cuestan nada; el Drago y el ficus cobran entrada.",
+ "faq": [
+  {
+   "q": "¿Cuál es el árbol más antiguo de Tenerife?",
+   "a": "El Pino Gordo, sobre Vilaflor de Chasna, un pino canario de unos 700 a 800 años, es el más antiguo de estos cuatro con una edad que nadie discute. El Drago Milenario de Icod de los Vinos podría ser mayor, pero los dragos no tienen anillos anuales de crecimiento, así que sus estimaciones van desde unos 550 años hasta bastante más de mil."
+  },
+  {
+   "q": "¿Por qué nadie se pone de acuerdo sobre la edad del Drago Milenario?",
+   "a": "Dracaena draco no forma anillos anuales de crecimiento, de modo que el método habitual para datar un árbol no funciona con él. Un estudio moderno lo sitúa en unos 700 años, arriba o abajo un siglo o más; la tradición local y el propio nombre del árbol dicen mil o más."
+  },
+  {
+   "q": "¿Se puede ver el Drago Milenario sin pagar?",
+   "a": "En parte. El árbol se ve desde fuera del Parque del Drago, el recinto trazado a su alrededor en 1996, pero la vista completa de la copa y de la base es desde dentro, y el parque cobra entrada."
+  },
+  {
+   "q": "¿Hace falta coche para ver estos cuatro árboles?",
+   "a": "En la práctica sí. Los dos pinos están en un mirador señalizado de la carretera de montaña TF-21, sin autobús directo, e Icod de los Vinos y el Puerto de la Cruz son dos pueblos distintos de la costa norte, a unos 20 kilómetros uno del otro. Tres paradas en un día se hacen cómodamente en coche."
+  }
+ ],
+ "strings_note": "Per-tree fields: name, species (Spanish common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes.",
+ "trees": {
+  "tfe_001": {
+   "name": "El Drago Milenario",
+   "species": "Drago (Dracaena draco)",
+   "age_estimate": "discutida: un estudio moderno lo sitúa cerca de 700 años, la tradición popular habla de 1.000 o más",
+   "access": "Entrada de pago al Parque del Drago, las tres hectáreas de jardín botánico trazadas alrededor del árbol en 1996. El árbol se ve en parte desde fuera; la vista completa de la copa y la base es desde dentro.",
+   "transport": "Centro de Icod de los Vinos, a unos minutos a pie de la plaza principal. El coche es la forma realista de llegar al pueblo, unos 20 km al oeste del Puerto de la Cruz.",
+   "story": "Nadie puede datar este árbol, y nadie lo va a conseguir. Dracaena draco no forma anillos anuales de crecimiento, así que el método habitual para leer un tronco falla por completo, y las estimaciones llenan ese vacío en consecuencia: los trabajos científicos actuales sitúan al Drago Milenario cerca de los 700 años, con un margen de un siglo o más en cualquier dirección, mientras la tradición, la literatura turística y el propio nombre del árbol insisten en mil o más. El nombre es una afirmación, no una medición. Lo que sí se puede medir es todo lo demás. La base tiene unos 20 metros de perímetro, el árbol alcanza entre 18 y 21 metros según quién midiera, y la copa se extiende unos 20 metros sobre más de 300 ramas primarias, lo que en conjunto lo convierte en el ejemplar vivo más grande y más viejo que se conoce de su especie. España lo declaró monumento nacional en 1917. Ha necesitado ayuda desde entonces: en 1985 los conservadores lo abrieron para instalar ventilación interna contra la pudrición por hongos, y en 1993 se desvió la carretera que pasaba a su lado para librarlo de los humos y de las manos. La savia corre roja al cortar la corteza, la sangre de drago que Europa embotelló como tinte y medicina."
+  },
+  "tfe_002": {
+   "name": "El Pino Gordo",
+   "species": "Pino canario (Pinus canariensis)",
+   "age_estimate": "unos 700 a 800 años",
+   "access": "Gratuito. Sendero señalizado de unos 150 a 200 metros desde un aparcamiento y mirador indicados junto a la carretera de montaña TF-21 hacia el Parador; bancos y paneles informativos en el lugar.",
+   "transport": "En coche por la TF-21, unos kilómetros por encima del pueblo de Vilaflor. Ningún transporte público llega directamente al mirador, así que el coche es la forma realista.",
+   "story": "Vilaflor de Chasna puso este árbol en el escudo del municipio, lo que da una idea razonable de cómo lo valora el pueblo frente a todo lo demás que posee. El Pino Gordo es un pino canario con un tronco de 9,36 metros de perímetro, el árbol nativo más grueso de España y llamado con frecuencia el pino de mayor volumen de Europa. Supera además los 45 metros de altura, lo que en casi cualquier otro sitio sería el titular y aquí ni siquiera es el récord de este mirador: el árbol que está 150 metros más arriba por el sendero le saca once metros. Las estimaciones lo sitúan en unos 700 a 800 años, es decir que ya era un pino considerable cuando Castilla terminó de tomar la isla en 1496, y una plántula varios siglos antes. La corteza lleva cicatrices de fuego. El pino canario es de los pocos pinos capaces de rebrotar directamente de un tronco chamuscado, y así es como un árbol puede pasar siete siglos en una ladera volcánica seca que arde y conservar su copa. Crece a más de 1.400 metros en la Corona Forestal, el cinturón de pinar que rodea el Teide, y llegar hasta él no cuesta nada."
+  },
+  "tfe_003": {
+   "name": "El Pino de las Dos Pernadas",
+   "species": "Pino canario (Pinus canariensis)",
+   "age_estimate": "unos 500 a 600 años",
+   "access": "Gratuito. Sobre un pequeño alto junto al mismo mirador y aparcamiento señalizados que el Pino Gordo, con bancos para contemplarlo.",
+   "transport": "En coche por la TF-21 por encima del pueblo de Vilaflor, la misma parada que el Pino Gordo. Ningún transporte público llega directamente al mirador.",
+   "story": "Con 56 metros, este es el árbol nativo más alto de España, y está a 150 metros del más grueso. El Pino de las Dos Pernadas es la mitad más alta y esbelta de la pareja que se alza sobre Vilaflor de Chasna: unos ocho metros de perímetro frente a los 9,36 del Pino Gordo, y unos 500 a 600 años frente a los 700 a 800 de su vecino. El nombre es una descripción, no una historia. A unos diez metros de altura el tronco se divide en dos brazos de grosor casi idéntico que siguen subiendo uno junto al otro, dos pernadas, y esa horquilla es lo primero que se ve desde el banco de abajo. Según las estimaciones de edad germinó hacia la conquista castellana de la isla, en la década de 1490, y ha pasado los siglos siguientes en una ladera que arde periódicamente; como todo pino canario, su corteza es lo bastante gruesa para sobrevivir a incendios que matarían de golpe a la mayoría de las coníferas. El entorno es la Corona Forestal, a más de 1.400 metros, con vistas sobre el pinar que se extiende bajo el Teide. Es gratuito, por el mismo sendero corto y desde el mismo aparcamiento de la TF-21, que es lo que hace de estos dos una pareja de verdad y no dos entradas que comparten carretera."
+  },
+  "tfe_004": {
+   "name": "El Gran Ficus",
+   "species": "Ficus de Moreton Bay (Ficus macrophylla)",
+   "age_estimate": "unos 150 años, plantado en la década de 1870",
+   "access": "Entrada de pago al jardín botánico (unos 3 euros), abierto a diario de 09:00 a 18:00, cerrado el 1 de enero, el Viernes Santo y el 25 de diciembre.",
+   "transport": "Centro del Puerto de la Cruz, accesible a pie desde el casco, con parada de guagua 'Jardín Botánico' en la misma puerta. Entre las tres paradas de la isla, el coche es la forma realista.",
+   "story": "Este árbol no para de añadir troncos. El Gran Ficus deja caer raíces aéreas desde sus ramas, y las que alcanzan el suelo engordan, endurecen y fraguan como columnas, de modo que lo que empezó siendo un solo ficus de Moreton Bay es hoy una columnata de unos 30 metros de altura en la que el visitante entra en lugar de rodearla. Es, por siglos, el más joven de esta lista. El jardinero jefe suizo del jardín, Hermann Wildpret, en el puesto entre 1860 y 1893, lo plantó en la década de 1870, lo que le da unos 150 años; alguna guía lo sitúa en unos 200 sin dar fecha de plantación, y la plantación documentada es la apuesta más sólida. El jardín es mucho más antiguo, fundado por real orden de Carlos III en 1788 e inaugurado en 1792 para aclimatar plantas tropicales al clima europeo, así que el ficus llega con un siglo de retraso a su propia dirección. Las fuentes no coinciden en la letra pequeña de qué es exactamente: algunas lo dan como la forma de la isla de Lord Howe y no como la australiana continental. Nadie lo ha zanjado, y si usted lo sabe, díganoslo."
+  }
+ }
+}
