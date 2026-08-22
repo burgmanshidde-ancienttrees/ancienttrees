@@ -1,53 +1,53 @@
 # LOG
 
-## 2026-08-22 - Eindhoven opened, and a way to open 24 more Dutch cities
+## 2026-08-22 - Fourteen Dutch cities opened from the national register
 
-**Eindhoven is live with 7 trees**, the first city built from the Dutch national
-register since its licence was corrected. The page has a spine: the old trees of
-Eindhoven are nearly all Philips trees. A horse chestnut planted in 1909 because
-the company thought staff worked better with something green in view, standing
-now at gate 11 of the stadium with 470 square metres of ground reserved for its
-roots. The estate Frits Philips lived on until 2005, shut for a century and
-opened to the public on 27 September 2025. And the plane at Wasven that three
-teenagers set on fire in 2022, given a thirty percent chance, now held up by
-thirty of its own shoots woven into a living scaffold.
+Hidde asked for the top 25 large Dutch cities that have trees in the national
+register and no page here yet, and told me to build them. Fourteen are live,
+98 trees. The other eleven have their candidates saved and are ready to write.
 
-**The bigger piece is the machinery.** Hidde asked for the top 25 large Dutch
-cities that have register trees and no page yet. That list now exists, and so do
-the two scripts that build from it:
+**Live today:** Eindhoven (7), Apeldoorn (8), Tilburg (7), Amersfoort (7),
+Enschede (7), Leeuwarden (7), Dordrecht (7), Zwolle (7), Ede (7), Venlo (7),
+Deventer (7), Alkmaar (7), Emmen (7), Helmond (7).
 
-- `scripts/nl_candidates.py` filters the register to trees that are publicly
-  visitable and are single collectible points, drops the ones the register's own
-  history says have been felled, translates the Dutch species name into the exact
-  string the site already publishes, and clusters what is left into walks.
-- `scripts/nl_to_research.py` turns a city's best cluster into a research file
-  the writing pass can finish.
+**Still to write:** Oss, Hilversum, Zaanstad, Haarlemmermeer, Amstelveen,
+Sittard-Geleen, Heerlen, Roosendaal, Leidschendam-Voorburg, Hoorn, Assen.
 
-**1,017 candidates across 25 cities** are saved in `data/leads/*-register.json`,
-so no later run repeats the search. The felled-tree filter caught 12 trees that
-would otherwise have gone live dead.
+Each page has a spine the register handed over rather than a list. Eindhoven's
+old trees are nearly all Philips trees. Enschede's were bought by textile money,
+and one arrives with a surviving 1865 invoice for a Wellingtonia. Deventer's park
+was replanted in 1822 after the occupying French felled it. Emmen has an oak
+growing inside a five-thousand-year-old megalithic tomb.
 
-Measured before starting, because it changes what this is worth: our thirteen
-Dutch pages are 9 percent of the site's pages and take 8 percent of its
-impressions. Nine of them have never had a click. So this is cheap supply rather
-than proven demand, and the honest read is that it is worth doing because it
-costs little, not because Dutch pages are winning.
+**Three dead trees were caught before they shipped, which is the part worth
+reading.** Tilburg's Heuvel lime, the tree the city may be named after, is still
+in the register with a planting band of 1600-1700; it was felled in 1994 and
+three descendants were planted in 2009. Alkmaar's thickest beech, nearly seven
+metres round, went down in the Poly storm of 2023 and the register still lists it.
+Both were in the top handful of candidates for their city. Each produced a check:
 
-**Also found: ten real Dutch cities were missing from the queue entirely**,
-Eindhoven and Tilburg among them, so no night run could ever have picked them.
-Eindhoven is now in it.
+- `needs_alive_check()` flags any candidate 200 years or older whose register
+  history is empty, because the register's felled-entry regex can only read
+  entries that have a history and 58 percent do not.
+- `EXTRA_FELLED` adds the words that regex was missing, starting with
+  "gesneuveld". Rescanning found 30 more dead entries. None is on a live page;
+  that was checked by coordinate against every Dutch tree, not by eye.
 
-What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
+The build also caught Venlo generating as `ven_`, which is Venice's id prefix,
+one step before Venlo's trees would have overwritten Venetian ones.
 
-<!-- archive-index -->
+**Two measurements captured**, which matters because they feed the thickest and
+tallest rankings: Zwolle's plane at 33.6 m and 719 cm, and Dordrecht's black
+locust, which the city itself dated to 300-325 years in September 2020.
 
-**Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
+**Measured before starting, and it should temper the enthusiasm.** Our Dutch
+pages are 9 percent of the site's pages and take 8 percent of its impressions,
+and nine of thirteen had never had a click. This is cheap supply, not proven
+demand. It is worth doing because the register makes it nearly free, not because
+Dutch pages are winning.
 
-- [2026-08](archive/LOG-2026-08.md)
-- [2026-07](archive/LOG-2026-07.md)
-
-So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
-<!-- archive-index -->
+**FOR HIDDE:** nothing is blocked and nothing needs you. The eleven remaining
+cities are ordinary work now that the machinery exists.
 
 ## 2026-08-22 (session) - Munich 30 to 44: finished the write pass a prior attempt left claimed and unwritten
 
