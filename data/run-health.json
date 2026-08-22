@@ -1034,6 +1034,26 @@
    "cities_touched": 5,
    "trees": 14,
    "logged": true
+  },
+  {
+   "started": "2026-08-22T08:26:49+00:00",
+   "date": "2026-08-22",
+   "run_id": "32561731080",
+   "minutes": 29.3,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 297,
+   "denials": 22,
+   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(file), Bash(for), Bash(if), Bash(mkdir), Bash(pip), Bash(python3), Bash(rm), Bash(which)",
+   "ended": "success",
+   "tokens": 68003104,
+   "claims_held": [
+    "prague"
+   ],
+   "commits": 33,
+   "cities_touched": 5,
+   "trees": 29,
+   "logged": true
   }
  ],
  "schedule_changes": [
