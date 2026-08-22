@@ -61,6 +61,37 @@ export function cityTranslation(lang: string, slug: string): CityTranslation | n
  * actually search in that language rather than an English path segment. */
 export const QUESTION_SLUG: Record<string, string> = {
   es: "arbol-mas-antiguo",
+  it: "albero-piu-antico",
+  nl: "oudste-boom",
+  de: "aeltester-baum",
+  pt: "arvore-mais-antiga",
+  fr: "arbre-le-plus-vieux",
+  ja: "saiko-rei-no-ki",
+};
+
+/** The visible "this page also exists in X" line, in the TARGET language.
+ * It sits on the English page, so it has to read as an invitation to a
+ * speaker of that language rather than as English telling them a translation
+ * exists somewhere. */
+export const LANG_INVITE: Record<string, string> = {
+  es: "Esta página también está disponible",
+  it: "Questa pagina è disponibile anche",
+  nl: "Deze pagina is ook beschikbaar",
+  de: "Diese Seite gibt es auch",
+  pt: "Esta página também está disponível",
+  fr: "Cette page est également disponible",
+  ja: "このページは次の言語でもご覧いただけます",
+};
+
+/** The link text inside that line, also in the target language. */
+export const LANG_NAME: Record<string, string> = {
+  es: "en español",
+  it: "in italiano",
+  nl: "in het Nederlands",
+  de: "auf Deutsch",
+  pt: "em português",
+  fr: "en français",
+  ja: "日本語",
 };
 
 /** Reciprocal hreflang link tags for a page that exists in English and in

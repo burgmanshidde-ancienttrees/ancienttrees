@@ -1,5 +1,5 @@
 # SEO_GEO_BLUEPRINT.md — Ancient Trees
-Version 1.11 — Owner: Hidde. No page ships without conforming to this document. Changes require Hidde's explicit approval and a version bump with changelog entry (bottom of file).
+Version 1.13 — Owner: Hidde. No page ships without conforming to this document. Changes require Hidde's explicit approval and a version bump with changelog entry (bottom of file).
 
 This document has two layers with different lifespans. Layer 1 (Principles) should almost never change. Layer 2 (Page Contracts) changes rarely and only via versioning. Volatile tactics (current keyword targets, AI-citation trends, measurement results) do NOT belong here — they live in CLAUDE.md and CURATION.md.
 
@@ -155,16 +155,58 @@ The mid-tier of the pyramid (tree → city → country), added v1.5 on Hidde's i
 
 ---
 
-### Contract J — Translated city set  `/es/[city]` (v1.10, test scope)
+### Contract J — Translated city set  `/[lang]/[city]` (v1.13)
 
 Approved by Hidde in session 2026-08-10 ("wat als we een paar spaanse paginas
 maken en testen of het werkt? maar wel een opzet doen die op de lange termijn
-werkt"). One city translated end to end as a market test, inside the structure
-that scales if it works.
+werkt") as a one-city Spanish test, and widened to seven languages on
+2026-08-22 ("we zijn verder dan de testfase dus mijn goedkeuring om meerdere
+talen te gaan toevoegen"). The structure it was built inside is the one that
+now carries them.
 
-- **URL shape:** language subdirectory. `/es/{city}`, `/es/{city}/{tree-slug}`
-  (tree slugs stay identical to English), `/es/{city}/arbol-mas-antiguo` for
-  the question page (the searched phrase, not an English path segment).
+**The languages, and why each is in.** Selection is not a guess: demand sits
+in the LOCAL language of the city, measured across six cities in
+`data/research/language-demand.json`. Local-language pageviews run 18 to 53
+percent of English for that same city, while every other language lands
+between 3 and 21 percent. So a language is translated onto the cities of its
+own language area, never onto whichever English page happens to perform best.
+
+| Lang | Cities | Trees | Local share | In AllTrails and komoot |
+|---|---:|---:|---:|---|
+| es | 14 | 178 | 34% (Barcelona) | both |
+| it | 24 | 281 | 44% (Rome) | both |
+| nl | 16 | 218 | 18% (Amsterdam) | both |
+| de | 9 | 145 | 53% (Vienna) | both |
+| pt | 8 | 100 | Lisbon | both |
+| fr | 6 | 83 | Paris | both |
+| ja | 5 | 53 | 45% (Kyoto) | komoot only |
+
+Chinese is deliberately absent and stays absent without a fresh decision:
+Google is blocked in mainland China, so is Wikipedia, and neither AllTrails
+nor komoot bets on it. Recorded so it is not re-proposed as an oversight.
+
+**Which pages, ruled by Hidde 2026-08-22 ("kies de best lopende paginas").**
+The best-performing page of each language area goes first, not the cheapest.
+That buys signal speed rather than tokens, which is the right trade when the
+question is which language to keep investing in and the answer is wanted
+soon.
+
+- **URL shape:** language subdirectory. `/{lang}/{city}`,
+  `/{lang}/{city}/{tree-slug}` (tree slugs stay identical to English), and a
+  question page whose last segment is the phrase people actually search in
+  that language, never an English path segment. The table lives in
+  `QUESTION_SLUG` in `site/src/lib/i18n.ts` and a language cannot build
+  without an entry:
+
+  | Lang | Question slug |
+  |---|---|
+  | es | `arbol-mas-antiguo` |
+  | it | `albero-piu-antico` |
+  | nl | `oudste-boom` |
+  | de | `aeltester-baum` |
+  | pt | `arvore-mais-antiga` |
+  | fr | `arbre-le-plus-vieux` |
+  | ja | `saiko-rei-no-ki` |
 - **hreflang is reciprocal or it is nothing.** Every translated page and its
   English pair each carry `hreflang` links to both versions plus `x-default`
   pointing at English. The English city page also carries one visible link to
@@ -179,13 +221,22 @@ that scales if it works.
   60, descriptions max 155, no em dashes, answer-first on the question page.
   Hand-written in the target language; mechanically patched text is forbidden
   (the 2026-08-09 accent incident is the reason this sentence exists).
-- **Known limits of the test, deliberate:** site chrome (nav, footer), map
-  popups and the season block stay English. If the test earns a second
-  language or a wider rollout, those become contract items, not silent debt.
-- **The test's measure, recorded so the page is judged by it:** Malaga was
-  chosen because "árboles históricos de málaga" showed 20 impressions at
-  position 74 with our English page. The question is whether `/es/malaga`
-  moves on that query within four weeks of indexing.
+- **Known limits, deliberate and now named as debt rather than as a test
+  caveat:** site chrome (nav, footer), map popups and the season block stay
+  English. A language that earns a rollout pays this off before it is called
+  finished.
+- **One implementation, not one per language.** The three page templates are
+  shared and take the language as a prop; a language adds thin route files and
+  a `data/i18n/{lang}/` directory, never a copy of the template. Written into
+  the contract because the Spanish test shipped as a deliberate second copy
+  with a note saying ten copies would be a maintenance bug.
+- **The measure, recorded BEFORE anything is built, per language:** within
+  four weeks of indexing the translated set exceeds its English twin's
+  impressions, AND its position on the target-language query beats the English
+  page's. Malaga, the first case, cleared both in eleven days: 132 impressions
+  against 80, and position 15 against 75. A language that fails both on two
+  cities gets no further investment however large its supply, and that is
+  written down now so a good story cannot rescue it later.
 
 ## MEASUREMENT CONTRACT (what proves this blueprint works)
 
@@ -195,6 +246,7 @@ The hypothesis order, checked in Search Console: (1) question pages show impress
 
 ## CHANGELOG
 
+- **v1.13 (2026-08-22):** Contract J widened from the one-city Spanish test to seven languages (es, it, nl, de, pt, fr, ja), approved by Hidde in session ("we zijn verder dan de testfase dus mijn goedkeuring om meerdere talen te gaan toevoegen"). The test it replaces had answered: `/es/malaga` went from 14 to 132 impressions in six days, took its first clicks on 08-21, and sits at position 15 on the query its English twin sits at 75 on. Three things are now contract rather than note. Selection is measured, not chosen: demand sits in the local language of the city (18 to 53 percent of English pageviews, against 3 to 21 percent for any other language, `data/research/language-demand.json`), so a language goes onto its own language area and never onto whichever English page performs best. The question-page slug table is per language and a language cannot build without its entry. And the three templates become one shared implementation taking a language prop, which the Spanish test's own code comment asked for in advance. Chinese is recorded as deliberately absent: Google and Wikipedia are both blocked in mainland China, and neither AllTrails (14 locales) nor komoot (21) bets on it. Which pages go first was Hidde's call the same day ("kies de best lopende paginas"): the best-performing page per language area rather than the cheapest, buying signal speed over tokens.
 - **v1.11 (2026-08-11):** og:image and schema `image`, approved by Hidde in session ("ja verbeter en SEO_GEO_BLUEPRINT"). He spotted it in Search Console Insights: of 95 city pages only /lisbon showed a tree photograph beside its result and every other page showed our generic logo. Two causes, both real. City pages never set og:image from their own photo, so all 95 emitted `og-default.png`; tree pages did set one. And NO page of any type declared `image` in its structured data, so Google was left to guess a thumbnail from the markup. Both fixed: city pages now take their face photo (hero tree, else first tree with a usable photo) as og:image, and city, tree and list entities all carry a schema `image` array. A thumbnail beside a result moves click-through more than any title rewrite, which matters on a site whose measured problem is click-through, and it applies to every page at once rather than city by city.
 - **v1.9 (2026-08-08):** Contract I restructured newsroom-first, approved by Hidde in session ("maak maar die perspagina") after he judged the v1.8 page useless ("vrij bizar... wat doet bijvoorbeeld AllTrails op een perspagina") and a convention check of AllTrails' newsroom answered him: their press page is data stories first, kit second. Ours now leads with dated stories from the data, then a press kit (generated boilerplate, downloadable logo SVG, live-site screenshots), then the caveats and the form. The page also left the global footer the same day: it is reachable from the contribute form and from pitches, a destination for journalists rather than site furniture. The no-hand-typed-numbers rule is unchanged.
 - **v1.8 (2026-08-08):** Added Contract I (press page `/press`), approved by Hidde in session ("pers pagina is prima"). Built because the site had a press-worthy finding and nowhere to send a journalist: four in ten of the ancient trees we map in European cities are not European species. The contract's distinguishing rule is that no number on the page may be hand-typed, all of them generate from the tree data at build time, since a press page exists to be checked and a stale figure there costs more than no page at all. Carries its own caveats rather than supplying them on request.
