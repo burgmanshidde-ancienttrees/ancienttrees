@@ -1,0 +1,175 @@
+{
+ "_note": "Wikipedia pageviews per language edition, May-Jul 2026, human traffic only, from the free Wikimedia pageviews API. Gathered 2026-08-22 to answer Hidde's question of which language to translate into, and specifically whether Chinese is worth it because of Asian tourists in the Netherlands. Kept on disk because it cost API calls and rate-limit backoff to gather and would otherwise be re-derived.",
+ "_finding": "Demand sits in the LOCAL language of the city, not in the language of its visitors. Local-language share of English pageviews: Vienna/German 53%, Kyoto/Japanese 45%, Rome/Italian 44%, Barcelona/Spanish 34%, Amsterdam/Dutch 18%. Every other language for that same city lands between 3 and 21%. This is why the Malaga test worked and why translating our best ENGLISH pages into Spanish would not inherit their success.",
+ "_chinese": "Chinese runs 4-7% of English for European cities and 13% for Kyoto, its only real showing. Read it with the structural point, which matters more: Google is blocked in mainland China and so is Wikipedia, so these views come from Taiwan, Hong Kong, Singapore, Malaysia and the diaspora. That is exactly the Chinese-speaking population Google can reach, which makes this a fair proxy rather than an unfair one, and it is small. Mainland travellers plan on Xiaohongshu, Ctrip and Mafengwo and search on Baidu; we cannot reach them through the one channel we have.",
+ "_caveat": "Wikipedia measures curiosity, not travel intent, and travel_demand.py already showed Wikivoyage is the better proxy for intent (rho +0.41 against +0.24). Used here anyway because Wikivoyage's own adoption varies wildly by language, which would confound a cross-LANGUAGE comparison; Wikipedia is large in every edition. Read these as relative interest per language, never as a traffic forecast.",
+ "languages": [
+  "en",
+  "es",
+  "zh",
+  "ja",
+  "ko",
+  "de",
+  "fr",
+  "it",
+  "nl",
+  "pt"
+ ],
+ "window": "2026-05-01 to 2026-07-31",
+ "local_language": {
+  "Amsterdam": "nl",
+  "Barcelona": "es",
+  "Rome": "it",
+  "Prague": "cs (not measured)",
+  "Vienna": "de",
+  "Kyoto": "ja"
+ },
+ "pageviews": {
+  "Amsterdam": {
+   "en": 291271,
+   "es": 38005,
+   "zh": 11617,
+   "ja": 23042,
+   "ko": 2023,
+   "de": 51472,
+   "fr": 31082,
+   "it": 21993,
+   "nl": 51586,
+   "pt": null
+  },
+  "Barcelona": {
+   "en": 343123,
+   "es": 116527,
+   "zh": 19753,
+   "ja": 31635,
+   "ko": 5746,
+   "de": 70224,
+   "fr": 64581,
+   "it": 39665,
+   "nl": 14666,
+   "pt": 18657
+  },
+  "Rome": {
+   "en": 355273,
+   "es": 53469,
+   "zh": 17141,
+   "ja": 22968,
+   "ko": 5644,
+   "de": 75541,
+   "fr": 47714,
+   "it": 154754,
+   "nl": 10102,
+   "pt": 24759
+  },
+  "Prague": {
+   "en": 300360,
+   "es": 38067,
+   "zh": 21242,
+   "ja": 19265,
+   "ko": 3542,
+   "de": 64851,
+   "fr": 38516,
+   "it": 23504,
+   "nl": 14042,
+   "pt": 13420
+  },
+  "Vienna": {
+   "en": 280190,
+   "es": 38744,
+   "zh": 18053,
+   "ja": 22494,
+   "ko": 2920,
+   "de": 149483,
+   "fr": 33796,
+   "it": 26234,
+   "nl": 12456,
+   "pt": 10350
+  },
+  "Kyoto": {
+   "en": 141060,
+   "es": 12447,
+   "zh": 18247,
+   "ja": 63337,
+   "ko": 4322,
+   "de": 19490,
+   "fr": 12485,
+   "it": 8797,
+   "nl": 4001,
+   "pt": 3899
+  }
+ },
+ "share_of_english": {
+  "Amsterdam": {
+   "en": 100.0,
+   "es": 13.0,
+   "zh": 4.0,
+   "ja": 7.9,
+   "ko": 0.7,
+   "de": 17.7,
+   "fr": 10.7,
+   "it": 7.6,
+   "nl": 17.7,
+   "pt": null
+  },
+  "Barcelona": {
+   "en": 100.0,
+   "es": 34.0,
+   "zh": 5.8,
+   "ja": 9.2,
+   "ko": 1.7,
+   "de": 20.5,
+   "fr": 18.8,
+   "it": 11.6,
+   "nl": 4.3,
+   "pt": 5.4
+  },
+  "Rome": {
+   "en": 100.0,
+   "es": 15.1,
+   "zh": 4.8,
+   "ja": 6.5,
+   "ko": 1.6,
+   "de": 21.3,
+   "fr": 13.4,
+   "it": 43.6,
+   "nl": 2.8,
+   "pt": 7.0
+  },
+  "Prague": {
+   "en": 100.0,
+   "es": 12.7,
+   "zh": 7.1,
+   "ja": 6.4,
+   "ko": 1.2,
+   "de": 21.6,
+   "fr": 12.8,
+   "it": 7.8,
+   "nl": 4.7,
+   "pt": 4.5
+  },
+  "Vienna": {
+   "en": 100.0,
+   "es": 13.8,
+   "zh": 6.4,
+   "ja": 8.0,
+   "ko": 1.0,
+   "de": 53.4,
+   "fr": 12.1,
+   "it": 9.4,
+   "nl": 4.4,
+   "pt": 3.7
+  },
+  "Kyoto": {
+   "en": 100.0,
+   "es": 8.8,
+   "zh": 12.9,
+   "ja": 44.9,
+   "ko": 3.1,
+   "de": 13.8,
+   "fr": 8.9,
+   "it": 6.2,
+   "nl": 2.8,
+   "pt": 2.8
+  }
+ }
+}
