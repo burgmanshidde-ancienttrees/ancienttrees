@@ -950,6 +950,28 @@
    "cities_touched": 0,
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-08-22T05:33:15+00:00",
+   "date": "2026-08-22",
+   "run_id": "32554640245",
+   "minutes": 16.0,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 148,
+   "denials": 42,
+   "denials_source": "permission_denials: Bash(bash), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(git), Bash(if), Bash(mkdir), Bash(python3), Edit, Write",
+   "ended": "success",
+   "tokens": 4668464,
+   "claims_held": [
+    "brisbane",
+    "padua",
+    "nijmegen"
+   ],
+   "commits": 7,
+   "cities_touched": 0,
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
