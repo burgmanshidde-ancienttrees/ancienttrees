@@ -40,6 +40,10 @@ public final class Navigator {
     /// finds a destination (search, a shortcut), cleared by the root.
     public var push: Route?
 
+    /// Collect's own button asking for the nearby-trees sheet. The root owns
+    /// every sheet, so the request travels rather than the presentation.
+    public var collectNearby = false
+
 
     public init() {}
 }

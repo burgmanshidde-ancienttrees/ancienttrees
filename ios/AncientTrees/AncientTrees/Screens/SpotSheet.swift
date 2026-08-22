@@ -14,8 +14,15 @@
 import SwiftUI
 
 struct SpotSheet: View {
+    /// The two jobs that used to share one button and one name, which is what
+    /// made both of them fuzzy (Hidde, 2026-08-22). COLLECT claims a tree we
+    /// already map and belongs with your collection; ADD contributes a tree we
+    /// do not have and belongs in the centre of the bar.
+    enum Mode: String { case collect, add }
+
     let catalogue: Catalogue
     let origin: (lat: Double, lng: Double)
+    var mode: Mode = .add
     @Environment(Saved.self) private var saved
     @Environment(Sightings.self) private var sightings
     @Environment(Account.self) private var account
@@ -72,13 +79,10 @@ struct SpotSheet: View {
                     tickedState(t)
                 } else if sent == true {
                     sentState
-                } else if intro {
-                    SpotIntro(nearbyCount: nearbyTrees.count,
-                              onCollect: {
-                                  intro = false
-                                  if nearbyTrees.isEmpty { adding = true; shooting = nil; camera = true }
-                              },
-                              onSuggest: { intro = false; adding = true })
+                } else if intro && mode == .add {
+                    AddIntro(onStart: { intro = false; adding = true })
+                } else if mode == .collect && !adding {
+                    if nearbyTrees.isEmpty { noTreeNearby } else { tickList }
                 } else if adding || nearbyTrees.isEmpty {
                     addForm
                 } else {
@@ -102,6 +106,29 @@ struct SpotSheet: View {
     }
 
     // MARK: - Tick a tree we map
+
+    /// Standing somewhere we map nothing at all. Collecting needs one of our
+    /// trees in front of you, so this says so and points at the other verb
+    /// rather than quietly turning into it.
+    private var noTreeNearby: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            Text("No tree of ours within reach")
+                .font(.brand(24, .heavy)).foregroundStyle(Brand.ink)
+            Text("Collecting means standing in front of a tree we map. There is none near you right now.")
+                .font(.body).foregroundStyle(Brand.inkSoft)
+                .fixedSize(horizontal: false, vertical: true)
+            Button { adding = true } label: {
+                HStack { Spacer()
+                    Label("Add a tree we are missing", systemImage: "plus")
+                        .font(.brand(16, .bold))
+                    Spacer() }
+                    .padding(.vertical, 13)
+                    .background(Brand.surfaceMuted, in: .rect(cornerRadius: 15))
+                    .foregroundStyle(Brand.ink)
+            }
+            .buttonStyle(.plain)
+        }
+    }
 
     private var tickList: some View {
         Group {

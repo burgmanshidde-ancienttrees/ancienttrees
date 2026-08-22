@@ -105,7 +105,8 @@ def screens(sub):
     return [
         ("map",           ["-tab=0"], 7),
         ("explore",       ["-tab=1"], 4),
-        ("spot",          ["-spot"], 5),
+        ("add",           ["-add"], 5),
+        ("collect-tree",  ["-collect-tree"], 5),
         ("search",        ["-search=lis"], 5),
         ("spot-add",      ["-spot", "-at=52.03,5.91"], 6),
         ("walk-begin",    ["-begin=amsterdam|Plantage"], 7),

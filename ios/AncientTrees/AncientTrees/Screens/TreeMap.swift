@@ -13,6 +13,19 @@
 import SwiftUI
 import MapKit
 
+/// One of your own, which has no Tree behind it at all.
+final class MineAnnotation: NSObject, MKAnnotation {
+    let key: String
+    let coordinate: CLLocationCoordinate2D
+    let title: String?
+    var subtitle: String? { "Yours" }
+    init(key: String, lat: Double, lng: Double, name: String) {
+        self.key = key
+        coordinate = .init(latitude: lat, longitude: lng)
+        title = name
+    }
+}
+
 final class TreeAnnotation: NSObject, MKAnnotation {
     let tree: Tree
     var coordinate: CLLocationCoordinate2D { .init(latitude: tree.lat, longitude: tree.lng) }
@@ -23,6 +36,10 @@ final class TreeAnnotation: NSObject, MKAnnotation {
 
 struct TreeMap: UIViewRepresentable {
     let trees: [Tree]
+    /// Trees only THIS person has: photographed by them, ours or not. Drawn as
+    /// their own pins so the two layers are legible as two layers, which is
+    /// Hidde's own distinction (2026-08-21).
+    var mine: [(id: UUID, lat: Double, lng: Double, name: String)] = []
     var focus: CLLocationCoordinate2D?
     /// A walk's line. Real when route_walks.py cached a routed shape, otherwise
     /// the order the trees are visited, which is NOT the path a walker takes.
@@ -116,9 +133,13 @@ struct TreeMap: UIViewRepresentable {
 
         let have = Set((map.annotations.compactMap { $0 as? TreeAnnotation }).map(\.tree.id))
         let want = Set(trees.map(\.id))
-        guard have != want else { return }
-        map.removeAnnotations(map.annotations.filter { $0 is TreeAnnotation })
+        let haveMine = Set((map.annotations.compactMap { $0 as? MineAnnotation }).map(\.key))
+        let wantMine = Set(mine.map { $0.id.uuidString })
+        guard have != want || haveMine != wantMine else { return }
+        map.removeAnnotations(map.annotations.filter { $0 is TreeAnnotation || $0 is MineAnnotation })
         map.addAnnotations(trees.map(TreeAnnotation.init))
+        map.addAnnotations(mine.map { MineAnnotation(key: $0.id.uuidString, lat: $0.lat,
+                                                     lng: $0.lng, name: $0.name) })
         context.coordinator.setRoute(route, real: routeIsReal, on: map)
     }
 

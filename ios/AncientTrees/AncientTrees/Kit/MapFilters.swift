@@ -29,8 +29,11 @@ struct MapFilters: Equatable {
     /// tree, so it is applied with the collection passed in, the same way
     /// distance is applied with an origin.
     var collectedOnly = false
+    /// Trees you added yourself, which are not in our catalogue at all, so
+    /// this one is answered by the sightings store rather than by a tree.
+    var yoursOnly = false
 
-    var isOn: Bool { peakingNow || withPhoto || walkable || collectedOnly || species != nil }
+    var isOn: Bool { peakingNow || withPhoto || walkable || collectedOnly || yoursOnly || species != nil }
 
     func keeps(_ t: Tree, month: Int, collected: Set<String> = []) -> Bool {
         if collectedOnly, !collected.contains(t.id) { return false }
