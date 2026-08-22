@@ -1117,6 +1117,28 @@
    "cities_touched": 0,
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-08-22T22:27:40+00:00",
+   "date": "2026-08-22",
+   "run_id": "32602485012",
+   "minutes": 23.3,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 209,
+   "denials": 30,
+   "denials_source": "permission_denials: Bash(cat), Bash(curl), Bash(env), Bash(for), Bash(grep), Bash(if), Bash(ls), Bash(pip), Bash(printenv), Bash(python3), Bash(rm), Bash(test), Bash(timeout), Bash(wc), Bash(which)",
+   "ended": "success",
+   "tokens": 21459970,
+   "claims_held": [
+    "seville",
+    "amsterdam",
+    "haarlem"
+   ],
+   "commits": 10,
+   "cities_touched": 1,
+   "trees": 5,
+   "logged": false
   }
  ],
  "schedule_changes": [
