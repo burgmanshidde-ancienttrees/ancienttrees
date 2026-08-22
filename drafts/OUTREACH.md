@@ -730,3 +730,19 @@ Polish letters are correctly written that way and the check would have forced
 wrong orthography into forty mails. And the builder counts nouns the Slavic
 way, so Wroclaw's four trees read "4 drzewa" while Krakow's sixteen read
 "16 drzew".
+
+**Every human who has written to us now has an answer (2026-08-23).** Two went
+out today: Jon Pattee of Rock Creek Conservancy, whose Lafayette Square tip had
+sat unanswered for eleven days because his reply arrived ten minutes after ours
+went out, and Hanna Hirsch of Bomenstichting Amsterdam, whose eight-point mail
+found two errors on our own pages. Both fixed before the reply went.
+
+The reason Hanna's sat there is worth keeping, because it is a property of the
+machinery rather than an oversight: `scripts/outreach_inbox.py` matched
+SENDERS, and she wrote from a private xs4all address while we had mailed the
+foundation's own. Free-mail domains are excluded on purpose so his private
+correspondence is never opened, and that protection made the single most useful
+reply invisible. It now also matches the SUBJECT we ourselves sent, which finds
+a reply from any address without opening anything else. Three more were hidden
+the same way: Wolfgang Schurmann from woelfie@gmx.de, Clara Visser from
+clavi@hetnet.nl, and the chairman of the Danish Dendrology Society.
