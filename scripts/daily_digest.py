@@ -315,6 +315,12 @@ def demand_lines(pages, pairs=None):
 def pages_table(pages):
     """Every page that got a click, and the same totals split by page TYPE.
 
+    NOT in the daily entry (Hidde, 2026-08-22: "niet voor elke digest gewoon
+    voor nu"). It is a question you ask now and then, not a number that changes
+    a day: call it from a session with the GSC secrets, or paste the call back
+    into gsc_section for one run. Kept because working it out again from
+    scratch would cost more than the twenty lines it is.
+
     Hidde, 2026-08-22: "mag ik de totale lijst van meest geklikte pagina's zien
     en moeten we meer tijd stoppen in bv de specifieke boom pagina's die veel
     worden bezocht." The digest printed five pages, which cannot answer either
@@ -422,7 +428,6 @@ def gsc_section(gsc):
         "%s" % trend,
         "- Top queries (10d): " + "; ".join(
             "%s (i%d, p%.0f)" % (clean_query(r["keys"][0]), r["impressions"], r["position"]) for r in queries) if queries else "- Top queries: none",
-        pages_table(pages),
         "- Top pages (10d): " + "; ".join(
             "%s (c%d/i%d)" % (r["keys"][0].replace("https://ancienttrees.app", ""), r["clicks"], r["impressions"]) for r in pages[:5]) if pages else "- Top pages: none",
         gap_line,
