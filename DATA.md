@@ -62,7 +62,7 @@ event on the list is unaffected.
 
 | Day | Tree | What | Note | From | Outcome |
 |---|---|---|---|---|---|
-| 08-15 | prg_007 (The Oak of Cisarsky ostro | not worth it | 14 chars | no acct | - |
+| 08-15 | prg_007 (The Oak of Cisarsky ostro | not worth it | wrong location | no acct | - |
 | 08-17 | hel_006 (The Meilahti Ancient Pine | not worth it | - | no acct | - |
 | 08-17 | lis_005 (The Tipu of Jardim de São | worth it | - | no acct | - |
 | 08-20 | Elm | Correction
@@ -72,37 +72,37 @@ Thanks for leading me t | 303 chars | no acct | - |
 | 08-20 | Elm | Correction
 Thanks for leading me t | 303 chars | no acct | - |
 | 08-21 | par_001 (The Robinier of Square Re | not worth it | - | no acct | - |
-| 08-21 | rom_001 (The Ginkgo of Villa Sciar | not worth it | - | d4e6 | - |
-| 08-21 | rom_001 (The Ginkgo of Villa Sciar | vote undone | 12 chars | d4e6 | - |
-| 08-21 | rom_001 (The Ginkgo of Villa Sciar | not worth it | - | d4e6 | - |
-| 08-21 | rom_001 (The Ginkgo of Villa Sciar | report | 18 chars | d4e6 | - |
-| 08-21 | rom_001 (The Ginkgo of Villa Sciar | vote undone | 12 chars | d4e6 | - |
-| 08-21 | rom_001 (The Ginkgo of Villa Sciar | not worth it | - | d4e6 | - |
-| 08-21 | rom_001 (The Ginkgo of Villa Sciar | worth it | - | d4e6 | - |
-| 08-21 | rom_001 (The Ginkgo of Villa Sciar | vote undone | 12 chars | d4e6 | - |
-| 08-21 | rom_001 (The Ginkgo of Villa Sciar | vote undone | 8 chars | d4e6 | - |
-| 08-21 | rom_001 (The Ginkgo of Villa Sciar | not worth it | - | d4e6 | - |
-| 08-21 | rom_001 (The Ginkgo of Villa Sciar | vote undone | 12 chars | d4e6 | - |
-| 08-21 | rom_001 (The Ginkgo of Villa Sciar | not worth it | - | d4e6 | - |
-| 08-21 | rom_001 (The Ginkgo of Villa Sciar | worth it | - | d4e6 | - |
-| 08-21 | rom_001 (The Ginkgo of Villa Sciar | vote undone | 12 chars | d4e6 | - |
-| 08-21 | rom_001 (The Ginkgo of Villa Sciar | not worth it | - | d4e6 | - |
-| 08-21 | rom_001 (The Ginkgo of Villa Sciar | vote undone | 8 chars | d4e6 | - |
-| 08-21 | ams_004 (The Wertheimpark Wingnut) | worth it | - | d4e6 | - |
-| 08-21 | ams_004 (The Wertheimpark Wingnut) | vote undone | 8 chars | d4e6 | - |
-| 08-21 | ams_004 (The Wertheimpark Wingnut) | not worth it | - | d4e6 | - |
-| 08-21 | utr_005 (Onder de Linden) | worth it | - | d4e6 | - |
-| 08-21 | utr_005 (Onder de Linden) | vote undone | 8 chars | d4e6 | - |
-| 08-21 | utr_005 (Onder de Linden) | not worth it | - | d4e6 | - |
-| 08-21 | utr_005 (Onder de Linden) | vote undone | 12 chars | d4e6 | - |
-| 08-21 | utr_005 (Onder de Linden) | worth it | - | d4e6 | - |
-| 08-21 | utr_005 (Onder de Linden) | vote undone | 8 chars | d4e6 | - |
-| 08-21 | utr_005 (Onder de Linden) | not worth it | - | d4e6 | - |
+| 08-21 | rom_001 (The Ginkgo of Villa Sciar | not worth it | - | d4e6 | holds |
+| 08-21 | rom_001 (The Ginkgo of Villa Sciar | vote undone | not worth it | d4e6 | holds |
+| 08-21 | rom_001 (The Ginkgo of Villa Sciar | not worth it | - | d4e6 | holds |
+| 08-21 | rom_001 (The Ginkgo of Villa Sciar | report | could not reach it | d4e6 | holds |
+| 08-21 | rom_001 (The Ginkgo of Villa Sciar | vote undone | not worth it | d4e6 | holds |
+| 08-21 | rom_001 (The Ginkgo of Villa Sciar | not worth it | - | d4e6 | holds |
+| 08-21 | rom_001 (The Ginkgo of Villa Sciar | worth it | - | d4e6 | holds |
+| 08-21 | rom_001 (The Ginkgo of Villa Sciar | vote undone | not worth it | d4e6 | holds |
+| 08-21 | rom_001 (The Ginkgo of Villa Sciar | vote undone | worth it | d4e6 | holds |
+| 08-21 | rom_001 (The Ginkgo of Villa Sciar | not worth it | - | d4e6 | holds |
+| 08-21 | rom_001 (The Ginkgo of Villa Sciar | vote undone | not worth it | d4e6 | holds |
+| 08-21 | rom_001 (The Ginkgo of Villa Sciar | not worth it | - | d4e6 | holds |
+| 08-21 | rom_001 (The Ginkgo of Villa Sciar | worth it | - | d4e6 | holds |
+| 08-21 | rom_001 (The Ginkgo of Villa Sciar | vote undone | not worth it | d4e6 | holds |
+| 08-21 | rom_001 (The Ginkgo of Villa Sciar | not worth it | - | d4e6 | holds |
+| 08-21 | rom_001 (The Ginkgo of Villa Sciar | vote undone | worth it | d4e6 | holds |
+| 08-21 | ams_004 (The Wertheimpark Wingnut) | worth it | - | d4e6 | holds |
+| 08-21 | ams_004 (The Wertheimpark Wingnut) | vote undone | worth it | d4e6 | holds |
+| 08-21 | ams_004 (The Wertheimpark Wingnut) | not worth it | - | d4e6 | holds |
+| 08-21 | utr_005 (Onder de Linden) | worth it | - | d4e6 | holds |
+| 08-21 | utr_005 (Onder de Linden) | vote undone | worth it | d4e6 | holds |
+| 08-21 | utr_005 (Onder de Linden) | not worth it | - | d4e6 | holds |
+| 08-21 | utr_005 (Onder de Linden) | vote undone | not worth it | d4e6 | holds |
+| 08-21 | utr_005 (Onder de Linden) | worth it | - | d4e6 | holds |
+| 08-21 | utr_005 (Onder de Linden) | vote undone | worth it | d4e6 | holds |
+| 08-21 | utr_005 (Onder de Linden) | not worth it | - | d4e6 | holds |
 
 - 26 of these 33 came from one account (d4e6). At this volume that is almost certainly our own testing rather than readers, and it should be read that way until somebody checks the rows.
 
 **The funnel, as rates**
-- Seen to clicked: 2.4% (186 of 7803) vs 2.2% the fortnight before
+- Seen to clicked: 2.4% (186 of 7826) vs 2.2% the fortnight before
 - Pages per visit: 1.6 (740 visits, 1170 pageviews since 2026-08-08)
 - Visits that did something: 8.0% (59 actions on 740 visits)
 
@@ -121,17 +121,17 @@ Search Console, the last 10 days Google will give us (its data lags 2-3 days, so
 | 08-18 | 19 | 609 | 3.1% | 15.0 |
 | 08-19 | 18 | 806 | 2.2% | 17.0 |
 | 08-20 | 16 | 1021 | 1.6% | 21.5 |
-| 08-21 | 15 | 662 | 2.3% | 19.0 |
-| **window** | **149** | **6495** | **2.3%** | |
+| 08-21 | 15 | 685 | 2.2% | 20.0 |
+| **window** | **149** | **6518** | **2.3%** | |
 - Top queries (10d): dutch elm amsterdam (i12, p6); juttepeer (i2, p3); oldest tree in central park (i4, p10); oldest tree in dc (i2, p10); "oldest of its species" ginkgo park (i8, p7)
-- Top pages (10d): / (c9/i51); /prague (c7/i138); /athens/holm-oak-of-the-national-garden (c5/i8); /amsterdam (c4/i129); /dubrovnik (c4/i63)
+- Top pages (10d): / (c9/i53); /prague (c7/i138); /athens/holm-oak-of-the-national-garden (c5/i8); /amsterdam (c4/i129); /dubrovnik (c4/i64)
 - Content lead: 'alameda dos platanos' has no matching page (i11, p8)
 
 **Depth is allowed on these cities** (10+ impressions in the window; photos, pins and best_time go here and nowhere else):
 
 | City | Clicks | Impressions | CTR | Position | Normal there | Biggest query, and where it really sits |
 |---|---:|---:|---:|---:|---:|---|
-| rome | 3 | 245 | 1.2% | 12.6 | 1.7% | trees in rome (i14, p18) |
+| rome | 3 | 246 | 1.2% | 12.8 | 1.6% | trees in rome (i14, p18) |
 | amsterdam | 5 | 202 | 2.5% | 13.7 | 1.5% | dutch elm amsterdam (i9, p6) |
 | barcelona | 5 | 200 | 2.5% | 9.4 | 2.8% | barcelona tree (i5, p6) |
 | bath | 2 | 178 | 1.1% | 8.3 | 3.4% | the giant plane tree bath (i8, p11) |
@@ -143,16 +143,16 @@ Search Console, the last 10 days Google will give us (its data lags 2-3 days, so
 | es | 1 | 129 | 0.8% | 12.5 | 1.7% | árboles históricos de málaga (i14, p15) |
 | milan | 0 | 128 | 0.0% | 10.9 | 2.2% | "oldest of its species" ginkgo park (i8, p7) |
 | vienna | 3 | 126 | 2.4% | 9.1 | 3.0% | - |
-| paris | 7 | 119 | 5.9% | 21.8 | 0.7% | paris trees (i2, p62) |
+| paris | 7 | 121 | 5.8% | 22.4 | 0.7% | paris trees (i2, p62) |
 | florence | 0 | 119 | 0.0% | 11.0 | 2.1% | florence tree (i6, p7) |
 | cambridge | 0 | 113 | 0.0% | 34.7 | 0.4% | newton's apple tree (i6, p49) |
 | copenhagen | 2 | 112 | 1.8% | 13.1 | 1.6% | trees in copenhagen (i11, p15) |
 | madrid | 0 | 98 | 0.0% | 12.5 | 1.7% | oldest tree in madrid (i3, p15) |
+| boston | 0 | 94 | 0.0% | 21.0 | 0.8% | shaw memorial elms (i2, p10) |
 | brussels | 3 | 93 | 3.2% | 19.4 | 0.9% | belgian tree (i5, p58) |
 | new-york | 3 | 93 | 3.2% | 16.4 | 1.1% | ancient elm (i1, p54) |
-| boston | 0 | 92 | 0.0% | 21.3 | 0.7% | shaw memorial elms (i2, p10) |
+| dubrovnik | 4 | 85 | 4.7% | 6.5 | 4.5% | trsteno plane tree (i5, p12) |
 | geneva | 1 | 85 | 1.2% | 11.3 | 2.0% | sixty tree (i1, p9) |
-| dubrovnik | 4 | 84 | 4.8% | 6.6 | 4.4% | trsteno plane tree (i5, p12) |
 | malaga | 1 | 80 | 1.2% | 12.6 | 1.7% | árboles históricos de málaga (i5, p75) |
 | seoul | 0 | 78 | 0.0% | 17.5 | 1.0% | seoul tree (i7, p8) |
 | washington-dc | 3 | 77 | 3.9% | 17.2 | 1.0% | survey lodge ranger station (i8, p10) |
@@ -166,11 +166,11 @@ Search Console, the last 10 days Google will give us (its data lags 2-3 days, so
 | porto | 0 | 61 | 0.0% | 5.9 | 5.2% | alameda dos platanos (i11, p8) |
 | venice | 3 | 60 | 5.0% | 10.9 | 2.2% | trees in venice (i1, p1) |
 | reykjavik | 1 | 59 | 1.7% | 13.3 | 1.5% | oldest tree in iceland (i5, p8) |
+| brisbane | 0 | 54 | 0.0% | 18.0 | 1.0% | the big macadamia nut (i2, p76) |
 | bristol | 1 | 51 | 2.0% | 22.0 | 0.7% | bristol trees (i9, p54) |
 | oslo | 1 | 51 | 2.0% | 13.3 | 1.5% | dronningparken (i1, p8) |
-| brisbane | 0 | 51 | 0.0% | 17.7 | 1.0% | the big macadamia nut (i2, p76) |
 | the-hague | 5 | 49 | 10.2% | 6.2 | 4.8% | juttepeer (i2, p3) |
-| seville | 2 | 48 | 4.2% | 11.6 | 2.0% | - |
+| seville | 2 | 49 | 4.1% | 12.5 | 1.7% | - |
 | krakow | 2 | 45 | 4.4% | 9.3 | 2.9% | - |
 | padua | 1 | 45 | 2.2% | 7.4 | 3.8% | - |
 | nice | 0 | 44 | 0.0% | 13.7 | 1.5% | - |
@@ -256,9 +256,9 @@ Search Console, the last 10 days Google will give us (its data lags 2-3 days, so
 | /barcelona | 127 | +90 | 8.2 | +0.3 | -1 |
 | /prague | 138 | +67 | 7.4 | +3.2 | +2 |
 | /milan | 115 | +66 | 10.7 | -0.5 | +0 |
-| /dubrovnik | 63 | +56 | 5.8 | +0.6 | +3 |
+| /dubrovnik | 64 | +57 | 5.8 | +0.7 | +3 |
+| /paris | 85 | +55 | 25.8 | -0.4 | +4 |
 | /florence | 105 | +55 | 10.6 | -1.6 | +0 |
-| /paris | 83 | +53 | 25.1 | +0.4 | +4 |
 | /geneva | 61 | +52 | 11.1 | -3.0 | +0 |
 | /seoul | 58 | +52 | 17.0 | -9.4 | +0 |
 
@@ -271,7 +271,7 @@ Search Console, the last 10 days Google will give us (its data lags 2-3 days, so
 | /copenhagen | 71 | 0 | 12.6 |
 | /es/malaga | 53 | 0 | 10.0 |
 | /tenerife/el-drago-milenario | 45 | 0 | 10.4 |
-| /species/olive | 39 | 0 | 51.9 |
+| /species/olive | 40 | 0 | 52.1 |
 
 **Slipping**
 
@@ -285,10 +285,10 @@ Search Console, the last 10 days Google will give us (its data lags 2-3 days, so
 - New queries this window: dutch elm amsterdam (i12), oldest tree in central park (i4).
 
 **Who they are**
-Audience, 28 days of search (254 clicks, 11034 impressions):
-- Countries: usa c45/i2468; nld c21/i534; gbr c20/i1416; deu c14/i372; esp c12/i632
-- Devices: MOBILE c175/i5958; DESKTOP c79/i4977; TABLET c0/i99
-- Landing pages: / c14/i97; /prague c12/i239; /lisbon c11/i263; /amsterdam c6/i367; /athens/holm-oak-of-the-national-garden c6/i14
+Audience, 28 days of search (254 clicks, 11057 impressions):
+- Countries: usa c45/i2470; nld c21/i534; gbr c20/i1417; deu c14/i375; esp c12/i632
+- Devices: MOBILE c175/i5960; DESKTOP c79/i4998; TABLET c0/i99
+- Landing pages: / c14/i99; /prague c12/i239; /lisbon c11/i263; /amsterdam c6/i367; /athens/holm-oak-of-the-national-garden c6/i14
 
 Web Analytics (beacon, real browsers, cookieless):
 Counts are bucketed to the nearest ten by Cloudflare; read the window, not the day.
@@ -325,13 +325,19 @@ AI: arrivals from an assistant that cited us: none yet
 | 08-22T00:26 | 0.1 | 0 | 0 | 0 | - |
 | 08-22T02:44 | 0.1 | 0 | 0 | 0 | - |
 | 08-22T04:19 | 0.1 | 0 | 0 | 0 | - |
-| **6 runs** | **0** | | **0** | **0** | |
+| 08-22T05:33 | 16.0 | 148 | 0 | 7 | 42 |
+| 08-22T05:50 | 16.5 | 148 | 0 | 14 | 36 |
+| **8 runs** | **33** | | **0** | **21** | |
 
-- 6 of 6 produced no trees; 6 wrote nothing to LOG.md.
+- 8 of 8 produced no trees; 36 to 42 commands refused per run; 7 wrote nothing to LOG.md.
+
+**What they made**
+
+- photo_hunt --recheck: sweep 40 more photo-less trees for open-licence candidates
 
 Machine: 9 chain attempts yesterday, 6 got real work time (~132 min total). Dead-in-seconds attempts cost nothing; few get-throughs means the usage window was full or closed.
 
-**Conclusion:** Search is the only channel with real data and it is still small: 15 clicks and 662 impressions on Google's freshest day (day before: c16/i1021). Directional at best; no strategic conclusions from these volumes.
+**Conclusion:** Search is the only channel with real data and it is still small: 15 clicks and 685 impressions on Google's freshest day (day before: c16/i1021). Directional at best; no strategic conclusions from these volumes.
 
 ## 2026-08-20 (previous UTC day)
 

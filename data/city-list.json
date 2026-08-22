@@ -178,19 +178,19 @@
    "trees": 16
   },
   {
+   "city": "Seville",
+   "country": "Spain",
+   "slug": "seville",
+   "status": "published",
+   "trees": 20
+  },
+  {
    "city": "The Hague",
    "country": "Netherlands",
    "slug": "the-hague",
    "status": "published",
    "demand_views_90d": 236723,
    "trees": 21
-  },
-  {
-   "city": "Seville",
-   "country": "Spain",
-   "slug": "seville",
-   "status": "published",
-   "trees": 20
   },
   {
    "city": "Venice",
@@ -200,18 +200,18 @@
    "trees": 11
   },
   {
-   "city": "New York",
-   "country": "United States",
-   "slug": "new-york",
-   "status": "published",
-   "trees": 20
-  },
-  {
    "city": "Boston",
    "country": "United States",
    "slug": "boston",
    "status": "published",
    "trees": 10
+  },
+  {
+   "city": "New York",
+   "country": "United States",
+   "slug": "new-york",
+   "status": "published",
+   "trees": 20
   },
   {
    "city": "Dubrovnik",
@@ -220,6 +220,14 @@
    "status": "published",
    "demand_views_90d": 119586,
    "trees": 4
+  },
+  {
+   "city": "Brisbane",
+   "country": "Australia",
+   "slug": "brisbane",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 10
   },
   {
    "city": "Padua",
@@ -244,14 +252,6 @@
    "slug": "washington-dc",
    "status": "published",
    "trees": 14
-  },
-  {
-   "city": "Brisbane",
-   "country": "Australia",
-   "slug": "brisbane",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 10
   },
   {
    "city": "Alicante",
