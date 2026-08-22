@@ -142,7 +142,7 @@
         "https://services.arcgis.com/GL0fWlNkwysZaKeV/arcgis/rest/services/IBTR_masterfile/FeatureServer/0/query?where=Common_name=%27boxelder%27&outFields=*&f=json",
         "https://extension.illinois.edu/forestry/big-tree-register"
       ],
-      "access": "Public 18-hole golf course, Forest Preserves of Cook County; a green fee is generally needed to walk the course itself, and whether the tree is visible from a public perimeter trail was not confirmed this pass",
+      "access": "Public 18-hole golf course, Forest Preserves of Cook County; a green fee is generally needed to walk the course itself, and whether the tree is visible from a public perimeter trail was not confirmed",
       "transport": "Metra Milwaukee District North Line to Edgebrook station, the last stop still inside Chicago city limits, roughly 30 minutes from Chicago Union Station, then about a 15 to 20 minute walk east on Devon/Central Ave to the golf course entrance",
       "photo": {
         "url": null,
@@ -172,8 +172,8 @@
         "https://extension.illinois.edu/forestry/big-tree-register",
         "https://fpdcc.com/nature/champion-tree-register/"
       ],
-      "access": "Public 18-hole golf course, Forest Preserves of Cook County; a green fee is generally needed to walk the course itself, and whether the tree is visible from a public perimeter path was not confirmed this pass",
-      "transport": "Metra Milwaukee District West Line to River Grove or Elmwood Park, roughly 20 minutes from Chicago Union Station; or CTA/Pace bus along Forest Preserve Dr/Cumberland Ave. Exact walk time from the nearest stop to the tree was not verified this pass.",
+      "access": "Public 18-hole golf course, Forest Preserves of Cook County; a green fee is generally needed to walk the course itself, and whether the tree is visible from a public perimeter path was not confirmed",
+      "transport": "Metra Milwaukee District West Line to River Grove or Elmwood Park, roughly 20 minutes from Chicago Union Station; or CTA/Pace bus along Forest Preserve Dr/Cumberland Ave. Exact walk time from the nearest stop to the tree was not verified.",
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {

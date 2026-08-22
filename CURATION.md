@@ -10,6 +10,52 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-22 (later) - Reader-facing fields were carrying notes we wrote to ourselves
+
+The Palermo translation pass found it, and it is the most embarrassing thing
+in today's batch because it was live and visible: the `access` and
+`transport` fields render straight to visitors, and in 21 cities they were
+carrying instructions to the writer and internal tree ids.
+
+The worst examples, all live before this:
+
+- `pal_010` access: "Confirm current opening hours and whether the fig's part
+  of the grounds needs a booked visit before publishing a specific time."
+- `pal_016` access: "State the caveat plainly and tell readers to check
+  current hours before visiting rather than quoting an unverified schedule."
+- `gnv_002`, `gnv_003`, `gnv_004` access: "Not confirmed this pass." /
+  "Not established this pass."
+- `com_006` access: "Same schedule as the Villa del Grumello cedar (com_005)".
+  A reader has no idea what com_005 is.
+
+63 fields across 18 cities were cleaned mechanically: internal ids stripped,
+"this pass" removed, spacing repaired. Toulouse (11), Padua (10) and Nuremberg
+(9) were the worst. Nothing factual changed; every hedge survives, it just
+stopped narrating our own process, which CLAUDE.md's ratchet already lists as
+one of the seven things that became build checks.
+
+**And that is the finding: the build check did not catch this.** qa.py checks
+rendered text for builder-speak, and these fields went through it. Worth a
+look at whether it only checks story prose and not the short fields.
+
+**A second checker gap, same session.** `scripts/superlatives.py` reports
+"468 superlative claims, no two trees claiming the same crown" while
+`mad_005` says the cypress is "both the oldest and the tallest tree" in the
+Royal Botanic Garden and `mad_006` said the elm "wins on height" there and
+called it "the garden's tallest resident". The checker matches phrasing, so a
+paraphrase walks straight past it. Fixed the content (the cypress states 32
+metres flatly, the elm only "over 30" with the measurements admitted to
+disagree, so the elm's claim yielded), but the check still cannot see the
+class.
+
+That makes two contradictions in one day that a translation pass found and an
+automated check missed, after the Paris girth pair. The pattern is that our
+checks match strings and the errors are semantic. Worth deciding whether the
+fresh-eyes reviewer should be pointed at superlatives specifically.
+
+**Still open from earlier today:** vie_024 and vie_028 remain one tree under
+two ids, staged because retiring an entry moves a published URL.
+
 ## 2026-08-22 - Six translation passes found four errors in our own English
 
 Six overlays landed in one batch (Italian Rome, Dutch Amsterdam, German
