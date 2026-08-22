@@ -182,12 +182,25 @@ def main():
         msg["To"] = addr
         msg["Subject"] = subject
         msg.set_content(body)
-        if server is None:
-            server = smtplib.SMTP(creds["SMTP_HOST"], int(creds["SMTP_PORT"]),
-                                  timeout=30)
-            server.starttls()
-            server.login(creds["SMTP_USER"], creds["SMTP_PASS"])
-        server.send_message(msg)
+        # A MAIL PROBLEM MUST NEVER TAKE THE NUMBERS WITH IT. On 2026-08-22
+        # this script raised SMTPAuthenticationError inside the data-digest
+        # workflow, the job aborted on the spot, and the day's DATA.md entry
+        # was written and then thrown away because the commit step never ran.
+        # The thank-you can always wait for the next knock; the digest cannot
+        # be rewritten after the fact, since it reads yesterday.
+        try:
+            if server is None:
+                server = smtplib.SMTP(creds["SMTP_HOST"], int(creds["SMTP_PORT"]),
+                                      timeout=30)
+                server.starttls()
+                server.login(creds["SMTP_USER"], creds["SMTP_PASS"])
+            server.send_message(msg)
+        except Exception as e:
+            print("MAIL FAILED for %s: %s" % (low, str(e)[:160]))
+            print("Nothing was stamped, so the next run tries again. "
+                  "If this is a 535 BadCredentials, the app password in the "
+                  "environment is wrong or has spaces in it.")
+            return 0
         sent_today += 1
         now = datetime.datetime.now(datetime.timezone.utc).isoformat()
         # Stamp every row of this address needing this stamp, so the
