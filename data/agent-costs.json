@@ -2911,6 +2911,15 @@
     "trees": 0,
     "photos": 0,
     "note": "Checking pass on the nine most-visited tree pages rather than new research. Found a pin 180 m off on Newton's Apple Tree (Cambridge, 113 impressions, marked confirmed while sitting on Trinity College's centroid), an unflagged age conflict on Amsterdam's last Stationsplein elm, a 404 citation on the Green-Wood sassafras, and nutmeg where the sources say pepper in Singapore. Four fixed the same hour."
+   },
+   {
+    "target": "munich",
+    "kind": "write",
+    "tokens": 120000,
+    "trees": 14,
+    "wasted": 0,
+    "brief_wrong": false,
+    "note": "Write pass, 14 register-only trees (muc_035-048), all single-source Naturdenkmalverordnung 2021 with no age and no girth. All 14 stories written, verify_notes dropped, best_time on 3 (Munich already had 17 of 30). ~8.6k tokens per tree. Fixed one species-canonical slip (Sycamore Maple -> Sycamore) before merging. Munich: 30 to 44 trees."
    }
   ]
  }
