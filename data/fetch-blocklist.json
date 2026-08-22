@@ -2,6 +2,12 @@
  "note": "Hosts that cost a run its window, with what they actually do. Written because this knowledge existed in data/research/ two days before a pass died on it twice: a research file nobody reads at the moment it matters is not a record, it is a souvenir. Every brief must carry this list, and scripts/passcheck.py prints it.",
  "rule": "Every fetch gets a hard timeout: curl -m 20, or timeout= on urllib. A host that hangs once goes on this list with the date. A hang is far worse than a refusal, because a refusal fails in a second and a hang burns the whole window.",
  "hosts": {
+  "gemeentebestuur.haarlem.nl": {
+   "behaviour": "does not hang, but serves an Anubis bot-challenge HTML page (200 OK, ~6.6KB) instead of the requested PDF to plain curl, even with a browser user agent",
+   "seen": "2026-08-22",
+   "cost": "cheap, fails in under a second, but wastes a fetch if not expected",
+   "workaround": "unknown; a real browser session may pass the challenge. www.bomenstichting.nl and www.ivn.nl serve their own monumental-trees PDFs for Haarlem and both downloaded fine via plain curl, so prefer those over the gemeente's own hosted copy"
+  },
   "rijksmonumenten.nl": {
    "behaviour": "hangs / socket hang up on individual monument pages (both via WebFetch and via curl -m 20 with a browser user agent, curl exit 92)",
    "seen": "2026-08-22",
