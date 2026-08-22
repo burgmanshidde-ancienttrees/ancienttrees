@@ -42,6 +42,10 @@ struct TreeMap: UIViewRepresentable {
     /// can be a list of what you are looking at. Optional because a walk's map
     /// does not want it.
     var region: Binding<MKCoordinateRegion?>? = nil
+    /// Somewhere to GO, as opposed to `region`, which is where the map has
+    /// been. Carries its own token so the same request cannot be applied twice
+    /// and a finger can pan away from it afterwards.
+    var moveTo: (token: UUID, region: MKCoordinateRegion)? = nil
     @Binding var selected: Tree?
 
     func makeCoordinator() -> Coordinator { Coordinator(self) }
@@ -94,6 +98,11 @@ struct TreeMap: UIViewRepresentable {
     func updateUIView(_ map: MKMapView, context: Context) {
         context.coordinator.parent = self
 
+        if let move = moveTo, context.coordinator.moved != move.token {
+            context.coordinator.moved = move.token
+            map.setRegion(move.region, animated: true)
+        }
+
         // Paging through the sheet moves the map with you, which is the whole
         // point of staying on the map rather than opening a page.
         if let sel = selected, context.coordinator.centred != sel.id {
@@ -124,6 +133,7 @@ struct TreeMap: UIViewRepresentable {
         /// Which tree the camera was last moved to, so paging does not fight
         /// itself by re-centring on every redraw.
         var centred: String?
+        var moved: UUID?
         init(_ p: TreeMap) { parent = p }
 
         func setRoute(_ pts: [CLLocationCoordinate2D], real: Bool, on map: MKMapView) {

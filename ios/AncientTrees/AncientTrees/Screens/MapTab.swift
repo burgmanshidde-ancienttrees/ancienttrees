@@ -49,6 +49,7 @@ struct MapTab: View {
     /// Where the map is looking. nil until it has been moved, so the first list
     /// is still the list of what is near you.
     @State private var mapRegion: MKCoordinateRegion?
+    @State private var moveRequest: (token: UUID, region: MKCoordinateRegion)?
     @State private var filters = MapFilters()
     @State private var shownWalk: Walk?
     @Environment(Entitlement.self) private var entitlement
@@ -135,11 +136,10 @@ struct MapTab: View {
     /// a camera because that is what the sheet's list reads to decide what is
     /// "here", so setting one keeps the two in step.
     private func fly(to lat: Double, lng: Double, span metres: Double) {
-        withAnimation(.easeInOut(duration: 0.35)) {
-            mapRegion = MKCoordinateRegion(center: .init(latitude: lat, longitude: lng),
-                                           latitudinalMeters: metres,
-                                           longitudinalMeters: metres)
-        }
+        let r = MKCoordinateRegion(center: .init(latitude: lat, longitude: lng),
+                                   latitudinalMeters: metres, longitudinalMeters: metres)
+        moveRequest = (UUID(), r)
+        mapRegion = r
     }
 
     /// How many trees are actually under the view, uncapped.
@@ -149,10 +149,22 @@ struct MapTab: View {
     /// Amsterdam, over Lisbon and over half of Europe, which is a number that
     /// looks like information and is not.
     private var inReach: Int {
-        catalogue.trees.filter {
-            filters.keeps($0, month: month, collected: collectedIds)
-                && filters.keepsDistance($0.distanceKm(from: focus.lat, focus.lng))
-                && $0.distanceKm(from: focus.lat, focus.lng) <= reachKm
+        // What the WORDS say: the trees inside the rectangle you are looking
+        // at. It counted everything within fifty kilometres before, which is
+        // a different and much larger claim than "you can see".
+        guard let r = mapRegion else {
+            return catalogue.trees.filter {
+                filters.keeps($0, month: month, collected: collectedIds)
+                    && $0.distanceKm(from: focus.lat, focus.lng) <= 6
+            }.count
+        }
+        let latMin = r.center.latitude - r.span.latitudeDelta / 2
+        let latMax = r.center.latitude + r.span.latitudeDelta / 2
+        let lngMin = r.center.longitude - r.span.longitudeDelta / 2
+        let lngMax = r.center.longitude + r.span.longitudeDelta / 2
+        return catalogue.trees.filter {
+            $0.lat >= latMin && $0.lat <= latMax && $0.lng >= lngMin && $0.lng <= lngMax
+                && filters.keeps($0, month: month, collected: collectedIds)
         }.count
     }
 
@@ -180,6 +192,7 @@ struct MapTab: View {
                     routeIsReal: (shownWalk?.shape?.count ?? 0) > 1,
                     showsRecentre: true,
                     region: $mapRegion,
+                    moveTo: moveRequest,
                     selected: $selected)
                 .ignoresSafeArea(edges: [.top, .horizontal])
                 .accessibilityIdentifier("tree-map")
@@ -301,11 +314,9 @@ struct MapTab: View {
         } else {
             VStack(spacing: 0) {
                 countStrip
-                if sheetHeight != .peek {
-                    if shownWalk != nil { walkCard }
-                    if let t = arrived { arrivalCard(t) }
-                    list
-                }
+                if shownWalk != nil && sheetHeight != .peek { walkCard }
+                if let t = arrived, sheetHeight != .peek { arrivalCard(t) }
+                list
             }
         }
     }
@@ -554,14 +565,13 @@ struct MapTab: View {
                 Image(systemName: "magnifyingglass")
                     .font(.system(size: 17, weight: .semibold))
                     .foregroundStyle(Brand.ink)
-                HStack(spacing: 0) {
-                    Text("Search a ")
-                    Text(searchWord)
-                        .id(searchWord)
-                        .transition(.opacity.combined(with: .move(edge: .bottom)))
-                }
-                .font(.system(size: 16, weight: .medium))
-                .foregroundStyle(Brand.inkSoft)
+                // The whole sentence rather than one rotating noun (Hidde,
+                // 2026-08-22). A word that changes under your eyes is a nice
+                // trick on a field you are typing in and a distraction on a
+                // button you are only reading.
+                Text("Search a city, country or tree")
+                    .font(.system(size: 16, weight: .medium))
+                    .foregroundStyle(Brand.inkSoft)
                 Spacer(minLength: 0)
             }
             .padding(.horizontal, 16).frame(height: 50)
