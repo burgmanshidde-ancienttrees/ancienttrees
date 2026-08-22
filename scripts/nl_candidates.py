@@ -240,6 +240,24 @@ def cluster(trees, km=2.0):
     groups.sort(key=len, reverse=True)
     return groups
 
+def needs_alive_check(t):
+    """Old, and the register tells us nothing about it. Check before publishing.
+
+    Tilburg's Heuvel lime is why this exists. The register still carries it with
+    a planting band of 1600-1700; the tree was felled in 1994 after five hundred
+    years, and three descendants were planted in 2009. The felled-entry regex
+    could not see it, because the regex reads `history` and this entry has none.
+
+    58 percent of the visitable candidates have no history at all, so the regex
+    is blind to most of the register. But only about two dozen of those are 200
+    years or older, and that is the group where a felling makes the local paper.
+    One search each is affordable; publishing a tree that has been gone for
+    thirty years is not.
+    """
+    h = (t.get("site_history") or "").strip().lower()
+    return h in ("", "onbekend") and (t.get("age_min") or 0) >= 200
+
+
 def score(t):
     s = 0
     if t["honour_class"] == "ja": s += 40
@@ -255,11 +273,24 @@ def main():
     p.add_argument("city")
     p.add_argument("--top", type=int, default=10)
     p.add_argument("--save", action="store_true", help="write data/leads/<slug>-register.json")
+    p.add_argument("--risky", action="store_true",
+                   help="list only the old trees the register says nothing about, which must be checked alive before publishing")
     a = p.parse_args()
 
     trees = load(a.city)
     if not trees:
         print("no visitable single trees in the register for %r" % a.city); return 1
+
+    if a.risky:
+        risky = [t for t in trees if needs_alive_check(t)]
+        print("# %s: %d of %d candidates are 200+ years old with NO register history."
+              % (a.city, len(risky), len(trees)))
+        print("# Search each before publishing. Tilburg's Heuvel lime was felled in 1994 "
+              "and is still in the register.\n")
+        for t in risky:
+            print("  %-44s %s" % ((t["register_name"] or "?")[:44], t["planted_band"]))
+            print("    %s" % t["place"])
+        return 0
     groups = cluster(trees)
     for g in groups:
         g.sort(key=score, reverse=True)
@@ -277,7 +308,9 @@ def main():
         print("## cluster %d: %d trees, %.1f km across" % (i, len(g), span))
         for t in take:
             picked.append(t); shown += 1
-            print("  %-46s %s" % (t["species"] or ("?? " + str(t["species_unmapped"])), t["age_estimate"] or "no band"))
+            print("  %-46s %s%s" % (t["species"] or ("?? " + str(t["species_unmapped"])),
+                                    t["age_estimate"] or "no band",
+                                    "   << CHECK ALIVE" if needs_alive_check(t) else ""))
             print("    %s" % t["place"])
             print("    %.5f, %.5f   %s%s%s" % (
                 t["latitude"], t["longitude"], t["setting"] or "",
