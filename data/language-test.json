@@ -1,0 +1,175 @@
+{
+ "_note": "Baseline for the Contract J v1.13 language test, taken 2026-08-22, the day all 23 overlays went live. Without it, in four weeks nobody can tell a page that moved from a page that was always fine, which is the same mistake the Request Indexing test nearly made. en_impressions_10d is what the ENGLISH twin earned in the ten days BEFORE its translation existed.",
+ "_measure": "Contract J v1.13, recorded before anything was built: within four weeks of indexing a translated set should exceed its English twin's impressions AND beat its position on the target-language query. Malaga, the first case, cleared both in eleven days (132 against 80, position 15 against 75).",
+ "_caveat": "Malaga, Tenerife and Cadiz were live before today, so their Spanish pages already carry traffic and their baseline is not a true zero. The other twenty went live 2026-08-22 and are clean.",
+ "_readback": "scripts/daily_digest.py now attributes /it/rome to (it, rome) rather than to a city called 'it', and prints a language-test table. Read the verdict with scripts/langcheck.py.",
+ "taken": "2026-08-22",
+ "already_live_before_today": [
+  "es/malaga",
+  "es/tenerife",
+  "es/cadiz"
+ ],
+ "baseline": [
+  {
+   "lang": "de",
+   "city": "berlin",
+   "trees": 18,
+   "en_impressions_10d": 41,
+   "en_clicks_10d": 0
+  },
+  {
+   "lang": "de",
+   "city": "vienna",
+   "trees": 30,
+   "en_impressions_10d": 126,
+   "en_clicks_10d": 3
+  },
+  {
+   "lang": "de",
+   "city": "zurich",
+   "trees": 4,
+   "en_impressions_10d": 44,
+   "en_clicks_10d": 2
+  },
+  {
+   "lang": "es",
+   "city": "barcelona",
+   "trees": 46,
+   "en_impressions_10d": 200,
+   "en_clicks_10d": 5
+  },
+  {
+   "lang": "es",
+   "city": "cadiz",
+   "trees": 5,
+   "en_impressions_10d": 24,
+   "en_clicks_10d": 0
+  },
+  {
+   "lang": "es",
+   "city": "madrid",
+   "trees": 17,
+   "en_impressions_10d": 98,
+   "en_clicks_10d": 0
+  },
+  {
+   "lang": "es",
+   "city": "malaga",
+   "trees": 10,
+   "en_impressions_10d": 80,
+   "en_clicks_10d": 1
+  },
+  {
+   "lang": "es",
+   "city": "tenerife",
+   "trees": 4,
+   "en_impressions_10d": 82,
+   "en_clicks_10d": 0
+  },
+  {
+   "lang": "fr",
+   "city": "geneva",
+   "trees": 21,
+   "en_impressions_10d": 85,
+   "en_clicks_10d": 1
+  },
+  {
+   "lang": "fr",
+   "city": "nice",
+   "trees": 10,
+   "en_impressions_10d": 44,
+   "en_clicks_10d": 0
+  },
+  {
+   "lang": "fr",
+   "city": "paris",
+   "trees": 30,
+   "en_impressions_10d": 125,
+   "en_clicks_10d": 7
+  },
+  {
+   "lang": "it",
+   "city": "milan",
+   "trees": 21,
+   "en_impressions_10d": 131,
+   "en_clicks_10d": 0
+  },
+  {
+   "lang": "it",
+   "city": "palermo",
+   "trees": 21,
+   "en_impressions_10d": 173,
+   "en_clicks_10d": 2
+  },
+  {
+   "lang": "it",
+   "city": "rome",
+   "trees": 29,
+   "en_impressions_10d": 246,
+   "en_clicks_10d": 3
+  },
+  {
+   "lang": "ja",
+   "city": "kyoto",
+   "trees": 18,
+   "en_impressions_10d": 26,
+   "en_clicks_10d": 2
+  },
+  {
+   "lang": "ja",
+   "city": "osaka",
+   "trees": 4,
+   "en_impressions_10d": 24,
+   "en_clicks_10d": 0
+  },
+  {
+   "lang": "ja",
+   "city": "tokyo",
+   "trees": 10,
+   "en_impressions_10d": 37,
+   "en_clicks_10d": 1
+  },
+  {
+   "lang": "nl",
+   "city": "amsterdam",
+   "trees": 31,
+   "en_impressions_10d": 203,
+   "en_clicks_10d": 5
+  },
+  {
+   "lang": "nl",
+   "city": "nijmegen",
+   "trees": 14,
+   "en_impressions_10d": 30,
+   "en_clicks_10d": 0
+  },
+  {
+   "lang": "nl",
+   "city": "the-hague",
+   "trees": 21,
+   "en_impressions_10d": 49,
+   "en_clicks_10d": 5
+  },
+  {
+   "lang": "pt",
+   "city": "lisbon",
+   "trees": 33,
+   "en_impressions_10d": 164,
+   "en_clicks_10d": 6
+  },
+  {
+   "lang": "pt",
+   "city": "porto",
+   "trees": 27,
+   "en_impressions_10d": 61,
+   "en_clicks_10d": 0
+  },
+  {
+   "lang": "pt",
+   "city": "sintra",
+   "trees": 5,
+   "en_impressions_10d": 43,
+   "en_clicks_10d": 2
+  }
+ ]
+}
