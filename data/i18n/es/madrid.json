@@ -1,0 +1,168 @@
+{
+ "_note": "Spanish overlay for Madrid, hand-written 2026-08-22. The English page takes 98 impressions and zero clicks over the window, so the Spanish title and meta description are the whole bet: they are written around 'arboles singulares', the legal category Spain and the Comunidad de Madrid actually use, rather than a literal rendering of 'ancient trees'. Text only: every coordinate, photo, licence and pin stays in data/cities/madrid.json.",
+ "city": "Madrid",
+ "title": "Árboles singulares de Madrid: 17, del Retiro al Prado",
+ "meta_description": "Los 17 árboles singulares de Madrid, casi todos forasteros: el ahuehuete de El Retiro, un cedro del Himalaya, un olmo del Cáucaso. Dónde están y qué ver.",
+ "intro": "Los árboles más notables de Madrid son casi todos forasteros, traídos por jardineros reales que querían saber qué especies aguantaban los inviernos helados y los veranos secos de la meseta. Un ciprés mexicano ha sobrevivido a todos los árboles autóctonos del parque más famoso de la ciudad. Un cedro del Himalaya, un cedro del Atlas y un olmo del Cáucaso llevan aquí uno o dos siglos. Hasta la encina más antigua documentada, de las pocas autóctonas de la lista, creció en lo que era un coto real de caza. El Catálogo Regional de Árboles Singulares los protege a todos.",
+ "question_title": "¿Cuál es el árbol más antiguo de Madrid? (edad discutida)",
+ "question_meta": "El árbol más antiguo de Madrid es el Ahuehuete de El Retiro, un ciprés de Moctezuma: la tradición dice 1633, los técnicos municipales unos 200 años.",
+ "question_answer": "El árbol más antiguo de Madrid, según la mayoría de las fuentes, es el Ahuehuete, un ciprés de Moctezuma que crece en el Jardín del Parterre de El Retiro, aunque su edad está realmente en disputa: la leyenda y las guías antiguas sostienen que se plantó en 1633, lo que le daría casi 400 años, mientras que estudios recientes de los técnicos municipales apuntan a unos 200 años o menos. En cualquier caso está en el Parterre, a cinco minutos a pie de la Puerta de Alcalá.",
+ "question_context": "El Ahuehuete del Parterre arrastra dos versiones de su propio nacimiento que no pueden ser ciertas a la vez. Las guías y el cartel que tiene a los pies repiten una afirmación antigua: que se plantó en 1633, durante la creación del Retiro como finca real de recreo bajo el Conde-Duque de Olivares, lo que le daría cerca de 400 años y lo convertiría en el árbol más viejo de Madrid por mucha diferencia. Los especialistas, entre ellos técnicos del propio Ayuntamiento, dudan: el Jardín del Parterre se trazó en 1714, sustituyendo a lo que hubiera antes, y algunas estimaciones sitúan la plantación después de 1814, más cerca de dos siglos que de cuatro. Los ahuehuetes son originarios de los humedales mexicanos y pueden vivir milenios en las condiciones adecuadas, así que el estado del árbol por sí solo no zanja nada. Lo que nadie discute es la especie: un ciprés de pantano llegado de un país que casi ningún madrileño asocia con su parque más famoso, creciendo en la meseta desde hace al menos dos siglos. Cómo llegar: Puerta de Alcalá y cinco minutos a pie hasta el Parterre.",
+ "faq": [
+  {
+   "q": "¿Cuál es el árbol más antiguo de Madrid?",
+   "a": "Probablemente el Ahuehuete, un ciprés de Moctezuma del Jardín del Parterre de El Retiro, aunque su edad está en disputa entre la fecha legendaria de plantación de 1633 y una estimación reciente y más prudente de unos 200 años."
+  },
+  {
+   "q": "¿Dónde se ven mejor los árboles viejos de Madrid?",
+   "a": "En El Retiro, que reúne nueve de los diecisiete árboles de esta lista, más que ningún otro sitio: el Ahuehuete, un cedro del Himalaya, un tejo de tres troncos y un grupo de cipreses calvos plantados dentro del estanque."
+  },
+  {
+   "q": "¿Se pueden ver gratis los árboles singulares de Madrid?",
+   "a": "Casi todos. El Retiro, la Casa de Campo, el Campo del Moro y el Parque del Oeste son parques públicos y gratuitos. El Real Jardín Botánico cobra entrada general."
+  },
+  {
+   "q": "¿Por qué tantos árboles singulares de Madrid son especies extranjeras?",
+   "a": "Los jardineros reales españoles pasaron tres siglos importando árboles de todo el mundo para comprobar qué aguantaba el clima de Madrid. Varios de los supervivientes, un ciprés mexicano, un cedro del Himalaya, un olmo del Cáucaso, están hoy entre los ejemplares más viejos y más protegidos de la ciudad."
+  }
+ ],
+ "strings_note": "Per-tree fields: name, species (Spanish common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes.",
+ "trees": {
+  "mad_001": {
+   "name": "El Ahuehuete del Parterre",
+   "species": "Ciprés de Moctezuma (Taxodium mucronatum)",
+   "age_estimate": "de 200 a 390 años (la edad está realmente en disputa entre las fuentes)",
+   "access": "Gratuito, parque público.",
+   "transport": "Retiro (Metro L2) o Puerta de Alcalá, 5 min a pie.",
+   "story": "Este árbol arrastra dos versiones de su propio nacimiento que no pueden ser ciertas a la vez. La popular, repetida en las guías y en el cartel que tiene a los pies, dice que se plantó en 1633, cuando el Conde-Duque de Olivares abrió los terrenos que acabarían siendo El Retiro, lo que le daría casi 400 años y lo convertiría en el árbol más viejo de Madrid sin discusión. Los técnicos municipales del propio Ayuntamiento dudan: el Jardín del Parterre que lo rodea se replantó por completo en 1714, y algunos especialistas sitúan el origen real del árbol después de 1814, más cerca de dos siglos que de cuatro. Se le llama ahuehuete, del náhuatl viejo del agua, o simplemente El Abuelo, y es un ciprés de Moctezuma, una especie de los humedales mexicanos donde hay ejemplares que viven milenios y engordan troncos más anchos que una casa. En el Madrid seco y de interior ha prosperado sea cual sea la edad correcta, con el tronco acostillado y el follaje plumoso de quien parece más de la orilla de un río mexicano que de un parterre formal español."
+  },
+  "mad_002": {
+   "name": "El cedro del Himalaya del Palacio de Cristal",
+   "species": "Cedro del Himalaya (Cedrus deodara)",
+   "age_estimate": "unos 150 años",
+   "access": "Gratuito, parque público.",
+   "transport": "Ibiza (Metro L9) o Retiro (Metro L2), 8 min a pie.",
+   "story": "Este cedro está justo delante del estanque del Palacio de Cristal, el pabellón de hierro y vidrio levantado en 1887 para exhibir plantas y animales traídos de Filipinas, y ha pasado casi toda la historia del pabellón formando parte de la misma postal: el palacio de cristal reflejado en el agua, enmarcado por las ramas oscuras y escalonadas del cedro. Los cedros deodara vienen del Himalaya occidental, donde el nombre deodar procede de una expresión sánscrita que significa madera de los dioses, y la especie llegó a los jardines ornamentales europeos a principios del siglo XIX, una más entre las coníferas exóticas que los coleccionistas competían por introducir. El clima de Madrid, caluroso y seco en verano en lugar de las montañas monzónicas de las que procede la especie, le ha sentado a este ejemplar lo bastante bien como para figurar entre los seis árboles oficialmente singulares de El Retiro, protegido por el mismo catálogo regional que su vecino más famoso, el ahuehuete de edad discutida que está a un paseo corto de aquí."
+  },
+  "mad_003": {
+   "name": "El tejo de tres troncos del Palacio de Velázquez",
+   "species": "Tejo (Taxus baccata)",
+   "age_estimate": "más de 150 años",
+   "access": "Gratuito, parque público.",
+   "transport": "Ibiza (Metro L9), 10 min a pie.",
+   "story": "En lugar de un tronco, este tejo se abre en tres, cada uno lo bastante grueso como para medirse por separado: 142, 120 y 140 centímetros de perímetro, fundidos en una sola copa de 18 metros de diámetro junto al muro oriental del Palacio de Velázquez, la sala de exposiciones de ladrillo rojo levantada en 1883. Los tejos europeos son célebres por crecer despacio y vivir mucho, capaces de alcanzar miles de años en las condiciones adecuadas, y célebres también por ser tóxicos en casi todas sus partes salvo la carne que rodea la semilla, una combinación que ha hecho de la especie un fijo de los cementerios europeos durante siglos, plantada tanto por su veneno como por su simbolismo perenne. Con solo 12 metros de altura pese a su edad, este ejemplar enseña la paciencia característica del tejo: crecimiento vertical lento a cambio de densidad y longevidad. Una valla de madera rodea ahora el árbol para protegerlo, una concesión modesta para uno de los seis únicos árboles de todo El Retiro con la condición oficial de árbol singular de la Comunidad de Madrid."
+  },
+  "mad_004": {
+   "name": "Los cipreses calvos del estanque del Palacio de Cristal",
+   "species": "Ciprés calvo (Taxodium distichum)",
+   "age_estimate": "unos 108 años",
+   "access": "Gratuito, parque público.",
+   "transport": "Ibiza (Metro L9) o Retiro (Metro L2), 8 min a pie.",
+   "story": "Varios cipreses calvos crecen directamente dentro del estanque que hay frente al Palacio de Cristal, con los troncos y las raíces bajas permanentemente sumergidos, un esquema de plantación que solo funciona porque esta conífera, a diferencia de casi cualquier otro árbol de piña, tolera y hasta prefiere el agua estancada. Los cipreses calvos desarrollan unas excrecencias de raíz por encima del agua llamadas neumatóforos, o rodillas de ciprés, que permiten a las raíces respirar el oxígeno que el suelo inundado no les da, una adaptación surgida en los pantanos del sureste de Estados Unidos y no en ningún sitio cercano a Madrid. Plantados hacia 1918, unas tres décadas después de que se levantara el pabellón de cristal en 1887, el grupo se ha convertido en una de las estampas más raras de un parque por lo demás dominado por plantaciones convencionales: coníferas adultas metidas hasta la pantorrilla en un estanque, duplicando su propia imagen en el agua de la que crecen. Uno de los ejemplares del grupo lleva la declaración de árbol singular de la Comunidad de Madrid, que protege una decisión de jardinería que en la España de 1918 era un experimento de verdad."
+  },
+  "mad_005": {
+   "name": "El ciprés del Real Jardín Botánico",
+   "species": "Ciprés mediterráneo (Cupressus sempervirens)",
+   "age_estimate": "unos 250 años",
+   "access": "Entrada de pago al Real Jardín Botánico.",
+   "transport": "Atocha (Metro L1) o Banco de España (Metro L2), 8 min a pie.",
+   "story": "Este ciprés lleva en la terraza del Plano de la Flor desde antes de que el Real Jardín Botánico se mudara a este sitio. Carlos III trasladó aquí el jardín en 1781, llevándose una colección científica que ya existía para ponerla junto a su nuevo paseo del Prado, y este ciprés, que ya crecía o se plantó por esas fechas, ha sobrevivido a todos los cambios institucionales posteriores: la ocupación francesa durante la Guerra de la Independencia, un cierre y un casi abandono en el siglo XIX, y una restauración en el XX que devolvió al jardín algo parecido a su diseño ilustrado original. Con 32 metros es el árbol más antiguo del jardín y uno de los más altos, en un lugar que existe precisamente para guardar ejemplares de récord, y su tronco, de metro y medio de diámetro, ha engordado lo suficiente como para que el árbol forme parte hoy del Paisaje de la Luz, el corredor cultural que enlaza el Prado, el jardín botánico y El Retiro y que la UNESCO declaró Patrimonio Mundial en 2021."
+  },
+  "mad_006": {
+   "name": "El olmo del Cáucaso del Jardín Botánico",
+   "species": "Olmo del Cáucaso (Zelkova carpinifolia)",
+   "age_estimate": "unos 200 años",
+   "access": "Entrada de pago al Real Jardín Botánico.",
+   "transport": "Atocha (Metro L1) o Banco de España (Metro L2), 8 min a pie.",
+   "story": "Medido contra cualquier otro árbol del Real Jardín Botánico, este gana en altura: según algunos recuentos supera los 30 metros en la zona norte del jardín, a lo largo del Paseo de Mutis, y es tan alto que el personal del jardín y los botánicos de visita discrepan en varios metros según el método de medición. La especie, Zelkova carpinifolia, procede de los bosques de montaña que se reparten entre Georgia, Armenia, Azerbaiyán, Turquía e Irán, y no llegó a los jardines europeos hasta el siglo XVIII, dentro de la misma oleada de recolección científica de plantas que llenó el jardín de Madrid de ejemplares extranjeros bajo patrocinio real. Este árbol en concreto tiene unos dos siglos, lo que significa que ha pasado prácticamente toda su vida siendo el residente más alto del jardín, una distinción que esta especie de crecimiento rápido suele ganar pronto y conservar. Lleva el número 260 del Catálogo Regional de Árboles Singulares de la Comunidad de Madrid, uno entre los 280 ejemplares protegidos de toda la región."
+  },
+  "mad_007": {
+   "name": "La encina de la Glorieta del Trillo",
+   "species": "Encina (Quercus ilex)",
+   "age_estimate": "unos 300 años",
+   "access": "Gratuito, parque público.",
+   "transport": "Casa de Campo (Metro L5/L10), 20 min a pie o en la lanzadera del parque.",
+   "story": "Los caminos no rodean este árbol, convergen en él. La Glorieta del Trillo, donde se cruzan la Carretera de Somosaguas, el Paseo de los Castaños y el Camino de Rodajos dentro de la Casa de Campo, se llama así por la encina que crece en su centro, un ejemplar de unos 300 años con una copa de 18,5 metros de diámetro y un tronco de 4,6 metros de perímetro. La Casa de Campo fue coto real de caza desde el siglo XVI hasta 1931, cuando la Segunda República la abrió al público, lo que significa que esta encina pasó unos dos siglos de su vida en terreno privado reservado a los ciervos y los jabalíes de la corona española, y no creciendo en nada parecido a un parque. Las encinas son el árbol perenne por excelencia de la península, de crecimiento lento y hechas para aguantar exactamente los veranos secos y calurosos y los inviernos fríos que reparte Madrid, y esta ha sobrevivido al coto de caza, a la monarquía que lo poseía y a la República que abrió las puertas, y sigue marcando el mismo cruce de caminos."
+  },
+  "mad_008": {
+   "name": "El pino carrasco del Campo del Moro",
+   "species": "Pino carrasco (Pinus halepensis)",
+   "age_estimate": "unos 150 años",
+   "access": "Gratuito, jardín público (cerrado los lunes).",
+   "transport": "Príncipe Pío (Metro L6/L10/Cercanías), 10 min a pie.",
+   "story": "Este pino crece en los jardines que se extienden bajo la fachada oeste del Palacio Real, un paisaje formal que tomó su forma actual en la década de 1890 aunque el terreno llevaba siglos perteneciendo a la corona, usado sucesivamente como coto de caza, campo de maniobras militares y, brevemente, cantera de piedra de construcción. Con 30 metros de altura y un tronco de 2,55 metros de perímetro, el pino figura entre los seis árboles oficialmente singulares de las veinte hectáreas del Campo del Moro, y comparte esa condición con un pino piñonero, un roble, una secuoya roja y una pareja de tejos repartidos por los mismos jardines. Los pinos carrascos son nativos de la cuenca mediterránea, resistentes a la sequía y cómodos en los veranos secos de Madrid de una manera que no lo son muchos de los importados más exóticos del jardín, lo que quizá explique que este ejemplar haya alcanzado semejante tamaño en solo siglo y medio, una fracción de las edades de varios siglos que se atribuyen a otros árboles singulares de la ciudad."
+  },
+  "mad_009": {
+   "name": "El Abuelo, el cedro del Parque del Oeste",
+   "species": "Cedro del Atlas (Cedrus atlantica)",
+   "age_estimate": "más de 150 años (la edad exacta no está confirmada)",
+   "access": "Gratuito, parque público.",
+   "transport": "Moncloa (Metro L3/L6), 10 min a pie.",
+   "story": "Conocido en el barrio como El Abuelo, este cedro del Atlas crece cerca de la Fuente de la Salud y del arroyo artificial que atraviesa la parte norte del Parque del Oeste, un parque levantado sobre antiguos vertederos y terrenos de cantera a comienzos del siglo XX y rehecho de nuevo después de que los combates de la Guerra Civil lo dañaran en los años treinta. Los cedros del Atlas son originarios de las montañas del Atlas de Marruecos y Argelia y llegaron a los jardines europeos como ornamentales hacia 1840, lo que pone un límite superior a la edad que puede tener cualquier ejemplar de Madrid; la especie es capaz de vivir siglos, y algunos especialistas hablan de cerca de mil años en condiciones ideales, aunque la edad exacta de este árbol en concreto no la establece ninguna de las fuentes encontradas. Lo que sí está establecido es su condición: uno de los árboles singulares oficialmente catalogados de la Comunidad de Madrid, numerado y registrado como los otros 279 ejemplares de la región, protegido al margen de que su año de nacimiento llegue a fijarse alguna vez."
+  },
+  "mad_010": {
+   "name": "El pino piñonero de la Casa del Cura",
+   "species": "Pino piñonero (Pinus pinea)",
+   "age_estimate": "unos 230 años",
+   "access": "Gratuito, pero el aforo es limitado y conviene reservar con antelación; cerrado lunes y martes.",
+   "transport": "Canillejas (Metro L5), 15 min a pie, o El Capricho (Metro L5), 5 min a pie.",
+   "story": "Este pino piñonero crece medio escondido entre arbustos junto a una pequeña ermita llamada la Casa del Cura, en un parque construido para una duquesa y no para un rey. María Josefa Pimentel, duquesa de Osuna, encargó El Capricho en 1784 y contrató a los paisajistas franceses Jean-Baptiste Mulot y Pierre Provost para trazar jardines de estilo francés, inglés e italiano en catorce hectáreas de lo que entonces era campo abierto al este de Madrid, hoy el distrito de Barajas, junto al aeropuerto que comparte nombre. El pino es probablemente de aquel mismo periodo de construcción de finales del siglo XVIII, lo que lo convierte en contemporáneo de la idea original de la duquesa y no en un añadido posterior. A diferencia de los jardines reales más grandiosos de Madrid, El Capricho pasó décadas de abandono y, durante la Guerra Civil, sirvió de puesto de mando militar, antes de que la ciudad lo restaurara y lo reabriera al público en los años noventa. El pino sobrevivió a todo ello, uno de los pocos árboles singulares catalogados del parque y de los testigos vivos más viejos del diseño dieciochesco de la duquesa."
+  },
+  "mad_011": {
+   "name": "El madroño de la Plaza de la Lealtad",
+   "species": "Madroño (Arbutus unedo)",
+   "age_estimate": "más de 100 años",
+   "access": "Gratuito, plaza pública.",
+   "transport": "Banco de España (Metro L2), 3 min a pie.",
+   "story": "El escudo de Madrid muestra un oso empinándose sobre un madroño, y este es lo más parecido al original que tiene la ciudad. Está en la esquina sur de la Plaza de la Lealtad, frente al Ritz, apoyado en muletas de hierro que le pusieron cuando sus propias ramas engordaron lo bastante como para amenazar con tumbarlo. Los madroños suelen ser arbustos, tres o cuatro metros de matorral mediterráneo. A este se le ha dejado crecer hasta ser un árbol de verdad durante más de un siglo, y por eso hacen falta los puntales. Y por eso también la Comunidad de Madrid lo incorporó al catálogo de árboles singulares en 2015 por su valor cultural antes que botánico: el emblema, hecho realidad. Los historiadores están bastante seguros de que el árbol heráldico de 1222 no fue nunca un madroño y de que el oso del escudo se estiraba hacia otra cosa, pero la ciudad ya se ha comprometido. El fruto es la recompensa. Durante noviembre y diciembre lleva a la vez flores blancas en forma de campanilla y el fruto del año anterior, esferas rojas y verrugosas que parecen lichis y saben a poco. El unedo del nombre latino significa come solo uno."
+  },
+  "mad_012": {
+   "name": "El cedro del Líbano del Prado",
+   "species": "Cedro del Líbano (Cedrus libani)",
+   "age_estimate": "de 120 a 235 años (las fuentes no coinciden)",
+   "access": "Gratuito, jardín público del paseo del Prado.",
+   "transport": "Banco de España (Metro L2) o Estación del Arte (Metro L1), 5 min a pie.",
+   "story": "Nadie se pone de acuerdo sobre la edad de este cedro, y la diferencia es de un siglo. El catálogo regional y la literatura municipal sobre arbolado le dan unos 120 años. Las guías del paseo del Prado lo sitúan en 232, lo que fecharía la plantación a una generación del edificio del museo de Juan de Villanueva. Una tercera versión, más plausible que las otras dos, lo vincula a 1871, cuando se trazó el jardín de la ladera oeste del museo alrededor de la estatua de Velázquez. Lo que no está en discusión es la forma: 26 metros de altura, una copa de 22 metros de diámetro y un tronco de cuatro metros y medio de perímetro, de modo que el árbol es casi tan ancho como alto, con las ramas altas extendidas en esas placas horizontales y planas que solo hacen los cedros del Líbano viejos. Está a unos pasos de la puerta más concurrida del museo, y la mayoría de los varios millones de personas que pasan por delante cada año están mirando la cola. Cedrus libani es el árbol de las flotas fenicias y del templo de Salomón, reducido en su Líbano natal a un puñado de bosquetes protegidos. Madrid conserva uno en el paseo del Prado, dentro del tramo de ciudad que la UNESCO inscribió en 2021."
+  },
+  "mad_013": {
+   "name": "El almez de la Plaza de Murillo",
+   "species": "Almez (Celtis australis)",
+   "age_estimate": "unos 140 años",
+   "access": "Gratuito, plaza pública.",
+   "transport": "Estación del Arte (Metro L1), 4 min a pie.",
+   "story": "La Plaza de Murillo, la pequeña plaza formal entre la puerta sur del Prado y la verja del Real Jardín Botánico, tiene cuatro coníferas catalogadas y una frondosa que las ha superado a todas. Este almez mide 25 metros, cerca del techo registrado para la especie, y tiene unos 140 años, lo que sitúa su plantación en la década en que la plaza tomó su forma actual. Celtis australis, el almez, es un árbol del sur de Europa con un tronco gris y liso que parece vertido en lugar de crecido, y frutos del tamaño de un guisante que pasan del naranja al casi negro. Los pueblos españoles lo desmochaban para sacar mangos de horcas, porque la madera joven se dobla mucho antes de partirse, y valles enteros de Aragón vivieron de ese oficio. Es además, sin ninguna épica, uno de los árboles de calle más duros que existen, indiferente a la sequía, al viento y a los humos, que es exactamente por lo que un ejemplar de este tamaño sigue en pie en una isla de acera del centro de Madrid. Busque sus flores en abril y no las encontrará: son verdes y más pequeñas que un grano de arroz. Póngase debajo en julio, cuando la piedra de la puerta del Prado va por los cuarenta grados, y no hará falta explicar por qué se plantó así la plaza."
+  },
+  "mad_014": {
+   "name": "La picea del Himalaya de la Plaza de Murillo",
+   "species": "Picea del Himalaya (Picea smithiana)",
+   "age_estimate": "de 140 a 235 años (las fuentes no coinciden)",
+   "access": "Gratuito, plaza pública.",
+   "transport": "Estación del Arte (Metro L1), 4 min a pie.",
+   "story": "De las cuatro coníferas catalogadas en la Plaza de Murillo, esta es la que nadie sabe nombrar. Picea smithiana crece de forma silvestre entre los dos mil y casi los cuatro mil metros de altitud, en Afganistán, Cachemira, Nepal y el Tíbet, y llegó a Europa en 1818, cuando unas semillas alcanzaron Escocia. Tiene las acículas más largas de todas las piceas y el porte llorón más extremo del género: las ramas laterales cuelgan casi en vertical, de modo que un ejemplar adulto parece estar derritiéndose despacio. Este mide 22 metros y tiene un tronco de 1,85 metros de perímetro. Su edad está, honestamente, sin resolver. Las guías municipales dicen 140 años; la ficha botánica de la plaza sostiene una plantación hacia 1790, lo que la haría más vieja que el trazado actual del Jardín Botánico y que casi cualquier otra cosa enraizada en el paseo del Prado. La especie honra a sir James Edward Smith, fundador de la Linnean Society, que compró la colección entera de Linneo a los veinticuatro años. Su otro nombre, morinda, es una palabra del Himalaya para miel de flores y alude a la resina que se acumula en gotas sobre las piñas jóvenes. Una picea de alta montaña es el árbol equivocado para un verano de Madrid por cualquier medida que importe, y eso es justo lo que hace que merezca la pena ponerse debajo."
+  },
+  "mad_015": {
+   "name": "El arce plateado de cuatro troncos de Cecilio Rodríguez",
+   "species": "Arce plateado (Acer saccharinum)",
+   "age_estimate": "más de 100 años",
+   "access": "Gratuito, parque público. Los Jardines de Cecilio Rodríguez tienen un horario más corto que el resto de El Retiro y cierran al anochecer.",
+   "transport": "Ibiza (Metro L9), 5 min a pie.",
+   "story": "Este arce renunció pronto a tener un solo tronco. Se divide a la altura de la cabeza en cuatro fustes principales, cada uno con su parte de una copa de 15 metros de diámetro y 20 de alto, una forma en la que los arces plateados caen con facilidad y que los jardineros suelen corregir. A este no lo corrigió nadie. Está dentro de los Jardines de Cecilio Rodríguez, el jardín amurallado de aire andaluz del extremo sureste de El Retiro, trazado en los años cuarenta sobre un terreno reservado en 1929 para ampliar la casa de fieras del parque. Los pavos reales que patrullan los setos son lo que quedó de aquel plan. Acer saccharinum es norteamericano, un árbol de las vegas fluviales del este de Estados Unidos, y toma su nombre del envés de la hoja y no de la savia: dele la vuelta a una y es de un blanco plateado pálido, así que una racha de viento cambia el color del árbol entero de golpe. Florece antes de echar hoja, en racimos rojos y apretados a finales de febrero, semanas antes de que nada más en el parque se haya despertado. El jardín cierra al anochecer y es uno de los rincones más tranquilos de El Retiro, lo que en un parque tan concurrido conviene saber."
+  },
+  "mad_016": {
+   "name": "El cedro alto de la Avenida del Perú",
+   "species": "Cedro del Líbano (Cedrus libani)",
+   "age_estimate": "unos 120 años",
+   "access": "Gratuito, parque público.",
+   "transport": "Retiro (Metro L2), 10 min a pie dentro del parque, u O'Donnell (Metro L6), 8 min.",
+   "story": "Con 33 metros, este es el árbol más alto de la lista catalogada de El Retiro, y no lo parece, porque está en un cruce de avenidas anchas donde nada cercano le da al ojo con qué compararlo. Acérquese al tronco, de 3,3 metros de perímetro, y la altura llega toda de golpe. Es un cedro del Líbano de unos 120 años, en el encuentro de la Avenida del Perú con la Plaza de Guatemala, en el noreste del parque, a unos pasos del monumento ecuestre al general Martínez Campos. Aquella estatua se inauguró en 1907, cuando el cedro ya era un árbol joven de unos veinte años y veía a los canteros colocar el pedestal. Los cedros del Líbano pasan por tres formas claramente distintas. De jóvenes son conos estrechos, en la madurez se ensanchan, y solo los viejos se aplanan en esa silueta escalonada y de mesa que acabó en la bandera libanesa. Este va por la mitad de la segunda etapa, todavía cónico arriba y ya extendido abajo. Su copa mide 11 metros frente a los 22 del cedro más viejo que está abajo, junto al Prado. Los dos, a veinte minutos a pie uno del otro, son la misma especie sorprendida en dos puntos de una vida que puede pasar de los mil años."
+  },
+  "mad_017": {
+   "name": "El eucalipto al norte del Estanque",
+   "species": "Eucalipto blanco (Eucalyptus globulus)",
+   "age_estimate": "más de 100 años",
+   "access": "Gratuito, parque público.",
+   "transport": "Retiro (Metro L2), 8 min a pie.",
+   "story": "En febrero de 2015 la Comunidad de Madrid revisó su registro de árboles singulares y publicó dos listas, una al lado de la otra. Una añadía 69 árboles. La otra tachaba 43, por la razón más seca posible: estaban muertos o habían desaparecido, y entre ellos figuraba el Eucalipto del Parque del Retiro. En la misma página, otro eucalipto situado unos cientos de metros más allá entraba en el catálogo en su lugar, inscrito por su valor histórico. Este es el sustituto. Está al norte del Estanque Grande, cerca del Paseo de Coches, con más de 20 metros de altura, una copa más o menos igual de ancha y un tronco que no se abarca ni a medias con los brazos. Eucalyptus globulus es de Tasmania, llegó a España en la década de 1860 con la teoría de que desecaba marismas y espantaba la malaria, y se plantó con tanto entusiasmo por el noroeste peninsular que allí se ha convertido en un problema de gestión. En un parque de Madrid es sencillamente un gigante, con la corteza desprendiéndose en cintas largas y las hojas oliendo a caramelo para la tos cuando se estruja una. El tronco lleva un siglo de iniciales grabadas, y por eso los divulgadores del arbolado que lo siguen desde los años dos mil no dejan de pedirle al parque un cartel y una barandilla baja."
+  }
+ }
+}

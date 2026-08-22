@@ -62,7 +62,7 @@ def allowed_senders():
                 "ziggo.nl", "kpnmail.nl", "planet.nl", "telenet.be", "sapo.pt",
                 "libero.it", "alice.it", "wanadoo.fr", "orange.fr", "free.fr"}
     domains -= FREEMAIL
-    return addrs, domains
+    return addrs, domains, FREEMAIL
 
 
 def decode(s):
@@ -102,7 +102,7 @@ def main():
               "(OUTREACH_SMTP_USER / OUTREACH_SMTP_PASS).")
         return 1
 
-    addrs, domains = allowed_senders()
+    addrs, domains, FREEMAIL_SEEN = allowed_senders()
     d = imaplib.IMAP4_SSL(host)
     d.login(user, pw)
     d.select("INBOX", readonly=True)          # readonly: cannot change his mail
@@ -133,6 +133,54 @@ def main():
                 print("    ---")
                 for line in body_of(email.message_from_bytes(raw[0][1])).splitlines():
                     print("    " + line)
+        print()
+    # WHAT HE ALREADY ANSWERED HIMSELF. Added 2026-08-23 because the first
+    # version read INBOX only, so every thread Hidde had replied to by hand
+    # still looked unanswered and the owed-a-reply list was wrong. His words:
+    # "volgens mij lees je over mn reply mails heen."
+    #
+    # The comparison is by TIMESTAMP, not by presence. Every outreach mail we
+    # send leaves a copy in his Sent folder, so "there is a sent message to
+    # this address" is true of all 146 of them and means nothing. What counts
+    # is a message to that address dated AFTER their reply arrived.
+    import email.utils as eu
+    incoming = {}
+    for i, frm, subj, date in matched:
+        t = eu.parsedate_to_datetime(date) if date else None
+        if t and (frm not in incoming or t > incoming[frm]):
+            incoming[frm] = t
+    answered = {}
+    try:
+        d.select('"[Gmail]/Sent Mail"', readonly=True)   # the space needs the quotes
+        ok, sdata = d.search(None, f'(SINCE {int(dd)}-{month}-{y})')
+        for i in sdata[0].split():
+            ok, hdr = d.fetch(i, "(BODY.PEEK[HEADER.FIELDS (TO DATE SUBJECT)])")
+            if ok != "OK" or not hdr or not hdr[0]:
+                continue
+            h = email.message_from_bytes(hdr[0][1])
+            when = h.get("Date")
+            t = eu.parsedate_to_datetime(when) if when else None
+            if not t:
+                continue
+            for _, to in eu.getaddresses([h.get("To", "")]):
+                to = to.lower()
+                if to in incoming and t > incoming[to]:
+                    if to not in answered or t < answered[to][0]:
+                        answered[to] = (t, decode(h.get("Subject")))
+    except Exception as e:
+        print(f"(sent folder not read: {e})")
+    print(f"Of {len(incoming)} people who wrote to us, {len(answered)} already have "
+          f"a reply from him, {len(incoming) - len(answered)} do not.\n")
+    if answered:
+        print("ALREADY ANSWERED:")
+        for to, (t, subj) in sorted(answered.items(), key=lambda kv: kv[1][0]):
+            print(f"  {to:44} {t:%Y-%m-%d %H:%M}  {subj[:44]}")
+        print()
+    owed = sorted(set(incoming) - set(answered), key=lambda a: incoming[a])
+    if owed:
+        print("NO REPLY FROM HIM YET:")
+        for a in owed:
+            print(f"  {a:44} wrote {incoming[a]:%Y-%m-%d}")
         print()
     d.logout()
     if not read_bodies:

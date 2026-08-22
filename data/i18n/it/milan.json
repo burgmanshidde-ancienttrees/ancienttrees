@@ -1,0 +1,112 @@
+{
+ "_note": "Italian overlay for Milan, hand-written 2026-08-22. Rendered from data/cities/milan.json, which stays the source of truth: every coordinate, photo, licence, age and access note lives there and none of it is changed here. The search terms are the one thing that is not a translation: Italy's legal and everyday term is 'alberi monumentali', so the title, meta description and question fields are written the way an Italian reader would search rather than as a literal rendering of the English.",
+ "city": "Milano",
+ "title": "Alberi monumentali di Milano: 21 giganti da vedere",
+ "meta_description": "I 21 alberi più notevoli di Milano: la coppia di ginkgo del 1775 a Brera e la paulonia che un comitato di quartiere ha salvato nel 2016.",
+ "intro": "Gli alberi notevoli di Milano sono raramente medievali: la città si è ricostruita troppe volte perché il legno vecchio sopravvivesse per caso. Qui è durato quello che un'istituzione ha registrato (la coppia di ginkgo dell'università, arrivata dalla Cina nel 1775), quello che un quartiere ha difeso (una paulonia che un comitato di Brera ha salvato da un progetto edilizio nel 2016), o quello che un parco ha conservato cambiando mestiere (un ippodromo diventato nel 1919 scuola all'aperto per bambini malati, con le sue querce). Ventuno alberi, e quasi ognuno deve la sopravvivenza a una decisione umana precisa.",
+ "question_title": "Qual è l'albero più antico di Milano? (1775)",
+ "question_meta": "L'albero più antico di Milano è la coppia di ginkgo dell'Orto Botanico di Brera, piantata da seme cinese nel 1775. La storia, più altri venti alberi.",
+ "question_answer": "L'albero più antico di Milano è uno dei due ginkgo dell'Orto Botanico di Brera, piantati nel 1775 quando i fondatori del giardino li fecero arrivare direttamente dalla Cina. Oggi hanno entrambi circa 250 anni e crescono a pochi passi dalla serra settecentesca del giardino, in Via Brera 28.",
+ "question_context": "Milano non è mai stata una città facile per un albero vecchio. Guerre, peste e le demolizioni continue fra Ottocento e Novecento hanno spianato quasi tutto quello che le precedeva, quindi in questa lista di medievale non c'è quasi niente. L'unica eccezione netta è la coppia di Ginkgo biloba dell'università, un maschio e una femmina piantati insieme nel 1775, quando l'abate Fulgenzio Vitman stava costruendo l'Orto Botanico di Brera per la nuova facoltà medica dell'imperatrice Maria Teresa e faceva arrivare i semi direttamente dalla Cina, meno di vent'anni dopo che la specie aveva raggiunto l'Europa. Il registro italiano degli alberi monumentali calcola la loro età dai dati di accrescimento in 235 anni, un po' meno dei 251 che darebbe il semplice conteggio dalla data di impianto; questa pagina riporta entrambe le cifre invece di sceglierne una, perché lo scarto è esattamente il tipo di errore che nasce dal misurare una specie a crescita lenta con due metodi diversi. In ogni caso sono gli alberi più antichi di Milano con ampio margine su qualunque altro elencato qui, e nel marzo 2026 il giardino ha celebrato il loro duecentocinquantesimo anniversario con un convegno pubblico.",
+ "faq": [
+  {
+   "q": "Qual è l'albero più antico di Milano?",
+   "a": "Uno dei due ginkgo dell'Orto Botanico di Brera, piantati nel 1775 da seme portato direttamente dalla Cina. A seconda del metodo di calcolo la coppia ha fra i 235 e i 251 anni, ed è di gran lunga la più antica documentata in città."
+  },
+  {
+   "q": "Gli alberi monumentali di Milano si visitano gratis?",
+   "a": "Tutti e ventuno quelli di questa lista sono gratuiti. A differenza di Roma o Firenze, nessuno degli alberi più notevoli di Milano sta dentro un giardino o un monumento a pagamento; le uniche limitazioni sono gli orari ridotti del Parco Trotter, i cui terreni ospitano anche una scuola in funzione, e il parco di Villa Marietti Radice Fossati, dove cresce l'Arcidiavolo: il Comune chiede la discrezione dovuta a un luogo abitato, perché negli edifici della villa vive della gente, e dice che si può varcare il cancello per visitare il parco."
+  },
+  {
+   "q": "Perché Milano ha così pochi alberi davvero antichi rispetto a Roma o Firenze?",
+   "a": "A Milano mancano i giardini istituzionali di lunga durata, le ville papali e i terreni monastici che altrove in Italia hanno protetto gli alberi vecchi. Quasi tutto quello che sta in questa lista è stato piantato deliberatamente negli ultimi due secoli, dentro parchi costruiti da zero o piazze ridisegnate dopo la crescita rapida della città fra Ottocento e Novecento."
+  },
+  {
+   "q": "Milano ha perso alberi storici di recente?",
+   "a": "Sì. Una quercia rossa di 200 anni molto amata, nota come Quercia di Montale, è caduta nell'ottobre 2019 durante una pioggia intensa; il suo tronco è stato conservato sul posto invece di essere rimosso. Un platano piantato nel 1773 a Villa Litta, un tempo fra i più vecchi della città, è stato abbattuto nel 2015 dopo una malattia fungina; una sezione del suo tronco è esposta dentro la villa."
+  }
+ ],
+ "strings_note": "Campi per albero: name, species (nome comune italiano, stesso nome latino), age_estimate, access, transport, story. Storie da 150 a 250 parole, stesso standard dell'inglese, nessun trattino lungo.",
+ "trees": {
+  "mil_001": {
+   "name": "Il Sacerdote",
+   "species": "Cipresso calvo (Taxodium distichum)",
+   "age_estimate": "circa 156 anni",
+   "access": "Gratuito, parco pubblico (orari variabili secondo la stagione)",
+   "transport": "5 minuti a piedi da Porta Venezia (M1)",
+   "story": "Per anni i giardinieri del parco di Porta Venezia hanno chiamato metasequoia questo albero, sbagliando genere, finché qualcuno non è andato a controllare davvero. È un cipresso calvo, uno dei primi mai piantati a Milano, originario delle paludi del Sud degli Stati Uniti e di nessuna parte d'Italia, e una delle pochissime conifere al mondo che perde gli aghi per l'inverno, il tratto che alla specie è valso il nome inglese. Alto circa 35 metri, con un tronco di 6,2 metri di circonferenza, cresce sul bordo del laghetto artificiale dentro i Giardini Pubblici Indro Montanelli, il parco pubblico più antico di Milano, aperto nel 1784 su un terreno che un duca asburgico cedette perché fossero i detenuti a sistemarlo. Altri cipressi dividono con lui questo tratto d'acqua, ma è il più alto e il più largo di tutto il gruppo, ed è il motivo per cui lo scrittore e studioso di foreste Tiziano Fratus lo ha soprannominato Il Sacerdote: d'inverno i rami spogli si aprono come una veste. Le radici, come quelle di ogni cipresso calvo in terreno bagnato, spingono fuori dal pelo dell'acqua ginocchia legnose per respirare, e i visitatori le scambiano spesso per ceppi. Con i suoi 156 anni circa precede il rifacimento ottocentesco all'inglese del parco, ed è sopravvissuto allo zoo che occupava questi stessi prati, smantellato nel 1992."
+  },
+  "mil_002": {
+   "name": "Platano di Indro",
+   "species": "Platano comune (Platanus x acerifolia)",
+   "age_estimate": "età non documentata, probabilmente 100-240 anni",
+   "access": "Gratuito, parco pubblico (orari variabili secondo la stagione)",
+   "transport": "5 minuti a piedi da Porta Venezia (M1)",
+   "story": "Il platano più grande di Milano non cresce tanto in altezza quanto di lato, in tutte le direzioni insieme. Porta il nome di Indro Montanelli, il giornalista a cui il parco è stato intitolato nel 2002, e sta a una cinquantina di metri dalla sua statua, con un tronco di 8,36 metri di circonferenza, il più largo fra tutti i platani della città. La base è bassa, irregolare, profondamente scanalata, e si divide quasi a livello del terreno in almeno cinque branche principali, ognuna grossa abbastanza da poter essere un tronco a sé. L'effetto, secondo gli agronomi che lo hanno esaminato, somiglia più a un vaso tenuto aperto che alla colonna dritta in cui quasi tutti i platani si trasformano. Nessun documento di impianto è sopravvissuto, cosa normale per un parco ridisegnato due volte dal 1784 e catalogato albero per albero solo di recente, quindi l'età si può soltanto dedurre dalla circonferenza: da qualche parte nel suo secondo secolo, forse nel terzo. Quello che è documentato è chi ci abita. I parrocchetti dal collare, specie sfuggita dalle gabbie e ormai nidificante in tutta Milano, occupano le cavità in alto nella chioma e aggiungono lampi di verde tropicale a un albero già troppo disordinato per sembrare curato. Chi insegue la statua per una fotografia quasi mai alza lo sguardo su quello che le sta sopra."
+  },
+  "mil_003": {
+   "name": "Bagolaro dei Giardini Montanelli",
+   "species": "Bagolaro (Celtis australis)",
+   "age_estimate": "circa 164 anni",
+   "access": "Gratuito, parco pubblico (orari variabili secondo la stagione)",
+   "transport": "5 minuti a piedi da Porta Venezia (M1)",
+   "story": "A Milano questa specie si chiama spaccasassi, per radici abbastanza forti da sollevare la pavimentazione, e questo bagolaro ha avuto oltre un secolo e mezzo per mettere alla prova la fama contro i vialetti del parco pubblico più antico della città. Alto 27 metri, con un tronco di 4,24 metri di circonferenza, è uno dei sette alberi che il Comune ha riconosciuto formalmente come monumentali dentro i Giardini Pubblici Indro Montanelli, e divide quello status con il platano e con il cipresso calvo che stanno a pochi passi. Celtis australis è spontaneo in tutto il Mediterraneo e nell'Ottocento a Milano fu piantato ovunque per lo stesso motivo per cui oggi prospera: non lo disturba quasi niente, né la fuliggine, né la siccità, né il terreno compattato sotto un parco attraversato da decine di migliaia di persone alla settimana. I suoi frutti piccoli e scuri, simili a ciliegie minuscole, maturano in autunno e attirano i merli più che le persone, che in genere passano accanto a un albero privo della drammaticità visibile dei suoi vicini più contorti. Il registro italiano degli alberi monumentali fissa la sua età a 164 anni, calcolata dai dati di accrescimento e non da un documento di impianto sopravvissuto, ed è l'unica cifra che una fonte dia: qui è trattata come una stima e non come un fatto acquisito."
+  },
+  "mil_004": {
+   "name": "Il Ginkgo dell'Orto Botanico di Brera",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "circa 235-251 anni",
+   "access": "Ingresso gratuito, Orto Botanico di Brera (lun-sab, orari variabili secondo la stagione)",
+   "transport": "5 minuti a piedi da Lanza (M2) o Montenapoleone (M3)",
+   "story": "Dietro il cortile di Palazzo Brera cresce una coppia di alberi più vecchia dell'idea stessa di Italia: un ginkgo maschio e uno femmina, piantati insieme nel 1775, quando il nuovo orto botanico dell'imperatrice Maria Teresa aveva appena un anno, nati da semi portati direttamente dalla Cina meno di vent'anni dopo che la specie era arrivata in Europa. Ginkgo biloba viene spesso chiamato fossile vivente, sostanzialmente immutato da oltre 200 milioni di anni e unico superstite di una famiglia che cresceva accanto ai dinosauri; con quel metro questa coppia è poco più di una piantina, ma con un'età fra i 235 e i 251 anni, a seconda che si dia retta al calcolo sugli anelli di accrescimento o al documento di impianto del giardino, sono gli alberi documentati più antichi di Milano con ampio margine. Nel marzo 2026 l'università ha celebrato il loro duecentocinquantesimo anniversario con un convegno pubblico costruito interamente attorno ai due alberi. Ogni novembre le foglie a ventaglio virano a un oro uniforme e cadono nel giro di pochi giorni invece di sbiadire gradualmente, tappezzando per poco tempo le aiuole intorno. L'ingresso al giardino è gratuito, cosa rara fra i luoghi più antichi di Milano, in fondo a un cortile in cui quasi nessun visitatore della Pinacoteca accanto pensa di entrare."
+  },
+  "mil_005": {
+   "name": "La Catalpa della Guastalla",
+   "species": "Catalpa (Catalpa bignonioides)",
+   "age_estimate": "circa 136 anni",
+   "access": "Gratuito, giardino pubblico (recintato, indicativamente 7:00-21:00, orari variabili secondo la stagione)",
+   "transport": "5 minuti a piedi da Crocetta (M3)",
+   "story": "Il giardino pubblico più antico di Milano, tracciato nel 1555 per una contessa che non visse abbastanza da vederlo finito, tiene il suo albero più strano dietro una peschiera barocca che nessuno si aspetta di trovare in mezzo alla città. Questa catalpa, specie nordamericana importata in Europa per il fogliame ornamentale e non per un uso pratico, ha passato circa 136 anni a torcersi invece di crescere dritta, al punto che gli agronomi descrivono il suo tronco di 3,5 metri come qualcosa di più vicino a una scultura vegetale che a un normale albero da ombra. Ogni giugno la chioma si riempie di fiori bianchi screziati come orchidee, in dense pannocchie erette, seguiti dai baccelli lunghi e sottili che alla specie sono valsi il soprannome americano di albero dei sigari. I Giardini della Guastalla precedono quasi tutto il resto di questa lista: fondati da Ludovica Torelli, contessa di Guastalla, come giardino del collegio femminile che finanziava, sono diventati uno dei primi parchi milanesi aperti a tutti, quattro secoli dopo la sua morte. Con poco più di 12.000 metri quadri è uno dei giardini più piccoli della lista e uno dei più facili da superare senza accorgersene, a qualche strada dal policlinico invece che davanti a una piazza importante."
+  },
+  "mil_006": {
+   "name": "La Quercia Rossa di Piazza XXIV Maggio",
+   "species": "Quercia rossa (Quercus rubra)",
+   "age_estimate": "circa 131 anni",
+   "access": "Gratuito, piazza pubblica",
+   "transport": "10 minuti a piedi da Porta Genova (M2), oppure tram 3/9/15 fino a Porta Ticinese",
+   "story": "Questa quercia cresceva già in un vivaio americano mentre Milano stava ancora decidendo cosa fare del sito di una delle sue sei porte storiche. Giunio Capè fece arrivare la pianta in Piazza XXIV Maggio alla fine della Prima guerra mondiale e la mise a dimora nel 1924 in memoria del figlio Giuseppe, alpino che dalla guerra tornò, e degli alpini che non tornarono. Un secolo dopo la quercia sfiora i 20 metri di altezza con un tronco di poco meno di 5 metri di circonferenza, sostenuta dal 2019 da un discreto esoscheletro d'acciaio che una carpenteria bergamasca ha costruito per reggere una chioma cresciuta oltre la propria struttura. Quercus rubra è originaria del Nord America orientale e in ottobre e novembre vira a un rosso profondo, quasi ossidato, il colore che dà il nome alla specie e, per qualche settimana l'anno, l'unico rosso vero in una piazza più nota per le arcate daziarie ottocentesche della vecchia Porta Ticinese alle sue spalle. La stampa milanese la chiama a volte l'albero più antico della città; non lo è, diversi alberi di questa lista sono più vecchi, ma è forse l'unico di cui siano documentate insieme la data esatta di impianto e la ragione per cui sta lì."
+  },
+  "mil_007": {
+   "name": "La Quercia Rossa del Trotter",
+   "species": "Quercia rossa (Quercus rubra)",
+   "age_estimate": "circa 85 anni",
+   "access": "Gratuito, parco pubblico, aperto fuori dall'orario scolastico (orari variabili secondo la stagione)",
+   "transport": "Autobus o tram verso Loreto/Turro, poi una breve camminata fino a Via Giacosa",
+   "story": "Questa quercia cresce su un ippodromo che ha smesso di correre un secolo fa ed è diventato una scuola. Il Parco Trotter prende il nome dalla Società del Trotter, che qui organizzò corse al trotto dall'Ottocento fino al trasferimento della pista a San Siro nel 1924; quando la società fallì, il Comune di Milano comprò l'ovale abbandonato e a partire dal 1919 lo trasformò nella Casa del Sole, una scuola all'aperto di 128.000 metri quadri per bambini malati di tubercolosi e di altre patologie croniche, costruita sulla convinzione che aria e spazio fossero essi stessi una cura. La forma ad anello della vecchia pista definisce ancora oggi i vialetti del parco, tagliati da un unico viale dritto di platani. Questa quercia rossa, piantata non molto dopo l'apertura della scuola, arriva oggi a circa 40 metri, più alta di qualsiasi altro albero di questa lista, con un tronco di 4,3 metri di circonferenza, lungo Via Giacosa vicino alla vecchia cappella del parco. La scuola non ha mai chiuso del tutto. I bambini fanno ancora lezione su questi terreni, ed è il motivo per cui il parco tiene orari insoliti, aperto al pubblico solo fuori dall'orario scolastico e gratuito ogni giorno in cui apre."
+  },
+  "mil_008": {
+   "name": "La Paulonia di Via Madonnina",
+   "species": "Paulonia (Paulownia tomentosa)",
+   "age_estimate": "oltre 65 anni, età esatta non documentata",
+   "access": "Gratuito, visibile dalla strada (piccolo terreno comunale, non un giardino in cui si entra)",
+   "transport": "5 minuti a piedi da Lanza (M2)",
+   "story": "L'albero più fotografato di Milano cresce su un ritaglio triangolare di terreno dove stava un edificio, finché le bombe alleate non lo abbatterono durante la Seconda guerra mondiale. All'angolo fra Via Madonnina e Via San Carpoforo non fu ricostruito niente, e in qualche momento dei decenni successivi una paulonia attecchì nel vuoto, su una terra per cui nessuno aveva un piano particolare. Negli anni Dieci di questo secolo il lotto era diventato tutt'altro: probabilmente l'albero più fotografato della città, secondo la stampa locale, con i suoi fiori lilla ormai fissi in ogni guida primaverile al quartiere di Brera. Quella popolarità è l'unico motivo per cui è ancora in piedi. Un operatore immobiliare aveva il diritto di costruire una piccola palazzina residenziale sul lotto triangolare, e solo una campagna insistente degli abitanti di Brera, che formarono un comitato apposta per salvare l'albero, convinse il Comune di Milano ad acquisire i 155 metri quadri nel 2016 in cambio di un'area più grande altrove in città. La paulonia è sopravvissuta al temporale violento del luglio 2023 che sradicò un vecchio fico che le cresceva accanto. Nessuno studio scientifico l'ha mai datata con precisione; i residenti la descrivono come vecchia di oltre 65 anni, cresciuta da sola e non piantata da qualcuno con un progetto."
+  },
+  "mil_009": {
+   "name": "La Pianta di Affori",
+   "species": "Platano comune (Platanus x acerifolia)",
+   "age_estimate": "187 anni secondo l'analisi dendrocronologica; la tradizione locale ne rivendica oltre 250",
+   "access": "Gratuito, angolo di strada pubblico",
+   "transport": "5 minuti a piedi da Affori Centro (M3)",
+   "story": "Ogni milanese di Affori conosce questo albero semplicemente come la Pianta, come se non ce ne fossero altre, e la leggenda locale vuole che Napoleone sia il motivo per cui sta lì: piantata, si dice, in onore di una nobildonna milanese di cui si era invaghito durante la campagna d'Italia, attorno al 1800. I carotaggi del 2013, quando una squadra di restauro perforò il tronco per verificarne la salute, raccontano una storia più modesta: gli anelli di accrescimento davano allora all'albero circa 187 anni, molto più vicino agli anni Venti dell'Ottocento che alle guerre napoleoniche. Questa pagina riporta entrambe le cifre, perché nessuna delle due si può smentire del tutto e il campione prelevato è la prova più solida. Quello che non è in discussione è l'albero: un platano di 20 metri con un tronco di oltre 2 metri di diametro, all'angolo fra Viale Affori e Via Astesani da prima che il quartiere intorno esistesse come qualcosa di diverso da campagna. Un gufo ha nidificato una volta in una cavità sul lato occidentale; il ricordo è segnato oggi da una piccola scultura lignea di gufo alla base del tronco. Una staffa metallica più in alto, usata un tempo per far passare il cavo elettrico fra i rami, è una traccia rara di come Milano cablava le sue periferie prima che a qualcuno venisse in mente di proteggere l'albero che reggeva il peso."
+  },
+  "mil_010": {
+   "name": "Il Noce del Caucaso di Parco Sempione",
+   "species": "Noce del Caucaso (Pterocarya fraxinifolia)",
+   "age_estimate": "età non documentata",
+   "access": "Gratuito, parco pubblico",
+   "transport": "10 minuti a piedi da Cadorna (M1/M2) o Cairoli (M1)",
+   "story": "Questo noce cresce quasi in orizzontale sopra l'acqua, con i rami bassi piegati così avanti verso il laghetto del Parco Sempione che in zona si scherza dicendo che sta cercando di bere. Pterocarya fraxinifolia è originaria del Caucaso e dell'Iran settentrionale, una specie di zona umida che prospera su suolo costantemente bagnato, esattamente la condizione che trova sul bordo del lago artificiale accanto al Ponte delle Sirenette, la passerella spostata qui nel 1930 quando il canale che attraversava altrove in Milano fu interrato. Il tronco misura 4,35 metri di circonferenza e l'albero arriva a 18 metri, e il registro italiano degli alberi monumentali lo indica, insieme a un secondo esemplare che sta 1,6 chilometri più in là ai Giardini Montanelli, come il noce del Caucaso più vecchio della città, anche se nessuna fonte dà a nessuno dei due un'età esatta o una data di impianto. Le foglie composte, di forma simile a quelle del frassino, virano a un oro caldo in ottobre e novembre insieme ai cipressi calvi piantati sulla stessa riva, e per qualche settimana fanno del bordo del laghetto il colore autunnale migliore di tutto il parco. Chi punta al Castello Sforzesco o alla Triennale quasi mai fa i cento metri in più fino all'acqua dove cresce."
+  }
+ }
+}

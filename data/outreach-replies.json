@@ -1,5 +1,5 @@
 {
- "note": "Every reply we have received to outreach, one row each, so the reply rate is a sum rather than a feeling. Built 2026-08-22 after Hidde asked 'hou je dit bij om van te leren?' and the honest answer was that replies lived only as loose files in drafts/. Add a row the day a reply arrives; scripts/outreach_stats.py joins this with data/outreach-sent.json.",
+ "note": "Every reply we have received to outreach, one row each, so the reply rate is a sum rather than a feeling. Built 2026-08-22 after Hidde asked 'hou je dit bij om van te leren?' and the honest answer was that replies lived only as loose files in drafts/. Add a row the day a reply arrives; scripts/outreach_stats.py joins this with data/outreach-sent.json. CORRECTED 2026-08-23: for one day this file claimed five threads were owed a reply and all five had already been answered by Hidde himself. The reader looked in INBOX only, so his own replies were invisible. It now reads the Sent folder too and compares timestamps, because every outreach mail we send also sits in Sent and mere presence there proves nothing.",
  "kinds": {
   "correction": "They told us something on our pages is wrong. The most valuable kind: it fixes the product.",
   "referral": "They named the right person or desk instead. Historically our best outcome per mail.",
@@ -59,7 +59,10 @@
    "country": "Portugal",
    "kind": "answer",
    "gave": "Answered after batch 002.",
-   "draft": "drafts/reply-bucaco.md"
+   "draft": "drafts/reply-bucaco.md",
+   "needs_reply": false,
+   "his_reply_date": "2026-08-21",
+   "his_reply": "Answered: confirmed the sequoias are out, thanked them for the plaques and photographs, said which three pages now carry their images and asked for written permission to keep them, and asked whether the sequoias are visible from public ground so they could return as view-only."
   },
   {
    "date": "2026-08-16",
@@ -70,7 +73,9 @@
    "kind": "data",
    "gave": "Congratulated the project and ASKED FOR COLLABORATION: to show the platform at one of their field events, or another joint action. That is an offer of distribution, which is the thing we have none of. Draft waiting in drafts/reply-quercus-lisboa.md.",
    "draft": "drafts/reply-quercus-lisboa.md",
-   "needs_reply": true
+   "needs_reply": false,
+   "his_reply_date": "2026-08-21",
+   "his_reply": "Answered: yes to showing the platform at a field event, ASKED FOR A MENTION on one of their pages, asked for phone photographs of the 23 Lisbon trees that have none, and asked which tree they miss."
   },
   {
    "date": "2026-08-10",
@@ -102,7 +107,9 @@
    "kind": "referral",
    "gave": "Treptower Park is run by the Strassen- und Grunflachenamt Treptow-Kopenick, not by them. That district office has still not been written to.",
    "draft": "drafts/reply-gruen-berlin.md",
-   "needs_reply": true
+   "needs_reply": false,
+   "his_reply_date": "2026-08-11",
+   "his_reply": "Answered."
   },
   {
    "date": "2026-08-10",
@@ -125,7 +132,9 @@
    "kind": "answer",
    "gave": "The Villa Torlonia cedar is officially censused and on the ministry's own monumental-tree map. The Aranciera hackberry is NOT on that list and they cannot identify which specimen we mean without coordinates, which we hold. They named Ufficio Ville and Dipartimento Tutela Ambientale as the competent offices; neither has been written to.",
    "draft": "drafts/reply-roma-sovrintendenza.md",
-   "needs_reply": true
+   "needs_reply": false,
+   "his_reply_date": "2026-08-12",
+   "his_reply": "Answered."
   },
   {
    "date": "2026-08-16",
@@ -183,10 +192,12 @@
    "type": "institution",
    "country": "Portugal",
    "kind": "correction",
-   "needs_reply": true,
+   "needs_reply": false,
    "to_address": "gabpresidencia@fmb.pt",
    "gave": "Their biologist confirmed all our Bucaco trees are classified of public interest, sent the information plaques and photographs by WeTransfer, and told us to REMOVE the sequoias by the Ermida de Santo Elias because nobody can walk to them. Done the same day: the trees are out, nine girths and the heights are in, three photographs live. The reply asking written permission for the plaque texts and photographs is drafted and unsent.",
-   "draft": "drafts/reply-bucaco.md"
+   "draft": "drafts/reply-bucaco.md",
+   "his_reply_date": "2026-08-21",
+   "his_reply": "Answered: confirmed the sequoias are out, thanked them for the plaques and photographs, said which three pages now carry their images and asked for written permission to keep them, and asked whether the sequoias are visible from public ground so they could return as view-only."
   },
   {
    "org": "Woodland Trust, Ancient Tree Inventory (Kate Lewthwaite)",
@@ -194,10 +205,12 @@
    "type": "ngo",
    "country": "United Kingdom",
    "kind": "answer",
-   "needs_reply": true,
+   "needs_reply": false,
    "to_address": "ancienttreeinventory@woodlandtrust.org.uk",
    "gave": "Asked three questions and said she would discuss with colleagues: what the app is, whether it is a private individual or an institution and whether it is funded, and above all HOW WE WOULD KEEP RECORDS UP TO DATE, which she names as their main reason for not sharing data externally, because trees die and photographs age. This is the 233,000-tree register and the thread has been open and unanswered for twelve days.",
-   "draft": "drafts/woodland-trust-reply.md"
+   "draft": "drafts/woodland-trust-reply.md",
+   "his_reply_date": "2026-08-10",
+   "his_reply": "He answered the same evening: private individual, no institution, no funding, site live with 95 cities; he would not publish a copy of the Inventory but a selection turned into walkable clusters; and on her real objection, keeping records current, that it runs two ways, the site re-checking against their data and readers correcting what they find on the ground. Now waiting on HER: she said she would discuss it with colleagues."
   },
   {
    "org": "Dumbarton Oaks Park Conservancy (Sara Carlson)",

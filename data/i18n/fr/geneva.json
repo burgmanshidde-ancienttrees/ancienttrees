@@ -1,0 +1,128 @@
+{
+ "_note": "Overlay français de Genève, écrit à la main le 2026-08-22. Traduction de rendu, pas de recherche : chaque fait, âge, espèce et note d'accès vient de data/cities/geneva.json et y reste vérifié. Le vocabulaire est celui d'un Genevois, arbres remarquables, inventaire cantonal, circonférence du tronc, houppier, et les lieux gardent leur nom d'ici, la Perle du Lac, le Jardin botanique, La Grange. Texte seul : coordonnées, photos, licences et parcours restent dans le fichier anglais.",
+ "city": "Genève",
+ "title": "Arbres remarquables de Genève : les 21 plus beaux",
+ "meta_description": "Les arbres remarquables de Genève, du cèdre de 290 ans au marronnier officiel guetté chaque printemps depuis 1818. Vingt et un lieux vérifiés.",
+ "intro": "Les plus vieux arbres de Genève sont pour la plupart arrivés comme des souvenirs. Diplomates, banquiers et voyageurs ont garni les propriétés lacustres du XIXe siècle de cèdres du Liban, de séquoias de Californie et de platanes déjà grands avant les jardins qui les entourent, des importations qui ont survécu aux maisonnées qui les avaient plantées et se dressent dans des parcs dont la ville a hérité avec eux. Une tradition est plus vieille encore : depuis 208 ans sans interruption, un marronnier est guetté pour la première feuille du printemps, la plus ancienne série d'observations naturalistes de Suisse.",
+ "question_title": "Quels sont les plus vieux arbres de Genève ? (1728)",
+ "question_meta": "Cinq platanes plus vieux que le jardin botanique où ils poussent, relevés sur un cadastre officiel dès 1728, sont les doyens de Genève. Les 21 arbres.",
+ "question_answer": "Les plus vieux arbres de Genève sont les platanes du Jardin botanique, cinq platanes communs de l'allée centrale, déjà assez grands pour figurer sur un plan cadastral cantonal en 1728, ce qui leur fait au moins 298 ans aujourd'hui. Ils précèdent de près de deux siècles le jardin lui-même : le Conservatoire et Jardin botaniques ne s'est installé sur ce terrain, l'ancien domaine de l'Ariana, qu'en 1905.",
+ "question_context": "À Genève, l'âge des arbres se range honnêtement en deux catégories : une poignée appuyée sur des documents, et une majorité déduite de la circonférence du tronc et des archives des domaines. Les platanes sont le rare premier cas, recoupés avec le relevé cadastral cantonal de 1728 plutôt qu'estimés à partir de mesures de tronc, et c'est pourquoi cette page les nomme avant les cèdres du parc Beaulieu, même si les deux plantations relèvent à peu près de la même époque. Les cèdres de Beaulieu ont l'histoire la mieux connue, des graines offertes en 1735 issues du même envoi de Bernard de Jussieu que le célèbre cèdre de Jussieu de Paris, mais cette date de 1735 dit quand les jeunes plants ont été mis en terre, pas quand la graine a été récoltée : une petite marge d'incertitude reste sous un chiffre pourtant partout repris. Le cèdre du parc La Grange, issu une génération plus tard de graines de Beaulieu, et le bosquet de séquoias du parc Barton, planté à partir de 1858, sont assez nettement plus jeunes pour que le classement des trois doyens genevois se joue entre les platanes et les cèdres, et non sur les plantations plus récentes des domaines.",
+ "faq": [
+  {
+   "q": "Quels sont les plus vieux arbres de Genève ?",
+   "a": "Cinq platanes communs de l'allée centrale du Jardin botanique, déjà debout quand un plan cadastral les a relevés en 1728, âgés d'au moins 298 ans et d'environ deux siècles de plus que le jardin lui-même."
+  },
+  {
+   "q": "Les arbres remarquables de Genève sont-ils gratuits ?",
+   "a": "Oui, les vingt et un. La plupart se trouvent dans des parcs et des places publiques ouverts à toute heure, et les deux du Conservatoire et Jardin botaniques sont libres d'accès pendant les heures d'ouverture. Aucun billet, aucune réservation."
+  },
+  {
+   "q": "Pourquoi tant de cèdres et de séquoias à Genève ?",
+   "a": "Les propriétés lacustres du XIXe siècle rivalisaient à coups d'arbres exotiques rapportés de l'étranger, cèdres du Liban et séquoias de Californie en tête, comme une démonstration de fortune à la mode. Plusieurs de ces jardins privés sont ensuite passés intacts à la ville."
+  },
+  {
+   "q": "Quel est le marronnier officiel de Genève ?",
+   "a": "Un marronnier d'Inde de la promenade de la Treille que le sautier du canton examine chaque année depuis 1818 pour y guetter la première feuille ouverte de la saison, signal officiel de l'arrivée du printemps."
+  }
+ ],
+ "strings_note": "Champs par arbre : name, species (nom français courant, même latin), age_estimate, access, transport, story. Histoires de 150 à 250 mots, même exigence que l'anglais, aucun tiret cadratin.",
+ "trees": {
+  "gen_001": {
+   "name": "Le Marronnier officiel",
+   "species": "Marronnier d'Inde (Aesculus hippocastanum)",
+   "age_estimate": "environ 11 ans (la tradition remonte à 1818)",
+   "access": "Gratuit, promenade publique ouverte à toute heure",
+   "transport": "Au cœur de la Vieille-Ville, à pied depuis n'importe quel point du vieux Genève",
+   "story": "Genève tient depuis 1818 le relevé écrit ininterrompu de la première feuille de printemps d'un marronnier, l'une des plus anciennes séries phénologiques continues au monde, la troisième selon le canton lui-même. Chaque année, le sautier, secrétaire du parlement cantonal genevois, monte à la promenade de la Treille jusqu'à un arbre désigné, y cherche la première feuille ouverte de la saison et communique la date à la presse. La tradition civique est traitée avec le sérieux d'un vote de budget.\n\nL'arbre qui tient le rôle aujourd'hui est le quatrième. Le premier est mort jeune. Le deuxième a duré de 1905 à 1929. Le troisième a servi 86 ans avant qu'un champignon des racines, l'armillaire, ne le vide de l'intérieur, sa dernière observation enregistrée datant du 13 mars 2015. Son remplaçant a été choisi en septembre de la même année pour une qualité avant toutes les autres : il se dresse juste en face de la tour Baudet, qui abrite le gouvernement cantonal, ce qui garde la marche du sautier courte.\n\nC'est de loin le plus jeune arbre de cette liste, mais le registre qu'il porte désormais est ce qu'il a de plus ancien, deux siècles de Genevois à surveiller le même petit square pour le premier signe que le printemps est vraiment arrivé."
+  },
+  "gen_002": {
+   "name": "Les Cèdres du parc Beaulieu",
+   "species": "Cèdre du Liban (Cedrus libani)",
+   "age_estimate": "environ 290 ans",
+   "access": "Gratuit, parc ouvert à toute heure, partiellement accessible en fauteuil roulant",
+   "transport": "Courte marche depuis la gare Cornavin",
+   "story": "Un naturaliste français a sorti clandestinement des graines de cèdre d'un jardin anglais, les a semées au Jardin des Plantes à Paris, et quelques-uns des jeunes plants obtenus ont été offerts en 1735 à un baron genevois. Le convoi de graines de Bernard de Jussieu est le même qui a donné le célèbre cèdre de Jussieu, toujours debout à Paris : cas rare de deux villes dont les plus vieux cèdres tiennent au même coursier du XVIIIe siècle.\n\nLe baron Jean-François de Sellon a planté sa part dans sa propriété du bord du lac, aujourd'hui le parc Beaulieu, et deux des arbres qui en sont issus s'y dressent encore, assez proches l'un de l'autre pour ne faire qu'une seule destination. Le registre genevois des arbres les dit les plus vieux cèdres du Liban de Suisse, et peut-être d'Europe, une affirmation que cette page reprend comme celle de la ville et non comme un fait vérifié de façon indépendante.\n\nLa foudre a depuis emporté plusieurs mètres au plus haut des deux, qui culmine à 27 mètres au lieu des plus de 30 qu'il atteignait, et son tronc a dépassé 6 mètres de circonférence, pour un houppier de 34 mètres d'envergure. Des chiffres qui font passer la perte d'une cime pour un détail. Napoléon aurait visité le domaine en 1800, quand les cèdres valaient déjà le détour."
+  },
+  "gen_003": {
+   "name": "Le Cèdre de La Grange",
+   "species": "Cèdre du Liban (Cedrus libani)",
+   "age_estimate": "200 à 225 ans",
+   "access": "Gratuit, parc ouvert à toute heure",
+   "transport": "Bus ou tram jusqu'aux Eaux-Vives, puis courte marche, environ 15 minutes depuis le centre",
+   "story": "Ce cèdre descend en droite ligne des cèdres de Beaulieu, à l'autre bout de la ville : il a poussé à partir de leurs graines, le jour où la famille Lullin a jugé que sa propre propriété du bord du lac méritait l'arbre à la mode que tout le monde plantait. Le cèdre du Liban est devenu, dès 1800 environ, l'acquisition obligée des parcs paysagers à l'anglaise de Genève, et le domaine de La Grange, plus tard le plus grand parc de la ville, a reçu le sien quelque part dans cette fenêtre, sans qu'aucune source ne fixe l'année exacte.\n\nDeux siècles plus tard, l'arbre a dépassé la génération de ses parents : 7,62 mètres de circonférence de tronc et un peu plus de 25 mètres de haut selon une mesure de 2019, un tour de taille qu'il faudrait quatre ou cinq adultes bras tendus pour encercler.\n\nLe parc La Grange a une note littéraire qui vaut d'être connue : Franz Liszt et Marie d'Agoult ont séjourné au domaine dans les années 1830, et leur fille Cosima, future épouse de Richard Wagner, est née tout près pendant ce même séjour. Le cèdre était alors déjà un jeune arbre solide, engagé depuis des décennies dans sa croissance vers le géant qu'il est devenu. Il se tient près de la maison de maître, arrêt facile sur une promenade entre la roseraie et les quais."
+  },
+  "gen_004": {
+   "name": "Les Platanes du Jardin botanique",
+   "species": "Platane commun (Platanus x acerifolia)",
+   "age_estimate": "au moins 298 ans",
+   "access": "Gratuit, jardin ouvert à toute heure",
+   "transport": "Tram jusqu'à Nations, puis courte marche, environ 20 minutes depuis le centre",
+   "story": "Cinq platanes du jardin botanique de Genève étaient déjà assez grands pour figurer sur un plan cadastral cantonal en 1728, près de deux siècles avant que le jardin ne s'installe sur le terrain où ils poussent. Le Conservatoire et Jardin botaniques a quitté le parc des Bastions en 1905 pour venir ici, sur l'ancien domaine de l'Ariana que l'héritier Gustave Revilliod avait légué à la ville, et a hérité de ces cinq arbres une allée toute faite plutôt que d'en planter une.\n\nLes jardiniers de la ville les ont depuis délibérément laissés tranquilles. Contrairement aux platanes de rue genevois, taillés sévèrement chaque hiver en têtes de chat serrées, les cinq du jardin botanique ont pu étendre leurs branches à leur guise : la différence entre un arbre maintenu petit pour un trottoir et un arbre autorisé à devenir ce à quoi ressemble vraiment un platane de trois cents ans.\n\nLes botanistes les ont reclassés plus d'une fois. Ils portent actuellement le nom de Platanus x hispanica, après avoir été étiquetés Platanus x acerifolia, la taxinomie bougeant quand les arbres, eux, n'ont pas changé depuis des décennies. L'allée centrale qu'ils forment reste la colonne vertébrale du jardin, une promenade ombragée près de l'entrée du chemin de l'Impératrice, dans le quartier des Nations, à un court trajet de tram du centre-ville."
+  },
+  "gen_005": {
+   "name": "Le Bosquet de séquoias du parc Barton",
+   "species": "Séquoia géant (Sequoiadendron giganteum)",
+   "age_estimate": "150 à 170 ans",
+   "access": "Gratuit, parc ouvert à toute heure",
+   "transport": "À pied depuis le centre de Genève, environ 15 minutes, ou bus urbain",
+   "story": "Une trentaine de séquoias géants poussent dans un seul parc genevois parce que la famille d'un diplomate britannique s'est entichée d'une mode californienne, et parce que sa fille a plus tard fait en sorte que personne ne puisse jamais les abattre. Robert Peel, fils du premier ministre britannique et lui-même représentant de la Grande-Bretagne en Suisse, achète le domaine Barton en 1858, au moment précis où les jeunes séquoias venus de l'Ouest américain deviennent la plantation trophée des propriétaires européens fortunés dotés d'un parc à l'anglaise à remplir.\n\nIl plante un bosquet plutôt qu'un sujet isolé, et l'ensemble est devenu ce que la ville appelle aujourd'hui une cathédrale végétale, assez dense pour changer la lumière en dessous.\n\nSa fille, Alexandra Barton Peel, hérite du domaine et s'attache à ses arbres autant que son père. Quand elle lègue la propriété à la Confédération suisse en 1935, elle y met une condition : qu'elle ne soit jamais divisée et que les arbres qui y poussent ne soient jamais abattus. Le domaine avait frôlé un tout autre destin. Après 1919, les planificateurs de la Société des Nations ont envisagé Barton pour leur nouveau siège, et seul le refus de vendre d'Alexandra Barton Peel a gardé intact le bosquet, aujourd'hui un parc public à quelques minutes du bord du lac."
+  },
+  "gen_006": {
+   "name": "Le Platane de la place du Cirque",
+   "species": "Platane commun (Platanus x acerifolia)",
+   "age_estimate": "environ 120 ans",
+   "access": "Gratuit, place publique ouverte à toute heure",
+   "transport": "En plein Plainpalais, à pied depuis la vieille ville, environ 10 minutes",
+   "story": "Le plus grand platane du centre de Genève pousse au milieu d'un de ses carrefours les plus circulants, et la raison de sa taille est enfouie sous le bitume. La place du Cirque occupe l'ancien lit de l'Arve, détourné des décennies avant que l'arbre ne soit planté vers 1900, et la nappe laissée derrière court encore assez près de la surface pour que les racines y puisent librement.\n\nRésultat, après environ un siècle et quart : 35 mètres de haut, un tronc de 4,25 mètres de circonférence, un mètre et demi de diamètre. Des dimensions qui seraient remarquables en forêt et qui déconcertent au milieu d'un giratoire. Des milliers de piétons passent chaque jour sous son houppier sans forcément se rendre compte qu'ils marchent sous l'un des plus gros arbres du canton, et sous le plus grand qui se dresse dans le centre même de la ville.\n\nLa place tient son nom des cirques ambulants qui plantaient autrefois leurs chapiteaux sur cette portion de la plaine de Plainpalais. L'arbre est arrivé après l'essentiel de cette histoire, mais il a depuis survécu à tous les cirques qui sont passés par là."
+  },
+  "gen_007": {
+   "name": "Le Chêne vénérable du Jardin botanique",
+   "species": "Chêne pédonculé (Quercus robur)",
+   "age_estimate": "environ 300 ans",
+   "access": "Gratuit, jardin ouvert pendant les heures d'ouverture",
+   "transport": "Tram jusqu'à Nations ou à l'arrêt du jardin botanique, puis courte marche",
+   "story": "La ville a tracé une zone de calme autour de ce chêne pour tenir les pieds des visiteurs loin de ses racines. Ce périmètre de tranquillité existe parce que le tassement du sol tue les vieux arbres des jardins fréquentés bien avant l'âge. L'inventaire cantonal genevois juge la vitalité de celui-ci mauvaise et son stade sénescent, ce qui est moins un faire-part qu'une explication du périmètre.\n\nIl vaut la peine qu'on se donne. Le parcours muséal de la Ville de Genève nomme précisément cet arbre et cite un numéro d'inventaire qui correspond à celui du registre, chiffre pour chiffre, ce qui est à peu près ce qu'un arbre peut espérer de mieux comme identification. Ce parcours le date de 1719. Cela lui fait environ trois siècles, doyen des collections vivantes du jardin botanique, et 710 centimètres de circonférence de tronc.\n\nLe même récit dit qu'il s'est tenu jadis au bord d'une voie romaine qui traversait ce terrain bien avant toute botanique. Le Conservatoire et Jardin botaniques n'est arrivé ici qu'en 1905 : le chêne poussait donc depuis 186 ans quand le jardin s'est installé autour de lui, et il reste ce qu'il y a de plus vieux à l'intérieur de la clôture.\n\nLa date de 1719 vient de cet article de parcours, pas d'un comptage de cernes ni d'une pièce d'archives : à prendre comme une bonne estimation plutôt que comme un acte de naissance. L'entrée la plus proche est celle de l'avenue de la Paix."
+  },
+  "gen_008": {
+   "name": "Le Cèdre Naville",
+   "species": "Cèdre du Liban (Cedrus libani)",
+   "age_estimate": "environ 206 ans",
+   "access": "Gratuit, en bord de route, visible et accessible à toute heure",
+   "transport": "Bus jusqu'à Frontenex ou 15 à 20 minutes à pied depuis le centre",
+   "story": "Un maire a planté ce cèdre à l'été 1820 parce que son fils venait de naître. Jean-Édouard Naville était maire des Eaux-Vives, alors encore une commune à part entière et non un quartier de Genève, et il a mis l'arbre en terre dans sa propriété de Montchoisy pour marquer l'arrivée d'Émile. Deux siècles plus tard, le garçon a disparu depuis longtemps et l'arbre fait 722 centimètres de circonférence.\n\nOù il a fini est l'autre moitié de l'histoire. La route de Frontenex passe désormais devant lui, l'adresse tient en un numéro d'en face, le 53, et le sol autour est fait de chaussée et de bâti plutôt que de gazon. La Tribune de Genève, en passant en revue les arbres qui racontent l'histoire de la ville, l'a trouvé en bonne forme au milieu de tout ce béton, et le registre cantonal confirme : vitalité bonne, stade de développement sénescent, un vieil arbre qui fait encore son travail plutôt qu'un arbre en train de lâcher.\n\nLa date de 1820 est d'une solidité inhabituelle pour un arbre de cet âge, et pour une raison peu glorieuse : les registres d'ici enregistrent souvent une plantation au premier janvier, ce qui relève de l'habitude de classement et non du relevé, alors que celle-ci s'appuie sur un homme nommé, un fils nommé et une saison précisée. C'est un cadeau d'anniversaire qui a survécu à tous les invités, planté au bord d'une route passante qui sort de la ville."
+  },
+  "gen_009": {
+   "name": "Le Cyprès chauve du parc des Eaux-Vives",
+   "species": "Cyprès chauve (Taxodium distichum)",
+   "age_estimate": "environ 100 à 150 ans",
+   "access": "Gratuit, parc ouvert à toute heure",
+   "transport": "Bus ou 15 à 20 minutes à pied depuis le centre le long des quais",
+   "story": "Le guide de promenade genevois au bord du lac range cet arbre parmi les arbres insolites, et il mérite l'étiquette chaque mois de novembre en faisant ce qu'aucun conifère n'est censé faire. Le cyprès chauve perd ses aiguilles. Elles virent d'abord au rouille et au cuivre, l'arbre entier prend la couleur d'un hêtre, puis les branches restent nues tout l'hiver pendant que les cèdres autour de lui demeurent verts.\n\nTaxodium distichum vient des forêts marécageuses du sud-est des États-Unis, où il pousse les pieds dans l'eau stagnante et sort des genoux ligneux de la vase autour du tronc. Celui-ci a un sol plus sec et le lac à quelques mètres, un tronc de 330 centimètres de circonférence et une vitalité jugée excellente, la meilleure note que délivre le registre.\n\nPersonne ne l'a daté. Le registre porte une année de plantation, 1912, mais cette date tombe un premier janvier comme 21 autres entrées du même fichier, ce qui en fait un réglage administratif plutôt qu'un relevé. Jugé à la seule circonférence, l'arbre a entre un siècle et un siècle et demi, et cette fourchette est aussi serrée que les preuves le permettent honnêtement.\n\nIl se dresse sur l'itinéraire balisé par la ville entre le parc La Grange et le parc des Eaux-Vives, qui enfile celui-ci et vingt autres arbres nommés sur une seule promenade au bord de l'eau."
+  },
+  "gen_010": {
+   "name": "Le Grand Cèdre du Port-Noir",
+   "species": "Cèdre du Liban (Cedrus libani)",
+   "age_estimate": "environ 200 ans",
+   "access": "Gratuit, parc ouvert à toute heure",
+   "transport": "Bus ou 15 à 20 minutes à pied depuis le centre le long des quais",
+   "story": "L'âge de ce cèdre a été calculé en mesurant un autre cèdre. Personne n'a noté sa date de plantation, celle de 1850 que porte le registre cantonal tombe un premier janvier et relève donc de la convention de classement plutôt que du relevé, et aucun article ni aucune archive trouvés à ce jour ne nomment l'arbre. L'estimation emprunte donc au cèdre Naville de la route de Frontenex, à environ un kilomètre : même espèce, même lac, même climat, et une plantation documentée en 1820. Cet arbre-là a pris 722 centimètres de circonférence en 206 ans, soit à peu près trois centimètres et demi par an. Appliquez ce rythme ici, à 743 centimètres, et vous obtenez environ deux siècles, ce qui explique la fourchette de 180 à 230 ans sur cette page plutôt qu'une date.\n\nL'arbre lui-même n'a besoin d'aucune arithmétique pour valoir la marche. Quarante mètres de haut, plus de sept mètres de circonférence, en bonne santé, planté à l'extrémité Port-Noir du parc des Eaux-Vives, là où le parc s'achève vers l'eau. Un second cèdre, un peu plus petit, se tient à une cinquantaine de mètres à travers les arbres, assez près pour se voir d'ici et assez loin pour faire un autre arrêt.\n\nUne entrée de registre, une ligne de mesures et un rythme de croissance emprunté au voisin. Un lecteur muni d'un mètre ruban, ou une fiche d'archive datée, ferait mieux que tout cela."
+  },
+  "gen_011": {
+   "name": "Le Tulipier du parc de l'Impératrice",
+   "species": "Tulipier de Virginie (Liriodendron tulipifera)",
+   "age_estimate": "environ 100 à 150 ans",
+   "access": "Gratuit, parc public. La ville a acheté le domaine en 1983 et les jardins sont publics ; le château, en haut, est privé, il abrite aujourd'hui la mission d'Italie auprès de l'ONU. Genève ne publie pas d'horaires pour le parc lui-même.",
+   "transport": "Bus en direction de Chambésy/Pregny, ou environ 25 minutes à pied depuis le jardin botanique",
+   "story": "Le château qui domine cette pelouse est la mission d'Italie auprès des Nations unies. La pelouse, non : Genève a acheté le domaine en 1983 et en a gardé les jardins publics, si bien que la terrasse, la longue perspective qui descend et le tulipier planté en tête appartiennent à quiconque monte jusque-là.\n\nLa description du parc par la ville met le tulipier de Virginie et un séquoia géant ensemble en haut de cette pente, et c'est le tulipier qui vaut la montée. Cinq mètres et six centimètres de circonférence de tronc, un mètre et demi de diamètre, poussé en terrain dégagé sans rien pour le serrer, ce qui lui a donné la silhouette qu'un Liriodendron est censé avoir et qu'il obtient rarement en ville. L'espèce vient d'Amérique du Nord et tient son nom des fleurs vert orangé qu'elle ouvre en juin, haut dans le houppier, faciles à ne pas voir quand on passe dessous. Les feuilles la trahissent à la place, coupées net au bout comme aux ciseaux.\n\nSon âge est une estimation par la circonférence, pas une date. L'année de plantation de cette entrée fait partie des valeurs par défaut du fichier : la lecture honnête est donc entre un siècle et un siècle et demi, sur une espèce qui pousse vite quand on lui laisse de la place. La page de la ville qualifie elle aussi les arbres du parc de centenaires, et s'en tient là."
+  },
+  "gen_012": {
+   "name": "Le Platane de Sécheron",
+   "species": "Platane commun (Platanus x acerifolia)",
+   "age_estimate": "environ 150 à 200 ans",
+   "access": "Gratuit, le champ situation du registre le donne dans un parc ou espace vert public, ouvert à toute heure",
+   "transport": "Courte marche depuis la gare Cornavin ou depuis l'arrêt ferroviaire de Sécheron",
+   "story": "Trente-huit mètres de platane se dressent dans un espace vert donnant sur l'avenue de France, et la question difficile est de savoir lequel. L'avenue en borde plusieurs à Sécheron, Mon Repos et la Perle du Lac parmi eux, et rien de ce qui a été trouvé jusqu'ici ne nomme le terrain où ce tronc se tient réellement. Les coordonnées sont exactes. Seul le nom du parc manque.\n\nL'arbre, lui, ne fait aucun doute. Le registre cantonal lui donne 636 centimètres de circonférence, 38 mètres de haut et un houppier de 33 mètres d'envergure, en bonne santé. Pour comparaison, le platane du milieu de la place du Cirque, le plus grand du centre-ville, mesure 425 centimètres. Celui-ci est d'une moitié plus épais et plus haut, et presque personne n'écrit à son sujet.\n\nPersonne ne le date non plus. Le champ de plantation du registre est simplement vide, si bien que l'âge indiqué ici vient d'une comparaison de circonférences avec ce platane de la place du Cirque, âgé d'environ 120 ans, même espèce sur le même sol. Cela place celui-ci entre 150 et 200 ans, une fourchette assez large pour être honnête et assez étroite pour servir.\n\nIl est à quelques minutes de la gare Cornavin et de l'arrêt de Sécheron, ce qui en fait le plus facile d'accès des géants genevois, sans rien prévoir du tout."
+  }
+ }
+}
