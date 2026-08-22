@@ -10,6 +10,14 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-22 (session, continued) - Haarlem 9 to 13: the Statenbolwerk stretch of De Bolwerken, one storm-felled beech found and blocked
+
+A verify pass tightened Haarlem's existing Kenaupark cluster rather than widening the walk: four new trees (haa_010 to haa_013) all sit 220-375 m from the nearest existing tree, in the Statenbolwerk section of De Bolwerken, the older (1828) Zocher-designed green ring the Kenaupark cluster (1865) sits inside. A ginkgo added to the lawn in the 1910s, an oak pair marking a path entrance (species left honestly undetermined, robur or petraea, since the register does not say), a four-beech ensemble, and a Caucasian wingnut in a private villa garden shipped as view-only per hard rule 10 (visible from the public footpath, register itself marks it visitable/visible, access line says plainly what a visitor does and does not get).
+
+The pass also caught a real thing worth recording: a separate, single copper beech 200 m away at Statenbolwerk 2 was blown down by storm Eunice in February 2022 (two independent Dutch sources), and is now correctly BLOCKED in data/leads/haarlem.json rather than sitting there to be rediscovered and nearly shipped by a future pass. A second, similarly-old green beech nearby was left as a lead rather than verified, on the writer's own judgement that confusion risk with the fallen tree could not be ruled out this pass.
+
+Updated two stale count promises preflight.py caught (question_meta "the full nine", an FAQ answer claiming "all nine stand" free and open): now 13, and the FAQ answer now says honestly that 12 of 13 are open access, the wingnut being the one view-only exception. Walk still spans 3.3 km, unchanged: the new trees tightened the cluster rather than widening it. Build, qa.py, superlatives.py and preflight.py all clean.
+
 ## 2026-08-22 (session) - Florence 22 to 23: one Boboli Gardens cypress, oldest-tree pin kept on the documented yew
 
 A verify pass steered away from Florence's already-exhausted cheap leads (Bobolino stone pine etc., checked twice on 2026-08-21 and still single-sourced) and toward fresh, unmined MASAF register candidates instead. It found one: flo_023, The Cypress of the Boboli Gardens, Mediterranean Cypress, 357 cm girth, verified via matching MASAF/RAMI register codes 9 m apart. RAMI's own register states an age of "roughly 375 years, calculated from a registered birth year" but the underlying documentary basis was not found independently, so `curation_status: flagged` and the story hedges the figure as an estimate rather than a fact.
