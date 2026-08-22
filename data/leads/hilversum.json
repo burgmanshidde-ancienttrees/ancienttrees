@@ -25,8 +25,8 @@
    "species": "European Beech (Fagus sylvatica)",
    "lat": 52.218194,
    "lng": 5.182934,
-   "status": "lead",
-   "why": "LRMB register nr 1687850 ('Beuk'). Register planting band 1860-1870, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category stichting, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+   "status": "blocked",
+   "why": "BLOCKED (hil_003): Foundation-owned garden (tuin); no evidence found that it is a public garden rather than a private one. Needs a check."
   },
   {
    "name": "Berhardboom",
@@ -65,16 +65,16 @@
    "species": "Copper Beech (Fagus sylvatica f. purpurea)",
    "lat": 52.218502,
    "lng": 5.176851,
-   "status": "lead",
-   "why": "LRMB register nr 1687744 ('Bruine beuk'). Register planting band 1890-1900, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category stichting, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: Deze beuk dateert van eind 19e eeuw en behoorde tot het terrein van het RKZ. Tot 2001 was hier de bloedbank gevestigd. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+   "status": "blocked",
+   "why": "BLOCKED (hil_008): Foundation-owned garden (tuin); no evidence found that it is a public garden rather than a private one. Needs a check."
   },
   {
    "name": "European Beech, Hilversum",
    "species": "European Beech (Fagus sylvatica)",
    "lat": 52.220013,
    "lng": 5.176988,
-   "status": "lead",
-   "why": "LRMB register nr 1689679 ('Beuk'). Register planting band 1890-1900, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category stichting, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+   "status": "blocked",
+   "why": "BLOCKED (hil_009): Foundation-owned garden (tuin); no evidence found that it is a public garden rather than a private one. Needs a check."
   }
  ]
 }

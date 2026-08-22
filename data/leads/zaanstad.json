@@ -9,8 +9,8 @@
    "species": "Black Mulberry (Morus nigra)",
    "lat": 52.462468,
    "lng": 4.772149,
-   "status": "lead",
-   "why": "LRMB register nr 1693430 ('zwarte moerbei, Kerkbuurt 9, Westzaan'). Register planting band 1880-1890, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category particulier, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: Het fabriekspand dateert oorspronkelijk uit 1880. Toen zal ook de moerbei zijn geplant. De stam is uitgegroeid tot een fikse knoest. Het beeld van de boom in 1970 lijkt veel op het beeld in 2025. Alleen nu zit de moerbei mager in het blad. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+   "status": "blocked",
+   "why": "BLOCKED (zaa_001): Private owner, garden (tuin) setting: reads as a private home garden. Hard rule 10 test 3 does not bend for this."
   },
   {
    "name": "Copper Beech, Zaandam",
@@ -33,8 +33,8 @@
    "species": "Horse Chestnut (Aesculus hippocastanum)",
    "lat": 52.460607,
    "lng": 4.773193,
-   "status": "lead",
-   "why": "LRMB register nr 1693436 ('Witte paardenkastanje, Allanstraat 356, Wz'). Register planting band 1920-1930, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category particulier, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: Het huis is 18e eeuws. De kastanje dateert van het begin van de 20ste eeuw. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+   "status": "blocked",
+   "why": "BLOCKED (zaa_004): Private owner, garden (tuin) setting: reads as a private home garden. Hard rule 10 test 3 does not bend for this."
   },
   {
    "name": "Kerkbuurt 48 Wz",
@@ -49,24 +49,24 @@
    "species": "Plane (Platanus sp.)",
    "lat": 52.461748,
    "lng": 4.773914,
-   "status": "lead",
-   "why": "LRMB register nr 1693437 ('Plataan, Allanstraat 384, Wz'). Register planting band 1920-1930, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category particulier, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: De boerderij (uit 1880) staat ietsje terug van de Allanstraat, langs de Weelsloot. De plataan staat schuin over het pad en dateert van rond 1930. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+   "status": "blocked",
+   "why": "BLOCKED (zaa_006): Private owner, garden (tuin) setting: reads as a private home garden. Hard rule 10 test 3 does not bend for this."
   },
   {
    "name": "Westzijde 86",
    "species": "Bald Cypress (Taxodium distichum)",
    "lat": 52.442685,
    "lng": 4.82192,
-   "status": "lead",
-   "why": "LRMB register nr 1693380 ('moerascipres, Westzijde 86'). Register planting band 1920-1930, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category particulier, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: De moerascipres staat ingesloten in een tuin achter een winkel. De cipres dateert van 1920. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+   "status": "blocked",
+   "why": "BLOCKED (zaa_007): Private owner, garden (tuin) setting: reads as a private home garden. Hard rule 10 test 3 does not bend for this."
   },
   {
    "name": "London Plane, Zaandam",
    "species": "London Plane (Platanus x acerifolia)",
    "lat": 52.444326,
    "lng": 4.82011,
-   "status": "lead",
-   "why": "LRMB register nr 1677691 ('Gewone plataan'). Register planting band 1860-1870, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category particulier, setting weg. Register history of the PLACE, not of the tree, so do not bridge from it: De plataan staat naast een pand dat als oorsprong 1715 heeft. De plataan wordt ingeschat op midden 19e eeuw. Tussen de bebouwing staat de boom aardig in de verdrukking. Hij wordt dan ook hoog opgekroond. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+   "status": "blocked",
+   "why": "BLOCKED (zaa_008): Private owner, roadside (weg) setting but no corroborating access detail found. Needs a check."
   },
   {
    "name": "Horse Chestnut, Assendelft",

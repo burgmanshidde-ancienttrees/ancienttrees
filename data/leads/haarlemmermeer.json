@@ -17,8 +17,8 @@
    "species": "Tree of Heaven (Ailanthus altissima)",
    "lat": 52.264421,
    "lng": 4.634885,
-   "status": "lead",
-   "why": "LRMB register nr 1685736 ('Hemelboom'). Register planting band 1910-1920, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category religieuze instantie, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: De witte kerk en de pastorie zijn uit 1862. De hemelboom wordt vaker aangeplant in de tuin rondom een kerk. Deze is van begin 20ste eeuw. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+   "status": "blocked",
+   "why": "BLOCKED (hrl_002): Register places it on the boundary between the church grass field and the rectory (minister's private home) garden; cannot honestly say it sits on the public side. Hard rule 10."
   },
   {
    "name": "European Ash, Nieuw-Vennep",
@@ -41,8 +41,8 @@
    "species": "European Ash (Fraxinus excelsior)",
    "lat": 52.265229,
    "lng": 4.633313,
-   "status": "lead",
-   "why": "LRMB register nr 1689426 ('Gewone es'). Register planting band 1930-1940, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category particulier, setting stedelijk. Register history of the PLACE, not of the tree, so do not bridge from it: De es stond voor een bakkerij die is afgebrand. Jarenlang was dit een kale vlakte. In 2024 is het plan op hier appartementen te bouwen. Het terrein is nu afgezet. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+   "status": "blocked",
+   "why": "BLOCKED (hrl_005): Register's own history says the site is now fenced off (afgezet) for redevelopment; not accessible."
   }
  ]
 }
