@@ -2978,6 +2978,15 @@
     "note": "5 Foster Botanical Garden stories, 200-232 words; 0 best_time (tropical, no documented peak, no phenology files); kapok girth dispute kept hedged in prose; cannonball no-age turned into a reader invitation. New city published, ~12.4k tokens/tree.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "Haarlem",
+    "kind": "verify",
+    "tokens": 70000,
+    "trees": 8,
+    "note": "Deepened two register clusters (Kleverlaan cemetery, Frederikspark/Houtplein) via netherlands-lrmb.json plus WebSearch/WebFetch corroboration; 8 delivered flagged/approximate, 4 left as leads, 2 pre-existing leads still unresolved.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
