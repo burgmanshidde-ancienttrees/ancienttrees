@@ -43,6 +43,22 @@ BRIEF_RESEARCH.md names explicitly.
 `rijksmonumenten.nl` added to the fetch blocklist: hangs on individual
 monument pages, both WebFetch and curl with a browser UA.
 
+**Second pass, same session: Nijmegen 12 to 13.** Two more clusters: the
+Brakkenstein manor house (extends the existing Sterrenbos cluster, ~900m
+away) and Park Leeuwenstein, a west-side park on the site of a demolished
+19th-century villa. The manor-house pair (a chestnut and a beech, both
+1830-1840) went to leads, no second source names either individually.
+
+**Shipped: nij_013, The Beverboom of Park Leeuwenstein** (Magnolia sp.,
+exact species unconfirmed). Register-dated to the 1880s, roughly 140
+years. Its neighbour, the park's giant sequoia, was caught DEAD (fell in
+the storm of 18 January 2018, two independent sources) and blocked before
+it could ship, exactly the vitality check the register itself cannot do.
+Species stays an open question on the page: "beverboom" is old Dutch for
+Magnolia, but whether this specimen is Magnolia virginiana or the
+Magnolia acuminata a 2023 local survey lists for the same park was not
+settled this pass.
+
 Released the Brisbane claim the earlier attempt left standing (558 unnamed
 "significant landscape trees" candidates, no names to work from yet, not
 today's priority per scout_next). Salzburg's claim belongs to a separate,
