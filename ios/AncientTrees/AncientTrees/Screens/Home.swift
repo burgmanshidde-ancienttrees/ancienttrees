@@ -42,7 +42,9 @@ struct HomeView: View {
     let catalogue: Catalogue
     let origin: (lat: Double, lng: Double)
     @Environment(CatalogueStore.self) private var store
+    @Environment(Navigator.self) private var navigator
     @State private var search = ""
+    @State private var searching = false
     /// Worked out once rather than on every redraw.
     ///
     /// These were computed properties, and each of them groups or sorts all
@@ -123,7 +125,30 @@ struct HomeView: View {
         // "Home" shouting over the hero.
         .navigationTitle("")
         .navigationBarTitleDisplayMode(.inline)
-        .searchable(text: $search, prompt: "Search a place, a tree or a species")
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button { searching = true } label: {
+                    Image(systemName: "magnifyingglass")
+                        .font(.system(size: 17, weight: .semibold))
+                        .foregroundStyle(Brand.ink)
+                        .frame(width: 44, height: 44)
+                        .contentShape(.rect)
+                }
+                .accessibilityLabel("Search")
+                .accessibilityIdentifier("explore-search")
+            }
+        }
+        .fullScreenCover(isPresented: $searching) {
+            MapSearch(catalogue: catalogue, origin: origin) { hit in
+                // On the FEED a result is a page, not a camera move.
+                switch hit {
+                case .city(let slug, _, _, _): navigator.push = .city(slug)
+                case .country(let name): navigator.push = .country(name)
+                case .species(let name): navigator.push = .species(name)
+                case .tree(let t): navigator.push = .tree(t.id)
+                }
+            }
+        }
         .refreshable { await store.refresh() }
         .task(id: catalogue.version) { buildShelves() }
     }

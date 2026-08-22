@@ -40,14 +40,12 @@ struct ContentView: View {
     @State private var mapPath: [Route] = []
     @State private var explorePath: [Route] = []
     @State private var collectPath: [Route] = []
-    @State private var profilePath: [Route] = []
 
     private func path(_ id: Int) -> Binding<[Route]> {
         switch id {
         case 0: $mapPath
         case 1: $explorePath
-        case 3: $collectPath
-        default: $profilePath
+        default: $collectPath
         }
     }
 
@@ -55,8 +53,7 @@ struct ContentView: View {
         switch id {
         case 0: mapPath = []
         case 1: explorePath = []
-        case 3: collectPath = []
-        default: profilePath = []
+        default: collectPath = []
         }
     }
     @State private var debugTree: String?
@@ -108,6 +105,7 @@ struct ContentView: View {
         case "collection": return .collection(value)
         case "species": return .species(value)
         case "country": return .country(value)
+        case "profile": return .profile
         case "walk":
             let parts = value.split(separator: "|", maxSplits: 1).map(String.init)
             guard parts.count == 2 else { return nil }
@@ -193,6 +191,8 @@ struct ContentView: View {
             }
         case .index(let kind):
             IndexView(kind: kind, catalogue: cat, origin: origin)
+        case .profile:
+            ProfileView(catalogue: cat)
         case .country(let name):
             CountryView(country: name, catalogue: cat, origin: origin)
         case .species(let name):
@@ -208,12 +208,17 @@ struct ContentView: View {
         Group {
             if let cat = store.catalogue {
                 TabView(selection: tabSelection) {
-                    // FIVE SIMPLE OUTLINES OF THE SAME WEIGHT, which is the
-                    // whole of the balance Hidde asked for (2026-08-21: "de
-                    // iconen van Komoot voelen lekkerder, kijk goed naar de
-                    // verdeling en balans"). The old row mixed a hairline
-                    // magnifier with a scalloped rosette and a filled plus,
-                    // so it read as five icons borrowed from five apps.
+                    // Four slots of one weight, and the SELECTED one fills.
+                    // Per item rather than globally, because iOS fills EVERY
+                    // tab symbol by default and shows selection with tint
+                    // alone; Komoot fills only the one you are on, and that is
+                    // the convention Hidde asked for (2026-08-22).
+                    // Four slots of one weight, and the SELECTED one fills,
+                    // which is what iOS does by default and what every app in
+                    // Hidde's own references does (2026-08-22, from his Komoot
+                    // screenshots). We had turned the fill off the day before
+                    // for balance; the balance came from choosing symbols of
+                    // one family, not from refusing the convention.
                     // plus.circle and checkmark.circle rhyme on purpose: add
                     // and had are the two halves of the same verb.
                     stack(0, cat) {
@@ -227,25 +232,26 @@ struct ContentView: View {
                         }
                     }
                         .tag(0)
-                        .tabItem { Label("Map", systemImage: "map").environment(\.symbolVariants, .none) }
+                        .tabItem { Label("Map", systemImage: "map")
+                            .environment(\.symbolVariants, tab == 0 ? .fill : .none) }
 
                     stack(1, cat) { HomeView(catalogue: cat, origin: origin) }
                         .tag(1)
-                        .tabItem { Label("Explore", systemImage: "magnifyingglass").environment(\.symbolVariants, .none) }
+                        .tabItem { Label("Explore", systemImage: "magnifyingglass")
+                            .environment(\.symbolVariants, tab == 1 ? .fill : .none) }
 
                     // Never actually shown: the selection binding intercepts 2
                     // and presents the Spot sheet instead.
                     Color.clear
                         .tag(2)
-                        .tabItem { Label("Spot", systemImage: "plus.circle").environment(\.symbolVariants, .none) }
+                        .tabItem { Label("Spot", systemImage: "plus.circle")
+                            .environment(\.symbolVariants, tab == 2 ? .fill : .none) }
 
                     stack(3, cat) { CollectView(catalogue: cat, origin: origin) }
                         .tag(3)
-                        .tabItem { Label("Collect", systemImage: "checkmark.circle").environment(\.symbolVariants, .none) }
+                        .tabItem { Label("Collect", systemImage: "checkmark.circle")
+                            .environment(\.symbolVariants, tab == 3 ? .fill : .none) }
 
-                    stack(4, cat) { ProfileView(catalogue: cat) }
-                        .tag(4)
-                        .tabItem { Label("Profile", systemImage: "person").environment(\.symbolVariants, .none) }
                 }
                 // Outline icons that stay outline when selected, colour doing
                 // the selecting (Careem is Hidde's reference; Airbnb does the
@@ -253,6 +259,11 @@ struct ContentView: View {
                 // applies its automatic .fill inside the tab item, underneath
                 // an environment set on the TabView itself.
                 .appObjects(self)
+                .onChange(of: navigator.push) { _, new in
+                    guard let new else { return }
+                    path(tab).wrappedValue.append(new)
+                    navigator.push = nil
+                }
                 .onChange(of: navigator.selectTab) { _, new in
                     if let new { tab = new; navigator.selectTab = nil }
                 }

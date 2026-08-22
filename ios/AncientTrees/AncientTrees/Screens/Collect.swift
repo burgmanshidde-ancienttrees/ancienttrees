@@ -138,6 +138,9 @@ struct CollectView: View {
         .navigationTitle("")
         .navigationBarTitleDisplayMode(.inline)
         .searchable(text: $search, prompt: "Search your trees")
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) { ProfileButton() }
+        }
         .sheet(isPresented: $signingIn) {
             SignInSheet(reason: .keepCollection(saved.savedCount), localCount: saved.savedCount)
                 .environment(account).environment(saved)
