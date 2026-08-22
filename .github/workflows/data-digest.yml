@@ -98,6 +98,10 @@ jobs:
       # and run-composed answers to readers who left an email. Absent SMTP
       # secrets = the script prints a dry run and sends nothing, never broken.
       - name: Thank and answer contributors
+        # Belt as well as braces: the script swallows mail failures itself
+        # since 2026-08-22, and this makes sure a future one cannot abort the
+        # job before the numbers are committed either.
+        continue-on-error: true
         env:
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
           OUTREACH_SMTP_HOST: ${{ secrets.OUTREACH_SMTP_HOST }}
