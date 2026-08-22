@@ -2960,6 +2960,15 @@
     "trees": 3,
     "wasted": 0,
     "note": "Session wrote and merged the 3 trees above, fixed 2 stale count-promise strings preflight.py caught."
+   },
+   {
+    "target": "14 Dutch cities from the LRMB register",
+    "kind": "write",
+    "tokens": 382000,
+    "trees": 99,
+    "wasted": 0,
+    "brief_wrong": false,
+    "note": "Eindhoven, Apeldoorn, Tilburg, Amersfoort, Enschede, Leeuwarden, Dordrecht, Zwolle, Ede, Venlo, Deventer, Alkmaar, Emmen, Helmond, in one session turn, measured off the turn budget. Includes sunk machinery that the remaining 11 cities will not pay again: the 25-city ranking, nl_candidates.py, nl_to_research.py, two fixes to the felled-tree detection plus a full register rescan, the id-prefix collision fix, and about 15 web searches. 3.9k tokens per published tree against the 15k target, because the register does the verification work. Two dead trees caught before publishing (Tilburg's Heuvel lime, felled 1994; Alkmaar's thickest beech, Poly storm 2023)."
    }
   ]
  }
