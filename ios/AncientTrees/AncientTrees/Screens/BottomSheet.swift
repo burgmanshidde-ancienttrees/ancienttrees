@@ -41,7 +41,11 @@ enum SheetHeight: CaseIterable {
         // Tall enough to clear the floating tab bar AND still show a whole
         // card. At 160 the tab bar ate most of it and the first tree card was
         // sliced in half, which is what the sheet is entirely for.
-        case .peek: 108
+        // Tall enough for the count AND the top of the first photograph,
+        // which is the invitation to scroll (Hidde, 2026-08-22, and Komoot
+        // does the same). Not tappable at this height, so it invites without
+        // catching a thumb.
+        case .peek: 168
         case .half: total * 0.52
         // Full stops 124 points short of the top, never 8 percent of it: on
         // an iPhone SE 8 percent is 53 points, and the sheet's search field

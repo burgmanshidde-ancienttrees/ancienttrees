@@ -180,6 +180,27 @@ final class AncientTreesUITests: XCTestCase {
         return el.exists ? el.frame.origin.y : -1
     }
 
+    /// Searching for somewhere has to MOVE the map. It did not: `region` is a
+    /// binding the map fills in when a finger moves it, and nothing ever read
+    /// it back, so picking Barcelona set a number in SwiftUI and left the map
+    /// over Amsterdam (Hidde, 2026-08-22, who typed exactly that).
+    @MainActor
+    func testSearchingForATreeMovesTheMapToIt() throws {
+        let app = launch(["-map", "-search=beethoven"])
+        let row = app.buttons.matching(
+            NSPredicate(format: "label CONTAINS[c] 'Beethoven'")).firstMatch
+        XCTAssertTrue(row.waitForExistence(timeout: 12), "search found no Beethoven Plane")
+        row.tap()
+
+        // The map selects it, and the sheet shows that tree rather than
+        // whatever was nearest where we started.
+        XCTAssertTrue(app.staticTexts["The Beethoven Plane"].waitForExistence(timeout: 8)
+                      || app.buttons.matching(
+                          NSPredicate(format: "label CONTAINS[c] 'Beethoven'")).firstMatch
+                          .waitForExistence(timeout: 8),
+                      "picking a tree in search did not take the map to it")
+    }
+
     /// Explore is the feed, and the feed is the rows Hidde settled on
     /// 2026-08-21: cities, the oldest trees, countries, species, walks. The
     /// curated collections left with the season shelf; they stay on the
