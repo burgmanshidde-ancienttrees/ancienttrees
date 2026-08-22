@@ -18,6 +18,60 @@
       "kind": "write",
       "by": "session-batch1",
       "claimed_at": "2026-08-22T18:40:47+00:00"
+    },
+    {
+      "target": "assen",
+      "kind": "write",
+      "by": "session-batch2",
+      "claimed_at": "2026-08-22T18:49:54+00:00"
+    },
+    {
+      "target": "zaanstad",
+      "kind": "write",
+      "by": "session-batch2",
+      "claimed_at": "2026-08-22T18:49:54+00:00"
+    },
+    {
+      "target": "heerlen",
+      "kind": "write",
+      "by": "session-batch3",
+      "claimed_at": "2026-08-22T18:49:54+00:00"
+    },
+    {
+      "target": "hilversum",
+      "kind": "write",
+      "by": "session-batch3",
+      "claimed_at": "2026-08-22T18:49:54+00:00"
+    },
+    {
+      "target": "hoorn",
+      "kind": "write",
+      "by": "session-batch4",
+      "claimed_at": "2026-08-22T18:49:54+00:00"
+    },
+    {
+      "target": "oss",
+      "kind": "write",
+      "by": "session-batch4",
+      "claimed_at": "2026-08-22T18:49:54+00:00"
+    },
+    {
+      "target": "roosendaal",
+      "kind": "write",
+      "by": "session-batch5",
+      "claimed_at": "2026-08-22T18:49:54+00:00"
+    },
+    {
+      "target": "sittard-geleen",
+      "kind": "write",
+      "by": "session-batch5",
+      "claimed_at": "2026-08-22T18:49:54+00:00"
+    },
+    {
+      "target": "the-hague",
+      "kind": "write",
+      "by": "session-batch6",
+      "claimed_at": "2026-08-22T18:49:54+00:00"
     }
   ]
 }
