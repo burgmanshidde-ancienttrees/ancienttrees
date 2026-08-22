@@ -136,6 +136,13 @@ jobs:
       # SMTP secrets = a printed dry run, never broken. Commits its own log
       # line because the run behind it commits separately.
       - name: Thank and answer contributors
+        # NEVER let the mail leg take the night with it. On 2026-08-21 this
+        # step raised SMTPAuthenticationError and, sitting before the research
+        # run with bash -e, killed six consecutive night runs in six seconds
+        # each: zero trees, zero commits, nothing in LOG.md, and nothing said
+        # why. The script swallows mail failures itself since 2026-08-22; this
+        # is the belt.
+        continue-on-error: true
         env:
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
           OUTREACH_SMTP_HOST: ${{ secrets.OUTREACH_SMTP_HOST }}
