@@ -26,8 +26,11 @@ I18N = os.path.join(ROOT, "data", "i18n")
 CITIES = os.path.join(ROOT, "data", "cities")
 
 # Japanese does not put spaces between words, so a whitespace token count
-# measures nothing there. The brief gave that language a character range
-# instead; both are checked against the same intent, not the same number.
+# measures nothing there; the bars are expressed in characters instead. These
+# three numbers must agree with UNSPACED, introBar and storyBar in
+# site/src/lib/i18n.ts. They were written twice once already and disagreed
+# within the hour, which is how "ja/tokyo: intro is 1 words" reached a build,
+# so if you change one, change both and say so in the commit.
 CJK = {"ja", "zh", "ko"}
 LIMITS = {"title": 60, "meta_description": 155, "question_title": 60, "question_meta": 155}
 REQUIRED = ["city", "title", "meta_description", "intro", "question_title",

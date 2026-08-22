@@ -526,6 +526,32 @@ export function hreflangForCity(slug: string, kind: "city" | "question", treeSlu
  * the gap it is. The intro word count is Contract C, checked here because a
  * translated intro is written by hand and nothing else would catch it.
  */
+
+/** Languages that do not put spaces between words, so a whitespace token count
+ * measures nothing in them and the bars are expressed in characters instead.
+ *
+ * This lives here, exported, because the first version of it did not: the
+ * story bar knew about Japanese and the intro bar did not, and the build died
+ * on "ja/tokyo: intro is 1 words". Two checks that must agree, written twice,
+ * disagreed within the hour. */
+export const UNSPACED = new Set(["ja", "zh", "ko"]);
+
+/** Length of a piece of prose in the unit its language is measured in. */
+export function proseLength(text: string, lang: string): number {
+  return UNSPACED.has(lang) ? text.length : text.split(/\s+/).filter(Boolean).length;
+}
+
+/** The intro bar: 60-100 words, or 150-250 characters where words are not
+ * separable. Same intent, different unit. */
+export function introBar(lang: string): [number, number] {
+  return UNSPACED.has(lang) ? [150, 250] : [60, 100];
+}
+
+/** The story bar: 150-250 words, or 350-600 characters. */
+export function storyBar(lang: string): [number, number] {
+  return UNSPACED.has(lang) ? [350, 600] : [150, 250];
+}
+
 export async function translatedCityPaths(lang: string, allCities: CityLike[]) {
   return translatedCities(lang).map((slug) => {
     const city = allCities.find((c) => c.id === slug);
@@ -535,8 +561,11 @@ export async function translatedCityPaths(lang: string, allCities: CityLike[]) {
     for (const id of ids) {
       if (!tr.trees[id]) throw new Error(`${lang}/${slug}: no translation for ${id}; the English city grew past the overlay`);
     }
-    const iw = tr.intro.split(/\s+/).filter(Boolean).length;
-    if (iw < 60 || iw > 100) throw new Error(`${lang}/${slug}: intro is ${iw} words, Contract C requires 60-100`);
+    const [ilo, ihi] = introBar(lang);
+    const iw = proseLength(tr.intro, lang);
+    if (iw < ilo || iw > ihi) {
+      throw new Error(`${lang}/${slug}: intro is ${iw} ${UNSPACED.has(lang) ? "chars" : "words"}, Contract C requires ${ilo}-${ihi}`);
+    }
     return { params: { city: slug }, props: { city, tr } };
   });
 }
@@ -556,11 +585,10 @@ export async function translatedTreePaths(lang: string, allCities: any[], render
     for (const tree of trees) {
       const x = tr.trees[tree.id];
       if (!x) throw new Error(`${lang}/${slug}: no translation for ${tree.id}`);
-      const wc = x.story.split(/\s+/).filter(Boolean).length;
-      // Japanese does not space its words, so a token count is meaningless
-      // there; the character bar in the brief stands in for it.
-      if (lang !== "ja" && (wc < 150 || wc > 250)) {
-        throw new Error(`${lang}/${slug}/${tslugs[tree.id]}: story is ${wc} words, the 150-250 bar applies in every language`);
+      const [slo, shi] = storyBar(lang);
+      const wc = proseLength(x.story, lang);
+      if (wc < slo || wc > shi) {
+        throw new Error(`${lang}/${slug}/${tslugs[tree.id]}: story is ${wc} ${UNSPACED.has(lang) ? "chars" : "words"}, the bar is ${slo}-${shi} and applies in every language`);
       }
       paths.push({ params: { city: slug, tree: tslugs[tree.id] }, props: { city, tree, x, allTrees: trees, tr } });
     }
