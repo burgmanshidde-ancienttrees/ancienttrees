@@ -2920,6 +2920,30 @@
     "wasted": 0,
     "brief_wrong": false,
     "note": "Write pass, 14 register-only trees (muc_035-048), all single-source Naturdenkmalverordnung 2021 with no age and no girth. All 14 stories written, verify_notes dropped, best_time on 3 (Munich already had 17 of 30). ~8.6k tokens per tree. Fixed one species-canonical slip (Sycamore Maple -> Sycamore) before merging. Munich: 30 to 44 trees."
+   },
+   {
+    "target": "florence",
+    "kind": "verify",
+    "tokens": 133952,
+    "trees": 1,
+    "wasted": 0,
+    "note": "Boboli Gardens cypress verified via matching MASAF/RAMI register codes after skipping Florence's already-exhausted single-sourced leads (checked twice 2026-08-21). RAMI's three Orto Botanico extras (ginkgo, tulip tree, hybrid maple) confirmed thin and stay leads; Arcetri Observatory cypress blocked on reservation-only access."
+   },
+   {
+    "target": "haarlem",
+    "kind": "verify",
+    "tokens": 153327,
+    "trees": 4,
+    "wasted": 0,
+    "note": "Statenbolwerk extension of the Kenaupark cluster (220-375m from existing trees, walk still 3.3km). Found and blocked a copper beech storm Eunice felled in 2022 nearby, so a future pass doesn't rediscover it. One similarly-old beech and one felling-report tree left as leads on confusion risk rather than guessed at."
+   },
+   {
+    "target": "florence+haarlem",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 5,
+    "wasted": 0,
+    "note": "Session wrote and merged the 5 trees the two verify passes above delivered (flo_023, haa_010-013), fixed the resulting oldest-tree-pin and stale-count-promise issues preflight.py caught, tokens not separately metered from the session total."
    }
   ]
  }
