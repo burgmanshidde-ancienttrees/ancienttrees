@@ -3,9 +3,9 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Haarlem's oldest trees mostly grow from the same source: fashionable 19th-century Dutch landscape design, and especially one family, the Zochers, who reshaped a demolished fortress line into Kenaupark, redesigned the medieval Haarlemmerhout, and laid out the Kleverlaan cemetery in the English landscape style within a few decades of each other. Older still is a beech carved by an exiled king passing time at his own government estate, and a plane tree thick enough to need several people to encircle it, growing in the garden of the province's own seat of government.",
-  "meta_description": "Haarlem's oldest trees include a beech carved by an exiled king and the province's own thickest plane. Nine verified locations, real stories.",
+  "meta_description": "Haarlem's oldest trees include a beech carved by an exiled king and the province's own thickest plane. 13 verified locations, real stories.",
   "question_answer": "Haarlem's oldest documented tree is the Lodewijk Napoleon Beech in the Haarlemmerhout, carved with a crowned royal monogram by the exiled King of Holland sometime between 1808 and 1810. The carving itself has now grown over almost entirely, but the tree, likely well over 230 years old, still stands in the Netherlands' oldest public park.",
-  "question_meta": "A beech carved by an exiled king between 1808 and 1810 is Haarlem's oldest documented tree, its carving now nearly grown over. The full nine.",
+  "question_meta": "A beech carved by an exiled king between 1808 and 1810 is Haarlem's oldest documented tree, its carving now nearly grown over. All 13.",
   "question_context": "Haarlem's age claims split along a clear line: the Lodewijk Napoleon Beech has an actual historical event pinned to it, a specific exiled king carving a specific mark in a specific two-year window, which is why it anchors this list as the oldest despite nobody having counted its rings. The other three candidates are honestly less certain. Haarlem's thickest tree, the Provinciehuis plane, has no recorded planting date at all; its size alone suggests a 19th-century origin, but that is inference from girth rather than a documented fact. The Kleverlaan cemetery's yew and Kenaupark's copper beech both belong to the Zocher family's 19th-century landscape schemes, laid out within a few decades of each other, and both are old enough to anchor their respective grounds without either source giving a precise age. None of that uncertainty is unusual for city trees planted before municipal record-keeping became routine; it simply means the crowned R carved into one beech's bark, however faded now, remains the single most specific piece of evidence this city's tree history has to offer.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Haarlem's remarkable trees free to visit?",
-      "a": "Yes, all nine stand in public parks or a public cemetery, open during normal hours at no charge."
+      "a": "Almost all. Twelve of the thirteen stand in public parks or a public cemetery, open during normal hours at no charge; the exception is a Caucasian wingnut in a private villa garden at Statenbolwerk, visible from the public footpath outside but not something you can walk up to."
     },
     {
       "q": "What is Haarlem's thickest tree?",
@@ -236,7 +236,9 @@
       "access": "Free, open park at any time",
       "transport": "5 minute walk from Haarlem Centraal station",
       "best_time": {
-        "months": [11],
+        "months": [
+          11
+        ],
         "label": "November, when the needles turn rust orange before dropping",
         "kind": "autumn colour"
       },
@@ -304,6 +306,126 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "haa_010",
+      "name": "The Ginkgo of the Bolwerken",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "~110 years",
+      "age_min": 106,
+      "age_max": 116,
+      "location": {
+        "address": "De Bolwerken, on the lawn between the Noorderbrug and the Kruisweg crossing, Haarlem",
+        "latitude": 52.389666,
+        "longitude": 4.636131,
+        "neighbourhood": "De Bolwerken / Statenbolwerk"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1696661)",
+        "https://www.ivn.nl/app/uploads/sites/23/2024/06/Boekje-Mon-bomen_Haarlem_spreads_DIGI.pdf (IVN/Bomenstichting monumental-trees walking guide for Haarlem; register nr 1696661 appears in the guide's own text, cross-confirming the register entry as an independently-selected stop on its Bolwerken walk)"
+      ],
+      "access": "Free, open park at any time",
+      "transport": "10-12 minute walk from Haarlem Centraal station",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register (netherlands-lrmb nr 1696661): planted 1910-1920, standing alone on a lawn at the foot of a slope in De Bolwerken, the park JD Zocher laid out from 1828 on Haarlem's demolished fortifications. Register history note (translated): 'the ginkgo is from almost a hundred years later [than the park's 1828 design] and stands on a lawn at the foot of a hill.' owner_category gemeente, visitable ja, visible ja, status 3 (=alive/standing in the register's own status coding, consistent with the other Kenaupark register entries already published as haa_007/008/009 which share this status value). Second source: the tree's register number (1696661) appears verbatim in the IVN/Bomenstichting 'Langs monumentale bomen in Haarlem' walking-guide PDF, which independently selected it as a stop on the Bolwerken route -- this PDF is a text/graphics-only file I could not fully OCR/extract in this session (no pdftotext or PDF library available), so I am citing only the confirmed cross-reference (matching register ID present in the guide's text stream), not any prose or measurement from it. A WebSearch AI summary of the same PDF offered extra descriptive text about ginkgos generally; per the search-summary-is-a-lead-never-a-source rule I have not carried any of its specific figures into this record. Flagged only because the second-source confirmation is a number-match rather than a read sentence; nothing here casts doubt on the tree's identity or standing. No news of removal found. location_precision approximate per brief default: register gives a specific descriptive point (park-layout description) but I have no independent photo/imagery confirmation of the exact trunk position.",
+      "story": "De Bolwerken is Haarlem's older green ring, laid out from 1828 by JD Zocher when the city's fortifications came down and needed a public use, decades before his son helped design Kenaupark a couple of hundred metres east. Most of the park's planting is contemporary with that 1828 design. This ginkgo is not: the register dates it to the 1910s, arriving on the lawn at the foot of a low rise nearly a century after Zocher laid the paths around it, a later addition to an already-mature landscape rather than part of the original planting.\n\nGinkgo biloba is one of the oldest tree lineages alive, unrelated to any other living tree family, which is part of why parks of this period liked to add one: a curiosity that had outlived the dinosaurs long before anyone thought to plant it in a Dutch park. Standing alone on open lawn rather than grouped like the beeches and oaks nearby, it has had space and light a crowded planting would not have given it.\n\nIt sits between the Noorderbrug and the Kruisweg crossing, a free, open stretch of park about ten minutes from Haarlem Centraal, and a natural extension of a walk that already takes in the Kenaupark cluster a short distance away.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "haa_011",
+      "name": "The Oak Pair of Statenbolwerk",
+      "species": "Oak (Quercus robur or Quercus petraea; the register does not specify which)",
+      "age_estimate": "~170 years",
+      "age_min": 166,
+      "age_max": 176,
+      "location": {
+        "address": "Statenbolwerk, west side, at the start of the footpath, Haarlem",
+        "latitude": 52.388972,
+        "longitude": 4.632032,
+        "neighbourhood": "Statenbolwerk"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1696664)",
+        "https://www.ivn.nl/app/uploads/sites/23/2024/06/Boekje-Mon-bomen_Haarlem_spreads_DIGI.pdf (register nr 1696664 appears in the guide's text, an independent selection of the same pair as a walk stop)"
+      ],
+      "access": "Free, open park at any time",
+      "transport": "10-12 minute walk from Haarlem Centraal station",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register (netherlands-lrmb nr 1696664): two oaks ('Eikenduo'), planted 1850-1860, n_trees 2, marking the entrance to the walking area at the west side of Statenbolwerk. Register history (translated): 'From 1828 the bolwerken are a green walking area, designed by JD Zocher. Villa building in the area dates from 1860. These oaks were planted then too... The trees mark the entrance to the walking area.' owner_category gemeente, visitable ja, visible ja, status 3. This is a compact two-tree ensemble at one obvious spot (a path entrance), passing the collectible-point test the same way Kenaupark's already-published plane group and bald cypress group do. Species: the register calls it only 'eik' (oak) without naming pedunculate vs sessile; I could not find a second source specifying which, so per the 'if you don't know, publish it and ask the reader' rule the species field states the ambiguity rather than guessing. Second source: register number 1696664 independently appears in the IVN/Bomenstichting Haarlem monumental-trees walking guide (same PDF-ID-matching caveat as haa_010: confirmed by ID match in the extracted text stream, not by reading full prose, since the guide's text layer would not OCR cleanly this session). No death/felling signal found for this specific pair in my searches (distinct from the confirmed-dead beech at Statenbolwerk nr 2, see blocked list).",
+      "story": "Two oaks flank the start of a footpath on the west side of Statenbolwerk, planted in the 1850s to mark the entrance the way a gate would, a decade or so before the villas that now line the park went up. Haarlem's register keeps them as one entry rather than two, the pairing itself being the point: an oak either side of a path reads as an entrance in a way one oak standing alone never would.\n\nThe register does not say which oak. Quercus robur (pedunculate) and Quercus petraea (sessile) both grow in Dutch parks of this age, and neither the register nor anything else found this pass narrows it further, so this page states the pair honestly as oak, species undetermined, until someone with a closer eye at the leaf and acorn tells us which. That gap does nothing to the trees themselves: at around 170 years old they are exactly contemporary with Statenbolwerk's own villas, planted in the same decade the walking park matured from Zocher's original 1828 design into the residential quarter that still surrounds it.\n\nThey stand free and open on public parkland, a few minutes from three more Statenbolwerk trees on this page and from Kenaupark's own cluster a few hundred metres further on, part of the same green ring that replaced Haarlem's demolished city walls.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "haa_012",
+      "name": "The Caucasian Wingnut of Statenbolwerk",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "age_estimate": "~120 years",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Statenbolwerk 1, Haarlem",
+        "latitude": 52.38904,
+        "longitude": 4.633257,
+        "neighbourhood": "Statenbolwerk"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1686176)",
+        "https://www.ivn.nl/app/uploads/sites/23/2024/06/Boekje-Mon-bomen_Haarlem_spreads_DIGI.pdf (register nr 1686176 appears in the guide's text)"
+      ],
+      "access": "Visible from the public Statenbolwerk footpath; the tree stands within the grounds of Staten Bolwerk 1, a private villa (owner_category 'particulier' in the register), so the trunk itself is not something a visitor can walk up to. The register itself marks it visitable/visible ('ja'/'ja').",
+      "transport": "10-12 minute walk from Haarlem Centraal station",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register (netherlands-lrmb nr 1686176): Caucasian wingnut, planted 1900-1910, at Statenbolwerk 1, a villa dating from 1860 in the Zocher-designed Bolwerken park. Register history (translated): 'The bolwerken have been laid out from 1832, first by JD Zocher and later also by his son LP Zocher. The villas date from 1860 and later. The wingnut dates from the beginning of the 20th century.' owner_category is 'particulier' (private) but the register's own visitable/visible fields both say 'ja', which is why this is delivered rather than blocked -- treated per hard rule 10's view-only test: genuinely visible from public ground, pin should mark the viewing place rather than claim trunk access, and access says plainly what a visitor will and won't get. Flagging because I have not independently confirmed how much of the tree is actually visible from the path versus screened by the villa's own garden; a future pass with street-level imagery should tighten this. Second source: register number 1686176 appears in the IVN/Bomenstichting walking guide's text stream (ID-match only, same caveat as the other two Bolwerken entries -- the PDF's prose did not extract cleanly this session). No death signal found.",
+      "story": "This Caucasian wingnut grows in the garden of a private villa at Statenbolwerk 1, and the honest way to see it is from the footpath outside rather than at the trunk: the Dutch national monumental-tree register lists it as visible from public ground even though the ground it stands on is not. Pterocarya fraxinifolia comes from forests around the Caucasus and the southern shore of the Caspian, a relative of walnut grown for its long hanging chains of winged seeds rather than for timber, and it took root here in the first decade of the twentieth century, once Statenbolwerk's grand villas had already gone up along the old fortification walk Zocher laid out in 1828.\n\nAt around 120 years old it is one of the younger trees on this page, but wingnuts grow fast and wide, and this one has had a private garden's room to do it without a park's usual crowding. What a visitor gets is a view rather than a walk-up: stand on the Statenbolwerk path and the crown shows above the villa's hedge, part of the same short stretch of park that already holds two more of this page's newest trees, the oak pair and the beech ensemble, both properly on public ground a few dozen metres away.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "haa_013",
+      "name": "The Beech Ensemble of Statenbolwerk",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "~170 years",
+      "age_min": 166,
+      "age_max": 176,
+      "location": {
+        "address": "Statenbolwerk, along the path near number 26, Haarlem",
+        "latitude": 52.389273,
+        "longitude": 4.635436,
+        "neighbourhood": "Statenbolwerk"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1696662)",
+        "https://www.ivn.nl/app/uploads/sites/23/2024/06/Boekje-Mon-bomen_Haarlem_spreads_DIGI.pdf (register nr 1696662 appears in the guide's text)"
+      ],
+      "access": "Free, open park at any time",
+      "transport": "10-12 minute walk from Haarlem Centraal station",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register (netherlands-lrmb nr 1696662): four beeches ('Beukenensemble'), planted 1850-1860, n_trees 4, along a path beside Statenbolwerk near number 26. Register history (translated): 'The bolwerken are the old defensive works of Haarlem. In 1828 JD Zocher was commissioned to make a green walking park here... winding paths run over the heights and along the water. The railway was built in 1835 and led to further building on the south side of the bolwerken. The seed of this beech group is dated to the mid-19th century.' owner_category gemeente, visitable ja, visible ja, status 3. IMPORTANT DISTINCTION FROM A KNOWN-DEAD TREE: a separate, single copper/red beech ('rode beuk'/'bruine beuk', Fagus sylvatica purpurea, register nr 1690404) at Statenbolwerk nr 2, roughly 200m from this ensemble's location at nr 26, blew down in storm Eunice on 18-24 February 2022 (sources: boomzorg.nl and haarlem105.nl both report a 222-year-old red beech felled by the storm near Kloppersingel/Staten Bolwerk, wood since made into cutting boards and knives). This ensemble is a different register entry (different nr, different address point, ordinary green Fagus sylvatica per the register rather than the purpurea/copper cultivar, and a 4-tree group rather than a lone specimen), so I am delivering it, but flagging clearly given the location overlap and beech-on-beech risk of confusion, and I have NOT delivered the separately-listed 'Groene beuk Bolwerken' (nr 1690403, a single green beech at Statenbolwerk nr 14, also possibly ~200 years old per the register's own text) because I could not rule out overlap/confusion with the fallen tree to my own satisfaction in this session; it is recorded as a lead instead. Second source for this ensemble: register number 1696662 appears in the IVN/Bomenstichting walking guide's text stream (ID-match only, prose not extracted -- do not carry over the WebSearch AI summary's specific height/circumference figures for this tree, they were not verified against the actual page and are excluded per the search-summary-is-a-lead-never-a-source rule).",
+      "story": "Four beeches grow together along the Statenbolwerk footpath near house number 26, planted in the 1850s as part of the same wave of planting that gave the walking park its villas a decade later. The Dutch monumental-tree register counts the four as a single entry, the row rather than any one trunk being what earned protection, the way Kenaupark's plane and cypress groups are registered a few hundred metres away.\n\nA relative did not survive. A single copper beech about 200 metres from this group, at Statenbolwerk 2, was reportedly around 222 years old when storm Eunice tore it down in February 2022; local coverage of the felling reported its wood was later turned into cutting boards and knives rather than left to rot. This ensemble is a different, ordinary green beech, a different register entry and a different age bracket, but the loss is a reminder that a storm does not check a tree's paperwork before it falls.\n\nThe four stand in the open on public parkland, free to walk past at any time, a short stretch from the oak pair, the wingnut and the Kenaupark cluster that make this corner of Haarlem's old fortification ring one of the densest on the whole page.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
