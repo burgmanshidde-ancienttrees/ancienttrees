@@ -10,6 +10,48 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-22 (night) - A tree named after the wrong genus, and it needs the redirect work first
+
+**kyo_016 is called "Chinkapin oak (Sudajii) of Omiya Gate" and is not an
+oak.** Its own `species` field says Japanese Chinquapin, *Castanopsis
+sieboldii*. Chinkapin oak is *Quercus muehlenbergii*, a North American oak,
+and Castanopsis is not a Quercus at all. The name and the species field on the
+same entry contradict each other, and the name is what a reader sees as the
+page title. Sudajii is correct and is the Japanese name for the Castanopsis.
+
+**Not fixed, and the reason is the same one blocking the umlaut URLs.** A tree
+slug is derived from its name, so correcting this moves a published, indexed
+URL, and the redirect machinery covers city slugs only. This now belongs with
+the 17 tree URLs missing a letter (the German ß and Icelandic eth entries
+recorded earlier today): one small feature, tree-slug redirects, unblocks all
+eighteen fixes at once. Doing any of them without it trades a factual error
+for a dead link, which is the worse of the two.
+
+**Fixed in place, since neither touches a URL:**
+
+- `kyo_013` sent visitors to "Keihan Marutamachi Station", which does not
+  exist. The Keihan station is Jingu-Marutamachi; plain Marutamachi is the
+  Karasuma subway stop roughly a kilometre west, on the far side of Kyoto
+  Gyoen. A directions field pointing at the wrong station is the one class of
+  error this project says it cannot afford, so this one did not wait.
+- `kyo_015` said Kyoto Gyoen has been public ground "since the court left for
+  Tokyo in 1877" while `kyo_012` dates the court's departure to 1869 and the
+  clearing of the plots to 1877. The two events are separate now.
+
+**Reported by the Kyoto pass and NOT acted on, because each needs a source in
+hand rather than a judgement:**
+
+- `kyo_001` "Hanayama's former minister Ieatsu" is very likely Kazan'in Ieatsu,
+  a court noble, with 花山院 read as a place rather than as his surname.
+- `kyo_009` "fuseki-dai sugi" mis-romanises fukujo-daisugi, and "Goshomigoyo"
+  matches no term the pass could identify.
+- `kyo_015` names "the Kyoto nurseryman Sano Toujiro" while `kyo_005` names
+  "Sano Toemon XV" of the same sakuramori family. If those are one family, two
+  of our pages are quietly telling one story about two people.
+- `kyo_018` says another tree is "about a kilometre and a half north"; our own
+  pins put it 945 metres away. Both pins are approximate, so this may be the
+  pins rather than the prose.
+
 ## 2026-08-22 (evening) - The Vienna duplicate was invisible, and 17 URLs are missing a letter
 
 **The vie_024 / vie_028 duplicate is resolved, and it turned out to cost
