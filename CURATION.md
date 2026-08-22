@@ -32,9 +32,10 @@ no page changed. If a second, distinct report on rom_001 arrives later, per
 the standing rule it reopens the question rather than being waved off by this
 entry.
 
-All 26 ids appended to `data/submissions-processed.json`. No outcome/
-reply_text set on any of them (nothing to answer; contributor_reply.py's
-generic thank-you, if it fires, is harmless since the address is his own).
+All 26 ids appended to `data/submissions-processed.json`. `outcome: holds` was
+also set on all 26 rows via the service key by a concurrent run's identical
+check; no `reply_text` set on any of them (nothing to answer; the generic
+thank-you, if it fires, is harmless since the address is his own).
 
 ## 2026-08-21 (session) - Bucaco: the Fundacao's nine plaques, read and merged
 
