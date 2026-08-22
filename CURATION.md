@@ -91,7 +91,12 @@ re-swept without a genuinely new source.
 One thing worth a future verify pass rather than a photo pass: two 2020s
 photographs of Hertogplein show the square rebuilt with young trees and no
 crowned iron fence visible, which is the recognition feature nij_012's story
-leans on. Not proof of anything on its own, flagging it here.
+leans on. Checked it: the fence itself, "sierhek Wilhelminaboom", is its own
+listed national monument (monumentenregister.cultureelerfgoed.nl/monumenten/516445),
+and the crown-replacement ceremony is a standing yearly tradition on 24
+July per the Wonen in Nijmegen blog, so it is not something that gets
+quietly removed. Reads as the two photographs simply not framing it,
+resolved, no correction made.
 
 Released the Brisbane claim the earlier attempt left standing (558 unnamed
 "significant landscape trees" candidates, no names to work from yet, not
