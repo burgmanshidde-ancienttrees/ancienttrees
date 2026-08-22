@@ -110,10 +110,14 @@ struct HomeView: View {
     var body: some View {
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 30) {
-                VStack(alignment: .leading, spacing: 12) {
-                    Text("Explore")
-                        .font(.screenTitle)
-                        .foregroundStyle(Brand.ink)
+                VStack(alignment: .leading, spacing: 20) {
+                    HStack(alignment: .center) {
+                        Text("Explore")
+                            .font(.screenTitle)
+                            .foregroundStyle(Brand.ink)
+                        Spacer(minLength: 8)
+                        ProfileButton()
+                    }
                     Button { searching = true } label: {
                         HStack(spacing: 10) {
                             Image(systemName: "magnifyingglass")
@@ -216,7 +220,7 @@ struct HomeView: View {
     private var speciesShelf: some View {
         VStack(alignment: .leading, spacing: 8) {
             ShelfHeader(title: "By species",
-                        subtitle: "\(Set(catalogue.trees.map(\.commonName)).count) kinds of tree on the map.",
+                        subtitle: "\(Set(catalogue.trees.map(\.commonName)).count) kinds of tree",
                         more: .index(.species))
                 .padding(.horizontal, 16)
             ForEach(topSpeciesHere.prefix(6), id: \.name) { sp in
@@ -259,7 +263,7 @@ struct HomeView: View {
 
         if !oldest.isEmpty {
             shelf(title: "The oldest trees we map",
-                  subtitle: "Every one of these was already standing before your country looked the way it does.",
+                  subtitle: "Standing before your country looked like this",
                   trees: oldest,
                   season: false,
                   more: .index(.oldest))
@@ -272,7 +276,7 @@ struct HomeView: View {
     private var countryShelf: some View {
         VStack(alignment: .leading, spacing: 12) {
             ShelfHeader(title: "Tree countries",
-                        subtitle: "\(deck.countries.count) of them, and the count is what we have mapped rather than what is there.",
+                        subtitle: "\(deck.countries.count) countries, as far as we have mapped",
                         more: .index(.countries))
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 12) {
@@ -348,7 +352,7 @@ struct HomeView: View {
     private var walkShelf: some View {
         VStack(alignment: .leading, spacing: 12) {
             ShelfHeader(title: "Walks near you",
-                        subtitle: "The nearest one is open to everyone. The rest come with Plus, which we have not opened yet.")
+                        subtitle: "The nearest one is open to everyone")
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 12) {
                     ForEach(Array(walksNear.enumerated()), id: \.element.name) { i, w in
@@ -403,7 +407,7 @@ struct HomeView: View {
     private var cityShelf: some View {
         VStack(alignment: .leading, spacing: 12) {
             ShelfHeader(title: "Our favourite tree cities",
-                        subtitle: "\(cities.count) places, and every one of them is a good afternoon.",
+                        subtitle: "\(cities.count) places worth an afternoon",
                         more: .index(.cities))
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 12) {

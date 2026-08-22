@@ -164,35 +164,45 @@ public struct ShelfHeader: View {
     /// navigation by hand.
     var more: Route? = nil
 
+    /// The title and "See all" share ONE line, and a subtitle sits under the
+    /// whole row rather than beside it.
+    ///
+    /// It used to nest the subtitle in a column next to the link, so a
+    /// two-line sentence pushed "See all" off the title's baseline and the
+    /// header stopped looking left-aligned (Hidde, 2026-08-22). Netflix,
+    /// AllTrails and Airbnb all keep the row to one line and the subtitle
+    /// short, which is also why the sentences here got shorter.
     public var body: some View {
-        HStack(alignment: .firstTextBaseline) {
-            VStack(alignment: .leading, spacing: 2) {
+        VStack(alignment: .leading, spacing: 2) {
+            HStack(alignment: .firstTextBaseline) {
                 Text(title)
                     .font(.shelfTitle)
                     .foregroundStyle(Brand.ink)
-                if let subtitle {
-                    Text(subtitle)
-                        .font(.footnote)
-                        .foregroundStyle(Brand.inkSoft)
-                }
-            }
-            Spacer(minLength: 8)
-            if let more {
-                NavigationLink(value: more) {
-                    HStack(spacing: 3) {
-                        Text("See all").font(.subheadline.weight(.semibold))
-                        Image(systemName: "chevron.right").font(.caption2)
+                    .fixedSize(horizontal: false, vertical: true)
+                Spacer(minLength: 8)
+                if let more {
+                    NavigationLink(value: more) {
+                        HStack(spacing: 3) {
+                            Text("See all").font(.subheadline.weight(.semibold))
+                            Image(systemName: "chevron.right").font(.caption2)
+                        }
+                        .foregroundStyle(Brand.moss)
+                        .frame(minHeight: 44)
+                        .contentShape(.rect)
                     }
-                    .foregroundStyle(Brand.moss)
-                    .frame(minHeight: 44)
-                    .contentShape(.rect)
+                    .buttonStyle(.plain)
                 }
-                .buttonStyle(.plain)
+                if let trailing, let action {
+                    Button(trailing, action: action)
+                        .font(.subheadline.weight(.semibold))
+                        .foregroundStyle(Brand.moss)
+                }
             }
-            if let trailing, let action {
-                Button(trailing, action: action)
-                    .font(.subheadline.weight(.semibold))
-                    .foregroundStyle(Brand.moss)
+            if let subtitle {
+                Text(subtitle)
+                    .font(.footnote)
+                    .foregroundStyle(Brand.inkSoft)
+                    .lineLimit(1)
             }
         }
         .padding(.horizontal, 16)
