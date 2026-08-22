@@ -12,6 +12,10 @@
     "2026-08-18": {
       "note": "Both already fixed before this run: nap_018-020 all carry a 'notes' field with pin provenance (register sheet + distance); cas_013/cas_014 pins are back on their cited MASAF coordinates (41.075528,14.332417 and 41.07535,14.332183, matching the WARN's own figures exactly) with notes explaining the earlier unexplained move and the correction. No further action needed.",
       "at": "2026-08-20T04:42:32+00:00"
+    },
+    "2026-08-21": {
+      "note": "Fixed the in-flight.json stale-docstring NOTE: expire_hours_note now says the value is a fallback overridden at runtime by night_run_expiry_hours() reading nightly.yml directly, rather than restating a number that goes stale. Left the WARN (continuation-fix effectiveness) and the CLAUDE.md NOTE alone: CLAUDE.md's capacity-doctrine paragraph already reads 120 minutes as of this session's copy, so that NOTE is stale on the reviewer's side; the WARN needs more cron data than one run can gather.",
+      "at": "2026-08-22T05:59:11+00:00"
     }
   }
 }
