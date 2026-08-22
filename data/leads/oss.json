@@ -41,16 +41,16 @@
    "species": "London Plane (Platanus x acerifolia)",
    "lat": 51.816629,
    "lng": 5.514954,
-   "status": "lead",
-   "why": "LRMB register nr 1688226 ('Gewone plataan voormalige Hervormde kerk'). Register planting band 1910-1920, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category particulier, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+   "status": "blocked",
+   "why": "BLOCKED (oss_005): Private owner, garden (tuin) setting: reads as a private home garden. Hard rule 10 test 3 does not bend for this."
   },
   {
    "name": "Copper Beech, naast mariagrot en schapenweide in kloostert",
    "species": "Copper Beech (Fagus sylvatica f. purpurea)",
    "lat": 51.823964,
    "lng": 5.56148,
-   "status": "lead",
-   "why": "LRMB register nr 1692392 ('Bruine beuk'). Register planting band 1870-1880, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category religieuze instantie, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+   "status": "blocked",
+   "why": "BLOCKED (oss_006): Stands in the cloister garden of a Poor Clares convent, an enclosed convent garden. CLAUDE.md's hard rule 10 exception for religious sites does not cover this."
   },
   {
    "name": "Lulboom",

@@ -1,33 +1,5 @@
 [
  {
-  "id": "zaa_001",
-  "name": null,
-  "species": "Black Mulberry (Morus nigra)",
-  "age_estimate": "roughly 140 years, from a registered planting date around 1890",
-  "age_min": 136,
-  "age_max": 146,
-  "location": {
-   "address": "Kerkbuurt 9 Westzaan",
-   "latitude": 52.462468,
-   "longitude": 4.772149,
-   "neighbourhood": null
-  },
-  "verified_sources": [
-   "https://www.monumentalebomen.nl/"
-  ],
-  "access": null,
-  "transport": null,
-  "photo": {
-   "url": null,
-   "license": null,
-   "attribution": null,
-   "status": "missing"
-  },
-  "curation_status": "flagged",
-  "location_precision": "approximate",
-  "verify_notes": "LRMB register nr 1693430 ('zwarte moerbei, Kerkbuurt 9, Westzaan'). Register planting band 1880-1890, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category particulier, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: Het fabriekspand dateert oorspronkelijk uit 1880. Toen zal ook de moerbei zijn geplant. De stam is uitgegroeid tot een fikse knoest. Het beeld van de boom in 1970 lijkt veel op het beeld in 2025. Alleen nu zit de moerbei mager in het blad. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
- },
- {
   "id": "zaa_002",
   "name": null,
   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
@@ -43,7 +15,7 @@
   "verified_sources": [
    "https://www.monumentalebomen.nl/"
   ],
-  "access": null,
+  "access": "Free, public cemetery grounds, open in daylight.",
   "transport": null,
   "photo": {
    "url": null,
@@ -71,7 +43,7 @@
   "verified_sources": [
    "https://www.monumentalebomen.nl/"
   ],
-  "access": null,
+  "access": "Free, on the public square.",
   "transport": null,
   "photo": {
    "url": null,
@@ -82,34 +54,6 @@
   "curation_status": "flagged",
   "location_precision": "approximate",
   "verify_notes": "LRMB register nr 1690795 ('Gewone plataan'). Register planting band 1900-1910, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting plein. Register history of the PLACE, not of the tree, so do not bridge from it: De Zaanoever is enorm in ontwikkeling. Deze begin 20ste eeuwse plataan overleeft die ontwikkelingen al ruim een eeuw. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
- },
- {
-  "id": "zaa_004",
-  "name": null,
-  "species": "Horse Chestnut (Aesculus hippocastanum)",
-  "age_estimate": "roughly 100 years, from a registered planting date around 1930",
-  "age_min": 96,
-  "age_max": 106,
-  "location": {
-   "address": "J.J.Allanstraat 356 Westzaan",
-   "latitude": 52.460607,
-   "longitude": 4.773193,
-   "neighbourhood": null
-  },
-  "verified_sources": [
-   "https://www.monumentalebomen.nl/"
-  ],
-  "access": null,
-  "transport": null,
-  "photo": {
-   "url": null,
-   "license": null,
-   "attribution": null,
-   "status": "missing"
-  },
-  "curation_status": "flagged",
-  "location_precision": "approximate",
-  "verify_notes": "LRMB register nr 1693436 ('Witte paardenkastanje, Allanstraat 356, Wz'). Register planting band 1920-1930, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category particulier, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: Het huis is 18e eeuws. De kastanje dateert van het begin van de 20ste eeuw. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
  },
  {
   "id": "zaa_005",
@@ -127,7 +71,7 @@
   "verified_sources": [
    "https://www.monumentalebomen.nl/"
   ],
-  "access": null,
+  "access": "Free, public planting, always open.",
   "transport": null,
   "photo": {
    "url": null,
@@ -138,90 +82,6 @@
   "curation_status": "flagged",
   "location_precision": "approximate",
   "verify_notes": "LRMB register nr 1693432 ('witte paardenkastanje, Kerkbuurt 48 Wz'). Register planting band 1920-1930, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting plantsoen. Register history of the PLACE, not of the tree, so do not bridge from it: De kastanje is rond 1925 geplant in een groenstrook van de kerkbuurt. Nu honderd jaar later gaat de boom opeens fors in kwaliteit terug, mogelijk door fikse zwamvorming aan de voet. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
- },
- {
-  "id": "zaa_006",
-  "name": null,
-  "species": "Plane (Platanus sp.)",
-  "age_estimate": "roughly 100 years, from a registered planting date around 1930",
-  "age_min": 96,
-  "age_max": 106,
-  "location": {
-   "address": "J.J.Allanstraat 384",
-   "latitude": 52.461748,
-   "longitude": 4.773914,
-   "neighbourhood": null
-  },
-  "verified_sources": [
-   "https://www.monumentalebomen.nl/"
-  ],
-  "access": null,
-  "transport": null,
-  "photo": {
-   "url": null,
-   "license": null,
-   "attribution": null,
-   "status": "missing"
-  },
-  "curation_status": "flagged",
-  "location_precision": "approximate",
-  "verify_notes": "LRMB register nr 1693437 ('Plataan, Allanstraat 384, Wz'). Register planting band 1920-1930, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category particulier, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: De boerderij (uit 1880) staat ietsje terug van de Allanstraat, langs de Weelsloot. De plataan staat schuin over het pad en dateert van rond 1930. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
- },
- {
-  "id": "zaa_007",
-  "name": null,
-  "species": "Bald Cypress (Taxodium distichum)",
-  "age_estimate": "roughly 100 years, from a registered planting date around 1930",
-  "age_min": 96,
-  "age_max": 106,
-  "location": {
-   "address": "Westzijde 86",
-   "latitude": 52.442685,
-   "longitude": 4.82192,
-   "neighbourhood": null
-  },
-  "verified_sources": [
-   "https://www.monumentalebomen.nl/"
-  ],
-  "access": null,
-  "transport": null,
-  "photo": {
-   "url": null,
-   "license": null,
-   "attribution": null,
-   "status": "missing"
-  },
-  "curation_status": "flagged",
-  "location_precision": "approximate",
-  "verify_notes": "LRMB register nr 1693380 ('moerascipres, Westzijde 86'). Register planting band 1920-1930, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category particulier, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: De moerascipres staat ingesloten in een tuin achter een winkel. De cipres dateert van 1920. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
- },
- {
-  "id": "zaa_008",
-  "name": null,
-  "species": "London Plane (Platanus x acerifolia)",
-  "age_estimate": "roughly 160 years, from a registered planting date around 1870",
-  "age_min": 156,
-  "age_max": 166,
-  "location": {
-   "address": "Westzijde 136, Zaandam",
-   "latitude": 52.444326,
-   "longitude": 4.82011,
-   "neighbourhood": null
-  },
-  "verified_sources": [
-   "https://www.monumentalebomen.nl/"
-  ],
-  "access": null,
-  "transport": null,
-  "photo": {
-   "url": null,
-   "license": null,
-   "attribution": null,
-   "status": "missing"
-  },
-  "curation_status": "flagged",
-  "location_precision": "approximate",
-  "verify_notes": "LRMB register nr 1677691 ('Gewone plataan'). Register planting band 1860-1870, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category particulier, setting weg. Register history of the PLACE, not of the tree, so do not bridge from it: De plataan staat naast een pand dat als oorsprong 1715 heeft. De plataan wordt ingeschat op midden 19e eeuw. Tussen de bebouwing staat de boom aardig in de verdrukking. Hij wordt dan ook hoog opgekroond. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
  },
  {
   "id": "zaa_009",
@@ -239,7 +99,7 @@
   "verified_sources": [
    "https://www.monumentalebomen.nl/"
   ],
-  "access": null,
+  "access": "Free, a small public municipal garden.",
   "transport": null,
   "photo": {
    "url": null,
