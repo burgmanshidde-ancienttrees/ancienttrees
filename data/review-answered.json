@@ -14,8 +14,8 @@
       "at": "2026-08-20T04:42:32+00:00"
     },
     "2026-08-21": {
-      "note": "Fixed the in-flight.json stale-docstring NOTE: expire_hours_note now says the value is a fallback overridden at runtime by night_run_expiry_hours() reading nightly.yml directly, rather than restating a number that goes stale. Left the WARN (continuation-fix effectiveness) and the CLAUDE.md NOTE alone: CLAUDE.md's capacity-doctrine paragraph already reads 120 minutes as of this session's copy, so that NOTE is stale on the reviewer's side; the WARN needs more cron data than one run can gather.",
-      "at": "2026-08-22T05:59:11+00:00"
+      "note": "WARN was right and the cause was mine: the continuation step carried no claude_args, so every second attempt ran with default permissions and was refused Edit and Write. Three runs of 148 turns each could not write a file. The tool list now lives once at workflow level and both agent steps read it.",
+      "at": "2026-08-22T06:23:30+00:00"
     }
   }
 }
