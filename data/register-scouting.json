@@ -123,12 +123,13 @@
    "place": "Catalonia",
    "country": "Spain",
    "status": "blocked",
-   "note": "Licence, unchanged since the first sweep.",
+   "note": "Licence, unchanged since the first sweep. RE-CHECKED 2026-08-22, prompted by the Dutch verdict turning out to be wrong: this one is not the same error. The Dutch register was blocked on a licence that says the opposite of what we recorded; Catalonia is blocked on an ABSENCE, which is a different and more stubborn thing. The ISO metadata says only otherRestrictions, the WFS declares no Fees and no AccessConstraints, and this pass added two more empty searches: analisi.transparenciacatalunya.cat returns zero hits for arbres monumentals or arbre monumental, and datos.gob.es's national catalogue returns zero datasets for the same. There is no permission sentence to find by searching. What would settle it is a direct ask to the Departament d'Accio Climatica, which is Hidde's to send and not a run's. Do not re-run the portal searches; they are exhausted.",
    "covers": [
     "Barcelona",
     "Girona",
     "Tarragona"
-   ]
+   ],
+   "rechecked": "2026-08-22"
   },
   {
    "place": "United Kingdom",
