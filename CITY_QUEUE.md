@@ -195,7 +195,7 @@ so qa.py fails the deploy when the table and the json disagree.
 
 | # | city | score | demand | trees | photos | walks | register | target | basis |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---|
-| 1 | Rome | 45.71 | 358,876 | 29 | 9 | 2 | 32 | 30 | measured |
+| 1 | Rome | 45.90 | 358,876 | 29 | 9 | 2 | 32 | 30 | measured |
 | 2 | Amsterdam | 37.69 | 294,030 | 31 | 7 | 2 | 5488 | 30 | measured |
 | 3 | Barcelona | 37.32 | 346,477 | 46 | 12 | 7 | 183 | 30 | measured |
 | 4 | Palermo | 32.28 | 124,310 | 21 | 7 | 3 | 37 | 20 | measured |
@@ -205,7 +205,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 8 | Florence | 22.20 | 184,099 | 22 | 7 | 3 | 27 | 30 | measured |
 | 9 | Singapore | 25.56 | 967,821 | 18 | 3 | 2 | 165 | 30 | measured |
 | 10 | Vienna | 23.51 | 283,090 | 28 | 13 | 5 | 382 | 30 | measured |
-| 11 | Paris | 22.20 | 524,268 | 30 | 9 | 4 | 129 | 30 | measured |
+| 11 | Paris | 22.58 | 524,268 | 30 | 9 | 4 | 129 | 30 | measured |
 | 12 | Bath | 33.21 | 144,950 | 5 | 1 | 1 | - | 20 | measured |
 | 13 | Madrid | 18.28 | 274,553 | 17 | 10 | 2 | - | 20 | measured |
 | 14 | Brussels | 17.35 | 176,863 | 30 | 4 | 1 | 436 | 30 | measured |
@@ -219,17 +219,17 @@ so qa.py fails the deploy when the table and the json disagree.
 | 22 | Tenerife | 14.37 | - | 4 | - | - | - | 20 | measured |
 | 23 | Cambridge | 21.08 | 97,974 | 5 | 2 | 1 | - | 20 | measured |
 | 24 | Copenhagen | 20.90 | 218,621 | 16 | 1 | 2 | - | 30 | measured |
-| 25 | The Hague | 9.14 | 236,723 | 21 | 1 | 3 | 166 | 20 | measured |
-| 26 | Seville | 8.96 | 170,545 | 20 | 6 | 2 | - | 20 | measured |
+| 25 | Seville | 9.14 | 170,545 | 20 | 6 | 2 | - | 20 | measured |
+| 26 | The Hague | 9.14 | 236,723 | 21 | 1 | 3 | 166 | 20 | measured |
 | 27 | Venice | 11.19 | 267,527 | 11 | 6 | 1 | 4 | 30 | measured |
-| 28 | New York | 17.35 | 1,124,326 | 20 | 5 | 2 | - | 30 | measured |
-| 29 | Boston | 17.17 | 385,902 | 10 | 1 | 1 | - | 30 | measured |
-| 30 | Dubrovnik | 15.67 | 119,586 | 4 | 1 | 1 | 2 | 20 | measured |
-| 31 | Padua | 8.40 | 54,592 | 10 | 4 | 1 | 12 | 20 | measured |
-| 32 | Seoul | 14.55 | 206,265 | 8 | 5 | 1 | - | 30 | measured |
-| 33 | Washington DC | 14.37 | 606,731 | 14 | 1 | 2 | - | 20 | measured |
-| 34 | Bari | 8.65 | 86,456 | - | - | - | 8 | 10 | predicted (travel demand) |
-| 35 | Brisbane | 9.52 | 162,602 | 10 | 1 | 1 | 186 | 30 | measured |
+| 28 | Boston | 17.54 | 385,902 | 10 | 1 | 1 | - | 30 | measured |
+| 29 | New York | 17.35 | 1,124,326 | 20 | 5 | 2 | - | 30 | measured |
+| 30 | Dubrovnik | 15.86 | 119,586 | 4 | 1 | 1 | 2 | 20 | measured |
+| 31 | Brisbane | 10.08 | 162,602 | 10 | 1 | 1 | 186 | 30 | measured |
+| 32 | Padua | 8.40 | 54,592 | 10 | 4 | 1 | 12 | 20 | measured |
+| 33 | Seoul | 14.55 | 206,265 | 8 | 5 | 1 | - | 30 | measured |
+| 34 | Washington DC | 14.37 | 606,731 | 14 | 1 | 2 | - | 20 | measured |
+| 35 | Bari | 8.65 | 86,456 | - | - | - | 8 | 10 | predicted (travel demand) |
 | 36 | Alicante | 6.72 | 77,454 | 10 | 2 | 1 | 44 | 20 | measured |
 | 37 | Sintra | 8.02 | 46,889 | 5 | 3 | 1 | 6 | 20 | measured |
 | 38 | Budapest | 12.69 | 283,807 | 12 | 1 | 3 | - | 30 | measured |
