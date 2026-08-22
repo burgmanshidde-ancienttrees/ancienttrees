@@ -1,0 +1,270 @@
+{
+ "city": "Dordrecht",
+ "country": "Netherlands",
+ "status": "needs_curation",
+ "intro": "In September 2020 the city of Dordrecht worked out how old the black locust in Park Merwestein actually is, and came back with 300 to 325 years. That makes it one of the few trees in the country with a municipal investigation behind its age instead of a guess. The rest of this page is a plane in a charity courtyard built in 1625 by a man trying to fix his reputation, a beech where a synagogue used to stand, and a tree of heaven surviving on nothing but paving.",
+ "meta_description": "Seven remarkable trees in Dordrecht: a black locust the city dated to over 300 years, a plane in a 1625 almshouse court, and the oldest tree of heaven.",
+ "question_meta": "Dordrecht's oldest tree is the black locust in Park Merwestein, which the city dated to 300 to 325 years in 2020. Where it stands, and six more.",
+ "question_answer": "The oldest tree in Dordrecht is a black locust near the S. van Hoogstratensingel entrance of Park Merwestein. This one does not need estimating: research carried out by the municipality in September 2020 put it at 300 to 325 years old, which matches the national register's planting band of 1700 to 1750. That is unusually solid ground for an age on this site, where most figures are a decade-wide band from a register and nothing more. Black locust is a North American species that reached Europe in the early seventeenth century, so a tree planted here around 1700 was among the first generation of them in the country.",
+ "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so most figures on this page are bands rather than measurements. The Merwestein black locust is the exception and says so: the city investigated it in September 2020 and arrived at 300 to 325 years. The register is the 2024 edition and is the single source for the other six, which is why they are flagged. Several of these trees are recorded as older than the ground they stand in, which is a pattern rather than a coincidence: the silver maple in the Weizigtpark was standing in a meadow before the park was laid out around it in 1947, and the plane at Dordwijk belongs to a country estate begun about 1635. Read the access line on the Sorghvliet plane before setting out: Dordwijk is private ground south of the city, even though the register records it as visitable. Where a pin is marked approximate we know the park and not the trunk, which on an estate of that size is a real difference.",
+ "hero_tree_id": "dor_001",
+ "oldest_tree_id": "dor_001",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Dordrecht?",
+   "a": "The black locust in Park Merwestein, near the S. van Hoogstratensingel entrance. Municipal research in September 2020 put it at 300 to 325 years old, which is a firmer answer than most cities can give."
+  },
+  {
+   "q": "Who was Arend Maartenszoon?",
+   "a": "The founder of the Arend Maartenshof, an almshouse court built in Dordrecht in 1625. He had a reputation as a money-grubber and set out to improve it by building 38 dwellings for the poor. The court is still there and so is a plane tree in it, banded 1810 to 1820."
+  },
+  {
+   "q": "What is a tree of heaven doing on this page?",
+   "a": "Being the oldest one in the city. Ailanthus altissima is usually treated as a weed here because it seeds everywhere and suckers through paving, but the specimen behind the Botgensstraat has been at it since about 1900 to 1910 and the register notes that it holds up well in a very stony spot."
+  },
+  {
+   "q": "Are they free to visit?",
+   "a": "Six of the seven are freely reachable: Park Merwestein, the Weizigtpark, the Van Baerleplantsoen and the street trees are all public, and the Arend Maartenshof is an open courtyard. The plane at Dordwijk stands on a private estate south of the city and is recorded as visitable in the register; check before you set out."
+  }
+ ],
+ "trees": [
+  {
+   "id": "dor_001",
+   "name": "The Black Locust of Park Merwestein",
+   "species": "Black Locust (Robinia pseudoacacia)",
+   "age_estimate": "300 to 325 years, established by municipal research in September 2020",
+   "age_min": 300,
+   "age_max": 330,
+   "location": {
+    "address": "Park Merwestein, near the S. van Hoogstratensingel entrance",
+    "latitude": 51.81242,
+    "longitude": 4.67828,
+    "neighbourhood": "Merwestein"
+   },
+   "story": "Somebody actually checked. In September 2020 the municipality investigated this tree and put it at 300 to 325 years old, which is a far better answer than almost any tree on this site can offer, and it agrees with the national register's independent band of 1700 to 1750.\n\nWhat makes the number remarkable is the species. Black locust is North American, from the Appalachians, and it reached Europe at the start of the seventeenth century, named after Jean Robin, the French royal gardener who is credited with planting the first one in Paris. A specimen planted in Dordrecht around 1700 belonged to the first wave of them in this country, when the tree was still an expensive curiosity rather than the roadside coloniser it later became.\n\nIt has aged the way black locusts do, which is dramatically. The bark on an old one turns into deep, twisting, rope-like ridges, the trunk usually leans or forks, and the wood is so rot-resistant that the tree keeps standing in a state that would have finished anything else.\n\nIn late May and early June it hangs with white pea flowers that smell strongly of honey. Three hundred years and it still does that every year.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Public park, open daily.",
+   "transport": "About 1 km northeast of Dordrecht station, near the S. van Hoogstratensingel entrance.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "Deeply ridged rope-like bark on a leaning or forked trunk, near the singel entrance. Small paired leaflets, and thorns on young shoots.",
+   "best_time": {
+    "months": [
+     6
+    ],
+    "kind": "flowers",
+    "label": "early June, when it hangs with white pea flowers and smells of honey"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "dor_002",
+   "name": "The Plane of the Arend Maartenshof",
+   "species": "London Plane (Platanus x acerifolia)",
+   "age_estimate": "roughly 205 to 215 years, from the register's planting band of 1810 to 1820",
+   "age_min": 206,
+   "age_max": 216,
+   "location": {
+    "address": "Arend Maartenshof",
+    "latitude": 51.81338,
+    "longitude": 4.67086,
+    "neighbourhood": "Centrum"
+   },
+   "story": "This courtyard was built by a man with a reputation problem.\n\nArend Maartenszoon was known in Dordrecht as a money-grubber. In 1625 he put up 38 dwellings for the poor of the city and attached his name to them, which is the oldest form of reputation management there is and, four hundred years later, has worked: the Arend Maartenshof is still standing, still housing, and still called after him.\n\nThe plane came much later, banded 1810 to 1820, so it went in when the court was already nearly two centuries old. That is the usual pattern for an almshouse yard. The buildings come first, the tree arrives when somebody decides the middle of the square ought to have something in it, and then it grows to be the thing everyone actually remembers.\n\nA hofje with a big tree in it is one of the best small spaces the Netherlands produces: low houses on four sides, a gate off a busy street, and a sudden drop in noise. This one is a working example rather than a museum, so go quietly.\n\nThe bark flakes in cream and olive plates, and the seed balls hang through the winter.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Open almshouse courtyard; people live here, so visit quietly and in daylight.",
+   "transport": "About 800 m north of Dordrecht station, in the old centre.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "The single large plane in the middle of the courtyard, with flaking camouflage bark.",
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "dor_003",
+   "name": "The Silver Maple of the Weizigtpark",
+   "species": "Silver Maple (Acer saccharinum)",
+   "age_estimate": "roughly 125 to 135 years, from the register's planting band of 1890 to 1900",
+   "age_min": 126,
+   "age_max": 136,
+   "location": {
+    "address": "Weizigtpark",
+    "latitude": 51.80526,
+    "longitude": 4.66824,
+    "neighbourhood": "Weizigt"
+   },
+   "story": "It was standing in a field for half a century before anyone made a park around it.\n\nThe Weizigtpark grew out of the country estate of the same name, but the corner this maple occupies was not part of the designed grounds at all. It was grazing land, and it was only laid out as park in about 1947. The register bands the tree 1890 to 1900, which puts it in the meadow, decades ahead of the paths and the planting.\n\nThat explains its shape if you look. A tree that grows up in open ground with nothing crowding it spreads low and wide and keeps its bottom branches, while a tree grown in a plantation is drawn up tall with a narrow crown and a clean trunk. The old meadow trees in a Dutch park are usually the broad ones.\n\nSilver maple is worth knowing for two things. The leaf is cut into five narrow lobes and is bright white underneath, so the whole crown flickers pale in wind. And it flowers in March, before any leaf, in small red and yellow tufts directly on the bare twigs, weeks before anything else in the park does anything at all.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Public park, open daily.",
+   "transport": "About 500 m west of Dordrecht station.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "Broad and low-branched, with deeply cut leaves that are white underneath.",
+   "best_time": {
+    "months": [
+     3
+    ],
+    "kind": "flowers",
+    "label": "March, when it flowers on bare twigs before anything else stirs"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "dor_004",
+   "name": "The Copper Beech of the Varkenmarkt",
+   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+   "age_estimate": "roughly 165 to 175 years, from the register's planting band of 1850 to 1860",
+   "age_min": 166,
+   "age_max": 176,
+   "location": {
+    "address": "Varkenmarkt, in the inner courtyard by number 70",
+    "latitude": 51.81553,
+    "longitude": 4.66557,
+    "neighbourhood": "Centrum"
+   },
+   "story": "The name of the square says what happened here: a pig market, and a lively livestock trade for a long time. Near this tree there was also a synagogue, which was pulled down in 1965.\n\nSo the beech is standing in a piece of Dordrecht that has been comprehensively emptied of its old uses. The animals went, the congregation's building went, and the courtyard by number 70 is now a quiet interior space with a very large purple tree in it.\n\nThe register makes a point about this one that it rarely makes: it is growing in a natural rooting position, and its trunk base and the ground around it are unrestricted. That is close to unheard of for a mature beech in a city centre. Almost every urban beech is slowly strangled by paving over the root plate, so a big one with open soil around its flare is a tree that has had what it needed, and it shows in the size.\n\nWorth seeing in April as much as in October. Copper beech opens its leaves a translucent red that darkens to purple within a fortnight, and in an enclosed courtyard the light through them is extraordinary.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Inner courtyard off the Varkenmarkt, reachable in daylight.",
+   "transport": "About 1 km northwest of Dordrecht station, in the old centre.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "A very large purple beech with open soil around its base, in the courtyard by number 70.",
+   "best_time": {
+    "months": [
+     4
+    ],
+    "kind": "fresh leaves",
+    "label": "April, when the new leaves open translucent red"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "dor_005",
+   "name": "The Plane at Sorghvliet",
+   "species": "London Plane (Platanus x acerifolia)",
+   "age_estimate": "roughly 175 to 185 years, from the register's planting band of 1840 to 1850",
+   "age_min": 176,
+   "age_max": 186,
+   "location": {
+    "address": "By the house Sorghvliet, Landgoed Dordwijk, south of Dordrecht",
+    "latitude": 51.79487,
+    "longitude": 4.68555,
+    "neighbourhood": "Dordwijk"
+   },
+   "story": "The estate was laid out around 1635 and was then called the Torensteedje. At the entrance there is still a castle farm, part of which dates from that founding period, which is close to four hundred years of the same buildings being used for the same purpose.\n\nThe plane is nothing like that old. Banded 1840 to 1850, it belongs to the second half of the estate's life, when Dordwijk was being reworked the way most Dutch country places were in the nineteenth century: the formal geometry of the seventeenth century replaced with lawns, clumps and winding approaches, and single specimen trees planted where they would be seen from the house.\n\nThat is what this tree is. Not part of an avenue and not part of a wood, but a chosen thing placed in a view, near the house called Sorghvliet.\n\nPlanes were the fashionable choice for exactly that role: fast, huge, and with bark that keeps a pale flaking pattern all year, which makes one visible from a long way off across grass in any season.\n\nThe register records the estate as visitable, but it is private ground south of the city, so it is worth checking access before you go.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Private estate south of Dordrecht, recorded as visitable in the national register. Check before setting out.",
+   "transport": "About 3 km south of Dordrecht station, at Landgoed Dordwijk.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "A single large plane standing clear on grass near the house, with flaking pale bark.",
+   "curation_status": "flagged",
+   "location_precision": "approximate"
+  },
+  {
+   "id": "dor_006",
+   "name": "The Tree of Heaven of the Botgensstraat",
+   "species": "Tree of Heaven (Ailanthus altissima)",
+   "age_estimate": "roughly 115 to 125 years, from the register's planting band of 1900 to 1910",
+   "age_min": 116,
+   "age_max": 126,
+   "location": {
+    "address": "Behind Botgensstraat 27",
+    "latitude": 51.81304,
+    "longitude": 4.6624,
+    "neighbourhood": "Centrum"
+   },
+   "story": "Nobody plants these on purpose any more, which is why the oldest one in Dordrecht is worth going to look at.\n\nTree of heaven came from China, arrived in Europe in the eighteenth century as an ornamental, and was planted hard in cities because it grows faster than anything else and does not care about bad soil, drought or fumes. Then it turned out that it seeds prolifically, suckers aggressively through paving and cellars, and poisons the ground against competitors with a chemical in its roots. It is now one of the most unwanted plants in Europe.\n\nThis one predates all of that argument. Banded 1900 to 1910, it is the oldest of its kind in the city, and the register makes a point of saying it holds up well in its very stony surroundings, which is the whole nature of the species in one sentence.\n\nYou reach it through a small street behind the Botgensstraat, which is exactly the sort of leftover urban gap it thrives in.\n\nEnormous compound leaves up to a metre long, and in late summer dense bunches of papery winged seeds that often turn a rusty red. Crush a leaf and it smells unpleasant. That is diagnostic.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Reachable via the small street behind the Botgensstraat.",
+   "transport": "About 1 km northwest of Dordrecht station, in the old centre.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "Very long compound leaves and rusty red bunches of winged seeds in late summer, in a narrow paved space behind the street.",
+   "best_time": {
+    "months": [
+     8
+    ],
+    "kind": "fruit",
+    "label": "August, when the winged seed bunches turn rusty red"
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate"
+  },
+  {
+   "id": "dor_007",
+   "name": "The Large-Leaved Lime of Louter Bloemen",
+   "species": "Large-leaved Lime (Tilia platyphyllos)",
+   "age_estimate": "roughly 165 to 175 years, from the register's planting band of 1850 to 1860",
+   "age_min": 166,
+   "age_max": 176,
+   "location": {
+    "address": "The small park at Louter Bloemen",
+    "latitude": 51.79845,
+    "longitude": 4.64669,
+    "neighbourhood": "Louter Bloemen"
+   },
+   "story": "This small park is all that is left of a country place, and it reads like one the moment you walk in: dominated by tall beeches, with the light already gone by the time it reaches the ground.\n\nThe lime is one of two standing close together. This one is a large-leaved lime and beside it is a big small-leaved lime, which is a useful accident, because those two species are the parents of the common lime planted everywhere in this country and are far less often seen themselves.\n\nThe difference is easy in the hand. Large-leaved lime has bigger, softer leaves with fine hairs on the underside and on the stalk, and it flowers first, in June. Small-leaved lime has smaller, hairless, bluish-backed leaves with rusty tufts in the vein angles, and flowers two to three weeks later. Standing between the two of them is the cheapest botany lesson in Dordrecht.\n\nBoth are banded to the middle of the nineteenth century, which puts them in the estate planting rather than in anything the city did later.\n\nGo in late June, when the large-leaved one is out and the whole park smells of it and hums.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Small public park, open daily.",
+   "transport": "About 4 km west of Dordrecht station, at Louter Bloemen.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "One of two big limes standing together under tall beeches. This is the one with larger, softly hairy leaves.",
+   "best_time": {
+    "months": [
+     6
+    ],
+    "kind": "flowers",
+    "label": "late June, when it flowers and the park hums"
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate"
+  }
+ ]
+}

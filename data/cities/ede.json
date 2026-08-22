@@ -1,0 +1,263 @@
+{
+ "city": "Ede",
+ "country": "Netherlands",
+ "status": "needs_curation",
+ "intro": "Ede sits on sand at the western edge of the Veluwe, which is poor ground, and poor ground is why the oldest tree here is not a tree in the usual sense. It is an oak stool: a stump cut to the ground over and over for centuries, sending up a new ring of stems every time, so what survives is the base, broad and low and older than any trunk on it. Around it are a castle with a pair of oaks, a named beech in the town wood, and one oak inside a national park.",
+ "meta_description": "Seven remarkable trees around Ede: an ancient oak coppice stool in the Veluwe woods, a pair of oaks at Kasteel Hoekelum, and an oak in the Hoge Veluwe.",
+ "question_meta": "Ede's oldest tree is a sessile oak coppice stool east of the Apeldoornseweg, banded 1750 to 1800. Where it stands, and six more.",
+ "question_answer": "The oldest tree in Ede is a sessile oak stool in the old coppice wood east of the Apeldoornseweg, near the Immenweg, which the national register places in a planting band of 1750 to 1800. A stool is what is left when a tree has been cut to ground level repeatedly over generations: the root system and the base survive and throw up a fresh ring of stems each time, so the stems you see may be decades old while the stool beneath them is centuries. This wood appears on topographic maps from 1830 to 1850, was planted through with conifers in the 1920s and 1930s, and a number of old oak stools were spared along the paths and on some plots. This is the largest of them, in a row along a path.",
+ "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every figure on this page is a band and none is narrowed to look precise. The register is the 2024 edition and is the single source for all seven, which is why they are flagged. The stool is a case where the number needs reading carefully: a coppice stool has no single planting date in any meaningful sense, and a band of 1750 to 1800 describes when the stool was established rather than the age of anything now growing out of it. Access is worth checking on one entry: the Pampel oak stands inside Nationaal Park De Hoge Veluwe, which charges admission, and the two Hoekelum oaks are on castle grounds recorded as visitable. Where a pin is marked approximate we know the wood or the field and not the exact trunk.",
+ "hero_tree_id": "ede_001",
+ "oldest_tree_id": "ede_001",
+ "faq": [
+  {
+   "q": "What is a coppice stool?",
+   "a": "The living base of a tree that has been cut to the ground repeatedly. Oak, hazel, lime and others respond to being felled by sending up a ring of new shoots from the stump, which are harvested again after ten to twenty years. Done for centuries the stool widens into a low broad ring, so the visible stems are young and the thing they grow from is very old."
+  },
+  {
+   "q": "What is the oldest tree in Ede?",
+   "a": "The sessile oak stool in the coppice wood east of the Apeldoornseweg near the Immenweg, banded 1750 to 1800, and the largest stool in a row along the path."
+  },
+  {
+   "q": "Do I have to pay to see any of these?",
+   "a": "One. The Pampel oak stands inside Nationaal Park De Hoge Veluwe, which charges an entrance fee. The other six are free, though the two at Kasteel Hoekelum are on castle grounds and worth checking before a long trip."
+  },
+  {
+   "q": "Why is there a giant sequoia at a fire station?",
+   "a": "Because it was planted between 1880 and 1890, when the building and the square around it looked nothing like they do now. A sequoia was the fashionable statement tree of that period, and it stayed while everything else on the Burgemeester van Dijkeplein was replaced around it."
+  }
+ ],
+ "trees": [
+  {
+   "id": "ede_001",
+   "name": "The Great Oak Stool",
+   "species": "Sessile Oak (Quercus petraea)",
+   "age_estimate": "roughly 225 to 275 years as a stool, from the register's band of 1750 to 1800; the stems on it are far younger",
+   "age_min": 226,
+   "age_max": 276,
+   "location": {
+    "address": "East of the Apeldoornseweg, near the Immenweg sand track",
+    "latitude": 52.07572,
+    "longitude": 5.72316,
+    "neighbourhood": "Ederbos"
+   },
+   "story": "This is not a trunk. It is a base, broad and low, with a ring of stems standing up out of it, and it is the oldest living thing in Ede.\n\nCoppicing is what people did with oak on poor sandy ground for a thousand years, because it turns a slow tree into a repeating crop. Cut an oak to the ground and it does not die; it sends up a dense ring of new shoots from the stump, which are harvested again a decade or two later for firewood, fencing, charcoal and tan bark. Repeat that for centuries and the stump widens into a low circular platform of old wood, sometimes two or three metres across, with a hollow middle where the original stem rotted out.\n\nSo the age is on the base. The stems you see are young. The thing they are standing on has been cut and has regrown perhaps twenty times.\n\nThis wood shows on topographic maps from 1830 to 1850. In the 1920s and 1930s it was planted through with conifers, and on some plots and along some paths the old oak stools were spared. This is the largest of them, in a row along a path.\n\nCome in winter, when you can see the shape of the base.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Woodland with public paths, east of the Apeldoornseweg.",
+   "transport": "About 6 km northeast of Ede-Wageningen station, off the Apeldoornseweg near the Immenweg.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "A broad low ring of ancient wood with several stems rising from it, the biggest of a line of stools along the path.",
+   "best_time": {
+    "months": [
+     1
+    ],
+    "kind": "bare silhouette",
+    "label": "January, when the bare stems show the shape of the old stool"
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate"
+  },
+  {
+   "id": "ede_002",
+   "name": "The Pampel Oak",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "roughly 165 to 175 years, from the register's planting band of 1850 to 1860",
+   "age_min": 166,
+   "age_max": 176,
+   "location": {
+    "address": "Near De Pampel, Houtkampweg 12, Nationaal Park De Hoge Veluwe, Otterlo",
+    "latitude": 52.09775,
+    "longitude": 5.82068,
+    "neighbourhood": "Hoge Veluwe"
+   },
+   "story": "It stands inside a fenced national park where you have to pay to walk, and both of those facts are the reason it is in good condition.\n\nDe Hoge Veluwe is 55 square kilometres of sand, heath, drift dunes and planted wood, bought up in the 1910s by Anton and Helene Kroller-Muller and later given to the state. It is enclosed, it is managed, and it is one of the few landscapes in the Netherlands where you can walk for an hour without leaving it. The Pampel is a spot in the northwest of it, off the Houtkampweg.\n\nThe oak is banded 1850 to 1860, which puts it well before the Kroller-Mullers and inside whatever estate or farm woodland was here first. On the Veluwe that usually means it grew up on land that was heath within living memory, since much of this sand was open and drifting into the nineteenth century and was only planted up afterwards.\n\nAn oak that establishes itself on poor sand grows slowly and puts on dense timber, so the girth understates the age.\n\nGo in October, and let the acorns be the reason. Wild boar and deer here live off them.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Paid. Inside Nationaal Park De Hoge Veluwe, which charges an entrance fee.",
+   "transport": "About 15 km northeast of Ede-Wageningen station. Nearest park entrance Otterlo.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "A heavy old oak near the Pampel, with acorns on long stalks and leaves seated almost directly on the twig.",
+   "best_time": {
+    "months": [
+     10
+    ],
+    "kind": "fruit",
+    "label": "October, when the acorns come down and the boar arrive for them"
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate"
+  },
+  {
+   "id": "ede_003",
+   "name": "The Oak beside Kasteel Hoekelum",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "roughly 185 to 195 years, from the register's planting band of 1830 to 1840",
+   "age_min": 186,
+   "age_max": 196,
+   "location": {
+    "address": "Beside Kasteel Hoekelum, Edeseweg, Bennekom",
+    "latitude": 52.01578,
+    "longitude": 5.67632,
+    "neighbourhood": "Hoekelum"
+   },
+   "story": "There are two oaks here of the same age and they are worth seeing together, because between them they show what open ground does to a tree.\n\nThis is the one standing beside the house. It grew up close to buildings, with structures and other planting on at least one side, so it has done what a hemmed tree does: gone up rather than out, kept a narrower crown, and lost its lower branches early. The other one, out in the meadow in front, had nothing near it at all and spread instead.\n\nSame species, same planting band of 1830 to 1840, almost certainly the same original scheme. Different shapes entirely, and the only variable is how much room each one had.\n\nThat is a more useful thing to notice than it sounds, because it is how you read any old tree. A wide low crown with heavy horizontal limbs means the tree grew in the open, even if a wood has since grown up around it. A tall clean trunk means competition.\n\nKasteel Hoekelum is on the Edeseweg between Ede and Bennekom, and the grounds are recorded as visitable in the national register.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Castle grounds on the Edeseweg, recorded as visitable in the national register.",
+   "transport": "About 3 km southwest of Ede-Wageningen station, on the Edeseweg toward Bennekom.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "The oak standing close to the house, taller and narrower in the crown than the one out in the field.",
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "ede_004",
+   "name": "The Oak in the Hoekelum Meadow",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "roughly 185 to 195 years, from the register's planting band of 1830 to 1840",
+   "age_min": 186,
+   "age_max": 196,
+   "location": {
+    "address": "In the meadow in front of Kasteel Hoekelum, Edeseweg, Bennekom",
+    "latitude": 52.01605,
+    "longitude": 5.67479,
+    "neighbourhood": "Hoekelum"
+   },
+   "story": "A single oak standing alone in a field is one of the most reliable pleasures this country offers, and it is almost always deliberate.\n\nSolitary field trees were left or planted for reasons that had nothing to do with looks. Shade for livestock, a marker on a boundary, a fixed point in a landscape without many. What they produce is a shape no woodland tree ever gets: heavy limbs leaving the trunk low down and running out horizontally as far as the wood will bear, a crown far wider than the tree is tall, and clear ground beneath.\n\nThis one has had that room since about 1830 to 1840, in the meadow in front of Kasteel Hoekelum, with its twin standing close to the house and looking completely different for it.\n\nA free-standing oak of nearly two hundred years is also a small ecosystem on its own. Old oaks carry more dependent species than any other tree in northern Europe, several hundred of them, most in the dead wood and the crevices, so the value is in the parts that look neglected.\n\nGo in low winter sun, when the whole frame of it is visible from the road.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Castle grounds on the Edeseweg, recorded as visitable in the national register. The tree is visible from the road.",
+   "transport": "About 3 km southwest of Ede-Wageningen station, on the Edeseweg toward Bennekom.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "The lone spreading oak in the open field in front of the castle, wider than it is tall.",
+   "best_time": {
+    "months": [
+     1
+    ],
+    "kind": "bare silhouette",
+    "label": "January, when the bare frame shows against the field"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "ede_005",
+   "name": "Beuk Marjan",
+   "species": "European Beech (Fagus sylvatica)",
+   "age_estimate": "roughly 195 to 205 years, from the register's planting band of 1820 to 1830",
+   "age_min": 196,
+   "age_max": 206,
+   "location": {
+    "address": "Edese bos, north of the N224",
+    "latitude": 52.04341,
+    "longitude": 5.69248,
+    "neighbourhood": "Edese bos"
+   },
+   "story": "Somebody called this tree Marjan and the name went into the national register.\n\nThat is a small thing and it is not nothing. Almost every entry in that register is a species and an address. A handful carry a name, and a name means a person: somebody local knew this beech well enough to call it something, used the name often enough that other people used it too, and it eventually turned up on an official form.\n\nThe tree itself is a beech of about two hundred years in the Edese bos, north of the N224, and its age is the interesting part in this landscape. Two hundred years ago much of the Veluwe was open drifting sand, and the woods around Ede are largely a nineteenth and twentieth century creation, planted to fix the ground and grow timber. A beech from the 1820s is from the very beginning of that effort.\n\nBeech is also the wrong tree for this soil on paper. It wants moisture and does badly on dry sand, so a big old one out here has found itself a better pocket of ground than its neighbours.\n\nBring your hand. That bark is the smoothest thing in the wood.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Public woodland with paths.",
+   "transport": "About 4 km northeast of Ede-Wageningen station, in the Edese bos north of the N224.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "A large smooth grey-barked beech standing out among the pines and younger planting.",
+   "best_time": {
+    "months": [
+     10
+    ],
+    "kind": "autumn colour",
+    "label": "October, when it turns copper against the dark conifers"
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate"
+  },
+  {
+   "id": "ede_006",
+   "name": "The Giant Sequoia of the Fire Station",
+   "species": "Giant Sequoia (Sequoiadendron giganteum)",
+   "age_estimate": "roughly 135 to 145 years, from the register's planting band of 1880 to 1890",
+   "age_min": 136,
+   "age_max": 146,
+   "location": {
+    "address": "By the fire station, Burgemeester van Dijkeplein",
+    "latitude": 52.04079,
+    "longitude": 5.67055,
+    "neighbourhood": "Centrum"
+   },
+   "story": "A tree from the Sierra Nevada, planted in a Gelderland village in the 1880s, now standing next to a fire station.\n\nThe sequoia was the status tree of its moment. Introduced to Europe in 1853, still expensive thirty years later, and unmistakably foreign in a landscape of oak and pine, which was the entire attraction. Whoever put this one in was making a point about the ground it stood on, and that ground was not a municipal square at the time.\n\nEverything around it has since been replaced. The tree stayed, because a sequoia in the 1880s becomes a sequoia you cannot casually remove by the 1950s, and now it is the oldest thing on the Burgemeester van Dijkeplein by a wide margin.\n\nGo and push the bark. That is the single best thing about the species and almost nobody does it. It is thick, soft and fibrous, and your fist sinks into it, which is an adaptation to forest fire: the outer layer chars and insulates while the living tissue underneath survives. Nothing else you can touch in a Dutch town centre behaves like that.\n\nIt will still be here in a thousand years if we leave it alone.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Public square, reachable at any time.",
+   "transport": "About 2 km north of Ede-Wageningen station, on the Burgemeester van Dijkeplein.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "The one enormous conical conifer on the square, with thick spongy red-brown bark.",
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "ede_007",
+   "name": "The Oak on the Dorpstraat",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "roughly 155 to 165 years, from the register's planting band of 1860 to 1870",
+   "age_min": 156,
+   "age_max": 166,
+   "location": {
+    "address": "Dorpstraat 25, Lunteren",
+    "latitude": 52.08218,
+    "longitude": 5.62274,
+    "neighbourhood": "Lunteren"
+   },
+   "story": "A village street with an oak on it that is older than most of the houses.\n\nLunteren is a Veluwe village a few kilometres northwest of Ede, and this oak has been on the Dorpstraat since somewhere between 1860 and 1870. That places it before the railway came through, before the tourist trade, and before most of the building that turned a farming settlement into a commuter village.\n\nAn oak on a village street lives a harder life than an oak in a wood, and it usually looks it: pruned back from the road and the wires, roots under paving, and a lopsided crown leaning toward whatever open space there is. That is not damage so much as negotiation, carried out over a century and a half, one branch at a time.\n\nIt is also the sort of tree a village argues about. Every generation there is a reason to take it out, and so far every generation has decided not to.\n\nStand across the road rather than under it. From the far pavement you can see the whole shape and read where the street has pushed it about, which is the interesting part.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Street tree in the village, reachable at any time.",
+   "transport": "About 8 km northwest of Ede-Wageningen station, in Lunteren.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "The large oak on the Dorpstraat by number 25, with a crown leaning away from the buildings.",
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  }
+ ]
+}
