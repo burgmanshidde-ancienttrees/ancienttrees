@@ -15,20 +15,16 @@ struct AddIntro: View {
     var onStart: () -> Void
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 16) {
+        VStack(alignment: .leading, spacing: 14) {
             Text("Add a tree we do not have")
-                .font(.brand(30, .heavy, relativeTo: .largeTitle))
+                .font(.brand(28, .bold, relativeTo: .title))
                 .foregroundStyle(Brand.ink)
                 .fixedSize(horizontal: false, vertical: true)
 
-            Text("Photograph any tree you want to keep and it joins your own trees.")
-                .font(.title3)
-                .foregroundStyle(Brand.ink)
-                .fixedSize(horizontal: false, vertical: true)
-
-            Text("If it is a remarkable old one, tell us. We check every tree, and it can join the map everybody sees.")
-                .font(.body)
+            Text("Photograph any tree you want to keep and it joins your own trees. If it is a remarkable old one, tell us: we check every tree, and it can join the map everybody sees.")
+                .font(.system(size: 17))
                 .foregroundStyle(Brand.inkSoft)
+                .lineSpacing(3)
                 .fixedSize(horizontal: false, vertical: true)
 
             Spacer(minLength: 24)

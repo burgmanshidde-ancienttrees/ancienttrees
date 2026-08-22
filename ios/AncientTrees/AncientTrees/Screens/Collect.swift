@@ -331,7 +331,7 @@ struct CollectView: View {
         if let t = missionTree {
             VStack(alignment: .leading, spacing: 12) {
                 Text("Your first tree is \(distanceLabel(t)) away")
-                    .font(.brand(24, .heavy, relativeTo: .title))
+                    .font(.brand(24, .bold, relativeTo: .title))
                     .foregroundStyle(Brand.ink)
                 Text("Stand before it, photograph it, and it is yours. Trees, species and places fill your collection, and the years they have seen add up.")
                     .font(.subheadline).foregroundStyle(Brand.inkSoft)
@@ -355,7 +355,7 @@ struct CollectView: View {
             // Nowhere near any tree we map: honest, and it still points out.
             VStack(alignment: .leading, spacing: 10) {
                 Text("Nothing collected yet")
-                    .font(.brand(24, .heavy, relativeTo: .title)).foregroundStyle(Brand.ink)
+                    .font(.brand(24, .bold, relativeTo: .title)).foregroundStyle(Brand.ink)
                 Text("There are \(catalogue.trees.count.formatted(.number.locale(Locale(identifier: "en_US")))) trees to find in \(Set(catalogue.trees.map(\.country)).count) countries. Explore the map, save the ones you want, and tick them off as you stand before them.")
                     .font(.subheadline).foregroundStyle(Brand.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
