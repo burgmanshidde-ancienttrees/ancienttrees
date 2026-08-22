@@ -21,7 +21,7 @@
     },
     {
       "register_id": 3257650,
-      "name": "Platane",
+      "name": "Platane (third Rathauspark plane)",
       "species": "Platanus x hybrida",
       "place": "1., Rathauspark",
       "latitude": 48.211068,
@@ -32,7 +32,7 @@
         "girth_cm": 526,
         "offset_m": 2.9
       },
-      "why_not_yet": "third Rathauspark plane, 526 cm, same objection as 3257651."
+      "why_not_yet": "RESOLVED (verify pass, 2026-08-22): verified and delivered to data/research/vienna-verified.json as vie_029. Kept here for traceability."
     },
     {
       "register_id": 3257888,
@@ -437,7 +437,7 @@
       "latitude": 48.2088,
       "longitude": 16.4175,
       "baumkataster": null,
-      "why_not_yet": "register_ids 3257979, 3257980, 3257981, 3257982, all within about 35m of each other and about 430-460m from the published vie_003 (Chestnut Avenue of the Hauptallee). Not individually checked for access this pass (ran out of window): Meiereistraße hosts a restaurant/dairy building (a 'Meierei') near the Prater, so this could be a public streetside row or a restaurant courtyard. A genuine four-tree micro-cluster worth a dedicated look, since it would sit close enough to extend a Prater-area walk alongside vie_003."
+      "why_not_yet": "register_ids 3257979, 3257980, 3257981, 3257982, all within about 35m of each other and about 430-460m from the published vie_003 (Chestnut Avenue of the Hauptallee). Not individually checked for access this pass (ran out of window): Meiereistraße hosts a restaurant/dairy building (a 'Meierei') near the Prater, so this could be a public streetside row or a restaurant courtyard. A genuine four-tree micro-cluster worth a dedicated look, since it would sit close enough to extend a Prater-area walk alongside vie_003. RESOLVED (verify pass, 2026-08-22): de.wikipedia.org Liste der Naturdenkmaeler in Wien/Leopoldstadt gives Naturdenkmal Nr. 853 for these four planes, exact text 'Die Platanen konnten sich auf dem Gelaende der Bildhaueratelier gut entwickeln' (the planes developed well on the sculptor studios' grounds), i.e. private studio grounds, matching the Nominatim address-mismatch suspicion already recorded here. Moved to blocked."
     },
     {
       "register_id": null,
@@ -507,7 +507,47 @@
       "latitude": 48.2088,
       "longitude": 16.4175,
       "baumkataster": null,
-      "why_not_yet": "Checked this pass (verify session, 2026-08-19): Nominatim resolves the point to a sculptor's studio building at Meiereistrasse 245, an address-numbering mismatch against the register's Meiereistrasse 3 that was not resolved this pass. The area is the Krieau/WU-Campus part of the Prater, closer to sports and institutional grounds than to the Hauptallee's open public avenue. Access not established either way; not pursued further given the time budget."
+      "why_not_yet": "Checked this pass (verify session, 2026-08-19): Nominatim resolves the point to a sculptor's studio building at Meiereistrasse 245, an address-numbering mismatch against the register's Meiereistrasse 3 that was not resolved this pass. The area is the Krieau/WU-Campus part of the Prater, closer to sports and institutional grounds than to the Hauptallee's open public avenue. Access not established either way; not pursued further given the time budget. RESOLVED (verify pass, 2026-08-22): de.wikipedia.org Liste der Naturdenkmaeler in Wien/Leopoldstadt gives Naturdenkmal Nr. 853 for these four planes, exact text 'Die Platanen konnten sich auf dem Gelaende der Bildhaueratelier gut entwickeln' (the planes developed well on the sculptor studios' grounds), i.e. private studio grounds, matching the Nominatim address-mismatch suspicion already recorded here. Moved to blocked."
+    },
+    {
+      "register_id": 3257659,
+      "name": "Winterlinde, Klostergasse 37",
+      "species": "Tilia cordata",
+      "place": "18., Klostergasse 37, KG Weinhaus",
+      "latitude": 48.228034,
+      "longitude": 16.334585,
+      "baumkataster": null,
+      "why_not_yet": "Checked this pass (verify session, 2026-08-22): Naturdenkmal Nr. 581, protection date 28.03.1974, described as a healthy tree with a 70 cm stem diameter at breast height, three-stemmed above 3 m. Unlike the Ebner-Eschenbach-Park pine 130 m away (shipped this pass as vie_030), the location text is a plain street number with no park reference, and de.wikipedia.org's own entry gives no accessibility note either way. Left unverified: address alone does not establish this is inside the public park versus a private plot fronting Klostergasse."
+    },
+    {
+      "register_id": 3257958,
+      "name": "Ginkgo, Tuerkenschanzstrasse 46 (with 3257959, Riesenmammutbaum, same address)",
+      "species": "Ginkgo biloba / Sequoiadendron giganteum",
+      "place": "18., Tuerkenschanzstrasse 46",
+      "latitude": 48.23316,
+      "longitude": 16.33668,
+      "baumkataster": null,
+      "why_not_yet": "Naturdenkmal Nr. 817 (verify session, 2026-08-22): register and wien.gv.at both give only the street address, no park reference. Search found no positive evidence of public access (not a known institution or park frontage); the street sits near the Vienna Observatory (Sternwarte) and a seniors' residence but neither is confirmed as this specific number. Left unverified per hard rule 10."
+    },
+    {
+      "register_id": 3257378,
+      "name": "Schwarzkiefer, Ebner-Eschenbach-Park",
+      "species": "Pinus nigra",
+      "place": "18., Klostergasse, Ebner-Eschenbach-Park",
+      "latitude": 48.226892,
+      "longitude": 16.334663,
+      "baumkataster": null,
+      "why_not_yet": "RESOLVED (verify pass, 2026-08-22): verified and delivered to data/research/vienna-verified.json as vie_030. Kept here for traceability."
+    },
+    {
+      "register_id": 3257960,
+      "name": "Traubeneiche, Prater - Belvedereallee",
+      "species": "Quercus petraea",
+      "place": "2., Prater - Belvedereallee",
+      "latitude": 48.192401,
+      "longitude": 16.428753,
+      "baumkataster": null,
+      "why_not_yet": "RESOLVED (verify pass, 2026-08-22): verified and delivered to data/research/vienna-verified.json as vie_031. Kept here for traceability."
     }
   ],
   "blocked": [
@@ -630,6 +670,27 @@
       "longitude": 16.301375,
       "baumkataster": null,
       "reason": "BLOCKED, verify pass 2026-08-09 (depth pass, Schönbrunn cluster): Naturdenkmal Nr. 179. Anonym, 'Verzeichnis der Wiener Naturdenkmale (Fortsetzung)', Natur und Land 1949, Vol. 11, p.201 (https://www.zobodat.at/pdf/nat-land_1949_11_0199-0202.pdf) states explicitly: 'durch Kriegsereignisse vernichtet' (destroyed by war events). The LIVE city Naturdenkmal WFS layer (data.wien.gv.at, ogdwien:NATDENKMALPKTOGD) still carries this register_id as an active designation at this coordinate in 2026, which means the city's own current 'official' register contains at least one stale entry for a tree confirmed destroyed 80+ years ago, unless it was replanted and nobody has updated the record either way. No modern source (searched this pass) confirms a living tree at this spot today. Never ship without a dated modern confirmation (photo, observation, Bundesgärten record) that a Sophora japonica genuinely stands here now. Worth flagging generally: a Naturdenkmal register_id existing in the live layer is not by itself proof of life, contrary to how it reads at a glance. Its two neighbours 12-30m away (Stieleiche ND180, Eibe ND181) carry no such destruction note in the same 1949 document and were verified and delivered this pass as vie_021 and vie_022."
+    },
+    {
+      "register_id": null,
+      "name": "Four Platanus entries, Meiereistrasse 3 (Prater/Krieau)",
+      "species": "Platanus (unspecified)",
+      "place": "2., Meiereistrasse 3",
+      "reason": "Naturdenkmal Nr. 853 (de.wikipedia.org Liste der Naturdenkmaeler in Wien/Leopoldstadt, verify pass 2026-08-22): register text states explicitly the four planes 'konnten sich auf dem Gelaende der Bildhaueratelier gut entwickeln' (developed well on the sculptor studios' grounds), i.e. private institutional/studio land, not public Prater parkland despite the Meiereistrasse/Prater address. Never ship; do not re-research."
+    },
+    {
+      "register_id": null,
+      "name": "Winterlinde, Paulinengasse 9",
+      "species": "Tilia cordata",
+      "place": "18., Paulinengasse 9",
+      "reason": "Naturdenkmal Nr. 100 (de.wikipedia.org Liste der Naturdenkmaeler in Wien/Waehring, verify pass 2026-08-22): location given as 'Innenhof des Lindenhofes', an internal courtyard, private. Never ship; do not re-research."
+    },
+    {
+      "register_id": 3257608,
+      "name": "Baumhasel, Koehlergasse 20",
+      "species": "Corylus colurna",
+      "place": "18., Koehlergasse 20",
+      "reason": "Naturdenkmal Nr. 622 (de.wikipedia.org Liste der Naturdenkmaeler in Wien/Waehring, verify pass 2026-08-22): location given as 'im Garten hinter dem Gebaeude' (in the garden behind the building), private. Never ship; do not re-research."
     }
   ]
 }
