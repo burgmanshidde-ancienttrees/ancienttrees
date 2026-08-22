@@ -1,0 +1,31 @@
+{
+ "_note": "Japanese overlay for Kyoto, written 2026-08-22 from data/cities/kyoto.json. Text only: every coordinate, photo, licence, age range and best_time stays in the English source file. COUNTING NOTE for the checker: Japanese does not put spaces between words, so a whitespace-token word count returns 1 for a whole paragraph. Counted in CHARACTERS instead, on the convention agreed with the brief: intro 150-250 characters (the equivalent of the 60-100 word rule), each story 350-600 characters (the equivalent of 150-250 words). Titles and meta descriptions are inside the English character caps as written. Temples and shrines take their Japanese names (善峯寺, 金閣寺, 宝泉院, 西本願寺, 新熊野神社, 醍醐寺三宝院, 上賀茂神社, 梨木神社, 護王神社, 京都御苑), never a romanisation. Search terms follow Japanese usage rather than a literal translation of 'ancient trees': 巨樹, 巨木, 古木, 名木, 天然記念物 (Natural Monument). Judgement calls and English-source problems are recorded in the pass report; the ones that changed a word here are the 1857 namer of the 遊龍松, the Keihoku forest name, the 伏状台杉 romanisation, the 'Chinkapin oak' in kyo_016's name, and the 1877 court-departure date in kyo_015.",
+ "city": "京都",
+ "title": "京都の巨木と名木18選：1160年に植えられた新熊野神社の大樟から",
+ "meta_description": "京都の古木は、寺の庭と神社の境内に立っている。将軍の盆栽から育った樹齢600年の松、1160年に上皇の命で植えられた楠、そのほか16本を、場所と行き方とともに紹介します。",
+ "intro": "京都の名木は、一本きりで立っていることがほとんどない。寺の庭や神社の境内に育ち、生きた松を建物と同じくらい真剣に扱ってきた僧、庭師、将軍たちの手で、何百年もかたちを与えられてきた。一本は、地面に植えられる前は将軍の盆栽だった。ある楠は1160年に上皇の命で植えられ、その人夫たちが植えた場所でいまも育っている。ここにあるのは野生の生き残りではなく、手をかけて育てられた記念物である。例外は御所を囲む塀の公園、京都御苑で、塀の内と外に9本が育ち、それぞれ約1キロの二つのまとまりとして歩いて回れる。",
+ "question_title": "京都で最も古い木は？新熊野神社の樹齢866年の大樟",
+ "question_meta": "京都で植えた年が記録に残る最も古い木は、1160年に上皇の命で植えられた樹齢866年の楠。その物語と正確な場所、そしてほかに17本の名木を紹介します。",
+ "question_answer": "京都で植えた年が記録に残る最も古い木は、新熊野神社の大樟で、1160年に後白河上皇の命によって植えられた。上皇は和歌山の熊野の社からこの木を運ばせたと伝えられている。樹齢はおよそ866年で、いまも東山区にある神社の境内に育ち、泉涌寺道のバス停から徒歩2分のところに立っている。",
+ "question_context": "新熊野神社の楠には、古木がめったに持てない植栽年がある。1160年、後白河上皇が和歌山の熊野の社を勧請してこの神社を創建した年であり、そのときにこの木も北へ運ばせたと伝えられている。クスノキは日本の暖かい地方に自生する木で、内陸の京都よりも熊野の海沿いのほうが分布に合う。つまりこの木そのものが、あとから付けられた伝説というだけではなく、移植の話を支えるささやかな証拠になっている。以来、幹回り6.58メートル、東西23.5メートルに枝を広げる大きさに育った。クスノキは日本の広葉樹のなかでも長命な部類だが、それでもこの大きさになるには何世紀もかかる。市の北西の山には、もっと古いという主張もある。片波川の源流にある樹齢1200年とされる杉で、平安京の御所の用材を出した同じ森につながる木である。ただしその樹齢は確かめるのが難しく、訪ねるには京都市への事前の申し込みが要る。だからこの問いには、記録の残る楠のほうが答えになる。新熊野神社への行き方は、京都駅から京阪バスで泉涌寺道へ、そこから徒歩2分。",
+ "faq": [
+  {
+   "q": "京都で最も古い木はどれですか。",
+   "a": "新熊野神社の楠です。1160年に後白河上皇の命で植えられ、和歌山の熊野の社から移されたと伝えられています。市の北西の山にはさらに古い樹齢1200年とされる杉がありますが、そちらは確かめるのが難しく、この楠のほうは植えた年が記録に残っています。"
+  },
+  {
+   "q": "京都で古い木を見るのに一番よい場所はどこですか。",
+   "a": "旧御所を囲む公園、京都御苑です。このリストの7本が塀の内側に育ち、さらに2本がそのすぐ外に立っていて、それぞれ約1キロの二回の散歩で回れます。一度の午後に何本もまとめて見られるのは、市内ではここだけです。ほかの木は今も信仰の場である寺社に点々と散らばっていて、金閣寺、善峯寺、醍醐寺、西本願寺がそれぞれ1本を持っています。"
+  },
+  {
+   "q": "京都の名木は無料で見られますか。",
+   "a": "多くは無料です。18本のうち13本は、京都御苑、梨木神社、護王神社、西本願寺、新熊野神社、上賀茂神社、円山公園という無料の境内や公園に立っています。4本は拝観料のかかる寺の中にありますが、それは木のための料金ではなく通常の拝観料です。片波川源流の杉は、京都市への事前の申し込みとガイドの同行が要ります。"
+  },
+  {
+   "q": "京都の名木のなかに、盆栽から育ったものはありますか。",
+   "a": "あります。金閣寺の舟のかたちの松は、14世紀に将軍足利義満が鉢で育てていた盆栽から育ったと伝えられています。のちに地面に植えられ、いまの帆船のかたちに仕立てられました。"
+  }
+ ],
+ "strings_note": "Per-tree fields: name, species (Japanese common name, same Latin binomial), age_estimate, access, transport, story. Stories run 350-600 Japanese characters, the equivalent of the English 150-250 word bar. No em dashes anywhere.",
+ "trees": {}
+}
