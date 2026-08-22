@@ -160,9 +160,28 @@ Citation counts included so the strongest hook goes first.
 
 One short email each, in the local language where you can, saying what the site
 is, that we have written about their trees or used their data, and that we link
-to them. Ask whether they would like to look. Do not ask for a link in the first
-email: the page itself is the ask, and an organisation that likes it will link
-without being told to.
+to them. Ask whether they would like to look.
+
+**The no-link-ask rule is WITHDRAWN (Hidde, 2026-08-22).** This paragraph used
+to end: "Do not ask for a link in the first email: the page itself is the ask,
+and an organisation that likes it will link without being told to." That was a
+theory, it has now been tested for a fortnight over 106 mails and 17 replies,
+and the number of organisations that linked without being told to is ZERO. His
+question was the right one: "is het misschien handig om toch maar zo vrij te
+zijn om te vragen." It is.
+
+What matters is the framing, and it is not a favour for us. The line goes in
+last, after the personal question, conditional, and it asks on behalf of the
+TREES rather than the site: "en als je de site de moeite waard vindt, een
+vermelding op jullie website zou enorm helpen om deze bomen onder de aandacht
+te brengen." Every recipient on this list exists to get trees noticed, so that
+is a reason rather than a request.
+
+The honest cost, written down so it can be checked rather than assumed: batch
+005 earned a 12 percent reply rate WITHOUT this line, and batch 006 carries it.
+If replies fall, the line is why, and `scripts/outreach_stats.py` will show it
+per batch. Forty mails at a 12 percent base rate is roughly five replies, so a
+drop of one or two proves nothing either way; only a collapse would.
 
 Rough order of value: 3a first (we have the strongest, most flattering hook and
 a page to show), then 3b and 3f, then 3c, then 3e, then 3d.
