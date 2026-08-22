@@ -13,6 +13,67 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-08-22
+
+Reviewed since the last review commit (`316d086`, 2026-08-21 07:10 UTC): 133
+commits, spanning a night of research (Nijmegen 8 to 11 trees, its oldest
+tree now the Kabouterboom at Beek), a large session on the contributor-reply
+loop and account-gated feedback (web + iOS), several homepage shelf
+additions (countries, species, parks, oldest-trees, all from Hidde's own
+session), three self-inflicted night-run outage fixes, and the usual
+digest/queue/photo-sweep churn. Ran `python3 scripts/qa.py` (2370 pages,
+clean), `python3 scripts/superlatives.py` (432 claims, no collisions) and
+`python3 scripts/health.py` (rung 2 clear, no BLOCKER, REVIEW.md's
+2026-08-21 WARN already answered by `537a9ec`, see below).
+
+**WARN — Hidde's personal Gmail address is committed in plain text in
+`CURATION.md:16`, the only place in the repo it appears.** Commit
+`8a81a3a` ("Process submissions 11-36...") resolved a Supabase `user_id` to
+an email via `/auth/v1/admin/users` to work out whose test clicks a batch of
+26 feedback rows were, and wrote the resolved address straight into the
+entry: "all from one `user_id` that resolves to burgmans.hidde@gmail.com."
+PRINCIPLES.md #10 is explicit and does not carve out an exception for
+internal files: "no personal name, no personal location..., no personal
+email, no photo, no social links, **anywhere public**: site copy, schema,
+privacy page, commit identities, **artifacts**." A committed markdown file
+is an artifact under that rule's own list, and this repo's remote is
+`github.com/burgmanshidde-ancienttrees/ancienttrees`, a name that already
+identifies the owner, which makes leaking the address alongside it a real
+rather than theoretical exposure. The identification itself (working out
+that the burst was Hidde's own QA rather than a reader) was good, careful
+work and the right call not to treat it as feedback; only the verbatim
+address in a committed file is the problem. FOR HIDDE: whether the address
+should be scrubbed from git history is his call (rewriting history is the
+kind of irreversible-in-public action hard rule 3 and the mandate's
+question-3 test both flag); a run should not do this unprompted. Any run can
+safely fix the forward-looking half now: redact the address in CURATION.md
+to "his own account" or similar, the way `f36b0c9`'s note already does it
+right ("the address is his own").
+
+**NOTE — the built homepage no longer matches the order PRODUCT_IA.md
+documents, and nothing supersedes that section.** "The homepage, reordered"
+still reads: (1) hero, (2) the four verbs as sections, (3) *one* opinionated
+shelf, (4) the compact explore directory. The built `site/dist/index.html`
+now runs hero -> "Our favourite tree cities" shelf -> the four verbs
+(`home-acts`) -> Countries shelf -> Species shelf -> Parks shelf -> "The
+oldest trees we map" shelf -> the directory: a curated shelf ahead of the
+verbs, and four shelves after them rather than one. This looks like
+deliberate, reviewed work rather than drift: the commits (`b303b5e`,
+`7b0034e`, `0530ba8`, `901e547`, `238e27a`, `34bfc5e`) are Hidde's own
+session, one of them opens with him spotting a repeated photo across
+shelves and fixing it on the spot, which is exactly the pixel-level
+composition check PRINCIPLES.md #11 asks for. So this reads as a real
+direction change that the document simply was not updated to record, not a
+build defect. Worth a line in PRODUCT_IA.md's homepage section the next time
+that file is touched, so a future run does not read the stale five-year
+version as current.
+
+Nothing else found at BLOCKER or WARN. Not a Monday, so no scheduled
+corpus-rot audit this entry; the NOTE above surfaced during the general read
+rather than a sweep.
+
+---
+
 ## 2026-08-21
 
 Reviewed since the last review commit (`16adc7d`, 2026-08-20 07:08 UTC): 161
