@@ -57,40 +57,33 @@ struct SpotSheet: View {
     private var nearbyTrees: [Tree] { Self.nearby(origin: origin, trees: catalogue.trees) }
 
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 16) {
-                HStack {
-                    Spacer()
-                    Button { dismiss() } label: {
-                        Image(systemName: "xmark")
-                            .font(.system(size: 13, weight: .semibold))
-                            .foregroundStyle(Brand.inkSoft)
-                            .frame(width: 30, height: 30)
-                            .background(Brand.surfaceMuted, in: .circle)
-                            // The circle stays 30 points; the finger gets 44.
-                            .frame(width: 44, height: 44)
-                            .contentShape(.rect)
+        VStack(alignment: .leading, spacing: 0) {
+            closeRow
+            // The INTRO fills the sheet so its one action can sit at the
+            // bottom where a thumb already is, which is what Airbnb does with
+            // every sheet that asks for something. Everything after it is a
+            // form or a list, so those scroll.
+            if intro && mode == .add {
+                AddIntro(onStart: { intro = false; adding = true })
+                    .padding(.horizontal, 20)
+                    .padding(.bottom, 24)
+            } else {
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 20) {
+                        if let t = ticked {
+                            tickedState(t)
+                        } else if sent == true {
+                            sentState
+                        } else if mode == .collect && !adding {
+                            if nearbyTrees.isEmpty { noTreeNearby } else { tickList }
+                        } else {
+                            addForm
+                        }
                     }
-                    .accessibilityLabel("Close")
-                    .accessibilityIdentifier("spot-close")
-                }
-                .padding(.bottom, -26)
-                if let t = ticked {
-                    tickedState(t)
-                } else if sent == true {
-                    sentState
-                } else if intro && mode == .add {
-                    AddIntro(onStart: { intro = false; adding = true })
-                } else if mode == .collect && !adding {
-                    if nearbyTrees.isEmpty { noTreeNearby } else { tickList }
-                } else if adding || nearbyTrees.isEmpty {
-                    addForm
-                } else {
-                    tickList
+                    .padding(.horizontal, 20).padding(.bottom, 32)
+                    .frame(maxWidth: .infinity, alignment: .leading)
                 }
             }
-            .padding(20)
-            .frame(maxWidth: .infinity, alignment: .leading)
         }
         .brandGround()
         .accessibilityElement(children: .contain)
@@ -103,6 +96,26 @@ struct SpotSheet: View {
         .sheet(isPresented: $signingIn) {
             SignInSheet(reason: .feedback, localCount: saved.savedCount)
         }
+    }
+
+    private var closeRow: some View {
+        HStack {
+            Spacer()
+            Button { dismiss() } label: {
+                Image(systemName: "xmark")
+                    .font(.system(size: 13, weight: .semibold))
+                    .foregroundStyle(Brand.inkSoft)
+                    .frame(width: 30, height: 30)
+                    .background(Brand.surfaceMuted, in: .circle)
+                    // The circle stays 30 points; the finger gets 44.
+                    .frame(width: 44, height: 44)
+                    .contentShape(.rect)
+            }
+            .accessibilityLabel("Close")
+            .accessibilityIdentifier("spot-close")
+        }
+        .padding(.horizontal, 12)
+        .padding(.top, 4)
     }
 
     // MARK: - Tick a tree we map
