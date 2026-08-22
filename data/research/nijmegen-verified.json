@@ -47,5 +47,29 @@
   "location_precision": "confirmed",
   "curation_status": "flagged",
   "verify_notes": "LRMB register nr 1680530, 'Beverboom Park Leeuwenstein, Nijmegen', status 3/monumentaal, reason 'dendrologisch' (registered for being a dendrologically notable specimen rather than for age or civic history), single tree (n_trees=1), tree-level coordinates, planted_band 1880-1890, owner gemeente, visitable=ja, visible=onbekend. Park Leeuwenstein is the surviving garden of the demolished Villa Leeuwenstein (built mid-19th century, demolished 1958 in a dilapidated state), a small park known for exotic specimen trees planted alongside the villa in the second half of the 19th century. SPECIES CAUTION: 'beverboom' is the generic old Dutch name once used for the Magnolia genus and specifically for Magnolia virginiana ('de enige echte beverboom', per a directly-fetched dendrology-society article, dendrologie.nl); a WebSearch AI summary (not independently verified by fetching the source page, so treated as a lead per the search-summary rule) suggested the register entry might correspond to a Magnolia acuminata (Komkommermagnolia) that monumentaltrees.com separately lists for this park, but the directly-fetched dendrology source does NOT confirm 'beverboom' is used for M. acuminata, so that identification is NOT treated as established. A directly-fetched local-history blog post (woneninnijmegen.blog, dated 2023-08-16) lists a 'Komkommermagnolia' among the park's current special trees, present tense, as of August 2023, distinct from '2 grootste bomen' (2 largest trees) it says were lost in recent years (see the blocked mammoetboom entry, same park). This is corroborating but NOT a location-matched confirmation that the blog's Komkommermagnolia and the register's coordinate-pinned Beverboom are the same individual specimen; both are magnolias in the same small park but the match is inferential. DELIVERED FLAGGED rather than dropped to leads because there is no evidence against the tree (unlike its neighbour, no death signal found for this one), the register gives a genuine tree-level pin, and BRIEF_RESEARCH.md's rule is to deliver thin-but-not-contradicted alive-evidence flagged rather than withhold it. Age: register planted_band 1880-1890 is the only age evidence; no growth-rate/girth basis available (no girth recorded). Page should ask the reader to confirm the exact species (photograph of the flower would settle it: M. acuminata flowers are greenish-yellow and appear after leaves in late spring; M. virginiana flowers are creamy-white and fragrant in early summer). monumentaltrees.com itself could not be fetched to check (403 to both curl with browser UA and WebFetch, matches the known blocklist pattern for this host; no Wayback snapshot exists for its Park Leeuwenstein pages, checked via the archive.org availability API, empty result)."
+ },
+ {
+  "id": "nij_014",
+  "name": "The Pastorie Chestnut of Lent",
+  "species": "Horse Chestnut (Aesculus hippocastanum)",
+  "age_estimate": "roughly 130 years",
+  "age_min": 126,
+  "age_max": 136,
+  "girth_cm": null,
+  "location": {
+   "address": "Plein voor de kerk, Pastoor van Laakstraat, Lent",
+   "latitude": 51.861172,
+   "longitude": 5.864418,
+   "neighbourhood": "Lent, Nijmegen-Noord"
+  },
+  "verified_sources": [
+   "LRMB register nr 1689531 (data/registers/netherlands-lrmb.json)",
+   "https://www.monumenten.nl/monument/522954"
+  ],
+  "access": "Free, on the public square in front of the Onze Lieve Vrouw Geboorte parish church, open at all times (register: owner_category religieuze instantie, visitable=ja, visible=ja)",
+  "transport": "Nijmegen Lent railway station (Griftdijk Noord), about an 8 minute walk (roughly 600m)",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "LRMB register nr 1689531, 'Witte paardenkastanje', single tree (n_trees=1), tree-level coordinates, planted_band 1890-1900, place 'Voor de RK pastorie, Pastoor van Laakstraat 44, Lent', status 3/monumentaal, reason monumentaal, owner_category religieuze instantie, visitable=ja, visible=ja. Independently confirmed by the Rijksdienst voor het Cultureel Erfgoed's own Rijksmonument description of the parish complex (monumenten.nl/monument/522954, church 'Onze Lieve Vrouw Geboorte', Pastoor van Laakstraat 42, Lent, built 1877-1879 to a design by architect G. te Riele Wzn., fetched directly): 'Voor de kerk bevindt zich een plein met oude kastanjeboom. Aan de noordzijde van het plein staat de pastorie' (In front of the church is a square with an old chestnut tree; the rectory stands on the north side of the square). This is a genuine tree-level match, not an inferential one: the heritage description names a single old chestnut on this specific named square, matching the register's singular entry and coordinate exactly. The same text appears verbatim on the companion listing for the adjoining calvary/mortuary building (monument nr 522955), which shares the same complex description. Age: no plaque or planting record found beyond the register's own planted_band (1890-1900), so age_min/age_max are that band aged to 2026 (126 to 136 years); age_estimate stated as a broad round figure rather than a precise one. No girth found in any source checked. Species: register omits a formal species field but names 'Witte paardenkastanje' (white/horse chestnut, Aesculus hippocastanum) directly, and the Rijksmonument text's generic 'kastanjeboom' does not contradict it. The square itself sits directly beside the A325 motorway (the heritage text notes the road runs parallel to the church facade), so the setting is a working village square rather than a quiet enclosure, worth a line in the story rather than a reason for caution."
  }
 ]

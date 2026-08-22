@@ -59,6 +59,23 @@ Magnolia, but whether this specimen is Magnolia virginiana or the
 Magnolia acuminata a 2023 local survey lists for the same park was not
 settled this pass.
 
+**Third pass, same session: Nijmegen 13 to 14.** Two new stops, both
+previously unrepresented: Hees (a church square about 3km west of the
+centre) and Lent (Nijmegen-Noord, across the Waal, annexed by the city
+in 1998).
+
+**Shipped: nij_014, The Pastorie Chestnut of Lent** (Horse Chestnut,
+Aesculus hippocastanum). A genuine tree-level match: the national heritage
+register's own listing for the parish complex names "an old chestnut tree"
+on the specific square the LRMB register also pins by coordinate, not an
+inferential join. Not flagged.
+
+Hees's church-square beech and plane (Schependomlaan/Korte Bredestraat)
+went to leads: the square itself is confirmed by local history, but no
+source names either individual tree, and monumentaltrees.com's own page
+for this exact spot 403'd on every fetch attempt. Two more hangs added to
+the blocklist: reliwiki.nl and Nijmegen's own municipal tree WFS endpoint.
+
 Released the Brisbane claim the earlier attempt left standing (558 unnamed
 "significant landscape trees" candidates, no names to work from yet, not
 today's priority per scout_next). Salzburg's claim belongs to a separate,

@@ -205,6 +205,18 @@
    "seen": "2026-08-20",
    "cost": "a pin-containment check on 24 New York and Washington trees, abandoned",
    "workaround": "send a User-Agent, keep to one query every few seconds, and treat Overpass as scarce rather than looping over it. Nominatim took the same pace without complaint once a User-Agent was set."
+  },
+  "reliwiki.nl": {
+   "behaviour": "hangs past the TCP/TLS connect, no response at all (curl -m 20 -A browser-UA, exit 28 both times)",
+   "seen": "2026-08-22",
+   "cost": "two attempts during a Nijmegen deepen verify pass (candidate church page reliwiki.nl/index.php/Nijmegen,_Dennenstraat_125_-_Antonius_Abt), zero content returned",
+   "workaround": "unknown this pass; the Rijksmonument description at kennis.cultureelerfgoed.nl and the parish's own history page at mariakapelvinden.nl both loaded fine and covered the same church"
+  },
+  "services.nijmegen.nl": {
+   "behaviour": "TLS handshake completes, then hangs with no HTTP response (curl -m 20, exit 28 on a plain GetFeature request and exit 2 on a count-limited retry, both burning the full 20s)",
+   "seen": "2026-08-22",
+   "cost": "two attempts trying to reach the municipality's own monumental-tree WFS layer (typeName extern_kaartviewer_GRN_BOMEN_MON) during a Nijmegen deepen verify pass, which would have been a genuinely independent second source distinct from the national LRMB register",
+   "workaround": "unknown this pass; opendata.nijmegen.nl's dataset landing page (opendata.nijmegen.nl/dataset/geoserver-bomen-nijmegen) itself was not tried directly and may serve a static CSV export instead of the live WFS endpoint, worth trying first next time"
   }
  }
 }
