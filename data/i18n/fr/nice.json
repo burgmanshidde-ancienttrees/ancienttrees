@@ -1,0 +1,31 @@
+{
+ "_note": "Overlay français de Nice, écrit à la main le 2026-08-22. Traduction de rendu, pas de recherche : chaque fait, âge, espèce et note d'accès vient de data/cities/nice.json et y reste vérifié, réserves comprises. Le vocabulaire suit celui que lit un Niçois sur un panneau municipal, arbres remarquables, circonférence du tronc, houppier, plutôt qu'un calque de l'anglais, et les lieux gardent leurs noms d'ici, Cimiez, colline du Château, jardin Albert Ier. Texte seul : coordonnées, photos, licences et parcours restent dans le fichier anglais.",
+ "city": "Nice",
+ "title": "Arbres remarquables de Nice : les 10 plus beaux",
+ "meta_description": "Les plus vieux arbres de Nice sont des oliviers séculaires sur une colline : l'oliveraie de Cimiez, l'arbre de Matisse et le premier palmier de France.",
+ "intro": "Les plus vieux arbres de Nice sont presque tous des oliviers, et presque tous sur la même colline. Cimiez, le quartier romain au-dessus du vieux Nice, est jardiné depuis l'arrivée des franciscains en 1546, et il en reste une oliveraie que l'on compte en siècles, dont un arbre ombrage la tombe de Matisse. Ailleurs, l'histoire est plus récente et plus volontaire : un jardin public planté en 1851, une promenade bordée de palmiers dès 1862, une forêt replantée à la main sur un versant mis à nu. Nice a fait pousser ses espaces verts exprès, à l'époque des premières photographies.",
+ "question_title": "Quel est le plus vieil arbre de Nice ? (Cimiez)",
+ "question_meta": "Les plus vieux arbres de Nice sont les oliviers du monastère de Cimiez, plus de 400 ans. Leur histoire, où les voir, et neuf autres arbres remarquables.",
+ "question_answer": "Les plus vieux arbres documentés de Nice sont les oliviers du jardin du monastère de Cimiez, dont certains sont estimés individuellement à plus de 400 ans, dans un jardin clos dont le plan en damier n'a pas changé depuis que les franciscains l'ont tracé en s'installant sur la colline en 1546. Aucun arbre n'y a d'âge mesuré individuellement : le chiffre vient de l'estimation générale de l'oliveraie et non d'un sujet nommé.",
+ "question_context": "Nice détonne dans cette collection par la jeunesse de la plupart de ses arbres remarquables : la ville de villégiature moderne date presque entièrement du milieu du XIXe siècle, quand la Promenade des Anglais, le jardin Albert Ier et les versants boisés autour de la baie ont été dessinés à quelques décennies d'intervalle. L'oliveraie de Cimiez fait donc figure d'exception nette : un jardin dont le plan en damier n'a pas changé depuis les années 1540, planté d'oliviers dont l'âge exact n'a jamais été relevé individuellement, mais que les sources locales situent à quatre siècles et au-delà pour certains sujets, soit des décennies de plus que tout ce qu'a produit l'essor balnéaire du XIXe siècle. Le jardin est gratuit, il fait face aux arènes romaines et au monastère de Cimiez, et il jouxte le cimetière où Matisse est enterré sous un olivier à lui. Comptez vingt minutes de montée à pied depuis le centre de Nice, ou un court trajet en bus.",
+ "faq": [
+  {
+   "q": "Quel est le plus vieil arbre de Nice ?",
+   "a": "Les oliviers du jardin du monastère de Cimiez, dont certains sont estimés individuellement à plus de 400 ans, dans un jardin dont le plan n'a pas changé depuis l'installation des franciscains en 1546. Aucun arbre n'y a d'âge mesuré séparément."
+  },
+  {
+   "q": "Où Henri Matisse est-il enterré à Nice ?",
+   "a": "Sur un terrain attenant au cimetière du monastère de Cimiez, sous un vieil olivier, à quelques minutes à pied du musée Matisse. La tombe est simple et se visite librement, en même temps que le cimetière."
+  },
+  {
+   "q": "Les arbres remarquables de Nice sont-ils gratuits ?",
+   "a": "Presque tous. Neuf des dix se trouvent dans des parcs, des jardins ou des rues publics et gratuits. Le Château de Crémat, domaine viticole en activité, fait payer ses visites guidées ; l'oliveraie et le jardin du monastère de Cimiez sont gratuits toute l'année."
+  },
+  {
+   "q": "Pourquoi y a-t-il autant de palmiers à Nice ?",
+   "a": "C'est un choix délibéré du XIXe siècle. Les palmiers sont mis en terre le long de la Promenade des Anglais à partir de 1862 comme arbres d'ombrage à croissance rapide, et on attribue au parc Vigier la première acclimatation du palmier des Canaries en France, en 1864, une espèce qui a ensuite gagné toute la Côte d'Azur."
+  }
+ ],
+ "strings_note": "Champs par arbre : name, species (nom français courant, même latin), age_estimate, access, transport, story. Histoires de 150 à 250 mots, même exigence que l'anglais, aucun tiret cadratin.",
+ "trees": {}
+}

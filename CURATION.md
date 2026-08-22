@@ -10,6 +10,48 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-22 (evening) - The Vienna duplicate was invisible, and 17 URLs are missing a letter
+
+**The vie_024 / vie_028 duplicate is resolved, and it turned out to cost
+nothing.** Both entries carried the identical name "The Plane of Alser
+Strasse", and `treeSlugsForCity` derives a slug from the NAME, so the two
+collided on one URL and only one of them ever rendered. Checked against the
+live site: `/vienna/plane-of-alser-strae` serves vie_028's story, and vie_024
+has never had a page at all. So retiring vie_024 moved no published URL and
+hard rule 3 never applied; the staging note from this morning was written
+before anyone looked at what the slug function actually does. Removed from the
+city file and from the German overlay. Vienna is 30 trees.
+
+**Finding it exposed a bigger one. `slugify` silently drops any character
+NFKD cannot decompose, and German ß is one of them.** The function normalises
+to NFKD, strips combining marks, then strips everything non-ASCII. Scandinavian
+å and ö survive that, because NFKD splits them into a letter plus a mark. ß has
+no decomposition, so it is simply deleted, and "Strasse" becomes "strae".
+
+17 live tree URLs are affected: Munich 11, Reykjavik 3, Vienna 2, Copenhagen 1.
+
+    munich/norway-maple-of-herrnstrae     should be  ...herrnstrasse
+    vienna/cemetery-plane-of-singerstrae  should be  ...singerstrasse
+    reykjavik/whitebeam-of-vikurgarur     should be  ...vikurgardur   (eth)
+    reykjavik/spruce-of-elliaarholmi      should be  ...ellidaarholmi (eth)
+
+The fix is four lines, a transliteration table applied before normalising:
+ss for ß, o for ø, ae for æ, oe for œ, l for ł, d for ð and đ, th for þ. Polish
+ł has no live victims yet and will the moment a Wrocław street name reaches a
+tree.
+
+**Not applied here, deliberately, and this time hard rule 3 really does
+apply**: unlike the duplicate, these URLs exist, are in the sitemap and are
+what Google has indexed. Changing them needs redirects, and the redirect
+machinery that exists (`RENAMED_CITY_SLUGS` in site/src/lib/redirect-map.ts)
+covers CITY slugs, not tree slugs. So this is a small feature plus a data
+migration, not a four-line patch, and it deserves its own session rather than
+the tail of a long one.
+
+Worth doing though: "leinthalerstrae" is not a word in any language, nobody
+searches it, and it reads as a broken page to a German speaker, which is the
+audience the German pages were just built for.
+
 ## 2026-08-22 (later) - Reader-facing fields were carrying notes we wrote to ourselves
 
 The Palermo translation pass found it, and it is the most embarrassing thing

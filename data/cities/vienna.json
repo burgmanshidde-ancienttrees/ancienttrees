@@ -837,35 +837,6 @@
       }
     },
     {
-      "id": "vie_024",
-      "name": "The Plane of Alser Straße",
-      "species": "London Plane (Platanus x acerifolia)",
-      "age_estimate": "about 130 years",
-      "age_min": 125,
-      "age_max": 135,
-      "location": {
-        "address": "Alser Straße, 1090 Wien",
-        "latitude": 48.215321,
-        "longitude": 16.346265,
-        "neighbourhood": "Alsergrund, 9th district"
-      },
-      "story": "The hospital this tree was planted outside is not a hospital any more. The plane went in on Alser Strasse in 1894, facing the Allgemeines Krankenhaus that Joseph II had opened in 1784 as a general hospital for the poor of an entire city, a radical thing at the time. The AKH moved to a new building in 1994 and the old site became a university campus, with lecture rooms and courtyard cafes where the wards had been. The plane stayed on the pavement.\n\nIt measures three metres fifteen at chest height and is protected as a Naturdenkmal. Vienna records it twice, in the monument register and in the tree cadastre, and the cadastre is where the planting year comes from. Two municipal datasets are not two independent sources, so everything known about this tree rests on what the city itself wrote down.\n\nFor two centuries Alser Strasse was the road of the sick and of the people who studied them. Its traffic was ambulances, funerals, anatomy students and cheap lodgings, and the plane has stood through the last hundred and thirty years of it from a strip of pavement between a tram line and a row of nineteenth-century apartment blocks. Those are conditions that finish most street trees inside forty years. This one has now outlived the working life of the institution it was planted to shade.",
-      "verified_sources": [
-        "data/registers/wien-naturdenkmale.json (register_id 3257866, Naturdenkmal, data.wien.gv.at WFS ogdwien:NATDENKMALPKTOGD, CC BY 3.0 AT)",
-        "Wien Baumkataster (baum_id 126884, planted 1894, girth 315cm at breast height, data.wien.gv.at, CC BY 3.0 AT)"
-      ],
-      "access": "Free, on a public street",
-      "transport": "On Alser Straße in Alsergrund; tram 5 or 33, or U6 Michelbeuern-AKH, short walk",
-      "location_precision": "confirmed",
-      "curation_status": "flagged",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      }
-    },
-    {
       "id": "vie_025",
       "name": "The Oak of Grimmelshausengasse",
       "species": "Pedunculate Oak (Quercus robur)",

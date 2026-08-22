@@ -1,0 +1,31 @@
+{
+ "_note": "Deutsches Overlay für Berlin, von Hand geschrieben 2026-08-22. Nur Text: Koordinaten, Fotos, Lizenzen, best_time und Spaziergänge bleiben in data/cities/berlin.json. Suchbegriffe folgen dem, was in Berlin tatsächlich gesucht wird: 'alte Bäume Berlin', 'Naturdenkmal Berlin', dazu die amtliche Kategorie der Stadt, das Naturdenkmal.",
+ "city": "Berlin",
+ "title": "Alte Bäume in Berlin: 18 Naturdenkmäler",
+ "meta_description": "Berlins alte Bäume: von der umstrittenen Dicken Marie im Tegeler Forst bis zur Sumpfzypresse aus Louisiana im preußischen Schlossgarten. Meist kostenlos.",
+ "intro": "Berlin schützt rund 600 einzelne Bäume als Naturdenkmal, und die meisten davon sind Eichen: Stieleichen, gepflanzt von Förstern, Fürsten und Demonstranten, über vier Jahrhunderte hinweg, in einer Stadt, die mehr als einmal belagert, bombardiert und geteilt wurde. Im Tegeler Forst und dem angrenzenden Schlosspark stehen die beiden Rekordhalter der Hauptstadt, der älteste und der dickste Baum. Der Rest reicht von einer Sumpfzypresse aus Louisiana in einem preußischen Schlossgarten bis zu einer Eiche, die aus politischem Protest gegen genau den Kaiser beschädigt wurde, dem zu Ehren sie gepflanzt worden war. Die meisten sind kostenlos zu sehen.",
+ "question_title": "Was ist der älteste Baum Berlins? (500 bis 900 Jahre)",
+ "question_meta": "Berlins ältester Baum ist eine Eiche im Tegeler Forst, deren Alter zwischen 500 und 900 Jahren umstritten ist. Wo sie steht, und weitere Naturdenkmäler.",
+ "question_answer": "Berlins ältester Baum ist die Dicke Marie, eine Stieleiche im Tegeler Forst, deren Alter ernsthaft umstritten ist: Die Berliner Forstverwaltung schätzt 800 bis 900 Jahre, während das Nationalerbe-Bäume-Gremium der Deutschen Dendrologischen Gesellschaft sie 2021 auf vorsichtigere 500 bis 600 Jahre datierte. Sie steht am Uferweg nahe dem Tegeler Hafen, 12 bis 15 Gehminuten vom U-Bahnhof Alt-Tegel entfernt.",
+ "question_context": "Zwei glaubwürdige Quellen liegen beim Alter der Dicken Marie mehrere Jahrhunderte auseinander, was selbst für einen so alten Baum ungewöhnlich ist. Die Berliner Forstverwaltung nennt seit langem 800 bis 900 Jahre. Das Nationalerbe-Bäume-Gremium der Deutschen Dendrologischen Gesellschaft bewertete den Baum 2021 neu und hielt 500 bis 600 Jahre für besser belegbar, weil die Fäule im Inneren eine genaue Datierung in beide Richtungen unmöglich macht. Diese Seite nennt beide Zahlen, statt die eindrucksvollere auszuwählen. Unstrittig ist, wer den Baum benannt hat: Die Brüder Alexander und Wilhelm von Humboldt sollen ihn um 1800 nach der Köchin der Familie benannt haben, während sie in der Nähe auf Schloss Tegel den Sommer verbrachten, und der Spitzname hielt sich über zwei Jahrhunderte. Am 9. Juli 2021 wurde die Dicke Marie als erster Waldbaum Deutschlands zum Nationalerbe-Baum ernannt. Sie steht im Tegeler Forst an der nordöstlichen Spitze des Tegeler Sees, zu Fuß erreichbar vom U-Bahnhof Alt-Tegel über die Hafenbrücke und den Uferweg. Ein kurzes Stück weiter, im Schlosspark Tegel, steht die Humboldteiche, eine jüngere, aber deutlich dickere Eiche, die manchmal mit der Rekordhalterin verwechselt wird. Die beiden sind Nachbarn, nicht derselbe Baum.",
+ "faq": [
+  {
+   "q": "Was ist der älteste Baum Berlins?",
+   "a": "Die Dicke Marie, eine Stieleiche im Tegeler Forst. Ihr Alter ist umstritten: Die Forstverwaltung der Stadt schätzt 800 bis 900 Jahre, eine Nationalerbe-Bewertung von 2021 kam auf vorsichtigere 500 bis 600 Jahre."
+  },
+  {
+   "q": "Sind Berlins alte Bäume kostenlos zu besichtigen?",
+   "a": "Die meisten sind ohne Ticket zu sehen. Zwei Orte kosten Eintritt: die Treskow-Platane, die im Tierpark Berlin steht und ein Zooticket verlangt, und die vier Eichen auf der Pfaueninsel, die nur über eine kurze, kostenpflichtige Kettenfähre erreichbar sind (6 Euro, Stand April 2026), weil die Insel autofrei ist. Ein fünfter Baum in diesem Gebiet, eine Platane an der Fähranlegestelle, steht auf der freien Festlandseite und braucht überhaupt kein Ticket."
+  },
+  {
+   "q": "Was ist ein Berliner Naturdenkmal?",
+   "a": "Ein rechtlich geschütztes Naturdenkmal, eine Ausweisung, die Berlin seit 1939 verwendet (mit einer umfassenden Neufassung der Verordnung 2021), für rund 600 einzeln registrierte Bäume und dazu einige Findlinge, ausgewählt nach Alter, Größe, Seltenheit oder historischer Bedeutung."
+  },
+  {
+   "q": "Warum sind so viele geschützte Bäume Berlins Eichen?",
+   "a": "Die Stieleiche ist die häufigste Art auf Berlins Naturdenkmalliste, vor Platane, Kastanie und Rotbuche. Eichen kommen mit dem sandigen brandenburgischen Boden besser zurecht als die meisten großen Bäume und waren jahrhundertelang die Standardwahl für königliche Förster, Gutsbesitzer und städtische Planer gleichermaßen."
+  }
+ ],
+ "strings_note": "Felder pro Baum: name, species (deutscher Artname, gleiche lateinische Bezeichnung), age_estimate, access, transport, story. Stories 150-250 Wörter, gleiche Messlatte wie im Englischen, keine Gedankenstriche.",
+ "trees": {}
+}
