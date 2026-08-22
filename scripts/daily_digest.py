@@ -312,6 +312,56 @@ def demand_lines(pages, pairs=None):
     return out
 
 
+def pages_table(pages):
+    """Every page that got a click, and the same totals split by page TYPE.
+
+    Hidde, 2026-08-22: "mag ik de totale lijst van meest geklikte pagina's zien
+    en moeten we meer tijd stoppen in bv de specifieke boom pagina's die veel
+    worden bezocht." The digest printed five pages, which cannot answer either
+    half. The type split is the half that decides work: if the clicks arrive on
+    city pages, the work is more cities; if they arrive on individual tree
+    pages, the work is deeper trees, and the two are nearly opposite.
+    """
+    if not pages:
+        return ""
+    def path(r):
+        return r["keys"][0].replace("https://ancienttrees.app", "") or "/"
+    def kind(p):
+        parts = [x for x in p.strip("/").split("/") if x]
+        if not parts:
+            return "home"
+        if parts[0] in ("collections", "species", "parks", "cities", "countries"):
+            return parts[0]
+        if parts[0] in ("explore", "app", "account", "contribute", "in-season", "press", "privacy", "saved"):
+            return "product"
+        if parts[0] == "es":
+            parts = parts[1:]
+            if not parts:
+                return "es index"
+        if len(parts) >= 2:
+            return "tree page" if parts[1] != "oldest-tree" else "question page"
+        return "city page"
+    clicked = [r for r in pages if r["clicks"] > 0]
+    clicked.sort(key=lambda r: (-r["clicks"], -r["impressions"]))
+    rows = ["", "**Every page that got a click** (10 days)", "",
+            "| Page | Clicks | Impressions | CTR | Position |",
+            "|---|---:|---:|---:|---:|"]
+    for r in clicked:
+        rows.append("| %s | %d | %d | %.1f%% | %.1f |" % (
+            path(r), r["clicks"], r["impressions"], 100 * r["ctr"], r["position"]))
+    agg = {}
+    for r in pages:
+        k = kind(path(r))
+        a = agg.setdefault(k, [0, 0, 0])
+        a[0] += r["clicks"]; a[1] += r["impressions"]; a[2] += 1
+    rows += ["", "**And the same clicks by page type**", "",
+             "| Type | Pages seen | Clicks | Impressions | CTR |",
+             "|---|---:|---:|---:|---:|"]
+    for k, (c, i, n) in sorted(agg.items(), key=lambda x: -x[1][0]):
+        rows.append("| %s | %d | %d | %d | %.1f%% |" % (k, n, c, i, 100.0 * c / i if i else 0))
+    return "\n".join(rows)
+
+
 def gsc_section(gsc):
     if gsc is None:
         return ("Search Console: GSC_* secrets not configured; section skipped.", None)
@@ -372,6 +422,7 @@ def gsc_section(gsc):
         "%s" % trend,
         "- Top queries (10d): " + "; ".join(
             "%s (i%d, p%.0f)" % (clean_query(r["keys"][0]), r["impressions"], r["position"]) for r in queries) if queries else "- Top queries: none",
+        pages_table(pages),
         "- Top pages (10d): " + "; ".join(
             "%s (c%d/i%d)" % (r["keys"][0].replace("https://ancienttrees.app", ""), r["clicks"], r["impressions"]) for r in pages[:5]) if pages else "- Top pages: none",
         gap_line,
