@@ -1,0 +1,72 @@
+{
+ "_note": "Spanish overlay for Cadiz, hand-written 2026-08-22, second step of the Spanish expansion. Cadiz is a Spanish city with 24 impressions over ten days on five trees, so it is cheap; more to the point its whole story is a Spanish one, an Atlantic trading port that filled its public gardens with whatever its merchants brought home. Text only: coordinates, photos, licences and walks stay in data/cities/cadiz.json.",
+ "city": "Cádiz",
+ "title": "Árboles singulares de Cádiz: cinco llegados de ultramar",
+ "meta_description": "Los árboles más notables de Cádiz: un ficus indio plantado en memoria de una monja, el último drago de la ciudad y el pohutukawa más viejo de Europa.",
+ "intro": "Cádiz pasó siglos siendo puerto de comercio con América y con Oriente, y sus jardines públicos todavía se leen como un manifiesto de carga: un ficus de la India, un drago de Canarias, un pohutukawa de Nueva Zelanda, un ombú de la pampa argentina, un palo borracho de Brasil. Casi nada de esta lista es autóctono de España. La mayoría se concentra en dos jardines decimonónicos construidos precisamente para lucir esa clase de curiosidad importada, uno frente al mar y otro tierra adentro.",
+ "question_title": "¿Cuál es el árbol más antiguo de Cádiz? (de 1903)",
+ "question_meta": "El árbol más antiguo documentado de Cádiz es un ficus de 1903 en la Alameda Apodaca; el drago del Parque Genovés podría ser mayor.",
+ "question_answer": "El árbol más antiguo de Cádiz con fecha de plantación documentada es el Ficus macrophylla de la Alameda Apodaca, plantado en 1903 en el paseo marítimo. El drago del Parque Genovés podría ser más viejo, con estimaciones de entre 100 y 200 años, pero no hay ningún registro de plantación que confirme una fecha exacta.",
+ "question_context": "Los árboles notables de Cádiz vienen casi todos de su historia como puerto de comercio, y no de ningún bosque autóctono. El ficus de la Alameda Apodaca, plantado en 1903, es el que tiene la fecha más precisa de esta lista, ligada a una leyenda local sobre unas monjas misioneras que trajeron los plantones desde la India. El Parque Genovés, jardín decimonónico levantado tierra adentro para exhibir importaciones botánicas, guarda otros cuatro candidatos: un drago cuya edad está realmente en disputa, entre 100 y 200 años, porque la ciudad perdió en 2013 su drago más viejo y mejor datado en el derrumbe de un temporal; un pohutukawa descrito como el ejemplar documentado más antiguo de su especie en Europa; un ombú cuyo tronco hinchado de agua no se puede datar por anillos de crecimiento; y un palo borracho sudamericano. Otros dos plantones de aquella misma plantación de 1903 siguen en pie junto al antiguo Hospital de Mora, a media ciudad de sus gemelos de la Alameda, compartiendo el mismo apodo discutido, los Ficus Gemelos. Todos son de acceso libre.",
+ "faq": [
+  {
+   "q": "¿Cuál es el árbol más antiguo de Cádiz?",
+   "a": "El Ficus macrophylla de la Alameda Apodaca, plantado en 1903 en el paseo marítimo. El drago del Parque Genovés podría ser aún más viejo, con una estimación de entre 100 y 200 años, pero sin fecha de plantación documentada."
+  },
+  {
+   "q": "¿Por qué tantos árboles de Cádiz no son autóctonos de España?",
+   "a": "Cádiz fue durante siglos uno de los grandes puertos atlánticos de España, y sus jardines públicos del siglo XIX se construyeron precisamente para exhibir las especies exóticas que comerciantes y viajeros traían de vuelta: un drago de Canarias, un pohutukawa de Nueva Zelanda, un ombú de Argentina, un ficus de la India."
+  },
+  {
+   "q": "¿Qué le pasó al otro drago famoso de Cádiz?",
+   "a": "El Drago del Tinte, que crecía en una antigua escuela de artes y oficios en otro punto de la ciudad, se desplomó en un temporal en abril de 2013. El drago del Parque Genovés es desde entonces el único de cierta edad que queda en pie en Cádiz."
+  },
+  {
+   "q": "¿Se pueden ver gratis los árboles singulares de Cádiz?",
+   "a": "Sí, todos están en jardines públicos de acceso libre: la Alameda Apodaca frente al mar y el Parque Genovés tierra adentro, abiertos a diario y sin entrada."
+  }
+ ],
+ "strings_note": "Per-tree fields: name, species (Spanish common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes.",
+ "trees": {
+  "cad_001": {
+   "name": "El ficus de la Alameda Apodaca",
+   "species": "Ficus de Moreton Bay (Ficus macrophylla)",
+   "age_estimate": "unos 123 años",
+   "access": "Libre, jardín público junto al mar",
+   "transport": "10 minutos a pie desde la estación de tren de Cádiz",
+   "story": "Cuatro plantones de ficus traídos de la India por unas monjas misioneras son el origen que se cuenta de este árbol y de sus tres hermanos repartidos por Cádiz. Una de las monjas murió durante la travesía y fue atendida en sus últimos días en el Hospital de Mora de la ciudad; las hermanas que sobrevivieron plantaron los plantones como recuerdo, dos aquí en la Alameda frente al mar y otros dos junto al antiguo hospital. Plantado en 1903, más de dos décadas antes de que la reforma regionalista de Juan Talavera y Heredia diera a la Alameda su aspecto actual, el árbol ha acabado pareciendo más una arboleda pequeña que un solo tronco: sus ramas bajas echan raíces aéreas que engordan hasta convertirse en troncos nuevos sobre la terraza de mármol donde se levanta. Los gaditanos llaman a veces Ficus Gemelos a la pareja, aunque décadas de crecimiento desigual han dejado uno visiblemente mayor que el otro. El viento atlántico castiga a un árbol tan ancho y tan expuesto, y su madera tiene fama local de quebradiza cuando entra un temporal por la bahía. Ninguno se ha venido abajo todavía."
+  },
+  "cad_002": {
+   "name": "El drago del Parque Genovés",
+   "species": "Drago (Dracaena draco)",
+   "age_estimate": "entre 100 y 200 años, realmente en disputa",
+   "access": "Libre, parque público",
+   "transport": "15 minutos a pie desde la estación de tren de Cádiz, entrada por la avenida Doctor Gómez Ulla",
+   "story": "Cádiz tenía dos dragos famosos, y un temporal se llevó al que no debía. El Drago del Tinte, que crecía en una antigua escuela de artes y oficios en otro punto de la ciudad, se desplomó en abril de 2013 y dejó a este ejemplar del Parque Genovés como el único drago de cierta edad que queda en pie en la ciudad. Las estimaciones sobre su edad varían mucho: el propio servicio de parques municipal lo llama simplemente centenario, mientras que las guías locales llegan a los doscientos años, y ningún registro de plantación zanja la cuestión. Lo que sí es seguro es la forma: un tronco gris y achaparrado que solo se ramifica cuando florece, algo que en Dracaena draco puede tardar décadas, y que le da a este ejemplar la silueta de paraguas que a la mayoría de los dragos le cuesta una vida entera ganarse. Crece cerca de la entrada norte del parque, un jardín trazado en el siglo XIX precisamente para exhibir importaciones exóticas de la vieja red comercial española. La especie es canaria y macaronésica, no gaditana, y su savia se embotelló durante siglos por toda Europa como sangre de drago, tinte y remedio para heridas."
+  },
+  "cad_003": {
+   "name": "El pohutukawa del Parque Genovés",
+   "species": "Pohutukawa (Metrosideros excelsa)",
+   "age_estimate": "más de un siglo, sin fecha de plantación documentada",
+   "access": "Libre, parque público",
+   "transport": "15 minutos a pie desde la estación de tren de Cádiz, entrada por la avenida Doctor Gómez Ulla",
+   "story": "Un árbol del otro extremo del planeta tiñe de rojo un rincón de Cádiz cada principio de verano. Este Metrosideros excelsa, un pohutukawa de la costa neozelandesa, florece en mayo y junio con una masa de flores rojas tan constante que en Nueva Zelanda llaman a la especie su árbol de Navidad, siete meses a destiempo del verano austral. Fuentes españolas e internacionales lo describen como el pohutukawa documentado más antiguo de Europa, de más de cien años, y como padre de los esquejes que han ido sembrando la especie por jardines de todo el continente. El ayuntamiento no quiso arriesgarse después de que perdiera una rama en un temporal de invierno: el servicio de parques encargó a una empresa especializada un resistógrafo y una tomografía sónica del tronco, le instaló después una estructura de apoyo, y el planeamiento municipal lo protege hoy como ejemplar de valor patrimonial. Crece con varios troncos desde la base, una forma que a primera vista parece más arbusto que árbol hasta que el grosor de cada brazo corrige la impresión. El Parque Genovés le da compañía: un drago, un ombú y un palo borracho comparten el mismo jardín, cada uno de un continente distinto y ninguno autóctono."
+  },
+  "cad_004": {
+   "name": "El ombú del Parque Genovés",
+   "species": "Ombú (Phytolacca dioica)",
+   "age_estimate": "sin datar, no se puede fechar por anillos de crecimiento",
+   "access": "Libre, parque público",
+   "transport": "15 minutos a pie desde la estación de tren de Cádiz, entrada por la avenida Doctor Gómez Ulla",
+   "story": "A este árbol no se le puede calcular la edad por el método habitual, porque no forma los anillos anuales que permiten datar un tronco. Phytolacca dioica, el ombú, es técnicamente una planta herbácea que se comporta como un árbol: su tronco no está hinchado de madera sino de tejido de reserva de agua, tan blando que, a diferencia de casi todo lo demás en este parque, no se puede aserrar ni datar por una sección. Lo que sí puede decir el servicio de parques de Cádiz es que lleva en el Parque Genovés el tiempo suficiente para alcanzar unos cinco metros y medio de perímetro y casi quince de altura, una mole gris y esponjosa que parece vertida más que crecida. Originario de la pampa de Argentina, Uruguay y el sur de Brasil, el ombú se hizo fijo en los jardines españoles igual que las palmeras o los eucaliptos en otros sitios, traído por una ciudad comerciante que pasó siglos llenando sus espacios públicos con lo que creciera bien en un clima parecido en cualquier otro punto del mundo hispánico. Su propio volumen hace el trabajo que otros árboles hacen con la historia: a nadie hay que explicarle que este es viejo, basta con enseñarle el tronco."
+  },
+  "cad_005": {
+   "name": "El palo borracho del Parque Genovés",
+   "species": "Palo borracho (Ceiba speciosa)",
+   "age_estimate": "sin datar",
+   "access": "Libre, parque público",
+   "transport": "15 minutos a pie desde la estación de tren de Cádiz, entrada por la avenida Doctor Gómez Ulla",
+   "story": "Su nombre lo explica todo en cuanto uno mira el tronco. Ceiba speciosa, el palo borracho, viene de Argentina, Paraguay y el sur de Brasil, y engorda su tronco en forma de botella hasta los dos metros de diámetro, cubierto de las espinas cónicas que en su tierra disuaden a los animales de trepar en busca de agua durante la estación seca. El ejemplar gaditano crece en el Parque Genovés, escondido detrás de la cafetería del parque, junto a la fuente con estatua: una rareza sudamericana plantada al lado de un drago, un pohutukawa y un ombú en un jardín decimonónico levantado precisamente para lucir esa clase de curiosidad importada. Como sus vecinos, no conserva ningún registro de plantación que lo date con precisión, y solo el perímetro del tronco sirve de indicio de su edad. Cuando florece, normalmente hacia el otoño, las flores salen en tonos que van del rosa al blanco, y por unos días es lo más vistoso de un parque que por lo demás se lee como un estudio de cortezas raras y siluetas todavía más raras. Entrada libre, en una ciudad cuyos comerciantes del siglo XIX llenaron los jardines públicos con ejemplares de cada puerto con el que negociaron."
+  }
+ }
+}
