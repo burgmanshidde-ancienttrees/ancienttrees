@@ -1,0 +1,27 @@
+[
+ {
+  "id": "nij_012",
+  "name": "The Wilhelminaboom of Hertogplein",
+  "species": "Lime (Tilia sp.)",
+  "age_estimate": "disputed, see verify_notes",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "location": {
+   "address": "Hertogplein, Nijmegen-Centrum",
+   "latitude": 51.844498,
+   "longitude": 5.868484,
+   "neighbourhood": "Centrum"
+  },
+  "verified_sources": [
+   "https://nl.wikipedia.org/wiki/Hertogplein",
+   "https://woneninnijmegen.blog/2025/04/04/wilhelminaboom/",
+   "LRMB register nr 1681246 (data/registers/netherlands-lrmb.json)"
+  ],
+  "access": "Free, a public square in the city centre, open at all times",
+  "transport": "Nijmegen Centraal station, about a 15 minute walk (roughly 970m in a straight line)",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "A koninginneboom (queen's tree): a lime planted 1 September 1898 to mark Wilhelmina's coronation as Queen of the Netherlands on 6 September 1898, as the centrepiece of Nijmegen's Kroningsfeesten that year. Architect Derk Semmelink designed the ornamental wrought-iron fence around the tree (with small crowns) and, separately, the adjoining Nutsschool building (demolished 1968); the fence still stands on the square today. During the German occupation the crowns were removed from the fence; on 24 July 1948 new crowns, made by students of the Nijmegen ambachtsschool (trade school), were installed with public ceremony. SOURCE CONFLICT, delivered rather than resolved: Dutch Wikipedia's Hertogplein article states plainly 'De oude linde heeft plaatsgemaakt voor een andere boom' (the old lime has made way for another tree), i.e. the tree standing today is a replacement of unstated date, not the 1898 original. The local-history blog woneninnijmegen.blog (2025-04-04, sourced partly from De Gelderlander 1898 archives) makes no mention of any replacement and describes the tree as still standing, without saying explicitly whether it is the same physical specimen. The LRMB register's own planted_band for this entry is 1880-1890, which predates the 1898 planting date both other sources give for the coronation tree, a further inconsistency the register does not explain (register bands are rough estimates, not always tree-specific plaques). Net effect: do not state an age with confidence. The remarkable and verifiable thing about this tree is the 128-year-old civic story around it (the coronation planting, the crown fence, its wartime and postwar restoration), not a specific ring count. Species: no source names the exact Tilia species/cultivar; register's species field is blank. Worth a page question asking a reader with local knowledge whether this is verifiably the 1898 original or its successor."
+ }
+]
