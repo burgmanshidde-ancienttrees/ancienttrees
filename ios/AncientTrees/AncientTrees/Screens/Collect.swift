@@ -68,7 +68,7 @@ struct CollectView: View {
 
     var body: some View {
         ScrollView {
-            LazyVStack(alignment: .leading, spacing: 22) {
+            LazyVStack(alignment: .leading, spacing: 28) {
                 HStack(alignment: .firstTextBaseline) {
                     Text("Collect")
                         .font(.screenTitle)
@@ -91,31 +91,18 @@ struct CollectView: View {
                 .padding(.top, 4)
 
                 // The verb lives with the collection, not in the centre of
-                // the bar. That button ADDS a tree we do not have; this one
-                // claims one we do (Hidde, 2026-08-22).
-                Button { navigator.collectNearby = true } label: {
-                    HStack { Spacer()
-                        Label("Collect a tree by photographing it", systemImage: "camera")
-                            .font(.brand(16, .bold))
-                        Spacer() }
-                        .padding(.vertical, 15)
-                        .background(Brand.moss, in: .capsule)
-                        .foregroundStyle(.white)
+                // the bar: that button ADDS a tree we do not have, this one
+                // claims one we do (Hidde, 2026-08-22). One primary control,
+                // the app's own style, with air around it rather than a
+                // paragraph underneath explaining a button whose own words
+                // already say what it does.
+                Button("Collect a tree by photographing it") {
+                    navigator.collectNearby = true
                 }
-                .buttonStyle(.plain)
+                .buttonStyle(BrandButtonStyle())
                 .accessibilityIdentifier("collect-a-tree")
+                .padding(.bottom, 4)
 
-                Text("Stand in front of a tree we map, photograph it, and it is yours. Trees you add yourself live here too.")
-                    .font(.footnote).foregroundStyle(Brand.inkSoft)
-                    .fixedSize(horizontal: false, vertical: true)
-
-                // Day zero opens with a MISSION, not with the score. Four
-                // zeros and eighteen grey ghosts were Hidde's own evidence
-                // that the app leads with what you do not have ("Collect is
-                // vier nullen plus achttien grijze spookjes"); the shape-of-
-                // the-grid argument in stampCard's comment below holds once
-                // there is one stamp in it, so the score renders from the
-                // first tick, never before.
                 if allVisited.isEmpty {
                     mission
                 } else {
@@ -162,7 +149,7 @@ struct CollectView: View {
                 }
                 Color.clear.frame(height: 80)
             }
-            .padding(.horizontal, 16).padding(.top, 6)
+            .padding(.horizontal, 20).padding(.top, 8)
         }
         .brandGround()
         // No literal tab-label heading; the mission or the score leads.
@@ -354,15 +341,13 @@ struct CollectView: View {
                 }
                 .buttonStyle(.plain)
                 NavigationLink(value: Route.tree(t.id)) {
-                    HStack { Spacer()
-                        Label("Show the way", systemImage: "arrow.turn.up.right")
-                            .font(.brand(17, .bold))
-                        Spacer() }
-                        .padding(.vertical, 15)
-                        .background(Brand.moss, in: .rect(cornerRadius: 15))
-                        .foregroundStyle(.white)
+                    Label("Show the way", systemImage: "arrow.turn.up.right")
                 }
-                .buttonStyle(.plain)
+                // SECONDARY, because the filled green control on this screen
+                // is the one that collects. AllTrails colours exactly one
+                // thing per screen and this app's own style rule says the
+                // same; two green pills was the screen shouting twice.
+                .buttonStyle(BrandButtonStyle(prominent: false))
             }
             .accessibilityElement(children: .contain)
             .accessibilityIdentifier("collect-mission")
