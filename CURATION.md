@@ -10,6 +10,12 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-22 (session, continued) - Vienna 28 to 31: Rathauspark's third plane, past its 30 target
+
+Three trees, all confirmed-public: vie_029 completes Rathauspark's three-plane 1973 protection set (an earlier pass held it back as "padding"; it is the third of a designation that already exists as a trio, not a fourth plane added for its own sake). vie_030 (Black Pine, Ebner-Eschenbach-Park) and vie_031 (Sessile Oak, Prater/Belvedereallee) both needed checking against several genuinely private neighbours in the same register clusters (Wahring courtyard trees, Meiereistrasse sculptor's-studio planes) before shipping; those stayed blocked with sourced reasons in data/leads/vienna.json. Fixed two stale count promises preflight caught (meta_description "Twenty-eight", question_meta "twenty-six more"). Walk now 10.6 km (up from 10.1, still multiple clusters across a large city, each cluster itself tight). Vienna is now 1 over its 30 target, which CLAUDE.md treats as normal, not padding, since nothing was added to hit a number.
+
+## 2026-08-22 (session, continued) - Haarlem 9 to 13: the Statenbolwerk stretch of De Bolwerken, one storm-felled beech found and blocked
+
 ## 2026-08-22 (session, continued) - Haarlem 9 to 13: the Statenbolwerk stretch of De Bolwerken, one storm-felled beech found and blocked
 
 A verify pass tightened Haarlem's existing Kenaupark cluster rather than widening the walk: four new trees (haa_010 to haa_013) all sit 220-375 m from the nearest existing tree, in the Statenbolwerk section of De Bolwerken, the older (1828) Zocher-designed green ring the Kenaupark cluster (1865) sits inside. A ginkgo added to the lawn in the 1910s, an oak pair marking a path entrance (species left honestly undetermined, robur or petraea, since the register does not say), a four-beech ensemble, and a Caucasian wingnut in a private villa garden shipped as view-only per hard rule 10 (visible from the public footpath, register itself marks it visitable/visible, access line says plainly what a visitor does and does not get).
