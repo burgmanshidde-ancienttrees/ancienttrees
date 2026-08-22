@@ -27,5 +27,86 @@
   }
  ],
  "strings_note": "Champs par arbre : name, species (nom français courant, même latin), age_estimate, access, transport, story. Histoires de 150 à 250 mots, même exigence que l'anglais, aucun tiret cadratin.",
- "trees": {}
+ "trees": {
+  "nce_001": {
+   "name": "L'oliveraie du jardin du monastère de Cimiez",
+   "species": "Olivier (Olea europaea)",
+   "age_estimate": "non daté, certains sujets estimés à plus de 400 ans",
+   "access": "Gratuit, ouvert tous les jours",
+   "transport": "Bus 15, 17, 20, 22, arrêt Monastère de Cimiez",
+   "story": "Des moines franciscains atteignent cette colline au-dessus de Nice en 1546 et y tracent un potager-verger en damier, selon les règles de plantation monastiques d'Albert le Grand, un plan qui, fait rare, n'a pas bougé depuis. Ce qui y pousse aujourd'hui, des milliers d'oliviers répartis entre le jardin du monastère et le jardin des Arènes voisin, comprend des sujets que les sources locales donnent à plus de quatre cents ans. Aucun arbre n'y a jamais eu son âge mesuré ni consigné séparément : le chiffre décrit l'oliveraie et non un arbre nommé. Le jardin jouxte directement les ruines d'un amphithéâtre romain du premier siècle, si bien que l'on se tient parmi des arbres plantés sous l'Ancien Régime en regardant des pierres qui les précèdent d'un millénaire et demi. L'entrée a toujours été gratuite, et l'oliveraie tient aujourd'hui autant du salon public que du jardin historique : on y pique-nique, on y peint et on y fait du yoga, sous des arbres qui étaient déjà vieux du temps où les franciscains ayant planté leurs ancêtres soignaient encore la colline."
+  },
+  "nce_002": {
+   "name": "L'olivier de Matisse",
+   "species": "Olivier (Olea europaea)",
+   "age_estimate": "non daté, décrit comme vieux",
+   "access": "Gratuit, ouvert tous les jours",
+   "transport": "Bus 15, 17, 20, 22, arrêt Monastère de Cimiez",
+   "story": "Henri Matisse a passé ses dernières années à quelques minutes de cette colline et a demandé à y être enterré, sous un arbre plutôt que dans un mausolée. On l'y met en terre en 1954, sur un terrain attenant au cimetière du monastère de Cimiez, où reposent aussi le peintre Raoul Dufy et le prix Nobel Roger Martin du Gard, mais sur une parcelle qui faisait partie de sa propre propriété, sous un olivier que les visiteurs décrivent invariablement comme vieux et non comme planté pour l'occasion. Aucune source ne lui donne d'âge individuel : tout chiffre avancé ici est une estimation grossière et non un fait documenté. Sa présence cadre pourtant avec le reste de la colline de Cimiez, où les oliviers de plusieurs siècles sont la règle plutôt que l'exception. La tombe elle-même est d'une simplicité célèbre, une dalle de pierre claire pour Matisse et sa femme, contraste voulu avec les monuments ouvragés du XIXe et du début du XXe siècle qui remplissent le cimetière juste à côté. Elle reste librement visitable, par le même chemin que le cimetière, le musée Matisse se trouvant quelques minutes plus loin."
+  },
+  "nce_003": {
+   "name": "Les arbres fondateurs du jardin Albert Ier",
+   "species": "Espèces variées (jardin public du XIXe siècle)",
+   "age_estimate": "non daté, jardin planté en 1851 et 1852",
+   "access": "Gratuit, jardin public",
+   "transport": "5 min à pied de l'arrêt de tram Masséna",
+   "story": "Ce jardin a commencé en marécage, avec un nom qui l'avouait : le Prato de la Fous, le pré des fous, terrain spongieux à l'embouchure du Paillon dont personne n'avait trouvé quoi faire. Un chantier de drainage et d'aménagement lancé en 1829 donne au site sa première forme, puis la ville dresse en 1851 une liste de plantation précise, 70 marronniers, 60 ormes, 40 tilleuls, 30 acacias et 24 mimosas parmi d'autres, avant de niveler et de planter le terrain en 1852. Le jardin a depuis changé de nom aussi souvent que de mode, jardin Paradis, jardin des Plantes, jardin des Palmiers, avant de prendre son nom actuel en 1914, en hommage à la résistance du roi des Belges face à l'Allemagne. Dix platanes se tiennent aujourd'hui dans ce mélange, aux côtés des descendants de la liste d'espèces de 1851, mais aucun arbre n'y porte d'âge mesuré : tout chiffre reste une estimation tirée de la fondation du jardin et non un relevé. C'est l'un des plus vieux jardins publics de Nice entretenus sans interruption, à quelques pas de l'endroit où le Paillon coulait encore à l'air libre."
+  },
+  "nce_004": {
+   "name": "L'oliveraie et la pinède de la colline du Château",
+   "species": "Espèces variées (parc méditerranéen de colline)",
+   "age_estimate": "non daté, parc créé à partir de 1822",
+   "access": "Gratuit, ouvert tous les jours",
+   "transport": "10 min à pied (ou ascenseur gratuit) depuis le Vieux Nice ou la place Garibaldi",
+   "story": "Pendant l'essentiel de l'histoire de Nice, cette colline a été une forteresse et non un jardin. Une citadelle y surveillait la baie depuis le XIe siècle, jusqu'à ce que les troupes de Louis XIV la démolissent en 1706 plutôt que de la laisser repasser aux mains des Savoyards. Les ruines sont restées à peu près intactes pendant plus d'un siècle avant que la ville ne commence, en 1822, à faire du sommet un parc public, en y plantant pins parasols, oliviers, caroubiers, cyprès, chênes verts, micocouliers et lentisques, sur ce qui forme aujourd'hui 19,3 hectares de jardin méditerranéen et plus de trois kilomètres d'allées. Des oliviers plusieurs fois centenaires comptent parmi les plus vieux sujets qui y poussent, avec des peuplements de pin d'Alep, mais aucune source ne documente l'âge d'un arbre précis du parc : tout chiffre est une estimation tirée de la date de fondation. La montée se suffit d'ailleurs à elle-même : le sommet est le point le plus haut du centre de Nice, avec la baie, la vieille ville et la vallée du Paillon visibles depuis le poste d'observation qu'utilisaient déjà les défenseurs de la citadelle."
+  },
+  "nce_005": {
+   "name": "Les cyprès du cimetière du Château",
+   "species": "Cyprès de Provence (Cupressus sempervirens)",
+   "age_estimate": "non daté, cimetière réorganisé après 1860",
+   "access": "Gratuit, ouvert tous les jours",
+   "transport": "10 min à pied (ou ascenseur gratuit) depuis le Vieux Nice ou la place Garibaldi",
+   "story": "Ce cimetière existe parce que le roi de Sardaigne a jugé en 1783 qu'enterrer les morts dans les chapelles des églises était un risque sanitaire, et en a fait cesser l'usage dans tout son royaume, Nice comprise. La ville a choisi les ruines de la citadelle, sur la colline au-dessus de la vieille ville, et taillé le terrain en terrasses, ces parcelles étagées et régulières que l'on voit encore. Quand Nice est rattachée à la France en 1860, le cimetière est agrandi et réorganisé, un chantier qui a rabattu ou replanté les cyprès du site en même temps qu'il ouvrait de nouvelles allées et montait des murs de soutènement. La plupart des cyprès d'aujourd'hui datent donc probablement de cette période plutôt que de la fondation de 1783, même si aucun arbre ne porte de trace de plantation documentée. Ce qui subsiste compose un décor peu banal : 2 800 tombes en terrasses au-dessus de la baie et du port, à l'ombre de cyprès qui donnent à toute la colline sa silhouette sombre et verticale vue depuis la mer. Le cimetière reste gratuit et ouvert aux visiteurs, comme le parc de la colline du Château qui l'entoure."
+  },
+  "nce_006": {
+   "name": "Les palmiers de la Promenade des Anglais",
+   "species": "Espèces variées (plantation de bord de mer du XIXe siècle)",
+   "age_estimate": "non daté, planté à partir de 1862",
+   "access": "Gratuit, promenade publique",
+   "transport": "Attenant au jardin Albert Ier, arrêt de tram Masséna",
+   "story": "La promenade qui a donné à Nice son image de carte postale a d'abord été plantée pour des raisons pratiques. Dès février 1862, les aménageurs mettent en terre des palmiers, des chênes verts, des caroubiers et des pins maritimes le long du front de mer, révision d'un plan antérieur qui ne prévoyait que des chênes ou des pins espacés de dix mètres. Les palmiers et les arbustes, à croissance plus rapide, ont été ajoutés précisément parce que les piétons avaient besoin d'ombre plus tôt que des chênes ne pouvaient en donner. En 1868, une rangée supplémentaire de palmiers plus grands est installée du côté nord, et la mode des palmiers gagne rapidement les jardins publics et privés de Nice entre 1867 et 1878, au point d'identifier encore la ville aujourd'hui. Aucun palmier de cette plantation d'origine n'est documenté comme toujours debout, et les palmiers niçois ont depuis subi des vagues de maladies répétées : l'âge d'un arbre précis reste donc une estimation et non un relevé attaché à un sujet nommé. La promenade, élargie et refaite bien des fois, suit toujours le même rivage que ces premières plantations devaient ombrager."
+  },
+  "nce_007": {
+   "name": "Les washingtonias de la villa Masséna",
+   "species": "Palmier de Californie (Washingtonia filifera)",
+   "age_estimate": "non daté, jardin ouvert au public en 1921",
+   "access": "Gratuit, jardin public (le musée à l'intérieur a son propre billet)",
+   "transport": "2 min à pied de la Promenade des Anglais, arrêt de tram Masséna",
+   "story": "Le jardin d'hiver d'un prince de la Belle Époque est devenu l'un des espaces publics les plus formels de Nice, presque par accident d'héritage. Le prince Victor d'Essling, descendant du maréchal Masséna, fait bâtir à partir de 1898 sa villa en front de mer dans un style néoclassique inspiré de la villa Rothschild à Cannes, avec un jardin dessiné par le paysagiste Édouard André. Quand son fils cède la propriété à la ville en 1919, il pose une condition : un musée à l'intérieur, et le jardin ouvert au public à l'extérieur. Ce sera chose faite en 1921, et le dessin d'André, organisé autour de trois parterres réguliers sur le côté est avec un Washingtonia filifera à chaque angle, a depuis été restauré conformément à son plan d'origine, que des remaniements plus tardifs avaient brouillé. Aucun palmier n'y porte de date de plantation documentée : tout âge donné est une estimation calée sur la période connue de développement du jardin, entre 1898 et 1921, et non un relevé. Les sujets sont en tout cas assez imposants pour encadrer le parterre exactement comme André l'avait voulu il y a plus d'un siècle."
+  },
+  "nce_008": {
+   "name": "Le premier palmier des Canaries de France",
+   "species": "Palmier des Canaries (Phoenix canariensis)",
+   "age_estimate": "planté en 1864",
+   "access": "Gratuit, ouvert tous les jours",
+   "transport": "10 min à pied depuis le port, ou bus jusqu'à l'arrêt Cyrnos",
+   "story": "Chaque Phoenix canariensis alignant une promenade ou une allée d'hôtel en France remonterait à une seule propriété du port est de Nice. Le baron Georges Vigier y achète en 1863 une villa de style vénitien et engage Jean-Pierre Barillet-Deschamps, jardinier en chef des parcs de Paris, pour aménager 30 000 mètres carrés de terrain en plantes tropicales, fougères arborescentes, bambous, orangeraies, oliveraies et vignes. En 1864, selon la société de sauvegarde du jardin elle-même, Vigier acclimate ici le palmier des Canaries pour la première fois en France. L'affirmation repose sur une source détaillée unique, sans corroboration indépendante, même si l'espèce s'est bien répandue dans les jardins de la Riviera au cours des décennies suivantes, exactement selon le schéma qu'implique cette origine. Vigier a ensuite obtenu un palmier hybride de son cru, le Vigieris, baptisé de son nom. Le domaine a beaucoup rétréci après lui, réduit à un seul hectare quand le parc Vigier actuel ouvre au public en 1971, mais des palmiers y tiennent toujours, dont de rares Livistona australis."
+  },
+  "nce_009": {
+   "name": "La pinède d'Alep du mont Boron",
+   "species": "Pin d'Alep (Pinus halepensis)",
+   "age_estimate": "non daté, reboisement commencé en 1862",
+   "access": "Gratuit, ouvert tous les jours",
+   "transport": "Bus 14 jusqu'à Mont Boron, ou 30 min à pied depuis le port de Nice",
+   "story": "Toute cette forêt existe parce qu'un ingénieur du XIXe siècle a refusé de renoncer devant la roche nue. Quand Nice devient française en 1860, le sommet du mont Boron est une lande, dépouillée de ses arbres par des siècles de pâturage et de coupe. Le forestier Prosper Demontzey, qui deviendra l'une des figures les plus influentes du reboisement de montagne en France, prend le versant en charge en 1862 et commence par semer directement la graine de pin d'Alep dans le sol à découvert. L'échec se répète. Ce qui a fonctionné, c'est de planter de jeunes pins dans des trous profonds préparés à l'avance, méthode coûteuse en main-d'œuvre qui a fini par prendre, et le couvert de pins ainsi installé a ensuite abrité le retour des oliviers et des caroubiers en sous-bois à mesure que la canopée se fermait. La forêt couvre aujourd'hui 57 hectares et onze kilomètres de sentiers balisés, en enveloppant les villas que des figures du Second Empire comme le baron Haussmann ont fait construire sur la colline une fois celle-ci redevenue ombragée et à la mode. Aucun arbre de la plantation initiale de Demontzey n'est identifié comme toujours debout : l'âge donné décrit la campagne de reboisement et non un pin mesuré."
+  },
+  "nce_010": {
+   "name": "L'arbousier du Château de Crémat",
+   "species": "Arbousier (Arbutus unedo)",
+   "age_estimate": "non daté",
+   "access": "Visites guidées du lundi au samedi, de 10h à 17h30, réservation obligatoire sur le site du domaine",
+   "transport": "Voiture conseillée ; collines de Bellet, au nord-ouest de Nice",
+   "story": "Cet arbre pousse sur un domaine viticole dont les propriétaires n'ont cessé de rebâtir la même colline en versions toujours plus grandioses. Antoine Mari achète le terrain sur la colline de Crémat en 1906 et y fait construire un château de style médiéval avec une tour à mâchicoulis, sur l'appellation Bellet, qui produit du raisin sur les collines de l'arrière-pays niçois depuis l'époque romaine. Irène Bretz, riche Américaine qui reprend le domaine en 1923, y ajoute des touches néo-toscanes et développe les jardins alentour : c'est le décor dans lequel se tient cet Arbutus unedo, inscrit avec des coordonnées précises à l'inventaire régional des arbres remarquables des Alpes-Maritimes. L'espèce porte en automne, sur les mêmes rameaux et en même temps, ses fleurs et ses fruits rouges en forme de fraise, ce qui est peu commun chez un persistant méditerranéen. Aucun âge individuel n'est documenté pour ce sujet, au-delà de son classement comme spécimen notable. Le domaine produit toujours un vin de Bellet cultivé en bio et fait visiter sur réservation ses jardins, sa collection d'art et ses caves : c'est l'un des rares arbres de cette liste qui se termine par une dégustation."
+  }
+ }
 }

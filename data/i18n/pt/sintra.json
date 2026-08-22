@@ -1,0 +1,72 @@
+{
+ "_note": "Portuguese overlay for Sintra, hand-written 2026-08-22. European Portuguese, pre-AO spelling as data/i18n/pt/lisbon.json uses it. Rendered from data/cities/sintra.json, which stays the source of truth: every fact, age, hedge and access note here already exists there in verified English, and nothing was researched or sharpened in translation. The search terms are not translations: Portugal's legal category is 'arvores de interesse publico' (ICNF) and people also search 'arvores monumentais de Sintra', so the title, meta and question fields carry those rather than a literal rendering of 'ancient trees'. Text only: every coordinate, photo, licence and walk stays in data/cities/sintra.json.",
+ "city": "Sintra",
+ "title": "Árvores monumentais de Sintra: as 5 mais notáveis",
+ "meta_description": "As cinco árvores mais notáveis de Sintra: um pohutukawa da Nova Zelândia, a árvore que caminha na Pena e um sobreiro de 350 anos a perder a casca.",
+ "intro": "Sintra não faz árvores velhas, colecciona-as. No século XIX, os donos das quintas, atrás da ideia romântica de um retiro na serra, encheram os jardins dos palácios com exemplares trazidos de todos os continentes a que conseguiram chegar: um pohutukawa da Nova Zelândia, uma araucária da ilha de Norfolk, uma tuia do Pacífico que passou século e meio a atravessar o seu próprio relvado. Por baixo desse espectáculo importado, o sobreiro nativo de Sintra, com três séculos e meio, continua à beira de uma estrada pública, a defender-se dos turistas que lhe arrancam a casca para levar como recordação.",
+ "question_title": "Qual é a árvore mais antiga de Sintra? (350 anos)",
+ "question_meta": "A árvore mais antiga de Sintra é a Sobreira dos Fetos, um sobreiro de 350 anos com a casca arrancada por turistas. A sua história e mais quatro árvores.",
+ "question_answer": "A árvore mais antiga de Sintra é a Sobreira dos Fetos, junto à Quinta do Relógio, classificada de interesse público em 1996 e estimada em mais de 300 anos, sendo que o registo florestal português lhe atribui 350. Fica à beira da estrada que sobe para o Palácio de Seteais, visível a partir da via pública.",
+ "question_context": "A protecção formal chegou-lhe décadas antes do problema actual: há guias turísticos que levam agora visitantes até ao tronco para arrancar casca como recordação, o que motivou um apelo público da associação ambientalista GAAS, já que a vedação colocada pelo Estado não trava ninguém. As outras quatro árvores desta lista são todas mais novas e importadas, plantadas um ou dois séculos depois: um pohutukawa da Nova Zelândia e uma araucária da ilha de Norfolk em Monserrate, uma tuia que caminha no parque do Palácio da Pena, que passou século e meio a enraizar visivelmente os próprios ramos no relvado ao lado, e um plátano no parque municipal da vila, classificado em 1951. Nenhuma das importadas chega aos três séculos e meio do sobreiro, porque os jardins dos palácios de Sintra são criações oitocentistas sobrepostas a uma paisagem muito mais antiga. O sobreiro e o plátano são de acesso livre; Monserrate e a Pena cobram o bilhete normal de parque.",
+ "faq": [
+  {
+   "q": "Qual é a árvore mais antiga de Sintra?",
+   "a": "A Sobreira dos Fetos, junto à Quinta do Relógio, classificada em 1996 e estimada em mais de 300 anos, 350 pelo registo do ICNF. Fica à beira da estrada que sobe para o Palácio de Seteais, de acesso livre a partir da via pública."
+  },
+  {
+   "q": "Porque é que o sobreiro de Sintra está a perder a casca?",
+   "a": "Há guias turísticos que passaram a levar grupos até à Sobreira dos Fetos e a incentivá-los a arrancar pedaços de casca como recordação. A associação ambientalista GAAS já disse publicamente que a vedação que o Estado colocou à volta da árvore não trava os estragos."
+  },
+  {
+   "q": "Porque é que a árvore que caminha no Parque da Pena se move?",
+   "a": "Os ramos baixos arqueiam sob o próprio peso, tocam no chão, deitam raízes e engrossam até virarem troncos novos, separados do original. Repetido durante cerca de 150 anos, isto fez a árvore migrar visivelmente vários metros pelo seu canto do parque."
+  },
+  {
+   "q": "As árvores notáveis de Sintra são de acesso livre?",
+   "a": "Duas são: o sobreiro junto à Quinta do Relógio e o plátano do Parque da Liberdade, ambos ao ar livre em espaço público. O pohutukawa e a araucária de Monserrate e a tuia da Pena exigem bilhete pago de parque."
+  }
+ ],
+ "strings_note": "Campos por árvore: name, species (nome comum português, mesmo latim), age_estimate, access, transport, story. Histórias de 150 a 250 palavras, a mesma barra do inglês, sem travessões. As reservas do inglês foram transportadas tal e qual onde a fonte hesita.",
+ "trees": {
+  "sin_001": {
+   "name": "A Árvore que Caminha do Parque da Pena",
+   "species": "Tuia-gigante (Thuja plicata)",
+   "age_estimate": "cerca de 150 anos",
+   "access": "Entrada paga (bilhete do Parque da Pena, integrado no circuito dos palácios da serra)",
+   "transport": "Autocarro 434 (Circuito da Pena) a partir da estação de Sintra, cerca de 15 min",
+   "story": "Esta árvore passou século e meio a mudar-se de sítio. Plantada pouco depois de D. Fernando II ter começado a erguer o seu palácio romântico sobre as ruínas de um mosteiro acima de Sintra, esta tuia-gigante repete o mesmo hábito em cada ramo baixo: em vez de se manter no ar, o ramo arqueia sob o próprio peso, toca no chão, deita raízes e engrossa até virar um tronco novo, inteiramente separado do original. Repita-se isso durante século e meio e o resultado é uma pequena floresta a caminhar, metro a metro, na direcção do lago ali perto, cada geração de troncos uns passos mais à frente do que a anterior. Serve de exemplo a estudantes de silvicultura pelo menos desde 1916, e ainda era suficientemente notável em 2019 para ser candidata à Árvore do Ano em Portugal. O perímetro anda hoje perto dos 17 metros, embora esse número descreva um conjunto de troncos ligados entre si e não uma coluna única, como acontece na maioria das medições. Os guias do próprio Parque da Pena tratam-na apenas por a árvore que caminha, e depois de se ver uma raiz a pousar no chão a meio do arco o nome deixa de soar a metáfora. Fica a poucos minutos a pé da Fonte dos Passarinhos, dentro do parque do Palácio da Pena, um dos sítios mais visitados do país."
+  },
+  "sin_002": {
+   "name": "A Sobreira dos Fetos",
+   "species": "Sobreiro (Quercus suber)",
+   "age_estimate": "mais de 300 anos; o registo português atribui-lhe 350",
+   "access": "Livre, visível a partir da estrada pública; não toque nem retire casca, a árvore está sob pressão de quem leva pedaços como recordação",
+   "transport": "20 min a pé da estação de Sintra, na estrada em direcção ao Palácio de Seteais",
+   "story": "Nascem fetos directamente da casca deste sobreiro, e é daí que lhe vem o nome: Sobreira dos Fetos. Os serviços florestais portugueses classificaram-na de interesse público em 1996 e, nessa altura, já estava há cerca de três séculos à beira da estrada de Seteais, mais velha do que o palácio-hotel a que essa estrada hoje leva. Conta-se que o poeta romântico inglês Robert Southey escreveu que valia a pena um pintor atravessar o canal da Mancha só para a ver, uma frase que sobreviveu a qualquer registo de quando terá sido escrita. O que não desapareceu foi uma atenção mais recente e menos lisonjeira: há guias turísticos que levam grupos até ao tronco para arrancar pedaços de casca como recordação, e a associação ambientalista GAAS já veio dizer publicamente que a vedação colocada pelo Estado à volta da árvore não trava ninguém. A sobreira está em terreno privado, mas mesmo à beira da estrada, visível e ao alcance de quem passa na via pública em vez de ficar atrás de um portão, que é precisamente a razão por que os cortes continuam. É a árvore documentada mais antiga de Sintra, e aquilo que mais provavelmente encurtará esse registo não é a idade. É a próxima pessoa que aparecer com uma navalha."
+  },
+  "sin_003": {
+   "name": "O Plátano do Parque da Liberdade",
+   "species": "Plátano (Platanus x acerifolia)",
+   "age_estimate": "cerca de 150 a 200 anos, as fontes divergem",
+   "access": "Livre, parque municipal público, aberto todos os dias",
+   "transport": "10 min a pé da estação de Sintra",
+   "story": "O parque de Sintra mudou de nome de um dia para o outro e esta árvore não deu por nada. Os serviços portugueses classificaram-na de interesse público em 1951, décadas antes do 25 de Abril de 1974, quando milhares de sintrenses encheram este mesmo jardim municipal para festejar o fim da ditadura e o parque passou a chamar-se Parque da Liberdade, nesse mesmo ano. A árvore, um plátano com quase dez metros de perímetro do tronco na base, já crescia ali há um século, plantada algures entre o início e meados do século XIX, conforme o registo em que se confie: o registo oficial do Estado dá-lhe cerca de 200 anos, enquanto um blogue de história local, a partir das suas próprias medições, aponta antes para uns 150. Qualquer dos números faz dela um dos plátanos mais grossos documentados em Portugal, rivalizado sobretudo por um exemplar privado perto da Figueira da Foz. Por aqui toda a gente lhe chama simplesmente o Plátano Gigante e trata o chão debaixo dela como mais um banco de jardim, à sombra a qualquer hora do dia, por baixo de uma copa que teve século e meio, no mínimo, para se fechar."
+  },
+  "sin_004": {
+   "name": "A Araucária de Monserrate",
+   "species": "Araucária-de-Norfolk (Araucaria heterophylla)",
+   "age_estimate": "cerca de 160 a 180 anos",
+   "access": "Entrada paga (bilhete do Parque e Palácio de Monserrate)",
+   "transport": "Autocarro 435 (Circuito de Monserrate) a partir da estação de Sintra, cerca de 15 min",
+   "story": "A árvore mais alta de um dos jardins mais exóticos de Portugal veio de uma ilha que a maioria dos visitantes não saberia apontar num mapa. Francis Cook, o industrial têxtil inglês que comprou a quinta arruinada de Monserrate em 1856, passou as décadas seguintes a transformar aqueles terrenos num arboreto privado cosido a partir de onde o dinheiro dele chegava: México, Himalaias, Austrália, e esta Araucaria heterophylla, nativa apenas de uma única ilha no mar de Tasman, a ilha de Norfolk, a uns 1600 quilómetros do continente australiano a que costuma ser associada. Plantada na expansão oitocentista de Monserrate, tem hoje mais de 50 metros de altura e uma copa de 22 metros de diâmetro, pela maioria das medições a árvore mais alta de todo o jardim e uma forte candidata à mais alta de Portugal continental. Cresce no ponto mais baixo do parque, ao lado do lago ornamental, de maneira que quem desce por entre as plantações himalaias e mexicanas de Cook a vê erguer-se acima de tudo o resto antes de chegar à água. Cook não viveu para a ver com este tamanho. O que ele construiu foi um jardim feito para continuar a crescer para algo mais estranho do que aquilo que plantou, e esta conífera, sozinha entre tudo o resto em Monserrate, decidiu fazê-lo a direito para cima."
+  },
+  "sin_005": {
+   "name": "O Pohutukawa de Monserrate",
+   "species": "Metrosídero (Metrosideros excelsa)",
+   "age_estimate": "genuinamente incerta, estimada entre 175 e 275 anos",
+   "access": "Entrada paga (bilhete do Parque e Palácio de Monserrate)",
+   "transport": "Autocarro 435 (Circuito de Monserrate) a partir da estação de Sintra, cerca de 15 min",
+   "story": "A árvore de Natal da Nova Zelândia floresce escarlate em Portugal no início do Verão, seis meses fora do seu calendário nativo e a um hemisfério do único sítio onde cresce espontaneamente. Este Metrosideros excelsa, um pohutukawa, é um de dois plantados nos terrenos que Francis Cook mandou fazer à volta do Palácio de Monserrate na segunda metade do século XIX, embora nenhum registo prenda a plantação a um ano concreto; as estimativas para este exemplar, conhecido ali apenas por Nova Zelândia Dois, atravessam um século inteiro, algures entre 1750 e 1850, vagas ao ponto de o próprio material de Monserrate se limitar a dizer que é mais velho do que a passagem de Cook, em vez de lhe atribuir uma data. O que está medido, e não estimado, é o perímetro do tronco: pouco mais de 9 metros, num tronco que criou as raízes aéreas emaranhadas que a espécie usa na natureza para se agarrar a falésias vulcânicas, aqui agarradas a nada mais do que terra de encosta portuguesa, a uma serra de distância de qualquer costa. Na Nova Zelândia a árvore é símbolo nacional, com uma floração tão certa no Verão do hemisfério sul que marca o calendário como outras árvores marcam o Outono. O Monserrate de Cook colecciona esse tipo de piada geográfica por todo o parque, um jardim feito para provar que um inglês do século XIX conseguia cultivar quase tudo numa encosta acima de Lisboa, desde que importasse o mundo inteiro para isso."
+  }
+ }
+}
