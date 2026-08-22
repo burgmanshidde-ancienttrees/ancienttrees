@@ -1,0 +1,3 @@
+
+# Coordination state, not code: two runs each adding a claim is not a conflict.
+data/in-flight.json merge=inflight
