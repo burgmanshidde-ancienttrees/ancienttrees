@@ -10,6 +10,22 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-22 (night) - Oahu published, 5 trees, all in one garden
+
+A verify pass claimed earlier in the window found 5 trees, all inside Foster
+Botanical Garden in downtown Honolulu (a baobab, a Bodhi tree grown from a
+Bodh Gaya cutting, a kapok older than the garden itself, a cannonball tree
+and a quipo), all within a five minute walk of each other. A write pass
+turned them into stories and the city went live at /oahu with 5 of a target
+10. No photos yet (all `status: missing`). One tree (hnl_003, the Hillebrand
+Kapok) is flagged for an unresolved girth disagreement between two sources,
+kept honest in the prose rather than resolved by picking one. hnl_004 (the
+Cannonball Tree) has no recorded planting date; the story asks the reader
+for it rather than hedging around the gap. Roughly 51 more register-listed
+Exceptional Trees sit within 20km, still unmined by any pass (`passcheck.py
+--brief Oahu`), so this city has plenty of cheap runway toward its target
+of 10 for a future verify pass.
+
 ## 2026-08-22 (night) - A tree named after the wrong genus, and it needs the redirect work first
 
 **kyo_016 is called "Chinkapin oak (Sudajii) of Omiya Gate" and is not an
