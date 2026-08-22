@@ -27,7 +27,7 @@ import { cityMapScript } from "../lib/city-map-script";
 import { SHEET_JS } from "../lib/sheet-js";
 import { otherCitiesFor } from "../lib/other-cities";
 import { byCityListOrder } from "../lib/city-order";
-import { cityTranslation, hreflangLinks } from "../lib/i18n";
+import { hreflangForCity, languagesForCity, LANG_INVITE, LANG_NAME } from "../lib/i18n";
 
 function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -194,8 +194,15 @@ const graph = [
 // each other (hreflang is only honoured when reciprocal), and the visitor
 // gets a visible way across, which is also what keeps the /es/ page from
 // being an orphan under qa.py's inbound-link rule.
-const esTr = cityTranslation("es", cslug);
-const headExtra = mapHead() + cityOgImage + (esTr ? "\n" + hreflangLinks("es", `/${cslug}`, `/es/${cslug}`) : "") + "\n" + ldScript(graph);
+// Every language this city exists in, each invited in its OWN language,
+// because that line is read by a speaker of that language and not by us.
+// Doubles as the inbound link qa.py requires for the translated page.
+const altLangs = languagesForCity(cslug);
+// Every language that has an overlay for this city, not just Spanish: an
+// incomplete hreflang set is dropped wholesale by Google (see hreflangForCity).
+const hb = hreflangForCity(cslug, "city");
+const hreflangBlock = hb ? "\n" + hb : "";
+const headExtra = mapHead() + cityOgImage + hreflangBlock + "\n" + ldScript(graph);
 
 const avgLat = markers.reduce((s, m) => s + m.lat, 0) / markers.length;
 const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
@@ -217,7 +224,9 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
       <div class="city-intro">
         <p class="lede">{intro}</p>
         <button type="button" class="city-intro-more">Read more</button>
-        {esTr && <p class="lang-alt">Esta página también está disponible <a href={`/es/${cslug}`}>en español</a>.</p>}
+        {altLangs.map((l) => (
+          <p class="lang-alt">{LANG_INVITE[l] ?? "This page is also available"} <a href={`/${l}/${cslug}`}>{LANG_NAME[l] ?? l}</a>.</p>
+        ))}
         <p class="passport" id="passport" hidden>
           <strong><span id="passport-count">0</span> of {trees.length}</strong> visited in {cityName}
           <span class="passport-total" id="passport-total"></span>

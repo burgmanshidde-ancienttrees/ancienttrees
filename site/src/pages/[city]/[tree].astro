@@ -20,7 +20,7 @@ import { WORTHIT_JS } from "../../lib/worthit-js";
 import { TREE_ACTIONS_JS } from "../../lib/tree-actions-js";
 import { seasonBlock } from "../../lib/phenology";
 import { mapHead, singlePinScript } from "../../lib/map";
-import { cityTranslation, hreflangLinks } from "../../lib/i18n";
+import { hreflangForCity } from "../../lib/i18n";
 
 function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -153,8 +153,11 @@ const graph = [
   },
   breadcrumbSchema(crumbItems, canonical),
 ];
-const esTr = cityTranslation("es", cslug);
-const headExtra = mapHead() + ogImage + (esTr && esTr.trees[tree.id] ? "\n" + hreflangLinks("es", `/${cslug}/${tslug}`, `/es/${cslug}/${tslug}`) : "") + "\n" + ldScript(graph);
+// All languages carrying an overlay for THIS city; a tree slug is identical
+// across languages by contract, so one path shape covers them all.
+const hb = hreflangForCity(cslug, "tree", tslug);
+const hreflangBlock = hb ? "\n" + hb : "";
+const headExtra = mapHead() + ogImage + hreflangBlock + "\n" + ldScript(graph);
 const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TREE_ACTIONS_JS + SIGNIN_JS;
 ---
 <Base title={title} description={description} canonical={canonical} headExtra={headExtra}>

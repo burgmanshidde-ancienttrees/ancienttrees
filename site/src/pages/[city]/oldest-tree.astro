@@ -8,7 +8,7 @@ import { ageToken } from "../../lib/tree-copy";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
 import { fitTitle } from "../../lib/title";
 import { mapHead, singlePinScript } from "../../lib/map";
-import { cityTranslation, hreflangLinks, QUESTION_SLUG } from "../../lib/i18n";
+import { hreflangForCity } from "../../lib/i18n";
 import { DESC_MAX } from "../../lib/site-config";
 import { GENERIC_WORDS } from "../../lib/question-words";
 
@@ -91,8 +91,11 @@ const cityCollections = collections.filter((c) => c.data.entries.some((e) => e.c
 const coll = cityCollections[0] ?? null;
 
 const graph = [...SITE_SCHEMA, { "@type": "FAQPage", mainEntity: faqEntities }, breadcrumbSchema(crumbItems, canonical)];
-const esTr = cityTranslation("es", cslug);
-const headExtra = mapHead() + (esTr ? "\n" + hreflangLinks("es", `/${cslug}/oldest-tree`, `/es/${cslug}/${QUESTION_SLUG.es}`) : "") + "\n" + ldScript(graph);
+// The question page is the one whose last segment differs per language, which
+// hreflangForCity resolves from QUESTION_SLUG rather than each call site.
+const hb = hreflangForCity(cslug, "question");
+const hreflangBlock = hb ? "\n" + hb : "";
+const headExtra = mapHead() + hreflangBlock + "\n" + ldScript(graph);
 const scripts = singlePinScript(loc.latitude!, loc.longitude!);
 ---
 <Base title={title} description={description} canonical={canonical} headExtra={headExtra}>

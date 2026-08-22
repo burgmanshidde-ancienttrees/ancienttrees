@@ -368,9 +368,59 @@ export const LANG_NAME: Record<string, string> = {
  * searches in. Both pages must emit the same pair, or Google ignores the
  * annotation entirely: hreflang is only honoured when it is reciprocal. */
 export function hreflangLinks(lang: string, enPath: string, langPath: string): string {
-  return [
-    `<link rel="alternate" hreflang="en" href="${BASE_URL}${enPath}">`,
-    `<link rel="alternate" hreflang="${lang}" href="${BASE_URL}${langPath}">`,
-    `<link rel="alternate" hreflang="x-default" href="${BASE_URL}${enPath}">`,
-  ].join("\n");
+  return hreflangSet(enPath, { [lang]: langPath });
+}
+
+/** Every language that has an overlay for this city. */
+export function languagesForCity(slug: string): string[] {
+  return translatedLanguages()
+    .filter((l) => fs.existsSync(path.join(DATA, "i18n", l, `${slug}.json`)))
+    .sort();
+}
+
+/** Reciprocal hreflang for the WHOLE set of variants of one page.
+ *
+ * The single-alternate version this replaces was correct for exactly as long
+ * as there was one translated language. hreflang is only honoured when the
+ * annotation is reciprocal AND complete: every variant must list every other
+ * variant, itself included. With Spanish alone, "English plus Spanish plus
+ * x-default" satisfied that. The moment a city exists in two languages, a
+ * page emitting only itself and English describes a set that the other
+ * variant contradicts, and Google drops the whole annotation rather than
+ * guessing, which is worse than having none.
+ *
+ * That is not hypothetical at seven languages: Brussels is a Dutch and a
+ * French city, Barcelona a Spanish and arguably an Italian-market one. Fixed
+ * before the first of them ships rather than after, because a broken
+ * annotation is invisible from our side and only shows up as pages quietly
+ * not ranking in their own language.
+ *
+ * `variants` maps language code to that language's path for this same page.
+ * The self-referencing tag is included by construction, since the page's own
+ * language is one of the keys.
+ */
+export function hreflangSet(enPath: string, variants: Record<string, string>): string {
+  const out = [`<link rel="alternate" hreflang="en" href="${BASE_URL}${enPath}">`];
+  for (const lang of Object.keys(variants).sort()) {
+    out.push(`<link rel="alternate" hreflang="${lang}" href="${BASE_URL}${variants[lang]}">`);
+  }
+  out.push(`<link rel="alternate" hreflang="x-default" href="${BASE_URL}${enPath}">`);
+  return out.join("\n");
+}
+
+/** The full hreflang block for a city page, tree page or question page,
+ * covering every language that actually has an overlay for that city. `kind`
+ * decides the path shape; the question page is the one whose last segment
+ * differs per language, which is why QUESTION_SLUG is consulted here rather
+ * than at each call site. */
+export function hreflangForCity(slug: string, kind: "city" | "question", treeSlug?: string): string {
+  const langs = languagesForCity(slug);
+  const enPath = kind === "question" ? `/${slug}/oldest-tree` : treeSlug ? `/${slug}/${treeSlug}` : `/${slug}`;
+  const variants: Record<string, string> = {};
+  for (const l of langs) {
+    variants[l] = kind === "question"
+      ? `/${l}/${slug}/${QUESTION_SLUG[l] ?? "oldest-tree"}`
+      : treeSlug ? `/${l}/${slug}/${treeSlug}` : `/${l}/${slug}`;
+  }
+  return Object.keys(variants).length ? hreflangSet(enPath, variants) : "";
 }
