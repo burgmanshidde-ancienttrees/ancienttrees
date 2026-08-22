@@ -111,12 +111,24 @@ struct HomeView: View {
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 30) {
                 VStack(alignment: .leading, spacing: 20) {
-                    HStack(alignment: .center) {
+                    HStack(alignment: .firstTextBaseline) {
                         Text("Explore")
                             .font(.screenTitle)
                             .foregroundStyle(Brand.ink)
                         Spacer(minLength: 8)
-                        ProfileButton()
+                    ProfileButton()
+                        // Aligned on the TITLE'S CAP HEIGHT, not on its
+                        // line box. A 34 point line box carries descender
+                        // room that "Explore" never uses, so centring the
+                        // circle against it put the circle a couple of
+                        // points high, which is exactly the sort of drift
+                        // that reads as sloppy without being nameable
+                        // (Hidde, 2026-08-22). Cap height on Gabarito
+                        // Black at 34 is about 24 points, so the circle's
+                        // centre belongs 12 above the baseline.
+                        .alignmentGuide(.firstTextBaseline) { d in
+                            d[VerticalAlignment.center] + 12
+                        }
                     }
                     Button { searching = true } label: {
                         HStack(spacing: 10) {
