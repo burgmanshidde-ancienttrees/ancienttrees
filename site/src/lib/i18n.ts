@@ -103,7 +103,9 @@ export interface UIStrings {
   home: string;
   backToTrees: (n: number) => string;
   treesOnMap: (n: number) => string;
-  headingPrefix: string;
+  /** The whole H1, not a prefix: Japanese puts the qualifier AFTER the place
+   * name, so a prefix plus a city name cannot express it. */
+  heading: (city: string) => string;
   readMore: string;
   visitedOf: (n: number, city: string) => string;
   saveOrTransfer: string;
@@ -131,7 +133,7 @@ const EN: UIStrings = {
   home: "Home",
   backToTrees: (n) => `\u2190 The ${n} trees`,
   treesOnMap: (n) => `${n} trees on the map`,
-  headingPrefix: "Ancient Trees in",
+  heading: (c) => `Ancient Trees in ${c}`,
   readMore: "Read more",
   visitedOf: (n, city) => `visited in ${city}`,
   saveOrTransfer: "Save or move to another device",
@@ -160,7 +162,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     home: "Inicio",
     backToTrees: (n) => `\u2190 Los ${n} \u00e1rboles`,
     treesOnMap: (n) => `${n} \u00e1rboles en el mapa`,
-    headingPrefix: "\u00c1rboles hist\u00f3ricos de",
+    heading: (c) => `\u00c1rboles hist\u00f3ricos de ${c}`,
     readMore: "Leer m\u00e1s",
     visitedOf: (n, city) => `visitados en ${city}`,
     saveOrTransfer: "Guardar o pasar a otro dispositivo",
@@ -187,7 +189,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     home: "Home",
     backToTrees: (n) => `\u2190 I ${n} alberi`,
     treesOnMap: (n) => `${n} alberi sulla mappa`,
-    headingPrefix: "Alberi monumentali di",
+    heading: (c) => `Alberi monumentali di ${c}`,
     readMore: "Leggi di pi\u00f9",
     visitedOf: (n, city) => `visitati a ${city}`,
     saveOrTransfer: "Salva o trasferisci su un altro dispositivo",
@@ -214,7 +216,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     home: "Home",
     backToTrees: (n) => `\u2190 De ${n} bomen`,
     treesOnMap: (n) => `${n} bomen op de kaart`,
-    headingPrefix: "Monumentale bomen in",
+    heading: (c) => `Monumentale bomen in ${c}`,
     readMore: "Lees meer",
     visitedOf: (n, city) => `bezocht in ${city}`,
     saveOrTransfer: "Bewaren of naar een ander apparaat overzetten",
@@ -241,7 +243,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     home: "Start",
     backToTrees: (n) => `\u2190 Die ${n} B\u00e4ume`,
     treesOnMap: (n) => `${n} B\u00e4ume auf der Karte`,
-    headingPrefix: "Alte B\u00e4ume in",
+    heading: (c) => `Alte B\u00e4ume in ${c}`,
     readMore: "Mehr lesen",
     visitedOf: (n, city) => `in ${city} besucht`,
     saveOrTransfer: "Sichern oder auf ein anderes Ger\u00e4t \u00fcbertragen",
@@ -268,7 +270,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     home: "In\u00edcio",
     backToTrees: (n) => `\u2190 As ${n} \u00e1rvores`,
     treesOnMap: (n) => `${n} \u00e1rvores no mapa`,
-    headingPrefix: "\u00c1rvores hist\u00f3ricas de",
+    heading: (c) => `\u00c1rvores hist\u00f3ricas de ${c}`,
     readMore: "Ler mais",
     visitedOf: (n, city) => `visitadas em ${city}`,
     saveOrTransfer: "Guardar ou passar para outro dispositivo",
@@ -295,7 +297,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     home: "Accueil",
     backToTrees: (n) => `\u2190 Les ${n} arbres`,
     treesOnMap: (n) => `${n} arbres sur la carte`,
-    headingPrefix: "Arbres remarquables de",
+    heading: (c) => `Arbres remarquables de ${c}`,
     readMore: "Lire la suite",
     visitedOf: (n, city) => `visit\u00e9s \u00e0 ${city}`,
     saveOrTransfer: "Enregistrer ou transf\u00e9rer vers un autre appareil",
@@ -322,7 +324,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     home: "\u30db\u30fc\u30e0",
     backToTrees: (n) => `\u2190 ${n}\u672c\u306e\u6a39\u6728`,
     treesOnMap: (n) => `\u5730\u56f3\u4e0a\u306e${n}\u672c`,
-    headingPrefix: "\u306e\u53e4\u6a39",
+    heading: (c) => `${c}\u306e\u53e4\u6a39`,
     readMore: "\u7d9a\u304d\u3092\u8aad\u3080",
     visitedOf: (n, city) => `${city}\u3067\u8a2a\u308c\u305f\u6570`,
     saveOrTransfer: "\u4fdd\u5b58\u3059\u308b\u30fb\u5225\u306e\u7aef\u672b\u306b\u79fb\u3059",
@@ -424,3 +426,29 @@ export function hreflangForCity(slug: string, kind: "city" | "question", treeSlu
   }
   return Object.keys(variants).length ? hreflangSet(enPath, variants) : "";
 }
+
+/** getStaticPaths for a language's city pages, shared so the per-language
+ * route files stay three lines each and the guards below cannot drift apart.
+ *
+ * The two throws are the guards Contract J relies on. An overlay missing a
+ * tree means the English city grew past its translation, and a page silently
+ * falling back to an English story would read as sloppiness rather than as
+ * the gap it is. The intro word count is Contract C, checked here because a
+ * translated intro is written by hand and nothing else would catch it.
+ */
+export async function translatedCityPaths(lang: string, allCities: CityLike[]) {
+  return translatedCities(lang).map((slug) => {
+    const city = allCities.find((c) => c.id === slug);
+    if (!city) throw new Error(`data/i18n/${lang}/${slug}.json has no matching English city file`);
+    const tr = cityTranslation(lang, slug)!;
+    const ids = (city.data.trees ?? []).map((t: { id: string }) => t.id);
+    for (const id of ids) {
+      if (!tr.trees[id]) throw new Error(`${lang}/${slug}: no translation for ${id}; the English city grew past the overlay`);
+    }
+    const iw = tr.intro.split(/\s+/).filter(Boolean).length;
+    if (iw < 60 || iw > 100) throw new Error(`${lang}/${slug}: intro is ${iw} words, Contract C requires 60-100`);
+    return { params: { city: slug }, props: { city, tr } };
+  });
+}
+
+interface CityLike { id: string; data: { trees?: { id: string }[] } }

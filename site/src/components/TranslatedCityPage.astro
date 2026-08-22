@@ -1,0 +1,153 @@
+---
+// The one translated-city implementation, shared by every language.
+//
+// Extracted 2026-08-22 from site/src/pages/es/[city].astro, which shipped as a
+// deliberate second copy of the English template carrying a note that ten
+// copies would be a maintenance bug. Contract J v1.13 turned that note into a
+// rule when the site went from one translated language to seven.
+//
+// Everything factual still comes from the canonical English city file. This
+// component renders it; data/i18n/<lang>/<slug>.json supplies only text, and
+// ui(lang) supplies the chrome labels with English fallback per key.
+import TreeCard from "./TreeCard.astro";
+import SignInModal from "./SignInModal.astro";
+import AppModal from "./AppModal.astro";
+import Base from "../layouts/Base.astro";
+import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
+import { SIGNIN_JS } from "../lib/signin-js";
+import { VISITED_SYNC_JS } from "../lib/visited-sync-js";
+import { renderableTrees, treeSlugsForCity, type CityEntry } from "../lib/trees";
+import { usablePhoto } from "../lib/images";
+import { speciesIcon } from "../lib/species-icons";
+import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
+import { mapHead } from "../lib/map";
+import { type WalkMarker } from "../lib/walks";
+import { cityMapScript } from "../lib/city-map-script";
+import { SHEET_JS } from "../lib/sheet-js";
+import { hreflangForCity, QUESTION_SLUG, ui, type CityTranslation } from "../lib/i18n";
+
+interface Props { lang: string; city: CityEntry; tr: CityTranslation }
+const { lang, city, tr } = Astro.props as Props;
+
+const U = ui(lang);
+const cslug = city.id;
+const trees = renderableTrees(city);
+const tslugs = treeSlugsForCity(city);
+const canonical = `${BASE_URL}/${lang}/${cslug}`;
+
+// The overlay may name the country in its own language; the English city file
+// is the fallback, which is honest rather than wrong and shows up as one
+// English word on an otherwise translated page.
+const countryLabel = (tr as CityTranslation & { country?: string }).country ?? city.data.country;
+
+const markers: WalkMarker[] = trees.map((t, i) => ({
+  lat: t.location.latitude!,
+  lng: t.location.longitude!,
+  label: String(i + 1),
+  icon: speciesIcon(t),
+  name: tr.trees[t.id].name,
+  id: t.id,
+  area: (t.location.neighbourhood ?? "").trim(),
+  shot: Boolean(usablePhoto(t)),
+}));
+
+const crumbItems: [string, string | null][] = [
+  [U.home, BASE_URL],
+  [tr.city, null],
+];
+
+const listElements = trees.map((t, i) => ({
+  "@type": "ListItem",
+  position: i + 1,
+  name: tr.trees[t.id].name,
+  url: `${BASE_URL}/${lang}/${cslug}/${tslugs[t.id]}`,
+  item: {
+    "@type": "TouristAttraction",
+    name: tr.trees[t.id].name,
+    description: tr.trees[t.id].story.slice(0, 200),
+    geo: { "@type": "GeoCoordinates", latitude: t.location.latitude, longitude: t.location.longitude },
+  },
+}));
+const graph = [
+  ...SITE_SCHEMA,
+  { "@type": "ItemList", name: tr.title, itemListElement: listElements },
+  { "@type": "FAQPage", mainEntity: tr.faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
+  breadcrumbSchema(crumbItems, canonical),
+];
+const headExtra = mapHead() + "\n" + hreflangForCity(cslug, "city") + "\n" + ldScript(graph);
+
+const avgLat = markers.reduce((s, m) => s + m.lat, 0) / markers.length;
+const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
+
+const qslug = QUESTION_SLUG[lang] ?? "oldest-tree";
+---
+<Base title={tr.title} description={tr.meta_description} canonical={canonical} headExtra={headExtra} footer={false} lang={lang}>
+  <div class="split">
+    <aside class="panel" id="sheet">
+      <div class="sheet-grab">
+      <div class="panel-head">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="/">{U.home}</a> › <span>{tr.city}</span></nav>
+        <button type="button" class="sheet-back">{U.backToTrees(trees.length)}</button>
+        <p class="eyebrow">{countryLabel}</p>
+        <h1>{U.heading("")}<em>{tr.city}</em></h1>
+        <p class="sheet-count">{U.treesOnMap(trees.length)}</p>
+      </div>
+      </div>
+      <div class="sheet-body">
+      <div class="city-intro">
+        <p class="lede">{tr.intro}</p>
+        <button type="button" class="city-intro-more">{U.readMore}</button>
+        <p class="lang-alt">This page also exists <a href={`/${cslug}`}>in English</a>.</p>
+        <p class="passport" id="passport" hidden>
+          <strong><span id="passport-count">0</span> / {trees.length}</strong> {U.visitedOf(trees.length, tr.city)}
+          <span class="passport-total" id="passport-total"></span>
+          <button type="button" class="passport-save" id="passport-save">{U.saveOrTransfer}</button>
+        </p>
+      </div>
+      {trees.map((t, i) => {
+        const x = tr.trees[t.id];
+        return (
+          <TreeCard tree={t} citySlug={cslug} treeSlug={tslugs[t.id]} index={i + 1}
+                    variant="full" headingLevel={2} lang={lang}
+                    overrides={{ name: x.name, species: x.species, age: x.age_estimate, story: x.story }} />
+        );
+      })}
+      <div class="panel-foot">
+        <p class="subtle-suggest"><b>{U.mappingAll}</b> {U.missingOrWrong(tr.city)} <a href="/contribute?kind=tree">{U.tellUs}</a>.</p>
+        <div class="take-with-you">
+          <strong>{U.goingThere}</strong> <a href={`/${cslug}.gpx`} download>{U.downloadTrees(trees.length)}</a> {U.worksOffline}
+        </div>
+        <h2>{U.faqHeading}</h2>
+        <dl class="faq">
+          {tr.faq.map((f) => (
+            <Fragment>
+              <dt>{f.q}</dt>
+              <dd>{f.a}</dd>
+            </Fragment>
+          ))}
+          <dt>{U.moreOnOldest}</dt>
+          <dd><a href={`/${lang}/${cslug}/${qslug}`}>{U.oldestQuestion(tr.city)}</a> {U.fullAnswer}</dd>
+        </dl>
+        <p class="suggest">{U.suggestTree} <a href="/contribute?kind=tree">{U.sendIt}</a>.</p>
+      </div>
+      </div>
+    </aside>
+    <div class="stage">
+      <div id="map" class="map"></div>
+      <div class="walks" id="walk">
+        <div class="map-tools">
+          <a class="map-cta" href="/app" data-app-modal data-ev="walks-app">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="map-cta-ic"><path d="M5 19c0-2.2 1.8-4 4-4h6c2.2 0 4-1.8 4-4s-1.8-4-4-4H9" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="5" cy="19" r="2.2" fill="currentColor"/><circle cx="19" cy="5" r="2.2" fill="currentColor"/></svg>
+            <span class="map-cta-text">{U.walkRoutes}<span class="map-cta-sub">{U.inTheApp}</span></span>
+          </a>
+          <button type="button" class="map-gps" id="gps-btn" aria-pressed="false" aria-label={U.whereAmI}>
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="gps-ic"><circle cx="12" cy="12" r="3.2" fill="currentColor"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/><circle cx="12" cy="12" r="7.5" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <SignInModal lang={lang} />
+  <AppModal lang={lang} />
+  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + VISITED_SYNC_JS + cityMapScript(markers, [avgLat, avgLng], null, [], []) + SHEET_JS} />
+</Base>
