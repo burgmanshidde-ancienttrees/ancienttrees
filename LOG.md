@@ -12,6 +12,65 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-22 (session) - Nijmegen 11 to 14, plus its first photograph
+
+Second attempt in a window whose first attempt claimed Brisbane and
+Nijmegen and shipped nothing (2 commits, 7.6 minutes). Released Brisbane
+(558 unnamed "significant landscape trees" candidates, no names to work
+from, not today's priority); finished the Nijmegen claim instead, since
+`scout_next --target` still said BUILD Nijmegen and health was clear
+(rung 1 and 2 both checked directly, no submissions, no BLOCKER).
+
+Three register-backed verify passes, four named candidates each, all
+checked against the LRMB register's own `n_trees` field before dispatch so
+avenues and rows never went out as candidates (several nearby cemetery
+entries with n_trees 4/12/14/28 were excluded on sight). Shipped 3 trees:
+
+- **nij_012, The Wilhelminaboom of Hertogplein**: a lime planted for
+  Wilhelmina's 1898 coronation, ringed by a wrought-iron fence with crowns
+  that is itself a listed monument. Sources genuinely disagree on whether
+  today's tree is the 1898 original or a later replacement; delivered as a
+  disputed fact rather than resolved into a tidy story.
+- **nij_013, The Beverboom of Park Leeuwenstein**: a magnolia in the
+  surviving garden of a demolished villa. Its neighbour, the park's giant
+  sequoia, was caught DEAD (fell in the storm of 18 January 2018, two
+  sources) and blocked before it could ship. Species stays an open
+  question on the page (two candidate identifications, unresolved).
+- **nij_014, The Pastorie Chestnut of Lent**: a genuine tree-level match
+  against the national heritage register's own listing for its parish
+  square, opening Lent (Nijmegen-Noord) as a new stop.
+
+5 more candidates went to leads (register-strong, no second source found
+naming the individual tree) and 2 to blocked (an avenue tree at Landgoed
+Brakkestein, the dead sequoia), all in `data/leads/nijmegen.json` with the
+reasoning recorded so a future pass does not re-walk the same dead ends.
+Two new hosts joined the fetch blocklist: `rijksmonumenten.nl`,
+`reliwiki.nl`, and Nijmegen's own municipal tree WFS endpoint, all hangs.
+
+**Then a photo viewing pass, Nijmegen's first.** 42 queued candidates
+across 8 photo-less trees, judged against the Cadiz standard. 1 approved,
+Nijmegen's first photograph: nij_009 the Kabouterboom, identity settled by
+the Commons file's own GPS (25m from our pin) and its stated 850cm girth,
+which matches our record exactly rather than by name alone. 41 rejected,
+0 held. Seven trees are now documented Commons dead ends (the nationally
+famous names kept returning other towns' same-named trees) and should not
+be re-swept without a genuinely new source.
+
+One flagged question resolved along the way: whether Hertogplein's
+crowned iron fence, the recognition feature nij_012's story leans on, still
+stands. It does; the fence is itself a separately listed national monument
+with a standing yearly ceremony, so two photographs that didn't happen to
+frame it were not evidence of anything.
+
+Also fixed the privacy WARN from today's fresh-eyes review: Hidde's own
+email address had been committed in plain text in `CURATION.md` (from an
+earlier session resolving whose test clicks a submissions burst was).
+Redacted the forward-looking copy only, per the review's own instruction
+not to rewrite git history unprompted; that decision is his.
+
+Nijmegen now stands at 14 of a target 20, one photograph, and a real
+leads file to draw on next time rather than a cold start.
+
 ## 2026-08-22 (session, night run) - Nijmegen 8 to 11, and the rescue attempt that could not write
 
 Ran the ladder as a night run does. Rung 1 skipped, no Supabase key here.
