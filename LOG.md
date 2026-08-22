@@ -6,6 +6,47 @@ Written by the workflow's Run health step, not by the run. 3.9 minutes of its 12
 
 This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
 
+## 2026-08-22 (later) - The remaining eleven are staged, and two of them turned out not to be cities
+
+Hidde: "prima zet ze maar klaar". Staged means the work sits where the machinery
+already looks, so no night run needs a new instruction to find it:
+
+| where | what | who reads it |
+|---|---|---|
+| `data/leads/<slug>.json` | 93 candidates, register facts in `why` | `leads.py --ready`, rung 4(a) |
+| `data/research/<slug>-verified.json` | the same trees, write-pass shaped | `BRIEF_WRITING.md` input, `passcheck --pending` |
+
+READY leads went from 161 to 252. `scripts/nl_stage.py` generates both files from
+one selection so they cannot drift apart.
+
+**Two of the eleven are not separate cities and are now folded in.** Voorburg
+sits 3.6 km from The Hague's centre and Amstelveen 7.4 km from Amsterdam's, both
+well inside this site's own day-trip boundary. Nine trees are staged as
+`hag_023` onward and eight as `ams_033` onward, each carrying an instruction to
+name the real place honestly in the location fields and give the true travel
+time. Two thin suburban pages avoided, seventeen trees added to pages that
+already rank. The nine remaining new cities are Oss, Hilversum, Zaanstad,
+Haarlemmermeer, Sittard-Geleen, Heerlen, Roosendaal, Hoorn and Assen, all now in
+the queue.
+
+**A passcheck bug found while doing it, and it would have cost a night window.**
+`--brief Assen` reported "ALREADY PUBLISHED as Apeldoorn", 55 km away, because
+the register fallback matched the folded string "assen" inside "kassen", the
+greenhouses of Paleis Het Loo. The function's own docstring warns about exactly
+this shape (graz inside Grazie) and had been left as bare containment.
+`centre_from_registers()` is now word-bounded, and all eleven places are in
+`data/city-coords.json` so the verified table answers first. Regression checked
+against Graz, Melbourne, Naples and the cities opened today.
+
+**Also cleaned up:** three stale `*-verified.json` files for cities published
+earlier today, which `--pending` would have offered to a write pass as unwritten
+work. Two pre-existing items are still sitting there and are not mine:
+`bari-verified.json` has 3 stories written and ready to merge, and
+`nijmegen-verified.json` is stale and can be deleted once that is done.
+
+**FOR HIDDE:** nothing needs you. A night run picks this up at rung 4(a) with no
+further instruction.
+
 ## 2026-08-22 - Fourteen Dutch cities opened from the national register
 
 Hidde asked for the top 25 large Dutch cities that have trees in the national

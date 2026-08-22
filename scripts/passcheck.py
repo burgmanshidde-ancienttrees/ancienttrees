@@ -405,7 +405,17 @@ def already_judged(lat, lng, species=None):
 def centre_from_registers(key):
     """A new city has no coordinates of ours yet. Infer a centre by matching the
     place name against the registers' own locality fields."""
-    hits = [e for e in register_entries() if key and key in fold(e["place"])]
+    # Word-bounded, not bare containment. "assen" is inside "kassen" (the
+    # greenhouses of Paleis Het Loo), so `--brief Assen` centred on Apeldoorn,
+    # 55 km away, and told a night run it was deepening the wrong city. Same
+    # shape as the Graz/Grazie miss the docstring above describes, which was
+    # left in place because the fallback was called a heuristic. It still is;
+    # this only stops it matching inside a longer word, which never was a real
+    # match. Found 2026-08-22 while staging Assen.
+    if not key:
+        return None
+    pattern = re.compile(r"(?<![a-z0-9])%s(?![a-z0-9])" % re.escape(key))
+    hits = [e for e in register_entries() if pattern.search(fold(e["place"]))]
     if not hits:
         return None
     lats = sorted(e["lat"] for e in hits)

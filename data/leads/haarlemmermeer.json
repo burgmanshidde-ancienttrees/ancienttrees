@@ -1,0 +1,48 @@
+{
+ "city": "Haarlemmermeer",
+ "country": "Netherlands",
+ "city_slug": "haarlemmermeer",
+ "note": "Staged 2026-08-22 from the Landelijk Register Monumentale Bomen (Bomenstichting, attribution required). Publicly visitable single trees only, entries the register's own history says are gone already removed. Needs only a story per tree; see data/research/haarlemmermeer-verified.json for the write-pass input.",
+ "leads": [
+  {
+   "name": "Horse Chestnut, Nieuw-Vennep",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "lat": 52.264485,
+   "lng": 4.632846,
+   "status": "lead",
+   "why": "LRMB register nr 1688940 ('Witte paardenkastanje'). Register planting band 1910-1920, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting agrarisch. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "Tree of Heaven, Nieuw-Vennep op scheiding pastorietuin en gr",
+   "species": "Tree of Heaven (Ailanthus altissima)",
+   "lat": 52.264421,
+   "lng": 4.634885,
+   "status": "lead",
+   "why": "LRMB register nr 1685736 ('Hemelboom'). Register planting band 1910-1920, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category religieuze instantie, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: De witte kerk en de pastorie zijn uit 1862. De hemelboom wordt vaker aangeplant in de tuin rondom een kerk. Deze is van begin 20ste eeuw. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "European Ash, Nieuw-Vennep",
+   "species": "European Ash (Fraxinus excelsior)",
+   "lat": 52.264262,
+   "lng": 4.633167,
+   "status": "lead",
+   "why": "LRMB register nr 1688939 ('Gewone es'). Register planting band 1920-1930, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting agrarisch. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "Norway Maple, Nieuw-Vennep",
+   "species": "Norway Maple (Acer platanoides)",
+   "lat": 52.264724,
+   "lng": 4.635064,
+   "status": "lead",
+   "why": "LRMB register nr 1685909 ('Noorse esdoorn'). Register planting band 1930-1940, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category religieuze instantie, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "European Ash, Nieuw-Vennep",
+   "species": "European Ash (Fraxinus excelsior)",
+   "lat": 52.265229,
+   "lng": 4.633313,
+   "status": "lead",
+   "why": "LRMB register nr 1689426 ('Gewone es'). Register planting band 1930-1940, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category particulier, setting stedelijk. Register history of the PLACE, not of the tree, so do not bridge from it: De es stond voor een bakkerij die is afgebrand. Jarenlang was dit een kale vlakte. In 2024 is het plan op hier appartementen te bouwen. Het terrein is nu afgezet. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  }
+ ]
+}

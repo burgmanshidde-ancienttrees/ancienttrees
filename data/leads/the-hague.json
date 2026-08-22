@@ -1,29 +1,102 @@
 {
-  "city": "The Hague",
-  "leads": [],
-  "blocked": [
-    {
-      "proposed_id": "hag_015",
-      "name_nl": "Beuk",
-      "species": "European Beech (Fagus sylvatica)",
-      "location": {
-        "address": "Haagse Schoolvereniging, Nassaulaan 26, Den Haag",
-        "latitude": 52.086016,
-        "longitude": 4.30832
-      },
-      "plantjaar_band": "1830-1840",
-      "register": "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1686918, reason for protection 'potentieel', owner gemeente, recorded as visitable",
-      "reason": "School grounds. CLAUDE.md hard rule 10 ships a tree on school grounds only where there is real evidence the grounds are genuinely open (a public path crossing them, a public park the school merely borders, open at weekends). The register's bezoekbaar=ja flag is the only evidence we have, and it is not enough to write an honest access line for a private school garden behind a house on the Nassaulaan. Held as a lead, not rejected: one confirmation that the garden is open, or that the beech is visible from public ground on the Nassaulaan, unblocks it as a view-only entry with the pin on the viewing place.",
-      "date": "2026-08-18",
-      "source_pass": "the-hague LRMB write pass"
-    }
-  ],
-  "notes": [
-    {
-      "about": "hag_002, The Koekamp Oak",
-      "found": "2026-08-18",
-      "what": "Its approximate pin (52.0838873,4.3225274) sits beside the register's 'Zomereiken Hertenkamp', a group of SEVENTEEN oaks planted 1700-1750, which also matches our stated age of about 300 years. hag_006, added the same day, is the register's separate SINGLE oak 193 m east at the Bezuidenhoutseweg end, band 1750-1800. So they are two different trees and were correctly written as two.",
-      "but": "If hag_002 is one of the seventeen rather than a distinguishable individual, it fails the collectible-point test and should become one entry describing the Hertenkamp oaks, or be repinned onto whichever oak the story is actually about. Needs eyes on the Koekamp or a source naming an individual tree. Not touched by this pass."
-    }
-  ]
+ "city": "The Hague",
+ "leads": [
+  {
+   "name": "op Romeins fundament",
+   "species": "Plane (Platanus sp.)",
+   "lat": 52.057837,
+   "lng": 4.348874,
+   "status": "lead",
+   "why": "Staged 2026-08-22 from Leidschendam-Voorburg, which sits 3.6 km from the The Hague city centre and is inside this site's day-trip boundary, so it belongs on the The Hague page rather than on a thin page of its own. Name the real place honestly in the location fields and the true travel time in transport. LRMB register nr 1686876 ('Plataan op Romeins fundament'). Register planting band 1700-1750, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: De plataan in park Hoekenburg staat op historische grond; de geschiedenis van de omgeving gaat terug tot ver voor het begin van onze jaartelling. De Romeinen vestigden de havenstad Forum Hadrianum op de plek van een eerdere nederzetting van de Kaninefaten, de oorspronkelijke bewoners van ons land. Oude resten van de Romeinse stad zijn in 2008 gevonden in de omgeving. Ook de resten van een paal zijn toen blootgelegd, gemaakt uit hout van een in 212 gekapte eik (jaarringenonderzoek). De plataan staat letterlijk op de plaats waar de geschiedenis van Voorburg is begonnen. De boom is in zijn 300 jarig bestaan uitgegroeid tot een icoon van de omgeving: bij renovatie van het park is de boom goed beschermd. Het is de dikste plataan van Zuid-Holland. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "Copper Beech, Voorburg",
+   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+   "lat": 52.060334,
+   "lng": 4.348263,
+   "status": "lead",
+   "why": "Staged 2026-08-22 from Leidschendam-Voorburg, which sits 3.6 km from the The Hague city centre and is inside this site's day-trip boundary, so it belongs on the The Hague page rather than on a thin page of its own. Name the real place honestly in the location fields and the true travel time in transport. LRMB register nr 1685200 ('Bruine beuk'). Register planting band 1830-1840, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "Copper Beech, Voorburg",
+   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+   "lat": 52.070448,
+   "lng": 4.366521,
+   "status": "lead",
+   "why": "Staged 2026-08-22 from Leidschendam-Voorburg, which sits 3.6 km from the The Hague city centre and is inside this site's day-trip boundary, so it belongs on the The Hague page rather than on a thin page of its own. Name the real place honestly in the location fields and the true travel time in transport. LRMB register nr 1685212 ('Bruine beuk'). Register planting band 1830-1840, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "Copper Beech, Voorburg",
+   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+   "lat": 52.069878,
+   "lng": 4.367151,
+   "status": "lead",
+   "why": "Staged 2026-08-22 from Leidschendam-Voorburg, which sits 3.6 km from the The Hague city centre and is inside this site's day-trip boundary, so it belongs on the The Hague page rather than on a thin page of its own. Name the real place honestly in the location fields and the true travel time in transport. LRMB register nr 1685213 ('Bruine Beuk'). Register planting band 1830-1840, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "European Beech, Voorburg",
+   "species": "European Beech (Fagus sylvatica)",
+   "lat": 52.060041,
+   "lng": 4.348167,
+   "status": "lead",
+   "why": "Staged 2026-08-22 from Leidschendam-Voorburg, which sits 3.6 km from the The Hague city centre and is inside this site's day-trip boundary, so it belongs on the The Hague page rather than on a thin page of its own. Name the real place honestly in the location fields and the true travel time in transport. LRMB register nr 1686877 ('Beuk'). Register planting band 1830-1840, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "Copper Beech, Voorburg",
+   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+   "lat": 52.06013,
+   "lng": 4.348769,
+   "status": "lead",
+   "why": "Staged 2026-08-22 from Leidschendam-Voorburg, which sits 3.6 km from the The Hague city centre and is inside this site's day-trip boundary, so it belongs on the The Hague page rather than on a thin page of its own. Name the real place honestly in the location fields and the true travel time in transport. LRMB register nr 1685199 ('Bruine beuk'). Register planting band 1830-1840, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "Copper Beech, Voorburg",
+   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+   "lat": 52.0693,
+   "lng": 4.364772,
+   "status": "lead",
+   "why": "Staged 2026-08-22 from Leidschendam-Voorburg, which sits 3.6 km from the The Hague city centre and is inside this site's day-trip boundary, so it belongs on the The Hague page rather than on a thin page of its own. Name the real place honestly in the location fields and the true travel time in transport. LRMB register nr 1685205 ('Bruine beuk'). Register planting band 1860-1870, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "Horse Chestnut, Voorburg",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "lat": 52.0607,
+   "lng": 4.348113,
+   "status": "lead",
+   "why": "Staged 2026-08-22 from Leidschendam-Voorburg, which sits 3.6 km from the The Hague city centre and is inside this site's day-trip boundary, so it belongs on the The Hague page rather than on a thin page of its own. Name the real place honestly in the location fields and the true travel time in transport. LRMB register nr 1685201 ('Witte paardenkastanje'). Register planting band 1860-1870, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "European Beech, Voorburg",
+   "species": "European Beech (Fagus sylvatica)",
+   "lat": 52.072607,
+   "lng": 4.366624,
+   "status": "lead",
+   "why": "Staged 2026-08-22 from Leidschendam-Voorburg, which sits 3.6 km from the The Hague city centre and is inside this site's day-trip boundary, so it belongs on the The Hague page rather than on a thin page of its own. Name the real place honestly in the location fields and the true travel time in transport. LRMB register nr 1685216 ('Beuk'). Register planting band 1860-1870, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  }
+ ],
+ "blocked": [
+  {
+   "proposed_id": "hag_015",
+   "name_nl": "Beuk",
+   "species": "European Beech (Fagus sylvatica)",
+   "location": {
+    "address": "Haagse Schoolvereniging, Nassaulaan 26, Den Haag",
+    "latitude": 52.086016,
+    "longitude": 4.30832
+   },
+   "plantjaar_band": "1830-1840",
+   "register": "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1686918, reason for protection 'potentieel', owner gemeente, recorded as visitable",
+   "reason": "School grounds. CLAUDE.md hard rule 10 ships a tree on school grounds only where there is real evidence the grounds are genuinely open (a public path crossing them, a public park the school merely borders, open at weekends). The register's bezoekbaar=ja flag is the only evidence we have, and it is not enough to write an honest access line for a private school garden behind a house on the Nassaulaan. Held as a lead, not rejected: one confirmation that the garden is open, or that the beech is visible from public ground on the Nassaulaan, unblocks it as a view-only entry with the pin on the viewing place.",
+   "date": "2026-08-18",
+   "source_pass": "the-hague LRMB write pass"
+  }
+ ],
+ "notes": [
+  {
+   "about": "hag_002, The Koekamp Oak",
+   "found": "2026-08-18",
+   "what": "Its approximate pin (52.0838873,4.3225274) sits beside the register's 'Zomereiken Hertenkamp', a group of SEVENTEEN oaks planted 1700-1750, which also matches our stated age of about 300 years. hag_006, added the same day, is the register's separate SINGLE oak 193 m east at the Bezuidenhoutseweg end, band 1750-1800. So they are two different trees and were correctly written as two.",
+   "but": "If hag_002 is one of the seventeen rather than a distinguishable individual, it fails the collectible-point test and should become one entry describing the Hertenkamp oaks, or be repinned onto whichever oak the story is actually about. Needs eyes on the Koekamp or a source naming an individual tree. Not touched by this pass."
+  }
+ ]
 }
