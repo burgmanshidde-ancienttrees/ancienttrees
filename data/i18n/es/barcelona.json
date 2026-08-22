@@ -1,0 +1,31 @@
+{
+ "_note": "Spanish overlay for Barcelona, hand-written 2026-08-22. The English page is the best-performing Spanish-market page we have (46 trees, 200 impressions in ten days), so the title and meta description are written around 'arboles singulares' and 'arboles monumentales', the categories Spain and Catalonia actually use, never a literal rendering of 'ancient trees'. Place names stay Catalan, the way a resident reads them on the sign. Text only: every coordinate, photo, licence and pin stays in data/cities/barcelona.json.",
+ "city": "Barcelona",
+ "title": "Árboles singulares de Barcelona: 46, de Gràcia a Montjuïc",
+ "meta_description": "Barcelona ordena sus árboles en dos listas: más de 200 de interés local y solo cuatro monumentales. La encina de 250 años y otros 45 árboles.",
+ "intro": "Barcelona guarda sus árboles en dos listas. El catálogo municipal de árboles de interés local reúne más de 200 ejemplares, pero la declaración de árbol monumental de la Generalitat solo alcanza a cuatro, y los cuatro crecen en la misma hondonada del antiguo jardín botánico de Montjuïc. El árbol más viejo es anterior a la trama de calles de la ciudad: una encina de 250 años en un jardín que el vecindario peleó tres años por salvar. Otros dos ya crecían en el Park Güell antes de que Gaudí construyera a su alrededor. Los tres se ven gratis.",
+ "question_title": "¿Cuál es el árbol más antiguo de Barcelona? (250 años)",
+ "question_meta": "El árbol más antiguo medido de Barcelona es una encina de 250 años en Gràcia. Su historia, dónde está exactamente y otros 45 árboles notables.",
+ "question_answer": "El árbol más antiguo de Barcelona cuya edad se ha medido de verdad es una encina del carrer de l'Encarnació, en Vila de Gràcia, datada por dendrocronología en unos 250 años. Ya aparece en los planos municipales de 1845, cuando Gràcia todavía era campo, y crece en un pequeño jardín abierto al público en 2021 tras una campaña de tres años para evitar que se derribara el conjunto. Puede que haya uno más viejo: el registro municipal fecha un olivo del Park Güell en 1771, pero esa cifra es una estimación que nadie ha contrastado con la madera.",
+ "question_context": "La encina del carrer de l'Encarnació es anterior al barrio que creció a su alrededor. Gràcia era un puñado de masías dispersas cuando el árbol era joven, y aparece en los planos de 1845 de la ciudad sobre suelo rural conocido como el Pla del Bonpà, ligado a una masía llamada Can Vidalet. Los dendrocronólogos, especialistas en leer los anillos de la madera, la dataron después en unos 250 años, lo que la convierte en el árbol más viejo de Barcelona cuya edad ha medido alguien de verdad. Estuvo cerca de no llegar a esa datación: un plan urbanístico sobre las históricas Casetes de l'Encarnació que la rodean desencadenó una campaña vecinal de tres años, y en 2019 la ciudad catalogó el árbol como Árbol de Interés Local precisamente para frenar las excavadoras. El jardín que la rodea abrió al público en abril de 2021, aunque de las casas originales solo pudieron salvarse las fachadas. Si lo que busca es tamaño y no papeleo, el árbol más voluminoso de Barcelona es otra historia: una pterocaria de Rehder en el Sot de l'Estany del jardín botánico, que alcanza unos 40 metros en un hoyo por el que casi nadie baja. Cómo llegar a la encina: estación de Fontana, línea L3, y ocho minutos a pie hacia Vila de Gràcia.",
+ "faq": [
+  {
+   "q": "¿Cuál es el árbol más antiguo de Barcelona?",
+   "a": "Una encina del carrer de l'Encarnació, en Gràcia, datada por dendrocronología en unos 250 años. Aparece en los planos municipales de 1845 y sobrevivió a un plan de derribo tan reciente como el de 2019. El registro municipal fecha un olivo del Park Güell en 1771, que sería más viejo, pero esa fecha nunca se ha contrastado con la madera."
+  },
+  {
+   "q": "¿Dónde se ven mejor los árboles viejos de Barcelona?",
+   "a": "En el Jardí Botànic Històric de Montjuïc, donde crecen juntos los cuatro árboles oficialmente monumentales de la ciudad, todos en la misma hondonada, el Sot de l'Estany."
+  },
+  {
+   "q": "¿Se pueden ver gratis los árboles singulares de Barcelona?",
+   "a": "Casi todos, porque están en parques, plazas y calles públicas. Dos excepciones cobran entrada general, no una entrada por el árbol: el Jardí Botànic Històric y el Parc del Laberint d'Horta, ambos gratuitos ciertos días de la semana."
+  },
+  {
+   "q": "¿Había árboles en el Park Güell antes de que Gaudí lo construyera?",
+   "a": "Sí. Dos algarrobos del recinto son más viejos que el propio parque de Gaudí, y su diseño los rodeó en lugar de arrasarlos: uno sigue enraizado bajo las columnas de piedra de un viaducto."
+  }
+ ],
+ "strings_note": "Per-tree fields: name, species (Spanish common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes. Catalan place names are kept as written on the sign.",
+ "trees": {}
+}
