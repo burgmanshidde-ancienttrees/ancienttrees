@@ -10,6 +10,72 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-22 - Six translation passes found four errors in our own English
+
+Six overlays landed in one batch (Italian Rome, Dutch Amsterdam, German
+Vienna, Portuguese Lisbon, French Paris, Japanese Tokyo). The translations are
+the smaller half of what they produced. Rendering a story into another
+language turns out to be a fresh-eyes review of the English, because a
+translator cannot skim: every clause has to be understood before it can be
+carried across, and the ones that do not survive that are the ones that were
+never quite true.
+
+**Fixed the same session, all live before this:**
+
+- `tokyo` intro said the oldest tree "predates the Kamakura shogunate". Our own
+  figure for tok_001 is 750 years, so about 1276, and the shogunate began in
+  1185. The tree cannot predate it. Now "dates from the Kamakura period",
+  which our own number supports.
+- `tok_005` called Tokyo Tower "a 1930s landmark". It opened in 1958. The
+  sentence has been rebuilt around the real date.
+- `par_005` said the Monceau plane has "a waistline of seven metres" while
+  `par_014` said "the thickest plane in Paris, in Parc Monceau, measures eight
+  metres around", about the same tree. Both were wrong AND they contradicted
+  each other on the site. par_005's own notes carry the Ville de Paris
+  register figure, 645 cm. Both now say that.
+- `par_009` said a tree planted in 1840 "was a 30 year old tree" in the 1860s.
+
+**Not fixed, needs a check I cannot do offline:**
+
+- `tok_009` credited the Meiji Jingu Gaien avenue to "Origeshi Yoshinobu",
+  which is not a plausible romanisation. The Japanese pass reads it as
+  Orishimo Yoshinobu (折下吉延) with high confidence, and that is very likely
+  right, but I could not verify it from our own sources and hard rule 2 does
+  not bend for a likely-right name. The garbled name is REMOVED rather than
+  replaced, so the sentence now says "the landscape architect who laid it
+  out". Restore the name once somebody confirms it; the Japanese overlay
+  carries 折下吉延 already.
+
+**BLOCKER-class, staged for the next session because it changes public URLs:**
+
+- `vie_024` and `vie_028` are the same tree. Identical coordinates to the
+  metre, the same Naturdenkmal register_id 3257866, the same Baumkataster
+  baum_id 126884, the same 1894 planting and the same 315 cm girth, both named
+  "The Plane of Alser Strasse". A visitor can collect one trunk twice, which
+  is the exact fault the Potsdam and Berlin Pfaueninsel oaks were retired for
+  on 2026-08-16. It was NOT retired on the spot because removing an entry
+  moves a published URL, and hard rule 3 puts that above speed; it needs the
+  slug and redirect handled deliberately rather than at the end of a long
+  session.
+
+**Two contradictions the passes flagged that are real and still open:**
+
+- `amsterdam`: the intro calls the 35 m elm the city's tallest tree while
+  ams_003 gives a poplar 38.5 m and leaves "is anything taller" open. Both
+  renderings are faithful to the English, so the Dutch page now carries the
+  same tension.
+- `vienna` vie_006 asserts the 1783 reading in two sentences after presenting
+  1783 versus 1876 as an open dispute. The German attaches those sentences to
+  the older reading explicitly, which is better than the English does it.
+
+**And a schema gap worth naming before it is discovered as a bug:**
+`how_to_recognise` and `best_time` have no slot in the overlay format, so those
+reader-facing lines render in ENGLISH on a translated page. Five Paris trees
+carry a recognition line, and par_032's is load-bearing ("The square has two
+enormous planes. This is the one the register pins..."). The French pass
+folded three best_time moments into its prose as a workaround, which is a
+reasonable stopgap and not a fix.
+
 ## 2026-08-22 (session, continued) - Vienna 28 to 31: Rathauspark's third plane, past its 30 target
 
 Three trees, all confirmed-public: vie_029 completes Rathauspark's three-plane 1973 protection set (an earlier pass held it back as "padding"; it is the third of a designation that already exists as a trio, not a fourth plane added for its own sake). vie_030 (Black Pine, Ebner-Eschenbach-Park) and vie_031 (Sessile Oak, Prater/Belvedereallee) both needed checking against several genuinely private neighbours in the same register clusters (Wahring courtyard trees, Meiereistrasse sculptor's-studio planes) before shipping; those stayed blocked with sourced reasons in data/leads/vienna.json. Fixed two stale count promises preflight caught (meta_description "Twenty-eight", question_meta "twenty-six more"). Walk now 10.6 km (up from 10.1, still multiple clusters across a large city, each cluster itself tight). Vienna is now 1 over its 30 target, which CLAUDE.md treats as normal, not padding, since nothing was added to hit a number.
