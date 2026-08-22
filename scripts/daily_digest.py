@@ -1064,7 +1064,16 @@ def feedback_section(today):
     for r in rows:
         why = (r.get("why") or "").strip()
         head, _, tail = why.partition(":")
-        what = head.strip()[:34] or (r.get("kind") or "?")
+        # A form submission's `why` is the reader's own prose, and this file is
+        # public: print what KIND it was, never the opening of the sentence.
+        # The vote control's `why` is our own vocabulary and prints in full.
+        if r.get("kind") in ("tree", "city", "correction", "privacy"):
+            what = "%s sent in" % (r.get("kind") or "?")
+            tail = ""
+            detail_len = len(why)
+        else:
+            what = head.strip()[:34] or (r.get("kind") or "?")
+            detail_len = 0
         detail = tail.strip()
         tree = (r.get("tree") or r.get("city") or "-")
         # A vote and a chip carry the chip word in the tail; a form submission
@@ -1074,7 +1083,9 @@ def feedback_section(today):
         # thing worth knowing unreadable (Hidde, 2026-08-22: "wat is de notitie
         # van 14 tekens"). Free prose from the form stays withheld.
         note = "-"
-        if detail:
+        if detail_len:
+            note = "%d chars, read it in the database" % detail_len
+        elif detail:
             note = detail if detail in CHIPS else "%d chars" % len(detail)
         w = who(r)
         per_acct[w] = per_acct.get(w, 0) + 1
