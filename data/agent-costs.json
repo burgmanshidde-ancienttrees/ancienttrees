@@ -2885,6 +2885,15 @@
     "wasted": 0,
     "brief_wrong": false,
     "note": "Second deepen pass, same day. 4 named candidates: 2 by the Brakkenstein manor house (both went to leads, no second source naming either tree individually), 2 in Park Leeuwenstein. Of the Leeuwenstein pair, the giant sequoia was caught DEAD (fell in the storm of 18 January 2018, two independent sources) and blocked before it could ship; the magnolia (nij_013, 'Beverboom of Park Leeuwenstein') shipped flagged, species genuinely unconfirmed (register name 'beverboom' is old Dutch for Magnolia but the exact species is disputed between two candidate identifications, honestly presented as an open question)."
+   },
+   {
+    "target": "nijmegen",
+    "kind": "verify",
+    "tokens": 194841,
+    "trees": 1,
+    "wasted": 0,
+    "brief_wrong": false,
+    "note": "Third deepen pass, same day, opening two new stops: Hees (3km west, church square) and Lent (Nijmegen-Noord, across the river). 4 named candidates. 1 shipped (nij_014, Pastorie Chestnut of Lent, a genuine tree-level match against the Rijksmonument listing for its parish square). 2 went to leads (Hees church-square beech and plane, square confirmed but neither individual tree named by any source found), 0 blocked. Two more hosts added to the fetch blocklist (reliwiki.nl, services.nijmegen.nl WFS endpoint, both hang)."
    }
   ]
  }
