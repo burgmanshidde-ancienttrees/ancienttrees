@@ -16,6 +16,10 @@
     "2026-08-21": {
       "note": "WARN was right and the cause was mine: the continuation step carried no claude_args, so every second attempt ran with default permissions and was refused Edit and Write. Three runs of 148 turns each could not write a file. The tool list now lives once at workflow level and both agent steps read it.",
       "at": "2026-08-22T06:23:30+00:00"
+    },
+    "2026-08-22": {
+      "note": "Redacted Hidde's email from CURATION.md:54 (forward-looking half only, per REVIEW.md's own instruction not to rewrite git history unprompted).",
+      "at": "2026-08-22T07:16:00+00:00"
     }
   }
 }

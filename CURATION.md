@@ -51,7 +51,7 @@ still-live night run and was left alone.
 ## 2026-08-22 (night run) - Submissions 11-36: Hidde's own QA of the rebuilt worthit widget, not reader input
 
 26 new rows in `submissions`, all `kind: feedback`, all from one `user_id`
-that resolves to burgmans.hidde@gmail.com (checked via
+that resolves to his own account (checked via
 `/auth/v1/admin/users`). The pattern makes it unambiguous: rapid vote/undo
 cycles on three trees (Rome's rom_001 Ginkgo of Villa Sciarra, Amsterdam's
 ams_004 Wertheimpark Wingnut, Utrecht's utr_005 Onder de Linden), several
