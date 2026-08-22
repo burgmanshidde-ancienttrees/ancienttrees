@@ -1,0 +1,28 @@
+{
+ "leads": [
+  {
+   "register_nr": 1687753,
+   "name": "Treurbeuk (Begraafplaats Daalseweg, right of the entrance)",
+   "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+   "location": {"latitude": 51.839319, "longitude": 5.873587, "address": "Right of the entrance gate, Begraafplaats Daalseweg, Nijmegen"},
+   "planted_band": "1890-1900",
+   "why_a_lead": "Fails only the two-independent-source bar, not any hard rule. LRMB register (nr 1687753, status 3/monumentaal, n_trees=1, tree-level coordinates) is a strong single source: single weeping beech, right of the cemetery's entrance gate, on Rijksmonument grounds (Begraafplaats Daalseweg, aanleg monument nr 522938), free public Catholic cemetery, open daytime hours, owner category religieuze instantie. Could not find a second independent source naming THIS specific tree. Direct fetches of nl.wikipedia.org/wiki/Begraafplaats_Daalseweg, dodenakkers.nl, nijmeegsglorie.nl/daalseweg, begraafplaatsennijmegen.nl and groenerfgoedzorg.nl all confirm the cemetery's Rijksmonument design (two crossing paths lined with RED beeches meeting at a crucifix) but none of them, read directly, name a weeping beech or any tree specifically at the entrance gate. A WebSearch AI summary twice asserted 'large weeping beeches at the entrance gate' and 'about thirty trees on the municipal monumental list including a weeping beech among beech trees from before 1900, ash, elm, maple, yew, and a beech with an ingrown gravestone', but repeated attempts to find the underlying page that actually says this failed (rijksmonumenten.nl/monument/522938 hung on two separate fetch attempts, both via WebFetch and via curl -m 20 with a browser user agent, so it is a candidate for the fetch blocklist). Per BRIEF_RESEARCH.md's rule that a search summary is a lead, never a source, that claim is recorded here rather than used to verify the tree. Next pass: try rijksmonumenten.nl again with a longer gap, or find the municipality's own monumentale-bomen map/dataset entry for this coordinate (opendata.nijmegen.nl bomen dataset, WFS/CSV, ~60,000 municipal trees total, not yet queried for this specific point)."
+  },
+  {
+   "register_nr": 1681250,
+   "name": "Zilveresdoorn (Sumatraplein 24)",
+   "species": "Silver Maple (Acer saccharinum)",
+   "location": {"latitude": 51.836798, "longitude": 5.866109, "address": "Sumatraplein 24, Nijmegen-Oost"},
+   "planted_band": "1900-1910",
+   "why_a_lead": "Weak on both count and evidence. Register status is 2 (potentieel/potential candidate), the lowest standing in this batch, not the confirmed-monumentaal status 3 the other entries carry: the register itself is not yet calling this one designated. It is an ordinary municipal street tree (setting 'weg') of a common species with no recorded girth, no distinguishing history and no news coverage found (checked for kapvergunning/felling-permit disputes, a common way an ordinary tree gets a second source in Dutch local media: none found). Searched the Nijmegen-Oost neighbourhood association's own page about local monumental trees (nijmegen-oost.nl/berichten/leuk-wat-zijn-de-monumentale-bomen-in-jouw-buurt, fetched directly via curl with a browser user-agent after WebFetch 403'd) and it does not mention Sumatraplein or a silver maple at all. No second source found; does not yet clear either the evidence bar or a case for being remarkable beyond the register listing it as a potential candidate."
+  }
+ ],
+ "blocked": [
+  {
+   "register_nr": 1681243,
+   "name": "Beuk (Beukenlaan, Landgoed Brakkestein)",
+   "location": {"latitude": 51.820303, "longitude": 5.872431},
+   "reason": "Not a collectible point. Register place field itself reads \"Beukenlaan nabij restaurant, Landg. Brakkestein\": this stands on one of the beech-lined avenues of Brakkestein's 18th-century sterrenbos (star forest) layout. The Rijksmonument description of Park Brakkenstein (monumenten.nl/monument/522933, fetched directly) states the lanes are largely planted with beech trees ('De lanen zijn grotendeels beplant met beukenbomen'), names a specific beech avenue connecting the two far points of the diamond-shaped grounds, and gives no individual tree special recognition; a separate circle of old beeches exists in the park's northwest corner (a different feature, not this register entry). Independent sources (Digitale Huis 'Sterrenbossen in en om Nijmegen', via WebSearch summary only, page itself 403'd) corroborate that the beeches along the lanes are collectively ~250-300 years old from the original planting, i.e. this register entry is one of a run of similar-aged, similar-looking beeches along a lane rather than a distinguishable individual, the same avenue/whole-wood exclusion BRIEF_RESEARCH.md names explicitly. Planted_band 1700-1750 would make it (if it were a valid standalone entry) the oldest candidate in this batch, so it is recorded here rather than discarded in case a future pass finds it is in fact visually distinct from its neighbours (a girthier trunk, a plaque) that would let it re-qualify."
+  }
+ ]
+}

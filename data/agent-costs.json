@@ -2866,6 +2866,17 @@
     "wasted": 160720,
     "note": "First queue viewing pass in session: 30 photo-less trees (shortlist cities + the ten favourites), 63 candidates, 34 viewed as pixels. Zero approvals, one held (Hilo banyan, species unclear, no geotag), 62 rejected. Two identity traps caught (Rotterdam's 2013 Koningslinde 59 m from the 1898 Wilhelmina Linden; Sydney's collapsed 1928 jacaranda for the 2017 clone). Confirms the 2026-08-09 burn-list finding: the Commons lane is exhausted for the rollout cities."
    }
+  ],
+  "2026-08-22": [
+   {
+    "target": "nijmegen",
+    "kind": "verify",
+    "tokens": 168190,
+    "trees": 1,
+    "wasted": 0,
+    "brief_wrong": false,
+    "note": "Deepen pass, 4 named candidates from the LRMB register cemetery/square cluster around Nijmegen centre. 1 shipped (nij_012, Wilhelminaboom of Hertogplein, a 1898 coronation-lime whose age is genuinely disputed between sources, delivered honestly as disputed rather than resolved). 2 went to leads (weak/no second source), 1 blocked (an avenue tree, not a single collectible point, caught via the register's own n_trees field before the pass even started)."
+   }
   ]
  }
 }

@@ -10,6 +10,44 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-22 (session) - Nijmegen 11 to 12, one tree, and the rest recorded as leads/blocked
+
+Finished the verify claim the previous attempt in this window left standing
+(scout_next --target still said BUILD Nijmegen: 159 unjudged register trees,
+nothing to scout). Picked 4 single-tree candidates from the LRMB register
+around the centre, all confirmed via the register's own `n_trees` field to
+be individual specimens rather than rows: several nearby cemetery entries
+(n_trees 4, 12, 14, 28) were excluded before dispatch for exactly that
+reason, they are avenue/row plantings, not collectible points.
+
+**Shipped: nij_012, The Wilhelminaboom of Hertogplein** (Lime, species not
+otherwise identified). A lime planted 1 September 1898 for Wilhelmina's
+coronation, ringed by a wrought-iron fence whose crowns were removed by the
+Germans and restored in 1948. Sources genuinely conflict on whether the
+tree standing today is the 1898 original: Dutch Wikipedia says the old lime
+"has made way for another"; a 2025 local-history blog describes today's
+tree without mentioning any replacement; the register's own planted_band
+(1880s) predates the 1898 date the narrative sources give. Delivered all
+three facts rather than picking a winner, `age_estimate` left blank, marked
+`flagged`. This is the bridge-claim trap almost in reverse: rather than
+join the facts into a tidy story, the story says plainly that nobody has
+reconciled them.
+
+**2 leads, 1 blocked**, all in `data/leads/nijmegen.json`. The blocked one
+(a beech on "Beukenlaan", Landgoed Brakkestein) would have been the oldest
+candidate in the batch, planted_band 1700-1750, but the register's own
+place name and the park's Rijksmonument description confirm it sits on a
+beech-lined avenue with no individual recognition, the avenue exclusion
+BRIEF_RESEARCH.md names explicitly.
+
+`rijksmonumenten.nl` added to the fetch blocklist: hangs on individual
+monument pages, both WebFetch and curl with a browser UA.
+
+Released the Brisbane claim the earlier attempt left standing (558 unnamed
+"significant landscape trees" candidates, no names to work from yet, not
+today's priority per scout_next). Salzburg's claim belongs to a separate,
+still-live night run and was left alone.
+
 ## 2026-08-22 (night run) - Submissions 11-36: Hidde's own QA of the rebuilt worthit widget, not reader input
 
 26 new rows in `submissions`, all `kind: feedback`, all from one `user_id`
