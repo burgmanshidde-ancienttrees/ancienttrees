@@ -9,6 +9,7 @@ Sources:
 Stdlib only (hard rule 5). Safe to run twice a day: the second run is a no-op.
 """
 import datetime
+import hashlib
 import glob
 import json
 import os
@@ -589,7 +590,7 @@ query($tag: String!, $since: Date!, $until: Date!) {
         filter: {date_geq: $since, date_lt: $until}, orderBy: [date_ASC]) {
       count dimensions { date } sum { visits }
     }
-    paths: rumPageloadEventsAdaptiveGroups(limit: 5,
+    paths: rumPageloadEventsAdaptiveGroups(limit: 12,
         filter: {date_geq: $since, date_lt: $until}, orderBy: [count_DESC]) {
       count dimensions { requestPath }
     }
@@ -663,10 +664,23 @@ query($tag: String!, $since: Date!, $until: Date!) {
         speed = "\n- Page load (8d): p50 %dms, p90 %dms" % (
             (qq.get("pageLoadTimeP50") or 0) / 1000,
             (qq.get("pageLoadTimeP90") or 0) / 1000)
+    # How much of the site people actually walk through, which is the closest
+    # thing to navigation this beacon can give (Hidde, 2026-08-22: "hoe ze
+    # navigeren"). A pageview whose referrer is our own host is somebody
+    # moving from one of our pages to another; one from a search engine or
+    # nothing at all is an arrival. Cloudflare's cookieless beacon carries no
+    # session, so page-to-page paths do not exist to be reported: this ratio
+    # and pages-per-visit are the honest substitutes.
+    internal = sum(r["count"] for r in refs
+                   if "ancienttrees.app" in (r["dimensions"].get("refererHost") or ""))
+    total_pv = sum(r["count"] for r in refs) or 1
+    nav = ("\n- Moved between our own pages: %d of %d pageviews (%.0f%%); the rest arrived "
+           "from search or straight in. Cookieless means no session, so which page led to "
+           "which cannot be measured." % (internal, total_pv, 100.0 * internal / total_pv))
     return ("Web Analytics (beacon, real browsers, cookieless):\n"
             "Counts are bucketed to the nearest ten by Cloudflare; read the window, not the day.\n%s\n- Top paths: %s\n"
-            "- Referrers: %s\n- Countries: %s\n- Devices: %s%s"
-            % (trend, top, _dim(refs, "refererHost"),
+            "- Referrers: %s%s\n- Countries: %s\n- Devices: %s%s"
+            % (trend, top, _dim(refs, "refererHost"), nav,
                _dim(countries, "countryName"), _dim(devices, "deviceType"), speed)
             + "\n\n" + referrers_section(refs))
 
@@ -997,6 +1011,70 @@ def product_section(today):
         out.append("- %-12s %d total, newest %s" % ("Accounts:", acc, _ago(since)))
     except Exception as e:
         out.append("- Accounts: unreadable (%s)" % str(e)[:60])
+    return "\n".join(out)
+
+
+def feedback_section(today):
+    """What readers actually told us, one line each, so the count can be judged.
+
+    Hidde, 2026-08-22, after a day showed 16 feedback rows: "ik wil wel dat je
+    kunt uitlezen of de feedback nuttig is." A count cannot answer that. Sixteen
+    thumbs from one account on one afternoon is us testing the control; three
+    wrong-location reports on three trees from three accounts is a work queue.
+    The difference is visible only per row.
+
+    What this prints and what it deliberately does not. Structure only: the
+    day, the tree, the verdict or the chip, and a four-character marker for the
+    account so repeat senders and our own test traffic are recognisable without
+    naming anybody. The reader's own words are NOT printed here, because
+    DATA.md sits in a public repository and a sentence somebody typed about a
+    tree can carry anything. A note is flagged as present; reading it is a
+    session job against the database, where it belongs.
+    """
+    key = os.environ.get("SUPABASE_SERVICE_KEY")
+    if not key:
+        return None
+    since = (today - datetime.timedelta(days=14)).isoformat()
+    try:
+        rows, _ = _supa("/rest/v1/submissions?select=id,created_at,kind,city,tree,why,"
+                        "user_id,outcome&created_at=gte.%sT00:00:00&order=created_at.asc" % since, key)
+    except Exception as e:
+        return "**What readers told us**: unreadable today (%s)" % str(e)[:60]
+    rows = [r for r in (rows or []) if r.get("id") not in TEST_SUBMISSION_IDS]
+    if not rows:
+        return None
+
+    def who(r):
+        uid = r.get("user_id")
+        if not uid:
+            return "no acct"
+        return hashlib.sha1(str(uid).encode()).hexdigest()[:4]
+
+    out = ["**What readers told us** (14 days, structure only; the words stay in the database)",
+           "", "| Day | Tree | What | Note | From | Outcome |", "|---|---|---|---|---|---|"]
+    per_acct = {}
+    for r in rows:
+        why = (r.get("why") or "").strip()
+        head, _, tail = why.partition(":")
+        what = head.strip()[:34] or (r.get("kind") or "?")
+        detail = tail.strip()
+        tree = (r.get("tree") or r.get("city") or "-")
+        # A vote and a chip carry the chip word in the tail; a form submission
+        # carries prose, which is the thing we do not print.
+        note = "-"
+        if detail:
+            note = detail[:22] if len(detail) <= 22 and " " not in detail[:22] else "%d chars" % len(detail)
+        w = who(r)
+        per_acct[w] = per_acct.get(w, 0) + 1
+        out.append("| %s | %s | %s | %s | %s | %s |" % (
+            str(r.get("created_at"))[5:10], tree[:34], what, note, w, r.get("outcome") or "-"))
+    lead = max(per_acct.items(), key=lambda x: x[1])
+    if len(rows) >= 5 and lead[1] > len(rows) / 2:
+        out += ["", "- %d of these %d came from one account (%s). At this volume that is "
+                    "almost certainly our own testing rather than readers, and it should be "
+                    "read that way until somebody checks the rows." % (lead[1], len(rows), lead[0])]
+    else:
+        out += ["", "- %d rows from %d accounts." % (len(rows), len(per_acct))]
     return "\n".join(out)
 
 
@@ -1474,6 +1552,7 @@ def main():
             blocks.append("%s: failed today (%s)." % (fn.__name__, str(e)[:90]))
 
     block(product_section, today)
+    block(feedback_section, today)
     block(funnel_section, today, token)
 
     gsc_latest = None
