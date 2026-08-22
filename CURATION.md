@@ -1091,3 +1091,35 @@ frainetto, register nr 1697320). Real and visitable, but the register's history
 for it is generic species prose copied from ecotree.green and no second source
 turned up, so there was nothing to write. It stays in
 data/leads/eindhoven-register.json.
+
+## Apeldoorn and Tilburg, 2026-08-22
+
+Both opened from the Dutch LRMB register. Apeldoorn 8 trees, Tilburg 7, all
+flagged, no photos hunted.
+
+**Tilburg: a felled tree found in the register before it shipped.** The register
+carries a Dutch lime on the Heuvel with a planting band of 1600-1700. That tree
+was cut down in 1994 at roughly five hundred years old, after heavy public
+protest, and three descendants were planted on the rebuilt square on 26 March
+2009. It is blocked in data/leads/tilburg-register.json and must never be
+published. The register's own felled-entry regex could not catch it, because
+that regex reads the `history` field and this entry has none.
+
+That produced a rule, now in scripts/nl_candidates.py as `needs_alive_check()`:
+a candidate 200 years or older whose register history is empty or "onbekend"
+gets one web check before publishing. 58 percent of the 1,017 candidates across
+the 25 cities have no history at all, but only 24 of those are 200+ years old,
+so the check is affordable. `python3 scripts/nl_candidates.py <city> --risky`
+lists them and the ordinary brief marks them "<< CHECK ALIVE".
+
+Not settled:
+- **Apeldoorn.** Five of the eight stand inside Paleis Het Loo, which is a paid
+  site: palace and formal gardens on a museum ticket, the surrounding Paleispark
+  on a two euro day ticket. Stated per tree in `access`. Four of them are on the
+  alive-check list and were published on the register alone, on the reasoning
+  that a palace garden is intensively managed and a loss there would be recorded;
+  that reasoning is weaker than a check and is recorded here as such.
+- **The Woldhuis lime, Apeldoorn.** Banded 1600-1700 with no reasoning at all,
+  so it may be the oldest tree in the city or may not. The page asks readers for
+  a girth measurement at 1.30 metres, which is the number that would settle it.
+- **Photos: none for either city.** Not hunted this pass.

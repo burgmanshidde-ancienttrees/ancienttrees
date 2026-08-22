@@ -726,26 +726,6 @@
    "site_history": "Het Leijpark is een park van 30 hectare in zuidoost Tilburg. Het is het laatste grote ontwerp van de bekende tuinarchitect Leonard Springer. Het park is vernoemd naar het riviertje de Leij dat er langs stroomt. Hoewel het 1e ontwerp stamt uit 1919 is het park pas aangelegd tussen 1934 en 1939 als werkverschaffingsproject.  Dit uitstel werd o.a. veroorzaakt door problemen met de grondaankoop en de aanwezigheid van een boerderij. Het park is aangelegd in Engelse landschapsstijl."
   },
   {
-   "nr": 1683029,
-   "register_name": "Hollandse linde",
-   "own_name": null,
-   "species": "Common Lime (Tilia x europaea)",
-   "species_unmapped": null,
-   "age_min": 326,
-   "age_max": 426,
-   "age_estimate": "roughly 330 to 430 years, from the register's planting band of 1600-1700",
-   "planted_band": "1600-1700",
-   "latitude": 51.557308,
-   "longitude": 5.090503,
-   "place": "Tilburg, Heuvel",
-   "setting": "plein",
-   "owner_category": "gemeente",
-   "honour_class": "nee",
-   "form": "Kunstsnoeivorm",
-   "reason": "monumentaal",
-   "site_history": "onbekend"
-  },
-  {
    "nr": 1689155,
    "register_name": "Wilsonpopulier",
    "own_name": null,
@@ -1144,6 +1124,29 @@
    "form": "Meerstammig",
    "reason": "Goed_zichtbaar_voor_publiek?\nZeldzame_soort_in_de_regio?\nCultuur-historische_betekenis",
    "site_history": "De hier beschreven collectie omzoomde de voormalige gemeentewerf aan de Tatraweg. Ze begrenst nu een drietal straten van de woonwijk Zuiderpark. De bomen zijn nu zo’n vijfenzeventig jaar oud. Als eerste uitbreiding van de gemeentekwekerij is begin 1950 ten behoeve van het avondonderwijs aan hoveniers en bloemisten een collectie bomen en struiken aangelegd. Daaronder een fraai aantal zeldzame bomen en struiken. Vanaf 1953 konden per seizoen zo’n veertig leerlingen van de tuinbouwschool worden opgeleid. In de twintig jaar van het bestaan van de avondopleiding vonden daar zo’n 800 tot 1000 leerlingen ‘s zomers hun weg. Via de sierteeltschool, in 1967 geopend aan de Leijparkweg, kwamen ze twee avonden in de week plantenkennis opdoen. Onder andere om zich de Latijnse en Nederlandse namen van de bijzondere bomen en struiken eigen te maken. Langs het ‘zweetlaantje’, bedoeld om de bomen en struiken daar op de juiste manier te leren benoemen, deed men examen."
+  }
+ ],
+ "blocked": [
+  {
+   "nr": 1683029,
+   "register_name": "Hollandse linde",
+   "own_name": null,
+   "species": "Common Lime (Tilia x europaea)",
+   "species_unmapped": null,
+   "age_min": 326,
+   "age_max": 426,
+   "age_estimate": "roughly 330 to 430 years, from the register's planting band of 1600-1700",
+   "planted_band": "1600-1700",
+   "latitude": 51.557308,
+   "longitude": 5.090503,
+   "place": "Tilburg, Heuvel",
+   "setting": "plein",
+   "owner_category": "gemeente",
+   "honour_class": "nee",
+   "form": "Kunstsnoeivorm",
+   "reason": "monumentaal",
+   "site_history": "onbekend",
+   "blocked_reason": "FELLED 1994. The famous Heuvel lime stood from about 1598 and was cut down in 1994 at roughly five hundred years old; three descendants were planted on the square on 26 March 2009. The register still carries this entry. Never publish it. Checked 2026-08-22."
   }
  ]
 }

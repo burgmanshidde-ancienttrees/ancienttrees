@@ -1,0 +1,263 @@
+{
+ "city": "Tilburg",
+ "country": "Netherlands",
+ "status": "needs_curation",
+ "intro": "Tilburg is probably named after a lime tree, and the lime is not there any more. One stood on the Heuvel from about 1598, so wide that a visitor in 1667 counted 62 paces around the crown and 28 pillars holding it up. It was felled in 1994 against loud protest, and three of its descendants were planted on the square in 2009. So this page is the trees that survived instead: the oldest elm in the city, two in a park dug by unemployed men in the 1930s, and a lime that outlived the famous one by thirty years.",
+ "meta_description": "Seven remarkable trees in Tilburg: the city's oldest elm, two in Leonard Springer's last park, and the story of the lime the city may be named after.",
+ "question_meta": "Tilburg's oldest surviving tree is a silver lime at the Frater Paullussehof, banded 1830 to 1840. The famous Heuvel lime was felled in 1994.",
+ "question_answer": "The oldest tree still standing in Tilburg is a silver lime at the Frater Paullussehof, which the national register places in a planting band of 1830 to 1840, so somewhere approaching two centuries. The question is complicated by the tree most people mean when they ask it. A lime stood on the Heuvel, the city's central square, from about 1598, and it was cut down in 1994 at roughly five hundred years old. When the stump was lifted it turned out to be hollow, with a young shoot growing inside it from its own root. Three descendants of that tree were planted on the rearranged Heuvel on 26 March 2009, so there is a lime on the square again, but it is seventeen years old rather than five hundred.",
+ "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every age on this page is a band and none has been narrowed to look precise. The register is the 2024 edition and is the single source for most of these trees, which is why they are flagged. It is also why the Heuvel lime is not on this page: the register still carries an entry for a lime on the Heuvel with a planting band of 1600 to 1700, and that tree has been gone since 1994. We checked it rather than publishing it, and that check is the reason to treat every old register entry as a claim rather than a fact. If you go to one of these and find it has gone the same way, tell us and it comes off the same day. Pins marked approximate mean we know the park and not the trunk.",
+ "hero_tree_id": "til_001",
+ "oldest_tree_id": "til_002",
+ "faq": [
+  {
+   "q": "What happened to the famous lime tree on the Heuvel?",
+   "a": "It was felled in 1994, after standing since about 1598, despite heavy protest. The crane lifted a hollow stump with a young shoot growing inside it from the tree's own root. On 26 March 2009 three descendants were planted on the rebuilt square, so there is a lime on the Heuvel again, just not that one."
+  },
+  {
+   "q": "Is Tilburg really named after a lime tree?",
+   "a": "It is a plausible reading rather than a settled one. Tilia is the Latin for lime, and the tree on the Heuvel was the town's unofficial symbol for centuries, with justice pronounced under it. The etymology is argued about; the association is not."
+  },
+  {
+   "q": "What is the oldest tree in Tilburg now?",
+   "a": "A silver lime at the Frater Paullussehof, banded 1830 to 1840 by the national register. The elm in the Wilhelminapark is the oldest elm in the city and, according to the register, was already standing before the park was laid out around it."
+  },
+  {
+   "q": "Are they free to visit?",
+   "a": "All seven. The Wilhelminapark and the Leijpark are open public parks, the Korvelplein is a square, and the two limes stand in public planting. Nothing here has a gate or a charge."
+  }
+ ],
+ "trees": [
+  {
+   "id": "til_001",
+   "name": "The Oldest Elm of Tilburg",
+   "species": "Dutch Elm (Ulmus x hollandica)",
+   "age_estimate": "roughly 145 to 155 years, from the register's planting band of 1870 to 1880",
+   "age_min": 146,
+   "age_max": 156,
+   "location": {
+    "address": "Wilhelminapark, in the south corner of the park",
+    "latitude": 51.56563,
+    "longitude": 5.07784,
+    "neighbourhood": "Wilhelminapark"
+   },
+   "story": "The register says two things about this tree and both are worth having. It is the oldest elm in Tilburg, and it was already standing before the park was laid out around it.\n\nThat second fact is the interesting one. A park built around an existing tree is a different object from a park planted from nothing: somebody stood on this ground, looked at what was here, and drew the paths to keep it. The elm was the reason for a decision rather than the result of one.\n\nBeing the oldest elm anywhere in the Netherlands is a harder thing than it sounds. Dutch elm disease arrived here in the 1920s and the second, far more aggressive strain in the 1970s, and between them they killed most of the mature elms in the country. Whole avenues went. An elm that reached a century and a half through both waves did so partly by luck of position, standing alone in a park corner rather than in a line where the beetles could work along it.\n\nIt is in the south corner. Elms leaf late and hold on late, so in November it is often still green when the rest of the park has turned.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Public park, open daily.",
+   "transport": "About 1.5 km north of Tilburg station, on foot.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "In the south corner, with the asymmetric leaf base elms have, one side of the leaf starting lower on the stalk than the other.",
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "til_002",
+   "name": "The Silver Lime of the Frater Paullussehof",
+   "species": "Silver Lime (Tilia tomentosa)",
+   "age_estimate": "roughly 185 to 195 years, from the register's planting band of 1830 to 1840",
+   "age_min": 186,
+   "age_max": 196,
+   "location": {
+    "address": "Frater Paullussehof 141",
+    "latitude": 51.55556,
+    "longitude": 5.08176,
+    "neighbourhood": "Centrum"
+   },
+   "story": "The oldest tree standing in Tilburg is a lime, which in a town that may be named after a lime is a decent piece of luck, and it is not on the square where anyone would look for it.\n\nSilver lime is worth learning to recognise, because the trick is easy and it works from thirty metres. The underside of every leaf is coated in fine white felt, so on a windy day the whole crown flickers between deep green and pale silver as the leaves turn over. No other large lime does this.\n\nIt has a second habit that is less charming. Silver lime flowers late, in July, and its nectar is famously hard on bumblebees; you sometimes find them stunned or dead under a big one in high summer. The mechanism has been argued over for decades and the current reading is that it is less about toxicity than about a starving late-season insect finding a huge, tempting, low-yield food source at the wrong moment.\n\nSo: go in July for the scent, which is heavy and carries a long way down a street, and look at the ground while you are there.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Public planting in a residential courtyard, open at any time.",
+   "transport": "About 1 km northwest of Tilburg station, on foot.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "A big lime whose leaves flash white underneath in any breeze.",
+   "best_time": {
+    "months": [
+     7
+    ],
+    "kind": "flowers",
+    "label": "July, when the whole tree smells of honey from a street away"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "til_003",
+   "name": "The Canadian Poplar of the Wilhelminapark",
+   "species": "Canadian Poplar (Populus x canadensis)",
+   "age_estimate": "roughly 155 to 165 years, from the register's planting band of 1860 to 1870",
+   "age_min": 156,
+   "age_max": 166,
+   "location": {
+    "address": "Wilhelminapark, in the northeast corner of the park",
+    "latitude": 51.56653,
+    "longitude": 5.07929,
+    "neighbourhood": "Wilhelminapark"
+   },
+   "story": "Poplars are not supposed to get this old, which is the entire reason to go and look at this one.\n\nCanadian poplar is a hybrid of the European black poplar and the American eastern cottonwood, first raised in France in the eighteenth century and then planted across Europe by the million for the same reason people plant it now: it grows faster than almost anything else, throwing up several feet a year on wet ground. The trade-off is that it is soft-timbered, brittle in storms and generally treated as a crop rather than a monument. A hundred years is a good run. Most are taken out well before that because a limb has come down.\n\nThis one is somewhere past a century and a half and still standing in the northeast corner of the park, which means it has been through every serious storm since the 1860s without losing enough to condemn it.\n\nThe sound is the other thing. Poplar leaves are held on flattened stalks that let the blade pivot, so the whole crown rattles in wind that barely moves the trees beside it. On a breezy day you hear this one before you see it.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Public park, open daily.",
+   "transport": "About 1.5 km north of Tilburg station, on foot.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "The tallest tree in the northeast corner, with a crown that rattles audibly in light wind.",
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "til_004",
+   "name": "The Sessile Oak of the Korvelplein",
+   "species": "Sessile Oak (Quercus petraea)",
+   "age_estimate": "roughly 115 to 125 years, from the register's planting band of 1900 to 1910",
+   "age_min": 116,
+   "age_max": 126,
+   "location": {
+    "address": "Korvelplein 200",
+    "latitude": 51.54895,
+    "longitude": 5.06858,
+    "neighbourhood": "Korvel"
+   },
+   "story": "In 1923 they took the church off this square.\n\nThe old Korvel church stood in the middle of the Korvelplein. It was removed and replaced by a new one built at the edge, which left a large empty space in a busy district, and the response was to plant it properly with trees. This oak is one of those, and the register bands it slightly earlier, 1900 to 1910, so it may have been standing before the clearance and been kept.\n\nIt is a sessile oak rather than the pedunculate oak that turns up everywhere else in the Netherlands, and the difference is easy once you know it. Pedunculate oak hangs its acorns on long stalks and has almost no stalk on the leaf. Sessile oak does the reverse: acorns sitting tight against the twig, leaves on a clear stalk of a centimetre or more. Sessile is the upland species, the one that prefers drier and poorer ground.\n\nA square is a hard place to be a tree. Paving over the roots, salt in winter, cars, and a hundred and twenty years of it. This one has managed, and the Korvelplein is one of the more pleasant squares in the city because of trees like it.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Public square, open at any time.",
+   "transport": "About 1.5 km west of Tilburg station, on foot or a short bus ride to Korvel.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "An old oak on the square with acorns sitting tight to the twig and leaves on a clear stalk.",
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "til_005",
+   "name": "The Silver Maple of the Leijpark",
+   "species": "Silver Maple (Acer saccharinum)",
+   "age_estimate": "roughly 85 to 95 years, from the register's planting band of 1930 to 1940",
+   "age_min": 86,
+   "age_max": 96,
+   "location": {
+    "address": "Leijpark, centrally in the park, Professor van Bruchemlaan 2",
+    "latitude": 51.54646,
+    "longitude": 5.10541,
+    "neighbourhood": "Leijpark"
+   },
+   "story": "This park was dug by unemployed men.\n\nLeonard Springer, the most sought-after garden architect in the Netherlands, drew the Leijpark in 1919 as his last large design. Then nothing happened for fifteen years: the land could not be bought and there was a farm sitting in the middle of it. It was finally laid out between 1934 and 1939 as a work relief project, in the depths of the depression, thirty hectares in the English landscape manner along the little river Leij that gives it its name.\n\nSo this silver maple was planted by men who were there because there was no other work. Springer designed the picture and never saw it finished.\n\nSilver maple is another American import chosen for speed, and it has the finest-cut leaf of any maple you will meet here, deeply divided into five narrow lobes with silvery-white undersides. It flowers absurdly early, in March, before any leaf, small red and yellow tufts straight on the bare twigs. It is one of the first trees in the park to do anything at all after winter.\n\nStand in the middle of the park and it is the one with the pale flickering crown.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Public park, open daily.",
+   "transport": "About 2.5 km southeast of Tilburg station.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "Deeply cut five-lobed leaves that show silver-white underneath, centrally in the park.",
+   "best_time": {
+    "months": [
+     3
+    ],
+    "kind": "flowers",
+    "label": "March, when it flowers on bare twigs before anything else moves"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "til_006",
+   "name": "The Oak of the Leijpark",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "roughly 85 to 95 years, from the register's planting band of 1930 to 1940",
+   "age_min": 86,
+   "age_max": 96,
+   "location": {
+    "address": "Leijpark, on the northwest side, Professor van Bruchemlaan 2",
+    "latitude": 51.54768,
+    "longitude": 5.10474,
+    "neighbourhood": "Leijpark"
+   },
+   "story": "The youngest tree on this page and the one that will outlast every other by centuries.\n\nIt went in with the rest of the Leijpark planting between 1934 and 1939, part of the work relief scheme that finally built Springer's 1919 design. At under a century it is barely started. Pedunculate oak routinely reaches four hundred years in the Netherlands and the veterans on sandy ground in Brabant go beyond that, which means the silver maple beside it, the poplar in the Wilhelminapark and the elm in the south corner will all be gone while this one is still filling out.\n\nThat is a genuinely strange thing to stand in front of. A park laid out in a depression by men who needed the wages, planted with trees on wildly different clocks, and the plainest one in it is the one making the long bet.\n\nIt is on the northwest side, in Springer's English landscape arrangement of grass opening into stands of trees. Come in October: an oak this age is producing serious quantities of acorns, and the ground under it is worth looking at.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Public park, open daily.",
+   "transport": "About 2.5 km southeast of Tilburg station.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "A broad oak on the northwest side of the park, with acorns on long stalks.",
+   "best_time": {
+    "months": [
+     10
+    ],
+    "kind": "fruit",
+    "label": "October, when the acorns are down"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "til_007",
+   "name": "The Silver Lime of the Villa Garden",
+   "species": "Silver Lime (Tilia tomentosa)",
+   "age_estimate": "roughly 135 to 145 years, from the register's planting band of 1880 to 1890",
+   "age_min": 136,
+   "age_max": 146,
+   "location": {
+    "address": "Park on the Fokkerpad, opposite number 11",
+    "latitude": 51.54929,
+    "longitude": 5.07211,
+    "neighbourhood": "Fokkerpad"
+   },
+   "story": "This small park was somebody's garden, designed by Leonard Springer.\n\nThat is all the register says about it, and it is enough to change how the place reads. Springer laid out estates, cemeteries, arboreta and the Leijpark on the other side of town, and he also took private commissions from people building villas. A garden of that kind was made to be walked in by one family. This one ended up as public ground, which is the usual fate of a nineteenth century villa garden in a city that grew past it.\n\nThe lime is from that planting, banded 1880 to 1890. Silver lime was a favourite of designers in exactly this period, because it does something no other large tree does: the white-felted undersides of the leaves make the whole crown pale and unsettled whenever there is wind, so a single one placed against darker trees lifts a composition without any need for flowers.\n\nSo look at it as a piece of design rather than as a specimen. It is standing where a professional put it, for a reason he could have explained, in a garden whose owner is long gone and whose gate is now open to everyone.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Public park, open daily.",
+   "transport": "About 1.5 km west of Tilburg station, on foot.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "The lime with white-backed leaves, standing against the darker planting of the old villa garden.",
+   "best_time": {
+    "months": [
+     7
+    ],
+    "kind": "flowers",
+    "label": "July, when the scent fills the whole garden"
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate"
+  }
+ ]
+}
