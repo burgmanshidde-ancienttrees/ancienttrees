@@ -12,6 +12,54 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-22 (session, night run) - Nijmegen 8 to 11, and the rescue attempt that could not write
+
+Ran the ladder as a night run does. Rung 1 skipped, no Supabase key here.
+Rung 2 clear. Rung 3 had a WARN, and it was about my own work.
+
+**The fresh-eyes review was right and the cause was mine.** It flagged that
+Tuesday's continuation fix was firing but not working: three runs since, all
+`attempts: 2`, all ending at 15-26 minutes with 0 trees, and denial rates three
+times the healthy ones. The denial log I added the day before named the wall in
+one word: **Edit and Write, refused**. A second attempt that cannot write a file
+cannot publish a tree, which is why 148 turns bought nothing three nights
+running.
+
+The reason was one line that was never there. `claude_args`, carrying the whole
+allowedTools list, sat inside the first agent step and I wrote the continuation
+step without it, so it ran on default permissions. Rather than paste the list
+twice, it now lives once at workflow level and both steps read the same name.
+That is the third value this week that caused a bug by being written down twice.
+
+**Rung 4 sent me to Nijmegen** (`scout_next --target`: BUILD, 159 unjudged
+register trees in hand, nothing to scout), rank 45, 30 impressions, 8 trees
+against a target of 20.
+
+The Dutch LRMB register turns out to be the richest we hold, and worth knowing
+about: besides species, coordinates and a planting band it carries `visitable`
+and `visible`, which answers hard rule 10 from the data rather than from a
+search, plus an owner category and a written history per tree. Its licence was
+re-checked on 2026-08-18 and is attribution-only, not the non-commercial one
+CLAUDE.md still claims.
+
+Three trees, all `visitable: ja`, all with a second source:
+
+| tree | age | why |
+|---|---|---|
+| The Kabouterboom | 300-450 | the thickest tree in the Netherlands, over 8.5 m round, hollow so uncountable. Children in Beek are told gnomes live inside. They set it on fire in January 2005 and it leafed out again that spring |
+| The Limes of the Kopse Hof | 225-275 | on the plateau the Romans fortified in 12 BC for the same view; dated from the Tranchot map of 1803 and the cadastral map of 1811, and filed as a kruisboom, a tree planted for a religious purpose |
+| The Yew of the Bartholomeuskerkje | not stated | churchyard first recorded in a charter of 1286. The age rests on one source's argument from a Koekkoek painting of about 1830, so the page presents it as an argument and carries no number |
+
+That moved the city's oldest from the Sterrenbos beech circle at 275 years to a
+chestnut that may be 450, so the question page, the intro, the meta and the FAQ
+moved with it. The build check caught the count promise the moment the trees
+went in.
+
+**FOR HIDDE: nothing blocks.** One stale sentence noted and not yet fixed:
+CLAUDE.md's register-layer rule still names the NL national register as
+non-commercial and therefore disqualified, which the 2026-08-18 licence recheck
+overturned. Worth correcting before it stops a run that has no reason to doubt it.
+
 ## 2026-08-22 - Night run 2026-08-22 05:33 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 16.0 minutes of its 120 minute window, 148 turns, 42 commands refused by the allowlist, ended clean (success). 7 commit(s), none of them a published tree. Claims left behind: brisbane, padua, nijmegen, which block the top of the queue until they expire.
