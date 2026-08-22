@@ -2,7 +2,7 @@
  {
   "id": "hnl_001",
   "name": "The Foster Garden Baobab",
-  "species": "African Baobab (Adansonia digitata)",
+  "species": "Baobab (Adansonia digitata)",
   "age_estimate": "planted in the 1930s, roughly 90-100 years",
   "age_min": 90,
   "age_max": 100,
@@ -23,12 +23,18 @@
   "transport": "On N. Vineyard Blvd in downtown Honolulu, on the edge of Chinatown; several TheBus routes run along Vineyard Blvd past the garden entrance.",
   "location_precision": "approximate",
   "curation_status": "ai_generated",
-  "verify_notes": "Nicknamed the 'Dead Rat Tree' locally for its large hanging fuzzy seed pods. Planted in the 1930s (source gives the decade, not a specific year); now roughly 20m/66ft tall per the Hawaii Exceptional Trees register, girth 12.98m circumference (diameter/girth cross-check 'ok' in the register import). Register vitality rating 'Good'; this row carries no assessment date (unlike the ~55 Oahu rows in this register dated Jan-Mar 2017, so treat the vitality call as of unknown but comparable vintage, roughly a decade old). Photographed as part of the garden's own feature spread in the Aug 2023 Honolulu Star-Advertiser piece marking the garden's reopening after a $1.26M ADA-renovation closure, which is good evidence it was alive and standing then. One of ~25 of Oahu's ~100 city-designated 'Exceptional Trees' concentrated in this one 14-acre municipal garden (City and County of Honolulu, Dept. of Parks and Recreation), all within easy walking distance of each other. Garden address given as '180 N. Vineyard Blvd' by the register, Star-Advertiser, Yelp and the Waikiki Trolley stop list; Wikipedia and the NRHP listing instead give '50 North Vineyard Boulevard' for the same property, an unresolved discrepancy in how the garden's own address is quoted across sources, not a location question (all agree it is the one Foster Botanical Garden on Vineyard Blvd). Coordinates are the garden's own published centroid (21.3167, -157.8592, from Wikipedia's cited 21 19'00\"N 157 51'33\"W), not a tree-level pin within the 14-acre grounds, hence approximate."
+  "story": "Honolulu calls this one the Dead Rat Tree. The nickname is the seed pods: grey, furred, hanging on long stalks all around the crown, and once you have seen them you cannot unsee them. Under the pods is an African baobab, planted in Foster Botanical Garden in the 1930s and already carrying a trunk close to thirteen metres around. Ninety-odd years for that waistline is quick work, even for a species that grows a trunk largely to store water in it. The city's Exceptional Trees register gives its height as about twenty metres and rates its condition good.\n\nBaobabs belong to dry African savanna, where they stand bare for months and flower at night for bats. This one has spent its whole life on fourteen acres of downtown Honolulu at the edge of Chinatown, on ground that was a private botanical collection long before the city took it over. It sat out a 1.26 million dollar renovation that closed the garden completely, and was still standing when the gates reopened in August 2023.\n\nAbout twenty five of Oahu's hundred or so protected Exceptional Trees grow inside these same fourteen acres. That is the argument for the entrance fee: nowhere else on the island puts this many designated trees within a five minute walk of each other.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  }
  },
  {
   "id": "hnl_002",
   "name": "The Foster Garden Bodhi Tree",
-  "species": "Sacred Fig / Bodhi Tree (Ficus religiosa)",
+  "species": "Bodhi Tree (Ficus religiosa)",
   "age_estimate": "about 113 years, planted 1913",
   "age_min": 112,
   "age_max": 114,
@@ -49,7 +55,13 @@
   "transport": "On N. Vineyard Blvd in downtown Honolulu, on the edge of Chinatown; several TheBus routes run along Vineyard Blvd past the garden entrance.",
   "location_precision": "approximate",
   "curation_status": "ai_generated",
-  "verify_notes": "A sacred fig grown from a cutting of the historic Bodhi tree lineage at Bodh Gaya, India, the tree under which the Buddha is said to have attained enlightenment. A sapling was given to Mary Foster in 1913 by Anagarika Dharmapala, the Sri Lankan Buddhist reformer; Foster went on to become a major patron of Buddhism in Hawaii, funding the state's first Buddhist temple (Honpa Hongwanji Mission). This has its own dedicated Wikipedia article ('Bodhi Tree in Honolulu'), a stronger-than-usual second source. Register gives girth 7.29m circumference, height 15.4m/50.5ft, vitality 'Excellent'; no assessment date on this row. Featured in the Aug 2023 Star-Advertiser garden-reopening piece, good evidence it was alive and standing then. One of ~25 of Oahu's ~100 city-designated 'Exceptional Trees' concentrated in this one municipal garden. Coordinates are the garden's published centroid, not a tree-level pin, hence approximate."
+  "story": "The tree the Buddha is said to have sat under has descendants, and one of them grows in downtown Honolulu. This sacred fig was raised from a cutting of the Bodh Gaya lineage in India and arrived as a sapling in 1913, a gift to Mary Foster from Anagarika Dharmapala, the Sri Lankan reformer who spent his life campaigning to return that Indian temple to Buddhist hands. Foster planted it in her garden and went on to become a major patron of Buddhism in Hawaii, paying for the islands' first Buddhist temple.\n\nThe tree is about 113 years old now, roughly fifteen metres tall, with a trunk over seven metres around, and the city's Exceptional Trees register rates its condition excellent. Sacred figs are easy to identify once someone shows you the leaf: heart-shaped, drawn out into a long thin tail, hung so loosely on its stalk that the whole crown moves in air you cannot feel on your own skin. A tree that moves on a still day is the sort of thing people build religions around.\n\nIt is one of the few trees in this garden whose value has nothing to do with its size. There are bigger and far stranger specimens within a hundred metres of it. This is the one with a paper trail back to India and a woman who knew exactly what she had been given.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  }
  },
  {
   "id": "hnl_003",
@@ -75,12 +87,18 @@
   "transport": "On N. Vineyard Blvd in downtown Honolulu, on the edge of Chinatown; several TheBus routes run along Vineyard Blvd past the garden entrance.",
   "location_precision": "approximate",
   "curation_status": "flagged",
-  "verify_notes": "FLAGGED for a numeric disagreement, not for existence or identity. Honolulu Magazine (2021, fetched directly, not from a search summary) states Dr. William Hillebrand, the German physician-botanist who founded the garden as his own homestead, planted this kapok around 1851, making it about 170 years old as of that 2021 article (so roughly 175 now) and gives its height as '88 1/2-foot', which matches this register row's height of 88.5ft/27.0m exactly, a strong identity match. But the magazine gives circumference as '151 inches around' (about 3.84m), while the Hawaii Exceptional Trees register gives this same row's girth as 6.98m (698cm, girth-unit cross-check 'ok'). The two published figures do not agree and this pass did not measure the trunk directly, so both are recorded rather than one being silently chosen; kapoks have very large buttress roots and girth varies enormously with the height at which it is measured, which may explain part of the gap but was not confirmed either way. This specific planting date (Hillebrand, ~1851, for this tree by name) is a documented basis for the age estimate, not a bridge claim: the source names this specimen, not just the garden. A second, separate Ceiba pentandra (Kapok) sits on the same register at this garden (register_id 117, girth 493.8cm, height 83.5ft/25.5m); its height does not match the 88.5ft figure closely enough to be the same tree, so it is a second real specimen rather than a register twin of this one. It is left as a lead for a later pass rather than published now, since no dedicated second source was found for it this session. Register vitality for this tree: 'Good', no assessment date on the row. Coordinates are the garden's published centroid, not a tree-level pin, hence approximate."
+  "story": "The oldest tree in Foster Botanical Garden is older than the garden, because the man who planted it lived here first. William Hillebrand, the German physician and botanist who made this ground his homestead, put a kapok in at around 1851. That gives it roughly 175 years. It was already a mature tree when the Hawaiian Kingdom was overthrown in 1893, and a very large one when Pearl Harbor was bombed.\n\nIts height is not in doubt. Honolulu Magazine and the city's Exceptional Trees register both give 88 and a half feet, about 27 metres, which is also how we know the two are describing the same trunk. The trunk itself they disagree on, and not by a little. The magazine reports 151 inches around, a shade under four metres. The register records 6.98 metres. The two have never been reconciled, so both stand here rather than one being quietly chosen. Some of the gap is probably method: a kapok throws out buttress roots like thin walls, and the answer changes depending on the height at which you measure.\n\nStanding at the base, the buttresses are the point anyway. They rise past head height and divide the ground around the trunk into separate rooms, which is what a rainforest giant does when it has to hold itself up in shallow soil.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  }
  },
  {
   "id": "hnl_004",
   "name": "The Foster Garden Cannonball Tree",
-  "species": "Cannonball Tree (Couroupita guianensis)",
+  "species": "Cannon Ball Tree (Couroupita guianensis)",
   "age_estimate": "",
   "girth_cm": null,
   "height_m": 29.0,
@@ -99,7 +117,13 @@
   "transport": "On N. Vineyard Blvd in downtown Honolulu, on the edge of Chinatown; several TheBus routes run along Vineyard Blvd past the garden entrance.",
   "location_precision": "approximate",
   "curation_status": "ai_generated",
-  "verify_notes": "A soft-wooded South American tree that sprouts its flowers and grapefruit-to-cannonball-sized woody fruit directly from the trunk (cauliflory), not from the branches; the garden's own official page has posted a 'watch out for falling cannonballs' warning beside this specimen, since a dropped fruit is heavy enough to hurt someone. Photographed as part of the garden's own feature in the Aug 2023 Star-Advertiser reopening piece, good evidence it was standing then. Register gives height 29.0m/95ft, vitality 'Excellent', no girth recorded on this row and no assessment date. No documented planting date found this pass; age_estimate left empty rather than guessed, per project policy, since nothing in the sources found gives a basis to derive one. Coordinates are the garden's published centroid, not a tree-level pin, hence approximate."
+  "story": "The garden has put up a sign beside this tree warning visitors about falling cannonballs, and it is not a joke. Couroupita guianensis grows its fruit straight out of the trunk rather than from the branches, woody spheres somewhere between a grapefruit and a shot put, hanging on thick stalks that push out of the bark itself. Botanists call the habit cauliflory. Gravity calls it a hazard. A ripe one comes down from height and splits open with a smell that carries.\n\nThe flowers work the same way and are the reason to come: waxy, orange and pink, each one a shell-shaped hood over a dense spray of stamens, opening in ropes down the trunk at eye level while the crown sails on 29 metres above. It is a South American tree, from the Amazon and the Guianas, soft-wooded and fast, and the city's Exceptional Trees register rates this specimen's condition excellent. It is the most straightforwardly strange thing in a garden that is not short of competition.\n\nOne thing about it is missing: nobody has recorded when it went into the ground. If you know the planting date, or know someone at the garden who does, tell us and it goes on the page.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  }
  },
  {
   "id": "hnl_005",
@@ -124,6 +148,12 @@
   "transport": "On N. Vineyard Blvd in downtown Honolulu, on the edge of Chinatown; several TheBus routes run along Vineyard Blvd past the garden entrance.",
   "location_precision": "approximate",
   "curation_status": "ai_generated",
-  "verify_notes": "Planted in 1930 per the Honolulu Botanical Gardens' own 'Trees for Hawaii's 50 Years' blog series (2009), fetched and read directly rather than from a search summary. Known for a smooth, greenish, swollen trunk of very soft wood (comparable to balsa), historically cut for canoes and rafts in Panama, and for large winged seedpods. A YouTube video dated May 2022 and a Flickr photo (both found this pass but not treated as sources for facts, only as recency evidence) show the same very large, distinctively swollen-trunked tree still standing at the centre of the garden. IMPORTANT CAUGHT ERROR: a web search's own AI summary claimed this tree is 'about 200 feet tall' and 'the largest of its kind in the US'; neither figure appears on the actual source page it was attributed to, so both are discarded per the search-summary-is-a-lead-never-a-source rule. Height used here (25.9m/85ft) is the Hawaii Exceptional Trees register's own figure instead, which is single-sourced for the specific number, so treat the height as approximate pending a second measurement. No girth recorded on this register row. Register vitality 'Excellent', no assessment date on the row. Coordinates are the garden's published centroid, not a tree-level pin, hence approximate."
+  "story": "This trunk is soft enough to cut with a knife. The quipo comes from the forests of Panama and Colombia, where it grows wood about as dense as balsa and gets felled for rafts and dugout canoes rather than for anything expected to hold weight. The tree wears that wood in a shape to match: smooth, greenish-grey, swollen low down and tapering upward, closer to a water tank than to anything with bark on it. Honolulu Botanical Gardens' own record puts the planting at 1930, which makes this one about 96 years old.\n\nIt has reached roughly 26 metres. That figure comes from the city's Exceptional Trees register alone and has not been checked against a second measurement, so treat it as the best number available rather than a settled one. Its seedpods are the other reason to look up: large, papery and winged, built to spin on the way down. The register rates the tree's condition excellent.\n\nIt stands near the centre of the garden, which is about right, because it is the specimen most visitors cannot name and cannot walk past either. Nothing else on these fourteen acres looks less like a tree, and that includes a baobab.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  }
  }
 ]
