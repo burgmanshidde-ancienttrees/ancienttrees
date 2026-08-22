@@ -106,9 +106,9 @@ extension Font {
     }
 
     /// A screen's own name, the biggest thing on it.
-    static var screenTitle: Font { .brand(34, .black, relativeTo: .largeTitle) }
+    static var screenTitle: Font { .brand(32, .bold, relativeTo: .largeTitle) }
     /// The header over a shelf of cards.
-    static var shelfTitle: Font { .brand(22, .heavy, relativeTo: .title2) }
+    static var shelfTitle: Font { .brand(21, .bold, relativeTo: .title2) }
     /// A card's name.
     static var cardTitle: Font { .brand(17, .bold, relativeTo: .headline) }
     /// A small uppercase label, the way the website sets its eyebrows.
@@ -121,18 +121,30 @@ extension Font {
 /// it is always the verb; this is that thing.
 public struct BrandButtonStyle: ButtonStyle {
     var prominent = true
+
     public func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .font(.brand(17, .bold, relativeTo: .headline))
-            .foregroundStyle(prominent ? Color.white : Brand.moss)
+            // The system face at semibold, not the display face at black.
+            // Gabarito Black is a poster weight: on a button it reads as
+            // shouting, which is most of why the old control looked heavy
+            // (Hidde, 2026-08-22).
+            .font(.system(size: 16, weight: .semibold))
+            .foregroundStyle(prominent ? Color.white : Brand.ink)
             .frame(maxWidth: .infinity)
-            .padding(.vertical, 15)
-            .background(prominent ? Brand.moss : Brand.surface, in: .capsule)
+            .frame(height: 54)
+            // A ROUNDED RECTANGLE rather than a capsule. Airbnb, Booking and
+            // every checkout on a phone use a 12 point radius; a full capsule
+            // at this width is a lozenge, and a lozenge is the shape of an
+            // advert.
+            .background(prominent ? Brand.moss : Brand.surface,
+                        in: .rect(cornerRadius: 12))
             .overlay {
-                if !prominent { Capsule().strokeBorder(Brand.moss.opacity(0.35), lineWidth: 1.5) }
+                if !prominent {
+                    RoundedRectangle(cornerRadius: 12)
+                        .strokeBorder(Brand.ink.opacity(0.22), lineWidth: 1)
+                }
             }
-            .opacity(configuration.isPressed ? 0.82 : 1)
-            .scaleEffect(configuration.isPressed ? 0.985 : 1)
+            .opacity(configuration.isPressed ? 0.85 : 1)
             .animation(.easeOut(duration: 0.12), value: configuration.isPressed)
     }
 }
@@ -140,9 +152,12 @@ public struct BrandButtonStyle: ButtonStyle {
 extension View {
     /// A card: a white surface on the cream ground, with a shadow soft enough to
     /// lift it rather than to announce itself.
-    func brandCard(_ radius: CGFloat = 16) -> some View {
+    func brandCard(_ radius: CGFloat = 12) -> some View {
         self.background(Brand.surface, in: .rect(cornerRadius: radius))
-            .shadow(color: .black.opacity(0.07), radius: 8, y: 3)
+            .overlay {
+                RoundedRectangle(cornerRadius: radius)
+                    .strokeBorder(Brand.hairline, lineWidth: 1)
+            }
     }
 
     /// The ground under a whole screen.
