@@ -2944,6 +2944,22 @@
     "trees": 5,
     "wasted": 0,
     "note": "Session wrote and merged the 5 trees the two verify passes above delivered (flo_023, haa_010-013), fixed the resulting oldest-tree-pin and stale-count-promise issues preflight.py caught, tokens not separately metered from the session total."
+   },
+   {
+    "target": "vienna",
+    "kind": "verify",
+    "tokens": 162479,
+    "trees": 3,
+    "wasted": 0,
+    "note": "Completed Rathauspark's 3-plane 1973 protection set (an earlier pass wrongly held the 3rd back as padding), plus a park pine and a Prater oak, both checked against genuinely private register neighbours before shipping. Vienna now 31, past its 30 target."
+   },
+   {
+    "target": "vienna",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 3,
+    "wasted": 0,
+    "note": "Session wrote and merged the 3 trees above, fixed 2 stale count-promise strings preflight.py caught."
    }
   ]
  }
