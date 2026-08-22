@@ -82,7 +82,7 @@
       "lat": 43.7784,
       "lng": 11.2613,
       "status": "lead",
-      "why": "RAMI lists 6486 (hybrid maple), 6489 (ginkgo) and 6493 (tulip tree) inside the same garden, none of them on the national MASAF list. They would extend the tightest cluster on the site at zero walking cost. Not pursued this pass because the pass was scoped to the MASAF candidates and the count was already met, and because each needs its own second source. Note the site already has phenology files for ginkgo and tulip-tree, so both would render a year calendar immediately. This is the obvious next Florence job."
+      "why": "CHECKED 2026-08-22, still a lead, evidence bar not cleared. RAMI's own per-tree pages for all three (6486, 6489, 6493, registered 14 Oct 2021, updated 29 Dec 2024) carry ZERO measurements: no girth, no height, no age, and for ginkgo/tulip tree no coordinates either (only the maple has a GPS fix, 43.778719/11.262035, about 130 m from the flo_012 zelkova). English Wikipedia's Orto_Botanico_di_Firenze article independently confirms ginkgo and tulip tree are among the garden's species, which is a second source for existence/species only, not for remarkability: it lists them among dozens of species with no dates or measurements, unlike its treatment of the yew (1720) and cork oak (1805). More telling: the garden's OWN monumental-trees page (sma.unifi.it/vp-363), the same page that supplied the second source for flo_011-014, does NOT include ginkgo, tulip tree or the hybrid maple among its 8 named monumental specimens (it lists a newly-added Cupressus dupreziana instead). That is the institution itself drawing a line and leaving these three on the outside. The hybrid maple has one genuinely promising angle unexplored: Acer x peronai is described in Kew POWO and CABI-adjacent sources as one of the rarest European maples, with only about nine naturally-occurring wild individuals known, all in the Florence area, which would make a cultivated specimen in the collection historically/botanically significant regardless of size. No source found yet that documents this specific specimen's relationship to that wild population (age, provenance, whether it's a preserved wild individual or propagated). A search for the university's own dendrological collection inventory (a 'censimento globale delle collezioni' was reported launched August 2022, not yet public) or a scientific paper naming this specimen would settle it. Ginkgo and tulip tree remain thin leads with no remarkability evidence beyond bare presence; do not re-run the same RAMI/Wikipedia searches on a future pass without a new angle."
     }
   ],
   "blocked": [
@@ -127,6 +127,13 @@
       "lat": null,
       "lng": null,
       "reason": "Access-restricted private garden. The Tuscany survey lists a fine ginkgo of about 6 m girth, decapitated by a German grenade in September 1944 and recovered, but states that visits require a reservation made by telephone through a private contact. That is not publicly accessible in the sense this site promises, so it does not ship. Worth revisiting only if the garden publishes open visiting hours."
+    },
+    {
+      "name": "The Monterey Cypress of Largo Enrico Fermi",
+      "species": "Cupressus macrocarpa",
+      "lat": 43.750431,
+      "lng": 11.254342,
+      "reason": "CHECKED 2026-08-22. MASAF sheet 16/D612/FI/09, girth 480 cm, height 16.5 m, locality 'Larco Enrico Fermi, 5'. That address is the INAF Osservatorio Astrofisico di Arcetri (Arcetri Astrophysical Observatory), confirmed via the observatory's own site: the grounds are not open to casual visitors, only to booked guided tours ('Per Prenotazioni vai alla pagina delle Visite Guidate'; entrance for guided visits is at Via del Pian dei Giullari 16). Fails the 'can they get in without asking anyone's permission' test. Not private land in the residential sense, but access needs an advance reservation through the institute, so it stays blocked rather than shipped as an open access tree. Worth revisiting only if the observatory ever states the grounds (as opposed to the telescopes) are openly walkable, or if the tree is visible from a public road/path outside the perimeter (not checked this pass)."
     }
   ],
   "off_cluster_currently_published": {
