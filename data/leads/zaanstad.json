@@ -1,0 +1,80 @@
+{
+ "city": "Zaanstad",
+ "country": "Netherlands",
+ "city_slug": "zaanstad",
+ "note": "Staged 2026-08-22 from the Landelijk Register Monumentale Bomen (Bomenstichting, attribution required). Publicly visitable single trees only, entries the register's own history says are gone already removed. Needs only a story per tree; see data/research/zaanstad-verified.json for the write-pass input.",
+ "leads": [
+  {
+   "name": "Kerkbuurt 9, Westzaan",
+   "species": "Black Mulberry (Morus nigra)",
+   "lat": 52.462468,
+   "lng": 4.772149,
+   "status": "lead",
+   "why": "LRMB register nr 1693430 ('zwarte moerbei, Kerkbuurt 9, Westzaan'). Register planting band 1880-1890, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category particulier, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: Het fabriekspand dateert oorspronkelijk uit 1880. Toen zal ook de moerbei zijn geplant. De stam is uitgegroeid tot een fikse knoest. Het beeld van de boom in 1970 lijkt veel op het beeld in 2025. Alleen nu zit de moerbei mager in het blad. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "Copper Beech, Zaandam",
+   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+   "lat": 52.426269,
+   "lng": 4.841375,
+   "status": "lead",
+   "why": "LRMB register nr 1679643 ('Bruine beuk'). Register planting band 1880-1890, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting begraafplaats. Register history of the PLACE, not of the tree, so do not bridge from it: De begraafplaats dateert van begin 20ste eeuw. De rode beuk is toen geplant. Er waren toen vermoedelijk meer rode beuken langs de lanen. Er zijn nu meer oostelijk nog 5 rode beuken over (is een apart nummer). The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "London Plane, Zaandam",
+   "species": "London Plane (Platanus x acerifolia)",
+   "lat": 52.440728,
+   "lng": 4.823561,
+   "status": "lead",
+   "why": "LRMB register nr 1690795 ('Gewone plataan'). Register planting band 1900-1910, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting plein. Register history of the PLACE, not of the tree, so do not bridge from it: De Zaanoever is enorm in ontwikkeling. Deze begin 20ste eeuwse plataan overleeft die ontwikkelingen al ruim een eeuw. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "Allanstraat 356, Wz",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "lat": 52.460607,
+   "lng": 4.773193,
+   "status": "lead",
+   "why": "LRMB register nr 1693436 ('Witte paardenkastanje, Allanstraat 356, Wz'). Register planting band 1920-1930, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category particulier, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: Het huis is 18e eeuws. De kastanje dateert van het begin van de 20ste eeuw. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "Kerkbuurt 48 Wz",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "lat": 52.464452,
+   "lng": 4.772063,
+   "status": "lead",
+   "why": "LRMB register nr 1693432 ('witte paardenkastanje, Kerkbuurt 48 Wz'). Register planting band 1920-1930, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting plantsoen. Register history of the PLACE, not of the tree, so do not bridge from it: De kastanje is rond 1925 geplant in een groenstrook van de kerkbuurt. Nu honderd jaar later gaat de boom opeens fors in kwaliteit terug, mogelijk door fikse zwamvorming aan de voet. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "Allanstraat 384, Wz",
+   "species": "Plane (Platanus sp.)",
+   "lat": 52.461748,
+   "lng": 4.773914,
+   "status": "lead",
+   "why": "LRMB register nr 1693437 ('Plataan, Allanstraat 384, Wz'). Register planting band 1920-1930, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category particulier, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: De boerderij (uit 1880) staat ietsje terug van de Allanstraat, langs de Weelsloot. De plataan staat schuin over het pad en dateert van rond 1930. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "Westzijde 86",
+   "species": "Bald Cypress (Taxodium distichum)",
+   "lat": 52.442685,
+   "lng": 4.82192,
+   "status": "lead",
+   "why": "LRMB register nr 1693380 ('moerascipres, Westzijde 86'). Register planting band 1920-1930, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category particulier, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: De moerascipres staat ingesloten in een tuin achter een winkel. De cipres dateert van 1920. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "London Plane, Zaandam",
+   "species": "London Plane (Platanus x acerifolia)",
+   "lat": 52.444326,
+   "lng": 4.82011,
+   "status": "lead",
+   "why": "LRMB register nr 1677691 ('Gewone plataan'). Register planting band 1860-1870, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category particulier, setting weg. Register history of the PLACE, not of the tree, so do not bridge from it: De plataan staat naast een pand dat als oorsprong 1715 heeft. De plataan wordt ingeschat op midden 19e eeuw. Tussen de bebouwing staat de boom aardig in de verdrukking. Hij wordt dan ook hoog opgekroond. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "Horse Chestnut, Assendelft",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "lat": 52.473445,
+   "lng": 4.746024,
+   "status": "lead",
+   "why": "LRMB register nr 1679699 ('Witte paardenkastanje'). Register planting band 1900-1910, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  }
+ ]
+}

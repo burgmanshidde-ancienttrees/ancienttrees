@@ -1,0 +1,80 @@
+{
+ "city": "Heerlen",
+ "country": "Netherlands",
+ "city_slug": "heerlen",
+ "note": "Staged 2026-08-22 from the Landelijk Register Monumentale Bomen (Bomenstichting, attribution required). Publicly visitable single trees only, entries the register's own history says are gone already removed. Needs only a story per tree; see data/research/heerlen-verified.json for the write-pass input.",
+ "leads": [
+  {
+   "name": "Imstenrade",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "lat": 50.857924,
+   "lng": 5.984537,
+   "status": "lead",
+   "why": "LRMB register nr 1695309 ('Zomereik Imstenrade'). Register planting band 1800-1850, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category natuurbeschermingsorganisatie, setting bos. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "Nieuw Eyckholt",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "lat": 50.88562,
+   "lng": 5.96152,
+   "status": "lead",
+   "why": "LRMB register nr 1695310 ('Zomereik Nieuw Eyckholt'). Register planting band 1850-1860, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category natuurbeschermingsorganisatie, setting plantsoen. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "van de wijk",
+   "species": "Oak (Quercus sp.)",
+   "lat": 50.890364,
+   "lng": 5.967684,
+   "status": "lead",
+   "why": "LRMB register nr 1696379 ('Eik van de wijk'). Register planting band 1920-1930, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting plein. Register history of the PLACE, not of the tree, so do not bridge from it: Zo goed als zeker geplant bij aanleg van de buurt. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "Lime, aan andere kant van de weg",
+   "species": "Lime (Tilia sp.)",
+   "lat": 50.886916,
+   "lng": 5.957511,
+   "status": "lead",
+   "why": "LRMB register nr 1677502 ('Linde'). Register planting band 1600-1700, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category publiekrechtelijke organisatie, setting weg. CHECK IT IS STILL STANDING before writing: over 200 years old and the register gives no history for it, which is the blind spot that let Tilburg's Heuvel lime and Alkmaar's thickest beech through today. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "Sweet Chestnut, Eikendermolenweg 4",
+   "species": "Sweet Chestnut (Castanea sativa)",
+   "lat": 50.886733,
+   "lng": 5.957436,
+   "status": "lead",
+   "why": "LRMB register nr 1677501 ('Tamme kastanje'). Register planting band 1600-1700, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category particulier, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: Deze ruim 300 jaar oude boom - de oudste van Heerlen - is vrijdag 10 maart 2023 waarschijnlijk door de harde wind geveld; het betreffende artikel uit de Limburger is bijgevoegd. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "London Plane, Terworm/Eikendermolenweg",
+   "species": "London Plane (Platanus x acerifolia)",
+   "lat": 50.886257,
+   "lng": 5.956162,
+   "status": "lead",
+   "why": "LRMB register nr 1677500 ('Gewone plataan'). Register planting band 1750-1800, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting weg. Register history of the PLACE, not of the tree, so do not bridge from it: Waarschijnlijk in 1749 geplant ter gelegenheid van de geboorte van de erfopvolger van Terworm. De boom staat bekend als de \"Eik van Terworm'', hoewel het geen eik maar een plataan is. Zie foto van informatiebord. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "MSP",
+   "species": "Tulip Tree (Liriodendron tulipifera)",
+   "lat": 50.896159,
+   "lng": 5.984507,
+   "status": "lead",
+   "why": "LRMB register nr 1696390 ('Tulpenboom MSP'). Register planting band 1930-1940, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: De wijk ''De Voorzorg'' werd in de jaren ''20 als mijnwerkerskolonie gebouwd en de Meezenbroekervijvers met het park voor WOII aangelegd. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "bij Kasteel Terworm",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "lat": 50.889146,
+   "lng": 5.949978,
+   "status": "lead",
+   "why": "LRMB register nr 1697332 ('Ginkgo bij Kasteel Terworm'). Register planting band 1910-1920, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting weg. Register history of the PLACE, not of the tree, so do not bridge from it: De Ginkgo is te vinden bij Kasteel Terworm (Rijksmonument). Het kasteel is tegenwoordig een hoogwaardig hotel onder het Van der Valk concern. Het kasteel en het landgoed er om heen kennen een lange historie die teruggaat rond 1400 (o.a. familie Van der Worm). Daarna is het kasteel zeker 6 keer verbouwd, de huidige verschijningsvorm dateert uit 1890 door baron de Loë. Daarna is het kasteel een korte periode verhuurd aan mijnbaron Wenckenbach, en is in de jaren dertig de onderste vijver van het landgoed openlucht zwembad geweest. De Heerlense bevolking heeft voorkomen dat het landgoed en het kasteel de bestemming pretpark zouden krijgen. Na een periode van verval heeft Van der Valk het kasteel gerestaureerd en is het landgoed in bezit gekomen van vereniging Natuurmonumenten. Wanneer we de lange historie van deze locatie overzien, dan zou de ginkgo geplant kunnen zijn tijdens de renovatie in 1890 of in de periode van mijnbouwer Wenckenbach (1902-1907). In 2026 staat de ginkgo in goede gezondheid langs de oprijlaan, links voor het kasteel. Een schilderachtige plek waar ook oude Taxussen te vinden zijn. De boom is hiermee goed in het zicht voor de bezoekers van het kasteel. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "Southern Catalpa, bij gemeentehuis",
+   "species": "Southern Catalpa (Catalpa bignonioides)",
+   "lat": 50.886912,
+   "lng": 5.977406,
+   "status": "lead",
+   "why": "LRMB register nr 1690650 ('Trompetboom'). Register planting band 1910-1920, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting plein. Register history of the PLACE, not of the tree, so do not bridge from it: 2021 (GH) De boom heeft een mooie inrichting gekregen met een bank rondom en stalen stutten, waaraan een schommel hangt. Fraaie combi met mergelstenen ''Romeins'' stadhuis. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  }
+ ]
+}

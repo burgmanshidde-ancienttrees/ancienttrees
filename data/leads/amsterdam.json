@@ -1,96 +1,160 @@
 {
-  "leads": [
-    {
-      "name": "Plane tree(s) of Sarphatipark",
-      "species": "London Plane (Platanus x acerifolia), possibly other species (weeping willow, Austrian oak, silver maple, bald cypress and dawn redwood are all documented in the park)",
-      "location_hint": "Sarphatipark, De Pijp, Amsterdam, approx. 52.3544, 4.8917",
-      "why_not_shipped": "Park opened 1885, so any original planting is only ~140 years old; monumentaltrees.com lists it as a monumental plane tree in its Amsterdam database but the page returned HTTP 403 on every fetch attempt so the specific girth/age/exact-tree location could not be pulled, and no second independent source with a specific remarkable claim (not just 'a plane tree in a park') was found in this pass. About 700m from the published ams_010 Rijksmuseum Wingnut, so genuinely inside the existing walkable cluster if a specific standout specimen can ever be confirmed. Worth a retry with a working monumentaltrees fetch or a direct approach to the municipality's Sarphatipark page (also 403'd here)."
-    },
-    {
-      "name": "Amsterdam's own 'bijzondere bomen' (special trees) municipal register, Centrum district",
-      "species": "n/a - a register, not a tree",
-      "location_hint": "maps.amsterdam.nl/bomen_bijzonder/, Centrum district list went to public consultation Feb-Mar 2025",
-      "why_not_shipped": "RESOLVED 2026-08-08: licence checked and confirmed usable (Gemeente Amsterdam Maps Data terms, https://maps.amsterdam.nl/open_geodata/terms.php, proving sentence: 'U mag de dataset zowel voor niet-commerciele als commerciele doeleinden gebruiken', both commercial and non-commercial reuse permitted, attribution not required). Full dataset (5,827 trees citywide, dataset id 561, KAARTLAAG=BOMEN_BIJZONDER) downloaded and saved to data/registers/amsterdam-bijzondere-bomen.json with a full licence block. Used this pass to source ams_012 through ams_017. Not yet exploited outside the Plantage/Hortus/Artis area; a future pass should mine it for other Amsterdam clusters (Sarphatipark, Vondelpark, Oosterpark, Frankendael, canal-ring courtyards all have entries in it, see notes below)."
-    },
-    {
-      "name": "Begijnhof inner garden trees",
-      "species": "unknown - historically linden (leilindes) planted near the garden house image of the Virgin Mary",
-      "location_hint": "Begijnhof, Amsterdam-Centrum, approx. 52.3678, 4.8899 (about 0.8 km from the published cluster)",
-      "why_not_shipped": "CHECKED AGAINST THE REGISTER 2026-08-08: nothing within 250m of the Begijnhof courtyard qualifies. The register shows a dense run of city-owned elms (mostly Huntingdon-iep and Hollandse iep, planted 1920-1990, largest girth 274cm) that reads as ordinary canal-side street planting, not a designated remarkable specimen, plus one private 1925 walnut and a few private planes/maples in the 200-260m range, none flagged with any distinguishing note. Downgrading this lead: a text search and a register check have both come up empty. Only worth reopening with a site-visit-style photo source (iNaturalist, Flickr) if someone specifically wants to confirm the courtyard's own historic linden by observation rather than record."
-    },
-    {
-      "name": "Park Frankendael monumental trees (beech, oak, ash, poplar, maple)",
-      "species": "European Beech, Pedunculate Oak, Ash, Poplar, Field Maple (mixed, per monumentaltrees.com's count of 6 described trees in the park)",
-      "location_hint": "Park Frankendael, Watergraafsmeer, Amsterdam, approx. 52.3495, 4.9256",
-      "why_not_shipped": "Roughly 3-4 km from the existing published cluster, too far to join it, and would need to stand as its own second cluster. Not pursued this pass because time ran out before any individual tree in the park could be identified and verified against two sources; the monumentaltrees.com park page also returned 403. CHECKED AGAINST THE REGISTER 2026-08-08: within 500m of the park there is a run of 12+ 'Zwarte Linde' (black lime, Tilia europaea 'Zwarte Linde') all planted 1870, girths 150-242cm, reading as a formal avenue/allee rather than individual specimens (an ensemble, not obviously a single collectible point per the hard rule); plus a single Gewone Plataan (London Plane) from 1845, girth 609cm, about 1.2km away and owned by the Gemeente, which is a much stronger single-specimen candidate and the oldest Gemeente-owned tree found in this whole pass outside Artis. Worth a dedicated pass: verify that 1845 plane (register_id 456444, 52.3603135,4.9248302) plus whatever individual specimens the park's own beech/oak/ash/poplar/maple set turns out to be, now that the register gives exact coordinates to start from instead of a blind park search."
-    },
-    {
-      "name": "Sarphatipark plane tree(s)",
-      "species": "London Plane (Platanus x acerifolia/hispanica) and other park species",
-      "location_hint": "Sarphatipark, De Pijp, Amsterdam, approx. 52.3544, 4.8917",
-      "why_not_shipped": "CHECKED AGAINST THE REGISTER 2026-08-08: nothing in the Gemeente's bijzondere bomen register falls inside Sarphatipark itself; the nearest registered entries are 1+ km away in Vondelpark/Weteringplantsoen direction. Either the park genuinely has no municipally-designated special tree, or (per the register's own 'groeikaart, wordt gebiedsgewijs geactualiseerd' caveat) De Pijp/Oud-Zuid simply has not been surveyed yet. Combined with the still-unresolved monumentaltrees.com 403 from the previous pass, downgrading this lead: two independent lookup attempts have both failed to produce a specific standout specimen."
-    },
-    {
-      "name": "Existing ams_011 (Turkish Hazel of the Hortus) has an exact tree-level coordinate now available",
-      "species": "Turkish Hazel (Corylus colurna)",
-      "location_hint": "52.3670831, 4.9090584 per register_id N1777 in data/registers/amsterdam-bijzondere-bomen.json",
-      "why_not_shipped": "NOT A NEW CANDIDATE, an upgrade opportunity for an already-published tree, noted here rather than silently edited (this pass does not edit city files). ams_011 is currently location_precision: approximate, pinned at the Hortus street address. The newly-imported municipal register carries the same tree (matched on distinctive species, 1795 planting date and the Bomenstichting source id 1686149 that ams_011's own notes already cite) at an exact surveyed point, 52.3670831,4.9090584, about 70m from the current approximate pin. A future pass or the merging session could upgrade ams_011's coordinates and flip location_precision to confirmed on this basis."
-    },
-    {
-      "name": "IMPORTANT: the brief's 'strongest candidate' 1863 plane pair is NOT new, it is the already-published ams_002 (The Leidsebosje Planes), mis-pinned by ~90m",
-      "species": "London Plane (Platanus x acerifolia / Platanus hispanica)",
-      "location_hint": "Register gives exact tree-level coordinates: register_id 504491 at 52.3623964,4.8810688 (girth 714cm) and register_id 510594 at 52.3626145,4.8809702 (girth 715cm), planted 1863, 25m apart. ams_002's current pin is 52.3628,4.8823, which is 93-95m from both register points.",
-      "why_not_shipped": "VERIFIED 2026-08-09: this pass was briefed to treat these two register entries as a strong new twin-tree candidate for a Vondelpark cluster. Checked against data/cities/amsterdam.json: the story matches ams_002 exactly (moved in 1925 for a bridge/roundabout widening after resident protest, now over 7m girth each, thickest trees in Amsterdam, a woodcutter sculpture on one tree, proposed for national monument status) and web search independently confirms the same pair of 1863 planes lives in the Leidsebosje, not inside Vondelpark itself (Leidsebosje is a separate small park near Leidseplein, adjacent to Vondelpark's northeast corner). So this is a duplicate of a tree already on the site, not a new tree for the growing walk. NOT delivered as a new entry. What IS useful: the register's tree-level coordinates are demonstrably more precise than ams_002's current pin (90+ meters off), so a future pass could upgrade ams_002's location to one of these two points (they are two distinct trunks 25m apart; which one the current single pin should represent, or whether to pin the midpoint, needs a quick look at which trunk the woodcutter sculpture sits on) and flip confidence upward. Also note: the register's 'champion_tree' boolean is true for every single entry checked in this whole cluster (at least a dozen different trees, wildly different species and sizes), which contradicts field_notes' description of it as 'record holder for size/species in the city'; it appears to not be a reliable signal in this district/extract and should not be read as a superlative claim without independent checking, a register pitfall worth adding to the standing list."
-    },
-    {
-      "name": "Vondelpark entrance mixed planting: Silver Maple 'Schwedleri' (504555), Weeping/White Willow (504556, circa 500cm girth), Golden Ash 'Jaspidea' (504558)",
-      "species": "Acer platanoides 'Schwedleri' (1956), Salix alba (1972, girth 'circa 500 cm'), Fraxinus excelsior 'Jaspidea' (1956)",
-      "location_hint": "52.362563,4.8814525 / 52.3627448,4.88142 / 52.3628621,4.8813363, all within 35m of each other, Vondelpark entrance area near Stadhouderskade/Vondelstraat",
-      "why_not_shipped": "Three different species planted mid-1950s to 1972, close together but not same-species/same-year so not an obvious avenue by the usual test; each is a plausible individual specimen, most notably the willow at an unusually large girth (circa 5m) for only 54 years old (register flags it champion_tree, but see the caveat above about that flag's reliability here). Could not find a second independent source specifically naming any of these three trees within this pass's window: inhetvondelpark.nl's old-trees page and species list describe willows/maples/ash present in the park generally (a weeping willow near Schapenweide circa 1900, European ash circa 1960 in 'various locations') but not this specific specimen at this specific spot; iNaturalist searches near these coordinates returned only a different willow species (Salix x pendulina tristis, 2009, wrong location) and a generically-IDed elm, neither a match. Register-only, so does not clear the two-source bar. Worth a dedicated re-check with an on-the-ground photo source (Flickr, iNaturalist geosearch tightened to 20m) rather than text search, since text sources for individual Vondelpark specimens outside the famous poplar and the Leidsebosje planes are thin."
-    },
-    {
-      "name": "Vondelpark entrance elm twins, Ulmus hollandica 'Vegeta' (Huntingdon elm)",
-      "species": "Ulmus hollandica 'Vegeta' (Huntingdon elm, a cultivar bred for Dutch elm disease resistance)",
-      "location_hint": "register_id 343361 at 52.3635601,4.8811503 (girth 204cm) and register_id 343235 at 52.3635962,4.8810925 (girth 194cm), planted 1960, 5.6m apart, Vondelpark entrance area",
-      "why_not_shipped": "A genuine planted PAIR by spacing and matching plant year/girth, same test as the 1863 planes, and the cultivar has a real story (bred specifically for elm disease resistance in a country that lost most of its elms to it). But only 66 years old and roughly 2m girth, modest by this project's usual bar, and same problem as the trio above: no second independent source found this pass naming this specific pair (inhetvondelpark.nl's category lists mention elms in the park generally, circa 1960 in 'various locations', not this pair specifically). Register-only. Lower priority than the trio above since the trees themselves are less visually remarkable; keeping as a lead in case a future pass finds the Vegeta-cultivar angle worth a dedicated search (Dutch elm disease history pieces sometimes name specific surviving specimens)."
-    },
-    {
-      "name": "'IJzeren Hein' (Iron Hein), the named wingnut of Wertheimpark, next to the Auschwitz monument",
-      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
-      "location_hint": "Wertheimpark, beside the 1977 Nooit Meer Auschwitz monument by Jan Wolkers, approx 52.367,4.908. Two register candidates sit 100-140m from ams_004's own pin: register_id 341854 (52.36770,4.90810, girth 479cm, plant year 1900) and register_id 341868 (52.36790,4.90899, girth 507cm, plant year 1900), both Pterocarya fraxinifolia, status Beschermwaardige houtopstand, owner Gemeente",
-      "why_not_shipped": "VERIFIED 2026-08-09 as a real, well-documented named tree (buurtorganisatie1018.nl: nicknamed 'IJzeren Hein', planted 1860, girth 'bijna vier meter', decayed badly in the 1970s and was saved with iron anchors bolted through the trunk, ranked 9th in a local arborists' top-ten of Amsterdam's most monumental trees) but NOT delivered this pass because it could not be cleanly separated from the already-published ams_004 (The Wertheimpark Wingnut). Both register wingnuts near Wertheimpark give plant year 1900 and girth 479/507cm, neither matching Iron Hein's reported 1860 planting and ~390cm girth; both sit 100m+ from ams_004's own 'confirmed' pin, so ams_004's pin itself is probably not tree-level precise despite its status field. Three unresolved possibilities: Iron Hein IS ams_004 under an imprecise pin (most likely, since ams_004's own story already describes a very similar wingnut at this same park), Iron Hein is one of the two register entries and ams_004 is the other, or Iron Hein is a distinct fourth tree the register missed. A future pass should either (a) get an exact tree-level fix on ams_004 via a working monumentaltrees.com browser session or a geolocated Wikimedia/iNaturalist photo showing the iron anchor scars, which would settle which register id is which, or (b) treat this purely as an upgrade opportunity for ams_004's story (the iron-anchor restoration is a much better anecdote than what ams_004 currently carries) rather than as a new tree."
-    },
-    {
-      "name": "Copper Beech of Artis (Bruine beuk)",
-      "species": "Copper Beech (Fagus sylvatica 'Atropunicea')",
-      "location_hint": "register_id N1765, 52.36561,4.91495, Artis Park, owner Artis, status Beschermwaardige houtopstand, plant year 1855, girth 440cm",
-      "why_not_shipped": "Genuinely old (171 years) and large (440cm), inside Artis on the same paid-entry basis as the already-published ams_001/012/013, close to that cluster (roughly 300-400m from the Heimanseik). Not shipped this pass for lack of a second source: the register is the only one found. The oost-online.nl article that supplied a second source for ams_001/012/013 (Jan de Jong's tour of Artis's trees) does not mention this beech by name. Worth a dedicated Artis-specific search (their own app or on-site signage sometimes names 'favourite tree' specimens) before delivering."
-    },
-    {
-      "name": "Wych Elm 'Exoniensis' of Artis (Pluimiep)",
-      "species": "Wych Elm 'Exoniensis' (Ulmus glabra 'Exoniensis')",
-      "location_hint": "register_id N5644, 52.36723,4.91451, Artis Park, owner Artis, status Beschermwaardige houtopstand, plant year 1880, girth 437cm",
-      "why_not_shipped": "Same situation as the copper beech above: register-only, no second source found this pass. Notably large for the cultivar (a narrow, columnar form not usually associated with a 437cm girth), which would be a strong hook if a second source can confirm it, since an unusually large specimen of a normally narrow cultivar is a genuine visual surprise. Worth checking Artis's own website/app for a named-tree page, the way the Heimanseik has one."
-    }
-  ],
-  "blocked": [
-    {
-      "name": "Vondelpark entrance plane avenue, 7-8 trees planted 1881-1925",
-      "species": "Platanus hispanica (London Plane)",
-      "location_hint": "register_ids N5564, 503377, 503374, 503379, 503373, 503372, 503370, 503369, all within roughly 40m x 40m near 52.3634,4.8802, Vondelpark entrance area",
-      "reason": "BLOCKED as an ensemble, not a single collectible point. Verified 2026-08-09 by computing pairwise distances between all register entries: these 8 Platanus hispanica trees (planted 1881, 1883, 1892 and 1925, girths 396-546cm) sit in a tight cluster with a median inter-tree spacing under 25m, reading as a formal planted avenue/allee rather than individual specimens, the same shape as other blocked Amsterdam plane avenues already recorded (Park Frankendael's Zwarte Linde run above). No plaque, name or documented 'largest of the row' fact found for any individual tree in this group in this pass. If a future pass finds one specimen singled out by a source, it could be reconsidered individually."
-    },
-    {
-      "name": "Vondelpark entrance bald cypress grove, 8 trees planted 1948",
-      "species": "Taxodium distichum (bald cypress)",
-      "location_hint": "register_ids 503356, 503357, 503358, 503359, 503360, 503361, 503362, 503363, 503364, 503365, clustered within about 15m of each other near 52.3635,4.8799, Vondelpark entrance area",
-      "reason": "BLOCKED as an ensemble. Verified 2026-08-09: 8-10 same-species, same-year (1948) trees within a very tight 15m radius, clearly a planted grove rather than individual specimens, girths 149-234cm (modest, 78 years old). Note this is a DIFFERENT bald cypress group from the one search results describe along the Van Eeghenvijver ('moerascipressen ouder dan 100 jaar, van omstreeks 1912'), which is elsewhere in the park and not checked this pass. No individual standout found in this particular 1948 grove."
-    },
-    {
-      "name": "J.W. van Overloopplantsoen plane trees, Plantage Muidergracht",
-      "species": "London Plane (Platanus x hispanica), roughly 39 trees per public description",
-      "location_hint": "J.W. van Overloopplantsoen, Plantage Muidergracht, approx 52.365,4.912, about 350-400m from the Wertheimpark/Hortus/Artis cluster",
-      "reason": "CHECKED 2026-08-09: public descriptions (deplantage.amsterdam, Yelp) describe 'the first nine trees' of a grassy strip plus 'the other 30 trees' that suffered root damage during sewer works, reading as a planted avenue of roughly 39 plane trees rather than individual specimens. BLOCKED as an ensemble under the same test already applied to the Vondelpark plane avenue and bald cypress grove, unless a future pass finds one tree singled out by name or measurement."
-    }
-  ]
+ "leads": [
+  {
+   "name": "Plane tree(s) of Sarphatipark",
+   "species": "London Plane (Platanus x acerifolia), possibly other species (weeping willow, Austrian oak, silver maple, bald cypress and dawn redwood are all documented in the park)",
+   "location_hint": "Sarphatipark, De Pijp, Amsterdam, approx. 52.3544, 4.8917",
+   "why_not_shipped": "Park opened 1885, so any original planting is only ~140 years old; monumentaltrees.com lists it as a monumental plane tree in its Amsterdam database but the page returned HTTP 403 on every fetch attempt so the specific girth/age/exact-tree location could not be pulled, and no second independent source with a specific remarkable claim (not just 'a plane tree in a park') was found in this pass. About 700m from the published ams_010 Rijksmuseum Wingnut, so genuinely inside the existing walkable cluster if a specific standout specimen can ever be confirmed. Worth a retry with a working monumentaltrees fetch or a direct approach to the municipality's Sarphatipark page (also 403'd here)."
+  },
+  {
+   "name": "Amsterdam's own 'bijzondere bomen' (special trees) municipal register, Centrum district",
+   "species": "n/a - a register, not a tree",
+   "location_hint": "maps.amsterdam.nl/bomen_bijzonder/, Centrum district list went to public consultation Feb-Mar 2025",
+   "why_not_shipped": "RESOLVED 2026-08-08: licence checked and confirmed usable (Gemeente Amsterdam Maps Data terms, https://maps.amsterdam.nl/open_geodata/terms.php, proving sentence: 'U mag de dataset zowel voor niet-commerciele als commerciele doeleinden gebruiken', both commercial and non-commercial reuse permitted, attribution not required). Full dataset (5,827 trees citywide, dataset id 561, KAARTLAAG=BOMEN_BIJZONDER) downloaded and saved to data/registers/amsterdam-bijzondere-bomen.json with a full licence block. Used this pass to source ams_012 through ams_017. Not yet exploited outside the Plantage/Hortus/Artis area; a future pass should mine it for other Amsterdam clusters (Sarphatipark, Vondelpark, Oosterpark, Frankendael, canal-ring courtyards all have entries in it, see notes below)."
+  },
+  {
+   "name": "Begijnhof inner garden trees",
+   "species": "unknown - historically linden (leilindes) planted near the garden house image of the Virgin Mary",
+   "location_hint": "Begijnhof, Amsterdam-Centrum, approx. 52.3678, 4.8899 (about 0.8 km from the published cluster)",
+   "why_not_shipped": "CHECKED AGAINST THE REGISTER 2026-08-08: nothing within 250m of the Begijnhof courtyard qualifies. The register shows a dense run of city-owned elms (mostly Huntingdon-iep and Hollandse iep, planted 1920-1990, largest girth 274cm) that reads as ordinary canal-side street planting, not a designated remarkable specimen, plus one private 1925 walnut and a few private planes/maples in the 200-260m range, none flagged with any distinguishing note. Downgrading this lead: a text search and a register check have both come up empty. Only worth reopening with a site-visit-style photo source (iNaturalist, Flickr) if someone specifically wants to confirm the courtyard's own historic linden by observation rather than record."
+  },
+  {
+   "name": "Park Frankendael monumental trees (beech, oak, ash, poplar, maple)",
+   "species": "European Beech, Pedunculate Oak, Ash, Poplar, Field Maple (mixed, per monumentaltrees.com's count of 6 described trees in the park)",
+   "location_hint": "Park Frankendael, Watergraafsmeer, Amsterdam, approx. 52.3495, 4.9256",
+   "why_not_shipped": "Roughly 3-4 km from the existing published cluster, too far to join it, and would need to stand as its own second cluster. Not pursued this pass because time ran out before any individual tree in the park could be identified and verified against two sources; the monumentaltrees.com park page also returned 403. CHECKED AGAINST THE REGISTER 2026-08-08: within 500m of the park there is a run of 12+ 'Zwarte Linde' (black lime, Tilia europaea 'Zwarte Linde') all planted 1870, girths 150-242cm, reading as a formal avenue/allee rather than individual specimens (an ensemble, not obviously a single collectible point per the hard rule); plus a single Gewone Plataan (London Plane) from 1845, girth 609cm, about 1.2km away and owned by the Gemeente, which is a much stronger single-specimen candidate and the oldest Gemeente-owned tree found in this whole pass outside Artis. Worth a dedicated pass: verify that 1845 plane (register_id 456444, 52.3603135,4.9248302) plus whatever individual specimens the park's own beech/oak/ash/poplar/maple set turns out to be, now that the register gives exact coordinates to start from instead of a blind park search."
+  },
+  {
+   "name": "Sarphatipark plane tree(s)",
+   "species": "London Plane (Platanus x acerifolia/hispanica) and other park species",
+   "location_hint": "Sarphatipark, De Pijp, Amsterdam, approx. 52.3544, 4.8917",
+   "why_not_shipped": "CHECKED AGAINST THE REGISTER 2026-08-08: nothing in the Gemeente's bijzondere bomen register falls inside Sarphatipark itself; the nearest registered entries are 1+ km away in Vondelpark/Weteringplantsoen direction. Either the park genuinely has no municipally-designated special tree, or (per the register's own 'groeikaart, wordt gebiedsgewijs geactualiseerd' caveat) De Pijp/Oud-Zuid simply has not been surveyed yet. Combined with the still-unresolved monumentaltrees.com 403 from the previous pass, downgrading this lead: two independent lookup attempts have both failed to produce a specific standout specimen."
+  },
+  {
+   "name": "Existing ams_011 (Turkish Hazel of the Hortus) has an exact tree-level coordinate now available",
+   "species": "Turkish Hazel (Corylus colurna)",
+   "location_hint": "52.3670831, 4.9090584 per register_id N1777 in data/registers/amsterdam-bijzondere-bomen.json",
+   "why_not_shipped": "NOT A NEW CANDIDATE, an upgrade opportunity for an already-published tree, noted here rather than silently edited (this pass does not edit city files). ams_011 is currently location_precision: approximate, pinned at the Hortus street address. The newly-imported municipal register carries the same tree (matched on distinctive species, 1795 planting date and the Bomenstichting source id 1686149 that ams_011's own notes already cite) at an exact surveyed point, 52.3670831,4.9090584, about 70m from the current approximate pin. A future pass or the merging session could upgrade ams_011's coordinates and flip location_precision to confirmed on this basis."
+  },
+  {
+   "name": "IMPORTANT: the brief's 'strongest candidate' 1863 plane pair is NOT new, it is the already-published ams_002 (The Leidsebosje Planes), mis-pinned by ~90m",
+   "species": "London Plane (Platanus x acerifolia / Platanus hispanica)",
+   "location_hint": "Register gives exact tree-level coordinates: register_id 504491 at 52.3623964,4.8810688 (girth 714cm) and register_id 510594 at 52.3626145,4.8809702 (girth 715cm), planted 1863, 25m apart. ams_002's current pin is 52.3628,4.8823, which is 93-95m from both register points.",
+   "why_not_shipped": "VERIFIED 2026-08-09: this pass was briefed to treat these two register entries as a strong new twin-tree candidate for a Vondelpark cluster. Checked against data/cities/amsterdam.json: the story matches ams_002 exactly (moved in 1925 for a bridge/roundabout widening after resident protest, now over 7m girth each, thickest trees in Amsterdam, a woodcutter sculpture on one tree, proposed for national monument status) and web search independently confirms the same pair of 1863 planes lives in the Leidsebosje, not inside Vondelpark itself (Leidsebosje is a separate small park near Leidseplein, adjacent to Vondelpark's northeast corner). So this is a duplicate of a tree already on the site, not a new tree for the growing walk. NOT delivered as a new entry. What IS useful: the register's tree-level coordinates are demonstrably more precise than ams_002's current pin (90+ meters off), so a future pass could upgrade ams_002's location to one of these two points (they are two distinct trunks 25m apart; which one the current single pin should represent, or whether to pin the midpoint, needs a quick look at which trunk the woodcutter sculpture sits on) and flip confidence upward. Also note: the register's 'champion_tree' boolean is true for every single entry checked in this whole cluster (at least a dozen different trees, wildly different species and sizes), which contradicts field_notes' description of it as 'record holder for size/species in the city'; it appears to not be a reliable signal in this district/extract and should not be read as a superlative claim without independent checking, a register pitfall worth adding to the standing list."
+  },
+  {
+   "name": "Vondelpark entrance mixed planting: Silver Maple 'Schwedleri' (504555), Weeping/White Willow (504556, circa 500cm girth), Golden Ash 'Jaspidea' (504558)",
+   "species": "Acer platanoides 'Schwedleri' (1956), Salix alba (1972, girth 'circa 500 cm'), Fraxinus excelsior 'Jaspidea' (1956)",
+   "location_hint": "52.362563,4.8814525 / 52.3627448,4.88142 / 52.3628621,4.8813363, all within 35m of each other, Vondelpark entrance area near Stadhouderskade/Vondelstraat",
+   "why_not_shipped": "Three different species planted mid-1950s to 1972, close together but not same-species/same-year so not an obvious avenue by the usual test; each is a plausible individual specimen, most notably the willow at an unusually large girth (circa 5m) for only 54 years old (register flags it champion_tree, but see the caveat above about that flag's reliability here). Could not find a second independent source specifically naming any of these three trees within this pass's window: inhetvondelpark.nl's old-trees page and species list describe willows/maples/ash present in the park generally (a weeping willow near Schapenweide circa 1900, European ash circa 1960 in 'various locations') but not this specific specimen at this specific spot; iNaturalist searches near these coordinates returned only a different willow species (Salix x pendulina tristis, 2009, wrong location) and a generically-IDed elm, neither a match. Register-only, so does not clear the two-source bar. Worth a dedicated re-check with an on-the-ground photo source (Flickr, iNaturalist geosearch tightened to 20m) rather than text search, since text sources for individual Vondelpark specimens outside the famous poplar and the Leidsebosje planes are thin."
+  },
+  {
+   "name": "Vondelpark entrance elm twins, Ulmus hollandica 'Vegeta' (Huntingdon elm)",
+   "species": "Ulmus hollandica 'Vegeta' (Huntingdon elm, a cultivar bred for Dutch elm disease resistance)",
+   "location_hint": "register_id 343361 at 52.3635601,4.8811503 (girth 204cm) and register_id 343235 at 52.3635962,4.8810925 (girth 194cm), planted 1960, 5.6m apart, Vondelpark entrance area",
+   "why_not_shipped": "A genuine planted PAIR by spacing and matching plant year/girth, same test as the 1863 planes, and the cultivar has a real story (bred specifically for elm disease resistance in a country that lost most of its elms to it). But only 66 years old and roughly 2m girth, modest by this project's usual bar, and same problem as the trio above: no second independent source found this pass naming this specific pair (inhetvondelpark.nl's category lists mention elms in the park generally, circa 1960 in 'various locations', not this pair specifically). Register-only. Lower priority than the trio above since the trees themselves are less visually remarkable; keeping as a lead in case a future pass finds the Vegeta-cultivar angle worth a dedicated search (Dutch elm disease history pieces sometimes name specific surviving specimens)."
+  },
+  {
+   "name": "'IJzeren Hein' (Iron Hein), the named wingnut of Wertheimpark, next to the Auschwitz monument",
+   "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+   "location_hint": "Wertheimpark, beside the 1977 Nooit Meer Auschwitz monument by Jan Wolkers, approx 52.367,4.908. Two register candidates sit 100-140m from ams_004's own pin: register_id 341854 (52.36770,4.90810, girth 479cm, plant year 1900) and register_id 341868 (52.36790,4.90899, girth 507cm, plant year 1900), both Pterocarya fraxinifolia, status Beschermwaardige houtopstand, owner Gemeente",
+   "why_not_shipped": "VERIFIED 2026-08-09 as a real, well-documented named tree (buurtorganisatie1018.nl: nicknamed 'IJzeren Hein', planted 1860, girth 'bijna vier meter', decayed badly in the 1970s and was saved with iron anchors bolted through the trunk, ranked 9th in a local arborists' top-ten of Amsterdam's most monumental trees) but NOT delivered this pass because it could not be cleanly separated from the already-published ams_004 (The Wertheimpark Wingnut). Both register wingnuts near Wertheimpark give plant year 1900 and girth 479/507cm, neither matching Iron Hein's reported 1860 planting and ~390cm girth; both sit 100m+ from ams_004's own 'confirmed' pin, so ams_004's pin itself is probably not tree-level precise despite its status field. Three unresolved possibilities: Iron Hein IS ams_004 under an imprecise pin (most likely, since ams_004's own story already describes a very similar wingnut at this same park), Iron Hein is one of the two register entries and ams_004 is the other, or Iron Hein is a distinct fourth tree the register missed. A future pass should either (a) get an exact tree-level fix on ams_004 via a working monumentaltrees.com browser session or a geolocated Wikimedia/iNaturalist photo showing the iron anchor scars, which would settle which register id is which, or (b) treat this purely as an upgrade opportunity for ams_004's story (the iron-anchor restoration is a much better anecdote than what ams_004 currently carries) rather than as a new tree."
+  },
+  {
+   "name": "Copper Beech of Artis (Bruine beuk)",
+   "species": "Copper Beech (Fagus sylvatica 'Atropunicea')",
+   "location_hint": "register_id N1765, 52.36561,4.91495, Artis Park, owner Artis, status Beschermwaardige houtopstand, plant year 1855, girth 440cm",
+   "why_not_shipped": "Genuinely old (171 years) and large (440cm), inside Artis on the same paid-entry basis as the already-published ams_001/012/013, close to that cluster (roughly 300-400m from the Heimanseik). Not shipped this pass for lack of a second source: the register is the only one found. The oost-online.nl article that supplied a second source for ams_001/012/013 (Jan de Jong's tour of Artis's trees) does not mention this beech by name. Worth a dedicated Artis-specific search (their own app or on-site signage sometimes names 'favourite tree' specimens) before delivering."
+  },
+  {
+   "name": "Wych Elm 'Exoniensis' of Artis (Pluimiep)",
+   "species": "Wych Elm 'Exoniensis' (Ulmus glabra 'Exoniensis')",
+   "location_hint": "register_id N5644, 52.36723,4.91451, Artis Park, owner Artis, status Beschermwaardige houtopstand, plant year 1880, girth 437cm",
+   "why_not_shipped": "Same situation as the copper beech above: register-only, no second source found this pass. Notably large for the cultivar (a narrow, columnar form not usually associated with a 437cm girth), which would be a strong hook if a second source can confirm it, since an unusually large specimen of a normally narrow cultivar is a genuine visual surprise. Worth checking Artis's own website/app for a named-tree page, the way the Heimanseik has one."
+  },
+  {
+   "name": "Broersepark",
+   "species": "White Poplar (Populus alba)",
+   "lat": 52.305796,
+   "lng": 4.848439,
+   "status": "lead",
+   "why": "Staged 2026-08-22 from Amstelveen, which sits 7.4 km from the Amsterdam city centre and is inside this site's day-trip boundary, so it belongs on the Amsterdam page rather than on a thin page of its own. Name the real place honestly in the location fields and the true travel time in transport. LRMB register nr 1690752 ('Witte abeel Broersepark'). Register planting band 1860-1870, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: De witte abeel staat aan de zuidzijde (vlak naast de vijver) in het Broersepark. Het park is in 1926 ontworpen en in de jaren daarna aangelegd als \"Wandelpark\". In 1967 werd het park door de gemeente vernoemd naar Chris P. Broerse (vanaf 1926 in het park werkzaam geweest). In 1999 is er de parasitaire houtschimmel de honingzwam aangetroffen aan de stamvoet. De kroon is in de loop der jaren gehavend en de conditie matig. De boom heeft een scheefstand, de wortelkluit is blijkbaar omhoog gekomen gezien de bult bij de stamvoet. Deze boom is niet meer indrukwekkend of monumentaal maar gezien de opgegeven plantperiode (1860-1870) mogelijk wel het oudste exemplaar van het park. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "De Jakoba Mulderboom",
+   "species": "Tulip Tree (Liriodendron tulipifera)",
+   "lat": 52.324551,
+   "lng": 4.84545,
+   "status": "lead",
+   "why": "Staged 2026-08-22 from Amstelveen, which sits 7.4 km from the Amsterdam city centre and is inside this site's day-trip boundary, so it belongs on the Amsterdam page rather than on a thin page of its own. Name the real place honestly in the location fields and the true travel time in transport. LRMB register nr 1694923 ('Tulpenboom - De Jakoba Mulderboom'). Register planting band 1930-1940, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: De tulpenboom is te vinden in het Amsterdamse Bos ten zuiden van de Bosbaanweg. Het Amsterdamse Bos (oorspronkelijk: het ''Boschplan'') is een tussen 1934 en 1970 aangelegd bos ten zuidwesten van Amsterdam. De tulpenboom was naar verluidt de favoriete boom van Jakoba Mulder, (geb. Breda 2-3-1900 – gest. Amsterdam 5-11-1988), architecte en stedenbouwkundige, en mede ontwerpster van het Amsterdamse Bos. De boom is rond 1938, ter ere van haar geplant. Het gaat om een prachtig, gaaf exemplaar, goed gegroeid en harmonisch van vorm. De boom is vanaf het fietspad goed te zien. In 2018 is de tulpenboom bezocht tijdens een bomendag voor contactpersonen van de Bomenstichting. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "De Oude Dame van het bos",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "lat": 52.318792,
+   "lng": 4.824216,
+   "status": "lead",
+   "why": "Staged 2026-08-22 from Amstelveen, which sits 7.4 km from the Amsterdam city centre and is inside this site's day-trip boundary, so it belongs on the Amsterdam page rather than on a thin page of its own. Name the real place honestly in the location fields and the true travel time in transport. LRMB register nr 1694922 ('Paardenkastanje De Oude Dame van het bos'). Register planting band 1890-1900, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting onbekend. Register history of the PLACE, not of the tree, so do not bridge from it: Deze witte paardenkastanje is de oudste boom van het Amsterdamse Bos en draagt met recht de naam; ‘De oude dame van het bos’. De boom is geplant in 1895, het Amsterdamse Bos werd aangelegd vanaf 1928. De oude dame leeft dus langer dan het bos bestaat. In de jeugdperiode stond de boom in de nu volledig verdwenen Rietwijkeroordpolder. De boom stond bij een boerderij, die met de aanleg van het bos is afgebroken. Een leuke feitje is dat de stam wel een paar meter de grond in gaat. Dit komt doordat men bij de aanleg van het bos het maaiveld verhoogde. De groeiplaats rondom de kastanje is toen voorzichtig met puin opgehoogd. De boom staat er tegenwoordig redelijk bij. Problemen zien we door mogelijke bloedingsziekte bij zware arm aan de noordwestzijde en bij de stam. De noordelijke, beschadigde gesteltak, vertoont een grote torsiescheur. De boom zit volop in blad en laat een goede conditie zien. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "Canadian Poplar, Amstelveen",
+   "species": "Canadian Poplar (Populus x canadensis)",
+   "lat": 52.31588,
+   "lng": 4.872811,
+   "status": "lead",
+   "why": "Staged 2026-08-22 from Amstelveen, which sits 7.4 km from the Amsterdam city centre and is inside this site's day-trip boundary, so it belongs on the Amsterdam page rather than on a thin page of its own. Name the real place honestly in the location fields and the true travel time in transport. LRMB register nr 1690651 ('Canadese populier'). Register planting band 1900-1910, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "Dutch Elm, Amstelveen",
+   "species": "Dutch Elm (Ulmus x hollandica)",
+   "lat": 52.297086,
+   "lng": 4.88895,
+   "status": "lead",
+   "why": "Staged 2026-08-22 from Amstelveen, which sits 7.4 km from the Amsterdam city centre and is inside this site's day-trip boundary, so it belongs on the Amsterdam page rather than on a thin page of its own. Name the real place honestly in the location fields and the true travel time in transport. LRMB register nr 1690654 ('Hollandse iep'). Register planting band 1920-1930, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: Boom wordt ieder jaar geinjecteerd tegen iepenziekte The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "Red Horse Chestnut, Amstelveen",
+   "species": "Red Horse Chestnut (Aesculus x carnea)",
+   "lat": 52.309306,
+   "lng": 4.844711,
+   "status": "lead",
+   "why": "Staged 2026-08-22 from Amstelveen, which sits 7.4 km from the Amsterdam city centre and is inside this site's day-trip boundary, so it belongs on the Amsterdam page rather than on a thin page of its own. Name the real place honestly in the location fields and the true travel time in transport. LRMB register nr 1684073 ('Rode paardenkastanje'). Register planting band 1920-1930, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting plantsoen. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "Lime, Veenendaalplein (tegenover huisnummer 1)",
+   "species": "Lime (Tilia sp.)",
+   "lat": 52.301029,
+   "lng": 4.848463,
+   "status": "lead",
+   "why": "Staged 2026-08-22 from Amstelveen, which sits 7.4 km from the Amsterdam city centre and is inside this site's day-trip boundary, so it belongs on the Amsterdam page rather than on a thin page of its own. Name the real place honestly in the location fields and the true travel time in transport. LRMB register nr 1684072 ('De Beatrix linde'). Register planting band 1930-1940, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting plantsoen. Register history of the PLACE, not of the tree, so do not bridge from it: De Hollandse linde is geplant als herdenkingsboom voor prinses Beatrix op 31 januari 1938. Het is een boom op een mooie locatie, goed in het zicht op de hoek van de doorgaande wegen. Helaas is de linde minder goed in conditie. We zien dood hout in de top en aan gesteltakken. Er is opslag van jonge scheuten in de binnenkroon. Groeiplaats onderzoek is gewenst om het tij te keren. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "name": "Southern Catalpa, Amstelveen",
+   "species": "Southern Catalpa (Catalpa bignonioides)",
+   "lat": 52.315642,
+   "lng": 4.874768,
+   "status": "lead",
+   "why": "Staged 2026-08-22 from Amstelveen, which sits 7.4 km from the Amsterdam city centre and is inside this site's day-trip boundary, so it belongs on the Amsterdam page rather than on a thin page of its own. Name the real place honestly in the location fields and the true travel time in transport. LRMB register nr 1690655 ('Trompetboom'). Register planting band 1950-1960, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting plantsoen. Register history of the PLACE, not of the tree, so do not bridge from it: De boom staat in een jaren zestig wijk en zal zelf ook uit die periode dateren. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Vondelpark entrance plane avenue, 7-8 trees planted 1881-1925",
+   "species": "Platanus hispanica (London Plane)",
+   "location_hint": "register_ids N5564, 503377, 503374, 503379, 503373, 503372, 503370, 503369, all within roughly 40m x 40m near 52.3634,4.8802, Vondelpark entrance area",
+   "reason": "BLOCKED as an ensemble, not a single collectible point. Verified 2026-08-09 by computing pairwise distances between all register entries: these 8 Platanus hispanica trees (planted 1881, 1883, 1892 and 1925, girths 396-546cm) sit in a tight cluster with a median inter-tree spacing under 25m, reading as a formal planted avenue/allee rather than individual specimens, the same shape as other blocked Amsterdam plane avenues already recorded (Park Frankendael's Zwarte Linde run above). No plaque, name or documented 'largest of the row' fact found for any individual tree in this group in this pass. If a future pass finds one specimen singled out by a source, it could be reconsidered individually."
+  },
+  {
+   "name": "Vondelpark entrance bald cypress grove, 8 trees planted 1948",
+   "species": "Taxodium distichum (bald cypress)",
+   "location_hint": "register_ids 503356, 503357, 503358, 503359, 503360, 503361, 503362, 503363, 503364, 503365, clustered within about 15m of each other near 52.3635,4.8799, Vondelpark entrance area",
+   "reason": "BLOCKED as an ensemble. Verified 2026-08-09: 8-10 same-species, same-year (1948) trees within a very tight 15m radius, clearly a planted grove rather than individual specimens, girths 149-234cm (modest, 78 years old). Note this is a DIFFERENT bald cypress group from the one search results describe along the Van Eeghenvijver ('moerascipressen ouder dan 100 jaar, van omstreeks 1912'), which is elsewhere in the park and not checked this pass. No individual standout found in this particular 1948 grove."
+  },
+  {
+   "name": "J.W. van Overloopplantsoen plane trees, Plantage Muidergracht",
+   "species": "London Plane (Platanus x hispanica), roughly 39 trees per public description",
+   "location_hint": "J.W. van Overloopplantsoen, Plantage Muidergracht, approx 52.365,4.912, about 350-400m from the Wertheimpark/Hortus/Artis cluster",
+   "reason": "CHECKED 2026-08-09: public descriptions (deplantage.amsterdam, Yelp) describe 'the first nine trees' of a grassy strip plus 'the other 30 trees' that suffered root damage during sewer works, reading as a planted avenue of roughly 39 plane trees rather than individual specimens. BLOCKED as an ensemble under the same test already applied to the Vondelpark plane avenue and bald cypress grove, unless a future pass finds one tree singled out by name or measurement."
+  }
+ ]
 }

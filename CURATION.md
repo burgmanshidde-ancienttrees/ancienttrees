@@ -1249,3 +1249,38 @@ Not settled:
   hearsay rather than laundered into a fact; the page tells readers what scar to
   look for if they want to check it.
 - **Photos: none for any of the three.**
+
+## The remaining eleven, staged rather than written, 2026-08-22
+
+Hidde: "prima zet ze maar klaar". 93 candidates are staged as READY leads and as
+write-pass input, by scripts/nl_stage.py, which generates both files from one
+selection so they cannot drift apart.
+
+**Two were folded into existing cities instead of getting pages.** Voorburg is
+3.6 km from The Hague's centre and Amstelveen 7.4 km from Amsterdam's, both
+inside the day-trip boundary, so their trees are staged as hag_023 onward and
+ams_033 onward. Each entry carries the instruction that the real place goes in
+the location fields and the true travel time in transport, and that the tree is
+never presented as standing in the bigger city. This avoids two thin suburban
+pages and adds seventeen trees to pages that already get impressions.
+
+**One school tree blocked automatically**, in Sittard-Geleen, using the wording
+data/block-reasons.json matches. nl_stage.py does this rather than leaving it to
+a writer to remember, because CLAUDE.md's school rule is about not sending adult
+strangers where children are and no register field can settle it.
+
+**A passcheck bug, found by staging Assen.** `--brief Assen` answered "ALREADY
+PUBLISHED as Apeldoorn". The register fallback in centre_from_registers() used
+bare substring containment, and "assen" is inside "kassen", the greenhouses of
+Paleis Het Loo, so two Apeldoorn entries centred the brief 55 km from Assen. The
+function's docstring already described this failure shape (graz inside Grazie)
+and the containment had been left in anyway. It is now word-bounded, and all
+eleven places are in data/city-coords.json so the verified table answers first.
+Regression checked against Graz, Melbourne, Naples, Apeldoorn and the cities
+opened today.
+
+**Stale research files removed** for eindhoven, apeldoorn and tilburg, published
+earlier the same day. `passcheck --pending` would have offered them to a write
+pass as unwritten work, which is the exact failure BRIEF_WRITING.md documents.
+Two pre-existing items remain and are not from this run: bari-verified.json has
+3 stories written and ready to merge, and nijmegen-verified.json is stale.
