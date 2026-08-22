@@ -216,7 +216,7 @@ struct CollectView: View {
                 }
             }
             Text(collectedSpecies.isEmpty
-                 ? "Tick a tree off and its species fills in here."
+                 ? "Collect a tree and its species fills in here."
                  : "The eighteen species we map most. Rarer ones count too; they are simply not drawn here yet.")
                 .font(.caption).foregroundStyle(Brand.inkSoft)
         }
@@ -356,7 +356,7 @@ struct CollectView: View {
             VStack(alignment: .leading, spacing: 10) {
                 Text("Nothing collected yet")
                     .font(.brand(24, .bold, relativeTo: .title)).foregroundStyle(Brand.ink)
-                Text("There are \(catalogue.trees.count.formatted(.number.locale(Locale(identifier: "en_US")))) trees to find in \(Set(catalogue.trees.map(\.country)).count) countries. Explore the map, save the ones you want, and tick them off as you stand before them.")
+                Text("There are \(catalogue.trees.count.formatted(.number.locale(Locale(identifier: "en_US")))) trees to find in \(Set(catalogue.trees.map(\.country)).count) countries. Explore the map, save the ones you want, and photograph them as you stand before them.")
                     .font(.subheadline).foregroundStyle(Brand.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
             }

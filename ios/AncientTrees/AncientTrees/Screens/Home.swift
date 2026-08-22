@@ -43,7 +43,6 @@ struct HomeView: View {
     let origin: (lat: Double, lng: Double)
     @Environment(CatalogueStore.self) private var store
     @Environment(Navigator.self) private var navigator
-    @State private var search = ""
     @State private var searching = false
     /// Worked out once rather than on every redraw.
     ///
@@ -56,7 +55,6 @@ struct HomeView: View {
     @State private var deck = Shelves()
 
     struct Shelves {
-        var atTheirBest: [Tree] = []
         var oldest: [Tree] = []
         var countries: [(name: String, count: Int, cities: Int, photo: Tree?)] = []
         var cities: [(slug: String, name: String, country: String, count: Int)] = []
@@ -65,9 +63,7 @@ struct HomeView: View {
     }
 
     private var month: Int { Calendar.current.component(.month, from: Date()) }
-    private var monthName: String { DateFormatter().monthSymbols[month - 1] }
 
-    private var atTheirBest: [Tree] { deck.atTheirBest }
     private var cities: [(slug: String, name: String, country: String, count: Int)] { deck.cities }
     private var walksNear: [Walk] { deck.walksNear }
     private var oldest: [Tree] { deck.oldest }
@@ -76,7 +72,6 @@ struct HomeView: View {
     /// the map has moved somewhere far enough to change what is near.
     private func buildShelves() {
         var s = Shelves()
-        s.atTheirBest = catalogue.atTheirBest(inMonth: month, near: origin.lat, origin.lng, withinKm: 150)
         s.cities = Dictionary(grouping: catalogue.trees, by: \.citySlug)
             .map { (slug: $0.key, name: $0.value[0].city,
                     country: $0.value[0].country, count: $0.value.count) }
@@ -186,49 +181,6 @@ struct HomeView: View {
     /// hero photo you cannot have on a phone without eating the whole screen.
     /// Picks the nearest tree that is at its best right now AND has a
     /// photograph, because a hero without a picture is a headline.
-    @ViewBuilder private var hero: some View {
-        if let t = atTheirBest.first(where: { $0.photo != nil }) {
-            NavigationLink(value: Route.tree(t.id)) {
-                VStack(alignment: .leading, spacing: 0) {
-                    ZStack(alignment: .bottomLeading) {
-                        if let p = t.photo, let url = Photos.thumb(p.url, width: 900) {
-                            AsyncImage(url: url) { img in
-                                img.resizable().aspectRatio(contentMode: .fill)
-                            } placeholder: {
-                                LinearGradient(colors: [Brand.canopy, Brand.moss],
-                                               startPoint: .topLeading, endPoint: .bottomTrailing)
-                            }
-                            .frame(height: 260).clipped()
-                        }
-                        LinearGradient(colors: [.clear, .black.opacity(0.75)],
-                                       startPoint: .center, endPoint: .bottom)
-                        VStack(alignment: .leading, spacing: 6) {
-                            Chip(text: "At its best now", tint: Brand.gold, filled: true)
-                            Text(t.name)
-                                .font(.brand(26, .black, relativeTo: .title))
-                                .foregroundStyle(.white)
-                                .multilineTextAlignment(.leading)
-                            if let b = t.bestTime {
-                                Text(b.label).font(.subheadline)
-                                    .foregroundStyle(.white.opacity(0.9))
-                                    .lineLimit(2)
-                            }
-                        }
-                        .padding(16)
-                    }
-                    .frame(height: 260)
-                }
-                .clipShape(.rect(cornerRadius: 16))
-                .shadow(color: .black.opacity(0.10), radius: 10, y: 4)
-                .padding(.horizontal, 16)
-            }
-            .buttonStyle(.plain)
-        }
-    }
-
-    /// Vertically, because a species is a WORD. Side by side they were a row
-    /// of small labels you had to scroll sideways to read, and reading is the
-    /// whole job of a list of names (Hidde, 2026-08-21).
     private var speciesShelf: some View {
         VStack(alignment: .leading, spacing: 8) {
             ShelfHeader(title: "By species",
@@ -470,67 +422,8 @@ struct HomeView: View {
         }
         .frame(width: 172)
         .clipShape(.rect(cornerRadius: 14))
-        .shadow(color: .black.opacity(0.07), radius: 8, y: 3)
     }
 
-    // MARK: - the search state
-
-    @ViewBuilder private var results: some View {
-        let q = search.lowercased()
-        let places = cities.filter {
-            $0.name.lowercased().contains(q) || $0.country.lowercased().contains(q)
-        }
-        let trees = catalogue.trees.filter {
-            $0.name.lowercased().contains(q) || $0.species.lowercased().contains(q)
-        }.prefix(30)
-
-        if places.isEmpty && trees.isEmpty {
-            Text("Nothing matches “\(search)”.")
-                .font(.footnote).foregroundStyle(Brand.inkSoft)
-                .padding(.horizontal, 16).padding(.top, 30)
-        }
-        if !places.isEmpty {
-            VStack(alignment: .leading, spacing: 12) {
-                ShelfHeader(title: places.count == 1 ? "1 place" : "\(places.count) places")
-                VStack(spacing: 0) {
-                    ForEach(places.prefix(20), id: \.slug) { c in
-                        NavigationLink(value: Route.city(c.slug)) {
-                            HStack {
-                                VStack(alignment: .leading, spacing: 1) {
-                                    Text(c.name).font(.cardTitle).foregroundStyle(Brand.ink)
-                                    Text(c.country).font(.caption).foregroundStyle(Brand.inkSoft)
-                                }
-                                Spacer()
-                                Text("\(c.count)").font(.subheadline).foregroundStyle(Brand.inkSoft)
-                                    .monospacedDigit()
-                                Image(systemName: "chevron.right")
-                                    .font(.caption).foregroundStyle(Brand.inkSoft.opacity(0.6))
-                            }
-                            .padding(.horizontal, 14).padding(.vertical, 12)
-                        }
-                        .buttonStyle(.plain)
-                        if c.slug != places.prefix(20).last?.slug {
-                            Divider().padding(.leading, 14)
-                        }
-                    }
-                }
-                .brandCard()
-                .padding(.horizontal, 16)
-            }
-        }
-        if !trees.isEmpty {
-            VStack(alignment: .leading, spacing: 12) {
-                ShelfHeader(title: "\(trees.count) trees")
-                ForEach(trees) { t in
-                    NavigationLink(value: Route.tree(t.id)) {
-                        TreeCard(tree: t)
-                            .padding(.horizontal, 16)
-                    }
-                    .buttonStyle(.plain)
-                }
-            }
-        }
-    }
 }
 
 /// One collection, opened from its shelf: the editor's own introduction, then

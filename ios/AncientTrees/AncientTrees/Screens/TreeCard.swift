@@ -43,7 +43,6 @@ struct TreeCard: View {
         // a press on the field opened the tree (the SE, 2026-08-21, found by
         // a UI test that kept landing on a tree page it never asked for).
         .contentShape(.rect(cornerRadius: corner))
-        .shadow(color: .black.opacity(0.07), radius: 8, y: 3)
     }
 
     @ViewBuilder private var image: some View {
@@ -89,7 +88,7 @@ struct TreeCard: View {
     }
 
     private var placeholder: some View {
-        LinearGradient(colors: [Color(red: 0.20, green: 0.35, blue: 0.20),
+        LinearGradient(colors: [Brand.canopy,
                                 Color(red: 0.35, green: 0.48, blue: 0.30)],
                        startPoint: .topLeading, endPoint: .bottomTrailing)
     }
@@ -135,7 +134,7 @@ struct TreeCard: View {
             .font(.caption2.weight(.semibold))
             .foregroundStyle(.white)
             .padding(.horizontal, 8).padding(.vertical, 5)
-            .background(Color(red: 0.20, green: 0.35, blue: 0.20), in: .capsule)
+            .background(Brand.canopy, in: .capsule)
             .padding(10)
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
     }

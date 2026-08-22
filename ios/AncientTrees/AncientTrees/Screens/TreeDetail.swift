@@ -160,19 +160,43 @@ struct TreeDetail: View {
     private var header: some View {
         VStack(alignment: .leading, spacing: 6) {
             Text(tree.name)
-                .font(.brand(32, .black, relativeTo: .largeTitle))
+                .font(.brand(30, .bold, relativeTo: .largeTitle))
                 .foregroundStyle(Brand.ink)
             Text(tree.species).font(.subheadline).foregroundStyle(Brand.inkSoft)
+            // WHERE it is, with the width of the page to say it in.
+            //
+            // It used to be the middle column of the stat row, where "Plantage,
+            // Amsterdam-Centrum" became "Plantage, Amsterdam-C..." A stat row
+            // holds numbers: AllTrails puts length, ascent and time in theirs,
+            // and a place name is a phrase, not a number.
+            Text(place).font(.subheadline).foregroundStyle(Brand.inkSoft)
+                .lineLimit(1)
         }
+    }
+
+    private var place: String {
+        let n = tree.neighbourhood.trimmingCharacters(in: .whitespaces)
+        guard !n.isEmpty else { return tree.city }
+        // Many registers write the district as "Amsterdam-Centrum", so adding
+        // the city gives "Plantage, Amsterdam-Centrum, Amsterdam".
+        return n.localizedCaseInsensitiveContains(tree.city) ? n : "\(n), \(tree.city)"
     }
 
     /// Four facts with their units labelled, the way AllTrails does it and the
     /// way our own website already does on a tree page.
+    /// The number, where the feed has one, so the row holds a figure rather
+    /// than a hedged sentence. The full wording is in the story.
+    private var shortAge: String {
+        if let lo = tree.ageMin, lo > 0 {
+            if let hi = tree.ageMax, hi > lo { return "\(lo)-\(hi) years" }
+            return "\(lo) years"
+        }
+        return tree.age ?? "not recorded"
+    }
+
     private var facts: some View {
         HStack(alignment: .top, spacing: 0) {
-            fact(tree.age ?? "not recorded", "Age")
-            Divider().frame(height: 34)
-            fact(tree.neighbourhood, "Where")
+            fact(shortAge, "Age")
             Divider().frame(height: 34)
             fact(tree.precision == .confirmed ? "Exact" : "Approximate", "Pin")
         }

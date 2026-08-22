@@ -433,7 +433,7 @@ struct MapTab: View {
                 walkChip
                 FilterChip(label: "Collected", icon: "checkmark.seal",
                            on: filters.collectedOnly) { filters.collectedOnly.toggle() }
-                FilterChip(label: "Your trees", icon: "leaf",
+                FilterChip(label: "Yours", icon: "leaf",
                            on: filters.yoursOnly) { filters.yoursOnly.toggle() }
 
                 Menu {
