@@ -39,6 +39,8 @@ Daarnaast vroeg ik me af: welke boom mis jij persoonlijk op de site?
 
 Elke hulp zou zeer gewaardeerd worden!
 
+En als je de site de moeite waard vindt: een vermelding op jullie website zou enorm helpen om deze bomen onder de aandacht te brengen.
+
 Ik ben erg benieuwd naar jouw mening over het project.
 
 Met vriendelijke groet,
@@ -53,6 +55,8 @@ We have {n} trees in {city} and I was really curious whether you would take a lo
 I also wondered: which tree do you personally think is missing?
 
 Any help would be much appreciated!
+
+And if you think the site is worth it, a mention on your website would help enormously to get these trees noticed.
 
 I would really like to hear your opinion on the project.
 
@@ -69,6 +73,8 @@ Je me demandais aussi : quel arbre vous manque-t-il personnellement sur le site 
 
 Toute aide serait très appréciée !
 
+Et si vous trouvez le site utile, une mention sur votre site aiderait énormément à faire connaître ces arbres.
+
 Votre avis sur le projet m'intéresse beaucoup.
 
 Cordialement,
@@ -83,6 +89,8 @@ Mamy {n} {drzewa} {city} i bardzo mnie ciekawi, czy zechcielibyście rzucić oki
 Zastanawiałem się też: jakiego drzewa Waszym zdaniem brakuje na stronie?
 
 Każda pomoc byłaby bardzo cenna!
+
+A jeśli uznacie stronę za wartościową, wzmianka na Waszej stronie ogromnie pomogłaby tym drzewom zaistnieć.
 
 Bardzo jestem ciekaw Waszej opinii o projekcie.
 
@@ -99,6 +107,8 @@ Napadlo mě také: který strom vám na webu osobně chybí?
 
 Jakákoli pomoc by mi hodně pomohla!
 
+A pokud vám web přijde užitečný, zmínka na vašich stránkách by těmto stromům nesmírně pomohla.
+
 Velmi mě zajímá váš názor na projekt.
 
 S pozdravem,
@@ -113,6 +123,8 @@ Wir haben {n} Bäume in {city} und mich würde sehr interessieren, ob Sie einmal
 Außerdem habe ich mich gefragt: welcher Baum fehlt Ihnen persönlich auf der Seite?
 
 Über jede Hilfe würde ich mich sehr freuen!
+
+Und falls Sie die Seite für nützlich halten: eine Erwähnung auf Ihrer Website würde enorm helfen, diese Bäume bekannt zu machen.
 
 Ihre Meinung zu dem Projekt interessiert mich sehr.
 
@@ -129,6 +141,8 @@ Inoltre mi chiedevo: quale albero pensate personalmente che manchi sul sito?
 
 Ogni aiuto sarebbe molto apprezzato!
 
+E se il sito vi sembra utile, una menzione sul vostro sito aiuterebbe moltissimo a far conoscere questi alberi.
+
 Mi interessa molto la vostra opinione sul progetto.
 
 Cordiali saluti,
@@ -143,6 +157,8 @@ Temos {n} árvores em {city} e tinha muita curiosidade em saber se poderiam dar 
 Além disso, perguntava-me: que árvore acham pessoalmente que falta no site?
 
 Qualquer ajuda seria muito apreciada!
+
+E se acharem o site útil, uma menção no vosso site ajudaria imenso a dar a conhecer estas árvores.
 
 Gostava muito de saber a vossa opinião sobre o projeto.
 
