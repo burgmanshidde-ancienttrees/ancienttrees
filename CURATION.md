@@ -10,6 +10,32 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-22 (night run) - Submissions 11-36: Hidde's own QA of the rebuilt worthit widget, not reader input
+
+26 new rows in `submissions`, all `kind: feedback`, all from one `user_id`
+that resolves to burgmans.hidde@gmail.com (checked via
+`/auth/v1/admin/users`). The pattern makes it unambiguous: rapid vote/undo
+cycles on three trees (Rome's rom_001 Ginkgo of Villa Sciarra, Amsterdam's
+ams_004 Wertheimpark Wingnut, Utrecht's utr_005 Onder de Linden), several
+pairs under 20ms apart, which no human thumb produces. Timestamps land the
+same day the WorthIt widget was revised (worthit-js.ts's own 2026-08-21
+comment), so this reads as his own click-through test of the toggle/undo/
+chip behaviour right after shipping it, not field feedback.
+
+One row (id 14) is a genuine chip click, "report: could not reach it" on
+rom_001. Checked against our own data anyway: `access` already says "Free,
+open access, Villa Sciarra public park", a well documented public park, so
+nothing here suggests the pin or access line is actually wrong. Read together
+with the rest of the sequence, this is almost certainly a test click rather
+than a real "I stood at a locked gate" report. Not treated as a correction;
+no page changed. If a second, distinct report on rom_001 arrives later, per
+the standing rule it reopens the question rather than being waved off by this
+entry.
+
+All 26 ids appended to `data/submissions-processed.json`. No outcome/
+reply_text set on any of them (nothing to answer; contributor_reply.py's
+generic thank-you, if it fires, is harmless since the address is his own).
+
 ## 2026-08-21 (session) - Bucaco: the Fundacao's nine plaques, read and merged
 
 The files arrived within the hour: nine PDFs of the Trilho das Arvores Notaveis
