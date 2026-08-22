@@ -1058,3 +1058,30 @@ recorded basis. Checked all six against the MASAF register they cite:
   Open to correction: nobody has stood in that square for us. A reader who
   has can settle which trunk is which in one message.
 - cas_012 (araucaria) sits exactly on its register point and needed nothing.
+
+## Eindhoven, 2026-08-22
+
+Opened from the Dutch LRMB register (Bomenstichting, attribution-only licence).
+7 trees, 6 flagged, 7 photos missing.
+
+What could not be settled:
+- **Age of De Gevlekte Zuiderling.** The Wereldboom foundation says planted
+  around 1760, the national register gives a band of 1820-1830. Both are on the
+  page; nobody has cored it.
+- **Is it still alive?** It was set on fire on 28 July 2022 and arborists put its
+  survival at 30 percent, with the answer not visible until spring 2024. The
+  register's 2024 edition still carries it and NOS reported thirty shoots grafted
+  into a living scaffold. Published with the question asked on the page.
+- **The Glorieuxpark beech.** The thickest beech in North Brabant stood in this
+  park and was felled after its crown collapsed in September 2013. That was a
+  green beech; ours is a copper beech and the register recorded it eleven years
+  later, so they are almost certainly different trees. Stated plainly on the page
+  with an invitation to correct us.
+- **Photos: none.** Not hunted this pass. Wikimedia has a Groendomein Wasven
+  category worth a viewing pass.
+
+Dropped from the shortlist: the Hungarian oak by the PSV stadium (Quercus
+frainetto, register nr 1697320). Real and visitable, but the register's history
+for it is generic species prose copied from ecotree.green and no second source
+turned up, so there was nothing to write. It stays in
+data/leads/eindhoven-register.json.

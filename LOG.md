@@ -1,5 +1,42 @@
 # LOG
 
+## 2026-08-22 - Eindhoven opened, and a way to open 24 more Dutch cities
+
+**Eindhoven is live with 7 trees**, the first city built from the Dutch national
+register since its licence was corrected. The page has a spine: the old trees of
+Eindhoven are nearly all Philips trees. A horse chestnut planted in 1909 because
+the company thought staff worked better with something green in view, standing
+now at gate 11 of the stadium with 470 square metres of ground reserved for its
+roots. The estate Frits Philips lived on until 2005, shut for a century and
+opened to the public on 27 September 2025. And the plane at Wasven that three
+teenagers set on fire in 2022, given a thirty percent chance, now held up by
+thirty of its own shoots woven into a living scaffold.
+
+**The bigger piece is the machinery.** Hidde asked for the top 25 large Dutch
+cities that have register trees and no page yet. That list now exists, and so do
+the two scripts that build from it:
+
+- `scripts/nl_candidates.py` filters the register to trees that are publicly
+  visitable and are single collectible points, drops the ones the register's own
+  history says have been felled, translates the Dutch species name into the exact
+  string the site already publishes, and clusters what is left into walks.
+- `scripts/nl_to_research.py` turns a city's best cluster into a research file
+  the writing pass can finish.
+
+**1,017 candidates across 25 cities** are saved in `data/leads/*-register.json`,
+so no later run repeats the search. The felled-tree filter caught 12 trees that
+would otherwise have gone live dead.
+
+Measured before starting, because it changes what this is worth: our thirteen
+Dutch pages are 9 percent of the site's pages and take 8 percent of its
+impressions. Nine of them have never had a click. So this is cheap supply rather
+than proven demand, and the honest read is that it is worth doing because it
+costs little, not because Dutch pages are winning.
+
+**Also found: ten real Dutch cities were missing from the queue entirely**,
+Eindhoven and Tilburg among them, so no night run could ever have picked them.
+Eindhoven is now in it.
+
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
 <!-- archive-index -->
