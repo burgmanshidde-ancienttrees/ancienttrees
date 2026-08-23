@@ -3025,6 +3025,15 @@
     "note": "session work following the write pass: set missing name/neighbourhood/transport fields, fixed Amsterdam's stale 31/21 count copy to 39/29, wrote Zaanstad's full city-page copy from scratch (new city, 4 trees, below-floor Haarlemmermeer's 3 held back), wrote 8 Dutch tree translations for nl/amsterdam.json (build enforces full translation coverage), fixed a city_queue.py KeyError crash (enrich() assumed every queue entry has a 'basis' field; two 2026-08-22 stub entries for Zaanstad/Haarlemmermeer didn't). Tokens not tracked for session work, logged as 0 per the standing instruction rather than leaving the day looking empty.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "pagegaps: cappadocian-maple, canary-pine species + fota-arboretum-cork, hortus-botanicus-leiden, prinsentuin-leeuwarden parks",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session work, not an agent pass: wrote 4 intro pages (2 species, 2 park) from scripts/pagegaps.py output, each from its own subject trees per P3. Also fixed a real bug found along the way: pagegaps.py PARKISH regex was a stale mirror of site/src/lib/parks.ts PARK_WORDS (missing the villa-with-trailing-space distinction and several words entirely), which had reported a phantom gap (Real Alcazar de Sevilla, matched only via villa inside Sevilla) and hidden two real ones (Leiden Hortus, Leeuwarden Prinsentuin). Fixed the regex, dropped the phantom park file, wrote the two real ones instead. Tokens not tracked for session work, logged as 0 per standing instruction.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
