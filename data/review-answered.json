@@ -20,6 +20,10 @@
     "2026-08-22": {
       "note": "Gmail WARN: address was already redacted to 'his own account' in CURATION.md by cb518406 before this run started; verified no other repo file exposes it except the standard User-Agent contact strings in scripts/*.py, which are the intended public contact and not a leak. History-rewrite question left for Hidde per the FOR HIDDE note.",
       "at": "2026-08-23T00:30:34+00:00"
+    },
+    "2026-08-23": {
+      "note": "Fixed The Hague's stale intro count (21 to 30) and widened count-promises.ts to catch the 'N trees in all' phrasing shape, verified against the exact bug and the rest of the corpus (commit 9a957fdc).",
+      "at": "2026-08-23T07:08:26+00:00"
     }
   }
 }
