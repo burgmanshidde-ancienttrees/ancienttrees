@@ -2,8 +2,8 @@
   "city": "Porto",
   "country": "Portugal",
   "status": "needs_curation",
-  "intro": "Porto's grandest trees mostly arrived with 19th-century British port wine families, who filled their quintas with tulip trees, magnolias and southern hemisphere exotics their money could import but Porto's own climate had to accept. Two gardens hold much of what is worth seeing, the Jardins do Palácio de Cristal and the Jardim Botânico do Porto. A short walk east adds three University of Porto quintas, the same collector's habit continued on academic ground. Porto also calls itself the City of Camellias, and means it literally.",
-  "meta_description": "Porto's trees range from a 250-year tulip tree to a 35-metre ginkgo that turns gold in December, across two gardens and three university quintas.",
+  "intro": "Porto's grandest trees mostly arrived with 19th-century British port wine families, who filled their quintas with tulip trees, magnolias and southern hemisphere exotics their money could import but Porto's own climate had to accept. Three gardens hold much of what is worth seeing: the Jardins do Palácio de Cristal, the Jardim Botânico do Porto, and the Jardim da Cordoaria, near São Bento station. A short walk east adds three University of Porto quintas, the same collector's habit continued on academic ground. Porto also calls itself the City of Camellias, and means it literally.",
+  "meta_description": "Porto's trees range from a 250-year tulip tree to a 35-metre ginkgo that turns gold in December, across three gardens and three university quintas.",
   "question_answer": "Porto's oldest tree that anyone can walk up to is a Virginia tulip tree (Liriodendron tulipifera) beside Casa Tait in the Jardins do Palacio de Cristal, put at more than 250 years and one of the first individual trees Portugal placed under legal protection, in 1950. It stands in the free public gardens off Rua de D. Manuel II. The national register lists one older, a 300-year tulip tree in a school yard on Rua Joao de Deus, which is not open to visitors.",
   "question_meta": "Porto's oldest tree is a 250-year tulip tree at Casa Tait, protected since 1950. Where it stands, and the city's other remarkable trees.",
   "question_context": "The tulip tree beside Casa Tait has the strongest documented age claim in Porto: it was already mature enough to warrant individual legal protection when Portugal formalised its tree of public interest classification in 1950, and both the city council's own parks department and independent garden historians place its age at over 250 years. That makes it older than the Palácio de Cristal gardens built around it, which German landscape architect Émile David laid out in the 1860s, and older than the original glass-and-iron exhibition palace itself, demolished in 1951 and replaced with the domed arena that stands there now. Casa Tait, the mansion beside the tree, took its name from a family of British port wine merchants whose 19th-century wealth shaped much of what grows in this corner of the garden, tulip trees, magnolias and camellias among them. A second, taller tulip tree grows nearby without the same formal protection status, and should not be confused with the older, classified specimen the question above refers to.",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Porto's remarkable trees free to visit?",
-      "a": "Nearly all of them. Seventeen of the twenty-seven stand in free public gardens or walkable university campuses: the Jardins do Palácio de Cristal, the Jardim Botânico do Porto, and three University of Porto quintas a short walk further east. The one exception is the Camphor Tree of Via Panorâmica, which stands on a privately owned plot and is viewed from the public road rather than entered."
+      "a": "Nearly all of them. Nineteen of the twenty-nine stand in free public gardens or walkable university campuses: the Jardins do Palácio de Cristal, the Jardim Botânico do Porto, the Jardim da Cordoaria, and three University of Porto quintas a short walk further east. The one exception is the Camphor Tree of Via Panorâmica, which stands on a privately owned plot and is viewed from the public road rather than entered."
     },
     {
       "q": "Why is Porto called the City of Camellias?",
@@ -954,6 +954,68 @@
       "transport": "Central Porto, near the Faculty of Engineering / Rivoli area, walkable from Trindade and Bolhão metro stations",
       "location_precision": "confirmed",
       "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "por_028",
+      "name": "The Elephant's-Foot Plane Avenue of the Cordoaria",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "about 160 years, planted around 1866 when the garden was laid out",
+      "age_min": 150,
+      "age_max": 165,
+      "girth_cm": 540,
+      "height_m": 19,
+      "location": {
+        "address": "Jardim da Cordoaria (Jardim de Joao Chagas), Praca Coronel Pacheco, Porto",
+        "latitude": 41.14559999,
+        "longitude": -8.617099988,
+        "neighbourhood": "Cordoaria, Cedofeita"
+      },
+      "verified_sources": [
+        "Portugal's national register of trees of public interest (ICNF), processo KNJ3/050, 'Alameda de Platanos', Jardim da Cordoaria, classified D.R. n.o 6, II Serie, 10/01/2005",
+        "100 Mil Arvores project, 'Arvores de Cedofeita: segredos bem guardados' (100milarvores.pt, June 2017): confirms 37 London planes forming one classified ensemble, physiognomy singular due to a disease that deformed the trunk bases into an 'elephant paw' shape, trees reported perfectly healthy"
+      ],
+      "access": "Free, public garden (Jardim da Cordoaria, also called Jardim de Joao Chagas), triangular and unfenced, open at all hours.",
+      "transport": "Central Porto, about a 5-10 minute walk from Sao Bento railway station.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "story": "Thirty-seven plane trees line one avenue in the Jardim da Cordoaria, and every one of them has the same strange deformity: a disease swelled their bases into something that looks, unmistakably, like an elephant's foot. The trees are perfectly healthy. Portugal's monumental tree register classifies the whole avenue as one entry, the Alameda dos Platanos, rather than splitting it into 37 separate trunks, because that is how a visitor actually experiences it: one long, uniform, oddly-footed colonnade.\n\nThe garden itself predates the plane trees by centuries in name only. Rope-makers worked this ground for two hundred years, which is where Cordoaria comes from, until the council cleared them out in the 1860s and hired the landscape architect Emile David, who also laid out the gardens of the nearby Palacio de Cristal, to build a proper garden in their place. The planes went in around 1866. A cyclone tore through in 1941 and reshaped the garden's canopy, but the avenue survived it and was formally classified a tree of public interest in 2005.\n\nThe garden is triangular, unfenced and free, a short walk from Sao Bento station. Walk the length of the avenue once and every trunk repeats the same swollen, elephantine base.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "por_029",
+      "name": "The Bunya-Bunya of the Cordoaria",
+      "species": "Bunya Pine (Araucaria bidwillii)",
+      "age_estimate": "about 150 years",
+      "age_min": 140,
+      "age_max": 160,
+      "girth_cm": 360,
+      "height_m": 40,
+      "location": {
+        "address": "Jardim da Cordoaria (Jardim de Joao Chagas), Praca Coronel Pacheco, Porto",
+        "latitude": 41.14595304,
+        "longitude": -8.616813246,
+        "neighbourhood": "Cordoaria, Cedofeita"
+      },
+      "verified_sources": [
+        "Portugal's national register of trees of public interest (ICNF), processo KNJ1/450, 'araucaria-da-queenslandia ou bunya-bunya', Jardim da Cordoaria, classified D.R. n.o 6, II Serie, 10/01/2005",
+        "100 Mil Arvores project, 'Arvores de Cedofeita: segredos bem guardados' (100milarvores.pt, June 2017): confirms it stands by the garden's lake beside a Cedar of Lebanon and a Cedar of Atlas, calls it the tallest tree in the garden and one of the tallest in Porto at 40 metres, 'mais de 140 anos', native to Australia"
+      ],
+      "access": "Free, public garden (Jardim da Cordoaria, also called Jardim de Joao Chagas), triangular and unfenced, open at all hours.",
+      "transport": "Central Porto, about a 5-10 minute walk from Sao Bento railway station.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "At 40 metres this bunya pine is the tallest tree in the Jardim da Cordoaria and one of the tallest anywhere in Porto, a conifer from Queensland's rainforests standing beside a Cedar of Lebanon and a Cedar of Atlas at the garden's lake, close enough together that a local tree-walking group uses the three of them to teach visitors how to tell the different conifers apart.\n\nAraucaria bidwillii belongs to a genus that once grew across the ancient supercontinent Gondwana and now survives as a handful of species scattered from Australia to South America, most of them, like this one, planted deliberately as curiosities far from where they evolved. Portugal's monumental tree register measured this specimen at 3.6 metres round, 40 metres tall with a 12-metre crown, and classified it a tree of public interest in the same 2005 notice that protects the garden's plane tree avenue nearby.\n\nIt has stood in this triangular, unfenced garden for roughly a century and a half, since not long after the ground stopped being a rope-makers' yard and became a public park. Free to see at any hour, a short walk from Sao Bento station.",
       "photo": {
         "url": null,
         "license": null,

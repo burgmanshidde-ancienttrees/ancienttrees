@@ -3268,6 +3268,15 @@
     "note": "session work, not a dispatched pass; wrote stories for the 2 padua + 1 nijmegen trees the verify pass delivered, merged, fixed count promises (padua five->seven Orto Botanico trees, nijmegen seventeen->eighteen incl. NL i18n overlay for nij_018), preflight and build clean",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "porto (Jardim da Cordoaria: plane avenue + bunya pine)",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 2,
+    "note": "session work, not a dispatched pass. Found via a recurring Search Console content-lead in DATA.md ('alameda dos platanos' has no matching page, ~8-13 impressions/day, position ~8, appearing for many days while Porto already publishes). Register (portugal-icnf.json) already carried both trees (Jardim da Cordoaria's classified 37-plane avenue and its bunya pine) unpublished; cross-checked against a directly-fetched second source (100milarvores.pt) for the elephant-foot deformity story. Wrote both stories plus the Portuguese i18n overlay (Porto has a PT translation), fixed count promises in both languages (27->29 trees, two->three gardens). preflight and build clean.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
