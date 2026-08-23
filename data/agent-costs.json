@@ -3178,6 +3178,15 @@
     "note": "1 new standalone tree verified (Newstead House fig) outside the exhausted Botanic Gardens cluster; 2 promising leads recorded (Manly West Bunya Tree, Toowong Cemetery hoop pine) needing a second source or a distance judgement call",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "alicante (ali_011, Paseito de Ramiro fig) + brisbane (bne_016, Talking Tree of Newstead House)",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 2,
+    "note": "session work, not a dispatched pass, tokens not tracked separately; wrote stories for two already-verified trees sitting in data/research/*-verified.json awaiting a writer, merged into their city files, fixed count promises (ten->eleven Alicante, fourteen->fifteen Brisbane), preflight and build clean",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
