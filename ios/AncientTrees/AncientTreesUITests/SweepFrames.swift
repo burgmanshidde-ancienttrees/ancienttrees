@@ -34,9 +34,10 @@ final class SweepFrames: XCTestCase {
     private static let screens: [(String, [String], String?)] = [
         ("map",          ["-tab=0"], nil),
         ("explore",      ["-tab=1"], nil),
-        ("spot",         ["-spot"], "spot-sheet"),
+        ("collect-intro", ["-collect"], "spot-sheet"),
+        ("collect-away", ["-collect", "-at=52.03,5.91"], "spot-sheet"),
         ("walk-begin",   ["-begin=amsterdam|Plantage"], "walk-mode"),
-        ("collect",      ["-tab=3"], nil),
+        ("yours",        ["-tab=3"], nil),
         ("profile",      ["-tab=4"], nil),
         ("tree",         ["-tab=0", "-open=tree:ath_004"], nil),
         ("tree-nophoto", ["-tab=0", "-open=tree:vln_010"], nil),

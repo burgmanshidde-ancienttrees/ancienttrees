@@ -46,12 +46,12 @@ struct SpotSplit {
         let cat = try #require(store.catalogue, "the bundled catalogue did not load")
 
         let atWertheimpark = (lat: 52.3667, lng: 4.9086)
-        let near = SpotSheet.nearby(origin: atWertheimpark, trees: cat.trees)
+        let near = CollectSheet.nearby(origin: atWertheimpark, trees: cat.trees)
         #expect(near.first?.id == "ams_004", "the wingnut is not first at its own gate")
         #expect(near.count <= 5)
 
         let farField = (lat: 52.03, lng: 5.91)
-        #expect(SpotSheet.nearby(origin: farField, trees: cat.trees).isEmpty,
+        #expect(CollectSheet.nearby(origin: farField, trees: cat.trees).isEmpty,
                 "an empty field claims a nearby tree")
     }
 }

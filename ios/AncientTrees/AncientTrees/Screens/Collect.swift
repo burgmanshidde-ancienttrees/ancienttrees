@@ -70,7 +70,7 @@ struct CollectView: View {
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 28) {
                 HStack(alignment: .firstTextBaseline) {
-                    Text("Collect")
+                    Text("Your trees")
                         .font(.screenTitle)
                         .foregroundStyle(Brand.ink)
                     Spacer(minLength: 8)
@@ -90,13 +90,14 @@ struct CollectView: View {
                 }
                 .padding(.top, 4)
 
-                // The verb lives with the collection, not in the centre of
-                // the bar: that button ADDS a tree we do not have, this one
-                // claims one we do (Hidde, 2026-08-22). One primary control,
-                // the app's own style, with air around it rather than a
-                // paragraph underneath explaining a button whose own words
-                // already say what it does.
-                Button("Collect a tree by photographing it") {
+                // The same act the centre button performs, offered where
+                // the result lives. One primary control, the app's own style,
+                // with air around it rather than a paragraph underneath
+                // explaining a button whose own words already say what it
+                // does. It says "Take a photo" because that is literally the
+                // next thing that happens; the app works out afterwards
+                // whether it was one of ours (2026-08-23).
+                Button("Take a photo of a tree") {
                     navigator.collectNearby = true
                 }
                 .buttonStyle(BrandButtonStyle())
@@ -119,7 +120,7 @@ struct CollectView: View {
                     Picker("", selection: $lane) {
                         Text("Want to see").tag(Lane.want)
                         Text("Collected").tag(Lane.seen)
-                        Text("Yours").tag(Lane.mine)
+                        Text("Added by you").tag(Lane.mine)
                     }
                     .pickerStyle(.segmented)
                     .accessibilityIdentifier("collect-lane")
@@ -139,7 +140,7 @@ struct CollectView: View {
                         if list.isEmpty {
                             Text(lane == .want
                                  ? "Nothing on your list. Tap a heart anywhere to put a tree here."
-                                 : "Nothing collected yet. Stand before a tree and use the button above.")
+                                 : "Nothing collected yet. Photograph a tree with the button above.")
                                 .font(.subheadline).foregroundStyle(Brand.inkSoft)
                                 .padding(.top, 4)
                         } else {
@@ -333,7 +334,7 @@ struct CollectView: View {
                 Text("Your first tree is \(distanceLabel(t)) away")
                     .font(.brand(24, .bold, relativeTo: .title))
                     .foregroundStyle(Brand.ink)
-                Text("Stand before it, photograph it, and it is yours. Trees, species and places fill your collection, and the years they have seen add up.")
+                Text("Take a photo of it while you are standing there and it is yours. Trees, species and places fill your collection, and the years they have seen add up.")
                     .font(.subheadline).foregroundStyle(Brand.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
                 NavigationLink(value: Route.tree(t.id)) {
@@ -354,9 +355,9 @@ struct CollectView: View {
         } else {
             // Nowhere near any tree we map: honest, and it still points out.
             VStack(alignment: .leading, spacing: 10) {
-                Text("Nothing collected yet")
+                Text("No trees yet")
                     .font(.brand(24, .bold, relativeTo: .title)).foregroundStyle(Brand.ink)
-                Text("There are \(catalogue.trees.count.formatted(.number.locale(Locale(identifier: "en_US")))) trees to find in \(Set(catalogue.trees.map(\.country)).count) countries. Explore the map, save the ones you want, and photograph them as you stand before them.")
+                Text("Take a photo of a tree to start your collection. There are \(catalogue.trees.count.formatted(.number.locale(Locale(identifier: "en_US")))) of ours to find in \(Set(catalogue.trees.map(\.country)).count) countries, and any tree you photograph is yours whether we map it or not.")
                     .font(.subheadline).foregroundStyle(Brand.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
             }

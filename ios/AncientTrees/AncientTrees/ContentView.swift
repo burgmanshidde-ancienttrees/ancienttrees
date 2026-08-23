@@ -66,7 +66,7 @@ struct ContentView: View {
         /// The centre button's sheet. A case here rather than its own boolean
         /// because SwiftUI honours one sheet modifier per view, which is the
         /// whole reason this enum exists.
-        case spot(SpotSheet.Mode)
+        case spot(CollectSheet.Mode)
         var id: String {
             switch self {
             case .signIn(let r): "signin-" + r.id
@@ -135,7 +135,7 @@ struct ContentView: View {
                     // Spot is a button wearing a tab's clothes, the Strava and
                     // Untappd centre pattern: selecting it presents the sheet
                     // and the bar stays exactly where it was.
-                    if new == 2 { rootSheet = .spot(.add); return }
+                    if new == 2 { rootSheet = .spot(.collect); return }
                     if new == tab { clearPath(new) }
                     tab = new
                 })
@@ -219,8 +219,8 @@ struct ContentView: View {
                     // screenshots). We had turned the fill off the day before
                     // for balance; the balance came from choosing symbols of
                     // one family, not from refusing the convention.
-                    // plus.circle and checkmark.circle rhyme on purpose: add
-                    // and had are the two halves of the same verb.
+                    // camera and checkmark.circle are the act and its
+                    // result: photograph a tree, find it in your own.
                     stack(0, cat) {
                         if let id = debugTree, let t = cat.tree(id) {
                             TreeDetail(tree: t, catalogue: cat)
@@ -241,15 +241,31 @@ struct ContentView: View {
                             .environment(\.symbolVariants, tab == 1 ? .fill : .none) }
 
                     // Never actually shown: the selection binding intercepts 2
-                    // and presents the Spot sheet instead.
+                    // and presents the collect sheet instead.
+                    //
+                    // A CAMERA, not a plus (Hidde, 2026-08-23). It is the
+                    // symbol Seek and iNaturalist both use for this exact
+                    // act, and it is honest in a way a plus is not: a plus
+                    // promises adding a row to a list, while what you are
+                    // about to do is take a photograph and find out what you
+                    // are looking at. The word "Add" left the app with it;
+                    // adding is now simply what happens when the photograph
+                    // matches nothing of ours.
                     Color.clear
                         .tag(2)
-                        .tabItem { Label("Add", systemImage: "plus.circle")
+                        .tabItem { Label("Collect", systemImage: "camera")
                             .environment(\.symbolVariants, tab == 2 ? .fill : .none) }
 
+                    // "Yours" in the bar, "Your trees" on the screen. Not an
+                    // inconsistency but the ordinary convention: four tabs
+                    // get about 93 points each on an iPhone SE, and the
+                    // longer label is the one appfit caught hanging over the
+                    // edge as a filter chip a day earlier. The checkmark
+                    // moves here with the meaning it always had, the ones you
+                    // have ticked off.
                     stack(3, cat) { CollectView(catalogue: cat, origin: origin) }
                         .tag(3)
-                        .tabItem { Label("Collect", systemImage: "checkmark.circle")
+                        .tabItem { Label("Yours", systemImage: "checkmark.circle")
                             .environment(\.symbolVariants, tab == 3 ? .fill : .none) }
 
                 }
@@ -292,7 +308,7 @@ struct ContentView: View {
                         case .paywall(let feature):
                             PaywallView(feature: feature)
                         case .spot(let mode):
-                            SpotSheet(catalogue: cat, origin: origin, mode: mode)
+                            CollectSheet(catalogue: cat, origin: origin, mode: mode)
                         }
                     }
                     // A sheet does not inherit the environment set on the view
@@ -397,9 +413,9 @@ struct ContentView: View {
                 if parts.count == 2 {
                     navigator.beginWalk = .init(city: parts[0], name: parts[1])
                 }
-            } else if args.contains("-spot") || args.contains("-add") {
+            } else if args.contains("-spot") || args.contains("-add") || args.contains("-collect") {
                 // The centre button's sheet, openable without a finger.
-                rootSheet = .spot(.add)
+                rootSheet = .spot(.collect)
             } else if args.contains("-collect-tree") {
                 rootSheet = .spot(.collect)
             }
@@ -482,7 +498,7 @@ final class LocationProvider: NSObject, CLLocationManagerDelegate {
 /// SwiftUI sheets and covers do not inherit observables from the view they are
 /// attached to, so each presentation used to repeat the list, and twice in two
 /// days a presentation was one short and the app TRAPPED at launch rather than
-/// degrading: SpotSheet gained an Account read on 2026-08-20 and a Sightings
+/// degrading: the collect sheet gained an Account read on 2026-08-20 and a Sightings
 /// read on 2026-08-21. A single modifier cannot be one short.
 extension View {
     func appObjects(_ root: ContentView) -> some View {
