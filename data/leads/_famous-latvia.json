@@ -1,0 +1,50 @@
+{
+ "country": "Latvia",
+ "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+ "leads": [
+  {
+   "name": "Catherine’s lindens",
+   "lat": 57.233605,
+   "lng": 24.393139,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Balt%C4%81_k%C4%81pa,_Katr%C4%ABnas_liepa_-_panoramio.jpg",
+    "https://commons.wikimedia.org/wiki/File:L%C3%ADpy_carevny_Kate%C5%99iny_(Katar%C4%ABnas_liepas),_Paba%C5%BEi,_Saulkrasti,_Vidzeme,_Loty%C5%A1sko_01.jpg",
+    "https://commons.wikimedia.org/wiki/File:L%C3%ADpy_carevny_Kate%C5%99iny_(Katar%C4%ABnas_liepas),_Paba%C5%BEi,_Saulkrasti,_Vidzeme,_Loty%C5%A1sko_02.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Sēja Oak",
+   "lat": null,
+   "lng": null,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:S%C4%93jas_Di%C5%BEozols.jpg",
+    "https://commons.wikimedia.org/wiki/File:S%C4%93jas_Di%C5%BEozols1.jpg",
+    "https://commons.wikimedia.org/wiki/File:S%C4%93jas_Di%C5%BEozols10.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Symbolic oaks in Latvia",
+   "lat": null,
+   "lng": null,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:A%C4%A3es_di%C5%BEozols_Vidri%C5%BEos.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kanepju_oak.jpg",
+    "https://commons.wikimedia.org/wiki/File:Ka%C5%86epju_ozols.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Valdemārpils Elku liepa",
+   "lat": 57.3782,
+   "lng": 22.592483,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2010_10_Valdemarpils_(10).jpg",
+    "https://commons.wikimedia.org/wiki/File:2013_10_Valdemarpils_(10).jpg",
+    "https://commons.wikimedia.org/wiki/File:Baltijas_liel%C4%81k%C4%81_liepa_-_panoramio.jpg"
+   ],
+   "status": "lead"
+  }
+ ]
+}
