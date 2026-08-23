@@ -1,5 +1,11 @@
 # LOG
 
+## 2026-08-23 - Night run 2026-08-23 20:29 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 9.2 minutes of its 120 minute window, 67 turns, 13 commands refused by the allowlist, ended clean (success). 2 commit(s), none of them a published tree. Claims left behind: krakow, sintra, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
 ## 2026-08-23 (continued) - Eight small deepening passes, a Search Console find, and two stale leads fixed
 
 7-day visits: 476 visits, 749 page views (83/44/67/42/74/67/51/48 daily). Rung 0/0b: no unprocessed submissions (Supabase service key present, 36 rows all already processed). Rung 2 (health.py): clear at the start, one BLOCKER already answered by an earlier run today.
