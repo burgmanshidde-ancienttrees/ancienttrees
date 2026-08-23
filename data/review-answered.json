@@ -18,8 +18,8 @@
       "at": "2026-08-22T06:23:30+00:00"
     },
     "2026-08-22": {
-      "note": "CURATION.md:16 already redacted to 'his own account' before this run started (commit predates this session); the email only survives inside REVIEW.md's own append-only entry, which is the reviewer's historical record, not a run's to edit. Forward-looking fix already in place, nothing further to do without Hidde on the git-history question.",
-      "at": "2026-08-22T20:31:00+00:00"
+      "note": "Gmail WARN: address was already redacted to 'his own account' in CURATION.md by cb518406 before this run started; verified no other repo file exposes it except the standard User-Agent contact strings in scripts/*.py, which are the intended public contact and not a leak. History-rewrite question left for Hidde per the FOR HIDDE note.",
+      "at": "2026-08-23T00:30:34+00:00"
     }
   }
 }
