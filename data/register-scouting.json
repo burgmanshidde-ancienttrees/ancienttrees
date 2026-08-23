@@ -448,6 +448,12 @@
    "country": "Ireland",
    "status": "imported",
    "note": "SCOUTED 2026-08-23, but the register was already imported 2026-08-08 (data/registers/ireland-heritage-trees.json, Heritage Trees of Ireland, National Biodiversity Data Centre, CC-BY 4.0, 724 entries nationwide, with a working Irish Grid to lat/long converter at scripts/irish_grid.py) and already used 2026-08-09 to add 6 trees to Dublin. This entry only existed because nobody had logged the register here, which is why scout_next.py pointed at Cork as unscouted; ALWAYS check for an existing data/registers/*.json file and check git status before treating a find as new (a first pass here nearly overwrote the existing import). Extended 2026-08-23 with Blarney and Fota, Co. Cork: 8 new trees shipped (cor_006 to cor_013), 2 skipped as near-certain duplicates of already-published trees. Full detail in OPEN_DATA_SURVEY.md."
+  },
+  {
+   "place": "Oslo",
+   "country": "Norway",
+   "status": "stalled",
+   "note": "SCOUTED 2026-08-23. Miljodirektoratet vern ArcGIS service (kart.miljodirektoratet.no/arcgis/rest/services/vern/mapserver/0), verneform=Naturminne, 236 nationally, 18 in Oslo, NLOD licence, WGS84 geometry needs no conversion. Mixed category (trees plus geological features), address-pattern names are the tell. Stalled on species/description data: no field in the map service, faktaark.naturbase.no is a JS SPA WebFetch cannot render, its network API (felles.naturbase.no/api/dokument?objektId=<id>) returns photos/documents but not description text, and one checked record (VV00002163) had a null verneforskrift (protection-decision PDF) field. That same check surfaced a live finding: one of two trees at that specific site is already dead per a linked Street View note, useful proof the dokument API is worth checking before shipping any of these blind. Full detail in OPEN_DATA_SURVEY.md."
   }
  ],
  "out_of_focus": {
