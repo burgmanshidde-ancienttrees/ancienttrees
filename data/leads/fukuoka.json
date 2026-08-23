@@ -1,138 +1,138 @@
 {
-  "city": "Fukuoka",
-  "country": "Japan",
-  "city_slug": "fukuoka",
-  "note": "From the 2026-08-03 research pass. Leads failed only our evidence bar or the count; blocked can never ship.",
-  "leads": [
-    {
-      "name": "Sakamoto no Mukunoki",
-      "species": "Aphananthe aspera",
-      "lat": null,
-      "lng": null,
-      "status": "lead",
-      "why": "Dazaifu city designation 2015, 25.5m tall, 3.65m girth, roots exposed and spreading seven metres, and it has a full street address (Sakamoto 3-268-1), which makes it the most precisely placeable untouched tree in the region. One more pass would ship it."
-    },
-    {
-      "name": "The Great Yamamomo of Kanetake",
-      "species": "Myrica rubra",
-      "lat": 33.522772,
-      "lng": 130.303222,
-      "status": "lead",
-      "why": "Prefectural designation, 4.7m girth, individually mapped. Nishi ward, needs a second source and a photo."
-    },
-    {
-      "name": "The Camphor of Shimizu",
-      "species": "Cinnamomum camphora",
-      "lat": null,
-      "lng": null,
-      "status": "lead",
-      "why": "9.7m girth in Minami ward, which would be among the city's largest. No coordinate, no second source yet."
-    },
-    {
-      "name": "The Married Camphors and Great Ginkgo of Torikai Hachimangu",
-      "species": "Cinnamomum camphora, Ginkgo biloba",
-      "lat": 33.587207,
-      "lng": 130.366336,
-      "status": "lead",
-      "why": "Two individually mapped trees at one shrine, so pins exist, but no age, no measurements and no open-licence photograph of either."
-    },
-    {
-      "name": "Hibaru Sakura",
-      "species": "Prunus",
-      "lat": null,
-      "lng": null,
-      "status": "lead",
-      "why": "Thirteen cherries, so it fails the collectible-point test as a city entry, but the story is one of the best in Fukuoka: in 1984 someone tied a tanka to a trunk to protest the felling, the mayor replied in verse and the plan was dropped. Belongs in a collection rather than on the city page. Also unresolved whether all eight originals still live."
-    },
-    {
-      "name": "The Camphor of Hakozaki-gu",
-      "species": "Cinnamomum camphora",
-      "lat": null,
-      "lng": null,
-      "status": "blocked",
-      "blocked_reason": "cannot be confirmed alive",
-      "why": "NEVER SHIP without a current on-site check. The city's largest at 11.4m girth and 800 years claimed, but a March 2025 surveyor wrote that he could not tell whether it is still alive: trunk and branches so smothered by a climbing fig that no camphor foliage is visible, severe hollowing, front roots dead, vigour rated two out of five."
-    },
-    {
-      "name": "Hakomatsu of Hakozaki-gu",
-      "species": "Pinus",
-      "lat": null,
-      "lng": null,
-      "status": "blocked",
-      "blocked_reason": "successor tree",
-      "why": "NEVER SHIP. The present pine is a replacement of unknown generation. Context inside another story at most."
-    },
-    {
-      "name": "Kankakeshii of Kashii-gu",
-      "species": "Castanopsis",
-      "lat": null,
-      "lng": null,
-      "status": "blocked",
-      "blocked_reason": "successor tree",
-      "why": "NEVER SHIP. Kaibara Ekiken already recorded in the Edo period that the tree standing then had been grown from the old one's seed. Alive and visitable, but only ever a footnote."
-    },
-    {
-      "name": "Tenjin no Mori, Dazaifu",
-      "species": "Cinnamomum camphora",
-      "lat": null,
-      "lng": null,
-      "status": "blocked",
-      "blocked_reason": "not a collectible point",
-      "why": "NEVER SHIP as one entry. A prefectural designation covering 51 camphors across the grounds. Story material for the great camphor, not an entry."
-    },
-    {
-      "name": "Tachibanayama camphor primeval forest",
-      "species": "Cinnamomum camphora",
-      "lat": null,
-      "lng": null,
-      "status": "blocked",
-      "blocked_reason": "a forest",
-      "why": "NEVER SHIP as one entry. A special natural monument of roughly 3,000 camphors. Only the named Tachibanayama Great Camphor inside it could qualify, and that needs a bus plus a 40 minute climb."
-    },
-    {
-      "name": "The Chokushi-michi camphor avenue, Kashii",
-      "species": "Cinnamomum camphora",
-      "lat": null,
-      "lng": null,
-      "status": "blocked",
-      "blocked_reason": "avenue, and young",
-      "why": "NEVER SHIP. Saplings donated and planted in 1926, so about a century old, and an avenue."
-    },
-    {
-      "name": "The Hobashira-seki of Najima",
-      "species": "fossil",
-      "lat": null,
-      "lng": null,
-      "status": "blocked",
-      "blocked_reason": "not a tree",
-      "why": "NEVER SHIP. A fossilised trunk."
-    },
-    {
-      "name": "The Chishanoki of Komyozen-ji",
-      "species": "Ehretia acuminata",
-      "lat": null,
-      "lng": null,
-      "status": "blocked",
-      "blocked_reason": "closed to the public",
-      "why": "NEVER SHIP as visitable. The temple has been closed to the public since 2018 for precinct works with no confirmed reopening."
-    },
-    {
-      "name": "The Mukunoki of Kouun Shrine, Nishi Park",
-      "species": "Aphananthe aspera",
-      "lat": null,
-      "lng": null,
-      "status": "blocked",
-      "blocked_reason": "unverifiable claim",
-      "why": "NEVER SHIP as told. Presented locally as the tree that survived the 1945 air raid, but no age, no measurements and only tourism blogs, and part of it was cut back around 2021 as a breakage risk. Note for the whole city: there is no Fukuoka equivalent of the Hiroshima survivor-tree registry, so no Fukuoka tree may be given an air-raid survival story."
-    },
-    {
-      "name": "The Choja no Fuji of Musashi-ji",
-      "species": "Wisteria",
-      "lat": null,
-      "lng": null,
-      "status": "blocked",
-      "blocked_reason": "not a tree",
-      "why": "NEVER SHIP. A wisteria vine, and about 45 minutes out."
-    }
-  ]
+ "city": "Fukuoka",
+ "country": "Japan",
+ "city_slug": "fukuoka",
+ "note": "From the 2026-08-03 research pass. Leads failed only our evidence bar or the count; blocked can never ship.",
+ "leads": [
+  {
+   "name": "Sakamoto no Mukunoki",
+   "species": "Aphananthe aspera",
+   "lat": null,
+   "lng": null,
+   "status": "lead",
+   "why": "Dazaifu city designation 2015, 25.5m tall, 3.65m girth, roots exposed and spreading seven metres, and it has a full street address (Sakamoto 3-268-1), which makes it the most precisely placeable untouched tree in the region. One more pass would ship it."
+  },
+  {
+   "name": "The Great Yamamomo of Kanatake",
+   "species": "Myrica rubra",
+   "lat": 33.522772,
+   "lng": 130.303222,
+   "status": "resolved",
+   "why": "Prefectural designation, 4.7m girth, individually mapped. Nishi ward, needs a second source and a photo. RESOLVED 2026-08-23: published as fuk_012. Also a spelling correction, since the ward government's own page and multiple postal lookups confirm the place name reads 'Kanatake', not 'Kanetake'."
+  },
+  {
+   "name": "The Camphor of Shimizu",
+   "species": "Cinnamomum camphora",
+   "lat": null,
+   "lng": null,
+   "status": "lead",
+   "why": "9.7m girth in Minami ward, which would be among the city's largest. No coordinate, no second source yet."
+  },
+  {
+   "name": "The Married Camphors and Great Ginkgo of Torikai Hachimangu",
+   "species": "Cinnamomum camphora, Ginkgo biloba",
+   "lat": 33.587207,
+   "lng": 130.366336,
+   "status": "resolved",
+   "why": "Two individually mapped trees at one shrine, so pins exist, but no age, no measurements and no open-licence photograph of either. RESOLVED 2026-08-23: published as fuk_013 (folded into one entry, the 'Married Camphor' is one forked-trunk tree, not two)."
+  },
+  {
+   "name": "Hibaru Sakura",
+   "species": "Prunus",
+   "lat": null,
+   "lng": null,
+   "status": "lead",
+   "why": "Thirteen cherries, so it fails the collectible-point test as a city entry, but the story is one of the best in Fukuoka: in 1984 someone tied a tanka to a trunk to protest the felling, the mayor replied in verse and the plan was dropped. Belongs in a collection rather than on the city page. Also unresolved whether all eight originals still live."
+  },
+  {
+   "name": "The Camphor of Hakozaki-gu",
+   "species": "Cinnamomum camphora",
+   "lat": null,
+   "lng": null,
+   "status": "blocked",
+   "blocked_reason": "cannot be confirmed alive",
+   "why": "NEVER SHIP without a current on-site check. The city's largest at 11.4m girth and 800 years claimed, but a March 2025 surveyor wrote that he could not tell whether it is still alive: trunk and branches so smothered by a climbing fig that no camphor foliage is visible, severe hollowing, front roots dead, vigour rated two out of five."
+  },
+  {
+   "name": "Hakomatsu of Hakozaki-gu",
+   "species": "Pinus",
+   "lat": null,
+   "lng": null,
+   "status": "blocked",
+   "blocked_reason": "successor tree",
+   "why": "NEVER SHIP. The present pine is a replacement of unknown generation. Context inside another story at most."
+  },
+  {
+   "name": "Kankakeshii of Kashii-gu",
+   "species": "Castanopsis",
+   "lat": null,
+   "lng": null,
+   "status": "blocked",
+   "blocked_reason": "successor tree",
+   "why": "NEVER SHIP. Kaibara Ekiken already recorded in the Edo period that the tree standing then had been grown from the old one's seed. Alive and visitable, but only ever a footnote."
+  },
+  {
+   "name": "Tenjin no Mori, Dazaifu",
+   "species": "Cinnamomum camphora",
+   "lat": null,
+   "lng": null,
+   "status": "blocked",
+   "blocked_reason": "not a collectible point",
+   "why": "NEVER SHIP as one entry. A prefectural designation covering 51 camphors across the grounds. Story material for the great camphor, not an entry."
+  },
+  {
+   "name": "Tachibanayama camphor primeval forest",
+   "species": "Cinnamomum camphora",
+   "lat": null,
+   "lng": null,
+   "status": "blocked",
+   "blocked_reason": "a forest",
+   "why": "NEVER SHIP as one entry. A special natural monument of roughly 3,000 camphors. Only the named Tachibanayama Great Camphor inside it could qualify, and that needs a bus plus a 40 minute climb."
+  },
+  {
+   "name": "The Chokushi-michi camphor avenue, Kashii",
+   "species": "Cinnamomum camphora",
+   "lat": null,
+   "lng": null,
+   "status": "blocked",
+   "blocked_reason": "avenue, and young",
+   "why": "NEVER SHIP. Saplings donated and planted in 1926, so about a century old, and an avenue."
+  },
+  {
+   "name": "The Hobashira-seki of Najima",
+   "species": "fossil",
+   "lat": null,
+   "lng": null,
+   "status": "blocked",
+   "blocked_reason": "not a tree",
+   "why": "NEVER SHIP. A fossilised trunk."
+  },
+  {
+   "name": "The Chishanoki of Komyozen-ji",
+   "species": "Ehretia acuminata",
+   "lat": null,
+   "lng": null,
+   "status": "blocked",
+   "blocked_reason": "closed to the public",
+   "why": "NEVER SHIP as visitable. The temple has been closed to the public since 2018 for precinct works with no confirmed reopening."
+  },
+  {
+   "name": "The Mukunoki of Kouun Shrine, Nishi Park",
+   "species": "Aphananthe aspera",
+   "lat": null,
+   "lng": null,
+   "status": "blocked",
+   "blocked_reason": "unverifiable claim",
+   "why": "NEVER SHIP as told. Presented locally as the tree that survived the 1945 air raid, but no age, no measurements and only tourism blogs, and part of it was cut back around 2021 as a breakage risk. Note for the whole city: there is no Fukuoka equivalent of the Hiroshima survivor-tree registry, so no Fukuoka tree may be given an air-raid survival story."
+  },
+  {
+   "name": "The Choja no Fuji of Musashi-ji",
+   "species": "Wisteria",
+   "lat": null,
+   "lng": null,
+   "status": "blocked",
+   "blocked_reason": "not a tree",
+   "why": "NEVER SHIP. A wisteria vine, and about 45 minutes out."
+  }
+ ]
 }

@@ -3313,6 +3313,33 @@
     "note": "session work, not a dispatched pass. The one READY lead (Stone Pine of Santa Maria de Trassierra) was genuine, not a duplicate, but its own municipal-catalogue PDF source (51MB, image-heavy) could not be re-fetched in this environment, so girth/height/age figures were carried forward from an earlier pass's reading rather than freshly re-verified; shipped flagged and approximate. No count-promise fixes needed (city copy has no city-wide tree count in prose). preflight and build clean.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "genoa",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 2,
+    "note": "Deepened 2 READY leads (Bunya Pine, Acquasanta cedar) via MASAF/RAMI register cross-checks; caught a girth-mislabelled-as-diameter register error",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "fukuoka",
+    "kind": "verify",
+    "tokens": 90000,
+    "trees": 2,
+    "note": "Deepened 2 READY leads (Kanatake Yamamomo, Torikai shrine pair); folded a mis-described 'twin' camphor into one entry via OSM + a visitor blog, flagged the shrine's unverifiable air-raid claim per standing city caution",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "genoa (write) + fukuoka (write)",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 4,
+    "note": "session work, not a dispatched pass; wrote stories for the 2 genoa + 2 fukuoka trees the verify pass delivered, merged, fixed count promises (genoa ten->twelve trees/three->five pockets, fukuoka 10 more->12 more), fixed two leads-file status fields the agent flagged (Kanetake->Kanatake spelling, resolved statuses). preflight and build clean.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
