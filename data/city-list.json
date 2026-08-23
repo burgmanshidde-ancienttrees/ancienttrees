@@ -18,7 +18,7 @@
    "country": "Netherlands",
    "slug": "amsterdam",
    "status": "published",
-   "trees": 31
+   "trees": 39
   },
   {
    "city": "Barcelona",
@@ -54,7 +54,7 @@
    "country": "Italy",
    "slug": "florence",
    "status": "published",
-   "trees": 22
+   "trees": 23
   },
   {
    "city": "Prague",
@@ -76,7 +76,7 @@
    "country": "Austria",
    "slug": "vienna",
    "status": "published",
-   "trees": 28
+   "trees": 30
   },
   {
    "city": "Paris",
@@ -368,7 +368,7 @@
    "slug": "haarlem",
    "status": "published",
    "demand_views_90d": 33960,
-   "trees": 9
+   "trees": 13
   },
   {
    "city": "Turin",
@@ -506,7 +506,14 @@
    "country": "Germany",
    "slug": "munich",
    "status": "published",
-   "trees": 30
+   "trees": 44
+  },
+  {
+   "city": "Oahu",
+   "country": "United States",
+   "slug": "oahu",
+   "status": "published",
+   "trees": 5
   },
   {
    "city": "Athens",
@@ -1202,6 +1209,24 @@
    "trees": 0
   },
   {
+   "city": "Alkmaar",
+   "country": "Netherlands",
+   "status": "published",
+   "trees": 7
+  },
+  {
+   "city": "Amersfoort",
+   "country": "Netherlands",
+   "status": "published",
+   "trees": 7
+  },
+  {
+   "city": "Apeldoorn",
+   "country": "Netherlands",
+   "status": "published",
+   "trees": 8
+  },
+  {
    "city": "Baarn",
    "country": "Netherlands",
    "slug": "baarn",
@@ -1244,12 +1269,54 @@
    "trees": 0
   },
   {
+   "city": "Deventer",
+   "country": "Netherlands",
+   "status": "published",
+   "trees": 7
+  },
+  {
+   "city": "Dordrecht",
+   "country": "Netherlands",
+   "status": "published",
+   "trees": 7
+  },
+  {
+   "city": "Ede",
+   "country": "Netherlands",
+   "status": "published",
+   "trees": 7
+  },
+  {
+   "city": "Eindhoven",
+   "country": "Netherlands",
+   "status": "published",
+   "trees": 7
+  },
+  {
+   "city": "Emmen",
+   "country": "Netherlands",
+   "status": "published",
+   "trees": 7
+  },
+  {
+   "city": "Enschede",
+   "country": "Netherlands",
+   "status": "published",
+   "trees": 7
+  },
+  {
    "city": "Hanoi",
    "country": "Vietnam",
    "slug": "hanoi",
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
+  },
+  {
+   "city": "Helmond",
+   "country": "Netherlands",
+   "status": "published",
+   "trees": 7
   },
   {
    "city": "Ho Chi Minh City",
@@ -1274,6 +1341,12 @@
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
+  },
+  {
+   "city": "Leeuwarden",
+   "country": "Netherlands",
+   "status": "published",
+   "trees": 7
   },
   {
    "city": "Manila",
@@ -1308,81 +1381,22 @@
    "trees": 10
   },
   {
-   "city": "Eindhoven",
-   "country": "Netherlands",
-   "status": "needs_curation"
-  },
-  {
-   "city": "Apeldoorn",
-   "country": "Netherlands",
-   "status": "needs_curation"
-  },
-  {
    "city": "Tilburg",
    "country": "Netherlands",
-   "status": "needs_curation"
-  },
-  {
-   "city": "Amersfoort",
-   "country": "Netherlands",
-   "status": "needs_curation"
-  },
-  {
-   "city": "Enschede",
-   "country": "Netherlands",
-   "status": "needs_curation"
-  },
-  {
-   "city": "Leeuwarden",
-   "country": "Netherlands",
-   "status": "needs_curation"
-  },
-  {
-   "city": "Dordrecht",
-   "country": "Netherlands",
-   "status": "needs_curation"
-  },
-  {
-   "city": "Zwolle",
-   "country": "Netherlands",
-   "status": "needs_curation"
-  },
-  {
-   "city": "Ede",
-   "country": "Netherlands",
-   "status": "needs_curation"
+   "status": "published",
+   "trees": 7
   },
   {
    "city": "Venlo",
    "country": "Netherlands",
-   "status": "needs_curation"
+   "status": "published",
+   "trees": 7
   },
   {
-   "city": "Deventer",
+   "city": "Zwolle",
    "country": "Netherlands",
-   "status": "needs_curation"
-  },
-  {
-   "city": "Alkmaar",
-   "country": "Netherlands",
-   "status": "needs_curation"
-  },
-  {
-   "city": "Emmen",
-   "country": "Netherlands",
-   "status": "needs_curation"
-  },
-  {
-   "city": "Helmond",
-   "country": "Netherlands",
-   "status": "needs_curation"
-  },
-  {
-   "city": "Oahu",
-   "country": "United States",
-   "slug": "oahu",
-   "status": "needs_curation",
-   "trees": 5
+   "status": "published",
+   "trees": 7
   }
  ]
 }

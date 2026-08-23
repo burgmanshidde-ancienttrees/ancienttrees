@@ -1,0 +1,149 @@
+{
+  "city": "Zaanstad",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Zaanstad is seven Zaan villages fused into one municipality, powered for three centuries by more windmills than anywhere in Europe, grinding paint, oil and timber long before factories existed elsewhere. Its four verified trees are scattered across that history rather than gathered in one park: a disputed-age copper beech in a Zaandam cemetery, a plane that has outlived the industrial waterfront beside it, and two ailing horse chestnuts in villages further along the Zaan. All four rest on a single register, honestly flagged as single-sourced.",
+  "meta_description": "Zaanstad's oldest tree is a disputed-age copper beech in a Zaandam cemetery. Four verified trees across the Zaan villages, honestly flagged.",
+  "question_answer": "Zaanstad's oldest verified tree is a copper beech in the burial ground off the Zuiddijk in Zaandam, roughly 140 years old by the national register's planting band, though the register's own note disputes that figure and may make the tree younger. It stands in the middle of the cemetery grounds, one of what was once a larger set of copper beeches planted along the avenues there.",
+  "question_meta": "A disputed-age copper beech in a Zaandam cemetery, roughly 140 years old, is Zaanstad's oldest tree. Where to find it and three more.",
+  "question_context": "The age comes from the national monumental-trees register, and its own file cannot agree with itself: the register's planting band puts the beech in the 1880s, while a separate note says the cemetery itself only dates from the early twentieth century and implies the tree is younger. Neither figure has been reconciled, so the honest age is a range rather than a single date, and it may run either way. The register also records that the beech was planted as one of a set: several more copper beeches once lined the burial ground's avenues, and five of them still stand further east under their own register entries, so this tree has close relatives within walking distance. Copper beech is a colour mutation of the ordinary green beech, its purple pigment masking the chlorophyll beneath, and it grows a shade slower than a green tree as a result, which is why almost every mature specimen exists because somebody deliberately grafted and planted one. The cemetery sits off the Zuiddijk in Zaandam and stays open to the public in daylight.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Zaanstad?",
+      "a": "A copper beech in the burial ground off the Zuiddijk in Zaandam, roughly 140 years old by the national register's planting band, though the register's own note disputes that figure and may make the tree younger."
+    },
+    {
+      "q": "Are Zaanstad's ancient trees free to visit?",
+      "a": "Yes. All four stand on public land: a cemetery, a public square, a village green and a municipal garden verge, none of them ticketed or gated."
+    },
+    {
+      "q": "Is the horse chestnut in Westzaan's Kerkbuurt safe to visit?",
+      "a": "It is standing and publicly accessible, but the register notes it has declined sharply in the last few years, likely from a fungus at its base. Worth seeing sooner rather than later."
+    },
+    {
+      "q": "Why does the Zaandam cemetery have several copper beeches?",
+      "a": "The register records that this one was planted as part of a set along the burial ground's avenues; five more still stand further east under their own register entries, all copper beeches from the same planting scheme."
+    }
+  ],
+  "trees": [
+    {
+      "id": "zaa_002",
+      "name": "The Copper Beech of the Zuiddijk Cemetery",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "roughly 140 years, from a registered planting date around 1890",
+      "age_min": 136,
+      "age_max": 146,
+      "location": {
+        "address": "Middenop begraafplaats a/d Zuiddijk, Zaandam",
+        "latitude": 52.426269,
+        "longitude": 4.841375,
+        "neighbourhood": "Zaandam"
+      },
+      "story": "This tree's own file cannot agree with itself about its age. The register's planting band puts it in the 1880s, while the note underneath says the cemetery dates from the early twentieth century and that the copper beech was planted when the cemetery was. Nobody has reconciled the two, so the age here is a range rather than a date, and the later reading would make it younger still.\n\nWhat is not in doubt is that it was planted as one of a set. The register reckons there were once several copper beeches along the avenues of this burial ground, and five of them still stand further east, listed under a number of their own. This one has the middle of the ground to itself.\n\nA copper beech is a colour mutation of the ordinary green beech. The purple pigment masks the chlorophyll underneath, so the dark form grows a shade less vigorously than a green one and rarely wins a fight in a wood. Nurseries propagate the good ones by grafting, because seedlings are a lottery. Which is to say that almost every large copper beech you meet is somewhere a person decided to put one, and a cemetery avenue was exactly that kind of decision.\n\nYou will find it in the middle of the burial ground off the Zuiddijk in Zaandam, open in daylight. Only the national register describes this tree.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "fresh leaves",
+        "label": "May, when the new leaves come out translucent copper-red"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, public cemetery grounds, open in daylight.",
+      "transport": "",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "zaa_003",
+      "name": "The Plane of the Westzijde",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 120 years, from a registered planting date around 1910",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": " Westzijde, Westzijde 22, Zaandam",
+        "latitude": 52.440728,
+        "longitude": 4.823561,
+        "neighbourhood": "Zaandam"
+      },
+      "story": "A plane tree handles dirty air by taking its skin off. The bark comes away in irregular plates, carrying the year's soot and grime with it, which leaves the trunk mottled in olive, cream and grey and is the reason this species ended up lining the streets of every industrial city in Europe.\n\nZaandam was a good place to need that trick. The Zaan district ran first on wind and then on coal: hundreds of mills sawing timber, crushing seed for oil and grinding pigment for paint, and after them the cocoa and biscuit works whose smell still carries across the town on the right wind. The register puts this plane's planting between 1900 and 1910, which sets it down in the middle of all that.\n\nEverything around it has since changed. The register's note on the tree is really a note about its neighbours: the Zaan bank is under heavy development, and this early twentieth-century plane has outlasted those developments for well over a century now. The mills, the wharves and most of what it was planted beside have gone.\n\nPlanes are hybrids, oriental plane crossed with American sycamore, and in city terms they are close to indestructible. Cut back to stumps they come again, which is precisely why councils keep planting them. This one stands on the public square at the Westzijde; the pin marks the square rather than the trunk itself.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, on the public square.",
+      "transport": "",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "zaa_005",
+      "name": "The Horse Chestnut of the Kerkbuurt",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "roughly 100 years, from a registered planting date around 1930",
+      "age_min": 96,
+      "age_max": 106,
+      "location": {
+        "address": "Kerkbuurt 48 Westzaan",
+        "latitude": 52.464452,
+        "longitude": 4.772063,
+        "neighbourhood": "Westzaan"
+      },
+      "story": "A fungus at the foot of a tree is the last thing to appear, not the first. By the time brackets are showing at the base, the organism has usually been working through the roots and the butt of the trunk for years, and what you can see is only its fruit.\n\nThat is roughly the story the register tells here. After a century of standing quietly in the green strip of the Kerkbuurt, this horse chestnut has gone downhill sharply in the last few years, and the inspectors think the heavy fungal growth at its base is the likely reason. They are careful about it: possibly, they write, not certainly.\n\nThey put the planting at around 1925, which makes the timing tidy to the point of being irritating. It is faltering at almost exactly a hundred. A horse chestnut does not read as an ancient tree at that age, but a hundred years is a long working life for one standing in a village verge.\n\nWestzaan is a ribbon village strung along a single old road, and the Kerkbuurt is its church quarter. Nothing in the register says this tree is coming down, but one in that condition is worth going to see sooner rather than later. It still flowers white in May and it still drops conkers in autumn.\n\nThe national register is the only source that describes it, so if you know its history, tell us.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, public planting, always open.",
+      "transport": "",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "zaa_009",
+      "name": "The Horse Chestnut of the Dorpsstraat",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "roughly 120 years, from a registered planting date around 1910",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Naast Dorpsstraat 507, Assendelft",
+        "latitude": 52.473445,
+        "longitude": 4.746024,
+        "neighbourhood": "Assendelft"
+      },
+      "story": "One of the most planted trees in Europe is a threatened species in the wild. Aesculus hippocastanum survives naturally in a handful of mountain ravines in Greece, Albania and North Macedonia and nowhere else on earth, which is why the conservation lists rate it vulnerable while millions of them stand along streets from Dublin to Kyiv. It arrived in the west in the sixteenth century by way of Constantinople and Vienna, as a curiosity for rich gardens.\n\nThis one grows beside Dorpsstraat 507 in Assendelft, and the house number rewards a second look: the Dorpsstraat runs the whole length of a village that is essentially one very long road laid across the polder. The register puts the tree's planting between 1900 and 1910, so about 120 years, in a strip of municipal garden it has had to itself ever since.\n\nThe name is a puzzle you can work on while standing there. Look at the twigs in winter, at the scar where last year's leaf came away: a horseshoe outline with a row of small dots where the nails would sit. Whether that is where the horse in horse chestnut comes from, or whether it comes from the Ottoman habit of dosing broken-winded horses with the seeds, has never been settled.\n\nNobody recorded who planted this one. The register's history field is blank and no second source mentions the tree at all.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, a small public municipal garden.",
+      "transport": "",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}

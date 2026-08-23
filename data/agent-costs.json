@@ -3007,6 +3007,24 @@
     "note": "imported the already-scouted (2026-08-17) Santa Cruz de Tenreife arboles-singulares dataset into data/registers/, licence re-verified by direct fetch; cluster_register.py found 60 of 63 in one 2.6km walkable cluster. No trees published yet, still needs a verify pass (age/species per tree, no age/girth/vitality in the source)",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "amsterdam+haarlemmermeer+zaanstad",
+    "kind": "write",
+    "tokens": 71000,
+    "trees": 15,
+    "note": "15 stories in one pass, 3 NL cities, all LRMB register-sourced and flagged single-source; 6 best_time set; ~4.7k tokens per tree",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "amsterdam(8)+zaanstad(4 new city), merge+translate+queue-fix session",
+    "kind": "merge",
+    "tokens": 0,
+    "trees": 12,
+    "note": "session work following the write pass: set missing name/neighbourhood/transport fields, fixed Amsterdam's stale 31/21 count copy to 39/29, wrote Zaanstad's full city-page copy from scratch (new city, 4 trees, below-floor Haarlemmermeer's 3 held back), wrote 8 Dutch tree translations for nl/amsterdam.json (build enforces full translation coverage), fixed a city_queue.py KeyError crash (enrich() assumed every queue entry has a 'basis' field; two 2026-08-22 stub entries for Zaanstad/Haarlemmermeer didn't). Tokens not tracked for session work, logged as 0 per the standing instruction rather than leaving the day looking empty.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
