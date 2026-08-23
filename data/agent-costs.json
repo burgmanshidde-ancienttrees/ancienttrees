@@ -3106,6 +3106,15 @@
     "note": "Near-radius register candidates were already published or already leaded/blocked by earlier passes; re-checked open items (elm identity, olive/euphorbia access, La Concepcio ficus in neighbouring Sant Joan dAlacant, distant fincas) and refined leads/blocked with new evidence, but nothing cleared the two-source-plus-access bar within the window",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "leads.py fix: not_ready_marker()",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session work, not an agent pass: found Viennas 8 READY leads were all already-declined candidates from an earlier verify pass (no HELD/status marker, just free-text notes), same shape as 4 already-skipped Rome leads. Added a checked-against-corpus regex to leads.py that catches this without touching the count-doctrine exemption. READY drops 147 to 140 corpus-wide. Prevented a wasted write pass on Vienna. Tokens not tracked for session work, logged as 0 per standing instruction.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
