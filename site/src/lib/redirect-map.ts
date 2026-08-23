@@ -91,7 +91,25 @@ const CROSS_CITY_MERGED_TREE_SLUGS: [string, string, string, string][] = [
 // That is why the forest's own notable-trees trail does not sign them. The
 // body that manages the forest is the best source on access there is, and our
 // page said "free on foot", which is the one promise we do not leave standing.
+// amsterdam ams_012-015, ams_017 (2026-08-23): ten of Amsterdam's 39 trees
+// stood behind a ticket at Artis or the Hortus, and Hanna Hirsch of
+// Bomenstichting Amsterdam said twice that a third of a city list you cannot
+// walk up to is too much. Hidde: "ik heb liever 34 goede bereikbare dan 39."
+// The four that stay are the ones worth a ticket: the Heimanseik at 275 years
+// is the oldest tree in the city, the Hortus cycad at 300 is older than the
+// kingdom, the Turkish hazel is 230, and the Van Loon copper beech stands in a
+// canal-house garden nobody else maps. The five pulled were around a century
+// old, had no photograph, two sources each, and all five sat in those same two
+// gardens: that is not a selection, it is the easiest place to look. The
+// Hortus ginkgo went partly for a second reason, that our own note admitted we
+// could not say which specimen it was. Amsterdam is 34 trees now, 5 behind a
+// ticket, 14 percent. Stories and sources kept in data/leads/amsterdam.json.
 const REMOVED_TREE_SLUGS: [string, string][] = [
+  ["amsterdam", "persian-ironwood-of-artis"],
+  ["amsterdam", "coast-redwood-of-artis"],
+  ["amsterdam", "twisted-catalpa-of-the-hortus"],
+  ["amsterdam", "shellbark-hickory-of-the-hortus"],
+  ["amsterdam", "ginkgo-of-the-hortus"],
   ["bucaco", "the-redwoods-of-santo-elias"],
   ["las-vegas", "weeping-camperdown-elm-at-carlson"],
   ["las-vegas", "buddhist-pine-of-white-hall"],
