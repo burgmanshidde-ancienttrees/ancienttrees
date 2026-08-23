@@ -1599,3 +1599,40 @@ not deleting.
 shortlist pattern photo_gaps.py uses, and flags pins that do nothing. One is
 dangling already: Pin Oak points at apd_008, published this morning with no
 photograph.
+
+## Our own map style, and the app parity question, 2026-08-23
+
+Hidde asked which map Polarsteps uses and whether we can have it. They run
+Mapbox, on both web (GL JS) and mobile (Maps SDK), and their CEO's stated reason
+is "design control". The answer for us is that we do not need their supplier for
+that: a style is a JSON file over vector tiles, MapLibre reads the same format
+Mapbox GL JS does, and OpenFreeMap already serves us the tiles. Mapbox is free to
+50,000 web loads and 25,000 mobile MAUs a month and then costs real money at
+exactly the point where we would be succeeding, and it is a service a reader's
+browser talks to, so it is a hard rule 5 decision. Not needed, not taken.
+
+**What shipped: our own style.** scripts/build_map_style.py generates
+site/public/assets/map-style.json from positron. Same tiles, glyphs, sprite and
+attribution, so it is a restyle rather than a dependency. The case for it is
+measurable: positron spends 20 layers on roads and 1 on parks, and side by side
+at the Vondelpark it renders the park in the same grey as the buildings around
+it. For a site about trees standing in parks the basemap was hiding the content.
+Verified rendered at desktop and 375px before and after.
+
+**Also closed a real gap.** Every layer asserted that a map canvas EXISTS and
+none asked whether anything was painted into it, so a broken style or a dark tile
+host would have shown every visitor an empty rectangle with green pins floating
+on it while the whole pipeline stayed green. check_basemap() in smoke_test.py
+fails on our own style being missing, unparseable, layerless, glyphless or
+unattributed, and only WARNS when the tile host is down, because a check that
+turns the deploy red for somebody else's outage is one people learn to ignore.
+
+**The app cannot follow, and that is a decision he has to make.** The iOS app is
+MKMapView. MapKit exposes no control over land, water, park or road colour, so
+the web style cannot be ported to it. What was available was taken:
+`MKStandardMapConfiguration(emphasisStyle: .muted)` desaturates roads and labels,
+which is the same instruction in the only language MapKit speaks, alongside the
+POI filter that was already there. Real parity means moving the app to MapLibre
+Native so both surfaces render the same style file, which is a new dependency in
+the product (hard rule 5, his yes) and rework of the clustering that TreeMap.swift
+chose MKMapView for in the first place. Recorded here rather than decided.

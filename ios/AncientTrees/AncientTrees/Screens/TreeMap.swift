@@ -72,6 +72,19 @@ struct TreeMap: UIViewRepresentable {
         map.delegate = context.coordinator
         map.showsUserLocation = true
         map.pointOfInterestFilter = .excludingAll   // our pins are the point
+        // The web map was restyled on 2026-08-23 to put green forward and push
+        // roads back, because the stock basemap rendered the Vondelpark in the
+        // same grey as the buildings around it. MapKit will not let us set land,
+        // water or park colours, so full parity with the web style is not
+        // available here without replacing the renderer. What IS available is
+        // this: Apple's muted emphasis desaturates roads and labels, which is
+        // the same instruction in the only language MapKit speaks.
+        if #available(iOS 17.0, *) {
+            let config = MKStandardMapConfiguration(emphasisStyle: .muted)
+            config.pointOfInterestFilter = .excludingAll
+            config.showsTraffic = false
+            map.preferredConfiguration = config
+        }
         TreePinView.clusteringEnabled = clusters
         map.register(TreePinView.self,
                      forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
