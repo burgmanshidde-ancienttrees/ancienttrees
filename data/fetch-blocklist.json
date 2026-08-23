@@ -223,6 +223,12 @@
    "seen": "2026-08-22",
    "cost": "two attempts trying to reach the municipality's own monumental-tree WFS layer (typeName extern_kaartviewer_GRN_BOMEN_MON) during a Nijmegen deepen verify pass, which would have been a genuinely independent second source distinct from the national LRMB register",
    "workaround": "unknown this pass; opendata.nijmegen.nl's dataset landing page (opendata.nijmegen.nl/dataset/geoserver-bomen-nijmegen) itself was not tried directly and may serve a static CSV export instead of the live WFS endpoint, worth trying first next time"
+  },
+  "www.dubaipulse.gov.ae": {
+   "behaviour": "hangs, no response at all (curl -m 15, exit 28) on a dataset search path",
+   "seen": "2026-08-23",
+   "cost": "one 15s timeout during a Dubai register scouting attempt, no content returned",
+   "workaround": "unknown this pass; not retried within the same window"
   }
  }
 }
