@@ -448,6 +448,45 @@ def check_search_names():
             % (len(missing), ", ".join(missing[:8]))]
 
 
+def check_paid_share():
+    """A city page should be walkable without buying tickets all day.
+
+    The rule, set by Hidde on 2026-08-23 after Bomenstichting Amsterdam made
+    the point twice: at most about a third of a city's trees may sit behind
+    paid entry. Her words were that it stays "bezwaarlijk dat 10 bomen (een
+    derde) niet gratis toegankelijk zijn", and his were "ik heb liever 34 goede
+    bereikbare dan 39".
+
+    A NOTE and not a FAIL, deliberately, because the honest fix is almost never
+    a deletion. Paid entry is allowed and always has been, as long as `access`
+    says so, and some cities really do keep their best trees in one old
+    botanical garden. Leiden is the worked example: five were pulled there the
+    day this check was written and three went straight back, because the first
+    zelkovas ever to leave Japan and the thickest horse chestnut in the country
+    are not padding. What the ratio means is "this city needs FREE trees
+    added", which is research, not a red build.
+
+    The one thing it does catch, and the reason it exists: a run that opens a
+    city by taking the eight easiest trees out of one ticketed garden, which is
+    how both Amsterdam and Leiden ended up over a third without anybody
+    deciding to."""
+    out = []
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding='utf-8') as fh:
+            d = json.load(fh)
+        trees = d.get("trees") or []
+        if len(trees) < 6:
+            continue
+        paid = [t for t in trees if "aid entry" in (t.get("access") or "")]
+        if len(paid) * 3 > len(trees):
+            out.append("%s: %d of %d trees are behind paid entry (%d%%). Add free "
+                       "trees rather than removing good ones; check the register "
+                       "first." % (d.get("city", os.path.basename(path)[:-5]),
+                                   len(paid), len(trees),
+                                   round(100 * len(paid) / len(trees))))
+    return out
+
+
 def main():
     problems = (check_id_prefixes() + check_pin_upgrades()
                 + check_cross_city_duplicates() + check_phenology())
@@ -460,7 +499,7 @@ def main():
             problems += check_contract_b(os.path.basename(p)[:-5], json.load(fh2))
     for line in problems:
         print("FAIL " + line)
-    for line in check_stacked_pins() + check_search_names():
+    for line in check_stacked_pins() + check_search_names() + check_paid_share():
         print("NOTE " + line)
     print("preflight: %d cities checked, %d problems" % (len(files), len(problems)))
     return 1 if problems else 0
