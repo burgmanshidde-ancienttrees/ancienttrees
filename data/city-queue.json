@@ -594,9 +594,9 @@
    "demand": 236723,
    "basis": "measured",
    "status": "published",
-   "trees": 21,
+   "trees": 30,
    "photos": 1,
-   "walks": 3,
+   "walks": 5,
    "register": 166,
    "ready": 9,
    "supply": 175,
@@ -1693,6 +1693,28 @@
   },
   {
    "rank": 77,
+   "city": "Helsinki",
+   "country": "Finland",
+   "slug": "helsinki",
+   "score": 7.3,
+   "demand": 148908,
+   "basis": "measured",
+   "status": "published",
+   "trees": 8,
+   "photos": 1,
+   "walks": 0,
+   "register": 9,
+   "ready": 0,
+   "supply": 9,
+   "target": 30,
+   "impressions_10d": 38,
+   "clicks_10d": 1,
+   "ease": 1.18,
+   "work_score": 8.61,
+   "travel": 9002
+  },
+  {
+   "rank": 78,
    "city": "Leipzig",
    "country": "Germany",
    "slug": "leipzig",
@@ -1714,7 +1736,7 @@
    "travel": 8604
   },
   {
-   "rank": 78,
+   "rank": 79,
    "city": "Trieste",
    "country": "Italy",
    "slug": "trieste",
@@ -1736,7 +1758,7 @@
    "travel": 5727
   },
   {
-   "rank": 79,
+   "rank": 80,
    "city": "Zurich",
    "country": "Switzerland",
    "slug": "zurich",
@@ -1758,7 +1780,7 @@
    "travel": 6363
   },
   {
-   "rank": 80,
+   "rank": 81,
    "city": "Taipei",
    "country": "Taiwan",
    "slug": "taipei",
@@ -1780,7 +1802,7 @@
    "travel": 8375
   },
   {
-   "rank": 81,
+   "rank": 82,
    "city": "Salamanca",
    "country": "Spain",
    "slug": "salamanca",
@@ -1802,7 +1824,7 @@
    "travel": 5495
   },
   {
-   "rank": 82,
+   "rank": 83,
    "city": "Hiroshima",
    "country": "Japan",
    "slug": "hiroshima",
@@ -1824,7 +1846,7 @@
    "travel": 5550
   },
   {
-   "rank": 83,
+   "rank": 84,
    "city": "Genoa",
    "country": "Italy",
    "slug": "genoa",
@@ -1846,7 +1868,7 @@
    "travel": 2634
   },
   {
-   "rank": 84,
+   "rank": 85,
    "city": "Nice",
    "country": "France",
    "slug": "nice",
@@ -1868,7 +1890,7 @@
    "travel": 9822
   },
   {
-   "rank": 85,
+   "rank": 86,
    "city": "Bologna",
    "country": "Italy",
    "slug": "bologna",
@@ -1890,7 +1912,7 @@
    "travel": 7616
   },
   {
-   "rank": 86,
+   "rank": 87,
    "city": "Adelaide",
    "country": "Australia",
    "slug": "adelaide",
@@ -1912,7 +1934,7 @@
    "travel": 8145
   },
   {
-   "rank": 87,
+   "rank": 88,
    "city": "Fukuoka",
    "country": "Japan",
    "slug": "fukuoka",
@@ -1934,7 +1956,7 @@
    "travel": 6159
   },
   {
-   "rank": 88,
+   "rank": 89,
    "city": "San Francisco",
    "country": "United States",
    "slug": "san-francisco",
@@ -1956,7 +1978,7 @@
    "travel": 8084
   },
   {
-   "rank": 89,
+   "rank": 90,
    "city": "Lucca",
    "country": "Italy",
    "slug": "lucca",
@@ -1978,7 +2000,7 @@
    "travel": 1792
   },
   {
-   "rank": 90,
+   "rank": 91,
    "city": "Bordeaux",
    "country": "France",
    "slug": "bordeaux",
@@ -2000,7 +2022,7 @@
    "travel": 3041
   },
   {
-   "rank": 91,
+   "rank": 92,
    "city": "Luang Prabang",
    "country": "Laos",
    "slug": "luang-prabang",
@@ -2022,7 +2044,7 @@
    "travel": 7493
   },
   {
-   "rank": 92,
+   "rank": 93,
    "city": "Buenos Aires",
    "country": "Argentina",
    "slug": "buenos-aires",
@@ -2044,7 +2066,7 @@
    "travel": 14653
   },
   {
-   "rank": 93,
+   "rank": 94,
    "city": "Kauai",
    "country": "United States",
    "slug": "kauai",
@@ -2067,7 +2089,7 @@
    "kind": "island"
   },
   {
-   "rank": 94,
+   "rank": 95,
    "city": "Bergen",
    "country": "Norway",
    "slug": "bergen",
@@ -2089,7 +2111,7 @@
    "travel": 7304
   },
   {
-   "rank": 95,
+   "rank": 96,
    "city": "Caserta",
    "country": "Italy",
    "slug": "caserta",
@@ -2109,28 +2131,6 @@
    "ease": 2.0,
    "work_score": 7.3,
    "travel": 632
-  },
-  {
-   "rank": 96,
-   "city": "Helsinki",
-   "country": "Finland",
-   "slug": "helsinki",
-   "score": 7.3,
-   "demand": 148908,
-   "basis": "measured",
-   "status": "published",
-   "trees": 8,
-   "photos": 1,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 30,
-   "impressions_10d": 38,
-   "clicks_10d": 1,
-   "ease": 1.0,
-   "work_score": 7.3,
-   "travel": 9002
   },
   {
    "rank": 97,

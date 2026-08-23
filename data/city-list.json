@@ -198,7 +198,7 @@
    "slug": "the-hague",
    "status": "published",
    "demand_views_90d": 236723,
-   "trees": 21
+   "trees": 30
   },
   {
    "city": "Seville",
@@ -444,6 +444,14 @@
    "trees": 10
   },
   {
+   "city": "Helsinki",
+   "country": "Finland",
+   "slug": "helsinki",
+   "status": "published",
+   "demand_views_90d": 148908,
+   "trees": 8
+  },
+  {
    "city": "Trieste",
    "country": "Italy",
    "slug": "trieste",
@@ -551,14 +559,6 @@
    "note": "MASAF cluster in the Reggia's English Garden: 41 registered trees within 3 km, 7 published, six of them within 200 m. Campania's regional register (agricoltura.regione.campania.it/foreste/monum/scheda_NNN.html) supplied the ages MASAF lacks.",
    "demand_views_90d": 14783,
    "trees": 20
-  },
-  {
-   "city": "Helsinki",
-   "country": "Finland",
-   "slug": "helsinki",
-   "status": "published",
-   "demand_views_90d": 148908,
-   "trees": 8
   },
   {
    "city": "Maastricht",
