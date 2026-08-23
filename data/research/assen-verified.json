@@ -1,7 +1,7 @@
 [
  {
   "id": "ass_001",
-  "name": null,
+  "name": "The Horse Chestnut of Overcingel",
   "species": "Horse Chestnut (Aesculus hippocastanum)",
   "age_estimate": "roughly 200 years, from a registered planting date around 1830",
   "age_min": 196,
@@ -11,6 +11,14 @@
    "latitude": 52.992544,
    "longitude": 6.567198,
    "neighbourhood": null
+  },
+  "story": "Nobody is certain whether this is one tree or a bouquet of them. The register calls it a multi-stemmed white horse chestnut, which was a fashionable thing to plant in the 1820s, and then offers the other reading: that the trunk was once cut through at sixty centimetres and grew back from the stump. If that is what happened, this is the thickest single-stemmed horse chestnut in the Netherlands.\n\nEither way it sits in the register's ereklasse, the top rank, held by 99 trees in the whole country.\n\nIt grows on Overcingel, a private estate whose manor house dates from 1777 and whose garden was reworked in 1824 by the landscape architect Lucas Pieter Roodbaard. When the chestnut itself went in is not recorded. The register's planting band is the 1820s, and its inspectors guess it arrived with that redesign because Roodbaard planted chestnuts often. A guess is what it stays.\n\nAge is not the first thing you notice. The tree is wide, low and heavy, held together with anchors driven through trunk and crown, with a large cavity on the path side, plates of bark coming loose and bleeding canker at the foot. Its condition has been slipping for about ten years.\n\nOnly the national register describes this tree. If you know more of its history, tell us.",
+  "best_time": {
+   "months": [
+    5
+   ],
+   "kind": "flowers",
+   "label": "May, when the white candles open right across the spread of the crown"
   },
   "verified_sources": [
    "https://www.monumentalebomen.nl/"
@@ -24,12 +32,11 @@
    "status": "missing"
   },
   "curation_status": "flagged",
-  "location_precision": "approximate",
-  "verify_notes": "LRMB register nr 1689372 ('Witte paardenkastanje Overcingel'). Register planting band 1820-1830, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category particulier, setting landgoed. EREKLASSE, the register's top designation, 99 trees nationally. Register history of the PLACE, not of the tree, so do not bridge from it: De witte paardenkastanje is te vinden op landgoed Overcingel. Het landgoed met herenhuis is van 1777. In 1824 werd de tuin heringericht door tuinarchitect Lucas Pieter Roodbaard. Wanneer de paardenkastanje is geplant is niet zeker. Het lijkt het meest waarschijnlijk dat dit is gedaan bij de herinrichting van het park. Van Roodbaard is bekend dat hij vaker paardenkastanjes plantte en in zijn tijd was het aanplanten van meerstammige bomen en boomboeketten heel gebruikelijk. De boom is nu een zeer indrukwekkende, meerstammige paardenkastanje. Maar het kan in dit geval ook zijn dat deze boom ooit is afgezaagd op 60cm hoogte en weer is uitgelopen en dus de dikste eenstammige paardenkastanje van Nederland is. Het is zeker één van de der fraaiste exemplaren van deze soort in Nederland. De breed uitgegroeide boom is verzekerd met ankers in stam en kroon. We zien sporen van bloedingsziekte in het midden van de stamvoet. Er is een flinke holte aan kant van het pad. Er zijn loslatende bastdelen te zien. De conditie lijkt de laatste 10 jaar achteruit te gaan. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  "location_precision": "approximate"
  },
  {
   "id": "ass_002",
-  "name": null,
+  "name": "The Hollow Oak of Overcingel",
   "species": "Pedunculate Oak (Quercus robur)",
   "age_estimate": "roughly 230 to 280 years, from the register's planting band of 1750-1800",
   "age_min": 226,
@@ -53,11 +60,11 @@
   },
   "curation_status": "flagged",
   "location_precision": "approximate",
-  "verify_notes": "LRMB register nr 1684204 ('Zomereik Overcingel'). Register planting band 1750-1800, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category particulier, setting landgoed. Register history of the PLACE, not of the tree, so do not bridge from it: De zomereik is te vinden op het landgoed Overcingel. Het landgoed is ontstaan in 1777 toen op de plek het herenhuis werd gebouwd. In 1824 is de tuin heringericht in de Engelse landschapsstijl door tuinarchitect Roodbaard. De eik kan dus geplant zijn tussen 1777 en 1824. Het gaat om een markant exemplaar met aan de noordzijde een enorme holte, met zwavelzwamaantasting. Hier zijn een groot aantal hechtingen te zien aangebracht in de tijd van de boomchirurgie (1970-1985). De boom heeft aan de zuidzijde sterk reactiehout gemaakt met een forse worteloploop. De kroon heeft een veteranensnoei gehad en is daarbij flink gereduceerd (van 27 naar 14 meter hoogte). Het lukt de boom om de overgebleven delen van uitlopers te voorzien, dus er is dus nog leven in deze bijzondere eik. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  "story": "A fungus usually taken as a sign a tree is dying has been working through this oak's heartwood for decades, and it is still standing. The register calls it zwavelzwam, sulfur polypore, feeding through a cavity that opens the whole north side of the trunk.\n\nIt grows a short walk from Overcingel's horse chestnut, on the same estate laid out around a manor house of 1777 and remade in the English style by Lucas Pieter Roodbaard in 1824. The register's planting band puts the oak at 1750 to 1800, decades wider than the chestnut's, which makes this the older of the estate's two register trees rather than a companion planted alongside it.\n\nSomewhere between 1970 and 1985, tree surgeons patched the trunk with the grafts and braces of that decade's practice. Since then the crown has been cut back hard, from 27 metres to 14, what arborists call veteran pruning: reducing a failing crown to buy the trunk more years. On the south side the tree has grown a thick collar of reaction wood and pushed roots up above the soil, bracing itself against the lean the hollow has left it with.\n\nIt still leafs out on what remains of its branches. Whether it keeps doing that is a question the register itself leaves open."
  },
  {
   "id": "ass_003",
-  "name": null,
+  "name": "The Oak of the Hertenkamp",
   "species": "Pedunculate Oak (Quercus robur)",
   "age_estimate": "roughly 180 years, from a registered planting date around 1850",
   "age_min": 176,
@@ -81,11 +88,11 @@
   },
   "curation_status": "flagged",
   "location_precision": "approximate",
-  "verify_notes": "LRMB register nr 1689364 ('Zomereik hertenkamp Nassaulaan'). Register planting band 1840-1850, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: De zomereik staat in de Hertenkamp van Assen. Deze hertenkamp is aangelegd in 1841. De boom kan toen zijn geplant. Het meest opvallende kenmerk van het kamp is de in 1875 gebouwde hertenstal. De eik staat dicht bij deze stal aan de vijver. De boom verminderd de laatste 15 jaar in conditie. Aan noordzijde van stam zijn flinke wonden en holtes. En aan die noordzijde gaat de kroon sterk achteruit, veel takken zijn afgestorven. Aan de zuidzijde is de kroon in betere conditie. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  "story": "Assen's old deer park still has its stable in it, built in 1875, and this oak grows right by it at the pond, planted, most likely, when the park itself was laid out in 1841.\n\nIt has spent the last fifteen years in visible decline, and unevenly. The whole north side of the crown is dying back, its trunk opened by wounds and cavities on the same side, while the south side is holding its own and still carries a healthy head of leaves. Which half a visitor notices first depends on which side of the pond they approach from.\n\nThe Hertenkamp itself has been open parkland since the nineteenth century, one of the pockets Assen kept green as the town grew around it. Nobody has published a firmer date for the oak than the 1840s planting band the national tree register gives it, and the register is the only source that has looked closely enough to describe its condition at all. If you have watched that north side change, or know more of this tree's history, tell us."
  },
  {
   "id": "ass_004",
-  "name": null,
+  "name": "The Oak of Valkenstijn",
   "species": "Pedunculate Oak (Quercus robur)",
   "age_estimate": "roughly 150 years, from a registered planting date around 1880",
   "age_min": 146,
@@ -109,11 +116,18 @@
   },
   "curation_status": "flagged",
   "location_precision": "approximate",
-  "verify_notes": "LRMB register nr 1695778 ('Zomereik Valkenstijn'). Register planting band 1870-1880, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: De geregistreerde zomereik is te vinden op landgoed Valkenstijn, een groene oase van bijna 10 hectare in het centrum van Assen-Oost. Het landgoed heeft oude bomen, lanen, houtwallen en grote weides. Het is de kern van een ooit groter landgoed, Vredeveld geheten, naar huize Vredeveld dat rond 1650 werd gesticht. Het huis is in 1966 (in vervallen staat) afgebroken. Het landgoed is nu openbaar park. Het gaat om een imposante boom met een stamomtrek van meer dan 400cm. De boom heeft een goede conditie, een gave stam, ruimte voor de kroonprojectie en een gunstige groeiplaats. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  "story": "This oak's girth runs past four metres, and it is in better shape than most trees this old get to be: a sound trunk, a clear run for its crown, and a growing spot nobody has ever crowded.\n\nIt stands in Valkenstijn, nearly ten hectares of park in what is now Assen-Oost, and the park is the shrunken core of something larger. The ground was once called Vredeveld, after a manor house founded around 1650 that stood, by the end derelict, until it was pulled down in 1966. The oak is registered to the 1870s, two centuries after that house first went up, which makes it a comparative latecomer to land that had already been landscaped for generations.\n\nWhat Vredeveld's grounds became is now open to anyone: old trees, avenues, hedgerows and wide meadows, with Valkenstijn as public parkland at the centre of the district that grew up around it. The register calls the oak's planting only likely rather than certain. What it does not have to guess about is the tree itself, sound, spacious and doing well.",
+  "best_time": {
+   "months": [
+    10
+   ],
+   "kind": "fruit",
+   "label": "October, when the acorns come down across the park"
+  }
  },
  {
   "id": "ass_005",
-  "name": null,
+  "name": "The Heaviest Oak in Assen",
   "species": "Pedunculate Oak (Quercus robur)",
   "age_estimate": "roughly 190 years, from a registered planting date around 1840",
   "age_min": 186,
@@ -137,11 +151,18 @@
   },
   "curation_status": "flagged",
   "location_precision": "confirmed",
-  "verify_notes": "LRMB register nr 1689363 ('Zomereik Beilerstraat Assen'). Register planting band 1830-1840, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category particulier, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: De zomereik van deze registratie is een beeldbepalende en indrukwekkende oude eik. Het is de zwaarste eik van Assen en een van de dikste eiken in Drenthe, maar niet erg bekend, in tegenstelling tot de eiken van Beilen en Mensinge. De boom staat vrijwel aan de Beilerstraat en is daarvandaan goed te zien. De Beilerstraat was lange tijd onbebouwd, het eerste woonhuis werd geplaats in 1833 (Beilerstraat 2). De boom staat echter op het terrein van het pand aan de Nassaulaan 1 (1830). Dit neo-classicistische middengangshuis was een van de eerste woonhuizen aan de rand van stad. Het is dus aannemelijk dat de zomereik geplant is rondom 1830-1840. De eik is nog altijd redelijk gezond en komt goed in blad. Een gesteltak is recent uitgebroken. Verder zien we wat dood hout. De toppen wijzen op enige taksterfte, maar niet ernstig. De stam is gaaf, zonder verwondingen. Met goed onderhoud kunnen we nog lang genieten van de monumentale boom. In 2022 zien we stormschade; een tak is afgerukt, gelukkig net buiten de doorgaande stam. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  "story": "The register calls this the heaviest oak in Assen and one of the thickest in the whole of Drenthe, then adds the honest complaint: almost nobody has heard of it, next to the famous oaks of Beilen and Mensinge.\n\nIt grows on the grounds of Nassaulaan 1, a neoclassical house built around 1830 at what was then the edge of town, but it leans so far toward Beilerstraat that it reads from the street as if it belongs there. Beilerstraat itself stayed empty of houses until 1833, when the first one went up at number 2, which makes this oak roughly as old as the street having any houses on it at all.\n\nA large limb has come down recently, and a 2022 storm tore off another, though that one missed the trunk. The crown tips show some dieback. None of it looks serious: the trunk itself is sound and unwounded, and the tree still comes into leaf well.\n\nYou cannot walk up to it. It grows on private ground. But it stands close enough to Beilerstraat, opposite house number 5, that seeing it needs nothing more than the pavement.",
+  "best_time": {
+   "months": [
+    10
+   ],
+   "kind": "fruit",
+   "label": "October, when the acorns come down onto Beilerstraat"
+  }
  },
  {
   "id": "ass_006",
-  "name": null,
+  "name": "The Weeping Beech of Huges' Garden",
   "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
   "age_estimate": "roughly 140 years, from a registered planting date around 1890",
   "age_min": 136,
@@ -165,11 +186,11 @@
   },
   "curation_status": "flagged",
   "location_precision": "approximate",
-  "verify_notes": "LRMB register nr 1693709 ('Treurbeuk Parkje van Huges'). Register planting band 1880-1890, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: Achter het huis Nieuw Echten (Vaart NZ 66) ligt een fraai stukje groen. De oorspronkelijk in Engelse landschapsstijl aangelegde tuin met vijver staat bekend als het parkje van Huges. Het dankt zijn naam aan de familie Huges, die hier tussen 1934 en 1970 woonde. Via het voetpad tussen Alteveerstraat 59 en 61 is deze stadsoase vrij toegankelijk. De geregistreerde treurbeuk is hier te vinden. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  "story": "Behind a house called Nieuw Echten, reached only by a footpath squeezed between two front doors on Alteveerstraat, sits a pocket garden nobody driving past would guess exists. It carries the name of a family, Huges, who lived in the house from 1934 to 1970, decades after the garden itself had already been laid out in the English landscape style, with a pond at its centre.\n\nThe weeping beech growing there predates the Huges family by about half a century. The register puts its planting somewhere in the 1880s. A weeping beech's whole trick is gravity: instead of reaching up, its branches arch out from the trunk and fall, so a mature one reads less like a tree and more like a room, walls of foliage hanging to the ground with the trunk hidden somewhere inside.\n\nThe path in runs between numbers 59 and 61 Alteveerstraat, open to anyone who finds it. Nobody has published more about this specific tree than the national register, which is the only source we have for it. If you know the garden's own history better, tell us."
  },
  {
   "id": "ass_007",
-  "name": null,
+  "name": "The Broken Cypress of Overcingel",
   "species": "Bald Cypress (Taxodium distichum)",
   "age_estimate": "roughly 140 years, from a registered planting date around 1890",
   "age_min": 136,
@@ -193,11 +214,11 @@
   },
   "curation_status": "flagged",
   "location_precision": "approximate",
-  "verify_notes": "LRMB register nr 1689371 ('Moerascipres Overcingel'). Register planting band 1880-1890, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category particulier, setting landgoed. Register history of the PLACE, not of the tree, so do not bridge from it: De moerascipres is te vinden op landgoed Overcingel. Het landgoed met herenhuis is van 1777. In 1824 werd de tuin heringericht door tuinarchitect Lucas Pieter Roodbaard. Wanneer de boom is geplant is niet zeker. Het lijkt het meest waarschijnlijk dat dit is gedaan bij de herinrichting van het park. De boom is tgv van de afgebroken stam niet erg monumentaal meer te noemen. Het is wel interessant om te volgen of hij de komende jaren nog een substantiële nieuwe kroon vormt. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  "story": "This one is included for what it might become rather than what it is. The register's own notes call it barely monumental any more, because at some point the main trunk broke off, and what stands today is largely regrowth.\n\nIt shares Overcingel's grounds with the estate's oak and horse chestnut, on land landscaped in 1824 by Lucas Pieter Roodbaard, and the register guesses all three went in around that redesign, though nothing dates the cypress itself more precisely than the 1880s. Bald cypress is an unusual choice for a Drenthe estate garden, a wetland conifer from the American South, deciduous unlike most conifers, its needles turning rust orange and dropping every autumn.\n\nWhat the register is watching, and what a visitor can watch too, is whether the tree manages to rebuild a real crown from where it broke. That is an open question rather than a finished story, and it is the honest reason to include a damaged tree on this list: it is alive, it is trying, and nobody yet knows how it ends.\n\nIt stands on the same private grounds as its two Overcingel neighbours, reachable with a walking card from Het Drentse Landschap's Assen office, or without one during the February and March crocus season."
  },
  {
   "id": "ass_008",
-  "name": null,
+  "name": "The Copper Beech of Huges' Garden",
   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
   "age_estimate": "roughly 130 years, from a registered planting date around 1900",
   "age_min": 126,
@@ -221,11 +242,18 @@
   },
   "curation_status": "flagged",
   "location_precision": "approximate",
-  "verify_notes": "LRMB register nr 1693710 ('Bruine beuk Parkje van Huges'). Register planting band 1890-1900, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: Achter het huis Nieuw Echten (Vaart NZ 66) ligt een fraai stukje groen. De oorspronkelijk in Engelse landschapsstijl aangelegde tuin met vijver staat bekend als het parkje van Huges. Het dankt zijn naam aan de familie Huges, die hier tussen 1934 en 1970 woonde. Via het voetpad tussen Alteveerstraat 59 en 61 is deze stadsoase vrij toegankelijk. De geregistreerde bruine beuk is hier te vinden. De boom heeft een natuurlijke groeiplaats en een goede conditie. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  "story": "The same footpath that leads to the weeping beech behind Nieuw Echten passes a second registered tree a few steps further on: a copper beech, its leaves running dark purple-red instead of green, planted about a decade later, in the 1890s.\n\nBoth trees share the same pocket garden, laid out in the English landscape style around a pond before the Huges family gave the place its name between 1934 and 1970. Where its weeping neighbour is shaped by how it was bred, arching its branches down instead of up, this one is shaped only by where it was planted: a natural, open growing spot with room to spread, which the register credits for its condition. It is straightforwardly healthy, with nothing in the record to flag.\n\nCopper beech turns from purple toward copper through October, the colour shift that gives the cultivar its name doubling up for a few weeks before the leaves drop. It is the more dramatic of the garden's two beeches to see at that time of year.\n\nReached the same way as the weeping beech, through the footpath between Alteveerstraat 59 and 61, open to anyone who finds it.",
+  "best_time": {
+   "months": [
+    10
+   ],
+   "kind": "autumn colour",
+   "label": "October, when the purple turns copper"
+  }
  },
  {
   "id": "ass_009",
-  "name": null,
+  "name": "The Oak of Port Natal",
   "species": "Pedunculate Oak (Quercus robur)",
   "age_estimate": "roughly 180 years, from a registered planting date around 1850",
   "age_min": 176,
@@ -249,6 +277,13 @@
   },
   "curation_status": "flagged",
   "location_precision": "approximate",
-  "verify_notes": "LRMB register nr 1694885 ('Zomereiken Port Natal'). Register planting band 1840-1850, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category publiekrechtelijke organisatie, setting onbekend. Register history of the PLACE, not of the tree, so do not bridge from it: De geregistreerde zomereik staat voor een terrein dat in de 19e eeuw een landgoed was aan de rand van de stad. Die geschiedenis is vanaf deze plek nog goed voorstelbaar met het zicht op de Engelse landschapstuin. De twee penanten naast de boom herinneren aan de vroegere oprijlaan van het psychiatrisch ziekenhuis Port Natal, gebouwd in 1920. In 1990 is dit gebouw vervangen door het Wilhelmina ziekenhuis. Het gaat bij deze registratie om een fraaie, beeldbepalende eik, aan waterkant en nabij de Beilerstraat. De boom heeft een gave stam en de conditie is redelijk. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  "story": "Two stone gateposts stand next to this oak with nothing left between them to mark: they are what remains of the driveway to Port Natal, a psychiatric hospital built here in 1920 and replaced in 1990 by the Wilhelmina Ziekenhuis that occupies the site today. The oak predates all of it. The register's planting band puts it in the 1840s, when this was still the edge of an estate rather than a hospital ground, and the view across an English-style landscape garden from where it stands is, the register notes, still easy to picture.\n\nIt grows at the waterside, close by Beilerstraat, with a sound, unmarked trunk and a crown the register simply calls reasonable, no drama attached. What has changed around it several times over is what the tree stands next to: a country estate, an asylum, and now a hospital, each replacing the last while the oak kept growing.\n\nIt is visible from the public street along the former hospital grounds. If you know more of Port Natal's own history, or this oak's, tell us.",
+  "best_time": {
+   "months": [
+    10
+   ],
+   "kind": "fruit",
+   "label": "October, when the acorns come down by the water"
+  }
  }
 ]

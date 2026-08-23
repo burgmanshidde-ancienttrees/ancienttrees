@@ -1,0 +1,301 @@
+{
+ "city": "Assen",
+ "country": "Netherlands",
+ "status": "needs_curation",
+ "intro": "Assen's nine registered trees cluster around old estate grounds rather than the city centre: three share the private landgoed of Overcingel, two hide behind a house called Nieuw Echten down a footpath nobody would find by accident, and the rest stand in a deer park, a former manor's grounds and a former hospital site. Nothing here is dated to the year. The register gives every one a planting band, and several are visibly ageing: a hollowed oak, a broken cypress, a crown cut back hard to save the trunk. What survives is worth the detour anyway.",
+ "meta_description": "Nine registered trees around Assen: a hollow oak on a private estate, a broken bald cypress, and two beeches behind a hidden garden footpath.",
+ "question_meta": "Assen's oldest tree is an oak on the Overcingel estate, hollowed by decades of fungus, its crown cut back to save it. Here it is, and eight more.",
+ "question_answer": "The oldest tree in Assen is the Hollow Oak of Overcingel, a pedunculate oak the national tree register bands to 1750-1800, roughly 225 to 275 years old. It grows on the private Overcingel estate off Oostersingel, its trunk opened on the north side by a cavity where sulfur fungus has been feeding for decades.",
+ "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every figure on this page is a band rather than a measurement. The register is the single source for all nine trees, so every entry ships flagged rather than confirmed, and a second source would sharpen these ages if one turns up. Three of the nine, the horse chestnut, the hollow oak and the broken cypress, stand together on Overcingel, a private estate landscaped in 1824 and free to walk with a card from Het Drentse Landschap's Assen office, or without one during the February and March crocus season. Two more, a weeping beech and a copper beech, share a pocket garden behind a house called Nieuw Echten, reached through a footpath between two front doors on Alteveerstraat. The rest stand on public ground: a deer park, a former manor's grounds now open as Valkenstijn, and a former hospital site along Beilerstraat. Where a pin is marked approximate, we know the site and not the exact trunk.",
+ "hero_tree_id": "ass_001",
+ "oldest_tree_id": "ass_002",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Assen?",
+   "a": "The Hollow Oak of Overcingel, banded by the national tree register to 1750-1800. Decades of sulfur fungus have opened a cavity through the north side of its trunk, and its crown has been cut back hard, from 27 metres to 14, to keep the tree alive."
+  },
+  {
+   "q": "Can I visit the trees on the Overcingel estate?",
+   "a": "Yes. Het Drentse Landschap, which manages the estate, issues a walking card from its Assen office at Kloosterstraat 5 that covers the grounds, or you can walk in without one during the crocus season in February and March, when the woodland floor turns purple."
+  },
+  {
+   "q": "Why are these trees only approximately dated?",
+   "a": "The Landelijk Register Monumentale Bomen, the national tree register, records when a tree was planted as a decade rather than a year, and it is the only source that has looked closely at any of Assen's nine registered trees. A planting band is still real information: it says these trees are old, just not down to the exact year."
+  },
+  {
+   "q": "How do I find the beeches behind Nieuw Echten?",
+   "a": "Look for the footpath between Alteveerstraat 59 and 61. It runs between two front doors and opens onto a small English-style garden with a pond, where a weeping beech and a copper beech from the 1880s and 1890s both stand."
+  }
+ ],
+ "trees": [
+  {
+   "id": "ass_001",
+   "name": "The Horse Chestnut of Overcingel",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "age_estimate": "roughly 200 years, from a registered planting date around 1830",
+   "age_min": 196,
+   "age_max": 206,
+   "location": {
+    "address": "Gemeente Assen, Assen, 9401 JZ, Oostersingel 27 (landgoed Overcingel)",
+    "latitude": 52.992544,
+    "longitude": 6.567198
+   },
+   "story": "Nobody is certain whether this is one tree or a bouquet of them. The register calls it a multi-stemmed white horse chestnut, which was a fashionable thing to plant in the 1820s, and then offers the other reading: that the trunk was once cut through at sixty centimetres and grew back from the stump. If that is what happened, this is the thickest single-stemmed horse chestnut in the Netherlands.\n\nEither way it sits in the register's ereklasse, the top rank, held by 99 trees in the whole country.\n\nIt grows on Overcingel, a private estate whose manor house dates from 1777 and whose garden was reworked in 1824 by the landscape architect Lucas Pieter Roodbaard. When the chestnut itself went in is not recorded. The register's planting band is the 1820s, and its inspectors guess it arrived with that redesign because Roodbaard planted chestnuts often. A guess is what it stays.\n\nAge is not the first thing you notice. The tree is wide, low and heavy, held together with anchors driven through trunk and crown, with a large cavity on the path side, plates of bark coming loose and bleeding canker at the foot. Its condition has been slipping for about ten years.\n\nOnly the national register describes this tree. If you know more of its history, tell us.",
+   "best_time": {
+    "months": [
+     5
+    ],
+    "kind": "flowers",
+    "label": "May, when the white candles open right across the spread of the crown"
+   },
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free with a walking card from Het Drentse Landschap's Assen office (Kloosterstraat 5); open without one during the crocus season in February and March.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate"
+  },
+  {
+   "id": "ass_002",
+   "name": "The Hollow Oak of Overcingel",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "roughly 230 to 280 years, from the register's planting band of 1750-1800",
+   "age_min": 226,
+   "age_max": 276,
+   "location": {
+    "address": "Gemeente Assen, Assen, 9401 JZ, Oostersingel 27 (Landgoed Overcingel)",
+    "latitude": 52.992471,
+    "longitude": 6.566779
+   },
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free with a walking card from Het Drentse Landschap's Assen office (Kloosterstraat 5); open without one during the crocus season in February and March.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate",
+   "story": "A fungus usually taken as a sign a tree is dying has been working through this oak's heartwood for decades, and it is still standing. The register calls it zwavelzwam, sulfur polypore, feeding through a cavity that opens the whole north side of the trunk.\n\nIt grows a short walk from Overcingel's horse chestnut, on the same estate laid out around a manor house of 1777 and remade in the English style by Lucas Pieter Roodbaard in 1824. The register's planting band puts the oak at 1750 to 1800, decades wider than the chestnut's, which makes this the older of the estate's two register trees rather than a companion planted alongside it.\n\nSomewhere between 1970 and 1985, tree surgeons patched the trunk with the grafts and braces of that decade's practice. Since then the crown has been cut back hard, from 27 metres to 14, what arborists call veteran pruning: reducing a failing crown to buy the trunk more years. On the south side the tree has grown a thick collar of reaction wood and pushed roots up above the soil, bracing itself against the lean the hollow has left it with.\n\nIt still leafs out on what remains of its branches. Whether it keeps doing that is a question the register itself leaves open."
+  },
+  {
+   "id": "ass_003",
+   "name": "The Oak of the Hertenkamp",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "roughly 180 years, from a registered planting date around 1850",
+   "age_min": 176,
+   "age_max": 186,
+   "location": {
+    "address": "Gemeente Assen, Assen, 9401 HK, in Hertenkamp tegenover Doctor Nassaulaan 28,  ",
+    "latitude": 52.990446,
+    "longitude": 6.555525
+   },
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free, public park, open daily.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate",
+   "story": "Assen's old deer park still has its stable in it, built in 1875, and this oak grows right by it at the pond, planted, most likely, when the park itself was laid out in 1841.\n\nIt has spent the last fifteen years in visible decline, and unevenly. The whole north side of the crown is dying back, its trunk opened by wounds and cavities on the same side, while the south side is holding its own and still carries a healthy head of leaves. Which half a visitor notices first depends on which side of the pond they approach from.\n\nThe Hertenkamp itself has been open parkland since the nineteenth century, one of the pockets Assen kept green as the town grew around it. Nobody has published a firmer date for the oak than the 1840s planting band the national tree register gives it, and the register is the only source that has looked closely enough to describe its condition at all. If you have watched that north side change, or know more of this tree's history, tell us."
+  },
+  {
+   "id": "ass_004",
+   "name": "The Oak of Valkenstijn",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "roughly 150 years, from a registered planting date around 1880",
+   "age_min": 146,
+   "age_max": 156,
+   "location": {
+    "address": "Gemeente Assen, boom is te bereiken via Amelte 1A, 9404 EL ",
+    "latitude": 52.99168,
+    "longitude": 6.582613
+   },
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free, public park, open daily.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate",
+   "story": "This oak's girth runs past four metres, and it is in better shape than most trees this old get to be: a sound trunk, a clear run for its crown, and a growing spot nobody has ever crowded.\n\nIt stands in Valkenstijn, nearly ten hectares of park in what is now Assen-Oost, and the park is the shrunken core of something larger. The ground was once called Vredeveld, after a manor house founded around 1650 that stood, by the end derelict, until it was pulled down in 1966. The oak is registered to the 1870s, two centuries after that house first went up, which makes it a comparative latecomer to land that had already been landscaped for generations.\n\nWhat Vredeveld's grounds became is now open to anyone: old trees, avenues, hedgerows and wide meadows, with Valkenstijn as public parkland at the centre of the district that grew up around it. The register calls the oak's planting only likely rather than certain. What it does not have to guess about is the tree itself, sound, spacious and doing well.",
+   "best_time": {
+    "months": [
+     10
+    ],
+    "kind": "fruit",
+    "label": "October, when the acorns come down across the park"
+   }
+  },
+  {
+   "id": "ass_005",
+   "name": "The Heaviest Oak in Assen",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "roughly 190 years, from a registered planting date around 1840",
+   "age_min": 186,
+   "age_max": 196,
+   "location": {
+    "address": "Gemeente Assen, Assen, 9401 HJ, Doctor Nassaulaan 1 (staat aan de Beilerstraat t.o. nr 5) \n\n",
+    "latitude": 52.991794,
+    "longitude": 6.560027
+   },
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Visible from Beilerstraat (public street), opposite house number 5. It grows on private grounds at Nassaulaan 1 and cannot be approached directly.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "story": "The register calls this the heaviest oak in Assen and one of the thickest in the whole of Drenthe, then adds the honest complaint: almost nobody has heard of it, next to the famous oaks of Beilen and Mensinge.\n\nIt grows on the grounds of Nassaulaan 1, a neoclassical house built around 1830 at what was then the edge of town, but it leans so far toward Beilerstraat that it reads from the street as if it belongs there. Beilerstraat itself stayed empty of houses until 1833, when the first one went up at number 2, which makes this oak roughly as old as the street having any houses on it at all.\n\nA large limb has come down recently, and a 2022 storm tore off another, though that one missed the trunk. The crown tips show some dieback. None of it looks serious: the trunk itself is sound and unwounded, and the tree still comes into leaf well.\n\nYou cannot walk up to it. It grows on private ground. But it stands close enough to Beilerstraat, opposite house number 5, that seeing it needs nothing more than the pavement.",
+   "best_time": {
+    "months": [
+     10
+    ],
+    "kind": "fruit",
+    "label": "October, when the acorns come down onto Beilerstraat"
+   }
+  },
+  {
+   "id": "ass_006",
+   "name": "The Weeping Beech of Huges' Garden",
+   "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+   "age_estimate": "roughly 140 years, from a registered planting date around 1890",
+   "age_min": 136,
+   "age_max": 146,
+   "location": {
+    "address": "Gemeente Assen, Assen, 9401 GP, Vaart N.Z. 66,  (via voetpad Alteveerstraat 59 en 61)",
+    "latitude": 52.994831,
+    "longitude": 6.555169
+   },
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free, public park, open daily.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate",
+   "story": "Behind a house called Nieuw Echten, reached only by a footpath squeezed between two front doors on Alteveerstraat, sits a pocket garden nobody driving past would guess exists. It carries the name of a family, Huges, who lived in the house from 1934 to 1970, decades after the garden itself had already been laid out in the English landscape style, with a pond at its centre.\n\nThe weeping beech growing there predates the Huges family by about half a century. The register puts its planting somewhere in the 1880s. A weeping beech's whole trick is gravity: instead of reaching up, its branches arch out from the trunk and fall, so a mature one reads less like a tree and more like a room, walls of foliage hanging to the ground with the trunk hidden somewhere inside.\n\nThe path in runs between numbers 59 and 61 Alteveerstraat, open to anyone who finds it. Nobody has published more about this specific tree than the national register, which is the only source we have for it. If you know the garden's own history better, tell us."
+  },
+  {
+   "id": "ass_007",
+   "name": "The Broken Cypress of Overcingel",
+   "species": "Bald Cypress (Taxodium distichum)",
+   "age_estimate": "roughly 140 years, from a registered planting date around 1890",
+   "age_min": 136,
+   "age_max": 146,
+   "location": {
+    "address": "Gemeente Assen, Assen, 9401 JZ, Oostersingel 27 (landgoed Overcingel)",
+    "latitude": 52.992206,
+    "longitude": 6.566856
+   },
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free with a walking card from Het Drentse Landschap's Assen office (Kloosterstraat 5); open without one during the crocus season in February and March.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate",
+   "story": "This one is included for what it might become rather than what it is. The register's own notes call it barely monumental any more, because at some point the main trunk broke off, and what stands today is largely regrowth.\n\nIt shares Overcingel's grounds with the estate's oak and horse chestnut, on land landscaped in 1824 by Lucas Pieter Roodbaard, and the register guesses all three went in around that redesign, though nothing dates the cypress itself more precisely than the 1880s. Bald cypress is an unusual choice for a Drenthe estate garden, a wetland conifer from the American South, deciduous unlike most conifers, its needles turning rust orange and dropping every autumn.\n\nWhat the register is watching, and what a visitor can watch too, is whether the tree manages to rebuild a real crown from where it broke. That is an open question rather than a finished story, and it is the honest reason to include a damaged tree on this list: it is alive, it is trying, and nobody yet knows how it ends.\n\nIt stands on the same private grounds as its two Overcingel neighbours, reachable with a walking card from Het Drentse Landschap's Assen office, or without one during the February and March crocus season."
+  },
+  {
+   "id": "ass_008",
+   "name": "The Copper Beech of Huges' Garden",
+   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+   "age_estimate": "roughly 130 years, from a registered planting date around 1900",
+   "age_min": 126,
+   "age_max": 136,
+   "location": {
+    "address": "Gemeente Assen, Assen, 9401 GP, Vaart N.Z. 66,  (via voetpad Alteveerstraat 59 en 61)",
+    "latitude": 52.995071,
+    "longitude": 6.555319
+   },
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free, public park, open daily.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate",
+   "story": "The same footpath that leads to the weeping beech behind Nieuw Echten passes a second registered tree a few steps further on: a copper beech, its leaves running dark purple-red instead of green, planted about a decade later, in the 1890s.\n\nBoth trees share the same pocket garden, laid out in the English landscape style around a pond before the Huges family gave the place its name between 1934 and 1970. Where its weeping neighbour is shaped by how it was bred, arching its branches down instead of up, this one is shaped only by where it was planted: a natural, open growing spot with room to spread, which the register credits for its condition. It is straightforwardly healthy, with nothing in the record to flag.\n\nCopper beech turns from purple toward copper through October, the colour shift that gives the cultivar its name doubling up for a few weeks before the leaves drop. It is the more dramatic of the garden's two beeches to see at that time of year.\n\nReached the same way as the weeping beech, through the footpath between Alteveerstraat 59 and 61, open to anyone who finds it.",
+   "best_time": {
+    "months": [
+     10
+    ],
+    "kind": "autumn colour",
+    "label": "October, when the purple turns copper"
+   }
+  },
+  {
+   "id": "ass_009",
+   "name": "The Oak of Port Natal",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "roughly 180 years, from a registered planting date around 1850",
+   "age_min": 176,
+   "age_max": 186,
+   "location": {
+    "address": "Gemeente Assen, Assen, 9401 RK, Europaweg-Zuid 1, \n(terrein van Wilhelmina Ziekenhuis , langs Beilerstraat, slootkant)",
+    "latitude": 52.984534,
+    "longitude": 6.562147
+   },
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free, alongside Beilerstraat on the edge of the former Wilhelmina Ziekenhuis grounds, visible from the public street.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate",
+   "story": "Two stone gateposts stand next to this oak with nothing left between them to mark: they are what remains of the driveway to Port Natal, a psychiatric hospital built here in 1920 and replaced in 1990 by the Wilhelmina Ziekenhuis that occupies the site today. The oak predates all of it. The register's planting band puts it in the 1840s, when this was still the edge of an estate rather than a hospital ground, and the view across an English-style landscape garden from where it stands is, the register notes, still easy to picture.\n\nIt grows at the waterside, close by Beilerstraat, with a sound, unmarked trunk and a crown the register simply calls reasonable, no drama attached. What has changed around it several times over is what the tree stands next to: a country estate, an asylum, and now a hospital, each replacing the last while the oak kept growing.\n\nIt is visible from the public street along the former hospital grounds. If you know more of Port Natal's own history, or this oak's, tell us.",
+   "best_time": {
+    "months": [
+     10
+    ],
+    "kind": "fruit",
+    "label": "October, when the acorns come down by the water"
+   }
+  }
+ ]
+}
