@@ -3034,6 +3034,15 @@
     "note": "session work, not an agent pass: wrote 4 intro pages (2 species, 2 park) from scripts/pagegaps.py output, each from its own subject trees per P3. Also fixed a real bug found along the way: pagegaps.py PARKISH regex was a stale mirror of site/src/lib/parks.ts PARK_WORDS (missing the villa-with-trailing-space distinction and several words entirely), which had reported a phantom gap (Real Alcazar de Sevilla, matched only via villa inside Sevilla) and hidden two real ones (Leiden Hortus, Leeuwarden Prinsentuin). Fixed the regex, dropped the phantom park file, wrote the two real ones instead. Tokens not tracked for session work, logged as 0 per standing instruction.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "photo sweep (recheck)",
+    "kind": "photo",
+    "tokens": 0,
+    "trees": 0,
+    "note": "free API sweep, scripts/photo_hunt.py --recheck: 40 trees swept, queue now 1128 swept / 603 with at least one open-licence candidate. Never judged here per runner egress-block rule.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
