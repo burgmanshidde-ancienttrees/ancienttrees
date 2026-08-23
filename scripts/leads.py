@@ -75,6 +75,53 @@ HELD_MARKER = re.compile(
     r"\bHELD\b[\w\s-]{0,25}?\bon\b\s+(?:access|evidence|courtyard access|"
     r"the day-trip boundary|transport)\b", re.I)
 
+# A second shape of the same problem, found 2026-08-23: a verify or write pass
+# often declines a lead in its OWN words without ever setting `status` or using
+# the word HELD, and a mechanical reader (this file, or a future write pass
+# reading `leads.py --ready`) has no way to tell that apart from a lead nobody
+# has looked at yet. Vienna is the worked example: all 8 of its "READY" leads
+# that afternoon turned out to be candidates an earlier verify pass had
+# individually considered and declined (a live political dispute over the
+# tree's address, two trees planted in 1977/2016 and too young to be
+# remarkable, an unresolved access question, "off the Ring walk or a weaker
+# specimen than the six shipped this pass"), none of it recorded anywhere
+# `is_done()` or `HELD_MARKER` could see, because those phrases use neither
+# "resolved" nor "HELD... on". Rome's leads file uses a third, cleaner
+# convention for the same thing, a bracketed tag: "[SKIPPED 2026-08-14 by the
+# write pass]". Both are read here.
+#
+# This must NOT catch the one thing that looks similar and is a different
+# problem entirely: a lead held back only on COUNT ("held back on count
+# rather than merit", "ready to ship, held back only to avoid overshooting
+# the target") is a candidate CLAUDE.md explicitly says must ship regardless
+# ("being ninth in line is not a reason to hold a tree back"), and excluding
+# those from READY would be reintroducing the exact over-strictness the
+# fail-open design of this file exists to undo. Checked against the corpus
+# before being written: `not pursued`, `left unverified` and `left
+# undelivered` produced zero count/target/quota hits across every leads file
+# (the one near-miss, "one blog account", is the substring "count" inside
+# "account", not a real one), so the phrases below are safe as written. If a
+# future case combines one of these phrases with a count-based reason,
+# not_ready_marker() below checks the whole entry for a count word, not just
+# a short lookahead window, so a count-based justification anywhere in the
+# text keeps the lead in READY rather than mis-filing it.
+NOT_READY_MARKER = re.compile(
+    r"\[SKIPPED\b[^\]]*\]|\b(?:not pursued|left unverified|left undelivered)\b",
+    re.I)
+COUNT_DOCTRINE_WORDS = re.compile(r"\b(?:count|quota|target|overshoot)\b", re.I)
+
+
+def not_ready_marker(why):
+    """True when an earlier pass declined this lead in its own words.
+
+    Skips the whole thing if a count-doctrine word (count, quota, target,
+    overshoot) appears ANYWHERE in the text: CLAUDE.md is explicit that being
+    ninth in line, or any other count-based reason, must never hold a tree
+    back, so a lead whose only recorded objection is about count stays in
+    READY rather than being mis-filed as declined.
+    """
+    return bool(NOT_READY_MARKER.search(why)) and not COUNT_DOCTRINE_WORDS.search(why)
+
 
 # Found 2026-08-13 while writing a Munich batch: the DONE marker above only
 # catches a lead that SOMEONE remembered to annotate after shipping it. Munich's
@@ -203,6 +250,8 @@ def classify(entry, blocking):
     if HELD_MARKER.search(why_field):
         return {"label": "held by an earlier pass's own note (its status field was never updated)"}
     why = reason_text(entry)
+    if not_ready_marker(why):
+        return {"label": "an earlier pass looked at this and declined it in its own words (not a status field, not HELD... on)"}
     for rule in blocking:
         for pat in rule["patterns"]:
             if re.search(pat, why, re.I):
