@@ -6,7 +6,7 @@ import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, distLabel, type CityEntry, type Tree } from "../../lib/trees";
 import { haversineKm } from "../../lib/walks";
 import { speciesCommon } from "../../lib/species";
-import { parkKey } from "../../lib/parks";
+import { parkKey, groupTreesByPark, PARK_MIN_TREES } from "../../lib/parks";
 import { usablePhoto, imgSrcset, thumbUrl, creditRequired, metaImageUrls, ogImageUrl } from "../../lib/images";
 import { speciesIcon } from "../../lib/species-icons";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
@@ -42,8 +42,17 @@ export async function getStaticPaths() {
   // visitor standing on a tree in the Hortus could not reach the page about
   // the Hortus (Hidde, 2026-08-18: "dat je ook makkelijk kan doorklikken naar
   // de stad / land / park / species, dat lijkt me een hele logische").
+  // A park intro can outlive its page: a tree count can drop below
+  // PARK_MIN_TREES (Amsterdam's Hortus, 2026-08-23) while the intro file
+  // stays on disk, and this map must agree with parks/[slug].astro's own
+  // filter or a tree links to a park page that never builds.
   const parkIntros = await getCollection("parks");
-  const parkPages = new Map(parkIntros.map((i) => [`${i.data.city_slug} ${i.data.park}`, i.data]));
+  const parkGroups = groupTreesByPark(allCities);
+  const parkPages = new Map(
+    parkIntros
+      .filter((i) => (parkGroups.get(`${i.data.city_slug} ${i.data.park}`)?.trees.length ?? 0) >= PARK_MIN_TREES)
+      .map((i) => [`${i.data.city_slug} ${i.data.park}`, i.data]),
+  );
 
   const paths: { params: { city: string; tree: string }; props: any }[] = [];
   for (const city of allCities) {
