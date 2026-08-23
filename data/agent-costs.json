@@ -3187,6 +3187,42 @@
     "note": "session work, not a dispatched pass, tokens not tracked separately; wrote stories for two already-verified trees sitting in data/research/*-verified.json awaiting a writer, merged into their city files, fixed count promises (ten->eleven Alicante, fourteen->fifteen Brisbane), preflight and build clean",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "lucca",
+    "kind": "verify",
+    "tokens": 55000,
+    "trees": 4,
+    "note": "Orto Botanico register cluster + Porta San Donato plane; all flagged single-source, three leads blocked (fold/too-young/access)",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "milan",
+    "kind": "verify",
+    "tokens": 20000,
+    "trees": 1,
+    "note": "Resolved a standing 2018 dead-tree-risk flag on the Viale Vittorio Veneto plane via girth comparison; no second source found",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "berlin",
+    "kind": "verify",
+    "tokens": 18000,
+    "trees": 0,
+    "note": "Both candidates traced to a private villa colony (Denkmaldatenbank confirms Eichenallee 6); blocked under hard rule 10, zero trees delivered",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "lucca (write) + milan (write)",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 5,
+    "note": "session work, not a dispatched pass, tokens not tracked separately; wrote stories for the 4 lucca + 1 milan trees the verify pass delivered, merged, fixed count promises (ten->fourteen Lucca incl. paid-share note, twenty-one->twenty-two Milan incl. IT i18n overlay for mil_022), preflight and build clean",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

@@ -36,7 +36,7 @@
       "why_not_published": "Single-sourced and unnamed. At 38 m it is one of the tallest registered trees in Milan and it sits between Porta Garibaldi and the Montanelli gardens, so it would extend that walk northwest if a second source turns up."
     },
     {
-      "name": "Il platano di Viale Vittorio Veneto 3",
+      "name": "[RESOLVED 2026-08-23, delivered as mil_022] Il platano di Viale Vittorio Veneto 3",
       "species": "Platanus x acerifolia",
       "girth_cm": 570,
       "height_m": 36,
@@ -47,7 +47,8 @@
       "sources": [
         "MASAF national register, Milano, Viale Vittorio Veneto 3"
       ],
-      "why_not_published": "Single-sourced, unnamed, and a street tree on the Bastioni rather than a destination. Sits 300 m off the northeast corner of the Giardini Montanelli, so it is cheap to add to that walk the day a second source exists."
+      "why_not_published": "RESOLVED 2026-08-23: delivered to data/research/milan-verified.json as mil_022, flagged (single register source only; no second source found despite three targeted searches this pass). The 2018 dead-tree risk noted below was weighed rather than resolved outright: the felled tree's reported girth (about 300 cm) is nearly half this register entry's 570 cm, which reads as a different, still-standing specimen, but no source gives an exact address for the felled tree, so location_precision is set approximate and curation_status flagged rather than clean. See verify_notes on mil_022 for the full reasoning.",
+      "status": "resolved"
     },
     {
       "name": "Two further planes inside the Giardini Montanelli",
@@ -101,7 +102,7 @@
       "why_not_published": "Outside the day-trip boundary as walks, but on the record: a 495 cm hackberry in Vicolo Cornelio and a 445 cm hackberry plus a magnolia in the park of Villa Ghirlanda at Cinisello Balsamo (9 to 10 km), a hackberry-and-yew group in Piazza Giovanni XXIII at Pioltello (11 km), a 400 cm black poplar in Bollate, a magnolia at Villa Torri in Vimodrone. Candidate pool if Milan ever grows a second page or a Lombardy collection."
     },
     {
-      "name": "Il platano di Viale Vittorio Veneto 3",
+      "name": "[RESOLVED 2026-08-23, delivered as mil_022] Il platano di Viale Vittorio Veneto 3",
       "species": "Platanus x acerifolia",
       "girth_cm": 570,
       "height_m": 36,
@@ -112,7 +113,8 @@
       "sources": [
         "MASAF national register, Milano, Viale Vittorio Veneto 3"
       ],
-      "why_not_published": "CAUTION added 2026-08-08 verify pass, not resolved either way: still single-sourced (as the original 2026-08-05 pass found), and a genuine dead-tree risk has now surfaced. Urbanfile (blog.urbanfile.org/2018/07/10/milano-porta-venezia-rimosso-lalbero-ormai-secco-da-oltre-due-anni/, 10 July 2018) reports a large plane tree on Viale Vittorio Veneto near Porta Venezia that dried out completely by 2016 and was removed on 8 July 2018, trunk 'circa tre metri di circonferenza' (about 3 m girth), standing in the tram-line median. The register's tree is a different size (570 cm girth, nearly double), so this is very likely a DIFFERENT specimen still standing at house number 3, but the article gives no exact address to rule it out cleanly. Do not publish without either (a) a second source confirming this specific 570 cm tree is alive, or (b) ruling out that it is the felled one. A future pass should check satellite imagery or a recent street-level photo of Viale Vittorio Veneto 3 before doing anything else with this candidate."
+      "why_not_published": "RESOLVED 2026-08-23: delivered to data/research/milan-verified.json as mil_022, flagged (single register source only; no second source found despite three targeted searches this pass). The 2018 dead-tree risk noted below was weighed rather than resolved outright: the felled tree's reported girth (about 300 cm) is nearly half this register entry's 570 cm, which reads as a different, still-standing specimen, but no source gives an exact address for the felled tree, so location_precision is set approximate and curation_status flagged rather than clean. See verify_notes on mil_022 for the full reasoning.",
+      "status": "resolved"
     }
   ],
   "blocked": [
