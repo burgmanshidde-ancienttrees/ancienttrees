@@ -2718,3 +2718,52 @@ candidate) both turned up for Cork itself but sit 35-40 minutes' drive out,
 past the roughly-30-minute day-trip boundary, so they were left unshipped in
 `data/leads/cork.json` rather than stretched to fit.
 
+## Norway: found and reachable, stalled on per-tree description (2026-08-23)
+
+`scout_next.py --target` moved to Oslo next (#64, published at 4 trees, the
+floor). Norway has a genuine national layer for individually protected
+natural monuments, "naturminne", inside Miljødirektoratet's `vern` ArcGIS
+service:
+
+- Service root: `kart.miljodirektoratet.no/arcgis/rest/services/vern/mapserver`
+  (layer 0, `naturvern_omrade`, polygons, field `verneform`).
+- Query for individual monuments: `.../0/query?where=verneform='Naturminne'`,
+  236 nationally, 18 in Oslo commune (`kommune LIKE 'Oslo%'`). Ask for
+  `outSR=4326` and the geometry comes back as WGS84 already, no Irish-Grid-style
+  conversion needed.
+- Licence: **NLOD** (Norwegian Licence for Open Data), stated on the
+  data.norge.no listing for the parent "Naturvernomrader" dataset, permissive
+  and attribution-based, the OGL/CC-BY equivalent.
+- **Naturminne is a mixed bag, trees plus geological and other features**, so
+  it needs the same per-entry judgement as any register: Oslo's 18 include
+  clear tree addresses (`Rolf E. Stenersens allé 48`, `Drammensveien 106`,
+  `Eventyrveien 16`) alongside things that read as headlands, skerries and a
+  jetty (`Huk`, `Killingen`, `Malmøya brygge`). The `navn` field's
+  street-address pattern is a strong tell for the tree entries, same
+  fingerprint as the Dutch LRMB register, but not proof on its own.
+
+**What stopped a full import: no species or description field anywhere in
+the map service, and no swagger/API listing found for the separate document
+API that exists behind it.** Each record's `faktaark` URL
+(`faktaark.naturbase.no/?id=<VV-id>`) is a JS single-page app WebFetch cannot
+render. Reverse-engineered its network calls to
+`felles.naturbase.no/api/dokument?objektId=<VV-id>`, which returns attached
+photos and documents but not a text description; for VV00002163 (the
+Stenersens allé site) it surfaced two tree photos from 2007 AND a documented
+warning worth having found before shipping anything blind: a linked Google
+Street View note says only the stump remains of the "easternmost tree",
+i.e. one of the two trees this naturminne protects is already dead. No
+species field, no protection-decision text (`verneforskrift` was null on
+this record), and no other endpoint tried (`beskrivelse`, `vernevedtak`,
+`naturminne`, `objekt`) resolved.
+
+**Verdict: stalled, not empty.** The register exists, is licensed for use
+and the geometry needs no conversion, which makes it worth returning to
+rather than abandoning. What is missing is species per tree, which the next
+attempt should get one of two ways: read the `verneforskrift` PDF where one
+exists (most records probably carry one; this specific record happened not
+to), or treat each Oslo `naturminne` address as a lead and verify species and
+condition the normal from-zero way, the dokument API's photos as a
+first check on whether the tree is even still alive before spending time on
+it.
+
