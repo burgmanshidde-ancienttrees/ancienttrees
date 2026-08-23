@@ -102,6 +102,16 @@ const PROMISE: PromisePattern[] = [
     allowed: (n) => new Set([n]),
     scope: ALL_COPY,
   },
+  // "Thirty trees in all." An intro closer this check never covered: The
+  // Hague went 21 to 30 with meta_description, question_meta and the FAQ
+  // all correctly updated, and this exact sentence, the last line before the
+  // tree list, left at the old count (REVIEW.md 2026-08-23 BLOCKER). "In
+  // all" only ever means the whole city's count, so no extra anchor needed.
+  {
+    rx: new RegExp(`${NOT_MID_WORD}(${N})\\s+trees?\\s+in\\s+all\\b`, "gi"),
+    allowed: (n) => new Set([n]),
+    scope: ALL_COPY,
+  },
 ];
 
 interface CountPromiseCity {
