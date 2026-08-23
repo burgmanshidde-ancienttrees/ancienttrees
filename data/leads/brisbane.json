@@ -1,30 +1,6 @@
 {
   "leads": [
     {
-      "name": "Silky Oak (City Botanic Gardens)",
-      "species": "Silky Oak (Grevillea robusta)",
-      "location": {"latitude": null, "longitude": null, "neighbourhood": "City Botanic Gardens, between the pond and the Morning Star sculpture"},
-      "why_not_verified": "National Trust database only (trusttrees.org.au/tree/QLD/Brisbane/Brisbane_City_Botanic_Gardens_Alice_Street_2): roughly 100 years old, 32m tall, single specimen, described as the largest of Australia's grevilleas with orange racemes. No second independent source found this pass (Wikipedia's City Botanic Gardens article does not mention it by name). A real candidate for a future pass with more time to search for a second source or dated photo."
-    },
-    {
-      "name": "Hoop Pine (City Botanic Gardens)",
-      "species": "Hoop Pine (Araucaria cunninghamii)",
-      "location": {"latitude": null, "longitude": null, "neighbourhood": "City Botanic Gardens, inside the George Street fence near QUT Gardens Point"},
-      "why_not_verified": "National Trust database only (Alice_Street_27): roughly 60-72 years old (measured 2014), 33m tall. Single source, no second corroboration found this pass."
-    },
-    {
-      "name": "Big-leaf Mahogany (City Botanic Gardens, second specimen)",
-      "species": "Big-leaf Mahogany (Swietenia macrophylla)",
-      "location": {"latitude": null, "longitude": null, "neighbourhood": "City Botanic Gardens, left of the path near the Alice Street entrance"},
-      "why_not_verified": "A second, distinct mahogany specimen (Alice_Street_10), planted 1869, roughly 157 years old, 22m tall. Not pursued this pass because the older Swietenia mahagoni (planted 1861, delivered this pass as bne_010) was chosen instead and two mahogany entries in one small pass seemed redundant; this one is a different species and could still stand on its own with a second source."
-    },
-    {
-      "name": "Black Bean / Moreton Bay Chestnut (City Botanic Gardens)",
-      "species": "Black Bean (Castanospermum australe)",
-      "location": {"latitude": null, "longitude": null, "neighbourhood": "City Botanic Gardens, northern edge of the rainforest section"},
-      "why_not_verified": "National Trust database only (Alice_Street_3): roughly 70 years old, 22m tall, 1m diameter. Single source, comparatively modest age; a nice story (its timber carved the 1951 Speaker's Chair gift to the British House of Commons) but not remarkable enough on its own evidence this pass to prioritise over stronger candidates."
-    },
-    {
       "name": "Kauri Pine (City Botanic Gardens)",
       "species": "Kauri Pine (Agathis robusta)",
       "location": {"latitude": null, "longitude": null, "neighbourhood": "City Botanic Gardens, south east of the formal flower garden"},
@@ -55,5 +31,5 @@
       "reason": "Not a single collectible point. Row of roughly 18 mature Bunya Pines planted by Walter Hill 1858-1867, skirting several hundred metres of the eastern river walk from inside the Edward Street entrance. Well documented (National Trust database: trusttrees.org.au/tree/QLD/Brisbane/Brisbane_City_Botanic_Gardens_Alice_Street_8; State Library of Queensland blog; Wikipedia calls it explicitly 'an avenue of bunya pines') but per the verify-pass rule an avenue is blocked regardless of fame or documentation quality. If a single standout specimen within the row is ever individually distinguished by a source (e.g. the largest or first-planted), it could be lifted out as its own entry."
     }
   ],
-  "note": "Brisbane City Council's 558-record significant/landscape tree overlay (data/registers/brisbane-significant-landscape-trees.json) carries NO species, name, age or vitality field, only a designation polygon centroid; it does not by itself clear the two-source bar for any tree and none of it was directly usable this pass without a named tree to match it to. Checked distance from each of the 8 verified City Botanic Gardens/Eagle Street trees to the nearest of the 558 overlay points: nearest was 520m (Eagle Street Fig Trees) and 535-745m for the Botanic Gardens trees, i.e. none of the overlay's individually-designated points sit close enough to plausibly be the same tree, so the overlay was not cited as a source for any of the 8. A future pass with more time could try to match named significant trees elsewhere in Brisbane (New Farm Park, Roma Street Parkland, Mount Coot-tha Botanic Gardens, university campuses) against the overlay's remaining ~550 unmatched points to grow a second cluster; this pass stayed inside the single City Botanic Gardens / Eagle Street cluster (max pairwise distance 1.12km) per the brief's preference for a dense walkable cluster over scattered candidates."
+  "note": "Brisbane City Council's 558-record significant/landscape tree overlay (data/registers/brisbane-significant-landscape-trees.json) carries NO species, name, age or vitality field, only a designation polygon centroid; it does not by itself clear the two-source bar for any tree and none of it was directly usable this pass without a named tree to match it to. Checked distance from each of the 8 verified City Botanic Gardens/Eagle Street trees to the nearest of the 558 overlay points: nearest was 520m (Eagle Street Fig Trees) and 535-745m for the Botanic Gardens trees, i.e. none of the overlay's individually-designated points sit close enough to plausibly be the same tree, so the overlay was not cited as a source for any of the 8. A future pass with more time could try to match named significant trees elsewhere in Brisbane (New Farm Park, Roma Street Parkland, Mount Coot-tha Botanic Gardens, university campuses) against the overlay's remaining ~550 unmatched points to grow a second cluster; this pass stayed inside the single City Botanic Gardens / Eagle Street cluster (max pairwise distance 1.12km) per the brief's preference for a dense walkable cluster over scattered candidates.\n\n2026-08-23 DEEPEN PASS UPDATE: the 4 priority candidates (Silky Oak, Hoop Pine, second Big-leaf Mahogany, Black Bean) were pursued this pass and delivered to data/research/brisbane-verified.json as bne_012 through bne_015, each with National Trust's own plotted tree-level coordinates (confirmed precision) and girth derived from the register's diameter field. None cleared the two-independent-source bar: an extensive second-source search (Wikipedia's City Botanic Gardens and Brisbane City Botanic Gardens articles, the SLQ blog on the NT Significant Tree app, brisbanebotanictreasures.info live and via Wayback across three of its sub-pages, the National Register of Big Trees, and nearby iNaturalist observations for each species) found nothing naming any of the four specific trees. Delivered anyway per the project's single-source rule, each with curation_status flagged and a verify_notes explanation. brisbanebotanictreasures.info now hangs completely on a live fetch (curl -m 15 times out connecting to the bare domain root, 202.37.74.45); added to data/fetch-blocklist.json. The Black Bean's 1951 Speaker's Chair anecdote (flagged in the original lead as worth confirming) does NOT hold for this specific tree: it was only about 7 years old in 1951, per its own recorded ~1944 planting date, so it could not have supplied the carving timber; National Trust's text describes the species/historical gift generally, not this specimen. The Kauri Pine and Anzac Pines leads below were not revisited this pass (out of the 4-candidate budget) and remain open."
 }
