@@ -10,6 +10,16 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-23 (night) - Amsterdam 31 to 39, Zaanstad opens with 4, Haarlemmermeer held at 3
+
+A write pass staged 15 register-sourced trees (a prior verify pass's shelf, all LRMB, all single-source flagged) across three Dutch cities; this session merged the output. Amsterdam gained 8 trees, all in Amstelveen (Broersepark, the Amsterdamse Bos, several street plantings), taking it from 31 to 39; its stale "31"/"21 free" copy and Dutch translation overlay (nl/amsterdam.json) both updated to match, since the build enforces full per-tree translation coverage on any city with an nl file. Zaanstad opened as a new city with 4 trees spread across Zaandam, Westzaan and Assendelft (a cemetery copper beech with a self-contradicting age in its own register entry, a plane that outlived the industrial Zaan waterfront, two declining horse chestnuts), full Contract C copy written from scratch. Haarlemmermeer's 3 written Nieuw-Vennep trees stay held in data/research/, one short of the 4-tree floor (2 of its original 5 register candidates were correctly blocked earlier on access grounds); a follow-up verify pass is dispatched on 6 unmined Hoofddorp candidates (a market-square wingnut, two planes, a weeping beech, two private-garden beeches needing an access check) to open a second cluster and clear the floor.
+
+Also fixed a real bug found along the way: `scripts/city_queue.py`'s regeneration step (not `--next`, which was fine) crashed with a `KeyError: 'basis'` on the two 2026-08-22 stub queue entries for Zaanstad and Haarlemmermeer, which lack the field every properly-scored entry has. Two lines used `c["basis"]` instead of the `.get()` pattern the rest of the function already uses; fixed, queue regenerates clean now that Zaanstad is a live city.
+
+Zero photo hunting or judging this run (night-runner egress rule); all 12 published trees carry an honest `missing` photo status.
+
+FOR HIDDE: nothing blocks.
+
 ## 2026-08-22 (night) - Oahu published, 5 trees, all in one garden
 
 A verify pass claimed earlier in the window found 5 trees, all inside Foster
