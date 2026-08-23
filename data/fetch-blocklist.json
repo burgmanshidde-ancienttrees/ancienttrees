@@ -229,6 +229,12 @@
    "seen": "2026-08-23",
    "cost": "one 15s timeout during a Dubai register scouting attempt, no content returned",
    "workaround": "unknown this pass; not retried within the same window"
+  },
+  "brisbanebotanictreasures.info": {
+   "behaviour": "hangs, no response at all (curl -m 15, exit 28, connection timed out) even to the bare domain root, not just specific pages; the same domain was fetchable enough to serve as a bne_010 source in an earlier pass",
+   "seen": "2026-08-23",
+   "cost": "one 15s timeout during a Brisbane deepen verify pass, plus a live-fetch check on the bare root",
+   "workaround": "Wayback Machine snapshots load fine via curl with a browser user agent (e.g. web.archive.org/web/20250426212328/https://brisbanebotanictreasures.info/exploring-brisbane-city-botanic-gardens/brisbane-city-botanic-gardens-description/); use the archive.org/wayback/available API to find the closest snapshot per page first"
   }
  }
 }

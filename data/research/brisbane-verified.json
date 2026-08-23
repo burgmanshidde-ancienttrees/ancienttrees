@@ -1,0 +1,94 @@
+[
+  {
+    "id": "bne_012",
+    "name": "The Silky Oak",
+    "species": "Silky Oak (Grevillea robusta)",
+    "age_estimate": "roughly 110 years",
+    "age_min": 90,
+    "age_max": 130,
+    "girth_cm": 220,
+    "location": {
+      "address": "City Botanic Gardens, between the pond and the Morning Star sculpture, Alice Street, Brisbane City QLD 4000",
+      "latitude": -27.4746366156,
+      "longitude": 153.028687157,
+      "neighbourhood": "City Botanic Gardens"
+    },
+    "verified_sources": [
+      "https://www.trusttrees.org.au/tree/QLD/Brisbane/Brisbane_City_Botanic_Gardens_Alice_Street_2"
+    ],
+    "access": "Free, City Botanic Gardens is a public park open daily during daylight hours",
+    "transport": "Short walk from Central Station (about 10 minutes) or the QUT Gardens Point ferry terminal (about 5 minutes)",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "SINGLE SOURCE ONLY: National Trust of Australia Significant Tree Register (trusttrees.org.au), fetched directly (not a search summary). Age (approx) 100 yrs recorded at date of measurement 14 Feb 2014; classified 8 Apr 2014; +12 years to today gives roughly 110-112, kept as a broad band since the source figure was itself only approximate. Diameter recorded as 0.7m; girth_cm derived as diameter x pi = 220cm (record as diameter-derived, not a direct circumference reading). Height 32m, condition 'Good' at 2014 measurement, access unrestricted. NT's own text: 'the largest of Australia's grevilleas', 'impressive size and orange racemes', located 'in the north east part of the garden, between the pond and the Morning Star sculpture.' Coordinates are NT's own plotted map marker (addMarker in the page's embedded JS), which is tree-level, not park-level, hence confirmed precision. Tried and failed to find a second independent source this pass: en.wikipedia.org/wiki/City_Botanic_Gardens and /wiki/Brisbane_City_Botanic_Gardens (no individual tree mentions beyond avenue plantings and the macadamia/banyan), the SLQ blog on the NT Significant Tree app launch (published 2014-08-04, does not name this tree), brisbanebotanictreasures.info (site now hangs entirely on live fetch, exit 28/connection timed out on the bare domain root as well as the specific description/collections/landscape pages; checked via Wayback snapshots of its 'description', 'botanical-collections' and 'landscape-design' pages too, none name a Silky Oak), and the National Register of Big Trees (nationalregisterofbigtrees.com.au has 5 other Grevillea robusta entries nationally, none in Brisbane). One iNaturalist observation of Grevillea robusta roughly 165m away (casual grade, 2019-10-19, https://www.inaturalist.org/observations/34676462) supports the species growing somewhere in the gardens but is not close enough to confirm it is this specific specimen. No evidence found of death, removal or decline since 2014; also no reconfirmation since 2014. Flagged for the single source and the 12-year-old last confirmation, not for any doubt about the underlying facts."
+  },
+  {
+    "id": "bne_013",
+    "name": "The Hoop Pine",
+    "species": "Hoop Pine (Araucaria cunninghamii)",
+    "age_estimate": "roughly 70-75 years",
+    "age_min": 60,
+    "age_max": 85,
+    "girth_cm": 314,
+    "location": {
+      "address": "City Botanic Gardens, inside the George Street fence roughly halfway along, adjacent to QUT Gardens Point, Brisbane City QLD 4000",
+      "latitude": -27.4761435481,
+      "longitude": 153.028938615,
+      "neighbourhood": "City Botanic Gardens"
+    },
+    "verified_sources": [
+      "https://www.trusttrees.org.au/tree/QLD/Brisbane/Brisbane_City_Botanic_Gardens_Alice_Street_27"
+    ],
+    "access": "Free, City Botanic Gardens is a public park open daily during daylight hours",
+    "transport": "Short walk from Central Station (about 10 minutes) or the QUT Gardens Point ferry terminal (about 5 minutes)",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "SINGLE SOURCE ONLY: National Trust of Australia Significant Tree Register, fetched directly. Age (approx) 60 yrs at date of measurement 31 Jan 2014; +12 years gives roughly 72, kept as a band (60-85) since the source figure was already approximate. Diameter 1m; girth_cm derived as diameter x pi = 314cm. Height 33m, condition 'Good' at 2014 measurement. Notably RECLASSIFIED 27 Feb 2023 (the only one of the four candidates this pass with any post-2014 register activity), which is meaningful evidence the tree was still standing and worth listing as recently as 2023, stronger 'alive now' evidence than the other three trees delivered this pass. NT's own text: 'in a prominent position on elevated ground', 'located about half way along, and just inside, the gardens' fence on George Street, adjacent to the Gardens Point University of Technology.' Coordinates are NT's own plotted map marker, tree-level. Same second-source search as the Silky Oak (Wikipedia articles, SLQ blog, brisbanebotanictreasures.info live and Wayback, National Register of Big Trees which has 8 other Araucaria cunninghamii entries nationally but none in Brisbane) found nothing naming this specific tree. Two iNaturalist Araucaria cunninghamii observations within roughly 150m (casual grade, 2024-10-23 and 2025-02-23) support the species growing in that part of the gardens but do not confirm this exact specimen. Flagged for the single source, not for any doubt about the facts."
+  },
+  {
+    "id": "bne_014",
+    "name": "The Big-leaf Mahogany",
+    "species": "Big-leaf Mahogany (Swietenia macrophylla)",
+    "age_estimate": "roughly 157 years (planted 1869)",
+    "age_min": 155,
+    "age_max": 160,
+    "girth_cm": 314,
+    "location": {
+      "address": "City Botanic Gardens, left of the path near the Alice Street entrance, Brisbane City QLD 4000",
+      "latitude": -27.474251699,
+      "longitude": 153.029554182,
+      "neighbourhood": "City Botanic Gardens"
+    },
+    "verified_sources": [
+      "https://www.trusttrees.org.au/tree/QLD/Brisbane/Brisbane_City_Botanic_Gardens_Alice_Street_10"
+    ],
+    "access": "Free, City Botanic Gardens is a public park open daily during daylight hours",
+    "transport": "Short walk from Central Station (about 10 minutes) or the QUT Gardens Point ferry terminal (about 5 minutes)",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "SINGLE SOURCE ONLY: National Trust of Australia Significant Tree Register, fetched directly. Age is a DOCUMENTED PLANTING DATE, not a growth-rate estimate: NT's Statement of Significance says 'Planted in 1869 at the time of Walter Hill's curatorship', giving roughly 157 years as of 2026 (tighter band than a derived estimate because the date is stated, not calculated from girth). Diameter 1m; girth_cm derived as diameter x pi = 314cm. Height 22m, condition 'Good' at 2014 measurement, classified 8 Apr 2014. IMPORTANT: this is a DISTINCT specimen from bne_010 'The Mahogany of Commerce' already published (Swietenia mahagoni, a different species, planted 1861, standing in the centre of the rainforest section at -27.4777117,153.0312098, roughly 400m from this tree). This one is Swietenia macrophylla, standing 'to the left of the path, near the Alice Street entrance' at the coordinates above, per NT's own plotted map marker (tree-level). NT associates it with Walter Hill and says it is 'situated to be prominently seen as a visitor walks through the main garden entrance.' Same second-source search as the other three candidates (Wikipedia, SLQ blog, brisbanebotanictreasures.info live/Wayback, National Register of Big Trees which has no Swietenia macrophylla entries at all) found nothing. No iNaturalist Swietenia macrophylla observations within 200m. Flagged for the single source, not for any doubt about the facts."
+  },
+  {
+    "id": "bne_015",
+    "name": "The Black Bean",
+    "species": "Black Bean (Castanospermum australe)",
+    "age_estimate": "roughly 80 years",
+    "age_min": 65,
+    "age_max": 90,
+    "girth_cm": 314,
+    "location": {
+      "address": "City Botanic Gardens, northern edge of the rainforest section, Brisbane City QLD 4000",
+      "latitude": -27.4772643641,
+      "longitude": 153.031348579,
+      "neighbourhood": "City Botanic Gardens"
+    },
+    "verified_sources": [
+      "https://www.trusttrees.org.au/tree/QLD/Brisbane/Brisbane_City_Botanic_Gardens_Alice_Street_3"
+    ],
+    "access": "Free, City Botanic Gardens is a public park open daily during daylight hours",
+    "transport": "Short walk from Central Station (about 10 minutes) or the QUT Gardens Point ferry terminal (about 5 minutes)",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "SINGLE SOURCE ONLY: National Trust of Australia Significant Tree Register, fetched directly. Age (approx) 70 yrs at date of measurement 14 Feb 2014 (implying planted roughly 1944); +12 years gives roughly 80-82, kept as a band. Diameter 1m; girth_cm derived as diameter x pi = 314cm. Height 22m, condition 'Good' at 2014 measurement. BRIDGE-CLAIM WARNING FOR THE WRITER: NT's Statement of Significance mentions that when the Speaker's Chair in the British House of Commons was destroyed in a 1941 air raid, the Australian government gifted a replacement in 1951 carved from black bean timber, 'The Gift of Australia'. This is true of the SPECIES/the historical gift generally, per NT's own text about black bean timber, but NT does NOT say this specific tree's wood was used, and it could not have been: this tree was only planted around 1944 (roughly 70 years old at the 2014 measurement), so it was about 7 years old in 1951, far too young to have supplied carving timber. The leads file flagged this anecdote as worth confirming independently; it does NOT hold up for THIS tree and must not be written as if it does. It may be told honestly as context about the species/the wider historical gift, never as this tree's own story. Same second-source search as the other three candidates found nothing naming this specific tree; no iNaturalist Castanospermum australe observations closer than roughly 200m to this pin (three found within radius, closest 130-160m, casual/research grade, not close enough to confirm this exact specimen). Flagged for the single source, not for any doubt about the underlying facts."
+  }
+]
