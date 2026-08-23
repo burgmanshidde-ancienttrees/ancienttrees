@@ -3160,6 +3160,24 @@
     "note": "session work: rung 2, deploy was failing (QA: dead internal link to /parks/hortus-botanicus-amsterdam from 2 Amsterdam tree pages). Root cause: Hidde pulled Amsterdam to 34 trees, dropping Hortus Botanicus below PARK_MIN_TREES (5), so parks/[slug].astro stopped generating that page, but [tree].astro built its parkPages map straight from the parks content collection with no matching filter, so two tree pages still linked to the now-missing page. Filtered parkPages the same way the park page itself is filtered. Verified: npm run build + qa.py clean (only the known shallow-clone sitemap-lastmod false positive remains), preflight.py 0 problems, superlatives.py clean. Tokens not tracked for session work, logged as 0 per standing instruction.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "alicante",
+    "kind": "verify",
+    "tokens": 165000,
+    "trees": 0,
+    "note": "register fully mined within 2km (0 new candidates, independently re-confirmed); found 1 new tree (Paseito de Ramiro fig pair) via the city own tree-walk brochure, a source outside the register; 1 new lead (Calvo Sotelo araucaria) blocked on single-source only",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "brisbane",
+    "kind": "verify",
+    "tokens": 145000,
+    "trees": 0,
+    "note": "1 new standalone tree verified (Newstead House fig) outside the exhausted Botanic Gardens cluster; 2 promising leads recorded (Manly West Bunya Tree, Toowong Cemetery hoop pine) needing a second source or a distance judgement call",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
