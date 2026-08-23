@@ -3304,6 +3304,15 @@
     "note": "sole READY lead (Yuryu-matsu / Reclining Dragon Pine register hit) confirmed as the same tree as the already-published kyo_001 (coordinates ~15-20m apart, same species, same monument), a duplicate an earlier pass had already suspected but left with no status field so leads.py kept offering it as READY. Marked duplicate. Zero new trees, avoided a wasted verify pass.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "cordoba",
+    "kind": "verify+write",
+    "tokens": 0,
+    "trees": 1,
+    "note": "session work, not a dispatched pass. The one READY lead (Stone Pine of Santa Maria de Trassierra) was genuine, not a duplicate, but its own municipal-catalogue PDF source (51MB, image-heavy) could not be re-fetched in this environment, so girth/height/age figures were carried forward from an earlier pass's reading rather than freshly re-verified; shipped flagged and approximate. No count-promise fixes needed (city copy has no city-wide tree count in prose). preflight and build clean.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

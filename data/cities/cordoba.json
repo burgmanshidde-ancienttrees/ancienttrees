@@ -514,6 +514,37 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "cdb_018",
+      "name": "The Stone Pine of Santa Maria de Trassierra",
+      "species": "Stone Pine (Pinus pinea)",
+      "age_estimate": "roughly 90 years",
+      "age_min": 80,
+      "age_max": 100,
+      "girth_cm": 326,
+      "height_m": 25,
+      "location": {
+        "address": "Santa Maria de Trassierra, Cordoba",
+        "latitude": 37.929984,
+        "longitude": -4.893739,
+        "neighbourhood": "Santa Maria de Trassierra, Sierra de Cordoba"
+      },
+      "verified_sources": [
+        "Ayuntamiento de Cordoba, 'Arboles Singulares de la Ciudad de Cordoba' (cordoba.es/servicios/medio-ambiente/arboles-singulares-de-la-ciudad-de-cordoba), the city's own catalogue of singular trees"
+      ],
+      "access": "Standing in the small village of Santa Maria de Trassierra, in the Sierra de Cordoba above the city. Included in the municipality's own singular-tree catalogue, which generally covers accessible specimens, but this pass could not independently confirm the exact street-level setting (square, street or institutional grounds) beyond the catalogue's coordinate, so treat the setting as likely public but not individually verified.",
+      "transport": "Reachable by Aucorsa bus line L-T from central Cordoba in about 19 minutes, but the line runs only about five services a day, which strains the day-trip boundary; check the timetable before planning a visit around it.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Santa Maria de Trassierra is a village in the hills above Cordoba, and this stone pine is one of the specimens the city's own catalogue of singular trees reaches out beyond the city walls to include. Three metres twenty six round, twenty five metres tall, and estimated at about ninety years old, it is younger than most trees on this list but old enough, and large enough, to have earned its own entry in an official register that mostly protects far older specimens.\n\nPinus pinea is the pine that shapes half of Mediterranean Spain's skyline, its flat, umbrella-shaped crown grown for shade and for the pine nuts inside its cones, both of which took centuries of selective planting to produce the tree people now picture as wild. A tree this size at this age has grown fast even by the species' own standards, likely helped by open ground and full sun in a small village rather than competition in a planted stand.\n\nReaching it from central Cordoba means the Aucorsa L-T bus, about nineteen minutes, but the line runs only a handful of times a day, so check the timetable before building a trip around it. Nobody has published a closer account of exactly where in the village it stands. If you have seen it, tell us.",
+      "verify_notes": "Girth (3.26m), height (25m) and age (roughly 90 years) come from an earlier pass's reading of the Ayuntamiento de Cordoba's own singular-trees catalogue PDF; this pass could not re-fetch the source directly (the PDF is 51MB, image-heavy, no OCR tooling available in this environment) so the figures are carried forward rather than freshly re-verified, and the entry ships flagged and single-sourced. No second independent source found in a targeted search this pass (a 'Calle El Pino' street name in the same village hints the tree may be a known local landmark, but that is circumstantial, not a citable second source). Coordinates are the catalogue's own point; access/setting could not be confirmed beyond that, so location_precision is approximate rather than confirmed.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ],
   "oldest_tree_id": "cdb_001"
