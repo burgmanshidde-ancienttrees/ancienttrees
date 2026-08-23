@@ -2998,6 +2998,15 @@
     "note": "free API sweep, scripts/photo_hunt.py --recheck: 40 trees swept, several with new open-licence candidates queued for a future viewing session (never judged here per runner egress-block rule)",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "Tenerife (Santa Cruz register import)",
+    "kind": "scout",
+    "tokens": 0,
+    "trees": 0,
+    "note": "imported the already-scouted (2026-08-17) Santa Cruz de Tenreife arboles-singulares dataset into data/registers/, licence re-verified by direct fetch; cluster_register.py found 60 of 63 in one 2.6km walkable cluster. No trees published yet, still needs a verify pass (age/species per tree, no age/girth/vitality in the source)",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
