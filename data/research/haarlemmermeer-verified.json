@@ -1,7 +1,7 @@
 [
  {
   "id": "hrl_001",
-  "name": null,
+  "name": "The Horse Chestnut of the Waterwolf",
   "species": "Horse Chestnut (Aesculus hippocastanum)",
   "age_estimate": "roughly 110 years, from a registered planting date around 1920",
   "age_min": 106,
@@ -36,7 +36,7 @@
  },
  {
   "id": "hrl_003",
-  "name": null,
+  "name": "The Surviving Ash of the Hoofdweg",
   "species": "European Ash (Fraxinus excelsior)",
   "age_estimate": "roughly 100 years, from a registered planting date around 1930",
   "age_min": 96,
@@ -64,7 +64,7 @@
  },
  {
   "id": "hrl_004",
-  "name": null,
+  "name": "The Maple of the Nieuw-Vennep Church",
   "species": "Norway Maple (Acer platanoides)",
   "age_estimate": "roughly 90 years, from a registered planting date around 1940",
   "age_min": 86,
@@ -81,6 +81,158 @@
   ],
   "access": "Free, in the grounds of the church, open in daylight.",
   "transport": null,
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  },
+  "curation_status": "flagged",
+  "location_precision": "approximate",
+  "best_time": {
+   "months": [
+    4
+   ],
+   "kind": "flowers",
+   "label": "April, before the leaves open, when clusters of yellow-green flowers cover the crown"
+  }
+ },
+ {
+  "id": "hrl_006",
+  "name": "The Wingnut of the Hoofddorp Market",
+  "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+  "age_estimate": "roughly 90 years, from a registered planting date around 1935",
+  "age_min": 86,
+  "age_max": 96,
+  "location": {
+   "address": "Markt, in front of the market hall, Hoofddorp",
+   "latitude": 52.304355,
+   "longitude": 4.694813
+  },
+  "story": "When Hoofddorp built a new shopping centre around its market square, the municipality made saving this tree a condition of the plan. That is on the record as the reason it is still there, planted, the register says, around 1935, in front of what is now the market hall.\n\nCaucasian wingnut is not a tree many Dutch town squares grow. It comes from wet valley floors in the Caucasus and northern Iran, suckers readily from its own roots, and in midsummer it hangs strings of winged nutlets half a metre long from every branch tip, for a few weeks looking like a tree decked out for a parade nobody announced.\n\nBeing kept during redevelopment is not the same as being cared for since, and the register does not say anything about its condition today. What it records is a species and a rough decade, and nothing else has been published about this particular tree.\n\nIt stands in the middle of Hoofddorp, free to walk up to any day of the week. If you know more about why the council insisted on keeping it, tell us.",
+  "best_time": {
+   "months": [
+    7,
+    8
+   ],
+   "kind": "catkins",
+   "label": "midsummer, when strings of winged nutlets half a metre long hang from every branch"
+  },
+  "verified_sources": [
+   "https://www.monumentalebomen.nl/"
+  ],
+  "access": "Free, on the Markt in front of the market hall, always visible.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  },
+  "curation_status": "flagged",
+  "location_precision": "approximate"
+ },
+ {
+  "id": "hrl_007",
+  "name": "The Jubilee Lime of Vijfhuizen",
+  "species": "Common Lime (Tilia x europaea)",
+  "age_estimate": "roughly 115 years, from a registered planting date around 1910",
+  "age_min": 116,
+  "age_max": 126,
+  "location": {
+   "address": "Spieringweg 510, opposite the Fortwachter, Vijfhuizen",
+   "latitude": 52.346889,
+   "longitude": 4.672702
+  },
+  "story": "In 1923 the Netherlands marked twenty five years of Queen Wilhelmina on the throne, and this lime went into the ground in Vijfhuizen to mark it, one of many jubilee trees planted across the country that year. The register keeps the reason on file even though almost nothing else about the tree has been written down.\n\nIt stands on the Spieringweg opposite a spot known locally as the Fortwachter, in what the register calls a plantsoen: an ordinary municipal planting strip rather than a park. A common lime grown out in the open like this builds a dense, rounded crown down to head height, and in July it does what limes do everywhere: small pale flowers open in hanging clusters, the tree hums with bees for a couple of weeks, and the scent carries across the road.\n\nA century is not old for a lime, which can run to several, but it is old for anything standing in the Haarlemmermeer, ground that was still open water until 1852. The register is the only source that has looked at this specific tree. If you know more about the planting or the jubilee it marked, tell us.",
+  "best_time": {
+   "months": [
+    7
+   ],
+   "kind": "flowers",
+   "label": "July, when it flowers and the scent carries across the Spieringweg"
+  },
+  "verified_sources": [
+   "https://www.monumentalebomen.nl/"
+  ],
+  "access": "Free, alongside a public road, always visible.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  },
+  "curation_status": "flagged",
+  "location_precision": "approximate"
+ },
+ {
+  "id": "hrl_008",
+  "name": "The London Plane of Hoofddorp",
+  "species": "London Plane (Platanus x acerifolia)",
+  "age_estimate": "roughly 140 years, from a registered planting date around 1885",
+  "age_min": 136,
+  "age_max": 146,
+  "location": {
+   "address": "Hoofdweg 669, corner of Manegelaan, Hoofddorp",
+   "latitude": 52.306523,
+   "longitude": 4.693581
+  },
+  "story": "Locals use this plane tree to navigate by. The register's whole reasoning for designating it monumental is two words: remarkable form, landmark, and that is the sum of what has been written about it.\n\nIt grows on municipal ground in front of a notary's office at the corner of the Hoofdweg and the Manegelaan, planted, the register estimates, somewhere in the 1880s, which would make it Hoofddorp's oldest registered tree by a wide margin over almost everything else on this page. London plane is a hybrid that barely exists in the wild, first bred in seventeenth century Europe by crossing an American and an Oriental species, and it turned out to tolerate compacted soil, pollution and hard pruning better than almost anything else available, which is why it lines so many European streets and squares. Its bark flakes away in patches instead of splitting, so the trunk carries a camouflage pattern of grey, green and cream that keeps changing as old plates drop off.\n\nAt around 140 years old it predates the notary's office, the Manegelaan and most of what stands near it now. The register is the only source that has looked at it. If you know when it actually went in, tell us.",
+  "verified_sources": [
+   "https://www.monumentalebomen.nl/"
+  ],
+  "access": "Free, on municipal ground in front of a notary's office, visible from the Hoofdweg.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  },
+  "curation_status": "flagged",
+  "location_precision": "approximate"
+ },
+ {
+  "id": "hrl_009",
+  "name": "The Weeping Beech of the Ring Road",
+  "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+  "age_estimate": "roughly 115 years, from a registered planting date around 1910",
+  "age_min": 116,
+  "age_max": 126,
+  "location": {
+   "address": "Hoofdweg, corner of the Rijksweg ring road, Hoofddorp",
+   "latitude": 52.312157,
+   "longitude": 4.701237
+  },
+  "story": "The register's own 2024 inspection ends on an unusually candid note: the tree, it says, is not doing well these days. That is close to an editorial opinion for a database this dry.\n\nThe weeping beech stands with a handful of ordinary beeches on a corner where the Hoofdvaart, the canal cut straight through the drained lake to the old pumping station, meets the ring road that now circles Hoofddorp. The register's own guess is that before the ring road existed, this corner might have been a small park; if so, the road took most of it, and what is left reads as a traffic island with trees on it rather than the parkland setting the tree wants. Planted, the register estimates, between 1900 and 1910, it is around a century old.\n\nA weeping beech is not a natural form. Every one alive descends by graft or cutting from a single tree found wild in Germany around 1680, propagated ever since because its branches fall instead of rising, so a mature specimen makes a tent of foliage with the trunk hidden somewhere inside. Squeezed onto a traffic corner and hemmed in by road, this one has never had the room to do that properly, which may be exactly what the register means.\n\nThe register is the only source. If you know this tree, tell us how it is doing now.",
+  "verified_sources": [
+   "https://www.monumentalebomen.nl/"
+  ],
+  "access": "Free, on a public road corner, always visible.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  },
+  "curation_status": "flagged",
+  "location_precision": "approximate"
+ },
+ {
+  "id": "hrl_010",
+  "name": "The Roadside Maple of Badhoevedorp",
+  "species": "Maple (Acer sp.)",
+  "age_estimate": "roughly 110 years, from a registered planting date around 1915, though the register's own note suggests 1895",
+  "age_min": 106,
+  "age_max": 116,
+  "location": {
+   "address": "Nieuwemeerdijk 143, Badhoevedorp",
+   "latitude": 52.334806,
+   "longitude": 4.797888
+  },
+  "story": "This maple stands in the front garden of a house on the Nieuwemeerdijk built in 1915, and the register cannot quite agree with itself about which of the two is older. Its structured record bands the planting to 1910-1920. Its own descriptive note gives 1895 instead, and adds that if that figure is right, the tree was already growing on this dike before the house went up beside it. Both cannot be true, and we have not been able to resolve which the register meant.\n\nThe species is recorded no more precisely than maple, Acer species, without a name for which one. If you can put a name to it from a photograph, tell us that too.\n\nNone of the uncertainty affects what a passerby can see: a full, healthy crown that the register itself calls the single most striking thing about this stretch of the Nieuwemeerdijk, visible the whole way along the road. The tree grows in the garden of a house that is still lived in, so this is a look rather than a visit. There is no gate to try and no reason to open one, just a wide view from the roadside.\n\nThe register is the only source that has looked at this tree, and on its own evidence it has not entirely made up its mind.",
+  "verified_sources": [
+   "https://www.monumentalebomen.nl/"
+  ],
+  "access": "Visible from the Nieuwemeerdijk; the tree grows in a private front garden and cannot be approached.",
   "photo": {
    "url": null,
    "license": null,
