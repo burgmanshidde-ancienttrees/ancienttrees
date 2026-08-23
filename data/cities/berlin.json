@@ -1,660 +1,691 @@
 {
-  "city": "Berlin",
-  "country": "Germany",
-  "status": "needs_curation",
-  "intro": "Berlin protects around 600 individual trees as Naturdenkmäler, and most of them are oaks: pedunculate oaks planted by foresters, princes and protestors across four centuries in a city that has been besieged, bombed and divided more than once. Three of these stand in the Tegel Forest alone, home to the capital's record holders for oldest and thickest tree. The rest range from a Louisiana swamp cypress growing in a Prussian palace garden to an oak vandalized as a political protest against the Kaiser it was planted to honor. Most are free to see.",
-  "meta_description": "Berlin's ancient trees range from an 800-year oak older than the city to a Louisiana swamp cypress in a Prussian palace garden. Mostly free to visit.",
-  "question_answer": "Berlin's oldest tree is Dicke Marie, a pedunculate oak in the Tegel Forest whose age is genuinely disputed: the city's forestry office estimates 800 to 900 years, while a 2021 survey by the German Dendrological Society's heritage-tree board put it at a more conservative 500 to 600. It stands on the lakeside path near Tegel harbour, a 12 to 15 minute walk from the Alt-Tegel U-Bahn station.",
-  "question_meta": "Berlin's oldest tree is a disputed 500 to 900 year old oak in the Tegel Forest. Where it stands, and the city's most remarkable trees.",
-  "question_context": "Two credible sources disagree on Dicke Marie's age by several centuries, which is unusual even for a tree this old: Berlin's forestry office has long cited 800 to 900 years, while the German Dendrological Society's own National Heritage Tree board reassessed it in 2021 and concluded 500 to 600 was more defensible, since internal decay makes precise dating impossible either way. This page states both rather than picking the more dramatic number. What is not disputed is the tree's identity: two Humboldt brothers, Alexander and Wilhelm, are said to have named it after their family cook around 1800, while summering nearby at Schloss Tegel, and the nickname stuck for over two centuries. On 9 July 2021 Dicke Marie became the first forest tree in Germany named a National Heritage Tree. It stands in the Tegel Forest on the northeastern tip of Tegeler See, reached on foot from the Alt-Tegel U-Bahn station via the harbour bridge and lakeside path. A short walk further into Schlosspark Tegel stands the Humboldteiche, a younger but far thicker oak that is sometimes confused for the record holder; the two are neighbours, not the same tree.",
-  "faq": [
-    {
-      "q": "What is the oldest tree in Berlin?",
-      "a": "Dicke Marie, a pedunculate oak in the Tegel Forest. Its age is disputed: the city's forestry office estimates 800 to 900 years, while a 2021 heritage-tree survey concluded a more conservative 500 to 600."
-    },
-    {
-      "q": "Are Berlin's ancient trees free to visit?",
-      "a": "Most are free to see without a ticket. Two locations need paying for access: the Treskow Plane, which grows inside Tierpark Berlin and requires a zoo ticket, and the four oaks on Pfaueninsel, reached only by a short paid chain ferry (6 euros as of April 2026) since the island itself is car-free. A fifth Pfaueninsel-area tree, a London plane by the ferry dock, stands on the free mainland side and needs no ticket at all."
-    },
-    {
-      "q": "What is a Berlin Naturdenkmal?",
-      "a": "A legally protected natural monument, a designation Berlin has used since 1939 (with a comprehensive ordinance update in 2021) for around 600 individually registered trees, plus a small number of glacial boulders, chosen for age, size, rarity or historical significance."
-    },
-    {
-      "q": "Why are so many of Berlin's protected trees oaks?",
-      "a": "Pedunculate oak is the single most common species on Berlin's natural monument register, ahead of plane, chestnut and beech. Oaks tolerate the region's sandy Brandenburg soil better than most large trees and were the default choice for royal foresters, estate owners and municipal planners alike for centuries."
-    }
-  ],
-  "trees": [
-    {
-      "id": "ber_001",
-      "name": "Dicke Marie",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "age_estimate": "500-900 years (disputed)",
-      "age_min": 500,
-      "age_max": 900,
-      "location": {
-        "address": "An der Malche, Tegeler Forst, 13507 Berlin",
-        "latitude": 52.59358,
-        "longitude": 13.265,
-        "neighbourhood": "Tegel, Reinickendorf"
-      },
-      "story": "Berlin's oldest tree is older than the city itself. When Berlin got its first written mention in 1237, this pedunculate oak in the Tegel Forest had likely already been growing for over a century, its germination dated to around 1107. How much older it has grown since is a genuine dispute. Forestry officials have long put it at 800 to 900 years. In 2021 the German Dendrological Society's own National Heritage Tree board reassessed the same trunk and came back with a more conservative 500 to 600, arguing that internal decay makes anything more precise a guess. Both numbers can't be right, and this project would rather say so than pick the more impressive one. What isn't disputed: two teenage brothers who summered nearby at Schloss Tegel, Alexander and Wilhelm von Humboldt, are said to have named the tree after the family's cook around 1800, and the joke outlived them both. Goethe reportedly rested in its shade in 1778. The oak has grown gnarled and hollow rather than tall, topping out at just 15 to 16 metres, its bulk going into a trunk nearly six metres round instead. On 9 July 2021 it became the first forest tree in Germany named a National Heritage Tree, a small formal honor for something that was already, by any count, the oldest living thing in a city of 3.8 million people.",
-      "best_time": {
-        "months": [
-          9,
-          10
-        ],
-        "kind": "fruit",
-        "label": "acorns drop, and a good mast year buries the ground in them"
-      },
-      "verified_sources": [
-        "https://de.wikipedia.org/wiki/Dicke_Marie",
-        "https://www.visitberlin.de/en/dicke-marie"
-      ],
-      "access": "Free, public forest, open at all times",
-      "transport": "12-15 min walk from Alt-Tegel U-Bahn (U6), via the Tegel harbour bridge and lakeside path",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Dicke_Marie.JPG",
-        "license": "CC BY-SA 3.0",
-        "attribution": "Maculata, via Wikimedia Commons",
-        "status": "approved",
-        "width": 3135,
-        "height": 4250
-      },
-      "curation_status": "flagged",
-      "notes": "Age is genuinely disputed between two credible sources: Berlin forestry authorities (800-900 years, per visitBerlin.de and multiple secondary sources) versus the German Dendrological Society's 2021 National Heritage Tree assessment (500-600 years, per de.wikipedia). Presented as a range with the disagreement named in the story per P7, rather than picking one figure. Coordinates from the German Wikipedia infobox.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "ber_002",
-      "name": "The Humboldt Oak",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "age_estimate": "400-500 years",
-      "age_min": 400,
-      "age_max": 500,
-      "location": {
-        "address": "Schlosspark Tegel, Adelheidallee, 13507 Berlin",
-        "latitude": 52.595297,
-        "longitude": 13.274429,
-        "neighbourhood": "Tegel, Reinickendorf"
-      },
-      "story": "The thickest trunk in Berlin does not belong to the city's oldest tree. It belongs to its neighbour. A few hundred metres from Dicke Marie, inside the grounds of Schloss Tegel, this pedunculate oak has swollen to 7.80 metres around, wider than Dicke Marie despite being younger by centuries: 400 to 500 years old rather than 800 or more. It takes its name from the same family who has owned Schloss Tegel since 1766 and still does today, one of the few noble German estates that never left its original bloodline. Alexander von Humboldt, the naturalist whose name later ended up on a university, an ocean current and a squid, grew up walking past this oak on his way to the lake. Berlin listed it as a natural monument in 1939, protecting a crown that now spans 18 metres, wide enough to shade a tennis court. The palace itself only opens to visitors on Mondays between May and September, but the park around it, this tree included, stays open year round until sunset, for a suggested one euro donation left at the gate. Stand under it and you are looking at more wood, by circumference, than anywhere else in the German capital, a record that has nothing to do with age at all.",
-      "best_time": {
-        "months": [
-          9,
-          10
-        ],
-        "kind": "fruit",
-        "label": "acorns drop, and a good mast year buries the ground in them"
-      },
-      "verified_sources": [
-        "https://de.wikipedia.org/wiki/Humboldteiche",
-        "https://www.baumkunde.de/baumregister/2554-humboldteiche_im_schlosspark_tegel/"
-      ],
-      "access": "Free (a 1 euro donation is requested at the gate); park open daily until sunset, the palace interior open only on Mondays, May to September",
-      "transport": "12 min walk from Alt-Tegel U-Bahn (U6)",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Tegel_Schlosspark_Tegel.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Fridolin freudenfett, via Wikimedia Commons",
-        "status": "approved",
-        "width": 3000,
-        "height": 4000
-      },
-      "curation_status": "ai_generated",
-      "notes": "Naturdenkmal since 1939, registration 12-25/B. Girth (7.80 m) and age range (400-500 years) confirmed by two independent sources. Coordinates from a GPS-tagged tree registry source, used for cross-check.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "ber_003",
-      "name": "The Steinlanke Oak",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "age_estimate": "350-400 years",
-      "age_min": 350,
-      "age_max": 400,
-      "location": {
-        "address": "Große Steinlanke, Grunewald, 14193 Berlin",
-        "latitude": 52.451445,
-        "longitude": 13.19112,
-        "neighbourhood": "Grunewald, Charlottenburg-Wilmersdorf"
-      },
-      "story": "Grunewald's oldest tree survived storms that took its own crown apart. Foresters put its age at 350 to 400 years depending on which survey is cited, a girth measurement that grew from 6.48 metres in 2018 to a commonly quoted 6.70 metres more recently, either of which means it was standing before Prussia existed as a kingdom. It grows at the Große Steinlanke, a quiet inlet of the Havel on the forest's western edge, its trunk gnarled and visibly weathered, the upper crown thinned by what local foresters describe as probable lightning strikes accumulated over centuries. A small sign near the Großes Fenster clearing, by the volunteer lifeguard station, points visitors to it, one of the few individually marked trees in a forest better known for its total size than any single specimen. Grunewald is Berlin's largest contiguous forest, threaded with lake paths popular with swimmers and joggers in summer, and this oak predates every villa and boathouse now standing near it. Reaching it takes real effort: the nearest train station, Wannsee, is nearly an hour's walk away, so most visitors take the 218 bus toward Theodor-Heuss-Platz and finish on foot along the shoreline. Nothing about it looks spectacular from a distance. Up close, the girth and the storm damage written into its upper branches tell a longer story than any plaque could.",
-      "best_time": {
-        "months": [
-          9,
-          10
-        ],
-        "kind": "fruit",
-        "label": "acorns drop, and a good mast year buries the ground in them"
-      },
-      "verified_sources": [
-        "https://www.gazette-berlin.de/artikel/2583-aeltester-baum-im-grunewald.html",
-        "https://forst-grunewald.de/?page_id=164"
-      ],
-      "access": "Free, public forest, open at all times",
-      "transport": "Bus 218 from S-Bahnhof Wannsee (toward Theodor-Heuss-Platz), then a lakeside forest walk; roughly 45-60 min on foot from Wannsee station if not using the bus",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Naturdenkmal_Stiel-Eiche_Forst_Grunewald_Jagen_100_2024-05-25_01.jpg",
-        "license": "CC0",
-        "attribution": "Leonhard Lenz (GPSLeo), via Wikimedia Commons",
-        "status": "approved",
-        "width": 8368,
-        "height": 5584
-      },
-      "curation_status": "flagged",
-      "notes": "Two independent measurements disagree slightly (6.48 m/2018 survey vs. 6.70 m in the more commonly cited figure; 350 vs. 400 years), presented as a range rather than picking one. Coordinates from a GPS-tagged source, cross-checked against the forest management site's own description of the location. Photo found and approved 2026-07-28: a Wiki Loves Earth 2024 upload explicitly titled \"Naturdenkmal Stiel-Eiche Forst Grunewald Jagen 100\", its own embedded geolocation (52.451547, 13.191778) landing within about 45m of this entry's own stored coordinate, essentially the same tree. Viewed directly: a large oak with a visibly damaged, hollowed lower trunk beside a small building's roofline, consistent with the DLRG lifeguard station this entry's story describes standing near.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "ber_004",
-      "name": "The Swamp Cypress of Charlottenburg",
-      "species": "Bald Cypress (Taxodium distichum)",
-      "age_estimate": "200 years",
-      "age_min": 190,
-      "age_max": 210,
-      "best_time": {
-        "months": [
-          10,
-          11
-        ],
-        "label": "late October, when it drops its needles like a deciduous tree, the habit that confuses visitors expecting a conifer to stay green"
-      },
-      "location": {
-        "address": "Schlosspark Charlottenburg, Spandauer Damm, 14059 Berlin",
-        "latitude": 52.52376,
-        "longitude": 13.29455,
-        "neighbourhood": "Charlottenburg, Charlottenburg-Wilmersdorf"
-      },
-      "story": "A swamp tree from the American South has spent two centuries in a Prussian palace garden. This bald cypress, native to the flooded river bottoms of the southeastern United States, went into the ground in Schlosspark Charlottenburg around 200 years ago, most likely during Peter Joseph Lenné's redesign of the grounds into an English-style landscape park. It has grown to five metres around and over 15 metres tall, dropping its needles every winter like a deciduous tree despite being a conifer, a habit that confuses first-time visitors expecting evergreen. Berlin protects it as a natural monument for a reason that has little to do with its size: its aging, partly hollow wood now shelters the hermit beetle, a rare, EU-protected species that depends on old, decaying timber exactly like this to survive at all. You are now more likely to help that beetle by leaving a tree standing than by planting a new one. The palace itself, the largest surviving Hohenzollern residence in Berlin, charges admission for its state rooms, but the gardens are free and open daily, the formal French parterre near the palace giving way further back to Lenné's looser, English-style paths, where this cypress stands among other 19th-century imports the royal gardeners tested against Berlin's winters. Most of them did not last two centuries. This one has.",
-      "verified_sources": [
-        "https://www.berliner-woche.de/charlottenburg/c-ausflugstipps/naturdenkmal-ist-rund-200-jahre-alt_a320645",
-        "https://www.baumkunde.de/baumregister/6383-sumpfzypresse_im_park_vonschloss_charlottenburg/"
-      ],
-      "access": "Free, palace gardens open daily; the state rooms charge admission separately",
-      "transport": "10 min walk from Sophie-Charlotte-Platz U-Bahn (U2) or Richard-Wagner-Platz U-Bahn (U7)",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Charlottenburg_Schlosspark_Sumpfzypresse-001.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Fridolin freudenfett, via Wikimedia Commons",
-        "status": "approved",
-        "width": 1920,
-        "height": 2560
-      },
-      "curation_status": "ai_generated",
-      "notes": "Age (~200 years), girth (~5 m) and height (>15 m) confirmed by two independent sources reporting matching figures. Coordinates converted from a degrees/minutes tree-registry reading of this specific specimen.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "ber_005",
-      "name": "The Great Elm of Treptower Park",
-      "species": "European White Elm (Ulmus laevis)",
-      "age_estimate": "250 years",
-      "age_min": 230,
-      "age_max": 270,
-      "location": {
-        "address": "Treptower Park, near the Rosengarten, 12435 Berlin",
-        "latitude": 52.491303,
-        "longitude": 13.47132,
-        "neighbourhood": "Treptow, Treptow-Köpenick"
-      },
-      "story": "The newest tree on Germany's national heritage register has its roots in a river. This European white elm, standing directly on the Spree's bank in Treptower Park, was declared a National Heritage Tree only on 25 September 2025, one of the most recent additions to a small national list that otherwise mostly honors trees for age or scale alone. This one earns its place partly through rarity: Ulmus laevis is a floodplain elm scarce enough in Germany that a healthy 250-year-old specimen counts as remarkable regardless of size. Its roots reach directly into the Spree, drawing on a water supply few park trees get, which foresters credit for a vigor unusual in a tree this old. The trunk measures 6.35 metres around and the crown rises 25 metres, making it one of the largest trees in a park better known for its Soviet war memorial than its vegetation. It stands near the Rosengarten, a short walk from the boat landing, easily found by anyone walking the riverside path instead of heading straight for the monument. Dutch elm disease wiped out most of mainland Europe's mature elms across the twentieth century, a fungus spread by bark beetles that killed trees by the millions. This species, less favored by those beetles than the more common field and Wych elms, simply kept growing while its relatives disappeared.",
-      "verified_sources": [
-        "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1592607.php",
-        "https://www.myheimat.de/berlin/c-natur/die-grosse-flatter-ulme-im-treptower-park-in-berlin_a3595038",
-        "https://nationalerbe-baeume.de/project/grosse-flatter-ulme-im-treptower-park-bundeshauptstadt-berlin/"
-      ],
-      "access": "Free, public park",
-      "transport": "5 min walk from Treptower Park S-Bahn station (S8/S9/S41/S42/S85/S46)",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Naturdenkmal_Flatter-Ulme_Treptower_Park_Berlin-Alt-Treptow_2025-05-06_01.jpg",
-        "license": "CC0 1.0",
-        "attribution": "Leonhard Lenz (GPSLeo), via Wikimedia Commons",
-        "status": "approved",
-        "width": 8144,
-        "height": 5424
-      },
-      "curation_status": "ai_generated",
-      "notes": "Declared a Nationalerbe-Baum (National Heritage Tree) 25 September 2025, confirmed by the district's own press release and a second local news source. Location upgraded to confirmed: the national heritage-tree register's own project page (run by a TU Dresden forestry professor) gives a specific GPS reading and a walking description (750m from the S-Bahn station along the riverside promenade, 150m east of the boat landing), a roughly 460m correction from the previous general-park estimate. A second independent source agrees within 15m: a geotagged Wikimedia Commons photo of this exact tree (file title names it directly), also the photo used below.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "ber_006",
-      "name": "The Mahlsdorf Village Lime",
-      "species": "Small-leaved Lime (Tilia cordata)",
-      "age_estimate": "300-400 years",
-      "age_min": 300,
-      "age_max": 400,
-      "best_time": {
-        "months": [
-          6,
-          7
-        ],
-        "label": "late June, when the lime blossom scents the street",
-        "kind": "flowering"
-      },
-      "location": {
-        "address": "Hönower Straße 13, 12623 Berlin",
-        "latitude": 52.5061,
-        "longitude": 13.61255,
-        "neighbourhood": "Mahlsdorf, Marzahn-Hellersdorf"
-      },
-      "story": "In 2021 Berlin's district register dropped two of Mahlsdorf's protected trees, a Balkan horse chestnut and a black poplar, from its list of natural monuments. A crooked, ten metre lime standing in front of the neighbourhood's oldest building was not one of them. The Mahlsdorf Village Lime, a small-leaved lime outside the old parish church on Hönower Straße, has been protected since 1993 for outright rarity rather than size, a designation it has now outlasted two neighbours to keep. Its age is put at a minimum of 300 years, with local historians tracing the planting to the 17th century. Height was never the point: centuries of storm damage bent and hollowed the crown instead of raising it, leaving a squat, mossy shape barely taller than the church roofline while its trunk swelled to a girth of 4.45 metres, wider than many trees three times its height. By 1995 the district judged the limbs unsafe to leave unsupported and spent 8,000 Deutsche Mark bracing them with steel cables and fencing the base, work that still holds the tree together today. It stands on the old village high street, beside a church that itself survived the Thirty Years' War and the 1945 bombing, two witnesses to the same stretch of road that outlasted the empire, kingdom and two republics built around them.",
-      "verified_sources": [
-        "https://de.wikipedia.org/wiki/Mahlsdorfer_Linde",
-        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Marzahn-Hellersdorf",
-        "https://alles-mahlsdorf.de/mahlsdorf-bekommt-ein-neues-naturdenkmal-dafuer-sollen-zwei-andere-gestrichen-werden/"
-      ],
-      "access": "Free, stands on public ground in front of the church on Hönower Straße, viewable at all times (a low fence protects the base and root area)",
-      "transport": "10-12 min walk from Berlin-Mahlsdorf S-Bahn station (S5)",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/2019-06-29_Mahlsdorfer_Linde_2.jpg",
-        "license": "CC BY 4.0",
-        "attribution": "Bernard Ladenthin, via Wikimedia Commons",
-        "status": "approved",
-        "width": 4608,
-        "height": 3456
-      },
-      "curation_status": "ai_generated",
-      "notes": "Replacement for the former ber_006, 'The Bellevue Oak', pulled 2026-07-29 after independent confirmation the original tree is dead: berliner-woche.de's own 2015 headline read 'Die alte Stieleiche ist tot' (the old oak is dead), and ostdeutsches-baumarchiv.de states it was fully dead by 2018 ('ein schneller Tod'). The prior entry's 'declining' framing undersold this; per CLAUDE.md's living-tree rule a dead tree is never a collectible entry. Id reused so the old URL redirects rather than 404s (see RENAMED_TREE_SLUGS in scripts/build_site.py). New tree researched from scratch: age is a floor ('at least 300 years' per Wikipedia, citing Vieth 2004) presented as a range rather than a false precise figure; confirmed still standing and actively protected via alles-mahlsdorf.de (2021), which reports it explicitly retained Naturdenkmal status in that year's register update while two other Mahlsdorf trees were delisted. Photo personally viewed and confirmed: a dramatically leaning, moss-covered, clearly living trunk in full leaf beside the church wall, dated 29 June 2019.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "ber_007",
-      "name": "The Treskow Plane",
-      "species": "London Plane (Platanus x acerifolia)",
-      "age_estimate": "250 years",
-      "age_min": 230,
-      "age_max": 270,
-      "location": {
-        "address": "Alfred-Kowalke-Straße 29, Tierpark Berlin, 10315 Berlin",
-        "latitude": 52.50658,
-        "longitude": 13.52152,
-        "neighbourhood": "Friedrichsfelde, Lichtenberg"
-      },
-      "story": "The oldest tree at Berlin's Tierpark predates the zoo around it by roughly two centuries. This London plane, its branches so intertwined that some have fused into single, oval cross-sectioned limbs, was already standing when the grounds were still the pleasure gardens of Friedrichsfelde Palace, a Hohenzollern summer residence later owned by the agricultural reformer Johann Carl Sigismund von Treskow, whose name it now carries. Lichtenberg's environmental office estimated its age at 250 years in a 2015 survey, putting its planting sometime in the mid-1700s, two centuries before the palace grounds reopened as a public zoo in 1955. It has grown a trunk 4.65 metres around and a crown 20 metres wide, tall enough at 25 metres to be visible over the enclosures near it. Reaching it requires a Tierpark Berlin ticket, since it now stands inside the zoo's grounds rather than in an open park, an unusual condition for a tree on this list but not a disqualifying one: anyone can buy a ticket at the gate. Look past the animals for a moment and you are standing under a plane tree that has outlasted a palace, survived the transition from royal garden to public zoo, and kept growing through both.",
-      "verified_sources": [
-        "https://de.wikipedia.org/wiki/Treskow-Platane",
-        "https://dewiki.de/Lexikon/Liste_der_Naturdenkmale_im_Bezirk_Lichtenberg"
-      ],
-      "access": "Paid entry (Tierpark Berlin zoo ticket required)",
-      "transport": "2 min walk from Tierpark U-Bahn station (U5)",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Treskow-Platane_2014-3_Berlin-Frf_1474-1354-120.jpg",
-        "license": "CC BY-SA 3.0",
-        "attribution": "Lotse, via Wikimedia Commons",
-        "status": "approved",
-        "width": 2736,
-        "height": 3648
-      },
-      "curation_status": "ai_generated",
-      "notes": "Naturdenkmal since 2 March 1993 for regional historical significance, with additional protection for distinctive character added 20 May 2021. Common name standardized to 'London Plane' per project convention for Platanus x acerifolia/x hispanica. Coordinates from the German Wikipedia infobox.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "ber_008",
-      "name": "The Kaisereiche",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "age_estimate": "143 years",
-      "age_min": 140,
-      "age_max": 147,
-      "location": {
-        "address": "Rheinstraße / Moselstraße, 12161 Berlin",
-        "latitude": 52.46889,
-        "longitude": 13.33278,
-        "neighbourhood": "Friedenau, Tempelhof-Schöneberg"
-      },
-      "story": "Someone tried to kill this oak as a political protest, and Berlin planted a replacement within weeks. The original Kaisereiche went into the ground on 22 March 1879, planted by a local publisher to mark Kaiser Wilhelm I's 82nd birthday and golden wedding anniversary, at what was then a traffic circle on the edge of the new suburb of Friedenau. In November 1883, five years after two separate assassination attempts on the Kaiser had given Chancellor Bismarck his pretext for the Anti-Socialist Laws, someone damaged the tree badly enough that it needed full replacement, an act read at the time as a protest against those same laws. The oak standing at the corner of Rheinstraße and Moselstraße today is that replacement, which makes it roughly 143 years old rather than the 147 the original planting date would suggest, a small but honest distinction most retellings skip. Berlin protects it as a natural monument, and in 2004 a Hohenzollern descendant, Franz Friedrich Prinz von Preußen, unveiled a plaque marking 125 years since the first tree went in. The intersection has no official street name of its own, but Berlin's transit map still labels the bus stop and taxi rank here Kaisereiche, a small act of memory that has outlasted the publisher, the Kaiser, and the empire both men served.",
-      "best_time": {
-        "months": [
-          9,
-          10
-        ],
-        "kind": "fruit",
-        "label": "acorns drop, and a good mast year buries the ground in them"
-      },
-      "verified_sources": [
-        "https://de.wikipedia.org/wiki/Kaisereiche_(Berlin)",
-        "https://www.gedenktafeln-in-berlin.de/gedenktafeln/detail/kaisereiche/1823"
-      ],
-      "access": "Free, public street corner",
-      "transport": "10 min walk from S-Bahnhof Feuerbachstraße (S1), or the Kaisereiche bus stop directly",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Berlin_Friedenau_Kaisereiche_22.06.2015_12-44-49.JPG",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Dirk Ingo Franke, via Wikimedia Commons",
-        "status": "approved",
-        "width": 3641,
-        "height": 4106
-      },
-      "curation_status": "ai_generated",
-      "notes": "Age calculated from the 1883 replacement planting, not the 1879 original, since the two are different physical trees per both sources. Coordinates from the German Wikipedia infobox.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "ber_009",
-      "name": "The Ginkgo of Schlosspark Britz",
-      "species": "Ginkgo (Ginkgo biloba)",
-      "age_estimate": "140 years",
-      "age_min": 136,
-      "age_max": 146,
-      "location": {
-        "address": "Alt-Britz 73, Schlosspark Britz, 12359 Berlin",
-        "latitude": 52.4470352,
-        "longitude": 13.439452,
-        "neighbourhood": "Britz, Neukölln"
-      },
-      "story": "Berlin's oldest and tallest ginkgo survived something most of its European relatives never had to: being fashionable. Ginkgo biloba reached European gardens in the 18th century as a botanical curiosity, a living link to trees that grew alongside dinosaurs, and wealthy estates across the continent planted them as status symbols rather than for shade or timber. This one went into Gutspark Britz sometime between 1880 and 1890, when royal garden inspector Wilhelm Nahlop redesigned the grounds of a former manor estate into the landscape park still standing today. It has grown a trunk over three metres around and stands close to 20 metres tall, the largest ginkgo recorded anywhere in the German capital. Ginkgos are dioecious, meaning individual trees are strictly male or female, and this one's autumn performance is the reward for the wait: every leaf turns a uniform gold within days of each other in late October, then drops almost at once, rather than the gradual, patchy fade most trees go through. The palace itself, Schloss Britz, charges a small admission fee for its restored period rooms, but the surrounding Gutspark is free and open daily, its grounds having won a national landscape prize in 1997, decades after the ginkgo inside it had already quietly become the biggest in Berlin.",
-      "verified_sources": [
-        "https://schloss-gutshof-britz.de/schloss-und-gutshof-britz/geschichte-architektur/schlosspark/ginkgo",
-        "https://www.berlin.de/tourismus-neukoelln/entdecken/artikel.1153612.php",
-        "https://www.openstreetmap.org/node/622505161"
-      ],
-      "access": "Free (Gutspark); Schloss Britz's period rooms charge separate admission",
-      "transport": "10 min walk from Parchimer Allee U-Bahn (U7), or bus 181 to Alt-Britz",
-      "best_time": {
-        "months": [
-          10,
-          11
-        ],
-        "label": "late October, when every leaf turns gold and drops within days"
-      },
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/F%C3%A4cherblattbaum_Gutspark_Britz_1.JPG",
-        "license": "CC BY-SA 3.0",
-        "attribution": "Barfisch, via Wikimedia Commons",
-        "status": "approved",
-        "width": 2976,
-        "height": 3968
-      },
-      "curation_status": "ai_generated",
-      "notes": "Planting window (1880-1890) and 'oldest and tallest ginkgo in Berlin' claim confirmed by two independent sources (the palace's own history page and a Berlin.de tourism article). Location upgraded to confirmed: OpenStreetMap carries a single Ginkgo biloba node in the park tagged with the estate's own inventory reference (ref:schlossgutshofbritz=7), the same reference scheme used on neighbouring catalogued trees in the same park, about 120m from the previous palace-address estimate, corroborated independently by Wikidata's coordinates for the same tree's Naturdenkmal designation (ND-8-2/B), about 110m away. Photo is from a dedicated Commons category for this exact tree; viewed directly, shows a tall mature tree with characteristic ginkgo fan-shaped leaves and a monument information sign on site. Approved.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "ber_010",
-      "name": "The Giant Sequoia of the Tiergarten",
-      "species": "Giant Sequoia (Sequoiadendron giganteum)",
-      "age_estimate": "135 years",
-      "age_min": 130,
-      "age_max": 140,
-      "location": {
-        "address": "Englischer Garten, Großer Tiergarten, near Altonaer Straße, 10557 Berlin",
-        "latitude": 52.51638,
-        "longitude": 13.3463,
-        "neighbourhood": "Tiergarten, Mitte"
-      },
-      "story": "A tree that can live 3,000 years in California has had 135 of them in central Berlin. This giant sequoia, planted in 1891 in the Englischer Garten section of the Tiergarten, arrived in Europe only decades after the species itself did: the first seeds reached the continent in 1853, imported from California just two years after the tree was formally described at all, setting off a brief craze among wealthy estate owners for what nurseries of the time marketed as Wellingtonia. Berlin's planting, in the city's largest and most central park, is modest by the standards of a species that can exceed 90 metres in its native range, but it remains one of the tallest and bulkiest conifers growing anywhere in the capital. It stands a short walk from Schloss Bellevue, the German president's official residence, in a section of the Tiergarten deliberately landscaped in the looser, informal English style rather than the geometric French gardens found elsewhere in the park. Two world wars swept through the Tiergarten in the twentieth century, and postwar Berliners felled most of the park's remaining trees for firewood during the famine winters that followed 1945. This sequoia, planted decades earlier by gardeners with no idea what the century ahead held, made it through anyway.",
-      "verified_sources": [
-        "https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/umwelt-und-naturschutzamt/naturschutz/artikel.246730.php",
-        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Berlin"
-      ],
-      "access": "Free, public park",
-      "transport": "10 min walk from Bellevue S-Bahn station, inside the Tiergarten's Englischer Garten section",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Riesenmammutbaum_Berlin_Gr_Tiergarten.jpg",
-        "license": "CC BY-SA 3.0",
-        "attribution": "Miriam Guterland, via Wikimedia Commons",
-        "status": "approved",
-        "width": 3864,
-        "height": 5152
-      },
-      "curation_status": "ai_generated",
-      "notes": "Naturdenkmal 1-41/B. Planting year (1891) confirmed by the district's own Naturdenkmale page; species arrival in Europe (1853 seed import) is well-established botanical history, cited independently. Coordinates from the Wikipedia natural monuments list entry for this specific tree.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "ber_011",
-      "name": "The Great Oak of Pfaueninsel",
-      "species": "Sessile Oak (Quercus petraea)",
-      "age_estimate": "roughly 200-400 years, undocumented",
-      "age_min": 200,
-      "age_max": 400,
-      "location": {
-        "address": "Pfaueninsel, Schlosswiese, 14109 Berlin",
-        "latitude": 52.4315,
-        "longitude": 13.1207,
-        "neighbourhood": "Pfaueninsel, Steglitz-Zehlendorf"
-      },
-      "verified_sources": [
-        "https://www.baumkunde.de/baumregister/2135-eiche_auf_der_pfaueninsel_bei_berlin/",
-        "https://www.ostdeutsches-baumarchiv.de/photosearch/traubeneiche-1-pfaueninsel-berlin",
-        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Steglitz-Zehlendorf"
-      ],
-      "access": "Free to walk once on the island. The island itself is car-free and reached only by a short chain ferry from the Nikolskoer Weg landing (adult single ticket 6 euros as of April 2026, family ticket 12 euros); the castle interior (separate, recently reopened after 2021-2025 restoration) is a different ticket and not needed to see this tree.",
-      "transport": "Bus 218 (from S-Bahnhof Wannsee or Heckeshorn) to the 'Pfaueninsel' stop, then a 5 minute walk to the ferry landing, then the ferry crossing, then roughly a 10-15 minute walk into the island to the Schlosswiese meadow area",
-      "location_precision": "confirmed",
-      "curation_status": "flagged",
-      "story": "Pfaueninsel's oaks were already old when the island became a royal garden. In 1793, Friedrich Wilhelm II ordered the landscaping of this Havel island, and his court gardener kept the oak stand standing rather than clear it, because the trees were already a century old by then. This one, on the meadow near the Schloss, may be one of those originals: at 565 to 567 centimetres around, it was until recently the largest and most striking oak on the island, its short trunk splitting low into one main stem and five curving limbs.\n\nNobody has measured its age directly, so a range is the honest answer here: somewhere between 200 and 400 years, bracketed from the island's own history rather than a bore sample. What is on record is a more recent event. Surveyors who examined the tree later criticized a crown reduction carried out on it, describing the pruning as unnecessary and unprofessional work on a specimen that deserved better handling.\n\nThe island itself has stayed almost untouched since. Pfaueninsel is reachable only by a short chain ferry, has no cars, and keeps the eighteenth century pleasure-garden layout Friedrich Wilhelm II laid out around trees like this one. Peacocks still roam it, the reason for the name. Walk the meadow near the Schloss and this is the oak the Prussian court gardener chose to save.",
-      "best_time": {
-        "months": [
-          1
-        ],
-        "kind": "bare silhouette",
-        "label": "January, when the leaves are gone and the five-limbed crown structure shows plainly"
-      },
-      "notes": "Two independent tree registries (baumkunde.de Reg-Nr. 2135, Ostdeutsches Baumarchiv) record the same specimen, GPS ~10m apart, girth agreeing at 565-567cm (measured 2019). No source gives a direct age; the range is bracketed from Pfaueninsel's own history (Friedrich Wilhelm II's 1793 landscaping deliberately kept oaks that were already a century old). CONFIRMED 2026-08-07 against data/registers/berlin-naturdenkmale.json: this is ND 6-102/B ('Pfaueninsel, ca. 100m nordoestlich vom Schloss', register coords 52.431453/13.120752, about 10m from this entry's own coordinates).",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      }
-    },
-    {
-      "id": "ber_012",
-      "name": "The Tuereiche (Door Oak) of Pfaueninsel",
-      "species": "Sessile Oak (Quercus petraea) per monumentaltrees.com; Pedunculate Oak (Quercus robur) per baumkunde.de, an unresolved species conflict",
-      "age_estimate": "roughly 250 years, undocumented",
-      "age_min": 200,
-      "age_max": 300,
-      "location": {
-        "address": "Pfaueninsel, near the Schloss, 14109 Berlin",
-        "latitude": 52.430565,
-        "longitude": 13.122087,
-        "neighbourhood": "Pfaueninsel, Steglitz-Zehlendorf"
-      },
-      "verified_sources": [
-        "https://www.baumkunde.de/baumregister/6402-tuereiche_auf_der_pfaueninsel/",
-        "https://www.monumentaltrees.com/de/deu/berlin/berlin/7113_pfaueninsel/28796/"
-      ],
-      "access": "Free to walk once on the island, reached only by the chain ferry from Nikolskoer Weg, the same crossing as the island's other oaks.",
-      "transport": "Bus 218 (from S-Bahnhof Wannsee or Heckeshorn) to the 'Pfaueninsel' stop, then a 5 minute walk to the ferry landing, then the ferry crossing, then a walk into the island near the Schloss.",
-      "location_precision": "confirmed",
-      "curation_status": "flagged",
-      "story": "Somebody built a working door into this oak's trunk, and it is still there. The Tuereiche, the Door Oak, stands near the Schloss on Pfaueninsel, its 5.58 metre girth measured just once, in 2017, by a tree registry that has not been back since.\n\nTwo sources agree on its size and disagree on its species. One calls it a pedunculate oak, the other a sessile oak, working from what looks like the same underlying survey rather than two independent looks at the tree. Berlin's own list of protected trees on the island names four sessile oaks and no pedunculate ones, which tips the balance without settling it outright.\n\nIts age, about 250 years by the registry's estimate, is a guess made honestly: nobody has cored it, and the door itself, whatever its original purpose, carries no date of its own. What is certain is the island around it. Pfaueninsel became a royal retreat in 1793, and Friedrich Wilhelm II's gardeners built the new landscape around oaks that already stood there, this one very possibly among them.\n\nReach it by the same short ferry that serves the rest of the island's oaks, then walk toward the Schloss. Look for the door before you look for the tree. Most visitors do it the other way round and miss it entirely.",
-      "notes": "Two sources (baumkunde.de, monumentaltrees.com) give identical girth (5.58m) and height (8.5m) figures, which suggests one underlying survey rather than fully independent measurements; delivered flagged rather than confidently confirmed. Species is genuinely disputed between the two sources (see species field); Berlin's official register lists only sessile oaks among Pfaueninsel's four designated NDs, which weakly favours that reading without settling it (this pass's register match below settles it outright: 6-101/B is filed as Quercus petraea, no disagreement on the register side). Last dated confirmation of life is from 2019. CONFIRMED 2026-08-07 against data/registers/berlin-naturdenkmale.json: this is ND 6-101/B ('Pfaueninsel, ca. 100m nordoestlich vom Faehranleger', register coords 52.430667/13.122139, about 12m from this entry's own coordinates).",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      }
-    },
-    {
-      "id": "ber_013",
-      "name": "The Pond Oak of Pfaueninsel",
-      "species": "Sessile Oak (Quercus petraea), per Berlin's official Naturdenkmal register",
-      "age_estimate": "undocumented; likely 100-300 years, inferred from the island's wider oak stand",
-      "age_min": 100,
-      "age_max": 300,
-      "location": {
-        "address": "Pfaueninsel, north of the Wasservogelteich (waterfowl pond), 14109 Berlin",
-        "latitude": 52.4338,
-        "longitude": 13.1342,
-        "neighbourhood": "Pfaueninsel, Steglitz-Zehlendorf"
-      },
-      "verified_sources": [
-        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Steglitz-Zehlendorf",
-        "https://commons.wikimedia.org/wiki/File:Pfaueninsel_Oak.jpg"
-      ],
-      "access": "Free to walk once on the island, reached only by the chain ferry from Nikolskoer Weg, the same crossing as the island's other oaks.",
-      "transport": "Bus 218 (from S-Bahnhof Wannsee or Heckeshorn) to the 'Pfaueninsel' stop, then a 5 minute walk to the ferry landing, then the ferry crossing, then a longer walk to the northern part of the island near the Wasservogelteich.",
-      "location_precision": "confirmed",
-      "curation_status": "flagged",
-      "story": "The most precise thing known about this oak comes from a stranger's holiday photo. In May 2024 a visitor uploaded a picture of a wide-crowned oak north of the Wasservogelteich, Pfaueninsel's waterfowl pond, and the phone's own GPS placed the tree more accurately than any register description on file.\n\nBerlin's protected-tree list already knew it existed: one of four sessile oaks on the island carrying legal Naturdenkmal status, described only by compass bearing and a rough distance from a landmark. No age is recorded anywhere, and none should be invented, though the island's oak stand generally predates the royal garden built around it from 1793.\n\nWhat the photo confirms is that the tree is alive, healthy and exactly where the register said it should be: a wide, well-formed crown branching low over the path. It sits far enough from Pfaueninsel's other two documented oaks, roughly a kilometre, that it will not fit into the same five-minute stop, but the whole island is under a kilometre long, an easy single walk that takes in all three.\n\nSame ferry, same island, further into it: past the Schloss and toward the pond, where deciduous woodland shelters some of Pfaueninsel's least visited but longest-standing residents.",
-      "notes": "Pinned via a geotagged Wikimedia Commons photo (File:Pfaueninsel_Oak.jpg, CC BY 4.0, S. Makhin, taken 2024-05-19), whose EXIF coordinates agree with Berlin's official Naturdenkmal register description (ND 6-103/B, 'north of the Wasservogelteich') to within about 10m. No age recorded by either source.",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Pfaueninsel_Oak.jpg",
-        "license": "CC BY 4.0",
-        "attribution": "S.Makhin, CC BY 4.0, via Wikimedia Commons",
-        "status": "approved",
-        "width": 4080,
-        "height": 3072
-      }
-    },
-    {
-      "id": "ber_014",
-      "name": "The Ferry Landing Plane",
-      "species": "London Plane (Platanus x acerifolia)",
-      "age_estimate": "not documented, register-listed only",
-      "age_min": null,
-      "age_max": null,
-      "location": {
-        "address": "Pfaueninselchaussee 100, west of the Wirtshaus zur Pfaueninsel, 14109 Berlin",
-        "latitude": 52.428433,
-        "longitude": 13.121932,
-        "neighbourhood": "Pfaueninsel ferry landing, Steglitz-Zehlendorf"
-      },
-      "story": "Three of Pfaueninsel's protected oaks require a ferry ticket. This plane tree does not. Berlin's Naturdenkmal register lists it at Pfaueninselchaussee 100, the address of the Wirtshaus zur Pfaueninsel, the old inn that has stood at the mainland ferry dock since long before the chain ferry became the island's only public access. The oaks across the water needed the eighteenth century royal garden that grew up around them to survive this long; this plane needed nothing more than the road leading to the crossing point, protected for its beauty and its tie to the place rather than for age or rarity, the reason the district gives on its own designation record. No planting date survives, and no second source beyond the government ordinance has turned up despite real searching, an honest gap rather than an invented history. What makes it worth including anyway is the position: anyone heading for the Pfaueninsel oaks passes directly beside it, on the free side of the water, before they have paid for anything at all. See this one on the way in, whether or not the ferry crossing that follows fits the day.",
-      "verified_sources": [
-        "data/registers/berlin-naturdenkmale.json (register_id 6-71/B, DL-DE-Zero 2.0)"
-      ],
-      "access": "Free, and no ferry ticket required: this tree stands on the mainland side of the crossing, by the Wirtshaus zur Pfaueninsel restaurant and ferry dock, unlike the island's other protected oaks, which need a paid ferry.",
-      "transport": "Bus 218 (from S-Bahnhof Wannsee or Heckeshorn) to the 'Pfaueninsel' stop, then under 5 minutes on foot to the ferry landing area",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "Berlin Naturdenkmal register_id 6-71/B, designated 1993-03-02, reason given as 'Schoenheit, landeskundliche Gruende' (beauty, regional-historical significance), not age or rarity, so no age is claimed. Only one source found: the register (and the underlying berlin.de ordinance PDF, which is the same government designation read twice, not a second independent source). Two verify passes searched baumkunde.de and monumentaltrees.com (403-blocked) for a tree-specific second source; none found. Commons geosearch within 250m returned nothing, so no dated photo confirms current vitality; treat as likely standing but unconfirmed. Location finding worth keeping: the register address (Pfaueninselchaussee 100) is confirmed via ADAC Maps and pfaueninsel.de as the mainland ferry-dock side, not the island, so this tree is free to see without a ferry ticket.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "ber_015",
-      "name": "The Cut-Leaf Oak of Pfaueninsel",
-      "species": "Sessile Oak, cut-leaf variety (Quercus petraea var. laciniata)",
-      "age_estimate": "not documented, register-listed only",
-      "age_min": null,
-      "age_max": null,
-      "location": {
-        "address": "Pfaueninsel, roughly 150m northeast of the Schloss, 14109 Berlin",
-        "latitude": 52.431763,
-        "longitude": 13.121202,
-        "neighbourhood": "Pfaueninsel, Steglitz-Zehlendorf"
-      },
-      "story": "Forty five metres from Pfaueninsel's Great Oak stands a second, stranger oak that Berlin protects for an entirely different reason. Where its famous neighbour earned Naturdenkmal status for size and disputed age, this one is registered for rarity alone: a cut-leaf sessile oak, Quercus petraea var. laciniata, a naturally occurring variety with deeply dissected, almost fern-like foliage instead of the plain oval leaf every other oak on the island carries. The two trees stand close enough that a visitor could assume the register was describing the same tree twice. It is not. The government ordinance that protects both lists them under separate numbers, at separate coordinates, for separate reasons, one for its bulk, the other purely because its leaf shape almost never occurs in the wild. No age is recorded for this one at all, since rarity rather than antiquity is the whole case for protecting it, and no source beyond the designation record itself has been found describing this specific tree. Find the Great Oak first, then look forty five metres further for its odd, deeply cut cousin, the rarer of the two despite standing in its more famous neighbour's shadow.",
-      "verified_sources": [
-        "data/registers/berlin-naturdenkmale.json (register_id 6-108/B, DL-DE-Zero 2.0)"
-      ],
-      "access": "Free to walk once on the island, reached only by the chain ferry from Nikolskoer Weg, the same crossing as the island's other oaks.",
-      "transport": "Bus 218 (from S-Bahnhof Wannsee or Heckeshorn) to the 'Pfaueninsel' stop, then a 5 minute walk to the ferry landing, then the ferry crossing, then roughly 10-15 minutes into the island to the area northeast of the Schloss, close to the Great Oak.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "Berlin Naturdenkmal register_id 6-108/B, designated 1993-03-02, reason 'Seltenheit' (rarity) for the cut-leaf variety specifically ('Geschlitzblaettrige Trauben-Eiche' in the ordinance text). Distinctness confirmed against the already-published ber_011 (45m away, register 6-102/B): baumkunde.de's entry for ber_011's exact coordinates describes an ordinary crown with no cut-leaf note, while the ordinance separately and specifically designates 6-108/B for its dissected foliage at a distinct coordinate, so these are two real trees, not one register duplicate. Only one source found (the register/ordinance, one government designation read two ways, not two independent sources); two verify passes searched baumkunde.de, ostdeutsches-baumarchiv.de and monumentaltrees.com (403-blocked) without finding a tree-specific second source. Commons geosearch within 100m returned nothing, so no dated photo confirms current vitality; treat as likely standing but unconfirmed.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "ber_016",
-      "name": "The Lietzensee Plane",
-      "species": "London Plane (Platanus x acerifolia)",
-      "age_estimate": "roughly 220 years",
-      "age_min": 205,
-      "age_max": 235,
-      "location": {
-        "address": "Lietzenseepark, north shore near Wundtstrasse 56, 14057 Berlin",
-        "latitude": 52.5075,
-        "longitude": 13.28676,
-        "neighbourhood": "Charlottenburg, Charlottenburg-Wilmersdorf"
-      },
-      "story": "This plane added 43 centimetres to its waistline in ten years. Measured at chest height it went from 6.00 metres in 2015 to 6.43 metres in 2025, which by circumference makes it the sixth thickest tree on record anywhere in Berlin. A laser measurement in 2025 put its height at 22 metres.\n\nThe date usually given for its planting is 1807, an estimate rather than a ring count. That would make it a sapling in an occupied city, the year after Napoleon's army marched through the Brandenburg Gate and took the Quadriga off the top of it to Paris. Everything around the tree arrived later. Lietzenseepark is a twentieth century arrangement of terraces and lakeside paths, laid out around trees that were already big when the surveyors turned up.\n\nBerlin protects it as a natural monument under the number 4-26/B, which is the city saying in administrative language that nobody touches this one. It was photographed alive and in full leaf in May 2025.\n\nThe register keeps no age and no girth of its own, so both figures above come from the volunteer surveyors who have been measuring it every five years, which is also how anyone knows it is still growing. From here the shore path runs about 170 metres to a Caucasian wingnut, the other reason this lake is on the map.",
-      "verified_sources": [
-        "https://www.berlin.de/sen/uvk/_assets/natur-gruen/naturschutz/schutzgebiete/aktuelle-verfahren/ndvoe_anl1_201201.pdf",
-        "https://www.monumentaltrees.com/en/deu/berlin/berlin/10978_lietzenseeparks/21543/"
-      ],
-      "access": "Free, public park (Lietzenseepark)",
-      "transport": "Sophie-Charlotte-Platz or Kaiserdamm (U2), about 10-12 minutes' walk",
-      "location_precision": "confirmed",
-      "curation_status": "ai_generated",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      }
-    },
-    {
-      "id": "ber_017",
-      "name": "The Lietzensee Wingnut",
-      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
-      "age_estimate": "roughly 100 years",
-      "age_min": 90,
-      "age_max": 110,
-      "location": {
-        "address": "Lietzenseepark, northeast section near Lietzenseeufer 5, 14057 Berlin",
-        "latitude": 52.50785,
-        "longitude": 13.290788,
-        "neighbourhood": "Charlottenburg, Charlottenburg-Wilmersdorf"
-      },
-      "story": "Berlin has five Caucasian wingnuts on record, and this one is not yet a hundred years old. The planting date on file is 1927, which by the standards of most trees on this map is recent, and it is not why anyone stops here.\n\nThe shape is. The trunk breaks into several stems close to the ground, so the surveyors who measured it gave up on the usual chest height and put the tape around the base instead: 5.94 metres at ground level, a figure they flagged themselves as flattering, because a fork counts as girth in a way a single trunk never does. What it produces is a tree that reads as a small grove growing out of one root plate.\n\nPterocarya fraxinifolia comes from the Caucasus and northern Iran, where it grows in wet ground along rivers, which is why it has done so well on the edge of a Berlin lake and why it is a rare thing in the drier planting beds of the rest of the city. In midsummer it hangs chains of winged nutlets, half a metre long, off the tips of every branch.\n\nBerlin protects it as natural monument 4-25/B. The most recent published photograph of it dates from June 2015 and the register listing has carried it since, so if you find it changed, tell us. The Lietzensee plane stands about 170 metres along the same shore.",
-      "best_time": {
-        "months": [
-          7,
-          8
-        ],
-        "kind": "catkins",
-        "label": "July and August, when half-metre chains of winged nutlets hang from every branch tip"
-      },
-      "verified_sources": [
-        "https://www.berlin.de/sen/uvk/_assets/natur-gruen/naturschutz/schutzgebiete/aktuelle-verfahren/ndvoe_anl1_201201.pdf",
-        "https://www.monumentaltrees.com/en/deu/berlin/berlin/10978_lietzenseeparks/21539/"
-      ],
-      "access": "Free, public park (Lietzenseepark)",
-      "transport": "Sophie-Charlotte-Platz or Kaiserdamm (U2), about 10-12 minutes' walk",
-      "location_precision": "confirmed",
-      "curation_status": "ai_generated",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      }
-    },
-    {
-      "id": "ber_018",
-      "name": "The Karpfenteich Elm",
-      "species": "European White Elm (Ulmus laevis)",
-      "age_estimate": "not documented",
-      "age_min": null,
-      "age_max": null,
-      "location": {
-        "address": "Schlosspark Charlottenburg, southeastern corner of the Karpfenteich, Spandauer Damm, 14059 Berlin",
-        "latitude": 52.524056,
-        "longitude": 13.295944,
-        "neighbourhood": "Charlottenburg, Charlottenburg-Wilmersdorf"
-      },
-      "story": "Nobody knows how old this elm is, and that is the honest answer rather than a gap waiting to be filled. Berlin protects it as natural monument 4-27/B at the southeastern corner of the carp pond behind Charlottenburg Palace, and neither the city register nor the surveyors who have measured it twice will put a year on it.\n\nWhat is on record is size and a near standstill. Its trunk was 4.85 metres around in 2015 and 4.88 metres in 2020, roughly six millimetres of growth a year, the pace of a tree that finished the growing part of its life a long time ago. A laser put it at 21.5 metres tall in July 2020.\n\nThe species is the reason to look twice. European white elm is uncommon in city plantings, and Dutch elm disease has taken most of the big elms across the continent over the past century, so a mature one of this girth is a survivor rather than a specimen.\n\nIts address helps. The grounds were laid out in the 1690s as the formal garden of Sophie Charlotte's summer palace and later loosened into an English landscape park, and the carp pond it stands on belongs to that second version. The swamp cypress at the other end of the same park is about a hundred metres away. The last published photographs of the elm were taken in February 2015 and July 2020.",
-      "verified_sources": [
-        "https://www.berlin.de/sen/uvk/_assets/natur-gruen/naturschutz/schutzgebiete/aktuelle-verfahren/ndvoe_anl1_201201.pdf",
-        "https://www.monumentaltrees.com/en/deu/berlin/berlin/8696_schlossescharlottenburg/20545/"
-      ],
-      "access": "Free, public park (Schlosspark Charlottenburg)",
-      "transport": "Richard-Wagner-Platz (U7) or Sophie-Charlotte-Platz (U2), about 12-15 minutes' walk",
-      "location_precision": "confirmed",
-      "curation_status": "flagged",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      }
-    }
-  ]
+ "city": "Berlin",
+ "country": "Germany",
+ "status": "needs_curation",
+ "intro": "Berlin protects around 600 individual trees as Naturdenkmäler, and most of them are oaks: pedunculate oaks planted by foresters, princes and protestors across four centuries in a city that has been besieged, bombed and divided more than once. Three of these stand in the Tegel Forest alone, home to the capital's record holders for oldest and thickest tree. The rest range from a Louisiana swamp cypress growing in a Prussian palace garden to an oak vandalized as a political protest against the Kaiser it was planted to honor. Most are free to see.",
+ "meta_description": "Berlin's ancient trees range from an 800-year oak older than the city to a Louisiana swamp cypress in a Prussian palace garden. Mostly free to visit.",
+ "question_answer": "Berlin's oldest tree is Dicke Marie, a pedunculate oak in the Tegel Forest whose age is genuinely disputed: the city's forestry office estimates 800 to 900 years, while a 2021 survey by the German Dendrological Society's heritage-tree board put it at a more conservative 500 to 600. It stands on the lakeside path near Tegel harbour, a 12 to 15 minute walk from the Alt-Tegel U-Bahn station.",
+ "question_meta": "Berlin's oldest tree is a disputed 500 to 900 year old oak in the Tegel Forest. Where it stands, and the city's most remarkable trees.",
+ "question_context": "Two credible sources disagree on Dicke Marie's age by several centuries, which is unusual even for a tree this old: Berlin's forestry office has long cited 800 to 900 years, while the German Dendrological Society's own National Heritage Tree board reassessed it in 2021 and concluded 500 to 600 was more defensible, since internal decay makes precise dating impossible either way. This page states both rather than picking the more dramatic number. What is not disputed is the tree's identity: two Humboldt brothers, Alexander and Wilhelm, are said to have named it after their family cook around 1800, while summering nearby at Schloss Tegel, and the nickname stuck for over two centuries. On 9 July 2021 Dicke Marie became the first forest tree in Germany named a National Heritage Tree. It stands in the Tegel Forest on the northeastern tip of Tegeler See, reached on foot from the Alt-Tegel U-Bahn station via the harbour bridge and lakeside path. A short walk further into Schlosspark Tegel stands the Humboldteiche, a younger but far thicker oak that is sometimes confused for the record holder; the two are neighbours, not the same tree.",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Berlin?",
+   "a": "Dicke Marie, a pedunculate oak in the Tegel Forest. Its age is disputed: the city's forestry office estimates 800 to 900 years, while a 2021 heritage-tree survey concluded a more conservative 500 to 600."
+  },
+  {
+   "q": "Are Berlin's ancient trees free to visit?",
+   "a": "Most are free to see without a ticket. Two locations need paying for access: the Treskow Plane, which grows inside Tierpark Berlin and requires a zoo ticket, and the four oaks on Pfaueninsel, reached only by a short paid chain ferry (6 euros as of April 2026) since the island itself is car-free. A fifth Pfaueninsel-area tree, a London plane by the ferry dock, stands on the free mainland side and needs no ticket at all."
+  },
+  {
+   "q": "What is a Berlin Naturdenkmal?",
+   "a": "A legally protected natural monument, a designation Berlin has used since 1939 (with a comprehensive ordinance update in 2021) for around 600 individually registered trees, plus a small number of glacial boulders, chosen for age, size, rarity or historical significance."
+  },
+  {
+   "q": "Why are so many of Berlin's protected trees oaks?",
+   "a": "Pedunculate oak is the single most common species on Berlin's natural monument register, ahead of plane, chestnut and beech. Oaks tolerate the region's sandy Brandenburg soil better than most large trees and were the default choice for royal foresters, estate owners and municipal planners alike for centuries."
+  }
+ ],
+ "trees": [
+  {
+   "id": "ber_001",
+   "name": "Dicke Marie",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "500-900 years (disputed)",
+   "age_min": 500,
+   "age_max": 900,
+   "location": {
+    "address": "An der Malche, Tegeler Forst, 13507 Berlin",
+    "latitude": 52.59358,
+    "longitude": 13.265,
+    "neighbourhood": "Tegel, Reinickendorf"
+   },
+   "story": "Berlin's oldest tree is older than the city itself. When Berlin got its first written mention in 1237, this pedunculate oak in the Tegel Forest had likely already been growing for over a century, its germination dated to around 1107. How much older it has grown since is a genuine dispute. Forestry officials have long put it at 800 to 900 years. In 2021 the German Dendrological Society's own National Heritage Tree board reassessed the same trunk and came back with a more conservative 500 to 600, arguing that internal decay makes anything more precise a guess. Both numbers can't be right, and this project would rather say so than pick the more impressive one. What isn't disputed: two teenage brothers who summered nearby at Schloss Tegel, Alexander and Wilhelm von Humboldt, are said to have named the tree after the family's cook around 1800, and the joke outlived them both. Goethe reportedly rested in its shade in 1778. The oak has grown gnarled and hollow rather than tall, topping out at just 15 to 16 metres, its bulk going into a trunk nearly six metres round instead. On 9 July 2021 it became the first forest tree in Germany named a National Heritage Tree, a small formal honor for something that was already, by any count, the oldest living thing in a city of 3.8 million people.",
+   "best_time": {
+    "months": [
+     9,
+     10
+    ],
+    "kind": "fruit",
+    "label": "acorns drop, and a good mast year buries the ground in them"
+   },
+   "verified_sources": [
+    "https://de.wikipedia.org/wiki/Dicke_Marie",
+    "https://www.visitberlin.de/en/dicke-marie"
+   ],
+   "access": "Free, public forest, open at all times",
+   "transport": "12-15 min walk from Alt-Tegel U-Bahn (U6), via the Tegel harbour bridge and lakeside path",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Dicke_Marie.JPG",
+    "license": "CC BY-SA 3.0",
+    "attribution": "Maculata, via Wikimedia Commons",
+    "status": "approved",
+    "width": 3135,
+    "height": 4250
+   },
+   "curation_status": "flagged",
+   "notes": "Age is genuinely disputed between two credible sources: Berlin forestry authorities (800-900 years, per visitBerlin.de and multiple secondary sources) versus the German Dendrological Society's 2021 National Heritage Tree assessment (500-600 years, per de.wikipedia). Presented as a range with the disagreement named in the story per P7, rather than picking one figure. Coordinates from the German Wikipedia infobox.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "ber_002",
+   "name": "The Humboldt Oak",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "400-500 years",
+   "age_min": 400,
+   "age_max": 500,
+   "location": {
+    "address": "Schlosspark Tegel, Adelheidallee, 13507 Berlin",
+    "latitude": 52.595297,
+    "longitude": 13.274429,
+    "neighbourhood": "Tegel, Reinickendorf"
+   },
+   "story": "The thickest trunk in Berlin does not belong to the city's oldest tree. It belongs to its neighbour. A few hundred metres from Dicke Marie, inside the grounds of Schloss Tegel, this pedunculate oak has swollen to 7.80 metres around, wider than Dicke Marie despite being younger by centuries: 400 to 500 years old rather than 800 or more. It takes its name from the same family who has owned Schloss Tegel since 1766 and still does today, one of the few noble German estates that never left its original bloodline. Alexander von Humboldt, the naturalist whose name later ended up on a university, an ocean current and a squid, grew up walking past this oak on his way to the lake. Berlin listed it as a natural monument in 1939, protecting a crown that now spans 18 metres, wide enough to shade a tennis court. The palace itself only opens to visitors on Mondays between May and September, but the park around it, this tree included, stays open year round until sunset, for a suggested one euro donation left at the gate. Stand under it and you are looking at more wood, by circumference, than anywhere else in the German capital, a record that has nothing to do with age at all.",
+   "best_time": {
+    "months": [
+     9,
+     10
+    ],
+    "kind": "fruit",
+    "label": "acorns drop, and a good mast year buries the ground in them"
+   },
+   "verified_sources": [
+    "https://de.wikipedia.org/wiki/Humboldteiche",
+    "https://www.baumkunde.de/baumregister/2554-humboldteiche_im_schlosspark_tegel/"
+   ],
+   "access": "Free (a 1 euro donation is requested at the gate); park open daily until sunset, the palace interior open only on Mondays, May to September",
+   "transport": "12 min walk from Alt-Tegel U-Bahn (U6)",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Tegel_Schlosspark_Tegel.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Fridolin freudenfett, via Wikimedia Commons",
+    "status": "approved",
+    "width": 3000,
+    "height": 4000
+   },
+   "curation_status": "ai_generated",
+   "notes": "Naturdenkmal since 1939, registration 12-25/B. Girth (7.80 m) and age range (400-500 years) confirmed by two independent sources. Coordinates from a GPS-tagged tree registry source, used for cross-check.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "ber_003",
+   "name": "The Steinlanke Oak",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "350-400 years",
+   "age_min": 350,
+   "age_max": 400,
+   "location": {
+    "address": "Große Steinlanke, Grunewald, 14193 Berlin",
+    "latitude": 52.451445,
+    "longitude": 13.19112,
+    "neighbourhood": "Grunewald, Charlottenburg-Wilmersdorf"
+   },
+   "story": "Grunewald's oldest tree survived storms that took its own crown apart. Foresters put its age at 350 to 400 years depending on which survey is cited, a girth measurement that grew from 6.48 metres in 2018 to a commonly quoted 6.70 metres more recently, either of which means it was standing before Prussia existed as a kingdom. It grows at the Große Steinlanke, a quiet inlet of the Havel on the forest's western edge, its trunk gnarled and visibly weathered, the upper crown thinned by what local foresters describe as probable lightning strikes accumulated over centuries. A small sign near the Großes Fenster clearing, by the volunteer lifeguard station, points visitors to it, one of the few individually marked trees in a forest better known for its total size than any single specimen. Grunewald is Berlin's largest contiguous forest, threaded with lake paths popular with swimmers and joggers in summer, and this oak predates every villa and boathouse now standing near it. Reaching it takes real effort: the nearest train station, Wannsee, is nearly an hour's walk away, so most visitors take the 218 bus toward Theodor-Heuss-Platz and finish on foot along the shoreline. Nothing about it looks spectacular from a distance. Up close, the girth and the storm damage written into its upper branches tell a longer story than any plaque could.",
+   "best_time": {
+    "months": [
+     9,
+     10
+    ],
+    "kind": "fruit",
+    "label": "acorns drop, and a good mast year buries the ground in them"
+   },
+   "verified_sources": [
+    "https://www.gazette-berlin.de/artikel/2583-aeltester-baum-im-grunewald.html",
+    "https://forst-grunewald.de/?page_id=164"
+   ],
+   "access": "Free, public forest, open at all times",
+   "transport": "Bus 218 from S-Bahnhof Wannsee (toward Theodor-Heuss-Platz), then a lakeside forest walk; roughly 45-60 min on foot from Wannsee station if not using the bus",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Naturdenkmal_Stiel-Eiche_Forst_Grunewald_Jagen_100_2024-05-25_01.jpg",
+    "license": "CC0",
+    "attribution": "Leonhard Lenz (GPSLeo), via Wikimedia Commons",
+    "status": "approved",
+    "width": 8368,
+    "height": 5584
+   },
+   "curation_status": "flagged",
+   "notes": "Two independent measurements disagree slightly (6.48 m/2018 survey vs. 6.70 m in the more commonly cited figure; 350 vs. 400 years), presented as a range rather than picking one. Coordinates from a GPS-tagged source, cross-checked against the forest management site's own description of the location. Photo found and approved 2026-07-28: a Wiki Loves Earth 2024 upload explicitly titled \"Naturdenkmal Stiel-Eiche Forst Grunewald Jagen 100\", its own embedded geolocation (52.451547, 13.191778) landing within about 45m of this entry's own stored coordinate, essentially the same tree. Viewed directly: a large oak with a visibly damaged, hollowed lower trunk beside a small building's roofline, consistent with the DLRG lifeguard station this entry's story describes standing near.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "ber_004",
+   "name": "The Swamp Cypress of Charlottenburg",
+   "species": "Bald Cypress (Taxodium distichum)",
+   "age_estimate": "200 years",
+   "age_min": 190,
+   "age_max": 210,
+   "best_time": {
+    "months": [
+     10,
+     11
+    ],
+    "label": "late October, when it drops its needles like a deciduous tree, the habit that confuses visitors expecting a conifer to stay green"
+   },
+   "location": {
+    "address": "Schlosspark Charlottenburg, Spandauer Damm, 14059 Berlin",
+    "latitude": 52.52376,
+    "longitude": 13.29455,
+    "neighbourhood": "Charlottenburg, Charlottenburg-Wilmersdorf"
+   },
+   "story": "A swamp tree from the American South has spent two centuries in a Prussian palace garden. This bald cypress, native to the flooded river bottoms of the southeastern United States, went into the ground in Schlosspark Charlottenburg around 200 years ago, most likely during Peter Joseph Lenné's redesign of the grounds into an English-style landscape park. It has grown to five metres around and over 15 metres tall, dropping its needles every winter like a deciduous tree despite being a conifer, a habit that confuses first-time visitors expecting evergreen. Berlin protects it as a natural monument for a reason that has little to do with its size: its aging, partly hollow wood now shelters the hermit beetle, a rare, EU-protected species that depends on old, decaying timber exactly like this to survive at all. You are now more likely to help that beetle by leaving a tree standing than by planting a new one. The palace itself, the largest surviving Hohenzollern residence in Berlin, charges admission for its state rooms, but the gardens are free and open daily, the formal French parterre near the palace giving way further back to Lenné's looser, English-style paths, where this cypress stands among other 19th-century imports the royal gardeners tested against Berlin's winters. Most of them did not last two centuries. This one has.",
+   "verified_sources": [
+    "https://www.berliner-woche.de/charlottenburg/c-ausflugstipps/naturdenkmal-ist-rund-200-jahre-alt_a320645",
+    "https://www.baumkunde.de/baumregister/6383-sumpfzypresse_im_park_vonschloss_charlottenburg/"
+   ],
+   "access": "Free, palace gardens open daily; the state rooms charge admission separately",
+   "transport": "10 min walk from Sophie-Charlotte-Platz U-Bahn (U2) or Richard-Wagner-Platz U-Bahn (U7)",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Charlottenburg_Schlosspark_Sumpfzypresse-001.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Fridolin freudenfett, via Wikimedia Commons",
+    "status": "approved",
+    "width": 1920,
+    "height": 2560
+   },
+   "curation_status": "ai_generated",
+   "notes": "Age (~200 years), girth (~5 m) and height (>15 m) confirmed by two independent sources reporting matching figures. Coordinates converted from a degrees/minutes tree-registry reading of this specific specimen.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "ber_005",
+   "name": "The Great Elm of Treptower Park",
+   "species": "European White Elm (Ulmus laevis)",
+   "age_estimate": "250 years",
+   "age_min": 230,
+   "age_max": 270,
+   "location": {
+    "address": "Treptower Park, near the Rosengarten, 12435 Berlin",
+    "latitude": 52.491303,
+    "longitude": 13.47132,
+    "neighbourhood": "Treptow, Treptow-Köpenick"
+   },
+   "story": "The newest tree on Germany's national heritage register has its roots in a river. This European white elm, standing directly on the Spree's bank in Treptower Park, was declared a National Heritage Tree only on 25 September 2025, one of the most recent additions to a small national list that otherwise mostly honors trees for age or scale alone. This one earns its place partly through rarity: Ulmus laevis is a floodplain elm scarce enough in Germany that a healthy 250-year-old specimen counts as remarkable regardless of size. Its roots reach directly into the Spree, drawing on a water supply few park trees get, which foresters credit for a vigor unusual in a tree this old. The trunk measures 6.35 metres around and the crown rises 25 metres, making it one of the largest trees in a park better known for its Soviet war memorial than its vegetation. It stands near the Rosengarten, a short walk from the boat landing, easily found by anyone walking the riverside path instead of heading straight for the monument. Dutch elm disease wiped out most of mainland Europe's mature elms across the twentieth century, a fungus spread by bark beetles that killed trees by the millions. This species, less favored by those beetles than the more common field and Wych elms, simply kept growing while its relatives disappeared.",
+   "verified_sources": [
+    "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1592607.php",
+    "https://www.myheimat.de/berlin/c-natur/die-grosse-flatter-ulme-im-treptower-park-in-berlin_a3595038",
+    "https://nationalerbe-baeume.de/project/grosse-flatter-ulme-im-treptower-park-bundeshauptstadt-berlin/"
+   ],
+   "access": "Free, public park",
+   "transport": "5 min walk from Treptower Park S-Bahn station (S8/S9/S41/S42/S85/S46)",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Naturdenkmal_Flatter-Ulme_Treptower_Park_Berlin-Alt-Treptow_2025-05-06_01.jpg",
+    "license": "CC0 1.0",
+    "attribution": "Leonhard Lenz (GPSLeo), via Wikimedia Commons",
+    "status": "approved",
+    "width": 8144,
+    "height": 5424
+   },
+   "curation_status": "ai_generated",
+   "notes": "Declared a Nationalerbe-Baum (National Heritage Tree) 25 September 2025, confirmed by the district's own press release and a second local news source. Location upgraded to confirmed: the national heritage-tree register's own project page (run by a TU Dresden forestry professor) gives a specific GPS reading and a walking description (750m from the S-Bahn station along the riverside promenade, 150m east of the boat landing), a roughly 460m correction from the previous general-park estimate. A second independent source agrees within 15m: a geotagged Wikimedia Commons photo of this exact tree (file title names it directly), also the photo used below.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "ber_006",
+   "name": "The Mahlsdorf Village Lime",
+   "species": "Small-leaved Lime (Tilia cordata)",
+   "age_estimate": "300-400 years",
+   "age_min": 300,
+   "age_max": 400,
+   "best_time": {
+    "months": [
+     6,
+     7
+    ],
+    "label": "late June, when the lime blossom scents the street",
+    "kind": "flowering"
+   },
+   "location": {
+    "address": "Hönower Straße 13, 12623 Berlin",
+    "latitude": 52.5061,
+    "longitude": 13.61255,
+    "neighbourhood": "Mahlsdorf, Marzahn-Hellersdorf"
+   },
+   "story": "In 2021 Berlin's district register dropped two of Mahlsdorf's protected trees, a Balkan horse chestnut and a black poplar, from its list of natural monuments. A crooked, ten metre lime standing in front of the neighbourhood's oldest building was not one of them. The Mahlsdorf Village Lime, a small-leaved lime outside the old parish church on Hönower Straße, has been protected since 1993 for outright rarity rather than size, a designation it has now outlasted two neighbours to keep. Its age is put at a minimum of 300 years, with local historians tracing the planting to the 17th century. Height was never the point: centuries of storm damage bent and hollowed the crown instead of raising it, leaving a squat, mossy shape barely taller than the church roofline while its trunk swelled to a girth of 4.45 metres, wider than many trees three times its height. By 1995 the district judged the limbs unsafe to leave unsupported and spent 8,000 Deutsche Mark bracing them with steel cables and fencing the base, work that still holds the tree together today. It stands on the old village high street, beside a church that itself survived the Thirty Years' War and the 1945 bombing, two witnesses to the same stretch of road that outlasted the empire, kingdom and two republics built around them.",
+   "verified_sources": [
+    "https://de.wikipedia.org/wiki/Mahlsdorfer_Linde",
+    "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Marzahn-Hellersdorf",
+    "https://alles-mahlsdorf.de/mahlsdorf-bekommt-ein-neues-naturdenkmal-dafuer-sollen-zwei-andere-gestrichen-werden/"
+   ],
+   "access": "Free, stands on public ground in front of the church on Hönower Straße, viewable at all times (a low fence protects the base and root area)",
+   "transport": "10-12 min walk from Berlin-Mahlsdorf S-Bahn station (S5)",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/2019-06-29_Mahlsdorfer_Linde_2.jpg",
+    "license": "CC BY 4.0",
+    "attribution": "Bernard Ladenthin, via Wikimedia Commons",
+    "status": "approved",
+    "width": 4608,
+    "height": 3456
+   },
+   "curation_status": "ai_generated",
+   "notes": "Replacement for the former ber_006, 'The Bellevue Oak', pulled 2026-07-29 after independent confirmation the original tree is dead: berliner-woche.de's own 2015 headline read 'Die alte Stieleiche ist tot' (the old oak is dead), and ostdeutsches-baumarchiv.de states it was fully dead by 2018 ('ein schneller Tod'). The prior entry's 'declining' framing undersold this; per CLAUDE.md's living-tree rule a dead tree is never a collectible entry. Id reused so the old URL redirects rather than 404s (see RENAMED_TREE_SLUGS in scripts/build_site.py). New tree researched from scratch: age is a floor ('at least 300 years' per Wikipedia, citing Vieth 2004) presented as a range rather than a false precise figure; confirmed still standing and actively protected via alles-mahlsdorf.de (2021), which reports it explicitly retained Naturdenkmal status in that year's register update while two other Mahlsdorf trees were delisted. Photo personally viewed and confirmed: a dramatically leaning, moss-covered, clearly living trunk in full leaf beside the church wall, dated 29 June 2019.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "ber_007",
+   "name": "The Treskow Plane",
+   "species": "London Plane (Platanus x acerifolia)",
+   "age_estimate": "250 years",
+   "age_min": 230,
+   "age_max": 270,
+   "location": {
+    "address": "Alfred-Kowalke-Straße 29, Tierpark Berlin, 10315 Berlin",
+    "latitude": 52.50658,
+    "longitude": 13.52152,
+    "neighbourhood": "Friedrichsfelde, Lichtenberg"
+   },
+   "story": "The oldest tree at Berlin's Tierpark predates the zoo around it by roughly two centuries. This London plane, its branches so intertwined that some have fused into single, oval cross-sectioned limbs, was already standing when the grounds were still the pleasure gardens of Friedrichsfelde Palace, a Hohenzollern summer residence later owned by the agricultural reformer Johann Carl Sigismund von Treskow, whose name it now carries. Lichtenberg's environmental office estimated its age at 250 years in a 2015 survey, putting its planting sometime in the mid-1700s, two centuries before the palace grounds reopened as a public zoo in 1955. It has grown a trunk 4.65 metres around and a crown 20 metres wide, tall enough at 25 metres to be visible over the enclosures near it. Reaching it requires a Tierpark Berlin ticket, since it now stands inside the zoo's grounds rather than in an open park, an unusual condition for a tree on this list but not a disqualifying one: anyone can buy a ticket at the gate. Look past the animals for a moment and you are standing under a plane tree that has outlasted a palace, survived the transition from royal garden to public zoo, and kept growing through both.",
+   "verified_sources": [
+    "https://de.wikipedia.org/wiki/Treskow-Platane",
+    "https://dewiki.de/Lexikon/Liste_der_Naturdenkmale_im_Bezirk_Lichtenberg"
+   ],
+   "access": "Paid entry (Tierpark Berlin zoo ticket required)",
+   "transport": "2 min walk from Tierpark U-Bahn station (U5)",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Treskow-Platane_2014-3_Berlin-Frf_1474-1354-120.jpg",
+    "license": "CC BY-SA 3.0",
+    "attribution": "Lotse, via Wikimedia Commons",
+    "status": "approved",
+    "width": 2736,
+    "height": 3648
+   },
+   "curation_status": "ai_generated",
+   "notes": "Naturdenkmal since 2 March 1993 for regional historical significance, with additional protection for distinctive character added 20 May 2021. Common name standardized to 'London Plane' per project convention for Platanus x acerifolia/x hispanica. Coordinates from the German Wikipedia infobox.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "ber_008",
+   "name": "The Kaisereiche",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "143 years",
+   "age_min": 140,
+   "age_max": 147,
+   "location": {
+    "address": "Rheinstraße / Moselstraße, 12161 Berlin",
+    "latitude": 52.46889,
+    "longitude": 13.33278,
+    "neighbourhood": "Friedenau, Tempelhof-Schöneberg"
+   },
+   "story": "Someone tried to kill this oak as a political protest, and Berlin planted a replacement within weeks. The original Kaisereiche went into the ground on 22 March 1879, planted by a local publisher to mark Kaiser Wilhelm I's 82nd birthday and golden wedding anniversary, at what was then a traffic circle on the edge of the new suburb of Friedenau. In November 1883, five years after two separate assassination attempts on the Kaiser had given Chancellor Bismarck his pretext for the Anti-Socialist Laws, someone damaged the tree badly enough that it needed full replacement, an act read at the time as a protest against those same laws. The oak standing at the corner of Rheinstraße and Moselstraße today is that replacement, which makes it roughly 143 years old rather than the 147 the original planting date would suggest, a small but honest distinction most retellings skip. Berlin protects it as a natural monument, and in 2004 a Hohenzollern descendant, Franz Friedrich Prinz von Preußen, unveiled a plaque marking 125 years since the first tree went in. The intersection has no official street name of its own, but Berlin's transit map still labels the bus stop and taxi rank here Kaisereiche, a small act of memory that has outlasted the publisher, the Kaiser, and the empire both men served.",
+   "best_time": {
+    "months": [
+     9,
+     10
+    ],
+    "kind": "fruit",
+    "label": "acorns drop, and a good mast year buries the ground in them"
+   },
+   "verified_sources": [
+    "https://de.wikipedia.org/wiki/Kaisereiche_(Berlin)",
+    "https://www.gedenktafeln-in-berlin.de/gedenktafeln/detail/kaisereiche/1823"
+   ],
+   "access": "Free, public street corner",
+   "transport": "10 min walk from S-Bahnhof Feuerbachstraße (S1), or the Kaisereiche bus stop directly",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Berlin_Friedenau_Kaisereiche_22.06.2015_12-44-49.JPG",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Dirk Ingo Franke, via Wikimedia Commons",
+    "status": "approved",
+    "width": 3641,
+    "height": 4106
+   },
+   "curation_status": "ai_generated",
+   "notes": "Age calculated from the 1883 replacement planting, not the 1879 original, since the two are different physical trees per both sources. Coordinates from the German Wikipedia infobox.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "ber_009",
+   "name": "The Ginkgo of Schlosspark Britz",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "140 years",
+   "age_min": 136,
+   "age_max": 146,
+   "location": {
+    "address": "Alt-Britz 73, Schlosspark Britz, 12359 Berlin",
+    "latitude": 52.4470352,
+    "longitude": 13.439452,
+    "neighbourhood": "Britz, Neukölln"
+   },
+   "story": "Berlin's oldest and tallest ginkgo survived something most of its European relatives never had to: being fashionable. Ginkgo biloba reached European gardens in the 18th century as a botanical curiosity, a living link to trees that grew alongside dinosaurs, and wealthy estates across the continent planted them as status symbols rather than for shade or timber. This one went into Gutspark Britz sometime between 1880 and 1890, when royal garden inspector Wilhelm Nahlop redesigned the grounds of a former manor estate into the landscape park still standing today. It has grown a trunk over three metres around and stands close to 20 metres tall, the largest ginkgo recorded anywhere in the German capital. Ginkgos are dioecious, meaning individual trees are strictly male or female, and this one's autumn performance is the reward for the wait: every leaf turns a uniform gold within days of each other in late October, then drops almost at once, rather than the gradual, patchy fade most trees go through. The palace itself, Schloss Britz, charges a small admission fee for its restored period rooms, but the surrounding Gutspark is free and open daily, its grounds having won a national landscape prize in 1997, decades after the ginkgo inside it had already quietly become the biggest in Berlin.",
+   "verified_sources": [
+    "https://schloss-gutshof-britz.de/schloss-und-gutshof-britz/geschichte-architektur/schlosspark/ginkgo",
+    "https://www.berlin.de/tourismus-neukoelln/entdecken/artikel.1153612.php",
+    "https://www.openstreetmap.org/node/622505161"
+   ],
+   "access": "Free (Gutspark); Schloss Britz's period rooms charge separate admission",
+   "transport": "10 min walk from Parchimer Allee U-Bahn (U7), or bus 181 to Alt-Britz",
+   "best_time": {
+    "months": [
+     10,
+     11
+    ],
+    "label": "late October, when every leaf turns gold and drops within days"
+   },
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/F%C3%A4cherblattbaum_Gutspark_Britz_1.JPG",
+    "license": "CC BY-SA 3.0",
+    "attribution": "Barfisch, via Wikimedia Commons",
+    "status": "approved",
+    "width": 2976,
+    "height": 3968
+   },
+   "curation_status": "ai_generated",
+   "notes": "Planting window (1880-1890) and 'oldest and tallest ginkgo in Berlin' claim confirmed by two independent sources (the palace's own history page and a Berlin.de tourism article). Location upgraded to confirmed: OpenStreetMap carries a single Ginkgo biloba node in the park tagged with the estate's own inventory reference (ref:schlossgutshofbritz=7), the same reference scheme used on neighbouring catalogued trees in the same park, about 120m from the previous palace-address estimate, corroborated independently by Wikidata's coordinates for the same tree's Naturdenkmal designation (ND-8-2/B), about 110m away. Photo is from a dedicated Commons category for this exact tree; viewed directly, shows a tall mature tree with characteristic ginkgo fan-shaped leaves and a monument information sign on site. Approved.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "ber_010",
+   "name": "The Giant Sequoia of the Tiergarten",
+   "species": "Giant Sequoia (Sequoiadendron giganteum)",
+   "age_estimate": "135 years",
+   "age_min": 130,
+   "age_max": 140,
+   "location": {
+    "address": "Englischer Garten, Großer Tiergarten, near Altonaer Straße, 10557 Berlin",
+    "latitude": 52.51638,
+    "longitude": 13.3463,
+    "neighbourhood": "Tiergarten, Mitte"
+   },
+   "story": "A tree that can live 3,000 years in California has had 135 of them in central Berlin. This giant sequoia, planted in 1891 in the Englischer Garten section of the Tiergarten, arrived in Europe only decades after the species itself did: the first seeds reached the continent in 1853, imported from California just two years after the tree was formally described at all, setting off a brief craze among wealthy estate owners for what nurseries of the time marketed as Wellingtonia. Berlin's planting, in the city's largest and most central park, is modest by the standards of a species that can exceed 90 metres in its native range, but it remains one of the tallest and bulkiest conifers growing anywhere in the capital. It stands a short walk from Schloss Bellevue, the German president's official residence, in a section of the Tiergarten deliberately landscaped in the looser, informal English style rather than the geometric French gardens found elsewhere in the park. Two world wars swept through the Tiergarten in the twentieth century, and postwar Berliners felled most of the park's remaining trees for firewood during the famine winters that followed 1945. This sequoia, planted decades earlier by gardeners with no idea what the century ahead held, made it through anyway.",
+   "verified_sources": [
+    "https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/umwelt-und-naturschutzamt/naturschutz/artikel.246730.php",
+    "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Berlin"
+   ],
+   "access": "Free, public park",
+   "transport": "10 min walk from Bellevue S-Bahn station, inside the Tiergarten's Englischer Garten section",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Riesenmammutbaum_Berlin_Gr_Tiergarten.jpg",
+    "license": "CC BY-SA 3.0",
+    "attribution": "Miriam Guterland, via Wikimedia Commons",
+    "status": "approved",
+    "width": 3864,
+    "height": 5152
+   },
+   "curation_status": "ai_generated",
+   "notes": "Naturdenkmal 1-41/B. Planting year (1891) confirmed by the district's own Naturdenkmale page; species arrival in Europe (1853 seed import) is well-established botanical history, cited independently. Coordinates from the Wikipedia natural monuments list entry for this specific tree.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "ber_011",
+   "name": "The Great Oak of Pfaueninsel",
+   "species": "Sessile Oak (Quercus petraea)",
+   "age_estimate": "roughly 200-400 years, undocumented",
+   "age_min": 200,
+   "age_max": 400,
+   "location": {
+    "address": "Pfaueninsel, Schlosswiese, 14109 Berlin",
+    "latitude": 52.4315,
+    "longitude": 13.1207,
+    "neighbourhood": "Pfaueninsel, Steglitz-Zehlendorf"
+   },
+   "verified_sources": [
+    "https://www.baumkunde.de/baumregister/2135-eiche_auf_der_pfaueninsel_bei_berlin/",
+    "https://www.ostdeutsches-baumarchiv.de/photosearch/traubeneiche-1-pfaueninsel-berlin",
+    "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Steglitz-Zehlendorf"
+   ],
+   "access": "Free to walk once on the island. The island itself is car-free and reached only by a short chain ferry from the Nikolskoer Weg landing (adult single ticket 6 euros as of April 2026, family ticket 12 euros); the castle interior (separate, recently reopened after 2021-2025 restoration) is a different ticket and not needed to see this tree.",
+   "transport": "Bus 218 (from S-Bahnhof Wannsee or Heckeshorn) to the 'Pfaueninsel' stop, then a 5 minute walk to the ferry landing, then the ferry crossing, then roughly a 10-15 minute walk into the island to the Schlosswiese meadow area",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "Pfaueninsel's oaks were already old when the island became a royal garden. In 1793, Friedrich Wilhelm II ordered the landscaping of this Havel island, and his court gardener kept the oak stand standing rather than clear it, because the trees were already a century old by then. This one, on the meadow near the Schloss, may be one of those originals: at 565 to 567 centimetres around, it was until recently the largest and most striking oak on the island, its short trunk splitting low into one main stem and five curving limbs.\n\nNobody has measured its age directly, so a range is the honest answer here: somewhere between 200 and 400 years, bracketed from the island's own history rather than a bore sample. What is on record is a more recent event. Surveyors who examined the tree later criticized a crown reduction carried out on it, describing the pruning as unnecessary and unprofessional work on a specimen that deserved better handling.\n\nThe island itself has stayed almost untouched since. Pfaueninsel is reachable only by a short chain ferry, has no cars, and keeps the eighteenth century pleasure-garden layout Friedrich Wilhelm II laid out around trees like this one. Peacocks still roam it, the reason for the name. Walk the meadow near the Schloss and this is the oak the Prussian court gardener chose to save.",
+   "best_time": {
+    "months": [
+     1
+    ],
+    "kind": "bare silhouette",
+    "label": "January, when the leaves are gone and the five-limbed crown structure shows plainly"
+   },
+   "notes": "Two independent tree registries (baumkunde.de Reg-Nr. 2135, Ostdeutsches Baumarchiv) record the same specimen, GPS ~10m apart, girth agreeing at 565-567cm (measured 2019). No source gives a direct age; the range is bracketed from Pfaueninsel's own history (Friedrich Wilhelm II's 1793 landscaping deliberately kept oaks that were already a century old). CONFIRMED 2026-08-07 against data/registers/berlin-naturdenkmale.json: this is ND 6-102/B ('Pfaueninsel, ca. 100m nordoestlich vom Schloss', register coords 52.431453/13.120752, about 10m from this entry's own coordinates).",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "ber_012",
+   "name": "The Tuereiche (Door Oak) of Pfaueninsel",
+   "species": "Sessile Oak (Quercus petraea) per monumentaltrees.com; Pedunculate Oak (Quercus robur) per baumkunde.de, an unresolved species conflict",
+   "age_estimate": "roughly 250 years, undocumented",
+   "age_min": 200,
+   "age_max": 300,
+   "location": {
+    "address": "Pfaueninsel, near the Schloss, 14109 Berlin",
+    "latitude": 52.430565,
+    "longitude": 13.122087,
+    "neighbourhood": "Pfaueninsel, Steglitz-Zehlendorf"
+   },
+   "verified_sources": [
+    "https://www.baumkunde.de/baumregister/6402-tuereiche_auf_der_pfaueninsel/",
+    "https://www.monumentaltrees.com/de/deu/berlin/berlin/7113_pfaueninsel/28796/"
+   ],
+   "access": "Free to walk once on the island, reached only by the chain ferry from Nikolskoer Weg, the same crossing as the island's other oaks.",
+   "transport": "Bus 218 (from S-Bahnhof Wannsee or Heckeshorn) to the 'Pfaueninsel' stop, then a 5 minute walk to the ferry landing, then the ferry crossing, then a walk into the island near the Schloss.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "Somebody built a working door into this oak's trunk, and it is still there. The Tuereiche, the Door Oak, stands near the Schloss on Pfaueninsel, its 5.58 metre girth measured just once, in 2017, by a tree registry that has not been back since.\n\nTwo sources agree on its size and disagree on its species. One calls it a pedunculate oak, the other a sessile oak, working from what looks like the same underlying survey rather than two independent looks at the tree. Berlin's own list of protected trees on the island names four sessile oaks and no pedunculate ones, which tips the balance without settling it outright.\n\nIts age, about 250 years by the registry's estimate, is a guess made honestly: nobody has cored it, and the door itself, whatever its original purpose, carries no date of its own. What is certain is the island around it. Pfaueninsel became a royal retreat in 1793, and Friedrich Wilhelm II's gardeners built the new landscape around oaks that already stood there, this one very possibly among them.\n\nReach it by the same short ferry that serves the rest of the island's oaks, then walk toward the Schloss. Look for the door before you look for the tree. Most visitors do it the other way round and miss it entirely.",
+   "notes": "Two sources (baumkunde.de, monumentaltrees.com) give identical girth (5.58m) and height (8.5m) figures, which suggests one underlying survey rather than fully independent measurements; delivered flagged rather than confidently confirmed. Species is genuinely disputed between the two sources (see species field); Berlin's official register lists only sessile oaks among Pfaueninsel's four designated NDs, which weakly favours that reading without settling it (this pass's register match below settles it outright: 6-101/B is filed as Quercus petraea, no disagreement on the register side). Last dated confirmation of life is from 2019. CONFIRMED 2026-08-07 against data/registers/berlin-naturdenkmale.json: this is ND 6-101/B ('Pfaueninsel, ca. 100m nordoestlich vom Faehranleger', register coords 52.430667/13.122139, about 12m from this entry's own coordinates).",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "ber_013",
+   "name": "The Pond Oak of Pfaueninsel",
+   "species": "Sessile Oak (Quercus petraea), per Berlin's official Naturdenkmal register",
+   "age_estimate": "undocumented; likely 100-300 years, inferred from the island's wider oak stand",
+   "age_min": 100,
+   "age_max": 300,
+   "location": {
+    "address": "Pfaueninsel, north of the Wasservogelteich (waterfowl pond), 14109 Berlin",
+    "latitude": 52.4338,
+    "longitude": 13.1342,
+    "neighbourhood": "Pfaueninsel, Steglitz-Zehlendorf"
+   },
+   "verified_sources": [
+    "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Steglitz-Zehlendorf",
+    "https://commons.wikimedia.org/wiki/File:Pfaueninsel_Oak.jpg"
+   ],
+   "access": "Free to walk once on the island, reached only by the chain ferry from Nikolskoer Weg, the same crossing as the island's other oaks.",
+   "transport": "Bus 218 (from S-Bahnhof Wannsee or Heckeshorn) to the 'Pfaueninsel' stop, then a 5 minute walk to the ferry landing, then the ferry crossing, then a longer walk to the northern part of the island near the Wasservogelteich.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "The most precise thing known about this oak comes from a stranger's holiday photo. In May 2024 a visitor uploaded a picture of a wide-crowned oak north of the Wasservogelteich, Pfaueninsel's waterfowl pond, and the phone's own GPS placed the tree more accurately than any register description on file.\n\nBerlin's protected-tree list already knew it existed: one of four sessile oaks on the island carrying legal Naturdenkmal status, described only by compass bearing and a rough distance from a landmark. No age is recorded anywhere, and none should be invented, though the island's oak stand generally predates the royal garden built around it from 1793.\n\nWhat the photo confirms is that the tree is alive, healthy and exactly where the register said it should be: a wide, well-formed crown branching low over the path. It sits far enough from Pfaueninsel's other two documented oaks, roughly a kilometre, that it will not fit into the same five-minute stop, but the whole island is under a kilometre long, an easy single walk that takes in all three.\n\nSame ferry, same island, further into it: past the Schloss and toward the pond, where deciduous woodland shelters some of Pfaueninsel's least visited but longest-standing residents.",
+   "notes": "Pinned via a geotagged Wikimedia Commons photo (File:Pfaueninsel_Oak.jpg, CC BY 4.0, S. Makhin, taken 2024-05-19), whose EXIF coordinates agree with Berlin's official Naturdenkmal register description (ND 6-103/B, 'north of the Wasservogelteich') to within about 10m. No age recorded by either source.",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Pfaueninsel_Oak.jpg",
+    "license": "CC BY 4.0",
+    "attribution": "S.Makhin, CC BY 4.0, via Wikimedia Commons",
+    "status": "approved",
+    "width": 4080,
+    "height": 3072
+   }
+  },
+  {
+   "id": "ber_014",
+   "name": "The Ferry Landing Plane",
+   "species": "London Plane (Platanus x acerifolia)",
+   "age_estimate": "not documented, register-listed only",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Pfaueninselchaussee 100, west of the Wirtshaus zur Pfaueninsel, 14109 Berlin",
+    "latitude": 52.428433,
+    "longitude": 13.121932,
+    "neighbourhood": "Pfaueninsel ferry landing, Steglitz-Zehlendorf"
+   },
+   "story": "Three of Pfaueninsel's protected oaks require a ferry ticket. This plane tree does not. Berlin's Naturdenkmal register lists it at Pfaueninselchaussee 100, the address of the Wirtshaus zur Pfaueninsel, the old inn that has stood at the mainland ferry dock since long before the chain ferry became the island's only public access. The oaks across the water needed the eighteenth century royal garden that grew up around them to survive this long; this plane needed nothing more than the road leading to the crossing point, protected for its beauty and its tie to the place rather than for age or rarity, the reason the district gives on its own designation record. No planting date survives, and no second source beyond the government ordinance has turned up despite real searching, an honest gap rather than an invented history. What makes it worth including anyway is the position: anyone heading for the Pfaueninsel oaks passes directly beside it, on the free side of the water, before they have paid for anything at all. See this one on the way in, whether or not the ferry crossing that follows fits the day.",
+   "verified_sources": [
+    "data/registers/berlin-naturdenkmale.json (register_id 6-71/B, DL-DE-Zero 2.0)"
+   ],
+   "access": "Free, and no ferry ticket required: this tree stands on the mainland side of the crossing, by the Wirtshaus zur Pfaueninsel restaurant and ferry dock, unlike the island's other protected oaks, which need a paid ferry.",
+   "transport": "Bus 218 (from S-Bahnhof Wannsee or Heckeshorn) to the 'Pfaueninsel' stop, then under 5 minutes on foot to the ferry landing area",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Berlin Naturdenkmal register_id 6-71/B, designated 1993-03-02, reason given as 'Schoenheit, landeskundliche Gruende' (beauty, regional-historical significance), not age or rarity, so no age is claimed. Only one source found: the register (and the underlying berlin.de ordinance PDF, which is the same government designation read twice, not a second independent source). Two verify passes searched baumkunde.de and monumentaltrees.com (403-blocked) for a tree-specific second source; none found. Commons geosearch within 250m returned nothing, so no dated photo confirms current vitality; treat as likely standing but unconfirmed. Location finding worth keeping: the register address (Pfaueninselchaussee 100) is confirmed via ADAC Maps and pfaueninsel.de as the mainland ferry-dock side, not the island, so this tree is free to see without a ferry ticket.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "ber_015",
+   "name": "The Cut-Leaf Oak of Pfaueninsel",
+   "species": "Sessile Oak, cut-leaf variety (Quercus petraea var. laciniata)",
+   "age_estimate": "not documented, register-listed only",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Pfaueninsel, roughly 150m northeast of the Schloss, 14109 Berlin",
+    "latitude": 52.431763,
+    "longitude": 13.121202,
+    "neighbourhood": "Pfaueninsel, Steglitz-Zehlendorf"
+   },
+   "story": "Forty five metres from Pfaueninsel's Great Oak stands a second, stranger oak that Berlin protects for an entirely different reason. Where its famous neighbour earned Naturdenkmal status for size and disputed age, this one is registered for rarity alone: a cut-leaf sessile oak, Quercus petraea var. laciniata, a naturally occurring variety with deeply dissected, almost fern-like foliage instead of the plain oval leaf every other oak on the island carries. The two trees stand close enough that a visitor could assume the register was describing the same tree twice. It is not. The government ordinance that protects both lists them under separate numbers, at separate coordinates, for separate reasons, one for its bulk, the other purely because its leaf shape almost never occurs in the wild. No age is recorded for this one at all, since rarity rather than antiquity is the whole case for protecting it, and no source beyond the designation record itself has been found describing this specific tree. Find the Great Oak first, then look forty five metres further for its odd, deeply cut cousin, the rarer of the two despite standing in its more famous neighbour's shadow.",
+   "verified_sources": [
+    "data/registers/berlin-naturdenkmale.json (register_id 6-108/B, DL-DE-Zero 2.0)"
+   ],
+   "access": "Free to walk once on the island, reached only by the chain ferry from Nikolskoer Weg, the same crossing as the island's other oaks.",
+   "transport": "Bus 218 (from S-Bahnhof Wannsee or Heckeshorn) to the 'Pfaueninsel' stop, then a 5 minute walk to the ferry landing, then the ferry crossing, then roughly 10-15 minutes into the island to the area northeast of the Schloss, close to the Great Oak.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Berlin Naturdenkmal register_id 6-108/B, designated 1993-03-02, reason 'Seltenheit' (rarity) for the cut-leaf variety specifically ('Geschlitzblaettrige Trauben-Eiche' in the ordinance text). Distinctness confirmed against the already-published ber_011 (45m away, register 6-102/B): baumkunde.de's entry for ber_011's exact coordinates describes an ordinary crown with no cut-leaf note, while the ordinance separately and specifically designates 6-108/B for its dissected foliage at a distinct coordinate, so these are two real trees, not one register duplicate. Only one source found (the register/ordinance, one government designation read two ways, not two independent sources); two verify passes searched baumkunde.de, ostdeutsches-baumarchiv.de and monumentaltrees.com (403-blocked) without finding a tree-specific second source. Commons geosearch within 100m returned nothing, so no dated photo confirms current vitality; treat as likely standing but unconfirmed.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "ber_016",
+   "name": "The Lietzensee Plane",
+   "species": "London Plane (Platanus x acerifolia)",
+   "age_estimate": "roughly 220 years",
+   "age_min": 205,
+   "age_max": 235,
+   "location": {
+    "address": "Lietzenseepark, north shore near Wundtstrasse 56, 14057 Berlin",
+    "latitude": 52.5075,
+    "longitude": 13.28676,
+    "neighbourhood": "Charlottenburg, Charlottenburg-Wilmersdorf"
+   },
+   "story": "This plane added 43 centimetres to its waistline in ten years. Measured at chest height it went from 6.00 metres in 2015 to 6.43 metres in 2025, which by circumference makes it the sixth thickest tree on record anywhere in Berlin. A laser measurement in 2025 put its height at 22 metres.\n\nThe date usually given for its planting is 1807, an estimate rather than a ring count. That would make it a sapling in an occupied city, the year after Napoleon's army marched through the Brandenburg Gate and took the Quadriga off the top of it to Paris. Everything around the tree arrived later. Lietzenseepark is a twentieth century arrangement of terraces and lakeside paths, laid out around trees that were already big when the surveyors turned up.\n\nBerlin protects it as a natural monument under the number 4-26/B, which is the city saying in administrative language that nobody touches this one. It was photographed alive and in full leaf in May 2025.\n\nThe register keeps no age and no girth of its own, so both figures above come from the volunteer surveyors who have been measuring it every five years, which is also how anyone knows it is still growing. From here the shore path runs about 170 metres to a Caucasian wingnut, the other reason this lake is on the map.",
+   "verified_sources": [
+    "https://www.berlin.de/sen/uvk/_assets/natur-gruen/naturschutz/schutzgebiete/aktuelle-verfahren/ndvoe_anl1_201201.pdf",
+    "https://www.monumentaltrees.com/en/deu/berlin/berlin/10978_lietzenseeparks/21543/"
+   ],
+   "access": "Free, public park (Lietzenseepark)",
+   "transport": "Sophie-Charlotte-Platz or Kaiserdamm (U2), about 10-12 minutes' walk",
+   "location_precision": "confirmed",
+   "curation_status": "ai_generated",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "ber_017",
+   "name": "The Lietzensee Wingnut",
+   "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+   "age_estimate": "roughly 100 years",
+   "age_min": 90,
+   "age_max": 110,
+   "location": {
+    "address": "Lietzenseepark, northeast section near Lietzenseeufer 5, 14057 Berlin",
+    "latitude": 52.50785,
+    "longitude": 13.290788,
+    "neighbourhood": "Charlottenburg, Charlottenburg-Wilmersdorf"
+   },
+   "story": "Berlin has five Caucasian wingnuts on record, and this one is not yet a hundred years old. The planting date on file is 1927, which by the standards of most trees on this map is recent, and it is not why anyone stops here.\n\nThe shape is. The trunk breaks into several stems close to the ground, so the surveyors who measured it gave up on the usual chest height and put the tape around the base instead: 5.94 metres at ground level, a figure they flagged themselves as flattering, because a fork counts as girth in a way a single trunk never does. What it produces is a tree that reads as a small grove growing out of one root plate.\n\nPterocarya fraxinifolia comes from the Caucasus and northern Iran, where it grows in wet ground along rivers, which is why it has done so well on the edge of a Berlin lake and why it is a rare thing in the drier planting beds of the rest of the city. In midsummer it hangs chains of winged nutlets, half a metre long, off the tips of every branch.\n\nBerlin protects it as natural monument 4-25/B. The most recent published photograph of it dates from June 2015 and the register listing has carried it since, so if you find it changed, tell us. The Lietzensee plane stands about 170 metres along the same shore.",
+   "best_time": {
+    "months": [
+     7,
+     8
+    ],
+    "kind": "catkins",
+    "label": "July and August, when half-metre chains of winged nutlets hang from every branch tip"
+   },
+   "verified_sources": [
+    "https://www.berlin.de/sen/uvk/_assets/natur-gruen/naturschutz/schutzgebiete/aktuelle-verfahren/ndvoe_anl1_201201.pdf",
+    "https://www.monumentaltrees.com/en/deu/berlin/berlin/10978_lietzenseeparks/21539/"
+   ],
+   "access": "Free, public park (Lietzenseepark)",
+   "transport": "Sophie-Charlotte-Platz or Kaiserdamm (U2), about 10-12 minutes' walk",
+   "location_precision": "confirmed",
+   "curation_status": "ai_generated",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "ber_018",
+   "name": "The Karpfenteich Elm",
+   "species": "European White Elm (Ulmus laevis)",
+   "age_estimate": "not documented",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Schlosspark Charlottenburg, southeastern corner of the Karpfenteich, Spandauer Damm, 14059 Berlin",
+    "latitude": 52.524056,
+    "longitude": 13.295944,
+    "neighbourhood": "Charlottenburg, Charlottenburg-Wilmersdorf"
+   },
+   "story": "Nobody knows how old this elm is, and that is the honest answer rather than a gap waiting to be filled. Berlin protects it as natural monument 4-27/B at the southeastern corner of the carp pond behind Charlottenburg Palace, and neither the city register nor the surveyors who have measured it twice will put a year on it.\n\nWhat is on record is size and a near standstill. Its trunk was 4.85 metres around in 2015 and 4.88 metres in 2020, roughly six millimetres of growth a year, the pace of a tree that finished the growing part of its life a long time ago. A laser put it at 21.5 metres tall in July 2020.\n\nThe species is the reason to look twice. European white elm is uncommon in city plantings, and Dutch elm disease has taken most of the big elms across the continent over the past century, so a mature one of this girth is a survivor rather than a specimen.\n\nIts address helps. The grounds were laid out in the 1690s as the formal garden of Sophie Charlotte's summer palace and later loosened into an English landscape park, and the carp pond it stands on belongs to that second version. The swamp cypress at the other end of the same park is about a hundred metres away. The last published photographs of the elm were taken in February 2015 and July 2020.",
+   "verified_sources": [
+    "https://www.berlin.de/sen/uvk/_assets/natur-gruen/naturschutz/schutzgebiete/aktuelle-verfahren/ndvoe_anl1_201201.pdf",
+    "https://www.monumentaltrees.com/en/deu/berlin/berlin/8696_schlossescharlottenburg/20545/"
+   ],
+   "access": "Free, public park (Schlosspark Charlottenburg)",
+   "transport": "Richard-Wagner-Platz (U7) or Sophie-Charlotte-Platz (U2), about 12-15 minutes' walk",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "ber_019",
+   "name": "The Copper Beech of the Fraenkel Garden",
+   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+   "age_estimate": "not documented",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Landhausgarten Dr. Max Fraenkel, Luedickeweg 1, 14089 Berlin-Kladow",
+    "latitude": 52.4443295,
+    "longitude": 13.1314394,
+    "neighbourhood": "Kladow, Spandau"
+   },
+   "story": "Berlin declared this copper beech a natural monument in 1993, growing inside Landhausgarten Dr. Max Fraenkel, a garden the banker Fraenkel commissioned around 1930 on the Havel shore at Kladow, on ground that had been a brickworks. He hired Erwin Barth, then the city's director of gardens, who laid out a formal rose garden, a perennial-lined cascade and fruit and vegetable plots close to the house, then a looser landscape section further out with a waterfall, ponds and a tea pavilion. The garden changed hands and use across the rest of the century before Spandau's district authorities restored it and reopened it to the public in 2016, with a visitor centre standing where a private family once entertained guests. The beech carries the register's protection for beauty and local historical interest, but no source yet gives its age or girth, so both stay open questions for whoever measures it next. It stands somewhere within the garden's 2.97 hectares, free to walk and easy to reach from central Berlin, on the same route the BVG ferry and the weekend cyclists take out to Kladow. Its crown, dark purple against the garden's greens, is one more layer in grounds that were built up in stages across nearly a century.",
+   "verified_sources": [
+    "https://www.berlin.de/sen/uvk/natur-und-gruen/naturschutz/schutzgebiete/naturdenkmale/ (Naturdenkmal ND 5-56/B, designated 1993-03-02)",
+    "https://www.berlin.de/ba-spandau/ueber-den-bezirk/tourismus/sehenswertes/artikel.288638.php",
+    "https://www.berlingarten.de/landhausgarten-max-fraenkel-in-berlin-kladow/"
+   ],
+   "access": "Free, the garden is open to the public with a visitor centre (restored and reopened 2016)",
+   "transport": "BVG ferry F10 to Alt-Kladow, or bus, then a walk to the garden on Luedickeweg",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Register point (52.442538,13.128787) sits roughly 270m from the garden's own mapped grounds (OSM way, centroid 52.4443295,13.1314394); pinned to the garden itself rather than the raw register coordinate, and marked approximate accordingly. Register is the only source for the tree's own designation criteria; berlin.de (district) and berlingarten.de corroborate the garden's history and public status but are not tree-specific. No age or girth found for this individual beech. Do not confuse with the different 120-year-old Blutbuche Naturdenkmal at the Kladow-Center (a separate tree, separate designation, covered in 2019 berliner-woche.de coverage about crown pruning); that is a different location entirely.",
+   "location_precision": "approximate"
+  }
+ ]
 }

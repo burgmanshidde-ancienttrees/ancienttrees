@@ -31,7 +31,7 @@
       "reason": "Designated for botanical rarity and standing in the Royal Gardens beside the Palazzo Reale, which is a strong setting. Cut only on geometry: it sits 1.05 km north of the Giardini Cavour, the wrong way from a walk that runs south to the river, and adding it would bend a straight line into a Y. Register gives 24 m, the tourist route gives 27 m, so the height needs settling before it ships."
     },
     {
-      "name": "The Plane of Parco di Villa Rey",
+      "name": "[BLOCKED 2026-08-23] The Plane of Parco di Villa Rey",
       "species": "London Plane (Platanus x acerifolia)",
       "register_id": "009/L219/TO/01",
       "latitude": 45.07579,
@@ -41,7 +41,8 @@
       "crown_m": 17,
       "age_band": "100-200",
       "ownership": "Pubblica",
-      "reason": "2.4 km northeast of the walk, up on the hill across the Po. Register height 27 m against the tourist route's 33.5 m, a 6.5 m disagreement that needs a third source. A candidate for a second Turin cluster on the collina, not for this one."
+      "reason": "2.4 km northeast of the walk, up on the hill across the Po. Register height 27 m against the tourist route's 33.5 m, a 6.5 m disagreement that needs a third source. A candidate for a second Turin cluster on the collina, not for this one. BLOCKED 2026-08-23: Villa Rey has been the national headquarters of ASI (Automotoclub Storico Italiano) since 2006, and press coverage of its FAI and Open House Torino open days ('apertura straordinaria', 'non sembra avere orari di apertura permanenti al pubblico') confirms the grounds are not otherwise open; visits require a scheduled public event or an appointment for a specific exhibition. Register 'Pubblica' ownership means the city owns the building, not that the grounds are walk-in accessible. Fails hard rule 10's first test (can a visitor get in without asking anyone's permission). Would need a source stating the plaza itself sits on an unrestricted public path before this could ship.",
+      "status": "blocked"
     },
     {
       "name": "The wide plane east of the Po",
@@ -54,7 +55,7 @@
       "crown_m": 16,
       "age_band": ">200",
       "ownership": "Pubblica",
-      "reason": "Second widest trunk in the city at 6.4 m and yet only 14 m tall, which almost certainly means a pollarded or topped tree. Neither the tourist route nor either press list names it, so it has no place name at all yet and no second source. Worth a look because of the girth, but the height ratio needs explaining before it could be written."
+      "reason": "Second widest trunk in the city at 6.4 m and yet only 14 m tall, which almost certainly means a pollarded or topped tree. Neither the tourist route nor either press list names it, so it has no place name at all yet and no second source. Worth a look because of the girth, but the height ratio needs explaining before it could be written. CHECKED 2026-08-23: this is NOT the press-documented 'plane of Corso Novara by the Cimitero Monumentale' (see that separate, already-blocked lead below); this point sits about 1.8km further southeast, on the Sassi hillside. A reverse geocode of the coordinate returns 'Villa Rey' as the nearest named OSM feature, roughly 250m off, which may just be sparse tagging on that hillside rather than evidence the tree stands on Villa Rey's own grounds (Villa Rey's registered plane, reg_id 009, is a separate point 1.8km away and is itself blocked on access, see above). Still no name, no second source and no confirmed access status. Do not ship without a real site identification; worth a look at Google Street View or a Sassi/Madonna del Pilone neighbourhood association page next pass."
     },
     {
       "name": "The Downy Oak of the Colle della Maddalena",
