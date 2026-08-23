@@ -1660,3 +1660,44 @@ written into the paywall copy and already surfaced in the app's own UI.
 Checked at the same time, because it would have been the blocker: OpenFreeMap
 place no limit on requests, allow commercial use, ask only for attribution, and
 publish weekly planet extracts in MBTiles. Nothing in the way.
+
+## The app's map on MapLibre: what works, and the one thing that does not, 2026-08-23
+
+The port is on the branch `maplibre-map-wip`, not on main, and this is the
+record so the next attempt starts from what was learned rather than repeating
+it.
+
+**Working, verified on the simulator and photographed:** the app renders the
+website's own `map-style.json`, so both surfaces finally look like one product.
+All 1,406 trees draw with their own species silhouettes in our palette. Camera,
+route line, recentre control and tap-to-select behave.
+
+**Not working: clustering.** With `MLNShapeSourceOptionClustered` set, the source
+yields exactly ONE feature whatever is done to it, so a city shows a single pin.
+Turn clustering off and every pin appears, which is how it was isolated. Four
+hypotheses were tested and all four were wrong:
+
+| tried | result |
+|---|---|
+| a UIColor in feature attributes (invalid GeoJSON) | fixed anyway, no change |
+| `style.image(forName:)` as an existence check | fixed anyway, no change |
+| handing the source `MLNShapeCollectionFeature` rather than real GeoJSON | rewritten, no change |
+| clustering options as Swift Int/Bool rather than NSNumber | no change |
+
+Predicates were tried both ways, `cluster == YES` and `point_count > 0`, and
+neither matches, which fits a source that never produces cluster features at all.
+
+**One real fix worth keeping regardless:** MapLibre's zoom is defined against
+512-point tiles and the first version used the 256 figure from the web slippy
+convention, so every camera opened one level too close and a four kilometre view
+showed two. That looked exactly like broken clustering for an hour and was
+arithmetic.
+
+Clustering is why MKMapView was chosen in the first place, so main stays on
+MapKit rather than shipping a map that hides trees.
+
+**And a hazard that cost real time:** two sessions were editing this one checkout
+at once. Halfway through, `SpotSheet.swift` was staged as deleted and
+`SpotIntro.swift` removed from the working tree by the other session, which broke
+every build here until the work moved into a `git worktree` at HEAD. That is the
+fix for next time: build app changes in a worktree, not in the shared checkout.
