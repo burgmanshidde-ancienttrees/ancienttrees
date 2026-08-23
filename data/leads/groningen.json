@@ -9,14 +9,6 @@
    "reason": "Register (netherlands-lrmb nr 1680853) calls this the tallest/thickest tree in Noorderplantsoen ('de koning van het plantsoen') but its own 2020 note records large sections of dying bark and says the tree is entering its final phase, though still alive with enough sap flow for lush foliage as of the register's last update. It also sits only 31.2 m from the already-published gro_004 (The Duck's Foot Tree of Noorderplantsoen, Ginkgo biloba) per the brief's near_published flag, a different species but close enough that a health recheck and a clearer sense of it as its own distinct stop (not just 'more park trees near the ginkgo') should happen before it ships. Not blocked: nothing here says it is dead, and a declining-but-alive veteran is exactly the kind of tree this project wants once its status is current."
   },
   {
-   "register_nr": [1680064, 1680065],
-   "name": "Gewone plataan RUG / Hollandse iep (pair, adjacent coordinates)",
-   "species": "London Plane (Platanus x acerifolia) and Dutch Elm",
-   "latitude": 53.223438,
-   "longitude": 6.568251,
-   "reason": "Both stand 'ingebouwd op het terrein van RUG' (built into the university's grounds); the plane's own 2023 register note says construction activity on site made it hard to inspect. Public accessibility of this specific spot on Rijksuniversiteit Groningen's terrain was not established this pass. Needs a check on whether this is open campus ground or gated, per the school/campus access test, before verifying further."
-  },
-  {
    "register_nr": 1680046,
    "name": "Leilindes Pepergasthuis Groningen",
    "species": "Pollarded Lime, ensemble of 11 (Tilia sp.)",
@@ -26,6 +18,14 @@
   }
  ],
  "blocked": [
+  {
+   "register_nr": [1680064, 1680065],
+   "name": "Gewone plataan RUG / Hollandse iep (pair, adjacent coordinates)",
+   "species": "London Plane (Platanus x acerifolia) and Dutch Elm",
+   "latitude": 53.223438,
+   "longitude": 6.568251,
+   "reason": "Checked 2026-08-23 (the school/campus access test this lead was waiting on). Register's own 'place' field for both trees reads 'Bloemstraat 36 (binnenplaats)', i.e. the inner courtyard of a specific address rather than open campus grounds. A web search identifies Bloemstraat 36 as the University of Groningen's Faculty of Behavioural and Social Sciences building (built 1975, faculty office building 4122-4123), not a public quad or park; nothing found describes its courtyard as open to visitors. The register itself lists 'visitable: onbekend' (unknown) for both trees, and 'visible: onbekend' for the elm specifically (only the plane is marked visible). The elm additionally carries owner_category 'particulier' (private party), unusual for a spot described as university terrain, and its status code (5) differs from the plane's (3), suggesting the register itself treats the two entries differently. No source found this pass confirms a member of the public can walk into this courtyard without a reason to be in the building. Fails the 'can they get in without asking anyone's permission' test in hard rule 10; blocked rather than shipped as approximate. Matches the pattern already established for this city's other binnenplaats entries below (Turfsingel beech and walnut)."
+  },
   {
    "register_nr": 1691164,
    "name": "Beuk binnentuin Turfsingel Groningen",

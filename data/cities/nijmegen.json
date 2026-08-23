@@ -1,566 +1,595 @@
 {
- "city": "Nijmegen",
- "country": "Netherlands",
- "status": "needs_curation",
- "intro": "Nijmegen calls itself the oldest city in the Netherlands, and its trees mostly agree in spirit if not in age: none predate the Romans, but nearly all grow on ground that does. A sycamore chosen tree of the year on a hilltop fort, a ginkgo that accidentally created a garden-centre variety, a star-shaped forest's surviving beech circle, and a chestnut planted for a queen. Three more sit east of the city, where the ridge holds the old ones: limes on the plateau the Romans picked for its view, a churchyard yew, and the thickest tree in the country.",
- "meta_description": "Nijmegen's oldest tree may be a 300-year chestnut, the thickest in the Netherlands. Seventeen verified trees, real stories, how to reach each one.",
- "question_answer": "Nijmegen's oldest tree is almost certainly the Kabouterboom, a hollow sweet chestnut in the Kastanjedal at Beek, about four and a half kilometres east of the centre. Estimates run from three hundred years to four hundred and fifty, and nobody can do better than that because the trunk is hollow and there is no core left to count. What can be measured is the girth, at least eight and a half metres, which makes it the thickest tree in the Netherlands. Inside the city itself the oldest is the beech circle of Sterrenbos in Park Brakkenstein, planted as part of an eighteenth-century star-shaped forest and reckoned at 250 to 300 years, with the limes on the Kops Plateau close behind at 225 to 275.",
- "question_meta": "Nijmegen's oldest is likely the Kabouterboom at Beek, a hollow chestnut of 300 to 450 years. Where to find it, and sixteen more.",
- "question_context": "Sterrenbos, the star-shaped pattern of forest avenues at the heart of Park Brakkenstein, was laid out in the 18th century as part of the private Brakkenstein estate, first documented in 1654 though the star planting itself came later. A circle of beeches planted as part of that scheme survives today, and local historians researching Nijmegen's tree stock have identified it as the oldest living tree group within the city's limits, estimated at 250 to 300 years old. That estimate is necessarily a range: no single tree in the ring has been individually dated by ring count, and some of the original beeches have already died of old age over three centuries, leaving visible gaps in what was once a complete circle. What survives is still remarkable for surviving at all, three centuries after the estate that planted it was still private land and roughly a century before Nijmegen's oldest formal parks, Kronenburgerpark and Valkhofpark, existed as public space. The park is free and open today, in the south of the city between Radboud University's campus and a rail line, no ticket or special access required to see what is left of the star.",
- "faq": [
-  {
-   "q": "What is the oldest tree in Nijmegen?",
-   "a": "The Kabouterboom, a hollow sweet chestnut in the Kastanjedal at Beek, reckoned at 300 to 450 years and the thickest tree in the Netherlands at over eight and a half metres round. Inside the city the oldest is the beech circle of Sterrenbos, 250 to 300 years, planted as part of an eighteenth-century star forest."
-  },
-  {
-   "q": "Are Nijmegen's ancient trees free to visit?",
-   "a": "Yes, all seventeen are free to visit. Most stand in public parks, squares or churchyards open at any hour; one is in woodland on an estate that is open to walkers."
-  },
-  {
-   "q": "Which Nijmegen tree created a plant variety sold in garden centres?",
-   "a": "A ginkgo in Kronenburgerpark, whose witch's-broom branch mutation was grafted and registered in 1995 as the dwarf cultivar Ginkgo biloba 'Mariken'."
-  },
-  {
-   "q": "Why was a chestnut tree planted in Julianapark on 4 September 1948?",
-   "a": "To mark the day Princess Juliana became Queen of the Netherlands after her mother Wilhelmina's abdication."
-  }
- ],
- "trees": [
-  {
-   "id": "nij_001",
-   "name": "The Sycamore of Valkhofpark",
-   "species": "Sycamore (Acer pseudoplatanus)",
-   "age_estimate": "145 years",
-   "age_min": 135,
-   "age_max": 155,
-   "location": {
-    "address": "Valkhofpark, Nijmegen",
-    "latitude": 51.84782,
-    "longitude": 5.87025,
-    "neighbourhood": "Benedenstad"
-   },
-   "story": "Nijmegen's most recent Tree of the Year grows on ground that has been fought over since the Romans. Valkhofpark sits on the Valkhof hill, site of a Roman legionary camp and later Charlemagne's imperial palace, and in 2021 neighbourhood residents voted this sycamore, planted around 1880, the year's outstanding tree. It stands roughly 23 metres tall with a trunk just under four metres around, respectable rather than record-breaking, in a park whose ruins date back two thousand years. What makes it the park's chosen tree is not age relative to the site, since the Roman camp beneath it long predates any living thing above ground, but presence: it is the sycamore visitors actually notice among the park's mix of younger plantings and older ruins, singled out for a vote most Dutch neighbourhoods hold every year for a genuinely ordinary species elevated by a genuinely extraordinary setting. Valkhofpark itself is a national monument, one of the oldest continuously used defensive and residential sites in the country, its two surviving medieval structures, the Barbarossa ruin and the Nicholas Chapel, predating the tree by roughly seven centuries. Free to enter and in the middle of the city, it turns a Roman hilltop into an ordinary place to sit under a tree.",
-   "verified_sources": [
-    "https://nijmegen-oost.nl/berichten/boom-van-het-jaar-gewone-esdoorn-valkhofpark-nijmegen-2021",
-    "https://www.monumentaltrees.com/nl/nld/gelderland/nijmegen/10893_valkhofpark/21339/"
-   ],
-   "access": "Free, public park, open daily",
-   "transport": "Central Nijmegen, on the Valkhof hill; 10 minute walk from Nijmegen railway station",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "ai_generated",
-   "location_precision": "approximate",
-   "best_time": {
-    "months": [
-     9,
-     10
-    ],
-    "label": "September to October: winged seeds that spin down in pairs",
-    "kind": "fruit"
-   }
-  },
-  {
-   "id": "nij_002",
-   "name": "The Mother Ginkgo of Kronenburgerpark",
-   "species": "Ginkgo (Ginkgo biloba)",
-   "age_estimate": "95 years",
-   "age_min": 85,
-   "age_max": 105,
-   "location": {
-    "address": "Kronenburgerpark, Nijmegen",
-    "latitude": 51.8462,
-    "longitude": 5.8574,
-    "neighbourhood": "City centre"
-   },
-   "story": "One ginkgo in a Nijmegen park quietly created a plant variety now sold across Europe. Sometime around 1930 a tree took root in Kronenburgerpark, laid out in 1881 and 1882 just outside the old city walls, and decades later a nurseryman noticed one of its branches growing in a strange, compact, witch's-broom tangle unlike the rest of the tree. Grafted, propagated and registered in 1995, that mutation became Ginkgo biloba 'Mariken', a dwarf ornamental cultivar now sold by nurseries well beyond the Netherlands and later awarded the Royal Horticultural Society's Award of Garden Merit, named after Mariken van Nieumeghen, the 16th-century Dutch morality play about a Nijmegen woman who makes a pact with the devil. The original tree that produced it is still standing in the park today, roughly 95 years old and about 2.85 metres around, ordinary in form itself even as its genetic accident spread to gardens it will never see. Ginkgo is a living fossil, a lineage that predates flowering plants by tens of millions of years and survived almost unchanged, which makes this park's real contribution almost funny: not the tree's age, but one freak branch that turned into a garden-centre product. Kronenburgerpark is free, central and a national monument in its own right, landscaped around what had recently been the city's demolished fortifications.",
-   "verified_sources": [
-    "https://conifersociety.org/conifers/ginkgo-biloba-mariken",
-    "https://www.vdberk.nl/bomen/ginkgo-biloba-mariken/",
-    "https://www.monumentaltrees.com/nl/nld/gelderland/nijmegen/10888_kronenburgerpark/21343/"
-   ],
-   "access": "Free, public park, open daily",
-   "transport": "Central Nijmegen; 10 minute walk from Nijmegen railway station",
-   "best_time": {
-    "months": [
-     11
-    ],
-    "label": "November, when the ginkgo turns gold",
-    "kind": "autumn colour"
-   },
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "nij_003",
-   "name": "The Beech Circle of Sterrenbos",
-   "species": "European Beech (Fagus sylvatica)",
-   "age_estimate": "275 years",
-   "age_min": 250,
-   "age_max": 300,
-   "location": {
-    "address": "Park Brakkenstein, Driehuizerweg, Nijmegen",
-    "latitude": 51.813,
-    "longitude": 5.858,
-    "neighbourhood": "Brakkenstein"
-   },
-   "story": "Nijmegen's oldest tree does not stand on a battlefield or beside a museum. It stands in a star. Sterrenbos, a star-shaped pattern of radiating forest avenues laid out on the Brakkenstein estate in the 18th century, still survives inside what is now Park Brakkenstein, and a circle of beeches planted as part of that original scheme is, according to local historians, the oldest living tree stock inside city limits, estimated at 250 to 300 years old. Not every original beech has made it this far. Some in the ring have died of old age over the past three centuries and the surviving trees now stand with visible gaps between them, which is itself part of the honest story: this is a living remnant of a planting scheme, not a complete, restored set. The star pattern of avenues around the circle predates the park as a public space by roughly two centuries, laid out when Brakkenstein was still a private country estate first documented in 1654, decades before the beeches themselves went in. What remains today is free and open, part of a park wedged between Radboud University's campus and a rail line in the south of the city, and it is the closest thing this city has to a tree that watched its own park being invented around it.",
-   "verified_sources": [
-    "https://www.noviomagus.nl/Blik/Oudste/Boom.htm",
-    "https://www.huisvandenijmeegsegeschiedenis.nl/info/Sterrenbossen_in_en_om_Nijmegen"
-   ],
-   "access": "Free, public park, open daily",
-   "transport": "South Nijmegen, Brakkenstein; near Radboud University and Radboudumc, reachable by bus along Heyendaalseweg",
-   "best_time": {
-    "months": [
-     10,
-     11
-    ],
-    "label": "October and November, when the beech leaves turn copper before they fall",
-    "kind": "autumn colour"
-   },
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "nij_004",
-   "name": "The Julianaboom",
-   "species": "Horse Chestnut (Aesculus hippocastanum)",
-   "age_estimate": "78 years",
-   "age_min": 76,
-   "age_max": 80,
-   "location": {
-    "address": "Julianapark, Nijmegen",
-    "latitude": 51.8394,
-    "longitude": 5.868,
-    "neighbourhood": "Altrade"
-   },
-   "story": "This chestnut has a birthday on record: 4 September 1948, the day Juliana became Queen of the Netherlands after her mother Wilhelmina's abdication. Nijmegen marked the occasion by planting a white horse chestnut in what is now Julianapark, a former cemetery ground in the Altrade neighbourhood turned public park and named for the new queen. It is an ordinary species grown into an unusually well-documented individual, its planting date tied to a specific historical event rather than estimated from growth rings or a park's founding year, the kind of precision most trees on this list do not have. Horse chestnuts are not native to the Netherlands, brought west from the Balkans in the 16th century and adopted so thoroughly into Dutch parks and streets that most residents assume they always belonged. This one has outlived the queen it was planted for by more than two decades, and the country it grew up in has changed monarchs twice since. Julianapark itself is small, free and largely residential in character, a quiet green space east of the city centre with none of Valkhofpark's Roman weight or Kronenburgerpark's fortress history, just one dated tree doing what a planted anniversary tree is supposed to do: mark a date and keep growing past it.",
-   "verified_sources": [
-    "https://nl.wikipedia.org/wiki/Julianapark_(Nijmegen)",
-    "https://www.monumentaltrees.com/nl/nld/gelderland/nijmegen/10895_julianapark/21342/",
-    "https://duurzaamaltrade.nl/cultuurhistorie/julianapark-en-begraafplaats/"
-   ],
-   "access": "Free, public park, open daily",
-   "transport": "Nijmegen-Oost, Altrade neighbourhood; 20 minute walk or short bus ride from the city centre",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "ai_generated",
-   "location_precision": "approximate",
-   "best_time": {
-    "months": [
-     9,
-     10
-    ],
-    "label": "September and October, when the conkers ripen and fall",
-    "kind": "fruit"
-   }
-  },
-  {
-   "id": "nij_005",
-   "name": "The Giant Sequoia of Krayenhoffpark",
-   "species": "Giant Sequoia (Sequoiadendron giganteum)",
-   "age_estimate": "100 years",
-   "age_min": 90,
-   "age_max": 110,
-   "location": {
-    "address": "Krayenhoffpark, Nijmegen",
-    "latitude": 51.8486,
-    "longitude": 5.8508,
-    "neighbourhood": "Biezen"
-   },
-   "story": "A Californian giant grows in one of Nijmegen's smallest parks, in a neighbourhood built for railway employees. Krayenhoffpark, in the Biezen district near the city's rail yards, holds a giant sequoia measured in September 2020 at just under four metres around and about 25 metres tall, likely planted sometime in the 1920s though no source gives an exact date, an inference from size rather than a documented planting. That gap in the record is honest rather than a failure of research: this is a neighbourhood park, not an estate or a botanical garden with its own archive, and the tree's presence here at all says more about the era than about any specific person who planted it. Giant sequoias reached Europe from California's Sierra Nevada in the 1850s and became a genuine planting fashion among estate owners and, eventually, municipal parks departments for the next three quarters of a century, moving a tree that can live past 2,000 years into gardens designed to last decades. In its native range this specimen would be barely into adolescence; in a small Dutch park surrounded by early 20th-century housing, it is already the tallest living thing most residents will see on a walk to the shops. Free, small and unglamorous by the standards of Nijmegen's grander parks, it rewards anyone who actually looks up.",
-   "verified_sources": [
-    "https://www.monumentaltrees.com/en/nld/gelderland/nijmegen/855_krayenhoffpark/1524/",
-    "https://woneninnijmegen.blog/2025/07/01/krayenhoffpark/"
-   ],
-   "access": "Free, public park, open daily",
-   "transport": "Biezen neighbourhood, Nijmegen; short walk from Nijmegen railway station via Voorstadslaan",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "nij_006",
-   "name": "The Hornbeam of Krayenhoffpark",
-   "species": "Hornbeam (Carpinus betulus)",
-   "age_estimate": "~120 years",
-   "age_min": 116,
-   "age_max": 126,
-   "location": {
-    "address": "Krayenhoffpark, Nijmegen",
-    "latitude": 51.848465,
-    "longitude": 5.851126,
-    "neighbourhood": "Biezen"
-   },
-   "story": "This hornbeam stands close enough to Krayenhoffpark's giant sequoia to be mistaken for an afterthought planted in the famous tree's shadow, but it is roughly the same age and belongs to a species the Dutch have grown for a very different reason. Where the sequoia was an imported curiosity, hornbeam is a native workhorse, historically clipped into hedges and avenues across the Low Countries because it tolerates hard pruning and holds its dead brown leaves through winter, giving a bare hedge some cover even in the coldest months.\n\nThe register dates this one to somewhere around 1900 to 1910, planted while the Biezen neighbourhood around it was still going up to house railway workers from the nearby yards. Left to grow naturally rather than clipped, as this one has been, hornbeam reaches a modest, broad-crowned shape closer to a beech than to the tight hedge most people picture. It grows a few metres from the park's sequoia, free, in the same small green space that gives an otherwise unremarkable railway district its one patch of shade older than most of the houses around it.",
-   "verified_sources": [
-    "data/registers/netherlands-lrmb.json (nr 1688015)"
-   ],
-   "access": "Free, public park, open daily",
-   "transport": "Biezen neighbourhood, Nijmegen; short walk from Nijmegen railway station via Voorstadslaan",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "nij_007",
-   "name": "The Black Locust of Krayenhoffpark",
-   "species": "Black Locust (Robinia pseudoacacia)",
-   "age_estimate": "~140 years",
-   "age_min": 136,
-   "age_max": 146,
-   "location": {
-    "address": "Krayenhoffpark, Nijmegen",
-    "latitude": 51.848602,
-    "longitude": 5.850931,
-    "neighbourhood": "Biezen"
-   },
-   "story": "The Dutch name for this tree translates literally as false Christ's-thorn, a reference to the sharp paired spines that line its young branches, thorns sharp enough that European folklore once linked the species to the biblical crown of thorns despite the tree being a North American import that no one in the region had ever seen before the 17th century. This specimen, dated by the register to around 1880 to 1890, predates its own park: Krayenhoffpark and the railway workers' housing around it were built in the early 20th century, decades after this tree first went into what was then open ground on the edge of the city.\n\nBlack locust fixes nitrogen in the soil through bacteria living on its roots, the same trick clover and beans use, which is part of why it was planted so widely across poor European soils long before anyone understood the chemistry behind why it thrived where other trees struggled. It stands a few steps from the park's hornbeam and its better-known giant sequoia, free, the oldest of the three despite being the least conspicuous.",
-   "verified_sources": [
-    "data/registers/netherlands-lrmb.json (nr 1688014)"
-   ],
-   "access": "Free, public park, open daily",
-   "transport": "Biezen neighbourhood, Nijmegen; short walk from Nijmegen railway station via Voorstadslaan",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "nij_008",
-   "name": "The Chestnut of Begraafplaats Daalseweg",
-   "species": "Sweet Chestnut (Castanea sativa)",
-   "age_estimate": "~140 years",
-   "age_min": 136,
-   "age_max": 146,
-   "location": {
-    "address": "Begraafplaats Daalseweg, west side, Nijmegen",
-    "latitude": 51.839463,
-    "longitude": 5.872509,
-    "neighbourhood": "Altrade"
-   },
-   "story": "Four Catholic parishes petitioned Nijmegen's city council in 1884 for permission to open a shared cemetery on the Daalseweg, and the bishop of 's-Hertogenbosch consecrated it the following June. The city architect Jan Jacob Weve designed the grounds around two broad paths crossing at right angles, lined with copper beeches he is himself buried among, and this sweet chestnut grows on the cemetery's west side from roughly the same founding decade. The cemetery closed to new burials in 1948 when a replacement opened elsewhere, and many graves were later cleared for housing, but the grounds survived intact enough to be named a national heritage site in 2002.\n\nThe cemetery holds a harder history than most: 300 victims of the February 1944 bombing of Nijmegen, a raid that killed roughly 800 people in a single afternoon, were buried here. Sweet chestnut is not native this far north, introduced originally by the Romans for its edible nuts, and this one has stood through the cemetery's whole active life and its decades since as a protected historic ground rather than a working one. It grows in the open, free to visit during normal cemetery hours, a short walk from Julianapark's own commemorative chestnut.",
-   "verified_sources": [
-    "data/registers/netherlands-lrmb.json (nr 1687751)",
-    "https://nl.wikipedia.org/wiki/Begraafplaats_Daalseweg"
-   ],
-   "access": "Free, public cemetery, open during normal daytime hours",
-   "transport": "Altrade neighbourhood, Nijmegen; about a 20 minute walk from Nijmegen railway station",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "nij_009",
-   "name": "The Kabouterboom",
-   "species": "Sweet Chestnut (Castanea sativa)",
-   "age_estimate": "300 to 400 years, and by some accounts 450",
-   "age_min": 300,
-   "age_max": 450,
-   "girth_cm": 850,
-   "location": {
-    "address": "Kastanjedal, Heerlijkheid Beek, near the Ravenberg, Beek",
-    "latitude": 51.827685,
-    "longitude": 5.918908,
-    "neighbourhood": "Beek, Berg en Dal"
-   },
-   "story": "Children in Beek have been told for generations that gnomes live inside this tree, which is how a sweet chestnut came to be called the Gnome Tree. It is an easy story to believe. The trunk is hollow, at least eight and a half metres around, and the openings in it are the size of doorways.\n\nThat girth makes it the thickest tree in the Netherlands, and the hollowness is why nobody can say how old it is: there is no core left to count. Estimates run from three hundred years to four hundred and fifty. The register that lists it puts the planting between 1600 and 1700 and notes that chestnuts have probably been grown around Nijmegen since the Romans, who liked the crop and liked this ridge.\n\nIn January 2005 children set it on fire. It burned inside, which a hollow tree does readily, and everyone assumed that was the end of four centuries. It leafed out again that spring and has gone on since.\n\nIt stands in the Kastanjedal, a valley of old chestnuts in the Heerlijkheid Beek estate, which Het Geldersch Landschap keeps open to walkers.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/ (Landelijk Register Monumentale Bomen v2024, Bomenstichting, nr 1678473; onder bronvermelding te gebruiken)",
-    "https://www.bomengids.nl/kabouterboom.html",
-    "https://bomenbieb.nl/bijzondere-bomen/kabouterboom-beek/"
-   ],
-   "access": "Free. Woodland on the Heerlijkheid Beek estate, open to walkers.",
-   "transport": "About 4.5 km east of Nijmegen centre. Bus 5 or 8 towards Beek, then a walk up into the Kastanjedal.",
-   "photo": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Kabouterboom_in_Beek.jpg",
-    "license": "CC BY-SA 3.0",
-    "attribution": "MPhernambucq, Wikimedia Commons",
-    "status": "approved",
-    "width": 3000,
-    "height": 4000
-   },
-   "how_to_recognise": "An enormous hollow chestnut with a trunk you could stand inside, far thicker than anything else in the valley.",
-   "curation_status": "ai_generated",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "nij_010",
-   "name": "The Limes of the Kopse Hof",
-   "species": "Common Lime (Tilia x europaea)",
-   "age_estimate": "225 to 275 years",
-   "age_min": 225,
-   "age_max": 275,
-   "location": {
-    "address": "Kopse Hof, at the viewpoint on the Kops Plateau",
-    "latitude": 51.837433,
-    "longitude": 5.896521,
-    "neighbourhood": "Kopse Hof"
-   },
-   "story": "The Romans picked this spot in about 12 BC and built a fort on it, because from sixty four metres up you can see the Waal, the Ooijpolder, the Betuwe and most of the way to Arnhem. Eighteen centuries later somebody planted limes for the same view.\n\nThe group stands on the hilltop at the end of a lime avenue, and the two were almost certainly planted together, the avenue as the way up to the hill. The register dates both between 1750 and 1800 and can show its working: the hill is on the Tranchot map of 1803, and both the avenue and the hill are drawn on the cadastral map of 1811.\n\nIt lists the hilltop group under a category that has nothing to do with size. They are recorded as a kruisboom, a cross tree, which is what the Dutch register calls a tree planted for a religious purpose. The note says only that they may have served one, which is the honest version: nobody now knows what was meant to happen here.\n\nThe register counts three at the viewpoint. Locally they are called the four apostles, which suggests there were once four, and that is the kind of arithmetic old trees usually lose.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/ (Landelijk Register Monumentale Bomen v2024, Bomenstichting, nr 1696070; onder bronvermelding te gebruiken)",
-    "https://woneninnijmegen.blog/2025/08/20/kops-plateau-kopse-hof/",
-    "https://www.absolutefacts.nl/gelderland/nijmegen/kopse-hof.htm"
-   ],
-   "access": "Free. Public open ground on the Kops Plateau, reached by the lime avenue.",
-   "transport": "About 2.6 km east of the centre, a half-hour walk out along the Berg en Dalseweg.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "A tight group of very old limes on the highest point, at the top of the avenue, with the view opening north over the river.",
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "nij_011",
-   "name": "The Yew of the Bartholomeuskerkje",
-   "species": "European Yew (Taxus baccata)",
-   "age_estimate": "",
-   "age_min": null,
-   "age_max": null,
-   "location": {
-    "address": "Churchyard of the Bartholomeuskerkje, Rijksstraatweg, Beek",
-    "latitude": 51.828356,
-    "longitude": 5.925481,
-    "neighbourhood": "Beek, Berg en Dal"
-   },
-   "story": "A charter of 1286 is the first mention of the little church this tree stands beside, and the churchyard around it has been in use ever since. The building had a hard nineteenth century: shared between Catholics and Protestants from 1796, neglected by both, closed in 1824 as unsafe, and only saved when King William I put money towards its repair.\n\nThe yew was there through all of it. The register records a painting by Barend Cornelis Koekkoek from about 1830 showing the church with this tree beside it, already looking like it had been standing a long while, and concludes the tree is probably older than two hundred years. That is one source making a careful argument rather than a measurement, so treat the age as an argument too.\n\nWhat is not in doubt is what a yew does with time. It grows slowly, hollows early, and then keeps going for centuries after the point where any other tree would have finished, which is why yews and graveyards have kept each other company across northern Europe for a thousand years.\n\nThe churchyard is open, small, and quiet, and the foundation that looks after it describes it as park-like. That is fair.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/ (Landelijk Register Monumentale Bomen v2024, Bomenstichting, nr 1696558; onder bronvermelding te gebruiken)",
-    "https://www.bartholomeuskerkje.nl/",
-    "https://nl.wikipedia.org/wiki/Sint-Bartholomaeuskerk_(Beek_(Berg_en_Dal))"
-   ],
-   "access": "Free. Open churchyard.",
-   "transport": "About 4.7 km east of Nijmegen centre, on the Rijksstraatweg at Beek. Bus 5 or 8.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "A dark, dense yew among the headstones beside the small white church, thicker in the trunk than its height suggests.",
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "nij_012",
-   "name": "The Wilhelminaboom of Hertogplein",
-   "species": "Lime (Tilia sp.)",
-   "age_estimate": "",
-   "age_min": null,
-   "age_max": null,
-   "location": {
-    "address": "Hertogplein, Nijmegen-Centrum",
-    "latitude": 51.844498,
-    "longitude": 5.868484,
-    "neighbourhood": "Centrum"
-   },
-   "story": "Nijmegen crowned a queen with a tree. On 1 September 1898, five days before Wilhelmina's coronation, the city planted a lime on Hertogplein and ringed it with a wrought iron fence topped with small crowns, designed by the architect Derk Semmelink. The fence survived the German occupation. Its crowns did not: soldiers stripped them during the war, and the fence stood bare until 24 July 1948, when students at Nijmegen's trade school forged replacements and the city held a public ceremony to fit them back on.\n\nWhether the tree itself survived that long is less certain. Dutch Wikipedia's own account of the square says the original lime has since made way for another, without saying when. A 2025 local history piece describes the tree standing today and does not mention any replacement at all. The national tree register dates this spot to the 1880s, a decade before the coronation planting both other sources describe. Nobody has reconciled the three, so this page will not pretend to: what stands on Hertogplein now is a lime, ringed by a fence built for a different one, and its true age is unknown.\n\nThe fence, at least, is certain. It has outlived at least one tree already.",
-   "verified_sources": [
-    "https://nl.wikipedia.org/wiki/Hertogplein",
-    "https://woneninnijmegen.blog/2025/04/04/wilhelminaboom/",
-    "data/registers/netherlands-lrmb.json (nr 1681246)"
-   ],
-   "access": "Free, a public square in the city centre, open at all times",
-   "transport": "About a 15 minute walk from Nijmegen Centraal station",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "The lime inside the small wrought iron fence topped with crowns, on the west side of Hertogplein.",
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "nij_013",
-   "name": "The Beverboom of Park Leeuwenstein",
-   "species": "Magnolia (Magnolia sp., exact species not confirmed)",
-   "age_estimate": "roughly 140 years",
-   "age_min": 136,
-   "age_max": 146,
-   "location": {
-    "address": "Park Leeuwenstein, Nijmegen-West",
-    "latitude": 51.844697,
-    "longitude": 5.840562,
-    "neighbourhood": "Wolfskuil / Waterkwartier border, Nijmegen-West"
-   },
-   "story": "Park Leeuwenstein is what is left of a demolished mansion's garden, and this magnolia is what is left of its exotic specimen trees. Villa Leeuwenstein went up in the mid-1800s and came down in 1958, too dilapidated to save, but the trees its owners planted around it kept growing after the house did not. A storm on 18 January 2018 took the park's giant sequoia and a swamp cypress in one night, leaving this tree, the beverboom, as the park's oldest surviving specimen.\n\nBeverboom is old Dutch for magnolia, specifically for Magnolia virginiana, though the exact species growing here has not been confirmed. A 2023 local survey of the park still listed a cucumber magnolia, Magnolia acuminata, among its special trees, and it may be the same tree the national register pins here by coordinate rather than by name. Acuminata flowers greenish yellow after its leaves open in late spring; virginiana flowers cream white and fragrant in early summer. A photograph at flowering time would settle it.\n\nWhichever it is, the register dates the planting to the 1880s, roughly 140 years, a specimen tree that has already outlived the house it was planted beside and two of its own neighbours.",
-   "verified_sources": [
-    "data/registers/netherlands-lrmb.json (nr 1680530)",
-    "https://woneninnijmegen.blog/2023/08/16/park-leeuwenstein/"
-   ],
-   "access": "Free, public municipal park, open at all times",
-   "transport": "About 2.9 km from Nijmegen city centre, Nijmegen-West",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "One of Park Leeuwenstein's older specimen trees, a magnolia rather than the usual park planting; ask locally which one is the registered beverboom.",
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "nij_014",
-   "name": "The Pastorie Chestnut of Lent",
-   "species": "Horse Chestnut (Aesculus hippocastanum)",
-   "age_estimate": "roughly 130 years",
-   "age_min": 126,
-   "age_max": 136,
-   "location": {
-    "address": "Plein voor de kerk, Pastoor van Laakstraat, Lent",
-    "latitude": 51.861172,
-    "longitude": 5.864418,
-    "neighbourhood": "Lent, Nijmegen-Noord"
-   },
-   "story": "A parish square in Lent doubles as a chestnut's front garden. The Onze Lieve Vrouw Geboorte church went up between 1877 and 1879, designed by the architect G. te Riele Wzn, and the register dates the chestnut on its forecourt to the following decade, planted around the time the church's own rectory rose beside it. The national heritage register's listing for the site still describes it today: an old chestnut tree stands on the square in front of the church, the rectory on its north side.\n\nLent itself has changed more than the tree has. It was a village on the Waal's north bank until Nijmegen annexed it in 1998, and since 2016 an artificial island and a new bridge have turned its riverside fields into the city's newest district. The square with the chestnut sits a few streets back from all of that, beside the road into what is still, for now, a village centre with its own parish rather than a suburb of one.\n\nThe tree is roughly 130 years old and stands in the open, free to see at any hour, a short walk from Lent's own railway station.",
-   "verified_sources": [
-    "data/registers/netherlands-lrmb.json (nr 1689531)",
-    "https://www.monumenten.nl/monument/522954"
-   ],
-   "access": "Free, on the public square in front of the parish church, open at all times",
-   "transport": "About an 8 minute walk from Nijmegen Lent railway station",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "The chestnut on the church forecourt, rectory to its north, on Pastoor van Laakstraat in Lent.",
-   "curation_status": "ai_generated",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "nij_015",
-   "name": "The Weeping Beech of Begraafplaats Daalseweg",
-   "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
-   "age_estimate": "roughly 125 to 135 years, from the register's planting band of 1890-1900",
-   "age_min": 126,
-   "age_max": 136,
-   "location": {
-    "address": "Right of the entrance gate, Begraafplaats Daalseweg, Nijmegen",
-    "latitude": 51.839319,
-    "longitude": 5.873587,
-    "neighbourhood": "Nijmegen-Midden"
-   },
-   "story": "A weeping beech droops on purpose. Every ordinary beech reaches up for its share of light; this one carries a mutation that pulls its branches down instead, so its crown pours toward the ground rather than spreading for the sky. It stands to the right of the entrance gate at Begraafplaats Daalseweg, the first tree a visitor meets.\n\nThe cemetery itself is a protected national monument, not for any single tree but for its whole design: two paths cross the grounds, both lined with beeches, meeting at a crucifix at the centre. The weeping beech at the gate breaks that planned rhythm on purpose, an ornamental flourish set apart from the disciplined rows behind it.\n\nThe Dutch national register of monumental trees dates the planting to between 1890 and 1900, putting it at roughly 125 to 135 years old, and lists it as the cemetery's own protected specimen. It is the only source found for this particular tree: local histories of the cemetery describe the beech-lined paths and the crucifix at length but none names this one specifically, so the age comes from the register alone.\n\nThe grounds belong to a working Catholic cemetery and stay open during daylight hours, free to enter. Go quietly.",
-   "verified_sources": [
-    "data/registers/netherlands-lrmb.json (register nr 1687753)"
-   ],
-   "access": "Free, public cemetery grounds, open during daylight hours. Please be respectful, it is a working cemetery.",
-   "transport": "About 1.5 km northwest of Nijmegen railway station, roughly 20 minutes on foot or a short bus ride.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "location_precision": "confirmed",
-   "curation_status": "flagged"
-  },
-  {
-   "id": "nij_016",
-   "name": "The Plane of the Petruskerk",
-   "species": "London Plane (Platanus x acerifolia)",
-   "age_estimate": "roughly 145 to 155 years, from the register's planting band of 1870-1880",
-   "age_min": 146,
-   "age_max": 156,
-   "location": {
-    "address": "Kerkplein, Petruskerk, Schependomlaan/Korte Bredestraat, Hees, Nijmegen",
-    "latitude": 51.84081,
-    "longitude": 5.829079,
-    "neighbourhood": "Hees"
-   },
-   "story": "London planes shed their bark instead of quietly laying down new rings underneath it, sloughing off patches through the year to show paler wood beneath, which is why an old plane looks mottled and half-flayed rather than simply weathered. This one stands on the small square beside the Petruskerk in Hees, a Nijmegen district that was its own village before the city grew out to meet it.\n\nThe Dutch national monumental tree register dates the planting to between 1870 and 1880, making the tree roughly 145 to 155 years old, and lists it as protected. That register is the only source found naming this specific tree: histories of the square and the church describe the setting in detail but not this plane by name, so the age rests on the register's word alone.\n\nThe square sits on church grounds and reads as ordinary open public space, a small plaza in front of a working parish rather than an enclosed courtyard, and the register itself records it as visitable. Nothing else about this particular tree has surfaced yet. If you know more, tell us.",
-   "verified_sources": [
-    "data/registers/netherlands-lrmb.json (register nr 1680526)"
-   ],
-   "access": "Free, public church square, open at any time.",
-   "transport": "About 3.5 km west of Nijmegen railway station, reachable by bus toward Hees, roughly 10 minutes' walk from the nearest stop.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "location_precision": "confirmed",
-   "curation_status": "flagged"
-  },
-  {
-   "id": "nij_017",
-   "name": "The Copper Beech of the Antonius Abtkerk",
-   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
-   "age_estimate": "roughly 225 to 275 years, from the register's planting band of 1750-1800",
-   "age_min": 226,
-   "age_max": 276,
-   "location": {
-    "address": "Boundary of Dennenstraat 121 and 125 (Sint Antonius Abtkerk), Hees, Nijmegen",
-    "latitude": 51.835734,
-    "longitude": 5.820439,
-    "neighbourhood": "Hees"
-   },
-   "story": "This copper beech is older than the church beside it. The current Sint Antonius Abtkerk on Dennenstraat, a red-brick building by the architect Pieter Cuypers, went up in 1879 and 1880. The national register places the beech at the boundary of the church and its rectory somewhere between 1750 and 1800, roughly a century older than the bricks next to it.\n\nThat is not as strange as it sounds. The parish itself predates Cuypers by centuries: an older church stood on this ground before his, a barn chapel was rebuilt here in 1826, and parish history traces the site back to a sixteenth century predecessor. A beech planted in the late 1700s would have grown up beside whatever building stood here then, and simply outlasted it, the way old trees on church land tend to.\n\nCopper beeches carry a mutation that floods their leaves with red pigment, so from a distance this one reads almost black against the brick. The Dutch national monumental tree register is the only source found for this specific tree, roughly 225 to 275 years old by its planting estimate; local parish and heritage histories confirm the site's long religious use but do not mention the beech itself, so the age stands on the register alone.\n\nThe grounds are recorded as visitable and visible from outside, ordinary church land in the Hees district rather than a closed private garden.",
-   "verified_sources": [
-    "data/registers/netherlands-lrmb.json (register nr 1680519)"
-   ],
-   "access": "Free, church grounds visible and open to visitors.",
-   "transport": "About 4 km west of Nijmegen railway station, reachable by bus toward Hees.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "location_precision": "confirmed",
-   "curation_status": "flagged"
-  }
- ],
- "oldest_tree_id": "nij_009",
- "hero_tree_id": "nij_009"
+  "city": "Nijmegen",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Nijmegen calls itself the oldest city in the Netherlands, and its trees mostly agree in spirit if not in age: none predate the Romans, but nearly all grow on ground that does. A sycamore chosen tree of the year on a hilltop fort, a ginkgo that accidentally created a garden-centre variety, a star-shaped forest's surviving beech circle, and a chestnut planted for a queen. Three more sit east of the city, where the ridge holds the old ones: limes on the plateau the Romans picked for its view, a churchyard yew, and the thickest tree in the country.",
+  "meta_description": "Nijmegen's oldest tree may be a 300-year chestnut, the thickest in the Netherlands. Eighteen verified trees, real stories, how to reach each one.",
+  "question_answer": "Nijmegen's oldest tree is almost certainly the Kabouterboom, a hollow sweet chestnut in the Kastanjedal at Beek, about four and a half kilometres east of the centre. Estimates run from three hundred years to four hundred and fifty, and nobody can do better than that because the trunk is hollow and there is no core left to count. What can be measured is the girth, at least eight and a half metres, which makes it the thickest tree in the Netherlands. Inside the city itself the oldest is the beech circle of Sterrenbos in Park Brakkenstein, planted as part of an eighteenth-century star-shaped forest and reckoned at 250 to 300 years, with the limes on the Kops Plateau close behind at 225 to 275.",
+  "question_meta": "Nijmegen's oldest is likely the Kabouterboom at Beek, a hollow chestnut of 300 to 450 years. Where to find it, and seventeen more.",
+  "question_context": "Sterrenbos, the star-shaped pattern of forest avenues at the heart of Park Brakkenstein, was laid out in the 18th century as part of the private Brakkenstein estate, first documented in 1654 though the star planting itself came later. A circle of beeches planted as part of that scheme survives today, and local historians researching Nijmegen's tree stock have identified it as the oldest living tree group within the city's limits, estimated at 250 to 300 years old. That estimate is necessarily a range: no single tree in the ring has been individually dated by ring count, and some of the original beeches have already died of old age over three centuries, leaving visible gaps in what was once a complete circle. What survives is still remarkable for surviving at all, three centuries after the estate that planted it was still private land and roughly a century before Nijmegen's oldest formal parks, Kronenburgerpark and Valkhofpark, existed as public space. The park is free and open today, in the south of the city between Radboud University's campus and a rail line, no ticket or special access required to see what is left of the star.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Nijmegen?",
+      "a": "The Kabouterboom, a hollow sweet chestnut in the Kastanjedal at Beek, reckoned at 300 to 450 years and the thickest tree in the Netherlands at over eight and a half metres round. Inside the city the oldest is the beech circle of Sterrenbos, 250 to 300 years, planted as part of an eighteenth-century star forest."
+    },
+    {
+      "q": "Are Nijmegen's ancient trees free to visit?",
+      "a": "Yes, all eighteen are free to visit. Most stand in public parks, squares or churchyards open at any hour; one is in woodland on an estate that is open to walkers."
+    },
+    {
+      "q": "Which Nijmegen tree created a plant variety sold in garden centres?",
+      "a": "A ginkgo in Kronenburgerpark, whose witch's-broom branch mutation was grafted and registered in 1995 as the dwarf cultivar Ginkgo biloba 'Mariken'."
+    },
+    {
+      "q": "Why was a chestnut tree planted in Julianapark on 4 September 1948?",
+      "a": "To mark the day Princess Juliana became Queen of the Netherlands after her mother Wilhelmina's abdication."
+    }
+  ],
+  "trees": [
+    {
+      "id": "nij_001",
+      "name": "The Sycamore of Valkhofpark",
+      "species": "Sycamore (Acer pseudoplatanus)",
+      "age_estimate": "145 years",
+      "age_min": 135,
+      "age_max": 155,
+      "location": {
+        "address": "Valkhofpark, Nijmegen",
+        "latitude": 51.84782,
+        "longitude": 5.87025,
+        "neighbourhood": "Benedenstad"
+      },
+      "story": "Nijmegen's most recent Tree of the Year grows on ground that has been fought over since the Romans. Valkhofpark sits on the Valkhof hill, site of a Roman legionary camp and later Charlemagne's imperial palace, and in 2021 neighbourhood residents voted this sycamore, planted around 1880, the year's outstanding tree. It stands roughly 23 metres tall with a trunk just under four metres around, respectable rather than record-breaking, in a park whose ruins date back two thousand years. What makes it the park's chosen tree is not age relative to the site, since the Roman camp beneath it long predates any living thing above ground, but presence: it is the sycamore visitors actually notice among the park's mix of younger plantings and older ruins, singled out for a vote most Dutch neighbourhoods hold every year for a genuinely ordinary species elevated by a genuinely extraordinary setting. Valkhofpark itself is a national monument, one of the oldest continuously used defensive and residential sites in the country, its two surviving medieval structures, the Barbarossa ruin and the Nicholas Chapel, predating the tree by roughly seven centuries. Free to enter and in the middle of the city, it turns a Roman hilltop into an ordinary place to sit under a tree.",
+      "verified_sources": [
+        "https://nijmegen-oost.nl/berichten/boom-van-het-jaar-gewone-esdoorn-valkhofpark-nijmegen-2021",
+        "https://www.monumentaltrees.com/nl/nld/gelderland/nijmegen/10893_valkhofpark/21339/"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "Central Nijmegen, on the Valkhof hill; 10 minute walk from Nijmegen railway station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: winged seeds that spin down in pairs",
+        "kind": "fruit"
+      }
+    },
+    {
+      "id": "nij_002",
+      "name": "The Mother Ginkgo of Kronenburgerpark",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "95 years",
+      "age_min": 85,
+      "age_max": 105,
+      "location": {
+        "address": "Kronenburgerpark, Nijmegen",
+        "latitude": 51.8462,
+        "longitude": 5.8574,
+        "neighbourhood": "City centre"
+      },
+      "story": "One ginkgo in a Nijmegen park quietly created a plant variety now sold across Europe. Sometime around 1930 a tree took root in Kronenburgerpark, laid out in 1881 and 1882 just outside the old city walls, and decades later a nurseryman noticed one of its branches growing in a strange, compact, witch's-broom tangle unlike the rest of the tree. Grafted, propagated and registered in 1995, that mutation became Ginkgo biloba 'Mariken', a dwarf ornamental cultivar now sold by nurseries well beyond the Netherlands and later awarded the Royal Horticultural Society's Award of Garden Merit, named after Mariken van Nieumeghen, the 16th-century Dutch morality play about a Nijmegen woman who makes a pact with the devil. The original tree that produced it is still standing in the park today, roughly 95 years old and about 2.85 metres around, ordinary in form itself even as its genetic accident spread to gardens it will never see. Ginkgo is a living fossil, a lineage that predates flowering plants by tens of millions of years and survived almost unchanged, which makes this park's real contribution almost funny: not the tree's age, but one freak branch that turned into a garden-centre product. Kronenburgerpark is free, central and a national monument in its own right, landscaped around what had recently been the city's demolished fortifications.",
+      "verified_sources": [
+        "https://conifersociety.org/conifers/ginkgo-biloba-mariken",
+        "https://www.vdberk.nl/bomen/ginkgo-biloba-mariken/",
+        "https://www.monumentaltrees.com/nl/nld/gelderland/nijmegen/10888_kronenburgerpark/21343/"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "Central Nijmegen; 10 minute walk from Nijmegen railway station",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "November, when the ginkgo turns gold",
+        "kind": "autumn colour"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nij_003",
+      "name": "The Beech Circle of Sterrenbos",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "275 years",
+      "age_min": 250,
+      "age_max": 300,
+      "location": {
+        "address": "Park Brakkenstein, Driehuizerweg, Nijmegen",
+        "latitude": 51.813,
+        "longitude": 5.858,
+        "neighbourhood": "Brakkenstein"
+      },
+      "story": "Nijmegen's oldest tree does not stand on a battlefield or beside a museum. It stands in a star. Sterrenbos, a star-shaped pattern of radiating forest avenues laid out on the Brakkenstein estate in the 18th century, still survives inside what is now Park Brakkenstein, and a circle of beeches planted as part of that original scheme is, according to local historians, the oldest living tree stock inside city limits, estimated at 250 to 300 years old. Not every original beech has made it this far. Some in the ring have died of old age over the past three centuries and the surviving trees now stand with visible gaps between them, which is itself part of the honest story: this is a living remnant of a planting scheme, not a complete, restored set. The star pattern of avenues around the circle predates the park as a public space by roughly two centuries, laid out when Brakkenstein was still a private country estate first documented in 1654, decades before the beeches themselves went in. What remains today is free and open, part of a park wedged between Radboud University's campus and a rail line in the south of the city, and it is the closest thing this city has to a tree that watched its own park being invented around it.",
+      "verified_sources": [
+        "https://www.noviomagus.nl/Blik/Oudste/Boom.htm",
+        "https://www.huisvandenijmeegsegeschiedenis.nl/info/Sterrenbossen_in_en_om_Nijmegen"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "South Nijmegen, Brakkenstein; near Radboud University and Radboudumc, reachable by bus along Heyendaalseweg",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October and November, when the beech leaves turn copper before they fall",
+        "kind": "autumn colour"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nij_004",
+      "name": "The Julianaboom",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "78 years",
+      "age_min": 76,
+      "age_max": 80,
+      "location": {
+        "address": "Julianapark, Nijmegen",
+        "latitude": 51.8394,
+        "longitude": 5.868,
+        "neighbourhood": "Altrade"
+      },
+      "story": "This chestnut has a birthday on record: 4 September 1948, the day Juliana became Queen of the Netherlands after her mother Wilhelmina's abdication. Nijmegen marked the occasion by planting a white horse chestnut in what is now Julianapark, a former cemetery ground in the Altrade neighbourhood turned public park and named for the new queen. It is an ordinary species grown into an unusually well-documented individual, its planting date tied to a specific historical event rather than estimated from growth rings or a park's founding year, the kind of precision most trees on this list do not have. Horse chestnuts are not native to the Netherlands, brought west from the Balkans in the 16th century and adopted so thoroughly into Dutch parks and streets that most residents assume they always belonged. This one has outlived the queen it was planted for by more than two decades, and the country it grew up in has changed monarchs twice since. Julianapark itself is small, free and largely residential in character, a quiet green space east of the city centre with none of Valkhofpark's Roman weight or Kronenburgerpark's fortress history, just one dated tree doing what a planted anniversary tree is supposed to do: mark a date and keep growing past it.",
+      "verified_sources": [
+        "https://nl.wikipedia.org/wiki/Julianapark_(Nijmegen)",
+        "https://www.monumentaltrees.com/nl/nld/gelderland/nijmegen/10895_julianapark/21342/",
+        "https://duurzaamaltrade.nl/cultuurhistorie/julianapark-en-begraafplaats/"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "Nijmegen-Oost, Altrade neighbourhood; 20 minute walk or short bus ride from the city centre",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September and October, when the conkers ripen and fall",
+        "kind": "fruit"
+      }
+    },
+    {
+      "id": "nij_005",
+      "name": "The Giant Sequoia of Krayenhoffpark",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "100 years",
+      "age_min": 90,
+      "age_max": 110,
+      "location": {
+        "address": "Krayenhoffpark, Nijmegen",
+        "latitude": 51.8486,
+        "longitude": 5.8508,
+        "neighbourhood": "Biezen"
+      },
+      "story": "A Californian giant grows in one of Nijmegen's smallest parks, in a neighbourhood built for railway employees. Krayenhoffpark, in the Biezen district near the city's rail yards, holds a giant sequoia measured in September 2020 at just under four metres around and about 25 metres tall, likely planted sometime in the 1920s though no source gives an exact date, an inference from size rather than a documented planting. That gap in the record is honest rather than a failure of research: this is a neighbourhood park, not an estate or a botanical garden with its own archive, and the tree's presence here at all says more about the era than about any specific person who planted it. Giant sequoias reached Europe from California's Sierra Nevada in the 1850s and became a genuine planting fashion among estate owners and, eventually, municipal parks departments for the next three quarters of a century, moving a tree that can live past 2,000 years into gardens designed to last decades. In its native range this specimen would be barely into adolescence; in a small Dutch park surrounded by early 20th-century housing, it is already the tallest living thing most residents will see on a walk to the shops. Free, small and unglamorous by the standards of Nijmegen's grander parks, it rewards anyone who actually looks up.",
+      "verified_sources": [
+        "https://www.monumentaltrees.com/en/nld/gelderland/nijmegen/855_krayenhoffpark/1524/",
+        "https://woneninnijmegen.blog/2025/07/01/krayenhoffpark/"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "Biezen neighbourhood, Nijmegen; short walk from Nijmegen railway station via Voorstadslaan",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nij_006",
+      "name": "The Hornbeam of Krayenhoffpark",
+      "species": "Hornbeam (Carpinus betulus)",
+      "age_estimate": "~120 years",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Krayenhoffpark, Nijmegen",
+        "latitude": 51.848465,
+        "longitude": 5.851126,
+        "neighbourhood": "Biezen"
+      },
+      "story": "This hornbeam stands close enough to Krayenhoffpark's giant sequoia to be mistaken for an afterthought planted in the famous tree's shadow, but it is roughly the same age and belongs to a species the Dutch have grown for a very different reason. Where the sequoia was an imported curiosity, hornbeam is a native workhorse, historically clipped into hedges and avenues across the Low Countries because it tolerates hard pruning and holds its dead brown leaves through winter, giving a bare hedge some cover even in the coldest months.\n\nThe register dates this one to somewhere around 1900 to 1910, planted while the Biezen neighbourhood around it was still going up to house railway workers from the nearby yards. Left to grow naturally rather than clipped, as this one has been, hornbeam reaches a modest, broad-crowned shape closer to a beech than to the tight hedge most people picture. It grows a few metres from the park's sequoia, free, in the same small green space that gives an otherwise unremarkable railway district its one patch of shade older than most of the houses around it.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1688015)"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "Biezen neighbourhood, Nijmegen; short walk from Nijmegen railway station via Voorstadslaan",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "nij_007",
+      "name": "The Black Locust of Krayenhoffpark",
+      "species": "Black Locust (Robinia pseudoacacia)",
+      "age_estimate": "~140 years",
+      "age_min": 136,
+      "age_max": 146,
+      "location": {
+        "address": "Krayenhoffpark, Nijmegen",
+        "latitude": 51.848602,
+        "longitude": 5.850931,
+        "neighbourhood": "Biezen"
+      },
+      "story": "The Dutch name for this tree translates literally as false Christ's-thorn, a reference to the sharp paired spines that line its young branches, thorns sharp enough that European folklore once linked the species to the biblical crown of thorns despite the tree being a North American import that no one in the region had ever seen before the 17th century. This specimen, dated by the register to around 1880 to 1890, predates its own park: Krayenhoffpark and the railway workers' housing around it were built in the early 20th century, decades after this tree first went into what was then open ground on the edge of the city.\n\nBlack locust fixes nitrogen in the soil through bacteria living on its roots, the same trick clover and beans use, which is part of why it was planted so widely across poor European soils long before anyone understood the chemistry behind why it thrived where other trees struggled. It stands a few steps from the park's hornbeam and its better-known giant sequoia, free, the oldest of the three despite being the least conspicuous.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1688014)"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "Biezen neighbourhood, Nijmegen; short walk from Nijmegen railway station via Voorstadslaan",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "nij_008",
+      "name": "The Chestnut of Begraafplaats Daalseweg",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "age_estimate": "~140 years",
+      "age_min": 136,
+      "age_max": 146,
+      "location": {
+        "address": "Begraafplaats Daalseweg, west side, Nijmegen",
+        "latitude": 51.839463,
+        "longitude": 5.872509,
+        "neighbourhood": "Altrade"
+      },
+      "story": "Four Catholic parishes petitioned Nijmegen's city council in 1884 for permission to open a shared cemetery on the Daalseweg, and the bishop of 's-Hertogenbosch consecrated it the following June. The city architect Jan Jacob Weve designed the grounds around two broad paths crossing at right angles, lined with copper beeches he is himself buried among, and this sweet chestnut grows on the cemetery's west side from roughly the same founding decade. The cemetery closed to new burials in 1948 when a replacement opened elsewhere, and many graves were later cleared for housing, but the grounds survived intact enough to be named a national heritage site in 2002.\n\nThe cemetery holds a harder history than most: 300 victims of the February 1944 bombing of Nijmegen, a raid that killed roughly 800 people in a single afternoon, were buried here. Sweet chestnut is not native this far north, introduced originally by the Romans for its edible nuts, and this one has stood through the cemetery's whole active life and its decades since as a protected historic ground rather than a working one. It grows in the open, free to visit during normal cemetery hours, a short walk from Julianapark's own commemorative chestnut.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1687751)",
+        "https://nl.wikipedia.org/wiki/Begraafplaats_Daalseweg"
+      ],
+      "access": "Free, public cemetery, open during normal daytime hours",
+      "transport": "Altrade neighbourhood, Nijmegen; about a 20 minute walk from Nijmegen railway station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "nij_009",
+      "name": "The Kabouterboom",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "age_estimate": "300 to 400 years, and by some accounts 450",
+      "age_min": 300,
+      "age_max": 450,
+      "girth_cm": 850,
+      "location": {
+        "address": "Kastanjedal, Heerlijkheid Beek, near the Ravenberg, Beek",
+        "latitude": 51.827685,
+        "longitude": 5.918908,
+        "neighbourhood": "Beek, Berg en Dal"
+      },
+      "story": "Children in Beek have been told for generations that gnomes live inside this tree, which is how a sweet chestnut came to be called the Gnome Tree. It is an easy story to believe. The trunk is hollow, at least eight and a half metres around, and the openings in it are the size of doorways.\n\nThat girth makes it the thickest tree in the Netherlands, and the hollowness is why nobody can say how old it is: there is no core left to count. Estimates run from three hundred years to four hundred and fifty. The register that lists it puts the planting between 1600 and 1700 and notes that chestnuts have probably been grown around Nijmegen since the Romans, who liked the crop and liked this ridge.\n\nIn January 2005 children set it on fire. It burned inside, which a hollow tree does readily, and everyone assumed that was the end of four centuries. It leafed out again that spring and has gone on since.\n\nIt stands in the Kastanjedal, a valley of old chestnuts in the Heerlijkheid Beek estate, which Het Geldersch Landschap keeps open to walkers.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/ (Landelijk Register Monumentale Bomen v2024, Bomenstichting, nr 1678473; onder bronvermelding te gebruiken)",
+        "https://www.bomengids.nl/kabouterboom.html",
+        "https://bomenbieb.nl/bijzondere-bomen/kabouterboom-beek/"
+      ],
+      "access": "Free. Woodland on the Heerlijkheid Beek estate, open to walkers.",
+      "transport": "About 4.5 km east of Nijmegen centre. Bus 5 or 8 towards Beek, then a walk up into the Kastanjedal.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Kabouterboom_in_Beek.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "MPhernambucq, Wikimedia Commons",
+        "status": "approved",
+        "width": 3000,
+        "height": 4000
+      },
+      "how_to_recognise": "An enormous hollow chestnut with a trunk you could stand inside, far thicker than anything else in the valley.",
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "nij_010",
+      "name": "The Limes of the Kopse Hof",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "225 to 275 years",
+      "age_min": 225,
+      "age_max": 275,
+      "location": {
+        "address": "Kopse Hof, at the viewpoint on the Kops Plateau",
+        "latitude": 51.837433,
+        "longitude": 5.896521,
+        "neighbourhood": "Kopse Hof"
+      },
+      "story": "The Romans picked this spot in about 12 BC and built a fort on it, because from sixty four metres up you can see the Waal, the Ooijpolder, the Betuwe and most of the way to Arnhem. Eighteen centuries later somebody planted limes for the same view.\n\nThe group stands on the hilltop at the end of a lime avenue, and the two were almost certainly planted together, the avenue as the way up to the hill. The register dates both between 1750 and 1800 and can show its working: the hill is on the Tranchot map of 1803, and both the avenue and the hill are drawn on the cadastral map of 1811.\n\nIt lists the hilltop group under a category that has nothing to do with size. They are recorded as a kruisboom, a cross tree, which is what the Dutch register calls a tree planted for a religious purpose. The note says only that they may have served one, which is the honest version: nobody now knows what was meant to happen here.\n\nThe register counts three at the viewpoint. Locally they are called the four apostles, which suggests there were once four, and that is the kind of arithmetic old trees usually lose.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/ (Landelijk Register Monumentale Bomen v2024, Bomenstichting, nr 1696070; onder bronvermelding te gebruiken)",
+        "https://woneninnijmegen.blog/2025/08/20/kops-plateau-kopse-hof/",
+        "https://www.absolutefacts.nl/gelderland/nijmegen/kopse-hof.htm"
+      ],
+      "access": "Free. Public open ground on the Kops Plateau, reached by the lime avenue.",
+      "transport": "About 2.6 km east of the centre, a half-hour walk out along the Berg en Dalseweg.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A tight group of very old limes on the highest point, at the top of the avenue, with the view opening north over the river.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "nij_011",
+      "name": "The Yew of the Bartholomeuskerkje",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Churchyard of the Bartholomeuskerkje, Rijksstraatweg, Beek",
+        "latitude": 51.828356,
+        "longitude": 5.925481,
+        "neighbourhood": "Beek, Berg en Dal"
+      },
+      "story": "A charter of 1286 is the first mention of the little church this tree stands beside, and the churchyard around it has been in use ever since. The building had a hard nineteenth century: shared between Catholics and Protestants from 1796, neglected by both, closed in 1824 as unsafe, and only saved when King William I put money towards its repair.\n\nThe yew was there through all of it. The register records a painting by Barend Cornelis Koekkoek from about 1830 showing the church with this tree beside it, already looking like it had been standing a long while, and concludes the tree is probably older than two hundred years. That is one source making a careful argument rather than a measurement, so treat the age as an argument too.\n\nWhat is not in doubt is what a yew does with time. It grows slowly, hollows early, and then keeps going for centuries after the point where any other tree would have finished, which is why yews and graveyards have kept each other company across northern Europe for a thousand years.\n\nThe churchyard is open, small, and quiet, and the foundation that looks after it describes it as park-like. That is fair.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/ (Landelijk Register Monumentale Bomen v2024, Bomenstichting, nr 1696558; onder bronvermelding te gebruiken)",
+        "https://www.bartholomeuskerkje.nl/",
+        "https://nl.wikipedia.org/wiki/Sint-Bartholomaeuskerk_(Beek_(Berg_en_Dal))"
+      ],
+      "access": "Free. Open churchyard.",
+      "transport": "About 4.7 km east of Nijmegen centre, on the Rijksstraatweg at Beek. Bus 5 or 8.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A dark, dense yew among the headstones beside the small white church, thicker in the trunk than its height suggests.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "nij_012",
+      "name": "The Wilhelminaboom of Hertogplein",
+      "species": "Lime (Tilia sp.)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Hertogplein, Nijmegen-Centrum",
+        "latitude": 51.844498,
+        "longitude": 5.868484,
+        "neighbourhood": "Centrum"
+      },
+      "story": "Nijmegen crowned a queen with a tree. On 1 September 1898, five days before Wilhelmina's coronation, the city planted a lime on Hertogplein and ringed it with a wrought iron fence topped with small crowns, designed by the architect Derk Semmelink. The fence survived the German occupation. Its crowns did not: soldiers stripped them during the war, and the fence stood bare until 24 July 1948, when students at Nijmegen's trade school forged replacements and the city held a public ceremony to fit them back on.\n\nWhether the tree itself survived that long is less certain. Dutch Wikipedia's own account of the square says the original lime has since made way for another, without saying when. A 2025 local history piece describes the tree standing today and does not mention any replacement at all. The national tree register dates this spot to the 1880s, a decade before the coronation planting both other sources describe. Nobody has reconciled the three, so this page will not pretend to: what stands on Hertogplein now is a lime, ringed by a fence built for a different one, and its true age is unknown.\n\nThe fence, at least, is certain. It has outlived at least one tree already.",
+      "verified_sources": [
+        "https://nl.wikipedia.org/wiki/Hertogplein",
+        "https://woneninnijmegen.blog/2025/04/04/wilhelminaboom/",
+        "data/registers/netherlands-lrmb.json (nr 1681246)"
+      ],
+      "access": "Free, a public square in the city centre, open at all times",
+      "transport": "About a 15 minute walk from Nijmegen Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The lime inside the small wrought iron fence topped with crowns, on the west side of Hertogplein.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "nij_013",
+      "name": "The Beverboom of Park Leeuwenstein",
+      "species": "Magnolia (Magnolia sp., exact species not confirmed)",
+      "age_estimate": "roughly 140 years",
+      "age_min": 136,
+      "age_max": 146,
+      "location": {
+        "address": "Park Leeuwenstein, Nijmegen-West",
+        "latitude": 51.844697,
+        "longitude": 5.840562,
+        "neighbourhood": "Wolfskuil / Waterkwartier border, Nijmegen-West"
+      },
+      "story": "Park Leeuwenstein is what is left of a demolished mansion's garden, and this magnolia is what is left of its exotic specimen trees. Villa Leeuwenstein went up in the mid-1800s and came down in 1958, too dilapidated to save, but the trees its owners planted around it kept growing after the house did not. A storm on 18 January 2018 took the park's giant sequoia and a swamp cypress in one night, leaving this tree, the beverboom, as the park's oldest surviving specimen.\n\nBeverboom is old Dutch for magnolia, specifically for Magnolia virginiana, though the exact species growing here has not been confirmed. A 2023 local survey of the park still listed a cucumber magnolia, Magnolia acuminata, among its special trees, and it may be the same tree the national register pins here by coordinate rather than by name. Acuminata flowers greenish yellow after its leaves open in late spring; virginiana flowers cream white and fragrant in early summer. A photograph at flowering time would settle it.\n\nWhichever it is, the register dates the planting to the 1880s, roughly 140 years, a specimen tree that has already outlived the house it was planted beside and two of its own neighbours.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1680530)",
+        "https://woneninnijmegen.blog/2023/08/16/park-leeuwenstein/"
+      ],
+      "access": "Free, public municipal park, open at all times",
+      "transport": "About 2.9 km from Nijmegen city centre, Nijmegen-West",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "One of Park Leeuwenstein's older specimen trees, a magnolia rather than the usual park planting; ask locally which one is the registered beverboom.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "nij_014",
+      "name": "The Pastorie Chestnut of Lent",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "roughly 130 years",
+      "age_min": 126,
+      "age_max": 136,
+      "location": {
+        "address": "Plein voor de kerk, Pastoor van Laakstraat, Lent",
+        "latitude": 51.861172,
+        "longitude": 5.864418,
+        "neighbourhood": "Lent, Nijmegen-Noord"
+      },
+      "story": "A parish square in Lent doubles as a chestnut's front garden. The Onze Lieve Vrouw Geboorte church went up between 1877 and 1879, designed by the architect G. te Riele Wzn, and the register dates the chestnut on its forecourt to the following decade, planted around the time the church's own rectory rose beside it. The national heritage register's listing for the site still describes it today: an old chestnut tree stands on the square in front of the church, the rectory on its north side.\n\nLent itself has changed more than the tree has. It was a village on the Waal's north bank until Nijmegen annexed it in 1998, and since 2016 an artificial island and a new bridge have turned its riverside fields into the city's newest district. The square with the chestnut sits a few streets back from all of that, beside the road into what is still, for now, a village centre with its own parish rather than a suburb of one.\n\nThe tree is roughly 130 years old and stands in the open, free to see at any hour, a short walk from Lent's own railway station.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1689531)",
+        "https://www.monumenten.nl/monument/522954"
+      ],
+      "access": "Free, on the public square in front of the parish church, open at all times",
+      "transport": "About an 8 minute walk from Nijmegen Lent railway station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The chestnut on the church forecourt, rectory to its north, on Pastoor van Laakstraat in Lent.",
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "nij_015",
+      "name": "The Weeping Beech of Begraafplaats Daalseweg",
+      "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+      "age_estimate": "roughly 125 to 135 years, from the register's planting band of 1890-1900",
+      "age_min": 126,
+      "age_max": 136,
+      "location": {
+        "address": "Right of the entrance gate, Begraafplaats Daalseweg, Nijmegen",
+        "latitude": 51.839319,
+        "longitude": 5.873587,
+        "neighbourhood": "Nijmegen-Midden"
+      },
+      "story": "A weeping beech droops on purpose. Every ordinary beech reaches up for its share of light; this one carries a mutation that pulls its branches down instead, so its crown pours toward the ground rather than spreading for the sky. It stands to the right of the entrance gate at Begraafplaats Daalseweg, the first tree a visitor meets.\n\nThe cemetery itself is a protected national monument, not for any single tree but for its whole design: two paths cross the grounds, both lined with beeches, meeting at a crucifix at the centre. The weeping beech at the gate breaks that planned rhythm on purpose, an ornamental flourish set apart from the disciplined rows behind it.\n\nThe Dutch national register of monumental trees dates the planting to between 1890 and 1900, putting it at roughly 125 to 135 years old, and lists it as the cemetery's own protected specimen. It is the only source found for this particular tree: local histories of the cemetery describe the beech-lined paths and the crucifix at length but none names this one specifically, so the age comes from the register alone.\n\nThe grounds belong to a working Catholic cemetery and stay open during daylight hours, free to enter. Go quietly.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (register nr 1687753)"
+      ],
+      "access": "Free, public cemetery grounds, open during daylight hours. Please be respectful, it is a working cemetery.",
+      "transport": "About 1.5 km northwest of Nijmegen railway station, roughly 20 minutes on foot or a short bus ride.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    },
+    {
+      "id": "nij_016",
+      "name": "The Plane of the Petruskerk",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 145 to 155 years, from the register's planting band of 1870-1880",
+      "age_min": 146,
+      "age_max": 156,
+      "location": {
+        "address": "Kerkplein, Petruskerk, Schependomlaan/Korte Bredestraat, Hees, Nijmegen",
+        "latitude": 51.84081,
+        "longitude": 5.829079,
+        "neighbourhood": "Hees"
+      },
+      "story": "London planes shed their bark instead of quietly laying down new rings underneath it, sloughing off patches through the year to show paler wood beneath, which is why an old plane looks mottled and half-flayed rather than simply weathered. This one stands on the small square beside the Petruskerk in Hees, a Nijmegen district that was its own village before the city grew out to meet it.\n\nThe Dutch national monumental tree register dates the planting to between 1870 and 1880, making the tree roughly 145 to 155 years old, and lists it as protected. That register is the only source found naming this specific tree: histories of the square and the church describe the setting in detail but not this plane by name, so the age rests on the register's word alone.\n\nThe square sits on church grounds and reads as ordinary open public space, a small plaza in front of a working parish rather than an enclosed courtyard, and the register itself records it as visitable. Nothing else about this particular tree has surfaced yet. If you know more, tell us.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (register nr 1680526)"
+      ],
+      "access": "Free, public church square, open at any time.",
+      "transport": "About 3.5 km west of Nijmegen railway station, reachable by bus toward Hees, roughly 10 minutes' walk from the nearest stop.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    },
+    {
+      "id": "nij_017",
+      "name": "The Copper Beech of the Antonius Abtkerk",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "roughly 225 to 275 years, from the register's planting band of 1750-1800",
+      "age_min": 226,
+      "age_max": 276,
+      "location": {
+        "address": "Boundary of Dennenstraat 121 and 125 (Sint Antonius Abtkerk), Hees, Nijmegen",
+        "latitude": 51.835734,
+        "longitude": 5.820439,
+        "neighbourhood": "Hees"
+      },
+      "story": "This copper beech is older than the church beside it. The current Sint Antonius Abtkerk on Dennenstraat, a red-brick building by the architect Pieter Cuypers, went up in 1879 and 1880. The national register places the beech at the boundary of the church and its rectory somewhere between 1750 and 1800, roughly a century older than the bricks next to it.\n\nThat is not as strange as it sounds. The parish itself predates Cuypers by centuries: an older church stood on this ground before his, a barn chapel was rebuilt here in 1826, and parish history traces the site back to a sixteenth century predecessor. A beech planted in the late 1700s would have grown up beside whatever building stood here then, and simply outlasted it, the way old trees on church land tend to.\n\nCopper beeches carry a mutation that floods their leaves with red pigment, so from a distance this one reads almost black against the brick. The Dutch national monumental tree register is the only source found for this specific tree, roughly 225 to 275 years old by its planting estimate; local parish and heritage histories confirm the site's long religious use but do not mention the beech itself, so the age stands on the register alone.\n\nThe grounds are recorded as visitable and visible from outside, ordinary church land in the Hees district rather than a closed private garden.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (register nr 1680519)"
+      ],
+      "access": "Free, church grounds visible and open to visitors.",
+      "transport": "About 4 km west of Nijmegen railway station, reachable by bus toward Hees.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    },
+    {
+      "id": "nij_018",
+      "name": "The Silver Maple of Sumatraplein",
+      "species": "Silver Maple (Acer saccharinum)",
+      "age_estimate": "roughly 120 years",
+      "age_min": 116,
+      "age_max": 126,
+      "girth_cm": null,
+      "location": {
+        "address": "Sumatraplein 24, Nijmegen-Oost",
+        "latitude": 51.836798,
+        "longitude": 5.866109,
+        "neighbourhood": "Nijmegen-Oost"
+      },
+      "verified_sources": [
+        "Landelijk Register van Monumentale Bomen (Bomenstichting), register nr 1681250"
+      ],
+      "access": "Free. Public street tree on municipal ground (owner_category 'gemeente' in the register), visible and accessible at all times.",
+      "transport": "About 1.3 km southeast of Nijmegen railway station, in the Nijmegen-Oost neighbourhood; roughly 15-20 minutes on foot or a short bus ride.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Most of Nijmegen's protected trees carry the register's full monumental status. This one carries a lower rank, 'potentieel', a candidate rather than a confirmed monument, which changes nothing about standing in front of it: a silver maple planted somewhere between 1900 and 1910 on a residential street in Nijmegen-Oost, now past its first century.\n\nAcer saccharinum grows fast and splits easily, which is why American cities stopped planting it as a street tree decades before European ones did; the trees that survive from an early planting wave tend to be the ones nobody got around to replacing. This one has made it past 120 years on a municipal verge, owned and maintained by the city rather than a private garden, which is also why it can carry a public register entry at all.\n\nNo independent source beyond the national tree register names this specific tree, and no girth has been recorded, so treat the age band as the register's own estimate rather than a measurement. It stands in the open on Sumatraplein, free to see at any hour, about twenty minutes on foot from the station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ],
+  "oldest_tree_id": "nij_009",
+  "hero_tree_id": "nij_009"
 }
