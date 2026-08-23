@@ -3286,6 +3286,15 @@
     "note": "sole READY lead (KNJ1/520, the smaller silky oak) was a leads.py false positive: already published, folded into stb_003's existing story ('there are two of them here'), just never had its status field updated from 'lead' to 'folded'. Fixed the status field so future passes stop re-surfacing it. Zero new trees, cheap check.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "potsdam",
+    "kind": "verify",
+    "tokens": 0,
+    "trees": 0,
+    "note": "sole READY lead (the split-leaved/cut-leaf oak near Schloss Pfaueninsel) was a leads.py false positive of a different kind: same register id and coordinates as Berlin's already-published ber_015, filed under Potsdam only because a distance-based register query pulled it in (Pfaueninsel is administratively Berlin, not Potsdam). Marked duplicate in the leads file so it stops resurfacing. Zero new trees, avoided publishing a duplicate page.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
