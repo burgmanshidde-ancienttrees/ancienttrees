@@ -3151,6 +3151,15 @@
     "note": "session work: free Commons API sweep, no AI tokens. Queue now 1128 trees swept, 603 with at least one open-licence candidate, up from prior sweep. Not judged (this runners egress proxy blocks upload.wikimedia.org); left for a viewing pass.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "site/src/pages/[city]/[tree].astro (park-link build fix)",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session work: rung 2, deploy was failing (QA: dead internal link to /parks/hortus-botanicus-amsterdam from 2 Amsterdam tree pages). Root cause: Hidde pulled Amsterdam to 34 trees, dropping Hortus Botanicus below PARK_MIN_TREES (5), so parks/[slug].astro stopped generating that page, but [tree].astro built its parkPages map straight from the parks content collection with no matching filter, so two tree pages still linked to the now-missing page. Filtered parkPages the same way the park page itself is filtered. Verified: npm run build + qa.py clean (only the known shallow-clone sitemap-lastmod false positive remains), preflight.py 0 problems, superlatives.py clean. Tokens not tracked for session work, logged as 0 per standing instruction.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
