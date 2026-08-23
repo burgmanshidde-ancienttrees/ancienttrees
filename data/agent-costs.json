@@ -3295,6 +3295,15 @@
     "note": "sole READY lead (the split-leaved/cut-leaf oak near Schloss Pfaueninsel) was a leads.py false positive of a different kind: same register id and coordinates as Berlin's already-published ber_015, filed under Potsdam only because a distance-based register query pulled it in (Pfaueninsel is administratively Berlin, not Potsdam). Marked duplicate in the leads file so it stops resurfacing. Zero new trees, avoided publishing a duplicate page.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "kyoto",
+    "kind": "verify",
+    "tokens": 0,
+    "trees": 0,
+    "note": "sole READY lead (Yuryu-matsu / Reclining Dragon Pine register hit) confirmed as the same tree as the already-published kyo_001 (coordinates ~15-20m apart, same species, same monument), a duplicate an earlier pass had already suspected but left with no status field so leads.py kept offering it as READY. Marked duplicate. Zero new trees, avoided a wasted verify pass.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
