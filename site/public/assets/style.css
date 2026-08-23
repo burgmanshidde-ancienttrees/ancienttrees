@@ -685,6 +685,8 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 
 /* ---- Markers ---- */
 .pin { padding: 2px 8px; border-radius: 999px; background: var(--moss); border: 1.5px solid #fff; box-shadow: 0 2px 8px rgba(26,26,20,0.35); cursor: pointer; color: #fff; font-size: 10.5px; font-weight: 600; font-family: var(--sans); white-space: nowrap; transition: transform 0.15s, background 0.15s; }
+/* One tree on the map means no label to write, so the pill becomes a dot. */
+.pin-dot { width: 14px; height: 14px; padding: 0; border-radius: 50%; }
 .pin:hover { transform: scale(1.1); z-index: 5; }
 .hero-search { display: flex; gap: 0.5rem; margin-top: 0.9rem; }
 /* Hero height, benchmarked (Hidde, 2026-08-01: "staat wel erg weinig boven de
@@ -750,16 +752,22 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .pin-tree:hover { transform: scale(1.12); box-shadow: 0 5px 16px rgba(26,26,20,0.34); }
 .pin-tree.active { background: var(--moss); transform: scale(1.2); z-index: 5; }
 .pin-tree.active svg { color: var(--cream); }
-/* Centred with flex, not line-height. The badge is border-box with a 2px
-   border, so its content box is 13px while line-height was set to the full
-   17px: measured 2026-08-11, the digit sat 4.5px from the top and 0.5px from
-   the bottom. line-height:1 plus flex centres it whatever the border does and
-   whether the number has one digit or three. */
-.pin-rank { position: absolute; top: -3px; right: -3px; min-width: 17px; height: 17px; border-radius: 9px;
-  background: var(--ink); color: #fff; font-family: var(--sans); font-size: 10px; font-weight: 600;
-  line-height: 1; border: 2px solid var(--cream);
-  display: flex; align-items: center; justify-content: center; padding: 0 3px; }
-.pin-tree.active .pin-rank { background: var(--cream); color: var(--ink); border-color: var(--moss); }
+/* The collect mark, and nothing else. This used to be .pin-rank and carried the
+   tree's number in the list beside the map, which was our ordering rather than
+   anything a visitor needed, and it sat on top of the species silhouette that is
+   the point of the pin. The number went on 2026-08-23; the badge stayed, because
+   it was quietly doing a second job the number got the credit for: showing which
+   trees you have stood in front of. Hidden until then, so a fresh map is just
+   trees. The tick geometry matches .seen-mark on the check-in button, so the
+   same gesture reads the same in both places. */
+.pin-got { position: absolute; top: -2px; right: -2px; width: 14px; height: 14px;
+  border-radius: 50%; background: var(--moss); border: 2px solid var(--cream);
+  display: none; }
+.pin-tree.seen .pin-got { display: block; }
+.pin-tree.seen .pin-got::after { content: ''; position: absolute; left: 3px; top: 0.5px;
+  width: 3px; height: 6px; border: solid #fff; border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg); }
+.pin-tree.active .pin-got { border-color: var(--moss); }
 
 /* A tree at its peak, on the map. The pin is already a species silhouette, so
    the effect belongs to the drawn tree: the silhouette takes the peak colour,
@@ -980,7 +988,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   left: 4px; top: 1px; width: 3px; height: 7px; border: solid var(--moss);
   border-width: 0 1.5px 1.5px 0; transform: rotate(45deg); }
 .pin-tree.seen { color: var(--moss); }
-.pin-tree.seen .pin-rank { background: var(--moss); color: #fff; }
+/* .pin-tree.seen now shows the badge; see .pin-got above. */
 .passport { margin-top: 0.9rem; font-size: 13px; color: var(--ink-mid);
   background: var(--moss-light); border-radius: 6px; padding: 0.6rem 0.85rem; }
 .passport strong { color: var(--moss); font-weight: 600; }
