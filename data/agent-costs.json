@@ -3115,6 +3115,24 @@
     "note": "session work, not an agent pass: found Viennas 8 READY leads were all already-declined candidates from an earlier verify pass (no HELD/status marker, just free-text notes), same shape as 4 already-skipped Rome leads. Added a checked-against-corpus regex to leads.py that catches this without touching the count-doctrine exemption. READY drops 147 to 140 corpus-wide. Prevented a wasted write pass on Vienna. Tokens not tracked for session work, logged as 0 per standing instruction.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "The Hague BLOCKER fix + count-promises.ts widen",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session work: fixed a Fresh-eyes review BLOCKER (my own The Hague merge left the intros closing sentence at the old 21-tree count) and widened site/src/lib/count-promises.ts with a new pattern for N trees in all, verified against the exact bug and the rest of the corpus. Tokens not tracked for session work, logged as 0 per standing instruction.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "nijmegen (3 single-source LRMB trees)",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 3,
+    "note": "session work, not an agent pass: wrote 3 stories directly from data/leads/nijmegen.json entries already carrying real register facts (planted bands, confirmed access), single-source-and-flagged per Step 2. Tokens not tracked for session work, logged as 0 per standing instruction.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
