@@ -2893,3 +2893,24 @@ second worthwhile thread, not chased today for time: Tampere is reported
 "Tampereen luonnonmuistomerkit" open dataset on the same pattern as
 Helsinki's; worth a direct check before Tampere is next in the queue.
 
+**Helsinki's register imported the same day, separately from the Turku
+question above.** Fetched the WFS layer directly with `srsName=EPSG:4326`,
+which returns real WGS84 coordinates and skips the EPSG:3879 conversion
+Turku would need. 23 of 31 features kept as
+`data/registers/finland-helsinki-luonnonmuistomerkit.json`: 8 excluded as
+geological features that share the `luonnonmuistomerkki` designation with
+trees in Helsinki (`hiidenkirnu` glacial potholes, a rock crevice, a
+boulder/outcrop) but are not trees, and 1 excluded because its own record
+says it stands on a private plot. The remaining 23 are genuinely thin on
+description (only the King's Oak in Kaarela carries free text; everything
+else is a bare Finnish common name plus a neighbourhood, no age or girth
+anywhere), so this register alone clears existence and species as ONE
+official-register source per this project's two-source rule, and a verify
+pass still has real work per tree. Helsinki is already a published city
+(rank 96, 8/30 trees, 38 impressions/10 days), so this is a real deepening
+opportunity, not a new-city question. One entry (the King's Oak, id 4)
+needs a specific access check before it can ship: its own record places it
+"in the yard of a property owned by the water utility," which needs the
+same case-by-case judgement CLAUDE.md applies to company grounds, not an
+automatic yes or no.
+

@@ -221,7 +221,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 24 | Brisbane | 15.36 | 162,602 | 10 | 1 | 1 | 186 | 30 | measured |
 | 25 | Venice | 13.64 | 267,527 | 11 | 6 | 1 | 4 | 30 | measured |
 | 26 | Cambridge | 21.13 | 97,974 | 5 | 2 | 1 | - | 20 | measured |
-| 27 | The Hague | 9.79 | 236,723 | 21 | 1 | 3 | 166 | 20 | measured |
+| 27 | The Hague | 9.79 | 236,723 | 30 | 1 | 5 | 166 | 20 | measured |
 | 28 | Seville | 11.71 | 170,545 | 37 | 6 | 2 | - | 20 | measured |
 | 29 | New York | 17.48 | 1,124,326 | 20 | 5 | 2 | - | 30 | measured |
 | 30 | Dubrovnik | 16.32 | 119,586 | 4 | 1 | 1 | 2 | 20 | measured |
@@ -271,26 +271,26 @@ so qa.py fails the deploy when the table and the json disagree.
 | 74 | Granada | 5.57 | 86,361 | 10 | 3 | 2 | 4 | 20 | measured |
 | 75 | Tampere | 8.78 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 76 | Pisa | 5.85 | 52,174 | - | - | - | - | 10 | predicted (travel demand) |
-| 77 | Leipzig | 8.60 | 121,319 | - | - | - | - | 10 | predicted (travel demand) |
-| 78 | Trieste | 4.23 | 117,233 | 10 | 1 | 2 | 43 | 20 | measured |
-| 79 | Zurich | 8.45 | 140,788 | 4 | - | - | - | 20 | measured |
-| 80 | Taipei | 8.38 | 143,193 | - | - | - | - | 10 | predicted (travel demand) |
-| 81 | Salamanca | 5.50 | 47,897 | - | - | - | 1 | 10 | predicted (travel demand) |
-| 82 | Hiroshima | 5.55 | 129,791 | - | - | - | - | 10 | predicted (travel demand) |
-| 83 | Genoa | 4.61 | 145,206 | 10 | 1 | 1 | 11 | 20 | measured |
-| 84 | Nice | 8.26 | 136,877 | 10 | 6 | 2 | - | 30 | measured |
-| 85 | Bologna | 4.80 | 146,161 | 12 | 7 | 2 | 9 | 20 | measured |
-| 86 | Adelaide | 8.14 | 139,166 | - | - | - | - | 10 | predicted (travel demand) |
-| 87 | Fukuoka | 5.19 | 77,485 | 11 | 7 | 1 | 1 | 20 | measured |
-| 88 | San Francisco | 8.08 | 361,111 | - | - | - | - | 10 | predicted (travel demand) |
-| 89 | Lucca | 3.84 | 52,271 | 10 | 3 | 1 | 27 | 20 | measured |
-| 90 | Bordeaux | 4.99 | 156,201 | 10 | - | 2 | 211 | 20 | measured |
-| 91 | Luang Prabang | 7.49 | 24,534 | - | - | - | - | 10 | predicted (travel demand) |
-| 92 | Buenos Aires | 7.33 | 333,331 | - | - | - | - | 10 | predicted (travel demand) |
-| 93 | Kauai | 7.33 | - | - | - | - | - | 10 | predicted (travel demand) |
-| 94 | Bergen | 7.30 | 82,940 | - | - | - | - | 10 | predicted (travel demand) |
-| 95 | Caserta | 3.65 | 14,783 | 20 | - | 2 | 51 | 20 | measured |
-| 96 | Helsinki | 7.30 | 148,908 | 8 | 1 | - | - | 30 | measured |
+| 77 | Helsinki | 7.30 | 148,908 | 8 | 1 | - | 9 | 30 | measured |
+| 78 | Leipzig | 8.60 | 121,319 | - | - | - | - | 10 | predicted (travel demand) |
+| 79 | Trieste | 4.23 | 117,233 | 10 | 1 | 2 | 43 | 20 | measured |
+| 80 | Zurich | 8.45 | 140,788 | 4 | - | - | - | 20 | measured |
+| 81 | Taipei | 8.38 | 143,193 | - | - | - | - | 10 | predicted (travel demand) |
+| 82 | Salamanca | 5.50 | 47,897 | - | - | - | 1 | 10 | predicted (travel demand) |
+| 83 | Hiroshima | 5.55 | 129,791 | - | - | - | - | 10 | predicted (travel demand) |
+| 84 | Genoa | 4.61 | 145,206 | 10 | 1 | 1 | 11 | 20 | measured |
+| 85 | Nice | 8.26 | 136,877 | 10 | 6 | 2 | - | 30 | measured |
+| 86 | Bologna | 4.80 | 146,161 | 12 | 7 | 2 | 9 | 20 | measured |
+| 87 | Adelaide | 8.14 | 139,166 | - | - | - | - | 10 | predicted (travel demand) |
+| 88 | Fukuoka | 5.19 | 77,485 | 11 | 7 | 1 | 1 | 20 | measured |
+| 89 | San Francisco | 8.08 | 361,111 | - | - | - | - | 10 | predicted (travel demand) |
+| 90 | Lucca | 3.84 | 52,271 | 10 | 3 | 1 | 27 | 20 | measured |
+| 91 | Bordeaux | 4.99 | 156,201 | 10 | - | 2 | 211 | 20 | measured |
+| 92 | Luang Prabang | 7.49 | 24,534 | - | - | - | - | 10 | predicted (travel demand) |
+| 93 | Buenos Aires | 7.33 | 333,331 | - | - | - | - | 10 | predicted (travel demand) |
+| 94 | Kauai | 7.33 | - | - | - | - | - | 10 | predicted (travel demand) |
+| 95 | Bergen | 7.30 | 82,940 | - | - | - | - | 10 | predicted (travel demand) |
+| 96 | Caserta | 3.65 | 14,783 | 20 | - | 2 | 51 | 20 | measured |
 | 97 | Maastricht | 3.65 | 47,763 | 10 | - | 1 | 136 | 20 | measured |
 | 98 | Guimaraes | 3.84 | 26,203 | 6 | 1 | 1 | 19 | 20 | measured |
 | 99 | Athens | 7.11 | 235,429 | 12 | 6 | 2 | - | 30 | measured |
