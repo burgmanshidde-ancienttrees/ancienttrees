@@ -2667,3 +2667,54 @@ research, not a register, and Bali is not on Hidde's 2026-08-19 named list.
 
 Verdict: **empty**. No register to import.
 
+## Ireland: already imported, extended to Cork, and the scouting ledger fixed (2026-08-23)
+
+`scout_next.py --target` moved on to Cork (#63, published at 5 trees, but no
+register supply and no scouting verdict on file). The search turned up
+Heritage Trees of Ireland immediately, and a first pass here nearly imported
+it as a brand new find and overwrote the existing file with a smaller,
+unconverted version, before `git status` showing "M" rather than "??" on
+`data/registers/ireland-heritage-trees.json` caught it. **This register was
+already imported on 2026-08-08 and used again on 2026-08-09** to add six
+trees to Dublin (see CURATION.md's archive for that date); the only real gap
+was that nobody had ever logged it in `data/register-scouting.json`, which is
+why `scout_next.py` pointed at it as unscouted. That gap is now closed.
+
+**Heritage Trees of Ireland, National Biodiversity Data Centre.** Built from
+Aubrey Fennell's 1999-2009 survey for the Tree Council of Ireland / Irish Tree
+Society's Tree Register of Ireland project. 724 trees, 424 sites, 143 species,
+covering the whole island. Licence: **CC-BY 4.0**. The existing import already
+carried the fix for the coordinate problem the raw source has: coordinates
+come as Irish Grid easting/northing (OSI/TM75), not lat/long, and
+`scripts/irish_grid.py` (written 2026-08-08, an inverse transverse Mercator
+implementation with no reprojection library available in this environment)
+converts them, verified to within about 40m against three register entries
+that already matched published, confirmed-pin trees. The 2026-08-08 import
+also already handles the dataset's other trap: its "Access" column is
+identical boilerplate on every one of the 724 rows and answers nothing about
+a specific tree, so the existing file only carries sites independently
+confirmed genuinely public (Trinity College, National Botanic Gardens
+Glasnevin, St Anne's Park, Marley Park, all Dublin) rather than the whole 724.
+
+**Extended 2026-08-23 with Blarney Estate and Fota Arboretum, Co. Cork.**
+Cork's page already draws two of its five trees from Blarney and one from
+Fota, so those sites' public status was already established. Converted the
+register's Blarney and Fota rows with the existing script: two, a yew and a
+Western Red Cedar, landed within about 60m of the already-published cor_001
+and cor_002, near-certain duplicates, recorded in the register file but not
+shipped. Eight more were new: a Cappadocian maple and a beech at Blarney, and
+at Fota a camphor tree, a spiral-needled Japanese cedar cultivar, a Canary
+Island date palm, a New Zealand tanekaha, a holm oak and a coast redwood.
+Cork went from 5 trees to 13 against a target of 20, all with real converted
+coordinates, `location_precision: approximate` per the converter's own
+caveat.
+
+**What is left for a future pass.** The register covers the whole island and
+the existing Dublin subset plus the new Cork one are both far short of its
+724 rows; Galway, Limerick, Killarney, Kilkenny and Belfast can all draw on
+it once their existing coverage is checked for overlap the way Cork's was.
+Doneraille Park (3 candidates) and The Gearagh nature reserve near Macroom (1
+candidate) both turned up for Cork itself but sit 35-40 minutes' drive out,
+past the roughly-30-minute day-trip boundary, so they were left unshipped in
+`data/leads/cork.json` rather than stretched to fit.
+

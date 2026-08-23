@@ -3,8 +3,8 @@
   "country": "Ireland",
   "status": "published",
   "intro": "Cork's oldest tree grows out of solid rock eight kilometres from the city, and the Irish public once voted it the country's best. The city splits its remarkable trees three ways: the Blarney Castle gardens, where a medieval yew presides over the Rock Close; a university campus that is also an accredited arboretum; and Fota Island in Cork Harbour, where one family spent three generations planting trees from every continent, free to walk and thirteen minutes away by train. None of it needs a car: the 215 bus, the Cobh line, or your feet.",
-  "meta_description": "Cork's five most remarkable trees: a 600-year yew voted Ireland's Tree of the Year, redwoods paid for with beer money, and an 1870 Himalayan magnolia.",
-  "question_meta": "Cork's oldest tree is the Witch's Yew at Blarney, more than 600 years old and voted Ireland's Tree of the Year in 2019. Its story and four more.",
+  "meta_description": "Cork's remarkable trees: a 600-year yew voted Ireland's Tree of the Year, redwoods paid for with beer money, and Fota's camphor tree and palm.",
+  "question_meta": "Cork's oldest tree is the Witch's Yew at Blarney, more than 600 years old and voted Ireland's Tree of the Year in 2019. Its story and twelve more.",
   "question_answer": "Cork's oldest tree is the Witch's Yew, a European Yew growing from the limestone of the Rock Close at Blarney Castle, estimated at more than 600 years old. It was voted Ireland's Tree of the Year in 2019 and stood for Europe's in 2020. Blarney is eight kilometres from the city centre, about 30 minutes on the 215 bus, and the yew is inside the paid castle gardens.",
   "question_context": "The yew predates everything designed around it. When the Jeffreyes family landscaped the Rock Close in the 1750s they built their Witch's Kitchen folly directly beneath a tree that was already centuries old, and the 1446 castle keep most visitors come for is roughly the yew's contemporary, not its elder. Legend keeps the Blarney Witch in it, the spirit said to have first revealed what kissing the Blarney Stone does; the 2019 national vote and its 11,372-vote European campaign the following spring were really votes for that whole story growing out of bare limestone. Yews resist precise dating because their trunks hollow with age, so the 600-year figure is an expert floor rather than a ceiling; the tree could be considerably older. Cork's other remarkable trees are younger imports, mostly Victorian: the beer-funded redwoods and the 1929 Monterey pine of the University College Cork campus arboretum in the city itself, and the 1870 Campbell's Magnolia at Fota, planted from Darjeeling seed six years before Kilmacurragh's celebrated specimen and still flowering on bare branches every February.",
   "faq": [
@@ -193,6 +193,237 @@
         "label": "late February into March, when huge pink cups open on bare branches",
         "kind": "flowers"
       },
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cor_006",
+      "name": "The Cappadocian Maple of Blarney",
+      "species": "Cappadocian Maple (Acer cappadocicum)",
+      "age_estimate": "roughly 100 to 150 years",
+      "age_min": 100,
+      "age_max": 150,
+      "location": {
+        "address": "Blarney Castle & Gardens, Blarney, Co. Cork",
+        "latitude": 51.92762,
+        "longitude": -8.56999,
+        "neighbourhood": "Blarney"
+      },
+      "story": "This maple comes from the mountains around Cappadocia in central Turkey and the Caucasus beyond it, a long way from the limestone and yew of the Blarney gardens it has spent a century in. The National Biodiversity Data Centre's 2009 heritage tree survey lists it among the estate's exceptional specimens, aged to somewhere between one and one and a half centuries, without recording who planted it or why.\n\nThe species is a close relative of the Norway maple, and the giveaway is the same: snap a leaf stalk and the sap that beads up is milky white rather than clear. Its autumn colour is the real reason gardeners plant it far from home. Where a sugar maple goes red, Acer cappadocicum turns a pure, saturated gold, holding the colour for weeks longer than most maples before it drops.\n\nIt shares the wider Blarney grounds with the Witch's Yew and the Great Western Red Cedar, both already well documented; this maple has had no such attention. The heritage tree register is the only source that has looked at it. If you know when it was planted, tell us.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when it turns a pure, saturated gold"
+      },
+      "verified_sources": [
+        "https://maps.biodiversityireland.ie/Dataset/27"
+      ],
+      "access": "Paid entry (Blarney Castle & Gardens ticket)",
+      "transport": "Bus 215 from Cork bus station to Blarney, about 30 min, then a short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cor_007",
+      "name": "The Beech of Blarney",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "roughly 150 to 200 years",
+      "age_min": 150,
+      "age_max": 200,
+      "location": {
+        "address": "Blarney Castle & Gardens, Blarney, Co. Cork",
+        "latitude": 51.92636,
+        "longitude": -8.56867,
+        "neighbourhood": "Blarney"
+      },
+      "story": "The national heritage tree survey rates this beech among Blarney's exceptional specimens, alongside the more famous yew and cedar, and puts it at somewhere between 150 and 200 years old, which would make it a near contemporary of the Rock Close's Witch's Kitchen folly rather than of the medieval castle itself.\n\nA beech left alone for that long builds a dome-shaped crown wide enough to shade the ground beneath it into permanent twilight, which is why almost nothing grows under a mature beech but the beech's own fallen leaves, slow to rot and thick enough to smother competitors. Its bark stays smooth its whole life, grey and almost elephantine, unlike the cracked and plated bark most trees this old develop, and generations of visitors carving initials into it are why old beeches so often carry scars that never grow over.\n\nWhat sets this one apart from the estate's other specimens has not been written down anywhere the register can point to. It stands somewhere in the wider Blarney gardens, and the heritage register is the only source describing it. If you know more, tell us.",
+      "verified_sources": [
+        "https://maps.biodiversityireland.ie/Dataset/27"
+      ],
+      "access": "Paid entry (Blarney Castle & Gardens ticket)",
+      "transport": "Bus 215 from Cork bus station to Blarney, about 30 min, then a short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cor_008",
+      "name": "The Camphor Tree of Fota",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "roughly 50 to 100 years",
+      "age_min": 50,
+      "age_max": 100,
+      "location": {
+        "address": "Fota Arboretum, Fota Island, Carrigtwohill, Co. Cork",
+        "latitude": 51.89382,
+        "longitude": -8.3015,
+        "neighbourhood": "Fota Island"
+      },
+      "story": "Crush a leaf from this tree and it releases the smell the whole species is named for: camphor, the same compound once distilled from it for mothballs, chest rubs and embalming. It is a subtropical evergreen from southern China, Taiwan and Japan, and it has no business surviving outdoors in Ireland at all. It survives here because Fota Island sits in Cork Harbour with a frost-free microclimate that the Smith-Barry family exploited for three generations, from the 1820s onward, planting things nowhere else in the country could keep alive.\n\nThe national heritage tree survey bands its age to 50 to 100 years, decades younger than the arboretum around it, and lists nothing more about how it got here. Every part of the tree, bark, wood, leaf and root, carries the same aromatic oil, which is also why camphor trees resist insects and rot better than almost anything else in a temperate garden that was never built to hold them.\n\nThe register is the only source that has described this specific tree. If you know when it was planted, tell us.",
+      "verified_sources": [
+        "https://maps.biodiversityireland.ie/Dataset/27"
+      ],
+      "access": "Free (paid parking); Apr-Oct 9:00-18:00, Nov-Mar 9:00-17:00",
+      "transport": "Train from Cork Kent to Fota, 13 min, then a 10 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cor_009",
+      "name": "The Spiral Cedar of Fota",
+      "species": "Japanese Cedar 'Spiralis' (Cryptomeria japonica 'Spiralis')",
+      "age_estimate": "roughly 100 to 150 years",
+      "age_min": 100,
+      "age_max": 150,
+      "location": {
+        "address": "Fota Arboretum, Fota Island, Carrigtwohill, Co. Cork",
+        "latitude": 51.89044,
+        "longitude": -8.30277,
+        "neighbourhood": "Fota Island"
+      },
+      "story": "Every needle on this conifer grows in a tight curl instead of lying flat, a Victorian nursery mutation known in the trade as Granny's Ringlets long before anyone wrote down which nursery found it first. The whole tree reads from a distance as an ordinary Japanese cedar wearing a bad perm, and up close each curled needle turns out to be a single leaf twisted almost into a full loop.\n\nThe national heritage tree survey classes it among the estate's arboricultural curiosities rather than its exceptional specimens, which is the register's own way of saying it is here to be strange rather than to be huge, and bands its age to 100 to 150 years, planted around the time Fota's collection was at its Victorian height.\n\nOrdinary Cryptomeria japonica is Japan's national tree, planted by the million as timber and temple avenue trees across the country; this cultivar exists purely as a curiosity, propagated by cutting because a seed would not reliably grow the twist back into the next generation. The register is the only source describing this specimen. If you know its planting date, tell us.",
+      "verified_sources": [
+        "https://maps.biodiversityireland.ie/Dataset/27"
+      ],
+      "access": "Free (paid parking); Apr-Oct 9:00-18:00, Nov-Mar 9:00-17:00",
+      "transport": "Train from Cork Kent to Fota, 13 min, then a 10 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cor_010",
+      "name": "The Canary Palm of Fota",
+      "species": "Canary Island Date Palm (Phoenix canariensis)",
+      "age_estimate": "roughly 100 to 150 years",
+      "age_min": 100,
+      "age_max": 150,
+      "location": {
+        "address": "Fota Arboretum, Fota Island, Carrigtwohill, Co. Cork",
+        "latitude": 51.89393,
+        "longitude": -8.30115,
+        "neighbourhood": "Fota Island"
+      },
+      "story": "A palm tree growing outdoors on an island in Cork Harbour, at the same latitude as Newfoundland, is the clearest single demonstration of what the Gulf Stream does for this stretch of Irish coast. Phoenix canariensis comes from the Canary Islands, off the coast of Morocco, and it tolerates an occasional light frost but nothing like an ordinary Irish winter further from the sea. Fota's frost-free microclimate, the same one that let the Smith-Barry family plant camphor trees and holm oaks here across three generations from the 1820s, is the only reason this specimen has a trunk at all rather than having died back to the roots decades ago.\n\nThe national heritage tree survey bands it to 100 to 150 years old, which for a palm growing this far outside its comfort zone is a genuinely long survival. A mature specimen carries a crown of stiff, grey-green fronds up to six metres long, and the trunk thickens with a diamond pattern of old leaf-base scars that never smooths out.\n\nThe register is the only source describing it. If you know when it was planted, tell us.",
+      "verified_sources": [
+        "https://maps.biodiversityireland.ie/Dataset/27"
+      ],
+      "access": "Free (paid parking); Apr-Oct 9:00-18:00, Nov-Mar 9:00-17:00",
+      "transport": "Train from Cork Kent to Fota, 13 min, then a 10 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cor_011",
+      "name": "The Celery Pine of Fota",
+      "species": "Tanekaha (Phyllocladus trichomanoides)",
+      "age_estimate": "roughly 50 to 100 years",
+      "age_min": 50,
+      "age_max": 100,
+      "location": {
+        "address": "Fota Arboretum, Fota Island, Carrigtwohill, Co. Cork",
+        "latitude": 51.89247,
+        "longitude": -8.30304,
+        "neighbourhood": "Fota Island"
+      },
+      "story": "This conifer has no true leaves. What looks like foliage is flattened stem tissue, called a cladode, doing photosynthesis in place of leaves the plant never bothers to grow, and in this species the cladodes are notched and lobed enough to look uncannily like celery leaves, which is where the English name comes from. The Maori name, tanekaha, belongs to the same tree in its native New Zealand, where its reddish bark was once stripped for a red-brown dye and its timber prized for being straight-grained and durable.\n\nThe national heritage tree survey classes it, fairly, among the estate's arboricultural curiosities, and bands its age to 50 to 100 years. It is one of the odder choices in a collection the Smith-Barry family built across three generations from the 1820s onward, expressly to grow plants nothing else in Ireland could support, and a New Zealand conifer that photosynthesises without leaves fits that brief exactly.\n\nThe register is the only source describing this specimen. If you know more about it, tell us.",
+      "verified_sources": [
+        "https://maps.biodiversityireland.ie/Dataset/27"
+      ],
+      "access": "Free (paid parking); Apr-Oct 9:00-18:00, Nov-Mar 9:00-17:00",
+      "transport": "Train from Cork Kent to Fota, 13 min, then a 10 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cor_012",
+      "name": "The Holm Oak of Fota",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "roughly 200 to 300 years",
+      "age_min": 200,
+      "age_max": 300,
+      "location": {
+        "address": "Fota Arboretum, Fota Island, Carrigtwohill, Co. Cork",
+        "latitude": 51.89308,
+        "longitude": -8.30312,
+        "neighbourhood": "Fota Island"
+      },
+      "story": "This is the oldest tree the national heritage survey found at Fota, banded to 200 to 300 years, which would put its planting close to when the arboretum's grounds were still ordinary farmland, decades before the Smith-Barry family began building their tree collection here in the 1820s.\n\nHolm oak is a Mediterranean evergreen, dark and dense-leaved, holly-like enough at a glance that its name and the English word holly share the same root. It tolerates salt spray and coastal wind better than almost any other oak, which is exactly the pressure Fota Island sits under in Cork Harbour, and that tolerance is likely the plain reason it has outlasted collection trees planted a century after it.\n\nThe survey also noted fungal growth on this specimen, unremarkable in itself: a two or three hundred year old tree carries decades of dead wood inside it, and fungi feeding on that wood are part of how a veteran tree ages rather than a sign it is failing. The register is the only source that has looked at it closely. If you know its actual planting date, tell us.",
+      "verified_sources": [
+        "https://maps.biodiversityireland.ie/Dataset/27"
+      ],
+      "access": "Free (paid parking); Apr-Oct 9:00-18:00, Nov-Mar 9:00-17:00",
+      "transport": "Train from Cork Kent to Fota, 13 min, then a 10 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cor_013",
+      "name": "The Coast Redwood of Fota",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "age_estimate": "roughly 150 to 200 years",
+      "age_min": 150,
+      "age_max": 200,
+      "location": {
+        "address": "Fota Arboretum, Fota Island, Carrigtwohill, Co. Cork",
+        "latitude": 51.89205,
+        "longitude": -8.30029,
+        "neighbourhood": "Fota Island"
+      },
+      "story": "In its native range along the California and Oregon coast, Sequoia sempervirens is the tallest tree species on earth, and specimens there run past a hundred metres and two thousand years old. Fota's, banded by the national heritage tree survey to 150 to 200 years, is a child by comparison, planted not long after the species reached European gardens through Victorian plant collecting in the 1840s and 50s.\n\nThe species does well in Ireland's wet, mild climate for the same reason it does well on the fog-soaked Pacific coast: a coast redwood pulls a large share of its water straight out of humid air through its needles rather than relying on roots alone, which is part of why it can grow so fast and so tall. Fota's frost-free microclimate, the one the Smith-Barry family built their whole collection around from the 1820s, is generous even by Irish standards, and this tree has had a century and a half of it.\n\nThe register is the only source describing this specimen, distinct from University College Cork's own pair of giant sequoias in the city. If you know when it went in, tell us.",
+      "verified_sources": [
+        "https://maps.biodiversityireland.ie/Dataset/27"
+      ],
+      "access": "Free (paid parking); Apr-Oct 9:00-18:00, Nov-Mar 9:00-17:00",
+      "transport": "Train from Cork Kent to Fota, 13 min, then a 10 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
       "location_precision": "approximate"
     }
   ]

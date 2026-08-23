@@ -1,0 +1,31 @@
+{
+ "city": "Cork",
+ "country": "Ireland",
+ "note": "From the Heritage Trees of Ireland register (data/registers/ireland-heritage-trees.json), imported 2026-08-23. 8 Blarney/Fota candidates shipped as cor_006 to cor_013; 2 Blarney candidates (yew, red cedar) skipped as near-certain duplicates of already-published cor_001/cor_002.",
+ "leads": [
+  {
+   "name": "Sweet Chestnut, Doneraille Park",
+   "species": "Castanea sativa",
+   "status": "lead",
+   "why": "Public OPW park (Doneraile Estate), but 39 minutes drive / 29 miles from Cork city, past the roughly-30-minute day-trip boundary. Register-listed, unchecked otherwise. Two more register trees at the same site (Quercus robur, Taxus baccata) would join it if this cluster is ever opened."
+  },
+  {
+   "name": "Pedunculate Oak, Doneraille Park",
+   "species": "Quercus robur",
+   "status": "lead",
+   "why": "Same site and boundary issue as the Doneraille sweet chestnut above."
+  },
+  {
+   "name": "Yew, Doneraille Park",
+   "species": "Taxus baccata",
+   "status": "lead",
+   "why": "Same site and boundary issue as the Doneraille sweet chestnut above."
+  },
+  {
+   "name": "Sessile Oak, The Gearagh, Macroom",
+   "species": "Quercus petraea",
+   "status": "lead",
+   "why": "A national nature reserve (alluvial oak woodland), genuinely public, but roughly 35-40 minutes from Cork city, past the day-trip boundary and further from any existing cluster. Register-listed, unchecked otherwise."
+  }
+ ]
+}
