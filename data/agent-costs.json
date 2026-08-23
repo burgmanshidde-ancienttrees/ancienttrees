@@ -3079,6 +3079,15 @@
     "note": "no clean per-tree register for Turku: national luonnonmuistomerkit dataset licence unnamed and its WFS disabled live, Turku city WFS has the right points but no species/name/age fields. Helsinki (different city) has a fully populated, CC BY 4.0 confirmed, import-ready register (31 features) as a side finding.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "brisbane",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 0,
+    "note": "4 City Botanic Gardens candidates verified and delivered but all single-sourced (National Trust register only, no second source found despite heavy searching); flagged accordingly, one bridge-claim trap caught on the Black Beans Speakers Chair anecdote",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
