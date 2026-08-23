@@ -1283,6 +1283,27 @@
    "cities_touched": 10,
    "trees": 17,
    "logged": true
+  },
+  {
+   "started": "2026-08-23T20:29:24+00:00",
+   "date": "2026-08-23",
+   "run_id": "32664551774",
+   "minutes": 9.2,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 67,
+   "denials": 13,
+   "denials_source": "permission_denials: Bash(curl), Bash(echo), Bash(for), Bash(if), Bash(ls), Bash(mkdir), Bash(nohup), Bash(printenv), Bash(rm)",
+   "ended": "success",
+   "tokens": 1418665,
+   "claims_held": [
+    "krakow",
+    "sintra"
+   ],
+   "commits": 2,
+   "cities_touched": 0,
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
