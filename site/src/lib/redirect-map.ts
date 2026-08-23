@@ -104,7 +104,19 @@ const CROSS_CITY_MERGED_TREE_SLUGS: [string, string, string, string][] = [
 // Hortus ginkgo went partly for a second reason, that our own note admitted we
 // could not say which specimen it was. Amsterdam is 34 trees now, 5 behind a
 // ticket, 14 percent. Stories and sources kept in data/leads/amsterdam.json.
+// leiden lei_012, lei_013 (2026-08-23): ten of Leiden's fourteen trees
+// stood inside the Hortus behind a 14 euro ticket, 71 percent, the worst on
+// the site. Same test as Amsterdam the same day, and it is not "paid is out":
+// the Hortus is the oldest botanical garden in the country and a 310-year
+// tulip tree there is worth a ticket. What went are the five 19th-century
+// collection specimens with no photograph, which is padding by any standard
+// we apply anywhere else. Leiden is 9 trees now, still 5 behind a ticket at
+// 55 percent, and that number is honest rather than solved: the city needs
+// FREE trees added, not more removals, and the national register covers it.
+// Stories and sources kept in data/leads/leiden.json.
 const REMOVED_TREE_SLUGS: [string, string][] = [
+  ["leiden", "fern-leaved-beech-of-the-nut-field"],
+  ["leiden", "grafted-ash-of-the-hortus"],
   ["amsterdam", "persian-ironwood-of-artis"],
   ["amsterdam", "coast-redwood-of-artis"],
   ["amsterdam", "twisted-catalpa-of-the-hortus"],
