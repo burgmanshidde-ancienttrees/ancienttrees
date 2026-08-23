@@ -1,6 +1,12 @@
 {
   "leads": [
     {
+      "name": "Araucaria of Plaza de Calvo Sotelo",
+      "species": "Araucaria heterophylla (Norfolk Island Pine)",
+      "reason": "NEW this pass (2026-08-23), found via the Ayuntamiento de Alicante's own 'Paseos y arboles singulares en el Centro Tradicional de Alicante' walking-route brochure (stop 8, Plaza de Calvo Sotelo, ~90m from the existing Gabriel Miro cluster), which calls it 'una enorme araucaria' alongside a Platanus x hispanica and an Ulmus minor. Not in the Valencian regional register at all (checked: no Araucaria heterophylla/excelsa entry anywhere near Alicante city in data/registers/valencia-arboles-monumentales.json, nearest is >70km away), so there is no register source to pair with the brochure. The Spanish Wikipedia article 'Plaza de Calvo Sotelo' and the article 'Arboles singulares de Alicante' both mention it, but both cite the same Ayuntamiento brochure as their only source, and one further blog (anticalicante.blogspot.com) explicitly credits its text to Wikipedia. Two searches for an independent source (news coverage, a girth/height measurement, a photo with scale) found nothing beyond restatements of the same brochure. Held as a lead rather than shipped: one real source only, no measurements at all (no girth, height or age), so it fails both the two-source bar and the derived-age requirement. A street-level or satellite check for the tree's size, or any independent press mention, would unblock it.",
+      "location_hint": "Plaza de Calvo Sotelo, Alicante, approx (38.3436, -0.4882)"
+    },
+    {
       "register_id": 300,
       "species": "Ficus macrophylla",
       "reason": "Part of the same ~25m-wide unnamed 4-tree cluster as shipped ali_006/ali_007 (register_ids 301, 303). Kept as a lead rather than a fifth entry to avoid fragmenting one small grove into too many near-identical collectible points; smallest girth of the four (6.43m)."

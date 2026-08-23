@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ali_011",
+    "name": "The Fig of Paseito de Ramiro",
+    "species": "Indian Laurel Fig (Ficus microcarpa)",
+    "age_estimate": "about 80 years",
+    "age_min": 70,
+    "age_max": 90,
+    "girth_cm": 267,
+    "location": {
+      "address": "Paseito de Ramiro, Avenida Juan Bautista Lafora, facing Playa del Postiguet, Alicante",
+      "latitude": 38.346224,
+      "longitude": -0.47837,
+      "neighbourhood": "Sant Roc, facing the Postiguet beach"
+    },
+    "verified_sources": [
+      "https://dadesobertes.gva.es/va/dataset/catalogo-de-arboles-monumentales-y-singulares-de-la-comunitat-valenciana (Generalitat Valenciana register, register_id 853, girth 2.67m, height 13.0m, crown 21.0m; a second entry, register_id 614, girth 2.85m, height 16.0m, crown 27.0m, stands ~19m away in the same small park and is folded into this one entry as a visitor sees one grove, not two)",
+      "https://www.alicante.es/es/documentos/paseos-y-arboles-singulares-centro-tradicional-alicante (Ayuntamiento de Alicante's own 'Paseos y arboles singulares en el Centro Tradicional de Alicante' walking-route brochure, PDF at https://www.alicante.es/sites/default/files/documentos/documentos/paseos-y-arboles-singulares-centro-tradicional-alicante/senderos-centro.pdf, stop 1 'Paseito de Ramiro': names the species as 'Ficus nitida' (a synonym of Ficus microcarpa), states 'unos 80 anos de edad, 13 m de altura y 21 m de diametro de copa', which matches register_id 853's height and crown exactly)"
+    ],
+    "access": "Free, open public park (Paseito de Ramiro), no gate or opening hours; part of the city's own official 'Red de Senderos Urbanos' walking route",
+    "transport": "Facing Playa del Postiguet on Avenida Juan Bautista Lafora; about 15-18 minutes on foot from Plaza Gabriel Miro (the main city-centre cluster); seafront bus stops near the Postiguet/Marina are closer",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Small 19th-century park directly opposite Postiguet beach. The Ayuntamiento's own printed walking-route brochure (part of its official 'Red de Senderos Urbanos', stop 1 of 12, the same route that covers Plaza Gabriel Miro and Parque de Canalejas at stops 4 and 6) is the second independent source and is where the age of 'about 80 years' comes from; the regional GVA register gives no age field at all, only measurements, and this is one of the few spots in Alicante where an official source states a specific age for a fig rather than leaving it undated. The brochure also notes a 56m stretch of 16th-century city wall runs through the park, and that the site was once the medina's souk (zoco) and later home to Spain's first 'Escuela-Jardin', named for historian Rafael Altamira; both are context for the writer, not claims about the tree's own age (avoid the bridge-claim trap: the wall and the souk history belong to the SITE, not to this specific fig). Two Ficus microcarpa stand about 19m apart here (register_ids 853 and 614); folded into one entry per the register-twins rule since a visitor sees one small grove. Girth recorded from register_id 853, the tree whose height/crown figures match the brochure's stated measurements exactly."
+  }
+]
