@@ -2803,3 +2803,93 @@ research there, including turning these leads into verified trees, is off
 until he names it or a licence answer changes the register's status to
 usable outright.
 
+## Finland (Turku #67): a real national designation, split across three sources, none import-ready yet (2026-08-23)
+
+`scout_next.py --target` pointed at Turku (#67, no supply, no verdict). Finland
+does have exactly the right shape of designation: "luonnonmuistomerkki"
+(natural monument), an individual tree, group of trees or boulder protected
+under the Nature Conservation Act, decided per-site by a municipality or by
+Metsähallitus on state land. The semantic filter this project wants already
+exists in Finnish law. What is missing is one clean, licensed, per-tree
+dataset behind it; three different sources each carry part of the picture.
+
+**1. The national dataset (would cover Turku), licence unconfirmed and its
+WFS currently down.** `Luonnonmuistomerkit`, compiled by Metsähallitus and
+distributed by SYKE (Suomen ympäristökeskus), at
+`ckan.ymparisto.fi/dataset/luonnonmuistomerkit`: nationwide point data in
+EPSG:3067, a direct ZIP/shapefile download
+(`wwwd3.ymparisto.fi/d3/gis_data/spesific/luonnonmuistomerkit.zip`) plus a WMS
+endpoint; the paired WFS endpoint
+(`paikkatiedot.ymparisto.fi/geoserver/muusuojelu/ows`, layer
+`muusuojelu:Luonnonmuistomerkit`) returned "Service WFS is disabled" when
+queried directly. The page states sites on state land and in five named
+southern regions (South Karelia, Kymenlaakso, South Savonia, Päijät-Häme,
+Kanta-Häme) are field-verified and reliable; everywhere else, including
+Turku's own region (Varsinais-Suomi), is unverified private-land data that
+may be incomplete or outdated, by the source's own admission. **Licence: not
+proven.** Queried the CKAN API directly
+(`ckan.ymparisto.fi/api/3/action/package_show?id=luonnonmuistomerkit`):
+`license_id` and `license_title` are both null. The page's own text says only
+"no limitations" on access with attribution to Metsähallitus, which is not
+the same thing as a named licence (contrast with SYKE's separate
+`SuojellutAlueet` INSPIRE WMS bundle, whose own metadata record explicitly
+states "Creative Commons Nimeä 4.0 Kansainvälinen. Lähde: SYKE", i.e. CC BY
+4.0. That bundle covers nature conservation areas and Natura 2000, not
+Luonnonmuistomerkit). Nothing here can be imported without an explicit
+licence answer for this specific dataset.
+
+**2. Turku's own city WFS carries the exact point layer, but with no
+descriptive fields.** Turku's Tekla-based city map service
+(`turku.asiointi.fi/TeklaOGCWeb/WFS.ashx`, the current address behind the old
+`opaskartta.turku.fi` one) publishes a layer `kanta:SuojeltavaKohde`
+("protected object"). Queried it directly (GML, since it refused
+`outputFormat=application/json`) and its `tyyppi` (type) field is literally
+`luonnonmuistomerkki` on the returned features, i.e. Turku's own portal does
+carry these points, in EPSG:3877, with a location-uncertainty value
+(`sijaintiepavarmuus`), a creation method (`digitointi`, meaning digitised
+from a paper record) and a date, but **no species, name, age or description
+field at all**, only geometry and metadata about the record itself. Turku's
+general spatial data, "Turun kaupungin paikkatietoja" on the same
+`TeklaOGCWeb/WFS.ashx` endpoint, is stated on its avoindata.suomi.fi listing
+as **Creative Commons Attribution 4.0 International License**, but that
+listing's own resource description talks about detailed-plan and base-map
+layers (blocks, buildings, property boundaries) and never names
+`SuojeltavaKohde` specifically, so the licence match is a strong inference
+from the shared endpoint rather than a verbatim proving sentence for this
+exact layer.
+
+**3. Helsinki (a different city, not Turku, but the same national
+designation) has a fully confirmed, fully populated equivalent, worth
+recording as a separate future import.** Helsinki's Luontotietojärjestelmä
+(Nature Information System) publishes a WFS layer
+`avoindata:LTJ_avoin_rauhoitettu_luonnonmuistomerkit` at
+`kartta.hel.fi/ws/geoserver/avoindata/wfs`. Queried it directly
+(`outputFormat=application/json`) and got a real GeoJSON FeatureCollection,
+31 features, each with `nimi` (name, e.g. "Tammi (Helsingin seudun paksuin),
+Tali"), `kuvaus`/`kohdeteksti` (free-text description carrying girth and
+height, e.g. a 598 cm circumference, 22 m oak measured in 2003), `luokan_nimi`
+(classification, "Luonnonmuistomerkki") and point coordinates in EPSG:3879.
+**Licence proven twice over**: the general Helsinki open geographic data page
+states "the maps and geographic data created by the City of Helsinki's City
+Survey Services... are licensed under the Creative Commons Attribution 4.0
+International licence" (attribution: "Data and maps (c) City of Helsinki,
+City Survey Services"), and the dataset's own listing on
+avoindata.suomi.fi for "Helsingin luontotietojärjestelmä" independently
+states the same Creative Commons Attribution 4.0 International License by
+name. This one is import-ready as-is, for Helsinki, not for Turku.
+
+**Verdict: stalled, not empty.** The designation is real and at least one
+Finnish city (Helsinki) proves the exact data shape this project needs
+exists and is openly licensed; Turku's own portal demonstrably holds the
+same point layer, just without the descriptive fields a story needs. Next
+step for Turku specifically: treat the `kanta:SuojeltavaKohde` /
+`luonnonmuistomerkki` points as a coordinates-only lead list (worth
+converting from EPSG:3877 and cross-checking each point against Turku's own
+"pihapuuopas" yard-tree guide and local press for a name and species), and
+separately get a direct licence statement for that layer from Turku's open
+data pages or its contact address before treating the inference as proof. A
+second worthwhile thread, not chased today for time: Tampere is reported
+(via search, unverified by direct fetch) to maintain its own
+"Tampereen luonnonmuistomerkit" open dataset on the same pattern as
+Helsinki's; worth a direct check before Tampere is next in the queue.
+
