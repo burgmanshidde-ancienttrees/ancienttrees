@@ -288,7 +288,7 @@ def enrich(doc, live):
             c.update(status="published", trees=info["trees"], photos=info["photos"],
                      walks=info["walks"], register=info["register"],
                      ready=info["ready"], supply=supply,
-                     target=target_for(c.get("demand"), c["basis"].startswith("measured"), c.get("impressions_10d"), c.get("travel")))
+                     target=target_for(c.get("demand"), c.get("basis", "").startswith("measured"), c.get("impressions_10d"), c.get("travel")))
         else:
             # An unpublished city still has register supply around it; it just
             # has no trees to average a centre from. Look the city itself up.
@@ -297,7 +297,7 @@ def enrich(doc, live):
             supply = reg
             c.update(status="pending", trees=0, photos=0, walks=0,
                      register=reg, ready=0, supply=reg,
-                     target=target_for(c.get("demand"), c["basis"].startswith("measured"), c.get("impressions_10d"), c.get("travel")))
+                     target=target_for(c.get("demand"), c.get("basis", "").startswith("measured"), c.get("impressions_10d"), c.get("travel")))
         c["ease"] = round(ease_for(c.get("country", ""), supply), 2)
         c["work_score"] = round((c.get("score") or 0) * c["ease"], 2)
     ranked = sorted([c for c in doc["cities"] if c.get("score") is not None],

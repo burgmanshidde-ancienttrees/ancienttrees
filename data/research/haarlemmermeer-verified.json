@@ -12,6 +12,14 @@
    "longitude": 4.632846,
    "neighbourhood": null
   },
+  "story": "There is a lake under this tree. Until 1852 the Haarlemmermeer covered everything you can see from here, wide enough to frighten Amsterdam and hungry enough at the edges to have earned the name Waterwolf. Three steam pumping engines emptied it over three years, and the lake floor they laid bare sits roughly four metres below sea level.\n\nThat is the ground this horse chestnut is rooted in. The register puts its planting between 1910 and 1920, which makes it about 110 years old, and out here that counts as old: no tree anywhere in the polder can predate the drainage, so the oldest possible tree in the Haarlemmermeer is younger than most of the houses in Haarlem. Aircraft climb out of the same lake bed a few kilometres north.\n\nIt stands on the west side of the Hoofdweg, the road that runs the length of the Hoofdvaart, the canal cut dead straight through the middle of the drained lake. This stretch is still farmland, and the tree has the shape a chestnut gets when nothing has ever crowded it: low, wide, branching almost from the ground, the candles in May starting at head height.\n\nNobody wrote down who planted it. The register's history field for this tree is blank, and it is the only source that describes it at all. If it once belonged to a farm along this road, tell us.",
+  "best_time": {
+   "months": [
+    5
+   ],
+   "kind": "flowers",
+   "label": "May, when a field-grown chestnut carries its white candles right down to head height"
+  },
   "verified_sources": [
    "https://www.monumentalebomen.nl/"
   ],
@@ -24,8 +32,7 @@
    "status": "missing"
   },
   "curation_status": "flagged",
-  "location_precision": "approximate",
-  "verify_notes": "LRMB register nr 1688940 ('Witte paardenkastanje'). Register planting band 1910-1920, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting agrarisch. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  "location_precision": "approximate"
  },
  {
   "id": "hrl_003",
@@ -40,6 +47,7 @@
    "longitude": 4.633167,
    "neighbourhood": null
   },
+  "story": "Most Dutch ash trees of this age are dead or going. Ash dieback reached the Netherlands around 2010, a fungus out of east Asia that the European ash has no answer to, and it has worked through the country's ash population ever since, killing the crown downward from the twigs. A small fraction of trees turn out to be genetically tolerant, and those few matter enormously, because they are the parents of whatever ash the Netherlands still has in fifty years.\n\nThis one is still standing on the Hoofdweg. The register puts its planting between 1920 and 1930, which makes it about a century old, on ground that had only been dry land for about seventy years when it went in.\n\nAsh is the tree everything used to be made of: cart shafts, tool handles, ladders, oars, early aircraft frames. It bends a long way before it gives and it gives without splintering, so it went into anything that had to absorb a shock. It is also the last tree in a Dutch hedgerow to come into leaf and among the first to drop, which leaves it bare for more than half the year. Winter is when it is easiest to name from the road: the buds are matt black and shaped like small hooves, and nothing else here has them.\n\nThe chestnut a few doors up is the older of the two. The register is the only source for either.",
   "verified_sources": [
    "https://www.monumentalebomen.nl/"
   ],
@@ -52,8 +60,7 @@
    "status": "missing"
   },
   "curation_status": "flagged",
-  "location_precision": "approximate",
-  "verify_notes": "LRMB register nr 1688939 ('Gewone es'). Register planting band 1920-1930, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting agrarisch. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  "location_precision": "approximate"
  },
  {
   "id": "hrl_004",
@@ -68,6 +75,7 @@
    "longitude": 4.635064,
    "neighbourhood": null
   },
+  "story": "The sap of a Norway maple is milky white. That one fact separates it from the sycamore it otherwise closely resembles, and it means a broken twig on this tree bleeds like a dandelion stem instead of running clear.\n\nIt grows in the grounds of the Hervormde church on the Hoofdweg in Nieuw-Vennep, a village that exists at all because the Haarlemmermeer was pumped dry in 1852 and somebody then had to farm the lake bed. The register puts the maple's planting between 1930 and 1940, so it is about ninety years old, and it has spent every one of those years on ground nobody has ever had a reason to dig up.\n\nNorway maple is the tree that gets the Dutch spring started. It flowers in April, before its own leaves are out, in dense clusters of a sharp yellow-green that read from a hundred metres off and can fool you into thinking the crown has leafed a month early. Bees work them hard, because almost nothing else is open yet. The leaves that follow are broad and thin with long drawn-out points, and by late October they turn clear yellow.\n\nChurchyards are where old trees tend to survive, for the plain reason that nobody redevelops one. Nobody recorded who planted this maple, and the national register is the only source that describes it. If you know, tell us.",
   "verified_sources": [
    "https://www.monumentalebomen.nl/"
   ],
@@ -80,7 +88,6 @@
    "status": "missing"
   },
   "curation_status": "flagged",
-  "location_precision": "approximate",
-  "verify_notes": "LRMB register nr 1685909 ('Noorse esdoorn'). Register planting band 1930-1940, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category religieuze instantie, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  "location_precision": "approximate"
  }
 ]

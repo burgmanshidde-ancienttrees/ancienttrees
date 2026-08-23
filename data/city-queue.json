@@ -41,12 +41,12 @@
    "demand": 294030,
    "basis": "measured",
    "status": "published",
-   "trees": 31,
+   "trees": 39,
    "photos": 7,
-   "walks": 2,
+   "walks": 3,
    "register": 5488,
-   "ready": 0,
-   "supply": 5488,
+   "ready": 8,
+   "supply": 5496,
    "target": 30,
    "impressions_10d": 203,
    "clicks_10d": 5,
@@ -151,12 +151,12 @@
    "demand": 184099,
    "basis": "measured",
    "status": "published",
-   "trees": 22,
+   "trees": 23,
    "photos": 7,
    "walks": 3,
    "register": 27,
-   "ready": 8,
-   "supply": 35,
+   "ready": 7,
+   "supply": 34,
    "target": 30,
    "impressions_10d": 121,
    "clicks_10d": 0,
@@ -217,12 +217,12 @@
    "demand": 283090,
    "basis": "measured",
    "status": "published",
-   "trees": 28,
+   "trees": 30,
    "photos": 13,
    "walks": 5,
-   "register": 382,
+   "register": 376,
    "ready": 11,
-   "supply": 393,
+   "supply": 387,
    "target": 30,
    "impressions_10d": 126,
    "clicks_10d": 3,
@@ -576,8 +576,8 @@
    "photos": 1,
    "walks": 3,
    "register": 166,
-   "ready": 0,
-   "supply": 166,
+   "ready": 9,
+   "supply": 175,
    "target": 20,
    "impressions_10d": 49,
    "clicks_10d": 5,
@@ -992,7 +992,7 @@
    "basis": "measured",
    "status": "published",
    "trees": 14,
-   "photos": 0,
+   "photos": 1,
    "walks": 2,
    "register": 159,
    "ready": 4,
@@ -1167,7 +1167,7 @@
    "demand": 33960,
    "basis": "measured",
    "status": "published",
-   "trees": 9,
+   "trees": 13,
    "photos": 0,
    "walks": 1,
    "register": 277,
@@ -1898,12 +1898,12 @@
    "demand": 224067,
    "basis": "measured",
    "status": "published",
-   "trees": 30,
+   "trees": 44,
    "photos": 14,
    "walks": 6,
-   "register": 76,
+   "register": 80,
    "ready": 14,
-   "supply": 90,
+   "supply": 94,
    "target": 30,
    "impressions_10d": 28,
    "clicks_10d": 1,
@@ -1913,6 +1913,29 @@
   },
   {
    "rank": 87,
+   "city": "Oahu",
+   "country": "United States",
+   "slug": "oahu",
+   "score": 5.23,
+   "demand": null,
+   "basis": "predicted (travel demand)",
+   "status": "published",
+   "trees": 5,
+   "photos": 0,
+   "walks": 1,
+   "register": 133,
+   "ready": 0,
+   "supply": 133,
+   "target": 10,
+   "impressions_10d": 0,
+   "clicks_10d": 0,
+   "ease": 1.5,
+   "work_score": 7.85,
+   "travel": 5228,
+   "kind": "island"
+  },
+  {
+   "rank": 88,
    "city": "Athens",
    "country": "Greece",
    "slug": "athens",
@@ -1934,7 +1957,7 @@
    "travel": 9244
   },
   {
-   "rank": 88,
+   "rank": 89,
    "city": "Lucca",
    "country": "Italy",
    "slug": "lucca",
@@ -1956,7 +1979,7 @@
    "travel": 1792
   },
   {
-   "rank": 89,
+   "rank": 90,
    "city": "Kyoto",
    "country": "Japan",
    "slug": "kyoto",
@@ -1978,7 +2001,7 @@
    "travel": 5488
   },
   {
-   "rank": 90,
+   "rank": 91,
    "city": "Luang Prabang",
    "country": "Laos",
    "slug": "luang-prabang",
@@ -2000,7 +2023,7 @@
    "travel": 7493
   },
   {
-   "rank": 91,
+   "rank": 92,
    "city": "Glasgow",
    "country": "United Kingdom",
    "slug": "glasgow",
@@ -2022,7 +2045,7 @@
    "travel": 17161
   },
   {
-   "rank": 92,
+   "rank": 93,
    "city": "Montreal",
    "country": "Canada",
    "slug": "montreal",
@@ -2042,29 +2065,6 @@
    "ease": 1.0,
    "work_score": 7.45,
    "travel": 22814
-  },
-  {
-   "rank": 93,
-   "city": "Oahu",
-   "country": "United States",
-   "slug": "oahu",
-   "score": 5.23,
-   "demand": null,
-   "basis": "predicted (travel demand)",
-   "status": "published",
-   "trees": 5,
-   "photos": 0,
-   "walks": 0,
-   "register": 21,
-   "ready": 0,
-   "supply": 21,
-   "target": 10,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
-   "ease": 1.42,
-   "work_score": 7.43,
-   "travel": 5228,
-   "kind": "island"
   },
   {
    "rank": 94,
@@ -6892,6 +6892,38 @@
    "travel": 6048
   },
   {
+   "city": "Alkmaar",
+   "country": "Netherlands",
+   "trees": 7,
+   "note": "opened 2026-08-22 from the Dutch LRMB register",
+   "status": "published",
+   "photos": 0,
+   "walks": 1,
+   "register": 79,
+   "ready": 0,
+   "supply": 79,
+   "target": 10,
+   "ease": 2.0,
+   "work_score": 0.0,
+   "rank": null
+  },
+  {
+   "city": "Amersfoort",
+   "country": "Netherlands",
+   "trees": 7,
+   "note": "opened 2026-08-22 from the Dutch LRMB register",
+   "status": "published",
+   "photos": 0,
+   "walks": 1,
+   "register": 181,
+   "ready": 0,
+   "supply": 181,
+   "target": 10,
+   "ease": 2.0,
+   "work_score": 0.0,
+   "rank": null
+  },
+  {
    "rank": null,
    "city": "Anuradhapura",
    "country": "Sri Lanka",
@@ -6913,6 +6945,38 @@
    "work_score": 0.0,
    "travel": 1273,
    "why_pooled": "Not an island but belongs in this batch for the same reason: the Jaya Sri Maha Bodhi, planted 288 BC, is the oldest documented human-planted tree on earth and the single most attended individual tree anywhere. Sri Lanka is not in the out-of-focus list, which names Israel, Africa, India and Russia."
+  },
+  {
+   "city": "Apeldoorn",
+   "country": "Netherlands",
+   "trees": 8,
+   "note": "opened 2026-08-22 from the Dutch LRMB register",
+   "status": "published",
+   "photos": 0,
+   "walks": 1,
+   "register": 80,
+   "ready": 0,
+   "supply": 80,
+   "target": 10,
+   "ease": 2.0,
+   "work_score": 0.0,
+   "rank": null
+  },
+  {
+   "city": "Assen",
+   "country": "Netherlands",
+   "trees": 0,
+   "note": "staged 2026-08-22 from the Dutch LRMB register: candidates are READY in data/leads/ and the write-pass input is in data/research/. Needs only stories.",
+   "status": "pending",
+   "photos": 0,
+   "walks": 0,
+   "register": 66,
+   "ready": 0,
+   "supply": 66,
+   "target": 10,
+   "ease": 2.0,
+   "work_score": 0.0,
+   "rank": null
   },
   {
    "rank": null,
@@ -7114,6 +7178,102 @@
    "travel": 4762
   },
   {
+   "city": "Deventer",
+   "country": "Netherlands",
+   "trees": 7,
+   "note": "opened 2026-08-22 from the Dutch LRMB register",
+   "status": "published",
+   "photos": 0,
+   "walks": 1,
+   "register": 213,
+   "ready": 0,
+   "supply": 213,
+   "target": 10,
+   "ease": 2.0,
+   "work_score": 0.0,
+   "rank": null
+  },
+  {
+   "city": "Dordrecht",
+   "country": "Netherlands",
+   "trees": 7,
+   "note": "opened 2026-08-22 from the Dutch LRMB register",
+   "status": "published",
+   "photos": 0,
+   "walks": 1,
+   "register": 103,
+   "ready": 0,
+   "supply": 103,
+   "target": 10,
+   "ease": 2.0,
+   "work_score": 0.0,
+   "rank": null
+  },
+  {
+   "city": "Ede",
+   "country": "Netherlands",
+   "trees": 7,
+   "note": "opened 2026-08-22 from the Dutch LRMB register",
+   "status": "published",
+   "photos": 0,
+   "walks": 0,
+   "register": 40,
+   "ready": 0,
+   "supply": 40,
+   "target": 10,
+   "ease": 2.0,
+   "work_score": 0.0,
+   "rank": null
+  },
+  {
+   "city": "Eindhoven",
+   "country": "Netherlands",
+   "trees": 7,
+   "note": "opened 2026-08-22 from the Dutch LRMB register",
+   "status": "published",
+   "photos": 0,
+   "walks": 1,
+   "register": 195,
+   "ready": 0,
+   "supply": 195,
+   "target": 10,
+   "ease": 2.0,
+   "work_score": 0.0,
+   "rank": null
+  },
+  {
+   "city": "Emmen",
+   "country": "Netherlands",
+   "trees": 7,
+   "note": "opened 2026-08-22 from the Dutch LRMB register",
+   "status": "published",
+   "photos": 0,
+   "walks": 1,
+   "register": 14,
+   "ready": 0,
+   "supply": 14,
+   "target": 10,
+   "ease": 1.78,
+   "work_score": 0.0,
+   "rank": null
+  },
+  {
+   "city": "Enschede",
+   "country": "Netherlands",
+   "trees": 7,
+   "note": "opened 2026-08-22 from the Dutch LRMB register",
+   "status": "published",
+   "photos": 0,
+   "walks": 1,
+   "register": 82,
+   "ready": 0,
+   "supply": 82,
+   "target": 10,
+   "ease": 2.0,
+   "work_score": 0.0,
+   "rank": null
+  },
+  {
    "rank": null,
    "city": "Fes",
    "country": "Morocco",
@@ -7134,6 +7294,22 @@
    "impressions_10d": 0,
    "clicks_10d": 0,
    "travel": 3053
+  },
+  {
+   "city": "Haarlemmermeer",
+   "country": "Netherlands",
+   "trees": 0,
+   "note": "staged 2026-08-22 from the Dutch LRMB register: candidates are READY in data/leads/ and the write-pass input is in data/research/. Needs only stories.",
+   "status": "pending",
+   "photos": 0,
+   "walks": 0,
+   "register": 72,
+   "ready": 0,
+   "supply": 72,
+   "target": 10,
+   "ease": 2.0,
+   "work_score": 0.0,
+   "rank": null
   },
   {
    "rank": null,
@@ -7158,6 +7334,38 @@
    "travel": 8599
   },
   {
+   "city": "Heerlen",
+   "country": "Netherlands",
+   "trees": 0,
+   "note": "staged 2026-08-22 from the Dutch LRMB register: candidates are READY in data/leads/ and the write-pass input is in data/research/. Needs only stories.",
+   "status": "pending",
+   "photos": 0,
+   "walks": 0,
+   "register": 53,
+   "ready": 0,
+   "supply": 53,
+   "target": 10,
+   "ease": 2.0,
+   "work_score": 0.0,
+   "rank": null
+  },
+  {
+   "city": "Helmond",
+   "country": "Netherlands",
+   "trees": 7,
+   "note": "opened 2026-08-22 from the Dutch LRMB register",
+   "status": "published",
+   "photos": 0,
+   "walks": 1,
+   "register": 55,
+   "ready": 0,
+   "supply": 55,
+   "target": 10,
+   "ease": 2.0,
+   "work_score": 0.0,
+   "rank": null
+  },
+  {
    "rank": null,
    "city": "Hilo",
    "country": "United States",
@@ -7178,6 +7386,22 @@
    "ease": 1.32,
    "work_score": 0.0,
    "travel": null
+  },
+  {
+   "city": "Hilversum",
+   "country": "Netherlands",
+   "trees": 0,
+   "note": "staged 2026-08-22 from the Dutch LRMB register: candidates are READY in data/leads/ and the write-pass input is in data/research/. Needs only stories.",
+   "status": "pending",
+   "photos": 0,
+   "walks": 0,
+   "register": 120,
+   "ready": 0,
+   "supply": 120,
+   "target": 10,
+   "ease": 2.0,
+   "work_score": 0.0,
+   "rank": null
   },
   {
    "rank": null,
@@ -7222,6 +7446,22 @@
    "impressions_10d": 0,
    "clicks_10d": 0,
    "travel": 0
+  },
+  {
+   "city": "Hoorn",
+   "country": "Netherlands",
+   "trees": 0,
+   "note": "staged 2026-08-22 from the Dutch LRMB register: candidates are READY in data/leads/ and the write-pass input is in data/research/. Needs only stories.",
+   "status": "pending",
+   "photos": 0,
+   "walks": 0,
+   "register": 52,
+   "ready": 0,
+   "supply": 52,
+   "target": 10,
+   "ease": 2.0,
+   "work_score": 0.0,
+   "rank": null
   },
   {
    "rank": null,
@@ -7310,6 +7550,22 @@
    "impressions_10d": 0,
    "clicks_10d": 0,
    "travel": 3893
+  },
+  {
+   "city": "Leeuwarden",
+   "country": "Netherlands",
+   "trees": 7,
+   "note": "opened 2026-08-22 from the Dutch LRMB register",
+   "status": "published",
+   "photos": 0,
+   "walks": 1,
+   "register": 61,
+   "ready": 0,
+   "supply": 61,
+   "target": 10,
+   "ease": 2.0,
+   "work_score": 0.0,
+   "rank": null
   },
   {
    "rank": null,
@@ -7489,6 +7745,38 @@
    "travel": 0
   },
   {
+   "city": "Oss",
+   "country": "Netherlands",
+   "trees": 0,
+   "note": "staged 2026-08-22 from the Dutch LRMB register: candidates are READY in data/leads/ and the write-pass input is in data/research/. Needs only stories.",
+   "status": "pending",
+   "photos": 0,
+   "walks": 0,
+   "register": 48,
+   "ready": 0,
+   "supply": 48,
+   "target": 10,
+   "ease": 2.0,
+   "work_score": 0.0,
+   "rank": null
+  },
+  {
+   "city": "Roosendaal",
+   "country": "Netherlands",
+   "trees": 0,
+   "note": "staged 2026-08-22 from the Dutch LRMB register: candidates are READY in data/leads/ and the write-pass input is in data/research/. Needs only stories.",
+   "status": "pending",
+   "photos": 0,
+   "walks": 0,
+   "register": 116,
+   "ready": 0,
+   "supply": 116,
+   "target": 10,
+   "ease": 2.0,
+   "work_score": 0.0,
+   "rank": null
+  },
+  {
    "rank": null,
    "city": "Siem Reap",
    "country": "Cambodia",
@@ -7509,6 +7797,22 @@
    "impressions_10d": 0,
    "clicks_10d": 0,
    "travel": 10053
+  },
+  {
+   "city": "Sittard-Geleen",
+   "country": "Netherlands",
+   "trees": 0,
+   "note": "staged 2026-08-22 from the Dutch LRMB register: candidates are READY in data/leads/ and the write-pass input is in data/research/. Needs only stories.",
+   "status": "pending",
+   "photos": 0,
+   "walks": 0,
+   "register": 64,
+   "ready": 0,
+   "supply": 64,
+   "target": 10,
+   "ease": 2.0,
+   "work_score": 0.0,
+   "rank": null
   },
   {
    "rank": null,
@@ -7533,6 +7837,22 @@
    "travel": 0
   },
   {
+   "city": "Tilburg",
+   "country": "Netherlands",
+   "trees": 7,
+   "note": "opened 2026-08-22 from the Dutch LRMB register",
+   "status": "published",
+   "photos": 0,
+   "walks": 1,
+   "register": 84,
+   "ready": 0,
+   "supply": 84,
+   "target": 10,
+   "ease": 2.0,
+   "work_score": 0.0,
+   "rank": null
+  },
+  {
    "rank": null,
    "city": "Ubud",
    "country": "Indonesia",
@@ -7553,6 +7873,22 @@
    "impressions_10d": 0,
    "clicks_10d": 0,
    "travel": 11485
+  },
+  {
+   "city": "Venlo",
+   "country": "Netherlands",
+   "trees": 7,
+   "note": "opened 2026-08-22 from the Dutch LRMB register",
+   "status": "published",
+   "photos": 0,
+   "walks": 1,
+   "register": 144,
+   "ready": 0,
+   "supply": 144,
+   "target": 10,
+   "ease": 2.0,
+   "work_score": 0.0,
+   "rank": null
   },
   {
    "rank": null,
@@ -7599,142 +7935,36 @@
    "travel": 8277
   },
   {
-   "city": "Eindhoven",
+   "city": "Zaanstad",
    "country": "Netherlands",
-   "trees": 7,
-   "note": "opened 2026-08-22 from the Dutch LRMB register"
-  },
-  {
-   "city": "Apeldoorn",
-   "country": "Netherlands",
-   "trees": 8,
-   "note": "opened 2026-08-22 from the Dutch LRMB register"
-  },
-  {
-   "city": "Tilburg",
-   "country": "Netherlands",
-   "trees": 7,
-   "note": "opened 2026-08-22 from the Dutch LRMB register"
-  },
-  {
-   "city": "Amersfoort",
-   "country": "Netherlands",
-   "trees": 7,
-   "note": "opened 2026-08-22 from the Dutch LRMB register"
-  },
-  {
-   "city": "Enschede",
-   "country": "Netherlands",
-   "trees": 7,
-   "note": "opened 2026-08-22 from the Dutch LRMB register"
-  },
-  {
-   "city": "Leeuwarden",
-   "country": "Netherlands",
-   "trees": 7,
-   "note": "opened 2026-08-22 from the Dutch LRMB register"
-  },
-  {
-   "city": "Dordrecht",
-   "country": "Netherlands",
-   "trees": 7,
-   "note": "opened 2026-08-22 from the Dutch LRMB register"
+   "trees": 4,
+   "note": "staged 2026-08-22 from the Dutch LRMB register: candidates are READY in data/leads/ and the write-pass input is in data/research/. Needs only stories.",
+   "status": "published",
+   "photos": 0,
+   "walks": 0,
+   "register": 73,
+   "ready": 4,
+   "supply": 77,
+   "target": 10,
+   "ease": 2.0,
+   "work_score": 0.0,
+   "rank": null
   },
   {
    "city": "Zwolle",
    "country": "Netherlands",
    "trees": 7,
-   "note": "opened 2026-08-22 from the Dutch LRMB register"
-  },
-  {
-   "city": "Ede",
-   "country": "Netherlands",
-   "trees": 7,
-   "note": "opened 2026-08-22 from the Dutch LRMB register"
-  },
-  {
-   "city": "Venlo",
-   "country": "Netherlands",
-   "trees": 7,
-   "note": "opened 2026-08-22 from the Dutch LRMB register"
-  },
-  {
-   "city": "Deventer",
-   "country": "Netherlands",
-   "trees": 7,
-   "note": "opened 2026-08-22 from the Dutch LRMB register"
-  },
-  {
-   "city": "Alkmaar",
-   "country": "Netherlands",
-   "trees": 7,
-   "note": "opened 2026-08-22 from the Dutch LRMB register"
-  },
-  {
-   "city": "Emmen",
-   "country": "Netherlands",
-   "trees": 7,
-   "note": "opened 2026-08-22 from the Dutch LRMB register"
-  },
-  {
-   "city": "Helmond",
-   "country": "Netherlands",
-   "trees": 7,
-   "note": "opened 2026-08-22 from the Dutch LRMB register"
-  },
-  {
-   "city": "Oss",
-   "country": "Netherlands",
-   "trees": 0,
-   "note": "staged 2026-08-22 from the Dutch LRMB register: candidates are READY in data/leads/ and the write-pass input is in data/research/. Needs only stories."
-  },
-  {
-   "city": "Hilversum",
-   "country": "Netherlands",
-   "trees": 0,
-   "note": "staged 2026-08-22 from the Dutch LRMB register: candidates are READY in data/leads/ and the write-pass input is in data/research/. Needs only stories."
-  },
-  {
-   "city": "Zaanstad",
-   "country": "Netherlands",
-   "trees": 0,
-   "note": "staged 2026-08-22 from the Dutch LRMB register: candidates are READY in data/leads/ and the write-pass input is in data/research/. Needs only stories."
-  },
-  {
-   "city": "Haarlemmermeer",
-   "country": "Netherlands",
-   "trees": 0,
-   "note": "staged 2026-08-22 from the Dutch LRMB register: candidates are READY in data/leads/ and the write-pass input is in data/research/. Needs only stories."
-  },
-  {
-   "city": "Sittard-Geleen",
-   "country": "Netherlands",
-   "trees": 0,
-   "note": "staged 2026-08-22 from the Dutch LRMB register: candidates are READY in data/leads/ and the write-pass input is in data/research/. Needs only stories."
-  },
-  {
-   "city": "Heerlen",
-   "country": "Netherlands",
-   "trees": 0,
-   "note": "staged 2026-08-22 from the Dutch LRMB register: candidates are READY in data/leads/ and the write-pass input is in data/research/. Needs only stories."
-  },
-  {
-   "city": "Roosendaal",
-   "country": "Netherlands",
-   "trees": 0,
-   "note": "staged 2026-08-22 from the Dutch LRMB register: candidates are READY in data/leads/ and the write-pass input is in data/research/. Needs only stories."
-  },
-  {
-   "city": "Hoorn",
-   "country": "Netherlands",
-   "trees": 0,
-   "note": "staged 2026-08-22 from the Dutch LRMB register: candidates are READY in data/leads/ and the write-pass input is in data/research/. Needs only stories."
-  },
-  {
-   "city": "Assen",
-   "country": "Netherlands",
-   "trees": 0,
-   "note": "staged 2026-08-22 from the Dutch LRMB register: candidates are READY in data/leads/ and the write-pass input is in data/research/. Needs only stories."
+   "note": "opened 2026-08-22 from the Dutch LRMB register",
+   "status": "published",
+   "photos": 0,
+   "walks": 1,
+   "register": 57,
+   "ready": 0,
+   "supply": 57,
+   "target": 10,
+   "ease": 2.0,
+   "work_score": 0.0,
+   "rank": null
   }
  ]
 }
