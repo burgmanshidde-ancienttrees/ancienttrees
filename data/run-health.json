@@ -1265,6 +1265,24 @@
    "cities_touched": 1,
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-08-23T18:36:57+00:00",
+   "date": "2026-08-23",
+   "run_id": "32658589011",
+   "minutes": 63.6,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 441,
+   "denials": 30,
+   "denials_source": "permission_denials: Bash(cd), Bash(command), Bash(curl), Bash(echo), Bash(for), Bash(gh), Bash(git), Bash(grep), Bash(if), Bash(mkdir), Bash(pdftotext), Bash(python3), Bash(rm), Bash(timeout), Bash(until)",
+   "ended": "success",
+   "tokens": 146792535,
+   "claims_held": [],
+   "commits": 28,
+   "cities_touched": 10,
+   "trees": 17,
+   "logged": true
   }
  ],
  "schedule_changes": [
