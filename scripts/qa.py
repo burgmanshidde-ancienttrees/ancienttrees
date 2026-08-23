@@ -593,13 +593,23 @@ def check_tree_count_claims(pages):
     # Four figures and up only: "10 trees" is a city page counting its own,
     # which check_count_promises() already owns.
     pat = re.compile(r"\b(\d{1,3}(?:,\d{3})+|\d{4,})\s+(?:old |ancient |remarkable )*trees\b", re.I)
+    # A year is not a tree count. Every page footer reads "(c) 2026 Ancient
+    # Trees, ancienttrees.app", and case-insensitively that is a four-digit
+    # number followed by "ancient trees", so this check reported 2,644
+    # problems across 3,206 pages on the day it was written and blocked every
+    # deploy until it was found. Skip a hit that is a plausible year sitting
+    # directly in front of the brand name; a real count promise never is.
+    brand = re.compile(r"\b(19|20|21)\d{2}\s+Ancient Trees\b")
     out = []
     for page in pages:
         try:
             text = page.read_text(encoding="utf-8")
         except OSError:
             continue
-        for raw in pat.findall(text):
+        for m in pat.finditer(text):
+            raw = m.group(1)
+            if brand.match(text, m.start()):
+                continue
             n = int(raw.replace(",", ""))
             if n > total:
                 out.append(
