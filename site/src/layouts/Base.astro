@@ -9,6 +9,7 @@
 //     equivalent of build_site.py's ERRORS.append(), which collected and
 //     reported at the very end of the build instead).
 import { STYLE_HREF } from "../lib/asset-hash";
+import AppModal from "../components/AppModal.astro";
 import {
   AUTH_ENABLED,
   SUPABASE_URL,
@@ -118,7 +119,7 @@ const year = new Date().getFullYear();
           </Fragment>
         )}
         <a href="/contribute" class="nav-aside"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>Suggest a tree</a>
-        <a href="/app" class="nav-cta only-mobile" data-ev="app-cta">Get the app</a>
+        <a href="/app" class="nav-cta only-mobile" data-app-modal data-ev="app-cta">Get early access</a>
       </div>
     </details>
     {/* What is YOURS hangs off the account, not off Explore (Hidde,
@@ -136,7 +137,7 @@ const year = new Date().getFullYear();
         </div>
       </details>
     )}
-    <a href="/app" class="bar-cta only-desktop" data-ev="app-cta">Get the app</a>
+    <a href="/app" class="bar-cta only-desktop" data-app-modal data-ev="app-cta">Get early access</a>
   </nav>
 </header>
 <slot />
@@ -158,7 +159,7 @@ const year = new Date().getFullYear();
     </div>
     <div class="footer-col">
       <h4>Ancient Trees</h4>
-      <a href="/app" data-ev="app-cta">The app</a>
+      <a href="/app" data-app-modal data-ev="app-cta">The app</a>
       <a href="/contribute">Suggest a tree</a>
       <a href="/privacy">Privacy</a>
     </div>
@@ -166,6 +167,12 @@ const year = new Date().getFullYear();
   <span class="footer-note">&copy; {year} Ancient Trees, ancienttrees.app. Map &copy; OpenFreeMap, OpenMapTiles, OpenStreetMap contributors. Walking routes by Valhalla via FOSSGIS, on OpenStreetMap data. Photos carry their own credits and open licences.</span>
 </footer>
 )}
+{/* One overlay for the whole site (2026-08-23). It used to live on the city
+    page only, so the nav and footer links navigated to /app instead and threw
+    away the page the visitor was reading. Here it is available to every
+    [data-app-modal] link, and the pages that used to render their own must
+    not, or two dialogs share one id. */}
+<AppModal lang={lang} />
 <script define:vars={{ SB_URL: SUPABASE_URL, SB_KEY: SUPABASE_KEY }}>
 window.at = window.at || {};
 at.track = function (name, detail) {
