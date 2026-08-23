@@ -1033,7 +1033,7 @@
     "kind": "scout",
     "tokens": 124675,
     "trees": 0,
-    "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+    "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
    },
    {
     "target": "barcelona",
@@ -3059,6 +3059,15 @@
     "tokens": 0,
     "trees": 22,
     "note": "merged the write pass: appended 8 trees to haarlem.json (13->21, updated meta_description/faq/question_meta counts), built hilversum.json and hoorn.json as new cities from scratch (wrote city intro/faq/question fields, named 14 trees the write pass left null, fixed haa_019 species to canonical London Plane). Ran preflight (trimmed both new intros/question_context to contract length), city_names.py for both, city_queue.py to regenerate city-list/city-queue/CITY_QUEUE.md, tree_index.py, full astro build + qa.py (clean except the pre-existing shallow-clone sitemap lastmod note). Checked /api/walks.json for real km/minutes on both new cities and the grown Haarlem. Tokens not tracked for session work, logged as 0 per standing instruction.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "pagegaps: pin-oak species",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session work, not an agent pass: wrote 1 species intro (Pin Oak, 3 trees behind it across Haarlem/Apeldoorn/Sittard-Geleen) from scripts/pagegaps.py output, from the trees own facts per P3. Tokens not tracked for session work, logged as 0 per standing instruction.",
     "wasted": 0,
     "brief_wrong": false
    }
