@@ -68,7 +68,7 @@
       "status": "blocked"
     },
     {
-      "name": "Haenge-Buche (Weeping Beech) at Ulmenallee 4 (ND 4-12/B) and Rot-Buche at Eichenallee 6 (ND 4-40/B)",
+      "name": "[BLOCKED 2026-08-23] Haenge-Buche (Weeping Beech) at Ulmenallee 4 (ND 4-12/B) and Rot-Buche at Eichenallee 6 (ND 4-40/B)",
       "species": "Weeping Beech (Fagus sylvatica var. pendula) and Common Beech (Fagus sylvatica)",
       "location": {
         "address": "Ulmenallee 4 and Eichenallee 6, Berlin",
@@ -76,7 +76,8 @@
         "longitude": 13.275587,
         "neighbourhood": "Charlottenburg"
       },
-      "reason": "NEW this pass (2026-08-09), found querying the register within 2.5km of ber_004 (1.55km and 1.66km away respectively, about 400m apart from each other, both between ber_004/ber_018 and the Lietzensee cluster geographically though not directly on the walking line). Not checked beyond the register this pass; time ran out. A weeping beech is visually distinctive (the 'always cuttable last, never chase alone' kind of candidate that is worth a quick look) and would be a strong addition to the Charlottenburg walk if a second source and exact coordinates confirm it. Try monumentaltrees.com's Berlin location index and baumkunde.de next pass."
+      "reason": "BLOCKED 2026-08-23 (depth pass). Both addresses sit on Ulmenallee and Eichenallee in the Villenkolonie Westend, Berlin's Grunderzeit villa colony where every numbered address checked this pass (Ulmenallee 3, 8, 18, 35; Eichenallee 6) is a private villa or former villa, matching the exact pattern that already blocked ber_004's neighbour, the Fuerstenbrunner Weg oak, in this same file. Eichenallee 6 specifically confirmed: Berlin's own Denkmaldatenbank (obj_dok_nr 09096137) describes it as a Landhaus now used mostly as a psychotherapy centre, with the copper beech in the FRONT garden and the register's beech (in fact a rare cut-leaf Fagus sylvatica laciniata, not the plain species the Naturdenkmal register row names) in the REAR garden, i.e. private grounds with no stated public access; also a live species mismatch between our register row and the only independent description found. Ulmenallee 4 was not individually confirmed but sits on the identical street with an identical villa-colony pattern and no positive evidence of public access was found. Per hard rule 10, no evidence of open ground means the tree waits. Not pursued further this pass; a future pass could reconsider Eichenallee 6's rear-garden cut-leaf beech specifically if a source ever states the therapy centre's grounds are publicly walkable.",
+      "status": "blocked"
     },
     {
       "name": "[RESOLVED 2026-08-23, delivered as ber_019] Blutbuche (Copper Beech) at Villa Dr. Fraenkel, Kladow (ND 5-56/B)",

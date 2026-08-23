@@ -2,8 +2,8 @@
   "city": "Lucca",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Lucca keeps its best trees inside a ring eight hundred metres across, which makes this one of the shortest walks on this site. Three of the trees stand in a botanical garden founded in 1820 and planted with things nobody in Tuscany had seen: a cedar from Lebanon by way of Pisa, a Californian redwood raised almost as soon as the species reached Europe, and a ginkgo that lightning knocked down and that grew back as three. The other three are a cypress on a gun platform, a cedar with a name, and seven oaks on a tower roof.",
-  "meta_description": "Ten remarkable trees inside Lucca's walls, all within 800 metres: seven oaks on the Guinigi tower, a redwood, and a cedar planted in 1822.",
+  "intro": "Lucca keeps most of its best trees inside a ring eight hundred metres across, one of the shortest walks on this site. Three stand in a botanical garden founded in 1820: a cedar from Lebanon, a Californian redwood, and a ginkgo that lightning knocked down and regrew as three trunks. Elsewhere inside the ring are a cypress on a gun platform, a cedar with a name, and seven oaks on a tower roof. Four more trees have since joined: three deeper in the garden, and a fourth, the city's thickest plane, on the ramparts near Porta San Donato.",
+  "meta_description": "Fourteen remarkable trees in and around Lucca's walls: seven oaks on the Guinigi tower, a redwood, and a cedar planted in 1822.",
   "question_meta": "The oldest tree in Lucca is the Cedar of Lebanon in the botanical garden, planted in 1822 by the garden's first director and now 204 years old.",
   "question_answer": "The oldest tree in Lucca is the Cedar of Lebanon in the Orto Botanico, planted in 1822 by Paolo Volpi, the garden's first director, which makes it 204 years old and two years younger than the garden around it. It is also one of the largest, at six and a half metres round the trunk. The seven holm oaks on top of the Torre Guinigi are the more famous trees, and the idea of planting them up there is far older, but the living oaks are undated replantings.",
   "question_context": "Italy's national register of monumental trees records girth, height and position but carries no age field at all, so every date on this page comes from the botanical garden's own planting records rather than from the register. Those records are unusually good, because the garden was founded as a teaching collection in 1820 by Maria Luisa di Borbone, Duchess of Lucca, and its directors wrote down what they put in the ground and when. They give 1822 for both the Cedar of Lebanon and the Corsican pine, 1830 for the magnolia, around 1850 for the redwoods, 1862 for the ginkgo, 1880 for the Balearic box and 1900 for the silver lime. The Torre Guinigi is the interesting exception. A tower crowned with trees appears in Giovanni Sercambi's chronicle of Lucca in the fifteenth century, so trees have grown up there for six hundred years, but the seven holm oaks living in that brick box today have been replanted more than once and no source will say when. Outside the walls the municipality has trees that may be older still, including a Lebanon cedar at San Pancrazio reported at around 200 years, but they are not part of this walk.",
@@ -14,11 +14,11 @@
     },
     {
       "q": "Can you walk between them?",
-      "a": "Yes, and it is a short walk. They all stand inside the city walls within about 800 metres of each other, from the botanical garden in the southeast corner to the Guinigi tower in the middle of the old town."
+      "a": "Nearly all of them, and it is a short walk. Thirteen stand inside the city walls within about 800 metres of each other, from the botanical garden in the southeast corner to the Guinigi tower in the middle of the old town. The fourteenth, a plane tree on the ramparts near Porta San Donato, is a further fifteen to twenty minute walk west along the wall-top path."
     },
     {
       "q": "Do they cost anything to see?",
-      "a": "Three do. The botanical garden charges admission, the Guinigi tower costs 8 euro and 230 steps, and the cypress on the San Regolo bastion and the cedar at Villa Bottini are free."
+      "a": "Eight of the fourteen do. Seven stand inside the botanical garden, which charges standard admission, and the Guinigi tower's rooftop oaks cost 8 euro and 230 steps. The other six, including the cypress on the San Regolo bastion, the cedar at Villa Bottini and the newest plane on the western walls, are free."
     },
     {
       "q": "Are there really trees on top of the Guinigi tower?",
@@ -377,6 +377,134 @@
       },
       "height_m": 24.0,
       "verify_notes": "Height 24.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+    },
+    {
+      "id": "luc_011",
+      "name": "The Plane of Porta San Donato",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 488,
+      "height_m": 30,
+      "location": {
+        "address": "On the ramparts near Porta San Donato, Passeggiata delle Mura, 55100 Lucca",
+        "latitude": 43.845378,
+        "longitude": 10.496331,
+        "neighbourhood": "Mura Urbane (city walls), Centro Storico"
+      },
+      "verified_sources": [
+        "Italian national register of monumental trees (MASAF/RAMI), Comune di Lucca entry 05/E715/LU/09"
+      ],
+      "access": "Free, always open. The tree stands on the public ramparts of Lucca's Renaissance walls (Passeggiata delle Mura), a pedestrian and cycle path that rings the whole old town with no gate or ticket.",
+      "transport": "On foot, about 1.2 km (15-20 minutes) west of the Orto Botanico cluster, reachable directly by walking the wall-top path from any of the city gates; no vehicle access onto the walls themselves.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Lucca's Renaissance walls are planted almost entirely as a single ring of trees, but the register singles out only three individuals along the whole circuit, and this plane, growing on the ramparts near Porta San Donato, is the thickest of the three: 4.88 metres round and 30 metres tall, the largest plane tree in the city by that measurement.\n\nPorta San Donato itself dates to 1629, one of the six gates built when Lucca reinforced its walls against a siege that never came; the fortifications outlasted every threat they were built for and became, instead, the tree-lined promenade that rings the old town today. Nobody has dated the tree specifically, only the gate beside it.\n\nThe wall-top path, the Passeggiata delle Mura, is public, paved and open around the clock, wide enough for the joggers and cyclists who use it as Lucca's ring road for people rather than cars. This plane stands about a kilometre and a half west of the Orto Botanico cluster, an anchor for the far side of a wall walk rather than an extension of it. If you know when it was planted, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "luc_012",
+      "name": "The Bald Cypress Twins of the Orto Botanico",
+      "species": "Bald Cypress (Taxodium distichum)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 315,
+      "height_m": null,
+      "location": {
+        "address": "Orto Botanico di Lucca, Via del Giardino Botanico 14, 55100 Lucca",
+        "latitude": 43.841464,
+        "longitude": 10.512522,
+        "neighbourhood": "Centro Storico"
+      },
+      "verified_sources": [
+        "Italian national register of monumental trees (MASAF/RAMI), Comune di Lucca entries 32/E715/LU/09 and 33/E715/LU/09"
+      ],
+      "access": "Paid entry to the Orto Botanico (the botanical garden charges a standard admission ticket); open during the garden's published hours.",
+      "transport": "Inside the Orto Botanico, on the same visit as the garden's other published trees (Cedar of Lebanon, Redwood, Three-Trunked Ginkgo, Corsican Pine).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October and November, when the needles turn rust orange before they drop"
+      },
+      "story": "Two bald cypresses stand fifteen metres apart at the pond in Lucca's botanical garden, buttressed at the base and throwing up the woody knees that let the species breathe in waterlogged ground, a trick it brought from the swamps of the American south. Both are registered as individually monumental, 3.15 and 2.80 metres round.\n\nThey are the only conifer in the garden that behaves like a deciduous tree, turning rust orange and dropping its needles each autumn, which in a collection built mostly around evergreens makes the pond the one spot in the Orto Botanico with a real November moment. Nobody has recorded when either tree was planted.\n\nThe garden charges standard admission and keeps published hours, unlike most of what stands on this page. Once inside, the cypresses sit a short walk from the cedar of Lebanon, redwood and three-trunked ginkgo already on this list, all reachable on one visit.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "luc_013",
+      "name": "The Balearic Box of the Orto Botanico",
+      "species": "Balearic Box (Buxus balearica)",
+      "age_estimate": "about 145 years, planted around 1880",
+      "age_min": 135,
+      "age_max": 155,
+      "girth_cm": 88,
+      "height_m": 7,
+      "location": {
+        "address": "Orto Botanico di Lucca, Via del Giardino Botanico 14, 55100 Lucca",
+        "latitude": 43.84142,
+        "longitude": 10.51112,
+        "neighbourhood": "Centro Storico"
+      },
+      "verified_sources": [
+        "Italian national register of monumental trees (MASAF/RAMI), Comune di Lucca entry 36/E715/LU/09"
+      ],
+      "access": "Paid entry to the Orto Botanico (standard admission ticket); open during the garden's published hours.",
+      "transport": "Inside the Orto Botanico, a short walk from the bald cypresses by the pond and the garden's other published trees.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Box is usually a hedge plant, clipped into shapes barely taller than a person. This one is seven metres tall, a Balearic box growing to the size of an actual tree, which the species rarely does anywhere it is not native. Its natural range is the Balearic Islands and a sliver of the southwest Mediterranean coast; everywhere else it stays a shrub, including, almost everywhere, in this garden's own country.\n\nThe Orto Botanico's own account, not independently re-checked this pass, puts the planting at around 1880, which would make it roughly a century and a half old, modest in girth (88 cm) but old for how slowly box grows. Italy's monumental tree register designates it in its own right, a second signal beyond the measurements that this is not just an old hedge left to run wild.\n\nIt stands inside the garden's paid grounds, a short walk from the bald cypresses at the pond. If you know its planting date for certain, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "luc_014",
+      "name": "The Silver Lime and Fastigiate Yew of the Orto Botanico",
+      "species": "Silver Lime (Tilia tomentosa) and Fastigiate Yew (Taxus baccata var. fastigiata)",
+      "age_estimate": "the lime about 126 years, planted around 1900",
+      "age_min": 115,
+      "age_max": 135,
+      "girth_cm": 360,
+      "height_m": null,
+      "location": {
+        "address": "Orto Botanico di Lucca, Via del Giardino Botanico 14, 55100 Lucca",
+        "latitude": 43.841717,
+        "longitude": 10.511097,
+        "neighbourhood": "Centro Storico"
+      },
+      "verified_sources": [
+        "Italian national register of monumental trees (MASAF/RAMI), Comune di Lucca entries 38/E715/LU/09 and 39/E715/LU/09"
+      ],
+      "access": "Paid entry to the Orto Botanico (standard admission ticket); open during the garden's published hours.",
+      "transport": "Inside the Orto Botanico, a short walk from the garden's other published trees.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The youngest tree the register protects in Lucca's botanical garden stands sixty metres from one of its slowest growing: a silver lime planted around 1900, its leaves silvery on the underside and turning up in wind, next to a fastigiate yew whose narrow, upright habit is not what makes it interesting. What makes it interesting is the girth. Yew adds wood at a crawl, and a columnar yew this thick, 2.60 metres round, has been doing it for a very long time even though nobody has put a number on how long.\n\nThe lime is easier to date, if only just: the garden's own account, not independently re-checked this pass, gives around 1900, putting it at roughly 126 years old and the youngest specimen the monumental register lists here. Its own girth, 3.60 metres, is already considerable for a tree that young, a sign of how much room and light the garden gives its plantings.\n\nNeither tree carries much recorded history beyond its own measurements. They stand a short walk apart inside the Orto Botanico's paid grounds, on the same visit as the garden's older, better documented trees.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

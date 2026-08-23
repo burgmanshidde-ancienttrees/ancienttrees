@@ -5,28 +5,12 @@
   "note": "From the 2026-08-05 register-first pass on the MASAF national register (CC BY 4.0). The register holds 36 entries for the comune of Lucca, 20 of them inside the walled city; six were published. Leads failed only our evidence bar, the count, or the cluster; blocked can never ship as they stand. The register total is a count of designated entries, not of trees that exist.",
   "leads": [
     {
-      "name": "The second redwood of the Orto Botanico",
-      "species": "Sequoia sempervirens",
-      "lat": 43.841206,
-      "lng": 10.511211,
-      "status": "lead",
-      "why": "Register 31/E715/LU/09, 500 cm girth, 35 m, planted around 1850 like its neighbour. It stands about 40 m from the published redwood in the same garden and reads as part of the same planting, so it is folded into that entry rather than given a pin of its own. The garden's own page counts three nineteenth-century redwoods against the register's two, which is worth reconciling if this city ever grows past six."
-    },
-    {
       "name": "The Corsican pine of the Orto Botanico",
       "species": "Pinus nigra subsp. laricio",
       "lat": 43.841197,
       "lng": 10.510603,
       "status": "lead",
       "why": "Register 29/E715/LU/09, 282 cm girth and 30.5 m, planted in 1822 in the same season as the Cedar of Lebanon, so it ties for oldest tree in the garden. Cut on the count and on the cluster balance, not on evidence: four of the six published trees would then sit inside one garden. The strongest single candidate for a seventh entry."
-    },
-    {
-      "name": "The Atlas cedar of Villa Bottini's neighbours, and the rest of the Garden of the Righteous",
-      "species": "Calocedrus decurrens and Platanus x acerifolia",
-      "lat": 43.844058,
-      "lng": 10.510469,
-      "status": "lead",
-      "why": "An incense cedar dedicated to don Guido Staderini and a plane dedicated to don Sirio Niccolai were named on the same morning of 25 April 2021 as the published Atlas cedar. Neither is in the national register and neither has a published girth, so both fail the evidence bar as standalone entries, but they are part of the same story and would enrich the Villa Bottini page."
     },
     {
       "name": "The magnolia of Via dell'Orto Botanico",
@@ -45,12 +29,12 @@
       "why": "Register 02/E715/LU/09, 360 cm girth and 30 m, on the canal street between the botanical garden and Villa Bottini, so it sits on the walk without lengthening it. Cut on evidence: no source names this individual tree, only the register, and no source dates it."
     },
     {
-      "name": "The plane of Porta San Donato",
+      "name": "[RESOLVED 2026-08-23, delivered as luc_011] The plane of Porta San Donato",
       "species": "Platanus x acerifolia",
       "lat": 43.845378,
       "lng": 10.496331,
-      "status": "lead",
-      "why": "Register 05/E715/LU/09, 488 cm girth and 30 m, one of only three trees the register protects on the walls and the largest plane in the city. Cut on the cluster, not on quality: it stands 1.2 km west of the botanical garden on the far side of the walls circuit, which would nearly double the length of the walk. The obvious anchor if Lucca ever gets a second cluster along the western walls."
+      "status": "resolved",
+      "why": "RESOLVED 2026-08-23: register entry 05/E715/LU/09 (488 cm girth, 30 m) delivered to data/research/lucca-verified.json as luc_011, flagged (single register source only; no second source found this pass). See verify_notes on luc_011 for the full record."
     },
     {
       "name": "The false camphor of Via Barsanti e Matteucci",
@@ -61,28 +45,28 @@
       "why": "Register 11/E715/LU/09, 384 cm girth and 24 m, in the San Marco district north of the walls, about 900 m outside the published cluster. A second false camphor stands inside the botanical garden (37/E715/LU/09, planted 1888 per LuccaInDiretta, no girth recorded). Cut on cluster and on count."
     },
     {
-      "name": "The bald cypress twins and the Balearic box of the Orto Botanico",
+      "name": "[RESOLVED 2026-08-23, delivered as luc_012 and luc_013] The bald cypress twins and the Balearic box of the Orto Botanico",
       "species": "Taxodium distichum and Buxus balearica",
       "lat": 43.841464,
       "lng": 10.512522,
-      "status": "lead",
-      "why": "Two bald cypresses registered 15 m apart by the garden pond (32/ and 33/E715/LU/09, 315 cm and 280 cm) that a visitor reads as one thing and that would be folded into a single entry. The Balearic box (36/E715/LU/09, 88 cm girth, 7 m, planted 1880) is a genuine rarity in cultivation and small enough to be missed. All three cut on the count, all three well evidenced."
+      "status": "resolved",
+      "why": "RESOLVED 2026-08-23: the two bald cypresses (32/ and 33/E715/LU/09, 15 m apart) folded into one entry, delivered as luc_012. The Balearic box (36/E715/LU/09) delivered separately as luc_013, since it is a different species and individual with its own rarity case. Both flagged, single register source only; the garden's own 'Testimoni silenziosi' page and a LuccaInDiretta piece on the garden's 52 monumental trees exist but returned no usable body text to a plain curl fetch this pass (JS-rendered). See verify_notes on luc_012/luc_013."
     },
     {
-      "name": "The silver lime and the fastigiate yew of the Orto Botanico",
+      "name": "[RESOLVED 2026-08-23, delivered as luc_014] The silver lime and the fastigiate yew of the Orto Botanico",
       "species": "Tilia tomentosa and Taxus baccata var. fastigiata",
       "lat": 43.841717,
       "lng": 10.511097,
-      "status": "lead",
-      "why": "Register 38/ and 39/E715/LU/09, 360 cm and 260 cm. The lime is dated 1900 by LuccaInDiretta, which makes it the youngest registered tree in the garden. Both cut on the count and on interest: neither has a story beyond its measurements."
+      "status": "resolved",
+      "why": "RESOLVED 2026-08-23: delivered as luc_014, one combined entry for both specimens (they stand about 60 m apart, so location_precision is set approximate rather than confirmed). Flagged: single register source independently re-fetched this pass; the 1900 planting date for the lime carried over from an earlier pass's LuccaInDiretta citation, not independently re-verified this pass (the outlet's page returned no usable body text to a plain curl fetch). See verify_notes on luc_014."
     },
     {
       "name": "The Lebanon cedar and camphor tree of San Pancrazio",
       "species": "Cedrus atlantica, Cinnamomum camphora, Ginkgo biloba and others",
       "lat": 43.902731,
       "lng": 10.551844,
-      "status": "lead",
-      "why": "Six registered trees clustered at Via di Matraia 269 in San Pancrazio, 7 km north of the walls, including an Atlas cedar of 478 cm, a ginkgo of 330 cm, a Californian fan palm and a rare leccio-rovere hybrid oak. They are all at one address, which strongly suggests one villa park, so access needs checking before anything is published. Beyond the 30-minute day-trip boundary by public transport as far as we can tell. The same applies to the Saltocchio redwood (680 cm, the largest registered trunk in the municipality) and to the San Martino in Vignale holm oak of 530 cm."
+      "status": "blocked",
+      "why": "BLOCKED 2026-08-23 (depth pass): six registered trees at one address (Via di Matraia 269, San Pancrazio), 7 km north of the walls, which strongly suggests a single private villa park rather than public ground, and no source found this pass states the grounds are open to visitors. Per hard rule 10, when access cannot be stated honestly the tree waits rather than ships. Also sits beyond Lucca's roughly-30-minute public-transport day-trip boundary as far as this pass could establish (no direct bus route timed this pass). Needs both an access source and a transit check before it could be reconsidered; not pursued further this pass."
     }
   ],
   "blocked": [
@@ -125,6 +109,22 @@
       "lng": 10.521897,
       "status": "blocked",
       "why": "Register 44/E715/LU/09, 530 cm and 30 m, on the Via del Brennero 9 km north of the city. No source establishes public access and no independent source mentions the tree at all. Blocked pending access, not rejected on quality."
+    },
+    {
+      "name": "The second redwood of the Orto Botanico",
+      "species": "Sequoia sempervirens",
+      "lat": 43.841206,
+      "lng": 10.511211,
+      "status": "blocked",
+      "why": "BLOCKED 2026-08-23 (depth pass): confirmed by reading the published Lucca city file, luc_002's own story already names this tree explicitly ('A second registered redwood stands forty metres away, a little smaller'). It reads as part of the same nineteenth-century planting as the published redwood rather than a separate destination, so it does not get its own id or pin; it is depth for the existing entry, not a new collectible point. Leave it here as a record rather than re-researching it."
+    },
+    {
+      "name": "The Atlas cedar of Villa Bottini's neighbours, and the rest of the Garden of the Righteous",
+      "species": "Calocedrus decurrens and Platanus x acerifolia",
+      "lat": 43.844058,
+      "lng": 10.510469,
+      "status": "blocked",
+      "why": "BLOCKED 2026-08-23 (depth pass), confirming the earlier pass's own read: an incense cedar and a plane dedicated on 25 April 2021 next to the already-published Cedar of the Righteous (luc_006). Neither is in the national register, neither has a published girth or height, and at five years old neither is genuinely old, visually spectacular or (beyond the shared memorial dedication already covered by luc_006) independently historically significant enough to carry its own entry. Fails the evidence bar as a standalone tree; the memorial story belongs to luc_006, not to a new id. Not pursued further."
     }
   ],
   "open_questions": [

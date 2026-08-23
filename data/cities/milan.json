@@ -3,9 +3,9 @@
   "country": "Italy",
   "status": "needs_curation",
   "intro": "Milan's remarkable trees are rarely medieval; the city rebuilt itself too many times, and around itself even more, for old wood to survive by accident. What lasted here did so because an institution kept records (a university's ginkgo pair, brought from China in 1775), a neighbourhood organised (a paulownia a Brera committee saved from a car park in 2016), or a park changed its job entirely (a horse-racing track that became a school for sick children in 1919 and kept its oaks). Twenty-one trees, and almost every one owes its survival to a specific human decision.",
-  "meta_description": "Milan's twenty-one remarkable trees, from a 1775 ginkgo pair to a plane tree a Brera committee saved from demolition in 2016.",
+  "meta_description": "Milan's twenty-two remarkable trees, from a 1775 ginkgo pair to a plane tree a Brera committee saved from demolition in 2016.",
   "question_answer": "Milan's oldest tree is one of a pair of ginkgo trees in the Orto Botanico di Brera, planted in 1775 when the garden's founders imported them directly from China. Both are now around 250 years old and grow a few steps from the garden's 18th-century greenhouse on Via Brera 28.",
-  "question_meta": "Milan's oldest tree is a 250-year-old ginkgo pair at the Orto Botanico di Brera, planted from Chinese seed in 1775. Its story, plus twenty more trees.",
+  "question_meta": "Milan's oldest tree is a 250-year-old ginkgo pair at the Orto Botanico di Brera, planted from Chinese seed in 1775. Its story, plus twenty-one more trees.",
   "question_context": "Milan has never been an easy city for an old tree to survive in. Wars, plague and relentless nineteenth and twentieth century redevelopment levelled most of what predates them, so almost nothing on this list is medieval. The one clear exception is the university's own ginkgo biloba pair, a male and a female planted together in 1775 when Abbot Fulgenzio Vitman was building the Orto Botanico di Brera for Empress Maria Theresa's new medical faculty, importing seed directly from China less than two decades after the species had reached Europe at all. Italy's monumental tree registry calculates their age from growth data at 235 years, a little short of the 251 years a straight planting-date count would give; this page states both rather than picking one, since the gap is exactly the kind of rounding error that comes from measuring a slow grower by two different methods. Either way, they are Milan's oldest trees by a wide margin over anything else here, and the garden marked their joint 250th anniversary with a public conference in March 2026.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Milan's remarkable trees free to visit?",
-      "a": "All twenty-one on this list are free. Unlike Rome or Florence, none of Milan's most remarkable trees stand inside a paid garden or monument; the closest things to a ticket are Parco Trotter's restricted opening hours, since its grounds double as a working school, and the park of Villa Marietti Radice Fossati, where the Archdevil hackberry grows: the city asks for the discretion due to an inhabited place, because people live in the villa buildings, and says the gate may be passed to visit the park."
+      "a": "All twenty-two on this list are free. Unlike Rome or Florence, none of Milan's most remarkable trees stand inside a paid garden or monument; the closest things to a ticket are Parco Trotter's restricted opening hours, since its grounds double as a working school, and the park of Villa Marietti Radice Fossati, where the Archdevil hackberry grows: the city asks for the discretion due to an inhabited place, because people live in the villa buildings, and says the gate may be passed to visit the park."
     },
     {
       "q": "Why does Milan have so few genuinely ancient trees compared to Rome or Florence?",
@@ -763,6 +763,36 @@
       "location_precision": "confirmed",
       "height_m": 35.0,
       "verify_notes": "Height 35.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+    },
+    {
+      "id": "mil_022",
+      "name": "The Plane of Viale Vittorio Veneto 3",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 570,
+      "height_m": 36,
+      "location": {
+        "address": "Viale Vittorio Veneto 3, Milano",
+        "latitude": 45.475,
+        "longitude": 9.204167,
+        "neighbourhood": "Porta Venezia / Bastioni"
+      },
+      "verified_sources": [
+        "Italian national register of monumental trees (MASAF), Milano, Viale Vittorio Veneto 3"
+      ],
+      "access": "Free, street tree on the public boulevard (Bastioni) near Porta Venezia.",
+      "transport": "About 300 m northeast of the Giardini Indro Montanelli cluster, on foot.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "A story went round Milan in 2018 that the big plane on Viale Vittorio Veneto, growing in the old tram-line median near Porta Venezia, had dried out and been cut down. It probably wasn't this one. That felled tree measured about three metres round; this one, still standing at the same address, measures 5.70 metres, nearly double, too large a gap to be the same trunk misremembered. The register lists this plane as one of the largest in the city by girth, 36 metres tall.\n\nViale Vittorio Veneto runs along the Bastioni, the boulevard laid over Milan's old Spanish city walls after they came down, three hundred metres from the plane trees and monuments of the Giardini Indro Montanelli. No source beyond the register names this specific tree, so its age and any history particular to it stay unrecorded.\n\nIt grows as a street tree on the public boulevard, free to see at any hour, no gate and no ticket. If you know anything about its planting, or about the tree that really was felled here in 2018, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ],
   "oldest_tree_id": "mil_004"
