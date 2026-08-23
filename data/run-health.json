@@ -1139,6 +1139,28 @@
    "cities_touched": 1,
    "trees": 5,
    "logged": false
+  },
+  {
+   "started": "2026-08-23T00:28:56+00:00",
+   "date": "2026-08-23",
+   "run_id": "32607960222",
+   "minutes": 34.4,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 317,
+   "denials": 21,
+   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(for), Bash(python3), Bash(rm), Bash(wc)",
+   "ended": "success",
+   "tokens": 73182355,
+   "claims_held": [
+    "haarlemmermeer",
+    "heerlen",
+    "hilversum"
+   ],
+   "commits": 13,
+   "cities_touched": 2,
+   "trees": 12,
+   "logged": false
   }
  ],
  "schedule_changes": [
