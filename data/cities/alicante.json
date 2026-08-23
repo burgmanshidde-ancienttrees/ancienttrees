@@ -2,11 +2,11 @@
   "city": "Alicante",
   "country": "Spain",
   "status": "needs_curation",
-  "intro": "Ten monumental figs stand across three parts of Alicante. Seven cluster in the city centre: four hold Plaza Gabriel Miro, each catalogued separately by the Valencian register, and three more stand in and along Parque de Canalejas, the waterfront park laid out in 1886. A kilometre south in Benalua, two more wait in a second cluster, and a short walk further on, the widest of three figs planted at the main railway station's own entrance completes the page.",
-  "meta_description": "Ten monumental figs across Alicante, from Plaza Gabriel Miro's giant Moreton Bay figs to Benalua's oldest, widest fig, saved twice from the axe.",
+  "intro": "Eleven monumental figs stand across three parts of Alicante. Eight cluster in and around the city centre: four hold Plaza Gabriel Miro, each catalogued separately by the Valencian register, three more stand in and along Parque de Canalejas, the waterfront park laid out in 1886, and an eighth grows facing Postiguet beach in the small Paseito de Ramiro park. A kilometre south in Benalua, two more wait in a second cluster, and a short walk further on, the widest of three figs planted at the main railway station's own entrance completes the page.",
+  "meta_description": "Eleven monumental figs across Alicante, from Plaza Gabriel Miro's giant Moreton Bay figs to Benalua's oldest, widest fig, saved twice from the axe.",
   "question_meta": "Alicante's oldest tree is the Ficus de Benalua: over 150 years old, and the widest trunk of any fig on this page.",
   "question_answer": "Alicante's oldest tree is the Ficus de Benalua, over 150 years old by the city's own figure and the widest trunk on this page by far. It stands a kilometre south of the city-centre figs, saved twice from removal: once when the city built a health centre next to it and moved the planned car park to protect its roots, and earlier still when a proposal to transplant it across the barrio was fought off by its own neighbours. Among the seven city-centre figs, only Ficus Gabriel Miro II has a published age, about 120 years, the thickest of the four Moreton Bay figs on Plaza Gabriel Miro. The rest carry no individual date.",
-  "question_context": "Ages are the weak part of the record here, and it is worth knowing why. The Valencian catalogue lists most of these ten figs with a girth, a height and a crown spread, and no planting date, because it measures trees rather than dates them. Two exceptions exist. The city government's own record for the Ficus de Benalua states an age over 150 years, tied to a documented planting: a sapling taken before 1860 from what is now the Jardin Botanico and replanted in the garden of the old Chalet de Grau, where it has stood since. And local reporting fills the gap for the thickest fig on Plaza Gabriel Miro, which todoalicante puts at about 120 years old on a canopy of almost forty metres, against a rounder 170 with no measurement behind it. For the rest there is only the setting: Parque de Canalejas was designed in 1886, the Gabriel Miro square took its present shape in 1918, and the station forecourt fig stands at what a 2026 report calls a century-old intersection, a fact about the site rather than a date for the tree. All ten stand on free, open ground, none of them gated.",
+  "question_context": "Ages are the weak part of the record here, and it is worth knowing why. The Valencian catalogue lists most of these eleven figs with a girth, a height and a crown spread, and no planting date, because it measures trees rather than dates them. Two exceptions exist. The city government's own record for the Ficus de Benalua states an age over 150 years, tied to a documented planting: a sapling taken before 1860 from what is now the Jardin Botanico and replanted in the garden of the old Chalet de Grau, where it has stood since. And local reporting fills the gap for the thickest fig on Plaza Gabriel Miro, which todoalicante puts at about 120 years old on a canopy of almost forty metres, against a rounder 170 with no measurement behind it. For the rest there is only the setting: Parque de Canalejas was designed in 1886, the Gabriel Miro square took its present shape in 1918, and the station forecourt fig stands at what a 2026 report calls a century-old intersection, a fact about the site rather than a date for the tree. All eleven stand on free, open ground, none of them gated.",
   "faq": [
     {
       "q": "What is the oldest tree in Alicante?",
@@ -22,7 +22,7 @@
     },
     {
       "q": "Can I see them all in one walk?",
-      "a": "Not in one route. The seven city-centre figs form the mapped walk, about 450 metres end to end, roughly ten minutes. The two Benalua figs stand a kilometre south of that, about 150 metres from each other, and the station forecourt fig is a further few minutes south again, close enough to fold into the same southern outing."
+      "a": "Not in one route. The seven city-centre figs form the mapped walk, about 450 metres end to end, roughly ten minutes. The Paseito de Ramiro fig is a further ten minutes northeast along the seafront, facing Postiguet beach. The two Benalua figs stand a kilometre south of the city centre, about 150 metres from each other, and the station forecourt fig is a further few minutes south again, close enough to fold into the same southern outing."
     }
   ],
   "hero_tree_id": "ali_001",
@@ -345,6 +345,36 @@
         "status": "missing"
       },
       "notes": "Largest of three Ficus macrophylla registered beside the station facade (register_ids 3096-3098); the other two, 7m and 58m away, kept as leads rather than shipped to avoid fragmenting one small forecourt grove into near-identical entries. A fourth same-category fig 0.9km away on a residential street (register_id 3099) is a separate lead, not part of this cluster. 'Century-old' language in a 2026 redevelopment report describes the intersection's fig population generally, not this individual tree, so no age is derived from it."
+    },
+    {
+      "id": "ali_011",
+      "name": "The Fig of Paseito de Ramiro",
+      "species": "Indian Laurel Fig (Ficus microcarpa)",
+      "age_estimate": "about 80 years",
+      "age_min": 70,
+      "age_max": 90,
+      "girth_cm": 267,
+      "location": {
+        "address": "Paseito de Ramiro, Avenida Juan Bautista Lafora, facing Playa del Postiguet, Alicante",
+        "latitude": 38.346224,
+        "longitude": -0.47837,
+        "neighbourhood": "Sant Roc, facing the Postiguet beach"
+      },
+      "verified_sources": [
+        "https://dadesobertes.gva.es/va/dataset/catalogo-de-arboles-monumentales-y-singulares-de-la-comunitat-valenciana (Generalitat Valenciana register, register_id 853, girth 2.67m, height 13.0m, crown 21.0m; a second entry, register_id 614, girth 2.85m, height 16.0m, crown 27.0m, stands ~19m away in the same small park and is folded into this one entry as a visitor sees one grove, not two)",
+        "https://www.alicante.es/es/documentos/paseos-y-arboles-singulares-centro-tradicional-alicante (Ayuntamiento de Alicante's own 'Paseos y arboles singulares en el Centro Tradicional de Alicante' walking-route brochure, PDF at https://www.alicante.es/sites/default/files/documentos/documentos/paseos-y-arboles-singulares-centro-tradicional-alicante/senderos-centro.pdf, stop 1 'Paseito de Ramiro': names the species as 'Ficus nitida' (a synonym of Ficus microcarpa), states 'unos 80 anos de edad, 13 m de altura y 21 m de diametro de copa', which matches register_id 853's height and crown exactly)"
+      ],
+      "access": "Free, open public park (Paseito de Ramiro), no gate or opening hours; part of the city's own official 'Red de Senderos Urbanos' walking route",
+      "transport": "Facing Playa del Postiguet on Avenida Juan Bautista Lafora; about 15-18 minutes on foot from Plaza Gabriel Miro (the main city-centre cluster); seafront bus stops near the Postiguet/Marina are closer",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A fig here has a crown 27 metres across, wide enough that its neighbour, growing nineteen metres away, is usually mistaken for the same tree. Alicante's regional tree register counts them as two separate Indian laurel figs, Ficus microcarpa, 2.67 and 2.85 metres round, 13 and 16 metres tall, and treats their shared plot in Paseito de Ramiro, facing Postiguet beach, as one small park rather than two addresses.\n\nThe city's own printed walking route through the old town is the only source that puts an age on them at all: about 80 years, tucked into an itinerary that also notes a 56-metre stretch of 16th-century city wall running through the same park. The ground has an older history than the figs do. It was once the medina's own souk, and in the early 20th century became one of Spain's first outdoor schools, named for the historian Rafael Altamira. Neither fact dates the trees themselves, only the plot they grew up in.\n\nThe park sits on the city's official Red de Senderos Urbanos walking route, a few minutes from the beach, free and open with no gate.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
