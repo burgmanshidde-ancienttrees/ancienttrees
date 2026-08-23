@@ -1,5 +1,29 @@
 # LOG
 
+## 2026-08-23 (continued) - Eight small deepening passes, a Search Console find, and two stale leads fixed
+
+7-day visits: 476 visits, 749 page views (83/44/67/42/74/67/51/48 daily). Rung 0/0b: no unprocessed submissions (Supabase service key present, 36 rows all already processed). Rung 2 (health.py): clear at the start, one BLOCKER already answered by an earlier run today.
+
+**Rung 1(a), write what's already verified.** `prepare.py`'s shelf held 5 trees awaiting a writer: Alicante's Fig of Paseito de Ramiro (ali_011, a folded twin pair facing Postiguet beach) and Brisbane's Talking Tree of Newstead House (bne_016, a Cunningham's fig 3km upriver from the City Botanic Gardens cluster). Wrote both directly, merged, fixed the count promises the merges broke (ten->eleven Alicante, fourteen->fifteen Brisbane including the walkability FAQ now that Newstead isn't part of the Gardens cluster). Bari's 3 already-written trees stay stuck below the 4-tree floor, untouched.
+
+**Free photo sweep.** `photo_hunt.py --recheck`: 1129 trees swept, 604 with at least one open-licence candidate now queued for a future viewing session (this runner's egress proxy blocks Wikimedia, so no photo was judged here).
+
+**Rung 4, deepening, three claimed batches in sequence (claim, verify, write, merge, build, commit, release, repeat, per the "claim only what this window can finish" rule).** Batch one: Lucca (+4, to 14: a free plane on the western walls anchoring a second wall-walk, plus 3 more Orto Botanico register trees, one a genuine autumn-colour bald cypress pair, best_time added) and Milan (+1, to 22: resolved a standing 2018 dead-tree-risk flag on the Viale Vittorio Veneto plane by girth comparison, 5.70m vs a felled tree reported at ~3m, too big a gap to be the same trunk). Berlin's own sole candidate correctly resolved to 0: both leads sit in a private villa colony (Denkmaldatenbank confirms it), matching an existing access precedent in that file. Lucca's paid-entry share rose to 8 of 14 (57%), noted for a future pass to chase the wall register's other two individually-protected free trees rather than removing anything.
+
+Batch two: Padua (+2, to 12: a Japanese cedar reportedly planted 1850, a second grafted ginkgo beside the already-published 1750 one) and Nijmegen (+1, to 18: a century-old municipal street tree shipped flagged despite a lower "potentieel" register status, per the rule that a judgement call about remarkability never blocks publication). Padua's own churchyard cypress candidate correctly blocked: a wall separates it from a neighbouring private garden and the source needed special access to view it closely. Groningen's sole candidate (a plane/elm pair) resolved to blocked: a university faculty building's private courtyard, not open campus ground.
+
+**A page gap, opened by the first batch.** Lucca's Orto Botanico cluster crossed 5 trees mid-run; `pagegaps.py` caught it, wrote the park intro, `/parks/orto-botanico-di-lucca` now live.
+
+**Search evidence, acted on without asking (CLAUDE.md's standing rule).** DATA.md has carried a recurring, unactioned content-lead line for days: "alameda dos platanos" has no matching page, 8-13 impressions and position ~8 across several days, while Porto already publishes. Investigated: Portugal's already-imported ICNF register carries exactly this, Jardim da Cordoaria's Alameda dos Platanos, 37 London planes classified as one ensemble (single processo, single 2005 gazette entry) whose trunk bases are famously deformed by disease into an elephant's-foot shape, trees otherwise healthy. Cross-checked against a directly-fetched second source (100milarvores.pt, a Porto tree-walking group) for that fact and the garden's own history. The same register entry and gazette also protects the garden's bunya pine, its tallest tree, so both shipped together: Porto +2, to 29. Fits an existing page contract (adding a tree to a published city), so no separate approval needed. Both trees also got a Portuguese translation (Porto carries a PT overlay); fixed count promises in both languages.
+
+**Two stale leads, fixed rather than re-researched.** Setubal's one READY lead was a `leads.py` false positive: already published, folded into stb_003's existing two-tree story, the leads-file status field just never got flipped from "lead" to "folded" when that call was made. Potsdam's one READY lead turned out to be the exact same tree (same register id, same coordinates) as Berlin's already-published ber_015, filed under Potsdam only because Pfaueninsel sits geographically closer to Potsdam than to central Berlin despite being administratively Berlin's. Fixed both status fields so neither resurfaces as work for a future pass. Zero new trees from either, but both avoided a wasted verify pass or a duplicate page.
+
+A fourth claimed batch (Genoa, Fukuoka) was still in flight when this entry was written; will log separately.
+
+Build, preflight and qa.py clean throughout (qa's one standing failure, sitemap lastmod, is this sandbox's shallow-checkout artifact, unrelated to any of the above). Every pass's cost logged to `data/agent-costs.json` as it landed.
+
+FOR HIDDE: nothing blocks.
+
 ## 2026-08-23 - Night run 2026-08-23 10:10 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 22.6 minutes of its 120 minute window, 197 turns, 31 commands refused by the allowlist, ended clean (success). 10 commit(s), none of them a published tree. Claims left behind: krakow, padua, berlin, which block the top of the queue until they expire.
