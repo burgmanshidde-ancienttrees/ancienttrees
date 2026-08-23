@@ -1222,6 +1222,27 @@
    "cities_touched": 3,
    "trees": 16,
    "logged": true
+  },
+  {
+   "started": "2026-08-23T08:14:26+00:00",
+   "date": "2026-08-23",
+   "run_id": "32627720793",
+   "minutes": 36.7,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 297,
+   "denials": 18,
+   "denials_source": "permission_denials: Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(if), Bash(printenv), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 31015011,
+   "claims_held": [
+    "berlin",
+    "krakow"
+   ],
+   "commits": 14,
+   "cities_touched": 5,
+   "trees": -4,
+   "logged": false
   }
  ],
  "schedule_changes": [
