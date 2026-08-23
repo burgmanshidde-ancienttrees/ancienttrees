@@ -2360,6 +2360,23 @@ Imported to `data/registers/quebec-city-arbres-remarquables.json` (all 685
 features kept, TYPE_PROP preserved so a future pass filters correctly rather
 than re-deriving the split).
 
+### Winnipeg: BLOCKED, no open-licence register (scouted 2026-08-23)
+
+`scout_next.py --target` pointed at Winnipeg (#69, no supply, no verdict).
+Two candidates, neither usable. `data.winnipeg.ca`'s "Tree Inventory Map" is
+real and has coordinates, but it is a full municipal public-tree inventory,
+every street and park tree in the city, which the semantic-filter rule
+excludes on its own regardless of licence. `manitobatreeregister.ca` (the
+Manitoba Tree Register, run by Trees Winnipeg with the province, 139 trees
+as of this pass) IS the right shape, individually nominated and designated
+heritage trees with species and region, searchable by place including
+Winnipeg. But the site states "(c)Trees Winnipeg All Rights Reserved" with
+no open-licence declaration anywhere, and offers no API or export, browse
+and search only. Disqualified for import under the licence-first rule.
+Recorded in `data/register-scouting.json` as `blocked` so this search is not
+repeated; usable later only as a lead source for hand verification if
+Winnipeg is ever named for from-zero research, which it is not currently.
+
 ---
 
 ## Summary for the merge into OPEN_DATA_SURVEY.md
