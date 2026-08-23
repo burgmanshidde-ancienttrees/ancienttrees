@@ -1,5 +1,11 @@
 # LOG
 
+## 2026-08-23 - Night run 2026-08-23 04:24 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 21.1 minutes of its 120 minute window, 197 turns, 11 commands refused by the allowlist, ended clean (success). 22 tree(s) reached data/cities across 3 city file(s), and the run still wrote no log entry of its own. Claims left behind: the-hague, brisbane, krakow, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
 ## 2026-08-23 - Six cities opened or deepened (57 trees), Bari released, four countries scouted
 
 This session's second attempt on a window whose first attempt claimed bari, haarlemmermeer and assen, then stopped after 6.4 minutes and 2 commits without touching any of them. Kept going once the claimed work was finished: found `python3 scripts/leads.py --ready` had 212 more trees sitting fully verified with no story, and used the rest of the window on those. Total this attempt: 57 trees across 6 cities (3 new, 1 deepened, plus Assen and Haarlemmermeer), 4 countries scouted for registers, roughly 15 commits.
