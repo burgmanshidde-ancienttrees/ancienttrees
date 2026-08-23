@@ -12,17 +12,6 @@
     },
     {
       "register_ids": [
-        3089,
-        3090,
-        3091,
-        3092,
-        921
-      ],
-      "species": "Ulmus minor",
-      "reason": "Five old elms registered in the Plaza Gabriel Miro area. Local press (todoalicante.es, 2025-09-01, 'Alicante revisara todos los arboles monumentales tras la caida de un olmo centenario en Gabriel Miro') confirms one of exactly five old elms in this plaza broke and fell at the Gabriel Miro/San Fernando corner in September 2025, triggering a citywide review of monumental trees. The register data alone gives no way to identify which of these five specific coordinates is the one that fell; shipping any of them risks publishing a dead tree as alive. Hold all five until a street-level check, a photo, or a follow-up news source identifies which four are still standing."
-    },
-    {
-      "register_ids": [
         853,
         614,
         3070,
@@ -44,20 +33,6 @@
       ],
       "species": "Ficus microcarpa / Ficus macrophylla / Grevillea robusta",
       "reason": "A long row of individually registered figs (and two Grevillea robusta) strung along roughly 150-300m of Passeig de Canalejas continuing toward Portal de Elche, beyond the compact core already shipped. Reads as a continuous avenue rather than individual collectible points (see the ensemble rule); the one individually named, most distinctive specimen from this stretch (register_id 507, 'Ficus del Passeig de Canalejas') already shipped as ali_005. Exact street addresses and public/private status of the far end (toward Portal de Elche) were not individually confirmed within this pass's time budget."
-    },
-    {
-      "register_ids": [
-        3087,
-        3085,
-        3086
-      ],
-      "species": "Olea europaea",
-      "reason": "Three olives clustered about 0.9km from centre. No secondary source found identifying the exact plaza/street or confirming public access within this pass's time budget."
-    },
-    {
-      "register_id": 3088,
-      "species": "Euphorbia ledienii",
-      "reason": "A tree-like succulent (candelabra spurge), unusual for this register. Exact address and public access not confirmed within this pass's time budget; also worth a second look at whether this reads as a collectible 'tree' for the product."
     },
     {
       "register_ids": [
@@ -92,7 +67,56 @@
       ],
       "species": "Bougainvillea glabra",
       "reason": "4.4km from centre, well outside this pass's ~2km cluster radius, and a climbing shrub/vine rather than a tree in the usual collectible sense. Left for a possible future second cluster or reconsideration of whether it fits the product at all."
+    },
+    {
+      "register_ids": [
+        3085,
+        3086,
+        3087
+      ],
+      "species": "Olea europaea",
+      "reason": "RE-CHECKED 2026-08-23, no change: still no secondary source naming the exact plaza/street. Reverse geocoding the three coordinates (38.3387-38.3388, -0.4896 to -0.4897) places them on/near Carrer del Pintor Aparicio in l'Eixample; an Overpass check found only one unnamed leisure=garden way right at that point (no name tag), which reads more like a private residential garden than a public street or plaza. Two targeted web searches (\"Pintor Aparicio olivo\", \"Alicante olivos monumentales Eixample\") returned nothing. Access is now a live doubt as well as the address gap: do not ship without either a street-level/satellite check confirming these stand on public ground, or a source naming the site."
+    },
+    {
+      "register_id": 3088,
+      "species": "Euphorbia ledienii",
+      "reason": "Same unresolved address/access status as the three Olea europaea above (register_ids 3085-3087), all in the same small area off Carrer del Pintor Aparicio; see that entry. Still also worth a second look at whether a succulent counts as a collectible 'tree' for the product."
+    },
+    {
+      "register_ids": [
+        1421,
+        1422
+      ],
+      "name": "Olivera del Tio Pastor I / II",
+      "species": "Olea europaea",
+      "reason": "CHECKED 2026-08-23: 7.6km from centre, named in the register but no secondary source found for either tree (web search for \"Olivera del Tio Pastor\" Alicante returned nothing matching). Outside any walkable cluster; would need a name match and an access check before it goes anywhere."
+    },
+    {
+      "register_id": 1194,
+      "name": "Ficus de la Finca La Concepció",
+      "species": "Ficus macrophylla",
+      "reason": "CHECKED 2026-08-23: 7.7km from centre, girth 4.8m, height 15.4m, crown 29.5m (Generalitat Valenciana register, category Proteccion Generica). NOT in Alicante municipality: this is the Finca/Casa de la Concepcion in Sant Joan d'Alacant (Carrer Hernan Cortes, 8), a separate town on TRAM line 2, roughly 25 minutes end to end from Luceros plus a walk, so borderline for the day-trip boundary rather than clearly inside it. Turismo Sant Joan's own page (https://turismosantjoan.es/en/la-concepcion-estate/) independently confirms a ficus 'more than 100 years old' on the eastern edge of the property, 'included in the municipal catalog of protected trees', which is a genuine second source for species and a derived age (over a century) alongside the register. That is the good news. Access is the open question: the same page says 'the original perimeter fence has been removed' but 'a recent fence covered with heather surrounds this building', and current ownership plans to convert the historic house into a hostel; a separate search snippet (not independently verified by fetching the page itself) describes the grounds as having 'become a public park'. Those two claims are not flatly contradictory (garden open, building fenced) but this pass could not confirm which side of any fence the ficus stands on, and did not find a source stating opening hours or a free-access line in the terms this project needs for the access field. Hold as a lead: promising (named tree, two sources, real age derivation) but not yet clearable on hard rule 10's access test, and it belongs to a different town's future page as much as to Alicante's, which a later pass should decide with fresh eyes rather than this one guessing under a time box."
+    },
+    {
+      "register_ids": [
+        1188, 1190, 1191, 1192, 1210, 1211, 1230, 1231, 1235, 1236,
+        1240, 1247, 1249, 1252, 1737, 528, 529, 530, 541, 3952
+      ],
+      "species": "Ficus macrophylla / Phoenix dactylifera / Washingtonia robusta / Washingtonia filifera / Olea europaea",
+      "reason": "Not pursued this pass, per the brief's own steer toward the walkable named centre cluster over these: a scattered group of named-estate trees 8.0-9.5km from centre (Fincas Maxara, El Conde o La Pau, Santa Ana, L'Abril, Espinos, and unnamed others), all in Sant Joan d'Alacant/Mutxamel rather than Alicante itself. A quick check of 'Finca El Conde o La Pau' (register_id 1247's site) found a local heritage blog (anticalicante.blogspot.com) describing it as a ruin: 'irrigation no longer exists, the few remaining trees barely survive in the razed garden, and no one inhabits the house anymore', which reads as private and likely fails the access test outright. The others were not checked individually. Any future pass on these should expect private agricultural estates rather than public ground, and check access before spending time on names or ages."
     }
   ],
-  "blocked": []
+  "blocked": [
+    {
+      "register_ids": [
+        3089,
+        3090,
+        3091,
+        3092,
+        921
+      ],
+      "species": "Ulmus minor",
+      "reason": "RE-CHECKED 2026-08-23, no change: fetched both todoalicante.es articles on the September 2025 elm collapse in Plaza Gabriel Miro directly (not just search snippets). Neither names a precise corner, adjacent building or which of the five registered elms fell; one only says the spot has no hostelry terraces nearby. Still no way to identify which four of the five register coordinates remain standing, so all five stay held rather than moved to leads: this is now a confirmed-unresolvable-by-search question, not just an unchecked one. A street-level photo or a follow-up city report naming the exact tree is the only thing that would unblock this."
+    }
+  ]
 }
