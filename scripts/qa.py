@@ -592,14 +592,28 @@ def check_tree_count_claims(pages):
         return []
     # Four figures and up only: "10 trees" is a city page counting its own,
     # which check_count_promises() already owns.
-    pat = re.compile(r"\b(\d{1,3}(?:,\d{3})+|\d{4,})\s+(?:old |ancient |remarkable )*trees\b", re.I)
-    # A year is not a tree count. Every page footer reads "(c) 2026 Ancient
-    # Trees, ancienttrees.app", and case-insensitively that is a four-digit
-    # number followed by "ancient trees", so this check reported 2,644
-    # problems across 3,206 pages on the day it was written and blocked every
-    # deploy until it was found. Skip a hit that is a plausible year sitting
-    # directly in front of the brand name; a real count promise never is.
-    brand = re.compile(r"\b(19|20|21)\d{2}\s+Ancient Trees\b")
+    # Only OUR OWN claim about OUR OWN collection, which is rendered in exactly
+    # one sentence, by AppModal.astro from roundedTrees(): "Over 1,800 old trees
+    # worth the walk", and its Spanish twin. Nothing else on a page is this
+    # check's business.
+    #
+    # The first version scanned every page for any four-digit number followed by
+    # "trees" and it was wrong twice in one afternoon. It read the footer's
+    # "(c) 2026 Ancient Trees" as a claim of 2,026 trees, on all 3,206 pages.
+    # With that fixed it still refused Athens, whose Zappeion story says "most
+    # of the original 1857 trees have since been replaced", and Cork, whose
+    # story calls the Boole arboretum "around 2,500 trees of some 120 species".
+    # Both are true facts about somebody else's planting, and a check cannot
+    # tell them from a boast by counting digits.
+    #
+    # So it guards the thing it can actually guarantee: that the one generated
+    # site-wide figure never overstates the map, and that nobody replaces the
+    # helper with a number typed by hand. Editorial prose is deliberately out
+    # of scope; a story that misdescribes an arboretum is a research error and
+    # a reader will tell us.
+    pat = re.compile(
+        r"\b(\d{1,3}(?:,\d{3})+|\d{3,})\s+(?:old |ancient |remarkable )*trees worth the walk"
+        r"|\b(\d{1,3}(?:\.\d{3})+|\d{3,})\s+(?:\u00e1rboles viejos|arboles viejos)", re.I)
     out = []
     for page in pages:
         try:
@@ -607,10 +621,8 @@ def check_tree_count_claims(pages):
         except OSError:
             continue
         for m in pat.finditer(text):
-            raw = m.group(1)
-            if brand.match(text, m.start()):
-                continue
-            n = int(raw.replace(",", ""))
+            raw = m.group(1) or m.group(2)
+            n = int(raw.replace(",", "").replace(".", ""))
             if n > total:
                 out.append(
                     f"{page.relative_to(DIST)}: claims {raw} trees, and we map {total}. "
