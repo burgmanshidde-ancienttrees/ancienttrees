@@ -1,5 +1,11 @@
 # LOG
 
+## 2026-08-23 - Night run 2026-08-23 08:14 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 36.7 minutes of its 120 minute window, 297 turns, 18 commands refused by the allowlist, ended clean (success). -4 tree(s) reached data/cities across 5 city file(s), and the run still wrote no log entry of its own. Claims left behind: berlin, krakow, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
 ## 2026-08-23 - The Hague to 30, Brisbane to 14, Nijmegen to 17, a Helsinki register, and a BLOCKER of my own making
 
 7-day visits: 432 over the week (83/44/67/42/74/67/51), 4 so far today. Rung 0/0b: no unprocessed submissions (checked the Supabase table directly, service key present). Rung 2 (health.py): clear at the start.
