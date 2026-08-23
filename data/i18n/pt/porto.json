@@ -1,9 +1,9 @@
 {
  "_note": "Portuguese overlay for Porto, hand-written 2026-08-22. European Portuguese, for readers in Porto. Rendered from data/cities/porto.json, which stays the source of truth: every fact, age, hedge and access note here already exists there in verified English, and nothing was researched or sharpened in translation. The search terms are not translations: Portugal's legal category is 'arvores de interesse publico' (ICNF) and people also search 'arvores monumentais do Porto', so the title, meta and question fields carry those rather than a literal rendering of 'ancient trees'. Text only: every coordinate, photo, licence and walk stays in data/cities/porto.json.",
  "city": "Porto",
- "title": "Árvores monumentais do Porto: as 27 mais notáveis",
- "meta_description": "Árvores de interesse público do Porto: um tulipeiro de 250 anos na Casa Tait, um ginkgo de 35 metros que doura em dezembro, dois jardins e três quintas.",
- "intro": "As maiores árvores do Porto chegaram quase todas com as famílias britânicas do vinho do Porto, no século XIX, que encheram as suas quintas de tulipeiros, magnólias e exóticas do hemisfério sul que o dinheiro importava e o clima da cidade teve de aceitar. Dois jardins guardam boa parte do que vale a pena ver, os Jardins do Palácio de Cristal e o Jardim Botânico do Porto. Uma curta caminhada para nascente acrescenta três quintas da Universidade do Porto, o mesmo hábito de coleccionador em terreno académico. O Porto também se chama Cidade das Camélias, e diz isso à letra.",
+ "title": "Árvores monumentais do Porto: as 29 mais notáveis",
+ "meta_description": "Árvores de interesse público do Porto: um tulipeiro de 250 anos na Casa Tait, um ginkgo de 35 metros que doura em dezembro, três jardins e três quintas.",
+ "intro": "As maiores árvores do Porto chegaram quase todas com as famílias britânicas do vinho do Porto, no século XIX, que encheram as suas quintas de tulipeiros, magnólias e exóticas do hemisfério sul que o dinheiro importava e o clima da cidade teve de aceitar. Três jardins guardam boa parte do que vale a pena ver: os Jardins do Palácio de Cristal, o Jardim Botânico do Porto e o Jardim da Cordoaria. Uma curta caminhada para nascente acrescenta três quintas da Universidade do Porto. O Porto também se chama Cidade das Camélias, e diz isso à letra.",
  "question_title": "Qual é a árvore mais antiga do Porto? (250 anos)",
  "question_meta": "A árvore mais antiga do Porto é um tulipeiro de mais de 250 anos junto à Casa Tait, protegido desde 1950. Onde fica e as outras árvores notáveis da cidade.",
  "question_answer": "A árvore mais antiga do Porto a que qualquer pessoa pode chegar a pé é um tulipeiro-da-virgínia (Liriodendron tulipifera) ao lado da Casa Tait, nos Jardins do Palácio de Cristal, com mais de 250 anos e uma das primeiras árvores que Portugal colocou individualmente sob protecção legal, em 1950. Está nos jardins públicos gratuitos com entrada pela Rua de D. Manuel II. O registo nacional inclui uma mais velha, um tulipeiro de 300 anos no recreio de uma escola na Rua João de Deus, que não está aberta a visitantes.",
@@ -15,7 +15,7 @@
   },
   {
    "q": "As árvores notáveis do Porto são de acesso livre?",
-   "a": "Quase todas. Estão em jardins públicos gratuitos ou em campus universitários que se atravessam a pé: os Jardins do Palácio de Cristal, o Jardim Botânico do Porto e três quintas da Universidade do Porto, um pouco mais para nascente. A excepção é a canforeira da Via Panorâmica, que está num terreno privado e se vê da estrada pública em vez de se visitar."
+   "a": "Quase todas. Estão em jardins públicos gratuitos ou em campus universitários que se atravessam a pé: os Jardins do Palácio de Cristal, o Jardim Botânico do Porto, o Jardim da Cordoaria e três quintas da Universidade do Porto, um pouco mais para nascente. A excepção é a canforeira da Via Panorâmica, que está num terreno privado e se vê da estrada pública em vez de se visitar."
   },
   {
    "q": "Porque é que o Porto se chama Cidade das Camélias?",
@@ -243,6 +243,22 @@
    "access": "Livre, praça pública",
    "transport": "Centro do Porto, junto à Faculdade de Engenharia e à zona do Rivoli, a pé das estações de metro da Trindade e do Bolhão",
    "story": "A Praça Pedro Nunes é pequena o suficiente para se atravessar em vinte segundos e tem quatro tulipeiros, cada um com cerca de 22 metros de altura. Foram classificados em conjunto, como um grupo, em 2005, ao lado do antigo Liceu D. Manuel II, e gerações de alunos saíram daquele edifício para a sombra deles.\n\nO Liriodendron tulipifera vale a pena identificar do passeio. A folha parece que alguém lhe cortou a ponta com uma tesoura, quatro lóbulos e um topo direito, ao contrário de tudo o resto que cresce numa praça do Porto. As flores são genuinamente em forma de tulipa, amarelo-esverdeadas com uma banda cor de laranja, e genuinamente difíceis de ver, porque abrem no alto da copa no princípio do verão e viradas para cima.\n\nO registo mediu em 2004: troncos de 3,6 metros de perímetro, 22 metros de altura, copas de 17 metros de diâmetro e uma idade de 80 anos, o que põe o grupo perto dos 100 agora.\n\nUma coisa a saber antes de ir. O registo e um levantamento de 2005 das árvores classificadas do Porto são os únicos registos deste grupo, e nenhum artigo recente nem fotografia datada confirma que as quatro ainda lá estão. É pouco provável que quatro árvores grandes numa praça central se tenham ido embora em silêncio, mas a última confirmação escrita tem vinte anos, e quem estiver na praça resolve isto mais depressa do que qualquer arquivo."
+  },
+  "por_028": {
+   "name": "A Alameda dos Plátanos da Cordoaria",
+   "species": "Plátano-comum (Platanus x acerifolia)",
+   "age_estimate": "cerca de 160 anos, plantada por volta de 1866",
+   "access": "Livre, jardim público (Jardim da Cordoaria), triangular e sem vedação, aberto a qualquer hora.",
+   "transport": "Centro do Porto, a 5-10 minutos a pé da estação de São Bento.",
+   "story": "Trinta e sete plátanos alinham-se numa alameda do Jardim da Cordoaria, e todos partilham a mesma deformação estranha: uma doença inchou a base dos troncos até parecerem, sem margem para dúvida, patas de elefante. As árvores estão perfeitamente saudáveis. O registo nacional de árvores classifica toda a alameda como uma única entrada, a Alameda dos Plátanos, em vez de a dividir em 37 troncos separados, porque é assim que um visitante a vive de facto: uma fileira longa e uniforme de bases igualmente inchadas.\n\nO jardim é mais antigo do que as árvores só no nome. Os cordoeiros trabalharam este terreno durante duzentos anos, dando origem ao nome Cordoaria, até a câmara os expulsar na década de 1860 e contratar o arquiteto paisagista Émile David, o mesmo que desenhou os jardins do Palácio de Cristal ali perto, para construir um jardim a sério no lugar deles. Os plátanos foram plantados por volta de 1866. Um ciclone atravessou a cidade em 1941 e alterou a copa do jardim, mas a alameda sobreviveu e foi classificada de interesse público em 2005.\n\nO jardim é triangular, sem vedação e gratuito, a poucos minutos da estação de São Bento. Percorra a alameda uma vez e cada tronco repete a mesma base inchada e elefantina."
+  },
+  "por_029": {
+   "name": "A Araucária-de-Bunya da Cordoaria",
+   "species": "Araucária-de-bunya (Araucaria bidwillii)",
+   "age_estimate": "cerca de 150 anos",
+   "access": "Livre, jardim público (Jardim da Cordoaria), triangular e sem vedação, aberto a qualquer hora.",
+   "transport": "Centro do Porto, a 5-10 minutos a pé da estação de São Bento.",
+   "story": "Com 40 metros, esta araucária-de-bunya é a árvore mais alta do Jardim da Cordoaria e uma das mais altas de todo o Porto, uma conífera das florestas de Queensland que cresce junto ao lago do jardim, ao lado de um cedro-do-líbano e de um cedro-do-atlas, próximos o suficiente para que um grupo local de passeios botânicos use as três para ensinar os visitantes a distingui-las.\n\nAraucaria bidwillii pertence a um género que outrora cobria o antigo supercontinente da Gondwana e hoje sobrevive numa mão-cheia de espécies espalhadas entre a Austrália e a América do Sul, a maioria delas, como esta, plantada deliberadamente como curiosidade longe de onde evoluiu. O registo nacional de árvores mediu este exemplar em 3,6 metros de perímetro, 40 metros de altura e 12 metros de copa, e classificou-o árvore de interesse público no mesmo aviso de 2005 que protege a alameda de plátanos ali perto.\n\nEstá neste jardim triangular e sem vedação há cerca de um século e meio, desde pouco depois de o terreno deixar de ser um pátio de cordoeiros e se tornar num parque público. Livre a qualquer hora, a poucos minutos da estação de São Bento."
   }
  }
 }
