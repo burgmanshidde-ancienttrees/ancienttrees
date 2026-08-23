@@ -269,7 +269,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Registered as Prague's first pamatny dub (memorial oak), protected since 26 October 1994 (registry 104336/11136). Girth (457 cm, 2013 measurement) and the 190-200 year age estimate are consistent across both sources.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "verify_notes": "Reader feedback (via /contribute, 2026-08-15) flagged the location as wrong, no detail given. Re-checked 2026-08-23: Czech Wikipedia gives an explicit GPS citation, 50.1112953N 14.4137611E, matching our stored pin (50.1113,14.4138) almost exactly; prazskestromy.cz's descriptive location (southern shore path by the canal, under 200m from the Stromovka footbridge) also matches our story text. No error found against either source; outcome recorded as holds."
     },
     {
       "id": "prg_008",
