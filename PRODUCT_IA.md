@@ -29,6 +29,8 @@ URLs do not move. City pages stay at /[city], tree pages at /[city]/[tree]. This
 3. One opinionated shelf: the flagship collection (top-10 trips) plus in-season now. Lists with an opinion are the shareable layer.
 4. A COMPACT explore directory: country-grouped city links, plain names, plus species and collections links. The current 36-card grid moves here in a fraction of the height, exactly the AllTrails "Adventure anywhere" block: present for crawlers and the determined, invisible as furniture.
 
+**Superseded by Hidde's own session, 2026-08-22 (noted by Fresh-eyes review the same day, recorded here since nothing else had): the built order is now hero -> "Our favourite tree cities" shelf -> the four verbs (`home-acts`) -> Countries shelf -> Species shelf -> Parks shelf -> "The oldest trees we map" shelf -> the directory.** One curated shelf now sits ahead of the verbs rather than after them, and four shelves follow rather than the one this section describes. The review read this as deliberate, reviewed work (commits fixing a repeated-photo bug across shelves mid-session) rather than drift, so this is a real direction change the numbered list above has not caught up to. Do not silently re-collapse it back to the four-item list without checking with Hidde first.
+
 ## The funnel, written down (2026-08-04, because it was implied everywhere and stated nowhere)
 
 Where a visitor comes in, where they should go, and what counts as arriving.
