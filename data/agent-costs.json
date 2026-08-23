@@ -3223,6 +3223,15 @@
     "note": "session work, not a dispatched pass, tokens not tracked separately; wrote stories for the 4 lucca + 1 milan trees the verify pass delivered, merged, fixed count promises (ten->fourteen Lucca incl. paid-share note, twenty-one->twenty-two Milan incl. IT i18n overlay for mil_022), preflight and build clean",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "Lucca (Orto Botanico di Lucca park page)",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session work, page-gap rung: the Lucca Orto Botanico register cluster added earlier this run pushed it past the 5-tree park-page threshold; wrote the intro (data/parks/orto-botanico-di-lucca.json), build confirms it renders and pagegaps.py now shows zero park gaps",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
