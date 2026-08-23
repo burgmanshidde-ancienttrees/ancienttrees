@@ -10,6 +10,22 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-23 - Four Dutch cities open at once: Heerlen, Oss, Roosendaal, Sittard-Geleen
+
+A write pass on `python3 scripts/leads.py --ready` found four fully-verified, story-less LRMB register files sitting staged (`data/research/{heerlen,oss,roosendaal,sittard-geleen}-verified.json`), 30 candidate trees between them, all above the 4-tree floor. Wrote stories for all four and published them as new cities, 28 trees total.
+
+**Heerlen (8):** two oaks on the wooded Terworm/Eyckholt estate grounds, a neighbourhood oak from the 1920s mining-colony era, a lime banded to the 1600s with no other history recorded, the plane everyone in town calls the Oak of Terworm (probably planted in 1749 for an heir's birth), a tulip tree in a former miners' park, a castle-drive ginkgo, a town-hall catalpa. hee_003's species had to move from "Oak (Quercus sp.)" to "Oak (Quercus, species not established)" mid-build: hard rule 9 caught it colliding with Austin's unrelated "Live Oak (Quercus sp.)" entries under the same Latin string.
+
+**Oss (6):** two village limes and a named-by-year (1928) sycamore in Macharen, a churchyard beech in Haren, a horse chestnut in Oss itself, and Megen's "Lulboom", a 1937 royal wedding lime the register itself records twice as adjoining entries; folded into one story rather than two, since a visitor sees one planting.
+
+**Roosendaal (7):** a rare Oriental plane and a horse chestnut sharing De Kring square, a catalpa and a London plane framing one building on Burgerhoutsestraat, a beech behind a restaurant, a fast-growing poplar on a car park, a second chestnut by the Van Loonpark pond. Its own park lime, the register's original fifth candidate there, was declared dead in 1998 per the register's own site_history and never shipped, per the never-dead-trees rule.
+
+**Sittard-Geleen (7):** three Geleen trees tracing the district's mining-era growth (a station red oak, a street sycamore, and an oak the register's own surveyor is rooting for against a housing development on the neighbouring plot), plus a poet's-garden copper beech and ash, and a Stadspark pin oak and tulip tree.
+
+All 28 single-sourced LRMB, all flagged, no photos. Build and qa.py both pass.
+
+FOR HIDDE: nothing blocks.
+
 ## 2026-08-23 - Cork 5 to 13, on a newly-scouted national register
 
 `scripts/scout_next.py --target` pointed at Cork for register scouting (published, but no register supply on file and no scouting verdict, because the register itself had never been logged in `data/register-scouting.json` despite already being live). Found `data/registers/ireland-heritage-trees.json` (Heritage Trees of Ireland, National Biodiversity Data Centre, CC-BY 4.0, 724 trees island-wide) was already imported and in use on 2026-08-08/09 for Dublin, with a working Irish Grid to lat/long converter at `scripts/irish_grid.py`; a first pass here nearly re-imported and overwrote it as a fresh find before the "M" in `git status` (not "??") caught it. Re-used the existing conversion instead. Cork's page already draws on Blarney and Fota, so those two sites' public status was established; checked the register's Blarney/Fota entries against the 5 already-published trees, skipped two near-certain duplicates within 60m (a yew and a Western Red Cedar, same species, same site as cor_001/cor_002, confirmed by converting their coordinates), and shipped six new Fota trees (a camphor tree, a spiral-needled Japanese cedar cultivar, a Canary Island date palm, a New Zealand tanekaha, a holm oak, a coast redwood) plus two new Blarney trees (a Cappadocian maple, a beech), all with real converted coordinates. All single-sourced from the register, flagged. Fixed the city's meta_description and question_meta, which still said "five" and "four more". Logged the missing scouting verdict. Two more register clusters (Doneraille Park, The Gearagh nature reserve) turned up but sit 35-40 minutes from Cork city, past the day-trip boundary, so they wait in `data/leads/cork.json`. The register covers all of Ireland and has runway left for Galway, Limerick, Killarney, Kilkenny and Belfast, checked against each city's existing coverage first.
