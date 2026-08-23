@@ -1,0 +1,340 @@
+{
+ "city": "Vancouver",
+ "country": "Canada",
+ "city_slug": "vancouver",
+ "note": "Scouted 2026-08-23 (night run) from the City of Vancouver Heritage Register (opendata.vancouver.ca, dataset 'heritage-sites', category 'LANDSCAPE RESOURCES Trees'). 51 tree entries total, 25 carry a real street address and a named species (these leads); 26 are streetscape rows with no address and no single tree to point at (blocked). Licence: Open Government Licence - Vancouver (based on OGL-BC 2.0), free for any lawful use including commercial, attribution required. Next step: geocode each lead's address, then run the normal verify pass (2 sources, alive, exact spot). Vancouver is one of Hidde's 17 named cities (2026-08-19), so from-zero web research is allowed here if this shelf runs out.",
+ "leads": [
+  {
+   "name": "Giant Sequoia",
+   "address": "1450‑1460 W 49TH AV",
+   "heritage_register_id": "2529",
+   "municipal_designation": "No",
+   "status": "lead",
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:43:00+00:00."
+  },
+  {
+   "name": "Aesculus Hippocastanum, Horse Chestnut",
+   "address": "101‑199 W 10TH AV",
+   "heritage_register_id": "2521",
+   "municipal_designation": "No",
+   "status": "lead",
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:43:00+00:00."
+  },
+  {
+   "name": "London Plane",
+   "address": "3700-3800 W 8TH AV",
+   "heritage_register_id": "2520",
+   "municipal_designation": "No",
+   "status": "lead",
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:43:00+00:00."
+  },
+  {
+   "name": "Northern Red Oak",
+   "address": "501 W 12TH AV",
+   "heritage_register_id": "2522",
+   "municipal_designation": "No",
+   "status": "lead",
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:43:00+00:00."
+  },
+  {
+   "name": "English Oak",
+   "address": "453 W 12TH AV",
+   "heritage_register_id": "2523",
+   "municipal_designation": "No",
+   "status": "lead",
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00."
+  },
+  {
+   "name": "Cappadocian Maple",
+   "address": "1201‑1399 BARCLAY ST",
+   "heritage_register_id": "2534",
+   "municipal_designation": "No",
+   "status": "lead",
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:43:00+00:00."
+  },
+  {
+   "name": "Maple (Various Species)",
+   "address": "2200‑4400 BOUNDARY RD",
+   "heritage_register_id": "2537",
+   "municipal_designation": "No",
+   "status": "lead",
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:43:00+00:00."
+  },
+  {
+   "name": "Tulip Tree",
+   "address": "6510 MACDONALD ST",
+   "heritage_register_id": "2548",
+   "municipal_designation": "No",
+   "status": "lead",
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00."
+  },
+  {
+   "name": "Fernleaf Beech",
+   "address": "4697 W 5TH AV",
+   "heritage_register_id": "2519",
+   "municipal_designation": "No",
+   "status": "lead",
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00."
+  },
+  {
+   "name": "Douglas Firs (2)",
+   "address": "5872 WALES ST",
+   "heritage_register_id": "2553",
+   "municipal_designation": "Yes",
+   "status": "lead",
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00."
+  },
+  {
+   "name": "Tree of Heaven",
+   "address": "699 E 15TH AV",
+   "heritage_register_id": "2524",
+   "municipal_designation": "No",
+   "status": "lead",
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:43:00+00:00."
+  },
+  {
+   "name": "Spanish Chestnut",
+   "address": "2001 W 20TH AV",
+   "heritage_register_id": "2526",
+   "municipal_designation": "No",
+   "status": "lead",
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:43:00+00:00."
+  },
+  {
+   "name": "Saucer Magnolia",
+   "address": "1100 CHESTNUT ST",
+   "heritage_register_id": "2540",
+   "municipal_designation": "No",
+   "status": "lead",
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00."
+  },
+  {
+   "name": "Japanese Maple (Variety Unknown)",
+   "address": "2011 W 48TH AV",
+   "heritage_register_id": "2527",
+   "municipal_designation": "No",
+   "status": "lead",
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00."
+  },
+  {
+   "name": "Almey Crabapple",
+   "address": "4000‑4600 W 16TH AV",
+   "heritage_register_id": "2525",
+   "municipal_designation": "No",
+   "status": "lead",
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:43:00+00:00."
+  },
+  {
+   "name": "Copper Beech (3)",
+   "address": "7128 ADERA ST",
+   "heritage_register_id": "2530",
+   "municipal_designation": "Yes",
+   "status": "lead",
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00."
+  },
+  {
+   "name": "Pin Oak",
+   "address": "4010 BLENHEIM ST",
+   "heritage_register_id": "2535",
+   "municipal_designation": "No",
+   "status": "lead",
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00."
+  },
+  {
+   "name": "London Plane",
+   "address": "3800-3900 W BROADWAY",
+   "heritage_register_id": "2538",
+   "municipal_designation": "No",
+   "status": "lead",
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:43:00+00:00."
+  },
+  {
+   "name": "Beech",
+   "address": "1711 DUNBAR ST",
+   "heritage_register_id": "2543",
+   "municipal_designation": "No",
+   "status": "lead",
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00."
+  },
+  {
+   "name": "Dove Tree, Handkerchief Tree",
+   "address": "2942 W 49TH AV",
+   "heritage_register_id": "2528",
+   "municipal_designation": "No",
+   "status": "lead",
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00."
+  },
+  {
+   "name": "Redwood",
+   "address": "5350 EAST BOULEVARD",
+   "heritage_register_id": "2536",
+   "municipal_designation": "No",
+   "status": "lead",
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00."
+  },
+  {
+   "name": "Caucasian Wing‑Nut",
+   "address": "2020 COMOX ST",
+   "heritage_register_id": "2541",
+   "municipal_designation": "No",
+   "status": "lead",
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00."
+  },
+  {
+   "name": "Garry Oak",
+   "address": "3537 DUNBAR ST",
+   "heritage_register_id": "2544",
+   "municipal_designation": "No",
+   "status": "lead",
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00."
+  },
+  {
+   "name": "Black Walnut",
+   "address": "6690 MARINE CRESCEN",
+   "heritage_register_id": "2549",
+   "municipal_designation": "No",
+   "status": "lead",
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00."
+  },
+  {
+   "name": "Copper Beech",
+   "address": "5872 WALES ST",
+   "heritage_register_id": "2552",
+   "municipal_designation": "Yes",
+   "status": "lead",
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "North Side",
+   "status": "blocked",
+   "why": "No street address in the register and the name describes a streetscape position ('North Side', 'South Side', 'East Side of Lane') rather than a single tree: this is an avenue/streetscape planting, not one collectible point. Register id 2481."
+  },
+  {
+   "name": "East Side, South of Lane",
+   "status": "blocked",
+   "why": "No street address in the register and the name describes a streetscape position ('North Side', 'South Side', 'East Side of Lane') rather than a single tree: this is an avenue/streetscape planting, not one collectible point. Register id 2492."
+  },
+  {
+   "name": "Swamp Cypress",
+   "status": "blocked",
+   "why": "No street address in the register and the name describes a streetscape position ('North Side', 'South Side', 'East Side of Lane') rather than a single tree: this is an avenue/streetscape planting, not one collectible point. Register id 2532."
+  },
+  {
+   "name": "West Side",
+   "status": "blocked",
+   "why": "No street address in the register and the name describes a streetscape position ('North Side', 'South Side', 'East Side of Lane') rather than a single tree: this is an avenue/streetscape planting, not one collectible point. Register id 2486."
+  },
+  {
+   "name": "East Side",
+   "status": "blocked",
+   "why": "No street address in the register and the name describes a streetscape position ('North Side', 'South Side', 'East Side of Lane') rather than a single tree: this is an avenue/streetscape planting, not one collectible point. Register id 2490."
+  },
+  {
+   "name": "West Side",
+   "status": "blocked",
+   "why": "No street address in the register and the name describes a streetscape position ('North Side', 'South Side', 'East Side of Lane') rather than a single tree: this is an avenue/streetscape planting, not one collectible point. Register id 2491."
+  },
+  {
+   "name": "Arbutus or Madrone",
+   "status": "blocked",
+   "why": "No street address in the register and the name describes a streetscape position ('North Side', 'South Side', 'East Side of Lane') rather than a single tree: this is an avenue/streetscape planting, not one collectible point. Register id 2550."
+  },
+  {
+   "name": "Weeping Beech",
+   "status": "blocked",
+   "why": "No street address in the register and the name describes a streetscape position ('North Side', 'South Side', 'East Side of Lane') rather than a single tree: this is an avenue/streetscape planting, not one collectible point. Register id 2551."
+  },
+  {
+   "name": "North Side, South Side",
+   "status": "blocked",
+   "why": "No street address in the register and the name describes a streetscape position ('North Side', 'South Side', 'East Side of Lane') rather than a single tree: this is an avenue/streetscape planting, not one collectible point. Register id 2484."
+  },
+  {
+   "name": "Weeping Willow",
+   "status": "blocked",
+   "why": "No street address in the register and the name describes a streetscape position ('North Side', 'South Side', 'East Side of Lane') rather than a single tree: this is an avenue/streetscape planting, not one collectible point. Register id 2542."
+  },
+  {
+   "name": "North Side, West Half",
+   "status": "blocked",
+   "why": "No street address in the register and the name describes a streetscape position ('North Side', 'South Side', 'East Side of Lane') rather than a single tree: this is an avenue/streetscape planting, not one collectible point. Register id 2477."
+  },
+  {
+   "name": "South Side",
+   "status": "blocked",
+   "why": "No street address in the register and the name describes a streetscape position ('North Side', 'South Side', 'East Side of Lane') rather than a single tree: this is an avenue/streetscape planting, not one collectible point. Register id 2482."
+  },
+  {
+   "name": "East Side",
+   "status": "blocked",
+   "why": "No street address in the register and the name describes a streetscape position ('North Side', 'South Side', 'East Side of Lane') rather than a single tree: this is an avenue/streetscape planting, not one collectible point. Register id 2488."
+  },
+  {
+   "name": "South Side (between Guelph and St. George only)",
+   "status": "blocked",
+   "why": "No street address in the register and the name describes a streetscape position ('North Side', 'South Side', 'East Side of Lane') rather than a single tree: this is an avenue/streetscape planting, not one collectible point. Register id 2479."
+  },
+  {
+   "name": "East Side",
+   "status": "blocked",
+   "why": "No street address in the register and the name describes a streetscape position ('North Side', 'South Side', 'East Side of Lane') rather than a single tree: this is an avenue/streetscape planting, not one collectible point. Register id 2487."
+  },
+  {
+   "name": "South Side",
+   "status": "blocked",
+   "why": "No street address in the register and the name describes a streetscape position ('North Side', 'South Side', 'East Side of Lane') rather than a single tree: this is an avenue/streetscape planting, not one collectible point. Register id 2480."
+  },
+  {
+   "name": "London Plane",
+   "status": "blocked",
+   "why": "No street address in the register and the name describes a streetscape position ('North Side', 'South Side', 'East Side of Lane') rather than a single tree: this is an avenue/streetscape planting, not one collectible point. Register id 2547."
+  },
+  {
+   "name": "East Side",
+   "status": "blocked",
+   "why": "No street address in the register and the name describes a streetscape position ('North Side', 'South Side', 'East Side of Lane') rather than a single tree: this is an avenue/streetscape planting, not one collectible point. Register id 2485."
+  },
+  {
+   "name": "South Side",
+   "status": "blocked",
+   "why": "No street address in the register and the name describes a streetscape position ('North Side', 'South Side', 'East Side of Lane') rather than a single tree: this is an avenue/streetscape planting, not one collectible point. Register id 2478."
+  },
+  {
+   "name": "North Side",
+   "status": "blocked",
+   "why": "No street address in the register and the name describes a streetscape position ('North Side', 'South Side', 'East Side of Lane') rather than a single tree: this is an avenue/streetscape planting, not one collectible point. Register id 2483."
+  },
+  {
+   "name": "China Fir",
+   "status": "blocked",
+   "why": "No street address in the register and the name describes a streetscape position ('North Side', 'South Side', 'East Side of Lane') rather than a single tree: this is an avenue/streetscape planting, not one collectible point. Register id 2533."
+  },
+  {
+   "name": "Northern Red Oak",
+   "status": "blocked",
+   "why": "No street address in the register and the name describes a streetscape position ('North Side', 'South Side', 'East Side of Lane') rather than a single tree: this is an avenue/streetscape planting, not one collectible point. Register id 2531."
+  },
+  {
+   "name": "Turner’s Oak",
+   "status": "blocked",
+   "why": "No street address in the register and the name describes a streetscape position ('North Side', 'South Side', 'East Side of Lane') rather than a single tree: this is an avenue/streetscape planting, not one collectible point. Register id 2539."
+  },
+  {
+   "name": "English Elm",
+   "status": "blocked",
+   "why": "No street address in the register and the name describes a streetscape position ('North Side', 'South Side', 'East Side of Lane') rather than a single tree: this is an avenue/streetscape planting, not one collectible point. Register id 2545."
+  },
+  {
+   "name": "Purple Beech",
+   "status": "blocked",
+   "why": "No street address in the register and the name describes a streetscape position ('North Side', 'South Side', 'East Side of Lane') rather than a single tree: this is an avenue/streetscape planting, not one collectible point. Register id 2546."
+  },
+  {
+   "name": "West Side",
+   "status": "blocked",
+   "why": "No street address in the register and the name describes a streetscape position ('North Side', 'South Side', 'East Side of Lane') rather than a single tree: this is an avenue/streetscape planting, not one collectible point. Register id 2489."
+  }
+ ]
+}
