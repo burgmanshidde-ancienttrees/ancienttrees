@@ -53,8 +53,8 @@
   {
    "place": "Vancouver",
    "country": "Canada",
-   "status": "unscouted",
-   "note": "Named but not reached, 2026-08-13."
+   "status": "found",
+   "note": "FOUND 2026-08-23 (night run), superseding the 2026-08-13 'named but not reached' entry. City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees' (opendata.vancouver.ca, dataset heritage-sites): 51 tree entries, 25 with a real street address and named species (Giant Sequoia, Northern Red Oak, English Oak, Tulip Tree, Fernleaf Beech, Garry Oak, Copper Beech, Caucasian Wing-Nut and more), 26 are streetscape rows with no address (blocked, not single collectible points). Licence: Open Government Licence - Vancouver, based on OGL-BC 2.0, free for any lawful use including commercial, attribution required, confirmed by fetching opendata.vancouver.ca/pages/licence/ directly. NO COORDINATES in the source, only street address (often a number range), so this is not import-ready as a register: saved as data/leads/vancouver.json instead. Next step for a build/verify pass: geocode each address, then run the normal two-source verify pass."
   },
   {
    "place": "Los Angeles",

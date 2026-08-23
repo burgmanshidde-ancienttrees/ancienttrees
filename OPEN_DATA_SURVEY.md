@@ -2284,6 +2284,34 @@ a session using the Browser pane (a real browser, not curl/WebFetch) should
 be able to clear the challenge and read the terms-of-use and the Excel
 download properly. Worth a short follow-up, not a from-zero rescan.
 
+### City of Vancouver Heritage Register, "Landscape Resources Trees": USABLE, found 2026-08-23, leads only (no coordinates)
+
+A different, better source than the BC Big Tree Registry above, found while
+scouting Vancouver (one of Hidde's 17 named cities, 2026-08-19) as a night
+run: the city's own Heritage Register, `opendata.vancouver.ca`, dataset
+`heritage-sites`, filtered to `category = "LANDSCAPE RESOURCES Trees"`. 51
+rows, semantically filtered by the city itself (heritage-designated
+landscape resources, not a bulk street-tree inventory), fetched clean via
+`opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/
+exports/json`, no bot-blocking. **Licence: Open Government Licence -
+Vancouver**, based on OGL-BC 2.0, confirmed by fetching
+`opendata.vancouver.ca/pages/licence/` directly: free to copy, modify,
+publish, translate, adapt, distribute or otherwise use for any lawful
+purpose including commercial, with attribution to the source. A clean CC
+BY-equivalent.
+
+**What it does not have: coordinates.** Every row carries a street address
+(often a number range, e.g. "1450-1460 W 49TH AV") rather than a point, so
+this cannot be imported to `data/registers/` as-is. 25 of the 51 rows name
+an individual tree with a real address (Giant Sequoia, Northern Red Oak,
+English Oak, Tulip Tree, Fernleaf Beech, Garry Oak, two Copper Beeches,
+Caucasian Wing-Nut, Douglas Firs, and more); the other 26 are streetscape
+rows ("North Side", "South Side of Lane") with no address at all, blocked
+as not a single collectible point. Saved as `data/leads/vancouver.json` in
+the standard leads/blocked split. Next step for a build or verify pass:
+geocode each of the 25 addresses, then run the normal two-source verify
+pass; no further scouting needed for Vancouver's tree layer.
+
 ### Ontario Heritage Tree Program (Toronto): DEAD END, no exportable data at all
 
 Checked both partner sites, `forestscanada.ca/en/program/heritage-tree`
