@@ -454,6 +454,12 @@
    "country": "Norway",
    "status": "stalled",
    "note": "SCOUTED 2026-08-23. Miljodirektoratet vern ArcGIS service (kart.miljodirektoratet.no/arcgis/rest/services/vern/mapserver/0), verneform=Naturminne, 236 nationally, 18 in Oslo, NLOD licence, WGS84 geometry needs no conversion. Mixed category (trees plus geological features), address-pattern names are the tell. Stalled on species/description data: no field in the map service, faktaark.naturbase.no is a JS SPA WebFetch cannot render, its network API (felles.naturbase.no/api/dokument?objektId=<id>) returns photos/documents but not description text, and one checked record (VV00002163) had a null verneforskrift (protection-decision PDF) field. That same check surfaced a live finding: one of two trees at that specific site is already dead per a linked Street View note, useful proof the dokument API is worth checking before shipping any of these blind. Full detail in OPEN_DATA_SURVEY.md."
+  },
+  {
+   "place": "Edmonton",
+   "country": "Canada",
+   "status": "stalled",
+   "note": "SCOUTED 2026-08-23. Alberta Tree Register (albertatree.ca), 464 trees, 87 percent Edmonton in a sample check, real per-tree data (species, age, condition, coordinates, nomination story) via its own public Airtable API (api.airtable.com/v0/appQryFCb5Fi3nZ4c/tbljBWCUMUSwrF2co, token hardcoded in the public github.com/AlbertaTreeRegister/Map repo, MIT licensed code). Stalled: the MIT licence covers the code not clearly the data, and this is a crowdsourced nomination register (not a government survey) with visible reliability issues in the sample (a hearsay-based description, a 0,0 coordinate). Edmonton is not on Hiddes named list so from-zero use is off regardless. Full detail in OPEN_DATA_SURVEY.md."
   }
  ],
  "out_of_focus": {

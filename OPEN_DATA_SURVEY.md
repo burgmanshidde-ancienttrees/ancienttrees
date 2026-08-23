@@ -2767,3 +2767,39 @@ condition the normal from-zero way, the dokument API's photos as a
 first check on whether the tree is even still alive before spending time on
 it.
 
+## Edmonton, Alberta: found, stalled on licence and reliability (2026-08-23)
+
+`scout_next.py --target` moved to Edmonton next (#67, not published, no
+register supply). Found the **Alberta Tree Register**
+(albertatree.ca / albertatreeregister.github.io), a public map of Alberta's
+heritage, veteran, uncommon and "most loved" trees, 464 entries, the
+overwhelming majority in Edmonton (87 of the first 100 records checked).
+
+**The data is real, rich and reachable, but through the site's own public
+Airtable API rather than a downloadable file.** The map's own client-side JS
+(github.com/AlbertaTreeRegister/Map, MIT-licensed repo) calls
+`api.airtable.com/v0/appQryFCb5Fi3nZ4c/tbljBWCUMUSwrF2co` with a personal
+access token hardcoded in that same public repo, i.e. the same call any
+visitor's browser already makes to render the public map. Queried it
+directly and got full addresses, species, age, condition, height/girth
+measurements and a free-text nomination story per tree.
+
+**Two reasons this stays stalled rather than imported.** First, licence: the
+MIT licence on the repo covers the CODE, not explicitly the tree data itself,
+and no separate data licence statement was found; CLAUDE.md's bar needs a
+verified open licence before anything ships, so this needs either an
+explicit data licence somewhere on the site or a direct question to whoever
+runs the project before it counts as usable. Second, reliability: this is a
+crowdsourced nomination register ("anyone can nominate their favourite
+Alberta tree"), not a government survey, and the sample already showed the
+tell-tales of that: one record's description is a transcribed phone-call
+recollection about a neighbour's guess at a tree's age ("Miss Gail Rankin
+thinks..."), and another (a Calgary horse chestnut) carries coordinates of
+0,0. Treat any entry as a lead needing the normal two-source verification,
+not a register fact.
+
+**Edmonton itself is not on Hidde's 2026-08-19 named list**, so from-zero
+research there, including turning these leads into verified trees, is off
+until he names it or a licence answer changes the register's status to
+usable outright.
+
