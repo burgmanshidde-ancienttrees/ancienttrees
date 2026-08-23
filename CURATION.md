@@ -1636,3 +1636,27 @@ POI filter that was already there. Real parity means moving the app to MapLibre
 Native so both surfaces render the same style file, which is a new dependency in
 the product (hard rule 5, his yes) and rework of the clustering that TreeMap.swift
 chose MKMapView for in the first place. Recorded here rather than decided.
+
+### Correction: offline was NOT "essentially ready", 2026-08-23
+
+DECISIONS.md's 2026-08-18 record of the paywall says of the four promises that
+"Offline is the one that is essentially ready, because the feeds carry
+everything but the pictures". That is true of the DATA and false of the MAP, and
+the promise sold is "Download interactive maps and routes to explore with
+confidence, even deep in the woods or abroad."
+
+Checked today: there are zero lines of tile-caching code in the app, no
+MKTileOverlay and no offline packs, and MapKit offers no API for any of it.
+Apple's tiles cannot be pre-downloaded and their terms do not permit caching
+them. Meanwhile `Feature.offlineDownload` already exists in Entitlement.swift
+with the ask "Keep this city in your pocket", and Profile.swift already sells
+"the whole map offline".
+
+So offline maps are not a MapKit feature we have not got round to. They are the
+one promise that the current renderer makes impossible, which turns MapLibre
+Native from a styling preference into the only route to a feature already
+written into the paywall copy and already surfaced in the app's own UI.
+
+Checked at the same time, because it would have been the blocker: OpenFreeMap
+place no limit on requests, allow commercial use, ask only for attribution, and
+publish weekly planet extracts in MBTiles. Nothing in the way.
