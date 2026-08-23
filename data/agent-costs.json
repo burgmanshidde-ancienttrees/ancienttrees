@@ -1033,7 +1033,7 @@
     "kind": "scout",
     "tokens": 124675,
     "trees": 0,
-    "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+    "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
    },
    {
     "target": "barcelona",
@@ -2985,6 +2985,17 @@
     "tokens": 70000,
     "trees": 8,
     "note": "Deepened two register clusters (Kleverlaan cemetery, Frederikspark/Houtplein) via netherlands-lrmb.json plus WebSearch/WebFetch corroboration; 8 delivered flagged/approximate, 4 left as leads, 2 pre-existing leads still unresolved.",
+    "wasted": 0,
+    "brief_wrong": false
+   }
+  ],
+  "2026-08-23": [
+   {
+    "target": "photo sweep (recheck)",
+    "kind": "photo",
+    "tokens": 0,
+    "trees": 0,
+    "note": "free API sweep, scripts/photo_hunt.py --recheck: 40 trees swept, several with new open-licence candidates queued for a future viewing session (never judged here per runner egress-block rule)",
     "wasted": 0,
     "brief_wrong": false
    }
