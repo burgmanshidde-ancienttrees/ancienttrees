@@ -178,13 +178,6 @@
    "trees": 5
   },
   {
-   "city": "Seville",
-   "country": "Spain",
-   "slug": "seville",
-   "status": "published",
-   "trees": 20
-  },
-  {
    "city": "The Hague",
    "country": "Netherlands",
    "slug": "the-hague",
@@ -220,6 +213,13 @@
    "status": "published",
    "demand_views_90d": 119586,
    "trees": 4
+  },
+  {
+   "city": "Seville",
+   "country": "Spain",
+   "slug": "seville",
+   "status": "published",
+   "trees": 37
   },
   {
    "city": "Brisbane",
@@ -368,7 +368,7 @@
    "slug": "haarlem",
    "status": "published",
    "demand_views_90d": 33960,
-   "trees": 13
+   "trees": 21
   },
   {
    "city": "Turin",
@@ -401,7 +401,7 @@
    "slug": "cork",
    "status": "published",
    "demand_views_90d": 101405,
-   "trees": 5
+   "trees": 13
   },
   {
    "city": "Oslo",

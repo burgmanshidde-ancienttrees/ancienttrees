@@ -3,9 +3,9 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Haarlem's oldest trees mostly grow from the same source: fashionable 19th-century Dutch landscape design, and especially one family, the Zochers, who reshaped a demolished fortress line into Kenaupark, redesigned the medieval Haarlemmerhout, and laid out the Kleverlaan cemetery in the English landscape style within a few decades of each other. Older still is a beech carved by an exiled king passing time at his own government estate, and a plane tree thick enough to need several people to encircle it, growing in the garden of the province's own seat of government.",
-  "meta_description": "Haarlem's oldest trees include a beech carved by an exiled king and the province's own thickest plane. 13 verified locations, real stories.",
+  "meta_description": "Haarlem's oldest trees include a beech carved by an exiled king and the province's own thickest plane. 21 verified locations, real stories.",
   "question_answer": "Haarlem's oldest documented tree is the Lodewijk Napoleon Beech in the Haarlemmerhout, carved with a crowned royal monogram by the exiled King of Holland sometime between 1808 and 1810. The carving itself has now grown over almost entirely, but the tree, likely well over 230 years old, still stands in the Netherlands' oldest public park.",
-  "question_meta": "A beech carved by an exiled king between 1808 and 1810 is Haarlem's oldest documented tree, its carving now nearly grown over. All 13.",
+  "question_meta": "A beech carved by an exiled king between 1808 and 1810 is Haarlem's oldest documented tree, its carving now nearly grown over. All 21.",
   "question_context": "Haarlem's age claims split along a clear line: the Lodewijk Napoleon Beech has an actual historical event pinned to it, a specific exiled king carving a specific mark in a specific two-year window, which is why it anchors this list as the oldest despite nobody having counted its rings. The other three candidates are honestly less certain. Haarlem's thickest tree, the Provinciehuis plane, has no recorded planting date at all; its size alone suggests a 19th-century origin, but that is inference from girth rather than a documented fact. The Kleverlaan cemetery's yew and Kenaupark's copper beech both belong to the Zocher family's 19th-century landscape schemes, laid out within a few decades of each other, and both are old enough to anchor their respective grounds without either source giving a precise age. None of that uncertainty is unusual for city trees planted before municipal record-keeping became routine; it simply means the crowned R carved into one beech's bark, however faded now, remains the single most specific piece of evidence this city's tree history has to offer.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Haarlem's remarkable trees free to visit?",
-      "a": "Almost all. Twelve of the thirteen stand in public parks or a public cemetery, open during normal hours at no charge; the exception is a Caucasian wingnut in a private villa garden at Statenbolwerk, visible from the public footpath outside but not something you can walk up to."
+      "a": "Almost all. Twenty of the twenty-one stand in public parks or a public cemetery, open during normal hours at no charge; the exception is a Caucasian wingnut in a private villa garden at Statenbolwerk, visible from the public footpath outside but not something you can walk up to."
     },
     {
       "q": "What is Haarlem's thickest tree?",
@@ -425,6 +425,232 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      }
+    },
+    {
+      "id": "haa_014",
+      "name": "The Ash of Kleverlaan",
+      "species": "European Ash (Fraxinus excelsior)",
+      "age_estimate": "roughly 140-155 years",
+      "age_min": 140,
+      "age_max": 155,
+      "girth_cm": null,
+      "location": {
+        "address": "Algemene Begraafplaats Kleverlaan, Kleverlaan 9, Haarlem",
+        "latitude": 52.39496,
+        "longitude": 4.639907,
+        "neighbourhood": "Kleverlaan"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1696652, 'Es Kleverlaan')",
+        "https://www.ivn.nl/afdeling/zuid-kennemerland/natuuractiviteiten/monumentale-bomen-op-de-begraafplaats/ (confirms the cemetery as a designated stop for monumental-tree walks; general corroboration of setting, not tree-specific)"
+      ],
+      "access": "Free, public cemetery (Algemene Begraafplaats Kleverlaan), open during normal daytime hours",
+      "transport": "Tram or bus to Kleverpark, then a short walk, roughly 15-20 minutes from central Haarlem (same stop as the already-published Kleverlaan Yew, haa_003)",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The general cemetery on the Kleverlaan is where Haarlem keeps its best trees, and this ash is one of the reasons guided tree walks stop here at all. It stands in the oldest section, on the south side, at a bend in the path with graves gathered close around its roots. The national register of monumental trees puts its planting somewhere between 1870 and 1880, so it is roughly 140 to 155 years old, and that band is as precise as the record allows. Ash rarely gets to be the tree people notice. It has no autumn colour worth the name, the bark stays grey and quiet, and the leaves drop early and more or less all at once. What it has instead is height and a light, open crown that lets the grass grow right up to the trunk, and after a century and a half over the same graves this one has plenty of both. The register is the only source that names this particular tree, which is why it is listed here with its dates attributed rather than asserted; the cemetery's beeches, cedar, walnut and yew are far better documented than its ash. If you know when it went in, or who planted it, tell us. It stands about a hundred metres from the Kleverlaan yew, so the two make one stop rather than two."
+    },
+    {
+      "id": "haa_015",
+      "name": "The American Oak of Kleverlaan",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "roughly 115-125 years",
+      "age_min": 115,
+      "age_max": 125,
+      "girth_cm": null,
+      "location": {
+        "address": "Algemene Begraafplaats Kleverlaan, near the entrance, Haarlem",
+        "latitude": 52.395284,
+        "longitude": 4.638636,
+        "neighbourhood": "Kleverlaan"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1696667, 'Amerikaanse eik Kleverlaan')",
+        "https://www.rodi.nl/haarlem/nieuws/397403/wandelen-langs-monumentale-bomen-in-hout-bolwerken-en-kleverlaan (independently confirms this cemetery is one of three stops in the Bomenstichting's monumental-tree walking guide, general corroboration of the walk rather than the individual tree)"
+      ],
+      "access": "Free, public cemetery, open during normal daytime hours",
+      "transport": "Tram or bus to Kleverpark, then a short walk, roughly 15-20 minutes from central Haarlem",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Come in through the Kleverlaan gate and the first thing you meet is an avenue of wingnuts. This American oak stands one connecting path to the left of it, which is exactly where the register tells you to look. Quercus rubra is not a Dutch tree. It came from the eastern seaboard of North America and Dutch parks and cemeteries planted it widely from the nineteenth century onward, largely for what it does in autumn. Native oaks go brown and hang on to the leaf half the winter. This one goes deep red in late October and lets go. The register dates its planting to between 1900 and 1910, making it roughly 115 to 125 years old, which is young for a monumental tree and respectable for a red oak in a Dutch cemetery. It has stood beside the gate for more than a century of funerals. The cemetery is one of three stops on the Bomenstichting's monumental tree walk through Haarlem, and this oak is one of the reasons the route comes here, though the national register is still the only source that records the tree itself. Take the dates as the register's rather than as a measurement. Its leaves are the easy check: broad, with shallow lobes ending in fine bristle points, and far bigger than anything a native oak produces.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October and November, when the leaves turn deep red before they let go"
+      }
+    },
+    {
+      "id": "haa_016",
+      "name": "The Black Locust of Kleverlaan",
+      "species": "Black Locust (Robinia pseudoacacia)",
+      "age_estimate": "roughly 95-105 years",
+      "age_min": 95,
+      "age_max": 105,
+      "girth_cm": null,
+      "location": {
+        "address": "Algemene Begraafplaats Kleverlaan, near the entrance, Haarlem",
+        "latitude": 52.395431,
+        "longitude": 4.638389,
+        "neighbourhood": "Kleverlaan"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1696668, 'Robinia Kleverlaan')"
+      ],
+      "access": "Free, public cemetery, open during normal daytime hours",
+      "transport": "Tram or bus to Kleverpark, then a short walk, roughly 15-20 minutes from central Haarlem",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "This black locust has its feet in a hedge. The register puts it in the first plot on the left as you come through the entrance, along the path, with the base of the trunk standing in clipped greenery, which is an odd berth for a tree of nearly a century. Robinia pseudoacacia arrived in Europe from the Appalachians in the early seventeenth century and carries the name of Jean Robin, gardener to the French kings. It spread across the continent as a street and park tree because it grows fast, tolerates poor thin soil, and smells extraordinary for about two weeks a year. In late May and early June it hangs white pea flowers in chains and the scent carries a long way down a quiet path. The rest of the year it is a scruffier proposition: deeply furrowed bark like twisted rope, a crown that looks half assembled, limbs that snap in storms. The register dates the planting to between 1920 and 1930, so roughly 95 to 105 years, and it is the only record we have found of this particular tree. No second source names it, so read the age as the register's estimate. It stands within a hundred metres of the red oak and the silver lime, which makes all three one short loop just inside the gate.",
+      "best_time": {
+        "months": [
+          5,
+          6
+        ],
+        "kind": "flowers",
+        "label": "late May and early June, when the white flower chains open and the scent carries down the path"
+      }
+    },
+    {
+      "id": "haa_017",
+      "name": "The Silver Lime of Kleverlaan",
+      "species": "Silver Lime (Tilia tomentosa)",
+      "age_estimate": "roughly 175-185 years",
+      "age_min": 175,
+      "age_max": 185,
+      "girth_cm": null,
+      "location": {
+        "address": "Algemene Begraafplaats Kleverlaan, oldest section, Haarlem",
+        "latitude": 52.395268,
+        "longitude": 4.639921,
+        "neighbourhood": "Kleverlaan"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1696657, 'Zilverlinde Kleverlaan')"
+      ],
+      "access": "Free, public cemetery, open during normal daytime hours",
+      "transport": "Tram or bus to Kleverpark, then a short walk, roughly 15-20 minutes from central Haarlem",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Dead bumblebees turn up under silver limes every summer, and botanists have argued about why for a century. The old explanation was that the nectar of Tilia tomentosa is mildly toxic to bees. The current one is duller and sadder: the tree flowers when almost nothing else does, so late season bumblebees with nothing left to visit work it until they run out. Either way, this is a tree that draws insects after the rest of the city has finished flowering. It stands in the oldest part of the Kleverlaan cemetery, on a path beside the water. The national register puts its planting between 1840 and 1850, which makes it roughly 175 to 185 years old and one of the oldest things growing on this ground. Turn a leaf over and the underside is white with felt, which is where the name comes from and why the whole crown flickers pale when wind moves through it. It is also why the species survives city dirt so well: the felt sheds it. The register is the only source we have located for this tree. Nobody has published a girth or a measured age, so the band above is the register's estimate rather than anyone's tape. If you have measured it, we would like the number.",
+      "best_time": {
+        "months": [
+          7
+        ],
+        "kind": "flowers",
+        "label": "July, when it flowers weeks after every other lime in the city"
+      }
+    },
+    {
+      "id": "haa_018",
+      "name": "The Zocher Beeches",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "roughly 175-225 years",
+      "age_min": 175,
+      "age_max": 225,
+      "girth_cm": null,
+      "location": {
+        "address": "Algemene Begraafplaats Kleverlaan, east side near Schoterweg, Haarlem",
+        "latitude": 52.395191,
+        "longitude": 4.640764,
+        "neighbourhood": "Kleverlaan"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1691633, 'Zocherbeuk', n_trees=3)",
+        "https://www.dodenakkers.nl/noord-holland/kleverlaan.html and https://www.online-begraafplaatsen.nl/begraafplaats/914/Begraafplaats-Kleverlaan-Haarlem (both independently confirm the graves of father and son Zocher, the cemetery's own landscape designers, lie in this cemetery near Schoterweg, matching the register's stated location for this beech group; general/contextual corroboration of the naming, not a direct tree-specific source)"
+      ],
+      "access": "Free, public cemetery, open during normal daytime hours",
+      "transport": "Tram or bus to Kleverpark, then a short walk, roughly 15-20 minutes from central Haarlem",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The two men who laid out this cemetery are buried in it, and three beeches carry their name. Father and son Zocher were the landscape architects of the Kleverlaan grounds, and two cemetery records place their graves on the east side, near Schoterweg. The register lists three European beeches standing together at that spot under a single entry: Zocherbeuk, the Zocher beech. Whether the trees were planted at the graves or the graves placed among beeches already growing is not something any source we could reach states plainly, so we are not going to pretend otherwise. The register gives a planting band of 1800 to 1850, which is roughly 175 to 225 years, a range wide enough to allow either version. What is not in question is what they do to the ground. Mature beech keeps its lowest limbs low and sweeps them out sideways, and three of them together make one dark room with a floor of husks and nothing growing in it. That is the tree working: beech leaves cast the deepest shade of any European broadleaf, and very little survives underneath. In November the crowns go copper together. In February, bare, the grey trunks are the best thing on the path. A figure of four metres round circulates for this group, and we have not been able to confirm it.",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "November, when three crowns go copper at once and the light under them turns orange"
+      }
+    },
+    {
+      "id": "haa_019",
+      "name": "The Plane of Frederikspark",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 155-165 years",
+      "age_min": 155,
+      "age_max": 165,
+      "girth_cm": 550,
+      "location": {
+        "address": "Frederikspark, opposite the former ABN bank office, Houtplein, Haarlem",
+        "latitude": 52.374343,
+        "longitude": 4.630968,
+        "neighbourhood": "Frederikspark / Houtplein"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1686319, 'Gewone plataan Houtplein')",
+        "https://www.boomkronen.eu/node/99 (Pius Floris professional tree-care record: stem diameter 175 cm, height 24 m, for the plane tree at Frederikspark)"
+      ],
+      "access": "Free, public park, open at any time",
+      "transport": "About 20-25 minute walk from Haarlem Centraal Station, or a short bus ride to Houtplein",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "story": "Five and a half metres around the trunk and twenty four metres up, on a scrap of green between a busy junction and the Houtplein bus stops. A professional tree care firm measured this plane at 175 centimetres of stem diameter, which is where that girth figure comes from, and the national register dates the planting to between 1860 and 1870, so roughly 155 to 165 years. It was here long before the traffic was. London plane is the tree cities keep when they keep nothing else, and this one shows why. It takes exhaust, compacted soil, hard pruning and root damage and carries on. Rather than trying to breathe through a century of grime it sheds its bark in plates, which is why the trunk is mottled cream, olive and grey instead of uniformly filthy. The species is a hybrid, an accident between the American and the oriental plane that turned up in Europe in the seventeenth century and turned out to be tougher than either parent. Stand under it in winter and the frame reads clearly: a short heavy bole, then limbs going out almost horizontally before they turn up, with bobbled seed balls hanging on long strings until spring. Two independent sources agree on this tree, which makes it the best documented entry in the Frederikspark and the easiest one to find."
+    },
+    {
+      "id": "haa_020",
+      "name": "The Oak Pair of Frederikspark",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 180-190 years",
+      "age_min": 180,
+      "age_max": 190,
+      "girth_cm": null,
+      "location": {
+        "address": "Frederikspark, west side, Haarlem",
+        "latitude": 52.373487,
+        "longitude": 4.631399,
+        "neighbourhood": "Frederikspark"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1696658, 'Zomereiken Frederikspark', n_trees=2)"
+      ],
+      "access": "Free, public park, open at any time",
+      "transport": "About 20-25 minute walk from Haarlem Centraal Station, or a short bus ride to Houtplein",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Two pedunculate oaks stand together on the west side of the Frederikspark, and on the register's own dating they are the oldest things in it. The planting band is 1840 to 1850, so roughly 180 to 190 years, a couple of decades ahead of the big plane at the Houtplein end. Old oaks are scarce in Dutch cities for an unromantic reason: Quercus robur was the timber tree of the Republic, worth more felled than standing, and anything straight enough went into ships, locks and sluice gates. These two were left alone long enough to stop being timber and start being furniture for a park. A pair planted close grows into a single argument about light. Each crown leans away from the other and the branches on the facing sides stay short, so from a distance the two read as one lopsided tree and only resolve into two when you walk round them. In a good mast year the grass beneath is covered in acorns by October. The national register is the only source we have found for either tree, so the age is its estimate rather than a measured figure, and nobody has published a girth for them. If you get a tape around a trunk here, we would like to hear the number."
+    },
+    {
+      "id": "haa_021",
+      "name": "The Pin Oak of Frederikspark",
+      "species": "Pin Oak (Quercus palustris)",
+      "age_estimate": "roughly 180-190 years",
+      "age_min": 180,
+      "age_max": 190,
+      "girth_cm": null,
+      "location": {
+        "address": "Frederikspark, along the north-side path, Haarlem",
+        "latitude": 52.373795,
+        "longitude": 4.632188,
+        "neighbourhood": "Frederikspark"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1696645, 'Moeraseik Frederikspark')"
+      ],
+      "access": "Free, public park, open at any time",
+      "transport": "About 20-25 minute walk from Haarlem Centraal Station, or a short bus ride to Houtplein",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Pin oak reached European gardens at the start of the nineteenth century, which means this one, if the register's dating holds, belongs to the first generation planted here. The band is 1840 to 1850, so roughly 180 to 190 years old, and it stands along the path in the middle of the north side of the Frederikspark. Quercus palustris is easy once you have seen one. The lower branches sweep down toward the ground instead of reaching for the light, the leaves are cut into deep narrow lobes with bristle tips, and the crown keeps a tidy conical outline far longer than any native oak manages. Then in late October it turns scarlet and holds the colour for weeks after the limes and the ashes have given up. The name has nothing to do with the leaves. It comes from the short hard pin-like stubs of dead branchlets left along the trunk and the inner limbs, a habit the species has and most oaks do not. The tree is a swamp oak by origin, from the wet bottomlands of the American Midwest, which is one reason it has done so well in a country built on waterlogged ground. The national register is the only source we have found for it, so read the age band as its estimate. No girth has been published.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when it goes scarlet and holds it for weeks"
       }
     }
   ]
