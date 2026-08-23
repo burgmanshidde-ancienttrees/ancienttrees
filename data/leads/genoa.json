@@ -1,47 +1,47 @@
 {
-  "city": "Genoa",
-  "country": "Italy",
-  "city_slug": "genoa",
-  "researched": "2026-08-06",
-  "note": "Verification pass on the 14 register candidates the brief supplied. 10 delivered to data/research/genoa-verified.json (most flagged, since no register has an age field for Italy and this pass could not find dated corroboration for most). The 4 below either lacked a second source or sat too far from the walkable clusters to justify chasing this pass. City has NOT been published yet; floor of 4 verified trees is cleared by the delivery file alone.",
-  "leads": [
-    {
-      "name": "Chilean Wine Palm of Villa Durazzo Pallavicini",
-      "species": "Jubaea chilensis",
-      "lat": 44.429869,
-      "lng": 8.817631,
-      "status": "lead",
-      "why": "Register only (MASAF sheet 11/D969/GE/07, girth 385cm, height 14m). The Ministry of Culture's own page on the park names the camphor and the cedar specifically but not this palm, so no independent corroboration turned up this pass. Same park as the two delivered trees (gnv_009, gnv_010); worth a second look before the city page ships, since a third tree here would strengthen an already-good pocket."
-    },
-    {
-      "name": "Second Cinnamomum glanduliferum of Villa Durazzo Pallavicini",
-      "species": "Cinnamomum glanduliferum",
-      "lat": 44.429869,
-      "lng": 8.817631,
-      "status": "lead",
-      "why": "Register only (MASAF sheet 12/D969/GE/07, girth 392cm, height 20m), same coordinates as the palm above. Same park already has one Cinnamomum-family tree delivered (the camphor, gnv_009) and one already-flagged Cinnamomum glanduliferum at Via Romolo Gessi (gnv_004); a third of similar species this close together risks reading as padding rather than a distinct entry unless it's visibly a different, separately worthwhile specimen."
-    },
-    {
-      "name": "Bidwill's Pine (Queensland Pine) at Villa Groppallo, Nervi",
-      "species": "Araucaria bidwillii",
-      "lat": 44.382628,
-      "lng": 9.043436,
-      "status": "lead",
-      "why": "Register only (MASAF sheet 04/D969/GE/07, girth 608cm, height 28m; also appears in an older Liguria regional PDF, sheet 04/D969/GE/07, girth 608cm/height 28m, at 'Nervi - Villa Groppallo', criteria age/size + botanical rarity - so this one does have a second source, it was simply too far from the other clusters to chase inside this pass's window). Nervi is roughly 10km east of the centre and does not join any of the other candidate clusters; it would need its own separate walk of several trees to justify inclusion, not a lone entry. Note there is also a companion register entry at Nervi, 'Villa Gropallo' (girth 396cm, a Chilean wine palm, sheet 01/D969/GE/07) a few hundred metres away, so Nervi may itself be a small viable cluster if researched properly."
-    },
-    {
-      "name": "Cedar of Lebanon, Piazza Chiesa Acquasanta",
-      "species": "Cedrus libani",
-      "lat": 44.457933,
-      "lng": 8.770197,
-      "status": "lead",
-      "why": "Register only (MASAF sheet 16/D969/GE/07, girth 461cm, height 25m), 13.2km from the centre point in the Val Varenna hills, and does not join any other candidate. Larger girth than either Villa Pallavicini cedar, so worth a look if Acquasanta ever gets its own research pass, but not part of a walkable cluster this pass could support."
-    }
-  ],
-  "blocked": [],
-  "open_questions": [
-    "No cluster in this batch is unambiguously 'central Genoa and clearly walkable': the 3 centro storico trees (Via Garibaldi, Via Mogadiscio, Via di San Pantaleo) sit 2.0-3.8km apart from each other, too far to read as one walk. Villa Serra (Sant'Olcese/Comago, 4 trees within 60m) is the tightest cluster of the whole set but sits in a separate comune outside Genoa, transit time from centre not confirmed this pass (estimate 35-50 min, may exceed the 30-min day-trip boundary). Villa Durazzo Pallavicini (Pegli, 2 confirmed trees ~150m apart, comfortably within Genoa and well within 30 minutes by train) is the safest real 'stand here and see two of them' pocket in the batch, but only reaches two trees without the leads above.",
-    "Whoever composes the Genoa page needs to decide: (a) whether Sant'Olcese/Comago counts as 'Genoa' at all given the distance and comune boundary, honestly labelled per the day-trip rule if included, or gets left for its own future page; (b) whether the 3 scattered centro storico single trees ship as standalone points (each is a genuine one-tree destination) rather than a pretend 'walk'; (c) whether it's worth a short follow-up pass on Nervi (2 register trees a few hundred metres apart, per the leads above) to build a third small pocket.",
-    "Access is unconfirmed for 3 of the 10 delivered trees (Via Garibaldi courtyard visibility, Via Mogadiscio public vs private ground, Via di San Pantaleo and Via Romolo Gessi street context) - worth a quick photo/streetview check before publishing rather than a full re-research."
-  ]
+ "city": "Genoa",
+ "country": "Italy",
+ "city_slug": "genoa",
+ "researched": "2026-08-06",
+ "note": "Verification pass on the 14 register candidates the brief supplied. 10 delivered to data/research/genoa-verified.json (most flagged, since no register has an age field for Italy and this pass could not find dated corroboration for most). The 4 below either lacked a second source or sat too far from the walkable clusters to justify chasing this pass. City has NOT been published yet; floor of 4 verified trees is cleared by the delivery file alone.",
+ "leads": [
+  {
+   "name": "Chilean Wine Palm of Villa Durazzo Pallavicini",
+   "species": "Jubaea chilensis",
+   "lat": 44.429869,
+   "lng": 8.817631,
+   "status": "lead",
+   "why": "Register only (MASAF sheet 11/D969/GE/07, girth 385cm, height 14m). The Ministry of Culture's own page on the park names the camphor and the cedar specifically but not this palm, so no independent corroboration turned up this pass. Same park as the two delivered trees (gnv_009, gnv_010); worth a second look before the city page ships, since a third tree here would strengthen an already-good pocket."
+  },
+  {
+   "name": "Second Cinnamomum glanduliferum of Villa Durazzo Pallavicini",
+   "species": "Cinnamomum glanduliferum",
+   "lat": 44.429869,
+   "lng": 8.817631,
+   "status": "lead",
+   "why": "Register only (MASAF sheet 12/D969/GE/07, girth 392cm, height 20m), same coordinates as the palm above. Same park already has one Cinnamomum-family tree delivered (the camphor, gnv_009) and one already-flagged Cinnamomum glanduliferum at Via Romolo Gessi (gnv_004); a third of similar species this close together risks reading as padding rather than a distinct entry unless it's visibly a different, separately worthwhile specimen."
+  },
+  {
+   "name": "Bidwill's Pine (Queensland Pine) at Villa Groppallo, Nervi",
+   "species": "Araucaria bidwillii",
+   "lat": 44.382628,
+   "lng": 9.043436,
+   "status": "resolved",
+   "why": "Register only (MASAF sheet 04/D969/GE/07, girth 608cm, height 28m; also appears in an older Liguria regional PDF, sheet 04/D969/GE/07, girth 608cm/height 28m, at 'Nervi - Villa Groppallo', criteria age/size + botanical rarity - so this one does have a second source, it was simply too far from the other clusters to chase inside this pass's window). Nervi is roughly 10km east of the centre and does not join any of the other candidate clusters; it would need its own separate walk of several trees to justify inclusion, not a lone entry. Note there is also a companion register entry at Nervi, 'Villa Gropallo' (girth 396cm, a Chilean wine palm, sheet 01/D969/GE/07) a few hundred metres away, so Nervi may itself be a small viable cluster if researched properly. RESOLVED 2026-08-23: published as gnv_011."
+  },
+  {
+   "name": "Cedar of Lebanon, Piazza Chiesa Acquasanta",
+   "species": "Cedrus libani",
+   "lat": 44.457933,
+   "lng": 8.770197,
+   "status": "resolved",
+   "why": "Register only (MASAF sheet 16/D969/GE/07, girth 461cm, height 25m), 13.2km from the centre point in the Val Varenna hills, and does not join any other candidate. Larger girth than either Villa Pallavicini cedar, so worth a look if Acquasanta ever gets its own research pass, but not part of a walkable cluster this pass could support. RESOLVED 2026-08-23: published as gnv_012. A second, larger monumental tree (a coast redwood, sheet 18/D969/GE/07) stands ~55m away in the same piazza, not yet researched."
+  }
+ ],
+ "blocked": [],
+ "open_questions": [
+  "No cluster in this batch is unambiguously 'central Genoa and clearly walkable': the 3 centro storico trees (Via Garibaldi, Via Mogadiscio, Via di San Pantaleo) sit 2.0-3.8km apart from each other, too far to read as one walk. Villa Serra (Sant'Olcese/Comago, 4 trees within 60m) is the tightest cluster of the whole set but sits in a separate comune outside Genoa, transit time from centre not confirmed this pass (estimate 35-50 min, may exceed the 30-min day-trip boundary). Villa Durazzo Pallavicini (Pegli, 2 confirmed trees ~150m apart, comfortably within Genoa and well within 30 minutes by train) is the safest real 'stand here and see two of them' pocket in the batch, but only reaches two trees without the leads above.",
+  "Whoever composes the Genoa page needs to decide: (a) whether Sant'Olcese/Comago counts as 'Genoa' at all given the distance and comune boundary, honestly labelled per the day-trip rule if included, or gets left for its own future page; (b) whether the 3 scattered centro storico single trees ship as standalone points (each is a genuine one-tree destination) rather than a pretend 'walk'; (c) whether it's worth a short follow-up pass on Nervi (2 register trees a few hundred metres apart, per the leads above) to build a third small pocket.",
+  "Access is unconfirmed for 3 of the 10 delivered trees (Via Garibaldi courtyard visibility, Via Mogadiscio public vs private ground, Via di San Pantaleo and Via Romolo Gessi street context) - worth a quick photo/streetview check before publishing rather than a full re-research."
+ ]
 }

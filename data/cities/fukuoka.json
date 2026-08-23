@@ -5,7 +5,7 @@
   "intro": "Fukuoka's oldest trees stand watch over shrines the city grew up around, not the other way around. A cedar Empress Jingu is said to have planted with her own hand still guards Kashii Shrine's inner grounds. A stubbornly hollow ginkgo, already declared a thousand years old on a stone plaque installed in 1913, anchors Hakata's biggest festival. A giant camphor stands in the exact middle of Tenjin's shopping crowds, and another keeps a quieter neighbourhood's own calendar entirely. None of them are Fukuoka's famous sights. All of them were already old when the city's postwar skyline was still rice paddies.",
   "meta_description": "Fukuoka's oldest trees guard its shrines: a legendary cedar, a hollow thousand-year ginkgo, and a camphor rooted in the middle of Tenjin.",
   "question_answer": "The oldest tree in Fukuoka is, by tradition, the Ayasugi, a Japanese cedar at Kashii Shrine said to be around 1,800 years old and planted, by legend, by Empress Jingu herself. It stands 21.5 metres tall beside the shrine's main hall in Higashi-ku.",
-  "question_meta": "Kashii Shrine's Ayasugi cedar, said to be 1,800 years old, is Fukuoka's oldest tree. Its legend, exact location, and 10 more remarkable trees nearby.",
+  "question_meta": "Kashii Shrine's Ayasugi cedar, said to be 1,800 years old, is Fukuoka's oldest tree. Its legend, exact location, and 12 more remarkable trees nearby.",
   "question_context": "Fukuoka's claim to its oldest tree rests on tradition rather than measurement. The Ayasugi's roughly 1,800-year figure comes from Kashii Shrine's own founding legend, that Empress Jingu planted a cedar branch from her armor here on returning from a third-century campaign, a story with no ring count or scientific dating behind it. A more conservative rival stands across town: the ginkgo at Kushida Shrine, which a 1913 monument already called over a thousand years old, though a later trunk measurement suggested a real age closer to 600. Neither figure is settled science, which is honest for a city where almost every old tree grows on shrine ground with a founding myth attached rather than a documented planting record. What is not in dispute is which tree carries more ceremonial weight: the Ayasugi's cuttings have traditionally been sent to the Imperial court, and its shrine is one of the few in Japan that still receives a personal envoy from the Emperor. Getting there: JR Kashii-jingu-mae Station, about a five-minute walk to the shrine's inner grounds.",
   "oldest_tree_id": "fuk_001",
   "faq": [
@@ -399,6 +399,68 @@
         "kind": "flowers"
       },
       "location_precision": "approximate"
+    },
+    {
+      "id": "fuk_012",
+      "name": "The Great Yamamomo of Kanatake",
+      "species": "Red Bayberry (Myrica rubra)",
+      "age_estimate": "roughly 300 to 400 years",
+      "age_min": 300,
+      "age_max": 400,
+      "girth_cm": 440,
+      "location": {
+        "address": "Kanatake, Nishi Ward, Fukuoka (postal area 819-0035)",
+        "latitude": 33.522772,
+        "longitude": 130.303222,
+        "neighbourhood": "Kanatake, Nishi Ward"
+      },
+      "verified_sources": [
+        "https://www.city.fukuoka.lg.jp/nishiku/c-shinko/charm/nisikunotakara/yamamomo.html",
+        "http://www.hitozato-kyoboku.com/hukuokaken.htm"
+      ],
+      "access": "Privately owned but open to the public (the ward government's own page says so explicitly); visitors are asked to be careful, since foot traffic compacting the soil over the roots is named as a real risk to the tree's vigour, not a formality.",
+      "transport": "No train station is within walking distance (Hashimoto or Jiromaru stations are both roughly 2.7km, about 33-34 minutes on foot). Nishitetsu Bus routes 1 or 2 run to the 'Kanatake' stop from Meinohama Station's south exit, Hashimoto Station, Hakata Station bus terminal or Tenjin; the tree stands in the neighbourhood around that stop.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "An owl sometimes nests in the hollow of this tree's trunk, which Fukuoka's own ward government mentions on its page about the specimen without treating it as remarkable, just one more fact about a tree old enough to have grown a cavity worth nesting in. Estimated at three to four hundred years old, it is the larger of only two Myrica rubra the prefecture has designated a natural monument, its root spread alone measuring eight metres across.\n\nRed bayberry is more commonly a large shrub than a proper tree, grown across East Asia for a tart, dark red summer fruit that stains fingers and pavement alike; reaching four metres round at chest height and standing fourteen metres tall, this one has outgrown the category by any measure. The ward's own page and an independent survey of Japan's giant trees disagree on the exact girth by thirty centimetres, a gap almost certainly explained by different measurement dates rather than a mistake either way.\n\nThe tree stands on private land whose owner has kept it open to the public, and the same page that welcomes visitors also asks them to tread carefully: foot traffic compacting the soil over its roots is named as a real threat to its health, not a formality. No train station sits within walking distance; a bus from Meinohama, Hashimoto or central Fukuoka runs to the Kanatake stop nearby.",
+      "verify_notes": "Fukuoka City's own Nishi Ward government page (city.fukuoka.lg.jp, under 'Nishi Ward's Treasures' / nature) designates this as a Fukuoka Prefecture-designated Natural Monument: estimated age 300-and-some-tens of years (translated here as a broad 'roughly 300 to 400 years', not sharpened), girth at breast height 4.4m (440cm), root-spread girth 8m, height 14m, larger than the other prefecturally designated Myrica rubra in Nakashima Park, Naka-gawa City. It notes a cavity in the trunk where owls often nest. Second source: hitozato-kyoboku.com, a long-running nationwide Japanese giant-tree survey site (used here for corroboration only, same convention as monumentaltrees.com under hard rule 1), lists the same tree (its entry #5608, '金武のヤマモモ', Fukuoka-shi Nishi-ku Kanatake, prefectural designation) with girth 4.7m, matching the coordinate this project's earlier lead pass had already recorded (33.522772,130.303222) almost exactly. GIRTH CONFLICT, not silently resolved: city page says 4.4m, kyoboku says 4.7m; used the city government's figure (440cm) as girth_cm since its page gives full measurement context (breast height specifically) and flagged for the discrepancy, which is most likely two different measurement dates. Location independently reconfirmed a third way: an OpenStreetMap natural=tree node exists at 33.5227721,130.3032217, named '金武の大ヤマモモ' (Kanatake's Great Yamamomo), essentially the same point to six decimal places, so location_precision is confirmed with unusual confidence for a lone specimen. Reading correction: the place name 金武 in this Nishi Ward context reads 'Kanatake', not 'Kanetake' as the earlier lead entry had it (confirmed via multiple independent Japanese postal/address lookups for postal code 819-0035); the city page's own name is 'Kanatake no Yamamomo'. Whoever updates data/leads/fukuoka.json should correct the spelling there too. Alive-now: no dated recent photo or news found this pass, but the source is a currently-live official ward government page describing the tree in the present tense as a designated natural monument people currently visit (with an active visitor-conduct warning), which is reasonable but not dated-photo-level evidence; noting this honestly rather than treating it as fully confirmed.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "fuk_013",
+      "name": "The Married Camphor and Great Ginkgo of Torikai Hachimangu",
+      "species": "Camphor Tree (Cinnamomum camphora) and Ginkgo (Ginkgo biloba)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Torikai Hachimangu, 2-1-17 Imagawa, Chuo Ward, Fukuoka",
+        "latitude": 33.587188,
+        "longitude": 130.366383,
+        "neighbourhood": "Imagawa, Chuo Ward"
+      },
+      "verified_sources": [
+        "https://hachimansama.jp/blog/1910",
+        "http://www.fukuokanomori.xyz/shoukai/torikai/"
+      ],
+      "access": "Free. Both trees stand in the open approach/precinct of Torikai Hachimangu, a public Shinto shrine, immediately flanking the torii; no gate or restriction beyond ordinary shrine visiting hours.",
+      "transport": "Fukuoka City Subway Airport Line: Tojinmachi Station, about 6 minutes on foot, or Nishijin Station, about 7 minutes. Also reachable by Nishitetsu bus to the Jigyo or Imagawa-nishimachi-koen-mae stops, a couple of minutes' walk.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Despite the name, the Married Camphor is one tree, not two. Its trunk forks into a pair from a single base low to the ground, which is exactly why visitors to Torikai Hachimangu read it as a couple rather than a single specimen, and why a shrine built around relationships adopted it as a symbol for exactly that. Cords get tied to its shimenawa rope by people hoping their own pairing holds as well as the tree's two trunks have.\n\nTwelve metres away, flanking the shrine's torii from the other side, stands the Great Ginkgo, called locally the Ibuki Ginkgo. The shrine's own account puts its age at five to six hundred years, a figure with no independent source found to confirm it, so treat it as tradition rather than a documented fact, the same caution this page applies to a wartime survival story attached to the tree elsewhere online, which nothing beyond the shrine's own telling supports.\n\nBoth trees stand in the open shrine forecourt, free to visit at any hour a Shinto shrine keeps its grounds open, reachable on foot from either Tojinmachi or Nishijin subway station. Camphor on the left of the torii, ginkgo on the right, both close enough to touch from the same few steps.",
+      "verify_notes": "FOLDED ENTRY, one collectible point: this shrine names three sacred trees on its own site ('三本の御神木'), but only two stand together at the shrine approach and are treated locally as one paired feature (a third, a cycad said to be over 1000 years old by the shrine's own account, stands elsewhere in the precinct near the shrine office and is out of scope for this pass, not researched or verified). The 'Married Camphor' (夫婦楠) is NOT two separate trees despite the plural-sounding English gloss in the earlier lead entry: per an independent visitor blog (fukuokanomori.xyz) it is a single specimen whose trunk forks into two from one root/base, which is exactly why it reads locally as 'a married pair'. It stands about 12 metres from the 'Great Ginkgo of Ibuki' (息吹の大銀杏), both directly flanking the shrine's torii (camphor on the left, ginkgo on the right, viewed from the approach road), both used in the same 'en-musubi' (relationship-binding) cord-tying tradition on the same shimenawa rope. One obvious place to stand: the shrine forecourt, both trees visible and touchable within a few steps of each other. Treated as one entry per the ensemble/collectible-point test. Location: OpenStreetMap carries individually named natural=tree nodes for both, '夫婦の楠' at 33.5872072,130.3663361 and '息吹の大銀杏' at 33.5871694,130.3664296, about 12m apart; used the midpoint (33.587188,130.366383) as the single entry coordinate, which is confirmed rather than approximate since both individual trunks are independently pinned, not guessed at park scale. Age: the shrine's own blog (hachimansama.jp/blog/1910, 2012) gives the ginkgo's age as '樹齢は、500年とも600年ともいわれています' ('said to be 500 or 600 years old'), a vague figure from a real source, but it is SELF-published by the shrine and has no independent corroboration found this pass (not on Japanese Wikipedia, which does not mention either tree at all), so age_estimate is left empty here rather than repeated as fact; flag this for the writer to attribute explicitly as shrine tradition if used. No age or girth found anywhere for the camphor. IMPORTANT CAUTION carried over from this city's own leads file: the shrine's own account also claims the ginkgo survived a direct WWII incendiary-bomb hit and resprouted from a blackened trunk. This is exactly the class of claim already blocked elsewhere in Fukuoka (see data/leads/fukuoka.json, 'The Mukunoki of Kouun Shrine, Nishi Park': 'there is no Fukuoka equivalent of the Hiroshima survivor-tree registry, so no Fukuoka tree may be given an air-raid survival story'). Per that standing city-wide caution, do NOT write this air-raid claim into the published story as verified history; it may be mentioned, if at all, explicitly framed as the shrine's own tradition, not as confirmed fact. Alive-now: fukuokanomori.xyz's visit is dated June 2024 (令和6年6月参拝) with photographs of both trees current at that visit, which is the freshest alive-now evidence found and is reasonably recent; no more recent confirmation sought this pass.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
