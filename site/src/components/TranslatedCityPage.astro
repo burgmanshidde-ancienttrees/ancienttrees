@@ -12,7 +12,6 @@
 import TreeCard from "./TreeCard.astro";
 import LanguagePicker from "./LanguagePicker.astro";
 import SignInModal from "./SignInModal.astro";
-import AppModal from "./AppModal.astro";
 import Base from "../layouts/Base.astro";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 import { SIGNIN_JS } from "../lib/signin-js";
@@ -149,6 +148,5 @@ const qslug = QUESTION_SLUG[lang] ?? "oldest-tree";
     </div>
   </div>
   <SignInModal lang={lang} />
-  <AppModal lang={lang} />
   <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + VISITED_SYNC_JS + cityMapScript(markers, [avgLat, avgLng], null, [], []) + SHEET_JS} />
 </Base>

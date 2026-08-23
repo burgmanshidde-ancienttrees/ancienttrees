@@ -27,7 +27,8 @@ import sys
 from html.parser import HTMLParser
 from pathlib import Path
 
-DIST = Path(__file__).resolve().parent.parent / "site" / "dist"
+ROOT = Path(__file__).resolve().parent.parent
+DIST = ROOT / "site" / "dist"
 
 BANNED_WORDS = ["hidden gem", "must-see", "breathtaking", "nestled"]
 
@@ -561,6 +562,54 @@ def check_no_name_promise(pages):
     return out
 
 
+def check_tree_count_claims(pages):
+    """A rendered "N trees" claim may never overstate what we actually map.
+
+    Added 2026-08-23 with the app overlay, which is the first site-wide count
+    this project has published. Hidde asked the right question before it
+    shipped ("die aantal trees gaat natuurlijk de hele tijd omhoog dus hoe
+    doen we dat"), and the answer is that the overlay generates its number
+    from the data and rounds it down. This check exists for the NEXT one:
+    the moment somebody types a figure into a page by hand it starts going
+    stale, which is exactly the failure check_count_promises() already guards
+    one city at a time. The ratchet in CLAUDE.md says the fix ships with the
+    check that makes the mistake unshippable, so here it is.
+
+    Deliberately one-sided. Understating is fine and is what rounding down
+    produces; only a claim larger than the truth is a lie.
+    """
+    total = 0
+    for f in sorted((ROOT / "data" / "cities").glob("*.json")):
+        try:
+            city = json.loads(f.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        for t in city.get("trees", []):
+            loc = t.get("location") or {}
+            if t.get("story") and loc.get("latitude") is not None and loc.get("longitude") is not None:
+                total += 1
+    if not total:
+        return []
+    # Four figures and up only: "10 trees" is a city page counting its own,
+    # which check_count_promises() already owns.
+    pat = re.compile(r"\b(\d{1,3}(?:,\d{3})+|\d{4,})\s+(?:old |ancient |remarkable )*trees\b", re.I)
+    out = []
+    for page in pages:
+        try:
+            text = page.read_text(encoding="utf-8")
+        except OSError:
+            continue
+        for raw in pat.findall(text):
+            n = int(raw.replace(",", ""))
+            if n > total:
+                out.append(
+                    f"{page.relative_to(DIST)}: claims {raw} trees, and we map {total}. "
+                    "Site-wide counts are generated and rounded DOWN "
+                    "(site/src/lib/tree-count.ts); never type one by hand."
+                )
+    return out
+
+
 def check_sitemap_dates():
     sm = DIST / "sitemap.xml"
     if not sm.exists():
@@ -704,6 +753,7 @@ def main():
     failures += check_one_city_order()
     failures += check_sitemap_dates()
     failures += check_no_name_promise(pages)
+    failures += check_tree_count_claims(pages)
     failures += check_species_face_is_chosen()
 
     if failures:

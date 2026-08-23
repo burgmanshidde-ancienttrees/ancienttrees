@@ -18,7 +18,6 @@ import { submitLink, ageToken } from "../lib/tree-copy";
 import { mapHead } from "../lib/map";
 import TreeCard from "../components/TreeCard.astro";
 import SignInModal from "../components/SignInModal.astro";
-import AppModal from "../components/AppModal.astro";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 import { SIGNIN_JS } from "../lib/signin-js";
 import { VISITED_SYNC_JS } from "../lib/visited-sync-js";
@@ -240,7 +239,7 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
         <div class="app-pitch">
           <strong>Walk them with the app</strong>
           <p>The walking routes, your saved trees, and the collection of the ones you have stood in front of: the Ancient Trees app.</p>
-          <a class="go-btn" href="/app" data-ev="app-cta">Get the app</a>
+          <a class="go-btn" href="/app" data-app-modal data-ev="app-cta">Get early access</a>
         </div>
 
         <h2>Frequently asked</h2>
@@ -308,6 +307,5 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
     </div>
   </div>
   <SignInModal />
-  <AppModal />
   <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + VISITED_SYNC_JS + cityMapScript(markers, [avgLat, avgLng], null, otherCities, []) + SHEET_JS} />
 </Base>

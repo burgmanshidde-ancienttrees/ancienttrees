@@ -15,9 +15,33 @@
 // the city the visitor was reading. A dialog keeps their place, which is the
 // whole reason he asked for the cross.
 //
-// Shorter than /app on purpose: three lines of what the app does, one field.
-// The full page is one tap away for anyone who wants it.
+// Shorter than /app on purpose: a headline, four features, one field. The
+// full page is one tap away for anyone who wants it.
+//
+// WHAT THE BULLETS OBEY, measured 2026-08-23 rather than felt. Hidde: "ik wil
+// dat je juist de bullets ook onderzoekt van concurenten is hier een soort
+// best practice in." There is, and it is consistent across all five apps
+// whose copy was read (AllTrails, Komoot Premium, Seek, iNaturalist,
+// Geocaching), 24 bullets in total:
+//
+//   * Verb first, imperative, second person. 22 of the 24.
+//   * Every verb DIFFERENT from its neighbours. AllTrails runs Search, Get,
+//     Stick, Discover, Celebrate, Post, Capture without a repeat; that is
+//     NN/G's rule 4, because a scanning eye reads only the first word or two
+//     of each line and four lines opening the same way read as one line.
+//   * 7 to 13 words, and roughly EQUAL lengths, or one item dominates.
+//   * Parallel: all fragments, no closing full stops.
+//   * A short noun label plus one sentence is the web/premium-page shape
+//     (Komoot: "Multi-day routes / Easily plan adventures that'll take
+//     multiple days"); the bare verb line is the App Store shape.
+//
+// The label carries the feature NAME and the sentence carries the moment, so
+// "Season Radar" is his own name for it from the paywall copy rather than a
+// second way of saying alerts.
+//
+// The count is generated and rounded down; see lib/tree-count.ts for why.
 import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
+import { roundedTrees } from "../lib/tree-count";
 
 // `lang` widened this from a Spanish boolean on 2026-08-22. Modal copy is
 // chrome, which Contract J lets stay English until a language earns a
@@ -26,12 +50,16 @@ import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
 interface Props { es?: boolean; lang?: string }
 const { es: esProp = false, lang = "en" } = Astro.props as Props;
 const es = esProp || lang === "es";
+
+const rounded = await roundedTrees();
+const count = rounded.toLocaleString(es ? "es-ES" : "en-US");
+
 const T = es ? {
-  title: "Las rutas a pie están en la app",
-  sub: "Los árboles de esta ciudad, encadenados en un paseo, con la ruta en el bolsillo.",
-  f1: "Un paseo que une los mejores árboles cercanos",
-  f2: "Funciona sin cobertura, en mitad del parque",
-  f3: "Marca cada árbol ante el que te has parado",
+  title: `Más de ${count} árboles viejos que merecen el paseo`,
+  f1n: "Árboles cerca de ti", f1: "Descubre qué árboles notables están a unas calles",
+  f2n: "Paseos por la ciudad", f2: "Sigue una ruta que pasa por los mejores árboles en una tarde",
+  f3n: "Tu registro", f3: "Marca los árboles que has visitado de verdad",
+  f4n: "Season Radar", f4: "Recibe un aviso la semana que un árbol cercano florece",
   placeholder: "tu@ejemplo.com",
   send: "Avísame",
   note: "Te escribimos el día que abra. Un email. Nada más.",
@@ -40,11 +68,11 @@ const T = es ? {
   more: "Ver todo lo que hace",
   close: "Cerrar",
 } : {
-  title: "Walking routes live in the app",
-  sub: "This city's trees, strung into one afternoon, with the route in your pocket.",
-  f1: "A walk that links the best trees near you",
-  f2: "Works with no signal, in the middle of a park",
-  f3: "Tick off every tree you have stood in front of",
+  title: `Over ${count} old trees worth the walk`,
+  f1n: "Trees near you", f1: "See which remarkable old trees are a few streets away",
+  f2n: "City walks", f2: "Follow a route past the best trees in one afternoon",
+  f3n: "Your log", f3: "Tick off the trees you have actually visited",
+  f4n: "Season Radar", f4: "Get notified the week a tree nearby comes into blossom",
   placeholder: "you@example.com",
   send: "Tell me first",
   note: "We write to you the day it opens. One email. Nothing else.",
@@ -59,11 +87,11 @@ const T = es ? {
   <p class="signin-mark" aria-hidden="true">&#127795;</p>
   <div id="app-ask">
     <h3>{T.title}</h3>
-    <p>{T.sub}</p>
     <ul class="app-dialog-list">
-      <li>{T.f1}</li>
-      <li>{T.f2}</li>
-      <li>{T.f3}</li>
+      <li><b>{T.f1n}</b> {T.f1}</li>
+      <li><b>{T.f2n}</b> {T.f2}</li>
+      <li><b>{T.f3n}</b> {T.f3}</li>
+      <li><b>{T.f4n}</b> {T.f4}</li>
     </ul>
     <form id="app-wl" class="signin-form" autocomplete="email">
       <input type="email" id="app-wl-email" placeholder={T.placeholder} aria-label="Email address" required>
