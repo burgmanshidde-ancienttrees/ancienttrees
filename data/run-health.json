@@ -1179,6 +1179,28 @@
    "cities_touched": 8,
    "trees": 70,
    "logged": true
+  },
+  {
+   "started": "2026-08-23T04:24:20+00:00",
+   "date": "2026-08-23",
+   "run_id": "32617782495",
+   "minutes": 21.1,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 197,
+   "denials": 11,
+   "denials_source": "permission_denials: Bash, Bash(curl), Bash(echo), Bash(env), Bash(mkdir), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 36011794,
+   "claims_held": [
+    "the-hague",
+    "brisbane",
+    "krakow"
+   ],
+   "commits": 12,
+   "cities_touched": 3,
+   "trees": 22,
+   "logged": false
   }
  ],
  "schedule_changes": [
