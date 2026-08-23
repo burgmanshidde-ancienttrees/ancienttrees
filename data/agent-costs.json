@@ -3277,6 +3277,15 @@
     "note": "session work, not a dispatched pass. Found via a recurring Search Console content-lead in DATA.md ('alameda dos platanos' has no matching page, ~8-13 impressions/day, position ~8, appearing for many days while Porto already publishes). Register (portugal-icnf.json) already carried both trees (Jardim da Cordoaria's classified 37-plane avenue and its bunya pine) unpublished; cross-checked against a directly-fetched second source (100milarvores.pt) for the elephant-foot deformity story. Wrote both stories plus the Portuguese i18n overlay (Porto has a PT translation), fixed count promises in both languages (27->29 trees, two->three gardens). preflight and build clean.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "setubal",
+    "kind": "verify",
+    "tokens": 0,
+    "trees": 0,
+    "note": "sole READY lead (KNJ1/520, the smaller silky oak) was a leads.py false positive: already published, folded into stb_003's existing story ('there are two of them here'), just never had its status field updated from 'lead' to 'folded'. Fixed the status field so future passes stop re-surfacing it. Zero new trees, cheap check.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

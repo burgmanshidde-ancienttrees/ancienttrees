@@ -25,8 +25,8 @@
       "species": "Grevillea robusta",
       "lat": 38.52352,
       "lng": -8.89854,
-      "status": "lead",
-      "why": "Registered separately but standing metres from its twin and distinguished only by girth, so it is described inside that entry rather than given a pin of its own. Same for KNJ1/524 (stone pine) and KNJ1/527 (black poplar): three registered trees folded into their siblings' pages to avoid near-identical entries."
+      "status": "folded",
+      "why": "Already published: folded into stb_003 (\"The Silky Oaks of Largo Marques de Pombal\"), whose story explicitly covers both trees ('there are two of them here'). Registered separately (KNJ1/520) but standing metres from its twin and distinguished only by girth, so it was deliberately given no pin of its own. Same for KNJ1/524 (stone pine) and KNJ1/527 (black poplar): three registered trees folded into their siblings' pages to avoid near-identical entries. Marked 'folded' 2026-08-23 after leads.py's READY check surfaced this as needing a story, which it does not: the status field just hadn't been updated when the folding decision was made."
     }
   ],
   "open_questions": [
