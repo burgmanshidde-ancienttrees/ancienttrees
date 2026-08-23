@@ -3,9 +3,9 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Amsterdam's oldest tree is 275 years old, modest against London's millennium-old yews, and that gap says something about the city: built on drained peat and remade repeatedly by fire and war, little here gets left alone for long. What survived did so on purpose, behind a zoo fence, botanical garden glass or a canal-house garden wall. Amsterdam also became one of Europe's great elm cities, and the range runs from the last of thirty elms at Centraal Station to the city's tallest tree, an elm of 35 metres in a university courtyard. Twenty-nine of the thirty-nine are free.",
-  "meta_description": "Amsterdam's oldest tree is a 275-year-old oak in Artis. Meet it and 38 more remarkable trees, from a 300-year-old cycad to the city's tallest.",
+  "meta_description": "Amsterdam's oldest tree is a 275-year-old oak in Artis. Meet it and 33 more remarkable trees, from a 300-year-old cycad to the city's tallest.",
   "question_answer": "The oldest tree in Amsterdam is the Heimanseik, a pedunculate oak in Artis Park estimated at around 275 years old, rooted since roughly 1750, decades before the zoo itself was founded in 1838. It stands near the chimpanzee enclosure and can be visited with a ticket to Artis, a short walk from the Artis tram stop.",
-  "question_meta": "The Heimanseik, a 275-year-old oak in Artis, is Amsterdam's oldest tree. Its story, exact location and 38 more remarkable trees in the city.",
+  "question_meta": "The Heimanseik, a 275-year-old oak in Artis, is Amsterdam's oldest tree. Its story, exact location and 33 more remarkable trees in the city.",
   "question_context": "Amsterdam's peat foundations and history of fires, floods and rebuilding mean the city holds nothing like London's thousand-year yews or Paris's four-century black locusts. Its oldest confirmed tree, the Heimanseik, dates to around 1750 and owes its survival to an accident of geography: the oak was already mature when Artis was founded around it in 1838, so the zoo grew up incorporating the tree rather than the other way round. It is named after Eli Heimans, a naturalist who wrote about the oak in 1903 and helped popularize the idea that ordinary urban nature deserved close attention. Two fungi now grow in its trunk, a common condition in oaks this age, and arborists inspect it annually to judge how much longer it can safely stand. Summer oaks can live seven centuries, which makes 275 modest for the species even if it is a record for the city. Amsterdam's runners up are largely elms and wingnuts in the 100 to 175 year range, survivors of Dutch elm disease and redevelopment rather than centuries of neglect. Getting there: Tram 14 to Artis, then a short walk to the oak near the chimpanzee enclosure.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Amsterdam's remarkable trees free to visit?",
-      "a": "Twenty-nine of the thirty-nine on this list are free, standing in public parks, squares, streets and one university courtyard. The other ten sit behind a ticket: the Heimanseik and two more inside Artis, six in the Hortus Botanicus, and a copper beech in the garden of Museum Van Loon."
+      "a": "Twenty-nine of the thirty-four on this list are free, standing in public parks, squares, streets and one university courtyard. Five sit behind a ticket, and they are the ones worth buying one for: the Heimanseik inside Artis, three in the Hortus Botanicus including a cycad older than the kingdom, and a copper beech in the garden of Museum Van Loon."
     },
     {
       "q": "Why doesn't Amsterdam have older trees like London or Paris?",
@@ -414,138 +414,6 @@
       "location_precision": "confirmed"
     },
     {
-      "id": "ams_012",
-      "name": "The Persian Ironwood of Artis",
-      "species": "Persian Ironwood (Parrotia persica)",
-      "age_estimate": "roughly 116 years",
-      "age_min": 110,
-      "age_max": 120,
-      "location": {
-        "address": "Artis Park, Plantage Kerklaan 38-40, 1018 CZ Amsterdam",
-        "latitude": 52.3653735,
-        "longitude": 4.9185692,
-        "neighbourhood": "Plantage, Amsterdam-Centrum"
-      },
-      "story": "Artis keeps more than eight hundred trees across two hundred species, and the man who looks after them picks this one. Jan de Jong, the park's tree specialist, calls the Persian ironwood his favourite and describes it as warrig en grillig, tangled and irregular, which undersells it. The species does something few trees do: branches that touch as they grow fuse into each other, so an old ironwood ends up as one knotted structure rather than a trunk with limbs hanging off it. The bark flakes away in plates like a plane tree's, leaving patches of grey, green and brown. Amsterdam's register of protected trees carries it as N1763, planted in 1910, trunk 205 centimetres around. That makes it barely a century old, young next to the oak thirty metres away, which took root around 1750 and is the oldest tree in the city. The two are an easy walk apart, past the giant tortoises, and together they explain what Artis is: a zoo laid out in 1838 by a society that collected plants as seriously as animals, with the trees part of the plan rather than scenery added afterwards. In late autumn this one carries red, orange and purple in the same crown at the same time. Entry is a zoo ticket.",
-      "best_time": {
-        "months": [
-          10,
-          11
-        ],
-        "kind": "autumn colour",
-        "label": "late October into November, when red, orange and purple appear in the same crown"
-      },
-      "verified_sources": [
-        "https://maps.amsterdam.nl/bomen_bijzonder/ (Gemeente Amsterdam Bijzondere Bomen register, dataset 561, register_id N1763, plant year 1910, trunk girth 205 cm, status Beschermwaardige houtopstand)",
-        "https://oost-online.nl/groen-erfgoed-van-artis-jan-de-jong-over-de-bomen-van-het-park/"
-      ],
-      "access": "Paid entry, part of Artis zoo and botanical garden",
-      "transport": "Tram 14, Artis stop, directly adjacent",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "ai_generated",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "ams_013",
-      "name": "The Coast Redwood of Artis",
-      "species": "Coast Redwood (Sequoia sempervirens)",
-      "age_estimate": "roughly 106 years",
-      "age_min": 100,
-      "age_max": 115,
-      "location": {
-        "address": "Artis Park, Plantage Kerklaan 38-40, 1018 CZ Amsterdam",
-        "latitude": 52.3648561,
-        "longitude": 4.9189578,
-        "neighbourhood": "Plantage, Amsterdam-Centrum"
-      },
-      "story": "The tallest tree species on earth has a specimen standing beside a planetarium in central Amsterdam. Coast redwoods pass 110 metres in the fog belt of northern California, where they take a serious share of their water straight out of sea mist. This one grows about nine thousand kilometres from there, on drained peat, at a latitude California never reaches. Amsterdam's register of protected trees lists it as N5627, planted circa 1920, and the circa is the register's own hedge rather than ours. The trunk is 271 centimetres around. A century in, it is a juvenile: coast redwoods routinely run past a thousand years, and the oldest known are more than twice that. The bark gives the species away when the shape does not. It is thick, fibrous and reddish, soft enough to press a thumb into, and it is what lets the tree shrug off the fires that clear out everything else on a Californian forest floor. There is no fire here and no fog, only a Dutch zoo that started planting exotics in the nineteenth century and then kept them. It is evergreen, so no month shows it better than another. The Persian ironwood and the Heimanseik, the oldest tree in Amsterdam, are both a few minutes away on the same walk. Entry is an Artis ticket.",
-      "verified_sources": [
-        "https://maps.amsterdam.nl/bomen_bijzonder/ (Gemeente Amsterdam Bijzondere Bomen register, dataset 561, register_id N5627, plant year circa 1920, trunk girth 271 cm, status Beschermwaardige houtopstand)",
-        "https://oost-online.nl/groen-erfgoed-van-artis-jan-de-jong-over-de-bomen-van-het-park/"
-      ],
-      "access": "Paid entry, part of Artis zoo and botanical garden",
-      "transport": "Tram 14, Artis stop, directly adjacent",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "ai_generated",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "ams_014",
-      "name": "The Twisted Catalpa of the Hortus",
-      "species": "Southern Catalpa (Catalpa bignonioides)",
-      "age_estimate": "roughly 116 years",
-      "age_min": 106,
-      "age_max": 120,
-      "location": {
-        "address": "Hortus Botanicus Amsterdam, Plantage Middenlaan 2A, 1018 DD Amsterdam",
-        "latitude": 52.3665676,
-        "longitude": 4.9081501,
-        "neighbourhood": "Plantage, Amsterdam-Centrum"
-      },
-      "story": "The trunk turns as it rises, a slow corkscrew that the national guide to Amsterdam's monumental trees singles out as the reason to stop. This is a southern catalpa, native to a small pocket of the southeastern United States and far more common in European gardens than in its own range. The city register has it as N1776, planted in 1910, trunk 318 centimetres around; the Bomenstichting guide puts the planting somewhere between 1910 and 1920 and measures the same three metres, which is about as close as two independent sources ever get. Dutch has two names for the species and both are literal: trompetboom, trumpet tree, for the cream and yellow flowers with speckled throats that cover it in July, and bonenboom, bean tree, for the long thin seed pods that hang on through winter and rattle. The leaves are the size of a spread hand. The same guide adds that catalpas keep mosquitoes and flies at a distance, which is not the worst property for a garden on the edge of the Plantage canals. The Hortus Botanicus has grown plants on this ground since 1638, so the catalpa arrived when the garden was already 270 years old and still counts as one of its younger residents. Entry needs a Hortus ticket.",
-      "best_time": {
-        "months": [
-          7
-        ],
-        "kind": "flowers",
-        "label": "July, when the trumpet flowers open cream and yellow"
-      },
-      "verified_sources": [
-        "https://maps.amsterdam.nl/bomen_bijzonder/ (Gemeente Amsterdam Bijzondere Bomen register, dataset 561, register_id N1776, plant year 1910, trunk girth 318 cm, status Beschermwaardige houtopstand)",
-        "https://www.bomenstichting.nl/images/Mon_bomen_Amsterdam_2021_WEB.pdf (Bomenstichting, 'Langs monumentale bomen in het centrum van Amsterdam', 5th ed. 2021, entry 'Trompetboom, Catalpa bignonioides, NR 1690871 op monumentalebomen.nl, PLANTJAAR 1910-1920, HORTUS BOTANICUS AMSTERDAM')"
-      ],
-      "access": "Paid entry, Hortus Botanicus ticket required",
-      "transport": "Tram 14, Artis stop, directly outside",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "ai_generated",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "ams_015",
-      "name": "The Shellbark Hickory of the Hortus",
-      "species": "Shellbark Hickory (Carya laciniosa)",
-      "age_estimate": "roughly 76 to 114 years (sources disagree on planting year)",
-      "age_min": 76,
-      "age_max": 114,
-      "location": {
-        "address": "Hortus Botanicus Amsterdam, Plantage Middenlaan 2A, 1018 DD Amsterdam",
-        "latitude": 52.3663846,
-        "longitude": 4.9081406,
-        "neighbourhood": "Plantage, Amsterdam-Centrum"
-      },
-      "story": "The Dutch tree foundation calls this the oldest shellbark hickory in the Netherlands. The city of Amsterdam records it as planted in 1950, which would rule that out. Both are describing the same tree in the same corner of the Hortus, and they disagree by thirty-eight years: the Bomenstichting guide gives 1912, the municipal register N1768 gives 1950 along with a trunk 251 centimetres around. Nothing available settles it, so the honest age is somewhere between seventy-five and a hundred and fifteen years, and the claim to be the country's oldest only stands under the earlier date. The species is not in doubt, and it barely exists here. Shellbark hickory comes from the wet river bottoms of the American Midwest, is a close relative of the pecan, and drops round nuts inside a thick green husk that looks poisonous and is not: the kernel is sweet and takes real work to reach. The bark is where the name comes from, peeling off the trunk in long curling plates that stay attached at both ends. Crush a leaf and it smells sharply of walnut. A few paths away stands a Turkish hazel that the same foundation calls the oldest and thickest in the country, so this corner of the Plantage has a habit of holding records it cannot quite prove. Entry needs a Hortus ticket.",
-      "verified_sources": [
-        "https://maps.amsterdam.nl/bomen_bijzonder/ (Gemeente Amsterdam Bijzondere Bomen register, dataset 561, register_id N1768, plant year 1950, trunk girth 251 cm, status Beschermwaardige houtopstand)",
-        "https://www.bomenstichting.nl/images/Mon_bomen_Amsterdam_2021_WEB.pdf (Bomenstichting guide, entry 'Koningsnoot, Carya laciniosa, NR 1686144 op monumentalebomen.nl, PLANTJAAR 1912, HORTUS BOTANICUS AMSTERDAM', described as 'de oudste koningsnoot van Nederland' / the oldest shellbark hickory in the Netherlands)"
-      ],
-      "access": "Paid entry, Hortus Botanicus ticket required",
-      "transport": "Tram 14, Artis stop, directly outside",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "curation_status_note": "flagged for the age discrepancy above; species/location/existence are solid (two sources agree).",
-      "location_precision": "confirmed"
-    },
-    {
       "id": "ams_016",
       "name": "The Turner's Oak of the Hortus",
       "species": "Turner's Oak (Quercus x turneri)",
@@ -574,43 +442,6 @@
       "curation_status": "flagged",
       "curation_status_note": "flagged for the age discrepancy above; species/location/existence are solid (two sources agree).",
       "location_precision": "confirmed"
-    },
-    {
-      "id": "ams_017",
-      "name": "The Ginkgo of the Hortus",
-      "species": "Ginkgo (Ginkgo biloba)",
-      "age_estimate": "roughly 96 to 136 years (sources disagree, and the exact specimen match is uncertain)",
-      "age_min": 96,
-      "age_max": 136,
-      "location": {
-        "address": "Hortus Botanicus Amsterdam, Plantage Middenlaan 2A, 1018 DD Amsterdam",
-        "latitude": 52.3669186,
-        "longitude": 4.9085439,
-        "neighbourhood": "Plantage, Amsterdam-Centrum"
-      },
-      "story": "Ginkgo is the only surviving species of an entire order of plants, a lineage already old when the first dinosaurs appeared and one that outlived them by sixty-six million years. Everything else on that branch has been a fossil since the Jurassic. Which particular trunk this entry points at is less certain than the biology. The Bomenstichting guide records a monumental ginkgo in the Hortus planted between 1890 and 1900. Amsterdam's own register lists two ginkgos here, fifteen metres apart, both dated 1930. The pin sits on the thicker of the pair, N1771, at 321 centimetres around, because girth is a better guide to age than a register date, but nothing so far proves the two sources describe the same tree. Read the location as this corner of the garden rather than one exact trunk, and the age as somewhere between ninety-five and a hundred and thirty-five years. Come in November. Ginkgo leaves are small stiff fans, they turn a flat uniform gold rather than the mottled reds of everything around them, and then the tree lets almost all of them go within a couple of days, so the ground underneath goes yellow at once. Entry needs a Hortus ticket.",
-      "best_time": {
-        "months": [
-          11
-        ],
-        "kind": "autumn colour",
-        "label": "November, when the whole crown turns gold and drops within days"
-      },
-      "verified_sources": [
-        "https://maps.amsterdam.nl/bomen_bijzonder/ (Gemeente Amsterdam Bijzondere Bomen register, dataset 561, register_id N1771, plant year 1930, trunk girth 321 cm, status Beschermwaardige houtopstand; a second, thinner Ginkgo N1770 also sits within 15m at 52.3665849,4.9084592, plant year 1930, girth not recorded)",
-        "https://www.bomenstichting.nl/images/Mon_bomen_Amsterdam_2021_WEB.pdf (Bomenstichting guide, entry 'Japanse notenboom, Ginkgo biloba, NR 1686147 op monumentalebomen.nl, PLANTJAAR 1890-1900, HORTUS BOTANICUS AMSTERDAM')"
-      ],
-      "access": "Paid entry, Hortus Botanicus ticket required",
-      "transport": "Tram 14, Artis stop, directly outside",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "curation_status_note": "flagged for both the age discrepancy and the uncertain specimen match; do not treat the coordinate as more certain than 'this general spot in the Hortus'.",
-      "location_precision": "approximate"
     },
     {
       "id": "ams_018",
