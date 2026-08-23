@@ -352,6 +352,60 @@ def fits_at_375(chrome, base, page):
         return None
 
 
+def check_basemap(dist):
+    """The map is the product, and nothing was checking that it draws.
+
+    Every layer we have asserts a CANVAS EXISTS ("map constructed"). None of
+    them asks whether anything was painted into it, so if the style stopped
+    resolving or the tile provider went dark, every visitor would get an empty
+    grey rectangle with our pins floating on it and the whole pipeline would
+    stay green. Found 2026-08-23 while restyling the map.
+
+    Split deliberately, because a check that turns the deploy red for somebody
+    else's outage is a check people learn to ignore:
+
+      FAIL   our own style asset is missing or unparseable, or points at
+             nothing. That is our bug and it must not ship.
+      WARN   the tile host does not answer. That is not our bug, we cannot
+             fix it in a deploy, and blocking the deploy would not help.
+    """
+    import json as _json
+    import urllib.request as _u
+    fails, warns = [], []
+    style_path = dist / "assets" / "map-style.json"
+    if not style_path.exists():
+        return ["basemap: assets/map-style.json is not in the build"], warns
+    try:
+        style = _json.loads(style_path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        return ["basemap: assets/map-style.json does not parse (%s)" % exc], warns
+    layers = style.get("layers") or []
+    if len(layers) < 20:
+        fails.append("basemap: the style has only %d layers, which is not a map" % len(layers))
+    src = (style.get("sources") or {}).get("openmaptiles") or {}
+    tilejson = src.get("url")
+    if not tilejson:
+        fails.append("basemap: the style names no vector tile source")
+    if not src.get("attribution"):
+        fails.append("basemap: the style carries no attribution, which OpenStreetMap's "
+                     "licence requires")
+    if not style.get("glyphs"):
+        fails.append("basemap: the style names no glyph source, so every label would vanish")
+    if tilejson:
+        try:
+            req = _u.Request(tilejson, headers={
+                "User-Agent": "AncientTrees/1.0 (+https://ancienttrees.app) smoke"})
+            with _u.urlopen(req, timeout=20) as fh:
+                tj = _json.loads(fh.read().decode("utf-8"))
+            if not tj.get("tiles"):
+                warns.append("basemap: %s answered but names no tile urls" % tilejson)
+        except Exception as exc:
+            warns.append("basemap: the tile host did not answer (%s). Not our bug and not "
+                         "a reason to block a deploy, but the map is blank while it lasts."
+                         % exc)
+    return fails, warns
+
+
 def main():
     global DIST
     parser = argparse.ArgumentParser()
@@ -494,6 +548,11 @@ setTimeout(function(){
     align_page.write_text(ALIGN_HARNESS, encoding="utf-8")
 
     failures = []
+    base_fails, base_warns = check_basemap(DIST)
+    failures += base_fails
+    for w in base_warns:
+        print("SMOKE WARN: %s" % w)
+
     for url, label, wants in checks:
         dom = ""
         for attempt in (1, 2):  # one retry, headless Chrome can hiccup in CI
