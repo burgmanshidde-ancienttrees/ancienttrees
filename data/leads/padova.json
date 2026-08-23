@@ -6,14 +6,6 @@
   "note": "Salvaged from a verification pass that was interrupted before it wrote anything to disk. The full recovered material is in data/research/padova-notes.md. Nothing here is verified. The blocked entries below are the useful part: each is a tree a later pass would otherwise research from scratch and reject again.",
   "leads": [
     {
-      "name": "Cipresso del Canova, Chiesa degli Eremitani",
-      "species": "Cupressus sempervirens",
-      "lat": 45.41023,
-      "lng": 11.88026,
-      "status": "lead",
-      "why": "In MASAF at 0.9 km from the centre and there is a book about it (Michele Armelin, 'Il cipresso del Canova agli Eremitani di Padova'), so the story is there. No source found this pass states whether the churchyard garden it stands in is open to visitors, which is a hard-rule-10 question and has to be answered before it can ship. One check, no more. Not re-checked in the 2026-08-06 verification pass (time-boxed to the two central clusters)."
-    },
-    {
       "name": "Cedro dell'Himalaya dell'Orto Botanico",
       "species": "Cedrus deodara",
       "lat": 45.398776,
@@ -26,16 +18,16 @@
       "species": "Cryptomeria japonica",
       "lat": 45.399402,
       "lng": 11.87971,
-      "status": "lead",
-      "why": "RAMI id 3249, age ~176 years (planted circa 1850), health 'Sufficiente', inside the Orto Botanico cluster. Not delivered this pass purely for time; it is a low-cost add on a follow-up pass since it needs only the same second source used for pad_002/003/004 (garden history web sources). Source: https://ilregistrodeglialberi.it/3249-criptomeria-padova-pd-veneto"
+      "status": "RESOLVED 2026-08-23, delivered as pad_011 (data/research/padua-verified.json)",
+      "why": "RAMI id 3249, age ~176 years (planted circa 1850), health 'Sufficiente', inside the Orto Botanico cluster. Verified this pass with a second source, the 'un albero al giorno' blog, which independently describes the same aged specimen on the path to the Orto Botanico ticket office. Source: https://ilregistrodeglialberi.it/3249-criptomeria-padova-pd-veneto"
     },
     {
       "name": "Ginko dell'Orto Botanico n. 2",
       "species": "Ginkgo biloba",
       "lat": 45.399534,
       "lng": 11.881069,
-      "status": "lead",
-      "why": "RAMI id 14476, the companion of pad_003 (the grafted male ginkgo), also carrying a grafted female branch per RAMI's note but with no age on file. Skipped in favour of the older, better-documented n.1 (pad_003) to avoid two near-identical ginkgo entries on one page; worth considering only if the city needs to grow past its current cluster count."
+      "status": "RESOLVED 2026-08-23, delivered as pad_012 (data/research/padua-verified.json), curation_status flagged (single source)",
+      "why": "RAMI id 14476, the companion of pad_003 (the grafted male ginkgo), also carrying a grafted female branch per RAMI's note but with no age on file. No independent second source for this specific specimen (as opposed to the famous n.1) was found within this pass's time budget, so it ships flagged on the register alone."
     },
     {
       "name": "Cedro di via Michelangelo",
@@ -51,6 +43,13 @@
     }
   ],
   "blocked": [
+    {
+      "name": "Cipresso del Canova, Chiesa degli Eremitani",
+      "species": "Cupressus sempervirens",
+      "lat": 45.41023,
+      "lng": 11.88026,
+      "reason": "Checked 2026-08-23 (hard rule 10, the standing question on this lead). The tree stands in 'il piccolo giardino prospiciente l'abside' of the Chiesa degli Eremitani (the small garden facing the church's apse), planted 1803 as part of a Canova funerary monument, per the 'un albero al giorno' blog post on it (unalberoalgiorno.blog/2025/01/16/il-cipresso-del-canova). That same source says a wall separates the church's own garden from a neighbouring private garden, that 'un alto muro... nasconde il tronco della pianta' (a high wall today hides the trunk), and that the blog's author only managed to see the cypress up close and document it AFTER publishing the post, i.e. by arranging access rather than walking in. No source checked this pass states the church's small apse garden is open to casual visitors; it reads as attached, gated church ground rather than a public churchyard. Does not clearly pass the 'can they get in without asking anyone's permission' test in hard rule 10, so it stays blocked rather than shipped as approximate-but-visible. Worth one more check: whether the Musei Civici agli Eremitani (which occupies part of the same complex and is a paid, publicly open museum) gives ticketed access to this specific garden; not checked this pass."
+    },
     {
       "name": "Sofora del Giappone, Ponte di Brenta",
       "species": "Styphnolobium japonicum",

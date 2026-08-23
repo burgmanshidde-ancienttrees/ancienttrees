@@ -3232,6 +3232,42 @@
     "note": "session work, page-gap rung: the Lucca Orto Botanico register cluster added earlier this run pushed it past the 5-tree park-page threshold; wrote the intro (data/parks/orto-botanico-di-lucca.json), build confirms it renders and pagegaps.py now shows zero park gaps",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "padua",
+    "kind": "verify",
+    "tokens": 45000,
+    "trees": 2,
+    "note": "2 Orto Botanico RAMI trees delivered (1 flagged), Eremitani cypress blocked on unresolved churchyard access after a direct check",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "nijmegen",
+    "kind": "verify",
+    "tokens": 15000,
+    "trees": 1,
+    "note": "1 register street tree delivered flagged (single source, potentieel status), no news/blog corroboration found",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "groningen",
+    "kind": "verify",
+    "tokens": 15000,
+    "trees": 0,
+    "note": "sole READY lead (RUG plane/elm pair) resolved to blocked: courtyard of a university faculty building, not open ground",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "padua (write) + nijmegen (write)",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 3,
+    "note": "session work, not a dispatched pass; wrote stories for the 2 padua + 1 nijmegen trees the verify pass delivered, merged, fixed count promises (padua five->seven Orto Botanico trees, nijmegen seventeen->eighteen incl. NL i18n overlay for nij_018), preflight and build clean",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

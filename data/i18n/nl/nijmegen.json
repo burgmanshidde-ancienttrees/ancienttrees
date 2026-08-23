@@ -1,11 +1,11 @@
 {
  "_note": "Dutch overlay for Nijmegen, hand-written 2026-08-22. Text only: every coordinate, photo, licence, best_time and walk stays in data/cities/nijmegen.json. The search term is 'monumentale bomen', which is what Dutch readers type and what the Bomenstichting itself uses; 'oude bomen' is a translation, not a query. Nothing here is researched: every fact, age, hedge and dispute comes from the English file and is rendered, never sharpened.",
  "city": "Nijmegen",
- "title": "Monumentale bomen in Nijmegen: de 17 mooiste",
- "meta_description": "De oudste boom van Nijmegen is waarschijnlijk de Kabouterboom bij Beek, een holle tamme kastanje en de dikste boom van Nederland. Plus zestien andere.",
+ "title": "Monumentale bomen in Nijmegen: de 18 mooiste",
+ "meta_description": "De oudste boom van Nijmegen is waarschijnlijk de Kabouterboom bij Beek, een holle tamme kastanje en de dikste boom van Nederland. Plus zeventien andere.",
  "intro": "Nijmegen noemt zichzelf de oudste stad van Nederland, en de bomen doen daar in geest aan mee, al niet in jaren: geen is ouder dan de Romeinen, bijna allemaal staan ze op grond die dat wel is. Een esdoorn die op een burchtheuvel tot boom van het jaar werd gekozen, een ginkgo die per ongeluk een tuincentrumras opleverde, de beukenkring van een achttiende-eeuws sterrenbos, een kastanje geplant voor een koningin. Drie staan ten oosten van de stad, op de stuwwal waar de oudste exemplaren staan: lindes op een Romeins uitzichtpunt, een kerkhoftaxus en de dikste boom van het land.",
  "question_title": "Wat is de oudste boom van Nijmegen? (300 tot 450 jaar)",
- "question_meta": "De oudste is vrijwel zeker de Kabouterboom bij Beek, een holle tamme kastanje van 300 tot 450 jaar. Waar hij staat, en zestien andere bomen.",
+ "question_meta": "De oudste is vrijwel zeker de Kabouterboom bij Beek, een holle tamme kastanje van 300 tot 450 jaar. Waar hij staat, en zeventien andere bomen.",
  "question_answer": "De oudste boom van Nijmegen is vrijwel zeker de Kabouterboom, een holle tamme kastanje in het Kastanjedal bij Beek, ongeveer viereneenhalve kilometer ten oosten van het centrum. De schattingen lopen uiteen van driehonderd tot vierhonderdvijftig jaar, en verder komt niemand, want de stam is hol en er valt geen kern meer te tellen. Wat wel te meten valt is de omtrek: minstens achteneenhalve meter, en daarmee is het de dikste boom van Nederland. Binnen de stad zelf is de beukenkring van het Sterrenbos in Park Brakkenstein de oudste, geplant als onderdeel van een achttiende-eeuws sterrenbos en geschat op 250 tot 300 jaar, met de lindes op het Kops Plateau daar vlak achter met 225 tot 275.",
  "question_context": "Het Sterrenbos, het stervormige patroon van boslanen midden in Park Brakkenstein, werd in de achttiende eeuw aangelegd als onderdeel van het particuliere landgoed Brakkenstein, dat voor het eerst in 1654 wordt genoemd, al kwam de sterbeplanting zelf later. Een kring beuken uit dat plan staat er nog altijd, en lokale historici die het Nijmeegse bomenbestand onderzochten wijzen die kring aan als de oudste levende bomengroep binnen de stadsgrenzen, geschat op 250 tot 300 jaar. Die schatting is noodgedwongen een marge: geen enkele boom in de ring is afzonderlijk gedateerd door jaarringen te tellen, en een deel van de oorspronkelijke beuken is in die drie eeuwen van ouderdom bezweken, waardoor er zichtbare gaten vallen in wat ooit een sluitende cirkel was. Wat er staat is opmerkelijk genoeg blijven staan: drie eeuwen op grond die toen nog particulier landgoed was, en ruim een eeuw voordat Nijmegen zijn oudste stadsparken kreeg, het Kronenburgerpark en het Valkhofpark. Het park is gratis en open, in het zuiden van de stad tussen de campus van de Radboud Universiteit en een spoorlijn, en er is geen kaartje of ontheffing nodig om te zien wat er van de ster over is.",
  "faq": [
@@ -15,7 +15,7 @@
   },
   {
    "q": "Zijn de monumentale bomen van Nijmegen gratis te bezoeken?",
-   "a": "Ja, alle zeventien zijn gratis. De meeste staan in openbare parken, op pleinen of bij kerken die op elk moment open zijn; een staat op landgoedbos dat open is voor wandelaars."
+   "a": "Ja, alle achttien zijn gratis. De meeste staan in openbare parken, op pleinen of bij kerken die op elk moment open zijn; een staat op landgoedbos dat open is voor wandelaars."
   },
   {
    "q": "Welke Nijmeegse boom leverde een tuincentrumras op?",
@@ -163,6 +163,14 @@
    "access": "Gratis, kerkterrein zichtbaar en open voor bezoekers.",
    "transport": "Ongeveer 4 km ten westen van station Nijmegen, bereikbaar met de bus richting Hees.",
    "story": "Deze rode beuk is ouder dan de kerk ernaast. De huidige Antonius Abtkerk aan de Dennenstraat, een rode bakstenen gebouw van architect Pierre Cuypers, verrees in 1879 en 1880. Het landelijk register plaatst de beuk op de grens van de kerk en de pastorie ergens tussen 1750 en 1800, ruwweg een eeuw ouder dan de stenen ernaast.\n\nDat is minder vreemd dan het klinkt. De parochie zelf gaat eeuwen verder terug dan Cuypers: er stond al een oudere kerk op deze grond voor de zijne, een kerkschuur werd hier in 1826 herbouwd, en de parochiegeschiedenis voert terug tot een zestiende-eeuwse voorganger. Een beuk geplant in de late achttiende eeuw zou zijn opgegroeid naast wat hier toen ook stond, en heeft dat simpelweg overleefd, zoals oude bomen op kerkgrond vaak doen.\n\nRode beuken dragen een mutatie die hun bladeren met rood pigment overspoelt, waardoor deze van een afstand bijna zwart oogt tegen het metselwerk. Het Landelijk Register Monumentale Bomen is de enige bron die voor deze specifieke boom is gevonden, ruwweg 225 tot 275 jaar op basis van de plantschatting; lokale parochie- en erfgoedgeschiedenis bevestigt het lange religieuze gebruik van de plek, maar noemt de beuk zelf niet, dus de leeftijd steunt alleen op het register.\n\nHet terrein staat geregistreerd als bezoekbaar en zichtbaar vanaf de straat, gewone kerkgrond in de wijk Hees in plaats van een afgesloten privétuin."
+  },
+  "nij_018": {
+   "name": "De zilveresdoorn van het Sumatraplein",
+   "species": "Zilveresdoorn (Acer saccharinum)",
+   "age_estimate": "circa 120 jaar",
+   "access": "Gratis, openbare straatboom aan de gemeentelijke berm, altijd te bezichtigen",
+   "transport": "Nijmegen-Oost, ongeveer 20 minuten lopen vanaf station Nijmegen",
+   "story": "De meeste beschermde bomen van Nijmegen hebben de volledige monumentale status van het register. Deze heeft een lagere status, 'potentieel', een kandidaat in plaats van een bevestigd monument, wat niets verandert aan hoe het is om ervoor te staan: een zilveresdoorn, geplant ergens tussen 1900 en 1910 aan een woonstraat in Nijmegen-Oost, inmiddels ouder dan honderd jaar.\n\nAcer saccharinum groeit snel en splijt makkelijk, waardoor Amerikaanse steden er tientallen jaren eerder dan Europese mee stopten als straatboom; de bomen die een vroege plantgolf overleefden zijn meestal de exemplaren die niemand ooit heeft vervangen. Deze heeft het meer dan 120 jaar volgehouden op een gemeentelijke berm, eigendom van en onderhouden door de stad in plaats van een prive tuin, wat ook de reden is dat hij een openbare registervermelding kan dragen.\n\nGeen enkele onafhankelijke bron naast het landelijk register noemt deze specifieke boom, en er is geen omtrek geregistreerd, dus behandel de leeftijdsband als de eigen schatting van het register in plaats van een meting. Hij staat in het open veld aan het Sumatraplein, gratis te zien op elk moment, ongeveer twintig minuten lopen vanaf het station."
   }
  }
 }
