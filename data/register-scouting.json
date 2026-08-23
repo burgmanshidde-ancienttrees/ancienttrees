@@ -442,6 +442,12 @@
    "country": "Indonesia",
    "status": "empty",
    "note": "SCOUTED 2026-08-23. Indonesia's cagar budaya (cultural heritage) framework designates temples, inscriptions and buildings, never trees in their own right; no national or provincial register of individually designated old/sacred trees found. Sacred banyan/bayan trees (Bunut Bolong in Jembrana, a Pule at Pura Luhur Pucak Petali in Tabanan) are documented only in press coverage, one article at a time, lead material rather than a register. Not on Hidde's named list, so from-zero is off. Full detail in OPEN_DATA_SURVEY.md."
+  },
+  {
+   "place": "Cork",
+   "country": "Ireland",
+   "status": "imported",
+   "note": "SCOUTED 2026-08-23, but the register was already imported 2026-08-08 (data/registers/ireland-heritage-trees.json, Heritage Trees of Ireland, National Biodiversity Data Centre, CC-BY 4.0, 724 entries nationwide, with a working Irish Grid to lat/long converter at scripts/irish_grid.py) and already used 2026-08-09 to add 6 trees to Dublin. This entry only existed because nobody had logged the register here, which is why scout_next.py pointed at Cork as unscouted; ALWAYS check for an existing data/registers/*.json file and check git status before treating a find as new (a first pass here nearly overwrote the existing import). Extended 2026-08-23 with Blarney and Fota, Co. Cork: 8 new trees shipped (cor_006 to cor_013), 2 skipped as near-certain duplicates of already-published trees. Full detail in OPEN_DATA_SURVEY.md."
   }
  ],
  "out_of_focus": {
