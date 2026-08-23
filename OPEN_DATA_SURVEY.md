@@ -2650,3 +2650,20 @@ Verdict: **empty**. No register to import. If Hidde names Asheville for
 from-zero research, the Treasured Trees programme is the place to start,
 since at least one located, dated example is already in hand.
 
+## Bali, Indonesia: scouted, no importable register (2026-08-23)
+
+`scout_next.py --target` moved on to Bali (#60, no supply, no verdict).
+Indonesia protects sites under "cagar budaya" (cultural heritage), governed by
+Law 10/2010 and Bali's own provincial spatial planning regulation, but every
+designation found under that framework is a temple, inscription or building
+(Taman Ayun, Prasasti Blanjong, Pura Pucak Penulisan), never a tree in its own
+right. No national or provincial database of individually registered
+old/sacred trees turned up. What exists instead is press coverage of specific
+named sacred trees, banyan (beringin) and other bayan figs at temple sites,
+each documented one article at a time: Bunut Bolong in Jembrana (a giant
+banyan with a road-sized hole through the trunk) and a Pule tree at Pura Luhur
+Pucak Petali in Tabanan among them. That is lead material for from-zero
+research, not a register, and Bali is not on Hidde's 2026-08-19 named list.
+
+Verdict: **empty**. No register to import.
+
