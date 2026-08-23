@@ -3,9 +3,9 @@
  "country": "Netherlands",
  "status": "needs_curation",
  "intro": "Nijmegen calls itself the oldest city in the Netherlands, and its trees mostly agree in spirit if not in age: none predate the Romans, but nearly all grow on ground that does. A sycamore chosen tree of the year on a hilltop fort, a ginkgo that accidentally created a garden-centre variety, a star-shaped forest's surviving beech circle, and a chestnut planted for a queen. Three more sit east of the city, where the ridge holds the old ones: limes on the plateau the Romans picked for its view, a churchyard yew, and the thickest tree in the country.",
- "meta_description": "Nijmegen's oldest tree may be a 300-year chestnut, the thickest in the Netherlands. Fourteen verified trees, real stories, how to reach each one.",
+ "meta_description": "Nijmegen's oldest tree may be a 300-year chestnut, the thickest in the Netherlands. Seventeen verified trees, real stories, how to reach each one.",
  "question_answer": "Nijmegen's oldest tree is almost certainly the Kabouterboom, a hollow sweet chestnut in the Kastanjedal at Beek, about four and a half kilometres east of the centre. Estimates run from three hundred years to four hundred and fifty, and nobody can do better than that because the trunk is hollow and there is no core left to count. What can be measured is the girth, at least eight and a half metres, which makes it the thickest tree in the Netherlands. Inside the city itself the oldest is the beech circle of Sterrenbos in Park Brakkenstein, planted as part of an eighteenth-century star-shaped forest and reckoned at 250 to 300 years, with the limes on the Kops Plateau close behind at 225 to 275.",
- "question_meta": "Nijmegen's oldest is likely the Kabouterboom at Beek, a hollow chestnut of 300 to 450 years. Where to find it, and thirteen more.",
+ "question_meta": "Nijmegen's oldest is likely the Kabouterboom at Beek, a hollow chestnut of 300 to 450 years. Where to find it, and sixteen more.",
  "question_context": "Sterrenbos, the star-shaped pattern of forest avenues at the heart of Park Brakkenstein, was laid out in the 18th century as part of the private Brakkenstein estate, first documented in 1654 though the star planting itself came later. A circle of beeches planted as part of that scheme survives today, and local historians researching Nijmegen's tree stock have identified it as the oldest living tree group within the city's limits, estimated at 250 to 300 years old. That estimate is necessarily a range: no single tree in the ring has been individually dated by ring count, and some of the original beeches have already died of old age over three centuries, leaving visible gaps in what was once a complete circle. What survives is still remarkable for surviving at all, three centuries after the estate that planted it was still private land and roughly a century before Nijmegen's oldest formal parks, Kronenburgerpark and Valkhofpark, existed as public space. The park is free and open today, in the south of the city between Radboud University's campus and a rail line, no ticket or special access required to see what is left of the star.",
  "faq": [
   {
@@ -14,7 +14,7 @@
   },
   {
    "q": "Are Nijmegen's ancient trees free to visit?",
-   "a": "Yes, all fourteen are free to visit. Most are in public parks or public squares open at any hour; two stand in churchyards and one in woodland on an estate that is open to walkers."
+   "a": "Yes, all seventeen are free to visit. Most stand in public parks, squares or churchyards open at any hour; one is in woodland on an estate that is open to walkers."
   },
   {
    "q": "Which Nijmegen tree created a plant variety sold in garden centres?",
@@ -475,6 +475,90 @@
    "how_to_recognise": "The chestnut on the church forecourt, rectory to its north, on Pastoor van Laakstraat in Lent.",
    "curation_status": "ai_generated",
    "location_precision": "confirmed"
+  },
+  {
+   "id": "nij_015",
+   "name": "The Weeping Beech of Begraafplaats Daalseweg",
+   "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+   "age_estimate": "roughly 125 to 135 years, from the register's planting band of 1890-1900",
+   "age_min": 126,
+   "age_max": 136,
+   "location": {
+    "address": "Right of the entrance gate, Begraafplaats Daalseweg, Nijmegen",
+    "latitude": 51.839319,
+    "longitude": 5.873587,
+    "neighbourhood": "Nijmegen-Midden"
+   },
+   "story": "A weeping beech droops on purpose. Every ordinary beech reaches up for its share of light; this one carries a mutation that pulls its branches down instead, so its crown pours toward the ground rather than spreading for the sky. It stands to the right of the entrance gate at Begraafplaats Daalseweg, the first tree a visitor meets.\n\nThe cemetery itself is a protected national monument, not for any single tree but for its whole design: two paths cross the grounds, both lined with beeches, meeting at a crucifix at the centre. The weeping beech at the gate breaks that planned rhythm on purpose, an ornamental flourish set apart from the disciplined rows behind it.\n\nThe Dutch national register of monumental trees dates the planting to between 1890 and 1900, putting it at roughly 125 to 135 years old, and lists it as the cemetery's own protected specimen. It is the only source found for this particular tree: local histories of the cemetery describe the beech-lined paths and the crucifix at length but none names this one specifically, so the age comes from the register alone.\n\nThe grounds belong to a working Catholic cemetery and stay open during daylight hours, free to enter. Go quietly.",
+   "verified_sources": [
+    "data/registers/netherlands-lrmb.json (register nr 1687753)"
+   ],
+   "access": "Free, public cemetery grounds, open during daylight hours. Please be respectful, it is a working cemetery.",
+   "transport": "About 1.5 km northwest of Nijmegen railway station, roughly 20 minutes on foot or a short bus ride.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "location_precision": "confirmed",
+   "curation_status": "flagged"
+  },
+  {
+   "id": "nij_016",
+   "name": "The Plane of the Petruskerk",
+   "species": "London Plane (Platanus x acerifolia)",
+   "age_estimate": "roughly 145 to 155 years, from the register's planting band of 1870-1880",
+   "age_min": 146,
+   "age_max": 156,
+   "location": {
+    "address": "Kerkplein, Petruskerk, Schependomlaan/Korte Bredestraat, Hees, Nijmegen",
+    "latitude": 51.84081,
+    "longitude": 5.829079,
+    "neighbourhood": "Hees"
+   },
+   "story": "London planes shed their bark instead of quietly laying down new rings underneath it, sloughing off patches through the year to show paler wood beneath, which is why an old plane looks mottled and half-flayed rather than simply weathered. This one stands on the small square beside the Petruskerk in Hees, a Nijmegen district that was its own village before the city grew out to meet it.\n\nThe Dutch national monumental tree register dates the planting to between 1870 and 1880, making the tree roughly 145 to 155 years old, and lists it as protected. That register is the only source found naming this specific tree: histories of the square and the church describe the setting in detail but not this plane by name, so the age rests on the register's word alone.\n\nThe square sits on church grounds and reads as ordinary open public space, a small plaza in front of a working parish rather than an enclosed courtyard, and the register itself records it as visitable. Nothing else about this particular tree has surfaced yet. If you know more, tell us.",
+   "verified_sources": [
+    "data/registers/netherlands-lrmb.json (register nr 1680526)"
+   ],
+   "access": "Free, public church square, open at any time.",
+   "transport": "About 3.5 km west of Nijmegen railway station, reachable by bus toward Hees, roughly 10 minutes' walk from the nearest stop.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "location_precision": "confirmed",
+   "curation_status": "flagged"
+  },
+  {
+   "id": "nij_017",
+   "name": "The Copper Beech of the Antonius Abtkerk",
+   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+   "age_estimate": "roughly 225 to 275 years, from the register's planting band of 1750-1800",
+   "age_min": 226,
+   "age_max": 276,
+   "location": {
+    "address": "Boundary of Dennenstraat 121 and 125 (Sint Antonius Abtkerk), Hees, Nijmegen",
+    "latitude": 51.835734,
+    "longitude": 5.820439,
+    "neighbourhood": "Hees"
+   },
+   "story": "This copper beech is older than the church beside it. The current Sint Antonius Abtkerk on Dennenstraat, a red-brick building by the architect Pieter Cuypers, went up in 1879 and 1880. The national register places the beech at the boundary of the church and its rectory somewhere between 1750 and 1800, roughly a century older than the bricks next to it.\n\nThat is not as strange as it sounds. The parish itself predates Cuypers by centuries: an older church stood on this ground before his, a barn chapel was rebuilt here in 1826, and parish history traces the site back to a sixteenth century predecessor. A beech planted in the late 1700s would have grown up beside whatever building stood here then, and simply outlasted it, the way old trees on church land tend to.\n\nCopper beeches carry a mutation that floods their leaves with red pigment, so from a distance this one reads almost black against the brick. The Dutch national monumental tree register is the only source found for this specific tree, roughly 225 to 275 years old by its planting estimate; local parish and heritage histories confirm the site's long religious use but do not mention the beech itself, so the age stands on the register alone.\n\nThe grounds are recorded as visitable and visible from outside, ordinary church land in the Hees district rather than a closed private garden.",
+   "verified_sources": [
+    "data/registers/netherlands-lrmb.json (register nr 1680519)"
+   ],
+   "access": "Free, church grounds visible and open to visitors.",
+   "transport": "About 4 km west of Nijmegen railway station, reachable by bus toward Hees.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "location_precision": "confirmed",
+   "curation_status": "flagged"
   }
  ],
  "oldest_tree_id": "nij_009",
