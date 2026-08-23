@@ -10,6 +10,12 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-23 - Seville deepened 20 to 37 from its own municipal catalogue
+
+`leads.py --ready` showed 26 candidates sitting in `data/leads/seville.json`, all from the city's own 2022 Inventario de Arboles Singulares (the same municipal catalogue four already-published Seville trees, sev_017 to sev_020, already draw on), each carrying real dendrometry and vitality fields rather than a bare species-and-location line. Seville clears the demand bar this rung requires (50 ten-day impressions), so deepening an already-at-target city (20/20) was in scope. Wrote 17 of the 26: 5 thicken the Parque de María Luisa cluster (an araucaria, two planes, a stone pine, a bald cypress), 4 more join the Real Alcázar cluster (a windmill palm, a bougainvillea trained as a small tree, a European fan palm, a cycad correctly described as not actually a palm), and 8 stand alone across the city (a cemetery cypress, a 42 m eucalyptus with two named pests, a Triana fig, a mulberry by an Expo-park farmstead, a Senegal date palm, a university-campus Canary pine, a 32 m tipu tree, and Parasenegalia visco, a South American species almost never planted in Europe). Held back the remaining 9: 7 rated only "Regular" condition and one (a lagunaria) the leads file's own note says needs a second source before it ships, both left for a future pass; the last (a ficus at a private nursing home's garden) was dropped outright, since Hermanitas de los Pobres' grounds fail hard rule 10's access test. Species naming needed one fix mid-build: Chamaerops humilis had to match Padua's existing "European Fan Palm / Saint Peter's Palm" rather than a shorter name I'd written, per hard rule 9. Fixed the city's question_meta and one FAQ answer, both of which still counted the old 20. All 17 single-sourced from the catalogue, flagged, no photos.
+
+FOR HIDDE: nothing blocks.
+
 ## 2026-08-23 - Four Dutch cities open at once: Heerlen, Oss, Roosendaal, Sittard-Geleen
 
 A write pass on `python3 scripts/leads.py --ready` found four fully-verified, story-less LRMB register files sitting staged (`data/research/{heerlen,oss,roosendaal,sittard-geleen}-verified.json`), 30 candidate trees between them, all above the 4-tree floor. Wrote stories for all four and published them as new cities, 28 trees total.
