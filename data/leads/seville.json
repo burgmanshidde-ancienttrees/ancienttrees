@@ -83,6 +83,8 @@
   {
    "catalogue_n": 5,
    "name": "El Árbol de las Cigüeñas",
+   "status": "blocked",
+   "why_blocked": "2026-08-23 access check: the tree stands on the grounds of the former Cuartel de Artilleria Daoiz y Velarde, Bellavista. The barracks closed in 1995 and the site has stood in ruins/abandoned since, now owned by SEPES (the state's public land agency) and slated for redevelopment into 850-948 affordable housing units (17.5M euro works announced 2024-2025). This is not open public ground, it is a closed, disused former military compound pending construction; catalogue's own gestion field records 'Sin gestion conocida' (no known management), consistent with an unmanaged closed site rather than a maintained public park. Hold as a lead: revisit once the redevelopment opens public green space on the plot, or if evidence surfaces that part of the site is currently walkable.",
    "species": "Casuarina equisetifolia L.",
    "common_es": "Casuarina, pino australiano",
    "family_per_catalogue": "Casuarinaceae",
@@ -175,6 +177,8 @@
   {
    "catalogue_n": 10,
    "name": "El Pomelo del Monasterio de la Cartuja",
+   "status": "resolved",
+   "resolution_note": "2026-08-23: verified and delivered as sev_042. Access is paid entry inside the CAAC (Monasterio de la Cartuja museum); the visit route runs through the Huerta Grande where the tree stands, so this is on the standard visitor path, not restricted. See data/research/seville-verified.json.",
    "species": "Citrus x paradisi Macfad",
    "common_es": "Pomelo, toronja",
    "family_per_catalogue": "Rutaceae",
@@ -205,6 +209,8 @@
   {
    "catalogue_n": 11,
    "name": "El Naranjo del Hospital Duques del Infantado",
+   "status": "needs_more_evidence",
+   "why_held": "2026-08-23 access check: the Pabellon Vasco (1929 Iberoamerican Exposition building) now houses Hospital Duques del Infantado, an active oncology/outpatient hospital site under the Virgen del Rocio group. Found no evidence of a publicly walkable garden route independent of the hospital's own entrance and reception; unlike a museum or historic monument, an operating clinical hospital is presumed closed (parallel to this project's school-grounds rule: presumed no unless real evidence of open access is found). Held rather than blocked outright, since hospital courtyards sometimes are walk-in accessible; a future pass should check for a public patio/waiting-garden reachable without passing a reception desk before shipping this one.",
    "species": "Citrus x sinensis Osbeck",
    "common_es": "Naranajo dulce",
    "family_per_catalogue": "Rutaceae",
@@ -296,6 +302,8 @@
   {
    "catalogue_n": 17,
    "name": "La Higuera del Huerto del Rey Moro",
+   "status": "resolved",
+   "resolution_note": "2026-08-23: verified and delivered as sev_038. Free, well-documented public community garden, entrance on Calle Enladrillada. See data/research/seville-verified.json.",
    "species": "Ficus carica L.",
    "common_es": "Higuera",
    "family_per_catalogue": "Moraceae",
@@ -478,6 +486,8 @@
   {
    "catalogue_n": 33,
    "name": "El Pino de los Jardines de Cristina",
+   "status": "resolved",
+   "resolution_note": "2026-08-23: verified and delivered as sev_039. Free, well-known public city garden at Puerta de Jerez. See data/research/seville-verified.json.",
    "species": "Pinus pinea L.",
    "common_es": "Pino piñonero",
    "family_per_catalogue": "Pinaceae",
@@ -657,6 +667,8 @@
    },
    "catalogued": "08/07/2022",
    "source": "Inventario de Arboles Singulares de la Ciudad de Sevilla (2022), Ayuntamiento de Sevilla, ficha 40",
+   "status": "resolved",
+   "resolution_note": "2026-08-23: verified and delivered as sev_043, on access grounds (the Jardines de la Madrina, where it stands, are a separate city-owned public garden strip distinct from the closed Palacio de San Telmo grounds; see verify_notes in data/research/seville-verified.json for the full reasoning). The earlier age concern noted below stands and is carried into verify_notes: do not claim the tree is 'among the oldest' lagunarias in Seville, since Amigos de los Jardines de la Oliva (2018) place the oldest specimens at the Jardines de Cristina and the Real Alcazar instead. No age is given in the delivered record.",
    "note": "Researched and held back, not rejected. No source independent of the municipal catalogue could be found, and the catalogue claim that it figures among the oldest trees in Seville is undercut by Amigos de los Jardines de la Oliva (2018), who place the oldest lagunaria in Seville in the Jardines de Cristina, with other notable specimens in the Real Alcazar. Ships only once a second source dates it or the Montpensier provenance is corroborated."
   },
   {
@@ -692,6 +704,8 @@
   {
    "catalogue_n": 44,
    "name": "El Eucalipto Arpa del Guadalquivir",
+   "status": "resolved",
+   "resolution_note": "2026-08-23: verified and delivered as sev_041. Free, on the public Anillo Verde riverside path/cycle route in Tablada; note in the story that this is a bike-or-long-walk destination, not central. See data/research/seville-verified.json.",
    "species": "Eucalyptus camaldulensis Dehnh.",
    "common_es": "Eucalipto rojo",
    "family_per_catalogue": "Myrtaceae",
@@ -722,6 +736,8 @@
   {
    "catalogue_n": 46,
    "name": "La Palmera multicaule de Conde de Colombi",
+   "status": "resolved",
+   "resolution_note": "2026-08-23: verified and delivered as sev_040. Free, in the public Parque de Maria Luisa. See data/research/seville-verified.json.",
    "species": "Phoenix dactylifera L.",
    "common_es": "Palmera híbrida",
    "family_per_catalogue": "Arecaceae",
