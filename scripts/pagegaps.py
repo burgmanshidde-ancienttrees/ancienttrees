@@ -43,7 +43,16 @@ SPECIES_MIN_TREES = 3       # below this a species page lists too little to be a
 # country counts as a gap only once it can actually render, and the ones below
 # the line are reported separately as waiting on coverage rather than on words.
 COUNTRY_MIN_CITIES = 3
-PARKISH = re.compile(r"park|garden|jardin|giardin|jardim|parc|villa|orto|arboret", re.I)
+# Mirrors PARK_WORDS in site/src/lib/parks.ts exactly, including the trailing
+# space on "villa " (Real Alcazar de Sevilla contains "villa" as a substring of
+# "Sevilla" but not "villa " with a space, and matching without the space
+# reported a park page gap that could never build: no tree there actually
+# groups under that name in the site's own parkKey()).
+PARKISH = re.compile(
+    r"park|garden|jardin|jardim|giardin|parc|parco|tuin|villa |orto|botanic|"
+    r"bois|hortus|schlosspark|stadtpark|retiro|arboret",
+    re.I,
+)
 
 
 def slugify(name):
