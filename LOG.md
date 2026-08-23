@@ -1,5 +1,19 @@
 # LOG
 
+## 2026-08-23 - Assen (9), Haarlemmermeer (8), Cork deepened to 13, Bari released, two countries scouted
+
+This session's second attempt on a window whose first attempt claimed bari, haarlemmermeer and assen, then stopped after 6.4 minutes and 2 commits without touching any of them.
+
+**Assen published, 9 trees, all flagged (LRMB register).** Finished a write pass the first attempt had left half done (1 of 9 stories written). Three trees share the private Overcingel estate, two share a hidden pocket garden behind Nieuw Echten, the rest stand in a deer park, a former estate (Valkenstijn), a private front garden visible from Beilerstraat, and the former grounds of the Port Natal hospital.
+
+**Haarlemmermeer published, 8 trees, all flagged (LRMB register).** Finished a verify pass a previous session had dispatched but never run: 6 Hoofddorp/Vijfhuizen/Badhoevedorp register candidates. 5 shipped after an access check (a wingnut kept alive on the council's own condition when a shopping centre was built around it, a 1923 jubilee lime, Hoofddorp's oldest tree in front of a notary's office, a weeping beech its own 2024 inspection calls unhappy), 1 ships view-only (a private-garden maple, visible from the road per the register's own text, Hobart precedent), 1 stayed blocked. Also named the three Nieuw-Vennep trees a prior pass had left nameless. Register supply for this gemeente is now exhausted.
+
+**Bari released, not finished.** 3 verified, written trees sit below the 4-tree floor; every register candidate within the day-trip boundary is checked and blocked (`data/leads/bari.json` has the full record). Needs a reader tip or Hidde's call to widen the boundary, not another pass.
+
+**Register scouting: Asheville and Bali came up empty, Ireland turned into real work.** `scout_next.py --target` walked through both with no importable register found (detail in OPEN_DATA_SURVEY.md). It then pointed at Cork, and the "Heritage Trees of Ireland" register it surfaced turned out to already be imported since 2026-08-08 and already used for Dublin on 2026-08-09, just never logged in `register-scouting.json`, which is why it looked new. A first pass here nearly re-imported and overwrote the existing file with a smaller, unconverted copy; `git status` showing "M" instead of "??" caught it before it was committed. Re-used the existing Irish Grid converter (`scripts/irish_grid.py`) to extend the register with Blarney Estate and Fota Arboretum, Co. Cork, checked against Cork's 5 already-published trees for duplicates (2 skipped, within 60m of trees already live), and shipped 8 new ones, taking Cork from 5 to 13 against a target of 20.
+
+FOR HIDDE: nothing blocks. Worth knowing: the register-scouting ledger had a real gap (an already-imported, already-used register with no scouting entry), now closed for Ireland; worth a spot-check for other countries with a `data/registers/*.json` file but no matching line in `data/register-scouting.json`.
+
 ## 2026-08-23 - Night run 2026-08-23 00:28 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 34.4 minutes of its 120 minute window, 317 turns, 21 commands refused by the allowlist, ended clean (success). 12 tree(s) reached data/cities across 2 city file(s), and the run still wrote no log entry of its own. Claims left behind: haarlemmermeer, heerlen, hilversum, which block the top of the queue until they expire.
