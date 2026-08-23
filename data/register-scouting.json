@@ -430,6 +430,12 @@
    "country": "United States",
    "status": "blocked",
    "note": "SCOUTED 2026-08-23 (night run), Asheville #56, no ledger entry until now. The N.C. Forest Service Champion Tree List (ncagr.gov/divisions/nc-forest-service/nc-champion-tree-list, xlsx download, 379 rows, last updated January 2026) is a real statewide semantic register with species, circumference/height/spread, county and an Owner Authorized Public Access and Viewing Yes/No field, including a Buncombe County entry (Nordmann fir, public access Yes). BLOCKED outright, same as Missouri's Champion Trees: the file's own cover sheet states plainly that specific location information for each tree is not listed due to landowner privacy concerns. No address, no coordinates, not even a place name beyond county. Hard rule 10 treats a source's own withholding as absolute; there is no coordinate to approximate from and no lead to extract, only a species-and-county fact that could at most corroborate a tree found some other way. Do not re-download this file expecting different fields; it is a dead end for locations by explicit design, not an oversight. Next step for Asheville, if pursued: from-zero web research (parks department, Botanical Gardens at Asheville, Biltmore Estate's own published trees) rather than any register."
+  },
+  {
+   "place": "Asheville",
+   "country": "United States",
+   "status": "empty",
+   "note": "SCOUTED 2026-08-23. NC Forest Service Champion Tree Program: PDF list only, no coordinates, no stated licence, database was offline part of 2025. Buncombe County/Asheville GreenWorks Treasured Trees: right shape (semantic designation of rare/ancient trees) but no public list, map or dataset, only a nomination form and scattered blog mentions; the full set is only reachable by from-zero research, which rule 1(d) turns off since Asheville is not on Hidde's named list. Full detail in OPEN_DATA_SURVEY.md. No register to import."
   }
  ],
  "out_of_focus": {

@@ -2622,3 +2622,31 @@ Hard rule 1 forbids using its content beyond fact verification, because its own
 terms prohibit commercial reuse. They suggested it in good faith and the answer
 is still no. Worth knowing before a reply thanks them for it.
 
+## Asheville, North Carolina: scouted, no importable register (2026-08-23)
+
+`scripts/scout_next.py --target` pointed at Asheville (#56 in the queue, no
+supply, no verdict). Checked two candidate sources, neither usable:
+
+**NC Forest Service Champion Tree Program.** The state programme
+(ncagr.gov/divisions/nc-forest-service/urban/champion-trees) publishes only a
+PDF list, no coordinates, no county filter, no stated licence, and its own
+database has been offline for part of 2025 during a programme review. Not
+importable in any form; a PDF list without coordinates is a lead source at
+best, and even that would need the licence question answered first.
+
+**Buncombe County / Asheville GreenWorks "Treasured Trees".** The right shape
+of source in principle, exactly the semantic remarkable-tree designation this
+project wants rather than a bulk inventory: GreenWorks and the city
+co-sponsor a nomination programme that plaques individual "rare, special, or
+ancient" trees (one confirmed example, a White Oak dated to 1665 at the
+Center for Spiritual Living in West Asheville). But there is no public list,
+map or dataset of which trees hold the designation, only a nomination form
+and scattered individual mentions in blog posts and press. Finding the full
+set of designated trees would mean from-zero web research, tree by tree,
+which CLAUDE.md rule 1(d) turns off for an unnamed city (Asheville is not on
+Hidde's 2026-08-19 named list).
+
+Verdict: **empty**. No register to import. If Hidde names Asheville for
+from-zero research, the Treasured Trees programme is the place to start,
+since at least one located, dated example is already in hand.
+
