@@ -208,53 +208,52 @@ final class AncientTreesUITests: XCTestCase {
     @MainActor
     func testFourSlotBar() throws {
         let app = launch()
-        for label in ["Map", "Explore", "Add", "Collect"] {
+        for label in ["Map", "Explore", "Collect", "Yours"] {
             XCTAssertTrue(app.tabBars.buttons[label].waitForExistence(timeout: 12),
                           "tab \(label) is missing from the bar")
         }
         XCTAssertFalse(app.tabBars.buttons["Profile"].exists,
                        "Profile is a tab again; it belongs in the corner")
 
-        app.tabBars.buttons["Add"].tap()
+        app.tabBars.buttons["Collect"].tap()
         XCTAssertTrue(app.descendants(matching: .any)["spot-sheet"].waitForExistence(timeout: 6),
-                      "selecting Add did not present the sheet")
+                      "selecting Collect did not present the sheet")
         app.buttons["spot-close"].tap()
         XCTAssertTrue(app.tabBars.buttons["Map"].waitForExistence(timeout: 6))
         XCTAssertTrue(app.tabBars.buttons["Map"].isSelected,
-                      "Add took the selection with it; the bar must stay where it was")
+                      "Collect took the selection with it; the bar must stay where it was")
     }
 
-    /// The two verbs are two buttons, and each says only its own name. The
-    /// centre one ADDS a tree we do not have; Collect CLAIMS one we do, from
-    /// the tab where the collection is (Hidde, 2026-08-22: the centre button
-    /// was called Spot while the actual collecting happened under Collect).
+    /// ONE act, and the app decides what it was (Hidde, 2026-08-23: "add en
+    /// collect zijn wel moeilijk uit te leggen"). The centre button never
+    /// asks which kind of tree you are pointing at, because that is the one
+    /// question the person holding the phone cannot answer. It opens on the
+    /// camera, and the words add and collect appear only afterwards, as
+    /// outcomes.
     @MainActor
-    func testAddAndCollectAreSeparateVerbs() throws {
-        let add = XCUIApplication()
-        add.launchArguments = ["-at=52.3667,4.9086", "-reset-collection", "-add"]
-        add.launch()
-        XCTAssertTrue(add.staticTexts["Add a tree we do not have"].waitForExistence(timeout: 12),
-                      "the centre button does not say that it adds a tree")
-        XCTAssertTrue(add.buttons["add-start"].exists)
-
-        let collect = XCUIApplication()
-        collect.launchArguments = ["-at=52.3667,4.9086", "-reset-collection", "-collect-tree"]
-        collect.launch()
-        XCTAssertTrue(collect.staticTexts["Which tree are you at?"].waitForExistence(timeout: 12),
-                      "Collect's own button did not offer the trees around you")
+    func testCollectAsksForAPhotographRatherThanAChoice() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["-at=52.3667,4.9086", "-reset-collection", "-collect"]
+        app.launch()
+        XCTAssertTrue(app.staticTexts["Collect a tree"].waitForExistence(timeout: 12),
+                      "the centre button does not open on the collect intro")
+        XCTAssertTrue(app.buttons["add-start"].exists,
+                      "no way into the camera")
+        XCTAssertFalse(app.staticTexts["Add a tree we do not have"].exists,
+                       "the add/collect choice is back on the way in")
     }
 
-    /// Collect's day zero is a mission naming one real tree, never four zeros
-    /// and a grid of grey ghosts.
+    /// The fourth tab's day zero is a mission naming one real tree, never four
+    /// zeros and a grid of grey ghosts.
     @MainActor
     func testCollectDayZeroShowsMission() throws {
         let app = launch(["-tab=3"])
         XCTAssertTrue(app.otherElements["collect-mission"].waitForExistence(timeout: 12),
-                      "no mission on Collect's day zero")
+                      "no mission on the collection's day zero")
         XCTAssertFalse(app.staticTexts["Species collected"].exists,
                        "the empty stamp grid renders before the first tick")
         XCTAssertTrue(app.buttons["collect-a-tree"].exists,
-                      "Collect has no way to collect a tree")
+                      "Your trees has no way to collect a tree")
     }
 
     /// Explore is the feed, and the feed is the rows Hidde settled on
@@ -285,7 +284,10 @@ final class AncientTreesUITests: XCTestCase {
         let app = XCUIApplication()
         // Clean, like every launch: on the shared simulator a tick from an
         // earlier test otherwise starts this walk at "1 of 14".
-        app.launchArguments = ["-at=52.3667,4.9086", "-reset-collection", "-begin=amsterdam|Plantage"]
+        // -no-nudge because this test is about the WALK, not about the
+        // sign-in ask that a first tick correctly raises over it.
+        app.launchArguments = ["-at=52.3667,4.9086", "-reset-collection", "-no-nudge",
+                               "-begin=amsterdam|Plantage"]
         app.launch()
 
         XCTAssertTrue(app.otherElements["walk-mode"].waitForExistence(timeout: 12),

@@ -46,9 +46,31 @@ public final class Nudge {
     /// Set when a moment qualifies; the view presents a sheet off it.
     public var pending: SignInReason?
 
-    public init() {}
+    public init() {
+        // -reset-collection wipes Saved and Sightings, and until 2026-08-23 it
+        // left THIS behind, which made every test that ticks a tree depend on
+        // whatever an earlier run had already fired. On a simulator that had
+        // asked once, `quiet` was true and no sheet appeared; on a freshly
+        // erased one the first tick raised the sign-in sheet over the walk and
+        // the walk test could no longer read its own counter. It failed for
+        // days, on main, for a reason that had nothing to do with walks.
+        //
+        // The product behaviour is untouched: the nudge still fires for a real
+        // person on their first tick, which is the whole point of it.
+        if ProcessInfo.processInfo.arguments.contains("-reset-collection") {
+            UserDefaults.standard.removeObject(forKey: firedKey)
+            UserDefaults.standard.removeObject(forKey: lastKey)
+        }
+    }
 
     private var quiet: Bool {
+        // A test that ticks a tree is not testing the nudge, and until this
+        // existed it was silently at the mercy of one: on a simulator that had
+        // already been asked, no sheet appeared and the walk test passed; on a
+        // freshly erased one the first tick raised the sign-in sheet over the
+        // walk and the counter behind it could not be read. Same code, same
+        // walk, opposite result, decided by leftover UserDefaults.
+        if ProcessInfo.processInfo.arguments.contains("-no-nudge") { return true }
         if fired.count >= maxAsks { return true }
         if let last, Date().timeIntervalSince(last) < quietDays * 86_400 { return true }
         return false

@@ -1,4 +1,4 @@
-// What the centre button is for, before you use it.
+// What the middle button is for, before you have used it once.
 //
 // Rebuilt 2026-08-22 on the shape AllTrails and Airbnb both use for a sheet
 // that asks you to do something: a short title, one paragraph, a lot of air,
@@ -6,22 +6,23 @@
 // hand-drawn figure in the middle of the screen, which was decoration
 // standing between somebody and the thing they came to do.
 //
-// The button is the app's own BrandButtonStyle rather than a pill built here,
-// so the one green control looks the same everywhere it appears.
+// The copy changed again on 2026-08-23, when add and collect became one act.
+// It no longer explains two paths, because there are no longer two: it says
+// what to do, and names the two things that can come back.
 
 import SwiftUI
 
-struct AddIntro: View {
+struct CollectIntro: View {
     var onStart: () -> Void
 
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
-            Text("Add a tree we do not have")
+            Text("Collect a tree")
                 .font(.brand(28, .bold, relativeTo: .title))
                 .foregroundStyle(Brand.ink)
                 .fixedSize(horizontal: false, vertical: true)
 
-            Text("Photograph any tree you want to keep and it joins your own trees. If it is a remarkable old one, tell us: we check every tree, and it can join the map everybody sees.")
+            Text("Photograph a tree while you are standing in front of it. If it is one of ours, we tell you which and tick it off. If it is one we do not have, it is yours, and you can offer it for the map.")
                 .font(.system(size: 17))
                 .foregroundStyle(Brand.inkSoft)
                 .lineSpacing(3)
@@ -29,7 +30,7 @@ struct AddIntro: View {
 
             Spacer(minLength: 24)
 
-            Button("Add a tree", action: onStart)
+            Button("Take a photo", action: onStart)
                 .buttonStyle(BrandButtonStyle())
                 .accessibilityIdentifier("add-start")
         }
