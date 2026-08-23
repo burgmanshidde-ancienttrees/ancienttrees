@@ -13,6 +13,44 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-08-23
+
+Reviewed since the last review commit (`a9d6f4c`, 2026-08-22 07:00 UTC): 198
+commits, roughly 24 hours of unattended register/write-pass churn (The Hague
+21 to 30, Brisbane 10 to 14, Seville 20 to 37, Cork 5 to 13, four new Dutch
+cities from staged LRMB write passes, Amsterdam/Zaanstad/Haarlemmermeer,
+Haarlem/Hilversum/Hoorn, Oahu published) plus a large app-design session and
+the seven-language Contract J rollout going live in the blueprint. Ran
+`python3 scripts/qa.py` (3202 pages, clean), `python3 scripts/superlatives.py`
+(483 claims, no collisions) and `python3 scripts/preflight.py` (171 cities,
+0 problems, two pre-existing NOTEs on Hawaii/Oahu about shared coordinates).
+
+**BLOCKER — The Hague's city page contradicts its own tree count: the intro
+says "Twenty-one trees in all" while the page has 30.** `data/cities/the-hague.json:5`,
+live on `site/dist/the-hague.html`. Commit `6aa4e2a9` took the city from 21
+to 30 trees and correctly updated `meta_description` ("30 verified trees"),
+`question_meta` ("All 30 mapped"), and the FAQ, but the intro's closing
+sentence, the last line a visitor reads before the tree list, was left at
+the old count. This is exactly the error class CLAUDE.md names as a build
+check already earned by two prior incidents ("copy promising a tree count
+the city does not have") and P7 ("truth outranks polish") condemns as a
+self-contradicting page. It slipped past the guard that exists for it,
+`site/src/lib/count-promises.ts`: the checker's seven phrasing patterns
+(`N more`, `all N trees`, `N verified locations`, etc.) do not cover "N
+trees in all", so the Astro build did not throw. Checked the rest of the
+corpus for the same phrasing (`grep` across all 171 city files' intro/meta/
+question fields for "<number> trees in all/in total/mapped"): The Hague is
+the only real hit, so this looks like an isolated miss rather than a
+pattern, but the checker itself now has a known gap worth widening the next
+time count-promises.ts is touched.
+
+Nothing else found at BLOCKER or WARN. Spot-checked five other pages picked
+at random (Rome, Poznan, Cadiz, Oslo, Zaragoza): no banned words, titles and
+counts read consistent. Not a Monday, so no scheduled corpus-rot audit this
+entry.
+
+---
+
 ## 2026-08-22
 
 Reviewed since the last review commit (`316d086`, 2026-08-21 07:10 UTC): 133
