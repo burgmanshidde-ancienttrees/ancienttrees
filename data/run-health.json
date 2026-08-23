@@ -1243,6 +1243,28 @@
    "cities_touched": 5,
    "trees": -4,
    "logged": false
+  },
+  {
+   "started": "2026-08-23T10:10:13+00:00",
+   "date": "2026-08-23",
+   "run_id": "32633009704",
+   "minutes": 22.6,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 197,
+   "denials": 31,
+   "denials_source": "permission_denials: Bash(cat), Bash(cp), Bash(curl), Bash(echo), Bash(for), Bash(if), Bash(python3), Bash(rm), Bash(set), Bash(wc)",
+   "ended": "success",
+   "tokens": 3489570,
+   "claims_held": [
+    "krakow",
+    "padua",
+    "berlin"
+   ],
+   "commits": 10,
+   "cities_touched": 1,
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
