@@ -240,6 +240,50 @@ export function cityFace(cityData: CityEntryLike, width = 400): string | null {
   return hero ? thumbUrl(hero.url, width) : null;
 }
 
+/** The species card face: the pinned tree when one is set, else the best
+ * photograph in the set for a letterbox.
+ *
+ * This is cityFace's missing twin and it is missing for a reason worth
+ * recording. On 2026-08-21 Hidde said the London Plane and Ginkgo cards were
+ * showing the wrong pictures, and `face_tree_id` was added so a person could
+ * pin one. It was wired into the homepage shelves by hand and nowhere else, so
+ * /species went on taking the first photograph it happened to find. Two days
+ * later he opened the Horse Chestnut card and got a close-up of red survey
+ * paint around a wound, which no ranking could have caught and a pinned face
+ * would have.
+ *
+ * The lesson is the one CLAUDE.md already draws about hearts and the sign-in
+ * dialog: parity wired by hand does not survive the page count. One helper,
+ * called from every place that draws a species card.
+ *
+ * `exclude` lets a caller that lays out several shelves at once avoid showing
+ * the same photograph twice; a pinned face ignores it, because a person chose
+ * that one on purpose.
+ */
+export function speciesFace(
+  faceTreeId: string | null | undefined,
+  trees: TreeLike[],
+  width = 400,
+  exclude?: Set<string>,
+): string | null {
+  const rank = (t: TreeLike | undefined) => {
+    if (!t) return null;
+    const p = usablePhoto(t) as { url?: string; width?: number; height?: number } | null;
+    if (!p?.url) return null;
+    const w = photoWidth(p);
+    const h = p.height ?? 0;
+    return { url: p.url, big: w === 0 || w >= MIN_CARD_PX, landscape: w > 0 && h > 0 && w >= h, w };
+  };
+  const pinned = faceTreeId ? rank(trees.find((t) => t.id === faceTreeId)) : null;
+  if (pinned) return thumbUrl(pinned.url, width);
+  const best = trees
+    .map(rank)
+    .filter((c): c is NonNullable<typeof c> => c !== null && !(exclude?.has(c.url)))
+    .sort((a, b) => Number(b.big) - Number(a.big)
+      || Number(b.landscape) - Number(a.landscape) || b.w - a.w)[0];
+  return best ? thumbUrl(best.url, width) : null;
+}
+
 /** The same face, as a 1x/2x pair for a fixed-size box. A retina screen paints
  * an 86 point sidebar thumbnail with 172 pixels; asking for 86 is what made
  * those look soft. */

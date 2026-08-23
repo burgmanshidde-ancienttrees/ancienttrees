@@ -5,7 +5,7 @@ import Base from "../layouts/Base.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { cityIsRenderable } from "../lib/trees";
 import { groupTreesBySpecies, SPECIES_MIN_TREES, GROUP_ORDER, speciesGroup } from "../lib/species";
-import { usablePhoto, thumbUrl } from "../lib/images";
+import { speciesFace } from "../lib/images";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { fitTitle } from "../lib/title";
 import { byCityListOrder, byCityListOrderEntry } from "../lib/city-order";
@@ -37,14 +37,17 @@ qualifying.sort((a, b) => b[1].length - a[1].length);
 const speciesCards = qualifying.map(([common, members]) => {
   const intro = introBySlug.get(common)!;
   const cities = new Set(members.map((m) => m.city.id));
-  const face = members.map((m) => usablePhoto(m.tree)).find((p) => p?.url);
+  // One helper, shared with every other place that draws a species card. It
+  // honours face_tree_id, which is the only way a person can override a
+  // ranking that cannot tell a portrait from a close-up of bark.
+  const face = speciesFace(intro.data.face_tree_id, members.map((m) => m.tree), 400);
   return {
     slug: intro.data.slug,
     common,
     group: speciesGroup(intro.data.scientific_name),
     count: members.length,
     cities: cities.size,
-    face: face?.url ? thumbUrl(face.url, 400) : null,
+    face,
   };
 });
 const sections = GROUP_ORDER

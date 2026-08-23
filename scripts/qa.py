@@ -432,6 +432,44 @@ def check_one_tree_card():
     return out
 
 
+def check_species_face_is_chosen():
+    """The twelfth ratchet check, from 2026-08-23. This class of error has now
+    appeared on two separate days, which is what turns a lesson into a check.
+
+    On 2026-08-21 Hidde said the London Plane and Ginkgo cards were showing the
+    wrong pictures, and `face_tree_id` was added to the species schema so a
+    person could pin one. It was wired into the homepage shelves by hand and
+    nowhere else. Two days later he opened /species and got the Horse Chestnut
+    card fronted by a close-up of red survey paint around a wound on a trunk,
+    because that page still took the first photograph it happened to find.
+
+    No ranking can catch that. Only a person can see that a picture is of bark
+    rather than of a tree, and the pin is how they say so, which makes a page
+    that ignores the pin worse than one with no ranking at all.
+
+    So: any page that reads the species collection and draws a card must go
+    through speciesFace() or consult face_tree_id itself. Source-level, because
+    the built HTML cannot tell you how a url was chosen."""
+    out = []
+    root = Path(__file__).resolve().parent.parent
+    pages = root / "site" / "src" / "pages"
+    if not pages.exists():
+        return out
+    for f in sorted(pages.rglob("*.astro")):
+        src = f.read_text(encoding="utf-8")
+        draws_species_card = ("speciesCards" in src or "speciesShelf" in src
+                              or "pinnedSpeciesPhoto" in src)
+        if not draws_species_card:
+            continue
+        if "speciesFace(" in src or "face_tree_id" in src:
+            continue
+        out.append("%s draws a species card without speciesFace() or face_tree_id, "
+                   "so a person cannot override what it picks. That is how a bark "
+                   "close-up came to front the Horse Chestnut page."
+                   % f.relative_to(root))
+    return out
+
+
 def check_sheet_integrity():
     """The tenth ratchet check, from 2026-08-18.
 
@@ -666,6 +704,7 @@ def main():
     failures += check_one_city_order()
     failures += check_sitemap_dates()
     failures += check_no_name_promise(pages)
+    failures += check_species_face_is_chosen()
 
     if failures:
         print(f"QA FAILED: {len(failures)} problem(s) in {len(pages)} pages")

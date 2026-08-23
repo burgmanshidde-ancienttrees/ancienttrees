@@ -1546,3 +1546,42 @@ earlier the same day. `passcheck --pending` would have offered them to a write
 pass as unwritten work, which is the exact failure BRIEF_WRITING.md documents.
 Two pre-existing items remain and are not from this run: bari-verified.json has
 3 stories written and ready to merge, and nijmegen-verified.json is stale.
+
+## The species cards were choosing their own faces, 2026-08-23
+
+Hidde, on the Horse Chestnut card: he would not use that photo as a thumbnail.
+It was a close-up of a trunk with red survey paint ringing an old wound, which
+at card size reads as crude graffiti and which fails the Cadiz standard outright
+whatever it is used for: the tree is not the subject and the crown is not
+readable. That photo (vie_003, the Prater Hauptallee) is now `held`.
+
+**The cause is the second appearance of a lesson, so it is now a check.** On
+2026-08-21 he said the London Plane and Ginkgo cards were showing the wrong
+pictures, and `face_tree_id` was added to the species schema so a person could
+pin one. It was wired into the homepage shelves BY HAND and nowhere else, so
+/species went on taking the first photograph it happened to find, in whatever
+order the collection returned. That is the same failure CLAUDE.md already
+records for hearts and the sign-in dialog: parity wired by hand does not survive
+the page count.
+
+- `speciesFace()` in site/src/lib/images.ts is now the one helper, the missing
+  twin of `cityFace()`. Pin wins, then enough pixels, then landscape, then
+  widest.
+- `check_species_face_is_chosen()` in scripts/qa.py is the twelfth ratchet
+  check: any page drawing species cards must go through it or read
+  `face_tree_id`. Verified against the pre-fix file, which it refuses.
+- Horse Chestnut is pinned to hag_004, The Hague's Postzegelboom: whole tree,
+  autumn colour, people for scale, centred so it survives the crop.
+
+**How bad is the rest? Unknown, and that is the honest answer.** 79 species show
+a photo and 76 of them are still guessed. Three were sampled and two failed:
+this one, and European Beech, whose face is a woodland footpath with no tree in
+it (edi_009, which is a fine picture for its own entry, "The Tall Trees of the
+Hermitage of Braid", and useless as a species face). That distinction matters: a
+photo can be right for its tree page and wrong as a card, so the fix is pinning,
+not deleting.
+
+`python3 scripts/species_faces.py` lists every face for a viewing pass, the same
+shortlist pattern photo_gaps.py uses, and flags pins that do nothing. One is
+dangling already: Pin Oak points at apd_008, published this morning with no
+photograph.
