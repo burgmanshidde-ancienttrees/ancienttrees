@@ -18,7 +18,7 @@
    "country": "Netherlands",
    "slug": "amsterdam",
    "status": "published",
-   "trees": 39
+   "trees": 34
   },
   {
    "city": "Barcelona",
@@ -47,7 +47,7 @@
    "country": "Italy",
    "slug": "milan",
    "status": "published",
-   "trees": 21
+   "trees": 22
   },
   {
    "city": "Florence",
@@ -130,7 +130,7 @@
    "slug": "porto",
    "status": "published",
    "demand_views_90d": 120415,
-   "trees": 27
+   "trees": 29
   },
   {
    "city": "Copenhagen",
@@ -175,7 +175,7 @@
    "slug": "brisbane",
    "status": "published",
    "demand_views_90d": null,
-   "trees": 10
+   "trees": 15
   },
   {
    "city": "Venice",
@@ -228,7 +228,7 @@
    "slug": "alicante",
    "status": "published",
    "demand_views_90d": 77454,
-   "trees": 10
+   "trees": 11
   },
   {
    "city": "Boston",
@@ -251,7 +251,7 @@
    "status": "published",
    "note": "Salvaged from an interrupted verification pass (RAMI, ilregistrodeglialberi.it, filled the age/health/access gap MASAF lacks). 9 trees inside a 1.25 km walk: four in the 1545 Orto Botanico (the Goethe Palm, an Oriental Plane, a grafted Ginkgo, a 1786 Magnolia), a magnolia in the Sant Antonio basilica cloister, two planes and a leaning hackberry in Parco Treves, and a folded twin-tree Sophora entry in Piazza Capitaniato. Full detail in data/research/padova-notes.md and data/leads/padova.json. Renamed from Padova to Padua 2026-08-06, hours after publication, to match the English exonym every other Italian city here uses; old URLs redirect.",
    "demand_views_90d": 54592,
-   "trees": 10
+   "trees": 12
   },
   {
    "city": "Krakow",
@@ -288,7 +288,7 @@
    "country": "Germany",
    "slug": "berlin",
    "status": "published",
-   "trees": 18
+   "trees": 19
   },
   {
    "city": "Sintra",
@@ -312,7 +312,7 @@
    "slug": "nijmegen",
    "status": "published",
    "demand_views_90d": 42338,
-   "trees": 14
+   "trees": 18
   },
   {
    "city": "Haarlem",
@@ -352,7 +352,7 @@
    "slug": "leiden",
    "status": "published",
    "demand_views_90d": 33227,
-   "trees": 14
+   "trees": 12
   },
   {
    "city": "Cork",
@@ -493,21 +493,29 @@
    "trees": 0
   },
   {
-   "city": "Genoa",
-   "country": "Italy",
-   "slug": "genoa",
-   "status": "published",
-   "note": "First city through the split pipeline (generated brief, verify pass on Sonnet, writing pass). Three pockets, not one walk; the page says so. Liguria's own register carries an age field, unlike MASAF.",
-   "demand_views_90d": 145206,
-   "trees": 10
-  },
-  {
    "city": "Nice",
    "country": "France",
    "slug": "nice",
    "status": "published",
    "demand_views_90d": 136877,
    "trees": 10
+  },
+  {
+   "city": "Genoa",
+   "country": "Italy",
+   "slug": "genoa",
+   "status": "published",
+   "note": "First city through the split pipeline (generated brief, verify pass on Sonnet, writing pass). Three pockets, not one walk; the page says so. Liguria's own register carries an age field, unlike MASAF.",
+   "demand_views_90d": 145206,
+   "trees": 12
+  },
+  {
+   "city": "San Francisco",
+   "country": "United States",
+   "slug": "san-francisco",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
   },
   {
    "city": "Bologna",
@@ -524,15 +532,7 @@
    "status": "published",
    "note": "Hidde, 2026-08-02: he is travelling there, so this one is worth doing properly and soon. Search order per Step 1: name the shrine and temple precincts first (Kushida-jinja and its ginkgo, Sumiyoshi-jinja, Shofuku-ji, Tochoji, Ohori Park, Maizuru Park and the castle ruins, Rakusuien, Atago-jinja), then the national Natural Monument register, then the generic sweep. Note the CURATION.md entry closing Fukuoka is about the REGISTER LAYER only (no openly licensed prefectural dataset), which says nothing about whether the city has remarkable trees to curate.",
    "demand_views_90d": 77485,
-   "trees": 11
-  },
-  {
-   "city": "San Francisco",
-   "country": "United States",
-   "slug": "san-francisco",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
+   "trees": 13
   },
   {
    "city": "Lucca",
@@ -541,7 +541,7 @@
    "status": "published",
    "note": "MASAF cluster: 20 registered trees inside 1.6 km, 6 published as one walk of about 800 m entirely inside the walls. Rest in data/leads/lucca.json.",
    "demand_views_90d": 52271,
-   "trees": 10
+   "trees": 14
   },
   {
    "city": "Buenos Aires",
@@ -601,20 +601,20 @@
    "trees": 4
   },
   {
-   "city": "Setubal",
-   "country": "Portugal",
-   "slug": "setubal",
-   "status": "published",
-   "demand_views_90d": 22582,
-   "trees": 10
-  },
-  {
    "city": "Santiago de Compostela",
    "country": "Spain",
    "slug": "santiago-de-compostela",
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
+  },
+  {
+   "city": "Setubal",
+   "country": "Portugal",
+   "slug": "setubal",
+   "status": "published",
+   "demand_views_90d": 22582,
+   "trees": 10
   },
   {
    "city": "Glasgow",
@@ -630,7 +630,7 @@
    "slug": "warsaw",
    "status": "published",
    "demand_views_90d": 197929,
-   "trees": 7
+   "trees": 9
   },
   {
    "city": "Rotterdam",
@@ -720,6 +720,15 @@
    "trees": 0
   },
   {
+   "city": "Galway",
+   "country": "Ireland",
+   "slug": "galway",
+   "status": "pending",
+   "note": "Hidde, 2026-08-02: publish it (\"wat mij betreft mag je galway gewoon online zetten we hebben ze toch\"). The run held it back because Coole Park is 50-70 min by bus, outside the ~30 min day-trip boundary; he widened the boundary for this case. Ship with the true travel time stated in transport, never rounded down. Prior research is in CURATION.md 2026-07-30 and the 2026-08-02 run entry.",
+   "demand_views_90d": null,
+   "trees": 0
+  },
+  {
    "city": "Kyoto",
    "country": "Japan",
    "slug": "kyoto",
@@ -728,15 +737,6 @@
    "trees": 18,
    "promoted": "Promoted from 51 to the top of the 'next' block by Hidde on 2026-08-10, on Search Console evidence rather than on the demand proxy: /kyoto is the site's best-performing page by clicks (3 clicks on 34 impressions in the 10-day window, ahead of Lisbon's 2 on 48 and the homepage's 2 on 19). Demand ranking had it at 51 on 142,353 Wikipedia views; measured clicks beat the proxy whenever we have them.",
    "caveat": "What improving Kyoto can and cannot be. Its 10 trees span 35.5 km and NOT ONE has another within 2 km, the worst spread of any city on the site (CLAUDE.md's cluster doctrine names it as the counter-example to Cadiz). So Kyoto will never be an afternoon's walk, and adding trees to the existing ten would not change that. The work that pays is a genuine walkable cluster inside one district, Higashiyama or Arashiyama, which means researching a district rather than a city and accepting that the current ten stay a scattered list beside it. Photos are nearly done already: 8 of 10, missing only the Heian Cedar of Katanami and the Emperor's Gift Cherry of Kamigamo."
-  },
-  {
-   "city": "Galway",
-   "country": "Ireland",
-   "slug": "galway",
-   "status": "pending",
-   "note": "Hidde, 2026-08-02: publish it (\"wat mij betreft mag je galway gewoon online zetten we hebben ze toch\"). The run held it back because Coole Park is 50-70 min by bus, outside the ~30 min day-trip boundary; he widened the boundary for this case. Ship with the true travel time stated in transport, never rounded down. Prior research is in CURATION.md 2026-07-30 and the 2026-08-02 run entry.",
-   "demand_views_90d": null,
-   "trees": 0
   },
   {
    "city": "Phuket",
@@ -763,14 +763,6 @@
    "trees": 0
   },
   {
-   "city": "Cordoba",
-   "country": "Spain",
-   "slug": "cordoba",
-   "status": "published",
-   "demand_views_90d": 74675,
-   "trees": 15
-  },
-  {
    "city": "Munich",
    "country": "Germany",
    "slug": "munich",
@@ -784,6 +776,14 @@
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
+  },
+  {
+   "city": "Cordoba",
+   "country": "Spain",
+   "slug": "cordoba",
+   "status": "published",
+   "demand_views_90d": 74675,
+   "trees": 16
   },
   {
    "city": "Sydney",
@@ -962,14 +962,6 @@
    "trees": 4
   },
   {
-   "city": "Zaragoza",
-   "country": "Spain",
-   "slug": "zaragoza",
-   "status": "published",
-   "demand_views_90d": 87580,
-   "trees": 7
-  },
-  {
    "city": "Sofia",
    "country": "Bulgaria",
    "slug": "sofia",
@@ -984,6 +976,14 @@
    "status": "published",
    "demand_views_90d": 118066,
    "trees": 6
+  },
+  {
+   "city": "Zaragoza",
+   "country": "Spain",
+   "slug": "zaragoza",
+   "status": "published",
+   "demand_views_90d": 87580,
+   "trees": 7
   },
   {
    "city": "Bangkok",

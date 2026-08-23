@@ -226,7 +226,8 @@ def measure(pts):
         if os.path.exists(lp):
             with open(lp, encoding="utf-8") as fh:
                 for e in json.load(fh).get("leads") or []:
-                    if not L.is_done(e) and not L.classify(e, blocking) and not L.readiness(e):
+                    if (not L.is_done(e) and not L.published_match(slug, e)
+                            and not L.classify(e, blocking) and not L.readiness(e)):
                         ready += 1
         out[d["city"].lower()] = {
             "slug": slug,
