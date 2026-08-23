@@ -1,64 +1,72 @@
 {
- "city": "Potsdam",
- "country": "Germany",
- "city_slug": "potsdam",
- "note": "Candidates from the 2026-08-15 Potsdam verification pass. Four trees, pot_001 to pot_004, were delivered and published in data/cities/potsdam.json on 2026-08-15: two Naturdenkmal limes and two oaks in the Glienicke parkland on the Berlin bank of the bridge. A fifth and sixth tree, pot_005 (Door Oak of Pfaueninsel, register 6-101/B) and pot_006 (Schlosswiese Oak of Pfaueninsel, register 6-102/B), shipped the same pass and were retired 2026-08-16 per REVIEW.md's 2026-08-16 BLOCKER: both duplicate trees already published in data/cities/berlin.json (ber_012 and ber_011 respectively, same register ids, coordinates within 12-15m, same sources), and Potsdam's own FAQ already conceded they were 'not actually in Potsdam'. Their old URLs now redirect to the Berlin pages via RENAMED_TREE_SLUGS in site/src/lib/redirect-map.ts. Folded into blocked below so a future pass does not re-research them into Potsdam.",
- "leads": [
-  {
-   "register_ids": [
-    "6-38/B-1",
-    "6-38/B-2",
-    "6-38/B-3"
-   ],
-   "name": "The plane trees behind Jagdschloss Glienicke (Ahornblättrige Platane x3)",
-   "species": "London Plane (Platanus x acerifolia)",
-   "place": "Garten Klein-Glienicke, hinter dem Jagdschloss, Königstraße 36B",
-   "latitude": 52.410565,
-   "longitude": 13.098013,
-   "status": "held",
-   "reason": "LEAD, access uncertain, not blocked outright. Three co-located London Planes (near-identical siting, treat as one collectible point if pursued, per the register-twin rule) stand in the walled garden directly behind Jagdschloss Glienicke, which has housed the Sozialpädagogisches Fortbildungsinstitut Berlin-Brandenburg (SFBB), a training institute, since 2007. Search results say the wider park around the building is open to the public 'at any time', but nothing found this pass confirms the specific fenced garden behind the building itself, as distinct from the surrounding open parkland (which is where pot_001 stands, and is NOT this garden). Per BRIEF_RESEARCH.md, when access cannot be stated honestly the tree waits as a lead rather than shipping or being blocked outright. A future pass should check the SFBB's own site or call to confirm whether the garden is open to casual visitors or only to institute guests; also present but unexamined at the same address, a Blutbuche (copper beech), register id 6-39/B, not yet a candidate. CONFIRMED 2026-08-15: this trio is genuinely distinct from the Pfaueninsel candidates verified the same pass (different coordinates, ~2km apart, different island entirely), not a re-surfacing of the same trees."
-  },
-  {
-   "register_ids": ["6-108/B"],
-   "name": "Split-leaved oak near Schloss Pfaueninsel (Geschlitzblaettrige Trauben-Eiche)",
-   "species": "Sessile Oak, cut-leaved form (Quercus petraea)",
-   "place": "Pfaueninsel, ca. 150m nordoestlich vom Schloss",
-   "latitude": 52.431763,
-   "longitude": 13.1212,
-   "status": "lead",
-   "reason": "Evidence-only lead: register entry (Berlin Naturdenkmal 6-108/B, designated 1993-03-02, reason 'Seltenheit') is the only source found this pass. A WebSearch snippet describes a rare split-leaved (geschlitzblaettrige) oak variety near the castle matching this designation reason, but it appears to paraphrase the same government PDF rather than an independent source, so it does not clear the two-source bar. No baumkunde.de or Ostdeutsches Baumarchiv entry located for this specific tree despite both hosting other Pfaueninsel oaks (see pot_005, pot_006 in data/research/potsdam-verified.json). A future pass: search baumkunde/Ostdeutsches Baumarchiv directly for 'geschlitzblaettrige Eiche Pfaueninsel', or check the Pfaueninsel visitor centre/SPSG's own tree signage."
-  },
-  {
-   "register_ids": ["6-71/B"],
-   "name": "The Plane by the Wirtshaus zur Pfaueninsel",
-   "species": "London Plane (Platanus acerifolia)",
-   "place": "Pfaueninsel, westlich des Wirtshauses zur Pfaueninsel, Pfaueninselchaussee 100",
-   "latitude": 52.428433,
-   "longitude": 13.121932,
-   "status": "lead",
-   "reason": "Evidence-only lead: register entry (Berlin Naturdenkmal 6-71/B, designated 1993-03-02, reason 'Schoenheit, landeskundliche Gruende') is the only source found this pass. A baumkunde.de entry for a plane tree at the Wirtshaus zur Faehre Pfaueninsel exists but its exact URL/register number and coordinates could not be confirmed this pass (WebSearch snippets only, no direct page fetch succeeded), so identity match to 6-71/B is unconfirmed rather than established. Also flag for a future pass: check whether 'westlich des Wirtshauses' places this tree in the inn's beer garden/private terrace rather than open parkland, which would be an access question under hard rule 10, not yet resolved."
-  }
- ],
- "blocked": [
-  {
-   "register_ids": ["6-101/B"],
-   "name": "The Door Oak of Pfaueninsel",
-   "species": "Sessile Oak (Quercus petraea)",
-   "place": "Pfaueninsel, about 100m northeast of the ferry landing",
-   "latitude": 52.430667,
-   "longitude": 13.122139,
-   "status": "blocked",
-   "reason": "FOLDED, not researched wrong: this is the same physical tree as Berlin's ber_012 (\"The Tuereiche (Door Oak) of Pfaueninsel\"), same register id, coordinates 12m apart, same sources (baumkunde.de #6402, the Berlin Naturdenkmal PDF). Shipped as Potsdam's pot_005 on 2026-08-15, retired 2026-08-16 per the fresh-eyes BLOCKER: one physical tree cannot hold two ids in two cities. Do not re-add to Potsdam; it is Berlin's."
-  },
-  {
-   "register_ids": ["6-102/B"],
-   "name": "The Schlosswiese Oak of Pfaueninsel",
-   "species": "Sessile Oak (Quercus petraea)",
-   "place": "Pfaueninsel, Schlosswiese meadow about 100m northeast of the Schloss",
-   "latitude": 52.431453,
-   "longitude": 13.120752,
-   "status": "blocked",
-   "reason": "FOLDED, not researched wrong: this is the same physical tree as Berlin's ber_011 (\"The Great Oak of Pfaueninsel\"), same register id, coordinates 10m apart, same sources (baumkunde.de #2135, Ostdeutsches Baumarchiv, the Berlin Naturdenkmal PDF). Shipped as Potsdam's pot_006 on 2026-08-15, retired 2026-08-16 per the fresh-eyes BLOCKER: one physical tree cannot hold two ids in two cities. Do not re-add to Potsdam; it is Berlin's."
-  }
- ]
+  "city": "Potsdam",
+  "country": "Germany",
+  "city_slug": "potsdam",
+  "note": "Candidates from the 2026-08-15 Potsdam verification pass. Four trees, pot_001 to pot_004, were delivered and published in data/cities/potsdam.json on 2026-08-15: two Naturdenkmal limes and two oaks in the Glienicke parkland on the Berlin bank of the bridge. A fifth and sixth tree, pot_005 (Door Oak of Pfaueninsel, register 6-101/B) and pot_006 (Schlosswiese Oak of Pfaueninsel, register 6-102/B), shipped the same pass and were retired 2026-08-16 per REVIEW.md's 2026-08-16 BLOCKER: both duplicate trees already published in data/cities/berlin.json (ber_012 and ber_011 respectively, same register ids, coordinates within 12-15m, same sources), and Potsdam's own FAQ already conceded they were 'not actually in Potsdam'. Their old URLs now redirect to the Berlin pages via RENAMED_TREE_SLUGS in site/src/lib/redirect-map.ts. Folded into blocked below so a future pass does not re-research them into Potsdam.",
+  "leads": [
+    {
+      "register_ids": [
+        "6-38/B-1",
+        "6-38/B-2",
+        "6-38/B-3"
+      ],
+      "name": "The plane trees behind Jagdschloss Glienicke (Ahornblättrige Platane x3)",
+      "species": "London Plane (Platanus x acerifolia)",
+      "place": "Garten Klein-Glienicke, hinter dem Jagdschloss, Königstraße 36B",
+      "latitude": 52.410565,
+      "longitude": 13.098013,
+      "status": "held",
+      "reason": "LEAD, access uncertain, not blocked outright. Three co-located London Planes (near-identical siting, treat as one collectible point if pursued, per the register-twin rule) stand in the walled garden directly behind Jagdschloss Glienicke, which has housed the Sozialpädagogisches Fortbildungsinstitut Berlin-Brandenburg (SFBB), a training institute, since 2007. Search results say the wider park around the building is open to the public 'at any time', but nothing found this pass confirms the specific fenced garden behind the building itself, as distinct from the surrounding open parkland (which is where pot_001 stands, and is NOT this garden). Per BRIEF_RESEARCH.md, when access cannot be stated honestly the tree waits as a lead rather than shipping or being blocked outright. A future pass should check the SFBB's own site or call to confirm whether the garden is open to casual visitors or only to institute guests; also present but unexamined at the same address, a Blutbuche (copper beech), register id 6-39/B, not yet a candidate. CONFIRMED 2026-08-15: this trio is genuinely distinct from the Pfaueninsel candidates verified the same pass (different coordinates, ~2km apart, different island entirely), not a re-surfacing of the same trees."
+    },
+    {
+      "register_ids": [
+        "6-108/B"
+      ],
+      "name": "Split-leaved oak near Schloss Pfaueninsel (Geschlitzblaettrige Trauben-Eiche)",
+      "species": "Sessile Oak, cut-leaved form (Quercus petraea)",
+      "place": "Pfaueninsel, ca. 150m nordoestlich vom Schloss",
+      "latitude": 52.431763,
+      "longitude": 13.1212,
+      "status": "duplicate",
+      "reason": "Already published, under Berlin not Potsdam: this is the exact same tree as Berlin's ber_015 (\"The Cut-Leaf Oak of Pfaueninsel\"), same register id 6-108/B, same coordinates (52.431763, 13.121202 here vs 52.431763, 13.121202 there). Pfaueninsel is administratively part of Berlin (Steglitz-Zehlendorf), not Potsdam, even though it sits geographically closer to Potsdam and a distance-based register query pulls it into this city's candidate list. Same situation as the other two Pfaueninsel oaks this file already recorded as folded into ber_011 and ber_012. Marked 'duplicate' 2026-08-23 after leads.py's READY check surfaced this as needing a story, which it does not."
+    },
+    {
+      "register_ids": [
+        "6-71/B"
+      ],
+      "name": "The Plane by the Wirtshaus zur Pfaueninsel",
+      "species": "London Plane (Platanus acerifolia)",
+      "place": "Pfaueninsel, westlich des Wirtshauses zur Pfaueninsel, Pfaueninselchaussee 100",
+      "latitude": 52.428433,
+      "longitude": 13.121932,
+      "status": "lead",
+      "reason": "Evidence-only lead: register entry (Berlin Naturdenkmal 6-71/B, designated 1993-03-02, reason 'Schoenheit, landeskundliche Gruende') is the only source found this pass. A baumkunde.de entry for a plane tree at the Wirtshaus zur Faehre Pfaueninsel exists but its exact URL/register number and coordinates could not be confirmed this pass (WebSearch snippets only, no direct page fetch succeeded), so identity match to 6-71/B is unconfirmed rather than established. Also flag for a future pass: check whether 'westlich des Wirtshauses' places this tree in the inn's beer garden/private terrace rather than open parkland, which would be an access question under hard rule 10, not yet resolved."
+    }
+  ],
+  "blocked": [
+    {
+      "register_ids": [
+        "6-101/B"
+      ],
+      "name": "The Door Oak of Pfaueninsel",
+      "species": "Sessile Oak (Quercus petraea)",
+      "place": "Pfaueninsel, about 100m northeast of the ferry landing",
+      "latitude": 52.430667,
+      "longitude": 13.122139,
+      "status": "blocked",
+      "reason": "FOLDED, not researched wrong: this is the same physical tree as Berlin's ber_012 (\"The Tuereiche (Door Oak) of Pfaueninsel\"), same register id, coordinates 12m apart, same sources (baumkunde.de #6402, the Berlin Naturdenkmal PDF). Shipped as Potsdam's pot_005 on 2026-08-15, retired 2026-08-16 per the fresh-eyes BLOCKER: one physical tree cannot hold two ids in two cities. Do not re-add to Potsdam; it is Berlin's."
+    },
+    {
+      "register_ids": [
+        "6-102/B"
+      ],
+      "name": "The Schlosswiese Oak of Pfaueninsel",
+      "species": "Sessile Oak (Quercus petraea)",
+      "place": "Pfaueninsel, Schlosswiese meadow about 100m northeast of the Schloss",
+      "latitude": 52.431453,
+      "longitude": 13.120752,
+      "status": "blocked",
+      "reason": "FOLDED, not researched wrong: this is the same physical tree as Berlin's ber_011 (\"The Great Oak of Pfaueninsel\"), same register id, coordinates 10m apart, same sources (baumkunde.de #2135, Ostdeutsches Baumarchiv, the Berlin Naturdenkmal PDF). Shipped as Potsdam's pot_006 on 2026-08-15, retired 2026-08-16 per the fresh-eyes BLOCKER: one physical tree cannot hold two ids in two cities. Do not re-add to Potsdam; it is Berlin's."
+    }
+  ]
 }
