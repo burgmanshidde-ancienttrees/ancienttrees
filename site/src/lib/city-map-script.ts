@@ -205,7 +205,17 @@ markers.forEach(function(m, idx) {
   el.className = 'pin-tree';
   el.title = m.name;
   el.innerHTML = '<svg viewBox="0 0 40 40" fill="currentColor" aria-hidden="true">' + m.icon + '</svg>'
-               + '<span class="pin-rank">' + m.label + '</span>';
+               // No number. It was this tree's position in our own list, which is
+               // our ordering and not information a visitor needs; Google Maps,
+               // AllTrails and Komoot all number a pin only when the ORDER is
+               // the point, as on a route. Here it sat on top of the species
+               // silhouette, which is the whole idea of the pin, and fought it.
+               // (Hidde, 2026-08-23: "het spreekt voor zich welke welke is als
+               // je er op klikt".) The badge itself stays, because it carries
+               // something the number was only borrowing: whether you have
+               // stood in front of this tree. Empty by default, a moss tick
+               // once you have.
+               + '<span class="pin-got" aria-hidden="true"></span>';
   // A tree at its peak says so on the map. The particles fall from the CROWN of
   // the drawn species, not from a generic dot, which is the whole reason the
   // pins are silhouettes: a ginkgo sheds from a ginkgo. The month is read here

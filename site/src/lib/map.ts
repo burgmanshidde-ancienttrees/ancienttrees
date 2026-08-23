@@ -36,7 +36,7 @@ export function mapHead(): string {
 
 /** A single-pin map: the tree page's own map, ported from
  * single_pin_script(), build_site.py:1203-1219. */
-export function singlePinScript(lat: number, lng: number, label = "1"): string {
+export function singlePinScript(lat: number, lng: number): string {
   return mapScript(`
 var map = new maplibregl.Map({
   container: 'map', style: '${MAP_STYLE}',
@@ -46,8 +46,9 @@ var map = new maplibregl.Map({
 map.addControl(new maplibregl.NavigationControl());
 map.on('load', function() { map.resize(); });
 var el = document.createElement('div');
-el.className = 'pin';
-el.textContent = '${label}';
+// A dot, not a numbered pill. There is exactly one pin on this map, so a "1"
+// on it was never telling anybody anything.
+el.className = 'pin pin-dot';
 new maplibregl.Marker({ element: el }).setLngLat([${lng}, ${lat}]).addTo(map);
 `);
 }
