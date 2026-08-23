@@ -3133,6 +3133,24 @@
     "note": "session work, not an agent pass: wrote 3 stories directly from data/leads/nijmegen.json entries already carrying real register facts (planted bands, confirmed access), single-source-and-flagged per Step 2. Tokens not tracked for session work, logged as 0 per standing instruction.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "Winnipeg register scout",
+    "kind": "scout",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session work, not an agent pass: scout_next.py --target pointed at Winnipeg (no supply, no verdict). Found data.winnipeg.ca Tree Inventory (bulk municipal inventory, excluded by the semantic-filter rule regardless of licence) and manitobatreeregister.ca (right shape, all-rights-reserved, no API/export). Blocked, recorded in register-scouting.json and OPEN_DATA_SURVEY.md. Tokens not tracked for session work, logged as 0 per standing instruction.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "sitewide photo API sweep (photo_hunt.py --recheck)",
+    "kind": "photo",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session work: free Commons API sweep, no AI tokens. Queue now 1128 trees swept, 603 with at least one open-licence candidate, up from prior sweep. Not judged (this runners egress proxy blocks upload.wikimedia.org); left for a viewing pass.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
