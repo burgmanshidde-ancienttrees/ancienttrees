@@ -363,8 +363,14 @@ struct TreeMap: UIViewRepresentable {
             if let last = binding.wrappedValue {
                 let a = CLLocation(latitude: last.center.latitude, longitude: last.center.longitude)
                 let b = CLLocation(latitude: now.center.latitude, longitude: now.center.longitude)
-                guard a.distance(from: b) > 300
-                        || abs(last.span.latitudeDelta - now.span.latitudeDelta) > 0.01
+                // Proportional to what you can SEE, not a flat 300 metres.
+                // At street zoom 300 metres is most of the screen, so a pan
+                // that visibly changed everything reported nothing and the list
+                // stood still (Hidde, 2026-08-24).
+                let visible = now.span.latitudeDelta * 111_000
+                guard a.distance(from: b) > max(60, visible * 0.15)
+                        || abs(last.span.latitudeDelta - now.span.latitudeDelta)
+                            > now.span.latitudeDelta * 0.2
                 else { return }
             }
             binding.wrappedValue = now
