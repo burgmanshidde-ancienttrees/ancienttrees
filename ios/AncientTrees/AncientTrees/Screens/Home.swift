@@ -186,7 +186,6 @@ struct HomeView: View {
             ShelfHeader(title: "By species",
                         subtitle: "\(Set(catalogue.trees.map(\.commonName)).count) kinds of tree",
                         more: .index(.species))
-                .padding(.horizontal, 16)
             ForEach(topSpeciesHere.prefix(6), id: \.name) { sp in
                 NavigationLink(value: Route.species(sp.name)) {
                     HStack(spacing: 12) {
@@ -283,8 +282,12 @@ struct HomeView: View {
     private func shelf(title: String, subtitle: String?, trees: [Tree],
                        season: Bool, more: Route? = nil) -> some View {
         VStack(alignment: .leading, spacing: 12) {
+            // No padding here. ShelfHeader puts its own 16 on, and a second
+            // one stacks: the header sat at 32 while every card under it sat
+            // at 16, which is what Hidde saw on "By species" and "the oldest
+            // tree we map" (2026-08-24). The inset belongs to the component,
+            // once, or every call site becomes a chance to get it wrong.
             ShelfHeader(title: title, subtitle: subtitle, more: more)
-                .padding(.horizontal, 16)
 
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 12) {
