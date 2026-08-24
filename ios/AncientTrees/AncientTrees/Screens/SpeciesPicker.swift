@@ -20,23 +20,36 @@ struct SpeciesPicker: View {
 
     @Environment(\.dismiss) private var dismiss
     @State private var query = ""
+    /// Counted ONCE, when the sheet opens.
+    ///
+    /// It used to be two computed properties: a Dictionary(grouping:) over
+    /// every tree we map, and a Set of every common name, both rebuilt on each
+    /// view update and the first of them read again inside the row loop. That
+    /// is roughly 1,842 trees times 40 rows per keystroke, and it froze the app
+    /// the moment the sheet opened (Hidde, 2026-08-24: "de app loopt vast als
+    /// ik op de species filter druk").
+    @State private var index: [(name: String, count: Int)] = []
 
-    private var counts: [String: Int] {
-        Dictionary(grouping: catalogue.trees, by: \.commonName).mapValues(\.count)
+    private func build() {
+        guard index.isEmpty else { return }
+        var counts: [String: Int] = [:]
+        for t in catalogue.trees { counts[t.commonName, default: 0] += 1 }
+        let near = Set(nearby)
+        index = counts.map { (name: $0.key, count: $0.value) }
+            .sorted {
+                // Around you first, then by how many we map, then alphabetically
+                // so the order never wobbles between two with the same count.
+                if near.contains($0.name) != near.contains($1.name) {
+                    return near.contains($0.name)
+                }
+                return $0.count == $1.count ? $0.name < $1.name : $0.count > $1.count
+            }
     }
 
-    private var rows: [String] {
-        let all = Array(Set(catalogue.trees.map(\.commonName)))
+    private var rows: [(name: String, count: Int)] {
         let q = query.trimmingCharacters(in: .whitespaces).lowercased()
-        let hits = q.isEmpty ? all : all.filter { $0.lowercased().contains(q) }
-        let near = Set(nearby)
-        return hits.sorted {
-            // Around you first, then by how many we map, then alphabetically so
-            // the order never wobbles between two species with the same count.
-            if near.contains($0) != near.contains($1) { return near.contains($0) }
-            let a = counts[$0] ?? 0, b = counts[$1] ?? 0
-            return a == b ? $0 < $1 : a > b
-        }
+        guard !q.isEmpty else { return index }
+        return index.filter { $0.name.lowercased().contains(q) }
     }
 
     var body: some View {
@@ -46,7 +59,8 @@ struct SpeciesPicker: View {
                     Button("Any species") { selection = nil; dismiss() }
                         .foregroundStyle(Brand.moss)
                 }
-                ForEach(rows, id: \.self) { name in
+                ForEach(rows, id: \.name) { row in
+                    let name = row.name
                     Button {
                         selection = name
                         dismiss()
@@ -59,7 +73,7 @@ struct SpeciesPicker: View {
                             if selection == name {
                                 Image(systemName: "checkmark").foregroundStyle(Brand.moss)
                             } else {
-                                Text("\(counts[name] ?? 0)")
+                                Text("\(row.count)")
                                     .font(.subheadline).monospacedDigit()
                                     .foregroundStyle(Brand.inkSoft)
                             }
@@ -70,6 +84,7 @@ struct SpeciesPicker: View {
                 }
             }
             .searchable(text: $query, prompt: "Which kind of tree?")
+            .task { build() }
             .navigationTitle("Species")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {

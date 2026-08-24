@@ -41,7 +41,10 @@ struct MapTab: View {
     /// Debug scaffolding, same family as -spot: the search page is only
     /// reachable by tapping and simctl has no finger. `-search` opens it empty,
     /// `-search=lis` opens it with that typed.
-    @State private var pickingSpecies = false
+    /// Debug scaffolding, same family as -tab, -select and -collected: simctl
+    /// cannot tap, and a sheet that only exists after a tap is a sheet that
+    /// ships unlooked at. It shipped that way once and froze the app.
+    @State private var pickingSpecies = ProcessInfo.processInfo.arguments.contains("-species")
     @State private var searching = ProcessInfo.processInfo.arguments
         .contains { $0 == "-search" || $0.hasPrefix("-search=") }
     /// Where the map is looking. nil until it has been moved, so the first list
