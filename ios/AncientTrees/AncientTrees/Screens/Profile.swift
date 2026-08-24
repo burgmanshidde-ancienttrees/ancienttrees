@@ -184,7 +184,7 @@ struct ProfileView: View {
                 .font(.footnote).foregroundStyle(Brand.inkSoft)
                 .fixedSize(horizontal: false, vertical: true)
             Button { plusPitch = true } label: {
-                Text("See what is in it")
+                Text("See what's included")
                     .font(.brand(16, .bold))
                     .foregroundStyle(.white)
                     .frame(maxWidth: .infinity).frame(height: 48)
@@ -206,16 +206,15 @@ struct ProfileView: View {
         VStack(alignment: .leading, spacing: 10) {
             Text("Know a tree we are missing?")
                 .font(.brand(18, .bold, relativeTo: .headline)).foregroundStyle(Brand.ink)
-            // How you add one IN THE APP, which is not by filling in a form
-            // (Hidde, 2026-08-24: "leg dan uit je kunt er een toevoegen door
-            // er heen te gaan en een foto te maken - het formulier invullen
-            // zonder foto doen we wel op web"). A form here would duplicate
-            // the website and produce submissions nobody can check; a
-            // photograph taken where you stand carries its own evidence.
-            Text("We map \(catalogue.trees.count.formatted(.number.locale(Locale(identifier: "en_US")))) and there are a great many more. Walk to one we are missing and photograph it: that is how a tree joins your collection, and how it reaches us. No form to fill in.")
+            // Short, because the card only has one thing to say (Hidde,
+            // 2026-08-24: "niet meer tekst, meer inzetten op helderheid, minder
+            // poespas"). How you add a tree here is by standing in front of it,
+            // and everything else that used to be in this paragraph was us
+            // explaining ourselves.
+            Text("Walk to it and photograph it. That is how a tree gets added.")
                 .font(.footnote).foregroundStyle(Brand.inkSoft)
             Button { navigator.collectNearby = true } label: {
-                Text("Collect a tree")
+                Text("Add a tree")
                     .font(.brand(16, .bold))
                     .foregroundStyle(Brand.moss)
                     .frame(maxWidth: .infinity).frame(height: 48)
@@ -223,8 +222,6 @@ struct ProfileView: View {
                     .overlay { Capsule().strokeBorder(Brand.moss.opacity(0.35), lineWidth: 1.5) }
             }
             .buttonStyle(.plain)
-            Text("Not standing in front of it? Tell us from the website instead.")
-                .font(.caption2).foregroundStyle(Brand.inkSoft)
         }
         .padding(18)
         .frame(maxWidth: .infinity, alignment: .leading)

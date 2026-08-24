@@ -102,14 +102,23 @@ struct CollectView: View {
                 }
                 .padding(.top, 4)
 
-                // No "Take a photo" button here any more (Hidde, 2026-08-24:
-                // "is het normaal om zoiets boven te zetten, en die tekst is
-                // mss ook te lang voor een knop"). Both true, and there is a
-                // third reason that settles it: since the bar went to five
-                // slots the camera has the most prominent control in the whole
-                // app, dead centre. A full-width button repeating it at the top
-                // of this screen pushed your own collection down the page to
-                // offer something already two centimetres below.
+                // The BUTTON went and the sentence came back (Hidde,
+                // 2026-08-24: "je hebt nu de hele collect a tree knop
+                // weggehaald maar ik vond die verwijzing en uitleg bovenaan
+                // collection wel goed"). He is right about both halves: a
+                // full-width button here repeated the camera that sits two
+                // centimetres below it in the middle of the bar, while the
+                // explanation was doing real work, because nothing else on
+                // this screen says HOW a tree gets here.
+                HStack(spacing: 10) {
+                    Image(systemName: "camera")
+                        .font(.footnote).foregroundStyle(Brand.moss)
+                    Text("Photograph a tree with the camera below and it is yours, ours or not.")
+                        .font(.footnote).foregroundStyle(Brand.inkSoft)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                .padding(.bottom, 2)
+
                 if allVisited.isEmpty {
                     mission
                 } else {
