@@ -9,6 +9,45 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-24 - The app runs on our own map, and the tab bar is AllTrails' now
+
+**The map.** The app no longer shows Apple's map anywhere. It draws the same
+style file the website serves, with the same species pins, and the little map in
+the corner of a tree's photograph moved too. That last one matters past looks:
+Apple's snapshots always need the network and their terms forbid caching the
+tiles, so an offline tree page was impossible while they were there. Offline
+itself is now possible and still unbuilt.
+
+Clustering was the one thing that kept this on the branch since 08-23, and
+MapLibre's own does not work here. Ten hypotheses across two days, all negative,
+settled by a control: six bare points with no properties render nothing
+clustered and six unclustered. So we cluster ourselves, in a grid recomputed
+once per zoom level. The three silent MapLibre behaviours found on the way are
+in CURATION.md, because each of them alone reads as "the map is broken" and
+costs an afternoon.
+
+Walks never cluster now, on the walk page and on the map tab while a walk is
+shown: four stops a few hundred metres apart were collapsing into one bubble
+marked 4, which hid the route. They also frame their own extent instead of
+opening at a fixed four kilometres.
+
+**The tab bar** is copied off an AllTrails screenshot rather than styled by
+hand: pill behind the icon alone, symbol inverted dark on it, word underneath
+outside the pill. That needed our own bar, because iOS draws its capsule around
+icon AND label and no setting reaches it. On the way there I invented an
+unlabelled filled circle for the camera and Hidde called it: that control exists
+but always in the MIDDLE of a bar of five, and ours has four slots.
+
+**Two guards**, both from collisions that happened the same day. App builds now
+refuse a checkout another Claude session is writing to, and take a pid lock so
+two builds cannot share one derived-data directory. The second one cost a
+baseline measurement that died looking like a flaky simulator.
+
+**FOR HIDDE.** One licence call is yours: the snapshotter burns its attribution
+into the bottom of the thumbnail, unreadable at 72 points, so it is cropped and
+attribution for those tiles now lives on the map screen only. Standard practice
+for thumbnails, still your call.
+
 ## 2026-08-24 - Night run 2026-08-24 10:24 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.

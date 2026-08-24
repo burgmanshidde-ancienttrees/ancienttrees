@@ -1504,7 +1504,54 @@ Checked at the same time, because it would have been the blocker: OpenFreeMap
 place no limit on requests, allow commercial use, ask only for attribution, and
 publish weekly planet extracts in MBTiles. Nothing in the way.
 
-## The app's map on MapLibre: what works, and the one thing that does not, 2026-08-23
+## The app's map on MapLibre: SOLVED 2026-08-24, and how
+
+Merged to main. The record below stands as written; what follows is the answer
+to the one thing it could not do.
+
+**MapLibre's own clustering is unusable here and it is not our data.** Six more
+hypotheses were tested on top of the four below: ingesting through a file URL
+(the path MapLibre's own clustering example uses), options stripped to
+`.clustered` alone, then each option removed one at a time, plus a source zoom
+range and a buffer. Every one gave the same single feature. The control that
+settles it: six bare points around Amsterdam with no properties at all, handed
+to a clustered source, rendered NOTHING, while the same six unclustered
+rendered six. No error is logged in any case.
+
+**So we cluster ourselves**, in `MapLayers.cluster`: a grid in world space
+sized to about sixty points on screen, recomputed once per whole zoom level.
+Cells of one emit the tree, cells of more emit a bubble. Panning is free,
+pinching costs one pass, and clusters stay put instead of swimming, which is
+what supercluster does too.
+
+**Three MapLibre behaviours found on the way, each silent, each logging
+nothing.** Any of them alone looks exactly like "the map is broken":
+
+| doing this | what happens |
+|---|---|
+| assigning `source.shape` | draws nothing; the source must be CREATED from a URL |
+| reusing a source identifier | it loads empty, so every rebuild takes a fresh one |
+| rewriting the same file path | MapLibre caches by URL and keeps the old contents |
+| a circle layer plus a text layer for bubbles | never paints, and once any feature matches it the WHOLE source stops rendering, leaves included |
+
+The last one is why the bubbles are symbol layers with the count drawn into the
+image. Symbol layers reading an `icon` attribute are the one thing on this map
+that has always worked.
+
+**And the inset on tree cards moved with it**, from MKMapSnapshotter to
+MLNMapSnapshotter, so no Apple map is left in the app. Two things that needed:
+the snapshotter burns its attribution into the bottom of the image, which on a
+72 point thumbnail is an unreadable clipped word lying across the map, so it
+renders taller and the strip is cropped (FOR HIDDE: attribution for these tiles
+now lives on the map screen only, which is a licence call and therefore his);
+and `zoom(forMeters:)` assumed a 375 point viewport, so a thumbnail opened five
+times too close and showed tarmac instead of a setting.
+
+**What is still open:** MapLibre's own compass (40 by 40) and attribution
+button (26 by 26) sit under Apple's 44, and offline is now possible and not yet
+built.
+
+## The record as it stood, 2026-08-23
 
 The port is on the branch `maplibre-map-wip`, not on main, and this is the
 record so the next attempt starts from what was learned rather than repeating
