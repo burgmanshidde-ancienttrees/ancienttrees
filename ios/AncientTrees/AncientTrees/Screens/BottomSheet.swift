@@ -67,6 +67,12 @@ enum SheetHeight: CaseIterable {
 
 struct BottomSheet<Content: View>: View {
     @Binding var height: SheetHeight
+    /// Which item is at the top of the list, when the content marks its items
+    /// as scroll targets. The map reads this so it can follow what you are
+    /// reading (Hidde, 2026-08-24: "dat de kaart mee hovert naar die andere
+    /// boom als je door de lijst gaat"). Optional, because a sheet holding a
+    /// walk has nothing to report.
+    var topItem: Binding<String?>? = nil
     @ViewBuilder var content: Content
 
     @State private var drag: CGFloat = 0
@@ -99,6 +105,7 @@ struct BottomSheet<Content: View>: View {
                     content
                         .frame(maxWidth: .infinity, alignment: .top)
                 }
+                .scrollPosition(id: topItem ?? .constant(nil), anchor: .top)
                 .scrollDisabled(height == .peek || handingOff)
                 // At peek the content is a PREVIEW, not a control panel. Every
                 // finger that lands here belongs to the sheet, so a swipe up

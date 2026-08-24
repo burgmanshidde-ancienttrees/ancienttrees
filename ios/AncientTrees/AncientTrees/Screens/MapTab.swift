@@ -44,6 +44,8 @@ struct MapTab: View {
     /// Debug scaffolding, same family as -tab, -select and -collected: simctl
     /// cannot tap, and a sheet that only exists after a tap is a sheet that
     /// ships unlooked at. It shipped that way once and froze the app.
+    /// The card at the top of the list, reported by the sheet as you scroll.
+    @State private var topCard: String?
     @State private var pickingSpecies = ProcessInfo.processInfo.arguments.contains("-species")
     @State private var searching = ProcessInfo.processInfo.arguments
         .contains { $0 == "-search" || $0.hasPrefix("-search=") }
@@ -82,7 +84,12 @@ struct MapTab: View {
             guard let f = catalogue.trees(of: w).first else { return nil }
             return (w, f.distanceKm(from: focus.lat, focus.lng))
         }
-        .filter { $0.1 < 60 }
+        // Within the VIEW, not within sixty kilometres. Standing in Amsterdam
+        // that radius swept up the whole Randstad and the shelf said "23 walks
+        // here", which is not a count of anything a person can see (Hidde,
+        // 2026-08-24: "dat zijn er veel te veel"). Floored so a street-level
+        // view still finds the walk you are standing on.
+        .filter { $0.1 < max(reachKm, 3) }
         .sorted { $0.1 < $1.1 }
         .map(\.0)
     }
@@ -223,7 +230,7 @@ struct MapTab: View {
                     selected: $selected)
                 .ignoresSafeArea(edges: [.top, .horizontal])
                 .accessibilityIdentifier("tree-map")
-            BottomSheet(height: $sheetHeight) {
+            BottomSheet(height: $sheetHeight, topItem: $topCard) {
                 // The arbitration between dragging the sheet and scrolling what
                 // is inside it, which is the whole interaction and was wrong.
                 //
@@ -279,6 +286,23 @@ struct MapTab: View {
                 selected = t
                 sheetHeight = .card
             }
+        }
+        // Scrolling the list moves the map to whatever you have reached, so
+        // reading down the list is the same gesture as walking along it.
+        //
+        // Guarded against its own tail: moving the map changes what is in view,
+        // which changes the list, which could change the top card and move the
+        // map again. It only flies when the tree is genuinely off-centre, which
+        // a small correction never is.
+        .onChange(of: topCard) { _, new in
+            guard let id = new, let t = catalogue.tree(id) else { return }
+            let span = mapRegion?.span.latitudeDelta ?? 0.02
+            guard Geo.km(focus, (t.lat, t.lng)) > span * 111.0 * 0.25 else { return }
+            moveRequest = (token: UUID(),
+                           region: MKCoordinateRegion(
+                               center: .init(latitude: t.lat, longitude: t.lng),
+                               span: mapRegion?.span
+                                   ?? MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)))
         }
         .onChange(of: navigator.showOnMap) { _, new in
             guard let id = new, let t = catalogue.tree(id) else { return }
@@ -355,13 +379,12 @@ struct MapTab: View {
         }
         .toolbar(.hidden, for: .navigationBar)
         .onChange(of: selected) { _, new in
-            // Tapping a pin raises the sheet to that tree, the way Google Maps
-            // turns the sheet into the place you tapped. To the CARD height,
-            // not the list height: one tree does not fill half a screen.
-            if new != nil { sheetHeight = .card }
-            // Letting go of a tree puts the list back, and the list wants the
-            // taller stop.
-            if new == nil, sheetHeight == .card { sheetHeight = .half }
+            // Tapping a pin raises the sheet and puts that tree at the top of
+            // the list, rather than making it the only thing in it.
+            if let t = new {
+                if sheetHeight == .peek { sheetHeight = .half }
+                topCard = t.id
+            }
         }
     }
 
@@ -380,16 +403,22 @@ struct MapTab: View {
     /// already contain it, which happens when somebody taps a pin outside the
     /// sixty the list shows.
 
+    /// ONE sheet, always the list.
+    ///
+    /// Tapping a pin used to REPLACE the list with that single card, so the
+    /// other trees in view disappeared and there was nothing to scroll (Hidde,
+    /// 2026-08-24: "je wilt naar beneden kunnen scrollen om de rest van de
+    /// bomen te zien in je beeld, en dat de kaart mee hovert naar die andere
+    /// boom als je door de lijst gaat"). The list now scrolls TO the tapped
+    /// tree instead, and scrolling it moves the map, which is the vertical
+    /// version of the sideways pager he had removed on 2026-08-21 and the
+    /// arrangement Google Maps and Apple Maps both use.
     @ViewBuilder private var sheet: some View {
-        if selected != nil {
-            selectedCard
-        } else {
-            VStack(spacing: 0) {
-                countStrip
-                if shownWalk != nil && sheetHeight != .peek { walkCard }
-                if let t = arrived, sheetHeight != .peek { arrivalCard(t) }
-                list
-            }
+        VStack(spacing: 0) {
+            countStrip
+            if shownWalk != nil && sheetHeight != .peek { walkCard }
+            if let t = arrived, sheetHeight != .peek { arrivalCard(t) }
+            list
         }
     }
 
@@ -461,16 +490,9 @@ struct MapTab: View {
                     .foregroundStyle(Brand.ink)
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(alignment: .top, spacing: 12) {
-                        ForEach(Array(walksHere.prefix(6).enumerated()), id: \.element.name) { i, w in
-                            if i == 0 {
-                                NavigationLink(value: Route.walk(city: w.citySlug, name: w.name)) {
-                                    CityWalkCard(walk: w, locked: false)
-                                }
-                                .buttonStyle(.plain)
-                            } else {
-                                LockedRow(feature: .walkBeyondFirst) {
-                                    CityWalkCard(walk: w, locked: true)
-                                }
+                        ForEach(walksHere.prefix(6), id: \.name) { w in
+                            LockedRow(feature: .walkBeyondFirst) {
+                                CityWalkCard(walk: w, locked: true)
                             }
                         }
                     }
@@ -499,6 +521,7 @@ struct MapTab: View {
                     }
                     .buttonStyle(.plain)
                     .accessibilityIdentifier("tree-card")
+                    .id(hit.tree.id)
                 }
                 if listed.isEmpty {
                     Text(query.isEmpty
@@ -740,28 +763,4 @@ struct MapTab: View {
         .accessibilityIdentifier("map-search-field")
     }
 
-    /// One tapped pin, shown in the sheet over the map rather than pushed onto
-    /// a page, so the map stays visible behind the decision.
-    ///
-    /// Cut back to just the card on 2026-08-21. What went, and why: the
-    /// sideways PAGER between neighbouring trees (Hidde: "als ik op een boom
-    /// sta is het echt onmogelijk om links of rechts te swipen... ik vind het
-    /// raar"), the line advertising that gesture, and the close CROSS ("waarom
-    /// kan ik op mijn kruisje drukken?"). Google Maps has none of the three:
-    /// you tap another pin to switch and drag the sheet down to be rid of it.
-    /// The button under the card went too, because a card that opens when you
-    /// tap it does not need a label saying it opens when you tap it.
-    @ViewBuilder private var selectedCard: some View {
-        if let t = selected {
-            VStack(spacing: 0) {
-                NavigationLink(value: Route.tree(t.id)) {
-                    TreeCard(tree: t)
-                }
-                .buttonStyle(.plain)
-                .accessibilityIdentifier("tree-card")
-                Color.clear.frame(height: 100)      // clear of the floating tab bar
-            }
-            .padding(.horizontal, 16)
-        }
-    }
 }
