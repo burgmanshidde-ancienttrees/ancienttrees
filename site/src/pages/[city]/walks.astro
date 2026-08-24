@@ -24,6 +24,8 @@
 import { getCollection } from "astro:content";
 import Base from "../../layouts/Base.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import ShareButton from "../../components/ShareButton.astro";
+import { SHARE_JS } from "../../lib/share-js";
 import { cityIsRenderable, treeSlugsForCity, type CityEntry } from "../../lib/trees";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
 import { fitTitle } from "../../lib/title";
@@ -96,7 +98,10 @@ const otherCities = others.filter((o) => o.slug !== cslug).slice(0, 6);
 <Base title={title} description={description} canonical={canonical} headExtra={ldScript(graph)}>
   <main class="content-page">
     <Breadcrumbs items={crumbItems} />
-    <h1>Tree Walks in {cityName}</h1>
+    <div class="page-head">
+      <h1>Tree Walks in {cityName}</h1>
+      <ShareButton url={canonical} title={`Tree walks in ${cityName}`} />
+    </div>
     <p class="lede">
       {cityName} has {walks.length === 1 ? "one walk" : `${walks.length} walks`} that string its
       ancient trees together on foot, {walks.length === 1 ? "" : `from ${shortest.km} km to ${longest.km} km, `}
@@ -143,4 +148,5 @@ const otherCities = others.filter((o) => o.slug !== cslug).slice(0, 6);
       ))}
     </p>
   </main>
+  <Fragment slot="scripts" set:html={SHARE_JS} />
 </Base>

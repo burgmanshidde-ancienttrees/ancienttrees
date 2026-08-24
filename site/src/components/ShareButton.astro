@@ -1,0 +1,24 @@
+---
+// One share control, used by every page type. See share-js.ts for why it is
+// this shape and not a row of social icons: both references open the system
+// sheet from a single round button, and a page that offers eight networks is
+// a page from 2014.
+interface Props {
+  url: string;
+  title: string;
+  /// The accessible name. A prop because the site publishes in seven
+  /// languages and a hard-coded English label would be wrong on six of them.
+  label?: string;
+}
+const { url, title, label = "Share" } = Astro.props as Props;
+---
+<button type="button" class="share-btn" data-share data-share-url={url}
+        data-share-title={title} aria-label={label} title={label}>
+  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <path d="M12 3v12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M8 7l4-4 4 4" stroke="currentColor" stroke-width="2" fill="none"
+          stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M5 12v7a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-7" stroke="currentColor"
+          stroke-width="2" fill="none" stroke-linecap="round"/>
+  </svg>
+</button>

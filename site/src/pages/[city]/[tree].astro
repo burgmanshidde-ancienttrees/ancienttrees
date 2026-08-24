@@ -15,6 +15,8 @@ import { ageToken, metaFromStory, submitLink, locationIsApproximate } from "../.
 import WorthIt from "../../components/WorthIt.astro";
 import SignInModal from "../../components/SignInModal.astro";
 import SaveHeart from "../../components/SaveHeart.astro";
+import ShareButton from "../../components/ShareButton.astro";
+import { SHARE_JS } from "../../lib/share-js";
 import { SIGNIN_JS } from "../../lib/signin-js";
 import { WORTHIT_JS } from "../../lib/worthit-js";
 import { TREE_ACTIONS_JS } from "../../lib/tree-actions-js";
@@ -167,12 +169,15 @@ const graph = [
 const hb = hreflangForCity(cslug, "tree", tslug);
 const hreflangBlock = hb ? "\n" + hb : "";
 const headExtra = mapHead() + ogImage + hreflangBlock + "\n" + ldScript(graph);
-const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TREE_ACTIONS_JS + SIGNIN_JS;
+const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TREE_ACTIONS_JS + SIGNIN_JS + SHARE_JS;
 ---
 <Base title={title} description={description} canonical={canonical} headExtra={headExtra}>
   <main class="content-page has-tree-bar">
     <Breadcrumbs items={crumbItems} />
-    <h1>{tree.name}{tree.label && <span class="tree-label">{tree.label}</span>}</h1>
+    <div class="page-head">
+      <h1>{tree.name}{tree.label && <span class="tree-label">{tree.label}</span>}</h1>
+      <ShareButton url={canonical} title={tree.name} />
+    </div>
     <p class="chip-row">
       {/* `||` not `??`: a tree with no age carries age_estimate as an empty
           string as often as it omits the key, and `??` let "" through, which
