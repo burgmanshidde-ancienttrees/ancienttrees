@@ -3341,6 +3341,17 @@
     "wasted": 0,
     "brief_wrong": false
    }
+  ],
+  "2026-08-24": [
+   {
+    "target": "seville (write, sev_038-043)",
+    "kind": "write",
+    "tokens": 101255,
+    "trees": 6,
+    "note": "shelf write pass: 6 verified trees turned into stories in one context, merged into data/cities/seville.json (37 -> 43). Two species-name mismatches fixed at merge (Norfolk Island Hibiscus patersonii, Date Palm dropped hybrid wording). Fixed age_estimate null->empty-string schema mismatch caught at build.",
+    "wasted": 0,
+    "brief_wrong": false
+   }
   ]
  }
 }
