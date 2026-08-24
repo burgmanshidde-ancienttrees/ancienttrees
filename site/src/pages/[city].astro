@@ -25,6 +25,7 @@ import { type WalkMarker } from "../lib/walks";
 import { cityMapScript } from "../lib/city-map-script";
 import { SHEET_JS } from "../lib/sheet-js";
 import { otherCitiesFor } from "../lib/other-cities";
+import { hasWalksPage } from "../lib/city-walks";
 import { byCityListOrder } from "../lib/city-order";
 import { hreflangForCity } from "../lib/i18n";
 import LanguagePicker from "../components/LanguagePicker.astro";
@@ -76,6 +77,10 @@ const { city, allCities, countryPages, speciesPages, collections } = Astro.props
 const cityName = city.data.city;
 const country = city.data.country;
 const cslug = city.id;
+// Whether /[city]/walks was built for this city. Asked through the same
+// function the page itself uses, so a link can never point at a page that does
+// not exist, which scripts/qa.py would fail the deploy over.
+const showWalks = hasWalksPage(city);
 const trees = renderableTrees(city);
 const canonical = `${BASE_URL}/${cslug}`;
 const tslugs = treeSlugsForCity(city);
@@ -233,6 +238,12 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
       ))}
       <div class="panel-foot">
         <p class="subtle-suggest"><b>We are mapping every remarkable tree in the world.</b> Know one in {cityName} we missed, or spot a mistake here? <a href={submitLink("tree")}>Tell us</a>.</p>
+        {showWalks && (
+          <div class="take-with-you">
+            <strong>Walk them.</strong> The trees of {cityName} fall into routes you can do on foot in an afternoon:{" "}
+            <a href={`/${cslug}/walks`}>tree walks in {cityName}</a>.
+          </div>
+        )}
         <div class="take-with-you">
           <strong>Going there?</strong> <a href={`/${cslug}.gpx`} download>Download all {trees.length} trees</a> as a map file and open it in Google Maps, Organic Maps or any hiking app. Works offline, no app needed.
         </div>
