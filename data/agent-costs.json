@@ -3360,6 +3360,24 @@
     "note": "session work, not a dispatched pass; pagegaps.py found 2 species gaps (3 trees each), wrote both intros from the trees' own stories, build+qa clean",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "utrecht",
+    "kind": "verify",
+    "tokens": 165886,
+    "trees": 4,
+    "note": "dispatched pass: kanokaartutrecht.nl canal-route survey cross-referenced against LRMB register verified 4 trees in the Servaasbolwerk/Lucasbolwerk bastion belt (1 flagged, fungal infection)",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "utrecht",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 4,
+    "note": "session work, not dispatched: wrote 4 stories directly for the small verified batch, merged into utrecht.json (18 to 22), fixed count promises",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
