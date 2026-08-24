@@ -56,6 +56,20 @@ struct SignInSheet: View {
             .padding(.top, 22)
             .padding(.bottom, 26)
         }
+        // A cross in the corner rather than a "Not now" at the bottom (Hidde,
+        // 2026-08-24). A sheet is dismissed by its corner everywhere, and a
+        // worded refusal at the end of the offer makes declining feel like an
+        // answer you owe rather than a thing you close.
+        .overlay(alignment: .topTrailing) {
+            Button { dismiss() } label: {
+                Image(systemName: "xmark")
+                    .font(.system(size: 15, weight: .semibold))
+                    .foregroundStyle(.secondary)
+                    .frame(width: 44, height: 44)
+                    .contentShape(.rect)
+            }
+            .accessibilityLabel("Close")
+        }
         .scrollBounceBehavior(.basedOnSize)
         .presentationDetents([.height(660), .large])
         .presentationDragIndicator(.visible)
@@ -267,11 +281,7 @@ struct SignInSheet: View {
                     .frame(minWidth: 44, minHeight: 44)
                     .contentShape(.rect)
             }
-            Button("Not now") { dismiss() }
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
-                .frame(minWidth: 44, minHeight: 44)
-                .contentShape(.rect)
+
         }
         .padding(.top, 2)
     }

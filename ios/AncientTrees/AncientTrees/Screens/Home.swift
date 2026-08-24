@@ -318,19 +318,15 @@ struct HomeView: View {
     /// wholesale, and the lock said plainly rather than as a bare padlock.
     private var walkShelf: some View {
         VStack(alignment: .leading, spacing: 12) {
-            ShelfHeader(title: "Walks near you",
-                        subtitle: "The nearest one is open to everyone")
+            // EVERY walk behind Plus (Hidde, 2026-08-24: "ik zou alle
+            // wandelingen achter plus zetten"). His own pricing names curated
+            // walks as a paid feature; the free first one was my softening of
+            // it, and the subtitle promising it goes with it.
+            ShelfHeader(title: "Walks near you")
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 12) {
-                    ForEach(Array(walksNear.enumerated()), id: \.element.name) { i, w in
-                        if i == 0 {
-                            NavigationLink(value: Route.walk(city: w.citySlug, name: w.name)) {
-                                walkCard(w, locked: false)
-                            }
-                            .buttonStyle(.plain)
-                        } else {
-                            LockedRow(feature: .walkBeyondFirst) { walkCard(w, locked: true) }
-                        }
+                    ForEach(walksNear, id: \.name) { w in
+                        LockedRow(feature: .walkBeyondFirst) { walkCard(w, locked: true) }
                     }
                 }
                 .padding(.horizontal, 16).padding(.bottom, 4)
@@ -513,16 +509,14 @@ struct CityView: View {
                     // for one object (Hidde, 2026-08-24).
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack(alignment: .top, spacing: 12) {
-                            ForEach(Array(walks.enumerated()), id: \.element.name) { i, w in
-                                if i == 0 {
-                                    NavigationLink(value: Route.walk(city: w.citySlug, name: w.name)) {
-                                        CityWalkCard(walk: w, locked: false)
-                                    }
-                                    .buttonStyle(.plain)
-                                } else {
-                                    LockedRow(feature: .walkBeyondFirst) {
-                                        CityWalkCard(walk: w, locked: true)
-                                    }
+                            // EVERY walk behind Plus (Hidde, 2026-08-24: "ik
+                            // zou alle wandelingen achter plus zetten"), not
+                            // just the ones past the first. His own pricing
+                            // names curated walks as a paid feature; the free
+                            // first one was my softening of it.
+                            ForEach(walks, id: \.name) { w in
+                                LockedRow(feature: .walkBeyondFirst) {
+                                    CityWalkCard(walk: w, locked: true)
                                 }
                             }
                         }
