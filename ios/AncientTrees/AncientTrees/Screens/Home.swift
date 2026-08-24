@@ -512,6 +512,12 @@ struct CityView: View {
         }
         .brandGround()
         .navigationTitle(name)
+        .toolbar {
+            ShareTo(url: URL(string: "https://ancienttrees.app/\(slug)")!,
+                    subject: name,
+                    message: "Ancient trees in \(name).",
+                    label: "Share this city")
+        }
         .navigationBarTitleDisplayMode(.inline)
     }
 }

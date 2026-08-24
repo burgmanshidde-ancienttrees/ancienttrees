@@ -132,6 +132,15 @@ struct WalkDetail: View {
         }
         .navigationTitle(walk.name)
         .navigationBarTitleDisplayMode(.inline)
+        // The walk itself has no address yet; the city's walks page does, and
+        // it is where this walk is listed. Sending that is honest and it works
+        // for somebody without the app, which is the whole point of sharing.
+        .toolbar {
+            ShareTo(url: URL(string: "https://ancienttrees.app/\(walk.citySlug)/walks")!,
+                    subject: walk.name,
+                    message: "\(walk.name): \(trees.count) ancient trees in \(walk.city), on foot.",
+                    label: "Share these walks")
+        }
     }
 
     /// `Begin` pinned to the bottom, first in the bar and the only coloured
