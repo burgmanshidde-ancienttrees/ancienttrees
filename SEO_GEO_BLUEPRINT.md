@@ -1,5 +1,5 @@
 # SEO_GEO_BLUEPRINT.md — Ancient Trees
-Version 1.13 — Owner: Hidde. No page ships without conforming to this document. Changes require Hidde's explicit approval and a version bump with changelog entry (bottom of file).
+Version 1.14 — Owner: Hidde. No page ships without conforming to this document. Changes require Hidde's explicit approval and a version bump with changelog entry (bottom of file).
 
 This document has two layers with different lifespans. Layer 1 (Principles) should almost never change. Layer 2 (Page Contracts) changes rarely and only via versioning. Volatile tactics (current keyword targets, AI-citation trends, measurement results) do NOT belong here — they live in CLAUDE.md and CURATION.md.
 
@@ -238,6 +238,19 @@ soon.
   cities gets no further investment however large its supply, and that is
   written down now so a good story cannot rescue it later.
 
+### Contract K — City walks page  `/[city]/walks` (v1.14)
+
+| Element | Specification |
+|---|---|
+| Title (≤60 chars) | `Tree Walks in [City]: [N] Routes Past [M] Trees`, falling back to `Tree Walks in [City]: [N] Routes`, then `Tree Walks in [City]` |
+| H1 | `Tree Walks in [City]` |
+| Body | Answer-first lede naming how many walks, how long the shortest and longest are, and how many trees they pass → a plain statement of what the route is and is not → each walk as a heading with its tree count, distance and time on foot, then its trees in walking order → the city's GPX |
+| Schema | ItemList of the walks + BreadcrumbList |
+| Internal links | Every tree links to its tree page; the city page links here and this links back; up to 6 other cities that also have this page |
+| Publish gate | **The city's walks together cover 5+ trees.** Same floor as Contract H, and for the same reason: below it the city page serves the reader better than a walks page wearing its name. |
+| Hard rule | **The URL is the CITY, never the walk.** Our walks are computed from where the trees stand, so adding a tree can split a walk, move its start and change its generated name. A per-walk URL would break on the next night run and hard rule 3 forbids retiring a public URL. A walk gets its own permanent address only when a PERSON fixed it, which is not the case for any walk we generate. |
+| Hard rule | Combined walks (the union of two smaller ones) are not listed. The app offers them as a longer option; on a page they read as a near-duplicate of the two legs. |
+
 ## MEASUREMENT CONTRACT (what proves this blueprint works)
 
 The hypothesis order, checked in Search Console: (1) question pages show impressions first (months 2-3), (2) tree pages follow on long-tail tree names, (3) city pages gain last as authority compounds. Secondary signal: submissions via the suggestion forms. If question pages show zero movement by month 4, the strategy — not the effort — gets reviewed. This contract exists so that "keep building" never substitutes for "check if it works".
@@ -245,6 +258,8 @@ The hypothesis order, checked in Search Console: (1) question pages show impress
 ---
 
 ## CHANGELOG
+
+- **v1.14 (2026-08-24):** Added Contract K (city walks page `/[city]/walks`), approved by Hidde in session ("nou letsgo") after a conversation about how walks should be addressed at all. 179 walks existed as data and as an app feed since they were built, and had no URL anywhere, so nothing could be linked to or shared, ours or anybody's. His own question decided the shape: "de wandelingen kunnen nog wel eens verschuiven, andere bomen andere start punten, of krijgen we gewoon oneindig wandelingen, hoe gaan onze concurrenten hier slim mee om". Checked rather than assumed, on AllTrails the same day: `/netherlands/north-holland/amsterdam` is titled "10 Best trails and hikes in Amsterdam" and its list is free to change, while a fixed route somebody made lives permanently at `/trail/...`. So a computed thing gets a place's URL and a decided thing gets its own, and every walk we generate is computed. Noted with it, because it is the reason this contract stops where it does: a walk a READER makes is a fixed object and would earn its own permanent URL, unlisted and `noindex`, which is a separate contract nobody has asked for yet. AllTrails' robots.txt disallows ClaudeBot, so that check was made through the browser at Hidde's request and stopped there.
 
 - **v1.13 (2026-08-22):** Contract J widened from the one-city Spanish test to seven languages (es, it, nl, de, pt, fr, ja), approved by Hidde in session ("we zijn verder dan de testfase dus mijn goedkeuring om meerdere talen te gaan toevoegen"). The test it replaces had answered: `/es/malaga` went from 14 to 132 impressions in six days, took its first clicks on 08-21, and sits at position 15 on the query its English twin sits at 75 on. Three things are now contract rather than note. Selection is measured, not chosen: demand sits in the local language of the city (18 to 53 percent of English pageviews, against 3 to 21 percent for any other language, `data/research/language-demand.json`), so a language goes onto its own language area and never onto whichever English page performs best. The question-page slug table is per language and a language cannot build without its entry. And the three templates become one shared implementation taking a language prop, which the Spanish test's own code comment asked for in advance. Chinese is recorded as deliberately absent: Google and Wikipedia are both blocked in mainland China, and neither AllTrails (14 locales) nor komoot (21) bets on it. Which pages go first was Hidde's call the same day ("kies de best lopende paginas"): the best-performing page per language area rather than the cheapest, buying signal speed over tokens.
 - **v1.11 (2026-08-11):** og:image and schema `image`, approved by Hidde in session ("ja verbeter en SEO_GEO_BLUEPRINT"). He spotted it in Search Console Insights: of 95 city pages only /lisbon showed a tree photograph beside its result and every other page showed our generic logo. Two causes, both real. City pages never set og:image from their own photo, so all 95 emitted `og-default.png`; tree pages did set one. And NO page of any type declared `image` in its structured data, so Google was left to guess a thumbnail from the markup. Both fixed: city pages now take their face photo (hero tree, else first tree with a usable photo) as og:image, and city, tree and list entities all carry a schema `image` array. A thumbnail beside a result moves click-through more than any title rewrite, which matters on a site whose measured problem is click-through, and it applies to every page at once rather than city by city.

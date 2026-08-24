@@ -1,0 +1,146 @@
+---
+// Contract K — City walks page.
+//
+// Why the URL is the CITY and not the walk, which is the whole design
+// decision here (Hidde, 2026-08-24, after asking how AllTrails and komoot
+// handle it): our walks are COMPUTED. Nobody wrote "the Jordaan walk"; a
+// script groups the trees that stand near each other, so adding two trees to
+// Amsterdam tonight can split a walk in two, move its start, and change its
+// generated name. A per-walk URL would break on the next night run, and hard
+// rule 3 forbids retiring a URL that has been public.
+//
+// A city does not move, so the URL is the city and the walks are what it holds
+// today. Checked against AllTrails the same day rather than assumed:
+// /netherlands/north-holland/amsterdam is titled "10 Best trails and hikes in
+// Amsterdam" and its list is free to change, while a fixed thing somebody made
+// gets its own permanent page at /trail/... . Same split, and it is the split
+// that decides which of our own things may have an address.
+//
+// No live map in this first version, deliberately. cityMapScript is welded to
+// the city page's DOM (.panel, .sheet-body, .tree-card, #tree-N), and a second
+// map implementation on a second page is exactly what the one-skeleton rule
+// exists to prevent. The route still leaves with the reader: the GPX below
+// carries every tree.
+import { getCollection } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import { cityIsRenderable, treeSlugsForCity, type CityEntry } from "../../lib/trees";
+import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
+import { fitTitle } from "../../lib/title";
+import { pageWalksFor, WALKS_PAGE_MIN_TREES, type PageWalk } from "../../lib/city-walks";
+
+export async function getStaticPaths() {
+  const allCities = (await getCollection("cities")).filter(cityIsRenderable);
+
+  const qualifying = allCities
+    .map((city) => ({ city, walks: pageWalksFor(city) }))
+    .filter((q) => q.walks.reduce((n, w) => n + w.trees.length, 0) >= WALKS_PAGE_MIN_TREES);
+
+  // Only cities that HAVE this page may be linked from it. A link to a page
+  // that was never built fails the deploy in scripts/qa.py, which is exactly
+  // what it is there for.
+  const others = qualifying.map((q) => ({ slug: q.city.id, city: q.city.data.city }));
+
+  return qualifying.map((q) => ({
+    params: { city: q.city.id },
+    props: { city: q.city, walks: q.walks, others },
+  }));
+}
+
+interface Props {
+  city: CityEntry;
+  walks: PageWalk[];
+  others: { slug: string; city: string }[];
+}
+const { city, walks, others } = Astro.props as Props;
+
+const cityName = city.data.city;
+const cslug = city.id;
+const canonical = `${BASE_URL}/${cslug}/walks`;
+const tslugs = treeSlugsForCity(city);
+
+const totalTrees = walks.reduce((n, w) => n + w.trees.length, 0);
+const longest = walks.reduce((a, b) => (b.km > a.km ? b : a), walks[0]);
+const shortest = walks.reduce((a, b) => (b.km < a.km ? b : a), walks[0]);
+
+const title = fitTitle([
+  `Tree Walks in ${cityName}: ${walks.length} Routes Past ${totalTrees} Trees`,
+  `Tree Walks in ${cityName}: ${walks.length} Routes`,
+  `Tree Walks in ${cityName}`,
+]);
+const description =
+  `${walks.length} walking ${walks.length === 1 ? "route" : "routes"} past the ancient trees of ${cityName}, ` +
+  `${shortest.km} to ${longest.km} km on foot, with every tree named and mapped.`;
+
+const crumbItems: [string, string | null][] = [
+  ["Home", BASE_URL],
+  [cityName, `${BASE_URL}/${cslug}`],
+  ["Walks", null],
+];
+
+const listElements = walks.map((w, i) => ({
+  "@type": "ListItem",
+  position: i + 1,
+  name: w.name,
+  url: canonical,
+}));
+
+const graph = [
+  ...SITE_SCHEMA,
+  breadcrumbSchema(crumbItems, canonical),
+  { "@type": "ItemList", name: `Tree walks in ${cityName}`, itemListElement: listElements },
+];
+
+const otherCities = others.filter((o) => o.slug !== cslug).slice(0, 6);
+---
+<Base title={title} description={description} canonical={canonical} headExtra={ldScript(graph)}>
+  <main class="content-page">
+    <Breadcrumbs items={crumbItems} />
+    <h1>Tree Walks in {cityName}</h1>
+    <p class="lede">
+      {cityName} has {walks.length === 1 ? "one walk" : `${walks.length} walks`} that string its
+      ancient trees together on foot, {walks.length === 1 ? "" : `from ${shortest.km} km to ${longest.km} km, `}
+      past {totalTrees} {totalTrees === 1 ? "tree" : "trees"} in all.
+      Each one is an afternoon rather than a hike, and every tree on it has a story worth the stop.
+    </p>
+    <p class="suggest">
+      The order is ours, worked out from where the trees actually stand; the walking distance is the
+      real one along streets and paths where we have been able to route it, and a straight line
+      between trunks where we have not. Nothing here is a signposted trail.
+    </p>
+
+    {walks.map((w) => (
+      <section class="prose-block">
+        <h2>{w.name}</h2>
+        <p class="suggest">
+          {w.trees.length} trees · about {w.km} km · {w.duration} on foot
+        </p>
+        <ol>
+          {w.trees.map((t) => (
+            <li>
+              <a href={`/${cslug}/${tslugs[t.id]}`}>{t.name}</a>
+              {t.species ? <span> · {t.species}</span> : null}
+              {t.age_estimate ? <span> · {t.age_estimate}</span> : null}
+            </li>
+          ))}
+        </ol>
+      </section>
+    ))}
+
+    <div class="take-with-you">
+      <strong>Going there?</strong> <a href={`/${cslug}.gpx`} download>Download every tree in {cityName}</a>
+      as a map file and open it in Google Maps, Organic Maps or any hiking app. Works offline, no app needed.
+    </div>
+
+    <p class="suggest">
+      All of these stand in <a href={`/${cslug}`}>{cityName}</a>, where we map
+      {" "}{city.data.trees.length} remarkable trees in total. Or walk somewhere else:{" "}
+      {otherCities.map((q, i) => (
+        <Fragment>
+          {i > 0 && " · "}
+          <a href={`/${q.slug}/walks`}>{q.city}</a>
+        </Fragment>
+      ))}
+    </p>
+  </main>
+</Base>
