@@ -11,22 +11,30 @@
 // middle of a park, on a canal, or on a street corner between two buildings.
 // That is most of what decides whether you feel like walking there today.
 //
-// MKMapSnapshotter rather than a live map view, because a card is a thumbnail
-// and putting a real MKMapView in a scrolling list is how you make a list stutter.
+// A snapshot rather than a live map view, because a card is a thumbnail and
+// putting a real map in a scrolling list is how you make a list stutter.
 // Snapshots are cached in memory by coordinate, so scrolling back up costs
 // nothing, and they need the network: with no signal there is simply no inset,
 // which is the same honest degradation as a photograph that will not load.
+//
+// MLNMapSnapshotter, not MKMapSnapshotter, since 2026-08-24. This was the last
+// piece of Apple's map left in the app, and it showed: a tree page carried our
+// own map at the top and an Apple one in the corner of the same photograph. It
+// also mattered beyond looks, because Apple's snapshots always need the network
+// and their terms forbid caching the tiles, so an offline tree page could never
+// have had one.
 
 import SwiftUI
-import MapKit
+import CoreLocation
+import MapLibre
 
 /// One at a time, and never more than two.
 ///
-/// MKMapSnapshotter is not a thumbnail generator, it is a map render, and Home
-/// puts dozens of cards on screen at once across its shelves. Firing one per
-/// card froze the app on the home screen: Hidde could not scroll at all. A
-/// gate is the fix rather than a smaller image, because the cost is per render
-/// and not per pixel.
+/// A snapshot is not a thumbnail generator, it is a map render, and Home puts
+/// dozens of cards on screen at once across its shelves. Firing one per card
+/// froze the app on the home screen: Hidde could not scroll at all. A gate is
+/// the fix rather than a smaller image, because the cost is per render and not
+/// per pixel.
 actor SnapshotGate {
     static let shared = SnapshotGate()
     private var running = 0
@@ -47,29 +55,58 @@ actor SnapshotGate {
 @MainActor
 enum MapThumb {
     private static let cache = NSCache<NSString, UIImage>()
+    /// The snapshotter has to outlive the call that starts it. Left to a local,
+    /// it is released the moment the function returns and the callback never
+    /// fires, which looks exactly like a map that will not load.
+    private static var inFlight: [MLNMapSnapshotter] = []
 
     static func cached(_ key: String) -> UIImage? { cache.object(forKey: key as NSString) }
 
+    /// How much of the rendered image is the snapshotter's own attribution bar.
+    private static let attributionStrip: CGFloat = 24
+
+    /// `size` is in POINTS. The snapshotter renders at screen scale itself,
+    /// which is why nothing here doubles anything: the MapKit version used to,
+    /// because its size meant something different.
     static func snapshot(lat: Double, lng: Double, size: CGSize,
-                         dark: Bool, meters: CLLocationDistance = 500) async -> UIImage? {
-        let key = "\(lat),\(lng),\(Int(size.width)),\(Int(size.height)),\(dark)"
+                         meters: CLLocationDistance = 500) async -> UIImage? {
+        let key = "\(lat),\(lng),\(Int(size.width)),\(Int(size.height))"
         if let hit = cached(key) { return hit }
 
-        let options = MKMapSnapshotter.Options()
-        options.region = MKCoordinateRegion(center: .init(latitude: lat, longitude: lng),
-                                            latitudinalMeters: meters, longitudinalMeters: meters)
-        options.size = size
-        options.pointOfInterestFilter = .excludingAll
-        options.traitCollection = UITraitCollection(userInterfaceStyle: dark ? .dark : .light)
+        let centre = CLLocationCoordinate2D(latitude: lat, longitude: lng)
+        let camera = MLNMapCamera(lookingAtCenter: centre, altitude: 0, pitch: 0, heading: 0)
+        // Rendered TALLER than it is shown, and the extra strip is cropped off
+        // below. The snapshotter burns its attribution into the bottom of the
+        // image, which on a 72 point thumbnail is an unreadable clipped word
+        // sitting across the map. Attribution for these tiles lives on the map
+        // screen itself, where there is room to read it.
+        let full = CGSize(width: size.width, height: size.height + attributionStrip)
+        let options = MLNMapSnapshotOptions(styleURL: MapStyle.url, camera: camera, size: full)
+        // The same conversion the live map uses, told how wide THIS view is: a
+        // thumbnail borrowing the full-screen width opens five times too close.
+        options.zoomLevel = TreeMap.zoom(forMeters: meters, latitude: lat,
+                                         width: Double(size.width))
 
         await SnapshotGate.shared.enter()
         defer { Task { await SnapshotGate.shared.leave() } }
-        guard let shot = try? await MKMapSnapshotter(options: options).start() else { return nil }
+
+        let shot: UIImage? = await withCheckedContinuation { cont in
+            let snapshotter = MLNMapSnapshotter(options: options)
+            inFlight.append(snapshotter)
+            snapshotter.start { snap, _ in
+                inFlight.removeAll { $0 === snapshotter }
+                cont.resume(returning: snap?.image)
+            }
+        }
+        guard let shot else { return nil }
 
         // The dot is drawn on rather than left to the snapshotter, which has no
         // annotations. Centre of the image is the tree by construction.
         let out = UIGraphicsImageRenderer(size: size).image { ctx in
-            shot.image.draw(at: .zero)
+            // Drawn full height into a shorter box, so the attribution strip
+            // falls off the bottom rather than being squashed into view.
+            shot.draw(in: CGRect(x: 0, y: 0, width: size.width,
+                                 height: size.height + attributionStrip))
             let c = CGPoint(x: size.width / 2, y: size.height / 2)
             let r: CGFloat = 5
             ctx.cgContext.setFillColor(UIColor.white.cgColor)
@@ -91,7 +128,6 @@ struct MapInset: View {
     var side: CGFloat? = 72
     var height: CGFloat = 72
 
-    @Environment(\.colorScheme) private var scheme
     @State private var image: UIImage?
 
     var body: some View {
@@ -113,15 +149,14 @@ struct MapInset: View {
             }
         }
         .shadow(color: .black.opacity(side == nil ? 0 : 0.18), radius: 4, y: 2)
-        .task(id: scheme) {
+        .task {
             // A card that scrolls past in half a second should never have cost
             // a map render. Anything still on screen after this is worth one.
             try? await Task.sleep(for: .milliseconds(400))
             if Task.isCancelled { return }
             let w = side ?? UIScreen.main.bounds.width - 40
             image = await MapThumb.snapshot(lat: lat, lng: lng,
-                                            size: CGSize(width: w * 2, height: (side ?? height) * 2),
-                                            dark: scheme == .dark,
+                                            size: CGSize(width: w, height: side ?? height),
                                             meters: side == nil ? 700 : 500)
         }
         .accessibilityHidden(true)      // the card already says where the tree is
