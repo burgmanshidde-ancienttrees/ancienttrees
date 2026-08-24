@@ -125,8 +125,38 @@ def report():
     return ok, lines
 
 
+# The second way two jobs stand on each other, found 2026-08-24 within an hour
+# of the first: appsweep.py and appfit.py share ONE derived-data directory, so a
+# baseline appfit on main and a sweep on a branch cannot run at the same time.
+# The appfit run died with "Lost connection to the application" and left no
+# measurements, which reads like a flaky simulator and was not.
+LOCK = pathlib.Path(os.environ.get("CLAUDE_SCRATCHPAD", "/tmp")) / "at-appbuild.lock"
+
+
+def build_lock(what):
+    """Refuse to start when another app build or sweep is already running.
+
+    A plain pid file: stale locks are cleared by checking whether the pid is
+    still alive, so a killed job never blocks the next one."""
+    if LOCK.exists():
+        try:
+            pid = int(LOCK.read_text().split()[0])
+            os.kill(pid, 0)
+        except (ValueError, IndexError, ProcessLookupError, OSError):
+            LOCK.unlink(missing_ok=True)
+        else:
+            print("STOP: another app build is already running (pid %d): %s"
+                  % (pid, LOCK.read_text().strip()), file=sys.stderr)
+            print("  They share one derived-data directory and will corrupt "
+                  "each other. Wait, or kill that one.", file=sys.stderr)
+            sys.exit(1)
+    LOCK.write_text("%d %s" % (os.getpid(), what))
+    return LOCK
+
+
 def guard(what="building the app"):
     """Refuse the build when this checkout is shared. Call before xcodebuild."""
+    build_lock(what)
     if os.environ.get("ALLOW_SHARED_CHECKOUT"):
         return
     ok, lines = report()
