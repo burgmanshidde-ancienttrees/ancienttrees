@@ -25,15 +25,22 @@ struct MapFilters: Equatable {
     var withPhoto = false
     var walkable = false
     var species: String?
-    /// Your own trees on the map (Hidde, 2026-08-21). Not a property of a
-    /// tree, so it is applied with the collection passed in, the same way
-    /// distance is applied with an origin.
+    /// The ones you have. ONE filter, not two.
+    ///
+    /// It was two until 2026-08-24, Collected for our trees you had ticked off
+    /// and Yours for trees only you had added, sitting side by side on the map
+    /// and reading as the same thing. Hidde saw it and gave the rule that
+    /// dissolves it rather than relabels it: "je collect de bomen die er zijn
+    /// en je collect automatisch een boom als je die toevoegt." A tree you
+    /// added is a tree you collected, so there is nothing left to separate.
+    ///
+    /// Not a property of a tree, so it is applied with the collection passed
+    /// in, the same way distance is applied with an origin. Your own trees are
+    /// not in the catalogue at all and ride the map's separate layer, which is
+    /// why this only has to answer for ours.
     var collectedOnly = false
-    /// Trees you added yourself, which are not in our catalogue at all, so
-    /// this one is answered by the sightings store rather than by a tree.
-    var yoursOnly = false
 
-    var isOn: Bool { peakingNow || withPhoto || walkable || collectedOnly || yoursOnly || species != nil }
+    var isOn: Bool { peakingNow || withPhoto || walkable || collectedOnly || species != nil }
 
     func keeps(_ t: Tree, month: Int, collected: Set<String> = []) -> Bool {
         if collectedOnly, !collected.contains(t.id) { return false }
