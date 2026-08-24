@@ -597,6 +597,8 @@ enum MapLayers {
     /// zoom change without rebuilding any of this.
     private static var leaves: [MLNPointFeature] = []
     private static var lastBucket: Int = .min
+    /// The zoom the pins were last built for. See the hysteresis in cluster().
+    private static var lastClusterZoom: Double = -99
     private static var lastClustered = true
 
     /// Past this there is nothing left to pile up, and the subject of a tree
@@ -632,8 +634,17 @@ enum MapLayers {
     static func cluster(on style: MLNStyle, zoom: Double, clustered: Bool, force: Bool = false) {
         let bucket = clustered && zoom < clusterMaxZoom ? Int(floor(zoom)) : 99
         if !force && bucket == lastBucket && clustered == lastClustered { return }
+        // HYSTERESIS, or the pins blink out while you pan (Hidde, 2026-08-24:
+        // "de iconen verdwijnen als ik over de map scroll"). A pan wobbles the
+        // zoom by hundredths, and a wobble across a whole-number boundary used
+        // to count as a new bucket: rebuilding the source means removing the
+        // layers, writing a file and letting MapLibre load it, and for that
+        // moment there are no pins at all. A real zoom change moves far more
+        // than this; a pan never does.
+        if !force && bucket != 99 && abs(zoom - lastClusterZoom) < 0.45 { return }
         lastBucket = bucket
         lastClustered = clustered
+        lastClusterZoom = zoom
 
         if bucket == 99 {
             apply(leaves, on: style, clustered: clustered)
