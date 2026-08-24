@@ -238,7 +238,9 @@ struct ProfileView: View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Settings").font(.eyebrow).textCase(.uppercase)
                 .foregroundStyle(Brand.inkSoft).tracking(0.8)
-                .padding(.leading, 4)
+                // No inset. It put SETTINGS and ABOUT at 20 while every card
+                // under them sits at 16, which appfit reads as a drift and a
+                // reader reads as sloppy without being able to name it.
             VStack(spacing: 0) {
                 // The WHOLE ROW opens the menu, which is what a settings row
                 // does everywhere and what this one did not: the control was
@@ -287,9 +289,16 @@ struct ProfileView: View {
         VStack(alignment: .leading, spacing: 8) {
             Text("About").font(.eyebrow).textCase(.uppercase)
                 .foregroundStyle(Brand.inkSoft).tracking(0.8)
-                .padding(.leading, 4)
+                // No inset. It put SETTINGS and ABOUT at 20 while every card
+                // under them sits at 16, which appfit reads as a drift and a
+                // reader reads as sloppy without being able to name it.
             VStack(spacing: 0) {
                 link("Privacy", "lock", "https://ancienttrees.app/privacy")
+                Divider().padding(.leading, 48)
+                // The map's credit, named once where it can be read. Not a
+                // courtesy: OpenFreeMap serve these tiles from OpenStreetMap
+                // data and ask for it.
+                link("Map data: OpenStreetMap", "map", "https://www.openstreetmap.org/copyright")
                 Divider().padding(.leading, 48)
             }
             .brandCard()

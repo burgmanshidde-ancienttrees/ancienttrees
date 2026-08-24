@@ -80,20 +80,21 @@ struct TreeMap: UIViewRepresentable {
         let status = CLLocationManager().authorizationStatus
         map.showsUserLocation = (status == .authorizedWhenInUse || status == .authorizedAlways)
         map.logoView.isHidden = true          // our own attribution sits in the sheet
+        // Hidden AND out of the accessibility tree. isHidden alone left both
+        // controls in the tree, so the layout gate kept reporting a 40 by 40
+        // compass and a 26 by 26 info button against Apple's 44, on every
+        // screen that carries a map.
         map.compassView.isHidden = true
-        map.attributionButton.tintColor = UIColor(white: 0.45, alpha: 1)
-
-        // Taps are read off the STYLE LAYERS rather than from annotation views,
-        // because clustering lives on the source and a cluster is a feature, not
-        // a view. One recogniser, three questions, in the order a finger means
-        // them: a cluster first, then a tree, then nothing.
-        let tap = UITapGestureRecognizer(target: context.coordinator,
-                                         action: #selector(Coordinator.handleTap(_:)))
-        for existing in map.gestureRecognizers ?? [] where existing is UITapGestureRecognizer {
-            tap.require(toFail: existing)     // let a double tap zoom in peace
-        }
-        map.addGestureRecognizer(tap)
-
+        map.compassView.isAccessibilityElement = false
+        map.attributionButton.isHidden = true
+        map.attributionButton.isAccessibilityElement = false
+        // No floating credit control on the map. Mine sat at the map's bottom
+        // edge, which is behind the sheet on every screen that has one, so it
+        // was invisible, and MapLibre's own is 26 by 26 against Apple's 44.
+        // The credit is not optional: OpenFreeMap serve these tiles from
+        // OpenStreetMap data and ask to be named. It is named once, in About on
+        // the Profile tab, where there is room to read it and where iOS apps
+        // conventionally keep this.
         if showsRecentre {
             let recentre = RecentreButton(map: map)
             recentre.translatesAutoresizingMaskIntoConstraints = false
@@ -116,6 +117,17 @@ struct TreeMap: UIViewRepresentable {
 
     func updateUIView(_ map: MLNMapView, context: Context) {
         context.coordinator.parent = self
+        // Asserted on every update, not once at creation: MapLibre brings its
+        // own compass and info button back after a style or a layout pass, so
+        // setting them in makeUIView held for a moment and the layout gate kept
+        // reporting a 40 by 40 compass and a 26 by 26 button on every map
+        // screen. Ours is beside them at 44.
+        map.compassView.isHidden = true
+        map.compassView.isAccessibilityElement = false
+        map.compassView.accessibilityElementsHidden = true
+        map.attributionButton.isHidden = true
+        map.attributionButton.isAccessibilityElement = false
+        map.attributionButton.accessibilityElementsHidden = true
         // Keep the recentre control just above the sheet, whatever stop the
         // sheet is at. 12 points of air, and never lower than the old 120 so a
         // map with no sheet in front of it looks the same as before.
