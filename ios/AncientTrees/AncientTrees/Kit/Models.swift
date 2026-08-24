@@ -75,9 +75,22 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
     public let city: String
     public let citySlug: String
     public let country: String
-    public let neighbourhood: String
+    // NULLABLE IN THE FEED, and non-optional here is how the whole catalogue
+    // stopped decoding on 2026-08-24: "Expected value of type String but found
+    // null instead. Path: trees[93].neighbourhood". 45 trees carry a null
+    // neighbourhood and 59 a null transport, and one bad field rejects the
+    // entire file, so the app fell back to the copy bundled with it. That copy
+    // was five days old, which is the only reason nobody had seen this: the
+    // staleness was hiding the breakage.
+    //
+    // Stored optional, read non-optional, so no call site changes and Codable
+    // stays synthesised. Every string a city file may leave empty belongs in
+    // this shape.
+    let neighbourhoodRaw: String?
+    public var neighbourhood: String { neighbourhoodRaw ?? "" }
     public let access: String
-    public let transport: String
+    let transportRaw: String?
+    public var transport: String { transportRaw ?? "" }
     public let story: String
     public let url: String
     public let precision: Precision
@@ -86,10 +99,12 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
     public let peak: Peak?
 
     enum CodingKeys: String, CodingKey {
-        case id, name, species, age, lat, lng, city, country, neighbourhood
+        case id, name, species, age, lat, lng, city, country
+        case neighbourhoodRaw = "neighbourhood"
+        case transportRaw = "transport"
         case ageMin = "age_min"
         case ageMax = "age_max"
-        case access, transport, story, url, precision, photo, peak
+        case access, story, url, precision, photo, peak
         case citySlug = "city_slug"
         case bestTime = "best_time"
     }

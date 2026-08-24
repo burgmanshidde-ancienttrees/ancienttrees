@@ -144,7 +144,40 @@ def boot(udid):
     sh("xcrun", "simctl", "bootstatus", udid, check=False, capture=False)
 
 
+def bundled_data_note():
+    """Say how far the app's bundled catalogue is behind the live site.
+
+    A NOTE and never a failure: the night runs publish trees daily, so this
+    drifts by design and a red build every morning would be noise. It prints
+    here because this is the moment somebody is looking at the app, and on
+    2026-08-24 that copy was five days and 436 trees behind while a screenshot
+    of the city screen quietly disagreed with the website about the same walk.
+    """
+    try:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import appdata
+        drift = []
+        for name in appdata.FEEDS:
+            path = appdata.DATA / ("%s.json" % name)
+            old = path.read_bytes() if path.exists() else b""
+            try:
+                new = appdata.fetch(name)
+            except Exception:
+                return
+            if old != new:
+                n_old, _ = appdata.counted(old)
+                n_new, _ = appdata.counted(new)
+                drift.append("%s %s->%s" % (name, n_old, n_new))
+        if drift:
+            print("note: bundled catalogue is behind the live site (%s)"
+                  % ", ".join(drift))
+            print("      python3 scripts/appdata.py   # a fresh install reads this")
+    except Exception:
+        pass
+
+
 def build(dd):
+    bundled_data_note()
     # Refuses when another session is live in this checkout; silent otherwise.
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     from worktree_guard import guard
