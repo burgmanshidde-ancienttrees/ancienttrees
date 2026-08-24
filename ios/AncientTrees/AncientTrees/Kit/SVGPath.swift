@@ -173,17 +173,32 @@ enum SVG {
 }
 
 /// A species silhouette, drawn at any size.
+/// A species silhouette, as a Shape rather than a GeometryReader.
+///
+/// It used to read its size from a GeometryReader, which reports zero on the
+/// first layout pass and the real size on the next, so every mark popped from
+/// nothing to full size. One is invisible; eighteen of them in a grid is the
+/// flicker Hidde saw on Species collected (2026-08-24). A Shape is handed its
+/// rectangle by layout and has no first pass to get wrong.
+struct SpeciesShape: Shape {
+    let species: String
+
+    func path(in rect: CGRect) -> Path {
+        let s = min(rect.width, rect.height) / 40
+        let p = SVG.path(SpeciesIcons.fragment(for: species))
+            .applying(CGAffineTransform(scaleX: s, y: s))
+        // Centred in whatever it was given, the way the reader used to.
+        let b = p.boundingRect
+        return p.applying(CGAffineTransform(
+            translationX: rect.midX - b.midX, y: rect.midY - b.midY))
+    }
+}
+
 struct SpeciesMark: View {
     let species: String
     var color: Color = .white
 
     var body: some View {
-        GeometryReader { geo in
-            let s = min(geo.size.width, geo.size.height) / 40
-            SVG.path(SpeciesIcons.fragment(for: species))
-                .applying(CGAffineTransform(scaleX: s, y: s))
-                .fill(color)
-                .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
-        }
+        SpeciesShape(species: species).fill(color)
     }
 }

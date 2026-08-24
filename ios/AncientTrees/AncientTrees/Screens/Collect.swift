@@ -68,6 +68,8 @@ struct CollectView: View {
     private var countries: Int { Set(allVisited.map(\.country)).count }
     private var cities: Int { Set(allVisited.map(\.citySlug)).count }
     private var collectedSpecies: Set<String> { Set(allVisited.map(\.commonName)) }
+    /// Have you collected anything OUTSIDE the eighteen drawn above.
+    private var restCollected: Bool { !collectedSpecies.subtracting(stampSpecies).isEmpty }
 
     /// The set to fill in: the species we map most, so the grid is worth
     /// completing rather than arbitrary.
@@ -100,20 +102,14 @@ struct CollectView: View {
                 }
                 .padding(.top, 4)
 
-                // The same act the centre button performs, offered where
-                // the result lives. One primary control, the app's own style,
-                // with air around it rather than a paragraph underneath
-                // explaining a button whose own words already say what it
-                // does. It says "Take a photo" because that is literally the
-                // next thing that happens; the app works out afterwards
-                // whether it was one of ours (2026-08-23).
-                Button("Take a photo of a tree") {
-                    navigator.collectNearby = true
-                }
-                .buttonStyle(BrandButtonStyle())
-                .accessibilityIdentifier("collect-a-tree")
-                .padding(.bottom, 4)
-
+                // No "Take a photo" button here any more (Hidde, 2026-08-24:
+                // "is het normaal om zoiets boven te zetten, en die tekst is
+                // mss ook te lang voor een knop"). Both true, and there is a
+                // third reason that settles it: since the bar went to five
+                // slots the camera has the most prominent control in the whole
+                // app, dead centre. A full-width button repeating it at the top
+                // of this screen pushed your own collection down the page to
+                // offer something already two centimetres below.
                 if allVisited.isEmpty {
                     mission
                 } else {
@@ -218,7 +214,7 @@ struct CollectView: View {
                 Text("Species collected").font(.brand(19, .heavy, relativeTo: .title3))
                     .foregroundStyle(Brand.ink)
                 Spacer()
-                Text("\(collectedSpecies.count) of \(stampSpecies.count)")
+                Text("\(collectedSpecies.count) of \(stampSpecies.count + 1)")
                     .font(.subheadline.weight(.semibold))
                     .foregroundStyle(Brand.inkSoft).monospacedDigit()
             }
@@ -230,11 +226,22 @@ struct CollectView: View {
                         .frame(height: 34)
                         .accessibilityLabel(got ? "\(s), collected" : "\(s), not yet")
                 }
+                // The nineteenth mark: everything else we map. Without it the
+                // grid quietly dropped every rarer species you had collected,
+                // and the card needed a sentence at the bottom explaining that
+                // it was doing so (Hidde, 2026-08-24: "haal die zin weg en
+                // zorg gewoon dat er ook een rest icoon is zodat alles eronder
+                // valt"). A drawing that counts everything needs no footnote.
+                SpeciesMark(species: "", color: restCollected ? Brand.moss : Brand.inkSoft.opacity(0.28))
+                    .frame(height: 34)
+                    .accessibilityLabel(restCollected
+                                        ? "Other species, collected"
+                                        : "Other species, not yet")
             }
-            Text(collectedSpecies.isEmpty
-                 ? "Collect a tree and its species fills in here."
-                 : "The eighteen species we map most. Rarer ones count too; they are simply not drawn here yet.")
-                .font(.caption).foregroundStyle(Brand.inkSoft)
+            if collectedSpecies.isEmpty {
+                Text("Collect a tree and its species fills in here.")
+                    .font(.caption).foregroundStyle(Brand.inkSoft)
+            }
         }
         .padding(18)
         .frame(maxWidth: .infinity, alignment: .leading)

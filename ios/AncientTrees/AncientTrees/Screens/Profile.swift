@@ -33,6 +33,7 @@ struct ProfileView: View {
 
     @State private var signingIn = false
     @State private var confirmingDelete = false
+    @State private var confirmingSignOut = false
     @State private var deleteFailed = false
     @State private var plusPitch = false
     @State private var showingAccount = false
@@ -74,6 +75,17 @@ struct ProfileView: View {
             SignInSheet(reason: saved.savedCount > 0 ? .keepCollection(saved.savedCount) : .general,
                         localCount: saved.savedCount)
                 .environment(account).environment(saved)
+        }
+        // Signing out went through on the first tap, while deleting the
+        // account two rows above asked first. Every app asks (Hidde,
+        // 2026-08-24: "dit is raar"), and here it matters more than usual: what
+        // it looks like you are about to lose is your collection.
+        .confirmationDialog("Sign out?", isPresented: $confirmingSignOut,
+                            titleVisibility: .visible) {
+            Button("Sign out", role: .destructive) { account.signOut() }
+            Button("Cancel", role: .cancel) {}
+        } message: {
+            Text("Your collection stays in your account. Sign in again on any phone and it comes back.")
         }
         .alert("Delete your account?", isPresented: $confirmingDelete) {
             Button("Cancel", role: .cancel) {}
@@ -182,10 +194,16 @@ struct ProfileView: View {
         VStack(alignment: .leading, spacing: 10) {
             Text("Know a tree we are missing?")
                 .font(.brand(18, .bold, relativeTo: .headline)).foregroundStyle(Brand.ink)
-            Text("We map \(catalogue.trees.count.formatted(.number.locale(Locale(identifier: "en_US")))) and there are a great many more. If you know a good one, or a whole city worth mapping, tell us.")
+            // How you add one IN THE APP, which is not by filling in a form
+            // (Hidde, 2026-08-24: "leg dan uit je kunt er een toevoegen door
+            // er heen te gaan en een foto te maken - het formulier invullen
+            // zonder foto doen we wel op web"). A form here would duplicate
+            // the website and produce submissions nobody can check; a
+            // photograph taken where you stand carries its own evidence.
+            Text("We map \(catalogue.trees.count.formatted(.number.locale(Locale(identifier: "en_US")))) and there are a great many more. Walk to one we are missing and photograph it: that is how a tree joins your collection, and how it reaches us. No form to fill in.")
                 .font(.footnote).foregroundStyle(Brand.inkSoft)
-            Button { contributing = true } label: {
-                Text("Suggest a tree")
+            Button { navigator.collectNearby = true } label: {
+                Text("Collect a tree")
                     .font(.brand(16, .bold))
                     .foregroundStyle(Brand.moss)
                     .frame(maxWidth: .infinity).frame(height: 48)
@@ -193,6 +211,8 @@ struct ProfileView: View {
                     .overlay { Capsule().strokeBorder(Brand.moss.opacity(0.35), lineWidth: 1.5) }
             }
             .buttonStyle(.plain)
+            Text("Not standing in front of it? Tell us from the website instead.")
+                .font(.caption2).foregroundStyle(Brand.inkSoft)
         }
         .padding(18)
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -211,19 +231,32 @@ struct ProfileView: View {
                 .foregroundStyle(Brand.inkSoft).tracking(0.8)
                 .padding(.leading, 4)
             VStack(spacing: 0) {
-                HStack(spacing: 12) {
-                    Image(systemName: "ruler").frame(width: 20).foregroundStyle(Brand.moss)
-                    Text("Distances").font(.callout).foregroundStyle(Brand.ink)
-                    Spacer()
-                    Picker("", selection: Binding(
-                        get: { units.unit },
-                        set: { units.unit = $0 })) {
+                // The WHOLE ROW opens the menu, which is what a settings row
+                // does everywhere and what this one did not: the control was
+                // the width of the word "Kilometres", and the row directly
+                // under it is the locked Plus row, so a tap that fell short
+                // opened the paywall instead of the units (Hidde, 2026-08-24:
+                // "distance km veranderen verwijst naar plus, dat moet gewoon
+                // zonder plus naar miles kunnen"). Units were never gated in
+                // the code; the target was.
+                Menu {
+                    Picker("", selection: Binding(get: { units.unit },
+                                                  set: { units.unit = $0 })) {
                         ForEach(DistanceUnit.allCases) { u in Text(u.label).tag(u) }
                     }
-                    .pickerStyle(.menu)
-                    .tint(Brand.inkSoft)
+                } label: {
+                    HStack(spacing: 12) {
+                        Image(systemName: "ruler").frame(width: 20).foregroundStyle(Brand.moss)
+                        Text("Distances").font(.callout).foregroundStyle(Brand.ink)
+                        Spacer()
+                        Text(units.unit.label).font(.callout).foregroundStyle(Brand.inkSoft)
+                        Image(systemName: "chevron.up.chevron.down")
+                            .font(.caption2).foregroundStyle(Brand.inkSoft)
+                    }
+                    .padding(.horizontal, 16).frame(height: 48)
+                    .contentShape(.rect)
                 }
-                .padding(.horizontal, 16).frame(height: 48)
+                .buttonStyle(.plain)
                 Divider().padding(.leading, 48)
                 LockedRow(feature: .seasonAlerts) {
                     HStack(spacing: 12) {
@@ -249,7 +282,6 @@ struct ProfileView: View {
             VStack(spacing: 0) {
                 link("Privacy", "lock", "https://ancienttrees.app/privacy")
                 Divider().padding(.leading, 48)
-                link("Write to us", "envelope", "mailto:info@ancienttrees.app")
             }
             .brandCard()
         }
@@ -327,7 +359,7 @@ struct ProfileView: View {
     /// they put the click further down").
     @ViewBuilder private var signOutRow: some View {
         if account.isSignedIn {
-            Button { account.signOut() } label: {
+            Button { confirmingSignOut = true } label: {
                 HStack {
                     Text("Sign out").font(.callout).foregroundStyle(Brand.ink)
                     Spacer()

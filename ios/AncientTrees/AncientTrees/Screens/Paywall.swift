@@ -196,6 +196,11 @@ struct PaywallView: View {
 /// just an absence and sells nothing.
 struct LockedRow<Label: View>: View {
     let feature: Feature
+    /// How far the lock sits from the right edge. It used to sit flush against
+    /// it while the label inside carried its own 16 points, so on the Season
+    /// alerts row the padlock hung past everything else on the card (Hidde,
+    /// 2026-08-24). The default matches what every caller here uses.
+    var inset: CGFloat = 16
     @ViewBuilder var label: Label
     @Environment(Entitlement.self) private var entitlement
     @State private var asking = false
@@ -210,6 +215,7 @@ struct LockedRow<Label: View>: View {
                 if !entitlement.allows(feature) {
                     Image(systemName: "lock.fill").font(.caption)
                         .foregroundStyle(.secondary)
+                        .padding(.trailing, inset)
                 }
             }
             .frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
