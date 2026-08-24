@@ -190,6 +190,9 @@ struct MapTab: View {
                     route: walkRoute,
                     routeIsReal: (shownWalk?.shape?.count ?? 0) > 1,
                     showsRecentre: true,
+                    // Off while a walk is on screen, for the same reason as on
+                    // the walk page itself: its stops must stay countable.
+                    clusters: shownWalk == nil,
                     region: $mapRegion,
                     moveTo: moveRequest,
                     selected: $selected)
