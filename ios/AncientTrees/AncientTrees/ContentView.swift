@@ -199,6 +199,12 @@ struct ContentView: View {
             }
         case .index(let kind):
             IndexView(kind: kind, catalogue: cat, origin: origin)
+        case .mine(let id):
+            if let s = sightings.all.first(where: { $0.id == id }) {
+                TreeDetail(tree: sightings.asTree(s), mine: s, catalogue: cat)
+            } else {
+                ContentUnavailableView("That tree is gone", systemImage: "leaf")
+            }
         case .profile:
             ProfileView(catalogue: cat)
         case .country(let name):

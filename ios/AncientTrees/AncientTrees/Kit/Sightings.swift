@@ -54,6 +54,9 @@ final class Sightings {
         var treeId: String?
         var name: String
         var note: String = ""
+        /// Filled in by you, on the tree's own page, and empty until then.
+        var species: String?
+        var age: String?
         var lat: Double
         var lng: Double
         var date: Date = Date()
@@ -95,6 +98,56 @@ final class Sightings {
     func image(_ s: Sighting) -> UIImage? {
         guard let f = s.photo else { return nil }
         return UIImage(contentsOfFile: Self.folder.appendingPathComponent(f).path)
+    }
+
+    // MARK: - editing
+
+    /// Fill in a field on a tree only you have.
+    ///
+    /// Hidde, 2026-08-24, on where you land after adding one: "het is dezelfde
+    /// boom pagina als onze bomen alleen dan dat de eindgebruiker de velden kan
+    /// invullen." So a sighting grows the same fields one of ours has, and the
+    /// page that renders ours renders it.
+    func update(_ id: UUID, name: String? = nil, species: String? = nil,
+                age: String? = nil, note: String? = nil, status: Status? = nil) {
+        guard let i = all.firstIndex(where: { $0.id == id }) else { return }
+        if let status { all[i].status = status }
+        if let name, !name.isEmpty { all[i].name = name }
+        if let species { all[i].species = species.isEmpty ? nil : species }
+        if let age { all[i].age = age.isEmpty ? nil : age }
+        if let note { all[i].note = note }
+        persist()
+    }
+
+    /// The same page ours get, from what you have filled in so far.
+    ///
+    /// An adapter rather than a second screen: the tree page is 330 lines of
+    /// hero, facts, story, access and a directions bar, and a copy of it for
+    /// your own trees would drift within a week. Empty strings are honest here
+    /// and the page already knows how to show a gap.
+    func asTree(_ s: Sighting) -> Tree {
+        Tree(id: "mine:" + s.id.uuidString,
+             name: s.name,
+             species: s.species ?? "",
+             age: s.age,
+             ageMin: nil,
+             ageMax: nil,
+             lat: s.lat,
+             lng: s.lng,
+             city: "",
+             citySlug: "",
+             country: "",
+             neighbourhoodRaw: nil,
+             access: "",
+             transportRaw: nil,
+             story: s.note,
+             url: "",
+             // You photographed it where you stood, which is the one field a
+             // tree of yours is never vague about.
+             precision: .confirmed,
+             photo: nil,
+             bestTime: nil,
+             peak: nil)
     }
 
     // MARK: - writing
