@@ -595,6 +595,156 @@
       "curation_status": "flagged",
       "notes": "Girth 292cm and the 1997 designation from Krakow's registry list as reproduced on Polish Wikipedia, cross-checked against GDOS/CRFOP (PL.ZIPOP.1393.PP.1261011.992, gid 72171). No age estimate: Ailanthus altissima's growth rate is too fast and site-dependent for a girth-based band to be honest, per the same caution already published on data/species/tree-of-heaven.json (Dublin comparison).",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "kra_017",
+      "name": "The Franciszkanska Ginkgo",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 258,
+      "location": {
+        "address": "ul. Franciszkańska, Stare Miasto",
+        "latitude": 50.05902,
+        "longitude": 19.93536,
+        "neighbourhood": "Stare Miasto (Old Town), beside the Franciscan church"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.981",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie"
+      ],
+      "access": "Free. Stands on ul. Franciszkańska in the Old Town, beside the Church of the Franciscans (kościół oo. Franciszkanów); publicly visible and reachable from the street at all times.",
+      "transport": "Filharmonia tram stop, about 3 minutes' walk.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Nobody has measured this ginkgo's age, but its trunk gives away that it is old enough to fruit, a milestone the species does not reach for about forty years. It grows on ul. Franciszkanska beside the Church of the Franciscans in the Old Town, a two hundred and fifty eight centimetre trunk standing where monks have kept a garden for centuries.\n\nPoland's national register of natural monuments lists the tree's protection as dating from 1998; the city's own official list, reproduced on Polish Wikipedia, gives 1997 for this tree and several others nearby, a discrepancy that most likely traces to a province-wide reconfirmation regulation rather than a disagreement about the tree itself. Both dates are recorded here rather than picked between.\n\nGinkgo biloba survived in cultivation around temple grounds in East Asia for centuries before European gardens took it up, and it tends to end up beside old religious buildings for the same reason it did here: nobody with authority over sacred ground had reason to cut down something that was simply doing well. No age has been established for this specimen. If you know one, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "kra_018",
+      "name": "The Powroznicza Red Oak",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 314,
+      "location": {
+        "address": "ul. Powroźnicza 2, Podgórze",
+        "latitude": 50.05191,
+        "longitude": 19.9294,
+        "neighbourhood": "Podgórze, in the garden of the Podgórska Biblioteka Publiczna (district public library)"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.1093",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie"
+      ],
+      "access": "Free. Stands in the grounds of the Podgórska Biblioteka Publiczna (Podgórze District Public Library) at ul. Powroźnicza 2, a public institution housed in a late-19th-century villa; reachable during the library's opening hours.",
+      "transport": "In Podgórze, roughly a 10-minute walk from Rynek Podgórski; bus routes serving nearby ul. Kalwaryjska and Rynek Podgórski are the closest public transport.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Krakow's monumental trees are almost all native oaks and limes, which makes this one an outlier twice over: a Northern Red Oak, a North American species, growing in the garden of a public library. The building itself has its own history worth knowing before the tree. Built as a villa in the late 1880s and once purchased for the painter Jan Matejko's daughter Beata, it has served as Podgorze district's public library since 1988, which is what keeps its garden open rather than walled off as someone's private grounds.\n\nThe oak's trunk measures three metres fourteen around, big enough that Poland's national register protects it as a natural monument, though the register itself carries no age. Its protection date is recorded two ways, 1987 in the national database and 1997 in the city's own list, likely the gap between an original designation and a later province-wide reconfirmation rather than a real dispute.\n\nA honey locust stands twelve metres away in the same garden, registered alongside it under the same library grounds. No age has been established for either, and an introduced ornamental species like this one has no reliable local growth rate to estimate from. If you know one, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "kra_019",
+      "name": "The Powroznicza Honey Locust",
+      "species": "Honey Locust (Gleditsia triacanthos)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 223,
+      "location": {
+        "address": "ul. Powroźnicza 2, Podgórze",
+        "latitude": 50.05181,
+        "longitude": 19.92938,
+        "neighbourhood": "Podgórze, in the garden of the Podgórska Biblioteka Publiczna (district public library)"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.1092",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie"
+      ],
+      "access": "Free. Stands in the grounds of the Podgórska Biblioteka Publiczna (Podgórze District Public Library) at ul. Powroźnicza 2, a public institution housed in a late-19th-century villa; reachable during the library's opening hours.",
+      "transport": "In Podgórze, roughly a 10-minute walk from Rynek Podgórski; bus routes serving nearby ul. Kalwaryjska and Rynek Podgórski are the closest public transport.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Twelve metres from the library's red oak stands its quieter neighbour, a honey locust with a trunk two metres twenty three around, one of relatively few of its species protected anywhere in Krakow as a natural monument. Both trees share the same garden, the grounds of the Podgorze district public library, a villa built in the 1880s that has kept its grounds open to the public since it became a library in 1988.\n\nGleditsia triacanthos is a North American species, armed in the wild with vicious branching thorns that cultivated street and garden specimens are usually bred without, and it took to European ornamental planting in the nineteenth century the way its oak neighbour did. Poland's national register protects it on species and location alone, with no girth or age recorded there; the city's own official list adds the measurement.\n\nThe two protection dates disagree by a decade, 1987 nationally against 1997 in the city record, in the same pattern as its neighbour and several other Krakow trees this pass checked, most likely a province wide reconfirmation rather than two different true dates. No age has been established. If you know one, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "kra_020",
+      "name": "The Kosciuszki Silver Lime",
+      "species": "Silver Lime (Tilia tomentosa)",
+      "age_estimate": "roughly 130 to 190 years",
+      "age_min": 130,
+      "age_max": 190,
+      "girth_cm": 424,
+      "location": {
+        "address": "ul. Kościuszki 32, Krowodrza",
+        "latitude": 50.05339,
+        "longitude": 19.92426,
+        "neighbourhood": "Krowodrza"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.1109",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie"
+      ],
+      "access": "Free. Stands on ul. Kościuszki in Krowodrza, visible and reachable from the public street.",
+      "transport": "Bus routes 134 and 502 run along ul. Kościuszki.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Krakow already has one small leaved lime on this list whose age comes from an unusually exact match between a tape measure and the published science: the Krowoderska Lime, four hundred and two centimetres round, dated to 130 to 175 years by the species' own documented growth rate. This tree, on the same street, is a different species entirely, a silver lime, and its own trunk has grown even thicker: four hundred and twenty four centimetres.\n\nNo document records when it was planted, so its age here is derived rather than measured: applying the growth rate this city's own lime data already established, widened to allow for the difference between species, puts it at roughly 130 to 190 years old. That is an estimate from girth, not a planting record, and the wide band is the honest shape of that kind of arithmetic.\n\nPoland's national register dates its protection to 1975; the city's own list gives 1997, the same reconfirmation-year pattern seen elsewhere on this page. It stands on ul. Kosciuszki in Krowodrza, visible from the public street, served by two city bus routes.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "kra_021",
+      "name": "The Daszynskiego Lime",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 85 to 130 years",
+      "age_min": 85,
+      "age_max": 130,
+      "girth_cm": 284,
+      "location": {
+        "address": "Al. Ignacego Daszyńskiego 13, Śródmieście",
+        "latitude": 50.05763,
+        "longitude": 19.9512,
+        "neighbourhood": "Śródmieście, on the Daszyńskiego avenue"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.2849",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie"
+      ],
+      "access": "Free. Stands on Aleja Ignacego Daszyńskiego, a public avenue in Śródmieście; visible and reachable from the street at all times.",
+      "transport": "Tram lines 1, 10, 20, 24, 50 and 52 run along Aleja Daszyńskiego; the tree is a short walk from house number 13.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This lime is the youngest of three different Tilia species this page now protects, and the arithmetic that ages it borrows from the other two. Krakow's own small leaved limes gave a documented growth rate for this climate; applied to this tree's two hundred and eighty four centimetre trunk, with room left for the uncertainty of crossing species, it comes out at roughly 85 to 130 years. That is an estimate built from girth, not a planting date, and the width of the range is the honest price of that method.\n\nUnlike its neighbours on this page, this large leaved lime carries an exact and recent paper trail: Krakow's city council protected it by name in a resolution dated 16 December 2015, entered into the national register three weeks later. No thirty year gap between two dates here, just the ordinary lag between a vote and its paperwork.\n\nIt grows on Aleja Daszynskiego in Srodmiescie, a wide tram lined avenue rather than a park, doing the quiet work street trees do: six tram lines run past it, and Wikimedia Commons already has a photograph of it standing there among the traffic.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
