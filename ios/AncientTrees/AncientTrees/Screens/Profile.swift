@@ -93,7 +93,7 @@ struct ProfileView: View {
                 Task { deleteFailed = !(await account.deleteAccount()) }
             }
         } message: {
-            Text("Your email address and your collection are removed from our database and cannot be recovered.")
+            Text("We delete your email address and your collection. This cannot be undone.")
         }
         .alert("That did not work", isPresented: $deleteFailed) {
             Button("OK", role: .cancel) {}
@@ -211,7 +211,7 @@ struct ProfileView: View {
             // poespas"). How you add a tree here is by standing in front of it,
             // and everything else that used to be in this paragraph was us
             // explaining ourselves.
-            Text("Walk to it and photograph it. That is how a tree gets added.")
+            Text("You can add a tree by taking a photograph of it and filling in what you know.")
                 .font(.footnote).foregroundStyle(Brand.inkSoft)
             Button { navigator.collectNearby = true } label: {
                 Text("Add a tree")
@@ -329,7 +329,7 @@ struct ProfileView: View {
                     .font(.footnote).foregroundStyle(Brand.inkSoft)
                 Text(account.email ?? "Signed in")
                     .font(.brand(20, .bold)).foregroundStyle(Brand.ink)
-                Text("Your collection is kept under this address. Sign in on ancienttrees.app with the same one and it is there too.")
+                Text("We keep your collection under this address. Sign in on ancienttrees.app with the same one and it is there too.")
                     .font(.footnote).foregroundStyle(Brand.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
                 Text("We hold your email address and the trees you have saved and collected. Nothing else.")

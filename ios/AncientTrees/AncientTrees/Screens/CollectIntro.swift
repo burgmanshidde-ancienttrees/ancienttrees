@@ -22,7 +22,7 @@ struct CollectIntro: View {
                 .foregroundStyle(Brand.ink)
                 .fixedSize(horizontal: false, vertical: true)
 
-            Text("Photograph a tree while you are standing in front of it. If it is one of ours, we tell you which and tick it off. If it is one we do not have, it is yours, and it reaches us too: we look at every one and decide what joins the map everybody sees.")
+            Text("You can collect a tree by photographing it while you stand in front of it. If it is one of ours, we tell you which and tick it off. If we do not have it, it is yours, and it reaches us too.")
                 .font(.system(size: 17))
                 .foregroundStyle(Brand.inkSoft)
                 .lineSpacing(3)
