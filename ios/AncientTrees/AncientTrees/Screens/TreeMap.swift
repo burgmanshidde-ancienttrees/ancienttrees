@@ -31,6 +31,9 @@ struct TreeMap: UIViewRepresentable {
     var mine: [(id: UUID, lat: Double, lng: Double, name: String)] = []
     /// Ours that you have already stood in front of. Only changes the pin.
     var collected: Set<String> = []
+    /// Tapping a tree of your own opens its page, the same as one of ours.
+    /// A callback because this view knows nothing about navigation.
+    var onSelectMine: ((UUID) -> Void)? = nil
     var focus: CLLocationCoordinate2D?
     /// A walk's line. Real when route_walks.py cached a routed shape, otherwise
     /// the order the trees are visited, which is NOT the path a walker takes.
@@ -313,6 +316,18 @@ struct TreeMap: UIViewRepresentable {
                               animated: true)
                 return
             }
+            // Yours first: they are drawn on top, so a tap that lands on one
+            // meant that one. They were not in this list at all, which is why
+            // they could not be opened.
+            let mineHits = map.visibleFeatures(in: box,
+                                               styleLayerIdentifiers: [MapLayers.mineLayer])
+            if let hit = mineHits.first,
+               let raw = hit.attribute(forKey: MapLayers.idKey) as? String,
+               let id = UUID(uuidString: raw) {
+                parent.onSelectMine?(id)
+                return
+            }
+
             let treeHits = map.visibleFeatures(in: box,
                                                styleLayerIdentifiers: [MapLayers.treeLayer,
                                                                        MapLayers.peakLayer])
@@ -829,17 +844,28 @@ enum MapLayers {
         }
     }
 
+    /// A tree of your own: the same pin as ours, INVERTED.
+    ///
+    /// It used to be a white disc with a moss dot in it, which is the shape
+    /// every map uses for "a point" and says nothing about trees (Hidde,
+    /// 2026-08-24: "het icoontje van een zelf toegevoegde boom is ook gek").
+    /// Same size, same ring, same silhouette as ours; white where ours is moss
+    /// and moss where ours is white. One family, and you can see at a glance
+    /// which ones are yours without a badge explaining it.
     private static func minePin() -> UIImage {
-        let d: CGFloat = 30
+        let d: CGFloat = 38
         return UIGraphicsImageRenderer(size: .init(width: d, height: d)).image { _ in
             UIColor.white.setFill()
-            UIBezierPath(ovalIn: .init(x: 1, y: 1, width: d - 2, height: d - 2)).fill()
+            UIBezierPath(ovalIn: .init(x: 2, y: 2, width: d - 4, height: d - 4)).fill()
             moss.setStroke()
-            let ring = UIBezierPath(ovalIn: .init(x: 2, y: 2, width: d - 4, height: d - 4))
+            let ring = UIBezierPath(ovalIn: .init(x: 2.5, y: 2.5, width: d - 5, height: d - 5))
             ring.lineWidth = 3
             ring.stroke()
-            moss.setFill()
-            UIBezierPath(ovalIn: .init(x: d / 2 - 4, y: d / 2 - 4, width: 8, height: 8)).fill()
+            if let glyph = SpeciesGlyph.image(for: "") {
+                let sz: CGFloat = 20
+                glyph.withTintColor(moss, renderingMode: .alwaysOriginal)
+                    .draw(in: .init(x: (d - sz) / 2, y: (d - sz) / 2, width: sz, height: sz))
+            }
         }
     }
 }

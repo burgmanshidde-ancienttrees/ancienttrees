@@ -187,6 +187,7 @@ struct MapTab: View {
             TreeMap(trees: shownWalk.map { catalogue.trees(of: $0) } ?? mapTrees,
                     mine: sightings.yoursOnly.map { (id: $0.id, lat: $0.lat, lng: $0.lng, name: $0.name) },
                     collected: collectedIds,
+                    onSelectMine: { navigator.push = .mine($0) },
                     focus: .init(latitude: origin.lat, longitude: origin.lng),
                     route: walkRoute,
                     routeIsReal: (shownWalk?.shape?.count ?? 0) > 1,
@@ -485,7 +486,12 @@ struct MapTab: View {
                     .buttonStyle(.plain)
                 }
             }
-            .padding(.horizontal, 14)
+            // 16, like the search field above it and the cards below it.
+            // It was 14, and appfit had been reporting exactly that for hours
+            // ("starts at x=14 while 3 other things on this screen start at
+            // x=16") while I read past it. The check was not the thing that
+            // failed here.
+            .padding(.horizontal, 16)
         }
         .scrollClipDisabled()
     }
