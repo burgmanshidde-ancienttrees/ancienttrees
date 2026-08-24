@@ -21,6 +21,8 @@ import Foundation
 
 public enum Route: Hashable {
     case tree(String)                          // tree id
+    /// One of YOURS, which has no tree id because it is in nobody's catalogue.
+    case mine(UUID)
     case walk(city: String, name: String)      // a walk is only unique per city
     case city(String)                          // city slug
     case collection(String)                    // collection slug

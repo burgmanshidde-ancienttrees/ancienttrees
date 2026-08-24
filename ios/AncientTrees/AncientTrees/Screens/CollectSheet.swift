@@ -53,6 +53,7 @@ struct CollectSheet: View {
     @Environment(Saved.self) private var saved
     @Environment(Sightings.self) private var sightings
     @Environment(Account.self) private var account
+    @Environment(Navigator.self) private var navigator
     @Environment(\.dismiss) private var dismiss
 
     /// Where the flow is. One enum rather than five booleans, because the old
@@ -62,7 +63,6 @@ struct CollectSheet: View {
         case identify          // photograph taken, more than one candidate
         case ticked(String)    // tree id, matched and claimed
         case describe          // a tree we do not map
-        case sent
     }
 
     @State private var stage: Stage = .intro
@@ -74,7 +74,6 @@ struct CollectSheet: View {
     @State private var at: (lat: Double, lng: Double)?
     @State private var why = ""
     @State private var sending = false
-    @State private var failed = false
     @State private var signingIn = false
 
     /// Everything close enough to be the tree in front of the lens. 400 metres
@@ -126,7 +125,6 @@ struct CollectSheet: View {
                         case .ticked(let id): if let t = catalogue.tree(id) { tickedState(t) }
                         case .identify: identifyState
                         case .describe: describeForm
-                        case .sent: sentState
                         case .intro: EmptyView()
                         }
                     }
@@ -344,16 +342,30 @@ struct CollectSheet: View {
                 .background(Brand.surfaceMuted, in: .rect(cornerRadius: 14))
 
             HStack(spacing: 8) {
-                Image(systemName: "lock")
+                Image(systemName: "leaf")
                     .font(.footnote).foregroundStyle(Brand.inkSoft)
-                Text("Your photograph stays on your phone and in your trees. Offering it is a separate choice.")
+                // NO CHOICE here any more (Hidde, 2026-08-24: "ik denk ook
+                // niet dat je mensen de optie moet geven om te kiezen om hem
+                // toe te voegen aan de database of niet - hij komt uberhaupt
+                // automatisch bij ons terecht of ze het willen of niet en dan
+                // kiezen wij of die het waard is"). Two buttons that differed
+                // only in whether we were allowed to look at it made the
+                // reader carry a decision that is ours, and most people would
+                // have taken the one that gave us nothing.
+                //
+                // The photograph itself still never leaves the phone; what
+                // reaches us is the words, through the submissions channel the
+                // website has had all along. Uploading pictures is a bucket, a
+                // bill and a deletion duty, and that is Hidde's call.
+                Text("Your photograph stays on your phone. What you write reaches us, and we decide whether it joins the map everybody sees. Either way it stays yours.")
                     .font(.footnote).foregroundStyle(Brand.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
             }
 
             Button { keepMine() } label: {
                 HStack { Spacer()
-                    Label("Keep it as mine", systemImage: "checkmark")
+                    if sending { ProgressView().tint(.white) }
+                    Label("Add this tree", systemImage: "checkmark")
                         .font(.brand(17, .bold))
                     Spacer() }
                     .padding(.vertical, 15)
@@ -361,43 +373,35 @@ struct CollectSheet: View {
                     .foregroundStyle(.white)
             }
             .buttonStyle(.plain)
-
-            // Offering is the SECOND choice, and it needs the account that
-            // lets us answer (2026-08-21, the Google Maps convention).
-            Button {
-                if account.isSignedIn { Task { await send() } }
-                else { signingIn = true }
-            } label: {
-                HStack { Spacer()
-                    if sending { ProgressView() }
-                    Text("Keep it and offer it for the map").font(.brand(16, .bold))
-                    Spacer() }
-                    .padding(.vertical, 13)
-                    .background(Brand.surfaceMuted, in: .rect(cornerRadius: 15))
-                    .foregroundStyle(Brand.ink)
-            }
-            .buttonStyle(.plain)
-            .disabled(sending || why.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
-
-            if failed {
-                Text("That did not send, so it is kept as yours for now. Try offering it again later.")
-                    .font(.footnote)
-                    .foregroundStyle(Brand.inkSoft)
-            }
         }
     }
 
     /// Yours and nobody else's: no network, no account, no waiting.
     private func keepMine() {
         let here = at ?? origin
-        sightings.record(treeId: nil,
-                         name: why.isEmpty ? "A tree I found" : String(why.prefix(60)),
-                         note: why, lat: here.lat, lng: here.lng, image: shot)
+        let s = sightings.record(treeId: nil,
+                                 name: why.isEmpty ? "A tree I found" : String(why.prefix(60)),
+                                 note: why, lat: here.lat, lng: here.lng, image: shot)
         shot = nil
         dismiss()
+        // Straight to the tree you just made, because that is where you finish
+        // the job: the same page ours get, with the fields you have not filled
+        // in yet open (Hidde, 2026-08-24: "als ik uit die flow kom van
+        // toegevoegde boom wil ik eindigen op de diepere boompagina van de boom
+        // die ik net heb gemaakt").
+        navigator.push = .mine(s.id)
+        // And it reaches us on its own. No account, no waiting: a signed-in
+        // person's tree goes now, and anybody else's goes the moment they sign
+        // in, which is a queue rather than a question.
+        if account.isSignedIn { Task { await transmit(s.id) } }
     }
 
-    private func send() async {
+    /// Sends the WORDS, and nothing else.
+    ///
+    /// It used to record the sighting as well, which was right when offering
+    /// was a second button and is a duplicate now that keeping and offering are
+    /// one act: keepMine() has already written the tree by the time this runs.
+    private func transmit(_ id: UUID) async {
         sending = true
         let here = at ?? origin
         var d = Submission.Draft()
@@ -407,16 +411,10 @@ struct CollectSheet: View {
         d.city = nearbyCityName ?? ""
         let ok = await Submission.send(d, from: "app:collect",
                                        token: account.session?.accessToken)
-        // Kept either way. A failed send is a network problem, not a reason to
-        // lose somebody's photograph.
-        sightings.record(treeId: nil,
-                         name: why.isEmpty ? "A tree I found" : String(why.prefix(60)),
-                         note: why, lat: here.lat, lng: here.lng, image: shot,
-                         status: ok ? .sent : .mine)
-        shot = nil
+        // A failed send is a network problem and never a reason to lose
+        // somebody's tree: it stays yours and stays queued.
+        sightings.update(id, status: ok ? .sent : .mine)
         sending = false
-        failed = !ok
-        if ok { withAnimation(.snappy) { stage = .sent } }
     }
 
     /// Best guess at which of our cities the person is in, for the triage
@@ -432,21 +430,6 @@ struct CollectSheet: View {
     /// will not clear the research bar, and the one thing that makes that
     /// survivable is the sentence in the middle: it stays in YOUR trees
     /// whatever we decide about ours.
-    private var sentState: some View {
-        VStack(alignment: .leading, spacing: 14) {
-            Image(systemName: "paperplane.fill")
-                .font(.system(size: 40))
-                .foregroundStyle(Brand.moss)
-            Text("Sent. Thank you.")
-                .font(.brand(24, .heavy))
-                .foregroundStyle(Brand.ink)
-            Text("It is in your trees already, and it stays there whatever we find. We check every tree before it joins the map everybody sees, and we will write to you either way.")
-                .font(.body)
-                .foregroundStyle(Brand.inkSoft)
-                .fixedSize(horizontal: false, vertical: true)
-            doneButton
-        }
-    }
 
     private var doneButton: some View {
         Button { dismiss() } label: {

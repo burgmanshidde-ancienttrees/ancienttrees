@@ -11,8 +11,16 @@ import MapKit
 
 struct TreeDetail: View {
     let tree: Tree
+    /// Set when this page is showing a tree only YOU have. The same page, with
+    /// the fields you have not filled in yet open for you to fill (Hidde,
+    /// 2026-08-24: "het is dezelfde boom pagina als onze bomen alleen dan dat
+    /// de eindgebruiker de velden kan invullen"). A second screen for your own
+    /// trees would drift from this one inside a week.
+    var mine: Sightings.Sighting? = nil
     let catalogue: Catalogue
     @Environment(Saved.self) private var saved
+    @Environment(Sightings.self) private var sightings
+    @State private var editing: EditableField?
     @Environment(Account.self) private var account
     @Environment(Nudge.self) private var nudge
     @State private var reporting = false
@@ -29,10 +37,15 @@ struct TreeDetail: View {
                     // High on the page, under the facts, because it is a
                     // question about the thing the facts just described
                     // (Hidde, 2026-08-21).
-                    WorthItView(tree: tree)
+                    // Not on your own tree: a vote on whether YOUR tree is
+                    // worth the visit is a question to nobody, and the access
+                    // and transport lines are ours to research, not blanks for
+                    // you to fill about a tree you already stood at.
+                    if mine == nil { WorthItView(tree: tree) }
                     story
-                    accessBlock
-                    if tree.photo == nil { offerPhoto }
+                    if mine == nil { accessBlock }
+                    if mine == nil, tree.photo == nil { offerPhoto }
+                    if mine != nil { mineFooter }
                     Button { reporting = true } label: {
                         Label("Something here is wrong", systemImage: "exclamationmark.bubble")
                             .font(.footnote)
@@ -60,12 +73,18 @@ struct TreeDetail: View {
         .navigationTitle("")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
-            ShareTo(url: URL(string: "https://ancienttrees.app" + tree.url)!,
-                    subject: tree.name,
-                    message: "\(tree.name), \(tree.city).",
-                    label: "Share this tree")
+            // Only ours can be shared: a tree only you have has no address on
+            // the web to send anybody to, and inventing one would send them to
+            // a 404. It gets a share button the day these get a page.
+            if mine == nil {
+                    ShareTo(url: URL(string: "https://ancienttrees.app" + tree.url)!,
+                        subject: tree.name,
+                        message: "\(tree.name), \(tree.city).",
+                        label: "Share this tree")
+            }
         }
         .sheet(isPresented: $reporting) { ContributeView(about: tree) }
+        .sheet(item: $editing) { editor($0) }
     }
 
     /// The photograph, or the species drawn, edge to edge. AllTrails leads every
@@ -80,7 +99,17 @@ struct TreeDetail: View {
     /// licence obliges a credit and this is it, in the ordinary place a caption
     /// goes, which is also what every image search and Wikipedia's own apps do.
     @ViewBuilder private var hero: some View {
-        if let p = tree.photo, let url = Photos.thumb(p.url, width: 960) {
+        if let m = mine, let shot = sightings.image(m) {
+            // Your own photograph, from Documents rather than the network. The
+            // same empty box with the picture laid over it as below, for the
+            // same reason: an unbounded image drags the whole page sideways.
+            Color.clear
+                .frame(height: 240)
+                .overlay {
+                    Image(uiImage: shot).resizable().aspectRatio(contentMode: .fill)
+                }
+                .clipShape(.rect(cornerRadius: 16))
+        } else if let p = tree.photo, let url = Photos.thumb(p.url, width: 960) {
             VStack(alignment: .leading, spacing: 6) {
                 // AN EMPTY BOX WITH THE PHOTOGRAPH LAID OVER IT, not a
                 // photograph with a height. A .fill image asks for the width
@@ -156,15 +185,27 @@ struct TreeDetail: View {
             Text(tree.name)
                 .font(.brand(30, .bold, relativeTo: .largeTitle))
                 .foregroundStyle(Brand.ink)
-            Text(tree.species).font(.subheadline).foregroundStyle(Brand.inkSoft)
+            if tree.species.isEmpty, mine != nil {
+                blank("What kind of tree is it?", .species)
+            } else {
+                Text(tree.species).font(.subheadline).foregroundStyle(Brand.inkSoft)
+            }
             // WHERE it is, with the width of the page to say it in.
             //
             // It used to be the middle column of the stat row, where "Plantage,
             // Amsterdam-Centrum" became "Plantage, Amsterdam-C..." A stat row
             // holds numbers: AllTrails puts length, ascent and time in theirs,
             // and a place name is a phrase, not a number.
-            Text(place).font(.subheadline).foregroundStyle(Brand.inkSoft)
-                .lineLimit(1)
+            if mine != nil {
+                // Where YOU stood. No district, no city, because nobody has
+                // told us one and inventing it is the one thing a location
+                // field may never do.
+                Text("Where you photographed it")
+                    .font(.subheadline).foregroundStyle(Brand.inkSoft)
+            } else {
+                Text(place).font(.subheadline).foregroundStyle(Brand.inkSoft)
+                    .lineLimit(1)
+            }
         }
     }
 
@@ -185,12 +226,17 @@ struct TreeDetail: View {
             if let hi = tree.ageMax, hi > lo { return "\(lo)-\(hi) years" }
             return "\(lo) years"
         }
-        return tree.age ?? "not recorded"
+        return tree.age ?? (mine != nil ? "Add it" : "not recorded")
     }
 
     private var facts: some View {
         HStack(alignment: .top, spacing: 0) {
-            fact(shortAge, "Age")
+            if mine != nil, tree.age == nil {
+                Button { editing = .age } label: { fact("Add it", "Age") }
+                    .buttonStyle(.plain)
+            } else {
+                fact(shortAge, "Age")
+            }
             Divider().frame(height: 34)
             fact(tree.precision == .confirmed ? "Exact" : "Approximate", "Pin")
         }
@@ -212,6 +258,67 @@ struct TreeDetail: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.horizontal, 14)
+    }
+
+    /// One sheet for every blank, because four sheets that differ by a
+    /// placeholder is four places for them to drift apart.
+    private func editor(_ field: EditableField) -> some View {
+        FieldEditor(field: field,
+                    initial: current(field),
+                    onSave: { text in
+                        guard let m = mine else { return }
+                        switch field {
+                        case .name: sightings.update(m.id, name: text)
+                        case .species: sightings.update(m.id, species: text)
+                        case .age: sightings.update(m.id, age: text)
+                        case .story: sightings.update(m.id, note: text)
+                        }
+                        editing = nil
+                    },
+                    onCancel: { editing = nil })
+    }
+
+    private func current(_ field: EditableField) -> String {
+        switch field {
+        case .name: tree.name
+        case .species: tree.species
+        case .age: tree.age ?? ""
+        case .story: tree.story
+        }
+    }
+
+    /// A field on your own tree that nobody has filled in yet.
+    enum EditableField: String, Identifiable {
+        case name, species, age, story
+        var id: String { rawValue }
+
+        var prompt: String {
+            switch self {
+            case .name: "What do you call it?"
+            case .species: "What kind of tree is it?"
+            case .age: "How old is it, roughly?"
+            case .story: "What makes it worth the walk?"
+            }
+        }
+
+        /// Long answers get room; a species or an age is one line.
+        var long: Bool { self == .story }
+    }
+
+    /// An empty field, offered rather than hidden. The green says it is
+    /// yours to fill; a grey dash would read as missing data on our side.
+    private func blank(_ label: String, _ field: EditableField) -> some View {
+        Button { editing = field } label: {
+            HStack(spacing: 5) {
+                Image(systemName: "plus.circle")
+                Text(label)
+            }
+            .font(.subheadline)
+            .foregroundStyle(Brand.moss)
+            .frame(minHeight: 44)
+            .contentShape(.rect)
+        }
+        .buttonStyle(.plain)
     }
 
     /// The one warning this product must never soften. An approximate pin that
@@ -248,8 +355,35 @@ struct TreeDetail: View {
     /// 2026-08-21: "your text can go up, so you can put the whole story there
     /// instead of putting that behind the button").
     private var story: some View {
-        Text(tree.story)
-            .fixedSize(horizontal: false, vertical: true)
+        Group {
+            if tree.story.isEmpty, mine != nil {
+                blank("What makes it worth the walk?", .story)
+            } else {
+                Text(tree.story)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+        }
+    }
+
+    /// What happens to a tree you added, said plainly on its own page.
+    ///
+    /// There is no CHOICE about it any more (Hidde, 2026-08-24: "hij komt
+    /// uberhaupt automatisch bij ons terecht of ze het willen of niet en dan
+    /// kiezen wij of die het waard is"), so the honest thing is to say so here
+    /// rather than to ask twice.
+    @ViewBuilder private var mineFooter: some View {
+        if let m = mine {
+            HStack(alignment: .top, spacing: 8) {
+                Image(systemName: m.status == .published ? "checkmark.seal" : "leaf")
+                    .foregroundStyle(Brand.moss)
+                Text(m.status == .published
+                     ? "This one made the map everybody sees."
+                     : "This tree is yours. We have it too, and we will take a look; whatever we decide, it stays on your map.")
+                    .font(.footnote).foregroundStyle(Brand.inkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+            .padding(.top, 2)
+        }
     }
 
     private var accessBlock: some View {
@@ -328,5 +462,51 @@ struct TreeDetail: View {
             }
             .ignoresSafeArea(edges: .bottom)
         }
+    }
+}
+
+/// The one editor behind every blank on a tree of your own.
+///
+/// Deliberately dull: a title, a field, Cancel and Save. Nothing here is a new
+/// interaction, because filling in a text field is the most settled thing in
+/// software and inventing a version of it would be the third time in one day.
+struct FieldEditor: View {
+    let field: TreeDetail.EditableField
+    let initial: String
+    let onSave: (String) -> Void
+    let onCancel: () -> Void
+
+    @State private var text: String = ""
+    @FocusState private var focused: Bool
+
+    var body: some View {
+        NavigationStack {
+            VStack(alignment: .leading, spacing: 12) {
+                if field.long {
+                    TextField(field.prompt, text: $text, axis: .vertical)
+                        .lineLimit(4...10)
+                        .focused($focused)
+                } else {
+                    TextField(field.prompt, text: $text)
+                        .focused($focused)
+                }
+                Spacer()
+            }
+            .padding(16)
+            .navigationTitle(field.prompt)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Cancel") { onCancel() }
+                }
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("Save") {
+                        onSave(text.trimmingCharacters(in: .whitespacesAndNewlines))
+                    }
+                }
+            }
+        }
+        .presentationDetents(field.long ? [.medium, .large] : [.height(220)])
+        .onAppear { text = initial; focused = true }
     }
 }
