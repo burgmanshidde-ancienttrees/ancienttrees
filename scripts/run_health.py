@@ -207,11 +207,23 @@ def what_changed(since_sha):
     files = [f for f in git("diff", "--name-only", rng).split("\n") if f]
     cities = [f for f in files if f.startswith("data/cities/") and f.endswith(".json")]
     delta = 0
+    # Hidde, 2026-08-24: "kun je ook altijd vertellen welke steden de nachtruns
+    # hebben gedaan." The count alone ("3 city files") was answering how many
+    # and never which, so the digest could not say a city had opened without
+    # somebody reading the git log by hand. Names cost nothing here: the file
+    # paths are already in front of us. Recorded per city with its own tree
+    # delta, so a run that added four to Utrecht reads differently from one
+    # that touched four cities for one tree each.
+    by_city = []
     for path in cities:
-        delta += trees_in(path) - trees_in(path, since_sha)
+        d = trees_in(path) - trees_in(path, since_sha)
+        delta += d
+        by_city.append({"city": path.split("/")[-1][:-5], "trees": d})
+    by_city.sort(key=lambda c: (-c["trees"], c["city"]))
     return {
         "commits": len(commits),
         "cities_touched": len(cities),
+        "cities": by_city,
         "trees": delta,
         "logged": "LOG.md" in files,
     }

@@ -29,7 +29,13 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      # Depth 300, not the default 1: night_work() in daily_digest.py reads the
+      # machine's own commit subjects to say what the night actually made, and
+      # on a one-commit checkout git log returns nothing, so that block has been
+      # silently empty since it was written. A night is ~40 commits.
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 300
 
       - name: Build the digest entry
         env:

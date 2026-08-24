@@ -1396,14 +1396,15 @@ def night_shift(today):
     commits = sum(r.get("commits") or 0 for r in rows)
     idle = sum(1 for r in rows if not (r.get("trees") or 0))
     out = ["", "**What the night shift did**", "",
-           "| Started | Minutes | Turns | Trees | Commits | Refused |",
-           "|---|---:|---:|---:|---:|---:|"]
+           "| Started | Minutes | Trees | Commits | Refused | Cities |",
+           "|---|---:|---:|---:|---:|---|"]
     for r in rows:
         out.append("| %s | %s | %s | %s | %s | %s |" % (
             str(r.get("started"))[5:16], r.get("minutes") if r.get("minutes") is not None else "-",
-            r.get("turns") or 0, r.get("trees") or 0, r.get("commits") or 0,
-            r.get("denials") if r.get("denials") is not None else "-"))
-    out.append("| **%d runs** | **%.0f** | | **%d** | **%d** | |"
+            r.get("trees") or 0, r.get("commits") or 0,
+            r.get("denials") if r.get("denials") is not None else "-",
+            city_names(r)))
+    out.append("| **%d runs** | **%.0f** | **%d** | **%d** | | |"
                % (len(rows), mins, trees, commits))
     note = []
     if idle:
@@ -1426,6 +1427,36 @@ def night_shift(today):
         for line in made:
             out.append("- " + line)
     return "\n".join(out)
+
+
+def city_names(run):
+    """Which cities a run touched, for the night-shift table.
+
+    Hidde, 2026-08-24: "kun je ook altijd vertellen welke steden de nachtruns
+    hebben gedaan." The table had a Turns column, which is a number nobody has
+    ever acted on, and no column for the one thing he asks about every time. So
+    turns come out and cities go in.
+
+    Reads the `cities` list run_health.py has written since the same day, with
+    each city's own tree delta, and falls back to the older `cities_touched`
+    count for the nights recorded before that. A run whose city list is empty
+    but which committed something says "-" rather than nothing, because blank
+    reads as missing data and a bookkeeping-only run is a fact.
+    """
+    cities = run.get("cities")
+    if isinstance(cities, list) and cities:
+        bits = []
+        for c in cities[:4]:
+            name = str(c.get("city", "")).replace("-", " ").title()
+            d = c.get("trees") or 0
+            bits.append("%s +%d" % (name, d) if d > 0 else name)
+        if len(cities) > 4:
+            bits.append("+%d more" % (len(cities) - 4))
+        return ", ".join(bits)
+    n = run.get("cities_touched")
+    if n:
+        return "%d city file(s), names not recorded" % n
+    return "-"
 
 
 def night_work(since):
