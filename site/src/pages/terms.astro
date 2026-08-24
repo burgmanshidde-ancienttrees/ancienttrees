@@ -1,0 +1,55 @@
+---
+// Terms page. Written 2026-08-24 on Hidde's instruction ("ga maar voorwaarden
+// maken en toevoegen aan het inlogproces"), because the app is about to start
+// keeping what readers send instead of leaving it on their phone, and the
+// moment the first photograph lands there is an obligation attached to it.
+//
+// The structure is the ordinary consumer-app one and nothing here is invented:
+// what the service is, accounts, the licence you grant on what you send, what
+// we do with it, deletion, and the limits of what we promise. AllTrails' own
+// terms could not be read for reference: their robots.txt disallows ClaudeBot
+// from everything but a handful of marketing pages, so the convention copied
+// here is the shared one rather than theirs specifically.
+//
+// NOT reviewed by a lawyer. Hidde knows; it is his name on it.
+import Base from "../layouts/Base.astro";
+import { BASE_URL } from "../lib/schema";
+
+const canonical = `${BASE_URL}/terms`;
+---
+<Base title="Terms" description="The terms for using Ancient Trees and for what you send us." canonical={canonical}>
+<main class="content-page">
+  <h1>Terms</h1>
+  <div class="prose-block">
+    <p>Ancient Trees maps remarkable old trees and the walks that string them together. These terms cover using the site and the app, and what happens to anything you send us. They are written to be read, not to be survived.</p>
+
+    <h2>Using it</h2>
+    <p>The map, the trees and their stories are free to read, with or without an account. Do not scrape the site wholesale, resell the data as your own, or use it to harm a tree or the people who look after one.</p>
+
+    <h2>Your account</h2>
+    <p>An account is one email address and the trees you keep. No password, no profile, no name required. You can delete it at any time from your account page, and deleting it removes your address and everything attached to it.</p>
+
+    <h2>What you send us</h2>
+    <p>When you photograph a tree, add one we do not have, correct something, or send a tip, that reaches us. By sending it you give us permission to store it, to show it on the site and in the app, and to use it in material about the platform itself. That permission is worldwide and free of charge, and it lasts until you ask us to remove it.</p>
+    <p>You keep ownership of your photographs. Nothing here transfers that, and nothing stops you using your own picture anywhere else.</p>
+    <p>Send only what is yours to send. A photograph you took yourself is fine; one you found somewhere is not.</p>
+
+    <h2>What we do with it</h2>
+    <p>We decide what goes on the public map. Most of what arrives is checked, and some of it is published; the rest stays yours and stays in your own collection whether or not it ever joins the map everybody sees.</p>
+    <p><strong>Published photographs carry no name.</strong> Not yours, not anyone's. This is deliberate and it is a departure from what comparable apps do, most of which credit the contributor. The reason is that a name beside a place and a date is personal information we would rather not publish about anybody, including you. If you would rather be credited, this is not the platform for that picture.</p>
+    <p>A photograph often carries where it was taken and when. We use that to place the tree. We do not build a picture of where you go, we do not sell it, and we do not share it with advertisers.</p>
+
+    <h2>Removing things</h2>
+    <p>Ask and it goes. Delete your account, or <a href="/contribute?kind=privacy">send a privacy request</a> naming what you want gone. If a photograph of yours is already on the map, say so and it comes off.</p>
+
+    <h2>What we do not promise</h2>
+    <p>Trees fall, gates close, councils fell things without telling us, and a pin can be wrong. We say so on the page when we know a location is rough, and we correct what readers report, but we cannot promise that any tree is still standing or that you can reach it today.</p>
+    <p>Walking is yours to judge. Routes here are suggestions worked out from where the trees stand, not signposted trails, and they are not checked for traffic, surface or safety. Look where you are going.</p>
+
+    <h2>Changes, and the law</h2>
+    <p>When these terms change, the date below changes with them. Dutch law applies.</p>
+    <p>Questions, or something you want removed: <a href="/contribute?kind=privacy">write to us</a>.</p>
+    <p><em>Last updated: 24 August 2026</em></p>
+  </div>
+</main>
+</Base>
