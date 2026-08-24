@@ -60,16 +60,10 @@ struct TreeDetail: View {
         .navigationTitle("")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
-            ToolbarItem(placement: .topBarTrailing) {
-                ShareLink(item: URL(string: "https://ancienttrees.app" + tree.url)!,
-                          subject: Text(tree.name),
-                          message: Text("\(tree.name), \(tree.city).")) {
-                    Image(systemName: "square.and.arrow.up")
-                        .frame(width: 44, height: 44)
-                        .contentShape(.rect)
-                }
-                .accessibilityLabel("Share this tree")
-            }
+            ShareTo(url: URL(string: "https://ancienttrees.app" + tree.url)!,
+                    subject: tree.name,
+                    message: "\(tree.name), \(tree.city).",
+                    label: "Share this tree")
         }
         .sheet(isPresented: $reporting) { ContributeView(about: tree) }
     }
