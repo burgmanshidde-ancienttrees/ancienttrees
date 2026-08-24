@@ -247,10 +247,26 @@ struct SignInSheet: View {
             // Both of these were text a finger has to find: "Privacy" measured
             // 37 by 13 points and "Not now" 55 by 17, against Apple's 44 by 44.
             // The words stay the same size; the area around them is the target.
-            Link("Privacy", destination: URL(string: "https://ancienttrees.app/privacy")!)
-                .font(.caption2)
-                .frame(minWidth: 44, minHeight: 44)
-                .contentShape(.rect)
+            // The acceptance line every consumer app carries under this button,
+            // and the reason it is here rather than on a checkbox: a licence to
+            // use what you send is granted by agreeing to terms once, not by
+            // answering a question per photograph. Added 2026-08-24 with the
+            // terms themselves; the website's sign-in dialog carries the same
+            // sentence, because a person who signs in on a laptop and
+            // photographs on a phone is one person.
+            Text("By continuing you agree to the Terms and the Privacy notice.")
+                .font(.caption2).foregroundStyle(.secondary)
+                .multilineTextAlignment(.center)
+            HStack(spacing: 18) {
+                Link("Terms", destination: URL(string: "https://ancienttrees.app/terms")!)
+                    .font(.caption2)
+                    .frame(minWidth: 44, minHeight: 44)
+                    .contentShape(.rect)
+                Link("Privacy", destination: URL(string: "https://ancienttrees.app/privacy")!)
+                    .font(.caption2)
+                    .frame(minWidth: 44, minHeight: 44)
+                    .contentShape(.rect)
+            }
             Button("Not now") { dismiss() }
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
