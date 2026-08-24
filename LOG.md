@@ -9,6 +9,46 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+
+## 2026-08-24 (evening) - The walk builder is designed and NOT built. Start here tomorrow.
+
+Hidde: "kom morgen maar terug op de wandelroute." Everything below is decided,
+so tomorrow is building rather than deciding.
+
+**What it is.** Making a walk is a PLAYLIST, not a route planner. The user never
+draws a line: they tap trees that already exist and we join them. That is the
+whole simplification and it is what makes this a day rather than a fortnight.
+
+**His corrections to my first design, all of which stand:**
+- You DO want to see the route while you build it, redrawing on every tap. I had
+  cut the map entirely and that was wrong.
+- You tap trees ON THE MAP to add them. The builder IS the map in a mode.
+- While building you may meet a tree we do not have, so the camera has to be
+  reachable from inside the builder and its result becomes the next stop.
+- APPROVED: a third-party routing service at runtime (hard rule 5), "ik vind die
+  afhankelijkheid van die partij geen probleem voor een betere ervaring".
+
+**And my counter-proposal, which he has not contradicted:** do NOT route on
+every tap. A tap that waits for a server feels worse than a straight line. Draw
+the straight line while building, and fetch the real walking line ONCE on save.
+It is also the only version that is fair to a community routing instance.
+
+**Open questions I would answer this way unless he says otherwise:** the order
+you tap is the order of the walk, with one button that re-orders it through our
+own planner; and the first version keeps walks on the phone, because sharing
+needs a table holding somebody's data and that is a separate yes.
+
+**What already exists and does not need building:** the map, the pins, the route
+layer, the sheet, the clustering, `scripts/route_walks.py`'s cached routes, the
+walk pages on the web (Contract K, live), and `Kit/MyWalks.swift`, which is the
+model and the local store, written today and unused so far.
+
+**Two smaller things also open:**
+- Hidde reports that in Collection you cannot get back to "Want to see" after
+  pressing "Collected". I could not find a cause by reading and cannot tap with
+  simctl; reproduce it with a UI test rather than guessing.
+- He asked to see the eighteen species marks. Needs a seeded collection.
+
 ## 2026-08-24 - The app runs on our own map, and the tab bar is AllTrails' now
 
 **The map.** The app no longer shows Apple's map anywhere. It draws the same
