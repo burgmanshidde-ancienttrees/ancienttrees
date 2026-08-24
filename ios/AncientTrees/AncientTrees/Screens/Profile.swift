@@ -105,6 +105,22 @@ struct ProfileView: View {
     // MARK: - who you are
 
     private var identity: some View {
+        // A BUTTON, not a tap gesture on a card. onTapGesture on a large view
+        // inside a ScrollView competes with the scroll's own recogniser, so a
+        // tap that moves a millimetre is swallowed and the control feels slow
+        // and unreliable, which is exactly what Hidde reported (2026-08-24:
+        // "de sign in knop op profielpagina werkt langzaam en soms niet").
+        // A Button coordinates with the scroll view instead of racing it.
+        Button {
+            if account.isSignedIn { navigator.selectTab = 3 } else { signingIn = true }
+        } label: {
+            identityRow
+        }
+        .buttonStyle(.plain)
+        .accessibilityIdentifier("profile-signin")
+    }
+
+    private var identityRow: some View {
         HStack(spacing: 14) {
             ZStack {
                 Circle().fill(Brand.surfaceMuted)
@@ -149,10 +165,6 @@ struct ProfileView: View {
         // profile page with a sign-in prompt does it. A pill button beside the
         // text squeezed the sentence into a four-line column.
         .contentShape(.rect)
-        .onTapGesture {
-            if account.isSignedIn { navigator.selectTab = 3 } else { signingIn = true }
-        }
-        .accessibilityIdentifier("profile-signin")
     }
 
     // MARK: - the upgrade

@@ -57,17 +57,26 @@ struct GoogleSignInButton: View {
 
     var body: some View {
         Button(action: action) {
-            HStack(spacing: 12) {
-                GoogleMark()
+            // Mark on the left, LABEL CENTRED. It used to be an HStack with a
+            // trailing Spacer, so the words sat hard against the G with all the
+            // air on the right, while the Apple button beside it centres its
+            // own content. Two sign-in buttons that disagree about where their
+            // words go is what Hidde saw (2026-08-24: "totaal niet goed
+            // uitgelijnd"), and centring is also Google's own layout.
+            ZStack {
                 Text(title)
                     // Roboto Medium is Google's spec; the system face at the
                     // same weight is the honest substitute rather than a
                     // download for one label.
                     .font(.system(size: 16, weight: .medium))
-                Spacer(minLength: 0)
+                    .frame(maxWidth: .infinity)
+                HStack(spacing: 0) {
+                    GoogleMark()
+                    Spacer(minLength: 0)
+                }
+                .padding(.leading, 12)
             }
-            .padding(.leading, 12)
-            .padding(.trailing, 16)
+            .padding(.horizontal, 12)
             .frame(maxWidth: .infinity, minHeight: 52)
             .foregroundStyle(scheme == .dark ? Color(white: 0.89) : Color(red: 0.12, green: 0.12, blue: 0.12))
             .background(scheme == .dark ? Color(red: 0.075, green: 0.086, blue: 0.098) : .white,
