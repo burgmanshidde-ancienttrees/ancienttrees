@@ -59,13 +59,45 @@ struct WalkDetail: View {
         return trees.map { .init(latitude: $0.lat, longitude: $0.lng) }
     }
 
+    /// The camera for this walk: its own middle, and wide enough to hold every
+    /// stop with a little air. The map's default four kilometres put a four
+    /// stop walk in one overlapping knot in the centre of the screen, which
+    /// tells you nothing about the shape of the afternoon.
+    private var frame: (centre: CLLocationCoordinate2D, meters: CLLocationDistance) {
+        let pts = routeLine.isEmpty
+            ? trees.map { CLLocationCoordinate2D(latitude: $0.lat, longitude: $0.lng) }
+            : routeLine
+        guard let first = pts.first else {
+            return (.init(latitude: 0, longitude: 0), 4000)
+        }
+        var minLat = first.latitude, maxLat = first.latitude
+        var minLon = first.longitude, maxLon = first.longitude
+        for p in pts {
+            minLat = min(minLat, p.latitude); maxLat = max(maxLat, p.latitude)
+            minLon = min(minLon, p.longitude); maxLon = max(maxLon, p.longitude)
+        }
+        let centre = CLLocationCoordinate2D(latitude: (minLat + maxLat) / 2,
+                                            longitude: (minLon + maxLon) / 2)
+        let latMeters = (maxLat - minLat) * 111_320
+        let lonMeters = (maxLon - minLon) * 111_320 * cos(centre.latitude * .pi / 180)
+        // 1.5 for breathing room, and a floor so a walk whose stops share a
+        // courtyard does not open at street-tile zoom.
+        let span = max(latMeters, lonMeters) * 1.5
+        return (centre, max(500, min(span, 20_000)))
+    }
+
     var body: some View {
         ZStack(alignment: .bottom) {
             VStack(spacing: 0) {
                 TreeMap(trees: trees,
-                        focus: trees.first.map { .init(latitude: $0.lat, longitude: $0.lng) },
+                        focus: frame.centre,
                         route: routeLine,
                         routeIsReal: walk.shape != nil,
+                        // Never on a walk. The stops ARE the page, and four of
+                        // them a few hundred metres apart collapse into one
+                        // bubble marked 4, which hides the whole route.
+                        spanMeters: frame.meters,
+                        clusters: false,
                         selected: $selected)
                     .frame(maxHeight: .infinity)
                 List {
