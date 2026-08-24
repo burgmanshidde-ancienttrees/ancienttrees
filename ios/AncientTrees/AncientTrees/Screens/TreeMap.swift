@@ -38,6 +38,12 @@ struct TreeMap: UIViewRepresentable {
     var routeIsReal = true
     /// Off on a walk's map, where the camera belongs to the route.
     var showsRecentre = false
+    /// How tall the sheet in front of this map is, so the recentre control can
+    /// sit ABOVE it. It was pinned 120 points off the bottom, which was clear
+    /// of the sheet's peek and behind every other stop it has: the button has
+    /// been invisible since the sheet grew (Hidde, 2026-08-24: "de knop mist
+    /// waar je naar je locatie gaat").
+    var sheetLift: SheetHeight = .peek
     /// How wide the first look is. Four kilometres suits "what is near me"; a
     /// tree's own page wants the street it stands in, and at four kilometres the
     /// tree itself disappears into a cluster bubble.
@@ -89,10 +95,11 @@ struct TreeMap: UIViewRepresentable {
             let recentre = RecentreButton(map: map)
             recentre.translatesAutoresizingMaskIntoConstraints = false
             map.addSubview(recentre)
+            let lift = recentre.bottomAnchor.constraint(equalTo: map.bottomAnchor, constant: -120)
+            context.coordinator.recentreLift = lift
             NSLayoutConstraint.activate([
                 recentre.trailingAnchor.constraint(equalTo: map.safeAreaLayoutGuide.trailingAnchor, constant: -12),
-                // 120 puts it just above the lip of the sheet rather than behind it.
-                recentre.bottomAnchor.constraint(equalTo: map.bottomAnchor, constant: -120),
+                lift,
                 recentre.widthAnchor.constraint(equalToConstant: 44),
                 recentre.heightAnchor.constraint(equalToConstant: 44),
             ])
@@ -106,6 +113,14 @@ struct TreeMap: UIViewRepresentable {
 
     func updateUIView(_ map: MLNMapView, context: Context) {
         context.coordinator.parent = self
+        // Keep the recentre control just above the sheet, whatever stop the
+        // sheet is at. 12 points of air, and never lower than the old 120 so a
+        // map with no sheet in front of it looks the same as before.
+        if let lift = context.coordinator.recentreLift, map.bounds.height > 0 {
+            let want = -(sheetLift.points(in: map.bounds.height) + 12)
+            let clamped = min(want, -120)
+            if abs(lift.constant - clamped) > 1 { lift.constant = clamped }
+        }
 
         if let move = moveTo, context.coordinator.moved != move.token {
             context.coordinator.moved = move.token
@@ -184,6 +199,8 @@ struct TreeMap: UIViewRepresentable {
         private var drawnMineIDs: Set<String> = []
         private var drawnRoute = 0
         private var breath: Timer?
+        /// The constraint that keeps the recentre control above the sheet.
+        var recentreLift: NSLayoutConstraint?
 
         init(_ p: TreeMap) { parent = p }
         deinit { breath?.invalidate() }
@@ -852,12 +869,19 @@ final class RecentreButton: UIButton {
 
     required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
 
+    /// Back to you, AND north back to the top.
+    ///
+    /// Both, on one button, because that is what Hidde asked for and because
+    /// they are the same wish: a map you have wandered and turned, put back the
+    /// way it started. It used to TOGGLE tracking, so a second press left you
+    /// wherever you had scrolled to and a turned map stayed turned.
     @objc private func recentre() {
         guard let map else { return }
         let status = CLLocationManager().authorizationStatus
         guard status == .authorizedWhenInUse || status == .authorizedAlways else { return }
         map.showsUserLocation = true
-        map.setUserTrackingMode(map.userTrackingMode == .none ? .follow : .none, animated: true)
+        map.setUserTrackingMode(.follow, animated: true)
+        if map.direction != 0 { map.setDirection(0, animated: true) }
     }
 }
 
