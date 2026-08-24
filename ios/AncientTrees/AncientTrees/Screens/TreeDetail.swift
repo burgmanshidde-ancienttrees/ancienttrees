@@ -18,12 +18,17 @@ struct TreeDetail: View {
     /// trees would drift from this one inside a week.
     var mine: Sightings.Sighting? = nil
     let catalogue: Catalogue
+    /// Where the phone thinks it is, for the walking view. Defaults to the
+    /// tree itself, which is honest when nobody has given us a location: the
+    /// line is then zero long rather than wrong.
+    var origin: (lat: Double, lng: Double)? = nil
     @Environment(Saved.self) private var saved
     @Environment(Sightings.self) private var sightings
     @State private var editing: EditableField?
     @Environment(Account.self) private var account
     @Environment(Nudge.self) private var nudge
     @State private var reporting = false
+    @State private var walking = false
     @Environment(Navigator.self) private var navigator
 
     var body: some View {
@@ -85,6 +90,16 @@ struct TreeDetail: View {
         }
         .sheet(isPresented: $reporting) { ContributeView(about: tree) }
         .sheet(item: $editing) { editor($0) }
+        .task {
+            // Debug scaffolding, same family as -tab, -select and -collected:
+            // simctl cannot tap, and a screen that only exists after a tap is a
+            // screen that ships unlooked at.
+            if ProcessInfo.processInfo.arguments.contains("-walkto") { walking = true }
+        }
+        .fullScreenCover(isPresented: $walking) {
+            WalkMode(walk: Self.oneTreeWalk(tree), catalogue: catalogue,
+                     origin: origin ?? (tree.lat, tree.lng))
+        }
     }
 
     /// The photograph, or the species drawn, edge to edge. AllTrails leads every
@@ -260,6 +275,17 @@ struct TreeDetail: View {
         .padding(.horizontal, 14)
     }
 
+    /// A walk of one, so the mode built for several can carry a single tree.
+    ///
+    /// A synthesised Walk rather than a second screen: everything Begin does
+    /// (your dot, the line, the metres counting down, the tick when you arrive)
+    /// is what somebody walking to one tree wants too, and a copy of it would
+    /// drift.
+    static func oneTreeWalk(_ t: Tree) -> Walk {
+        Walk(city: t.city, citySlug: t.citySlug, name: t.name, trees: [t.id],
+             count: 1, km: 0, minutes: 0, duration: "", combined: false, shape: nil)
+    }
+
     /// One sheet for every blank, because four sheets that differ by a
     /// placeholder is four places for them to drift apart.
     private func editor(_ field: EditableField) -> some View {
@@ -422,7 +448,15 @@ struct TreeDetail: View {
 
     private var actionBar: some View {
         HStack(spacing: 10) {
-            Button { Directions.walk(to: tree) } label: {
+            // OUR walking view, not somebody else's app.
+            //
+            // Hidde, 2026-08-24: "waarom stuurt ie je dan naar een andere app
+            // als je in de app kan navigeren." No reason: Begin arrived later
+            // and this button never came with it, so a walk kept you and a
+            // single tree handed you away. AllTrails draws the same line we do
+            // now: in-app for the trail itself, and a hand-off only for
+            // street-by-street, which lives one level in.
+            Button { walking = true } label: {
                 Label("Take me there", systemImage: "location.fill")
             }
             .buttonStyle(BrandButtonStyle())
