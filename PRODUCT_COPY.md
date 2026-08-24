@@ -38,6 +38,13 @@ nobody does anything, and an aphorism pretending to be instruction.
 5. **Never name our machinery.** Not the feed, the catalogue, the register, the
    database. Say what they get.
 
+6. **Do not explain our side of the deal.** Not at the moment somebody is
+   deciding to act. "You can add any tree by photographing it, whether we map it
+   or not" spends its last six words on our catalogue, which is our problem and
+   not the reader's reason to lift a phone. Hidde: "mijn god waarom zou je dat
+   laatste zeggen... begin niet over het mappen, dat is voor later." Say what
+   they get: **Every tree you photograph joins your collection.**
+
 Buttons are the exception and stay imperative: **Add a tree**, **Take a photo**,
 **Show the way**. Two or three words, a verb first, no sentence.
 

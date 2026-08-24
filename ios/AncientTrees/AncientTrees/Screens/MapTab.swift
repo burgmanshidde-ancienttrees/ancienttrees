@@ -299,12 +299,32 @@ struct MapTab: View {
         .fullScreenCover(isPresented: $searching) {
             MapSearch(catalogue: catalogue, origin: origin) { hit in
                 switch hit {
-                case .city(let slug, _, _, _):
-                    // The FULL city, not a camera position (Hidde, 2026-08-24).
-                    // Searching a city and landing on a map centred near it
-                    // answers where it is; opening the city answers what is in
-                    // it, which is what somebody who typed its name wanted.
-                    navigator.push = .city(slug)
+                case .city(let slug, _, let lat, let lng):
+                    // STAY ON THE MAP (Hidde, 2026-08-24: "dan moet je niet een
+                    // stadspagina openen in een nieuw venster, dat moet juist
+                    // gewoon een overlay zijn op de kaart... je moet net als bij
+                    // web niet het gevoel hebben dat je naar een andere pagina
+                    // gaat"). I had made this push the city page an hour
+                    // earlier, which answered a different complaint and broke
+                    // this one. The map holds its place and simply looks at the
+                    // city; its trees and its walks arrive in the sheet
+                    // underneath, which is what a city IS here.
+                    let ts = catalogue.trees.filter { $0.citySlug == slug }
+                    if let first = ts.first {
+                        var minLat = first.lat, maxLat = first.lat
+                        var minLng = first.lng, maxLng = first.lng
+                        for t in ts {
+                            minLat = min(minLat, t.lat); maxLat = max(maxLat, t.lat)
+                            minLng = min(minLng, t.lng); maxLng = max(maxLng, t.lng)
+                        }
+                        let cLat = (minLat + maxLat) / 2, cLng = (minLng + maxLng) / 2
+                        let latM = (maxLat - minLat) * 111_320
+                        let lngM = (maxLng - minLng) * 111_320 * cos(cLat * .pi / 180)
+                        fly(to: cLat, lng: cLng,
+                            span: max(1_500, min(max(latM, lngM) * 1.35, 60_000)))
+                    } else {
+                        fly(to: lat, lng: lng, span: 6000)
+                    }
                 case .country(let name):
                     // The COUNTRY in view, not its biggest city. It used to fly
                     // to whichever city had the most trees, so searching Spain
@@ -427,8 +447,43 @@ struct MapTab: View {
             .sorted { Geo.km(focus, ($0.lat, $0.lng)) < Geo.km(focus, ($1.lat, $1.lng)) }
     }
 
+    /// The walks where the map is looking, as the shelf a city page uses.
+    ///
+    /// The sheet used to hold trees and nothing else, so a walk existed only
+    /// behind a chip that drew a line. After searching a city you want what the
+    /// city HAS, which is its walks and its trees, and that is the same shape
+    /// the city page and the website both carry.
+    @ViewBuilder private var walkShelf: some View {
+        if query.isEmpty, shownWalk == nil, !walksHere.isEmpty {
+            VStack(alignment: .leading, spacing: 8) {
+                Text(walksHere.count == 1 ? "1 walk here" : "\(walksHere.count) walks here")
+                    .font(.brand(17, .bold, relativeTo: .headline))
+                    .foregroundStyle(Brand.ink)
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(alignment: .top, spacing: 12) {
+                        ForEach(Array(walksHere.prefix(6).enumerated()), id: \.element.name) { i, w in
+                            if i == 0 {
+                                NavigationLink(value: Route.walk(city: w.citySlug, name: w.name)) {
+                                    CityWalkCard(walk: w, locked: false)
+                                }
+                                .buttonStyle(.plain)
+                            } else {
+                                LockedRow(feature: .walkBeyondFirst) {
+                                    CityWalkCard(walk: w, locked: true)
+                                }
+                            }
+                        }
+                    }
+                    .padding(.bottom, 2)
+                }
+            }
+            .padding(.bottom, 4)
+        }
+    }
+
     private var list: some View {
         LazyVStack(spacing: 12) {
+                walkShelf
                 // Yours first: there are few of them and nobody else has them.
                 if query.isEmpty {
                     ForEach(minesInView) { s in
