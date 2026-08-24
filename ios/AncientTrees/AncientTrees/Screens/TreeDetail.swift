@@ -52,7 +52,7 @@ struct TreeDetail: View {
                     if mine == nil, tree.photo == nil { offerPhoto }
                     if mine != nil { mineFooter }
                     Button { reporting = true } label: {
-                        Label("Something here is wrong", systemImage: "exclamationmark.bubble")
+                        Label("Report a problem", systemImage: "exclamationmark.bubble")
                             .font(.footnote)
                     }
                     // Last line on the page, and only where the licence asks

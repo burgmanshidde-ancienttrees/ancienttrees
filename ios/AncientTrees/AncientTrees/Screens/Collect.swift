@@ -140,7 +140,10 @@ struct CollectView: View {
                         // distinction survives where it is useful (this one is
                         // not on the map everybody sees) and disappears where
                         // it was only in the way.
-                        ForEach(sightings.yoursOnly) { sightingCard($0) }
+                        ForEach(sightings.yoursOnly) { s in
+                            NavigationLink(value: Route.mine(s.id)) { MineCard(sighting: s) }
+                                .buttonStyle(.plain)
+                        }
                     }
                     Group {
                         let list = lane == .want ? wishlist : visited
@@ -271,33 +274,6 @@ struct CollectView: View {
     /// One of your own finds: your photograph, what you called it, and where
     /// the suggestion stands if you offered it. The status is the honest half
     /// of asking somebody to do work for us (Hidde, 2026-08-21).
-    private func sightingCard(_ s: Sightings.Sighting) -> some View {
-        VStack(alignment: .leading, spacing: 0) {
-            if let img = sightings.image(s) {
-                Image(uiImage: img)
-                    .resizable().aspectRatio(contentMode: .fill)
-                    .frame(height: 170).frame(maxWidth: .infinity)
-                    .clipped()
-            }
-            VStack(alignment: .leading, spacing: 5) {
-                Text(s.name)
-                    .font(.cardTitle).foregroundStyle(Brand.ink)
-                    .lineLimit(2).multilineTextAlignment(.leading)
-                HStack(spacing: 6) {
-                    Text(s.date.formatted(date: .abbreviated, time: .omitted))
-                    if s.status != .mine {
-                        Text("·")
-                        Text(s.status.label)
-                            .foregroundStyle(s.status == .published ? Brand.moss : Brand.inkSoft)
-                    }
-                }
-                .font(.caption).foregroundStyle(Brand.inkSoft)
-            }
-            .padding(.horizontal, 14).padding(.vertical, 12)
-            .frame(maxWidth: .infinity, alignment: .leading)
-        }
-        .brandCard()
-    }
 
     /// The passive half of the account ask, and probably the one that does most
     /// of the work. It interrupts nobody and it states a fact rather than a

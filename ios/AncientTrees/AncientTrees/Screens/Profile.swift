@@ -44,6 +44,16 @@ struct ProfileView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 18) {
+                // The same title as Explore and Collection wear, now that this
+                // is a tab beside them rather than a page pushed from a small
+                // avatar (Hidde, 2026-08-24). An inline navigation title on one
+                // of three sibling tabs and a big screen title on the other two
+                // is the kind of difference nobody can name and everybody
+                // feels.
+                Text("Profile")
+                    .font(.screenTitle)
+                    .foregroundStyle(Brand.ink)
+                    .padding(.bottom, 2)
                 identity
                 contributeCard
                 plusCard
@@ -56,8 +66,7 @@ struct ProfileView: View {
             .padding(.horizontal, 16).padding(.top, 6)
         }
         .brandGround()
-        .navigationTitle("Profile")
-        .navigationBarTitleDisplayMode(.inline)
+        .toolbar(.hidden, for: .navigationBar)
         .sheet(isPresented: $contributing) { ContributeView() }
         .sheet(isPresented: $plusPitch) { PaywallView(feature: .seasonAlerts) }
         .sheet(isPresented: $showingAccount) { accountSheet }
