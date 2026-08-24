@@ -185,6 +185,7 @@ struct TreeMap: UIViewRepresentable {
         // MARK: style
 
         func mapView(_ map: MLNMapView, didFinishLoading style: MLNStyle) {
+            MapLayers.mapRef = map
             MapLayers.install(on: style, clustered: parent.clusters)
             styleReady = true
             if let p = pending {
@@ -243,7 +244,7 @@ struct TreeMap: UIViewRepresentable {
             let wantMine = Set(mine.map { $0.id.uuidString })
             if wantTrees != drawnTreeIDs {
                 drawnTreeIDs = wantTrees
-                MapLayers.setTrees(trees, on: style)
+                MapLayers.setTrees(trees, on: style, clustered: clusters)
             }
             if wantMine != drawnMineIDs {
                 drawnMineIDs = wantMine
@@ -294,6 +295,11 @@ struct TreeMap: UIViewRepresentable {
         /// work nobody can see. Three hundred metres is under one screen at
         /// street zoom, so the list still feels live.
         func mapView(_ map: MLNMapView, regionDidChangeAnimated animated: Bool) {
+            // Our own clustering regroups on a change of zoom level and does
+            // nothing on a pan, which is what makes a pan free.
+            if let style = map.style {
+                MapLayers.cluster(on: style, zoom: map.zoomLevel, clustered: parent.clusters)
+            }
             // While a tree is selected the camera is being driven by the pager,
             // so reporting the region back would rebuild the list under the
             // pager and shuffle what you are swiping through.
@@ -334,11 +340,38 @@ enum MapLayers {
     static let mineLayer = "at-mine-pin"
     static let routeLayer = "at-route-line"
     static let idKey = "at_id"
+    /// How many trees a bubble stands for. NOT "point_count", which is
+    /// MapLibre's own reserved cluster property: a feature carrying it makes
+    /// the WHOLE source load as empty, silently, valid GeoJSON and all. That
+    /// single word cost most of 2026-08-24. Proof: the same 974 features with
+    /// the bubbles emitted as ordinary points render; with `point_count` on
+    /// 284 of them, the source reports zero features and no error anywhere.
+    static let countKey = "at_count"
+    /// Tree or cluster, as a STRING. Every layer selects on this rather than on
+    /// a number: with `at_count > 1` the bubbles never painted, and the same
+    /// features with the same keys painted the moment the count was 1, which
+    /// puts the fault in the numeric comparison rather than in the data.
+    static let kindKey = "at_kind"
+    // Every feature carries it, 1 for a single tree and n for a bubble, so no
+    // layer ever has to ask whether a property is absent. `at_count == nil`
+    // draws nothing at all: MapLibre gives its own `point_count` special
+    // treatment in that comparison and an ordinary key none.
 
     private static let moss = UIColor(red: 0.20, green: 0.35, blue: 0.20, alpha: 1)
     /// Which pin images this style already carries. See setTrees for why this
     /// is not a question asked of MLNStyle.
     private static var registered: Set<String> = []
+    /// Clustering options, set by install() and used by setTrees when it builds
+    /// the source. They cannot be applied later: a source is clustered or not
+    /// from birth.
+    private static var treeOptions: [MLNShapeSourceOption: Any] = [:]
+    private static var writeCount = 0
+    /// The identifier the live tree source currently carries. See apply().
+    private static var liveSourceID = treeSource
+    /// The map itself, so clustering can read the current zoom. Weak: the
+    /// style outlives nothing here, and a strong reference would keep a dead
+    /// map view alive.
+    static weak var mapRef: MLNMapView?
 
     static func install(on style: MLNStyle, clustered: Bool) {
         registered.removeAll()
@@ -357,8 +390,15 @@ enum MapLayers {
             // disappears into a bubble marked 11.
             options[.maximumZoomLevelForClustering] = NSNumber(value: 15)
         }
-        let trees = MLNShapeSource(identifier: treeSource, shape: nil, options: options)
-        style.addSource(trees)
+        // The source is NEVER given MapLibre's own clustering options. They do
+        // not work: see the note on cluster() below. We cluster ourselves and
+        // hand this source the result, so from its point of view it is a plain
+        // collection of points.
+        // No tree source here. apply() is the only place one is ever made,
+        // because a source that has already existed under this identifier does
+        // not load: see the note there.
+        _ = options
+        liveSourceID = treeSource
         let mine = MLNShapeSource(identifier: mineSource, shape: nil, options: nil)
         style.addSource(mine)
         let route = MLNShapeSource(identifier: routeSource, shape: nil, options: nil)
@@ -385,65 +425,14 @@ enum MapLayers {
         guessed.predicate = NSPredicate(format: "real == NO")
         style.addLayer(guessed)
 
-        let pins = MLNSymbolStyleLayer(identifier: treeLayer, source: trees)
-        pins.iconImageName = NSExpression(forKeyPath: "icon")
-        pins.iconAllowsOverlap = NSExpression(forConstantValue: true)
-        pins.iconAnchor = NSExpression(forConstantValue: "center")
-        pins.predicate = NSPredicate(format: "point_count == nil AND peaking != YES")
-        style.addLayer(pins)
-
-        // The halo goes UNDER the peaking pin and is the thing that breathes.
-        // Its colour follows the moment, same as the pin: a ginkgo's gold, a
-        // cherry's pink, from the same server-computed value the website uses.
-        let halo = MLNCircleStyleLayer(identifier: haloLayer, source: trees)
-        halo.predicate = NSPredicate(format: "point_count == nil AND peaking == YES")
-        halo.circleColor = NSExpression(forConstantValue:
-            UIColor(red: 0.85, green: 0.63, blue: 0.25, alpha: 1))
-        halo.circleRadius = NSExpression(forConstantValue: 20)
-        halo.circleOpacity = NSExpression(forConstantValue: 0.38)
-        halo.circleRadiusTransition = MLNTransition(duration: 1.1, delay: 0)
-        halo.circleOpacityTransition = MLNTransition(duration: 1.1, delay: 0)
-        style.addLayer(halo)
-
-        let peak = MLNSymbolStyleLayer(identifier: peakLayer, source: trees)
-        peak.iconImageName = NSExpression(forKeyPath: "icon")
-        peak.iconAllowsOverlap = NSExpression(forConstantValue: true)
-        peak.iconAnchor = NSExpression(forConstantValue: "center")
-        peak.predicate = NSPredicate(format: "point_count == nil AND peaking == YES")
-        style.addLayer(peak)
-
         let minePins = MLNSymbolStyleLayer(identifier: mineLayer, source: mine)
         minePins.iconImageName = NSExpression(forConstantValue: "at-pin-mine")
         minePins.iconAllowsOverlap = NSExpression(forConstantValue: true)
         style.addLayer(minePins)
 
-        if clustered {
-            let bubble = MLNCircleStyleLayer(identifier: clusterLayer, source: trees)
-            bubble.predicate = NSPredicate(format: "point_count > 0")
-            bubble.circleColor = NSExpression(forConstantValue: moss)
-            bubble.circleStrokeColor = NSExpression(forConstantValue: UIColor.white)
-            bubble.circleStrokeWidth = NSExpression(forConstantValue: 3)
-            // A step expression on point_count was the first attempt and drew
-            // nothing at all: a malformed expression does not throw, the layer
-            // simply never paints, so eleven trees showed as one lone pin and
-            // no bubbles. Found by looking at the screenshot rather than by any
-            // error. Plain numbers, and the bubble grows by zoom instead.
-            bubble.circleRadius = NSExpression(forConstantValue: 20)
-            style.addLayer(bubble)
-
-            let count = MLNSymbolStyleLayer(identifier: clusterCount, source: trees)
-            count.predicate = NSPredicate(format: "point_count > 0")
-            count.text = NSExpression(forKeyPath: "point_count")
-            count.textColor = NSExpression(forConstantValue: UIColor.white)
-            count.textFontSize = NSExpression(forConstantValue: 15)
-            count.textFontNames = NSExpression(forConstantValue: ["Noto Sans Bold", "Noto Sans Regular"])
-            count.textAllowsOverlap = NSExpression(forConstantValue: true)
-            style.addLayer(count)
-        }
     }
 
-    static func setTrees(_ trees: [Tree], on style: MLNStyle) {
-        guard let source = style.source(withIdentifier: treeSource) as? MLNShapeSource else { return }
+    static func setTrees(_ trees: [Tree], on style: MLNStyle, clustered: Bool) {
         let month = Calendar.current.component(.month, from: Date())
         var features: [MLNPointFeature] = []
         for t in trees {
@@ -479,29 +468,215 @@ enum MapLayers {
             // colour still reaches the eye where it matters, baked into the pin
             // image itself; the halo underneath takes one warm tone for all of
             // them, which reads as a season rather than as a paint chart.
-            f.attributes = [idKey: t.id, "icon": name, "peaking": peaking]
+            f.attributes = [idKey: t.id, "icon": name, "peaking": peaking,
+                            countKey: 1, kindKey: "tree", "at_label": ""]
             features.append(f)
         }
-        // Handed over as real GeoJSON rather than as an MLNShapeCollectionFeature.
-        // That type works perfectly for an unclustered source and is invisible
-        // to the clusterer: with clustering on, the whole collection arrived as
-        // ONE thing, so fourteen hundred trees drew as a single pin and it
-        // looked like the cluster layers were broken. They were not. Proven by
-        // turning clustering off, at which point every pin appeared.
-        let json: [String: Any] = [
-            "type": "FeatureCollection",
-            "features": features.map { f -> [String: Any] in
-                [
-                    "type": "Feature",
-                    "geometry": ["type": "Point",
-                                 "coordinates": [f.coordinate.longitude, f.coordinate.latitude]],
-                    "properties": f.attributes,
-                ]
-            },
-        ]
-        if let data = try? JSONSerialization.data(withJSONObject: json),
-           let shape = try? MLNShape(data: data, encoding: String.Encoding.utf8.rawValue) {
-            source.shape = shape
+        leaves = features
+        cluster(on: style, zoom: mapRef?.zoomLevel ?? 12, clustered: clustered, force: true)
+    }
+
+    /// Hand the style a fresh source built from these points.
+    ///
+    /// Two things here are not the obvious call, and both were measured on
+    /// 2026-08-24 rather than reasoned about.
+    ///
+    /// First, the points go in as real GeoJSON, not as an
+    /// MLNShapeCollectionFeature. Second, and this is the one that cost the
+    /// afternoon, the source is CREATED from a file URL rather than having its
+    /// `shape` assigned. Assigning `shape` draws nothing at all on this build:
+    /// 974 features went in, all eight layers were present in the style, and
+    /// `visibleFeatures` returned zero. The same 974 features handed to
+    /// `MLNShapeSource(identifier:url:options:)` draw. No error is logged in
+    /// either case.
+    ///
+    /// The file name is new every time because MapLibre caches a source's URL:
+    /// rewriting the same path leaves the previous contents in place.
+    private static func apply(_ features: [MLNPointFeature], on style: MLNStyle, clustered: Bool) {
+        var out: [[String: Any]] = []
+        out.reserveCapacity(features.count)
+        for f in features {
+            let geom: [String: Any] = ["type": "Point",
+                                       "coordinates": [f.coordinate.longitude, f.coordinate.latitude]]
+            let props: [String: Any] = f.attributes
+            out.append(["type": "Feature", "geometry": geom, "properties": props])
+        }
+        let doc: [String: Any] = ["type": "FeatureCollection", "features": out]
+        guard let data = try? JSONSerialization.data(withJSONObject: doc) else { return }
+        writeCount += 1
+        let file = FileManager.default.temporaryDirectory
+            .appendingPathComponent("at-trees-\(writeCount).geojson")
+        guard (try? data.write(to: file)) != nil else { return }
+
+        for id in [clusterCount, clusterLayer, peakLayer, haloLayer, treeLayer] {
+            if let layer = style.layer(withIdentifier: id) { style.removeLayer(layer) }
+        }
+        // A NEW identifier as well as a new file. Re-adding a source under an
+        // identifier the style has just seen leaves it holding nothing: the
+        // file is read, no error is raised, and `features(matching:)` returns
+        // zero. Measured, 2026-08-24. The layer identifiers stay fixed, which
+        // is what the tap handler reads, so nothing downstream notices.
+        if let old = style.source(withIdentifier: liveSourceID) { style.removeSource(old) }
+        liveSourceID = "\(treeSource)-\(writeCount)"
+        let source = MLNShapeSource(identifier: liveSourceID, url: file, options: [:])
+        style.addSource(source)
+        addTreeLayers(on: style, source: source, clustered: clustered)
+        // Yesterday's file is no longer read once the new source is in.
+        let stale = FileManager.default.temporaryDirectory
+            .appendingPathComponent("at-trees-\(writeCount - 1).geojson")
+        try? FileManager.default.removeItem(at: stale)
+    }
+
+    /// Every tree as a point feature, kept so clustering can be recomputed on a
+    /// zoom change without rebuilding any of this.
+    private static var leaves: [MLNPointFeature] = []
+    private static var lastBucket: Int = .min
+    private static var lastClustered = true
+
+    /// Past this there is nothing left to pile up, and the subject of a tree
+    /// page should not disappear into a bubble marked 11.
+    private static let clusterMaxZoom = 15.0
+    /// How close two pins have to be, in points, before they become one bubble.
+    private static let clusterCellPoints = 60.0
+
+    /// OUR OWN CLUSTERING, 2026-08-24, because MapLibre's does not work here.
+    ///
+    /// Ten hypotheses were tested across two days. With
+    /// `MLNShapeSourceOptionClustered` set, the source yields exactly one
+    /// feature whatever it is given: as an MLNShapeCollectionFeature, as an
+    /// MLNShape parsed from real GeoJSON, and as a file URL, which is the path
+    /// MapLibre's own clustering example uses. Options were stripped to
+    /// `.clustered` alone, then varied one at a time (radius, maximum cluster
+    /// zoom, source zoom range, buffer). The proof that it is not our data:
+    /// six bare points around Amsterdam with no properties at all, handed to a
+    /// clustered source, rendered NOTHING, while the same six unclustered
+    /// render six. MapLibre logs no error in any of these cases.
+    ///
+    /// So the source is left plain and this does the work. A grid in world
+    /// space, sized so a cell is about sixty points on screen at the current
+    /// zoom, which is what a thumb covers. Cells holding one tree emit that
+    /// tree; cells holding more emit one bubble carrying `at_count`, which
+    /// is the same attribute MapLibre's own clusters carry, so the layers and
+    /// the tap handler did not have to change at all.
+    ///
+    /// Deliberately in WORLD space rather than screen space: clusters then stay
+    /// put while you pan and only regroup when you zoom, which is how every map
+    /// that does this behaves. Recomputed once per whole zoom level, so a pan
+    /// costs nothing and a pinch costs one pass over the trees.
+    static func cluster(on style: MLNStyle, zoom: Double, clustered: Bool, force: Bool = false) {
+        let bucket = clustered && zoom < clusterMaxZoom ? Int(floor(zoom)) : 99
+        if !force && bucket == lastBucket && clustered == lastClustered { return }
+        lastBucket = bucket
+        lastClustered = clustered
+
+        if bucket == 99 {
+            apply(leaves, on: style, clustered: clustered)
+            return
+        }
+
+        // Normalised web mercator, both axes in 0...1, so the cell is a plain
+        // fraction of the world and no trigonometry is needed per tree.
+        let worldPoints = 512.0 * pow(2.0, zoom)
+        let cell = clusterCellPoints / worldPoints
+        var cells: [Int64: [MLNPointFeature]] = [:]
+        for f in leaves {
+            let x = (f.coordinate.longitude + 180.0) / 360.0
+            let lat = min(max(f.coordinate.latitude, -85.05), 85.05) * .pi / 180.0
+            let y = (1.0 - log(tan(lat) + 1.0 / cos(lat)) / .pi) / 2.0
+            let key = Int64(floor(x / cell)) &* 100_000 &+ Int64(floor(y / cell))
+            cells[key, default: []].append(f)
+        }
+
+        var out: [MLNPointFeature] = []
+        out.reserveCapacity(cells.count)
+        for (_, group) in cells {
+            if group.count == 1 {
+                out.append(group[0])
+                continue
+            }
+            let shown = min(group.count, 99)
+            let icon = "at-cluster-\(shown)"
+            if !registered.contains(icon), let style = mapRef?.style {
+                registered.insert(icon)
+                style.setImage(clusterPin(count: shown), forName: icon)
+            }
+            let bubble = MLNPointFeature()
+            var lonSum = 0.0, latSum = 0.0
+            for g in group {
+                lonSum += g.coordinate.longitude
+                latSum += g.coordinate.latitude
+            }
+            bubble.coordinate = .init(latitude: latSum / Double(group.count),
+                                      longitude: lonSum / Double(group.count))
+            // The SAME keys as a leaf, every one of them. A feature carrying
+            // a subset of the others' properties made the whole source load as
+            // empty: 974 features in, zero out, no error. Measured 2026-08-24
+            // by emitting the bubbles as ordinary leaves, which rendered, and
+            // then putting them back, which did not.
+            bubble.attributes = [countKey: group.count, idKey: "",
+                                 "peaking": false,
+                                 kindKey: "cluster", "at_label": String(group.count),
+                                 "icon": icon]
+            out.append(bubble)
+        }
+        apply(out, on: style, clustered: clustered)
+    }
+
+    /// Everything drawn from the tree source. Separate from install() because
+    /// the source itself is now born in setTrees, and these have to be rebuilt
+    /// with it.
+    private static func addTreeLayers(on style: MLNStyle, source trees: MLNShapeSource,
+                                      clustered: Bool) {
+        let pins = MLNSymbolStyleLayer(identifier: treeLayer, source: trees)
+        pins.iconImageName = NSExpression(forKeyPath: "icon")
+        pins.iconAllowsOverlap = NSExpression(forConstantValue: true)
+        pins.iconAnchor = NSExpression(forConstantValue: "center")
+        pins.predicate = NSPredicate(format: "at_kind == 'tree' AND peaking != YES")
+        insertUnderMine(pins, on: style)
+
+        // The halo goes UNDER the peaking pin and is the thing that breathes.
+        // Its colour follows the moment, same as the pin: a ginkgo's gold, a
+        // cherry's pink, from the same server-computed value the website uses.
+        let halo = MLNCircleStyleLayer(identifier: haloLayer, source: trees)
+        halo.predicate = NSPredicate(format: "at_kind == 'tree' AND peaking == YES")
+        halo.circleColor = NSExpression(forConstantValue:
+            UIColor(red: 0.85, green: 0.63, blue: 0.25, alpha: 1))
+        halo.circleRadius = NSExpression(forConstantValue: 20)
+        halo.circleOpacity = NSExpression(forConstantValue: 0.38)
+        halo.circleRadiusTransition = MLNTransition(duration: 1.1, delay: 0)
+        halo.circleOpacityTransition = MLNTransition(duration: 1.1, delay: 0)
+        insertUnderMine(halo, on: style)
+
+        let peak = MLNSymbolStyleLayer(identifier: peakLayer, source: trees)
+        peak.iconImageName = NSExpression(forKeyPath: "icon")
+        peak.iconAllowsOverlap = NSExpression(forConstantValue: true)
+        peak.iconAnchor = NSExpression(forConstantValue: "center")
+        peak.predicate = NSPredicate(format: "at_kind == 'tree' AND peaking == YES")
+        insertUnderMine(peak, on: style)
+        if clustered {
+            // A SYMBOL layer with a rendered image, not a circle layer plus a
+            // text layer. Two days went into the circle-and-text pair and it
+            // never painted a single bubble; worse, once any feature matched
+            // it, the whole source stopped rendering, leaves included, with no
+            // error anywhere. Symbol layers reading `icon` are the one thing on
+            // this map that has always worked, so the count is drawn into the
+            // image and there is nothing left to go wrong at layer level.
+            let bubble = MLNSymbolStyleLayer(identifier: clusterLayer, source: trees)
+            bubble.predicate = NSPredicate(format: "at_kind == 'cluster'")
+            bubble.iconImageName = NSExpression(forKeyPath: "icon")
+            bubble.iconAllowsOverlap = NSExpression(forConstantValue: true)
+            bubble.iconAnchor = NSExpression(forConstantValue: "center")
+            style.addLayer(bubble)
+        }
+    }
+
+    /// Tree pins belong under a person's own pins, which is where they sat
+    /// before the source started being rebuilt.
+    private static func insertUnderMine(_ layer: MLNStyleLayer, on style: MLNStyle) {
+        if let mine = style.layer(withIdentifier: mineLayer) {
+            style.insertLayer(layer, below: mine)
+        } else {
+            style.addLayer(layer)
         }
     }
 
@@ -554,6 +729,34 @@ enum MapLayers {
                 glyph.withTintColor(.white, renderingMode: .alwaysOriginal)
                     .draw(in: .init(x: (d - s) / 2, y: (d - s) / 2, width: s, height: s))
             }
+        }
+    }
+
+    /// A cluster bubble with its number already drawn in. Moss, white ring,
+    /// white figure, and it grows a little with the count so a pile of forty
+    /// reads as bigger than a pair.
+    private static func clusterPin(count: Int) -> UIImage {
+        let d: CGFloat = count >= 25 ? 46 : (count >= 10 ? 40 : 34)
+        let size = CGSize(width: d, height: d)
+        return UIGraphicsImageRenderer(size: size).image { ctx in
+            let rect = CGRect(origin: .zero, size: size).insetBy(dx: 2, dy: 2)
+            moss.setFill()
+            UIColor.white.setStroke()
+            let path = UIBezierPath(ovalIn: rect)
+            path.lineWidth = 3
+            path.fill()
+            path.stroke()
+            let text = "\(count)"
+            let font = UIFont.systemFont(ofSize: d * 0.42, weight: .bold)
+            let attrs: [NSAttributedString.Key: Any] = [
+                .font: font, .foregroundColor: UIColor.white,
+            ]
+            let bounds = (text as NSString).size(withAttributes: attrs)
+            (text as NSString).draw(
+                at: CGPoint(x: (size.width - bounds.width) / 2,
+                            y: (size.height - bounds.height) / 2),
+                withAttributes: attrs)
+            _ = ctx
         }
     }
 

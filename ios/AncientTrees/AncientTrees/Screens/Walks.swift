@@ -66,6 +66,10 @@ struct WalkDetail: View {
                         focus: trees.first.map { .init(latitude: $0.lat, longitude: $0.lng) },
                         route: routeLine,
                         routeIsReal: walk.shape != nil,
+                        // Never on a walk. The stops ARE the page, and four of
+                        // them a few hundred metres apart collapse into one
+                        // bubble marked 4, which hides the whole route.
+                        clusters: false,
                         selected: $selected)
                     .frame(maxHeight: .infinity)
                 List {
