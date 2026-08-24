@@ -39,6 +39,52 @@
    "name": "The Wawer oak/pine cluster (Wielki Wojtek, Dwojak, Deby Ostrowskiego, Deby przy Trakcie, Placzaca Sosna)",
    "species": "Pedunculate Oak and Scots Pine, several designations",
    "reason": "A genuine walkable micro-cluster in the Wawer district (roughly 1-1.5km apart from each other: 'Wielki Wojtek' 52.173/21.149, 'Dwojak' 52.171/21.147, 'Deby Ostrowskiego' 52.162/21.158, 'Deby przy Trakcie' 52.195/21.193, 'Placzaca Sosna' 52.178/21.197), but 7-9km from every currently published Warsaw tree, so it would need to stand as a second, separate Warsaw walk rather than tightening the first one. Named trees with real potential (a weeping pine, a 'Great Wojtek' oak) but out of scope for this tightening-focused pass; flagging as a strong candidate for a dedicated Wawer-cluster pass."
+  },
+  {
+   "name": "The Chestnut at Pulawska/Merliniego corner",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "kodinspire": "PL.ZIPOP.1393.PP.1465011.3271",
+   "gid": 177754,
+   "latitude": 52.19534,
+   "longitude": 21.02458,
+   "designated": "1988-12-28",
+   "reason": "Genuinely public street corner (Mokotow, corner of ul. Pulawska 107 and ul. Merliniego), confirmed via reverse geocode and Wikipedia's joined register list (\"Mokotow, Rog ul. Pulawskiej 107 i Merliniego\"). Access is not in question. What is missing is a second source independent of the GDOS register / pl.wikipedia 'Pomniki przyrody w Warszawie' list family: searches for local press, a Mokotow district tree consultation document, or a dedicated writeup came back empty within this pass's budget (real-estate listings for the office building on the same corner dominate the results). Worth trying eko.um.warszawa.pl or the Mokotow district's own tree-designation consultation documents (see ngo.um.warszawa.pl, currently a dead/redirecting link) in a session that can pass a browser challenge, since curl 403'd both architektura.um.warszawa.pl PDFs tried this pass."
+  },
+  {
+   "name": "The Maple and Elm by the Botanical Garden's vehicle gate",
+   "species": "Norway Maple (Acer platanoides) and European White Elm (Ulmus laevis)",
+   "kodinspire": "PL.ZIPOP.1393.PP.1465011.3279",
+   "gids": [
+    147450,
+    147451
+   ],
+   "latitude": 52.21711,
+   "longitude": 21.02632,
+   "designated": "1988-08-29",
+   "reason": "Right by the Ogrod Botaniczny UW's vehicle entrance gate on Al. Ujazdowskie, within about 60m of the newly verified war_011 (the garden's 1824 ginkgo) and about 50m from the 2024-designated columnar oak pair below: all three sit at effectively the same stop on a visit to the garden. No independent second source found this pass beyond the register/Wikipedia-list family. Rather than ship as a separate collectible point 60m from war_011, a future pass should judge whether this belongs folded into that entry's description or dropped, once/if a real second source turns up."
+  },
+  {
+   "name": "The columnar oaks at the observatory entrance",
+   "species": "Pedunculate Oak, columnar form (Quercus robur 'Fastigiata')",
+   "kodinspire": "PL.ZIPOP.1393.PP.1465011.5185",
+   "gids": [
+    237628,
+    237629
+   ],
+   "latitude": 52.2172,
+   "longitude": 21.0275,
+   "designated": "2024-10-01",
+   "reason": "Ogrod Botaniczny UW, by the main entrance on the astronomical-observatory side, about 50m from war_011 (the garden's ginkgo). pl.wikipedia's register-list entry gives real per-tree measurements (gid 237628: height 19m, girth 335cm at 130cm; gid 237629: height 20m, girth 345cm at 130cm) but this is a very recent (2024) designation with no independent coverage found this pass beyond the register/Wikipedia-list family. Also sits close enough to war_011 that a future pass should decide whether it is a separate collectible point or part of the same garden stop, rather than treating proximity alone as disqualifying."
+  },
+  {
+   "name": "Topola Narutowicza (Narutowicz's Poplar)",
+   "species": "Black Poplar (Populus nigra)",
+   "kodinspire": "PL.ZIPOP.1393.PP.1465011.4400",
+   "gid": null,
+   "latitude": 52.21536,
+   "longitude": 21.03118,
+   "designated": "2009-08-14",
+   "reason": "A named, well-documented black poplar (girth 614cm, height 34m per pl.wikipedia) on the grounds of the historic Willa Narutowicza (built for Poland's first president Gabriel Narutowicz), ul. Parkowa 23, Srodmiescie, about 0.7-1km from the war_009/war_010 area. Existence, species and measurements are solid, but public access is genuinely UNCLEAR rather than confirmed: pl.wikipedia states the property was taken back by the state's Mazowieckie Property Management agency in 2015 after the Lech Walesa Institute's lease ended, and neither that article nor e-turysta.pl's description says whether the grounds are open to visitors today. Not blocked outright because this reads as an unresolved access question rather than known-private land; worth checking Mazowieckie Property Management's own site or recent local press for current use before the next Warsaw pass."
   }
  ],
  "blocked": [
@@ -48,6 +94,27 @@
    "kodinspire": "not resolved to a GDOS match this pass",
    "location": "Ochota, ul. Koszykowa 81, grounds of the historic Warsaw Filtration Station (Zespol Stacji Filtrow / Stacja Filtrow, built 1883-1886 by William Lindley), near the decommissioned water pressure tower",
    "reason": "Fails hard rule 10's first test. The Filtration Station is described by multiple independent sources (MPWiK's own site, warszawa.naszemiasto.pl, kierunekwodkan.pl) as a 'strategic object' with restricted access: visits are guided-tour only, open in summer and during Night of Museums for small groups, roughly 1.5 hours, tickets bought in advance through MPWiK offices or Eventim and reported to sell out very quickly. This is a reception-desk/appointment situation, not a walk-in public site, so it does not clear the 'can they get in without asking anyone's permission' test even though the yew itself is a genuine, well-documented natural monument. Revisit only if MPWiK opens general walk-in access."
+  },
+  {
+   "name": "Grusza Walentego Ciechowskiego (register candidate near 52.19930,21.02078)",
+   "species": "European Pear (Pyrus communis)",
+   "reason": "DUPLICATE, not a new tree: confirmed against pl.wikipedia's 'Pomniki przyrody w Warszawie' list, whose entry 'Grusza pospolita pn. Grusza Walentego Ciechomskiego' is the same designation the site already publishes as war_005, Ciechomski's Pear (Walenty Ciechomski). The register's own coordinate sits about 300m from our published pin, likely a resurvey/original imprecision rather than a second tree; do not re-verify as a new entry."
+  },
+  {
+   "name": "Drzewa Romana Witkowskiego (Roman Witkowski's Trees)",
+   "species": "Ginkgo (Ginkgo biloba) and Honey Locust (Gleditsia triacanthos)",
+   "kodinspire": "PL.ZIPOP.1393.PP.1465011.3273",
+   "latitude": 52.19149,
+   "longitude": 21.01898,
+   "reason": "Fails hard rule 10. Address is ul. Pilicka 13, Mokotow, a pre-war villa (built for lawyer Cels Fabiani) whose grounds currently house a private venue trading as 'Marina' (per Yelp and search results). No evidence found this pass that the grounds are open to walk-in visitors without booking/attending as a patron; this reads as private/commercial grounds rather than genuinely public ground. Revisit only if evidence of open public access to the grounds turns up."
+  },
+  {
+   "name": "Buk zwyczajny, ul. Naruszewicza 7 (register candidate)",
+   "species": "Common Beech (Fagus sylvatica)",
+   "kodinspire": "PL.ZIPOP.1393.PP.1465011.3311",
+   "latitude": 52.19144,
+   "longitude": 21.02211,
+   "reason": "Fails hard rule 10's absolute private-home test. OSM tags the building at ul. Naruszewicza 7 as a detached, historic (historic=yes) building on Osiedle Wierzbno, a street of pre-war detached villas (domiporta.pl lists houses for sale on this exact street); no evidence found that this specific address serves an institutional or public function (unlike no. 15, now a preschool, or no. 10, now partly city/commercial-owned, per odkrywcawarszawy.blogspot.com and other local-history sources checked this pass). Independently photographed by moko.waw.pl (2015) and on Wikimedia Commons, which confirms the tree exists and is visible, but the hard rule 10 test for a private house's grounds does not bend for visibility; the view-only exception in CLAUDE.md is explicitly written for institutional grounds, not homes. Do not ship unless a future pass finds evidence the address is no longer a private residence."
   }
  ]
 }
