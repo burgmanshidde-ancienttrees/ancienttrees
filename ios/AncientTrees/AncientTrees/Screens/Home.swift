@@ -37,6 +37,7 @@
 // somebody looking at the trees.
 
 import SwiftUI
+import CoreLocation
 
 struct HomeView: View {
     let catalogue: Catalogue
@@ -469,35 +470,64 @@ struct CityView: View {
 
     private var trees: [Tree] { catalogue.trees.filter { $0.citySlug == slug } }
 
+    /// Where the map opens: the middle of this city's trees, wide enough to
+    /// hold them all with a little air.
+    private var frame: (centre: (lat: Double, lng: Double), meters: Double) {
+        guard let first = trees.first else { return (origin, 4000) }
+        var minLat = first.lat, maxLat = first.lat
+        var minLng = first.lng, maxLng = first.lng
+        for t in trees {
+            minLat = min(minLat, t.lat); maxLat = max(maxLat, t.lat)
+            minLng = min(minLng, t.lng); maxLng = max(maxLng, t.lng)
+        }
+        let centre = ((minLat + maxLat) / 2, (minLng + maxLng) / 2)
+        let latM = (maxLat - minLat) * 111_320
+        let lngM = (maxLng - minLng) * 111_320 * cos(centre.0 * .pi / 180)
+        return (centre, max(1200, min(max(latM, lngM) * 1.4, 40_000)))
+    }
+
     var body: some View {
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 14) {
+                // THE MAP FIRST, because a city is a view of the map before it
+                // is a list (Hidde, 2026-08-24: "als ik op een stad klik zoals
+                // barcelona verwacht ik daarboven de kaart met de bomen erop en
+                // dan de bomen in de lijst eronder... dezelfde logica doen we
+                // op web"). The website's city page has had exactly this shape
+                // all along; the app's had a list and no map at all.
+                TreeMap(trees: trees,
+                        focus: .init(latitude: frame.centre.lat, longitude: frame.centre.lng),
+                        spanMeters: frame.meters,
+                        selected: .constant(nil))
+                    .frame(height: 260)
+                    .clipShape(.rect(cornerRadius: 16))
+                    .padding(.horizontal, 16)
+                    .allowsHitTesting(false)
+
                 let walks = catalogue.walks(inCity: slug)
                 if !walks.isEmpty {
                     ShelfHeader(title: walks.count == 1 ? "1 walk" : "\(walks.count) walks")
-                    VStack(spacing: 0) {
-                        ForEach(walks, id: \.name) { w in
-                            NavigationLink(value: Route.walk(city: w.citySlug, name: w.name)) {
-                                HStack {
-                                    VStack(alignment: .leading, spacing: 1) {
-                                        Text(w.name).font(.cardTitle).foregroundStyle(Brand.ink)
-                                        Text("\(w.count) trees · \(w.duration)")
-                                            .font(.caption).foregroundStyle(Brand.inkSoft)
+                    // The same shelf Explore uses: swipe sideways, the first
+                    // open to everyone and the rest behind Plus. It was a
+                    // stacked list here and a shelf there, which is two designs
+                    // for one object (Hidde, 2026-08-24).
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(alignment: .top, spacing: 12) {
+                            ForEach(Array(walks.enumerated()), id: \.element.name) { i, w in
+                                if i == 0 {
+                                    NavigationLink(value: Route.walk(city: w.citySlug, name: w.name)) {
+                                        CityWalkCard(walk: w, locked: false)
                                     }
-                                    Spacer()
-                                    Image(systemName: "chevron.right")
-                                        .font(.caption).foregroundStyle(Brand.inkSoft.opacity(0.6))
+                                    .buttonStyle(.plain)
+                                } else {
+                                    LockedRow(feature: .walkBeyondFirst) {
+                                        CityWalkCard(walk: w, locked: true)
+                                    }
                                 }
-                                .padding(.horizontal, 12).padding(.vertical, 12)
-                                .frame(minHeight: 44)
-                                .contentShape(.rect)
                             }
-                            .buttonStyle(.plain)
-                            if w.name != walks.last?.name { Divider().padding(.leading, 12) }
                         }
+                        .padding(.horizontal, 16).padding(.bottom, 4)
                     }
-                    .brandCard()
-                    .padding(.horizontal, 16)
                 }
 
                 ShelfHeader(title: "\(trees.count) trees")
@@ -521,5 +551,27 @@ struct CityView: View {
                     label: "Share this city")
         }
         .navigationBarTitleDisplayMode(.inline)
+    }
+}
+
+/// A walk, as a card on a shelf. Shared by Explore and by a city, because the
+/// two had drifted into different shapes for the same object.
+struct CityWalkCard: View {
+    let walk: Walk
+    let locked: Bool
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            HStack {
+                Text(walk.name).font(.cardTitle).foregroundStyle(Brand.ink).lineLimit(2)
+                Spacer(minLength: 6)
+                if locked { Chip(text: "Plus", tint: Brand.gold) }
+            }
+            Text("\(walk.count) trees · \(walk.duration)")
+                .font(.caption).foregroundStyle(Brand.inkSoft)
+        }
+        .padding(14)
+        .frame(width: 220, alignment: .leading)
+        .brandCard()
     }
 }
