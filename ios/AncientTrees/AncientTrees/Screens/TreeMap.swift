@@ -29,6 +29,8 @@ struct TreeMap: UIViewRepresentable {
     /// their own pins so the two layers are legible as two layers, which is
     /// Hidde's own distinction (2026-08-21).
     var mine: [(id: UUID, lat: Double, lng: Double, name: String)] = []
+    /// Ours that you have already stood in front of. Only changes the pin.
+    var collected: Set<String> = []
     var focus: CLLocationCoordinate2D?
     /// A walk's line. Real when route_walks.py cached a routed shape, otherwise
     /// the order the trees are visited, which is NOT the path a walker takes.
@@ -253,12 +255,16 @@ struct TreeMap: UIViewRepresentable {
                 pending = (trees, mine, route, routeIsReal, clusters)
                 return
             }
-            let wantTrees = Set(trees.map(\.id))
+            // The collected set joins the identity of what is drawn: without
+            // it, ticking a tree off changes no id and the pins never redraw.
+            let wantTrees = Set(trees.map(\.id)).union(
+                parent.collected.intersection(trees.map(\.id)).map { "c:" + $0 })
             let wantMine = Set(mine.map { $0.id.uuidString })
             MainActor.assumeIsolated {
             if wantTrees != drawnTreeIDs {
                 drawnTreeIDs = wantTrees
-                MapLayers.setTrees(trees, on: style, clustered: clusters)
+                MapLayers.setTrees(trees, on: style, clustered: clusters,
+                                   collected: parent.collected)
             }
             if wantMine != drawnMineIDs {
                 drawnMineIDs = wantMine
@@ -449,7 +455,8 @@ enum MapLayers {
 
     }
 
-    static func setTrees(_ trees: [Tree], on style: MLNStyle, clustered: Bool) {
+    static func setTrees(_ trees: [Tree], on style: MLNStyle, clustered: Bool,
+                         collected: Set<String> = []) {
         let month = Calendar.current.component(.month, from: Date())
         var features: [MLNPointFeature] = []
         for t in trees {
@@ -467,7 +474,9 @@ enum MapLayers {
             let colour = peaking
                 ? (UIColor(hex: t.peak?.colour) ?? UIColor(red: 0.85, green: 0.63, blue: 0.25, alpha: 1))
                 : moss
+            let seen = collected.contains(t.id)
             let name = imageName(species: t.commonName, peaking: peaking, colour: colour)
+                + (seen ? "-c" : "")
             // Our own register of what has been added, rather than asking the
             // style whether it already has the image. That check drew exactly
             // ONE pin for eleven trees: whatever style.image(forName:) returns
@@ -476,7 +485,9 @@ enum MapLayers {
             // MapLibre silently drew nothing. Found in a screenshot, not in a log.
             if !registered.contains(name) {
                 registered.insert(name)
-                style.setImage(pin(colour: colour, glyph: SpeciesGlyph.image(for: t.commonName)),
+                style.setImage(pin(colour: colour,
+                                   glyph: SpeciesGlyph.image(for: t.commonName),
+                                   collected: seen),
                                forName: name)
             }
             // Attributes must be values GeoJSON can hold: strings, numbers,
@@ -732,7 +743,16 @@ enum MapLayers {
     /// One pin, drawn once per species-and-colour and then cached by the style.
     /// A filled circle with a white ring and the species silhouette knocked out
     /// of it in white, which is the website's pin translated into a bitmap.
-    private static func pin(colour: UIColor, glyph: UIImage?) -> UIImage {
+    /// A pin, and whether you have already stood in front of that tree.
+    ///
+    /// Three states existed on this map and only two of them looked different:
+    /// a tree you added yourself has always had its own pin, and one of OURS
+    /// that you had collected was drawn exactly like one you had never seen
+    /// (Hidde, 2026-08-24: "mss met een ander pin vertoning voor collected en
+    /// toegevoegd"). The mark is a small white disc with a check, bottom right,
+    /// which is where Google Maps hangs its saved-place flag and what the
+    /// Collected control in this app already uses as its symbol.
+    private static func pin(colour: UIColor, glyph: UIImage?, collected: Bool = false) -> UIImage {
         let d: CGFloat = 38
         return UIGraphicsImageRenderer(size: .init(width: d, height: d)).image { _ in
             colour.setFill()
@@ -745,6 +765,21 @@ enum MapLayers {
                 let s: CGFloat = 20
                 glyph.withTintColor(.white, renderingMode: .alwaysOriginal)
                     .draw(in: .init(x: (d - s) / 2, y: (d - s) / 2, width: s, height: s))
+            }
+            if collected {
+                let b: CGFloat = 15
+                let r = CGRect(x: d - b - 1, y: d - b - 1, width: b, height: b)
+                UIColor.white.setFill()
+                UIBezierPath(ovalIn: r).fill()
+                let tick = UIBezierPath()
+                tick.move(to: .init(x: r.minX + 4.0, y: r.midY))
+                tick.addLine(to: .init(x: r.midX - 0.6, y: r.maxY - 4.4))
+                tick.addLine(to: .init(x: r.maxX - 3.6, y: r.minY + 4.6))
+                tick.lineWidth = 2.2
+                tick.lineCapStyle = .round
+                tick.lineJoinStyle = .round
+                colour.setStroke()
+                tick.stroke()
             }
         }
     }

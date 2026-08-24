@@ -186,6 +186,7 @@ struct MapTab: View {
         ZStack(alignment: .bottom) {
             TreeMap(trees: shownWalk.map { catalogue.trees(of: $0) } ?? mapTrees,
                     mine: sightings.yoursOnly.map { (id: $0.id, lat: $0.lat, lng: $0.lng, name: $0.name) },
+                    collected: collectedIds,
                     focus: .init(latitude: origin.lat, longitude: origin.lng),
                     route: walkRoute,
                     routeIsReal: (shownWalk?.shape?.count ?? 0) > 1,
@@ -443,7 +444,13 @@ struct MapTab: View {
                 // so they are one set. The word is the state a pin is in,
                 // which is what a filter chip is for; the tab keeps the word
                 // Yours, which is a place.
-                FilterChip(label: "Collected", icon: "checkmark.seal",
+                // "Your trees", not "Collected": the same set lives in a tab
+                // called Yours, and one set with two names depending on which
+                // screen you are on is the dubbing we took off this map an hour
+                // earlier, in words instead of chips (Hidde, 2026-08-24).
+                // Collected survives where it belongs, inside Yours, where it
+                // stands opposite Want to see and describes a STATE.
+                FilterChip(label: "Your trees", icon: "checkmark.seal",
                            on: filters.collectedOnly) { filters.collectedOnly.toggle() }
 
                 Menu {

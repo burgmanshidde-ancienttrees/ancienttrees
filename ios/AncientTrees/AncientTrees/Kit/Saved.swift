@@ -48,6 +48,20 @@ public final class Saved {
     public func isSaved(_ id: String) -> Bool { entries[id] != nil }
     public func isVisited(_ id: String) -> Bool { entries[id]?.visitedAt != nil }
 
+    /// Debug scaffolding, same family as -tab and -select: mark trees as
+    /// collected at launch so the collected PIN can be photographed. simctl
+    /// cannot tap, and a pin state that only exists after a tap is a pin state
+    /// that ships unlooked at.
+    public func seedFromLaunchArguments() {
+        guard let arg = ProcessInfo.processInfo.arguments
+            .first(where: { $0.hasPrefix("-collected=") }) else { return }
+        let now = Date()
+        for id in arg.dropFirst(11).split(separator: ",") {
+            adopt(treeId: String(id), visitedAt: now, savedAt: now)
+        }
+    }
+
+
     public var savedCount: Int { entries.count }
     public var visitedCount: Int { entries.values.filter { $0.visitedAt != nil }.count }
 
