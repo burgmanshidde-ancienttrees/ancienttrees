@@ -113,7 +113,7 @@ struct CollectView: View {
                 HStack(spacing: 10) {
                     Image(systemName: "camera")
                         .font(.footnote).foregroundStyle(Brand.moss)
-                    Text("Photograph a tree with the camera below and it is yours, ours or not.")
+                    Text("You can add any tree by photographing it, whether we map it or not.")
                         .font(.footnote).foregroundStyle(Brand.inkSoft)
                         .fixedSize(horizontal: false, vertical: true)
                 }
@@ -338,7 +338,7 @@ struct CollectView: View {
                 Text("Your first tree is \(distanceLabel(t)) away")
                     .font(.brand(24, .bold, relativeTo: .title))
                     .foregroundStyle(Brand.ink)
-                Text("Take a photo of it while you are standing there and it is yours. Trees, species and places fill your collection, and the years they have seen add up.")
+                Text("You can collect it by photographing it while you stand there. Trees, species and places fill your collection, and the years they have seen add up.")
                     .font(.subheadline).foregroundStyle(Brand.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
                 NavigationLink(value: Route.tree(t.id)) {
@@ -361,7 +361,7 @@ struct CollectView: View {
             VStack(alignment: .leading, spacing: 10) {
                 Text("No trees yet")
                     .font(.brand(24, .bold, relativeTo: .title)).foregroundStyle(Brand.ink)
-                Text("Take a photo of a tree to start your collection. There are \(catalogue.trees.count.formatted(.number.locale(Locale(identifier: "en_US")))) of ours to find in \(Set(catalogue.trees.map(\.country)).count) countries, and any tree you photograph is yours whether we map it or not.")
+                Text("You can start your collection by photographing any tree. There are \(catalogue.trees.count.formatted(.number.locale(Locale(identifier: "en_US")))) of ours to find in \(Set(catalogue.trees.map(\.country)).count) countries, and any tree you photograph is yours whether we map it or not.")
                     .font(.subheadline).foregroundStyle(Brand.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
             }
