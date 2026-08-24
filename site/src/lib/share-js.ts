@@ -39,15 +39,30 @@ export const SHARE_JS = `
           btn.setAttribute('aria-label', was);
         }, 1800);
       };
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(url).then(done, function() {});
-      } else {
-        var f = document.createElement('input');
+      // The clipboard API needs a secure context AND a real user gesture, and
+      // it rejects silently when it does not have one. A share button that
+      // does nothing and says nothing is the silent no-op this codebase keeps
+      // a check for, so a rejection falls through to the old way rather than
+      // into an empty handler.
+      var legacy = function() {
+        var f = document.createElement('textarea');
         f.value = url;
+        f.setAttribute('readonly', '');
+        f.style.position = 'fixed';
+        f.style.opacity = '0';
         document.body.appendChild(f);
         f.select();
-        try { document.execCommand('copy'); done(); } catch (e) {}
+        var ok = false;
+        try { ok = document.execCommand('copy'); } catch (e) {}
         document.body.removeChild(f);
+        return ok;
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(done, function() {
+          if (legacy()) done();
+        });
+      } else if (legacy()) {
+        done();
       }
     });
   });
