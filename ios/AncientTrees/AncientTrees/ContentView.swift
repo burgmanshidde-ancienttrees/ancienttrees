@@ -147,6 +147,10 @@ struct ContentView: View {
                                    @ViewBuilder root: () -> Root) -> some View {
         NavigationStack(path: path(id)) {
             root()
+                // The native bar is off everywhere: TabBar.swift draws ours,
+                // because iOS puts its capsule around icon AND label and the
+                // reference puts it behind the icon alone.
+                .toolbar(.hidden, for: .tabBar)
                 .navigationDestination(for: Route.self) { route in
                     destination(route, cat)
                         // A pushed page is a reading page; the bar does nothing
@@ -258,19 +262,20 @@ struct ContentView: View {
                     // matches nothing of ours.
                     Color.clear
                         .tag(2)
-                        // NO LABEL, and filled, because this slot is an ACTION
-                        // and the other three are places. Hidde, 2026-08-24,
-                        // arguing against putting the camera in a floating
-                        // button over the map: "je krijgt zoals instagram 10%
-                        // makers en 90% lezers", so the 90 must not pay for the
-                        // 10 with a control sitting on top of the map all day.
-                        // He is right, and the fix is not a fourth destination
-                        // either: Instagram, Strava and TikTok all put making
-                        // in the bar and draw it as a button. Ours is a filled
-                        // circle with no word under it, which is the only thing
-                        // in the bar that looks like that.
-                        .tabItem { Image(systemName: "camera.circle.fill")
-                            .environment(\.symbolVariants, .fill) }
+                        // A slot like the other three, word and all, and it
+                        // differs only in what it does. I had drawn it as an
+                        // unlabelled filled circle on 2026-08-24, reaching for
+                        // the make-button that Instagram, TikTok and YouTube
+                        // carry. Hidde: "wat je nu maakt heb ik nog nooit als
+                        // conventie gezien", and he was right. In every one of
+                        // those apps that control sits in the MIDDLE of a bar
+                        // of five. Ours has four slots, so there is no middle,
+                        // and what is left is an invention wearing a reference
+                        // as an excuse. The convention memo covers exactly
+                        // this: caution and cleverness are both reasons to
+                        // copy, never to design your own control.
+                        .tabItem { Label("Collect", systemImage: "camera")
+                            .environment(\.symbolVariants, .none) }
 
                     // "Yours" in the bar, "Your trees" on the screen. Not an
                     // inconsistency but the ordinary convention: four tabs
@@ -290,6 +295,15 @@ struct ContentView: View {
                 // same). The .none variant sits on each Label because iOS
                 // applies its automatic .fill inside the tab item, underneath
                 // an environment set on the TabView itself.
+                .safeAreaInset(edge: .bottom, spacing: 0) {
+                    // Gone on a pushed page, which the native bar already did
+                    // and which AllTrails does too: a reading page has no bar
+                    // and back is the way out. An EmptyView reserves no space,
+                    // so the page grows into it rather than leaving a gap.
+                    if path(tab).wrappedValue.isEmpty {
+                        TabBar(selected: tab) { tabSelection.wrappedValue = $0 }
+                    }
+                }
                 .appObjects(self)
                 .onChange(of: navigator.collectNearby) { _, want in
                     if want { rootSheet = .spot(.collect); navigator.collectNearby = false }
