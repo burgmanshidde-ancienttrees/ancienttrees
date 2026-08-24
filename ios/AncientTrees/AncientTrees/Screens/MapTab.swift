@@ -115,12 +115,19 @@ struct MapTab: View {
         return (lat: c.latitude, lng: c.longitude)
     }
 
-    /// How far to look, which has to follow the zoom. Half the visible height,
-    /// floored at fifty kilometres so a street-level view still fills the list
-    /// rather than showing the four trees actually on screen.
+    /// How far the list looks: WHAT IS ON SCREEN.
+    ///
+    /// It used to be `max(50, ...)`, a fifty kilometre floor whatever the zoom,
+    /// so panning across a city changed nothing and the list quietly described
+    /// the province (Hidde, 2026-08-24: "als ik op de kaart ga swipen of zoek
+    /// of mijn view verander moeten de bomen meeveranderen naar degene die in
+    /// mijn view staan"). The floor was there for a real reason, that a street
+    /// level view holds four trees and a list of four looks broken, and that
+    /// reason is answered in `listed` by topping up rather than by lying about
+    /// where the list is looking.
     private var reachKm: Double {
-        guard let s = mapRegion?.span else { return 50 }
-        return max(50, s.latitudeDelta * 111.0 / 2)
+        guard let s = mapRegion?.span else { return 5 }
+        return max(0.5, s.latitudeDelta * 111.0 / 2)
     }
 
     /// True when the map is still looking at roughly where you are standing, so
@@ -168,8 +175,19 @@ struct MapTab: View {
     }
 
     private var listed: [(tree: Tree, km: Double)] {
-        let near = catalogue.nearest(to: focus.lat, focus.lng, limit: 60, withinKm: reachKm)
+        var near = catalogue.nearest(to: focus.lat, focus.lng, limit: 60, withinKm: reachKm)
             .filter { filters.keeps($0.tree, month: month, collected: collectedIds) && filters.keepsDistance($0.km) }
+        // On screen first, and only then topped up. A street level view holds
+        // four trees, and a list of four reads as an empty app rather than as a
+        // close-up, so anything under eight reaches further out. They are still
+        // ordered by distance, so what is actually in front of you stays at the
+        // top either way.
+        if near.count < 8 {
+            near = catalogue.nearest(to: focus.lat, focus.lng, limit: 60,
+                                     withinKm: max(reachKm * 8, 50))
+                .filter { filters.keeps($0.tree, month: month, collected: collectedIds)
+                          && filters.keepsDistance($0.km) }
+        }
         guard !query.isEmpty else {
             return Editorial.leadWithAPhotograph(near, photo: { $0.tree.photo != nil })
         }
@@ -278,17 +296,31 @@ struct MapTab: View {
         .fullScreenCover(isPresented: $searching) {
             MapSearch(catalogue: catalogue, origin: origin) { hit in
                 switch hit {
-                case .city(_, _, let lat, let lng):
-                    fly(to: lat, lng: lng, span: 6000)
+                case .city(let slug, _, _, _):
+                    // The FULL city, not a camera position (Hidde, 2026-08-24).
+                    // Searching a city and landing on a map centred near it
+                    // answers where it is; opening the city answers what is in
+                    // it, which is what somebody who typed its name wanted.
+                    navigator.push = .city(slug)
                 case .country(let name):
-                    // A country has no single point, so go to its biggest city
-                    // rather than to the middle of the sea.
+                    // The COUNTRY in view, not its biggest city. It used to fly
+                    // to whichever city had the most trees, so searching Spain
+                    // showed you Barcelona and nothing else: a country is a
+                    // question about spread, and the answer is the whole
+                    // spread.
                     let ts = catalogue.trees.filter { $0.country == name }
-                    if let c = Dictionary(grouping: ts, by: \.citySlug)
-                        .max(by: { $0.value.count < $1.value.count })?.value {
-                        var la = 0.0, ln = 0.0
-                        for t in c { la += t.lat; ln += t.lng }
-                        fly(to: la / Double(c.count), lng: ln / Double(c.count), span: 14000)
+                    if let first = ts.first {
+                        var minLat = first.lat, maxLat = first.lat
+                        var minLng = first.lng, maxLng = first.lng
+                        for t in ts {
+                            minLat = min(minLat, t.lat); maxLat = max(maxLat, t.lat)
+                            minLng = min(minLng, t.lng); maxLng = max(maxLng, t.lng)
+                        }
+                        let cLat = (minLat + maxLat) / 2, cLng = (minLng + maxLng) / 2
+                        let latM = (maxLat - minLat) * 111_320
+                        let lngM = (maxLng - minLng) * 111_320 * cos(cLat * .pi / 180)
+                        fly(to: cLat, lng: cLng,
+                            span: max(20_000, min(max(latM, lngM) * 1.25, 2_500_000)))
                     }
                 case .species(let name):
                     filters.species = name
