@@ -145,6 +145,10 @@ def boot(udid):
 
 
 def build(dd):
+    # Refuses when another session is live in this checkout; silent otherwise.
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from worktree_guard import guard
+    guard("building the app")
     print("building")
     r = subprocess.run(
         ["xcodebuild", "-scheme", "AncientTrees",

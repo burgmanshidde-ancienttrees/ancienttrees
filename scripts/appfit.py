@@ -341,6 +341,8 @@ def run_test(device, scratch):
     for stale in device_dir.rglob(DUMP_NAME):
         stale.unlink()
 
+    from worktree_guard import guard
+    guard("running the app's UI test")
     print(f"running SweepFrames on {device}, this takes a few minutes")
     r = subprocess.run(
         ["xcodebuild", "test",
