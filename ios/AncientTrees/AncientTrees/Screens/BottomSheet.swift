@@ -34,7 +34,7 @@
 import SwiftUI
 
 enum SheetHeight: CaseIterable {
-    case peek, half, full
+    case peek, card, half, full
 
     func points(in total: CGFloat) -> CGFloat {
         switch self {
@@ -46,6 +46,14 @@ enum SheetHeight: CaseIterable {
         // does the same). Not tappable at this height, so it invites without
         // catching a thumb.
         case .peek: 168
+        // ONE selected tree, and nothing else. Sized to the card rather than
+        // to the screen, because a half-screen sheet holding a single card is
+        // mostly empty (Hidde, 2026-08-24, on his own phone: "het is best wel
+        // onzinnig om de lijst die naar boven komt groter te maken dan de
+        // content die het laat zien"). He is right and it is not the
+        // convention either: Apple Maps, Google Maps and AllTrails all raise a
+        // short card for one tapped place and keep the taller stop for a list.
+        case .card: 400
         case .half: total * 0.52
         // Full stops 124 points short of the top, never 8 percent of it: on
         // an iPhone SE 8 percent is 53 points, and the sheet's search field

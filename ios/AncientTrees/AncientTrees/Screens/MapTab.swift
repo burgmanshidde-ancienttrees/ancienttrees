@@ -252,13 +252,13 @@ struct MapTab: View {
         .task {
             if let id = debugSelect, let t = catalogue.tree(id) {
                 selected = t
-                sheetHeight = .half
+                sheetHeight = .card
             }
         }
         .onChange(of: navigator.showOnMap) { _, new in
             guard let id = new, let t = catalogue.tree(id) else { return }
             selected = t
-            sheetHeight = .half
+            sheetHeight = .card
             navigator.showOnMap = nil
         }
         .fullScreenCover(isPresented: $searching) {
@@ -287,8 +287,12 @@ struct MapTab: View {
         .toolbar(.hidden, for: .navigationBar)
         .onChange(of: selected) { _, new in
             // Tapping a pin raises the sheet to that tree, the way Google Maps
-            // turns the sheet into the place you tapped.
-            if new != nil { sheetHeight = .half }
+            // turns the sheet into the place you tapped. To the CARD height,
+            // not the list height: one tree does not fill half a screen.
+            if new != nil { sheetHeight = .card }
+            // Letting go of a tree puts the list back, and the list wants the
+            // taller stop.
+            if new == nil, sheetHeight == .card { sheetHeight = .half }
         }
     }
 

@@ -368,6 +368,37 @@ def check_save_flow_integrity():
     return out
 
 
+def check_no_owner_name():
+    """The thirteenth ratchet check, from 2026-08-24.
+
+    Hidde: "zet mijn naam er nooit onder altijd die van het bedrijf." It is the
+    same rule the blueprint's P5 has carried since 2026-07-28, where the
+    site-level entity is the Organization "Ancient Trees" and never a named
+    Person, and it is now the second time he has had to say it, which is what
+    turns a rule into a check here.
+
+    Nothing rendered has ever carried it: the matches in the repo are all in
+    source comments, which is fine and is where the reasoning belongs. This
+    exists so that stays true the day somebody writes an about line, a terms
+    page or a press quote in a hurry. The reader's own name is a separate rule
+    with its own history and is not this check's business.
+    """
+    out = []
+    hits = []
+    pattern = re.compile(r"\bHidde\b|\bBurgmans\b", re.I)
+    for page in sorted(DIST.rglob("*.html")):
+        scan = PageScan()
+        scan.feed(page.read_text(encoding="utf-8"))
+        if pattern.search(" ".join(scan.text_parts)):
+            hits.append(str(page.relative_to(DIST)))
+    if hits:
+        out.append("%d page(s) render the owner's personal name, which is never "
+                   "published: the site's entity is the organisation Ancient "
+                   "Trees (blueprint P5). %s"
+                   % (len(hits), ", ".join(hits[:5])))
+    return out
+
+
 def check_one_owner_per_event():
     """The twelfth ratchet check, from 2026-08-20.
 
@@ -670,6 +701,7 @@ def main():
     failures += check_sheet_integrity()
     failures += check_one_tree_card()
     failures += check_one_owner_per_event()
+    failures += check_no_owner_name()
     pages = sorted(DIST.rglob("*.html"))
     if not pages:
         print(f"QA: no pages found under {DIST}, run (cd site && npx astro build) first")
