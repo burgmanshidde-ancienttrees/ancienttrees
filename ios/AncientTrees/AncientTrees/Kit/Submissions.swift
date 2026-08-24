@@ -22,7 +22,7 @@ public enum Submission {
             switch self {
             case .tree: "A tree we are missing"
             case .city: "A place we should map"
-            case .correction: "Something here is wrong"
+            case .correction: "Report a problem"
             }
         }
     }

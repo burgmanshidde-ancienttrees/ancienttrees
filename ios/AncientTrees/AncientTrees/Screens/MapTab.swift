@@ -41,6 +41,7 @@ struct MapTab: View {
     /// Debug scaffolding, same family as -spot: the search page is only
     /// reachable by tapping and simctl has no finger. `-search` opens it empty,
     /// `-search=lis` opens it with that typed.
+    @State private var pickingSpecies = false
     @State private var searching = ProcessInfo.processInfo.arguments
         .contains { $0 == "-search" || $0.hasPrefix("-search=") }
     /// Where the map is looking. nil until it has been moved, so the first list
@@ -264,6 +265,16 @@ struct MapTab: View {
             sheetHeight = .card
             navigator.showOnMap = nil
         }
+        .sheet(isPresented: $pickingSpecies) {
+            SpeciesPicker(catalogue: catalogue,
+                          nearby: Array(Set(mapTrees.map(\.commonName))),
+                          selection: Binding(get: { filters.species },
+                                             set: { new in
+                                                 filters = MapFilters()
+                                                 filters.species = new
+                                                 if new != nil { shownWalk = nil }
+                                             }))
+        }
         .fullScreenCover(isPresented: $searching) {
             MapSearch(catalogue: catalogue, origin: origin) { hit in
                 switch hit {
@@ -372,8 +383,26 @@ struct MapTab: View {
         .padding(.horizontal, 16).padding(.bottom, 6)
     }
 
+    /// Yours, near where the map is looking. They live on their own layer on
+    /// the map and were missing from the list entirely, which made them feel
+    /// like decoration rather than trees.
+    private var minesInView: [Sightings.Sighting] {
+        sightings.yoursOnly
+            .filter { Geo.km(focus, ($0.lat, $0.lng)) <= reachKm }
+            .sorted { Geo.km(focus, ($0.lat, $0.lng)) < Geo.km(focus, ($1.lat, $1.lng)) }
+    }
+
     private var list: some View {
         LazyVStack(spacing: 12) {
+                // Yours first: there are few of them and nobody else has them.
+                if query.isEmpty {
+                    ForEach(minesInView) { s in
+                        NavigationLink(value: Route.mine(s.id)) {
+                            MineCard(sighting: s)
+                        }
+                        .buttonStyle(.plain)
+                    }
+                }
                 ForEach(listed, id: \.tree.id) { hit in
                     NavigationLink(value: Route.tree(hit.tree.id)) {
                         TreeCard(tree: hit.tree)
@@ -461,20 +490,11 @@ struct MapTab: View {
                     if want { shownWalk = nil }
                 }
 
-                Menu {
-                    Button("Any species") { filters.species = nil }
-                    Divider()
-                    ForEach(topSpecies, id: \.self) { sp in
-                        Button(sp) {
-                            filters = MapFilters()
-                            filters.species = sp
-                            shownWalk = nil
-                        }
-                    }
-                } label: {
+                Button { pickingSpecies = true } label: {
                     FilterChipLabel(label: filters.species ?? "Species",
                                     icon: "leaf", on: filters.species != nil)
                 }
+                .buttonStyle(.plain)
 
                 if filters.isOn {
                     Button {

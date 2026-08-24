@@ -86,7 +86,13 @@ struct TabBar: View {
                                 // two conventions rather than a preference.
                                 Image(systemName: item.symbol)
                                     .font(.system(size: 22, weight: .regular))
-                                    .foregroundStyle(i == selected ? Brand.ink : Brand.inkSoft)
+                                    // The brand green, the same one the camera
+                                    // disc wears (Hidde, 2026-08-24). Brand.moss
+                                    // is the dark green on a white bar and the
+                                    // light one on a dark bar, so "the same
+                                    // green" stays readable in both themes
+                                    // rather than being dark green twice.
+                                    .foregroundStyle(i == selected ? Brand.moss : Brand.inkSoft)
                                     .environment(\.symbolVariants, i == selected ? .fill : .none)
                             }
                         }
@@ -104,7 +110,7 @@ struct TabBar: View {
                             Text(item.title)
                                 .font(.system(size: 11,
                                               weight: i == selected ? .bold : .regular))
-                                .foregroundStyle(i == selected ? Brand.ink : Brand.inkSoft)
+                                .foregroundStyle(i == selected ? Brand.moss : Brand.inkSoft)
                         }
                     }
                     .frame(maxWidth: .infinity)
