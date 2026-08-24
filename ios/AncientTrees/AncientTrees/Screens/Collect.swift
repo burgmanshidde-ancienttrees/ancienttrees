@@ -85,7 +85,6 @@ struct CollectView: View {
                         .font(.screenTitle)
                         .foregroundStyle(Brand.ink)
                     Spacer(minLength: 8)
-                ProfileButton()
                     // Aligned on the TITLE'S CAP HEIGHT, not on its
                     // line box. A 34 point line box carries descender
                     // room that "Explore" never uses, so centring the

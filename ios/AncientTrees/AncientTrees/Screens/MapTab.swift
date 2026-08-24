@@ -445,13 +445,14 @@ struct MapTab: View {
                 // so they are one set. The word is the state a pin is in,
                 // which is what a filter chip is for; the tab keeps the word
                 // Yours, which is a place.
-                // "Your trees", not "Collected": the same set lives in a tab
-                // called Yours, and one set with two names depending on which
-                // screen you are on is the dubbing we took off this map an hour
-                // earlier, in words instead of chips (Hidde, 2026-08-24).
-                // Collected survives where it belongs, inside Yours, where it
-                // stands opposite Want to see and describes a STATE.
-                FilterChip(label: "Your trees", icon: "checkmark.seal",
+                // It said "Your trees" for an hour this afternoon, to match a
+                // tab called Yours. That tab is called Collection now, so the
+                // word follows it: collect (the deed, which has no word at
+                // all), collected (the state a pin is in), collection (the
+                // place they live). One root, three forms, no "yours" left
+                // anywhere. Hidde asked for "your trees" when the tab still
+                // said Yours; this follows the reason rather than the word.
+                FilterChip(label: "Collected", icon: "checkmark.seal",
                            on: filters.collectedOnly) { filters.collectedOnly.toggle() }
 
                 Menu {
