@@ -38,7 +38,13 @@ struct CollectView: View {
     @State private var signingIn = false
     @State private var lane: Lane = .want
 
-    enum Lane: Hashable { case want, seen, mine }
+    // TWO lanes, not three. "Collected" and "Added by you" were separate until
+    // 2026-08-24, when Hidde gave the rule that dissolves the split: "je
+    // collect de bomen die er zijn en je collect automatisch een boom als je
+    // die toevoegt." A tree you added is collected by definition, so it belongs
+    // in the same list as the ones you ticked off, newest first, with its own
+    // photograph on it.
+    enum Lane: Hashable { case want, seen }
 
     private var visited: [Tree] {
         saved.entries.values.filter { $0.visitedAt != nil }
@@ -53,6 +59,11 @@ struct CollectView: View {
     private var allVisited: [Tree] {
         saved.entries.values.filter { $0.visitedAt != nil }.compactMap { catalogue.tree($0.treeId) }
     }
+    /// Every tree you have, ours and your own. Places, species and countries
+    /// stay on `allVisited` because a sighting carries a name and a position
+    /// and nothing else: counting a tree we cannot name a country for would be
+    /// inventing the country.
+    private var collectedCount: Int { allVisited.count + sightings.yoursOnly.count }
 
     private var countries: Int { Set(allVisited.map(\.country)).count }
     private var cities: Int { Set(allVisited.map(\.citySlug)).count }
@@ -120,27 +131,24 @@ struct CollectView: View {
                     Picker("", selection: $lane) {
                         Text("Want to see").tag(Lane.want)
                         Text("Collected").tag(Lane.seen)
-                        Text("Added by you").tag(Lane.mine)
                     }
                     .pickerStyle(.segmented)
                     .accessibilityIdentifier("collect-lane")
 
-                    if lane == .mine {
-                        // Trees only YOU have: photographed, kept, and still
-                        // yours whether or not we take them for the map.
-                        if sightings.yoursOnly.isEmpty {
-                            Text("Trees you add yourself appear here, whether or not they join the map everybody sees.")
-                                .font(.subheadline).foregroundStyle(Brand.inkSoft)
-                                .padding(.top, 4)
-                        } else {
-                            ForEach(sightings.yoursOnly) { sightingCard($0) }
-                        }
-                    } else {
+                    if lane == .seen, !sightings.yoursOnly.isEmpty {
+                        // Yours first, because they are the ones nobody else
+                        // has. Still marked as yours on the card, so the
+                        // distinction survives where it is useful (this one is
+                        // not on the map everybody sees) and disappears where
+                        // it was only in the way.
+                        ForEach(sightings.yoursOnly) { sightingCard($0) }
+                    }
+                    Group {
                         let list = lane == .want ? wishlist : visited
                         if list.isEmpty {
                             Text(lane == .want
                                  ? "Nothing on your list. Tap a heart anywhere to put a tree here."
-                                 : "Nothing collected yet. Photograph a tree with the button above.")
+                                 : "Nothing collected yet. Photograph a tree with the button above, ours or one only you know.")
                                 .font(.subheadline).foregroundStyle(Brand.inkSoft)
                                 .padding(.top, 4)
                         } else {
@@ -166,7 +174,7 @@ struct CollectView: View {
     private var statsCard: some View {
         VStack(spacing: 14) {
             HStack(spacing: 0) {
-                tile("\(allVisited.count)", "Trees")
+                tile("\(collectedCount)", "Trees")
                 Divider().frame(height: 42)
                 tile("\(cities)", cities == 1 ? "Place" : "Places")
                 Divider().frame(height: 42)
@@ -174,7 +182,12 @@ struct CollectView: View {
                 Divider().frame(height: 42)
                 tile("\(countries)", countries == 1 ? "Country" : "Countries")
             }
-            Text("Out of \(catalogue.trees.count.formatted(.number.locale(Locale(identifier: "en_US")))) trees we map in \(Set(catalogue.trees.map(\.country)).count) countries.")
+            // The sentence has to survive your own trees being in the count
+            // above, because they are not among the ones we map and "12 of
+            // 1,842" would quietly be false.
+            Text(sightings.yoursOnly.isEmpty
+                 ? "Out of \(catalogue.trees.count.formatted(.number.locale(Locale(identifier: "en_US")))) trees we map in \(Set(catalogue.trees.map(\.country)).count) countries."
+                 : "\(allVisited.count) from the map we keep, \(sightings.yoursOnly.count) only you have.")
                 .font(.caption).foregroundStyle(Brand.inkSoft)
         }
         .padding(.vertical, 18).padding(.horizontal, 8)
