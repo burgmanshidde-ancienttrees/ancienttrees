@@ -453,13 +453,22 @@ struct MapTab: View {
                 // anywhere. Hidde asked for "your trees" when the tab still
                 // said Yours; this follows the reason rather than the word.
                 FilterChip(label: "Collected", icon: "checkmark.seal",
-                           on: filters.collectedOnly) { filters.collectedOnly.toggle() }
+                           on: filters.collectedOnly) {
+                    let want = !filters.collectedOnly
+                    filters = MapFilters()
+                    filters.collectedOnly = want
+                    if want { shownWalk = nil }
+                }
 
                 Menu {
                     Button("Any species") { filters.species = nil }
                     Divider()
                     ForEach(topSpecies, id: \.self) { sp in
-                        Button(sp) { filters.species = sp }
+                        Button(sp) {
+                            filters = MapFilters()
+                            filters.species = sp
+                            shownWalk = nil
+                        }
                     }
                 } label: {
                     FilterChipLabel(label: filters.species ?? "Species",
@@ -469,6 +478,7 @@ struct MapTab: View {
                 if filters.isOn {
                     Button {
                         filters = MapFilters()
+                        shownWalk = nil
                     } label: {
                         FilterChipLabel(label: "Clear", icon: "xmark", on: false)
                     }
@@ -488,6 +498,13 @@ struct MapTab: View {
         if !walksHere.isEmpty {
             Button {
                 if shownWalk == nil {
+                    // ONE of the three at a time (Hidde, 2026-08-24). Not
+                    // tidiness: a walk shown WHILE the map is filtered to the
+                    // trees you have collected loses the stops you have not,
+                    // so the route on screen is not the route. Every
+                    // combination of these three is either that or a filter
+                    // nobody asked for.
+                    filters = MapFilters()
                     shownWalk = walksHere.first
                     sheetHeight = .peek
                 } else {

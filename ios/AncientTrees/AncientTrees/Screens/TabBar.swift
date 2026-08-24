@@ -61,7 +61,7 @@ struct TabBar: View {
                 Button {
                     select(i)
                 } label: {
-                    VStack(spacing: 3) {
+                    VStack(spacing: 2) {
                         ZStack {
                             if item.action {
                                 // The highlight he asked for: a filled disc,
@@ -89,7 +89,16 @@ struct TabBar: View {
                                     .environment(\.symbolVariants, .none)
                             }
                         }
-                        .frame(height: 44)
+                        // The ACTION needs 44 for its disc; a labelled item
+                        // needs only its glyph, and giving it 44 too put air
+                        // above and below the icon so the word floated away
+                        // from it (Hidde, 2026-08-24: "de afstand tussen de
+                        // tekst map explore etc en het icon erboven is wat te
+                        // groot"). iOS sits its own icon and label about two
+                        // points apart and so does the reference. The tap
+                        // target is the whole 50 point row at full item width,
+                        // so nothing here is smaller than Apple's floor.
+                        .frame(height: item.action ? 44 : 26)
                         if !item.title.isEmpty {
                             Text(item.title)
                                 .font(.system(size: 11))
