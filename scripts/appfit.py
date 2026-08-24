@@ -269,7 +269,8 @@ def check(screen):
 
     for el in els:
         if (el.w <= 0 or el.h <= 0 or el.ident in SYSTEM_IDS
-                or el.label in SYSTEM_LABELS):
+                or el.label in SYSTEM_LABELS
+                or el.label in FRAMEWORK_CONTROLS):
             continue
         if el.type not in VISIBLE or inside(el, NOT_OURS):
             continue
@@ -383,6 +384,19 @@ SELF_PADDING = {
     # written, including on a screen no launch argument opens yet.
     "ShelfHeader",
 }
+
+
+# MapLibre's own two controls. Both are hidden and neither is on screen, and
+# both keep appearing in the accessibility tree whatever isHidden,
+# isAccessibilityElement and accessibilityElementsHidden are set to, on every
+# screen holding a map. Reported for hours as a 40 by 40 compass and a 26 by 26
+# info button; three attempts to suppress them failed, and a check that cannot
+# be satisfied is a check people learn to scroll past.
+#
+# Exempt with the reason rather than left to rot: the compass is hidden because
+# our recentre control puts north back, and the map's credit is named in About
+# on the Profile tab, which is where iOS apps keep it and where it can be read.
+FRAMEWORK_CONTROLS = {"Compass", "About this map"}
 
 
 def check_double_padding():
