@@ -18,7 +18,11 @@ import MapKit
 
 struct ContentView: View {
     @State fileprivate var store = CatalogueStore()
-    @State fileprivate var saved = Saved()
+    @State fileprivate var saved: Saved = {
+        let s = Saved()
+        s.seedFromLaunchArguments()
+        return s
+    }()
     @State fileprivate var entitlement = Entitlement()
     @State private var location = LocationProvider()
     @State fileprivate var account = Account()
