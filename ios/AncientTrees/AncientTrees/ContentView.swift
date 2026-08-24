@@ -44,11 +44,15 @@ struct ContentView: View {
     @State private var mapPath: [Route] = []
     @State private var explorePath: [Route] = []
     @State private var collectPath: [Route] = []
+    /// Profile keeps its own stack like the others, or pushing from it would
+    /// land in the collection's history and Back would leave the wrong tab.
+    @State private var profilePath: [Route] = []
 
     private func path(_ id: Int) -> Binding<[Route]> {
         switch id {
         case 0: $mapPath
         case 1: $explorePath
+        case 4: $profilePath
         default: $collectPath
         }
     }
@@ -57,6 +61,7 @@ struct ContentView: View {
         switch id {
         case 0: mapPath = []
         case 1: explorePath = []
+        case 4: profilePath = []
         default: collectPath = []
         }
     }
@@ -296,9 +301,19 @@ struct ContentView: View {
                     // have ticked off.
                     stack(3, cat) { CollectView(catalogue: cat, origin: origin) }
                         .tag(3)
-                        .tabItem { Label("Yours", systemImage: "checkmark.circle")
+                        .tabItem { Label("Collection", systemImage: "checkmark.circle")
                             .environment(\.symbolVariants, .none) }
 
+                    // Profile as a tab of its own (Hidde, 2026-08-24). It was
+                    // a small avatar in two screens' headers, which is where
+                    // an account hides rather than lives; every app in the
+                    // references gives it a slot, and putting it here is also
+                    // what gives the bar the FIVE it needs for the camera to
+                    // have a middle.
+                    stack(4, cat) { ProfileView(catalogue: cat) }
+                        .tag(4)
+                        .tabItem { Label("Profile", systemImage: "person")
+                            .environment(\.symbolVariants, .none) }
                 }
                 // Outline icons that stay outline when selected, colour doing
                 // the selecting (Careem is Hidde's reference; Airbnb does the

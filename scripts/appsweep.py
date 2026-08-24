@@ -109,8 +109,10 @@ def screens(sub):
         ("collect-away",  ["-collect", "-at=52.03,5.91"], 6),
         ("search",        ["-search=lis"], 5),
         ("walk-begin",    ["-begin=amsterdam|Plantage"], 7),
-        ("yours",         ["-tab=3"], 4),
-        ("profile",       ["-tab=3", "-open=profile:x"], 5),
+        # Tab 3 is the Collection and tab 4 is Profile since 2026-08-24, when
+        # the bar went to five slots so the camera could have a middle.
+        ("collection",    ["-tab=3"], 4),
+        ("profile",       ["-tab=4"], 5),
         ("tree",          ["-tab=0", f'-open=tree:{sub["tree"]}'], 6),
         ("tree-nophoto",  ["-tab=0", f'-open=tree:{sub["tree_nophoto"]}'], 5),
         ("city",          ["-tab=0", f'-open=city:{sub["city"]}'], 5),
