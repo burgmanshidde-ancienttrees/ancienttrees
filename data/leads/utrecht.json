@@ -152,6 +152,51 @@
       "place": "In de Warendorfftuin, Vrouw Juttehof, Lange Nieuwstraat 93-95, Utrecht",
       "planted_band": "1860-1870",
       "reason": "owner_category gemeente but setting is 'tuin' (garden) inside the Vrouw Juttehof, another hofje/almshouse courtyard. Needs an explicit access check before shipping, same caution as above."
+    },
+    {
+      "register_nr": 1678123,
+      "name": "Gewone plataan",
+      "latitude": 52.08586,
+      "longitude": 5.129031,
+      "place": "Plantsoen a/d Servaasbolwerk, noordzijde Sterrewacht, Utrecht",
+      "planted_band": "1830-1840",
+      "reason": "ALREADY PUBLISHED: coordinates are an exact match for the live utr_018 'The Thickest Plane of the Zocherpark' (52.08586,5.129031). kanokaartutrecht.nl stop 9 independently confirms it as 'de dikste plataan van het Zocherpark' at the north side of Zonnenburg. Do not re-verify or re-publish; recorded here only so a future pass does not repeat the lookup."
+    },
+    {
+      "register_nr": 1678121,
+      "name": "Moerascypressen (group of 10)",
+      "latitude": 52.0872,
+      "longitude": 5.117371,
+      "place": "Waterkant bij Hotel Karel V, Stadsbuitengracht, Utrecht",
+      "planted_band": "1910-1920 per register, 1835 per gemeente (Zocherpark aanleg, not tied to this planting specifically)",
+      "reason": "Checked this pass via kanokaartutrecht.nl (stop 15, fetched 2026-08-24): a group of 10 Swamp Cypresses (Taxodium distichum) beside Hotel Karel V, notable for knee roots poking out of the water. Height ~24m, girth of one specimen 301cm. Gemeente-owned, visitable ja, visible ja. Not verified to full delivery this pass under the 4-candidate limit; a good ensemble candidate for a follow-up pass, but the collectible-point test (10 trees vs a compact 4-oak grove) needs a judgement call on whether it reads as one destination or is too spread to be one collectible point."
+    },
+    {
+      "register_nr": 1678119,
+      "name": "Peer (Common Pear)",
+      "latitude": 52.08586,
+      "longitude": 5.12903,
+      "place": "Geertebolwerk t.h.v. Zilverstraat a/h water, Utrecht",
+      "planted_band": "1900-1910",
+      "reason": "Checked this pass via kanokaartutrecht.nl (stop 16, fetched 2026-08-24): a small, vital old common pear (Pyrus communis) beside the canal, still fruiting and flowering white each spring, height 11m, girth 182cm. Gemeente-owned, visitable ja. An unusual story (a fruit tree old enough to be monumental) but a modest, minor specimen; good candidate for a follow-up pass if the city wants a lighter/curiosity entry rather than a giant."
+    },
+    {
+      "register_nr": 1678122,
+      "name": "Zwarte walnoot (Black Walnut)",
+      "latitude": 52.081344,
+      "longitude": 5.123125,
+      "place": "Sterrenburg/Tolsteegbrug, Utrecht",
+      "planted_band": "1870-1890",
+      "reason": "Checked this pass via kanokaartutrecht.nl (stop 19, fetched 2026-08-24, end of the route): a black walnut beside the former Utrechtse School voor Bestuurs- en Organisatiewetenschap building, height ~19m, girth 332cm. Gemeente-owned, visitable ja, visible ja. Not verified to full delivery this pass under the 4-candidate limit; good follow-up candidate."
+    },
+    {
+      "register_nr": 1688570,
+      "name": "Veldesdoorn / Spaanse Aak (Field Maple)",
+      "latitude": 52.085219,
+      "longitude": 5.119142,
+      "place": "Zuidkant van de Bartholomeibrug, aan de waterkant, Pelmolenweg, Utrecht",
+      "planted_band": "1860-1870 per register, 1835 per gemeente (Zocherpark aanleg, not tied to this planting specifically)",
+      "reason": "Checked this pass via kanokaartutrecht.nl (stop 18, fetched 2026-08-24): a Field Maple with an unusual bent, low growth habit hanging out over the water, the only maple genuinely native to the Netherlands. Height 13m, girth 160cm (a small tree; correctly modest numbers, sanity-checked). Gemeente-owned, visitable ja, visible ja. Distinctive story (growth form) but modest size; good follow-up candidate."
     }
   ],
   "blocked": [

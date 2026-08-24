@@ -3,9 +3,9 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Utrecht's oldest trees live behind walls more often than in open parks, protected first by a university's own working garden and later by simple survival. The city's genuine standout is a walled botanical garden barely bigger than a single city block, home to a ginkgo that predates the Netherlands' current constitution and a Chinese tree so rare it took a missionary decades to bring seeds to Europe at all. Add a farmhouse linden absorbed whole by a science campus, and a park cluster of century-old planes planted when the city's old defences became parkland.",
-  "meta_description": "Utrecht's oldest trees hide behind garden walls: a 260-year ginkgo, a rare handkerchief tree, a farmhouse linden. 18 verified locations, real stories.",
+  "meta_description": "Utrecht's oldest trees hide behind garden walls: a 260-year ginkgo, a rare handkerchief tree, a farmhouse linden. 22 verified locations, real stories.",
   "question_answer": "Utrecht's oldest tree is the Uithof Linden, a common lime planted around 1750 beside a 17th-century farmhouse that gave its name to what is now Utrecht Science Park. At roughly 275 years old, it predates the university campus built up around it by two centuries, one of the oldest Dutch lindens still standing anywhere.",
-  "question_meta": "A 275-year-old linden beside a 17th-century farmhouse, now swallowed by a university science campus, is Utrecht's oldest tree. The full eighteen.",
+  "question_meta": "A 275-year-old linden beside a 17th-century farmhouse, now swallowed by a university science campus, is Utrecht's oldest tree. The full twenty-two.",
   "question_context": "Utrecht keeps its oldest trees in two very different settings, and the contrast says something about how a Dutch city actually preserves age. The Uithof Linden and the Oude Hortus's three specimens all survive because they sat inside a boundary somebody drew and then defended: a farmhouse's private dooryard in one case, a university garden's walls in the other, both places where nobody had reason to fell an inconvenient tree for centuries. The Nieuwegracht's canal lindens took the opposite route, out in the open on a public street since the 1600s, which is also why they are honestly the youngest of the five: street trees get replaced when they die or block a view, and at least one full replanting happened there sometime between the original 1660 planting scheme and the roughly 1830-dated lime trees standing today. Between the walled survivors and the replanted street trees sits the real explanation for why this city's canal-lined image and its handful of genuinely centuries-old specimens rarely overlap on the same tree.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Utrecht's remarkable trees free to visit?",
-      "a": "Three of the eighteen, all in the Oude Hortus, require a paid ticket to the Universiteitsmuseum. The other fifteen, including the Uithof Linden, the Markiezeneik of Amelisweerd, the Nieuwegracht's canal lindens and the trees of Hieronymusplantsoen, Wilhelminapark, Zonnenburg, Servaasbolwerk and Lepelenburg, are free and visible from public streets or parks at any time."
+      "a": "Three of the twenty-two, all in the Oude Hortus, require a paid ticket to the Universiteitsmuseum. The other nineteen, including the Uithof Linden, the Markiezeneik of Amelisweerd, the Nieuwegracht's canal lindens and the trees of Hieronymusplantsoen, Wilhelminapark, Zonnenburg, Servaasbolwerk, Geertebolwerk, Lucasbolwerk and Lepelenburg, are free and visible from public streets or parks at any time."
     },
     {
       "q": "Why does Utrecht have so few very old street trees?",
@@ -602,6 +602,136 @@
       "location_precision": "confirmed",
       "curation_status": "ai_generated",
       "story": "Zocherpark is not one park but a chain of them: Zonnenburg, Servaasbolwerk, Lepelenburg, Hieronymusplantsoen and Wilhelminapark, roughly three kilometres of bastion parkland laid out where Utrecht's old city walls used to run. Somewhere along that chain grows the thickest London plane of the lot, on the plantsoen just north of the old Sterrenwacht observatory, and a local canal-touring guide has done the measuring nobody else bothered to write down: 629 centimetres round and about 27 metres tall.\n\nThe city's own monumental tree register dates the planting to the 1830s, and the independent route guide narrows that to 1835, putting the tree at around 190 years old, roughly contemporary with the observatory it now shades. It stands close enough to three other registered trees in the same bastion cluster that a visit here becomes a short walk rather than a single stop, though this one carries its own separate register number and is not to be confused with a second plane about 80 metres to the southwest.\n\nFree, public park, open during normal park hours, about 15 minutes' walk from Utrecht Centraal.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "utr_019",
+      "name": "The Old Copper Beech of Servaasbolwerk",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "roughly 140 years",
+      "age_min": 136,
+      "age_max": 146,
+      "girth_cm": 400,
+      "location": {
+        "address": "Servaasbolwerk, near nr 15, Utrecht",
+        "latitude": 52.086651,
+        "longitude": 5.128743,
+        "neighbourhood": "Binnenstad / Servaasbolwerk"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1689875, data/registers/netherlands-lrmb.json",
+        "https://kanokaartutrecht.nl/monumentalebomen.html (Peter Kuiper's canal-route survey of Utrecht's monumental trees, stop 10, fetched directly 2026-08-24; cites LRMB nr 1689875 by name, gives height ~25m and girth 400cm, and records the planting date two ways)"
+      ],
+      "access": "Free, public park (gemeente-owned), open during park hours",
+      "transport": "Utrecht Centraal, roughly 15 minute walk",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Two beeches stand roughly 45 metres apart on the same small stretch of Servaasbolwerk, and it is easy to walk past one thinking you have already seen the other. This one is the older by a wide margin. The Dutch national monumental tree register bands its planting to the 1880s, decades before the neighbouring copper beech went into the ground in 1945 as a liberation memorial. Both wear the same deep red foliage that turns darker through autumn, which is exactly what makes the two easy to confuse on a walk along the old singel parkland.\n\nThe distinction matters because one tree carries a specific historical claim, a wartime memorial planted the year Germany surrendered, and the other does not. This is the other: a beech that was already sixty years old when its younger neighbour was planted, with a trunk that has since thickened to four metres around. Its exact planting year has not been pinned down closer than a decade, so treat any single year you read elsewhere with some suspicion.\n\nIt stands on public gemeente parkland, part of the belt of bastions and gardens that replaced Utrecht's old city defences, open at any hour with nothing to buy a ticket for.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "utr_020",
+      "name": "The Oriental Plane of Van Asch van Wijckskade",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "roughly 140 years",
+      "age_min": 126,
+      "age_max": 156,
+      "girth_cm": 565,
+      "height_m": 30,
+      "location": {
+        "address": "Van Asch van Wijckskade, near nr 28A, Utrecht",
+        "latitude": 52.096825,
+        "longitude": 5.122633,
+        "neighbourhood": "Binnenstad, near Begijnekade"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1678207, data/registers/netherlands-lrmb.json",
+        "https://kanokaartutrecht.nl/monumentalebomen.html (Peter Kuiper's canal-route survey, stop 13, fetched directly 2026-08-24; cites LRMB nr 1678207 by name, describes the deeply cut Oriental Plane leaf distinct from the common plane, and gives height ~30m and girth 565cm)"
+      ],
+      "access": "Free, visible from the public kade/street at all times; a school building stands beside the tree but the tree itself is gemeente-owned and stands on the public street, not on the school's grounds",
+      "transport": "Utrecht Centraal, roughly 20 minute walk, at the north edge of the historic centre near Begijnekade",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "The leaf gives it away before anything else does. Where a London plane's leaf has broad, shallow lobes, an Oriental plane's is cut almost to the base into narrow fingers, and the tree on Van Asch van Wijckskade is the real thing, not the more common hybrid that fills most European streets. Its trunk has grown to five and a half metres around, thick enough that the Dutch monumental tree register simply calls it a large presence on a street that does not have many.\n\nThe register's own notes place it beside a school building, which under normal circumstances would be reason to leave a tree off this list. This one clears that bar anyway: the plane itself grows on the public kade, the paved towpath along the canal, not inside the schoolyard, and it is visible and reachable from the street at any hour without setting foot on the school's own ground.\n\nPlanted sometime between 1870 and 1900, which puts it at roughly a century and a half old without pinning down a firmer date, it grows at the quiet northern edge of Utrecht's historic centre, near Begijnekade, a fifteen minute walk from the bastion parkland where three of its neighbours on this list also stand.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "utr_021",
+      "name": "The Turkey Oaks of Geertebolwerk",
+      "species": "Turkey Oak (Quercus cerris)",
+      "age_estimate": "roughly 155 to 190 years",
+      "age_min": 156,
+      "age_max": 191,
+      "girth_cm": 370,
+      "height_m": 25,
+      "location": {
+        "address": "Geertebolwerk, near Tuinstraat, Utrecht",
+        "latitude": 52.086153,
+        "longitude": 5.118527,
+        "neighbourhood": "Binnenstad / Geertebolwerk"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688562, data/registers/netherlands-lrmb.json (n_trees: 4, one register point for the group)",
+        "https://kanokaartutrecht.nl/monumentalebomen.html (Peter Kuiper's canal-route survey, stop 17, fetched directly 2026-08-24; cites LRMB nr 1688562 directly, describes the group of 4, two of them double-stemmed from about 2m up, the mossy acorn cups that give the species its Dutch name 'moseik', and gives height ~25m and girth 370cm)"
+      ],
+      "access": "Free, public park (gemeente-owned Zocherpark bastion belt), open at all times",
+      "transport": "Utrecht Centraal, roughly 15 minute walk",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Four Turkey oaks grow together on the old Geertebolwerk bastion, close enough beside the water that the Dutch monumental tree register counts them as one entry rather than four. Two went into the ground around 1835, when Utrecht's medieval defences were being reshaped into public parkland, and two followed around 1870. Two of the four have grown double stemmed from about two metres up, forking into pairs of trunks that make the group read as more than four trees from a distance.\n\nQuercus cerris carries a Dutch name that is easier to remember than its Latin one: moseik, moss oak, for the shaggy, mossy cups that hold its acorns, unlike the smooth cups of the native oaks nearby. The register gives the group a shared girth of roughly three and seventy metres and a height of about twenty five, figures that describe the stand rather than any single trunk within it.\n\nWith planting dates nearly forty years apart, the group's age spans roughly a century and a half to nearly two centuries, and no single figure captures it honestly. They stand in the open, on public gemeente parkland, a fifteen minute walk from Utrecht Centraal.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the mossy acorns drop and the foliage turns"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "utr_022",
+      "name": "The Beech of Lucasbolwerk",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "roughly 165 years",
+      "age_min": 156,
+      "age_max": 176,
+      "girth_cm": 430,
+      "height_m": 19,
+      "location": {
+        "address": "Lucasbolwerk, near nr 20, Utrecht",
+        "latitude": 52.094376,
+        "longitude": 5.126358,
+        "neighbourhood": "Binnenstad / Lucasbolwerk"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688569, data/registers/netherlands-lrmb.json",
+        "https://kanokaartutrecht.nl/monumentalebomen.html (Peter Kuiper's canal-route survey, stop 12, fetched directly 2026-08-24; cites LRMB nr 1688569 directly, gives a 2005 survey height of 19m and girth of 430cm, and reports a September 2025 first-hand observation of fungal infection)"
+      ],
+      "access": "Free, public park (gemeente-owned), open at all times",
+      "transport": "Utrecht Centraal, roughly 14 minute walk (same area as the already-published utr_009 Plane of Lucasbolwerk)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This copper beech carries a health warning rather than just an age. A canal-route survey of Utrecht's monumental trees, last updated in September 2025, reports the tree infected with reuzenzwam, giant polypore, a fungus that rots roots and trunk bases from the inside and has already killed a different Utrecht beech on record a short walk away at the Maliebaan roundabout. As of that September visit the tree did not yet appear to be suffering seriously, in the surveyor's own words, but the infection is real and worth watching rather than ignoring.\n\nThe Dutch monumental tree register places its planting between 1850 and 1860; the municipality's own separate record says 1870. Both figures are published and neither has been reconciled, so this page gives the wider range, somewhere between 150 and 176 years old. A 2005 survey measured it at four metres thirty around and nineteen metres tall, numbers now two decades old and likely conservative for a tree that has kept growing since.\n\nIt stands in the open on Lucasbolwerk, the same bastion park as the published Plane of Lucasbolwerk a short walk away. If you visit and the crown looks thin or the bark shows fresh damage near the base, that is worth telling us.",
       "photo": {
         "url": null,
         "license": null,
