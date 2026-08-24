@@ -1,5 +1,11 @@
 # LOG
 
+## 2026-08-24 - Night run 2026-08-24 04:32 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
 ## 2026-08-24 - Night run 2026-08-24 02:52 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 31.5 minutes of its 120 minute window, 174 turns, 32 commands refused by the allowlist, ended clean (success). 10 tree(s) reached data/cities across 3 city file(s), and the run still wrote no log entry of its own. Claims left behind: caserta, napoli, bucaco, which block the top of the queue until they expire.
