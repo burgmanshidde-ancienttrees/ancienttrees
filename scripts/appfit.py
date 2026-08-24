@@ -370,6 +370,37 @@ def run_test(device, scratch):
     return found[-1].read_text()
 
 
+SELF_PADDING = {
+    # Components that put their OWN horizontal inset on. Giving one of these a
+    # second .padding(.horizontal) stacks it, and the thing sits further in than
+    # everything below it. Found 2026-08-24, when Hidde saw "By species" and
+    # "the oldest tree we map" sitting at 32 while their cards sat at 16, and
+    # asked the right question: "hoe voorkomen we dit soort slordigheden."
+    #
+    # A SOURCE check and not a pixel one on purpose. appfit measures what a
+    # screen looks like and can only report a drift it happens to see on a
+    # screen somebody photographed; this catches the mistake wherever it is
+    # written, including on a screen no launch argument opens yet.
+    "ShelfHeader",
+}
+
+
+def check_double_padding():
+    """Any self-padding component handed a second horizontal inset."""
+    root = pathlib.Path(__file__).resolve().parent.parent / "ios"
+    out = []
+    pat = re.compile(
+        r"\b(" + "|".join(SELF_PADDING) + r")\((?:[^()]|\([^()]*\))*\)"
+        r"[^\n]*(?:\n[^\n]*?)??\.padding\(\.horizontal")
+    for f in sorted(root.rglob("*.swift")):
+        src = f.read_text(encoding="utf-8")
+        for m in pat.finditer(src):
+            line = src[:m.start()].count("\n") + 1
+            out.append("%s:%d: %s already pads itself; this adds a second inset"
+                       % (f.relative_to(root.parent), line, m.group(1)))
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--device", default="iPhone SE (sweep)",
@@ -386,6 +417,14 @@ def main():
     else:
         dump = run_test(args.device, scratch)
         pathlib.Path(scratch, "appfit-dump.txt").write_text(dump)
+
+    # The source check runs first and needs no simulator: it catches the
+    # mistake where it is written rather than where it happens to be seen.
+    source_problems = check_double_padding()
+    for p in source_problems:
+        print("SOURCE  " + p)
+    if source_problems:
+        print()
 
     screens = parse(dump)
     if not screens:
@@ -415,7 +454,7 @@ def main():
         print(f"\n{len(total)} findings on {len(screens)} screens"
               f" ({args.device if not args.dump else 'from dump'})")
 
-    sys.exit(1 if total else 0)
+    sys.exit(1 if (total or source_problems) else 0)
 
 
 if __name__ == "__main__":
