@@ -113,7 +113,7 @@ struct CollectView: View {
                 HStack(spacing: 10) {
                     Image(systemName: "camera")
                         .font(.footnote).foregroundStyle(Brand.moss)
-                    Text("You can add any tree by photographing it, whether we map it or not.")
+                    Text("Every tree you photograph joins your collection.")
                         .font(.footnote).foregroundStyle(Brand.inkSoft)
                         .fixedSize(horizontal: false, vertical: true)
                 }
@@ -138,6 +138,14 @@ struct CollectView: View {
                     }
                     .pickerStyle(.segmented)
                     .accessibilityIdentifier("collect-lane")
+                    // Everything the picker switches is rebuilt rather than
+                    // reshuffled. Switching lanes used to leave the previous
+                    // lane's NavigationLinks in the stack's hit-test geometry,
+                    // so a tap on the picker opened whichever card had been
+                    // under it (Hidde, 2026-08-24: "als ik op collected klik en
+                    // weer op want to see dan opent die de boom eronder"),
+                    // which is also why the picker felt like it could not be
+                    // clicked back.
 
                     if lane == .seen, !sightings.yoursOnly.isEmpty {
                         // Yours first, because they are the ones nobody else
@@ -162,6 +170,7 @@ struct CollectView: View {
                             ForEach(list) { card($0) }
                         }
                     }
+                    .id(lane)
                 }
                 Color.clear.frame(height: 80)
             }
@@ -183,7 +192,10 @@ struct CollectView: View {
             HStack(spacing: 0) {
                 tile("\(collectedCount)", "Trees")
                 Divider().frame(height: 42)
-                tile("\(cities)", cities == 1 ? "Place" : "Places")
+                // It counts distinct cities, so it says cities (Hidde, 2026-08-24:
+                // "je bedoelt me place city?"). "Place" was vaguer than the
+                // truth, and vaguer reads as evasive rather than as roomy.
+                tile("\(cities)", cities == 1 ? "City" : "Cities")
                 Divider().frame(height: 42)
                 tile("\(collectedSpecies.count)", "Species")
                 Divider().frame(height: 42)

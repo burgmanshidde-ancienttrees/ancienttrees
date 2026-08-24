@@ -183,9 +183,25 @@ enum SVG {
 struct SpeciesShape: Shape {
     let species: String
 
+    /// The parsed path per species, kept.
+    ///
+    /// Moving off GeometryReader stopped one flicker and not the other, because
+    /// the second cause was underneath: every draw re-parsed an SVG path string
+    /// character by character, nineteen of them in a grid, on every frame that
+    /// touched the view. Parsing is the expensive half and the drawing is
+    /// cheap. A path never changes for a species, so it is parsed once.
+    @MainActor private static var cache: [String: Path] = [:]
+
+    private static func parsed(_ species: String) -> Path {
+        if let hit = MainActor.assumeIsolated({ cache[species] }) { return hit }
+        let p = SVG.path(SpeciesIcons.fragment(for: species))
+        MainActor.assumeIsolated { cache[species] = p }
+        return p
+    }
+
     func path(in rect: CGRect) -> Path {
         let s = min(rect.width, rect.height) / 40
-        let p = SVG.path(SpeciesIcons.fragment(for: species))
+        let p = Self.parsed(species)
             .applying(CGAffineTransform(scaleX: s, y: s))
         // Centred in whatever it was given, the way the reader used to.
         let b = p.boundingRect
