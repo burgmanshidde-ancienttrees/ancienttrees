@@ -189,6 +189,14 @@ struct TreeMap: UIViewRepresentable {
         // MARK: style
 
         func mapView(_ map: MLNMapView, didFinishLoading style: MLNStyle) {
+            // MapLibre calls its delegate on the main thread, but the protocol
+            // is an Objective-C one and therefore nonisolated, so the compiler
+            // cannot know that. assumeIsolated states it once rather than
+            // hopping through a Task, which would let a frame render before the
+            // layers exist. Strict concurrency only fails in the CI job; the
+            // local Debug build waves this through, which is the whole reason
+            // that job exists.
+            MainActor.assumeIsolated {
             MapLayers.mapRef = map
             MapLayers.install(on: style, clustered: parent.clusters)
             styleReady = true
@@ -198,6 +206,7 @@ struct TreeMap: UIViewRepresentable {
                      routeIsReal: p.routeIsReal, clusters: p.clusters, on: map)
             }
             startBreathing(on: style)
+            }
         }
 
         /// A tree having its moment right now is gold and it breathes (Hidde,
@@ -246,6 +255,7 @@ struct TreeMap: UIViewRepresentable {
             }
             let wantTrees = Set(trees.map(\.id))
             let wantMine = Set(mine.map { $0.id.uuidString })
+            MainActor.assumeIsolated {
             if wantTrees != drawnTreeIDs {
                 drawnTreeIDs = wantTrees
                 MapLayers.setTrees(trees, on: style, clustered: clusters)
@@ -257,6 +267,7 @@ struct TreeMap: UIViewRepresentable {
             if route.count != drawnRoute {
                 drawnRoute = route.count
                 MapLayers.setRoute(route, real: routeIsReal, on: style)
+            }
             }
         }
 
@@ -302,7 +313,9 @@ struct TreeMap: UIViewRepresentable {
             // Our own clustering regroups on a change of zoom level and does
             // nothing on a pan, which is what makes a pan free.
             if let style = map.style {
-                MapLayers.cluster(on: style, zoom: map.zoomLevel, clustered: parent.clusters)
+                MainActor.assumeIsolated {
+                    MapLayers.cluster(on: style, zoom: map.zoomLevel, clustered: parent.clusters)
+                }
             }
             // While a tree is selected the camera is being driven by the pager,
             // so reporting the region back would rebuild the list under the
