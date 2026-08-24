@@ -229,6 +229,25 @@ struct CollectView: View {
     /// single bar on it rather than hiding it, and every user of this app on its
     /// first day has nothing: the shape of what you are about to fill in does
     /// more than any sentence saying you have not started.
+    /// One mark with its name under it. Collected is moss and named in full
+    /// ink; the rest are dimmed, which reads as "not yet" rather than as
+    /// "missing".
+    private func stamp(_ name: String, got: Bool) -> some View {
+        VStack(spacing: 5) {
+            SpeciesMark(species: name == "Anything else" ? "" : name,
+                        color: got ? Brand.moss : Brand.inkSoft.opacity(0.28))
+                .frame(height: 32)
+            Text(name)
+                .font(.caption2)
+                .foregroundStyle(got ? Brand.ink : Brand.inkSoft)
+                .multilineTextAlignment(.center)
+                .lineLimit(2)
+                .frame(maxWidth: .infinity)
+        }
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel(got ? "\(name), collected" : "\(name), not yet")
+    }
+
     private var stampCard: some View {
         VStack(alignment: .leading, spacing: 14) {
             HStack(alignment: .firstTextBaseline) {
@@ -239,25 +258,21 @@ struct CollectView: View {
                     .font(.subheadline.weight(.semibold))
                     .foregroundStyle(Brand.inkSoft).monospacedDigit()
             }
-            LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 10), count: 6),
-                      spacing: 14) {
-                ForEach(stampSpecies, id: \.self) { s in
-                    let got = collectedSpecies.contains(s)
-                    SpeciesMark(species: s, color: got ? Brand.moss : Brand.inkSoft.opacity(0.28))
-                        .frame(height: 34)
-                        .accessibilityLabel(got ? "\(s), collected" : "\(s), not yet")
+            // NAMES under the marks, and three columns rather than six.
+            //
+            // Sixteen drawings cover forty species here, so five of the
+            // eighteen most-mapped ones share the generic broadleaf: Horse
+            // Chestnut, both beeches, Hackberry and Common Lime are all a dome
+            // on a trunk, and no silhouette separates them. Oak, plane, fig and
+            // cedar each cover two more. A grid of unlabelled marks therefore
+            // could not be read whatever it was drawn like, which is the real
+            // fault rather than the drawings.
+            LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 10), count: 3),
+                      spacing: 16) {
+                ForEach(stampSpecies, id: \.self) { sp in
+                    stamp(sp, got: collectedSpecies.contains(sp))
                 }
-                // The nineteenth mark: everything else we map. Without it the
-                // grid quietly dropped every rarer species you had collected,
-                // and the card needed a sentence at the bottom explaining that
-                // it was doing so (Hidde, 2026-08-24: "haal die zin weg en
-                // zorg gewoon dat er ook een rest icoon is zodat alles eronder
-                // valt"). A drawing that counts everything needs no footnote.
-                SpeciesMark(species: "", color: restCollected ? Brand.moss : Brand.inkSoft.opacity(0.28))
-                    .frame(height: 34)
-                    .accessibilityLabel(restCollected
-                                        ? "Other species, collected"
-                                        : "Other species, not yet")
+                stamp("Anything else", got: restCollected)
             }
             if collectedSpecies.isEmpty {
                 Text("Collect a tree and its species fills in here.")
