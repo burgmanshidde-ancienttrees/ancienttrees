@@ -48,7 +48,26 @@ struct WalkMode: View {
         if let shape = walk.shape, shape.count > 1 {
             return shape.compactMap { $0.count == 2 ? CLLocationCoordinate2D(latitude: $0[1], longitude: $0[0]) : nil }
         }
-        return trees.map { .init(latitude: $0.lat, longitude: $0.lng) }
+        let stops = trees.map { CLLocationCoordinate2D(latitude: $0.lat, longitude: $0.lng) }
+        // A walk of ONE has no line between stops, so the useful line is from
+        // you to it. Without this you saw the tree and nothing about getting
+        // there, which is most of what somebody who tapped Take me there
+        // wanted. Drawn dashed like every unrouted line here, because it is the
+        // direction rather than the way.
+        if stops.count == 1 { return [.init(latitude: origin.lat, longitude: origin.lng), stops[0]] }
+        return stops
+    }
+
+    /// What the end of the walk says, in a sentence that holds together for
+    /// one tree as well as for nine.
+    private var finishedLine: String {
+        let n = trees.count
+        let what = n == 1 ? "One tree" : "\(n) trees"
+        let how = walk.duration.trimmingCharacters(in: .whitespaces).lowercased()
+        let where_ = walk.city.isEmpty ? "" : " of \(walk.city)"
+        let middle = how.isEmpty ? "" : ", \(how)"
+        let tail = n == 1 ? "It is in your collection." : "They are all in your collection."
+        return "\(what)\(middle)\(where_). \(tail)"
     }
 
     /// Metres to the tree you are heading for, from wherever the phone thinks
@@ -179,9 +198,9 @@ struct WalkMode: View {
             if withinReach(t) {
                 Button { tick(t) } label: { loud("I am standing before it", "checkmark") }
                     .accessibilityIdentifier("walk-tick")
-                Button { directions(t) } label: { quiet("Take me there", "arrow.turn.up.right") }
+                Button { directions(t) } label: { quiet("Open in Maps", "arrow.turn.up.right") }
             } else {
-                Button { directions(t) } label: { loud("Take me there", "arrow.turn.up.right") }
+                Button { directions(t) } label: { loud("Open in Maps", "arrow.turn.up.right") }
                 Button { tick(t) } label: { quiet("I am standing before it", "checkmark") }
                     .accessibilityIdentifier("walk-tick")
             }
@@ -194,7 +213,11 @@ struct WalkMode: View {
         VStack(alignment: .leading, spacing: 10) {
             Text("You walked the whole thing")
                 .font(.brand(20, .heavy)).foregroundStyle(Brand.ink)
-            Text("\(trees.count) trees, \(walk.duration.lowercased()) of \(walk.city). They are all in your collection.")
+            // Plural and duration both have to survive a walk of ONE, which
+            // is what a single tree becomes now that Take me there opens this
+            // view instead of somebody else's app. "1 trees, of Amsterdam"
+            // with a hole where the duration should be is what it said before.
+            Text(finishedLine)
                 .font(.footnote).foregroundStyle(Brand.inkSoft)
                 .fixedSize(horizontal: false, vertical: true)
             Button { dismiss() } label: { loud("Done", "checkmark") }

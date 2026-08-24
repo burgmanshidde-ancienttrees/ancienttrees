@@ -179,7 +179,7 @@ struct ContentView: View {
         switch route {
         case .tree(let id):
             if let t = cat.tree(id) {
-                TreeDetail(tree: t, catalogue: cat)
+                TreeDetail(tree: t, catalogue: cat, origin: origin)
             } else {
                 ContentUnavailableView("That tree is no longer on the map",
                                        systemImage: "tree",
@@ -201,7 +201,7 @@ struct ContentView: View {
             IndexView(kind: kind, catalogue: cat, origin: origin)
         case .mine(let id):
             if let s = sightings.all.first(where: { $0.id == id }) {
-                TreeDetail(tree: sightings.asTree(s), mine: s, catalogue: cat)
+                TreeDetail(tree: sightings.asTree(s), mine: s, catalogue: cat, origin: origin)
             } else {
                 ContentUnavailableView("That tree is gone", systemImage: "leaf")
             }
@@ -242,7 +242,7 @@ struct ContentView: View {
                     // plus) and `checkmark.circle` for the ones ticked off.
                     stack(0, cat) {
                         if let id = debugTree, let t = cat.tree(id) {
-                            TreeDetail(tree: t, catalogue: cat)
+                            TreeDetail(tree: t, catalogue: cat, origin: origin)
                         } else {
                             MapTab(catalogue: cat, origin: origin,
                                    located: location.coordinate != nil || debugOrigin != nil,

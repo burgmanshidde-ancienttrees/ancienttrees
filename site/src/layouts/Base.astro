@@ -119,7 +119,15 @@ const year = new Date().getFullYear();
           </Fragment>
         )}
         <a href="/contribute" class="nav-aside"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>Suggest a tree</a>
-        <a href="/app" class="nav-cta only-mobile" data-app-modal data-ev="app-cta">Get early access</a>
+        <!-- "Get the app", not "Get early access" (Hidde, 2026-08-24: "why
+             would you do that - change it back"). It became early access on
+             08-23 because five of these pointed at a page saying Coming soon,
+             which is the one promise this label cannot keep. That fault was in
+             the DESTINATION and the destination has moved: these open the
+             waitlist overlay, which says in its own words that we write to you
+             the day it opens. The label can be plain again because the thing
+             behind it is honest. -->
+        <a href="/app" class="nav-cta only-mobile" data-app-modal data-ev="app-cta">Get the app</a>
       </div>
     </details>
     {/* What is YOURS hangs off the account, not off Explore (Hidde,
@@ -137,7 +145,7 @@ const year = new Date().getFullYear();
         </div>
       </details>
     )}
-    <a href="/app" class="bar-cta only-desktop" data-app-modal data-ev="app-cta">Get early access</a>
+    <a href="/app" class="bar-cta only-desktop" data-app-modal data-ev="app-cta">Get the app</a>
   </nav>
 </header>
 <slot />

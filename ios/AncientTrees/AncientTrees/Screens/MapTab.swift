@@ -493,7 +493,11 @@ struct MapTab: View {
                     shownWalk = nil
                 }
             } label: {
-                FilterChipLabel(label: shownWalk == nil ? "See walking routes" : "Hide the walk",
+                // The pair has to be a pair (Hidde, 2026-08-24). "See walking
+                // routes" turning into "Hide the walk" reads as a different
+                // control: one names the thing in the plural, the other names
+                // something singular you never asked to see.
+                FilterChipLabel(label: shownWalk == nil ? "See walking routes" : "Hide walking routes",
                                 icon: "figure.walk", on: shownWalk != nil)
             }
             .buttonStyle(.plain)
