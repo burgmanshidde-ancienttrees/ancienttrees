@@ -76,17 +76,18 @@ struct TabBar: View {
                                     .font(.system(size: 20, weight: .semibold))
                                     .foregroundStyle(Brand.ground)
                             } else {
-                                if i == selected {
-                                    RoundedRectangle(cornerRadius: 16, style: .continuous)
-                                        .fill(Brand.moss)
-                                        .frame(width: 56, height: 32)
-                                }
+                                // The selected item is said by a FILLED symbol
+                                // and a bolder, darker word, not by a pill
+                                // behind it (Hidde, 2026-08-24). That reverses
+                                // the pill copied off his AllTrails frame this
+                                // morning, and it is worth naming as a flip
+                                // rather than a drift: this is what iOS does
+                                // in its own bars, so it is the plainer of the
+                                // two conventions rather than a preference.
                                 Image(systemName: item.symbol)
-                                    .font(.system(size: 20, weight: .regular))
-                                    // Dark on the bright pill, the way the
-                                    // reference inverts its selected symbol.
-                                    .foregroundStyle(i == selected ? Brand.ground : Brand.ink)
-                                    .environment(\.symbolVariants, .none)
+                                    .font(.system(size: 22, weight: .regular))
+                                    .foregroundStyle(i == selected ? Brand.ink : Brand.inkSoft)
+                                    .environment(\.symbolVariants, i == selected ? .fill : .none)
                             }
                         }
                         // The ACTION needs 44 for its disc; a labelled item
@@ -101,7 +102,8 @@ struct TabBar: View {
                         .frame(height: item.action ? 44 : 26)
                         if !item.title.isEmpty {
                             Text(item.title)
-                                .font(.system(size: 11))
+                                .font(.system(size: 11,
+                                              weight: i == selected ? .bold : .regular))
                                 .foregroundStyle(i == selected ? Brand.ink : Brand.inkSoft)
                         }
                     }
