@@ -258,8 +258,19 @@ struct ContentView: View {
                     // matches nothing of ours.
                     Color.clear
                         .tag(2)
-                        .tabItem { Label("Collect", systemImage: "camera")
-                            .environment(\.symbolVariants, .none) }
+                        // NO LABEL, and filled, because this slot is an ACTION
+                        // and the other three are places. Hidde, 2026-08-24,
+                        // arguing against putting the camera in a floating
+                        // button over the map: "je krijgt zoals instagram 10%
+                        // makers en 90% lezers", so the 90 must not pay for the
+                        // 10 with a control sitting on top of the map all day.
+                        // He is right, and the fix is not a fourth destination
+                        // either: Instagram, Strava and TikTok all put making
+                        // in the bar and draw it as a button. Ours is a filled
+                        // circle with no word under it, which is the only thing
+                        // in the bar that looks like that.
+                        .tabItem { Image(systemName: "camera.circle.fill")
+                            .environment(\.symbolVariants, .fill) }
 
                     // "Yours" in the bar, "Your trees" on the screen. Not an
                     // inconsistency but the ordinary convention: four tabs
