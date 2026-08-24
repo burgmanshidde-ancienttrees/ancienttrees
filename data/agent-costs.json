@@ -1033,7 +1033,7 @@
     "kind": "scout",
     "tokens": 124675,
     "trees": 0,
-    "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+    "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
    },
    {
     "target": "barcelona",
@@ -3349,6 +3349,15 @@
     "tokens": 101255,
     "trees": 6,
     "note": "shelf write pass: 6 verified trees turned into stories in one context, merged into data/cities/seville.json (37 -> 43). Two species-name mismatches fixed at merge (Norfolk Island Hibiscus patersonii, Date Palm dropped hybrid wording). Fixed age_estimate null->empty-string schema mismatch caught at build.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "species pages (date-palm, common-fig)",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session work, not a dispatched pass; pagegaps.py found 2 species gaps (3 trees each), wrote both intros from the trees' own stories, build+qa clean",
     "wasted": 0,
     "brief_wrong": false
    }
