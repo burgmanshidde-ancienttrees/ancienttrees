@@ -1339,3 +1339,39 @@ main.content-page.has-tree-bar { padding-bottom: 5.4rem; }
 .lang-pick a:hover { color: var(--moss); }
 .lang-cur { color: var(--ink); font-weight: 600; }
 .lang-sep { color: var(--ink-light); }
+
+/* The share control, and the row it sits in.
+   Both references (AllTrails, komoot) put share top-right of a hero photo. Our
+   page types do not all have a hero, so the one placement that is the same
+   everywhere is beside the title, which is what "consistent doorvoeren"
+   (Hidde, 2026-08-24) asks for. 44 by 44 because that is Apple's floor and the
+   thing appfit measures on the app side. */
+.page-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+.page-head h1 { flex: 1; min-width: 0; }
+.share-btn {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  margin-top: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--hairline, #e6e6e6);
+  border-radius: 50%;
+  background: #fff;
+  color: #26301e;
+  cursor: pointer;
+  transition: background .15s ease, border-color .15s ease;
+}
+.share-btn svg { width: 20px; height: 20px; }
+.share-btn:hover { background: #f4f6f1; }
+.share-btn.is-copied {
+  background: #4a6b2a;
+  border-color: #4a6b2a;
+  color: #fff;
+}

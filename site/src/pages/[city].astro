@@ -17,6 +17,8 @@ import { fitTitle } from "../lib/title";
 import { submitLink, ageToken } from "../lib/tree-copy";
 import { mapHead } from "../lib/map";
 import TreeCard from "../components/TreeCard.astro";
+import ShareButton from "../components/ShareButton.astro";
+import { SHARE_JS } from "../lib/share-js";
 import SignInModal from "../components/SignInModal.astro";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 import { SIGNIN_JS } from "../lib/signin-js";
@@ -217,7 +219,10 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
           <Breadcrumbs items={crumbItems} />
           <button type="button" class="sheet-back">← All {trees.length} trees</button>
           <p class="eyebrow">{country}</p>
-          <h1>Ancient Trees in <em>{cityName}</em></h1>
+          <div class="page-head">
+            <h1>Ancient Trees in <em>{cityName}</em></h1>
+            <ShareButton url={canonical} title={`Ancient trees in ${cityName}`} />
+          </div>
           <p class="sheet-count">{trees.length} trees on the map</p>
         </div>
       </div>
@@ -318,5 +323,5 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
     </div>
   </div>
   <SignInModal />
-  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + VISITED_SYNC_JS + cityMapScript(markers, [avgLat, avgLng], null, otherCities, []) + SHEET_JS} />
+  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + VISITED_SYNC_JS + cityMapScript(markers, [avgLat, avgLng], null, otherCities, []) + SHEET_JS + SHARE_JS} />
 </Base>
