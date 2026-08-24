@@ -128,7 +128,12 @@ struct TreeMap: UIViewRepresentable {
 
     /// MapKit thinks in metres across, MapLibre in zoom levels. One conversion,
     /// in one place, so every caller keeps speaking metres.
-    static func zoom(forMeters m: CLLocationDistance, latitude: Double = 52) -> Double {
+    /// `width` is how wide the thing showing the map is, in points. It defaults
+    /// to the narrow phone because that is what a full-screen map is; a 72 point
+    /// thumbnail that borrows the 375 figure opens five times too close, which
+    /// turns an inset meant to show a SETTING into a picture of tarmac.
+    static func zoom(forMeters m: CLLocationDistance, latitude: Double = 52,
+                     width: Double = 375) -> Double {
         // 512, not 256. MapLibre's zoom is defined against 512-point tiles, and
         // using the 256 figure from the web slippy-map convention put every
         // camera one whole level too close: asking for four kilometres gave
@@ -136,7 +141,6 @@ struct TreeMap: UIViewRepresentable {
         // version showed the city and its clusters. It looked like clustering
         // was broken and it was arithmetic.
         let metresPerPointAtZoomZero = (40_075_017.0 / 512.0) * cos(latitude * .pi / 180)
-        let width = 375.0                       // the narrow phone, our reference
         return max(1, min(20, log2(metresPerPointAtZoomZero * width / max(m, 1))))
     }
 

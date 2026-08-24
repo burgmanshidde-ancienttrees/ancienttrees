@@ -208,19 +208,24 @@ struct ContentView: View {
         Group {
             if let cat = store.catalogue {
                 TabView(selection: tabSelection) {
-                    // Four slots of one weight, and the SELECTED one fills.
-                    // Per item rather than globally, because iOS fills EVERY
-                    // tab symbol by default and shows selection with tint
-                    // alone; Komoot fills only the one you are on, and that is
-                    // the convention Hidde asked for (2026-08-22).
-                    // Four slots of one weight, and the SELECTED one fills,
-                    // which is what iOS does by default and what every app in
-                    // Hidde's own references does (2026-08-22, from his Komoot
-                    // screenshots). We had turned the fill off the day before
-                    // for balance; the balance came from choosing symbols of
-                    // one family, not from refusing the convention.
-                    // camera and checkmark.circle are the act and its
-                    // result: photograph a tree, find it in your own.
+                    // ONE line weight across the whole bar, nothing filled,
+                    // and the selection said by the pill and the colour alone.
+                    //
+                    // This reverses the 2026-08-22 decision to fill the
+                    // selected symbol, which came from Hidde's Komoot
+                    // screenshots. On 2026-08-24 he sent an AllTrails frame
+                    // and said the bar was "afschuwelijk lelijk": filling
+                    // `map` turns it into a solid green blob next to a
+                    // hairline magnifying glass, so the bar carries two
+                    // drawing styles at once. AllTrails uses one outline
+                    // weight for all four and lets the pill do the selecting,
+                    // and that is what he asked for, precisely.
+                    //
+                    // Symbols are the lightest member of one family for the
+                    // same reason. `map` for the map, `magnifyingglass` for
+                    // search (AllTrails' own), `camera` for the act of
+                    // collecting (Hidde, 2026-08-23: a camera and never a
+                    // plus) and `checkmark.circle` for the ones ticked off.
                     stack(0, cat) {
                         if let id = debugTree, let t = cat.tree(id) {
                             TreeDetail(tree: t, catalogue: cat)
@@ -233,12 +238,12 @@ struct ContentView: View {
                     }
                         .tag(0)
                         .tabItem { Label("Map", systemImage: "map")
-                            .environment(\.symbolVariants, tab == 0 ? .fill : .none) }
+                            .environment(\.symbolVariants, .none) }
 
                     stack(1, cat) { HomeView(catalogue: cat, origin: origin) }
                         .tag(1)
                         .tabItem { Label("Explore", systemImage: "magnifyingglass")
-                            .environment(\.symbolVariants, tab == 1 ? .fill : .none) }
+                            .environment(\.symbolVariants, .none) }
 
                     // Never actually shown: the selection binding intercepts 2
                     // and presents the collect sheet instead.
@@ -254,7 +259,7 @@ struct ContentView: View {
                     Color.clear
                         .tag(2)
                         .tabItem { Label("Collect", systemImage: "camera")
-                            .environment(\.symbolVariants, tab == 2 ? .fill : .none) }
+                            .environment(\.symbolVariants, .none) }
 
                     // "Yours" in the bar, "Your trees" on the screen. Not an
                     // inconsistency but the ordinary convention: four tabs
@@ -266,7 +271,7 @@ struct ContentView: View {
                     stack(3, cat) { CollectView(catalogue: cat, origin: origin) }
                         .tag(3)
                         .tabItem { Label("Yours", systemImage: "checkmark.circle")
-                            .environment(\.symbolVariants, tab == 3 ? .fill : .none) }
+                            .environment(\.symbolVariants, .none) }
 
                 }
                 // Outline icons that stay outline when selected, colour doing
