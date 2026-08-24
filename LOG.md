@@ -39,6 +39,24 @@ every tap. A tap that waits for a server feels worse than a straight line. Draw
 the straight line while building, and fetch the real walking line ONCE on save.
 It is also the only version that is fair to a community routing instance.
 
+**The paid line on walks, settled 2026-08-24 evening.** Hidde: making your own
+walk is Plus, on the web too. His second half, that opening a SHARED one should
+also need Plus, I argued against and he has not overruled it: a link that meets
+a paywall brings no visitor, earns no backlink worth having, and makes the
+sender look foolish, which stops them sending a second. Every platform that grew
+on sharing kept the viewer free and charged for making. The model that has no
+contradictions in it:
+
+| | web | app |
+|---|---|---|
+| every tree, story, location | free | free |
+| our walks | free to read | Plus to walk |
+| your own walk | **Plus to make** | Plus to make |
+| a shared walk | free to open | free to open |
+
+That also turns every shared route into an advertisement sent by a human, which
+is the only kind that works here.
+
 **Open questions I would answer this way unless he says otherwise:** the order
 you tap is the order of the walk, with one button that re-orders it through our
 own planner; and the first version keeps walks on the phone, because sharing
