@@ -180,3 +180,105 @@ open item with its reasoning attached.
 
 Onboarding was on this list when the audit was written and is now done: the
 location primer is finding 22 above.
+
+---
+
+# 2026-08-25: Hidde's own walk of the app
+
+He installed it, added trees in Baarn on 08-24 and 08-25, and reported roughly
+thirty things in one message. Every item is below with what it actually is,
+because half of them are the same bug wearing different clothes and two of them
+are not mine to build. Nothing here is guessed at: where a cause is named it was
+read in the source, and where it was not, the row says so.
+
+The four questions he asked, answered first because they are cheap.
+
+**Why does the map open on Amsterdam when I am in Baarn.** `ContentView.swift:127`
+falls through to Dam square (52.3731, 4.8922) whenever `location.coordinate` is
+nil. The Info.plist key that was missing on 2026-08-20 is present now, so the
+dialog does appear, but the fallback still fires in two real cases: the
+permission was refused once and never asked again, and the cold start where the
+first GPS fix has not landed by the time the map draws. Neither is fixed by
+asking again. The fix is to remember the last coordinate we had and open there,
+and to stop naming Amsterdam when we do not know.
+
+**Can we estimate a tree's age from a photograph.** No, and not nearly. Age comes
+from girth and a published growth rate for the species, which is how every
+register in the world dates a tree, and a photograph does not carry girth: a
+trunk fills the frame at two metres or at six depending on where somebody stood.
+What a photograph does give is species, health and whether the crown is a
+veteran's, which narrows nothing to a number. So the app should ask for the one
+measurement a person standing at the tree can actually take, which is the girth,
+either with a tape or by counting arm spans, and CLAUDE.md's estimate rule then
+applies unchanged: derived, stated basis, century-wide band.
+
+**Why do the trees I added not show up, and why do I only see one.** Because
+adding a tree writes a row to Supabase's `submissions` table and nothing more.
+The app's map reads `Data/trees.json`, which is built from `data/cities/*.json`
+and only carries published trees, so a submitted tree is invisible until a run
+verifies it and it ships in a build. The one he sees is `brn_005`, published on
+2026-08-12 and already ours. That is the correct behaviour and the wrong
+experience: a person who just added a tree should see their own pin, marked as
+theirs and pending, and the copy he objected to is the same wound.
+
+**What the approval process looks like.** Step 0b of CLAUDE.md: a run reads the
+table, treats every claim as a lead, verifies existence, species and location
+against two independent sources, writes the story and ships it, or records why
+not. It is not a human queue and there is no delay dial to turn: it happens on
+the next run that reaches rung 1, which outranks all new coverage.
+
+## A. Broken, and mine to fix
+
+| # | What he saw | What it is |
+|---|---|---|
+| A1 | Map list: one tap on a walk does nothing, the second opens the tree underneath | Hit testing. Two tappable layers in one row, the walk row's gesture losing to the card below it |
+| A2 | Walking routes appear and disappear while scrolling the list in Den Haag | The walks section is being rebuilt from the visible map region rather than from the city, so scrolling the sheet moves the region and empties it |
+| A3 | Cannot click "Want to see" in Collected | Reported twice, in two sessions. Whatever the cause, it is the second time it has been said |
+| A4 | Cannot click "A tree I found", have to press hard | Hit area, and a card that redraws under the finger |
+| A5 | Photos break out of the rounded corners, top left and top right | Missing clip on the image inside the card. Same bug on the collection screen and on Explore. His note stands: this is one I should catch myself, and it is now a check |
+| A6 | Tapping a walk's "Take me there" gives a straight line | We hand the coordinate to the system without a walking route. The app should draw the real route |
+| A7 | "0 ticked off. You walk the whole thing, 0 trees, they're all in your collection" | Two contradicting strings on one card, and the second is only true when the count is the count. Arithmetic, not copy |
+| A8 | Tapping a species pin does not centre the map on it | The camera moves to the pin's coordinate without accounting for the sheet covering the lower half of the screen |
+| A9 | Signed out and could still heart a tree | Saving is not gated. It must ask for sign-in, and say why |
+| A10 | Un-hearting removes a collected tree instantly | Needs a confirmation, because the target sits under a thumb |
+
+## B. Copy and flow
+
+| # | What he saw | What happens |
+|---|---|---|
+| B1 | "This tree is yours. We have it too." | Replaced with his sentence: "You've added this tree. We're taking a look at it, and once it's verified, we will add it to our map." |
+| B2 | "Report a problem" leads to a screen for adding a tree we are missing | The three submission kinds share one screen and it opens on the wrong one |
+| B3 | Filter reads "See walking routes" and "Hide walking routes" | "Walking routes", one label, both states |
+| B4 | The lock icon next to the label | Removed. The label carries it |
+| B5 | Collected filter chip grows a cross the others do not have | Removed |
+| B6 | Species list from Explore shows everything | Nine, photos first, then "Show more". Collected ones on top, and no "anything else" bucket in the middle |
+| B7 | "Every three photographs join your collection" is a statement, not a door | Becomes a button into the photo flow |
+| B8 | Profile credits map data to OpenStreetMap | See D3. This one I am not simply deleting |
+| B9 | "I'm in front of it" offered without a photograph | It should go into the photo flow instead |
+
+## C. Layout and colour
+
+| # | What he saw | What happens |
+|---|---|---|
+| C1 | Horizontal spacing between walks on city screens is too wide, same on Explore | Tightened, measured against the 375pt width appfit already checks |
+| C2 | The list sheet sits too high since the walks row arrived, cutting the tree off | Lowered so a card reads whole at rest |
+| C3 | The ticket badge shares the Plus colour, so they read as one thing | Tickets go to a blue of their own. Plus keeps the accent |
+
+## D. His to decide, or not mine to build
+
+| # | Item | Why it stops here |
+|---|---|---|
+| D1 | Sponsor this project, 20 euro a year, in-app purchase | Hard rule 2. Payments, prices and anything that takes money are his alone. I can build the button, the copy and the screen it sits on, and I will not wire a purchase |
+| D2 | MVP with Plus turned off: no "See what's included", a coming-soon line under Settings, walks behind an email capture | This is his instruction and I will build it. Flagging it only because it changes what the app promises, and the paywall line he set on 2026-08-18 is the thing being deferred |
+| D3 | Remove the OpenStreetMap credit from Profile | Pushing back. The basemap is OpenFreeMap serving OpenStreetMap data, and the ODbL requires the credit. It can move somewhere quieter, inside a Legal row rather than on the Profile face. It cannot simply go |
+| D4 | Offline maps listed under Plus alongside Season Alerts | Agreed, and it is copy only until offline exists |
+
+## E. The website, and Search Console
+
+| # | Item | State |
+|---|---|---|
+| E1 | The Get the App overlay converts worse than the old landing page. Revert the menu link to the page | His call and a reversible one. The overlay stays reachable from the city map CTA, the nav goes straight to /app |
+| E2 | Seven 404s of the form `/berlin/app`, `/brisbane/app` | No such page and nothing in the source links there. Cheapest honest fix is to make them resolve to /app rather than 404 |
+| E3 | `/auth/v1/token` and `/rest/v1/saves` crawled on our own host | Both are Supabase paths that only appear as absolute URLs in the current source, so this is either an older build or Googlebot resolving a fetch it saw. Worth twenty minutes, not more |
+| E4 | `/feed.xml` and `/antwerp` crawled and not indexed | Normal at our size. Antwerp is a thin page, not a broken one |
+| E5 | `/saved` and `/account` noindex, `www` redirecting, `/contribute?...` canonicalised | All three are working as intended and need nothing |
