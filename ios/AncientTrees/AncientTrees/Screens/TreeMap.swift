@@ -138,6 +138,29 @@ struct TreeMap: UIViewRepresentable {
             ])
         }
 
+        // THE TAP RECOGNISER, WHICH WAS NEVER INSTALLED.
+        //
+        // handleTap() has been written, commented and maintained since the
+        // MapLibre port and nothing ever called it: no UITapGestureRecognizer
+        // was created anywhere in this file. So tapping a pin has done nothing
+        // at all, and neither has tapping a cluster, for as long as the port has
+        // existed. Hidde reported it three times in one evening and I "fixed" it
+        // once by wiring a callback into a function nobody calls (2026-08-25:
+        // "ik heb de laatste build en kan nog steeds niet op een boom klikken of
+        // een getal dat ie ze dan opent").
+        //
+        // MapLibre installs its own single tap recogniser, which deselects
+        // annotations. Ours gets first refusal: if the tap lands on one of our
+        // features we handle it, and if it does not, theirs proceeds. That is
+        // the recipe Mapbox and MapLibre both document, and doing it the other
+        // way round delays every tap by the other recogniser's timeout.
+        let tap = UITapGestureRecognizer(target: context.coordinator,
+                                         action: #selector(Coordinator.handleTap(_:)))
+        for existing in map.gestureRecognizers ?? [] where existing is UITapGestureRecognizer {
+            existing.require(toFail: tap)
+        }
+        map.addGestureRecognizer(tap)
+
         if let focus {
             map.setCenter(focus, zoomLevel: Self.zoom(forMeters: spanMeters), animated: false)
         }
