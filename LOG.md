@@ -73,6 +73,71 @@ clean on the iPhone SE), but another session was mid-build on this checkout and
 its Collect.swift does not compile in CI at the moment, so the sweep is queued
 rather than done.
 
+## 2026-08-25 (session, third pass) - he tested the app on his own phone for two hours and I fixed what he found
+
+Roughly twenty-five reports in one evening, most of them one line long. Everything
+below is committed, verified by `appsweep` and `appfit` (0 findings on 40 screens
+across two phones), the twelve UI tests and `copycheck`.
+
+**THE ONE THAT MATTERS MOST: he asked me to drive the interaction myself rather
+than fix its symptoms one at a time.** "Oprecht er gaat zoveel mis als je scrolt
+klikt en de lijst omhoog en naar beneden klikt... kan je deze interactie zelf een
+paar keer doorlopen testen?" So there is now a test that performs the whole
+sequence twice over, and it caught the thing he had been reporting all evening on
+its first run: **after scrolling the list, the sheet would not come down**. My fix
+an hour earlier had not worked at all. I had made the sheet's header a drag
+handle and measured its depth from the SCREEN's top instead of the sheet's own,
+so a drag on a raised sheet reported y=190 against a threshold of 74 and the
+condition never fired once. A test that drives the real sequence found it in one
+run; four screenshots and two hours of reading had not.
+
+The second lap is where the value is: it failed on its own assumption (coming
+back from a tree leaves the sheet raised, which is correct behaviour) and that is
+the class of bug he keeps hitting, state left behind by the previous gesture.
+
+**Fixed, grouped by what was actually wrong.**
+
+| What he saw | What it was |
+|---|---|
+| The species count jumps and the screen changes every two seconds | Four species sit on exactly 20 trees, which is the count at eighteenth place, so which of them made the stamp grid was decided by an unordered dictionary and an unstable sort. The name breaks the tie now. And the view was being rebuilt constantly because the location provider published every GPS tick; it takes twenty metres to publish now |
+| A walk misses the tree | The router snaps to the network it knows, so a tree in a park with no mapped paths gets a line along the road outside. Measured: 47 of 2027 stops over 40 m, worst 260 m in Boston. 15 routes demoted to the honest dashed line, and a route that misses a stop by more than 60 m is now refused as it arrives |
+| It says I have no navigation app while Google Maps opens | Not our alert. iOS puts one up when asked to open a scheme no app claims, BEFORE the completion handler reports the failure, so a phone without Apple Maps got the system's alert and Google Maps opened behind it. We ask `canOpenURL` about `maps://` now and otherwise use the https link, which Google Maps claims as a universal link |
+| I cannot select Ginkgo in the species filter | His own diagnosis was right: the row's Button gave its hit area to the glyphs, so the gaps between the mark, the name and the count were dead. The search screen's rows always had `.contentShape`; the picker was built later without it |
+| The list still says Baarn when the map is in Sicily | Scrolling the list moves the map, which is his own 08-24 ask, and it fought a deliberate move: flying to a tree re-laid the list, the scroll view settled on a card nobody chose, and that card pulled the map back. The back-channel is cut for two seconds after any deliberate move |
+| Take me there on one tree opens our own walk screen | It hands off to Maps now, his call: "as mvp its fine untill we build the whole location for ourselves". Our walk mode keeps the multi-stop case |
+| I am standing before it, on a tree 17 km away | Only offered within reach now. The tick opens the camera since this morning, so the offer was literally impossible to accept from there |
+| The Map button is behind the tab bar | It sat at 14 points off the bottom, entirely behind it: invisible, and stealing the tap meant for the sheet. At 70 now, and only at full height, which is his own correction within the minute |
+
+**Also his, and done:** the pin picker on the map replaced the "where exactly"
+text box; the sign-in confirmation screen is gone; a tree you added has an
+ellipsis menu with rename, species, age, move the pin and remove (checked: that
+is the convention, Photos, Notes, Files and Apple Maps all do it); the walks chip
+frames the walk it draws; the map no longer rotates on a pinch (we had hidden the
+compass, which left no way back to north); a pin tap opens the tree page; the
+Collection hint line and the "one more species outside this set" line are gone;
+the collect intro is two lines with icons; "Kilometres" is "Kilometers", which is
+not Spanish but British and reads foreign to Dutch and American eyes alike;
+Season alerts and Offline maps say Coming soon; the What Plus will be row is
+gone; and a walk's Begin asks for Plus rather than handing off to Google Maps.
+
+**ONE WALK ALGORITHM, on his ruling.** "Ik denk dat 1 wandelalgoritme wel de
+moeite is toch om de boel simpeler en hetzelfde te houden." The algorithm lived
+twice, in `site/src/lib/walks.ts` and in `scripts/walk_planning.py`, and the
+Python header defended the duplication while warning that the two would drift.
+They drifted through their INPUT rather than their logic: the site plans from
+`walkableTrees()` and Python planned from every tree, so the ordered id lists
+differed, and the ordered id list is the cache key. 330 lines of Python deleted;
+`scripts/walks_feed.py` reads the published feed and both callers moved to it.
+The cost, stated because it is real: a new walk gets its street route on the next
+deploy rather than the same one.
+
+**FOR HIDDE: reinstall before you test again.** Three of tonight's reports were
+things fixed thirty minutes earlier: your phone is running the build you
+installed at the start of the evening. And one thing I could not test: a pin tap
+opening the tree page is a one-line wiring change that I can read and cannot tap,
+because a MapLibre pin is not an element XCUITest can find. Your phone is the
+check on that one.
+
 ## 2026-08-25 (session, second pass) - the rest of his app walk, twenty-one of thirty done
 
 He said "kun je de andere dingen ook doen die ik heb gezegd", and then sent four
