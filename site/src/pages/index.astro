@@ -11,7 +11,7 @@ import Base from "../layouts/Base.astro";
 import { cityIsRenderable, renderableTrees, slugify, type CityEntry } from "../lib/trees";
 import { usablePhoto, imgSrcset, imgSrcsetAttrs, photoWidth, MIN_CARD_PX } from "../lib/images";
 import { speciesCommon, COUNTRY_MIN_CITIES } from "../lib/species";
-import { groupTreesByPark, PARK_MIN_TREES } from "../lib/parks";
+import { groupTreesByPark, parkGroupKey, PARK_MIN_TREES } from "../lib/parks";
 import { ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { byCityListOrderEntry } from "../lib/city-order";
 import { SPECIES_ICONS } from "../lib/species-icons";
@@ -340,11 +340,11 @@ const speciesShelf = wideShelf("Species", "/species", `All ${speciesSlugs.length
 
 // Parks: the ones with a page, biggest first.
 const parkIntros = await getCollection("parks");
-const parkIntroByKey = new Map(parkIntros.map((i) => [`${i.data.city_slug} ${i.data.park}`, i]));
+const parkIntroByKey = new Map(parkIntros.map((i) => [parkGroupKey(i.data.city_slug, i.data.park), i]));
 const parkCards = [...groupTreesByPark(renderable).values()]
   .map((g) => {
     if (g.trees.length < PARK_MIN_TREES) return null;
-    const intro = parkIntroByKey.get(`${g.citySlug} ${g.parkName}`);
+    const intro = parkIntroByKey.get(parkGroupKey(g.citySlug, g.parkName));
     if (!intro) return null;
     const photo = firstPhoto(g.trees);
     if (!photo) return null;
