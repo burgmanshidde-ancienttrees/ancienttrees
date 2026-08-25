@@ -104,7 +104,24 @@ def main():
     entries = [e for e in B.load_cities() if e.get("data")]
     todo, done, rejected, skipped = [], 0, 0, 0
     for entry in entries:
-        trees = entry["data"]["trees"]
+        # THE SAME TREES THE SITE PUTS IN A WALK, or the keys do not match and
+        # the whole cache misses.
+        #
+        # Found 2026-08-25: 67 of 212 walks had no route and re-running this
+        # script said "0 walks to route", because it plans from every tree while
+        # site/src/lib/trees.ts plans from walkableTrees(), which drops the ones
+        # behind a ticket (Hidde, 2026-08-24: "die betaalde bomen niet meenemen
+        # in de wandelingen") and the ones with no story or no coordinates. Two
+        # planners with different inputs produce different ordered id lists, and
+        # the key here IS the ordered id list, so those routes were fetched for
+        # walks that do not exist and missing for the ones that do.
+        trees = [t for t in entry["data"]["trees"]
+                 if t.get("story")
+                 and (t.get("location") or {}).get("latitude") is not None
+                 and (t.get("location") or {}).get("longitude") is not None
+                 and not t.get("paid_entry")]
+        if not trees:
+            continue
         markers = [{"lat": t["location"]["latitude"], "lng": t["location"]["longitude"],
                     "area": (t["location"].get("neighbourhood") or ""),
                     "shot": (t.get("photo") or {}).get("status") == "approved"} for t in trees]
