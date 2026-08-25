@@ -108,7 +108,12 @@ def screens(sub):
         ("collect-intro", ["-collect"], 5),
         ("collect-away",  ["-collect", "-at=52.03,5.91"], 6),
         ("search",        ["-search=lis"], 5),
-        ("walk-begin",    ["-begin=amsterdam|Plantage"], 7),
+        # 12, not 7. This walk has no cached route, so since 2026-08-25 it
+        # asks Valhalla for one before the line can be drawn, and on the SE the
+        # old wait photographed a white screen. A blank screenshot in this
+        # folder is worse than a slow sweep: somebody goes looking for a bug
+        # that is a stopwatch.
+        ("walk-begin",    ["-begin=amsterdam|Plantage"], 12),
         # Tab 3 is the Collection and tab 4 is Profile since 2026-08-24, when
         # the bar went to five slots so the camera could have a middle.
         ("collection",    ["-tab=3"], 4),

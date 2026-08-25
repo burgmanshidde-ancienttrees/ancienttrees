@@ -44,13 +44,23 @@ struct WalkMode: View {
     @Environment(Saved.self) private var saved
     @Environment(Account.self) private var account
     @Environment(Nudge.self) private var nudge
+    // Both only to hand on to the collect sheet: a sheet does not inherit
+    // observables from the view that presents it, which is the trap ContentView's
+    // appObjects() exists for and which trapped the app twice in two days.
+    @Environment(Sightings.self) private var sightings
+    @Environment(Navigator.self) private var navigator
+    @Environment(Units.self) private var units
+    @Environment(Entitlement.self) private var entitlement
     @Environment(\.dismiss) private var dismiss
     @State private var selected: Tree?
-    @State private var justTicked: Tree?
     /// A real pedestrian route, fetched once when this screen opens and the
     /// feed had none. See Kit/Routing.swift for why it is one call and why
     /// failing is fine.
     @State private var liveRoute: [CLLocationCoordinate2D]?
+    /// The camera, presented from here rather than through the root, because
+    /// this screen is a fullScreenCover and a sheet asked for on the root would
+    /// have nowhere to appear.
+    @State private var photographing = false
 
     private var trees: [Tree] { only ?? catalogue.trees(of: walk) }
     private var done: Int { trees.filter { saved.isVisited($0.id) }.count }
@@ -126,6 +136,16 @@ struct WalkMode: View {
         // with a heart inheriting its card's identifier.
         .accessibilityElement(children: .contain)
         .accessibilityIdentifier("walk-mode")
+        .sheet(isPresented: $photographing) {
+            CollectSheet(catalogue: catalogue, origin: origin, mode: .collect)
+                .environment(saved)
+                .environment(account)
+                .environment(nudge)
+                .environment(sightings)
+                .environment(navigator)
+                .environment(units)
+                .environment(entitlement)
+        }
         .task {
             // One call, and only where the feed left a gap. A walk that came
             // with a routed shape needs nothing, and 161 of 212 do.
@@ -179,9 +199,9 @@ struct WalkMode: View {
 
     @ViewBuilder private var bottomBar: some View {
         VStack(spacing: 10) {
-            if let t = justTicked {
-                tickedNote(t)
-            }
+            // The "X is yours" note went with the tap-to-tick on 2026-08-25.
+            // The collect sheet says it now, over the photograph that proves it,
+            // which is a better place for it than a line on a card behind.
             if let t = next {
                 nextCard(t)
             } else if trees.isEmpty {
@@ -195,18 +215,6 @@ struct WalkMode: View {
         }
         .padding(.horizontal, 12)
         .padding(.bottom, 10)
-    }
-
-    private func tickedNote(_ t: Tree) -> some View {
-        HStack(spacing: 8) {
-            Image(systemName: "checkmark.seal.fill").foregroundStyle(Brand.moss)
-            Text("\(t.name) is yours.")
-                .font(.footnote).foregroundStyle(Brand.ink)
-            Spacer(minLength: 0)
-        }
-        .padding(.horizontal, 14).padding(.vertical, 10)
-        .background(Brand.surface, in: .rect(cornerRadius: 14))
-        .transition(.opacity)
     }
 
     private func nextCard(_ t: Tree) -> some View {
@@ -302,8 +310,13 @@ struct WalkMode: View {
             nudge.require(.keepTree(t.name))
             return
         }
-        if !saved.isVisited(t.id) { saved.toggleVisited(t.id) }
-        withAnimation(.snappy) { justTicked = t }
+        // THE PHOTOGRAPH IS THE TICK (Hidde, 2026-08-25: "you shouldn't give
+        // the option for I'm in front of it without taking a photo, it should
+        // go to that flow then"). It used to tick straight off a tap, which is
+        // a claim anybody can make from the sofa, and it left the collection
+        // with nothing in it worth looking at. The collect sheet does the whole
+        // job: photograph, work out which tree it is, tick, keep the picture.
+        photographing = true
     }
 
     private func directions(_ t: Tree) {
