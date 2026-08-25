@@ -62,7 +62,13 @@ struct SpeciesPicker: View {
                 ForEach(rows, id: \.name) { row in
                     let name = row.name
                     Button {
-                        selection = name
+                        // Tapping the one already chosen turns it OFF (Hidde,
+                        // 2026-08-25: "als je er een selecteerd en je klikt er
+                        // nog een keer op dat hij hem deselecteert"). A row
+                        // with a tick beside it that does nothing when you tap
+                        // it is the one row on the screen whose behaviour
+                        // nobody can guess.
+                        selection = (selection == name) ? nil : name
                         dismiss()
                     } label: {
                         HStack(spacing: 12) {

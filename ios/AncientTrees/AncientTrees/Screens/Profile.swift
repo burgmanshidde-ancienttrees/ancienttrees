@@ -37,6 +37,7 @@ struct ProfileView: View {
     @State private var deleteFailed = false
     @State private var plusPitch = false
     @State private var showingAccount = false
+    @State private var showingLegal = false
     /// Debug scaffolding, same family as -tab and -open in ContentView: the
     /// screenshot sweep cannot tap, and this sheet is otherwise only reachable
     /// by tapping a card on this screen.
@@ -71,6 +72,7 @@ struct ProfileView: View {
         .sheet(isPresented: $contributing) { ContributeView() }
         .sheet(isPresented: $plusPitch) { PaywallView(feature: .seasonAlerts) }
         .sheet(isPresented: $showingAccount) { accountSheet }
+        .sheet(isPresented: $showingLegal) { legalSheet }
         .sheet(isPresented: $signingIn) {
             SignInSheet(reason: saved.savedCount > 0 ? .keepCollection(saved.savedCount) : .general,
                         localCount: saved.savedCount)
@@ -295,13 +297,78 @@ struct ProfileView: View {
             VStack(spacing: 0) {
                 link("Privacy", "lock", "https://ancienttrees.app/privacy")
                 Divider().padding(.leading, 48)
-                // The map's credit, named once where it can be read. Not a
-                // courtesy: OpenFreeMap serve these tiles from OpenStreetMap
-                // data and ask for it.
-                link("Map data: OpenStreetMap", "map", "https://www.openstreetmap.org/copyright")
+                // The map credit lives one level down now (Hidde, 2026-08-25:
+                // "zet het in de legal rij zo ver mogelijk weg"). It used to
+                // be a row of its own, the same weight as Privacy, which is
+                // more than a tile credit has ever earned on anybody's profile
+                // screen.
+                //
+                // It cannot simply go: OpenFreeMap serve these tiles from
+                // OpenStreetMap data and the ODbL asks for the credit. What
+                // the licence wants is that somebody looking for it finds it,
+                // which is exactly what Apple Maps' Legal Notices and every
+                // Mapbox app's info button do. A Legal row is the convention
+                // and the furthest away this can honestly sit.
+                Button { showingLegal = true } label: {
+                    HStack(spacing: 12) {
+                        Image(systemName: "doc.text").frame(width: 20)
+                            .foregroundStyle(Brand.moss)
+                        Text("Legal").font(.callout).foregroundStyle(Brand.ink)
+                        Spacer()
+                        Image(systemName: "chevron.right")
+                            .font(.caption).foregroundStyle(Brand.inkSoft.opacity(0.6))
+                    }
+                    .padding(.horizontal, 16).frame(height: 48)
+                    .contentShape(.rect)
+                }
+                .buttonStyle(.plain)
                 Divider().padding(.leading, 48)
             }
             .brandCard()
+        }
+    }
+
+    /// The credits, in the same words the website's own footer uses, because a
+    /// person who checks both should not find two different answers about who
+    /// made the map.
+    private var legalSheet: some View {
+        NavigationStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 18) {
+                    VStack(alignment: .leading, spacing: 6) {
+                        Text("The map").font(.cardTitle).foregroundStyle(Brand.ink)
+                        Text("Map © OpenFreeMap, OpenMapTiles, OpenStreetMap contributors. Walking routes by Valhalla via FOSSGIS, on OpenStreetMap data.")
+                            .font(.footnote).foregroundStyle(Brand.inkSoft)
+                            .fixedSize(horizontal: false, vertical: true)
+                        Link("OpenStreetMap copyright",
+                             destination: URL(string: "https://www.openstreetmap.org/copyright")!)
+                            .font(.footnote.weight(.semibold))
+                            .foregroundStyle(Brand.moss)
+                    }
+                    VStack(alignment: .leading, spacing: 6) {
+                        Text("Photographs").font(.cardTitle).foregroundStyle(Brand.ink)
+                        Text("Every photograph carries its own credit and open licence, named on the tree's own page.")
+                            .font(.footnote).foregroundStyle(Brand.inkSoft)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                    VStack(alignment: .leading, spacing: 6) {
+                        Text("The rest").font(.cardTitle).foregroundStyle(Brand.ink)
+                        Link("Terms", destination: URL(string: "https://ancienttrees.app/terms")!)
+                            .font(.footnote.weight(.semibold)).foregroundStyle(Brand.moss)
+                        Link("Privacy", destination: URL(string: "https://ancienttrees.app/privacy")!)
+                            .font(.footnote.weight(.semibold)).foregroundStyle(Brand.moss)
+                    }
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(20)
+            }
+            .brandGround()
+            .navigationTitle("Legal")
+            .toolbar {
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("Done") { showingLegal = false }
+                }
+            }
         }
     }
 

@@ -24,23 +24,44 @@ struct ContributeView: View {
                             .font(.footnote).foregroundStyle(.secondary)
                     }
                 } else {
-                    Section {
-                        // Three choices as three rows with a tick, the way
-                        // Settings lists a short choice. The menu style drew
-                        // a 34 point button inside a 44 point row, and the
-                        // layout gate measured the button.
-                        Picker("This is", selection: $draft.kind) {
-                            ForEach(Submission.Kind.allCases) { k in
-                                Text(k.label).tag(k)
+                    // OPENED FROM A TREE: no picker and no blank Where. We
+                    // know which tree, the kind is a correction by definition,
+                    // and asking the two questions we can already answer is
+                    // what made this read as the wrong screen (Hidde,
+                    // 2026-08-25). Only the one field we cannot fill stays:
+                    // where the tree really is.
+                    if let t = about {
+                        Section {
+                            VStack(alignment: .leading, spacing: 3) {
+                                Text(t.name).font(.callout.weight(.semibold))
+                                Text(t.city).font(.footnote).foregroundStyle(.secondary)
                             }
+                        } header: {
+                            Text("About this tree")
                         }
-                        .pickerStyle(.inline)
-                        .labelsHidden()
-                    }
-                    Section("Where") {
-                        TextField("Place or city", text: $draft.city)
-                        TextField("Which tree", text: $draft.tree)
-                        TextField("Where exactly, if you can say", text: $draft.locationHint)
+                        Section {
+                            TextField("Where is it really, if you can say",
+                                      text: $draft.locationHint)
+                        }
+                    } else {
+                        Section {
+                            // Three choices as three rows with a tick, the way
+                            // Settings lists a short choice. The menu style drew
+                            // a 34 point button inside a 44 point row, and the
+                            // layout gate measured the button.
+                            Picker("This is", selection: $draft.kind) {
+                                ForEach(Submission.Kind.allCases) { k in
+                                    Text(k.label).tag(k)
+                                }
+                            }
+                            .pickerStyle(.inline)
+                            .labelsHidden()
+                        }
+                        Section("Where") {
+                            TextField("Place or city", text: $draft.city)
+                            TextField("Which tree", text: $draft.tree)
+                            TextField("Where exactly, if you can say", text: $draft.locationHint)
+                        }
                     }
                     Section {
                         TextField("What should we know?", text: $draft.why, axis: .vertical)
@@ -93,6 +114,11 @@ struct ContributeView: View {
                 if let t = about {
                     draft.city = t.city
                     draft.tree = t.name
+                    // A report about a tree we already publish is a correction,
+                    // never an offer of a tree we are missing. It was already
+                    // the default; setting it here means the screen and the row
+                    // it sends cannot drift apart when that default changes.
+                    draft.kind = .correction
                 }
             }
             .sheet(isPresented: $signingIn) {

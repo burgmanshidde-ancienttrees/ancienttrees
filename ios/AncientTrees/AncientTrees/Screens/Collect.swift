@@ -36,6 +36,7 @@ struct CollectView: View {
     @Environment(Navigator.self) private var navigator
 
     @State private var signingIn = false
+    @State private var showAllStamps = false
     @State private var lane: Lane = .want
 
     // TWO lanes, not three. "Collected" and "Added by you" were separate until
@@ -68,8 +69,23 @@ struct CollectView: View {
     private var countries: Int { Set(allVisited.map(\.country)).count }
     private var cities: Int { Set(allVisited.map(\.citySlug)).count }
     private var collectedSpecies: Set<String> { Set(allVisited.map(\.commonName)) }
-    /// Have you collected anything OUTSIDE the eighteen drawn above.
-    private var restCollected: Bool { !collectedSpecies.subtracting(stampSpecies).isEmpty }
+    /// How many species you have that are NOT in the grid.
+    ///
+    /// This used to be a nineteenth stamp called "Anything else", which put a
+    /// bucket in a grid of named species and read as a mistake (Hidde,
+    /// 2026-08-25: "so anything else er niet tussen zetten dat is een beetje
+    /// random"). It is a sentence now, which is what it always was.
+    private var restCount: Int { collectedSpecies.subtracting(stampSpecies).count }
+
+    /// Yours first, then the rest, both in the grid's own order.
+    ///
+    /// The point of the grid is what you have and what is left, and eighteen
+    /// unsorted marks made you hunt for your own (Hidde, same message:
+    /// "degene die je verzameld hebt zet die bovenaan").
+    private var orderedStamps: [String] {
+        let got = stampSpecies.filter { collectedSpecies.contains($0) }
+        return got + stampSpecies.filter { !collectedSpecies.contains($0) }
+    }
 
     /// The set to fill in: the species we map most, so the grid is worth
     /// completing rather than arbitrary.
@@ -110,13 +126,29 @@ struct CollectView: View {
                 // centimetres below it in the middle of the bar, while the
                 // explanation was doing real work, because nothing else on
                 // this screen says HOW a tree gets here.
-                HStack(spacing: 10) {
-                    Image(systemName: "camera")
-                        .font(.footnote).foregroundStyle(Brand.moss)
-                    Text("Every tree you photograph joins your collection.")
-                        .font(.footnote).foregroundStyle(Brand.inkSoft)
-                        .fixedSize(horizontal: false, vertical: true)
+                // And it is a DOOR, not a caption (Hidde, 2026-08-25: "daar
+                // zou ik een knop van maken die je naar de foto optie
+                // brengt"). It explains how a tree gets here and then leaves
+                // you to find the way yourself, which is a sentence doing half
+                // a job. Not a full-width button, because that is what was
+                // removed on 08-24 for repeating the camera in the bar: the
+                // same line, tappable, with the chevron that says so.
+                Button { navigator.collectNearby = true } label: {
+                    HStack(spacing: 10) {
+                        Image(systemName: "camera")
+                            .font(.footnote).foregroundStyle(Brand.moss)
+                        Text("Every tree you photograph joins your collection.")
+                            .font(.footnote).foregroundStyle(Brand.inkSoft)
+                            .fixedSize(horizontal: false, vertical: true)
+                        Spacer(minLength: 4)
+                        Image(systemName: "chevron.right")
+                            .font(.caption2).foregroundStyle(Brand.inkSoft.opacity(0.6))
+                    }
+                    .frame(minHeight: 44)
+                    .contentShape(.rect)
                 }
+                .buttonStyle(.plain)
+                .accessibilityIdentifier("collect-a-tree")
                 .padding(.bottom, 2)
 
                 if allVisited.isEmpty {
@@ -254,7 +286,10 @@ struct CollectView: View {
                 Text("Species collected").font(.brand(19, .heavy, relativeTo: .title3))
                     .foregroundStyle(Brand.ink)
                 Spacer()
-                Text("\(collectedSpecies.count) of \(stampSpecies.count + 1)")
+                // The GRID's score, so it counts the grid. It read
+                // "collected of eighteen plus one" while the numerator counted
+                // every species you own, which could pass the denominator.
+                Text("\(collectedSpecies.intersection(Set(stampSpecies)).count) of \(stampSpecies.count)")
                     .font(.subheadline.weight(.semibold))
                     .foregroundStyle(Brand.inkSoft).monospacedDigit()
             }
@@ -269,10 +304,34 @@ struct CollectView: View {
             // fault rather than the drawings.
             LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 10), count: 3),
                       spacing: 16) {
-                ForEach(stampSpecies, id: \.self) { sp in
+                // NINE, three rows of three, until you ask for the rest
+                // (Hidde, 2026-08-25: "dit is veel te veel"). Eighteen marks
+                // is a page of homework on a screen that is meant to show you
+                // what you have.
+                ForEach(showAllStamps ? orderedStamps : Array(orderedStamps.prefix(9)),
+                        id: \.self) { sp in
                     stamp(sp, got: collectedSpecies.contains(sp))
                 }
-                stamp("Anything else", got: restCollected)
+            }
+            if orderedStamps.count > 9 {
+                Button {
+                    withAnimation(.snappy) { showAllStamps.toggle() }
+                } label: {
+                    Text(showAllStamps ? "Show fewer"
+                                       : "Show all \(orderedStamps.count)")
+                        .font(.footnote.weight(.semibold))
+                        .foregroundStyle(Brand.moss)
+                        .frame(maxWidth: .infinity, minHeight: 44)
+                        .contentShape(.rect)
+                }
+                .buttonStyle(.plain)
+                .accessibilityIdentifier("stamps-more")
+            }
+            if restCount > 0 {
+                Text(restCount == 1
+                     ? "And one more species outside this set."
+                     : "And \(restCount) more species outside this set.")
+                    .font(.caption).foregroundStyle(Brand.inkSoft)
             }
             if collectedSpecies.isEmpty {
                 Text("Collect a tree and its species fills in here.")
@@ -302,16 +361,14 @@ struct CollectView: View {
         }
         .buttonStyle(.plain)
         .accessibilityIdentifier("tree-card")
-        .contextMenu {
-            Button(role: .destructive) { saved.toggleSaved(t.id) } label: {
-                Label("Remove from saved", systemImage: "heart.slash")
-            }
-            if saved.isVisited(t.id) {
-                Button { saved.toggleVisited(t.id) } label: {
-                    Label("I have not seen this one after all", systemImage: "arrow.uturn.backward")
-                }
-            }
-        }
+        // NO context menu. It carried two tidy-up actions and it cost the tap:
+        // a context menu installs a long-press recogniser over the whole card,
+        // which delays every tap on it and makes a light one do nothing at all
+        // (Hidde, 2026-08-25: "ik moet echt hard klikken om op a tree I found
+        // te komen wat is dat probleem"). Both actions are reachable without
+        // it: the heart removes a tree and now asks first, and un-ticking is
+        // what the tree's own page is for. A hidden menu is a poor trade for a
+        // card that does not respond to being touched.
     }
 
     /// One of your own finds: your photograph, what you called it, and where

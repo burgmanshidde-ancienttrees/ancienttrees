@@ -553,6 +553,10 @@ struct CityView: View {
 struct CityWalkCard: View {
     let walk: Walk
     let locked: Bool
+    /// Drawn on the map right now. The map's shelf lets you switch between a
+    /// city's walks, and a shelf you can choose from has to say which one is
+    /// chosen (2026-08-25).
+    var selected: Bool = false
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -567,5 +571,11 @@ struct CityWalkCard: View {
         .padding(14)
         .frame(width: 220, alignment: .leading)
         .brandCard()
+        .overlay {
+            if selected {
+                RoundedRectangle(cornerRadius: 12)
+                    .strokeBorder(Brand.moss, lineWidth: 2)
+            }
+        }
     }
 }
