@@ -1,4 +1,4 @@
-# Ancient Trees — Project Instructions
+# Ancient Trees: project instructions
 
 ## What this project is
 
@@ -28,17 +28,17 @@ When a page, a feature or a line of copy does not serve "have a good afternoon o
 ## Repository structure
 
 ```
-/data/cities/          — one JSON file per city (see schema below)
-/data/collections/     — one JSON file per collection page (hand-curated, Contract D)
-/data/species/         — one JSON file per species page intro (hand-written, gates Contract F)
-/data/countries/       — one JSON file per country page intro (hand-written, gates Contract G)
-/data/city-list.json   — every city and its status (the prioritised ORDER lives in CITY_QUEUE.md)
-/site/                 — static site generator (Astro or similar)
-/scripts/              — automation scripts
-/CURATION.md           — log of what could not be verified, and notes worth keeping. Not a to-do list for Hidde.
-/SEO_GEO_BLUEPRINT.md  — page contracts (titles, schema, internal links, content minima). No page ships without conforming to it.
-/TONE_OF_VOICE.md      — the voice for all stories and page copy. Paris is the calibration standard.
-/LOG.md                — what each autonomous run did. Hidde's catch-up file.
+/data/cities/          - one JSON file per city (see schema below)
+/data/collections/     - one JSON file per collection page (hand-curated, Contract D)
+/data/species/         - one JSON file per species page intro (hand-written, gates Contract F)
+/data/countries/       - one JSON file per country page intro (hand-written, gates Contract G)
+/data/city-list.json   - every city and its status (the prioritised ORDER lives in CITY_QUEUE.md)
+/site/                 - static site generator (Astro or similar)
+/scripts/              - automation scripts
+/CURATION.md           - log of what could not be verified, and notes worth keeping. Not a to-do list for Hidde.
+/SEO_GEO_BLUEPRINT.md  - page contracts (titles, schema, internal links, content minima). No page ships without conforming to it.
+/TONE_OF_VOICE.md      - the voice for all stories and page copy. Paris is the calibration standard.
+/LOG.md                - what each autonomous run did. Hidde's catch-up file.
 ```
 
 ## The tree data schema
@@ -91,7 +91,7 @@ Attempts that hit the usage limit die in seconds and cost nothing. Commit the sm
 
 Each run, do exactly this, in order:
 
-### Step 0 — Read state and pick the work
+### Step 0: Read state and pick the work
 
 Read `/data/city-queue.json` (the source file: every city's rank, score, tree target and measured state) and the published city files, then take the first item on this ladder that applies. Do one thing per run and do it properly; a half-researched city is worse than none.
 
@@ -160,7 +160,7 @@ This is only safe because of one thing, and it is not negotiable: **every tree s
 
 Append what you did to `LOG.md`, newest first, in the format that file describes.
 
-### Step 1 — Research the city's trees (BE THOROUGH)
+### Step 1: Research the city's trees (BE THOROUGH)
 
 **The assembly line, ruled by Hidde 2026-08-06: tokens per tree must come down.** The 2026-08-05 retro measured 32,870 tokens per published tree against 19,000 the week before, and the diagnosis is structural: each pass carried a fixed cost of 150k to 200k regardless of yield, because one agent did five jobs (search, verify, write, hunt photos, format) and read 86KB of corpus before starting. Five changes, all binding:
 
@@ -288,7 +288,7 @@ Four conclusions, and they matter more than any single research technique:
 - **Never re-litigate a decision.** DECISIONS.md exists so a run can look up an answer in seconds instead of reasoning it out again.
 - **The measured burn list (sessie 2026-08-09, uit twee dagen kostendata):** three kinds of pass are no longer dispatched without a specific new angle, because the meter says they buy nothing. (1) Photo hunts on sources flagged `exhausted` in data/photo-queue.json: the Commons/iNaturalist lane is measured DONE for the rollout cities at ~150k tokens per approval; new photos come from readers, partners, national aerial/open archives or a genuinely new source. (2) From-zero web-research cities without an explicit owner ask. (3) Pin passes without a register coordinate, aerial-imagery angle (BRIEF_RESEARCH.md) or equivalent concrete evidence path. The cheap end of the meter, always preferred: register imports (~0.4k/tree), the Wikidata candidates feed (0 tokens, printed in every brief), aerial pin checks (~2-5k), and dendrological-society registers and yearbooks (the dendron.dk playbook).
 
-### Step 2 — Verify each tree
+### Step 2: Verify each tree
 For each candidate tree, cross-reference at least 2 independent sources for:
 - Existence and species
 - Approximate age
@@ -323,7 +323,7 @@ The one field this never applies to is location, for the reason it always is: a 
 
 The list of things that DO stop a tree going live is short, closed, and none of it is a matter of taste: the hard rules (never fabricate, never publish a tree known to be dead, never a photo without a verified open licence, never a withheld or private location under hard rule 10), and a location that cannot be stated honestly. That is the whole list. A run that wants to hold a tree back for any other reason is applying its own taste as if it were a rule, which is the failure mode this file has now recorded four times in one day.
 
-### Step 3 — Write the stories
+### Step 3: Write the stories
 150-250 words per tree (the Paris run of 2026-07-15 sets the standard; anything over 250 words gets shortened). Style rules:
 - Direct, specific, slightly vivid. Scott Galloway meets nature writing.
 - Lead with the most surprising fact.
@@ -335,7 +335,7 @@ The list of things that DO stop a tree going live is short, closed, and none of 
 
 So, while writing: when a sentence asserts that two things are the same thing, or that A is because of B, ask which single source says so. If none does, either drop the join or write the two facts as two facts. The prose is allowed to be less satisfying; a story that reads as a neat explanation is exactly what this error produces, because a coherent narrative is what a writer reaches for when the evidence stops short. And note where the damage lands: the join usually decides the LOCATION, which is the one field a reader cannot forgive us for (see "the one field that carries the product"). The pin half of this is enforced by `check_pin_upgrades()` in scripts/preflight.py, which refuses a pin upgraded to confirmed when one of our own pin passes recorded it as approximate and no source names new evidence. The prose half is a question you have to ask yourself.
 
-Stories and any page copy must satisfy SEO_GEO_BLUEPRINT.md — in particular P2 (answer first, in the first two sentences where the page is a question/city page) and P3 (unique content, no fill-in-the-city-name templating) — and follow TONE_OF_VOICE.md, including its calibration examples and hard bans.
+Stories and any page copy must satisfy SEO_GEO_BLUEPRINT.md, in particular P2 (answer first, in the first two sentences where the page is a question/city page) and P3 (unique content, no fill-in-the-city-name templating), and follow TONE_OF_VOICE.md, including its calibration examples and hard bans.
 
 **Every tree carries a year calendar (Hidde, 2026-08-02: "elke boom een mooi overzicht met bladloos, blad, verkleuring, fruit, bloem, en die moeten gewoon kloppen").** The calendar shows the whole year, bare / in leaf / flowers / fruit / autumn colour, with the current month marked.
 
@@ -364,7 +364,7 @@ Two limits keep this honest. **A tree gets one `best_time`, so pick its stronges
 - Base it on the species and the local climate, and say what actually happens in the label, not just a month. "May, when it flowers" beats "May".
 - Keep it honest: if a peak spans a range, use the real months. Guessing a precise week you cannot support is the same mistake as a fake pin.
 
-### Step 4 — Find photos
+### Step 4: Find photos
 Search Wikimedia Commons and other openly-licensed sources (CC0, CC-BY, CC-BY-SA only). Record the exact license and attribution. If no good photo exists, set photo status to `missing`. NEVER use photos from monumentaltrees.com, Google Maps, or any source without a clear open license.
 
 **Every rendered image goes through `img_srcset()` (the image standard, Hidde 2026-07-31: "kunnen we deze image handling standaard maken").** thumb_url() maps Wikimedia (fixed buckets, capped at 960), Unsplash and iNaturalist to right-sized variants; scripts/qa.py fails the deploy if any img tag ships a full-resolution original, so a new render site cannot skip the helper unnoticed.
@@ -383,12 +383,12 @@ Search Wikimedia Commons and other openly-licensed sources (CC0, CC-BY, CC-BY-SA
 
 A photo does more for goal 1 than any paragraph, because it is what makes someone decide the walk is worth it. Hunt hard, but per the MVP mindset, never hold a city back for one.
 
-### Step 5 — Commit and update state
+### Step 5: Commit and update state
 - Save the city JSON file
 - Update city-list.json (status: pending → needs_curation)
 - Append to CURATION.md: city name, date, number of trees, number flagged, photos missing
 - Commit with message: "Add [city]: 10 trees, X flagged, Y photos missing"
-- Rebuild the site so the new city page goes live. The generated pages (city, tree, question, collection) must conform to the Layer 2 contracts in SEO_GEO_BLUEPRINT.md — titles, meta descriptions, schema, and internal link minima. A page that fails that validation does not deploy.
+- Rebuild the site so the new city page goes live. The generated pages (city, tree, question, collection) must conform to the Layer 2 contracts in SEO_GEO_BLUEPRINT.md: titles, meta descriptions, schema, and internal link minima. A page that fails that validation does not deploy.
 
 ### Improvement mode (when all 100 cities have data)
 Cycle through existing cities oldest-first and: hunt for missing photos, strengthen weak stories, re-verify flagged items, check for dead trees in the news.
@@ -408,7 +408,7 @@ Above the curated cities sits a second, wider layer: **officially designated rem
 - **Honesty over polish:** register coordinates are often area-level; imported dots default to `location_precision: approximate` unless verified. Dots carry the label "from the official register, not yet verified by us", get NO own pages (thin-page risk) and are NOT collectible; the tier/game design is parked in BACKLOG.md until the mid-September checkpoint, and a run may not build any of it.
 - **Pilot: Japan, riding with the wave.** Scouted sources and verdicts live in OPEN_DATA_SURVEY.md ("Japan scouting", 2026-07-30): Tokyo's CC BY CSV with coordinates is the first import candidate, the national Natural Monument register is the backbone (read its /top/policy in full first), Kyushu/Hokuriku prefectures still need scouting. Build order for runs: finish the scouting, then the data file (data/registers/), then the explore-map layer, smallest honest step first.
 
-### Step 0b — Process reader submissions (before picking a new city)
+### Step 0b: Process reader submissions (before picking a new city)
 
 Readers submit trees and whole cities through a public form. Hidde is deliberately not in this loop: submissions come straight to you.
 
