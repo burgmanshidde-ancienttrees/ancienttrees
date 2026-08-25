@@ -28,6 +28,7 @@ struct TreeDetail: View {
     @Environment(Account.self) private var account
     @Environment(Nudge.self) private var nudge
     @State private var reporting = false
+    @State private var placing = false
     @State private var walking = false
     @Environment(Navigator.self) private var navigator
 
@@ -95,12 +96,22 @@ struct TreeDetail: View {
             }
         }
         .sheet(isPresented: $reporting) { ContributeView(about: tree) }
+        .fullScreenCover(isPresented: $placing) {
+            // Full screen, because the job is to find one trunk on a map and a
+            // sheet would give it half a phone to do it in.
+            PlacePin(tree: tree, catalogue: catalogue)
+                .environment(account)
+        }
         .sheet(item: $editing) { editor($0) }
         .task {
             // Debug scaffolding, same family as -tab, -select and -collected:
             // simctl cannot tap, and a screen that only exists after a tap is a
             // screen that ships unlooked at.
             if ProcessInfo.processInfo.arguments.contains("-walkto") { walking = true }
+            // A screen no argument can open is a screen that ships unseen
+            // (CLAUDE.md), so the pin picker gets its argument in the same
+            // commit as the picker.
+            if ProcessInfo.processInfo.arguments.contains("-placepin") { placing = true }
         }
         .fullScreenCover(isPresented: $walking) {
             // The tree itself, not its id: a tree you added is not in the
@@ -369,8 +380,13 @@ struct TreeDetail: View {
             // The ask belongs here rather than three screens away: the person
             // reading this line is the one person who can answer it, and
             // location is the field this project cannot afford to get wrong.
-            Button { reporting = true } label: {
-                Text("Help us place this tree")
+            // THE MAP, not a form (Hidde, 2026-08-25: "help us place this tree
+            // opens a form, but i guess the easiest would be if you open the
+            // map and let someone drop / move a pin"). It used to open the
+            // contribute sheet, which asked the one person who can see the
+            // trunk to describe its position in a sentence.
+            Button { placing = true } label: {
+                Text("Show us where it is")
                     .font(.footnote.weight(.semibold))
                     .foregroundStyle(Brand.moss)
                     .frame(minHeight: 44)
