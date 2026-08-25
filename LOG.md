@@ -68,10 +68,20 @@ reads two different ways on purpose and I did not resolve it: the website prints
 end, which came from your "als de foto referentie subtieler kan". Same licence,
 two wordings. Say which one wins and both surfaces will read it from one place.
 
-**Not verified with eyes yet:** the app's screens. The Swift compiles (built
-clean on the iPhone SE), but another session was mid-build on this checkout and
-its Collect.swift does not compile in CI at the moment, so the sweep is queued
-rather than done.
+**Verified, and one thing left open.** The web half is measured rather than
+assumed: 136 cards across /cities, /species and /parks compared against the face
+the app now reads, 136 the same photograph, none different. The app was swept and
+LOOKED at on the iPhone SE: city cards carry real tree photographs, the tree page
+loads its hero through the feed url, collection cards intact.
+
+Open: the app gate. ios.yml had been red since 6857185c on Collect.swift:104,
+"unable to type-check this expression in reasonable time", which compiles on this
+Mac and times out on the runner: green on the desk that wrote it, red on the
+gate. Broken into named steps with their types (7059885f) and it builds clean
+here, but every gate run since has been CANCELLED rather than finished, because
+another session pushed on top four times while it queued. So the runner has not
+yet confirmed the fix. Whoever reads this next: check ios.yml on the newest head
+before assuming it is still broken.
 
 ## 2026-08-25 (session, third pass) - he tested the app on his own phone for two hours and I fixed what he found
 
