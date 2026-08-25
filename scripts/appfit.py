@@ -96,7 +96,12 @@ SYSTEM_LABELS = {"Sheet Grabber", "Legal"}
 # sized by Apple (a toolbar button is 36 tall, Back starts at 16 whatever the
 # page's inset is), so judging them judges iOS. Added 2026-08-21, when the
 # first read of a green-free workflow found six of its findings were these.
-NOT_OURS = ("Map", "TabBar", "NavigationBar")
+# And the KEYBOARD. The search screen joined the measured list on 2026-08-25 and
+# brought iOS's own keyboard with it, which reported a 37 by 54 dictation button
+# and a shift key starting 4.5 points in. Both are Apple's, on a view we do not
+# lay out and cannot change, and a check that reports the keyboard on every
+# search screen forever is a check people learn to skim.
+NOT_OURS = ("Map", "TabBar", "NavigationBar", "Keyboard", "KeyboardKey")
 
 
 def inside(el, types):

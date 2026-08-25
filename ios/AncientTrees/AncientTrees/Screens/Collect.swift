@@ -99,7 +99,17 @@ struct CollectView: View {
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 28) {
                 HStack(alignment: .firstTextBaseline) {
-                    Text("Your trees")
+                    // "Collection", the same word as the tab. It said "Your
+                    // trees" while the tab said Yours, which was a deliberate
+                    // pair; the tab was renamed on 2026-08-24 and this title
+                    // was not, so the bar and the screen have disagreed since.
+                    // Nobody caught it because appsweep gave this screen and
+                    // the curated collection page the same filename, so the
+                    // page overwrote the tab and the tab was never looked at
+                    // (found 2026-08-25, the first time it was photographed).
+                    // The ruling it follows is MapTab's: collect the deed,
+                    // collected the state, collection the place. One root.
+                    Text("Collection")
                         .font(.screenTitle)
                         .foregroundStyle(Brand.ink)
                     Spacer(minLength: 8)

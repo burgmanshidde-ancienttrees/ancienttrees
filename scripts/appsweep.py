@@ -102,7 +102,7 @@ def screens(sub):
     soon as the catalogue is read, while the map has to fetch tiles over the
     network before there is anything worth photographing.
     """
-    return [
+    plan = [
         ("map",           ["-tab=0"], 7),
         ("explore",       ["-tab=1"], 4),
         ("collect-intro", ["-collect"], 5),
@@ -116,7 +116,15 @@ def screens(sub):
         ("walk-begin",    ["-begin=amsterdam|Plantage"], 12),
         # Tab 3 is the Collection and tab 4 is Profile since 2026-08-24, when
         # the bar went to five slots so the camera could have a middle.
-        ("collection",    ["-tab=3"], 4),
+        #
+        # "collection-tab", not "collection". This entry and the curated
+        # collection PAGE below it were both called "collection" from the day
+        # the tab was renamed, and since the file is named after the screen the
+        # second one silently overwrote the first: the Collection tab, which is
+        # where the cards and the lane picker live, had not been photographed
+        # once. Two screens with one name is the same failure as a screen no
+        # argument can open, and the check below now refuses it.
+        ("collection-tab", ["-tab=3"], 4),
         ("profile",       ["-tab=4"], 5),
         ("tree",          ["-tab=0", f'-open=tree:{sub["tree"]}'], 6),
         ("tree-nophoto",  ["-tab=0", f'-open=tree:{sub["tree_nophoto"]}'], 5),
@@ -129,6 +137,15 @@ def screens(sub):
         ("primer",        ["-tab=0", "-primer"], 5),
         ("contribute",    ["-tab=4", "-contribute"], 5),
     ]
+    names = [p[0] for p in plan]
+    dupes = sorted({n for n in names if names.count(n) > 1})
+    if dupes:
+        # Not a warning. The output file is named after the screen, so a
+        # duplicate name means one of the two screens is never looked at while
+        # the folder still shows a picture with its name on it.
+        raise SystemExit("appsweep: two screens share a name, so one is never "
+                         "photographed: " + ", ".join(dupes))
+    return plan
 
 
 def udid_for(name, devicetype):

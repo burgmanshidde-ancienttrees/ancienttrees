@@ -37,7 +37,13 @@ final class SweepFrames: XCTestCase {
         ("collect-intro", ["-collect"], "spot-sheet"),
         ("collect-away", ["-collect", "-at=52.03,5.91"], "spot-sheet"),
         ("walk-begin",   ["-begin=amsterdam|Plantage"], "walk-mode"),
-        ("yours",        ["-tab=3"], nil),
+        ("search",       ["-search=lis"], nil),
+        // "collection-tab", matching appsweep.py. It said "yours" here and
+        // "collection" there, for the same tab, which is how these two lists
+        // drift apart: CLAUDE.md says they are one list and on 2026-08-25 they
+        // were not, and over there the duplicate name meant this screen was
+        // never photographed at all.
+        ("collection-tab", ["-tab=3"], nil),
         ("profile",      ["-tab=4"], nil),
         ("tree",         ["-tab=0", "-open=tree:ath_004"], nil),
         ("tree-nophoto", ["-tab=0", "-open=tree:vln_010"], nil),
