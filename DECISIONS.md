@@ -2,6 +2,16 @@
 
 One dated entry per decision that shapes the product, newest first: what was decided, by whom, and why. This file exists because the 2026-07-27 assumption audit showed decisions scattered across five documents and chat, which is how observations silently harden into rules. New decisions land here the day they are made; older ones migrate when a document touching them is edited anyway. The standard here is the lightweight ADR (Architecture Decision Record) practice, ours-sized.
 
+- **2026-08-24 - Hidde (session): no affiliate on tickets, for now.** He raised it with the ticket-badge idea and parked it after seeing the arithmetic: "ok laat maar zitten voorlopig."
+
+  The numbers, so nobody recalculates them in three months. Roughly 1,600 visits a month today; 160 of 1,842 trees stand behind a ticket, so about 6 percent of visits could land on one; a well-placed contextual link takes maybe 10 percent of those, and 3 percent of THOSE buy within the cookie window. Attraction affiliate pays 5 to 8 percent, so a 14 euro garden ticket returns under a euro. That is **30 cents a month** today, 3 euro at ten times the traffic, and **30 euro a month at a hundred times** it, which would be a serious content site.
+
+  The sentence that settles it: one subscriber at his own 19.95 a year is worth about as much as a full month of ticket affiliate at a hundred times our current traffic. Affiliate pays on expensive baskets, guided tours and hotels, not on a 14 euro hortus entry.
+
+  What survives and is worth doing anyway: giving those 160 trees the OFFICIAL link of the garden or site. It is the same gathering job, it genuinely helps somebody about to set off, and it costs no programme, no terms and no disclosure duty. It is also the data any later affiliate would need. Zero of the 160 carry a link today.
+
+  Shipped the same day and unaffected: the paid_entry field, the gold ticket mark on the pin, and walks routing around ticketed trees.
+
 - **2026-08-24 - Hidde (session): a routing service may run inside the app, and a reader's tree reaches us whether they offer it or not.** Two rulings the same afternoon, both moving a line the hard rules had held shut.
 
   **Routing.** "Ik vind die afhankelijkheid van die partij geen probleem voor een betere ervaring." So the app may call a routing service while somebody is using it, which hard rule 5 reserves for him because it is a third party inside the product. Scope as agreed: ONE call per walk, at the moment it is saved, never per tap. A tap that waits for a server feels worse than a straight line, and one call per walk is also what is fair to a community routing instance.
