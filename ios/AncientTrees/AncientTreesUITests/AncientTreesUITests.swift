@@ -341,6 +341,36 @@ final class AncientTreesUITests: XCTestCase {
                       "leaving the walk did not return to the app")
     }
 
+    /// A PIN OPENS ITS TREE, asserted by tapping the map.
+    ///
+    /// This is the test that should have existed from the day the map was
+    /// ported: `handleTap` was written and never installed, so tapping a pin or
+    /// a cluster did nothing for weeks and every check we had went green,
+    /// because a gesture that is never recognised leaves no trace in a
+    /// screenshot or in an element tree (2026-08-25).
+    ///
+    /// It taps down the map's centre column rather than at one computed pixel:
+    /// the camera sits above the view's centre by whatever the sheet's inset is,
+    /// and pinning this test to that arithmetic would make it fail the next time
+    /// the sheet's heights change. Somewhere on that column is the tree the map
+    /// was told to centre on.
+    @MainActor
+    func testTappingAPinOpensItsTree() throws {
+        let app = launch(["-map", "-select=ams_002"])
+        let map = app.otherElements["tree-map"]
+        XCTAssertTrue(map.waitForExistence(timeout: 14), "no map")
+        // Let the camera settle on the selected tree before aiming at it.
+        Thread.sleep(forTimeInterval: 3)
+
+        for dy in [0.30, 0.24, 0.36, 0.18, 0.42] {
+            map.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: dy)).tap()
+            if app.buttons["Take me there"].waitForExistence(timeout: 3) {
+                return
+            }
+        }
+        XCTFail("tapping the map where the selected tree's pin is did not open a tree")
+    }
+
     /// THE MAP, DRIVEN, several times over, because he asked for exactly that.
     ///
     /// Hidde, 2026-08-25: "oprecht er gaat zoveel mis als je scrolt klikt en de
