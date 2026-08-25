@@ -65,7 +65,8 @@
         ],
         "label": "September to November: red arils on female trees, the only part that is not poisonous",
         "kind": "fruit"
-      }
+      },
+      "paid_entry": true
     },
     {
       "id": "edi_002",
@@ -236,7 +237,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Planting date and age corroborated across RBGE's own account, ScienceAlert and BBC News. Exact position within the 10 acre garden not specified in any source found, so pin is garden level rather than the specific trees. Photo verified directly on Commons, filed under Category:Ulmus in Edinburgh with 'Holyrood' in the title, taken by Max Coleman (the RBGE botanist credited in the rediscovery story), distinct from a different Wentworth elm photo in the same category taken at RBGE itself.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "paid_entry": true
     },
     {
       "id": "edi_007",

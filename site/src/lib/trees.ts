@@ -68,3 +68,15 @@ export function oldestTree(trees: Tree[], cityData?: { oldest_tree_id?: string |
   }
   return trees.reduce((best, t) => ((t.age_max ?? 0) > (best.age_max ?? 0) ? t : best));
 }
+
+/** Trees a WALK may pass.
+ *
+ * Not the ones behind a ticket (Hidde, 2026-08-24: "die betaalde bomen niet
+ * meenemen in de wandelingen"). A route that asks for two tickets on the way is
+ * not an afternoon out, and the walk is the product rather than the list. They
+ * keep their place on the map and on the city page, marked; they simply do not
+ * get somebody standing at a gate with a card in their hand.
+ */
+export function walkableTrees(city: CityEntry): Tree[] {
+  return renderableTrees(city).filter((t) => !t.paid_entry);
+}

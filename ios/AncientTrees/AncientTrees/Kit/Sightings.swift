@@ -139,6 +139,8 @@ final class Sightings {
              country: "",
              neighbourhoodRaw: nil,
              access: "",
+             // Your own tree never stands behind a ticket: you were there.
+             paidEntryRaw: false,
              transportRaw: nil,
              story: s.note,
              url: "",

@@ -5,7 +5,7 @@
 // the deploy on a page nothing links to, and it fails just as hard on a link
 // to a page that was never built, so the two questions have to be answered by
 // the same function.
-import { renderableTrees, type CityEntry, type Tree } from "./trees";
+import { walkableTrees, type CityEntry, type Tree } from "./trees";
 import { speciesIcon } from "./species-icons";
 import { usablePhoto } from "./images";
 import { planWalks, walkRouteFor, humanDuration, kmLabel, type WalkMarker } from "./walks";
@@ -24,7 +24,7 @@ export interface PageWalk {
 export const WALKS_PAGE_MIN_TREES = 5;
 
 export function pageWalksFor(city: CityEntry): PageWalk[] {
-  const trees = renderableTrees(city).filter(
+  const trees = walkableTrees(city).filter(
     (t) => t.location?.latitude != null && t.location?.longitude != null,
   );
   if (trees.length < 2) return [];

@@ -65,7 +65,8 @@
         ],
         "label": "September to November: the harvest, when the fruit turns from green to black",
         "kind": "fruit"
-      }
+      },
+      "paid_entry": true
     },
     {
       "id": "mlg_002",
@@ -237,7 +238,8 @@
       },
       "curation_status": "flagged",
       "notes": "Age (approximately 200 years), height (24m) and perimeter (3.72m) corroborated across the garden's own official page and an independent tree-history blog (arbolesconhistoria.com), both giving matching figures. No usable photo found on Wikimedia Commons or iNaturalist for this specific specimen despite a genuine search. Location confirmed 2026-07-27: an OpenStreetMap tree node (species-tagged Celtis australis) sits about 8m from the garden's own stated location for this tree, 'al lado de la Casita de los Cipreses' (beside the Cypress Cottage building this tree is named for), an independent geocode of that named building landing within the same few metres.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     },
     {
       "id": "mlg_007",
@@ -269,7 +271,8 @@
       },
       "curation_status": "flagged",
       "notes": "'Tallest in the province' claim comes from the garden's own page; a second source (a Malaga tourism/wellness blog) corroborates the height and age but both ultimately draw on the garden's own figures, so treat as closer to single-sourced for the superlative specifically, softened language used ('according to the garden's own record') per hard rule 8. Photo found 2026-07-28 via iNaturalist (observation 3186160, CC-BY-SA), by the same Daniel Capilla/dcapillae already trusted elsewhere in this file (mlg_001, mlg_003); the observer's own field notes independently describe 'araucarias, the tallest trees in this garden, one exceeding 45m, the tallest in Malaga province', matching this entry's own claim almost verbatim. Viewed directly: several tall Araucaria heterophylla with the garden's distinctive tiered branching rising above the surrounding canopy, city visible behind. Honest caveat: the frame shows the garden's araucaria grove, not one tree isolated and confirmed as the specific record-holding trunk, so approved as a representative shot rather than a single-specimen portrait, the same treatment given to other multi-tree candid shots elsewhere on this site. Location tightened 2026-07-27: the garden's own page places this tree 'al lado de la cascada' (beside the waterfall); pinned to the midpoint of La Concepcion's two on-site waterfalls since no tree-tagged node or source distinguishes which one, so this stays approximate rather than confirmed, but is now 370m+ from the other two La Concepcion entries it previously shared a coordinate with.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "paid_entry": true
     },
     {
       "id": "mlg_008",

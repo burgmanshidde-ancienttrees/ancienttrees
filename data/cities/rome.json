@@ -129,7 +129,8 @@
       },
       "curation_status": "flagged",
       "notes": "Two trees described as one entry, matching how the garden itself presents them (a pair flanking the staircase). Age range is a general foresters' estimate; no source gives an exact planting year for either specimen. Photo viewed directly: shows the monumental staircase at the Fontana degli Undici Zampilli flanked by two large trees with gnarled branches and mottled bark, an unambiguous match to the story's own description.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     },
     {
       "id": "rom_004",
@@ -158,7 +159,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     },
     {
       "id": "rom_005",

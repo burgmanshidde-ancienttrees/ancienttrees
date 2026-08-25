@@ -67,7 +67,8 @@
         "kind": "fruit"
       },
       "height_m": 16.0,
-      "verify_notes": "Height 16.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 16.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "paid_entry": true
     },
     {
       "id": "cas_002",
@@ -107,7 +108,8 @@
       },
       "location_precision": "approximate",
       "height_m": 16.0,
-      "verify_notes": "Height 16.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 16.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "paid_entry": true
     },
     {
       "id": "cas_003",
@@ -149,7 +151,8 @@
         "kind": "fruit"
       },
       "height_m": 20.0,
-      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "paid_entry": true
     },
     {
       "id": "cas_004",
@@ -181,7 +184,8 @@
       "notes": "Flagged on age. MASAF sheet 12/B963/CE/15 and Campania scheda 185 agree on 580 cm and 40 m and on the coordinate to five decimals. The regional card's 200 anni would date the planting to about 1826, a year before the species reached Europe as seed; the same card says only that the species spread in Europe in the first half of the nineteenth century. The tie on height is with the Chilgoza pine, also 40 m.",
       "location_precision": "approximate",
       "height_m": 40.0,
-      "verify_notes": "Height 40.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 40.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "paid_entry": true
     },
     {
       "id": "cas_005",
@@ -221,7 +225,8 @@
       },
       "location_precision": "approximate",
       "height_m": 10.0,
-      "verify_notes": "Height 10.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 10.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "paid_entry": true
     },
     {
       "id": "cas_006",
@@ -253,7 +258,8 @@
       "notes": "MASAF sheet 26/B963/CE/15 (370 cm, 38 m) and Campania scheda 237 agree on measurements and coordinate. The regional card places it precisely: 'il Palco o prateria bassa, a sud-est, lato Puccianiello'. Age is the regional register's 200 years, an estimate that in practice means first-generation planting.",
       "location_precision": "approximate",
       "height_m": 38.0,
-      "verify_notes": "Height 38.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 38.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "paid_entry": true
     },
     {
       "id": "cas_007",
@@ -285,7 +291,8 @@
       "notes": "MASAF sheet 23/B963/CE/15 (420 cm, 28 m) and Campania scheda 218 agree on measurements and coordinate. The scattered smaller cork oaks are stated by the regional card, not inferred. Age is 'over 150 years' from the regional register only.",
       "location_precision": "approximate",
       "height_m": 28.0,
-      "verify_notes": "Height 28.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 28.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "paid_entry": true
     },
     {
       "id": "cas_008",
@@ -317,7 +324,8 @@
       "notes": "MASAF sheet 22/B963/CE/15 and Campania scheda 217 agree on 469 cm girth and 26 m height; both sit on the shared garden centroid coordinate rather than a tree-specific fix.",
       "location_precision": "approximate",
       "height_m": 16.0,
-      "verify_notes": "Height 16.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 16.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "paid_entry": true
     },
     {
       "id": "cas_009",
@@ -349,7 +357,8 @@
       "notes": "MASAF sheet 40/B963/CE/15 and Campania scheda 267 agree on 310 cm girth and 40 m height, tying it with cas_004's Douglas fir for the tallest tree in the Caserta register.",
       "location_precision": "approximate",
       "height_m": 40.0,
-      "verify_notes": "Height 40.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 40.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "paid_entry": true
     },
     {
       "id": "cas_010",
@@ -381,7 +390,8 @@
       "notes": "MASAF sheet 44/B963/CE/15 and Campania scheda 271 agree on 720 cm girth, the second-thickest trunk in the whole Caserta register after cas_001's cedar of Lebanon (775 cm).",
       "location_precision": "approximate",
       "height_m": 25.0,
-      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "paid_entry": true
     },
     {
       "id": "cas_011",
@@ -413,7 +423,8 @@
       "notes": "MASAF sheet 45/B963/CE/15 and Campania scheda 272 agree on 560cm girth. Fourth-thickest entry in the Caserta register overall (after cas_001's cedar at 775cm and cas_010's plane at 720cm), third-thickest tree species-unspecific per the leads file's own ranking. Age taken directly from the register's stated '150 years' rather than derived from girth; band widened symmetrically since the register gives no error margin.",
       "location_precision": "approximate",
       "height_m": 30.0,
-      "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "paid_entry": true
     },
     {
       "id": "cas_012",
@@ -553,7 +564,8 @@
       },
       "how_to_recognise": "A tall, columnar tree with small dark leaves and a smooth grey trunk, in the flatter southern part of the garden.",
       "height_m": 35.0,
-      "verify_notes": "Height 35.0 m from the italy-masaf register, matched on our own pin (1 m away)."
+      "verify_notes": "Height 35.0 m from the italy-masaf register, matched on our own pin (1 m away).",
+      "paid_entry": true
     },
     {
       "id": "cas_016",
@@ -586,7 +598,8 @@
       },
       "how_to_recognise": "A pine with unusually long, drooping needles in bundles of three, up to 30cm long, giving the crown a shaggy look unlike any nearby conifer.",
       "height_m": 25.0,
-      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "paid_entry": true
     },
     {
       "id": "cas_017",
@@ -619,7 +632,8 @@
       },
       "how_to_recognise": "An oak with rough, deeply cut leaves and acorns in whiskery, thistle-like cups.",
       "height_m": 35.0,
-      "verify_notes": "Height 35.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 35.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "paid_entry": true
     },
     {
       "id": "cas_018",
@@ -702,7 +716,8 @@
       },
       "how_to_recognise": "In the upper garden; a wide, low tree, unmistakable in autumn when grapefruit-sized green fruit litter the ground beneath it.",
       "height_m": 10.0,
-      "verify_notes": "Height 10.0 m from the italy-masaf register, matched on our own pin (1 m away)."
+      "verify_notes": "Height 10.0 m from the italy-masaf register, matched on our own pin (1 m away).",
+      "paid_entry": true
     },
     {
       "id": "cas_020",
@@ -735,7 +750,8 @@
       },
       "how_to_recognise": "A broad-canopied tree with small dark fruit on long stalks, among the garden's imported specimens.",
       "height_m": 25.0,
-      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "paid_entry": true
     }
   ]
 }

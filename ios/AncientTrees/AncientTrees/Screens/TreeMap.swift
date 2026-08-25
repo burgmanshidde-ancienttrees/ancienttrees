@@ -525,8 +525,9 @@ enum MapLayers {
                 ? (UIColor(hex: t.peak?.colour) ?? UIColor(red: 0.85, green: 0.63, blue: 0.25, alpha: 1))
                 : moss
             let seen = collected.contains(t.id)
+            let ticket = t.paidEntry
             let name = imageName(species: t.commonName, peaking: peaking, colour: colour)
-                + (seen ? "-c" : "")
+                + (seen ? "-c" : "") + (ticket ? "-t" : "")
             // Our own register of what has been added, rather than asking the
             // style whether it already has the image. That check drew exactly
             // ONE pin for eleven trees: whatever style.image(forName:) returns
@@ -537,7 +538,7 @@ enum MapLayers {
                 registered.insert(name)
                 style.setImage(pin(colour: colour,
                                    glyph: SpeciesGlyph.image(for: t.commonName),
-                                   collected: seen),
+                                   collected: seen, ticket: ticket),
                                forName: name)
             }
             // Attributes must be values GeoJSON can hold: strings, numbers,
@@ -813,7 +814,8 @@ enum MapLayers {
     /// toegevoegd"). The mark is a small white disc with a check, bottom right,
     /// which is where Google Maps hangs its saved-place flag and what the
     /// Collected control in this app already uses as its symbol.
-    private static func pin(colour: UIColor, glyph: UIImage?, collected: Bool = false) -> UIImage {
+    private static func pin(colour: UIColor, glyph: UIImage?, collected: Bool = false,
+                            ticket: Bool = false) -> UIImage {
         let d: CGFloat = 38
         return UIGraphicsImageRenderer(size: .init(width: d, height: d)).image { _ in
             colour.setFill()
@@ -826,6 +828,29 @@ enum MapLayers {
                 let s: CGFloat = 20
                 glyph.withTintColor(.white, renderingMode: .alwaysOriginal)
                     .draw(in: .init(x: (d - s) / 2, y: (d - s) / 2, width: s, height: s))
+            }
+            if ticket {
+                // A TICKET, bottom left, a little bigger than the collected
+                // tick (Hidde, 2026-08-24: "een ticket icoon op de boom zoals
+                // de vink als je m hebt gezien maar iets groter"). Gold rather
+                // than moss, because it is a condition on the visit and not a
+                // thing you have done. Left, so a tree can wear both.
+                let b: CGFloat = 17
+                let r = CGRect(x: 1, y: d - b - 1, width: b, height: b)
+                UIColor.white.setFill()
+                UIBezierPath(ovalIn: r).fill()
+                let gold = UIColor(red: 0.85, green: 0.63, blue: 0.25, alpha: 1)
+                gold.setFill()
+                // A stub: a rounded rectangle with a notch out of each side.
+                let body = UIBezierPath(roundedRect:
+                    CGRect(x: r.minX + 3.4, y: r.midY - 3.1, width: b - 6.8, height: 6.2),
+                    cornerRadius: 1.4)
+                body.fill()
+                UIColor.white.setFill()
+                UIBezierPath(ovalIn: CGRect(x: r.midX - 1.5, y: r.midY - 4.4,
+                                            width: 3, height: 3)).fill()
+                UIBezierPath(ovalIn: CGRect(x: r.midX - 1.5, y: r.midY + 1.4,
+                                            width: 3, height: 3)).fill()
             }
             if collected {
                 let b: CGFloat = 15

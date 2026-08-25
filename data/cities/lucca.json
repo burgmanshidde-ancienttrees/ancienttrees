@@ -71,7 +71,8 @@
         "kind": "fruit"
       },
       "height_m": 20.0,
-      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "paid_entry": true
     },
     {
       "id": "luc_002",
@@ -106,7 +107,8 @@
       "notes": "Register 34/E715/LU/09, 576 cm girth, 35 m. The second registered redwood (31/E715/LU/09, 500 cm) stands about 40 m away and is recorded as a folded lead rather than a separate entry, since a visitor reads them as one planting. The garden's own page says three redwoods; the register lists two here. Planting date c.1850 from LuccaInDiretta; the garden dates its redwoods to the first half of the nineteenth century, so the range is left wide. The photo shows one of the garden's redwoods, not certainly this individual.",
       "location_precision": "confirmed",
       "height_m": 35.0,
-      "verify_notes": "Height 35.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 35.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "paid_entry": true
     },
     {
       "id": "luc_003",
@@ -146,7 +148,8 @@
       },
       "location_precision": "confirmed",
       "height_m": 26.0,
-      "verify_notes": "Height 26.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 26.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "paid_entry": true
     },
     {
       "id": "luc_004",
@@ -213,7 +216,8 @@
       },
       "curation_status": "flagged",
       "notes": "Register 25/E715/LU/09 lists this as an insieme omogeneo of Quercus ilex at Via Guinigi and Via Sant'Andrea, with altitude 44 m, which is the tower roof and not the street. It passes the collectible-point test as an ensemble: it is compact, it is famous for being exactly this, and there is one obvious place to stand. Flagged on age: no source dates the living trees and the range given is deliberately wide. The pin is the tower, so the trunks are 44 m above it.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     },
     {
       "id": "luc_006",
@@ -278,7 +282,8 @@
         "status": "missing"
       },
       "height_m": 30.5,
-      "verify_notes": "Height 30.5 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 30.5 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "paid_entry": true
     },
     {
       "id": "luc_008",
@@ -444,7 +449,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "paid_entry": true
     },
     {
       "id": "luc_013",
@@ -474,7 +480,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "paid_entry": true
     },
     {
       "id": "luc_014",
@@ -504,7 +511,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "paid_entry": true
     }
   ]
 }

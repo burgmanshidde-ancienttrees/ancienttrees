@@ -61,7 +61,8 @@
         ],
         "label": "October to November: clear yellow, one of the most reliable autumn trees",
         "kind": "autumn colour"
-      }
+      },
+      "paid_entry": true
     },
     {
       "id": "lei_002",
@@ -100,7 +101,8 @@
         "height": 3976
       },
       "curation_status": "ai_generated",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     },
     {
       "id": "lei_003",
@@ -132,7 +134,8 @@
         "height": 4032
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     },
     {
       "id": "lei_004",
@@ -171,7 +174,8 @@
         "height": 2848
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "paid_entry": true
     },
     {
       "id": "lei_005",
@@ -263,7 +267,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     },
     {
       "id": "lei_009",
@@ -326,7 +331,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     },
     {
       "id": "lei_011",
@@ -354,7 +360,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     },
     {
       "id": "lei_016",
@@ -390,7 +397,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     },
     {
       "id": "lei_018",

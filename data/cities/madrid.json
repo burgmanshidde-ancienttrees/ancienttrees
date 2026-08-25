@@ -199,7 +199,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Coordinates corrected 2026-07-26 to the tree's own OpenStreetMap node (id 3170278091, \"Ciprés del Real Jardín Botánico\"), inside the garden on the Plano de la Flor terrace rather than the garden's street entrance.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     },
     {
       "id": "mad_006",
@@ -240,7 +241,8 @@
         ],
         "label": "September to October: the whole crown turns orange-brown, the tree's best-known moment after its shape",
         "kind": "autumn colour"
-      }
+      },
+      "paid_entry": true
     },
     {
       "id": "mad_007",

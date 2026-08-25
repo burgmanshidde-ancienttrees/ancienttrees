@@ -66,7 +66,8 @@
         ],
         "label": "September to November: red arils on female trees, the only part that is not poisonous",
         "kind": "fruit"
-      }
+      },
+      "paid_entry": true
     },
     {
       "id": "flo_002",
@@ -98,7 +99,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Registered on Italy's regional monumental tree list (RAMI ID #6490) with a specific GPS survey point. Planting date and attribution to Targioni Tozzetti corroborated by a second independent source. Photo is an iNaturalist observation (298430984, CC BY, 14m from the pin, tagged \"captive\"/cultivated) in the same San Marco neighbourhood; viewed directly and shows a massive trunk with deep, spongy corky bark matching the story's description, approved.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     },
     {
       "id": "flo_003",
@@ -131,7 +133,8 @@
       },
       "curation_status": "flagged",
       "notes": "Age genuinely disputed between sources: RAMI's registry (ID #6487) gives a specific 1884 planting date (about 142 years as of 2026), while an independent Tuscany monumental-tree survey (ascuoladaglialberi.net) gives 115 years from an earlier assessment. Presented as a 115-145 year range rather than asserting either figure. The September 2014 lightning strike is reported by RAMI's own field notes only; no second source found for that specific detail, included as reported since the tree's visibly asymmetric crown is consistent with storm damage.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     },
     {
       "id": "flo_004",
@@ -303,7 +306,8 @@
       },
       "curation_status": "flagged",
       "notes": "No planting date or age documented for this individual tree; age bounded only by the species' known arrival in Europe and the terrace's 1865 statue, not a measured figure specific to the cedar.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     },
     {
       "id": "flo_009",
@@ -415,7 +419,8 @@
         "kind": "autumn colour"
       },
       "height_m": 30.0,
-      "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "paid_entry": true
     },
     {
       "id": "flo_012",
@@ -458,7 +463,8 @@
       },
       "location_precision": "confirmed",
       "height_m": 25.0,
-      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "paid_entry": true
     },
     {
       "id": "flo_013",
@@ -493,7 +499,8 @@
       "notes": "MASAF 03/D612/FI/09 (girth 382 cm, height 33.5 m). Second source is the garden's own page (present from the late 1800s, moved to its current position in 1922, flag-shaped crown needing constant monitoring); the Regione Toscana monumental census independently gives 384 cm and 33.4 m, matching MASAF to within 2 cm and 10 cm. No source gives a planting year, so the age is published as a floor rather than a figure, and 1922 is described as a repositioning because that is exactly what the source says. SUPERLATIVE CHECK: an earlier draft called this the tallest tree in the garden. It is not. MASAF gives the cork oak (flo_002) 35.0 m against this tree's 33.5 m, so the claim was removed before shipping. Species naming: MASAF files it as Pinus halepensis var. brutia and the garden as Pinus halepensis subsp. brutia; published under the canonical Pinus brutia and deliberately kept separate from the three existing 'Aleppo Pine (Pinus halepensis)' entries on the site, because it is a different taxon. PHOTO: downloaded and viewed at 960 px. Whole tree in daylight against sky, trunk and flag crown both readable, centre band holds the tree so it survives the wide card crop. Approved.",
       "location_precision": "confirmed",
       "height_m": 33.5,
-      "verify_notes": "Height 33.5 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 33.5 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "paid_entry": true
     },
     {
       "id": "flo_014",
@@ -525,7 +532,8 @@
       "notes": "MASAF 07/D612/FI/09 (girth 418 cm, height 28.0 m). Second source is the garden's own page, which records the tree in the collection from 1880 and describes its imposing dimensions and drooping branches. 1880 is a first-record date, not a planting date, so the age is published as a floor with a wide upper bound. SPECIES NAMING, needs a human decision: this uses 'Himalayan Cedar (Cedrus deodara)', the majority form across the site (5 entries against 3 for 'Deodar Cedar'), but the live flo_008 in this same city file says 'Deodar Cedar (Cedrus deodara)'. As it stands the two Florence cedars would land on different species pages, which hard rule 9 exists to prevent. Renaming flo_008 is a one-line fix to the live file and was deliberately not made here. PHOTO GAP IS DELIBERATE: a CC BY-SA 3.0 Commons image exists (File:Cedrus deodara 01 by Line1.jpg, same photographer and day as the other two garden photos) and was downloaded and viewed at 960 px. It is a dark, backlit shot up into the crown in which the tree cannot be read at all and the imposing dimensions are invisible. It fails the Cadiz standard on exposure and on crown-and-trunk readability, so it was rejected. An honest gap beats a bad photo.",
       "location_precision": "confirmed",
       "height_m": 28.0,
-      "verify_notes": "Height 28.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 28.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "paid_entry": true
     },
     {
       "id": "flo_015",
@@ -784,7 +792,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "verify_notes": "Two independent sources joined by matching register code (MASAF sheet 61/D612/FI/09 and RAMI id 6501, pins 9m apart). Age of 375 years is RAMI's own stated figure ('calculated from the registered birth year'); the underlying documentary basis was not independently found, so treated as an estimate in the story rather than a fact. Not the 'Bobolino' hillside garden where flo_007/015/016/017/019 stand (0.76 km away); this is the Boboli Gardens proper."
+      "verify_notes": "Two independent sources joined by matching register code (MASAF sheet 61/D612/FI/09 and RAMI id 6501, pins 9m apart). Age of 375 years is RAMI's own stated figure ('calculated from the registered birth year'); the underlying documentary basis was not independently found, so treated as an estimate in the story rather than a fact. Not the 'Bobolino' hillside garden where flo_007/015/016/017/019 stand (0.76 km away); this is the Boboli Gardens proper.",
+      "paid_entry": true
     }
   ]
 }
