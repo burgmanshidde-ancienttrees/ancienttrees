@@ -10,6 +10,70 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-25 (session, second pass) - the rest of his app walk, twenty-one of thirty done
+
+He said "kun je de andere dingen ook doen die ik heb gezegd", and then sent four
+more things while this ran. Every item and its outcome is in UX_AUDIT.md under
+today; this is the short version.
+
+**The five that were worth the digging**, because each one turned out to be a
+different bug from the one reported.
+
+| He said | It actually was |
+|---|---|
+| One tap on a walk in the map list does nothing, the second opens the tree underneath | Not hit testing. At peek the sheet takes no taps by design and the first tap raises it, so the walks row looked tappable and silently moved the sheet under his finger. The row is not drawn at peek any more, which also gave the lip back the photograph it is meant to show |
+| Take me there on my own tree says 0 ticked off and everything collected | A walk names its trees by id and the lookup only knows PUBLISHED trees, so a walk to a tree he added resolved to no trees, and a walk with no stops has nothing left to tick, so it opened on the finished card |
+| The walking routes vanish while I scroll the list | A walk was judged by its FIRST stop's distance from the map centre, and scrolling the list moves the map. Judged by its nearest stop now |
+| Tapping a pin does not centre it | Only the recentre button knew about the sheet. The camera now carries a bottom content inset, which fixes selection, recentre and search together |
+| I have to press hard to open a card | Every collection card carried a `.contextMenu`, which puts a long-press recogniser over the whole card |
+
+**Walks route over the streets now, on both surfaces.** `route_walks.py` was
+dying on a `KeyError: slug`: fourteen published Dutch cities had no `slug` in
+city-list.json, so the script that routes walks had never seen them and never
+would. With that fixed it fetched 48 new pedestrian routes, taking the site from
+113 of 212 walks with a real route to 161. It also found two DEGENERATE routes,
+one of them months old: Oahu came back as eight copies of one coordinate, 0.0 km
+for a five tree walk, because the router found no pedestrian network and snapped
+every stop to the same node. A route shorter than the straight line between its
+own ends is not a route, so that is a check now, and Krakow's had the same shape.
+
+And the half a cache cannot do: a route from where somebody is STANDING cannot
+be precomputed, so `Kit/Routing.swift` asks Valhalla for one when a walk opens
+without a cached shape. One call per walk, eight second timeout, sanity checked
+the same two ways as the script, and a failure keeps the honest dashed line.
+That is the scope Hidde approved on 2026-08-24 and no more of it.
+
+**Plus is off for the MVP, as he asked.** The Plus card is off the Profile, its
+rows sit under Settings beside Season alerts, and the paywall no longer walks
+anybody through a charge this app cannot make: the trial timeline and the price
+are gone, it says Plus is not open yet, and the button collects an address. A
+Sponsor row joined it and MEASURES rather than sells, which is the whole of what
+I will build there.
+
+**Three UI tests had been red for two days and nothing noticed**, because the app
+has no CI. One asserted a four-slot tab bar against the five-slot bar he settled
+on 08-24; two read `app.tabBars`, which finds nothing now that the bar is a
+SwiftUI view; and the walk test asserted "of 14 ticked off" against a walk that
+lost five trees to the ticket ruling on 08-23. All twelve pass now, and one of
+them is new: the Collection lane picker, tapped both ways, because the thing he
+has now reported twice was fixed once without a finger to test it with.
+
+Verified: `appsweep.py` on both phones with the screens looked at, `appfit.py` 0
+findings on 17 screens, `copycheck.py` clean, the twelve UI tests green. App work
+done in a `git worktree`, because the guard was right that another session was
+live in this checkout.
+
+**FOR HIDDE, two things.**
+
+The sponsor purchase is still yours and always will be. Everything around it is
+built.
+
+And the Supabase service key exists only as a GitHub secret, so no session can
+read your Baarn submissions. Meanwhile every night run today died on the usage
+limit, which is what the 0.0 minute entries below are, so nothing is processing
+them either. One line fixes the first half:
+`echo 'export SUPABASE_SERVICE_KEY="..."' >> ~/.ancienttrees-mail.env`
+
 ## 2026-08-25 (session) - Hidde walked the app and reported thirty things; the first eight are fixed
 
 He installed the app, added trees in Baarn on the 24th and the 25th, and sent
