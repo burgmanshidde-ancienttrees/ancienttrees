@@ -35,7 +35,6 @@ struct ProfileView: View {
     @State private var confirmingDelete = false
     @State private var confirmingSignOut = false
     @State private var deleteFailed = false
-    @State private var plusPitch = false
     @State private var showingAccount = false
     @State private var showingLegal = false
     @State private var sponsoring = false
@@ -77,7 +76,8 @@ struct ProfileView: View {
         .brandGround()
         .toolbar(.hidden, for: .navigationBar)
         .sheet(isPresented: $contributing) { ContributeView() }
-        .sheet(isPresented: $plusPitch) { PaywallView(feature: .seasonAlerts) }
+        // The paywall still opens, from the locked rows themselves; it no
+        // longer has a row of its own (2026-08-25).
         .sheet(isPresented: $sponsoring) { PaywallView(feature: .sponsor) }
         .sheet(isPresented: $showingAccount) { accountSheet }
         .sheet(isPresented: $showingLegal) { legalSheet }
@@ -254,6 +254,12 @@ struct ProfileView: View {
                         Image(systemName: "bell").frame(width: 20).foregroundStyle(Brand.moss)
                         Text("Season alerts").font(.callout).foregroundStyle(Brand.ink)
                         Spacer()
+                        // "Coming soon" beside the tier, because the tier is not
+                        // open (Hidde, 2026-08-25: "bij offline maps en season
+                        // alerts mag je coming soon plus zetten"). A bare Plus
+                        // chip on a row that cannot be bought reads as a thing
+                        // you are missing out on rather than a thing being built.
+                        Text("Coming soon").font(.caption).foregroundStyle(Brand.inkSoft)
                         Chip(text: "Plus", tint: Brand.gold)
                     }
                     .padding(.horizontal, 16).frame(height: 48)
@@ -270,27 +276,16 @@ struct ProfileView: View {
                             .frame(width: 20).foregroundStyle(Brand.moss)
                         Text("Offline maps").font(.callout).foregroundStyle(Brand.ink)
                         Spacer()
+                        Text("Coming soon").font(.caption).foregroundStyle(Brand.inkSoft)
                         Chip(text: "Plus", tint: Brand.gold)
                     }
                     .padding(.horizontal, 16).frame(height: 48)
                 }
-                Divider().padding(.leading, 48)
-                // What Plus WILL be, one level down, for anybody who wants the
-                // whole list rather than the row they happened to tap.
-                Button { plusPitch = true } label: {
-                    HStack(spacing: 12) {
-                        Image(systemName: "leaf.fill").frame(width: 20)
-                            .foregroundStyle(Brand.gold)
-                        Text("What Plus will be").font(.callout).foregroundStyle(Brand.ink)
-                        Spacer()
-                        Image(systemName: "chevron.right")
-                            .font(.caption).foregroundStyle(Brand.inkSoft.opacity(0.6))
-                    }
-                    .padding(.horizontal, 16).frame(height: 48)
-                    .contentShape(.rect)
-                }
-                .buttonStyle(.plain)
-                .accessibilityIdentifier("profile-plus")
+                // The "What Plus will be" row is gone (Hidde, 2026-08-25: "je
+                // mag de what is plus sectie in het profiel weghalen"). It was
+                // a page whose whole content was a list of things that do not
+                // exist yet, one tap from two rows that say the same in three
+                // words each.
                 Divider().padding(.leading, 48)
                 // HIS ASK, and the one thing on this screen I did not build in
                 // full (2026-08-25): "we could add a button that just says
