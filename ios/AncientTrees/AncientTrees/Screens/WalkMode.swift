@@ -47,6 +47,10 @@ struct WalkMode: View {
     @Environment(\.dismiss) private var dismiss
     @State private var selected: Tree?
     @State private var justTicked: Tree?
+    /// A real pedestrian route, fetched once when this screen opens and the
+    /// feed had none. See Kit/Routing.swift for why it is one call and why
+    /// failing is fine.
+    @State private var liveRoute: [CLLocationCoordinate2D]?
 
     private var trees: [Tree] { only ?? catalogue.trees(of: walk) }
     private var done: Int { trees.filter { saved.isVisited($0.id) }.count }
@@ -59,6 +63,7 @@ struct WalkMode: View {
         if let shape = walk.shape, shape.count > 1 {
             return shape.compactMap { $0.count == 2 ? CLLocationCoordinate2D(latitude: $0[1], longitude: $0[0]) : nil }
         }
+        if let live = liveRoute, live.count > 1 { return live }
         let stops = trees.map { CLLocationCoordinate2D(latitude: $0.lat, longitude: $0.lng) }
         // A walk of ONE has no line between stops, so the useful line is from
         // you to it. Without this you saw the tree and nothing about getting
@@ -105,7 +110,7 @@ struct WalkMode: View {
             TreeMap(trees: trees,
                     focus: (next ?? trees.first).map { .init(latitude: $0.lat, longitude: $0.lng) },
                     route: route,
-                    routeIsReal: (walk.shape?.count ?? 0) > 1,
+                    routeIsReal: (walk.shape?.count ?? 0) > 1 || (liveRoute?.count ?? 0) > 1,
                     showsRecentre: true,
                     spanMeters: 1600,
                     clusters: false,
@@ -121,6 +126,18 @@ struct WalkMode: View {
         // with a heart inheriting its card's identifier.
         .accessibilityElement(children: .contain)
         .accessibilityIdentifier("walk-mode")
+        .task {
+            // One call, and only where the feed left a gap. A walk that came
+            // with a routed shape needs nothing, and 161 of 212 do.
+            guard liveRoute == nil, (walk.shape?.count ?? 0) <= 1, !trees.isEmpty else { return }
+            var stops: [CLLocationCoordinate2D] = [
+                .init(latitude: origin.lat, longitude: origin.lng)
+            ]
+            stops.append(contentsOf: trees.map {
+                CLLocationCoordinate2D(latitude: $0.lat, longitude: $0.lng)
+            })
+            liveRoute = await Routing.pedestrian(through: stops)
+        }
     }
 
     // MARK: - the bar that says where you are in it

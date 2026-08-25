@@ -750,7 +750,11 @@ struct MapTab: View {
                 if (w.shape?.count ?? 0) <= 1 {
                     // The same honesty the website prints, and the same reason:
                     // a solid line between trunks claims a path nobody checked.
-                    Label("The line shows the order, not the streets. Only about half our walks have a checked route yet.",
+                    // The fraction is a fact and facts move: 48 more walks got
+                    // a checked route on 2026-08-25, which took it from about a
+                    // half to about three quarters. Begin fetches a live route
+                    // for the rest, so this line is about the preview above it.
+                    Label("The line shows the order, not the streets. About three quarters of our walks have a checked route; Begin works one out for the rest.",
                           systemImage: "info.circle")
                         .font(.caption).foregroundStyle(Brand.inkSoft)
                         .fixedSize(horizontal: false, vertical: true)
