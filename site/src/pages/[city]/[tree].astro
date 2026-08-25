@@ -6,7 +6,7 @@ import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, distLabel, type CityEntry, type Tree } from "../../lib/trees";
 import { haversineKm } from "../../lib/walks";
 import { speciesCommon } from "../../lib/species";
-import { parkKey, groupTreesByPark, PARK_MIN_TREES } from "../../lib/parks";
+import { parkKey, groupTreesByPark, parkGroupKey, PARK_MIN_TREES } from "../../lib/parks";
 import { usablePhoto, imgSrcset, thumbUrl, creditRequired, metaImageUrls, ogImageUrl } from "../../lib/images";
 import { speciesIcon } from "../../lib/species-icons";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
@@ -52,8 +52,8 @@ export async function getStaticPaths() {
   const parkGroups = groupTreesByPark(allCities);
   const parkPages = new Map(
     parkIntros
-      .filter((i) => (parkGroups.get(`${i.data.city_slug} ${i.data.park}`)?.trees.length ?? 0) >= PARK_MIN_TREES)
-      .map((i) => [`${i.data.city_slug} ${i.data.park}`, i.data]),
+      .filter((i) => (parkGroups.get(parkGroupKey(i.data.city_slug, i.data.park))?.trees.length ?? 0) >= PARK_MIN_TREES)
+      .map((i) => [parkGroupKey(i.data.city_slug, i.data.park), i.data]),
   );
 
   const paths: { params: { city: string; tree: string }; props: any }[] = [];
@@ -85,7 +85,7 @@ interface Props {
 const { city, tree, allTrees, countryPages, speciesPages, parkPages } = Astro.props as Props;
 // The park this tree stands in, when we publish a page about it.
 const parkName = parkKey(tree);
-const parkPage = parkName ? (parkPages as Map<string, any>).get(`${city.id} ${parkName}`) ?? null : null;
+const parkPage = parkName ? (parkPages as Map<string, any>).get(parkGroupKey(city.id, parkName)) ?? null : null;
 
 const cityName = city.data.city;
 const country = city.data.country;

@@ -31,7 +31,7 @@ import { getCollection } from "astro:content";
 import { cityIsRenderable, renderableTrees, slugify, type CityEntry } from "../../lib/trees";
 import { cityFaceTree, speciesFaceTree, parkFaceTree, usablePhoto } from "../../lib/images";
 import { groupTreesBySpecies } from "../../lib/species";
-import { groupTreesByPark } from "../../lib/parks";
+import { groupTreesByPark, parkGroupKey } from "../../lib/parks";
 import { feedVersion } from "../../lib/app-feed";
 
 export async function GET() {
@@ -85,7 +85,7 @@ export async function GET() {
   // The website's own park grouping, keyed the way /parks keys its intros.
   const parkGroups = groupTreesByPark(cities);
   const parks = (await getCollection("parks")).map((p) => {
-    const g = parkGroups.get(`${p.data.city_slug} ${p.data.park}`);
+    const g = parkGroups.get(parkGroupKey(p.data.city_slug, p.data.park));
     const trees = g?.trees ?? [];
     return {
       slug: p.data.slug,
@@ -141,16 +141,7 @@ export async function GET() {
     };
   }).filter((s) => s.count > 0);
 
-  // TEMPORARY (2026-08-25): the parks facet came back empty from a key lookup
-  // that /parks makes successfully in the other direction. Removed as soon as
-  // this says which of the two strings is not what I think it is.
-  const _debug = {
-    groups: [...parkGroups.keys()].slice(0, 4),
-    intros: (await getCollection("parks")).slice(0, 4).map((p) => `${p.data.city_slug} ${p.data.park}`),
-    groupCount: parkGroups.size,
-    introCount: (await getCollection("parks")).length,
-  };
-  const payload = { cities: cityFacets, collections, parks, countries, species, _debug };
+  const payload = { cities: cityFacets, collections, parks, countries, species };
   const body = JSON.stringify(payload);
   return new Response(
     JSON.stringify({ version: await feedVersion(body), ...payload }),

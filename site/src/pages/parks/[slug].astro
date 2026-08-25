@@ -8,7 +8,7 @@ import { TREE_ACTIONS_JS } from "../../lib/tree-actions-js";
 import { SIGNIN_JS } from "../../lib/signin-js";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import { cityIsRenderable, treeSlugsForCity, type CityEntry, type Tree } from "../../lib/trees";
-import { groupTreesByPark, PARK_MIN_TREES } from "../../lib/parks";
+import { groupTreesByPark, parkGroupKey, PARK_MIN_TREES } from "../../lib/parks";
 import { usablePhoto, imgSrcset } from "../../lib/images";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
 import { fitTitle } from "../../lib/title";
@@ -19,14 +19,14 @@ export async function getStaticPaths() {
   const intros = await getCollection("parks");
   const groups = groupTreesByPark(allCities);
 
-  const introByKey = new Map(intros.map((i) => [`${i.data.city_slug} ${i.data.park}`, i]));
+  const introByKey = new Map(intros.map((i) => [parkGroupKey(i.data.city_slug, i.data.park), i]));
 
   const published = byCityListOrder(allCities.map((c) => ({ slug: c.id, city: c.data.city })));
 
   return [...groups.values()]
     .filter((g) => g.trees.length >= PARK_MIN_TREES)
     .map((g) => {
-      const intro = introByKey.get(`${g.citySlug} ${g.parkName}`);
+      const intro = introByKey.get(parkGroupKey(g.citySlug, g.parkName));
       if (!intro) return null;
       return {
         params: { slug: intro.data.slug },

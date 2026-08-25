@@ -507,6 +507,39 @@ def check_species_face_is_chosen():
     return out
 
 
+def check_park_key_is_one_function():
+    """The fourteenth ratchet check, from 2026-08-25, and the cheapest lesson in
+    this file: a composite key belongs to a function, not to a template literal
+    copied from page to page.
+
+    groupTreesByPark() keyed its map with a NUL byte between the city slug and
+    the park name. Five pages built the same key with a plain space. Nothing
+    broke for as long as every page only ever looked its own map up with its own
+    key, and the two schemes never met. Then two real lookups crossed them: the
+    parks facet in /api/browse.json came back empty (467 groups, 24 intros, zero
+    matches), and every tree page's link to its park page had been silently
+    missing for as long as that filter had existed. No error, no failing test,
+    nothing in the built HTML to notice.
+
+    So: nobody writes that key by hand any more. parkGroupKey() in
+    site/src/lib/parks.ts owns it."""
+    out = []
+    root = Path(__file__).resolve().parent.parent
+    src = root / "site" / "src"
+    if not src.exists():
+        return out
+    # `${something-slug} ${something-park}`, in either order, which is the shape
+    # every one of the five hand-built keys had.
+    pattern = re.compile(r"\$\{[^}]*(?:[Ss]lug|city\.id)\}[^`$]{0,3}\$\{[^}]*[Pp]ark")
+    for f in sorted(list(src.rglob("*.ts")) + list(src.rglob("*.astro"))):
+        for line_no, line in enumerate(f.read_text(encoding="utf-8").splitlines(), 1):
+            if pattern.search(line):
+                out.append("%s:%d builds a park key by hand. Use parkGroupKey(): the "
+                           "separator is a NUL byte and a space silently matches "
+                           "nothing" % (f.relative_to(root), line_no))
+    return out
+
+
 def check_faces_travel_to_the_app():
     """The thirteenth ratchet check, from 2026-08-25.
 
@@ -900,6 +933,7 @@ def main():
     failures += check_tree_count_claims(pages)
     failures += check_species_face_is_chosen()
     failures += check_faces_travel_to_the_app()
+    failures += check_park_key_is_one_function()
 
     if failures:
         print(f"QA FAILED: {len(failures)} problem(s) in {len(pages)} pages")

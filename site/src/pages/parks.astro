@@ -4,7 +4,7 @@ import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { cityIsRenderable } from "../lib/trees";
-import { groupTreesByPark, PARK_MIN_TREES } from "../lib/parks";
+import { groupTreesByPark, parkGroupKey, PARK_MIN_TREES } from "../lib/parks";
 import { usablePhoto, thumbUrl, parkFaceTree } from "../lib/images";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { fitTitle } from "../lib/title";
@@ -16,17 +16,17 @@ import { browseCard } from "../lib/browse-card";
 // below break the same way Python's stable sort breaks them.
 const allCities = byCityListOrderEntry((await getCollection("cities")).filter(cityIsRenderable));
 const parkIntros = await getCollection("parks");
-const introByKey = new Map(parkIntros.map((i) => [`${i.data.city_slug} ${i.data.park}`, i]));
+const introByKey = new Map(parkIntros.map((i) => [parkGroupKey(i.data.city_slug, i.data.park), i]));
 const groups = groupTreesByPark(allCities);
 const published = byCityListOrder(allCities.map((c) => ({ slug: c.id, city: c.data.city })));
 
 // main()'s iteration order: qualifying groups (park_groups sorted by tree
 // count, descending) that also have a hand-written intro, build_site.py:5818-5822.
 const cards = [...groups.values()]
-  .filter((g) => g.trees.length >= PARK_MIN_TREES && introByKey.has(`${g.citySlug} ${g.parkName}`))
+  .filter((g) => g.trees.length >= PARK_MIN_TREES && introByKey.has(parkGroupKey(g.citySlug, g.parkName)))
   .sort((a, b) => b.trees.length - a.trees.length)
   .map((g) => {
-    const intro = introByKey.get(`${g.citySlug} ${g.parkName}`)!;
+    const intro = introByKey.get(parkGroupKey(g.citySlug, g.parkName))!;
     // The same helper the feed uses, so the app's park card cannot show a
     // different picture from this one.
     const faceTree = parkFaceTree(g.trees);
