@@ -65,7 +65,7 @@ enum SheetHeight: CaseIterable {
     }
 }
 
-struct BottomSheet<Content: View>: View {
+struct BottomSheet<Header: View, Content: View>: View {
     @Binding var height: SheetHeight
     /// Which item is at the top of the list, when the content marks its items
     /// as scroll targets. The map reads this so it can follow what you are
@@ -73,6 +73,20 @@ struct BottomSheet<Content: View>: View {
     /// boom als je door de lijst gaat"). Optional, because a sheet holding a
     /// walk has nothing to report.
     var topItem: Binding<String?>? = nil
+    /// A row that stays OUTSIDE the scroll view, under the grabber.
+    ///
+    /// Hidde, 2026-08-25: "het is vrijwel onmogelijk om de lijst over de map nog
+    /// te verschuiven wanneer je over de bomen in de lijst bent gaan scrollen."
+    /// He is right and the arbitration below explains why: the sheet only takes
+    /// a downward drag when the list is at its very top, so once you have
+    /// scrolled, the only draggable thing left is a five-point capsule.
+    ///
+    /// Every map app answers this the same way: the sheet has a HEADER that does
+    /// not scroll, and the header is a handle. Apple Maps keeps its search field
+    /// there, Google Maps its place name. Ours keeps the count, which was inside
+    /// the scrolling content and therefore scrolled away exactly when it was
+    /// most useful as a grip.
+    @ViewBuilder var header: Header
     @ViewBuilder var content: Content
 
     @State private var drag: CGFloat = 0
@@ -83,6 +97,10 @@ struct BottomSheet<Content: View>: View {
     /// Set the moment a downward drag begins at the top, which turns scrolling
     /// off for the rest of that gesture so the two never fight.
     @State private var handingOff = false
+    /// How deep the grabber and the header are, measured from the sheet's own
+    /// top. A downward drag that starts inside them belongs to the sheet
+    /// whatever the list is doing, which is what makes the header a handle.
+    private let headerDepth: CGFloat = 74
 
     var body: some View {
         GeometryReader { geo in
@@ -98,6 +116,10 @@ struct BottomSheet<Content: View>: View {
                     .fill(.tertiary)
                     .frame(width: 40, height: 5)
                     .padding(.top, 10).padding(.bottom, 12)
+                    .frame(maxWidth: .infinity)
+                    .contentShape(.rect)
+
+                header
                     .frame(maxWidth: .infinity)
                     .contentShape(.rect)
 
@@ -149,7 +171,8 @@ struct BottomSheet<Content: View>: View {
                         // describe. Everything else belongs to the list.
                         if height == .peek {
                             drag = value.translation.height
-                        } else if atTop && value.translation.height > 0 {
+                        } else if (atTop || value.startLocation.y < headerDepth)
+                                    && value.translation.height > 0 {
                             handingOff = true
                             drag = value.translation.height
                         }

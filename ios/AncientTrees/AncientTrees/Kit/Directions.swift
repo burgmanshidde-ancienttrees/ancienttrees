@@ -27,22 +27,34 @@ enum Directions {
         // As a URL rather than MKMapItem.openInMaps, so a missing Maps app
         // fails quietly here instead of raising a system alert.
         let apple = URL(string: "maps://?daddr=\(lat),\(lng)&dirflg=w")
-        let google = URL(string: "comgooglemaps://?daddr=\(lat),\(lng)&directionsmode=walking")
+        // The https link, not comgooglemaps://. Google Maps claims
+        // google.com/maps as a universal link, so an installed Google Maps takes
+        // this and a phone without it gets the same route in a browser. Either
+        // way something opens and nothing has to be guessed at.
         let web = URL(string:
             "https://www.google.com/maps/dir/?api=1&destination=\(lat),\(lng)&travelmode=walking")
-        openFirst([apple, google, web])
-    }
 
-    /// Open the first of these that actually launches something.
-    private static func openFirst(_ urls: [URL?]) {
-        var queue = urls.compactMap { $0 }
-        func next() {
-            guard !queue.isEmpty else { return }
-            let url = queue.removeFirst()
-            UIApplication.shared.open(url, options: [:]) { ok in
-                if !ok { next() }
-            }
+        // ASK BEFORE TRYING, and only about Apple's own scheme.
+        //
+        // Third time on this bug (2026-08-21, 08-24, and 08-25: "hij geeft nog
+        // steeds de melding geen navigatie app geinstalleerd terwijl hij wel
+        // google maps opent"). The chain of attempts fixed the outcome and not
+        // the noise: iOS itself puts up an alert when asked to open a scheme no
+        // installed app claims, BEFORE the completion handler reports the
+        // failure. So a phone without Apple Maps got the system's own "no app
+        // installed" alert, our code moved on, and Google Maps opened behind it.
+        // He saw both and was right to report it twice.
+        //
+        // canOpenURL is accurate for maps://, tel://, mailto: and the other
+        // system schemes without any LSApplicationQueriesSchemes list; it is
+        // only third-party schemes it lies about, which is why there is no
+        // longer a third-party scheme here.
+        if let apple, UIApplication.shared.canOpenURL(apple) {
+            UIApplication.shared.open(apple, options: [:], completionHandler: nil)
+            return
         }
-        next()
+        if let web {
+            UIApplication.shared.open(web, options: [:], completionHandler: nil)
+        }
     }
 }

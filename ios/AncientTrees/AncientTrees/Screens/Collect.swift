@@ -69,13 +69,7 @@ struct CollectView: View {
     private var countries: Int { Set(allVisited.map(\.country)).count }
     private var cities: Int { Set(allVisited.map(\.citySlug)).count }
     private var collectedSpecies: Set<String> { Set(allVisited.map(\.commonName)) }
-    /// How many species you have that are NOT in the grid.
-    ///
-    /// This used to be a nineteenth stamp called "Anything else", which put a
-    /// bucket in a grid of named species and read as a mistake (Hidde,
-    /// 2026-08-25: "so anything else er niet tussen zetten dat is een beetje
-    /// random"). It is a sentence now, which is what it always was.
-    private var restCount: Int { collectedSpecies.subtracting(stampSpecies).count }
+    // restCount went with the line that printed it (2026-08-25).
 
     /// Yours first, then the rest, both in the grid's own order.
     ///
@@ -372,12 +366,10 @@ struct CollectView: View {
                 .buttonStyle(.plain)
                 .accessibilityIdentifier("stamps-more")
             }
-            if restCount > 0 {
-                Text(restCount == 1
-                     ? "And one more species outside this set."
-                     : "And \(restCount) more species outside this set.")
-                    .font(.caption).foregroundStyle(Brand.inkSoft)
-            }
+            // The "and one more species outside this set" line is gone (Hidde,
+            // 2026-08-25: "please delete that line, why would you say that").
+            // He is right: it was bookkeeping about our own eighteen-species
+            // grid, addressed to somebody who never asked what the grid is.
             if collectedSpecies.isEmpty {
                 Text("Collect a tree and its species fills in here.")
                     .font(.caption).foregroundStyle(Brand.inkSoft)

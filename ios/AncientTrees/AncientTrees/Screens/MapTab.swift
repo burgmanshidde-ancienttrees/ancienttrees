@@ -241,6 +241,7 @@ struct MapTab: View {
                     mine: sightings.yoursOnly.map { (id: $0.id, lat: $0.lat, lng: $0.lng, name: $0.name) },
                     collected: collectedIds,
                     onSelectMine: { navigator.push = .mine($0) },
+                    onSelectTree: { navigator.push = .tree($0) },
                     focus: .init(latitude: origin.lat, longitude: origin.lng),
                     route: walkRoute,
                     routeIsReal: (shownWalk?.shape?.count ?? 0) > 1,
@@ -257,7 +258,12 @@ struct MapTab: View {
                     selected: $selected)
                 .ignoresSafeArea(edges: [.top, .horizontal])
                 .accessibilityIdentifier("tree-map")
-            BottomSheet(height: $sheetHeight, topItem: $topCard) {
+            BottomSheet(height: $sheetHeight, topItem: $topCard, header: {
+                // The count is the header now, outside the scroll view: it stays
+                // visible while the list scrolls and it is the handle that makes
+                // the sheet draggable again once it has (2026-08-25).
+                countStrip
+            }) {
                 // The arbitration between dragging the sheet and scrolling what
                 // is inside it, which is the whole interaction and was wrong.
                 //
@@ -474,7 +480,6 @@ struct MapTab: View {
     /// arrangement Google Maps and Apple Maps both use.
     @ViewBuilder private var sheet: some View {
         VStack(spacing: 0) {
-            countStrip
             if shownWalk != nil && sheetHeight != .peek { walkCard }
             if let t = arrived, sheetHeight != .peek { arrivalCard(t) }
             list
