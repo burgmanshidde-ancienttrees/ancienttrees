@@ -22,11 +22,25 @@ struct CollectIntro: View {
                 .foregroundStyle(Brand.ink)
                 .fixedSize(horizontal: false, vertical: true)
 
-            Text("You can collect a tree by photographing it while you stand in front of it. If it is one of ours, we tell you which and tick it off. If we do not have it, it is yours, and it reaches us too.")
-                .font(.system(size: 17))
-                .foregroundStyle(Brand.inkSoft)
-                .lineSpacing(3)
-                .fixedSize(horizontal: false, vertical: true)
+            // TWO THINGS, each with its own mark, which is his own structure
+            // (Hidde, 2026-08-25, giving both sentences): one paragraph had to
+            // carry collecting a tree we map AND adding one we do not, and the
+            // second half arrived as a clause tacked onto the first ("if we do
+            // not have it, it is yours, and it reaches us too"). They are two
+            // different things somebody might be about to do.
+            //
+            // PRODUCT_COPY.md governs the wording: the reader is the subject,
+            // the method is joined with "by", and there is no summary line. His
+            // own draft said "if review succesfully added to the database for
+            // all", and rule 5 is why that is not what it says here: nobody
+            // needs the word database, they need to know it joins the map
+            // everybody sees.
+            VStack(alignment: .leading, spacing: 18) {
+                line("checkmark.seal",
+                     "You can collect a tree we already map by photographing it while you stand in front of it. We tell you which one it is and tick it off.")
+                line("plus.circle",
+                     "If it is a tree we do not have, you can add it. It appears on your own map straight away, and once we have checked it, it joins the map everybody sees.")
+            }
 
             Spacer(minLength: 24)
 
@@ -36,5 +50,19 @@ struct CollectIntro: View {
         }
         .frame(maxHeight: .infinity, alignment: .top)
         .padding(.top, 8)
+    }
+
+    private func line(_ icon: String, _ text: String) -> some View {
+        HStack(alignment: .top, spacing: 12) {
+            Image(systemName: icon)
+                .font(.system(size: 19))
+                .foregroundStyle(Brand.moss)
+                .frame(width: 24)
+            Text(text)
+                .font(.system(size: 17))
+                .foregroundStyle(Brand.inkSoft)
+                .lineSpacing(3)
+                .fixedSize(horizontal: false, vertical: true)
+        }
     }
 }
