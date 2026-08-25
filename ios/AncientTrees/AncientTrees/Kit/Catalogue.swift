@@ -12,22 +12,82 @@ public struct Catalogue: Sendable {
     public let species: [Species]
     /// The website's hand-curated collections, which Explore is built out of.
     public let collections: [TreeCollection]
+    /// The city, country, species and park facets from /api/browse.json, with
+    /// the intro the website wrote and the face it shows.
+    public let facets: BrowseFacets
 
     private let byId: [String: Tree]
     private let walksByCity: [String: [Walk]]
 
     public init(trees: [Tree], walks: [Walk], species: [Species],
-                collections: [TreeCollection] = [], version: String) {
+                collections: [TreeCollection] = [],
+                facets: BrowseFacets = .empty, version: String) {
         self.trees = trees
         self.walks = walks
         self.species = species
         self.collections = collections
+        self.facets = facets
         self.version = version
         self.byId = Dictionary(trees.map { ($0.id, $0) }, uniquingKeysWith: { a, _ in a })
         self.walksByCity = Dictionary(grouping: walks, by: { $0.citySlug })
     }
 
     public func tree(_ id: String) -> Tree? { byId[id] }
+
+    // MARK: - card faces
+    //
+    // WHICH PHOTOGRAPH FRONTS A CARD IS NOT THIS APP'S DECISION (2026-08-25).
+    // It used to be, by accident: a city card took the first tree in the list
+    // with a photograph, so the same city wore one face on the website and
+    // another on the phone, and the website's pin (hero_tree_id, face_tree_id)
+    // reached the app not at all. Hidde, on a species card fronted by a
+    // fountain: "do you save the thumbnails between app and web and make sure we
+    // use the same ones?"
+    //
+    // The answer travels in the feed as a tree id. When it is missing (an old
+    // snapshot), fall back to the best photograph we can judge locally rather
+    // than to the first one, which is the same ranking the website uses: enough
+    // pixels, then landscape, then widest.
+
+    /// The tree whose photograph fronts this city.
+    public func face(city slug: String) -> Tree? {
+        facets.face(city: slug).flatMap { byId[$0] }
+            ?? bestFace(trees.filter { $0.citySlug == slug })
+    }
+
+    /// The tree whose photograph fronts this country.
+    public func face(country name: String) -> Tree? {
+        facets.face(country: name).flatMap { byId[$0] }
+            ?? bestFace(trees.filter { $0.country == name })
+    }
+
+    /// The tree whose photograph fronts this species.
+    public func face(species commonName: String) -> Tree? {
+        facets.face(species: commonName).flatMap { byId[$0] }
+            ?? bestFace(trees.filter { $0.commonName == commonName })
+    }
+
+    /// The website's introduction to a species, where it wrote one.
+    public func intro(species commonName: String) -> String? {
+        facets.intro(species: commonName)
+    }
+
+    /// The best photograph in a set for a letterbox, mirroring bestFaceTree()
+    /// in site/src/lib/images.ts. Only ever a fallback: a photograph's SUBJECT
+    /// is a person's judgement, and that judgement arrives as a face id.
+    private func bestFace(_ set: [Tree]) -> Tree? {
+        set.filter { $0.photo != nil }
+           .max { a, b in
+               let pa = a.photo!, pb = b.photo!
+               let bigA = (pa.width ?? 0) == 0 || (pa.width ?? 0) >= 540
+               let bigB = (pb.width ?? 0) == 0 || (pb.width ?? 0) >= 540
+               if bigA != bigB { return bigB }
+               let landA = (pa.width ?? 0) > 0 && (pa.height ?? 0) > 0 && (pa.width ?? 0) >= (pa.height ?? 0)
+               let landB = (pb.width ?? 0) > 0 && (pb.height ?? 0) > 0 && (pb.width ?? 0) >= (pb.height ?? 0)
+               if landA != landB { return landB }
+               return (pa.width ?? 0) < (pb.width ?? 0)
+           }
+    }
 
     /// A collection's trees, skipping any id the feed no longer carries, so a
     /// collection that lost a tree still works.

@@ -135,7 +135,7 @@ struct TreeDetail: View {
                     Image(uiImage: shot).resizable().aspectRatio(contentMode: .fill)
                 }
                 .clipShape(.rect(cornerRadius: 16))
-        } else if let p = tree.photo, let url = Photos.thumb(p.url, width: 960) {
+        } else if let p = tree.photo, let url = p.full {
             VStack(alignment: .leading, spacing: 6) {
                 // AN EMPTY BOX WITH THE PHOTOGRAPH LAID OVER IT, not a
                 // photograph with a height. A .fill image asks for the width

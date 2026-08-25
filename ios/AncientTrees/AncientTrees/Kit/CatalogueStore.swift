@@ -134,9 +134,10 @@ public final class CatalogueStore {
         let tf = try dec.decode(TreeFeed.self, from: trees)
         let wf = try dec.decode(WalkFeed.self, from: walks)
         let sp = species.flatMap { try? dec.decode(SpeciesFeed.self, from: $0) }?.species ?? []
-        let co = browse.flatMap { try? dec.decode(BrowseFeed.self, from: $0) }?.collections ?? []
+        let bf = browse.flatMap { try? dec.decode(BrowseFeed.self, from: $0) }
         return Catalogue(trees: tf.trees, walks: wf.walks, species: sp,
-                         collections: co, version: tf.version)
+                         collections: bf?.collections ?? [],
+                         facets: BrowseFacets(feed: bf), version: tf.version)
     }
 
     private func write(trees: Data, walks: Data, species: Data?, browse: Data?) {

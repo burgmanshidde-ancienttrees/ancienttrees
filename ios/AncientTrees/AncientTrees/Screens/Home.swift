@@ -94,7 +94,9 @@ struct HomeView: View {
             .map { (name: $0.key,
                     count: $0.value.count,
                     cities: Set($0.value.map(\.citySlug)).count,
-                    photo: $0.value.first { $0.photo != nil }) }
+                    // The website's own face for this country, not the first
+                    // tree that happened to have a picture.
+                    photo: catalogue.face(country: $0.key)) }
             .sorted { $0.count > $1.count }
         s.species = Dictionary(grouping: catalogue.trees, by: \.commonName)
             .map { (name: $0.key, count: $0.value.count) }
@@ -258,7 +260,7 @@ struct HomeView: View {
             Color.clear
                 .frame(width: 150, height: 100)
                 .overlay {
-                    if let t = c.photo, let p = t.photo, let url = Photos.thumb(p.url, width: 400) {
+                    if let t = c.photo, let url = t.photo?.card {
                         AsyncImage(url: url) { img in
                             img.resizable().aspectRatio(contentMode: .fill)
                         } placeholder: { Brand.surfaceMuted }
@@ -385,12 +387,13 @@ struct HomeView: View {
     }
 
     private func cityCard(_ c: (slug: String, name: String, country: String, count: Int)) -> some View {
-        // Cheap because it stops at the first hit, but it is still a scan of
-        // every tree per card, so it only runs for the fourteen cards drawn.
-        let cover = catalogue.trees.first { $0.citySlug == c.slug && $0.photo != nil }
+        // The city's face as the website chose it, which is where hero_tree_id
+        // arrives. This used to be the first tree in the list with a photograph,
+        // so a city looked different here than it did on the web.
+        let cover = catalogue.face(city: c.slug)
         return VStack(alignment: .leading, spacing: 0) {
             ZStack(alignment: .bottomLeading) {
-                if let p = cover?.photo, let url = Photos.thumb(p.url, width: 400) {
+                if let url = cover?.photo?.card {
                     AsyncImage(url: url) { img in
                         img.resizable().aspectRatio(contentMode: .fill)
                     } placeholder: {

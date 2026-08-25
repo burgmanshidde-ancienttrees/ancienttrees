@@ -20,7 +20,7 @@
 import type { CityEntry } from "./trees";
 import { peakFor } from "./phenology";
 import { renderableTrees, slugify } from "./trees";
-import { usablePhoto } from "./images";
+import { usablePhoto, thumbUrl, creditRequired } from "./images";
 
 export interface FeedTree {
   id: string;
@@ -53,8 +53,24 @@ export interface FeedTree {
   peak: { months: number[]; effect: string; colour: string; level?: string } | null;
   story: string | null;
   url: string;
+  /** The photograph, with the two sizes a client actually paints and the
+   * licence question already answered.
+   *
+   * `thumb` and `hero` exist because the app had its own copy of thumbUrl(),
+   * hand-ported into Swift, and the first version of that port asked Wikimedia
+   * for 800px and got a 400 back on every request: Wikimedia has served only
+   * fixed buckets since 2024, the website had already probed which ones are
+   * live, and a second implementation had to learn it again. A resolved url is
+   * data. A bucket table is a rule, and a rule written twice drifts.
+   *
+   * `credit_required` is the same argument with a smaller blast radius. The web
+   * asks whether the LICENCE obliges a name; the app's own version asked
+   * whether the string contains "BY", which credits "Provided by the Fundacao
+   * Mata do Bucaco" for a licence that obliges nothing. Four live photographs
+   * disagreed across the two surfaces. */
   photo: { url: string; license: string | null; attribution: string | null;
-            width: number | null; height: number | null } | null;
+            width: number | null; height: number | null;
+            thumb: string; hero: string; credit_required: boolean } | null;
 }
 
 export function feedTrees(cities: CityEntry[]): FeedTree[] {
@@ -97,6 +113,11 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
               // arrives, and can tell when a file changed underneath us.
               width: (p as any).width ?? null,
               height: (p as any).height ?? null,
+              // Card size and full-width size, resolved here so no client
+              // needs to know how Wikimedia names a thumbnail.
+              thumb: thumbUrl(p.url, 500),
+              hero: thumbUrl(p.url, 960),
+              credit_required: creditRequired(p.license),
             }
           : null,
       });
