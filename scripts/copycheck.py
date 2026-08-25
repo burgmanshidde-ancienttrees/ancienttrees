@@ -30,6 +30,10 @@ import pathlib
 import re
 import sys
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import copy_rules  # noqa: E402
+import sys
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 APP = ROOT / "ios" / "AncientTrees" / "AncientTrees"
 
@@ -86,6 +90,17 @@ def main():
 
     hits = []
     for path, line, text in strings():
+        # THE HARD BANS FIRST, and they are not a matter of style: an em dash
+        # anywhere breaks hard rule 3 and the four filler words break Step 3.
+        # Both were gated on the website only until 2026-08-25, because the list
+        # lived inside qa.py, which reads site/dist and has never seen a line of
+        # Swift (Hidde, same day: "gebruiken we de juiste zelfde patronen voor
+        # app en web?"). It lives in scripts/copy_rules.py now and both read it.
+        banned = copy_rules.offences(text)
+        if banned:
+            what, why = banned[0]
+            hits.append((path, line, text, f"{why}: {what!r}"))
+            continue
         # Interpolated strings are mostly numbers and names; the tics live in
         # the prose around them and this still sees that.
         for pattern, why in TICS:

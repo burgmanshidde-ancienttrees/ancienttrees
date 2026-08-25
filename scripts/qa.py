@@ -30,7 +30,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DIST = ROOT / "site" / "dist"
 
-BANNED_WORDS = ["hidden gem", "must-see", "breathtaking", "nestled"]
+# Shared with the app since 2026-08-25: scripts/copy_rules.py is read by
+# copycheck.py as well, so a word banned here is banned in the app's strings in
+# the same commit. It used to live only in this file, which only ever reads
+# site/dist.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from copy_rules import BANNED_WORDS  # noqa: E402
 
 # Our own rules are not the reader's business. Hidde, 2026-08-08, on finding the
 # parks index explaining its own publish gate to visitors: "Why are you saying
