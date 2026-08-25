@@ -34,7 +34,8 @@ import subprocess
 import time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import walk_planning as B  # noqa: E402
+import walks_feed as WF  # noqa: E402
+from geo import km as geo_km  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "data", "walk-routes.json")
@@ -133,37 +134,39 @@ def main():
     if os.path.exists(OUT) and not refresh:
         cache = json.load(open(OUT)).get("routes", {})
 
-    entries = [e for e in B.load_cities() if e.get("data")]
+    # THE WALKS THE SITE PUBLISHES, not a second planning of them.
+    #
+    # This script used to plan the walks itself, in Python, from a port of the
+    # same algorithm that site/src/lib/walks.ts runs. Two implementations cannot
+    # be kept in step by discipline and were not: the site plans from
+    # walkableTrees() and this planned from every tree, so the ordered id lists
+    # differed, and the ordered id list is the cache key. 67 of 212 walks had no
+    # route and re-running this said there was nothing to do.
+    #
+    # Hidde, 2026-08-25: "ik denk dat 1 wandelalgoritme wel de moeite is toch om
+    # de boel simpeler en hetzelfde te houden." So the algorithm lives once, in
+    # TypeScript, where the pages and the app's feed are built, and this reads
+    # its output. scripts/walk_planning.py's planning half is gone with it.
+    #
+    # The consequence, stated because it is a real one: a NEW walk gets its
+    # street route on the next deploy rather than the same one. Build, publish,
+    # route, publish again. That is what the two passes today did by hand.
+    coords = WF.tree_coords()
     todo, done, rejected, skipped = [], 0, 0, 0
-    for entry in entries:
-        # THE SAME TREES THE SITE PUTS IN A WALK, or the keys do not match and
-        # the whole cache misses.
-        #
-        # Found 2026-08-25: 67 of 212 walks had no route and re-running this
-        # script said "0 walks to route", because it plans from every tree while
-        # site/src/lib/trees.ts plans from walkableTrees(), which drops the ones
-        # behind a ticket (Hidde, 2026-08-24: "die betaalde bomen niet meenemen
-        # in de wandelingen") and the ones with no story or no coordinates. Two
-        # planners with different inputs produce different ordered id lists, and
-        # the key here IS the ordered id list, so those routes were fetched for
-        # walks that do not exist and missing for the ones that do.
-        trees = [t for t in entry["data"]["trees"]
-                 if t.get("story")
-                 and (t.get("location") or {}).get("latitude") is not None
-                 and (t.get("location") or {}).get("longitude") is not None
-                 and not t.get("paid_entry")]
-        if not trees:
+    for w in WF.walks():
+        ids = [i for i in (w.get("trees") or []) if i in coords]
+        if len(ids) < 2:
             continue
-        markers = [{"lat": t["location"]["latitude"], "lng": t["location"]["longitude"],
-                    "area": (t["location"].get("neighbourhood") or ""),
-                    "shot": (t.get("photo") or {}).get("status") == "approved"} for t in trees]
-        for w in B.plan_walks(markers):
-            ids = [trees[i]["id"] for i in w["order"]]
-            key = entry["slug"] + ":" + ",".join(ids)
-            if key in cache:
-                skipped += 1
-                continue
-            todo.append((key, [(markers[i]["lat"], markers[i]["lng"]) for i in w["order"]], w["km"]))
+        key = (w.get("city_slug") or "") + ":" + ",".join(ids)
+        if key in cache:
+            skipped += 1
+            continue
+        pts = [coords[i] for i in ids]
+        # The crow flies between the stops, in the walk's own order. The feed's
+        # own `km` carries the site's 1.35 detour factor, which would make the
+        # 2.5x check compare a routed distance against an already-inflated one.
+        straight = sum(geo_km(a, b) for a, b in zip(pts, pts[1:]))
+        todo.append((key, pts, round(straight, 2)))
 
     if recheck:
         # Re-judge what is already cached against the rules as they stand now,
@@ -171,12 +174,6 @@ def main():
         # it existed. Also prunes keys no walk uses any more: the ordering
         # changed once today, and the cache kept both orders, one of them good
         # and one of them 75 metres off the tree.
-        coords = {}
-        for entry in entries:
-            for t in entry["data"]["trees"]:
-                loc = t.get("location") or {}
-                if loc.get("latitude") is not None:
-                    coords[t["id"]] = (loc["latitude"], loc["longitude"])
         demoted = 0
         for key in sorted(cache):
             r = cache[key]

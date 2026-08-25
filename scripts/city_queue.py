@@ -56,6 +56,16 @@ ROW = re.compile(r"^\|\s*\d+\s*\|")
 
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
 import walk_planning as B          # noqa: E402
+import walks_feed                  # noqa: E402
+
+# Read once. The walks live in site/src/lib/walks.ts and are published in the
+# feed; this file used to plan them again in Python to count them, which is the
+# duplication Hidde asked to end ("1 wandelalgoritme"). A count is the cheapest
+# possible reason to keep a second implementation alive.
+try:
+    WALKS = walks_feed.by_city()
+except SystemExit:
+    WALKS = {}
 import leads as L                  # noqa: E402
 
 
@@ -219,8 +229,6 @@ def measure(pts):
             continue
         lat = sum(t["location"]["latitude"] for t in ts) / len(ts)
         lng = sum(t["location"]["longitude"] for t in ts) / len(ts)
-        markers = [{"lat": t["location"]["latitude"], "lng": t["location"]["longitude"],
-                    "name": t.get("name", "")} for t in ts]
         lp = os.path.join(ROOT, "data", "leads", f"{slug}.json")
         ready = 0
         if os.path.exists(lp):
@@ -237,7 +245,8 @@ def measure(pts):
             "photos": sum(1 for t in d["trees"]
                           if (t.get("photo") or {}).get("status") == "approved"
                           or (t.get("photo") or {}).get("url")),
-            "walks": len(B.plan_walks(markers)),
+            # The published count, not a second planning of it (2026-08-25).
+            "walks": len(WALKS.get(slug, [])),
             "register": near(pts, lat, lng),
             "ready": ready,
         }

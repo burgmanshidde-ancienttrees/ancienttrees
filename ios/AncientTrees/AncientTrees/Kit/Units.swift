@@ -12,7 +12,17 @@ import SwiftUI
 enum DistanceUnit: String, CaseIterable, Identifiable {
     case metric, imperial
     var id: String { rawValue }
-    var label: String { self == .metric ? "Kilometres" : "Miles" }
+    /// "Kilometers", not "Kilometres" (Hidde, 2026-08-25: "waarom staat er in
+    /// godsnaam kilometres in het spaans"). It is not Spanish, it is British
+    /// English, and that is the more useful finding: the -res spelling is the
+    /// one that reads as foreign to a Dutch eye and to an American one at the
+    /// same time. Apple's own Settings, iOS Maps and Google Maps all write
+    /// Kilometers in a row like this, and it is also the Dutch spelling, so it
+    /// looks native to more readers than the version I reached for out of habit.
+    ///
+    /// The corpus stays British; that is prose about trees. A settings value is
+    /// not prose.
+    var label: String { self == .metric ? "Kilometers" : "Miles" }
 }
 
 @Observable
