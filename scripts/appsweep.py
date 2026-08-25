@@ -134,6 +134,7 @@ def screens(sub):
         ("species",       ["-tab=0", f'-open=species:{sub["species"]}'], 5),
         ("collection",    ["-tab=0", f'-open=collection:{sub["collection"]}'], 5),
         ("walk",          ["-tab=0", f'-open=walk:{sub["walk"]}'], 7),
+        ("place-pin",     ["-tab=0", f'-open=tree:{sub["tree"]}', "-placepin"], 8),
         ("signin",        ["-tab=0", "-signin"], 5),
         ("paywall",       ["-tab=0", "-paywall"], 5),
         ("primer",        ["-tab=0", "-primer"], 5),
