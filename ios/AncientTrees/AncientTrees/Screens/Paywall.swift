@@ -1,11 +1,17 @@
 // The upgrade screen, built to the shape AllTrails uses because that shape is
 // doing specific work rather than looking nice.
 //
-// The element worth copying almost verbatim is the trial timeline. Theirs reads
-// "Vandaag: ontgrendel alle eigenschappen / Dag 5: ontvang een herinnering /
-// Dag 7: er wordt EUR 29,99 in rekening gebracht". It answers the only real
-// objection to a free trial, which is the fear of a silent charge, and it does
-// it by promising a reminder two days before rather than by asking for trust.
+// AS OF 2026-08-25 IT SELLS NOTHING AND SAYS SO. Hidde turned Plus off for the
+// MVP ("it just says it will come soon"), so the trial timeline and the price
+// are gone: they described a charge this app has no way to make. What stays is
+// the part that earns its place in phase 1, which is the list of what Plus will
+// hold and a button that counts who wants it.
+//
+// The timeline is worth rebuilding verbatim the day a processor exists. Theirs
+// reads "Vandaag: ontgrendel alle eigenschappen / Dag 5: ontvang een
+// herinnering / Dag 7: er wordt EUR 29,99 in rekening gebracht", and it answers
+// the only real objection to a free trial by promising a reminder two days
+// before rather than by asking for trust.
 //
 // Two deliberate differences from theirs.
 //
@@ -31,15 +37,11 @@ struct PaywallView: View {
     @State private var signingIn = false
     @State private var failed = false
 
-    private let price = "€19.95"
-    private let trialDays = 7
-
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 22) {
                     headline
-                    timeline
                     everythingElse
                     freeForever
                 }
@@ -72,49 +74,33 @@ struct PaywallView: View {
                 .frame(width: 54, height: 54)
             Text(feature.ask).font(.largeTitle.bold())
             Text(feature.detail).font(.subheadline).foregroundStyle(.secondary)
-            Text("The first week is on us. \(price) a year after that.")
+            // COMING, not for sale (Hidde, 2026-08-25: "I think we should work
+            // towards an MVP of the app that does not allow Plus yet, but it
+            // just says it will come soon"). What stood here was a trial
+            // timeline ending in "19.95 is charged, unless you cancelled",
+            // which described a transaction this app cannot carry out: there
+            // is no processor and the price is not public yet. A screen that
+            // walks somebody through a charge that cannot happen is the one
+            // kind of dishonesty this project cannot afford.
+            Text("Plus is not open yet. We are building it, and this is the list.")
                 .font(.subheadline.weight(.medium))
                 .padding(.top, 2)
         }
     }
 
-    /// The box that removes the fear of a silent charge.
-    private var timeline: some View {
-        VStack(alignment: .leading, spacing: 0) {
-            Text("How the free week works")
-                .font(.footnote.weight(.semibold)).foregroundStyle(.secondary)
-                .padding(.bottom, 12)
-            step("lock.open", "Today", "Everything unlocks.")
-            step("bell", "Day 5", "We remind you the week is nearly up.")
-            step("checkmark.circle", "Day \(trialDays)", "\(price) is charged, unless you cancelled.", last: true)
-        }
-        .padding(16)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Color(.secondarySystemBackground), in: .rect(cornerRadius: 14))
-    }
-
-    private func step(_ icon: String, _ when: String, _ what: String, last: Bool = false) -> some View {
-        HStack(alignment: .top, spacing: 12) {
-            VStack(spacing: 0) {
-                Image(systemName: icon).font(.footnote).frame(width: 22, height: 22)
-                if !last {
-                    Rectangle().fill(.quaternary).frame(width: 1, height: 22)
-                }
-            }
-            VStack(alignment: .leading, spacing: 2) {
-                Text(when).font(.subheadline.weight(.semibold))
-                Text(what).font(.footnote).foregroundStyle(.secondary)
-            }
-            .padding(.bottom, last ? 0 : 14)
-            Spacer()
-        }
-    }
+    // The trial timeline went with the price on 2026-08-25. It was the best
+    // thing on this screen and it was answering a question nobody can ask yet:
+    // "when am I charged" has no answer while there is nothing to charge with.
+    // It is worth rebuilding exactly as it was the day a processor exists, and
+    // the shape is recorded in DECISIONS.md rather than left here as dead code:
+    // today, day five a reminder, day seven the charge.
 
     private var everythingElse: some View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Also included").font(.footnote.weight(.semibold)).foregroundStyle(.secondary)
             ForEach([Feature.offlineDownload, .walkBeyondFirst, .badges,
-                     .photoUpload, .seasonAlerts].filter { $0 != feature }, id: \.rawValue) { f in
+                     .photoUpload, .seasonAlerts].filter { $0 != feature },
+                    id: \.rawValue) { f in
                 HStack(alignment: .top, spacing: 10) {
                     Image(systemName: "checkmark").font(.caption.weight(.bold))
                         .foregroundStyle(Color(red: 0.20, green: 0.35, blue: 0.20))
@@ -132,7 +118,7 @@ struct PaywallView: View {
     /// Said plainly, because it is the strongest thing we have to say and
     /// because it is true: the trees themselves are never behind this.
     private var freeForever: some View {
-        Text("Every tree, every story and every location stays free, here and on the website. This pays for the things that make them easier to reach.")
+        Text("Every tree, every story and every location stays free, here and on the website. Plus will pay for the things that make them easier to reach.")
             .font(.footnote).foregroundStyle(.secondary)
             .padding(16)
             .frame(maxWidth: .infinity, alignment: .leading)

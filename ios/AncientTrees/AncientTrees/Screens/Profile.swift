@@ -38,6 +38,7 @@ struct ProfileView: View {
     @State private var plusPitch = false
     @State private var showingAccount = false
     @State private var showingLegal = false
+    @State private var sponsoring = false
     /// Debug scaffolding, same family as -tab and -open in ContentView: the
     /// screenshot sweep cannot tap, and this sheet is otherwise only reachable
     /// by tapping a card on this screen.
@@ -58,7 +59,13 @@ struct ProfileView: View {
                     .padding(.bottom, 2)
                 identity
                 contributeCard
-                plusCard
+                // No Plus card. It was the loudest thing on the page and it
+                // sold a tier that does not open yet (Hidde, 2026-08-25: "you
+                // can delete the whole see what's included button from profile
+                // right now, but you can add it under settings, like season
+                // alerts"). An upgrade card belongs at the top of a profile in
+                // any app that HAS an upgrade; ours is a promise, and a promise
+                // belongs in a settings row.
                 settingsCard
                 aboutCard
                 version
@@ -71,6 +78,7 @@ struct ProfileView: View {
         .toolbar(.hidden, for: .navigationBar)
         .sheet(isPresented: $contributing) { ContributeView() }
         .sheet(isPresented: $plusPitch) { PaywallView(feature: .seasonAlerts) }
+        .sheet(isPresented: $sponsoring) { PaywallView(feature: .sponsor) }
         .sheet(isPresented: $showingAccount) { accountSheet }
         .sheet(isPresented: $showingLegal) { legalSheet }
         .sheet(isPresented: $signingIn) {
@@ -169,38 +177,8 @@ struct ProfileView: View {
         .contentShape(.rect)
     }
 
-    // MARK: - the upgrade
-
-    /// Near the top, because on a profile page in any app that has one, the
-    /// upgrade is what the page is FOR. What it replaced was five locked rows
-    /// at the very bottom: a features table read as a list of things you
-    /// cannot have.
-    private var plusCard: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            HStack(spacing: 10) {
-                Image(systemName: "leaf.fill").font(.title3).foregroundStyle(Brand.gold)
-                Text("Plus")
-                    .font(.brand(19, .heavy, relativeTo: .headline)).foregroundStyle(Brand.ink)
-            }
-            Text("Season alerts, curated walks, your own photographs and badges, and the whole map offline.")
-                .font(.footnote).foregroundStyle(Brand.inkSoft)
-                .fixedSize(horizontal: false, vertical: true)
-            Button { plusPitch = true } label: {
-                Text("See what's included")
-                    .font(.brand(16, .bold))
-                    .foregroundStyle(.white)
-                    .frame(maxWidth: .infinity).frame(height: 48)
-                    .background(Brand.moss, in: .capsule)
-            }
-            .buttonStyle(.plain)
-            .accessibilityIdentifier("profile-plus")
-            Text("Every tree, story and location stays free, here and on the website.")
-                .font(.caption2).foregroundStyle(Brand.inkSoft)
-        }
-        .padding(18)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .brandCard()
-    }
+    // The upgrade card lived here until 2026-08-25. Its two rows are in
+    // Settings now, next to Season alerts, which is where he put them.
 
     // MARK: - contributing
 
@@ -280,6 +258,63 @@ struct ProfileView: View {
                     }
                     .padding(.horizontal, 16).frame(height: 48)
                 }
+                Divider().padding(.leading, 48)
+                // Offline sits under Plus with the alerts, which is where he
+                // put it on 2026-08-25 ("je zou offline maps bij season alert
+                // kunnen zetten, dat het ook onder plus valt"). It is a row
+                // rather than a switch because there is nothing to switch on
+                // yet: tapping says so and counts that you asked.
+                LockedRow(feature: .offlineDownload, lockGlyph: false) {
+                    HStack(spacing: 12) {
+                        Image(systemName: "arrow.down.circle")
+                            .frame(width: 20).foregroundStyle(Brand.moss)
+                        Text("Offline maps").font(.callout).foregroundStyle(Brand.ink)
+                        Spacer()
+                        Chip(text: "Plus", tint: Brand.gold)
+                    }
+                    .padding(.horizontal, 16).frame(height: 48)
+                }
+                Divider().padding(.leading, 48)
+                // What Plus WILL be, one level down, for anybody who wants the
+                // whole list rather than the row they happened to tap.
+                Button { plusPitch = true } label: {
+                    HStack(spacing: 12) {
+                        Image(systemName: "leaf.fill").frame(width: 20)
+                            .foregroundStyle(Brand.gold)
+                        Text("What Plus will be").font(.callout).foregroundStyle(Brand.ink)
+                        Spacer()
+                        Image(systemName: "chevron.right")
+                            .font(.caption).foregroundStyle(Brand.inkSoft.opacity(0.6))
+                    }
+                    .padding(.horizontal, 16).frame(height: 48)
+                    .contentShape(.rect)
+                }
+                .buttonStyle(.plain)
+                .accessibilityIdentifier("profile-plus")
+                Divider().padding(.leading, 48)
+                // HIS ASK, and the one thing on this screen I did not build in
+                // full (2026-08-25): "we could add a button that just says
+                // sponsor this project, and that would lead to an in-app
+                // purchase of 20 euro a year". The purchase is his under hard
+                // rule 2, so the row measures instead: it asks who would pay
+                // for the project itself rather than for a feature, which is a
+                // different and more interesting question than any of the rows
+                // above it.
+                Button { sponsoring = true } label: {
+                    HStack(spacing: 12) {
+                        Image(systemName: "heart.fill").frame(width: 20)
+                            .foregroundStyle(Brand.moss)
+                        Text("Sponsor this project").font(.callout)
+                            .foregroundStyle(Brand.ink)
+                        Spacer()
+                        Image(systemName: "chevron.right")
+                            .font(.caption).foregroundStyle(Brand.inkSoft.opacity(0.6))
+                    }
+                    .padding(.horizontal, 16).frame(height: 48)
+                    .contentShape(.rect)
+                }
+                .buttonStyle(.plain)
+                .accessibilityIdentifier("profile-sponsor")
             }
             .brandCard()
         }

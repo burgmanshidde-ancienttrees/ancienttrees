@@ -236,8 +236,13 @@ def main():
         # old, sitting next to today's five-tab ones. The whole point of this
         # command is that what you look at is what you just built.
         (out / slug).mkdir(exist_ok=True)
-        for stale in (out / slug).glob("*.png"):
-            stale.unlink()
+        # Only on a FULL sweep. With --only the other screens are not being
+        # re-shot, so wiping them would leave one photograph and a claim that
+        # the rest do not exist, which is a different way of misleading the
+        # person looking (found immediately after adding the wipe).
+        if not args.only:
+            for stale in (out / slug).glob("*.png"):
+                stale.unlink()
 
         for screen, extra, wait in plan:
             sh("xcrun", "simctl", "terminate", udid, BUNDLE, check=False)
