@@ -10,6 +10,64 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-25 (session) - Hidde walked the app and reported thirty things; the first eight are fixed
+
+He installed the app, added trees in Baarn on the 24th and the 25th, and sent
+one message with roughly thirty findings in it. All of them are written down,
+triaged and reasoned about in UX_AUDIT.md under today's date, including the four
+questions he asked and their answers, so nothing is lost and nobody has to read
+this entry to find them.
+
+**Fixed and committed, in one pass (186d5a0d).**
+
+| What | Why it was worth doing first |
+|---|---|
+| Cards clip their own photographs | One line in `brandCard()`. It painted rounded corners and let its content ignore them, so the picture ran square through the top two corners of Explore's cards, the Home shelf and the card for a tree you added. His note stands: this is one I should have caught, and one clip fixed all three |
+| The map stops opening on Amsterdam | `LocationProvider` remembers the last fix this phone had, and the map opens there when the live one has not landed. The chip no longer says "Near Amsterdam" either: naming the wrong town is worse than naming none |
+| Saving needs an account | His reversal of the soft wall. One `SaveHeart` control for both hearts, the tick on the map, the tick in a walk and the camera button, all gated, with a `require()` that ignores the nudge's restraint rules because it is answering a tap rather than choosing a moment |
+| Removing a tree asks first | A confirmation on the heart, which sits on the photograph a thumb away from the tap that opens the tree |
+| The padlock is gone from every card that says Plus | It was also the cause of the spacing he reported on the same screen: `LockedRow` stretches to full width, which is right in a settings list and wrong in a horizontal shelf, so the padlock floated in the gap between two walk cards and the gap grew to about ninety points. Two complaints, one bug |
+| "Walking routes", one label in both states | It said "See walking routes" and then "Hide walking routes". A filled chip already says it is on |
+| No Clear chip | It appeared the moment any filter went on, which reads as a cross growing out of the chip you just tapped. Everything here toggles, and the species sheet carries "Any species" |
+| The ticket badge is blue | It shared gold with Plus, so a ticket read as one of our paid features |
+| His own words on a submitted tree | "You've added this tree. We're taking a look at it, and once it's verified, we will add it to our map." What it replaced boasted about our database at the moment somebody had just given us something |
+| The nav's Get the app goes to the page | His hunch that the overlay converts worse. The overlay is still what the city map's walks CTA opens |
+
+**Two checks got sharper, both because they missed something today.**
+`appsweep.py` now wipes a device's folder before it shoots, because a screen that
+leaves the sweep list leaves its last PNG behind and today that folder held a
+four-tab screen from days ago next to today's five-tab ones. `appfit.py`'s shelf
+rule was 1.5 times the scroller's width, which two 230 point cards in a 375
+point scroller do not reach, so it reported the second one CLIPPED; it only
+passed before today because the padlock wrapper inflated the span, which is to
+say the check was satisfied by the bug it should have reported.
+
+Verified by `appsweep.py` (36 screenshots, looked at) and `appfit.py` (0 findings
+on 17 screens, from 1). `copycheck.py` clean. The website half is one attribute
+and a comment and cannot be built here, so CI is its check.
+
+**FOR HIDDE, and it is one line: the sponsor button is the only thing on your
+list I will not build.** A 20 euro a year in-app purchase is payment, which is
+hard rule 2 and yours alone. I can build the button, the copy and the screen it
+sits on the moment you say so; wiring a purchase needs you.
+
+Two things I am flagging rather than doing quietly. **The sign-in wall reverses
+your own ruling of 2026-08-20**, where saving worked without an account
+precisely so a wall would not buy a bounce before anybody had felt anything. You
+were unambiguous, so it is built, and the argument you overruled is still
+written at the top of Nudge.swift as the first thing to read if signups fall.
+And **the OpenStreetMap credit in Profile cannot simply go**: the basemap is
+OpenFreeMap serving OSM data and the licence requires it. It can move into a
+Legal row where nobody trips over it.
+
+**Not yet done, in the order I would take them.** Turning Plus off for the MVP
+comes first, because it deletes or changes several of the surfaces the rest of
+your list asks me to restyle. Then the hit-testing faults, which are the ones
+that make the app feel broken: one tap on a walk doing nothing, "Want to see" in
+Collected, "A tree I found" needing a hard press. Then the walk that says zero
+ticked off and everything collected in the same breath, the real walking route
+behind "Take me there", the species list showing photographs first, and the
+sheet sitting lower so a card reads whole.
 ## 2026-08-25 - Night run 2026-08-25 10:18 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.
