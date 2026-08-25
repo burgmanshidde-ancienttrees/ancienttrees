@@ -341,6 +341,77 @@ final class AncientTreesUITests: XCTestCase {
                       "leaving the walk did not return to the app")
     }
 
+    /// THE MAP, DRIVEN, several times over, because he asked for exactly that.
+    ///
+    /// Hidde, 2026-08-25: "oprecht er gaat zoveel mis als je scrolt klikt en de
+    /// lijst omhoog en naar beneden klikt, ik weet niet zo goed waar ik moet
+    /// beginnen, kan je deze interactie zelf een paar keer doorlopen testen?"
+    ///
+    /// Every other test here checks one thing once. This one does the sequence a
+    /// person actually performs, twice, and asserts after every step: raise the
+    /// sheet, scroll the list, drag it back down, open a card, come back, raise
+    /// it again. The bugs he keeps finding live in the SECOND lap, where a
+    /// gesture leaves state behind that the first lap never saw.
+    @MainActor
+    func testTheMapSurvivesBeingUsed() throws {
+        let app = launch(["-map", "-signed-in"])
+        let count = app.staticTexts["map-count"]
+        XCTAssertTrue(count.waitForExistence(timeout: 14), "no count on the sheet")
+        let screen = app.frame.height
+
+        for lap in 1...2 {
+            // START LOW. Coming back from a tree page leaves the sheet where you
+            // left it, which is right (Google Maps does the same) and means lap
+            // two does not start where lap one did. The lap has to put it back
+            // rather than assume.
+            if settledY(of: count) < screen * 0.6 {
+                count.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
+                     .press(forDuration: 0.35,
+                            thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.95)))
+            }
+            // UP, by dragging the lip.
+            let low = settledY(of: count)
+            XCTAssertGreaterThan(low, screen * 0.6,
+                                 "lap \(lap): the sheet did not start at its lip")
+            count.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
+                 .press(forDuration: 0.35,
+                        thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.12)))
+            let high = settledY(of: count)
+            XCTAssertLessThan(high, low - 40,
+                              "lap \(lap): dragging the lip up did not raise the sheet "
+                              + "(\(low) to \(high) on \(screen))")
+
+            // SCROLL the list, which is the state that used to trap the sheet.
+            let firstCard = app.buttons.matching(identifier: "tree-card").firstMatch
+            XCTAssertTrue(firstCard.waitForExistence(timeout: 8),
+                          "lap \(lap): no card in the raised sheet")
+            app.swipeUp()
+
+            // DOWN AGAIN, from the header, which is the grip that has to work
+            // whatever the list is doing.
+            count.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
+                 .press(forDuration: 0.35,
+                        thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.95)))
+            let backDown = settledY(of: count)
+            XCTAssertGreaterThan(backDown, high + 40,
+                                 "lap \(lap): the sheet would not come down after the list "
+                                 + "had been scrolled (\(high) to \(backDown) on \(screen))")
+
+            // AND A CARD STILL OPENS, from the raised sheet.
+            count.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
+                 .press(forDuration: 0.35,
+                        thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.12)))
+            let card = app.buttons.matching(identifier: "tree-card").firstMatch
+            XCTAssertTrue(card.waitForExistence(timeout: 8), "lap \(lap): no card to open")
+            card.tap()
+            XCTAssertTrue(app.buttons["Take me there"].waitForExistence(timeout: 8),
+                          "lap \(lap): tapping a card did not open the tree")
+            app.navigationBars.buttons.firstMatch.tap()
+            XCTAssertTrue(count.waitForExistence(timeout: 8),
+                          "lap \(lap): coming back from a tree lost the map's sheet")
+        }
+    }
+
     /// The lane picker on Collection, tapped both ways.
     ///
     /// Hidde has now reported twice that he cannot get back to "Want to see"

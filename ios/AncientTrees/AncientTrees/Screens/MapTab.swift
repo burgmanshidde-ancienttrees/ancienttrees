@@ -41,6 +41,7 @@ struct MapTab: View {
     /// When the map was last moved on purpose, so the list's own settling
     /// cannot move it back. See fly().
     @State private var flewAt: Date?
+    @State private var askingPlus = false
     /// Debug scaffolding, same family as -spot: the search page is only
     /// reachable by tapping and simctl has no finger. `-search` opens it empty,
     /// `-search=lis` opens it with that typed.
@@ -374,6 +375,9 @@ struct MapTab: View {
             selected = t
             sheetHeight = .card
             navigator.showOnMap = nil
+        }
+        .sheet(isPresented: $askingPlus) {
+            PaywallView(feature: .walkBeyondFirst)
         }
         .sheet(isPresented: $pickingSpecies) {
             SpeciesPicker(catalogue: catalogue,
@@ -848,9 +852,15 @@ struct MapTab: View {
                         .font(.caption).foregroundStyle(Brand.inkSoft)
                         .fixedSize(horizontal: false, vertical: true)
                 }
-                Button {
-                    navigator.beginWalk = .init(city: w.citySlug, name: w.name)
-                } label: {
+                // PREVIEW FREE, WALKING BEHIND PLUS (Hidde, 2026-08-25: "het is
+                // goed als je een preview geeft van de wandeling maar daarna als
+                // je klikt niet naar google maps gaan maar naar plus, coming soon
+                // verwijzen"). Seeing the route on the map is how anybody decides
+                // whether it is worth having; walking it is the thing his own
+                // pricing sells. Begin used to open our walk mode, whose way to
+                // the next tree is a hand-off to a maps app, so the paid feature
+                // ended in somebody else's product.
+                Button { askingPlus = true } label: {
                     Label("Begin", systemImage: "location.fill")
                 }
                 .buttonStyle(BrandButtonStyle())

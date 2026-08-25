@@ -97,10 +97,16 @@ struct BottomSheet<Header: View, Content: View>: View {
     /// Set the moment a downward drag begins at the top, which turns scrolling
     /// off for the rest of that gesture so the two never fight.
     @State private var handingOff = false
-    /// How deep the grabber and the header are, measured from the sheet's own
-    /// top. A downward drag that starts inside them belongs to the sheet
+    /// How deep the grabber and the header are, measured FROM THE SHEET'S OWN
+    /// TOP. A downward drag that starts inside them belongs to the sheet
     /// whatever the list is doing, which is what makes the header a handle.
-    private let headerDepth: CGFloat = 74
+    ///
+    /// The first version compared against the screen's top and therefore never
+    /// fired: the sheet's top edge sits at 171 points on a raised sheet, so a
+    /// drag on the header reports a startLocation.y of about 190 and 190 is not
+    /// less than 74. A test that drives the real sequence caught it in one run
+    /// (2026-08-25); the fix I shipped an hour earlier had not worked at all.
+    private let headerDepth: CGFloat = 90
 
     var body: some View {
         GeometryReader { geo in
@@ -171,7 +177,7 @@ struct BottomSheet<Header: View, Content: View>: View {
                         // describe. Everything else belongs to the list.
                         if height == .peek {
                             drag = value.translation.height
-                        } else if (atTop || value.startLocation.y < headerDepth)
+                        } else if (atTop || value.startLocation.y - (geo.size.height - h) < headerDepth)
                                     && value.translation.height > 0 {
                             handingOff = true
                             drag = value.translation.height
