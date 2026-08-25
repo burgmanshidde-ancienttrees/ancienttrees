@@ -250,7 +250,7 @@ struct CollectSheet: View {
     }
 
     @ViewBuilder private func thumb(_ t: Tree) -> some View {
-        if let p = t.photo, let url = Photos.thumb(p.url, width: 200) {
+        if let p = t.photo, let url = p.card {
             AsyncImage(url: url) { img in
                 img.resizable().aspectRatio(contentMode: .fill)
             } placeholder: {

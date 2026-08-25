@@ -507,6 +507,91 @@ def check_species_face_is_chosen():
     return out
 
 
+def check_faces_travel_to_the_app():
+    """The thirteenth ratchet check, from 2026-08-25.
+
+    Hidde, on a species card fronted by a photograph of a fountain: "do you save
+    the thumbnails between app and web and make sure we use the same ones?" We
+    did not. The website ranks the photographs in a set and honours a pin set by
+    hand (hero_tree_id, face_tree_id); the app took the FIRST tree it found with
+    a picture, because /api/browse.json carried no answer for it to read. So one
+    city could wear two faces depending on which screen you were holding, and a
+    pin fixed exactly one of them.
+
+    This is the same class of error as the twelfth check above, one surface
+    further out: there, a page ignored the pin; here, a whole platform did. The
+    fix is that the choice travels as DATA (a tree id in the feed) rather than as
+    a rule implemented twice, so this check guards both halves of that.
+
+    Half one: every facet in the feed names its face, and every face it names is
+    a live tree with a usable photograph.
+
+    Half two: no Swift screen picks a card face by taking the first tree with a
+    photograph. That line is what this whole exercise was about, and it reads so
+    naturally that it will be typed again."""
+    out = []
+    root = Path(__file__).resolve().parent.parent
+    browse_path = DIST / "api" / "browse.json"
+    trees_path = DIST / "api" / "trees.json"
+    if browse_path.exists() and trees_path.exists():
+        browse = json.loads(browse_path.read_text(encoding="utf-8"))
+        feed = json.loads(trees_path.read_text(encoding="utf-8"))
+        trees = feed["trees"] if isinstance(feed, dict) else feed
+        photographed = {t["id"] for t in trees if t.get("photo")}
+        live = {t["id"] for t in trees}
+        # Which trees each facet holds, so "no face" can be told apart from "no
+        # photograph anywhere in this facet", which is an honest null.
+        members = {}
+        for kind in ("collections", "parks", "species"):
+            for f in browse.get(kind, []):
+                members[(kind, f.get("slug") or f.get("name"))] = set(f.get("trees") or [])
+        by_city, by_country = {}, {}
+        for t in trees:
+            by_city.setdefault(t.get("city_slug"), set()).add(t["id"])
+            by_country.setdefault(t.get("country"), set()).add(t["id"])
+        for f in browse.get("cities", []):
+            members[("cities", f.get("slug"))] = by_city.get(f.get("slug"), set())
+        for f in browse.get("countries", []):
+            members[("countries", f.get("slug"))] = by_country.get(f.get("name"), set())
+
+        for kind in ("cities", "countries", "species", "parks", "collections"):
+            facets = browse.get(kind)
+            if facets is None:
+                out.append("/api/browse.json carries no %s facet, so the app has "
+                           "nothing to read and goes back to guessing" % kind)
+                continue
+            for f in facets:
+                key = f.get("slug") or f.get("name")
+                if "face" not in f:
+                    out.append("%s facet %s names no face, so the app picks its own "
+                               "picture and the two surfaces drift" % (kind, key))
+                    continue
+                face = f.get("face")
+                mine = members.get((kind, key), set())
+                if face is None:
+                    if mine & photographed:
+                        out.append("%s facet %s has a photographed tree and still "
+                                   "names no face" % (kind, key))
+                elif face not in live:
+                    out.append("%s facet %s names face %s, which is not a live tree"
+                               % (kind, key, face))
+                elif face not in photographed:
+                    out.append("%s facet %s names face %s, which has no usable "
+                               "photograph" % (kind, key, face))
+
+    ios = root / "ios"
+    if ios.exists():
+        for f in sorted(ios.rglob("*.swift")):
+            src = f.read_text(encoding="utf-8")
+            for line_no, line in enumerate(src.splitlines(), 1):
+                if "first { $0.photo != nil }" in line or "first { $0.photo != nil &&" in line:
+                    out.append("%s:%d picks a card face by taking the first tree with "
+                               "a photograph. The face is decided on the server and "
+                               "travels in the feed; read catalogue.face(...)"
+                               % (f.relative_to(root), line_no))
+    return out
+
+
 def check_sheet_integrity():
     """The tenth ratchet check, from 2026-08-18.
 
@@ -814,6 +899,7 @@ def main():
     failures += check_no_name_promise(pages)
     failures += check_tree_count_claims(pages)
     failures += check_species_face_is_chosen()
+    failures += check_faces_travel_to_the_app()
 
     if failures:
         print(f"QA FAILED: {len(failures)} problem(s) in {len(pages)} pages")

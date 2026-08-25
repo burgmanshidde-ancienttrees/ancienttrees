@@ -29,13 +29,39 @@ public struct Photo: Codable, Hashable, Sendable {
     public let attribution: String?
     public let width: Int?
     public let height: Int?
+    /// Card size and full-width size, already resolved by the feed. Optional
+    /// only because a snapshot bundled before 2026-08-25 does not carry them,
+    /// and one missing non-optional field rejects the whole catalogue.
+    let thumbRaw: String?
+    let heroRaw: String?
+    /// Does the LICENCE oblige us to name somebody. Answered on the server, by
+    /// the same function the website's figcaptions use.
+    let creditRequiredRaw: Bool?
+
+    enum CodingKeys: String, CodingKey {
+        case url, license, attribution, width, height
+        case thumbRaw = "thumb"
+        case heroRaw = "hero"
+        case creditRequiredRaw = "credit_required"
+    }
+
+    /// The url for a card or a list row.
+    public var card: URL? { thumbRaw.flatMap { URL(string: $0) } ?? Photos.thumb(url, width: 500) }
+    /// The url for a full-width hero.
+    public var full: URL? { heroRaw.flatMap { URL(string: $0) } ?? Photos.thumb(url, width: 960) }
 
     /// CC BY and BY-SA oblige a visible credit and that is the licence's price,
     /// never something to strip. Anything else may render without one.
+    ///
+    /// The feed answers this now. The fallback below is the app's old rule and
+    /// it was wrong in a way worth remembering: it asked whether the licence
+    /// string contains "BY", so "Provided by the Fundacao Mata do Bucaco, all
+    /// rights reserved" printed a credit the website did not, on four live
+    /// photographs. A substring is not a licence.
     public var creditRequired: Bool {
+        if let creditRequiredRaw { return creditRequiredRaw }
         guard let license else { return true }
-        let l = license.uppercased()
-        return l.contains("BY")
+        return license.uppercased().contains("BY")
     }
 }
 
@@ -195,13 +221,20 @@ public struct TreeCollection: Codable, Hashable, Sendable, Identifiable {
     public var id: String { slug }
 }
 
-/// A named park, country or species with the trees in it. Decoded loosely on
-/// purpose: /api/browse.json carries four facets and the app uses what it can.
+/// A named city, park, country or species with the trees in it. Decoded loosely
+/// on purpose: /api/browse.json carries five facets and the app uses what it can.
 public struct BrowseFacet: Codable, Hashable, Sendable, Identifiable {
     public let slug: String?
     public let name: String
     public let trees: [String]?
     public let count: Int?
+    /// The website's own hand-written introduction to this facet. It has been in
+    /// the feed since 2026-08-19 and nothing here decoded it.
+    public let intro: String?
+    /// The id of the tree whose photograph fronts this facet, decided once on
+    /// the server (site/src/lib/images.ts) so the app shows the same picture the
+    /// website shows and a hand-set pin reaches both.
+    public let face: String?
 
     public var id: String { slug ?? name }
 }
@@ -209,6 +242,55 @@ public struct BrowseFacet: Codable, Hashable, Sendable, Identifiable {
 public struct BrowseFeed: Codable, Sendable {
     public let version: String
     public let collections: [TreeCollection]
+    /// All optional: a snapshot bundled before 2026-08-25 carries neither the
+    /// cities array nor any face, and one missing field must not cost the app
+    /// its collections.
+    public let cities: [BrowseFacet]?
+    public let countries: [BrowseFacet]?
+    public let species: [BrowseFacet]?
+    public let parks: [BrowseFacet]?
+}
+
+/// The browse facets as the app holds them: keyed for lookup, answering only
+/// what the feed actually said. Nothing is decided here on purpose. A facet's
+/// face and its intro are the website's judgement, and the whole point of
+/// carrying them is that the two surfaces cannot disagree.
+public struct BrowseFacets: Sendable {
+    public static let empty = BrowseFacets(cities: [], countries: [], species: [], parks: [])
+
+    public let cities: [BrowseFacet]
+    public let countries: [BrowseFacet]
+    public let species: [BrowseFacet]
+    public let parks: [BrowseFacet]
+
+    private let cityBySlug: [String: BrowseFacet]
+    private let countryByName: [String: BrowseFacet]
+    private let speciesByName: [String: BrowseFacet]
+
+    public init(cities: [BrowseFacet], countries: [BrowseFacet],
+                species: [BrowseFacet], parks: [BrowseFacet]) {
+        self.cities = cities
+        self.countries = countries
+        self.species = species
+        self.parks = parks
+        self.cityBySlug = Dictionary(cities.compactMap { f in f.slug.map { ($0, f) } },
+                                     uniquingKeysWith: { a, _ in a })
+        self.countryByName = Dictionary(countries.map { ($0.name, $0) },
+                                        uniquingKeysWith: { a, _ in a })
+        self.speciesByName = Dictionary(species.map { ($0.name, $0) },
+                                        uniquingKeysWith: { a, _ in a })
+    }
+
+    public init(feed: BrowseFeed?) {
+        self.init(cities: feed?.cities ?? [], countries: feed?.countries ?? [],
+                  species: feed?.species ?? [], parks: feed?.parks ?? [])
+    }
+
+    public func face(city slug: String) -> String? { cityBySlug[slug]?.face }
+    public func face(country name: String) -> String? { countryByName[name]?.face }
+    public func face(species commonName: String) -> String? { speciesByName[commonName]?.face }
+    public func intro(species commonName: String) -> String? { speciesByName[commonName]?.intro }
+    public func intro(country name: String) -> String? { countryByName[name]?.intro }
 }
 
 /// `/api/version.json`, the cheap call that says whether anything changed.

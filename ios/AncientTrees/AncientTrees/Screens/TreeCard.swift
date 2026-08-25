@@ -46,7 +46,7 @@ struct TreeCard: View {
     }
 
     @ViewBuilder private var image: some View {
-        if let p = tree.photo, let url = Photos.thumb(p.url, width: 500) {
+        if let p = tree.photo, let url = p.card {
             // The same empty box with the photograph laid over it as the tree
             // page's hero, and for the same reason: a .fill image proposes the
             // width its own picture wants, and a card that does that makes the

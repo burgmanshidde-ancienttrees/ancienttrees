@@ -8,6 +8,13 @@
 // back 400. Wikimedia has served only fixed thumbnail buckets since 2024, and
 // the website had already probed which ones are live (250/330/500/960) and
 // written it down. Reading our own code first would have saved the round trip.
+//
+// SINCE 2026-08-25 THIS IS A FALLBACK, NOT THE PATH. The feed now carries the
+// card and hero urls already resolved (Photo.card, Photo.full), so the bucket
+// table below only runs for a snapshot bundled before that date. That is the
+// general shape CLAUDE.md now states: an answer travels in the feed, a rule
+// stays on the server. A bucket table is a rule, and this one had to learn
+// Wikimedia's answer twice.
 
 import Foundation
 

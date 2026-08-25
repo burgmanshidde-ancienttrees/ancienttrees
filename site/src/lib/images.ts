@@ -209,35 +209,84 @@ export interface CityEntryLike {
   trees?: TreeLike[];
 }
 
-/** The city's face photo url at card size: the hero tree when it has a photo
- * big enough for the box, else the biggest landscape photograph in the city,
- * else whatever there is.
+/** One tree ranked as a possible card face. Three properties, because they are
+ * all a machine can judge about a photograph: has it enough pixels for the box,
+ * is it landscape, and how wide is it. Whether the TREE is the subject is a
+ * person's judgement and travels as a pin instead.
  *
- * Hero-or-first-found was how a 375px file came to front a city everywhere
- * (Hidde, 2026-08-21, on soft thumbnails in the map sidebar). The rank is the
- * same one the homepage shelves use: enough pixels first, landscape second,
- * widest third, because these boxes are all letterboxes.
+ * WHY THIS RETURNS THE TREE and not a url (2026-08-25). Every card face used to
+ * be decided as a url, three times over in this file and again on four pages,
+ * and the app could not read any of it: it took the first tree with a
+ * photograph, so a city's face on a phone was a different picture from the same
+ * city's face on the web, and no pin reached the app at all. A tree ID is the
+ * thing both surfaces can agree on, because it is data that travels in the feed
+ * rather than a rule that has to be written twice.
  */
-export function cityFace(cityData: CityEntryLike, width = 400): string | null {
-  const trees = cityData.trees ?? [];
-  const rank = (t: TreeLike | undefined) => {
-    if (!t) return null;
-    const p = usablePhoto(t) as { url?: string; width?: number; height?: number } | null;
-    if (!p?.url) return null;
-    const w = photoWidth(p);
-    const h = p.height ?? 0;
-    return { url: p.url, big: w === 0 || w >= MIN_CARD_PX, landscape: w > 0 && h > 0 && w >= h, w };
-  };
-  const hero = cityData.hero_tree_id
-    ? rank(trees.find((t) => t.id === cityData.hero_tree_id)) : null;
-  if (hero?.big) return thumbUrl(hero.url, width);
+interface FaceRank<T> { tree: T; url: string; big: boolean; landscape: boolean; w: number }
+
+function faceRank<T extends TreeLike>(t: T | undefined): FaceRank<T> | null {
+  if (!t) return null;
+  const p = usablePhoto(t) as { url?: string; width?: number; height?: number } | null;
+  if (!p?.url) return null;
+  const w = photoWidth(p);
+  const h = p.height ?? 0;
+  return { tree: t, url: p.url, big: w === 0 || w >= MIN_CARD_PX,
+           landscape: w > 0 && h > 0 && w >= h, w };
+}
+
+/** The best photograph in a set for a letterbox box: enough pixels first,
+ * landscape second, widest third. `exclude` lets a page that lays out several
+ * shelves at once avoid printing one photograph twice. */
+export function bestFaceTree<T extends TreeLike>(trees: T[], exclude?: Set<string>): T | null {
   const best = trees
-    .map(rank)
-    .filter((c): c is NonNullable<typeof c> => c !== null)
+    .map((t) => faceRank(t))
+    .filter((c): c is FaceRank<T> => c !== null && !(exclude?.has(c.url)))
     .sort((a, b) => Number(b.big) - Number(a.big)
       || Number(b.landscape) - Number(a.landscape) || b.w - a.w)[0];
-  if (best) return thumbUrl(best.url, width);
-  return hero ? thumbUrl(hero.url, width) : null;
+  return best ? best.tree : null;
+}
+
+/** The tree that fronts a city: its pinned hero when that photograph is big
+ * enough for the box, else the best one in the city, else the hero anyway. */
+export function cityFaceTree<T extends TreeLike>(
+  cityData: { hero_tree_id?: string | null; trees?: T[] },
+): T | null {
+  const trees = cityData.trees ?? [];
+  const hero = cityData.hero_tree_id
+    ? faceRank(trees.find((t) => t.id === cityData.hero_tree_id)) : null;
+  if (hero?.big) return hero.tree;
+  const best = bestFaceTree(trees);
+  if (best) return best;
+  return hero ? hero.tree : null;
+}
+
+/** The tree that fronts a species: the pinned one when a person set it, else
+ * the best in the set. A pin ignores `exclude`, because somebody chose it. */
+export function speciesFaceTree<T extends TreeLike>(
+  faceTreeId: string | null | undefined,
+  trees: T[],
+  exclude?: Set<string>,
+): T | null {
+  const pinned = faceTreeId ? faceRank(trees.find((t) => t.id === faceTreeId)) : null;
+  if (pinned) return pinned.tree;
+  return bestFaceTree(trees, exclude);
+}
+
+/** The tree that fronts a park, and this is the weak one: the FIRST tree with a
+ * usable photograph, which is the rule every other card here has stopped using.
+ * Kept exactly as /parks had it so that moving the choice into the feed changes
+ * nothing a reader can see. Improving it is now one edit in one place instead of
+ * one per surface, which is the whole point of this module. */
+export function parkFaceTree<T extends TreeLike>(trees: T[]): T | null {
+  return trees.find((t) => Boolean(usablePhoto(t)?.url)) ?? null;
+}
+
+/** The city's face photo url at card size. Thin wrapper over cityFaceTree, so
+ * the website renders exactly the picture the feed names. */
+export function cityFace(cityData: CityEntryLike, width = 400): string | null {
+  const t = cityFaceTree(cityData);
+  const url = t ? usablePhoto(t)?.url : null;
+  return url ? thumbUrl(url, width) : null;
 }
 
 /** The species card face: the pinned tree when one is set, else the best
@@ -266,22 +315,9 @@ export function speciesFace(
   width = 400,
   exclude?: Set<string>,
 ): string | null {
-  const rank = (t: TreeLike | undefined) => {
-    if (!t) return null;
-    const p = usablePhoto(t) as { url?: string; width?: number; height?: number } | null;
-    if (!p?.url) return null;
-    const w = photoWidth(p);
-    const h = p.height ?? 0;
-    return { url: p.url, big: w === 0 || w >= MIN_CARD_PX, landscape: w > 0 && h > 0 && w >= h, w };
-  };
-  const pinned = faceTreeId ? rank(trees.find((t) => t.id === faceTreeId)) : null;
-  if (pinned) return thumbUrl(pinned.url, width);
-  const best = trees
-    .map(rank)
-    .filter((c): c is NonNullable<typeof c> => c !== null && !(exclude?.has(c.url)))
-    .sort((a, b) => Number(b.big) - Number(a.big)
-      || Number(b.landscape) - Number(a.landscape) || b.w - a.w)[0];
-  return best ? thumbUrl(best.url, width) : null;
+  const t = speciesFaceTree(faceTreeId, trees, exclude);
+  const url = t ? usablePhoto(t)?.url : null;
+  return url ? thumbUrl(url, width) : null;
 }
 
 /** The same face, as a 1x/2x pair for a fixed-size box. A retina screen paints

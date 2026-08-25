@@ -5,7 +5,7 @@ import Base from "../layouts/Base.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { cityIsRenderable } from "../lib/trees";
 import { groupTreesByPark, PARK_MIN_TREES } from "../lib/parks";
-import { usablePhoto, thumbUrl } from "../lib/images";
+import { usablePhoto, thumbUrl, parkFaceTree } from "../lib/images";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { fitTitle } from "../lib/title";
 import { byCityListOrder, byCityListOrderEntry } from "../lib/city-order";
@@ -27,7 +27,10 @@ const cards = [...groups.values()]
   .sort((a, b) => b.trees.length - a.trees.length)
   .map((g) => {
     const intro = introByKey.get(`${g.citySlug} ${g.parkName}`)!;
-    const face = g.trees.map((t) => usablePhoto(t)).find((p) => p?.url);
+    // The same helper the feed uses, so the app's park card cannot show a
+    // different picture from this one.
+    const faceTree = parkFaceTree(g.trees);
+    const face = faceTree ? usablePhoto(faceTree) : null;
     return {
       slug: intro.data.slug,
       name: intro.data.name || intro.data.park,
