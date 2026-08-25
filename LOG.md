@@ -10,6 +10,69 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-25 (session) - one decision about which photograph, and two silent bugs found on the way
+
+He sent a screenshot of the species shelf: a "Cedar of Lebanon" card fronted by a
+photograph of a fountain. Then the real question: "do you save the thumbnails
+between app and web and make sure we use the same ones?"
+
+**The fountain.** Verona's Giardini di Piazza Bra, 6000 by 4000, mostly fountain
+with the Arena behind it. It won because the ranking rewards pixels and landscape
+shape, which is what a wide scenic garden photograph has and a tree portrait
+usually has not. Pinned the Grange Cedar in Geneva instead, after looking at four
+candidates: Rome's was a close-up of cones, Paris's a distant canopy. He then
+said the other thumbnails are good, so no viewing pass ran.
+
+**The answer to his question was no, in the half that matters.** No thumbnail
+file exists anywhere; both surfaces rewrite a url into a hosted size, and those
+rules matched. What did not match was the CHOICE. The website ranks a set and
+honours a pin; the app took the first tree it found with a picture, so a city
+could wear two faces and neither hero_tree_id nor face_tree_id reached the phone
+at all. He said "trek gelijk", then asked the sharper question: "ik heb het idee
+dat er veel dingen op web goed gaan waar app geen gebruik van maakt. hoe kunnen
+we dit slimmer en consistenter doen?"
+
+**The pattern, now written into CLAUDE.md as a rule.** Everything the website
+decides and SENDS is right on both surfaces: the season peak, the phenology, the
+walks, the intros. Everything the website decides and the app RE-DECIDES has
+drifted, every time: the card face, Wikimedia's thumbnail buckets (the Swift port
+asked for 800px and got a 400 back on every request), and whether a licence
+obliges a credit (the app asked whether the string contains "BY", which credits
+"Provided by the Fundacao Mata do Bucaco" for a licence that obliges nothing;
+four live photographs disagreed). So: a decision travels as data in the feed,
+never as a rule written twice. An answer is a tree id, a url, a boolean. A rule
+is a ranking, a bucket table, a substring match, and it stays on the server.
+
+**What shipped.** Every facet in /api/browse.json now names a `face`, a tree id,
+decided by one set of functions in images.ts that the website's own pages call.
+The tree feed carries `thumb`, `hero` and `credit_required` already resolved. The
+app reads all of it (`catalogue.face(city:)`, `Photo.card`, `Photo.full`) and
+picks nothing itself. Nothing a reader sees on the website changed.
+
+**Two bugs found while doing it, both invisible and both older than today.**
+The species facet in the feed matched by substring, so every Small-leaved Lime
+sat in the Lime facet: Lime's count in the app was 77 against the website's 7.
+And groupTreesByPark keyed its map with a NUL byte while five pages built the
+same key with a space, which meant the filter deciding whether a tree links to
+its park page had been comparing across the two schemes and **not one of 3,500
+tree pages had ever linked to the park it stands in.** No error, no failing
+check, nothing in the HTML to notice. parkGroupKey() owns that key now.
+
+Three checks hold all of it: `check_faces_travel_to_the_app()` (every facet names
+a face, every face is a live photographed tree, no Swift screen takes the first
+tree with a photograph) and `check_park_key_is_one_function()`.
+
+**FOR HIDDE, one open question that is yours rather than mine.** The photo credit
+reads two different ways on purpose and I did not resolve it: the website prints
+"Photo: name (licence)" in full, the app trims ", via Wikimedia Commons" off the
+end, which came from your "als de foto referentie subtieler kan". Same licence,
+two wordings. Say which one wins and both surfaces will read it from one place.
+
+**Not verified with eyes yet:** the app's screens. The Swift compiles (built
+clean on the iPhone SE), but another session was mid-build on this checkout and
+its Collect.swift does not compile in CI at the moment, so the sweep is queued
+rather than done.
+
 ## 2026-08-25 (session, second pass) - the rest of his app walk, twenty-one of thirty done
 
 He said "kun je de andere dingen ook doen die ik heb gezegd", and then sent four
