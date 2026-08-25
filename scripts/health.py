@@ -31,6 +31,14 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 WATCHED = {
     "smoke.yml": ("Smoke test", None, None),
     "deploy.yml": ("Build and deploy", None, None),
+    # THE APP, watched from 2026-08-25. It had a full CI gate since 08-20 that
+    # builds it, runs seventeen tests and measures every screen's layout, and
+    # nothing on this list read the verdict, so it sat RED from 08-24 to 08-25
+    # through five pushes while Hidde found the same bugs on his own telephone
+    # and asked "kunnen we de app dezelfde kwaliteit qa of ci testen als de
+    # website geven, er gaat veel fout volgens mij". The gate was not the
+    # missing piece. Somebody looking at it was.
+    "ios.yml": ("iOS app", None, None),
     "data-digest.yml": ("Data digest", datetime.timedelta(hours=26),
                         "gh workflow run data-digest.yml"),
     "review.yml": ("Fresh-eyes review", datetime.timedelta(hours=26),
@@ -138,8 +146,17 @@ def main():
         age = now - when
         hours = age.total_seconds() / 3600
         if conclusion not in ("success", None) and conclusion != "cancelled":
-            problems.append(f"{label} is {conclusion} (its newest run, {hours:.0f}h ago). "
-                            "The site may be broken; read the failing log before anything else.")
+            # The app is not the site, and a run told to read a failing log
+            # should be told which thing is broken. `gh run view --log-failed`
+            # on the newest ios.yml run prints the failed assertions; the
+            # xcresult artifact carries the screenshot XCTest took at each one.
+            what = ("The APP is broken, not the site; the failed assertions are "
+                    "in the log and the screenshots are in its xcresult artifact"
+                    if wf == "ios.yml"
+                    else "The site may be broken; read the failing log before "
+                         "anything else")
+            problems.append(f"{label} is {conclusion} (its newest run, "
+                            f"{hours:.0f}h ago). {what}.")
         if max_age and age > max_age:
             problems.append(f"{label} has not run in {hours:.0f}h "
                             f"(threshold {max_age.total_seconds()/3600:.0f}h). "

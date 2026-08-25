@@ -37,6 +37,7 @@ one, add its argument too.
 
 import argparse
 import json
+import re
 import os
 import pathlib
 import subprocess
@@ -104,6 +105,7 @@ def screens(sub):
     """
     plan = [
         ("map",           ["-tab=0"], 7),
+        ("map-full",      ["-tab=0", "-sheet=full"], 7),
         ("explore",       ["-tab=1"], 4),
         ("collect-intro", ["-collect"], 5),
         ("collect-away",  ["-collect", "-at=52.03,5.91"], 6),
@@ -200,6 +202,51 @@ def bundled_data_note():
         pass
 
 
+SWEEPFRAMES = (ROOT / "ios" / "AncientTrees" / "AncientTreesUITests"
+               / "SweepFrames.swift")
+
+
+def check_lists():
+    """The two screen lists must be the same list, and twice they were not.
+
+    CLAUDE.md has said since 2026-08-20 that "the screen list in appsweep.py and
+    in SweepFrames.swift are kept the same list", because a screen no argument
+    can open is a screen that ships unseen. On 2026-08-25 they disagreed in both
+    directions: this file called tab 3 "collection" (which collided with the
+    curated collection PAGE and overwrote its photograph) while SweepFrames still
+    called it "yours", and this file had a search screen SweepFrames had never
+    heard of. So the app was photographing a screen it did not measure and
+    measuring a screen under a different name.
+
+    A sentence in a document could not hold that. This can: it reads both lists
+    and refuses when they differ.
+
+    Returns a list of complaints, empty when the two agree.
+    """
+    mine = [p[0] for p in screens(pick_subjects())]
+    text = SWEEPFRAMES.read_text(encoding="utf-8")
+    # Stop at the line that closes the literal, not at the first "]": the type
+    # annotation itself carries two of them.
+    after = text.split("private static let screens", 1)[-1]
+    lines = []
+    for line in after.splitlines()[1:]:
+        if line.strip() == "]":
+            break
+        lines.append(line)
+    block = "\n".join(lines)
+    theirs = re.findall(r'\(\s*"([a-z0-9-]+)"', block)
+    out = []
+    for name in mine:
+        if name not in theirs:
+            out.append(f"appsweep photographs '{name}' and SweepFrames.swift "
+                       f"does not measure it")
+    for name in theirs:
+        if name not in mine:
+            out.append(f"SweepFrames.swift measures '{name}' and appsweep does "
+                       f"not photograph it")
+    return out
+
+
 def build(dd):
     bundled_data_note()
     # Refuses when another session is live in this checkout; silent otherwise.
@@ -227,7 +274,18 @@ def main():
     ap.add_argument("--no-build", action="store_true")
     ap.add_argument("--only", default=None, help="one screen name")
     ap.add_argument("--device", default=None, help="one device name")
+    ap.add_argument("--check-lists", action="store_true",
+                    help="only check that appsweep and SweepFrames agree")
     args = ap.parse_args()
+
+    drift = check_lists()
+    if drift:
+        for d in drift:
+            print("  " + d)
+        sys.exit("the sweep and the layout gate disagree about which screens exist")
+    if args.check_lists:
+        print("the sweep and the layout gate agree on every screen")
+        return 0
 
     scratch = os.environ.get("CLAUDE_SCRATCHPAD", "/tmp")
     out = pathlib.Path(args.out or f"{scratch}/appsweep")

@@ -33,6 +33,11 @@ final class SweepFrames: XCTestCase {
     /// both "drifted" from things nobody could see (2026-08-21).
     private static let screens: [(String, [String], String?)] = [
         ("map",          ["-tab=0"], nil),
+        // The map with the sheet all the way up, which is a different screen
+        // and was never measured: the way BACK from it is a floating button
+        // that exists in the tree whether or not it is on top of the sheet
+        // (2026-08-25).
+        ("map-full",     ["-tab=0", "-sheet=full"], nil),
         ("explore",      ["-tab=1"], nil),
         ("collect-intro", ["-collect"], "spot-sheet"),
         ("collect-away", ["-collect", "-at=52.03,5.91"], "spot-sheet"),

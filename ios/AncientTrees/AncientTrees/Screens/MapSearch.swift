@@ -255,7 +255,12 @@ struct MapSearch: View {
         Text(t)
             .font(.eyebrow).textCase(.uppercase).tracking(0.8)
             .foregroundStyle(Brand.inkSoft)
-            .padding(.horizontal, 20).padding(.top, 18).padding(.bottom, 6)
+            // 16, matching the field above and every card in the app. It was
+            // 20 here and in the rows below, so this screen carried two left
+            // margins four points apart, which is the drift appfit exists to
+            // name and which it only saw once it was pointed at a large phone
+            // (2026-08-25).
+            .padding(.horizontal, 16).padding(.top, 18).padding(.bottom, 6)
     }
 
     private func row(_ name: String, _ sub: String, _ icon: String,
@@ -274,7 +279,7 @@ struct MapSearch: View {
                 }
                 Spacer(minLength: 8)
             }
-            .padding(.horizontal, 20).frame(minHeight: 56)
+            .padding(.horizontal, 16).frame(minHeight: 56)
             .contentShape(.rect)
         }
         .buttonStyle(.plain)

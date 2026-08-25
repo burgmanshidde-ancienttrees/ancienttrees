@@ -50,6 +50,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Cheapest first, and no simulator needed: the sweep's screen list and the
+      # layout gate's screen list must be the same list. They drifted twice
+      # (2026-08-25) and the cost was a screen photographed under a name that
+      # overwrote another screen's picture, so the Collection tab went a day
+      # unlooked at while a file with its name sat in the folder.
+      - name: Do the two screen lists agree
+        run: python3 scripts/appsweep.py --check-lists
+
       - name: Which Xcode
         run: |
           sudo xcode-select -s /Applications/Xcode_26.6.app/Contents/Developer 2>/dev/null || true
@@ -167,7 +175,31 @@ jobs:
           # and appfit disables parallel testing so the file survives, because a
           # UI test otherwise runs on a throwaway CLONE of the simulator that is
           # deleted with the file inside it.
-          python3 scripts/appfit.py --device "${{ steps.sim.outputs.udid }}"
+          # EVERY phone, not one. It measured only the smallest until
+          # 2026-08-25, and the big one was carrying four findings nobody had
+          # ever seen, one of them a button a point under Apple's floor. With no
+          # --device it walks appsweep's own list and creates what the runner
+          # does not have.
+          python3 scripts/appfit.py
+
+      # THE EYES LAYER, as far as a runner can carry it (2026-08-25, on Hidde
+      # asking whether the app can have the website's QA). It cannot judge
+      # whether a screen is any good, and it can put every screen of both phones
+      # in an artifact so that judging them needs a browser rather than a Mac
+      # with Xcode on it. The website's fourth layer is a human walk and so is
+      # this; what changed is that the pictures now exist without one.
+      - name: Photograph every screen
+        if: always()
+        run: python3 scripts/appsweep.py --no-build || true
+
+      - name: Keep the screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: appsweep-${{ github.run_id }}
+          path: /tmp/appsweep/**/*.png
+          retention-days: 14
+          if-no-files-found: warn
 
       # The frames the step above judged, so a finding can be read from this
       # Mac without re-running the sweep here. The 'Seen' drift of 2026-08-21

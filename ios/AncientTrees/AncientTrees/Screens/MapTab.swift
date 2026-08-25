@@ -230,7 +230,10 @@ struct MapTab: View {
                     focus: .init(latitude: origin.lat, longitude: origin.lng),
                     route: walkRoute,
                     routeIsReal: (shownWalk?.shape?.count ?? 0) > 1,
-                    showsRecentre: true,
+                    // Not while the sheet covers the map. It is a control on a
+                    // surface nobody can see at that height, and it climbed up
+                    // among the chips trying to stay above the sheet.
+                    showsRecentre: sheetHeight != .full,
                     sheetLift: sheetHeight,
                     // Off while a walk is on screen, for the same reason as on
                     // the walk page itself: its stops must stay countable.
@@ -272,7 +275,15 @@ struct MapTab: View {
             }
         }
         .overlay(alignment: .bottom) {
-            if sheetHeight == .full {
+            // Shown whenever the sheet covers the map, not only at its tallest.
+            //
+            // At .half there was no button and dragging down is refused unless
+            // the list is scrolled to its very top, so the sheet could be left
+            // with no way back to the map at all. The app's CI has failed on
+            // exactly that since 2026-08-24, on every run, saying "the sheet did
+            // not go back down: the count went from y=181 to y=181", and nothing
+            // was watching it (2026-08-25).
+            if sheetHeight == .full || sheetHeight == .half {
                 Button {
                     withAnimation(.spring(duration: 0.28)) { sheetHeight = .peek }
                 } label: {
@@ -283,10 +294,19 @@ struct MapTab: View {
                         .foregroundStyle(Brand.ground)
                 }
                 .buttonStyle(.plain)
-                // Just above the tab bar, which is where AllTrails and Komoot
-                // both float it. At 104 it sat in the MIDDLE of the list and
-                // swallowed taps meant for the card underneath it.
-                .padding(.bottom, 14)
+                // CLEAR OF THE TAB BAR, which is 56 points of opaque bar above
+                // the safe area, drawn by ContentView on top of this whole
+                // screen. At 14 the button sat entirely BEHIND it: it existed,
+                // it was invisible, and a tap aimed at it landed on whatever
+                // card of the list was underneath, which opened a tree instead
+                // of closing the sheet. That is the worst shape a control can
+                // have, and it is what the app's CI had been failing on since
+                // 2026-08-24 while nothing watched it: "the sheet did not go
+                // back down: the count went from y=181 to y=181".
+                //
+                // It is measured now rather than remembered: map-full is a
+                // screen in the sweep and in appfit's list since 2026-08-25.
+                .padding(.bottom, 70)
                 .transition(.opacity)
                 .accessibilityIdentifier("back-to-map")
             }

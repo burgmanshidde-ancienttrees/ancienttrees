@@ -298,6 +298,11 @@ struct WalkMode: View {
             Label(title, systemImage: icon).font(.brand(16, .bold))
             Spacer() }
             .padding(.vertical, 12)
+            // 44, Apple's floor, asserted rather than arrived at. Twelve points
+            // of padding around a 16 point label came to 43 on a large phone,
+            // and appfit only ever measured the SE until 2026-08-25, where the
+            // same arithmetic happened to reach 44.
+            .frame(minHeight: 44)
             .background(Brand.surfaceMuted, in: .rect(cornerRadius: 15))
             .foregroundStyle(Brand.ink)
     }

@@ -317,12 +317,28 @@ def check(screen):
     # a type a reader can actually see.
     lefts = collections.defaultdict(list)
     for el in els:
-        if (el.type not in INVISIBLE and el.w > 40 and el.h > 4
+        # The same exemptions the size loop above applies, and it did not:
+        # Apple's keyboard and its own map furniture were exempt from CLIPPED
+        # and SMALL and reported for DRIFT, so the search screen's finding was
+        # the "Next keyboard" key (2026-08-25). One list of what is not ours.
+        if el.ident in SYSTEM_IDS or el.label in SYSTEM_LABELS \
+                or el.label in FRAMEWORK_CONTROLS:
+            continue
+        # WIDER THAN A TOUCH TARGET. 48, not 40.
+        #
+        # A 44 by 44 icon button's left edge is set by whatever encloses it, not
+        # by the page: the search field is a capsule with the page's 16 points
+        # outside it and 6 inside, so its back arrow starts at 22, and calling
+        # that a 6 point drift asks for the icon to sit flush against the pill
+        # (2026-08-25). This check is about the margins of text and cards, and
+        # those are all far wider than a thumb.
+        if (el.type not in INVISIBLE and el.w > 48 and el.h > 4
                 and 0 <= el.x < W / 2 and not in_shelf(el)
                 and not inside(el, NOT_OURS) and not centred(el, W)):
             lefts[round(el.x * 2) / 2].append(el)
     if lefts:
         dominant = max(lefts, key=lambda x: len(lefts[x]))
+
         for x, group in sorted(lefts.items()):
             gap = abs(x - dominant)
             # Below two points is the shape of the glyphs, not the layout: a
@@ -411,7 +427,14 @@ SELF_PADDING = {
 # Exempt with the reason rather than left to rot: the compass is hidden because
 # our recentre control puts north back, and the map's credit is named in About
 # on the Profile tab, which is where iOS apps keep it and where it can be read.
-FRAMEWORK_CONTROLS = {"Compass", "About this map"}
+FRAMEWORK_CONTROLS = {"Compass", "About this map",
+                      # The keyboard, by label as well as by type. Its keys
+                      # report as plain Buttons rather than as anything named
+                      # Keyboard, so the type exemption misses these three
+                      # (found 2026-08-25, on the big phone, the first time the
+                      # search screen was measured on anything but the SE).
+                      "Next keyboard", "Dictate", "dictation", "shift",
+                      "delete", "Emoji", "space", "return", "more"}
 
 
 def check_double_padding():
@@ -432,20 +455,18 @@ def check_double_padding():
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--device", default="iPhone SE (sweep)",
-                    help="the phone to measure on, by name or by udid; the "
-                         "smallest is the honest one. CI passes a udid because "
-                         "a runner's simulator names are not ours to predict")
+    ap.add_argument("--device", default=None,
+                    help="one phone, by name or by udid. Omit it and EVERY "
+                         "phone in appsweep's list is measured, which is what "
+                         "CI does: the layout gate measured only the smallest "
+                         "until 2026-08-25, and the big one was carrying four "
+                         "findings nobody had ever seen, one of them a button "
+                         "a point under Apple's floor")
     ap.add_argument("--dump", default=None, help="a saved test output to judge")
     ap.add_argument("--json", action="store_true", help="findings as JSON")
     args = ap.parse_args()
 
     scratch = os.environ.get("CLAUDE_SCRATCHPAD", "/tmp")
-    if args.dump:
-        dump = pathlib.Path(args.dump).read_text()
-    else:
-        dump = run_test(args.device, scratch)
-        pathlib.Path(scratch, "appfit-dump.txt").write_text(dump)
 
     # The source check runs first and needs no simulator: it catches the
     # mistake where it is written rather than where it happens to be seen.
@@ -455,14 +476,34 @@ def main():
     if source_problems:
         print()
 
-    screens = parse(dump)
-    if not screens:
-        sys.exit("no screens in the dump")
+    if args.dump:
+        runs = [("from dump", pathlib.Path(args.dump).read_text())]
+    else:
+        sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+        import appsweep
+        # The two lists have to be one list before either is trusted.
+        drift = appsweep.check_lists()
+        for d in drift:
+            print("LISTS   " + d)
+        if drift:
+            sys.exit("the sweep and the layout gate disagree about which "
+                     "screens exist")
+        names = [args.device] if args.device else [d[0] for d in appsweep.DEVICES]
+        runs = []
+        for name in names:
+            runs.append((name, run_test(name, scratch)))
+            pathlib.Path(scratch, "appfit-dump.txt").write_text(runs[-1][1])
 
     total = []
-    for screen in screens:
-        findings = check(screen)
-        total += [(screen["name"],) + f for f in findings]
+    screens = []
+    for device, dump in runs:
+        got = parse(dump)
+        if not got:
+            sys.exit(f"no screens in the dump for {device}")
+        for screen in got:
+            screen["device"] = device
+            screens.append(screen)
+            total += [(screen["name"],) + f for f in check(screen)]
 
     if args.json:
         print(json.dumps([{"screen": s, "kind": k, "element": el.name(),
@@ -472,7 +513,11 @@ def main():
         by_screen = collections.defaultdict(list)
         for s, k, el, why in total:
             by_screen[s].append((k, el, why))
+        seen_device = None
         for screen in screens:
+            if screen.get("device") != seen_device:
+                seen_device = screen.get("device")
+                print(f"\n{seen_device}")
             rows = by_screen.get(screen["name"], [])
             mark = "ok  " if not rows else "FAIL"
             print(f"{mark} {screen['name']:<14} {len(screen['els'])} elements"
@@ -481,7 +526,7 @@ def main():
                 print(f"       {kind:<8} {el.name()}")
                 print(f"                {why}")
         print(f"\n{len(total)} findings on {len(screens)} screens"
-              f" ({args.device if not args.dump else 'from dump'})")
+              f" across {len(runs)} phone(s)")
 
     sys.exit(1 if (total or source_problems) else 0)
 
