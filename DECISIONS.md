@@ -2,6 +2,16 @@
 
 One dated entry per decision that shapes the product, newest first: what was decided, by whom, and why. This file exists because the 2026-07-27 assumption audit showed decisions scattered across five documents and chat, which is how observations silently harden into rules. New decisions land here the day they are made; older ones migrate when a document touching them is edited anyway. The standard here is the lightweight ADR (Architecture Decision Record) practice, ours-sized.
 
+- **2026-08-25 - Hidde (session): saving needs an account, reversing his own soft wall of five days earlier.** He signed out of the app, found he could still heart a tree, and ruled: "all these functionalities of saving stuff should only be available when you sign in, and when you try to do it, you should get a message saying you need to sign in to be able to do this."
+
+  This overturns the 2026-08-20 ruling in full. That one said saving and ticking work straight away with no account and the ask arrives once there is something to lose, and the reasoning behind it was not sentimental: AllTrails can put a wall in front of you because you came looking for a named trail and they have a million reviews to stand on, and we have neither, so a wall before anybody has felt anything buys a bounce rather than an account. He heard that argument and moved anyway.
+
+  What is gated, all of it the same afternoon: both hearts, the tick on the map's arrival card, the tick inside a walk, and the camera button, because collecting writes a sighting, a photograph and often a submissions row that a reply is addressed to. What is NOT gated: the launch-argument route into the collect sheet, so appsweep can still photograph those screens, and a new `-signed-in` argument exists for the UI tests, since simctl cannot sign in and the walk test measures a walk rather than the account funnel.
+
+  The argument he overruled is left standing at the top of `Nudge.swift`, deliberately. If signups fall after this, it is the first thing to read.
+
+  Also settled in the same message, and recorded because it moves a colour rule: **a ticket is not a Plus feature**, so the ticket mark on a pin left gold for blue. Gold means paid-by-us everywhere else in the app, and sharing it made a garden's entrance fee read as one of our own tiers.
+
 - **2026-08-24 - Hidde (session): no affiliate on tickets, for now.** He raised it with the ticket-badge idea and parked it after seeing the arithmetic: "ok laat maar zitten voorlopig."
 
   The numbers, so nobody recalculates them in three months. Roughly 1,600 visits a month today; 160 of 1,842 trees stand behind a ticket, so about 6 percent of visits could land on one; a well-placed contextual link takes maybe 10 percent of those, and 3 percent of THOSE buy within the cookie window. Attraction affiliate pays 5 to 8 percent, so a 14 euro garden ticket returns under a euro. That is **30 cents a month** today, 3 euro at ten times the traffic, and **30 euro a month at a hundred times** it, which would be a serious content site.
