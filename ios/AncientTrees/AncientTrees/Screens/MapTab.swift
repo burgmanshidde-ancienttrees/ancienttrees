@@ -81,8 +81,18 @@ struct MapTab: View {
     /// that away.
     private var walksHere: [Walk] {
         catalogue.walks.compactMap { w -> (Walk, Double)? in
-            guard let f = catalogue.trees(of: w).first else { return nil }
-            return (w, f.distanceKm(from: focus.lat, focus.lng))
+            // NEAREST STOP, not the first one. Judging a walk by its first tree
+            // made it flicker in and out while the list was scrolled, because
+            // scrolling the list moves the map, and a walk whose first stop
+            // left the view vanished while four of its other stops were still
+            // on screen (Hidde, 2026-08-25, in The Hague: "als ik hem naar
+            // beneden scrolle, zie ik geen walking route, als ik hem naar boven
+            // scrolle wel, dus dat gaat fout"). A walk is here when any part of
+            // it is here, which is also what somebody looking at the map means.
+            let stops = catalogue.trees(of: w)
+            guard !stops.isEmpty else { return nil }
+            let nearest = stops.map { $0.distanceKm(from: focus.lat, focus.lng) }.min()!
+            return (w, nearest)
         }
         // Within the VIEW, not within sixty kilometres. Standing in Amsterdam
         // that radius swept up the whole Randstad and the shelf said "23 walks

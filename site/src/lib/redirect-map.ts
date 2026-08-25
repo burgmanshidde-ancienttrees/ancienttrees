@@ -217,6 +217,21 @@ export function buildRedirectStubs(): RedirectStub[] {
     canonical: `${BASE_URL}/app`,
     title: "Moved: The Ancient Trees app",
   });
+  // /<city>/app, which never existed and which Google has crawled seven times
+  // (Search Console, 2026-08-25: brisbane, bratislava, berlin, brussels and
+  // three more, all 404). Nothing in this repo links there, so the likeliest
+  // source is a crawler resolving "app" against a city page's own path, and it
+  // will keep happening. A one-line stub per city turns seven dead ends into
+  // seven arrivals at the page they were reaching for, which is the same
+  // reasoning hard rule 3 applies to a URL we retired ourselves.
+  for (const slug of published) {
+    stubs.push({
+      outputPath: `${slug}/app/index.html`,
+      targetRelative: "../../app",
+      canonical: `${BASE_URL}/app`,
+      title: "Moved: The Ancient Trees app",
+    });
+  }
 
   for (const [citySlug, oldSlug, treeId] of RENAMED_TREE_SLUGS) {
     const slugs = treeSlugsForCity(citySlug);
