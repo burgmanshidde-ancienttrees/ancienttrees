@@ -14,6 +14,11 @@ on:
 permissions:
   contents: write
   id-token: write
+  # To download the app's screenshots from the newest green ios.yml run
+  # (2026-08-25). Reviewing the app means looking at pictures, and the pictures
+  # already exist: rebuilding the app here would need a macOS runner and half an
+  # hour before the review could start.
+  actions: read
 
 concurrency:
   group: fresh-eyes-review
@@ -46,6 +51,36 @@ jobs:
         working-directory: site
         run: npx astro build
 
+      # The app's half, and it is deliberately the cheap half.
+      #
+      # Hidde, 2026-08-25: "die fresh eye review kunnen we een voor app en web
+      # doen in de nacht?" Yes, and in ONE reviewer rather than two, because the
+      # corpus it reviews against is one corpus and a finding about a promise the
+      # app makes is the same kind of finding as one about the website.
+      #
+      # It reads the artifact the app's own gate produced rather than building
+      # the app: same pictures the layout gate judged, no macOS runner, no
+      # simulator, and a few hours old at worst. When there is no green ios.yml
+      # run to take them from, the step says so and the review does its web half
+      # alone; an app review that blocks the web review would be worse than none.
+      - name: Fetch the app's screenshots
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ID=$(gh run list --workflow=ios.yml --status=success -L 1 \
+                 --json databaseId -q '.[0].databaseId' 2>/dev/null || true)
+          if [ -z "$ID" ]; then
+            echo "no green iOS run to take screenshots from" > /tmp/appshots-note.txt
+            exit 0
+          fi
+          mkdir -p /tmp/appshots
+          gh run download "$ID" --pattern 'appsweep-*' --dir /tmp/appshots \
+            || echo "the newest green run kept no screenshots" > /tmp/appshots-note.txt
+          python3 scripts/pick_app_screens.py --dir /tmp/appshots --count 6 \
+            > /tmp/appshots-list.txt 2>/tmp/appshots-note.txt || true
+          echo "reviewing these app screens:"; cat /tmp/appshots-list.txt || true
+
       - name: Review the last day with fresh eyes
         uses: anthropics/claude-code-action@v1
         with:
@@ -72,14 +107,34 @@ jobs:
                precision the data does not have, break a hard rule (em
                dashes, banned words, superlative collisions, missing photo
                licences, private locations)?
-            4. Write your findings to the TOP of REVIEW.md, under a heading
+            4. THE APP, the same eyes on the other surface. Read
+               /tmp/appshots-list.txt: it names six screenshots of the app,
+               rotated by date so every screen is seen inside four nights. Open
+               each one with Read and LOOK at it. If the file is missing or
+               empty, read /tmp/appshots-note.txt, say in one line that the app
+               half could not run and why, and carry on with the web half.
+
+               Judge them as the corpus judges a page, not as taste: does a
+               screen contradict itself, promise something that is not there,
+               show a control with no obvious purpose, leave a title that
+               disagrees with the tab it sits under, crop a photograph through
+               a rounded corner, or state a count the data does not have? The
+               mechanical faults are already gated (appfit measures CLIPPED,
+               SMALL and DRIFT on every push), so do NOT report a four point
+               misalignment; report what a person would notice.
+
+               Tag every app finding `APP` after its severity, because a night
+               run may not fix visual work on the app (CLAUDE.md: runs do no
+               visual-taste work) and needs to know at a glance that this one is
+               for a session.
+            5. Write your findings to the TOP of REVIEW.md, under a heading
                `## YYYY-MM-DD` (today, UTC). Each finding: one line of
                severity BLOCKER / WARN / NOTE, what and where (file or URL),
                and why it violates the corpus (name the rule). If you found
                nothing, write the dated heading with the single line
                "Nothing found." Honesty over volume: three real findings
                beat fifteen nitpicks, and style preferences are not findings.
-            5. On Mondays (UTC), one extra duty (Hidde, 2026-07-29): audit
+            6. On Mondays (UTC), one extra duty (Hidde, 2026-07-29): audit
                the corpus documents themselves (CLAUDE.md, PRINCIPLES.md,
                PRODUCT_IA.md, BACKLOG.md, GO_TO_MARKET.md, DECISIONS.md) for
                rot: stale snapshots, sentences superseded by later decisions,
@@ -87,7 +142,7 @@ jobs:
                DECISIONS.md, and instructions no run can still execute. Write
                each as a NOTE with a concrete removal or move suggestion.
                Suggest only; corpus edits are decided in session.
-            6. Commit ONLY REVIEW.md with the message
+            7. Commit ONLY REVIEW.md with the message
                "Fresh-eyes review: <n> finding(s)" and push. Touch no other
                file, fix nothing, however tempting.
 
@@ -95,4 +150,7 @@ jobs:
             broken) and WARNs as rung-3. You flag FOR HIDDE inside your
             REVIEW.md entry only for judgment calls no run may make alone
             (pricing, brand, blueprint changes, anything on the hard list).
-          claude_args: "--max-turns 120 --allowedTools \"Bash(git:*),Bash(python3:*),Read,Write,Edit,Glob,Grep\""
+          # 160 turns since 2026-08-25: six screenshots to open and judge on top
+          # of the web half. Read already covers images, which is the whole
+          # reason the app's half can live in this job at all.
+          claude_args: "--max-turns 160 --allowedTools \"Bash(git:*),Bash(python3:*),Bash(cat:*),Read,Write,Edit,Glob,Grep\""
