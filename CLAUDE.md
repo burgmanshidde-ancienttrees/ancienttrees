@@ -694,6 +694,17 @@ The 2026-07-29 whole-product walk found a dead check-in button on all 345 tree p
 
    The first sweep found, in one run: the whole app tinted system blue rather than moss (fixed the same day), a heart button hanging four points off the right edge of a tree page, "Take me there" hanging four points off the left, every card's heart at 35 by 35 against Apple's 44, and the map's filter chips at 32 tall. Every one of those had shipped past a green build. Removing either check needs Hidde.
 
+   **And the gate is WATCHED from 2026-08-25, which was the piece actually missing.** Hidde: "kunnen we de app dezelfde kwaliteit qa of ci testen als de website geven, er gaat veel fout volgens mij." He was right that a lot goes wrong and wrong about the reason: `.github/workflows/ios.yml` had built the app, run every test and measured every screen on every push since 2026-08-20, and it had been RED since 08-24, through five pushes, because nothing on `health.py`'s rung-2 list read its verdict. A gate nobody looks at is a gate nobody has. So:
+
+   - **`ios.yml` is on `health.py`'s watched list**, beside the smoke test and the deploy, and a red app run is rung-2 work like any other broken check. Its message says the APP is broken rather than the site, and where to read why: the failed assertions are in the log, and XCTest's screenshot of each one is in the run's `xcresult` artifact.
+   - **Both phones are measured, not one.** `appfit.py` with no `--device` walks appsweep's own list, so the SE and a large phone are both judged, 38 screens between them. The big one was carrying four findings nobody had ever seen the first time it was pointed at.
+   - **The two screen lists are checked rather than trusted.** `python3 scripts/appsweep.py --check-lists` refuses when appsweep's list and SweepFrames' list disagree, and it runs first in CI because it needs no simulator. They had drifted in both directions, and the cost was real: two entries named "collection" meant the Collection TAB was overwritten by the curated collection PAGE, so the tab shipped unlooked-at for a day and its title disagreed with the tab bar the whole time.
+   - **Every screen of both phones is photographed in CI and kept as an artifact**, so the eyes layer needs a browser rather than a Mac with Xcode on it. CI still cannot judge whether a screen is any good; it can make sure the pictures exist.
+
+   What the app still does not have, said plainly rather than implied: **no fresh-eyes reviewer.** The website gets a daily review from a context with no builder memory; the app gets nothing of the kind, because reviewing it means looking at pictures. That is the honest next gap.
+
+   The first watched run, the same afternoon, caught two bugs my own machine could not reproduce: a lane picker whose tap did not take, and a "Map" button that existed, was invisible behind the tab bar, and turned a tap meant to close the sheet into opening a tree. Both are the shape of every complaint Hidde had brought that morning, and both had been failing in CI for a day.
+
 4. **The composition walk, periodic, with eyes.** Every page type at desktop and 375px, in a working session: every two weeks, and always straight after a visual system change. CI cannot judge composition, so this layer is never delegated to a run; runs do not do visual-taste work.
 
 ## Hidde's curation (optional, when he feels like it)
