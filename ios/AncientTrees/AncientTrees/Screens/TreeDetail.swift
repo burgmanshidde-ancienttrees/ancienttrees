@@ -24,11 +24,13 @@ struct TreeDetail: View {
     var origin: (lat: Double, lng: Double)? = nil
     @Environment(Saved.self) private var saved
     @Environment(Sightings.self) private var sightings
+    @Environment(\.dismiss) private var dismiss
     @State private var editing: EditableField?
     @Environment(Account.self) private var account
     @Environment(Nudge.self) private var nudge
     @State private var reporting = false
     @State private var placing = false
+    @State private var removing = false
     @Environment(Navigator.self) private var navigator
 
     var body: some View {
@@ -92,7 +94,61 @@ struct TreeDetail: View {
                         subject: tree.name,
                         message: "\(tree.name), \(tree.city).",
                         label: "Share this tree")
+            } else {
+                // AN ELLIPSIS, TOP RIGHT, which he asked me to check rather
+                // than assume (Hidde, 2026-08-25: "is het niet meer conventie om
+                // 3 puntjes rechtsboven te doen en dan allerlei aanpas en
+                // verwijder opties te geven? not sure check it please").
+                //
+                // It is. Photos, Notes, Files and Apple Maps all keep "what else
+                // can I do to this thing" behind `ellipsis.circle` in the
+                // navigation bar, and all of them put the destructive item last
+                // and marked, behind a confirmation. So this is that menu and
+                // nothing invented: the three fields you can fill, then Remove.
+                //
+                // Removing was not possible at all before this. A tree you added
+                // could be edited and never taken back, which for a photograph
+                // of your own garden is the wrong way round.
+                ToolbarItem(placement: .topBarTrailing) {
+                    Menu {
+                        Button { editing = .name } label: {
+                            Label("Change the name", systemImage: "pencil")
+                        }
+                        Button { editing = .species } label: {
+                            Label("Change the species", systemImage: "leaf")
+                        }
+                        Button { editing = .age } label: {
+                            Label("Change the age", systemImage: "calendar")
+                        }
+                        Button { placing = true } label: {
+                            Label("Move the pin", systemImage: "mappin.and.ellipse")
+                        }
+                        Divider()
+                        Button(role: .destructive) { removing = true } label: {
+                            Label("Remove this tree", systemImage: "trash")
+                        }
+                    } label: {
+                        Image(systemName: "ellipsis.circle")
+                            .font(.system(size: 17, weight: .semibold))
+                            .frame(width: 44, height: 44)
+                            .contentShape(.rect)
+                    }
+                    .accessibilityIdentifier("mine-menu")
+                    .accessibilityLabel("More")
+                }
             }
+        }
+        .confirmationDialog("Remove \(tree.name) from your trees?",
+                            isPresented: $removing, titleVisibility: .visible) {
+            Button("Remove", role: .destructive) {
+                if let m = mine {
+                    sightings.remove(m.id)
+                    dismiss()
+                }
+            }
+            Button("Keep it", role: .cancel) {}
+        } message: {
+            Text("Your photograph goes with it. What you have already sent us stays sent.")
         }
         .sheet(isPresented: $reporting) { ContributeView(about: tree) }
         .fullScreenCover(isPresented: $placing) {

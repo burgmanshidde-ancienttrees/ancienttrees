@@ -38,6 +38,9 @@ struct MapTab: View {
     @State private var sheetHeight: SheetHeight =
         ProcessInfo.processInfo.arguments.contains("-sheet=full") ? .full : .peek
     @State private var query = ""
+    /// When the map was last moved on purpose, so the list's own settling
+    /// cannot move it back. See fly().
+    @State private var flewAt: Date?
     /// Debug scaffolding, same family as -spot: the search page is only
     /// reachable by tapping and simctl has no finger. `-search` opens it empty,
     /// `-search=lis` opens it with that typed.
@@ -166,6 +169,17 @@ struct MapTab: View {
                                    latitudinalMeters: metres, longitudinalMeters: metres)
         moveRequest = (UUID(), r)
         mapRegion = r
+        // AND CUT THE BACK-CHANNEL for a moment. Scrolling the list moves the
+        // map to whatever card reaches the top, which is his own 2026-08-24 ask
+        // and which fights a deliberate move: flying to an olive tree in Sicily
+        // re-laid the list, the scroll view settled on whatever card it still
+        // held, that card reported itself as the top one, and the map was pulled
+        // straight back to Baarn (Hidde, 2026-08-25: "waarom staat de lijst nog
+        // steeds Kantonspark en Trees uit Baarn... die lijst moet meebewegen met
+        // de content op de map"). The list follows the map; the map does not
+        // follow the list's own settling.
+        topCard = nil
+        flewAt = Date()
     }
 
     /// How many trees are actually under the view, uncapped.
@@ -274,16 +288,19 @@ struct MapTab: View {
                 filterRow
             }
         }
+        // AT FULL HEIGHT ONLY, which is his own correction within the minute:
+        // "de map floating knop op de map pagina is overbodig" and then, having
+        // pulled the list all the way up, "de knop maakt sense als je de lijst
+        // helemaal naar boven trekt, hou hem dan maar de rest niet" (2026-08-25).
+        // Both readings are right about their own case: at peek, card and half
+        // the map is there to be tapped, and at full there are 124 points of it
+        // left behind a chip row.
+        //
+        // What today's other fix bought stays bought: it used to sit at 14
+        // points off the bottom, entirely behind the tab bar, existing and
+        // invisible and swallowing the tap meant for the sheet.
         .overlay(alignment: .bottom) {
-            // Shown whenever the sheet covers the map, not only at its tallest.
-            //
-            // At .half there was no button and dragging down is refused unless
-            // the list is scrolled to its very top, so the sheet could be left
-            // with no way back to the map at all. The app's CI has failed on
-            // exactly that since 2026-08-24, on every run, saying "the sheet did
-            // not go back down: the count went from y=181 to y=181", and nothing
-            // was watching it (2026-08-25).
-            if sheetHeight == .full || sheetHeight == .half {
+            if sheetHeight == .full {
                 Button {
                     withAnimation(.spring(duration: 0.28)) { sheetHeight = .peek }
                 } label: {
@@ -294,18 +311,6 @@ struct MapTab: View {
                         .foregroundStyle(Brand.ground)
                 }
                 .buttonStyle(.plain)
-                // CLEAR OF THE TAB BAR, which is 56 points of opaque bar above
-                // the safe area, drawn by ContentView on top of this whole
-                // screen. At 14 the button sat entirely BEHIND it: it existed,
-                // it was invisible, and a tap aimed at it landed on whatever
-                // card of the list was underneath, which opened a tree instead
-                // of closing the sheet. That is the worst shape a control can
-                // have, and it is what the app's CI had been failing on since
-                // 2026-08-24 while nothing watched it: "the sheet did not go
-                // back down: the count went from y=181 to y=181".
-                //
-                // It is measured now rather than remembered: map-full is a
-                // screen in the sweep and in appfit's list since 2026-08-25.
                 .padding(.bottom, 70)
                 .transition(.opacity)
                 .accessibilityIdentifier("back-to-map")
@@ -325,6 +330,9 @@ struct MapTab: View {
         // map again. It only flies when the tree is genuinely off-centre, which
         // a small correction never is.
         .onChange(of: topCard) { _, new in
+            // Not while a deliberate move is still settling. A scroll view
+            // re-laid under a new list reports a top item that nobody chose.
+            if let flewAt, Date().timeIntervalSince(flewAt) < 2.0 { return }
             guard let id = new, let t = catalogue.tree(id) else { return }
             let span = mapRegion?.span.latitudeDelta ?? 0.02
             guard Geo.km(focus, (t.lat, t.lng)) > span * 111.0 * 0.25 else { return }
