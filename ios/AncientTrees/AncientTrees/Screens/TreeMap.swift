@@ -34,6 +34,18 @@ struct TreeMap: UIViewRepresentable {
     /// Tapping a tree of your own opens its page, the same as one of ours.
     /// A callback because this view knows nothing about navigation.
     var onSelectMine: ((UUID) -> Void)? = nil
+    /// Tapping one of OURS, when the caller wants the page rather than a
+    /// selection (Hidde, 2026-08-25: "im not able to click on a tree on the map,
+    /// it should open the deeper tree page"). A pin tap used to select the tree,
+    /// which raised the sheet and put its card at the top of the list, so
+    /// reaching the page took a second tap on a card that had just moved. His
+    /// own trees already opened straight away, so the two kinds of pin behaved
+    /// differently for no reason a reader could see.
+    ///
+    /// It stays a callback rather than becoming the default because SELECTION is
+    /// still what the search result and the debug argument want: those move the
+    /// camera and leave you on the map, which is his 2026-08-24 ruling.
+    var onSelectTree: ((String) -> Void)? = nil
     var focus: CLLocationCoordinate2D?
     /// A walk's line. Real when route_walks.py cached a routed shape, otherwise
     /// the order the trees are visited, which is NOT the path a walker takes.
@@ -91,6 +103,16 @@ struct TreeMap: UIViewRepresentable {
         // controls in the tree, so the layout gate kept reporting a 40 by 40
         // compass and a 26 by 26 info button against Apple's 44, on every
         // screen that carries a map.
+        // NO ROTATION. Hidde, 2026-08-25: "ik heb het idee dat de map te snel
+        // draait als ik uit probeer te zoomen, wat is convention in this
+        // interaction?" The convention is split: Google and Apple Maps both
+        // allow a two-finger twist, and both put a compass on screen the moment
+        // the map is off north so you can put it back. We hid the compass on
+        // purpose (our recentre control resets north), which leaves the worst of
+        // both: a map that rotates by accident during a pinch and no way to see
+        // or undo it. Rotation buys nothing here either, because every label on
+        // it is a place name meant to be read.
+        map.allowsRotating = false
         map.compassView.isHidden = true
         map.compassView.isAccessibilityElement = false
         map.attributionButton.isHidden = true
@@ -379,7 +401,11 @@ struct TreeMap: UIViewRepresentable {
             if let hit = treeHits.first,
                let id = hit.attribute(forKey: MapLayers.idKey) as? String,
                let tree = parent.trees.first(where: { $0.id == id }) {
-                parent.selected = tree
+                if let open = parent.onSelectTree {
+                    open(tree.id)
+                } else {
+                    parent.selected = tree
+                }
             }
         }
 

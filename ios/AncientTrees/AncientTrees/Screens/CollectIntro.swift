@@ -21,6 +21,14 @@ struct CollectIntro: View {
                 .font(.brand(28, .bold, relativeTo: .title))
                 .foregroundStyle(Brand.ink)
                 .fixedSize(horizontal: false, vertical: true)
+                // 22 under the title, not 14 (Hidde, 2026-08-25: "the spacing
+                // between collect a tree title and the rest is too little,
+                // please verify whats convention"). It is: Apple's own sheets
+                // set a large title and then leave roughly 20 to 24 points
+                // before the body, which is about the title's own cap height.
+                // 14 is the spacing BETWEEN two paragraphs, and using it here
+                // made the title read as the first line of the text.
+                .padding(.bottom, 8)
 
             // TWO THINGS, each with its own mark, which is his own structure
             // (Hidde, 2026-08-25, giving both sentences): one paragraph had to
@@ -37,7 +45,7 @@ struct CollectIntro: View {
             // everybody sees.
             VStack(alignment: .leading, spacing: 18) {
                 line("checkmark.seal",
-                     "You can collect a tree we already map by photographing it while you stand in front of it. We tell you which one it is and tick it off.")
+                     "You can collect a tree by photographing it while you stand in front of it. We tell you which one it is and tick it off.")
                 line("plus.circle",
                      "If it is a tree we do not have, you can add it. It appears on your own map straight away, and once we have checked it, it joins the map everybody sees.")
             }
