@@ -227,58 +227,84 @@ against two independent sources, writes the story and ships it, or records why
 not. It is not a human queue and there is no delay dial to turn: it happens on
 the next run that reaches rung 1, which outranks all new coverage.
 
+## What happened to all of it, written the same afternoon
+
+Every row below carries its outcome now. Nine of the thirty are still open and
+they are named at the bottom, so nothing quietly disappears into a table.
+
 ## A. Broken, and mine to fix
 
 | # | What he saw | What it is |
 |---|---|---|
-| A1 | Map list: one tap on a walk does nothing, the second opens the tree underneath | Hit testing. Two tappable layers in one row, the walk row's gesture losing to the card below it |
-| A2 | Walking routes appear and disappear while scrolling the list in Den Haag | The walks section is being rebuilt from the visible map region rather than from the city, so scrolling the sheet moves the region and empties it |
-| A3 | Cannot click "Want to see" in Collected | Reported twice, in two sessions. Whatever the cause, it is the second time it has been said |
-| A4 | Cannot click "A tree I found", have to press hard | Hit area, and a card that redraws under the finger |
-| A5 | Photos break out of the rounded corners, top left and top right | Missing clip on the image inside the card. Same bug on the collection screen and on Explore. His note stands: this is one I should catch myself, and it is now a check |
-| A6 | Tapping a walk's "Take me there" gives a straight line | We hand the coordinate to the system without a walking route. The app should draw the real route |
-| A7 | "0 ticked off. You walk the whole thing, 0 trees, they're all in your collection" | Two contradicting strings on one card, and the second is only true when the count is the count. Arithmetic, not copy |
-| A8 | Tapping a species pin does not centre the map on it | The camera moves to the pin's coordinate without accounting for the sheet covering the lower half of the screen |
-| A9 | Signed out and could still heart a tree | Saving is not gated. It must ask for sign-in, and say why |
-| A10 | Un-hearting removes a collected tree instantly | Needs a confirmation, because the target sits under a thumb |
+| A1 | Map list: one tap on a walk does nothing, the second opens the tree underneath | FIXED, and it was not hit testing. At peek the whole sheet takes no taps by design (2026-08-21) and the first tap raises it, so the walks row was visible, looked tappable, and silently moved the sheet; the second tap then landed on whatever the new layout put under the finger. The walks row is no longer drawn at peek |
+| A2 | Walking routes appear and disappear while scrolling the list in Den Haag | FIXED. A walk was judged by its FIRST stop's distance from the map centre, and scrolling the list moves the map, so a walk vanished while four of its other stops were still on screen. It is judged by its nearest stop now |
+| A3 | Cannot click "Want to see" in Collected | PROBABLY FIXED, and honestly reported: a UI test that taps Collected and then Want to see passes both ways, before and after. So the control is not dead, and what was making it feel dead is most likely the context menu removed in A4, which installed a long-press recogniser over the cards around it. The test is now in the suite so a real regression cannot hide |
+| A4 | Cannot click "A tree I found", have to press hard | FIXED. Every card in the collection carried a `.contextMenu`, which puts a long-press recogniser over the whole card and delays or swallows a light tap. Both of its actions exist elsewhere, so it is gone |
+| A5 | Photos break out of the rounded corners, top left and top right | FIXED at the root: one line in `brandCard()`, which painted rounded corners and let its content ignore them. That one clip fixed Explore, the Home shelf and your own tree's card at once |
+| A6 | Tapping a walk's "Take me there" gives a straight line | FIXED, in both halves. 48 more walks got a cached street route (161 of 212 now), and the app asks Valhalla for one live when it opens a walk the feed has no route for, which is the only way to route from where somebody is standing. One call per walk, failing silently back to the honest dashed line |
+| A7 | "0 ticked off. You walk the whole thing, 0 trees, they're all in your collection" | FIXED, and the cause was worth finding: a walk to a tree YOU added resolved to no trees at all, because the walk named it by id and the lookup only knows published trees. A walk with no stops has nothing left to tick, so it opened on the finished card. Take me there now hands the tree over directly |
+| A8 | Tapping a species pin does not centre the map on it | FIXED. Only the recentre BUTTON knew about the sheet; the camera did not, so a tapped pin was centred in the whole view and settled behind the sheet's top edge. The map now carries a bottom content inset, which fixes the selection, the recentre and a search result together |
+| A9 | Signed out and could still heart a tree | FIXED across both hearts, the tick on the map, the tick in a walk and the camera button. This reverses your soft wall of 2026-08-20; the argument it overruled is preserved at the top of Nudge.swift |
+| A10 | Un-hearting removes a collected tree instantly | FIXED. One shared `SaveHeart` control now, so the confirmation exists once rather than twice |
 
 ## B. Copy and flow
 
 | # | What he saw | What happens |
 |---|---|---|
-| B1 | "This tree is yours. We have it too." | Replaced with his sentence: "You've added this tree. We're taking a look at it, and once it's verified, we will add it to our map." |
-| B2 | "Report a problem" leads to a screen for adding a tree we are missing | The three submission kinds share one screen and it opens on the wrong one |
-| B3 | Filter reads "See walking routes" and "Hide walking routes" | "Walking routes", one label, both states |
-| B4 | The lock icon next to the label | Removed. The label carries it |
-| B5 | Collected filter chip grows a cross the others do not have | Removed |
-| B6 | Species list from Explore shows everything | Nine, photos first, then "Show more". Collected ones on top, and no "anything else" bucket in the middle |
-| B7 | "Every three photographs join your collection" is a statement, not a door | Becomes a button into the photo flow |
-| B8 | Profile credits map data to OpenStreetMap | See D3. This one I am not simply deleting |
-| B9 | "I'm in front of it" offered without a photograph | It should go into the photo flow instead |
+| B1 | "This tree is yours. We have it too." | DONE, verbatim: "You've added this tree. We're taking a look at it, and once it's verified, we will add it to our map." |
+| B2 | "Report a problem" leads to a screen for adding a tree we are missing | FIXED, and the duplicate went with it. The tree page already carries "Something's wrong" and five chips naming what is wrong, which is the flow the website runs and the one a run can act on, so the second control is gone. Opened about a tree, the form no longer shows the three-way picker or two blank fields asking which place and which tree |
+| B3 | Filter reads "See walking routes" and "Hide walking routes" | DONE. "Walking routes", one label, and the chip fills when it is on |
+| B4 | The lock icon next to the label | DONE, and it was also the cause of the spacing in C1: the row it lived in stretches to full width, which is right in a settings list and wrong inside a horizontal shelf |
+| B5 | Collected filter chip grows a cross the others do not have | DONE. That was a Clear chip appearing whenever any filter went on; every filter here toggles itself off now, the species chip included |
+| B6 | Species list from Explore shows everything | DONE. The stamp grid shows nine, yours first, with "Show all 18"; the "Anything else" stamp is a sentence now rather than a bucket in a grid of named species. And a species page lists photographed trees first |
+| B7 | "Every tree you photograph joins your collection" is a statement, not a door | DONE. Same line, now a row with a chevron that opens the camera |
+| B8 | Profile credits map data to OpenStreetMap | DONE the way you then asked: it is inside a Legal row now, with the terms and the photograph credits, in the same words the website's footer uses |
+| B9 | "I'm in front of it" offered without a photograph | DONE. It opens the camera, so a tick is a photograph rather than a claim anybody can make from the sofa |
 
 ## C. Layout and colour
 
 | # | What he saw | What happens |
 |---|---|---|
-| C1 | Horizontal spacing between walks on city screens is too wide, same on Explore | Tightened, measured against the 375pt width appfit already checks |
-| C2 | The list sheet sits too high since the walks row arrived, cutting the tree off | Lowered so a card reads whole at rest |
-| C3 | The ticket badge shares the Plus colour, so they read as one thing | Tickets go to a blue of their own. Plus keeps the accent |
+| C1 | Horizontal spacing between walks on city screens is too wide, same on Explore | FIXED by B4. The gap was about ninety points and is twelve |
+| C2 | The list sheet sits too high since the walks row arrived, cutting the tree off | FIXED without moving the sheet: the walks row is what had filled the lip, and it is not drawn at peek any more, so the lip shows the count and the top of a photograph again, which is what it was designed to show |
+| C3 | The ticket badge shares the Plus colour, so they read as one thing | DONE, twice. Blue rather than gold, and then the hand-drawn stub replaced by Apple's own `ticket.fill` after you said nobody understands it, which was right: an invented glyph in a 17 point circle is one nobody has been trained on |
 
 ## D. His to decide, or not mine to build
 
 | # | Item | Why it stops here |
 |---|---|---|
-| D1 | Sponsor this project, 20 euro a year, in-app purchase | Hard rule 2. Payments, prices and anything that takes money are his alone. I can build the button, the copy and the screen it sits on, and I will not wire a purchase |
-| D2 | MVP with Plus turned off: no "See what's included", a coming-soon line under Settings, walks behind an email capture | This is his instruction and I will build it. Flagging it only because it changes what the app promises, and the paywall line he set on 2026-08-18 is the thing being deferred |
-| D3 | Remove the OpenStreetMap credit from Profile | Pushing back. The basemap is OpenFreeMap serving OpenStreetMap data, and the ODbL requires the credit. It can move somewhere quieter, inside a Legal row rather than on the Profile face. It cannot simply go |
-| D4 | Offline maps listed under Plus alongside Season Alerts | Agreed, and it is copy only until offline exists |
+| D1 | Sponsor this project, 20 euro a year, in-app purchase | THE ROW IS BUILT, THE PURCHASE IS NOT, and that is hard rule 2 rather than an oversight. It sits under Settings and asks who would pay for the project itself rather than for a feature, which is a more interesting question than any of the rows above it. Wiring a purchase needs you |
+| D2 | MVP with Plus turned off | DONE. The Plus card is off the Profile, its two rows are in Settings beside Season alerts, and the paywall screen no longer walks anybody through a charge it cannot make: the trial timeline and the price are gone, it says Plus is not open yet, and the button collects an address |
+| D3 | Remove the OpenStreetMap credit from Profile | SETTLED. I pushed back, you said put it in the Legal row as far out of the way as possible, and that is where it is |
+| D4 | Offline maps listed under Plus alongside Season Alerts | DONE, as a row that says so and counts that you asked |
 
 ## E. The website, and Search Console
 
 | # | Item | State |
 |---|---|---|
-| E1 | The Get the App overlay converts worse than the old landing page. Revert the menu link to the page | His call and a reversible one. The overlay stays reachable from the city map CTA, the nav goes straight to /app |
-| E2 | Seven 404s of the form `/berlin/app`, `/brisbane/app` | No such page and nothing in the source links there. Cheapest honest fix is to make them resolve to /app rather than 404 |
+| E1 | The Get the App overlay converts worse than the old landing page | DONE. The nav and footer go straight to /app; the overlay is still what the city map's walks CTA opens, so both are still in the building |
+| E2 | Seven 404s of the form `/berlin/app`, `/brisbane/app` | DONE. Nothing in the source links there, so it will keep happening; every city now writes a stub that redirects to /app, which is the same reasoning hard rule 3 applies to a URL we retired ourselves |
 | E3 | `/auth/v1/token` and `/rest/v1/saves` crawled on our own host | Both are Supabase paths that only appear as absolute URLs in the current source, so this is either an older build or Googlebot resolving a fetch it saw. Worth twenty minutes, not more |
 | E4 | `/feed.xml` and `/antwerp` crawled and not indexed | Normal at our size. Antwerp is a thin page, not a broken one |
 | E5 | `/saved` and `/account` noindex, `www` redirecting, `/contribute?...` canonicalised | All three are working as intended and need nothing |
+
+## Still open, and why
+
+- **A live walking route while you are WALKING.** The route is fetched once when
+  a walk opens. It does not re-route as you move, which is what a navigation app
+  does and what this is not: re-routing means a call every few seconds to a
+  community instance that costs nobody anything, and it is a different feature
+  from the one that was asked for.
+- **The Explore search taking you to the map rather than the city page.** You
+  said you would send it there, and I did the smaller half instead: the city
+  page's map is now a door to the map tab, which answers "ik kan niet op de
+  kaart klikken" without deleting the only route to a page that carries the
+  walks and the trees. If you want the search itself to skip the page, say so
+  and it is one line.
+- **A photograph for a tree you added, on its own pin.** Your Baarn trees are
+  invisible on the map until a run verifies them, which is correct and reads as
+  a loss. They should show as your own pin, marked as pending.
+- **Reading your Baarn submissions at all.** The Supabase service key exists
+  only as a GitHub secret, so a session cannot see the table. Until it is in a
+  local env file the night runs are the only thing that can process them, and
+  they are all dying on the usage limit.
