@@ -101,11 +101,19 @@ struct CollectView: View {
         // eighteen" jumped, and the view was being rebuilt constantly because
         // it reads `origin` and the location provider published every GPS tick.
         // Both halves are fixed; this is the half that made the number lie.
-        Dictionary(grouping: catalogue.trees, by: \.commonName)
-            .sorted { $0.value.count == $1.value.count
-                        ? $0.key < $1.key
-                        : $0.value.count > $1.value.count }
-            .prefix(18).map(\.key)
+        // Written in named steps, each with its type, because as one chained
+        // expression it compiled here and timed out on the CI runner ("the
+        // compiler is unable to type-check this expression in reasonable time",
+        // 2026-08-25). A ternary inside a sort closure over a Dictionary makes
+        // the type checker try a great many overloads, and how many it gets
+        // through depends on the machine, which is the worst kind of red: green
+        // on the desk that wrote it, red on the gate.
+        let byName: [String: [Tree]] = Dictionary(grouping: catalogue.trees, by: \.commonName)
+        let ranked: [(key: String, value: [Tree])] = byName.sorted { a, b in
+            if a.value.count != b.value.count { return a.value.count > b.value.count }
+            return a.key < b.key
+        }
+        return ranked.prefix(18).map(\.key)
     }
 
     var body: some View {
