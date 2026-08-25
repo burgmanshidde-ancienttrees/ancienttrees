@@ -50,6 +50,18 @@ are gone, it says Plus is not open yet, and the button collects an address. A
 Sponsor row joined it and MEASURES rather than sells, which is the whole of what
 I will build there.
 
+**And the sweep had been hiding a screen.** appsweep photographs each screen to
+a file named after it, and two entries were both called "collection": the
+Collection TAB and a curated collection page. The page overwrote the tab every
+time, so the tab, which is where the cards and the lane picker he keeps
+reporting live, had not been looked at since it was renamed on 08-24. The first
+photograph of it showed the bar saying Collection and the screen saying "Your
+trees", which is the pairing that same rename retired. Both fixed, the two lists
+in appsweep.py and SweepFrames.swift are one list again, and a duplicate name is
+now a hard error rather than a silent overwrite. The keyboard on the newly-swept
+search screen is exempt from appfit, because judging Apple's shift key is not
+judging our layout.
+
 **Three UI tests had been red for two days and nothing noticed**, because the app
 has no CI. One asserted a four-slot tab bar against the five-slot bar he settled
 on 08-24; two read `app.tabBars`, which finds nothing now that the bar is a
