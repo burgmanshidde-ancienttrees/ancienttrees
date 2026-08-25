@@ -137,6 +137,27 @@ struct TreeMap: UIViewRepresentable {
             if abs(lift.constant - clamped) > 1 { lift.constant = clamped }
         }
 
+        // AND THE CAMERA HAS TO KNOW ABOUT THE SHEET TOO, which until
+        // 2026-08-25 only the recentre button did. Tapping a tree centred it in
+        // the map VIEW, and the bottom half of that view is behind the sheet, so
+        // the pin you just tapped settled at the sheet's top edge or under it
+        // (Hidde: "als ik op Muntje klik, pakt hij niet goed het midden van
+        // Muntje van de kaart, wat je kan zien"). A content inset is what this
+        // is for: MapLibre then treats the uncovered strip as the map, so every
+        // camera move, the selection, the recentre and a search result all land
+        // in the middle of what a person can actually see.
+        //
+        // Clamped at 55 percent, because at full height the sheet leaves a
+        // sliver and an inset that large gives the camera almost no viewport to
+        // aim into.
+        if map.bounds.height > 0 {
+            let bottom = min(sheetLift.points(in: map.bounds.height),
+                             map.bounds.height * 0.55)
+            if abs(map.contentInset.bottom - bottom) > 1 {
+                map.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: bottom, right: 0)
+            }
+        }
+
         if let move = moveTo, context.coordinator.moved != move.token {
             context.coordinator.moved = move.token
             map.setVisibleCoordinateBounds(Self.bounds(move.region), animated: true)

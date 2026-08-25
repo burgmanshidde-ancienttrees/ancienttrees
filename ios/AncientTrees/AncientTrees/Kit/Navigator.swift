@@ -40,6 +40,17 @@ public final class Navigator {
     /// finds a destination (search, a shortcut), cleared by the root.
     public var push: Route?
 
+    /// A CITY somebody wants to see on the map, by slug. The same shape as
+    /// showOnMap and for the same reason: a city page's map preview is a way to
+    /// the map rather than a second map, and until 2026-08-25 it was neither,
+    /// because it carried allowsHitTesting(false) and nothing else (Hidde:
+    /// "dan kan ik niet op de kaart klikken... als je zoekt in de map op
+    /// Barcelona, je op de Barcelona-pagina in de map komt").
+    ///
+    /// A slug rather than a tree id, so the map frames the whole city instead
+    /// of selecting one arbitrary trunk in it.
+    public var showCityOnMap: String?
+
     /// Collect's own button asking for the nearby-trees sheet. The root owns
     /// every sheet, so the request travels rather than the presentation.
     public var collectNearby = false
