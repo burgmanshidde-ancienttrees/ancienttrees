@@ -17,14 +17,25 @@
 
 name: iOS app
 
+# The scripts are part of the gate, so editing one has to re-run it. Added
+# 2026-08-25: appfit.py, appsweep.py and layout_rules.py decide what counts as a
+# layout fault, and a change to any of them would otherwise ship without the
+# check it changes ever running once.
 on:
   push:
     paths:
       - 'ios/**'
+      - 'scripts/appfit.py'
+      - 'scripts/appsweep.py'
+      - 'scripts/layout_rules.py'
+      - 'scripts/worktree_guard.py'
       - '.github/workflows/ios.yml'
   pull_request:
     paths:
       - 'ios/**'
+      - 'scripts/appfit.py'
+      - 'scripts/appsweep.py'
+      - 'scripts/layout_rules.py'
   workflow_dispatch:
 
 # A newer push cancels the run before it: this is a gate on the newest code,
@@ -45,7 +56,13 @@ jobs:
     # tests fail and retry, plus five for the layout step. 30 cut off every
     # failing run before its verdict, so the log that could have said WHY the
     # tests failed was never written.
-    timeout-minutes: 50
+    # 75 since 2026-08-25, when the layout step went from one phone to two and
+    # gained a screenshot pass. Build and test is 15 to 30 of it; each phone's
+    # frame dump is another 5 to 10 on a runner, where everything is slower than
+    # on a Mac with a warm cache. Minutes are free on a public repo and a run cut
+    # off before its verdict is worth nothing, which is the lesson the 30 minute
+    # version already taught.
+    timeout-minutes: 75
 
     steps:
       - uses: actions/checkout@v4
