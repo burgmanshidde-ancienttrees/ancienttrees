@@ -149,15 +149,14 @@ final class AncientTreesUITests: XCTestCase {
                           "dragging the lip up did not raise the sheet: the count went from "
                           + "y=\(peekY) to y=\(openY) on a \(screen) point screen")
 
-        // And the way back down, which is a button now rather than only a drag.
-        let back = app.buttons["back-to-map"]
-        if back.waitForExistence(timeout: 3) {
-            back.tap()
-        } else {
-            count.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
-                 .press(forDuration: 0.35,
-                        thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.92)))
-        }
+        // And the way back down, which is the DRAG again: the floating Map
+        // button was removed on 2026-08-25 ("de map floating knop op de map
+        // pagina is overbodig"), so the gesture is the only way and therefore
+        // the thing worth asserting. The list has to be at its top for the
+        // sheet to take the drag, which it is here because nothing scrolled it.
+        count.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
+             .press(forDuration: 0.35,
+                    thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.92)))
         let downY = settledY(of: count)
         XCTAssertGreaterThan(downY, screen * 0.6,
                              "the sheet did not go back down: the count went from "
@@ -258,8 +257,12 @@ final class AncientTreesUITests: XCTestCase {
                       "no mission on the collection's day zero")
         XCTAssertFalse(app.staticTexts["Species collected"].exists,
                        "the empty stamp grid renders before the first tick")
-        XCTAssertTrue(app.buttons["collect-a-tree"].exists,
-                      "Your trees has no way to collect a tree")
+        // The camera in the middle of the bar, which is the way to collect a
+        // tree from anywhere in the app. The screen's own line about
+        // photographing was removed on 2026-08-25 at Hidde's ask, and asserting
+        // a button he deleted would keep a removed thing alive in a test.
+        XCTAssertTrue(app.buttons["Collect a tree"].exists,
+                      "there is no way to collect a tree from the collection")
     }
 
     /// Explore is the feed, and the feed is the rows Hidde settled on

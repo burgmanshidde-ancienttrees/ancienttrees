@@ -149,30 +149,14 @@ struct CollectView: View {
                 // centimetres below it in the middle of the bar, while the
                 // explanation was doing real work, because nothing else on
                 // this screen says HOW a tree gets here.
-                // And it is a DOOR, not a caption (Hidde, 2026-08-25: "daar
-                // zou ik een knop van maken die je naar de foto optie
-                // brengt"). It explains how a tree gets here and then leaves
-                // you to find the way yourself, which is a sentence doing half
-                // a job. Not a full-width button, because that is what was
-                // removed on 08-24 for repeating the camera in the bar: the
-                // same line, tappable, with the chevron that says so.
-                Button { navigator.collectNearby = true } label: {
-                    HStack(spacing: 10) {
-                        Image(systemName: "camera")
-                            .font(.footnote).foregroundStyle(Brand.moss)
-                        Text("Every tree you photograph joins your collection.")
-                            .font(.footnote).foregroundStyle(Brand.inkSoft)
-                            .fixedSize(horizontal: false, vertical: true)
-                        Spacer(minLength: 4)
-                        Image(systemName: "chevron.right")
-                            .font(.caption2).foregroundStyle(Brand.inkSoft.opacity(0.6))
-                    }
-                    .frame(minHeight: 44)
-                    .contentShape(.rect)
-                }
-                .buttonStyle(.plain)
-                .accessibilityIdentifier("collect-a-tree")
-                .padding(.bottom, 2)
+                // The "Every tree you photograph joins your collection" line is
+                // gone (Hidde, 2026-08-25: "haal die hele every tree you
+                // photograph functie boven aan collection maar weg"). It had
+                // been a sentence, then a button an hour earlier on his own ask,
+                // and both versions were explaining the app on the screen that
+                // should be showing what you have. The camera in the middle of
+                // the tab bar is two centimetres below it and says the same
+                // thing by being a camera.
 
                 if allVisited.isEmpty {
                     mission

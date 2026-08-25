@@ -84,6 +84,16 @@ struct SpeciesPicker: View {
                                     .foregroundStyle(Brand.inkSoft)
                             }
                         }
+                        // THE WHOLE ROW, which is his own diagnosis (Hidde,
+                        // 2026-08-25: "je moet op de hele bar kunnen klikken
+                        // niet alleen de tekst zoals nu"). An HStack of glyphs
+                        // inside a Button hands the button the bounds of the
+                        // glyphs, so the gaps between the mark, the name and the
+                        // count were dead: you could tap Ginkgo's letters and
+                        // nothing else, and a species with a short name is
+                        // almost all gap.
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .contentShape(.rect)
                         .frame(minHeight: 44)
                     }
                     .buttonStyle(.plain)
