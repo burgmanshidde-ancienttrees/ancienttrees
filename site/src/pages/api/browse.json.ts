@@ -141,7 +141,16 @@ export async function GET() {
     };
   }).filter((s) => s.count > 0);
 
-  const payload = { cities: cityFacets, collections, parks, countries, species };
+  // TEMPORARY (2026-08-25): the parks facet came back empty from a key lookup
+  // that /parks makes successfully in the other direction. Removed as soon as
+  // this says which of the two strings is not what I think it is.
+  const _debug = {
+    groups: [...parkGroups.keys()].slice(0, 4),
+    intros: (await getCollection("parks")).slice(0, 4).map((p) => `${p.data.city_slug} ${p.data.park}`),
+    groupCount: parkGroups.size,
+    introCount: (await getCollection("parks")).length,
+  };
+  const payload = { cities: cityFacets, collections, parks, countries, species, _debug };
   const body = JSON.stringify(payload);
   return new Response(
     JSON.stringify({ version: await feedVersion(body), ...payload }),
