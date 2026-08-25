@@ -314,12 +314,13 @@ struct ContentView: View {
                         .tabItem { Label("Collect", systemImage: "camera")
                             .environment(\.symbolVariants, .none) }
 
-                    // "Yours" in the bar, "Your trees" on the screen. Not an
-                    // inconsistency but the ordinary convention: four tabs
-                    // get about 93 points each on an iPhone SE, and the
-                    // longer label is the one appfit caught hanging over the
-                    // edge as a filter chip a day earlier. The checkmark
-                    // moves here with the meaning it always had, the ones you
+                    // "Collection" in the bar AND on the screen since
+                    // 2026-08-25. The note that stood here defended "Yours" in
+                    // the bar against "Your trees" on the screen as the
+                    // ordinary convention, and it was right while the tab was
+                    // called Yours; the tab was renamed a day later and this
+                    // stayed. The checkmark carries the meaning it always had,
+                    // the ones you
                     // have ticked off.
                     stack(3, cat) { CollectView(catalogue: cat, origin: origin) }
                         .tag(3)
