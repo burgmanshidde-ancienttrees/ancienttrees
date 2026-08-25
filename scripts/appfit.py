@@ -231,8 +231,18 @@ def mark_shelves(screen):
     points off the right of the screen, which is the precise bug this whole file
     exists to catch.
 
-    A real shelf is not a few points wider than its frame, it is MUCH wider:
-    there are more cards than fit. Half a screen of overflow is the line.
+    A real shelf is not a few points wider than its frame, it is wider than it
+    by more than rounding: there are more cards than fit.
+
+    The line was half a screen of overflow, and that was too generous by
+    accident. Two walk cards at 230 points plus a 12 point gap span 472 in a
+    375 point scroller, which is a shelf by any reading and did not clear
+    375 * 1.5, so the second card was reported CLIPPED. It only passed before
+    2026-08-25 because a padlock wrapper stretched every card to full width and
+    inflated the span, which is to say the check was being satisfied by the bug
+    it should have been reporting. Ten percent still excludes what the 1.5 rule
+    was written for: the tree page's action bar spills about four points, and
+    the heart hanging off its right edge stays a finding.
     """
     kids = collections.defaultdict(list)
     for el in screen["els"]:
@@ -245,7 +255,7 @@ def mark_shelves(screen):
             if not children:
                 continue
             span = max(c.right for c in children) - min(c.x for c in children)
-            el._horizontal = span > el.w * 1.5
+            el._horizontal = span > el.w * 1.1
 
 
 def centred(el, W):

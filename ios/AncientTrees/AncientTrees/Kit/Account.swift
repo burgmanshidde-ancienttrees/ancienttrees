@@ -123,7 +123,26 @@ public final class Account {
     public var isSignedIn: Bool { session != nil }
     public var email: String? { session?.email }
 
-    public init() { restore() }
+    public init() {
+        // Test scaffolding, the same family as -at=, -collected= and -tab:
+        // simctl cannot sign in, and since 2026-08-25 saving and ticking need
+        // an account, so without this every UI test that ticks a tree measures
+        // the sign-in sheet instead of the thing it is testing. A local session
+        // with no tokens: isSignedIn is true, and any network call it tries
+        // fails as it would for an expired one.
+        //
+        // It is deliberately not a way to sign in. There is nothing to sign in
+        // TO here, no user id that any row could belong to.
+        if ProcessInfo.processInfo.arguments.contains("-signed-in") {
+            session = Session(accessToken: "", refreshToken: "",
+                              expiresAt: .distantFuture,
+                              userId: "00000000-0000-0000-0000-000000000000",
+                              email: "test@ancienttrees.app")
+            state = .signedIn(email: session?.email)
+            return
+        }
+        restore()
+    }
 
     // MARK: - restoring
 

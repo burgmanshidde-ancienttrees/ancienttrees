@@ -91,6 +91,26 @@ public final class Nudge {
         pending = .keepCollection(count)
     }
 
+    /// A GATE rather than a nudge, and the difference is the whole reason this
+    /// method is separate from the two above it.
+    ///
+    /// Hidde reversed his own soft-wall ruling on 2026-08-25, having signed out
+    /// and found he could still heart a tree: "all these functionalities of
+    /// saving stuff should only be available when you sign in, and when you try
+    /// to do it, you should get a message saying you need to sign in." So the
+    /// ask is no longer a suggestion at a good moment, it is the answer to a
+    /// tap that cannot go through, and none of the restraint rules apply: not
+    /// the three-asks cap, not the quiet week, not the once-per-moment mark.
+    /// Suppressing this one would leave a heart that does nothing and says
+    /// nothing, which is worse than either wall.
+    ///
+    /// The comment at the top of this file is the argument he overruled. It is
+    /// left standing because it is still the reasoning, and if signups fall
+    /// after this it is the first thing to read.
+    public func require(_ reason: SignInReason) {
+        pending = reason
+    }
+
     private func mark(_ moment: String) {
         var f = fired
         f.insert(moment)

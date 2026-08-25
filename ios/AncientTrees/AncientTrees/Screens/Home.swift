@@ -326,7 +326,7 @@ struct HomeView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 12) {
                     ForEach(walksNear, id: \.name) { w in
-                        LockedRow(feature: .walkBeyondFirst) { walkCard(w, locked: true) }
+                        LockedRow(feature: .walkBeyondFirst, lockGlyph: false) { walkCard(w, locked: true) }
                     }
                 }
                 .padding(.horizontal, 16).padding(.bottom, 4)
@@ -515,7 +515,7 @@ struct CityView: View {
                             // names curated walks as a paid feature; the free
                             // first one was my softening of it.
                             ForEach(walks, id: \.name) { w in
-                                LockedRow(feature: .walkBeyondFirst) {
+                                LockedRow(feature: .walkBeyondFirst, lockGlyph: false) {
                                     CityWalkCard(walk: w, locked: true)
                                 }
                             }

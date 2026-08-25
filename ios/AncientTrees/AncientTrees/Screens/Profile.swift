@@ -269,7 +269,7 @@ struct ProfileView: View {
                 }
                 .buttonStyle(.plain)
                 Divider().padding(.leading, 48)
-                LockedRow(feature: .seasonAlerts) {
+                LockedRow(feature: .seasonAlerts, lockGlyph: false) {
                     HStack(spacing: 12) {
                         Image(systemName: "bell").frame(width: 20).foregroundStyle(Brand.moss)
                         Text("Season alerts").font(.callout).foregroundStyle(Brand.ink)

@@ -446,12 +446,16 @@ struct MapTab: View {
             Text("You are standing in front of").font(.caption).foregroundStyle(.secondary)
             Text(t.name).font(.title3.bold()).multilineTextAlignment(.center)
             Button {
-                saved.toggleVisited(t.id)
-                if saved.isVisited(t.id) {
-                    nudge.ticked(treeName: t.name,
-                                 signedIn: account.isSignedIn,
-                                 total: saved.visitedCount)
+                // Ticking is collecting, and collecting needs the account
+                // (Hidde, 2026-08-25, on hearts working while signed out:
+                // "all these functionalities of saving stuff should only be
+                // available when you sign in"). Gating the heart and leaving
+                // this open would be the same bug with a different button.
+                guard account.isSignedIn else {
+                    nudge.require(.keepTree(t.name))
+                    return
                 }
+                saved.toggleVisited(t.id)
             } label: {
                 Label(saved.isVisited(t.id) ? "Ticked off" : "I have seen this one",
                       systemImage: saved.isVisited(t.id) ? "checkmark.seal.fill" : "checkmark.seal")
@@ -491,7 +495,7 @@ struct MapTab: View {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(alignment: .top, spacing: 12) {
                         ForEach(walksHere.prefix(6), id: \.name) { w in
-                            LockedRow(feature: .walkBeyondFirst) {
+                            LockedRow(feature: .walkBeyondFirst, lockGlyph: false) {
                                 CityWalkCard(walk: w, locked: true)
                             }
                         }
@@ -556,7 +560,13 @@ struct MapTab: View {
             } label: {
                 HStack(spacing: 6) {
                     Image(systemName: "location.slash")
-                    Text("Near Amsterdam")
+                    // No place name. It said "Near Amsterdam", which was true
+                    // of the old hardcoded fallback and is not true now that
+                    // the map opens on the last fix this phone had (Hidde in
+                    // Baarn, 2026-08-25). Naming the wrong town is worse than
+                    // naming none, and the useful half of this chip was always
+                    // the action beside it.
+                    Text("Location off")
                     Text("·").foregroundStyle(.secondary)
                     Text(locationDenied ? "Turn on location" : "Use my location")
                         .foregroundStyle(Color(red: 0.20, green: 0.35, blue: 0.20))
@@ -609,15 +619,12 @@ struct MapTab: View {
                 }
                 .buttonStyle(.plain)
 
-                if filters.isOn {
-                    Button {
-                        filters = MapFilters()
-                        shownWalk = nil
-                    } label: {
-                        FilterChipLabel(label: "Clear", icon: "xmark", on: false)
-                    }
-                    .buttonStyle(.plain)
-                }
+                // No Clear chip. It appeared the moment any filter went on,
+                // which read as a cross growing out of the chip you had just
+                // tapped (Hidde, 2026-08-25: "dat kruisje is niet nodig, ik
+                // kan gewoon selecteren en deselecteren"). Every filter here
+                // turns itself off: the chips toggle, and the species sheet
+                // carries "Any species".
             }
             // 16, like the search field above it and the cards below it.
             // It was 14, and appfit had been reporting exactly that for hours
@@ -650,11 +657,15 @@ struct MapTab: View {
                     shownWalk = nil
                 }
             } label: {
-                // The pair has to be a pair (Hidde, 2026-08-24). "See walking
-                // routes" turning into "Hide the walk" reads as a different
-                // control: one names the thing in the plural, the other names
-                // something singular you never asked to see.
-                FilterChipLabel(label: shownWalk == nil ? "See walking routes" : "Hide walking routes",
+                // One label in both states (Hidde, 2026-08-25: "ik denk dat
+                // het filter eigenlijk walking routes moet heten... en je
+                // hoeft ook niet hide walking routes"). It said "See walking
+                // routes" and then "Hide walking routes", which is a verb a
+                // filter chip does not need: the chip is already filled when
+                // it is on, and every filter row in every app anybody has used
+                // works that way. What the 08-24 note above was right about
+                // was the PLURAL, and that survives.
+                FilterChipLabel(label: "Walking routes",
                                 icon: "figure.walk", on: shownWalk != nil)
             }
             .buttonStyle(.plain)
@@ -705,7 +716,7 @@ struct MapTab: View {
                 .accessibilityIdentifier("walk-begin")
 
                 if walksHere.count > 1 {
-                    LockedRow(feature: .walkBeyondFirst) {
+                    LockedRow(feature: .walkBeyondFirst, lockGlyph: false) {
                         HStack {
                             Text("\(walksHere.count - 1) more walks near here")
                                 .font(.subheadline).foregroundStyle(Brand.ink)

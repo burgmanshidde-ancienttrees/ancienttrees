@@ -201,6 +201,17 @@ struct LockedRow<Label: View>: View {
     /// alerts row the padlock hung past everything else on the card (Hidde,
     /// 2026-08-24). The default matches what every caller here uses.
     var inset: CGFloat = 16
+    /// Whether to draw the padlock. False when the thing inside already says
+    /// Plus on its face, which is every walk card (Hidde, 2026-08-25: "dat
+    /// lock icoontje voegt niks toe, plus label is genoeg").
+    ///
+    /// It was not only redundant. This row is an HStack with a Spacer and
+    /// `maxWidth: .infinity`, which is right in a settings list and wrong
+    /// inside a horizontal shelf: each card stretched to fill, so the padlock
+    /// floated in the gap BETWEEN two walk cards and the gap itself grew to
+    /// about ninety points. He reported the spacing and the padlock as two
+    /// separate complaints on the same screen and they were one bug.
+    var lockGlyph: Bool = true
     @ViewBuilder var label: Label
     @Environment(Entitlement.self) private var entitlement
     @State private var asking = false
@@ -209,21 +220,27 @@ struct LockedRow<Label: View>: View {
         Button {
             if !entitlement.allows(feature) { asking = true }
         } label: {
-            HStack {
-                label
-                Spacer()
-                if !entitlement.allows(feature) {
-                    Image(systemName: "lock.fill").font(.caption)
-                        .foregroundStyle(.secondary)
-                        .padding(.trailing, inset)
+            if lockGlyph {
+                HStack {
+                    label
+                    Spacer()
+                    if !entitlement.allows(feature) {
+                        Image(systemName: "lock.fill").font(.caption)
+                            .foregroundStyle(.secondary)
+                            .padding(.trailing, inset)
+                    }
                 }
+                .frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
+                .contentShape(.rect)
+                // One element the size of the row. A plain button in a list
+                // reports the bounds of its glyphs otherwise, which made five
+                // rows start at five different x positions, one per SF Symbol.
+                .accessibilityElement(children: .combine)
+            } else {
+                label
+                    .contentShape(.rect)
+                    .accessibilityElement(children: .combine)
             }
-            .frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
-            .contentShape(.rect)
-            // One element the size of the row. A plain button in a list
-            // reports the bounds of its glyphs otherwise, which made five
-            // rows start at five different x positions, one per SF Symbol.
-            .accessibilityElement(children: .combine)
         }
         .buttonStyle(.plain)
         .sheet(isPresented: $asking) { PaywallView(feature: feature) }

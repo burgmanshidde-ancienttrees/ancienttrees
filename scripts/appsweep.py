@@ -229,7 +229,15 @@ def main():
         print(f"\n{name}")
         boot(udid)
         sh("xcrun", "simctl", "install", udid, str(app))
+        # Wipe the device's folder first. A screen that leaves the sweep list
+        # leaves its LAST PNG behind, and a stale screenshot in a folder you
+        # are about to judge is worse than a missing one: on 2026-08-25 this
+        # directory still held a four-tab "Your trees" screen from a build days
+        # old, sitting next to today's five-tab ones. The whole point of this
+        # command is that what you look at is what you just built.
         (out / slug).mkdir(exist_ok=True)
+        for stale in (out / slug).glob("*.png"):
+            stale.unlink()
 
         for screen, extra, wait in plan:
             sh("xcrun", "simctl", "terminate", udid, BUNDLE, check=False)
