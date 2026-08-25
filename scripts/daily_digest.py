@@ -437,10 +437,21 @@ def gsc_section(gsc):
     # Google's mood, the ratio moves with our titles and snippets.
     rows = ["| Day | Clicks | Impressions | CTR | Position |",
             "|---|---:|---:|---:|---:|"]
-    for d in days:
+    for i, d in enumerate(days):
         imp = d["impressions"] or 0
-        rows.append("| %s | %d | %d | %.1f%% | %.1f |" % (
-            d["keys"][0][5:], d["clicks"], imp,
+        # THE NEWEST ROW IS NOT FINISHED. Google backfills for days, and it
+        # backfills impressions harder than clicks, so a fresh row reads as a
+        # brilliant day. Measured from our own files on 2026-08-24: 08-22 was
+        # first reported as 12 clicks on 769 impressions and settled at 17 on
+        # 1,030; 08-23 went from 13/776 to 15/957. A session read the newest
+        # row's 3.6% CTR as a jump that morning and was wrong.
+        #
+        # The lag note above this table says the newest row is never yesterday,
+        # which is about WHICH day it is, not about the row being incomplete.
+        # Two different facts, and only one of them was written down.
+        partial = " *partial*" if i == len(days) - 1 else ""
+        rows.append("| %s%s | %d | %d | %.1f%% | %.1f |" % (
+            d["keys"][0][5:], partial, d["clicks"], imp,
             (100.0 * d["clicks"] / imp) if imp else 0.0, d.get("position", 0)))
     tc = sum(d["clicks"] for d in days)
     ti = sum(d["impressions"] or 0 for d in days)
@@ -475,8 +486,12 @@ def gsc_section(gsc):
 
     lines = [
         "Search Console, the last 10 days Google will give us (its data lags 2-3 days,"
-        " so the newest row is never yesterday). Position is an average across every"
-        " query, so it dips whenever we start ranking for something new:",
+        " so the newest row is never yesterday). The newest row is also still"
+        " FILLING: Google backfills for days and backfills impressions harder"
+        " than clicks, so it reads as an unusually good day and is not one"
+        " (08-22 arrived as 12/769 and settled at 17/1030). Position is an"
+        " average across every query, so it dips whenever we start ranking for"
+        " something new:",
         "%s" % trend,
         "- Top queries (10d): " + "; ".join(
             "%s (i%d, p%.0f)" % (clean_query(r["keys"][0]), r["impressions"], r["position"]) for r in queries) if queries else "- Top queries: none",
