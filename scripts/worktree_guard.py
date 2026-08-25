@@ -139,17 +139,25 @@ def build_lock(what):
     A plain pid file: stale locks are cleared by checking whether the pid is
     still alive, so a killed job never blocks the next one."""
     if LOCK.exists():
+        pid, alive = None, False
         try:
             pid = int(LOCK.read_text().split()[0])
             os.kill(pid, 0)
+            alive = True
         except (ValueError, IndexError, ProcessLookupError, OSError):
+            alive = False
+        if not alive:
             LOCK.unlink(missing_ok=True)
-        else:
+        elif pid != os.getpid():
             print("STOP: another app build is already running (pid %d): %s"
                   % (pid, LOCK.read_text().strip()), file=sys.stderr)
             print("  They share one derived-data directory and will corrupt "
                   "each other. Wait, or kill that one.", file=sys.stderr)
             sys.exit(1)
+        # OUR OWN lock is not a conflict. appfit measures every phone in one
+        # process since 2026-08-25, so it takes this lock once per device and
+        # deadlocked against itself on the second: "another app build is already
+        # running (pid 16676)", where 16676 was the process printing it.
     LOCK.write_text("%d %s" % (os.getpid(), what))
     return LOCK
 

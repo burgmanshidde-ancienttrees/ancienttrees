@@ -97,7 +97,7 @@ struct CollectView: View {
 
     var body: some View {
         ScrollView {
-            LazyVStack(alignment: .leading, spacing: 28) {
+            LazyVStack(alignment: .leading, spacing: 28, pinnedViews: [.sectionHeaders]) {
                 HStack(alignment: .firstTextBaseline) {
                     // "Collection", the same word as the tab. It said "Your
                     // trees" while the tab said Yours, which was a deliberate
@@ -173,46 +173,28 @@ struct CollectView: View {
                 // segments rather than two tabs (Hidde, 2026-08-21: Saved as
                 // its own tab was a second empty room, and "collect is
                 // natuurlijk eigenlijk gewoen een beetje hetzelfde").
+                //
+                // PINNED, since 2026-08-25, and that is the fix for the thing
+                // he has now reported three times: "ik kan nog steeds niet op
+                // want to see klikken in collection". The control was not dead.
+                // It sat in the scrolling content directly above a list that is
+                // rebuilt wholesale on every switch, so the moment it was
+                // tapped the content under it changed height and the picker
+                // moved out from under the finger; on a fast Mac the tap landed
+                // anyway and on a phone, or on the CI runner, it did not. The
+                // app's own CI had been failing on exactly this since it was
+                // written, which is the first time that gate has caught
+                // something my machine could not reproduce.
+                //
+                // A section header is also the convention: Photos, Files and
+                // the App Store all pin a segmented control rather than let it
+                // scroll away from the list it governs.
                 if !saved.entries.isEmpty || !sightings.yoursOnly.isEmpty {
-                    Picker("", selection: $lane) {
-                        Text("Want to see").tag(Lane.want)
-                        Text("Collected").tag(Lane.seen)
+                    Section {
+                        laneContent
+                    } header: {
+                        lanePicker
                     }
-                    .pickerStyle(.segmented)
-                    .accessibilityIdentifier("collect-lane")
-                    // Everything the picker switches is rebuilt rather than
-                    // reshuffled. Switching lanes used to leave the previous
-                    // lane's NavigationLinks in the stack's hit-test geometry,
-                    // so a tap on the picker opened whichever card had been
-                    // under it (Hidde, 2026-08-24: "als ik op collected klik en
-                    // weer op want to see dan opent die de boom eronder"),
-                    // which is also why the picker felt like it could not be
-                    // clicked back.
-
-                    if lane == .seen, !sightings.yoursOnly.isEmpty {
-                        // Yours first, because they are the ones nobody else
-                        // has. Still marked as yours on the card, so the
-                        // distinction survives where it is useful (this one is
-                        // not on the map everybody sees) and disappears where
-                        // it was only in the way.
-                        ForEach(sightings.yoursOnly) { s in
-                            NavigationLink(value: Route.mine(s.id)) { MineCard(sighting: s) }
-                                .buttonStyle(.plain)
-                        }
-                    }
-                    Group {
-                        let list = lane == .want ? wishlist : visited
-                        if list.isEmpty {
-                            Text(lane == .want
-                                 ? "Nothing on your list. Tap a heart anywhere to put a tree here."
-                                 : "Nothing collected yet. Photograph a tree with the button above, ours or one only you know.")
-                                .font(.subheadline).foregroundStyle(Brand.inkSoft)
-                                .padding(.top, 4)
-                        } else {
-                            ForEach(list) { card($0) }
-                        }
-                    }
-                    .id(lane)
                 }
                 Color.clear.frame(height: 80)
             }
@@ -225,6 +207,54 @@ struct CollectView: View {
             SignInSheet(reason: .keepCollection(saved.savedCount), localCount: saved.savedCount)
                 .environment(account).environment(saved)
         }
+    }
+
+    /// The lane picker, pinned. Opaque, because a pinned header with a clear
+    /// background has the list sliding visibly underneath it.
+    private var lanePicker: some View {
+        Picker("", selection: $lane) {
+            Text("Want to see").tag(Lane.want)
+            Text("Collected").tag(Lane.seen)
+        }
+        .pickerStyle(.segmented)
+        .accessibilityIdentifier("collect-lane")
+        .padding(.vertical, 10)
+        .background(Brand.ground)
+    }
+
+    /// Everything the picker switches, rebuilt rather than reshuffled.
+    ///
+    /// Switching lanes used to leave the previous lane's NavigationLinks in the
+    /// stack's hit-test geometry, so a tap on the picker opened whichever card
+    /// had been under it (Hidde, 2026-08-24: "als ik op collected klik en weer
+    /// op want to see dan opent die de boom eronder"). The `.id(lane)` below is
+    /// that fix and it stays; what changed on 08-25 is that the picker no
+    /// longer moves when this rebuild changes the content's height.
+    @ViewBuilder private var laneContent: some View {
+        VStack(alignment: .leading, spacing: 28) {
+            if lane == .seen, !sightings.yoursOnly.isEmpty {
+                // Yours first, because they are the ones nobody else has. Still
+                // marked as yours on the card, so the distinction survives
+                // where it is useful (this one is not on the map everybody
+                // sees) and disappears where it was only in the way.
+                ForEach(sightings.yoursOnly) { s in
+                    NavigationLink(value: Route.mine(s.id)) { MineCard(sighting: s) }
+                        .buttonStyle(.plain)
+                }
+            }
+            let list = lane == .want ? wishlist : visited
+            if list.isEmpty {
+                Text(lane == .want
+                     ? "Nothing on your list. Tap a heart anywhere to put a tree here."
+                     : "Nothing collected yet. Photograph a tree with the button above, ours or one only you know.")
+                    .font(.subheadline).foregroundStyle(Brand.inkSoft)
+                    .padding(.top, 4)
+            } else {
+                ForEach(list) { card($0) }
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .id(lane)
     }
 
     // MARK: - the score

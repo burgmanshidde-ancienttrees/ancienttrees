@@ -133,7 +133,12 @@ struct TreeMap: UIViewRepresentable {
         // map with no sheet in front of it looks the same as before.
         if let lift = context.coordinator.recentreLift, map.bounds.height > 0 {
             let want = -(sheetLift.points(in: map.bounds.height) + 12)
-            let clamped = min(want, -120)
+            // Never higher than mid-screen. At full height the sheet is 86
+            // percent of the phone, so "just above the sheet" put the recentre
+            // control up among the search field and the filter chips, three
+            // controls deep in the same 120 points (seen 2026-08-25, on the
+            // map-full screen the moment it was first photographed).
+            let clamped = max(min(want, -120), -(map.bounds.height * 0.55))
             if abs(lift.constant - clamped) > 1 { lift.constant = clamped }
         }
 
