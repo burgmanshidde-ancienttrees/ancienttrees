@@ -46,6 +46,20 @@ MAX_DETOUR = 2.5
 # them. 0.4 is loose on purpose: the straight-line figure is itself a rounded
 # sum, so a genuine route can undercut it slightly on a short walk.
 MIN_PLAUSIBLE = 0.4
+# And it has to go PAST THE TREES. A pedestrian router snaps to the network it
+# knows: a tree inside a park whose paths are missing from OpenStreetMap gets a
+# line along the road outside, which is a real route to the wrong place.
+#
+# Hidde found it on his phone (2026-08-25, Baarn's Cantonspark walk): "how come
+# this walk actually misses the tree?" The American Oak of the Pekingtuin sat 75
+# metres from its own route. Measured across the whole cache with
+# scripts/walkcheck.py: 47 of 2027 stops, 2.3 percent, in 21 cities, the worst
+# 260 metres in Boston.
+#
+# 60 metres, not the 40 walkcheck.py reports on: 40 is where a line stops
+# reading as "past the tree" on a phone, and this is the line where a route is
+# worse than the honest schematic it would fall back to.
+MAX_MISS_M = 60.0
 
 
 def decode_polyline6(s):
@@ -95,8 +109,26 @@ def fetch_route(points):
     return shape, trip["summary"]["length"], trip["summary"]["time"] / 60.0
 
 
+def metres_to_line(point, shape):
+    """Shortest distance from a stop to the drawn line, in metres.
+
+    Shared with scripts/walkcheck.py, which reports on the whole cache; this
+    file needs it to refuse a route as it arrives."""
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import walkcheck
+    return walkcheck.metres_to_line(point, shape)
+
+
+def worst_miss(shape, points):
+    """How far the furthest stop sits from the line."""
+    if not shape or len(shape) < 2:
+        return 0.0
+    return max(metres_to_line(p, shape) for p in points)
+
+
 def main():
     refresh = "--refresh" in sys.argv
+    recheck = "--recheck" in sys.argv
     cache = {}
     if os.path.exists(OUT) and not refresh:
         cache = json.load(open(OUT)).get("routes", {})
@@ -133,6 +165,36 @@ def main():
                 continue
             todo.append((key, [(markers[i]["lat"], markers[i]["lng"]) for i in w["order"]], w["km"]))
 
+    if recheck:
+        # Re-judge what is already cached against the rules as they stand now,
+        # which is how the 60 metre miss rule reaches the routes fetched before
+        # it existed. Also prunes keys no walk uses any more: the ordering
+        # changed once today, and the cache kept both orders, one of them good
+        # and one of them 75 metres off the tree.
+        coords = {}
+        for entry in entries:
+            for t in entry["data"]["trees"]:
+                loc = t.get("location") or {}
+                if loc.get("latitude") is not None:
+                    coords[t["id"]] = (loc["latitude"], loc["longitude"])
+        demoted = 0
+        for key in sorted(cache):
+            r = cache[key]
+            shape = r.get("shape")
+            if not shape:
+                continue
+            pts = [coords[i] for i in key.split(":", 1)[1].split(",") if i in coords]
+            if not pts:
+                continue
+            miss = worst_miss(shape, pts)
+            if miss > MAX_MISS_M:
+                cache[key] = {"rejected": True,
+                              "routed_km": r.get("km"),
+                              "worst_miss_m": round(miss)}
+                demoted += 1
+                print(f"  {key[:44]:44} demoted: misses a stop by {miss:.0f} m")
+        print(f"{demoted} cached route(s) demoted for missing a stop")
+
     print(f"{len(todo)} walks to route, {skipped} already cached")
     for key, pts, straight_km in todo:
         try:
@@ -145,6 +207,11 @@ def main():
         if straight_km and km > straight_km * MAX_DETOUR:
             print(f"  {key[:44]:44} rejected: routed {km:.1f} km vs {straight_km} straight")
             cache[key] = {"rejected": True, "routed_km": round(km, 2)}
+            rejected += 1
+        elif (miss := worst_miss(shape, pts)) > MAX_MISS_M:
+            print(f"  {key[:44]:44} rejected: misses a stop by {miss:.0f} m")
+            cache[key] = {"rejected": True, "routed_km": round(km, 2),
+                          "worst_miss_m": round(miss)}
             rejected += 1
         elif distinct < 2 or (straight_km and km < straight_km * MIN_PLAUSIBLE):
             # The OTHER failure, and it is the dangerous one because it looks

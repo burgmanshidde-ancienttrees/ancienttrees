@@ -205,28 +205,29 @@ struct SignInSheet: View {
 
     // MARK: - done
 
+    /// SIGNED IN MEANS DONE. No congratulation screen (Hidde, 2026-08-25: "i
+    /// dont think this screen adds anything just skip it).
+    ///
+    /// It said "Your 8 trees are in your account. They are on the website too"
+    /// over a button called "Back to the trees", which is a page whose only
+    /// content is a claim about something that already happened and a way to
+    /// leave. Every app people use closes the sheet and returns them to what
+    /// they were doing; the trees being kept is what the sheet PROMISED, and
+    /// delivering a promise does not need its own screen.
+    ///
+    /// The merge still runs, because that is the part that does something: it
+    /// pulls back what the account already held. A brief spinner while it does,
+    /// and then the sheet is gone.
     private var done: some View {
         VStack(spacing: 14) {
-            SpeciesMark(species: "Cedar of Lebanon", color: brand)
-                .frame(width: 64, height: 64).padding(.top, 20)
-            Text(mergedHeadline).font(.title2.bold()).multilineTextAlignment(.center)
-            Text("They are on the website too, at ancienttrees.app, signed in with the same address.")
-                .font(.subheadline).foregroundStyle(.secondary).multilineTextAlignment(.center)
-            Button("Back to the trees") { dismiss() }
-                .font(.headline).frame(maxWidth: .infinity).padding(.vertical, 15)
-                .background(brand, in: .capsule).foregroundStyle(.white)
-                .padding(.top, 6)
+            ProgressView()
+                .padding(.vertical, 30)
+                .accessibilityLabel("Signing you in")
         }
-        .task { await finishIfSignedIn() }
-    }
-
-    private var mergedHeadline: String {
-        let total = saved.savedCount
-        if let m = merged, m > 0 {
-            return "Signed in, and \(m) more came back from your account."
+        .task {
+            await finishIfSignedIn()
+            dismiss()
         }
-        if total == 0 { return "You are in." }
-        return total == 1 ? "Your tree is in your account." : "Your \(total) trees are in your account."
     }
 
     // MARK: - shared pieces

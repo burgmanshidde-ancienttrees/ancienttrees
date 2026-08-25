@@ -531,6 +531,29 @@ struct MapTab: View {
             .sorted { Geo.km(focus, ($0.lat, $0.lng)) < Geo.km(focus, ($1.lat, $1.lng)) }
     }
 
+    /// Put a walk on screen whole.
+    ///
+    /// Hidde, 2026-08-25: "if I press walking routes on the map screen, it would
+    /// make sense that the map zooms out to place that walk exactly in the
+    /// middle of your screen." It drew the line and left the camera wherever it
+    /// happened to be, so a walk two streets away was a green thread leaving the
+    /// corner of the screen. The bottom inset the camera now carries means the
+    /// middle it aims for is the middle of the part you can SEE, not the middle
+    /// of the map behind the sheet.
+    private func frame(_ w: Walk) {
+        let stops = catalogue.trees(of: w)
+        guard !stops.isEmpty else { return }
+        let lats = stops.map(\.lat), lngs = stops.map(\.lng)
+        let centre = CLLocationCoordinate2D(latitude: (lats.min()! + lats.max()!) / 2,
+                                            longitude: (lngs.min()! + lngs.max()!) / 2)
+        // A fifth of air around it, and a floor so a walk of one street does not
+        // arrive at maximum zoom.
+        let span = MKCoordinateSpan(
+            latitudeDelta: max((lats.max()! - lats.min()!) * 1.4, 0.004),
+            longitudeDelta: max((lngs.max()! - lngs.min()!) * 1.4, 0.004))
+        moveRequest = (token: UUID(), region: MKCoordinateRegion(center: centre, span: span))
+    }
+
     /// The walks where the map is looking, as the shelf a city page uses.
     ///
     /// The sheet used to hold trees and nothing else, so a walk existed only
@@ -562,6 +585,7 @@ struct MapTab: View {
                             Button {
                                 filters = MapFilters()
                                 shownWalk = w
+                                frame(w)
                                 if sheetHeight == .peek { sheetHeight = .card }
                             } label: {
                                 CityWalkCard(walk: w, locked: true,
@@ -743,6 +767,7 @@ struct MapTab: View {
                     // nobody asked for.
                     filters = MapFilters()
                     shownWalk = walksHere.first
+                    if let w = walksHere.first { frame(w) }
                     // .card, not .peek. It drew a route on the map and then
                     // shrank the sheet to a lip, so the walk existed as a line
                     // and nowhere else: "ik heb nu op walking routes geklikt op
