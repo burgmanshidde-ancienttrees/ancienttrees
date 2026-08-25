@@ -207,7 +207,12 @@ jobs:
       # this; what changed is that the pictures now exist without one.
       - name: Photograph every screen
         if: always()
-        run: python3 scripts/appsweep.py --no-build || true
+        # ONE phone here, the smallest. Two took over thirty minutes on the
+        # runner (2026-08-25) for pictures nobody looks at per push: the reason
+        # they exist in CI is the nightly reviewer, which reads the SE set and
+        # only ever six of them. appfit still measures BOTH phones, because that
+        # half is mechanical and needs no eyes. A session sweeps both.
+        run: python3 scripts/appsweep.py --no-build --device "iPhone SE (sweep)" || true
 
       - name: Keep the screenshots
         if: always()
