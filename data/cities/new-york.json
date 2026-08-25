@@ -349,7 +349,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Coordinates are for the Botanical Garden's main entrance; the tree's specific position on the Spicebush Trail within the 50-acre forest is not separately surveyed.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "paid_entry": true
     },
     {
       "id": "nyc_010",
@@ -546,7 +547,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "paid_entry": true
     },
     {
       "id": "nyc_016",
@@ -583,7 +585,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "paid_entry": true
     },
     {
       "id": "nyc_017",

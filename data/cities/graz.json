@@ -331,7 +331,8 @@
       },
       "curation_status": "flagged",
       "notes": "Register + Wikipedia agree within 3m; Wikipedia carries a real dated field measurement (girth 3.70m, 16 Oct 2016). Strongest individual specimen in a wider planting of 10 designated trees at this address (5 planes, 4 pines); the rest have no individuating measurement and read as one avenue, not shipped as separate entries. No age derived: no cited Pinus strobus growth-rate figure in hand.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     },
     {
       "id": "grz_010",
@@ -363,7 +364,8 @@
       },
       "curation_status": "flagged",
       "notes": "Flagged for two narrow reasons, not existence: (1) absent from the City of Graz's own live municipal GIS layer (checked directly; the other nine Eggenberg trees all appear in it, this one does not), so the two-source bar rests on Austria's national register (via Wikipedia) plus a dated, geo-tagged Commons photo rather than two independent GIS layers. (2) Alive-now evidence is a single 2014 photograph, 12 years old, no more recent sighting found. Location itself is solid: register coordinates and photo GPS agree to six decimal places.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     }
   ]
 }

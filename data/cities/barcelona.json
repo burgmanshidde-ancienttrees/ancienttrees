@@ -192,7 +192,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Height (~40m) is the municipal catalogue's own estimate, flagged there as uncertain due to measurement difficulty in the confined ravine; reported here as an estimate rather than a precise figure. Pin corrected 2026-07-26: the previous coordinates (41.3618, 2.1587) actually sat about 830m outside the garden's real bounds, not just an imprecise entrance estimate but a genuine error. OpenStreetMap carries this exact tree from Barcelona's own protected-tree catalogue, tagged \"Arbres d'interes local de Barcelona. Jardi Botanic Historic. Sector de l'estany\", species Pterocarya x rehderiana, which names both the right garden and the right ravine sector. Confirmed on that match.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "paid_entry": true
     },
     {
       "id": "bcn_006",
@@ -225,7 +226,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Pin corrected 2026-07-26: the previous coordinates (41.3618, 2.1587) actually sat about 830m outside the garden's real bounds, not just an imprecise entrance estimate but a genuine error. OpenStreetMap carries this exact tree from Barcelona's own protected-tree catalogue, tagged \"Arbres d'interes local de Barcelona. Antic Jardi Botanic\", species Fraxinus pennsylvanica, matching both the garden (an alternate name for the Jardi Botanic Historic) and the species. Confirmed on that match.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     },
     {
       "id": "bcn_007",
@@ -764,7 +766,8 @@
       },
       "curation_status": "flagged",
       "notes": "FLAGGED for having no age at all. The city register's planting-year field is empty and the Generalitat's file gives none either, so no age_min or age_max is set and the age_estimate says so plainly rather than inventing a range from the neighbours (the green ash beside it, bcn_006, is dated 1924). Everything else is unusually well sourced for Barcelona, because two separate authorities cover it: the city register (register_id 99400637941, catalogued 2015, 29 m tall, girth 2.5 m, crown 15 m) and the Generalitat de Catalunya, which registers it as the Freixe de Montjuic, code MA-13.931.02, at 29.0 x 2.5 x 15.4 m and declared it monumental on 2 April 2025. The tallest-in-Catalonia claim and the up-to-four-degrees microclimate figure both come from the Museu de Ciencies Naturals de Barcelona's own account of the declaration, which is the garden's operator and independent of the tree register. Pin approximate, and deliberately so: the city register gives 41.366868/2.152084 and the Generalitat gives 41.366939/2.151886, 18 m apart, and the neighbouring monumental sycamore (bcn_022) stands about 7 m from this point. An 18 m uncertainty cannot tell the two apart on the ground, so the pin gets someone into the right corner of the ravine and the garden's own labels do the rest. Photo: the Generalitat publishes File:Freixe de Montjuic.jpg on Commons under its attribution-gencat licence, but it was viewed directly and rejected. The frame is a dark shaded ravine in which an araucaria takes the foreground and no ash is identifiable, which fails the Cadiz standard on every count. Honest gap.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "paid_entry": true
     },
     {
       "id": "bcn_022",
@@ -802,7 +805,8 @@
       },
       "curation_status": "flagged",
       "notes": "FLAGGED for having no age. The city register's planting year reads 'Per determinar' and the Generalitat's file gives none, so no age_min or age_max is set. Two independent authorities cover the tree: the city register (register_id 99400637939, catalogued 2015, 30 m tall, girth 1.4 m, crown 12 m) and the Generalitat de Catalunya, which registers it as the Platan Fals de Montjuic, code MA-13.931.04, at 30.0 x 1.38 x 12.0 m, declared monumental 2 April 2025. The rarity-in-Barcelona point comes from the Museu de Ciencies Naturals account of the declaration. Pin approximate: city register 41.36677/2.152069 against the Generalitat's 41.366884/2.151851, 22 m apart, and the monumental ash (bcn_021) stands about 7 m away. See the note on bcn_021: the pin puts a visitor in the right corner of the ravine, not on the exact trunk. PHOTO PROBLEM WORTH KEEPING. The Generalitat publishes File:Platan Fals de Montjuic.jpg on Commons under attribution-gencat, sourced from its own monumental-tree file for this tree. It was viewed directly and NOT used, because the tree in the frame has pinnate compound leaves, which is an ash, not a maple; Acer pseudoplatanus has palmate lobed leaves. Either the file is mislabelled or the photographer shot the wrong trunk in a ravine where the ash stands seven metres away. Recording it rather than acting on it: the identification of the tree itself rests on two official registers, not on this photograph.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "paid_entry": true
     },
     {
       "id": "bcn_023",
@@ -1171,7 +1175,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "paid_entry": true
     },
     {
       "id": "bcn_035",

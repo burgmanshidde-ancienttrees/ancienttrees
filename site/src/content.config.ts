@@ -62,6 +62,11 @@ export const treeSchema = z.object({
   story: z.string().optional(),
   verified_sources: z.array(z.string()).optional(),
   access: z.string().optional(),
+  /// True when getting to this tree needs a ticket. Written by
+  /// scripts/paid_entry.py from the access prose, and only where that prose is
+  /// unambiguous: a badge that tells somebody to pay for a free garden is worse
+  /// than no badge.
+  paid_entry: z.boolean().optional(),
   transport: z.string().optional(),
   photo: photoSchema,
   curation_status: z.enum(["ai_generated", "hidde_approved", "flagged"]).optional(),

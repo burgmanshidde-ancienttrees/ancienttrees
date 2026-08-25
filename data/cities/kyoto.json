@@ -58,7 +58,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "OpenStreetMap carries a contributor-mapped, heritage-tagged node named \"遊龍松\" (Yuryu-matsu) at this spot, matching the tree's own Japanese name exactly and its 1932 national-monument designation; its species tag (Pinus thunbergii) contradicts our own two independent sources, which agree this is a five-needle pine (Pinus parviflora, matching the story's description), so the location was used but the species tag was not.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     },
     {
       "id": "kyo_002",
@@ -92,7 +93,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "OpenStreetMap carries a contributor-mapped, survey-sourced node named \"陸舟の松\" (Rikushu Pine) at this spot, matching the tree's own name exactly. Photo URL fixed 2026-07-28: the stored thumb path (commons/thumb/8/8e/...) 404'd, caught by a full site-wide hash-path check against Commons' API; the real current path is 4/4f. Fetched and viewed directly, the same boat-shaped trained pine beside Kinkaku-ji's roofline, before swapping.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     },
     {
       "id": "kyo_003",
@@ -125,7 +127,8 @@
       },
       "curation_status": "flagged",
       "notes": "The 2021 source describing the tree recovering vigor implies a period of decline; no source gives a clear cause or timeline for that decline. A candidate photo captioned \"Hosen-in, Bankan-en (Garden)\" was viewed directly on an earlier pass and rejected: it shows an illuminated Japanese maple against a bamboo grove at night, not a pine at all, so the garden-name caption evidently covers more than just this one tree. A second candidate, Commons file \"宝泉院_01.JPG\" (Category:Goḳō-no-matsu, Hōsen-in, the tree's own name), was downloaded and viewed directly this pass: it is the temple's signature framed-garden shot, the pine's gnarled poled branches seen through the guest-hall window with tatami in the foreground, an unambiguous match. Approved. Pin corrected 2026-07-28, about 625m: the previous coordinate was a street-level address estimate that turned out to be a genuine error, not just imprecise; OpenStreetMap carries two independently mapped nodes both named Hosen-in within about 150m of each other, one explicitly tagged with this entry's own street number (187), used here instead. The temple is a single small building around one guest hall and garden, so this building-level point puts a visitor at the pine itself, not just in the neighbourhood.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     },
     {
       "id": "kyo_004",
@@ -308,7 +311,8 @@
           4
         ],
         "label": "late March into early April, when its blossoms recreate the display Hideyoshi once staged here"
-      }
+      },
+      "paid_entry": true
     },
     {
       "id": "kyo_009",

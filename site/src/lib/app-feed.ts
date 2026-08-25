@@ -38,6 +38,9 @@ export interface FeedTree {
   country: string;
   neighbourhood: string | null;
   access: string | null;
+  /// Getting there needs a ticket. The app puts a mark on the pin and the
+  /// walk planner leaves these out.
+  paid_entry?: boolean;
   transport: string | null;
   precision: string | null;
   best_time: unknown;
@@ -75,6 +78,7 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
         country: city.data.country,
         neighbourhood: loc.neighbourhood ?? null,
         access: t.access ?? null,
+        ...(t.paid_entry ? { paid_entry: true } : {}),
         transport: t.transport ?? null,
         precision: t.location_precision ?? null,
         best_time: t.best_time ?? null,

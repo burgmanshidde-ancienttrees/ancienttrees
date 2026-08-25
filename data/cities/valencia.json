@@ -345,7 +345,8 @@
       },
       "curation_status": "flagged",
       "notes": "No individual age or planting record documented; included for species rarity per the city's own official monumental trees route rather than for size or age. Location given as the university's Jardí Botanic since the route's own 'Culture Park (former hospital)' description could not be reconciled precisely with a single confirmed address during this run.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "paid_entry": true
     },
     {
       "id": "vlc_011",
@@ -500,7 +501,8 @@
         ],
         "label": "September to October: the whole crown turns orange-brown, the tree's best-known moment after its shape",
         "kind": "autumn colour"
-      }
+      },
+      "paid_entry": true
     },
     {
       "id": "vlc_016",

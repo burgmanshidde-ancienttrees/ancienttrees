@@ -118,7 +118,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "The thapra.lib.su.ac.th source (Silpakorn University's Rattanakosin temple archive) could only be confirmed via search-indexed snippet this session; direct fetch failed with a socket error on every attempt. The 1864/Rama IV planting date is independently corroborated by becommon.co, an unrelated source, so the fact stands on two sources despite the direct-fetch failure.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "paid_entry": true
     },
     {
       "id": "bkk_004",
@@ -149,7 +150,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "The thapra.lib.su.ac.th source could only be confirmed via search-indexed snippet this session; direct fetch failed with a socket error. The 1891 Bodh Gaya cutting, Si Racha nursery and 1900 planting are independently corroborated across today.line.me and posttoday.com.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "paid_entry": true
     },
     {
       "id": "bkk_005",

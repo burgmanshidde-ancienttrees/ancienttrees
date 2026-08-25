@@ -243,7 +243,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Pin corrected from the garden's main entrance to the tree's own position: OpenStreetMap carries a contributor-mapped node named \"三百年の松\" (Three-Hundred-Year Pine Tree) tagged as Pinus thunbergii at this spot, with a matching guidepost and information-board node within a few metres corroborating it.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     },
     {
       "id": "tok_007",
@@ -283,7 +284,8 @@
         ],
         "label": "late November, when the leaves turn gold",
         "kind": "autumn colour"
-      }
+      },
+      "paid_entry": true
     },
     {
       "id": "tok_008",

@@ -63,7 +63,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Arrival date (autumn-winter 1910, ex-La Granja de San Ildefonso), original count (25) and survivor count (10) confirmed by a dedicated botanical-history source on the Alcázar's own flora, cross-referenced against a second independent article on the gardens. Upgraded to confirmed 2026-07-29: the Real Alcázar's own living-collection database (nomadgarden.org, the garden's official specimen map, queried directly rather than through its JS-rendered map view) individually geotags 11 Ginkgo biloba specimens in the English Garden, clustered within about 110m of each other. Pin moved to their centroid, about 220m from the previous general-address estimate. Worth a note rather than a silent change: the database currently shows 11 living specimens against this entry's own sourced count of 10 survivors from the original 1910 planting; not resolved further this session, may reflect a later replacement planting rather than an error in either source.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     },
     {
       "id": "sev_002",
@@ -95,7 +96,8 @@
       },
       "curation_status": "flagged",
       "notes": "The Hernando Colón/1529 origin story rests on one detailed source (a dedicated old-trees blog); the CAAC's own site confirms the monastery's Colón-era history and the site's general access details but does not itself date the tree. Flagged for single-source dating rather than dropped, since the tree's existence, near-death in the 1990s and current protected status are independently corroborated. Coordinates are the museum's street address; the tree's exact spot within the grounds is not independently surveyed, hence approximate.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "paid_entry": true
     },
     {
       "id": "sev_003",
@@ -295,7 +297,8 @@
       },
       "curation_status": "flagged",
       "notes": "Current trees confirmed as a 20th-century replanting (Félix Hernández restoration) rather than a surviving Almohad-era grove, so age is stated as an estimate bound by the restoration era, not a documented planting year. The 1992 shift from free to paid access is confirmed by a dedicated local news retrospective. Pin resolved 2026-07-29 via OpenStreetMap/Nominatim: a pedestrian feature individually named 'Patio de los Naranjos, Santa Cruz, Casco Antiguo, Sevilla' (an exact name match for the courtyard itself, not just the cathedral's general address), about 60m from the prior address-derived point. This is an ensemble entry (the whole orange-tree courtyard, not one trunk), so a courtyard-level pin is the appropriate precision; treated as confirmed on that basis.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     },
     {
       "id": "sev_009",
@@ -493,7 +496,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Two independent sources. Carlos Romero Zarco's botanical itinerary of the Alcazar for the University of Seville, October 2005, lists the pacanero in the Jardin del Marques de la Vega-Inclan by name and species, seventeen years before the municipal catalogue, confirming both tree and location. The 1913-1917 garden date, the lost older specimen by the Pabellon de Carlos V, the dimensions and the condition ratings come from the Ayuntamiento de Sevilla's Inventario de Arboles Singulares (2022), ficha 3. Age is a range because the catalogue dates the planting to the garden's construction window, not a year. The 37 m height is the tallest of the seven Alcazar trees in the catalogue; it is not the tallest tree in Seville, which the same catalogue records as El Gran Capitan at 55 m, already published here as sev_005. Titularidad: Real Alcazar de Sevilla.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     },
     {
       "id": "sev_015",
@@ -592,7 +596,8 @@
         ],
         "label": "April to May, when it flowers",
         "kind": "flowers"
-      }
+      },
+      "paid_entry": true
     },
     {
       "id": "sev_018",
@@ -629,7 +634,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "notes": "Single source, the municipal catalogue, hence flagged. Pin marked approximate deliberately: the catalogue places the tree in the Jardin Ingles, but its coordinate sits about 80 metres west of the pin this site already publishes for the ginkgo grove in that same garden (sev_001), and the catalogue is known to carry misplaced coordinates (its ficha 15 holds ficha 14's position, 1.2 km away). Inside a walled ticketed garden the named location does the work the pin cannot. The 1910 planting date for the English Garden comes from sev_001's sources and is stated about the garden, not about this tree. best_time follows the species' well known March flowering in southern Spain, not a dated local record."
+      "notes": "Single source, the municipal catalogue, hence flagged. Pin marked approximate deliberately: the catalogue places the tree in the Jardin Ingles, but its coordinate sits about 80 metres west of the pin this site already publishes for the ginkgo grove in that same garden (sev_001), and the catalogue is known to carry misplaced coordinates (its ficha 15 holds ficha 14's position, 1.2 km away). Inside a walled ticketed garden the named location does the work the pin cannot. The 1910 planting date for the English Garden comes from sev_001's sources and is stated about the garden, not about this tree. best_time follows the species' well known March flowering in southern Spain, not a dated local record.",
+      "paid_entry": true
     },
     {
       "id": "sev_019",
@@ -659,7 +665,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "notes": "Single source, the municipal catalogue, hence flagged. No age is claimed: the catalogue gives none, and the tradition behind the name is not documented in any source found, so the story states the gap and asks the reader, per the publish-and-ask rule. Pin marked approximate: the catalogue's coordinate sits roughly 50 metres southwest of the point its own emplazamiento describes, between the Pabellon de Carlos V and the Cenador del Leon. Pedro I's palace dates (1364-1366) are standard history of the site, not a claim about the tree."
+      "notes": "Single source, the municipal catalogue, hence flagged. No age is claimed: the catalogue gives none, and the tradition behind the name is not documented in any source found, so the story states the gap and asks the reader, per the publish-and-ask rule. Pin marked approximate: the catalogue's coordinate sits roughly 50 metres southwest of the point its own emplazamiento describes, between the Pabellon de Carlos V and the Cenador del Leon. Pedro I's palace dates (1364-1366) are standard history of the site, not a claim about the tree.",
+      "paid_entry": true
     },
     {
       "id": "sev_020",
@@ -888,7 +895,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed. Pin approximate: inside a large walled garden with several other catalogued trees close together, the named corner location is the more reliable guide."
+      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed. Pin approximate: inside a large walled garden with several other catalogued trees close together, the named corner location is the more reliable guide.",
+      "paid_entry": true
     },
     {
       "id": "sev_027",
@@ -919,7 +927,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed. girth_130_cm not applicable (catalogue records base girth of two stems only), so girth_cm left unset rather than guessed."
+      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed. girth_130_cm not applicable (catalogue records base girth of two stems only), so girth_cm left unset rather than guessed.",
+      "paid_entry": true
     },
     {
       "id": "sev_028",
@@ -951,7 +960,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed."
+      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed.",
+      "paid_entry": true
     },
     {
       "id": "sev_029",
@@ -982,7 +992,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed. Not a palm despite the common name; the story says so directly rather than letting the name mislead."
+      "notes": "Single source, the municipal catalogue, hence flagged. No age given, none claimed. Not a palm despite the common name; the story says so directly rather than letting the name mislead.",
+      "paid_entry": true
     },
     {
       "id": "sev_030",

@@ -63,7 +63,8 @@
       },
       "curation_status": "flagged",
       "notes": "Pin corrected from the park's general location to the tree's own position: OpenStreetMap carries a contributor-mapped node named \"Heimanseik\" tagged natural=tree, species Quercus robur, start_date 1775, matching this specimen closely enough (a distinctive name unlikely to apply to any other tree) to treat as confirmed.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     },
     {
       "id": "ams_002",
@@ -196,7 +197,8 @@
       },
       "curation_status": "flagged",
       "notes": "Age estimate is sourced from the Hortus's own garden records and plant database; independent third-party confirmation was not found. Coordinates corrected 2026-07-26 from a general Hortus street geocode to the Palmenkas (Palm House) building itself, located via OpenStreetMap building data (52.3663, 4.9081); this is the specific greenhouse the story places the cycad in, though the Palm House holds more than one Encephalartos specimen so the pin cannot distinguish which one inside the glasshouse. Photo downloaded and viewed directly 2026-07-27: shows two large barrel-potted cycads facing each other inside a Victorian-style glasshouse, one with an interpretive placard, matching the story's own detail that the 300-year male cycad and a roughly 200-year female cycad grow opposite each other in this exact Palm House. Cannot distinguish which specimen in frame is which, but the paired composition itself corroborates the described planting, so approved as an illustration of the pair rather than a single confirmed specimen.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     },
     {
       "id": "ams_006",
@@ -411,7 +413,8 @@
       },
       "curation_status": "flagged",
       "notes": "Planting date (1795) and girth (300cm) both trace to a single source lineage: Bomenstichting content that the national monumental-trees register entry (monumentalebomen.nl, id 1686149) appears to reuse, rather than two fully independent measurements. Species and presence in this garden are independently corroborated by NVBT (the Dutch botanical gardens association) and monumentaltrees.com. No exact in-garden coordinate found, only the Hortus street address, so pinned at the garden entrance rather than the specific specimen; location_precision is approximate for that reason. Do not present as the city's oldest tree without a citywide comparison; several other Amsterdam trees on this list are older by planting date.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     },
     {
       "id": "ams_016",
@@ -441,7 +444,8 @@
       },
       "curation_status": "flagged",
       "curation_status_note": "flagged for the age discrepancy above; species/location/existence are solid (two sources agree).",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     },
     {
       "id": "ams_018",
@@ -623,7 +627,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     },
     {
       "id": "ams_024",

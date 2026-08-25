@@ -266,7 +266,8 @@
       },
       "curation_status": "flagged",
       "notes": "Existence and front-garden location corroborated by the garden's own dedicated blog page; regional monumental-tree listing mentioned in general coverage of Bologna's botanical garden. No individual planting date or precise dimensions found for this specimen. Pin tightened 2026-07-27: the only Ginkgo biloba tree node OpenStreetMap maps near the garden sits right at its southern boundary; kept `approximate` since it isn't tied to an individual accession record from the garden's own collection. 2026-07-29: three iNaturalist Ginkgo biloba observations found within about 100m of the pin, but two are CC-BY-NC and one has no license set at all (null, meaning all-rights-reserved by default); genuine dead end on license grounds.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "paid_entry": true
     },
     {
       "id": "bol_008",
@@ -391,7 +392,8 @@
       "notes": "Surfaced 2026-08-12 via the italy-masaf.json register (sheet Via Irnerio, name_it 'Noce grigio'), coordinate ~230m from the already-published bol_007 ginkgo, both inside the same Orto Botanico. Two independent press sources (Sestopotere, a Bologna news site, and Visitupbologna, an independent tourism guide) both citing university staff (curator Umberto Mossetti, professor Alberto Minelli) corroborate the tree's existence, species, 32m height and the ongoing conservation project, confirming it is alive now (an 'irreversible aging phase' under active five-year monitoring to preserve it, not a dead tree). GIRTH DISCREPANCY, stated honestly rather than resolved: the region's register gives 420cm, the two press sources both give approximately 471cm (independently matching each other, likely both citing the same university figure, distinct from the register's own survey). No age or planting date found anywhere. Access/transport copied from bol_007 for consistency, same location.",
       "location_precision": "approximate",
       "height_m": 32.5,
-      "verify_notes": "Height 32.5 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 32.5 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "paid_entry": true
     },
     {
       "id": "bol_012",

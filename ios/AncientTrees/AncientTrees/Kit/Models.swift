@@ -89,6 +89,10 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
     let neighbourhoodRaw: String?
     public var neighbourhood: String { neighbourhoodRaw ?? "" }
     public let access: String
+    /// Getting to this tree needs a ticket. Written by scripts/paid_entry.py
+    /// from the access prose and only where that prose is unambiguous.
+    let paidEntryRaw: Bool?
+    public var paidEntry: Bool { paidEntryRaw ?? false }
     let transportRaw: String?
     public var transport: String { transportRaw ?? "" }
     public let story: String
@@ -105,6 +109,7 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
         case ageMin = "age_min"
         case ageMax = "age_max"
         case access, story, url, precision, photo, peak
+        case paidEntryRaw = "paid_entry"
         case citySlug = "city_slug"
         case bestTime = "best_time"
     }

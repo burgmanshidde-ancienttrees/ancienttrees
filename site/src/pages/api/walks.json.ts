@@ -14,7 +14,7 @@
 // real routed shape, that shape rides along, so a client draws the street a
 // walker actually follows instead of straight lines between trunks.
 import { getCollection } from "astro:content";
-import { cityIsRenderable, renderableTrees } from "../../lib/trees";
+import { cityIsRenderable, walkableTrees } from "../../lib/trees";
 import { planWalks, walkRouteFor, humanDuration, kmLabel, type WalkMarker } from "../../lib/walks";
 import { speciesIcon } from "../../lib/species-icons";
 import { usablePhoto } from "../../lib/images";
@@ -25,7 +25,7 @@ export async function GET() {
   const out: any[] = [];
 
   for (const city of cities) {
-    const trees = renderableTrees(city).filter(
+    const trees = walkableTrees(city).filter(
       (t) => t.location?.latitude != null && t.location?.longitude != null,
     );
     if (trees.length < 2) continue;

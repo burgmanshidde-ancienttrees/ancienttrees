@@ -56,7 +56,8 @@
       },
       "curation_status": "flagged",
       "notes": "Age is a genuine, unresolved disagreement and is deliberately left unresolved. es.wikipedia cites a current scientific estimate of approximately 700 years with a margin of error of 100-150 years (roughly 550-850); popular and tourist sources claim 800-1,000+, and folklore claims up to 3,000 are unconfirmed and not used as a bound. Dracaena draco has no annual growth rings, so it cannot be dated dendrologically and no girth-based derivation was attempted for this species. Height 18m (es.wikipedia) to 21m (other sources); trunk perimeter about 20m at base (girth_cm 2000, an unusually wide multi-stemmed base typical of the species rather than a single narrow trunk); crown diameter about 20m; over 300 primary branches. Declared a Spanish national monument in 1917. Underwent 'profound sanitation' in 1985 (internal ventilation installed against fungal rot); the road past it was relocated in 1993. No evidence of recent storm damage or a lost branch; status per sources is protected and stable, with a health study run Oct 2023-Mar 2024 per eldiario.es informing conservation work.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "paid_entry": true
     },
     {
       "id": "tfe_002",
@@ -148,7 +149,8 @@
       },
       "curation_status": "flagged",
       "notes": "Likely the Lord Howe Island form of the species (f. columnaris / var. columnaris, native to Lord Howe Island rather than mainland Australia); sources differ on how precisely to name the variety, so the species-level canonical name is used and the open question is stated on the page. Documented planting: planted by the garden's Swiss head gardener Hermann Wildpret during his tenure (1860-1893), specifically 'in the 1870s' per two independent secondary sources, which is a real basis for a derived age (a documented planting date for this specimen, not a bridge from the garden's own 1788 founding). One weaker source (getawayguide.co.uk) separately states 'around 200 years old' without giving a planting date; recorded as a conflicting figure rather than resolved. Height approximately 30m; many aerial roots descending from the branches, some thickened into secondary trunks. Spanish Wikipedia confirms the garden's coordinates and its founding by royal order of Carlos III, 17 August 1788, inaugurated 1792, but does not mention the ficus by name, so it is not used as a source for the tree's own age. location_precision approximate: the coordinates are the garden's own (OSM way centroid), not the tree's plot inside the roughly 20,000 sqm grounds; no tree-level coordinate was found this pass.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "paid_entry": true
     }
   ],
   "kind": "island"

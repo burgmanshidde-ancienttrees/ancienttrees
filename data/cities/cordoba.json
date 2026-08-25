@@ -138,7 +138,8 @@
       },
       "curation_status": "flagged",
       "notes": "Two published sources give the same 400-year figure and both very likely trace to the palace museum itself; no press, botanical or register source dates it independently. Published as the palace's claim rather than as established fact. Pin is the garden, not a surveyed trunk position.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "paid_entry": true
     },
     {
       "id": "cdb_004",
@@ -329,7 +330,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "paid_entry": true
     },
     {
       "id": "cdb_010",

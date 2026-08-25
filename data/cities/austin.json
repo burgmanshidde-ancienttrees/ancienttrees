@@ -1,194 +1,195 @@
 {
- "city": "Austin",
- "country": "United States",
- "status": "needs_curation",
- "intro": "Five trees, and three of them are groves, because that is how Austin's oldest survived. A live oak downtown lived through a deliberate poisoning in 1989. A block away is the grove the city was auctioned beneath in 1839, which is why Republic Square exists. Three more stand on the university's original forty acres, argued out of a building plan by a professor of Classics. Those three make an easy afternoon on foot. Two are worth the drive: a bald cypress a Spanish priest wrote about in 1716, and a grove where a settler was killed fighting behind a trunk.",
- "meta_description": "Five remarkable trees in Austin: the Treaty Oak that survived poisoning, the oaks the city was auctioned under in 1839, and a cypress older than Texas.",
- "question_meta": "Austin's oldest tree is Old Baldy, a bald cypress on Onion Creek past 500 years old. Where it stands, and four more worth the walk.",
- "question_answer": "The oldest tree in Austin is Old Baldy, a bald cypress standing where Onion Creek runs through McKinney Falls State Park, about nine kilometres southeast of the centre. Texas Parks and Wildlife calls it the oldest bald cypress on public land in the state and puts it beyond five hundred years, with some accounts reaching five hundred and fifty. Father Antonio Olivares, the Franciscan who went on to found San Antonio, wrote about it in 1716, so it was already a landmark three centuries ago. Downtown, the Treaty Oak runs it close at roughly five hundred years and is the more famous of the two, largely because someone tried to kill it in 1989 and failed.",
- "question_context": "Ages here come from the Texas A&M Forest Service, which keeps a register of the state's historic trees, and from the bodies that manage each site: Texas Parks and Wildlife for Old Baldy, the University of Texas for the Battle Oaks, the Shoal Creek Conservancy for the Seiders grove. None of those figures comes from a core sample, so treat every year on this page as an estimate that the people closest to the tree are willing to stand behind. That register is a history of Texas trees rather than a survey of what still stands, and it is worth knowing that several of Austin's named trees are in it and gone. The Washington Elm on the capitol grounds was removed in 2000 after storm damage and decay. The Memorial Pecan, planted in 1945 to honour Texans who served in the war, came out during a capitol expansion in the early 1990s, and its wood was reportedly turned into benches. The pecans planted at Governor Hogg's grave at his own request are no longer there either. Only living trees appear on this page.",
- "hero_tree_id": "aus_001",
- "oldest_tree_id": "aus_004",
- "faq": [
-  {
-   "q": "What is the oldest tree in Austin?",
-   "a": "Old Baldy, a bald cypress on Onion Creek in McKinney Falls State Park. Texas Parks and Wildlife calls it the oldest bald cypress on public land in Texas and dates it past five hundred years. A Franciscan priest wrote about it in 1716. The Treaty Oak downtown is close behind at around five hundred."
-  },
-  {
-   "q": "Can you still visit the Treaty Oak after the poisoning?",
-   "a": "Yes. It stands in its own small park on Baylor Street, free and open, a few minutes west of the 6th Street bars. Roughly two thirds of the tree died after it was poisoned in 1989 and more than half the crown had to be cut away, so what you see is lopsided rather than the wide dome in the old photographs. It set acorns again in 1997 and has gone on doing so."
-  },
-  {
-   "q": "Why are three of the five listed as groves rather than single trees?",
-   "a": "Because that is what they are, and each one is the destination rather than any single trunk in it. The Auction Oaks, the Battle Oaks and the Seiders Oaks are all named, compact stands that people go to as a group, which is how the sources treat them and how the plaques read."
-  },
-  {
-   "q": "Which live oak are these, exactly?",
-   "a": "For the Battle Oaks the university says Texas live oak, Quercus fusiformis, and the Treaty Oak is recorded as the same. For the Auction Oaks and the Seiders Oaks nobody we can find has settled it. Central Texas has two live oaks that look much alike and the sources simply say live oak. If you know which, tell us and we will fix it."
-  },
-  {
-   "q": "Are these all the historic trees in Austin?",
-   "a": "No. The Texas A&M Forest Service register lists ten around the city, and several of them no longer stand. There are also state champion trees in Austin that are not here yet, including a bastard oak on the Waller Creek greenbelt and a Himalayan cedar on the university campus, both of which need a second source before they go up."
-  }
- ],
- "trees": [
-  {
-   "id": "aus_001",
-   "name": "The Treaty Oak",
-   "species": "Texas Live Oak (Quercus fusiformis)",
-   "age_estimate": "about 500 years",
-   "age_min": 400,
-   "age_max": 600,
-   "location": {
-    "address": "Treaty Oak Park, Baylor Street between West 5th and West 6th",
-    "latitude": 30.2717,
-    "longitude": -97.7554,
-    "neighbourhood": "West Line Historic District"
-   },
-   "story": "In 1989 a man poured enough Velpar herbicide around the roots of this tree to kill roughly a hundred trees. Austin reacted the way few cities react to an assault on a plant. Children taped notes to the trunk, arborists rigged a screen to shade it through the summer, and crews dug out the poisoned soil and fed what was left. Two thirds of the tree died anyway and more than half the crown had to come off. The rest of it held on, and in 1997 it set acorns again.\n\nWhat survived is a Texas live oak of around five hundred years, now permanently one sided. Local tribes are said to have called it the father of the forest, and tradition puts Stephen F. Austin under it signing his first boundary agreement with them, though that part is story rather than record. What is measured is the spread: before the poisoning its branches reached thirty nine metres across.\n\nIt has its own small park, which is the tell. A city does not buy a block of land in the middle of downtown for a tree it thinks is ordinary.",
-   "verified_sources": [
-    "https://en.wikipedia.org/wiki/Treaty_Oak_(Austin,_Texas)",
-    "https://famoustreesoftexas.tfs.tamu.edu/ (Texas A&M Forest Service, Famous Trees of Texas)"
-   ],
-   "access": "Free. A small public city park, open daylight hours.",
-   "transport": "About 15 minutes on foot west from 6th Street and Congress Avenue.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "A wide, low, visibly lopsided live oak standing alone in a small fenced park, with the crown much heavier on one side than the other.",
-   "curation_status": "ai_generated",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "aus_002",
-   "name": "The Auction Oaks",
-   "species": "Live Oak (Quercus sp.)",
-   "age_estimate": "at least 190 years, and already large in the 1830s",
-   "age_min": 190,
-   "age_max": 300,
-   "location": {
-    "address": "Republic Square, southwest corner, Guadalupe Street at West 4th",
-    "latitude": 30.2681,
-    "longitude": -97.749,
-    "neighbourhood": "Downtown"
-   },
-   "story": "In August 1839 the lots of a city that did not yet exist were sold in the shade of these trees. Judge Edwin Waller had staked out the grid that spring and held back the best ground for the capitol. The rest went under the hammer here: two hundred and seventeen lots, three hundred thousand dollars, which covered the public buildings of the new Texas capital. The grove is the reason this square exists.\n\nThen the twentieth century happened to it. For decades the square was a parking lot with asphalt run right up to the trunks, which is close to the worst thing you can do to a live oak, and the trees came through anyway. The city rebuilt the square in 2017 and they now stand in open ground again.\n\nAim for the southwest corner. The square is a single block and the grove is unmistakable once you are inside it.\n\nOne thing nobody has settled is which live oak these are. Central Texas has two that look much the same, and the sources that tell the auction story do not name the species. If you know, tell us.",
-   "verified_sources": [
-    "https://austinparks.org/blog/republic-square/",
-    "https://famoustreesoftexas.tfs.tamu.edu/ (Texas A&M Forest Service, Famous Trees of Texas)",
-    "https://en.wikipedia.org/wiki/Republic_Square_(Austin)"
-   ],
-   "access": "Free. A public downtown square, open at all hours.",
-   "transport": "Ten minutes on foot west from Congress Avenue, at Guadalupe and West 4th.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "A tight stand of broad live oaks in the southwest corner of an otherwise open square, noticeably older than everything planted around them.",
-   "curation_status": "flagged",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "aus_003",
-   "name": "The Battle Oaks",
-   "species": "Texas Live Oak (Quercus fusiformis)",
-   "age_estimate": "250 to 300 years",
-   "age_min": 250,
-   "age_max": 300,
-   "location": {
-    "address": "24th Street, a block east of Guadalupe, University of Texas campus",
-    "latitude": 30.2875,
-    "longitude": -97.7408,
-    "neighbourhood": "University of Texas"
-   },
-   "story": "Three live oaks stand on the rise at the north end of the original forty acres, and they were there before the university was. When the University of Texas opened in 1883 they were already old, the survivors of a larger grove. The story told on campus is that the rest came down during the Civil War, cut to raise a fortification when word arrived that Union troops had reached Galveston, and that these three were left.\n\nThey nearly went in 1923 instead, when the site was picked for the Biology building. William Battle, a professor of Classics chairing the faculty building committee, argued them out of the plan. They carry his name rather than the war's, which seems like the right outcome.\n\nThe university puts the group at two hundred and fifty to three hundred years and reckons the largest predates the Civil War outright, making them among the oldest living things on campus. A plaque at the foot tells the whole thing in fewer words than this.",
-   "verified_sources": [
-    "https://facilitiesservices.utexas.edu/news/vaws-battle-oaks-preserving-living-legend",
-    "https://famoustreesoftexas.tfs.tamu.edu/ (Texas A&M Forest Service, Famous Trees of Texas)"
-   ],
-   "access": "Free. Open university campus grounds.",
-   "transport": "On 24th Street a block east of Guadalupe, a short walk from the Drag.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "Three heavy live oaks together on a slight rise beside the Biology building, with a plaque at their foot.",
-   "curation_status": "ai_generated",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "aus_004",
-   "name": "Old Baldy",
-   "species": "Bald Cypress (Taxodium distichum)",
-   "age_estimate": "more than 500 years",
-   "age_min": 500,
-   "age_max": 600,
-   "location": {
-    "address": "Rock Shelter Trail, McKinney Falls State Park, Onion Creek",
-    "latitude": 30.1841,
-    "longitude": -97.7236,
-    "neighbourhood": "Southeast Austin"
-   },
-   "story": "Father Antonio Olivares, the Franciscan who later founded San Antonio, wrote about this cypress in 1716. It was old then. Texas Parks and Wildlife calls it the oldest bald cypress on public land in the state and dates it past five hundred years, with some accounts reaching five hundred and fifty.\n\nIt stands where Onion Creek runs through the park, thirty one metres tall on a trunk just under five metres round, big enough that it now houses other things: nesting birds, ball moss, vines working up the bark. Bald cypress is a conifer that drops its needles, so the tree is bare through winter and turns rust orange before it goes, which is the week to come if you want the colour.\n\nOnion Creek has flooded around the trunk in 1869, in 2013 and again in 2015. Each time the water went down and the tree was where it had been. Take the Rock Shelter Trail northeast from the main parking area; it is signposted, and there is no mistaking it when you arrive.",
-   "verified_sources": [
-    "https://tpwd.texas.gov/state-parks/mckinney-falls/nature",
-    "https://famoustreesoftexas.tfs.tamu.edu/ (Texas A&M Forest Service, Famous Trees of Texas)"
-   ],
-   "access": "Texas state park, entrance fee, open daily.",
-   "transport": "About 9 km southeast of downtown. Drive; there is parking at the trailhead.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "A very large bald cypress right on the creek bank, buttressed at the base, taller than everything around it, with a sign on the trail.",
-   "curation_status": "ai_generated",
-   "location_precision": "confirmed",
-   "best_time": {
-    "months": [
-     11
-    ],
-    "label": "November, when the needles turn rust before they drop",
-    "kind": "autumn colour"
-   }
-  },
-  {
-   "id": "aus_005",
-   "name": "The Seiders Oaks",
-   "species": "Live Oak (Quercus sp.)",
-   "age_estimate": "at least 190 years, and already large in the 1830s",
-   "age_min": 190,
-   "age_max": 300,
-   "location": {
-    "address": "Seiders Springs, Shoal Creek Greenbelt, off West 34th Street",
-    "latitude": 30.3059,
-    "longitude": -97.7474,
-    "neighbourhood": "Shoal Creek"
-   },
-   "story": "In the spring of 1842 Gideon White was out looking for livestock when riders caught him in the open. He got a tree between himself and them and fought from behind it, killing at least one before they killed him. The bullet holes and arrow marks stayed visible in the bark for decades afterwards.\n\nFour years later his daughter Louisa married Edward Seiders, an Austin grocer, and for a while the couple lived in her father's cabin by the spring. The spring took the family name and so did the grove. The Seiders then did something that reads oddly now and worked completely: they built bath houses, picnic tables and a dance pavilion along the creek to get Austin to come out and use the place. Austin came, and has not really stopped.\n\nFour big live oaks stand together in the middle of the greenbelt, reachable on paved path from either end. The Texas Forest Service notes they were already large when the city was being laid out in the 1830s, which puts them past two centuries and probably well past.",
-   "verified_sources": [
-    "https://shoalcreekconservancy.org/the-saga-of-seiders-springs/",
-    "https://famoustreesoftexas.tfs.tamu.edu/ (Texas A&M Forest Service, Famous Trees of Texas)"
-   ],
-   "access": "Free. Public greenbelt with paved paths, open daylight hours.",
-   "transport": "About 4 km north of downtown along the Shoal Creek trail, off West 34th Street.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "A group of four heavy live oaks standing together in the open middle of a narrow creek greenbelt.",
-   "curation_status": "flagged",
-   "location_precision": "approximate"
-  }
- ]
+  "city": "Austin",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Five trees, and three of them are groves, because that is how Austin's oldest survived. A live oak downtown lived through a deliberate poisoning in 1989. A block away is the grove the city was auctioned beneath in 1839, which is why Republic Square exists. Three more stand on the university's original forty acres, argued out of a building plan by a professor of Classics. Those three make an easy afternoon on foot. Two are worth the drive: a bald cypress a Spanish priest wrote about in 1716, and a grove where a settler was killed fighting behind a trunk.",
+  "meta_description": "Five remarkable trees in Austin: the Treaty Oak that survived poisoning, the oaks the city was auctioned under in 1839, and a cypress older than Texas.",
+  "question_meta": "Austin's oldest tree is Old Baldy, a bald cypress on Onion Creek past 500 years old. Where it stands, and four more worth the walk.",
+  "question_answer": "The oldest tree in Austin is Old Baldy, a bald cypress standing where Onion Creek runs through McKinney Falls State Park, about nine kilometres southeast of the centre. Texas Parks and Wildlife calls it the oldest bald cypress on public land in the state and puts it beyond five hundred years, with some accounts reaching five hundred and fifty. Father Antonio Olivares, the Franciscan who went on to found San Antonio, wrote about it in 1716, so it was already a landmark three centuries ago. Downtown, the Treaty Oak runs it close at roughly five hundred years and is the more famous of the two, largely because someone tried to kill it in 1989 and failed.",
+  "question_context": "Ages here come from the Texas A&M Forest Service, which keeps a register of the state's historic trees, and from the bodies that manage each site: Texas Parks and Wildlife for Old Baldy, the University of Texas for the Battle Oaks, the Shoal Creek Conservancy for the Seiders grove. None of those figures comes from a core sample, so treat every year on this page as an estimate that the people closest to the tree are willing to stand behind. That register is a history of Texas trees rather than a survey of what still stands, and it is worth knowing that several of Austin's named trees are in it and gone. The Washington Elm on the capitol grounds was removed in 2000 after storm damage and decay. The Memorial Pecan, planted in 1945 to honour Texans who served in the war, came out during a capitol expansion in the early 1990s, and its wood was reportedly turned into benches. The pecans planted at Governor Hogg's grave at his own request are no longer there either. Only living trees appear on this page.",
+  "hero_tree_id": "aus_001",
+  "oldest_tree_id": "aus_004",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Austin?",
+      "a": "Old Baldy, a bald cypress on Onion Creek in McKinney Falls State Park. Texas Parks and Wildlife calls it the oldest bald cypress on public land in Texas and dates it past five hundred years. A Franciscan priest wrote about it in 1716. The Treaty Oak downtown is close behind at around five hundred."
+    },
+    {
+      "q": "Can you still visit the Treaty Oak after the poisoning?",
+      "a": "Yes. It stands in its own small park on Baylor Street, free and open, a few minutes west of the 6th Street bars. Roughly two thirds of the tree died after it was poisoned in 1989 and more than half the crown had to be cut away, so what you see is lopsided rather than the wide dome in the old photographs. It set acorns again in 1997 and has gone on doing so."
+    },
+    {
+      "q": "Why are three of the five listed as groves rather than single trees?",
+      "a": "Because that is what they are, and each one is the destination rather than any single trunk in it. The Auction Oaks, the Battle Oaks and the Seiders Oaks are all named, compact stands that people go to as a group, which is how the sources treat them and how the plaques read."
+    },
+    {
+      "q": "Which live oak are these, exactly?",
+      "a": "For the Battle Oaks the university says Texas live oak, Quercus fusiformis, and the Treaty Oak is recorded as the same. For the Auction Oaks and the Seiders Oaks nobody we can find has settled it. Central Texas has two live oaks that look much alike and the sources simply say live oak. If you know which, tell us and we will fix it."
+    },
+    {
+      "q": "Are these all the historic trees in Austin?",
+      "a": "No. The Texas A&M Forest Service register lists ten around the city, and several of them no longer stand. There are also state champion trees in Austin that are not here yet, including a bastard oak on the Waller Creek greenbelt and a Himalayan cedar on the university campus, both of which need a second source before they go up."
+    }
+  ],
+  "trees": [
+    {
+      "id": "aus_001",
+      "name": "The Treaty Oak",
+      "species": "Texas Live Oak (Quercus fusiformis)",
+      "age_estimate": "about 500 years",
+      "age_min": 400,
+      "age_max": 600,
+      "location": {
+        "address": "Treaty Oak Park, Baylor Street between West 5th and West 6th",
+        "latitude": 30.2717,
+        "longitude": -97.7554,
+        "neighbourhood": "West Line Historic District"
+      },
+      "story": "In 1989 a man poured enough Velpar herbicide around the roots of this tree to kill roughly a hundred trees. Austin reacted the way few cities react to an assault on a plant. Children taped notes to the trunk, arborists rigged a screen to shade it through the summer, and crews dug out the poisoned soil and fed what was left. Two thirds of the tree died anyway and more than half the crown had to come off. The rest of it held on, and in 1997 it set acorns again.\n\nWhat survived is a Texas live oak of around five hundred years, now permanently one sided. Local tribes are said to have called it the father of the forest, and tradition puts Stephen F. Austin under it signing his first boundary agreement with them, though that part is story rather than record. What is measured is the spread: before the poisoning its branches reached thirty nine metres across.\n\nIt has its own small park, which is the tell. A city does not buy a block of land in the middle of downtown for a tree it thinks is ordinary.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Treaty_Oak_(Austin,_Texas)",
+        "https://famoustreesoftexas.tfs.tamu.edu/ (Texas A&M Forest Service, Famous Trees of Texas)"
+      ],
+      "access": "Free. A small public city park, open daylight hours.",
+      "transport": "About 15 minutes on foot west from 6th Street and Congress Avenue.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A wide, low, visibly lopsided live oak standing alone in a small fenced park, with the crown much heavier on one side than the other.",
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "aus_002",
+      "name": "The Auction Oaks",
+      "species": "Live Oak (Quercus sp.)",
+      "age_estimate": "at least 190 years, and already large in the 1830s",
+      "age_min": 190,
+      "age_max": 300,
+      "location": {
+        "address": "Republic Square, southwest corner, Guadalupe Street at West 4th",
+        "latitude": 30.2681,
+        "longitude": -97.749,
+        "neighbourhood": "Downtown"
+      },
+      "story": "In August 1839 the lots of a city that did not yet exist were sold in the shade of these trees. Judge Edwin Waller had staked out the grid that spring and held back the best ground for the capitol. The rest went under the hammer here: two hundred and seventeen lots, three hundred thousand dollars, which covered the public buildings of the new Texas capital. The grove is the reason this square exists.\n\nThen the twentieth century happened to it. For decades the square was a parking lot with asphalt run right up to the trunks, which is close to the worst thing you can do to a live oak, and the trees came through anyway. The city rebuilt the square in 2017 and they now stand in open ground again.\n\nAim for the southwest corner. The square is a single block and the grove is unmistakable once you are inside it.\n\nOne thing nobody has settled is which live oak these are. Central Texas has two that look much the same, and the sources that tell the auction story do not name the species. If you know, tell us.",
+      "verified_sources": [
+        "https://austinparks.org/blog/republic-square/",
+        "https://famoustreesoftexas.tfs.tamu.edu/ (Texas A&M Forest Service, Famous Trees of Texas)",
+        "https://en.wikipedia.org/wiki/Republic_Square_(Austin)"
+      ],
+      "access": "Free. A public downtown square, open at all hours.",
+      "transport": "Ten minutes on foot west from Congress Avenue, at Guadalupe and West 4th.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A tight stand of broad live oaks in the southwest corner of an otherwise open square, noticeably older than everything planted around them.",
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "aus_003",
+      "name": "The Battle Oaks",
+      "species": "Texas Live Oak (Quercus fusiformis)",
+      "age_estimate": "250 to 300 years",
+      "age_min": 250,
+      "age_max": 300,
+      "location": {
+        "address": "24th Street, a block east of Guadalupe, University of Texas campus",
+        "latitude": 30.2875,
+        "longitude": -97.7408,
+        "neighbourhood": "University of Texas"
+      },
+      "story": "Three live oaks stand on the rise at the north end of the original forty acres, and they were there before the university was. When the University of Texas opened in 1883 they were already old, the survivors of a larger grove. The story told on campus is that the rest came down during the Civil War, cut to raise a fortification when word arrived that Union troops had reached Galveston, and that these three were left.\n\nThey nearly went in 1923 instead, when the site was picked for the Biology building. William Battle, a professor of Classics chairing the faculty building committee, argued them out of the plan. They carry his name rather than the war's, which seems like the right outcome.\n\nThe university puts the group at two hundred and fifty to three hundred years and reckons the largest predates the Civil War outright, making them among the oldest living things on campus. A plaque at the foot tells the whole thing in fewer words than this.",
+      "verified_sources": [
+        "https://facilitiesservices.utexas.edu/news/vaws-battle-oaks-preserving-living-legend",
+        "https://famoustreesoftexas.tfs.tamu.edu/ (Texas A&M Forest Service, Famous Trees of Texas)"
+      ],
+      "access": "Free. Open university campus grounds.",
+      "transport": "On 24th Street a block east of Guadalupe, a short walk from the Drag.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Three heavy live oaks together on a slight rise beside the Biology building, with a plaque at their foot.",
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "aus_004",
+      "name": "Old Baldy",
+      "species": "Bald Cypress (Taxodium distichum)",
+      "age_estimate": "more than 500 years",
+      "age_min": 500,
+      "age_max": 600,
+      "location": {
+        "address": "Rock Shelter Trail, McKinney Falls State Park, Onion Creek",
+        "latitude": 30.1841,
+        "longitude": -97.7236,
+        "neighbourhood": "Southeast Austin"
+      },
+      "story": "Father Antonio Olivares, the Franciscan who later founded San Antonio, wrote about this cypress in 1716. It was old then. Texas Parks and Wildlife calls it the oldest bald cypress on public land in the state and dates it past five hundred years, with some accounts reaching five hundred and fifty.\n\nIt stands where Onion Creek runs through the park, thirty one metres tall on a trunk just under five metres round, big enough that it now houses other things: nesting birds, ball moss, vines working up the bark. Bald cypress is a conifer that drops its needles, so the tree is bare through winter and turns rust orange before it goes, which is the week to come if you want the colour.\n\nOnion Creek has flooded around the trunk in 1869, in 2013 and again in 2015. Each time the water went down and the tree was where it had been. Take the Rock Shelter Trail northeast from the main parking area; it is signposted, and there is no mistaking it when you arrive.",
+      "verified_sources": [
+        "https://tpwd.texas.gov/state-parks/mckinney-falls/nature",
+        "https://famoustreesoftexas.tfs.tamu.edu/ (Texas A&M Forest Service, Famous Trees of Texas)"
+      ],
+      "access": "Texas state park, entrance fee, open daily.",
+      "transport": "About 9 km southeast of downtown. Drive; there is parking at the trailhead.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A very large bald cypress right on the creek bank, buttressed at the base, taller than everything around it, with a sign on the trail.",
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "November, when the needles turn rust before they drop",
+        "kind": "autumn colour"
+      },
+      "paid_entry": true
+    },
+    {
+      "id": "aus_005",
+      "name": "The Seiders Oaks",
+      "species": "Live Oak (Quercus sp.)",
+      "age_estimate": "at least 190 years, and already large in the 1830s",
+      "age_min": 190,
+      "age_max": 300,
+      "location": {
+        "address": "Seiders Springs, Shoal Creek Greenbelt, off West 34th Street",
+        "latitude": 30.3059,
+        "longitude": -97.7474,
+        "neighbourhood": "Shoal Creek"
+      },
+      "story": "In the spring of 1842 Gideon White was out looking for livestock when riders caught him in the open. He got a tree between himself and them and fought from behind it, killing at least one before they killed him. The bullet holes and arrow marks stayed visible in the bark for decades afterwards.\n\nFour years later his daughter Louisa married Edward Seiders, an Austin grocer, and for a while the couple lived in her father's cabin by the spring. The spring took the family name and so did the grove. The Seiders then did something that reads oddly now and worked completely: they built bath houses, picnic tables and a dance pavilion along the creek to get Austin to come out and use the place. Austin came, and has not really stopped.\n\nFour big live oaks stand together in the middle of the greenbelt, reachable on paved path from either end. The Texas Forest Service notes they were already large when the city was being laid out in the 1830s, which puts them past two centuries and probably well past.",
+      "verified_sources": [
+        "https://shoalcreekconservancy.org/the-saga-of-seiders-springs/",
+        "https://famoustreesoftexas.tfs.tamu.edu/ (Texas A&M Forest Service, Famous Trees of Texas)"
+      ],
+      "access": "Free. Public greenbelt with paved paths, open daylight hours.",
+      "transport": "About 4 km north of downtown along the Shoal Creek trail, off West 34th Street.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A group of four heavy live oaks standing together in the open middle of a narrow creek greenbelt.",
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
 }
