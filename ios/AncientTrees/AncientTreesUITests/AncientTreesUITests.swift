@@ -285,52 +285,56 @@ final class AncientTreesUITests: XCTestCase {
     /// Begin is the walk verb actually happening: full screen, the route, and
     /// a tick that advances to the next tree. It used to hand the person to
     /// Apple Maps, which ended our part of the afternoon.
+    ///
+    /// WHAT THE TICK DOES CHANGED on 2026-08-25: it opens the camera rather
+    /// than ticking off a tap, because Hidde ruled that standing in front of a
+    /// tree is claimed with a photograph or not at all. A simulator has no
+    /// camera, so the test asserts the two halves separately: the counter reads
+    /// the collection it was given, and the control opens the collect sheet.
     @MainActor
     func testBeginWalksTheWalk() throws {
         let app = XCUIApplication()
         // Clean, like every launch: on the shared simulator a tick from an
-        // earlier test otherwise starts this walk at "1 of 14".
+        // earlier test otherwise starts this walk at "1 of 7".
         // -no-nudge because this test is about the WALK, not about the
-        // sign-in ask that a first tick correctly raises over it, and
-        // -signed-in because since 2026-08-25 a tick without an account opens
-        // that sheet instead of ticking. Both are the same exemption: measure
-        // the walk, not the account funnel around it.
+        // sign-in ask, and -signed-in because since 2026-08-25 collecting
+        // without an account opens that sheet instead.
+        // ams_018 is the Plantage walk's first stop, seeded as collected so the
+        // counter has something true to say.
         app.launchArguments = ["-at=52.3667,4.9086", "-reset-collection", "-no-nudge",
-                               "-signed-in", "-begin=amsterdam|Plantage"]
+                               "-signed-in", "-collected=ams_018",
+                               "-begin=amsterdam|Plantage"]
         app.launch()
 
-        XCTAssertTrue(app.otherElements["walk-mode"].waitForExistence(timeout: 12),
+        XCTAssertTrue(app.otherElements["walk-mode"].waitForExistence(timeout: 14),
                       "Begin did not open the walk")
+
+        // The counter is the walk's visible state and it has to read the
+        // collection rather than a number somebody typed. The total is read,
+        // not written down: it said 14 for two days after Amsterdam lost five
+        // trees to the ticket ruling.
+        let progress = app.staticTexts.matching(
+            NSPredicate(format: "label CONTAINS 'ticked off'")).firstMatch
+        XCTAssertTrue(progress.waitForExistence(timeout: 8), "the walk shows no progress line")
+        let parts = progress.label.components(separatedBy: " ")
+        XCTAssertEqual(parts.first, "1",
+                       "the walk ignored the tree it was told is collected: \(progress.label)")
+        let total = Int(parts.count > 2 ? parts[2] : "") ?? 0
+        XCTAssertTrue(total > 1, "could not read the walk's total from \(progress.label)")
+
         // By the words on it. An identifier on a Button whose label is an
         // HStack of Spacers does not always survive into the query tree, and a
         // test that cannot find the button it is about proves nothing.
         let tick = app.buttons.matching(
             NSPredicate(format: "label CONTAINS 'standing before it'")).firstMatch
-        XCTAssertTrue(tick.waitForExistence(timeout: 6), "no tick in the walk")
-
-        // Ticking has to MOVE the walk on: the counter climbs and the card
-        // names a different tree. A tick that only lit up would be a screen
-        // pretending to be a walk.
-        // The TOTAL is read, not written down. It said 14 and the Plantage walk
-        // has 7 trees: Amsterdam lost five to the ticket ruling on 2026-08-23
-        // and this test went red the same day, for a reason that had nothing to
-        // do with walks. A walk's length is data and data moves.
-        let progress = app.staticTexts.matching(
-            NSPredicate(format: "label CONTAINS 'ticked off'")).firstMatch
-        XCTAssertTrue(progress.waitForExistence(timeout: 6), "the walk shows no progress line")
-        let parts = progress.label.components(separatedBy: " ")
-        let before = Int(parts.first ?? "") ?? 0
-        let total = Int(parts.count > 2 ? parts[2] : "") ?? 0
-        XCTAssertTrue(total > 0, "could not read the walk's total from \(progress.label)")
+        XCTAssertTrue(tick.waitForExistence(timeout: 8), "no tick in the walk")
         tick.tap()
-        // The exact next count, not "a label without the old digit": the
-        // runner started at 1, the tick took it to "2 of 7", and any looser
-        // predicate is satisfied by the label it started with.
-        XCTAssertTrue(app.staticTexts["\(before + 1) of \(total) ticked off"].waitForExistence(timeout: 6),
-                      "ticking a tree did not advance the walk from \(before) of \(total)")
+        XCTAssertTrue(app.descendants(matching: .any)["spot-sheet"].waitForExistence(timeout: 8),
+                      "standing before a tree did not open the camera")
+        app.buttons["spot-close"].tap()
 
         app.buttons["walk-close"].tap()
-        XCTAssertTrue(app.buttons["Map"].waitForExistence(timeout: 6),
+        XCTAssertTrue(app.buttons["Map"].waitForExistence(timeout: 8),
                       "leaving the walk did not return to the app")
     }
 
