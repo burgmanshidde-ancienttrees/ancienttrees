@@ -841,21 +841,34 @@ enum MapLayers {
                 // What the 08-24 note above was right about stands: it is a
                 // condition on the visit rather than a thing you have done,
                 // so it is not moss either. Left, so a tree can wear both.
+                //
+                // APPLE'S OWN GLYPH, not one of ours. The first version was a
+                // hand-drawn stub with a notch out of each side, and Hidde's
+                // verdict was the right one: "het ticket icoon silhouet zelf
+                // is niet goed, kies een andere meer standaard benchmark
+                // convention, nobody understands this" (2026-08-25). A symbol
+                // invented for a 17 point circle is a symbol nobody has been
+                // trained on, and this project's own rule is to take the
+                // published asset wherever one exists. `ticket.fill` is what
+                // Wallet and every Apple surface use for exactly this, so it
+                // arrives already learned.
                 let b: CGFloat = 17
                 let r = CGRect(x: 1, y: d - b - 1, width: b, height: b)
                 UIColor.white.setFill()
                 UIBezierPath(ovalIn: r).fill()
-                UIColor(red: 0.18, green: 0.42, blue: 0.66, alpha: 1).setFill()
-                // A stub: a rounded rectangle with a notch out of each side.
-                let body = UIBezierPath(roundedRect:
-                    CGRect(x: r.minX + 3.4, y: r.midY - 3.1, width: b - 6.8, height: 6.2),
-                    cornerRadius: 1.4)
-                body.fill()
-                UIColor.white.setFill()
-                UIBezierPath(ovalIn: CGRect(x: r.midX - 1.5, y: r.midY - 4.4,
-                                            width: 3, height: 3)).fill()
-                UIBezierPath(ovalIn: CGRect(x: r.midX - 1.5, y: r.midY + 1.4,
-                                            width: 3, height: 3)).fill()
+                let blue = UIColor(red: 0.18, green: 0.42, blue: 0.66, alpha: 1)
+                if let glyph = UIImage(systemName: "ticket.fill")?
+                    .withConfiguration(UIImage.SymbolConfiguration(pointSize: 9,
+                                                                   weight: .bold))
+                    .withTintColor(blue, renderingMode: .alwaysOriginal) {
+                    let s = glyph.size
+                    glyph.draw(in: CGRect(x: r.midX - s.width / 2,
+                                          y: r.midY - s.height / 2,
+                                          width: s.width, height: s.height))
+                } else {
+                    blue.setFill()
+                    UIBezierPath(ovalIn: r.insetBy(dx: 4, dy: 4)).fill()
+                }
             }
             if collected {
                 let b: CGFloat = 15

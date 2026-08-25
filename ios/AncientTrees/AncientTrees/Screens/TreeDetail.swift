@@ -51,10 +51,16 @@ struct TreeDetail: View {
                     if mine == nil { accessBlock }
                     if mine == nil, tree.photo == nil { offerPhoto }
                     if mine != nil { mineFooter }
-                    Button { reporting = true } label: {
-                        Label("Report a problem", systemImage: "exclamationmark.bubble")
-                            .font(.footnote)
-                    }
+                    // "Report a problem" used to sit here and open the generic
+                    // contribute form, which greeted somebody who wanted to
+                    // report a wrong pin with a picker whose first row reads "A
+                    // tree we are missing" and three empty fields asking which
+                    // place and which tree (Hidde, 2026-08-25: "die flow loopt
+                    // totaal niet"). It was also the second report control on
+                    // one page: WorthItView above already carries "Something's
+                    // wrong" and the five chips that name what is actually
+                    // wrong, which is the flow the website runs and the one a
+                    // run can act on. One page, one way to say it.
                     // Last line on the page, and only where the licence asks
                     // for it. CC BY and BY-SA oblige a credit; CC0 and public
                     // domain do not and get none. Moving it here is allowed
@@ -97,7 +103,9 @@ struct TreeDetail: View {
             if ProcessInfo.processInfo.arguments.contains("-walkto") { walking = true }
         }
         .fullScreenCover(isPresented: $walking) {
-            WalkMode(walk: Self.oneTreeWalk(tree), catalogue: catalogue,
+            // The tree itself, not its id: a tree you added is not in the
+            // catalogue, so looking it up gave an empty walk (2026-08-25).
+            WalkMode(walk: Self.oneTreeWalk(tree), only: [tree], catalogue: catalogue,
                      origin: origin ?? (tree.lat, tree.lng))
         }
     }

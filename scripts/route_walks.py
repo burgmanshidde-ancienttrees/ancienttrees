@@ -41,6 +41,11 @@ OUT = os.path.join(ROOT, "data", "walk-routes.json")
 URL = "https://valhalla1.openstreetmap.de/route"
 UA = "AncientTreesBot/1.0 (https://ancienttrees.app; walk routing, cached)"
 MAX_DETOUR = 2.5
+# And a floor. A pedestrian route is always LONGER than the crow flies; one that
+# comes back shorter has snapped its stops together rather than routed between
+# them. 0.4 is loose on purpose: the straight-line figure is itself a rounded
+# sum, so a genuine route can undercut it slightly on a short walk.
+MIN_PLAUSIBLE = 0.4
 
 
 def decode_polyline6(s):
@@ -119,8 +124,21 @@ def main():
             print(f"  {key[:44]:44} FAILED {e}")
             time.sleep(1.5)
             continue
+        distinct = len({(round(c[0], 6), round(c[1], 6)) for c in shape})
         if straight_km and km > straight_km * MAX_DETOUR:
             print(f"  {key[:44]:44} rejected: routed {km:.1f} km vs {straight_km} straight")
+            cache[key] = {"rejected": True, "routed_km": round(km, 2)}
+            rejected += 1
+        elif distinct < 2 or (straight_km and km < straight_km * MIN_PLAUSIBLE):
+            # The OTHER failure, and it is the dangerous one because it looks
+            # like a success. Oahu came back on 2026-08-25 as eight copies of
+            # one coordinate, 0.0 km and 0 minutes, for a five tree walk: the
+            # router found no pedestrian network and snapped every stop to the
+            # same node. A route shorter than the straight line between its own
+            # ends is not a route, and drawing it would put a walk on the map
+            # with no line and a promise of no distance at all.
+            print(f"  {key[:44]:44} rejected: routed {km:.1f} km vs {straight_km} "
+                  f"straight, {distinct} distinct point(s)")
             cache[key] = {"rejected": True, "routed_km": round(km, 2)}
             rejected += 1
         else:

@@ -487,7 +487,11 @@ struct MapTab: View {
     /// city HAS, which is its walks and its trees, and that is the same shape
     /// the city page and the website both carry.
     @ViewBuilder private var walkShelf: some View {
-        if query.isEmpty, shownWalk == nil, !walksHere.isEmpty {
+        // Shown even while a walk is drawn, because choosing a DIFFERENT one
+        // was impossible otherwise: the chip picks the first and the shelf
+        // vanished the moment it did (Hidde, 2026-08-25: "je moet namelijk de
+        // walking kunnen selecteren"). Amsterdam has three.
+        if query.isEmpty, walksHere.count > 1 || shownWalk == nil, !walksHere.isEmpty {
             VStack(alignment: .leading, spacing: 8) {
                 Text(walksHere.count == 1 ? "1 walk here" : "\(walksHere.count) walks here")
                     .font(.brand(17, .bold, relativeTo: .headline))
@@ -495,9 +499,24 @@ struct MapTab: View {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(alignment: .top, spacing: 12) {
                         ForEach(walksHere.prefix(6), id: \.name) { w in
-                            LockedRow(feature: .walkBeyondFirst, lockGlyph: false) {
-                                CityWalkCard(walk: w, locked: true)
+                            // Tapping SELECTS: it draws that walk on the map
+                            // and puts its card in the sheet. Free, because
+                            // looking at a route is how anybody decides whether
+                            // it is worth having, and Begin on the card below is
+                            // where Plus still stands (Hidde, 2026-08-25: make
+                            // the route available in the list, "en weer achter
+                            // plus gooien"). Before this, every card here went
+                            // straight to the paywall, so with three walks in
+                            // Amsterdam you could see the first one and no other.
+                            Button {
+                                filters = MapFilters()
+                                shownWalk = w
+                                if sheetHeight == .peek { sheetHeight = .card }
+                            } label: {
+                                CityWalkCard(walk: w, locked: true,
+                                             selected: shownWalk?.name == w.name)
                             }
+                            .buttonStyle(.plain)
                         }
                     }
                     .padding(.bottom, 2)
@@ -509,7 +528,14 @@ struct MapTab: View {
 
     private var list: some View {
         LazyVStack(spacing: 12) {
-                walkShelf
+                // Not at peek. The lip is a HANDLE (see countStrip): at 168
+                // points the walks row and the tops of its cards were the only
+                // thing visible, so the sheet looked like a row of controls,
+                // and a tap on one of them raised the sheet instead of opening
+                // it, which is the "one tap does nothing, the second opens the
+                // tree underneath" Hidde reported on 2026-08-25. It also ate
+                // the whole photograph the lip is meant to show.
+                if sheetHeight != .peek { walkShelf }
                 // Yours first: there are few of them and nobody else has them.
                 if query.isEmpty {
                     ForEach(minesInView) { s in
@@ -613,11 +639,25 @@ struct MapTab: View {
                     if want { shownWalk = nil }
                 }
 
-                Button { pickingSpecies = true } label: {
+                // A chip, so it behaves like the chips beside it: off, tap to
+                // choose; on, tap to clear; tap again to choose afresh (Hidde,
+                // 2026-08-25). It used to reopen the sheet whatever state it
+                // was in, which is a menu wearing a filter's clothes, and it
+                // left clearing a filter to a Clear chip that is now gone.
+                Button {
+                    if filters.species != nil {
+                        filters.species = nil
+                    } else {
+                        pickingSpecies = true
+                    }
+                } label: {
                     FilterChipLabel(label: filters.species ?? "Species",
                                     icon: "leaf", on: filters.species != nil)
                 }
                 .buttonStyle(.plain)
+                .accessibilityLabel(filters.species == nil
+                                    ? "Filter by species"
+                                    : "Species: \(filters.species!). Tap to clear")
 
                 // No Clear chip. It appeared the moment any filter went on,
                 // which read as a cross growing out of the chip you had just
@@ -652,7 +692,15 @@ struct MapTab: View {
                     // nobody asked for.
                     filters = MapFilters()
                     shownWalk = walksHere.first
-                    sheetHeight = .peek
+                    // .card, not .peek. It drew a route on the map and then
+                    // shrank the sheet to a lip, so the walk existed as a line
+                    // and nowhere else: "ik heb nu op walking routes geklikt op
+                    // de map, dan zie ik dus een walking route in Amsterdam,
+                    // maar dan zie ik hem vervolgens niet in de lijst eronder"
+                    // (Hidde, 2026-08-25). The list has to represent what the
+                    // map is showing, and .card is exactly the height of one
+                    // card, which is what this is.
+                    sheetHeight = .card
                 } else {
                     shownWalk = nil
                 }

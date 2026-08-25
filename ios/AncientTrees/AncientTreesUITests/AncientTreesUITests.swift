@@ -60,7 +60,8 @@ final class AncientTreesUITests: XCTestCase {
         XCTAssertTrue(back.waitForExistence(timeout: 5),
                       "a tree opened from the map has no back button, so the person is trapped")
         back.tap()
-        XCTAssertTrue(app.tabBars.buttons["Map"].waitForExistence(timeout: 5),
+        // The bar is a SwiftUI view, so `app.tabBars` finds nothing (2026-08-25).
+        XCTAssertTrue(app.buttons["Map"].waitForExistence(timeout: 5),
                       "back did not return to the map tab")
     }
 
@@ -201,26 +202,31 @@ final class AncientTreesUITests: XCTestCase {
                       "picking a tree in search did not take the map to it")
     }
 
-    /// The bar: four slots, and the middle one is a BUTTON rather than a
-    /// place. Restored on 2026-08-22 after a careless block replacement took
-    /// this and two others out with it, which nothing noticed because a
-    /// deleted test does not fail.
+    /// The bar: FIVE slots, and the middle one is a BUTTON rather than a place.
+    ///
+    /// It asserted four until 2026-08-25, naming tabs called Collect and Yours
+    /// and insisting Profile was not one. Every part of that was settled the
+    /// other way on 2026-08-24 (DECISIONS.md: Map, Explore, camera, Collection,
+    /// Profile), so this test had been failing for a day against an app that
+    /// was right, and nothing noticed because the app has no CI. It also read
+    /// `app.tabBars`, which finds nothing now: the bar is a SwiftUI view of
+    /// buttons, not a UITabBar, which is why two other tests were red too.
     @MainActor
-    func testFourSlotBar() throws {
-        let app = launch()
-        for label in ["Map", "Explore", "Collect", "Yours"] {
-            XCTAssertTrue(app.tabBars.buttons[label].waitForExistence(timeout: 12),
+    func testFiveSlotBar() throws {
+        let app = launch(["-signed-in"])
+        for label in ["Map", "Explore", "Collection", "Profile"] {
+            XCTAssertTrue(app.buttons[label].waitForExistence(timeout: 12),
                           "tab \(label) is missing from the bar")
         }
-        XCTAssertFalse(app.tabBars.buttons["Profile"].exists,
-                       "Profile is a tab again; it belongs in the corner")
+        XCTAssertTrue(app.buttons["Collect a tree"].exists,
+                      "the camera in the middle of the bar is gone")
 
-        app.tabBars.buttons["Collect"].tap()
+        app.buttons["Collect a tree"].tap()
         XCTAssertTrue(app.descendants(matching: .any)["spot-sheet"].waitForExistence(timeout: 6),
-                      "selecting Collect did not present the sheet")
+                      "the camera button did not present the collect sheet")
         app.buttons["spot-close"].tap()
-        XCTAssertTrue(app.tabBars.buttons["Map"].waitForExistence(timeout: 6))
-        XCTAssertTrue(app.tabBars.buttons["Map"].isSelected,
+        XCTAssertTrue(app.buttons["Map"].waitForExistence(timeout: 6))
+        XCTAssertTrue(app.buttons["Map"].isSelected,
                       "Collect took the selection with it; the bar must stay where it was")
     }
 
@@ -305,19 +311,55 @@ final class AncientTreesUITests: XCTestCase {
         // Ticking has to MOVE the walk on: the counter climbs and the card
         // names a different tree. A tick that only lit up would be a screen
         // pretending to be a walk.
-        let progress = app.staticTexts.matching(NSPredicate(format: "label CONTAINS 'of 14 ticked off'")).firstMatch
-        XCTAssertTrue(progress.waitForExistence(timeout: 6))
-        let before = Int(progress.label.components(separatedBy: " ").first ?? "") ?? 0
+        // The TOTAL is read, not written down. It said 14 and the Plantage walk
+        // has 7 trees: Amsterdam lost five to the ticket ruling on 2026-08-23
+        // and this test went red the same day, for a reason that had nothing to
+        // do with walks. A walk's length is data and data moves.
+        let progress = app.staticTexts.matching(
+            NSPredicate(format: "label CONTAINS 'ticked off'")).firstMatch
+        XCTAssertTrue(progress.waitForExistence(timeout: 6), "the walk shows no progress line")
+        let parts = progress.label.components(separatedBy: " ")
+        let before = Int(parts.first ?? "") ?? 0
+        let total = Int(parts.count > 2 ? parts[2] : "") ?? 0
+        XCTAssertTrue(total > 0, "could not read the walk's total from \(progress.label)")
         tick.tap()
         // The exact next count, not "a label without the old digit": the
-        // runner started at 1, the tick took it to "2 of 14", and "14"
-        // contains a 1, so the old predicate could never be satisfied.
-        XCTAssertTrue(app.staticTexts["\(before + 1) of 14 ticked off"].waitForExistence(timeout: 6),
-                      "ticking a tree did not advance the walk from \(before) of 14")
+        // runner started at 1, the tick took it to "2 of 7", and any looser
+        // predicate is satisfied by the label it started with.
+        XCTAssertTrue(app.staticTexts["\(before + 1) of \(total) ticked off"].waitForExistence(timeout: 6),
+                      "ticking a tree did not advance the walk from \(before) of \(total)")
 
         app.buttons["walk-close"].tap()
-        XCTAssertTrue(app.tabBars.buttons["Map"].waitForExistence(timeout: 6),
+        XCTAssertTrue(app.buttons["Map"].waitForExistence(timeout: 6),
                       "leaving the walk did not return to the app")
+    }
+
+    /// The lane picker on Collection, tapped both ways.
+    ///
+    /// Hidde has now reported twice that he cannot get back to "Want to see"
+    /// once he is on "Collected" (2026-08-24 and again 2026-08-25). The first
+    /// fix was made without a finger to test it with, which is how a fix ships
+    /// that does not fix anything. This is the finger.
+    @MainActor
+    func testTheCollectionLanePickerSwitchesBothWays() throws {
+        let app = launch(["-tab=3", "-signed-in", "-collected=ams_001,ams_002"])
+        let picker = app.segmentedControls["collect-lane"]
+        XCTAssertTrue(picker.waitForExistence(timeout: 12), "no lane picker on Collection")
+
+        let want = picker.buttons["Want to see"]
+        let seen = picker.buttons["Collected"]
+        XCTAssertTrue(want.exists && seen.exists, "the two lanes are not both there")
+
+        seen.tap()
+        XCTAssertTrue(seen.isSelected, "tapping Collected did not select it")
+
+        want.tap()
+        XCTAssertTrue(want.isSelected,
+                      "tapping Want to see from Collected did not select it")
+        // And the tap must not have opened a tree instead, which is the other
+        // half of what he described.
+        XCTAssertFalse(app.buttons["Take me there"].exists,
+                       "the lane tap opened a tree page underneath it")
     }
 
     /// The sheet the whole account funnel runs through. If it does not present,

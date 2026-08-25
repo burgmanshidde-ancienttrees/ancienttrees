@@ -28,6 +28,17 @@ import MapKit
 
 struct WalkMode: View {
     let walk: Walk
+    /// The stops, when the caller already holds them.
+    ///
+    /// A walk normally names its trees by id and this view looks them up, which
+    /// is right for a walk from the feed and WRONG for a tree you added
+    /// yourself: your tree is not in the catalogue, so a one-tree walk to it
+    /// resolved to no trees at all, and a walk with no trees has nothing left
+    /// to tick, so it opened straight onto "You walked the whole thing. 0
+    /// trees. They are all in your collection." (Hidde, 2026-08-25, on his own
+    /// Baarn tree: "dan staat er zero ticked off... dan wel take me there zou
+    /// gewoon een route moeten tonen van waar ik nu ben naar die boom").
+    var only: [Tree]? = nil
     let catalogue: Catalogue
     let origin: (lat: Double, lng: Double)
     @Environment(Saved.self) private var saved
@@ -37,7 +48,7 @@ struct WalkMode: View {
     @State private var selected: Tree?
     @State private var justTicked: Tree?
 
-    private var trees: [Tree] { catalogue.trees(of: walk) }
+    private var trees: [Tree] { only ?? catalogue.trees(of: walk) }
     private var done: Int { trees.filter { saved.isVisited($0.id) }.count }
 
     /// The one you are walking to: the first you have not ticked. Order is the
@@ -156,6 +167,11 @@ struct WalkMode: View {
             }
             if let t = next {
                 nextCard(t)
+            } else if trees.isEmpty {
+                // Not finished: empty. A walk whose stops we cannot resolve
+                // has to say that rather than congratulate somebody for a walk
+                // they never took, which is what it did.
+                emptyCard
             } else {
                 finishedCard
             }
@@ -206,6 +222,20 @@ struct WalkMode: View {
             }
         }
         .padding(14)
+        .background(Brand.surface, in: .rect(cornerRadius: 18))
+    }
+
+    private var emptyCard: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("We cannot open this walk")
+                .font(.brand(20, .heavy)).foregroundStyle(Brand.ink)
+            Text("Its trees are not in this copy of the map. Try again after the app has updated.")
+                .font(.footnote).foregroundStyle(Brand.inkSoft)
+                .fixedSize(horizontal: false, vertical: true)
+            Button { dismiss() } label: { loud("Close", "xmark") }
+        }
+        .padding(14)
+        .frame(maxWidth: .infinity, alignment: .leading)
         .background(Brand.surface, in: .rect(cornerRadius: 18))
     }
 
