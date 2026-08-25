@@ -248,12 +248,15 @@ struct WalkMode: View {
     }
 
     private func tick(_ t: Tree) {
+        // The account first, here as everywhere else that keeps something
+        // (Hidde, 2026-08-25). A walk cannot be the one place that collects
+        // into a collection nobody is signed in to keep.
+        guard account.isSignedIn else {
+            nudge.require(.keepTree(t.name))
+            return
+        }
         if !saved.isVisited(t.id) { saved.toggleVisited(t.id) }
         withAnimation(.snappy) { justTicked = t }
-        // The same ask the tree page makes at the same moment, so a walk cannot
-        // quietly become the one place that collects without ever offering to
-        // keep what it collected.
-        nudge.ticked(treeName: t.name, signedIn: account.isSignedIn, total: saved.visitedCount)
     }
 
     private func directions(_ t: Tree) {

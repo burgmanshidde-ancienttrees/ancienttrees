@@ -285,9 +285,12 @@ final class AncientTreesUITests: XCTestCase {
         // Clean, like every launch: on the shared simulator a tick from an
         // earlier test otherwise starts this walk at "1 of 14".
         // -no-nudge because this test is about the WALK, not about the
-        // sign-in ask that a first tick correctly raises over it.
+        // sign-in ask that a first tick correctly raises over it, and
+        // -signed-in because since 2026-08-25 a tick without an account opens
+        // that sheet instead of ticking. Both are the same exemption: measure
+        // the walk, not the account funnel around it.
         app.launchArguments = ["-at=52.3667,4.9086", "-reset-collection", "-no-nudge",
-                               "-begin=amsterdam|Plantage"]
+                               "-signed-in", "-begin=amsterdam|Plantage"]
         app.launch()
 
         XCTAssertTrue(app.otherElements["walk-mode"].waitForExistence(timeout: 12),

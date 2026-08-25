@@ -153,7 +153,16 @@ extension View {
     /// A card: a white surface on the cream ground, with a shadow soft enough to
     /// lift it rather than to announce itself.
     func brandCard(_ radius: CGFloat = 12) -> some View {
-        self.background(Brand.surface, in: .rect(cornerRadius: radius))
+        // CLIPPED first, and it is the whole reason this line exists. A card
+        // painted a rounded background and a rounded border and then let its
+        // own content ignore both, so every card with a photograph at the top
+        // had the photograph running square through the two top corners:
+        // Explore's cards, the Home shelf, and the card for a tree you added
+        // yourself (Hidde, 2026-08-25, who found all three at once and was
+        // right that I should have caught it). One clip here fixes every card,
+        // which is also why the bug reached three screens.
+        self.clipShape(.rect(cornerRadius: radius))
+            .background(Brand.surface, in: .rect(cornerRadius: radius))
             .overlay {
                 RoundedRectangle(cornerRadius: radius)
                     .strokeBorder(Brand.hairline, lineWidth: 1)

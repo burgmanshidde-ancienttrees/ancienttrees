@@ -24,7 +24,7 @@ struct TreeCard: View {
         VStack(alignment: .leading, spacing: 0) {
             ZStack(alignment: .topTrailing) {
                 image
-                heart.padding(6)
+                SaveHeart(tree: tree, look: .onPhoto).padding(6)
                 if saved.isVisited(tree.id) { ticked }
             }
             VStack(alignment: .leading, spacing: 5) {
@@ -108,26 +108,8 @@ struct TreeCard: View {
         }
     }
 
-    private var heart: some View {
-        Button { saved.toggleSaved(tree.id) } label: {
-            Image(systemName: saved.isSaved(tree.id) ? "heart.fill" : "heart")
-                .font(.system(size: 15, weight: .semibold))
-                .foregroundStyle(saved.isSaved(tree.id) ? .pink : .white)
-                .padding(9)
-                .background(.black.opacity(0.38), in: .circle)
-                // The CIRCLE stays 35 points because a bigger one would sit on
-                // the photograph; the TAP TARGET is 44, which is Apple's
-                // minimum and was being missed by nine points on every card in
-                // the app. Measured by scripts/appfit.py, not noticed by eye.
-                .frame(width: 44, height: 44)
-                .contentShape(.rect)
-        }
-        .buttonStyle(.plain)
-        .accessibilityLabel(saved.isSaved(tree.id)
-                            ? "Saved \(tree.name). Tap to remove"
-                            : "Save \(tree.name)")
-        .sensoryFeedback(.selection, trigger: saved.isSaved(tree.id))
-    }
+    // The heart lives in SaveHeart.swift now: one control, two looks, and the
+    // sign-in gate and the remove confirmation written once instead of twice.
 
     private var ticked: some View {
         Label("Seen", systemImage: "checkmark.seal.fill")

@@ -404,7 +404,13 @@ struct TreeDetail: View {
                     .foregroundStyle(Brand.moss)
                 Text(m.status == .published
                      ? "This one made the map everybody sees."
-                     : "This tree is yours. We have it too, and we will take a look; whatever we decide, it stays on your map.")
+                     // His own sentence, verbatim (2026-08-25). What it
+                     // replaced said "This tree is yours. We have it too",
+                     // which reads as a boast about our own database at the
+                     // moment somebody has just given us something, and it
+                     // never said what happens next. The reader is the subject
+                     // here and the next step is named.
+                     : "You've added this tree. We're taking a look at it, and once it's verified, we will add it to our map.")
                     .font(.footnote).foregroundStyle(Brand.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
             }
@@ -461,22 +467,7 @@ struct TreeDetail: View {
             }
             .buttonStyle(BrandButtonStyle())
 
-            Button {
-                saved.toggleSaved(tree.id)
-                if saved.isSaved(tree.id) {
-                    nudge.saved(count: saved.savedCount, signedIn: account.isSignedIn)
-                }
-            } label: {
-                Image(systemName: saved.isSaved(tree.id) ? "heart.fill" : "heart")
-                    .font(.title3)
-                    .foregroundStyle(saved.isSaved(tree.id) ? .pink : Brand.inkSoft)
-                    .frame(width: 52, height: 52)
-                    .background(Brand.surface, in: .circle)
-                    .overlay { Circle().strokeBorder(Brand.hairline, lineWidth: 1) }
-            }
-            .buttonStyle(.plain)
-            .accessibilityLabel(saved.isSaved(tree.id) ? "Saved. Tap to remove" : "Save this tree")
-            .sensoryFeedback(.selection, trigger: saved.isSaved(tree.id))
+            SaveHeart(tree: tree, look: .inBar)
         }
         // The same 20 as the page's content above it; at 16 the bar began
         // four points left of every paragraph, which is the drift the layout

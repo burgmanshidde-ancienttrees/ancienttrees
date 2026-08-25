@@ -124,7 +124,10 @@ struct ContentView: View {
     }
 
     private var origin: (lat: Double, lng: Double) {
-        debugOrigin ?? location.coordinate ?? (lat: 52.3731, lng: 4.8922)   // Dam square
+        // Live fix, then the last one this phone had, then Dam square as the
+        // first-launch-anywhere default. See LocationProvider.remembered.
+        debugOrigin ?? location.coordinate ?? LocationProvider.remembered
+            ?? (lat: 52.3731, lng: 4.8922)   // Dam square
     }
 
     /// Shown once, and only when iOS has genuinely not been asked yet.
@@ -144,10 +147,29 @@ struct ContentView: View {
                     // Spot is a button wearing a tab's clothes, the Strava and
                     // Untappd centre pattern: selecting it presents the sheet
                     // and the bar stays exactly where it was.
-                    if new == 2 { rootSheet = .spot(.collect); return }
+                    if new == 2 { openCollect(); return }
                     if new == tab { clearPath(new) }
                     tab = new
                 })
+    }
+
+    /// The centre button, gated.
+    ///
+    /// Collecting writes a sighting, a photograph and, when the tree is one we
+    /// do not have, a row in the submissions table that the reply mail is
+    /// addressed to. All three are things kept on somebody's behalf, and Hidde
+    /// closed the soft wall on all of it on 2026-08-25. Gating the heart and
+    /// leaving the camera open would have been the same hole one button along.
+    ///
+    /// The launch-argument route into this sheet is deliberately NOT gated, so
+    /// appsweep can still photograph the collect screens on a simulator that
+    /// has never signed in.
+    private func openCollect() {
+        guard account.isSignedIn else {
+            nudge.require(.general)
+            return
+        }
+        rootSheet = .spot(.collect)
     }
 
     /// One tab's navigation stack, with every destination in this app declared
@@ -331,7 +353,7 @@ struct ContentView: View {
                 }
                 .appObjects(self)
                 .onChange(of: navigator.collectNearby) { _, want in
-                    if want { rootSheet = .spot(.collect); navigator.collectNearby = false }
+                    if want { openCollect(); navigator.collectNearby = false }
                 }
                 .onChange(of: navigator.push) { _, new in
                     guard let new else { return }
@@ -515,6 +537,28 @@ final class LocationProvider: NSObject, CLLocationManagerDelegate {
     /// distinguish them because nothing read the status at all.
     var status: CLAuthorizationStatus
 
+    /// The last fix we ever had, kept across launches.
+    ///
+    /// Hidde opened the app in Baarn on 2026-08-25 and the map opened on
+    /// Amsterdam. The Info.plist key that broke this in August is present and
+    /// the dialog does appear, so the cause is the other half: a cold start
+    /// draws the map before the first fix lands, and a refusal leaves
+    /// `coordinate` nil forever. Both fell through to Dam square, which is not
+    /// a neutral default, it is a wrong answer stated confidently in a product
+    /// whose one unforgivable error is telling somebody they are somewhere
+    /// they are not.
+    ///
+    /// A remembered coordinate is honest in a way the hardcoded one is not: it
+    /// is where this phone actually was, so the map opens on the trees near
+    /// home rather than near our office.
+    private static let key = "ancienttrees.last_fix"
+
+    static var remembered: (lat: Double, lng: Double)? {
+        let d = UserDefaults.standard
+        guard let a = d.array(forKey: key) as? [Double], a.count == 2 else { return nil }
+        return (lat: a[0], lng: a[1])
+    }
+
     override init() {
         status = manager.authorizationStatus
         super.init()
@@ -536,6 +580,8 @@ final class LocationProvider: NSObject, CLLocationManagerDelegate {
     func locationManager(_ m: CLLocationManager, didUpdateLocations locs: [CLLocation]) {
         guard let l = locs.last else { return }
         coordinate = (lat: l.coordinate.latitude, lng: l.coordinate.longitude)
+        UserDefaults.standard.set([l.coordinate.latitude, l.coordinate.longitude],
+                                  forKey: Self.key)
     }
 
     func locationManagerDidChangeAuthorization(_ m: CLLocationManager) {

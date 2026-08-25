@@ -127,7 +127,13 @@ const year = new Date().getFullYear();
              waitlist overlay, which says in its own words that we write to you
              the day it opens. The label can be plain again because the thing
              behind it is honest. -->
-        <a href="/app" class="nav-cta only-mobile" data-app-modal data-ev="app-cta">Get the app</a>
+        <!-- Straight to the page, not the overlay (Hidde, 2026-08-25: "ik heb
+             het vermoeden dat de nieuwe overlay van get the app minder goed
+             converteert dan de voorgaande... doe dan alsjeblieft gewoon die
+             oude landingspagina in een keer"). His hunch, his call, and it is
+             one attribute either way. The overlay is still what the city map's
+             own walks CTA opens, so both are still in the building. -->
+        <a href="/app" class="nav-cta only-mobile" data-ev="app-cta">Get the app</a>
       </div>
     </details>
     {/* What is YOURS hangs off the account, not off Explore (Hidde,
@@ -145,7 +151,7 @@ const year = new Date().getFullYear();
         </div>
       </details>
     )}
-    <a href="/app" class="bar-cta only-desktop" data-app-modal data-ev="app-cta">Get the app</a>
+    <a href="/app" class="bar-cta only-desktop" data-ev="app-cta">Get the app</a>
   </nav>
 </header>
 <slot />
@@ -167,7 +173,7 @@ const year = new Date().getFullYear();
     </div>
     <div class="footer-col">
       <h4>Ancient Trees</h4>
-      <a href="/app" data-app-modal data-ev="app-cta">The app</a>
+      <a href="/app" data-ev="app-cta">The app</a>
       <a href="/contribute">Suggest a tree</a>
       <a href="/privacy">Privacy</a>
       <a href="/terms">Terms</a>

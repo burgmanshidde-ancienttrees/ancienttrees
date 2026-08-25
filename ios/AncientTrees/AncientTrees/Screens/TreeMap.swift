@@ -832,15 +832,20 @@ enum MapLayers {
             if ticket {
                 // A TICKET, bottom left, a little bigger than the collected
                 // tick (Hidde, 2026-08-24: "een ticket icoon op de boom zoals
-                // de vink als je m hebt gezien maar iets groter"). Gold rather
-                // than moss, because it is a condition on the visit and not a
-                // thing you have done. Left, so a tree can wear both.
+                // de vink als je m hebt gezien maar iets groter"). Blue, not
+                // gold: gold is the Plus colour everywhere else in this app,
+                // and sharing it made a ticket read as one of our paid
+                // features (Hidde, 2026-08-25: "omdat je die ticket nu
+                // dezelfde kleur hebt gegeven als plus, lijkt het alsof dat
+                // samenhoort... ik wil die tickets licht donkerblauw of zo").
+                // What the 08-24 note above was right about stands: it is a
+                // condition on the visit rather than a thing you have done,
+                // so it is not moss either. Left, so a tree can wear both.
                 let b: CGFloat = 17
                 let r = CGRect(x: 1, y: d - b - 1, width: b, height: b)
                 UIColor.white.setFill()
                 UIBezierPath(ovalIn: r).fill()
-                let gold = UIColor(red: 0.85, green: 0.63, blue: 0.25, alpha: 1)
-                gold.setFill()
+                UIColor(red: 0.18, green: 0.42, blue: 0.66, alpha: 1).setFill()
                 // A stub: a rounded rectangle with a notch out of each side.
                 let body = UIBezierPath(roundedRect:
                     CGRect(x: r.minX + 3.4, y: r.midY - 3.1, width: b - 6.8, height: 6.2),
