@@ -90,8 +90,21 @@ struct CollectView: View {
     /// The set to fill in: the species we map most, so the grid is worth
     /// completing rather than arbitrary.
     private var stampSpecies: [String] {
+        // THE NAME BREAKS THE TIE, and without it this grid was not a set.
+        //
+        // Hidde filmed it on 2026-08-25: "the amount of species collected jumps
+        // and changes the screen every 2 seconds". Four species sit on exactly
+        // 20 trees, which is the count at eighteenth place, so which of them
+        // made the cut was decided by a Dictionary's unordered iteration and an
+        // unstable sort. Every time the view was rebuilt the grid could hold a
+        // different eighteen, so the contents shuffled and "collected of
+        // eighteen" jumped, and the view was being rebuilt constantly because
+        // it reads `origin` and the location provider published every GPS tick.
+        // Both halves are fixed; this is the half that made the number lie.
         Dictionary(grouping: catalogue.trees, by: \.commonName)
-            .sorted { $0.value.count > $1.value.count }
+            .sorted { $0.value.count == $1.value.count
+                        ? $0.key < $1.key
+                        : $0.value.count > $1.value.count }
             .prefix(18).map(\.key)
     }
 

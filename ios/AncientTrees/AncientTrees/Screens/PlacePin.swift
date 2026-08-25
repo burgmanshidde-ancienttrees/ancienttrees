@@ -106,7 +106,7 @@ struct PlacePin: View {
                     Text("Drag the map until the pin sits on the tree.")
                         .font(.subheadline).foregroundStyle(Brand.ink)
                     Text(movedMetres < 5
-                         ? "You can zoom in as far as you like."
+                         ? "Zoom in as far as you like. The button wakes up once you have moved it."
                          : "That is \(movedMetres) m from where we have it.")
                         .font(.caption).foregroundStyle(Brand.inkSoft)
                     Button {

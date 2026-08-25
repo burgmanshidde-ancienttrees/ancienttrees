@@ -583,11 +583,26 @@ final class LocationProvider: NSObject, CLLocationManagerDelegate {
         manager.startUpdatingLocation()
     }
 
+    /// Twenty metres, or nothing happens.
+    ///
+    /// This is an @Observable property that half the app reads through `origin`,
+    /// so every published change rebuilds the home screen, the collection and
+    /// the map's list. Core Location delivers a fix every second or two while
+    /// somebody walks, each a metre or two from the last, and every one of them
+    /// was a full re-render and a UserDefaults write. It is also half of why the
+    /// species grid appeared to shuffle by itself on 2026-08-25: the grid was
+    /// not deterministic and this rebuilt it constantly.
+    ///
+    /// Twenty metres is well inside the accuracy we ask for (hundred metres) and
+    /// far below the distances any of this copy talks about.
+    private static let minMove = 20.0
+
     func locationManager(_ m: CLLocationManager, didUpdateLocations locs: [CLLocation]) {
         guard let l = locs.last else { return }
-        coordinate = (lat: l.coordinate.latitude, lng: l.coordinate.longitude)
-        UserDefaults.standard.set([l.coordinate.latitude, l.coordinate.longitude],
-                                  forKey: Self.key)
+        let new = (lat: l.coordinate.latitude, lng: l.coordinate.longitude)
+        if let old = coordinate, Geo.km(old, new) * 1000 < Self.minMove { return }
+        coordinate = new
+        UserDefaults.standard.set([new.lat, new.lng], forKey: Self.key)
     }
 
     func locationManagerDidChangeAuthorization(_ m: CLLocationManager) {

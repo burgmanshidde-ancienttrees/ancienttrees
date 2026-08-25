@@ -236,14 +236,21 @@ struct WalkMode: View {
 
             // Which button is loud follows the distance; both are always here,
             // because GPS is a bonus and never a gate.
+            // WITHIN REACH OR NOT AT ALL (Hidde, 2026-08-25, looking at a tree
+            // 17 km away: "the option im standing in front of it makes no
+            // sense"). It used to offer the tick at any distance, loud when you
+            // were close and quiet when you were not, on the reasoning that GPS
+            // is a bonus and never a gate. That reasoning was about not blocking
+            // somebody whose phone is confused by 30 metres of city; it was
+            // never an argument for offering to collect a tree in another
+            // province. And since the tick opens the camera, the offer is now
+            // literally impossible to accept from there.
             if withinReach(t) {
                 Button { tick(t) } label: { loud("I am standing before it", "checkmark") }
                     .accessibilityIdentifier("walk-tick")
                 Button { directions(t) } label: { quiet("Open in Maps", "arrow.turn.up.right") }
             } else {
                 Button { directions(t) } label: { loud("Open in Maps", "arrow.turn.up.right") }
-                Button { tick(t) } label: { quiet("I am standing before it", "checkmark") }
-                    .accessibilityIdentifier("walk-tick")
             }
         }
         .padding(14)

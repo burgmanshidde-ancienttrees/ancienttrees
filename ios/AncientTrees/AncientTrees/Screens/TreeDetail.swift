@@ -29,7 +29,6 @@ struct TreeDetail: View {
     @Environment(Nudge.self) private var nudge
     @State private var reporting = false
     @State private var placing = false
-    @State private var walking = false
     @Environment(Navigator.self) private var navigator
 
     var body: some View {
@@ -107,17 +106,10 @@ struct TreeDetail: View {
             // Debug scaffolding, same family as -tab, -select and -collected:
             // simctl cannot tap, and a screen that only exists after a tap is a
             // screen that ships unlooked at.
-            if ProcessInfo.processInfo.arguments.contains("-walkto") { walking = true }
             // A screen no argument can open is a screen that ships unseen
             // (CLAUDE.md), so the pin picker gets its argument in the same
             // commit as the picker.
             if ProcessInfo.processInfo.arguments.contains("-placepin") { placing = true }
-        }
-        .fullScreenCover(isPresented: $walking) {
-            // The tree itself, not its id: a tree you added is not in the
-            // catalogue, so looking it up gave an empty walk (2026-08-25).
-            WalkMode(walk: Self.oneTreeWalk(tree), only: [tree], catalogue: catalogue,
-                     origin: origin ?? (tree.lat, tree.lng))
         }
     }
 
@@ -294,16 +286,9 @@ struct TreeDetail: View {
         .padding(.horizontal, 14)
     }
 
-    /// A walk of one, so the mode built for several can carry a single tree.
-    ///
-    /// A synthesised Walk rather than a second screen: everything Begin does
-    /// (your dot, the line, the metres counting down, the tick when you arrive)
-    /// is what somebody walking to one tree wants too, and a copy of it would
-    /// drift.
-    static func oneTreeWalk(_ t: Tree) -> Walk {
-        Walk(city: t.city, citySlug: t.citySlug, name: t.name, trees: [t.id],
-             count: 1, km: 0, minutes: 0, duration: "", combined: false, shape: nil)
-    }
+    // oneTreeWalk() went with the in-app walk to a single tree (2026-08-25).
+    // WalkMode still takes `only:` for a caller that holds its own stops, which
+    // is how a walk to a tree somebody added themselves would work.
 
     /// One sheet for every blank, because four sheets that differ by a
     /// placeholder is four places for them to drift apart.
@@ -478,16 +463,24 @@ struct TreeDetail: View {
 
     private var actionBar: some View {
         HStack(spacing: 10) {
-            // OUR walking view, not somebody else's app.
+            // The hand-off, and it is a REVERSAL of 2026-08-24, when this
+            // button was pointed at our own walk screen because "waarom stuurt
+            // ie je dan naar een andere app als je in de app kan navigeren".
+            // Both readings are his and the second one is about the case rather
+            // than the principle: a walk of nine stops is ours to run, a single
+            // tree is a destination and maps apps do destinations.
+            // STRAIGHT TO MAPS for a single tree (Hidde, 2026-08-25: "just let
+            // people open google maps directly for now, as mvp its fine until we
+            // build the whole location for ourselves"). It opened our own walk
+            // screen, which is right for a walk of nine stops in a city and
+            // absurd for one tree seventeen kilometres away: a route with one
+            // destination and nothing to string together is what every maps app
+            // already does better than we will for a long time.
             //
-            // Hidde, 2026-08-24: "waarom stuurt ie je dan naar een andere app
-            // als je in de app kan navigeren." No reason: Begin arrived later
-            // and this button never came with it, so a walk kept you and a
-            // single tree handed you away. AllTrails draws the same line we do
-            // now: in-app for the trail itself, and a hand-off only for
-            // street-by-street, which lives one level in.
-            Button { walking = true } label: {
-                Label("Take me there", systemImage: "location.fill")
+            // Our walk screen keeps the multi-stop case, which is where the live
+            // routing built earlier today belongs anyway.
+            Button { Directions.walk(lat: tree.lat, lng: tree.lng) } label: {
+                Label("Take me there", systemImage: "arrow.turn.up.right")
             }
             .buttonStyle(BrandButtonStyle())
 
