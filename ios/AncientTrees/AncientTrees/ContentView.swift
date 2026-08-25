@@ -363,6 +363,11 @@ struct ContentView: View {
                 .onChange(of: navigator.selectTab) { _, new in
                     if let new { tab = new; navigator.selectTab = nil }
                 }
+                .onChange(of: navigator.showCityOnMap) { _, new in
+                    // Same handling as showOnMap below: pop the map's stack and
+                    // go there. MapTab frames the city and clears the request.
+                    if new != nil { mapPath = []; tab = 0 }
+                }
                 .onChange(of: navigator.showOnMap) { _, new in
                     // POP the map's own stack as well. The tree page you
                     // tapped the inset on is usually pushed ON the map tab, so

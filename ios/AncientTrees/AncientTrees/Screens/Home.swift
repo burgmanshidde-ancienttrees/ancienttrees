@@ -463,6 +463,7 @@ struct CityView: View {
     let name: String
     let catalogue: Catalogue
     let origin: (lat: Double, lng: Double)
+    @Environment(Navigator.self) private var navigator
 
     private var trees: [Tree] { catalogue.trees.filter { $0.citySlug == slug } }
 
@@ -491,14 +492,41 @@ struct CityView: View {
                 // dan de bomen in de lijst eronder... dezelfde logica doen we
                 // op web"). The website's city page has had exactly this shape
                 // all along; the app's had a list and no map at all.
-                TreeMap(trees: trees,
-                        focus: .init(latitude: frame.centre.lat, longitude: frame.centre.lng),
-                        spanMeters: frame.meters,
-                        selected: .constant(nil))
+                // A PICTURE OF THE MAP, and the whole picture is the way to
+                // the real one. It carried allowsHitTesting(false) and nothing
+                // else, so it read as a dead control (Hidde, 2026-08-25: "dan
+                // kan ik niet op de kaart klikken... ik zou hem eigenlijk dan
+                // daarheen verwijzen"). Hit testing stays off on the map itself
+                // so a finger dragging past it still scrolls the page, which is
+                // what Airbnb and AllTrails do with a preview: the map does not
+                // pan, the button over it opens the map that does.
+                Button { navigator.showCityOnMap = slug } label: {
+                    ZStack(alignment: .bottomTrailing) {
+                        TreeMap(trees: trees,
+                                focus: .init(latitude: frame.centre.lat,
+                                             longitude: frame.centre.lng),
+                                spanMeters: frame.meters,
+                                selected: .constant(nil))
+                            .allowsHitTesting(false)
+                        // A solid capsule, not a material one: over a pale map
+                        // the blur was invisible and the words floated on the
+                        // tiles, which reads as a label rather than a control.
+                        Label("Open the map", systemImage: "arrow.up.left.and.arrow.down.right")
+                            .font(.caption.weight(.semibold))
+                            .foregroundStyle(Brand.ink)
+                            .padding(.horizontal, 12).padding(.vertical, 8)
+                            .background(Brand.surface, in: .capsule)
+                            .overlay { Capsule().strokeBorder(Brand.hairline, lineWidth: 1) }
+                            .shadow(color: .black.opacity(0.10), radius: 4, y: 1)
+                            .padding(10)
+                    }
                     .frame(height: 260)
                     .clipShape(.rect(cornerRadius: 16))
-                    .padding(.horizontal, 16)
-                    .allowsHitTesting(false)
+                    .contentShape(.rect)
+                }
+                .buttonStyle(.plain)
+                .accessibilityIdentifier("city-open-map")
+                .padding(.horizontal, 16)
 
                 let walks = catalogue.walks(inCity: slug)
                 if !walks.isEmpty {

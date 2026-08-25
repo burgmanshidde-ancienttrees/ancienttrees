@@ -304,6 +304,27 @@ struct MapTab: View {
                                span: mapRegion?.span
                                    ?? MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)))
         }
+        .onChange(of: navigator.showCityOnMap) { _, new in
+            guard let slug = new else { return }
+            let here = catalogue.trees.filter { $0.citySlug == slug }
+            navigator.showCityOnMap = nil
+            guard !here.isEmpty else { return }
+            // The city's own frame, the same arithmetic the city page's preview
+            // uses: the middle of its trees, wide enough to hold them all.
+            let lats = here.map(\.lat), lngs = here.map(\.lng)
+            let centre = CLLocationCoordinate2D(
+                latitude: (lats.min()! + lats.max()!) / 2,
+                longitude: (lngs.min()! + lngs.max()!) / 2)
+            let span = MKCoordinateSpan(
+                latitudeDelta: max(lats.max()! - lats.min()!, 0.01) * 1.4,
+                longitudeDelta: max(lngs.max()! - lngs.min()!, 0.01) * 1.4)
+            selected = nil
+            shownWalk = nil
+            filters = MapFilters()
+            query = ""
+            sheetHeight = .peek
+            moveRequest = (token: UUID(), region: MKCoordinateRegion(center: centre, span: span))
+        }
         .onChange(of: navigator.showOnMap) { _, new in
             guard let id = new, let t = catalogue.tree(id) else { return }
             selected = t
