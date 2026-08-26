@@ -1033,7 +1033,7 @@
     "kind": "scout",
     "tokens": 124675,
     "trees": 0,
-    "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+    "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
    },
    {
     "target": "barcelona",
@@ -3412,6 +3412,17 @@
     "tokens": 0,
     "trees": 1,
     "note": "session work, not dispatched: wrote 1 story directly, merged (9 to 10), fixed paid-entry FAQ count",
+    "wasted": 0,
+    "brief_wrong": false
+   }
+  ],
+  "2026-08-26": [
+   {
+    "target": "species page (turkey-oak)",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 0,
+    "note": "species page intro written by session, not an agent pass; 3 trees already published (Caserta, Genoa, Utrecht)",
     "wasted": 0,
     "brief_wrong": false
    }
