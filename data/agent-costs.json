@@ -3479,6 +3479,24 @@
     "note": "session work, not dispatched: restored 3 fully-verified, already-written state-champion trees (Camperdown Elm, Buddhist Pine, Texas Olive) that a 2026-08-19/20 pass had pulled for being too small, a reason CLAUDE.md explicitly forbids; merged from data/leads, 8 -> 11 trees, intro/FAQ counts fixed",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "ios app (AncientTreesUITests.swift)",
+    "kind": "other",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session work, not dispatched: updated three UI tests (testFiveSlotBar renamed testThreeTabsAndCollectButton, testCollectDayZeroShowsMission, testTheCollectionLanePickerSwitchesBothWays) stale against the 2026-08-26 three-tab redesign (TabBar.swift, Collect.swift); ios.yml Build-and-test job had been red since the redesign shipped",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "photo queue (photo_hunt.py --recheck)",
+    "kind": "photo",
+    "tokens": 0,
+    "trees": 0,
+    "note": "free API sweep, 40 photo-less trees checked, 607 total trees now carry at least one open-licence candidate queued for a viewing pass this runner cannot judge",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
