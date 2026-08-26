@@ -142,6 +142,7 @@ def screens(sub):
         ("feedback",      ["-tab=2", "-feedback"], 5),
         ("sponsor",       ["-tab=2", "-sponsor"], 5),
         ("profile-edit",  ["-tab=2", "-profile-edit"], 5),
+        ("people",        ["-tab=2", "-people"], 5),
     ]
     names = [p[0] for p in plan]
     dupes = sorted({n for n in names if names.count(n) > 1})
