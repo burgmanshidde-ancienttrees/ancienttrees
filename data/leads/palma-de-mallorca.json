@@ -1,6 +1,24 @@
 {
-  "leads": [],
+  "leads": [
+    {
+      "name": "Ficus de la Plaça del Mercat",
+      "species": "Ficus sp. (likely Ficus macrophylla, unconfirmed)",
+      "reason": "LEAD, not verified this pass. A large, well-known ficus dominating Plaça del Mercat / Plaza del Mercado, central Palma (near Passeig del Born); not in the CAIB Cataleg d'Arbres Singulars import (78 current entries checked, none at this location), so it carries no official designation. Existence and rough age are corroborated by three independent news sources (mallorcadiario.com, ultimahora.es, okdiario.com, all 2024-2025 coverage of the plaza's redevelopment) plus the Spanish Wikipedia article on the plaza, which all agree the tree is monumental, over a century old, and was probably planted in the 1911-1912 Alenyar reform of the square (Wikipedia's own hedge: 'es probable que... fuera entonces plantado', roughly 113-115 years if so). What is missing to publish: (1) confirmed species, Ficus macrophylla is a reasonable guess by pattern (Palma's two published register ficus trees, plm_002 and plm_004, are both macrophylla, an Australian fig planted widely in Mediterranean city squares in this era) but no source states it directly, so recording it as fact would be fabrication; (2) any height/girth measurement, none found in press coverage despite searching; (3) firmer sourcing on the planting date, which is Wikipedia's own probability estimate rather than a documented date. A future pass could try: the Ajuntament de Palma's reform project documentation (3.5M euro Plaça del Mercat project, approved by the Historic Center Commission, referenced in the ultimahora.es 2025-02-04 piece) which likely has an arborist's survey with exact figures; or monumentaltrees.com's Palma dragon-tree page family suggests they may also carry Palma ficus records worth a browser-session check (blocked to curl/WebFetch this pass, 403).",
+      "location_hint": "Plaça del Mercat, Palma (small square between Passeig del Born and Plaça Major)",
+      "sources_checked": [
+        "https://www.mallorcadiario.com/plaza-del-mercat-alaska-ficus-monumento-maura",
+        "https://okdiario.com/baleares/crecimiento-ficus-condiciona-toda-reforma-plaza-del-mercado-palma-12260951",
+        "https://www.ultimahora.es/noticias/palma/2025/02/04/2319245/reforma-placa-del-mercat-creara-plataforma-unica-peatonal-solo-permitira-paso-vecinos-vehiculos-emergencias.html",
+        "https://es.wikipedia.org/wiki/Plaza_del_Mercado_(Palma_de_Mallorca)"
+      ]
+    }
+  ],
   "blocked": [
+    {
+      "name": "BELLAOMBRA DE LA PLAÇA DE LA REINA",
+      "species": "Phytolacca dioica",
+      "reason": "BLOCKED, dead. Was catalogued in the CAIB Cataleg d'Arbres Singulars from 2003 (over 16m tall, ~5m trunk perimeter, largest of its species in the Balearics per the register's own page, still live at caib.es/sites/proteccioespecies/es/n/bellaombra_de_la_placa_de_la_reina_-21553es/) but split in two and died; ultimahora.es (2020-10-05, 'Ni rastro del bellasombra que embellecía la plaza de la Reina') reports the stump was removed and the Regional Ministry of Environment published its exclusion from the catalogue, consistent with its absence from our current 78-entry register import. Confirmed dead via two independent sources (the register's own removal and the news report); never ship as an entry per the never-dead-trees rule. Not in data/registers/balears-arbres-singulars.json, so a future register refresh would not surface it either; recorded here so nobody re-proposes it from the CAIB page alone, which is still live and reads as if the tree still stands."
+    },
     {
       "register_id": 644,
       "name": "MURTERA DE LES FUNDADORES",
