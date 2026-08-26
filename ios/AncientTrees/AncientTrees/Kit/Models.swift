@@ -37,13 +37,24 @@ public struct Photo: Codable, Hashable, Sendable {
     /// Does the LICENCE oblige us to name somebody. Answered on the server, by
     /// the same function the website's figcaptions use.
     let creditRequiredRaw: Bool?
+    /// The photographer's name as it should be printed, host already dropped.
+    /// The trimming used to happen here, which meant the same photograph was
+    /// credited one way on the phone and another on the website until Hidde
+    /// picked the short one (2026-08-26: "ingekort natuurlijk").
+    let attributionShort: String?
 
     enum CodingKeys: String, CodingKey {
         case url, license, attribution, width, height
         case thumbRaw = "thumb"
         case heroRaw = "hero"
         case creditRequiredRaw = "credit_required"
+        case attributionShort = "attribution_short"
     }
+
+    /// The name to print. Falls back to the untrimmed one only for a snapshot
+    /// bundled before the feed carried this, where a credit that is too long is
+    /// still a correct credit.
+    public var name: String? { attributionShort ?? attribution }
 
     /// The url for a card or a list row.
     public var card: URL? { thumbRaw.flatMap { URL(string: $0) } ?? Photos.thumb(url, width: 500) }

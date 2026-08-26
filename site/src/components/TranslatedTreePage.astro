@@ -13,7 +13,7 @@ import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 import { SIGNIN_JS } from "../lib/signin-js";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, distLabel, type CityEntry, type Tree } from "../lib/trees";
 import { haversineKm } from "../lib/walks";
-import { usablePhoto, imgSrcset, thumbUrl, creditRequired } from "../lib/images";
+import { usablePhoto, imgSrcset, thumbUrl, creditRequired, creditName } from "../lib/images";
 import { speciesIcon } from "../lib/species-icons";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { locationIsApproximate } from "../lib/tree-copy";
@@ -108,7 +108,7 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!);
     {photo && photo.url ? (
       <figure class="tree-photo">
         <img {...imgSrcset(photo.url, [700, 1100, 1600], "(max-width: 800px) 100vw, 760px")} alt={x.name} loading="lazy" />
-        {creditRequired(photo.license) && <figcaption>Foto: {photo.attribution} ({photo.license})</figcaption>}
+        {creditRequired(photo.license) && <figcaption>Foto: {creditName(photo.attribution)} ({photo.license})</figcaption>}
       </figure>
     ) : (
       <figure class="tree-noph">

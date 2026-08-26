@@ -20,7 +20,7 @@
 import type { CityEntry } from "./trees";
 import { peakFor } from "./phenology";
 import { renderableTrees, slugify } from "./trees";
-import { usablePhoto, thumbUrl, creditRequired } from "./images";
+import { usablePhoto, thumbUrl, creditRequired, creditName } from "./images";
 
 export interface FeedTree {
   id: string;
@@ -70,7 +70,8 @@ export interface FeedTree {
    * disagreed across the two surfaces. */
   photo: { url: string; license: string | null; attribution: string | null;
             width: number | null; height: number | null;
-            thumb: string; hero: string; credit_required: boolean } | null;
+            thumb: string; hero: string; credit_required: boolean;
+            attribution_short: string | null } | null;
 }
 
 export function feedTrees(cities: CityEntry[]): FeedTree[] {
@@ -118,6 +119,11 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
               thumb: thumbUrl(p.url, 500),
               hero: thumbUrl(p.url, 960),
               credit_required: creditRequired(p.license),
+              // The name as it should be PRINTED, host dropped. The trimming
+              // rule lived in Swift and the website printed the long form, so
+              // one photograph was credited two ways (Hidde, 2026-08-26, asked
+              // which wins: "ingekort natuurlijk").
+              attribution_short: creditName(p.attribution),
             }
           : null,
       });
