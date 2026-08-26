@@ -48,6 +48,29 @@ nobody does anything, and an aphorism pretending to be instruction.
 Buttons are the exception and stay imperative: **Add a tree**, **Take a photo**,
 **Show the way**. Two or three words, a verb first, no sentence.
 
+## Never write a number where nothing can update it
+
+Hidde, 2026-08-26, on a sponsor bio I wrote with "1,841 trees in 171 cities"
+in it: "dont use the number it will get outdated quickly and remember not to
+use it at static places."
+
+The website may quote a count because it regenerates one on every build and
+`check_tree_count_claims()` in qa.py refuses one that overstates. Nothing else
+we write regenerates. A string inside a shipped app binary is fixed until the
+next release. An App Store description, a Ko-fi bio, a social profile or a
+store screenshot is fixed until somebody remembers to log in and edit it,
+which is to say fixed forever.
+
+So: **counts live only where a build puts them.** Everywhere else, write what
+the thing IS. "I map the most remarkable old trees of the world's cities"
+never goes stale; "1,841 trees" is wrong within the week. An outreach mail is
+the one exception, and only because it is a moment in time rather than a
+standing page: `outreach_compose.py` fills its counts from the data at the
+moment of sending.
+
+`copycheck.py` refuses a literal count in an app string. Nothing can grep an
+external profile, which is why this is written here.
+
 ## Before it ships
 
 `python3 scripts/copycheck.py` greps every user-facing string for these tics.

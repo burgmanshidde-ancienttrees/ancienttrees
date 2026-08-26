@@ -50,6 +50,20 @@ TICS = [
                 r"altijd gratis|blijft gratis|gratis blijven|"
                 r"never (?:pay|charge)|we will never|we will always)\b", re.I),
      "forever-promise: pricing is Hidde's and undecided, stay vaguer"),
+    # A count typed into a string. Hidde, 2026-08-26, reading a Ko-fi bio I
+    # had written for him with "1,841 trees in 171 cities" in it: "dont use
+    # the number it will get outdated quickly and remember not to use it at
+    # static places." The website generates its counts on every build and
+    # qa.py's check_tree_count_claims guards them; a string inside a shipped
+    # binary regenerates never, so it starts going stale the day it ships and
+    # cannot be corrected without a release. Same for anything we hand to a
+    # place we do not build: an App Store description, a store screenshot, a
+    # sponsor bio, a social profile. Interpolated counts are fine and are the
+    # point, so this only sees literal digits.
+    (re.compile(r"\b\d{2,3}(?:[,.]\d{3})*\s+"
+                r"(?:trees|cities|countries|species|photographs|walks)\b", re.I),
+     "hardcoded count: it goes stale where nothing regenerates it; "
+     "interpolate it or leave the number out"),
     # The aphorism pretending to be help. A conclusion is not an instruction.
     (re.compile(r"\bThat is (?:how|what|why|the)\b", re.I),
      "aphorism: states a conclusion where the reader wants an instruction"),
