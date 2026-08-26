@@ -172,6 +172,39 @@ export function creditRequired(licenseStr?: string | null): boolean {
       || lic.includes("share-alike") || lic.includes("sharealike");
 }
 
+/** The photographer's name as it should be PRINTED, with the host dropped.
+ *
+ * "Foo Bar, via Wikimedia Commons" becomes "Foo Bar". CC BY and BY-SA ask for
+ * the author and the terms; the host is neither, and it doubled the length of
+ * every credit on the site while telling the reader nothing they needed (Hidde,
+ * 2026-08-21: "als de foto referentie subtieler kan", and on 2026-08-26, asked
+ * which of the two wordings wins: "ingekort natuurlijk").
+ *
+ * One implementation, because there were two: this rule lived in Swift and the
+ * website printed the long form, so the same photograph was credited two ways
+ * depending on which screen you held. The website calls this directly and the
+ * app reads its output from the feed as `attribution_short`.
+ *
+ * Where the host is all we have, it stays: a photograph with no attributable
+ * name still has to say where it came from.
+ */
+const CREDIT_HOSTS = [
+  ", via Wikimedia Commons", " via Wikimedia Commons", ", Wikimedia Commons",
+  ", via Flickr", ", via iNaturalist",
+];
+
+export function creditName(attribution?: string | null): string | null {
+  const raw = (attribution ?? "").trim();
+  if (!raw) return null;
+  for (const host of CREDIT_HOSTS) {
+    if (raw.endsWith(host)) {
+      const shorter = raw.slice(0, raw.length - host.length).trim();
+      return shorter || raw;
+    }
+  }
+  return raw;
+}
+
 export interface Photo {
   url?: string | null;
   license?: string | null;

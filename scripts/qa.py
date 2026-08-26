@@ -622,6 +622,18 @@ def check_faces_travel_to_the_app():
                                "a photograph. The face is decided on the server and "
                                "travels in the feed; read catalogue.face(...)"
                                % (f.relative_to(root), line_no))
+                # The credit's wording was the same failure one field along: the
+                # app trimmed the host out of the photographer's name while the
+                # website printed it in full, so one photograph carried two
+                # credits. Hidde picked the short one (2026-08-26, "ingekort
+                # natuurlijk"), creditName() owns it, and the feed carries the
+                # output as attribution_short. A host name in Swift means
+                # somebody has started trimming here again.
+                if "Wikimedia Commons" in line and "//" not in line.split("Wikimedia")[0]:
+                    out.append("%s:%d names a photo host in code. The credit is "
+                               "shortened by creditName() on the server and arrives "
+                               "as attribution_short; read Photo.name"
+                               % (f.relative_to(root), line_no))
     return out
 
 
