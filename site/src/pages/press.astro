@@ -7,7 +7,7 @@ import Base from "../layouts/Base.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { submitLink } from "../lib/tree-copy";
-import { pressNumbers } from "../lib/press";
+import { pressNumbers, nf } from "../lib/press";
 
 const n = pressNumbers();
 const canonical = `${BASE_URL}/press`;
@@ -32,7 +32,7 @@ const graph = [
   <h1>Press and data</h1>
   <p class="lede">Four in ten of the ancient trees we map in European cities are not European species: {n.nn} of {n.eu_trees}, across {n.nn_cities} of {n.eu_cities} cities. The most common of the lot is a tree that exists nowhere in the wild.</p>
   <div class="prose-block">
-    <p>Ancient Trees maps the oldest and most remarkable trees of the world's cities, one tree at a time, with sources recorded per tree. {n.trees} trees in {n.cities} cities across {n.countries} countries so far, {n.species} distinct species, {n.sourced} of them carrying their sources on the page.</p>
+    <p>Ancient Trees maps the oldest and most remarkable trees of the world's cities, one tree at a time, with sources recorded per tree. {nf(n.trees)} trees in {n.cities} cities across {n.countries} countries so far, {n.species} distinct species, {n.sourced} of them carrying their sources on the page.</p>
 
     <h2>Stories from the data</h2>
     <p><strong>August 2026: Europe's oldest city trees are mostly immigrants.</strong> {n.nn} of the {n.eu_trees} trees we map in European cities are species that are not native to Europe, and the commonest of all, the London plane ({n.plane} trees in {n.plane_cities} cities), exists nowhere in the wild. The individual arrivals carry the story: an ombu in Seville said to have come back with Christopher Columbus's son around 1529, Paris's oldest tree grown from seed posted out of the Appalachians in 1601, a London mulberry left over from a royal silk scheme that failed because silkworms will not eat black mulberry leaves. <a href="/collections/europes-oldest-trees-are-immigrants">The full list</a>.</p>
@@ -41,9 +41,9 @@ const graph = [
     <p>A local angle is one email away: for any of the {n.cities} cities we can supply that city's own fact sheet, its oldest tree, its story and what stands within a walk.</p>
 
     <h2>Press kit</h2>
-    <p>Boilerplate, one paragraph: <em>Ancient Trees (ancienttrees.app) maps the most remarkable old trees of the world's cities: {n.trees} trees in {n.cities} cities so far, each verified against at least two independent sources or an official monument register, each with its story, its exact spot and, where trees stand close enough, a walking route past them. The project publishes openly, uses openly licensed photography with credits, and treats an honest "approximately" as better than false precision.</em></p>
+    <p>Boilerplate, one paragraph: <em>Ancient Trees (ancienttrees.app) maps the most remarkable old trees of the world's cities: {nf(n.trees)} trees in {n.cities} cities so far, each verified against at least two independent sources or an official monument register, each with its story, its exact spot and, where trees stand close enough, a walking route past them. The project publishes openly, uses openly licensed photography with credits, and treats an honest "approximately" as better than false precision.</em></p>
     <p>Assets, free to reuse in coverage: <a href="/assets/logo.svg" download>the logo (SVG)</a> &middot; <a href="/assets/press/press-tree.png">a tree page</a> &middot; <a href="/assets/press/press-story.png">a data story</a>. More screenshots or a custom crop on request.</p>
-    <p>Tree photographs: {n.photos} of the {n.trees} trees carry a photograph under an open licence, most from Wikimedia Commons and iNaturalist. Each records its licence and required credit on the tree's own page, and the credit must travel with the image: a CC BY photograph published without attribution puts the licence in breach.</p>
+    <p>Tree photographs: {n.photos} of the {nf(n.trees)} trees carry a photograph under an open licence, most from Wikimedia Commons and iNaturalist. Each records its licence and required credit on the tree's own page, and the credit must travel with the image: a CC BY photograph published without attribution puts the licence in breach.</p>
 
     <h2>What this data is, and what it is not</h2>
     <p>It is a count of the trees we have published, not a census of every old tree in Europe. The map is denser where countries publish open tree registers and thinner where they do not, so coverage reflects data availability as much as it reflects trees. Ages are as sourced, and where sources disagree the tree's page says so rather than picking a winner. Locations are marked either confirmed or approximate, and the approximate ones say so next to the directions button, because sending someone to a spot where the tree is not is the one mistake this project cannot afford.</p>
