@@ -2,11 +2,11 @@
   "city": "Toronto",
   "country": "Canada",
   "status": "needs_curation",
-  "intro": "These four are spread across twenty kilometres of Toronto, so this is four outings rather than one afternoon. The city's official tree stands in Kew Gardens in the Beaches, a red oak 5.3 metres round with one long limb sagging to the grass. An oak planted on coronation day in 1937 sits at the centre of a ring of silver maples on the waterfront. Big Red holds a corner in Long Branch beside a cenotaph. The fourth is a Turkish hazel left over from a private nut farm in Islington.",
-  "meta_description": "Four heritage trees in Toronto: the city's official red oak in Kew Gardens, a coronation oak from 1937, Big Red in Long Branch, a nut farm survivor.",
-  "question_meta": "Toronto's oldest tree is the red oak in Kew Gardens, roughly 220 years old and 5.3 metres round. Where it stands, and three more to see.",
+  "intro": "These five are spread across twenty kilometres of Toronto, so this is several outings rather than one afternoon. The city's official tree stands in Kew Gardens, a red oak 5.3 metres round with one limb sagging to the grass. An oak planted on coronation day in 1937 sits at the centre of a ring of maples on the waterfront. Big Red holds a corner in Long Branch beside a cenotaph. A Turkish hazel survives a private nut farm in Islington, and six maples in Lambton were planted by grieving mothers on the first Remembrance Day, 1919.",
+  "meta_description": "Five heritage trees in Toronto: the city's official red oak in Kew Gardens, a coronation oak from 1937, Big Red in Long Branch, a WWI remembrance planting.",
+  "question_meta": "Toronto's oldest tree is the red oak in Kew Gardens, roughly 220 years old and 5.3 metres round. Where it stands, and four more to see.",
   "question_answer": "The oldest tree in Toronto is the northern red oak in Kew Gardens, in the Beaches, at 2075 Queen Street East. The city named it Toronto's official tree in 2022: its trunk measures 5.3 metres round, the crown reaches roughly 36 metres, and arborists read a diameter of 169 centimetres as an age of about 220 years, with an honest band running from 200 to 260. Nobody has cored it, so that band is the answer rather than a hedge, and it means the tree may or may not predate the founding of the town that became Toronto. Everything else on the corner arrived afterwards. Joseph Williams farmed the land from the 1850s and ran amusement grounds under these branches; the city bought the eight and a half hectares in 1907, and the creeks that once ran down to the lake here were culverted while the oak stood over them. Forests Ontario designated it a heritage tree in 2021 and a Heritage Toronto plaque went up in May 2023, which is late recognition for a tree that was already large when the first houses in the Beaches were built. A native plant garden now grows under the low limb, which hangs at shoulder height.",
-  "question_context": "Ontario has no government register of remarkable trees. What it has instead is the Ontario Heritage Tree Program run by Forests Ontario, a nomination-based designation, and that is where three of the four trees on this page come from; each was then checked against independent sources, a city page, a local historical society or a newspaper, because a nomination is a claim rather than a measurement. Every age here comes off a tape measure around a trunk and an assumed growth rate, with one exception: the King's Oak was planted on 12 May 1937 and its birthday is known to the day. Two figures on this page disagree and both are recorded rather than reconciled, because neither source explains how it measured: Forests Canada puts Big Red at 24 metres tall and a 2024 local report puts it at 33. One further caution about precision. The five heritage trees in Echo Valley Park share a single map coordinate between them, a site pin presented as five tree pins, which is why the Turkish hazel on this page is marked approximate. See the full list of four on the Toronto page.",
+  "question_context": "Ontario has no government register of remarkable trees. What it has instead is the Ontario Heritage Tree Program run by Forests Ontario, a nomination-based designation, and that is where all five trees on this page come from; each was then checked against independent sources, a city page, a local historical society or a newspaper. Most ages here come off a tape measure around a trunk and an assumed growth rate, with two exceptions: the King's Oak was planted on 12 May 1937 and the Lambton Park maples on 11 November 1919, both birthdays known to the day. Two figures on this page disagree and both are recorded rather than reconciled: Forests Canada puts Big Red at 24 metres tall and a 2024 local report puts it at 33. Two further cautions about precision. The five heritage trees in Echo Valley Park share a single map coordinate, a site pin presented as five tree pins, which is why the Turkish hazel here is marked approximate; the six Lambton Park maples share one register coordinate the same way. See the full list of five on the Toronto page.",
   "faq": [
     {
       "q": "What is the oldest tree in Toronto?",
@@ -14,15 +14,19 @@
     },
     {
       "q": "Can I see them all in one walk?",
-      "a": "No, and it would be a long day to try. Kew Gardens is in the Beaches, Coronation Park is on the waterfront by the CNE grounds, Big Red is in Long Branch and the Turkish hazel is in Echo Valley Park in Islington, which is twenty kilometres end to end. Each is a short walk from transit, so treat them as four separate outings."
+      "a": "No, and it would be a long day to try. Kew Gardens is in the Beaches, Coronation Park is on the waterfront by the CNE grounds, Big Red is in Long Branch, the Turkish hazel is in Echo Valley Park in Islington and the Lambton Park maples stand nearby in Lambton, which together span twenty kilometres end to end. Each is a short walk from transit, so treat them as separate outings."
     },
     {
       "q": "Are they free to visit?",
-      "a": "Yes, all four. Every one stands in a public park, and Coronation Park and the Long Branch corner are open at all hours."
+      "a": "Yes, all five. Every one stands on public ground, and Coronation Park and the Long Branch corner are open at all hours. The Lambton Park maples stand on the school's street frontage and are viewable from the public sidewalk without entering the schoolyard."
     },
     {
       "q": "Is the tree in Echo Valley Park easy to find?",
       "a": "No. George Corsan's surviving nut trees in that park are all on the heritage register under a single shared map coordinate, so the last part is a short hunt among them, and no published source says which is which. Nobody has reported a sighting since the 2017 nomination either. If you find it, tell us and we will fix the page."
+    },
+    {
+      "q": "Why are six trees counted as one entry?",
+      "a": "The Lambton Park maples, two silver and four Norway, were all planted the same day for the same twelve names and share one register coordinate rather than six surveyed positions. We list them as a single collectible point rather than pretend to six separate pins we cannot back up."
     }
   ],
   "hero_tree_id": "tro_001",
@@ -166,6 +170,36 @@
         "status": "missing"
       },
       "how_to_recognise": "Hard. All five of Corsan's nut trees share one map pin, so expect a short hunt, and nobody has published which of the five is which. If you work it out, tell us.",
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "tro_005",
+      "name": "The Lambton Park Remembrance Trees",
+      "species": "Silver Maple and Norway Maple (Acer saccharinum and Acer platanoides)",
+      "age_estimate": "107 years, planted 11 November 1919",
+      "age_min": 107,
+      "age_max": 107,
+      "location": {
+        "address": "Lambton Park Community School, 50 Bernice Crescent, Toronto",
+        "latitude": 43.6673,
+        "longitude": -79.4981,
+        "neighbourhood": "Lambton"
+      },
+      "story": "Twelve local men from this part of Toronto died in the First World War. Six trees went into the ground for them on 11 November 1919, the very first Remembrance Day, planted on the lawn in front of Lambton Park Community School.\n\nTwo silver maples and four Norway maples went in with a silver-plated shovel, because the two men invited to turn the first sod, Princes Edward and Albert of England, could not make the crossing. The mothers of the fallen planted the trees themselves instead.\n\nFor most of a century the planting sat unmarked. Bonita Nelson, a descendant of two of the twelve, Reginald Gage and Sydney Moyle, nominated the trees for heritage status in 2016, and a plaque inside the school now carries all twelve names.\n\nThe register places the six trees along the school's Bernice Crescent frontage, reachable from the public sidewalk without stepping onto school grounds. The last confirmed sighting is the 2016 nomination itself, so ask at the school if you want certainty before you go, and tell us what you find. A tree planted for twelve names deserves better than an unconfirmed pin.",
+      "verified_sources": [
+        "https://services5.arcgis.com/aGI9Mx1pvNKY7ehV/arcgis/rest/services/Heritage_Tree_Map_V2_WFL1/FeatureServer/2",
+        "https://www.yourleaf.org/blog/brenna-anstett/nov-22-2016/first-remembrance-day-trees-honour-fallen-ww1-soldiers"
+      ],
+      "access": "Free. The six trees stand at the front of Lambton Park Community School facing Bernice Crescent, on the street-facing frontage, viewable and reachable from the public sidewalk without entering school grounds.",
+      "transport": "TTC bus 40 (Junction-Dundas West) or 79 (Scarlett Rd) on Dundas St West at Scarlett Road, short walk to Bernice Crescent.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Six maples in a row along the school's Bernice Crescent frontage, two silver and four Norway. No published photo distinguishes one from another; all six commemorate the same twelve names.",
       "curation_status": "flagged",
       "location_precision": "approximate"
     }
