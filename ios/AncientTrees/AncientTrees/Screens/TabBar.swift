@@ -77,32 +77,42 @@ struct TabBar: View {
     var collect: () -> Void = {}
 
     var body: some View {
-        HStack(spacing: 12) {
-            HStack(spacing: 0) {
+        HStack(spacing: 10) {
+            HStack(spacing: 4) {
                 ForEach(Array(Self.items.enumerated()), id: \.offset) { i, item in
                     Button { select(i) } label: {
                         VStack(spacing: 3) {
                             Image(systemName: item.symbol)
-                                .font(.system(size: 22, weight: .regular))
+                                .font(.system(size: 21, weight: .regular))
                                 .environment(\.symbolVariants, i == selected ? .fill : .none)
-                                .frame(height: 26)
+                                .frame(height: 24)
                             Text(item.title)
                                 .font(.system(size: 11,
                                               weight: i == selected ? .semibold : .regular))
+                                .lineLimit(1)
                         }
                         // MONOCHROME, and that is the reference rather than a
                         // preference (Hidde, 2026-08-26: "flikker op met dat
                         // hele groen, maak het gewoon zwart-wit en zoals zij
-                        // doen met dat grijze overlay"). Polarsteps' bar has
-                        // no brand colour in it at all: the selected item is
-                        // simply darker and filled, and everything else is
-                        // grey. A green tab in a glass bar was our colour
-                        // asking for attention the bar does not need, and the
-                        // green is still doing its job two centimetres away on
-                        // the camera.
-                        .foregroundStyle(i == selected ? Brand.ink : Brand.inkSoft.opacity(0.75))
+                        // doen met dat grijze overlay").
+                        .foregroundStyle(i == selected ? Brand.ink : Brand.inkSoft.opacity(0.8))
                         .frame(maxWidth: .infinity)
-                        .frame(height: 52)
+                        .frame(height: 50)
+                        // THE SECOND COLOUR, which is the part he asked for by
+                        // name (2026-08-26: "ze hebben een tweede kleur extra
+                        // die om het icoon zit naast de fill om aan te geven
+                        // waar je zit"). Polarsteps says the selected tab
+                        // twice: the glyph fills AND a lighter pill sits
+                        // behind the whole item. Filling alone is a small
+                        // difference at a glance on a bar this size, and the
+                        // pill is what makes it readable without looking.
+                        .background {
+                            if i == selected {
+                                Capsule()
+                                    .fill(Brand.ground.opacity(0.92))
+                                    .shadow(color: .black.opacity(0.06), radius: 3, y: 1)
+                            }
+                        }
                         .contentShape(.rect)
                     }
                     .buttonStyle(.plain)
@@ -111,32 +121,40 @@ struct TabBar: View {
                     .accessibilityAddTraits(i == selected ? [.isSelected, .isButton] : .isButton)
                 }
             }
-            // GLASS, not a painted capsule. Polarsteps floats a frosted bar
-            // over the content and lets what is behind it show through, which
-            // is why the bar reads as hovering rather than as a floor. iOS
-            // gives us the same material its own bars use.
-            .background(.regularMaterial, in: .capsule)
-            .overlay(Capsule().strokeBorder(.white.opacity(0.35), lineWidth: 0.5))
-            .shadow(color: .black.opacity(0.12), radius: 12, y: 3)
+            .padding(4)
+            // A GREY BAR, not a white one. `.regularMaterial` alone renders
+            // nearly white over a pale map, so the pill behind the selected
+            // item had nothing to stand out against; the reference bar is
+            // visibly grey and its selected pill is the light thing on it.
+            // A thin wash of ink over the material gives that without
+            // hardcoding a colour that would be wrong in the dark.
+            .background {
+                Capsule().fill(.regularMaterial)
+                Capsule().fill(Brand.ink.opacity(0.06))
+            }
+            .overlay(Capsule().strokeBorder(.white.opacity(0.25), lineWidth: 0.5))
+            .shadow(color: .black.opacity(0.10), radius: 10, y: 3)
 
-            // The deed, on its own disc beside the bar, in the same glass. It
-            // is separated by distance rather than by colour, which is how the
-            // reference does it: a button that makes something does not belong
-            // in a row of places.
+            // The deed, on its own disc, the same height as the bar so the two
+            // read as one row rather than as a bar with something stuck beside
+            // it. Same glass, same grey, same edge.
             Button(action: collect) {
                 Image(systemName: "camera.fill")
                     .font(.system(size: 21, weight: .semibold))
                     .foregroundStyle(Brand.ink)
                     .frame(width: 58, height: 58)
-                    .background(.regularMaterial, in: .circle)
-                    .overlay(Circle().strokeBorder(.white.opacity(0.35), lineWidth: 0.5))
-                    .shadow(color: .black.opacity(0.14), radius: 12, y: 3)
+                    .background {
+                        Circle().fill(.regularMaterial)
+                        Circle().fill(Brand.ink.opacity(0.06))
+                    }
+                    .overlay(Circle().strokeBorder(.white.opacity(0.25), lineWidth: 0.5))
+                    .shadow(color: .black.opacity(0.10), radius: 10, y: 3)
             }
             .buttonStyle(.plain)
             .accessibilityLabel("Collect a tree")
             .accessibilityIdentifier("tab-collect")
         }
-        .padding(.horizontal, 14)
+        .padding(.horizontal, 12)
         .padding(.bottom, 4)
     }
 }
