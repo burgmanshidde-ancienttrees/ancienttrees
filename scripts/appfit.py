@@ -403,6 +403,17 @@ def run_test(device, scratch):
          "CODE_SIGN_IDENTITY="],
         cwd=APP_DIR, capture_output=True, text=True)
 
+    # ONE SIMULATOR BOOTED AT A TIME. xcodebuild boots the destination and
+    # leaves it booted, so walking two phones meant the second one started
+    # while the first was still running, and the runner cannot carry two.
+    # That is not a guess: the workflow's own test step already records this
+    # exact failure and its cause ("two apps launching at once took 60 to 110
+    # seconds each and then 'did not have a process ID'"), and it is why the
+    # layout gate went red in CI on 2026-08-26 while passing on every desk,
+    # because a desk runs `--device` and measures one phone.
+    subprocess.run(["xcrun", "simctl", "shutdown", udid],
+                   capture_output=True, text=True)
+
     found = sorted(device_dir.rglob(DUMP_NAME), key=lambda p: p.stat().st_mtime)
     if not found:
         for line in (r.stdout + r.stderr).splitlines():
