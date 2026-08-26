@@ -38,13 +38,25 @@ struct CollectionMap: View {
     }
 
     var body: some View {
-        Group {
-            if let image {
-                Image(uiImage: image).resizable().aspectRatio(contentMode: .fill)
-            } else {
-                Brand.surfaceMuted
+        // AN EMPTY BOX WITH THE PICTURE LAID OVER IT, never a bare .fill
+        // image. A resizable image set to fill reports the size it wants
+        // rather than the size it is given, so it drags whatever holds it
+        // sideways: here it made the sheet lying over this map about three
+        // screens wide, and My trees arrived on Hidde's phone with its stats
+        // row off both edges ("de mytrees pagina is helemaal stuk").
+        //
+        // TreeDetail's hero already carries this same note from the same
+        // trap. An overlay takes no part in layout at all, which is the only
+        // version that cannot do it again.
+        Color.clear
+            .overlay {
+                if let image {
+                    Image(uiImage: image).resizable().aspectRatio(contentMode: .fill)
+                } else {
+                    Brand.surfaceMuted
+                }
             }
-        }
+            .clipped()
         .overlay {
             // The pins, drawn over the snapshot rather than into it, because
             // the snapshotter draws our own style and not our own trees.

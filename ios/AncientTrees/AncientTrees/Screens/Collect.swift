@@ -529,7 +529,27 @@ struct CollectView: View {
         }
     }
 
-    private var statsRow: some View { statsCard }
+    /// The numbers as the reference has them: bare on the sheet, separated by
+    /// hairlines, no card around them (Hidde, 2026-08-26: "kijk goed naar die
+    /// pagina van polarsteps en maak m na"). A card here made them read as a
+    /// widget sitting ON your page; without it they read as facts ABOUT you,
+    /// which is what they are and what Polarsteps gets right.
+    private var statsRow: some View {
+        VStack(spacing: 10) {
+            HStack(spacing: 0) {
+                tile("\(collectedCount)", "Trees")
+                Divider().frame(height: 34)
+                tile("\(collectedSpecies.count)", "Species")
+                Divider().frame(height: 34)
+                tile("\(countries)", countries == 1 ? "Country" : "Countries")
+            }
+            Text(sightings.yoursOnly.isEmpty
+                 ? "Out of \(catalogue.trees.count.formatted(.number.locale(Locale(identifier: "en_US")))) trees we map in \(Set(catalogue.trees.map(\.country)).count) countries."
+                 : "\(allVisited.count) from the map we keep, \(sightings.yoursOnly.count) only you have.")
+                .font(.caption).foregroundStyle(Brand.inkSoft)
+                .frame(maxWidth: .infinity, alignment: .leading)
+        }
+    }
 
     private var statsCard: some View {
         VStack(spacing: 14) {
