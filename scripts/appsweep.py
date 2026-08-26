@@ -139,6 +139,7 @@ def screens(sub):
         ("paywall",       ["-tab=0", "-paywall"], 5),
         ("primer",        ["-tab=0", "-primer"], 5),
         ("contribute",    ["-tab=4", "-contribute"], 5),
+        ("feedback",      ["-tab=4", "-feedback"], 5),
     ]
     names = [p[0] for p in plan]
     dupes = sorted({n for n in names if names.count(n) > 1})

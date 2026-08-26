@@ -16,13 +16,14 @@ import Foundation
 
 public enum Submission {
     public enum Kind: String, CaseIterable, Identifiable, Sendable {
-        case tree, city, correction
+        case tree, city, correction, feedback
         public var id: String { rawValue }
         public var label: String {
             switch self {
             case .tree: "A tree we are missing"
             case .city: "A place we should map"
             case .correction: "Report a problem"
+            case .feedback: "An idea for the app"
             }
         }
     }
