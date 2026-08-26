@@ -18,6 +18,9 @@ struct CollectionMap: View {
     let points: [(lat: Double, lng: Double)]
 
     @State private var image: UIImage?
+    /// The size the picture in hand was drawn for, so a rotation or a new
+    /// sheet height redraws rather than stretching what is there.
+    @State private var rendered: CGSize = .zero
 
     /// The middle of everything you have, and how far apart the furthest two
     /// are, which together decide the frame.
@@ -38,44 +41,36 @@ struct CollectionMap: View {
     }
 
     var body: some View {
-        // AN EMPTY BOX WITH THE PICTURE LAID OVER IT, never a bare .fill
-        // image. A resizable image set to fill reports the size it wants
-        // rather than the size it is given, so it drags whatever holds it
-        // sideways: here it made the sheet lying over this map about three
-        // screens wide, and My trees arrived on Hidde's phone with its stats
-        // row off both edges ("de mytrees pagina is helemaal stuk").
-        //
-        // TreeDetail's hero already carries this same note from the same
-        // trap. An overlay takes no part in layout at all, which is the only
-        // version that cannot do it again.
-        Color.clear
-            .overlay {
-                if let image {
+        // MEASURED, then rendered at that size. It used to ask the snapshotter
+        // for a 190 point strip because that is what the old card was, and the
+        // page now shows it full screen: a 190 point image stretched over 800
+        // is the blur Hidde saw ("die kaart ziet er helemaal kak en pixelig
+        // uit"), and the pins drawn over it landed nowhere near their trees
+        // because the frame they were placed in was not the frame on screen.
+        GeometryReader { geo in
+            ZStack {
+                if let image, rendered == geo.size {
                     Image(uiImage: image).resizable().aspectRatio(contentMode: .fill)
                 } else {
                     Brand.surfaceMuted
                 }
-            }
-            .clipped()
-        .overlay {
-            // The pins, drawn over the snapshot rather than into it, because
-            // the snapshotter draws our own style and not our own trees.
-            GeometryReader { geo in
                 ForEach(Array(points.enumerated()), id: \.offset) { _, p in
                     Circle()
                         .fill(Brand.moss)
                         .overlay(Circle().strokeBorder(.white, lineWidth: 1.5))
-                        .frame(width: 10, height: 10)
+                        .frame(width: 11, height: 11)
                         .position(place(p, in: geo.size))
                 }
             }
-        }
-        .task(id: points.count) {
-            let w = UIScreen.main.bounds.width - 40
-            let f = frame
-            image = await MapThumb.snapshot(lat: f.lat, lng: f.lng,
-                                            size: CGSize(width: w, height: 190),
-                                            meters: f.meters)
+            .frame(width: geo.size.width, height: geo.size.height)
+            .clipped()
+            .task(id: "\(geo.size.width)x\(geo.size.height)x\(points.count)") {
+                let f = frame
+                let shot = await MapThumb.snapshot(lat: f.lat, lng: f.lng,
+                                                   size: geo.size, meters: f.meters)
+                if shot != nil { rendered = geo.size }
+                image = shot
+            }
         }
     }
 

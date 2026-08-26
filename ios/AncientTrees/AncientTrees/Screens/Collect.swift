@@ -375,9 +375,7 @@ struct CollectView: View {
         // still showing. Extending the fill into the top safe area is what
         // every pinned control on iOS does, and it costs nothing anywhere
         // else: below the top the extra fill is off screen.
-        .background {
-            Brand.ground.ignoresSafeArea(edges: .top)
-        }
+        .background(Brand.ground)
     }
 
     /// Everything the picker switches, rebuilt rather than reshuffled.
@@ -455,7 +453,13 @@ struct CollectView: View {
             .frame(width: 62, height: 62)
 
             VStack(alignment: .leading, spacing: 2) {
-                Text(profiles.me?.display_name ?? account.email ?? "Your trees")
+                // The part before the @ rather than the whole address
+                // truncated in the middle, which rendered as "burgma...ail.com"
+                // on his own phone and reads as a bug rather than as a name.
+                // Signed out it says what the page is.
+                Text(profiles.me?.display_name
+                     ?? account.email?.split(separator: "@").first.map(String.init)
+                     ?? "Your trees")
                     .font(.brand(19, .bold, relativeTo: .title3))
                     .foregroundStyle(Brand.ink)
                     .lineLimit(1).truncationMode(.middle)
