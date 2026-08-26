@@ -151,6 +151,21 @@ struct TreeDetail: View {
                 // anything, because these are not the reader's trees to edit:
                 // every item opens the report we already have, prefilled with
                 // this tree, which is the channel Step 0b already processes.
+                // A GAP THAT SPLITS THE GLASS. iOS 26 gathers trailing toolbar
+                // items into one capsule, so share and report shared a pill
+                // while the back button and the camera on the photograph each
+                // wore their own circle. Three controls on one screen drawn
+                // two different ways is the inconsistency he saw. A
+                // ToolbarSpacer is the platform's own way to break the group,
+                // and it lands on the convention every reference uses over a
+                // hero image: one round button per control, evenly spaced.
+                // Guarded, because this app runs from iOS 18 and the spacer
+                // arrived in 26. On 18 there is nothing to split: that older
+                // toolbar draws no glass around a group, so the two controls
+                // already read as two.
+                if #available(iOS 26.0, *) {
+                    ToolbarSpacer(.fixed, placement: .topBarTrailing)
+                }
                 ToolbarItem(placement: .topBarTrailing) {
                     Menu {
                         Button { report("Something here is wrong:") } label: {
@@ -176,10 +191,11 @@ struct TreeDetail: View {
                         // The menu on a tree somebody added themselves keeps
                         // its ellipsis, because that one really is edit and
                         // remove.
+                        // Sized by the toolbar, not by us: see ShareTo.swift
+                        // for why a hand-rolled 44 point box inside a toolbar
+                        // item is what pushed these two apart.
                         Image(systemName: "exclamationmark.bubble")
                             .font(.system(size: 17, weight: .semibold))
-                            .frame(width: 44, height: 44)
-                            .contentShape(.rect)
                     }
                     .accessibilityIdentifier("ours-menu")
                     .accessibilityLabel("Report a problem")
@@ -220,8 +236,6 @@ struct TreeDetail: View {
                     } label: {
                         Image(systemName: "ellipsis.circle")
                             .font(.system(size: 17, weight: .semibold))
-                            .frame(width: 44, height: 44)
-                            .contentShape(.rect)
                     }
                     .accessibilityIdentifier("mine-menu")
                     .accessibilityLabel("More")
