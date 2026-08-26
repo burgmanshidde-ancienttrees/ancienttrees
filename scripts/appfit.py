@@ -101,7 +101,12 @@ SYSTEM_LABELS = {"Sheet Grabber", "Legal"}
 # and a shift key starting 4.5 points in. Both are Apple's, on a view we do not
 # lay out and cannot change, and a check that reports the keyboard on every
 # search screen forever is a check people learn to skim.
-NOT_OURS = ("Map", "TabBar", "NavigationBar", "Keyboard", "KeyboardKey")
+# A Form is Apple's too. Its section headers sit at 16 while our own pages
+# start their content at 20, which is not a drift anybody introduced: it is the
+# inset UIKit has used for grouped tables since before SwiftUI existed, and it
+# is what every Settings screen on the phone looks like.
+NOT_OURS = ("Map", "TabBar", "NavigationBar", "Keyboard", "KeyboardKey",
+            "Table", "CollectionView")
 
 # And Apple's onboarding overlays, which are not INSIDE the Keyboard element at
 # all: the QuickPath introduction ("Speed up your typing by sliding your finger
@@ -319,6 +324,15 @@ def check(screen):
                              f"so {el.right - W:.0f} points are off the edge"))
 
         min_tap = MIN_TAP * screen.get("scale", 1.0)
+        # APPLE'S OWN SEGMENTED CONTROL IS 32 POINTS TALL and always has been:
+        # it is the height UIKit ships, the height Photos, Files and the App
+        # Store all show, and it cannot be made 44 without drawing our own.
+        # Reporting it, and its segments, means three findings on every screen
+        # that carries one, forever, about a control nobody here laid out.
+        # This is the same judgement as the keyboard above rather than a new
+        # one: the gate is about OUR geometry.
+        if el.type == "SegmentedControl" or inside(el, ("SegmentedControl",)):
+            continue
         if el.type in TAPPABLE and (el.w < min_tap - SAME or el.h < min_tap - SAME):
             findings.append(("SMALL", el,
                              f"{el.w:.0f} by {el.h:.0f}, under Apple's 44 by 44"))

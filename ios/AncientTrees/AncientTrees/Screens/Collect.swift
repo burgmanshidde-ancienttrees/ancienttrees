@@ -37,7 +37,11 @@ struct CollectView: View {
 
     @State private var signingIn = false
     @State private var showAllStamps = false
-    @State private var lane: Lane = .want
+    /// OPENS ON YOUR OWN TREES, not on the wishlist (Hidde, 2026-08-26: "ik
+    /// zou daar op openen, niet op favourites"). The page is called My trees
+    /// and the trees that are yours are the ones you photographed; a list of
+    /// things you have not seen yet is the second question, not the first.
+    @State private var lane: Lane = .seen
     /// Debug scaffolding, the same family as -tab and -contribute: the sweep
     /// cannot tap a gear, and a screen no argument can open is a screen that
     /// ships unlooked at.
@@ -198,12 +202,18 @@ struct CollectView: View {
     @ViewBuilder private var sheetBody: some View {
         VStack(alignment: .leading, spacing: 20) {
             if allVisited.isEmpty && saved.favourites.isEmpty { mission }
-            if !account.isSignedIn && saved.savedCount > 0 { backupBar }
+            // YOUR TREES FIRST, the nudge after. The sign-in card sat above
+            // the list and pushed the thing this page exists for below the
+            // fold, so at half height you saw your numbers, an invitation to
+            // sign in, and none of your trees.
             if !saved.entries.isEmpty || !sightings.yoursOnly.isEmpty {
                 lanePicker
                 laneContent
             }
-            Color.clear.frame(height: 90)
+            if !account.isSignedIn && saved.savedCount > 0 { backupBar }
+            // Clear of the floating bar, which is 52 tall plus its own
+            // padding and would otherwise sit over the last card.
+            Color.clear.frame(height: 96)
         }
         .padding(.horizontal, 20)
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -358,8 +368,14 @@ struct CollectView: View {
             // maken"). A heart is not a plan: people heart a tree they have
             // already seen and want to keep, which is exactly why the two
             // lists are independent now.
+            // "My trees", not "Collected" (Hidde, 2026-08-26: "collected als
+            // woord wordt my trees, en je voegt een boom toe aan je trees door
+            // er een foto van te maken"). Collected described the mechanism;
+            // his word describes what you end up with, and it is the same word
+            // the tab wears, which is the point rather than a clash: this list
+            // IS the page.
+            Text("My trees").tag(Lane.seen)
             Text("Favourites").tag(Lane.want)
-            Text("Collected").tag(Lane.seen)
         }
         .pickerStyle(.segmented)
         .accessibilityIdentifier("collect-lane")
@@ -402,7 +418,7 @@ struct CollectView: View {
             if list.isEmpty {
                 Text(lane == .want
                      ? "No favourites yet. Tap a heart anywhere to keep a tree here."
-                     : "Nothing collected yet. Photograph a tree with the button above, ours or one only you know.")
+                     : "You add a tree here by photographing it. Tap the camera and stand in front of one.")
                     .font(.subheadline).foregroundStyle(Brand.inkSoft)
                     .padding(.top, 4)
             } else {

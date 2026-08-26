@@ -298,13 +298,16 @@ struct TreeDetail: View {
                 }
                 .clipShape(.rect(cornerRadius: 16))
                 .overlay(alignment: .bottomTrailing) {
+                    // THE SAME CONTROL, POINTING THE OTHER WAY (Hidde,
+                    // 2026-08-26: "dan wil je die actie om terug te gaan naar
+                    // de foto precies dezelfde UI geven als hoe de map wordt
+                    // getoond op de foto, en dan met een preview van de foto
+                    // als je die hebt"). A rounded thumbnail in the corner
+                    // going one way and a round icon coming back is two
+                    // controls for one swap; the same shape both ways says
+                    // "these two trade places", which is the whole idea.
                     Button { withAnimation(.easeInOut(duration: 0.22)) { showingMap = false } } label: {
-                        Image(systemName: "photo.fill")
-                            .font(.system(size: 16, weight: .semibold))
-                            .foregroundStyle(Brand.ink)
-                            .frame(width: 44, height: 44)
-                            .background(.regularMaterial, in: .circle)
-                            .padding(10)
+                        photoInset.padding(10)
                     }
                     .buttonStyle(.plain)
                     .accessibilityIdentifier("tree-photo-swap")
@@ -314,7 +317,7 @@ struct TreeDetail: View {
                     // The way to the FULL map is still here, because seeing it
                     // in the corner of a page and standing on it are different
                     // needs.
-                    Button { navigator.showOnMap = tree.id } label: {
+                    Button { navigator.push = .treeMap(tree.id) } label: {
                         Image(systemName: "arrow.up.left.and.arrow.down.right")
                             .font(.system(size: 14, weight: .semibold))
                             .foregroundStyle(Brand.ink)
@@ -436,7 +439,6 @@ struct TreeDetail: View {
                         }
                     }
                 }
-                .padding(.horizontal, 2)
             }
         }
         .padding(.top, 4)
@@ -592,6 +594,11 @@ struct TreeDetail: View {
                 fact(tree.commonName, "Species", chevron: true)
             }
             .buttonStyle(.plain)
+            // On the BUTTON, not on its label: the label's own frame does not
+            // give the button a hit area, which is why the gate still read
+            // 42 by 34 after the first attempt.
+            .frame(minHeight: 44)
+            .contentShape(.rect)
             .accessibilityIdentifier("tree-species-fact")
             Divider().frame(height: 34)
             fact(tree.precision == .confirmed ? "Exact" : "Approximate", "Pin")
@@ -801,18 +808,49 @@ struct TreeDetail: View {
     /// with no photograph, and 1077 of our 1435 trees are in that state. Asking
     /// here beats a row in settings, and it measures demand for the feature
     /// exactly where somebody would use it.
+    /// The photograph as a thumbnail, drawn exactly as MapInset draws the map:
+    /// 72 points, a 10 point radius, a white edge and a soft shadow. When
+    /// there is no photograph it shows the species mark on the muted surface,
+    /// which is what the page shows full size in that case.
+    @ViewBuilder private var photoInset: some View {
+        Group {
+            if let m = mine, let shot = sightings.image(m) {
+                Image(uiImage: shot).resizable().aspectRatio(contentMode: .fill)
+            } else if let p = tree.photo, let url = p.card {
+                AsyncImage(url: url) { img in
+                    img.resizable().aspectRatio(contentMode: .fill)
+                } placeholder: { Brand.surfaceMuted }
+            } else {
+                ZStack {
+                    Brand.surfaceMuted
+                    SpeciesMark(species: tree.species, color: Brand.inkSoft.opacity(0.5))
+                        .frame(width: 30, height: 30)
+                }
+            }
+        }
+        .frame(width: 72, height: 72)
+        .clipShape(.rect(cornerRadius: 10))
+        .overlay { RoundedRectangle(cornerRadius: 10).strokeBorder(.white.opacity(0.9), lineWidth: 2) }
+        .shadow(color: .black.opacity(0.18), radius: 4, y: 2)
+    }
+
     /// The camera, in the corner of the photograph, on every tree of ours and
     /// in the same place whether or not there is a picture already (Hidde,
     /// 2026-08-26: "die knop moet overal gelijk zijn"). Google Maps and Apple
     /// Maps both hang it on a place's image header exactly like this; a
     /// control that moves or disappears is one nobody learns to look for.
     @ViewBuilder private var addPhotoButton: some View {
-        if mine == nil {
+        // ONLY WHERE THERE IS NO PHOTOGRAPH (Hidde, 2026-08-26: "de camera-
+        // actie links bovenin die foto moet alleen staan als er nog geen foto
+        // is"). On a tree that already has one it was a second camera two
+        // centimetres from the one in the bar, and the bar is where he wants
+        // the act promoted.
+        if mine == nil, tree.photo == nil {
             Button { navigator.collectNearby = true } label: {
                 Image(systemName: "camera.fill")
                     .font(.system(size: 15, weight: .semibold))
                     .foregroundStyle(Brand.ink)
-                    .frame(width: 40, height: 40)
+                    .frame(width: 44, height: 44)
                     .background(.regularMaterial, in: .circle)
                     .padding(10)
             }
@@ -862,6 +900,24 @@ struct TreeDetail: View {
             // is the convention rather than a choice: Google Maps and Apple
             // Maps both hang the camera on the image header of a place, in the
             // same corner, whether the place has pictures or not.
+            // THE MAIN ACT, on every tree page (Hidde, 2026-08-26: "op alle
+            // detailpagina's moet rechts van het hartje die camera staan, want
+            // de main actie die we overal willen promoten is dat mensen foto's
+            // maken"). Same circle as the heart, same size, same border: two
+            // things you can do to a tree, drawn as two of the same control.
+            if mine == nil {
+                Button { navigator.collectNearby = true } label: {
+                    Image(systemName: "camera")
+                        .font(.title3)
+                        .foregroundStyle(Brand.moss)
+                        .frame(width: 52, height: 52)
+                        .background(Brand.surface, in: .circle)
+                        .overlay { Circle().strokeBorder(Brand.hairline, lineWidth: 1) }
+                }
+                .buttonStyle(.plain)
+                .accessibilityIdentifier("tree-add-photo-bar")
+                .accessibilityLabel("Photograph this tree")
+            }
             SaveHeart(tree: tree, look: .inBar)
         }
         // The same 20 as the page's content above it; at 16 the bar began
