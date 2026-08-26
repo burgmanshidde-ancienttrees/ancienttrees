@@ -107,6 +107,34 @@ bedenken" for Plus. The feedback button (built 2026-08-26) is the instrument:
 the open wishes it collects are the material the next Plus features get
 designed from.
 
+## The freeze, and the four legs (answering his corner fear, 2026-08-26)
+
+His fear, in his words: do we paint ourselves into a corner "waar niemand
+ooit meer wil betalen en we niet genoeg vlees overhouden voor een
+substantieel plusabonnement"? The arithmetic that makes it concrete: at
+€19.95/year and a normal 2% conversion, €2,000/month needs ~1,200 members,
+so ~60,000 active users. The corner is real IF the subscription must carry
+everything and IF free keeps absorbing every new feature.
+
+Two answers, both policy rather than hope:
+
+**The freeze: the free app is FINISHED at launch scope.** From launch day,
+every new feature defaults to Plus unless it feeds the flywheel (brings in
+data or users). Walks and season were held back today by instinct; this
+makes it the rule. The paid shelf then grows with every month of building,
+which is the real answer to "genoeg vlees".
+
+**The four legs: subscription is one revenue leg, not the model.** Plus
+(walks, season, alerts) for the heavy user; one-time trip purchases ("the
+walks of Rome, €4.99", the Komoot map-pack model) for the tourist who never
+subscribes; the printed tree passport for collectors; tourism boards and
+city marketing as B2B later. With more legs the per-user sum multiplies and
+the 60,000-user threshold falls away.
+
+The honest floor under all of it (hard rule 6): if six to twelve free months
+show the audience simply is not there, no pricing model would have saved it,
+and the free launch was also the cheapest way to learn that.
+
 ## The earlier open choice: feature line or geography line
 
 **Feature line** (the current recorded shape, revised): free = everything
