@@ -118,8 +118,15 @@ const otherCities = others.filter((o) => o.slug !== cslug).slice(0, 6);
         2026-08-26: the walks are the Plus product (DECISIONS.md, "every tree
         free, the walks are Plus"), and a page that hands out the whole route
         undercuts it. What stays is honest teaser material: each walk's name,
-        its numbers, and where it begins. The route data itself is untouched
-        in the feed; the app is where it lives from here. */}
+        its numbers, and where it begins and ends. The route data itself is
+        untouched in the feed, and the walk is what Plus introduces when it
+        opens.
+
+        NO SENTENCE HERE POINTS AT THE APP, deliberately. The launch build
+        hides walks (Kit/Launch.swift), so "the full route is in the app"
+        would promise the reader something the app does not do, which is the
+        one thing the never-cuttable list forbids. When Plus opens with the
+        walks, this is the place to say so. */}
     {walks.map((w) => (
       <section class="prose-block">
         <h2>{w.name}</h2>
@@ -127,8 +134,8 @@ const otherCities = others.filter((o) => o.slug !== cslug).slice(0, 6);
           {w.trees.length} trees · about {w.km} km · {w.duration} on foot
         </p>
         <p>
-          Begins at <a href={`/${cslug}/${tslugs[w.trees[0].id]}`}>{w.trees[0].name}</a>{w.trees[0].species ? ` (${w.trees[0].species})` : ""}.
-          The full route, tree by tree, is in the Ancient Trees app.
+          Begins at <a href={`/${cslug}/${tslugs[w.trees[0].id]}`}>{w.trees[0].name}</a>{w.trees[0].species ? ` (${w.trees[0].species})` : ""}
+          {w.trees.length > 1 && <Fragment> and ends at <a href={`/${cslug}/${tslugs[w.trees[w.trees.length - 1].id]}`}>{w.trees[w.trees.length - 1].name}</a></Fragment>}.
         </p>
       </section>
     ))}
