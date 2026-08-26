@@ -11,6 +11,24 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 <!-- archive-index -->
 
 
+## 2026-08-26 (session) - Toronto +1, a Turkey Oak species page, two submissions closed out
+
+`visitors.py`: 412 visits, 670 page views over the last 7 days, roughly flat day to day (42-74). `prepare.py`: 42 cities staged for verify, 3 trees awaiting a writer (bari, blocked below the 4-tree floor, unchanged from prior sessions).
+
+**Rung 1 (submissions):** two unprocessed rows. Id 38 was vote-undo bookkeeping, marked processed with no reply. Id 37 was a `kind: tree` tip for Baarn with only GPS and the word "Boom", no species or name; it geocodes to a private house address near the Pekingtuin rather than a park, so it could not be placed as a candidate. Set `open_question` outcome with a reply asking what it is and whether it's visible from the road. Detail in CURATION.md.
+
+**Rung 2 (health.py):** iOS app CI was red, but the commit history and an in-progress workflow run made it obvious another session was actively iterating on `ios/` in real time (many commits and CI runs in the hours before this one, one push mid-session by Hidde himself). Left it alone rather than risk the checkout collision CLAUDE.md already warns about; did not touch `ios/` at all this session.
+
+**Rung 4/shelf work:** `pagegaps.py` had exactly one gap, a Turkey Oak (Quercus cerris) species page for 3 already-published trees in Caserta, Genoa and Utrecht. Written from their own stories and shipped.
+
+Dispatched a `verify` pass on Toronto (rank 45, 4/30 trees, 13 leads.py-"ready" candidates that turned out thinner than the label suggests, per the standing caution). It delivered one tree: six register-listed maples (2 silver, 4 Norway) at Lambton Park Community School, all planted 11 November 1919 by the mothers of twelve local WWI dead on the very first Remembrance Day, folded into one entry per the twin/group rule, access confirmed as street frontage rather than schoolyard interior. Wrote the story myself rather than dispatching a full write-stories pass for one tree, merged it as tro_005, updated the city's intro/meta/FAQ counts from four to five. Build, preflight and qa clean.
+
+The same pass blocked one candidate (24 Humewood Dr. is a private residence, not the institutional Humewood House its name suggested), left one as an open lead (the Davenport Rd catalpa needs a street-level access check), and re-confirmed the Silverthorn Forest five-tree group is not a single collectible point (register coordinate reads as a park centroid, no per-tree positions). The Ajax/Vaughan/Woodbridge satellite-town candidates still need a real transit-time check against the day-trip boundary; not attempted.
+
+Also ran `photo_hunt.py --recheck` (free API sweep): 1129 trees swept, 604 now carry at least one open-licence candidate for a future viewing pass. Left `data/research/toronto-verified.json` behind as a stale, now-empty-in-substance file (`passcheck.py --pending` already flags it for deletion); this sandbox's `rm` is denied by the permission system, so it and two scratch scripts a subagent left behind (`scripts/_tmp_update_leads.py`, `scripts/_tmp_silverthorn_note.py`, both overwritten with a one-line "safe to delete" comment) need a session with shell delete access to clear.
+
+FOR HIDDE: nothing blocked on you. The iOS CI situation from earlier in the day is presumably yours to judge, since you were pushing to `ios/` yourself around the same time.
+
 ## 2026-08-26 - Night run 2026-08-26 08:26 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.

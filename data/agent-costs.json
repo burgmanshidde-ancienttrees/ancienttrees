@@ -3425,6 +3425,24 @@
     "note": "species page intro written by session, not an agent pass; 3 trees already published (Caserta, Genoa, Utrecht)",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "toronto",
+    "kind": "verify",
+    "tokens": 134315,
+    "trees": 0,
+    "note": "1 tree delivered (Lambton Park six-tree remembrance ensemble, folded), 1 candidate blocked on private-land evidence (Humewood elm), 1 left as lead pending access check (Davenport catalpa), Silverthorn Forest group re-confirmed not a single collectible point",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "toronto (write, tro_005)",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 1,
+    "note": "session wrote the one verified tree directly rather than dispatching a write-stories pass for a single tree; merged, city intro/meta/FAQ counts updated 4->5, build+preflight+qa clean",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
