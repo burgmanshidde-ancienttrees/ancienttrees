@@ -48,7 +48,7 @@ const live = SPONSOR_URL.length > 0;
 const canonical = `${BASE_URL}/sponsor`;
 const crumbItems: [string, string | null][] = [["Home", BASE_URL], ["Sponsor", null]];
 
-const description = `Ancient Trees is free to use and not free to make. Sponsoring pays the bill behind ${n.cities} cities and puts the next one on the map.`;
+const description = `Ancient Trees is a passion project: ${nf(n.trees)} remarkable old trees you can go and stand in front of. A donation buys the time to make it better.`;
 
 const graph = [
   ...SITE_SCHEMA,
@@ -67,7 +67,7 @@ const headExtra = (live ? "" : '<meta name="robots" content="noindex">') + ldScr
 <main class="content-page sponsor-page">
   <Breadcrumbs items={crumbItems} />
   <h1>Sponsor this project</h1>
-  <p class="lede">Ancient Trees is free to use. It is not free to make.</p>
+  <p class="lede">I build Ancient Trees as a passion project, because I want people to get outside and stand in front of something old.</p>
 
   {hero && (
     <figure class="sponsor-hero">
@@ -83,7 +83,7 @@ const headExtra = (live ? "" : '<meta name="robots" content="noindex">') + ldScr
   )}
 
   <div class="prose-block">
-    <p>This is one of {nf(n.trees)} trees on the map, in {n.cities} cities. Each one was found, checked against at least two independent sources, placed on the map by hand and written up, because a tree nobody can find and nobody can trust is not worth the walk. That is days of work per city, and the map behind it arrives as a bill every month whether anybody visits or not.</p>
+    <p>It does cost money to run, though. A donation would help me enormously: more time and more resources to make this much better, and to get more of these trees on the map.</p>
 
     {live && (
       <p>
@@ -91,25 +91,12 @@ const headExtra = (live ? "" : '<meta name="robots" content="noindex">') + ldScr
       </p>
     )}
 
-    <h2>What your money does</h2>
-    <p>It puts the next city on the map. That is the honest unit: not a feature, not a server upgrade, a city that did not exist here last week and its trees that nobody had written down in one place. What is left over pays the monthly bill behind the {n.cities} already on it.</p>
-
-    <h2>What you get for it</h2>
-    <p>Nothing extra, and that is deliberate. Sponsoring is not a subscription and it unlocks no feature. It pays for the trees that are not on the map yet.</p>
-
     <h2>Helping without money</h2>
-    <p>Worth just as much, and some days worth more: <a href={submitLink("tree")}>send us a tree we are missing</a>, or tell us when something on a page is wrong. People who have stood in front of the tree are how this map gets better, and a wrong pin gets looked at the same day.</p>
+    <p>Worth just as much: <a href={submitLink("tree")}>send me a tree I am missing</a>, or tell me when something on a page is wrong. People who have stood in front of the tree are how this map gets better, and a wrong pin gets looked at the same day.</p>
 
-    {live ? (
-      <p>
-        <a class="go-btn" href={SPONSOR_URL} rel="noopener" data-ev="sponsor-open-foot">Sponsor Ancient Trees</a>
-      </p>
-    ) : (
-      <p class="suggest">The sponsor page is being set up. In the meantime, <a href={submitLink("tree")}>a tree we are missing</a> helps just as much.</p>
+    {!live && (
+      <p class="suggest">The sponsor page is being set up. In the meantime, <a href={submitLink("tree")}>a tree I am missing</a> helps just as much.</p>
     )}
-
-    <h2>Who is behind it</h2>
-    <p>One person in the Netherlands, working on this most days, with the research and the map built out in the open. The project has never taken money from anyone, which is why the bill is worth mentioning at all. Questions about any of it: <a href={submitLink("correction")}>send a message</a>.</p>
   </div>
 </main>
 </Base>
