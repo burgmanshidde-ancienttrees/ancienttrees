@@ -13,6 +13,49 @@ The verdict in one line: **the app was well built and could not be signed into a
 all, and the thing standing in front of the account problem was not the account
 flow but the fact that the map did not know where anybody was.**
 
+
+## 2026-08-26 (evening) - Hidde's list from his own phone
+
+Twelve findings in three messages, verbatim in intent, ordered here by whether
+something is BROKEN, MISSING or a DESIGN call. Nothing is triaged away: the
+order is the order I intend to work in, and anything not yet done is still on
+this list.
+
+### Broken
+
+1. **The map's list does not follow the map.** "Zodra je scrollt in je map moet
+   je resultaat goed meescrollen, dit werkt nog steeds niet goed." Said twice,
+   and the second time sharper: **"ook moet je alleen de bomen zien die in je
+   beeld staan, hij scrolt nu naar allemaal bomen door die ik helemaal niet
+   zie."** So the sheet's list is not bound to the visible region. This is the
+   core screen of the app and it outranks everything below it.
+2. **The list on the map page cannot be scrolled up, or not smoothly.**
+3. **"No navigation app installed" still appears** when it should not.
+
+### Missing
+
+4. **The species is not a link** at the top of a tree page. Somebody reading
+   about a plane tree should be able to reach the species from there.
+5. **No photograph means no way to offer one.** A big "add a photo" call to
+   action belongs beside "take me there" on a tree with no picture, and the
+   empty photo area itself should be tappable to the same place.
+6. **The three dots should be a report icon**, because reporting is what the
+   menu is for.
+7. **Nothing at the bottom of a tree page leads onward.** Discover more in this
+   city, this park, this country: the same facets Explore already offers, as
+   buttons. His note: look at the convention rather than inventing one.
+8. **Likes are not counted or shown**, and when they are, the count starts at
+   one rather than at zero.
+
+### Design calls
+
+9. **A tap on a tree's photograph in Explore should open the map on that tree**,
+   inside Explore, so Back still returns where the person came from.
+10. **The small map inset and the big photograph swap places** when the inset is
+    tapped, and swap back.
+11. **The search field sticks to the top of Explore while scrolling.**
+
+
 ---
 
 ## The one that outranks the account question
