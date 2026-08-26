@@ -77,7 +77,20 @@ jobs:
 
       - name: Which Xcode
         run: |
-          sudo xcode-select -s /Applications/Xcode_26.6.app/Contents/Developer 2>/dev/null || true
+          # THE NEWEST ONE ON THE RUNNER, and say which, out loud.
+          #
+          # This pinned Xcode_26.6.app and swallowed the failure with `|| true`,
+          # so when the image did not have it the gate quietly fell back to
+          # Xcode 16.4 and kept a green face. That is worse than a red build:
+          # it compiled against an SDK two major versions behind the one this
+          # app is written on, so anything newer than iOS 18 failed here and
+          # nowhere else, with nothing in the log saying why (2026-08-26,
+          # ToolbarSpacer).
+          NEWEST=$(ls -d /Applications/Xcode*.app 2>/dev/null | sort -V | tail -1)
+          if [ -n "$NEWEST" ]; then
+            sudo xcode-select -s "$NEWEST/Contents/Developer" || true
+          fi
+          echo "Using: $(xcode-select -p)"
           xcodebuild -version
 
       # Chosen by UDID from what is actually BOOTABLE, not by name from a list
