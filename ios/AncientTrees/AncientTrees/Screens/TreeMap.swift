@@ -389,6 +389,12 @@ struct TreeMap: UIViewRepresentable {
 
         // MARK: interaction
 
+        /// @MainActor because MapLayers is, and this now calls into it for the
+        /// cluster's members. Exactly the trap SpeciesGlyph records further down
+        /// this file: the local Debug build waved the nonisolated version
+        /// through and the iOS CI job did not. A gesture recogniser only ever
+        /// fires on the main thread, so this states what was already true.
+        @MainActor
         @objc func handleTap(_ g: UITapGestureRecognizer) {
             guard let map = g.view as? MLNMapView else { return }
             let point = g.location(in: map)
