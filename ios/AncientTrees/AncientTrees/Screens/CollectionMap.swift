@@ -66,10 +66,22 @@ struct CollectionMap: View {
             .clipped()
             .task(id: "\(geo.size.width)x\(geo.size.height)x\(points.count)") {
                 let f = frame
-                let shot = await MapThumb.snapshot(lat: f.lat, lng: f.lng,
-                                                   size: geo.size, meters: f.meters)
-                if shot != nil { rendered = geo.size }
-                image = shot
+                // A SMALL ONE FIRST. A full screen snapshot takes seconds and
+                // the screen is white while it renders, which reads as a page
+                // that failed rather than one that is coming. A third-size
+                // pass lands almost at once, stretches acceptably for a
+                // moment, and is replaced by the sharp one when it arrives.
+                let quick = CGSize(width: geo.size.width / 3, height: geo.size.height / 3)
+                if let fast = await MapThumb.snapshot(lat: f.lat, lng: f.lng,
+                                                      size: quick, meters: f.meters) {
+                    if image == nil { image = fast; rendered = geo.size }
+                }
+                if Task.isCancelled { return }
+                if let full = await MapThumb.snapshot(lat: f.lat, lng: f.lng,
+                                                      size: geo.size, meters: f.meters) {
+                    image = full
+                    rendered = geo.size
+                }
             }
         }
     }

@@ -433,53 +433,64 @@ struct CollectView: View {
     /// yes than this file may assume.
     @ViewBuilder private var whoYouAre: some View {
         HStack(spacing: 14) {
-            ZStack {
-                Circle().fill(Brand.moss.opacity(0.12))
-                if let url = profiles.me?.avatar_url, let u = URL(string: url) {
-                    AsyncImage(url: u) { img in
-                        img.resizable().aspectRatio(contentMode: .fill)
-                    } placeholder: { Color.clear }
-                    .clipShape(.circle)
-                } else if let e = profiles.me?.display_name ?? account.email, let first = e.first {
-                    Text(String(first).uppercased())
-                        .font(.brand(24, .black, relativeTo: .title2))
-                        .foregroundStyle(Brand.moss)
-                } else {
-                    Image(systemName: "person.fill")
-                        .font(.system(size: 22))
-                        .foregroundStyle(Brand.moss.opacity(0.6))
-                }
-            }
-            .frame(width: 62, height: 62)
-
-            VStack(alignment: .leading, spacing: 2) {
-                // The part before the @ rather than the whole address
-                // truncated in the middle, which rendered as "burgma...ail.com"
-                // on his own phone and reads as a bug rather than as a name.
-                // Signed out it says what the page is.
-                Text(profiles.me?.display_name
-                     ?? account.email?.split(separator: "@").first.map(String.init)
-                     ?? "Your trees")
-                    .font(.brand(19, .bold, relativeTo: .title3))
-                    .foregroundStyle(Brand.ink)
-                    .lineLimit(1).truncationMode(.middle)
-                if account.isSignedIn {
-                    // The two numbers Polarsteps runs beside the name. They
-                    // are here from the first day rather than added later, so
-                    // the page does not change shape on somebody the week
-                    // following opens.
-                    HStack(spacing: 14) {
-                        Text("\(profiles.followers) followers")
-                        Text("\(profiles.following) following")
+            let editable = account.isSignedIn
+            Button {
+                if editable { editingProfile = true } else { signingIn = true }
+            } label: {
+                HStack(spacing: 14) {
+                ZStack {
+                    Circle().fill(Brand.moss.opacity(0.12))
+                    if let url = profiles.me?.avatar_url, let u = URL(string: url) {
+                        AsyncImage(url: u) { img in
+                            img.resizable().aspectRatio(contentMode: .fill)
+                        } placeholder: { Color.clear }
+                        .clipShape(.circle)
+                    } else if let e = profiles.me?.display_name ?? account.email, let first = e.first {
+                        Text(String(first).uppercased())
+                            .font(.brand(24, .black, relativeTo: .title2))
+                            .foregroundStyle(Brand.moss)
+                    } else {
+                        Image(systemName: "person.fill")
+                            .font(.system(size: 22))
+                            .foregroundStyle(Brand.moss.opacity(0.6))
                     }
-                    .font(.caption).foregroundStyle(Brand.inkSoft)
-                } else {
-                    Text("Sign in and your collection follows you.")
-                        .font(.caption).foregroundStyle(Brand.inkSoft)
                 }
+                .frame(width: 62, height: 62)
+    
+                VStack(alignment: .leading, spacing: 2) {
+                    // The part before the @ rather than the whole address
+                    // truncated in the middle, which rendered as "burgma...ail.com"
+                    // on his own phone and reads as a bug rather than as a name.
+                    // Signed out it says what the page is.
+                    Text(profiles.me?.display_name
+                         ?? account.email?.split(separator: "@").first.map(String.init)
+                         ?? "Your trees")
+                        .font(.brand(19, .bold, relativeTo: .title3))
+                        .foregroundStyle(Brand.ink)
+                        .lineLimit(1).truncationMode(.middle)
+                    if account.isSignedIn {
+                        // The two numbers Polarsteps runs beside the name. They
+                        // are here from the first day rather than added later, so
+                        // the page does not change shape on somebody the week
+                        // following opens.
+                        HStack(spacing: 14) {
+                            Text("\(profiles.followers) followers")
+                            Text("\(profiles.following) following")
+                        }
+                        .font(.caption).foregroundStyle(Brand.inkSoft)
+                    } else {
+                        Text("Sign in and your collection follows you.")
+                            .font(.caption).foregroundStyle(Brand.inkSoft)
+                    }
+                }
+                }
+                .contentShape(.rect)
             }
+            .buttonStyle(.plain)
+            .accessibilityIdentifier("mytrees-edit-profile")
+            .accessibilityLabel(editable ? "Edit your profile" : "Sign in")
             Spacer(minLength: 0)
-            if account.isSignedIn {
+            if editable {
                 // FIND PEOPLE, on the person-with-a-plus, which is exactly
                 // where Polarsteps keeps it: beside your own name, in the row
                 // of things you do to your own page (Hidde, 2026-08-26: "hoe
@@ -494,16 +505,11 @@ struct CollectView: View {
                 .buttonStyle(.plain)
                 .accessibilityLabel("Find people")
                 .accessibilityIdentifier("mytrees-find-people")
-                Button { editingProfile = true } label: {
-                    Image(systemName: "square.and.pencil")
-                        .font(.system(size: 16, weight: .medium))
-                        .foregroundStyle(Brand.inkSoft)
-                        .frame(width: 44, height: 44)
-                        .contentShape(.rect)
-                }
-                .buttonStyle(.plain)
-                .accessibilityLabel("Edit your profile")
-                .accessibilityIdentifier("mytrees-edit-profile")
+                // No pencil. Your name and your face ARE the button (Hidde,
+                // 2026-08-26: "je kan in polarsteps dat gewoon aanpassen als
+                // je op je naam of profielfoto klikt"). A separate edit icon
+                // beside them is a second control for the thing you are
+                // already looking at, and the reference does not have one.
             }
         }
         .accessibilityIdentifier("mytrees-who")
