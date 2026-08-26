@@ -416,11 +416,43 @@ struct ProfileView: View {
         }
     }
 
+    /// The build, said out loud.
+    ///
+    /// It costs one line and it ends a whole class of wasted work. Twice now a
+    /// morning has gone on bugs that were already fixed, because the phone in
+    /// his hand was running the build he installed hours earlier and nothing on
+    /// any screen said so (LOG.md 2026-08-25: "three of tonight's reports were
+    /// things fixed thirty minutes earlier"). A report is only worth as much as
+    /// the version it came from, and until now nobody could name that version.
+    private var buildLine: String {
+        let info = Bundle.main.infoDictionary
+        let v = info?["CFBundleShortVersionString"] as? String ?? "?"
+        let b = info?["CFBundleVersion"] as? String ?? "?"
+        // The DATE is the part that does the work. CFBundleVersion is 1 and
+        // stays 1 until somebody remembers to bump it, so on its own the line
+        // would read "Version 1.0 (1)" on every build ever made and answer
+        // nothing. The executable's own modification time changes every single
+        // compile without anybody maintaining it.
+        var when = ""
+        if let exe = Bundle.main.executableURL,
+           let at = try? FileManager.default.attributesOfItem(atPath: exe.path),
+           let date = at[.modificationDate] as? Date {
+            let f = DateFormatter()
+            f.locale = Locale(identifier: "en_GB")
+            f.dateFormat = "d MMM HH:mm"
+            when = " · built " + f.string(from: date)
+        }
+        return "Version \(v) (\(b))" + when
+    }
+
     private var version: some View {
-        Text("\(catalogue.trees.count.formatted(.number.locale(Locale(identifier: "en_US")))) trees, updated whenever you open the app.")
-            .font(.caption2).foregroundStyle(Brand.inkSoft.opacity(0.8))
-            .frame(maxWidth: .infinity, alignment: .center)
-            .padding(.top, 4)
+        VStack(spacing: 2) {
+            Text("\(catalogue.trees.count.formatted(.number.locale(Locale(identifier: "en_US")))) trees, updated whenever you open the app.")
+            Text(buildLine).accessibilityIdentifier("build-line")
+        }
+        .font(.caption2).foregroundStyle(Brand.inkSoft.opacity(0.8))
+        .frame(maxWidth: .infinity, alignment: .center)
+        .padding(.top, 4)
     }
 
     /// What we hold, in one screen, because "where do I change my email
