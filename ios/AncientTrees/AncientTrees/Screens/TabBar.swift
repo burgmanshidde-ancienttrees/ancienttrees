@@ -167,7 +167,11 @@ struct TabBar: View {
             .accessibilityLabel("Collect a tree")
             .accessibilityIdentifier("tab-collect")
         }
-        .padding(.horizontal, 12)
+        // 16, not 12: the capsule keeps 4 points inside it, so the first
+        // icon landed at x=16 while every page behind it starts its content
+        // at 20. The layout gate reported that on six screens, and it is
+        // right that a floating bar should line up with what it floats over.
+        .padding(.horizontal, 16)
         .padding(.bottom, 4)
     }
 }

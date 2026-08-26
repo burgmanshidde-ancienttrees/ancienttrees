@@ -238,6 +238,12 @@ struct ContentView: View {
             }
         case .profile:
             ProfileView(catalogue: cat)
+        case .treeMap(let id):
+            if let t = cat.tree(id) {
+                TreeMapPage(tree: t, catalogue: cat)
+            } else {
+                ContentUnavailableView("That tree is gone", systemImage: "leaf")
+            }
         case .country(let name):
             CountryView(country: name, catalogue: cat, origin: origin)
         case .species(let name):

@@ -49,6 +49,8 @@ struct ProfileEditor: View {
                         PhotosPicker(selection: $picked, matching: .images) {
                             Text(preview == nil && profiles.me?.avatar_url == nil
                                  ? "Choose a photo" : "Change photo")
+                                .frame(minHeight: 44)
+                                .contentShape(.rect)
                         }
                     }
                     .padding(.vertical, 4)

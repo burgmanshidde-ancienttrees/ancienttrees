@@ -771,7 +771,9 @@ struct MapTab: View {
                     filters = MapFilters()
                     filters.favouritesOnly = want
                 }
-                FilterChip(label: "Collected", icon: "checkmark.seal",
+                // "My trees" here too, so the map and the page agree about
+                // what the word means (Hidde, 2026-08-26). One root, one word.
+                FilterChip(label: "My trees", icon: "checkmark.seal",
                            on: filters.collectedOnly) {
                     let want = !filters.collectedOnly
                     filters = MapFilters()

@@ -28,6 +28,15 @@ public enum Route: Hashable {
     case collection(String)                    // collection slug
     case species(String)                       // common name
     case country(String)                       // country name, as the feed spells it
+    /// THE MAP OF ONE TREE, pushed on whatever stack you are already on
+    /// (Hidde, 2026-08-26: "ideaal expand je alleen de map van de locatie waar
+    /// die boom staat, in een eigen subpagina met een backbutton terug naar de
+    /// detailpagina ... dat je gewoon niet verdwijnt uit die detailpagina").
+    ///
+    /// Expanding used to hand you to the Map tab, which is a different place
+    /// with a different history, so the way back to what you were reading was
+    /// gone. A pushed page keeps the trail.
+    case treeMap(String)                       // tree id
     /// The "see all" behind a shelf. Netflix, AllTrails and Airbnb all put one
     /// in the shelf header, and a shelf without one is a promise that the row
     /// you can see is everything there is (Hidde, 2026-08-21).
