@@ -9,6 +9,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-26 (session) - Two submissions processed: a vote-undo and a Baarn tip too thin to place
+
+Row 38 was bookkeeping (`why: "vote undone: not worth it"` on utr_005) and was marked processed with no reply, per the standing rule for that kind of row.
+
+Row 37 was a `kind: tree` submission for Baarn with no tree name, no species, just GPS (52.20796, 5.28934) and the word "Boom". Checked it before treating it as a lead: Nominatim reverse-geocodes the point to a house at 48 Bilderdijklaan, a residential address about 300m from the already-published brn_005 (American Oak of the Pekingtuin) and well short of Cantonspark. An Overpass check for `natural=tree` within 60m found nothing tagged, and a wider name search timed out. So this cannot be placed as a park tree from the data alone, and it may sit on private ground, which is a hard rule 10 question before it is a research question. Set `outcome: open_question` and a `reply_text` asking what the tree is and whether it is visible from the road; no lead file entry yet, since we do not know enough to call it a candidate. If the reader answers, treat it as a fresh submission next time it is read rather than reopening this one by hand.
+
+One thing worth a future look regardless of this submission: `data/leads/baarn.json`'s blocked entry for the "Kronkelbeuk" (twisted beech, formerly of the Pekingtuin, believed gone) carries no coordinates. If a future pass ever gets a photo or a second source placing it, cross-check against this same GPS point first, since both sit in the same corner of the village.
+
 ## 2026-08-23 - Finished an abandoned write claim: Warsaw +2, Berlin +1, Turin held
 
 A prior attempt this same window claimed berlin, warsaw and turin for a write pass at 08:19, then never touched them, doing unrelated work instead and leaving the claim standing. `leads.py --ready` showed 3 candidates each in all three, but most turned out thinner than the READY label suggests (that check only confirms name+species+position, not sourcing or access), so this pass verified each individually rather than writing all 9.
