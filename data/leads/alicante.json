@@ -22,7 +22,6 @@
       "register_ids": [
         3070,
         3071,
-        3095,
         3073,
         3074,
         3075,
@@ -38,7 +37,7 @@
         3072
       ],
       "species": "Ficus microcarpa / Ficus macrophylla / Grevillea robusta",
-      "reason": "A long row of individually registered figs (and two Grevillea robusta) strung along roughly 150-300m of a stretch this project's own data has referred to as 'Passeig de Canalejas continuing toward Portal de Elche' (a separate, more distant stretch, 0.4-0.75km from centre, from the small Portal de Elche plaza grove at 300/301/302/303 which sits right at the plaza itself, 0.1-0.15km from centre; the two should not be confused despite both carrying 'Canalejas' in nearby names). Reads as a continuous avenue rather than individual collectible points (see the ensemble rule); the one individually named, most distinctive specimen from this stretch (register_id 507, 'Ficus del Passeig de Canalejas') already shipped as ali_005. NOTE: register_ids 853 and 614, formerly listed here, are RESOLVED: 853 shipped as ali_011 (2026-08-15) with 614 explicitly folded into that same entry as one grove (see ali_011's verify_notes). Exact street addresses and public/private status of the remaining stretch (toward Portal de Elche) were not individually confirmed within this pass's time budget."
+      "reason": "A long row of individually registered figs (and two Grevillea robusta) strung along roughly 150-300m of a stretch this project's own data has referred to as 'Passeig de Canalejas continuing toward Portal de Elche' (a separate, more distant stretch, 0.4-0.75km from centre, from the small Portal de Elche plaza grove at 300/301/302/303 which sits right at the plaza itself, 0.1-0.15km from centre; the two should not be confused despite both carrying 'Canalejas' in nearby names). Reads as a continuous avenue rather than individual collectible points (see the ensemble rule); the one individually named, most distinctive specimen from this stretch (register_id 507, 'Ficus del Passeig de Canalejas') already shipped as ali_005. NOTE: register_ids 853 and 614, formerly listed here, are RESOLVED: 853 shipped as ali_011 (2026-08-15) with 614 explicitly folded into that same entry as one grove (see ali_011's verify_notes). Register_id 3095, formerly listed here, is also RESOLVED and removed from this group: it turned out not to be part of this avenue at all, but a standalone tree 1.2km further north in its own plaza (Plaza de la Pipa, Carolinas Bajas), shipped individually 2026-08-26 as ali_014. Exact street addresses and public/private status of the remaining stretch (toward Portal de Elche) were not individually confirmed within this pass's time budget."
     },
     {
       "register_ids": [
@@ -105,8 +104,26 @@
     },
     {
       "register_ids": [
-        1188, 1190, 1191, 1192, 1210, 1211, 1230, 1231, 1235, 1236,
-        1240, 1247, 1249, 1252, 1737, 528, 529, 530, 541, 3952
+        1188,
+        1190,
+        1191,
+        1192,
+        1210,
+        1211,
+        1230,
+        1231,
+        1235,
+        1236,
+        1240,
+        1247,
+        1249,
+        1252,
+        1737,
+        528,
+        529,
+        530,
+        541,
+        3952
       ],
       "species": "Ficus macrophylla / Phoenix dactylifera / Washingtonia robusta / Washingtonia filifera / Olea europaea",
       "reason": "Not pursued this pass, per the brief's own steer toward the walkable named centre cluster over these: a scattered group of named-estate trees 8.0-9.5km from centre (Fincas Maxara, El Conde o La Pau, Santa Ana, L'Abril, Espinos, and unnamed others), all in Sant Joan d'Alacant/Mutxamel rather than Alicante itself. A quick check of 'Finca El Conde o La Pau' (register_id 1247's site) found a local heritage blog (anticalicante.blogspot.com) describing it as a ruin: 'irrigation no longer exists, the few remaining trees barely survive in the razed garden, and no one inhabits the house anymore', which reads as private and likely fails the access test outright. The others were not checked individually. Any future pass on these should expect private agricultural estates rather than public ground, and check access before spending time on names or ages."
@@ -123,6 +140,11 @@
       ],
       "species": "Ulmus minor",
       "reason": "RE-CHECKED 2026-08-23, no change: fetched both todoalicante.es articles on the September 2025 elm collapse in Plaza Gabriel Miro directly (not just search snippets). Neither names a precise corner, adjacent building or which of the five registered elms fell; one only says the spot has no hostelry terraces nearby. Still no way to identify which four of the five register coordinates remain standing, so all five stay held rather than moved to leads: this is now a confirmed-unresolvable-by-search question, not just an unchecked one. A street-level photo or a follow-up city report naming the exact tree is the only thing that would unblock this."
+    },
+    {
+      "register_id": 3099,
+      "species": "Ficus macrophylla",
+      "reason": "CHECKED 2026-08-26: Carrer de l'Esportista Ramon Mendizabal 3, girth 6.2m, height 11m, crown 25m (Proteccion Generica). Cross-checked via OSM (node 13092900356, reg_ref=3099, denotation=natural_monument, protected=yes, figures match the register exactly) which sits inside the bbox of way 153247101, alt_name \"Parque del Jardin Botanico\" (a public park, San Fernando-Princesa Mercedes neighbourhood). The Spanish Wikipedia article \"Parque El Botanico\" independently confirms this exact tree (centenarian Ficus macrophylla, city-designated \"a monumental tree of local interest\") but states plainly: \"su tronco se encuentra dentro de una parcela de una urbanizacion privada colindante, aunque la mitad de su copa se extiende hacia el parque\" (the TRUNK stands on an adjacent private development parcel, Urbanizacion Gran Ficus, though half the canopy reaches into the public park). Per the hard limit \"never deliver a tree ... on private land not genuinely open to visitors; when in doubt, leave it out\", this is blocked rather than shipped: the trunk itself is not on public ground, only overhanging canopy is visible from the park side. It may be a legitimate view-only candidate under the wider project's viewing-place doctrine (visible from public park ground, pin marking the viewing spot rather than the trunk), which this verification pass is not positioned to apply; a session with full product context should decide rather than a verify pass guessing. Two sources agree on everything except access: the Valencia register (data/registers/valencia-arboles-monumentales.json, id 3099) and es.wikipedia.org/wiki/Parque_El_Botanico."
     }
   ]
 }
