@@ -10,6 +10,52 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-08-26 - The content gap that was two of our own pages
+
+Session, from the daily digest. The digest reported 'alameda dos platanos' as
+a content lead, 13 impressions at position 8, no matching page. We had two
+matching pages. por_026 and por_028 were both the Cordoaria plane avenue on
+identical coordinates citing the same ICNF processo KNJ3/050; por_019 and
+por_029 were both its bunya pine, same coordinates, same processo KNJ1/450.
+Four tree pages for two trees, splitting one avenue's own search demand.
+
+Merged into the earlier ids, which now carry the girth, height, third source
+and the elephant's-foot deformity that only the later pair had. The retired
+stories are kept in full in data/leads/porto.json and both slugs redirect to
+the survivors, verified resolving 200 on the live site. Porto is 27 trees and
+its FAQ says so. Build and smoke both green.
+
+Two checks shipped with it, both third-or-later occurrences of their class:
+
+- `check_same_city_duplicates()` in preflight. Distance cannot find these,
+  which is why the cross-city check skips same-city pairs; Hawaii's four
+  Kalopa trees, Nuremberg's ND-9 and ND-10 and Poznan's four planes are all
+  genuinely metres apart. The signal that separates a duplicate from a
+  neighbour is a shared REGISTER ID, and on 1,842 trees it fires on exactly
+  these two pairs. Munich 08-13 and Potsdam 08-16 were the first two, both
+  found by hand.
+- The gap detector in daily_digest.py, which is why we were pointed at a page
+  we already had. It only asked whether our name sits inside their query,
+  never the reverse, and it folded no accents, so a searcher typing less than
+  a full page title always read as a miss. It also matched bare substrings:
+  the city Ede matched 'oudste boom van nederland', and 'about' matched any
+  query containing that word, which means real gaps were being swallowed too.
+  Now word runs in both directions, accent-blind, generic standing-page names
+  needing an exact query, and it lists every lead instead of one.
+
+Known limit, deliberately left and printed in the digest line: partial name
+overlap. 'vegas trees' and 'oldest tree in dc' still read as leads while
+/las-vegas and /washington-dc exist. Those are real unserved demand but the
+fix is a stronger page, not a new one, so the line says to check first.
+
+FOR HIDDE: the machine is still down and this is the only thing that matters
+today. Every Claude workflow (nightly, fresh-eyes review, weekly analysis)
+has failed since 2026-08-24 02:52 UTC, twenty-plus runs, each dying in under
+a second with zero model calls, cost 0 and modelUsage empty. That is a
+credential fault, not our code, and not the shared usage pool either, since
+sessions on the same subscription work. Regenerate with `claude setup-token`
+and `gh secret set CLAUDE_CODE_OAUTH_TOKEN`. Nobody but you can do it.
+
 ## 2026-08-26 - Night run 2026-08-26 06:23 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.
