@@ -45,6 +45,21 @@ Collect.swift's type-check since 6857185c; the run on 31a0302e got past it with
 19 tests passing, so breaking that expression up worked on the runner. The two
 failures left there are the other session's, not this: a lane-picker assertion
 and a SweepFrames launch.
+
+**Then the gate failed on Apple's keyboard tutorial**, which is worth recording
+because the shape repeats. A Button 'Continue' at 224 by 21 on the search screen,
+under the 44 point floor, on both phones. Not ours: its parent is
+UIContinuousPathIntroductionView, iOS's "slide your finger across the letters"
+overlay, which appears the first time a keyboard opens on a FRESH simulator. So
+it failed on the runner every time and here never, because this desk dismissed
+that overlay months ago. Downloaded the run's own appfit dump rather than guess:
+it hangs beside the Keyboard element instead of inside it, and carries no
+identifier of its own, so inside() now matches ancestor identifiers too. Judged
+against that same dump: 1 finding before, 0 after.
+
+Pending, and the reason is not a fault: every gate run since has been CANCELLED
+mid-flight because the other session pushed on top, five times in an hour. The
+fix is proven against the dump; the green tick is still owed.
 ## 2026-08-26 - The content gap that was two of our own pages
 
 Session, from the daily digest. The digest reported 'alameda dos platanos' as
