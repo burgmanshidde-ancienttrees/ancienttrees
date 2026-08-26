@@ -76,6 +76,48 @@ def gh_latest(workflow):
         return None
 
 
+# A workflow that RUNS CLAUDE fails in two completely different ways, and they
+# want opposite responses. Broken means read the log. Out of allowance means do
+# nothing at all and wait for the window; CLAUDE.md's capacity doctrine already
+# says "attempts that hit the usage limit die in seconds and cost nothing".
+# Told apart by how long the run lasted: a real failure takes minutes, an
+# exhausted allowance dies on its first request in well under two.
+#
+# Written 2026-08-26 after this told a session the site might be broken for
+# twenty-plus red runs, and the session spent its window diagnosing a stale
+# credential before Hidde said his account was simply out of tokens.
+CLAUDE_WORKFLOWS = {"nightly.yml", "review.yml", "weekly-analysis.yml"}
+STARVED_SECONDS = 120
+
+
+def looks_starved(workflow):
+    """True when the newest failed runs died too fast to have done anything."""
+    try:
+        out = subprocess.run(
+            ["gh", "run", "list", "--workflow", workflow, "-L", "5",
+             "--json", "conclusion,status,startedAt,updatedAt"],
+            capture_output=True, text=True, timeout=60, cwd=ROOT)
+        if out.returncode != 0:
+            return False
+        fast = 0
+        for r in json.loads(out.stdout or "[]"):
+            if r.get("status") != "completed" or r.get("conclusion") != "failure":
+                continue
+            try:
+                a = datetime.datetime.fromisoformat(
+                    r["startedAt"].replace("Z", "+00:00"))
+                b = datetime.datetime.fromisoformat(
+                    r["updatedAt"].replace("Z", "+00:00"))
+            except Exception:
+                return False
+            if (b - a).total_seconds() > STARVED_SECONDS:
+                return False
+            fast += 1
+        return fast >= 2
+    except Exception:
+        return False
+
+
 ANSWERED = os.path.join(ROOT, "data", "review-answered.json")
 
 
@@ -136,6 +178,7 @@ def main():
     now = datetime.datetime.now(datetime.timezone.utc)
     problems = []
     unknown = []
+    notes = []
 
     for wf, (label, max_age, remedy) in WATCHED.items():
         got = gh_latest(wf)
@@ -150,13 +193,25 @@ def main():
             # should be told which thing is broken. `gh run view --log-failed`
             # on the newest ios.yml run prints the failed assertions; the
             # xcresult artifact carries the screenshot XCTest took at each one.
-            what = ("The APP is broken, not the site; the failed assertions are "
-                    "in the log and the screenshots are in its xcresult artifact"
-                    if wf == "ios.yml"
-                    else "The site may be broken; read the failing log before "
-                         "anything else")
-            problems.append(f"{label} is {conclusion} (its newest run, "
-                            f"{hours:.0f}h ago). {what}.")
+            starved = wf in CLAUDE_WORKFLOWS and looks_starved(wf)
+            if starved:
+                # Not a problem to fix, so it does not join `problems` and does
+                # not fail the exit code. There is nothing to do but wait.
+                notes.append(f"{label} is failing, but its runs die in under "
+                             f"{STARVED_SECONDS}s having done nothing: that is the "
+                             f"usage allowance, not breakage. Do NOT regenerate "
+                             f"CLAUDE_CODE_OAUTH_TOKEN. It resumes when the window "
+                             f"resets, and if it is still failing a full window "
+                             f"later, then it is not the allowance and the log is "
+                             f"worth reading after all.")
+            else:
+                what = ("The APP is broken, not the site; the failed assertions are "
+                        "in the log and the screenshots are in its xcresult artifact"
+                        if wf == "ios.yml"
+                        else "The site may be broken; read the failing log before "
+                             "anything else")
+                problems.append(f"{label} is {conclusion} (its newest run, "
+                                f"{hours:.0f}h ago). {what}.")
         if max_age and age > max_age:
             problems.append(f"{label} has not run in {hours:.0f}h "
                             f"(threshold {max_age.total_seconds()/3600:.0f}h). "
@@ -191,6 +246,11 @@ def main():
     if unknown:
         print(f"\n  could not check: {', '.join(unknown)} "
               "(gh missing, unauthenticated, or the file is absent)")
+
+    if notes:
+        print("\n  nothing to do about these:\n")
+        for n in notes:
+            print(f"  - {n}")
 
     if problems:
         print(f"\nRUNG 2: {len(problems)} thing(s) to deal with before new coverage\n")
