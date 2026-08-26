@@ -378,6 +378,16 @@ placement can land nine months out, which means the press lane is measured over
 quarters and cannot be judged on a fortnight of Search Console.
 
 
+**Batch 009, 2026-08-26, all 40 sent on his "die veertig e-mails mag je
+versturen inderdaad".** Forty holders of trees we publish: gardens, palaces,
+cloisters, temples and municipalities from Park Guell to Trinity College, in
+his own batch-005/006 letter per language. Where the recipient holds the
+trees the middle sentence says so, each claim verified against why_them
+(Trompenburg was caught claiming trees three kilometres away and demoted to
+the plain letter). Six Spanish recipients went out knowing the association
+offices reopen 1 September; gardens and palaces answer their own mail in
+summer. Details per address in data/outreach-sent.json.
+
 **Batch 002-pt, 2026-08-09.** Twelve mails, Portugal only, in Hidde's frame: a
 compliment, what the site is for, then an ask for photographs and for the tree we
 missed. Not one word about coverage or a link. Deliberately a test batch of twelve

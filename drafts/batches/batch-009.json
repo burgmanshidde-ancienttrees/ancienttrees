@@ -1,7 +1,7 @@
 {
  "batch": "batch-009",
  "note": "Hidde's own letter from batches 005/006, with his mention line, verbatim per language. Where the recipient holds the trees the middle sentence says so, justified by why_them and owns_the_trees.",
- "status": "draft",
+ "status": "approved_by_hidde",
  "mails": [
   {
    "to": "alcazar@patronato-alcazarsevilla.es",
@@ -284,6 +284,6 @@
    "body": "Hello,\n\nMy name is Hidde and I am building ancienttrees.app, a platform for remarkable trees. My goal is to get people excited about old trees and to encourage them to go and see them outside.\n\nWe have 17 trees in Dublin, 2 of them in your grounds, and I was really curious whether you would take a look at whether they are right:\nhttps://ancienttrees.app/dublin\n\nI also wondered: which tree do you personally think is missing?\n\nAny help would be much appreciated!\n\nAnd if you think the site is worth it, a mention on your website would help enormously to get these trees noticed.\n\nI would really like to hear your opinion on the project.\n\nBest wishes,\nHidde"
   }
  ],
- "approved": null,
+ "approved": "Hidde, in session 2026-08-26: 'die veertig e-mails mag je versturen inderdaad.'",
  "possessives_verified": "2026-08-26, session: all 20 'in your grounds' clauses read against why_them and owns_the_trees. Every claim names the recipient's own park, cloister, patio or managed ground; Setubal's rests on the trees standing on municipal ground. Trompenburg was caught by this same check and set to owns_the_trees: false (they stand 3 km from the trees)."
 }
