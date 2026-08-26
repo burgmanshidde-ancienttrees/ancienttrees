@@ -58,31 +58,27 @@ export interface PressNumbers {
  * city-list.json roster, not just the published/renderable subset, so this
  * reads city-list.json directly rather than using the "cities" content
  * collection (which only surfaces entries that already have a data file).
- * That includes the exact quirk it inherits: `countries` counts distinct
- * data.country values among entries that HAVE a data file, but every entry
- * WITHOUT one contributes Python's `None` to that same set (from
- * `(e.get("data") or {}).get("country")`), collapsing into one extra
- * "unknown" member rather than being skipped. Matched here, not fixed. */
+ * The inherited quirk is GONE as of 2026-08-26, and deliberately: it counted
+ * one phantom "unknown" country for the queue rows that had no data file, and
+ * this function no longer reads the queue at all. Every number here now comes
+ * from the city files themselves, which is the only source that answers the
+ * question a reader would check. */
 export function pressNumbers(): PressNumbers {
-  const listPath = path.join(DATA, "city-list.json");
-  const cityList: { slug: string }[] = JSON.parse(fs.readFileSync(listPath, "utf-8")).cities ?? [];
-
   const entries: { city: string | null; country: string | null; tree: Tree }[] = [];
   const countries = new Set<string | null>();
-  // Cities a reader can actually open, not rows in the queue. city-list.json
-  // carries every city we intend to research, 44 of the 179 of them with no
-  // data file at all on 2026-08-26, and counting the file's length told the
-  // press page and the sponsor page that we map 179 cities when 171 had a
-  // page. Understating is fine here and overstating is a lie, which is the
-  // rule check_tree_count_claims() already applies to trees.
-  let withPages = 0;
-  for (const e of cityList) {
-    const f = path.join(DATA, "cities", `${e.slug}.json`);
-    if (!fs.existsSync(f)) {
-      countries.add(null);
-      continue;
-    }
-    withPages += 1;
+  // Cities a reader can actually open, counted from the FILES rather than
+  // from city-list.json. That file is a work queue and it drifts in both
+  // directions: on 2026-08-26 it held 179 rows of which 44 had no data file,
+  // which made this page claim 179 cities when 171 had a page, and it was
+  // also missing 36 cities that do have one, which made the first fix claim
+  // 135. Neither number was the truth and the file was the wrong source for
+  // the question. Overstating is the lie; being needlessly wrong is just
+  // wrong.
+  const files = fs.readdirSync(path.join(DATA, "cities"))
+    .filter((f) => f.endsWith(".json"));
+  const withPages = files.length;
+  for (const name of files) {
+    const f = path.join(DATA, "cities", name);
     const data = JSON.parse(fs.readFileSync(f, "utf-8"));
     countries.add(data.country ?? null);
     for (const t of data.trees ?? []) {
