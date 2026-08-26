@@ -15,6 +15,7 @@ import {
   SUPABASE_URL,
   SUPABASE_KEY,
   ANALYTICS_TOKEN,
+  SPONSOR_URL,
   TITLE_MAX,
   DESC_MAX,
 } from "../lib/site-config";
@@ -174,6 +175,7 @@ const year = new Date().getFullYear();
       <h4>Ancient Trees</h4>
       <a href="/app" data-ev="app-cta">The app</a>
       <a href="/contribute">Suggest a tree</a>
+      {SPONSOR_URL ? <a href="/sponsor">Sponsor</a> : null}
       <a href="/privacy">Privacy</a>
       <a href="/terms">Terms</a>
     </div>
