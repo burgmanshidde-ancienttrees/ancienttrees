@@ -48,9 +48,6 @@ struct CollectView: View {
     @State private var openSettings = ProcessInfo.processInfo.arguments.contains("-settings")
     @State private var editingProfile = ProcessInfo.processInfo.arguments.contains("-profile-edit")
     @State private var findingPeople = ProcessInfo.processInfo.arguments.contains("-people")
-    /// Opens at half, which shows the face, the numbers and the first tree:
-    /// enough to read at a glance and enough map left to see where you have been.
-    @State private var sheetHeight: SheetHeight = .half
     @Environment(Profiles.self) private var profiles
 
     // TWO lanes, not three. "Collected" and "Added by you" were separate until
@@ -128,27 +125,36 @@ struct CollectView: View {
     }
 
     var body: some View {
-        // THE POLARSTEPS SHAPE, properly (Hidde, 2026-08-26: "zorgen dat de
-        // kaart full page erachter staat, naam en foto dan op de lijst met wat
-        // stats en dan bomen en daar kan je selecteren").
+        // ONE SCROLL VIEW, no sheet, no arbitration (Hidde, 2026-08-26: "ik
+        // wil niet scrollen met die lijst op de my trees pagina ... bij
+        // polarsteps gaat dit gewoon goed").
         //
-        // Their page about you is a map filling the screen with a sheet lying
-        // over it, and everything about you lives on that sheet: face, name,
-        // numbers, then your things. Ours had the map as a card inside a
-        // scrolling page, which is the same ingredients in the wrong order and
-        // is also what let a card get sliced by the pinned picker: content
-        // scrolling under a floating control has nowhere to hide.
+        // I had put a three-height draggable sheet here, which means one
+        // finger has to choose between moving the sheet and scrolling the
+        // list, and that choice is exactly what kept going wrong. The map
+        // screen needs that arbitration because the map underneath is the
+        // thing you are using. Here the map is a cover picture, and the
+        // convention for a page about you with a cover is a single scroller
+        // in which the cover scrolls away: Instagram, Strava, X and
+        // Polarsteps' own trip pages all do that, and none of them has a
+        // gesture to get wrong.
         //
-        // The sheet is the one this app already uses on the map screen, so the
-        // drag, the three heights and the scroll arbitration are the ones that
-        // were argued out there rather than a second implementation.
-        ZStack(alignment: .top) {
-            fullMap
-            BottomSheet(height: $sheetHeight, header: { sheetHeader }) {
+        // It also fixes the second half of what he reported, that the profile
+        // kept opening while he swiped: a Button inside a plain ScrollView
+        // takes taps and lets drags through, which a custom drag gesture
+        // cannot be made to do reliably.
+        ScrollView {
+            LazyVStack(alignment: .leading, spacing: 18) {
+                coverMap
+                whoYouAre.padding(.horizontal, 20)
+                statsRow.padding(.horizontal, 20)
+                actionRow.padding(.horizontal, 20)
                 sheetBody
             }
         }
         .brandGround()
+        .ignoresSafeArea(edges: .top)
+        .overlay(alignment: .topTrailing) { settingsButton }
         .toolbar(.hidden, for: .navigationBar)
         .task {
             if openSettings { openSettings = false; navigator.push = .profile }
@@ -161,42 +167,70 @@ struct CollectView: View {
         }
     }
 
-    /// The map behind everything, framed on what you have.
-    @ViewBuilder private var fullMap: some View {
-        let points = allVisited.map { (lat: $0.lat, lng: $0.lng) }
-            + sightings.yoursOnly.map { (lat: $0.lat, lng: $0.lng) }
-        // A MAP EITHER WAY. With nothing collected the frame falls back to
-        // where you are standing, because a grey void behind the sheet reads
-        // as a screen that failed to load, while a map of your own city reads
-        // as an invitation and is the same picture you will see filling up.
-        CollectionMap(points: points.isEmpty ? [(lat: origin.lat, lng: origin.lng)] : points)
-            .ignoresSafeArea()
-        .overlay(alignment: .topTrailing) {
-            // Settings in the corner of the map, which is where Polarsteps
-            // keeps its gear and where it was already going.
-            Button { navigator.push = .profile } label: {
-                Image(systemName: "gearshape")
-                    .font(.system(size: 18, weight: .medium))
-                    .foregroundStyle(Brand.ink)
-                    .frame(width: 44, height: 44)
-                    .background(.regularMaterial, in: .circle)
+    /// The row Polarsteps runs under the numbers: the thing you make, wide and
+    /// filled, and the way to find people beside it (Hidde, 2026-08-26: "doe
+    /// voeg boom toe ook maar op dezelfde plek als bij polarsteps en daar dan
+    /// naast die vriend uitnodigen knop").
+    ///
+    /// Theirs is a trip and ours is a tree, which is the same sentence: the
+    /// one thing this page is a record of. The person button moved here out of
+    /// the name row, where it had been sitting beside a pencil that has since
+    /// gone, so the name row is now just the name.
+    private var actionRow: some View {
+        HStack(spacing: 12) {
+            Button { navigator.collectNearby = true } label: {
+                Label("Add a tree", systemImage: "camera.fill")
+                    .font(.callout.weight(.semibold))
+                    .foregroundStyle(Brand.ground)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 52)
+                    .background(Brand.moss, in: .capsule)
             }
             .buttonStyle(.plain)
-            .padding(.trailing, 16)
-            .accessibilityLabel("Settings")
-            .accessibilityIdentifier("mytrees-settings")
+            .accessibilityIdentifier("mytrees-add-tree")
+
+            if account.isSignedIn {
+                Button { findingPeople = true } label: {
+                    Image(systemName: "person.badge.plus")
+                        .font(.system(size: 18, weight: .medium))
+                        .foregroundStyle(Brand.ink)
+                        .frame(width: 52, height: 52)
+                        .background(Brand.surface, in: .capsule)
+                        .overlay { Capsule().strokeBorder(Brand.hairline, lineWidth: 1) }
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("Find people")
+                .accessibilityIdentifier("mytrees-find-people")
+            }
         }
     }
 
-    /// Face, name, numbers: the part of the sheet that never scrolls away.
-    private var sheetHeader: some View {
-        VStack(spacing: 14) {
-            whoYouAre
-            statsRow
-        }
-        .padding(.horizontal, 20)
-        .padding(.bottom, 6)
+    /// The cover: your own trees, scrolling away as you read down.
+    @ViewBuilder private var coverMap: some View {
+        let points = allVisited.map { (lat: $0.lat, lng: $0.lng) }
+            + sightings.yoursOnly.map { (lat: $0.lat, lng: $0.lng) }
+        CollectionMap(points: points.isEmpty ? [(lat: origin.lat, lng: origin.lng)] : points)
+            .frame(height: 240)
+            .clipped()
     }
+
+    /// Settings, floating over the cover in the corner Polarsteps uses.
+    private var settingsButton: some View {
+        Button { navigator.push = .profile } label: {
+            Image(systemName: "gearshape")
+                .font(.system(size: 18, weight: .medium))
+                .foregroundStyle(Brand.ink)
+                .frame(width: 44, height: 44)
+                .background(.regularMaterial, in: .circle)
+        }
+        .buttonStyle(.plain)
+        .padding(.trailing, 16)
+        .padding(.top, 8)
+        .accessibilityLabel("Settings")
+        .accessibilityIdentifier("mytrees-settings")
+    }
+
+
 
     /// Your trees, and the picker that chooses which list.
     @ViewBuilder private var sheetBody: some View {
@@ -506,27 +540,6 @@ struct CollectView: View {
             .accessibilityIdentifier("mytrees-edit-profile")
             .accessibilityLabel(editable ? "Edit your profile" : "Sign in")
             Spacer(minLength: 0)
-            if editable {
-                // FIND PEOPLE, on the person-with-a-plus, which is exactly
-                // where Polarsteps keeps it: beside your own name, in the row
-                // of things you do to your own page (Hidde, 2026-08-26: "hoe
-                // voeg ik vrienden toe").
-                Button { findingPeople = true } label: {
-                    Image(systemName: "person.badge.plus")
-                        .font(.system(size: 16, weight: .medium))
-                        .foregroundStyle(Brand.inkSoft)
-                        .frame(width: 44, height: 44)
-                        .contentShape(.rect)
-                }
-                .buttonStyle(.plain)
-                .accessibilityLabel("Find people")
-                .accessibilityIdentifier("mytrees-find-people")
-                // No pencil. Your name and your face ARE the button (Hidde,
-                // 2026-08-26: "je kan in polarsteps dat gewoon aanpassen als
-                // je op je naam of profielfoto klikt"). A separate edit icon
-                // beside them is a second control for the thing you are
-                // already looking at, and the reference does not have one.
-            }
         }
         .accessibilityIdentifier("mytrees-who")
     }
