@@ -869,7 +869,9 @@ struct MapTab: View {
                 if walksHere.count > 1 {
                     LockedRow(feature: .walkBeyondFirst, lockGlyph: false) {
                         HStack {
-                            Text("\(walksHere.count - 1) more walks near here")
+                            Text("\(walksHere.count - 1) more "
+                                 + (walksHere.count == 2 ? "walk" : "walks")
+                                 + " near here")
                                 .font(.subheadline).foregroundStyle(Brand.ink)
                             Spacer()
                             Chip(text: "Plus", tint: Brand.gold)
