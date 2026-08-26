@@ -41,6 +41,15 @@ APP = ROOT / "ios" / "AncientTrees" / "AncientTrees"
 STRING = re.compile(r'(?:Text|Label|Button)\(\s*"((?:[^"\\]|\\.){12,})"')
 
 TICS = [
+    # The promise nobody may make. Hidde, 2026-08-26, deciding the free
+    # launch: "kun je wel nergens beloftes in de app of ergens op het product
+    # doen dat het altijd gratis blijft? Die belofte kunnen we gewoon niet
+    # maken." qa.py has guarded the website's copy against forever-claims
+    # since the paywall rule; the app's strings had no such guard until now.
+    (re.compile(r"\b(?:free forever|forever free|always (?:be )?free|"
+                r"altijd gratis|blijft gratis|gratis blijven|"
+                r"never (?:pay|charge)|we will never|we will always)\b", re.I),
+     "forever-promise: pricing is Hidde's and undecided, stay vaguer"),
     # The aphorism pretending to be help. A conclusion is not an instruction.
     (re.compile(r"\bThat is (?:how|what|why|the)\b", re.I),
      "aphorism: states a conclusion where the reader wants an instruction"),

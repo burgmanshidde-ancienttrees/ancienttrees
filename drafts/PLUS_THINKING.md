@@ -107,6 +107,18 @@ bedenken" for Plus. The feedback button (built 2026-08-26) is the instrument:
 the open wishes it collects are the material the next Plus features get
 designed from.
 
+**No promise, anywhere, that anything stays free (Hidde, later the same
+day).** "Die belofte kunnen we gewoon niet maken... blijft dan wat vager."
+This closes the three-sentence Profile line this note once proposed: the
+public copy states facts only ("free while we build" at most) and promises
+nothing, in the app, on the site, in mail. Verified 2026-08-26: no such
+promise exists in any app string or site page; qa.py already fails a deploy
+on forever-claims, and copycheck.py now carries the same guard for the app's
+strings. The no-clawback contract stays internal discipline only. His
+reasoning alongside it, recorded because it tempers the walks line: he
+doubts walks alone convert strongly, so the public Plus story stays vague
+until real users prove what converts.
+
 ## The freeze, and the four legs (answering his corner fear, 2026-08-26)
 
 His fear, in his words: do we paint ourselves into a corner "waar niemand
