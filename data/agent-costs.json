@@ -3443,6 +3443,42 @@
     "note": "session wrote the one verified tree directly rather than dispatching a write-stories pass for a single tree; merged, city intro/meta/FAQ counts updated 4->5, build+preflight+qa clean",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "ios app (TreeDetail.swift)",
+    "kind": "other",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session work, not dispatched: removed a ToolbarSpacer call guarded only by #available(iOS 26.0,*) that could not compile on CI's actual Xcode 16.4 toolchain (the workflow's xcode-select to 26.6 fails silently and falls back); ios.yml had been red for at least 3 pushes",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "alicante",
+    "kind": "verify",
+    "tokens": 75000,
+    "trees": 2,
+    "note": "dispatched pass: completed the Portal de Elche fig quartet (ali_012, ali_013, register ids 302/300), re-examined and overturned a stale avoid-fragmenting call on ali_013 against a newly found press source naming the grove as a named quartet",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "palma-de-mallorca",
+    "kind": "verify",
+    "tokens": 55000,
+    "trees": 0,
+    "note": "dispatched pass: register cluster fully exhausted (all 10 within-city entries already published or blocked), found and blocked one dead tree (Bellaombra de la Placa de la Reina, split and removed 2020) and left one promising unregistered ficus as a lead",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "las-vegas",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 3,
+    "note": "session work, not dispatched: restored 3 fully-verified, already-written state-champion trees (Camperdown Elm, Buddhist Pine, Texas Olive) that a 2026-08-19/20 pass had pulled for being too small, a reason CLAUDE.md explicitly forbids; merged from data/leads, 8 -> 11 trees, intro/FAQ counts fixed",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
