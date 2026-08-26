@@ -10,6 +10,35 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+
+## 2026-08-26 (session) - the short credit, written once
+
+He answered yesterday's open question with "ingekort natuurlijk", so the app's
+wording wins and the website's long one goes.
+
+What it was: the website printed "Photo: Foo Bar, via Wikimedia Commons (CC BY-SA
+4.0)" and the app printed "Foo Bar - CC BY-SA 4.0", because the trimming lived in
+Swift and the website never had it. Same photograph, two credits.
+
+creditName() in images.ts owns the rule now. The website calls it in the three
+places that print a figcaption, and the feed carries its output per photograph as
+`attribution_short`, so the app formats a name it is handed. 341 of 370 live
+photographs are shortened by it; the ones that are not are the ones where the
+host is the only name we have, and those keep it. The Swift trimming is deleted
+rather than kept as a fallback, so the rule now exists once. Each surface keeps
+its own punctuation, because that is presentation: parentheses on the web, a
+middot in the app. qa.py refuses a photo host named in Swift code.
+
+Verified: /geneva/grange-cedar prints "Photo: MHM55 (CC BY-SA 4.0)" live, the
+feed carries the short names, and the app builds and sweeps clean. The app's own
+credit line sits below the fold on the tree page, and appsweep cannot scroll, so
+that one string is read from the code rather than photographed.
+
+**And yesterday's red gate is answered.** ios.yml had been failing on
+Collect.swift's type-check since 6857185c; the run on 31a0302e got past it with
+19 tests passing, so breaking that expression up worked on the runner. The two
+failures left there are the other session's, not this: a lane-picker assertion
+and a SweepFrames launch.
 ## 2026-08-26 - The content gap that was two of our own pages
 
 Session, from the daily digest. The digest reported 'alameda dos platanos' as
