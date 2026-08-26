@@ -48,13 +48,19 @@ overlap. 'vegas trees' and 'oldest tree in dc' still read as leads while
 /las-vegas and /washington-dc exist. Those are real unserved demand but the
 fix is a stronger page, not a new one, so the line says to check first.
 
-FOR HIDDE: the machine is still down and this is the only thing that matters
-today. Every Claude workflow (nightly, fresh-eyes review, weekly analysis)
-has failed since 2026-08-24 02:52 UTC, twenty-plus runs, each dying in under
-a second with zero model calls, cost 0 and modelUsage empty. That is a
-credential fault, not our code, and not the shared usage pool either, since
-sessions on the same subscription work. Regenerate with `claude setup-token`
-and `gh secret set CLAUDE_CODE_OAUTH_TOKEN`. Nobody but you can do it.
+NOT A FAULT, and this session had it wrong until Hidde corrected it: every
+Claude workflow (nightly, fresh-eyes review, weekly analysis) has failed since
+2026-08-24 02:52 UTC because HIS ACCOUNT IS OUT OF TOKENS, not because the
+credential went stale. Do not regenerate CLAUDE_CODE_OAUTH_TOKEN; it is fine.
+The signature is exactly what CLAUDE.md's capacity doctrine already describes,
+'attempts that hit the usage limit die in seconds and cost nothing': the 02:52
+run spent 31 minutes and finished the allowance, and every run after it dies on
+its first request with zero model calls. It resumes when the window resets.
+
+The lesson for the next session that opens on a wall of red runs: read the burn
+rate before calling it breakage. data/run-health.json has it per day, and the
+three days before the stop were 214, 221 and 329 minutes for 66, 51 and 133
+trees. That is the shape of an allowance being spent, not a machine failing.
 
 ## 2026-08-26 - Night run 2026-08-26 06:23 UTC ended without saying anything
 
