@@ -19,6 +19,17 @@ export const ANALYTICS_TOKEN = "fcbbfb8b426c4f6aa2066b00be6454f6";
 // build_site.py:847.
 export const CONTACT_EMAIL = "info@ancienttrees.app";
 
+// Where "Sponsor this project" sends people. EMPTY until Hidde has opened the
+// account, because only he may: a payment provider means his name, his bank
+// details and his agreement to somebody's terms (hard rules 2 and 5).
+//
+// While it is empty the sponsor page carries no button and noindexes itself,
+// and the footer does not link it, so nothing half-built faces a reader.
+// Filling this one line turns all three on. Ko-fi is the recommendation
+// (0 percent platform fee on donations, tiers set in his own dashboard, no
+// company details needed); a Stripe payment link works here unchanged.
+export const SPONSOR_URL = "";
+
 export const TITLE_MAX = 60;
 export const DESC_MAX = 155;
 // The floor a generated description should reach before it is allowed to stop

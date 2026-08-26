@@ -1,0 +1,67 @@
+---
+// The sponsor page. Hidde, 2026-08-26: "ik zou wel 'sponsor this project'
+// gewoon live zetten, zodat we hopelijk in ieder geval de kosten kunnen
+// dekken", and with it "zodat apple niet mee profiteert", which is why the
+// ask lives on the web where no store takes a cut.
+//
+// A utility page like /privacy, /terms and /app rather than a blueprint
+// contract: it targets no query and enters no internal-link scheme, so hard
+// rule 7 is not in play. It carries no price of its own for the same reason
+// the app cannot: the amounts live in Hidde's own provider dashboard, which
+// keeps pricing where hard rule 2 puts it.
+//
+// SPONSOR_URL empty means: no button, noindex, and no footer link. Nothing
+// here promises that anything stays free, because that promise is his to
+// make and he has ruled against making it.
+import Base from "../layouts/Base.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
+import { SPONSOR_URL } from "../lib/site-config";
+import { submitLink } from "../lib/tree-copy";
+import { pressNumbers } from "../lib/press";
+
+const n = pressNumbers();
+const live = SPONSOR_URL.length > 0;
+const canonical = `${BASE_URL}/sponsor`;
+const crumbItems: [string, string | null][] = [["Home", BASE_URL], ["Sponsor", null]];
+
+const description = `Ancient Trees maps ${n.trees} remarkable old trees in ${n.cities} cities, with no ads and no tracking. Sponsoring pays for what it costs to run.`;
+
+const graph = [
+  ...SITE_SCHEMA,
+  breadcrumbSchema(crumbItems, canonical),
+  {
+    "@type": "WebPage",
+    name: "Sponsor Ancient Trees",
+    description,
+    url: canonical,
+  },
+];
+
+const headExtra = (live ? "" : '<meta name="robots" content="noindex">') + ldScript(graph);
+---
+<Base title="Sponsor Ancient Trees" description={description} canonical={canonical} headExtra={headExtra}>
+<main class="content-page">
+  <Breadcrumbs items={crumbItems} />
+  <h1>Sponsor this project</h1>
+  <p class="lede">Ancient Trees maps {n.trees} remarkable old trees in {n.cities} cities across {n.countries} countries, each one checked against at least two independent sources before it goes on the map. There are no ads on it and nothing follows you around. Sponsoring pays for what that costs to run.</p>
+  <div class="prose-block">
+    <h2>What it pays for</h2>
+    <p>The servers, the map tiles and the database behind {n.trees} trees and {n.photos} photographs, which is the part that arrives as a monthly bill whether anybody visits or not. After that it pays for the next city: finding the trees, checking them against registers and local sources, placing every pin and writing what makes each tree worth the walk.</p>
+
+    <h2>What you get for it</h2>
+    <p>Nothing extra, and that is the honest answer. Sponsoring is not a subscription and it buys no feature; it pays for the trees that are not on the map yet. If you would rather help without money, there are two things worth more than a few euros: <a href={submitLink("tree")}>send us a tree we are missing</a>, or tell us when something on a page is wrong. People who stood in front of the tree are how this map gets better.</p>
+
+    {live ? (
+      <p>
+        <a class="go-btn" href={SPONSOR_URL} rel="noopener" data-ev="sponsor-open">Sponsor Ancient Trees</a>
+      </p>
+    ) : (
+      <p class="suggest">The sponsor page is being set up. In the meantime, <a href={submitLink("tree")}>a tree we are missing</a> helps just as much.</p>
+    )}
+
+    <h2>Who is behind it</h2>
+    <p>One person in the Netherlands, working on this most days, with the research and the map built out in the open. The project has never taken money from anyone, which is exactly why the bill is worth mentioning at all. Questions about any of it: <a href={submitLink("correction")}>send a message</a>.</p>
+  </div>
+</main>
+</Base>
