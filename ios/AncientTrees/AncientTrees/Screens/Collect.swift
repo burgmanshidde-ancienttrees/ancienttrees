@@ -43,6 +43,10 @@ struct CollectView: View {
     /// ships unlooked at.
     @State private var openSettings = ProcessInfo.processInfo.arguments.contains("-settings")
     @State private var editingProfile = ProcessInfo.processInfo.arguments.contains("-profile-edit")
+    @State private var findingPeople = ProcessInfo.processInfo.arguments.contains("-people")
+    /// Opens at half, which shows the face, the numbers and the first tree:
+    /// enough to read at a glance and enough map left to see where you have been.
+    @State private var sheetHeight: SheetHeight = .half
     @Environment(Profiles.self) private var profiles
 
     // TWO lanes, not three. "Collected" and "Added by you" were separate until
@@ -120,6 +124,92 @@ struct CollectView: View {
     }
 
     var body: some View {
+        // THE POLARSTEPS SHAPE, properly (Hidde, 2026-08-26: "zorgen dat de
+        // kaart full page erachter staat, naam en foto dan op de lijst met wat
+        // stats en dan bomen en daar kan je selecteren").
+        //
+        // Their page about you is a map filling the screen with a sheet lying
+        // over it, and everything about you lives on that sheet: face, name,
+        // numbers, then your things. Ours had the map as a card inside a
+        // scrolling page, which is the same ingredients in the wrong order and
+        // is also what let a card get sliced by the pinned picker: content
+        // scrolling under a floating control has nowhere to hide.
+        //
+        // The sheet is the one this app already uses on the map screen, so the
+        // drag, the three heights and the scroll arbitration are the ones that
+        // were argued out there rather than a second implementation.
+        ZStack(alignment: .top) {
+            fullMap
+            BottomSheet(height: $sheetHeight, header: { sheetHeader }) {
+                sheetBody
+            }
+        }
+        .brandGround()
+        .toolbar(.hidden, for: .navigationBar)
+        .task {
+            if openSettings { openSettings = false; navigator.push = .profile }
+        }
+        .sheet(isPresented: $editingProfile) { ProfileEditor() }
+        .sheet(isPresented: $findingPeople) { PeopleView() }
+        .sheet(isPresented: $signingIn) {
+            SignInSheet(reason: .keepCollection(saved.savedCount), localCount: saved.savedCount)
+                .environment(account).environment(saved)
+        }
+    }
+
+    /// The map behind everything, framed on what you have.
+    @ViewBuilder private var fullMap: some View {
+        let points = allVisited.map { (lat: $0.lat, lng: $0.lng) }
+            + sightings.yoursOnly.map { (lat: $0.lat, lng: $0.lng) }
+        // A MAP EITHER WAY. With nothing collected the frame falls back to
+        // where you are standing, because a grey void behind the sheet reads
+        // as a screen that failed to load, while a map of your own city reads
+        // as an invitation and is the same picture you will see filling up.
+        CollectionMap(points: points.isEmpty ? [(lat: origin.lat, lng: origin.lng)] : points)
+            .ignoresSafeArea()
+        .overlay(alignment: .topTrailing) {
+            // Settings in the corner of the map, which is where Polarsteps
+            // keeps its gear and where it was already going.
+            Button { navigator.push = .profile } label: {
+                Image(systemName: "gearshape")
+                    .font(.system(size: 18, weight: .medium))
+                    .foregroundStyle(Brand.ink)
+                    .frame(width: 44, height: 44)
+                    .background(.regularMaterial, in: .circle)
+            }
+            .buttonStyle(.plain)
+            .padding(.trailing, 16)
+            .accessibilityLabel("Settings")
+            .accessibilityIdentifier("mytrees-settings")
+        }
+    }
+
+    /// Face, name, numbers: the part of the sheet that never scrolls away.
+    private var sheetHeader: some View {
+        VStack(spacing: 14) {
+            whoYouAre
+            statsRow
+        }
+        .padding(.horizontal, 20)
+        .padding(.bottom, 6)
+    }
+
+    /// Your trees, and the picker that chooses which list.
+    @ViewBuilder private var sheetBody: some View {
+        VStack(alignment: .leading, spacing: 20) {
+            if allVisited.isEmpty && saved.favourites.isEmpty { mission }
+            if !account.isSignedIn && saved.savedCount > 0 { backupBar }
+            if !saved.entries.isEmpty || !sightings.yoursOnly.isEmpty {
+                lanePicker
+                laneContent
+            }
+            Color.clear.frame(height: 90)
+        }
+        .padding(.horizontal, 20)
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+
+    private var oldBody: some View {
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 28, pinnedViews: [.sectionHeaders]) {
                 HStack(alignment: .firstTextBaseline) {
@@ -250,6 +340,9 @@ struct CollectView: View {
         .sheet(isPresented: $editingProfile) {
             ProfileEditor()
         }
+        .sheet(isPresented: $findingPeople) {
+            PeopleView()
+        }
         .sheet(isPresented: $signingIn) {
             SignInSheet(reason: .keepCollection(saved.savedCount), localCount: saved.savedCount)
                 .environment(account).environment(saved)
@@ -271,7 +364,20 @@ struct CollectView: View {
         .pickerStyle(.segmented)
         .accessibilityIdentifier("collect-lane")
         .padding(.vertical, 10)
-        .background(Brand.ground)
+        // THE BACKGROUND HAS TO REACH THE TOP OF THE SCREEN, not just cover
+        // the control (Hidde, 2026-08-26, on a card sliced in half by it:
+        // "dit moet natuurlijk niet kunnen").
+        //
+        // This page has no navigation bar, so its content scrolls up under
+        // the status bar. A pinned header painted only inside its own bounds
+        // therefore had a live strip of photograph above it, and a card
+        // arriving at that moment was cut across the middle with its top half
+        // still showing. Extending the fill into the top safe area is what
+        // every pinned control on iOS does, and it costs nothing anywhere
+        // else: below the top the extra fill is off screen.
+        .background {
+            Brand.ground.ignoresSafeArea(edges: .top)
+        }
     }
 
     /// Everything the picker switches, rebuilt rather than reshuffled.
@@ -370,6 +476,20 @@ struct CollectView: View {
             }
             Spacer(minLength: 0)
             if account.isSignedIn {
+                // FIND PEOPLE, on the person-with-a-plus, which is exactly
+                // where Polarsteps keeps it: beside your own name, in the row
+                // of things you do to your own page (Hidde, 2026-08-26: "hoe
+                // voeg ik vrienden toe").
+                Button { findingPeople = true } label: {
+                    Image(systemName: "person.badge.plus")
+                        .font(.system(size: 16, weight: .medium))
+                        .foregroundStyle(Brand.inkSoft)
+                        .frame(width: 44, height: 44)
+                        .contentShape(.rect)
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("Find people")
+                .accessibilityIdentifier("mytrees-find-people")
                 Button { editingProfile = true } label: {
                     Image(systemName: "square.and.pencil")
                         .font(.system(size: 16, weight: .medium))
@@ -408,6 +528,8 @@ struct CollectView: View {
             .accessibilityLabel("Your trees on the map")
         }
     }
+
+    private var statsRow: some View { statsCard }
 
     private var statsCard: some View {
         VStack(spacing: 14) {

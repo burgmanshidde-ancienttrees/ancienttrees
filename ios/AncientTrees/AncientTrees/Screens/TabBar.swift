@@ -73,6 +73,14 @@ struct TabBar: View {
 
     let selected: Int
     let select: (Int) -> Void
+    /// The pill has to be ONE view that moves, not a different view appearing
+    /// in each item, or the change happens by fading two rectangles in and out
+    /// (Hidde, 2026-08-26: "de animatie is gek als je over de floating bar van
+    /// selectiepagina wisselt, dat heeft volgens mij een standaard ios
+    /// animatie die je niet gebruikt"). He is right that there is a standard
+    /// one: iOS slides the selection between segments, and matchedGeometry is
+    /// how SwiftUI does exactly that.
+    @Namespace private var pill
     /// The deed, handed in rather than assumed, because it is not a tab.
     var collect: () -> Void = {}
 
@@ -80,7 +88,11 @@ struct TabBar: View {
         HStack(spacing: 10) {
             HStack(spacing: 4) {
                 ForEach(Array(Self.items.enumerated()), id: \.offset) { i, item in
-                    Button { select(i) } label: {
+                    Button {
+                        // The slide, and nothing else animated: a tab change
+                        // itself is instant on iOS and always has been.
+                        withAnimation(.snappy(duration: 0.28)) { select(i) }
+                    } label: {
                         VStack(spacing: 3) {
                             Image(systemName: item.symbol)
                                 .font(.system(size: 21, weight: .regular))
@@ -111,6 +123,7 @@ struct TabBar: View {
                                 Capsule()
                                     .fill(Brand.ground.opacity(0.92))
                                     .shadow(color: .black.opacity(0.06), radius: 3, y: 1)
+                                    .matchedGeometryEffect(id: "tab-pill", in: pill)
                             }
                         }
                         .contentShape(.rect)
