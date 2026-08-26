@@ -11,6 +11,73 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 <!-- archive-index -->
 
 
+## 2026-08-26 (evening session) - The app gets Polarsteps' shape, and a social half
+
+His evening, in his own order, all of it built and pushed. The findings
+themselves are in UX_AUDIT.md under today's date; this is what changed.
+
+**The navigation.** Three destinations in a glass pill (Map, Discover, My
+trees) with the camera on its own disc beside it, which is the Polarsteps
+shape he asked for: "3 iconen samen en dan de camera los want dat is geen
+pagina maar een actie". Monochrome, no green ("flikker op met dat hele
+groen"), and the selected item says so twice, filled AND wearing a lighter
+pill that slides between tabs with matchedGeometry, because "die animatie is
+gek, dat heeft volgens mij een standaard ios animatie die je niet gebruikt".
+That replaces the five-slot bar of 08-24, whose whole reason was giving the
+camera a middle.
+
+**My trees is the "Ik" page.** Map full screen behind, sheet over it carrying
+face, name, three bare numbers with hairlines, then your trees with the lane
+picker. Settings behind the gear on the map.
+
+**And he opened the personal-data gate to get there** ("extra persoonsgegevens
+moet gewoon"), which is the explicit yes DECISIONS.md 2026-08-14 requires. So
+supabase/profiles.sql now holds a display name, an avatar url and a follow
+graph, all cascading off auth.users so deleting an account still takes every
+piece. Finding people is on the person-with-a-plus beside your own name,
+searching by chosen name only. Following COUNTS and does nothing else yet:
+saves are private per person, so letting people see each other's trees is one
+more decision about somebody else's data and it is his.
+
+**Twelve findings from his phone**, all done: the map's list bound to the map's
+own rectangle rather than a radius that widened to fifty kilometres; the sheet
+obeying the scroll rule its own file documents; "no navigation app installed"
+fixed at the root with https universal links after three fixes that kept asking
+maps://; the species moved up beside age and pin; the camera in the
+photograph's corner on every tree; a report icon where the ellipsis was;
+Discover more with city, species, country and the collections a tree is in; a
+ticket notice at the top in the pin's own blue; save counts from the server,
+shown only from one; the photo and the map inset swapping in place instead of
+throwing away where you were reading; sticky search on Discover.
+
+**And a real bug underneath all of it:** favourites and collected shared one
+row, so taking the heart off a tree you had photographed threw away the fact
+that you stood in front of it. Two independent lists now, old rows read as
+favourites, nobody loses a collection.
+
+**What the eyes caught that the compiler could not**, and it is the argument
+for the sweep: a sticky search bar that compiled cleanly and took the whole
+Discover screen down on launch; a sentence running under the map inset; a
+button wrapping onto two lines; and a bare .fill image in the collection map
+that dragged the sheet over it to about three screens wide, which is a trap
+TreeDetail's hero already carries a note about. The map was also still being
+rendered at the old card's 190 points and stretched over the whole screen.
+
+**The working agreement changed today** (CLAUDE.md): in the APP we push before
+the looking, because he is the only installer and parallel beats serial. The
+check still runs and still reports. Anything that reaches strangers on landing,
+the website and outbound mail above all, keeps its check in front.
+
+FOR HIDDE, three things that are yours and not mine:
+- Following shows a follower nothing. Opening collections to followers is a
+  decision about other people's data.
+- User photo upload needs moderation before App Store review.
+- The camera is still a sign-in wall for a signed-out person, your open call
+  from 08-25.
+
+Supabase is done and verified: like-counts, profiles and the avatars bucket all
+answer.
+
 ## 2026-08-26 (session) - The launch takes shape: free, clean, and everything Plus behind one switch
 
 The strategy day. Hidde ruled the launch package in one long conversation and
