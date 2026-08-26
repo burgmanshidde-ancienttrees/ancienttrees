@@ -1765,6 +1765,33 @@
    "cities": [],
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-08-26T10:21:53+00:00",
+   "date": "2026-08-26",
+   "run_id": "32957851070",
+   "minutes": 29.1,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 231,
+   "denials": 25,
+   "denials_source": "permission_denials: Bash(cat), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(if), Bash(mkdir), Bash(python3), Bash(rm), Bash(sed)",
+   "ended": "success",
+   "tokens": 49244857,
+   "claims_held": [
+    "krakow",
+    "alicante"
+   ],
+   "commits": 9,
+   "cities_touched": 1,
+   "cities": [
+    {
+     "city": "toronto",
+     "trees": 1
+    }
+   ],
+   "trees": 1,
+   "logged": true
   }
  ],
  "schedule_changes": [
