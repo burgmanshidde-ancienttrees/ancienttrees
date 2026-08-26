@@ -29,7 +29,14 @@ struct TreeDetail: View {
     @Environment(Account.self) private var account
     @Environment(Nudge.self) private var nudge
     @State private var reporting = false
+    /// What the menu item they chose says, seeded into the report.
+    @State private var reportOpening: String?
     @State private var placing = false
+
+    private func report(_ opening: String) {
+        reportOpening = opening
+        reporting = true
+    }
     @State private var removing = false
     @Environment(Navigator.self) private var navigator
 
@@ -94,6 +101,44 @@ struct TreeDetail: View {
                         subject: tree.name,
                         message: "\(tree.name), \(tree.city).",
                         label: "Share this tree")
+                // THE SAME ELLIPSIS ON OUR TREES (Hidde, 2026-08-26: "we hadden
+                // daar rechtsboven drie puntjes bedacht waar je eigenlijk alle
+                // feedback kon geven... goed om die ook te herhalen op de
+                // algehele boompagina's die wij maken").
+                //
+                // The menu existed only on a tree you added yourself, so the
+                // 1,840 trees where our own facts might be wrong had no way to
+                // say so beyond a thumbs down. That is backwards: readers are
+                // the correction layer on this whole project, and the pages
+                // that most need correcting are ours.
+                //
+                // Same glyph, same place, different verbs. Nothing here edits
+                // anything, because these are not the reader's trees to edit:
+                // every item opens the report we already have, prefilled with
+                // this tree, which is the channel Step 0b already processes.
+                ToolbarItem(placement: .topBarTrailing) {
+                    Menu {
+                        Button { report("Something here is wrong:") } label: {
+                            Label("Something is wrong here", systemImage: "exclamationmark.bubble")
+                        }
+                        Button { report("The pin is in the wrong place.") } label: {
+                            Label("The pin is in the wrong place", systemImage: "mappin.slash")
+                        }
+                        Button { report("I could not tell which tree it was.") } label: {
+                            Label("I could not tell which tree", systemImage: "questionmark.circle")
+                        }
+                        Button { report("This tree is gone.") } label: {
+                            Label("This tree is gone", systemImage: "xmark.seal")
+                        }
+                    } label: {
+                        Image(systemName: "ellipsis.circle")
+                            .font(.system(size: 17, weight: .semibold))
+                            .frame(width: 44, height: 44)
+                            .contentShape(.rect)
+                    }
+                    .accessibilityIdentifier("ours-menu")
+                    .accessibilityLabel("More")
+                }
             } else {
                 // AN ELLIPSIS, TOP RIGHT, which he asked me to check rather
                 // than assume (Hidde, 2026-08-25: "is het niet meer conventie om
@@ -150,7 +195,9 @@ struct TreeDetail: View {
         } message: {
             Text("Your photograph goes with it. What you have already sent us stays sent.")
         }
-        .sheet(isPresented: $reporting) { ContributeView(about: tree) }
+        .sheet(isPresented: $reporting) {
+            ContributeView(about: tree, opening: reportOpening)
+        }
         .fullScreenCover(isPresented: $placing) {
             // Full screen, because the job is to find one trunk on a map and a
             // sheet would give it half a phone to do it in.
