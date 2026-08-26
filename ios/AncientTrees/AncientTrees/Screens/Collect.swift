@@ -26,6 +26,7 @@
 // intention while leaving the hook free.
 
 import SwiftUI
+import CoreLocation
 
 struct CollectView: View {
     let catalogue: Catalogue
@@ -48,6 +49,8 @@ struct CollectView: View {
     @State private var openSettings = ProcessInfo.processInfo.arguments.contains("-settings")
     @State private var editingProfile = ProcessInfo.processInfo.arguments.contains("-profile-edit")
     @State private var findingPeople = ProcessInfo.processInfo.arguments.contains("-people")
+    @State private var sheetHeight: SheetHeight = .half
+    @State private var selectedTree: Tree?
     @Environment(Profiles.self) private var profiles
 
     // TWO lanes, not three. "Collected" and "Added by you" were separate until
@@ -125,36 +128,21 @@ struct CollectView: View {
     }
 
     var body: some View {
-        // ONE SCROLL VIEW, no sheet, no arbitration (Hidde, 2026-08-26: "ik
-        // wil niet scrollen met die lijst op de my trees pagina ... bij
-        // polarsteps gaat dit gewoon goed").
-        //
-        // I had put a three-height draggable sheet here, which means one
-        // finger has to choose between moving the sheet and scrolling the
-        // list, and that choice is exactly what kept going wrong. The map
-        // screen needs that arbitration because the map underneath is the
-        // thing you are using. Here the map is a cover picture, and the
-        // convention for a page about you with a cover is a single scroller
-        // in which the cover scrolls away: Instagram, Strava, X and
-        // Polarsteps' own trip pages all do that, and none of them has a
-        // gesture to get wrong.
-        //
-        // It also fixes the second half of what he reported, that the profile
-        // kept opening while he swiped: a Button inside a plain ScrollView
-        // takes taps and lets drags through, which a custom drag gesture
-        // cannot be made to do reliably.
-        ScrollView {
-            LazyVStack(alignment: .leading, spacing: 18) {
-                coverMap
-                whoYouAre.padding(.horizontal, 20)
-                statsRow.padding(.horizontal, 20)
-                actionRow.padding(.horizontal, 20)
-                sheetBody
-            }
+        // THE SAME COMPONENT THE MAP SCREEN USES (Hidde, 2026-08-26: "ik wil
+        // gewoon dezelfde interactie als op home ... je wilt deze interactie
+        // als component hebben en overal hetzelfde hebben"). Everything about
+        // how the map and the sheet behave together lives in MapWithSheet, so
+        // this page cannot get it subtly different.
+        MapWithSheet(height: $sheetHeight) {
+            coverMap
+        } header: {
+            sheetHeader
+        } content: {
+            sheetBody
+        } floating: {
+            settingsButton.frame(maxWidth: .infinity, alignment: .trailing)
         }
         .brandGround()
-        .ignoresSafeArea(edges: .top)
-        .overlay(alignment: .topTrailing) { settingsButton }
         .toolbar(.hidden, for: .navigationBar)
         .task {
             if openSettings { openSettings = false; navigator.push = .profile }
@@ -165,6 +153,93 @@ struct CollectView: View {
             SignInSheet(reason: .keepCollection(saved.savedCount), localCount: saved.savedCount)
                 .environment(account).environment(saved)
         }
+    }
+
+    /// Face, name, numbers and the one thing you make: the part that never
+    /// scrolls away, which is also what you grab to move the sheet.
+    private var sheetHeader: some View {
+        VStack(spacing: 12) {
+            whoYouAre
+            statsRow
+            actionRow
+        }
+        .padding(.horizontal, 20)
+        .padding(.bottom, 8)
+    }
+
+    /// Your trees, and the picker that chooses which list.
+    @ViewBuilder private var sheetBody: some View {
+        VStack(alignment: .leading, spacing: 18) {
+            if allVisited.isEmpty && saved.favourites.isEmpty { mission }
+            if !saved.entries.isEmpty || !sightings.yoursOnly.isEmpty {
+                lanePicker
+                laneContent
+            }
+            if !account.isSignedIn && saved.savedCount > 0 { backupBar }
+            Color.clear.frame(height: 96)
+        }
+        .padding(.horizontal, 20)
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+
+    /// The map under the sheet, and it MOVES: the same live map the map screen
+    /// draws, not a snapshot, so panning and zooming work as they do
+    /// everywhere else.
+    @ViewBuilder private var coverMap: some View {
+        let points = allVisited.map { (lat: $0.lat, lng: $0.lng) }
+            + sightings.yoursOnly.map { (lat: $0.lat, lng: $0.lng) }
+        if countries > 1 {
+            GlobeMap(points: points)
+        } else {
+            TreeMap(trees: allVisited,
+                    mine: sightings.yoursOnly.map {
+                        (id: $0.id, lat: $0.lat, lng: $0.lng, name: $0.name) },
+                    collected: Set(saved.collected.map(\.treeId)),
+                    onSelectMine: { navigator.push = .mine($0) },
+                    onSelectTree: { navigator.push = .tree($0) },
+                    focus: centreOfYours,
+                    spanMeters: spanOfYours,
+                    selected: $selectedTree)
+        }
+    }
+
+    /// The middle of what you have, so the map opens on your collection.
+    private var centreOfYours: CLLocationCoordinate2D? {
+        let all = allVisited.map { (lat: $0.lat, lng: $0.lng) }
+            + sightings.yoursOnly.map { (lat: $0.lat, lng: $0.lng) }
+        // WHERE YOU ARE when you have nothing yet. Handing the map no focus
+        // opened it on the whole Atlantic, which is a picture of nowhere; the
+        // point of this map on an empty page is that it shows the streets your
+        // first tree will appear in.
+        guard !all.isEmpty else {
+            return CLLocationCoordinate2D(latitude: origin.lat, longitude: origin.lng)
+        }
+        return CLLocationCoordinate2D(
+            latitude: all.map(\.lat).reduce(0, +) / Double(all.count),
+            longitude: all.map(\.lng).reduce(0, +) / Double(all.count))
+    }
+
+    private var spanOfYours: CLLocationDistance {
+        let lats = allVisited.map(\.lat) + sightings.yoursOnly.map(\.lat)
+        let lngs = allVisited.map(\.lng) + sightings.yoursOnly.map(\.lng)
+        guard let loLat = lats.min(), let hiLat = lats.max(),
+              let loLng = lngs.min(), let hiLng = lngs.max() else { return 3000 }
+        let m = max((hiLat - loLat) * 111_000, (hiLng - loLng) * 111_000 * 0.62)
+        return max(m * 1.4, 1200)
+    }
+
+    private var settingsButton: some View {
+        Button { navigator.push = .profile } label: {
+            Image(systemName: "gearshape")
+                .font(.system(size: 18, weight: .medium))
+                .foregroundStyle(Brand.ink)
+                .frame(width: 44, height: 44)
+                .background(.regularMaterial, in: .circle)
+        }
+        .buttonStyle(.plain)
+        .padding(.trailing, 16)
+        .accessibilityLabel("Settings")
+        .accessibilityIdentifier("mytrees-settings")
     }
 
     /// The row Polarsteps runs under the numbers: the thing you make, wide and
@@ -205,53 +280,10 @@ struct CollectView: View {
         }
     }
 
-    /// The cover: your own trees, scrolling away as you read down.
-    @ViewBuilder private var coverMap: some View {
-        let points = allVisited.map { (lat: $0.lat, lng: $0.lng) }
-            + sightings.yoursOnly.map { (lat: $0.lat, lng: $0.lng) }
-        CollectionMap(points: points.isEmpty ? [(lat: origin.lat, lng: origin.lng)] : points)
-            .frame(height: 240)
-            .clipped()
-    }
-
-    /// Settings, floating over the cover in the corner Polarsteps uses.
-    private var settingsButton: some View {
-        Button { navigator.push = .profile } label: {
-            Image(systemName: "gearshape")
-                .font(.system(size: 18, weight: .medium))
-                .foregroundStyle(Brand.ink)
-                .frame(width: 44, height: 44)
-                .background(.regularMaterial, in: .circle)
-        }
-        .buttonStyle(.plain)
-        .padding(.trailing, 16)
-        .padding(.top, 8)
-        .accessibilityLabel("Settings")
-        .accessibilityIdentifier("mytrees-settings")
-    }
 
 
 
-    /// Your trees, and the picker that chooses which list.
-    @ViewBuilder private var sheetBody: some View {
-        VStack(alignment: .leading, spacing: 20) {
-            if allVisited.isEmpty && saved.favourites.isEmpty { mission }
-            // YOUR TREES FIRST, the nudge after. The sign-in card sat above
-            // the list and pushed the thing this page exists for below the
-            // fold, so at half height you saw your numbers, an invitation to
-            // sign in, and none of your trees.
-            if !saved.entries.isEmpty || !sightings.yoursOnly.isEmpty {
-                lanePicker
-                laneContent
-            }
-            if !account.isSignedIn && saved.savedCount > 0 { backupBar }
-            // Clear of the floating bar, which is 52 tall plus its own
-            // padding and would otherwise sit over the last card.
-            Color.clear.frame(height: 96)
-        }
-        .padding(.horizontal, 20)
-        .frame(maxWidth: .infinity, alignment: .leading)
-    }
+
 
     private var oldBody: some View {
         ScrollView {

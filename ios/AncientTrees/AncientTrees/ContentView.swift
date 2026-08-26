@@ -238,6 +238,8 @@ struct ContentView: View {
             }
         case .profile:
             ProfileView(catalogue: cat)
+        case .collectionMap:
+            CollectionMapPage(catalogue: cat)
         case .treeMap(let id):
             if let t = cat.tree(id) {
                 TreeMapPage(tree: t, catalogue: cat)
@@ -313,11 +315,25 @@ struct ContentView: View {
                     // and which AllTrails does too: a reading page has no bar
                     // and back is the way out. An EmptyView reserves no space,
                     // so the page grows into it rather than leaving a gap.
-                    if path(tab).wrappedValue.isEmpty {
-                        TabBar(selected: tab,
-                               select: { tabSelection.wrappedValue = $0 },
-                               collect: { openCollect() })
-                    }
+                    // ALWAYS IN THE LAYOUT, hidden rather than removed
+                    // (Hidde, 2026-08-26: "de floating menu verdwijnt nu als
+                    // ik van settings terug kom naar de andere schermen").
+                    //
+                    // It used to be inserted and removed from the safe area,
+                    // and a safeAreaInset that appears and disappears is a
+                    // known way to end up with neither: come back from a
+                    // pushed page and the inset does not always come back with
+                    // you. Keeping one bar and giving it no height on a pushed
+                    // page cannot fail that way, because there is nothing to
+                    // re-insert.
+                    let showing = path(tab).wrappedValue.isEmpty
+                    TabBar(selected: tab,
+                           select: { tabSelection.wrappedValue = $0 },
+                           collect: { openCollect() })
+                        .opacity(showing ? 1 : 0)
+                        .frame(height: showing ? nil : 0)
+                        .allowsHitTesting(showing)
+                        .animation(.easeInOut(duration: 0.18), value: showing)
                 }
                 .appObjects(self)
                 .onChange(of: navigator.collectNearby) { _, want in
