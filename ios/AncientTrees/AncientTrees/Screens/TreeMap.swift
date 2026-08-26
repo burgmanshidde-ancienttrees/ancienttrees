@@ -401,8 +401,24 @@ struct TreeMap: UIViewRepresentable {
             if let cluster = clusterHits.first {
                 // Tapping a pile zooms into it rather than opening anything,
                 // which is what Google Maps does and what a pile of pins needs.
-                map.setCenter(cluster.coordinate,
-                              zoomLevel: min(map.zoomLevel + 2.0, 17),
+                //
+                // ONE TAP HAS TO BE ENOUGH (Hidde, 2026-08-26: "ik vind dat als
+                // je een keer op het getal klikt, je in een keer zover moet
+                // inzoomen dat alles uitklapt"). This used to add a fixed two
+                // zoom levels, which has nothing to do with how far apart the
+                // trees in that particular pile stand: a bubble marked 2 over
+                // two trees fifty metres apart took three taps to come apart,
+                // and a bubble over a whole province came apart on the first.
+                // A fixed step cannot be right for both.
+                //
+                // So the pile says where to go. We cluster ourselves, so the
+                // members are known exactly, and the target is the zoom that
+                // fits their spread on screen. That guarantees separation: a
+                // spread filling the viewport puts its members hundreds of
+                // points apart, against the sixty that makes them one bubble.
+                let members = MapLayers.clusterMembers(at: cluster.coordinate)
+                map.setCenter(Coordinator.centre(of: members) ?? cluster.coordinate,
+                              zoomLevel: Coordinator.zoomToSplit(members, in: map),
                               animated: true)
                 return
             }
@@ -430,6 +446,51 @@ struct TreeMap: UIViewRepresentable {
                     parent.selected = tree
                 }
             }
+        }
+
+        /// The mean of a pile, so the camera lands on the trees rather than on
+        /// the bubble's own drawn position.
+        static func centre(of members: [CLLocationCoordinate2D]) -> CLLocationCoordinate2D? {
+            guard !members.isEmpty else { return nil }
+            var lat = 0.0, lon = 0.0
+            for c in members { lat += c.latitude; lon += c.longitude }
+            return .init(latitude: lat / Double(members.count),
+                         longitude: lon / Double(members.count))
+        }
+
+        /// The zoom at which a pile actually comes apart, rather than a step.
+        ///
+        /// Works in the same normalised web mercator the clusterer uses, so the
+        /// arithmetic here and the arithmetic that built the bubble agree by
+        /// construction. Three cases, and the last one is the reason for the
+        /// ceiling: trees on ONE coordinate never separate at any zoom, which
+        /// is not hypothetical here (a register rounding to two decimals put
+        /// six Kalopa trees on one grid point). Chasing that split would zoom
+        /// to infinity, so it stops somewhere useful instead.
+        static func zoomToSplit(_ members: [CLLocationCoordinate2D],
+                                in map: MLNMapView) -> Double {
+            let hardMax = 17.0
+            guard members.count > 1 else { return min(map.zoomLevel + 2.0, hardMax) }
+            func merc(_ c: CLLocationCoordinate2D) -> (x: Double, y: Double) {
+                let x = (c.longitude + 180.0) / 360.0
+                let lat = min(max(c.latitude, -85.05), 85.05) * .pi / 180.0
+                return (x, (1.0 - log(tan(lat) + 1.0 / cos(lat)) / .pi) / 2.0)
+            }
+            let pts = members.map(merc)
+            let dx = (pts.map(\.x).max() ?? 0) - (pts.map(\.x).min() ?? 0)
+            let dy = (pts.map(\.y).max() ?? 0) - (pts.map(\.y).min() ?? 0)
+            // Room to breathe, so the outermost pins are not on the bezel.
+            let pad = 96.0
+            let w = Swift.max(Double(map.bounds.width) - pad, 80.0)
+            let h = Swift.max(Double(map.bounds.height) - pad, 80.0)
+            var world = Double.greatestFiniteMagnitude
+            if dx > 0 { world = Swift.min(world, w / dx) }
+            if dy > 0 { world = Swift.min(world, h / dy) }
+            guard world < .greatestFiniteMagnitude else { return hardMax }
+            let z = log2(world / 512.0)
+            // Never go backwards, and always move enough to feel like something
+            // happened, even when the pile is already nearly apart.
+            return Swift.min(Swift.max(z, map.zoomLevel + 1.0), hardMax)
         }
 
         /// Pan the map and the list follows. Google Maps, Apple Maps and Airbnb
@@ -792,6 +853,44 @@ enum MapLayers {
             out.append(bubble)
         }
         apply(out, on: style, clustered: clustered)
+    }
+
+    /// The trees inside the bubble drawn at `coordinate`.
+    ///
+    /// Recomputed with the same grid that built the bubble rather than carried
+    /// on the feature, and that is not tidiness: every feature in this source
+    /// must carry exactly the SAME attribute keys or the whole source loads as
+    /// empty, 974 features in and zero out with no error (see cluster()). So
+    /// four bounding-box keys on a bubble would mean four dead keys on all
+    /// 1,800 leaves. Regrouping costs one pass over the trees, on a tap.
+    static func clusterMembers(at coordinate: CLLocationCoordinate2D) -> [CLLocationCoordinate2D] {
+        guard lastBucket != 99 else { return [] }
+        let worldPoints = 512.0 * pow(2.0, lastClusterZoom)
+        let cell = clusterCellPoints / worldPoints
+        var cells: [Int64: [CLLocationCoordinate2D]] = [:]
+        for f in leaves {
+            let c = f.coordinate
+            let x = (c.longitude + 180.0) / 360.0
+            let lat = min(max(c.latitude, -85.05), 85.05) * .pi / 180.0
+            let y = (1.0 - log(tan(lat) + 1.0 / cos(lat)) / .pi) / 2.0
+            let key = Int64(floor(x / cell)) &* 100_000 &+ Int64(floor(y / cell))
+            cells[key, default: []].append(c)
+        }
+        // A bubble is drawn at its group's mean, so the nearest mean is it.
+        // Matching on the cell the tap fell in would be wrong at low zoom: we
+        // average LATITUDE while the grid divides MERCATOR y, and those two
+        // part company as cells get tall.
+        var best: [CLLocationCoordinate2D] = []
+        var bestDistance = Double.greatestFiniteMagnitude
+        for (_, group) in cells where group.count > 1 {
+            var lat = 0.0, lon = 0.0
+            for c in group { lat += c.latitude; lon += c.longitude }
+            let dLat = lat / Double(group.count) - coordinate.latitude
+            let dLon = lon / Double(group.count) - coordinate.longitude
+            let d = dLat * dLat + dLon * dLon
+            if d < bestDistance { bestDistance = d; best = group }
+        }
+        return best
     }
 
     /// Everything drawn from the tree source. Separate from install() because
