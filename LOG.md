@@ -60,6 +60,51 @@ against that same dump: 1 finding before, 0 after.
 Pending, and the reason is not a fault: every gate run since has been CANCELLED
 mid-flight because the other session pushed on top, five times in an hour. The
 fix is proven against the dump; the green tick is still owed.
+## 2026-08-26 - The app's test suite had been dead, and my own fix was what killed it today
+
+Session, on his ask: "kun je zelf de app eens stress testen - we moeten ons
+klaar gaan maken voor live in de app en we willen geen bugs of doodlopende
+flows."
+
+SHIPPED, each one looked at on the simulator rather than grep-verified:
+- One tap opens a cluster, however tight the pile. Was a fixed +2 zoom, now the
+  zoom that fits the pile's own members. Tapped a 5 and then a 2; both opened.
+- No landscape. iPhone portrait only, iPad keeps both portrait orientations.
+  Both layout gates only ever measured a 375 point width, so sideways was
+  shipping unmeasured.
+- Walk mode opens on the whole walk. Was one tree at a fixed 1600 m, so Plantage
+  showed a corner of itself; the span now comes from the walk's extent.
+- Profile ends "Version 1.0 (1) · built 26 Aug 11:10". The DATE is the working
+  part: CFBundleVersion never changes. This exists because two mornings have now
+  gone on bugs already fixed, his phone running an older build.
+- The ellipsis menu is on OUR tree pages, not only on his own trees, each item
+  carrying its own opening line into the report.
+- Plus stopped promising map tiles offline and photo upload to the page.
+- Walking routes: 05:40 cron, and one run took the feed from 167 to 195 real
+  street routes out of 212.
+
+THE REAL FINDING, and it is the one that matters before an App Store release:
+16 UI tests exist and NONE had run in CI for days. The workflow reported "0
+passed, 0 failed", which is what it says when the test target does not compile.
+Today's cause was mine: clusterMembers is on @MainActor MapLayers and handleTap
+had no isolation, which a local Debug build waves through and strict concurrency
+refuses. Twenty lines below it in the same file, SpeciesGlyph already records
+exactly this trap. I built, saw green, and shipped.
+
+Fixed, and the suite now runs: 16 passed, 0 failed, run the way CI runs it. The
+build step now greps for error: itself and fails saying the app did not compile,
+because "0 passed, 0 failed" reads as a missing suite and means a broken build.
+
+WHAT IS STILL UNTESTED, said plainly rather than implied: signed in (so sync,
+saves across devices and account deletion), the camera, location switched ON,
+no network, a real device, day seven, and large text. Eight flows on one phone
+is not a tested app.
+
+FOR HIDDE, one product decision that is his and not a bug: the big green camera
+button, the core act, is a sign-in wall for a logged-out user. Their own
+recorded reasoning about saves says a gate in front of a feature we cannot yet
+redeem is a toll without a road.
+
 ## 2026-08-26 - The content gap that was two of our own pages
 
 Session, from the daily digest. The digest reported 'alameda dos platanos' as
