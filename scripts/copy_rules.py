@@ -25,6 +25,25 @@ BANNED_WORDS = ["hidden gem", "must-see", "breathtaking", "nestled"]
 # Hard rule 3, which says ANYWHERE and means it.
 EM_DASH = "—"
 
+# PROMISES ABOUT WHAT WE WILL NEVER DO. Hidde, 2026-08-26, finding "No ads,
+# and nothing follows you around" in copy I wrote for him: "i dont like this
+# stop saying that, were going to use google analytics once, why do you keep
+# making these false promises." He is right twice over. It is his call whether
+# this project ever runs analytics, ads or a paywall (hard rules 2 and 5), so
+# a promise in our copy takes that call away from him; and CLAUDE.md records
+# that the site has never carried a no-tracking claim, which was still true
+# until I put one on the sponsor page an hour before he caught it.
+#
+# The distinction that keeps this usable: a PRESENT-TENSE FACT is fine and is
+# what the privacy page is for ("we use a cookieless counter"). A promise
+# about the future is not, and neither is an absolute that reads as one.
+PROMISE_PHRASES = [
+    "nothing follows you around", "no tracking", "we do not track",
+    "we don't track", "never track", "no ads ever", "no ads, ever",
+    "free forever", "forever free", "always free", "will always be free",
+    "we will never", "we will always", "nothing else, ever",
+]
+
 
 def offences(text):
     """Every banned thing in one string, as (what, why) pairs."""
@@ -35,4 +54,8 @@ def offences(text):
             out.append((word, "banned filler word (CLAUDE.md Step 3)"))
     if EM_DASH in text:
         out.append(("em dash", "hard rule 3: never, anywhere"))
+    for phrase in PROMISE_PHRASES:
+        if phrase in low:
+            out.append((phrase, "promise about what we will never do: that call "
+                                "is Hidde's, so state a present fact instead"))
     return out

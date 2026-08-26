@@ -25,7 +25,7 @@ const live = SPONSOR_URL.length > 0;
 const canonical = `${BASE_URL}/sponsor`;
 const crumbItems: [string, string | null][] = [["Home", BASE_URL], ["Sponsor", null]];
 
-const description = `Ancient Trees maps ${n.trees} remarkable old trees in ${n.cities} cities, with no ads and no tracking. Sponsoring pays for what it costs to run.`;
+const description = `Ancient Trees maps ${n.trees} remarkable old trees in ${n.cities} cities, each one checked and placed by hand. Sponsoring pays for what it costs to run.`;
 
 const graph = [
   ...SITE_SCHEMA,
@@ -44,7 +44,7 @@ const headExtra = (live ? "" : '<meta name="robots" content="noindex">') + ldScr
 <main class="content-page">
   <Breadcrumbs items={crumbItems} />
   <h1>Sponsor this project</h1>
-  <p class="lede">Ancient Trees maps {n.trees} remarkable old trees in {n.cities} cities across {n.countries} countries, each one checked against at least two independent sources before it goes on the map. There are no ads on it and nothing follows you around. Sponsoring pays for what that costs to run.</p>
+  <p class="lede">Ancient Trees maps {n.trees} remarkable old trees in {n.cities} cities across {n.countries} countries, each one checked against at least two independent sources before it goes on the map. Sponsoring pays for what that costs to run.</p>
   <div class="prose-block">
     <h2>What it pays for</h2>
     <p>The servers, the map tiles and the database behind {n.trees} trees and {n.photos} photographs, which is the part that arrives as a monthly bill whether anybody visits or not. After that it pays for the next city: finding the trees, checking them against registers and local sources, placing every pin and writing what makes each tree worth the walk.</p>
