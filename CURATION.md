@@ -9,6 +9,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-26 (night window) - Sardinia: a "worth it" vote on sar_003, no action needed
+
+Submission #39 (Supabase `submissions`, kind `feedback`) was a reader's "worth it" vote (`why: "worth it"`, no free-text complaint) on sar_003, The Olivastro of Santa Maria Navarrese. Same shape as Lisbon's #6 and Helsinki's #5: a positive signal with nothing to check against sources, stored per the vote design and shown nowhere until volume makes a count honest. Nothing changed in `data/cities/sardinia.json`. Marked processed in `data/submissions-processed.json`.
+
 ## 2026-08-26 (session) - Two submissions processed: a vote-undo and a Baarn tip too thin to place
 
 Row 38 was bookkeeping (`why: "vote undone: not worth it"` on utr_005) and was marked processed with no reply, per the standing rule for that kind of row.
