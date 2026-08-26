@@ -201,24 +201,25 @@ final class AncientTreesUITests: XCTestCase {
                       "picking a tree in search did not take the map to it")
     }
 
-    /// The bar: FIVE slots, and the middle one is a BUTTON rather than a place.
+    /// The bar: THREE destinations, and the camera is a separate BUTTON beside
+    /// it rather than a slot inside it.
     ///
-    /// It asserted four until 2026-08-25, naming tabs called Collect and Yours
-    /// and insisting Profile was not one. Every part of that was settled the
-    /// other way on 2026-08-24 (DECISIONS.md: Map, Explore, camera, Collection,
-    /// Profile), so this test had been failing for a day against an app that
-    /// was right, and nothing noticed because the app has no CI. It also read
-    /// `app.tabBars`, which finds nothing now: the bar is a SwiftUI view of
-    /// buttons, not a UITabBar, which is why two other tests were red too.
+    /// This asserted five slots (Map, Explore, camera, Collection, Profile)
+    /// until 2026-08-26, when Hidde pulled the camera out onto its own disc,
+    /// Polarsteps-style, and folded Profile into the Collection tab as "My
+    /// trees" (TabBar.swift). Explore became Discover the same day. The old
+    /// five-slot assertion had been failing against an app that was right,
+    /// caught only when the app's own CI run was read rather than assumed
+    /// green.
     @MainActor
-    func testFiveSlotBar() throws {
+    func testThreeTabsAndCollectButton() throws {
         let app = launch(["-signed-in"])
-        for label in ["Map", "Explore", "Collection", "Profile"] {
+        for label in ["Map", "Discover", "My trees"] {
             XCTAssertTrue(app.buttons[label].waitForExistence(timeout: 12),
                           "tab \(label) is missing from the bar")
         }
         XCTAssertTrue(app.buttons["Collect a tree"].exists,
-                      "the camera in the middle of the bar is gone")
+                      "the camera button beside the bar is gone")
 
         app.buttons["Collect a tree"].tap()
         XCTAssertTrue(app.descendants(matching: .any)["spot-sheet"].waitForExistence(timeout: 6),
@@ -252,7 +253,7 @@ final class AncientTreesUITests: XCTestCase {
     /// zeros and a grid of grey ghosts.
     @MainActor
     func testCollectDayZeroShowsMission() throws {
-        let app = launch(["-tab=3"])
+        let app = launch(["-tab=2"])
         XCTAssertTrue(app.otherElements["collect-mission"].waitForExistence(timeout: 12),
                       "no mission on the collection's day zero")
         XCTAssertFalse(app.staticTexts["Species collected"].exists,
@@ -444,26 +445,28 @@ final class AncientTreesUITests: XCTestCase {
 
     /// The lane picker on Collection, tapped both ways.
     ///
-    /// Hidde has now reported twice that he cannot get back to "Want to see"
-    /// once he is on "Collected" (2026-08-24 and again 2026-08-25). The first
+    /// Hidde has now reported twice that he cannot get back to the first lane
+    /// once he is on the second (2026-08-24 and again 2026-08-25). The first
     /// fix was made without a finger to test it with, which is how a fix ships
-    /// that does not fix anything. This is the finger.
+    /// that does not fix anything. This is the finger. The labels became "My
+    /// trees" and "Favourites" on 2026-08-26 (Collect.swift); the switching
+    /// bug they were guarding against is unchanged.
     @MainActor
     func testTheCollectionLanePickerSwitchesBothWays() throws {
-        let app = launch(["-tab=3", "-signed-in", "-collected=ams_001,ams_002"])
+        let app = launch(["-tab=2", "-signed-in", "-collected=ams_001,ams_002"])
         let picker = app.segmentedControls["collect-lane"]
         XCTAssertTrue(picker.waitForExistence(timeout: 12), "no lane picker on Collection")
 
-        let want = picker.buttons["Want to see"]
-        let seen = picker.buttons["Collected"]
+        let seen = picker.buttons["My trees"]
+        let want = picker.buttons["Favourites"]
         XCTAssertTrue(want.exists && seen.exists, "the two lanes are not both there")
 
         seen.tap()
-        XCTAssertTrue(seen.isSelected, "tapping Collected did not select it")
+        XCTAssertTrue(seen.isSelected, "tapping My trees did not select it")
 
         want.tap()
         XCTAssertTrue(want.isSelected,
-                      "tapping Want to see from Collected did not select it")
+                      "tapping Favourites from My trees did not select it")
         // And the tap must not have opened a tree instead, which is the other
         // half of what he described.
         XCTAssertFalse(app.buttons["Take me there"].exists,
@@ -475,7 +478,7 @@ final class AncientTreesUITests: XCTestCase {
     /// argument rather than a tap so that failure would be invisible.
     @MainActor
     func testTheSignInSheetPresents() throws {
-        let app = launch(["-tab=3", "-signin"])
+        let app = launch(["-tab=2", "-signin"])
         XCTAssertTrue(app.staticTexts["That one is yours"].waitForExistence(timeout: 10),
                       "the sign-in sheet did not present")
         XCTAssertTrue(app.buttons["Email me a code"].exists,
