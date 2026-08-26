@@ -2,10 +2,10 @@
   "city": "Rome",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Rome's noble families turned trees into status symbols the way they turned villas into galleries. Cardinal Scipione Borghese's gardener planted a grove of oriental planes in the 1600s that foresters now call the oldest living trees in the city; the Pamphilj and Mattei families each planted cedars of Lebanon nearby, one per hilltop garden, as a shorthand for permanence. Rome has 65 trees registered as monumental under Italian law, more than any other city in the country. These twenty-nine range from a 425-year-old plane to a Mexican desert palm, and all but two are free to visit.",
-  "meta_description": "Rome's noble villas planted cedars of Lebanon as status symbols. Meet Adonis, a 425-year-old plane in Villa Borghese, and twenty-eight more.",
+  "intro": "Rome's noble families turned trees into status symbols the way they turned villas into galleries. Cardinal Scipione Borghese's gardener planted a grove of oriental planes in the 1600s that foresters now call the oldest living trees in the city; the Pamphilj and Mattei families each planted cedars of Lebanon nearby, one per hilltop garden, as a shorthand for permanence. Rome has 65 trees registered as monumental under Italian law, more than any other city in the country. These thirty range from a 425-year-old plane to a Mexican desert palm, and all but two are free to visit.",
+  "meta_description": "Rome's noble villas planted cedars of Lebanon as status symbols. Meet Adonis, a 425-year-old plane in Villa Borghese, and twenty-nine more.",
   "question_answer": "The oldest verified tree in Rome is Adonis, an oriental plane in the Valley of the Plane Trees at Villa Borghese, planted in the early 1600s by Cardinal Scipione Borghese's gardener and now around 425 years old. It stands inside Villa Borghese, a short walk from the Via Pinciana entrance.",
-  "question_meta": "Adonis, a 425-year-old oriental plane in Villa Borghese, is Rome's oldest verified tree. Its story, exact location, and twenty-eight more remarkable trees.",
+  "question_meta": "Adonis, a 425-year-old oriental plane in Villa Borghese, is Rome's oldest verified tree. Its story, exact location, and twenty-nine more remarkable trees.",
   "question_context": "Rome has an older legend. The Quercia del Tasso on the Gianicolo is popularly said to be a thousand years old, tied to the poet Torquato Tasso, who tradition says rested in its shade before his death in 1595. No dendrologist has ever dated it, and this site treats that number as folklore rather than fact. Adonis has no such problem. Cardinal Scipione Borghese's gardener, Domenico Savini da Montepulciano, planted a row of oriental planes in the villa's private hunting park in the early 1600s, and the planting is documented well enough that Italian foresters count the survivors, nine of the original eleven, as the oldest confirmed trees in the city. Adonis is the largest of them, a hollow giant at the entrance to what is now called the Valley of the Plane Trees. In 2021 the garden cloned it from a single surviving leaf, a hedge against the fate of a neighboring oak from the same era that collapsed in 2018. Getting there: enter Villa Borghese from Via Pinciana and follow the signs for the Valle dei Platani.",
   "faq": [
     {
@@ -18,7 +18,7 @@
     },
     {
       "q": "Are Rome's remarkable trees free to visit?",
-      "a": "Twenty-seven of the twenty-nine on this list stand in free public parks and squares. The two inside the Orto Botanico, Rome's botanical garden, require a paid ticket."
+      "a": "Twenty-eight of the thirty on this list stand in free public parks and squares. The two inside the Orto Botanico, Rome's botanical garden, require a paid ticket."
     },
     {
       "q": "How does Italy protect its monumental trees?",
@@ -1016,6 +1016,37 @@
       "notes": "Register-only for the tree itself, hence flagged: repeated hunts (2026-08-05, 2026-08-08) found no source independent of the register naming this individual palm, and general descriptions of Villa Sciarra's palms cannot fix which one is meant. The Roma Capitale page is a source for the park's history and ownership, not for the palm. The story therefore states the Wurts history and explicitly declines to attribute the planting. Completes a four tree walk in Villa Sciarra with rom_001, rom_011 and rom_012.",
       "height_m": 20.0,
       "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+    },
+    {
+      "id": "rom_030",
+      "name": "The Eucalyptus of Forte Ardeatino",
+      "species": "Tasmanian Blue Gum (Eucalyptus globulus)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 490,
+      "height_m": 18,
+      "location": {
+        "address": "Via di Grotta Perfetta, Parco ex Forte Ardeatino, Roma70",
+        "latitude": 41.838944,
+        "longitude": 12.506,
+        "neighbourhood": "Roma 70 / Ardeatino, Municipio VIII"
+      },
+      "story": "This eucalyptus stands on the grounds of a fort built to defend Rome, and it only joined the national monumental-tree register in late 2025, one of 211 trees added nationwide in a single update. It grows in what the register calls a residual eucalyptus wood, rooted in and around Forte Ardeatino, a defensive fort raised in 1879 as part of the ring of forts that once circled the capital.\n\nThe species explains the wood. Eucalyptus was planted around many of Rome's forts and along its drained lowlands in the early twentieth century, valued for how fast it grows and how efficiently it pulls water from waterlogged ground. This one has done exactly that: 4.9 metres round and 18 metres tall, on a species that can put on that kind of girth in a fraction of the time a native oak would need. Nobody has recorded when it was planted, and the girth alone does not settle it, not on a tree this quick to grow.\n\nThe fort itself, restored in 2006, sits inside what is now folded into the wider Tormarancia and Appia Antica park system. Its interior stays closed. The eucalyptus wood around it, this tree included, does not.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF national register, sheet 61/H501/RM/12, Eucalyptus globulus, girth 490 cm, height 18 m)",
+        "https://www.romatoday.it/attualita/alberi-monumentali-roma-quali-sono.html (RomaToday, 2025-11-08, reporting the tree's addition to the national monumental-tree list)"
+      ],
+      "access": "Free. Stands in the wooded ground of the Parco ex Forte Ardeatino / Parco di Grotta Perfetta, the public park area around the old fort at Via di Grotta Perfetta, open to the public since a 2006 restoration. The fort's own interior is not open to visitors, but the eucalyptus wood around it is.",
+      "transport": "Bus lines 716, 764, 766, 769, 772, N716 stop at Ardeatina/Grotta Perfetta, a short walk from the park entrance on Via di Grotta Perfetta",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

@@ -3497,6 +3497,15 @@
     "note": "free API sweep, 40 photo-less trees checked, 607 total trees now carry at least one open-licence candidate queued for a viewing pass this runner cannot judge",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "rome",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 1,
+    "note": "1 verified (rom_030, Eucalyptus of Forte Ardeatino), written and merged same session; found passcheck's 'unmined' register candidates were stale (already blocked leads resurfacing); flagged as a passcheck gap (proximity check doesn't consult data/leads/*.json blocked lists)",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

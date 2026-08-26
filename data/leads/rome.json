@@ -17,7 +17,7 @@
    "sources": [
     "MASAF / Lazio 75/H501/RM/12"
    ],
-   "why_not_published": "Second tallest tree on Rome's register and a textbook umbrella pine, but register-only: sheet 75 postdates the municipal narrative page. Note that a different Villa Torlonia stone pine, sheet 18, is on the Lazio REMOVED list as dead, so any pass shipping this one must be explicit about which is which. VITALITY RISK RAISED, 2026-08-08 (rom deepen verify pass): press coverage found this pass shows Villa Torlonia's whole tree stock under active safety felling. Il Messaggero/La Capitale (11 Dec 2025) report 19 trees felled after a stability survey rated them 'classe di cedimento D' (highest risk), including 4 Pinus pinea; RomaToday/La Capitale describe further urgent fellings continuing into 2026 (5 more trees in March 2026, though that batch was palms, an Aleppo pine and a Judas tree, not stone pines). None of the coverage found names which specific stone pines were among the 4 felled in December. The Lazio Nov 2025 xlsx (which is our source for this lead) still listed sheet 75 as active, i.e. before the December felling, so the register cannot settle this either way. Given the confirmed sibling already dead (sheet 18) and 4 more stone pines felled in the same park weeks after our register snapshot, this tree should NOT ship without a specific, dated confirmation that sheet 75 itself is still standing. Not blocked (not confirmed dead), but do not verify from the register alone; needs a targeted post-December-2025 check, ideally the Lazio register's next update or a dated photo/observation."
+   "why_not_published": "Second tallest tree on Rome's register and a textbook umbrella pine, but register-only: sheet 75 postdates the municipal narrative page. Note that a different Villa Torlonia stone pine, sheet 18, is on the Lazio REMOVED list as dead, so any pass shipping this one must be explicit about which is which. VITALITY RISK RAISED, 2026-08-08 (rom deepen verify pass): press coverage found this pass shows Villa Torlonia's whole tree stock under active safety felling. Il Messaggero/La Capitale (11 Dec 2025) report 19 trees felled after a stability survey rated them 'classe di cedimento D' (highest risk), including 4 Pinus pinea; RomaToday/La Capitale describe further urgent fellings continuing into 2026 (5 more trees in March 2026, though that batch was palms, an Aleppo pine and a Judas tree, not stone pines). None of the coverage found names which specific stone pines were among the 4 felled in December. The Lazio Nov 2025 xlsx (which is our source for this lead) still listed sheet 75 as active, i.e. before the December felling, so the register cannot settle this either way. Given the confirmed sibling already dead (sheet 18) and 4 more stone pines felled in the same park weeks after our register snapshot, this tree should NOT ship without a specific, dated confirmation that sheet 75 itself is still standing. Not blocked (not confirmed dead), but do not verify from the register alone; needs a targeted post-December-2025 check, ideally the Lazio register's next update or a dated photo/observation. CHECKED AGAIN 2026-08-26 (rom deepen verify pass): the risk picture has worsened rather than resolved. RomaToday (12 Jan 2026, 'Villa Torlonia, addio ad altri 9 alberi') reports a further felling round at the villa, and the same week a 120-year-old stone pine collapsed on Via dei Fori Imperiali, triggering a citywide re-inspection of Rome's stone pines with more fellings expected ('Dopo i pini crollati ai Fori Imperiali nuovi controlli sugli alberi. Ci saranno nuovi abbattimenti'). Still no source names sheet 75 specifically, in either direction. Given an active citywide stone-pine safety programme on top of Villa Torlonia's own repeated fellings, this tree is further than ever from a safe register-only ship; still needs a specific, dated sighting of this exact tree, not a park-wide vitality inference."
   },
   {
    "name": "Mediterranean Hackberry of the Mura Latine [RESOLVED 2026-08-14, delivered as rom_028]",
@@ -166,6 +166,48 @@
    "why_not_published": "2026-08-07 verify pass. Described only as an avenue of 16th-century holm oaks, not a named individual; likely not a collectible point (an avenue, like the Valle dei Platani group) unless a single standout specimen can be identified. Left as a lead in case a future pass finds one tree singled out."
   },
   {
+   "name": "Sughera of Parco Francesco Salerno",
+   "species": "Quercus suber",
+   "girth_cm": 443,
+   "height_m": 21,
+   "location": {
+    "latitude": 41.949278,
+    "longitude": 12.371028
+   },
+   "sources": [
+    "MASAF / Lazio 81/H501/RM/12"
+   ],
+   "why_not_published": "2026-08-26 verify pass (rom deepen). Named as unresearched in this file's note_2026_08_14 and flagged there as 'the cheapest of the four' because it names a public park. It genuinely does: info.roma.it confirms Parco Francesco Salerno at Via della Riserva grande, Casalotti (Z.XLVIII), part of the far northwest green corridor near the Riserva Naturale dell'Insugherata, free and open. The blocker is distance and transit rather than access: the park sits 14 km northwest of the centre, well past Rome's other rejected trees on this measure, and current (2026) local reporting on Casalotti's isolation (RomaToday, on the Battistini-Casalotti Bus Rapid Transit project) describes 55 minutes to over an hour by bus to cover just 6 km to the nearest interchange, or 21 minutes on foot to reach Battistini metro station alone. That fails the roughly-30-minute day-trip boundary by a wide margin. Genuinely a fine free tree in a real reserve; belongs to a Casalotti or Insugherata page if one is ever made, not a Rome city page."
+  },
+  {
+   "name": "Sughera of Via Esperia Sperani-Via Vivi Gioi",
+   "species": "Quercus suber",
+   "girth_cm": 403,
+   "height_m": 20,
+   "location": {
+    "latitude": 41.962444,
+    "longitude": 12.39925
+   },
+   "sources": [
+    "MASAF / Lazio 64/H501/RM/12"
+   ],
+   "why_not_published": "2026-08-26 verify pass (rom deepen). Named as unresearched in this file's note_2026_08_14. Not individually searched this pass; flagged instead by proximity, about 1.5 km from sheet 81 (Parco Francesco Salerno, see above) in the same far-northwest Casalotti/Selva Candida corridor that pass confirmed has very poor transit into the centre. Likely fails the same day-trip boundary but needs its own check (address, access, a second source) before being blocked outright rather than left as an open lead."
+  },
+  {
+   "name": "Sughera of Via del Casale della Caccia",
+   "species": "Quercus suber",
+   "girth_cm": null,
+   "height_m": 14,
+   "location": {
+    "latitude": 41.756639,
+    "longitude": 12.45225
+   },
+   "sources": [
+    "MASAF / Lazio 78/H501/RM/12"
+   ],
+   "why_not_published": "2026-08-26 verify pass (rom deepen). Named as unresearched in this file's note_2026_08_14. Not individually searched this pass; flagged instead by proximity to the already-rejected Holm Oak of Ostia Antica (sheet 72, this file, rejected for being roughly 40 minutes out by train), about 12 km further along the same southern Ostia corridor and therefore likely to fail the same day-trip boundary. Register also gives no girth for this entry (height only, 14 m), and 'urban: false' in the source data. Needs its own address and access check before a firm block."
+  },
+  {
    "name": "Holm oaks of the Parco dei Daini",
    "species": "Quercus ilex",
    "girth_cm": null,
@@ -266,5 +308,6 @@
    "reason": "DEAD, 2026-08-12 check (Wikidata Q115145930 surfaced it as a discovery candidate, CC0 image attached, near the already-published Villa Sciarra/Garibaldi Mausoleum cluster, ~880m from rom_007). Web search confirms it is now a dried, hollowed husk held up by a retaining wall so it does not collapse, not a living tree: struck by lightning in 1843, further damaged by a 2011 arson fire. Famous as the spot where Torquato Tasso reportedly rested before his 1595 death, but the living tree is long gone. Fails the no-dead-trees rule (CLAUDE.md, the Queen Elizabeth's Oak / Stock im Eisen precedent) outright. Recorded so no future pass researches it from a Wikidata or register hit alone."
   }
  ],
- "note_2026_08_14": "Write pass 2026-08-14: rom_026 to rom_029 delivered (Villa Fiorelli chir pine, Via Conca d'Oro black poplar, Mura Latine hackberry, Villa Sciarra blue palm). All four are register-only and shipped flagged, per CLAUDE.md Step 2, which says a single source is a flag and not a block. Not yet touched by any pass, and not in this file at all: MASAF sheets 61 (Eucalyptus globulus, 490 cm, Via di Grotta Perfetta), 64 (Quercus suber, 403 cm, Via Esperia Sperani/Via Vivi Gioi), 78 (Quercus suber, Via del Casale della Caccia) and 81 (Quercus suber, 443 cm, Parco Francesco Salerno, Via Cusino 18). Sheet 81 names a public park and looks like the cheapest of the four for a verify pass."
+ "note_2026_08_14": "Write pass 2026-08-14: rom_026 to rom_029 delivered (Villa Fiorelli chir pine, Via Conca d'Oro black poplar, Mura Latine hackberry, Villa Sciarra blue palm). All four are register-only and shipped flagged, per CLAUDE.md Step 2, which says a single source is a flag and not a block. Not yet touched by any pass, and not in this file at all: MASAF sheets 61 (Eucalyptus globulus, 490 cm, Via di Grotta Perfetta), 64 (Quercus suber, 403 cm, Via Esperia Sperani/Via Vivi Gioi), 78 (Quercus suber, Via del Casale della Caccia) and 81 (Quercus suber, 443 cm, Parco Francesco Salerno, Via Cusino 18). Sheet 81 names a public park and looks like the cheapest of the four for a verify pass.",
+ "note_2026_08_26": "Verify pass 2026-08-26 (rom deepen). Two findings for whoever briefs the next pass. First, passcheck.py --brief's 'unmined' register list (candidates within 80m of a live tree are flagged, everything else is called unmined) is STALE for the San Sisto nursery / Porta Capena cluster: it printed the Cedro del Libano (sheet 28, 500cm), Falso kapok (sheet 29), Ibrido di Quercia americana (sheet 30) and Platano comune (sheet 06, Parco di Porta Capena) as unmined candidates, and all four are already in this file's blocked list (access-restricted nursery; homogeneous plane stand). This is the same false premise note_2026_08_17 already recorded for three of the four; passcheck's proximity check does not cross-reference data/leads/*.json's blocked list, only published trees, so this will keep recurring until that script is fixed. Second, of the four sheet 61/64/78/81 candidates named in note_2026_08_14: sheet 61 (Eucalyptus of Forte Ardeatino) verified and shipped as rom_030 (data/research/rome-verified.json). Sheets 64, 78 and 81 are now recorded above as leads: all three sit in far-out corridors (Casalotti/Insugherata northwest, or the deep-south Ostia corridor) that likely fail the roughly-30-minute day-trip boundary; sheet 81 was checked directly and confirmed to fail it, 64 and 78 are flagged by proximity to confirmed-far trees rather than individually checked."
 }
