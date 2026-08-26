@@ -180,9 +180,17 @@ struct TreeDetail: View {
                 // arrived in 26. On 18 there is nothing to split: that older
                 // toolbar draws no glass around a group, so the two controls
                 // already read as two.
+                // TWO GUARDS, not one, and the second is the one that was
+                // missing. `#available` decides whether a device may RUN this;
+                // the symbol still has to EXIST when it compiles, and the SDK
+                // that has it ships with Xcode 26. This desk has that and the
+                // CI runner has Xcode 16.4, so the gate could not build what
+                // was written here (2026-08-26).
+                #if compiler(>=6.2)
                 if #available(iOS 26.0, *) {
                     ToolbarSpacer(.fixed, placement: .topBarTrailing)
                 }
+                #endif
                 ToolbarItem(placement: .topBarTrailing) {
                     Menu {
                         Button { report("Something here is wrong:") } label: {
