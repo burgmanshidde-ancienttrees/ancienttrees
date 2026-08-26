@@ -51,6 +51,20 @@ struct TreeDetail: View {
                     hero
                     header
                     facts
+                    // A TICKET IS THE FIRST THING TO KNOW (Hidde, 2026-08-26:
+                    // "dat betaald is dermate belangrijk dat die informatie
+                    // met datzelfde ticketje bovenaan moet staan, boven been
+                    // here worth to visit"). It decides whether somebody sets
+                    // off at all, so it belongs above the question of whether
+                    // the tree was worth it, in the same warning shape the
+                    // approximate pin uses. The access line further down keeps
+                    // the detail and the transport stays where it is.
+                    //
+                    // The same blue as the pin's ticket mark, and not gold:
+                    // gold means paid-by-us everywhere in this app, and
+                    // sharing it made a garden's entrance fee read as one of
+                    // our own tiers (2026-08-25).
+                    if mine == nil, tree.paidEntry { ticketNote }
                     if tree.precision.needsWarning { approximateNote }
                     // High on the page, under the facts, because it is a
                     // question about the thing the facts just described
@@ -62,7 +76,12 @@ struct TreeDetail: View {
                     if mine == nil { WorthItView(tree: tree) }
                     story
                     if mine == nil { accessBlock }
-                    if mine == nil, tree.photo == nil { offerPhoto }
+                    // The "Nobody has photographed this one" card is gone
+                    // (Hidde, 2026-08-26: "die mag helemaal weg"). It was a
+                    // paragraph explaining a control that now exists: the
+                    // camera in the photograph's corner says the same thing by
+                    // being a camera, on every tree, whether or not there is
+                    // already a picture.
                     if mine != nil { mineFooter }
                     // "Report a problem" used to sit here and open the generic
                     // contribute form, which greeted somebody who wanted to
@@ -345,6 +364,7 @@ struct TreeDetail: View {
                         .accessibilityIdentifier("tree-map-swap")
                         .accessibilityLabel("Show this tree on the map")
                     }
+                    .overlay(alignment: .topLeading) { addPhotoButton }
 
             }
         } else {
@@ -368,6 +388,7 @@ struct TreeDetail: View {
                 .buttonStyle(.plain)
                 .accessibilityLabel("Show this tree on the map")
             }
+            .overlay(alignment: .topLeading) { addPhotoButton }
         }
     }
 
@@ -388,7 +409,13 @@ struct TreeDetail: View {
                     // Inventing one here would mean guessing which park a set
                     // of coordinates sits in, which is the kind of bridge
                     // claim this project has a rule against.
-                    discoverChip(tree.commonName, "leaf") { navigator.push = .species(tree.commonName) }
+                    // The species chip moved up into the facts row on
+                    // 2026-08-26; what is left here are the wider circles.
+                    ForEach(collectionsWithThisTree, id: \.slug) { c in
+                        discoverChip(c.title, "square.stack") {
+                            navigator.push = .collection(c.slug)
+                        }
+                    }
                     if !tree.country.isEmpty {
                         discoverChip(tree.country, "globe.europe.africa") {
                             navigator.push = .country(tree.country)
@@ -399,6 +426,15 @@ struct TreeDetail: View {
             }
         }
         .padding(.top, 4)
+    }
+
+    /// The curated lists this tree is actually in (Hidde, 2026-08-26: "in
+    /// Discover More kan je dus ook collecties toevoegen, zoals de oudste
+    /// bomen waar die in toegevoegd is"). Read from the website's own
+    /// collections rather than worked out here, so a tree appears in the list
+    /// the site says it is in and nowhere else.
+    private var collectionsWithThisTree: [TreeCollection] {
+        catalogue.collections.filter { $0.trees.contains(tree.id) }
     }
 
     private func discoverChip(_ title: String, _ symbol: String,
@@ -424,14 +460,20 @@ struct TreeDetail: View {
         catalogue.nearest(to: tree.lat, tree.lng, limit: 8, withinKm: 0.5).map(\.tree)
     }
 
+    /// The empty photograph, and it is deliberately QUIET (Hidde, 2026-08-26:
+    /// "deze manier van een plaatje tonen en een knop is compleet weird").
+    ///
+    /// It was a green gradient carrying white text and a floating map inset,
+    /// which is a poster where a placeholder belongs. Every reference does the
+    /// dull thing: Google Maps, Apple Maps and Yelp all show a neutral grey
+    /// panel with one small glyph, and the way to add a picture is the camera
+    /// button in the corner rather than a sentence in the middle.
     private var heroFallback: some View {
         ZStack {
-            LinearGradient(colors: [Color(red: 0.20, green: 0.35, blue: 0.20),
-                                    Color(red: 0.36, green: 0.49, blue: 0.31)],
-                           startPoint: .topLeading, endPoint: .bottomTrailing)
+            Brand.surfaceMuted
             VStack(spacing: 10) {
-                SpeciesMark(species: tree.species, color: .white.opacity(0.9))
-                    .frame(width: 78, height: 78)
+                SpeciesMark(species: tree.species, color: Brand.inkSoft.opacity(0.35))
+                    .frame(width: 64, height: 64)
                 // TAPPABLE, because the empty frame is the most obvious place
                 // to offer one (Hidde, 2026-08-26: "als er geen foto is kan je
                 // uberhaupt de hele foto aanklikken in de detail pagina en
@@ -441,12 +483,8 @@ struct TreeDetail: View {
                 // the map inset that sits in the bottom right corner: at 375
                 // points the single sentence ran straight under it and read as
                 // "Tap to add you" (seen on the sweep, 2026-08-26).
-                Text(mine == nil ? "No photograph yet.\nTap to add yours."
-                                 : "No photograph of this tree yet.")
-                    .font(.caption2).foregroundStyle(.white.opacity(0.85))
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal, 28)
-                    .padding(.trailing, 60)
+                Text("No photograph yet")
+                    .font(.caption).foregroundStyle(Brand.inkSoft)
             }
         }
     }
@@ -459,25 +497,12 @@ struct TreeDetail: View {
             if tree.species.isEmpty, mine != nil {
                 blank("What kind of tree is it?", .species)
             } else {
-                // THE SPECIES IS A DOOR (Hidde, 2026-08-26: "een link van de
-                // specie van een boom bovenin de detail pagina zodat mensen
-                // meer daarover kunnen lezen"). It was a caption under the
-                // name, which is where a fact goes to be read once; every
-                // reference app makes the classification tappable, because
-                // "what IS this" is the second question after "what is this
-                // one". Underlined rather than coloured: the page has one
-                // green already and a second would read as a button.
-                Button { navigator.push = .species(tree.commonName) } label: {
-                    HStack(spacing: 4) {
-                        Text(tree.species)
-                        Image(systemName: "chevron.right").font(.caption2)
-                    }
-                    .font(.subheadline)
-                    .foregroundStyle(Brand.inkSoft)
-                }
-                .buttonStyle(.plain)
-                .accessibilityIdentifier("tree-species-link")
-                .accessibilityHint("Read about this species")
+                // The FULL name, botanical and all, stays here as the caption
+                // it always was; the short common name is the tappable fact
+                // in the row below, since 2026-08-26. Two doors to the same
+                // page a centimetre apart is one door too many, and the
+                // caption is the one that carries the Latin.
+                Text(tree.species).font(.subheadline).foregroundStyle(Brand.inkSoft)
             }
             // HOW MANY PEOPLE KEPT IT, and only once somebody has (Hidde,
             // 2026-08-26: "aantal likes tellen en terug geven, pas van 1
@@ -541,6 +566,20 @@ struct TreeDetail: View {
                 fact(shortAge, "Age")
             }
             Divider().frame(height: 34)
+            // THE SPECIES SITS WITH THE FACTS (Hidde, 2026-08-26: "die Wild
+            // Olive, die dermate belangrijk is, onderdeel maken van helemaal
+            // bovenin, naast hoe oud die is en of de pin exact is"). It was a
+            // chip at the bottom among the ways onward, which is where you
+            // put a thing somebody might browse to next; what kind of tree it
+            // is belongs with how old it is, because it is the same kind of
+            // answer. It stays tappable, so it is still the door to the
+            // species page.
+            Button { navigator.push = .species(tree.commonName) } label: {
+                fact(tree.commonName, "Species", chevron: true)
+            }
+            .buttonStyle(.plain)
+            .accessibilityIdentifier("tree-species-fact")
+            Divider().frame(height: 34)
             fact(tree.precision == .confirmed ? "Exact" : "Approximate", "Pin")
         }
         .padding(.vertical, 14)
@@ -548,15 +587,23 @@ struct TreeDetail: View {
         .brandCard(14)
     }
 
-    private func fact(_ value: String, _ label: String) -> some View {
+    private func fact(_ value: String, _ label: String,
+                      chevron: Bool = false) -> some View {
         // Leading, not centred: a centred value starts wherever its width
         // puts it, so "up to 1,500 years" sat seven points right of the card
         // edge and the layout gate read it as a drift. The fourteen matches
         // the card's own inset elsewhere on the page.
         VStack(alignment: .leading, spacing: 3) {
-            Text(value).font(.brand(14, .bold, relativeTo: .footnote))
-                .foregroundStyle(Brand.ink).multilineTextAlignment(.leading)
-                .lineLimit(2).minimumScaleFactor(0.8)
+            HStack(spacing: 3) {
+                Text(value).font(.brand(14, .bold, relativeTo: .footnote))
+                    .foregroundStyle(Brand.ink).multilineTextAlignment(.leading)
+                    .lineLimit(2).minimumScaleFactor(0.8)
+                if chevron {
+                    Image(systemName: "chevron.right")
+                        .font(.system(size: 9, weight: .semibold))
+                        .foregroundStyle(Brand.inkSoft)
+                }
+            }
             Text(label).font(.caption2).foregroundStyle(Brand.inkSoft)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -631,6 +678,29 @@ struct TreeDetail: View {
     /// The one warning this product must never soften. An approximate pin that
     /// says so sends somebody to the right park knowing they will have to look;
     /// one that pretends to be exact sends them to a spot where the tree is not.
+    /// The blue the pin's own ticket mark wears.
+    private static let ticketBlue = Color(red: 0.18, green: 0.42, blue: 0.66)
+
+    private var ticketNote: some View {
+        Label {
+            VStack(alignment: .leading, spacing: 3) {
+                Text("You need a ticket to see this tree")
+                    .font(.footnote.weight(.semibold))
+                if !tree.access.isEmpty {
+                    Text(tree.access).font(.footnote)
+                }
+            }
+        } icon: {
+            Image(systemName: "ticket.fill")
+                .foregroundStyle(Self.ticketBlue)
+        }
+        .foregroundStyle(Brand.ink)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(12)
+        .background(Self.ticketBlue.opacity(0.10), in: .rect(cornerRadius: 12))
+        .accessibilityIdentifier("tree-ticket-note")
+    }
+
     private var approximateNote: some View {
         VStack(alignment: .leading, spacing: 8) {
             Label {
@@ -717,29 +787,26 @@ struct TreeDetail: View {
     /// with no photograph, and 1077 of our 1435 trees are in that state. Asking
     /// here beats a row in settings, and it measures demand for the feature
     /// exactly where somebody would use it.
-    private var offerPhoto: some View {
-        LockedRow(feature: .photoUpload) {
-            HStack(alignment: .top, spacing: 12) {
-                SpeciesMark(species: tree.species,
-                            color: Color(red: 0.20, green: 0.35, blue: 0.20).opacity(0.55))
-                    .frame(width: 34, height: 34)
-                VStack(alignment: .leading, spacing: 3) {
-                    Text("Nobody has photographed this one")
-                        .font(.brand(16, .bold, relativeTo: .subheadline))
-                        .foregroundStyle(Brand.ink)
-                    Text("If you are standing in front of it, yours could be the picture on this page.")
-                        .font(.caption).foregroundStyle(.secondary)
-                }
+    /// The camera, in the corner of the photograph, on every tree of ours and
+    /// in the same place whether or not there is a picture already (Hidde,
+    /// 2026-08-26: "die knop moet overal gelijk zijn"). Google Maps and Apple
+    /// Maps both hang it on a place's image header exactly like this; a
+    /// control that moves or disappears is one nobody learns to look for.
+    @ViewBuilder private var addPhotoButton: some View {
+        if mine == nil {
+            Button { navigator.collectNearby = true } label: {
+                Image(systemName: "camera.fill")
+                    .font(.system(size: 15, weight: .semibold))
+                    .foregroundStyle(Brand.ink)
+                    .frame(width: 40, height: 40)
+                    .background(.regularMaterial, in: .circle)
+                    .padding(10)
             }
-            .padding(.vertical, 4)
+            .buttonStyle(.plain)
+            .accessibilityIdentifier("tree-add-photo")
+            .accessibilityLabel("Add a photograph of this tree")
         }
-        .padding(14)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .brandCard(12)
     }
-
-    /// Ours, and nobody has photographed it.
-    private var needsPhoto: Bool { mine == nil && tree.photo == nil }
 
     private var actionBar: some View {
         HStack(spacing: 10) {
@@ -764,28 +831,23 @@ struct TreeDetail: View {
             // the label onto two lines, which reads as a layout fault rather
             // than as a short word (seen on the sweep, 2026-08-26).
             Button { Directions.walk(lat: tree.lat, lng: tree.lng) } label: {
-                Label(needsPhoto ? "Take me" : "Take me there",
-                      systemImage: "arrow.turn.up.right")
+                Label("Take me there", systemImage: "arrow.turn.up.right")
                     .lineLimit(1)
             }
             .buttonStyle(BrandButtonStyle())
 
-            // ADD A PHOTOGRAPH, right beside the navigate button, and only on
-            // a tree that has none (Hidde, 2026-08-26: "als er geen foto is
-            // moet er een hele grote add foto cta staan op de boom detail
-            // pagina, naast de navigeer me naar knop"). 71 of our cities carry
-            // no photograph at all, and the person reading this page may be
-            // standing in front of the answer. The card further up explains;
-            // this is the control, in the place where a control is looked for.
-            if needsPhoto {
-                Button { navigator.collectNearby = true } label: {
-                    Label("Add a photo", systemImage: "camera.fill")
-                        .lineLimit(1)
-                }
-                .buttonStyle(BrandButtonStyle())
-                .accessibilityIdentifier("tree-add-photo")
-            }
-
+            // NO photo button here. It lived beside "Take me there" for an
+            // hour and only on trees without a picture, and Hidde was right
+            // about both halves (2026-08-26: "add a photo staat nu bij bomen
+            // die geen foto hebben, maar dat moet hetzelfde zijn als bomen die
+            // wel een foto hebben, die knop moet overal gelijk zijn"). A
+            // control that appears and disappears is a control nobody learns,
+            // and anybody may photograph any tree.
+            //
+            // It sits on the photograph instead, in the corner, always. That
+            // is the convention rather than a choice: Google Maps and Apple
+            // Maps both hang the camera on the image header of a place, in the
+            // same corner, whether the place has pictures or not.
             SaveHeart(tree: tree, look: .inBar)
         }
         // The same 20 as the page's content above it; at 16 the bar began

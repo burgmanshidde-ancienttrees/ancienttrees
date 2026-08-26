@@ -12,6 +12,12 @@ import SwiftUI
 struct TreeCard: View {
     let tree: Tree
     var km: Double?
+    /// Off in the collected lane, where a heart means the OTHER list (Hidde,
+    /// 2026-08-26: "bij de collected lijst in my trees moet er geen hartje
+    /// staan op de collected, dat heeft niks met hartje te maken"). The two
+    /// lists are independent, so a heart drawn over a tree you photographed
+    /// invites somebody to think it controls the thing they are looking at.
+    var showHeart: Bool = true
     @Environment(Saved.self) private var saved
 
     private let corner: CGFloat = 14
@@ -24,7 +30,7 @@ struct TreeCard: View {
         VStack(alignment: .leading, spacing: 0) {
             ZStack(alignment: .topTrailing) {
                 image
-                SaveHeart(tree: tree, look: .onPhoto).padding(6)
+                if showHeart { SaveHeart(tree: tree, look: .onPhoto).padding(6) }
                 if saved.isVisited(tree.id) { ticked }
             }
             VStack(alignment: .leading, spacing: 5) {

@@ -33,6 +33,8 @@ struct ContentView: View {
     /// How many people saved each tree, counted by the server because a client
     /// can only see its own rows. Empty until Hidde runs supabase/like-counts.sql.
     @State fileprivate var saveCounts = SaveCounts()
+    /// Who you are and who you follow, opened on his 2026-08-26 yes.
+    @State fileprivate var profiles = Profiles()
     @State private var rootSheet: RootSheet?
     @State private var primerAnswered = false
     @State private var slowStart = false
@@ -426,6 +428,8 @@ struct ContentView: View {
             // card: the whole table is a few thousand short rows and a request
             // inside a scrolling list is a stutter.
             Task { await saveCounts.loadOnce() }
+            Task { await profiles.load(userId: account.session?.userId,
+                                       token: account.session?.accessToken) }
             // Same debug scaffolding as -tab and -at: no simulator panel here,
             // so a screen only reachable by tapping cannot otherwise be looked
             // at before it ships.
@@ -596,5 +600,6 @@ extension View {
             .environment(root.units)
             .environment(root.sightings)
             .environment(root.saveCounts)
+            .environment(root.profiles)
     }
 }

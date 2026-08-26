@@ -39,11 +39,21 @@ struct MapFilters: Equatable {
     /// not in the catalogue at all and ride the map's separate layer, which is
     /// why this only has to answer for ours.
     var collectedOnly = false
+    /// The other list, beside Collected (Hidde, 2026-08-26: "misschien is het
+    /// dan ook logisch om naast collected ook favorites als filter te maken op
+    /// je mapscherm"). They are independent lists everywhere else in the app,
+    /// so the map showing only one of them was the map disagreeing with My
+    /// trees about what you have.
+    var favouritesOnly = false
 
-    var isOn: Bool { peakingNow || withPhoto || walkable || collectedOnly || species != nil }
+    var isOn: Bool {
+        peakingNow || withPhoto || walkable || collectedOnly || favouritesOnly || species != nil
+    }
 
-    func keeps(_ t: Tree, month: Int, collected: Set<String> = []) -> Bool {
+    func keeps(_ t: Tree, month: Int, collected: Set<String> = [],
+               favourites: Set<String> = []) -> Bool {
         if collectedOnly, !collected.contains(t.id) { return false }
+        if favouritesOnly, !favourites.contains(t.id) { return false }
         if peakingNow, !(t.bestTime?.isNow(month) ?? false) { return false }
         if withPhoto, t.photo == nil { return false }
         if let species, t.commonName != species { return false }
