@@ -24,9 +24,20 @@ struct ShareTo: ToolbarContent {
     var body: some ToolbarContent {
         ToolbarItem(placement: .topBarTrailing) {
             ShareLink(item: url, subject: Text(subject), message: Text(message)) {
+                // NO HAND-ROLLED FRAME. A 44 by 44 box inside a toolbar item
+                // is the tap target twice: iOS already gives one, and since it
+                // groups trailing items into a single glass capsule, two
+                // 44 point boxes inside that capsule pushed the glyphs 44
+                // points apart and drew one wide pill around the pair (Hidde,
+                // 2026-08-26: "de iconen rechtsboven lijnen niet lekker uit en
+                // staan raar ver van elkaar").
+                //
+                // The convention over a hero image is one round button per
+                // control, the size of the back button, evenly spaced: Google
+                // Maps, Airbnb and Apple Maps all do exactly that. Letting the
+                // system size and space its own toolbar items IS that, and it
+                // keeps the 44 point target it was hand-drawn to guarantee.
                 Image(systemName: "square.and.arrow.up")
-                    .frame(width: 44, height: 44)
-                    .contentShape(.rect)
             }
             .accessibilityLabel(label)
         }
