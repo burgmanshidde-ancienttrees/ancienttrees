@@ -69,12 +69,20 @@ export function pressNumbers(): PressNumbers {
 
   const entries: { city: string | null; country: string | null; tree: Tree }[] = [];
   const countries = new Set<string | null>();
+  // Cities a reader can actually open, not rows in the queue. city-list.json
+  // carries every city we intend to research, 44 of the 179 of them with no
+  // data file at all on 2026-08-26, and counting the file's length told the
+  // press page and the sponsor page that we map 179 cities when 171 had a
+  // page. Understating is fine here and overstating is a lie, which is the
+  // rule check_tree_count_claims() already applies to trees.
+  let withPages = 0;
   for (const e of cityList) {
     const f = path.join(DATA, "cities", `${e.slug}.json`);
     if (!fs.existsSync(f)) {
       countries.add(null);
       continue;
     }
+    withPages += 1;
     const data = JSON.parse(fs.readFileSync(f, "utf-8"));
     countries.add(data.country ?? null);
     for (const t of data.trees ?? []) {
@@ -89,7 +97,7 @@ export function pressNumbers(): PressNumbers {
 
   return {
     trees: entries.length,
-    cities: cityList.length,
+    cities: withPages,
     countries: countries.size,
     eu_trees: eu.length,
     eu_cities: new Set(eu.map(cityOf)).size,
