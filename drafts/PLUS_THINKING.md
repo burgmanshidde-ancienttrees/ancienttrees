@@ -91,14 +91,21 @@ year curve per tree), Season Radar alerts. Candidate, still open: offline and
 a trip mode. In the drawer as garnish, not a driver: stats, year recap, rare
 badges.
 
-**The season split, proposed and awaiting his call:** the FACT stays free
-everywhere (the chip and the one-line peak are the strongest go-now signal
-the pages have, and they are search text); the full year-curve CHART leaves
-the web at app launch and lives in the app as Plus. He ruled the chart is
-Plus and comes off the web ("die moeten we dus ook wel van het web gaan
-halen"); the open question is only whether the chip and sentence stay, which
-this note recommends. Removal happens at launch preparation, together with
-hiding the app's Plus traces.
+**The season call, made by Hidde 2026-08-26: the WHOLE season story is Plus,
+fact included.** The split (fact free, chart paid) was proposed and he chose
+against it, knowingly: "ik zeg eigenlijk ook gewoon wanneer die op zijn
+mooist is, dan weghalen. We moeten iets achterhouden voor plus." So at launch
+preparation the web loses the year-curve chart, the "at its best right now"
+chip, the best_time sentence blocks and the /in-season page; the data and
+the build machinery stay, because the app's Plus is where they resurface.
+Scope note for that session: this touches tree pages, city pages, the
+in-season page and any copy promising season info, so preflight's
+count-promise style checks should be walked after the cut.
+
+And his conclusion with it: "we zullen gewoon meer featuretjes moeten gaan
+bedenken" for Plus. The feedback button (built 2026-08-26) is the instrument:
+the open wishes it collects are the material the next Plus features get
+designed from.
 
 ## The earlier open choice: feature line or geography line
 
