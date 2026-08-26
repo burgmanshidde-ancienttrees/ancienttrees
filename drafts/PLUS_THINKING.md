@@ -48,7 +48,34 @@ conversation continues instead of restarting.
 4. Does a reference product charge for the same thing? If none does, why are
    we the first?
 
-## The open choice: feature line or geography line
+## His line, later the same day: the walks ARE Plus
+
+Hidde, after rejecting the stats-and-recap lane ("nobody gives a fuck",
+keep it in Plus but it converts nobody) and staying unsure on the Komoot
+model: "alle wandelingen naar plus... een harde streep. Je kan toevoegen en
+je kan bomen alleen bekijken, maar de wandelingen zelf, die hou je helemaal
+achter." One sentence: **every tree free, the walks are Plus.**
+
+Why it holds up: it leaves everything that feeds the flywheel free (viewing,
+adding, collecting); the walks are our own editorial work, not community
+contribution, so the line taxes no contributor; the category precedent is
+GPSmyCity (place articles free, the self-guided walk paid); and the July
+interim-paywall paragraph always had routes on the paid list. It also chains
+perfectly with "launch without walks": the later Plus introduction then IS
+the walks launch, news instead of a wall, and the no-clawback contract holds
+by construction.
+
+The two costs, owed before the introduction: (1) the quality bar, a paid walk
+that routes badly is a refund-grade review, so the auto-routed walks must
+feel curated before they are sold; (2) the web leak, /[city]/walks currently
+serves full routes plus GPX free and must become a teaser when walks go paid,
+which is an SEO decision to take deliberately, not a footnote.
+
+Radar alerts and offline can join the package later as "everything for the
+afternoon out"; behaviour will tell. The stats/recap lane stays in the
+drawer as garnish, not a driver.
+
+## The earlier open choice: feature line or geography line
 
 **Feature line** (the current recorded shape, revised): free = everything
 that grows the product; Plus = full offline, radar alerts, the rich log
