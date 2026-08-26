@@ -118,6 +118,20 @@ NOT_OURS = ("Map", "TabBar", "NavigationBar", "Keyboard", "KeyboardKey",
 # identifier because the button itself carries none (2026-08-26).
 NOT_OURS_IDS = ("UIContinuousPathIntroductionView",)
 
+# THE FLOATING BAR IS IN NO PAGE'S GRID, and only the DRIFT check cares. It
+# still has to fit the screen and still has to clear 44 points; what it does
+# not have to do is start where a page's text starts, because it floats OVER
+# every page rather than sitting in one. It is inset symmetrically from both
+# screen edges and distributes its icons inside itself.
+#
+# The evidence that this is the check asking the wrong question rather than a
+# real fault: on 2026-08-26 it reported the bar on seven screens at once, and
+# those screens start their content at 16, at 20 and at 28. No single value
+# satisfies all three, so matching one means failing the other two forever.
+# Moving the bar from 16 to 20 that evening silenced six findings and created
+# seven.
+FLOATS_OVER_PAGES = ("tab-map", "tab-discover", "tab-my-trees", "tab-collect")
+
 
 def inside(el, types, idents=()):
     p = el.parent
@@ -358,6 +372,7 @@ def check(screen):
         # those are all far wider than a thumb.
         if (el.type not in INVISIBLE and el.w > 48 and el.h > 4
                 and 0 <= el.x < W / 2 and not in_shelf(el)
+                and el.ident not in FLOATS_OVER_PAGES
                 and not inside(el, NOT_OURS, NOT_OURS_IDS) and not centred(el, W)):
             lefts[round(el.x * 2) / 2].append(el)
     if lefts:
