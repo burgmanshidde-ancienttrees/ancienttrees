@@ -18,10 +18,44 @@ import Observation
 
 @Observable
 public final class Saved {
+    /// TWO LISTS THAT SHARE A ROW, never one list wearing two hats. Hidde,
+    /// 2026-08-26: "je kunt niet bomen uit je collected halen door ze te
+    /// ontfavorieten, die dingen zijn twee verschillende lijsten en hebben
+    /// niks met elkaar te maken."
+    ///
+    /// He is describing a real bug rather than a preference. `toggleSaved`
+    /// used to delete the whole row, so taking the heart off a tree you had
+    /// photographed threw away the fact that you had stood in front of it,
+    /// which is the one thing in this app that cannot be recovered by tapping
+    /// again. Favouriting is a wish and collecting is a memory.
+    ///
+    /// So a row is a tree you have SOME relationship with, and it carries both
+    /// independently: `favourite` for the heart, `visitedAt` for the standing
+    /// in front of. A row with neither is deleted, because it means nothing.
     public struct Entry: Codable, Hashable, Sendable {
         public let treeId: String
-        public let visitedAt: Date?      // nil means saved but not yet stood in front of
+        public let visitedAt: Date?      // nil means not yet stood in front of
         public let savedAt: Date
+        public var favourite: Bool
+
+        public init(treeId: String, visitedAt: Date?, savedAt: Date,
+                    favourite: Bool) {
+            self.treeId = treeId
+            self.visitedAt = visitedAt
+            self.savedAt = savedAt
+            self.favourite = favourite
+        }
+
+        /// Rows written before `favourite` existed were all hearts by
+        /// definition, since the only way to make one was to save it. Reading
+        /// them as true keeps every collection anybody already has.
+        public init(from decoder: Decoder) throws {
+            let c = try decoder.container(keyedBy: CodingKeys.self)
+            treeId = try c.decode(String.self, forKey: .treeId)
+            visitedAt = try c.decodeIfPresent(Date.self, forKey: .visitedAt)
+            savedAt = try c.decode(Date.self, forKey: .savedAt)
+            favourite = try c.decodeIfPresent(Bool.self, forKey: .favourite) ?? true
+        }
     }
 
     private let key = "saved.entries.v1"
@@ -41,11 +75,12 @@ public final class Saved {
         let existing = entries[treeId]
         entries[treeId] = Entry(treeId: treeId,
                                 visitedAt: visitedAt ?? existing?.visitedAt,
-                                savedAt: min(savedAt, existing?.savedAt ?? savedAt))
+                                savedAt: min(savedAt, existing?.savedAt ?? savedAt),
+                                favourite: existing?.favourite ?? true)
         persist()
     }
 
-    public func isSaved(_ id: String) -> Bool { entries[id] != nil }
+    public func isSaved(_ id: String) -> Bool { entries[id]?.favourite == true }
     public func isVisited(_ id: String) -> Bool { entries[id]?.visitedAt != nil }
 
     /// Debug scaffolding, same family as -tab and -select: mark trees as
@@ -62,12 +97,35 @@ public final class Saved {
     }
 
 
-    public var savedCount: Int { entries.count }
+    public var savedCount: Int { entries.values.filter { $0.favourite }.count }
     public var visitedCount: Int { entries.values.filter { $0.visitedAt != nil }.count }
 
+    /// The two lists, each in the order somebody would expect to read it:
+    /// newest first, because the last thing you did is the thing you are
+    /// looking for.
+    public var favourites: [Entry] {
+        entries.values.filter { $0.favourite }.sorted { $0.savedAt > $1.savedAt }
+    }
+    public var collected: [Entry] {
+        entries.values.filter { $0.visitedAt != nil }
+            .sorted { ($0.visitedAt ?? .distantPast) > ($1.visitedAt ?? .distantPast) }
+    }
+
+    /// The heart, and ONLY the heart. Taking it off a tree you have collected
+    /// leaves the collection alone; the row only goes when nothing is left in
+    /// it to keep.
     public func toggleSaved(_ id: String) {
-        if entries[id] != nil { entries[id] = nil }
-        else { entries[id] = Entry(treeId: id, visitedAt: nil, savedAt: Date()) }
+        if let e = entries[id] {
+            if e.favourite && e.visitedAt == nil {
+                entries[id] = nil
+            } else {
+                entries[id] = Entry(treeId: id, visitedAt: e.visitedAt,
+                                    savedAt: e.savedAt, favourite: !e.favourite)
+            }
+        } else {
+            entries[id] = Entry(treeId: id, visitedAt: nil, savedAt: Date(),
+                                favourite: true)
+        }
         persist()
         onMutate?(id, entries[id])
     }
@@ -75,12 +133,23 @@ public final class Saved {
     /// Ticking a tree off is the point of the whole verb, so it also saves it:
     /// nobody should have to save a tree before they are allowed to say they
     /// stood in front of it.
+    /// Standing in front of it, and only that. It no longer hearts the tree as
+    /// a side effect: the two lists are independent, so collecting one does
+    /// not put it in the other (Hidde, 2026-08-26). Untick the last thing on
+    /// a row that was never a favourite and the row goes.
     public func toggleVisited(_ id: String) {
         let existing = entries[id]
+        let fav = existing?.favourite ?? false
         if existing?.visitedAt != nil {
-            entries[id] = Entry(treeId: id, visitedAt: nil, savedAt: existing?.savedAt ?? Date())
+            if fav {
+                entries[id] = Entry(treeId: id, visitedAt: nil,
+                                    savedAt: existing?.savedAt ?? Date(), favourite: true)
+            } else {
+                entries[id] = nil
+            }
         } else {
-            entries[id] = Entry(treeId: id, visitedAt: Date(), savedAt: existing?.savedAt ?? Date())
+            entries[id] = Entry(treeId: id, visitedAt: Date(),
+                                savedAt: existing?.savedAt ?? Date(), favourite: fav)
         }
         persist()
         onMutate?(id, entries[id])

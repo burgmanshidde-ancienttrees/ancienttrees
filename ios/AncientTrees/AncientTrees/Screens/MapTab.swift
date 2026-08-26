@@ -150,6 +150,28 @@ struct MapTab: View {
     /// level view holds four trees and a list of four looks broken, and that
     /// reason is answered in `listed` by topping up rather than by lying about
     /// where the list is looking.
+    /// The map's own rectangle, a little generous at the edges so a pin half
+    /// under the sheet still counts as on screen.
+    private struct Box {
+        let minLat, maxLat, minLng, maxLng: Double
+        func contains(_ lat: Double, _ lng: Double) -> Bool {
+            lat >= minLat && lat <= maxLat && lng >= minLng && lng <= maxLng
+        }
+    }
+
+    private var visibleBox: Box {
+        guard let r = mapRegion else {
+            // No region yet: a small box around where we think we are, rather
+            // than the whole world, so the first draw is not the entire map.
+            return Box(minLat: origin.lat - 0.05, maxLat: origin.lat + 0.05,
+                       minLng: origin.lng - 0.08, maxLng: origin.lng + 0.08)
+        }
+        let dLat = r.span.latitudeDelta / 2
+        let dLng = r.span.longitudeDelta / 2
+        return Box(minLat: r.center.latitude - dLat, maxLat: r.center.latitude + dLat,
+                   minLng: r.center.longitude - dLng, maxLng: r.center.longitude + dLng)
+    }
+
     private var reachKm: Double {
         guard let s = mapRegion?.span else { return 5 }
         return max(0.5, s.latitudeDelta * 111.0 / 2)
@@ -211,19 +233,35 @@ struct MapTab: View {
     }
 
     private var listed: [(tree: Tree, km: Double)] {
-        var near = catalogue.nearest(to: focus.lat, focus.lng, limit: 60, withinKm: reachKm)
-            .filter { filters.keeps($0.tree, month: month, collected: collectedIds) && filters.keepsDistance($0.km) }
-        // On screen first, and only then topped up. A street level view holds
-        // four trees, and a list of four reads as an empty app rather than as a
-        // close-up, so anything under eight reaches further out. They are still
-        // ordered by distance, so what is actually in front of you stays at the
-        // top either way.
-        if near.count < 8 {
-            near = catalogue.nearest(to: focus.lat, focus.lng, limit: 60,
-                                     withinKm: max(reachKm * 8, 50))
-                .filter { filters.keeps($0.tree, month: month, collected: collectedIds)
-                          && filters.keepsDistance($0.km) }
-        }
+        // WHAT IS ON SCREEN, and nothing else (Hidde, 2026-08-26, twice in a
+        // row: "zodra je scrolt in je map moet je resultaat goed meescrollen"
+        // and then "ook moet je alleen de bomen zien die in je beeld staan, hij
+        // scrolt nu naar allemaal bomen door die ik helemaal niet zie").
+        //
+        // Two things were wrong and the second was the one he could feel. The
+        // list asked for a RADIUS around the centre, so the corners of the
+        // screen were never in it and a strip beyond the top and bottom edges
+        // always was. And when a close view held fewer than eight trees it
+        // widened that radius to eight times the view or fifty kilometres,
+        // whichever was larger, which is a list of a province wearing the
+        // heading of a street. That top-up was written to stop a street level
+        // view reading as an empty app, and it bought that at the price of the
+        // list telling the truth. An honest short list is the better trade: it
+        // says "there are two trees here", which is a fact somebody can act on
+        // by zooming out.
+        //
+        // The rectangle comes from the map's own region, so panning and
+        // zooming change it by definition and the list cannot drift away from
+        // what the eye sees.
+        let box = visibleBox
+        let near = catalogue.trees
+            .filter { box.contains($0.lat, $0.lng) }
+            .filter { filters.keeps($0, month: month, collected: collectedIds) }
+            .map { ($0, $0.distanceKm(from: focus.lat, focus.lng)) }
+            .filter { filters.keepsDistance($0.1) }
+            .sorted { $0.1 < $1.1 }
+            .prefix(60)
+            .map { (tree: $0.0, km: $0.1) }
         guard !query.isEmpty else {
             return Editorial.leadWithAPhotograph(near, photo: { $0.tree.photo != nil })
         }

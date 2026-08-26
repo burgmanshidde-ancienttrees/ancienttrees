@@ -126,8 +126,8 @@ def screens(sub):
         # where the cards and the lane picker live, had not been photographed
         # once. Two screens with one name is the same failure as a screen no
         # argument can open, and the check below now refuses it.
-        ("collection-tab", ["-tab=3"], 4),
-        ("profile",       ["-tab=4"], 5),
+        ("collection-tab", ["-tab=2"], 4),
+        ("profile",       ["-tab=2", "-settings"], 5),
         ("tree",          ["-tab=0", f'-open=tree:{sub["tree"]}'], 6),
         ("tree-nophoto",  ["-tab=0", f'-open=tree:{sub["tree_nophoto"]}'], 5),
         ("city",          ["-tab=0", f'-open=city:{sub["city"]}'], 5),
@@ -138,9 +138,9 @@ def screens(sub):
         ("signin",        ["-tab=0", "-signin"], 5),
         ("paywall",       ["-tab=0", "-paywall"], 5),
         ("primer",        ["-tab=0", "-primer"], 5),
-        ("contribute",    ["-tab=4", "-contribute"], 5),
-        ("feedback",      ["-tab=4", "-feedback"], 5),
-        ("sponsor",       ["-tab=4", "-sponsor"], 5),
+        ("contribute",    ["-tab=2", "-contribute"], 5),
+        ("feedback",      ["-tab=2", "-feedback"], 5),
+        ("sponsor",       ["-tab=2", "-sponsor"], 5),
     ]
     names = [p[0] for p in plan]
     dupes = sorted({n for n in names if names.count(n) > 1})
