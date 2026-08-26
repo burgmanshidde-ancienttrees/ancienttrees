@@ -15,6 +15,7 @@ import json
 import os
 import subprocess
 import sys
+import unicodedata
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -226,18 +227,92 @@ def known_terms():
     return {t for t in terms if t}
 
 
+def fold(s):
+    """Lowercase and strip accents. Google's queries arrive unaccented far more
+    often than not, and our own names are full of accents, so a raw string
+    compare between the two is a coin toss."""
+    s = unicodedata.normalize("NFD", s.lower())
+    return "".join(c for c in s if unicodedata.category(c) != "Mn")
+
+
+# Standing-page names that are ordinary English words. Matched only against a
+# query that is that word and nothing else, the same treatment known_terms()
+# already gives generic tree-name tails. Without this, "about" matched any
+# query containing the word about, and the day's biggest real gap could sit
+# behind it unreported.
+GENERIC_EXACT = {"about", "app", "map", "species", "cities", "countries",
+                 "explore", "collections", "privacy", "contribute", "trees",
+                 "tree"}
+
+
+def tokens(s):
+    """Accent-folded word list. Word boundaries are the point: matching bare
+    substrings meant the city Ede matched 'oudste boom van nederland', because
+    "ede" sits inside "nederland". Every short place name that is also a
+    fragment of a longer word had the same effect, and each one silently
+    swallowed a real gap."""
+    out, cur = [], []
+    for ch in fold(s):
+        if ch.isalnum():
+            cur.append(ch)
+        elif cur:
+            out.append("".join(cur)); cur = []
+    if cur:
+        out.append("".join(cur))
+    return out
+
+
+def term_matches(term, query):
+    """True when one of these is a contiguous run of words inside the other.
+    Both directions, because a searcher types the distinctive half of a name
+    ("alameda dos platanos") and not the whole page title ("alameda dos
+    platanos of jardim da cordoaria")."""
+    if len(term) == 1 and term[0] in GENERIC_EXACT:
+        return query == term
+    a, b = (term, query) if len(term) <= len(query) else (query, term)
+    n = len(a)
+    return any(b[i:i + n] == a for i in range(len(b) - n + 1))
+
+
+def content_gaps(gap_queries):
+    """Every query (10d) whose text matches no page we already have: content
+    leads, the kind that found us before we had a page for them ("albero roma").
+    A query that matches a page we already have is not a gap, it is a ranking
+    problem, and those two need opposite responses: one is a page to write, the
+    other is a page to strengthen.
+
+    Two faults fixed 2026-08-26, either of which alone produced a false gap.
+    The match ran in ONE direction, asking only whether our name sits inside
+    their query, so a searcher typing less than our full page title always read
+    as a miss. And nothing folded accents, so 'platanos' never met 'plátanos'.
+    Together they reported 'alameda dos platanos' (i13, p8) as a page to write
+    while we had TWO pages ranking for it, which is how the duplicate Cordoaria
+    entries were found. Third occurrence of this class after 'ancient tree map'
+    (08-06) and 'den brandt park' (08-07/08), so per the ratchet it is code.
+
+    Returns the full list, biggest first, not one. Reporting a single gap made
+    the day's lead depend on which false positive happened to score highest.
+
+    What it still cannot do: partial name overlap. 'vegas trees' and 'oldest
+    tree in dc' read as gaps while /las-vegas and /washington-dc exist, because
+    neither query is a word run inside the city name. Those are real leads about
+    real unserved demand, but the fix for them is a stronger page, not a new
+    one, so the printed line says to check before building."""
+    terms = [tokens(t) for t in known_terms()]
+    terms = [t for t in terms if t]
+    misses = []
+    for r in gap_queries:
+        q = tokens(r["keys"][0])
+        if any(term_matches(t, q) for t in terms):
+            continue
+        misses.append(r)
+    return sorted(misses, key=lambda r: -r["impressions"])
+
+
 def find_content_gap(gap_queries):
-    """The top-impression query (10d) whose text matches no known city, country,
-    species or standing page: a content lead, the kind that found us before we
-    had a page for it ("albero roma"). A query that matches a page we already
-    have is not a gap, it is a ranking problem, and those two need opposite
-    responses: one is a page to write, the other is a page to strengthen."""
-    terms = known_terms()
-    misses = [r for r in gap_queries
-              if not any(t in r["keys"][0].lower() for t in terms if len(t) > 2)]
-    if not misses:
-        return None
-    return max(misses, key=lambda r: r["impressions"])
+    """The biggest content gap, or None. Kept for callers that want just one."""
+    gaps = content_gaps(gap_queries)
+    return gaps[0] if gaps else None
 
 
 # The language prefixes translated pages live under. A path like /it/rome is
@@ -458,12 +533,18 @@ def gsc_section(gsc):
     rows.append("| **window** | **%d** | **%d** | **%.1f%%** | |" % (
         tc, ti, (100.0 * tc / ti) if ti else 0.0))
     trend = "\n" + "\n".join(rows)
-    gap = find_content_gap(gap_queries)
-    gap_line = (
-        "- Content lead: %r has no matching page (i%d, p%.0f)" % (
-            clean_query(gap["keys"][0]), gap["impressions"], gap["position"])
-        if gap else "- Content lead: none of the top 25 queries lack a matching page"
-    )
+    gaps = content_gaps(gap_queries)
+    if gaps:
+        gap_line = "\n".join(
+            ["- Content leads, biggest first. A lead is a query no page TITLE covers, "
+             "so some are ranking problems on a page we have rather than a page to "
+             "write ('vegas trees' against /las-vegas). Check before building:"]
+            + ["    - %r (i%d, p%.0f)" % (clean_query(g["keys"][0]),
+                                          g["impressions"], g["position"])
+               for g in gaps[:8]]
+            + (["    - and %d more" % (len(gaps) - 8)] if len(gaps) > 8 else []))
+    else:
+        gap_line = "- Content leads: every query Google showed us matches a page we have"
     # The pages Google shows most and visitors click least, with what those
     # impressions are actually for. Ranked by wasted impressions rather than by
     # volume, because that is the number a fix would move.

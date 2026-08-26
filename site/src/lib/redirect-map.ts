@@ -47,6 +47,14 @@ const RENAMED_TREE_SLUGS: [string, string, string][] = [
   ["berlin", "bellevue-oak", "ber_006"],
   ["athens", "trees-of-kaisariani-monastery", "ath_010"],
   ["prague", "platan-u-kostela-sv-klimenta-nove-mlyny", "prg_017"],
+  // por_028/por_029 (2026-08-26): the Cordoaria plane avenue and its bunya pine
+  // were each published twice in one city file, the later pair citing the same
+  // ICNF processo at identical coordinates (KNJ3/050 and KNJ1/450). Found because
+  // a digest reported 'alameda dos platanos' as a content gap while TWO of our
+  // pages were ranking for it at position 8. The earlier ids survive and carry
+  // the merged story, measurements and sources; these slugs point at them.
+  ["porto", "elephants-foot-plane-avenue-of-the-cordoaria", "por_026"],
+  ["porto", "bunya-bunya-of-the-cordoaria", "por_019"],
 ];
 
 // A tree that turned out to already be published under a different city

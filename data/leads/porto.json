@@ -101,6 +101,70 @@
         "longitude": -8.6316
       },
       "reason": "Register entry (ICNF processo AIP13121884I, girth 5.75m, no age on file) well sourced independently (ambiente.cm-porto.pt, viva-porto.pt, JN, and ccdr-n.pt itself all cover the classification), but the tree stands on the private grounds of a regional government headquarters (Comissão de Coordenação e Desenvolvimento Regional do Norte). No source confirms genuine public access to the garden itself; the only access detail found was the agency's office hours (business days 14:00-18:00), which govern administrative business, not visiting a tree. Per hard rule 10, left out rather than assumed open. Worth re-checking if CCDR-N is confirmed to allow casual garden access."
+    },
+    {
+      "id": "por_028",
+      "name": "The Elephant's-Foot Plane Avenue of the Cordoaria",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "about 160 years, planted around 1866 when the garden was laid out",
+      "age_min": 150,
+      "age_max": 165,
+      "girth_cm": 540,
+      "height_m": 19,
+      "location": {
+        "address": "Jardim da Cordoaria (Jardim de Joao Chagas), Praca Coronel Pacheco, Porto",
+        "latitude": 41.14559999,
+        "longitude": -8.617099988,
+        "neighbourhood": "Cordoaria, Cedofeita"
+      },
+      "verified_sources": [
+        "Portugal's national register of trees of public interest (ICNF), processo KNJ3/050, 'Alameda de Platanos', Jardim da Cordoaria, classified D.R. n.o 6, II Serie, 10/01/2005",
+        "100 Mil Arvores project, 'Arvores de Cedofeita: segredos bem guardados' (100milarvores.pt, June 2017): confirms 37 London planes forming one classified ensemble, physiognomy singular due to a disease that deformed the trunk bases into an 'elephant paw' shape, trees reported perfectly healthy"
+      ],
+      "access": "Free, public garden (Jardim da Cordoaria, also called Jardim de Joao Chagas), triangular and unfenced, open at all hours.",
+      "transport": "Central Porto, about a 5-10 minute walk from Sao Bento railway station.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "story": "Thirty-seven plane trees line one avenue in the Jardim da Cordoaria, and every one of them has the same strange deformity: a disease swelled their bases into something that looks, unmistakably, like an elephant's foot. The trees are perfectly healthy. Portugal's monumental tree register classifies the whole avenue as one entry, the Alameda dos Platanos, rather than splitting it into 37 separate trunks, because that is how a visitor actually experiences it: one long, uniform, oddly-footed colonnade.\n\nThe garden itself predates the plane trees by centuries in name only. Rope-makers worked this ground for two hundred years, which is where Cordoaria comes from, until the council cleared them out in the 1860s and hired the landscape architect Emile David, who also laid out the gardens of the nearby Palacio de Cristal, to build a proper garden in their place. The planes went in around 1866. A cyclone tore through in 1941 and reshaped the garden's canopy, but the avenue survived it and was formally classified a tree of public interest in 2005.\n\nThe garden is triangular, unfenced and free, a short walk from Sao Bento station. Walk the length of the avenue once and every trunk repeats the same swollen, elephantine base.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "reason": "Retired 2026-08-26: a duplicate page for a tree already published as por_026. Both entries cite the same ICNF processo at identical coordinates, so this was one physical tree with two tree pages splitting its own search demand (the 'alameda dos platanos' query sat at position 8 with two of our pages competing for it). Everything this entry measured or sourced was folded into por_026 before it was pulled; the story is kept here in full. Slug redirected via RENAMED_TREE_SLUGS. Never re-publish as a separate entry."
+    },
+    {
+      "id": "por_029",
+      "name": "The Bunya-Bunya of the Cordoaria",
+      "species": "Bunya Pine (Araucaria bidwillii)",
+      "age_estimate": "about 150 years",
+      "age_min": 140,
+      "age_max": 160,
+      "girth_cm": 360,
+      "height_m": 40,
+      "location": {
+        "address": "Jardim da Cordoaria (Jardim de Joao Chagas), Praca Coronel Pacheco, Porto",
+        "latitude": 41.14595304,
+        "longitude": -8.616813246,
+        "neighbourhood": "Cordoaria, Cedofeita"
+      },
+      "verified_sources": [
+        "Portugal's national register of trees of public interest (ICNF), processo KNJ1/450, 'araucaria-da-queenslandia ou bunya-bunya', Jardim da Cordoaria, classified D.R. n.o 6, II Serie, 10/01/2005",
+        "100 Mil Arvores project, 'Arvores de Cedofeita: segredos bem guardados' (100milarvores.pt, June 2017): confirms it stands by the garden's lake beside a Cedar of Lebanon and a Cedar of Atlas, calls it the tallest tree in the garden and one of the tallest in Porto at 40 metres, 'mais de 140 anos', native to Australia"
+      ],
+      "access": "Free, public garden (Jardim da Cordoaria, also called Jardim de Joao Chagas), triangular and unfenced, open at all hours.",
+      "transport": "Central Porto, about a 5-10 minute walk from Sao Bento railway station.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "At 40 metres this bunya pine is the tallest tree in the Jardim da Cordoaria and one of the tallest anywhere in Porto, a conifer from Queensland's rainforests standing beside a Cedar of Lebanon and a Cedar of Atlas at the garden's lake, close enough together that a local tree-walking group uses the three of them to teach visitors how to tell the different conifers apart.\n\nAraucaria bidwillii belongs to a genus that once grew across the ancient supercontinent Gondwana and now survives as a handful of species scattered from Australia to South America, most of them, like this one, planted deliberately as curiosities far from where they evolved. Portugal's monumental tree register measured this specimen at 3.6 metres round, 40 metres tall with a 12-metre crown, and classified it a tree of public interest in the same 2005 notice that protects the garden's plane tree avenue nearby.\n\nIt has stood in this triangular, unfenced garden for roughly a century and a half, since not long after the ground stopped being a rope-makers' yard and became a public park. Free to see at any hour, a short walk from Sao Bento station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "reason": "Retired 2026-08-26: a duplicate page for a tree already published as por_019. Both entries cite the same ICNF processo at identical coordinates, so this was one physical tree with two tree pages splitting its own search demand (the 'alameda dos platanos' query sat at position 8 with two of our pages competing for it). Everything this entry measured or sourced was folded into por_019 before it was pulled; the story is kept here in full. Slug redirected via RENAMED_TREE_SLUGS. Never re-publish as a separate entry."
     }
   ]
 }
