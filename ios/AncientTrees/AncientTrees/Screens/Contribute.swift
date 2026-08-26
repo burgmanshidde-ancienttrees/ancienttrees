@@ -8,6 +8,11 @@ struct ContributeView: View {
     /// report says what kind of wrong it is without them typing a category.
     /// They can delete it; it is an opening line, not a label we impose.
     var opening: String?
+    /// The Profile's feedback button (Hidde, 2026-08-26: a general feedback
+    /// channel, "vertel ons welke features je zou willen toevoegen"). Same
+    /// form, same pipeline, kind `feedback`; the picker and the Where fields
+    /// disappear because there is no tree and no place, only the idea.
+    var feedbackMode = false
 
     @Environment(\.dismiss) private var dismiss
     @Environment(Account.self) private var account
@@ -47,7 +52,7 @@ struct ContributeView: View {
                             TextField("Where is it really, if you can say",
                                       text: $draft.locationHint)
                         }
-                    } else {
+                    } else if !feedbackMode {
                         Section {
                             // Three choices as three rows with a tick, the way
                             // Settings lists a short choice. The menu style drew
@@ -68,8 +73,12 @@ struct ContributeView: View {
                         }
                     }
                     Section {
-                        TextField("What should we know?", text: $draft.why, axis: .vertical)
+                        TextField(feedbackMode ? "A feature you would like, or anything else"
+                                               : "What should we know?",
+                                  text: $draft.why, axis: .vertical)
                             .lineLimit(4...10)
+                    } header: {
+                        if feedbackMode { Text("Tell us what you would like") }
                     } footer: {
                         Text("We never publish your name, and we do not ask for it.")
                     }
@@ -81,7 +90,7 @@ struct ContributeView: View {
                             guard account.isSignedIn else { signingIn = true; return }
                             Task {
                                 sending = true
-                                let ok = await Submission.send(draft, from: about?.url,
+                                let ok = await Submission.send(draft, from: about?.url ?? (feedbackMode ? "app-profile" : nil),
                                                                token: account.session?.accessToken)
                                 sending = false
                                 if ok { sent = true } else { failed = true }
@@ -107,7 +116,7 @@ struct ContributeView: View {
             }
             .accessibilityElement(children: .contain)
             .accessibilityIdentifier("contribute-sheet")
-            .navigationTitle(sent ? "Sent" : "Tell us")
+            .navigationTitle(sent ? "Sent" : feedbackMode ? "Feedback" : "Tell us")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
@@ -115,6 +124,7 @@ struct ContributeView: View {
                 }
             }
             .task {
+                if feedbackMode { draft.kind = .feedback }
                 if let t = about {
                     draft.city = t.city
                     draft.tree = t.name

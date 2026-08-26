@@ -42,6 +42,7 @@ struct ProfileView: View {
     /// screenshot sweep cannot tap, and this sheet is otherwise only reachable
     /// by tapping a card on this screen.
     @State private var contributing = ProcessInfo.processInfo.arguments.contains("-contribute")
+    @State private var givingFeedback = ProcessInfo.processInfo.arguments.contains("-feedback")
 
     var body: some View {
         ScrollView {
@@ -76,6 +77,7 @@ struct ProfileView: View {
         .brandGround()
         .toolbar(.hidden, for: .navigationBar)
         .sheet(isPresented: $contributing) { ContributeView() }
+        .sheet(isPresented: $givingFeedback) { ContributeView(feedbackMode: true) }
         // The paywall still opens, from the locked rows themselves; it no
         // longer has a row of its own (2026-08-25).
         .sheet(isPresented: $sponsoring) { PaywallView(feature: .sponsor) }
@@ -295,6 +297,26 @@ struct ProfileView: View {
                 // for the project itself rather than for a feature, which is a
                 // different and more interesting question than any of the rows
                 // above it.
+                // HIS ASK, 2026-08-26: a general feedback button, and under
+                // it specifically the features people would want. The open
+                // answers are the material the Plus line gets designed from,
+                // which beats any list we invent (drafts/PLUS_THINKING.md).
+                Button { givingFeedback = true } label: {
+                    HStack(spacing: 12) {
+                        Image(systemName: "bubble.left.fill").frame(width: 20)
+                            .foregroundStyle(Brand.moss)
+                        Text("Send feedback").font(.callout)
+                            .foregroundStyle(Brand.ink)
+                        Spacer()
+                        Image(systemName: "chevron.right")
+                            .font(.caption).foregroundStyle(Brand.inkSoft.opacity(0.6))
+                    }
+                    .padding(.horizontal, 16).frame(height: 48)
+                    .contentShape(.rect)
+                }
+                .buttonStyle(.plain)
+                .accessibilityIdentifier("profile-feedback")
+                Divider().padding(.leading, 48)
                 Button { sponsoring = true } label: {
                     HStack(spacing: 12) {
                         Image(systemName: "heart.fill").frame(width: 20)

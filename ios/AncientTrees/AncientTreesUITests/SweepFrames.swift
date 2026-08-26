@@ -61,6 +61,7 @@ final class SweepFrames: XCTestCase {
         ("paywall",      ["-tab=0", "-paywall"], "paywall-sheet"),
         ("primer",       ["-tab=0", "-primer"], "primer"),
         ("contribute",   ["-tab=4", "-contribute"], "contribute-sheet"),
+        ("feedback",     ["-tab=4", "-feedback"], "contribute-sheet"),
     ]
 
     /// The file appfit.py goes looking for.
