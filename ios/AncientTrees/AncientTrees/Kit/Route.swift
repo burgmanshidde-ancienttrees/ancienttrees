@@ -37,6 +37,15 @@ public enum Route: Hashable {
     /// with a different history, so the way back to what you were reading was
     /// gone. A pushed page keeps the trail.
     case treeMap(String)                       // tree id
+    /// YOUR OWN COLLECTION ON A REAL MAP, pushed from the cover on My trees
+    /// (Hidde, 2026-08-26: "je moet nog wel de kaart kunnen scrollen enzo").
+    ///
+    /// The cover cannot itself be draggable: a map you can pan inside a scroll
+    /// view is the gesture fight that page just lost the sheet over. Every
+    /// reference answers this the same way, a still preview that opens a map
+    /// you can move: Airbnb's listing, Google Maps' place card, Strava's
+    /// activity. Back returns to your page.
+    case collectionMap
     /// The "see all" behind a shelf. Netflix, AllTrails and Airbnb all put one
     /// in the shelf header, and a shelf without one is a promise that the row
     /// you can see is everything there is (Hidde, 2026-08-21).

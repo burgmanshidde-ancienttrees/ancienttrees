@@ -46,6 +46,27 @@ struct SpeciesView: View {
                 }
                 .padding(.horizontal, 16).padding(.top, 4)
 
+                // WHAT THIS KIND OF TREE IS, before the list of them (Hidde,
+                // 2026-08-26: "de wild olive pagina moet een pagina zijn die
+                // uitleg geeft over die boomsoort en daarna de andere wild
+                // olives opsomt").
+                //
+                // The website has carried that paragraph since Contract F and
+                // the app has been receiving it all along: browse.json ships an
+                // intro for 116 species and this screen threw it away, showing
+                // a name and a count over a list of cards. Somebody who taps
+                // "Wild Olive" is asking what a wild olive IS, and we had the
+                // answer in the file.
+                if let intro = catalogue.intro(species: commonName), !intro.isEmpty {
+                    Text(intro)
+                        .font(.callout)
+                        .foregroundStyle(Brand.ink)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .padding(.horizontal, 16)
+                        .padding(.bottom, 6)
+                        .accessibilityIdentifier("species-intro")
+                }
+
                 ForEach(trees) { t in
                     NavigationLink(value: Route.tree(t.id)) {
                         TreeCard(tree: t)

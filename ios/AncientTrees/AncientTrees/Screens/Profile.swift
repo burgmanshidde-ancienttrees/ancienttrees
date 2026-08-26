@@ -44,22 +44,19 @@ struct ProfileView: View {
     /// by tapping a card on this screen.
     @State private var contributing = ProcessInfo.processInfo.arguments.contains("-contribute")
     @State private var givingFeedback = ProcessInfo.processInfo.arguments.contains("-feedback")
+    @State private var editingProfile = false
     /// Same debug scaffolding as -contribute and -feedback: the sweep cannot
     /// tap, so every screen needs an argument or it ships unlooked-at.
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 18) {
-                // The same title as Explore and Collection wear, now that this
-                // is a tab beside them rather than a page pushed from a small
-                // avatar (Hidde, 2026-08-24). An inline navigation title on one
-                // of three sibling tabs and a big screen title on the other two
-                // is the kind of difference nobody can name and everybody
-                // feels.
-                Text("Profile")
-                    .font(.screenTitle)
-                    .foregroundStyle(Brand.ink)
-                    .padding(.bottom, 2)
+                // NO SCREEN TITLE. It carried one from the days this was a
+                // tab beside Explore and Collection, where a big title was
+                // right and there was no bar to hold one. It is a pushed page
+                // now, the bar says Settings, and a page whose bar and body
+                // disagree about its own name is the "title twice" fault the
+                // tree page already fixed once.
                 identity
                 contributeCard
                 // No Plus card. It was the loudest thing on the page and it
@@ -78,9 +75,17 @@ struct ProfileView: View {
             .padding(.horizontal, 16).padding(.top, 6)
         }
         .brandGround()
-        .toolbar(.hidden, for: .navigationBar)
+        // A BAR, so there is a way back (Hidde, 2026-08-26: "als je op
+        // instellingen drukt moet er een vorige button komen dat je weer terug
+        // kan naar je me pagina"). This screen hid the navigation bar from the
+        // days it was a tab, where there was nothing to go back to; it is
+        // pushed from the gear on My trees now, and a pushed page without a
+        // back button is a room with the door painted over.
+        .navigationTitle("Settings")
+        .navigationBarTitleDisplayMode(.inline)
         .sheet(isPresented: $contributing) { ContributeView() }
         .sheet(isPresented: $givingFeedback) { ContributeView(feedbackMode: true) }
+        .sheet(isPresented: $editingProfile) { ProfileEditor() }
         .sheet(isPresented: $showingSponsor) { SponsorSheet() }
         // The paywall still opens, from the locked rows themselves; it no
         // longer has a row of its own (2026-08-25).
@@ -307,6 +312,28 @@ struct ProfileView: View {
                 // it specifically the features people would want. The open
                 // answers are the material the Plus line gets designed from,
                 // which beats any list we invent (drafts/PLUS_THINKING.md).
+                // The same editor the name on My trees opens. Two doors to
+                // one room, and he asked for both ("ook op profielpagina moet
+                // je je profielfoto etc aan kunnen passen, prima als dat dubbel
+                // is"): settings is where somebody looks for a thing about
+                // themselves, and the name on the page is where somebody
+                // notices it is wrong.
+                Button { editingProfile = true } label: {
+                    HStack(spacing: 12) {
+                        Image(systemName: "person.crop.circle").frame(width: 20)
+                            .foregroundStyle(Brand.moss)
+                        Text("Your name and picture").font(.callout)
+                            .foregroundStyle(Brand.ink)
+                        Spacer()
+                        Image(systemName: "chevron.right")
+                            .font(.caption).foregroundStyle(Brand.inkSoft.opacity(0.6))
+                    }
+                    .padding(.horizontal, 16).frame(height: 48)
+                    .contentShape(.rect)
+                }
+                .buttonStyle(.plain)
+                .accessibilityIdentifier("settings-edit-profile")
+                Divider().padding(.leading, 48)
                 Button { givingFeedback = true } label: {
                     HStack(spacing: 12) {
                         Image(systemName: "bubble.left.fill").frame(width: 20)

@@ -47,8 +47,24 @@ struct TreeDetail: View {
     var body: some View {
         ZStack(alignment: .bottom) {
             ScrollView {
-                VStack(alignment: .leading, spacing: 16) {
+                // A RHYTHM, not one gap repeated (Hidde, 2026-08-26: "de
+                // spacing op een detailpagina is helemaal vreselijk, kijk daar
+                // eens naar conventies hoe je zo'n pagina opbouwt").
+                //
+                // It was a single VStack at 16 points, so the space between a
+                // name and its species was the same as the space between two
+                // unrelated sections, and a page where everything is equally
+                // far apart has no hierarchy at all: the eye cannot tell what
+                // belongs to what.
+                //
+                // Every reference builds one the same way. Airbnb's listing,
+                // AllTrails' trail and Apple Maps' place all run the hero edge
+                // to edge with no margin, group what belongs together tightly,
+                // and put real air between sections. So: 28 between sections,
+                // 10 inside a group, and the picture full bleed.
+                VStack(alignment: .leading, spacing: 0) {
                     hero
+                    VStack(alignment: .leading, spacing: 28) {
                     header
                     facts
                     // A TICKET IS THE FIRST THING TO KNOW (Hidde, 2026-08-26:
@@ -116,9 +132,10 @@ struct TreeDetail: View {
                             .lineLimit(1)
                     }
                     Color.clear.frame(height: 90)   // room for the pinned bar
+                    }
+                    .padding(.horizontal, 20)
+                    .padding(.top, 20)
                 }
-                .padding(.horizontal, 20)
-                .padding(.top, 8)
             }
             actionBar
         }
@@ -155,18 +172,17 @@ struct TreeDetail: View {
                 // items into one capsule, so share and report shared a pill
                 // while the back button and the camera on the photograph each
                 // wore their own circle. Three controls on one screen drawn
-                // two different ways is the inconsistency he saw. ToolbarSpacer
-                // is the platform's own way to break the group, and it lands on
-                // the convention every reference uses over a hero image: one
-                // round button per control, evenly spaced.
-                //
-                // Not shipped: the type itself, not only the API, needs the
-                // iOS 26 SDK to compile, and CI's actual toolchain is Xcode
-                // 16.4 (the workflow's xcode-select to 26.6 fails silently and
-                // falls back, 2026-08-26). A #available guard checks at
-                // runtime; it cannot make an unresolvable symbol compile. This
-                // is a re-open once CI carries a 26 SDK, not a rejection of
-                // the idea.
+                // two different ways is the inconsistency he saw. A
+                // ToolbarSpacer is the platform's own way to break the group,
+                // and it lands on the convention every reference uses over a
+                // hero image: one round button per control, evenly spaced.
+                // Guarded, because this app runs from iOS 18 and the spacer
+                // arrived in 26. On 18 there is nothing to split: that older
+                // toolbar draws no glass around a group, so the two controls
+                // already read as two.
+                if #available(iOS 26.0, *) {
+                    ToolbarSpacer(.fixed, placement: .topBarTrailing)
+                }
                 ToolbarItem(placement: .topBarTrailing) {
                     Menu {
                         Button { report("Something here is wrong:") } label: {
@@ -293,11 +309,11 @@ struct TreeDetail: View {
             // where the photograph was, and the photograph's own thumbnail in
             // the corner to swap back. One control, two directions.
             Color.clear
-                .frame(height: 240)
+                .frame(height: 300)
                 .overlay {
                     MapInset(lat: tree.lat, lng: tree.lng, side: nil, height: 240)
                 }
-                .clipShape(.rect(cornerRadius: 16))
+                .clipped()
                 .overlay(alignment: .bottomTrailing) {
                     // THE SAME CONTROL, POINTING THE OTHER WAY (Hidde,
                     // 2026-08-26: "dan wil je die actie om terug te gaan naar
@@ -334,11 +350,11 @@ struct TreeDetail: View {
             // same empty box with the picture laid over it as below, for the
             // same reason: an unbounded image drags the whole page sideways.
             Color.clear
-                .frame(height: 240)
+                .frame(height: 300)
                 .overlay {
                     Image(uiImage: shot).resizable().aspectRatio(contentMode: .fill)
                 }
-                .clipShape(.rect(cornerRadius: 16))
+                .clipped()
         } else if let p = tree.photo, let url = p.full {
             VStack(alignment: .leading, spacing: 6) {
                 // AN EMPTY BOX WITH THE PHOTOGRAPH LAID OVER IT, not a
@@ -353,7 +369,7 @@ struct TreeDetail: View {
                 // An overlay never takes part in layout at all, which is the
                 // only version that cannot do this again.
                 Color.clear
-                    .frame(height: 240)
+                    .frame(height: 300)
                     .overlay {
                         AsyncImage(url: url) { img in
                             img.resizable().aspectRatio(contentMode: .fill)
@@ -362,7 +378,6 @@ struct TreeDetail: View {
                         }
                     }
                     .clipped()
-                    .clipShape(.rect(cornerRadius: 14))
                     // The way to the map, in the corner a card already trained
                     // people to look at. It replaces the 150 point map card
                     // that used to sit between the facts and the story and
@@ -393,14 +408,21 @@ struct TreeDetail: View {
             Button {
                 if mine == nil { navigator.collectNearby = true }
             } label: {
-                heroFallback.frame(height: 200).clipShape(.rect(cornerRadius: 14))
+                heroFallback.frame(height: 300)
             }
             .buttonStyle(.plain)
             .disabled(mine != nil)
             .accessibilityIdentifier("tree-empty-photo")
             .accessibilityLabel(mine == nil ? "Add a photograph of this tree" : "No photograph")
             .overlay(alignment: .bottomTrailing) {
-                Button { navigator.showOnMap = tree.id } label: {
+                // SWAPS IN PLACE, the same as on a tree that has a photograph
+                // (Hidde, 2026-08-26: "nu is de interactie weer dat je van dat
+                // kaartje naar de map pagina gaat, maar je wilt dat je in
+                // discover blijft maar wel een kaartje opent"). This one still
+                // handed you to the Map tab, which is the behaviour the other
+                // branch lost an hour ago; a photograph-less tree is not a
+                // reason to throw away where somebody was reading.
+                Button { withAnimation(.easeInOut(duration: 0.22)) { showingMap.toggle() } } label: {
                     MapInset(lat: tree.lat, lng: tree.lng).padding(10)
                 }
                 .buttonStyle(.plain)

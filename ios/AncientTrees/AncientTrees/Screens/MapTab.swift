@@ -279,7 +279,11 @@ struct MapTab: View {
     }
 
     var body: some View {
-        ZStack(alignment: .bottom) {
+        // THE SHARED COMPONENT (Hidde, 2026-08-26: "je wilt deze interactie als
+        // component hebben en overal hetzelfde hebben"). This screen is where
+        // the arrangement was argued out; My trees now uses the same one, and
+        // it only stays the same if there is one of it.
+        MapWithSheet(height: $sheetHeight, topItem: $topCard) {
             TreeMap(trees: shownWalk.map { catalogue.trees(of: $0) } ?? mapTrees,
                     mine: sightings.yoursOnly.map { (id: $0.id, lat: $0.lat, lng: $0.lng, name: $0.name) },
                     collected: collectedIds,
@@ -299,14 +303,13 @@ struct MapTab: View {
                     region: $mapRegion,
                     moveTo: moveRequest,
                     selected: $selected)
-                .ignoresSafeArea(edges: [.top, .horizontal])
                 .accessibilityIdentifier("tree-map")
-            BottomSheet(height: $sheetHeight, topItem: $topCard, header: {
+        } header: {
                 // The count is the header now, outside the scroll view: it stays
                 // visible while the list scrolls and it is the handle that makes
                 // the sheet draggable again once it has (2026-08-25).
                 countStrip
-            }) {
+        } content: {
                 // The arbitration between dragging the sheet and scrolling what
                 // is inside it, which is the whole interaction and was wrong.
                 //
@@ -319,7 +322,6 @@ struct MapTab: View {
                 // scrolls, and the grabber at the top stays outside the scroll
                 // view so there is always a way back down.
                 sheet
-            }
         }
         // The title used to float over the map as bare text with nothing behind
         // it, and worse, "Near Amsterdam" was a statement of a problem with no
