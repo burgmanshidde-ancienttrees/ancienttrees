@@ -267,6 +267,96 @@ def check_cross_city_duplicates():
     return out
 
 
+# The register identifiers that actually appear in verified_sources across the
+# corpus. A shared one is what separates a duplicate from two neighbours:
+# Portugal's ICNF processo codes, Hawaii's register_id, Poland's CRFOP fop ids,
+# German Naturdenkmal numbers, NYC Parks' great-trees ids.
+REGISTER_ID_PATTERNS = [
+    re.compile(r"processo\s+([A-Z]{3}\d+/\d+)", re.I),
+    re.compile(r"register_id\s+(\d+)", re.I),
+    re.compile(r"fop=([A-Za-z0-9.]+)"),
+    re.compile(r"\bND[-\s](\d+)\b"),
+    re.compile(r"great-trees\?id=(\d+)"),
+]
+
+SAME_CITY_DUPLICATE_RADIUS_M = 100
+
+
+def register_ids(tree):
+    out = set()
+    for s in tree.get("verified_sources") or []:
+        for pat in REGISTER_ID_PATTERNS:
+            for m in pat.findall(s):
+                out.add(m.upper())
+    return out
+
+
+def check_same_city_duplicates():
+    """One physical tree published twice inside ONE city file.
+
+    The third occurrence of this class, and the first one a script can see.
+    muc_015-018 (2026-08-13) re-wrote four Nymphenburg register entries already
+    live as muc_011-014. pot_005/pot_006 (2026-08-16) duplicated Berlin's
+    ber_012/ber_011 and were caught by a REVIEW.md BLOCKER. por_026/por_028 and
+    por_019/por_029 duplicated the Cordoaria plane avenue and its bunya pine,
+    and were found only because a digest reported 'alameda dos platanos' as a
+    content gap while we had TWO pages ranking for it at position 8. Per the
+    ratchet, a class that appears on three different days becomes a check.
+
+    Distance alone cannot do this job, which is why check_cross_city_duplicates
+    skips same-city pairs outright: trees legitimately stand metres apart, and
+    a register that rounds its coordinates puts them on one point. Hawaii's four
+    Kalopa trees, Nuremberg's ND-9 and ND-10 five metres apart, Poznan's four
+    protected planes on one square and Osaka's two named camphors at one shrine
+    are all real, all close, all correct.
+
+    What every genuine duplicate shares and no legitimate neighbour does is a
+    REGISTER ID. Hawaii's are 1184 and 1185; Nuremberg's are ND-9 and ND-10;
+    Porto's two pairs each cite one processo twice. So the signal is a shared
+    identifier plus proximity, and on the corpus as it stood when this was
+    written it fired on exactly the two Porto pairs out of 1,842 trees.
+
+    This FAILS rather than notes. Two pages for one tree is not a smell: it
+    splits the trees' own search demand between them, it puts two ages and two
+    girths on the site for one trunk, and the fix is a merge plus a redirect
+    (RENAMED_TREE_SLUGS in site/src/lib/redirect-map.ts), never a deletion."""
+    import math
+    trees = []
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            d = json.load(fh)
+        city = d.get("city") or path
+        for t in d.get("trees") or []:
+            loc = t.get("location") or {}
+            lat, lon = loc.get("latitude"), loc.get("longitude")
+            if lat is None or lon is None:
+                continue
+            ids = register_ids(t)
+            if ids:
+                trees.append((lat, lon, city, t.get("id"), t.get("name"), ids))
+    out = []
+    for i in range(len(trees)):
+        lat1, lon1, city1, id1, name1, ids1 = trees[i]
+        for lat2, lon2, city2, id2, name2, ids2 in trees[i + 1:]:
+            if city1 != city2:
+                continue          # cross-city is check_cross_city_duplicates
+            shared = ids1 & ids2
+            if not shared:
+                continue
+            dlat = (lat1 - lat2) * 111320
+            dlon = (lon1 - lon2) * 111320 * math.cos(math.radians((lat1 + lat2) / 2))
+            dist = math.hypot(dlat, dlon)
+            if dist <= SAME_CITY_DUPLICATE_RADIUS_M:
+                out.append(
+                    "%s (%r) and %s (%r) in %s are %.0fm apart and cite the same "
+                    "register entry (%s): one tree with two pages. Merge into the "
+                    "earlier id, fold in what the later one measured, and redirect "
+                    "the retired slug."
+                    % (id1, name1, id2, name2, city1, dist,
+                       ", ".join(sorted(shared))))
+    return out
+
+
 # A stack of pins is a SMELL, not a defect, and this prints rather than fails
 # for a reason worth stating. Six trees on one coordinate along a 0.7 mile
 # signposted loop is fine: you park, you walk, you see all six. The same six
@@ -489,7 +579,8 @@ def check_paid_share():
 
 def main():
     problems = (check_id_prefixes() + check_pin_upgrades()
-                + check_cross_city_duplicates() + check_phenology())
+                + check_cross_city_duplicates() + check_same_city_duplicates()
+                + check_phenology())
     files = sorted(glob.glob("data/cities/*.json"))
     for p in files:
         problems += check_city(p)
