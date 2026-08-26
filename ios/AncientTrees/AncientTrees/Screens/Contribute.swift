@@ -4,6 +4,10 @@ struct ContributeView: View {
     /// Prefilled when it is opened from a tree, which is the case that matters:
     /// somebody standing at a pin that is wrong.
     var about: Tree?
+    /// What they picked from the tree page's menu, seeded into `why` so the
+    /// report says what kind of wrong it is without them typing a category.
+    /// They can delete it; it is an opening line, not a label we impose.
+    var opening: String?
 
     @Environment(\.dismiss) private var dismiss
     @Environment(Account.self) private var account
@@ -120,6 +124,7 @@ struct ContributeView: View {
                     // it sends cannot drift apart when that default changes.
                     draft.kind = .correction
                 }
+                if let opening, draft.why.isEmpty { draft.why = opening + "\n" }
             }
             .sheet(isPresented: $signingIn) {
                 SignInSheet(reason: .feedback, localCount: 0)
