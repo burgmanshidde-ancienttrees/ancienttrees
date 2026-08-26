@@ -118,6 +118,37 @@ def looks_starved(workflow):
         return False
 
 
+# The starvation check above only sees workflows that FAIL. A night run that
+# hits the usage limit ends with conclusion "success" after 0.0 minutes and one
+# turn, so twenty of them in a row (2026-08-24 to 08-26) looked in LOG.md like
+# "nothing new pushed" while the truth was "the engine has been off for two
+# days". This reads the runs' own health ledger and says so.
+RUN_HEALTH = os.path.join(ROOT, "data", "run-health.json")
+IDLE_STREAK_FLOOR = 4  # nine knocks a day, so four in a row is most of a shift
+
+
+def night_shift_idle():
+    """(streak, since) of newest consecutive runs that died in seconds."""
+    try:
+        doc = json.load(open(RUN_HEALTH))
+    except (OSError, ValueError):
+        return 0, None
+    runs = doc if isinstance(doc, list) else doc.get("runs", [])
+    streak, since = 0, None
+    for r in reversed(runs):
+        try:
+            idle = (float(r.get("minutes") or 0) < 0.5
+                    and int(r.get("turns") or 0) <= 2
+                    and int(r.get("commits") or 0) == 0)
+        except (TypeError, ValueError):
+            break
+        if not idle:
+            break
+        streak += 1
+        since = r.get("started") or r.get("date") or ""
+    return streak, since
+
+
 ANSWERED = os.path.join(ROOT, "data", "review-answered.json")
 
 
@@ -218,6 +249,17 @@ def main():
                             f"GitHub drops schedules silently: {remedy}")
         state = conclusion or "in progress"
         print(f"  {label:20s} {state:10s} {hours:5.1f}h ago")
+
+    streak, since = night_shift_idle()
+    if streak >= IDLE_STREAK_FLOOR:
+        when = (since or "")[:16].replace("T", " ")
+        notes.append(f"The night shift has been idle: the newest {streak} runs "
+                     f"(since {when} UTC) each died in seconds with nothing "
+                     f"done. That is almost certainly the usage window, not "
+                     f"breakage; runs end 'success' so nothing else reports it. "
+                     f"Nothing to fix. If a run still does 0.0 minutes after "
+                     f"the window has reset, then it is not the allowance and "
+                     f"its log is worth reading.")
 
     date, body = newest_review_block()
     if date:
