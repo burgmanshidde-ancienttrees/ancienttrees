@@ -1,0 +1,114 @@
+// Who you are, and who you follow.
+//
+// Hidde cleared the gate on 2026-08-26 ("extra persoonsgegevens moet gewoon"),
+// which is the explicit yes the accounts rule asks for before anything new
+// about a person is stored. What is stored is in supabase/profiles.sql and
+// nowhere else: a display name, an avatar url, and rows saying one account
+// follows another. Everything cascades off auth.users, so deleting an account
+// still takes all of it, which was the condition of opening accounts at all.
+//
+// UNTIL THAT SQL IS RUN every call here fails quietly and the app shows the
+// same page it showed yesterday: a name you can set locally and no followers.
+// That is the honest-empty rule the rest of this project follows, and it means
+// this can ship before the database catches up.
+
+import Foundation
+import Observation
+
+@MainActor
+@Observable
+public final class Profiles {
+    public struct Profile: Codable, Sendable, Hashable {
+        public let user_id: String
+        public var display_name: String
+        public var avatar_url: String?
+    }
+
+    public private(set) var me: Profile?
+    public private(set) var followers = 0
+    public private(set) var following = 0
+
+    private var base: URL { Submission.url.deletingLastPathComponent() }
+
+    public init() {}
+
+    private func request(_ path: String, _ method: String, token: String?,
+                         body: Data? = nil, prefer: String? = nil) -> URLRequest {
+        var r = URLRequest(url: base.appendingPathComponent(path))
+        r.httpMethod = method
+        r.setValue(Submission.key, forHTTPHeaderField: "apikey")
+        r.setValue("Bearer \(token ?? Submission.key)", forHTTPHeaderField: "Authorization")
+        r.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        if let prefer { r.setValue(prefer, forHTTPHeaderField: "Prefer") }
+        r.httpBody = body
+        return r
+    }
+
+    /// Your own row, and the two counts beside it.
+    public func load(userId: String?, token: String?) async {
+        guard let userId, let token else { me = nil; followers = 0; following = 0; return }
+        if let data = try? await send(request(
+            "profiles?select=user_id,display_name,avatar_url&user_id=eq.\(userId)",
+            "GET", token: token)),
+           let rows = try? JSONDecoder().decode([Profile].self, from: data) {
+            me = rows.first
+        }
+        struct Counts: Decodable { let followers: Int; let following: Int }
+        if let data = try? await send(request("rpc/follow_counts", "POST", token: token,
+                                              body: try? JSONEncoder().encode(["uid": userId]))),
+           let rows = try? JSONDecoder().decode([Counts].self, from: data),
+           let c = rows.first {
+            followers = c.followers
+            following = c.following
+        }
+    }
+
+    /// Set or change what people see. The name is the only thing required; an
+    /// avatar is optional and stays optional.
+    public func save(name: String, avatarURL: String?, userId: String, token: String) async -> Bool {
+        struct Row: Encodable { let user_id: String; let display_name: String; let avatar_url: String? }
+        let body = try? JSONEncoder().encode([Row(user_id: userId,
+                                                  display_name: name,
+                                                  avatar_url: avatarURL)])
+        let ok = (try? await send(request("profiles?on_conflict=user_id", "POST",
+                                          token: token, body: body,
+                                          prefer: "resolution=merge-duplicates"))) != nil
+        if ok { me = Profile(user_id: userId, display_name: name, avatar_url: avatarURL) }
+        return ok
+    }
+
+    public func follow(_ other: String, me userId: String, token: String) async {
+        struct Row: Encodable { let follower: String; let followee: String }
+        _ = try? await send(request("follows", "POST", token: token,
+                                    body: try? JSONEncoder().encode([Row(follower: userId,
+                                                                         followee: other)])))
+        await load(userId: userId, token: token)
+    }
+
+    public func unfollow(_ other: String, me userId: String, token: String) async {
+        _ = try? await send(request("follows?follower=eq.\(userId)&followee=eq.\(other)",
+                                    "DELETE", token: token))
+        await load(userId: userId, token: token)
+    }
+
+    /// People, by the name they chose. The only way to find somebody, which is
+    /// deliberate: there is no browsing of everybody who ever signed up.
+    public func search(_ query: String, token: String?) async -> [Profile] {
+        let q = query.trimmingCharacters(in: .whitespaces)
+        guard q.count >= 2 else { return [] }
+        let escaped = q.addingPercentEncoding(withAllowedCharacters: .alphanumerics) ?? q
+        guard let data = try? await send(request(
+            "profiles?select=user_id,display_name,avatar_url&display_name=ilike.*\(escaped)*&limit=25",
+            "GET", token: token)) else { return [] }
+        return (try? JSONDecoder().decode([Profile].self, from: data)) ?? []
+    }
+
+    private func send(_ r: URLRequest) async throws -> Data {
+        let (data, response) = try await URLSession.shared.data(for: r)
+        let code = (response as? HTTPURLResponse)?.statusCode ?? 0
+        guard (200..<300).contains(code) else {
+            throw NSError(domain: "profiles", code: code)
+        }
+        return data
+    }
+}

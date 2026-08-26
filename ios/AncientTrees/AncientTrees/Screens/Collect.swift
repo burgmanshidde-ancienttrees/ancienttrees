@@ -42,6 +42,8 @@ struct CollectView: View {
     /// cannot tap a gear, and a screen no argument can open is a screen that
     /// ships unlooked at.
     @State private var openSettings = ProcessInfo.processInfo.arguments.contains("-settings")
+    @State private var editingProfile = ProcessInfo.processInfo.arguments.contains("-profile-edit")
+    @Environment(Profiles.self) private var profiles
 
     // TWO lanes, not three. "Collected" and "Added by you" were separate until
     // 2026-08-24, when Hidde gave the rule that dissolves the split: "je
@@ -202,6 +204,7 @@ struct CollectView: View {
                     // world, and a globe showing four trees in one park is a
                     // dot.
                     yourMap
+                    whoYouAre
                     statsCard
                     stampCard
                 }
@@ -244,6 +247,9 @@ struct CollectView: View {
         .task {
             if openSettings { openSettings = false; navigator.push = .profile }
         }
+        .sheet(isPresented: $editingProfile) {
+            ProfileEditor()
+        }
         .sheet(isPresented: $signingIn) {
             SignInSheet(reason: .keepCollection(saved.savedCount), localCount: saved.savedCount)
                 .environment(account).environment(saved)
@@ -254,7 +260,12 @@ struct CollectView: View {
     /// background has the list sliding visibly underneath it.
     private var lanePicker: some View {
         Picker("", selection: $lane) {
-            Text("Want to see").tag(Lane.want)
+            // "Favourites", not "Want to see" (Hidde, 2026-08-26: "dat zou ik
+            // niet eens want to see noemen, ik zou het gewoon favorite trees
+            // maken"). A heart is not a plan: people heart a tree they have
+            // already seen and want to keep, which is exactly why the two
+            // lists are independent now.
+            Text("Favourites").tag(Lane.want)
             Text("Collected").tag(Lane.seen)
         }
         .pickerStyle(.segmented)
@@ -286,12 +297,12 @@ struct CollectView: View {
             let list = lane == .want ? wishlist : visited
             if list.isEmpty {
                 Text(lane == .want
-                     ? "Nothing on your list. Tap a heart anywhere to put a tree here."
+                     ? "No favourites yet. Tap a heart anywhere to keep a tree here."
                      : "Nothing collected yet. Photograph a tree with the button above, ours or one only you know.")
                     .font(.subheadline).foregroundStyle(Brand.inkSoft)
                     .padding(.top, 4)
             } else {
-                ForEach(list) { card($0) }
+                ForEach(list) { card($0, heart: lane == .want) }
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -299,6 +310,80 @@ struct CollectView: View {
     }
 
     // MARK: - the score
+
+    /// The Polarsteps shape: the map of what you have done, then WHO, then the
+    /// numbers (Hidde, 2026-08-26: "dat je daarboven een foto doet met de
+    /// naam, precies zoals polarsteps opbouwt basically").
+    ///
+    /// WITH ONE HONEST GAP, and it is his rule rather than a limitation: an
+    /// account here stores an email address and saves and NOTHING else, and a
+    /// new column holding personal data needs his explicit yes (DECISIONS.md
+    /// 2026-08-14). A profile photograph and a display name are both exactly
+    /// that. So this is the shape with what we may hold: the initial of the
+    /// address they signed in with, and the address itself, which is theirs
+    /// and shown only back to them. The day he wants a real photograph and a
+    /// name, it is a column, a bucket and a deletion duty, and it is his call.
+    ///
+    /// Followers are the other half of that reference and are not built:
+    /// following is other people's data about each other, which is a bigger
+    /// yes than this file may assume.
+    @ViewBuilder private var whoYouAre: some View {
+        HStack(spacing: 14) {
+            ZStack {
+                Circle().fill(Brand.moss.opacity(0.12))
+                if let url = profiles.me?.avatar_url, let u = URL(string: url) {
+                    AsyncImage(url: u) { img in
+                        img.resizable().aspectRatio(contentMode: .fill)
+                    } placeholder: { Color.clear }
+                    .clipShape(.circle)
+                } else if let e = profiles.me?.display_name ?? account.email, let first = e.first {
+                    Text(String(first).uppercased())
+                        .font(.brand(24, .black, relativeTo: .title2))
+                        .foregroundStyle(Brand.moss)
+                } else {
+                    Image(systemName: "person.fill")
+                        .font(.system(size: 22))
+                        .foregroundStyle(Brand.moss.opacity(0.6))
+                }
+            }
+            .frame(width: 62, height: 62)
+
+            VStack(alignment: .leading, spacing: 2) {
+                Text(profiles.me?.display_name ?? account.email ?? "Your trees")
+                    .font(.brand(19, .bold, relativeTo: .title3))
+                    .foregroundStyle(Brand.ink)
+                    .lineLimit(1).truncationMode(.middle)
+                if account.isSignedIn {
+                    // The two numbers Polarsteps runs beside the name. They
+                    // are here from the first day rather than added later, so
+                    // the page does not change shape on somebody the week
+                    // following opens.
+                    HStack(spacing: 14) {
+                        Text("\(profiles.followers) followers")
+                        Text("\(profiles.following) following")
+                    }
+                    .font(.caption).foregroundStyle(Brand.inkSoft)
+                } else {
+                    Text("Sign in and your collection follows you.")
+                        .font(.caption).foregroundStyle(Brand.inkSoft)
+                }
+            }
+            Spacer(minLength: 0)
+            if account.isSignedIn {
+                Button { editingProfile = true } label: {
+                    Image(systemName: "square.and.pencil")
+                        .font(.system(size: 16, weight: .medium))
+                        .foregroundStyle(Brand.inkSoft)
+                        .frame(width: 44, height: 44)
+                        .contentShape(.rect)
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("Edit your profile")
+                .accessibilityIdentifier("mytrees-edit-profile")
+            }
+        }
+        .accessibilityIdentifier("mytrees-who")
+    }
 
     /// Every tree you have stood in front of, framed together.
     @ViewBuilder private var yourMap: some View {
@@ -326,13 +411,27 @@ struct CollectView: View {
 
     private var statsCard: some View {
         VStack(spacing: 14) {
+            // THREE NUMBERS WITH DIVIDERS, which is the row Polarsteps runs
+            // under the name (Hidde, 2026-08-26: "bij polarsteps heb je 51
+            // landen en 21 volgers, daar zou je ook species collected kunnen
+            // maken als een van die getallen", and then "na willen maken exact
+            // zoals polarsteps dat doet").
+            //
+            // Cities left the row and kept its place in the sentence below.
+            // Four numbers made each one small; the reference runs three and
+            // that is why theirs reads at a glance. Species is in it on his
+            // ask, and it is the right one to keep: a collector counts kinds,
+            // not visits.
+            //
+            // FOLLOWERS BELONG IN THIS ROW and are not in it yet. Storing a
+            // display name, a profile photograph and a follow graph is new
+            // personal data about people, which is his explicit yes under the
+            // accounts rule (DECISIONS.md 2026-08-14), and a followers count
+            // that reads zero for a year makes an app look dead rather than
+            // social. The row is built to take a fourth number the day both
+            // of those change.
             HStack(spacing: 0) {
                 tile("\(collectedCount)", "Trees")
-                Divider().frame(height: 42)
-                // It counts distinct cities, so it says cities (Hidde, 2026-08-24:
-                // "je bedoelt me place city?"). "Place" was vaguer than the
-                // truth, and vaguer reads as evasive rather than as roomy.
-                tile("\(cities)", cities == 1 ? "City" : "Cities")
                 Divider().frame(height: 42)
                 tile("\(collectedSpecies.count)", "Species")
                 Divider().frame(height: 42)
@@ -458,9 +557,9 @@ struct CollectView: View {
         .padding(.top, 6)
     }
 
-    private func card(_ t: Tree) -> some View {
+    private func card(_ t: Tree, heart: Bool = true) -> some View {
         NavigationLink(value: Route.tree(t.id)) {
-            TreeCard(tree: t)
+            TreeCard(tree: t, showHeart: heart)
         }
         .buttonStyle(.plain)
         .accessibilityIdentifier("tree-card")
