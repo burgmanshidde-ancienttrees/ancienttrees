@@ -1,661 +1,684 @@
 {
-  "city": "Caserta",
-  "country": "Italy",
-  "researched": "2026-08-05",
-  "note": "Source pool is the MASAF national register (51 entries for comune Caserta, of which 8 are 'insieme omogeneo' stands) cross-read against the Campania regional register cards at agricoltura.regione.campania.it/foreste/monum/. Seven trees were published from the English Garden cluster; everything else is here. Do not quote 51 as a count of monumental trees in Caserta: it is a count of register entries, and eight of them are groups.",
-  "leads": [
-    {
-      "name": "Monterey Cypress of the English Garden",
-      "species": "Cupressus macrocarpa",
-      "girth_cm": 485,
-      "height_m": 25,
-      "age_register": "over 150 years",
-      "location": {
-        "latitude": 41.09296,
-        "longitude": 14.33023
-      },
-      "sources": [
-        "MASAF 19/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_214.html"
-      ],
-      "why_not_published": "Vitality unconfirmed. A monumental Cupressus macrocarpa in this same English Garden, one of the first planted between 1873 and 1876, blew down in the storms of December 2019; the Reggia's own statement says four other specimens of the species remain. Neither register carries a vitality field and the regional card was last touched in October 2020, so I cannot tell whether the registered 485 cm tree is the one that fell or one of the survivors. Resolve with a site check or a current Reggia source, then this is a strong entry."
-    },
-    {
-      "name": "Coast Redwood of the English Garden",
-      "species": "Sequoia sempervirens",
-      "girth_cm": 469,
-      "height_m": 26,
-      "age_register": "over 150 years",
-      "location": {
-        "latitude": 41.09334,
-        "longitude": 14.33028
-      },
-      "sources": [
-        "MASAF 22/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_217.html"
-      ],
-      "why_not_published": "[RESOLVED 2026-08-13, delivered as cas_008] Eighth in line, nothing wrong with it. Worth knowing that the regional card derives the age openly by argument rather than measurement: the girth passes the 4.0 m species threshold and the tree is contemporary with the rest of the garden, therefore over 150 years. Sits on the shared garden centroid coordinate."
-    },
-    {
-      "name": "Chinese Plum Yew of the English Garden",
-      "species": "Cephalotaxus fortunei",
-      "girth_cm": 450,
-      "height_m": 25,
-      "age_register": "150 years",
-      "location": {
-        "latitude": 41.09273,
-        "longitude": 14.33013
-      },
-      "sources": [
-        "MASAF 36/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_263.html"
-      ],
-      "why_not_published": "The figures look wrong for the species. Cephalotaxus fortunei is normally a large shrub or small tree well under 15 m; 25 m tall with a 4.5 m girth would be extraordinary and may be a mis-measurement or a mis-identification in the register. The regional card calls it a botanical rarity and places it in a bed near the small citrus grove west of the garden, and gives it the same coordinate as the Kurrajong on the neighbouring card, so the position is copied too. Needs a botanist or a photograph before publication. If the numbers hold, it is the most remarkable entry in Caserta."
-    },
-    {
-      "name": "Kurrajong of the English Garden",
-      "species": "Brachychiton populneus",
-      "girth_cm": 360,
-      "height_m": 35,
-      "age_register": "150 years",
-      "location": {
-        "latitude": 41.09316,
-        "longitude": 14.32965
-      },
-      "sources": [
-        "MASAF 35/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_262.html"
-      ],
-      "why_not_published": "Count only. A 35 m Australian bottle tree in a Bourbon garden is a good story for a later expansion. Its card shares a coordinate with the Cephalotaxus card, so the position is unreliable."
-    },
-    {
-      "name": "Chilgoza Pine of the English Garden",
-      "species": "Pinus gerardiana",
-      "girth_cm": 310,
-      "height_m": 40,
-      "age_register": "150 years",
-      "location": {
-        "latitude": 41.09376,
-        "longitude": 14.32996
-      },
-      "sources": [
-        "MASAF 40/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_267.html"
-      ],
-      "why_not_published": "[RESOLVED 2026-08-13, delivered as cas_009] Count only. Joint tallest tree in the Caserta register at 40 m, and Pinus gerardiana is genuinely rare in European cultivation; its edible pine nuts are a staple crop in the north-west Himalaya. Good candidate if the city ever grows past seven."
-    },
-    {
-      "name": "Himalayan Chir Pine of the English Garden",
-      "species": "Pinus roxburghii",
-      "girth_cm": 350,
-      "height_m": 25,
-      "age_register": "150 years",
-      "location": {
-        "latitude": 41.09431,
-        "longitude": 14.33149
-      },
-      "sources": [
-        "MASAF 41/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_268.html"
-      ],
-      "why_not_published": "Count only. MASAF and the regional card differ slightly on latitude (41.09431 vs 41.094336)."
-    },
-    {
-      "name": "Torreya of the English Garden",
-      "species": "Torreya grandis",
-      "girth_cm": 370,
-      "height_m": 25,
-      "age_register": "150 years",
-      "location": {
-        "latitude": 41.09388,
-        "longitude": 14.33186
-      },
-      "sources": [
-        "MASAF 50/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_277.html"
-      ],
-      "why_not_published": "Count only. The regional card gives it 41.095697, 14.330264, a coordinate it also assigns to the Turkey oak and the second yew, roughly 200 m from the MASAF position. Position unreliable."
-    },
-    {
-      "name": "Zelkova of the English Garden",
-      "species": "Zelkova carpinifolia",
-      "girth_cm": 430,
-      "height_m": 26,
-      "age_register": "over 150 years",
-      "location": {
-        "latitude": 41.09334,
-        "longitude": 14.33028
-      },
-      "sources": [
-        "MASAF 24/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_219.html"
-      ],
-      "why_not_published": "The two registers disagree on the species. MASAF says Zelkova carpinifolia (Caucasian); the regional card hedges with 'Zelkova serrata / Zelkova carpinifolia', which are different trees from different continents. Under hard rule 9 the species has to be settled before it can go on a species page. Otherwise a strong tree."
-    },
-    {
-      "name": "Turkey Oak of the English Garden",
-      "species": "Quercus cerris",
-      "girth_cm": 345,
-      "height_m": 35,
-      "age_register": "150 years",
-      "location": {
-        "latitude": 41.09392,
-        "longitude": 14.33173
-      },
-      "sources": [
-        "MASAF 48/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_275.html"
-      ],
-      "why_not_published": "Count only, and the regional card's coordinate (41.095697, 14.330264) is one of three sharing that position."
-    },
-    {
-      "name": "Southern Magnolia of Piazza Carlo di Borbone",
-      "species": "Magnolia grandiflora",
-      "girth_cm": 440,
-      "height_m": 25,
-      "age_register": "150 years",
-      "location": {
-        "latitude": 41.09309,
-        "longitude": 14.32993
-      },
-      "sources": [
-        "MASAF 32/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_243.html"
-      ],
-      "why_not_published": "Count only, and the two registers disagree on girth (MASAF 440 cm, Campania 400 cm). The locality string 'Reggia di Caserta - Piazza Carlo di Borbone' appears on entries scattered all over the park, so it is an address of record and not a position."
-    },
-    {
-      "name": "Phillyrea of the English Garden",
-      "species": "Phillyrea latifolia",
-      "girth_cm": 420,
-      "height_m": 8,
-      "age_register": "150 years",
-      "location": {
-        "latitude": 41.09327,
-        "longitude": 14.33059
-      },
-      "sources": [
-        "MASAF 43/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_270.html"
-      ],
-      "why_not_published": "A 4.2 m girth on a Phillyrea latifolia would be remarkable, since the species is usually a shrub or small tree, and the same doubt applies as to the Cephalotaxus. The regional card also gives it 41.074194, 14.325793, which is the coordinate of the holm oak stand two kilometres away. Both figures and position need checking."
-    },
-    {
-      "name": "Second Cedar of Lebanon, upper English Garden",
-      "species": "Cedrus libani",
-      "girth_cm": 464,
-      "height_m": 35,
-      "age_register": "200 years",
-      "location": {
-        "latitude": 41.09592,
-        "longitude": 14.33128
-      },
-      "sources": [
-        "MASAF 15/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_188.html"
-      ],
-      "why_not_published": "Count only, and the pin needs work: MASAF says 41.095917, 14.331278, the regional card says 41.0975, 14.33103, about 180 m apart. The card gives a usable walking direction instead, 'from the main entrance of the English Garden, along the path on the right, after 500 metres, again on the right'. A good second-visit tree with a better pin."
-    },
-    {
-      "name": "Swamp Cypress of the upper English Garden",
-      "species": "Taxodium huegelii (Taxodium mucronatum)",
-      "girth_cm": 552,
-      "height_m": 25,
-      "location": {
-        "latitude": 41.09682,
-        "longitude": 14.33042
-      },
-      "sources": [
-        "MASAF 51/B963/CE/15"
-      ],
-      "why_not_published": "Single-sourced. It is the third-thickest trunk in the Caserta register at 5.52 m, but no Campania regional card was found for it in the scheda range 180 to 299, so there is no age and no second source, and the species name in MASAF (Taxodium huegelii) is an old synonym that needs settling against Taxodium mucronatum or T. distichum before it can group correctly on a species page."
-    },
-    {
-      "name": "Second Yew, upper English Garden",
-      "species": "Taxus baccata",
-      "girth_cm": 210,
-      "height_m": 10,
-      "age_register": "150 years",
-      "location": {
-        "latitude": 41.09337,
-        "longitude": 14.33537
-      },
-      "sources": [
-        "MASAF 49/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_276.html"
-      ],
-      "why_not_published": "Small, and the coordinate is contested between the two registers by roughly 400 m."
-    },
-    {
-      "name": "Osage Orange of the upper English Garden",
-      "species": "Maclura pomifera",
-      "girth_cm": 260,
-      "height_m": 25,
-      "age_register": "200 years",
-      "location": {
-        "latitude": 41.09728,
-        "longitude": 14.33162
-      },
-      "sources": [
-        "MASAF 16/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_189.html"
-      ],
-      "why_not_published": "Count only. Two Osage oranges are registered here; this is the upright one. Grapefruit-sized green fruit in autumn would make a decent best_time if it is ever published."
-    },
-    {
-      "name": "The reclining Osage Orange",
-      "species": "Maclura pomifera",
-      "height_m": 10,
-      "age_register": "200 years",
-      "location": {
-        "latitude": 41.09711,
-        "longitude": 14.33077
-      },
-      "sources": [
-        "MASAF 14/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_187.html"
-      ],
-      "why_not_published": "Vitality unconfirmed. Both registers describe it as 'sdraiata', lying down, and the girth field on the regional card literally reads 'sdraiata' instead of a number. A recumbent Maclura is often still alive and can be spectacular, but the entry must be alive to ship and no source says so. Check before publishing."
-    },
-    {
-      "name": "Eucalyptus of the upper English Garden",
-      "species": "Eucalyptus camaldulensis",
-      "girth_cm": 225,
-      "height_m": 28,
-      "age_register": "over 150 years",
-      "location": {
-        "latitude": 41.09689,
-        "longitude": 14.3312
-      },
-      "sources": [
-        "MASAF 20/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_215.html"
-      ],
-      "why_not_published": "Count only. The regional card gives it the Monterey cypress's coordinate, 350 m from the MASAF position."
-    },
-    {
-      "name": "Pair of Atlas Cedars, English Garden",
-      "species": "Cedrus atlantica",
-      "girth_cm": 410,
-      "height_m": 37,
-      "age_register": "150 years",
-      "location": {
-        "latitude": 41.09419,
-        "longitude": 14.33132
-      },
-      "sources": [
-        "MASAF 37/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_264.html"
-      ],
-      "why_not_published": "Registered as an 'insieme omogeneo' of two, with averages only (410 cm and 37 m are means, not measurements of either tree). Two cedars metres apart could pass the collectible-point test the way the Setubal silky oaks did, but only after someone confirms they read as one place. Not shippable on averages."
-    },
-    {
-      "name": "Pair of Cordia, English Garden",
-      "species": "Cordia francisci",
-      "girth_cm": 140,
-      "height_m": 8,
-      "age_register": "150 years",
-      "location": {
-        "latitude": 41.09455,
-        "longitude": 14.33018
-      },
-      "sources": [
-        "MASAF 30/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_241.html"
-      ],
-      "why_not_published": "Small, and registered as a pair with averages only. Botanically interesting (Cordia francisci was described from cultivated material in Naples) but not a walk-to tree."
-    },
-    {
-      "name": "Pair of Floss Silk Trees, English Garden",
-      "species": "Ceiba speciosa (Chorisia speciosa)",
-      "girth_cm": 160,
-      "height_m": 8,
-      "age_register": "150 years",
-      "location": {
-        "latitude": 41.0961,
-        "longitude": 14.3304
-      },
-      "sources": [
-        "MASAF 29/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_240.html"
-      ],
-      "why_not_published": "Small, registered as a pair with averages only. A flowering floss silk tree is a real autumn spectacle, so worth a look on the ground."
-    },
-    {
-      "name": "Japanese Magnolia, English Garden",
-      "species": "Magnolia x soulangeana",
-      "girth_cm": 175,
-      "height_m": 12,
-      "age_register": "150 years",
-      "location": {
-        "latitude": 41.09491,
-        "longitude": 14.33038
-      },
-      "sources": [
-        "MASAF 38/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_265.html"
-      ],
-      "why_not_published": "Too small to carry an entry, but its ten days of flower in March would be a genuine best_time if the city is ever expanded."
-    },
-    {
-      "name": "Prickly Paperbark, English Garden",
-      "species": "Melaleuca styphelioides",
-      "girth_cm": 150,
-      "height_m": 8,
-      "age_register": "150 years",
-      "location": {
-        "latitude": 41.09475,
-        "longitude": 14.33132
-      },
-      "sources": [
-        "MASAF 39/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_266.html"
-      ],
-      "why_not_published": "Too small, and the two registers disagree on height (8 m against 12 m)."
-    },
-    {
-      "name": "The Mother Camellia, English Garden",
-      "species": "Camellia japonica",
-      "girth_cm": 61,
-      "height_m": 7,
-      "age_register": "200 years",
-      "location": {
-        "latitude": 41.09776,
-        "longitude": 14.33157
-      },
-      "sources": [
-        "MASAF 25/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_236.html"
-      ],
-      "why_not_published": "61 cm of trunk is far below the bar, but this one is worth remembering: it is known locally as the camelia madre and stands on a path leading to the sixteenth-century Fontana del Pastore. If Caserta ever gets a spring-flowering entry, this is it. A stray sentence about it also contaminates the regional card for the Bath of Venus yew."
-    },
-    {
-      "name": "California Bay Laurel, English Garden",
-      "species": "Umbellularia californica",
-      "girth_cm": 100,
-      "height_m": 8,
-      "age_register": "150 years",
-      "location": {
-        "latitude": 41.09777,
-        "longitude": 14.33154
-      },
-      "sources": [
-        "MASAF 46/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_273.html"
-      ],
-      "why_not_published": "Too small. Notable only as a rarity in Italian cultivation."
-    },
-    {
-      "name": "Box of the English Garden",
-      "species": "Buxus sempervirens",
-      "girth_cm": 110,
-      "height_m": 2.5,
-      "age_register": "150 years",
-      "location": {
-        "latitude": 41.09489,
-        "longitude": 14.33104
-      },
-      "sources": [
-        "MASAF 31/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_242.html"
-      ],
-      "why_not_published": "Two and a half metres tall. Remarkable for a box and not a destination."
-    },
-    {
-      "name": "Hackberry of the English Garden",
-      "species": "Celtis australis",
-      "girth_cm": 350,
-      "height_m": 25,
-      "age_register": "200 years",
-      "location": {
-        "latitude": 41.09503,
-        "longitude": 14.33129
-      },
-      "sources": [
-        "MASAF 28/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_239.html"
-      ],
-      "why_not_published": "Count only. A solid tree that lost out to seven better stories."
-    },
-    {
-      "name": "Third plane of the English Garden",
-      "species": "Platanus x acerifolia",
-      "girth_cm": 560,
-      "height_m": 30,
-      "age_register": "150 years",
-      "location": {
-        "latitude": 41.09184,
-        "longitude": 14.32994
-      },
-      "sources": [
-        "MASAF 45/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_272.html"
-      ],
-      "why_not_published": "Count only, and a second plane on the same page would have been repetition. 5.6 m of trunk makes it the fourth-thickest entry in the Caserta register. [RESOLVED 2026-08-18, delivered as cas_011: the plane was held only for repetition, an invalid reason under CLAUDE.md's 2026-08-10 ruling. The Piazza Vanvitelli trio was single-sourced in this file but a second source (Campania regional register scheda_48/49/50) was found and confirmed this pass, matching MASAF's own girth figures exactly; shipped as a new free second walk for the city.]",
-      "status": "resolved"
-    },
-    {
-      "name": "Second plane of the English Garden",
-      "species": "Platanus x acerifolia",
-      "girth_cm": 720,
-      "height_m": 25,
-      "age_register": "150 years",
-      "location": {
-        "latitude": 41.09266,
-        "longitude": 14.33058
-      },
-      "sources": [
-        "MASAF 44/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_271.html"
-      ],
-      "why_not_published": "[RESOLVED 2026-08-13, delivered as cas_010] Second-thickest trunk in the whole Caserta register at 7.2 m, and it lost its place only because the smaller plane of the Palco has a far better story and the page should not carry two planes. This is the strongest single candidate for an eighth entry. The regional card says only that it is 'in the lower part of the English Garden and of notable dimensions'."
-    },
-    {
-      "name": "Cedar of Lebanon, Cimitero Comunale",
-      "species": "Cedrus libani",
-      "girth_cm": 635,
-      "height_m": 30,
-      "location": {
-        "latitude": 41.08932,
-        "longitude": 14.34119
-      },
-      "sources": [
-        "MASAF 05/B963/CE/15"
-      ],
-      "why_not_published": "Different cluster and single-sourced. It stands with a 5 m camphor in the municipal cemetery on Via Cappuccini, about 1 km east of the park, so the two of them are a separate short walk rather than part of this one. No Campania card found, so no age and no second source. Cemetery access hours would need checking."
-    },
-    {
-      "name": "Camphor of the Cimitero Maggiore",
-      "species": "Cinnamomum camphora",
-      "girth_cm": 500,
-      "height_m": 25,
-      "location": {
-        "latitude": 41.08923,
-        "longitude": 14.34135
-      },
-      "sources": [
-        "MASAF 04/B963/CE/15"
-      ],
-      "why_not_published": "As above: same cemetery, different cluster, single-sourced."
-    },
-    {
-      "name": "Plane of Piazza della Seta, San Leucio",
-      "species": "Platanus x acerifolia",
-      "girth_cm": 480,
-      "height_m": 18,
-      "location": {
-        "latitude": 41.09844,
-        "longitude": 14.31556
-      },
-      "sources": [
-        "MASAF 01/B963/CE/15"
-      ],
-      "why_not_published": "Different cluster, 1.6 km west of the English Garden in the Bourbon silk village of San Leucio, itself part of the UNESCO listing. Free and public. A genuinely good candidate for a second Caserta walk, not for this one."
-    },
-    {
-      "name": "Small-leaved Lime of Casola, Chiesa San Marco Evangelista",
-      "species": "Tilia cordata",
-      "girth_cm": 480,
-      "height_m": 12,
-      "location": {
-        "latitude": 41.09396,
-        "longitude": 14.38333
-      },
-      "sources": [
-        "MASAF 03/B963/CE/15"
-      ],
-      "why_not_published": "Different cluster, 4.5 km east on the hill at Casola, standing beside a church, which is the pattern worth chasing in this province. Single-sourced. Worth a dedicated pass."
-    },
-    {
-      "name": "Plane of Briano, Chiesa di San Nicola",
-      "species": "Platanus x acerifolia",
-      "girth_cm": 410,
-      "height_m": 15,
-      "location": {
-        "latitude": 41.09487,
-        "longitude": 14.32389
-      },
-      "sources": [
-        "MASAF 02/B963/CE/15"
-      ],
-      "why_not_published": "Different cluster, 800 m west of the park wall at a church in Briano. Single-sourced, free and public. Could join a San Leucio walk."
-    },
-    {
-      "name": "Monkey Puzzle of Piazza Vanvitelli",
-      "species": "Araucaria araucana",
-      "girth_cm": 330,
-      "height_m": 25,
-      "location": {
-        "latitude": 41.07508,
-        "longitude": 14.33208
-      },
-      "sources": [
-        "MASAF 07/B963/CE/15"
-      ],
-      "why_not_published": "Different cluster. Piazza Vanvitelli, just east of the palace, holds three registered trees within 50 m of each other: this monkey puzzle, a casuarina and a yew. Free, public, and the obvious basis of a second Caserta walk that needs no ticket. Single-sourced so far. [RESOLVED 2026-08-18, delivered as cas_012: the plane was held only for repetition, an invalid reason under CLAUDE.md's 2026-08-10 ruling. The Piazza Vanvitelli trio was single-sourced in this file but a second source (Campania regional register scheda_48/49/50) was found and confirmed this pass, matching MASAF's own girth figures exactly; shipped as a new free second walk for the city.]",
-      "status": "resolved"
-    },
-    {
-      "name": "Casuarina of Piazza Vanvitelli",
-      "species": "Casuarina equisetifolia",
-      "girth_cm": 270,
-      "height_m": 15,
-      "location": {
-        "latitude": 41.07553,
-        "longitude": 14.33242
-      },
-      "sources": [
-        "MASAF 08/B963/CE/15"
-      ],
-      "why_not_published": "As above, part of the free Piazza Vanvitelli group. [RESOLVED 2026-08-18, delivered as cas_013: the plane was held only for repetition, an invalid reason under CLAUDE.md's 2026-08-10 ruling. The Piazza Vanvitelli trio was single-sourced in this file but a second source (Campania regional register scheda_48/49/50) was found and confirmed this pass, matching MASAF's own girth figures exactly; shipped as a new free second walk for the city.]",
-      "status": "resolved"
-    },
-    {
-      "name": "Yew of Piazza Vanvitelli",
-      "species": "Taxus baccata",
-      "girth_cm": 270,
-      "height_m": 12,
-      "location": {
-        "latitude": 41.07535,
-        "longitude": 14.33218
-      },
-      "sources": [
-        "MASAF 09/B963/CE/15"
-      ],
-      "why_not_published": "As above, part of the free Piazza Vanvitelli group. [RESOLVED 2026-08-18, delivered as cas_014: the plane was held only for repetition, an invalid reason under CLAUDE.md's 2026-08-10 ruling. The Piazza Vanvitelli trio was single-sourced in this file but a second source (Campania regional register scheda_48/49/50) was found and confirmed this pass, matching MASAF's own girth figures exactly; shipped as a new free second walk for the city.]",
-      "status": "resolved"
-    },
-    {
-      "name": "Bunya Pine of the Castelluccia",
-      "species": "Araucaria bidwillii",
-      "girth_cm": 278,
-      "height_m": 25,
-      "age_register": "200 years",
-      "location": {
-        "latitude": 41.0773,
-        "longitude": 14.32212
-      },
-      "sources": [
-        "MASAF 13/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_186.html"
-      ],
-      "why_not_published": "Different cluster, 1.9 km south of the English Garden at the Castelluccia in the Bosco Vecchio, the sixteenth-century tower Ferdinand IV used for mock naval battles. Two-sourced and would qualify, but it belongs to a lower-park walk. Note MASAF and the regional card disagree on longitude by about 40 m."
-    },
-    {
-      "name": "Tulip Tree of Piazza Pitesti",
-      "species": "Liriodendron tulipifera",
-      "girth_cm": 310,
-      "height_m": 18,
-      "location": {
-        "latitude": 41.08014,
-        "longitude": 14.34258
-      },
-      "sources": [
-        "MASAF 06/B963/CE/15"
-      ],
-      "why_not_published": "Different cluster, in the town east of the park. Single-sourced. Tulip trees give reliable October gold, so it would carry a best_time."
-    },
-    {
-      "name": "Camphor of Centurano",
-      "species": "Cinnamomum camphora",
-      "girth_cm": 500,
-      "height_m": 20,
-      "age_register": "between 100 and 200 years",
-      "location": {
-        "latitude": 41.07211,
-        "longitude": 14.35978
-      },
-      "sources": [
-        "MASAF 17/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_212.html"
-      ],
-      "why_not_published": "Different cluster, in the Centurano district 2.5 km south-east. Two-sourced, but the registers disagree badly on girth: MASAF 500 cm against the regional card's 300 cm. Reconcile before publishing. Access on Via Petrarca needs checking, since a street address does not prove public standing."
-    }
-  ],
-  "blocked": [
-    {
-      "name": "The row of eight camphor trees",
-      "species": "Cinnamomum camphora",
-      "sources": [
-        "MASAF 27/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_238.html"
-      ],
-      "reason": "An avenue. The regional card names it 'il filare di Canfori', a row of eight registered together with averaged measurements, so there is no single tree to stand in front of."
-    },
-    {
-      "name": "The twenty-five holm oaks",
-      "species": "Quercus ilex",
-      "sources": [
-        "MASAF 33/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_244.html"
-      ],
-      "reason": "A wood, not a point. Twenty-five trees registered as one entry with averaged girth and height, spread through the Bosco Vecchio."
-    },
-    {
-      "name": "The magnolias of the Castelluccia",
-      "species": "Magnolia grandiflora",
-      "sources": [
-        "MASAF 11/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_184.html"
-      ],
-      "reason": "A stand registered as one 'insieme omogeneo' with averages only, planted as decoration around the Castelluccia along with camellias, jasmine, araucarias and palms. No identifiable individual tree."
-    },
-    {
-      "name": "The three Italian cypresses of the English Garden",
-      "species": "Cupressus sempervirens",
-      "sources": [
-        "MASAF 47/B963/CE/15",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_274.html"
-      ],
-      "reason": "A group of three registered with averaged measurements and one shared coordinate. Not a single collectible point."
-    },
-    {
-      "name": "The cypresses of the Cimitero Comunale",
-      "species": "Cupressus sempervirens",
-      "sources": [
-        "MASAF 10/B963/CE/15"
-      ],
-      "reason": "A group entry with no girth, height or count published at all, in the municipal cemetery. Nothing to point a visitor at."
-    }
-  ]
+    "city": "Caserta",
+    "country": "Italy",
+    "researched": "2026-08-05",
+    "note": "Source pool is the MASAF national register (51 entries for comune Caserta, of which 8 are 'insieme omogeneo' stands) cross-read against the Campania regional register cards at agricoltura.regione.campania.it/foreste/monum/. Seven trees were published from the English Garden cluster; everything else is here. Do not quote 51 as a count of monumental trees in Caserta: it is a count of register entries, and eight of them are groups.",
+    "leads": [
+        {
+            "name": "Monterey Cypress of the English Garden",
+            "species": "Cupressus macrocarpa",
+            "girth_cm": 485,
+            "height_m": 25,
+            "age_register": "over 150 years",
+            "location": {
+                "latitude": 41.09296,
+                "longitude": 14.33023
+            },
+            "sources": [
+                "MASAF 19/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_214.html"
+            ],
+            "why_not_published": "Vitality unconfirmed. A monumental Cupressus macrocarpa in this same English Garden, one of the first planted between 1873 and 1876, blew down in the storms of December 2019; the Reggia's own statement says four other specimens of the species remain. Neither register carries a vitality field and the regional card was last touched in October 2020, so I cannot tell whether the registered 485 cm tree is the one that fell or one of the survivors. Resolve with a site check or a current Reggia source, then this is a strong entry."
+        },
+        {
+            "name": "Coast Redwood of the English Garden",
+            "species": "Sequoia sempervirens",
+            "girth_cm": 469,
+            "height_m": 26,
+            "age_register": "over 150 years",
+            "location": {
+                "latitude": 41.09334,
+                "longitude": 14.33028
+            },
+            "sources": [
+                "MASAF 22/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_217.html"
+            ],
+            "why_not_published": "[RESOLVED 2026-08-13, delivered as cas_008] Eighth in line, nothing wrong with it. Worth knowing that the regional card derives the age openly by argument rather than measurement: the girth passes the 4.0 m species threshold and the tree is contemporary with the rest of the garden, therefore over 150 years. Sits on the shared garden centroid coordinate."
+        },
+        {
+            "name": "Chinese Plum Yew of the English Garden",
+            "species": "Cephalotaxus fortunei",
+            "girth_cm": 450,
+            "height_m": 25,
+            "age_register": "150 years",
+            "location": {
+                "latitude": 41.09273,
+                "longitude": 14.33013
+            },
+            "sources": [
+                "MASAF 36/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_263.html"
+            ],
+            "why_not_published": "[RESOLVED 2026-08-26, verify pass, delivered to data/research/caserta-verified.json for the pending write pass] The figures look wrong for the species. Cephalotaxus fortunei is normally a large shrub or small tree well under 15 m; 25 m tall with a 4.5 m girth would be extraordinary and may be a mis-measurement or a mis-identification in the register. The regional card calls it a botanical rarity and places it in a bed near the small citrus grove west of the garden, and gives it the same coordinate as the Kurrajong on the neighbouring card, so the position is copied too. Needs a botanist or a photograph before publication. If the numbers hold, it is the most remarkable entry in Caserta.",
+            "status": "resolved"
+        },
+        {
+            "name": "Kurrajong of the English Garden",
+            "species": "Brachychiton populneus",
+            "girth_cm": 360,
+            "height_m": 35,
+            "age_register": "150 years",
+            "location": {
+                "latitude": 41.09316,
+                "longitude": 14.32965
+            },
+            "sources": [
+                "MASAF 35/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_262.html"
+            ],
+            "why_not_published": "Count only. A 35 m Australian bottle tree in a Bourbon garden is a good story for a later expansion. Its card shares a coordinate with the Cephalotaxus card, so the position is unreliable."
+        },
+        {
+            "name": "Chilgoza Pine of the English Garden",
+            "species": "Pinus gerardiana",
+            "girth_cm": 310,
+            "height_m": 40,
+            "age_register": "150 years",
+            "location": {
+                "latitude": 41.09376,
+                "longitude": 14.32996
+            },
+            "sources": [
+                "MASAF 40/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_267.html"
+            ],
+            "why_not_published": "[RESOLVED 2026-08-13, delivered as cas_009] Count only. Joint tallest tree in the Caserta register at 40 m, and Pinus gerardiana is genuinely rare in European cultivation; its edible pine nuts are a staple crop in the north-west Himalaya. Good candidate if the city ever grows past seven."
+        },
+        {
+            "name": "Himalayan Chir Pine of the English Garden",
+            "species": "Pinus roxburghii",
+            "girth_cm": 350,
+            "height_m": 25,
+            "age_register": "150 years",
+            "location": {
+                "latitude": 41.09431,
+                "longitude": 14.33149
+            },
+            "sources": [
+                "MASAF 41/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_268.html"
+            ],
+            "why_not_published": "Count only. MASAF and the regional card differ slightly on latitude (41.09431 vs 41.094336)."
+        },
+        {
+            "name": "Torreya of the English Garden",
+            "species": "Torreya grandis",
+            "girth_cm": 370,
+            "height_m": 25,
+            "age_register": "150 years",
+            "location": {
+                "latitude": 41.09388,
+                "longitude": 14.33186
+            },
+            "sources": [
+                "MASAF 50/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_277.html"
+            ],
+            "why_not_published": "[RESOLVED 2026-08-26, verify pass, delivered to data/research/caserta-verified.json for the pending write pass] Count only. The regional card gives it 41.095697, 14.330264, a coordinate it also assigns to the Turkey oak and the second yew, roughly 200 m from the MASAF position. Position unreliable.",
+            "status": "resolved"
+        },
+        {
+            "name": "Zelkova of the English Garden",
+            "species": "Zelkova carpinifolia",
+            "girth_cm": 430,
+            "height_m": 26,
+            "age_register": "over 150 years",
+            "location": {
+                "latitude": 41.09334,
+                "longitude": 14.33028
+            },
+            "sources": [
+                "MASAF 24/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_219.html"
+            ],
+            "why_not_published": "[RESOLVED 2026-08-26, verify pass, delivered to data/research/caserta-verified.json for the pending write pass] The two registers disagree on the species. MASAF says Zelkova carpinifolia (Caucasian); the regional card hedges with 'Zelkova serrata / Zelkova carpinifolia', which are different trees from different continents. Under hard rule 9 the species has to be settled before it can go on a species page. Otherwise a strong tree.",
+            "status": "resolved"
+        },
+        {
+            "name": "Turkey Oak of the English Garden",
+            "species": "Quercus cerris",
+            "girth_cm": 345,
+            "height_m": 35,
+            "age_register": "150 years",
+            "location": {
+                "latitude": 41.09392,
+                "longitude": 14.33173
+            },
+            "sources": [
+                "MASAF 48/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_275.html"
+            ],
+            "why_not_published": "Count only, and the regional card's coordinate (41.095697, 14.330264) is one of three sharing that position."
+        },
+        {
+            "name": "Southern Magnolia of Piazza Carlo di Borbone",
+            "species": "Magnolia grandiflora",
+            "girth_cm": 440,
+            "height_m": 25,
+            "age_register": "150 years",
+            "location": {
+                "latitude": 41.09309,
+                "longitude": 14.32993
+            },
+            "sources": [
+                "MASAF 32/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_243.html"
+            ],
+            "why_not_published": "Count only, and the two registers disagree on girth (MASAF 440 cm, Campania 400 cm). The locality string 'Reggia di Caserta - Piazza Carlo di Borbone' appears on entries scattered all over the park, so it is an address of record and not a position."
+        },
+        {
+            "name": "Phillyrea of the English Garden",
+            "species": "Phillyrea latifolia",
+            "girth_cm": 420,
+            "height_m": 8,
+            "age_register": "150 years",
+            "location": {
+                "latitude": 41.09327,
+                "longitude": 14.33059
+            },
+            "sources": [
+                "MASAF 43/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_270.html"
+            ],
+            "why_not_published": "[RESOLVED 2026-08-26, verify pass, delivered to data/research/caserta-verified.json for the pending write pass] A 4.2 m girth on a Phillyrea latifolia would be remarkable, since the species is usually a shrub or small tree, and the same doubt applies as to the Cephalotaxus. The regional card also gives it 41.074194, 14.325793, which is the coordinate of the holm oak stand two kilometres away. Both figures and position need checking.",
+            "status": "resolved"
+        },
+        {
+            "name": "Second Cedar of Lebanon, upper English Garden",
+            "species": "Cedrus libani",
+            "girth_cm": 464,
+            "height_m": 35,
+            "age_register": "200 years",
+            "location": {
+                "latitude": 41.09592,
+                "longitude": 14.33128
+            },
+            "sources": [
+                "MASAF 15/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_188.html"
+            ],
+            "why_not_published": "[RESOLVED 2026-08-26, verify pass, delivered to data/research/caserta-verified.json for the pending write pass] Count only, and the pin needs work: MASAF says 41.095917, 14.331278, the regional card says 41.0975, 14.33103, about 180 m apart. The card gives a usable walking direction instead, 'from the main entrance of the English Garden, along the path on the right, after 500 metres, again on the right'. A good second-visit tree with a better pin.",
+            "status": "resolved"
+        },
+        {
+            "name": "Swamp Cypress of the upper English Garden",
+            "species": "Taxodium huegelii (Taxodium mucronatum)",
+            "girth_cm": 552,
+            "height_m": 25,
+            "location": {
+                "latitude": 41.09682,
+                "longitude": 14.33042
+            },
+            "sources": [
+                "MASAF 51/B963/CE/15"
+            ],
+            "why_not_published": "Single-sourced. It is the third-thickest trunk in the Caserta register at 5.52 m, but no Campania regional card was found for it in the scheda range 180 to 299, so there is no age and no second source, and the species name in MASAF (Taxodium huegelii) is an old synonym that needs settling against Taxodium mucronatum or T. distichum before it can group correctly on a species page."
+        },
+        {
+            "name": "Second Yew, upper English Garden",
+            "species": "Taxus baccata",
+            "girth_cm": 210,
+            "height_m": 10,
+            "age_register": "150 years",
+            "location": {
+                "latitude": 41.09337,
+                "longitude": 14.33537
+            },
+            "sources": [
+                "MASAF 49/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_276.html"
+            ],
+            "why_not_published": "[RESOLVED 2026-08-26, verify pass, delivered to data/research/caserta-verified.json for the pending write pass] Small, and the coordinate is contested between the two registers by roughly 400 m.",
+            "status": "resolved"
+        },
+        {
+            "name": "Osage Orange of the upper English Garden",
+            "species": "Maclura pomifera",
+            "girth_cm": 260,
+            "height_m": 25,
+            "age_register": "200 years",
+            "location": {
+                "latitude": 41.09728,
+                "longitude": 14.33162
+            },
+            "sources": [
+                "MASAF 16/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_189.html"
+            ],
+            "why_not_published": "Count only. Two Osage oranges are registered here; this is the upright one. Grapefruit-sized green fruit in autumn would make a decent best_time if it is ever published."
+        },
+        {
+            "name": "The reclining Osage Orange",
+            "species": "Maclura pomifera",
+            "height_m": 10,
+            "age_register": "200 years",
+            "location": {
+                "latitude": 41.09711,
+                "longitude": 14.33077
+            },
+            "sources": [
+                "MASAF 14/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_187.html"
+            ],
+            "why_not_published": "[RESOLVED 2026-08-26, verify pass, delivered to data/research/caserta-verified.json for the pending write pass] Vitality unconfirmed. Both registers describe it as 'sdraiata', lying down, and the girth field on the regional card literally reads 'sdraiata' instead of a number. A recumbent Maclura is often still alive and can be spectacular, but the entry must be alive to ship and no source says so. Check before publishing.",
+            "status": "resolved"
+        },
+        {
+            "name": "Eucalyptus of the upper English Garden",
+            "species": "Eucalyptus camaldulensis",
+            "girth_cm": 225,
+            "height_m": 28,
+            "age_register": "over 150 years",
+            "location": {
+                "latitude": 41.09689,
+                "longitude": 14.3312
+            },
+            "sources": [
+                "MASAF 20/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_215.html"
+            ],
+            "why_not_published": "[RESOLVED 2026-08-26, verify pass, delivered to data/research/caserta-verified.json for the pending write pass] Count only. The regional card gives it the Monterey cypress's coordinate, 350 m from the MASAF position.",
+            "status": "resolved"
+        },
+        {
+            "name": "Pair of Atlas Cedars, English Garden",
+            "species": "Cedrus atlantica",
+            "girth_cm": 410,
+            "height_m": 37,
+            "age_register": "150 years",
+            "location": {
+                "latitude": 41.09419,
+                "longitude": 14.33132
+            },
+            "sources": [
+                "MASAF 37/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_264.html"
+            ],
+            "why_not_published": "[RESOLVED 2026-08-26, verify pass, delivered to data/research/caserta-verified.json for the pending write pass] Registered as an 'insieme omogeneo' of two, with averages only (410 cm and 37 m are means, not measurements of either tree). Two cedars metres apart could pass the collectible-point test the way the Setubal silky oaks did, but only after someone confirms they read as one place. Not shippable on averages.",
+            "status": "resolved"
+        },
+        {
+            "name": "Pair of Cordia, English Garden",
+            "species": "Cordia francisci",
+            "girth_cm": 140,
+            "height_m": 8,
+            "age_register": "150 years",
+            "location": {
+                "latitude": 41.09455,
+                "longitude": 14.33018
+            },
+            "sources": [
+                "MASAF 30/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_241.html"
+            ],
+            "why_not_published": "[RESOLVED 2026-08-26, verify pass, delivered to data/research/caserta-verified.json for the pending write pass] Small, and registered as a pair with averages only. Botanically interesting (Cordia francisci was described from cultivated material in Naples) but not a walk-to tree.",
+            "status": "resolved"
+        },
+        {
+            "name": "Pair of Floss Silk Trees, English Garden",
+            "species": "Ceiba speciosa (Chorisia speciosa)",
+            "girth_cm": 160,
+            "height_m": 8,
+            "age_register": "150 years",
+            "location": {
+                "latitude": 41.0961,
+                "longitude": 14.3304
+            },
+            "sources": [
+                "MASAF 29/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_240.html"
+            ],
+            "why_not_published": "[RESOLVED 2026-08-26, verify pass, delivered to data/research/caserta-verified.json for the pending write pass] Small, registered as a pair with averages only. A flowering floss silk tree is a real autumn spectacle, so worth a look on the ground.",
+            "status": "resolved"
+        },
+        {
+            "name": "Japanese Magnolia, English Garden",
+            "species": "Magnolia x soulangeana",
+            "girth_cm": 175,
+            "height_m": 12,
+            "age_register": "150 years",
+            "location": {
+                "latitude": 41.09491,
+                "longitude": 14.33038
+            },
+            "sources": [
+                "MASAF 38/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_265.html"
+            ],
+            "why_not_published": "[RESOLVED 2026-08-26, verify pass, delivered to data/research/caserta-verified.json for the pending write pass] Too small to carry an entry, but its ten days of flower in March would be a genuine best_time if the city is ever expanded.",
+            "status": "resolved"
+        },
+        {
+            "name": "Prickly Paperbark, English Garden",
+            "species": "Melaleuca styphelioides",
+            "girth_cm": 150,
+            "height_m": 8,
+            "age_register": "150 years",
+            "location": {
+                "latitude": 41.09475,
+                "longitude": 14.33132
+            },
+            "sources": [
+                "MASAF 39/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_266.html"
+            ],
+            "why_not_published": "[RESOLVED 2026-08-26, verify pass, delivered to data/research/caserta-verified.json for the pending write pass] Too small, and the two registers disagree on height (8 m against 12 m).",
+            "status": "resolved"
+        },
+        {
+            "name": "The Mother Camellia, English Garden",
+            "species": "Camellia japonica",
+            "girth_cm": 61,
+            "height_m": 7,
+            "age_register": "200 years",
+            "location": {
+                "latitude": 41.09776,
+                "longitude": 14.33157
+            },
+            "sources": [
+                "MASAF 25/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_236.html"
+            ],
+            "why_not_published": "[RESOLVED 2026-08-26, verify pass, delivered to data/research/caserta-verified.json for the pending write pass] 61 cm of trunk is far below the bar, but this one is worth remembering: it is known locally as the camelia madre and stands on a path leading to the sixteenth-century Fontana del Pastore. If Caserta ever gets a spring-flowering entry, this is it. A stray sentence about it also contaminates the regional card for the Bath of Venus yew.",
+            "status": "resolved"
+        },
+        {
+            "name": "California Bay Laurel, English Garden",
+            "species": "Umbellularia californica",
+            "girth_cm": 100,
+            "height_m": 8,
+            "age_register": "150 years",
+            "location": {
+                "latitude": 41.09777,
+                "longitude": 14.33154
+            },
+            "sources": [
+                "MASAF 46/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_273.html"
+            ],
+            "why_not_published": "[RESOLVED 2026-08-26, verify pass, delivered to data/research/caserta-verified.json for the pending write pass] Too small. Notable only as a rarity in Italian cultivation.",
+            "status": "resolved"
+        },
+        {
+            "name": "Box of the English Garden",
+            "species": "Buxus sempervirens",
+            "girth_cm": 110,
+            "height_m": 2.5,
+            "age_register": "150 years",
+            "location": {
+                "latitude": 41.09489,
+                "longitude": 14.33104
+            },
+            "sources": [
+                "MASAF 31/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_242.html"
+            ],
+            "why_not_published": "[RESOLVED 2026-08-26, verify pass, delivered to data/research/caserta-verified.json for the pending write pass] Two and a half metres tall. Remarkable for a box and not a destination.",
+            "status": "resolved"
+        },
+        {
+            "name": "Hackberry of the English Garden",
+            "species": "Celtis australis",
+            "girth_cm": 350,
+            "height_m": 25,
+            "age_register": "200 years",
+            "location": {
+                "latitude": 41.09503,
+                "longitude": 14.33129
+            },
+            "sources": [
+                "MASAF 28/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_239.html"
+            ],
+            "why_not_published": "Count only. A solid tree that lost out to seven better stories."
+        },
+        {
+            "name": "Third plane of the English Garden",
+            "species": "Platanus x acerifolia",
+            "girth_cm": 560,
+            "height_m": 30,
+            "age_register": "150 years",
+            "location": {
+                "latitude": 41.09184,
+                "longitude": 14.32994
+            },
+            "sources": [
+                "MASAF 45/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_272.html"
+            ],
+            "why_not_published": "Count only, and a second plane on the same page would have been repetition. 5.6 m of trunk makes it the fourth-thickest entry in the Caserta register. [RESOLVED 2026-08-18, delivered as cas_011: the plane was held only for repetition, an invalid reason under CLAUDE.md's 2026-08-10 ruling. The Piazza Vanvitelli trio was single-sourced in this file but a second source (Campania regional register scheda_48/49/50) was found and confirmed this pass, matching MASAF's own girth figures exactly; shipped as a new free second walk for the city.]",
+            "status": "resolved"
+        },
+        {
+            "name": "Second plane of the English Garden",
+            "species": "Platanus x acerifolia",
+            "girth_cm": 720,
+            "height_m": 25,
+            "age_register": "150 years",
+            "location": {
+                "latitude": 41.09266,
+                "longitude": 14.33058
+            },
+            "sources": [
+                "MASAF 44/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_271.html"
+            ],
+            "why_not_published": "[RESOLVED 2026-08-13, delivered as cas_010] Second-thickest trunk in the whole Caserta register at 7.2 m, and it lost its place only because the smaller plane of the Palco has a far better story and the page should not carry two planes. This is the strongest single candidate for an eighth entry. The regional card says only that it is 'in the lower part of the English Garden and of notable dimensions'."
+        },
+        {
+            "name": "Cedar of Lebanon, Cimitero Comunale",
+            "species": "Cedrus libani",
+            "girth_cm": 635,
+            "height_m": 30,
+            "location": {
+                "latitude": 41.08932,
+                "longitude": 14.34119
+            },
+            "sources": [
+                "MASAF 05/B963/CE/15"
+            ],
+            "why_not_published": "[RESOLVED 2026-08-26, verify pass, delivered to data/research/caserta-verified.json for the pending write pass] Different cluster and single-sourced. It stands with a 5 m camphor in the municipal cemetery on Via Cappuccini, about 1 km east of the park, so the two of them are a separate short walk rather than part of this one. No Campania card found, so no age and no second source. Cemetery access hours would need checking.",
+            "status": "resolved"
+        },
+        {
+            "name": "Camphor of the Cimitero Maggiore",
+            "species": "Cinnamomum camphora",
+            "girth_cm": 500,
+            "height_m": 25,
+            "location": {
+                "latitude": 41.08923,
+                "longitude": 14.34135
+            },
+            "sources": [
+                "MASAF 04/B963/CE/15"
+            ],
+            "why_not_published": "[RESOLVED 2026-08-26, verify pass, delivered to data/research/caserta-verified.json for the pending write pass] As above: same cemetery, different cluster, single-sourced.",
+            "status": "resolved"
+        },
+        {
+            "name": "Plane of Piazza della Seta, San Leucio",
+            "species": "Platanus x acerifolia",
+            "girth_cm": 480,
+            "height_m": 18,
+            "location": {
+                "latitude": 41.09844,
+                "longitude": 14.31556
+            },
+            "sources": [
+                "MASAF 01/B963/CE/15"
+            ],
+            "why_not_published": "[RESOLVED 2026-08-26, verify pass, delivered to data/research/caserta-verified.json for the pending write pass] Different cluster, 1.6 km west of the English Garden in the Bourbon silk village of San Leucio, itself part of the UNESCO listing. Free and public. A genuinely good candidate for a second Caserta walk, not for this one.",
+            "status": "resolved"
+        },
+        {
+            "name": "Small-leaved Lime of Casola, Chiesa San Marco Evangelista",
+            "species": "Tilia cordata",
+            "girth_cm": 480,
+            "height_m": 12,
+            "location": {
+                "latitude": 41.09396,
+                "longitude": 14.38333
+            },
+            "sources": [
+                "MASAF 03/B963/CE/15"
+            ],
+            "why_not_published": "[RESOLVED 2026-08-26, verify pass, delivered to data/research/caserta-verified.json for the pending write pass] Different cluster, 4.5 km east on the hill at Casola, standing beside a church, which is the pattern worth chasing in this province. Single-sourced. Worth a dedicated pass.",
+            "status": "resolved"
+        },
+        {
+            "name": "Plane of Briano, Chiesa di San Nicola",
+            "species": "Platanus x acerifolia",
+            "girth_cm": 410,
+            "height_m": 15,
+            "location": {
+                "latitude": 41.09487,
+                "longitude": 14.32389
+            },
+            "sources": [
+                "MASAF 02/B963/CE/15"
+            ],
+            "why_not_published": "[RESOLVED 2026-08-26, verify pass, delivered to data/research/caserta-verified.json for the pending write pass] Different cluster, 800 m west of the park wall at a church in Briano. Single-sourced, free and public. Could join a San Leucio walk.",
+            "status": "resolved"
+        },
+        {
+            "name": "Monkey Puzzle of Piazza Vanvitelli",
+            "species": "Araucaria araucana",
+            "girth_cm": 330,
+            "height_m": 25,
+            "location": {
+                "latitude": 41.07508,
+                "longitude": 14.33208
+            },
+            "sources": [
+                "MASAF 07/B963/CE/15"
+            ],
+            "why_not_published": "Different cluster. Piazza Vanvitelli, just east of the palace, holds three registered trees within 50 m of each other: this monkey puzzle, a casuarina and a yew. Free, public, and the obvious basis of a second Caserta walk that needs no ticket. Single-sourced so far. [RESOLVED 2026-08-18, delivered as cas_012: the plane was held only for repetition, an invalid reason under CLAUDE.md's 2026-08-10 ruling. The Piazza Vanvitelli trio was single-sourced in this file but a second source (Campania regional register scheda_48/49/50) was found and confirmed this pass, matching MASAF's own girth figures exactly; shipped as a new free second walk for the city.]",
+            "status": "resolved"
+        },
+        {
+            "name": "Casuarina of Piazza Vanvitelli",
+            "species": "Casuarina equisetifolia",
+            "girth_cm": 270,
+            "height_m": 15,
+            "location": {
+                "latitude": 41.07553,
+                "longitude": 14.33242
+            },
+            "sources": [
+                "MASAF 08/B963/CE/15"
+            ],
+            "why_not_published": "As above, part of the free Piazza Vanvitelli group. [RESOLVED 2026-08-18, delivered as cas_013: the plane was held only for repetition, an invalid reason under CLAUDE.md's 2026-08-10 ruling. The Piazza Vanvitelli trio was single-sourced in this file but a second source (Campania regional register scheda_48/49/50) was found and confirmed this pass, matching MASAF's own girth figures exactly; shipped as a new free second walk for the city.]",
+            "status": "resolved"
+        },
+        {
+            "name": "Yew of Piazza Vanvitelli",
+            "species": "Taxus baccata",
+            "girth_cm": 270,
+            "height_m": 12,
+            "location": {
+                "latitude": 41.07535,
+                "longitude": 14.33218
+            },
+            "sources": [
+                "MASAF 09/B963/CE/15"
+            ],
+            "why_not_published": "As above, part of the free Piazza Vanvitelli group. [RESOLVED 2026-08-18, delivered as cas_014: the plane was held only for repetition, an invalid reason under CLAUDE.md's 2026-08-10 ruling. The Piazza Vanvitelli trio was single-sourced in this file but a second source (Campania regional register scheda_48/49/50) was found and confirmed this pass, matching MASAF's own girth figures exactly; shipped as a new free second walk for the city.]",
+            "status": "resolved"
+        },
+        {
+            "name": "Bunya Pine of the Castelluccia",
+            "species": "Araucaria bidwillii",
+            "girth_cm": 278,
+            "height_m": 25,
+            "age_register": "200 years",
+            "location": {
+                "latitude": 41.0773,
+                "longitude": 14.32212
+            },
+            "sources": [
+                "MASAF 13/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_186.html"
+            ],
+            "why_not_published": "Different cluster, 1.9 km south of the English Garden at the Castelluccia in the Bosco Vecchio, the sixteenth-century tower Ferdinand IV used for mock naval battles. Two-sourced and would qualify, but it belongs to a lower-park walk. Note MASAF and the regional card disagree on longitude by about 40 m. ACCESS CHECK 2026-08-26: the Reggia's own site (reggiadicaserta.cultura.gov.it, \"La Castelluccia aperta la mattina di giovedi 26 giugno\", 2025-06-24) frames an opening as special one-off news, implying the Castelluccia corner of the Bosco Vecchio is NOT routinely open; a general web summary said the same (special access days only). The regional register card (scheda_186) describes the Bosco Vecchio's own avenues as open ('viali aperti') and walkable from the main Reggia entrance almost all the way to the building, which may mean the WOOD is reachable via the standard Royal Park ticket even when the fortress itself is closed, but that distinction (wood open, building/immediate area gated) was not confirmed on the ground. Held rather than shipped this pass: fails the can-they-get-in-without-asking test on current evidence. A future pass should either find a source stating the wood/avenues are open on ordinary days, or treat this as access-blocked like Prague's Franciscan yew."
+        },
+        {
+            "name": "Tulip Tree of Piazza Pitesti",
+            "species": "Liriodendron tulipifera",
+            "girth_cm": 310,
+            "height_m": 18,
+            "location": {
+                "latitude": 41.08014,
+                "longitude": 14.34258
+            },
+            "sources": [
+                "MASAF 06/B963/CE/15"
+            ],
+            "why_not_published": "[RESOLVED 2026-08-26, verify pass, delivered to data/research/caserta-verified.json for the pending write pass] Different cluster, in the town east of the park. Single-sourced. Tulip trees give reliable October gold, so it would carry a best_time.",
+            "status": "resolved"
+        },
+        {
+            "name": "Camphor of Centurano",
+            "species": "Cinnamomum camphora",
+            "girth_cm": 500,
+            "height_m": 20,
+            "age_register": "between 100 and 200 years",
+            "location": {
+                "latitude": 41.07211,
+                "longitude": 14.35978
+            },
+            "sources": [
+                "MASAF 17/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_212.html"
+            ],
+            "why_not_published": "[RESOLVED 2026-08-26, verify pass, delivered to data/research/caserta-verified.json for the pending write pass] Different cluster, in the Centurano district 2.5 km south-east. Two-sourced, but the registers disagree badly on girth: MASAF 500 cm against the regional card's 300 cm. Reconcile before publishing. Access on Via Petrarca needs checking, since a street address does not prove public standing.",
+            "status": "resolved"
+        }
+    ],
+    "blocked": [
+        {
+            "name": "The row of eight camphor trees",
+            "species": "Cinnamomum camphora",
+            "sources": [
+                "MASAF 27/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_238.html"
+            ],
+            "reason": "An avenue. The regional card names it 'il filare di Canfori', a row of eight registered together with averaged measurements, so there is no single tree to stand in front of."
+        },
+        {
+            "name": "The twenty-five holm oaks",
+            "species": "Quercus ilex",
+            "sources": [
+                "MASAF 33/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_244.html"
+            ],
+            "reason": "A wood, not a point. Twenty-five trees registered as one entry with averaged girth and height, spread through the Bosco Vecchio."
+        },
+        {
+            "name": "The magnolias of the Castelluccia",
+            "species": "Magnolia grandiflora",
+            "sources": [
+                "MASAF 11/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_184.html"
+            ],
+            "reason": "A stand registered as one 'insieme omogeneo' with averages only, planted as decoration around the Castelluccia along with camellias, jasmine, araucarias and palms. No identifiable individual tree."
+        },
+        {
+            "name": "The three Italian cypresses of the English Garden",
+            "species": "Cupressus sempervirens",
+            "sources": [
+                "MASAF 47/B963/CE/15",
+                "https://agricoltura.regione.campania.it/foreste/monum/scheda_274.html"
+            ],
+            "reason": "A group of three registered with averaged measurements and one shared coordinate. Not a single collectible point."
+        },
+        {
+            "name": "The cypresses of the Cimitero Comunale",
+            "species": "Cupressus sempervirens",
+            "sources": [
+                "MASAF 10/B963/CE/15"
+            ],
+            "reason": "A group entry with no girth, height or count published at all, in the municipal cemetery. Nothing to point a visitor at."
+        }
+    ]
 }
