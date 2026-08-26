@@ -155,17 +155,18 @@ struct TreeDetail: View {
                 // items into one capsule, so share and report shared a pill
                 // while the back button and the camera on the photograph each
                 // wore their own circle. Three controls on one screen drawn
-                // two different ways is the inconsistency he saw. A
-                // ToolbarSpacer is the platform's own way to break the group,
-                // and it lands on the convention every reference uses over a
-                // hero image: one round button per control, evenly spaced.
-                // Guarded, because this app runs from iOS 18 and the spacer
-                // arrived in 26. On 18 there is nothing to split: that older
-                // toolbar draws no glass around a group, so the two controls
-                // already read as two.
-                if #available(iOS 26.0, *) {
-                    ToolbarSpacer(.fixed, placement: .topBarTrailing)
-                }
+                // two different ways is the inconsistency he saw. ToolbarSpacer
+                // is the platform's own way to break the group, and it lands on
+                // the convention every reference uses over a hero image: one
+                // round button per control, evenly spaced.
+                //
+                // Not shipped: the type itself, not only the API, needs the
+                // iOS 26 SDK to compile, and CI's actual toolchain is Xcode
+                // 16.4 (the workflow's xcode-select to 26.6 fails silently and
+                // falls back, 2026-08-26). A #available guard checks at
+                // runtime; it cannot make an unresolvable symbol compile. This
+                // is a re-open once CI carries a 26 SDK, not a rejection of
+                // the idea.
                 ToolbarItem(placement: .topBarTrailing) {
                     Menu {
                         Button { report("Something here is wrong:") } label: {
