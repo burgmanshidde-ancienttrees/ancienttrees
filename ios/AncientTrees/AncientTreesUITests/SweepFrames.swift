@@ -64,6 +64,7 @@ final class SweepFrames: XCTestCase {
         ("feedback",     ["-tab=2", "-feedback"], "contribute-sheet"),
         ("sponsor",      ["-tab=2", "-sponsor"], "sponsor-sheet"),
         ("profile-edit", ["-tab=2", "-profile-edit"], nil),
+        ("people",       ["-tab=2", "-people"], "people-sheet"),
     ]
 
     /// The file appfit.py goes looking for.
