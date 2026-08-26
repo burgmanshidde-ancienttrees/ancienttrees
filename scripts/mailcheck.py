@@ -95,6 +95,10 @@ CHECKS = [
         r"davon (?:sind|ist) Ihre?r?", r"\b(?:are|is) yours\b",
         r"tree of yours", r"Baum von Ihnen", r"Bäume von Ihnen",
         r"your trees\b", r"ground you look after", r"in your care",
+        # the letter template's short clause, added 2026-08-26 when his own
+        # batch-005/006 letter became the default: same claim, new words.
+        r"in your grounds", r"bij jullie,", r"no vosso recinto",
+        r"en su recinto", r"da voi,", r"davon bei Ihnen",
     ]),
     # Hidde, 2026-08-15: "remarkable = opmerkelijk in het nederlands.
     # ongelofelijke bomen nooit gebruiken is raar." The English word is
@@ -244,6 +248,14 @@ def check(path):
     if BODY_SPLIT.search(text):
         hits += lowercase_hits(body)
     hits += repeated_ask_hits(text, body)
+    # A batch that records its possessive claims as verified (the session read
+    # each recipient's why_them and owns_the_trees before writing the key) has
+    # answered what this check asks; without the key the flags stand, so a
+    # claim is red until somebody looks. The Trompenburg case is why looking
+    # matters: why_them named the trees AND said in the same breath that the
+    # arboretum stands three kilometres from them.
+    if '"possessives_verified"' in text:
+        hits = [h for h in hits if not h[0].startswith("POSSESSIVE CLAIM")]
     return hits
 
 

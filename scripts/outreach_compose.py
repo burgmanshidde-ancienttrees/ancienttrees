@@ -114,6 +114,8 @@ T = {
   "hi": "Hello,",
   "open": "I found this tree of yours online and think it's a remarkable tree!",
   "open_many": "I found these trees of yours online and think they are remarkable!",
+  "open_plain": "I found this tree online and think it's a remarkable tree!",
+  "open_many_plain": "I found these trees online and think they are remarkable!",
   "who": ("My name is Hidde. I map the most remarkable old trees of cities at "
           "ancienttrees.app, each with its story, its exact spot and a walk linking "
           "them, so people have a reason to go outside and stand in front of "
@@ -135,6 +137,8 @@ T = {
   "hi": "Goedendag,",
   "open": "Ik kwam deze boom van jullie online tegen en vind het een bijzondere boom!",
   "open_many": "Ik kwam deze bomen van jullie online tegen en vind ze bijzonder!",
+  "open_plain": "Ik kwam deze boom online tegen en vind het een bijzondere boom!",
+  "open_many_plain": "Ik kwam deze bomen online tegen en vind ze bijzonder!",
   "who": ("Mijn naam is Hidde. Ik breng op ancienttrees.app de bijzonderste oude bomen "
           "van steden in kaart, elk met zijn verhaal, de exacte plek en een wandeling "
           "die ze verbindt, zodat mensen een reden hebben om naar buiten te gaan en "
@@ -156,6 +160,8 @@ T = {
   "hi": "Bom dia,",
   "open": "Encontrei esta árvore vossa online e acho-a uma árvore notável!",
   "open_many": "Encontrei estas árvores vossas online e acho-as notáveis!",
+  "open_plain": "Encontrei esta árvore online e acho-a uma árvore notável!",
+  "open_many_plain": "Encontrei estas árvores online e acho-as notáveis!",
   "who": ("Chamo-me Hidde. Reúno em ancienttrees.app as árvores antigas mais notáveis "
           "das cidades, cada uma com a sua história, a localização exacta e um percurso "
           "a pé que as liga, para dar às pessoas uma razão para sair e ir estar diante "
@@ -177,6 +183,8 @@ T = {
   "hi": "Buenos días,",
   "open": "¡Encontré este árbol suyo por internet y me parece un árbol extraordinario!",
   "open_many": "¡Encontré estos árboles suyos por internet y me parecen extraordinarios!",
+  "open_plain": "¡Encontré este árbol por internet y me parece un árbol extraordinario!",
+  "open_many_plain": "¡Encontré estos árboles por internet y me parecen extraordinarios!",
   "who": ("Me llamo Hidde. Reúno en ancienttrees.app los árboles viejos más singulares "
           "de las ciudades, cada uno con su historia, su ubicación exacta y un paseo que "
           "los enlaza, para dar a la gente un motivo para salir y ponerse delante de "
@@ -198,6 +206,8 @@ T = {
   "hi": "Buongiorno,",
   "open": "Ho trovato questo vostro albero online e lo trovo un albero straordinario!",
   "open_many": "Ho trovato questi vostri alberi online e li trovo straordinari!",
+  "open_plain": "Ho trovato questo albero online e lo trovo un albero straordinario!",
+  "open_many_plain": "Ho trovato questi alberi online e li trovo straordinari!",
   "who": ("Mi chiamo Hidde. Raccolgo su ancienttrees.app gli alberi antichi più notevoli "
           "delle città, ognuno con la sua storia, il punto esatto e una passeggiata che "
           "li collega, per dare alle persone un motivo per uscire e mettersi davanti a "
@@ -219,6 +229,8 @@ T = {
   "hi": "Guten Tag,",
   "open": "Ich bin online auf diesen Baum von Ihnen gestoßen und finde ihn bemerkenswert!",
   "open_many": "Ich bin online auf diese Bäume von Ihnen gestoßen und finde sie bemerkenswert!",
+  "open_plain": "Ich bin online auf diesen Baum gestoßen und finde ihn bemerkenswert!",
+  "open_many_plain": "Ich bin online auf diese Bäume gestoßen und finde sie bemerkenswert!",
   "who": ("Mein Name ist Hidde. Auf ancienttrees.app kartiere ich die bemerkenswertesten "
           "alten Bäume von Städten, jeden mit seiner Geschichte, dem genauen Standort und "
           "einem Spaziergang, der sie verbindet, damit Menschen einen Grund haben, nach "
@@ -242,12 +254,172 @@ for k in ("da", "sv", "no", "fi"):
     T[k] = T["en"]
 
 
+# HIS letter, the default since 2026-08-26. Batches 005 and 006 went out in
+# Hidde's own words, approved by him twice, and batch 006 added the mention
+# line he asked for himself. Those letters are copied VERBATIM per language
+# from the approved batches; nothing below is my prose except the Spanish
+# mention line (Spain was deliberately absent from 006, so his letter never
+# existed in Spanish with that line) and the short "{k} of them in your
+# grounds" clause used only when the recipient actually holds the trees
+# (why_them names them and owns_the_trees is not false). The older template
+# above stays available as --style trees for photo-ask batches.
+HIS = {
+ "en": {
+  "subj": "Can you help me with ancienttrees.app? The old trees of {city}",
+  "body": ("Hello,\n\n"
+           "My name is Hidde and I am building ancienttrees.app, a platform for "
+           "remarkable trees. My goal is to get people excited about old trees and "
+           "to encourage them to go and see them outside.\n\n"
+           "We have {n} trees in {city}{theirs} and I was really curious whether "
+           "you would take a look at whether they are right:\n{url}\n\n"
+           "I also wondered: which tree do you personally think is missing?\n\n"
+           "Any help would be much appreciated!\n\n"
+           "And if you think the site is worth it, a mention on your website would "
+           "help enormously to get these trees noticed.\n\n"
+           "I would really like to hear your opinion on the project.\n\n"
+           "Best wishes,\nHidde"),
+  "theirs": ", {k} of them in your grounds,",
+  "theirs_one": ", one of them in your grounds,",
+ },
+ "nl": {
+  "subj": "Kun je me helpen met ancienttrees.app? De oude bomen van {city}",
+  "body": ("Hallo,\n\n"
+           "Mijn naam is Hidde en ik bouw aan ancienttrees.app, een platform voor "
+           "opmerkelijke bomen. Mijn doel is om mensen enthousiast te maken over "
+           "oude bomen en ze aan te moedigen om die buiten te gaan bekijken.\n\n"
+           "We hebben {n} bomen in {city} staan{theirs} en ik was erg benieuwd of "
+           "je een kijkje zou willen nemen of ze kloppen:\n{url}\n\n"
+           "Daarnaast vroeg ik me af: welke boom mis jij persoonlijk op de site?\n\n"
+           "Elke hulp zou zeer gewaardeerd worden!\n\n"
+           "En als je de site de moeite waard vindt: een vermelding op jullie "
+           "website zou enorm helpen om deze bomen onder de aandacht te brengen.\n\n"
+           "Ik ben erg benieuwd naar jouw mening over het project.\n\n"
+           "Met vriendelijke groet,\nHidde"),
+  "theirs": ", waarvan {k} bij jullie,",
+  "theirs_one": ", waarvan één bij jullie,",
+ },
+ "pt": {
+  "subj": "Pode ajudar-me com o ancienttrees.app? As árvores de {city}",
+  "body": ("Olá,\n\n"
+           "Chamo-me Hidde e estou a construir o ancienttrees.app, uma plataforma "
+           "para árvores notáveis. O meu objetivo é entusiasmar as pessoas pelas "
+           "árvores antigas e incentivá-las a ir vê-las lá fora.\n\n"
+           "Temos {n} árvores em {city}{theirs} e tinha muita curiosidade em saber "
+           "se poderiam dar uma vista de olhos para ver se estão certas:\n{url}\n\n"
+           "Além disso, perguntava-me: que árvore acham pessoalmente que falta no "
+           "site?\n\n"
+           "Qualquer ajuda seria muito apreciada!\n\n"
+           "E se acharem o site útil, uma menção no vosso site ajudaria imenso a "
+           "dar a conhecer estas árvores.\n\n"
+           "Gostava muito de saber a vossa opinião sobre o projeto.\n\n"
+           "Com os melhores cumprimentos,\nHidde"),
+  "theirs": ", {k} delas no vosso recinto,",
+  "theirs_one": ", uma delas no vosso recinto,",
+ },
+ "es": {
+  "subj": "¿Me pueden ayudar con ancienttrees.app? Los árboles viejos de {city}",
+  "body": ("Hola,\n\n"
+           "Me llamo Hidde y estoy construyendo ancienttrees.app, una plataforma "
+           "para árboles notables. Mi objetivo es entusiasmar a la gente con los "
+           "árboles viejos y animarla a ir a verlos fuera.\n\n"
+           "Tenemos {n} árboles en {city}{theirs} y tenía mucha curiosidad por "
+           "saber si podrían echar un vistazo a ver si están bien:\n{url}\n\n"
+           "Además me preguntaba: ¿qué árbol echan de menos personalmente en la "
+           "web?\n\n"
+           "¡Cualquier ayuda sería muy apreciada!\n\n"
+           "Y si les parece que la web merece la pena, una mención en su página "
+           "web ayudaría enormemente a dar a conocer estos árboles.\n\n"
+           "Me interesa mucho su opinión sobre el proyecto.\n\n"
+           "Un saludo cordial,\nHidde"),
+  "theirs": ", {k} de ellos en su recinto,",
+  "theirs_one": ", uno de ellos en su recinto,",
+ },
+ "it": {
+  "subj": "Può aiutarmi con ancienttrees.app? Gli alberi di {city}",
+  "body": ("Buongiorno,\n\n"
+           "Mi chiamo Hidde e sto costruendo ancienttrees.app, una piattaforma per "
+           "alberi notevoli. Il mio obiettivo è appassionare le persone agli alberi "
+           "antichi e spingerle ad andare a vederli fuori.\n\n"
+           "Abbiamo {n} alberi a {city}{theirs} ed ero molto curioso di sapere se "
+           "potreste dare un'occhiata per vedere se sono giusti:\n{url}\n\n"
+           "Inoltre mi chiedevo: quale albero pensate personalmente che manchi sul "
+           "sito?\n\n"
+           "Ogni aiuto sarebbe molto apprezzato!\n\n"
+           "E se il sito vi sembra utile, una menzione sul vostro sito aiuterebbe "
+           "moltissimo a far conoscere questi alberi.\n\n"
+           "Mi interessa molto la vostra opinione sul progetto.\n\n"
+           "Cordiali saluti,\nHidde"),
+  "theirs": ", {k} dei quali da voi,",
+  "theirs_one": ", uno dei quali da voi,",
+ },
+ "de": {
+  "subj": "Können Sie mir mit ancienttrees.app helfen? Die alten Bäume von {city}",
+  "body": ("Guten Tag,\n\n"
+           "mein Name ist Hidde und ich baue ancienttrees.app, eine Plattform für "
+           "bemerkenswerte Bäume. Mein Ziel ist es, Menschen für alte Bäume zu "
+           "begeistern und sie dazu zu bringen, hinauszugehen und sie anzuschauen.\n\n"
+           "Wir haben {n} Bäume in {city}{theirs} und mich würde sehr "
+           "interessieren, ob Sie einmal nachsehen würden, ob sie stimmen:\n{url}\n\n"
+           "Außerdem habe ich mich gefragt: welcher Baum fehlt Ihnen persönlich "
+           "auf der Seite?\n\n"
+           "Über jede Hilfe würde ich mich sehr freuen!\n\n"
+           "Und falls Sie die Seite für nützlich halten: eine Erwähnung auf Ihrer "
+           "Website würde enorm helfen, diese Bäume bekannt zu machen.\n\n"
+           "Ihre Meinung zu dem Projekt interessiert mich sehr.\n\n"
+           "Mit freundlichen Grüßen,\nHidde"),
+  "theirs": ", {k} davon bei Ihnen,",
+  "theirs_one": ", einer davon bei Ihnen,",
+ },
+}
+HIS["ca"] = HIS["es"]
+HIS["fr"] = HIS["en"]
+for k in ("da", "sv", "no", "fi", "cs", "pl"):
+    HIS[k] = HIS["en"]
+
+
+def compose_letter(contact, all_cities):
+    lang = (contact.get("language") or "en").split("|")[0]
+    t = HIS.get(lang, HIS["en"])
+    slug, pool, theirs = their_trees(contact, all_cities)
+    if not slug:
+        return None
+    if contact.get("owns_the_trees") is False:
+        theirs = False
+    city = all_cities[slug]["city"]
+    if lang != "en":
+        city = LOCAL.get(city, city)
+    k = len(pool) if theirs else 0
+    clause = ""
+    if theirs:
+        clause = (t["theirs_one"] if k == 1 else t["theirs"]).format(k=k)
+    body = t["body"].format(n=len(all_cities[slug]["trees"]), city=city,
+                            theirs=clause,
+                            url="https://ancienttrees.app/%s" % slug)
+    subject = t["subj"].format(city=city).strip()
+    # Porto takes the article in Portuguese: "as árvores do Porto", "no Porto".
+    # Batch 006 already went out saying "do Porto" in its subject.
+    if lang == "pt" and city == "Porto":
+        subject = subject.replace("de Porto", "do Porto")
+        body = body.replace("em Porto", "no Porto")
+    return {"to": contact["email"], "found_at": contact.get("source_url", ""),
+            "outlet": contact["org"], "subject": subject, "body": body}
+
+
 def compose(contact, all_cities):
     lang = (contact.get("language") or "en").split("|")[0]
     t = T.get(lang, T["en"])
     slug, pool, theirs = their_trees(contact, all_cities)
     if not slug:
         return None
+    # "This tree of yours" is a claim, and mailcheck's POSSESSIVE CLAIM check
+    # exists because a wrong one went to Berlin (the Kaisereiche that was never
+    # in their register). The old code claimed possession in the opening line
+    # of EVERY mail, including the ones whose own body fell back to "we publish
+    # n trees for <city>" because nothing matched. Possessive language now
+    # needs the same justification everywhere: a why_them match, and never
+    # against an explicit owns_the_trees: false in the contact file.
+    if contact.get("owns_the_trees") is False:
+        theirs = False
     city = all_cities[slug]["city"]
     if lang != "en":
         city = LOCAL.get(city, city)
@@ -255,8 +427,12 @@ def compose(contact, all_cities):
     missing = sum(1 for x in pool if not x["photo"])
     what = city if not theirs else (listed[0]["name"] if len(listed) == 1 else city)
 
+    if theirs:
+        opening = t["open"] if len(listed) == 1 else t["open_many"]
+    else:
+        opening = t["open_plain"] if len(listed) == 1 else t["open_many_plain"]
     body = [t["hi"], "",
-            t["open"] if len(listed) == 1 else t["open_many"], "",
+            opening, "",
             t["who"], "",
             (t["yours_one"] if theirs and len(listed) == 1 else t["yours"] if theirs else t["ours"]).format(
                 city=city, n=len(all_cities[slug]["trees"]), k=len(listed)),
@@ -275,6 +451,9 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--country")
     ap.add_argument("--limit", type=int, default=28)
+    ap.add_argument("--style", choices=["letter", "trees"], default="letter",
+                    help="letter: Hidde's own batch-005/006 letter (default). "
+                         "trees: the older photo-and-corrections template.")
     ap.add_argument("--out", required=True)
     a = ap.parse_args()
 
@@ -289,7 +468,7 @@ def main():
             continue
         if not c.get("email") or c["email"].lower() in done:
             continue
-        m = compose(c, all_cities)
+        m = (compose_letter if a.style == "letter" else compose)(c, all_cities)
         if not m:
             skipped.append(c["org"])
             continue
@@ -297,7 +476,11 @@ def main():
         if len(mails) >= a.limit:
             break
     batch = {"batch": os.path.basename(a.out).replace(".json", ""),
-             "note": ("Hidde's voice, 2026-08-10: subject asks for help, opening says we found "
+             "note": ("Hidde's own letter from batches 005/006, with his mention line, "
+                      "verbatim per language. Where the recipient holds the trees the "
+                      "middle sentence says so, justified by why_them and owns_the_trees."
+                      if a.style == "letter" else
+                      "Hidde's voice, 2026-08-10: subject asks for help, opening says we found "
                       "the tree online and think it is remarkable. No word about coverage or "
                       "links; the ask is photographs, corrections, and the tree we missed."),
              "status": "draft", "mails": mails, "approved": None}
