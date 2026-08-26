@@ -38,11 +38,14 @@ struct ProfileView: View {
     @State private var showingAccount = false
     @State private var showingLegal = false
     @State private var sponsoring = false
+    @State private var showingSponsor = ProcessInfo.processInfo.arguments.contains("-sponsor")
     /// Debug scaffolding, same family as -tab and -open in ContentView: the
     /// screenshot sweep cannot tap, and this sheet is otherwise only reachable
     /// by tapping a card on this screen.
     @State private var contributing = ProcessInfo.processInfo.arguments.contains("-contribute")
     @State private var givingFeedback = ProcessInfo.processInfo.arguments.contains("-feedback")
+    /// Same debug scaffolding as -contribute and -feedback: the sweep cannot
+    /// tap, so every screen needs an argument or it ships unlooked-at.
 
     var body: some View {
         ScrollView {
@@ -78,9 +81,10 @@ struct ProfileView: View {
         .toolbar(.hidden, for: .navigationBar)
         .sheet(isPresented: $contributing) { ContributeView() }
         .sheet(isPresented: $givingFeedback) { ContributeView(feedbackMode: true) }
+        .sheet(isPresented: $showingSponsor) { SponsorSheet() }
         // The paywall still opens, from the locked rows themselves; it no
         // longer has a row of its own (2026-08-25).
-        .sheet(isPresented: $sponsoring) { PaywallView(feature: .sponsor) }
+        .sheet(isPresented: $sponsoring) { SponsorSheet() }
         .sheet(isPresented: $showingAccount) { accountSheet }
         .sheet(isPresented: $showingLegal) { legalSheet }
         .sheet(isPresented: $signingIn) {
