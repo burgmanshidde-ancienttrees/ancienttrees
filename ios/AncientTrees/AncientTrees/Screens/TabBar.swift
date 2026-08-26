@@ -81,17 +81,26 @@ struct TabBar: View {
             HStack(spacing: 0) {
                 ForEach(Array(Self.items.enumerated()), id: \.offset) { i, item in
                     Button { select(i) } label: {
-                        VStack(spacing: 2) {
+                        VStack(spacing: 3) {
                             Image(systemName: item.symbol)
                                 .font(.system(size: 22, weight: .regular))
-                                .foregroundStyle(i == selected ? Brand.moss : Brand.inkSoft)
                                 .environment(\.symbolVariants, i == selected ? .fill : .none)
                                 .frame(height: 26)
                             Text(item.title)
                                 .font(.system(size: 11,
-                                              weight: i == selected ? .bold : .regular))
-                                .foregroundStyle(i == selected ? Brand.moss : Brand.inkSoft)
+                                              weight: i == selected ? .semibold : .regular))
                         }
+                        // MONOCHROME, and that is the reference rather than a
+                        // preference (Hidde, 2026-08-26: "flikker op met dat
+                        // hele groen, maak het gewoon zwart-wit en zoals zij
+                        // doen met dat grijze overlay"). Polarsteps' bar has
+                        // no brand colour in it at all: the selected item is
+                        // simply darker and filled, and everything else is
+                        // grey. A green tab in a glass bar was our colour
+                        // asking for attention the bar does not need, and the
+                        // green is still doing its job two centimetres away on
+                        // the camera.
+                        .foregroundStyle(i == selected ? Brand.ink : Brand.inkSoft.opacity(0.75))
                         .frame(maxWidth: .infinity)
                         .frame(height: 52)
                         .contentShape(.rect)
@@ -102,22 +111,26 @@ struct TabBar: View {
                     .accessibilityAddTraits(i == selected ? [.isSelected, .isButton] : .isButton)
                 }
             }
-            .background(
-                Capsule().fill(Brand.ground)
-                    .shadow(color: .black.opacity(0.10), radius: 10, y: 2)
-            )
-            .overlay(Capsule().stroke(Brand.hairline, lineWidth: 0.5))
+            // GLASS, not a painted capsule. Polarsteps floats a frosted bar
+            // over the content and lets what is behind it show through, which
+            // is why the bar reads as hovering rather than as a floor. iOS
+            // gives us the same material its own bars use.
+            .background(.regularMaterial, in: .capsule)
+            .overlay(Capsule().strokeBorder(.white.opacity(0.35), lineWidth: 0.5))
+            .shadow(color: .black.opacity(0.12), radius: 12, y: 3)
 
-            // THE DEED, on its own disc beside the bar. Polarsteps floats its
-            // search button exactly here, and the distance is the message: a
-            // button that makes something does not belong in a row of places.
+            // The deed, on its own disc beside the bar, in the same glass. It
+            // is separated by distance rather than by colour, which is how the
+            // reference does it: a button that makes something does not belong
+            // in a row of places.
             Button(action: collect) {
                 Image(systemName: "camera.fill")
                     .font(.system(size: 21, weight: .semibold))
-                    .foregroundStyle(Brand.ground)
-                    .frame(width: 56, height: 56)
-                    .background(Circle().fill(Brand.moss))
-                    .shadow(color: .black.opacity(0.16), radius: 10, y: 2)
+                    .foregroundStyle(Brand.ink)
+                    .frame(width: 58, height: 58)
+                    .background(.regularMaterial, in: .circle)
+                    .overlay(Circle().strokeBorder(.white.opacity(0.35), lineWidth: 0.5))
+                    .shadow(color: .black.opacity(0.14), radius: 12, y: 3)
             }
             .buttonStyle(.plain)
             .accessibilityLabel("Collect a tree")

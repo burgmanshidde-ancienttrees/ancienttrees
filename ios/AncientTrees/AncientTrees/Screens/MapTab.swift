@@ -122,7 +122,7 @@ struct MapTab: View {
     private var mapTrees: [Tree] {
         guard filters.isOn else { return catalogue.trees }
         return catalogue.trees.filter {
-            filters.keeps($0, month: month, collected: collectedIds)
+            filters.keeps($0, month: month, collected: collectedIds, favourites: favouriteIds)
                 && filters.keepsDistance($0.distanceKm(from: focus.lat, focus.lng))
         }
     }
@@ -132,6 +132,9 @@ struct MapTab: View {
     /// asked per tree while filtering fifteen hundred of them.
     private var collectedIds: Set<String> {
         Set(saved.entries.values.filter { $0.visitedAt != nil }.map(\.treeId))
+    }
+    private var favouriteIds: Set<String> {
+        Set(saved.favourites.map(\.treeId))
     }
     /// The point the list is about: where the map is looking once it has been
     /// moved, and where you are standing until then.
@@ -218,7 +221,7 @@ struct MapTab: View {
         // a different and much larger claim than "you can see".
         guard let r = mapRegion else {
             return catalogue.trees.filter {
-                filters.keeps($0, month: month, collected: collectedIds)
+                filters.keeps($0, month: month, collected: collectedIds, favourites: favouriteIds)
                     && $0.distanceKm(from: focus.lat, focus.lng) <= 6
             }.count
         }
@@ -228,7 +231,7 @@ struct MapTab: View {
         let lngMax = r.center.longitude + r.span.longitudeDelta / 2
         return catalogue.trees.filter {
             $0.lat >= latMin && $0.lat <= latMax && $0.lng >= lngMin && $0.lng <= lngMax
-                && filters.keeps($0, month: month, collected: collectedIds)
+                && filters.keeps($0, month: month, collected: collectedIds, favourites: favouriteIds)
         }.count
     }
 
@@ -256,7 +259,7 @@ struct MapTab: View {
         let box = visibleBox
         let near = catalogue.trees
             .filter { box.contains($0.lat, $0.lng) }
-            .filter { filters.keeps($0, month: month, collected: collectedIds) }
+            .filter { filters.keeps($0, month: month, collected: collectedIds, favourites: favouriteIds) }
             .map { ($0, $0.distanceKm(from: focus.lat, focus.lng)) }
             .filter { filters.keepsDistance($0.1) }
             .sorted { $0.1 < $1.1 }
@@ -269,7 +272,7 @@ struct MapTab: View {
         return catalogue.trees
             .filter { $0.name.lowercased().contains(q) || $0.city.lowercased().contains(q)
                       || $0.species.lowercased().contains(q) }
-            .filter { filters.keeps($0, month: month, collected: collectedIds)
+            .filter { filters.keeps($0, month: month, collected: collectedIds, favourites: favouriteIds)
                         && filters.keepsDistance($0.distanceKm(from: focus.lat, focus.lng)) }
             .prefix(40)
             .map { ($0, $0.distanceKm(from: focus.lat, focus.lng)) }
@@ -762,6 +765,12 @@ struct MapTab: View {
                 // place they live). One root, three forms, no "yours" left
                 // anywhere. Hidde asked for "your trees" when the tab still
                 // said Yours; this follows the reason rather than the word.
+                FilterChip(label: "Favourites", icon: "heart",
+                           on: filters.favouritesOnly) {
+                    let want = !filters.favouritesOnly
+                    filters = MapFilters()
+                    filters.favouritesOnly = want
+                }
                 FilterChip(label: "Collected", icon: "checkmark.seal",
                            on: filters.collectedOnly) {
                     let want = !filters.collectedOnly
