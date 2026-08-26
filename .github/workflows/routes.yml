@@ -1,0 +1,54 @@
+# Keep the walking routes real.
+#
+# Hidde, 2026-08-26, on a walk drawn as a straight line: "kunnen we zorgen dat
+# dit beter is?"
+#
+# The cache was already designed correctly. route_walks.py keys a route on the
+# city plus the walk's ORDERED tree ids, so adding a tree to a city changes the
+# key, the old route stops matching, and the walk falls back to a straight line
+# that says so. It never serves a wrong route; it gets honestly dumber.
+#
+# What was missing is the other half: nothing ever refilled it. The script had
+# no schedule anywhere, so every night of new trees quietly pushed more walks
+# back to straight lines and they stayed there. Measured the day this was
+# written: 45 of 212 served walks had no real route.
+#
+# It runs alone rather than inside the digest because it talks to somebody
+# else's server. FOSSGIS's public Valhalla is a community instance with no key,
+# so the script asks for one route at a time with a pause, and only for walks
+# that have no cached route at all. A day with no new trees costs zero requests.
+name: Walking routes
+on:
+  schedule:
+    # After the nightly runs have added their trees, before the morning.
+    - cron: "40 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  route:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch the routes nobody has walked for us yet
+        run: python3 scripts/route_walks.py
+
+      - name: Report what is still a straight line
+        run: python3 scripts/walkcheck.py || true
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/walk-routes.json
+          if git diff --cached --quiet; then
+            echo "Every walk already has its route."
+          else
+            git commit -m "Walking routes: the ones new trees had turned back into straight lines"
+            git -c rebase.autoStash=true pull --rebase
+            git push
+          fi
