@@ -75,6 +75,31 @@ Radar alerts and offline can join the package later as "everything for the
 afternoon out"; behaviour will tell. The stats/recap lane stays in the
 drawer as garnish, not a driver.
 
+## The three tiers, drafted at his ask 2026-08-26 ("het premium tabelletje")
+
+**Look (signed out, acquisition):** the world map, every tree's story, photo
+and exact spot, trees near you with directions, and the one-line season fact
+("at its best in late November"). Every do-control is visible but asks for
+sign-in on touch, the Google Maps convention already built.
+
+**Join (free account, the reply channel):** save, tick off and collect with
+sync across devices, add a tree with a photograph, report corrections and get
+answered, send feedback and feature wishes.
+
+**Plus (paid, later):** ALL walks (his hard line), the full season chart (the
+year curve per tree), Season Radar alerts. Candidate, still open: offline and
+a trip mode. In the drawer as garnish, not a driver: stats, year recap, rare
+badges.
+
+**The season split, proposed and awaiting his call:** the FACT stays free
+everywhere (the chip and the one-line peak are the strongest go-now signal
+the pages have, and they are search text); the full year-curve CHART leaves
+the web at app launch and lives in the app as Plus. He ruled the chart is
+Plus and comes off the web ("die moeten we dus ook wel van het web gaan
+halen"); the open question is only whether the chip and sentence stay, which
+this note recommends. Removal happens at launch preparation, together with
+hiding the app's Plus traces.
+
 ## The earlier open choice: feature line or geography line
 
 **Feature line** (the current recorded shape, revised): free = everything
