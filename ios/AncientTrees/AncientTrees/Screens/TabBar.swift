@@ -44,94 +44,86 @@ struct TabBar: View {
     ///
     /// A camera and never a plus (Hidde, 2026-08-23): a plus promises a row in
     /// a list, a camera says what you are about to do.
+    /// THREE PLACES, and the deed is not one of them (Hidde, 2026-08-26:
+    /// "Map, discover, my trees en een camera button zoals bij polarsteps los
+    /// ... dus 3 iconen samen en dan de camera los want dat is geen pagina
+    /// maar een actie").
+    ///
+    /// The reference is his own Polarsteps screen: a rounded bar holding the
+    /// destinations, and a SEPARATE circular button floating beside it. That
+    /// separation is the whole argument. A camera in a row of tabs says "a
+    /// fourth place to go"; a camera on its own disc says "do this now", and
+    /// it is the only control in the app that makes something.
+    ///
+    /// This replaces the five-slot bar of 2026-08-24, which put the deed in
+    /// the middle because Instagram, TikTok and YouTube do. That pattern was
+    /// read correctly and its precondition is a bar of five; with three
+    /// destinations there is no middle to sit in, and Polarsteps answers the
+    /// same problem by taking the button out of the bar entirely.
     static let items = [
         Item(title: "Map", symbol: "map"),
-        Item(title: "Explore", symbol: "magnifyingglass"),
-        Item(title: "", symbol: "camera.fill", action: true),
-        Item(title: "Collection", symbol: "checkmark.circle"),
-        Item(title: "Profile", symbol: "person"),
+        Item(title: "Discover", symbol: "magnifyingglass"),
+        Item(title: "My trees", symbol: "leaf"),
     ]
+
+    /// The tag the camera carries in the TabView, intercepted rather than
+    /// shown. It stays 2 so every launch argument and every caller that says
+    /// -tab=2 still opens the collect sheet.
+    static let collectTag = 3
 
     let selected: Int
     let select: (Int) -> Void
+    /// The deed, handed in rather than assumed, because it is not a tab.
+    var collect: () -> Void = {}
 
     var body: some View {
-        HStack(spacing: 0) {
-            ForEach(Array(Self.items.enumerated()), id: \.offset) { i, item in
-                Button {
-                    select(i)
-                } label: {
-                    VStack(spacing: 2) {
-                        ZStack {
-                            if item.action {
-                                // The highlight he asked for: a filled disc,
-                                // the only one in the bar, so the deed reads as
-                                // a button among places rather than a fifth
-                                // destination. It never shows a selected state,
-                                // because you never arrive here.
-                                Circle()
-                                    .fill(Brand.moss)
-                                    .frame(width: 44, height: 44)
-                                Image(systemName: item.symbol)
-                                    .font(.system(size: 20, weight: .semibold))
-                                    .foregroundStyle(Brand.ground)
-                            } else {
-                                // The selected item is said by a FILLED symbol
-                                // and a bolder, darker word, not by a pill
-                                // behind it (Hidde, 2026-08-24). That reverses
-                                // the pill copied off his AllTrails frame this
-                                // morning, and it is worth naming as a flip
-                                // rather than a drift: this is what iOS does
-                                // in its own bars, so it is the plainer of the
-                                // two conventions rather than a preference.
-                                Image(systemName: item.symbol)
-                                    .font(.system(size: 22, weight: .regular))
-                                    // The brand green, the same one the camera
-                                    // disc wears (Hidde, 2026-08-24). Brand.moss
-                                    // is the dark green on a white bar and the
-                                    // light one on a dark bar, so "the same
-                                    // green" stays readable in both themes
-                                    // rather than being dark green twice.
-                                    .foregroundStyle(i == selected ? Brand.moss : Brand.inkSoft)
-                                    .environment(\.symbolVariants, i == selected ? .fill : .none)
-                            }
-                        }
-                        // The ACTION needs 44 for its disc; a labelled item
-                        // needs only its glyph, and giving it 44 too put air
-                        // above and below the icon so the word floated away
-                        // from it (Hidde, 2026-08-24: "de afstand tussen de
-                        // tekst map explore etc en het icon erboven is wat te
-                        // groot"). iOS sits its own icon and label about two
-                        // points apart and so does the reference. The tap
-                        // target is the whole 50 point row at full item width,
-                        // so nothing here is smaller than Apple's floor.
-                        .frame(height: item.action ? 44 : 26)
-                        if !item.title.isEmpty {
+        HStack(spacing: 12) {
+            HStack(spacing: 0) {
+                ForEach(Array(Self.items.enumerated()), id: \.offset) { i, item in
+                    Button { select(i) } label: {
+                        VStack(spacing: 2) {
+                            Image(systemName: item.symbol)
+                                .font(.system(size: 22, weight: .regular))
+                                .foregroundStyle(i == selected ? Brand.moss : Brand.inkSoft)
+                                .environment(\.symbolVariants, i == selected ? .fill : .none)
+                                .frame(height: 26)
                             Text(item.title)
                                 .font(.system(size: 11,
                                               weight: i == selected ? .bold : .regular))
                                 .foregroundStyle(i == selected ? Brand.moss : Brand.inkSoft)
                         }
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 52)
+                        .contentShape(.rect)
                     }
-                    .frame(maxWidth: .infinity)
-                    // The row is 50 tall and every item fills the width it is
-                    // given, so each target clears Apple's 44 in both
-                    // directions even where the label is missing.
-                    .frame(height: 50)
-                    .contentShape(.rect)
+                    .buttonStyle(.plain)
+                    .accessibilityLabel(item.title)
+                    .accessibilityIdentifier("tab-\(item.title.lowercased().replacingOccurrences(of: " ", with: "-"))")
+                    .accessibilityAddTraits(i == selected ? [.isSelected, .isButton] : .isButton)
                 }
-                .buttonStyle(.plain)
-                .accessibilityLabel(item.action ? "Collect a tree" : item.title)
-                .accessibilityAddTraits(i == selected ? [.isSelected, .isButton] : .isButton)
             }
-        }
-        .padding(.top, 6)
-        .background(alignment: .top) {
-            ZStack(alignment: .top) {
-                Brand.ground
-                Rectangle().fill(Brand.hairline).frame(height: 0.5)
+            .background(
+                Capsule().fill(Brand.ground)
+                    .shadow(color: .black.opacity(0.10), radius: 10, y: 2)
+            )
+            .overlay(Capsule().stroke(Brand.hairline, lineWidth: 0.5))
+
+            // THE DEED, on its own disc beside the bar. Polarsteps floats its
+            // search button exactly here, and the distance is the message: a
+            // button that makes something does not belong in a row of places.
+            Button(action: collect) {
+                Image(systemName: "camera.fill")
+                    .font(.system(size: 21, weight: .semibold))
+                    .foregroundStyle(Brand.ground)
+                    .frame(width: 56, height: 56)
+                    .background(Circle().fill(Brand.moss))
+                    .shadow(color: .black.opacity(0.16), radius: 10, y: 2)
             }
-            .ignoresSafeArea(edges: .bottom)
+            .buttonStyle(.plain)
+            .accessibilityLabel("Collect a tree")
+            .accessibilityIdentifier("tab-collect")
         }
+        .padding(.horizontal, 14)
+        .padding(.bottom, 4)
     }
 }

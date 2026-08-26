@@ -108,9 +108,22 @@ struct HomeView: View {
     var body: some View {
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 30) {
-                VStack(alignment: .leading, spacing: 20) {
+                shelves
+                Color.clear.frame(height: 90)        // clear of the floating tab bar
+            }
+            .padding(.top, 6)
+        }
+        // PINNED WITH safeAreaInset, not with a pinned Section (Hidde,
+        // 2026-08-26: "stikcy search bovenaan op explore on scroll"). The
+        // Section version compiled and then took the whole screen down on
+        // launch, which the sweep caught as a photograph of the home screen;
+        // this is the mechanism iOS uses for its own pinned bars, it does not
+        // touch the shelves at all, and the scroll view gets the inset for
+        // free so nothing hides under it.
+        .safeAreaInset(edge: .top, spacing: 0) {
+            VStack(alignment: .leading, spacing: 20) {
                     HStack(alignment: .firstTextBaseline) {
-                        Text("Explore")
+                        Text("Discover")
                             .font(.screenTitle)
                             .foregroundStyle(Brand.ink)
                         Spacer(minLength: 8)
@@ -145,14 +158,12 @@ struct HomeView: View {
                     }
                     .buttonStyle(.plain)
                     .accessibilityIdentifier("explore-search")
-                }
-                .padding(.horizontal, 16)
-                .padding(.top, 4)
-
-                shelves
-                Color.clear.frame(height: 90)        // clear of the floating tab bar
             }
-            .padding(.top, 6)
+            .padding(.horizontal, 16)
+            .padding(.top, 4)
+            .padding(.bottom, 10)
+            // Opaque, or the shelves show through it as ghost text.
+            .background(Brand.ground)
         }
         .brandGround()
         // Explore's list face, named the way its map face is ("explore-map"),

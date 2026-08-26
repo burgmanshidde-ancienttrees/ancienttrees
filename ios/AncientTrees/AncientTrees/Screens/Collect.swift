@@ -38,6 +38,10 @@ struct CollectView: View {
     @State private var signingIn = false
     @State private var showAllStamps = false
     @State private var lane: Lane = .want
+    /// Debug scaffolding, the same family as -tab and -contribute: the sweep
+    /// cannot tap a gear, and a screen no argument can open is a screen that
+    /// ships unlooked at.
+    @State private var openSettings = ProcessInfo.processInfo.arguments.contains("-settings")
 
     // TWO lanes, not three. "Collected" and "Added by you" were separate until
     // 2026-08-24, when Hidde gave the rule that dissolves the split: "je
@@ -48,14 +52,17 @@ struct CollectView: View {
     enum Lane: Hashable { case want, seen }
 
     private var visited: [Tree] {
-        saved.entries.values.filter { $0.visitedAt != nil }
-            .sorted { ($0.visitedAt ?? .distantPast) > ($1.visitedAt ?? .distantPast) }
-            .compactMap { catalogue.tree($0.treeId) }
+        saved.collected.compactMap { catalogue.tree($0.treeId) }
     }
+    /// EVERY favourite, whether or not it has been stood in front of. The two
+    /// lanes are independent lists and a tree may be in both (Hidde,
+    /// 2026-08-26: "die dingen zijn twee verschillende lijsten en hebben niks
+    /// met elkaar te maken"). This used to exclude anything visited, which is
+    /// what made the heart and the collection look like one list in two
+    /// states: photograph a tree you had hearted and it silently left your
+    /// favourites.
     private var wishlist: [Tree] {
-        saved.entries.values.filter { $0.visitedAt == nil }
-            .sorted { $0.savedAt > $1.savedAt }
-            .compactMap { catalogue.tree($0.treeId) }
+        saved.favourites.compactMap { catalogue.tree($0.treeId) }
     }
     private var allVisited: [Tree] {
         saved.entries.values.filter { $0.visitedAt != nil }.compactMap { catalogue.tree($0.treeId) }
@@ -124,10 +131,29 @@ struct CollectView: View {
                     // (found 2026-08-25, the first time it was photographed).
                     // The ruling it follows is MapTab's: collect the deed,
                     // collected the state, collection the place. One root.
-                    Text("Collection")
+                    // "My trees", the same words as the tab, since 2026-08-26.
+                    Text("My trees")
                         .font(.screenTitle)
                         .foregroundStyle(Brand.ink)
                     Spacer(minLength: 8)
+                    // SETTINGS BEHIND A GEAR, top right, which is where
+                    // Polarsteps puts it on the page about you and where iOS
+                    // puts it everywhere (Hidde, 2026-08-26: "de my page
+                    // krijgt zoals bij polarsteps een icoon rechtsboven voor
+                    // je instellingen"). Profile stopped being a tab the same
+                    // day: an account is something you visit twice a year, and
+                    // a slot in a bar of three is the most expensive place in
+                    // the app.
+                    Button { navigator.push = .profile } label: {
+                        Image(systemName: "gearshape")
+                            .font(.system(size: 20, weight: .regular))
+                            .foregroundStyle(Brand.ink)
+                            .frame(width: 44, height: 44)
+                            .contentShape(.rect)
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel("Settings")
+                    .accessibilityIdentifier("mytrees-settings")
                     // Aligned on the TITLE'S CAP HEIGHT, not on its
                     // line box. A 34 point line box carries descender
                     // room that "Explore" never uses, so centring the
@@ -163,6 +189,19 @@ struct CollectView: View {
                 if allVisited.isEmpty {
                     mission
                 } else {
+                    // YOUR OWN MAP, at the top, which is the shape Hidde asked
+                    // for (2026-08-26: "de my trees pagina opbouwen als de my
+                    // pagina van polarsteps"). Polarsteps opens the page about
+                    // you with the globe carrying your own photographs, and
+                    // the numbers sit under it: the picture answers "where
+                    // have I been" before any figure does, and it is the only
+                    // thing on the screen that is yours rather than ours.
+                    //
+                    // Ours is flat rather than a globe, because our collection
+                    // is a walk across a city rather than a flight across the
+                    // world, and a globe showing four trees in one park is a
+                    // dot.
+                    yourMap
                     statsCard
                     stampCard
                 }
@@ -202,6 +241,9 @@ struct CollectView: View {
         .brandGround()
         // No literal tab-label heading; the mission or the score leads.
         .toolbar(.hidden, for: .navigationBar)
+        .task {
+            if openSettings { openSettings = false; navigator.push = .profile }
+        }
         .sheet(isPresented: $signingIn) {
             SignInSheet(reason: .keepCollection(saved.savedCount), localCount: saved.savedCount)
                 .environment(account).environment(saved)
@@ -257,6 +299,30 @@ struct CollectView: View {
     }
 
     // MARK: - the score
+
+    /// Every tree you have stood in front of, framed together.
+    @ViewBuilder private var yourMap: some View {
+        let points = allVisited.map { (lat: $0.lat, lng: $0.lng) }
+            + sightings.yoursOnly.map { (lat: $0.lat, lng: $0.lng) }
+        if !points.isEmpty {
+            Button { navigator.selectTab = 0 } label: {
+                CollectionMap(points: points)
+                    .frame(height: 190)
+                    .clipShape(.rect(cornerRadius: 16))
+                    .overlay(alignment: .bottomLeading) {
+                        Text(points.count == 1 ? "1 tree" : "\(points.count) trees")
+                            .font(.caption.weight(.semibold))
+                            .foregroundStyle(Brand.ink)
+                            .padding(.horizontal, 10).padding(.vertical, 6)
+                            .background(.regularMaterial, in: .capsule)
+                            .padding(12)
+                    }
+            }
+            .buttonStyle(.plain)
+            .accessibilityIdentifier("mytrees-map")
+            .accessibilityLabel("Your trees on the map")
+        }
+    }
 
     private var statsCard: some View {
         VStack(spacing: 14) {

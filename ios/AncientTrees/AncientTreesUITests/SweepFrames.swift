@@ -48,8 +48,8 @@ final class SweepFrames: XCTestCase {
         // drift apart: CLAUDE.md says they are one list and on 2026-08-25 they
         // were not, and over there the duplicate name meant this screen was
         // never photographed at all.
-        ("collection-tab", ["-tab=3"], nil),
-        ("profile",      ["-tab=4"], nil),
+        ("collection-tab", ["-tab=2"], nil),
+        ("profile",      ["-tab=2", "-settings"], nil),
         ("tree",         ["-tab=0", "-open=tree:ath_004"], nil),
         ("tree-nophoto", ["-tab=0", "-open=tree:vln_010"], nil),
         ("city",         ["-tab=0", "-open=city:aarhus"], nil),
@@ -60,9 +60,9 @@ final class SweepFrames: XCTestCase {
         ("signin",       ["-tab=0", "-signin"], "signin-sheet"),
         ("paywall",      ["-tab=0", "-paywall"], "paywall-sheet"),
         ("primer",       ["-tab=0", "-primer"], "primer"),
-        ("contribute",   ["-tab=4", "-contribute"], "contribute-sheet"),
-        ("feedback",     ["-tab=4", "-feedback"], "contribute-sheet"),
-        ("sponsor",      ["-tab=4", "-sponsor"], "sponsor-sheet"),
+        ("contribute",   ["-tab=2", "-contribute"], "contribute-sheet"),
+        ("feedback",     ["-tab=2", "-feedback"], "contribute-sheet"),
+        ("sponsor",      ["-tab=2", "-sponsor"], "sponsor-sheet"),
     ]
 
     /// The file appfit.py goes looking for.

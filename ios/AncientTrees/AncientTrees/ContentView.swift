@@ -30,6 +30,9 @@ struct ContentView: View {
     @State fileprivate var navigator = Navigator()
     @State fileprivate var units = Units()
     @State fileprivate var sightings = Sightings()
+    /// How many people saved each tree, counted by the server because a client
+    /// can only see its own rows. Empty until Hidde runs supabase/like-counts.sql.
+    @State fileprivate var saveCounts = SaveCounts()
     @State private var rootSheet: RootSheet?
     @State private var primerAnswered = false
     @State private var slowStart = false
@@ -46,13 +49,11 @@ struct ContentView: View {
     @State private var collectPath: [Route] = []
     /// Profile keeps its own stack like the others, or pushing from it would
     /// land in the collection's history and Back would leave the wrong tab.
-    @State private var profilePath: [Route] = []
 
     private func path(_ id: Int) -> Binding<[Route]> {
         switch id {
         case 0: $mapPath
         case 1: $explorePath
-        case 4: $profilePath
         default: $collectPath
         }
     }
@@ -61,7 +62,6 @@ struct ContentView: View {
         switch id {
         case 0: mapPath = []
         case 1: explorePath = []
-        case 4: profilePath = []
         default: collectPath = []
         }
     }
@@ -144,10 +144,12 @@ struct ContentView: View {
     private var tabSelection: Binding<Int> {
         Binding(get: { tab },
                 set: { new in
-                    // Spot is a button wearing a tab's clothes, the Strava and
-                    // Untappd centre pattern: selecting it presents the sheet
-                    // and the bar stays exactly where it was.
-                    if new == 2 { openCollect(); return }
+                    // The camera is no longer a slot to intercept: it sits on
+                    // its own disc beside the bar and calls openCollect()
+                    // directly (Hidde, 2026-08-26). -tab=2 kept meaning the
+                    // collect sheet for one release so older launch arguments
+                    // and deep links still land somewhere sensible.
+                    if new == TabBar.collectTag { openCollect(); return }
                     if new == tab { clearPath(new) }
                     tab = new
                 })
@@ -283,60 +285,15 @@ struct ContentView: View {
 
                     stack(1, cat) { HomeView(catalogue: cat, origin: origin) }
                         .tag(1)
-                        .tabItem { Label("Explore", systemImage: "magnifyingglass")
-                            .environment(\.symbolVariants, .none) }
 
-                    // Never actually shown: the selection binding intercepts 2
-                    // and presents the collect sheet instead.
-                    //
-                    // A CAMERA, not a plus (Hidde, 2026-08-23). It is the
-                    // symbol Seek and iNaturalist both use for this exact
-                    // act, and it is honest in a way a plus is not: a plus
-                    // promises adding a row to a list, while what you are
-                    // about to do is take a photograph and find out what you
-                    // are looking at. The word "Add" left the app with it;
-                    // adding is now simply what happens when the photograph
-                    // matches nothing of ours.
-                    Color.clear
+                    // MY TREES, which is the Collection and the account in one
+                    // place (Hidde, 2026-08-26). Polarsteps is the reference he
+                    // gave: your own page carries the map of what you have
+                    // done, your numbers, and your things, with settings behind
+                    // a gear in the corner rather than as a destination of its
+                    // own. Profile stopped being a tab the same day.
+                    stack(2, cat) { CollectView(catalogue: cat, origin: origin) }
                         .tag(2)
-                        // A slot like the other three, word and all, and it
-                        // differs only in what it does. I had drawn it as an
-                        // unlabelled filled circle on 2026-08-24, reaching for
-                        // the make-button that Instagram, TikTok and YouTube
-                        // carry. Hidde: "wat je nu maakt heb ik nog nooit als
-                        // conventie gezien", and he was right. In every one of
-                        // those apps that control sits in the MIDDLE of a bar
-                        // of five. Ours has four slots, so there is no middle,
-                        // and what is left is an invention wearing a reference
-                        // as an excuse. The convention memo covers exactly
-                        // this: caution and cleverness are both reasons to
-                        // copy, never to design your own control.
-                        .tabItem { Label("Collect", systemImage: "camera")
-                            .environment(\.symbolVariants, .none) }
-
-                    // "Collection" in the bar AND on the screen since
-                    // 2026-08-25. The note that stood here defended "Yours" in
-                    // the bar against "Your trees" on the screen as the
-                    // ordinary convention, and it was right while the tab was
-                    // called Yours; the tab was renamed a day later and this
-                    // stayed. The checkmark carries the meaning it always had,
-                    // the ones you
-                    // have ticked off.
-                    stack(3, cat) { CollectView(catalogue: cat, origin: origin) }
-                        .tag(3)
-                        .tabItem { Label("Collection", systemImage: "checkmark.circle")
-                            .environment(\.symbolVariants, .none) }
-
-                    // Profile as a tab of its own (Hidde, 2026-08-24). It was
-                    // a small avatar in two screens' headers, which is where
-                    // an account hides rather than lives; every app in the
-                    // references gives it a slot, and putting it here is also
-                    // what gives the bar the FIVE it needs for the camera to
-                    // have a middle.
-                    stack(4, cat) { ProfileView(catalogue: cat) }
-                        .tag(4)
-                        .tabItem { Label("Profile", systemImage: "person")
-                            .environment(\.symbolVariants, .none) }
                 }
                 // Outline icons that stay outline when selected, colour doing
                 // the selecting (Careem is Hidde's reference; Airbnb does the
@@ -349,7 +306,9 @@ struct ContentView: View {
                     // and back is the way out. An EmptyView reserves no space,
                     // so the page grows into it rather than leaving a gap.
                     if path(tab).wrappedValue.isEmpty {
-                        TabBar(selected: tab) { tabSelection.wrappedValue = $0 }
+                        TabBar(selected: tab,
+                               select: { tabSelection.wrappedValue = $0 },
+                               collect: { openCollect() })
                     }
                 }
                 .appObjects(self)
@@ -463,6 +422,10 @@ struct ContentView: View {
             // difference between an app that follows the database and an app
             // frozen at whatever shipped.
             Task { await store.refresh() }
+            // How many people saved each tree, once per launch and never per
+            // card: the whole table is a few thousand short rows and a request
+            // inside a scrolling list is a stutter.
+            Task { await saveCounts.loadOnce() }
             // Same debug scaffolding as -tab and -at: no simulator panel here,
             // so a screen only reachable by tapping cannot otherwise be looked
             // at before it ships.
@@ -632,5 +595,6 @@ extension View {
             .environment(root.navigator)
             .environment(root.units)
             .environment(root.sightings)
+            .environment(root.saveCounts)
     }
 }

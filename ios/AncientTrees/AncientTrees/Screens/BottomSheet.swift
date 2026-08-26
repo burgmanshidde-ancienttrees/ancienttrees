@@ -134,7 +134,17 @@ struct BottomSheet<Header: View, Content: View>: View {
                         .frame(maxWidth: .infinity, alignment: .top)
                 }
                 .scrollPosition(id: topItem ?? .constant(nil), anchor: .top)
-                .scrollDisabled(height == .peek || handingOff)
+                // THE RULE THE FILE ALREADY WRITES DOWN, now actually applied.
+                // "Below full height the sheet moves, the list does not
+                // scroll" was the documented arbitration and the code only
+                // disabled scrolling at peek, so at card and half an upward
+                // swipe scrolled a short list instead of raising the sheet.
+                // That is Hidde's fourth report of this control (2026-08-26:
+                // "de lijst op de map pagina kan niet soepel of helemaal niet
+                // naar boven worden gescrollt"): the list would not go up
+                // because the sheet would not, and the two feel like one
+                // broken thing under a thumb.
+                .scrollDisabled(height != .full || handingOff)
                 // At peek the content is a PREVIEW, not a control panel. Every
                 // finger that lands here belongs to the sheet, so a swipe up
                 // raises it instead of half-raising it and opening whatever
@@ -175,7 +185,10 @@ struct BottomSheet<Header: View, Content: View>: View {
                     .onChanged { value in
                         // Claim the gesture only in the cases the rules above
                         // describe. Everything else belongs to the list.
-                        if height == .peek {
+                        if height != .full {
+                            // Below full height the sheet owns the finger in
+                            // BOTH directions, which is what makes a swipe up
+                            // raise it the way it does in Apple Maps.
                             drag = value.translation.height
                         } else if (atTop || value.startLocation.y - (geo.size.height - h) < headerDepth)
                                     && value.translation.height > 0 {

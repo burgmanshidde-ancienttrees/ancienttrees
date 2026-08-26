@@ -39,6 +39,10 @@ struct TreeDetail: View {
     }
     @State private var removing = false
     @Environment(Navigator.self) private var navigator
+    /// The hero shows the map instead of the photograph. A swap rather than a
+    /// jump to the Map tab, so the reader keeps their place.
+    @State private var showingMap = false
+    @Environment(SaveCounts.self) private var saveCounts
 
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -74,6 +78,18 @@ struct TreeDetail: View {
                     // for it. CC BY and BY-SA oblige a credit; CC0 and public
                     // domain do not and get none. Moving it here is allowed
                     // ("in any reasonable manner"), removing it is not.
+                    // WHERE TO GO NEXT, as the same facets Explore already
+                    // browses by (Hidde, 2026-08-26: "onderaam de boom detail
+                    // pagina discover more in city, park or country,
+                    // verschillende knoppen, kijk naar deze conventie,
+                    // categorien die je ook op explore hebt staan").
+                    //
+                    // The convention is a row of chips rather than a list of
+                    // links: AllTrails closes a trail page with "Nearby trails"
+                    // and its own facet pills, Google Maps closes a place with
+                    // "More places nearby". A reading page that simply stops is
+                    // a dead end, and this page had one.
+                    if mine == nil { discoverMore }
                     if let p = tree.photo, let c = Photos.credit(p) {
                         Text(c)
                             .font(.system(size: 10))
@@ -131,13 +147,23 @@ struct TreeDetail: View {
                             Label("This tree is gone", systemImage: "xmark.seal")
                         }
                     } label: {
-                        Image(systemName: "ellipsis.circle")
+                        // A REPORT ICON, not three dots (Hidde, 2026-08-26:
+                        // "de drie puntjes moeten een report icoon worden").
+                        // He is right that the glyph was lying about the menu:
+                        // an ellipsis promises "more of the usual" and every
+                        // item under this one is a way of telling us something
+                        // is wrong. Apple's own Report a Concern uses this
+                        // symbol, so it is the convention rather than a pick.
+                        // The menu on a tree somebody added themselves keeps
+                        // its ellipsis, because that one really is edit and
+                        // remove.
+                        Image(systemName: "exclamationmark.bubble")
                             .font(.system(size: 17, weight: .semibold))
                             .frame(width: 44, height: 44)
                             .contentShape(.rect)
                     }
                     .accessibilityIdentifier("ours-menu")
-                    .accessibilityLabel("More")
+                    .accessibilityLabel("Report a problem")
                 }
             } else {
                 // AN ELLIPSIS, TOP RIGHT, which he asked me to check rather
@@ -228,7 +254,45 @@ struct TreeDetail: View {
     /// licence obliges a credit and this is it, in the ordinary place a caption
     /// goes, which is also what every image search and Wikipedia's own apps do.
     @ViewBuilder private var hero: some View {
-        if let m = mine, let shot = sightings.image(m) {
+        if showingMap {
+            // The swap's other face: the same box, the same corners, the map
+            // where the photograph was, and the photograph's own thumbnail in
+            // the corner to swap back. One control, two directions.
+            Color.clear
+                .frame(height: 240)
+                .overlay {
+                    MapInset(lat: tree.lat, lng: tree.lng, side: nil, height: 240)
+                }
+                .clipShape(.rect(cornerRadius: 16))
+                .overlay(alignment: .bottomTrailing) {
+                    Button { withAnimation(.easeInOut(duration: 0.22)) { showingMap = false } } label: {
+                        Image(systemName: "photo.fill")
+                            .font(.system(size: 16, weight: .semibold))
+                            .foregroundStyle(Brand.ink)
+                            .frame(width: 44, height: 44)
+                            .background(.regularMaterial, in: .circle)
+                            .padding(10)
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityIdentifier("tree-photo-swap")
+                    .accessibilityLabel("Show the photograph again")
+                }
+                .overlay(alignment: .topTrailing) {
+                    // The way to the FULL map is still here, because seeing it
+                    // in the corner of a page and standing on it are different
+                    // needs.
+                    Button { navigator.showOnMap = tree.id } label: {
+                        Image(systemName: "arrow.up.left.and.arrow.down.right")
+                            .font(.system(size: 14, weight: .semibold))
+                            .foregroundStyle(Brand.ink)
+                            .frame(width: 44, height: 44)
+                            .background(.regularMaterial, in: .circle)
+                            .padding(10)
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel("Open the full map")
+                }
+        } else if let m = mine, let shot = sightings.image(m) {
             // Your own photograph, from Documents rather than the network. The
             // same empty box with the picture laid over it as below, for the
             // same reason: an unbounded image drags the whole page sideways.
@@ -267,24 +331,90 @@ struct TreeDetail: View {
                     // that used to sit between the facts and the story and
                     // pushed the whole story below the fold.
                     .overlay(alignment: .bottomTrailing) {
-                        Button { navigator.showOnMap = tree.id } label: {
+                        // THE TWO SWAP PLACES (Hidde, 2026-08-26: "als je de
+                        // kleine map icoon aantikt dan wordt de grote foto de
+                        // map, en dan kan je dit heen en weer klikken"). It
+                        // used to leave the page for the Map tab, which threw
+                        // away where you were reading; a swap keeps you on the
+                        // tree and answers the same question. Airbnb does this
+                        // exact thing with its photo and its map.
+                        Button { withAnimation(.easeInOut(duration: 0.22)) { showingMap.toggle() } } label: {
                             MapInset(lat: tree.lat, lng: tree.lng).padding(10)
                         }
                         .buttonStyle(.plain)
+                        .accessibilityIdentifier("tree-map-swap")
                         .accessibilityLabel("Show this tree on the map")
                     }
 
             }
         } else {
-            heroFallback.frame(height: 200).clipShape(.rect(cornerRadius: 14))
-                .overlay(alignment: .bottomTrailing) {
-                    Button { navigator.showOnMap = tree.id } label: {
-                        MapInset(lat: tree.lat, lng: tree.lng).padding(10)
-                    }
-                    .buttonStyle(.plain)
-                    .accessibilityLabel("Show this tree on the map")
+            // The whole empty frame is the door to the camera, on a tree of
+            // ours that nobody has photographed (Hidde, 2026-08-26). The map
+            // inset stays on top of it and keeps its own tap, so the corner
+            // still goes to the map rather than to the camera.
+            Button {
+                if mine == nil { navigator.collectNearby = true }
+            } label: {
+                heroFallback.frame(height: 200).clipShape(.rect(cornerRadius: 14))
+            }
+            .buttonStyle(.plain)
+            .disabled(mine != nil)
+            .accessibilityIdentifier("tree-empty-photo")
+            .accessibilityLabel(mine == nil ? "Add a photograph of this tree" : "No photograph")
+            .overlay(alignment: .bottomTrailing) {
+                Button { navigator.showOnMap = tree.id } label: {
+                    MapInset(lat: tree.lat, lng: tree.lng).padding(10)
                 }
+                .buttonStyle(.plain)
+                .accessibilityLabel("Show this tree on the map")
+            }
         }
+    }
+
+    /// The way onward, in the reader's own widening circles: this city, the
+    /// park it stands in when it has one, its species, its country. Every one
+    /// of these is a page Explore already offers, so nothing new is invented
+    /// and nothing is a dead end.
+    @ViewBuilder private var discoverMore: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("Discover more")
+                .font(.brand(18, .bold, relativeTo: .headline))
+                .foregroundStyle(Brand.ink)
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 8) {
+                    discoverChip(tree.city, "building.2") { navigator.push = .city(tree.citySlug) }
+                    // No park chip: a tree carries no park and Route has no
+                    // park case, so the parks facet lives on the website only.
+                    // Inventing one here would mean guessing which park a set
+                    // of coordinates sits in, which is the kind of bridge
+                    // claim this project has a rule against.
+                    discoverChip(tree.commonName, "leaf") { navigator.push = .species(tree.commonName) }
+                    if !tree.country.isEmpty {
+                        discoverChip(tree.country, "globe.europe.africa") {
+                            navigator.push = .country(tree.country)
+                        }
+                    }
+                }
+                .padding(.horizontal, 2)
+            }
+        }
+        .padding(.top, 4)
+    }
+
+    private func discoverChip(_ title: String, _ symbol: String,
+                              _ go: @escaping () -> Void) -> some View {
+        Button(action: go) {
+            HStack(spacing: 6) {
+                Image(systemName: symbol).font(.caption)
+                Text(title).font(.subheadline.weight(.medium)).lineLimit(1)
+            }
+            .foregroundStyle(Brand.ink)
+            .padding(.horizontal, 14)
+            .frame(height: 44)
+            .background(Capsule().fill(Brand.moss.opacity(0.10)))
+            .contentShape(.capsule)
+        }
+        .buttonStyle(.plain)
     }
 
     /// The tree, and whatever else of ours is within a few streets, because the
@@ -302,9 +432,21 @@ struct TreeDetail: View {
             VStack(spacing: 10) {
                 SpeciesMark(species: tree.species, color: .white.opacity(0.9))
                     .frame(width: 78, height: 78)
-                Text("No photograph of this tree yet.")
-                    .font(.caption2).foregroundStyle(.white.opacity(0.8))
-                    .multilineTextAlignment(.center).padding(.horizontal, 28)
+                // TAPPABLE, because the empty frame is the most obvious place
+                // to offer one (Hidde, 2026-08-26: "als er geen foto is kan je
+                // uberhaupt de hele foto aanklikken in de detail pagina en
+                // vanuit daar het veranderen"). The words say so rather than
+                // leaving it to be discovered.
+                // Two short lines rather than one long one, and kept clear of
+                // the map inset that sits in the bottom right corner: at 375
+                // points the single sentence ran straight under it and read as
+                // "Tap to add you" (seen on the sweep, 2026-08-26).
+                Text(mine == nil ? "No photograph yet.\nTap to add yours."
+                                 : "No photograph of this tree yet.")
+                    .font(.caption2).foregroundStyle(.white.opacity(0.85))
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 28)
+                    .padding(.trailing, 60)
             }
         }
     }
@@ -317,7 +459,39 @@ struct TreeDetail: View {
             if tree.species.isEmpty, mine != nil {
                 blank("What kind of tree is it?", .species)
             } else {
-                Text(tree.species).font(.subheadline).foregroundStyle(Brand.inkSoft)
+                // THE SPECIES IS A DOOR (Hidde, 2026-08-26: "een link van de
+                // specie van een boom bovenin de detail pagina zodat mensen
+                // meer daarover kunnen lezen"). It was a caption under the
+                // name, which is where a fact goes to be read once; every
+                // reference app makes the classification tappable, because
+                // "what IS this" is the second question after "what is this
+                // one". Underlined rather than coloured: the page has one
+                // green already and a second would read as a button.
+                Button { navigator.push = .species(tree.commonName) } label: {
+                    HStack(spacing: 4) {
+                        Text(tree.species)
+                        Image(systemName: "chevron.right").font(.caption2)
+                    }
+                    .font(.subheadline)
+                    .foregroundStyle(Brand.inkSoft)
+                }
+                .buttonStyle(.plain)
+                .accessibilityIdentifier("tree-species-link")
+                .accessibilityHint("Read about this species")
+            }
+            // HOW MANY PEOPLE KEPT IT, and only once somebody has (Hidde,
+            // 2026-08-26: "aantal likes tellen en terug geven, pas van 1
+            // tellen"). A zero on a page is worse than nothing: it says
+            // nobody wanted this, about a tree we chose to publish. The count
+            // comes from the server, because a phone can only see its own
+            // saves; until the SQL behind it exists there is simply no number.
+            if mine == nil, let n = saveCounts.count(tree.id) {
+                Label(n == 1 ? "1 person keeps this tree"
+                             : "\(n) people keep this tree",
+                      systemImage: "heart.fill")
+                    .font(.caption)
+                    .foregroundStyle(Brand.inkSoft)
+                    .accessibilityIdentifier("tree-save-count")
             }
             // WHERE it is, with the width of the page to say it in.
             //
@@ -564,6 +738,9 @@ struct TreeDetail: View {
         .brandCard(12)
     }
 
+    /// Ours, and nobody has photographed it.
+    private var needsPhoto: Bool { mine == nil && tree.photo == nil }
+
     private var actionBar: some View {
         HStack(spacing: 10) {
             // The hand-off, and it is a REVERSAL of 2026-08-24, when this
@@ -582,10 +759,32 @@ struct TreeDetail: View {
             //
             // Our walk screen keeps the multi-stop case, which is where the live
             // routing built earlier today belongs anyway.
+            // "Take me there" while it is alone, "Take me" once the photo
+            // button stands beside it: three controls at 375 points wrapped
+            // the label onto two lines, which reads as a layout fault rather
+            // than as a short word (seen on the sweep, 2026-08-26).
             Button { Directions.walk(lat: tree.lat, lng: tree.lng) } label: {
-                Label("Take me there", systemImage: "arrow.turn.up.right")
+                Label(needsPhoto ? "Take me" : "Take me there",
+                      systemImage: "arrow.turn.up.right")
+                    .lineLimit(1)
             }
             .buttonStyle(BrandButtonStyle())
+
+            // ADD A PHOTOGRAPH, right beside the navigate button, and only on
+            // a tree that has none (Hidde, 2026-08-26: "als er geen foto is
+            // moet er een hele grote add foto cta staan op de boom detail
+            // pagina, naast de navigeer me naar knop"). 71 of our cities carry
+            // no photograph at all, and the person reading this page may be
+            // standing in front of the answer. The card further up explains;
+            // this is the control, in the place where a control is looked for.
+            if needsPhoto {
+                Button { navigator.collectNearby = true } label: {
+                    Label("Add a photo", systemImage: "camera.fill")
+                        .lineLimit(1)
+                }
+                .buttonStyle(BrandButtonStyle())
+                .accessibilityIdentifier("tree-add-photo")
+            }
 
             SaveHeart(tree: tree, look: .inBar)
         }
