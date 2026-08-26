@@ -18,7 +18,7 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { SPONSOR_URL } from "../lib/site-config";
 import { submitLink } from "../lib/tree-copy";
-import { pressNumbers } from "../lib/press";
+import { pressNumbers, nf } from "../lib/press";
 import { imgSrcset, creditRequired, creditName } from "../lib/images";
 import { getCollection } from "astro:content";
 
@@ -83,7 +83,7 @@ const headExtra = (live ? "" : '<meta name="robots" content="noindex">') + ldScr
   )}
 
   <div class="prose-block">
-    <p>This is one of {n.trees} trees on the map, in {n.cities} cities. Each one was found, checked against at least two independent sources, placed on the map by hand and written up, because a tree nobody can find and nobody can trust is not worth the walk. That is days of work per city, and the map behind it arrives as a bill every month whether anybody visits or not.</p>
+    <p>This is one of {nf(n.trees)} trees on the map, in {n.cities} cities. Each one was found, checked against at least two independent sources, placed on the map by hand and written up, because a tree nobody can find and nobody can trust is not worth the walk. That is days of work per city, and the map behind it arrives as a bill every month whether anybody visits or not.</p>
 
     {live && (
       <p>

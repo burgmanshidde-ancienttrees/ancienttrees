@@ -107,3 +107,10 @@ export function pressNumbers(): PressNumbers {
     sourced: entries.filter((e) => (e.tree.verified_sources?.length ?? 0) > 0).length,
   };
 }
+
+/** A count as a reader reads it: 1,841 rather than 1841. Four figures in
+ * running prose without a separator reads as a year, which is exactly the
+ * wrong thing on pages full of dates. */
+export function nf(n: number): string {
+  return n.toLocaleString("en-US");
+}
