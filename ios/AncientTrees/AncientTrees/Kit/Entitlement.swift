@@ -13,8 +13,13 @@
 //    does not appear on launch, and there is no "3 free trails this month".
 // 3. THE ASK NAMES WHAT YOU WERE DOING. "Download Palermo" converts; "Go Plus"
 //    does not.
-// 4. ONE REAL TASTE. The first walk is free, so the thing being sold has been
-//    felt rather than described.
+// 4. NO FREE TASTE, and that is his call rather than the funnel's. This point
+//    used to read "the first walk is free, so the thing being sold has been
+//    felt", and it was never true in code: allows() has returned isPlus for
+//    every feature since the day it was written. Hidde closed the question on
+//    2026-08-24 ("ik zou alle wandelingen achter plus zetten"), so the comment
+//    was describing a softening of his pricing that he had already refused.
+//    Corrected 2026-08-26 after it nearly sent a session to "fix" the lock.
 //
 // Hidde's line, DECISIONS.md 2026-08-18: EUR 19.95 a year with a 7-day trial,
 // and four things behind it, Season Radar alerts, curated walks, a personal log
@@ -61,13 +66,13 @@ public enum Feature: String, Sendable {
     public var detail: String {
         switch self {
         case .offlineDownload:
-            "Every tree, story and map tile stored on your phone, so it works with no signal at all."
+            "Every tree and every story stored on your phone, so it works with no signal at all."
         case .walkBeyondFirst:
             "Hand-picked routes that string the best trees of a city into one afternoon."
         case .badges:
             "A drawn badge for every species, city and country you have stood in front of."
         case .photoUpload:
-            "Photograph a tree nobody has photographed yet, and put it on its page."
+            "Photograph a tree nobody has photographed yet, and offer it for its page."
         case .seasonAlerts:
             "A quiet nudge in the week a tree near you is at its best."
         case .sponsor:

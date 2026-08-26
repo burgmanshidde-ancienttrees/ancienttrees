@@ -115,14 +115,56 @@ struct WalkMode: View {
     /// question rather than "shall I take you there". Deliberately loose.
     private func withinReach(_ t: Tree) -> Bool { metres(t) <= 120 }
 
+    /// SHOW THE WHOLE WALK WHEN IT OPENS.
+    ///
+    /// This used to centre on one tree at a fixed 1600 metre span, which is
+    /// narrower than most walks: opening Plantage put the route running off the
+    /// left edge with its trees piled bottom right, so the first thing you saw
+    /// of the walk you had just chosen was a corner of it. A walk is a shape,
+    /// and the question at this moment is "is this an afternoon I want", which
+    /// you cannot answer from a corner.
+    ///
+    /// Only the opening camera. TreeMap applies focus and span once when it
+    /// makes the map, so panning, following and the recentre button are all
+    /// untouched, and once you are walking the next tree is what the bottom bar
+    /// is for.
+    private var walkPoints: [CLLocationCoordinate2D] {
+        let stops = trees.map { CLLocationCoordinate2D(latitude: $0.lat, longitude: $0.lng) }
+        return route.count > 1 ? route + stops : stops
+    }
+
+    private var openingCentre: CLLocationCoordinate2D? {
+        let pts = walkPoints
+        guard !pts.isEmpty else { return nil }
+        let lats = pts.map(\.latitude), lngs = pts.map(\.longitude)
+        guard let a = lats.min(), let b = lats.max(),
+              let c = lngs.min(), let d = lngs.max() else { return nil }
+        return .init(latitude: (a + b) / 2, longitude: (c + d) / 2)
+    }
+
+    private var openingSpan: CLLocationDistance {
+        let pts = walkPoints
+        guard pts.count > 1,
+              let a = pts.map(\.latitude).min(), let b = pts.map(\.latitude).max(),
+              let c = pts.map(\.longitude).min(), let d = pts.map(\.longitude).max()
+        else { return 1600 }
+        let midLat = (a + b) / 2
+        let tall = (b - a) * 111_320
+        let wide = (d - c) * 111_320 * cos(midLat * .pi / 180)
+        // A quarter more than the walk itself, so nothing sits on the bezel,
+        // and never so tight that a compact walk fills the screen with one
+        // street. 400 m is about a city block in view either side.
+        return max(400, max(tall, wide) * 1.25)
+    }
+
     var body: some View {
         ZStack(alignment: .bottom) {
             TreeMap(trees: trees,
-                    focus: (next ?? trees.first).map { .init(latitude: $0.lat, longitude: $0.lng) },
+                    focus: openingCentre,
                     route: route,
                     routeIsReal: (walk.shape?.count ?? 0) > 1 || (liveRoute?.count ?? 0) > 1,
                     showsRecentre: true,
-                    spanMeters: 1600,
+                    spanMeters: openingSpan,
                     clusters: false,
                     selected: $selected)
                 .ignoresSafeArea()
