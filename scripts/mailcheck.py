@@ -219,6 +219,56 @@ def repeated_ask_hits(text, body):
     return hits
 
 
+def batch_address_hits(path, text):
+    """Every batch is checked against the sent log and the do-not-contact
+    list HERE, not only at send time. Hidde, 2026-08-26, after asking by hand
+    whether batch 009 re-mailed anyone: "doe je deze check zelf - dan hoef ik
+    het vervolgens niet meer te vragen." outreach_send.py already refuses
+    repeats and DNC addresses, but that guard fires at the last moment, after
+    he has read and approved forty texts; this one fires when the batch is
+    written, which is when a duplicate is cheap to fix."""
+    import json
+    import os
+    if not path.endswith(".json"):
+        return []
+    try:
+        batch = json.loads(text)
+        mails = batch.get("mails") or []
+    except Exception:
+        return []
+    if not mails:
+        return []
+    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    try:
+        doc = json.load(open(os.path.join(root, "data", "outreach-sent.json")))
+    except Exception:
+        return []
+    sent = {}
+    for row in doc.get("sent", []):
+        addr = (row.get("to") or "").lower()
+        if addr:
+            sent.setdefault(addr, row.get("date", "?"))
+    dnc = {str(a).lower().strip() for a in doc.get("do_not_contact", [])}
+    hits, seen = [], {}
+    for m in mails:
+        to = (m.get("to") or "").lower().strip()
+        if not to:
+            continue
+        label = m.get("outlet", to)
+        if to in seen:
+            hits.append(("SAME ADDRESS TWICE IN ONE BATCH", to,
+                         "%s and %s" % (seen[to], label)))
+        seen.setdefault(to, label)
+        if to in dnc or "@" + to.split("@")[-1] in dnc:
+            hits.append(("DO NOT CONTACT", to,
+                         "%s asked to be left alone; never overridden" % label))
+        elif to in sent and len((m.get("resend_reason") or "").split()) < 5:
+            hits.append(("ALREADY MAILED (%s)" % sent[to], to,
+                         "%s; a deliberate follow-up needs a resend_reason of "
+                         "five words or more" % label))
+    return hits
+
+
 def body_of(text):
     parts = BODY_SPLIT.split(text, maxsplit=1)
     return parts[1] if len(parts) > 1 else text
@@ -248,6 +298,7 @@ def check(path):
     if BODY_SPLIT.search(text):
         hits += lowercase_hits(body)
     hits += repeated_ask_hits(text, body)
+    hits += batch_address_hits(path, text)
     # A batch that records its possessive claims as verified (the session read
     # each recipient's why_them and owns_the_trees before writing the key) has
     # answered what this check asks; without the key the flags stand, so a
