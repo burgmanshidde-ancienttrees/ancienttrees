@@ -662,7 +662,7 @@ enum MapLayers {
             let f = MLNPointFeature()
             f.coordinate = .init(latitude: t.lat, longitude: t.lng)
             f.title = t.name
-            let peaking = t.peak?.isNow(month) ?? false
+            let peaking = Launch.season && (t.peak?.isNow(month) ?? false)
             // The glyph is the SPECIES, always, not a generic tree icon: a
             // ginkgo pin looks like a ginkgo before you tap it. It works for
             // every tree, because every tree carries a species while only a

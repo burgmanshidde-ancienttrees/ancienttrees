@@ -1,113 +1,22 @@
 ---
-// The bloom page: what is at its best right now, as a plain list. Ported
-// from build_in_season_page(), build_site.py:5403-5484. Approved by Hidde
-// 2026-07-26 ("een in bloom pagina, en een lijst prima"). Static is honest
-// here: the site rebuilds many times a day, so the current month stays
-// current.
-import { getCollection } from "astro:content";
-import Base from "../layouts/Base.astro";
-import Breadcrumbs from "../components/Breadcrumbs.astro";
-import { cityIsRenderable, treeIsRenderable, treeSlugsForCity, type CityEntry, type Tree } from "../lib/trees";
-import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
-import { fitTitle } from "../lib/title";
-import { byCityListOrderEntry } from "../lib/city-order";
-
-function esc(s: string): string {
-  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
-}
-
-const MONTH_FULL = [
-  "January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December",
-];
-
-const renderable = byCityListOrderEntry((await getCollection("cities")).filter(cityIsRenderable));
-const now = new Date().getMonth() + 1;
-const curName = MONTH_FULL[now - 1];
-
-interface Entry {
-  city: string;
-  cslug: string;
-  cityEntry: CityEntry;
-  tree: Tree;
-  label: string;
-}
-
-function entriesFor(month: number): Entry[] {
-  const out: Entry[] = [];
-  for (const entry of renderable) {
-    for (const t of entry.data.trees) {
-      const bt = t.best_time;
-      if (bt?.months?.includes(month) && treeIsRenderable(t)) {
-        out.push({ city: entry.data.city, cslug: entry.id, cityEntry: entry, tree: t, label: bt.label ?? "" });
-      }
-    }
-  }
-  return out;
-}
-
-const current = entriesFor(now);
-const currentIds = new Set(current.map((e) => e.tree.id));
-const upcoming: [string, Entry[]][] = [];
-for (const ahead of [1, 2]) {
-  const m = ((now - 1 + ahead) % 12) + 1;
-  const ups = entriesFor(m).filter((e) => !currentIds.has(e.tree.id));
-  if (ups.length) upcoming.push([MONTH_FULL[m - 1], ups]);
-}
-
-function rows(items: Entry[]): string {
-  const byCity = new Map<string, Entry[]>();
-  for (const e of items) {
-    if (!byCity.has(e.cslug)) byCity.set(e.cslug, []);
-    byCity.get(e.cslug)!.push(e);
-  }
-  const groups = [...byCity.values()].sort(
-    (a, b) => a[0].city.localeCompare(b[0].city) || a[0].cslug.localeCompare(b[0].cslug),
-  );
-  return groups
-    .map((es) => {
-      const { city, cslug, cityEntry } = es[0];
-      const tslugs = treeSlugsForCity(cityEntry);
-      const lis = es
-        .map((e) => `<li><a href="/${cslug}/${tslugs[e.tree.id]}">${esc(e.tree.name)}</a>, ${esc(e.label)}</li>`)
-        .join("");
-      return `<h3><a href="/${cslug}">${esc(city)}</a></h3><ul class="link-list">${lis}</ul>`;
-    })
-    .join("");
-}
-
-const n = current.length;
-const canonical = `${BASE_URL}/in-season`;
-const title = fitTitle([`Trees at Their Best in ${curName}`, `In Season: Trees at Their Best in ${curName}`], canonical);
-const answer = current.length
-  ? `${n} of the mapped trees are at their best in ${curName}: this is the list, city by city, with what you will actually see.`
-  : `No mapped tree peaks in ${curName}, honestly. Here is what is coming next, so you can plan the walk that is worth it.`;
-const description = (`Which remarkable old trees are worth visiting in ${curName}? ` + answer).slice(0, 155);
-
-const crumbItems: [string, string | null][] = [["Home", BASE_URL], ["In season", null]];
-
-const listElements = current.map((e, i) => {
-  const tslugs = treeSlugsForCity(e.cityEntry);
-  return { "@type": "ListItem", position: i + 1, name: e.tree.name, url: `${BASE_URL}/${e.cslug}/${tslugs[e.tree.id]}` };
-});
-const graph = [
-  ...SITE_SCHEMA,
-  { "@type": "ItemList", name: `Trees at their best in ${curName}`, itemListElement: listElements },
-  breadcrumbSchema(crumbItems, canonical),
-];
+// The bloom page, retired to a redirect on 2026-08-26. The season story left
+// the public site (DECISIONS.md: "the whole season story is Plus, the fact
+// included"); the app's Plus is where it resurfaces. The URL keeps resolving
+// because a public URL never dies (hard rule 3), and the meta refresh is the
+// pattern qa.py's orphan check already recognises as a deliberate stub.
+const target = "/explore";
 ---
-<Base title={title} description={description} canonical={canonical} headExtra={ldScript(graph)}>
-<main class="content-page">
-  <Breadcrumbs items={crumbItems} />
-  <h1>Trees at their best in <em>{curName}</em></h1>
-  <p class="answer-first">{answer}</p>
-  {current.length > 0 && <Fragment set:html={rows(current)} />}
-  {upcoming.map(([mname, ups]) => (
-    <Fragment>
-      <h2>Coming in {mname}</h2>
-      <Fragment set:html={rows(ups)} />
-    </Fragment>
-  ))}
-  <p class="suggest">Every peak here is species-real: blossom, catkins or autumn colour, never filler. Trees that look the same all year, the yews and the evergreens, are honestly absent.</p>
-</main>
-</Base>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="refresh" content={`0;url=${target}`} />
+    <link rel="canonical" href="https://ancienttrees.app/explore" />
+    <title>Ancient Trees</title>
+  </head>
+  <body>
+    <p>This page has moved to <a href={target}>the map</a>.</p>
+  </body>
+</html>

@@ -84,7 +84,8 @@ struct MapTab: View {
     /// pictures whether an afternoon is worth it. Re-sorting here would throw
     /// that away.
     private var walksHere: [Walk] {
-        catalogue.walks.compactMap { w -> (Walk, Double)? in
+        guard Launch.walks else { return [] }
+        return catalogue.walks.compactMap { w -> (Walk, Double)? in
             // NEAREST STOP, not the first one. Judging a walk by its first tree
             // made it flicker in and out while the list was scrolled, because
             // scrolling the list moves the map, and a walk whose first stop

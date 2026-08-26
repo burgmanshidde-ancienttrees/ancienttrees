@@ -271,7 +271,8 @@ const favShelf =
 // better than the four-card grids below it, so every shelf below the fold is
 // built the same way, and the two that stood there (season, collections) are
 // replaced by the three entry points the data has already earned: countries,
-// species, parks. Season keeps its own act block and /in-season; collections
+// species, parks. The season act block and /in-season left on 2026-08-26
+// (the season story is Plus, DECISIONS.md); collections
 // keep their directory column. One builder, so the shelves cannot drift
 // apart again.
 function wideShelf(heading: string, allHref: string, allLabel: string, cards: string[]): string {
@@ -441,21 +442,6 @@ const scripts = SEARCH_WIDGET_JS;
       <span class="map-pin" style="left:85%;top:28%"><Fragment set:html={walkPin4} /><span class="n">4</span></span>
       <figcaption class="hav-chip"><span><strong>Afternoon walk</strong>4 trees &middot; 5.2 km &middot; about 1h 10m</span></figcaption>
     </figure>
-  </div>
-  <div class="home-act">
-    <div class="home-act-copy">
-      <span class="home-act-verb">Season</span>
-      <h2>See them at their best.</h2>
-      <p>Every tree has a moment: the ginkgo's golden week, ten days of blossom, a month of catkins. The radar shows what is at its best around you right now, so you go at exactly the right time.</p>
-    </div>
-    <div class="home-act-visual season-card">
-      <h5 class="season-now">At their best in November</h5>
-      <div class="sr-row"><span class="sp"><Fragment set:html={radarIcon1} /></span><span class="sr-body"><b>The Zenpukuji Ginkgo</b><i>turning deep gold</i></span><span class="hav-badge-inline">now</span></div>
-      <div class="sr-row"><span class="sp"><Fragment set:html={radarIcon2} /></span><span class="sr-body"><b>Meiji Jingu Gaien Avenue</b><i>the whole street gold</i></span><span class="hav-badge-inline">now</span></div>
-      <div class="sr-row dim"><span class="sp dim"><Fragment set:html={radarIcon3} /></span><span class="sr-body"><b>Kameido Tenjin Wisteria</b><i>hanging in flower</i></span><span class="sr-when">May</span></div>
-      <div class="sr-months"><Fragment set:html={radarMonths} /></div>
-      <p class="sr-link"><a href="/in-season">See what is at its best this month &rarr;</a></p>
-    </div>
   </div>
   <div class="home-act">
     <div class="home-act-copy">

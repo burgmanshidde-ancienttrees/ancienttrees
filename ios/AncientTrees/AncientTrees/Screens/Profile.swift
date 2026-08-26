@@ -250,6 +250,7 @@ struct ProfileView: View {
                     .contentShape(.rect)
                 }
                 .buttonStyle(.plain)
+                if Launch.plus {
                 Divider().padding(.leading, 48)
                 LockedRow(feature: .seasonAlerts, lockGlyph: false) {
                     HStack(spacing: 12) {
@@ -282,6 +283,7 @@ struct ProfileView: View {
                         Chip(text: "Plus", tint: Brand.gold)
                     }
                     .padding(.horizontal, 16).frame(height: 48)
+                }
                 }
                 // The "What Plus will be" row is gone (Hidde, 2026-08-25: "je
                 // mag de what is plus sectie in het profiel weghalen"). It was

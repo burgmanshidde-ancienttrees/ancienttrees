@@ -11,6 +11,51 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 <!-- archive-index -->
 
 
+## 2026-08-26 (session) - The launch takes shape: free, clean, and everything Plus behind one switch
+
+The strategy day. Hidde ruled the launch package in one long conversation and
+it is recorded in DECISIONS.md (2026-08-26) and drafts/PLUS_THINKING.md: the
+app launches free with no reference to Plus, sponsor goes live on both
+surfaces, every tree stays free, the walks and the WHOLE season story
+(fact included) are Plus, and the free scope freezes at launch. No
+forever-free promise may appear anywhere; copycheck.py now refuses one in app
+strings the way qa.py already does for the site.
+
+SHIPPED, all screens looked at on the simulator, appfit clean:
+
+- **A feedback button in the profile** ("vertel ons welke features je zou
+  willen toevoegen"): opens the contribute form in a feedback mode, sends as
+  kind `feedback` from `app-profile`, sign-in gated. The wishes it collects
+  are the material the next Plus features get designed from.
+- **The launch switchboard, Kit/Launch.swift**: walks, season and Plus are
+  hidden by default and nothing is deleted. Home's walk shelf, the map's walk
+  discovery, the gold peaking pins with their breathing halo, and the two
+  "Coming soon Plus" profile rows all sit behind -show-* arguments that the
+  sweep and the tests can still open. Deep links stay live, so the walk UI
+  tests keep testing what Plus will one day show.
+- **The season story left the public site**: seasonBlock and the at-its-best
+  chips return empty behind SEASON_PUBLIC=false in phenology.ts, the homepage
+  season act is gone, explore lost its gold pins and season copy, /in-season
+  is a meta-refresh stub to /explore (the URL keeps resolving, hard rule 3),
+  and the nav and 404 no longer point there. The feed still carries best_time
+  and the phenology per species: the app's Plus inherits all of it.
+- **The city walks pages became teasers**: each walk keeps its name, numbers
+  and first tree; the stop-by-stop route and the GPX promo are gone, because
+  a page that hands out the whole route undercuts the paid product.
+
+Also today, outside the launch work: batch 009 went out (40 holders of our
+trees, in his own letter, each possessive claim verified; Trompenburg caught
+claiming trees three kilometres away), the reply to Prazske stromy was sent
+on his word, four new inbox replies were recorded, health.py learned to
+notice a night shift that dies in seconds with conclusion success (21 runs,
+08-24 to 08-26, the usage window), and mailcheck now refuses a batch that
+re-mails or double-mails an address.
+
+FOR HIDDE, the two things only you can do for the launch: the sponsor IAP
+product in App Store Connect, and a sponsor provider for the website (Ko-fi
+or Stripe; tiers are your pricing). Open product call still standing: the
+camera sign-in wall.
+
 ## 2026-08-26 (session) - Toronto +1, a Turkey Oak species page, two submissions closed out
 
 `visitors.py`: 412 visits, 670 page views over the last 7 days, roughly flat day to day (42-74). `prepare.py`: 42 cities staged for verify, 3 trees awaiting a writer (bari, blocked below the 4-tree floor, unchanged from prior sessions).
