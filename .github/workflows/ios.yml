@@ -139,6 +139,21 @@ jobs:
             CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" \
             > /tmp/xcodebuild.log 2>&1 || true
           grep -E "Test case|error:|warning: .*deprecat|\*\* (TEST|BUILD)" /tmp/xcodebuild.log || true
+          # SAY WHICH KIND OF RED THIS IS.
+          #
+          # A test target that does not COMPILE produces a result bundle with
+          # nothing in it, and the Verdict step below then reports "0 passed, 0
+          # failed" and fails. That is true and it is the wrong sentence: it
+          # reads as "somebody deleted the tests" when it means "the app does
+          # not build". It cost a session real time on 2026-08-26, chasing a
+          # missing suite that was never missing, while the actual cause sat in
+          # this log as one compiler error. Strict concurrency is the usual
+          # culprit, because a permissive local Debug build waves through what
+          # this job refuses (see SpeciesGlyph and handleTap in TreeMap.swift).
+          if grep -q "error:" /tmp/xcodebuild.log; then
+            echo "::error::The app did not compile, so no test could run. The compiler errors are above."
+            exit 1
+          fi
           # grep swallows the exit code, so ask xcodebuild again for the verdict.
           test -f /tmp/dd/Logs/Test/*.xcresult 2>/dev/null || true
 
