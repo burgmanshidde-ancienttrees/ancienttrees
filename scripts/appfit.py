@@ -103,11 +103,21 @@ SYSTEM_LABELS = {"Sheet Grabber", "Legal"}
 # search screen forever is a check people learn to skim.
 NOT_OURS = ("Map", "TabBar", "NavigationBar", "Keyboard", "KeyboardKey")
 
+# And Apple's onboarding overlays, which are not INSIDE the Keyboard element at
+# all: the QuickPath introduction ("Speed up your typing by sliding your finger
+# across the letters") hangs beside it, carrying a 224 by 21 Continue button that
+# fails the 44 point floor. It shows the first time a keyboard appears on a fresh
+# simulator, so it failed the gate on the CI runner (a fresh simulator every
+# time) and never once on this desk, which is the worst kind of finding: real in
+# the log, unreproducible where the fix would be made. Matched by an ancestor's
+# identifier because the button itself carries none (2026-08-26).
+NOT_OURS_IDS = ("UIContinuousPathIntroductionView",)
 
-def inside(el, types):
+
+def inside(el, types, idents=()):
     p = el.parent
     while p is not None:
-        if p.type in types:
+        if p.type in types or (idents and p.ident in idents):
             return True
         p = p.parent
     return False
@@ -287,7 +297,7 @@ def check(screen):
                 or el.label in SYSTEM_LABELS
                 or el.label in FRAMEWORK_CONTROLS):
             continue
-        if el.type not in VISIBLE or inside(el, NOT_OURS):
+        if el.type not in VISIBLE or inside(el, NOT_OURS, NOT_OURS_IDS):
             continue
         # Nothing of ours is half again as wide as the phone. What is, is
         # Apple's: the backdrop behind the tab bar measures 2196 points.
@@ -334,7 +344,7 @@ def check(screen):
         # those are all far wider than a thumb.
         if (el.type not in INVISIBLE and el.w > 48 and el.h > 4
                 and 0 <= el.x < W / 2 and not in_shelf(el)
-                and not inside(el, NOT_OURS) and not centred(el, W)):
+                and not inside(el, NOT_OURS, NOT_OURS_IDS) and not centred(el, W)):
             lefts[round(el.x * 2) / 2].append(el)
     if lefts:
         dominant = max(lefts, key=lambda x: len(lefts[x]))
