@@ -1375,3 +1375,14 @@ main.content-page.has-tree-bar { padding-bottom: 5.4rem; }
   border-color: #4a6b2a;
   color: #fff;
 }
+
+/* The sponsor page's one photograph. Wide, cropped, credit underneath, the
+   same shape a tree page's hero has, because it is the same kind of image
+   doing the same job: showing what the page is about before the reading
+   starts. */
+.sponsor-hero { margin: 1.25rem 0 1.5rem; }
+.sponsor-hero img { width: 100%; height: auto; max-height: 420px;
+  object-fit: cover; border-radius: 14px; display: block; }
+.sponsor-hero figcaption { font-size: 13px; color: var(--ink-soft);
+  margin-top: 0.5rem; line-height: 1.45; }
+.sponsor-page .go-btn { margin: 0.25rem 0 0.5rem; }

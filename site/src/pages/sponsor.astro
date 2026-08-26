@@ -19,13 +19,36 @@ import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema
 import { SPONSOR_URL } from "../lib/site-config";
 import { submitLink } from "../lib/tree-copy";
 import { pressNumbers } from "../lib/press";
+import { imgSrcset, creditRequired, creditName } from "../lib/images";
+import { getCollection } from "astro:content";
 
 const n = pressNumbers();
+
+// One photograph, and it is the oldest tree on the map that has one. A page
+// asking somebody to keep this going should show what it is for, and every
+// comparable page does exactly that: OpenStreetMap runs six photographs of
+// its map in real use. Ours is picked from the data rather than pinned by
+// hand, so it cannot rot when that tree's photo changes.
+const cities = await getCollection("cities");
+let hero: { url: string; license?: string | null; attribution?: string | null;
+            name: string; city: string; age: string } | null = null;
+let oldest = -1;
+for (const c of cities) {
+  for (const t of (c.data.trees ?? [])) {
+    const p: any = t.photo ?? {};
+    const min = Number(t.age_min ?? 0);
+    if (p.status === "approved" && p.url && min > oldest) {
+      oldest = min;
+      hero = { url: p.url, license: p.license, attribution: p.attribution,
+               name: t.name, city: c.data.city, age: t.age_estimate ?? "" };
+    }
+  }
+}
 const live = SPONSOR_URL.length > 0;
 const canonical = `${BASE_URL}/sponsor`;
 const crumbItems: [string, string | null][] = [["Home", BASE_URL], ["Sponsor", null]];
 
-const description = `Ancient Trees maps ${n.trees} remarkable old trees in ${n.cities} cities, each one checked and placed by hand. Sponsoring pays for what it costs to run.`;
+const description = `Ancient Trees is free to use and not free to make. Sponsoring pays the bill behind ${n.cities} cities and puts the next one on the map.`;
 
 const graph = [
   ...SITE_SCHEMA,
@@ -41,27 +64,52 @@ const graph = [
 const headExtra = (live ? "" : '<meta name="robots" content="noindex">') + ldScript(graph);
 ---
 <Base title="Sponsor Ancient Trees" description={description} canonical={canonical} headExtra={headExtra}>
-<main class="content-page">
+<main class="content-page sponsor-page">
   <Breadcrumbs items={crumbItems} />
   <h1>Sponsor this project</h1>
-  <p class="lede">Ancient Trees maps the oldest and most remarkable trees of the world's cities: where each one stands, how old it is, and why it is worth the walk. {n.trees} trees in {n.cities} cities so far. Sponsoring is what puts the next city on the map.</p>
+  <p class="lede">Ancient Trees is free to use. It is not free to make.</p>
+
+  {hero && (
+    <figure class="sponsor-hero">
+      <img {...imgSrcset(hero.url, [700, 1100, 1600], "(max-width: 800px) 100vw, 760px")}
+           alt={`${hero.name} in ${hero.city}`} loading="eager" />
+      <figcaption>
+        {hero.name}, {hero.city}{hero.age ? `, ${hero.age}` : ""}.
+        {creditRequired(hero.license) && creditName(hero.attribution)
+          ? ` Photo: ${creditName(hero.attribution)} (${hero.license})`
+          : ""}
+      </figcaption>
+    </figure>
+  )}
+
   <div class="prose-block">
-    <h2>What it pays for</h2>
-    <p>A city takes days rather than minutes, and that is the whole point of it: finding the trees a listicle never mentions, checking each one against at least two independent sources, placing every pin, and writing what makes that particular tree worth crossing town for. Sponsoring pays for the next one. It also pays the monthly bill behind the {n.cities} cities already on the map, which arrives whether anybody visits or not.</p>
+    <p>This is one of {n.trees} trees on the map, in {n.cities} cities. Each one was found, checked against at least two independent sources, placed on the map by hand and written up, because a tree nobody can find and nobody can trust is not worth the walk. That is days of work per city, and the map behind it arrives as a bill every month whether anybody visits or not.</p>
+
+    {live && (
+      <p>
+        <a class="go-btn" href={SPONSOR_URL} rel="noopener" data-ev="sponsor-open">Sponsor Ancient Trees</a>
+      </p>
+    )}
+
+    <h2>What your money does</h2>
+    <p>It puts the next city on the map. That is the honest unit: not a feature, not a server upgrade, a city that did not exist here last week and its trees that nobody had written down in one place. What is left over pays the monthly bill behind the {n.cities} already on it.</p>
 
     <h2>What you get for it</h2>
-    <p>Nothing extra, and that is the honest answer. Sponsoring is not a subscription and it buys no feature; it pays for the trees that are not on the map yet. If you would rather help without money, there are two things worth more than a few euros: <a href={submitLink("tree")}>send us a tree we are missing</a>, or tell us when something on a page is wrong. People who stood in front of the tree are how this map gets better.</p>
+    <p>Nothing extra, and that is deliberate. Sponsoring is not a subscription and it unlocks no feature. It pays for the trees that are not on the map yet.</p>
+
+    <h2>Helping without money</h2>
+    <p>Worth just as much, and some days worth more: <a href={submitLink("tree")}>send us a tree we are missing</a>, or tell us when something on a page is wrong. People who have stood in front of the tree are how this map gets better, and a wrong pin gets looked at the same day.</p>
 
     {live ? (
       <p>
-        <a class="go-btn" href={SPONSOR_URL} rel="noopener" data-ev="sponsor-open">Sponsor Ancient Trees</a>
+        <a class="go-btn" href={SPONSOR_URL} rel="noopener" data-ev="sponsor-open-foot">Sponsor Ancient Trees</a>
       </p>
     ) : (
       <p class="suggest">The sponsor page is being set up. In the meantime, <a href={submitLink("tree")}>a tree we are missing</a> helps just as much.</p>
     )}
 
     <h2>Who is behind it</h2>
-    <p>One person in the Netherlands, working on this most days, with the research and the map built out in the open. The project has never taken money from anyone, which is exactly why the bill is worth mentioning at all. Questions about any of it: <a href={submitLink("correction")}>send a message</a>.</p>
+    <p>One person in the Netherlands, working on this most days, with the research and the map built out in the open. The project has never taken money from anyone, which is why the bill is worth mentioning at all. Questions about any of it: <a href={submitLink("correction")}>send a message</a>.</p>
   </div>
 </main>
 </Base>
