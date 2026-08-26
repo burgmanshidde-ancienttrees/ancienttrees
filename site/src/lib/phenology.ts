@@ -15,6 +15,13 @@ function esc(s: string): string {
 
 export const MONTH_ABBR = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
+// The season story left the public site on 2026-08-26 (DECISIONS.md: "the
+// whole season story is Plus, the fact included"). Nothing below is deleted:
+// the data, the curves and the feed all stay, because the app's Plus is where
+// they resurface. This switch only silences what the WEB renders; flipping it
+// back is a decision recorded there, not a code cleanup.
+export const SEASON_PUBLIC = false;
+
 export const KIND_ICONS: Record<string, string> = {
   "bare silhouette":
     '<svg viewBox="0 0 20 20" fill="none" stroke="#8C8577" stroke-width="1.6" stroke-linecap="round"><path d="M10 18V9"/><path d="M10 11 6 6M10 11l4-5M10 8 7.5 3.5M10 8l2.5-4.5"/></svg>',
@@ -168,6 +175,7 @@ export function seasonCurve(tree: Tree): string {
 
 /** One short phrase for the city-page card. */
 export function bestTimeShort(tree: Tree): string {
+  if (!SEASON_PUBLIC) return "";
   const bt = tree.best_time;
   if (!bt || !bt.label) return "";
   const now = new Date().getMonth() + 1;
@@ -370,6 +378,7 @@ export function peakFor(tree: Tree, lat: number): PhenologyPeak | null {
 /** The year as one chart: how much there is to see, month by month. Falls
  * back to the best_time-only curve when the species has no phenology file. */
 export function seasonBlock(tree: Tree, lat: number): string {
+  if (!SEASON_PUBLIC) return "";
   const ph = phenologyFor(tree, lat);
   const bt = tree.best_time ?? {};
   const hasBt = Boolean(bt.label && bt.months && bt.months.length > 0);

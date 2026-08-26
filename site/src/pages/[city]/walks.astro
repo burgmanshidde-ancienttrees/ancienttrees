@@ -114,28 +114,24 @@ const otherCities = others.filter((o) => o.slug !== cslug).slice(0, 6);
       between trunks where we have not. Nothing here is a signposted trail.
     </p>
 
+    {/* The full stop-by-stop routes and the GPX promo left this page on
+        2026-08-26: the walks are the Plus product (DECISIONS.md, "every tree
+        free, the walks are Plus"), and a page that hands out the whole route
+        undercuts it. What stays is honest teaser material: each walk's name,
+        its numbers, and where it begins. The route data itself is untouched
+        in the feed; the app is where it lives from here. */}
     {walks.map((w) => (
       <section class="prose-block">
         <h2>{w.name}</h2>
         <p class="suggest">
           {w.trees.length} trees · about {w.km} km · {w.duration} on foot
         </p>
-        <ol>
-          {w.trees.map((t) => (
-            <li>
-              <a href={`/${cslug}/${tslugs[t.id]}`}>{t.name}</a>
-              {t.species ? <span> · {t.species}</span> : null}
-              {t.age_estimate ? <span> · {t.age_estimate}</span> : null}
-            </li>
-          ))}
-        </ol>
+        <p>
+          Begins at <a href={`/${cslug}/${tslugs[w.trees[0].id]}`}>{w.trees[0].name}</a>{w.trees[0].species ? ` (${w.trees[0].species})` : ""}.
+          The full route, tree by tree, is in the Ancient Trees app.
+        </p>
       </section>
     ))}
-
-    <div class="take-with-you">
-      <strong>Going there?</strong> <a href={`/${cslug}.gpx`} download>Download every tree in {cityName}</a>
-      as a map file and open it in Google Maps, Organic Maps or any hiking app. Works offline, no app needed.
-    </div>
 
     <p class="suggest">
       All of these stand in <a href={`/${cslug}`}>{cityName}</a>, where we map

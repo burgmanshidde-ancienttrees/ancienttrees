@@ -222,7 +222,7 @@ struct HomeView: View {
     /// countries, because both are ways of showing the same database that a
     /// map cannot.
     @ViewBuilder private var shelves: some View {
-        if !walksNear.isEmpty { walkShelf }
+        if Launch.walks, !walksNear.isEmpty { walkShelf }
 
         cityShelf
 

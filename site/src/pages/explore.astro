@@ -48,7 +48,7 @@ for (const entry of allCities) {
         cs: cslug,
         city: entry.data.city,
         age: t.age_estimate ?? "",
-        now: (t.best_time?.months?.includes(month) ? 1 : 0) as 0 | 1,
+        now: 0 as 0 | 1,
       },
     });
   }
@@ -129,8 +129,7 @@ const exploreProse = `
     <h2>What is on this map</h2>
     <p>${treeTotal} trees in ${cityRows.length} places across ${countries.length} countries, every one
     checked against at least two independent sources before it went on. Each pin opens a tree with its
-    age, its species, why it is worth standing in front of, and directions from where you are. Gold
-    pins are trees at their seasonal best this month.</p>
+    age, its species, why it is worth standing in front of, and directions from where you are.</p>
     <h2>The tightest walks</h2>
     <p>A map of scattered pins is a list. What makes an afternoon is trees close enough to walk
     between, so these are the places where the whole set fits in one stroll: ${walksHtml}.</p>
@@ -146,12 +145,12 @@ const exploreProse = `
     earns a pin by being remarkable, not by existing.</p>
     <p class="explore-prose-more">Browse another way: <a href="/cities">all cities</a>,
     <a href="/species">by species</a>, <a href="/collections">curated collections</a>, or
-    <a href="/in-season">what is at its best right now</a>.</p>
+    <a href="/parks">parks and gardens</a>.</p>
   </section>`;
 
 const canonical = `${BASE_URL}/explore`;
 const title = "Ancient Tree Map: every remarkable old tree, one map";
-const description = "The interactive map of every verified ancient tree on the site, with the ones at their seasonal best highlighted.";
+const description = "The interactive map of every verified ancient tree on the site, each pin a tree worth standing in front of.";
 
 const searchFormHtml = searchForm("explore", "ex-q", "ex-search");
 const mapScript = exploreMapScript(features, cityRows);
