@@ -564,30 +564,28 @@ struct CollectView: View {
                     // truncated in the middle, which rendered as "burgma...ail.com"
                     // on his own phone and reads as a bug rather than as a name.
                     // Signed out it says what the page is.
-                    // TEXT, not a button. See sheetHeader: this row is the
-                    // handle. Signed out it is still a way in, because there
-                    // is no gear-shaped door to an account you do not have.
-                    Group {
-                        if editable {
-                            Text(profiles.me?.display_name
-                                 ?? account.email?.split(separator: "@").first.map(String.init)
-                                 ?? "Your trees")
-                                .font(.brand(19, .bold, relativeTo: .title3))
-                                .foregroundStyle(Brand.ink)
-                                .lineLimit(1).truncationMode(.middle)
-                        } else {
-                            Button { signingIn = true } label: {
-                                Text("Your trees")
-                                    .font(.brand(19, .bold, relativeTo: .title3))
-                                    .foregroundStyle(Brand.ink)
-                            }
-                            .buttonStyle(.plain)
-                            .frame(minHeight: 44, alignment: .leading)
-                            .contentShape(.rect)
-                            .accessibilityIdentifier("mytrees-signin")
-                            .accessibilityLabel("Sign in")
+                    // TAPPABLE, and inert while you drag. Not a Button: see
+                    // tapUnlessDragged in BottomSheet.swift, which borrows what
+                    // UIScrollView does for every row in iOS. A Button here
+                    // fires on release even after a 40 point drag, because the
+                    // row is the width of the sheet and the finger never
+                    // leaves its bounds, and that is the whole complaint.
+                    Text(editable
+                         ? (profiles.me?.display_name
+                            ?? account.email?.split(separator: "@").first.map(String.init)
+                            ?? "Your trees")
+                         : "Your trees")
+                        .font(.brand(19, .bold, relativeTo: .title3))
+                        .foregroundStyle(Brand.ink)
+                        .lineLimit(1).truncationMode(.middle)
+                        // A NAME IS 23 POINTS TALL and Apple's floor is 44.
+                        .frame(minHeight: 44, alignment: .leading)
+                        .tapUnlessDragged {
+                            if editable { editingProfile = true } else { signingIn = true }
                         }
-                    }
+                        .accessibilityIdentifier("mytrees-edit-profile")
+                        .accessibilityAddTraits(.isButton)
+                        .accessibilityLabel(editable ? "Edit your profile" : "Sign in")
                     if account.isSignedIn {
                         // The two numbers Polarsteps runs beside the name. They
                         // are here from the first day rather than added later, so
