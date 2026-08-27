@@ -413,26 +413,30 @@ struct TreeDetail: View {
             // ours that nobody has photographed (Hidde, 2026-08-26). The map
             // inset stays on top of it and keeps its own tap, so the corner
             // still goes to the map rather than to the camera.
-            Button {
-                if mine == nil { navigator.collectNearby = true }
-            } label: {
-                // THE SAME SHAPE AS THE PHOTOGRAPHED HERO: a clear box of the
-                // right height with the content as an overlay, then clipped.
-                // An overlay never takes part in layout, so nothing inside can
-                // push the box wider, which is exactly what was happening here:
-                // the layout gate measured this button ending one point past
-                // the right edge on both phones, and one point is enough to
-                // fail a check that exists so nobody has to judge whether a
-                // point matters.
-                Color.clear
-                    .frame(height: 300)
-                    .overlay { heroFallback }
-                    .clipped()
-            }
-            .buttonStyle(.plain)
-            .disabled(mine != nil)
-            .accessibilityIdentifier("tree-empty-photo")
-            .accessibilityLabel(mine == nil ? "Add a photograph of this tree" : "No photograph")
+            // A TAP ON THE BOX, not a Button wrapping it, and the reason is
+            // the same one SheetLink was written for this afternoon.
+            //
+            // A Button's reported frame is the union of everything inside it,
+            // and this one holds two overlays, one of which is a UIKit map view
+            // whose layer sits on a half point. So the button measured 403.3 at
+            // x=-0.5 on a 402 point screen and failed the layout gate, while
+            // its own container measured 402.8: the box was never too wide, the
+            // element around it was. Half a point, invisible, and it kept the
+            // gate red, which kept the app's fresh-eyes review blind, because
+            // that review pulls its screenshots from the newest green run.
+            //
+            // The tap does exactly what the Button did and the element is
+            // declared by hand, so what VoiceOver reads is unchanged.
+            Color.clear
+                .frame(height: 300)
+                .overlay { heroFallback }
+                .clipped()
+                .contentShape(.rect)
+                .onTapGesture { if mine == nil { navigator.collectNearby = true } }
+                .accessibilityElement(children: .combine)
+                .accessibilityAddTraits(mine == nil ? .isButton : [])
+                .accessibilityIdentifier("tree-empty-photo")
+                .accessibilityLabel(mine == nil ? "Add a photograph of this tree" : "No photograph")
             .overlay(alignment: .bottomTrailing) {
                 // SWAPS IN PLACE, the same as on a tree that has a photograph
                 // (Hidde, 2026-08-26: "nu is de interactie weer dat je van dat
