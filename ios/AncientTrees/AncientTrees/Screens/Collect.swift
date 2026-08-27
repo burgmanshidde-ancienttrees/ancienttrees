@@ -155,28 +155,48 @@ struct CollectView: View {
         }
     }
 
-    /// Face, name, numbers and the one thing you make: the part that never
-    /// scrolls away, which is also what you grab to move the sheet.
+    /// Face and name, and NOTHING YOU CAN TAP. This is the grab handle, and a
+    /// handle with controls in it is a handle you fight.
+    ///
+    /// It carried the numbers and the Add-a-tree button too, which put a
+    /// 52-point green target and a tappable name in the one place this page is
+    /// dragged from. Hidde has now reported that twice, first as the editor
+    /// opening on a drag (2026-08-27: "als ik de slider gebruik opent het
+    /// bewerken van je profiel veel te makkelijk") and then, after only the
+    /// name was left tappable, as the same fault: "nog steeds kan ik niet
+    /// lekker de lijst openen op my trees - de naam wijzigen knop overheerst".
+    ///
+    /// The convention answers it rather than another tuning pass. Polarsteps,
+    /// Instagram and Strava all edit a profile from an EXPLICIT control, a gear
+    /// or an Edit button, and none of them make the name itself the door. Ours
+    /// is the gear in the corner, whose Settings screen has carried "Your name
+    /// and picture" all along. So the name is text again, everything else moved
+    /// into the list below, and the whole width of this row is grab.
     private var sheetHeader: some View {
-        VStack(spacing: 12) {
-            whoYouAre
-            statsRow
-            actionRow
-        }
-        .padding(.horizontal, 20)
-        .padding(.bottom, 8)
+        whoYouAre
+            .padding(.horizontal, 20)
+            .padding(.bottom, 12)
     }
 
     /// Your trees, and the picker that chooses which list.
     @ViewBuilder private var sheetBody: some View {
         VStack(alignment: .leading, spacing: 18) {
+            // The numbers and the one thing you make scroll WITH the list, the
+            // way they do on the page this is copied from. They sat in the
+            // header, where they were both a wall between the name and the
+            // list and a row of tap targets in the drag area.
+            statsRow
+            actionRow
             if allVisited.isEmpty && saved.favourites.isEmpty { mission }
             if !saved.entries.isEmpty || !sightings.yoursOnly.isEmpty {
                 lanePicker
                 laneContent
             }
             if !account.isSignedIn && saved.savedCount > 0 { backupBar }
-            Color.clear.frame(height: 96)
+            // The floating bar's own room is kept by the sheet now
+            // (BottomSheet), so this is air at the end of a list rather than a
+            // hole the size of a tab bar.
+            Color.clear.frame(height: 24)
         }
         .padding(.horizontal, 20)
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -446,18 +466,10 @@ struct CollectView: View {
         .pickerStyle(.segmented)
         .accessibilityIdentifier("collect-lane")
         .padding(.vertical, 10)
-        // THE BACKGROUND HAS TO REACH THE TOP OF THE SCREEN, not just cover
-        // the control (Hidde, 2026-08-26, on a card sliced in half by it:
-        // "dit moet natuurlijk niet kunnen").
-        //
-        // This page has no navigation bar, so its content scrolls up under
-        // the status bar. A pinned header painted only inside its own bounds
-        // therefore had a live strip of photograph above it, and a card
-        // arriving at that moment was cut across the middle with its top half
-        // still showing. Extending the fill into the top safe area is what
-        // every pinned control on iOS does, and it costs nothing anywhere
-        // else: below the top the extra fill is off screen.
-        .background(Brand.ground)
+        // NO FILL BEHIND IT. It needed one while it was a pinned header on a
+        // full-page scroller, with live content sliding under it. Inside the
+        // sheet it is an ordinary row in the list, and the opaque ground
+        // painted a white band across the sheet's own material.
     }
 
     /// Everything the picker switches, rebuilt rather than reshuffled.
@@ -552,26 +564,30 @@ struct CollectView: View {
                     // truncated in the middle, which rendered as "burgma...ail.com"
                     // on his own phone and reads as a bug rather than as a name.
                     // Signed out it says what the page is.
-                    Button {
-                        if editable { editingProfile = true } else { signingIn = true }
-                    } label: {
-                        Text(profiles.me?.display_name
-                             ?? account.email?.split(separator: "@").first.map(String.init)
-                             ?? "Your trees")
-                            .font(.brand(19, .bold, relativeTo: .title3))
-                            .foregroundStyle(Brand.ink)
-                            .lineLimit(1).truncationMode(.middle)
+                    // TEXT, not a button. See sheetHeader: this row is the
+                    // handle. Signed out it is still a way in, because there
+                    // is no gear-shaped door to an account you do not have.
+                    Group {
+                        if editable {
+                            Text(profiles.me?.display_name
+                                 ?? account.email?.split(separator: "@").first.map(String.init)
+                                 ?? "Your trees")
+                                .font(.brand(19, .bold, relativeTo: .title3))
+                                .foregroundStyle(Brand.ink)
+                                .lineLimit(1).truncationMode(.middle)
+                        } else {
+                            Button { signingIn = true } label: {
+                                Text("Your trees")
+                                    .font(.brand(19, .bold, relativeTo: .title3))
+                                    .foregroundStyle(Brand.ink)
+                            }
+                            .buttonStyle(.plain)
+                            .frame(minHeight: 44, alignment: .leading)
+                            .contentShape(.rect)
+                            .accessibilityIdentifier("mytrees-signin")
+                            .accessibilityLabel("Sign in")
+                        }
                     }
-                    .buttonStyle(.plain)
-                    // A NAME IS 23 POINTS TALL and Apple's floor is 44. Making
-                    // only the name tappable was right and left the target too
-                    // small, which the gate caught within the hour; the row
-                    // loses its two points of spacing to pay for the height, so
-                    // the block barely moves.
-                    .frame(minHeight: 44, alignment: .leading)
-                    .contentShape(.rect)
-                    .accessibilityIdentifier("mytrees-edit-profile")
-                    .accessibilityLabel(editable ? "Edit your profile" : "Sign in")
                     if account.isSignedIn {
                         // The two numbers Polarsteps runs beside the name. They
                         // are here from the first day rather than added later, so

@@ -20,6 +20,12 @@
 import SwiftUI
 
 struct TabBar: View {
+    /// How deep the bar floats over whatever is behind it: the disc's own 58
+    /// points plus the 4 it sits off the bottom. The sheet reads this so its
+    /// content can end above the bar rather than under it; a number copied
+    /// into BottomSheet would drift the first time this control is resized.
+    static let floatDepth: CGFloat = 58 + 4
+
     struct Item {
         /// Empty on the action, which carries no word: see `items`.
         let title: String

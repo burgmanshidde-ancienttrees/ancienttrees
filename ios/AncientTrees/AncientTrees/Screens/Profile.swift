@@ -133,7 +133,14 @@ struct ProfileView: View {
         // "de sign in knop op profielpagina werkt langzaam en soms niet").
         // A Button coordinates with the scroll view instead of racing it.
         Button {
-            if account.isSignedIn { navigator.selectTab = 3 } else { signingIn = true }
+            // THE EDITOR, not a tab. This asked for tab 3, which stopped
+            // existing when the bar went to three tabs on 2026-08-26: the
+            // TabView then had a selection matching no tag, so it showed the
+            // map with the tab bar gone and no way back (Hidde, 2026-08-27:
+            // "kom je op het mapscherm zonder floating menu"). Tapping your own
+            // card in a settings screen opens your account everywhere else,
+            // which is the same room the row further down opens.
+            if account.isSignedIn { editingProfile = true } else { signingIn = true }
         } label: {
             identityRow
         }
