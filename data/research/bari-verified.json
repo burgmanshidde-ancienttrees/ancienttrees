@@ -94,5 +94,39 @@
    "attribution": null,
    "status": "missing"
   }
+ },
+ {
+  "id": "bar_004",
+  "name": "The Lie Tree of Quasano",
+  "species": "Holm Oak (Quercus ilex)",
+  "age_estimate": "planted in the second half of the 19th century, so roughly 125 to 175 years old",
+  "age_min": 125,
+  "age_max": 175,
+  "girth_cm": 320,
+  "location": {
+   "address": "Viale della Pineta, Quasano, Toritto (BA)",
+   "latitude": 40.968414,
+   "longitude": 16.578108,
+   "neighbourhood": "Quasano, a hamlet of Toritto"
+  },
+  "verified_sources": [
+   "data/registers/puglia-alberi-monumentali.json (register_id 01/L220/BA/16)",
+   "data/registers/italy-masaf.json (sheet_id 01/L220/BA/16)",
+   "https://fondoambiente.it/luoghi/albero-della-bugia-quasano (FAI, I Luoghi del Cuore)",
+   "https://luoghi.italianbotanicalheritage.com/en/albero-della-bugia-of-toritto/ (Italian Botanical Heritage)",
+   "https://torittonline.it/index.php?option=com_content&view=article&id=6585 (Toritto Online, 11 June 2021)"
+  ],
+  "access": "Free, standing in the open at a road junction in the centre of the Quasano hamlet; no gate, ticket or permission needed.",
+  "transport": "About 30 km from central Bari, no direct rail; reachable by STP's regional bus network via Toritto, or by car via the SP231, roughly 45 minutes each way. A genuine day trip rather than a city-centre stop.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "story": "Quasano calls its holm oak the Lie Tree. The name is a leftover complaint: after Italian unification, peasants gathered under its crown to trade grievances about promises the Garibaldian patriots had made and never kept, and the bitterness became the tree's name. Nobody recorded a planting date, but its absence from the estate's own land records before the mid-1800s land divisions is the closest thing to a birth certificate it has, putting it at somewhere over a century and a half old.\n\nIt stands exactly where it would have overheard those complaints, right in front of the gate of Quasano's old baronial masseria, positioned so awkwardly that carts once had to work around it to get through. A small chapel, later folded into a university building, faces it from across the way. At 3.2 metres round and 11 metres tall, it earned a place on Puglia's register of monumental trees in 2021, protected under the national law for trees of exceptional age, size or history. Italians have nominated it to the FAI's Places of the Heart campaign seven times since 2006, an unusually long streak of affection for a tree named after lying.\n\nThe gate it blocks now leads to nothing grander than divided smallholdings, the old estate broken up long ago. The tree outlasted the arrangement it complained about.",
+  "verify_notes": "Two national/regional registers agree on species, girth (320cm) and height (11m). Three independent web sources beyond the registers: FAI's fondoambiente.it page (nominated to I Luoghi del Cuore in 2006, 2010, 2014, 2016, 2018, 2020, 2022, seven times), Italian Botanical Heritage's English page (independently confirms species, girth and height in imperial units matching the metric register figures), and Toritto Online's 11 June 2021 article (confirms the tree's May 2021 regional-decree listing under national law 10/2013, quotes the designation reason as 'age, dimensions and historical, cultural and religious value'). Age is FAI's own claim, 'planted in the second half of the 19th century', supported by the absence of the tree from the estate's land records before the mid-1800s post-Murattian divisions; not a girth-derived estimate. Access: register coordinates reverse-geocode (Nominatim, 2026-08-27) to Viale della Pineta, a pedestrian way in Quasano village centre, consistent with FAI's description of the tree standing in front of the old masseria's gate, blocking cart access; a public road/square, not private grounds, clearing hard rule 10 test 1. Distance (29.8km from Bari centre) exceeds the usual ~30-minute transit guideline but is consistent with the day-trip candidates this same Bari pass already evaluated (Molfetta, 24-29km); labelled honestly as a day trip rather than presented as a city-centre stop, per the Coole Park/Galway precedent. A Commons image is linked from this tree's Wikidata entry (Q55742469, 'Leccio - Chiesa Maria SS degli Angeli di Quasano.jpg') but was not viewed or judged this pass (this runner's egress proxy blocks Wikimedia); left for a photo-viewing session, and the filename suggests it may show the nearby chapel rather than the tree itself, so it needs a careful look rather than an automatic approval.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  }
  }
 ]
