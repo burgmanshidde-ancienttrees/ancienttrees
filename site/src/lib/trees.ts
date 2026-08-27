@@ -3,6 +3,8 @@
 // copy of the same logic ported from build_site.py.
 import type { CollectionEntry } from "astro:content";
 import { haversineKm } from "./walks";
+// One slug rule, shared with the build integration; see ./slug.
+export { slugify, legacySlugify } from "./slug";
 
 export type Tree = CollectionEntry<"cities">["data"]["trees"][number];
 export type CityData = CollectionEntry<"cities">["data"];
@@ -16,16 +18,6 @@ export function treeIsRenderable(t: Tree): boolean {
 
 /** Ported verbatim from slugify(), build_site.py:918. Order matters: strip
  * quotes and a leading "the " BEFORE the NFKD/ASCII fold. */
-export function slugify(name: string): string {
-  let s = name.toLowerCase().replace(/'/g, "").replace(/’/g, "");
-  if (s.startsWith("the ")) s = s.slice(4);
-  s = s
-    .normalize("NFKD")
-    .replace(/[̀-ͯ]/g, "")
-    .replace(/[^\x00-\x7F]/g, "");
-  s = s.replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
-  return s;
-}
 
 /** A city "renders" (has a page) once it has at least one renderable tree,
  * mirroring build_city_page's actual gate (build_site.py:3423). */
