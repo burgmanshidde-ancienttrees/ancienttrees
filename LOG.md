@@ -11,6 +11,50 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 <!-- archive-index -->
 
 
+## 2026-08-27 (session, late) - The bug that had been there all along, and everything now follows the account
+
+**A query was being eaten, and three features had never once worked.** Hidde
+could not save his name and picture, and the sentence that settled it was "ik
+had nog geen foto": he never had one. `appendingPathComponent` percent-encodes
+a question mark, so `profiles?on_conflict=user_id` became a table name with a
+question mark in it and PostgREST refused the lot. Three call sites had that
+line and all three were silently dead: saving a name or a picture, the follower
+and following counts (always zero, and read as "nobody uses it"), and reporting
+or blocking somebody, which until today only ever happened on the phone.
+`Supa.request` has always concatenated, which is why saves, visited and
+sightings were fine and why nobody suspected a pattern.
+
+The route to it is worth keeping: the exact calls were reproduced against the
+real database with a real account, twice, and succeeded. That put the fault in
+the app rather than the server and turned an afternoon of guessing into one
+comparison. A unit test now asserts both halves, and the editor says which half
+of a save failed instead of "that did not save", which is what made the last
+round take one screenshot instead of an hour.
+
+**Everything follows the account now.** Audited rather than assumed, on his
+instruction ("niks moet lokaal opgeslagen zijn"). Already travelling:
+favourites, ticked trees, blocked people, name and picture. Added today: the
+trees somebody adds themselves WITH their photographs (supabase/sightings.sql,
+a private bucket, nobody but the owner can read a row or a file), their own
+worth-it votes, and kilometres or miles. Left on the phone deliberately:
+whether we have already asked you to sign in, and whether Plus is on, which
+belongs to the device.
+
+That replaced a Back up my trees button built the same morning, on his verdict:
+"niemand wil een backup my trees knop, je wilt gewoon dat dit automatisch goed
+gaat." He is right, and the button is gone.
+
+**Also:** a city and a country open their own map pushed on the stack, so
+somebody stays in Discover with a working back button rather than being handed
+to the Map tab; how high the sheet is now travels to the map through the
+environment, so no screen can forget it again (that is a content inset, which
+is what MapLibre and MapKit both call it); the gold ring on your own tree
+became ink after the fresh-eyes reviewer caught that gold already means Plus;
+and the layout gate's noise floor was set to the size of the noise, which took
+it from one finding to zero.
+
+**Confirmed working on his own phone:** saving a name and a picture.
+
 ## 2026-08-27 (session, afternoon) - Moderation, crash reporting, a proven deletion, and one component instead of three
 
 The morning's entry is below. This is what followed, all pushed.
