@@ -65,8 +65,8 @@
    "register_height_m": 45,
    "register_age_at_measurement": null,
    "last_measured": 2016,
-   "status": "lead",
-   "why": "Girth 5.04 m, 45 m tall, no age recorded. Register places it 70 m from the Porta das Lapas on the path to the Lago Grande, which is the far west of the walled forest, about 450 m off the published walk. Cut on distance and count."
+   "status": "resolved",
+   "why": "Girth 5.04 m, 45 m tall, no age recorded. Register places it 70 m from the Porta das Lapas on the path to the Lago Grande, which is the far west of the walled forest, about 450 m off the published walk. Cut on distance and count. [RESOLVED 2026-08-27, delivered as bsc_011]"
   },
   {
    "name": "Redwood on the bend at the head of the Vale de Sao Silvestre",
@@ -93,8 +93,8 @@
    "register_height_m": 24,
    "register_age_at_measurement": 136,
    "last_measured": 2016,
-   "status": "lead",
-   "why": "Girth 4.65 m, 24 m tall, crown 26 m wide, 136 years at 2016. Stands right by the Loja da Mata, so it is on the walk anyway and costs nothing to add. Cut for lack of a second source and because the Largo do Mosteiro already contributes two published entries."
+   "status": "resolved",
+   "why": "Girth 4.65 m, 24 m tall, crown 26 m wide, 136 years at 2016. Stands right by the Loja da Mata, so it is on the walk anyway and costs nothing to add. Cut for lack of a second source and because the Largo do Mosteiro already contributes two published entries. [RESOLVED 2026-08-27, delivered as bsc_012]"
   },
   {
    "name": "Sycamore Maple by the Lago da Fonte",
@@ -107,8 +107,8 @@
    "register_height_m": 36,
    "register_age_at_measurement": 100,
    "last_measured": 2016,
-   "status": "lead",
-   "why": "The best best_time candidate in Bucaco and the only obvious one: 36 m of deciduous tree at 100 years in 2016, so genuine autumn colour in a forest whose published trees are all evergreen. Cut for lack of a second source. Worth chasing precisely because this page carries no seasonal peak at all."
+   "status": "resolved",
+   "why": "The best best_time candidate in Bucaco and the only obvious one: 36 m of deciduous tree at 100 years in 2016, so genuine autumn colour in a forest whose published trees are all evergreen. Cut for lack of a second source. Worth chasing precisely because this page carries no seasonal peak at all. [RESOLVED 2026-08-27, delivered as bsc_013]"
   },
   {
    "name": "Cork Oak on the south slope of the Lago Grande",
@@ -135,8 +135,8 @@
    "register_height_m": 38,
    "register_age_at_measurement": null,
    "last_measured": 2016,
-   "status": "lead",
-   "why": "Ocotea foetens, the til of the Madeiran and Canarian laurel forests, 38 m tall with a 3 m trunk. A relict laurisilva species growing on the mainland is a genuinely unusual thing to stand in front of. No age recorded, no second source."
+   "status": "resolved",
+   "why": "Ocotea foetens, the til of the Madeiran and Canarian laurel forests, 38 m tall with a 3 m trunk. A relict laurisilva species growing on the mainland is a genuinely unusual thing to stand in front of. No age recorded, no second source. [RESOLVED 2026-08-27, delivered as bsc_014]"
   },
   {
    "name": "Cedro-do-Bucaco by the Passo de Anas",
@@ -163,8 +163,8 @@
    "register_height_m": 27,
    "register_age_at_measurement": null,
    "last_measured": 2016,
-   "status": "lead",
-   "why": "Girth 4.2 m, 27 m tall, crown 20.2 m, no age. Standing beside a ruined hermitage 30 m from the Passo de Anas, which is a good setting. Undated and single-sourced."
+   "status": "resolved",
+   "why": "Girth 4.2 m, 27 m tall, crown 20.2 m, no age. Standing beside a ruined hermitage 30 m from the Passo de Anas, which is a good setting. Undated and single-sourced. [RESOLVED 2026-08-27, delivered as bsc_015]"
   },
   {
    "name": "Cedro-do-Bucaco east of the Casa de Guarda do Serpa",
@@ -206,7 +206,7 @@
    "register_age_at_measurement": null,
    "last_measured": null,
    "status": "lead",
-   "why": "REGISTER DATA ERROR, do not repeat the figure. The register gives height 100 m against a girth of 1.95 m, which is physically impossible and would beat every tree in Europe. Almost certainly a decimal or unit slip for 10.0 m. Recorded here so a future pass does not rediscover it as a sensation."
+   "why": "REGISTER DATA ERROR, do not repeat the figure. The register gives height 100 m against a girth of 1.95 m, which is physically impossible and would beat every tree in Europe. Almost certainly a decimal or unit slip for 10.0 m. Recorded here so a future pass does not rediscover it as a sensation. Still not shipped 2026-08-27: the register data error (height 100m against girth 1.95m) has not been resolved against the original ICNF source, and the true figure is unknown. Do not ship on this data as it stands."
   },
   {
    "name": "Magenta Cherry at the nursery entrance",
