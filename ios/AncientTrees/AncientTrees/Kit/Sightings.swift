@@ -289,12 +289,20 @@ final class Sightings {
         // them, then salvage what can be read row by row: one row that a later
         // version wrote differently must not take the other forty with it,
         // which is exactly what decoding the array in one go does.
+        // KEEP THE BYTES, THEN CARRY ON. The first version of this refused to
+        // write for the rest of the session whenever salvage came back empty,
+        // which protects the file and leaves somebody with an app that cannot
+        // record a tree ever again. Copying the original aside protects it just
+        // as well and costs nothing, so writing is only refused in the one case
+        // where the copy itself failed and the original is still the only copy
+        // there is.
         let copy = Self.folder.appendingPathComponent("index-unreadable.json")
-        if !FileManager.default.fileExists(atPath: copy.path) {
-            try? d.write(to: copy)
+        var kept = FileManager.default.fileExists(atPath: copy.path)
+        if !kept {
+            kept = (try? d.write(to: copy)) != nil
         }
         all = Self.salvage(d)
-        unreadable = all.isEmpty
+        unreadable = all.isEmpty && !kept
         findOrphans()
         // Only rewrite the index once something was actually recovered, and
         // the copy above survives either way.
