@@ -42,8 +42,8 @@ public final class Moderation {
             UserDefaults.standard.removeObject(forKey: Self.key)
         }
         blocked = Set(UserDefaults.standard.stringArray(forKey: Self.key) ?? [])
-        // And the other direction: a blocked list with nothing on it cannot be
-        // photographed, so the sweep seeds one.
+        // One already blocked, so the unblock can be photographed: it only
+        // appears on somebody you have blocked, and nothing on a simulator has.
         if args.contains("-blocked-demo") {
             blocked.insert(DemoPeople.all[0].user_id)
         }

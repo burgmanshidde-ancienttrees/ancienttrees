@@ -68,7 +68,6 @@ final class SweepFrames: XCTestCase {
         ("sponsor",      ["-tab=2", "-sponsor"], "sponsor-sheet"),
         ("profile-edit", ["-tab=2", "-profile-edit"], nil),
         ("people",       ["-tab=2", "-signed-in", "-people", "-people-demo"], "people-sheet"),
-        ("blocked",      ["-tab=2", "-signed-in", "-settings", "-blocked", "-blocked-demo", "-people-demo"], "blocked-sheet"),
     ]
 
     /// The file appfit.py goes looking for.

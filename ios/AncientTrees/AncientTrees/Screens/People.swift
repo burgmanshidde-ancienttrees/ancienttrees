@@ -32,11 +32,22 @@ struct PeopleView: View {
     @State private var reporting: Profiles.Profile?
     @State private var reported = false
 
-    /// Blocked people are not in the list at all. Hiding the row rather than
-    /// dimming it is the convention everywhere (Instagram, X, Strava): a block
-    /// you can still read is not a block.
+    /// Blocked people go to the BOTTOM rather than out of the list.
+    ///
+    /// Hidde removed the Blocked people screen on 2026-08-27 ("dat heb ik nog
+    /// nooit als optie gezien in een app, haal maar weg"), and he is right that
+    /// it is odd furniture on an app this social: Instagram and X have that
+    /// list, Google Maps does not, and we are the second kind of app.
+    ///
+    /// What cannot go with it is the way back. Blocking is the only thing in
+    /// this app that cannot be undone, and a block with no undo is a trap
+    /// rather than a control. So a blocked person is not hidden from YOUR OWN
+    /// search for them: they sit at the end, dimmed, with Unblock where Follow
+    /// would be. They are still gone from everywhere else, which is what a
+    /// block is for.
     private var visible: [Profiles.Profile] {
         results.filter { !moderation.hides($0.user_id) }
+            + results.filter { moderation.hides($0.user_id) }
     }
 
     var body: some View {
@@ -65,17 +76,32 @@ struct PeopleView: View {
                         }
                         .frame(width: 40, height: 40)
 
-                        Text(p.display_name).font(.callout).foregroundStyle(Brand.ink)
+                        Text(p.display_name).font(.callout)
+                            .foregroundStyle(moderation.hides(p.user_id) ? Brand.inkSoft : Brand.ink)
                         Spacer(minLength: 8)
 
-                        Button(followingIds.contains(p.user_id) ? "Following" : "Follow") {
-                            toggle(p)
+                        if moderation.hides(p.user_id) {
+                            Button("Unblock") {
+                                guard let s = account.session else { return }
+                                Task { await moderation.unblock(p.user_id, me: s.userId,
+                                                                token: s.accessToken) }
+                            }
+                            .font(.subheadline.weight(.semibold))
+                            .foregroundStyle(Brand.moss)
+                            .buttonStyle(.plain)
+                            .frame(minWidth: 78, minHeight: 44, alignment: .trailing)
+                            .contentShape(.rect)
+                            .accessibilityIdentifier("person-unblock")
+                        } else {
+                            Button(followingIds.contains(p.user_id) ? "Following" : "Follow") {
+                                toggle(p)
+                            }
+                            .font(.subheadline.weight(.semibold))
+                            .foregroundStyle(followingIds.contains(p.user_id) ? Brand.inkSoft : Brand.moss)
+                            .buttonStyle(.plain)
+                            .frame(minWidth: 78, minHeight: 44, alignment: .trailing)
+                            .contentShape(.rect)
                         }
-                        .font(.subheadline.weight(.semibold))
-                        .foregroundStyle(followingIds.contains(p.user_id) ? Brand.inkSoft : Brand.moss)
-                        .buttonStyle(.plain)
-                        .frame(minWidth: 78, minHeight: 44, alignment: .trailing)
-                        .contentShape(.rect)
 
                         // THE ELLIPSIS, and it is not decoration. From the
                         // moment somebody can see a name and a picture another
@@ -114,9 +140,17 @@ struct PeopleView: View {
                 Button("Report this person") {
                     reporting = acting
                 }
-                Button("Block this person", role: .destructive) {
+                Button(acting.map { moderation.hides($0.user_id) } == true
+                       ? "Unblock this person" : "Block this person",
+                       role: acting.map { moderation.hides($0.user_id) } == true ? nil : .destructive) {
                     guard let p = acting, let s = account.session else { return }
-                    Task { await moderation.block(p.user_id, me: s.userId, token: s.accessToken) }
+                    Task {
+                        if moderation.hides(p.user_id) {
+                            await moderation.unblock(p.user_id, me: s.userId, token: s.accessToken)
+                        } else {
+                            await moderation.block(p.user_id, me: s.userId, token: s.accessToken)
+                        }
+                    }
                 }
                 Button("Cancel", role: .cancel) {}
             } message: {
