@@ -1,0 +1,56 @@
+[
+  {
+    "id": "gui_007",
+    "name": "The Douglas Fir of Monte da Penha",
+    "species": "Douglas Fir (Pseudotsuga menziesii)",
+    "age_estimate": "roughly 90 years",
+    "age_min": 70,
+    "age_max": 110,
+    "girth_cm": 480,
+    "location": {
+      "address": "Monte da Penha, next to the Santuario de Nossa Senhora do Carmo da Penha, Costa, Guimaraes",
+      "latitude": 41.43194444,
+      "longitude": -8.269638889,
+      "neighbourhood": "Monte da Penha"
+    },
+    "verified_sources": [
+      "https://www.cm-guimaraes.pt/areas-de-intervencao/ambiente-e-sustentabilidade/urbanismo/patrimonio-e-bens-classificados/arvores-e-arvoredo-de-interesse-publico",
+      "https://maisguimaraes.pt/camara-submete-candidatura-a-classificacao-de-arvoredo-de-interesse-publico/",
+      "https://labpaisagem.pt/noticia/arvore-do-ano-de-guimaraes-2022/",
+      "data/registers/portugal-icnf.json (processo AIP030812109I)"
+    ],
+    "access": "Free, open public ground on Monte da Penha next to the Santuario da Penha. No gate or ticket for the summit park itself.",
+    "transport": "Teleferico de Guimaraes (cable car) from the city centre, about 10 minutes for the 1.7 km ride, then a short walk to the sanctuary grounds; also reachable by road/car. Roughly 2.9 km from the historic centre as the crow flies.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "story": "Guimaraes' cable car climbs 1.7 kilometres up Monte da Penha in about ten minutes, and at the top, beside the art-deco sanctuary that gives the mountain its shrine, stands a Douglas fir nobody had separately catalogued until the city's own tree register caught up with it in 2021.\n\nTwo earlier passes at this site both missed it, folded by mistake into a huge, 790-specimen forest classification that covers most of Penha's woodland and cannot be visited as a single tree. This one is different: individually designated, its own case number, its own protection order. It measures 4.8 metres round and stands 35 metres tall, big enough that in 2022 it made the shortlist for Guimaraes' own Tree of the Year.\n\nDouglas fir is native to the Pacific coast of North America, planted across Europe from the mid-1800s for timber and, on hilltops like this one, for the view a fast-growing conifer gives quickly. The register puts this specimen at roughly ninety years, though nobody has published the year it went into the ground, so treat the number as the register's own reading rather than a certainty.\n\nIts neighbour, a giant eucalyptus a hundred and seventy metres away, shares the same summit and the same story: overlooked, then found. Together they make Monte da Penha two stops rather than one.",
+    "verify_notes": "NEW CANDIDATE, not previously researched: earlier passes (2026-08-06, 2026-08-14, 2026-08-16) assumed everything at 'Penha' was part of the blocked Casa da Penha 790-specimen whole-forest conjunto (AIP03081265C, at 41.43038,-8.26575, correctly blocked, not a collectible point). This tree is a SEPARATE, individually classified register entry (tipo: 'Arvore isolada', not 'Conjunto arboreo'), its own processo AIP030812109I, classified by Despacho no. 5167/2021 (21-05-2021), confirmed independently on cm-guimaraes.pt's own list of Arvores e Arvoredo de Interesse Publico. ICNF register: girth 4.8 m, height 35 m, crown 21 m, age_register 90, last_measured not recorded (register gives no year, so treat the age as of the 2021 classification and flag it as such). Located 'junto ao Santuario da Penha' (next to the sanctuary) per the municipality's own candidatura writeup at maisguimaraes.pt. One of 15 trees shortlisted for 'Arvore do Ano de Guimaraes 2022' (labpaisagem.pt), which is independent evidence the tree was alive, standing and locally notable as of 2022. Monte da Penha is Guimaraes' single best-known public natural attraction: a mountain-top park with the art-deco Penha Sanctuary, reached by the Guimaraes Cable Car (a gondola lift, ~10 min, 1.7 km line) or by road; Wikipedia's Monte da Penha article confirms public access with no stated hours or fee for the summit itself (the cable car is paid separately). Land is described in press coverage as belonging to the Irmandade de Nossa Senhora do Carmo da Penha (the sanctuary's own religious brotherhood), the same category as a churchyard/shrine precinct that CLAUDE.md's hard rule 10 explicitly treats as public ground in practice. Stands about 170 m from its register-mate, the giant eucalyptus (gui_008 candidate), so the two form a genuine two-tree stop at the summit rather than two isolated finds. A WebSearch AI summary twice surfaced an '~70 years old' figure for this tree, attributed to the same candidatura article; the article was fetched directly and does NOT contain that figure in the retrieved text, so per the search-summary-is-a-lead-never-a-source rule it is NOT used here; only the ICNF register's own age_register (90) is recorded. Age is therefore flagged, not confirmed. guimaraesdigital.pt (another outlet that covered the eucalyptus) returned HTTP 403 to WebFetch this pass; note for the blocklist if it recurs. Pin precision: the ICNF coordinate converts cleanly to whole arc-seconds (a digitisation artifact seen across this whole register, e.g. gui_005/gui_006), so treated as approximate like those sibling entries rather than confirmed, consistent with this project's established precedent for this exact register."
+  },
+  {
+    "id": "gui_008",
+    "name": "The Giant Eucalyptus of Monte da Penha",
+    "species": "Southern Blue Gum (Eucalyptus globulus)",
+    "age_estimate": "roughly a century",
+    "age_min": 90,
+    "age_max": 130,
+    "girth_cm": 705,
+    "location": {
+      "address": "Monte da Penha, near the Santuario de Nossa Senhora do Carmo da Penha, Costa, Guimaraes",
+      "latitude": 41.43319444,
+      "longitude": -8.268583333,
+      "neighbourhood": "Monte da Penha"
+    },
+    "verified_sources": [
+      "https://ominho.pt/eucalipto-gigante-em-guimaraes-classificado-como-arvoredo-de-interesse-publico-pelo-icnf/",
+      "https://www.cm-guimaraes.pt/areas-de-intervencao/ambiente-e-sustentabilidade/urbanismo/patrimonio-e-bens-classificados/arvores-e-arvoredo-de-interesse-publico",
+      "https://labpaisagem.pt/noticia/arvore-do-ano-de-guimaraes-2022/",
+      "data/registers/portugal-icnf.json (processo AIP03081271I)"
+    ],
+    "access": "Free, open public ground on Monte da Penha. No gate or ticket for the summit park itself.",
+    "transport": "Teleferico de Guimaraes (cable car) from the city centre, about 10 minutes for the 1.7 km ride, then a short walk to the sanctuary grounds; also reachable by road/car. Roughly 2.9 km from the historic centre as the crow flies, about 170 m from the Douglas fir (gui_007 candidate).",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "story": "Seven metres and five centimetres round at chest height, thirty-nine metres tall, a crown that spreads twenty-nine metres wide: the giant eucalyptus of Monte da Penha is built at a scale that makes the sanctuary beside it look modest.\n\nSouthern blue gum is not native to Portugal, brought from Australia in the nineteenth century for timber and now naturalised across the country's hillsides, but few individual specimens ever reach this size. When Portugal's forestry authority classified it as a tree of public interest in 2020, it drew a fifty-metre protection zone around the base, banning earthworks and excavation nearby, the kind of order usually reserved for a tree the authorities actively worry about losing.\n\nIt was already a landmark before the paperwork caught up. Press coverage from the classification describes it as a specimen admired by visitors to the Penha hills, and in 2022 it was shortlisted for Guimaraes' own Tree of the Year alongside the Douglas fir standing a hundred and seventy metres away, the other half of a summit that turns out to hold two record-scale trees rather than one.\n\nReach both by Guimaraes' cable car, a ten-minute ride up from the city centre, or by road.",
+    "verify_notes": "NEW CANDIDATE, not previously researched, same situation as gui_007: a separately classified register entry (tipo: 'Arvore isolada'), not part of the blocked Casa da Penha whole-forest conjunto. Processo AIP03081271I, classified by Despacho (extrato) no. 1315/2020, agreement dated 29-01-2020, published in Diario da Republica 13-02-2020; confirmed independently on cm-guimaraes.pt's own register list. Measurements per ominho.pt (which cites the ICNF classification text directly) and cross-checked against the register: 39 m tall, base perimeter 7.85 m, perimeter at breast height (chest-height girth, the figure used here) 7.05 m, crown diameter 29 m. ICNF register gives age_register 100 with last_measured not recorded, so the age is flagged as of the 2020 classification rather than dated precisely. A 50 m general protection zone around the base was established by the classification, prohibiting earthworks or excavation nearby, which is itself evidence the tree is a recognised, actively protected specimen rather than an abandoned register row. Described in press coverage as 'um exemplar singular e admirado... pelos visitantes da Serra da Penha' (a singular specimen admired by visitors), i.e. a known local landmark people already go to see, on land belonging to the Irmandade de Nossa Senhora do Carmo da Penha (the sanctuary's brotherhood), treated as public shrine-precinct ground under hard rule 10. One of 15 trees shortlisted for 'Arvore do Ano de Guimaraes 2022' (labpaisagem.pt), independent evidence of being alive, standing and locally notable as of 2022. This is very likely one of the largest eucalyptus specimens on the whole site (girth over 7 m, height 39 m); worth checking scripts/superlatives.py before any superlative claim ships. Pin precision: same digitisation-artifact coordinate pattern as gui_005/gui_006/gui_007 (rounds to whole arc-seconds), so treated as approximate rather than confirmed, consistent with established precedent for this register."
+  }
+]
