@@ -134,7 +134,7 @@ enum SightingSync {
 
     private static func rows(_ path: String, token: String) async -> [[String: Any]] {
         let r = Supa.request(path, method: "GET", token: token)
-        guard let (data, _) = try? await URLSession.shared.data(for: r),
+        guard let (data, _) = try? await Net.data(for: r),
               let j = try? JSONSerialization.jsonObject(with: data) as? [[String: Any]] else { return [] }
         return j
     }
@@ -142,12 +142,12 @@ enum SightingSync {
     private static func post(_ path: String, token: String, body: [[String: Any]]) async {
         let r = Supa.request(path, token: token, body: body,
                              prefer: "resolution=merge-duplicates,return=minimal")
-        _ = try? await URLSession.shared.data(for: r)
+        _ = try? await Net.data(for: r)
     }
 
     private static func delete(_ path: String, token: String) async {
         let r = Supa.request(path, method: "DELETE", token: token, prefer: "return=minimal")
-        _ = try? await URLSession.shared.data(for: r)
+        _ = try? await Net.data(for: r)
     }
 
     private static func upload(_ path: String, data: Data, token: String) async -> Bool {
@@ -156,14 +156,14 @@ enum SightingSync {
         // Replace rather than refuse when it is already there.
         r.setValue("true", forHTTPHeaderField: "x-upsert")
         r.httpBody = data
-        guard let (_, resp) = try? await URLSession.shared.data(for: r),
+        guard let (_, resp) = try? await Net.data(for: r),
               let http = resp as? HTTPURLResponse else { return false }
         return (200..<300).contains(http.statusCode)
     }
 
     private static func download(_ path: String, token: String) async -> Data? {
         let r = Supa.request("/storage/v1/object/\(bucket)/\(path)", method: "GET", token: token)
-        guard let (data, resp) = try? await URLSession.shared.data(for: r),
+        guard let (data, resp) = try? await Net.data(for: r),
               let http = resp as? HTTPURLResponse, (200..<300).contains(http.statusCode)
         else { return nil }
         return data
@@ -171,13 +171,13 @@ enum SightingSync {
 
     private static func deleteObject(_ path: String, token: String) async {
         let r = Supa.request("/storage/v1/object/\(bucket)/\(path)", method: "DELETE", token: token)
-        _ = try? await URLSession.shared.data(for: r)
+        _ = try? await Net.data(for: r)
     }
 
     private static func list(prefix: String, token: String) async -> [String] {
         let r = Supa.request("/storage/v1/object/list/\(bucket)", token: token,
                              body: ["prefix": prefix, "limit": 200])
-        guard let (data, _) = try? await URLSession.shared.data(for: r),
+        guard let (data, _) = try? await Net.data(for: r),
               let j = try? JSONSerialization.jsonObject(with: data) as? [[String: Any]]
         else { return [] }
         return j.compactMap { $0["name"] as? String }

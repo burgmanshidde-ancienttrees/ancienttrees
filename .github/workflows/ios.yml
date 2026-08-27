@@ -28,6 +28,7 @@ on:
       - 'scripts/appfit.py'
       - 'scripts/appsweep.py'
       - 'scripts/layout_rules.py'
+      - 'scripts/netcheck.py'
       - 'scripts/worktree_guard.py'
       - '.github/workflows/ios.yml'
   pull_request:
@@ -80,6 +81,16 @@ jobs:
       # Store Connect on upload. Ours had one, unnoticed, until 2026-08-27.
       - name: Will Apple take the app icon
         run: python3 scripts/icon_check.py
+
+      # Also free, also no simulator, and it guards the thing every failure test
+      # in this repository stands on: the app reaches the network through
+      # Kit/Net.swift and nothing else. A call made straight on URLSession.shared
+      # cannot be intercepted, so no test can ever take the network away from it.
+      # Two files that landed the same afternoon the door was built carried nine
+      # such calls (2026-08-27), written against the old habit, and nothing said
+      # so: the tests just quietly did not cover them.
+      - name: One door to the network
+        run: python3 scripts/netcheck.py
 
       - name: Which Xcode
         run: |
