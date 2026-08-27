@@ -416,7 +416,18 @@ struct TreeDetail: View {
             Button {
                 if mine == nil { navigator.collectNearby = true }
             } label: {
-                heroFallback.frame(height: 300)
+                // THE SAME SHAPE AS THE PHOTOGRAPHED HERO: a clear box of the
+                // right height with the content as an overlay, then clipped.
+                // An overlay never takes part in layout, so nothing inside can
+                // push the box wider, which is exactly what was happening here:
+                // the layout gate measured this button ending one point past
+                // the right edge on both phones, and one point is enough to
+                // fail a check that exists so nobody has to judge whether a
+                // point matters.
+                Color.clear
+                    .frame(height: 300)
+                    .overlay { heroFallback }
+                    .clipped()
             }
             .buttonStyle(.plain)
             .disabled(mine != nil)
