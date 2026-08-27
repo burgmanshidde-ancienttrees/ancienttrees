@@ -2,6 +2,7 @@
 // countries, parks). Ported from browse_card()/collection_face(),
 // build_site.py:3865-3892.
 import { usablePhoto, thumbUrl, NO_PHOTO_SVG, type TreeLike } from "./images";
+import { BASE_URL } from "./schema";
 
 function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -33,7 +34,13 @@ export function collectionFace(
     for (const t of entry.data.trees) {
       if (t.id === e.tree_id) {
         const p = usablePhoto(t);
-        if (p?.url) return thumbUrl(p.url, 400);
+        if (p?.url) {
+          // /api/browse.json is read by the app, which has no page to resolve
+          // a relative path against, and thumbUrl now returns "/photos/..."
+          // for the photographs we host ourselves.
+          const u = thumbUrl(p.url, 400);
+          return u.startsWith("/") ? `${BASE_URL}${u}` : u;
+        }
       }
     }
   }

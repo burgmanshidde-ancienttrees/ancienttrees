@@ -1,3 +1,7 @@
+import fs from "node:fs";
+import path from "node:path";
+import { DATA } from "./data-dir";
+
 // Ported from thumb_url()/img_srcset()/credit_required()/usable_photo(),
 // build_site.py:2441-2518. qa.py's image checks (full-resolution Wikimedia
 // originals, iNaturalist originals, wiki File: pages as img src) depend on
@@ -21,8 +25,62 @@ function esc(s: string): string {
     .replace(/"/g, "&quot;");
 }
 
+
+/** The photographs we host ourselves, keyed by their original URL.
+ *
+ * Wikimedia does not block us and never has; it RATE-LIMITS. Measured
+ * 2026-08-27, a burst of 24 thumbnails fetched the way a card grid fetches
+ * them came back 13 x HTTP 429 and 11 x 200, which is why the tree
+ * photographs stopped loading in the app. Nothing broke: the app grew past a
+ * threshold that CURATION.md recorded on 2026-08-08 as "roughly one request
+ * every three seconds runs clean".
+ *
+ * So the copies live under site/public/photos and this map points at them.
+ * Read lazily and cached, because thumbUrl() is called thousands of times in
+ * a build, and behind a try/catch so a missing manifest degrades to the
+ * Wikimedia URL rather than failing the build.
+ *
+ * It sits HERE rather than in the app because thumbUrl() is the one function
+ * both surfaces already share: the website's imgSrcset and the feed's
+ * thumb/hero fields both call it, so one change moves both. That is the same
+ * rule the feed follows everywhere else, an answer travelling as data instead
+ * of a rule written twice.
+ */
+let VENDORED: Record<string, { base: string; widths: number[] }> | null = null;
+function vendored(): Record<string, { base: string; widths: number[] }> {
+  if (VENDORED) return VENDORED;
+  try {
+    VENDORED = JSON.parse(
+      fs.readFileSync(path.join(DATA, "photo-manifest.json"), "utf-8")
+    ).photos ?? {};
+  } catch {
+    VENDORED = {};
+  }
+  return VENDORED!;
+}
+
+/** The vendored copy at this width, or null if we do not host one.
+ *
+ * Only widths we actually have, and never a smaller file standing in for a
+ * bigger one. We vendor the CARD size and not the hero, because the rate limit
+ * is a burst problem: a grid asks for two dozen images at once and Wikimedia
+ * cuts off after about twelve, while a hero is one image on one screen and
+ * never bursts. Serving a 500px file where a 960px hero was asked for would
+ * trade a fixed bug for a soft photograph, which is the exact complaint that
+ * sent the first version of this back. */
+function localCopy(url: string, width: number): string | null {
+  const hit = vendored()[url];
+  if (!hit) return null;
+  const w = hit.widths.find((x) => width <= x);
+  return w ? `/photos/${hit.base}-${w}.jpg` : null;
+}
+
 /** A right-sized image URL for the big three sources, original otherwise. */
 export function thumbUrl(url: string, width: number): string {
+  // Our own copy wins whenever we have one: same picture, a host that does
+  // not rate-limit a card grid into 429s.
+  const mine = localCopy(url, width);
+  if (mine) return mine;
   try {
     if (url.includes("upload.wikimedia.org/wikipedia/commons/") && !url.includes("/thumb/")) {
       const [head, tail] = splitOnce(url, "/wikipedia/commons/");

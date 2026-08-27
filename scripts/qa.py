@@ -798,6 +798,74 @@ def check_tree_count_claims(pages):
     return out
 
 
+
+def check_vendored_photos_are_served():
+    """Every photograph we host must actually be pointed at, and exist.
+
+    Written 2026-08-27, the day the tree photographs stopped loading in the
+    app. The cause was not a bug: the app fetched each one straight from
+    upload.wikimedia.org, and a burst of 24 the way a card grid loads them
+    came back 13 x HTTP 429 and 11 x 200. Wikimedia does not block us, it
+    rate-limits, and the app simply grew past the threshold.
+
+    The fix copies the files onto our own domain and points thumbUrl() at
+    them, which moves the website and the app feed together because both
+    already called that one function. This check exists so the fix cannot rot
+    back the way it arrived: silently, with everything still green.
+
+    Three ways it can rot, each checked:
+      1. The manifest names a file that is not in the build. Every reader gets
+         a 404 where a tree should be.
+      2. A file sits in site/public/photos that no manifest entry points at.
+         Dead weight in a repo already carrying 131 MB of photographs.
+      3. The app feed hands out a relative path. A phone has no page to
+         resolve it against, which would break the app worse than the rate
+         limit did.
+    """
+    failures = []
+    man_path = ROOT / "data" / "photo-manifest.json"
+    if not man_path.exists():
+        return []
+    man = json.loads(man_path.read_text(encoding="utf-8")).get("photos", {})
+    photos_dir = DIST / "photos"
+    on_disk = {f.name for f in photos_dir.glob("*.jpg")} if photos_dir.exists() else set()
+
+    pointed_at = set()
+    for url, rec in man.items():
+        for w in rec.get("widths", []):
+            name = f"{rec['base']}-{w}.jpg"
+            pointed_at.add(name)
+            if name not in on_disk:
+                failures.append(
+                    f"photo-manifest names {name}, which is not in the build: "
+                    "every reader gets a 404 where a tree should be"
+                )
+    orphans = on_disk - pointed_at
+    # The four hand-placed files predate the manifest and are referenced from
+    # the tree data directly, so they are named rather than counted as rot.
+    orphans = {o for o in orphans if not o.endswith((
+        "wellingtons-olive.jpg", "bunya-pine-palace-hotel.jpg",
+        "redwood-fonte-santa-teresa.jpg", "pekingtuin-oak.jpg"))}
+    for o in sorted(orphans)[:10]:
+        failures.append(f"site/public/photos/{o} is in the build but nothing points at it")
+
+    feed = DIST / "api" / "trees.json"
+    if feed.exists():
+        data = json.loads(feed.read_text(encoding="utf-8"))
+        trees = data if isinstance(data, list) else data.get("trees", [])
+        for t in trees:
+            p = t.get("photo") or {}
+            for field in ("thumb", "hero"):
+                v = p.get(field)
+                if isinstance(v, str) and v.startswith("/"):
+                    failures.append(
+                        f"api/trees.json {t.get('id')}: {field} is a relative path "
+                        "and the app has no page to resolve it against"
+                    )
+                    break
+    return failures
+
+
 def check_sitemap_dates():
     sm = DIST / "sitemap.xml"
     if not sm.exists():
@@ -946,6 +1014,7 @@ def main():
     failures += check_species_face_is_chosen()
     failures += check_faces_travel_to_the_app()
     failures += check_park_key_is_one_function()
+    failures += check_vendored_photos_are_served()
 
     if failures:
         print(f"QA FAILED: {len(failures)} problem(s) in {len(pages)} pages")
