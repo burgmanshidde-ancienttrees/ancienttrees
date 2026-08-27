@@ -582,10 +582,20 @@ struct ProfileView: View {
             // account two rows above asked first. Every app asks (Hidde,
             // 2026-08-24: "dit is raar"), and here it matters more than usual:
             // what it looks like you are about to lose is your collection.
+            // CANCEL WITHOUT THE CANCEL ROLE, and that is not a style choice.
+            //
+            // Anchored to a control, iOS 26 draws this as a popover, and a
+            // popover DROPS every button carrying `role: .cancel`, because
+            // tapping outside is meant to do that job. So the Cancel declared
+            // here never drew and the only control on a destructive
+            // confirmation was the red one: somebody who opened it by mistake
+            // had nothing to tap. Found on 2026-08-27 by the flow walk, which
+            // had been failing on exactly this for days while nothing read its
+            // verdict. A plain button says the same word and survives.
             .confirmationDialog("Sign out?", isPresented: $confirmingSignOut,
                                 titleVisibility: .visible) {
                 Button("Sign out", role: .destructive) { account.signOut() }
-                Button("Cancel", role: .cancel) {}
+                Button("Cancel") { confirmingSignOut = false }
             } message: {
                 Text("Your collection stays in your account. Sign in again on any phone and it comes back.")
             }

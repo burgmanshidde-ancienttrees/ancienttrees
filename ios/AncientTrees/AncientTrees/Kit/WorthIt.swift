@@ -27,7 +27,7 @@ final class MyVotes {
         guard let token = await account.freshToken() else { byTree = [:]; return }
         let r = Supa.request("/rest/v1/submissions?select=tree,kind,why&kind=eq.feedback",
                              method: "GET", token: token)
-        guard let (data, _) = try? await URLSession.shared.data(for: r),
+        guard let (data, _) = try? await Net.data(for: r),
               let rows = try? JSONSerialization.jsonObject(with: data) as? [[String: Any]]
         else { return }
         var found: [String: String] = [:]
