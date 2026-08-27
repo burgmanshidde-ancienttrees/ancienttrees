@@ -11,6 +11,10 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 <!-- archive-index -->
 
 
+## 2026-08-27 (night run) - Paris +1, Vienna and Perugia checked clean
+
+Continued rule 1(a) down the READY list. Vienna (5 candidates) and Perugia (1) both checked out as genuinely still blocked, none of it a forbidden reason: dwarf ornamental cultivars, unresolved courtyard access at Naturdenkmal addresses, a cedar sitting right at the edge of a schoolyard with no way to tell street from grounds. Recorded each so a future pass reads the answer instead of re-running the search. Paris shipped 1 of 3 (a Turkey Oak held only for lacking a second source), left 2 genuinely blocked (a multi-year construction closure, an unconfirmed tree identity). Wrote the French translation. Build, qa.py, superlatives.py, preflight.py, pagegaps.py all clean. Pushed (`2d378d0c`).
+
 ## 2026-08-27 (night run) - Naples 20 to 22, plus a leads.py fix that saved Amsterdam from a repeat mistake
 
 Third city off rule 1(a). Between Bucaco and Naples, sampling Amsterdam's 5 READY leads turned up something different from the usual pattern: they were the exact five trees Hidde pulled from the published city on 2026-08-23 for exceeding the paid-entry ratio, still fully verified and one merge away from silently reproducing the 39-tree/10-paid state he rejected. Fixed `leads.py` to hold anything carrying a `pulled_from_city` field (also caught 2 Leiden entries with the same problem); READY drops from 74 to 61 corpus-wide. Then Naples: 2 of 6 READY leads shipped on real merit, the other 4 checked and confirmed genuinely still blocked (a register girth disagreement, two unconfirmed institutional-access questions, one open species-identity conflict). Build, qa.py, superlatives.py, preflight.py, pagegaps.py all clean throughout. Pushed (`38246b82`).
