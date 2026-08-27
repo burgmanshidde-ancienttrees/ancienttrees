@@ -3616,6 +3616,13 @@
         "tokens": 0,
         "trees": 1,
         "note": "Session work, no dispatched pass. Zaragoza's 3, Brno's 2 and Trento's 2 READY candidates all checked and confirmed genuinely still blocked for real reasons (unwalkable road/rail margins, declining condition on a 2005 survey, an active construction site confirmed by 2026 local news, a museum requiring booking and currently closed, private villa access questions already checked twice with no resolution). None a forbidden reason. Wroclaw's 'Witness Plane' (Swiadek) shipped as wro_005: found a real second source (a detailed local dendrology blog) plus an OSM node individually naming and tagging this exact tree, resolving the earlier pass's 'not verified for time' hold. Not walkable with the existing 4-oak Wielka Wyspa cluster (>1km away), shipped as the city's second stop. Fixed intro/meta_description/question_meta/question_context/two FAQ answers to honestly reflect 5 trees across 2 stops rather than 4 on one walk; preflight caught a stale promise-count regex trigger and an over-length paragraph, both fixed. Build (3003 pages), qa.py, superlatives.py, preflight.py, pagegaps.py all clean."
+      },
+      {
+        "target": "munich",
+        "kind": "verify",
+        "tokens": 0,
+        "trees": 1,
+        "note": "Session work, no dispatched pass. Munich's red oak of Hartmannshofen, held only for lacking an age figure ('failed our bar only on age'), a forbidden reason. Found a real second source (Wochenanzeiger local news) giving girth/height and a good story: a 2006 application that took until 2021 to clear amid nature-protection law updates. Age is an explicitly-attributed enthusiast estimate (~250 years), stated as such rather than presented as measured. Aarhus and Sorrento's remaining single candidates checked and left alone for real reasons (parsonage/church-office access plus an unresolved 14km transit question; single-source-only with no second source found despite searching, respectively)."
       }
     ]
   }
