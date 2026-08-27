@@ -11,6 +11,12 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 <!-- archive-index -->
 
 
+## 2026-08-27 (night run) - Bari opens at 4 trees, two submissions closed out
+
+`visitors.py`: 518 visits, 829 page views over the last 7 days, roughly flat (49-94/day). `prepare.py`: 42 cities staged for verify, shelf already stocked, nothing new to do there. `health.py` rung 2 clear (no BLOCKER, nothing stale). Rung 1: two unprocessed submissions, both non-actionable (#40 a "worth it" vote on Amsterdam's ams_001, unresolvable user; #41 confirmed via the Supabase admin API as Hidde's own test of the app's collect form, same Bilderdijklaan block as an earlier known test), both set `outcome: holds` and marked processed.
+
+Rung 4: `city_queue.py --next` put Bari (#43) at the top of stage 1, but it had been stuck at 3 of the 4-tree floor since 2026-08-21 with every in-city and day-trip register candidate already checked and blocked, and CLAUDE.md forbids re-litigating that. Found the 4th tree through a route the earlier passes hadn't used: `bari-wikidata-candidates.json` (empty when last checked 2026-08-20) now carries the Lie Tree of Quasano, a holm oak 29.8km out in a Toritto hamlet, corroborated by two registers plus FAI's "I Luoghi del Cuore" listing, Italian Botanical Heritage and a 2021 local news article; reverse-geocoded the register point to confirm it stands on a public pedestrian way, clearing hard rule 10. Wrote the story, merged all 4 into `data/cities/bari.json` (new city file, since it had no data/cities entry or city-list.json row before this), seeded the missing city-list.json/city-queue.json rows, ran `city_queue.py`, `city_names.py`, `tree_index.py`, `preflight.py` (caught two over-length meta fields, fixed), build (clean, 2977 pages) and `qa.py`/`superlatives.py` (both clean; the one sitemap-lastmod warning is this sandbox's known shallow-checkout artifact, not real). Photo left as an honest gap; a Wikidata-linked Commons image exists but wasn't viewed (this runner's egress proxy blocks Wikimedia) and its filename suggests it may show the neighbouring chapel rather than the tree, so it needs a real look before anything gets approved. Logged to `data/agent-costs.json`, `data/leads/bari.json` and `CURATION.md`. Committed and pushed (`38588bf9`).
+
 ## 2026-08-27 (session, late) - The gate could never finish, and two more bugs in your own trees
 
 Two things you asked for after the first round: make the gate blocking, and test the code that holds your own trees.
