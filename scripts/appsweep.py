@@ -142,7 +142,11 @@ def screens(sub):
         ("feedback",      ["-tab=2", "-feedback"], 5),
         ("sponsor",       ["-tab=2", "-sponsor"], 5),
         ("profile-edit",  ["-tab=2", "-profile-edit"], 5),
-        ("people",        ["-tab=2", "-people"], 5),
+        # WITH ROWS IN IT (-people-demo), because an empty list cannot show
+        # the report and block controls, and those are the two the App Store
+        # checks by tapping.
+        ("people",        ["-tab=2", "-signed-in", "-people", "-people-demo"], 5),
+        ("blocked",       ["-tab=2", "-signed-in", "-settings", "-blocked"], 5),
     ]
     names = [p[0] for p in plan]
     dupes = sorted({n for n in names if names.count(n) > 1})

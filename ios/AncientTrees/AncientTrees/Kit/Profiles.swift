@@ -103,6 +103,17 @@ public final class Profiles {
         return (try? JSONDecoder().decode([Profile].self, from: data)) ?? []
     }
 
+    /// Names and pictures for a set of ids. The blocked list keeps ids and
+    /// nothing else, and a screen that lists ids is a screen nobody can use.
+    public func byIds(_ ids: [String], token: String?) async -> [Profile] {
+        guard !ids.isEmpty else { return [] }
+        let list = ids.joined(separator: ",")
+        guard let data = try? await send(request(
+            "profiles?select=user_id,display_name,avatar_url&user_id=in.(\(list))",
+            "GET", token: token)) else { return [] }
+        return (try? JSONDecoder().decode([Profile].self, from: data)) ?? []
+    }
+
     private func send(_ r: URLRequest) async throws -> Data {
         let (data, response) = try await URLSession.shared.data(for: r)
         let code = (response as? HTTPURLResponse)?.statusCode ?? 0
