@@ -51,6 +51,14 @@ That is the argument for the whole morning in one paragraph: there were two brok
 
 One thing I have left alone rather than changed at the end of a long day: with location off the sheet still says "25 trees you can see", which is Amsterdam's trees rather than yours. The chip above it says location is off, so it is not misleading in place, but the wording is worth a look.
 
+**And the upgrade, which turned up the worst bug of the day.** An upgrade is old bytes meeting new code, so it can be tested by writing the old bytes down rather than installing one build over another, which is also repeatable in a way a real install is not.
+
+CatalogueStore's own comment has promised since it was written that the bundled catalogue is the floor and there is always something to fall back to. It was not true. The fallback was per file and per PRESENCE: a downloaded trees.json that EXISTED was preferred whether or not it could still be read. So any phone that had ever synced, meeting a release where a model gained a required field, would have come up with no catalogue at all. An empty map, an empty Discover, and no way out but delete and reinstall, with a perfect bundled copy sitting beside it the whole time. Not a few unlucky people: everybody, at the same moment, on the day of an update. I proved it by taking the fix back out and watching the tests go red.
+
+The stale copy is now thrown away too, because refresh() asks whether the version changed and it has not, so nothing would ever have replaced it and every launch would pay for it again.
+
+**Plus a smaller ratchet that costs nothing: the names on disk are pinned.** `saved.entries.v1`, `ancienttrees.last_fix` and the `sightings` folder are asserted literally, because renaming one is a silent data loss no compiler notices: the old rows simply stop being found and a phone that had everything looks empty. That test is where somebody is told to write a migration first.
+
 **Still not done, and they are yours or next:** the largest accessibility text and dark mode in the screen sweep, a fresh-eyes reviewer for the app, TestFlight, and a release you have walked through once before you need to do it under pressure.
 
 
