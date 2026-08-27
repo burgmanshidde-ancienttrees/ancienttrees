@@ -58,6 +58,23 @@ jobs:
       - name: QA the built site
         run: python3 scripts/qa.py
 
+      # THE PHONES, which nothing here used to think about.
+      #
+      # The app reads five of these feeds off the live site and this workflow
+      # runs several times a day. A field that disappears or changes type breaks
+      # every installed copy at once, and silently: the app fails safe and keeps
+      # the data it already had, so nobody crashes and nobody reports anything
+      # while every phone in the world quietly stops updating.
+      #
+      # It compares what is about to be published against what is live right
+      # now, so there is no second copy of the feed shape to drift. Additions
+      # are ignored and happen weekly; removals and type changes are the event.
+      # The authoritative check is the app's own decoder in
+      # AncientTreesTests/LiveFeedContract.swift; this is the early warning, at
+      # the moment the change is made.
+      - name: Will the app still read these feeds
+        run: python3 scripts/feedshape.py --dist site/dist
+
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
