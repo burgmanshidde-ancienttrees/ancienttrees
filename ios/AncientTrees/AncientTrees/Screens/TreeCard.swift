@@ -41,6 +41,19 @@ struct TreeCard: View {
         }
         .background(Brand.surface)
         .clipShape(.rect(cornerRadius: corner))
+        // The hairline belongs to the CARD, not to the screen behind it.
+        // Hidde, 2026-08-27: "de kaart van de boom heeft de ene keer een lijn
+        // eromheen en de andere keer niet." There was never a line: the card
+        // fills Brand.surface, which is white in light mode, so it read as a
+        // card on any screen whose background differed and dissolved into the
+        // page on any screen that was also white. Ten call sites, ten
+        // different backgrounds, one card that could not decide what it was.
+        // Drawing it here makes the tile look the same everywhere by
+        // construction rather than by every caller remembering.
+        .overlay {
+            RoundedRectangle(cornerRadius: corner, style: .continuous)
+                .strokeBorder(Brand.hairline, lineWidth: 1)
+        }
         // The tap area is the visible card and nothing more. The photograph
         // is drawn with .fill inside a 190 point box and .clipped() clips the
         // DRAWING only: the image still measured 33 points above and below
