@@ -83,6 +83,14 @@ The stale copy is now thrown away too, because refresh() asks whether the versio
 
 **Plus a smaller ratchet that costs nothing: the names on disk are pinned.** `saved.entries.v1`, `ancienttrees.last_fix` and the `sightings` folder are asserted literally, because renaming one is a silent data loss no compiler notices: the old rows simply stop being found and a phone that had everything looks empty. That test is where somebody is told to write a migration first.
 
+**The fresh-eyes review for the app already existed, and I nearly built a second one.** CLAUDE.md said in plain words that the app had no reviewer and named it the honest next gap; that sentence was written before 25 August and never updated. review.yml has been reading six app screenshots a night since then, rotated so every screen is seen inside four nights. My own memory note says a handover claim is a claim to check, and I did not check it.
+
+**What was actually wrong was subtler and worth more: the reviewer had been failing on its own schedule for three mornings and nothing noticed.** Running it by hand later in the day worked, left a green run behind, and every check we have read that as healthy. The cause I can see in the log is only a signature: one turn, zero cost, no model usage and no error message, at 06:10, ten minutes after a night run starts. You say the allowance is fine, so it is something else at that hour; the fix works either way. There is a second attempt at 12:30 UTC now that does nothing at all when the morning one succeeded.
+
+**And the alarm learned the question that would have caught it.** Beside "did the newest run fail" and "has anything passed at all", it now asks: of the runs this job started BY ITSELF, did the newest one fail? Within a minute of being taught that, it found that **the weekly analysis has been dead since 24 August**, at 05:30, two minutes before a night run, in exactly the same way. The weeks it worked are the tell: GitHub happened to delay it to 08:02 and 10:03. Moved to Monday 11:30, inside the only window the night chain leaves alone.
+
+One more thing the same change fixed: the alarm asked for the last hundred runs across all workflows and grouped them, which in a repository this busy reaches back **four hours**. Every job that runs once a day fell out of the window and read as fine. It asks each workflow separately now, seven small calls side by side, and it got faster rather than slower.
+
 **Still not done, and they are yours or next:** the largest accessibility text and dark mode in the screen sweep, a fresh-eyes reviewer for the app, TestFlight, and a release you have walked through once before you need to do it under pressure.
 
 
