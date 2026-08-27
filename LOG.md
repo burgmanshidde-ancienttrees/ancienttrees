@@ -11,6 +11,27 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 <!-- archive-index -->
 
 
+## 2026-08-27 (session, late) - The gate could never finish, and two more bugs in your own trees
+
+Two things you asked for after the first round: make the gate blocking, and test the code that holds your own trees.
+
+**The gate was not being ignored. It could not finish.** Its last seventeen finished runs were ALL cancelled and not one had passed. A run takes 40 to 75 minutes, an afternoon of app work pushes more often than that, and each push cancels the run before it. So there was no verdict to read, and a real bug sat inside that silence for three days. Cancelling stays, because judging a commit that has already been replaced is not worth a runner's half hour; what is new is a scheduled run at 05:00 and 17:00 with a concurrency group of its own that a push cannot touch. Twice a day something now finishes and says yes or no.
+
+**And the alarm goes off where somebody is standing.** The session brief, the first thing in front of every session and in front of you, now names a broken gate above everything else. Deliberately NOT on "cancelled", because every workflow here cancels its own predecessor and an alarm that fires daily stops being believed. It asks two questions: did the newest finished run fail, and has anything succeeded at all. The second is what caught this.
+
+**Plus a pre-push hook, kept deliberately cheap.** It runs netcheck, the screen lists and the app icon check, all of which cost under a second, and refuses the push if any says no. Not the build and not the tests: a hook that takes five minutes is a hook everybody bypasses within a week, and that half is CI's job now that its verdict is unmissable. Enable per clone with `git config core.hooksPath scripts/hooks`.
+
+**Then your own trees, 385 lines that had never had a test.** That is a strange sentence to be able to write about the only thing in this app that exists nowhere else. A tree of ours that goes wrong is an edit; a tree of yours is a photograph you took while standing somewhere. Nineteen tests now, and most of them are about a file that is WRONG in some way, because the ordinary path was never what took anybody's trees.
+
+**Two more real bugs, both found the moment a test looked.**
+
+1. **Every photograph you take was saved at nine times the intended size.** `downsized` says 1600 pixels and about 300 KB in its own comment, and it was producing 4800 pixels and several megabytes, because the renderer draws at the screen's scale unless told otherwise and every modern iPhone is 3x. Nobody noticed because the picture looked right; it was the bytes that were wrong. It matters more this week than last, because since yesterday those photographs go to your account.
+
+2. **A file that broke twice lost the second breakage.** The salvage path asks whether it has already kept a copy, and it asked with `fileExists`, which says yes to a copy of a completely DIFFERENT earlier breakage. So it wrote over the newer bytes. That is precisely the person who has already lost trees once and is about to lose the rest. It now keeps each distinct breakage under its own name, and where the bytes cannot be kept anywhere at all it refuses to write, which is the guarantee the whole salvage path exists for.
+
+**Still not done, and they are yours or next:** the largest accessibility text and dark mode in the screen sweep, a fresh-eyes reviewer for the app, TestFlight, and a release you have walked through once before you need to do it under pressure.
+
+
 ## 2026-08-27 (session, evening) - The app is tested where it actually fails, and two real bugs fell out of it
 
 Hidde asked the question this should have been asked weeks ago: "ik heb niet het idee dat we de app heel actief aan het stress testen zijn." He was right, and the reason was structural rather than lazy.
