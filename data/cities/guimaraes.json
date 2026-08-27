@@ -2,8 +2,8 @@
   "city": "Guimaraes",
   "country": "Portugal",
   "status": "needs_curation",
-  "intro": "Guimaraes calls itself the birthplace of Portugal, and its oldest trees keep that history in a different register. Two plane trees on the lawn below the Paco dos Duques predate the palace's own 1930s reconstruction. An olive in the cathedral cloister carries the legend that gave the city its patron her name, and eighteen camellias at the Palacio Vila Flor put Guimaraes on Portugal's own Camellia Route. Up the Penha slope, an undated oak shades a baroque water tank in a monastery garden. Out west, a stone pine with a crown wider than it is tall holds a roundabout.",
-  "meta_description": "Six classified trees in Guimaraes: an olive from a 1342 miracle, camellias on the Camellia Route, an undated monastery oak and a pine holding a roundabout",
+  "intro": "Guimaraes calls itself the birthplace of Portugal, and its oldest trees keep that history in a different register. Two plane trees below the Paco dos Duques predate the palace's 1930s reconstruction. An olive in the cathedral cloister carries the legend that named the city's patron, and eighteen camellias at the Palacio Vila Flor put Guimaraes on Portugal's Camellia Route. Up the Penha slope, past an undated monastery oak, the cable car's summit holds a Douglas fir and a giant eucalyptus, both recently classified. Out west, a stone pine with a crown wider than it is tall holds a roundabout.",
+  "meta_description": "Eight classified trees in Guimaraes: an olive from a 1342 miracle, camellias on the Camellia Route, a monastery oak and two giants on Monte da Penha.",
   "question_meta": "Guimaraes' oldest tree by measured age is a camellia at the Palacio Vila Flor, planted around 1830. An undated monastery oak may well be older.",
   "question_answer": "Guimaraes' oldest tree by any published measurement is one of the eighteen camellias in the terraced gardens of the Palacio Vila Flor, planted around 1830 and measured at roughly 195 years in Portugal's tree register. Two plane trees below the Paco dos Duques, at about 165 years, and three Himalayan cedars at the municipal cemetery, around 115, are the next oldest confirmed ages here. One tree on this page is probably older than all of them and cannot be ranked: the oak at Santa Marinha da Costa, which the pousada's own guide calls several centuries old and which nobody has ever dated on its own. An olive in the cloister of Nossa Senhora da Oliveira carries the city's founding legend, dated to 1342, but no source ties that trunk to that year and the register records no age for it.",
   "question_context": "The camellias, the planes and the cedars all trace their ages to the same 2011 classification pass by Portugal's forestry institute, which is why they agree with each other to within a plausible margin. The camellias are worth the walk regardless of the number: Guimaraes and the wider Minho market themselves, with reason, along a Camellia Route, and eighteen trees on one estate is a collection rather than a curiosity. The oak at Santa Marinha da Costa is the interesting gap. Its trees were classified as a group in 1940, and the group's 290 years, measured in 2006, covers six species including a eucalyptus, which cannot have stood there that long, so the figure says nothing about the oak. The olive is the other open question. City tradition holds that a merchant set a crucifix beside a long-dead olive in the square in 1342 and that it turned green three days later, the miracle that named the church, the quarter and the city's coat of arms. The legend is well documented. That today's tree is the miracle tree is not, so the age is left open rather than implied.",
@@ -14,11 +14,11 @@
     },
     {
       "q": "Can you walk between them?",
-      "a": "The first four, yes. The plane trees, the olive, the camellia garden and the cemetery cedars sit in and just outside the UNESCO centre, under three kilometres end to end. The monastery oak is a 25 minute climb east up the Costa slope, and the Silvares pine is 4.5 km west, on the city bus."
+      "a": "The first four, yes. The plane trees, the olive, the camellia garden and the cemetery cedars sit in and just outside the UNESCO centre, under three kilometres end to end. The monastery oak is a 25 minute climb east up the Costa slope, the Silvares pine is 4.5 km west on the city bus, and the Douglas fir and eucalyptus at Monte da Penha ride up together on the city's cable car, a separate outing to the mountain top."
     },
     {
       "q": "Do they cost anything to see?",
-      "a": "Almost none of them. The planes, the camellias, the cedars and the Silvares pine all stand on open public ground, and the monastery gardens are open to visitors as well as hotel guests. The one exception is the olive tree, reached through the cloister of the Museu de Alberto Sampaio for a one euro add-on to the museum ticket."
+      "a": "Almost none of them. The planes, the camellias, the cedars, the Silvares pine and the two trees on Monte da Penha all stand on open public ground, and the monastery gardens are open to visitors as well as hotel guests. The cable car up to Monte da Penha is a paid ride, though the summit itself has no gate or ticket. The one exception on the ground is the olive tree, reached through the cloister of the Museu de Alberto Sampaio for a one euro add-on to the museum ticket."
     },
     {
       "q": "Which has the best story?",
@@ -242,6 +242,70 @@
         "status": "missing"
       },
       "notes": "Pin is the register's rounded coordinate, so approximate, but the tree itself is unmistakable: the only large pine on the roundabout of the old ER 206 where it meets Rua 25 de Abril. Flagged because the girth, height and age all come from the ICNF register alone, with the municipal list as the second source for the classification rather than for the measurements. Age is the 2011 figure of 100 carried forward."
+    },
+    {
+      "id": "gui_007",
+      "name": "The Douglas Fir of Monte da Penha",
+      "species": "Douglas Fir (Pseudotsuga menziesii)",
+      "age_estimate": "roughly 90 years",
+      "age_min": 70,
+      "age_max": 110,
+      "girth_cm": 480,
+      "location": {
+        "address": "Monte da Penha, next to the Santuario de Nossa Senhora do Carmo da Penha, Costa, Guimaraes",
+        "latitude": 41.43194444,
+        "longitude": -8.269638889,
+        "neighbourhood": "Monte da Penha"
+      },
+      "verified_sources": [
+        "https://www.cm-guimaraes.pt/areas-de-intervencao/ambiente-e-sustentabilidade/urbanismo/patrimonio-e-bens-classificados/arvores-e-arvoredo-de-interesse-publico",
+        "https://maisguimaraes.pt/camara-submete-candidatura-a-classificacao-de-arvoredo-de-interesse-publico/",
+        "https://labpaisagem.pt/noticia/arvore-do-ano-de-guimaraes-2022/",
+        "data/registers/portugal-icnf.json (processo AIP030812109I)"
+      ],
+      "access": "Free, open public ground on Monte da Penha next to the Santuario da Penha. No gate or ticket for the summit park itself.",
+      "transport": "Teleferico de Guimaraes (cable car) from the city centre, about 10 minutes for the 1.7 km ride, then a short walk to the sanctuary grounds; also reachable by road/car. Roughly 2.9 km from the historic centre as the crow flies.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Guimaraes' cable car climbs 1.7 kilometres up Monte da Penha in about ten minutes, and at the top, beside the art-deco sanctuary that gives the mountain its shrine, stands a Douglas fir nobody had separately catalogued until the city's own tree register caught up with it in 2021.\n\nTwo earlier passes at this site both missed it, folded by mistake into a huge, 790-specimen forest classification that covers most of Penha's woodland and cannot be visited as a single tree. This one is different: individually designated, its own case number, its own protection order. It measures 4.8 metres round and stands 35 metres tall, big enough that in 2022 it made the shortlist for Guimaraes' own Tree of the Year.\n\nDouglas fir is native to the Pacific coast of North America, planted across Europe from the mid-1800s for timber and, on hilltops like this one, for the view a fast-growing conifer gives quickly. The register puts this specimen at roughly ninety years, though nobody has published the year it went into the ground, so treat the number as the register's own reading rather than a certainty.\n\nIts neighbour, a giant eucalyptus a hundred and seventy metres away, shares the same summit and the same story: overlooked, then found. Together they make Monte da Penha two stops rather than one.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "gui_008",
+      "name": "The Giant Eucalyptus of Monte da Penha",
+      "species": "Tasmanian Blue Gum (Eucalyptus globulus)",
+      "age_estimate": "roughly a century",
+      "age_min": 90,
+      "age_max": 130,
+      "girth_cm": 705,
+      "location": {
+        "address": "Monte da Penha, near the Santuario de Nossa Senhora do Carmo da Penha, Costa, Guimaraes",
+        "latitude": 41.43319444,
+        "longitude": -8.268583333,
+        "neighbourhood": "Monte da Penha"
+      },
+      "verified_sources": [
+        "https://ominho.pt/eucalipto-gigante-em-guimaraes-classificado-como-arvoredo-de-interesse-publico-pelo-icnf/",
+        "https://www.cm-guimaraes.pt/areas-de-intervencao/ambiente-e-sustentabilidade/urbanismo/patrimonio-e-bens-classificados/arvores-e-arvoredo-de-interesse-publico",
+        "https://labpaisagem.pt/noticia/arvore-do-ano-de-guimaraes-2022/",
+        "data/registers/portugal-icnf.json (processo AIP03081271I)"
+      ],
+      "access": "Free, open public ground on Monte da Penha. No gate or ticket for the summit park itself.",
+      "transport": "Teleferico de Guimaraes (cable car) from the city centre, about 10 minutes for the 1.7 km ride, then a short walk to the sanctuary grounds; also reachable by road/car. Roughly 2.9 km from the historic centre as the crow flies, about 170 m from the Douglas fir (gui_007 candidate).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Seven metres and five centimetres round at chest height, thirty-nine metres tall, a crown that spreads twenty-nine metres wide: the giant eucalyptus of Monte da Penha is built at a scale that makes the sanctuary beside it look modest.\n\nThe blue gum is not native to Portugal, brought from Australia in the nineteenth century for timber and now naturalised across the country's hillsides, but few individual specimens ever reach this size. When Portugal's forestry authority classified it as a tree of public interest in 2020, it drew a fifty-metre protection zone around the base, banning earthworks and excavation nearby, the kind of order usually reserved for a tree the authorities actively worry about losing.\n\nIt was already a landmark before the paperwork caught up. Press coverage from the classification describes it as a specimen admired by visitors to the Penha hills, and in 2022 it was shortlisted for Guimaraes' own Tree of the Year alongside the Douglas fir standing a hundred and seventy metres away, the other half of a summit that turns out to hold two record-scale trees rather than one.\n\nReach both by Guimaraes' cable car, a ten-minute ride up from the city centre, or by road.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
