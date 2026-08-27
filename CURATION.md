@@ -9,6 +9,16 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-27 (night run) - Rome checked clean; Warsaw +2 from its own Botanical Garden; three register-open scouts, none tractable today
+
+Rome's 3 READY leads confirmed genuinely blocked: real day-trip-boundary failures with the transit research already done in an earlier pass (Parco Francesco Salerno at 14km northwest, current local reporting puts it at 55 minutes to over an hour by bus). Not a forbidden reason, correctly held.
+
+Tried opening a new stage-1 city from register supply instead of continuing down READY (rule 1(c)/(d)): Salzburg has 86 unmined candidates but the data is thin (no girth/height/name fields, just coordinates) and its clusters loose (2.7 to 3.3km spreads); Taormina's 5 nearest MASAF candidates (a dragon tree, a fig grove, two cypresses, an 8m-girth carob, all within 1km of each other) all stand on Hotel Excelsior Palace grounds, and the hotel's own marketing copy ("guests have access to the largest Mediterranean park in the city") gives no indication of public access, so the whole cluster fails hard rule 10 test 1; recorded as a fresh `data/leads/taormina.json`. Rothenburg ob der Tauber's 28 candidates are similarly thin and scattered (1.2 to 12.7km). None tractable for a quick open; left for a dedicated pass with more time.
+
+Shipped 2 in Warsaw instead: a maple-and-elm pair and a columnar-oak pair at Warsaw University's Botanical Garden, both 50-60m from the already-published 1824 ginkgo (war_011), held only for lacking a second source, which the 2026-08-10 ruling forbids. Shipped as distinct collectible points (different gates, different protection orders) rather than folded into the ginkgo's entry, matching the corpus's established pattern of several separate entries inside one botanical garden. Fixed Warsaw's own stale "ten"/paid-ratio FAQ line (now 33% paid, right at the "about a third" line but not over it). Build (3002 pages), qa.py, superlatives.py, preflight.py, pagegaps.py all clean.
+
+**Infrastructure note: this session's git push token (a GitHub App installation token, roughly 1-hour lifetime) expired mid-run around 17:53 UTC.** Working locally since, retrying push periodically; several commits queued.
+
 ## 2026-08-27 (night run) - Vienna and Perugia: zero shipped, both genuinely correct; Paris: one Turkey Oak
 
 Continued rule 1(a) down the READY list. Vienna's 5 stayed leads on inspection: two are the same paired planting of Catalpa bignonioides "Nana", a dwarf ornamental cultivar, one just 10 years old at 37cm girth, nothing remarkable about either regardless of the loosened age/size rule; three are Naturdenkmal-protected trees at residential Vienna addresses (an apartment courtyard, a street near a cafe block, a Cottage-belt villa garden) where access genuinely could not be confirmed either way, checked again this pass with no new evidence found. Perugia's one live candidate, a cedar of Lebanon, sits roughly 40m from a school building with nothing distinguishing street frontage from schoolyard; left per the school-evidence rule rather than guessed at.
