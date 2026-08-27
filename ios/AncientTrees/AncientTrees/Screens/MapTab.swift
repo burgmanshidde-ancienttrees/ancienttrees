@@ -290,8 +290,8 @@ struct MapTab: View {
         // it only stays the same if there is one of it.
         MapWithSheet(height: $sheetHeight, topItem: $topCard) {
             TreeMap(trees: shownWalk.map { catalogue.trees(of: $0) } ?? mapTrees,
-                    mine: sightings.yoursOnly.map { (id: $0.id, lat: $0.lat, lng: $0.lng, name: $0.name,
-                                                     photo: sightings.image($0)) },
+                    mine: mineShown.map { (id: $0.id, lat: $0.lat, lng: $0.lng, name: $0.name,
+                                           photo: sightings.image($0)) },
                     collected: collectedIds,
                     favourites: favouriteIds,
                     onSelectMine: { navigator.push = .mine($0) },
@@ -589,11 +589,23 @@ struct MapTab: View {
         .padding(.horizontal, 16).padding(.bottom, 6)
     }
 
+    /// Yours, through the same filters ours go through.
+    ///
+    /// The pins and the list read this one property, because the bug it fixes
+    /// was exactly two places reading the store direct and neither of them
+    /// asking `filters` anything (2026-08-27).
+    private var mineShown: [Sightings.Sighting] {
+        sightings.yoursOnly.filter {
+            filters.keeps($0, favourites: favouriteIds)
+                && filters.keepsDistance(Geo.km(focus, ($0.lat, $0.lng)))
+        }
+    }
+
     /// Yours, near where the map is looking. They live on their own layer on
     /// the map and were missing from the list entirely, which made them feel
     /// like decoration rather than trees.
     private var minesInView: [Sightings.Sighting] {
-        sightings.yoursOnly
+        mineShown
             .filter { Geo.km(focus, ($0.lat, $0.lng)) <= reachKm }
             .sorted { Geo.km(focus, ($0.lat, $0.lng)) < Geo.km(focus, ($1.lat, $1.lng)) }
     }

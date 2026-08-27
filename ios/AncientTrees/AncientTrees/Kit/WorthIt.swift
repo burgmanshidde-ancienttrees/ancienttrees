@@ -47,6 +47,7 @@ struct WorthItView: View {
     let tree: Tree
 
     @Environment(Account.self) private var account
+    @Environment(VoteCounts.self) private var counts
     @AppStorage private var vote: String
     @State private var whyOpen = false
     @State private var reported: Bool
@@ -129,6 +130,7 @@ struct WorthItView: View {
             guard account.isSignedIn else { signingIn = true; return }
             if vote == dir {
                 send("vote undone", vote == "up" ? "worth it" : "not worth it")
+                counts.record(tree.id, from: vote, to: "")
                 vote = ""
                 whyOpen = false
                 return
@@ -136,12 +138,29 @@ struct WorthItView: View {
             if !vote.isEmpty {
                 send("vote undone", vote == "up" ? "worth it" : "not worth it")
             }
+            counts.record(tree.id, from: vote, to: dir)
             vote = dir
             send(dir == "up" ? "worth it" : "not worth it", nil)
             whyOpen = (dir == "down")
         } label: {
-            Image(systemName: vote == dir ? icon + ".fill" : icon)
-                .frame(minWidth: 44, minHeight: 44)
+            // THE FIGURE SITS ON THE CONTROL IT IS ABOUT (Hidde, 2026-08-27:
+            // "zet gewoon bij thumb hoeveel mensen thumb up of down hebben
+            // gedaan verder niet"), which is where YouTube, Reddit and every
+            // review page put one, and it replaces the sentence that used to
+            // stand under the tree's name.
+            //
+            // Nothing at all until somebody has voted: a 0 beside a thumb on a
+            // tree we chose to publish reads as a verdict, and it is only an
+            // empty table.
+            HStack(spacing: 6) {
+                Image(systemName: vote == dir ? icon + ".fill" : icon)
+                if let n = dir == "up" ? counts.up(tree.id) : counts.down(tree.id) {
+                    Text("\(n)")
+                        .font(.subheadline.weight(.semibold))
+                        .monospacedDigit()
+                }
+            }
+            .frame(minWidth: 44, minHeight: 44)
         }
         .buttonStyle(.bordered)
         .tint(vote == dir ? Brand.moss : .secondary)
