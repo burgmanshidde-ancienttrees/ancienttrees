@@ -9,6 +9,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-27 (night run) - Submissions 40-41: a worth-it vote and Hidde's own test of the collect form
+
+Row 40 (`kind: feedback`, `why: "worth it"`) is a plain positive vote on Amsterdam's ams_001 (The Heimanseik, Artis), same shape as the Sardinia/Lisbon/Helsinki precedents: no free-text complaint, nothing to check against sources. Its `user_id` does not resolve to any current account via `/auth/v1/admin/users` (only 4 users exist; this one is gone), so there is nobody to reply to even if a reply were warranted. Nothing changed in `data/cities/amsterdam.json`.
+
+Row 41 (`kind: tree`, city "Baarn", `why: "Test"`, GPS 52.20715,5.28877) resolves to burgmans.hidde@gmail.com via the admin API, confirming it as Hidde's own click-through test of the app's `app:collect` submission flow rather than a reader report: no tree name, no description beyond the word "Test". The point reverse-geocodes to Bilderdijklaan 31, Baarn, 98m from the residential address checked and left open in the 2026-08-26 session's row 37 (also Bilderdijklaan, also inconclusive). Not treated as a lead. Both rows set `outcome: holds` via the service key and appended to `data/submissions-processed.json`.
+
 ## 2026-08-26 (night window) - Sardinia: a "worth it" vote on sar_003, no action needed
 
 Submission #39 (Supabase `submissions`, kind `feedback`) was a reader's "worth it" vote (`why: "worth it"`, no free-text complaint) on sar_003, The Olivastro of Santa Maria Navarrese. Same shape as Lisbon's #6 and Helsinki's #5: a positive signal with nothing to check against sources, stored per the vote design and shown nowhere until volume makes a count honest. Nothing changed in `data/cities/sardinia.json`. Marked processed in `data/submissions-processed.json`.

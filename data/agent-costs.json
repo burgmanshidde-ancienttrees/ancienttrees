@@ -3553,6 +3553,20 @@
         "note": "brief assumed 79 unjudged candidates; 74 were already judged by earlier passes, only 5 genuinely new, all rejected (1 wrong-tree despite good photo quality, geotag 410m off; 4 unrelated/misidentified). All 8 cities now fully exhausted in the queue.",
         "wasted": 0,
         "brief_wrong": true
+      },
+      {
+        "target": "submissions #40-41",
+        "kind": "other",
+        "tokens": 0,
+        "trees": 0,
+        "note": "Session work, no dispatched pass. Row 40 a worth-it vote on ams_001 (unresolvable user_id, no action). Row 41 confirmed as Hidde's own test of the app collect form via /auth/v1/admin/users. Both set outcome: holds, marked processed."
+      },
+      {
+        "target": "bari",
+        "kind": "verify",
+        "tokens": 0,
+        "trees": 4,
+        "note": "Session work, no dispatched pass. City stuck at 3/4 trees since 2026-08-21 (in-city and day-trip register supply exhausted). Found the 4th from the Wikidata CC0 layer (a candidate the earlier bari-wikidata-candidates.json pass, dated when that file was empty, never had): the Lie Tree of Quasano, a holm oak 29.8km out in a Toritto hamlet, corroborated by two registers plus FAI, Italian Botanical Heritage and a local news article. Merged all 4 into data/cities/bari.json (new city), fixed meta_description/question_meta length, ran city_names.py, build+qa.py+superlatives.py clean."
       }
     ]
   }

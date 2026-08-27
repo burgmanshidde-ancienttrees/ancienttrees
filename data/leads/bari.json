@@ -111,6 +111,10 @@
   {
    "date": "2026-08-21 (night run)",
    "finding": "Checked all three Molfetta candidates named above, the last unchecked day-trip supply within Puglia's regional register for Bari. All three moved to blocked, on the same shape of evidence as the rest of this file: the eucalyptus sits 300+ metres from any mapped road or track (OSM Overpass, deep in private farmland), the roverella stands close to a track but the only on-site source describes the adjoining Masseria Navarino as a walled, privately owned ruin with no mention of the tree, and the carrubo sits near a residential road in a private-house contrada with no source distinguishing it from the unrelated, definitely-public carrubo in Parco Lama Martina. None of the three had a Barinedita-style on-site visit to settle it either way, unlike the in-city trees. That exhausts every day-trip candidate this register offers within roughly 30km; Bari's 4th tree is not coming from Puglia's regional register as currently sourced. It stays at 3 verified trees below the 4-tree floor. The path forward, in order of cost: (1) a reader submission or tip, always the cheapest; (2) a from-zero web sweep for a Bari-area tree entirely outside the register (unlikely to be efficient given the register was already exhaustive for the province); (3) asking Hidde whether to widen the day-trip boundary past 30km for this one city. Do not re-run this exact check again without new source material."
+  },
+  {
+   "date": "2026-08-27 (night run)",
+   "finding": "Bari's 4th tree found and shipped: the Lie Tree of Quasano (Wikidata Q55742469, register 01/L220/BA/16), a holm oak at a hamlet centre 29.8km from Bari. Two independent web sources (FAI fondoambiente.it, Italian Botanical Heritage) plus a June 2021 local news article corroborate species, girth, height and its public roadside location; cleared hard rule 10 test 1 via reverse geocode (lands on a pedestrian way, Viale della Pineta, matching the source description of standing in front of the old masseria's gate). City published at 4 trees. See data/cities/bari.json bar_004."
   }
  ]
 }
