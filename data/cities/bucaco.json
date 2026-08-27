@@ -2,8 +2,8 @@
   "city": "Bucaco",
   "country": "Portugal",
   "status": "needs_curation",
-  "intro": "Bucaco is a forest behind a wall, and the wall is the reason it exists. Discalced Carmelite friars enclosed this hillside in 1628 and got two popes to protect it in writing, one bull threatening excommunication for anyone who damaged a tree. Four centuries of that produced 105 hectares holding more than 250 species, including the cypress that Philip Miller named after Portugal from specimens he saw here. The nine trees on this page stand within about a kilometre of each other, and one of them named a species.",
-  "meta_description": "Bucaco's ancient trees: the cedar that named a species, Europe's fourth tallest tree, and three sequoias, all inside one walled forest above Luso.",
+  "intro": "Bucaco is a forest behind a wall, and the wall is the reason it exists. Discalced Carmelite friars enclosed this hillside in 1628 and got two popes to protect it in writing, one bull threatening excommunication for anyone who damaged a tree. Four centuries of that produced 105 hectares holding more than 250 species, including the cypress that Philip Miller named after Portugal from specimens he saw here. The fourteen trees on this page stand within about a kilometre of each other, and one of them named a species.",
+  "meta_description": "Bucaco's ancient trees: the cedar that named a species, Europe's fourth tallest tree, and two sequoias, all inside one walled forest above Luso.",
   "question_meta": "The Cedro de Sao Jose, a Mexican cypress planted between 1628 and 1650 by the Carmelite friars, is the oldest tree in the Bucaco forest.",
   "question_answer": "The oldest tree in the Mata Nacional do Bucaco is the Cedro de Sao Jose, a Mexican cypress standing in the forecourt of the Ermida de Sao Jose. The forest's own plaque at its foot says it was planted between 1628 and 1650, which makes it roughly 380 years old and the oldest cedar in the forest. It is not really a cedar, and it is not Portuguese: Cupressus lusitanica comes from Mexico and Central America.",
   "question_context": "The friars arrived in 1628 and this tree went into the ground within their first two decades, which makes it one of the first exotic trees planted at Bucaco and probably one of the first of its species in Europe. The species carries the mistake in its name. When Philip Miller described it in 1768 he was looking at specimens growing here, so he called a Mexican cypress lusitanica, after Portugal, and the Portuguese call it cedro-do-bucaco after a forest it never came from. The tree is not what it was. Cyclone Gong tore through Bucaco in January 2013, felled ten notable trees and wrecked around 40 percent of the forest, and it took most of this one's height with it: the register measured 32.9 metres before, and 14 metres after. What stands now is a five and a half metre trunk inside an iron railing, broken at the top, still carrying green. Go expecting a survivor rather than a spire.",
@@ -18,7 +18,7 @@
     },
     {
       "q": "Can you walk between these trees?",
-      "a": "Yes. All nine stand inside the walled forest within about a kilometre, starting at the Largo do Mosteiro beside the Palace Hotel and ending at the Ermida de Sao Jose. Paths are forest paths and the ground is steep in places."
+      "a": "Yes. All fourteen stand inside the walled forest within about a kilometre of each other. Paths are forest paths and the ground is steep in places."
     },
     {
       "q": "Is the tallest tree in Europe here?",
@@ -361,6 +361,164 @@
       "location_precision": "confirmed",
       "girth_cm": 558,
       "verify_notes": "Checked against the Fundacao Mata do Bucaco's own Trilho das Arvores Notaveis plaque 04, sent to us by the Fundacao on 2026-08-21 and validated with the University of Aveiro. Trail plaque 04 (Sequoia sempervirens): PBH 5.58 m; the plaque records century-old specimens over 45 m tall in the forest."
+    },
+    {
+      "id": "bsc_011",
+      "name": "The Redwood of the Porta das Lapas",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 504,
+      "location": {
+        "address": "70m from the Porta das Lapas, on the path to the Lago Grande, Mata Nacional do Bucaco, 3050-261 Luso",
+        "latitude": 40.37809679,
+        "longitude": -8.371705774,
+        "neighbourhood": "Porta das Lapas"
+      },
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class (ICNF Portuguese national monumental trees register, processo AIP01110416I, girth 5.04m, height 45m, measured 2016)"
+      ],
+      "access": "Free on foot. Cars pay 5 euros at the forest gate",
+      "transport": "On the path from the Porta das Lapas (the forest's western gate) to the Lago Grande",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Bucaco's second redwood stands 70 metres from the Porta das Lapas, the forest's western gate, on the path down to the Lago Grande where the walled forest's own cork oak already grows. At 45 metres tall it matches the height of the sequoia by the Fonte de Santa Teresa on the other side of the forest, with a slightly narrower trunk, 5.04 metres round against 5.58.\n\nThis is not the pair of redwoods the forest's own biologist asked to have removed from this site in 2026, the two that used to stand by the ruined Ermida de Santo Elias: those are genuinely unreachable, off any path the forest maintains, and came down the same day the biologist wrote in. This one stands on a path visitors already walk to reach the Lago Grande, 450 metres off Bucaco's main published route but on mapped ground the whole way.\n\nSequoia sempervirens needs fog to thrive outside its native California coast, and Bucaco's Atlantic hillside supplies enough of it that this one has grown as tall in Portugal as many of its relatives do at home, part of a collection of the world's conifers that nineteenth century plant hunters spent decades assembling behind this forest wall.",
+      "verify_notes": "Single official source (ICNF register, processo AIP01110416I, measured 2016): girth 5.04m, height 45m, no age recorded. An earlier pass held this back on distance (450m off the published walk) and count; CLAUDE.md's 2026-08-10 ruling forbids both as publish blockers. Distinct from the removed bsc_005 pair (Ermida de Santo Elias), a different location the forest's own biologist confirmed unreachable in 2026 (see CURATION.md 2026-08-21); this tree's own location, on the path to the Lago Grande, is not flagged as inaccessible by any source. No second source found; ships flagged per Step 2.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bsc_012",
+      "name": "The American Ash of the Largo do Mosteiro",
+      "species": "White Ash (Fraxinus americana)",
+      "age_estimate": "about 146 years",
+      "age_min": 136,
+      "age_max": 156,
+      "girth_cm": 465,
+      "location": {
+        "address": "Largo do Mosteiro, next to the Loja da Mata, Mata Nacional do Bucaco, 3050-261 Luso",
+        "latitude": 40.37643055,
+        "longitude": -8.365758322,
+        "neighbourhood": "Largo do Mosteiro"
+      },
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class (ICNF Portuguese national monumental trees register, processo AIP01110410I, girth 4.65m, height 24m, age 136 at 2016 measurement)"
+      ],
+      "access": "Free on foot. Cars pay 5 euros at the forest gate",
+      "transport": "Largo do Mosteiro, next to the Loja da Mata (the forest's own shop)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "An American ash stands right outside the Loja da Mata, Bucaco's own forest shop, in the Largo do Mosteiro where most visitors start their walk without necessarily looking up. The register measured it in 2016 at 4.65 metres round, 24 metres tall, a canopy 26 metres wide, and gave it a precise age few trees in this forest can claim: 136 years, which puts its planting at 1880, in the decades right after the Bucaco Palace Hotel began rising over the old monastery ruins next door.\n\nFraxinus americana is native to eastern North America, one of the less exotic imports in a forest built almost entirely from foreign curiosities, but the age and the size are what earned it a place in the register regardless of how ordinary the species looks against the redwoods and bunya pines nearby. The Largo do Mosteiro already anchors two of Bucaco's published trees, and this ash simply adds a third specimen to a square most visitors cross without stopping.\n\nNo second source names this specific tree beyond the forest's own measurement, so it ships flagged rather than doubly confirmed. The register's number, at least, is an unusually precise one.",
+      "verify_notes": "Single official source (ICNF register, processo AIP01110410I, measured 2016): girth 4.65m, height 24m, crown 26m, age 136 at measurement (so roughly 146 as of 2026). Held back by an earlier pass only for lack of a second source and being a third entry at the same Largo, both reasons CLAUDE.md's 2026-08-10 ruling forbids. No second source found this pass; ships flagged per Step 2.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bsc_013",
+      "name": "The Sycamore Maple of the Lago da Fonte",
+      "species": "Sycamore (Acer pseudoplatanus)",
+      "age_estimate": "about 110 years",
+      "age_min": 100,
+      "age_max": 120,
+      "girth_cm": 252,
+      "location": {
+        "address": "Junto ao Lago da Fonte, Mata Nacional do Bucaco, 3050-261 Luso",
+        "latitude": 40.37838578,
+        "longitude": -8.367612288,
+        "neighbourhood": "Lago da Fonte"
+      },
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class (ICNF Portuguese national monumental trees register, processo AIP01110425I, girth 2.52m, height 36m, age 100 at 2016 measurement)"
+      ],
+      "access": "Free on foot. Cars pay 5 euros at the forest gate",
+      "transport": "By the Lago da Fonte, one of the forest's small lakes",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Every other tree on this page keeps its colour year round, evergreens collected from Australia, Mexico, California and Portugal's own hillsides behind one wall. This sycamore maple is the exception, and at 36 metres tall it is a remarkably big one, taller than sycamore maples usually reach even in their native central Europe.\n\nThe register measured it in 2016 at 2.52 metres round and about a century old, standing by the Lago da Fonte, one of Bucaco's several small forest lakes. Acer pseudoplatanus turns a deep gold through October and November before it drops, the one predictable burst of seasonal colour in a forest otherwise built for evergreen permanence, which makes this tree worth timing a visit around in a way none of Bucaco's conifers are.\n\nNo second source confirms this specific measurement beyond the forest's own register, so it ships flagged. What the register does establish, height and species both, is unusual enough on its own: a European tree, in a forest of imports, has quietly out-grown most of its own kind.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "October into November, when it turns gold"
+      },
+      "verify_notes": "Single official source (ICNF register, processo AIP01110425I, measured 2016): girth 2.52m, height 36m, age 100 at measurement. Held back only for lack of a second source, which CLAUDE.md's 2026-08-10 ruling forbids as a publish blocker. Genuinely valuable addition: the only deciduous, seasonally-colouring tree on a page that was otherwise entirely evergreen and carried no best_time at all. No second source found this pass; ships flagged per Step 2. Autumn colour timing for Acer pseudoplatanus in this climate zone is a well documented species trait, not specific to this individual.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bsc_014",
+      "name": "The Til of the Lago Grande",
+      "species": "Til / Stinkwood (Ocotea foetens)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 300,
+      "location": {
+        "address": "Junto ao Lago Grande, Mata Nacional do Bucaco, 3050-261 Luso",
+        "latitude": 40.37868042,
+        "longitude": -8.370032385,
+        "neighbourhood": "Lago Grande"
+      },
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class (ICNF Portuguese national monumental trees register, processo AIP01110424I, girth 3.00m, height 38m, measured 2016)"
+      ],
+      "access": "Free on foot. Cars pay 5 euros at the forest gate",
+      "transport": "By the Lago Grande, a few steps from the forest's cork oak",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Til is a laurel that should not be growing on mainland Europe at all. Ocotea foetens belongs to the laurisilva, the fog forest that survives today only on Madeira, the Canary Islands and a handful of Atlantic islands, relict woodland that once covered much of the Mediterranean before the ice ages pushed it into a few sheltered pockets. Bucaco's specimen, 38 metres tall with a 3 metre trunk, stands by the Lago Grande, a few steps from the forest's own cork oak.\n\nNobody has recorded its age. What the register does establish is size alone, and 38 metres is tall even by the standards of a forest built to grow things bigger than they grow at home: Bucaco's redwoods and blue gums are imports pushed to unusual heights by fog off the Atlantic, and here is a genuine laurisilva relict doing the same trick from the opposite direction, a species surviving on the mainland only because this one hillside happens to recreate the conditions its island cousins depend on.\n\nNo second source has been found for this specific tree, so it ships flagged, on the forest's own 2016 measurement alone.",
+      "verify_notes": "Single official source (ICNF register, processo AIP01110424I, measured 2016): girth 3.00m, height 38m, no age recorded. Held back by an earlier pass only for lack of a second source, which CLAUDE.md's 2026-08-10 ruling forbids as a publish blocker. Ocotea foetens (til) is a genuine laurisilva relict species, native range Macaronesia (Madeira, Canaries, Azores); its mainland-Portugal occurrence here is itself the noteworthy fact, stated plainly rather than embellished. No second source found this pass; ships flagged per Step 2.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bsc_015",
+      "name": "The Cedro-do-Bucaco of the Ermida do Sacramento",
+      "species": "Mexican Cypress (Cupressus lusitanica)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 420,
+      "location": {
+        "address": "Junto a ruina da Ermida do Sacramento, a 30m do Passo de Anas, Mata Nacional do Bucaco, 3050-261 Luso",
+        "latitude": 40.37605677,
+        "longitude": -8.369051474,
+        "neighbourhood": "Ermida do Sacramento"
+      },
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class (ICNF Portuguese national monumental trees register, processo AIP01110413I, girth 4.20m, height 27m, measured 2016)"
+      ],
+      "access": "Free on foot. Cars pay 5 euros at the forest gate",
+      "transport": "Beside the ruined Ermida do Sacramento, 30m from the Passo de Anas",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A third Cedro-do-Bucaco grows here, beside the ruin of the Ermida do Sacramento, 30 metres from the Passo de Anas. Two of the forest's cypresses already have entries on this page, each with its own story; this one has a different kind of neighbour, a chapel that did not survive. Only its walls remain, swallowed by exactly the hillside vegetation the barefoot friars who built it once kept cleared.\n\nThe register measured this specimen in 2016 at 4.2 metres round and 27 metres tall, a genuinely large trunk even set beside the forest's other two published cypresses, one of which is the very tree that gave the species its scientific name. Three centuries and more of protection inside one walled hillside is what let all of them reach this size, whichever one a visitor happens to stop in front of.\n\nNo age is recorded for this tree and no second source names it beyond the register, so it ships flagged.",
+      "verify_notes": "Single official source (ICNF register, processo AIP01110413I, measured 2016): girth 4.20m, height 27m, crown 20.2m, no age recorded. Held back by an earlier pass only for being undated and single-sourced, which CLAUDE.md's 2026-08-10 ruling forbids as a publish blocker. Deliberately does not repeat the Philip Miller type-specimen story (already told fully by bsc_006) or the Via Sacra chapel-station story (already told by bsc_007), per P3 uniqueness; focuses on this specimen's own setting, the ruined Ermida do Sacramento. No second source found this pass; ships flagged per Step 2.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

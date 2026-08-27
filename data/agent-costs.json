@@ -3581,6 +3581,13 @@
         "tokens": 0,
         "trees": 0,
         "note": "Session work, no dispatched pass. pagegaps.py flagged both crossing the 3-tree threshold after the Barcelona batch. Both intros written from the site's own trees (Brisbane/Setubal/Barcelona for silky oak, Malaga/Barcelona x2 for avocado), no pattern. Build+qa.py clean."
+      },
+      {
+        "target": "bucaco",
+        "kind": "write",
+        "tokens": 0,
+        "trees": 5,
+        "note": "Session work, no dispatched pass. Rule 1(a): leads.py --ready listed 10 for Bucaco (single-official-source ICNF register, an already-published city, 9 to 14). Shipped 5 held only on now-forbidden reasons (distance/count, undated-single-source): a second redwood (Porta das Lapas, distinct from the removed unreachable Santo Elias pair), an American ash with a precise 136-year register age, a 36m sycamore that gives the page its first best_time (autumn colour), a laurisilva relict (til/Ocotea foetens) growing on the mainland, and a third cypress with a distinct setting (a ruined hermitage) written to avoid repeating the two already-published cypresses' own stories. Left 1 candidate (a second Mexican white pine) unshipped: its register entry carries a physically impossible height/girth pairing (100m height), a data error not resolved this pass. Two species-name collisions fixed against hard rule 9 (Sycamore not 'Sycamore Maple', Til/Stinkwood not 'Til', matching existing Amsterdam/Madeira usage). Fixed a pre-existing stale 'three sequoias' meta_description (only ever 1 was published; the other 2 were removed 2026-08-21 for being unreachable) alongside the new count. Build+qa.py+superlatives.py+preflight.py all clean."
       }
     ]
   }
