@@ -734,8 +734,16 @@ struct CollectView: View {
     /// aligned, every figure starts on the same line as the word under it and
     /// the row reads as three facts rather than three little cards.
     private func tile(_ value: String, _ label: String) -> some View {
-        VStack(alignment: .leading, spacing: 2) {
-            Text(value).font(.brand(26, .black, relativeTo: .title))
+        VStack(alignment: .leading, spacing: 1) {
+            // 20 AND BOLD, not 26 and black. Measured off his own Polarsteps
+            // screenshot rather than judged: their name and their figures have
+            // the same cap height, about 19 points, and what separates them is
+            // weight and colour rather than size. Ours ran the figure at 26
+            // against a 19 point name, so the number shouted louder than the
+            // person it belongs to and the row read as three headlines
+            // (Hidde, 2026-08-27: "die statistieken zijn veel te grote font
+            // size, probeer de hierarchie na te bootsen").
+            Text(value).font(.brand(20, .bold, relativeTo: .headline))
                 .foregroundStyle(Brand.ink).monospacedDigit()
             // One line that shrinks a little rather than a word broken across
             // two with a hyphen, which is what "Coun-try" was.
@@ -751,7 +759,9 @@ struct CollectView: View {
     /// card border in the app.
     private var rule: some View {
         Brand.hairline
-            .frame(width: 1, height: 34)
+            // Shorter with the smaller figure: the block it stands beside is
+            // about 36 points tall now rather than 46.
+            .frame(width: 1, height: 30)
             // EVEN ON BOTH SIDES, so the line sits in the middle of the gutter
             // and the three columns are the same width. With the padding on one
             // side only, each column after the first started 14 points further
