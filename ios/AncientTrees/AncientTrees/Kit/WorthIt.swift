@@ -8,6 +8,41 @@
 // account is the reply channel (the Google Maps convention).
 import SwiftUI
 
+/// Which trees this account has already voted on, read from the account rather
+/// than from this phone.
+///
+/// The vote itself has always gone to the server; what lived only on the device
+/// was the memory of having cast it, so a new phone showed every tree unvoted
+/// and let the same person say the same thing twice. Hidde, 2026-08-27: "niks
+/// moet lokaal opgeslagen zijn."
+///
+/// Read once at launch, because it is one small request and the alternative is
+/// one per tree page.
+@MainActor
+@Observable
+final class MyVotes {
+    private(set) var byTree: [String: String] = [:]
+
+    func load(account: Account) async {
+        guard let token = await account.freshToken() else { byTree = [:]; return }
+        let r = Supa.request("/rest/v1/submissions?select=tree,kind,why&kind=eq.feedback",
+                             method: "GET", token: token)
+        guard let (data, _) = try? await URLSession.shared.data(for: r),
+              let rows = try? JSONSerialization.jsonObject(with: data) as? [[String: Any]]
+        else { return }
+        var found: [String: String] = [:]
+        for row in rows {
+            guard let tree = row["tree"] as? String, let why = row["why"] as? String else { continue }
+            // An undo is a compensating row rather than a deletion, so the
+            // last word on a tree is the one that counts.
+            if why.hasPrefix("vote undone") { found[tree] = nil }
+            else if why.contains("worth it") { found[tree] = "up" }
+            else { found[tree] = "down" }
+        }
+        byTree = found
+    }
+}
+
 struct WorthItView: View {
     let tree: Tree
 

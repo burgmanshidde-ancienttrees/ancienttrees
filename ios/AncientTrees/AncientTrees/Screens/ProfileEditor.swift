@@ -23,6 +23,7 @@ struct ProfileEditor: View {
     @State private var preview: UIImage?
     @State private var saving = false
     @State private var failed = false
+    @State private var reason: String?
 
     var body: some View {
         NavigationStack {
@@ -70,8 +71,14 @@ struct ProfileEditor: View {
                 }
 
                 if failed {
-                    Text("That did not save. Try again in a moment.")
-                        .font(.footnote).foregroundStyle(.red)
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("That did not save. Try again in a moment.")
+                        if let reason {
+                            Text("What went wrong: \(reason).")
+                                .font(.caption)
+                        }
+                    }
+                    .font(.footnote).foregroundStyle(.red)
                 }
             }
             .navigationTitle("Your profile")
@@ -108,7 +115,11 @@ struct ProfileEditor: View {
             // directly, and those expire after an hour, so saving failed for
             // anybody signed in longer than that: both calls came back 401 and
             // the screen said "that did not save" without knowing why.
+            Avatars.lastFailure = nil
             guard let token = await account.freshToken() else {
+                // The commonest cause by far, and the one that was silent: a
+                // token that has expired and could not be renewed.
+                reason = "your sign-in has expired"
                 saving = false; failed = true; return
             }
             var url = profiles.me?.avatar_url
@@ -120,7 +131,11 @@ struct ProfileEditor: View {
             let ok = await profiles.save(name: name.trimmingCharacters(in: .whitespaces),
                                          avatarURL: url, userId: s.userId, token: token)
             saving = false
-            if ok { dismiss() } else { failed = true }
+            if ok { dismiss() } else {
+                reason = Avatars.lastFailure.map { "\($0) would not upload" }
+                    ?? "the server refused it"
+                failed = true
+            }
         }
     }
 }
@@ -128,6 +143,10 @@ struct ProfileEditor: View {
 /// The bucket half. One file per person, at a path only they may write, which
 /// is what the storage policies in supabase/profiles.sql enforce.
 enum Avatars {
+    /// What went wrong on the last attempt, shown on the editor rather than
+    /// swallowed. Cleared when a save starts.
+    static var lastFailure: String?
+
     static func upload(_ jpeg: Data, userId: String, token: String) async -> String? {
         let base = Submission.url.deletingLastPathComponent()
             .deletingLastPathComponent()   // .../rest/v1/submissions -> .../rest
@@ -140,10 +159,15 @@ enum Avatars {
         r.setValue("image/jpeg", forHTTPHeaderField: "Content-Type")
         r.setValue("true", forHTTPHeaderField: "x-upsert")
         r.httpBody = jpeg
-        guard let (_, response) = try? await URLSession.shared.upload(for: r, from: jpeg),
+        guard let (body, response) = try? await URLSession.shared.upload(for: r, from: jpeg),
               (200..<300).contains((response as? HTTPURLResponse)?.statusCode ?? 0) else {
+            // WHY, not just no. A failure that says nothing is a failure nobody
+            // can fix, and this one cost an afternoon of guessing between an
+            // expired token, a bucket policy and a size limit (2026-08-27).
+            lastFailure = "the picture"
             return nil
         }
+        _ = body
         return base.appendingPathComponent(
             "storage/v1/object/public/avatars/\(userId)/avatar.jpg").absoluteString
     }
