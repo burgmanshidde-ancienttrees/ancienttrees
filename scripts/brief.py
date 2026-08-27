@@ -54,9 +54,79 @@ def since_last_visit(out):
         pass
 
 
+# THE ALARM, WHERE SOMEBODY IS STANDING.
+#
+# Added 2026-08-27, and the reason is one of this project's worst weeks. iOS CI
+# had built the app, run every test and measured every screen on every push
+# since 08-20. It went RED on 08-24 and stayed red through five pushes and three
+# days, with a real bug in it the whole time: a destructive confirmation whose
+# only button was the destructive one. Nothing was wrong with the gate. Nothing
+# read it.
+#
+# health.py has watched ios.yml since 08-25, and that is a rung a RUN checks,
+# which means it is checked when a run happens to look. This is the other half:
+# the brief is the first thing in front of every session and in front of Hidde,
+# so a red gate now has to be walked past rather than found.
+#
+# ONE gh call for every workflow at once, because the hook has twenty seconds
+# and a call per workflow would eat them. Silent on every failure: no network,
+# no gh, no auth, and the brief still prints. A briefing that breaks is worse
+# than a briefing that is missing a line.
+def broken_gates(out):
+    raw = sh("gh", "run", "list", "-L", "100",
+             "--json", "workflowName,conclusion,status,createdAt")
+    if not raw:
+        return
+    try:
+        rows = json.loads(raw)
+    except Exception:
+        return
+
+    # Group the COMPLETED runs per workflow, newest first. An unfinished run has
+    # said nothing either way, and reading its empty conclusion as a failure is
+    # how a check in health.py once told a run the site was broken while a
+    # deploy was simply mid-flight.
+    done = {}
+    for r in rows:
+        name = r.get("workflowName")
+        if name and r.get("status") == "completed" and r.get("conclusion"):
+            done.setdefault(name, []).append(r)
+
+    # CANCELLED IS NOT AN ALARM ON ITS OWN, and getting this wrong would have
+    # made the whole thing useless. Every workflow here cancels its own previous
+    # run on a new push (concurrency: cancel-in-progress), so on a busy afternoon
+    # the newest finished run is cancelled almost every time. An alarm that goes
+    # off every day is an alarm nobody believes, which is the exact problem this
+    # function exists to solve.
+    #
+    # So two separate questions, because they need different answers:
+    #   FAILED      the newest finished run actually failed. Go and read it.
+    #   NOT PASSED  nothing has succeeded in everything we can see. That covers
+    #               what cancelled-only would hide, including a job cancelled by
+    #               its own timeout, which GitHub also reports as cancelled.
+    failed, never = [], []
+    for name, runs in done.items():
+        if runs[0]["conclusion"] == "failure":
+            failed.append((name, runs[0].get("createdAt", "")[:10]))
+        elif not any(r["conclusion"] == "success" for r in runs):
+            never.append((name, len(runs)))
+
+    if not failed and not never:
+        return
+
+    out.append("BROKEN, and this outranks new work (CLAUDE.md rung 2):")
+    for name, when in sorted(failed):
+        out.append(f"  {name} FAILED, newest finished run {when}")
+    for name, n in sorted(never):
+        out.append(f"  {name} has not passed once in its last {n} finished run(s)")
+    out += ["  Why: gh run list --workflow=<file> -L 5, "
+            "then gh run view <id> --log-failed", ""]
+
+
 def main():
     out = ["ANCIENT TREES — state at session start", ""]
     since_last_visit(out)
+    broken_gates(out)
 
     # Cities and trees
     try:
