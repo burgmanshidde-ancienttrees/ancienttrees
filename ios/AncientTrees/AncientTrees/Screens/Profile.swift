@@ -52,7 +52,6 @@ struct ProfileView: View {
     @State private var contributing = ProcessInfo.processInfo.arguments.contains("-contribute")
     @State private var givingFeedback = ProcessInfo.processInfo.arguments.contains("-feedback")
     @State private var editingProfile = false
-    @State private var showingBlocked = ProcessInfo.processInfo.arguments.contains("-blocked")
     /// Same debug scaffolding as -contribute and -feedback: the sweep cannot
     /// tap, so every screen needs an argument or it ships unlooked-at.
 
@@ -94,7 +93,6 @@ struct ProfileView: View {
         .sheet(isPresented: $contributing) { ContributeView() }
         .sheet(isPresented: $givingFeedback) { ContributeView(feedbackMode: true) }
         .sheet(isPresented: $editingProfile) { ProfileEditor() }
-        .sheet(isPresented: $showingBlocked) { BlockedView() }
         .sheet(isPresented: $showingSponsor) { SponsorSheet() }
         // The paywall still opens, from the locked rows themselves; it no
         // longer has a row of its own (2026-08-25).
@@ -377,34 +375,6 @@ struct ProfileView: View {
                         }
                         .accessibilityIdentifier("settings-backup")
                     }
-                }
-                // BLOCKED PEOPLE, and it is here rather than buried because
-                // Apple's review looks for the undo as well as the block, and
-                // because a list you cannot find is a list you cannot manage.
-                // It shows for a signed-in account whether or not anything is
-                // on it: a row that appears only once you have blocked
-                // somebody is a row nobody knows exists.
-                if account.isSignedIn {
-                    Divider().padding(.leading, 48)
-                    Button { showingBlocked = true } label: {
-                        HStack(spacing: 12) {
-                            Image(systemName: "hand.raised").frame(width: 20)
-                                .foregroundStyle(Brand.moss)
-                            Text("Blocked people").font(.callout)
-                                .foregroundStyle(Brand.ink)
-                            Spacer()
-                            if !moderation.blocked.isEmpty {
-                                Text("\(moderation.blocked.count)")
-                                    .font(.callout).foregroundStyle(Brand.inkSoft)
-                            }
-                            Image(systemName: "chevron.right")
-                                .font(.caption).foregroundStyle(Brand.inkSoft.opacity(0.6))
-                        }
-                        .padding(.horizontal, 16).frame(height: 48)
-                        .contentShape(.rect)
-                    }
-                    .buttonStyle(.plain)
-                    .accessibilityIdentifier("settings-blocked")
                 }
                 Divider().padding(.leading, 48)
                 Button { givingFeedback = true } label: {

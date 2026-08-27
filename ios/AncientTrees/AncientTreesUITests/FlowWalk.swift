@@ -112,11 +112,6 @@ final class FlowWalk: XCTestCase {
                 Step(name: "close-the-thank-you") { $0.buttons["OK"].firstMatch.tap() },
             ]),
 
-            Flow(name: "blocked-list", args: ["-tab=2", "-settings", "-blocked", "-blocked-demo", "-people-demo"] + signedIn,
-                 steps: [
-                Step(name: "done") { $0.buttons["Done"].firstMatch.tap() },
-            ]),
-
             // The way into the app from a search, which is how somebody who
             // knows what they are looking for uses it.
             Flow(name: "search-to-a-tree", args: ["-search=lis"], steps: [
