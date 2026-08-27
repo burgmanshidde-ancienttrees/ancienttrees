@@ -50,7 +50,7 @@ of them can be automated here, and none of them may be skipped.
 
 ## 3. What Apple will ask for, and what we owe them
 
-- [x] **Moderation, built 2026-08-27** (Hidde: "sociale deel gaat mee", then "maak gewoon die melden optie"). Guideline 1.2 asks for four things and the app now has all four: an ellipsis on every person opening **report** (four reasons, one tap) and **block**; a **Blocked people** list in Settings with an Unblock beside each name; `info@ancienttrees.app` published on the privacy page and in Settings; and the terms line on the sign-in sheet. Blocks are server-side so they survive a reinstall, and a trigger breaks the follow both ways. Schema: `supabase/reports.sql`.
+- [x] **Moderation, built 2026-08-27** (Hidde: "sociale deel gaat mee", then "maak gewoon die melden optie"). Guideline 1.2 asks for four things and the app now has all four: an ellipsis on every person opening **report** (four reasons, one tap) and **block**; an Unblock on a blocked person wherever you search for them, so a block is never permanent (the separate Blocked people screen was removed on Hidde's ask the same day: "dat heb ik nog nooit als optie gezien in een app"); `info@ancienttrees.app` published on the privacy page and in Settings; and the terms line on the sign-in sheet. Blocks are server-side so they survive a reinstall, and a trigger breaks the follow both ways. Schema: `supabase/reports.sql`.
 - [x] **Crash reporting, built 2026-08-27** (Hidde: "crash reporting zullen we daar eens mee beginnen dan"). MetricKit, so no SDK, no third party and no bill: crashes and hangs arrive once a day on the next launch, from real devices only, carrying nothing that says whose phone it was. Schema: `supabase/diagnostics.sql`. It cannot be tested here at all, only on a device through TestFlight.
 - [x] **The privacy manifest matches the app again** (`PrivacyInfo.xcprivacy`, rewritten 2026-08-27). It had not moved since accounts were an email address and nothing else.
 
@@ -84,14 +84,20 @@ Each is idempotent and each is his, the same as `saves.sql` was:
 1. `supabase/reports.sql` - reporting and blocking. Until it runs, blocking works on the phone only and reports fail quietly.
 2. `supabase/diagnostics.sql` - where crashes land.
 3. `supabase/avatars-policy.sql` - lets somebody delete and replace their own profile picture. Without it the Storage API refuses the app's delete, and a deleted account's picture stays public at its old address. Found by running the deletion test, 2026-08-27.
-4. `supabase/delete-user.sql` - **replaces** the existing `delete_user()`. It adds one thing the old one could not do: deleting the avatar image out of the bucket. Storage does not cascade off `auth.users`, so today a deleted account's picture stays public at its old address.
+4. `supabase/delete-user.sql` - **replaces** the existing `delete_user()`. The first version of it tried to delete the avatar from SQL, which Supabase refuses, so the whole function rolled back and NOTHING was deleted. The app deletes the picture through the Storage API instead, in the moment before this is called.
+
+**All four were run on 2026-08-27 and the deletion test was run against them.** Everything in the database goes with the account; the avatar needed `avatars-policy.sql`, which was the last row to turn green.
 
 ### Still open
 
-- [ ] Support URL, marketing URL, privacy policy URL
-- [ ] Screenshots at the required sizes
-- [ ] Age rating
-- [ ] Nothing in the build that promises what it cannot do (Plus is hidden, sponsoring is hidden until the IAP exists)
+- [x] Support URL, marketing URL, privacy policy URL - `/support` was written 2026-08-27 and is linked from the footer; privacy and terms already existed.
+- [x] Screenshots at the required sizes - `python3 scripts/appstore_shots.py` writes five at 1320x2868 into `out/appstore/` and refuses to finish if any is the wrong size.
+- [x] Age rating - the answers are in APP_STORE_LISTING.md; the two that need thought are User-Generated Content (yes, mild) and Unrestricted Web Access (no).
+- [x] Nothing in the build that promises what it cannot do - a UI test asserts no screen in the app says "Plus", and it was proven to fail when Plus is on.
+- [x] The app icon - it carried an alpha channel, which refuses the upload outright. Flattened, and `scripts/icon_check.py` runs on every push.
+- [x] Export compliance - `ITSAppUsesNonExemptEncryption` is declared NO, so no upload asks again.
+- [ ] **The App Store Connect record itself**, which only Hidde can create: the listing text, the screenshots and the privacy form are all written out in APP_STORE_LISTING.md, including the TestFlight fields.
+- [ ] **Everything in part 2 above**, which needs a real phone and cannot be done here.
 
 ## The two open product calls, which are his
 

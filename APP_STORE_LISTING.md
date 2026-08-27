@@ -97,7 +97,7 @@ Ancient Trees is a map of verified remarkable old trees, free to use. There is n
 
 SIGNING IN is by email link, Apple or Google. Nothing in the app requires an account except keeping a collection and sending a correction; the map, every tree and every story work signed out.
 
-USER CONTENT: people may set a display name and a profile picture that others can see when searching for somebody to follow. Reporting and blocking are on the three dots beside any person in Find People (My trees, the person icon beside your name). Blocked people can be lifted again under Settings, Blocked people. Reports reach us directly and we act on them. Our terms state there is no tolerance for offensive or impersonating profiles: https://ancienttrees.app/terms
+USER CONTENT: people may set a display name and a profile picture that others can see when searching for somebody to follow. Reporting and blocking are on the three dots beside any person in Find People (My trees, the person icon beside your name). A blocked person is hidden everywhere except your own search for them, where they appear last with an Unblock button, so a block can always be lifted. Reports reach us directly and we act on them. Our terms state there is no tolerance for offensive or impersonating profiles: https://ancienttrees.app/terms
 
 PHOTOGRAPHS people take of trees stay on their own device and are not uploaded or shown to anybody else.
 
@@ -105,6 +105,50 @@ LOCATION is used only to centre the map on the trees nearest you and is never se
 
 ACCOUNT DELETION is under Settings and removes the email address, the collection, the display name, the picture and every follow.
 ```
+
+## TestFlight, which comes first
+
+TestFlight asks for less than the store and is the right next step: no review at
+all for internal testers, and a lighter Beta App Review for external ones.
+Nothing below needs a new build.
+
+**Beta App Description**
+
+```
+Ancient Trees maps remarkable old trees and shows you the ones near you: what they are, roughly how old, why they are worth the walk, and how to get to the trunk. Photograph one while you stand there and it joins your own collection.
+
+This is the first build. The map, the trees and the stories all work without an account.
+```
+
+**Feedback email**: `info@ancienttrees.app`
+
+**What to Test** (this changes per build; this is the first one)
+
+```
+Anything at all, but especially:
+
+1. The map. Does it open where you are, and are the pins in the right places? A wrong pin is the one mistake worth reporting straight away.
+2. Walking to a tree. Pick one nearby, tap Take me there, and see whether you end up in front of it.
+3. Adding your own. Tap the camera, photograph a tree, and see whether it lands in My trees with the picture on it.
+4. The sheet over the map. Drag it up and down, scroll the list, tap a card. It should never open a tree while you are dragging.
+5. Signing in, and then deleting your account from Settings if you want to see it work.
+```
+
+**Beta App Review Information** (only needed for external testers)
+
+```
+Sign-in required: NO. The map, every tree, every story and the walking directions work fully signed out. An account is only needed to keep a collection and to send a correction.
+
+If you want to sign in: the app uses an email link, Sign in with Apple or Google. Any address works and the link arrives within a minute.
+
+There is no paid content and no in-app purchase in this build.
+
+Contact: info@ancienttrees.app
+```
+
+**Export compliance** is answered by the build itself:
+`ITSAppUsesNonExemptEncryption` is declared NO in the project, so no upload will
+ask again. The app speaks HTTPS and nothing else.
 
 ## Screenshots
 
