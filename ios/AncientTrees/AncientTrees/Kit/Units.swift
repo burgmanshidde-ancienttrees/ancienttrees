@@ -29,8 +29,15 @@ enum DistanceUnit: String, CaseIterable, Identifiable {
 final class Units {
     private static let key = "distanceUnit"
 
+    /// Told the account when it changes, set once by the root, so this file
+    /// keeps knowing nothing about the network.
+    static var sync: ((DistanceUnit) -> Void)?
+
     var unit: DistanceUnit {
-        didSet { UserDefaults.standard.set(unit.rawValue, forKey: Self.key) }
+        didSet {
+            UserDefaults.standard.set(unit.rawValue, forKey: Self.key)
+            Self.sync?(unit)
+        }
     }
 
     init() {

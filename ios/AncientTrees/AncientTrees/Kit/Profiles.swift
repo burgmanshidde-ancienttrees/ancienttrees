@@ -22,6 +22,10 @@ public final class Profiles {
         public let user_id: String
         public var display_name: String
         public var avatar_url: String?
+        /// "km" or "mi", or nil when they never chose and the phone's own
+        /// locale is still deciding. A preference rather than data, and one
+        /// more thing that should not stay behind on an old phone.
+        public var units: String?
     }
 
     public private(set) var me: Profile?
@@ -48,7 +52,7 @@ public final class Profiles {
     public func load(userId: String?, token: String?) async {
         guard let userId, let token else { me = nil; followers = 0; following = 0; return }
         if let data = try? await send(request(
-            "profiles?select=user_id,display_name,avatar_url&user_id=eq.\(userId)",
+            "profiles?select=user_id,display_name,avatar_url,units&user_id=eq.\(userId)",
             "GET", token: token)),
            let rows = try? JSONDecoder().decode([Profile].self, from: data) {
             me = rows.first
@@ -98,7 +102,7 @@ public final class Profiles {
         guard q.count >= 2 else { return [] }
         let escaped = q.addingPercentEncoding(withAllowedCharacters: .alphanumerics) ?? q
         guard let data = try? await send(request(
-            "profiles?select=user_id,display_name,avatar_url&display_name=ilike.*\(escaped)*&limit=25",
+            "profiles?select=user_id,display_name,avatar_url,units&display_name=ilike.*\(escaped)*&limit=25",
             "GET", token: token)) else { return [] }
         return (try? JSONDecoder().decode([Profile].self, from: data)) ?? []
     }
@@ -109,9 +113,20 @@ public final class Profiles {
         guard !ids.isEmpty else { return [] }
         let list = ids.joined(separator: ",")
         guard let data = try? await send(request(
-            "profiles?select=user_id,display_name,avatar_url&user_id=in.(\(list))",
+            "profiles?select=user_id,display_name,avatar_url,units&user_id=in.(\(list))",
             "GET", token: token)) else { return [] }
         return (try? JSONDecoder().decode([Profile].self, from: data)) ?? []
+    }
+
+    /// Which units they read distances in, kept with the profile because it is
+    /// the row that already belongs to them. Its own call, so changing a unit
+    /// does not rewrite a name and a picture.
+    public func saveUnits(_ units: String, userId: String, token: String) async {
+        struct Row: Encodable { let user_id: String; let units: String }
+        let body = try? JSONEncoder().encode([Row(user_id: userId, units: units)])
+        _ = try? await send(request("profiles?on_conflict=user_id", "POST", token: token,
+                                    body: body, prefer: "resolution=merge-duplicates"))
+        me?.units = units
     }
 
     private func send(_ r: URLRequest) async throws -> Data {
