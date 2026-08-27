@@ -21,6 +21,15 @@ import type { CityEntry } from "./trees";
 import { peakFor } from "./phenology";
 import { renderableTrees, slugify } from "./trees";
 import { usablePhoto, thumbUrl, creditRequired, creditName } from "./images";
+import { BASE_URL } from "./schema";
+
+/** The feed is read by an app on somebody's phone, which has no page to
+ * resolve a relative path against. thumbUrl() returns "/photos/..." for the
+ * photographs we host ourselves, so the feed absolutises. The website does
+ * not: a relative src is correct there and one byte shorter. */
+function absolute(u: string): string {
+  return u.startsWith("/") ? `${BASE_URL}${u}` : u;
+}
 
 export interface FeedTree {
   id: string;
@@ -116,8 +125,8 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
               height: (p as any).height ?? null,
               // Card size and full-width size, resolved here so no client
               // needs to know how Wikimedia names a thumbnail.
-              thumb: thumbUrl(p.url, 500),
-              hero: thumbUrl(p.url, 960),
+              thumb: absolute(thumbUrl(p.url, 500)),
+              hero: absolute(thumbUrl(p.url, 960)),
               credit_required: creditRequired(p.license),
               // The name as it should be PRINTED, host dropped. The trimming
               // rule lived in Swift and the website printed the long form, so

@@ -1,0 +1,2201 @@
+{
+ "_note": "Original photo URL -> the vendored copy under site/public/photos. Written by scripts/vendor_photos.py --manifest from the files actually on disk. thumbUrl() reads it so the website and the app feed both point at our own domain instead of at Wikimedia, which rate-limits a card grid into HTTP 429.",
+ "photos": {
+  "https://upload.wikimedia.org/wikipedia/commons/2/2d/Arbre_d%27alicante_-_panoramio.jpg": {
+   "base": "ali_005-ficus-del-passeig-de-canalejas",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/90/2025_Leidsebosje%2C_Asd%2C_dikke_plataan_noord_%28A%29.jpg": {
+   "base": "ams_002-the-leidsebosje-planes",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d3/2022_Wertheimpark%2C_Asd-Gewone_vleugelnoot_%281%29.jpg": {
+   "base": "ams_004-the-wertheimpark-wingnut",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/fb/Cycad_%40_De_Hortus_Botanicus_%40_Amsterdam_%2821679155561%29.jpg": {
+   "base": "ams_005-the-cycad-of-the-hortus",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/23/Huge_city_tree_in_Amsterdam-East%2C_on_the_Zeeburgerdijk.jpg": {
+   "base": "ams_006-the-olifantsiep",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/94/Lomanstraat_foto_1.JPG": {
+   "base": "ams_007-the-lomanstraat-cathedral-of-trees",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/ce/Amsterdam_free_photo_of_old_city_square_Amstelveld_with_tree_branches_in_winter_and_an_old_wooden_church%2C_Fons_Heijnsbroek%2C_01-2022.jpg": {
+   "base": "ams_009-the-wingnuts-of-amstelveld",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/207920802/large.jpeg": {
+   "base": "ams_010-the-rijksmuseum-wingnut",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f7/Zomerlinde_in_Rivierenhof_-_190761_-_onroerenderfgoed.jpg": {
+   "base": "ant_002-the-summer-linden-of-rivierenhof",
+   "widths": [
+    500
+   ]
+  },
+  "https://beeldbank.onroerenderfgoed.be/images/192759/content/full": {
+   "base": "ant_006-the-canadian-poplar-of-eric-sasselaan",
+   "widths": [
+    500
+   ]
+  },
+  "https://beeldbank.onroerenderfgoed.be/images/186197/content/full": {
+   "base": "ant_007-the-peace-tree-of-the-grote-markt",
+   "widths": [
+    500
+   ]
+  },
+  "https://beeldbank.onroerenderfgoed.be/images/385816/content/full": {
+   "base": "ant_008-the-park-trees-of-den-brandt",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/03/Imposant_Chessnuttrees_%22Adam_and_Eve%22_near_Castle_Zypendaal_-_panoramio.jpg": {
+   "base": "arn_001-de-poortwachters",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/cd/The_olive_tree_on_the_Acropolis_of_Athens%2C_28_April_2021.jpg": {
+   "base": "ath_001-the-sacred-olive-tree-of-the-acropolis",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/a5/%CE%95%CE%9B%CE%99%CE%91_%CE%A0%CE%95%CE%99%CE%A3%CE%99%CE%A3%CE%A4%CE%A1%CE%91%CE%A4%CE%9F%CE%A5.jpg": {
+   "base": "ath_002-the-olive-tree-of-pisistratus",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/72/A_fifteen_centuries_old%2C_olive_tree_in_Athens.jpg": {
+   "base": "ath_004-the-transplanted-olive-of-megali-tou-genous-scho",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/4e/Holm_Oak_in_the_National_Garden%2C_Athens_-_panoramio.jpg": {
+   "base": "ath_005-the-holm-oak-of-the-national-garden",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e0/Atenas%2C_Primer_Cementerio_21.jpg": {
+   "base": "ath_006-the-cypresses-of-the-first-cemetery-of-athens",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/417637352/original.jpeg": {
+   "base": "ath_008-the-olive-woodland-of-filopappou-hill",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/8f/Baarn_Kasteel_Groeneveld_tulpenboom_94.JPG": {
+   "base": "brn_003-the-tulip-tree-grove-at-kasteel-groeneveld",
+   "widths": [
+    500
+   ]
+  },
+  "https://ancienttrees.app/photos/brn_005-pekingtuin-oak.jpg": {
+   "base": "brn_005-the-american-oak-of-the-pekingtuin",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/211744619/medium.jpeg": {
+   "base": "bcn_003-the-regrown-carob-of-placa-de-la-natura",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/3b/Pterocarya_redheriana_al_jard%C3%AD_bot%C3%A0nic_vell_P1250816.jpg": {
+   "base": "bcn_005-the-wingnut-of-the-sot-de-l-estany",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/08/Freixe_americ%C3%A0_del_Jard%C3%AD_Bot%C3%A0nic_Vell.JPG": {
+   "base": "bcn_006-the-green-ash-of-the-sot-de-l-estany",
+   "widths": [
+    500
+   ]
+  },
+  "https://live.staticflickr.com/65535/52138342190_bb26b506ee_b.jpg": {
+   "base": "bcn_007-the-magnolia-of-the-maternity-gardens",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/363138156/medium.jpeg": {
+   "base": "bcn_009-the-ombu-of-placa-prim",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b3/Washingt%C3%B2nies_de_la_casa_de_la_Miseric%C3%B2rdia_P1510832.jpg": {
+   "base": "bcn_010-the-palms-of-casa-de-la-misericordia",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f2/Casuarina_del_Parc_de_la_Ciutadella3.JPG": {
+   "base": "bcn_011-the-casuarina-of-the-cascada",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/2f/Roure_-_Ciutadella_4.JPG": {
+   "base": "bcn_012-the-mexican-oak-of-the-ciutadella",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/37/Maclura_pomifera_arbre_d%27inter%C3%A8s_local_Parc_de_la_Ciutadella_P2080013_-_Flickr_-_tgrauros.jpg": {
+   "base": "bcn_013-the-osage-orange-of-the-ciutadella",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/ce/Ullastre_del_Parc_G%C3%BCell_P1500841.jpg": {
+   "base": "bcn_016-the-wild-olive-of-park-guell",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/06/Lagunaria_del_teatre_grec_P1250863.jpg": {
+   "base": "bcn_017-the-pica-pica-tree-of-the-teatre-grec",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/ed/Erythrina_corallodendron_als_jardins_del_Teatre_Grec_P1250860.jpg": {
+   "base": "bcn_019-the-coral-tree-of-the-laribal-path",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/67/London_plane_at_Abbey_Green%2C_Bath_2025-07-23.jpg": {
+   "base": "bat_002-the-plane-tree-of-abbey-green",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/c9/HRAST_CVETNI_TRG_1.JPG": {
+   "base": "bel_001-the-oak-of-cvetni-trg",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/90/London_Plane%2C_Top%C4%8Dider_Park%2C_Belgrade.JPG": {
+   "base": "bel_002-the-great-plane-of-top-ider",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/35/Tise_u_porti_Saborne_crkve_u_Beogradu_%282%29.jpg": {
+   "base": "bel_003-the-two-yews-of-belgrade-cathedral",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/86/Prirodni_spomenik_Stabla_u_Zemunskom_parku_2_-_Tisa_01.jpg": {
+   "base": "bel_004-the-yews-of-zemun-park",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/29/Pedrengo_cedro_nel_parco_Frizzoni.jpg": {
+   "base": "bgm_005-the-giant-cedar-of-pedrengo",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/61/Dicke_Marie.JPG": {
+   "base": "ber_001-dicke-marie",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/0b/Tegel_Schlosspark_Tegel.jpg": {
+   "base": "ber_002-the-humboldt-oak",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/fa/Naturdenkmal_Stiel-Eiche_Forst_Grunewald_Jagen_100_2024-05-25_01.jpg": {
+   "base": "ber_003-the-steinlanke-oak",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/92/Charlottenburg_Schlosspark_Sumpfzypresse-001.jpg": {
+   "base": "ber_004-the-swamp-cypress-of-charlottenburg",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/78/Naturdenkmal_Flatter-Ulme_Treptower_Park_Berlin-Alt-Treptow_2025-05-06_01.jpg": {
+   "base": "ber_005-the-great-elm-of-treptower-park",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f8/2019-06-29_Mahlsdorfer_Linde_2.jpg": {
+   "base": "ber_006-the-mahlsdorf-village-lime",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/8d/Treskow-Platane_2014-3_Berlin-Frf_1474-1354-120.jpg": {
+   "base": "ber_007-the-treskow-plane",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/43/Berlin_Friedenau_Kaisereiche_22.06.2015_12-44-49.JPG": {
+   "base": "ber_008-the-kaisereiche",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/58/F%C3%A4cherblattbaum_Gutspark_Britz_1.JPG": {
+   "base": "ber_009-the-ginkgo-of-schlosspark-britz",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/9d/Riesenmammutbaum_Berlin_Gr_Tiergarten.jpg": {
+   "base": "ber_010-the-giant-sequoia-of-the-tiergarten",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/37/Pfaueninsel_Oak.jpg": {
+   "base": "ber_013-the-pond-oak-of-pfaueninsel",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/36/Montagnola_%2C.jpg": {
+   "base": "bol_001-the-monumental-planes-of-the-montagnola",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/05/Giardini_margherita_albero_monumentale.jpg": {
+   "base": "bol_002-the-sequoia-of-the-giardini-margherita",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d5/Statua_Minghetti_e_Platano.jpg": {
+   "base": "bol_003-the-plane-tree-of-piazza-minghetti",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/02/Piazza_malpighi-platano_orientale.jpg": {
+   "base": "bol_004-the-oriental-plane-of-piazza-malpighi",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/62/4.rizzoli_cedro_dell%27himalaya_%2812%29.jpg": {
+   "base": "bol_005-the-himalayan-cedar-of-the-rizzoli",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/39/Piazza_cavour%2C.jpg": {
+   "base": "bol_006-the-ginkgo-of-piazza-cavour",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/83/Cedro_dell%27Himalaya_nel_Parco_di_Villa_Ghigi.jpg": {
+   "base": "bol_009-the-himalayan-cedar-of-villa-ghigi",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/644130068/large.jpg": {
+   "base": "bos_001-the-shaw-memorial-elms",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/73/%C3%81rvore_isolada_em_Santa_Tecla.jpg": {
+   "base": "brg_002-the-cork-oak-of-santa-tecla",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/ac/BCBG_Ficus_Religiosa_01.JPG": {
+   "base": "bne_008-the-bodhi-tree",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/ca/London_Planes_Queens_Square_-_geograph.org.uk_-_91527.jpg": {
+   "base": "bri_005-the-planes-of-queen-square",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f5/Platan_javorolist%C3%BD_na_Petrov%C4%9B%2C_Brno.JPG": {
+   "base": "brq_004-the-plane-tree-below-petrov",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f7/Dilbeek_Kasterlindenstraat_Grensboom_%281%29_-_235489_-_onroerenderfgoed.jpg": {
+   "base": "bru_002-the-kasterlinde",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/04/Parc_L%C3%A9opold-Bruxelles_%2Cplatane_d%27OrientP5070020.JPG": {
+   "base": "bru_003-the-oriental-plane-of-parc-leopold",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/33/Le_bois_de_la_Cambre5.jpg": {
+   "base": "bru_004-the-pond-oaks-and-beeches-of-the-bois-de-la-camb",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/fe/Dreef_in_Jubelpark_Brussel.jpg": {
+   "base": "bru_010-the-chestnut-avenue-of-the-cinquantenaire",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/31/Cedro_de_S%C3%A3o_Jos%C3%A9_-_Considerado_o_cipreste-do-Bu%C3%A7aco_mais_antigo_da_Mata.jpg": {
+   "base": "bsc_006-the-cedro-de-sao-jose",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/66/Ficus_alameda_2019An002.jpg": {
+   "base": "cad_001-the-ficus-of-alameda-apodaca",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/287261686/original.jpeg": {
+   "base": "cad_002-the-dragon-tree-of-parque-genoves",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/287268653/original.jpeg": {
+   "base": "cad_003-the-pohutukawa-of-parque-genoves",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/287262338/original.jpeg": {
+   "base": "cad_005-the-floss-silk-tree-of-parque-genoves",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/bc/Cagliari_Ficus_trees_2.jpg": {
+   "base": "cag_004-the-ficus-of-piazza-matteotti",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/90/%22Newton%27s%22_apple_tree%2C_Trinity_College_-_geograph.org.uk_-_5599349.jpg": {
+   "base": "cam_001-newton-s-apple-tree",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/70/Milton%27s_Mulberry_Tree_-_geograph.org.uk_-_8115998.jpg": {
+   "base": "cam_002-the-milton-mulberry",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e3/Pino_del_Queensland_monumentale.jpg": {
+   "base": "cat_002-the-larger-bunya-pine-of-villa-bellini",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/12/Pino_del_Queensland_4.jpg": {
+   "base": "cat_003-the-smaller-bunya-pine-of-villa-bellini",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/c9/Villa_Olmo_-_Cedro_del_Libano_-_parco_della_villa.jpg": {
+   "base": "com_001-the-cedar-of-villa-olmo",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/47/Villa_Geno_cedro_dell%27_Himalaya.jpg": {
+   "base": "com_002-the-himalayan-cedar-of-villa-geno",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e3/Skovfogedegen._-_panoramio.jpg": {
+   "base": "cop_014-skovfogedegen",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/47/Olivo_del_Patio_de_los_Naranjos_-_Mezquita_de_C%C3%B3rdoba.jpg": {
+   "base": "cdb_001-the-olive-of-the-orange-courtyard",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b6/Orange_Tree_Courtyard_%2814603047357%29.jpg": {
+   "base": "cdb_002-the-orange-courtyard-of-the-mezquita",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/54/Blarney_Witches_yew_tree_1.jpg": {
+   "base": "cor_001-the-witch-s-yew",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/a4/Western_red_cedar_at_Blarney_Castle_-_geograph.org.uk_-_8147217.jpg": {
+   "base": "cor_002-the-great-western-red-cedar-of-blarney",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/6c/Weichselboom_%283000295248%29.jpg": {
+   "base": "dbo_001-the-weichselboom-of-parklaan",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/7d/The_Hungry_Tree_at_Kings_Inns_%28geograph_4572088%29.jpg": {
+   "base": "dub_001-the-hungry-tree",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/1f/Platanus_orientalis-Trinity_College_Dublin.jpg": {
+   "base": "dub_006-the-champion-planes-of-new-square",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/64/St_Anne%27s_Park_is_the_second_largest_municipal_park_in_Dublin_-_panoramio_%2830%29.jpg": {
+   "base": "dub_008-the-holm-oak-avenue",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d7/20130526_Farmleigh_AcerPseudoplatanus_Cutler_P1470345.jpg": {
+   "base": "dub_009-the-great-sycamore-of-farmleigh",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/0e/Platane-2%2C_Trsteno.JPG": {
+   "base": "drv_001-the-plane-trees-of-trsteno",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/4e/Craigmillar_inner_court.jpg": {
+   "base": "edi_001-the-craigmillar-castle-yews",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/ef/Sweet_Chestnut_at_the_Royal_Botanic_Garden_Edinburgh_-_geograph.org.uk_-_7080129.jpg": {
+   "base": "edi_002-the-sweet-chestnut-of-the-botanics",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/56/Ulmus_%27Wentworthii%27%2C_Holyrood.jpg": {
+   "base": "edi_006-the-wentworth-elms-of-holyroodhouse",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d4/Footpath_through_beech_trees_-_geograph.org.uk_-_1065352.jpg": {
+   "base": "edi_009-the-tall-trees-of-the-hermitage-of-braid",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/6b/Bagolaro%2C_parco_Massari_%28Ferrara%29_0.jpg": {
+   "base": "fer_002-the-bagolaro-of-parco-massari",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/fb/Sughera_e_tasso.jpg": {
+   "base": "flo_001-the-micheli-yew",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/537552381/large.jpg": {
+   "base": "flo_002-the-cork-oak-of-the-giardino-dei-semplici",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/0b/Taxodium_mucronatum_01_by_Line1.jpg": {
+   "base": "flo_003-the-montezuma-cypress",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/4a/Ginkgo_Biloba_a_Firenze_%28piazzale_Michelangelo%29.jpg": {
+   "base": "flo_009-the-ginkgo-of-piazzale-michelangelo",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/1e/Zelkova_crenata_01_by_Line1.jpg": {
+   "base": "flo_011-the-caucasian-elm-that-was-cut-back-to-save-it",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/6e/Zelkova_serrata_01_by_Line1.jpg": {
+   "base": "flo_012-the-zelkova-somebody-keeps-measuring",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/0a/Pinus_brutia_01_by_Line1.jpg": {
+   "base": "flo_013-the-flag-crowned-pine",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/c3/Frankfurt-Eschersheim_Lindenbaum.JPG": {
+   "base": "frk_001-the-eschersheimer-linde",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/92/Sacred_tree_%22Ayasugi%22_in_Kashii_Shrine.jpg": {
+   "base": "fuk_001-the-ayasugi-of-kashii-shrine",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e3/Kushida_no_Ginan_the_W_side_1-41_Kami-kawabatamachi_Hakata-ku_Fukuoka_20231128.jpg": {
+   "base": "fuk_002-the-ginkgo-of-kushida-shrine",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d7/Plum_tree_%22Tobiume%22_in_front_of_Gohonden_of_Dazaifu_Temman_Shrine.jpg": {
+   "base": "fuk_003-the-flying-plum-of-dazaifu-tenmangu",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/59/Grand_camphor_tree_in_Dazaifu_Temman_Shrine.jpg": {
+   "base": "fuk_006-the-great-camphor-of-dazaifu",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/a5/Yufuta-no-mori_ac.jpg": {
+   "base": "fuk_007-yubuta-no-mori-the-bathing-camphor",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/4d/Kinukake-no-mori_ac_%281%29.jpg": {
+   "base": "fuk_008-kinukake-no-mori-the-robe-camphor",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/fe/Kushida_Shrine_Meoto-ginan_the_preserved_trees_1-41_Kami-kawabatamachi_Hakata-ku_Fukuoka_20231207.jpg": {
+   "base": "fuk_010-the-married-ginkgos-of-kushida",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/0f/1095_i_1096._wierzby_kupa%C5%82y_gdansk.jpg": {
+   "base": "gda_001-the-willow-of-kupaly-subislawa",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/1a/551_oak_Gda%C5%84sk_niepo%C5%82omicka.jpg": {
+   "base": "gda_003-the-oak-of-wzgorze-luizy",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/27/Marronnier_officiel_Gen%C3%A8ve_2024_1.jpg": {
+   "base": "gen_001-the-official-chestnut-tree",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/0a/C%C3%A8dres_du_Parc_Beaulieu-IMG_9877.JPG": {
+   "base": "gen_002-the-cedars-of-parc-beaulieu",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/fb/Gen%C3%A8ve_parc_La_Grange_grand_c%C3%A8dre-01.jpg": {
+   "base": "gen_003-the-grange-cedar",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/20/CJB-07-All%C3%A9e_centrale.jpg": {
+   "base": "gen_004-the-botanical-garden-plane-trees",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/3a/Maestoso_e_monumentale_albero_di_Canfora_nel_giardino_del_Parco.jpg": {
+   "base": "gnv_009-the-camphor-tree-of-villa-durazzo-pallavicini",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/1a/DarnleySycamore.JPG": {
+   "base": "gla_001-the-darnley-sycamore",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/57/Scotlands_Tree_of_the_Year_2015_%28geograph_6057313%29.jpg": {
+   "base": "gla_002-the-suffragette-oak",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b9/Arbol_san_juan.jpg": {
+   "base": "gra_001-the-cypress-of-san-juan-de-la-cruz",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/be/Plaza_del_Campillo.jpg": {
+   "base": "gra_005-the-plane-trees-of-the-fountain-of-battles",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/266293921/original.jpeg": {
+   "base": "gra_006-the-robinia-of-cuarto-real-de-santo-domingo",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/03/Naturdenkmal_1270_Schlo%C3%9Fberg_Graz_2022-08-03_02.jpg": {
+   "base": "grz_001-the-schlossberg-field-maple",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/ed/Eiche_Volksgarten_Graz_1269_%281%29.JPG": {
+   "base": "grz_002-the-volksgarten-oak",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/69/Blutbuche_Graz%2C_Eggenberger_Allee_90_02.jpg": {
+   "base": "grz_010-the-eggenberg-copper-beech",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/67/Q98443994.jpg": {
+   "base": "gui_001-the-plane-trees-of-the-paco-dos-duques",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/64/KuninkaanTammi.jpg": {
+   "base": "hel_001-the-king-s-oak",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f8/HK_Forbes_Street_Kennedy_Town_Stone_Wall_Trees_n_Minibus.JPG": {
+   "base": "hkg_002-the-stone-wall-trees-of-forbes-street",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e2/Kam_Tin_Tree_House.jpg": {
+   "base": "hkg_003-the-kam-tin-tree-house",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/41/H%C3%BCseyin_Avni_dede_%C3%A7%C4%B1nar%C4%B1.jpg": {
+   "base": "ist_003-the-h-seyin-avni-dede-plane",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/669764992/large.jpg": {
+   "base": "ist_004-the-ta-l-nar",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/01/Karacaahmet_myownphotography2013.jpg": {
+   "base": "ist_006-the-cypresses-of-karacaahmet",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/9f/%C4%B0shak_A%C4%9Fa_Fountain%2C_Beykoz_Meadow-4.jpg": {
+   "base": "ist_010-the-plane-trees-of-beykoz-ay-r",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/3f/D%C4%85b_Jagiello%C5%84ski_OB10.jpg": {
+   "base": "kra_001-the-jagiellonian-oak",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/fa/Krak%C3%B3w_ul._Zakopia%C5%84ska_121._Pomnik_przyrody_D%C4%85b_szypu%C5%82kowy_Quercus_robur.jpg": {
+   "base": "kra_002-the-henryk-oak",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/52/Krak%C3%B3w_ul._Kopernika_27_Pomnik_przyrody_Dere%C5%84_jadalny_Cornus_mas_1.jpg": {
+   "base": "kra_004-the-sniadecki-dogwoods",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/be/Yoshimenedera_Yuryunomatsu.jpg": {
+   "base": "kyo_001-the-reclining-dragon-pine",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/4f/Rikushu-no-matsu_pine_tree_in_Rokuonji_Temple.JPG": {
+   "base": "kyo_002-the-land-boat-pine",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/ce/%E5%AE%9D%E6%B3%89%E9%99%A2_01.JPG": {
+   "base": "kyo_003-the-five-needle-pine-of-hosen-in",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d0/Grand_Ginkgo_Tree_in_West_Honganji_Temple.JPG": {
+   "base": "kyo_004-the-inverted-ginkgo-of-nishi-honganji",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/25/Giant_Gion_weeping_sakura_%2851472103367%29.jpg": {
+   "base": "kyo_005-the-weeping-cherry-of-gion",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/565640909/original.jpg": {
+   "base": "kyo_006-the-camphor-of-munakata-shrine",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d9/%E6%96%B0%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE_-_%E6%A8%9F%E9%BE%8D%E5%BC%81%E8%B2%A1%E5%A4%A9.jpg": {
+   "base": "kyo_007-the-emperor-s-camphor-of-imakumano",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/a4/Semboin_subtemple_in_Daigoji_%283471809451%29.jpg": {
+   "base": "kyo_008-the-taiko-weeping-cherry-of-daigo-ji",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/32/Leiden_-_Hortus_Botanicus_-_Ginkgo_Biloba_1785.jpg": {
+   "base": "lei_002-the-ginkgo-of-the-hortus",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/21/20210605_Hortus_botanicus_Leiden_-_Fagus_sylvatica.jpg": {
+   "base": "lei_003-the-weeping-beech-of-the-hortus",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/8b/Hortus_botanicus_Leiden_Old_golden_rain.JPG": {
+   "base": "lei_004-the-golden-chain-of-the-hortus",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/22/Leiden-Groenesteeg-11.jpg": {
+   "base": "lei_006-the-groenesteeg-beech",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/05/Oliveiras_Alto_Santo_Amaro_1.jpg": {
+   "base": "lis_001-the-olive-trees-of-santo-amaro",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/ba/Lisbon%2C_Jardim_Bot%C3%A2nico_da_Ajuda%2C_Dracaena_draco.JPG": {
+   "base": "lis_002-the-ajuda-dragon-tree",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/43/Cipres_Portugues_%28Jard%C3%ADn_Principe_Real%2C_Lisboa%29.jpg": {
+   "base": "lis_003-the-cypress-of-pr-ncipe-real",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/86/BelaSombra%40R.Limoeiro%282015%29.jpg": {
+   "base": "lis_004-the-omb-of-largo-do-limoeiro",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/446773354/large.jpeg": {
+   "base": "lis_009-the-paineira-of-jardim-alfredo-keil",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/97/Lisbon%2C_Jardim_da_Estrela%2C_Moreton_Bay_fig.JPG": {
+   "base": "lis_011-the-fig-of-the-estrela-garden",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f3/Lisbon%2C_Jardim_da_Estrela%2C_Canary_Islands_dragon_tree.JPG": {
+   "base": "lis_012-the-dragon-tree-of-the-estrela-garden",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/75/%C3%81rvore_isolada_%28tax%C3%B3dio%29_em_Jardim_Te%C3%B3filo_de_Braga_em_Campo_de_Ourique.jpg": {
+   "base": "lis_016-the-taxodium-of-the-jardim-da-parada",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d4/%C3%81rvore_%28Metros%C3%ADdero%29_Jardim_Te%C3%B3filo_Braga_em_Lisboa.jpg": {
+   "base": "lis_017-the-pohutukawa-of-the-jardim-da-parada",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/ab/Jardim_Roque_Gameiro-2.jpg": {
+   "base": "lis_020-the-tipuana-of-jardim-roque-gameiro",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/28/Totteridge_Yew%2C_St_Andrew%27s_church%2C_Totteridge.jpg": {
+   "base": "lon_001-the-totteridge-yew",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d7/Richmond_Park%2C_The_Royal_Oak_%281%29.jpg": {
+   "base": "lon_002-the-royal-oak",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/ac/The_Cheapside_Plane_%281%29.jpg": {
+   "base": "lon_003-the-cheapside-plane",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/5a/Berkeley_Plane_%281%29.jpg": {
+   "base": "lon_004-the-berkeley-square-plane",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/13/Greenwich_Park_Sweet_Chestnut_%281%29.jpg": {
+   "base": "lon_005-the-sweet-chestnut-of-greenwich-park",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/bf/Charlton_House_Mulberry_Tree_%2801%29.jpg": {
+   "base": "lon_006-the-mulberry-of-charlton-house",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/8e/Fulham_Palace_Oak_%282%29.jpg": {
+   "base": "lon_007-the-fulham-palace-oak",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/09/Kew_Gardens_Pagoda_Tree_P1170594.JPG": {
+   "base": "lon_009-the-old-lions-of-kew",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/1c/Mulberry_tree%2C_Sayes_Court_Park_-_geograph.org.uk_-_6124238.jpg": {
+   "base": "lon_010-the-evelyn-mulberry",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/ac/Barney_of_Barn_Elms_plane_tree_2026-05-06.jpg": {
+   "base": "lon_008-barney-the-plane",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/9c/LAHCM_19_-_Moreton_Bay_Fig_Tree_%28Los_Angeles%2C_California%29.jpg": {
+   "base": "lax_003-the-moreton-bay-fig-at-st-johns-presbyterian-chu",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/6e/Oldest_palm_tree_in_Los_Angeles%2C_California%2C_US.jpg": {
+   "base": "lax_005-the-oldest-palm-tree-in-los-angeles",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/64/Lucca%2C_Orto_Botanico%2C_Abies_cedrus.jpg": {
+   "base": "luc_001-the-cedar-of-lebanon-of-the-orto-botanico",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/dc/Lucca%2C_Orto_Botanico%2C_Sequoia_sempervirens.jpg": {
+   "base": "luc_002-the-redwood-of-the-orto-botanico",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/26/Top_of_Torre_Guinigi_%28Lucca%29_-_Tuscany%2C_Italy.jpg": {
+   "base": "luc_005-the-holm-oaks-on-the-torre-guinigi",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/212211177/medium.jpg": {
+   "base": "lyo_001-the-pin-de-bunge-or-pin-de-napol-on",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/ac/Maclura_pomifera_in_Parc_de_la_Tete_d%27Or_%284%29.jpg": {
+   "base": "lyo_002-the-osage-orange-of-the-t-te-d-or",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d8/Jardin_des_Chartreux_1.JPG": {
+   "base": "lyo_009-the-garden-trees-of-jardin-des-chartreux",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/dc/N%C3%BAcleo_dos_Dragoeiros_das_Neves%2C_Funchal%2C_Madeira_-_2012-03-03_-_DSC04664.jpg": {
+   "base": "mdr_006-the-dragon-tree-grove-of-neves",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f2/Ahuehuete_porte.JPG": {
+   "base": "mad_001-the-ahuehuete-of-the-parterre",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/554654043/original.jpg": {
+   "base": "mad_003-the-three-trunked-yew-of-the-velazquez-palace",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/c6/Cipres_del_Estanque_de_El_Retiro.jpg": {
+   "base": "mad_004-the-bald-cypresses-of-the-crystal-palace-pond",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/1b/Cipr%C3%A9s_del_Real_Jard%C3%ADn_Bot%C3%A1nico.jpg": {
+   "base": "mad_005-the-cypress-of-the-royal-botanic-garden",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/61/Olmo_C%C3%A1ucaso_en_Real_Jard%C3%ADn_Bot%C3%A1nico.jpg": {
+   "base": "mad_006-the-caucasian-elm-of-the-botanic-garden",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/14/Cedrus_atlantica_20090311.jpg": {
+   "base": "mad_009-the-grandfather-cedar-of-parque-del-oeste",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/434001895/original.jpeg": {
+   "base": "mad_010-the-stone-pine-of-the-priest-s-house",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/5e/Cedro_del_L%C3%ADbano_del_Museo_del_Prado.jpg": {
+   "base": "mad_012-the-cedar-of-lebanon-at-the-prado",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d2/Picea_del_Himalaya.jpg": {
+   "base": "mad_014-the-himalayan-spruce-of-the-plaza-de-murillo",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/6d/Cedro_en_el_Parque_del_Retiro.jpg": {
+   "base": "mad_016-the-tall-cedar-of-the-avenida-del-peru",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/60/Plaza_del_Olivo_Centenario.JPG": {
+   "base": "mlg_001-the-transplanted-olive-of-la-concepcion",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/64/Alameda_principal_Malaga.jpg": {
+   "base": "mlg_002-the-ficus-avenue-of-the-alameda-principal",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/9f/Floss_Silk_Tree_in_Malaga.jpg": {
+   "base": "mlg_003-el-barrilito",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/ae/Jardines_de_Picasso.JPG": {
+   "base": "mlg_005-the-fig-of-the-picasso-gardens",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/3687026/original.JPG": {
+   "base": "mlg_007-the-tallest-araucaria-in-the-province",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/73/Parque_Espa%C3%B1a_-_Ciudad_de_M%C3%A9xico_-_14_-_Ahuehuete_inaugural.jpg": {
+   "base": "mex_005-ahuehuete-de-parque-espana",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/16/Celtis_australis_-_Giardini_Pubblici_-_Milano.jpg": {
+   "base": "mil_003-bagolaro-dei-giardini-montanelli",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/518184323/large.jpg": {
+   "base": "mil_004-il-ginkgo-dell-orto-botanico-di-brera",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/2d/Catalpa_guastalla.jpg": {
+   "base": "mil_005-la-catalpa-della-guastalla",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/a5/Quercia_rossa_di_Porta_Ticinese.jpg": {
+   "base": "mil_006-la-quercia-rossa-di-piazza-xxiv-maggio",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/99/Parco_Trotter%2C_quercia_rossa_centenaria.jpg": {
+   "base": "mil_007-la-quercia-rossa-del-trotter",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/bb/Platano_comune_a01.jpg": {
+   "base": "mil_009-la-pianta-di-affori",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/22/Noce_del_Caucaso_parco_Sempione_Milano.jpg": {
+   "base": "mil_010-il-noce-del-caucaso-di-parco-sempione",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/70/Platano_comune_%283%29.jpg": {
+   "base": "mil_012-il-platano-della-biodiversita",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/6a/Pterocarya_fraxinifolia_-_Giardini_Pubblici_-_Milano.jpg": {
+   "base": "mil_013-il-noce-del-caucaso-dei-giardini-montanelli",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/db/R%C3%B6th-Linde.jpg": {
+   "base": "muc_001-the-r-th-linde",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/8e/Stieleiche-Sendling-Westpark-1.jpg": {
+   "base": "muc_002-the-kr-ner-eiche",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/eb/Friedenseiche_Flaucheranlagen_Muenchen-1.jpg": {
+   "base": "muc_003-the-reichs-und-friedenseiche",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/2c/Naturdenkmal_Rotbuche_Englischer_Garten_M%C3%BCnchen.jpg": {
+   "base": "muc_004-the-beech-of-the-englischer-garten",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/ae/Zwei_Flatterulmen_Ulmus_laevis_Englischer_Garten_Muenchen-1.jpg": {
+   "base": "muc_005-the-twin-elms-of-the-englischer-garten",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/23/Farnblaettrige_Buche_Englischer_Garten_Muenchen-1.jpg": {
+   "base": "muc_006-the-fern-leaved-beech",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b5/Naturdenkmal_Stieleiche_im_Winter_Schlosspark_Nymphenburg_M%C3%BCnchen.jpg": {
+   "base": "muc_007-the-oak-of-the-d-rfchen-nymphenburg",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/57/Acht_Zuergelbaeume_Oskar-von-Miller-Ring_Muenchen-2.jpg": {
+   "base": "muc_008-the-hackberries-of-oskar-von-miller-ring",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b4/Schnurbaum_am_Karolinenplatz_%28von_S%29_-_2021-07-05_-_142b.jpg": {
+   "base": "muc_009-the-japanese-pagoda-tree-of-karolinenplatz",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/0a/Naturdenkmal_Bergulme_Maximiliansplatz_M%C3%BCnchen.jpg": {
+   "base": "muc_010-the-wych-elm-of-maximiliansplatz",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nymphenburg_Blutbuche_Badenburg-1.jpg": {
+   "base": "muc_011-the-copper-beech-of-the-badenburg",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/22/Naturdenkmal_Sommerlinde_am_Badenburger_See_im_Winter.jpg": {
+   "base": "muc_012-the-leaning-lime-of-the-badenburger-see",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/3c/Schlosspark_Nymphenburg_Naturdenkmal_Farnblaettrige_Buche-1.jpg": {
+   "base": "muc_013-the-fern-leaved-beech-of-the-amalienburg",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/61/Naturdenkmal_Winterlinde_Schlossrondell_M%C3%BCnchen.jpg": {
+   "base": "muc_034-the-lime-of-the-porcelain-manufactory",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/1d/Chiostro_del_Platano._0035_%2823370556592%29.jpg": {
+   "base": "nap_007-the-platano-of-san-severino",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/37/Platano_orientale.jpg": {
+   "base": "nap_009-the-plane-tree-of-the-villa-comunale",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/579727236/original.jpg": {
+   "base": "nap_013-the-false-kapok-of-the-botanical-garden",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/ca/Naratsuhiko-Jinja-Kusu.jpg": {
+   "base": "nra_001-the-giant-camphor-of-naratsuhiko-shrine",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b1/Sacred_Sugi_inside_Kasuga_Taisha_shrine.jpg": {
+   "base": "nra_002-the-great-cedar-of-kasuga-taisha",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/9a/Great_camphor_tree_in_Nara_Park.JPG": {
+   "base": "nra_005-the-camphors-of-tobihino",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/6f/Weeping_cherry_tree_in_Himuro_jinja_20150326_01.jpg": {
+   "base": "nra_007-the-first-cherry-of-nara",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e8/Hangman%27s_Elm%2C_Washington_Square_Park%2C_NYC_%28October_2023%29.jpg": {
+   "base": "nyc_001-the-hangman-s-elm",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/20/Camperdown_Elm_Prospect_Park_Brooklyn.jpg": {
+   "base": "nyc_003-the-camperdown-elm",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/02/Two_Old_Sassafras_Trees%2C_Green-Wood_Cemetery%2C_Brooklyn%2C_NY_-_September_19%2C_2015.jpg": {
+   "base": "nyc_004-the-sassafras-of-green-wood",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/67/Queens_Giant_%28Tree%29_04072024.jpg": {
+   "base": "nyc_005-the-queens-giant",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/367236276/medium.jpeg": {
+   "base": "nyc_011-the-great-elm-of-central-park-west",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/2a/Jardin_du_monast%C3%A8re_de_Cimiez%2C_Nice%2C_France-3.jpg": {
+   "base": "nce_001-the-olive-grove-of-the-cimiez-monastery-garden",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/39/Nice_-_Jardin_Albert_1er.jpg": {
+   "base": "nce_003-the-founding-trees-of-jardin-albert-1er",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f9/Cimeti%C3%A8re_Colline_du_Ch%C3%A2teau_Nice.JPG": {
+   "base": "nce_005-the-cypresses-of-the-cimeti-re-du-ch-teau",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/c5/Nice_Prom_Anglais_Est_01.jpg": {
+   "base": "nce_006-the-palms-of-the-promenade-des-anglais",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d6/Villa_Mass%C3%A9na_Nice_-_Garden.jpg": {
+   "base": "nce_007-the-washingtonia-palms-of-villa-mass-na",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d1/Parc_vigier_nice.jpg": {
+   "base": "nce_008-the-first-canary-island-date-palm-of-france",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/05/Kabouterboom_in_Beek.jpg": {
+   "base": "nij_009-the-kabouterboom",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/c7/Naturdenkmal_Linde_in_der_Gr%C3%BCnanlage_Hallerwiese_N%C3%BCrnberg_2025-02-09_09.jpg": {
+   "base": "nbg_001-the-gnarled-lime-of-hallerwiese",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/44/Nanba-jinjya_Kusunoki.jpg": {
+   "base": "osa_004-the-namba-shrine-camphor",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/dc/Oxford_Botanic_Garden%2C_yew_tree_-_geograph.org.uk_-_3911752.jpg": {
+   "base": "oxf_002-the-bobart-yew",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/9e/Padova%2C_Orto_botanico%2C_Palma_di_Goethe_%281%29.jpg": {
+   "base": "pad_001-the-goethe-palm",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/382189010/large.jpg": {
+   "base": "pad_002-the-oriental-plane-of-the-orto-botanico",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/382212862/large.jpg": {
+   "base": "pad_003-the-grafted-ginkgo-of-the-orto-botanico",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/02/Magnolia_Cloister_at_the_St_Anthony_of_Padua_church_in_Padua_%283%29.jpg": {
+   "base": "pad_005-the-magnolia-of-the-saint",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/90/Fico_magnolioide%2C_Piazza_Marina%2C_Palermo.jpg": {
+   "base": "pal_001-the-ficus-of-piazza-marina",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/92/Ficus_tree_momument_to_the_murder_of_a_prosecutor.jpg": {
+   "base": "pal_002-the-falcone-tree",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f4/Ficus_macrophylla_%28Palermo%29.JPG": {
+   "base": "pal_003-the-ficus-of-the-orto-botanico",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/9b/Albero_del_Drago.jpg": {
+   "base": "pal_004-the-dragon-tree-of-villa-malfitano",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/8e/Villa_Trabia_Ficus.jpg": {
+   "base": "pal_006-the-ficus-of-villa-trabia",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/03/Palma_Da_Datteri.jpg": {
+   "base": "pal_007-the-date-palm-of-villa-bonanno",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/9d/Villa_giulia_palme.jpg": {
+   "base": "pal_008-the-palm-avenue-of-villa-giulia",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/31/Olivenbaum_pla%C3%A7a_de_Cort_Palma_2019-10-30.jpg": {
+   "base": "plm_001-s-olivera-de-cort",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/63/Paris_-_Square_Ren%C3%A9_Viviani_-_robinier_-_1601.jpg": {
+   "base": "par_001-the-robinier-of-square-rene-viviani",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/dd/Cedrus_libani_%28Jardin_des_Plantes_de_Paris%29_1.jpg": {
+   "base": "par_002-the-cedar-of-jussieu",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/28/RobinierdeRobin.JPG": {
+   "base": "par_003-the-second-robinier",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/fa/Platane_de_Buffon_%28Jardin_des_Plantes_de_Paris%29.jpg": {
+   "base": "par_004-the-buffon-plane",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/5f/Platane_du_parc_Monceau_1.jpg": {
+   "base": "par_005-the-great-plane-of-parc-monceau",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/4b/Sesquoiadendron_giganteum_in_Parc_des_Buttes-Chaumont_Paris_July_2026.jpg": {
+   "base": "par_006-the-sequoia-of-buttes-chaumont",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/90/P1380770_Paris_IV_orme_St-Gervais_rwk.jpg": {
+   "base": "par_007-the-elm-of-saint-gervais",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/dd/Jardins_de_l%27avenue_Foch%2C_Paris_16e_28.jpg": {
+   "base": "par_008-the-caucasian-elm-of-avenue-foch",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/13/Styphnolobium_japonicum_in_Parc_des_Buttes-Chaumont_Paris_July_2026_02.jpg": {
+   "base": "par_010-the-sophora-by-the-lake",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/50/Moreton_Bay_Fig_Tree%2C_Royal_Perth_Hospital%2C_January_2021_02.jpg": {
+   "base": "per_002-the-moreton-bay-fig-tree-royal-perth-hospital",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/230591035/medium.jpeg": {
+   "base": "ptl_009-the-balch-creek-fir",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/0e/Camellia_japonica_rose.jpg": {
+   "base": "por_005-the-camellias-of-casa-tait",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/1320306/original.JPG": {
+   "base": "por_006-the-bischofia-trio-of-the-botanical-garden",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/98/%C3%81rvore_dos_Jardins_do_Pal%C3%A1cio_de_Cristal.jpg": {
+   "base": "por_008-the-himalayan-cedar-of-the-pal-cio-de-cristal",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/1803059/original.JPG": {
+   "base": "por_009-the-coast-redwood-of-the-botanical-garden",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f4/Velkoprevorsky_palac_Beethovenuv_platan.jpg": {
+   "base": "prg_001-the-beethoven-plane",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/6f/Platanus_hispanica%2C_Charles_Square%2C_Prague_01.jpg": {
+   "base": "prg_002-the-plane-of-karlovo-namesti",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/04/Praha%2C_Platan_javorolist%C3%BD_v_zahrad%C4%9B_Kinsk%C3%BDch.jpg": {
+   "base": "prg_003-the-plane-of-kinsky-garden",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e6/Park_Kampa%2C_pam%C3%A1tn%C3%BD_platan_javorolist%C3%BD_a_Lichten%C5%A1tejnsk%C3%BD_pal%C3%A1c.jpg": {
+   "base": "prg_004-the-plane-of-kampa",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/cd/Praha%2C_obora_Hv%C4%9Bzda%2C_pam%C3%A1tn%C3%BD_buk_v_jihov%C3%BDchodn%C3%AD_%C4%8D%C3%A1sti.JPG": {
+   "base": "prg_005-the-twin-beech-of-hvezda",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/24/Praha-Bubene%C4%8D_-_pam%C3%A1tn%C3%BD_jinan_dvoulalo%C4%8Dn%C3%BD_v_zahradnictv%C3%AD_u_Kr%C3%A1lovsk%C3%A9_obory_%281%29.jpg": {
+   "base": "prg_006-the-ginkgo-of-stromovka",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/9a/Praha%2C_Velk%C3%BD_dub_na_C%C3%ADsa%C5%99sk%C3%A9m_ostrov%C4%9B.JPG": {
+   "base": "prg_007-the-oak-of-cisarsky-ostrov",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/63/Praha%2C_Hrad%C4%8Dany%2C_Velk%C3%A1_strahovsk%C3%A1_zahrada%2C_pam%C3%A1tn%C3%BD_jasan.JPG": {
+   "base": "prg_008-the-ash-of-strahov-garden",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/a7/Babyka_v_Seminarske_zahrade.jpg": {
+   "base": "prg_009-the-field-maple-of-the-seminary-garden",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/272497173/large.jpg": {
+   "base": "prg_010-neruda-s-pear-tree",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/a8/Praha_5%2C_Smichov_-_Dienzenhoferovy_sady_3.jpg": {
+   "base": "prg_011-the-oak-of-dienzenhofer-gardens",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/03/Ginkgo_biloba_in_botanical_garden_Na_slupi_%281%29.jpg": {
+   "base": "prg_013-the-bonsai-ginkgo-of-na-slupi",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/82/Dub_letn%C3%AD_v_%C5%98%C3%A1snovce-I-05-2021-praha.jpg": {
+   "base": "prg_016-the-old-town-s-only-oak",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d0/Roma_-_ginko_-_202109220753.jpg": {
+   "base": "rom_001-the-ginkgo-of-villa-sciarra",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/dd/Platano_secolare_Villa_Borghese_Roma.JPG": {
+   "base": "rom_002-adonis",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e2/Scalone_Monumentale%2C_below_the_Fontana_degli_Undici_Zampilli_-_Orto_botanico_-_Rome%2C_Italy_-_DSC00275.jpg": {
+   "base": "rom_003-the-twin-planes-of-the-eleven-fountains",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f7/Cedro_del_Libano%2C_Parco_di_Villa_Doria_Pamphilj.jpg": {
+   "base": "rom_005-the-cedar-of-the-belvedere",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/3a/Leccio_secolare%2C_laghetto_di_Villa_Borghese.jpg": {
+   "base": "rom_006-the-leccio-of-the-lake",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/1c/Cedro_del_Libano_-_Villa_Celimontana.jpg": {
+   "base": "rom_008-the-cedar-of-celimontana",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/ee/Fitolacca_arborea_%28Phytolacca_dioica%29%2C_scalinata_del_Campidoglio%2C_Roma_%281%29.jpg": {
+   "base": "rom_010-the-fitolacca-of-the-capitoline",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/53/Ippocastano_vetusto%2C_Campidoglio%2C_Roma.jpg": {
+   "base": "rom_014-the-horse-chestnut-of-the-cordonata",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/33/Cedro_del_Libano%2C_laghetto_di_Villa_Borghese.jpg": {
+   "base": "rom_015-the-cedar-above-the-lake",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/c0/L%27olivastro_%28Olea_europea_var._sylvatica%29_plurimillenario_di_Luras.JPG": {
+   "base": "sar_001-s-ozzastru",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/c8/Olivastri_di_Santa_Maria_Navarrese%2C_Baunei%2C_Sardinia_1.jpg": {
+   "base": "sar_003-the-olivastro-of-santa-maria-navarrese",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/25/%EC%84%9C%EC%9A%B8_%EB%AC%B8%EB%AC%98_%EC%9D%80%ED%96%89%EB%82%98%EB%AC%B4_%281%29.jpg": {
+   "base": "seo_001-the-munmyo-ginkgo",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b2/Korea-Seoul-Changdeokgung-Chinese_Juniper-01.jpg": {
+   "base": "seo_002-the-changdeokgung-chinese-juniper",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/22/Banghakdongginkotree.jpg": {
+   "base": "seo_003-the-banghak-dong-ginkgo",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/77/%EC%84%9C%EC%9A%B8_%ED%99%94%EC%96%91%EB%8F%99_%EB%8A%90%ED%8B%B0%EB%82%98%EB%AC%B4.jpg": {
+   "base": "seo_006-the-hwayang-dong-zelkova",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/5e/%EC%84%9C%EC%9A%B8_%EC%8B%A0%EB%A6%BC%EB%8F%99_%EA%B5%B4%EC%B0%B8%EB%82%98%EB%AC%B4.jpg": {
+   "base": "seo_007-the-sillim-dong-cork-oak",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/bc/Q98444729.jpg": {
+   "base": "stb_002-the-plane-of-largo-doutor-francisco-soveral",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/af/Ginkgo_biloba_alc%C3%A1zar_de_sevilla_agosto_2008.JPG": {
+   "base": "sev_001-the-ginkgo-grove-of-the-real-alc-zar",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/4b/Omb%C3%BA_Cartuja_001.jpg": {
+   "base": "sev_002-the-omb-of-la-cartuja",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/91/Glorieta_de_B%C3%A9cquer_%28Sevilla%29_01.jpg": {
+   "base": "sev_004-the-cypress-of-the-glorieta-de-b-cquer",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/dc/Alameda_de_Hercules_Sevilla_1.JPG": {
+   "base": "sev_007-the-trees-of-the-alameda-de-h-rcules",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/0e/3_Patio_de_los_Naranjos_de_la_Catedral_de_Sevilla._Sevilla.%281%29.JPG": {
+   "base": "sev_008-the-orange-trees-of-the-patio-de-los-naranjos",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/98/Glorieta_de_Goya.jpg": {
+   "base": "sev_009-the-fig-of-the-glorieta-de-goya",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/1c/Tembusu_tree_at_Lawn_E%2C_Singapore_Botanic_Gardens_20240210_182325.jpg": {
+   "base": "sgp_001-the-tembusu-of-lawn-e",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/a4/Heritage_Rain_Tree_looming_over_steps_leading_out_of_Fort_Canning_Park_onto_Hill_Street_-_2022-05-27.jpg": {
+   "base": "sgp_002-the-fort-canning-rain-tree",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/7d/Heritage_Madras_Thorn_tree_in_Fort_Canning_Park_-_2022-07-26.jpg": {
+   "base": "sgp_003-the-fort-canning-madras-thorn",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/70/Sintra%2C_Parque_da_Pena_22.jpg": {
+   "base": "sin_001-the-walking-tree-of-pena",
+   "widths": [
+    500
+   ]
+  },
+  "https://static.inaturalist.org/photos/408187279/original.jpeg": {
+   "base": "sin_002-the-fern-cork-oak-of-quinta-do-rel-gio",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/aa/Arauc%C3%A1ria-de-Norfolk_%2850m%29_%E2%80%93_Pal%C3%A1cio_de_Monserrate.jpg": {
+   "base": "sin_004-the-araucaria-of-monserrate",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/25/Birger_jarls_ek%2C_v%C3%A5ren_2025.jpg": {
+   "base": "sto_001-birger-jarl-s-oak",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/6e/Lyells_ek_Norra_Djurg%C3%A5rden_2011b.jpg": {
+   "base": "sto_002-lyell-s-oak",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/aa/Prins_Eugens_ek_h%C3%B6st.jpg": {
+   "base": "sto_004-prince-eugen-s-oak",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/228427600/medium.jpeg": {
+   "base": "stg_005-the-old-plane-of-quai-de-la-bruche",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/a7/Kelch-Linde_2018.jpg": {
+   "base": "tln_001-kelch-s-linden-kelchi-p-rn",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/53/H%C3%B5lmikpuu_1.jpg": {
+   "base": "tln_002-the-s-da-street-ginkgo-s-da-t-nava-h-lmikpuu",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/00/20191025_DenHaagPostzegelboom.jpg": {
+   "base": "hag_004-the-postzegelboom",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/2b/Giant_Ginkgo_Tree_-_Zenpukuji_-_Minato%2C_Tokyo_-_DSC06818.JPG": {
+   "base": "tok_001-the-zenpukuji-ginkgo",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d9/20260418_Kubi-kake_ginkgo_tree.jpg": {
+   "base": "tok_004-the-head-betting-ginkgo",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/73/Shiba_Toshogu_03.jpg": {
+   "base": "tok_005-the-shiba-toshogu-ginkgo",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/79/Hama-Rikyu_300-year-old_pine.jpg": {
+   "base": "tok_006-the-three-hundred-year-pine",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/ed/Tokyo%2C_Koishikawa_%282005%29_11.jpg": {
+   "base": "tok_007-the-ginkgo-of-the-sperm-discovery",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/85/Wisteria_at_Kameido_Tenjin.jpg": {
+   "base": "tok_008-the-kameido-tenjin-wisteria",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/71/Meiji_jingu_outer_garden_ginkgo_trees_2013_nov.jpg": {
+   "base": "tok_009-the-meiji-jingu-gaien-ginkgo-avenue",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/40/Meiji_Jingu_005.jpg": {
+   "base": "tok_010-the-meoto-kusu",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/be/Platano_comune_monumentale_%28Vannetti_28%29_%2890653%29.jpg": {
+   "base": "tre_003-the-plane-tree-of-via-vannetti",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/124569566/medium.jpeg": {
+   "base": "tri_005-the-great-plane-of-the-giardino-pubblico",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/fb/ID_01L21902L219TO01_Noce_del_Caucaso_05_Giardino_Sambuy_Piazza_Carlo_Felice_Torino.jpg": {
+   "base": "tor_001-the-caucasian-wingnut-of-the-giardino-sambuy",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f5/Platano_piazza_Cavour_1.jpg": {
+   "base": "tor_002-the-plane-of-the-giardini-cavour",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/a6/ID_01L21904L219TO01_Ginkgo_di_piazza_Cavour_05_Giardini_Cavour_Torino.jpg": {
+   "base": "tor_003-the-ginkgo-of-the-giardini-cavour",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/c9/Bagolaro_Parco_del_Valentino.jpg": {
+   "base": "tor_004-the-hackberry-of-the-valentino",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/ae/Farnia_monumentale_Valentino_2.jpg": {
+   "base": "tor_005-the-oak-behind-the-castello-del-valentino",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/298459120/large.jpeg": {
+   "base": "tor_006-the-plane-by-the-eridano",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/1c/Platano_Viale_Matteo_Maria_Boiardo_2.jpg": {
+   "base": "tor_007-the-plane-at-the-borgo-medievale",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/06/Oude_Uithoflindeboom%2C_Toulouselaan_43%2C_Utrecht%2C_27_januari_2025_06.jpg": {
+   "base": "utr_001-the-uithof-linden",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/10/Old_ginkgo_tree%2C_old_Hortus_Botanicus%2C_Utrecht_University%2C_August_2024_-_1.jpg": {
+   "base": "utr_002-the-oude-hortus-ginkgo",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/63/Davidia_Involicrata_%28Vaantjesboom_of_zakdoekenboom%29_in_Botanische_tuin.jpg": {
+   "base": "utr_003-the-handkerchief-tree-of-the-oude-hortus",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/61/Utrecht_-_vanaf_Quintijnsbrug_2.jpg": {
+   "base": "utr_005-onder-de-linden",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/5e/El_Parterre%2C_Val%C3%A8ncia%2C_ficus.JPG": {
+   "base": "vlc_001-el-titan-the-ficus-of-the-parterre",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/46/Ginkgo_del_jard%C3%AD_de_Monfort_de_Val%C3%A8ncia.jpg": {
+   "base": "vlc_003-the-ginkgo-of-jard-n-de-monforte",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/ab/Giardini_della_Biennale%2C_Venice_001.jpg": {
+   "base": "ven_001-the-founding-trees-of-the-giardini-della-biennal",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/fb/Cimeti%C3%A8re_ile_san_michele_vu_du_vaporetto.jpg": {
+   "base": "ven_002-the-cypresses-of-san-michele-cemetery",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/39/San_Francesco_del_Deserto_01.jpg": {
+   "base": "ven_004-the-cypress-ring-of-san-francesco-del-deserto",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/cf/Giardini_Papadopoli_%28arbres%29.jpg": {
+   "base": "ven_007-the-garden-trees-of-giardini-papadopoli",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/90/Ca_zenobio_giardini.JPG": {
+   "base": "ven_009-the-garden-of-ca-zenobio-degli-armeni",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/76/Baia_Baia_del_Forte_13.jpg": {
+   "base": "ven_010-forte-marghera-s-century-trees",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/2c/Giardini_Piazza_Bra_e_Arena-XE3F2394a.jpg": {
+   "base": "ver_001-the-cedar-of-piazza-bra",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/2e/Platano_piazza_Indipendenza-Verona_03.jpg": {
+   "base": "ver_002-the-plane-tree-of-piazza-indipendenza",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/a4/Ginkgo_biloba_piazza_Indipendenza_Verona.jpg": {
+   "base": "ver_003-the-ginkgo-of-piazza-indipendenza",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/9e/Italian_garden%2C_Giardino_Giusti%2C_Verona%2C_Italy%2C_August_2025_01.jpg": {
+   "base": "ver_005-the-cypress-avenue-of-giardino-giusti",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/ce/Naturdenkmal_726_GuentherZ_2011-08-29_3165_Wien01_Singerstrasse11_Platane.JPG": {
+   "base": "vie_001-the-cemetery-plane-of-singerstra-e",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/2e/GuentherZ_Naturdenkmal_569_2010-02-27_0152_Wien01_Stadtpark_Ginkgo.jpg": {
+   "base": "vie_002-the-ginkgo-of-the-schubert-monument",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/4d/Ginkgo_biloba_%28Sch%C3%B6nbrunn%29_natural_monument_%28male_tree_with_female_branch%2C_imported_in_1781%29_2008.jpg": {
+   "base": "vie_004-the-ginkgo-of-sch-nbrunn",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e8/GuentherZ_Naturdenkmal_009_2010-02-26_0095_Wien03_Rennweg14_Mozartplatane.jpg": {
+   "base": "vie_005-the-mozart-platane",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/6c/Naturdenkmal_564_GuentherZ_2010-08-25_0128_Wien01_Rathauspark_Platane.JPG": {
+   "base": "vie_006-the-founding-plane-of-rathauspark",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/5e/Wiener_Naturdenkmal_376_-_Morgenl%C3%A4ndische_Platane_%28Innere_Stadt%29_o.JPG": {
+   "base": "vie_007-the-sisi-platane-of-volksgarten",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/22/Stieleiche846.jpg": {
+   "base": "vie_008-the-oak-of-the-sulzwiese",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/98/Sequoiadendron_Poetzleinsdorf_Vienna_Austria_1680x1125.jpg": {
+   "base": "vie_009-the-giant-sequoias-of-p-tzleinsdorfer-schlosspar",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/9b/Wiener_Naturdenkmal_817_-_Ginko%2C_Mammutbaum_%28W%C3%A4hring%29_b.JPG": {
+   "base": "vie_010-the-twin-giants-of-sternwartepark",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/ce/Wiener_Naturdenkmal_562_-_Geschlitztbl%C3%A4ttrige_Rotbuche_%28Innere_Stadt%29_d.JPG": {
+   "base": "vie_013-the-fern-leaved-beech-of-the-rathauspark",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/21/Schmerlingplatz_Persische_Parrotie.jpg": {
+   "base": "vie_014-the-persian-ironwood-of-the-grete-rehor-park",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f2/Stadtpark_Japanischer_Schnurbaum.jpg": {
+   "base": "vie_016-the-pagoda-tree-of-the-stadtpark",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/98/VU_liepa.JPG": {
+   "base": "vln_003-the-linden-of-dauk-a-courtyard",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e1/D%C4%85b_Mieszko_1993.jpg": {
+   "base": "war_001-dab-mieszko-i-king-mieszko-i-s-oak",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/80/Topola_obro%C5%84c%C3%B3w_zima.jpg": {
+   "base": "war_002-the-poplar-of-the-defenders",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/05/D%C4%85b_korczaka.jpg": {
+   "base": "war_004-dr-korczak-s-oak",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/435602016/large.jpeg": {
+   "base": "wdc_004-the-national-mall-jefferson-elm",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/2c/D%C4%85b_W%C5%82asta.jpg": {
+   "base": "wro_003-the-piotr-wlast-oak",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/0f/A_tree_in_the_Museum_Gardens%2C_York_-_geograph.org.uk_-_8293960.jpg": {
+   "base": "yor_002-the-cut-leaved-hornbeam",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d8/Autumn_Tree%2C_Museum_Gardens%2C_York_%285137138362%29.jpg": {
+   "base": "yor_003-the-pear-barked-beech",
+   "widths": [
+    500
+   ]
+  }
+ }
+}
