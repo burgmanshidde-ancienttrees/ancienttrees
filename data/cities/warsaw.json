@@ -5,7 +5,7 @@
   "intro": "Warsaw rebuilt itself almost entirely after 1945, which is the quiet reason so few of its trees are genuinely old: whatever grew here before the war mostly burned with everything else. What survived instead carries weight beyond its years. A poplar stood inside a 1939 barricade and later grew beside a wartime transit camp. An oak marks the one building left around Janusz Korczak's orphanage. Royal parks add two more: a pair of oaks in the king's own Lazienki garden, and a lime named for the king who built Wilanow.",
   "meta_description": "Warsaw's remarkable trees carry wartime, royal and Enlightenment history: a 600-year oak, a WWII poplar, Korczak's orphanage oak, royal park oaks.",
   "question_answer": "Warsaw's oldest tree is Dab Mieszko I (King Mieszko I's Oak), a pedunculate oak on Nowoursynowska Street in Ursynow, estimated at 600 to 640 years old depending on the survey cited. It stands at the edge of Natolin Forest, one of the last fragments of the wild woodland that covered this ground before the city existed.",
-  "question_meta": "A 600-640 year old oak on the edge of Natolin Forest, older than Warsaw itself, is the city's oldest tree. The full ten, and the history each carries.",
+  "question_meta": "A 600-640 year old oak on the edge of Natolin Forest, older than Warsaw itself, is the city's oldest tree. The full twelve, and the history each carries.",
   "question_context": "Warsaw's tree ages are harder to pin down than in cities with continuous records, because the city's own archives and much of its built and natural heritage were destroyed between 1939 and 1945. Dab Mieszko I is the exception precisely because it predates that entire period by centuries: even the more conservative age estimates put its origin well before Poland's partitions, let alone the Second World War, and successive surveys since its 1962 protection have each revised the figure without ever seriously challenging its status as the region's oldest oak. Its main rival for the title of Warsaw's most storied tree is not a contest of age at all. The Poplar of the Defenders, roughly a century old, and Dr Korczak's Oak, undated but standing beside a building that survived the war intact, both carry more concentrated history in fewer decades than the Mieszko oak accumulated in centuries, a reminder that this city's remarkable trees earn their place by two different measures, sometimes separately, occasionally both at once.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Warsaw's remarkable trees free to visit?",
-      "a": "Eight of the ten stand on public streets or in public parks and gardens, open at any time. Two sit behind a paid entrance gate: King Jan's Linden in the Wilanow palace grounds, and the Botanical Garden ginkgo, which also closes its outdoor grounds over winter."
+      "a": "Eight of the twelve stand on public streets or in public parks and gardens, open at any time. Four sit behind a paid entrance gate: King Jan's Linden in the Wilanow palace grounds, and three more trees in the Botanical Garden, including the ginkgo, which also closes its outdoor grounds over winter."
     },
     {
       "q": "Why does Warsaw have so few very old trees?",
@@ -373,6 +373,66 @@
         "status": "missing"
       },
       "paid_entry": true
+    },
+    {
+      "id": "war_012",
+      "name": "The Maple and Elm of the Botanical Garden Gate",
+      "species": "Norway Maple and European White Elm (Acer platanoides and Ulmus laevis)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Ogrod Botaniczny Uniwersytetu Warszawskiego, vehicle gate, Aleje Ujazdowskie 4",
+        "latitude": 52.21711,
+        "longitude": 21.02632,
+        "neighbourhood": "Srodmiescie"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.3279 (Polish Central Register of Nature Forms, designated 1988-08-29)"
+      ],
+      "access": "Paid entry to the Botanical Garden. Open March to October; in winter only the greenhouses open.",
+      "transport": "Tram or bus to Plac Na Rozdrozu, right by the garden gate on Aleje Ujazdowskie; also walkable from Metro Politechnika (M1 line)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A maple and an elm share one protection order at the vehicle gate of Warsaw University's Botanical Garden, designated together in 1988 rather than as two separate trees. They stand close enough to touch, sixty metres from the garden's famous 1824 ginkgo, at the entrance most visitors walk straight past on their way to the more famous specimen.\n\nAcer platanoides, the Norway maple, is common enough across the city that Warsaw plants it as an ordinary street tree; what earns this specimen its own designation is simply standing at this gate long enough to outgrow the ordinary. Ulmus laevis, the European white elm, is a rarer thing to see reach old age anywhere in Europe: Dutch elm disease has killed most mature elms on the continent since the 1970s, and a surviving specimen this size is itself a small piece of evidence about which trees a city's beetles never quite reached.\n\nBoth stand inside the garden's grounds on Aleje Ujazdowskie, so the ticket that gets a visitor to the ginkgo gets them here first.",
+      "verify_notes": "Single official source (Polish Central Register of Nature Forms / CRFOP, kodinspire PL.ZIPOP.1393.PP.1465011.3279, gids 147450/147451, designated 1988-08-29). No independent second source found this pass. Sits ~60m from the already-published war_011 (1824 ginkgo, same garden); shipped as a distinct collectible point (a different gate, different species, its own protection order) rather than folded in, matching the corpus's established pattern of multiple separate entries within one botanical garden (e.g. Naples' Orto Botanico). Earlier pass held this back only for lacking a second source, which CLAUDE.md's 2026-08-10 ruling forbids as a publish blocker.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "war_013",
+      "name": "The Columnar Oaks of the Observatory Entrance",
+      "species": "Pedunculate Oak, columnar form (Quercus robur 'Fastigiata')",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 340,
+      "height_m": 19.5,
+      "location": {
+        "address": "Ogrod Botaniczny Uniwersytetu Warszawskiego, observatory entrance, Aleje Ujazdowskie 4",
+        "latitude": 52.2172,
+        "longitude": 21.0275,
+        "neighbourhood": "Srodmiescie"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.5185 (Polish Central Register of Nature Forms, designated 2024-10-01, gid 237628: height 19m girth 335cm; gid 237629: height 20m girth 345cm)"
+      ],
+      "access": "Paid entry to the Botanical Garden. Open March to October; in winter only the greenhouses open.",
+      "transport": "Tram or bus to Plac Na Rozdrozu, right by the garden gate on Aleje Ujazdowskie; also walkable from Metro Politechnika (M1 line)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Two columnar oaks stand either side of the entrance nearest the garden's astronomical observatory, upright and narrow in a way ordinary pedunculate oaks never grow on their own: Quercus robur 'Fastigiata' is a cultivated form, bred to stay compact rather than spread the wide crown the species is known for. Warsaw designated the pair as protected natural monuments only in October 2024, one of the university garden's newest additions to a collection that also protects trees three centuries older.\n\nThe two are individually measured rather than treated as a single unit: one stands 19 metres tall with a trunk 335 centimetres round, the other 20 metres and 345 centimetres, close enough in size to read as a matched pair from the path but genuinely two different trees with two different numbers.\n\nThey stand about fifty metres from the garden's celebrated 1824 ginkgo, the same stop on the same visit, though a Warsaw institution's habit of taking its oldest trees seriously by cataloguing its youngest as well is the more unusual thing about them.",
+      "verify_notes": "Single official source (Polish Central Register of Nature Forms / CRFOP, kodinspire PL.ZIPOP.1393.PP.1465011.5185, gids 237628/237629, designated 2024-10-01). No independent second source found this pass (a very recent designation). Sits ~50m from the already-published war_011; shipped as a distinct collectible point per the same reasoning as war_012 above. Earlier pass held this back only for lacking a second source and recency, neither a publish blocker under CLAUDE.md's 2026-08-10 ruling.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
