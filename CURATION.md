@@ -9,6 +9,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-27 (night run) - Zaragoza, Brno, Trento checked clean; Wroclaw +1 (Swiadek, the Witness Plane)
+
+Checked the remaining mid-size READY batches. Zaragoza's 3 (a plane on an unwalkable road/rail margin, a lime with a declining 2005 condition survey and unresolved roadworks damage, two field elms with a specifically-flagged threatened specimen among them) all hold on real, already-documented evidence. Brno's 2 both have concrete current blockers: the largest-girth plane in the city sits on an active 2026 residential construction site per local news, and Mendel's Ginkgo is behind a museum that requires advance booking and is reported closed as of August 2026. Trento's 2 both remain unresolved private-villa access questions, already checked twice by earlier write passes with nothing found either way.
+
+Wroclaw's "Witness Plane" (Swiadek) shipped as wro_005, a genuinely good find: a London plane by Wroclaw's Civil Registry Office, named and protected by council resolution in January 2020, with a real second source (a detailed dendrology blog giving the full girth, location and the lion-statue fountain it stands beside) and an OpenStreetMap node that individually names and tags this exact tree at the exact coordinate. Not walkable with the existing 4-oak Wielka Wyspa cluster (over a kilometre away), so it ships as the city's second stop rather than folded into the same walk. Rewrote the city's intro, meta_description, question_meta, question_context and two FAQ answers to say honestly that there are now 5 trees across 2 stops, not 4 on one walk; preflight caught both a false-positive "all four" promise-count trigger (fixed by adding "oaks" so the sentence reads as about the oak subset, not the whole city) and an over-length question_context paragraph, both fixed before commit. Build (3003 pages), qa.py, superlatives.py, preflight.py, pagegaps.py all clean.
+
 ## 2026-08-27 (night run) - Rome checked clean; Warsaw +2 from its own Botanical Garden; three register-open scouts, none tractable today
 
 Rome's 3 READY leads confirmed genuinely blocked: real day-trip-boundary failures with the transit research already done in an earlier pass (Parco Francesco Salerno at 14km northwest, current local reporting puts it at 55 minutes to over an hour by bus). Not a forbidden reason, correctly held.

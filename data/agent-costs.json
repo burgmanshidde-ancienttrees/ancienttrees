@@ -3609,6 +3609,13 @@
         "tokens": 0,
         "trees": 2,
         "note": "Session work, no dispatched pass. Rome's 3 READY leads confirmed genuinely blocked, real day-trip-boundary failures with actual transit research already done (one confirmed 55min-1hr+ by bus), not a forbidden reason. Scouted 3 unopened stage-1 cities with register supply for a possible city open: Salzburg (86 candidates but thin/unstructured data, loose 2.7-3.3km clusters), Taormina (all 5 near candidates sit on Hotel Excelsior Palace grounds, no evidence of public access, recorded as a new leads file), Rothenburg ob der Tauber (28 candidates but thin, scattered 1.2-12.7km) -- none tractable for a quick open, left for a dedicated pass. Shipped 2 in Warsaw instead: a maple+elm pair and a columnar-oak pair at Warsaw University Botanical Garden, both ~50-60m from the existing published ginkgo (war_011), held only for lacking a second source (forbidden reason); shipped as distinct collectible points per the corpus's established multi-entry-per-garden pattern. Fixed stale 'ten'/paid-ratio counts in Warsaw's own copy. Build+qa.py+superlatives.py+preflight.py+pagegaps.py all clean. Note: git push started failing mid-run (expired GitHub App token, ~1hr lifetime), working locally and retrying."
+      },
+      {
+        "target": "zaragoza, brno, trento, wroclaw",
+        "kind": "verify",
+        "tokens": 0,
+        "trees": 1,
+        "note": "Session work, no dispatched pass. Zaragoza's 3, Brno's 2 and Trento's 2 READY candidates all checked and confirmed genuinely still blocked for real reasons (unwalkable road/rail margins, declining condition on a 2005 survey, an active construction site confirmed by 2026 local news, a museum requiring booking and currently closed, private villa access questions already checked twice with no resolution). None a forbidden reason. Wroclaw's 'Witness Plane' (Swiadek) shipped as wro_005: found a real second source (a detailed local dendrology blog) plus an OSM node individually naming and tagging this exact tree, resolving the earlier pass's 'not verified for time' hold. Not walkable with the existing 4-oak Wielka Wyspa cluster (>1km away), shipped as the city's second stop. Fixed intro/meta_description/question_meta/question_context/two FAQ answers to honestly reflect 5 trees across 2 stops rather than 4 on one walk; preflight caught a stale promise-count regex trigger and an over-length paragraph, both fixed. Build (3003 pages), qa.py, superlatives.py, preflight.py, pagegaps.py all clean."
       }
     ]
   }

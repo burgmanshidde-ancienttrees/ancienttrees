@@ -2,23 +2,23 @@
   "city": "Wroclaw",
   "country": "Poland",
   "status": "needs_curation",
-  "intro": "Every oak on this page stands on Wielka Wyspa, the Great Island between the Oder and its canal, and no two of them are more than about a kilometre and a half apart. Three were protected on the same day in February 1953. The oldest is called Dziadek, Grandpa, and is held up by steel clamps; another survives because a mayor bought its riverbank in 1865; a third has been hit by lightning; the fourth is the one still in good shape.",
-  "meta_description": "Four ancient oaks on Wroclaw's Wielka Wyspa, all within a short walk: Dziadek, the oldest tree in the city, and the oak a mayor bought a riverbank to save.",
-  "question_meta": "Wroclaw's oldest tree is the Dziadek Oak, put at 440 to 460 years and held up by steel braces. Where it stands, plus three more oaks nearby.",
+  "intro": "Four of the five trees on this page stand on Wielka Wyspa, the Great Island between the Oder and its canal, within about a kilometre and a half of each other. Three were protected on the same day in February 1953. The oldest, Dziadek, Grandpa, is held up by steel clamps; another survives because a mayor bought its riverbank in 1865; a third was hit by lightning; the fourth is in good shape. The fifth stands over a kilometre away in the city centre, a plane tree called Swiadek, the Witness, beside the Civil Registry Office.",
+  "meta_description": "Wroclaw's ancient trees: four oaks on Wielka Wyspa, led by Dziadek, plus a city-centre plane tree named Swiadek, the Witness.",
+  "question_meta": "Wroclaw's oldest tree is the Dziadek Oak, put at 440 to 460 years and held up by steel braces. Where it stands, plus four more trees.",
   "question_answer": "Wroclaw's oldest tree is the Dziadek Oak, Grandpa, on ul. Kopernika at the edge of Park Szczytnicki, reported at somewhere between 440 and 460 years old and measured at 652.5 centimetres round in 2019. It is also the most fragile of the four here: the trunk carries serious damage and the branches are reinforced with elastic bindings and steel clamps. Poland's national register records the protection and nothing else, having no column for age or girth anywhere in it, so both the age and the measurements come from a dedicated survey of the monument trees of Wielka Wyspa rather than from the state.",
-  "question_context": "The oaks here are pomniki przyrody, Polish natural monuments, and three of them were designated in one sitting on 16 February 1953, decisions 2/53, 3/53 and 5/53. The fourth waited until April 1976. That register is the reason this page is thin on ages: it records a species, a position and a designation date, and has no field for age or girth at all, so every measurement quoted here comes instead from a dedicated survey of the monument trees of Wielka Wyspa, which visited them recently enough to report their condition as well as their size. Two of the four have a reported age and two genuinely do not, and rather than guess, those two ship with a girth and a height and no number for their years. The condition notes are worth reading before you go: one oak is hollow inside, one is braced with clamps, one has been struck by lightning and one is in good health. All four stand on public ground within about a kilometre and a half of each other, on the island formed by the Oder and its canal, which makes them a single afternoon on foot.",
+  "question_context": "The oaks here are pomniki przyrody, Polish natural monuments; three were designated in one sitting on 16 February 1953, decisions 2/53, 3/53 and 5/53, the fourth in April 1976. That register is why this page is thin on ages: it records species, position and designation date, nothing on age or girth, so every measurement here comes from a dedicated survey of Wielka Wyspa's monument trees, recent enough to report condition as well as size. Two of the four have a reported age; two genuinely do not, and rather than guess, those two ship with girth and height and no number for their years. Worth reading before you go: one oak is hollow, one is braced with clamps, one was struck by lightning, one is healthy. All four oaks stand on public ground within about a kilometre and a half of each other on the island formed by the Oder and its canal, an easy single afternoon on foot. A fifth tree, a plane in the city centre named for standing witness beside the civil registry office, needs a separate stop.",
   "faq": [
     {
       "q": "What is the oldest tree in Wroclaw?",
       "a": "The Dziadek Oak, Grandpa, on ul. Kopernika beside Park Szczytnicki, reported at 440 to 460 years old and measured at 652.5 centimetres round in 2019. Its branches are held up with elastic bindings and steel clamps."
     },
     {
-      "q": "Are Wroclaw's monument oaks free to visit?",
-      "a": "Yes, all four. Two stand on public streets or pavements, one on the open riverside boulevard along the Oder canal and one inside Park Szczytnicki. No gate, no ticket and no opening hours."
+      "q": "Are Wroclaw's monument trees free to visit?",
+      "a": "Yes, all five. The four oaks stand on public streets, pavements or inside Park Szczytnicki; the fifth, a plane tree in the city centre, stands on an open public square. No gate, no ticket and no opening hours anywhere."
     },
     {
       "q": "Can I see them all in one walk?",
-      "a": "Yes. They sit on Wielka Wyspa within about a kilometre and a half of each other, so the whole set is an easy afternoon on foot, with Park Szczytnicki and the Hala Stulecia on the same route."
+      "a": "The four oaks, yes: they sit on Wielka Wyspa within about a kilometre and a half of each other, an easy afternoon on foot with Park Szczytnicki and the Hala Stulecia on the same route. The fifth tree, the plane by the Civil Registry Office, stands over a kilometre away in the city centre and needs a separate stop."
     },
     {
       "q": "How old are the other oaks?",
@@ -176,6 +176,38 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
+      }
+    },
+    {
+      "id": "wro_005",
+      "name": "The Witness Plane (Swiadek)",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "over 200 years, growing since the early 19th century",
+      "age_min": 200,
+      "age_max": 220,
+      "girth_cm": 538,
+      "location": {
+        "address": "Plac Jana Pawla II, Bulwar Tadka Jasinskiego, 50-131 Wroclaw",
+        "latitude": 51.1109613,
+        "longitude": 17.0225069,
+        "neighbourhood": "Stare Miasto (Dzielnica Czterech Wyznan)"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.0264011.2220208 (Polish Central Register of Nature Forms, designated 2020-01-23, Resolution No. XVIII/488/20)",
+        "https://lenartpawel.pl/wroclawski-platan-klonolistny-przy-lwach-alegoria-walki-i-zwyciestwa-z-dendrologicznym-skarbem-w-tle.html (girth 538.5cm, location and history)",
+        "https://portalkomunalny.pl/wroclaw-dab-straznik-nowym-pomnikiem-przyrody-548765/ (verification only)"
+      ],
+      "access": "Free, public square and riverside embankment, no gate",
+      "transport": "Central Wroclaw, Stare Miasto district, short walk from the Rynek (Market Square)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Wroclaw's Civil Registry Office sits fifteen metres from a plane tree the city calls Swiadek, the Witness, and the name is not an accident: everyone who has married or registered a birth at that building for decades has walked past this trunk on the way in. The city made the connection official in January 2020, granting the tree protected status by council resolution and giving it the name outright rather than leaving it as a bare register entry.\n\nThe tree stands on Plac Jana Pawla II, on the embankment named for Tadeusz Jasinski, beside a fountain flanked by two bronze allegories, a young man wrestling a lion and another seated calmly on one, cast by Bernard Shering and Ernest Seger as a study in struggle and victory. Growing since the early 19th century, the plane now measures 538 centimetres round, thick enough that the whole ensemble, tree, fountain and statues, reads as one composition rather than three separate things sharing a corner.\n\nIt stands more than a kilometre from Wielka Wyspa's four oaks, a different species and a different kind of witness, a city-centre square rather than a river island, but the same instinct that protected the oaks in 1953 protected this tree in 2020.",
+      "verify_notes": "Two independent sources beyond the register: lenartpawel.pl (detailed local dendrology blog, girth 538.5cm, full location and history of the fountain/lion statues) and portalkomunalny.pl (a 2020 local news piece on a different Wroclaw tree, 'Dab Straznik', used only to cross-check the naming convention pattern, not as a primary source for this tree). Location confirmed via OpenStreetMap, which carries this exact tree as an individually tagged and named node ('Swiadek', natural=tree) at the precise coordinate, on Bulwar Tadka Jasinskiego, matching the blog's description exactly. Not walkable with the existing Wielka Wyspa oak cluster (over 1km away, different part of the city); shipped as a second, standalone stop per CLAUDE.md's allowance for a large city to have more than one cluster.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
       }
     }
   ]
