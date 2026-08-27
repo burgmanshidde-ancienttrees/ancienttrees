@@ -1,0 +1,40 @@
+---
+// Support page. Written 2026-08-27, because the App Store asks for a support
+// URL and the honest answer to "where do people go when something is wrong"
+// was three different pages and an email address nobody collected in one
+// place.
+//
+// It is also the page a reviewer opens. Guideline 1.2 asks for published
+// contact details next to a way of reporting content, so the reporting route
+// and the address are both here rather than only inside the app.
+import Base from "../layouts/Base.astro";
+import { BASE_URL } from "../lib/schema";
+
+const canonical = `${BASE_URL}/support`;
+---
+<Base title="Support" description="How to reach us about a tree, the app, your account or something that is wrong." canonical={canonical}>
+<main class="content-page">
+  <h1>Support</h1>
+  <div class="prose-block">
+    <p>Ancient Trees maps remarkable old trees and the walks that string them together. If something here is wrong, or you cannot get something to work, this page is where to start.</p>
+
+    <h2>A tree is wrong, gone, or in the wrong place</h2>
+    <p>Tell us and we fix it, usually the same day. A pin in the wrong spot is the one mistake we treat as urgent, because you are already standing somewhere the tree is not. Use the report control on the tree's own page, or <a href="/contribute?kind=correction">send a correction</a>.</p>
+
+    <h2>A tree we are missing</h2>
+    <p>You can add a tree by taking a photograph of it and filling in what you know, either in the app or through <a href="/contribute?kind=tree">the form</a>. Every submission is verified against two independent sources before it goes on the map.</p>
+
+    <h2>Somebody's name or picture in the app</h2>
+    <p>In the app, the three dots beside a person let you report them or block them. A report reaches us and we act on it; a block hides them from you straight away and can be lifted again under Settings, Blocked people. There is no tolerance here for offensive, abusive or impersonating profiles.</p>
+
+    <h2>Your account</h2>
+    <p>Signing in takes an email address and nothing else. Your collection follows the account, so it survives a new phone. You can delete the account from Settings at any time, and deleting it removes your address, your collection, your name and your picture. Nothing is kept back.</p>
+
+    <h2>Something in the app is broken</h2>
+    <p>Say what you were doing and what happened, with your phone and iOS version if you have them to hand. Use Settings, Send feedback in the app, or write to us below.</p>
+
+    <h2>Write to us</h2>
+    <p>Anything at all: <a href="mailto:info@ancienttrees.app">info@ancienttrees.app</a>. A person reads it. Also here: <a href="/privacy">privacy</a> and <a href="/terms">terms</a>.</p>
+  </div>
+</main>
+</Base>

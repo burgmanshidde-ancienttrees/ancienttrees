@@ -1,0 +1,106 @@
+#!/usr/bin/env python3
+"""appstore_shots.py - the screenshots App Store Connect asks for.
+
+Apple wants 6.9 inch iPhone screenshots, 1320 by 2868, and reuses them for every
+smaller size, so one set is the whole requirement for an iPhone-only app. This
+takes them from the simulator at exactly that size and checks the dimensions
+before saying it is done, because a set that is one pixel off is refused at
+upload with no explanation of which file.
+
+    python3 scripts/appstore_shots.py            # build, boot, shoot
+    python3 scripts/appstore_shots.py --no-build
+
+They come out unframed and without captions, which is what a first submission
+needs: a plain screenshot is allowed, and a designed frame with marketing copy
+over it is a decision about how this app presents itself, which is Hidde's.
+
+WHY THESE FIVE. They are the app's promise in order: the trees near you, one
+tree worth crossing town for, the collection you build, the places to browse,
+and a city laid out. Apple shows the first three in search results, so the
+argument has to be made by then.
+"""
+
+import argparse
+import os
+import pathlib
+import subprocess
+import sys
+import time
+
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+BUNDLE = "app.ancienttrees.AncientTrees"
+DEVICE = "iPhone 17 Pro Max"
+WANT = (1320, 2868)
+ORIGIN = "-at=52.3731,4.8922"
+
+# name, launch arguments, seconds to wait before the shutter.
+SHOTS = [
+    ("1-map", ["-tab=0", "-sheet=half"], 9),
+    ("2-tree", ["-tab=0", "-open=tree:ams_005"], 7),
+    ("3-my-trees", ["-tab=2", "-signed-in", "-collected=ams_001,ams_002"], 6),
+    ("4-discover", ["-tab=1"], 6),
+    ("5-city", ["-tab=0", "-open=city:amsterdam"], 8),
+]
+
+
+def sh(*args, check=True):
+    return subprocess.run(args, capture_output=True, text=True, check=check)
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--no-build", action="store_true")
+    ap.add_argument("--out", default=str(ROOT / "out" / "appstore"))
+    args = ap.parse_args()
+
+    sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+    import appsweep
+    from worktree_guard import guard
+    guard("taking the App Store screenshots")
+
+    udid = appsweep.udid_for(DEVICE, "com.apple.CoreSimulator.SimDeviceType.iPhone-17-Pro-Max")
+    appsweep.boot(udid)
+    # Light, ordinary text size: the store is not the place to show either
+    # setting off, and a screenshot at accessibility sizes reads as broken.
+    sh("xcrun", "simctl", "ui", udid, "appearance", "light", check=False)
+    sh("xcrun", "simctl", "ui", udid, "content_size", "medium", check=False)
+
+    # NOT inside the repository. This folder is in iCloud Drive, which stamps
+    # every file it manages with a fileprovider attribute, and codesign then
+    # refuses the bundle with "resource fork, Finder information, or similar
+    # detritus not allowed". Cost twenty minutes to find on 2026-08-27 and it
+    # would have cost the same again to anybody who built here.
+    dd = pathlib.Path(os.environ.get("CLAUDE_SCRATCHPAD", "/tmp")) / "at-appstore-dd"
+    app = dd / "Build/Products/Debug-iphonesimulator/AncientTrees.app"
+    if not args.no_build:
+        appsweep.build(dd)
+    if not app.exists():
+        sys.exit(f"no built app at {app}; run without --no-build")
+    sh("xcrun", "simctl", "install", udid, str(app))
+
+    out = pathlib.Path(args.out)
+    out.mkdir(parents=True, exist_ok=True)
+    bad = []
+    for name, extra, wait in SHOTS:
+        sh("xcrun", "simctl", "terminate", udid, BUNDLE, check=False)
+        sh("xcrun", "simctl", "launch", udid, BUNDLE, ORIGIN, "-reset-blocks", *extra)
+        time.sleep(wait)
+        f = out / f"{name}.png"
+        sh("xcrun", "simctl", "io", udid, "screenshot", str(f))
+        size = sh("sips", "-g", "pixelWidth", "-g", "pixelHeight", str(f)).stdout
+        w = int([l for l in size.splitlines() if "pixelWidth" in l][0].split(":")[1])
+        h = int([l for l in size.splitlines() if "pixelHeight" in l][0].split(":")[1])
+        ok = (w, h) == WANT
+        print(f"  {name:12} {w}x{h} {'' if ok else '  WRONG SIZE'}")
+        if not ok:
+            bad.append(name)
+
+    print(f"\n{len(SHOTS)} screenshots in {out}")
+    if bad:
+        sys.exit(f"wrong size: {', '.join(bad)}. Apple wants {WANT[0]}x{WANT[1]} for 6.9 inch.")
+    print("Every one is 1320x2868, which is what App Store Connect asks for.")
+    print("LOOK at them before uploading: a screenshot mid-load is still the right size.")
+
+
+if __name__ == "__main__":
+    main()

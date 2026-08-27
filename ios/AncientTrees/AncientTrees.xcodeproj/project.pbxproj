@@ -404,6 +404,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSCameraUsageDescription = "To photograph the tree you are standing in front of. The picture stays on your phone unless you offer it to us.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "So the map can open on the remarkable old trees closest to you. Your location never leaves the phone.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To pick a photograph of the tree you are standing in front of.";
@@ -451,6 +452,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSCameraUsageDescription = "To photograph the tree you are standing in front of. The picture stays on your phone unless you offer it to us.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "So the map can open on the remarkable old trees closest to you. Your location never leaves the phone.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To pick a photograph of the tree you are standing in front of.";
