@@ -11,6 +11,10 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 <!-- archive-index -->
 
 
+## 2026-08-27 (night run) - Barcelona 46 to 52, off its own READY-leads shelf
+
+Continued down Step 0 after Bari: nothing awaiting a writer, no other new coverage cheaper than rule 1(a)'s "write what's already verified", so ran `leads.py --ready` city by city rather than trusting its count blind (per the Caserta/Krakow precedent). Barcelona's 17 mostly turned out held for real, still-valid reasons (private-courtyard access questions, five trees padding one already-crowded paid garden, a big cluster needing its own pass), but 6 were held only for reasons CLAUDE.md's 2026-08-10 ruling now forbids: too young, undated-with-no-second-source, or a taste call about whether a yucca counts as a tree. Shipped all 6 (bcn_047-052), confirmed public and free by direct search, found a real girth disagreement on the silky oak between the register and an independent 2017 measurement (kept both rather than picking one), renamed Erythrina caffra to "Coast Coral Tree" to avoid a hard-rule-9 collision with Barcelona's existing Erythrina corallodendron, and wrote the required Spanish translations (Contract J fails the build without full overlay coverage). Build (2989 pages), qa.py, superlatives.py, preflight.py all clean. Rebased past a concurrent app-UI commit of Hidde's with no conflicts, pushed (`af608c44`).
+
 ## 2026-08-27 (night run) - Bari opens at 4 trees, two submissions closed out
 
 `visitors.py`: 518 visits, 829 page views over the last 7 days, roughly flat (49-94/day). `prepare.py`: 42 cities staged for verify, shelf already stocked, nothing new to do there. `health.py` rung 2 clear (no BLOCKER, nothing stale). Rung 1: two unprocessed submissions, both non-actionable (#40 a "worth it" vote on Amsterdam's ams_001, unresolvable user; #41 confirmed via the Supabase admin API as Hidde's own test of the app's collect form, same Bilderdijklaan block as an earlier known test), both set `outcome: holds` and marked processed.
