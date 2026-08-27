@@ -6642,7 +6642,9 @@
      "author": "Wutsje / Wikimedia Commons / CC-BY-SA 3.0",
      "lat": 53.21983889,
      "lng": 6.55566944,
-     "cats": "Category:CC-BY-SA-3.0 Category:Information field template with formatting Category:Leliesingel (Groningen) Category:Netherlands photographs taken on 2011-09-29 Category:Noorderplantsoen Category:Rijksmonumenten with known IDs Category:Trees in the Netherlands"
+     "cats": "Category:CC-BY-SA-3.0 Category:Information field template with formatting Category:Leliesingel (Groningen) Category:Netherlands photographs taken on 2011-09-29 Category:Noorderplantsoen Category:Rijksmonumenten with known IDs Category:Trees in the Netherlands",
+     "judged": "rejected: viewed as pixels, a fine sunlit golden-crowned tree but the WRONG TREE: pinnate golden foliage (a Robinia 'Frisia' type), not the fan-leaved Ginkgo biloba we list, and its geotag sits 410 m away at Leliesingel rather than our Kruissingel pin",
+     "judged_date": "2026-08-27"
     }
    ],
    "judged": "2026-08-21",
@@ -34958,7 +34960,9 @@
      "author": "Leslie Seaton from Seattle, WA, USA",
      "lat": 47.633065,
      "lng": -122.294483,
-     "cats": "Category:CC-BY-2.0 Category:Ethnobotany Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Taken with Canon EOS 450D"
+     "cats": "Category:CC-BY-2.0 Category:Ethnobotany Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Taken with Canon EOS 450D",
+     "judged": "rejected: viewed as pixels, a hand holding a single yellow spindle seed, no tree in the frame",
+     "judged_date": "2026-08-27"
     },
     {
      "title": "File:Vista de Seattle, Washington, Estados Unidos, 2017-09-02, DD 07-08 HDR.jpg",
@@ -34968,7 +34972,9 @@
      "author": "Diego Delso",
      "lat": null,
      "lng": null,
-     "cats": "Category:Buildings during blue hour in the United States Category:CC-BY-SA-4.0 Category:Dusk in Washington (state) Category:Exposure time 6 sec Category:Featured pictures by User:Poco a poco Category:Featured pictures of Seattle Category:Featured pictures of buildings by User:Poco a poco Category:Featured pictures of skylines Category:Featured pictures of the United States by User:Poco a poco Category:Featured pictures on Commons by User:Poco a poco Category:Featured pictures on Wikimedia Commons Category:Featured pictures on Wikipedia, Bengali Category:Images by User:Poco a poco Category:Images by User:Poco a poco taken in 2017 Category:Images of the United States by User:Poco a poco Category:Long exposure photographs of Washington (state) Category:Pictures of the day (2020) Category:Quality images Category:Quality images by User:Poco a poco Category:Quality images of Seattle Category:Quality images of buildings in Washington (state) Category:Quality images of the United States by User:Poco a poco Category:Quality images with long exposure Category:Seattle night skylines Category:Seattle skylines from within Downtown Category:September 2017 in Seattle Category:Taken with Canon EOS 5DS R Category:Tone-mapped HDR images of cityscapes Category:United States photographs taken on 2017-09-02 Category:Views from Columbia Center"
+     "cats": "Category:Buildings during blue hour in the United States Category:CC-BY-SA-4.0 Category:Dusk in Washington (state) Category:Exposure time 6 sec Category:Featured pictures by User:Poco a poco Category:Featured pictures of Seattle Category:Featured pictures of buildings by User:Poco a poco Category:Featured pictures of skylines Category:Featured pictures of the United States by User:Poco a poco Category:Featured pictures on Commons by User:Poco a poco Category:Featured pictures on Wikimedia Commons Category:Featured pictures on Wikipedia, Bengali Category:Images by User:Poco a poco Category:Images by User:Poco a poco taken in 2017 Category:Images of the United States by User:Poco a poco Category:Long exposure photographs of Washington (state) Category:Pictures of the day (2020) Category:Quality images Category:Quality images by User:Poco a poco Category:Quality images of Seattle Category:Quality images of buildings in Washington (state) Category:Quality images of the United States by User:Poco a poco Category:Quality images with long exposure Category:Seattle night skylines Category:Seattle skylines from within Downtown Category:September 2017 in Seattle Category:Taken with Canon EOS 5DS R Category:Tone-mapped HDR images of cityscapes Category:United States photographs taken on 2017-09-02 Category:Views from Columbia Center",
+     "judged": "rejected: viewed as pixels, a night skyline of downtown Seattle from the air, no tree, matched on the city name alone",
+     "judged_date": "2026-08-27"
     },
     {
      "title": "iNat obs 295597595 (Pseudotsuga menziesii)",
@@ -34977,7 +34983,9 @@
      "licence": "CC BY-SA",
      "author": "(c) Linzy L., some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "47.6334716667,-122.2939216667"
+     "obs_location": "47.6334716667,-122.2939216667",
+     "judged": "rejected: viewed as pixels, a backlit look up into a Douglas fir with the crown cut off and the foreground in deep shade; also identified on iNaturalist as Pseudotsuga menziesii while our tree is the bigcone Pseudotsuga macrocarpa, and the observation sits 75 m away in an arboretum full of conifers",
+     "judged_date": "2026-08-27"
     },
     {
      "title": "iNat obs 295597595 (Pseudotsuga menziesii)",
@@ -34986,7 +34994,9 @@
      "licence": "CC BY-SA",
      "author": "(c) Linzy L., some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "47.6334716667,-122.2939216667"
+     "obs_location": "47.6334716667,-122.2939216667",
+     "judged": "rejected: viewed as pixels, a straight-up-the-trunk close-up showing bark and radiating branches, no crown or whole-tree shape; same iNaturalist observation identified as Pseudotsuga menziesii, not our bigcone macrocarpa",
+     "judged_date": "2026-08-27"
     }
    ],
    "judged": "2026-08-21",
