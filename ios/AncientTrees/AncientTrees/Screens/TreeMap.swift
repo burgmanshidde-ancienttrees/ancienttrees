@@ -28,7 +28,7 @@ struct TreeMap: UIViewRepresentable {
     /// Trees only THIS person has: photographed by them, ours or not. Drawn as
     /// their own pins so the two layers are legible as two layers, which is
     /// Hidde's own distinction (2026-08-21).
-    var mine: [(id: UUID, lat: Double, lng: Double, name: String)] = []
+    var mine: [(id: UUID, lat: Double, lng: Double, name: String, photo: UIImage?)] = []
     /// Ours that you have already stood in front of. Only changes the pin.
     var collected: Set<String> = []
     /// The trees you have hearted, so a favourite is visible on the map itself
@@ -288,7 +288,7 @@ struct TreeMap: UIViewRepresentable {
 
         private var styleReady = false
         private var pending: (trees: [Tree],
-                              mine: [(id: UUID, lat: Double, lng: Double, name: String)],
+                              mine: [(id: UUID, lat: Double, lng: Double, name: String, photo: UIImage?)],
                               route: [CLLocationCoordinate2D],
                               routeIsReal: Bool,
                               clusters: Bool)?
@@ -360,7 +360,7 @@ struct TreeMap: UIViewRepresentable {
         // MARK: data
 
         func sync(trees: [Tree],
-                  mine: [(id: UUID, lat: Double, lng: Double, name: String)],
+                  mine: [(id: UUID, lat: Double, lng: Double, name: String, photo: UIImage?)],
                   route: [CLLocationCoordinate2D],
                   routeIsReal: Bool,
                   clusters: Bool,
@@ -654,7 +654,14 @@ enum MapLayers {
         style.addLayer(guessed)
 
         let minePins = MLNSymbolStyleLayer(identifier: mineLayer, source: mine)
-        minePins.iconImageName = NSExpression(forConstantValue: "at-pin-mine")
+        // PER FEATURE, not one image for all of them: a tree you added
+        // wears YOUR photograph (Hidde, 2026-08-27: "kunnen we my trees de
+        // foto in het icoontje geven aangezien je m alleen kan toevoegen door
+        // een foto, met een gouden randje ofzo"). He is right that the
+        // photograph is the thing: it is the only way a tree gets in there, so
+        // it is also the only pin on this map that can be a picture of the
+        // actual tree rather than a drawing of its species.
+        minePins.iconImageName = NSExpression(forKeyPath: "icon")
         minePins.iconAllowsOverlap = NSExpression(forConstantValue: true)
         style.addLayer(minePins)
 
@@ -964,14 +971,25 @@ enum MapLayers {
         }
     }
 
-    static func setMine(_ mine: [(id: UUID, lat: Double, lng: Double, name: String)],
+    static func setMine(_ mine: [(id: UUID, lat: Double, lng: Double, name: String, photo: UIImage?)],
                         on style: MLNStyle) {
         guard let source = style.source(withIdentifier: mineSource) as? MLNShapeSource else { return }
         let features = mine.map { m -> MLNPointFeature in
             let f = MLNPointFeature()
             f.coordinate = .init(latitude: m.lat, longitude: m.lng)
             f.title = m.name
-            f.attributes = [idKey: m.id.uuidString]
+            // One image per sighting when it has a photograph, and the shared
+            // drawn pin when it does not. Registered under the sighting's own
+            // id, so replacing a photograph replaces the pin.
+            var icon = "at-pin-mine"
+            if let photo = m.photo {
+                icon = "at-pin-mine-" + m.id.uuidString
+                if !registered.contains(icon) {
+                    registered.insert(icon)
+                    style.setImage(photoPin(photo), forName: icon)
+                }
+            }
+            f.attributes = [idKey: m.id.uuidString, "icon": icon]
             return f
         }
         source.shape = MLNShapeCollectionFeature(shapes: features)
@@ -1143,6 +1161,42 @@ enum MapLayers {
     /// Same size, same ring, same silhouette as ours; white where ours is moss
     /// and moss where ours is white. One family, and you can see at a glance
     /// which ones are yours without a badge explaining it.
+    /// YOUR photograph, in the pin, behind a gold ring.
+    ///
+    /// Gold is deliberate and it is the one place in this app it is allowed
+    /// outside Plus: a tree you photographed yourself is the only thing on this
+    /// map that is not ours, and it earns a colour nothing else uses. The
+    /// picture is drawn as a circle rather than square, so it reads as a pin at
+    /// a glance rather than as a photograph pasted on the map, which is what
+    /// Google Maps does with a contributed image and Strava with a
+    /// segment photograph.
+    private static func photoPin(_ image: UIImage) -> UIImage {
+        let d: CGFloat = 44
+        return UIGraphicsImageRenderer(size: .init(width: d, height: d)).image { ctx in
+            let gold = UIColor(red: 0.83, green: 0.65, blue: 0.22, alpha: 1)
+            // A white disc under everything, so a photograph with a pale edge
+            // still has a rim against a pale map.
+            UIColor.white.setFill()
+            UIBezierPath(ovalIn: .init(x: 0, y: 0, width: d, height: d)).fill()
+
+            let inset: CGFloat = 4
+            let hole = CGRect(x: inset, y: inset, width: d - inset * 2, height: d - inset * 2)
+            ctx.cgContext.saveGState()
+            UIBezierPath(ovalIn: hole).addClip()
+            // ASPECT FILL, so a portrait photograph is not squeezed into a
+            // circle: scale by the SHORT side and centre what is left over.
+            let scale = max(hole.width / image.size.width, hole.height / image.size.height)
+            let w = image.size.width * scale, h = image.size.height * scale
+            image.draw(in: CGRect(x: hole.midX - w / 2, y: hole.midY - h / 2, width: w, height: h))
+            ctx.cgContext.restoreGState()
+
+            gold.setStroke()
+            let ring = UIBezierPath(ovalIn: hole.insetBy(dx: -1.5, dy: -1.5))
+            ring.lineWidth = 3
+            ring.stroke()
+        }
+    }
+
     private static func minePin() -> UIImage {
         let d: CGFloat = 38
         return UIGraphicsImageRenderer(size: .init(width: d, height: d)).image { _ in

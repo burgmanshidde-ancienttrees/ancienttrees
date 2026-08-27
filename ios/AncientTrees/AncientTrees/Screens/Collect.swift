@@ -187,7 +187,13 @@ struct CollectView: View {
             // list and a row of tap targets in the drag area.
             statsRow
             actionRow
-            if allVisited.isEmpty && saved.favourites.isEmpty { mission }
+            // YOUR OWN TREES COUNT AS HAVING STARTED. This asked only about
+            // ours, so somebody whose whole collection is trees they
+            // photographed themselves was told "your first tree is 1.3 km
+            // away" directly under a row saying they have two (seen the moment
+            // the map could show an own tree at all, 2026-08-27).
+            if allVisited.isEmpty && saved.favourites.isEmpty
+                && sightings.yoursOnly.isEmpty { mission }
             if !saved.entries.isEmpty || !sightings.yoursOnly.isEmpty {
                 lanePicker
                 laneContent
@@ -213,7 +219,8 @@ struct CollectView: View {
         } else {
             TreeMap(trees: allVisited,
                     mine: sightings.yoursOnly.map {
-                        (id: $0.id, lat: $0.lat, lng: $0.lng, name: $0.name) },
+                        (id: $0.id, lat: $0.lat, lng: $0.lng, name: $0.name,
+                         photo: sightings.image($0)) },
                     collected: Set(saved.collected.map(\.treeId)),
                     favourites: Set(saved.favourites.map(\.treeId)),
                     onSelectMine: { navigator.push = .mine($0) },

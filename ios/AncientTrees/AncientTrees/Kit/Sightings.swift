@@ -79,9 +79,53 @@ final class Sightings {
     init() {
         if ProcessInfo.processInfo.arguments.contains("-reset-collection") {
             try? FileManager.default.removeItem(at: Self.folder)
-            return
+        } else {
+            load()
         }
-        load()
+        // AFTER the reset rather than instead of it: the two arguments are
+        // used together all the time (start clean, then put these two in), and
+        // the first version returned early so the seed never ran.
+        seedDemo()
+    }
+
+    /// Two of your own trees, with a photograph each, behind -mine-demo.
+    ///
+    /// The same debug scaffolding as -collected= and -people-demo, and it fills
+    /// the same kind of gap: a tree you added yourself needs a photograph on a
+    /// device to exist at all, so its pin and its card had never been in a
+    /// screenshot. A picture drawn here is not a real photograph, and it does
+    /// not need to be: what is being looked at is whether a photograph fits the
+    /// pin, keeps its shape and reads against a map.
+    private func seedDemo() {
+        let args = ProcessInfo.processInfo.arguments
+        guard args.contains("-mine-demo"), all.isEmpty else { return }
+        var lat = 52.3731, lng = 4.8922
+        if let at = args.first(where: { $0.hasPrefix("-at=") })?.dropFirst(4) {
+            let parts = at.split(separator: ",")
+            if parts.count == 2, let a = Double(parts[0]), let b = Double(parts[1]) {
+                lat = a; lng = b
+            }
+        }
+        for (i, name) in ["The oak on my street", "The lime by the water"].enumerated() {
+            record(treeId: nil, name: name,
+                   lat: lat + 0.004 * Double(i + 1), lng: lng + 0.006 * Double(i + 1),
+                   image: Self.stand_in(i))
+        }
+    }
+
+    /// A stand-in photograph: bands of green over brown, which at pin size
+    /// reads as a canopy over a trunk without pretending to be a real tree.
+    private static func stand_in(_ i: Int) -> UIImage {
+        let size = CGSize(width: 600, height: 800)
+        return UIGraphicsImageRenderer(size: size).image { ctx in
+            let sky = i == 0 ? UIColor(red: 0.72, green: 0.83, blue: 0.90, alpha: 1)
+                             : UIColor(red: 0.86, green: 0.87, blue: 0.80, alpha: 1)
+            sky.setFill(); ctx.fill(CGRect(origin: .zero, size: size))
+            UIColor(red: 0.29, green: 0.42, blue: 0.20, alpha: 1).setFill()
+            ctx.cgContext.fillEllipse(in: CGRect(x: -60, y: 60, width: 720, height: 520))
+            UIColor(red: 0.36, green: 0.27, blue: 0.19, alpha: 1).setFill()
+            ctx.fill(CGRect(x: 265, y: 460, width: 70, height: 340))
+        }
     }
 
     // MARK: - reading
