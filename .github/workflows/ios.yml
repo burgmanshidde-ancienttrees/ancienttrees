@@ -29,6 +29,7 @@ on:
       - 'scripts/appsweep.py'
       - 'scripts/layout_rules.py'
       - 'scripts/netcheck.py'
+      - 'scripts/refused.py'
       - 'scripts/worktree_guard.py'
       - '.github/workflows/ios.yml'
   pull_request:
@@ -185,6 +186,7 @@ jobs:
             -derivedDataPath /tmp/dd \
             -retry-tests-on-failure -test-iterations 2 \
             -skip-testing:AncientTreesUITests/SweepFrames \
+            -skip-testing:AncientTreesUITests/RefusedWalk \
             -parallel-testing-enabled NO \
             CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" \
             > /tmp/xcodebuild.log 2>&1 || true
@@ -235,6 +237,23 @@ jobs:
               print("FAILED:", f.get("testName"), "-", f.get("failureText", "")[:200])
           raise SystemExit(1 if failed or passed == 0 else 0)
           PY
+
+      # THE STATE EVERY OTHER TEST AVOIDS: permission refused.
+      #
+      # Every UI test in this repository launches with -at=, a fixed location
+      # that always works, which is the right default for testing everything
+      # else and meant the most common real-world state on a phone had never
+      # been entered once. This revokes location and photos on the simulator so
+      # the app's real Core Location code takes its real refused branch, then
+      # puts them back, because a simulator left refused makes every other test
+      # here fail in a way that looks like a bug in the app.
+      #
+      # Separate from the run above because it has to change the device between
+      # the two, and because a refused run that dies must not take the ordinary
+      # verdict with it.
+      - name: What happens when somebody says no
+        if: always()
+        run: python3 scripts/refused.py --udid "${{ steps.sim.outputs.udid }}"
 
       # The app MEASURED its own layout since 2026-08-20 and judged none of it:
       # SweepFrames printed the frames, the grep above threw them away, and the

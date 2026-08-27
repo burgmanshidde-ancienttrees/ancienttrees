@@ -19,6 +19,7 @@
 
 import Testing
 import Foundation
+import AVFoundation
 import UIKit
 @testable import AncientTrees
 
@@ -306,5 +307,45 @@ struct RecordingATreeOfYourOwn {
         // several megabytes, on a phone, per tree.
         #expect(data.count < 900_000,
                 "a photograph of \(data.count / 1024) KB was kept per tree")
+    }
+}
+
+// MARK: - permission refused
+
+/// What the app does when somebody says no.
+///
+/// A simulator has no camera, so the camera branch could never run there and
+/// the black-rectangle bug was invisible to every test and every screenshot
+/// this project has ever taken. The decision is a pure function now, which can
+/// be asked all four questions on a machine with nothing to deny.
+@Suite(.serialized)
+struct WhenPermissionIsRefused {
+
+    @Test func aDeniedCameraOpensTheLibraryRatherThanABlackRectangle() {
+        #expect(CameraPicker.source(cameraAvailable: true, authorization: .denied)
+                == .photoLibrary,
+                "a denied camera still presented the camera, which is a black screen with a Cancel button")
+        #expect(CameraPicker.source(cameraAvailable: true, authorization: .restricted)
+                == .photoLibrary,
+                "a restricted camera still presented the camera")
+    }
+
+    @Test func anAllowedCameraIsStillTheCamera() {
+        #expect(CameraPicker.source(cameraAvailable: true, authorization: .authorized) == .camera)
+    }
+
+    /// Never asked is not the same as refused. Presenting the camera is what
+    /// raises the system prompt, and the moment somebody has just tapped a
+    /// button saying photograph a tree is the right moment to raise it.
+    @Test func neverHavingBeenAskedStillAsks() {
+        #expect(CameraPicker.source(cameraAvailable: true, authorization: .notDetermined) == .camera)
+    }
+
+    /// Every simulator, and any iPad without a rear camera.
+    @Test func noCameraAtAllIsTheLibraryWhateverTheAnswerWas() {
+        for answer in [AVAuthorizationStatus.authorized, .denied, .notDetermined, .restricted] {
+            #expect(CameraPicker.source(cameraAvailable: false, authorization: answer)
+                    == .photoLibrary)
+        }
     }
 }
