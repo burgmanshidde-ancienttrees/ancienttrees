@@ -3,9 +3,9 @@
   "country": "Spain",
   "status": "needs_curation",
   "intro": "Barcelona keeps its trees on two lists. The municipal Catalogue of Trees of Local Interest holds more than 200 specimens, but the Catalan government's rarer monumental designation belongs to only four trees in the whole city, all four growing in the same shaded ravine of the old botanical garden on Montjuic. Barcelona's oldest tree predates the city's own street grid: a 250-year-old holm oak now standing in a garden its neighbours spent three years fighting to save. Two more grew up inside Gaudi's Park Guell before he built around them. None of them need a ticket.",
-  "meta_description": "Barcelona ranks trees twice: 200-plus of local interest, four monumental. Meet the 250-year-old oak that predates the city grid, and 45 more.",
+  "meta_description": "Barcelona ranks trees twice: 200-plus of local interest, four monumental. Meet the 250-year-old oak that predates the city grid, and 51 more.",
   "question_answer": "The oldest tree in Barcelona whose age has actually been measured is a holm oak on Carrer de l'Encarnacio in the Vila de Gracia neighbourhood, dated by dendrochronology to around 250 years old. It already appears on city maps from 1845, when Gracia was still farmland, and stands in a small garden opened to the public in 2021 after a three-year campaign to stop the site being demolished. One tree may be older: the city register dates a wild olive in Park Guell to 1771, but that figure is an estimate nobody has checked against the wood.",
-  "question_meta": "Barcelona's oldest measured tree is a 250-year-old holm oak in Gracia. Its story, its exact location, and 45 more remarkable trees.",
+  "question_meta": "Barcelona's oldest measured tree is a 250-year-old holm oak in Gracia. Its story, its exact location, and 51 more remarkable trees.",
   "question_context": "The holm oak on Carrer de l'Encarnacio predates the neighbourhood that grew up around it. Gracia was a scatter of farmhouses when the tree was young, and it appears on the city's 1845 maps standing on rural land known as the Pla del Bonpa, tied to a farmhouse called Can Vidalet. Dendrochronologists, tree-ring specialists, later dated it to roughly 250 years old, making it the oldest tree in Barcelona whose age anyone has actually measured. The tree nearly did not survive to be dated: a development plan for the historic Casetes de l'Encarnacio around it triggered a three-year local campaign, and the oak was formally catalogued as a Tree of Local Interest in 2019 specifically to stop the bulldozers. The garden around it opened to the public in April 2021, though only the facades of the original houses could be saved. For grandeur over paperwork, Barcelona's biggest tree by volume is a different story entirely: a Rehder's wingnut in the botanical garden's Sot de l'Estany ravine, reaching roughly 40 metres in a hole in the ground nobody visits. Getting to the oak: Fontana station on the L3, then an eight minute walk into Vila de Gracia.",
   "faq": [
     {
@@ -1581,6 +1581,200 @@
       "transport": "Joanic (Metro L4), on the square itself",
       "location_precision": "approximate",
       "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bcn_047",
+      "name": "The Silky Oak of Jardins dels Drets Humans",
+      "species": "Silky Oak (Grevillea robusta)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 410,
+      "location": {
+        "address": "Jardins dels Drets Humans, la Marina de Port, Sants-Montjuic, Barcelona",
+        "latitude": 41.36127349806013,
+        "longitude": 2.136677076886761,
+        "neighbourhood": "la Marina de Port"
+      },
+      "verified_sources": [
+        "data/registers/barcelona-ail.json (register_id 99400454955)",
+        "https://www.bcnsostenible.cat/web/punt/jardi-dels-drets-humans",
+        "https://www.monumentaltrees.com/en/esp/cataluna/barcelona/16833_jarddelsdretshumans/ (verification only, per hard rule 1)"
+      ],
+      "access": "Free, public garden, no gate",
+      "transport": "Zona Franca metro station (L2), about 10 minutes' walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A Philips factory once stood where this Australian silky oak now grows, and the garden around it still carries the shape of that history: workers' flowerbeds laid out in the 1960s, redesigned decades later into a public park about human rights, its paths lined with 30 illuminated panels quoting the Universal Declaration article by article.\n\nThe tree itself predates all of that. Barcelona catalogued it as a tree of local interest in 2011, and the city's own register puts it at a striking 4.1 metres round and 32 metres tall, among the largest silky oaks recorded anywhere outside Australia. An independent measurement taken in 2017 found a notably smaller trunk, 2.4 metres, which is either six years of unusually vigorous growth or two different ways of measuring the same tree. Both readings are kept here rather than picking one.\n\nGrevillea robusta is native to the subtropical rainforests of eastern Australia, grown worldwide as an ornamental and, more prosaically, as a nurse tree for coffee plantations. This one has nothing to nurse. It stands alone in a public garden built on land a factory once used for something else entirely.",
+      "verify_notes": "Single official source (Barcelona's Cataleg d'Arbres d'Interes Local, register_id 99400454955, catalogued 2011): girth 4.1m, height 32m, crown 27m, ownership Public. A 2017 field measurement recorded by a monumentaltrees.com contributor (used only for cross-check per hard rule 1, never quoted or copied) gives a materially smaller girth (2.42m) and height (23.5m) for what bcnsostenible.cat confirms is the same specimen in the same garden. Girth cannot shrink, so one figure is likely a data error rather than real change; genuinely unresolved, so the story states both rather than picking one, and girth_cm here follows the official register per convention. Location confirmed by the register's own coordinates plus bcnsostenible.cat's independent listing of the same garden/species. Access confirmed public and free via WebSearch (Barcelona.cat, bcnsostenible.cat).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bcn_048",
+      "name": "The Hackberry of Jardins dels Drets Humans",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 290,
+      "location": {
+        "address": "Jardins dels Drets Humans, la Marina de Port, Sants-Montjuic, Barcelona",
+        "latitude": 41.36006941270823,
+        "longitude": 2.1372499686798063,
+        "neighbourhood": "la Marina de Port"
+      },
+      "verified_sources": [
+        "data/registers/barcelona-ail.json (register_id 99400728989)",
+        "https://beteve.cat/politica/barcelona-protegeix-12-arbres-incorpoa-cataleg-arbres-interes-local/ (31 May 2024)"
+      ],
+      "access": "Free, public garden, no gate",
+      "transport": "Zona Franca metro station (L2), about 10 minutes' walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Barcelona protected twelve trees across the city in one sitting in May 2024, and this hackberry in the Jardins dels Drets Humans was one of them, cited for size rather than age: a 2.9 metre girth and a 20 metre crown, broad enough to shade a good stretch of the garden's paths.\n\nIt shares the garden with a much bigger, older-looking neighbour, a silky oak roughly 130 metres away, and together the two give the Human Rights garden two catalogued trees where most Barcelona parks have none. The garden itself is younger than either tree pretends to be: it opened to the public only in 2007, on land that had belonged to Philips' local factory since the 1960s, when a company landscape architect first laid the grounds out so workers could take their breaks outside.\n\nCeltis australis is one of the most common street trees in the Mediterranean, tough enough for Barcelona's hot, dry summers and long prized for wood that bends without splitting, historically worked into whip handles and walking sticks. No planting date survives for this one. If you know it, the garden's own records do not.",
+      "verify_notes": "Register (barcelona-ail.json, id 99400728989, catalogued 2022): girth 2.9m, height 15m, crown 20m, ownership Public. Independently corroborated by beteve.cat's 31 May 2024 article on the city's protection of 12 new trees, which names 'lledoner' (hackberry) at Jardins dels Drets Humans specifically among them, matching species and location. Two-sourced. Undated in both.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bcn_049",
+      "name": "The Coast Coral Tree of Jardins de Mossen Costa i Llobera",
+      "species": "Coast Coral Tree (Erythrina caffra)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 300,
+      "location": {
+        "address": "Jardins de Mossen Costa i Llobera, Poble-sec, Barcelona",
+        "latitude": 41.36957592862495,
+        "longitude": 2.1723144875077516,
+        "neighbourhood": "Poble-sec, Montjuic"
+      },
+      "verified_sources": [
+        "data/registers/barcelona-ail.json (register_id 99400728992)",
+        "https://beteve.cat/politica/barcelona-protegeix-12-arbres-incorpoa-cataleg-arbres-interes-local/ (31 May 2024)"
+      ],
+      "access": "Free, public garden, no gate, open daily",
+      "transport": "Teleferic de Montjuic (Miramar station), about 5 minutes' walk; or bus to Avinguda Miramar",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Barcelona's biggest cactus garden has one tree in it that is not a cactus at all: a coral tree from southern Africa, 3 metres round with a crown that spreads 20 metres wide, wide enough to shade a meaningful stretch of the six hectare garden by itself.\n\nErythrina caffra flowers before it leafs, bare branches erupting into thick orange-red spikes, a display gardens plant it for the world over. Barcelona added this specimen to its catalogue of trees of local interest in one sitting with eleven others in May 2024, protected for its size rather than any known age. Nobody has dated it.\n\nThe garden around it opened in 1970 on the seaward slope of Montjuic, named for the Mallorcan poet Miquel Costa i Llobera and built specifically to show off cacti and succulents from the world's dry regions, more than 800 species across terraces that step down toward the port. The coral tree stands out precisely because it does not belong to that theme, a broad-leaved African import in a garden otherwise devoted to spines. Free to enter, no gate, with one of the better views over Barcelona's harbour thrown in.",
+      "verify_notes": "Register (barcelona-ail.json, id 99400728992, catalogued 2022): girth 3m, height 12m, crown 20m, ownership Public. Independently corroborated by beteve.cat's 31 May 2024 article naming 'eritrina' at Jardins Mossen Costa i Llobera among the 12 newly protected trees. Two-sourced. Garden's own public/free status confirmed via WebSearch (multiple tourism and municipal sources). Undated.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bcn_050",
+      "name": "The Tree Yucca of Jardins de Mossen Costa i Llobera",
+      "species": "Tree Yucca (Yucca filifera)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 160,
+      "location": {
+        "address": "Jardins de Mossen Costa i Llobera, on the sea side of the pedestrian path beside the base of the Miramar steps, Poble-sec, Barcelona",
+        "latitude": 41.36828235931025,
+        "longitude": 2.171772883931611,
+        "neighbourhood": "Poble-sec, Montjuic"
+      },
+      "verified_sources": [
+        "data/registers/barcelona-ail.json (register_id 99400761023)"
+      ],
+      "access": "Free, public garden, no gate, open daily",
+      "transport": "Teleferic de Montjuic (Miramar station), about 5 minutes' walk; or bus to Avinguda Miramar",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Most people who grow a yucca in their garden are growing something a few metres tall at most. Barcelona's tree yucca, on the seaward path below the steps up to Miramar on Montjuic, is 12 metres tall with a trunk 1.6 metres round, a genuinely tree-sized specimen of a plant most visitors assume tops out at shrub height.\n\nYucca filifera comes from the high desert plateaus of central Mexico, where old wild specimens branch into candelabra shapes and can outlive the people who planted their garden cousins many times over. Barcelona catalogued this one as a tree of local interest only in 2024, with no planting date recorded and no history beyond its own measurements.\n\nIt grows a short walk from an equally uncommon neighbour, an African coral tree in the cactus gardens above, on a stretch of path built specifically to show off plants that have no business surviving comfortably on a Mediterranean hillside. Nobody has confirmed how old this one actually is, or when it went in. If you know, the city's own catalogue does not.",
+      "verify_notes": "Single official source (barcelona-ail.json, id 99400761023, catalogued 2024): girth 1.6m, height 12m, crown 8m, planted 'Per determinar' (undated), ownership field blank. Place field gives a specific description ('sea side of the pedestrian path... base of the Miramar access stairs') used for the address. No second source found this pass; ships single-sourced and flagged per Step 2. Garden's public/free status independently confirmed via WebSearch. Collectibility is a genuine judgement call (a yucca is a marginal case as a 'tree') but nothing disqualifies it and CLAUDE.md forbids treating a taste call as a publish blocker.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bcn_051",
+      "name": "The Avocado of Teatre Lliure",
+      "species": "Avocado (Persea americana)",
+      "age_estimate": "80 years",
+      "age_min": 75,
+      "age_max": 85,
+      "girth_cm": 160,
+      "location": {
+        "address": "Placa Margarida Xirgu 1, Poble-sec, Barcelona",
+        "latitude": 41.370438510370654,
+        "longitude": 2.1571260482942742,
+        "neighbourhood": "Poble-sec, Montjuic"
+      },
+      "verified_sources": [
+        "data/registers/barcelona-ail.json (register_id 99400455081)",
+        "https://www.teatrelliure.com/ca/lliure-de-montjuic",
+        "https://www.barcelona.cat/setmanesarquitectura/en/venues/teatre-lliure"
+      ],
+      "access": "Free, public square in front of the theatre, no gate",
+      "transport": "Poble Sec metro station (L3), about 8 minutes' walk uphill",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "An avocado tree does not usually end up on a list of remarkable urban trees, but Barcelona catalogued this one in 1996, and at roughly 80 years old and 13 metres tall it has outlived every use of the building beside it. That building opened as the Palau de l'Agricultura for the 1929 International Exposition, spent decades afterward as the city's central flower market, sat empty for years, and reopened in 2001 as the Teatre Lliure. The tree, planted around 1946 somewhere in the gap between exposition pavilion and flower market, is older than the theatre by 55 years.\n\nPersea americana is native to central Mexico and normally grown for fruit rather than shade, which makes a mature specimen this size unusual in a European city: 1.6 metres round with a canopy 15 metres across, spreading well beyond what most people picture when they hear avocado tree. It stands on Placa Margarida Xirgu, in front of the theatre entrance, free to walk past whether or not anyone is seeing a show that night.\n\nNobody has recorded whether it still fruits.",
+      "verify_notes": "Register (barcelona-ail.json, id 99400455081, catalogued 1996, the oldest catalogue date of this batch): planted 1946, age_register 80, girth 1.6m, height 13m, crown 15m, ownership Public. Position independently confirmed by OSM node 4203274163 (per the leads file note) sitting at the same coordinate. Theatre building history (Palau de l'Agricultura 1929, flower market, Teatre Lliure opened 2001) corroborated by teatrelliure.com and barcelona.cat's own venue page. Single register source for the tree itself; ships flagged per Step 2. Planting year is the register's own field, not an estimate.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bcn_052",
+      "name": "The Japanese Pagoda Tree of Carrer de la Guardia Urbana",
+      "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 230,
+      "location": {
+        "address": "Carrer de la Guardia Urbana, Poble-sec, Barcelona",
+        "latitude": 41.37137236428439,
+        "longitude": 2.1544330596609433,
+        "neighbourhood": "Poble-sec, Montjuic"
+      },
+      "verified_sources": [
+        "data/registers/barcelona-ail.json (register_id 99400761024)"
+      ],
+      "access": "Free, public street, no gate",
+      "transport": "Poble Sec metro station (L3), about 10 minutes' walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The Japanese pagoda tree is not from Japan. Styphnolobium japonicum is native to China, planted for centuries around Buddhist and Taoist temples there, and reached Europe under a name that stuck long after botanists sorted out the mistake. Barcelona's specimen on Carrer de la Guardia Urbana, a short walk from Montjuic's Greek Theatre, is 2.3 metres round and 20 metres tall, added to the city's catalogue of trees of local interest in 2024.\n\nIts age is officially listed as under study, which is honest rather than evasive: the species can live for centuries in the right conditions, but nobody has aged this individual specimen, by ring count or by any other method. What earned it protection was size alone.\n\nThe tree flowers in late summer, cream white clusters that are one of the few genuine bursts of colour on Barcelona's streets in August, when most of the city's flowering trees have already finished for the year. It stands on an ordinary residential street in Poble-sec, no garden, no gate, nothing to mark it beyond the tree itself.",
+      "best_time": {
+        "months": [
+          7,
+          8
+        ],
+        "kind": "flowers",
+        "label": "late July into August, when it flowers"
+      },
+      "verify_notes": "Single official source (barcelona-ail.json, id 99400761024, catalogued 2024): girth 2.3m, height 20m, crown 15m, planted 'En estudi' (under study), ownership field blank. Place field 'C. Guardia Urbana' is a public street name, treated as public street frontage per convention (no gate, no institution named). No second source found this pass; ships single-sourced and flagged per Step 2. Late-summer flowering is a well documented species trait (Styphnolobium japonicum blooms July-August across temperate climates including the Mediterranean), not specific to this individual, stated as such.",
       "photo": {
         "url": null,
         "license": null,
