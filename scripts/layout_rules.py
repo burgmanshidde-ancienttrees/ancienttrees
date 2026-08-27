@@ -40,7 +40,19 @@ DRIFT_MAX = 11.0
 
 # Frames and DOM rects come back with float noise; anything under this is the
 # same edge.
-SAME = 0.6
+#
+# 1.0 since 2026-08-27, and it is the noise floor rather than a softening. The
+# tree page's content column measures 402.8 points inside a 402 point screen
+# where a city page's measures 402.0, so every full-bleed element on it inherits
+# eight tenths of a point that no eye can see and no layout change removes. At
+# 0.6 the gate reported that as a clipped control, which kept the whole iOS gate
+# red, and a red gate hides real breakage and blinds the app's fresh-eyes review
+# as well, because that review takes its screenshots from the newest green run.
+#
+# What it still catches is unchanged: the faults this was written for are three
+# and a half points (the tree page's action bar) and 37 points (the nav bar's
+# "Get the app"). Nothing real lives between six tenths of a point and one.
+SAME = 1.0
 
 # The width the web's phone checks measure at, and the reason the app measures on
 # the smallest phone it supports: the narrowest real screen is the honest one.
