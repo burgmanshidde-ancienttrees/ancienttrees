@@ -38,6 +38,10 @@ struct MapWithSheet<Map: View, Header: View, Content: View, Floating: View>: Vie
         ZStack(alignment: .top) {
             map
                 .ignoresSafeArea(edges: [.top, .horizontal])
+                // The map is told how much of it the sheet is covering, so its
+                // camera aims at the middle of what a person can see rather
+                // than the middle of the view. See SheetLiftKey.
+                .environment(\.sheetLift, height)
             BottomSheet(height: $height, topItem: topItem, header: { header },
                         content: { content })
             floating

@@ -69,7 +69,14 @@ struct TreeMap: UIViewRepresentable {
     /// its crosshair at the view's centre and the map put the tree 118 points
     /// above it, which on that screen is not a cosmetic fault but a wrong
     /// coordinate (2026-08-25).
+    /// Set by hand on a map that is not inside a MapWithSheet. Everything that
+    /// IS inside one inherits it from the sheet itself, which is the whole
+    /// point: see SheetLiftKey in BottomSheet.swift.
     var sheetLift: SheetHeight? = nil
+    @Environment(\.sheetLift) private var inheritedLift
+
+    /// How much of this map the sheet in front of it is covering.
+    private var sheetCoverage: SheetHeight? { sheetLift ?? inheritedLift }
     /// How wide the first look is. Four kilometres suits "what is near me"; a
     /// tree's own page wants the street it stands in, and at four kilometres the
     /// tree itself disappears into a cluster bubble.
@@ -188,7 +195,7 @@ struct TreeMap: UIViewRepresentable {
         // sheet is at. 12 points of air, and never lower than the old 120 so a
         // map with no sheet in front of it looks the same as before.
         if let lift = context.coordinator.recentreLift, map.bounds.height > 0 {
-            let want = -((sheetLift?.points(in: map.bounds.height) ?? 0) + 12)
+            let want = -((sheetCoverage?.points(in: map.bounds.height) ?? 0) + 12)
             // Never higher than mid-screen. At full height the sheet is 86
             // percent of the phone, so "just above the sheet" put the recentre
             // control up among the search field and the filter chips, three
@@ -212,7 +219,7 @@ struct TreeMap: UIViewRepresentable {
         // sliver and an inset that large gives the camera almost no viewport to
         // aim into.
         if map.bounds.height > 0 {
-            let bottom = min(sheetLift?.points(in: map.bounds.height) ?? 0,
+            let bottom = min(sheetCoverage?.points(in: map.bounds.height) ?? 0,
                              map.bounds.height * 0.55)
             if abs(map.contentInset.bottom - bottom) > 1 {
                 map.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: bottom, right: 0)
