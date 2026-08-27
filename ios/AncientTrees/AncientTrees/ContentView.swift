@@ -24,6 +24,8 @@ struct ContentView: View {
         return s
     }()
     @State fileprivate var entitlement = Entitlement()
+    /// Reporting and blocking, which the social half cannot ship without.
+    @State fileprivate var moderation = Moderation()
     @State private var location = LocationProvider()
     @State fileprivate var account = Account()
     @State fileprivate var nudge = Nudge()
@@ -482,6 +484,11 @@ struct ContentView: View {
             Task { await saveCounts.loadOnce() }
             Task { await profiles.load(userId: account.session?.userId,
                                        token: account.session?.accessToken) }
+            // Who you have blocked, from the server rather than only from this
+            // phone: a reinstall or a second phone has to start where the last
+            // one left off, or a block is not a block.
+            Task { await moderation.load(me: account.session?.userId,
+                                         token: account.session?.accessToken) }
             // Same debug scaffolding as -tab and -at: no simulator panel here,
             // so a screen only reachable by tapping cannot otherwise be looked
             // at before it ships.
@@ -653,5 +660,6 @@ extension View {
             .environment(root.sightings)
             .environment(root.saveCounts)
             .environment(root.profiles)
+            .environment(root.moderation)
     }
 }

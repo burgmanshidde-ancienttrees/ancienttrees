@@ -20,22 +20,36 @@ struct PeopleView: View {
     @Environment(Account.self) private var account
     @Environment(Profiles.self) private var profiles
 
+    @Environment(Moderation.self) private var moderation
+
     @State private var query = ""
     @State private var results: [Profiles.Profile] = []
     @State private var followingIds: Set<String> = []
     @State private var searching = false
+    /// Who the report-or-block sheet is about. One optional rather than a
+    /// boolean and an id, so the sheet cannot be open about nobody.
+    @State private var acting: Profiles.Profile?
+    @State private var reporting: Profiles.Profile?
+    @State private var reported = false
+
+    /// Blocked people are not in the list at all. Hiding the row rather than
+    /// dimming it is the convention everywhere (Instagram, X, Strava): a block
+    /// you can still read is not a block.
+    private var visible: [Profiles.Profile] {
+        results.filter { !moderation.hides($0.user_id) }
+    }
 
     var body: some View {
         NavigationStack {
             List {
-                if results.isEmpty && !query.isEmpty && !searching {
+                if visible.isEmpty && !query.isEmpty && !searching {
                     Text("Nobody by that name yet.")
                         .font(.subheadline).foregroundStyle(Brand.inkSoft)
-                } else if results.isEmpty {
+                } else if visible.isEmpty {
                     Text("Search for somebody by the name they chose.")
                         .font(.subheadline).foregroundStyle(Brand.inkSoft)
                 }
-                ForEach(results, id: \.user_id) { p in
+                ForEach(visible, id: \.user_id) { p in
                     HStack(spacing: 12) {
                         ZStack {
                             Circle().fill(Brand.moss.opacity(0.12))
@@ -62,6 +76,24 @@ struct PeopleView: View {
                         .buttonStyle(.plain)
                         .frame(minWidth: 78, minHeight: 44, alignment: .trailing)
                         .contentShape(.rect)
+
+                        // THE ELLIPSIS, and it is not decoration. From the
+                        // moment somebody can see a name and a picture another
+                        // person chose, App Store guideline 1.2 asks for a way
+                        // to report it and a way to block them, and a reviewer
+                        // checks by looking for exactly this control. Every app
+                        // with profiles puts it in the same place: trailing, on
+                        // the row or on the profile, opening a short sheet.
+                        Button { acting = p } label: {
+                            Image(systemName: "ellipsis")
+                                .font(.system(size: 15, weight: .semibold))
+                                .foregroundStyle(Brand.inkSoft)
+                                .frame(width: 44, height: 44)
+                                .contentShape(.rect)
+                        }
+                        .buttonStyle(.plain)
+                        .accessibilityLabel("More about \(p.display_name)")
+                        .accessibilityIdentifier("person-more")
                     }
                     .padding(.vertical, 2)
                 }
@@ -75,7 +107,58 @@ struct PeopleView: View {
                     Button("Done") { dismiss() }
                 }
             }
+            .confirmationDialog(acting?.display_name ?? "",
+                                isPresented: Binding(get: { acting != nil },
+                                                     set: { if !$0 { acting = nil } }),
+                                titleVisibility: .visible) {
+                Button("Report this person") {
+                    reporting = acting
+                }
+                Button("Block this person", role: .destructive) {
+                    guard let p = acting, let s = account.session else { return }
+                    Task { await moderation.block(p.user_id, me: s.userId, token: s.accessToken) }
+                }
+                Button("Cancel", role: .cancel) {}
+            } message: {
+                Text("Blocking hides them from you, and neither of you follows the other any more.")
+            }
+            // The reasons, as their own sheet rather than a text field. A field
+            // asks somebody to write an essay about an offensive picture; four
+            // buttons take one tap, which is what Apple's own report sheets do.
+            .confirmationDialog("Why are you reporting this?",
+                                isPresented: Binding(get: { reporting != nil },
+                                                     set: { if !$0 { reporting = nil } }),
+                                titleVisibility: .visible) {
+                ForEach(Moderation.Reason.allCases) { r in
+                    Button(r.rawValue) { send(r) }
+                }
+                Button("Cancel", role: .cancel) {}
+            }
+            .alert("Thank you", isPresented: $reported) {
+                Button("OK", role: .cancel) {}
+            } message: {
+                Text("We look at every report. If you would rather not see this person at all, block them too.")
+            }
+            .task {
+                // Debug scaffolding, the same family as -tab and -signed-in:
+                // this list needs a live database with strangers in it, so
+                // without three made-up rows the report and block controls
+                // cannot be photographed or looked at before they ship, and a
+                // control nobody has looked at is exactly what this project
+                // keeps promising not to ship.
+                if ProcessInfo.processInfo.arguments.contains("-people-demo") {
+                    results = [
+                        .init(user_id: "00000000-0000-0000-0000-0000000000a1",
+                              display_name: "Marieke", avatar_url: nil),
+                        .init(user_id: "00000000-0000-0000-0000-0000000000a2",
+                              display_name: "Tom", avatar_url: nil),
+                        .init(user_id: "00000000-0000-0000-0000-0000000000a3",
+                              display_name: "Sofia", avatar_url: nil),
+                    ]
+                }
+            }
             .task(id: query) {
+                if ProcessInfo.processInfo.arguments.contains("-people-demo") { return }
                 // A beat before asking, so typing does not fire a request per
                 // letter.
                 searching = true
@@ -86,6 +169,18 @@ struct PeopleView: View {
             }
         }
         .accessibilityIdentifier("people-sheet")
+    }
+
+    /// Send the report, and say so. The row stays where it is: reporting is
+    /// not blocking, and doing both silently would take a choice away from the
+    /// person who only wanted to flag something.
+    private func send(_ reason: Moderation.Reason) {
+        guard let p = reporting, let s = account.session else { return }
+        Task {
+            _ = await moderation.report(subject: p.user_id, reason: reason.rawValue,
+                                        reporter: s.userId, token: s.accessToken)
+            reported = true
+        }
     }
 
     private func toggle(_ p: Profiles.Profile) {
