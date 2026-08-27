@@ -65,6 +65,37 @@ enum SheetHeight: CaseIterable {
     }
 }
 
+extension View {
+    /// A tap that a DRAG CANCELS, for a control that sits in the sheet's own
+    /// grab area.
+    ///
+    /// This is UIScrollView's behaviour, borrowed rather than invented. A
+    /// scroll view sets `delaysContentTouches` and `canCancelContentTouches`,
+    /// so a touch on a button is held back for a moment and, the instant it
+    /// becomes a scroll, the button's press is cancelled and never fires. It is
+    /// why you can start a scroll on a row in Settings, or on a cell in the App
+    /// Store, without opening it. Every list in iOS has worked this way since
+    /// 2007 and people are trained on it.
+    ///
+    /// Inside a SwiftUI ScrollView you get it for nothing. In a sheet with a
+    /// drag gesture of its own you do not, and the reason is what a `Button`
+    /// actually asks: did the finger lift inside my bounds. A name row is the
+    /// width of the sheet, so a 40 point drag up and down never leaves those
+    /// bounds and the button fires on release. That is exactly what Hidde kept
+    /// hitting (2026-08-27: "als ik de slider gebruik opent het bewerken van je
+    /// profiel veel te makkelijk"), and it is why removing the control was the
+    /// wrong fix for it: "andere apps hebben gewoon iets slims als wanneer er
+    /// gescrollt wordt is niks klikbaar".
+    ///
+    /// A TapGesture asks the other question, did the finger STAY STILL, and
+    /// cancels itself once the touch travels past its own small slop. So the
+    /// control works when you tap it and is inert while you drag, with no
+    /// state to keep and nothing to get out of step.
+    func tapUnlessDragged(_ action: @escaping () -> Void) -> some View {
+        self.contentShape(.rect).onTapGesture(perform: action)
+    }
+}
+
 struct BottomSheet<Header: View, Content: View>: View {
     @Binding var height: SheetHeight
     /// Which item is at the top of the list, when the content marks its items
