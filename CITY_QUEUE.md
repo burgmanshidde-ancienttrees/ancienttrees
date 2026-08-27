@@ -196,7 +196,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | # | city | score | demand | trees | photos | walks | register | target | basis |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---|
 | 1 | Amsterdam | 71.43 | 294,030 | 34 | 7 | 3 | 5488 | 30 | measured |
-| 2 | Rome | 60.72 | 358,876 | 29 | 9 | 2 | 32 | 30 | measured |
+| 2 | Rome | 60.72 | 358,876 | 30 | 9 | 2 | 32 | 30 | measured |
 | 3 | Barcelona | 44.05 | 346,477 | 46 | 12 | 6 | 183 | 30 | measured |
 | 4 | Lisbon | 39.73 | 201,877 | 33 | 10 | 3 | 66 | 30 | measured |
 | 5 | Milan | 39.32 | 212,705 | 22 | 9 | 2 | 25 | 30 | measured |
@@ -221,13 +221,13 @@ so qa.py fails the deploy when the table and the json disagree.
 | 24 | Dublin | 15.23 | 240,850 | 17 | 4 | 2 | 12 | 30 | measured |
 | 25 | Palma de Mallorca | 14.20 | 84,075 | 5 | 1 | 1 | 8 | 20 | measured |
 | 26 | Madeira | 15.44 | - | 6 | 1 | - | - | 20 | measured |
-| 27 | Porto | 10.91 | 120,415 | 29 | 5 | 2 | 42 | 20 | measured |
-| 28 | Alicante | 10.70 | 77,454 | 11 | 2 | 2 | 44 | 20 | measured |
+| 27 | Porto | 10.91 | 120,415 | 27 | 5 | 2 | 40 | 20 | measured |
+| 28 | Alicante | 10.70 | 77,454 | 14 | 2 | 2 | 44 | 20 | measured |
 | 29 | Seoul | 19.55 | 206,265 | 8 | 5 | 1 | - | 30 | measured |
 | 30 | Fukuoka | 11.53 | 77,485 | 13 | 7 | 1 | - | 20 | measured |
 | 31 | Geneva | 11.32 | 162,269 | 21 | 4 | 4 | 131 | 20 | measured |
 | 32 | Cambridge | 16.88 | 97,974 | 5 | 2 | 1 | - | 20 | measured |
-| 33 | Nijmegen | 8.44 | 42,338 | 18 | 1 | 2 | 159 | 20 | measured |
+| 33 | Nijmegen | 8.44 | 42,338 | 20 | 1 | 2 | 159 | 20 | measured |
 | 34 | The Hague | 8.44 | 236,723 | 30 | 1 | 5 | 166 | 20 | measured |
 | 35 | Krakow | 10.50 | 140,824 | 21 | 3 | 2 | 198 | 30 | measured |
 | 36 | Crete | 15.44 | - | 4 | - | - | - | 20 | measured |
@@ -239,23 +239,23 @@ so qa.py fails the deploy when the table and the json disagree.
 | 42 | Edinburgh | 14.00 | 292,981 | 15 | 4 | 1 | - | 30 | measured |
 | 43 | New York | 14.00 | 1,124,326 | 20 | 5 | 2 | - | 30 | measured |
 | 44 | Washington DC | 13.79 | 606,731 | 14 | 1 | 2 | - | 20 | measured |
-| 45 | Toronto | 10.70 | 411,011 | 4 | - | - | - | 30 | measured |
-| 46 | Portland | 8.65 | 217,222 | 20 | 1 | 2 | 301 | 20 | measured |
-| 47 | Bologna | 7.62 | 146,161 | 12 | 7 | 1 | 9 | 20 | measured |
-| 48 | Reykjavik | 12.76 | 166,789 | 4 | - | 1 | - | 20 | measured |
-| 49 | Berlin | 8.44 | 412,181 | 19 | 11 | 1 | 195 | 30 | measured |
-| 50 | Cologne | 12.17 | 191,812 | - | - | - | - | 10 | predicted (travel demand) |
-| 51 | Las Vegas | 11.32 | - | 8 | - | 2 | - | 30 | measured |
-| 52 | Guimaraes | 6.38 | 26,203 | 6 | 1 | 1 | 19 | 20 | measured |
-| 53 | Boston | 11.94 | 385,902 | 10 | 1 | 1 | - | 30 | measured |
-| 54 | Groningen | 5.97 | 31,401 | 19 | - | 2 | 72 | 20 | measured |
-| 55 | Girona | 7.87 | 51,072 | - | - | - | - | 10 | predicted (travel demand) |
-| 56 | Turin | 5.76 | 147,456 | 10 | 7 | 2 | 30 | 20 | measured |
-| 57 | Chiang Mai | 11.42 | 66,541 | - | - | - | - | 10 | predicted (travel demand) |
-| 58 | Sintra | 7.00 | 46,889 | 5 | 3 | - | 6 | 20 | measured |
-| 59 | Jerusalem | 11.17 | 314,788 | - | - | - | - | 10 | predicted (travel demand) |
-| 60 | Dubai | 11.02 | 334,167 | - | - | - | - | 10 | predicted (travel demand) |
-| 61 | Leiden | 5.35 | 33,227 | 12 | 4 | 1 | 129 | 20 | measured |
+| 45 | Portland | 8.65 | 217,222 | 20 | 1 | 2 | 301 | 20 | measured |
+| 46 | Bologna | 7.62 | 146,161 | 12 | 7 | 1 | 9 | 20 | measured |
+| 47 | Reykjavik | 12.76 | 166,789 | 4 | - | 1 | - | 20 | measured |
+| 48 | Berlin | 8.44 | 412,181 | 19 | 11 | 1 | 195 | 30 | measured |
+| 49 | Cologne | 12.17 | 191,812 | 5 | - | - | - | 10 | predicted (travel demand) |
+| 50 | Guimaraes | 6.38 | 26,203 | 6 | 1 | 1 | 19 | 20 | measured |
+| 51 | Boston | 11.94 | 385,902 | 10 | 1 | 1 | - | 30 | measured |
+| 52 | Groningen | 5.97 | 31,401 | 19 | - | 2 | 72 | 20 | measured |
+| 53 | Girona | 7.87 | 51,072 | - | - | - | - | 10 | predicted (travel demand) |
+| 54 | Turin | 5.76 | 147,456 | 10 | 7 | 2 | 30 | 20 | measured |
+| 55 | Chiang Mai | 11.42 | 66,541 | - | - | - | - | 10 | predicted (travel demand) |
+| 56 | Sintra | 7.00 | 46,889 | 5 | 3 | - | 6 | 20 | measured |
+| 57 | Las Vegas | 11.32 | - | 11 | - | 2 | - | 30 | measured |
+| 58 | Jerusalem | 11.17 | 314,788 | - | - | - | - | 10 | predicted (travel demand) |
+| 59 | Dubai | 11.02 | 334,167 | - | - | - | - | 10 | predicted (travel demand) |
+| 60 | Leiden | 5.35 | 33,227 | 12 | 4 | 1 | 129 | 20 | measured |
+| 61 | Toronto | 10.70 | 411,011 | 6 | - | - | - | 30 | measured |
 | 62 | Kansas City | 10.51 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 63 | Oslo | 10.50 | 181,113 | 4 | - | - | - | 20 | measured |
 | 64 | Asheville | 10.45 | - | - | - | - | - | 10 | predicted (travel demand) |
