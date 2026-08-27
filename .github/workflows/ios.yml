@@ -39,6 +39,23 @@ on:
       - 'scripts/layout_rules.py'
   workflow_dispatch:
 
+  # TWICE A DAY, WHATEVER ELSE HAPPENS, and this is the piece that was missing.
+  #
+  # Measured 2026-08-27: the last seventeen finished runs of this workflow were
+  # ALL cancelled and not one had passed. Not because the app was broken, but
+  # because the gate could never reach the end. A run takes 40 to 75 minutes and
+  # an afternoon of app work pushes more often than that, so every run was killed
+  # by the next push. Nobody read the verdict because there was no verdict, and a
+  # real bug sat inside it for three days.
+  #
+  # The cancelling is still right for a busy branch: a verdict on a commit that
+  # has already been replaced is not worth a runner's half hour. So it stays, and
+  # a scheduled run is given a concurrency group of its own that a push cannot
+  # touch. At least twice a day something actually finishes and says yes or no.
+  schedule:
+    - cron: '0 5 * * *'
+    - cron: '0 17 * * *'
+
 # A newer push cancels the run before it: this is a gate on the newest code,
 # and a verdict on a commit that has already been replaced is not worth a
 # runner's half hour. It is only half of why the first two days showed no
@@ -46,9 +63,12 @@ on:
 # which was 30 minutes for a job whose test step alone takes 17 to 29 (the
 # retry of a failing test doubles the slow half), and a timed-out job is
 # listed as "cancelled" as well.
+#
+# The scheduled runs above sit in their own group and are never cancelled, so
+# the workflow always has a recent finished verdict to read.
 concurrency:
-  group: ios-${{ github.ref }}
-  cancel-in-progress: true
+  group: ios-${{ github.ref }}-${{ github.event_name == 'schedule' && 'scheduled' || 'push' }}
+  cancel-in-progress: ${{ github.event_name != 'schedule' }}
 
 jobs:
   test:
