@@ -11,6 +11,28 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 <!-- archive-index -->
 
 
+## 2026-08-27 (session) - The app: four bugs he found in ten minutes, moderation, crash reporting, and a data-loss hole
+
+Hidde spent a morning on his own phone and this is what came of it. Everything below is pushed.
+
+**FOR HIDDE, the one that matters: your own trees are stored on the phone and nowhere else, and until today one unreadable byte would have destroyed them permanently.** You reported adding trees and photographs in Baarn and no longer seeing them. What took yours cannot be determined from here (a delete-and-reinstall wipes the app's container and nothing survives it; the launch arguments that reset a collection are only ever passed by the tests, and the Xcode scheme carries none). What CAN be said is that the code made a recoverable problem unrecoverable: `load()` swallowed every error and returned an empty list, and the next thing that touched the collection wrote that emptiness over the only copy there is. Now: the loader salvages row by row, so one row a later version wrote differently cannot take the other forty with it; a file it cannot understand is copied to `index-unreadable.json` before anything else happens; **nothing overwrites a file we failed to read**; and photographs whose row is missing are found and never deleted. There is also a **Back up my trees** row in Settings that hands you one file with the photographs inside it. Do not delete the app from your phone until you have used it once.
+
+**The scroll-versus-tap rule, which was in one place and needed to be in six.** He caught both halves: first that removing the tappable name was the wrong fix ("andere apps hebben gewoon iets slims"), then that fixing only the name missed the point ("dat is meer dan 1 plek"). The mechanism is UIScrollView's own `delaysContentTouches`/`canCancelContentTouches`, which every list in iOS has used since 2007. A SwiftUI `Button` does not do it, because it asks only whether the finger lifted inside its bounds, and a tree card is two hundred points tall. A `TapGesture` asks whether the finger stayed still. `tapUnlessDragged` and `SheetLink` are those, and every card in both sheets now uses them. Worth recording: the obvious fix, turning off hit testing during the drag, looked right and did nothing at all.
+
+**A dead end in Settings.** Tapping your own name asked for tab 3, which stopped existing when the bar went to three tabs on 08-26: the TabView then showed the map with no bar and no back button. Opens the profile editor now, and an out-of-range tab can no longer strand anybody.
+
+**Plus and walks were on every city page.** The city page was written from Explore's shelf and never got the `Launch.walks` check. A UI test now asserts that no screen in the app says "Plus", proven to fail when it is there.
+
+**Moderation, because the social half ships (his ruling).** Report and block on every person, four reasons and one tap, a Blocked people list with Unblock in Settings, blocks kept server-side so they survive a reinstall, and a trigger that breaks the follow both ways. Guideline 1.2 asks for four things and the app had none of them.
+
+**Crash reporting**, MetricKit rather than an SDK: no third party, no bill, and it carries hangs, which is the half that matters here. It cannot be tested anywhere but a real device.
+
+**The flow walk**, `scripts/appwalk.py`, is new and is the answer to "how can you test the UX yourself": ten flows tapped and swiped through, a frame after every step, and one machine-checkable rule, that there is always a way back. Its first run found a tree page printing half a line of its own story through the Take me there button.
+
+**Privacy and terms** now describe the app that exists: reports, blocks, crash data, and the no-tolerance clause Apple looks for. `PrivacyInfo.xcprivacy` was rewritten and the App Store Connect answers are a table in RELEASE_CHECKLIST.md.
+
+**Still needs him:** run `supabase/reports.sql`, `supabase/diagnostics.sql` and `supabase/delete-user.sql` (the third replaces `delete_user()` and adds the one thing it could not do, deleting the avatar out of the bucket, which storage does not cascade). And `SUPABASE_SERVICE_KEY=... python3 scripts/account_delete_test.py`, which proves end to end that deleting an account really deletes it. Written, never run.
+
 ## 2026-08-27 (session) - Finished a stalled claim, closed a ledger gap, opened Cologne
 
 This session was the second attempt in a window whose first attempt stopped after 6.5 minutes with a standing claim on nijmegen and nothing shipped. Finished what it left behind, then kept going.
