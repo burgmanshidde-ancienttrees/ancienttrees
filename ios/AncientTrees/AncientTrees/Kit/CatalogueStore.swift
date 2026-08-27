@@ -36,7 +36,14 @@ public final class CatalogueStore {
     /// so once rather than guessing.
     public private(set) var lastAdded: Int?
 
-    public init() {}
+    /// Where a synced catalogue is kept. Application Support on a phone; a
+    /// throwaway directory in a test, because these tests are about a download
+    /// that no longer fits and must not touch the simulator's real one.
+    private let downloads: URL?
+
+    public init(downloads: URL? = nil) {
+        self.downloads = downloads ?? Self.defaultDownloadDirectory
+    }
 
     // MARK: - loading
 
@@ -53,7 +60,7 @@ public final class CatalogueStore {
     /// date with a file it had never heard of. Falling back per file means a new
     /// feed works on the old download the first time it is asked for.
     public func loadBundled() {
-        let dir = Self.downloadDirectory
+        let dir = downloads
         let bundle = Self.bundleURLs
 
         func read(_ name: String, _ bundled: URL?) -> Data? {
@@ -71,8 +78,37 @@ public final class CatalogueStore {
                                    walks: walks,
                                    species: read("species", bundle?.species),
                                    browse: read("browse", bundle?.browse))
+            loadError = nil
+            return
         } catch {
-            loadError = "the catalogue would not decode: \(error)"
+            // FALL BACK TO THE BUNDLE, which rule 3 at the top of this file has
+            // promised since it was written and did not actually do.
+            //
+            // The fallback above is per FILE and per PRESENCE: a downloaded
+            // trees.json that exists is preferred whether or not it can still be
+            // read. So a phone that had ever synced, meeting an app update where
+            // a model gained a required field, decoded nothing at all and showed
+            // an empty app, with a perfect bundled copy sitting beside it and no
+            // way out but delete and reinstall. That is the exact shape of an
+            // upgrade going wrong, and it would have hit everybody who uses the
+            // app rather than a few unlucky ones (2026-08-27).
+            guard let bundle,
+                  let bt = try? Data(contentsOf: bundle.trees),
+                  let bw = try? Data(contentsOf: bundle.walks),
+                  let fresh = try? decode(trees: bt, walks: bw,
+                                          species: bundle.species.flatMap { try? Data(contentsOf: $0) },
+                                          browse: bundle.browse.flatMap { try? Data(contentsOf: $0) })
+            else {
+                loadError = "the catalogue would not decode: \(error)"
+                return
+            }
+            catalogue = fresh
+            loadError = nil
+            // And throw the stale download away. It is a cache of public data,
+            // rebuilt by the next refresh, and leaving it means paying this
+            // failure on every launch: refresh() asks whether the VERSION
+            // changed, and it has not, so nothing would ever replace it.
+            if let dir { try? FileManager.default.removeItem(at: dir) }
         }
     }
 
@@ -113,7 +149,7 @@ public final class CatalogueStore {
 
     // MARK: - disk
 
-    private static var downloadDirectory: URL? {
+    static var defaultDownloadDirectory: URL? {
         guard let base = try? FileManager.default.url(for: .applicationSupportDirectory,
                                                       in: .userDomainMask,
                                                       appropriateFor: nil, create: true)
@@ -141,7 +177,7 @@ public final class CatalogueStore {
     }
 
     private func write(trees: Data, walks: Data, species: Data?, browse: Data?) {
-        guard let dir = Self.downloadDirectory else { return }
+        guard let dir = downloads else { return }
         try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
         // .atomic so a kill mid-write leaves the previous file rather than half
         // a file, which is the same reasoning as rule 2 one level down.
