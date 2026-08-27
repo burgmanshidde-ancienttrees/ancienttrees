@@ -542,7 +542,14 @@ struct CityView: View {
                 .accessibilityIdentifier("city-open-map")
                 .padding(.horizontal, 16)
 
-                let walks = catalogue.walks(inCity: slug)
+                // BEHIND THE LAUNCH FLAG, like every other walk surface
+                // (Kit/Launch.swift). This one was not, so the app launched
+                // free with no reference to Plus anywhere except here: a shelf
+                // of gold Plus chips on every city page (Hidde, 2026-08-27:
+                // "ik zie walks en plus op de stadspagina's staan"). Explore
+                // and the map both read Launch.walks; the city page was
+                // written from the same shelf and never got the check.
+                let walks = Launch.walks ? catalogue.walks(inCity: slug) : []
                 if !walks.isEmpty {
                     ShelfHeader(title: walks.count == 1 ? "1 walk" : "\(walks.count) walks")
                     // The same shelf Explore uses: swipe sideways, the first

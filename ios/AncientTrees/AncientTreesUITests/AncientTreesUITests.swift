@@ -484,4 +484,44 @@ final class AncientTreesUITests: XCTestCase {
         XCTAssertTrue(app.buttons["Email me a code"].exists,
                       "the email route is missing from the sign-in sheet")
     }
+
+    /// THE LAUNCH PROMISE: the app ships free with no reference to Plus
+    /// anywhere (DECISIONS.md 2026-08-26, held by Kit/Launch.swift).
+    ///
+    /// Hidde, 2026-08-27, having found a shelf of gold Plus chips on every
+    /// city page: "kun je een sweep doen dat je 100% zeker bent dat plus in
+    /// deze build niet wordt meegenomen". A flag is only as good as the
+    /// screens that read it, and that one did not: Explore and the map both
+    /// checked Launch.walks and the city page, written from the same shelf,
+    /// never got the check. Nothing could catch it, because the screenshot
+    /// sweep photographs a city page and the shelf sat below the fold.
+    ///
+    /// So it is asserted rather than remembered, on every screen a person can
+    /// reach, and it fails the build in CI. Flipping the flag for real users is
+    /// the Plus introduction and is Hidde's call; this test is what makes the
+    /// flag mean something in between.
+    @MainActor
+    func testNothingInTheAppSaysPlus() throws {
+        let screens: [[String]] = [
+            ["-tab=0"],
+            ["-tab=1"],
+            ["-tab=2", "-signed-in", "-collected=ams_001,ams_002"],
+            ["-tab=2", "-settings"],
+            ["-tab=0", "-open=city:amsterdam"],
+            ["-tab=0", "-open=tree:ath_004"],
+            ["-tab=0", "-open=collection:ancient-oaks-of-europe"],
+            ["-tab=0", "-open=species:Aleppo Pine"],
+        ]
+        for args in screens {
+            let app = launch(args)
+            // Wait for the catalogue: 2.5 MB of JSON, and until it is read
+            // there is nothing on screen to find, so an unwaited assertion
+            // would pass on an empty window.
+            XCTAssertTrue(app.staticTexts.firstMatch.waitForExistence(timeout: 20),
+                          "nothing rendered for \(args)")
+            XCTAssertFalse(app.staticTexts["Plus"].exists,
+                           "a Plus chip is on screen with \(args)")
+            app.terminate()
+        }
+    }
 }

@@ -367,7 +367,15 @@ struct ContentView: View {
                     navigator.push = nil
                 }
                 .onChange(of: navigator.selectTab) { _, new in
-                    if let new { tab = new; navigator.selectTab = nil }
+                    // ONLY A TAB THAT EXISTS. A selection matching no tag
+                    // leaves the TabView showing its first page with our bar
+                    // gone, which is a dead end: no bar, no back button, and
+                    // the tab it thinks it is on is not on screen. One stale
+                    // call site did exactly that for a day (Profile's identity
+                    // row still asked for tab 3), and the cost of the guard is
+                    // a comparison.
+                    if let new { if (0...2).contains(new) { tab = new }
+                                 navigator.selectTab = nil }
                 }
                 .onChange(of: navigator.showCityOnMap) { _, new in
                     // Same handling as showOnMap below: pop the map's stack and
