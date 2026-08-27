@@ -33,7 +33,20 @@ public final class Moderation {
     private static let key = "blocked-accounts"
 
     public init() {
+        let args = ProcessInfo.processInfo.arguments
+        // Test scaffolding, the same family as -reset-collection. Without it a
+        // block made by one test survives into every test after it on the same
+        // simulator, which is how a flow walk photographed a person missing
+        // from a list for no reason anybody could see (2026-08-27).
+        if args.contains("-reset-blocks") {
+            UserDefaults.standard.removeObject(forKey: Self.key)
+        }
         blocked = Set(UserDefaults.standard.stringArray(forKey: Self.key) ?? [])
+        // And the other direction: a blocked list with nothing on it cannot be
+        // photographed, so the sweep seeds one.
+        if args.contains("-blocked-demo") {
+            blocked.insert(DemoPeople.all[0].user_id)
+        }
     }
 
     /// Whether somebody's name, picture and rows should be kept off this screen.

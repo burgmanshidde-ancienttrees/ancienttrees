@@ -40,7 +40,7 @@ final class AncientTreesUITests: XCTestCase {
         // makes the list deterministic: Amsterdam always has trees near it.
         // And a clean collection, because serial testing shares one simulator
         // across every test and a tick left by one would greet the next.
-        app.launchArguments = ["-at=52.3731,4.8922", "-reset-collection"] + args
+        app.launchArguments = ["-at=52.3731,4.8922", "-reset-collection", "-reset-blocks"] + args
         app.launch()
         return app
     }
@@ -483,6 +483,47 @@ final class AncientTreesUITests: XCTestCase {
                       "the sign-in sheet did not present")
         XCTAssertTrue(app.buttons["Email me a code"].exists,
                       "the email route is missing from the sign-in sheet")
+    }
+
+    /// A DRAG THAT STARTS ON A CARD MOVES THE SHEET AND OPENS NOTHING.
+    ///
+    /// This is UIScrollView's rule, which every list in iOS has followed since
+    /// 2007: the moment a touch becomes a drag, the control under it stops
+    /// being pressed. Our sheet has its own drag gesture, so it does not come
+    /// free, and a NavigationLink fires on release however far the finger
+    /// travelled, because a card is two hundred points tall and the finger
+    /// never leaves it.
+    ///
+    /// Hidde found it twice: first on the name row in the header, then, when
+    /// only that was fixed, with the question that mattered ("heb je dit
+    /// doorgevoerd overal waar dit component wordt gebruikt, dat is meer dan 1
+    /// plek"). It is asserted here because the first attempted fix, turning off
+    /// hit testing during the drag, looked right and did nothing at all: a
+    /// press SwiftUI has already begun is not cancelled by refusing later
+    /// touches.
+    @MainActor
+    func testDraggingFromACardRaisesTheSheetRatherThanOpeningIt() throws {
+        let app = launch(["-tab=0"])
+        XCTAssertTrue(app.staticTexts.firstMatch.waitForExistence(timeout: 20))
+        // Raise it off peek, where the sheet takes no taps at all.
+        app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.88)).tap()
+        Thread.sleep(forTimeInterval: 1.0)
+
+        // .descendants rather than .otherElements: a SheetLink is a plain view
+        // with a tap on it, so what type XCUITest files it under is not ours
+        // to assume.
+        let card = app.descendants(matching: .any)
+            .matching(identifier: "tree-card").firstMatch
+        XCTAssertTrue(card.waitForExistence(timeout: 10), "no card in the sheet to drag from")
+        // A real drag, starting on the card: down the middle of it and well
+        // past the sheet's own 18 point threshold.
+        card.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
+            .press(forDuration: 0.05,
+                   thenDragTo: card.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: -1.5)))
+        Thread.sleep(forTimeInterval: 1.2)
+
+        XCTAssertFalse(app.buttons["Take me there"].exists,
+                       "dragging the sheet by a card opened the tree underneath it")
     }
 
     /// THE LAUNCH PROMISE: the app ships free with no reference to Plus

@@ -24,6 +24,9 @@ final class SweepFrames: XCTestCase {
     private static let origin = "-at=52.3731,4.8922"
     /// Every screen is measured from a clean collection; Saved's -reset-collection.
     private static let clean = "-reset-collection"
+    /// And the blocked list, for the same reason: a block left by one screen
+    /// silently removes a person from the next one.
+    private static let unblocked = "-reset-blocks"
 
     /// name -> the launch arguments that open it.
     /// Name, launch arguments, and for a screen that is a sheet or an overlay,
@@ -65,7 +68,7 @@ final class SweepFrames: XCTestCase {
         ("sponsor",      ["-tab=2", "-sponsor"], "sponsor-sheet"),
         ("profile-edit", ["-tab=2", "-profile-edit"], nil),
         ("people",       ["-tab=2", "-signed-in", "-people", "-people-demo"], "people-sheet"),
-        ("blocked",      ["-tab=2", "-signed-in", "-settings", "-blocked"], "blocked-sheet"),
+        ("blocked",      ["-tab=2", "-signed-in", "-settings", "-blocked", "-blocked-demo", "-people-demo"], "blocked-sheet"),
     ]
 
     /// The file appfit.py goes looking for.
@@ -80,7 +83,7 @@ final class SweepFrames: XCTestCase {
         var dump = ""
         for (name, extra, root) in Self.screens {
             let app = XCUIApplication()
-            app.launchArguments = [Self.origin, Self.clean] + extra
+            app.launchArguments = [Self.origin, Self.clean, Self.unblocked] + extra
             app.launch()
 
             // The catalogue is 2.5 MB of JSON, so nothing exists for a moment

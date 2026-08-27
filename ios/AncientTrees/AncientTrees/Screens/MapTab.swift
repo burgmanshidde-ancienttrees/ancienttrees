@@ -675,19 +675,16 @@ struct MapTab: View {
                 // Yours first: there are few of them and nobody else has them.
                 if query.isEmpty {
                     ForEach(minesInView) { s in
-                        NavigationLink(value: Route.mine(s.id)) {
-                            MineCard(sighting: s)
-                        }
-                        .buttonStyle(.plain)
+                        SheetLink(route: .mine(s.id)) { MineCard(sighting: s) }
                     }
                 }
                 ForEach(listed, id: \.tree.id) { hit in
-                    NavigationLink(value: Route.tree(hit.tree.id)) {
-                        TreeCard(tree: hit.tree)
-                    }
-                    .buttonStyle(.plain)
-                    .accessibilityIdentifier("tree-card")
-                    .id(hit.tree.id)
+                    // SheetLink, not NavigationLink: see BottomSheet.swift. A
+                    // link inside a sheet opens on release even when the drag
+                    // that released it was raising the sheet.
+                    SheetLink(route: .tree(hit.tree.id)) { TreeCard(tree: hit.tree) }
+                        .accessibilityIdentifier("tree-card")
+                        .id(hit.tree.id)
                 }
                 if listed.isEmpty {
                     Text(query.isEmpty

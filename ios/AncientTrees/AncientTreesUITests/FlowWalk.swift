@@ -95,6 +95,64 @@ final class FlowWalk: XCTestCase {
             Flow(name: "collect-gate", args: ["-tab=0"], steps: [
                 Step(name: "tap-the-camera") { $0.buttons["tab-collect"].tap() },
             ]),
+
+            // MODERATION, built 2026-08-27 and therefore the least walked thing
+            // in the app. Apple's reviewer taps exactly this sequence, so it is
+            // the one flow where a dead end would cost a release rather than an
+            // afternoon.
+            Flow(name: "report-and-block",
+                 args: ["-tab=2", "-people", "-people-demo"] + signedIn, steps: [
+                Step(name: "open-the-ellipsis") { $0.buttons["person-more"].firstMatch.tap() },
+                Step(name: "choose-report") { $0.buttons["Report this person"].firstMatch.tap() },
+                // The literal string, not Moderation.Reason: a UI test runs in
+                // its own process and cannot see the app's types at all.
+                Step(name: "pick-a-reason") {
+                    $0.buttons["An offensive name or picture"].firstMatch.tap()
+                },
+                Step(name: "close-the-thank-you") { $0.buttons["OK"].firstMatch.tap() },
+            ]),
+
+            Flow(name: "blocked-list", args: ["-tab=2", "-settings", "-blocked", "-blocked-demo", "-people-demo"] + signedIn,
+                 steps: [
+                Step(name: "done") { $0.buttons["Done"].firstMatch.tap() },
+            ]),
+
+            // The way into the app from a search, which is how somebody who
+            // knows what they are looking for uses it.
+            Flow(name: "search-to-a-tree", args: ["-search=lis"], steps: [
+                Step(name: "first-result") { firstCard($0)?.tap() },
+                Step(name: "back") { back($0) },
+            ]),
+
+            // Discover, and the city page under it. The city page is where the
+            // walks shelf leaked Plus this morning, so it is worth arriving at
+            // rather than only photographing.
+            Flow(name: "discover-to-a-city", args: ["-tab=1"], steps: [
+                Step(name: "scroll-the-feed") { $0.swipeUp() },
+                Step(name: "open-something") { firstCard($0)?.tap() },
+                Step(name: "back") { back($0) },
+            ]),
+
+            // The lane picker, which Hidde reported as dead three times before
+            // it was pinned. A control with that history gets walked.
+            Flow(name: "my-trees-lanes", args: ["-tab=2"] + signedIn, steps: [
+                Step(name: "raise-the-sheet") { drag($0, from: 0.55, to: 0.16) },
+                Step(name: "favourites") {
+                    $0.segmentedControls["collect-lane"].buttons["Favourites"].tap()
+                },
+                Step(name: "back-to-my-trees") {
+                    $0.segmentedControls["collect-lane"].buttons["My trees"].tap()
+                },
+            ]),
+
+            // Settings, all the way down, because the two most destructive
+            // controls in the app live at the bottom of it and both must ask
+            // first rather than act.
+            Flow(name: "settings-bottom", args: ["-tab=2", "-settings"] + signedIn, steps: [
+                Step(name: "scroll-to-the-bottom") { $0.swipeUp(); $0.swipeUp() },
+                Step(name: "sign-out-asks-first") { $0.buttons["Sign out"].firstMatch.tap() },
+                Step(name: "cancel") { $0.buttons["Cancel"].firstMatch.tap() },
+            ]),
         ]
     }
 
@@ -156,7 +214,7 @@ final class FlowWalk: XCTestCase {
 
         for flow in Self.flows {
             let app = XCUIApplication()
-            app.launchArguments = ["-at=52.3731,4.8922", "-reset-collection"] + flow.args
+            app.launchArguments = ["-at=52.3731,4.8922", "-reset-collection", "-reset-blocks"] + flow.args
             app.launch()
             // The catalogue is 2.5 MB of JSON and nothing exists until it is
             // read; a step taken before that taps an empty window.

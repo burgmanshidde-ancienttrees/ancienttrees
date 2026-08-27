@@ -146,7 +146,7 @@ def screens(sub):
         # the report and block controls, and those are the two the App Store
         # checks by tapping.
         ("people",        ["-tab=2", "-signed-in", "-people", "-people-demo"], 5),
-        ("blocked",       ["-tab=2", "-signed-in", "-settings", "-blocked"], 5),
+        ("blocked",       ["-tab=2", "-signed-in", "-settings", "-blocked", "-blocked-demo", "-people-demo"], 5),
     ]
     names = [p[0] for p in plan]
     dupes = sorted({n for n in names if names.count(n) > 1})
@@ -335,7 +335,7 @@ def main():
 
         for screen, extra, wait in plan:
             sh("xcrun", "simctl", "terminate", udid, BUNDLE, check=False)
-            sh("xcrun", "simctl", "launch", udid, BUNDLE, ORIGIN, *extra)
+            sh("xcrun", "simctl", "launch", udid, BUNDLE, ORIGIN, "-reset-blocks", *extra)
             time.sleep(wait)
             path = out / slug / f"{screen}.png"
             sh("xcrun", "simctl", "io", udid, "screenshot", "--type=png", str(path))

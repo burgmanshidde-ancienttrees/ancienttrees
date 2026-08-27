@@ -54,6 +54,7 @@ struct BlockedView: View {
                 }
             }
             .task {
+                if DemoPeople.on { people = DemoPeople.all; return }
                 people = await profiles.byIds(Array(moderation.blocked),
                                               token: account.session?.accessToken)
             }

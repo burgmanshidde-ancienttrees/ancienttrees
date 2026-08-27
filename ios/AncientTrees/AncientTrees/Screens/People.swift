@@ -146,19 +146,10 @@ struct PeopleView: View {
                 // cannot be photographed or looked at before they ship, and a
                 // control nobody has looked at is exactly what this project
                 // keeps promising not to ship.
-                if ProcessInfo.processInfo.arguments.contains("-people-demo") {
-                    results = [
-                        .init(user_id: "00000000-0000-0000-0000-0000000000a1",
-                              display_name: "Marieke", avatar_url: nil),
-                        .init(user_id: "00000000-0000-0000-0000-0000000000a2",
-                              display_name: "Tom", avatar_url: nil),
-                        .init(user_id: "00000000-0000-0000-0000-0000000000a3",
-                              display_name: "Sofia", avatar_url: nil),
-                    ]
-                }
+                if DemoPeople.on { results = DemoPeople.all }
             }
             .task(id: query) {
-                if ProcessInfo.processInfo.arguments.contains("-people-demo") { return }
+                if DemoPeople.on { return }
                 // A beat before asking, so typing does not fire a request per
                 // letter.
                 searching = true
