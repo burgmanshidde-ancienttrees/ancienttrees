@@ -9,6 +9,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-27 (night run) - Munich +1: a red oak held only for missing an age
+
+Munich's Hartmannshofen red oak was the same shape of mistake seen elsewhere today: "failed our bar only on age," which CLAUDE.md's Step 2 explicitly rules out as a publish blocker. Legally protected since 2021 on public Bavarian state forest land, no gate, and a Wochenanzeiger local news piece gives a genuine second source with real measurements (4.2m girth, ~30m tall) and a good story (a 2006 resident application that took fifteen years to clear the ordinance). The one age figure available is an explicitly-named local enthusiast's estimate rather than a measurement, stated as such and kept as a wide flagged range. Shipped as muc_049. A Commons image exists for it but was not viewed this pass (Wikimedia blocked from this runner). Aarhus's ash and Sorrento's two cemetery cypresses checked and correctly left alone: real unresolved access/transit and genuine single-sourcing with no second source found despite searching. Build (3004 pages), qa.py, superlatives.py, preflight.py, pagegaps.py all clean.
+
 ## 2026-08-27 (night run) - Zaragoza, Brno, Trento checked clean; Wroclaw +1 (Swiadek, the Witness Plane)
 
 Checked the remaining mid-size READY batches. Zaragoza's 3 (a plane on an unwalkable road/rail margin, a lime with a declining 2005 condition survey and unresolved roadworks damage, two field elms with a specifically-flagged threatened specimen among them) all hold on real, already-documented evidence. Brno's 2 both have concrete current blockers: the largest-girth plane in the city sits on an active 2026 residential construction site per local news, and Mendel's Ginkgo is behind a museum that requires advance booking and is reported closed as of August 2026. Trento's 2 both remain unresolved private-villa access questions, already checked twice by earlier write passes with nothing found either way.

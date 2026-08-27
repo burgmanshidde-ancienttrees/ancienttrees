@@ -1431,6 +1431,45 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "muc_049",
+      "name": "The Red Oak of Hartmannshofen",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "an enthusiast's estimate of around 250 years, unconfirmed",
+      "age_min": 200,
+      "age_max": 280,
+      "girth_cm": 420,
+      "height_m": 30.0,
+      "location": {
+        "address": "Hartmannshofer Park, about 100m north of the Fasanerie restaurant, behind the TSV Moosach-Hartmannshofen tennis courts, 80995 Munich",
+        "latitude": 48.17377,
+        "longitude": 11.49373,
+        "neighbourhood": "Hartmannshofen, Moosach"
+      },
+      "verified_sources": [
+        "Munich Naturdenkmalverordnung 2021 (Moosach 4; owner Freistaat Bayern, Moosach 1983/73)",
+        "https://www.wochenanzeiger.de/mwa114266 (girth 4.20m, height ~30m, designation history)"
+      ],
+      "access": "Free, public forest park owned by the Free State of Bavaria, no gate",
+      "transport": "Hartmannshofen/Moosach district; reachable by tram or bus, then a walk into the park",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the red oak's leaves turn deep red"
+      },
+      "story": "An American red oak thick enough to be one of Munich's largest hides behind a tennis club, a hundred metres north of the Fasanerie restaurant in Hartmannshofer Park, with no sign anywhere pointing to it. The city designated it a natural monument in 2021, citing simply that it is a very large red oak, rare anywhere inside Munich, after a resident first applied for its protection back in 2006. The paperwork took fifteen years to catch up with the tree.\n\nQuercus rubra is native to eastern North America and was planted across German parks and forests from the 18th century on, valued for its fast growth and brilliant autumn colour rather than for any native pedigree. This one has done more with those decades than almost any other red oak in the city: 4.2 metres round at the base and about 30 metres tall, standing in a stretch of forest that has belonged to the Free State of Bavaria rather than the city since well before the park itself existed. A local tree enthusiast who pushed for its protection estimates it at around 250 years old, though nobody has confirmed that with a core sample or a planting record.\n\nThe park itself, the Hartmannshofer Wald, only became a public park in the 1960s. Before that it was simply forest, which may be exactly how this one tree got old enough to matter.",
+      "verify_notes": "Two independent sources: Munich's own Naturdenkmalverordnung (2021 designation, owner Freistaat Bayern) and a Wochenanzeiger local news article giving girth (4.20m), height (~30m) and the designation history (application 2006, approved 2021 amid nature-protection law updates). Age (~250 years) is explicitly a named local enthusiast's (Armin Peter) personal estimate, not a documented measurement or growth-rate derivation; stated as such and kept as a wide, flagged range rather than a precise figure. Earlier pass held this back only for lacking an age figure ('failed our bar only on age'), which CLAUDE.md explicitly rules is never a reason to withhold publication (a missing or approximate age is fine). A Commons image exists (Naturdenkmal Amerikanische Roteiche im Winter Hartmannshofer Park München.jpg) but was not viewed or judged this pass (this runner's egress proxy blocks Wikimedia); left for a viewing-capable session.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
