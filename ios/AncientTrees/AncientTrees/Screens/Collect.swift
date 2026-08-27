@@ -516,10 +516,18 @@ struct CollectView: View {
     @ViewBuilder private var whoYouAre: some View {
         HStack(spacing: 14) {
             let editable = account.isSignedIn
-            Button {
-                if editable { editingProfile = true } else { signingIn = true }
-            } label: {
-                HStack(spacing: 14) {
+            // ONLY THE NAME IS TAPPABLE (Hidde, 2026-08-27: "als ik de slider
+            // gebruik opent het bewerken van je profiel veel te makkelijk,
+            // maak alleen de tekst van mijn naam klikbaar, want sliden doe je
+            // veel vaker dan je naam bewerken").
+            //
+            // He is right about the ratio, and that is the whole argument: a
+            // sixty-two point avatar plus a name plus two counts is most of the
+            // width of the sheet's grab area, and it sat under the one gesture
+            // this page gets constantly. A control's tap area should be
+            // proportional to how often it is wanted, and this one is wanted
+            // rarely.
+            HStack(spacing: 14) {
                 ZStack {
                     Circle().fill(Brand.moss.opacity(0.12))
                     if let url = profiles.me?.avatar_url, let u = URL(string: url) {
@@ -539,17 +547,31 @@ struct CollectView: View {
                 }
                 .frame(width: 62, height: 62)
     
-                VStack(alignment: .leading, spacing: 2) {
+                VStack(alignment: .leading, spacing: 0) {
                     // The part before the @ rather than the whole address
                     // truncated in the middle, which rendered as "burgma...ail.com"
                     // on his own phone and reads as a bug rather than as a name.
                     // Signed out it says what the page is.
-                    Text(profiles.me?.display_name
-                         ?? account.email?.split(separator: "@").first.map(String.init)
-                         ?? "Your trees")
-                        .font(.brand(19, .bold, relativeTo: .title3))
-                        .foregroundStyle(Brand.ink)
-                        .lineLimit(1).truncationMode(.middle)
+                    Button {
+                        if editable { editingProfile = true } else { signingIn = true }
+                    } label: {
+                        Text(profiles.me?.display_name
+                             ?? account.email?.split(separator: "@").first.map(String.init)
+                             ?? "Your trees")
+                            .font(.brand(19, .bold, relativeTo: .title3))
+                            .foregroundStyle(Brand.ink)
+                            .lineLimit(1).truncationMode(.middle)
+                    }
+                    .buttonStyle(.plain)
+                    // A NAME IS 23 POINTS TALL and Apple's floor is 44. Making
+                    // only the name tappable was right and left the target too
+                    // small, which the gate caught within the hour; the row
+                    // loses its two points of spacing to pay for the height, so
+                    // the block barely moves.
+                    .frame(minHeight: 44, alignment: .leading)
+                    .contentShape(.rect)
+                    .accessibilityIdentifier("mytrees-edit-profile")
+                    .accessibilityLabel(editable ? "Edit your profile" : "Sign in")
                     if account.isSignedIn {
                         // The two numbers Polarsteps runs beside the name. They
                         // are here from the first day rather than added later, so
@@ -565,12 +587,7 @@ struct CollectView: View {
                             .font(.caption).foregroundStyle(Brand.inkSoft)
                     }
                 }
-                }
-                .contentShape(.rect)
             }
-            .buttonStyle(.plain)
-            .accessibilityIdentifier("mytrees-edit-profile")
-            .accessibilityLabel(editable ? "Edit your profile" : "Sign in")
             Spacer(minLength: 0)
         }
         .accessibilityIdentifier("mytrees-who")
@@ -614,11 +631,12 @@ struct CollectView: View {
                 Divider().frame(height: 34)
                 tile("\(countries)", countries == 1 ? "Country" : "Countries")
             }
-            Text(sightings.yoursOnly.isEmpty
-                 ? "Out of \(catalogue.trees.count.formatted(.number.locale(Locale(identifier: "en_US")))) trees we map in \(Set(catalogue.trees.map(\.country)).count) countries."
-                 : "\(allVisited.count) from the map we keep, \(sightings.yoursOnly.count) only you have.")
-                .font(.caption).foregroundStyle(Brand.inkSoft)
-                .frame(maxWidth: .infinity, alignment: .leading)
+            // NO SENTENCE UNDER THE NUMBERS (Hidde, 2026-08-27: "delete out of
+            // 1846 we map in 39 countries, it looks weird and the stat honestly
+            // doesn't make much sense"). He is right twice: it measured US
+            // rather than him, which is the wrong subject on the one page that
+            // is about him, and a paragraph under a stat row is not what a stat
+            // row is for. Polarsteps runs three numbers and nothing else.
         }
     }
 
