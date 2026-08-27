@@ -13,6 +13,69 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-08-27 (second pass, evening)
+
+Reviewed since the last review commit (`9d2fba34`, 2026-08-27 12:32 UTC): 41
+commits, spanning a long afternoon/evening app session (My trees restructure,
+sign-in-linked social features with report/block, account deletion proven
+end-to-end, worth-it vote counts, a gold "my tree" ring on the map, a live
+feed/app contract so a website deploy cannot silently break every installed
+phone, and a self-inflicted two-hour deploy outage found and fixed by the new
+alarm) plus two night-run city passes (Bari opened at its 4-tree floor,
+Barcelona 46 to 52 off its own leads shelf) and a Kyoto species/title
+correction. Ran `python3 scripts/qa.py` (3574 pages, clean), `python3
+scripts/superlatives.py` (480 claims, no collisions), `python3
+scripts/preflight.py` (173 cities, 0 problems, same two pre-existing paid-share
+NOTEs as before) and `python3 scripts/health.py` (rung 2 clear; Smoke test,
+Build and deploy and iOS app all show "cancelled" but health.py already reads
+that correctly as push-cancels-predecessor rather than breakage, per today's
+own `6f9fe2f7`/`975e59ed` fix, and its scheduled iOS run is green).
+
+Spot-checked the two data changes directly: Barcelona's renamed Erythrina
+caffra ("Coast Coral Tree") does not collide with the existing Erythrina
+corallodendron entry (grepped both; different ids, superlatives.py agrees),
+and Kyoto's kyo_016 rename ("Sudajii of Omiya Gate" replacing the
+self-contradicting "Chinkapin oak (Sudajii)") is live on the built site with
+its old URL redirecting via the new `RENAMED_TREE_SLUGS` entry. Sampled 5
+other pages at random (Alkmaar, Cambridge, Geneva, Lucca, Poland): clean
+titles, no banned words, no em dashes.
+
+**APP screenshots (rotation, iPhone SE): map-full, map, paywall, people,
+place-pin, primer.** All six looked at. `people.png`'s "Find people" list
+(Marieke/Tom/Sofia) traces to `Kit/DemoPeople.swift`, added today,
+launch-argument-gated and documented in its own header as unable to reach a
+real build's screen; not a finding. The floating "Map" pill mid-screen in
+`map-full.png` traces to `MapTab.swift`'s documented back-to-map button
+(shown only at full sheet height, per Hidde's own 2026-08-25 correction); not
+a finding. `primer.png`'s "We map 1,858 remarkable old trees" is the app's
+bundled fallback catalogue, 10 trees behind the live 1,868, which is exactly
+today's Barcelona (+6) and Bari (+4) additions, i.e. an expected bundle-vs-live
+lag rather than a wrong count.
+
+**WARN, APP, FOR HIDDE — the paywall screen narrates our own construction
+progress to the reader, which TONE_OF_VOICE.md names and bans almost verbatim.**
+`ios/AncientTrees/AncientTrees/Screens/Paywall.swift:85`: "Plus is not open
+yet. **We are building it**, and this is the list." TONE_OF_VOICE.md's
+"No builder-speak toward the visitor" section states the rule plainly: "Copy
+states what something DOES, never its state of construction," and lists
+"still being built" by name among the banned phrases, exactly what "we are
+building it" says with different words. The rest of the screen already fits
+the document's own carve-out for this case ("an honest, styled 'coming soon'
+... the app page's waitlist is the model"): "Plus is not open yet" plus "Tell
+me when this opens" is that pattern done right. The one clause that steps
+outside it is "we are building it," whose subject is our own progress rather
+than the visitor. This is Hidde's own copy (commit `1706026c`, 2026-08-25,
+"it just says it will come soon"), so this is not reported as an error, only
+said out loud per the corpus's own rule for handling his decisions ("the
+contradiction must be said out loud so changing course is a decision, never a
+drift"): keep it if that is the intended exception, or drop the clause and
+let "not open yet" carry the sentence alone.
+
+Nothing else found at BLOCKER or WARN. Not a Monday, so no scheduled
+corpus-rot audit this entry.
+
+---
+
 ## 2026-08-27
 
 Reviewed the last 24 hours of git history (back through `8910fc07`, spanning
