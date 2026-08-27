@@ -32,8 +32,9 @@ to deal with.
 Checked: /munich/fern-leaved-beech carries the new opening, 210 words, and
 preflight is clean.
 
-To: (her address from the thread, Bayerische Schlösserverwaltung, Referat G6)
-Subject: Re: Ihre Anfrage zu den Altbäumen im Englischen Garten
+To: Vera.Wesinger@bsv.bayern.de
+Cc: GVEnglischergarten@bsv.bayern.de, Martin.Baumgaertner@bsv.bayern.de
+Subject: AW: Können Sie mir mit ancienttrees.app helfen? The Fern-leaved Beech
 
 ---
 
