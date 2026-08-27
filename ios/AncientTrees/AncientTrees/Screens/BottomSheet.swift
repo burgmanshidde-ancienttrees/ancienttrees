@@ -212,21 +212,23 @@ struct BottomSheet<Header: View, Content: View>: View {
                     content
                         .frame(maxWidth: .infinity, alignment: .top)
                 }
-                // THE LIST ENDS ABOVE THE FLOATING BAR, which it did not until
-                // 2026-08-27 (Hidde: "de spacing van de lijst is nog steeds
-                // niet goed"). The sheet reaches the bottom of the screen and
-                // the tab bar floats over its last 62 points, so at every
-                // height below full the last thing on the list was sliced
-                // across the middle by an opaque bar. Not scrolled behind it,
-                // where a finger could recover it: parked there, because the
-                // list only scrolls at full height.
+                // ROOM AT THE END OF THE LIST, not a shorter list.
                 //
-                // Padding the SCROLL VIEW rather than its content is the
-                // difference that matters. Padding the content adds empty
-                // space you have to scroll to; padding the viewport moves the
-                // bottom edge, so a card is cut by the edge of a list, which
-                // is what a cut card is supposed to mean.
-                .padding(.bottom, TabBar.floatDepth + 8)
+                // Two goes at this. The list used to run under the floating bar
+                // with nothing to spare, so its last card was parked behind an
+                // opaque bar with no way to reach it, because below full height
+                // the list does not scroll. The first fix shrank the scroll
+                // view itself, and Hidde caught that immediately: "de inhoud
+                // scrollt niet meer onder de floating bar door, dat is raar,
+                // conventioneel is dat gewoon zo." He is right. Apple Maps,
+                // Google Maps and every list in iOS let content pass under a
+                // floating bar; what they add is a content inset, so the LAST
+                // item can still be scrolled clear of it.
+                //
+                // contentMargins does exactly that: the scroll view still fills
+                // the sheet and things still travel under the bar, and the
+                // content simply ends a bar's height early.
+                .contentMargins(.bottom, TabBar.floatDepth + 8, for: .scrollContent)
                 .scrollPosition(id: topItem ?? .constant(nil), anchor: .top)
                 // THE RULE THE FILE ALREADY WRITES DOWN, now actually applied.
                 // "Below full height the sheet moves, the list does not

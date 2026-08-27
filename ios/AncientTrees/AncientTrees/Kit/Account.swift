@@ -293,6 +293,21 @@ public final class Account {
     /// cascade off auth.users, so the collection goes with the row.
     public func deleteAccount() async -> Bool {
         guard await refreshIfNeeded(), let s = session else { return false }
+        // THE PROFILE PICTURE FIRST, and from here rather than from the SQL.
+        //
+        // Everything else this account owns hangs off auth.users with a
+        // cascade, so deleting the account takes it. A file in storage does
+        // not: storage.objects is not reachable by a cascade and Supabase
+        // refuses a delete against it from SQL outright, which broke the whole
+        // function for an hour on 2026-08-27 until the deletion test was
+        // actually run.
+        //
+        // Not guarded, deliberately. If this fails, the account still goes: an
+        // orphaned image is a tidy-up job, an account that will not delete is a
+        // broken promise and a rejected app.
+        _ = try? await URLSession.shared.data(
+            for: Supa.request("/storage/v1/object/avatars/\(s.userId)/avatar.jpg",
+                              method: "DELETE", token: s.accessToken))
         let r = Supa.request("/rest/v1/rpc/delete_user", token: s.accessToken)
         let ok = (try? await URLSession.shared.data(for: r))
             .flatMap { ($0.1 as? HTTPURLResponse) }
