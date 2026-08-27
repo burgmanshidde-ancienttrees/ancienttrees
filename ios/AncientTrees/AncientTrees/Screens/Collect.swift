@@ -662,9 +662,9 @@ struct CollectView: View {
         VStack(spacing: 10) {
             HStack(spacing: 0) {
                 tile("\(collectedCount)", "Trees")
-                Divider().frame(height: 34)
+                rule
                 tile("\(collectedSpecies.count)", "Species")
-                Divider().frame(height: 34)
+                rule
                 tile("\(countries)", countries == 1 ? "Country" : "Countries")
             }
             // Three figures across one row is a shape that cannot survive
@@ -723,8 +723,18 @@ struct CollectView: View {
         .brandCard()
     }
 
+    /// LEFT ALIGNED, not centred, and the reference is his own screenshot
+    /// (Hidde, 2026-08-27: "kun je de statistieken precies zo maken als op die
+    /// polarsteps pagina, volgens mij staat er een dun streepje tussen en is de
+    /// tekst naar links uitgelijnd").
+    ///
+    /// He is right about both, and the alignment is the half that matters: a
+    /// centred column has its number and its word each finding their own middle,
+    /// so a one-digit count and a long word wobble against each other. Left
+    /// aligned, every figure starts on the same line as the word under it and
+    /// the row reads as three facts rather than three little cards.
     private func tile(_ value: String, _ label: String) -> some View {
-        VStack(spacing: 3) {
+        VStack(alignment: .leading, spacing: 2) {
             Text(value).font(.brand(26, .black, relativeTo: .title))
                 .foregroundStyle(Brand.ink).monospacedDigit()
             // One line that shrinks a little rather than a word broken across
@@ -732,7 +742,17 @@ struct CollectView: View {
             Text(label).font(.caption2).foregroundStyle(Brand.inkSoft)
                 .lineLimit(1).minimumScaleFactor(0.7)
         }
-        .frame(maxWidth: .infinity)
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+
+    /// The thin line between two figures. A hairline rather than a Divider,
+    /// which draws itself edge to edge and takes the system's own colour: this
+    /// one is short, sits in the gutter, and uses the same hairline as every
+    /// card border in the app.
+    private var rule: some View {
+        Brand.hairline
+            .frame(width: 1, height: 34)
+            .padding(.trailing, 14)
     }
 
     // MARK: - the stamps
