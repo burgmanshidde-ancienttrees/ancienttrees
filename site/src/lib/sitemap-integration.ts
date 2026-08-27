@@ -13,6 +13,7 @@ import { buildRedirectStubs } from "./redirect-map";
 
 const BASE_URL = "https://ancienttrees.app";
 
+
 export default function sitemapIntegration(): AstroIntegration {
   return {
     name: "ancienttrees-sitemap",
@@ -77,6 +78,16 @@ export default function sitemapIntegration(): AstroIntegration {
  */
 function sourceDates(distRoot: string): (url: string) => string | undefined {
   const repo = path.resolve(distRoot, "..", "..");
+  // Read from disk, beside the repo path this function already resolves,
+  // rather than from process.cwd() at import time: a module-level constant
+  // that silently reads an empty directory is a fix that reports success and
+  // does nothing, which is how the language table sat unwired for five days.
+  const i18nRoot = path.join(repo, "data", "i18n");
+  const LANG_DIRS = new Set<string>(
+    fs.existsSync(i18nRoot)
+      ? fs.readdirSync(i18nRoot).filter((d) => fs.statSync(path.join(i18nRoot, d)).isDirectory())
+      : []
+  );
   let dates: Map<string, string>;
   try {
     const out = execFileSync(
@@ -101,6 +112,24 @@ function sourceDates(distRoot: string): (url: string) => string | undefined {
     const p = url.replace(BASE_URL, "").replace(/^\//, "").replace(/\/$/, "");
     if (!p) return dates.get("site/src/pages/index.astro");
     const seg = p.split("/");
+    // A translated page (/fr/paris, /it/rome/some-tree) changes when either its
+    // overlay or the English city it renders changes, so it takes the LATER of
+    // the two. Without this branch `data/cities/fr.json` never matched and all
+    // 496 translated URLs fell through to the build date, which stamped every
+    // one of them "today" on every build. That is exactly the pattern this
+    // function was written to stop: the header above records that a sitemap
+    // claiming daily change on everything gets its lastmod discounted
+    // wholesale, and that 349 URLs sat at "Discovered - currently not indexed"
+    // while it did. The fix landed for English pages in August and never
+    // covered the translations, which did not exist yet. Found 2026-08-27 by
+    // reading the live sitemap: English URLs carried six distinct dates,
+    // translated URLs carried exactly one.
+    if (LANG_DIRS.has(seg[0]) && seg[1]) {
+      const overlay = dates.get(`data/i18n/${seg[0]}/${seg[1]}.json`);
+      const city = dates.get(`data/cities/${seg[1]}.json`);
+      const both = [overlay, city].filter(Boolean) as string[];
+      if (both.length) return both.sort()[both.length - 1];
+    }
     const candidates = [
       `data/cities/${seg[0]}.json`,
       `data/species/${seg[1] ?? ""}.json`,
