@@ -29,6 +29,10 @@ Two things you asked for after the first round: make the gate blocking, and test
 
 2. **A file that broke twice lost the second breakage.** The salvage path asks whether it has already kept a copy, and it asked with `fileExists`, which says yes to a copy of a completely DIFFERENT earlier breakage. So it wrote over the newer bytes. That is precisely the person who has already lost trees once and is about to lose the rest. It now keeps each distinct breakage under its own name, and where the bytes cannot be kept anywhere at all it refuses to write, which is the guarantee the whole salvage path exists for.
 
+**And the alarm paid for itself within the hour, on something else entirely: the website had not deployed since 15:21.** Every build was dying on `slugify is not defined`, from a commit that afternoon which re-exported the function instead of importing it. `export { slugify } from "./slug"` hands the name to anybody importing that file and does not put it in the file's own scope, so the call two functions below was undefined at runtime. Nothing caught it because `astro build` does not typecheck, only `astro check` does. Two hours where nothing reached ancienttrees.app. Fixed, and deploy and the smoke test are green again.
+
+That is the argument for the whole morning in one paragraph: there were two broken gates at once and nobody was looking at either.
+
 **Still not done, and they are yours or next:** the largest accessibility text and dark mode in the screen sweep, a fresh-eyes reviewer for the app, TestFlight, and a release you have walked through once before you need to do it under pressure.
 
 
