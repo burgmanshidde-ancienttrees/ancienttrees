@@ -3,9 +3,9 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Nijmegen calls itself the oldest city in the Netherlands, and its trees mostly agree in spirit if not in age: none predate the Romans, but nearly all grow on ground that does. A sycamore chosen tree of the year on a hilltop fort, a ginkgo that accidentally created a garden-centre variety, a star-shaped forest's surviving beech circle, and a chestnut planted for a queen. Three more sit east of the city, where the ridge holds the old ones: limes on the plateau the Romans picked for its view, a churchyard yew, and the thickest tree in the country.",
-  "meta_description": "Nijmegen's oldest tree may be a 300-year chestnut, the thickest in the Netherlands. Eighteen verified trees, real stories, how to reach each one.",
+  "meta_description": "Nijmegen's oldest tree may be a 300-year chestnut, the thickest in the Netherlands. Twenty verified trees, real stories, how to reach each one.",
   "question_answer": "Nijmegen's oldest tree is almost certainly the Kabouterboom, a hollow sweet chestnut in the Kastanjedal at Beek, about four and a half kilometres east of the centre. Estimates run from three hundred years to four hundred and fifty, and nobody can do better than that because the trunk is hollow and there is no core left to count. What can be measured is the girth, at least eight and a half metres, which makes it the thickest tree in the Netherlands. Inside the city itself the oldest is the beech circle of Sterrenbos in Park Brakkenstein, planted as part of an eighteenth-century star-shaped forest and reckoned at 250 to 300 years, with the limes on the Kops Plateau close behind at 225 to 275.",
-  "question_meta": "Nijmegen's oldest is likely the Kabouterboom at Beek, a hollow chestnut of 300 to 450 years. Where to find it, and seventeen more.",
+  "question_meta": "Nijmegen's oldest is likely the Kabouterboom at Beek, a hollow chestnut of 300 to 450 years. Where to find it, and nineteen more.",
   "question_context": "Sterrenbos, the star-shaped pattern of forest avenues at the heart of Park Brakkenstein, was laid out in the 18th century as part of the private Brakkenstein estate, first documented in 1654 though the star planting itself came later. A circle of beeches planted as part of that scheme survives today, and local historians researching Nijmegen's tree stock have identified it as the oldest living tree group within the city's limits, estimated at 250 to 300 years old. That estimate is necessarily a range: no single tree in the ring has been individually dated by ring count, and some of the original beeches have already died of old age over three centuries, leaving visible gaps in what was once a complete circle. What survives is still remarkable for surviving at all, three centuries after the estate that planted it was still private land and roughly a century before Nijmegen's oldest formal parks, Kronenburgerpark and Valkhofpark, existed as public space. The park is free and open today, in the south of the city between Radboud University's campus and a rail line, no ticket or special access required to see what is left of the star.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Nijmegen's ancient trees free to visit?",
-      "a": "Yes, all eighteen are free to visit. Most stand in public parks, squares or churchyards open at any hour; one is in woodland on an estate that is open to walkers."
+      "a": "Yes, all twenty are free to visit. Most stand in public parks, squares or churchyards open at any hour; a few are in woodland or on estate grounds that are open to walkers."
     },
     {
       "q": "Which Nijmegen tree created a plant variety sold in garden centres?",
@@ -564,8 +564,8 @@
       "id": "nij_018",
       "name": "The Silver Maple of Sumatraplein",
       "species": "Silver Maple (Acer saccharinum)",
-      "age_estimate": "roughly 120 years",
-      "age_min": 116,
+      "age_estimate": "roughly 100 to 125 years, sources disagree",
+      "age_min": 96,
       "age_max": 126,
       "girth_cm": null,
       "location": {
@@ -575,13 +575,74 @@
         "neighbourhood": "Nijmegen-Oost"
       },
       "verified_sources": [
-        "Landelijk Register van Monumentale Bomen (Bomenstichting), register nr 1681250"
+        "Landelijk Register van Monumentale Bomen (Bomenstichting), register nr 1681250",
+        "Gemeente Nijmegen open data, Bomen dataset (WFS layer extern_BOR_Groen:GRN_BOMEN, CC-BY 4.0), record IDs 2827/2830/2831 (IND_MONUMENTAAL=Ja, Acer saccharinum, plantjaar 1930), matched within 5-25m of the register coordinate"
       ],
       "access": "Free. Public street tree on municipal ground (owner_category 'gemeente' in the register), visible and accessible at all times.",
       "transport": "About 1.3 km southeast of Nijmegen railway station, in the Nijmegen-Oost neighbourhood; roughly 15-20 minutes on foot or a short bus ride.",
       "location_precision": "confirmed",
       "curation_status": "flagged",
-      "story": "Most of Nijmegen's protected trees carry the register's full monumental status. This one carries a lower rank, 'potentieel', a candidate rather than a confirmed monument, which changes nothing about standing in front of it: a silver maple planted somewhere between 1900 and 1910 on a residential street in Nijmegen-Oost, now past its first century.\n\nAcer saccharinum grows fast and splits easily, which is why American cities stopped planting it as a street tree decades before European ones did; the trees that survive from an early planting wave tend to be the ones nobody got around to replacing. This one has made it past 120 years on a municipal verge, owned and maintained by the city rather than a private garden, which is also why it can carry a public register entry at all.\n\nNo independent source beyond the national tree register names this specific tree, and no girth has been recorded, so treat the age band as the register's own estimate rather than a measurement. It stands in the open on Sumatraplein, free to see at any hour, about twenty minutes on foot from the station.",
+      "story": "Most of Nijmegen's protected trees carry the register's full monumental status. This one carries a lower rank, 'potentieel', a candidate rather than a confirmed monument, which changes nothing about standing in front of it: a silver maple on a residential street in Nijmegen-Oost, somewhere past its first century.\n\nAcer saccharinum grows fast and splits easily, which is why American cities stopped planting it as a street tree decades before European ones did; the trees that survive from an early planting wave tend to be the ones nobody got around to replacing. This one has made it that far on a municipal verge, owned and maintained by the city rather than a private garden, which is also why it can carry a public register entry at all.\n\nTwo city records disagree on when it went in: the national monumental tree register puts it at 1900 to 1910, the municipality's own tree-management dataset says 1930. Neither is a measurement, and no girth has been recorded for this one, so treat any single number as an estimate. It stands in the open on Sumatraplein, free to see at any hour, about twenty minutes on foot from the station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nij_019",
+      "name": "The Horse Chestnut of Landhuis Brakkenstein",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "uncertain, two sources disagree",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 275,
+      "location": {
+        "address": "Landgoed Brakkenstein, bij het landhuis (by the manor villa), Nijmegen",
+        "latitude": 51.818536,
+        "longitude": 5.870938,
+        "neighbourhood": "Heijendaal"
+      },
+      "verified_sources": [
+        "Landelijk Register van Monumentale Bomen (Bomenstichting/LRMB), register nr 1681242 (status 3/monumentaal, owner gemeente, visitable=ja, visible=ja, tree-level coordinates, planted_band 1830-1840)",
+        "Gemeente Nijmegen open data, Bomen dataset (WFS layer extern_BOR_Groen:GRN_BOMEN, CC-BY 4.0, https://opendata.nijmegen.nl/dataset/bomen/7c209197-fe2c-4173-901d-22ffee2d9db5), record ID 794: Aesculus hippocastanum, IND_MONUMENTAAL=Ja, plantjaar 1920, stamdiameter 75-100cm, hoogte 18-24m, straat 'Park Brakkenstein'. Coordinate converted from the record's RD (EPSG:28992) point to WGS84 (standard Kadaster approximation formula, verified against a known reference point) lands 1.2m from the LRMB coordinate above, the closest match by a wide margin among ~140 trees in the surrounding bbox: a genuine tree-level match, not a coincidence of a dense planting."
+      ],
+      "access": "Free. Park Brakkenstein / Landgoed Brakkenstein is a public city park in south Nijmegen (Heijendaal), used for walking and recreation; the star-forest (sterrenbos) layout dates to 18th-century maps. Confirmed as public via nl.wikipedia.org/wiki/Park_Brakkenstein and monumenten.nl/monument/522933 (Rijksmonument description), both fetched directly. The 1865 neoclassical villa beside which this tree stands is now an event/restaurant venue (landgoedbrakkesteyn.nl); the surrounding park grounds themselves are ordinary open parkland, not gated.",
+      "transport": "South Nijmegen, Heijendaal area near Radboud University and Radboud UMC; nearest bus stop not pinned this pass, honest gap.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Nijmegen's own city register and the national monumental tree register agree on almost nothing about this horse chestnut except where it stands. One says it went into the ground around 1830, making it nearly two centuries old. The other says 1920, barely past its first century. Neither figure is a measurement, both are estimates carried on separate paperwork, and eighty years is too wide a gap to average away.\n\nWhat both records do agree on is the spot: a trunk about two and three quarter metres round, standing by the villa at Landgoed Brakkenstein, a star-shaped eighteenth-century park layout in Heijendaal. The estate's own lanes were planted mostly with beech, except for one western avenue lined in horse chestnuts, which raises the honest possibility that this tree began as part of that planting rather than a lone specimen chosen for the villa's front lawn.\n\nThe 1865 neoclassical villa it grows beside now hosts events and dinners rather than a resident family, but the grounds around it stay open the way a city park is open: no gate, no ticket, just a walk through Heijendaal past Radboud University. Two registers, two ages, one honest tree, and a question nobody has settled: was it planted for the house, or was it already there?",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nij_020",
+      "name": "The Beech of Landhuis Brakkenstein",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "uncertain, two sources disagree",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 432,
+      "location": {
+        "address": "Landgoed Brakkenstein, bij het landhuis (by the manor villa), Nijmegen",
+        "latitude": 51.818498,
+        "longitude": 5.870804,
+        "neighbourhood": "Heijendaal"
+      },
+      "verified_sources": [
+        "Landelijk Register van Monumentale Bomen (Bomenstichting/LRMB), register nr 1681241 (status 3/monumentaal, owner gemeente, visitable=ja, visible=ja, tree-level coordinates, planted_band 1830-1840)",
+        "Gemeente Nijmegen open data, Bomen dataset (WFS layer extern_BOR_Groen:GRN_BOMEN, CC-BY 4.0, https://opendata.nijmegen.nl/dataset/bomen/7c209197-fe2c-4173-901d-22ffee2d9db5), record ID 2577: Fagus sylvatica, IND_MONUMENTAAL=Ja, plantjaar 1880, stamdiameter 125-150cm, hoogte 24m and higher, straat 'Park Brakkenstein'. Coordinate converted from RD (EPSG:28992) to WGS84 lands 2.9m from the LRMB coordinate above, the closest match by a wide margin among ~140 trees in the surrounding bbox."
+      ],
+      "access": "Free. Same public city park as nij_019 (Park Brakkenstein / Landgoed Brakkenstein), roughly 15m from that horse chestnut, both described by the register as standing 'bij het landhuis'. See nij_019 for the access sources.",
+      "transport": "South Nijmegen, Heijendaal area near Radboud University and Radboud UMC; nearest bus stop not pinned this pass, honest gap. Same location as nij_019.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Fifteen metres from that horse chestnut stands a beech with a trunk over four metres round, thick enough that the city's own register lists a diameter class normally reserved for trees decades older than the planting date on file. That mismatch is the interesting part: the municipal record says 1880, about 146 years ago, while the national monumental tree register puts it at 1830 to 1840, closer to 190. A trunk this size fits the older number better, though nobody has resolved the disagreement and neither figure is a measurement rather than an estimate.\n\nIt stands at Landgoed Brakkenstein, the eighteenth-century star-forest park in Heijendaal, beside the 1865 villa that gives both this tree and its chestnut neighbour their address. The park's own lanes were mostly planted in beech, so this could be an individual designation rather than a lane tree: its diameter class runs well above the beeches recorded along the avenue nearby, which is one reason it earned its own spot on the register rather than being folded into the avenue as a whole.\n\nFree to see, in an ordinary public park near Radboud University, no gate and no ticket. Two records, two ages, and a trunk that seems to be arguing for the older one.",
       "photo": {
         "url": null,
         "license": null,
