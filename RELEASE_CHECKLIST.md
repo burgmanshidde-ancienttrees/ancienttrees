@@ -86,7 +86,7 @@ Each is idempotent and each is his, the same as `saves.sql` was:
 3. `supabase/avatars-policy.sql` - lets somebody delete and replace their own profile picture. Without it the Storage API refuses the app's delete, and a deleted account's picture stays public at its old address. Found by running the deletion test, 2026-08-27.
 4. `supabase/delete-user.sql` - **replaces** the existing `delete_user()`. The first version of it tried to delete the avatar from SQL, which Supabase refuses, so the whole function rolled back and NOTHING was deleted. The app deletes the picture through the Storage API instead, in the moment before this is called.
 
-**All four were run on 2026-08-27 and the deletion test was run against them.** Everything in the database goes with the account; the avatar needed `avatars-policy.sql`, which was the last row to turn green.
+**State on 2026-08-27:** 1, 2 and 4 are run, and the deletion test was run against them. Everything in the database now goes with the account: saves, visits, profile, follows, blocks, reports and the account row itself. **3 is written and not yet run**, so the avatar file is the one thing that still outlives a deleted account, and the test still reports it as STILL THERE. Run it, then `SUPABASE_SERVICE_KEY=... python3 scripts/account_delete_test.py` to see the last row turn.
 
 ### Still open
 
