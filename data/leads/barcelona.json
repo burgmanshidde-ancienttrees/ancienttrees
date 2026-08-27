@@ -223,7 +223,7 @@
    "lat": 41.36966,
    "lng": 2.14873,
    "status": "lead",
-   "why": "1920 and 24 m tall, which would make it a good sixth stop on the Montjuic walk, but it has no second source of any kind. It is a recent catalogue entry with no bcnsostenible page, no guia.barcelona page, no OSM node within 400 m and an empty ownership field, so neither the age, the position nor the public access can be corroborated. Everything rests on one line in the open data file.",
+   "why": "1920 and 24 m tall, which would make it a good sixth stop on the Montjuic walk, but it has no second source of any kind. It is a recent catalogue entry with no bcnsostenible page, no guia.barcelona page, no OSM node within 400 m and an empty ownership field, so neither the age, the position nor the public access can be corroborated. Everything rests on one line in the open data file. UPDATE 2026-08-27: a second source now exists, beteve.cat's 31 May 2024 article on Barcelona's 12 newly protected trees names this exact tree ('Araucaria - Avinguda de Francesc Ferrer i Guardia, 18'). Still not shipped: the address falls within a 12-36 building-complex range (Nominatim, 2026-08-27) in the Magoria/Font de la Guatlla area near Placa Espanya, and whether the tree stands on the public avenue sidewalk or inside a private courtyard of that complex could not be confirmed this pass. Resolve the access question before shipping.",
    "register_id": 99400728987,
    "register_notes": "Girth 2 m, 24 m tall, crown 14 m. Ownership field blank."
   },
@@ -232,8 +232,8 @@
    "species": "Grevillea robusta",
    "lat": 41.36127,
    "lng": 2.13668,
-   "status": "lead",
-   "why": "The largest untouched single tree left in the register: girth 4.1 m and 32 m tall, on public ground. Undated, which is the only reason it is here, and it sits 1.4 km south of the botanical garden in La Marina de Port, off the Montjuic walk. A silky oak that size would carry a page on its own if a date or a second source turns up.",
+   "status": "resolved",
+   "why": "The largest untouched single tree left in the register: girth 4.1 m and 32 m tall, on public ground. Undated, which is the only reason it is here, and it sits 1.4 km south of the botanical garden in La Marina de Port, off the Montjuic walk. A silky oak that size would carry a page on its own if a date or a second source turns up. [RESOLVED 2026-08-27, delivered as bcn_047]",
    "register_id": 99400454955,
    "register_notes": "Crown 27 m. Ownership Public. Jardins dels Drets Humans."
   },
@@ -242,8 +242,8 @@
    "species": "Erythrina caffra",
    "lat": 41.36958,
    "lng": 2.17231,
-   "status": "lead",
-   "why": "Girth 3 m and a 20 m crown, public, in the free cactus garden on the sea side of Montjuic, which is a real destination in its own right. Undated in the register and no second source found this pass. The obvious anchor for a second Montjuic walk on the Miramar side, together with the Iuca filifera below.",
+   "status": "resolved",
+   "why": "Girth 3 m and a 20 m crown, public, in the free cactus garden on the sea side of Montjuic, which is a real destination in its own right. Undated in the register and no second source found this pass. The obvious anchor for a second Montjuic walk on the Miramar side, together with the Iuca filifera below. [RESOLVED 2026-08-27, delivered as bcn_049]",
    "register_id": 99400728992
   },
   {
@@ -251,8 +251,8 @@
    "species": "Yucca filifera",
    "lat": 41.36828,
    "lng": 2.17177,
-   "status": "lead",
-   "why": "Undated, and a yucca is a marginal call as a collectible tree. Kept because it stands beside the Erythrina caffra above in the same free garden and the pair would make that side of the hill worth a walk.",
+   "status": "resolved",
+   "why": "Undated, and a yucca is a marginal call as a collectible tree. Kept because it stands beside the Erythrina caffra above in the same free garden and the pair would make that side of the hill worth a walk. [RESOLVED 2026-08-27, delivered as bcn_050]",
    "register_id": 99400761023
   },
   {
@@ -270,8 +270,8 @@
    "species": "Persea americana",
    "lat": 41.37044,
    "lng": 2.15713,
-   "status": "lead",
-   "why": "1946, so 80 years, under the bar. An avocado tree outside a theatre on the Montjuic walk is a good story waiting for the age rule to soften. OSM node 4203274163 confirms the position.",
+   "status": "resolved",
+   "why": "1946, so 80 years, under the bar. An avocado tree outside a theatre on the Montjuic walk is a good story waiting for the age rule to soften. OSM node 4203274163 confirms the position. [RESOLVED 2026-08-27, delivered as bcn_051]",
    "register_id": 99400455081
   },
   {
@@ -279,8 +279,8 @@
    "species": "Styphnolobium japonicum",
    "lat": 41.37137,
    "lng": 2.15443,
-   "status": "lead",
-   "why": "On the Montjuic walk between the Teatre Grec and Placa Carles Buigas, girth 2.3 m and 20 m tall, but the register's age field reads 'En estudi', under study. No date, no page.",
+   "status": "resolved",
+   "why": "On the Montjuic walk between the Teatre Grec and Placa Carles Buigas, girth 2.3 m and 20 m tall, but the register's age field reads 'En estudi', under study. No date, no page. [RESOLVED 2026-08-27, delivered as bcn_052]",
    "register_id": 99400761024
   },
   {
@@ -297,8 +297,8 @@
    "species": "Celtis australis",
    "lat": 41.36007,
    "lng": 2.13725,
-   "status": "lead",
-   "why": "Girth 2.9 m, public, undated. Sits 130 m from the Grevillea above, so the two would open a small walk in La Marina de Port if either gets a date.",
+   "status": "resolved",
+   "why": "Girth 2.9 m, public, undated. Sits 130 m from the Grevillea above, so the two would open a small walk in La Marina de Port if either gets a date. [RESOLVED 2026-08-27, delivered as bcn_048]",
    "register_id": 99400728989
   },
   {
