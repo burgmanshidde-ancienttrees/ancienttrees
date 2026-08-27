@@ -6,7 +6,20 @@ name: Weekly analysis
 
 on:
   schedule:
-    - cron: "30 5 * * 1"   # Monday 05:30 UTC = 07:30 Amsterdam
+    # MONDAY 11:30 UTC, moved off 05:30 on 2026-08-27.
+    #
+    # It sat two minutes before a night run and died the same way the
+    # fresh-eyes review died on three consecutive mornings: one turn, zero
+    # cost, no model usage at all and no error message anywhere in the log. The
+    # weeks it SUCCEEDED are the tell: 10 and 17 August, when GitHub happened to
+    # delay the schedule to 08:02 and 10:03. On 24 August it fired on time and
+    # died. Nothing noticed for three days, because the brief's own check could
+    # only see four hours back.
+    #
+    # 11:30 is inside the only window the night chain leaves alone (it fires
+    # every two hours from 18:00 to 10:00 UTC). Later than his coffee, which
+    # a weekly reading can afford and a broken one cannot.
+    - cron: "30 11 * * 1"
   workflow_dispatch: {}
 
 permissions:

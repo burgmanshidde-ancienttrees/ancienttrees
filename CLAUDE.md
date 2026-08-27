@@ -717,7 +717,11 @@ The 2026-07-29 whole-product walk found a dead check-in button on all 345 tree p
 
    `python3 scripts/appwalk.py` runs `AncientTreesUITests/FlowWalk`, which taps and swipes through each flow, writes a frame after every step into `out/appwalk/` and asserts the one thing a machine can be sure of: **there is always a way back**, a tab bar or a back button or something to dismiss. It runs in CI with the rest of the UI tests. The judging stays a session's, and it is the point: on its first run it photographed a tree page printing half a line of its own story through the top of the Take me there button. Adding a flow means adding it to FlowWalk's list; a flow nobody walks is a flow that ships untested.
 
-   What the app still does not have, said plainly rather than implied: **no fresh-eyes reviewer.** The website gets a daily review from a context with no builder memory; the app gets nothing of the kind, because reviewing it means looking at pictures. That is the honest next gap.
+   **The app DOES have a fresh-eyes reviewer, and this paragraph said it did not for two days.** review.yml has read six app screenshots a night since 2026-08-25, rotated so every screen is seen inside four nights, and the sentence that used to stand here ("no fresh-eyes reviewer... the honest next gap") was written before that and never updated. It cost a session real time on 2026-08-27, which had started building a second one.
+
+   What was actually wrong was subtler and worth more: **the reviewer had failed on its own schedule three mornings running and nothing noticed**, because running it by hand later in the day worked and left a green run behind. Both are fixed. review.yml has a second cron at 12:30 UTC that does nothing when the morning one succeeded, and `brief.py` now asks a third question of every gate, beside "did it fail" and "has anything passed": **of the runs this job started BY ITSELF, did the newest one fail?** That is the run nobody is watching, and it is invisible to every other check here.
+
+   The same alarm found, within a minute of being taught that question, that the weekly analysis had been dead since 24 August for the same reason and at the same hour.
 
    The first watched run, the same afternoon, caught two bugs my own machine could not reproduce: a lane picker whose tap did not take, and a "Map" button that existed, was invisible behind the tab bar, and turned a tap meant to close the sheet into opening a tree. Both are the shape of every complaint Hidde had brought that morning, and both had been failing in CI for a day.
 

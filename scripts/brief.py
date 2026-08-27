@@ -73,45 +73,66 @@ def since_last_visit(out):
 # no gh, no auth, and the brief still prints. A briefing that breaks is worse
 # than a briefing that is missing a line.
 def broken_gates(out):
-    raw = sh("gh", "run", "list", "-L", "100",
-             "--json", "workflowName,conclusion,status,createdAt")
-    if not raw:
-        return
+    """Name a broken gate above everything else.
+
+    ONE CALL PER WORKFLOW, run side by side, and it has to be. The first
+    version asked `gh run list -L 100` once and grouped the answer, which is
+    cheaper and was wrong: this repository runs about twenty-five workflows an
+    hour, so a hundred runs reach back roughly FOUR HOURS. Every job that runs
+    once a day, which is every job worth watching here, fell out of the window
+    and read as fine. Seven small calls in parallel take about as long as the
+    one big one did.
+    """
+    watched = ["deploy.yml", "smoke.yml", "ios.yml", "review.yml",
+               "data-digest.yml", "weekly-analysis.yml", "routes.yml"]
+
+    def latest(wf):
+        raw = sh("gh", "run", "list", "--workflow", wf, "-L", "8",
+                 "--json", "workflowName,conclusion,status,createdAt,event")
+        try:
+            rows = json.loads(raw) if raw else []
+        except Exception:
+            return wf, []
+        return wf, [r for r in rows
+                    if r.get("status") == "completed" and r.get("conclusion")]
+
     try:
-        rows = json.loads(raw)
+        from concurrent.futures import ThreadPoolExecutor
+        with ThreadPoolExecutor(max_workers=7) as pool:
+            answers = dict(pool.map(latest, watched))
     except Exception:
         return
 
-    # Group the COMPLETED runs per workflow, newest first. An unfinished run has
-    # said nothing either way, and reading its empty conclusion as a failure is
-    # how a check in health.py once told a run the site was broken while a
-    # deploy was simply mid-flight.
-    done = {}
-    for r in rows:
-        name = r.get("workflowName")
-        if name and r.get("status") == "completed" and r.get("conclusion"):
-            done.setdefault(name, []).append(r)
+    failed, never, asleep = [], [], []
+    for wf, runs in answers.items():
+        if not runs:
+            continue
+        name = runs[0].get("workflowName") or wf
 
-    # CANCELLED IS NOT AN ALARM ON ITS OWN, and getting this wrong would have
-    # made the whole thing useless. Every workflow here cancels its own previous
-    # run on a new push (concurrency: cancel-in-progress), so on a busy afternoon
-    # the newest finished run is cancelled almost every time. An alarm that goes
-    # off every day is an alarm nobody believes, which is the exact problem this
-    # function exists to solve.
-    #
-    # So two separate questions, because they need different answers:
-    #   FAILED      the newest finished run actually failed. Go and read it.
-    #   NOT PASSED  nothing has succeeded in everything we can see. That covers
-    #               what cancelled-only would hide, including a job cancelled by
-    #               its own timeout, which GitHub also reports as cancelled.
-    failed, never = [], []
-    for name, runs in done.items():
+        # CANCELLED IS NOT AN ALARM ON ITS OWN, and getting this wrong would
+        # make the whole thing useless. Every workflow here cancels its own
+        # predecessor on a new push, so on a busy afternoon the newest finished
+        # run is cancelled almost every time. An alarm that fires every day is
+        # an alarm nobody believes, which is the exact problem this solves.
         if runs[0]["conclusion"] == "failure":
             failed.append((name, runs[0].get("createdAt", "")[:10]))
         elif not any(r["conclusion"] == "success" for r in runs):
+            # Nothing has passed at all, which is what cancelled-only hides,
+            # including a job cancelled by its own timeout.
             never.append((name, len(runs)))
 
-    if not failed and not never:
+        # A JOB WHOSE SCHEDULED RUNS KEEP DYING WHILE MANUAL ONES PASS looks
+        # perfectly healthy to both questions above. Not hypothetical: the
+        # fresh-eyes review died on its 06:10 cron on three consecutive days in
+        # August, and running it by hand later each day left a green run behind
+        # that answered both questions with "fine". Nobody noticed the nightly
+        # review had simply stopped happening. So ask separately about the runs
+        # the job starts BY ITSELF, which are the ones nobody is watching.
+        timed = [r for r in runs if r.get("event") == "schedule"][:3]
+        if timed and all(r["conclusion"] != "success" for r in timed):
+            asleep.append((name, len(timed), timed[0].get("createdAt", "")[:10]))
+
+    if not failed and not never and not asleep:
         return
 
     out.append("BROKEN, and this outranks new work (CLAUDE.md rung 2):")
@@ -119,6 +140,9 @@ def broken_gates(out):
         out.append(f"  {name} FAILED, newest finished run {when}")
     for name, n in sorted(never):
         out.append(f"  {name} has not passed once in its last {n} finished run(s)")
+    for name, n, when in sorted(asleep):
+        out.append(f"  {name} keeps failing ON ITS SCHEDULE ({n} in a row, newest {when}), "
+                   f"even though running it by hand works")
     out += ["  Why: gh run list --workflow=<file> -L 5, "
             "then gh run view <id> --log-failed", ""]
 
