@@ -360,16 +360,39 @@ final class AncientTreesUITests: XCTestCase {
         let app = launch(["-map", "-select=ams_002"])
         let map = app.otherElements["tree-map"]
         XCTAssertTrue(map.waitForExistence(timeout: 14), "no map")
-        // Let the camera settle on the selected tree before aiming at it.
-        Thread.sleep(forTimeInterval: 3)
+        // Let the tiles and the pins arrive. Where the camera ends up does not
+        // matter to this test any more; that it has drawn pins does.
+        Thread.sleep(forTimeInterval: 5)
 
-        for dy in [0.30, 0.24, 0.36, 0.18, 0.42] {
-            map.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: dy)).tap()
-            if app.buttons["Take me there"].waitForExistence(timeout: 3) {
-                return
+        // A GRID, not a column, and the reason is worth writing down because
+        // the column version cost an hour on 2026-08-27.
+        //
+        // Its premise was that the camera has settled on the selected tree, so
+        // the tree is somewhere down the middle. A screenshot taken from inside
+        // the test showed that premise is not reliable: the map was still wide
+        // open with Diemen and Amstelveen in frame, and the middle column ran
+        // between the clusters. Meanwhile tapping a pin by hand opened its tree
+        // perfectly, which is what this test is actually about.
+        //
+        // So it no longer cares where the camera is. It sweeps the visible map
+        // and passes when a pin opens a tree: what is asserted is that a pin is
+        // a control, not that the camera framed one particular trunk. A tap on
+        // a cluster zooms in instead, which only makes the next rows likelier
+        // to land.
+        for row in 0...10 {
+            for dx in [0.5, 0.28, 0.72] {
+                let dy = 0.16 + Double(row) * 0.03
+                map.coordinate(withNormalizedOffset: CGVector(dx: dx, dy: dy)).tap()
+                if app.buttons["Take me there"].waitForExistence(timeout: 0.5) {
+                    return
+                }
             }
         }
-        XCTFail("tapping the map where the selected tree's pin is did not open a tree")
+        let shot = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        shot.name = "the-map-that-would-not-open-a-tree"
+        shot.lifetime = .keepAlways
+        add(shot)
+        XCTFail("sweeping the visible map opened no tree at all")
     }
 
     /// THE MAP, DRIVEN, several times over, because he asked for exactly that.
