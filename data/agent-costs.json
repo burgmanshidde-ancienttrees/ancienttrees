@@ -3574,6 +3574,13 @@
         "tokens": 0,
         "trees": 6,
         "note": "Session work, no dispatched pass. Rule 1(a): leads.py --ready listed 17 for Barcelona (an already-deepened city, 46 to 52), but most carried real held-for-a-reason notes (duplicates, count-padding behind one paid gate, private-land ambiguity). Shipped the 6 that were held only on now-forbidden judgement calls (too young, undated, no second source alone) and cleared hard rule 10 by name: two in Jardins dels Drets Humans (silky oak, hackberry), two in Jardins de Mossen Costa i Llobera (coast coral tree, tree yucca), one at Teatre Lliure (avocado), one on Carrer de la Guardia Urbana (Japanese pagoda tree). Found a real girth/height disagreement on the silky oak between the register and a 2017 field measurement, kept both rather than picking one. Renamed Erythrina caffra's common name to 'Coast Coral Tree' to avoid colliding with Barcelona's existing Erythrina corallodendron under hard rule 9. Wrote matching Spanish translations (data/i18n/es/barcelona.json, Contract J requires full coverage or the build fails). Fixed two stale '45 more' count promises in both language versions. Build+qa.py+superlatives.py+preflight.py all clean."
+      },
+      {
+        "target": "species pages (silky-oak, avocado)",
+        "kind": "write",
+        "tokens": 0,
+        "trees": 0,
+        "note": "Session work, no dispatched pass. pagegaps.py flagged both crossing the 3-tree threshold after the Barcelona batch. Both intros written from the site's own trees (Brisbane/Setubal/Barcelona for silky oak, Malaga/Barcelona x2 for avocado), no pattern. Build+qa.py clean."
       }
     ]
   }
