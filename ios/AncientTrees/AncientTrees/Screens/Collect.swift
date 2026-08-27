@@ -488,8 +488,7 @@ struct CollectView: View {
                 // where it is useful (this one is not on the map everybody
                 // sees) and disappears where it was only in the way.
                 ForEach(sightings.yoursOnly) { s in
-                    NavigationLink(value: Route.mine(s.id)) { MineCard(sighting: s) }
-                        .buttonStyle(.plain)
+                    SheetLink(route: .mine(s.id)) { MineCard(sighting: s) }
                 }
             }
             let list = lane == .want ? wishlist : visited
@@ -803,10 +802,12 @@ struct CollectView: View {
     }
 
     private func card(_ t: Tree, heart: Bool = true) -> some View {
-        NavigationLink(value: Route.tree(t.id)) {
+        // SheetLink, not NavigationLink: this list lives in a sheet, and a
+        // link there opens on release even when the drag that released it was
+        // raising the sheet. See BottomSheet.swift.
+        SheetLink(route: .tree(t.id)) {
             TreeCard(tree: t, showHeart: heart)
         }
-        .buttonStyle(.plain)
         .accessibilityIdentifier("tree-card")
         // NO context menu. It carried two tidy-up actions and it cost the tap:
         // a context menu installs a long-press recogniser over the whole card,
@@ -872,10 +873,7 @@ struct CollectView: View {
                 Text("You can collect it by photographing it while you stand there. Trees, species and places fill your collection, and the years they have seen add up.")
                     .font(.subheadline).foregroundStyle(Brand.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
-                NavigationLink(value: Route.tree(t.id)) {
-                    TreeCard(tree: t)
-                }
-                .buttonStyle(.plain)
+                SheetLink(route: .tree(t.id)) { TreeCard(tree: t) }
                 NavigationLink(value: Route.tree(t.id)) {
                     Label("Show the way", systemImage: "arrow.turn.up.right")
                 }

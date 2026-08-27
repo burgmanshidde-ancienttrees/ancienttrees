@@ -205,13 +205,124 @@ final class Sightings {
     }
 
     private func persist() {
+        // NEVER WRITE OVER A FILE WE COULD NOT READ. This is the line that
+        // turns a bad launch into permanent loss: load() silently returned
+        // nothing, the list showed as empty, and the next thing that touched it
+        // wrote that emptiness over the only copy there is.
+        //
+        // Hidde, 2026-08-27: "ik had ook ooit bomen toegevoegd en foto's in
+        // Baarn en die zie ik niet meer, slaan we dit dan wel goed op." Whatever
+        // took his, this is how a recoverable problem becomes an unrecoverable
+        // one, and it was one `try?` away from happening to anybody.
+        guard !unreadable else { return }
         guard let d = try? JSONEncoder().encode(all) else { return }
         try? d.write(to: index)
     }
 
+    /// Set when the file exists and could not be understood. While it is true
+    /// nothing overwrites the file, so the data is still there to be salvaged
+    /// by a later version rather than gone.
+    private(set) var unreadable = false
+
+    /// Photographs on this phone with no row pointing at them. They are named
+    /// after the sighting that made them, so they can be counted and shown even
+    /// when the index that described them is broken.
+    private(set) var orphanPhotos: [String] = []
+
     private func load() {
-        guard let d = try? Data(contentsOf: index),
-              let list = try? JSONDecoder().decode([Sighting].self, from: d) else { return }
-        all = list
+        guard let d = try? Data(contentsOf: index) else {
+            // No file at all is the ordinary first launch, not a fault.
+            findOrphans()
+            return
+        }
+        if let list = try? JSONDecoder().decode([Sighting].self, from: d) {
+            all = list
+            findOrphans()
+            return
+        }
+
+        // IT DID NOT DECODE. Keep the bytes before anything else happens to
+        // them, then salvage what can be read row by row: one row that a later
+        // version wrote differently must not take the other forty with it,
+        // which is exactly what decoding the array in one go does.
+        let copy = Self.folder.appendingPathComponent("index-unreadable.json")
+        if !FileManager.default.fileExists(atPath: copy.path) {
+            try? d.write(to: copy)
+        }
+        all = Self.salvage(d)
+        unreadable = all.isEmpty
+        findOrphans()
+        // Only rewrite the index once something was actually recovered, and
+        // the copy above survives either way.
+        if !all.isEmpty { persist() }
     }
+
+    /// Read the file as plain JSON and build what each row allows, filling in
+    /// anything missing rather than throwing the row away. A sighting without a
+    /// name or a position cannot be placed on a map and is the only kind
+    /// dropped here.
+    private static func salvage(_ data: Data) -> [Sighting] {
+        guard let rows = (try? JSONSerialization.jsonObject(with: data)) as? [[String: Any]] else {
+            return []
+        }
+        let iso = ISO8601DateFormatter()
+        return rows.compactMap { r in
+            guard let lat = r["lat"] as? Double, let lng = r["lng"] as? Double else { return nil }
+            var s = Sighting(name: (r["name"] as? String) ?? "A tree you photographed",
+                             lat: lat, lng: lng)
+            if let id = r["id"] as? String, let u = UUID(uuidString: id) { s.id = u }
+            s.treeId = r["treeId"] as? String
+            s.note = (r["note"] as? String) ?? ""
+            s.species = r["species"] as? String
+            s.age = r["age"] as? String
+            s.photo = r["photo"] as? String
+            // Dates have been written two ways by JSONEncoder over this app's
+            // life, as a number of seconds and as a string, and a salvage pass
+            // that only understood one of them would date half the collection
+            // to 2001.
+            if let n = r["date"] as? Double { s.date = Date(timeIntervalSinceReferenceDate: n) }
+            else if let t = r["date"] as? String, let d = iso.date(from: t) { s.date = d }
+            if let st = r["status"] as? String, let k = Status(rawValue: st) { s.status = k }
+            return s
+        }
+    }
+
+    /// Photographs in the folder that no row mentions. Never deleted: a picture
+    /// somebody took of a tree they walked to is the least replaceable thing in
+    /// this app, and an index that lost track of it is our fault rather than
+    /// theirs.
+    private func findOrphans() {
+        let known = Set(all.compactMap(\.photo))
+        let files = (try? FileManager.default.contentsOfDirectory(atPath: Self.folder.path)) ?? []
+        orphanPhotos = files.filter { $0.hasSuffix(".jpg") && !known.contains($0) }.sorted()
+    }
+
+    /// Everything this phone holds, as one file somebody can keep. The
+    /// photographs are in it, so it is a real backup rather than a list of
+    /// names, and it is the answer to "is this saved anywhere" for as long as
+    /// these trees live only on the phone.
+    func exportArchive() -> URL? {
+        let out = FileManager.default.temporaryDirectory
+            .appendingPathComponent("my-trees-backup.json")
+        var rows: [[String: Any]] = []
+        for s in all {
+            var r: [String: Any] = ["id": s.id.uuidString, "name": s.name, "note": s.note,
+                                    "lat": s.lat, "lng": s.lng,
+                                    "date": ISO8601DateFormatter().string(from: s.date),
+                                    "status": s.status.rawValue]
+            r["treeId"] = s.treeId
+            r["species"] = s.species
+            r["age"] = s.age
+            if let f = s.photo,
+               let d = try? Data(contentsOf: Self.folder.appendingPathComponent(f)) {
+                r["photo_jpeg_base64"] = d.base64EncodedString()
+            }
+            rows.append(r)
+        }
+        guard let d = try? JSONSerialization.data(withJSONObject: rows, options: [.prettyPrinted])
+        else { return nil }
+        try? d.write(to: out)
+        return out
+    }
+
 }

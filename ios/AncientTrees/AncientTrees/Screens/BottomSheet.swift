@@ -96,6 +96,37 @@ extension View {
     }
 }
 
+/// A card inside a sheet, TAPPED rather than pressed.
+///
+/// Use this instead of NavigationLink for anything that lives in a sheet's
+/// content. It exists because of the same difference tapUnlessDragged is
+/// about, on the control people use most: below full height the list does not
+/// scroll, so a swipe up on a tree card raises the sheet, and on release the
+/// NavigationLink fires anyway and opens the tree, because a link asks only
+/// whether the finger lifted inside its bounds and a card is two hundred
+/// points tall.
+///
+/// Turning hit testing off mid-drag does NOT fix it, which was the first thing
+/// tried and photographed failing on 2026-08-27: a press SwiftUI has already
+/// begun is not cancelled by the view refusing later touches. The tap has to be
+/// a TapGesture from the start, because a TapGesture is the one that asks
+/// whether the finger stayed still.
+///
+/// Navigation goes through Navigator rather than a link, which lands in exactly
+/// the same place: the root appends it to the showing tab's path.
+struct SheetLink<Content: View>: View {
+    let route: Route
+    @Environment(Navigator.self) private var navigator
+    @ViewBuilder var content: Content
+
+    var body: some View {
+        content
+            .contentShape(.rect)
+            .onTapGesture { navigator.push = route }
+            .accessibilityAddTraits(.isButton)
+    }
+}
+
 struct BottomSheet<Header: View, Content: View>: View {
     @Binding var height: SheetHeight
     /// Which item is at the top of the list, when the content marks its items
@@ -121,6 +152,23 @@ struct BottomSheet<Header: View, Content: View>: View {
     @ViewBuilder var content: Content
 
     @State private var drag: CGFloat = 0
+    /// TRUE WHILE A FINGER IS MOVING THE SHEET, and the whole reason it exists
+    /// is that a Button does not care.
+    ///
+    /// This is the same fault the header's name row had, on the control people
+    /// actually use: at card and half height the list does not scroll, so a
+    /// swipe up on a tree card raises the sheet, and on release the card opens
+    /// the tree anyway, because the finger never left the card's bounds. Hidde
+    /// asked the question that found it (2026-08-27: "heb je dit doorgevoerd
+    /// overal waar dit component wordt gebruikt, dat is meer dan 1 plek"), and
+    /// the answer was no: the name row was one place and every card in every
+    /// sheet was the other.
+    ///
+    /// @GestureState rather than @State, because it resets itself when the
+    /// gesture ends OR is cancelled. A plain flag left true by a gesture the
+    /// system tore down would make the whole list dead until the next drag,
+    /// which is a worse bug than the one being fixed.
+    @GestureState private var dragging = false
     /// Whether the list inside is scrolled to its very top. The handoff downward
     /// is only allowed from there, because taking the gesture mid-list would
     /// yank the sheet away while somebody is reading.
@@ -191,6 +239,11 @@ struct BottomSheet<Header: View, Content: View>: View {
                 // because the sheet would not, and the two feel like one
                 // broken thing under a thumb.
                 .scrollDisabled(height != .full || handingOff)
+                // THE CANCEL, and it is UIScrollView's own rule: the moment a
+                // touch becomes a drag, the control under it stops being
+                // pressed. The drag gesture below only begins after 18 points,
+                // so a real tap never reaches this and a real drag always does.
+                .allowsHitTesting(height != .peek && !dragging)
                 // At peek the content is a PREVIEW, not a control panel. Every
                 // finger that lands here belongs to the sheet, so a swipe up
                 // raises it instead of half-raising it and opening whatever
@@ -228,6 +281,7 @@ struct BottomSheet<Header: View, Content: View>: View {
             // because a card that does not open is invisible in a screenshot.
             .simultaneousGesture(
                 DragGesture(minimumDistance: 18)
+                    .updating($dragging) { _, state, _ in state = true }
                     .onChanged { value in
                         // Claim the gesture only in the cases the rules above
                         // describe. Everything else belongs to the list.

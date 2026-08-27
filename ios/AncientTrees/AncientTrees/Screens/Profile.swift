@@ -31,6 +31,12 @@ struct ProfileView: View {
     @Environment(Navigator.self) private var navigator
     @Environment(Units.self) private var units
     @Environment(Moderation.self) private var moderation
+    @Environment(Sightings.self) private var sightings
+
+    /// Written when the screen opens rather than on the tap: ShareLink wants
+    /// something to share before the sheet appears, and a file of a few
+    /// megabytes is cheap next to a share sheet that arrives empty.
+    private var backup: URL? { sightings.exportArchive() }
 
     @State private var signingIn = false
     @State private var confirmingDelete = false
@@ -343,6 +349,35 @@ struct ProfileView: View {
                 }
                 .buttonStyle(.plain)
                 .accessibilityIdentifier("settings-edit-profile")
+                // A BACKUP, because until today the answer to "is this saved
+                // anywhere" was no. Your own trees and their photographs live
+                // in one folder on one phone: no cloud copy, no export, and
+                // nothing you could hand to a new phone. Hidde found the sharp
+                // end of that (2026-08-27: "ik had ook ooit bomen toegevoegd
+                // en foto's in Baarn en die zie ik niet meer").
+                //
+                // One file with the photographs inside it, so it is a real
+                // backup rather than a list of names, handed to the system
+                // share sheet like any other document.
+                if !sightings.all.isEmpty {
+                    Divider().padding(.leading, 48)
+                    if let file = backup {
+                        ShareLink(item: file) {
+                            HStack(spacing: 12) {
+                                Image(systemName: "square.and.arrow.up").frame(width: 20)
+                                    .foregroundStyle(Brand.moss)
+                                Text("Back up my trees").font(.callout)
+                                    .foregroundStyle(Brand.ink)
+                                Spacer()
+                                Text(sightings.all.count == 1 ? "1 tree" : "\(sightings.all.count) trees")
+                                    .font(.callout).foregroundStyle(Brand.inkSoft)
+                            }
+                            .padding(.horizontal, 16).frame(height: 48)
+                            .contentShape(.rect)
+                        }
+                        .accessibilityIdentifier("settings-backup")
+                    }
+                }
                 // BLOCKED PEOPLE, and it is here rather than buried because
                 // Apple's review looks for the undo as well as the block, and
                 // because a list you cannot find is a list you cannot manage.
