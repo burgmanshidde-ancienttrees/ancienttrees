@@ -71,6 +71,30 @@ moment of sending.
 `copycheck.py` refuses a literal count in an app string. Nothing can grep an
 external profile, which is why this is written here.
 
+## A live count is a number, not a sentence
+
+Hidde, 2026-08-27, on "1 person keeps this tree" under a tree's name: "een hele
+rare zin, zet gewoon bij thumb hoeveel mensen thumb up of down hebben gedaan
+verder niet."
+
+The sentence reads oddly for a reason worth naming, because the instinct that
+wrote it will write it again. A count wants to be prose here: singular and
+plural need different words, "1 person" and "2 people", and once you are
+choosing between two wordings you have written a sentence about a number
+instead of showing the number. And a sentence claims more than a figure does.
+"1 person keeps this tree" says something about the tree; "1" beside a heart
+says how many, which is all we know.
+
+So: **a live count belongs ON the control it is about, as a figure.** Beside the
+thumb, beside the heart, on the tab. Never a line of prose somewhere else on the
+page saying the same thing in words. That is also the convention everywhere a
+count is shown at all, from YouTube to Google Maps to a review page.
+
+Two things this does not touch. Static counts are the section above and stay
+banned outright. And a figure of ZERO is not shown: a lone 0 under a tree we
+chose to publish reads as a verdict when it is only an empty table (his own
+rule for the save count, 2026-08-26, "pas van 1 tellen").
+
 ## Before it ships
 
 `python3 scripts/copycheck.py` greps every user-facing string for these tics.
