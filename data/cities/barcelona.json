@@ -78,7 +78,7 @@
         "https://www.barcelona.cat/en/what-to-do-in-bcn/parks-and-gardens/trees-of-local-interest/arbre-d-interes-local-garrofer-parc-guell-viaductes-99400455077",
         "https://commons.wikimedia.org/wiki/File:Tronc_d%27arbre_al_mig_de_columnes_del_Parc_G%C3%BCell.jpeg"
       ],
-      "access": "Free, Park Guell's monumental zone charges general admission; the viaducts are within the free-access wooded area",
+      "access": "Paid entry, Park Guell requires a ticket for the whole park (since 2020, no free zone)",
       "transport": "Lesseps (Metro L3), 15 min walk uphill",
       "photo": {
         "url": null,
@@ -88,7 +88,8 @@
       },
       "curation_status": "flagged",
       "notes": "Access note needs on-the-ground confirmation: sources describe the viaducts as being in Park Guell's freely accessible wooded perimeter rather than the ticketed Monumental Zone, but this should be double-checked against current park signage before publishing with full confidence. Photo is historical (1904), not a modern photograph. Included because it is confirmed to be this specific tree and clearly dated, not because it shows the tree's current appearance. Photo URL fixed 2026-07-28: the stored thumb path (commons/thumb/e/e2/...) 404'd, caught by a full site-wide hash-path check against Commons' API; the real current path is 0/0a. Fetched and viewed directly, the same 1904 stereoscopic photo of a tree trunk between the viaduct's stone arches, before swapping.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "verify_notes": "Access corrected 2026-08-26 on the word of Park Guell's own administration, who answered our outreach: 'Desde 2020 para acceder a todo el parque se requiere de una entrada, y ya no existe una parte gratuita.' Our pages said the wooded area outside the Monumental Zone was free, which stopped being true in 2020. The body that manages the ground is the best source on access there is; do not put the free-perimeter claim back from an older guide."
     },
     {
       "id": "bcn_003",
@@ -108,7 +109,7 @@
         "https://ajuntament.barcelona.cat/santmarti/es/guia-del-distrito/equipamientos-por-temas/listado/garrofer-de-la-placa-de-la-natura-del-park-guell-99400455078",
         "https://guia.barcelona.cat/es/detall/garrofer-de-la-placa-de-la-natura-del-park-guell_99400455078.html"
       ],
-      "access": "Free, within Park Guell's freely accessible wooded area outside the ticketed Monumental Zone.",
+      "access": "Paid entry, Park Guell requires a ticket for the whole park (since 2020, no free zone)",
       "transport": "Lesseps (Metro L3), 15 min walk uphill",
       "photo": {
         "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/211744619/medium.jpeg",
@@ -120,7 +121,8 @@
       },
       "curation_status": "flagged",
       "notes": "Age given is for the current regrown stem only; the original tree's age before it died back or was cut is not recorded in any source found. Story states this honestly rather than implying continuity of age. Photo found 2026-07-26: an iNaturalist observation from the \"Arboles Singulares de Espana\" project, titled \"Garrofer de la Placa de la Natura del Park Guell\", the exact tree by name, 17m from this pin. Viewed directly, shows carob pods on the branches, consistent with the species.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "verify_notes": "Access corrected 2026-08-26 on the word of Park Guell's own administration, who answered our outreach: 'Desde 2020 para acceder a todo el parque se requiere de una entrada, y ya no existe una parte gratuita.' Our pages said the wooded area outside the Monumental Zone was free, which stopped being true in 2020. The body that manages the ground is the best source on access there is; do not put the free-perimeter claim back from an older guide."
     },
     {
       "id": "bcn_004",
@@ -576,7 +578,7 @@
         "https://commons.wikimedia.org/wiki/Category:Ullastre_del_Parc_G%C3%BCell",
         "https://www.barcelona.cat/en/what-to-do-in-bcn/parks-and-gardens/trees-of-local-interest"
       ],
-      "access": "Free, within Park Guell's freely accessible wooded area outside the ticketed Monumental Zone, the same as the park's other carobs.",
+      "access": "Paid entry, Park Guell requires a ticket for the whole park (since 2020, no free zone)",
       "transport": "Lesseps (Metro L3), 15 min walk uphill, or bus 24 to Carretera del Carmel",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Ullastre_del_Parc_G%C3%BCell_P1500841.jpg",
@@ -588,7 +590,8 @@
       },
       "curation_status": "flagged",
       "notes": "MERGE BLOCKER, do not publish without a decision. The register's planting year of 1771 (register_id 99400454989, catalogue number 0117-06-96, catalogued 1996) makes this tree 255 years old, older than the 250-year holm oak that barcelona.json's intro, question_answer, question_context and first FAQ all present as the oldest tree in Barcelona. The two claims cannot both stand unqualified on the same site. The distinction the story draws is real and defensible: the oak was ring-dated by dendrochronologists, the olive carries an unsupported register estimate. But merging this tree means either rewording the oldest-tree copy to say 'the oldest tree in Barcelona whose age has actually been measured', or holding the tree back. That is a human call, not a run's. FLAGGED for the age, which is single-sourced and unmeasured; hence the deliberately wide age_min. Species field uses the canonical 'Olive (Olea europaea)' per hard rule 9 so it groups with the other 13 olives on the site; the register records it as Olea europaea var. sylvestris and the story says it is the wild form. Dimensions differ between the register (17 m, girth 2.9 m, crown 21 m) and bcnsostenible (14 m, girth 1.6 m, crown 13 m), a very wide disagreement inside one catalogue, so ranges are used and the girth is left out. Pin confirmed three ways: register 41.414909/2.154906, OSM node 4618688164, and the EXIF GPS of the Commons photograph at 41.414910/2.154910. Photo viewed directly before approval: full olive crown above a Park Guell stone wall, daylight, colour, two people in frame for scale, tree occupies the centre band.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "verify_notes": "Access corrected 2026-08-26 on the word of Park Guell's own administration, who answered our outreach: 'Desde 2020 para acceder a todo el parque se requiere de una entrada, y ya no existe una parte gratuita.' Our pages said the wooded area outside the Monumental Zone was free, which stopped being true in 2020. The body that manages the ground is the best source on access there is; do not put the free-perimeter claim back from an older guide."
     },
     {
       "id": "bcn_017",
@@ -1134,7 +1137,7 @@
         "https://www.barcelona.cat/en/what-to-do-in-bcn/parks-and-gardens/trees-of-local-interest/arbre-d-interes-local-llentiscle-accessos-a-l-hort-de-l-avi-des-del-carrer-farigola-99400455063",
         "https://bcnsostenible.cat/web/punt/llentiscle-a-lhort-de-lavi"
       ],
-      "access": "Free. Stands right at a public access path into Park Guell's freely accessible wooded perimeter (the back entrance off Carrer de la Farigola / Carrer del Torrent del Remei), separate from both the ticketed Monumental Zone and the adjoining Hort de l'Avi allotment garden itself, which is a gated community garden for over-65 residents and not where the tree stands.",
+      "access": "Paid entry, Park Guell requires a ticket for the whole park (since 2020). This one stands at the rear access off Carrer del Torrent del Remei and we have asked the park whether that spot falls inside the fence",
       "transport": "Vallcarca or Lesseps (Metro L3), roughly 15-20 min walk uphill via Carrer de la Farigola.",
       "photo": {
         "url": null,
@@ -1143,7 +1146,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "verify_notes": "Access corrected 2026-08-26 on the word of Park Guell's own administration, who answered our outreach: 'Desde 2020 para acceder a todo el parque se requiere de una entrada, y ya no existe una parte gratuita.' Our pages said the wooded area outside the Monumental Zone was free, which stopped being true in 2020. The body that manages the ground is the best source on access there is; do not put the free-perimeter claim back from an older guide."
     },
     {
       "id": "bcn_034",
