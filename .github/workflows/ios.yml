@@ -75,6 +75,12 @@ jobs:
       - name: Do the two screen lists agree
         run: python3 scripts/appsweep.py --check-lists
 
+      # Cheaper still, and it catches the one fault that stops a release before
+      # review even starts: an app icon with an alpha channel is refused by App
+      # Store Connect on upload. Ours had one, unnoticed, until 2026-08-27.
+      - name: Will Apple take the app icon
+        run: python3 scripts/icon_check.py
+
       - name: Which Xcode
         run: |
           # THE NEWEST ONE ON THE RUNNER, and say which, out loud.

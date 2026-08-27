@@ -36,7 +36,12 @@ struct MapTab: View {
     /// well and fails for reasons that have nothing to do with what it covers.
     /// The gesture itself is still asserted, by the test that is about it.
     @State private var sheetHeight: SheetHeight =
-        ProcessInfo.processInfo.arguments.contains("-sheet=full") ? .full : .peek
+        // -sheet=half as well as -sheet=full, since 2026-08-27: the App Store
+        // screenshot of the map wants the shape a person actually uses, a card
+        // you can read over a map you can see, and peek shows a sliver of one
+        // photograph.
+        ProcessInfo.processInfo.arguments.contains("-sheet=full") ? .full
+            : (ProcessInfo.processInfo.arguments.contains("-sheet=half") ? .half : .peek)
     @State private var query = ""
     /// When the map was last moved on purpose, so the list's own settling
     /// cannot move it back. See fly().
