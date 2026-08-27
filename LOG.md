@@ -11,6 +11,20 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 <!-- archive-index -->
 
 
+## 2026-08-27 (session) - Finished a stalled claim, closed a ledger gap, opened Cologne
+
+This session was the second attempt in a window whose first attempt stopped after 6.5 minutes with a standing claim on nijmegen and nothing shipped. Finished what it left behind, then kept going.
+
+**Nijmegen 18 to 20.** The claim's own staged leads (Landgoed Brakkenstein) verified clean: a horse chestnut and a beech, both pinned within 3 metres by agreement between the national LRMB register and Gemeente Nijmegen's own municipal tree dataset, which disagree on planting year for both (recorded as open disputes, not resolved by picking a winner). Also strengthened an existing tree (Silver Maple, Sumatraplein) with a second source the same municipal dataset supplied. Fixed the page's count copy (18 to 20) in English and Dutch. Claim released.
+
+**register-scouting.json had a gap that was costing every run a repeat investigation.** `scout_next.py --target` kept pointing at Palma de Mallorca as unscouted, but the Balearic register has been imported since 2026-08-06 and Palma opened from it on 2026-08-15; the ledger just never got a line for it. Recorded the verdict (finished at 5, the rest is private land or past the day-trip boundary). This immediately unblocked the ladder onto real work: Toronto.
+
+**Toronto 5 to 6.** Verified Zhelevo, a roughly 300-year red oak in Etobicoke that predates European settlement of the Humber River, now the city's oldest tree (previously the Kew Gardens oak at ~220). Toronto City Council bought the private lot beside it in 2020 and demolished the house rather than lose the tree, after a 1,300-donor campaign; the city is building a public parkette there now, due spring 2027, so the tree is honestly labeled street-view-only for now. Updated the page's oldest-tree question, FAQ and hero/oldest ids to match. Also resolved four other staged leads (Ajax, Kleinburg, Maple, Woodbridge) that an earlier night run had flagged for a real transit-time check: all four are 45+ minutes from downtown by public transit, well past the day-trip boundary, so none shipped; recorded the actual travel times so nobody re-checks this from scratch.
+
+**Opened Cologne, new city, from zero.** One of the 17 cities Hidde named for from-zero research, no register imported for Germany/NRW (scouted, verdict: empty). Found five natural monuments via the German-Wikipedia Naturdenkmal-list join (same technique that worked for Krakow, Warsaw, Frankfurt): a fourteen-trunked Caucasian wingnut at the Flora botanical garden, a plane (5.30m girth, the thickest trunk this pass found) and an oak about 100m apart in a former country-estate park now surrounding a hospital, a Turkey oak in the Volksgarten likely among the ~400 mature trees moved in for its 1889 opening, and a Moltke lime by the Stadtwald's rowing pond (flagged, single-sourced). No age is documented for any of the five, which the question page says plainly rather than guessing. Held out: two Cedar of Lebanon entries where one specimen is confirmed to have fallen in 2020 and it could not be established which (if either) survives, several avenue/street-tree registrations that fail the one-collectible-point test, and a hospital courtyard tree with no evidence of public access. `city_queue.py` and `city_names.py` picked the new city up automatically. Claim released.
+
+Every merge went through a full local build, `preflight.py`, `qa.py` and `superlatives.py` before pushing; all clean. Nothing outstanding for Hidde.
+
 ## 2026-08-26 - Night run 2026-08-26 23:10 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 28.3 minutes of its 120 minute window, 222 turns, 37 commands refused by the allowlist, ended clean (success). 2 tree(s) reached data/cities across 2 city file(s), and the run still wrote no log entry of its own. Claims left behind: rome, alicante, caserta, which block the top of the queue until they expire.
