@@ -33,6 +33,8 @@ Two things you asked for after the first round: make the gate blocking, and test
 
 That is the argument for the whole morning in one paragraph: there were two broken gates at once and nobody was looking at either.
 
+**And then the gap none of the plan had covered: the website can break every installed app, and nothing would notice.** The app reads five feeds off ancienttrees.app and this site deploys several times a day. Nothing checked that the two still fit. The failure is worse than a crash because it is silent: the app keeps the data it already had, so nobody reports anything while every phone quietly stops updating. Two checks now, and neither holds a copy of the other's knowledge. The app's own decoder runs against the live feeds in its test suite, strictly, including the two feeds the app itself forgives. And on every deploy, the feeds about to be published are compared against the ones that are live, so a field that vanished, changed type or started coming back empty stops the deploy. Adding a field is always fine and happens weekly. Both were proved by breaking them on purpose first, which caught a weakness in my own check: it counted whether a field appeared anywhere, and five broken trees among eighteen hundred are enough to make the app give up on all of them.
+
 **Still not done, and they are yours or next:** the largest accessibility text and dark mode in the screen sweep, a fresh-eyes reviewer for the app, TestFlight, and a release you have walked through once before you need to do it under pressure.
 
 
