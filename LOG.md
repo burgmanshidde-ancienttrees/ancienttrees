@@ -11,6 +11,10 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 <!-- archive-index -->
 
 
+## 2026-08-27 (night run) - Naples 20 to 22, plus a leads.py fix that saved Amsterdam from a repeat mistake
+
+Third city off rule 1(a). Between Bucaco and Naples, sampling Amsterdam's 5 READY leads turned up something different from the usual pattern: they were the exact five trees Hidde pulled from the published city on 2026-08-23 for exceeding the paid-entry ratio, still fully verified and one merge away from silently reproducing the 39-tree/10-paid state he rejected. Fixed `leads.py` to hold anything carrying a `pulled_from_city` field (also caught 2 Leiden entries with the same problem); READY drops from 74 to 61 corpus-wide. Then Naples: 2 of 6 READY leads shipped on real merit, the other 4 checked and confirmed genuinely still blocked (a register girth disagreement, two unconfirmed institutional-access questions, one open species-identity conflict). Build, qa.py, superlatives.py, preflight.py, pagegaps.py all clean throughout. Pushed (`38246b82`).
+
 ## 2026-08-27 (night run) - Bucaco 9 to 14, same rule-1(a) sweep continued
 
 After Barcelona, moved to Bucaco (10 READY leads, all ICNF-register-sourced). 5 shipped, held back only for now-forbidden reasons; 1 left alone (a register entry with a physically impossible height/girth pairing, a real data error rather than a taste call). Confirmed the new redwood is not one of the two Santo Elias redwoods the forest's own biologist had removed as genuinely unreachable in 2026-08-21, a different location entirely. Caught and fixed two hard-rule-9 species-name collisions and a stale "three sequoias" line that had survived that same removal uncorrected. Build (2996 pages), qa.py, superlatives.py, preflight.py, pagegaps.py all clean. Pushed (`20f1e155`).
