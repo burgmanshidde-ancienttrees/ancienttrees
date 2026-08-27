@@ -92,8 +92,10 @@ public final class Moderation {
     public func load(me: String?, token: String?) async {
         guard let me, let token else { return }
         struct Row: Decodable { let blocked: String }
-        var r = URLRequest(url: Submission.url.deletingLastPathComponent()
-            .appendingPathComponent("blocks?select=blocked&blocker=eq.\(me)"))
+        // See Profiles.request: appending a path component encodes the "?" and
+        // the whole query becomes part of the table name.
+        var r = URLRequest(url: URL(string: Submission.url.deletingLastPathComponent()
+            .absoluteString + "blocks?select=blocked&blocker=eq.\(me)")!)
         r.setValue(Submission.key, forHTTPHeaderField: "apikey")
         r.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
         guard let (data, resp) = try? await URLSession.shared.data(for: r),
@@ -111,8 +113,8 @@ public final class Moderation {
 
     private func post(_ path: String, body: Data?, token: String,
                       method: String = "POST", prefer: String? = nil) async -> Bool {
-        var r = URLRequest(url: Submission.url.deletingLastPathComponent()
-            .appendingPathComponent(path))
+        var r = URLRequest(url: URL(string: Submission.url.deletingLastPathComponent()
+            .absoluteString + path)!)
         r.httpMethod = method
         r.setValue(Submission.key, forHTTPHeaderField: "apikey")
         r.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")

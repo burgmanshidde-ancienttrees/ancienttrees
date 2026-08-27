@@ -26,6 +26,9 @@ struct ContentView: View {
     @State fileprivate var entitlement = Entitlement()
     /// Reporting and blocking, which the social half cannot ship without.
     @State fileprivate var moderation = Moderation()
+    /// What this account has already said about a tree, read from the account
+    /// rather than remembered by this phone.
+    @State fileprivate var myVotes = MyVotes()
     @State private var location = LocationProvider()
     @State fileprivate var account = Account()
     @State fileprivate var nudge = Nudge()
@@ -576,6 +579,28 @@ struct ContentView: View {
             }
             Sightings.syncGone = { [account] id in
                 Task { await SightingSync.remove(account: account, id: id) }
+            }
+            // Kilometres or miles follows the account too, so it does not stay
+            // behind on an old phone.
+            Units.sync = { [account, profiles] u in
+                Task {
+                    guard let t = await account.freshToken(),
+                          let uid = account.session?.userId else { return }
+                    await profiles.saveUnits(u == .metric ? "km" : "mi",
+                                             userId: uid, token: t)
+                }
+            }
+            // And the votes this account has already cast, written into the
+            // same place the tree pages already read, so the local copy becomes
+            // a cache of the account rather than the only copy there is.
+            if account.isSignedIn {
+                await myVotes.load(account: account)
+                for (tree, vote) in myVotes.byTree {
+                    UserDefaults.standard.set(vote, forKey: "at_worthit_\(tree)")
+                }
+                if let remote = profiles.me?.units {
+                    units.unit = remote == "mi" ? .imperial : .metric
+                }
             }
         }
     }
