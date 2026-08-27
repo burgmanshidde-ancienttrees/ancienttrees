@@ -4,7 +4,14 @@
 import type { CollectionEntry } from "astro:content";
 import { haversineKm } from "./walks";
 // One slug rule, shared with the build integration; see ./slug.
-export { slugify, legacySlugify } from "./slug";
+//
+// IMPORTED as well as re-exported, and the two lines are not the same thing.
+// `export ... from` forwards the name to anybody importing this file and does
+// NOT bring it into this file's own scope, so slugify() below was undefined at
+// runtime and every build died with "slugify is not defined" (2026-08-27).
+// Nothing caught it because astro build does not typecheck; astro check does.
+import { slugify, legacySlugify } from "./slug";
+export { slugify, legacySlugify };
 
 export type Tree = CollectionEntry<"cities">["data"]["trees"][number];
 export type CityData = CollectionEntry<"cities">["data"];
