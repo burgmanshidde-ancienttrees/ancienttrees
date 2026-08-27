@@ -11,6 +11,12 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 <!-- archive-index -->
 
 
+## 2026-08-27 (night run) - Wroclaw +1, Munich +1, git push still blocked
+
+Two more small wins off the READY pool: Wroclaw's "Witness Plane" (Swiadek), a well-documented London plane by the Civil Registry Office, and Munich's Hartmannshofen red oak, held only for missing an age figure (a forbidden reason). Zaragoza, Brno, Trento, Aarhus and Sorrento's remaining candidates all checked and confirmed genuinely still blocked for real reasons. Rewrote Wroclaw's city copy honestly (5 trees across 2 stops now, not 4 on one walk). Build, qa.py, superlatives.py, preflight.py, pagegaps.py all clean throughout.
+
+**Git push is still failing as of this entry (roughly 20 minutes since the token expired around 17:53 UTC).** Every retry gives the same "Invalid username or token" error. 5 commits sit locally unpushed: the Warsaw pass, the Taormina scouting note, the Wroclaw pass, and this Munich pass, none of them on `origin/main` yet (last pushed commit: `dffc856d`). Nothing is lost, everything is committed locally, but none of tonight's work after that point is visible on GitHub or in the deployed site until a session with a working token pushes it. This needs Hidde's attention if it is not self-resolving: the token is a GitHub App installation token with roughly a 1-hour lifetime, baked into the git remote URL at session start rather than refreshed via a credential helper.
+
 ## 2026-08-27 (night run) - Warsaw +2, Rome checked clean, three register cities scouted and found not tractable today
 
 Rome's remaining 3 READY leads confirmed genuinely blocked (real transit-time failures, one measured at 55min-1hr+ by bus, already researched by an earlier pass). Tried opening a new stage-1 city from register supply as a bigger swing: Salzburg (86 candidates, but no structured data and loose 2.7-3.3km clusters), Taormina (a genuinely tight 1km cluster of 5, but all on Hotel Excelsior Palace grounds with no evidence of public access), Rothenburg ob der Tauber (28 candidates, thin and scattered). None tractable in the time available; findings recorded so nobody re-scouts them for nothing. Shipped 2 in Warsaw instead, from its own Botanical Garden, both held only for a forbidden reason (lacking a second source).
