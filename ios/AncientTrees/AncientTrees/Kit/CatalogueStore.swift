@@ -86,7 +86,7 @@ public final class CatalogueStore {
         defer { isRefreshing = false }
 
         let outcome = await Sync.check(localVersion: catalogue?.version) { url in
-            try await URLSession.shared.data(from: url).0
+            try await Net.data(from: url).0
         }
         guard case .updated = outcome else { return }
 
@@ -108,7 +108,7 @@ public final class CatalogueStore {
     private func fetch(_ url: URL) async -> Data? {
         var r = URLRequest(url: url)
         r.timeoutInterval = 30      // a hang costs more than a refusal
-        return try? await URLSession.shared.data(for: r).0
+        return try? await Net.data(for: r).0
     }
 
     // MARK: - disk

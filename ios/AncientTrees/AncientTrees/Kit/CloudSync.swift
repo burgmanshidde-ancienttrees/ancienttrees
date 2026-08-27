@@ -99,7 +99,7 @@ public enum CloudSync {
 
     private static func rows(_ path: String, token: String) async -> [[String: Any]] {
         let r = Supa.request(path, method: "GET", token: token)
-        guard let (data, _) = try? await URLSession.shared.data(for: r),
+        guard let (data, _) = try? await Net.data(for: r),
               let j = try? JSONSerialization.jsonObject(with: data) as? [[String: Any]] else { return [] }
         return j
     }
@@ -107,12 +107,12 @@ public enum CloudSync {
     private static func post(_ path: String, token: String, body: [[String: Any]]) async {
         let r = Supa.request(path, token: token, body: body,
                              prefer: "resolution=merge-duplicates,return=minimal")
-        _ = try? await URLSession.shared.data(for: r)
+        _ = try? await Net.data(for: r)
     }
 
     private static func delete(_ path: String, token: String) async {
         let r = Supa.request(path, method: "DELETE", token: token, prefer: "return=minimal")
-        _ = try? await URLSession.shared.data(for: r)
+        _ = try? await Net.data(for: r)
     }
 
     private static let dayFormatter: DateFormatter = {

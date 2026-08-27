@@ -161,7 +161,7 @@ enum Avatars {
         r.setValue("image/jpeg", forHTTPHeaderField: "Content-Type")
         r.setValue("true", forHTTPHeaderField: "x-upsert")
         r.httpBody = jpeg
-        guard let (body, response) = try? await URLSession.shared.upload(for: r, from: jpeg),
+        guard let (body, response) = try? await Net.upload(for: r, from: jpeg),
               (200..<300).contains((response as? HTTPURLResponse)?.statusCode ?? 0) else {
             // WHY, not just no. A failure that says nothing is a failure nobody
             // can fix, and this one cost an afternoon of guessing between an

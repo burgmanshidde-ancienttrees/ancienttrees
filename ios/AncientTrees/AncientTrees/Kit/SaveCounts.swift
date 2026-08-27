@@ -42,7 +42,7 @@ public final class SaveCounts {
         req.httpBody = Data("{}".utf8)
         struct Row: Decodable { let tree_id: String; let saves: Int }
         do {
-            let (data, response) = try await URLSession.shared.data(for: req)
+            let (data, response) = try await Net.data(for: req)
             guard (response as? HTTPURLResponse)?.statusCode == 200 else { return }
             let rows = try JSONDecoder().decode([Row].self, from: data)
             counts = Dictionary(rows.map { ($0.tree_id, $0.saves) },

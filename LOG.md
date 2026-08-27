@@ -11,6 +11,28 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 <!-- archive-index -->
 
 
+## 2026-08-27 (session, evening) - The app is tested where it actually fails, and two real bugs fell out of it
+
+Hidde asked the question this should have been asked weeks ago: "ik heb niet het idee dat we de app heel actief aan het stress testen zijn." He was right, and the reason was structural rather than lazy.
+
+**The whole app could only be tested on the path where everything works.** Eighteen network calls sat in twelve files, all on `URLSession.shared`, which cannot be taken away from: its configuration is immutable and it ignores a registered URLProtocol. So no test could ever ask what this app does in a wood with no bereik, on a hotel wifi that accepts a connection and then says nothing, against a Supabase answering 500, or with a session left alone for three weeks. Those are not edge cases for a walking app, they are Tuesday.
+
+**Now there is one door, `Kit/Net.swift`, and a fault injector behind it.** In a release build the file is a pass-through to `URLSession.shared` and `Faults.swift` is not compiled at all, so there is nothing to strip before shipping. In a debug build one launch argument produces each failure: `-fault=offline`, `-fault=slow` (eight seconds of nothing), `-fault=server` (500), `-fault=expired` (401, which is what a stale session is), `-fault=garbage` (broken JSON). A unit test can be more specific still and hand a named endpoint a canned answer, then ask what the app actually sent back.
+
+**Tests went from 22 to 44, and the new half is all failure paths.** Nine on the account and the sync, eight on the collection, five walking the app with the network taken away. The collection ones matter most: `Saved` carries the two independent lists you corrected on 26 August, it is the one thing in this app a person cannot get back, and it had never had a test.
+
+**Two real bugs, both found by the tests rather than by reading.**
+
+1. **No signal signed you out.** Every failed token refresh took one branch and that branch cleared the Keychain, so opening the app an hour after signing in, somewhere without reception, asked you to sign in again. In precisely the place the app is for. It now separates "the server answered and the answer was no" from "nobody answered at all": the first is a real sign-out, the second keeps the session and tries again later.
+
+2. **The sign-out confirmation had no Cancel button.** On iOS 26 it came up as a popover halfway up the screen, and SwiftUI drops the cancel button from a popover because tapping outside is meant to do that job. So the only control on a destructive confirmation was the red "Sign out", with nothing to tap to back out. It is an alert now, both buttons, which is what the delete-account confirmation two lines below it already was.
+
+The second one is worth a sentence on its own: **the flow walk had been failing on exactly this for days and nobody read the verdict.** iOS CI has not been green since 24 August, so the one layer that could see it was shouting into a room with nobody in it. A gate nobody looks at is a gate nobody has, which is a lesson this file has now recorded twice.
+
+**What this deliberately does not do.** It cannot feel a stutter, it cannot crash on an iOS version this Mac does not have, and it cannot tell you whether Apple will approve the listing. All three are TestFlight's job, which Hidde confirmed today is going ahead, and that is why the machine work went to the failure paths instead of trying to imitate a phone.
+
+**Next, in the order that removes the most launch-day pain:** a stress pass that taps at random for ten minutes looking for crashes, the largest accessibility text in the screenshot sweep, and a fresh-eyes reviewer for the app, which CLAUDE.md has named as the honest gap for a week.
+
 ## 2026-08-27 (session, late) - The bug that had been there all along, and everything now follows the account
 
 **A query was being eaten, and three features had never once worked.** Hidde

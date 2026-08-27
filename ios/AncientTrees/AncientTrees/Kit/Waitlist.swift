@@ -36,7 +36,7 @@ public enum Waitlist {
             "source": "ios-app:" + reason,
             "email": email,
         ])
-        guard let (_, resp) = try? await URLSession.shared.data(for: r),
+        guard let (_, resp) = try? await Net.data(for: r),
               let http = resp as? HTTPURLResponse else { return false }
         return (200..<300).contains(http.statusCode)
     }

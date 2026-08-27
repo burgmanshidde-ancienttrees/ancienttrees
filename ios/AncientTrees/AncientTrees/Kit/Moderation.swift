@@ -98,7 +98,7 @@ public final class Moderation {
             .absoluteString + "blocks?select=blocked&blocker=eq.\(me)")!)
         r.setValue(Submission.key, forHTTPHeaderField: "apikey")
         r.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
-        guard let (data, resp) = try? await URLSession.shared.data(for: r),
+        guard let (data, resp) = try? await Net.data(for: r),
               let http = resp as? HTTPURLResponse, (200..<300).contains(http.statusCode),
               let rows = try? JSONDecoder().decode([Row].self, from: data) else { return }
         blocked = Set(rows.map(\.blocked))
@@ -121,7 +121,7 @@ public final class Moderation {
         r.setValue("application/json", forHTTPHeaderField: "Content-Type")
         r.setValue(prefer ?? "return=minimal", forHTTPHeaderField: "Prefer")
         r.httpBody = body
-        guard let (_, resp) = try? await URLSession.shared.data(for: r),
+        guard let (_, resp) = try? await Net.data(for: r),
               let http = resp as? HTTPURLResponse else { return false }
         return (200..<300).contains(http.statusCode)
     }

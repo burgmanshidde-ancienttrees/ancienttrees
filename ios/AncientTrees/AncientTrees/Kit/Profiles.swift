@@ -143,7 +143,7 @@ public final class Profiles {
     }
 
     private func send(_ r: URLRequest) async throws -> Data {
-        let (data, response) = try await URLSession.shared.data(for: r)
+        let (data, response) = try await Net.data(for: r)
         let code = (response as? HTTPURLResponse)?.statusCode ?? 0
         guard (200..<300).contains(code) else {
             throw NSError(domain: "profiles", code: code)
