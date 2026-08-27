@@ -1,0 +1,69 @@
+#!/bin/sh
+# Refuse to push app code that is already known to be broken.
+#
+# Written 2026-08-27, the other half of the alarm in scripts/brief.py. That one
+# makes a red gate impossible to walk past; this one stops the red from being
+# created in the first place, for the faults a machine can see in under a
+# second.
+#
+# WHAT IT DELIBERATELY DOES NOT DO: build the app or run the tests. That is two
+# to five minutes, every push, and a hook that slow is a hook everybody bypasses
+# within a week. The slow half is CI's job and the brief now makes its verdict
+# unmissable. This is only the checks that cost nothing:
+#
+#   netcheck    every network call goes through Kit/Net.swift, so every one of
+#               them can have the network taken away by a test
+#   check-lists the screen sweep and the layout gate agree on the screen list
+#   icon_check  the app icon has no alpha channel, which App Store Connect
+#               refuses on upload before review even starts
+#
+# It only runs when the push actually touches the app, so a night run pushing
+# trees never sees it.
+#
+# Enable it once per clone:  git config core.hooksPath scripts/hooks
+# Skip it in an emergency:   git push --no-verify
+
+ROOT=$(git rev-parse --show-toplevel)
+cd "$ROOT" || exit 0
+
+ZERO="0000000000000000000000000000000000000000"
+CHANGED=""
+
+# git hands us "local_ref local_sha remote_ref remote_sha" per ref being pushed.
+while read -r _local_ref local_sha _remote_ref remote_sha; do
+    [ "$local_sha" = "$ZERO" ] && continue          # deleting a branch
+    if [ "$remote_sha" = "$ZERO" ]; then
+        base=$(git rev-parse origin/main 2>/dev/null) || base=""
+    else
+        base="$remote_sha"
+    fi
+    [ -z "$base" ] && base="origin/main"
+    CHANGED="$CHANGED
+$(git diff --name-only "$base" "$local_sha" 2>/dev/null)"
+done
+
+echo "$CHANGED" | grep -qE '^(ios/|scripts/(app|netcheck|icon_check|layout_rules))' || exit 0
+
+fail=0
+for check in \
+    "scripts/netcheck.py" \
+    "scripts/appsweep.py --check-lists" \
+    "scripts/icon_check.py"
+do
+    # shellcheck disable=SC2086
+    if ! out=$(python3 $check 2>&1); then
+        echo ""
+        echo "pre-push: $check says no"
+        echo "$out" | sed 's/^/  /'
+        fail=1
+    fi
+done
+
+if [ "$fail" = 1 ]; then
+    echo ""
+    echo "Nothing was pushed. Fix the above, or 'git push --no-verify' if you"
+    echo "know what you are doing and are pushing the fix for it."
+    exit 1
+fi
+
+exit 0
