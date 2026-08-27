@@ -11,6 +11,12 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 <!-- archive-index -->
 
 
+## 2026-08-27 (night run) - Warsaw +2, Rome checked clean, three register cities scouted and found not tractable today
+
+Rome's remaining 3 READY leads confirmed genuinely blocked (real transit-time failures, one measured at 55min-1hr+ by bus, already researched by an earlier pass). Tried opening a new stage-1 city from register supply as a bigger swing: Salzburg (86 candidates, but no structured data and loose 2.7-3.3km clusters), Taormina (a genuinely tight 1km cluster of 5, but all on Hotel Excelsior Palace grounds with no evidence of public access), Rothenburg ob der Tauber (28 candidates, thin and scattered). None tractable in the time available; findings recorded so nobody re-scouts them for nothing. Shipped 2 in Warsaw instead, from its own Botanical Garden, both held only for a forbidden reason (lacking a second source).
+
+**Git push started failing around 17:53 UTC**: the session's push token (a ~1-hour GitHub App installation token baked into the remote URL) expired mid-run. `git push` now fails with "Invalid username or token" on every retry since. Commits are still happening locally; nothing is lost, but nothing has reached `origin/main` since commit `dffc856d`. Continuing to work and retrying push periodically; if this is still broken when the run ends, the local commits need a session that can push (or a fresh token) to land.
+
 ## 2026-08-27 (night run) - Paris +1, Vienna and Perugia checked clean
 
 Continued rule 1(a) down the READY list. Vienna (5 candidates) and Perugia (1) both checked out as genuinely still blocked, none of it a forbidden reason: dwarf ornamental cultivars, unresolved courtyard access at Naturdenkmal addresses, a cedar sitting right at the edge of a schoolyard with no way to tell street from grounds. Recorded each so a future pass reads the answer instead of re-running the search. Paris shipped 1 of 3 (a Turkey Oak held only for lacking a second source), left 2 genuinely blocked (a multi-year construction closure, an unconfirmed tree identity). Wrote the French translation. Build, qa.py, superlatives.py, preflight.py, pagegaps.py all clean. Pushed (`2d378d0c`).
