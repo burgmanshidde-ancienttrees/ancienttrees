@@ -50,7 +50,7 @@
       "lat": 40.87666,
       "lng": 14.25056,
       "status": "lead",
-      "why": "540 cm girth and 19 m, the fourth largest registered tree in Naples and inside the free park on the northern walk. Single-sourced: the national register only, and the museum's own page on its monumental trees does not include it. It would also be the one tree here with a real seasonal peak, the large cream flowers in late spring, so it is worth a second source hunt."
+      "why": "540 cm girth and 19 m, the fourth largest registered tree in Naples and inside the free park on the northern walk. Single-sourced: the national register only, and the museum's own page on its monumental trees does not include it. It would also be the one tree here with a real seasonal peak, the large cream flowers in late spring, so it is worth a second source hunt. UPDATE 2026-08-27: checked further. Campania's regional register (scheda_248, agricoltura.regione.campania.it) gives a materially different girth for what appears to be the same specimen (near-identical coordinates 40.876667,14.250558): 303cm and 13.5m, age ~150 years, versus the national MASAF register's 540cm/19m. A 1.78x girth disagreement, the same shape of problem already blocking the Plane of the Pheasantry above. The museum's own official page (capodimonte.cultura.gov.it/gli-alberi-monumentali-del-real-bosco-di-capodimonte/) lists 6 monumental trees and does not include this Magnolia at all. Also worth noting: the 'first Magnolia grandiflora in Europe' claim sometimes attached to Capodimonte's magnolia is NOT supported by the regional register's own text, which explicitly does not make that claim; do not add it if this tree ships later. Still not shippable on this data."
     },
     {
       "name": "The Camphor of the Sant'Andrea delle Dame Cloister",
@@ -89,8 +89,8 @@
       "species": "Phytolacca dioica",
       "lat": 40.81108,
       "lng": 14.19794,
-      "status": "lead",
-      "why": "627 cm and only 10 m tall, the ombu, a South American giant herb rather than a true tree, which builds an enormous swollen soft-wooded base. Visually one of the strangest things in the register. Single-sourced, and out at Posillipo with nothing else near it."
+      "status": "resolved",
+      "why": "627 cm and only 10 m tall, the ombu, a South American giant herb rather than a true tree, which builds an enormous swollen soft-wooded base. Visually one of the strangest things in the register. Single-sourced, and out at Posillipo with nothing else near it. [RESOLVED 2026-08-27, delivered as nap_021]"
     },
     {
       "name": "The Nolina of the Orto Botanico",
@@ -105,8 +105,8 @@
       "species": "Brahea roezlii",
       "lat": 40.861089,
       "lng": 14.26175,
-      "status": "lead",
-      "why": "190 cm and 4 m, registered by both MASAF (33/F839/NA/15) and Campania (scheda 164) in agreement. Left out of the walk on merit rather than evidence: it is the smallest of the seven individually registered specimens, it would be a third palm on a walk that already has the Jubaea, and it says nothing the Jubaea does not say better. One loose end if it is ever picked up: the registers call it Brahea roezlii while the garden's own palmeto page lists only Brahea armata and Brahea edulis, and roezlii is usually treated as a form of armata."
+      "status": "resolved",
+      "why": "190 cm and 4 m, registered by both MASAF (33/F839/NA/15) and Campania (scheda 164) in agreement. Left out of the walk on merit rather than evidence: it is the smallest of the seven individually registered specimens, it would be a third palm on a walk that already has the Jubaea, and it says nothing the Jubaea does not say better. One loose end if it is ever picked up: the registers call it Brahea roezlii while the garden's own palmeto page lists only Brahea armata and Brahea edulis, and roezlii is usually treated as a form of armata. [RESOLVED 2026-08-27, delivered as nap_022]"
     }
   ],
   "blocked": [
