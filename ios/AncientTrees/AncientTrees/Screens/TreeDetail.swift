@@ -973,14 +973,22 @@ struct TreeDetail: View {
         .padding(.horizontal, 20)
         .padding(.bottom, 8)
         .padding(.top, 10)
-        // Opaque, with a short fade above it. At 96 percent the story showed
-        // through the bar as ghost text, which reads as a rendering fault
-        // rather than as translucency.
+        // OPAQUE, WITH A HAIRLINE, and no fade at all.
+        //
+        // The fade was the second attempt at this and it had the same fault as
+        // the first, smaller. At 96 percent opacity the story showed through
+        // the whole bar as ghost text; with an 18 point gradient above it, the
+        // one line of story that happens to sit in that band is drawn at half
+        // strength THROUGH the top of the green button, which reads as a
+        // rendering fault rather than as depth. The flow walk photographed it
+        // on the first tree it opened (2026-08-27).
+        //
+        // A solid bar with a hairline over it is what Apple Maps, Google Maps
+        // and AllTrails all do with a bottom action bar, and it cannot produce
+        // half a letter anywhere.
         .background(alignment: .top) {
             VStack(spacing: 0) {
-                LinearGradient(colors: [Brand.ground.opacity(0), Brand.ground],
-                               startPoint: .top, endPoint: .bottom)
-                    .frame(height: 18)
+                Brand.hairline.frame(height: 0.5)
                 Brand.ground
             }
             .ignoresSafeArea(edges: .bottom)
