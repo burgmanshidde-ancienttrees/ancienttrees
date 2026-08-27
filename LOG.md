@@ -11,6 +11,26 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 <!-- archive-index -->
 
 
+## 2026-08-27 (session, afternoon) - Moderation, crash reporting, a proven deletion, and one component instead of three
+
+The morning's entry is below. This is what followed, all pushed.
+
+**FOR HIDDE, what is still yours:** create the App Store Connect record (every field is written out in APP_STORE_LISTING.md, TestFlight included, with the character counts done and the screenshots waiting in `out/appstore/`), and work through part 2 of RELEASE_CHECKLIST.md, which needs a real phone: no network, location denied, camera denied, the largest text, and one run on cellular data. Also: `~/.ancienttrees-supabase.env` still holds a service key, which you can delete now that the deletion test has run.
+
+**Account deletion is proven rather than designed, and getting there found three faults.** The test written in the morning was run for the first time and failed on every row. (1) Supabase refuses a delete against `storage.objects` from SQL, and the morning's own `delete_user()` tried, so the function rolled back and NOTHING was deleted, not even the account: the button was dead for the hour it was live. (2) The avatars bucket had a policy to upload a picture and none to remove one, so the file outlived its owner, publicly readable at its old address. (3) Only after both were fixed did the last row turn. All eight now report gone: saves, visits, profile, follows, blocks, reports, the avatar file and the account. It is a command now, `scripts/account_delete_test.py`, and a new table without a cascade would show up there as the only row that stays.
+
+**Moderation, because the social half ships.** Report (four reasons, one tap) and block on every person, blocks server-side so they survive a reinstall, a trigger that breaks the follow both ways. The separate Blocked people screen was removed on his ask ("dat heb ik nog nooit als optie gezien in een app"); what could not go with it is the undo, so a blocked person now appears at the end of your own search for them with Unblock where Follow would be.
+
+**Crash reporting is MetricKit**, so no SDK, no third party and no bill, and it carries hangs, which is the more useful half here. Said plainly in the code and to him: it is not a live reporter, it delivers once a day on the next launch from real devices only, and the payload has no readable stack without symbolication. Xcode Organizer covers the gap for TestFlight builds.
+
+**The App Store gate had a real blocker nobody had looked for: the app icon carried an alpha channel**, which refuses the upload outright before review starts. Flattened, and `scripts/icon_check.py` reads the PNG header on every push. Also declared export compliance, wrote `/support` (a required field), and `scripts/appstore_shots.py` takes the five screenshots at exactly 1320x2868.
+
+**One component instead of three, which was his sharpest note of the day.** A tap that a drag cancels is UIScrollView's own rule and it was in one place; it is in all six now, as `SheetLink`, after he asked the right question ("dat is meer dan 1 plek"). How high the sheet is now travels to the map through the environment rather than as a parameter each screen must remember, because My trees had forgotten it and the map's camera aimed at the middle of a view half of which was covered: that is a content inset, which is what MapLibre and MapKit both call it. And a city or a country now opens its own map PUSHED, so somebody stays in Discover with a working back button instead of being handed to the Map tab.
+
+**Also:** a heart on the pin of every tree you have hearted, your own photograph inside the pin of a tree you added, My trees survives the largest accessibility text, the tree page's action bar stopped printing half a line of its own story through itself, and the privacy page and terms now describe the app that exists.
+
+**Still open and mine:** one layout finding of eight tenths of a point on the tree page, recorded rather than papered over, and no green iOS CI run today. The last completed one failed on a GitHub runner error (`the test runner failed to initialize for UI testing`) rather than on our code; the full suite is green locally, 18 of 18, and the Release archive builds for a device.
+
 ## 2026-08-27 (session) - The app: four bugs he found in ten minutes, moderation, crash reporting, and a data-loss hole
 
 Hidde spent a morning on his own phone and this is what came of it. Everything below is pushed.
