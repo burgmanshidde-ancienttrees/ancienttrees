@@ -83,7 +83,8 @@ Each is idempotent and each is his, the same as `saves.sql` was:
 
 1. `supabase/reports.sql` - reporting and blocking. Until it runs, blocking works on the phone only and reports fail quietly.
 2. `supabase/diagnostics.sql` - where crashes land.
-3. `supabase/delete-user.sql` - **replaces** the existing `delete_user()`. It adds one thing the old one could not do: deleting the avatar image out of the bucket. Storage does not cascade off `auth.users`, so today a deleted account's picture stays public at its old address.
+3. `supabase/avatars-policy.sql` - lets somebody delete and replace their own profile picture. Without it the Storage API refuses the app's delete, and a deleted account's picture stays public at its old address. Found by running the deletion test, 2026-08-27.
+4. `supabase/delete-user.sql` - **replaces** the existing `delete_user()`. It adds one thing the old one could not do: deleting the avatar image out of the bucket. Storage does not cascade off `auth.users`, so today a deleted account's picture stays public at its old address.
 
 ### Still open
 
