@@ -192,14 +192,6 @@
    "trees": 5
   },
   {
-   "city": "Seoul",
-   "country": "South Korea",
-   "slug": "seoul",
-   "status": "published",
-   "demand_views_90d": 206265,
-   "trees": 8
-  },
-  {
    "city": "Fukuoka",
    "country": "Japan",
    "slug": "fukuoka",
@@ -209,12 +201,12 @@
    "trees": 13
   },
   {
-   "city": "Porto",
-   "country": "Portugal",
-   "slug": "porto",
+   "city": "Seoul",
+   "country": "South Korea",
+   "slug": "seoul",
    "status": "published",
-   "demand_views_90d": 120415,
-   "trees": 27
+   "demand_views_90d": 206265,
+   "trees": 8
   },
   {
    "city": "Alicante",
@@ -223,6 +215,14 @@
    "status": "published",
    "demand_views_90d": 77454,
    "trees": 14
+  },
+  {
+   "city": "Porto",
+   "country": "Portugal",
+   "slug": "porto",
+   "status": "published",
+   "demand_views_90d": 120415,
+   "trees": 27
   },
   {
    "city": "The Hague",
@@ -264,6 +264,14 @@
    "trees": 21
   },
   {
+   "city": "Bologna",
+   "country": "Italy",
+   "slug": "bologna",
+   "status": "published",
+   "demand_views_90d": 146161,
+   "trees": 12
+  },
+  {
    "city": "Leiden",
    "country": "Netherlands",
    "slug": "leiden",
@@ -293,14 +301,6 @@
    "status": "published",
    "demand_views_90d": 119586,
    "trees": 4
-  },
-  {
-   "city": "Bologna",
-   "country": "Italy",
-   "slug": "bologna",
-   "status": "published",
-   "demand_views_90d": 146161,
-   "trees": 12
   },
   {
    "city": "Reykjavik",
@@ -570,6 +570,13 @@
    "trees": 6
   },
   {
+   "city": "Chicago",
+   "country": "United States",
+   "slug": "chicago",
+   "status": "published",
+   "trees": 6
+  },
+  {
    "city": "Athens",
    "country": "Greece",
    "slug": "athens",
@@ -584,11 +591,12 @@
    "trees": 12
   },
   {
-   "city": "Chicago",
-   "country": "United States",
-   "slug": "chicago",
+   "city": "Cadiz",
+   "country": "Spain",
+   "slug": "cadiz",
    "status": "published",
-   "trees": 6
+   "demand_views_90d": 79226,
+   "trees": 5
   },
   {
    "city": "Lyon",
@@ -597,14 +605,6 @@
    "status": "published",
    "demand_views_90d": 136951,
    "trees": 13
-  },
-  {
-   "city": "Cadiz",
-   "country": "Spain",
-   "slug": "cadiz",
-   "status": "published",
-   "demand_views_90d": 79226,
-   "trees": 5
   },
   {
    "city": "Haarlem",
@@ -705,6 +705,14 @@
    "trees": 10
   },
   {
+   "city": "Helsinki",
+   "country": "Finland",
+   "slug": "helsinki",
+   "status": "published",
+   "demand_views_90d": 148908,
+   "trees": 8
+  },
+  {
    "city": "Glasgow",
    "country": "United Kingdom",
    "slug": "glasgow",
@@ -727,14 +735,6 @@
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
-  },
-  {
-   "city": "Helsinki",
-   "country": "Finland",
-   "slug": "helsinki",
-   "status": "published",
-   "demand_views_90d": 148908,
-   "trees": 8
   },
   {
    "city": "Seattle",
@@ -800,6 +800,14 @@
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
+  },
+  {
+   "city": "Sydney",
+   "country": "Australia",
+   "slug": "sydney",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 6
   },
   {
    "city": "Auckland",
@@ -890,14 +898,6 @@
    "trees": 10
   },
   {
-   "city": "Sydney",
-   "country": "Australia",
-   "slug": "sydney",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 6
-  },
-  {
    "city": "Kanazawa",
    "country": "Japan",
    "slug": "kanazawa",
@@ -912,6 +912,14 @@
    "status": "published",
    "demand_views_90d": 689212,
    "trees": 10
+  },
+  {
+   "city": "Verona",
+   "country": "Italy",
+   "slug": "verona",
+   "status": "published",
+   "demand_views_90d": 77646,
+   "trees": 8
   },
   {
    "city": "Los Angeles",
@@ -944,14 +952,6 @@
    "status": "published",
    "demand_views_90d": 132399,
    "trees": 4
-  },
-  {
-   "city": "Verona",
-   "country": "Italy",
-   "slug": "verona",
-   "status": "published",
-   "demand_views_90d": 77646,
-   "trees": 8
   },
   {
    "city": "Oahu",
