@@ -752,7 +752,14 @@ struct CollectView: View {
     private var rule: some View {
         Brand.hairline
             .frame(width: 1, height: 34)
-            .padding(.trailing, 14)
+            // EVEN ON BOTH SIDES, so the line sits in the middle of the gutter
+            // and the three columns are the same width. With the padding on one
+            // side only, each column after the first started 14 points further
+            // right than the one before it: the first figure at 21 points, the
+            // second at 146 and the third at 272, where evenly spread is 20,
+            // 141 and 261. Measured off his own screenshot rather than guessed
+            // (Hidde, 2026-08-27: "de alignment links is echt horribel").
+            .padding(.horizontal, 7)
     }
 
     // MARK: - the stamps

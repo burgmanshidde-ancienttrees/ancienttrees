@@ -156,7 +156,7 @@ struct PlacePin: View {
         Task {
             sending = true
             let ok = await Submission.send(d, from: tree.url,
-                                           token: account.session?.accessToken)
+                                           token: await account.freshToken())
             sending = false
             if ok { sent = true } else { failed = true }
         }

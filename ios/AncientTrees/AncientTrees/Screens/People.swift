@@ -193,7 +193,7 @@ struct PeopleView: View {
                 searching = true
                 try? await Task.sleep(for: .milliseconds(300))
                 if Task.isCancelled { return }
-                results = await profiles.search(query, token: account.session?.accessToken)
+                results = await profiles.search(query, token: await account.freshToken())
                 searching = false
             }
         }

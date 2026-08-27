@@ -91,7 +91,7 @@ struct ContributeView: View {
                             Task {
                                 sending = true
                                 let ok = await Submission.send(draft, from: about?.url ?? (feedbackMode ? "app-profile" : nil),
-                                                               token: account.session?.accessToken)
+                                                               token: await account.freshToken())
                                 sending = false
                                 if ok { sent = true } else { failed = true }
                             }
