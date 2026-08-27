@@ -580,6 +580,7 @@ def gsc_section(gsc):
             "%s (c%d/i%d)" % (r["keys"][0].replace("https://ancienttrees.app", ""), r["clicks"], r["impressions"]) for r in pages[:5]) if pages else "- Top pages: none",
         gap_line,
         *demand_lines(pages, pairs),
+        *language_lines(pages),
         *leak_lines,
     ]
     return "\n".join(lines), {"clicks": latest["clicks"], "impressions": latest["impressions"],
