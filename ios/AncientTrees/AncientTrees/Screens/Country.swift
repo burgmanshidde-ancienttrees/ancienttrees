@@ -66,7 +66,7 @@ struct CountryView: View {
                                 spanMeters: span,
                                 selected: .constant(nil))
                             .allowsHitTesting(false)
-                        Label("See them on the map",
+                        Label("Expand map",
                               systemImage: "arrow.up.left.and.arrow.down.right")
                             .font(.caption.weight(.semibold))
                             .foregroundStyle(Brand.ink)

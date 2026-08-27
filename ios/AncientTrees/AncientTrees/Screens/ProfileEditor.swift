@@ -104,12 +104,21 @@ struct ProfileEditor: View {
         guard let s = account.session else { return }
         saving = true
         Task {
+            // A TOKEN THAT IS STILL GOOD. This read session.accessToken
+            // directly, and those expire after an hour, so saving failed for
+            // anybody signed in longer than that: both calls came back 401 and
+            // the screen said "that did not save" without knowing why.
+            guard let token = await account.freshToken() else {
+                saving = false; failed = true; return
+            }
             var url = profiles.me?.avatar_url
-            if let preview, let jpeg = preview.jpegData(compressionQuality: 0.8) {
-                url = await Avatars.upload(jpeg, userId: s.userId, token: s.accessToken) ?? url
+            // 512 points is plenty for a face in a 62 point circle, and it
+            // turns an eight megapixel camera file into about forty kilobytes.
+            if let preview, let jpeg = Sightings.downsized(preview, max: 512) {
+                url = await Avatars.upload(jpeg, userId: s.userId, token: token) ?? url
             }
             let ok = await profiles.save(name: name.trimmingCharacters(in: .whitespaces),
-                                         avatarURL: url, userId: s.userId, token: s.accessToken)
+                                         avatarURL: url, userId: s.userId, token: token)
             saving = false
             if ok { dismiss() } else { failed = true }
         }

@@ -532,7 +532,7 @@ struct CityView: View {
                         // What it does, rather than where it goes. "Open the
                         // map" described a destination and the destination was
                         // wrong; this says what you get.
-                        Label("See them on the map", systemImage: "arrow.up.left.and.arrow.down.right")
+                        Label("Expand map", systemImage: "arrow.up.left.and.arrow.down.right")
                             .font(.caption.weight(.semibold))
                             .foregroundStyle(Brand.ink)
                             .padding(.horizontal, 12).padding(.vertical, 8)

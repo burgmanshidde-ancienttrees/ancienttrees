@@ -83,8 +83,10 @@ struct PeopleView: View {
                         if moderation.hides(p.user_id) {
                             Button("Unblock") {
                                 guard let s = account.session else { return }
-                                Task { await moderation.unblock(p.user_id, me: s.userId,
-                                                                token: s.accessToken) }
+                                Task {
+                                    guard let t = await account.freshToken() else { return }
+                                    await moderation.unblock(p.user_id, me: s.userId, token: t)
+                                }
                             }
                             .font(.subheadline.weight(.semibold))
                             .foregroundStyle(Brand.moss)
@@ -145,10 +147,12 @@ struct PeopleView: View {
                        role: acting.map { moderation.hides($0.user_id) } == true ? nil : .destructive) {
                     guard let p = acting, let s = account.session else { return }
                     Task {
+                        // A token that is still good: see Account.freshToken.
+                        guard let t = await account.freshToken() else { return }
                         if moderation.hides(p.user_id) {
-                            await moderation.unblock(p.user_id, me: s.userId, token: s.accessToken)
+                            await moderation.unblock(p.user_id, me: s.userId, token: t)
                         } else {
-                            await moderation.block(p.user_id, me: s.userId, token: s.accessToken)
+                            await moderation.block(p.user_id, me: s.userId, token: t)
                         }
                     }
                 }
@@ -202,8 +206,9 @@ struct PeopleView: View {
     private func send(_ reason: Moderation.Reason) {
         guard let p = reporting, let s = account.session else { return }
         Task {
+            guard let t = await account.freshToken() else { return }
             _ = await moderation.report(subject: p.user_id, reason: reason.rawValue,
-                                        reporter: s.userId, token: s.accessToken)
+                                        reporter: s.userId, token: t)
             reported = true
         }
     }
@@ -215,10 +220,11 @@ struct PeopleView: View {
         // broken, and the number beside your name catches up a moment later.
         if wasFollowing { followingIds.remove(p.user_id) } else { followingIds.insert(p.user_id) }
         Task {
+            guard let t = await account.freshToken() else { return }
             if wasFollowing {
-                await profiles.unfollow(p.user_id, me: s.userId, token: s.accessToken)
+                await profiles.unfollow(p.user_id, me: s.userId, token: t)
             } else {
-                await profiles.follow(p.user_id, me: s.userId, token: s.accessToken)
+                await profiles.follow(p.user_id, me: s.userId, token: t)
             }
         }
     }
