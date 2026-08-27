@@ -231,6 +231,18 @@ def classify(entry, blocking):
     status = str(entry.get("status") or "").strip().lower()
     if status in ("folded", "blocked", "held", "duplicate", "resolved"):
         return {"label": "held by an earlier pass (status: %s)" % status}
+    # A tree carrying `pulled_from_city` was not merely unattended, it was
+    # DEMOTED from a published page by name, on Hidde's own paid-entry-ratio
+    # ruling (CLAUDE.md, "at most about a third of a city may sit behind a
+    # ticket"). Found 2026-08-27: leads.py --ready offered Amsterdam's Artis/
+    # Hortus quintet straight back as READY, and shipping them would have
+    # exactly reproduced the 39-tree, 10-paid state Hidde rejected ("ik heb
+    # liever 34 goede bereikbare dan 39"). Every fact in these entries is
+    # verified, which is exactly why nothing else here would have caught
+    # them: this is a placement decision, not a truth problem, and it needs
+    # a fresh paid-ratio check (not a blind readd) before any of them ship.
+    if entry.get("pulled_from_city"):
+        return {"label": "pulled from a published city on a ratio/reach ruling, not merely unattended"}
     # The fix above only works when a pass remembers to also set status to
     # "held", and in practice it often does not: Braga's own two entries still
     # read status "lead" today, prose only. Found 2026-08-16 when a Guimaraes
