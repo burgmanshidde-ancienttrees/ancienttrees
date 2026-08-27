@@ -56,6 +56,7 @@ final class SweepFrames: XCTestCase {
         ("tree",         ["-tab=0", "-open=tree:ath_004"], nil),
         ("tree-nophoto", ["-tab=0", "-open=tree:vln_010"], nil),
         ("city",         ["-tab=0", "-open=city:aarhus"], nil),
+        ("city-map",     ["-tab=0", "-open=citymap:aarhus"], nil),
         ("species",      ["-tab=0", "-open=species:Aleppo Pine"], nil),
         ("collection",   ["-tab=0", "-open=collection:ancient-oaks-of-europe"], nil),
         ("walk",         ["-tab=0", "-open=walk:aarhus|Moesgård / Højbjerg"], nil),

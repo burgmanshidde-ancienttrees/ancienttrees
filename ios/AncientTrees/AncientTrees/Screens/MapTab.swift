@@ -303,7 +303,6 @@ struct MapTab: View {
                     // surface nobody can see at that height, and it climbed up
                     // among the chips trying to stay above the sheet.
                     showsRecentre: sheetHeight != .full,
-                    sheetLift: sheetHeight,
                     // Off while a walk is on screen, for the same reason as on
                     // the walk page itself: its stops must stay countable.
                     clusters: shownWalk == nil,

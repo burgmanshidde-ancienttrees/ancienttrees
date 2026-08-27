@@ -118,6 +118,12 @@ struct ContentView: View {
         case "collection": return .collection(value)
         case "species": return .species(value)
         case "country": return .country(value)
+        // The pushed place map, which is otherwise only reachable by tapping
+        // the preview on a city or a country page. Same rule as every other
+        // argument here: a screen no argument can open is a screen that ships
+        // unlooked at.
+        case "citymap": return .placeMap(.city(value))
+        case "countrymap": return .placeMap(.country(value))
         case "profile": return .profile
         case "walk":
             let parts = value.split(separator: "|", maxSplits: 1).map(String.init)
@@ -193,6 +199,9 @@ struct ContentView: View {
                         // A pushed page is a reading page; the bar does nothing
                         // there and AllTrails hides it too. Back is the way out.
                         .toolbar(.hidden, for: .tabBar)
+                        // And anything on it that reserves room for the bar,
+                        // which is the sheet, is told there is none.
+                        .environment(\.floatingBarDepth, 0)
                 }
         }
     }
@@ -242,6 +251,8 @@ struct ContentView: View {
             ProfileView(catalogue: cat)
         case .collectionMap:
             CollectionMapPage(catalogue: cat)
+        case .placeMap(let place):
+            PlaceMapPage(place: place, catalogue: cat)
         case .treeMap(let id):
             if let t = cat.tree(id) {
                 TreeMapPage(tree: t, catalogue: cat)

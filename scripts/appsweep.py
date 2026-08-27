@@ -131,6 +131,7 @@ def screens(sub):
         ("tree",          ["-tab=0", f'-open=tree:{sub["tree"]}'], 6),
         ("tree-nophoto",  ["-tab=0", f'-open=tree:{sub["tree_nophoto"]}'], 5),
         ("city",          ["-tab=0", f'-open=city:{sub["city"]}'], 5),
+        ("city-map",      ["-tab=0", f'-open=citymap:{sub["city"]}'], 7),
         ("species",       ["-tab=0", f'-open=species:{sub["species"]}'], 5),
         ("collection",    ["-tab=0", f'-open=collection:{sub["collection"]}'], 5),
         ("walk",          ["-tab=0", f'-open=walk:{sub["walk"]}'], 7),

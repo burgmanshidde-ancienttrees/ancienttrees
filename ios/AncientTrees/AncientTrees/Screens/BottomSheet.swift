@@ -96,6 +96,54 @@ extension View {
     }
 }
 
+/// HOW HIGH THE SHEET IS, told to whatever is behind it.
+///
+/// A map under a sheet has to know how much of itself is covered, or every
+/// camera move aims at the middle of the VIEW while the person is looking at
+/// the middle of the uncovered strip. The pin you tapped then settles at the
+/// sheet's top edge, or under it.
+///
+/// This is not our invention and it has a name in every map SDK: MapLibre and
+/// MapKit both call it a content inset (MapKit's other spelling is
+/// edgePadding), and it is what Apple Maps and Google Maps use to keep a place
+/// centred above their own sheets.
+///
+/// It travels through the environment rather than as a parameter because a
+/// parameter is a thing a screen can forget, and one did: the map screen passed
+/// it and My trees did not, so the same component behaved differently on two
+/// pages (Hidde, 2026-08-27: "bij My Trees doet hij dat niet ... ik wil dat je
+/// die ervaring als componenten maakt en dezelfde interactie geeft"). Any map
+/// inside a MapWithSheet now inherits it, and there is no way to leave it out.
+/// HOW DEEP THE FLOATING BAR IS over whatever is behind it, or zero where
+/// there is no bar.
+///
+/// The sheet keeps a bar's height of room at the end of its list so the last
+/// card can be scrolled clear. On a PUSHED page there is no tab bar, and
+/// reserving room for it would leave seventy points of nothing. The root sets
+/// this, the same way it hides the bar itself, so a page cannot get the two
+/// answers out of step.
+private struct FloatingBarDepthKey: EnvironmentKey {
+    static let defaultValue: CGFloat = TabBar.floatDepth
+}
+
+extension EnvironmentValues {
+    var floatingBarDepth: CGFloat {
+        get { self[FloatingBarDepthKey.self] }
+        set { self[FloatingBarDepthKey.self] = newValue }
+    }
+}
+
+private struct SheetLiftKey: EnvironmentKey {
+    static let defaultValue: SheetHeight? = nil
+}
+
+extension EnvironmentValues {
+    var sheetLift: SheetHeight? {
+        get { self[SheetLiftKey.self] }
+        set { self[SheetLiftKey.self] = newValue }
+    }
+}
+
 /// A card inside a sheet, TAPPED rather than pressed.
 ///
 /// Use this instead of NavigationLink for anything that lives in a sheet's
@@ -177,6 +225,7 @@ struct BottomSheet<Header: View, Content: View>: View {
     /// system tore down would make the whole list dead until the next drag,
     /// which is a worse bug than the one being fixed.
     @GestureState private var dragging = false
+    @Environment(\.floatingBarDepth) private var barDepth
     /// Whether the list inside is scrolled to its very top. The handoff downward
     /// is only allowed from there, because taking the gesture mid-list would
     /// yank the sheet away while somebody is reading.
@@ -236,7 +285,7 @@ struct BottomSheet<Header: View, Content: View>: View {
                 // contentMargins does exactly that: the scroll view still fills
                 // the sheet and things still travel under the bar, and the
                 // content simply ends a bar's height early.
-                .contentMargins(.bottom, TabBar.floatDepth + 8, for: .scrollContent)
+                .contentMargins(.bottom, barDepth + 8, for: .scrollContent)
                 .scrollPosition(id: topItem ?? .constant(nil), anchor: .top)
                 // THE RULE THE FILE ALREADY WRITES DOWN, now actually applied.
                 // "Below full height the sheet moves, the list does not

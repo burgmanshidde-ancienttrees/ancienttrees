@@ -514,7 +514,11 @@ struct CityView: View {
                 // so a finger dragging past it still scrolls the page, which is
                 // what Airbnb and AllTrails do with a preview: the map does not
                 // pan, the button over it opens the map that does.
-                Button { navigator.showCityOnMap = slug } label: {
+                // PUSHED, never a jump to the Map tab (Hidde, 2026-08-27).
+                // A tab is a different place with a different history: it threw
+                // away the city somebody was reading and gave them a back
+                // button belonging to something else. This keeps the trail.
+                NavigationLink(value: Route.placeMap(.city(slug))) {
                     ZStack(alignment: .bottomTrailing) {
                         TreeMap(trees: trees,
                                 focus: .init(latitude: frame.centre.lat,
@@ -525,7 +529,10 @@ struct CityView: View {
                         // A solid capsule, not a material one: over a pale map
                         // the blur was invisible and the words floated on the
                         // tiles, which reads as a label rather than a control.
-                        Label("Open the map", systemImage: "arrow.up.left.and.arrow.down.right")
+                        // What it does, rather than where it goes. "Open the
+                        // map" described a destination and the destination was
+                        // wrong; this says what you get.
+                        Label("See them on the map", systemImage: "arrow.up.left.and.arrow.down.right")
                             .font(.caption.weight(.semibold))
                             .foregroundStyle(Brand.ink)
                             .padding(.horizontal, 12).padding(.vertical, 8)
