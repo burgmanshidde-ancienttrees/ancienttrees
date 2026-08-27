@@ -167,6 +167,20 @@ public final class Account {
     /// account and nothing said so. Doing it here on every launch means the app
     /// never reaches that state.
     @discardableResult
+    /// A token that will still be accepted, or nil.
+    ///
+    /// Every write on somebody's behalf goes through here, because reading
+    /// `session?.accessToken` straight out gives you whatever was minted when
+    /// they last signed in, and those live an hour. ProfileEditor read it
+    /// straight and so saving a name and a picture failed for anybody who had
+    /// been signed in longer than that, which is everybody after the first
+    /// afternoon (Hidde, 2026-08-27, on his own phone: "foutmelding als ik foto
+    /// en naam wil opslaan").
+    public func freshToken() async -> String? {
+        guard await refreshIfNeeded() else { return nil }
+        return session?.accessToken
+    }
+
     public func refreshIfNeeded() async -> Bool {
         guard let s = session else { return false }
         if s.isFresh { return true }

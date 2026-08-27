@@ -560,6 +560,22 @@ struct ContentView: View {
             if account.isSignedIn {
                 await account.refreshIfNeeded()
                 await CloudSync.merge(account: account, saved: saved)
+                // And the trees somebody added themselves, which until today
+                // lived on one phone and nowhere else (Hidde, 2026-08-27:
+                // "niemand wil een backup my trees knop, je wilt gewoon dat dit
+                // automatisch goed gaat"). Photographs included: the words on
+                // their own would bring back a list of names with no pictures,
+                // which is most of what was lost rather than all of it.
+                await SightingSync.merge(account: account, sightings: sightings)
+            }
+            // Every later change goes the same way. Set here because this is
+            // the only place that knows about both, so Sightings itself keeps
+            // knowing nothing about the network.
+            Sightings.syncOne = { [account, sightings] s in
+                Task { await SightingSync.push(account: account, sightings: sightings, sighting: s) }
+            }
+            Sightings.syncGone = { [account] id in
+                Task { await SightingSync.remove(account: account, id: id) }
             }
         }
     }

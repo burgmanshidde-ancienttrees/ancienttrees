@@ -593,6 +593,10 @@ enum MapLayers {
     // treatment in that comparison and an ordinary key none.
 
     private static let moss = UIColor(red: 0.20, green: 0.35, blue: 0.20, alpha: 1)
+    /// Brand.ink, for the ring around a tree you added yourself. Every other
+    /// colour on this map is spoken for: moss is ours, white is the ring every
+    /// pin wears, blue is a ticket and gold is Plus. See photoPin.
+    private static let ink = UIColor(red: 0.15, green: 0.19, blue: 0.12, alpha: 1)
     /// Which pin images this style already carries. See setTrees for why this
     /// is not a question asked of MLNStyle.
     private static var registered: Set<String> = []
@@ -1168,19 +1172,27 @@ enum MapLayers {
     /// Same size, same ring, same silhouette as ours; white where ours is moss
     /// and moss where ours is white. One family, and you can see at a glance
     /// which ones are yours without a badge explaining it.
-    /// YOUR photograph, in the pin, behind a gold ring.
+    /// YOUR photograph, in the pin, behind a dark ring.
     ///
-    /// Gold is deliberate and it is the one place in this app it is allowed
-    /// outside Plus: a tree you photographed yourself is the only thing on this
-    /// map that is not ours, and it earns a colour nothing else uses. The
-    /// picture is drawn as a circle rather than square, so it reads as a pin at
-    /// a glance rather than as a photograph pasted on the map, which is what
-    /// Google Maps does with a contributed image and Strava with a
-    /// segment photograph.
+    /// NOT GOLD, and that was a real mistake rather than a preference. Gold
+    /// means paid-by-us everywhere in this app (DECISIONS.md, 2026-08-25, which
+    /// is also why the ticket mark left gold for blue), so a gold ring around
+    /// somebody's own free contribution says the opposite of what it means. The
+    /// fresh-eyes reviewer caught it the same day it shipped; Hidde's answer
+    /// was "doe maar een andere kleur, als het maar herkenbaar is".
+    ///
+    /// Ink, because every other colour on this map is spoken for: moss is ours,
+    /// white is the ring every pin wears, blue is a ticket, gold is Plus, red is
+    /// the heart. A dark ring also reads as a frame around a photograph, which
+    /// is what this is.
+    ///
+    /// The picture is drawn as a circle rather than a square, so it reads as a
+    /// pin at a glance rather than as a photograph pasted on the map, which is
+    /// what Google Maps does with a contributed image and Strava with a segment
+    /// photograph.
     private static func photoPin(_ image: UIImage) -> UIImage {
         let d: CGFloat = 44
         return UIGraphicsImageRenderer(size: .init(width: d, height: d)).image { ctx in
-            let gold = UIColor(red: 0.83, green: 0.65, blue: 0.22, alpha: 1)
             // A white disc under everything, so a photograph with a pale edge
             // still has a rim against a pale map.
             UIColor.white.setFill()
@@ -1197,7 +1209,7 @@ enum MapLayers {
             image.draw(in: CGRect(x: hole.midX - w / 2, y: hole.midY - h / 2, width: w, height: h))
             ctx.cgContext.restoreGState()
 
-            gold.setStroke()
+            ink.setStroke()
             let ring = UIBezierPath(ovalIn: hole.insetBy(dx: -1.5, dy: -1.5))
             ring.lineWidth = 3
             ring.stroke()

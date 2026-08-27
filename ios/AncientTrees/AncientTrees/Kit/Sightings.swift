@@ -68,6 +68,12 @@ final class Sightings {
 
     private(set) var all: [Sighting] = []
 
+    /// Where a change goes after it has been written here. Set once by the root
+    /// (ContentView), which is the only place that knows about an account, so
+    /// this file keeps knowing nothing about the network.
+    static var syncOne: ((Sighting) -> Void)?
+    static var syncGone: ((UUID) -> Void)?
+
     private static var folder: URL {
         let d = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
             .appendingPathComponent("sightings", isDirectory: true)
@@ -138,6 +144,26 @@ final class Sightings {
     var yoursOnly: [Sighting] { newestFirst.filter { $0.treeId == nil } }
 
     func forTree(_ id: String) -> Sighting? { all.first { $0.treeId == id } }
+
+    /// Whether this phone already holds it, asked by the sync before pulling a
+    /// row down. The id is the phone's own, so the same sighting on two phones
+    /// is one thing rather than two.
+    func has(_ id: UUID) -> Bool { all.contains { $0.id == id } }
+
+    /// Take a sighting that came back from the account, with its photograph if
+    /// the account had one. Deliberately does NOT push: this is the way in, and
+    /// a pull that wrote straight back would be a loop.
+    func adopt(_ sighting: Sighting, image: UIImage?) {
+        guard !has(sighting.id) else { return }
+        var made = sighting
+        if let image, let data = Self.downsized(image) {
+            let file = made.id.uuidString + ".jpg"
+            try? data.write(to: Self.folder.appendingPathComponent(file))
+            made.photo = file
+        }
+        all.append(made)
+        persist()
+    }
 
     func image(_ s: Sighting) -> UIImage? {
         guard let f = s.photo else { return nil }
@@ -214,6 +240,10 @@ final class Sightings {
         }
         all.append(s)
         persist()
+        // TO THE ACCOUNT AS WELL, if there is one. Hidde, 2026-08-27: "niemand
+        // wil een backup my trees knop, je wilt gewoon dat dit automatisch goed
+        // gaat." Signed out this does nothing and the app behaves as it did.
+        Self.syncOne?(s)
         return s
     }
 
@@ -221,6 +251,7 @@ final class Sightings {
         guard let i = all.firstIndex(where: { $0.id == id }) else { return }
         all[i].status = status
         persist()
+        Self.syncOne?(all[i])
     }
 
     func remove(_ id: UUID) {
@@ -228,8 +259,10 @@ final class Sightings {
         if let f = all[i].photo {
             try? FileManager.default.removeItem(at: Self.folder.appendingPathComponent(f))
         }
+        let gone = all[i].id
         all.remove(at: i)
         persist()
+        Self.syncGone?(gone)
     }
 
     // MARK: - the pieces
@@ -347,34 +380,6 @@ final class Sightings {
         let known = Set(all.compactMap(\.photo))
         let files = (try? FileManager.default.contentsOfDirectory(atPath: Self.folder.path)) ?? []
         orphanPhotos = files.filter { $0.hasSuffix(".jpg") && !known.contains($0) }.sorted()
-    }
-
-    /// Everything this phone holds, as one file somebody can keep. The
-    /// photographs are in it, so it is a real backup rather than a list of
-    /// names, and it is the answer to "is this saved anywhere" for as long as
-    /// these trees live only on the phone.
-    func exportArchive() -> URL? {
-        let out = FileManager.default.temporaryDirectory
-            .appendingPathComponent("my-trees-backup.json")
-        var rows: [[String: Any]] = []
-        for s in all {
-            var r: [String: Any] = ["id": s.id.uuidString, "name": s.name, "note": s.note,
-                                    "lat": s.lat, "lng": s.lng,
-                                    "date": ISO8601DateFormatter().string(from: s.date),
-                                    "status": s.status.rawValue]
-            r["treeId"] = s.treeId
-            r["species"] = s.species
-            r["age"] = s.age
-            if let f = s.photo,
-               let d = try? Data(contentsOf: Self.folder.appendingPathComponent(f)) {
-                r["photo_jpeg_base64"] = d.base64EncodedString()
-            }
-            rows.append(r)
-        }
-        guard let d = try? JSONSerialization.data(withJSONObject: rows, options: [.prettyPrinted])
-        else { return nil }
-        try? d.write(to: out)
-        return out
     }
 
 }
