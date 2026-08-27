@@ -123,6 +123,14 @@ struct SheetLink<Content: View>: View {
         content
             .contentShape(.rect)
             .onTapGesture { navigator.push = route }
+            // ONE ELEMENT, the way a NavigationLink was. Without this the card
+            // stops being a single thing: its title, its species line and its
+            // age each become their own element carrying the card's identifier,
+            // so VoiceOver reads four fragments where it used to read one card,
+            // and the layout gate counted eight "buttons" of 4 by 14 points on
+            // a single screen (2026-08-27, the first appfit run after the
+            // change). A tap target that measures four points wide is not one.
+            .accessibilityElement(children: .combine)
             .accessibilityAddTraits(.isButton)
     }
 }
