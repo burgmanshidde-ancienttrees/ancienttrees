@@ -175,6 +175,57 @@ def register_points(warn=False):
     return pts
 
 
+WIKIDATA = os.path.join(ROOT, "data", "research", "wikidata-remarkable-trees.json")
+
+
+def wikidata_points():
+    """The Wikidata remarkable-tree layer as points, minus what we already map.
+
+    Why this is here at all, 2026-08-27. The stage-1 table printed `register 0,
+    ready 0` for Leipzig, and a night run reading that line concluded there was
+    nothing it was allowed to do there, nine times a day. On disk sat 63 named
+    Leipzig trees with a species each, and 209 for Dresden, 151 for Potsdam:
+    the exact supply data/register-scouting.json names as Germany's route
+    ("the route here is the Wikidata layer, not the state"). The queue's own
+    header already told a run to open a city "from a register, a leads file or
+    a Wikidata cluster" and then printed no column for the third one, so the
+    one country whose supply is entirely Wikidata read as empty everywhere.
+
+    Deduped at 80 m against our published pins, the same threshold passcheck
+    uses, so the number means trees we do NOT have rather than trees that
+    exist. Missing file returns nothing: this is scouting gear, and a queue
+    rebuild must never fail because a scouting fetch has not been run.
+    """
+    try:
+        with open(WIKIDATA, encoding="utf-8") as fh:
+            rows = json.load(fh)["trees"]
+    except (OSError, ValueError, KeyError):
+        return []
+    ours = []
+    for f in glob.glob(os.path.join(ROOT, "data", "cities", "*.json")):
+        try:
+            with open(f, encoding="utf-8") as fh:
+                d = json.load(fh)
+        except (OSError, ValueError):
+            continue
+        for t in d.get("trees", []):
+            loc = t.get("location") or {}
+            if loc.get("latitude") is not None:
+                ours.append((loc["latitude"], loc["longitude"]))
+    out = []
+    for r in rows:
+        lat, lng = r.get("latitude"), r.get("longitude")
+        if lat is None or lng is None:
+            continue
+        if any(abs(a - lat) < 0.0008 and abs(b - lng) < 0.0008 for a, b in ours):
+            continue
+        out.append((lat, lng))
+    return out
+
+
+WD = []
+
+
 def near(pts, lat, lng, km=5.0):
     """Bounding box, not haversine: at 5 km the difference cannot change a
     band, and 17,854 register points times 95 cities wants the cheap test."""
@@ -248,6 +299,9 @@ def measure(pts):
             # The published count, not a second planning of it (2026-08-25).
             "walks": len(WALKS.get(slug, [])),
             "register": near(pts, lat, lng),
+            # 15 km, not 5: the Wikidata layer is a day-trip band rather than a
+            # walk, and it is what wikidata_trees.py reports against.
+            "wikidata": near(WD, lat, lng, 15.0),
             "ready": ready,
         }
     return out
@@ -294,19 +348,26 @@ def enrich(doc, live):
             pos = city_coords(c["city"], c.get("article"))
             reg = near(PTS, pos[0], pos[1]) if pos else info["register"]
             info["register"] = max(reg, info["register"])
-            supply = info["register"] + info["ready"]
+            wd = near(WD, pos[0], pos[1], 15.0) if pos else info["wikidata"]
+            info["wikidata"] = max(wd, info["wikidata"])
+            supply = info["register"] + info["ready"] + info["wikidata"]
             c.update(status="published", trees=info["trees"], photos=info["photos"],
                      walks=info["walks"], register=info["register"],
-                     ready=info["ready"], supply=supply,
+                     ready=info["ready"], wikidata=info["wikidata"], supply=supply,
                      target=target_for(c.get("demand"), c.get("basis", "").startswith("measured"), c.get("impressions_10d"), c.get("travel")))
         else:
             # An unpublished city still has register supply around it; it just
             # has no trees to average a centre from. Look the city itself up.
             pos = city_coords(c["city"], c.get("article"))
             reg = near(PTS, pos[0], pos[1]) if pos else 0
-            supply = reg
+            # The branch that matters for stage 1: a city on zero has no trees
+            # to average a centre from, so if the Wikidata layer is not counted
+            # HERE it is not counted anywhere for exactly the cities the queue
+            # is telling a run to open.
+            wd = near(WD, pos[0], pos[1], 15.0) if pos else 0
+            supply = reg + wd
             c.update(status="pending", trees=0, photos=0, walks=0,
-                     register=reg, ready=0, supply=reg,
+                     register=reg, ready=0, wikidata=wd, supply=supply,
                      target=target_for(c.get("demand"), c.get("basis", "").startswith("measured"), c.get("impressions_10d"), c.get("travel")))
         c["ease"] = round(ease_for(c.get("country", ""), supply), 2)
         c["work_score"] = round((c.get("score") or 0) * c["ease"], 2)
@@ -445,19 +506,24 @@ def main():
         print("  * = one of the 17 he named on 2026-08-19, so from-zero web")
         print("      research is ON there (rule 1(d)). Everywhere else on this")
         print("      list, from-zero is still OFF: open it from a register, a")
-        print("      leads file or a Wikidata cluster, or leave it.\n")
-        print("  #  city             register  ready")
+        print("      leads file or a Wikidata cluster, or leave it.")
+        print("  wikidata = named trees within 15 km that we do NOT map, from")
+        print("      the CC0 layer. It is a lead list, not a register: every")
+        print("      entry still needs its second source and its own pin.\n")
+        print("  #  city             register  ready  wikidata")
         for c in s1[:40]:
-            print("%3d %s%-16s %9d %6d" % (
+            print("%3d %s%-16s %9d %6d %9d" % (
                 c["rank"], "* " if c["city"].lower() in named else "  ",
-                c["city"][:16], c.get("register", 0), c.get("ready", 0)))
+                c["city"][:16], c.get("register", 0), c.get("ready", 0),
+                c.get("wikidata", 0)))
         print("\nSTAGE 2, DEEPENING: once stage 1 has nothing left that moves")
         print("cheaply. Targets are 20, or 30 for a big confirmed city.\n")
-        print("  #  city             now target  ready  register")
+        print("  #  city             now target  ready  register  wikidata")
         for c in s2[:20]:
-            print("%3d  %-16s %4d %6d %6d %9d" % (
+            print("%3d  %-16s %4d %6d %6d %9d %9d" % (
                 c["rank"], c["city"][:16], c.get("trees", 0),
-                c["target"], c.get("ready", 0), c.get("register", 0)))
+                c["target"], c.get("ready", 0), c.get("register", 0),
+                c.get("wikidata", 0)))
         print("\nStage 1: %d cities unopened. Stage 2: %d cities, %d trees to target."
               % (len(s1), len(s2), sum(c["target"] - c.get("trees", 0) for c in s2)))
 
@@ -477,18 +543,26 @@ def main():
         # subset is printed under it. Nothing here decides priority; it only
         # says which of the ranked cities have something to work FROM.
         movable = [c for c in s1 + s2
-                   if (c.get("ready", 0) or c.get("register", 0))]
-        movable.sort(key=lambda c: (c.get("rank") or 9999))
+                   if (c.get("ready", 0) or c.get("register", 0)
+                       or c.get("wikidata", 0) >= 4)]
+        # UNOPENED FIRST, and it is a priority ruling rather than a tidy-up.
+        # Hidde, 2026-08-27: "wat mij betreft gaan we zoveel mogelijk steden
+        # van nul naar tien zetten", so that they get indexed and Google can
+        # say which ones are worth deepening. Sorting this list by rank alone
+        # put Milan, Florence and Singapore at the top of it, all published and
+        # all deepening, which is the opposite of the order the header above
+        # states. Within each half the order is still the queue's own.
+        movable.sort(key=lambda c: (c.get("trees", 0) > 0, c.get("rank") or 9999))
         print("\nWHAT YOU CAN ACTUALLY MOVE, i.e. the ranked cities that have "
               "data to work from.\nEverything else on the lists above needs "
               "from-zero web research, which is OFF\nunless Hidde names the "
               "city (CLAUDE.md, rule one (d)).\n")
         if movable:
-            print("  #  city             now  ready  register")
-            for c in movable[:15]:
-                print("%3d  %-16s %4d %6d %9d" % (
+            print("  #  city             now  ready  register  wikidata")
+            for c in movable[:18]:
+                print("%3d  %-16s %4d %6d %9d %9d" % (
                     c["rank"], c["city"][:16], c.get("trees", 0),
-                    c.get("ready", 0), c.get("register", 0)))
+                    c.get("ready", 0), c.get("register", 0), c.get("wikidata", 0)))
             print("\n  %d of %d ranked cities have supply."
                   % (len(movable), len(s1) + len(s2)))
         else:
@@ -513,6 +587,7 @@ def main():
 
     pts = register_points(warn=True)
     globals()['PTS'] = pts
+    globals()['WD'] = wikidata_points()
     live = measure(pts)
     doc = enrich(load_source(), live)
     order = rebuild_table(doc)
