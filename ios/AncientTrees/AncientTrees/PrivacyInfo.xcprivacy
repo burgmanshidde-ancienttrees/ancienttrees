@@ -8,14 +8,25 @@
 	  what we tell Apple has to match what we tell readers on /privacy, so it is
 	  written from that page rather than from a template.
 
-	  Two things are deliberately NOT declared as collected, because "collected"
-	  in Apple's sense means leaving the device, and neither does:
+	  Rewritten 2026-08-27 on Hidde's ask ("maak de privacy labels kloppend"),
+	  because it had not moved since accounts were only an email address. Three
+	  things changed under it: a display name and a profile photograph (his yes,
+	  2026-08-26), a follow graph, and crash diagnostics (his yes, 2026-08-27).
+	  A manifest that describes last month's app is worse than none, because it
+	  is a statement to Apple that happens to be false.
 
-	  Location. The map reads it and forgets it. It is never sent anywhere, which
-	  is exactly what the priming screen promises in those words.
+	  What is deliberately NOT declared as collected, because "collected" in
+	  Apple's sense means leaving the device, and none of these do:
 
-	  The tick list of somebody who has not signed in. That lives in UserDefaults
-	  on the phone and goes nowhere.
+	  Location. The map reads it and forgets it. It is never sent anywhere,
+	  which is exactly what the priming screen promises in those words.
+
+	  Photographs of trees. A photograph you take of a tree stays in the app's
+	  own storage on the phone: no bucket, no table, no upload (Sightings.swift).
+	  A profile picture is the one image that does leave, and it is declared.
+
+	  The tick list of somebody who has not signed in. That lives in
+	  UserDefaults on the phone and goes nowhere until an account exists.
 	-->
 	<key>NSPrivacyTracking</key>
 	<false/>
@@ -37,8 +48,54 @@
 			</array>
 		</dict>
 		<dict>
+			<!-- The display name somebody chooses. It does not have to be their
+			     real one and the app says so where it is asked for, but Apple's
+			     category is Name and under-declaring is the worse mistake. -->
+			<key>NSPrivacyCollectedDataType</key>
+			<string>NSPrivacyCollectedDataTypeName</string>
+			<key>NSPrivacyCollectedDataTypeLinked</key>
+			<true/>
+			<key>NSPrivacyCollectedDataTypeTracking</key>
+			<false/>
+			<key>NSPrivacyCollectedDataTypePurposes</key>
+			<array>
+				<string>NSPrivacyCollectedDataTypePurposeAppFunctionality</string>
+			</array>
+		</dict>
+		<dict>
+			<!-- The profile picture, and only that: it goes to the avatars
+			     bucket under the account's own id and is shown beside the name.
+			     Photographs of trees never leave the phone. -->
+			<key>NSPrivacyCollectedDataType</key>
+			<string>NSPrivacyCollectedDataTypePhotosorVideos</string>
+			<key>NSPrivacyCollectedDataTypeLinked</key>
+			<true/>
+			<key>NSPrivacyCollectedDataTypeTracking</key>
+			<false/>
+			<key>NSPrivacyCollectedDataTypePurposes</key>
+			<array>
+				<string>NSPrivacyCollectedDataTypePurposeAppFunctionality</string>
+			</array>
+		</dict>
+		<dict>
+			<!-- The account's own id, which is what every row here hangs off and
+			     what makes deleting an account able to take all of it. -->
+			<key>NSPrivacyCollectedDataType</key>
+			<string>NSPrivacyCollectedDataTypeUserID</string>
+			<key>NSPrivacyCollectedDataTypeLinked</key>
+			<true/>
+			<key>NSPrivacyCollectedDataTypeTracking</key>
+			<false/>
+			<key>NSPrivacyCollectedDataTypePurposes</key>
+			<array>
+				<string>NSPrivacyCollectedDataTypePurposeAppFunctionality</string>
+			</array>
+		</dict>
+		<dict>
 			<!-- The collection itself: which trees you saved and ticked off,
-			     synced to the account so a new phone does not lose it. -->
+			     synced to the account so a new phone does not lose it. Also who
+			     follows whom, what somebody sends through the contribute form,
+			     and a report about another account. -->
 			<key>NSPrivacyCollectedDataType</key>
 			<string>NSPrivacyCollectedDataTypeOtherUserContent</string>
 			<key>NSPrivacyCollectedDataTypeLinked</key>
@@ -50,13 +107,44 @@
 				<string>NSPrivacyCollectedDataTypePurposeAppFunctionality</string>
 			</array>
 		</dict>
+		<dict>
+			<!-- Crashes and hangs, from MetricKit (Kit/Diagnostics.swift). NOT
+			     LINKED, and that is a property of the data rather than a claim:
+			     the row carries the payload, the app version and the OS version,
+			     and nothing that says whose phone it came from. -->
+			<key>NSPrivacyCollectedDataType</key>
+			<string>NSPrivacyCollectedDataTypeCrashData</string>
+			<key>NSPrivacyCollectedDataTypeLinked</key>
+			<false/>
+			<key>NSPrivacyCollectedDataTypeTracking</key>
+			<false/>
+			<key>NSPrivacyCollectedDataTypePurposes</key>
+			<array>
+				<string>NSPrivacyCollectedDataTypePurposeAppFunctionality</string>
+			</array>
+		</dict>
+		<dict>
+			<!-- Hangs and launch times arrive in the same payloads as crashes.
+			     Apple's own category for that is Performance Data. -->
+			<key>NSPrivacyCollectedDataType</key>
+			<string>NSPrivacyCollectedDataTypePerformanceData</string>
+			<key>NSPrivacyCollectedDataTypeLinked</key>
+			<false/>
+			<key>NSPrivacyCollectedDataTypeTracking</key>
+			<false/>
+			<key>NSPrivacyCollectedDataTypePurposes</key>
+			<array>
+				<string>NSPrivacyCollectedDataTypePurposeAppFunctionality</string>
+			</array>
+		</dict>
 	</array>
 	<key>NSPrivacyAccessedAPITypes</key>
 	<array>
 		<dict>
-			<!-- Saved.swift and Nudge.swift keep the collection and the "have we
-			     already asked" flags here. CA92.1 is the reason code for reading
-			     back only what this app itself wrote. -->
+			<!-- Saved.swift, Nudge.swift and Moderation.swift keep the
+			     collection, the "have we already asked" flags and the blocked
+			     list here. CA92.1 is the reason code for reading back only what
+			     this app itself wrote. -->
 			<key>NSPrivacyAccessedAPIType</key>
 			<string>NSPrivacyAccessedAPICategoryUserDefaults</string>
 			<key>NSPrivacyAccessedAPITypeReasons</key>
