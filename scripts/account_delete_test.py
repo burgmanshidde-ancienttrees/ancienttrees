@@ -126,6 +126,14 @@ def main():
     for k, v in made.items():
         print(f"  {k:12} {'made' if 200 <= v < 300 else 'FAILED ' + str(v)}")
 
+    # EXACTLY WHAT THE APP DOES, in the same order: the picture through the
+    # Storage API first, because SQL may not touch storage.objects, then the
+    # account. A test that skipped the first step would pass while the app in
+    # somebody's hand left their face in a public bucket.
+    print("deleting the avatar through the Storage API, as the app does")
+    code, out = call(f"storage/v1/object/avatars/{uid}/avatar.jpg", "DELETE", token=token)
+    print(f"  {code} {'ok' if 200 <= code < 300 else out}")
+
     print("calling delete_user() with the account's own token, as the app does")
     code, out = call("rest/v1/rpc/delete_user", "POST", {}, token=token)
     print(f"  {code} {out if code >= 300 else 'ok'}")

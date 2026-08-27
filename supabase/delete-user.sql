@@ -25,17 +25,27 @@ begin
     raise exception 'delete_user() called without a signed-in account';
   end if;
 
-  -- THE PICTURE FIRST, because it is the only thing here that a cascade
-  -- cannot reach. ProfileEditor uploads to avatars/<user id>/avatar.jpg, so
-  -- the first folder of the path is the account's own id.
-  delete from storage.objects
-   where bucket_id = 'avatars'
-     and (storage.foldername(name))[1] = uid::text;
-
-  -- Then the account. saves, visited, profiles, follows, blocks and reports
-  -- all reference auth.users(id) on delete cascade, so this line is what takes
-  -- them, and adding a table with that foreign key is what keeps this function
-  -- from needing to know about it.
+  -- THE PICTURE IS NOT DELETED HERE, and the first version of this file tried
+  -- to, which broke deletion completely for the hour it was live.
+  --
+  -- Supabase refuses a delete against storage.objects from SQL: "Direct
+  -- deletion from storage tables is not allowed. Use the Storage API instead."
+  -- That refusal raises, the whole function rolls back, and NOTHING is
+  -- deleted, not the saves, not the profile, not even the account. A promise
+  -- that quietly does nothing is worse than the orphaned file it was trying to
+  -- fix, and only running the test found it (scripts/account_delete_test.py,
+  -- 2026-08-27, on the day it was written).
+  --
+  -- So the avatar is deleted by the CLIENT, through the Storage API, in the
+  -- moment before this is called. That is the route Supabase intends, it runs
+  -- as the account itself, and if it fails the account still goes: an orphaned
+  -- image is a tidy-up job, an account that will not delete is a broken
+  -- promise and an App Store rejection.
+  --
+  -- saves, visited, profiles, follows, blocks and reports all reference
+  -- auth.users(id) on delete cascade, so the line below is what takes them,
+  -- and adding a table with that foreign key is what keeps this function from
+  -- ever needing to know about it.
   delete from auth.users where id = uid;
 end;
 $$;
