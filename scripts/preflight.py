@@ -577,10 +577,55 @@ def check_paid_share():
     return out
 
 
+def check_register_licences():
+    """No register file without a recorded licence.
+
+    CLAUDE.md lists this among the seven lessons that stopped being notes and
+    became build checks. It never was one. Searched 2026-08-27 after a
+    copyright question from Hidde: neither qa.py nor this file carried it, and
+    the corpus had been asserting the guarantee for weeks.
+
+    The data was fine, which is the uncomfortable part. Fifty registers, fifty
+    licences, so nothing was ever caught because nothing was ever wrong yet.
+    A check that exists only in a document protects nothing on the day
+    somebody imports in a hurry, and register imports are the cheapest trees
+    this project gets, which is exactly when a hurry happens.
+
+    Shapes accepted, because the existing files legitimately differ and
+    normalising fifty files to satisfy a checker would be the tail wagging
+    the dog: a top-level `licence`/`license`, a `licence_name` with its terms
+    url beside it, or a `license` inside the `source` block. What is NOT
+    accepted is a file that records where the data came from and never says
+    what we are allowed to do with it.
+    """
+    out = []
+    for f in sorted(glob.glob("data/registers/*.json")):
+        name = os.path.basename(f)
+        try:
+            with open(f, encoding="utf-8") as fh:
+                d = json.load(fh)
+        except Exception as e:
+            out.append("%s: unreadable (%s)" % (name, e))
+            continue
+        if not isinstance(d, dict):
+            out.append("%s: no licence block; a register with no recorded "
+                       "licence may not be imported (hard rule, register layer)" % name)
+            continue
+        lic = (d.get("licence") or d.get("license")
+               or d.get("licence_name") or d.get("license_name"))
+        src = d.get("source")
+        if not lic and isinstance(src, dict):
+            lic = src.get("license") or src.get("licence")
+        if not lic:
+            out.append("%s: no licence block; a register with no recorded "
+                       "licence may not be imported (hard rule, register layer)" % name)
+    return out
+
+
 def main():
     problems = (check_id_prefixes() + check_pin_upgrades()
                 + check_cross_city_duplicates() + check_same_city_duplicates()
-                + check_phenology())
+                + check_phenology() + check_register_licences())
     files = sorted(glob.glob("data/cities/*.json"))
     for p in files:
         problems += check_city(p)

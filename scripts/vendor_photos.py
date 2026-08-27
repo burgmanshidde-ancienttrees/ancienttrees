@@ -71,10 +71,17 @@ def may_rehost(lic):
     if "own photograph" in l:
         return True, ""
     if "permission" in l:
-        # Permission was given for use. Hosting the file ourselves is closer to
-        # what was agreed than sending every reader to the photographer's
-        # server, but it is not what the email said, so it waits for a human.
-        return False, "used by personal permission; ask before re-hosting"
+        # Written permission to use the photograph covers hosting it.
+        #
+        # This said the opposite for one afternoon, and Hidde corrected it:
+        # "daar hadden ze al toestemming voor gegeven". He is right, and the
+        # caution was not merely redundant, it was backwards. Somebody who
+        # says "use my photograph on your page" does not mean "and fetch it
+        # from my server every time"; keeping our own copy is the politer half
+        # of the arrangement, not the bolder one. mailcheck.py agreed from the
+        # other direction and refused the mail as ASKING TWICE, which is the
+        # thing most likely to lose a contributor who has already said yes.
+        return True, ""
     return False, "licence not recognised: %s" % lic
 
 
