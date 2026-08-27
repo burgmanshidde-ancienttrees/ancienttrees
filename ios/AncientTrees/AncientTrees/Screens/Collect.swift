@@ -276,6 +276,12 @@ struct CollectView: View {
             Button { navigator.collectNearby = true } label: {
                 Label("Add a tree", systemImage: "camera.fill")
                     .font(.callout.weight(.semibold))
+                    // A THREE WORD BUTTON MUST NOT BECOME "Add a tr...".
+                    // Same cap as the counts and the stat row above, plus a
+                    // little shrink, because a control that cannot say what it
+                    // does is worse than one drawn slightly small.
+                    .dynamicTypeSize(...DynamicTypeSize.accessibility1)
+                    .lineLimit(1).minimumScaleFactor(0.7)
                     .foregroundStyle(Brand.ground)
                     .frame(maxWidth: .infinity)
                     .frame(height: 52)
@@ -595,6 +601,15 @@ struct CollectView: View {
                             Text("\(profiles.following) following")
                         }
                         .font(.caption).foregroundStyle(Brand.inkSoft)
+                        // CAPPED, because two counts side by side cannot grow
+                        // to five times their size and stay two counts. At the
+                        // largest accessibility setting this read "0 followe...
+                        // 0 follo..." (2026-08-27, found by running the whole
+                        // app at that size). Capping a glanceable figure is
+                        // what Apple does in its own compact stat rows; the
+                        // stories and the page copy below scale all the way,
+                        // which is where reading actually happens.
+                        .dynamicTypeSize(...DynamicTypeSize.accessibility1)
                     } else {
                         Text("Sign in and your collection follows you.")
                             .font(.caption).foregroundStyle(Brand.inkSoft)
@@ -644,6 +659,12 @@ struct CollectView: View {
                 Divider().frame(height: 34)
                 tile("\(countries)", countries == 1 ? "Country" : "Countries")
             }
+            // Three figures across one row is a shape that cannot survive
+            // unlimited growth: at the largest setting the labels became
+            // "Specie" and "Coun-try" with the dividers gone and the list
+            // pushed off the screen entirely. Same reasoning as the counts
+            // above, same cap.
+            .dynamicTypeSize(...DynamicTypeSize.accessibility1)
             // NO SENTENCE UNDER THE NUMBERS (Hidde, 2026-08-27: "delete out of
             // 1846 we map in 39 countries, it looks weird and the stat honestly
             // doesn't make much sense"). He is right twice: it measured US
@@ -698,7 +719,10 @@ struct CollectView: View {
         VStack(spacing: 3) {
             Text(value).font(.brand(26, .black, relativeTo: .title))
                 .foregroundStyle(Brand.ink).monospacedDigit()
+            // One line that shrinks a little rather than a word broken across
+            // two with a hyphen, which is what "Coun-try" was.
             Text(label).font(.caption2).foregroundStyle(Brand.inkSoft)
+                .lineLimit(1).minimumScaleFactor(0.7)
         }
         .frame(maxWidth: .infinity)
     }
