@@ -153,9 +153,15 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
 
     /// The common name only, without the Latin in parentheses. Map pins and
     /// cards have no room for the binomial.
-    public var commonName: String {
+    public var commonName: String { Tree.commonName(of: species) }
+
+    /// The same trim, reachable without a tree, because a tree somebody added
+    /// themselves has a species they typed and no Tree to ask (see
+    /// MapFilters.keeps(_ sighting:)). One implementation, so the species
+    /// filter cannot come to two answers about the same words.
+    public static func commonName(of species: String) -> String {
         guard let i = species.firstIndex(of: "(") else { return species }
-        return species[..<i].trimmingCharacters(in: .whitespaces)
+        return String(species[..<i]).trimmingCharacters(in: .whitespaces)
     }
 }
 

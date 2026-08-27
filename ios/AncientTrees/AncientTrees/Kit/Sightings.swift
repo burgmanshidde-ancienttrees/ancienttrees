@@ -64,6 +64,19 @@ final class Sightings {
         /// moves between launches and an absolute path goes stale.
         var photo: String?
         var status: Status = .mine
+
+        /// The id this sighting wears wherever the app talks about TREES: the
+        /// heart on its page saves under it, so anything asking whether you
+        /// hearted your own tree has to ask with this exact string. Written
+        /// once here rather than at each site that spells out the prefix.
+        var treeKey: String { "mine:" + id.uuidString }
+
+        /// What you typed, without any Latin you put in brackets, so the map's
+        /// species filter compares like with like.
+        var commonName: String? {
+            guard let s = species, !s.isEmpty else { return nil }
+            return Tree.commonName(of: s)
+        }
     }
 
     private(set) var all: [Sighting] = []
@@ -214,7 +227,7 @@ final class Sightings {
     /// your own trees would drift within a week. Empty strings are honest here
     /// and the page already knows how to show a gap.
     func asTree(_ s: Sighting) -> Tree {
-        Tree(id: "mine:" + s.id.uuidString,
+        Tree(id: s.treeKey,
              name: s.name,
              species: s.species ?? "",
              age: s.age,

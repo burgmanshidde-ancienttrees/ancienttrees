@@ -37,7 +37,7 @@ struct ContentView: View {
     @State fileprivate var sightings = Sightings()
     /// How many people saved each tree, counted by the server because a client
     /// can only see its own rows. Empty until Hidde runs supabase/like-counts.sql.
-    @State fileprivate var saveCounts = SaveCounts()
+    @State fileprivate var voteCounts = VoteCounts()
     /// Who you are and who you follow, opened on his 2026-08-26 yes.
     @State fileprivate var profiles = Profiles()
     @State private var rootSheet: RootSheet?
@@ -497,10 +497,10 @@ struct ContentView: View {
             // the app's part: the system hands over what it gathered the next
             // time the app opens, and only on a real device.
             Diagnostics.shared.start()
-            // How many people saved each tree, once per launch and never per
-            // card: the whole table is a few thousand short rows and a request
-            // inside a scrolling list is a stutter.
-            Task { await saveCounts.loadOnce() }
+            // The thumbs' figures, once per launch and never per card: the
+            // whole table is a few thousand short rows and a request inside a
+            // scrolling list is a stutter.
+            Task { await voteCounts.loadOnce() }
             // A TOKEN THAT IS STILL GOOD, or none at all.
             //
             // This read the stored token straight out, and those live an hour,
@@ -732,7 +732,7 @@ extension View {
             .environment(root.navigator)
             .environment(root.units)
             .environment(root.sightings)
-            .environment(root.saveCounts)
+            .environment(root.voteCounts)
             .environment(root.profiles)
             .environment(root.moderation)
     }

@@ -42,7 +42,6 @@ struct TreeDetail: View {
     /// The hero shows the map instead of the photograph. A swap rather than a
     /// jump to the Map tab, so the reader keeps their place.
     @State private var showingMap = false
-    @Environment(SaveCounts.self) private var saveCounts
 
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -566,20 +565,13 @@ struct TreeDetail: View {
                 // caption is the one that carries the Latin.
                 Text(tree.species).font(.subheadline).foregroundStyle(Brand.inkSoft)
             }
-            // HOW MANY PEOPLE KEPT IT, and only once somebody has (Hidde,
-            // 2026-08-26: "aantal likes tellen en terug geven, pas van 1
-            // tellen"). A zero on a page is worse than nothing: it says
-            // nobody wanted this, about a tree we chose to publish. The count
-            // comes from the server, because a phone can only see its own
-            // saves; until the SQL behind it exists there is simply no number.
-            if mine == nil, let n = saveCounts.count(tree.id) {
-                Label(n == 1 ? "1 person keeps this tree"
-                             : "\(n) people keep this tree",
-                      systemImage: "heart.fill")
-                    .font(.caption)
-                    .foregroundStyle(Brand.inkSoft)
-                    .accessibilityIdentifier("tree-save-count")
-            }
+            // The save count used to be a sentence here, "1 person keeps this
+            // tree", and Hidde struck it out on 2026-08-27: "een hele rare zin,
+            // zet gewoon bij thumb hoeveel mensen thumb up of down hebben
+            // gedaan verder niet." He is right about the sentence. A count is a
+            // number, and a number belongs on the control it is about, which is
+            // where every product that shows one puts it. So the figures live
+            // beside the thumbs in WorthItView and nowhere else on this page.
             // WHERE it is, with the width of the page to say it in.
             //
             // It used to be the middle column of the stat row, where "Plantage,
