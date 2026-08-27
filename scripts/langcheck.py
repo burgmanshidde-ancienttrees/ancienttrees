@@ -73,8 +73,22 @@ def main():
     print("Measure: a translated set should pass its English twin's impressions.\n")
 
     if not live:
-        print("No language table in DATA.md yet, so there is nothing to compare.")
-        print("The digest writes one from its next run; until then this is the baseline:\n")
+        # Distinguish "the digest has not run" from "the digest ran and wrote
+        # nothing", because those need opposite responses and I could not tell
+        # them apart for five days. language_lines() was defined, committed,
+        # and never called: the patch that was supposed to wire it in targeted
+        # a call signature that had already changed. The absence looked
+        # exactly like an honest "no impressions yet".
+        newest = re.search(r"^## (\d{4}-\d{2}-\d{2}) \(previous UTC day\)", 
+                           open(DATA_MD, encoding="utf-8").read(), re.M) if os.path.exists(DATA_MD) else None
+        if newest and newest.group(1) > taken:
+            print("BROKEN: the digest has run since the baseline (newest entry %s) and wrote"
+                  % newest.group(1))
+            print("no language table. language_lines() is not reaching DATA.md. Check that")
+            print("scripts/daily_digest.py actually CALLS it, not just defines it.\n")
+        else:
+            print("No language table in DATA.md yet and no digest has run since the baseline.\n")
+        print("The baseline, unchanged:\n")
         for r in sorted(doc["baseline"], key=lambda x: -x["en_impressions_10d"]):
             print("  %-3s %-14s %2d trees   English twin %4d impressions"
                   % (r["lang"], r["city"], r["trees"], r["en_impressions_10d"]))
