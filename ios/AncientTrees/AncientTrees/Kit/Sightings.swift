@@ -74,17 +74,35 @@ final class Sightings {
     static var syncOne: ((Sighting) -> Void)?
     static var syncGone: ((UUID) -> Void)?
 
-    private static var folder: URL {
+    /// Documents/sightings on a phone. A test passes its own throwaway
+    /// directory instead, because these tests are ABOUT losing trees and two of
+    /// them sharing a folder would read each other's collection, or worse,
+    /// the collection of whoever is using the simulator.
+    static var defaultFolder: URL {
         let d = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
             .appendingPathComponent("sightings", isDirectory: true)
         try? FileManager.default.createDirectory(at: d, withIntermediateDirectories: true)
         return d
     }
-    private var index: URL { Self.folder.appendingPathComponent("index.json") }
 
-    init() {
+    private let folder: URL
+    private var index: URL { folder.appendingPathComponent("index.json") }
+
+    private static func ensure(_ d: URL) {
+        try? FileManager.default.createDirectory(at: d, withIntermediateDirectories: true)
+    }
+
+    init(folder: URL? = nil) {
+        self.folder = folder ?? Self.defaultFolder
+        // The directory has to exist before anything reads or writes in it.
+        // It used to be recreated on every access, because `folder` was a
+        // computed property that made it each time; now that it is stored once,
+        // making it is explicit, and it has to happen again after a reset wipes
+        // it or every later write fails silently.
+        Self.ensure(self.folder)
         if ProcessInfo.processInfo.arguments.contains("-reset-collection") {
-            try? FileManager.default.removeItem(at: Self.folder)
+            try? FileManager.default.removeItem(at: self.folder)
+            Self.ensure(self.folder)
         } else {
             load()
         }
@@ -158,7 +176,7 @@ final class Sightings {
         var made = sighting
         if let image, let data = Self.downsized(image) {
             let file = made.id.uuidString + ".jpg"
-            try? data.write(to: Self.folder.appendingPathComponent(file))
+            try? data.write(to: folder.appendingPathComponent(file))
             made.photo = file
         }
         all.append(made)
@@ -167,7 +185,7 @@ final class Sightings {
 
     func image(_ s: Sighting) -> UIImage? {
         guard let f = s.photo else { return nil }
-        return UIImage(contentsOfFile: Self.folder.appendingPathComponent(f).path)
+        return UIImage(contentsOfFile: folder.appendingPathComponent(f).path)
     }
 
     // MARK: - editing
@@ -235,7 +253,7 @@ final class Sightings {
                          lat: lat, lng: lng, photo: nil, status: status)
         if let image, let data = Self.downsized(image) {
             let file = s.id.uuidString + ".jpg"
-            try? data.write(to: Self.folder.appendingPathComponent(file))
+            try? data.write(to: folder.appendingPathComponent(file))
             s.photo = file
         }
         all.append(s)
@@ -257,7 +275,7 @@ final class Sightings {
     func remove(_ id: UUID) {
         guard let i = all.firstIndex(where: { $0.id == id }) else { return }
         if let f = all[i].photo {
-            try? FileManager.default.removeItem(at: Self.folder.appendingPathComponent(f))
+            try? FileManager.default.removeItem(at: folder.appendingPathComponent(f))
         }
         let gone = all[i].id
         all.remove(at: i)
@@ -276,7 +294,19 @@ final class Sightings {
         guard side > max else { return image.jpegData(compressionQuality: 0.8) }
         let scale = max / side
         let size = CGSize(width: image.size.width * scale, height: image.size.height * scale)
-        let r = UIGraphicsImageRenderer(size: size)
+        // SCALE 1, and without this line the whole function was decoration.
+        //
+        // UIGraphicsImageRenderer draws at the SCREEN's scale unless told
+        // otherwise, which is 3 on every modern iPhone. So asking it for 1600
+        // points produced a 4800 pixel image and a file of several megabytes,
+        // nine times the pixels this function exists to avoid and nine times
+        // what the comment above claims. Nobody noticed because the picture
+        // looked right; it was the bytes that were wrong. Found by the first
+        // test ever written for it (2026-08-27), and it matters more now than
+        // it did last week, because these photographs go to the account.
+        let format = UIGraphicsImageRendererFormat.default()
+        format.scale = 1
+        let r = UIGraphicsImageRenderer(size: size, format: format)
         return r.image { _ in image.draw(in: CGRect(origin: .zero, size: size)) }
             .jpegData(compressionQuality: 0.8)
     }
@@ -329,10 +359,39 @@ final class Sightings {
         // as well and costs nothing, so writing is only refused in the one case
         // where the copy itself failed and the original is still the only copy
         // there is.
-        let copy = Self.folder.appendingPathComponent("index-unreadable.json")
-        var kept = FileManager.default.fileExists(atPath: copy.path)
-        if !kept {
+        // ASK WHETHER THESE BYTES ARE KEPT, not whether the name is taken.
+        //
+        // This used to be fileExists(), which answers yes to a directory, to an
+        // empty file, and above all to a copy of a DIFFERENT earlier breakage.
+        // A file that broke twice in two different ways then kept the first set
+        // of bytes and quietly wrote over the second, which is the one case
+        // where somebody has already lost trees once and is about to lose the
+        // rest (found by the first test written for this, 2026-08-27).
+        //
+        // Three steps, in this order, and the order is the whole thing:
+        //   1. these exact bytes are already saved, so there is nothing to do
+        //   2. the name is free, so use it
+        //   3. the name is taken by something else, so take a name of our own
+        //      rather than write over somebody's only copy
+        let fm = FileManager.default
+        let copy = folder.appendingPathComponent("index-unreadable.json")
+        var kept = (try? Data(contentsOf: copy)) == d
+        if !kept, !fm.fileExists(atPath: copy.path) {
             kept = (try? d.write(to: copy)) != nil
+        }
+        if !kept {
+            var n = 2
+            while n < 50 {
+                let alt = folder.appendingPathComponent("index-unreadable-\(n).json")
+                if let existing = try? Data(contentsOf: alt) {
+                    if existing == d { kept = true; break }       // already have these
+                    n += 1
+                    continue
+                }
+                if fm.fileExists(atPath: alt.path) { n += 1; continue }
+                kept = (try? d.write(to: alt)) != nil
+                break
+            }
         }
         all = Self.salvage(d)
         unreadable = all.isEmpty && !kept
@@ -378,7 +437,7 @@ final class Sightings {
     /// theirs.
     private func findOrphans() {
         let known = Set(all.compactMap(\.photo))
-        let files = (try? FileManager.default.contentsOfDirectory(atPath: Self.folder.path)) ?? []
+        let files = (try? FileManager.default.contentsOfDirectory(atPath: folder.path)) ?? []
         orphanPhotos = files.filter { $0.hasSuffix(".jpg") && !known.contains($0) }.sorted()
     }
 
