@@ -43,6 +43,13 @@ const RENAMED_CITY_SLUGS: [string, string][] = [["padova", "padua"]];
 // A tree that gets renamed keeps its old URL resolving.
 // Mirrors RENAMED_TREE_SLUGS, build_site.py:5276.
 const RENAMED_TREE_SLUGS: [string, string, string][] = [
+  // kyo_016 (2026-08-27): named "Chinkapin oak" while its own species field
+  // said Japanese Chinquapin, Castanopsis sieboldii. Chinkapin oak is Quercus
+  // muehlenbergii, a North American oak, and Castanopsis is not an oak at all,
+  // so the entry's title and its species contradicted each other in public.
+  // Found by the Japanese translation pass. Renamed to the name its Japanese
+  // page already uses and the pattern its Kyoto Gyoen neighbours follow.
+  ["kyoto", "chinkapin-oak-sudajii-of-omiya-gate-kyoto-gyoen", "kyo_016"],
   ["london", "queen-elizabeths-oak", "lon_005"],
   ["vienna", "stock-im-eisen", "vie_002"],
   ["barcelona", "plane-trees-of-la-rambla", "bcn_008"],
