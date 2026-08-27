@@ -40,6 +40,7 @@ struct TreeMapPage: View {
     var body: some View {
         TreeMap(trees: nearby,
                 collected: Set(saved.collected.map(\.treeId)),
+                favourites: Set(saved.favourites.map(\.treeId)),
                 onSelectTree: { id in
                     // A neighbour opens its own page, pushed on this same
                     // stack, so the trail keeps growing rather than resetting.

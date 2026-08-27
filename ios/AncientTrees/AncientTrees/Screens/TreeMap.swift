@@ -31,6 +31,10 @@ struct TreeMap: UIViewRepresentable {
     var mine: [(id: UUID, lat: Double, lng: Double, name: String)] = []
     /// Ours that you have already stood in front of. Only changes the pin.
     var collected: Set<String> = []
+    /// The trees you have hearted, so a favourite is visible on the map itself
+    /// rather than only in a list (Hidde, 2026-08-27: "kun je de bomen die je
+    /// gefavoriet hebt een hartje icoon geven zoals de ticket op de map").
+    var favourites: Set<String> = []
     /// Tapping a tree of your own opens its page, the same as one of ours.
     /// A callback because this view knows nothing about navigation.
     var onSelectMine: ((UUID) -> Void)? = nil
@@ -367,14 +371,16 @@ struct TreeMap: UIViewRepresentable {
             }
             // The collected set joins the identity of what is drawn: without
             // it, ticking a tree off changes no id and the pins never redraw.
-            let wantTrees = Set(trees.map(\.id)).union(
-                parent.collected.intersection(trees.map(\.id)).map { "c:" + $0 })
+            let wantTrees = Set(trees.map(\.id))
+                .union(parent.collected.intersection(trees.map(\.id)).map { "c:" + $0 })
+                .union(parent.favourites.intersection(trees.map(\.id)).map { "f:" + $0 })
             let wantMine = Set(mine.map { $0.id.uuidString })
             MainActor.assumeIsolated {
             if wantTrees != drawnTreeIDs {
                 drawnTreeIDs = wantTrees
                 MapLayers.setTrees(trees, on: style, clustered: clusters,
-                                   collected: parent.collected)
+                                   collected: parent.collected,
+                                   favourites: parent.favourites)
             }
             if wantMine != drawnMineIDs {
                 drawnMineIDs = wantMine
@@ -655,7 +661,7 @@ enum MapLayers {
     }
 
     static func setTrees(_ trees: [Tree], on style: MLNStyle, clustered: Bool,
-                         collected: Set<String> = []) {
+                         collected: Set<String> = [], favourites: Set<String> = []) {
         let month = Calendar.current.component(.month, from: Date())
         var features: [MLNPointFeature] = []
         for t in trees {
@@ -675,8 +681,9 @@ enum MapLayers {
                 : moss
             let seen = collected.contains(t.id)
             let ticket = t.paidEntry
+            let loved = favourites.contains(t.id)
             let name = imageName(species: t.commonName, peaking: peaking, colour: colour)
-                + (seen ? "-c" : "") + (ticket ? "-t" : "")
+                + (seen ? "-c" : "") + (ticket ? "-t" : "") + (loved ? "-f" : "")
             // Our own register of what has been added, rather than asking the
             // style whether it already has the image. That check drew exactly
             // ONE pin for eleven trees: whatever style.image(forName:) returns
@@ -687,7 +694,7 @@ enum MapLayers {
                 registered.insert(name)
                 style.setImage(pin(colour: colour,
                                    glyph: SpeciesGlyph.image(for: t.commonName),
-                                   collected: seen, ticket: ticket),
+                                   collected: seen, ticket: ticket, favourite: loved),
                                forName: name)
             }
             // Attributes must be values GeoJSON can hold: strings, numbers,
@@ -1002,7 +1009,7 @@ enum MapLayers {
     /// which is where Google Maps hangs its saved-place flag and what the
     /// Collected control in this app already uses as its symbol.
     private static func pin(colour: UIColor, glyph: UIImage?, collected: Bool = false,
-                            ticket: Bool = false) -> UIImage {
+                            ticket: Bool = false, favourite: Bool = false) -> UIImage {
         let d: CGFloat = 38
         return UIGraphicsImageRenderer(size: .init(width: d, height: d)).image { _ in
             colour.setFill()
@@ -1054,6 +1061,31 @@ enum MapLayers {
                                           width: s.width, height: s.height))
                 } else {
                     blue.setFill()
+                    UIBezierPath(ovalIn: r.insetBy(dx: 4, dy: 4)).fill()
+                }
+            }
+            if favourite {
+                // TOP RIGHT, because the other two corners are taken: the
+                // ticket sits bottom left and the collected tick bottom right,
+                // and a tree can wear all three at once. Red rather than moss:
+                // a heart is red in every app anybody has used, and the heart
+                // on our own cards is already red, so the map agrees with the
+                // list.
+                let b: CGFloat = 15
+                let r = CGRect(x: d - b - 1, y: 1, width: b, height: b)
+                UIColor.white.setFill()
+                UIBezierPath(ovalIn: r).fill()
+                let red = UIColor(red: 0.85, green: 0.20, blue: 0.24, alpha: 1)
+                if let heart = UIImage(systemName: "heart.fill")?
+                    .withConfiguration(UIImage.SymbolConfiguration(pointSize: 8,
+                                                                   weight: .bold))
+                    .withTintColor(red, renderingMode: .alwaysOriginal) {
+                    let sz = heart.size
+                    heart.draw(in: CGRect(x: r.midX - sz.width / 2,
+                                          y: r.midY - sz.height / 2,
+                                          width: sz.width, height: sz.height))
+                } else {
+                    red.setFill()
                     UIBezierPath(ovalIn: r.insetBy(dx: 4, dy: 4)).fill()
                 }
             }

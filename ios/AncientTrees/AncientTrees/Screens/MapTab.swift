@@ -292,6 +292,7 @@ struct MapTab: View {
             TreeMap(trees: shownWalk.map { catalogue.trees(of: $0) } ?? mapTrees,
                     mine: sightings.yoursOnly.map { (id: $0.id, lat: $0.lat, lng: $0.lng, name: $0.name) },
                     collected: collectedIds,
+                    favourites: favouriteIds,
                     onSelectMine: { navigator.push = .mine($0) },
                     onSelectTree: { navigator.push = .tree($0) },
                     focus: .init(latitude: origin.lat, longitude: origin.lng),

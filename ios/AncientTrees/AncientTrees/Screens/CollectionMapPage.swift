@@ -50,6 +50,7 @@ struct CollectionMapPage: View {
         TreeMap(trees: mine,
                 mine: sightings.yoursOnly.map { (id: $0.id, lat: $0.lat, lng: $0.lng, name: $0.name) },
                 collected: Set(saved.collected.map(\.treeId)),
+                favourites: Set(saved.favourites.map(\.treeId)),
                 onSelectMine: { navigator.push = .mine($0) },
                 onSelectTree: { navigator.push = .tree($0) },
                 focus: centre,
