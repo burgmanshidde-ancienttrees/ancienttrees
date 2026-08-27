@@ -290,7 +290,8 @@ struct MapTab: View {
         // it only stays the same if there is one of it.
         MapWithSheet(height: $sheetHeight, topItem: $topCard) {
             TreeMap(trees: shownWalk.map { catalogue.trees(of: $0) } ?? mapTrees,
-                    mine: sightings.yoursOnly.map { (id: $0.id, lat: $0.lat, lng: $0.lng, name: $0.name) },
+                    mine: sightings.yoursOnly.map { (id: $0.id, lat: $0.lat, lng: $0.lng, name: $0.name,
+                                                     photo: sightings.image($0)) },
                     collected: collectedIds,
                     favourites: favouriteIds,
                     onSelectMine: { navigator.push = .mine($0) },
