@@ -478,6 +478,11 @@ struct ContentView: View {
             // difference between an app that follows the database and an app
             // frozen at whatever shipped.
             Task { await store.refresh() }
+            // Crashes and hangs, from Apple's own MetricKit rather than an SDK
+            // (Kit/Diagnostics.swift). Registering at launch is the whole of
+            // the app's part: the system hands over what it gathered the next
+            // time the app opens, and only on a real device.
+            Diagnostics.shared.start()
             // How many people saved each tree, once per launch and never per
             // card: the whole table is a few thousand short rows and a request
             // inside a scrolling list is a stutter.

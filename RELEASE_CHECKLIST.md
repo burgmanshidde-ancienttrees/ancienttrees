@@ -37,7 +37,7 @@ of them can be automated here, and none of them may be skipped.
 - [ ] Set a display name and a picture, see them on My trees
 - [ ] Follow somebody, watch both counts move
 - [ ] Send a tree and a piece of feedback, find both rows in Supabase
-- [ ] **Delete the account and confirm everything is gone**: saves, visits, profile, avatar file, follows in both directions. This is the promise the whole account track was opened on, and Apple requires a working deletion path.
+- [ ] **Delete the account and confirm everything is gone**: saves, visits, profile, avatar file, follows in both directions. This is the promise the whole account track was opened on, and Apple requires a working deletion path. **This one is now a command rather than a checklist item**: `SUPABASE_SERVICE_KEY=... python3 scripts/account_delete_test.py` makes a throwaway account, gives it one of everything, signs in as it, calls `delete_user()` the way the button does, and prints what is left. It needs the service key, which is Hidde's to hand over or to run himself.
 
 **When things go wrong**
 - [ ] No network at all: no crash, no blank screen that reads as broken
@@ -50,8 +50,43 @@ of them can be automated here, and none of them may be skipped.
 
 ## 3. What Apple will ask for, and what we owe them
 
-- [ ] **Privacy labels that match what we now store.** This changed on 2026-08-26: a display name, a profile photograph and a follow graph are new personal data. The privacy page was updated the same day; App Store Connect has not been.
-- [ ] **Moderation for user photographs.** People can upload images to a public bucket. Review asks how that is moderated, and today the answer is nothing. This is the single most likely rejection.
+- [x] **Moderation, built 2026-08-27** (Hidde: "sociale deel gaat mee", then "maak gewoon die melden optie"). Guideline 1.2 asks for four things and the app now has all four: an ellipsis on every person opening **report** (four reasons, one tap) and **block**; a **Blocked people** list in Settings with an Unblock beside each name; `info@ancienttrees.app` published on the privacy page and in Settings; and the terms line on the sign-in sheet. Blocks are server-side so they survive a reinstall, and a trigger breaks the follow both ways. Schema: `supabase/reports.sql`.
+- [x] **Crash reporting, built 2026-08-27** (Hidde: "crash reporting zullen we daar eens mee beginnen dan"). MetricKit, so no SDK, no third party and no bill: crashes and hangs arrive once a day on the next launch, from real devices only, carrying nothing that says whose phone it was. Schema: `supabase/diagnostics.sql`. It cannot be tested here at all, only on a device through TestFlight.
+- [x] **The privacy manifest matches the app again** (`PrivacyInfo.xcprivacy`, rewritten 2026-08-27). It had not moved since accounts were an email address and nothing else.
+
+### The App Store Connect answers, to be typed in once
+
+App Privacy in App Store Connect is a separate form from the manifest above and
+nobody can fill it in but Hidde. These are the answers, and they are the same
+facts the manifest states, so the two cannot drift:
+
+| Data type | Collected | Linked to them | Used for tracking | Purpose |
+|---|---|---|---|---|
+| Email address | Yes | Yes | No | App Functionality |
+| Name (the display name they choose) | Yes | Yes | No | App Functionality |
+| Photos (the profile picture only) | Yes | Yes | No | App Functionality |
+| User ID | Yes | Yes | No | App Functionality |
+| Other User Content (saves, visits, follows, submissions, reports) | Yes | Yes | No | App Functionality |
+| Crash Data | Yes | **No** | No | App Functionality |
+| Performance Data | Yes | **No** | No | App Functionality |
+| Precise or Coarse Location | **No** | | | read on the phone, never sent |
+| Photos of trees | **No** | | | they stay in the app's own storage |
+
+Two answers that are easy to get wrong and both matter: **Tracking is No
+everywhere**, because nothing here is shared with a data broker or joined to
+another company's data, and **Crash and Performance data are NOT linked**,
+because those rows carry no account id by design.
+
+### The SQL Hidde has to run, in this order
+
+Each is idempotent and each is his, the same as `saves.sql` was:
+
+1. `supabase/reports.sql` - reporting and blocking. Until it runs, blocking works on the phone only and reports fail quietly.
+2. `supabase/diagnostics.sql` - where crashes land.
+3. `supabase/delete-user.sql` - **replaces** the existing `delete_user()`. It adds one thing the old one could not do: deleting the avatar image out of the bucket. Storage does not cascade off `auth.users`, so today a deleted account's picture stays public at its old address.
+
+### Still open
+
 - [ ] Support URL, marketing URL, privacy policy URL
 - [ ] Screenshots at the required sizes
 - [ ] Age rating
