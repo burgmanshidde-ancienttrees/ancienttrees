@@ -1,0 +1,80 @@
+{
+  "city": "Cologne",
+  "note": "From-zero verify pass, 2026-08-27. Source register: de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Koeln (wikitext), the city's own Naturdenkmal (natural monument) designation list, reproduced with descriptive locations and occasional coordinates/girths. Most entries are ordinary street trees (planes, horse chestnuts) protected under NRW natural-monument law and are not collectible destinations on their own; only the standouts are recorded here as leads. Delivered trees are in data/research/cologne-verified.json (kol_001 to kol_005).",
+  "leads": [
+    {
+      "register_id": "ND 102.01d",
+      "species": "Swamp cypress (Taxodium distichum)",
+      "location": "Volksgarten, northwest edge of the pond",
+      "reason": "Only the register itself found as a source so far; needs a second independent source before it can ship. Same park as kol_004 (Turkey oak), would extend that cluster."
+    },
+    {
+      "register_id": "ND 102.01a",
+      "species": "Japanese pagoda tree / Schnurbaum (Sophora japonica), group of 3",
+      "location": "Volksgarten, Volksgartenstrasse/Vorgebirgstrasse, southwest of the park entrance",
+      "reason": "EGHN's Volksgarten history names Sophora japonica among the founding-era exotic plantings generally, but not this specific group by location; worth a second look. It is a group of 3, so would need the ensemble test applied (compact, one obvious place to stand) before shipping as one entry."
+    },
+    {
+      "register_id": "ND 303.01a, ND 303.01b",
+      "species": "Copper/blood beech (Fagus sylvatica 'Atropunicea'), 2 trees",
+      "location": "Koelner Stadtwald, Kahnweiher, same spot as kol_005 (Moltke lime)",
+      "reason": "Same single-source situation as kol_005; not independently researched this pass. Would sit in the same three-tree micro-cluster as kol_005 if verified."
+    },
+    {
+      "register_id": "NDI 303.11a",
+      "species": "London Plane (Platanus x acerifolia)",
+      "location": "Park of St. Elisabeth-Krankenhaus Koeln-Hohenlind, same park as kol_002/kol_003",
+      "reason": "Named in both the register and the hospital's Wikipedia article, so existence is reasonably solid, but no coordinates or girth were published for this specific tree in either source found. Worth chasing tree-level data before shipping as a fourth Hohenlind entry."
+    },
+    {
+      "register_id": "ND 503.02 / ND 405.01",
+      "species": "Pedunculate oak pair (Quercus robur) at a cemetery entrance",
+      "location": "Untere Dorfstrasse/Mengenicherstr, cemetery entrance",
+      "reason": "Not researched this pass beyond the register line, no coordinates given, in an outer district not near the current clusters."
+    },
+    {
+      "register_id": "ND 303.02",
+      "species": "London Plane (Platanus x acerifolia)",
+      "location": "Melaten-Friedhof (Cologne's major historic cemetery)",
+      "reason": "Only one plane tree is registered here, but Melaten is a large, well-known historic cemetery and a plausible source of further old trees; not researched beyond the register line this pass. Worth a dedicated look next time, both for this tree and for unregistered veteran trees the cemetery itself may document."
+    },
+    {
+      "register_id": "ND 503.03/20 companions",
+      "species": "Ginkgo biloba (multiple registered specimens, e.g. ND 503.03/26, ND 503.03/43); Katsura pair (Cercidiphyllum japonicum, ND 503.03/30)",
+      "location": "Flora / Botanischer Garten, various spots",
+      "reason": "Flora's Wikipedia history names Ginkgo among the founding-era (1864) plantings generally, which is suggestive but not tree-specific, and several Ginkgo entries exist in the register so it is ambiguous which one (if any) is the founding specimen. Needs a closer look, ideally an on-the-ground or plaque-based confirmation, before picking one to ship."
+    },
+    {
+      "register_id": "Koelner Zoo entries (ND 503.01a-o)",
+      "species": "Giant sequoia pairs (Sequoiadendron gigantea), Cedar of Lebanon (Cedrus libani), weeping beech (Fagus sylvatica Pendula), honey locust, black pine and others",
+      "location": "Inside Koelner Zoo grounds",
+      "reason": "Paid entry (zoo ticket) is allowed under the access rules as long as it is stated honestly, so these are not blocked, just unresearched this pass. A future pass should verify one or two of the more distinctive specimens (the paired giant sequoias by the bear enclosure look promising) and confirm the zoo entry fee and hours."
+    }
+  ],
+  "blocked": [
+    {
+      "register_id": "NDI 103.12",
+      "species": "London Plane (Platanus x acerifolia)",
+      "location": "Inner courtyard (Innenhof) of St. Marien-Hospital, Altstadt-Nord",
+      "reason": "No evidence found that the hospital's inner courtyard is open to the public without business there; hospital courtyards are not presumed-open ground under hard rule 10's three tests. Leave out unless a future pass finds a source stating the courtyard is genuinely open to visitors."
+    },
+    {
+      "register_id": "NDI 501.01a, NDI 501.01b",
+      "species": "London Plane (Platanus x acerifolia), 4 trees total (2 registrations of 2 each)",
+      "location": "Nippes, east of St. Vinzenz Hospital",
+      "reason": "The register's own description states the first (western) tree of NDI 501.01b stands 'in einer privaten, parkartigen Grünfläche' (a private, garden-like green space) and the paired trees of NDI 501.01a stand between garage buildings in a similarly unclear setting. Explicitly private per the source; excluded under hard rule 10."
+    },
+    {
+      "register_id": "NDI 202.08, NDI 306.05, NDI 503.03, NDI 209.02, NDI 202.07, NDI 403.01",
+      "species": "Street-tree avenues (London Plane, small-leaved lime, horse chestnut), 20 to 191 trees per entry",
+      "location": "Various Cologne streets and medians (Bayenthalguertel, Statthalterhofallee, Boltensternstrasse, Bahnhofstrasse, Brohler Strasse, Rochusstrasse)",
+      "reason": "These are avenue/median plantings of dozens to nearly 200 trees each, protected as a group under the natural-monument law. They fail the collectible-point test: there is no one tree and no one place to stand, only a long street of ordinary trees. Not an entry, whatever their combined protected status."
+    },
+    {
+      "register_id": "ND 503.03/32 and/or ND 503.03/45",
+      "species": "Cedar of Lebanon (Cedrus libani), Flora / Botanischer Garten",
+      "location": "Near the tropical greenhouses, Flora",
+      "reason": "A 150-year-old Cedar of Lebanon 'in the Tropical Court' of the Flora, described elsewhere as probably the second-largest in Germany, fell in a storm on 2020-08-14 during greenhouse reconstruction work. The register (as fetched 2026-08-27) still lists two separate Libanon-Zeder entries in the Flora and it could not be established in this pass which, if either, is the felled tree versus a still-living second specimen elsewhere in the garden. Given the real risk of publishing a dead tree, both are held out until a future pass can confirm which register entry (if any) is still standing."
+    }
+  ]
+}

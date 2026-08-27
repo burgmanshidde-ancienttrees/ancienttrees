@@ -18,7 +18,7 @@
    "country": "Italy",
    "slug": "rome",
    "status": "published",
-   "trees": 29
+   "trees": 30
   },
   {
    "city": "Barcelona",
@@ -189,7 +189,7 @@
    "slug": "porto",
    "status": "published",
    "demand_views_90d": 120415,
-   "trees": 29
+   "trees": 27
   },
   {
    "city": "Alicante",
@@ -197,7 +197,7 @@
    "slug": "alicante",
    "status": "published",
    "demand_views_90d": 77454,
-   "trees": 11
+   "trees": 14
   },
   {
    "city": "Seoul",
@@ -238,7 +238,7 @@
    "slug": "nijmegen",
    "status": "published",
    "demand_views_90d": 42338,
-   "trees": 18
+   "trees": 20
   },
   {
    "city": "The Hague",
@@ -301,14 +301,6 @@
    "slug": "washington-dc",
    "status": "published",
    "trees": 14
-  },
-  {
-   "city": "Toronto",
-   "country": "Canada",
-   "slug": "toronto",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 4
   },
   {
    "city": "Bologna",
@@ -397,6 +389,14 @@
    "status": "published",
    "demand_views_90d": 33227,
    "trees": 12
+  },
+  {
+   "city": "Toronto",
+   "country": "Canada",
+   "slug": "toronto",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 6
   },
   {
    "city": "Oslo",
