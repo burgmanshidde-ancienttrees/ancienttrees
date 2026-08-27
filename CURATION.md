@@ -9,6 +9,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-27 (night run) - Vienna and Perugia: zero shipped, both genuinely correct; Paris: one Turkey Oak
+
+Continued rule 1(a) down the READY list. Vienna's 5 stayed leads on inspection: two are the same paired planting of Catalpa bignonioides "Nana", a dwarf ornamental cultivar, one just 10 years old at 37cm girth, nothing remarkable about either regardless of the loosened age/size rule; three are Naturdenkmal-protected trees at residential Vienna addresses (an apartment courtyard, a street near a cafe block, a Cottage-belt villa garden) where access genuinely could not be confirmed either way, checked again this pass with no new evidence found. Perugia's one live candidate, a cedar of Lebanon, sits roughly 40m from a school building with nothing distinguishing street frontage from schoolyard; left per the school-evidence rule rather than guessed at.
+
+Paris shipped 1 of 3: the Turkey Oak of Square Rene-Le Gall (par_033), held only for lacking a second source, which the 2026-08-10 ruling forbids; it sits 300m from the already-published par_031 (Horse Chestnut, same square), so no extra walking distance. Left 2 genuinely blocked: a weeping wych elm in a square shut for construction until roughly mid-2027, and a white mulberry whose register entry and a specifically-named 2008 planting could not be confirmed as the same physical tree (the square may hold more than one mulberry). Wrote the French translation for par_033 (Contract J). Build (3000 pages), qa.py, superlatives.py, preflight.py, pagegaps.py all clean.
+
 ## 2026-08-27 (night run) - Naples 20 to 22: two READY leads, four real holds confirmed
 
 Third rule-1(a) city of the run, after Barcelona and Bucaco. Naples' 6 READY leads split cleanly into two kinds on inspection. Two had only a forbidden reason blocking them and shipped: the ombu of Via Manzoni (nap_021, Posillipo) picked up a genuine second source, FAI's Places of the Heart listing, which resolves the earlier pass's single-source hold outright; the Baja California palm at the Orto Botanico (nap_022) was held only for being "the smallest of seven... says nothing the Jubaea does not say better", a worthiness call the 2026-08-10 ruling forbids.
