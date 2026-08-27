@@ -37,7 +37,7 @@ of them can be automated here, and none of them may be skipped.
 - [ ] Set a display name and a picture, see them on My trees
 - [ ] Follow somebody, watch both counts move
 - [ ] Send a tree and a piece of feedback, find both rows in Supabase
-- [ ] **Delete the account and confirm everything is gone**: saves, visits, profile, avatar file, follows in both directions. This is the promise the whole account track was opened on, and Apple requires a working deletion path. **This one is now a command rather than a checklist item**: `SUPABASE_SERVICE_KEY=... python3 scripts/account_delete_test.py` makes a throwaway account, gives it one of everything, signs in as it, calls `delete_user()` the way the button does, and prints what is left. It needs the service key, which is Hidde's to hand over or to run himself.
+- [x] **Delete the account and confirm everything is gone** (2026-08-27, proven; see below): saves, visits, profile, avatar file, follows in both directions. This is the promise the whole account track was opened on, and Apple requires a working deletion path. **This one is now a command rather than a checklist item**: `SUPABASE_SERVICE_KEY=... python3 scripts/account_delete_test.py` makes a throwaway account, gives it one of everything, signs in as it, calls `delete_user()` the way the button does, and prints what is left. It needs the service key, which is Hidde's to hand over or to run himself.
 
 **When things go wrong**
 - [ ] No network at all: no crash, no blank screen that reads as broken
@@ -86,7 +86,7 @@ Each is idempotent and each is his, the same as `saves.sql` was:
 3. `supabase/avatars-policy.sql` - lets somebody delete and replace their own profile picture. Without it the Storage API refuses the app's delete, and a deleted account's picture stays public at its old address. Found by running the deletion test, 2026-08-27.
 4. `supabase/delete-user.sql` - **replaces** the existing `delete_user()`. The first version of it tried to delete the avatar from SQL, which Supabase refuses, so the whole function rolled back and NOTHING was deleted. The app deletes the picture through the Storage API instead, in the moment before this is called.
 
-**State on 2026-08-27:** 1, 2 and 4 are run, and the deletion test was run against them. Everything in the database now goes with the account: saves, visits, profile, follows, blocks, reports and the account row itself. **3 is written and not yet run**, so the avatar file is the one thing that still outlives a deleted account, and the test still reports it as STILL THERE. Run it, then `SUPABASE_SERVICE_KEY=... python3 scripts/account_delete_test.py` to see the last row turn.
+**All four are run, and the deletion test passes on every row (2026-08-27).** A throwaway account was made, given a save, a visit, a profile, an avatar image, a follow, a block and a report, signed in as itself, and deleted the way the button does. What is left: nothing. Saves, visits, profile, follows, blocks, reports, the avatar file and the account row are all gone. Re-run it with `SUPABASE_SERVICE_KEY=... python3 scripts/account_delete_test.py` after any change to what an account owns; a new table without a cascade would show up here as the only row that stays.
 
 ### Still open
 
