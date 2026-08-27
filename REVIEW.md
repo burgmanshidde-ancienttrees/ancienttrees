@@ -13,6 +13,67 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-08-27
+
+Reviewed the last 24 hours of git history (back through `8910fc07`, spanning
+Wednesday afternoon into Thursday, roughly 100 commits): a long iOS session
+(tab bar redesign, profiles/follow/block/report, account deletion proven
+end-to-end, the sponsor sheet, the flow-walk QA layer, TestFlight prep) plus
+the usual night-run research passes (Cologne opened from zero, Nijmegen,
+Toronto, Guimaraes, Alicante, Palma verify passes, a Las Vegas self-correction
+restoring three wrongly-pulled trees) and a Wikidata-layer rework of the city
+queue. Ran `python3 scripts/qa.py` (3531 pages, clean), `python3
+scripts/superlatives.py` (480 claims, no collisions), and `python3
+scripts/health.py` (rung 2 shows the 2026-08-23 BLOCKER already answered;
+The Hague's intro now correctly reads 30 trees, confirmed against the built
+page and the underlying data file).
+
+**APP — could not run the screenshot pass this cycle: `/tmp/appshots-list.txt`
+is empty and `/tmp/appshots-note.txt` says "no screenshots under
+/tmp/appshots."** Given the size of tonight's app session (a full nav/tab
+redesign, new profile and moderation screens, a new sponsor sheet), this is
+the cycle where a visual pass would matter most. Flagging rather than
+guessing from diffs.
+
+**WARN, APP — a second, undocumented meaning for gold on the map, the exact
+kind of change DECISIONS.md asks to have recorded when it happens.**
+`ios/.../Screens/TreeMap.swift` (commit `51d6b061`, today) draws a gold ring
+around the pin for any tree a person added via their own photograph, with the
+commit's own reasoning: "Gold is allowed here and nowhere else outside Plus:
+this is the one thing on the map that is yours rather than ours." But
+DECISIONS.md's 2026-08-25 entry states the rule this touches in plain words:
+"a ticket is not a Plus feature, so the ticket mark on a pin left gold for
+blue. **Gold means paid-by-us everywhere else in the app**," and that entry
+exists specifically because "it moves a colour rule" and the project's own
+practice is to record such moves. Adding a tree by photograph is explicitly
+FREE (2026-08-20: "ticking is FREE; the PROOF is what is sold" refers to the
+photo/GPS-seal bundle as Plus, but collecting itself, including a
+self-submitted tree per 2026-08-24's "he comes to us whether they offer it or
+not," is not gated). So a reader who has internalised gold-means-Plus from
+the ticket badge may reasonably read their own free contribution's gold ring
+as a paid-tier marker, which is the reverse of the intended message ("yours,
+not ours"). This may well be exactly what Hidde wants (his own message
+proposed "met een gouden randje ofzo," tentative wording), but it is a colour
+rule that changed without a DECISIONS.md line the way the 2026-08-25 one got
+one, and the next session touching pin colours has no single place to learn
+both exceptions exist. FOR HIDDE: whether gold should mean two different
+things on the same map, or whether the "my trees" ring should use a different
+colour now that blue already carries "not one of our own tiers."
+
+Nothing else found at BLOCKER or WARN on the web side. Spot-checked the
+sponsor page, support page, privacy and terms (all touched today) against
+TONE_OF_VOICE.md and the builder-speak/never-explain-our-rules rules: clean,
+no banned words, no leaked personal data (the 2026-08-22 Gmail-address WARN
+in CURATION.md is also gone, confirmed by grep). Spot-checked Rome's new
+Eucalyptus of Forte Ardeatino entry (added by tonight's verify pass): the
+tree correctly ships with `photo.status: missing` and no photo anywhere in
+its schema, og:image falls back to the default, and an earlier read of a
+ginkgo filename near it in the raw city-page HTML turned out to belong to an
+unrelated `ItemList` entry, not this tree; false alarm, recorded so it is not
+re-chased. Not a Monday, so no scheduled corpus-rot audit this entry.
+
+---
+
 ## 2026-08-23
 
 Reviewed since the last review commit (`a9d6f4c`, 2026-08-22 07:00 UTC): 198
