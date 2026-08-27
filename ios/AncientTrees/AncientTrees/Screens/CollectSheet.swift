@@ -410,7 +410,7 @@ struct CollectSheet: View {
         d.locationHint = String(format: "%.5f, %.5f (GPS)", here.lat, here.lng)
         d.city = nearbyCityName ?? ""
         let ok = await Submission.send(d, from: "app:collect",
-                                       token: account.session?.accessToken)
+                                       token: await account.freshToken())
         // A failed send is a network problem and never a reason to lose
         // somebody's tree: it stays yours and stays queued.
         sightings.update(id, status: ok ? .sent : .mine)

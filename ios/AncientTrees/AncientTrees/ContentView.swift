@@ -501,13 +501,30 @@ struct ContentView: View {
             // card: the whole table is a few thousand short rows and a request
             // inside a scrolling list is a stutter.
             Task { await saveCounts.loadOnce() }
-            Task { await profiles.load(userId: account.session?.userId,
-                                       token: account.session?.accessToken) }
+            // A TOKEN THAT IS STILL GOOD, or none at all.
+            //
+            // This read the stored token straight out, and those live an hour,
+            // so on every launch after the first hour the request came back 401
+            // and the profile stayed empty: no name, no picture, and it looked
+            // exactly like a picture that had never saved (Hidde, 2026-08-27:
+            // "ik heb de app opnieuw opgestart en hij heeft mn profielfoto niet
+            // opgeslagen"). It had saved. It could not be read back.
+            //
+            // Falling through to nil rather than a stale token matters too: a
+            // profile is readable by anybody signed in OR not, so with no token
+            // the request still succeeds on the publishable key, where an
+            // expired one makes PostgREST refuse the whole call.
+            Task {
+                let token = await account.freshToken()
+                await profiles.load(userId: account.session?.userId, token: token)
+            }
             // Who you have blocked, from the server rather than only from this
             // phone: a reinstall or a second phone has to start where the last
             // one left off, or a block is not a block.
-            Task { await moderation.load(me: account.session?.userId,
-                                         token: account.session?.accessToken) }
+            Task {
+                guard let token = await account.freshToken() else { return }
+                await moderation.load(me: account.session?.userId, token: token)
+            }
             // Same debug scaffolding as -tab and -at: no simulator panel here,
             // so a screen only reachable by tapping cannot otherwise be looked
             // at before it ships.
