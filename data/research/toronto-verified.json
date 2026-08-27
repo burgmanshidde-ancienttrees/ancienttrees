@@ -1,0 +1,30 @@
+[
+  {
+    "id": "tro_006",
+    "name": "Zhelevo, the Coral Gable Drive Red Oak",
+    "species": "Red Oak (Quercus rubra)",
+    "age_estimate": "roughly 300 years",
+    "age_min": 250,
+    "age_max": 320,
+    "girth_cm": 495,
+    "location": {
+      "address": "76 Coral Gable Drive, Etobicoke, Toronto, Ontario",
+      "latitude": 43.7363,
+      "longitude": -79.5443,
+      "neighbourhood": "Humber Heights-Westmount, Etobicoke"
+    },
+    "verified_sources": [
+      "https://www.toronto.ca/city-government/planning-development/construction-new-facilities/park-facility-projects/historic-red-oak-tree-parkette-at-76-coral-gable-drive/",
+      "https://www.theglobeandmail.com/canada/article-meet-zhelevo-torontos-rolls-royce-of-trees/",
+      "https://www.canadiangeographic.ca/article/if-tree-could-talk-fight-save-zhelevo-torontos-most-iconic-red-oak",
+      "https://www.theglobeandmail.com/canada/article-this-is-the-perfect-tree-success-in-a-long-campaign-to-protect-a-250/"
+    ],
+    "access": "Free once open. The City of Toronto bought the private lot specifically to save this tree and is building a public parkette on it; as of the City's own July 2026 project update the house has been demolished and construction is underway, with opening projected Spring 2027. Until then the tree (which visibly dwarfs the former house from the street) is viewable from Coral Gable Drive but the lot itself is a construction site, not yet open ground.",
+    "transport": "Residential Etobicoke street near the Humber River; no specific TTC bus route to the door was confirmed by this pass. Reachable by bus from Islington or Kipling stations on the Bloor-Danforth subway line.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "story": "In 2020 Toronto's city council voted to buy a private house on Coral Gable Drive, not to live in it, but to tear it down and save the oak growing beside it. Locals call the tree Zhelevo, after a Macedonian village, and more than 1,300 donors helped fund the years-long campaign that got the city to act before a developer could.\n\nThe oak predates the city itself. At roughly three centuries old, it stood here before European settlement reached the Humber River in 1793, part of an oak savannah that once lined the old Toronto Carrying Place trail between Lake Ontario and Lake Simcoe. Its trunk runs nearly five metres round and its crown, at 24 metres, used to dwarf the house that stood beside it.\n\nThat house is gone now. The city is building a public parkette on the lot, due to open in spring 2027, and until then the oak is visible from the street rather than walk-up, towering over a construction site instead of a front lawn. It has already survived roughly three hundred years of whatever Toronto threw at it. A couple more waiting for a gate to open is nothing.",
+    "verify_notes": "Nicknamed 'Zhelevo' after a Macedonian folk tale/village name (Globe and Mail), also called 'the Coral Gable Drive Red Oak' in City of Toronto materials. Forests Ontario/OUFC Heritage Tree Program register entry HT-2009-102 lists nomination age as 250 years, but the lead file's own 'why' text says nominated 2017 while the register id itself says 2009 -- a discrepancy in the source register data, not resolved by this pass. Multiple news sources (Globe and Mail, Canadian Geographic) independently state the tree is 'approximately 300 years old' and predates 1793 European settlement of the area, so age_estimate follows the converged news figure rather than the register's own number, which is older data (last measured at nomination). Height 24m, trunk circumference 495cm per City of Toronto and Globe and Mail. Stood in the immediate vicinity of the historic Toronto Carrying Place Trail, part of a pre-settlement oak savannah remnant along the Humber River. Subject of a multi-year public campaign (1,300+ donors) that led Toronto City Council to vote 2020-11-26 to buy the property outright rather than let it be developed, explicitly to save the tree for 'another 100 years' -- an unusually strong alive/cared-for signal. FLAGGED only because the site is mid-construction as of this pass (Aug 2026) and the parkette itself is not yet open, so access is currently street-view-only rather than walk-up; this should resolve on its own by the projected Spring 2027 opening and the writer/reader should be told to check current status nearer that date.",
+    "photo": { "url": null, "license": null, "attribution": null, "status": "missing" }
+  }
+]
