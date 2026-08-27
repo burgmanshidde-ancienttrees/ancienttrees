@@ -826,10 +826,26 @@ struct TreeDetail: View {
         }
     }
 
+    private func accessLine(_ text: String, _ symbol: String) -> some View {
+        HStack(alignment: .firstTextBaseline, spacing: 8) {
+            Image(systemName: symbol)
+                .frame(width: 18, alignment: .center)
+            Text(text)
+                .fixedSize(horizontal: false, vertical: true)
+            Spacer(minLength: 0)
+        }
+    }
+
     private var accessBlock: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Label(tree.access, systemImage: "figure.walk")
-            Label(tree.transport, systemImage: "tram.fill")
+            // A FIXED COLUMN FOR THE ICONS, because two SF Symbols are two
+            // different widths and a Label puts its text straight after its
+            // own: a walking figure is narrow and a tram is wide, so these two
+            // lines started their text two points apart. Nobody can name that
+            // and everybody can see it, which is the whole reason the drift
+            // check exists.
+            accessLine(tree.access, "figure.walk")
+            accessLine(tree.transport, "tram.fill")
         }
         .font(.footnote)
         .foregroundStyle(.secondary)

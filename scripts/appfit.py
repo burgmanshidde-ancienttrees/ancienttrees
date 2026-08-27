@@ -161,6 +161,10 @@ class El:
     def right(self):
         return self.x + self.w
 
+    @property
+    def bottom(self):
+        return self.y + self.h
+
     def name(self):
         who = self.ident or self.label or ""
         who = who.replace("\n", " ")
@@ -310,6 +314,9 @@ def check(screen):
     W = screen["w"]
     mark_shelves(screen)
     els = screen["els"]
+    # The floating bar, by the identifiers its own items carry. It is drawn
+    # over every page, so anything it covers is unusable however well laid out.
+    bars = [e for e in els if e.ident in FLOATS_OVER_PAGES]
 
     for el in els:
         if (el.w <= 0 or el.h <= 0 or el.ident in SYSTEM_IDS
@@ -336,6 +343,33 @@ def check(screen):
             findings.append(("CLIPPED", el,
                              f"ends at {el.right:.0f} on a {W:.0f} point screen, "
                              f"so {el.right - W:.0f} points are off the edge"))
+
+        # BURIED: a control that is on the screen, the right size and in the
+        # right column, and that a person still cannot use because the
+        # floating bar is drawn on top of it.
+        #
+        # This is the check that was missing, and it is the reason a sheet
+        # opening too low reached his telephone with the stats row and the top
+        # of the list under the bar (2026-08-27: "hoe kan dit er doorheen
+        # glippen"). Every other rule here asks a question about geometry.
+        # None of them asks whether you can reach the thing.
+        # NOT WHAT YOU CAN SCROLL CLEAR. A card at the bottom of a list is
+        # under the bar in this photograph and one flick away from not being,
+        # which is true of every list on every phone and is not a fault. Only
+        # something that CANNOT move is buried: a sheet's fixed header, an
+        # action bar, a control pinned to the screen. That distinction is the
+        # whole value of the check, and without it the first run reported the
+        # heart on the last visible card on nearly every screen.
+        if (el.ident not in FLOATS_OVER_PAGES and el.type in TAPPABLE
+                and not inside(el, ("ScrollView", "Table", "CollectionView"))):
+            for bar in bars:
+                overlap = min(el.bottom, bar.bottom) - max(el.y, bar.y)
+                across = min(el.right, bar.right) - max(el.x, bar.x)
+                if overlap > 6 and across > el.w * 0.5:
+                    findings.append(("BURIED", el,
+                                     f"sits under the floating bar for "
+                                     f"{overlap:.0f} points, so it cannot be tapped"))
+                    break
 
         min_tap = MIN_TAP * screen.get("scale", 1.0)
         # APPLE'S OWN SEGMENTED CONTROL IS 32 POINTS TALL and always has been:

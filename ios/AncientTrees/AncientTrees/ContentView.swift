@@ -327,13 +327,35 @@ struct ContentView: View {
                     // page cannot fail that way, because there is nothing to
                     // re-insert.
                     let showing = path(tab).wrappedValue.isEmpty
-                    TabBar(selected: tab,
-                           select: { tabSelection.wrappedValue = $0 },
-                           collect: { openCollect() })
-                        .opacity(showing ? 1 : 0)
-                        .frame(height: showing ? nil : 0)
-                        .allowsHitTesting(showing)
-                        .animation(.easeInOut(duration: 0.18), value: showing)
+                    // THE INSET ALWAYS HAS CONTENT, and the content is either
+                    // the bar or nothing at all.
+                    //
+                    // Two failures, one line apart. An `if` with no `else`
+                    // makes the inset itself come and go, and it does not
+                    // always come back: that is the bar vanishing after
+                    // settings. Keeping the bar and merely making it
+                    // transparent leaves it in the accessibility tree, so
+                    // VoiceOver reads three tabs that are not there and the
+                    // layout gate finds the tree page's own buttons buried
+                    // under a bar nobody can see. This has an else, so the
+                    // inset never disappears, and it swaps the bar out rather
+                    // than dimming it, so nothing invisible is left behind.
+                    if showing {
+                        TabBar(selected: tab,
+                               select: { tabSelection.wrappedValue = $0 },
+                               collect: { openCollect() })
+                    } else {
+                        Color.clear.frame(height: 0)
+                    }
+                        // AND GONE FROM THE TREE, not merely transparent. A
+                        // bar with no height, no opacity and no hit testing is
+                        // invisible to a person and still present to anything
+                        // reading the screen: VoiceOver would announce three
+                        // tabs that are not there, and the layout gate reported
+                        // the tree page's own buttons as buried underneath it
+                        // (2026-08-27). Both are the same mistake, which is
+                        // hiding something from eyes only.
+
                 }
                 .appObjects(self)
                 .onChange(of: navigator.collectNearby) { _, want in
