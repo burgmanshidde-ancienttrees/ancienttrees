@@ -3,9 +3,9 @@
   "country": "France",
   "status": "needs_curation",
   "intro": "Paris treats its trees as part of the civic record: the city logs every one of its 200,000 street and park trees in an open register and stamps a select few as officially remarkable. Its two oldest trees are father and son, black locusts raised four centuries ago from American seed by the royal herbalist Jean Robin and his son Vespasien, and both still flower every spring. They include the city's oldest tree, its thickest, its tallest, and an address that has held an elm since the Middle Ages. Every one is a metro ride away.",
-  "meta_description": "Paris logs its remarkable trees like monuments. Meet the 1601 Robinier, planted by the king's herbalist, and 29 more within a metro ride.",
+  "meta_description": "Paris logs its remarkable trees like monuments. Meet the 1601 Robinier, planted by the king's herbalist, and 30 more within a metro ride.",
   "question_answer": "The oldest tree in Paris is the Robinier of Square Rene-Viviani, a black locust planted in 1601 by the royal herbalist Jean Robin, now around 425 years old. It stands in the Latin Quarter directly opposite Notre-Dame, three minutes on foot from Saint-Michel Notre-Dame station.",
-  "question_meta": "The 1601 Robinier of Square Rene-Viviani is the oldest tree in Paris. Its story, exact location, and 29 more remarkable trees nearby.",
+  "question_meta": "The 1601 Robinier of Square Rene-Viviani is the oldest tree in Paris. Its story, exact location, and 30 more remarkable trees nearby.",
   "question_context": "Paris is unusual among capitals in that its oldest tree has a name, a planting date and a planter. Jean Robin, herbalist to Henri IV, raised the black locust from American seed and set it in the ground in 1601, nineteen years before the Mayflower sailed. It still stands in Square Rene-Viviani opposite Notre-Dame, propped by concrete and partly hidden by ivy, and it still flowers every spring. The runner-up is its own son: in 1636 Robin's son Vespasien took a cutting and planted it in the new royal medicinal garden, now the Jardin des Plantes, where it also survives. That makes the two oldest trees in Paris a documented parent and child, four centuries old and two kilometres apart. Both are black locusts, an American species that reached Europe as a handful of seeds and was named Robinia after the family. For age with grandeur rather than paperwork, the Cedar of Jussieu from 1734 is the city's third elder. Getting there: Saint-Michel Notre-Dame station, then a three minute walk along the Seine.",
   "faq": [
     {
@@ -1099,6 +1099,37 @@
       "location_precision": "confirmed",
       "height_m": 27.0,
       "verify_notes": "Height 27.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away)."
+    },
+    {
+      "id": "par_033",
+      "name": "The Turkey Oak of Square Rene-Le Gall",
+      "species": "Turkey Oak (Quercus cerris)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 190,
+      "height_m": 18.0,
+      "location": {
+        "address": "1 Rue Emile Deslandres",
+        "latitude": 48.83328754283984,
+        "longitude": 2.350246664924597,
+        "neighbourhood": "Square Rene-Le Gall (Jardin des Gobelins), Croulebarbe, 13th arrondissement"
+      },
+      "verified_sources": [
+        "data/registers/paris-arbres-remarquables.json (register_id 104840, girth 190cm, height 18m, Ville de Paris Arbres Remarquables)"
+      ],
+      "access": "Free, public municipal square (Square Rene-Le Gall, also known as Jardin des Gobelins), open standard Paris park hours and closed at night",
+      "transport": "Corvisart or Les Gobelins (Metro 6/7), 8-10 min walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Three hundred metres from Square Rene-Le Gall's horse chestnut, on the same buried river, stands a Turkey oak the city's own register lists at 190 centimetres round and 18 metres tall. It shares the garden's history without sharing its fame: the horse chestnut has a planting date, an obelisk nearby and a published story, while this oak has only its two register measurements and a spot in the same 1930s park laid out over the vanished Bievre.\n\nQuercus cerris is a fast grower for an oak, native to southern Europe and Asia Minor, distinguishable from more familiar oaks by acorns wrapped in a shaggy, moss-like cup that gives the species its French name, chene chevelu, the hairy oak. Paris plants it as a street and park tree precisely because it tolerates drought and poor soil better than the native pedunculate oak, useful for a garden built on reclaimed, once-marshy ground.\n\nNo second source beyond the city's own tree register has been found for this specific tree, so it ships flagged. If you know more, the garden's obelisk is a five minute walk and the two trees make an easy stop on the same visit.",
+      "verify_notes": "Single official source (Ville de Paris Arbres Remarquables register, register_id 104840): girth 190cm, height 18m, no planting date. Earlier pass held this back only for lacking a second source ('short of the two-source bar'), which CLAUDE.md's 2026-08-10 ruling forbids as a publish blocker; Step 2 explicitly allows a single-sourced tree to ship flagged. 300m from the already-published par_031 (Horse Chestnut, same square), no extra walking distance on the existing walk. A city per-tree PDF fact sheet exists for a nearby-numbered register entry (104839, not this tree's 104840) but was not confirmed to be the same specimen; not used as a source here to avoid a wrong-tree risk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

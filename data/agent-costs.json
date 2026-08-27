@@ -3595,6 +3595,13 @@
         "tokens": 0,
         "trees": 2,
         "note": "Session work, no dispatched pass. Rule 1(a): leads.py --ready listed 6 for Naples. Shipped 2 with real basis: an ombu on Via Manzoni (nap_021, found a genuine second source, FAI's Places of the Heart, resolving the earlier pass's single-source hold) and a Baja California palm at the Orto Botanico (nap_022, held only on a taste/worthiness call the 2026-08-10 ruling forbids). Left 4 alone for real, non-forbidden reasons: a Magnolia at Capodimonte whose two Italian registers disagree by 1.78x on girth for the same coordinate (same class of problem as an already-blocked Plane candidate, and the museum's own monumental-trees page omits it entirely), two cloister camphors with genuinely unconfirmed institutional access (university medical faculty, fine arts academy), and a Nolina/Beaucarnea whose two registers give flatly conflicting species names, an open question needing an on-site label check. Corrected the palm's species from the register's outdated 'Brahea roezlii' to 'Brahea armata' per Kew POWO's synonymy, avoiding a hard-rule-9 collision with an existing Rome entry. Fixed a pre-existing stale intro count (8 should always have been 9 for Capodimonte) found while updating the new totals. Build+qa.py+superlatives.py+preflight.py+pagegaps.py all clean."
+      },
+      {
+        "target": "vienna, perugia, paris",
+        "kind": "verify",
+        "tokens": 0,
+        "trees": 1,
+        "note": "Session work, no dispatched pass. Continued rule 1(a) into three more cities. Vienna's 5 READY leads all confirmed still genuinely blocked (two ordinary young 'Nana' dwarf-cultivar street catalpas with nothing remarkable about them beyond youth, three Naturdenkmal-protected trees at residential/villa addresses with real unresolved courtyard-access questions); recorded the re-check in the leads file, shipped nothing. Perugia's cedar candidate sits ~40m from a school building with no way to distinguish street frontage from schoolyard; left as a lead per the school-evidence rule. Paris: shipped 1 of 3 (par_033, a Turkey Oak in Square Rene-Le Gall, held only for lacking a second source, which the 2026-08-10 ruling forbids; 300m from an existing tree, no extra walking distance); left 2 for real reasons (a multi-year construction closure, an unresolved tree-identity question between a register entry and a named 2008 planting). Wrote the required French translation for par_033 (Contract J). Build+qa.py+superlatives.py+preflight.py+pagegaps.py all clean."
       }
     ]
   }
