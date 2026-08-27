@@ -3588,6 +3588,13 @@
         "tokens": 0,
         "trees": 5,
         "note": "Session work, no dispatched pass. Rule 1(a): leads.py --ready listed 10 for Bucaco (single-official-source ICNF register, an already-published city, 9 to 14). Shipped 5 held only on now-forbidden reasons (distance/count, undated-single-source): a second redwood (Porta das Lapas, distinct from the removed unreachable Santo Elias pair), an American ash with a precise 136-year register age, a 36m sycamore that gives the page its first best_time (autumn colour), a laurisilva relict (til/Ocotea foetens) growing on the mainland, and a third cypress with a distinct setting (a ruined hermitage) written to avoid repeating the two already-published cypresses' own stories. Left 1 candidate (a second Mexican white pine) unshipped: its register entry carries a physically impossible height/girth pairing (100m height), a data error not resolved this pass. Two species-name collisions fixed against hard rule 9 (Sycamore not 'Sycamore Maple', Til/Stinkwood not 'Til', matching existing Amsterdam/Madeira usage). Fixed a pre-existing stale 'three sequoias' meta_description (only ever 1 was published; the other 2 were removed 2026-08-21 for being unreachable) alongside the new count. Build+qa.py+superlatives.py+preflight.py all clean."
+      },
+      {
+        "target": "naples",
+        "kind": "write",
+        "tokens": 0,
+        "trees": 2,
+        "note": "Session work, no dispatched pass. Rule 1(a): leads.py --ready listed 6 for Naples. Shipped 2 with real basis: an ombu on Via Manzoni (nap_021, found a genuine second source, FAI's Places of the Heart, resolving the earlier pass's single-source hold) and a Baja California palm at the Orto Botanico (nap_022, held only on a taste/worthiness call the 2026-08-10 ruling forbids). Left 4 alone for real, non-forbidden reasons: a Magnolia at Capodimonte whose two Italian registers disagree by 1.78x on girth for the same coordinate (same class of problem as an already-blocked Plane candidate, and the museum's own monumental-trees page omits it entirely), two cloister camphors with genuinely unconfirmed institutional access (university medical faculty, fine arts academy), and a Nolina/Beaucarnea whose two registers give flatly conflicting species names, an open question needing an on-site label check. Corrected the palm's species from the register's outdated 'Brahea roezlii' to 'Brahea armata' per Kew POWO's synonymy, avoiding a hard-rule-9 collision with an existing Rome entry. Fixed a pre-existing stale intro count (8 should always have been 9 for Capodimonte) found while updating the new totals. Build+qa.py+superlatives.py+preflight.py+pagegaps.py all clean."
       }
     ]
   }

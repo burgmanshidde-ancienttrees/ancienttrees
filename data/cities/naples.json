@@ -2,10 +2,10 @@
   "city": "Naples",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Naples has more catalogued monumental trees than any other Italian city, and keeps them in two places worth a morning each. The Real Bosco di Capodimonte is a former Bourbon hunting estate the court spent two centuries filling with specimens from China, Mexico and Australia, and eight of these trees grow there. The second walk is the Real Orto Botanico, founded by decree in 1807, where five more stand within 150 metres, including the widest trunk on the city's register. The rest are scattered.",
+  "intro": "Naples has more catalogued monumental trees than any other Italian city, and keeps them in two places worth a morning each. The Real Bosco di Capodimonte is a former Bourbon hunting estate the court spent two centuries filling with specimens from China, Mexico and Australia, and nine of these trees grow there. The second walk is the Real Orto Botanico, founded by decree in 1807, where six more stand within 150 metres, including the widest trunk on the city's register. The rest are scattered.",
   "meta_description": "Naples's most remarkable trees, in two walks: the Bourbon estate at Capodimonte with its 220-year-old camphor, and the 1807 botanical garden on Via Foria.",
   "question_answer": "Naples's oldest documented tree is the Canforo del Giardino dei Principi, a camphor tree in the Real Bosco di Capodimonte planted in the early 1800s and roughly 220 years old, brought directly from China during the Bourbon era. It grows in the Garden of the Princes, a free section of the park in the north of the city.",
-  "question_meta": "Naples's oldest tree is a 220-year-old camphor at Capodimonte, brought from China by the Bourbons. Its story, and nineteen more trees.",
+  "question_meta": "Naples's oldest tree is a 220-year-old camphor at Capodimonte, brought from China by the Bourbons. Its story, and twenty-one more trees.",
   "question_context": "Naples tops Italy's own official register of monumental trees, the national list created under a 2013 law, with more catalogued specimens than any other municipality in the country. Most of that count concentrates in one place, the Real Bosco di Capodimonte, the former Bourbon royal hunting estate whose Garden of the Princes and Royal Orchard the park's own museum has singled out as home to six specifically monumental trees. Among those, the camphor tree of the Garden of the Princes is the one most consistently dated, at roughly 220 years old, brought from China in the early 1800s and now one of the largest camphor trees anywhere in Europe. A second camphor in the nearby Royal Orchard and a Montezuma cypress share the same garden but only carry a broad 19th century estimate, undated precisely by any single source, a gap common to several other trees on this list. The park is free to enter in most sections.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Why does Capodimonte have so many of Naples's oldest trees?",
-      "a": "Because the Bourbon kings spent roughly two centuries turning a royal hunting estate into a working botanical showcase, importing camphor from China, cypress from Mexico and eucalyptus from Australia. Nine of the twenty trees on this list, and more than half of Naples's officially catalogued monumental trees citywide, grow within its 134 hectares."
+      "a": "Because the Bourbon kings spent roughly two centuries turning a royal hunting estate into a working botanical showcase, importing camphor from China, cypress from Mexico and eucalyptus from Australia. Nine of the twenty-two trees on this list, and more than half of Naples's officially catalogued monumental trees citywide, grow within its 134 hectares."
     },
     {
       "q": "What happened to the famous Pino di Posillipo?",
@@ -718,6 +718,69 @@
       "notes": "Pin: MASAF sheet 03/F839/NA/15 (Eucalyptus camaldulensis, Piazza Vittoria - Villa Comunale, girth 676cm) sits 2m from this point. ",
       "height_m": 25.0,
       "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (2 m away)."
+    },
+    {
+      "id": "nap_021",
+      "name": "The Ombu of Via Manzoni",
+      "species": "Ombu (Phytolacca dioica)",
+      "age_estimate": "over 100 years",
+      "age_min": 100,
+      "age_max": 150,
+      "girth_cm": 627,
+      "location": {
+        "address": "Via Alessandro Manzoni 246, Posillipo, 80123 Napoli",
+        "latitude": 40.81108,
+        "longitude": 14.19794,
+        "neighbourhood": "Posillipo"
+      },
+      "verified_sources": [
+        "data/registers/italy-masaf.json (Naples register entry, girth 627cm, height 10m)",
+        "https://fondoambiente.it/luoghi/albero-phytolacca-dioica-via-manzoni (FAI, I Luoghi del Cuore, nominated in campaigns spanning 2006-2022)"
+      ],
+      "access": "Free, stands directly on a public street, no gate",
+      "transport": "Posillipo neighbourhood; reachable by bus along Via Manzoni",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "An ombu on a Posillipo street corner has one of the widest trunks of any tree in Naples, 6.27 metres round, and almost none of that girth is wood. Phytolacca dioica is technically an oversized herb rather than a tree, its base swollen with water storing tissue instead of true timber, which is why it can reach this circumference while standing only 10 metres tall.\n\nThe species comes from the Argentine and Uruguayan pampas, imported across the Mediterranean in the 19th century as a curiosity that thrives wherever winters stay above freezing. This one has stood on Via Manzoni long enough to be nominated repeatedly to FAI's Places of the Heart campaign, in years spanning 2006 to 2022, an unusually long streak of local affection for a tree most guidebooks skip entirely.\n\nNo growth rings exist to date it by, since the wood is too soft and spongy to hold them, so the register's own estimate, over a century, is as precise as anyone can get. It stands directly on the public street, no gate and no ticket, one entry on a five kilometre road that is otherwise mostly known for its views over the bay.",
+      "verify_notes": "Register (italy-masaf.json, Naples entry): girth 627cm, height 10m. Independently corroborated by FAI's fondoambiente.it page, matching girth exactly (627cm) and confirming public-street location (Via Alessandro Manzoni 246). Reverse-geocoded (Nominatim, 2026-08-27) to Via Alessandro Manzoni, a tertiary public road. Two-sourced. Earlier pass held this back only for being single-sourced and standing alone with nothing else nearby, both reasons CLAUDE.md's 2026-08-10 ruling forbids as publish blockers (isolation is not a collectibility failure); the FAI source resolves the single-source concern regardless.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nap_022",
+      "name": "The Blue Palm of the Botanical Garden",
+      "species": "Mexican Blue Palm (Brahea armata)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 190,
+      "height_m": 4.0,
+      "location": {
+        "address": "Real Orto Botanico di Napoli, Via Foria 223, 80139 Napoli",
+        "latitude": 40.861089,
+        "longitude": 14.26175,
+        "neighbourhood": "San Carlo all'Arena"
+      },
+      "verified_sources": [
+        "data/registers/italy-masaf.json (processo 33/F839/NA/15, girth 190cm, height 4m)",
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_164.html (Campania regional register, scheda 164, same figures)"
+      ],
+      "access": "Free, no booking. Open weekdays only: Mon, Wed, Fri 9:00-14:00, Tue and Thu 9:00-16:00, closed Saturday and Sunday",
+      "transport": "10 min walk from Cavour or Museo metro, or bus along Via Foria",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Two official Italian registers record this palm under a name that has since gone out of use. Both call it Brahea roezlii, 1.9 metres round and 4 metres tall, but Kew's own taxonomic database now treats roezlii as an old synonym rather than a separate species, folded into Brahea armata decades ago. The garden's own palm collection page agrees with Kew: it lists only armata and Brahea edulis among its blue Mexican palms, roezlii nowhere to be found.\n\nBrahea armata is native to the limestone canyons of Baja California, prized in cultivation for the powdery blue-grey wax on its fronds, thick enough to rub off on a hand. It grows slowly and stays compact, which explains four metres of height after however many decades it has had.\n\nThe garden is free to enter but keeps university hours, weekdays only and closed on public holidays. If a label on site still reads roezlii, that is the register's own name catching up with the plant rather than a second opinion.",
+      "verify_notes": "Two independent official registers (italy-masaf.json processo 33/F839/NA/15, and Campania regional scheda 164) agree closely: girth 190cm, height 4m. Both name the species Brahea roezlii, an older name; Kew's Plants of the World Online (powo.science.kew.org, checked 2026-08-27) lists Brahea roezlii D'Ancona as a synonym of Brahea armata, and the garden's own palmeto page (ortobotaniconapoli.it) lists only armata and Brahea edulis, consistent with that synonymy. Species field set to Brahea armata per hard rule 9 (matching the site's existing Rome entry of the same species), with the register's own 'roezlii' label explained in the story rather than silently dropped. Earlier pass held this back only on the ground of being 'the smallest of seven... says nothing the Jubaea does not say better', a taste/worthiness judgement CLAUDE.md's 2026-08-10 ruling forbids as a publish blocker.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
