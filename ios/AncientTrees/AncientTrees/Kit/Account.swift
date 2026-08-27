@@ -144,6 +144,15 @@ public final class Account {
         restore()
     }
 
+    /// A unit test's way in, and only that. It sets the two fields the Keychain
+    /// would have restored and touches nothing else, so a test about what
+    /// happens to a session left alone for three weeks needs no Keychain, no
+    /// network and no real account.
+    init(restoring session: Session?) {
+        self.session = session
+        state = session.map { .signedIn(email: $0.email) } ?? .signedOut
+    }
+
     // MARK: - restoring
 
     private func restore() {
@@ -186,14 +195,48 @@ public final class Account {
         if s.isFresh { return true }
         let r = Supa.request("/auth/v1/token?grant_type=refresh_token",
                              body: ["refresh_token": s.refreshToken])
-        guard let parsed = await Self.send(r) else {
+        switch await Self.refresh(r) {
+        case .ok(let parsed):
+            store(parsed)
+            return true
+        case .rejected:
             // A spent or revoked refresh token is a real sign-out. Leaving it in
             // place would show an account screen that cannot save anything.
             signOut()
             return false
+        case .unreachable:
+            // NO SIGNAL IS NOT A SIGN-OUT, and it used to be one. Found by the
+            // first offline test ever written here (2026-08-27): every failure
+            // took the same branch, so opening the app an hour after signing in,
+            // in a wood with no bereik, cleared the Keychain and asked the
+            // person to sign in again. Which is precisely where this app is
+            // meant to be used, and the one place it could not ask them to.
+            //
+            // Nothing is lost by keeping it. The collection is already correct
+            // on the phone, the token is refused by the server anyway if it has
+            // really been revoked, and the next launch with a signal tries
+            // again and gets a real answer.
+            return false
         }
-        store(parsed)
-        return true
+    }
+
+    private enum Refreshed {
+        case ok(Session)
+        case rejected        // the server answered, and the answer was no
+        case unreachable     // nobody answered at all
+    }
+
+    private static func refresh(_ r: URLRequest) async -> Refreshed {
+        guard let (data, resp) = try? await Net.data(for: r),
+              let http = resp as? HTTPURLResponse else { return .unreachable }
+        // A 5xx is the server saying it is broken, not that this token is. It
+        // belongs with no-signal rather than with a refusal: Supabase having a
+        // bad ten minutes must not empty somebody's Keychain, which is the same
+        // mistake as the one above wearing a different hat.
+        if http.statusCode >= 500 { return .unreachable }
+        guard (200..<300).contains(http.statusCode) else { return .rejected }
+        guard let parsed = session(from: data) else { return .rejected }
+        return .ok(parsed)
     }
 
     // MARK: - the email route
@@ -208,7 +251,7 @@ public final class Account {
         problem = nil
         let r = Supa.request("/auth/v1/otp",
                              body: ["email": clean, "create_user": true])
-        guard let (_, resp) = try? await URLSession.shared.data(for: r),
+        guard let (_, resp) = try? await Net.data(for: r),
               let http = resp as? HTTPURLResponse, (200..<300).contains(http.statusCode) else {
             state = .signedOut
             problem = "We could not send that just now. Try again in a minute."
@@ -286,7 +329,7 @@ public final class Account {
 
     private static func user(accessToken: String) async -> (id: String, email: String?)? {
         let r = Supa.request("/auth/v1/user", method: "GET", token: accessToken)
-        guard let (data, resp) = try? await URLSession.shared.data(for: r),
+        guard let (data, resp) = try? await Net.data(for: r),
               let http = resp as? HTTPURLResponse, (200..<300).contains(http.statusCode),
               let j = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
               let id = j["id"] as? String else { return nil }
@@ -319,11 +362,11 @@ public final class Account {
         // Not guarded, deliberately. If this fails, the account still goes: an
         // orphaned image is a tidy-up job, an account that will not delete is a
         // broken promise and a rejected app.
-        _ = try? await URLSession.shared.data(
+        _ = try? await Net.data(
             for: Supa.request("/storage/v1/object/avatars/\(s.userId)/avatar.jpg",
                               method: "DELETE", token: s.accessToken))
         let r = Supa.request("/rest/v1/rpc/delete_user", token: s.accessToken)
-        let ok = (try? await URLSession.shared.data(for: r))
+        let ok = (try? await Net.data(for: r))
             .flatMap { ($0.1 as? HTTPURLResponse) }
             .map { (200..<300).contains($0.statusCode) } ?? false
         if ok { signOut() }
@@ -333,9 +376,16 @@ public final class Account {
     // MARK: - the one place a token response is read
 
     private static func send(_ r: URLRequest) async -> Session? {
-        guard let (data, resp) = try? await URLSession.shared.data(for: r),
-              let http = resp as? HTTPURLResponse, (200..<300).contains(http.statusCode),
-              let j = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+        guard let (data, resp) = try? await Net.data(for: r),
+              let http = resp as? HTTPURLResponse, (200..<300).contains(http.statusCode)
+        else { return nil }
+        return session(from: data)
+    }
+
+    /// One parser, used by both routes above. It was written twice for a while
+    /// and the two copies were already drifting.
+    private static func session(from data: Data) -> Session? {
+        guard let j = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
               let access = j["access_token"] as? String,
               let refresh = j["refresh_token"] as? String else { return nil }
         let user = j["user"] as? [String: Any]

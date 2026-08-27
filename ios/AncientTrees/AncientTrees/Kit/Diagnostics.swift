@@ -68,7 +68,7 @@ public final class Diagnostics: NSObject {
         r.httpBody = try? JSONSerialization.data(withJSONObject: body)
         // Fire and forget. A diagnostic that fails to send is not worth a retry
         // queue, a backoff or a line of state: the next payload comes tomorrow.
-        URLSession.shared.dataTask(with: r).resume()
+        Net.dataTask(with: r).resume()
     }
 }
 

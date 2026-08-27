@@ -59,6 +59,13 @@ public final class Saved {
     }
 
     private let key = "saved.entries.v1"
+
+    /// Where the collection is written. UserDefaults.standard everywhere in the
+    /// app; a throwaway suite in a unit test, so a test about losing trees
+    /// cannot lose the trees of the simulator it runs on, and two tests cannot
+    /// read each other's collection.
+    private let defaults: UserDefaults
+
     public private(set) var entries: [String: Entry] = [:]
 
     /// Called with every deliberate change so the cloud half can follow, set by
@@ -66,7 +73,10 @@ public final class Saved {
     /// A nil entry means the tree was removed.
     public var onMutate: ((String, Entry?) -> Void)?
 
-    public init() { load() }
+    public init(defaults: UserDefaults = .standard) {
+        self.defaults = defaults
+        load()
+    }
 
     /// Take a row that came back from the account. Deliberately does NOT fire
     /// onMutate: this is the server telling us something, and echoing it
@@ -157,7 +167,7 @@ public final class Saved {
 
     private func persist() {
         if let d = try? JSONEncoder().encode(Array(entries.values)) {
-            UserDefaults.standard.set(d, forKey: key)
+            defaults.set(d, forKey: key)
         }
     }
 
@@ -171,10 +181,10 @@ public final class Saved {
 
     private func load() {
         if wipeRequested {
-            UserDefaults.standard.removeObject(forKey: key)
+            defaults.removeObject(forKey: key)
             return
         }
-        guard let d = UserDefaults.standard.data(forKey: key),
+        guard let d = defaults.data(forKey: key),
               let list = try? JSONDecoder().decode([Entry].self, from: d) else { return }
         entries = Dictionary(list.map { ($0.treeId, $0) }, uniquingKeysWith: { a, _ in a })
     }

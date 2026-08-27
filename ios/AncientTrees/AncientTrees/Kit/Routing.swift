@@ -53,7 +53,7 @@ enum Routing {
         r.setValue(agent, forHTTPHeaderField: "User-Agent")
         r.httpBody = try? JSONSerialization.data(withJSONObject: body)
 
-        guard let (data, resp) = try? await URLSession.shared.data(for: r),
+        guard let (data, resp) = try? await Net.data(for: r),
               let http = resp as? HTTPURLResponse, (200..<300).contains(http.statusCode),
               let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
               let trip = json["trip"] as? [String: Any],

@@ -77,7 +77,7 @@ public enum Submission {
         r.setValue("application/json", forHTTPHeaderField: "Content-Type")
         r.setValue("return=minimal", forHTTPHeaderField: "Prefer")
         r.httpBody = try? JSONSerialization.data(withJSONObject: body)
-        guard let (_, resp) = try? await URLSession.shared.data(for: r),
+        guard let (_, resp) = try? await Net.data(for: r),
               let http = resp as? HTTPURLResponse else { return false }
         return (200..<300).contains(http.statusCode)
     }
