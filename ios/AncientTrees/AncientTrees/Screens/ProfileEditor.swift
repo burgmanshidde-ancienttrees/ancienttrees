@@ -152,7 +152,9 @@ enum Avatars {
             .deletingLastPathComponent()   // .../rest/v1/submissions -> .../rest
             .deletingLastPathComponent()   // -> project root
         let path = "storage/v1/object/avatars/\(userId)/avatar.jpg"
-        var r = URLRequest(url: base.appendingPathComponent(path))
+        // A plain path with no query, so appending is safe here, but built the
+        // same way as everything else for one less thing to reason about.
+        var r = URLRequest(url: URL(string: base.absoluteString + path)!)
         r.httpMethod = "POST"
         r.setValue(Submission.key, forHTTPHeaderField: "apikey")
         r.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")

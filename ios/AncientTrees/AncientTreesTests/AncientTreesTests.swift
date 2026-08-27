@@ -80,3 +80,28 @@ struct CatalogueDecoding {
         }
     }
 }
+
+// MARK: - the query that vanished
+
+/// A REQUEST URL KEEPS ITS QUERY.
+///
+/// appendingPathComponent percent-encodes a "?" into %3F, which turns
+/// "profiles?on_conflict=user_id" into a table name with a question mark in it.
+/// PostgREST refuses that, quietly, so saving a name or a picture had never
+/// once worked, follower counts were always zero, and a report or a block only
+/// ever happened on the phone. Nothing anywhere said so.
+///
+/// The cheapest possible guard against it coming back: the fault is entirely in
+/// how a string becomes a URL, so catching it needs no network and no simulator.
+@Test func aRequestURLKeepsItsQuery() {
+    let base = URL(string: "https://x.supabase.co/rest/v1/")!
+
+    // The trap, asserted so nobody has to rediscover it.
+    #expect(base.appendingPathComponent("profiles?on_conflict=user_id")
+        .absoluteString.contains("%3F"))
+
+    // And the way this app builds them, which survives.
+    let built = URL(string: base.absoluteString + "profiles?on_conflict=user_id")!
+    #expect(built.query == "on_conflict=user_id")
+    #expect(built.path == "/rest/v1/profiles")
+}

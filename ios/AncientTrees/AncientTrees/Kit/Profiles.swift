@@ -38,7 +38,20 @@ public final class Profiles {
 
     private func request(_ path: String, _ method: String, token: String?,
                          body: Data? = nil, prefer: String? = nil) -> URLRequest {
-        var r = URLRequest(url: base.appendingPathComponent(path))
+        // STRING CONCATENATION, never appendingPathComponent.
+        //
+        // appendingPathComponent percent-encodes a "?" into %3F, so
+        // "profiles?on_conflict=user_id" becomes a TABLE NAME with a question
+        // mark in it and PostgREST refuses the lot. Saving a name or a picture
+        // had therefore never once worked, follower counts were always zero,
+        // and a report or a block only ever happened on the phone. Nothing said
+        // so: the calls returned a refusal that was swallowed.
+        //
+        // Found 2026-08-27 by reproducing the exact request against the real
+        // database, where it succeeded, and then comparing the URL the app
+        // actually builds. Supa.request has always concatenated, which is why
+        // saves, visited and sightings were fine all along.
+        var r = URLRequest(url: URL(string: base.absoluteString + path)!)
         r.httpMethod = method
         r.setValue(Submission.key, forHTTPHeaderField: "apikey")
         r.setValue("Bearer \(token ?? Submission.key)", forHTTPHeaderField: "Authorization")

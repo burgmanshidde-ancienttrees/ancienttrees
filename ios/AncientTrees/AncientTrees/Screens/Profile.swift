@@ -101,17 +101,6 @@ struct ProfileView: View {
                         localCount: saved.savedCount)
                 .environment(account).environment(saved)
         }
-        // Signing out went through on the first tap, while deleting the
-        // account two rows above asked first. Every app asks (Hidde,
-        // 2026-08-24: "dit is raar"), and here it matters more than usual: what
-        // it looks like you are about to lose is your collection.
-        .confirmationDialog("Sign out?", isPresented: $confirmingSignOut,
-                            titleVisibility: .visible) {
-            Button("Sign out", role: .destructive) { account.signOut() }
-            Button("Cancel", role: .cancel) {}
-        } message: {
-            Text("Your collection stays in your account. Sign in again on any phone and it comes back.")
-        }
         .alert("Delete your account?", isPresented: $confirmingDelete) {
             Button("Cancel", role: .cancel) {}
             Button("Delete", role: .destructive) {
@@ -581,6 +570,25 @@ struct ProfileView: View {
                 .contentShape(.rect)
             }
             .brandCard()
+            // ON THE BUTTON, not on the page. iOS anchors a confirmation to
+            // whatever it is attached to, so attaching this to the whole screen
+            // put it up near the top with an arrow pointing at nothing (Hidde,
+            // 2026-08-27: "het scherm zit op een random plek, wat is conventie?
+            // je zou m eerder bij de knop zelf doen"). The convention is that a
+            // confirmation belongs to the control it came from, which is also
+            // how the ellipsis on a person already behaves.
+            //
+            // Signing out went through on the first tap, while deleting the
+            // account two rows above asked first. Every app asks (Hidde,
+            // 2026-08-24: "dit is raar"), and here it matters more than usual:
+            // what it looks like you are about to lose is your collection.
+            .confirmationDialog("Sign out?", isPresented: $confirmingSignOut,
+                                titleVisibility: .visible) {
+                Button("Sign out", role: .destructive) { account.signOut() }
+                Button("Cancel", role: .cancel) {}
+            } message: {
+                Text("Your collection stays in your account. Sign in again on any phone and it comes back.")
+            }
         }
     }
 }
