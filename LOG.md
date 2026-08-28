@@ -9,6 +9,34 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-28 (session, in progress) - Cleared the write backlog first (27 trees, 6 cities), then reopened the register-scouting queue
+
+`visitors.py`: 482 visits/742 views over 7 days, flat, no single day dominating (22-94/day). `prepare.py` at start: 366 leads.py-READY, 19 trees awaiting a writer across 6 already-verified Dutch cities. Per this run's own prompt (first dispatch is a write pass, whenever there is one), wrote the 19 first rather than starting anything fresh.
+
+**Write pass 1: Maastricht +4 (14), Utrecht +11 (33), Oss +0.** All 16 already sat in data/research/*-verified.json in the exact BRIEF_WRITING.md format. Oss's briefed oss_010 (Lulboom of Megen) turned out to be an exact-coordinate duplicate of the already-published oss_007 (the register lists the same silver-lime pair twice, oss_007 already folds both); pulled back out before merge and recorded as a duplicate lead instead of shipping a doubled-up tree. Fixed stale count-promise copy in maastricht.json and utrecht.json.
+
+**Write pass 2: Groningen +1 (20), Heerlen +0, Hilversum +0.** Same shape of bug, worse: hee_010 and hil_008 were exact-coordinate duplicates of already-published hee_003 and hil_006 (same LRMB register entry, different id), and `passcheck.py --pending` cleared all three because it only ever matched on id. Fixed the tool itself rather than trusting the next run to catch it by hand: `pending_research()` now also flags any unpublished row sitting within 50m of a live tree under a different id, printed loudly. Also fixed a hard-rule-9 species collision the gro_020 merge introduced (Small-leaved Lime -> canonical Lime for Tilia sp.).
+
+**Rung 0b:** one Supabase submission (#42), a plain "Super" with no city/tree, a reaction rather than a report. Marked processed, nothing to verify or answer.
+
+**Rung 2 (health):** clear throughout, checked twice.
+
+**Register scouting: Sardinia, resolved.** `scout_next.py --target` named Cagliari as the city to unblock; its country register was scouted 2026-08-17 and stalled on "licence not found". Found the layer's own GeoNetwork metadata record (bypassing the geoportale landing page the earlier pass read) confirming CC BY 4.0 in the `legalConstraints` field. Imported the full 405-tree WFS layer to `data/registers/sardinia-alberi-monumentali.json` (species, girth, height, no age, same shape as every other Italian regional register). Six trees sit within 1.4km of Cagliari's own centre, including a 1200cm-girth Ficus macrophylla. `register-scouting.json` and `OPEN_DATA_SURVEY.md` updated so this isn't re-scouted as undecided again.
+
+**Rung 4, three parallel deepen passes, claimed one city at a time (max 3 concurrent), each written and merged before claiming the next batch:**
+- **Alicante: zero new trees.** Fully re-triaged and confirmed exhausted at its current radius by 3 prior passes; the last 5 unaddressed register rows are isolated, past the day-trip boundary, or belong to Elche.
+- **Brisbane +3 (18).** Newstead Park cluster (Crows Ash, White Rabbit crepe myrtle, joining the published Cunningham fig) plus a standalone 1924 memorial Crows Ash in Toowong. Rewrote the city copy's "thirteen of these fifteen..." narrative for the new Newstead+Toowong split.
+- **Krakow +5 (26).** Bednarski Park cluster (black walnut and larch, each the city's only registered specimen of its species, plus an ash and a twin-stemmed sycamore) and one Kosciuszki street maple. No documented ages; none invented.
+- **Warsaw +3 (15).** Mokotow/SGGW cluster tightened (pear, sophora, lime); caught and blocked a fenced, not-actually-public park (Park SGGW) that shared a register designation with a shippable tree outside its fence.
+
+**Page gaps:** `pagegaps.py`'s one open gap, a Maple (Acer sp.) species page (3 trees, no intro), written from those trees' own facts and shipped (`data/species/maple.json`).
+
+**Free/claim-free work alongside the above:** a `photo_hunt.py --recheck` API sweep (queue now 1133 swept, 607 with candidates, for a future viewing session) and a `famous_trees.py --country Canada` sweep (9 leads, none clean for Montreal; every other queue-relevant country already swept, not re-run).
+
+Every merge ran build+preflight+qa+route_walks+tree_index+cost-logging before commit; all clean except the sandbox's known shallow-clone sitemap-lastmod warning (pre-existing, unrelated). Claims committed and released as each city finished, never held past its own merge.
+
+**Now claimed and running: Cagliari (using the fresh Sardinia register), Bratislava (likely near-exhausted, told to report honestly if so), Lyon (156-candidate register, mostly already-triaged leads worth a second look).** This entry will be updated or followed by another before the run ends.
+
 ## 2026-08-28 - Night run 2026-08-28 09:29 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 21.1 minutes of its 120 minute window, 134 turns, 19 commands refused by the allowlist, ended clean (success). 9 commit(s), none of them a published tree. Claims left behind: groningen, maastricht, which block the top of the queue until they expire.
