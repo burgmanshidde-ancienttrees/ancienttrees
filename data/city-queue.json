@@ -1168,29 +1168,6 @@
   },
   {
    "rank": 51,
-   "city": "Leipzig",
-   "country": "Germany",
-   "slug": "leipzig",
-   "score": 8.6,
-   "demand": 121319,
-   "basis": "predicted (travel demand)",
-   "status": "published",
-   "trees": 7,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 56,
-   "target": 10,
-   "ease": 1.5,
-   "work_score": 12.9,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
-   "travel": 8604,
-   "wikidata": 56
-  },
-  {
-   "rank": 52,
    "city": "Cambridge",
    "country": "United Kingdom",
    "slug": "cambridge",
@@ -1214,7 +1191,7 @@
    "wikidata": 0
   },
   {
-   "rank": 53,
+   "rank": 52,
    "city": "Padua",
    "country": "Italy",
    "slug": "padua",
@@ -1237,7 +1214,7 @@
    "wikidata": 7
   },
   {
-   "rank": 54,
+   "rank": 53,
    "city": "Sintra",
    "country": "Portugal",
    "slug": "sintra",
@@ -1260,7 +1237,7 @@
    "wikidata": 22
   },
   {
-   "rank": 55,
+   "rank": 54,
    "city": "Berlin",
    "country": "Germany",
    "slug": "berlin",
@@ -1283,7 +1260,7 @@
    "wikidata": 649
   },
   {
-   "rank": 56,
+   "rank": 55,
    "city": "Bordeaux",
    "country": "France",
    "slug": "bordeaux",
@@ -1306,7 +1283,7 @@
    "wikidata": 0
   },
   {
-   "rank": 57,
+   "rank": 56,
    "city": "Washington DC",
    "country": "United States",
    "slug": "washington-dc",
@@ -1329,7 +1306,7 @@
    "wikidata": 5
   },
   {
-   "rank": 58,
+   "rank": 57,
    "city": "Chiang Mai",
    "country": "Thailand",
    "slug": "chiang-mai",
@@ -1352,7 +1329,7 @@
    "wikidata": 0
   },
   {
-   "rank": 59,
+   "rank": 58,
    "city": "Jerusalem",
    "country": "Israel",
    "slug": "jerusalem",
@@ -1375,7 +1352,7 @@
    "wikidata": 0
   },
   {
-   "rank": 60,
+   "rank": 59,
    "city": "Dubai",
    "country": "United Arab Emirates",
    "slug": "dubai",
@@ -1398,7 +1375,7 @@
    "wikidata": 0
   },
   {
-   "rank": 61,
+   "rank": 60,
    "city": "Trieste",
    "country": "Italy",
    "slug": "trieste",
@@ -1421,7 +1398,7 @@
    "wikidata": 13
   },
   {
-   "rank": 62,
+   "rank": 61,
    "city": "Guimaraes",
    "country": "Portugal",
    "slug": "guimaraes",
@@ -1444,7 +1421,7 @@
    "wikidata": 2
   },
   {
-   "rank": 63,
+   "rank": 62,
    "city": "Kyoto",
    "country": "Japan",
    "slug": "kyoto",
@@ -1467,7 +1444,7 @@
    "wikidata": 3
   },
   {
-   "rank": 64,
+   "rank": 63,
    "city": "Munich",
    "country": "Germany",
    "slug": "munich",
@@ -1490,7 +1467,7 @@
    "wikidata": 1
   },
   {
-   "rank": 65,
+   "rank": 64,
    "city": "Vilnius",
    "country": "Lithuania",
    "slug": "vilnius",
@@ -1513,7 +1490,7 @@
    "wikidata": 7
   },
   {
-   "rank": 66,
+   "rank": 65,
    "city": "Hamburg",
    "country": "Germany",
    "slug": "hamburg",
@@ -1536,7 +1513,7 @@
    "wikidata": 2
   },
   {
-   "rank": 67,
+   "rank": 66,
    "city": "Utrecht",
    "country": "Netherlands",
    "slug": "utrecht",
@@ -1559,7 +1536,7 @@
    "wikidata": 7
   },
   {
-   "rank": 68,
+   "rank": 67,
    "city": "Kansas City",
    "country": "United States",
    "slug": "kansas-city",
@@ -1582,7 +1559,7 @@
    "wikidata": 0
   },
   {
-   "rank": 69,
+   "rank": 68,
    "city": "Asheville",
    "country": "United States",
    "slug": "asheville",
@@ -1605,7 +1582,7 @@
    "wikidata": 0
   },
   {
-   "rank": 70,
+   "rank": 69,
    "city": "Oslo",
    "country": "Norway",
    "slug": "oslo",
@@ -1628,7 +1605,7 @@
    "wikidata": 7
   },
   {
-   "rank": 71,
+   "rank": 70,
    "city": "Bali",
    "country": "Indonesia",
    "slug": "bali",
@@ -1652,7 +1629,7 @@
    "wikidata": 0
   },
   {
-   "rank": 72,
+   "rank": 71,
    "city": "Turin",
    "country": "Italy",
    "slug": "turin",
@@ -1675,7 +1652,7 @@
    "wikidata": 15
   },
   {
-   "rank": 73,
+   "rank": 72,
    "city": "Vancouver",
    "country": "Canada",
    "slug": "vancouver",
@@ -1699,7 +1676,7 @@
    "wikidata": 1
   },
   {
-   "rank": 74,
+   "rank": 73,
    "city": "Santorini",
    "country": "Greece",
    "slug": "santorini",
@@ -1723,7 +1700,7 @@
    "wikidata": 0
   },
   {
-   "rank": 75,
+   "rank": 74,
    "city": "Dresden",
    "country": "Germany",
    "slug": "dresden",
@@ -1746,7 +1723,7 @@
    "wikidata": 209
   },
   {
-   "rank": 76,
+   "rank": 75,
    "city": "Bratislava",
    "country": "Slovakia",
    "slug": "bratislava",
@@ -1769,7 +1746,7 @@
    "wikidata": 1
   },
   {
-   "rank": 77,
+   "rank": 76,
    "city": "Boston",
    "country": "United States",
    "slug": "boston",
@@ -1793,7 +1770,7 @@
    "wikidata": 2
   },
   {
-   "rank": 78,
+   "rank": 77,
    "city": "Turku",
    "country": "Finland",
    "slug": "turku",
@@ -1816,7 +1793,7 @@
    "wikidata": 1
   },
   {
-   "rank": 79,
+   "rank": 78,
    "city": "Edmonton",
    "country": "Canada",
    "slug": "edmonton",
@@ -1839,7 +1816,7 @@
    "wikidata": 0
   },
   {
-   "rank": 80,
+   "rank": 79,
    "city": "Sorrento",
    "country": "Italy",
    "slug": "sorrento",
@@ -1862,7 +1839,7 @@
    "wikidata": 12
   },
   {
-   "rank": 81,
+   "rank": 80,
    "city": "Winnipeg",
    "country": "Canada",
    "slug": "winnipeg",
@@ -1885,7 +1862,7 @@
    "wikidata": 0
   },
   {
-   "rank": 82,
+   "rank": 81,
    "city": "Canberra",
    "country": "Australia",
    "slug": "canberra",
@@ -1908,7 +1885,7 @@
    "wikidata": 0
   },
   {
-   "rank": 83,
+   "rank": 82,
    "city": "Manchester",
    "country": "United Kingdom",
    "slug": "manchester",
@@ -1931,7 +1908,7 @@
    "wikidata": 0
   },
   {
-   "rank": 84,
+   "rank": 83,
    "city": "Bristol",
    "country": "United Kingdom",
    "slug": "bristol",
@@ -1954,7 +1931,7 @@
    "wikidata": 1
   },
   {
-   "rank": 85,
+   "rank": 84,
    "city": "Pisa",
    "country": "Italy",
    "slug": "pisa",
@@ -1977,7 +1954,7 @@
    "wikidata": 2
   },
   {
-   "rank": 86,
+   "rank": 85,
    "city": "Tampere",
    "country": "Finland",
    "slug": "tampere",
@@ -2000,7 +1977,7 @@
    "wikidata": 0
   },
   {
-   "rank": 87,
+   "rank": 86,
    "city": "Cordoba",
    "country": "Spain",
    "slug": "cordoba",
@@ -2024,7 +2001,7 @@
    "wikidata": 0
   },
   {
-   "rank": 88,
+   "rank": 87,
    "city": "Potsdam",
    "country": "Germany",
    "slug": "potsdam",
@@ -2047,7 +2024,7 @@
    "wikidata": 190
   },
   {
-   "rank": 89,
+   "rank": 88,
    "city": "Hiroshima",
    "country": "Japan",
    "slug": "hiroshima",
@@ -2070,7 +2047,7 @@
    "wikidata": 1
   },
   {
-   "rank": 90,
+   "rank": 89,
    "city": "Athens",
    "country": "Greece",
    "slug": "athens",
@@ -2093,7 +2070,7 @@
    "wikidata": 1
   },
   {
-   "rank": 91,
+   "rank": 90,
    "city": "Taipei",
    "country": "Taiwan",
    "slug": "taipei",
@@ -2116,7 +2093,7 @@
    "wikidata": 0
   },
   {
-   "rank": 92,
+   "rank": 91,
    "city": "Salamanca",
    "country": "Spain",
    "slug": "salamanca",
@@ -2139,7 +2116,7 @@
    "wikidata": 0
   },
   {
-   "rank": 93,
+   "rank": 92,
    "city": "Adelaide",
    "country": "Australia",
    "slug": "adelaide",
@@ -2162,7 +2139,7 @@
    "wikidata": 1
   },
   {
-   "rank": 94,
+   "rank": 93,
    "city": "San Francisco",
    "country": "United States",
    "slug": "san-francisco",
@@ -2185,7 +2162,7 @@
    "wikidata": 1
   },
   {
-   "rank": 95,
+   "rank": 94,
    "city": "Chicago",
    "country": "United States",
    "slug": "chicago",
@@ -2208,7 +2185,7 @@
    "wikidata": 0
   },
   {
-   "rank": 96,
+   "rank": 95,
    "city": "Lyon",
    "country": "France",
    "slug": "lyon",
@@ -2231,7 +2208,7 @@
    "wikidata": 0
   },
   {
-   "rank": 97,
+   "rank": 96,
    "city": "Buenos Aires",
    "country": "Argentina",
    "slug": "buenos-aires",
@@ -2254,7 +2231,7 @@
    "wikidata": 5
   },
   {
-   "rank": 98,
+   "rank": 97,
    "city": "Perth",
    "country": "Australia",
    "slug": "perth",
@@ -2277,7 +2254,7 @@
    "wikidata": 1
   },
   {
-   "rank": 99,
+   "rank": 98,
    "city": "Cork",
    "country": "Ireland",
    "slug": "cork",
@@ -2300,7 +2277,7 @@
    "wikidata": 0
   },
   {
-   "rank": 100,
+   "rank": 99,
    "city": "Budapest",
    "country": "Hungary",
    "slug": "budapest",
@@ -2323,7 +2300,7 @@
    "wikidata": 2
   },
   {
-   "rank": 101,
+   "rank": 100,
    "city": "Luang Prabang",
    "country": "Laos",
    "slug": "luang-prabang",
@@ -2346,7 +2323,7 @@
    "wikidata": 0
   },
   {
-   "rank": 102,
+   "rank": 101,
    "city": "Kauai",
    "country": "United States",
    "slug": "kauai",
@@ -2370,7 +2347,7 @@
    "wikidata": 0
   },
   {
-   "rank": 103,
+   "rank": 102,
    "city": "Bergen",
    "country": "Norway",
    "slug": "bergen",
@@ -2393,7 +2370,7 @@
    "wikidata": 0
   },
   {
-   "rank": 104,
+   "rank": 103,
    "city": "Cyprus",
    "country": "Cyprus",
    "slug": "cyprus",
@@ -2417,7 +2394,7 @@
    "wikidata": 1
   },
   {
-   "rank": 105,
+   "rank": 104,
    "city": "Quebec City",
    "country": "Canada",
    "slug": "quebec-city",
@@ -2440,7 +2417,7 @@
    "wikidata": 0
   },
   {
-   "rank": 106,
+   "rank": 105,
    "city": "Helsinki",
    "country": "Finland",
    "slug": "helsinki",
@@ -2463,7 +2440,7 @@
    "wikidata": 2
   },
   {
-   "rank": 107,
+   "rank": 106,
    "city": "Strasbourg",
    "country": "France",
    "slug": "strasbourg",
@@ -2486,7 +2463,7 @@
    "wikidata": 0
   },
   {
-   "rank": 108,
+   "rank": 107,
    "city": "Warsaw",
    "country": "Poland",
    "slug": "warsaw",
@@ -2509,7 +2486,7 @@
    "wikidata": 45
   },
   {
-   "rank": 109,
+   "rank": 108,
    "city": "Gyeongju",
    "country": "South Korea",
    "slug": "gyeongju",
@@ -2532,7 +2509,7 @@
    "wikidata": 0
   },
   {
-   "rank": 110,
+   "rank": 109,
    "city": "Siena",
    "country": "Italy",
    "slug": "siena",
@@ -2555,7 +2532,7 @@
    "wikidata": 0
   },
   {
-   "rank": 111,
+   "rank": 110,
    "city": "Santiago de Compostela",
    "country": "Spain",
    "slug": "santiago-de-compostela",
@@ -2578,7 +2555,7 @@
    "wikidata": 0
   },
   {
-   "rank": 112,
+   "rank": 111,
    "city": "Caserta",
    "country": "Italy",
    "slug": "caserta",
@@ -2601,7 +2578,7 @@
    "wikidata": 6
   },
   {
-   "rank": 113,
+   "rank": 112,
    "city": "Maastricht",
    "country": "Netherlands",
    "slug": "maastricht",
@@ -2624,7 +2601,7 @@
    "wikidata": 8
   },
   {
-   "rank": 114,
+   "rank": 113,
    "city": "Liverpool",
    "country": "United Kingdom",
    "slug": "liverpool",
@@ -2647,7 +2624,7 @@
    "wikidata": 1
   },
   {
-   "rank": 115,
+   "rank": 114,
    "city": "Funchal",
    "country": "Portugal",
    "slug": "funchal",
@@ -2670,7 +2647,7 @@
    "wikidata": 12
   },
   {
-   "rank": 116,
+   "rank": 115,
    "city": "Freiburg",
    "country": "Germany",
    "slug": "freiburg",
@@ -2693,7 +2670,7 @@
    "wikidata": 3
   },
   {
-   "rank": 117,
+   "rank": 116,
    "city": "Zagreb",
    "country": "Croatia",
    "slug": "zagreb",
@@ -2716,7 +2693,7 @@
    "wikidata": 1
   },
   {
-   "rank": 118,
+   "rank": 117,
    "city": "Glasgow",
    "country": "United Kingdom",
    "slug": "glasgow",
@@ -2739,7 +2716,7 @@
    "wikidata": 3
   },
   {
-   "rank": 119,
+   "rank": 118,
    "city": "Bogota",
    "country": "Colombia",
    "slug": "bogota",
@@ -2762,7 +2739,7 @@
    "wikidata": 0
   },
   {
-   "rank": 120,
+   "rank": 119,
    "city": "Shanghai",
    "country": "China",
    "slug": "shanghai",
@@ -2785,7 +2762,7 @@
    "wikidata": 0
   },
   {
-   "rank": 121,
+   "rank": 120,
    "city": "Rio de Janeiro",
    "country": "Brazil",
    "slug": "rio-de-janeiro",
@@ -2808,7 +2785,7 @@
    "wikidata": 0
   },
   {
-   "rank": 122,
+   "rank": 121,
    "city": "Seattle",
    "country": "United States",
    "slug": "seattle",
@@ -2831,7 +2808,7 @@
    "wikidata": 2
   },
   {
-   "rank": 123,
+   "rank": 122,
    "city": "Haarlem",
    "country": "Netherlands",
    "slug": "haarlem",
@@ -2854,7 +2831,7 @@
    "wikidata": 4
   },
   {
-   "rank": 124,
+   "rank": 123,
    "city": "Tallinn",
    "country": "Estonia",
    "slug": "tallinn",
@@ -2877,7 +2854,7 @@
    "wikidata": 8
   },
   {
-   "rank": 125,
+   "rank": 124,
    "city": "Detroit",
    "country": "United States",
    "slug": "detroit",
@@ -2900,7 +2877,7 @@
    "wikidata": 0
   },
   {
-   "rank": 126,
+   "rank": 125,
    "city": "Gothenburg",
    "country": "Sweden",
    "slug": "gothenburg",
@@ -2923,7 +2900,7 @@
    "wikidata": 0
   },
   {
-   "rank": 127,
+   "rank": 126,
    "city": "Lucca",
    "country": "Italy",
    "slug": "lucca",
@@ -2946,7 +2923,7 @@
    "wikidata": 3
   },
   {
-   "rank": 128,
+   "rank": 127,
    "city": "Nice",
    "country": "France",
    "slug": "nice",
@@ -2969,7 +2946,7 @@
    "wikidata": 0
   },
   {
-   "rank": 129,
+   "rank": 128,
    "city": "Beijing",
    "country": "China",
    "slug": "beijing",
@@ -2992,7 +2969,7 @@
    "wikidata": 1
   },
   {
-   "rank": 130,
+   "rank": 129,
    "city": "Denver",
    "country": "United States",
    "slug": "denver",
@@ -3015,7 +2992,7 @@
    "wikidata": 0
   },
   {
-   "rank": 131,
+   "rank": 130,
    "city": "Sydney",
    "country": "Australia",
    "slug": "sydney",
@@ -3038,7 +3015,7 @@
    "wikidata": 1
   },
   {
-   "rank": 132,
+   "rank": 131,
    "city": "Malta",
    "country": "Malta",
    "slug": "malta",
@@ -3062,7 +3039,7 @@
    "wikidata": 0
   },
   {
-   "rank": 133,
+   "rank": 132,
    "city": "Alice Springs",
    "country": "Australia",
    "slug": "alice-springs",
@@ -3085,7 +3062,7 @@
    "wikidata": 0
   },
   {
-   "rank": 134,
+   "rank": 133,
    "city": "Zurich",
    "country": "Switzerland",
    "slug": "zurich",
@@ -3108,7 +3085,7 @@
    "wikidata": 2
   },
   {
-   "rank": 135,
+   "rank": 134,
    "city": "Sacramento",
    "country": "United States",
    "slug": "sacramento",
@@ -3131,7 +3108,7 @@
    "wikidata": 0
   },
   {
-   "rank": 136,
+   "rank": 135,
    "city": "Bruges",
    "country": "Belgium",
    "slug": "bruges",
@@ -3154,7 +3131,7 @@
    "wikidata": 0
   },
   {
-   "rank": 137,
+   "rank": 136,
    "city": "Cadiz",
    "country": "Spain",
    "slug": "cadiz",
@@ -3177,7 +3154,7 @@
    "wikidata": 3
   },
   {
-   "rank": 138,
+   "rank": 137,
    "city": "Philadelphia",
    "country": "United States",
    "slug": "philadelphia",
@@ -3200,7 +3177,7 @@
    "wikidata": 2
   },
   {
-   "rank": 139,
+   "rank": 138,
    "city": "Avignon",
    "country": "France",
    "slug": "avignon",
@@ -3223,7 +3200,7 @@
    "wikidata": 0
   },
   {
-   "rank": 140,
+   "rank": 139,
    "city": "San Diego",
    "country": "United States",
    "slug": "san-diego",
@@ -3246,7 +3223,7 @@
    "wikidata": 0
   },
   {
-   "rank": 141,
+   "rank": 140,
    "city": "Riga",
    "country": "Latvia",
    "slug": "riga",
@@ -3269,7 +3246,7 @@
    "wikidata": 6
   },
   {
-   "rank": 142,
+   "rank": 141,
    "city": "Aarhus",
    "country": "Denmark",
    "slug": "aarhus",
@@ -3292,7 +3269,7 @@
    "wikidata": 1
   },
   {
-   "rank": 143,
+   "rank": 142,
    "city": "Galway",
    "country": "Ireland",
    "slug": "galway",
@@ -3315,7 +3292,7 @@
    "wikidata": 0
   },
   {
-   "rank": 144,
+   "rank": 143,
    "city": "Phuket",
    "country": "Thailand",
    "slug": "phuket",
@@ -3338,7 +3315,7 @@
    "wikidata": 0
   },
   {
-   "rank": 145,
+   "rank": 144,
    "city": "Rovaniemi",
    "country": "Finland",
    "slug": "rovaniemi",
@@ -3361,7 +3338,7 @@
    "wikidata": 0
   },
   {
-   "rank": 146,
+   "rank": 145,
    "city": "Toulouse",
    "country": "France",
    "slug": "toulouse",
@@ -3384,7 +3361,7 @@
    "wikidata": 0
   },
   {
-   "rank": 147,
+   "rank": 146,
    "city": "Lagos",
    "country": "Portugal",
    "slug": "lagos",
@@ -3408,7 +3385,7 @@
    "wikidata": 2
   },
   {
-   "rank": 148,
+   "rank": 147,
    "city": "York",
    "country": "United Kingdom",
    "slug": "york",
@@ -3432,7 +3409,7 @@
    "wikidata": 0
   },
   {
-   "rank": 149,
+   "rank": 148,
    "city": "Sapporo",
    "country": "Japan",
    "slug": "sapporo",
@@ -3455,7 +3432,7 @@
    "wikidata": 0
   },
   {
-   "rank": 150,
+   "rank": 149,
    "city": "Cardiff",
    "country": "United Kingdom",
    "slug": "cardiff",
@@ -3478,7 +3455,7 @@
    "wikidata": 1
   },
   {
-   "rank": 151,
+   "rank": 150,
    "city": "Salt Lake City",
    "country": "United States",
    "slug": "salt-lake-city",
@@ -3501,7 +3478,7 @@
    "wikidata": 0
   },
   {
-   "rank": 152,
+   "rank": 151,
    "city": "Lund",
    "country": "Sweden",
    "slug": "lund",
@@ -3524,7 +3501,7 @@
    "wikidata": 0
   },
   {
-   "rank": 153,
+   "rank": 152,
    "city": "Kobe",
    "country": "Japan",
    "slug": "kobe",
@@ -3547,7 +3524,7 @@
    "wikidata": 0
   },
   {
-   "rank": 154,
+   "rank": 153,
    "city": "Setubal",
    "country": "Portugal",
    "slug": "setubal",
@@ -3570,7 +3547,7 @@
    "wikidata": 5
   },
   {
-   "rank": 155,
+   "rank": 154,
    "city": "Auckland",
    "country": "New Zealand",
    "slug": "auckland",
@@ -3593,7 +3570,7 @@
    "wikidata": 4
   },
   {
-   "rank": 156,
+   "rank": 155,
    "city": "Istanbul",
    "country": "Turkey",
    "slug": "istanbul",
@@ -3616,7 +3593,7 @@
    "wikidata": 7
   },
   {
-   "rank": 157,
+   "rank": 156,
    "city": "Lausanne",
    "country": "Switzerland",
    "slug": "lausanne",
@@ -3639,7 +3616,7 @@
    "wikidata": 1
   },
   {
-   "rank": 158,
+   "rank": 157,
    "city": "Heraklion",
    "country": "Greece",
    "slug": "heraklion",
@@ -3662,7 +3639,7 @@
    "wikidata": 0
   },
   {
-   "rank": 159,
+   "rank": 158,
    "city": "Marseille",
    "country": "France",
    "slug": "marseille",
@@ -3685,7 +3662,7 @@
    "wikidata": 0
   },
   {
-   "rank": 160,
+   "rank": 159,
    "city": "Perugia",
    "country": "Italy",
    "slug": "perugia",
@@ -3708,7 +3685,7 @@
    "wikidata": 0
   },
   {
-   "rank": 161,
+   "rank": 160,
    "city": "Nagoya",
    "country": "Japan",
    "slug": "nagoya",
@@ -3731,7 +3708,7 @@
    "wikidata": 1
   },
   {
-   "rank": 162,
+   "rank": 161,
    "city": "Christchurch",
    "country": "New Zealand",
    "slug": "christchurch",
@@ -3754,7 +3731,7 @@
    "wikidata": 0
   },
   {
-   "rank": 163,
+   "rank": 162,
    "city": "Graz",
    "country": "Austria",
    "slug": "graz",
@@ -3777,7 +3754,7 @@
    "wikidata": 0
   },
   {
-   "rank": 164,
+   "rank": 163,
    "city": "Miami",
    "country": "United States",
    "slug": "miami",
@@ -3800,7 +3777,7 @@
    "wikidata": 0
   },
   {
-   "rank": 165,
+   "rank": 164,
    "city": "Verona",
    "country": "Italy",
    "slug": "verona",
@@ -3823,7 +3800,7 @@
    "wikidata": 7
   },
   {
-   "rank": 166,
+   "rank": 165,
    "city": "Delft",
    "country": "Netherlands",
    "slug": "delft",
@@ -3846,7 +3823,7 @@
    "wikidata": 2
   },
   {
-   "rank": 167,
+   "rank": 166,
    "city": "Basel",
    "country": "Switzerland",
    "slug": "basel",
@@ -3869,7 +3846,7 @@
    "wikidata": 0
   },
   {
-   "rank": 168,
+   "rank": 167,
    "city": "Stuttgart",
    "country": "Germany",
    "slug": "stuttgart",
@@ -3892,7 +3869,7 @@
    "wikidata": 6
   },
   {
-   "rank": 169,
+   "rank": 168,
    "city": "Menorca",
    "country": "Spain",
    "slug": "menorca",
@@ -3916,7 +3893,7 @@
    "wikidata": 0
   },
   {
-   "rank": 170,
+   "rank": 169,
    "city": "Nuremberg",
    "country": "Germany",
    "slug": "nuremberg",
@@ -3939,7 +3916,7 @@
    "wikidata": 13
   },
   {
-   "rank": 171,
+   "rank": 170,
    "city": "Tasmania",
    "country": "Australia",
    "slug": "tasmania",
@@ -3963,7 +3940,7 @@
    "wikidata": 0
   },
   {
-   "rank": 172,
+   "rank": 171,
    "city": "Naha",
    "country": "Japan",
    "slug": "naha",
@@ -3987,7 +3964,7 @@
    "wikidata": 0
   },
   {
-   "rank": 173,
+   "rank": 172,
    "city": "Ravenna",
    "country": "Italy",
    "slug": "ravenna",
@@ -4010,7 +3987,7 @@
    "wikidata": 2
   },
   {
-   "rank": 174,
+   "rank": 173,
    "city": "Arnhem",
    "country": "Netherlands",
    "slug": "arnhem",
@@ -4033,7 +4010,7 @@
    "wikidata": 5
   },
   {
-   "rank": 175,
+   "rank": 174,
    "city": "San Sebastian",
    "country": "Spain",
    "slug": "san-sebastian",
@@ -4056,7 +4033,7 @@
    "wikidata": 0
   },
   {
-   "rank": 176,
+   "rank": 175,
    "city": "Belfast",
    "country": "United Kingdom",
    "slug": "belfast",
@@ -4079,7 +4056,7 @@
    "wikidata": 0
   },
   {
-   "rank": 177,
+   "rank": 176,
    "city": "Tel Aviv",
    "country": "Israel",
    "slug": "tel-aviv",
@@ -4102,7 +4079,7 @@
    "wikidata": 0
   },
   {
-   "rank": 178,
+   "rank": 177,
    "city": "Interlaken",
    "country": "Switzerland",
    "slug": "interlaken",
@@ -4125,7 +4102,7 @@
    "wikidata": 0
   },
   {
-   "rank": 179,
+   "rank": 178,
    "city": "Salzburg",
    "country": "Austria",
    "slug": "salzburg",
@@ -4148,7 +4125,7 @@
    "wikidata": 6
   },
   {
-   "rank": 180,
+   "rank": 179,
    "city": "Kanazawa",
    "country": "Japan",
    "slug": "kanazawa",
@@ -4171,7 +4148,7 @@
    "wikidata": 1
   },
   {
-   "rank": 181,
+   "rank": 180,
    "city": "Catania",
    "country": "Italy",
    "slug": "catania",
@@ -4194,7 +4171,7 @@
    "wikidata": 5
   },
   {
-   "rank": 182,
+   "rank": 181,
    "city": "Azores",
    "country": "Portugal",
    "slug": "azores",
@@ -4218,7 +4195,7 @@
    "wikidata": 0
   },
   {
-   "rank": 183,
+   "rank": 182,
    "city": "Nantes",
    "country": "France",
    "slug": "nantes",
@@ -4241,7 +4218,7 @@
    "wikidata": 1
   },
   {
-   "rank": 184,
+   "rank": 183,
    "city": "Taormina",
    "country": "Italy",
    "slug": "taormina",
@@ -4264,7 +4241,7 @@
    "wikidata": 2
   },
   {
-   "rank": 185,
+   "rank": 184,
    "city": "Braga",
    "country": "Portugal",
    "slug": "braga",
@@ -4287,7 +4264,7 @@
    "wikidata": 8
   },
   {
-   "rank": 186,
+   "rank": 185,
    "city": "Niagara Falls",
    "country": "Canada",
    "slug": "niagara-falls",
@@ -4310,7 +4287,7 @@
    "wikidata": 2
   },
   {
-   "rank": 187,
+   "rank": 186,
    "city": "Los Angeles",
    "country": "United States",
    "slug": "los-angeles",
@@ -4333,7 +4310,7 @@
    "wikidata": 2
   },
   {
-   "rank": 188,
+   "rank": 187,
    "city": "Bergamo",
    "country": "Italy",
    "slug": "bergamo",
@@ -4356,7 +4333,7 @@
    "wikidata": 11
   },
   {
-   "rank": 189,
+   "rank": 188,
    "city": "Kuala Lumpur",
    "country": "Malaysia",
    "slug": "kuala-lumpur",
@@ -4379,7 +4356,7 @@
    "wikidata": 0
   },
   {
-   "rank": 190,
+   "rank": 189,
    "city": "Rotterdam",
    "country": "Netherlands",
    "slug": "rotterdam",
@@ -4402,7 +4379,7 @@
    "wikidata": 0
   },
   {
-   "rank": 191,
+   "rank": 190,
    "city": "Hong Kong",
    "country": "China",
    "slug": "hong-kong",
@@ -4426,7 +4403,7 @@
    "wikidata": 2
   },
   {
-   "rank": 192,
+   "rank": 191,
    "city": "Oahu",
    "country": "United States",
    "slug": "oahu",
@@ -4450,7 +4427,7 @@
    "wikidata": 0
   },
   {
-   "rank": 193,
+   "rank": 192,
    "city": "Rothenburg ob der Tauber",
    "country": "Germany",
    "slug": "rothenburg-ob-der-tauber",
@@ -4473,7 +4450,7 @@
    "wikidata": 2
   },
   {
-   "rank": 194,
+   "rank": 193,
    "city": "Wellington",
    "country": "New Zealand",
    "slug": "wellington",
@@ -4496,7 +4473,7 @@
    "wikidata": 1
   },
   {
-   "rank": 195,
+   "rank": 194,
    "city": "Bari",
    "country": "Italy",
    "slug": "bari",
@@ -4519,7 +4496,7 @@
    "wikidata": 1
   },
   {
-   "rank": 196,
+   "rank": 195,
    "city": "Luxembourg City",
    "country": "Luxembourg",
    "slug": "luxembourg-city",
@@ -4542,7 +4519,7 @@
    "wikidata": 108
   },
   {
-   "rank": 197,
+   "rank": 196,
    "city": "Genoa",
    "country": "Italy",
    "slug": "genoa",
@@ -4565,7 +4542,7 @@
    "wikidata": 6
   },
   {
-   "rank": 198,
+   "rank": 197,
    "city": "Brighton",
    "country": "United Kingdom",
    "slug": "brighton",
@@ -4588,7 +4565,7 @@
    "wikidata": 1
   },
   {
-   "rank": 199,
+   "rank": 198,
    "city": "Montpellier",
    "country": "France",
    "slug": "montpellier",
@@ -4611,7 +4588,7 @@
    "wikidata": 0
   },
   {
-   "rank": 200,
+   "rank": 199,
    "city": "Busan",
    "country": "South Korea",
    "slug": "busan",
@@ -4634,7 +4611,7 @@
    "wikidata": 2
   },
   {
-   "rank": 201,
+   "rank": 200,
    "city": "Kotor",
    "country": "Montenegro",
    "slug": "kotor",
@@ -4657,7 +4634,7 @@
    "wikidata": 0
   },
   {
-   "rank": 202,
+   "rank": 201,
    "city": "Cape Town",
    "country": "South Africa",
    "slug": "cape-town",
@@ -4680,7 +4657,7 @@
    "wikidata": 2
   },
   {
-   "rank": 203,
+   "rank": 202,
    "city": "Rhodes",
    "country": "Greece",
    "slug": "rhodes",
@@ -4703,7 +4680,7 @@
    "wikidata": 0
   },
   {
-   "rank": 204,
+   "rank": 203,
    "city": "Mexico City",
    "country": "Mexico",
    "slug": "mexico-city",
@@ -4726,7 +4703,7 @@
    "wikidata": 3
   },
   {
-   "rank": 205,
+   "rank": 204,
    "city": "Chania",
    "country": "Greece",
    "slug": "chania",
@@ -4749,7 +4726,7 @@
    "wikidata": 0
   },
   {
-   "rank": 206,
+   "rank": 205,
    "city": "Segovia",
    "country": "Spain",
    "slug": "segovia",
@@ -4772,7 +4749,7 @@
    "wikidata": 0
   },
   {
-   "rank": 207,
+   "rank": 206,
    "city": "Santiago",
    "country": "Chile",
    "slug": "santiago",
@@ -4794,6 +4771,29 @@
    "article": "Santiago",
    "travel": 3251,
    "wikidata": 0
+  },
+  {
+   "rank": 207,
+   "city": "Leipzig",
+   "country": "Germany",
+   "slug": "leipzig",
+   "score": 2.15,
+   "demand": 121319,
+   "basis": "published, never ranked (may be uncrawled)",
+   "status": "published",
+   "trees": 7,
+   "photos": 7,
+   "walks": 1,
+   "register": 0,
+   "ready": 0,
+   "supply": 56,
+   "target": 10,
+   "ease": 1.5,
+   "work_score": 3.22,
+   "impressions_10d": 0,
+   "clicks_10d": 0,
+   "travel": 8604,
+   "wikidata": 56
   },
   {
    "rank": 208,
