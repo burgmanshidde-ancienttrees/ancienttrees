@@ -65,11 +65,19 @@ struct CollectIntro: View {
                     // is a second way in and never the only one.
                     .onLongPressGesture(perform: onLibrary)
 
-                Button("Choose from your photos", action: onLibrary)
-                    .font(.brand(16, .bold))
-                    .foregroundStyle(Brand.moss)
-                    .frame(maxWidth: .infinity, minHeight: 44)
-                    .accessibilityIdentifier("add-library")
+                // The label carries the frame and the shape, not the Button:
+                // a plain Button reports its TEXT as the tappable thing, which
+                // is how this shipped 18 points tall past a green build. The
+                // layout gate measured it within the hour.
+                Button(action: onLibrary) {
+                    Text("Choose from your photos")
+                        .font(.brand(16, .bold))
+                        .foregroundStyle(Brand.moss)
+                        .frame(maxWidth: .infinity, minHeight: 44)
+                        .contentShape(.rect)
+                }
+                .buttonStyle(.plain)
+                .accessibilityIdentifier("add-library")
             }
         }
         .frame(maxHeight: .infinity, alignment: .top)
