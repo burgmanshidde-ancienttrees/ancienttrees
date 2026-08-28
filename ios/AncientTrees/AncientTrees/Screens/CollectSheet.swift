@@ -239,14 +239,14 @@ struct CollectSheet: View {
         }
     }
 
-    /// The whole design, in nine lines, and it no longer cares which of the
-    /// three ways the coordinate arrived. Photograph first, ask afterwards,
-    /// and only ask when we genuinely cannot tell.
+    /// Photograph first, ask afterwards, and only ask when we genuinely cannot
+    /// tell. What counts as "cannot tell" depends on where the coordinate came
+    /// from, which is the correction of 2026-08-28.
     private func settle(_ image: UIImage, at here: (lat: Double, lng: Double), fix source: Fix) {
         shot = image
         at = here
         fix = source
-        if let t = Self.confident(origin: here, trees: catalogue.trees) {
+        if Self.mayClaimWithoutAsking(source), let t = Self.confident(origin: here, trees: catalogue.trees) {
             claim(t, image: image, at: here)
         } else if Self.nearby(origin: here, trees: catalogue.trees).isEmpty {
             withAnimation(.snappy) { stage = .describe }
@@ -254,6 +254,32 @@ struct CollectSheet: View {
             withAnimation(.snappy) { stage = .identify }
         }
     }
+
+    /// WHY A PHOTOGRAPH FROM THE CAMERA ROLL IS NEVER CLAIMED WITHOUT ASKING.
+    ///
+    /// Hidde, within an hour of the camera roll shipping: "ik uploade een foto
+    /// die niet die boom was maar wel daar in de buurt stond, hoe werkt dat dan
+    /// want dit klopt niet." The app had told him he found the American Oak of
+    /// the Pekingtuin, and he had photographed something else standing near it.
+    ///
+    /// The confident() rule is sound and it is about STANDING THERE: an 80
+    /// metre nearest match with the runner-up twice as far is a safe guess when
+    /// somebody has just pointed a camera at the thing in front of them. Every
+    /// word of that reasoning fails for a picture off the roll. The coordinate
+    /// says where the PHOTOGRAPHER stood, which can be a street away from the
+    /// subject, and nothing at all says the subject is a tree, let alone one of
+    /// ours. It could be a dog in that park.
+    ///
+    /// Convention, and both references agree: iNaturalist SUGGESTS an
+    /// identification on an uploaded photograph and has you confirm it, and
+    /// Google Maps asks which place a photograph belongs to. Neither asserts on
+    /// your behalf. So the list is shown, "None of these" is always on it, and
+    /// the tick is yours to give.
+    ///
+    /// It also protects the thing the photograph was for. A collection you can
+    /// fake is worth nothing, and it is no better when the app fakes it for
+    /// you.
+    static func mayClaimWithoutAsking(_ source: Fix) -> Bool { source == .device }
 
     private func openLibrary() {
         Task {
@@ -332,7 +358,9 @@ struct CollectSheet: View {
         Group {
             Text("Which one is it?")
                 .font(.brand(24, .heavy)).foregroundStyle(Brand.ink)
-            Text("You are standing among trees we map. Pick the one in your photograph.")
+            Text(fix == .device
+                 ? "You are standing among trees we map. Pick the one in your photograph."
+                 : "Your photograph was taken near these trees. Pick the one you photographed, or say it is none of them.")
                 .font(.subheadline).foregroundStyle(Brand.inkSoft)
                 .fixedSize(horizontal: false, vertical: true)
             ForEach(candidates) { t in

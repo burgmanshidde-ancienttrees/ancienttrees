@@ -435,6 +435,19 @@ struct WhenPermissionIsRefused {
                 "the date did not survive a relaunch")
     }
 
+    /// The bug Hidde found within an hour of this shipping: he picked a photo
+    /// of something standing NEAR one of our trees and was told he had found
+    /// that tree. A coordinate off a photograph says where the photographer
+    /// stood, and nothing says the subject is a tree at all.
+    @Test func onlyStandingThereClaimsATreeWithoutAsking() {
+        #expect(CollectSheet.mayClaimWithoutAsking(.device),
+                "the camera path should still tick off a confident match")
+        #expect(!CollectSheet.mayClaimWithoutAsking(.photo),
+                "a photograph off the roll claimed a tree nobody confirmed")
+        #expect(!CollectSheet.mayClaimWithoutAsking(.placed),
+                "a hand-placed pin claimed a tree nobody confirmed")
+    }
+
     /// The camera path is unchanged and still files under now.
     @Test func withoutADateItIsFiledUnderNow() {
         let p = Patch(); defer { p.clean() }
