@@ -3787,6 +3787,15 @@
     "note": "Write pass, 3 trees, merged 12 to 15. Fixed stale count-promise copy (question_meta full-twelve, paid-share FAQ eight-of-twelve).",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "crows-ash species page",
+    "kind": "other",
+    "tokens": 3000,
+    "trees": 0,
+    "note": "pagegaps.py named a second new gap after Brisbanes 3 new trees: Crows Ash / Australian Teak (Flindersia australis), 3 trees. Wrote data/species/crows-ash-australian-teak.json from those trees own facts (the unrelated 1826/1884 felling-and-replant at Botanic Gardens, the Newstead inference-only age, the Toowong council-memorial planter). Build clean.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
