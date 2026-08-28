@@ -380,9 +380,10 @@ AI: arrivals from an assistant that cited us: none yet
 | 08-28T02:06 | 19.8 | 0 | 11 | 20 | - |
 | 08-28T05:28 | 12.6 | 0 | 5 | 18 | - |
 | 08-28T08:56 | 0.1 | 0 | 0 | - | - |
-| **3 runs** | **32** | **0** | **16** | | |
+| 08-28T08:59 | 0.1 | 0 | 0 | - | - |
+| **4 runs** | **33** | **0** | **16** | | |
 
-- 3 of 3 produced no trees; 18 to 20 commands refused per run; 3 wrote nothing to LOG.md.
+- 4 of 4 produced no trees; 18 to 20 commands refused per run; 4 wrote nothing to LOG.md.
 
 **What they made**
 
