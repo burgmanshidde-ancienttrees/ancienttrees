@@ -43,7 +43,7 @@ struct CollectIntro: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
-            Text("Photograph a tree")
+            Text("Build your tree collection")
                 .font(.brand(28, .bold, relativeTo: .title))
                 .foregroundStyle(Brand.ink)
                 .fixedSize(horizontal: false, vertical: true)
@@ -56,20 +56,18 @@ struct CollectIntro: View {
                 // made the title read as the first line of the text.
                 .padding(.bottom, 8)
 
-            // ONE LINE. The two that stood here until 2026-08-28 explained
-            // our side of the deal (which trees we already map, what happens
-            // after we have checked one), and that is rule 6: not at the
-            // moment somebody is deciding to act. What each of the two cases
-            // means is said on the screen where it is true, one step later,
-            // where it is specific instead of hypothetical.
-            // No icon. It was there to tell two lines apart, and a mark
-            // beside a list of one is decoration, which is what this screen
-            // already threw a hand-drawn figure out for once before.
-            Text("Every tree you photograph joins your tree collection.")
-                .font(.system(size: 17))
-                .foregroundStyle(Brand.inkSoft)
-                .lineSpacing(3)
-                .fixedSize(horizontal: false, vertical: true)
+            // NO SENTENCE AT ALL, his call of 2026-08-28 between the two
+            // honest options. Two lines that explained our side of the deal
+            // went first (rule 6: not at the moment somebody is deciding to
+            // act), and the one that replaced them repeated "tree collection"
+            // under a title that had just said it, which is what he caught:
+            // "de copy is still quite bad".
+            //
+            // So the title says what you get, the two buttons say how, and
+            // there is nothing left that can go stale. The previous line could
+            // and did: it promised we would tell you which tree it is, and
+            // that stopped being true for a photograph off the camera roll
+            // within the hour of it being written.
 
             Spacer(minLength: 24)
 

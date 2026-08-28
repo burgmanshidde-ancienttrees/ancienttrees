@@ -456,3 +456,37 @@ struct WhenPermissionIsRefused {
         #expect(abs(made.date.timeIntervalSinceNow) < 5)
     }
 }
+
+/// The map's own grid, which decides which trees pile into one bubble.
+@Suite struct ClusterGridTests {
+
+    /// The old key was `column * 100_000 + row`, and the row index passes
+    /// 100,000 at zoom 13.5. Two cells far apart then shared a key and their
+    /// trees were drawn as one bubble at the mean of both, which is a pile of
+    /// trees standing where none of them are.
+    @Test func cellsFarApartDoNotShareAKeyAtHighZoom() {
+        // zoom 14: the world is 512 * 2^14 points across, cells are 60 wide,
+        // so indices run to roughly 139,000.
+        let cell = 60.0 / (512.0 * pow(2.0, 14.0))
+
+        let a = MapLayers.cellKey(x: 1 * cell, y: 100_000 * cell, cell: cell)
+        let b = MapLayers.cellKey(x: 2 * cell, y: 0, cell: cell)
+
+        #expect(a != b, "two cells a long way apart landed in the same bubble")
+    }
+
+    @Test func theSameCellAlwaysGivesTheSameKey() {
+        let cell = 60.0 / (512.0 * pow(2.0, 9.0))
+        // Two points inside one cell, neither on a boundary.
+        let a = MapLayers.cellKey(x: 10 * cell + cell / 4, y: 20 * cell + cell / 4, cell: cell)
+        let b = MapLayers.cellKey(x: 10 * cell + cell / 2, y: 20 * cell + cell / 2, cell: cell)
+        #expect(a == b)
+    }
+
+    @Test func neighbouringCellsDiffer() {
+        let cell = 60.0 / (512.0 * pow(2.0, 9.0))
+        let here = MapLayers.cellKey(x: 10 * cell, y: 20 * cell, cell: cell)
+        #expect(here != MapLayers.cellKey(x: 11 * cell, y: 20 * cell, cell: cell))
+        #expect(here != MapLayers.cellKey(x: 10 * cell, y: 21 * cell, cell: cell))
+    }
+}
