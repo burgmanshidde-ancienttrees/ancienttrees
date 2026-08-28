@@ -12,11 +12,22 @@
 // a tree only you have found carries none and is yours alone until you offer
 // it and we take it.
 //
-// PHOTOGRAPHS STAY ON THE PHONE. Nothing here is uploaded: no bucket, no table,
-// no personal data on our side and no bill. Offering a tree to the platform
-// sends the WORDS through the submissions channel the website already has, and
-// the picture waits here until Hidde opens the storage question, which is his
-// under the accounts rule and hard rule 5.
+// PHOTOGRAPHS STAY ON THE PHONE UNTIL YOU SIGN IN, and that is the whole of
+// what this file does: it is the on-device store and it uploads nothing.
+//
+// This paragraph said "nothing here is uploaded, no bucket, no table, no
+// personal data on our side" until 2026-08-28, and by then that was false at
+// the level a reader of this file would care about: SightingSync.push, called
+// from ContentView on every change, sends the photograph to the sightings
+// bucket and a row carrying user_id, lat, lng, note and taken_at. The storage
+// question Hidde was supposed to open had been opened and this comment never
+// heard. It was found while filling in Apple's privacy questionnaire, which is
+// a declaration in his name, so a stale comment was one step from a false
+// legal answer.
+//
+// Offering a tree to the PLATFORM is still a separate, deliberate step through
+// the submissions channel. Syncing your own sightings to your own account is
+// not that, and the privacy page now says so.
 
 import Foundation
 import Observation

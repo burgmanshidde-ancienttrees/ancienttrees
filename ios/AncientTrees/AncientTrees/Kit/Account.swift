@@ -365,6 +365,13 @@ public final class Account {
         _ = try? await Net.data(
             for: Supa.request("/storage/v1/object/avatars/\(s.userId)/avatar.jpg",
                               method: "DELETE", token: s.accessToken))
+        // And the sighting photographs, which are the same problem and were
+        // missed. Their ROWS cascade off auth.users; the JPEGs in the
+        // sightings bucket do not, so before 2026-08-28 deleting an account
+        // left every picture somebody had taken sitting under a path that is
+        // their own user id, while the privacy page promised nothing is kept
+        // back. Found while writing that page's missing paragraph.
+        await SightingSync.purge(userId: s.userId, token: s.accessToken)
         let r = Supa.request("/rest/v1/rpc/delete_user", token: s.accessToken)
         let ok = (try? await Net.data(for: r))
             .flatMap { ($0.1 as? HTTPURLResponse) }
