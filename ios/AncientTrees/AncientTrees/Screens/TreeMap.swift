@@ -836,6 +836,26 @@ enum MapLayers {
     /// How close two pins have to be, in points, before they become one bubble.
     private static let clusterCellPoints = 60.0
 
+    /// WHICH GRID CELL A POINT FALLS IN, as one number.
+    ///
+    /// Pulled out and rewritten 2026-08-28, because the old expression was
+    /// `column * 100_000 + row` and the row index outgrows 100,000 partway up
+    /// the range this is actually used in. The grid is `worldPoints / 60`
+    /// cells wide, `worldPoints` is `512 * 2^zoom`, so the largest index is
+    /// `8.53 * 2^zoom`: it passes 100,000 at zoom 13.5 and reaches about
+    /// 280,000 at zoom 15, which is where clustering stops. Between 13.5 and 15
+    /// two cells a long way apart therefore shared a key, and a bubble was
+    /// drawn at the MEAN of both groups, which is a pile of trees standing
+    /// somewhere none of them are.
+    ///
+    /// A shift rather than a bigger multiplier, because a multiplier is a
+    /// number somebody has to keep checking against a zoom range. Both indices
+    /// are non-negative and fit in 32 bits at any zoom this map can reach, so
+    /// this cannot collide at all.
+    nonisolated static func cellKey(x: Double, y: Double, cell: Double) -> Int64 {
+        (Int64(floor(x / cell)) << 32) | Int64(floor(y / cell))
+    }
+
     /// OUR OWN CLUSTERING, 2026-08-24, because MapLibre's does not work here.
     ///
     /// Ten hypotheses were tested across two days. With
@@ -889,8 +909,7 @@ enum MapLayers {
             let x = (f.coordinate.longitude + 180.0) / 360.0
             let lat = min(max(f.coordinate.latitude, -85.05), 85.05) * .pi / 180.0
             let y = (1.0 - log(tan(lat) + 1.0 / cos(lat)) / .pi) / 2.0
-            let key = Int64(floor(x / cell)) &* 100_000 &+ Int64(floor(y / cell))
-            cells[key, default: []].append(f)
+            cells[cellKey(x: x, y: y, cell: cell), default: []].append(f)
         }
 
         var out: [MLNPointFeature] = []
@@ -946,8 +965,7 @@ enum MapLayers {
             let x = (c.longitude + 180.0) / 360.0
             let lat = min(max(c.latitude, -85.05), 85.05) * .pi / 180.0
             let y = (1.0 - log(tan(lat) + 1.0 / cos(lat)) / .pi) / 2.0
-            let key = Int64(floor(x / cell)) &* 100_000 &+ Int64(floor(y / cell))
-            cells[key, default: []].append(c)
+            cells[cellKey(x: x, y: y, cell: cell), default: []].append(c)
         }
         // A bubble is drawn at its group's mean, so the nearest mean is it.
         // Matching on the cell the tap fell in would be wrong at low zoom: we
