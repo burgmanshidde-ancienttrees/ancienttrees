@@ -1,0 +1,28 @@
+[
+  {
+    "id": "hee_010",
+    "name": "The Oak of the Neighbourhood",
+    "species": "Oak (Quercus sp.)",
+    "age_estimate": "roughly 96 to 106 years, from the register's planting band of 1920-1930",
+    "age_min": 96,
+    "age_max": 106,
+    "location": {
+      "address": "Heerlen, on a public square (plein)",
+      "latitude": 50.890364,
+      "longitude": 5.967684
+    },
+    "verified_sources": [
+      "https://www.monumentalebomen.nl/"
+    ],
+    "access": "Free, public square, open at all times.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "flagged",
+    "location_precision": "approximate",
+    "verify_notes": "Landelijk Register Monumentale Bomen (LRMB) nr 1696379, registered name 'Eik van de wijk' (the neighbourhood's oak). Planting band 1920-1930, so age is 96-106 years, a BAND not to be sharpened. Owner category gemeente (municipality), setting plein (square), register records it as publicly visitable. Register's own note on the place (not the tree): 'Zo goed als zeker geplant bij aanleg van de buurt' (almost certainly planted when the neighbourhood was laid out), which is consistent with but does not itself date the tree; do not bridge this into a firmer claim than the planting band gives. The register is the ONE source found this pass; species is genus-only from the tree's own name, so the page should ask the reader which oak it is. No girth or height recorded. Exact street address not established this pass, only the register's coordinate and 'plein' setting."
+  }
+]
