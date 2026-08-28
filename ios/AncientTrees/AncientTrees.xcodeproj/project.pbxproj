@@ -407,7 +407,7 @@
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSCameraUsageDescription = "To photograph the tree you are standing in front of. Your photographs stay on this phone; if you sign in, they sync to your own account so you keep them when you change phones.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "So the map can open on the remarkable old trees closest to you. Finding your way around happens on the phone; a position is only sent when you record a tree yourself, saved with that record.";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To pick a photograph of the tree you are standing in front of.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To let you collect a tree from a photograph you already took, and to read where and when it was taken so the tree lands in the right place on your map. If you would rather not, you can still pick the photo and put the pin there yourself.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -455,7 +455,7 @@
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSCameraUsageDescription = "To photograph the tree you are standing in front of. Your photographs stay on this phone; if you sign in, they sync to your own account so you keep them when you change phones.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "So the map can open on the remarkable old trees closest to you. Finding your way around happens on the phone; a position is only sent when you record a tree yourself, saved with that record.";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To pick a photograph of the tree you are standing in front of.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To let you collect a tree from a photograph you already took, and to read where and when it was taken so the tree lands in the right place on your map. If you would rather not, you can still pick the photo and put the pin there yourself.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

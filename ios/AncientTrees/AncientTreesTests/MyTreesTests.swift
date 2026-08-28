@@ -20,6 +20,8 @@
 import Testing
 import Foundation
 import AVFoundation
+import CoreLocation
+import ImageIO
 import UIKit
 @testable import AncientTrees
 
@@ -347,5 +349,97 @@ struct WhenPermissionIsRefused {
             #expect(CameraPicker.source(cameraAvailable: false, authorization: answer)
                     == .photoLibrary)
         }
+    }
+}
+
+// MARK: - A photograph you already had
+
+/// Collecting from the camera roll, added 2026-08-28 (Hidde: "wat als ik een
+/// mooie foto op mn fotorol heb staan").
+///
+/// None of this can be tested through the picker itself, because a simulator
+/// has no photo library worth the name and PHPickerViewController cannot be
+/// driven by a UI test. So the two questions that actually decide where a tree
+/// lands are pure functions, on the same principle the camera source decision
+/// was pulled out for: when the situation cannot be reproduced on the machine
+/// that tests it, make the DECISION testable instead of the situation.
+@Suite struct CameraRollTests {
+
+    @Test func theLibrarysOwnRecordBeatsTheFilesMetadata() {
+        let asset = CLLocation(latitude: 52.3731, longitude: 4.8922)
+        let exif = CLLocationCoordinate2D(latitude: 41.9028, longitude: 12.4964)
+
+        let got = LibraryPicker.coordinate(assetLocation: asset, exif: exif)
+
+        #expect(got?.latitude == 52.3731,
+                "the file's own block won over the library's record")
+    }
+
+    /// The case that matters when somebody has refused us the library: the
+    /// asset cannot be read, and the file sometimes still says.
+    @Test func exifAnswersWhenTheAssetCannot() {
+        let exif = CLLocationCoordinate2D(latitude: 41.9028, longitude: 12.4964)
+        let got = LibraryPicker.coordinate(assetLocation: nil, exif: exif)
+        #expect(got?.latitude == 41.9028)
+    }
+
+    /// And neither knowing is ordinary rather than an error. A screenshot, a
+    /// download, anything through a messenger.
+    @Test func nothingKnowsWhereItWasTaken() {
+        #expect(LibraryPicker.coordinate(assetLocation: nil, exif: nil) == nil)
+    }
+
+    @Test func gpsBlockIsReadWithItsHemispheres() {
+        let south: [CFString: Any] = [
+            kCGImagePropertyGPSDictionary: [
+                kCGImagePropertyGPSLatitude: 33.9249,
+                kCGImagePropertyGPSLatitudeRef: "S",
+                kCGImagePropertyGPSLongitude: 18.4241,
+                kCGImagePropertyGPSLongitudeRef: "E",
+            ] as [CFString: Any]
+        ]
+        let got = LibraryPicker.exifCoordinate(in: south)
+        #expect(got?.latitude == -33.9249, "a southern latitude came back positive")
+        #expect(got?.longitude == 18.4241)
+    }
+
+    /// Null Island. A cleared GPS block reads as 0,0, which is a real
+    /// coordinate in the Atlantic and would put somebody's tree in the sea.
+    @Test func aClearedGpsBlockIsNotACoordinate() {
+        let zeroed: [CFString: Any] = [
+            kCGImagePropertyGPSDictionary: [
+                kCGImagePropertyGPSLatitude: 0.0,
+                kCGImagePropertyGPSLongitude: 0.0,
+            ] as [CFString: Any]
+        ]
+        #expect(LibraryPicker.exifCoordinate(in: zeroed) == nil)
+    }
+
+    @Test func noGpsBlockAtAll() {
+        #expect(LibraryPicker.exifCoordinate(in: [:]) == nil)
+    }
+
+    /// The log keeps the day the photograph was taken, not the day it was
+    /// filed. Without this a photograph from last spring quietly rewrites your
+    /// own history to today.
+    @Test func theSightingKeepsThePhotographsOwnDate() {
+        let p = Patch(); defer { p.clean() }
+        let s = Sightings(folder: p.url)
+        let lastSpring = Date(timeIntervalSince1970: 1_713_000_000)
+
+        let made = s.record(treeId: nil, name: "The oak I photographed in April",
+                            lat: 52.37, lng: 4.89, image: nil, date: lastSpring)
+
+        #expect(made.date == lastSpring)
+        #expect(Sightings(folder: p.url).all.first?.date == lastSpring,
+                "the date did not survive a relaunch")
+    }
+
+    /// The camera path is unchanged and still files under now.
+    @Test func withoutADateItIsFiledUnderNow() {
+        let p = Patch(); defer { p.clean() }
+        let s = Sightings(folder: p.url)
+        let made = s.record(treeId: nil, name: "Standing here", lat: 52.37, lng: 4.89, image: nil)
+        #expect(abs(made.date.timeIntervalSinceNow) < 5)
     }
 }
