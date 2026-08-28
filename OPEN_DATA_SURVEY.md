@@ -902,6 +902,41 @@ della Maddalena filed under an adjoining municipality.
 So the corrected rule for Italy: **the age question is regional, not national, and
 it is worth one WFS call before assuming a newspaper is the only route to a date.**
 
+### Sardinia, stalled on 2026-08-17 for a missing licence, resolved 2026-08-28
+
+The 2026-08-17 island scout found the register (CFVA/FoReSTAS, tied to the same
+national Legge 10/2013 framework as every other Italian region) but stopped on
+the geoportale's landing page, which carries no licence statement, and guessed
+Sardinia might be a bare MASAF republish like Sicily rather than a separate
+richer file like Piemonte. Both guesses were wrong, found by going around the
+landing page to the layer's own GeoNetwork metadata record instead of reading
+its viewer shell.
+
+**Licence, CC BY 4.0.** The proving sentence is the `legalConstraints` field on
+metadata record `R_SARDEG:2c6bc878-6ce3-4a9d-bea4-966775c38a70` (layer
+`dbu:alberi_monumentali_2022_07_26`, found via
+`webgis2.regione.sardegna.it/geonetwork`'s own search API rather than the
+geoportale page, which never surfaces the record link directly):
+`https://creativecommons.org/licenses/by/4.0`. Imported in full to
+`data/registers/sardinia-alberi-monumentali.json`, 405 trees, on 2026-08-28.
+
+WFS: `https://webgis2.regione.sardegna.it/geoserver/dbu/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=dbu:alberi_monumentali_2022_07_26&outputFormat=application/json&srsName=EPSG:4326`
+(the `srsName` param reprojects Sardinia's native EPSG:3003 coordinates to
+plain WGS84 server-side, no client-side transform needed).
+
+Fields: species (`nome_scien`/`nome_volg`), girth (`circ_cm`), height
+(`altezza_m`), comune/provincia/localita, and the protecting decree (`tutela`).
+No age field, the Sicily case rather than the Piemonte one on that specific
+question, but girth and height are populated for nearly every record, which
+supports a derived age estimate (CLAUDE.md's growth-rate rule) where a second
+source is still needed for existence and species.
+
+**Six trees sit within 1.4km of Cagliari's centre**, a genuine walkable cluster
+including a 1200cm-girth Ficus macrophylla and a 340cm/38m Norfolk Island pine,
+found the same day `scout_next.py --target` named Cagliari as the city to
+unblock. Most of the register's remaining mass is inland (Barbagia/Ogliastra),
+away from any currently-queued city.
+
 ### Liguria has an age field, which no Italian national source does (2026-08-06)
 
 Found by the Genoa verification pass. `agriligurianet.it` carries Liguria's own
