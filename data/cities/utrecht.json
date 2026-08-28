@@ -3,9 +3,9 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Utrecht's oldest trees live behind walls more often than in open parks, protected first by a university's own working garden and later by simple survival. The city's genuine standout is a walled botanical garden barely bigger than a single city block, home to a ginkgo that predates the Netherlands' current constitution and a Chinese tree so rare it took a missionary decades to bring seeds to Europe at all. Add a farmhouse linden absorbed whole by a science campus, and a park cluster of century-old planes planted when the city's old defences became parkland.",
-  "meta_description": "Utrecht's oldest trees hide behind garden walls: a 260-year ginkgo, a rare handkerchief tree, a farmhouse linden. 22 verified locations, real stories.",
+  "meta_description": "Utrecht's oldest trees hide behind garden walls: a 260-year ginkgo, a rare handkerchief tree, a farmhouse linden. 33 verified locations, real stories.",
   "question_answer": "Utrecht's oldest tree is the Uithof Linden, a common lime planted around 1750 beside a 17th-century farmhouse that gave its name to what is now Utrecht Science Park. At roughly 275 years old, it predates the university campus built up around it by two centuries, one of the oldest Dutch lindens still standing anywhere.",
-  "question_meta": "A 275-year-old linden beside a 17th-century farmhouse, now swallowed by a university science campus, is Utrecht's oldest tree. The full twenty-two.",
+  "question_meta": "A 275-year-old linden beside a 17th-century farmhouse, now swallowed by a university science campus, is Utrecht's oldest tree. The full 33.",
   "question_context": "Utrecht keeps its oldest trees in two very different settings, and the contrast says something about how a Dutch city actually preserves age. The Uithof Linden and the Oude Hortus's three specimens all survive because they sat inside a boundary somebody drew and then defended: a farmhouse's private dooryard in one case, a university garden's walls in the other, both places where nobody had reason to fell an inconvenient tree for centuries. The Nieuwegracht's canal lindens took the opposite route, out in the open on a public street since the 1600s, which is also why they are honestly the youngest of the five: street trees get replaced when they die or block a view, and at least one full replanting happened there sometime between the original 1660 planting scheme and the roughly 1830-dated lime trees standing today. Between the walled survivors and the replanted street trees sits the real explanation for why this city's canal-lined image and its handful of genuinely centuries-old specimens rarely overlap on the same tree.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Utrecht's remarkable trees free to visit?",
-      "a": "Three of the twenty-two, all in the Oude Hortus, require a paid ticket to the Universiteitsmuseum. The other nineteen, including the Uithof Linden, the Markiezeneik of Amelisweerd, the Nieuwegracht's canal lindens and the trees of Hieronymusplantsoen, Wilhelminapark, Zonnenburg, Servaasbolwerk, Geertebolwerk, Lucasbolwerk and Lepelenburg, are free and visible from public streets or parks at any time."
+      "a": "Three of the 33, all in the Oude Hortus, require a paid ticket to the Universiteitsmuseum. The other 30, including the Uithof Linden, the Markiezeneik of Amelisweerd, the Nieuwegracht's canal lindens and the trees of Hieronymusplantsoen, Wilhelminapark, Zonnenburg, Servaasbolwerk, Geertebolwerk, Lucasbolwerk, Lepelenburg and the bastion-belt canal walk, are free and visible from public streets or parks at any time."
     },
     {
       "q": "Why does Utrecht have so few very old street trees?",
@@ -741,6 +741,328 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "utr_023",
+      "name": "The Maple of the Memorial Beech",
+      "species": "Maple (Acer sp.)",
+      "age_estimate": "roughly 136 to 146 years, from the register's planting band of 1880-1890",
+      "age_min": 136,
+      "age_max": 146,
+      "location": {
+        "address": "Zonnenburg, net ten zuiden van de herdenkingsbeuk, Utrecht",
+        "latitude": 52.086034,
+        "longitude": 5.128765,
+        "neighbourhood": "Zonnenburg"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688710, data/registers/netherlands-lrmb.json"
+      ],
+      "access": "Free, public park (gemeente-owned), open during park hours.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "story": "This tree's address is another tree. The national register of monumental trees gives it no house number and no street: it is filed as the one standing just south of the memorial beech on Zonnenburg, which is what happens to a large maple in a park where the neighbours have better stories.\n\nZonnenburg is a bastion of Utrecht's medieval defensive wall. From 1835 the landscape architect Jan David Zocher jr turned that whole ring of fortifications into the Singelplantsoen, the chain of parks along the canal that the city still walks through, and the old observatory sits on this same piece of raised ground. The register dates the maple's planting to between 1880 and 1890, so roughly 136 to 146 years, a couple of generations later than the park it stands in.\n\nWhich maple it is, we cannot tell you. The register calls it a gewone esdoorn, a Dutch name that gets used for the sycamore and for the Norway maple both, and nobody has settled it for this specimen. The seeds decide it and you can do it from the path: sycamore carries its winged pairs hanging at roughly a right angle, Norway maple spreads them almost flat, in a straight line. Look up, then tell us which one is up there."
+    },
+    {
+      "id": "utr_024",
+      "name": "The Elm of the Wilhelminapark West Gate",
+      "species": "Elm (Ulmus sp.)",
+      "age_estimate": "roughly 136 to 146 years, from the register's planting band of 1880-1890",
+      "age_min": 136,
+      "age_max": 146,
+      "location": {
+        "address": "West ingang Wilhelminapark, Utrecht",
+        "latitude": 52.088123,
+        "longitude": 5.138844,
+        "neighbourhood": "Wilhelminapark"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1678149, data/registers/netherlands-lrmb.json"
+      ],
+      "access": "Free, public park (gemeente-owned), open during park hours.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "story": "Most elms this old are firewood. Dutch elm disease carries the country's name because Dutch pathologists were the ones who identified the fungus behind it, in 1921, not because it started here, and over the century that followed it killed the great majority of Europe's mature elms. This one is still standing at the west gate of Wilhelminapark, which is the whole reason to walk over and look at it.\n\nThe register puts its planting between 1880 and 1890, roughly 136 to 146 years, so it was already a grown tree when the disease was first named, and it has outlived generations of elms planted long after it. That band also runs slightly ahead of the park's own opening in 1898. Either the tree was on the ground before the park was drawn around it, or the band is a decade-wide estimate rather than a record, and nothing we found settles which.\n\nThe register calls it a Hollandse iep, Dutch elm, which is less precise than it sounds: the name covers a group of hybrids and a long list of nursery clones, several of them bred specifically for disease resistance in the decades after 1921. Nobody has pinned down which one this is. If you know your elms, the west entrance is the place to settle it."
+    },
+    {
+      "id": "utr_025",
+      "name": "The Pagoda Tree of Lepelenburg",
+      "species": "Pagoda Tree (Styphnolobium sp.)",
+      "age_estimate": "roughly 66 to 76 years, from the register's planting band of 1950-1960",
+      "age_min": 66,
+      "age_max": 76,
+      "location": {
+        "address": "Lepelenburg tegenover Swanenberg, Utrecht",
+        "latitude": 52.089505,
+        "longitude": 5.129104,
+        "neighbourhood": "Lepelenburg"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1689877, data/registers/netherlands-lrmb.json"
+      ],
+      "access": "Free, public park (gemeente-owned), open during park hours.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "story": "In 1644 the last Ming emperor hanged himself from a pagoda tree on a hill above Beijing, and the species has carried a faintly funereal reputation in China ever since. In Utrecht it has a cheerier job. It is one of very few trees here that flowers in August, hanging loose sprays of cream pea flowers weeks after the limes and the chestnuts have finished, then shedding them until the path underneath goes pale.\n\nThis is a young tree by the standards of this walk, and there is no point pretending otherwise. The register dates its planting to between 1950 and 1960, roughly 66 to 76 years, which makes it a child beside the 1880s plantings a few hundred metres up the canal. Pagoda trees are slow starters, often twenty or thirty years old before they flower at all, so it has spent about half its life doing the thing people come to see.\n\nIt stands in Lepelenburg, a bastion of the medieval city wall that became park ground around 1860, opposite Swanenberg.\n\nThe register files it as a Tempelboom and stops there. Older catalogues call the species Sophora japonica and current botany calls it Styphnolobium japonicum, and neither name is much use: the tree is Chinese, not Japanese. Whether this one is the plain species or a cultivar, nobody has written down.",
+      "best_time": {
+        "months": [
+          8
+        ],
+        "kind": "flowers",
+        "label": "August, when the cream pea flowers open and then carpet the path"
+      }
+    },
+    {
+      "id": "utr_026",
+      "name": "The Copper Beech of the Servaasbolwerk",
+      "species": "Copper Beech (Fagus sp.)",
+      "age_estimate": "roughly 126 to 136 years, from the register's planting band of 1890-1900",
+      "age_min": 126,
+      "age_max": 136,
+      "location": {
+        "address": "Tegenover Leeuwenberghkerk, Servaasbolwerk, Utrecht",
+        "latitude": 52.087912,
+        "longitude": 5.128047,
+        "neighbourhood": "Servaasbolwerk"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688712, data/registers/netherlands-lrmb.json"
+      ],
+      "access": "Free, public park (gemeente-owned), open during park hours.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "story": "This stretch of canal has a beech problem, and it is worth saying out loud before you go looking. Within a few hundred metres the register holds another purple beech near Zonnenburg with a four metre trunk, a third by the Wittevrouwenbrug measuring 430 centimetres and rotting from the inside with giant polypore, and the liberation beech planted after 1945. None of those measurements belong to this tree. It is register number 1688712 and it carries no girth and no height of its own.\n\nWhat identifies it is what it looks at. It stands on the Servaasbolwerk facing the Leeuwenberghkerk, the small church put up in the 1560s as a plague house by a city that expected to need one. The register dates the tree's planting to between 1890 and 1900, roughly 126 to 136 years, so it is a good half century older than the liberation beech down the path.\n\nOne gap we cannot close from the paperwork. The register records the genus and stops. Purple leaf in a beech is a mutation that turns up both as a nursery variety and by accident, and nothing on file says whether this specimen is genuinely copper-leaved. Go in May, when the new leaves are at their most translucent, and tell us what colour it actually is."
+    },
+    {
+      "id": "utr_027",
+      "name": "The Horse Chestnut by the Herenstraat Bridge",
+      "species": "Horse Chestnut (Aesculus sp.)",
+      "age_estimate": "roughly 106 to 116 years, from the register's planting band of 1910-1920",
+      "age_min": 106,
+      "age_max": 116,
+      "location": {
+        "address": "Naast brug Herenstraat/Lepelenburg, Utrecht",
+        "latitude": 52.090038,
+        "longitude": 5.127723,
+        "neighbourhood": "Lepelenburg"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688783, data/registers/netherlands-lrmb.json"
+      ],
+      "access": "Free, public park (gemeente-owned), open during park hours.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "story": "The interesting thing about an old horse chestnut in the Netherlands is that it is still there. Bleeding canker, a bacterial infection that leaves rust-coloured ooze running down the bark, has been working through Dutch chestnuts since the early 2000s and has cost cities thousands of them; the most famous one in the country, the tree Anne Frank watched from the back of the annexe in Amsterdam, was already failing when a storm brought it down in 2010. This one has stood by the Herenstraat bridge through all of it. The register dates its planting to between 1910 and 1920, which makes it roughly 106 to 116 years old.\n\nIt is also not a solitary stop. An Oriental plane already on this map stands at the same bridge in Lepelenburg, the bastion turned park ground around 1860, so you get two monumental trees and the water between them in one pause.\n\nHorse chestnuts perform twice a year without being asked. White candles held upright over the whole crown in May, then spiked green cases in autumn that split on the path and hand out conkers to anyone who bends down.\n\nThe register calls it a white horse chestnut. Our own record keeps it at genus level, because the red-flowered hybrid is common in parks too, and nobody has confirmed which stands here.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "kind": "fruit",
+        "label": "late September into October, when the cases split and the conkers hit the path"
+      }
+    },
+    {
+      "id": "utr_028",
+      "name": "The Lime of the Van Limburg Stirumlaan",
+      "species": "Lime (Tilia sp.)",
+      "age_estimate": "roughly 136 to 146 years, from the register's planting band of 1880-1890",
+      "age_min": 136,
+      "age_max": 146,
+      "location": {
+        "address": "Nabij V.Limburg-Stirumlaan, Wilhelminapark, Utrecht",
+        "latitude": 52.088356,
+        "longitude": 5.139233,
+        "neighbourhood": "Wilhelminapark"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1678148, data/registers/netherlands-lrmb.json"
+      ],
+      "access": "Free, public park (gemeente-owned), open during park hours.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "story": "Park a car under a lime in July and you learn not to do it twice. Limes carry aphid colonies all summer, and what the aphids do not keep of the sap comes back down as honeydew, a fine sticky rain that sets on anything below it. That is the standing complaint against the most planted avenue tree in the Netherlands, and this is one of the older ones.\n\nThe register dates its planting to between 1880 and 1890, roughly 136 to 146 years, and files it as a Hollandse linde, the common lime. That tree is a hybrid of the small-leaved and large-leaved limes, and it rarely sets seed worth anything, so almost every one was raised from cuttings and layers. A Dutch lime avenue is closer to a row of copies than a row of siblings.\n\nIt stands in Wilhelminapark near the Van Limburg Stirumlaan. The park opened in 1898, laid out in the loose English landscape manner that was fashionable then, and it now holds around two dozen trees under monumental protection, of which this is one. Beyond the register we found nothing written about this specimen at all, only about the ground it stands on.\n\nWhich lime it is has not been recorded either. The tufts of hair in the vein angles on the underside of a leaf are what separate them. If you can read those, we want your verdict."
+    },
+    {
+      "id": "utr_029",
+      "name": "The Silver Maples of the Andrea Monument",
+      "species": "Maple (Acer sp.)",
+      "age_estimate": "roughly 136 to 146 years, from the register's planting band of 1880-1890",
+      "age_min": 136,
+      "age_max": 146,
+      "location": {
+        "address": "Ten westen van Burgm.F.Andreamonument, Wilhelminapark, Utrecht",
+        "latitude": 52.087817,
+        "longitude": 5.139382,
+        "neighbourhood": "Wilhelminapark"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1678147, data/registers/netherlands-lrmb.json"
+      ],
+      "access": "Free, public park (gemeente-owned), open during park hours.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "story": "There are two of them, and they flower before winter has finished. Silver maples open small red and green tufts in February or March, weeks ahead of their own leaves and ahead of almost everything else in the park, then spend the rest of the year growing faster than a maple ought to.\n\nThe pair stands just west of the monument to burgemeester F. Andrea in Wilhelminapark, close enough together that the register holds them as a single entry of two trees, and close enough that a visitor sees one stop rather than two. Their planting band is 1880 to 1890, which puts them at roughly 136 to 146 years apiece.\n\nThe name is about the leaf. Green on top, silver-white underneath, cut so deeply that the crown reads as light and slightly shredded, and when wind gets under it the whole tree goes pale at once. That colour change is the old rural sign that rain is on its way. The species is North American, and its speed costs it: silver maple wood is brittle and sheds limbs in storms more readily than most, which is why city tree registers watch them.\n\nOur record keeps them at genus level. The register's Dutch entry reads zilveresdoorn, silver maple, but nobody has confirmed the two in the field. One glance at a leaf underside would settle it, and we would take that answer."
+    },
+    {
+      "id": "utr_030",
+      "name": "The Hornbeam of the Old Observatory Path",
+      "species": "Hornbeam (Carpinus sp.)",
+      "age_estimate": "roughly 186 to 196 years, from the register's planting band of 1830-1840",
+      "age_min": 186,
+      "age_max": 196,
+      "location": {
+        "address": "Aan voetpad noordzijde Sterrenwacht, Servaasbolwerk, Utrecht",
+        "latitude": 52.086086,
+        "longitude": 5.128886,
+        "neighbourhood": "Servaasbolwerk"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688711, data/registers/netherlands-lrmb.json"
+      ],
+      "access": "Free, public park (gemeente-owned), open during park hours.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "story": "Hornbeam is the hardest wood in Europe, which is why it was cut for the things that got hit: mill cogs, ox yokes, butcher's blocks. This one has been left alone for something close to 190 years, and that makes it one of the oldest trees standing anywhere on Utrecht's old defensive ring.\n\nThe register puts its planting between 1830 and 1840. Jan David Zocher jr began turning the demolished city wall into the Singelplantsoen in 1835, in the middle of that band, and nothing we found says whether this hornbeam went in with that work or was already growing when the plan arrived. Both are possible. Neither is written down, and the tidier version is not worth inventing.\n\nIt stands on the footpath along the north side of the old Sterrenwacht, the observatory on the Zonnenburg bastion, and you will know it by the trunk. A hornbeam does not grow a column. It grows fluted and sinewy, grey bark pulled tight over ridges that twist like a flexed forearm, and it hangs on to a good share of its dead brown leaves all winter while the beeches beside it stand bare.\n\nWe searched properly for a second source and came back with nothing. The register is the whole of the written record here, down to the species: it reads gewone haagbeuk, common hornbeam, and our own entry stops at the genus until somebody confirms it."
+    },
+    {
+      "id": "utr_031",
+      "name": "The Old Pear of the Geertebolwerk",
+      "species": "Pear (Pyrus sp.)",
+      "age_estimate": "roughly 116 to 126 years, from the register's planting band of 1900-1910",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Geertebolwerk t.h.v. Zilverstraat a/h water, Utrecht",
+        "latitude": 52.08586,
+        "longitude": 5.12903,
+        "neighbourhood": "Geertebolwerk"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1678119, data/registers/netherlands-lrmb.json",
+        "https://kanokaartutrecht.nl/monumentalebomen.html (independent canal-side monumental-trees guide, cites the same register nr and adds height/girth measurements)"
+      ],
+      "access": "Free, public park (gemeente-owned), open during park hours.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "story": "An orchard would have cut this one down eighty years ago. Commercial pears are grubbed out when they stop paying, usually somewhere in their fifth decade. This one is roughly 116 to 126 years old by the register's planting band of 1900 to 1910, still flowers white every spring and still sets fruit, which is a career almost no pear tree is allowed to have.\n\nIt is a small tree and the numbers say so plainly: 11 metres tall, 182 centimetres around the trunk, measured by the canal-side survey of Utrecht's monumental trees, which also puts a species to it, the common pear, Pyrus communis. Against the planes and beeches of the singel it is easy to walk straight past. It is also, in a ring of parks planted entirely for ornament, one of very few trees here that produces something a person could eat. Whether the fruit is worth eating is a different question and nobody has written that down.\n\nYou will find it at the Geertebolwerk, at the water's edge level with Zilverstraat, on one of the bastions of the medieval wall that became public park ground in the nineteenth century. The survey that measured it calls it small, old and vital, which is a fair summary of why it is on this list at all: age here is not about size.",
+      "best_time": {
+        "months": [
+          4
+        ],
+        "kind": "flowers",
+        "label": "April, when it goes white all over at the water's edge"
+      }
+    },
+    {
+      "id": "utr_032",
+      "name": "The Black Walnut of the Tolsteegbrug",
+      "species": "Walnut (Juglans sp.)",
+      "age_estimate": "roughly 136 to 156 years, from the register's planting band of 1870-1890",
+      "age_min": 136,
+      "age_max": 156,
+      "location": {
+        "address": "Sterrenburg/Tolsteegbrug, Utrecht",
+        "latitude": 52.081344,
+        "longitude": 5.123125,
+        "neighbourhood": "Tolsteegbrug"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1678122, data/registers/netherlands-lrmb.json",
+        "https://kanokaartutrecht.nl/monumentalebomen.html (independent canal-side monumental-trees guide, cites the same register nr and adds height/girth measurements)"
+      ],
+      "access": "Free, public park (gemeente-owned), open during park hours.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "story": "This tree poisons the ground under it. Black walnut roots leak juglone, a compound that stunts or kills a long list of plants that try to grow within reach, which is why anyone who inherits one gives up on tomatoes. In its native North America it is also the most valuable timber tree going, worth enough per log that thieves take them standing.\n\nThis one is 19 metres tall with a trunk 332 centimetres around, measured by the canal-side survey of Utrecht's monumental trees. It stands by the Tolsteegbrug at the southern end of the singel, beside the building that housed the university's school of governance and organisation studies. The register dates its planting to somewhere between 1870 and 1890, so 136 to 156 years old, and the band is that wide because nobody wrote down the year.\n\nAutumn is when it makes itself known. The nuts come down in thick green husks the size of golf balls, and the husk stains whatever handles it a deep brown that takes a week to wear off, which is exactly what it was used for as a dye long before anyone in Europe planted the species to look at. The nut inside is worth eating and takes a hammer to reach.\n\nThe canal route through Utrecht's monumental trees ends at this tree, which makes it a reasonable place to stop walking."
+    },
+    {
+      "id": "utr_033",
+      "name": "The Field Maple of the Bartholomeibrug",
+      "species": "Field Maple (Acer campestre)",
+      "age_estimate": "roughly 156 to 166 years, from the register's planting band of 1860-1870",
+      "age_min": 156,
+      "age_max": 166,
+      "location": {
+        "address": "Zuidkant van de Bartholomeibrug, aan de waterkant, Pelmolenweg, Utrecht",
+        "latitude": 52.085219,
+        "longitude": 5.119142,
+        "neighbourhood": "Bartholomeibrug"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688570, data/registers/netherlands-lrmb.json",
+        "https://kanokaartutrecht.nl/monumentalebomen.html (independent canal-side monumental-trees guide, cites the same register nr and adds height/girth measurements)"
+      ],
+      "access": "Free, public park (gemeente-owned), open during park hours.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "story": "Every other maple in this city is an immigrant. The field maple is the only one native to the Netherlands, and it normally spends its life as hedge material, cut back over and over before anyone finds out what it could have become. This one was left alone from somewhere between 1860 and 1870, which makes it roughly 156 to 166 years old.\n\nIt is still small. Thirteen metres tall, a trunk 160 centimetres around, both figures taken by the canal-side survey of Utrecht's monumental trees. On an oak those numbers would be forgettable; for a field maple they are close to the ceiling of what the species does. What makes it worth stopping for is the shape. It grew bent and low on the south side of the Bartholomeibrug, leaning off the Pelmolenweg bank and out over the water rather than upward, a habit the survey singles out as unusual.\n\nThe tree gives away its own name if you look at the twigs, where young shoots grow corky ridges along their sides, and at the leaves, small and five-lobed with rounded rather than pointed tips. In October the whole thing turns butter yellow above the canal.\n\nA hedge plant that was never cut, given a century and a half and a good spot on the water. That is the entire story here, and it is enough."
     }
   ]
 }
