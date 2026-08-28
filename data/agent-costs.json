@@ -3715,6 +3715,15 @@
     "note": "Free Commons/iNaturalist API sweep (scripts/photo_hunt.py --recheck), no viewing/approval done here (this runner cannot reach upload.wikimedia.org). Queue now 1133 trees swept, 607 with at least one open-licence candidate, for a future viewing pass in a session.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "famous_trees.py --country Canada",
+    "kind": "scout",
+    "tokens": 0,
+    "trees": 0,
+    "note": "Free Commons named-tree category sweep for Montreal (queue city, register=0). 9 leads recorded to data/leads/_famous-canada.json, none map cleanly to Montreal itself (mostly Vancouver Island/Quebec countryside, no coordinates on several). All other queue-relevant countries (Finland, Thailand, Taiwan, Greece, Germany, Australia) already swept in prior passes; not re-run per the exhausted-hunt rule.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
