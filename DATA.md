@@ -14,6 +14,86 @@ roughly double the real number, and do not compare one across that date.
 because those point at /app and the listener matched the href. Every other
 event on the list is unaffected.
 
+## Weekly analysis 2026-08-28
+
+Fifth weekly analysis. The scheduled 08-24 run failed silently (health.py's
+rung 2 caught it this morning) so this covers the two weeks since the last
+one, comparing 2026-08-21 to 2026-08-27 against 2026-08-14 to 2026-08-20,
+using the latest-settled Search Console figure for each date.
+
+**Scorecard**
+
+| Week ending | Impressions | Clicks | CTR | Visits (beacon) | Pageviews (beacon) | Directions/visit | App-CTA | Waitlist total | Submissions total |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-16 | 3,457 | 81 | 2.3% | 410 | 560 | 0.0% (0 of 410) | 0 (0 of 410) | 6 real | 1 real |
+| 2026-08-20 | 4,941 | 115 | 2.3% | 410 | 640 | n/a (pre-fix, not comparable) | n/a (pre-fix, not comparable) | 10 | 6 |
+| 2026-08-27 | 6,810 (still settling) | 129 (still settling) | 1.9% | 410 | 660 | 1.2% (5 of 410) | 10 (2.4% of 410) | 13 | 24 (18 landed in one day) |
+
+**What moved:**
+1. Impressions rose 4,941 to 6,810 week over week (+38%, and the newest day
+   is still backfilling upward the way 08-24 did, from 730 to 998 three days
+   later). Clicks rose less, 115 to 129 (+12%, also understated for the same
+   reason), so CTR fell 2.3% to 1.9% and average daily position worsened
+   from about 15.6 to about 18.1. More pages are being seen; fewer of them
+   convert.
+2. Malaga's chronic 0%-CTR problem, flagged in three straight prior weekly
+   analyses (08-08, 08-10, 08-17), looks resolved: 2.3% CTR this window on
+   133 impressions, the same shape as Rome's earlier fix. The same problem
+   has now grown on three other cities: Milan (0%, 211 impressions, position
+   9.6, unmoved since at least 08-20), Vienna (0%, 146 impressions, down
+   from 3.5% CTR two weeks ago at the same position 10.0) and Madrid (0%,
+   145 impressions, up from 78 two weeks ago, still 0%).
+3. Beacon visits held flat at 410 both this week and last; pageviews barely
+   moved (640 to 660). Search impressions growing 38% did not turn into
+   more visits this window.
+4. First fully clean week for the click-tracking fix from 08-20 (directions,
+   app-cta and walks-app were all double-counted before that date, so the
+   prior week's figures are not comparable): 5 directions clicks and 10
+   app-cta clicks across 410 visits, 1.2% and 2.4% of visits respectively.
+5. The submissions total jumped from 6 to 24, but 18 of those rows arrived
+   in one day (08-21) from a single account (d4e6) voting worth-it/not-worth-it
+   repeatedly on a handful of trees, already flagged in the daily entry as
+   almost certainly internal testing rather than reader activity.
+
+**Suggestions, ranked:**
+1. **[run]** Apply the diagnostic that fixed Rome and appears to have fixed
+   Malaga (check P2 answer-first wording and the title/meta against the
+   actual query) to Milan, Vienna and Madrid. All three now show the same
+   shape: real impressions (145-211) at reasonable positions (9.6-15.4) and
+   a flat 0% CTR, and Vienna's is a regression from 3.5% two weeks ago
+   rather than a page that was never converting.
+2. **[run]** Tenerife's /el-drago-milenario is newly ranking (position
+   10.5, 237 impressions this window, was 0 two windows ago) but converting
+   at 0%, the same early shape Rome and Malaga had before they were fixed.
+   Worth a look now rather than after it has sat at 0% for three weekly
+   analyses like the others did.
+3. **[FOR HIDDE]** GO_TO_MARKET.md's Phase 0 checkpoint, "review at the end
+   of August 2026," lands this week. Its own healthy bar (impressions and
+   clicks growing week over week into the tens) reads as met at current
+   volumes (roughly 1,000 impressions and 18 clicks a day). What it does
+   not show growing is beacon visits, flat at 410 two weeks running. Worth
+   a conscious decision per that document rather than letting the date pass
+   unremarked, since the document says the choice should be made with
+   numbers on the table rather than by drift.
+4. **[run]** 'alameda dos platanos' (Porto's plane avenue) has now shown up
+   as an unserved content lead in three straight windows (8 impressions on
+   08-20, 15 on 08-24, 11 on 08-27) despite LOG.md recording a 08-26 merge
+   of Porto's duplicate plane-avenue pages that was meant to fix exactly
+   this. Worth confirming the merged page's title actually carries this
+   phrase; the query has not moved since the merge.
+5. **[sessie]** Check whether the worsening average position (15.6 to 18.1)
+   is dilution from new pages ranking, which DATA.md's own note says is
+   normal, or genuine slippage on established pages: Boston (-19
+   impressions, position down 20.9) and Geneva (-39 impressions, position
+   down 2.8) both appear in this window's "Slipping" table, and Boston's
+   drop is large enough that it is worth a direct look rather than
+   assuming dilution.
+
+**Watch next week:** whether Milan, Vienna and Madrid's CTR responds to any
+title/meta fix, whether beacon visits break out of the 410-visits-a-week
+plateau they have held for two windows running, and whether 08-27's
+partial figures settle upward the way 08-24's did.
+
 ## 2026-08-27 (previous UTC day)
 
 **Today: a waitlist arrived yesterday (13 total); 1 tree submission and 1 feedback report arrived yesterday (24 total).**
