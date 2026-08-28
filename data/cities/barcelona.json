@@ -3,9 +3,9 @@
   "country": "Spain",
   "status": "needs_curation",
   "intro": "Barcelona keeps its trees on two lists. The municipal Catalogue of Trees of Local Interest holds more than 200 specimens, but the Catalan government's rarer monumental designation belongs to only four trees in the whole city, all four growing in the same shaded ravine of the old botanical garden on Montjuic. Barcelona's oldest tree predates the city's own street grid: a 250-year-old holm oak now standing in a garden its neighbours spent three years fighting to save. Two more grew up inside Gaudi's Park Guell before he built around them. None of them need a ticket.",
-  "meta_description": "Barcelona ranks trees twice: 200-plus of local interest, four monumental. Meet the 250-year-old oak that predates the city grid, and 51 more.",
+  "meta_description": "Barcelona ranks trees twice: 200-plus of local interest, four monumental. Meet the 250-year-old oak that predates the city grid, and 54 more.",
   "question_answer": "The oldest tree in Barcelona whose age has actually been measured is a holm oak on Carrer de l'Encarnacio in the Vila de Gracia neighbourhood, dated by dendrochronology to around 250 years old. It already appears on city maps from 1845, when Gracia was still farmland, and stands in a small garden opened to the public in 2021 after a three-year campaign to stop the site being demolished. One tree may be older: the city register dates a wild olive in Park Guell to 1771, but that figure is an estimate nobody has checked against the wood.",
-  "question_meta": "Barcelona's oldest measured tree is a 250-year-old holm oak in Gracia. Its story, its exact location, and 51 more remarkable trees.",
+  "question_meta": "Barcelona's oldest measured tree is a 250-year-old holm oak in Gracia. Its story, its exact location, and 54 more remarkable trees.",
   "question_context": "The holm oak on Carrer de l'Encarnacio predates the neighbourhood that grew up around it. Gracia was a scatter of farmhouses when the tree was young, and it appears on the city's 1845 maps standing on rural land known as the Pla del Bonpa, tied to a farmhouse called Can Vidalet. Dendrochronologists, tree-ring specialists, later dated it to roughly 250 years old, making it the oldest tree in Barcelona whose age anyone has actually measured. The tree nearly did not survive to be dated: a development plan for the historic Casetes de l'Encarnacio around it triggered a three-year local campaign, and the oak was formally catalogued as a Tree of Local Interest in 2019 specifically to stop the bulldozers. The garden around it opened to the public in April 2021, though only the facades of the original houses could be saved. For grandeur over paperwork, Barcelona's biggest tree by volume is a different story entirely: a Rehder's wingnut in the botanical garden's Sot de l'Estany ravine, reaching roughly 40 metres in a hole in the ground nobody visits. Getting to the oak: Fontana station on the L3, then an eight minute walk into Vila de Gracia.",
   "faq": [
     {
@@ -1781,6 +1781,110 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "bcn_053",
+      "name": "The Castanyer Bord of Placa de Carles Buigas",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "about 89 years, from a planting around 1937",
+      "age_min": 85,
+      "age_max": 95,
+      "best_time": {
+        "months": [
+          4
+        ],
+        "kind": "flowers",
+        "label": "April, when the horse chestnut's white flower spikes stand out over the square"
+      },
+      "location": {
+        "address": "Placa de Carles Buigas, 08038 Barcelona",
+        "latitude": 41.37,
+        "longitude": 2.1497,
+        "neighbourhood": "Montjuic, Sants-Montjuic"
+      },
+      "verified_sources": [
+        "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-castanyer-d-india-castanyer-b-c-guardia-urbana-pl-de-carles-buigas-99400455030",
+        "https://guia.barcelona.cat/detall/_99400455030.html"
+      ],
+      "access": "Free, public square",
+      "transport": "Espanya (Metro L1/L3), about 5 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Single source: Barcelona's own Catalog of Trees of Local Interest (catalogue 0131-03-97, register_id 99400455030), catalogued 1997, born approx. 1937, height 15.5m, girth 1.84m at 1.3m, crown 11m. The plaza is named for Carles Buigas i Sans (1898-1979), the engineer who designed the Font Magica de Montjuic that stands in the same square, confirmed independently (Wikipedia, general sources on the fountain's history); this is background/orientation, not a claim about the tree itself.",
+      "location_precision": "confirmed",
+      "story": "The horse chestnut in Placa de Carles Buigas went into the ground around 1937, in the middle of the Spanish Civil War, in a city then still held by the Republic. Barcelona calls it a castanyer bord, or bastard chestnut, the old label for Aesculus hippocastanum: it looks like the sweet chestnut that gives Catalonia its autumn treat, but its conkers are bitter and inedible.\n\nCatalogued as a tree of local interest in 1997, it has grown to 15.5 metres with a trunk 1.84 metres round and a crown spreading 11 metres, respectable rather than record-setting, which is exactly why the city keeps a list of local-interest trees at all: not every tree worth keeping is the biggest one in town.\n\nThe square takes its name from Carles Buigas, the engineer who built the Font Magica, Montjuic's musical fountain, right where this tree now stands. A visitor can watch the evening light show and stand under a tree not far off the fountain's own age.\n\nNo record we found says how freely it flowers each April compared with other horse chestnuts in the city; if you know, tell us."
+    },
+    {
+      "id": "bcn_054",
+      "name": "The Judas Trees of Placa Joanic",
+      "species": "Judas Tree (Cercis siliquastrum)",
+      "age_estimate": "about 70 years, planted in 1956",
+      "age_min": 68,
+      "age_max": 72,
+      "best_time": {
+        "months": [
+          4
+        ],
+        "kind": "flowers",
+        "label": "the second half of April, when magenta flowers break straight out of the bark before the leaves"
+      },
+      "location": {
+        "address": "Placa Joanic (Carrer de Bruniquer 59), 08024 Barcelona",
+        "latitude": 41.4046,
+        "longitude": 2.1615,
+        "neighbourhood": "Vila de Gracia"
+      },
+      "verified_sources": [
+        "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-arbre-de-l-amor-arbre-de-jude-pl-joanic_99400455041.html",
+        "https://ca.wikipedia.org/wiki/Arbre_de_l%27amor"
+      ],
+      "access": "Free, public square",
+      "transport": "Joanic (Metro L4), by the square",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Barcelona catalogue 0118-06-96 (register_id 99400455041), catalogued 1996, planted 1956. The register lists three individual trunks under this one entry (heights 9/9/10m, girths at 1.3m of 1.65/1.25/1.45m), described as a small grove rather than a single specimen; the story treats them as one collectible ensemble per the register's own grouping. Beteve (the city broadcaster) covers this species blooming citywide each spring; not used as a tree-specific second source, only as context that the flowering display is locally well known.",
+      "location_precision": "confirmed",
+      "story": "Barcelona calls this small grove at Placa Joanic 'the trees of love', and each April they make the case themselves: the whole crown erupts in magenta flowers that break straight out of the bark, trunk and branches both, before a single leaf shows. It is one of the few flowering habits dramatic enough that the city's own broadcaster runs a story most springs pointing readers toward wherever it is blooming that year.\n\nThe three trunks here, planted in 1956 in what is now Vila de Gracia, are old enough and large enough that Barcelona catalogued them as trees of local interest in 1996, unusual for a species that rarely reaches this size in the city. Their crowns spread up to 10 metres, and the widest trunk measures 1.65 metres round.\n\nThe Judas tree takes its English name from a legend that Judas Iscariot hanged himself from one; in the Mediterranean it is better known simply as the tree that turns a street corner purple every spring. This one gets noticed on schedule, in the second half of April, when Gracia's small square briefly does exactly that."
+    },
+    {
+      "id": "bcn_055",
+      "name": "The Hornbeam of the Sot de l'Estany",
+      "species": "Hornbeam (Carpinus betulus)",
+      "age_estimate": "about 80 years",
+      "age_min": 75,
+      "age_max": 85,
+      "location": {
+        "address": "Jardi Botanic Historic, Av. dels Muntanyans, 08038 Barcelona",
+        "latitude": 41.36701,
+        "longitude": 2.15198,
+        "neighbourhood": "Montjuic, Sants-Montjuic"
+      },
+      "verified_sources": [
+        "https://www.barcelona.cat/es/que-hacer-en-bcn/parques-y-jardines/arboles-de-interes-local/carpi-del-jardi-botanic-historic-99400455031"
+      ],
+      "access": "Paid entry to the Jardi Botanic Historic",
+      "transport": "Poble Sec (Metro L3) or bus to Estadi Olimpic, 12 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Single source: Barcelona's Catalog of Trees of Local Interest, register_id 99400455031, height ~18m, crown 13m, girth 1.2m, estimated age 80 years. A lower designation (local interest) than its four monumental neighbours in the same ravine, held back from earlier passes purely on count; shipped now per CLAUDE.md's ruling that count alone never blocks a verified tree.",
+      "location_precision": "approximate",
+      "paid_entry": true,
+      "story": "Common hornbeam barely grows wild anywhere on the Iberian peninsula, which makes the specimen in Barcelona's Jardi Botanic Historic an outlier by definition. It has found the one pocket of the city cool and damp enough to suit it: the Sot de l'Estany, a shaded former quarry hollow that already holds four of Barcelona's officially monumental trees, a wingnut, two kinds of ash and a sycamore maple among them.\n\nAt roughly 80 years old the hornbeam is younger than those neighbours, which is why the city lists it one rank down, as a tree of local interest rather than a monument. It has still reached 18 metres with a crown 13 metres across, respectable for a species this far outside its natural range.\n\nThe garden was Barcelona's original botanical collection, on this same hill, before a newer one opened elsewhere on Montjuic. The ravine has kept its own microclimate ever since: cooler, wetter and stubbornly hospitable to trees with no business surviving this far south. Same ticket as the rest of the garden's veterans."
     }
   ],
   "oldest_tree_id": "bcn_001"
