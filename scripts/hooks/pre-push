@@ -16,6 +16,9 @@
 #   check-lists the screen sweep and the layout gate agree on the screen list
 #   icon_check  the app icon has no alpha channel, which App Store Connect
 #               refuses on upload before review even starts
+#   convention  a NEW screen or component names the product its interaction was
+#               copied from, so a design from somebody's own head cannot ship
+#               unnoticed (2026-08-28)
 #
 # It only runs when the push actually touches the app, so a night run pushing
 # trees never sees it.
@@ -42,13 +45,14 @@ while read -r _local_ref local_sha _remote_ref remote_sha; do
 $(git diff --name-only "$base" "$local_sha" 2>/dev/null)"
 done
 
-echo "$CHANGED" | grep -qE '^(ios/|scripts/(app|netcheck|icon_check|layout_rules))' || exit 0
+echo "$CHANGED" | grep -qE '^(ios/|site/src/components/|scripts/(app|netcheck|icon_check|layout_rules|conventioncheck))' || exit 0
 
 fail=0
 for check in \
     "scripts/netcheck.py" \
     "scripts/appsweep.py --check-lists" \
-    "scripts/icon_check.py"
+    "scripts/icon_check.py" \
+    "scripts/conventioncheck.py"
 do
     # shellcheck disable=SC2086
     if ! out=$(python3 $check 2>&1); then
