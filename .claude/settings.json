@@ -91,7 +91,8 @@
       "WebSearch",
       "WebFetch",
       "SendMessage",
-      "ToolSearch"
+      "ToolSearch",
+      "Bash(python3 scripts/conventioncheck.py*)"
     ]
   },
   "hooks": {
@@ -103,6 +104,17 @@
             "command": "python3 scripts/brief.py 2>/dev/null || true",
             "timeout": 20,
             "statusMessage": "Reading project state"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 scripts/hooks/convention_nudge.py 2>/dev/null || true",
+            "timeout": 5
           }
         ]
       }
