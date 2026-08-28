@@ -149,6 +149,40 @@ def night_shift_idle():
     return streak, since
 
 
+# And the failure mode that is the exact opposite, invisible to everything
+# above: a knock that never ARRIVES. run-health.json only records runs that
+# happened, so nine scheduled knocks delivering two looks identical to a quiet
+# night. Measured 2026-08-27 and 08-28: 2 of 9 both days, while the two that did
+# fire used their full window and worked fine. The digest's own watchdog cannot
+# see it either, because it waits for 26 hours of TOTAL silence and 2-of-9 never
+# produces a gap that long.
+KNOCKS_A_DAY = 9
+KNOCK_FLOOR = 5  # under this in 24h is a delivery problem, not a quiet night
+
+
+def knocks_fired():
+    """How many nightly.yml runs GitHub actually started in the last 24h."""
+    try:
+        out = subprocess.run(
+            ["gh", "api", "repos/{owner}/{repo}/actions/workflows/nightly.yml/runs",
+             "-q", ".workflow_runs[].created_at"],
+            capture_output=True, text=True, timeout=30)
+    except (OSError, subprocess.SubprocessError):
+        return None
+    if out.returncode != 0:
+        return None
+    cutoff = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(hours=24)
+    n = 0
+    for line in out.stdout.split():
+        try:
+            when = datetime.datetime.fromisoformat(line.strip().replace("Z", "+00:00"))
+        except ValueError:
+            continue
+        if when > cutoff:
+            n += 1
+    return n
+
+
 ANSWERED = os.path.join(ROOT, "data", "review-answered.json")
 
 
@@ -260,6 +294,18 @@ def main():
                      f"Nothing to fix. If a run still does 0.0 minutes after "
                      f"the window has reset, then it is not the allowance and "
                      f"its log is worth reading.")
+
+    fired = knocks_fired()
+    if fired is None:
+        unknown.append("nightly knocks")
+    else:
+        print(f"  {'Nightly knocks':20s} {fired} of {KNOCKS_A_DAY} in 24h")
+        if fired < KNOCK_FLOOR:
+            problems.append(
+                f"Only {fired} of {KNOCKS_A_DAY} nightly knocks were delivered in the "
+                f"last 24h. That is GitHub dropping the cron, not the usage window: "
+                f"a starved run still appears in this count. Dispatch one by hand: "
+                f"gh workflow run nightly.yml")
 
     date, body = newest_review_block()
     if date:
