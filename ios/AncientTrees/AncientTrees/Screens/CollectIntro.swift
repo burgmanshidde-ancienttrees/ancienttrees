@@ -14,6 +14,11 @@ import SwiftUI
 
 struct CollectIntro: View {
     var onStart: () -> Void
+    /// The camera roll, added 2026-08-28. Convention: iNaturalist, where the
+    /// gallery is an ordinary route and not a fallback, reachable both by long
+    /// pressing the camera button and as a visible choice. A long press alone
+    /// is invisible, so this is the visible half and the press is the shortcut.
+    var onLibrary: () -> Void = {}
 
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
@@ -45,16 +50,27 @@ struct CollectIntro: View {
             // everybody sees.
             VStack(alignment: .leading, spacing: 18) {
                 line("checkmark.seal",
-                     "You can collect a tree by photographing it while you stand in front of it. We tell you which one it is and tick it off.")
+                     "You can collect a tree by photographing it, now or from a photo you already took. We tell you which one it is and tick it off.")
                 line("plus.circle",
                      "If it is a tree we do not have, you can add it. It appears on your own map straight away, and once we have checked it, it joins the map everybody sees.")
             }
 
             Spacer(minLength: 24)
 
-            Button("Take a photo", action: onStart)
-                .buttonStyle(BrandButtonStyle())
-                .accessibilityIdentifier("add-start")
+            VStack(spacing: 10) {
+                Button("Take a photo", action: onStart)
+                    .buttonStyle(BrandButtonStyle())
+                    .accessibilityIdentifier("add-start")
+                    // The shortcut iNaturalist puts on its camera button. It
+                    // is a second way in and never the only one.
+                    .onLongPressGesture(perform: onLibrary)
+
+                Button("Choose from your photos", action: onLibrary)
+                    .font(.brand(16, .bold))
+                    .foregroundStyle(Brand.moss)
+                    .frame(maxWidth: .infinity, minHeight: 44)
+                    .accessibilityIdentifier("add-library")
+            }
         }
         .frame(maxHeight: .infinity, alignment: .top)
         .padding(.top, 8)

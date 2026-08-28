@@ -29,17 +29,30 @@
 // at /contribute, which is the honest escape hatch; inside the app there is
 // none.
 //
-// AND THE LOCATION COMES FROM CORELOCATION, NOT FROM THE PICTURE. Worth
-// stating because the obvious assumption is the wrong one: a photo taken
-// through UIImagePickerController arrives as a bare UIImage with every scrap
-// of metadata gone, and a picture chosen from the library may have been
-// stripped on share, or be a screenshot, or a download. `origin` here is the
-// live device fix, which is the only reliable answer.
+// WHERE THE LOCATION COMES FROM, rewritten 2026-08-28. It used to be
+// CoreLocation and nothing else, on the reasoning that a photo taken through
+// UIImagePickerController arrives as a bare UIImage with every scrap of
+// metadata gone. That is still true of the camera path and is why it still
+// uses the live device fix. It stopped being the whole answer when Hidde asked
+// the obvious question: "wat als ik een mooie foto op mn fotorol heb staan en
+// die boom wil ik toevoegen." A photograph taken last spring must not be filed
+// where you are standing now.
+//
+// So there are three sources and the record says which one it was:
+//
+//   .device   the phone, at the shutter. The camera path, unchanged.
+//   .photo    the photograph's own coordinate, off the PHAsset (LibraryPicker).
+//   .placed   put there by hand, on the map, because the photograph did not say.
+//
+// A photograph with no location is never refused, which is iNaturalist's rule
+// and ours: it is incomplete rather than untrustworthy, and a pin somebody
+// dragged into place counts exactly as much as one read out of a file.
 //
 // The submission reuses the website's own channel (Submission.send, kind
 // .tree): no new fields, no name asked, verification happens before anything
 // goes live, exactly as Step 0b runs it for the site.
 
+import CoreLocation
 import SwiftUI
 
 struct CollectSheet: View {
@@ -60,13 +73,36 @@ struct CollectSheet: View {
     /// sheet grew nine of them and two combinations were unreachable.
     private enum Stage: Equatable {
         case intro
+        case place             // the photograph does not say where it was taken
         case identify          // photograph taken, more than one candidate
         case ticked(String)    // tree id, matched and claimed
         case describe          // a tree we do not map
     }
 
+    /// Where the coordinate on this record came from. Kept because it changes
+    /// what the record is worth: a run reading the submission needs to know
+    /// whether it is a device fix, a file's own GPS, or somebody's finger.
+    enum Fix: String {
+        case device, photo, placed
+
+        var note: String {
+            switch self {
+            case .device: "GPS, standing at the tree"
+            case .photo: "from the photograph's own location"
+            case .placed: "placed on the map by hand"
+            }
+        }
+    }
+
     @State private var stage: Stage = .intro
     @State private var camera = false
+    @State private var library = false
+    @State private var fix: Fix = .device
+    /// When the photograph was taken, when the photograph says. Nil for the
+    /// camera path, where it is now by definition.
+    @State private var taken: Date?
+    /// The crosshair while the .place stage is up.
+    @State private var placing: CLLocationCoordinate2D?
     @State private var shot: UIImage?
     /// Where the shutter actually fell. Held separately from `origin` because
     /// the view can be re-evaluated with a newer fix while the outcome screen
@@ -115,9 +151,14 @@ struct CollectSheet: View {
                 // thumb already is, which is what Airbnb does with any sheet
                 // that asks for something. Everything after it is a list or a
                 // form, so those scroll.
-                CollectIntro(onStart: { camera = true })
+                CollectIntro(onStart: { camera = true },
+                             onLibrary: { openLibrary() })
                     .padding(.horizontal, 20)
                     .padding(.bottom, 24)
+            } else if stage == .place {
+                // A map needs the whole sheet, so this one does not scroll
+                // either. Same reason as the intro.
+                placeState
             } else {
                 ScrollView {
                     VStack(alignment: .leading, spacing: 20) {
@@ -125,7 +166,7 @@ struct CollectSheet: View {
                         case .ticked(let id): if let t = catalogue.tree(id) { tickedState(t) }
                         case .identify: identifyState
                         case .describe: describeForm
-                        case .intro: EmptyView()
+                        case .intro, .place: EmptyView()
                         }
                     }
                     .padding(.horizontal, 20).padding(.bottom, 32)
@@ -141,8 +182,16 @@ struct CollectSheet: View {
         .fullScreenCover(isPresented: $camera) {
             CameraPicker { resolve($0) }.ignoresSafeArea()
         }
+        .fullScreenCover(isPresented: $library) {
+            LibraryPicker { picked($0) }.ignoresSafeArea()
+        }
         .sheet(isPresented: $signingIn) {
             SignInSheet(reason: .feedback, localCount: saved.savedCount)
+        }
+        .task {
+            guard Launch.collectPlace else { return }
+            placing = .init(latitude: origin.lat, longitude: origin.lng)
+            stage = .place
         }
     }
 
@@ -168,13 +217,35 @@ struct CollectSheet: View {
 
     // MARK: - The one decision
 
-    /// The whole design, in nine lines. Photograph first, ask afterwards, and
-    /// only ask when we genuinely cannot tell.
+    /// THE CAMERA PATH. You are standing there, so the device fix is the
+    /// answer and there is nothing to ask.
     private func resolve(_ image: UIImage?) {
         guard let image else { return }
+        taken = nil
+        settle(image, at: origin, fix: .device)
+    }
+
+    /// THE CAMERA ROLL PATH. The photograph usually knows where it was taken;
+    /// when it does not we ask, and asking is a map rather than a text box.
+    private func picked(_ p: LibraryPicker.Picked?) {
+        guard let p else { return }
+        shot = p.image
+        taken = p.taken
+        if let c = p.coordinate {
+            settle(p.image, at: (c.latitude, c.longitude), fix: .photo)
+        } else {
+            placing = .init(latitude: origin.lat, longitude: origin.lng)
+            withAnimation(.snappy) { stage = .place }
+        }
+    }
+
+    /// The whole design, in nine lines, and it no longer cares which of the
+    /// three ways the coordinate arrived. Photograph first, ask afterwards,
+    /// and only ask when we genuinely cannot tell.
+    private func settle(_ image: UIImage, at here: (lat: Double, lng: Double), fix source: Fix) {
         shot = image
-        let here = origin
         at = here
+        fix = source
         if let t = Self.confident(origin: here, trees: catalogue.trees) {
             claim(t, image: image, at: here)
         } else if Self.nearby(origin: here, trees: catalogue.trees).isEmpty {
@@ -184,10 +255,72 @@ struct CollectSheet: View {
         }
     }
 
+    private func openLibrary() {
+        Task {
+            // The prompt belongs to the tap, so it is asked here rather than
+            // inside the picker. Refused is not a dead end: the picker still
+            // opens, and we ask where the tree is instead.
+            await LibraryPicker.askForLibrary()
+            library = true
+        }
+    }
+
     private func claim(_ t: Tree, image: UIImage, at here: (lat: Double, lng: Double)) {
         if !saved.isVisited(t.id) { saved.toggleVisited(t.id) }
-        sightings.record(treeId: t.id, name: t.name, lat: t.lat, lng: t.lng, image: image)
+        sightings.record(treeId: t.id, name: t.name, lat: t.lat, lng: t.lng,
+                         image: image, date: taken ?? Date())
         withAnimation(.snappy) { stage = .ticked(t.id) }
+    }
+
+    // MARK: - The photograph does not say where it was taken
+
+    /// Not a failure and not an error state. Most photographs that reach a
+    /// phone through a messenger have had their location stripped on the way,
+    /// and a screenshot never had one. iNaturalist keeps such an observation
+    /// and simply asks; the only thing that changes is that we had to ask.
+    ///
+    /// A map rather than a text box, for the reason PlacePin is a map: a
+    /// position described in words is a coordinate laundered through two
+    /// translations, ours and theirs.
+    private var placeState: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            VStack(alignment: .leading, spacing: 6) {
+                Text("Where does it stand?")
+                    .font(.brand(24, .heavy)).foregroundStyle(Brand.ink)
+                Text("Your photograph does not say where it was taken, so drag the map until the pin sits on the tree.")
+                    .font(.subheadline).foregroundStyle(Brand.inkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+            .padding(.horizontal, 20)
+            .padding(.bottom, 12)
+
+            ZStack(alignment: .bottom) {
+                PinPicker(start: placing ?? .init(latitude: origin.lat, longitude: origin.lng),
+                          trees: Self.nearby(origin: (placing?.latitude ?? origin.lat,
+                                                      placing?.longitude ?? origin.lng),
+                                             trees: catalogue.trees),
+                          spanMeters: 400,
+                          coordinate: Binding(get: { placing ?? .init(latitude: origin.lat,
+                                                                     longitude: origin.lng) },
+                                              set: { placing = $0 }))
+
+                Button {
+                    guard let c = placing, let image = shot else { return }
+                    settle(image, at: (c.latitude, c.longitude), fix: .placed)
+                } label: {
+                    Text("The tree is here")
+                        .font(.brand(16, .bold))
+                        .frame(maxWidth: .infinity).frame(height: 48)
+                        .background(Brand.moss, in: .capsule)
+                        .foregroundStyle(.white)
+                }
+                .buttonStyle(.plain)
+                .padding(.horizontal, 20)
+                .padding(.bottom, 20)
+                .accessibilityIdentifier("collect-place-confirm")
+            }
+        }
+        .accessibilityIdentifier("collect-place")
     }
 
     // MARK: - Which one is it
@@ -381,7 +514,8 @@ struct CollectSheet: View {
         let here = at ?? origin
         let s = sightings.record(treeId: nil,
                                  name: why.isEmpty ? "A tree I found" : String(why.prefix(60)),
-                                 note: why, lat: here.lat, lng: here.lng, image: shot)
+                                 note: why, lat: here.lat, lng: here.lng, image: shot,
+                                 date: taken ?? Date())
         shot = nil
         dismiss()
         // Straight to the tree you just made, because that is where you finish
@@ -407,7 +541,10 @@ struct CollectSheet: View {
         var d = Submission.Draft()
         d.kind = .tree
         d.why = why
-        d.locationHint = String(format: "%.5f, %.5f (GPS)", here.lat, here.lng)
+        // Say which of the three ways this coordinate arrived. A run reading
+        // the submission treats a hand-placed pin differently from a device
+        // fix, and until 2026-08-28 this line called all of them GPS.
+        d.locationHint = String(format: "%.5f, %.5f (%@)", here.lat, here.lng, fix.note)
         d.city = nearbyCityName ?? ""
         let ok = await Submission.send(d, from: "app:collect",
                                        token: await account.freshToken())
