@@ -2064,6 +2064,28 @@
    "cities": [],
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-08-28T09:29:47+00:00",
+   "date": "2026-08-28",
+   "run_id": "33159584772",
+   "minutes": 21.1,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 134,
+   "denials": 19,
+   "denials_source": "permission_denials: Bash(cd), Bash(curl), Bash(echo), Bash(for), Bash(head), Bash(if), Bash(mkdir), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 16655694,
+   "claims_held": [
+    "groningen",
+    "maastricht"
+   ],
+   "commits": 9,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
