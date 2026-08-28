@@ -558,7 +558,13 @@ def gsc_section(gsc):
     leaks = sorted((v["imp"] - v["clicks"] * 20, p, v) for p, v in seen.items()
                    if v["imp"] >= 20 and v["clicks"] * 100 < v["imp"] * 3)
     leak_lines = []
-    for _, page, v in sorted(leaks, key=lambda t: -t[2]["imp"])[:3]:
+    # Eight, not three. Three was enough while the site had a handful of pages
+    # earning impressions; it is not now. The 2026-08-28 weekly analysis named
+    # Milan, Vienna and Madrid as sitting at 0% CTR on 145 to 211 impressions
+    # each, and not one of them could be diagnosed from this file, because the
+    # top three were taken by Rome, Tenerife and Las Vegas. A report that names
+    # a problem and withholds the evidence for it makes the next session guess.
+    for _, page, v in sorted(leaks, key=lambda t: -t[2]["imp"])[:8]:
         top = "; ".join("%s (i%d, p%.0f)" % (clean_query(qq), i, pos)
                         for i, qq, pos in sorted(v["q"], reverse=True)[:3])
         leak_lines.append("- Seen, not clicked: %s (c%d/i%d, %.1f%%) for %s" % (
