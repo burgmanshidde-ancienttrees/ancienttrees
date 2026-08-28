@@ -405,8 +405,8 @@
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
-				INFOPLIST_KEY_NSCameraUsageDescription = "To photograph the tree you are standing in front of. The picture stays on your phone unless you offer it to us.";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "So the map can open on the remarkable old trees closest to you. Your location never leaves the phone.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "To photograph the tree you are standing in front of. Your photographs stay on this phone; if you sign in, they sync to your own account so you keep them when you change phones.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "So the map can open on the remarkable old trees closest to you. Finding your way around happens on the phone; a position is only sent when you record a tree yourself, saved with that record.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To pick a photograph of the tree you are standing in front of.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -434,7 +434,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 26.5;
 			};
 			name = Debug;
@@ -453,8 +453,8 @@
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
-				INFOPLIST_KEY_NSCameraUsageDescription = "To photograph the tree you are standing in front of. The picture stays on your phone unless you offer it to us.";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "So the map can open on the remarkable old trees closest to you. Your location never leaves the phone.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "To photograph the tree you are standing in front of. Your photographs stay on this phone; if you sign in, they sync to your own account so you keep them when you change phones.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "So the map can open on the remarkable old trees closest to you. Finding your way around happens on the phone; a position is only sent when you record a tree yourself, saved with that record.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To pick a photograph of the tree you are standing in front of.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -482,7 +482,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 26.5;
 			};
 			name = Release;
@@ -507,7 +507,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AncientTrees.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AncientTrees";
 				XROS_DEPLOYMENT_TARGET = 26.5;
 			};
@@ -533,7 +533,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AncientTrees.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AncientTrees";
 				XROS_DEPLOYMENT_TARGET = 26.5;
 			};
@@ -558,7 +558,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = AncientTrees;
 				XROS_DEPLOYMENT_TARGET = 26.5;
 			};
@@ -583,7 +583,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = AncientTrees;
 				XROS_DEPLOYMENT_TARGET = 26.5;
 			};
