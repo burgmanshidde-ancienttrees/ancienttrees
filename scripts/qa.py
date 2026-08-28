@@ -540,6 +540,64 @@ def check_park_key_is_one_function():
     return out
 
 
+
+def check_every_feed_is_in_the_version():
+    """The fourteenth ratchet check, from 2026-08-28.
+
+    THE GATE IN FRONT OF THE FEEDS ASKED ABOUT THE WRONG FILE. /api/version.json
+    is the cheap poll an app makes on launch: same version, nothing to fetch.
+    Its hash covered the TREE data alone, so a change to any other feed was
+    invisible to every installed phone. Four city faces were pinned by hand on
+    2026-08-28, went live on the website and in /api/browse.json within minutes,
+    and could not reach a single app. Hidde: "still not seein new thumbs in app".
+
+    Second time this exact shape has bitten, which is what makes it a check
+    rather than a note. site/src/lib/walks.ts already carries the story of a
+    phone that was "up to date with a file it had never heard of", from when
+    browse.json was added and no synced phone ever asked for it.
+
+    The app's own Sync.swift is the source of truth for which feeds exist,
+    because it is the thing doing the downloading. Anybody adding a feed there
+    is told here that the version has to cover it, before a release rather than
+    after one.
+    """
+    sync = ROOT / "ios" / "AncientTrees" / "AncientTrees" / "Kit" / "Sync.swift"
+    version = ROOT / "site" / "src" / "pages" / "api" / "version.json.ts"
+    if not sync.exists() or not version.exists():
+        return []
+
+    feeds = set(re.findall(r'"/api/([a-z]+)\.json"', sync.read_text()))
+    feeds.discard("version")          # the poll cannot poll itself
+    if not feeds:
+        return ["qa: could not read any feed out of Sync.swift, so this check "
+                "proved nothing. Look at it rather than deleting it."]
+
+    # THE IMPORT, not the word. The first version of this asked whether the
+    # feed's name appeared anywhere in the file, and the long comment above the
+    # imports names every one of them, so a file that had stopped hashing
+    # browse.json still passed. Proved by deleting the import and watching this
+    # find nothing (2026-08-28). It asks for the module specifier now, which is
+    # code rather than prose.
+    src = version.read_text()
+
+    def covered(feed):
+        # Every feed reaches the hash through its own route's GET, except the
+        # trees, which this endpoint already builds itself with feedTrees in
+        # order to report the count. Both are real coverage; only a feed that
+        # arrives by neither is invisible to a phone.
+        if f'"./{feed}.json"' in src:
+            return True
+        return feed == "trees" and "feedTrees(" in src
+
+    missing = sorted(f for f in feeds if not covered(f))
+    if not missing:
+        return []
+    return [f"api/version.json.ts does not cover {', '.join(missing)}, which the app "
+            f"downloads (Kit/Sync.swift). A change to those feeds would be invisible "
+            f"to every installed phone: it asks version.json, sees no change, and "
+            f"never fetches the file that moved. Hash them into the version."]
+
+
 def check_faces_travel_to_the_app():
     """The thirteenth ratchet check, from 2026-08-25.
 
@@ -1013,6 +1071,7 @@ def main():
     failures += check_tree_count_claims(pages)
     failures += check_species_face_is_chosen()
     failures += check_faces_travel_to_the_app()
+    failures += check_every_feed_is_in_the_version()
     failures += check_park_key_is_one_function()
     failures += check_vendored_photos_are_served()
 
