@@ -3796,6 +3796,15 @@
     "note": "pagegaps.py named a second new gap after Brisbanes 3 new trees: Crows Ash / Australian Teak (Flindersia australis), 3 trees. Wrote data/species/crows-ash-australian-teak.json from those trees own facts (the unrelated 1826/1884 felling-and-replant at Botanic Gardens, the Newstead inference-only age, the Toowong council-memorial planter). Build clean.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "dresden",
+    "kind": "verify",
+    "tokens": 65000,
+    "trees": 4,
+    "note": "Register-join via de.wikipedia Naturdenkmale wikitext + Wikidata scouting file; 4 confirmed (2 clean, 2 flagged), 10 leads/blocked recorded (1 dead, 1 private land, 5 avenues, 1 access-unconfirmed, 2 follow-up leads)",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "dre_001",
+    "name": "The Zerr-Eiche of Trinitatisplatz",
+    "species": "Turkey Oak (Quercus cerris)",
+    "age_estimate": "roughly 130 years",
+    "age_min": 125,
+    "age_max": 140,
+    "girth_cm": 384,
+    "location": {
+      "address": "Trinitatisplatz, opposite the main portal of the Trinitatiskirche, Johannstadt, Dresden",
+      "latitude": 51.052664,
+      "longitude": 13.770189,
+      "neighbourhood": "Johannstadt"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Dresden",
+      "https://de.wikipedia.org/wiki/Zerr-Eiche_Trinitatisplatz",
+      "https://dawo-dresden.de/2024/02/28/zerr-eiche-ist-neues-naturdenkmal/"
+    ],
+    "access": "Free, standing on a public square (Trinitatisplatz) opposite the church",
+    "transport": "Tram stop Trinitatisplatz, right on the square (news coverage of a nearby tram diversion names conflicting line numbers across sources, so no specific line is stated here)",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Official Dresden natural-monument register (Naturdenkmal, city Umweltamt list reproduced in the Wikipedia 'Liste der Naturdenkmale' table, ND row 168/id 145 per the dedicated article) gives: girth '>4m', stem diameter 122cm, height 20m, age '134 (2024)'. Note: 122cm diameter x pi = ~383cm circumference, which matches the dedicated Wikipedia article's own figure of 3.84m circumference almost exactly, not the register table's '>4m' figure; recorded girth_cm uses the diameter-derived 384cm since two of the three figures agree on it, but the register's own '>4m' entry is a minor mismatch worth a reader correction. Planted 1895 after being raised at the city's Tatzberg nursery (per dawo-dresden.de and Radio Dresden coverage of the Feb 2024 designation), which would make it ~131 years old in 2026 versus the register's implied ~136; both given as one broad band. Third-strongest Turkey oak in Saxony and the strongest in Dresden per the designation rationale (history, age, rarity, imposing form, genetic value). Survived the WWII air raids on Dresden without serious damage and was spared the postwar firewood shortage. Newly designated a Naturdenkmal in February 2024, so alive and monitored as of that date."
+  },
+  {
+    "id": "dre_002",
+    "name": "The Plane Tree of Albertplatz",
+    "species": "London Plane (Platanus x hispanica)",
+    "age_estimate": "roughly 140 years",
+    "age_min": 130,
+    "age_max": 150,
+    "girth_cm": 330,
+    "location": {
+      "address": "Albertplatz, on the traffic island toward Bautzner Strasse, Innere Neustadt, Dresden",
+      "latitude": 51.063451,
+      "longitude": 13.747327,
+      "neighbourhood": "Innere Neustadt"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Dresden",
+      "https://de.wikipedia.org/wiki/Platane_Albertplatz",
+      "https://www.stadtwikidd.de/wiki/Naturdenkmale"
+    ],
+    "access": "Free, standing on a traffic island in the middle of a public square, accessible at any time",
+    "transport": "Albertplatz tram and bus interchange, right on the square",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Register (city Naturdenkmal list, ND 26) and dedicated Wikipedia article agree: height ~25m, crown diameter similar, trunk circumference 3.30m. Planted around 1885 on open ground at Albertplatz. Independently confirmed as ND 26 by Stadtwiki Dresden (a separate, non-Wikipedia community wiki), which lists it by name, number and district. Designated a natural monument by Dresden city council resolution of 3 January 1985, the same resolution that protected the Fetscherplatz oak (dre_003) and the Mozartstrasse ironwood tree (not delivered, see leads: stands in a private front garden). A hybrid between the American and Oriental plane, chosen historically as a hardy, heat-tolerant street tree. No felling or storm-damage reports found in a targeted 2024-2026 news search."
+  },
+  {
+    "id": "dre_003",
+    "name": "The Oak of Fetscherplatz",
+    "species": "Overcup Oak (Quercus lyrata)",
+    "age_estimate": "roughly 125 years",
+    "age_min": 115,
+    "age_max": 135,
+    "girth_cm": 335,
+    "location": {
+      "address": "Fetscherplatz, Johannstadt, Dresden",
+      "latitude": 51.046595,
+      "longitude": 13.771059,
+      "neighbourhood": "Johannstadt"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Dresden",
+      "https://de.wikipedia.org/wiki/Eiche_Fetscherplatz",
+      "https://www.stadtwikidd.de/wiki/Naturdenkmale"
+    ],
+    "access": "Free, standing on a public square, visible and reachable at all times",
+    "transport": "Tram stop Fetscherplatz, directly beside the tree",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Register (ND 27) and dedicated Wikipedia article agree: height ~25m, crown diameter ~32m (dominates the whole square), trunk circumference 3.35m. A North American species (Quercus lyrata, native to the US), planted around 1900 when the square was still called Fuerstenplatz. Independently confirmed as ND 27 by Stadtwiki Dresden. Protected since the same 3 January 1985 city council resolution as the Albertplatz plane (dre_002). In 1949 architect Herbert Schneider built a tram-stop waiting kiosk so close to the trunk that its roof curves around the tree, a well documented and photographed detail. Not to be confused with an unrelated, separate 375-year-old oak on Hueblerstrasse in Blasewitz that was felled in mid-2025 after losing a fight with a fungal disease (dawo-dresden.de, June 2025); that tree is a different oak in a different district. No felling or health reports found for this Fetscherplatz specimen."
+  },
+  {
+    "id": "dre_004",
+    "name": "The Splittereiche",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "250 to 300 years",
+    "age_min": 250,
+    "age_max": 310,
+    "girth_cm": 600,
+    "location": {
+      "address": "Grosser Garten, on the open lawn roughly 40 metres south of the Mosaikbrunnen (Mosaic Fountain), Dresden",
+      "latitude": 51.04021,
+      "longitude": 13.75379,
+      "neighbourhood": "Grosser Garten"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Splittereiche",
+      "https://www.baumkunde.de/baumregister/7340-splittereiche_im_grossen_garten_von_dresden/",
+      "https://treedd.de/allgemein/die-splittereiche-ein-wichtiges-mahnmal-im-grossen-garten"
+    ],
+    "access": "Free, standing in the open on a public lawn inside the Grosser Garten park, open during park hours",
+    "transport": "Enter the Grosser Garten and walk to the Mosaikbrunnen; nearest tram stops are around Strassburger Platz or Lenneplatz, roughly a 10-15 minute walk into the park (approximate, not independently timed)",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "A pedunculate oak (Quercus robur), height ~27m, trunk circumference 'over 6 metres', age assessed at 250 to 300 years (assessment dated to the 2010s per de.wikipedia, so now a decade or more further on; kept as the source's own vague range rather than sharpened). Hit by bomb splinters during the RAF/USAAF air raids on Dresden of 13-14 February 1945; survived, with visible one-sided trunk damage extending about 8m up, which is how it got its name (Splittereiche = 'splinter oak'). Protective metal sheeting installed 2018 to stop visitors worsening the wound. A memorial plaque was unveiled on 8 May 2017 (72nd anniversary of VE Day), quoting Mark Twain: 'Time may heal all wounds, but it is a lousy cosmetician.' Sources: dedicated de.wikipedia article, baumkunde.de (independent German tree register), monumentale-eichen.de (specialist oak register), and treedd.de (local Dresden tree-advocacy group), all agreeing on location, species and history; this is well beyond the two-source bar. FLAG: not found in the official city Naturdenkmal list (it may be protected by other means, e.g. as part of the listed Grosser Garten historic park, rather than individually designated), so its formal protection status is unconfirmed even though its identity and history are solid. FLAG: 2025-08 news coverage describes the Grosser Garten felling roughly 300 to 425 drought- and disease-weakened trees park-wide over the 2025/26 season because of climate-stress dieback; no source found naming the Splittereiche specifically among them, but given the park-wide mortality crisis this specimen is worth a fresh health check before the page ships or shortly after."
+  }
+]
