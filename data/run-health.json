@@ -2202,6 +2202,28 @@
    ],
    "trees": 15,
    "logged": true
+  },
+  {
+   "started": "2026-08-28T19:45:03+00:00",
+   "date": "2026-08-28",
+   "run_id": "33205210733",
+   "minutes": 28.1,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 173,
+   "denials": 24,
+   "denials_source": "permission_denials: Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(mkdir), Bash(python3), Bash(rm), Bash(wc)",
+   "ended": "success",
+   "tokens": 23367131,
+   "claims_held": [
+    "girona",
+    "oahu"
+   ],
+   "commits": 8,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
