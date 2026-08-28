@@ -87,7 +87,7 @@ jobs:
       # it is the leg that runs without tokens.
       # 2026-08-28: this counted SILENCE and it should have been counting
       # SHORTFALL. The threshold was 26 hours since the last run, and on 08-27
-      # and 08-28 GitHub delivered 2 of 9 knocks on each day: the longest gap
+      # and 08-28 GitHub delivered 2 of the day's knocks each day: the longest gap
       # was 11.7 hours, so the watchdog saw a healthy night shift while
       # two thirds of the machine's day never happened. Counting how many
       # knocks ARRIVED in 24 hours sees both failures, because a run starved by
@@ -100,8 +100,8 @@ jobs:
           FIRED=$(gh api repos/${{ github.repository }}/actions/workflows/nightly.yml/runs \
             --jq "[.workflow_runs[] | select(.created_at > \"$SINCE\")] | length" 2>/dev/null || echo "")
           if [ -z "$FIRED" ]; then echo "no nightly history readable; skipping"; exit 0; fi
-          echo "$FIRED of 9 knocks in the last 24h"
-          if [ "$FIRED" -lt 5 ]; then
+          echo "$FIRED of 12 knocks in the last 24h"
+          if [ "$FIRED" -lt 7 ]; then
             echo "under the floor; dispatching one"
             gh workflow run nightly.yml -R "${{ github.repository }}" \
               && echo "dispatched" || echo "dispatch failed; cron remains the fallback"
