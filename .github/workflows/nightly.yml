@@ -256,15 +256,17 @@ jobs:
             changes what a reader can see today. So the order is not a
             preference, it is what the stages actually do.
 
-            prepare.py prints "ready to write" at the top of your window. If that
-            number is not zero, your first Task is a write-stories agent on 15 to
-            20 of them across cities per BRIEF_WRITING.md, merged, built and
-            committed. Verify and staging come after that, with whatever the
-            clock leaves, and they are how you make the NEXT run's write pass
-            possible. This was written on 2026-08-28 after a run did everything
-            right except this: it dispatched two verify passes, confirmed five
-            trees, staged fourteen more, and put nothing live, while 366 trees
-            sat waiting for nothing but prose.
+            WHICH trees is CLAUDE.md's call and not this prompt's: read rule
+            one's order in "The course after the fortnight" and take the first
+            lane that has anything in it. `city_queue.py --next` and
+            prepare.py's "ready to write" line between them say which lanes are
+            stocked today. Whatever the ladder picks, the pass you dispatch for
+            it has to be the one that ends with trees merged into data/cities in
+            THIS window, not the one that prepares them for a later one.
+
+            Written on 2026-08-28 after a run did everything right except this:
+            it dispatched two verify passes, confirmed five trees, staged
+            fourteen more, and put nothing live.
 
             Not a claim, not pagegaps, not a survey of what could be done. Claiming a city is the note you leave BEFORE
             doing work; a run that ends holding claims and no trees has left a

@@ -510,12 +510,32 @@ def main():
         print("  wikidata = named trees within 15 km that we do NOT map, from")
         print("      the CC0 layer. It is a lead list, not a register: every")
         print("      entry still needs its second source and its own pin.\n")
+        # Supply first, rank second, since 2026-08-28. Hidde put opening a
+        # zero-tree city with supply at the top of rule one that day ("ik denk
+        # nog steeds dat het nuttiger is om steden toe te voegen die op 0 staan
+        # maar wel in onze top lijst"), and this list was printing in pure rank
+        # order, so the cities a run may actually open sat scattered among
+        # dozens it may not touch at all. A run reading the top of the list saw
+        # Chiang Mai, Jerusalem and Dubai, all with nothing to open them from,
+        # and Dresden with 209 Wikidata trees was twenty rows down.
+        def _supply(c):
+            return c.get("register", 0) + c.get("ready", 0) + c.get("wikidata", 0)
+
+        openable = [c for c in s1 if _supply(c) > 0]
+        dry = [c for c in s1 if _supply(c) == 0]
+        print("  OPENABLE TODAY (%d of %d): supply already on hand, so rule 1(d)"
+              % (len(openable), len(s1)))
+        print("  does not apply. These are the top of rule one.\n")
         print("  #  city             register  ready  wikidata")
-        for c in s1[:40]:
+        for c in openable[:25]:
             print("%3d %s%-16s %9d %6d %9d" % (
                 c["rank"], "* " if c["city"].lower() in named else "  ",
                 c["city"][:16], c.get("register", 0), c.get("ready", 0),
                 c.get("wikidata", 0)))
+        print("\n  NOTHING TO OPEN THEM FROM (%d): scout a register (rung 5) or"
+              % len(dry))
+        print("  wait for Hidde to name one. Do not research these from zero.\n")
+        print("  " + ", ".join("%s (#%d)" % (c["city"], c["rank"]) for c in dry[:15]))
         print("\nSTAGE 2, DEEPENING: once stage 1 has nothing left that moves")
         print("cheaply. Targets are 20, or 30 for a big confirmed city.\n")
         print("  #  city             now target  ready  register  wikidata")
