@@ -65,9 +65,9 @@ final class SweepFrames: XCTestCase {
         ("signin",       ["-tab=0", "-signin"], "signin-sheet"),
         ("paywall",      ["-tab=0", "-paywall"], "paywall-sheet"),
         ("primer",       ["-tab=0", "-primer"], "primer"),
-        ("contribute",   ["-tab=2", "-contribute"], "contribute-sheet"),
-        ("feedback",     ["-tab=2", "-feedback"], "contribute-sheet"),
-        ("sponsor",      ["-tab=2", "-sponsor"], "sponsor-sheet"),
+        ("contribute",   ["-tab=2", "-settings", "-contribute"], "contribute-sheet"),
+        ("feedback",     ["-tab=2", "-settings", "-feedback"], "contribute-sheet"),
+        ("sponsor",      ["-tab=2", "-settings", "-sponsor"], "sponsor-sheet"),
         ("profile-edit", ["-tab=2", "-profile-edit"], nil),
         ("people",       ["-tab=2", "-signed-in", "-people", "-people-demo"], "people-sheet"),
     ]
@@ -101,8 +101,19 @@ final class SweepFrames: XCTestCase {
             // half a second, and a frame read during that is the frame times
             // 0.957: the Spot sheet's 44 point close button measured 42.1 and
             // the gate called it small (2026-08-21).
-            if root != nil {
-                _ = app.descendants(matching: .any)[root!].waitForExistence(timeout: 10)
+            if let root {
+                // ASSERTED, not awaited and forgotten. The result used to be
+                // discarded, so a screen whose launch argument had died still
+                // measured and still produced a picture: it was the screen
+                // underneath, wearing the missing screen's name. Three of them
+                // were doing exactly that on 2026-08-28, from the day Settings
+                // stopped being a tab. A screen that cannot be opened has to
+                // say so out loud, or the sweep reports coverage it does not
+                // have.
+                XCTAssertTrue(app.descendants(matching: .any)[root].waitForExistence(timeout: 10),
+                              "\(name): nothing with identifier \(root) appeared, so this "
+                              + "screenshot is of whatever was underneath. Fix the launch "
+                              + "argument rather than the assertion.")
             }
             Thread.sleep(forTimeInterval: 1.5)
 
