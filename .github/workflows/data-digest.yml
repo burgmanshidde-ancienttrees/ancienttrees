@@ -83,21 +83,30 @@ jobs:
       # when it goes stale (CLAUDE.md rung 2); until now nothing did the
       # reverse, so a stretch of dropped nightly schedules would only ever be
       # a line in DATA.md that nobody reads while Hidde is away. GitHub drops
-      # cron schedules routinely (measured: 5-7 of 9 knocks fire on a normal
-      # day), and 26 hours of total silence is past bad luck. This workflow is
-      # the right watchdog because it is the leg that runs without tokens.
-      - name: Wake the night shift if it has gone silent
+      # cron schedules routinely. This workflow is the right watchdog because
+      # it is the leg that runs without tokens.
+      # 2026-08-28: this counted SILENCE and it should have been counting
+      # SHORTFALL. The threshold was 26 hours since the last run, and on 08-27
+      # and 08-28 GitHub delivered 2 of 9 knocks on each day: the longest gap
+      # was 11.7 hours, so the watchdog saw a healthy night shift while
+      # two thirds of the machine's day never happened. Counting how many
+      # knocks ARRIVED in 24 hours sees both failures, because a run starved by
+      # the usage window still starts and still counts.
+      - name: Wake the night shift if too few knocks arrived
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          LAST=$(gh run list --workflow=nightly.yml -R "${{ github.repository }}"             --limit 1 --json createdAt --jq '.[0].createdAt' 2>/dev/null || echo "")
-          if [ -z "$LAST" ]; then echo "no nightly history readable; skipping"; exit 0; fi
-          AGE=$(( $(date -u +%s) - $(date -u -d "$LAST" +%s) ))
-          if [ "$AGE" -gt 93600 ]; then
-            echo "nightly silent for $(( AGE / 3600 ))h; dispatching"
-            gh workflow run nightly.yml -R "${{ github.repository }}"               && echo "dispatched" || echo "dispatch failed; cron remains the fallback"
+          SINCE=$(date -u -d '24 hours ago' +%Y-%m-%dT%H:%M:%SZ)
+          FIRED=$(gh api repos/${{ github.repository }}/actions/workflows/nightly.yml/runs \
+            --jq "[.workflow_runs[] | select(.created_at > \"$SINCE\")] | length" 2>/dev/null || echo "")
+          if [ -z "$FIRED" ]; then echo "no nightly history readable; skipping"; exit 0; fi
+          echo "$FIRED of 9 knocks in the last 24h"
+          if [ "$FIRED" -lt 5 ]; then
+            echo "under the floor; dispatching one"
+            gh workflow run nightly.yml -R "${{ github.repository }}" \
+              && echo "dispatched" || echo "dispatch failed; cron remains the fallback"
           else
-            echo "nightly last fired $(( AGE / 3600 ))h ago; healthy"
+            echo "healthy"
           fi
 
       # The contributor reply loop's transport (spec 2026-08-21): thank-yous
