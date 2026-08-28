@@ -182,6 +182,39 @@ def pipeline_status():
               % " ".join(s for s, _ in stale))
     print("  (passcheck.py --pending tells you which verified trees still lack stories)")
 
+    # The stage BEFORE a writer, and the one that ran dry without anyone
+    # noticing. leads.py --ready is the cheapest supply in the project (rule
+    # 1(a): the verify work is already paid for, only the prose is left) and it
+    # fell from ~300 leads on 2026-08-12 to 54 on 08-28, while 1,321 leads sat
+    # blocked on nothing but a missing species. refill.py recovers the genus
+    # from the tree's own name, costs no tokens and no network, and is
+    # idempotent, so there is no decision to make about whether to run it: it
+    # runs here, every run, before any work is chosen.
+    try:
+        import refill
+        filled, _, _, files = refill.refill(write=True)
+        if filled:
+            print(f"  refilled          : {filled} lead(s) given a genus from their own "
+                  f"name, across {files} file(s); commit these")
+    except Exception as exc:  # never let preparation cost a window
+        print(f"  refilled          : skipped ({exc.__class__.__name__})")
+
+    try:
+        import leads as _leads
+        ready = len(_leads.buckets()["ready"])
+        print(f"  ready to write    : {ready} lead(s)  (leads.py --ready lists them)")
+        if ready < READY_FLOOR:
+            print(f"  *** the writable pile is under {READY_FLOOR}. Widening "
+                  f"data/genus-names.json is the cheap way to refill it: every word "
+                  f"added there turns leads into writable trees for nothing. ***")
+    except Exception as exc:
+        print(f"  ready to write    : unknown ({exc.__class__.__name__})")
+
+
+# Under this many writable leads and refilling the pile outranks writing from
+# it, because three passes from now there is nothing to write at all.
+READY_FLOOR = 60
+
 
 def main():
     ap = argparse.ArgumentParser()

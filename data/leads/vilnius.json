@@ -1,225 +1,245 @@
 {
-  "city": "Vilnius",
-  "country": "Lithuania",
-  "city_slug": "vilnius",
-  "note": "From the 2026-08-16 register-first verify pass (STVK gpo_bot_t layer). 7 trees verified and delivered to data/research/vilnius-verified.json. Leads failed only the evidence bar, the count, or ran out of the pass's time window; blocked can never ship as they stand. Register source for all: data/registers/lithuania-stvk-gpo.json. Extended 2026-08-17 (verification pass, session-435fb395): 3 trees shipped to data/research/vilnius-verified.json (vln_008 Sapiegos Park Linden, vln_009 Kalnai Park Pine, vln_010 Amur Cork/Crimean Linden group of Bernardinai Garden). Four candidates newly BLOCKED (2 likely-dead register entries, 2 locked-company-grounds trees in Zverynas). Presidential Palace oaks and the Castle Park chestnut circle researched but left as leads on judgement calls (security screening; ensemble-vs-grove read) rather than shipped or blocked.",
-  "leads": [
-    {
-      "name": "The oldest linden",
-      "name_lt": "Seniausia liepa",
-      "register_id": "0310505050028",
-      "lat": 54.69834,
-      "lng": 25.30911,
-      "status": "lead",
-      "why": "Named exactly like the oldest oak (vln_001) and 2.2km away, so a promising individually-named old tree. Not researched this pass: ran out of time budget before reaching it. Worth a dedicated search next pass (same Lithuanian-Wikipedia-stub pattern that worked for the university courtyard trees is likely to exist)."
-    },
-    {
-      "name": "Maple circle in the P.Vileisis palace courtyard",
-      "name_lt": "P. Vileišio rūmų kiemo Klevų ratas",
-      "register_id": "0310506000014",
-      "lat": 54.69497,
-      "lng": 25.30533,
-      "status": "lead",
-      "why": "Ensemble candidate, 1.8km from centre, in the courtyard of a historic palace (now home to the Lithuanian Theatre, Music and Cinema Museum). Not researched; worth checking whether the courtyard is genuinely open to the public before shipping (hard rule 10 access test)."
-    },
-    {
-      "name": "Bernardinai garden ash (possible twin of the shipped three-trunked ash)",
-      "name_lt": "Bernardinų sodo uosis",
-      "register_id": "0310505160014",
-      "lat": 54.68324,
-      "lng": 25.29825,
-      "status": "lead",
-      "why": "Sits about 30m from vln_007 (the three-trunked ash already shipped). Could be the same tree double-registered, a genuine second ash, or the tree that Wikipedia's generic \"Sereikiškių parko uosis\" entry refers to. Register-pitfall twins should fold into one entry; needs a ground check or a clearer source before deciding whether this is a separate tree worth its own page."
-    },
-    {
-      "name": "Birch of philologists",
-      "name_lt": "Filologų beržas",
-      "register_id": "0310505240003",
-      "lat": 54.68304,
-      "lng": 25.28744,
-      "status": "lead",
-      "why": "In the same Old Town university courtyard cluster as the three shipped trees (vln_002-004), same register pattern (protected since 1996). Only one source found this pass (the register itself); a focused search did not surface a second independent source or a dedicated Wikipedia stub, unlike its neighbours. Worth another search pass, ideally in Lithuanian directly on a university or heritage site rather than general web search."
-    },
-    {
-      "name": "Kalnai park pine",
-      "name_lt": "Kalnų parko pušis",
-      "register_id": "0310505020044",
-      "lat": 54.6881,
-      "lng": 25.29967,
-      "status": "lead",
-      "why": "Individual named pine, 1.3km from centre in Kalnai (Hill) Park, which has views over the Old Town. Not researched this pass."
-    },
-    {
-      "name": "Swiss pine",
-      "name_lt": "Kedrinė pušis",
-      "register_id": "0310505020045",
-      "lat": 54.69599,
-      "lng": 25.30709,
-      "status": "lead",
-      "why": "An individual named conifer, 2km out. Not researched this pass; \"Swiss pine\" (Pinus cembra) would be an unusual planted specimen in Lithuania and worth confirming the species carefully rather than assuming."
-    },
-    {
-      "name": "Belunai Oak",
-      "name_lt": "Belūnų ąžuolas",
-      "register_id": "0310505010101",
-      "lat": 54.6845,
-      "lng": 25.12796,
-      "status": "lead",
-      "why": "9.8km out, inside the day-trip boundary if public transport reaches it within roughly 30 minutes (unverified). Not researched this pass."
-    },
-    {
-      "name": "Canadian poplar in Castle park",
-      "name_lt": "Pilių parko kanadinė tuopa",
-      "register_id": "0310505060005",
-      "lat": 54.68532,
-      "lng": 25.29014,
-      "status": "lead",
-      "why": "A single named individual poplar in the Castle park area. Not researched this pass; a Canadian poplar (introduced, fast-growing, relatively short-lived) is a weaker remarkable-tree case than the named oaks, lindens and multi-trunk specimens already shipped or listed nearby, so it is deprioritised rather than blocked."
-    },
-    {
-      "name": "Pilaite Manor Pine",
-      "name_lt": "Pilaitės dvaro pušis",
-      "register_id": "0310506000166",
-      "lat": 54.69998,
-      "lng": 25.19422,
-      "status": "lead",
-      "why": "5.7km out, within Vilnius's own Pilaite district (reachable by city bus, so plausibly inside the day-trip boundary). Not researched this pass."
-    },
-    {
-      "name": "Dirkliskes Forest Oak",
-      "name_lt": "Dirkliškių miško ąžuolas",
-      "register_id": "0310506000179",
-      "lat": 54.68393,
-      "lng": 25.06625,
-      "status": "lead",
-      "why": "13.7km out, likely beyond the 30-minute public transport day-trip boundary; would need a transit-time check before it could be presented honestly as part of a Vilnius page. Not researched this pass."
-    },
-    {
-      "name": "Viktoras Bergas oak",
-      "name_lt": "Viktoro Bergo ąžuolas",
-      "register_id": "0310505010093",
-      "lat": 54.7003,
-      "lng": 25.01089,
-      "status": "lead",
-      "why": "17.4km out, almost certainly beyond the day-trip boundary. Not researched this pass; deprioritise below the closer candidates."
-    },
-    {
-      "name": "Bernardinai garden pedunculate oak",
-      "name_lt": "Bernardinų sodo paprastasis ąžuolas",
-      "register_id": "0310505010276",
-      "lat": 54.684177,
-      "lng": 25.295033,
-      "status": "lead",
-      "why": "Researched this pass: no distinguishing description found separate from the already-published oldest oak (vln_001, 'Bernardinų sodo ąžuolas' / 'Sereikiškių parko ąžuolas', ~210m away). Could be a genuine second individually-registered oak in the same garden, or a naming overlap with vln_001's own register entry. Needs a ground check or a source that names what makes THIS oak distinct before it can ship; existence is corroborated only by the register itself so far (one source)."
-    },
-    {
-      "name": "Group of four oaks in Sereikiškės park",
-      "name_lt": "Keturių ąžuolų grupė Sereikiškių parke",
-      "register_id": "0310506000017",
-      "lat": 54.68517,
-      "lng": 25.2943,
-      "status": "lead",
-      "why": "Researched this pass: confirmed real and corroborated by two sources (register + the Bernardinų sodas Wikipedia article, which lists it by name among the park's 1996 municipal heritage designations, alongside the Amur-cork/Crimean-linden group that DID ship this pass as vln_010). Still no individual description, photo or exact within-park position found, so I could not judge whether four separate oaks read as one compact standing point or as scattered plantings; that is the one thing blocking it, not existence or access. Worth a ground check or a photo next pass."
-    },
-    {
-      "name": "Castle park chestnut circle",
-      "name_lt": "Pilių parko kaštonų ratas",
-      "register_id": "0310506000019",
-      "lat": 54.68596,
-      "lng": 25.29336,
-      "status": "lead",
-      "why": "Researched this pass, has its own Wikipedia page (Kaštonų ratas Pilių parke): NOT a compact single specimen but 35 chestnut trees planted in two circles around the abandoned 'Rotonda' pavilion, spanning 16 ares (1600 sq m), on the southwest slope of Gediminas Hill. Reads more like a planted landscape feature than a single collectible point (closer to the blocked Vingis linden alley than to the shipped multi-trunk single trees), though it does have one obvious place to stand (the Rotonda). In 2015 the municipality planned to thin out aging/weakened trees for lacking sunlight, which also raises an individual-specimen alive-status question. Needs a judgement call with a photo in hand rather than a text-only read; leaving as a lead rather than blocking outright since the ensemble test is genuinely borderline."
-    },
-    {
-      "name": "Presidential park oaks",
-      "name_lt": "Prezidentūros rūmų parko ąžuolai",
-      "register_id": "0310506000010",
-      "lat": 54.683119,
-      "lng": 25.283873,
-      "status": "lead",
-      "why": "Researched this pass: nine individual oaks (Lithuanian 'devynių šimtamečių ąžuolų grupė' means nine oaks each roughly a century old, NOT one 900-year-old oak; the Wikipedia article's own history section is explicit, 'jame tebėra devyni senieji ąžuolai'). Real park, first documented 1387, on the eastern side of the Presidential Palace at the corner of Totorių and Liejyklos streets. Access is genuinely open to the public (confirmed via a second search: gates on Universiteto street or the security post at Totorių g. 28, seasonal hours, weekdays 18:00-21:00 and weekends/holidays 11:00-22:00 in the warm season) but EVERY visitor and their belongings is checked by security personnel, which matches BRIEF's own 'a guard who checks: no' example. Left as a lead rather than shipped or blocked: it is not a locked-out private site, but the security-screening question needs a session judgement call rather than a night-run default, and the entry would also need to pick one representative oak or treat the group as the collectible point."
-    }
-  ],
-  "blocked": [
-    {
-      "name": "Vingis park linden alley",
-      "name_lt": "Vingio parko liepų alėja",
-      "register_id": "0310506000018",
-      "lat": 54.68189,
-      "lng": 25.23349,
-      "reason": "An avenue, not a single collectible point. Matches the explicit hard-limit example (\"An avenue or a whole wood is blocked\"). Never ships as an entry, however notable the alley."
-    },
-    {
-      "name": "Old trees (\"Senmedžiai\")",
-      "name_lt": "Senmedžiai",
-      "register_id": "0310506000011",
-      "lat": 54.68256,
-      "lng": 25.28975,
-      "reason": "The register name is a generic Lithuanian word for \"old trees\" with no individual identity and no distinguishing description found. Not a collectible point as it stands; would need a source naming what specifically is there before it could even become a lead."
-    },
-    {
-      "name": "A group of Norway Maple in Cathedral Square",
-      "name_lt": "Katedros aikštės paprastųjų klevų grupė",
-      "register_id": "0310506000015",
-      "lat": 54.6849,
-      "lng": 25.28636,
-      "reason": "Loose group of ordinary street/square maples on the edge of a large public square, not researched further because it reads as ordinary plaza planting rather than a famous, compact, one-obvious-place-to-stand ensemble (the La Rambla test). Would need a specific source arguing otherwise to reconsider."
-    },
-    {
-      "name": "A group of trees in Cathedral Square",
-      "name_lt": "Katedros aikštės medžių grupė",
-      "register_id": "0310506000016",
-      "lat": 54.68495,
-      "lng": 25.28705,
-      "reason": "Same reasoning as the maple group above: a generic \"group of trees\" name on a large public square, no distinguishing description found, fails the collectible-point test as it stands."
-    },
-    {
-      "name": "Castle park tree group",
-      "name_lt": "Pilių parko medžių grupė",
-      "register_id": "0310506000012",
-      "lat": 54.68636,
-      "lng": 25.28761,
-      "reason": "Generic \"tree group\" name, no distinguishing description found this pass; fails the collectible-point test as it stands. Could be revisited if a source describes it as a specific, compact, visually distinct planting."
-    },
-    {
-      "name": "Castle park linden group",
-      "name_lt": "Pilių parko liepų grupė",
-      "register_id": "0310506000013",
-      "lat": 54.68514,
-      "lng": 25.28924,
-      "reason": "Generic \"linden group\" name, no distinguishing description found this pass; fails the collectible-point test as it stands."
-    },
-    {
-      "name": "Chestnut on Šiltadaržio street",
-      "name_lt": "Kaštonas Šiltadaržio gatvėje",
-      "register_id": "0310505080002",
-      "lat": 54.684475,
-      "lng": 25.291557,
-      "reason": "Likely dead/removed: the Lithuanian Wikipedia article on Šiltadaržio gatvė states in past tense 'Ties 3-iuoju namu iki 2012 m. augo saugomas kaštonas' (at house no. 3, a protected chestnut grew there until 2012), implying it no longer stands. Do not re-research without a source showing a living tree at this address."
-    },
-    {
-      "name": "Ash in Rose Alley",
-      "name_lt": "Uosis Rožių alėjoje",
-      "register_id": "0310505160011",
-      "lat": 54.68346,
-      "lng": 25.27529,
-      "reason": "Delisted/likely dead: its own Lithuanian Wikipedia page carries the category 'Buvę Lietuvos gamtos paveldo objektai' (FORMER Lithuanian nature heritage objects), and web sources describe it as removed from the protected list in poor condition, marked for cutting, per 2016 state cadastre data. Never ships as it stands; do not re-research without evidence of a living replacement."
-    },
-    {
-      "name": "Zverynas six-trunked linden",
-      "name_lt": "Žvėryno šešiakamienė liepa",
-      "register_id": "0310505050029",
-      "lat": 54.698618,
-      "lng": 25.242622,
-      "reason": "Access fails hard rule 10: stands in the courtyard of GIS-Centras (a state geoinformatics enterprise) at Sėlių g. 66, on the company's LOCKED territory. Its own Wikipedia article states it is inaccessible to the public on weekends and holidays because the site is locked, and was unmarked on the ground as of the last check (2014). Not somebody's home, but not a churchyard-style open gate either: a guarded/locked company site a visitor cannot enter without arranging access first."
-    },
-    {
-      "name": "Zverynas english oak",
-      "name_lt": "Žvėryno glaustašakis ąžuolas",
-      "register_id": "0310505010161",
-      "lat": 54.69879,
-      "lng": 25.2422,
-      "reason": "Same address as the blocked Žvėrynas six-trunked linden above (Sėlių g. 66, GIS-Centras grounds); no separate access information found this pass, and given the shared address it is presumed to carry the same locked-company-grounds restriction until a source says otherwise. Distinctive clustered-branch ('glaustašakis') crown form, 100+ years old per one web summary, would otherwise be a strong candidate."
-    }
-  ]
+ "city": "Vilnius",
+ "country": "Lithuania",
+ "city_slug": "vilnius",
+ "note": "From the 2026-08-16 register-first verify pass (STVK gpo_bot_t layer). 7 trees verified and delivered to data/research/vilnius-verified.json. Leads failed only the evidence bar, the count, or ran out of the pass's time window; blocked can never ship as they stand. Register source for all: data/registers/lithuania-stvk-gpo.json. Extended 2026-08-17 (verification pass, session-435fb395): 3 trees shipped to data/research/vilnius-verified.json (vln_008 Sapiegos Park Linden, vln_009 Kalnai Park Pine, vln_010 Amur Cork/Crimean Linden group of Bernardinai Garden). Four candidates newly BLOCKED (2 likely-dead register entries, 2 locked-company-grounds trees in Zverynas). Presidential Palace oaks and the Castle Park chestnut circle researched but left as leads on judgement calls (security screening; ensemble-vs-grove read) rather than shipped or blocked.",
+ "leads": [
+  {
+   "name": "The oldest linden",
+   "name_lt": "Seniausia liepa",
+   "register_id": "0310505050028",
+   "lat": 54.69834,
+   "lng": 25.30911,
+   "status": "lead",
+   "why": "Named exactly like the oldest oak (vln_001) and 2.2km away, so a promising individually-named old tree. Not researched this pass: ran out of time budget before reaching it. Worth a dedicated search next pass (same Lithuanian-Wikipedia-stub pattern that worked for the university courtyard trees is likely to exist).",
+   "species": "Lime (Tilia sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Maple circle in the P.Vileisis palace courtyard",
+   "name_lt": "P. Vileišio rūmų kiemo Klevų ratas",
+   "register_id": "0310506000014",
+   "lat": 54.69497,
+   "lng": 25.30533,
+   "status": "lead",
+   "why": "Ensemble candidate, 1.8km from centre, in the courtyard of a historic palace (now home to the Lithuanian Theatre, Music and Cinema Museum). Not researched; worth checking whether the courtyard is genuinely open to the public before shipping (hard rule 10 access test)."
+  },
+  {
+   "name": "Bernardinai garden ash (possible twin of the shipped three-trunked ash)",
+   "name_lt": "Bernardinų sodo uosis",
+   "register_id": "0310505160014",
+   "lat": 54.68324,
+   "lng": 25.29825,
+   "status": "lead",
+   "why": "Sits about 30m from vln_007 (the three-trunked ash already shipped). Could be the same tree double-registered, a genuine second ash, or the tree that Wikipedia's generic \"Sereikiškių parko uosis\" entry refers to. Register-pitfall twins should fold into one entry; needs a ground check or a clearer source before deciding whether this is a separate tree worth its own page."
+  },
+  {
+   "name": "Birch of philologists",
+   "name_lt": "Filologų beržas",
+   "register_id": "0310505240003",
+   "lat": 54.68304,
+   "lng": 25.28744,
+   "status": "lead",
+   "why": "In the same Old Town university courtyard cluster as the three shipped trees (vln_002-004), same register pattern (protected since 1996). Only one source found this pass (the register itself); a focused search did not surface a second independent source or a dedicated Wikipedia stub, unlike its neighbours. Worth another search pass, ideally in Lithuanian directly on a university or heritage site rather than general web search.",
+   "species": "Birch (Betula sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Kalnai park pine",
+   "name_lt": "Kalnų parko pušis",
+   "register_id": "0310505020044",
+   "lat": 54.6881,
+   "lng": 25.29967,
+   "status": "lead",
+   "why": "Individual named pine, 1.3km from centre in Kalnai (Hill) Park, which has views over the Old Town. Not researched this pass.",
+   "species": "Pine (Pinus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Swiss pine",
+   "name_lt": "Kedrinė pušis",
+   "register_id": "0310505020045",
+   "lat": 54.69599,
+   "lng": 25.30709,
+   "status": "lead",
+   "why": "An individual named conifer, 2km out. Not researched this pass; \"Swiss pine\" (Pinus cembra) would be an unusual planted specimen in Lithuania and worth confirming the species carefully rather than assuming.",
+   "species": "Pine (Pinus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Belunai Oak",
+   "name_lt": "Belūnų ąžuolas",
+   "register_id": "0310505010101",
+   "lat": 54.6845,
+   "lng": 25.12796,
+   "status": "lead",
+   "why": "9.8km out, inside the day-trip boundary if public transport reaches it within roughly 30 minutes (unverified). Not researched this pass.",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Canadian poplar in Castle park",
+   "name_lt": "Pilių parko kanadinė tuopa",
+   "register_id": "0310505060005",
+   "lat": 54.68532,
+   "lng": 25.29014,
+   "status": "lead",
+   "why": "A single named individual poplar in the Castle park area. Not researched this pass; a Canadian poplar (introduced, fast-growing, relatively short-lived) is a weaker remarkable-tree case than the named oaks, lindens and multi-trunk specimens already shipped or listed nearby, so it is deprioritised rather than blocked.",
+   "species": "Poplar (Populus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Pilaite Manor Pine",
+   "name_lt": "Pilaitės dvaro pušis",
+   "register_id": "0310506000166",
+   "lat": 54.69998,
+   "lng": 25.19422,
+   "status": "lead",
+   "why": "5.7km out, within Vilnius's own Pilaite district (reachable by city bus, so plausibly inside the day-trip boundary). Not researched this pass.",
+   "species": "Pine (Pinus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Dirkliskes Forest Oak",
+   "name_lt": "Dirkliškių miško ąžuolas",
+   "register_id": "0310506000179",
+   "lat": 54.68393,
+   "lng": 25.06625,
+   "status": "lead",
+   "why": "13.7km out, likely beyond the 30-minute public transport day-trip boundary; would need a transit-time check before it could be presented honestly as part of a Vilnius page. Not researched this pass.",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Viktoras Bergas oak",
+   "name_lt": "Viktoro Bergo ąžuolas",
+   "register_id": "0310505010093",
+   "lat": 54.7003,
+   "lng": 25.01089,
+   "status": "lead",
+   "why": "17.4km out, almost certainly beyond the day-trip boundary. Not researched this pass; deprioritise below the closer candidates.",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Bernardinai garden pedunculate oak",
+   "name_lt": "Bernardinų sodo paprastasis ąžuolas",
+   "register_id": "0310505010276",
+   "lat": 54.684177,
+   "lng": 25.295033,
+   "status": "lead",
+   "why": "Researched this pass: no distinguishing description found separate from the already-published oldest oak (vln_001, 'Bernardinų sodo ąžuolas' / 'Sereikiškių parko ąžuolas', ~210m away). Could be a genuine second individually-registered oak in the same garden, or a naming overlap with vln_001's own register entry. Needs a ground check or a source that names what makes THIS oak distinct before it can ship; existence is corroborated only by the register itself so far (one source).",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Group of four oaks in Sereikiškės park",
+   "name_lt": "Keturių ąžuolų grupė Sereikiškių parke",
+   "register_id": "0310506000017",
+   "lat": 54.68517,
+   "lng": 25.2943,
+   "status": "lead",
+   "why": "Researched this pass: confirmed real and corroborated by two sources (register + the Bernardinų sodas Wikipedia article, which lists it by name among the park's 1996 municipal heritage designations, alongside the Amur-cork/Crimean-linden group that DID ship this pass as vln_010). Still no individual description, photo or exact within-park position found, so I could not judge whether four separate oaks read as one compact standing point or as scattered plantings; that is the one thing blocking it, not existence or access. Worth a ground check or a photo next pass."
+  },
+  {
+   "name": "Castle park chestnut circle",
+   "name_lt": "Pilių parko kaštonų ratas",
+   "register_id": "0310506000019",
+   "lat": 54.68596,
+   "lng": 25.29336,
+   "status": "lead",
+   "why": "Researched this pass, has its own Wikipedia page (Kaštonų ratas Pilių parke): NOT a compact single specimen but 35 chestnut trees planted in two circles around the abandoned 'Rotonda' pavilion, spanning 16 ares (1600 sq m), on the southwest slope of Gediminas Hill. Reads more like a planted landscape feature than a single collectible point (closer to the blocked Vingis linden alley than to the shipped multi-trunk single trees), though it does have one obvious place to stand (the Rotonda). In 2015 the municipality planned to thin out aging/weakened trees for lacking sunlight, which also raises an individual-specimen alive-status question. Needs a judgement call with a photo in hand rather than a text-only read; leaving as a lead rather than blocking outright since the ensemble test is genuinely borderline."
+  },
+  {
+   "name": "Presidential park oaks",
+   "name_lt": "Prezidentūros rūmų parko ąžuolai",
+   "register_id": "0310506000010",
+   "lat": 54.683119,
+   "lng": 25.283873,
+   "status": "lead",
+   "why": "Researched this pass: nine individual oaks (Lithuanian 'devynių šimtamečių ąžuolų grupė' means nine oaks each roughly a century old, NOT one 900-year-old oak; the Wikipedia article's own history section is explicit, 'jame tebėra devyni senieji ąžuolai'). Real park, first documented 1387, on the eastern side of the Presidential Palace at the corner of Totorių and Liejyklos streets. Access is genuinely open to the public (confirmed via a second search: gates on Universiteto street or the security post at Totorių g. 28, seasonal hours, weekdays 18:00-21:00 and weekends/holidays 11:00-22:00 in the warm season) but EVERY visitor and their belongings is checked by security personnel, which matches BRIEF's own 'a guard who checks: no' example. Left as a lead rather than shipped or blocked: it is not a locked-out private site, but the security-screening question needs a session judgement call rather than a night-run default, and the entry would also need to pick one representative oak or treat the group as the collectible point."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Vingis park linden alley",
+   "name_lt": "Vingio parko liepų alėja",
+   "register_id": "0310506000018",
+   "lat": 54.68189,
+   "lng": 25.23349,
+   "reason": "An avenue, not a single collectible point. Matches the explicit hard-limit example (\"An avenue or a whole wood is blocked\"). Never ships as an entry, however notable the alley."
+  },
+  {
+   "name": "Old trees (\"Senmedžiai\")",
+   "name_lt": "Senmedžiai",
+   "register_id": "0310506000011",
+   "lat": 54.68256,
+   "lng": 25.28975,
+   "reason": "The register name is a generic Lithuanian word for \"old trees\" with no individual identity and no distinguishing description found. Not a collectible point as it stands; would need a source naming what specifically is there before it could even become a lead."
+  },
+  {
+   "name": "A group of Norway Maple in Cathedral Square",
+   "name_lt": "Katedros aikštės paprastųjų klevų grupė",
+   "register_id": "0310506000015",
+   "lat": 54.6849,
+   "lng": 25.28636,
+   "reason": "Loose group of ordinary street/square maples on the edge of a large public square, not researched further because it reads as ordinary plaza planting rather than a famous, compact, one-obvious-place-to-stand ensemble (the La Rambla test). Would need a specific source arguing otherwise to reconsider."
+  },
+  {
+   "name": "A group of trees in Cathedral Square",
+   "name_lt": "Katedros aikštės medžių grupė",
+   "register_id": "0310506000016",
+   "lat": 54.68495,
+   "lng": 25.28705,
+   "reason": "Same reasoning as the maple group above: a generic \"group of trees\" name on a large public square, no distinguishing description found, fails the collectible-point test as it stands."
+  },
+  {
+   "name": "Castle park tree group",
+   "name_lt": "Pilių parko medžių grupė",
+   "register_id": "0310506000012",
+   "lat": 54.68636,
+   "lng": 25.28761,
+   "reason": "Generic \"tree group\" name, no distinguishing description found this pass; fails the collectible-point test as it stands. Could be revisited if a source describes it as a specific, compact, visually distinct planting."
+  },
+  {
+   "name": "Castle park linden group",
+   "name_lt": "Pilių parko liepų grupė",
+   "register_id": "0310506000013",
+   "lat": 54.68514,
+   "lng": 25.28924,
+   "reason": "Generic \"linden group\" name, no distinguishing description found this pass; fails the collectible-point test as it stands."
+  },
+  {
+   "name": "Chestnut on Šiltadaržio street",
+   "name_lt": "Kaštonas Šiltadaržio gatvėje",
+   "register_id": "0310505080002",
+   "lat": 54.684475,
+   "lng": 25.291557,
+   "reason": "Likely dead/removed: the Lithuanian Wikipedia article on Šiltadaržio gatvė states in past tense 'Ties 3-iuoju namu iki 2012 m. augo saugomas kaštonas' (at house no. 3, a protected chestnut grew there until 2012), implying it no longer stands. Do not re-research without a source showing a living tree at this address."
+  },
+  {
+   "name": "Ash in Rose Alley",
+   "name_lt": "Uosis Rožių alėjoje",
+   "register_id": "0310505160011",
+   "lat": 54.68346,
+   "lng": 25.27529,
+   "reason": "Delisted/likely dead: its own Lithuanian Wikipedia page carries the category 'Buvę Lietuvos gamtos paveldo objektai' (FORMER Lithuanian nature heritage objects), and web sources describe it as removed from the protected list in poor condition, marked for cutting, per 2016 state cadastre data. Never ships as it stands; do not re-research without evidence of a living replacement."
+  },
+  {
+   "name": "Zverynas six-trunked linden",
+   "name_lt": "Žvėryno šešiakamienė liepa",
+   "register_id": "0310505050029",
+   "lat": 54.698618,
+   "lng": 25.242622,
+   "reason": "Access fails hard rule 10: stands in the courtyard of GIS-Centras (a state geoinformatics enterprise) at Sėlių g. 66, on the company's LOCKED territory. Its own Wikipedia article states it is inaccessible to the public on weekends and holidays because the site is locked, and was unmarked on the ground as of the last check (2014). Not somebody's home, but not a churchyard-style open gate either: a guarded/locked company site a visitor cannot enter without arranging access first."
+  },
+  {
+   "name": "Zverynas english oak",
+   "name_lt": "Žvėryno glaustašakis ąžuolas",
+   "register_id": "0310505010161",
+   "lat": 54.69879,
+   "lng": 25.2422,
+   "reason": "Same address as the blocked Žvėrynas six-trunked linden above (Sėlių g. 66, GIS-Centras grounds); no separate access information found this pass, and given the shared address it is presumed to carry the same locked-company-grounds restriction until a source says otherwise. Distinctive clustered-branch ('glaustašakis') crown form, 100+ years old per one web summary, would otherwise be a strong candidate."
+  }
+ ]
 }

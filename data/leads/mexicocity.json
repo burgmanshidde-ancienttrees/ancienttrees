@@ -6,7 +6,9 @@
    "reason": "In the SEDEMA Arboles Patrimoniales register (KML placemark 4) with coordinates, species (Taxodium mucronatum) and measurements (circumference 505.80 cm, height recorded as '2750' in the source, almost certainly 27.50 m once the register's stripped-decimal pattern is corrected). No dedicated news article naming this specific tree was found in this pass (only the aggregate '4 ahuehuetes in Cuauhtemoc' count in general coverage), so it is one source short of the two-independent-source bar rather than doubtful. Ninth/tenth in line for this pass's 40-minute window, not rejected on merit.",
    "sources": [
     "https://proyectos.sedema.cdmx.gob.mx/arbolespatrimoniales/arboles.html"
-   ]
+   ],
+   "species": "Montezuma Cypress (Taxodium sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Glorieta de los Ahuehuetes",
@@ -23,7 +25,9 @@
    "reason": "In the SEDEMA register (KML placemark 11) with coordinates and measurements (circumference 502.66 cm, height recorded as '2400', almost certainly 24.00 m). Site page listed it under the nickname 'Juarista'. No dedicated news article found this pass confirming the nickname or details beyond the register; one source short of the bar, not rejected on merit.",
    "sources": [
     "https://proyectos.sedema.cdmx.gob.mx/arbolespatrimoniales/arboles.html"
-   ]
+   ],
+   "species": "Montezuma Cypress (Taxodium sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   }
  ],
  "blocked": [

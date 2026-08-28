@@ -13,12 +13,16 @@
   {
    "name": "Moreton Bay Fig, 1076 Hay Street / Harvest Terrace corner, West Perth",
    "source": "National Trust WA Significant Tree Register (PER13T); trusttrees.org.au/tree/WA/West_Perth/1076_Hay_Street",
-   "reason": "Single tree, road reserve corner site (public land per search snippets, not yet confirmed by a direct fetch). National Trust register: diameter 2m, height 20m, age given as 150 yrs, classified 11 Mar 2015, condition good. Only one source found and directly confirmed this pass (National Trust); the inHerit record for this specific tree could not be located among several similarly-named Moreton Bay Fig records checked (Bassendean, Bunbury records found instead, both different trees). Needs a second independent source before it ships."
+   "reason": "Single tree, road reserve corner site (public land per search snippets, not yet confirmed by a direct fetch). National Trust register: diameter 2m, height 20m, age given as 150 yrs, classified 11 Mar 2015, condition good. Only one source found and directly confirmed this pass (National Trust); the inHerit record for this specific tree could not be located among several similarly-named Moreton Bay Fig records checked (Bassendean, Bunbury records found instead, both different trees). Needs a second independent source before it ships.",
+   "species": "Fig (Ficus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Cork Oak, Karrakatta Cemetery, Karrakatta",
    "source": "National Trust WA Significant Tree Register (NED01T)",
-   "reason": "Single tree, Karrakatta Cemetery is public land and generally open. Not researched beyond the register listing this pass due to time; no age, girth or second source gathered yet."
+   "reason": "Single tree, Karrakatta Cemetery is public land and generally open. Not researched beyond the register listing this pass due to time; no age, girth or second source gathered yet.",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Moreton Bay Fig Trees, King's Square (St John's Square), Fremantle",
