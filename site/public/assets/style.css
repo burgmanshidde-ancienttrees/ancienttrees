@@ -123,6 +123,11 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 /* A secondary action belongs below a rule, not under the Browse heading as
    though suggesting a tree were a category to browse. */
 .nav-drop-menu a.nav-aside { border-top: 1px solid var(--cream-dark); margin-top: 0.35rem; padding-top: 0.6rem; color: var(--ink-mid); font-weight: 500; }
+/* One rule above the GROUP, never between its members (Hidde, 2026-08-28:
+   "dont add the extra line between sponsor and add tree in menu - cluster them
+   together"). Suggesting a tree and sponsoring are the two ways somebody who
+   likes this can do something about it, so they read as one block. */
+.nav-drop-menu a.nav-aside + a.nav-aside { border-top: none; margin-top: 0; padding-top: 0.5rem; }
 .nav-drop-menu a:hover { background: var(--cream); }
 .only-mobile { display: none; }
 /* The header, as Hidde wants it (2026-08-01): Map stands alone in the bar
