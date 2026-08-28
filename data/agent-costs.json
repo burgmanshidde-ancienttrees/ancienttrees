@@ -1033,7 +1033,7 @@
         "kind": "scout",
         "tokens": 124675,
         "trees": 0,
-        "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+        "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
       },
       {
         "target": "barcelona",
@@ -3623,6 +3623,17 @@
         "tokens": 0,
         "trees": 1,
         "note": "Session work, no dispatched pass. Munich's red oak of Hartmannshofen, held only for lacking an age figure ('failed our bar only on age'), a forbidden reason. Found a real second source (Wochenanzeiger local news) giving girth/height and a good story: a 2006 application that took until 2021 to clear amid nature-protection law updates. Age is an explicitly-attributed enthusiast estimate (~250 years), stated as such rather than presented as measured. Aarhus and Sorrento's remaining single candidates checked and left alone for real reasons (parsonage/church-office access plus an unresolved 14km transit question; single-source-only with no second source found despite searching, respectively)."
+      }
+    ],
+    "2026-08-28": [
+      {
+        "target": "build and deploy site (health rung 2)",
+        "kind": "other",
+        "tokens": 0,
+        "trees": 0,
+        "note": "Session work, no dispatched pass. Deploy had been failing since 2026-08-27 21:59 on one QA gate: por_018 (Porto ginkgo) carried EXIF orientation tag 0 instead of 1. Verified the pixels were already upright (invalid tag, so viewers fell back to no rotation), patched the orientation tag directly with struct rather than rotating anything, confirmed with build+qa.py+preflight.py all clean, committed and pushed.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
