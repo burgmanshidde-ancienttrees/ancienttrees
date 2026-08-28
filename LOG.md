@@ -11,6 +11,12 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 <!-- archive-index -->
 
 
+## 2026-08-28 - Night run 2026-08-28 02:06 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 19.8 minutes of its 120 minute window, 166 turns, 20 commands refused by the allowlist, ended clean (success). 11 commit(s), none of them a published tree. Claims left behind: maastricht, groningen, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
 ## 2026-08-27 (night run) - Wroclaw +1, Munich +1, git push still blocked
 
 Two more small wins off the READY pool: Wroclaw's "Witness Plane" (Swiadek), a well-documented London plane by the Civil Registry Office, and Munich's Hartmannshofen red oak, held only for missing an age figure (a forbidden reason). Zaragoza, Brno, Trento, Aarhus and Sorrento's remaining candidates all checked and confirmed genuinely still blocked for real reasons. Rewrote Wroclaw's city copy honestly (5 trees across 2 stops now, not 4 on one walk). Build, qa.py, superlatives.py, preflight.py, pagegaps.py all clean throughout.
