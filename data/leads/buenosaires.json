@@ -1,0 +1,33 @@
+{
+  "city": "Buenos Aires",
+  "country": "Argentina",
+  "city_slug": "buenosaires",
+  "note": "Candidates found during the 2026-08-28 verification pass that did not ship, either on access evidence or because the original tree is gone. Kept per the standing rule that every tree a run comes across goes into the database, not only the ones a city pass rejected.",
+  "leads": [
+    {
+      "name": "Aguaribay del Perito Moreno",
+      "species": "Peruvian Peppertree (Schinus molle)",
+      "lat": -34.634083,
+      "lng": -58.402,
+      "status": "lead",
+      "why": "Excellent facts otherwise: planted in 1872 by explorer Francisco 'Perito' Moreno on his own estate (per his own unpublished memoirs, verified by Argentina's National Commission of Monuments), the school later built on the site (Instituto Bernasconi, Catulo Castillo 2750, Parque Patricios) was moved 10 metres during construction specifically to avoid removing the tree, and it was Argentina's first tree declared a national historic monument (Decreto Nacional 3.369/1943 per Argentina.gob.ar; press sources also cite Decreto 2.232/1943, likely a mix-up with the later 1946 magnolia/pacara decree, worth resolving before publishing). BLOCKED FROM SHIPPING THIS PASS on access only: sources agree the tree stands within the Instituto's own grounds/interior park ('dentro del predio, no sobre la vereda'), which is a functioning public school of over 3,600 students. The complex does house two public museums people visit (Geografico 'Juan B. Teran' and Ciencias Naturales 'Angel Gallardo'), which suggests some real public access exists, but no source found this pass confirmed whether the tree itself sits in a part of the grounds reachable during those visits, or whether it is visible from Catulo Castillo street over a fence/gate. A follow-up pass should check for a street-view/photo showing the tree from outside the grounds, or a museum-visit description that places it on the visitable route, before this ships as either a full entry or a view-only one."
+    },
+    {
+      "name": "Pacara de Segurola (replacement sapling)",
+      "species": "Ear Pod Tree (Enterolobium contortisiliquum)",
+      "lat": -34.633139,
+      "lng": -58.444306,
+      "status": "lead",
+      "why": "The ORIGINAL tree (at Puan and Baldomero Fernandez Moreno, Parque Chacabuco, under which Dean Saturnino Segurola gave Buenos Aires' first smallpox vaccinations circa 1805-1830, declared a national historic tree by Decreto 2.232 of 4 June 1946) is confirmed DEAD: removed in May 1990 by the city on grounds of disease, structural failure and falling branches. Never ships as the entry itself per the never-dead-trees rule. A replacement grown from the original's own seed at Parque Avellaneda's nurseries was planted at the nearby Plazoleta Jose Luis Romero (named 1997) as a living succession, in the spirit of the Elm of Saint-Gervais precedent. This pass did not verify the replacement's current health, exact coordinates or story independently; a future pass should do that verification (age would run from replanting, roughly high-1990s, so a young tree honestly described as a living successor to a historic one) before publishing, following the honest-succession pattern rather than presenting it as the original."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Pacara de Segurola, original specimen",
+      "species": "Enterolobium contortisiliquum",
+      "lat": null,
+      "lng": null,
+      "reason": "Confirmed removed/felled by the City of Buenos Aires in May 1990 (disease, structural deterioration, falling-branch hazard), per buenosaireshistoria.org's detailed history citing municipal records. Never a collectible entry per the never-dead-trees rule, whatever its historic designation (Decreto 2.232, 1946) or fame (Segurola's smallpox vaccinations under its shade, c.1805-1830). See leads for the living replacement sapling nearby."
+    }
+  ]
+}
