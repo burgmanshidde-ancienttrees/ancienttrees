@@ -19,6 +19,7 @@ import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema
 import { locationIsApproximate } from "../lib/tree-copy";
 import { mapHead, singlePinScript } from "../lib/map";
 import { hreflangForCity, QUESTION_SLUG, ui, type CityTranslation, type TreeTranslation } from "../lib/i18n";
+import { hasWalksPage } from "../lib/city-walks";
 
 function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -38,6 +39,12 @@ const U = ui(lang);
 const qslug = QUESTION_SLUG[lang] ?? "oldest-tree";
 
 const cslug = city.id;
+// Same bug, same fix as the English tree page (e464f8c6): the "#walk" anchor
+// on both the English and translated city page now holds the app-promotion
+// block rather than a real walk picker, and there is no translated walks
+// page, so this links to the English /[city]/walks page (still useful, a
+// map and a route need no translation) only when it actually exists.
+const cityHasWalksPage = hasWalksPage(city);
 const tslugs = treeSlugsForCity(city);
 const tslug = tslugs[tree.id];
 const loc = tree.location;
@@ -126,7 +133,9 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!);
     )}
     <div class="action-row">
       <a class="go-btn" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">Cómo llegar</a>
-      <a class="action-link" href={`/${lang}/${cslug}#walk`}>{U.walkMoreTrees(tr.city)}</a>
+      {cityHasWalksPage && (
+        <a class="action-link" href={`/${cslug}/walks`}>{U.walkMoreTrees(tr.city)}</a>
+      )}
     </div>
     <div class="prose-block"><p>{x.story}</p></div>
     <div class="map-embed"><div id="map" class="map"></div></div>
@@ -165,7 +174,9 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!);
     <div class="tree-bar" aria-label="Acciones">
       <SaveHeart treeId={x.id} treeName={x.name} labelSave="Guardar" labelSaved="Guardado" />
       <a class="tb-link dir-link" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">Cómo llegar</a>
-      <a class="tb-link" href={`/${lang}/${cslug}#walk`}>{U.moreTrees}</a>
+      {cityHasWalksPage && (
+        <a class="tb-link" href={`/${cslug}/walks`}>{U.moreTrees}</a>
+      )}
     </div>
     <SignInModal lang={lang} />
 </main>
