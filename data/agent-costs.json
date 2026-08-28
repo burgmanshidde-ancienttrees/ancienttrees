@@ -3643,6 +3643,15 @@
         "note": "Free Commons/iNaturalist API sweep (scripts/photo_hunt.py --recheck), no viewing/approval done here (this runner cannot reach upload.wikimedia.org). Queued new candidates for a future viewing pass in a session.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "sintra",
+        "kind": "verify",
+        "tokens": 45000,
+        "trees": 0,
+        "note": "register reconfirmed exhausted (matches 2026-08-22); municipal classified-trees page checked, all ensembles non-collectible; Grande Maior literary nickname resolved to already-published sin_003 (75m/duplicate), recorded as a story lead rather than a new tree",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
