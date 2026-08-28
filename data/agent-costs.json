@@ -3661,6 +3661,15 @@
         "note": "1 verified (Pepergasthuis lindens, resolved an access-uncertainty lead), 2 newly blocked (private villa garden, tree felled 2010 per register own text), 3 left as leads (ambiguous public/private boundary or register-admitted unlocatable tree)",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "maastricht",
+        "kind": "verify",
+        "tokens": 85000,
+        "trees": 4,
+        "note": "New Aldenhofpark/Waldeckpark cluster verified from LRMB register + Wikipedia/bomenbieb corroboration; 2 of 4 trees flagged single-source, 1 dead-tree register error caught and blocked (Osage orange replaced 2011)",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
