@@ -3634,6 +3634,15 @@
         "note": "Session work, no dispatched pass. Deploy had been failing since 2026-08-27 21:59 on one QA gate: por_018 (Porto ginkgo) carried EXIF orientation tag 0 instead of 1. Verified the pixels were already upright (invalid tag, so viewers fell back to no rotation), patched the orientation tag directly with struct rather than rotating anything, confirmed with build+qa.py+preflight.py all clean, committed and pushed.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "photo API sweep (40 photo-less trees)",
+        "kind": "photo",
+        "tokens": 0,
+        "trees": 0,
+        "note": "Free Commons/iNaturalist API sweep (scripts/photo_hunt.py --recheck), no viewing/approval done here (this runner cannot reach upload.wikimedia.org). Queued new candidates for a future viewing pass in a session.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
