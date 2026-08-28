@@ -30,7 +30,10 @@ struct PlacePin: View {
 
     @Environment(Account.self) private var account
     @Environment(\.dismiss) private var dismiss
-    @State private var region: MKCoordinateRegion?
+    /// Where the crosshair is. PinPicker owns the map and writes this; the
+    /// crosshair itself moved there on 2026-08-28 so the collect flow could
+    /// ask the same question without a second hand-built one.
+    @State private var pin: CLLocationCoordinate2D?
     @State private var sending = false
     @State private var sent = false
     @State private var failed = false
@@ -39,7 +42,7 @@ struct PlacePin: View {
     /// Where the crosshair is: the middle of the map, which is the middle of the
     /// screen, which is what the pin drawn on top of it marks.
     private var here: CLLocationCoordinate2D {
-        region?.center ?? .init(latitude: tree.lat, longitude: tree.lng)
+        pin ?? .init(latitude: tree.lat, longitude: tree.lng)
     }
 
     /// How far they have moved it, so the button can say something true.
@@ -50,17 +53,9 @@ struct PlacePin: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                TreeMap(trees: [tree],
-                        focus: .init(latitude: tree.lat, longitude: tree.lng),
-                        // The street, not the district: somebody is telling us
-                        // which trunk, and at four kilometres a trunk is a dot.
-                        spanMeters: 300,
-                        clusters: false,
-                        region: $region,
-                        selected: .constant(nil))
-                    .ignoresSafeArea(edges: .bottom)
-
-                crosshair
+                PinPicker(start: .init(latitude: tree.lat, longitude: tree.lng),
+                          trees: [tree],
+                          coordinate: Binding(get: { here }, set: { pin = $0 }))
                 bar
             }
             .navigationTitle(sent ? "Thank you" : "Where is it really?")
@@ -74,24 +69,6 @@ struct PlacePin: View {
                 SignInSheet(reason: .feedback, localCount: 0)
             }
         }
-    }
-
-    /// Dead centre, and it hangs from its point like a map pin rather than
-    /// sitting on it, so the tip marks the spot and not the middle of a circle.
-    private var crosshair: some View {
-        VStack(spacing: 0) {
-            Image(systemName: "mappin")
-                .font(.system(size: 34, weight: .semibold))
-                .foregroundStyle(Brand.moss)
-                .shadow(color: .black.opacity(0.25), radius: 3, y: 1)
-            // The point itself, so there is no doubt which pixel is meant.
-            Circle()
-                .fill(Brand.moss)
-                .frame(width: 6, height: 6)
-                .shadow(color: .black.opacity(0.3), radius: 2)
-        }
-        .offset(y: -20)
-        .allowsHitTesting(false)
     }
 
     @ViewBuilder private var bar: some View {
