@@ -313,7 +313,13 @@ export interface CityEntryLike {
  * thing both surfaces can agree on, because it is data that travels in the feed
  * rather than a rule that has to be written twice.
  */
-interface FaceRank<T> { tree: T; url: string; big: boolean; landscape: boolean; w: number }
+interface FaceRank<T> {
+  tree: T; url: string; big: boolean; landscape: boolean; w: number;
+  /** Wider than two to one. Almost nothing that shape is a picture of a tree:
+   * it is a valley, a park, a skyline or a stitched panorama, and a card crops
+   * it to a letterbox where the tree, if there is one, is a smudge. */
+  panorama: boolean;
+}
 
 function faceRank<T extends TreeLike>(t: T | undefined): FaceRank<T> | null {
   if (!t) return null;
@@ -322,18 +328,41 @@ function faceRank<T extends TreeLike>(t: T | undefined): FaceRank<T> | null {
   const w = photoWidth(p);
   const h = p.height ?? 0;
   return { tree: t, url: p.url, big: w === 0 || w >= MIN_CARD_PX,
-           landscape: w > 0 && h > 0 && w >= h, w };
+           landscape: w > 0 && h > 0 && w >= h, w,
+           panorama: w > 0 && h > 0 && w / h > 2 };
 }
 
 /** The best photograph in a set for a letterbox box: enough pixels first,
- * landscape second, widest third. `exclude` lets a page that lays out several
+ * landscape second, and a stable id third. Panoramas are set aside unless there
+ * is nothing else. `exclude` lets a page that lays out several
  * shelves at once avoid printing one photograph twice. */
 export function bestFaceTree<T extends TreeLike>(trees: T[], exclude?: Set<string>): T | null {
-  const best = trees
+  const usable = trees
     .map((t) => faceRank(t))
-    .filter((c): c is FaceRank<T> => c !== null && !(exclude?.has(c.url)))
+    .filter((c): c is FaceRank<T> => c !== null && !(exclude?.has(c.url)));
+  // Panoramas are set aside rather than thrown away. A city whose every
+  // photograph is a wide one still needs a face, and a poor face beats an empty
+  // card: the whole point of this shelf is that it shows pictures.
+  const narrow = usable.filter((c) => !c.panorama);
+  const best = (narrow.length ? narrow : usable)
     .sort((a, b) => Number(b.big) - Number(a.big)
-      || Number(b.landscape) - Number(a.landscape) || b.w - a.w)[0];
+      || Number(b.landscape) - Number(a.landscape)
+      // STABLE, not widest. The final tiebreaker used to be the widest
+      // photograph, and that is worse than random for this job: a wide shot of
+      // a place beats a portrait of a tree every single time, so the face of a
+      // city became whichever picture had the most pixels rather than whichever
+      // showed a tree. Rome wore a staircase and a fountain, Dublin wore a park
+      // overview, and Hidde named eight cities and countries in a row before
+      // anybody looked at why (2026-08-28).
+      //
+      // A machine cannot tell a good photograph of a tree from a good
+      // photograph of a park. What it can do is stop actively preferring the
+      // second. The id is arbitrary and that is the point: arbitrary beats
+      // biased, and a person can override any of it by pinning a face.
+      // ?? "" because TreeLike.id is optional, and an undefined here is
+      // both a type error and a crash. That is the exact shape of the bug that
+      // took every deploy down this morning.
+      || (a.tree.id ?? "").localeCompare(b.tree.id ?? ""))[0];
   return best ? best.tree : null;
 }
 
