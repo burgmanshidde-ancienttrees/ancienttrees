@@ -13,6 +13,94 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-08-28
+
+Reviewed the last 24 hours of git history (back through `00547c5e`, roughly
+140 commits): heavy unattended night-run churn (Groningen, Maastricht,
+Utrecht, Oss, Krakow, Warsaw, Leipzig opened/deepened, Sardinia register
+import, a Canada famous-trees sweep, a genus-name refill taking READY leads
+54 to 366) plus a full Friday session (the `[city]`-means-a-place blueprint
+change to v1.15, the first two Commons famous-trees imports for Seattle and
+Oahu, a walking-routes rebuild, six data-promise corrections across app and
+web, the sponsor page rewritten in Hidde's own words, and a "Build 2" TestFlight
+archive). Ran `python3 scripts/qa.py` (3643 pages, clean), `python3
+scripts/superlatives.py` (485 claims, no collisions), `python3
+scripts/preflight.py` (174 cities, 0 problems) and `python3
+scripts/copycheck.py` (clean, no absolute-claim tics). `python3
+scripts/health.py` shows rung 2 is not clear: the iOS app's newest scheduled
+run failed 1.4h ago; already surfaced there, not re-litigated here.
+
+Spot-checked the `[city]`-means-a-place change (v1.15) against Contract A: the
+three stated guardrails (four-tree floor, a name a person would say out loud,
+only real cities on `/cities`) are the only new rules, and nothing in the
+diff loosens the never-cuttable list. Verified the Oahu tree-page walks-link
+fix (`fc88da35`) directly in the built site: `/rome/adonis.html` correctly
+says "See the 2 walks past Rome's other trees", and `/oahu/hitachi-tree.html`
+(a city with no walks page) says nothing about a walk at all, which is the
+intended behaviour, not a silent gap. Sampled 3 further pages at random
+(`/es/malaga/arbol-mas-antiguo`, `/species/silky-oak`, `/portugal`): clean
+titles, no banned words, no em dashes.
+
+**WARN — Oahu is a garden page, not a city page, and today's addition made it
+more so rather than less.** `data/cities/oahu.json`: all 6 trees now carry
+`paid_entry: true` (`preflight.py` flags it as a NOTE: "Oahu: 6 of 6 trees are
+behind paid entry (100%)"), 5 in Foster Botanical Garden and, as of today's
+`a3b7da0b`, 1 in Moanalua Gardens (the Hitachi Tree, $10 entry). CLAUDE.md's
+2026-08-23 ruling on exactly this shape is explicit: "at most about a third
+of a city may sit behind a ticket," reached after Hidde objected to Amsterdam
+being one-third ticketed ("ik heb liever 34 goede bereikbare dan 39"), and
+names the failure mode by description: "what is not allowed is a city page
+that turns out to be a garden page, which is what happens when a run opens a
+city by taking the easiest eight trees out of one ticketed collection." Oahu
+is that page at 100%, not a third. The rule's own fix is written down too
+("the answer to a bad ratio is FREE TREES ADDED rather than good ones
+removed"), which today's commit had the chance to do (it was adding a tree
+from a country-wide famous-trees sweep, not limited to Oahu's two gardens)
+and instead added a second ticketed one. Not a BLOCKER because `preflight.py`
+deliberately treats this as a NOTE rather than a build failure, by design,
+for cases where the trees themselves are the legitimate best available; this
+is flagged because the ratio moved the wrong way on the same day a free
+alternative (Sylvia, added to Seattle in the same commit) was sitting right
+there in the same sweep unused for Oahu. Rung-3 work for a research pass:
+find a free, walkable Oahu tree outside the two gardens before adding a
+seventh.
+
+**APP screenshots (rotation, iPhone SE): profile-edit, profile, search,
+signin, species, sponsor.** All six looked at. `profile.png`,
+`profile-edit.png` and `sponsor.png` (Settings, profile editor, and the
+"Sponsor this project" sheet reachable from it) read clean against
+PRODUCT_COPY.md and TONE_OF_VOICE.md: "You can add a tree by taking a
+photograph of it and filling in what you know" matches the reader-as-subject
+fix from `9860c876`/CLAUDE.md's own worked example. `search.png` (a
+place-search result for "lis") and `species.png` (the Aleppo Pine species
+sheet, five cities named, none contradicting the site's own pages) are both
+unremarkable and correct. `signin.png`'s account-benefit dialog is the
+Geocaching-style "that tree is yours, sign in to keep it" pattern and matches
+the convention.
+
+**NOTE, APP — the sign-in dialog's data-promise sentence in the screenshot
+does not match what ships in the source today, and it is the exact sentence
+today's own fix targeted.** `signin.png` reads "We store your email address
+and the trees you collect. Nothing else, no advertising, and you can delete
+the lot from this app." `ios/AncientTrees/AncientTrees/Screens/SignIn.swift:262`
+currently reads "We store your email address and what you collect: the trees
+you save, the ones you photograph, and where they stand. No advertising, and
+you can delete the lot from this app.", changed today in `8060afd2` ("Every
+old promise about somebody's data...") specifically because "Nothing else"
+was named there as one of six stale absolutes, "against eight declared data
+types." `copycheck.py` is clean against the current source, so the fix is
+real; what cannot be confirmed from here is whether the screenshot in
+`/tmp/appshots` was captured before that commit landed (in which case this is
+a stale artifact, not a live bug) or from a build the fix has not reached.
+Given the commit exists specifically to kill this sentence, a session should
+re-run `appsweep.py` and confirm the live build shows the corrected text
+before trusting this screen fixed.
+
+Nothing else found at BLOCKER or WARN. Not a Monday, so no scheduled
+corpus-rot audit this entry.
+
+---
+
 ## 2026-08-27 (second pass, evening)
 
 Reviewed since the last review commit (`9d2fba34`, 2026-08-27 12:32 UTC): 41
