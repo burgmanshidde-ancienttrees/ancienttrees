@@ -130,8 +130,16 @@ def fetch_gsc(today):
     # line, and at 200 rows sorted by clicks the low-click cities that column
     # exists to diagnose, Palermo and Bath among them, were exactly the ones
     # falling off the end.
+    # 5,000, raised from 1,000 on 2026-08-28. Same fault as the pages pull hit
+    # on 08-16, one level down: a page+query PAIR is far more numerous than a
+    # page, and a city's impressions are spread over dozens of tree pages with
+    # dozens of queries each, so a thousand rows still covers only the head.
+    # Measured before changing it: Tenerife printed 100 impressions in the new
+    # never-clicked section against 239 in the depth table of the same run, and
+    # Milan, Vienna and Madrid did not appear at all, which were the three the
+    # weekly analysis had asked this file to explain.
     pairs = q({"startDate": start, "endDate": end, "dimensions": ["page", "query"],
-               "rowLimit": 1000, "dataState": "all"})
+               "rowLimit": 5000, "dataState": "all"})
     # The window BEFORE this one, so the digest can say what is climbing rather
     # than only what is big. Hidde, 2026-08-20: "kun je ook winnaars en
     # verliezers toevoegen aan de daily digest maar vooral google search trend
