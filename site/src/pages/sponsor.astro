@@ -13,37 +13,19 @@
 // SPONSOR_URL empty means: no button, noindex, and no footer link. Nothing
 // here promises that anything stays free, because that promise is his to
 // make and he has ruled against making it.
+//
+// No photograph (Hidde, 2026-08-28: "delete the photo"). The page had led on
+// the oldest photographed tree on the map; the ask reads faster without a
+// picture in front of it, and the trees are one tap away in the menu.
 import Base from "../layouts/Base.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { SPONSOR_URL } from "../lib/site-config";
 import { submitLink } from "../lib/tree-copy";
 import { pressNumbers, nf } from "../lib/press";
-import { imgSrcset, creditRequired, creditName } from "../lib/images";
-import { getCollection } from "astro:content";
 
 const n = pressNumbers();
 
-// One photograph, and it is the oldest tree on the map that has one. A page
-// asking somebody to keep this going should show what it is for, and every
-// comparable page does exactly that: OpenStreetMap runs six photographs of
-// its map in real use. Ours is picked from the data rather than pinned by
-// hand, so it cannot rot when that tree's photo changes.
-const cities = await getCollection("cities");
-let hero: { url: string; license?: string | null; attribution?: string | null;
-            name: string; city: string; age: string } | null = null;
-let oldest = -1;
-for (const c of cities) {
-  for (const t of (c.data.trees ?? [])) {
-    const p: any = t.photo ?? {};
-    const min = Number(t.age_min ?? 0);
-    if (p.status === "approved" && p.url && min > oldest) {
-      oldest = min;
-      hero = { url: p.url, license: p.license, attribution: p.attribution,
-               name: t.name, city: c.data.city, age: t.age_estimate ?? "" };
-    }
-  }
-}
 const live = SPONSOR_URL.length > 0;
 const canonical = `${BASE_URL}/sponsor`;
 const crumbItems: [string, string | null][] = [["Home", BASE_URL], ["Sponsor", null]];
@@ -67,23 +49,10 @@ const headExtra = (live ? "" : '<meta name="robots" content="noindex">') + ldScr
 <main class="content-page sponsor-page">
   <Breadcrumbs items={crumbItems} />
   <h1>Sponsor this project</h1>
-  <p class="lede">I build Ancient Trees as a passion project, because I want people to get outside and stand in front of something old.</p>
-
-  {hero && (
-    <figure class="sponsor-hero">
-      <img {...imgSrcset(hero.url, [700, 1100, 1600], "(max-width: 800px) 100vw, 760px")}
-           alt={`${hero.name} in ${hero.city}`} loading="eager" />
-      <figcaption>
-        {hero.name}, {hero.city}{hero.age ? `, ${hero.age}` : ""}.
-        {creditRequired(hero.license) && creditName(hero.attribution)
-          ? ` Photo: ${creditName(hero.attribution)} (${hero.license})`
-          : ""}
-      </figcaption>
-    </figure>
-  )}
+  <p class="lede">Ancient Trees is a passion project. I'm building it to let others appreciate nature and go outside. Marvel at something older than you can imagine.</p>
 
   <div class="prose-block">
-    <p>It does cost money to run, though. A donation would help me enormously: more time and more resources to make this much better, and to get more of these trees on the map.</p>
+    <p>Running the website and app does cost money. A donation would help me enormously: more time and more resources to make this much better, and to get more of these trees on the map.</p>
 
     {live && (
       <p>
