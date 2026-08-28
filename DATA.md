@@ -294,6 +294,10 @@ Search Console, the last 10 days Google will give us (its data lags 2-3 days, so
 | es | tenerife | 0 | 3 | 19.3 | 239 |
 | fr | geneva | 0 | 3 | 32.7 | 49 |
 | ja | osaka | 0 | 2 | 4.0 | 7 |
+
+**Cities seen but never clicked** (60+ impressions, zero clicks, with what they are actually shown for):
+
+- tenerife (i100): drago milenario (i24, p10); pino gordo (i10, p23); pino gordo tenerife (i8, p10); el drago milenario (i8, p10)
 - Seen, not clicked: /rome (c1/i91, 1.1%) for rome trees (i15, p11); trees in rome (i13, p18); trees in rome italy (i8, p17)
 - Seen, not clicked: /tenerife/el-drago-milenario (c0/i73, 0.0%) for drago milenario (i24, p10); el drago milenario (i8, p10); tenerife oldest tree (i5, p10)
 - Seen, not clicked: /species/osage-orange (c0/i51, 0.0%) for osage orange (i6, p85); osage orange tree (i4, p84); osage orange trees (i3, p83)
@@ -375,9 +379,10 @@ AI: arrivals from an assistant that cited us: none yet
 |---|---:|---:|---:|---:|---|
 | 08-28T02:06 | 19.8 | 0 | 11 | 20 | - |
 | 08-28T05:28 | 12.6 | 0 | 5 | 18 | - |
-| **2 runs** | **32** | **0** | **16** | | |
+| 08-28T08:56 | 0.1 | 0 | 0 | - | - |
+| **3 runs** | **32** | **0** | **16** | | |
 
-- 2 of 2 produced no trees; 18 to 20 commands refused per run; 2 wrote nothing to LOG.md.
+- 3 of 3 produced no trees; 18 to 20 commands refused per run; 3 wrote nothing to LOG.md.
 
 **What they made**
 
