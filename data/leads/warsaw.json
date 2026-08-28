@@ -86,7 +86,30 @@
    "latitude": 52.21536,
    "longitude": 21.03118,
    "designated": "2009-08-14",
-   "reason": "A named, well-documented black poplar (girth 614cm, height 34m per pl.wikipedia) on the grounds of the historic Willa Narutowicza (built for Poland's first president Gabriel Narutowicz), ul. Parkowa 23, Srodmiescie, about 0.7-1km from the war_009/war_010 area. Existence, species and measurements are solid, but public access is genuinely UNCLEAR rather than confirmed: pl.wikipedia states the property was taken back by the state's Mazowieckie Property Management agency in 2015 after the Lech Walesa Institute's lease ended, and neither that article nor e-turysta.pl's description says whether the grounds are open to visitors today. Not blocked outright because this reads as an unresolved access question rather than known-private land; worth checking Mazowieckie Property Management's own site or recent local press for current use before the next Warsaw pass."
+   "reason": "A named, well-documented black poplar (girth 614cm, height 34m per pl.wikipedia) on the grounds of the historic Willa Narutowicza (built for Poland's first president Gabriel Narutowicz), ul. Parkowa 23, Srodmiescie, about 0.7-1km from the war_009/war_010 area. Existence, species and measurements are solid, but public access is genuinely UNCLEAR rather than confirmed: pl.wikipedia states the property was taken back by the state's Mazowieckie Property Management agency in 2015 after the Lech Walesa Institute's lease ended, and neither that article nor e-turysta.pl's description says whether the grounds are open to visitors today. Not blocked outright because this reads as an unresolved access question rather than known-private land; worth checking Mazowieckie Property Management's own site or recent local press for current use before the next Warsaw pass. UPDATE 2026-08-28: checked directly. As of a January 2026 source, ownership sits with Mazowiecki Zarzad Nieruchomosci (state real estate management); the villa is under renovation to become a branch of the Museum of the History of the Polish People's Movement (per propertydesign.pl, March 2025), not yet open. No evidence found of any public/visitor access to the 0.41ha grounds today. Still not blocked outright since the museum opening would resolve this cleanly and the tree itself (girth 614cm, height 34m, named, well documented) is a strong candidate once it does; revisit when the museum opens."
+  },
+  {
+   "name": "The Chestnut at Pulawska/Merliniego corner (re-checked 2026-08-28)",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "reason": "Re-checked this pass: still no second source independent of the GDOS register / pl.wikipedia Pomniki przyrody w Warszawie list family. Searched Wikimedia Commons directly (no results for this tree), general web search (only real-estate listings for the office building on the same corner, and the same city PDF register already counted as one source). Access is not in question (public street corner). Needs a session that can pass a browser challenge on architektura.um.warszawa.pl or a local district PDF, or simply a reader photo."
+  },
+  {
+   "name": "The Grey Poplar of Madalinskiego/Kazimierzowskiej",
+   "species": "Grey Poplar (Populus x canescens)",
+   "kodinspire": "PL.ZIPOP.1393.PP.1465011.3363",
+   "latitude": 52.20427,
+   "longitude": 21.01487,
+   "designated": "2012-10-10",
+   "reason": "Genuinely public street corner (Mokotow, ul. gen. J. A. Madalinskiego, corner ul. Kazimierzowskiej), 0.72km from war_009 and 0.46km from war_005, a good cluster fit. The register/Wikipedia-list entry itself is unusually rich for once, carrying a dated 2012 survey measurement (height 21m, girth 358cm) directly in the table, which is real dendrological data rather than a guess. What is missing is a second source independent of that GDOS/Wikipedia-list family: no Wikimedia Commons photo found, no dedicated writeup, general web search returned only the same register-family pages. Worth another look for a Commons/iNaturalist photo or a Mokotow district tree-consultation document."
+  },
+  {
+   "name": "The Weeping Ash at Palac Puslowskich (ul. Pulawska 97)",
+   "species": "European Ash, weeping form (Fraxinus excelsior f. pendula)",
+   "kodinspire": "PL.ZIPOP.1393.PP.1465011.3264",
+   "latitude": 52.19883,
+   "longitude": 21.02492,
+   "designated": "1990-12-27",
+   "reason": "A distinctive weeping-form ash, register-described as a remnant of a former palace park, standing around Palac Puslowskich (built 1862 for Ksawery Puslowski, designed by Henryk Marconi; historically the Instytut Moralnej Poprawy Dzieci, a childrens reform institute, per warszawyhistoriaukryta.blogspot.com and blogi.kukushka.eu). Current occupant/use and whether the grounds are open to walk-in visitors were NOT established this pass (ran out of budget after the palace-history search); a fotopolska.eu link that looked promising turned out to describe a different ash tree entirely (ul. Pustola, Wola) and was discarded per the search-summary-is-a-lead rule. 0.64km from war_009 and 0.46km from war_005, would fit the cluster well if access clears. Needs: current occupant of the palace/grounds and whether the tree stands on a public pavement or inside the institutional grounds."
   }
  ],
  "blocked": [
@@ -117,6 +140,16 @@
    "latitude": 52.19144,
    "longitude": 21.02211,
    "reason": "Fails hard rule 10's absolute private-home test. OSM tags the building at ul. Naruszewicza 7 as a detached, historic (historic=yes) building on Osiedle Wierzbno, a street of pre-war detached villas (domiporta.pl lists houses for sale on this exact street); no evidence found that this specific address serves an institutional or public function (unlike no. 15, now a preschool, or no. 10, now partly city/commercial-owned, per odkrywcawarszawy.blogspot.com and other local-history sources checked this pass). Independently photographed by moko.waw.pl (2015) and on Wikimedia Commons, which confirms the tree exists and is visible, but the hard rule 10 test for a private house's grounds does not bend for visibility; the view-only exception in CLAUDE.md is explicitly written for institutional grounds, not homes. Do not ship unless a future pass finds evidence the address is no longer a private residence."
+  },
+  {
+   "name": "Buk zwyczajny + Leszczyna turecka, Park SGGW (ul. Rakowiecka 26/30)",
+   "species": "Common Beech (Fagus sylvatica) and Turkish Hazel (Corylus colurna)",
+   "kodinspire": "PL.ZIPOP.1393.PP.1465011.3038",
+   "latitude_beech": 52.20829841138598,
+   "longitude_beech": 21.005023522907315,
+   "latitude_hazel": 52.20849567403425,
+   "longitude_hazel": 21.006032256484257,
+   "reason": "Fails hard rule 10. Checked pl.wikipedia's own Park SGGW w Warszawie article directly: \"Park nie jest dostepny publicznie\" (the park is not publicly accessible) and it remains \"ogrodzony\" (fenced) since the university relocated to Ursynow; independently corroborated by a Nasze Miasto Warszawa headline, \"Park SGGW, Warszawa. Mieszkancy Mokotowa domagaja sie otwarcia zielonej przestrzeni\" (Mokotow residents demanding the park be opened), which would not be news if it were already open. This is a genuinely closed, fenced site, not merely inconvenient. Note: the single Sofora chinska (Sophora japonica) at the SAME general area (kodinspire .3037, al. Niepodleglosci/ul. Bruna) stands OUTSIDE this fence on the public avenue and shipped as war_015; do not confuse the two. Revisit this pair only if the park opens to the public, which residents are actively campaigning for."
   }
  ]
 }

@@ -5,7 +5,7 @@
   "intro": "Warsaw rebuilt itself almost entirely after 1945, which is the quiet reason so few of its trees are genuinely old: whatever grew here before the war mostly burned with everything else. What survived instead carries weight beyond its years. A poplar stood inside a 1939 barricade and later grew beside a wartime transit camp. An oak marks the one building left around Janusz Korczak's orphanage. Royal parks add two more: a pair of oaks in the king's own Lazienki garden, and a lime named for the king who built Wilanow.",
   "meta_description": "Warsaw's remarkable trees carry wartime, royal and Enlightenment history: a 600-year oak, a WWII poplar, Korczak's orphanage oak, royal park oaks.",
   "question_answer": "Warsaw's oldest tree is Dab Mieszko I (King Mieszko I's Oak), a pedunculate oak on Nowoursynowska Street in Ursynow, estimated at 600 to 640 years old depending on the survey cited. It stands at the edge of Natolin Forest, one of the last fragments of the wild woodland that covered this ground before the city existed.",
-  "question_meta": "A 600-640 year old oak on the edge of Natolin Forest, older than Warsaw itself, is the city's oldest tree. The full twelve, and the history each carries.",
+  "question_meta": "A 600-640 year old oak on the edge of Natolin Forest, older than Warsaw itself, is the city's oldest tree. The full 15, and the history each carries.",
   "question_context": "Warsaw's tree ages are harder to pin down than in cities with continuous records, because the city's own archives and much of its built and natural heritage were destroyed between 1939 and 1945. Dab Mieszko I is the exception precisely because it predates that entire period by centuries: even the more conservative age estimates put its origin well before Poland's partitions, let alone the Second World War, and successive surveys since its 1962 protection have each revised the figure without ever seriously challenging its status as the region's oldest oak. Its main rival for the title of Warsaw's most storied tree is not a contest of age at all. The Poplar of the Defenders, roughly a century old, and Dr Korczak's Oak, undated but standing beside a building that survived the war intact, both carry more concentrated history in fewer decades than the Mieszko oak accumulated in centuries, a reminder that this city's remarkable trees earn their place by two different measures, sometimes separately, occasionally both at once.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Warsaw's remarkable trees free to visit?",
-      "a": "Eight of the twelve stand on public streets or in public parks and gardens, open at any time. Four sit behind a paid entrance gate: King Jan's Linden in the Wilanow palace grounds, and three more trees in the Botanical Garden, including the ginkgo, which also closes its outdoor grounds over winter."
+      "a": "11 of the 15 stand on public streets or in public parks and gardens, open at any time. Four sit behind a paid entrance gate: King Jan's Linden in the Wilanow palace grounds, and three more trees in the Botanical Garden, including the ginkgo, which also closes its outdoor grounds over winter."
     },
     {
       "q": "Why does Warsaw have so few very old trees?",
@@ -432,6 +432,104 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      }
+    },
+    {
+      "id": "war_014",
+      "name": "The Puławska Street Pear",
+      "species": "European Pear (Pyrus communis)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 153,
+      "location": {
+        "address": "ul. Puławska 8a, Mokotów, standing on the public sidewalk",
+        "latitude": 52.21024,
+        "longitude": 21.02066,
+        "neighbourhood": "Mokotów"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.3130",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie",
+        "https://commons.wikimedia.org/wiki/File:Pomnikowa_grusza_przy_pu%C5%82awskiej.jpg",
+        "https://www.wikidata.org/wiki/Q107362311"
+      ],
+      "access": "Free, unrestricted; the tree stands on the public sidewalk of ul. Puławska",
+      "transport": "Rakowiecka tram/bus stop on ul. Puławska, under 1 min walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Warsaw protects a pear tree that grows out of a pavement. It stands at ul. Pulawska 8a in Mokotow, on one of the city's main southern arteries, set in the sidewalk itself rather than behind any wall or railing, and the national register of natural monuments has listed it since 12 December 2001. A pear is a domestic fruit tree. It belongs to gardens and orchards, and how this one came to be standing in front of four lanes of traffic is not recorded anywhere. Mokotow is unusual in carrying two protected pears at once: this one, and Ciechomski's a kilometre to the south, whose supposed origin story historians have spent years picking apart.\n\nNobody has dated this tree. The register gives the year it was protected and nothing about the tree's own years, and Wikidata lists it at 11 metres tall with a trunk 153 centimetres round, both figures carrying no source attached to them at all, which makes them a starting point rather than a measurement. The most recent hard proof it is standing is a photograph taken on the pavement beside it in May 2021. If you have a planting date, or a tape measure and five minutes, tell us and the numbers go on the page.",
+      "best_time": {
+        "months": [
+          4
+        ],
+        "kind": "flowers",
+        "label": "late April, when it flowers white over the pavement"
+      }
+    },
+    {
+      "id": "war_015",
+      "name": "The Sophora of Aleja Niepodległości",
+      "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Al. Niepodległości, corner with ul. G. Bruna, Mokotów, directly across from the fenced Park SGGW",
+        "latitude": 52.20917,
+        "longitude": 21.0069,
+        "neighbourhood": "Mokotów"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.3037",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie",
+        "https://commons.wikimedia.org/wiki/File:Pere%C5%82kowiec_japo%C5%84ski_przed_parkiem_sggw.jpg"
+      ],
+      "access": "Free, unrestricted; stands on the pavement of a public avenue (al. Niepodległości), not inside the fenced Park SGGW behind it",
+      "transport": "Pole Mokotowskie metro station (M2), under 5 min walk; also on several tram/bus lines along al. Niepodległości",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This tree stands in front of a park nobody is allowed to enter. Behind it, on the far side of a fence on Aleja Niepodleglosci, lies Park SGGW, the grounds of the Warsaw University of Life Sciences, shut to the public since the university moved south to Ursynow and still shut today, with Mokotow residents publicly campaigning to have it opened. The pagoda tree is on the useful side of the fence, on the open pavement of the avenue, which is the only reason it appears here at all.\n\nPoland's register of natural monuments has protected it since 22 October 1976 and cannot quite settle on what to call it: the paperwork carries both sofora chinska and sofora japonska, Chinese sophora and Japanese sophora. Chinese is the accurate half. The species is native to China and took its Japanese name from the cultivated trees Europeans met first, in Japan.\n\nNo source found so far gives an age or a girth, which leaves the two things people usually ask about entirely open; if you know either, tell us. What is not in doubt is the timing. It flowers cream in August, several weeks after almost everything else in Warsaw has finished, and drops the petals on the pavement underneath. The SGGW Oak stands 85 metres away, on the other side of the avenue.",
+      "best_time": {
+        "months": [
+          8
+        ],
+        "kind": "flowers",
+        "label": "August, when it flowers cream weeks after the rest of the city has finished"
+      }
+    },
+    {
+      "id": "war_016",
+      "name": "The Lime of Park Morskie Oko",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Park Promenada-Morskie Oko, near the corner of ul. Promenady and ul. Belwederskiej, Mokotów",
+        "latitude": 52.20418,
+        "longitude": 21.03139,
+        "neighbourhood": "Mokotów"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.3258",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie",
+        "https://zzw.waw.pl/2022/02/20/park-promenada-morskie-oko-ogrod-na-wzgorzu-i-malownicze-stawy/"
+      ],
+      "access": "Free, public park (Park Promenada-Morskie Oko, managed by Zarząd Zieleni m.st. Warszawy), open during normal park hours",
+      "transport": "Bus/tram stops on ul. Belwederska or ul. Spacerowa, roughly 5-10 min walk into the park",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Warsaw has protected this lime since 27 December 1990 and has never written down exactly where it is. The register gives its address as the corner of ul. Promenady and ul. Belwederska, which is a junction at the edge of the park rather than a place inside it, and the city's own parks department gets no closer: its guide to Park Promenada-Morskie Oko says only that a monument small-leaved lime grows near the pond. So the pin here marks the way in, not the trunk. Come in from Belwederska, keep the water on your side and look for the big lime above the bank; the hunt takes a few minutes and the park is worth them.\n\nThe ground it grows on was Princess Izabela Lubomirska's private garden in the 1770s and only became a public one in 1845, when the banker Franciszek Szuster bought the estate and opened its lower half as a promenade, which is where the district's Promenada takes its name. The lime shares the park with five protected oaks by Palac Szustra, higher up the slope.\n\nNo age and no girth have been recorded for it by anyone. Late June and July are when it pays for the walk regardless: the flowers open small and yellow-green, and the smell reaches much further than the tree looks capable of.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "flowers",
+        "label": "late June into July, when the lime flowers and the scent carries across the pond"
       }
     }
   ]
