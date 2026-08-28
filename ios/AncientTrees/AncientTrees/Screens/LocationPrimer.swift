@@ -71,13 +71,23 @@ struct LocationPrimer: View {
                     .padding(.horizontal, 30)
                     .padding(.top, 12)
 
-                Label("Your location stays on your phone. We never send it anywhere.",
-                      systemImage: "lock.fill")
-                    .font(.footnote)
-                    .foregroundStyle(.white.opacity(0.8))
-                    .multilineTextAlignment(.center)
-                    .frame(maxWidth: .infinity)
-                    .padding(.horizontal, 30)
+                // THE PROMISE THAT USED TO STAND HERE IS GONE (Hidde,
+                // 2026-08-28: "die your location stays on your device we never
+                // send it anywhere please get rid of it").
+                //
+                // It said "Your location stays on your phone. We never send it
+                // anywhere", and it was true until 27 August, when recording a
+                // tree started saving its coordinate to your account. The same
+                // sentence was in the privacy manifest, in the release
+                // checklist and in Sightings.swift, and it has now been
+                // corrected in all four. This is the one that a person
+                // actually read, which is why it is the one that mattered.
+                //
+                // Nothing replaces it rather than a softer version of it: a
+                // qualified promise on a permission screen is a promise people
+                // remember as unqualified. What we do with a position is
+                // stated where it can be read properly, on /privacy and in the
+                // permission prompt the system shows next.
                     .padding(.top, 18)
 
                 Spacer(minLength: 24)

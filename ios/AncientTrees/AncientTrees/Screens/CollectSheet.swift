@@ -533,11 +533,15 @@ struct CollectSheet: View {
                 // reader carry a decision that is ours, and most people would
                 // have taken the one that gave us nothing.
                 //
-                // The photograph itself still never leaves the phone; what
-                // reaches us is the words, through the submissions channel the
-                // website has had all along. Uploading pictures is a bucket, a
-                // bill and a deletion duty, and that is Hidde's call.
-                Text("Your photograph stays on your phone. What you write reaches us, and we decide whether it joins the map everybody sees. Either way it stays yours.")
+                // THIS SENTENCE WAS FALSE FROM 27 AUGUST, corrected 08-28
+                // alongside the primer, the privacy manifest and the release
+                // checklist. It said the photograph never leaves the phone,
+                // which stopped being true the day SightingSync landed: signed
+                // in, it goes to a private bucket so a lost phone does not take
+                // your trees with it. Nobody else can read it, and that is the
+                // part worth saying; "stays on your phone" was the part that
+                // was not ours to promise any more.
+                Text("Your photograph is yours and nobody else sees it. What you write reaches us, and we look at every one.")
                     .font(.footnote).foregroundStyle(Brand.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
             }
