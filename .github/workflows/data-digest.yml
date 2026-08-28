@@ -101,6 +101,21 @@ jobs:
             --jq "[.workflow_runs[] | select(.created_at > \"$SINCE\")] | length" 2>/dev/null || echo "")
           if [ -z "$FIRED" ]; then echo "no nightly history readable; skipping"; exit 0; fi
           echo "$FIRED of 12 knocks in the last 24h"
+          # A cooldown, because the count alone is not enough. This workflow can
+          # be dispatched by hand any number of times, and on 2026-08-28 four
+          # digest runs in five minutes each read the same shortfall and each
+          # woke a night run: four dispatches, none of them wanted. The knock
+          # spacing is two hours, so anything inside the last hour means the
+          # shift is already covered.
+          LAST=$(gh api repos/${{ github.repository }}/actions/workflows/nightly.yml/runs \
+            --jq '.workflow_runs[0].created_at' 2>/dev/null || echo "")
+          if [ -n "$LAST" ]; then
+            AGE=$(( $(date -u +%s) - $(date -u -d "$LAST" +%s) ))
+            if [ "$AGE" -lt 3600 ]; then
+              echo "a night run started $(( AGE / 60 ))m ago; not stacking another"
+              exit 0
+            fi
+          fi
           if [ "$FIRED" -lt 7 ]; then
             echo "under the floor; dispatching one"
             gh workflow run nightly.yml -R "${{ github.repository }}" \
