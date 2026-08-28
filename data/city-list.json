@@ -7,18 +7,18 @@
  },
  "cities": [
   {
-   "city": "Rome",
-   "country": "Italy",
-   "slug": "rome",
-   "status": "published",
-   "trees": 30
-  },
-  {
    "city": "Amsterdam",
    "country": "Netherlands",
    "slug": "amsterdam",
    "status": "published",
    "trees": 34
+  },
+  {
+   "city": "Rome",
+   "country": "Italy",
+   "slug": "rome",
+   "status": "published",
+   "trees": 30
   },
   {
    "city": "Milan",
@@ -80,19 +80,19 @@
    "trees": 17
   },
   {
-   "city": "Prague",
-   "country": "Czech Republic",
-   "slug": "prague",
-   "status": "published",
-   "trees": 17
-  },
-  {
    "city": "Naples",
    "country": "Italy",
    "slug": "naples",
    "status": "published",
    "demand_views_90d": 198913,
    "trees": 22
+  },
+  {
+   "city": "Prague",
+   "country": "Czech Republic",
+   "slug": "prague",
+   "status": "published",
+   "trees": 17
   },
   {
    "city": "Vienna",
@@ -217,20 +217,20 @@
    "trees": 12
   },
   {
-   "city": "Porto",
-   "country": "Portugal",
-   "slug": "porto",
-   "status": "published",
-   "demand_views_90d": 120415,
-   "trees": 27
-  },
-  {
    "city": "Alicante",
    "country": "Spain",
    "slug": "alicante",
    "status": "published",
    "demand_views_90d": 77454,
    "trees": 14
+  },
+  {
+   "city": "Porto",
+   "country": "Portugal",
+   "slug": "porto",
+   "status": "published",
+   "demand_views_90d": 120415,
+   "trees": 27
   },
   {
    "city": "Krakow",
@@ -279,14 +279,6 @@
    "trees": 6
   },
   {
-   "city": "Geneva",
-   "country": "Switzerland",
-   "slug": "geneva",
-   "status": "published",
-   "demand_views_90d": 162269,
-   "trees": 21
-  },
-  {
    "city": "Groningen",
    "country": "Netherlands",
    "slug": "groningen",
@@ -301,6 +293,14 @@
    "status": "published",
    "demand_views_90d": 33227,
    "trees": 12
+  },
+  {
+   "city": "Geneva",
+   "country": "Switzerland",
+   "slug": "geneva",
+   "status": "published",
+   "demand_views_90d": 162269,
+   "trees": 21
   },
   {
    "city": "Reykjavik",
@@ -473,20 +473,20 @@
    "trees": 10
   },
   {
-   "city": "Bristol",
-   "country": "United Kingdom",
-   "slug": "bristol",
-   "status": "published",
-   "demand_views_90d": 163983,
-   "trees": 5
-  },
-  {
    "city": "Sorrento",
    "country": "Italy",
    "slug": "sorrento",
    "status": "published",
    "demand_views_90d": null,
    "trees": 4
+  },
+  {
+   "city": "Bristol",
+   "country": "United Kingdom",
+   "slug": "bristol",
+   "status": "published",
+   "demand_views_90d": 163983,
+   "trees": 5
   },
   {
    "city": "Cordoba",
@@ -511,6 +511,13 @@
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
+  },
+  {
+   "city": "Athens",
+   "country": "Greece",
+   "slug": "athens",
+   "status": "published",
+   "trees": 12
   },
   {
    "city": "Taipei",
@@ -571,13 +578,6 @@
    "city": "Budapest",
    "country": "Hungary",
    "slug": "budapest",
-   "status": "published",
-   "trees": 12
-  },
-  {
-   "city": "Athens",
-   "country": "Greece",
-   "slug": "athens",
    "status": "published",
    "trees": 12
   },
@@ -647,6 +647,14 @@
    "trees": 0
   },
   {
+   "city": "Glasgow",
+   "country": "United Kingdom",
+   "slug": "glasgow",
+   "status": "published",
+   "demand_views_90d": 253705,
+   "trees": 4
+  },
+  {
    "city": "Bogota",
    "country": "Colombia",
    "slug": "bogota",
@@ -695,14 +703,6 @@
    "trees": 4
   },
   {
-   "city": "Glasgow",
-   "country": "United Kingdom",
-   "slug": "glasgow",
-   "status": "published",
-   "demand_views_90d": 253705,
-   "trees": 4
-  },
-  {
    "city": "Lucca",
    "country": "Italy",
    "slug": "lucca",
@@ -744,6 +744,14 @@
    "trees": 4
   },
   {
+   "city": "Cadiz",
+   "country": "Spain",
+   "slug": "cadiz",
+   "status": "published",
+   "demand_views_90d": 79226,
+   "trees": 5
+  },
+  {
    "city": "Philadelphia",
    "country": "United States",
    "slug": "philadelphia",
@@ -775,14 +783,6 @@
    "status": "published",
    "demand_views_90d": 118066,
    "trees": 6
-  },
-  {
-   "city": "Cadiz",
-   "country": "Spain",
-   "slug": "cadiz",
-   "status": "published",
-   "demand_views_90d": 79226,
-   "trees": 5
   },
   {
    "city": "Kobe",
@@ -929,6 +929,13 @@
    "trees": 10
   },
   {
+   "city": "Oahu",
+   "country": "United States",
+   "slug": "oahu",
+   "status": "published",
+   "trees": 5
+  },
+  {
    "city": "Bari",
    "country": "Italy",
    "slug": "bari",
@@ -943,13 +950,6 @@
    "note": "First city through the split pipeline (generated brief, verify pass on Sonnet, writing pass). Three pockets, not one walk; the page says so. Liguria's own register carries an age field, unlike MASAF.",
    "demand_views_90d": 145206,
    "trees": 12
-  },
-  {
-   "city": "Oahu",
-   "country": "United States",
-   "slug": "oahu",
-   "status": "published",
-   "trees": 5
   },
   {
    "city": "Cape Town",
@@ -1032,6 +1032,14 @@
    "trees": 11
   },
   {
+   "city": "Bilbao",
+   "country": "Spain",
+   "slug": "bilbao",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 4
+  },
+  {
    "city": "Kamakura",
    "country": "Japan",
    "slug": "kamakura",
@@ -1077,14 +1085,6 @@
    "slug": "ljubljana",
    "status": "published",
    "demand_views_90d": 125046,
-   "trees": 4
-  },
-  {
-   "city": "Bilbao",
-   "country": "Spain",
-   "slug": "bilbao",
-   "status": "published",
-   "demand_views_90d": null,
    "trees": 4
   },
   {
@@ -1144,6 +1144,14 @@
    "trees": 5
   },
   {
+   "city": "Wroclaw",
+   "country": "Poland",
+   "slug": "wroclaw",
+   "status": "published",
+   "demand_views_90d": 123894,
+   "trees": 5
+  },
+  {
    "city": "Bangkok",
    "country": "Thailand",
    "slug": "bangkok",
@@ -1168,20 +1176,20 @@
    "trees": 4
   },
   {
-   "city": "Wroclaw",
-   "country": "Poland",
-   "slug": "wroclaw",
-   "status": "published",
-   "demand_views_90d": 123894,
-   "trees": 5
-  },
-  {
    "city": "Parma",
    "country": "Italy",
    "slug": "parma",
    "status": "published",
    "demand_views_90d": 40425,
    "trees": 5
+  },
+  {
+   "city": "Gdansk",
+   "country": "Poland",
+   "slug": "gdansk",
+   "status": "published",
+   "demand_views_90d": 4908,
+   "trees": 4
   },
   {
    "city": "Antwerp",
@@ -1198,14 +1206,6 @@
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
-  },
-  {
-   "city": "Gdansk",
-   "country": "Poland",
-   "slug": "gdansk",
-   "status": "published",
-   "demand_views_90d": 4908,
-   "trees": 4
   },
   {
    "city": "Agra",
