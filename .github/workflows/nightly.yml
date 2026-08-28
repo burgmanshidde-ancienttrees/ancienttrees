@@ -249,11 +249,24 @@ jobs:
             Reader submissions outrank everything. Something published being wrong
             outranks everything below it.
 
-            YOUR FIRST DISPATCH IS WORK, NOT PREPARATION. Once the ladder has
-            named your rung, the next Task you dispatch must be one that
-            produces trees: a verify pass or a write pass, off the shelf
-            prepare.py just printed. Not a claim, not pagegaps, not a survey of
-            what could be done. Claiming a city is the note you leave BEFORE
+            YOUR FIRST DISPATCH IS A WRITE PASS, WHENEVER THERE IS ONE TO DO.
+            Only a write pass puts a tree on the site. A verify pass prepares
+            trees for a LATER run, staging is preparation for the verify, and a
+            claim is the note you leave before any of it: none of those three
+            changes what a reader can see today. So the order is not a
+            preference, it is what the stages actually do.
+
+            prepare.py prints "ready to write" at the top of your window. If that
+            number is not zero, your first Task is a write-stories agent on 15 to
+            20 of them across cities per BRIEF_WRITING.md, merged, built and
+            committed. Verify and staging come after that, with whatever the
+            clock leaves, and they are how you make the NEXT run's write pass
+            possible. This was written on 2026-08-28 after a run did everything
+            right except this: it dispatched two verify passes, confirmed five
+            trees, staged fourteen more, and put nothing live, while 366 trees
+            sat waiting for nothing but prose.
+
+            Not a claim, not pagegaps, not a survey of what could be done. Claiming a city is the note you leave BEFORE
             doing work; a run that ends holding claims and no trees has left a
             note and gone home, and it also blocks the top of the queue for the
             next knock.
@@ -266,8 +279,9 @@ jobs:
             passes dispatched of them ZERO. Nothing stopped it. It did the
             paperwork for work it never started.
 
-            So: if you reach turn 30 without having dispatched a verify or write
-            agent, stop whatever you are doing and dispatch one. And when a pass
+            So: if you reach turn 30 without having dispatched a write agent
+            (or a verify agent, when there was nothing ready to write), stop
+            whatever you are doing and dispatch one. And when a pass
             comes back merged, go straight to the next one. The window ends when
             the clock or the usage limit says so, never when one item is done.
 
