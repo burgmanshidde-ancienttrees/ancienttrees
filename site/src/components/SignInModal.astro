@@ -42,7 +42,7 @@ const T = es ? {
   google: "Continuar con Google",
   or: "o",
   app: "Consigue acceso anticipado",
-  fine: 'Solo guardamos tu dirección de email, para los enlaces de acceso y nada más. Al continuar aceptas las <a href="/terms">Condiciones</a> y la <a href="/privacy">Privacidad</a>.',
+  fine: 'Guardamos tu dirección de email y lo que coleccionas: los árboles que guardas y los que fotografías. Al continuar aceptas las <a href="/terms">Condiciones</a> y la <a href="/privacy">Privacidad</a>.',
   sentTitle: "Mira tu bandeja de entrada",
   sentBody1: "Hemos enviado un enlace de acceso a ",
   sentBody2: ". Funciona una vez, caduca en 15 minutos y te trae de vuelta aquí.",
@@ -57,7 +57,11 @@ const T = es ? {
   google: "Continue with Google",
   or: "or",
   app: "Get the app",
-  fine: 'We store only your email address, for sign-in links and nothing else. By continuing you agree to the <a href="/terms">Terms</a> and the <a href="/privacy">Privacy</a> notice.',
+  // An absolute about what we hold stood here until 2026-08-28, and it had
+  // been false since saves, profiles and follows arrived. The app's sign-in
+  // sheet said the same thing and was corrected the same hour; both surfaces
+  // say what we hold and let the list be the limit.
+  fine: 'We store your email address and what you collect: the trees you save and the ones you photograph. By continuing you agree to the <a href="/terms">Terms</a> and the <a href="/privacy">Privacy</a> notice.',
   sentTitle: "Check your inbox",
   sentBody1: "We sent a sign-in link to ",
   sentBody2: ". It works once, expires in 15 minutes, and brings you straight back here.",

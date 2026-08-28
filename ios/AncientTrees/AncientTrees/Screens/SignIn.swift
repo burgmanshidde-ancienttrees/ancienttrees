@@ -256,7 +256,10 @@ struct SignInSheet: View {
     /// sentence the website has carried since the account track opened.
     private var footer: some View {
         VStack(spacing: 6) {
-            Text("We store your email address and the trees you collect. Nothing else, no advertising, and you can delete the lot from this app.")
+            // Same correction as Profile's, same day. The "no advertising" and
+            // the deletion promise both survive because both are still true;
+            // "Nothing else" did not.
+            Text("We store your email address and what you collect: the trees you save, the ones you photograph, and where they stand. No advertising, and you can delete the lot from this app.")
                 .font(.caption2).foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
             // Both of these were text a finger has to find: "Privacy" measured
