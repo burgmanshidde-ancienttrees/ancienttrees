@@ -344,7 +344,6 @@ struct TreeMap: UIViewRepresentable {
             // local Debug build waves this through, which is the whole reason
             // that job exists.
             MainActor.assumeIsolated {
-            MapLayers.mapRef = map
             MapLayers.install(on: style, clustered: parent.clusters)
             styleReady = true
             if let p = pending {
@@ -625,9 +624,36 @@ enum MapLayers {
     /// colour on this map is spoken for: moss is ours, white is the ring every
     /// pin wears, blue is a ticket and gold is Plus. See photoPin.
     private static let ink = UIColor(red: 0.15, green: 0.19, blue: 0.12, alpha: 1)
-    /// Which pin images this style already carries. See setTrees for why this
+    /// Which pin images each style already carries. See setTrees for why this
     /// is not a question asked of MLNStyle.
-    private static var registered: Set<String> = []
+    ///
+    /// PER STYLE since 2026-08-28, and that is a correctness fix rather than
+    /// tidiness. It was ONE shared set, and this app has several map views
+    /// alive at once: the Map tab, My trees, a tree page's map, the pin
+    /// picker. Two ways that went wrong, both of them silent.
+    ///
+    /// One: whichever map loaded last called install(), which cleared the set
+    /// for all of them, and cluster() then wrote its bubble images to
+    /// `mapRef?.style`, the style of whichever map loaded LAST rather than the
+    /// one being drawn.
+    ///
+    /// Two, and this one needs no clearing at all: the Map tab registers a
+    /// pin image, the shared set now says that name is done, and My trees asks
+    /// the same question about ITS style, is told yes, and never sets the
+    /// image. Its icon name then points at nothing.
+    ///
+    /// Either way MapLibre draws nothing and logs nothing, which is this
+    /// file's oldest and most expensive failure mode. Keyed by the style
+    /// object, two maps cannot poison each other's register.
+    private static var registeredByStyle: [ObjectIdentifier: Set<String>] = [:]
+
+    private static func hasImage(_ name: String, on style: MLNStyle) -> Bool {
+        registeredByStyle[ObjectIdentifier(style), default: []].contains(name)
+    }
+
+    private static func noteImage(_ name: String, on style: MLNStyle) {
+        registeredByStyle[ObjectIdentifier(style), default: []].insert(name)
+    }
     /// Clustering options, set by install() and used by setTrees when it builds
     /// the source. They cannot be applied later: a source is clustered or not
     /// from birth.
@@ -635,13 +661,17 @@ enum MapLayers {
     private static var writeCount = 0
     /// The identifier the live tree source currently carries. See apply().
     private static var liveSourceID = treeSource
-    /// The map itself, so clustering can read the current zoom. Weak: the
-    /// style outlives nothing here, and a strong reference would keep a dead
-    /// map view alive.
-    static weak var mapRef: MLNMapView?
+    // There was a `mapRef` here, one shared weak pointer to "the map", and it
+    // was removed on 2026-08-28 with the last thing that read it. A single
+    // static naming one of four live map views is a bug waiting to be written
+    // again: whoever loaded last won, and everything done through it was done
+    // to the wrong map. Everything that needs a style is handed the style it
+    // is drawing.
 
     static func install(on style: MLNStyle, clustered: Bool) {
-        registered.removeAll()
+        // This style only. Clearing every style's register is what let one map
+        // blind another.
+        registeredByStyle[ObjectIdentifier(style)] = []
         style.setImage(pin(colour: moss, glyph: nil), forName: "at-pin-default")
         style.setImage(minePin(), forName: "at-pin-mine")
 
@@ -750,8 +780,8 @@ enum MapLayers {
             // for a name it has never seen, it is not reliably nil, so after the
             // first species every later icon name pointed at nothing and
             // MapLibre silently drew nothing. Found in a screenshot, not in a log.
-            if !registered.contains(name) {
-                registered.insert(name)
+            if !hasImage(name, on: style) {
+                noteImage(name, on: style)
                 style.setImage(pin(colour: colour,
                                    glyph: SpeciesGlyph.image(for: t.commonName),
                                    collected: seen, ticket: ticket, favourite: loved),
@@ -921,8 +951,11 @@ enum MapLayers {
             }
             let shown = min(group.count, 99)
             let icon = "at-cluster-\(shown)"
-            if !registered.contains(icon), let style = mapRef?.style {
-                registered.insert(icon)
+            // ON THE STYLE BEING DRAWN, not on mapRef's. mapRef is whichever
+            // map loaded last, which with several maps alive is regularly not
+            // this one.
+            if !hasImage(icon, on: style) {
+                noteImage(icon, on: style)
                 style.setImage(clusterPin(count: shown), forName: icon)
             }
             let bubble = MLNPointFeature()
@@ -1055,8 +1088,8 @@ enum MapLayers {
             var icon = "at-pin-mine"
             if let photo = m.photo {
                 icon = "at-pin-mine-" + m.id.uuidString
-                if !registered.contains(icon) {
-                    registered.insert(icon)
+                if !hasImage(icon, on: style) {
+                    noteImage(icon, on: style)
                     style.setImage(photoPin(photo), forName: icon)
                 }
             }
