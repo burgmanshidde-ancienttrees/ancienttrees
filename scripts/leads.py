@@ -354,33 +354,47 @@ def fold_stacked(ready):
     return still, folded
 
 
+def buckets(city=None):
+    """The one classification of the leads corpus, for anyone who needs a count.
+
+    Extracted 2026-08-28 because prepare.py grew its own version of this to
+    print the writable count at the top of every run, and got 563 where this
+    file said 366: it applied classify() and readiness() but not
+    published_match() or fold_stacked(). A second implementation of a
+    classification is a second answer to the same question, and the wrong one
+    was the one a night run would have read first.
+    """
+    blocking = rules()["blocking"]
+    ready, needs, blocked, done = [], [], [], []
+    matched = 0
+    for city_slug, e in load(city):
+        if is_done(e):
+            done.append((city_slug, e))
+            continue
+        if published_match(city_slug, e):
+            done.append((city_slug, e))
+            matched += 1
+            continue
+        rule = classify(e, blocking)
+        if rule:
+            blocked.append((city_slug, e, rule))
+            continue
+        miss = readiness(e)
+        (ready if not miss else needs).append((city_slug, e, miss))
+    ready, folded = fold_stacked(ready)
+    return {"ready": ready, "needs": needs, "blocked": blocked,
+            "done": done, "folded": folded, "matched": matched}
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--city")
     ap.add_argument("--ready", action="store_true")
     a = ap.parse_args()
 
-    r = rules()
-    blocking = r["blocking"]
-    ready, needs, blocked, done = [], [], [], []
-    matched = 0
-    for city, e in load(a.city):
-        if is_done(e):
-            done.append((city, e))
-            continue
-        match = published_match(city, e)
-        if match:
-            done.append((city, e))
-            matched += 1
-            continue
-        rule = classify(e, blocking)
-        if rule:
-            blocked.append((city, e, rule))
-            continue
-        miss = readiness(e)
-        (ready if not miss else needs).append((city, e, miss))
-
-    ready, folded = fold_stacked(ready)
+    b = buckets(a.city)
+    ready, needs, blocked = b["ready"], b["needs"], b["blocked"]
+    done, folded, matched = b["done"], b["folded"], b["matched"]
     total = len(ready) + len(needs) + len(blocked) + len(done) + len(folded)
     print(f"\n{total} leads. Fail-open: anything not matching data/block-reasons.json ships.\n")
     print(f"  {len(ready):4d}  READY: publishable now, needs only a story written")

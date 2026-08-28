@@ -9,7 +9,9 @@
    "photos": [
     "https://commons.wikimedia.org/wiki/File:2014_The_Birr_Castle_Grey_Poplar_IRL.jpg"
    ],
-   "status": "lead"
+   "status": "lead",
+   "species": "Poplar (Populus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "King oak (Tullamore)",
@@ -18,7 +20,9 @@
    "photos": [
     "https://commons.wikimedia.org/wiki/File:2013_King_Oak_IRL.jpg"
    ],
-   "status": "lead"
+   "status": "lead",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   }
  ]
 }

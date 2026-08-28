@@ -1,0 +1,719 @@
+{
+ "note": "Words that name a genus, in the languages our leads are written in. Read by scripts/refill.py to recover a genus from a tree's OWN NAME, which is the commonest missing field in data/leads/ and the one that keeps a fully verified tree out of the writable pile.",
+ "why_genus_only": "A name says Eiche, never Quercus petraea, so this can only ever reach the genus. CLAUDE.md's 2026-08-13 ruling is exactly this case: write 'Oak (Quercus sp.)', say on the page that we do not know which one, and let a reader answer it. Genus from the tree's own name is a reading of the name, not a guess about the tree.",
+ "not_a_publish_decision": "This fills LEADS, never data/cities. A lead becoming writable is not a tree going live: a write pass still looks at it.",
+ "how_to_grow": "Add words to an existing genus, or a new genus with a common name. Re-run refill.py; it is idempotent.",
+ "genera": {
+  "Quercus": {
+   "common": "Oak",
+   "words": [
+    "oak",
+    "oaks",
+    "quercia",
+    "querce",
+    "quercus",
+    "eik",
+    "eiche",
+    "chene",
+    "chêne",
+    "roble",
+    "carvalho",
+    "dab",
+    "dąb",
+    "dub",
+    "tammi",
+    "eg",
+    "ek",
+    "hrast",
+    "stejar",
+    "tolgy",
+    "tölgy",
+    "quejigo",
+    "encina",
+    "alzina",
+    "sughera",
+    "rovere",
+    "farnia",
+    "cerro",
+    "kermes",
+    "carrasca"
+   ]
+  },
+  "Tilia": {
+   "common": "Lime",
+   "words": [
+    "lime",
+    "linden",
+    "lindens",
+    "tilia",
+    "linde",
+    "lipa",
+    "tilleul",
+    "tilo",
+    "tiglio",
+    "lind",
+    "lipe",
+    "niinipuu",
+    "teglia",
+    "tilia"
+   ]
+  },
+  "Fagus": {
+   "common": "Beech",
+   "words": [
+    "beech",
+    "fagus",
+    "beuk",
+    "buche",
+    "buchen",
+    "hetre",
+    "hêtre",
+    "haya",
+    "faia",
+    "buk",
+    "bok",
+    "faggio"
+   ]
+  },
+  "Castanea": {
+   "common": "Sweet Chestnut",
+   "words": [
+    "chestnut",
+    "castanea",
+    "kastanje",
+    "kastanie",
+    "chataignier",
+    "châtaignier",
+    "castano",
+    "castagno",
+    "castanheiro",
+    "kesten",
+    "castanho"
+   ]
+  },
+  "Aesculus": {
+   "common": "Horse Chestnut",
+   "words": [
+    "paardenkastanje",
+    "rosskastanie",
+    "marronnier",
+    "aesculus",
+    "ippocastano"
+   ]
+  },
+  "Platanus": {
+   "common": "Plane",
+   "words": [
+    "plane",
+    "platanus",
+    "plataan",
+    "platane",
+    "platano",
+    "plátano",
+    "platan"
+   ]
+  },
+  "Taxus": {
+   "common": "Yew",
+   "words": [
+    "yew",
+    "taxus",
+    "eibe",
+    "tejo",
+    "teixo",
+    "tis",
+    "tasso",
+    "venijnboom"
+   ]
+  },
+  "Olea": {
+   "common": "Olive",
+   "words": [
+    "olive",
+    "olea",
+    "olijf",
+    "olivier",
+    "olivo",
+    "oliveira",
+    "oliva",
+    "ulivo",
+    "olivastro",
+    "olivera"
+   ]
+  },
+  "Pinus": {
+   "common": "Pine",
+   "words": [
+    "pine",
+    "pines",
+    "pinus",
+    "kiefer",
+    "pino",
+    "pinheiro",
+    "sosna",
+    "borovice",
+    "weisskiefer",
+    "weißkiefer",
+    "zirbe",
+    "fura"
+   ]
+  },
+  "Picea": {
+   "common": "Spruce",
+   "words": [
+    "spruce",
+    "picea",
+    "fijnspar",
+    "fichte",
+    "epicea",
+    "épicéa",
+    "smrk",
+    "gran",
+    "kuusi"
+   ]
+  },
+  "Abies": {
+   "common": "Fir",
+   "words": [
+    "fir",
+    "abies",
+    "zilverspar",
+    "tanne",
+    "sapin",
+    "abeto",
+    "jedle"
+   ]
+  },
+  "Cedrus": {
+   "common": "Cedar",
+   "words": [
+    "cedar",
+    "cedrus",
+    "ceder",
+    "zeder",
+    "cedre",
+    "cèdre",
+    "cedro"
+   ]
+  },
+  "Ulmus": {
+   "common": "Elm",
+   "words": [
+    "elm",
+    "ulmus",
+    "iep",
+    "olmo",
+    "orme",
+    "ulme",
+    "brest",
+    "olmi"
+   ]
+  },
+  "Fraxinus": {
+   "common": "Ash",
+   "words": [
+    "fraxinus",
+    "esche",
+    "frene",
+    "frêne",
+    "fresno",
+    "freixo",
+    "jesion",
+    "jasan",
+    "ask",
+    "asken",
+    "saarni"
+   ]
+  },
+  "Acer": {
+   "common": "Maple",
+   "words": [
+    "maple",
+    "acer",
+    "esdoorn",
+    "ahorn",
+    "erable",
+    "érable",
+    "arce",
+    "javor",
+    "klon",
+    "bergahorn"
+   ]
+  },
+  "Salix": {
+   "common": "Willow",
+   "words": [
+    "willow",
+    "salix",
+    "wilg",
+    "weide",
+    "saule",
+    "sauce",
+    "salgueiro",
+    "wierzba",
+    "vrba",
+    "pil",
+    "treurwilg"
+   ]
+  },
+  "Populus": {
+   "common": "Poplar",
+   "words": [
+    "poplar",
+    "populus",
+    "populier",
+    "pappel",
+    "peuplier",
+    "chopo",
+    "alamo",
+    "álamo",
+    "topola",
+    "pioppo"
+   ]
+  },
+  "Betula": {
+   "common": "Birch",
+   "words": [
+    "birch",
+    "betula",
+    "berk",
+    "birke",
+    "bouleau",
+    "abedul",
+    "brzoza",
+    "briza",
+    "bjork",
+    "björk",
+    "koivu"
+   ]
+  },
+  "Ginkgo": {
+   "common": "Ginkgo",
+   "words": [
+    "ginkgo",
+    "gingko",
+    "icho",
+    "ichō",
+    "ityou",
+    "ichou"
+   ]
+  },
+  "Cupressus": {
+   "common": "Cypress",
+   "words": [
+    "cypress",
+    "cupressus",
+    "cipresso",
+    "cipres",
+    "ciprés",
+    "cypres",
+    "zypresse",
+    "cipreste"
+   ]
+  },
+  "Sequoiadendron": {
+   "common": "Giant Sequoia",
+   "words": [
+    "sequoiadendron",
+    "mammutbaum",
+    "secuoya",
+    "sequoia",
+    "sequoias"
+   ]
+  },
+  "Juglans": {
+   "common": "Walnut",
+   "words": [
+    "walnut",
+    "juglans",
+    "nussbaum",
+    "noyer",
+    "nogal",
+    "noce",
+    "orzech",
+    "notenboom",
+    "nogueira"
+   ]
+  },
+  "Ficus": {
+   "common": "Fig",
+   "words": [
+    "fig",
+    "figs",
+    "ficus",
+    "vijg",
+    "figueira",
+    "higuera",
+    "fico",
+    "gomero",
+    "banyan",
+    "moreton"
+   ]
+  },
+  "Cryptomeria": {
+   "common": "Japanese Cedar",
+   "words": [
+    "sugi",
+    "cryptomeria",
+    "yakusugi"
+   ]
+  },
+  "Camphora": {
+   "common": "Camphor Tree",
+   "words": [
+    "kusunoki",
+    "camphor",
+    "kusu"
+   ]
+  },
+  "Malus": {
+   "common": "Apple",
+   "words": [
+    "apple",
+    "malus",
+    "appel",
+    "apfel",
+    "apfelbaum",
+    "pommier",
+    "manzano",
+    "macieira",
+    "jablon"
+   ]
+  },
+  "Pyrus": {
+   "common": "Pear",
+   "words": [
+    "pear",
+    "pyrus",
+    "peer",
+    "birnbaum",
+    "poirier",
+    "peral",
+    "perenboom"
+   ]
+  },
+  "Carpinus": {
+   "common": "Hornbeam",
+   "words": [
+    "hornbeam",
+    "carpinus",
+    "haagbeuk",
+    "hainbuche",
+    "charme",
+    "carpino"
+   ]
+  },
+  "Alnus": {
+   "common": "Alder",
+   "words": [
+    "alder",
+    "alnus",
+    "els",
+    "erle",
+    "aulne",
+    "aliso",
+    "olsa",
+    "ontano"
+   ]
+  },
+  "Liriodendron": {
+   "common": "Tulip Tree",
+   "words": [
+    "liriodendron",
+    "tulpenboom",
+    "tulpenbaum",
+    "tulipier",
+    "tulip"
+   ]
+  },
+  "Magnolia": {
+   "common": "Magnolia",
+   "words": [
+    "magnolia"
+   ]
+  },
+  "Araucaria": {
+   "common": "Araucaria",
+   "words": [
+    "araucaria",
+    "bunya",
+    "hoop"
+   ]
+  },
+  "Eucalyptus": {
+   "common": "Eucalyptus",
+   "words": [
+    "eucalyptus",
+    "eucalipto",
+    "gum",
+    "ironbark",
+    "jarrah",
+    "karri"
+   ]
+  },
+  "Celtis": {
+   "common": "Hackberry",
+   "words": [
+    "hackberry",
+    "celtis",
+    "netelboom",
+    "micocoulier",
+    "bagolaro",
+    "almez",
+    "lodoeiro"
+   ]
+  },
+  "Styphnolobium": {
+   "common": "Pagoda Tree",
+   "words": [
+    "sophora",
+    "styphnolobium",
+    "pagoda",
+    "honingboom"
+   ]
+  },
+  "Morus": {
+   "common": "Mulberry",
+   "words": [
+    "mulberry",
+    "morus",
+    "moerbei",
+    "maulbeerbaum",
+    "murier",
+    "mûrier",
+    "morera",
+    "gelso",
+    "amoreira"
+   ]
+  },
+  "Robinia": {
+   "common": "Black Locust",
+   "words": [
+    "robinia",
+    "robinie",
+    "robinier",
+    "robinias"
+   ]
+  },
+  "Corylus": {
+   "common": "Hazel",
+   "words": [
+    "hazel",
+    "corylus",
+    "hazelaar",
+    "haselnuss",
+    "noisetier",
+    "avellano"
+   ]
+  },
+  "Sorbus": {
+   "common": "Rowan",
+   "words": [
+    "rowan",
+    "sorbus",
+    "lijsterbes",
+    "eberesche",
+    "sorbier",
+    "serbal"
+   ]
+  },
+  "Prunus": {
+   "common": "Cherry",
+   "words": [
+    "cherry",
+    "prunus",
+    "kers",
+    "kirschbaum",
+    "kirsche",
+    "cerisier",
+    "cerezo",
+    "sakura",
+    "ciliegio",
+    "cerejeira",
+    "almond",
+    "almendro"
+   ]
+  },
+  "Larix": {
+   "common": "Larch",
+   "words": [
+    "larch",
+    "larix",
+    "lariks",
+    "larche",
+    "modrzew",
+    "melez",
+    "mélèze",
+    "larice",
+    "lärche"
+   ]
+  },
+  "Jacaranda": {
+   "common": "Jacaranda",
+   "words": [
+    "jacaranda"
+   ]
+  },
+  "Prosopis": {
+   "common": "Algarrobo",
+   "words": [
+    "algarrobo",
+    "prosopis"
+   ]
+  },
+  "Ceratonia": {
+   "common": "Carob",
+   "words": [
+    "carob",
+    "ceratonia",
+    "alfarrobeira",
+    "garrofer"
+   ]
+  },
+  "Phoenix": {
+   "common": "Date Palm",
+   "words": [
+    "palm",
+    "palmera",
+    "palmeira",
+    "palme",
+    "phoenix",
+    "palmboom",
+    "palmier"
+   ]
+  },
+  "Dracaena": {
+   "common": "Dragon Tree",
+   "words": [
+    "drago",
+    "dragon tree",
+    "dracaena",
+    "drakenbloedboom"
+   ]
+  },
+  "Cinnamomum": {
+   "common": "Camphor Laurel",
+   "words": [
+    "cinnamomum"
+   ]
+  },
+  "Laurus": {
+   "common": "Bay Laurel",
+   "words": [
+    "laurel",
+    "laurus",
+    "lauro",
+    "alloro",
+    "laurier",
+    "loureiro"
+   ]
+  },
+  "Juniperus": {
+   "common": "Juniper",
+   "words": [
+    "juniper",
+    "juniperus",
+    "jeneverbes",
+    "wacholder",
+    "genevrier",
+    "enebro",
+    "zimbro"
+   ]
+  },
+  "Sequoia": {
+   "common": "Coast Redwood",
+   "words": [
+    "redwood",
+    "sequoia sempervirens"
+   ]
+  },
+  "Taxodium": {
+   "common": "Montezuma Cypress",
+   "words": [
+    "ahuehuete",
+    "taxodium",
+    "sabino"
+   ]
+  },
+  "Adansonia": {
+   "common": "Baobab",
+   "words": [
+    "baobab",
+    "adansonia"
+   ]
+  },
+  "Cedrela": {
+   "common": "Cedro",
+   "words": [
+    "cedrela"
+   ]
+  },
+  "Gleditsia": {
+   "common": "Honey Locust",
+   "words": [
+    "gleditsia",
+    "valse christusdoorn"
+   ]
+  },
+  "Catalpa": {
+   "common": "Catalpa",
+   "words": [
+    "catalpa",
+    "trompetboom"
+   ]
+  },
+  "Paulownia": {
+   "common": "Paulownia",
+   "words": [
+    "paulownia",
+    "kiri"
+   ]
+  },
+  "Zelkova": {
+   "common": "Zelkova",
+   "words": [
+    "zelkova",
+    "keyaki"
+   ]
+  },
+  "Cercis": {
+   "common": "Judas Tree",
+   "words": [
+    "cercis",
+    "judas",
+    "judasboom",
+    "albero di giuda"
+   ]
+  },
+  "Ilex": {
+   "common": "Holly",
+   "words": [
+    "holly",
+    "ilex",
+    "hulst",
+    "stechpalme",
+    "houx",
+    "acebo",
+    "azevinho"
+   ]
+  },
+  "Buxus": {
+   "common": "Box",
+   "words": [
+    "buxus",
+    "boxwood",
+    "bosso"
+   ]
+  },
+  "Arbutus": {
+   "common": "Strawberry Tree",
+   "words": [
+    "arbutus",
+    "madrono",
+    "madroño",
+    "medronheiro",
+    "corbezzolo"
+   ]
+  }
+ }
+}
