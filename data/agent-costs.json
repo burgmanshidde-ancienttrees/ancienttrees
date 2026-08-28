@@ -1033,7 +1033,7 @@
         "kind": "scout",
         "tokens": 124675,
         "trees": 0,
-        "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+        "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
       },
       {
         "target": "barcelona",
@@ -3650,6 +3650,15 @@
         "tokens": 45000,
         "trees": 0,
         "note": "register reconfirmed exhausted (matches 2026-08-22); municipal classified-trees page checked, all ensembles non-collectible; Grande Maior literary nickname resolved to already-published sin_003 (75m/duplicate), recorded as a story lead rather than a new tree",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "groningen",
+        "kind": "verify",
+        "tokens": 78000,
+        "trees": 1,
+        "note": "1 verified (Pepergasthuis lindens, resolved an access-uncertainty lead), 2 newly blocked (private villa garden, tree felled 2010 per register own text), 3 left as leads (ambiguous public/private boundary or register-admitted unlocatable tree)",
         "wasted": 0,
         "brief_wrong": false
       }
