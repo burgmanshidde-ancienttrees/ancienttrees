@@ -15,15 +15,22 @@
 	  A manifest that describes last month's app is worse than none, because it
 	  is a statement to Apple that happens to be false.
 
+	  Corrected again 2026-08-28. Two entries here were false and had been since
+	  the sightings sync landed on 08-27: this file said photographs of trees
+	  never leave the phone and that a position is never sent anywhere, while
+	  SightingSync.push uploads the photograph to the sightings bucket and
+	  writes a row carrying user_id, lat, lng, note and taken_at. Sightings.swift
+	  had its own version of that stale sentence fixed the same day and this one
+	  was missed. It is the same lesson twice: a comment describing last month's
+	  app is a statement to Apple that happens to be false, and this one is in
+	  Hidde's name.
+
 	  What is deliberately NOT declared as collected, because "collected" in
-	  Apple's sense means leaving the device, and none of these do:
+	  Apple's sense means leaving the device, and these do not:
 
-	  Location. The map reads it and forgets it. It is never sent anywhere,
-	  which is exactly what the priming screen promises in those words.
-
-	  Photographs of trees. A photograph you take of a tree stays in the app's
-	  own storage on the phone: no bucket, no table, no upload (Sightings.swift).
-	  A profile picture is the one image that does leave, and it is declared.
+	  The map's own reading of where you are, which opens it on the trees near
+	  you and is forgotten. What IS sent is the position saved WITH a tree you
+	  record yourself, and that is declared below as precise location.
 
 	  The tick list of somebody who has not signed in. That lives in
 	  UserDefaults on the phone and goes nowhere until an account exists.
@@ -63,11 +70,31 @@
 			</array>
 		</dict>
 		<dict>
-			<!-- The profile picture, and only that: it goes to the avatars
-			     bucket under the account's own id and is shown beside the name.
-			     Photographs of trees never leave the phone. -->
+			<!-- Two kinds, both linked to the account and neither shown to
+			     anybody else. The profile picture goes to the avatars bucket
+			     under the account's own id and is shown beside the name. A
+			     photograph of a tree you recorded goes to the sightings bucket,
+			     which is private and has no policy anywhere letting one account
+			     read another's: it is there so a lost phone does not take your
+			     trees with it. Signed out, neither leaves the device. -->
 			<key>NSPrivacyCollectedDataType</key>
 			<string>NSPrivacyCollectedDataTypePhotosorVideos</string>
+			<key>NSPrivacyCollectedDataTypeLinked</key>
+			<true/>
+			<key>NSPrivacyCollectedDataTypeTracking</key>
+			<false/>
+			<key>NSPrivacyCollectedDataTypePurposes</key>
+			<array>
+				<string>NSPrivacyCollectedDataTypePurposeAppFunctionality</string>
+			</array>
+		</dict>
+		<dict>
+			<!-- Where a tree you recorded yourself was standing, saved with that
+			     record so your own map can show it and a new phone can get it
+			     back. Nothing streams: one coordinate per tree you record, at
+			     the moment you record it, and only once you have signed in. -->
+			<key>NSPrivacyCollectedDataType</key>
+			<string>NSPrivacyCollectedDataTypePreciseLocation</string>
 			<key>NSPrivacyCollectedDataTypeLinked</key>
 			<true/>
 			<key>NSPrivacyCollectedDataTypeTracking</key>
