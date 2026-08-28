@@ -2,6 +2,18 @@
 
 One dated entry per decision that shapes the product, newest first: what was decided, by whom, and why. This file exists because the 2026-07-27 assumption audit showed decisions scattered across five documents and chat, which is how observations silently harden into rules. New decisions land here the day they are made; older ones migrate when a document touching them is edited anyway. The standard here is the lightweight ADR (Architecture Decision Record) practice, ours-sized.
 
+- **2026-08-28 - Hidde (session): a tree does not need a city. `[city]` means a PLACE.** Approved with "ja", after his own framing: "het is toch prima om bomen zonder stad online te zetten. Die zijn dan los in de map te vinden - of op het park waar ze in staan - maar horen niet bij een stad." Blueprint v1.15.
+
+  **What forced it was a measurement, not a preference.** A sweep of Commons' famous-tree categories found 1,074 named trees we do not map, 748 of them arriving with coordinates and photographs already attached, which is the expensive half of research for nothing. Of the sixty in the United States, **nine** fall within forty kilometres of a city we publish. General Sherman stands in Sequoia National Park, the Charter Oak in Hartford, the Lahaina Banyan on Maui. A tree with no home has no URL, and a tree with no URL is not on this site at all, so the model was quietly excluding the best trees in the world.
+
+  **The change is one word, not a page type.** Contract A never required `[city]` to be a city; it is a folder with a name and a country. `/veluwe/de-kroezeboom` and `/sequoia-national-park/general-sherman` are ordinary Contract A pages. Everything already built works unchanged: the place page, the question page, the walks, the map, the feeds. This is the shape goal 3 anticipated on 2026-08-14, that the schema must not assume "city" because villages, parks and forests have to be new views on the same data rather than a second system.
+
+  **Three rules stop it becoming a spam farm**, all in the blueprint: a place earns a page on the same four-tree floor as a city, and below that its trees are collection entries; a place must be a name a person would say out loud rather than a bounding box invented to hold two trees; and only cities appear on /cities, because an index of cities that is not a list of cities is the first step to a page nobody trusts.
+
+  **What is NOT decided here**, and is his when it comes up: whether the homepage and /explore shelves that list cities should also exclude regions. Nothing renders wrong today because no region exists yet, and guessing at those shelves before there is one to look at is how a rule gets written for a page nobody has seen.
+
+  A related thing he named the same day and did NOT need a decision for: "pagina's met de 3 lijpste bomen in de Veluwe" is a collection, Contract D, and has been buildable since the collections contract existed.
+
 - **2026-08-26 - Hidde (session): the launch is free, the walks and the season are Plus, and the free scope freezes at launch.** One conversation, six rulings, closed with "ok laten we dit maar doen". The working record with the full reasoning is `drafts/PLUS_THINKING.md`; this entry is the decision of record and REPLACES the four-feature Plus line of 2026-08-18.
 
   1. **The app launches free with no reference to Plus anywhere** ("dan krijg je een veel vergevingsgezindere groep"). The paywall screen and the Plus-labelled rows go behind a flag in the launch build; the code stays.

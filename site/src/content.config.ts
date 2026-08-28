@@ -110,6 +110,20 @@ const cities = defineCollection({
   schema: z.object({
     city: z.string(),
     country: z.string(),
+    /** What kind of place this is. A city unless it says otherwise.
+     *
+     * Blueprint v1.15 (2026-08-28): `[city]` means a PLACE, which may be a
+     * city, a region, a national park or a forest, because the trees worth
+     * having most often belong to none of the first. General Sherman stands in
+     * Sequoia National Park; of sixty famous American trees only nine are
+     * within forty kilometres of a city we publish.
+     *
+     * The only thing this field changes is where the place is LISTED: /cities
+     * shows cities, because an index of cities that is not a list of cities is
+     * the first step to a page nobody trusts. A region belongs on its country
+     * page and in collections. Every contract, title, schema and link minimum
+     * is identical either way. */
+    kind: z.enum(["city", "region", "park", "forest"]).optional(),
     // What KIND of place this page covers. Added 2026-08-17 with Tenerife, the
     // first island: an island is an ordinary place in the one queue and ships
     // under the existing contracts, but it behaves differently in one way a
