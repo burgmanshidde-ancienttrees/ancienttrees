@@ -5,6 +5,21 @@ import Base from "../../layouts/Base.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, distLabel, type CityEntry, type Tree } from "../../lib/trees";
 import { haversineKm } from "../../lib/walks";
+// THE LINK UNDER THE ACTION BAR POINTED AT A PROMOTION, and did it on every
+// tree page on the site.
+//
+// It read "See the walking route past X's other trees" and went to `/x#walk`.
+// That anchor was the city page's walk picker until 2026-08-18, when the walks
+// came off the web; the same anchor now holds the block that says walking
+// routes are in the app. So the sentence promised a route on this website and
+// delivered an advertisement, and on a city with no walk at all it promised one
+// that has never existed. Hidde found it on Oahu (2026-08-28).
+//
+// Contract K put the walks back on the web on 2026-08-24 at /[city]/walks, and
+// nothing updated this line to follow them. It counts them from the same helper
+// the walks page itself uses, so the two cannot disagree, and it says nothing
+// when a city has no walk.
+import { pageWalksFor } from "../../lib/city-walks";
 import { speciesCommon } from "../../lib/species";
 import { parkKey, groupTreesByPark, parkGroupKey, PARK_MIN_TREES } from "../../lib/parks";
 import { usablePhoto, imgSrcset, thumbUrl, creditRequired, creditName, metaImageUrls, ogImageUrl } from "../../lib/images";
@@ -90,6 +105,9 @@ const parkPage = parkName ? (parkPages as Map<string, any>).get(parkGroupKey(cit
 const cityName = city.data.city;
 const country = city.data.country;
 const cslug = city.id;
+// Counted from the same helper /[city]/walks builds its own pages with, so the
+// link and the page it points at can never disagree about whether a walk exists.
+const cityWalkCount = pageWalksFor(city).length;
 const tslugs = treeSlugsForCity(city);
 const tslug = tslugs[tree.id];
 const loc = tree.location;
@@ -219,7 +237,13 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
       <a class="tb-primary dir-link" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">Take me there</a>
       <a class="tb-secondary" href="/app" data-app-modal data-ev="app-cta">Get the app</a>
     </div>
-    <p class="under-bar-link"><a href={`/${cslug}#walk`}>See the walking route past {cityName}'s other trees →</a></p>
+    {cityWalkCount > 0 && (
+      <p class="under-bar-link"><a href={`/${cslug}/walks`}>
+        {cityWalkCount === 1
+          ? `See the walk past ${cityName}'s other trees →`
+          : `See the ${cityWalkCount} walks past ${cityName}'s other trees →`}
+      </a></p>
+    )}
     {tree.how_to_recognise && (
       <p class="which-one"><b>Which one is it?</b> {tree.how_to_recognise}</p>
     )}
