@@ -142,9 +142,14 @@ def screens(sub):
         ("signin",        ["-tab=0", "-signin"], 5),
         ("paywall",       ["-tab=0", "-paywall"], 5),
         ("primer",        ["-tab=0", "-primer"], 5),
-        ("contribute",    ["-tab=2", "-contribute"], 5),
-        ("feedback",      ["-tab=2", "-feedback"], 5),
-        ("sponsor",       ["-tab=2", "-sponsor"], 5),
+        # WITH -settings, because these three sheets are owned by the Settings
+        # screen and Settings stopped being the tab: it is pushed from the gear
+        # on My trees now. Without it the argument lands on a screen that never
+        # reads it, and all three photographed My trees instead, silently, from
+        # the day Profile moved (found 2026-08-28).
+        ("contribute",    ["-tab=2", "-settings", "-contribute"], 5),
+        ("feedback",      ["-tab=2", "-settings", "-feedback"], 5),
+        ("sponsor",       ["-tab=2", "-settings", "-sponsor"], 5),
         ("profile-edit",  ["-tab=2", "-profile-edit"], 5),
         # WITH ROWS IN IT (-people-demo), because an empty list cannot show
         # the report and block controls, and those are the two the App Store
