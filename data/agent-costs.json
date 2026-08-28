@@ -3769,6 +3769,24 @@
     "note": "Write pass, 5 trees, merged 21 to 26. No stale count-promise copy found (Krakow city file uses no spelled-out totals in the affected fields).",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "warsaw",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 3,
+    "note": "3 trees verified (pear, sophora, lime), all tightened the existing Mokotow/SGGW cluster; also caught and blocked a fenced non-public park (Park SGGW) that shared a register designation with a shippable tree",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "warsaw",
+    "kind": "write",
+    "tokens": 34000,
+    "trees": 3,
+    "note": "Write pass, 3 trees, merged 12 to 15. Fixed stale count-promise copy (question_meta full-twelve, paid-share FAQ eight-of-twelve).",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
