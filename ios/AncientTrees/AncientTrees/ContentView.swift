@@ -91,6 +91,10 @@ struct ContentView: View {
             }
         }
     }
+    /// The pending "which maps app" question, owned in one place so the dialog
+    /// below is the app's only one.
+    @State private var directionsAsk = DirectionsAsk.shared
+
     // Screenshotting each tab needs a way to open on one, because this Mac's
     // simulator panel is not available and simctl cannot tap. Debug only.
     @State private var tab = ProcessInfo.processInfo.arguments
@@ -445,6 +449,29 @@ struct ContentView: View {
                 }
                 .onChange(of: nudge.pending) { _, new in
                     if let new { rootSheet = .signIn(new); nudge.pending = nil }
+                }
+                // WHICH MAPS APP, asked once, from the ROOT. Presented here
+                // rather than from the button for the same reason the sign-in
+                // ask is: Take me there exists on a tree page, on the pushed
+                // map and inside walk mode, and a dialog attached to each would
+                // be three dialogs to keep in step. Anchoring matters too. iOS
+                // 26 draws a confirmationDialog attached to a control as a
+                // popover and silently drops every button carrying
+                // role: .cancel, which is how a destructive confirmation
+                // shipped with no way out (2026-08-27). From the root it is an
+                // ordinary action sheet and Cancel survives.
+                .confirmationDialog(
+                    "Open directions in",
+                    isPresented: Binding(get: { directionsAsk.pending != nil },
+                                         set: { if !$0 { directionsAsk.pending = nil } }),
+                    titleVisibility: .visible
+                ) {
+                    ForEach(Directions.MapsApp.allCases) { app in
+                        Button(app.label) { directionsAsk.answer(app) }
+                    }
+                    Button("Cancel", role: .cancel) { directionsAsk.pending = nil }
+                } message: {
+                    Text("You can change this in Settings.")
                 }
             } else if let err = store.loadError {
                 ContentUnavailableView("Something is wrong with the catalogue",

@@ -117,3 +117,25 @@ Recorded from our own corpus, 2026-08-01, the day the rule itself was set.
 already is. Everything after it is a list or a form, so those scroll.
 
 Recorded from our own corpus. No source URL captured at the time.
+
+---
+
+## Directions, when the phone has more than one maps app
+
+**Reference: WhatsApp.** Tapping an address asks which maps app to open, and
+the answer is remembered; a settings row changes it afterwards. iOS cannot
+answer this for an app: the default-navigation-app setting added in iOS 18.4 is
+EU-only and governs Siri and Apple's own address taps, so a `maps.apple.com`
+link opens Apple Maps whatever the person has chosen system-wide.
+
+Open both destinations as https universal links, never a custom scheme. Google
+documents that `https://www.google.com/maps/dir/?api=1&...` launches the Google
+Maps app when it is installed and a browser when it is not
+(developers.google.com/maps/documentation/urls/get-started), and `maps.apple.com`
+does the same for Apple Maps. A custom scheme raises the system's own "no app
+installed" alert on a phone that lacks it, which this project shipped four times.
+
+Waze publishes no https link, only `waze://`, so it is not offered.
+
+Recorded 2026-08-28, the day Take me there turned out to open Apple Maps on
+every phone because the Google branch under it was unreachable.
