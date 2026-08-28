@@ -11,6 +11,12 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 <!-- archive-index -->
 
 
+## 2026-08-28 - Night run 2026-08-28 05:28 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 12.6 minutes of its 120 minute window, 114 turns, 18 commands refused by the allowlist, ended clean (success). 5 commit(s), none of them a published tree. Claims left behind: krakow, groningen, barcelona, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
 ## 2026-08-28 - Night run 2026-08-28 02:06 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 19.8 minutes of its 120 minute window, 166 turns, 20 commands refused by the allowlist, ended clean (success). 11 commit(s), none of them a published tree. Claims left behind: maastricht, groningen, which block the top of the queue until they expire.

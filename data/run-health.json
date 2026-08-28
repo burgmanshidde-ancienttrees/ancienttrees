@@ -1965,6 +1965,29 @@
    "cities": [],
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-08-28T05:28:43+00:00",
+   "date": "2026-08-28",
+   "run_id": "33144872099",
+   "minutes": 12.6,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 114,
+   "denials": 18,
+   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(if), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 5378256,
+   "claims_held": [
+    "krakow",
+    "groningen",
+    "barcelona"
+   ],
+   "commits": 5,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
