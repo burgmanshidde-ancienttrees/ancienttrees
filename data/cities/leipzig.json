@@ -1,0 +1,220 @@
+{
+  "city": "Leipzig",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Leipzig protects 148 trees as Naturdenkmale, Saxon state law's highest tier for an individual tree, and a tight run of them sits on one Plagwitz street. Karl-Heine-Strasse carries a ginkgo, a European white elm, a bald cypress, a copper beech and a Japanese pagoda tree within about 150 metres. A fern-leaved beech and a pedunculate oak, protected the same year, stand a short walk east toward the centre.",
+  "meta_description": "Leipzig's protected street trees: a ginkgo, elm, bald cypress, copper beech and pagoda tree on one Plagwitz street, plus two more nearby.",
+  "question_meta": "Leipzig's seven protected street trees all date to one 1996 resolution. Where they stand, and what makes each a natural monument.",
+  "question_answer": "Leipzig has not published tree ages for its Naturdenkmale, only the resolution that protected them: number 601/96, from 1996. What the record shows instead is how unusual the trees themselves are for a German street. A bald cypress, a swamp species from the American south, and a Japanese pagoda tree stand four doors apart on Karl-Heine-Strasse in Plagwitz, alongside a European white elm, a copper beech and a female ginkgo, all within about 150 metres of each other. A fern-leaved beech and a pedunculate oak, protected under the same 1996 resolution, stand roughly a kilometre east.",
+  "question_context": "Saxony's nature protection law lets a municipality declare an individual tree a Naturdenkmal, its strongest legal protection, without requiring a documented age. Leipzig's own list gives each tree a designation number, a plot reference and the resolution that protects it, which for all seven trees on this page is 601/96, dated 1996: the year is a floor on how long each tree has stood, not a planting date. Three of the seven (the ginkgo, the fern-leaved beech and the oak) are corroborated by Leipzig's own published Naturdenkmal list; the other four (the elm, cypress, copper beech and pagoda tree, all newer additions to the register on the same street) rest on the designation record alone and are flagged accordingly. None of the seven has a recorded girth or crown spread either, only the protected root zone the city measured around each trunk, which runs from 18 to 25 metres across depending on the tree. All seven stand on public street frontage, no ticket, no gate, and a reader who knows more of any tree's history is the fastest way to fill the gap.",
+  "faq": [
+    {
+      "q": "What is a Naturdenkmal?",
+      "a": "A natural monument under Saxon state nature protection law, the strongest legal protection an individual tree can get in Germany short of being inside a nature reserve. Leipzig has designated 148 of them."
+    },
+    {
+      "q": "Are these trees free to visit?",
+      "a": "Yes, all seven. They stand on public street frontage in Plagwitz and the surrounding inner city, no gate and no ticket."
+    },
+    {
+      "q": "Can I see them all in one walk?",
+      "a": "Five of the seven, yes: the ginkgo, elm, bald cypress, copper beech and pagoda tree all stand on Karl-Heine-Strasse within about 150 metres of each other. The fern-leaved beech and the oak are roughly a kilometre east, an easy addition to the same outing."
+    }
+  ],
+  "hero_tree_id": "lpz_001",
+  "oldest_tree_id": "lpz_001",
+  "trees": [
+    {
+      "id": "lpz_001",
+      "name": "The Ginkgo of Karl-Heine-Strasse",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "",
+      "location": {
+        "address": "Karl-Heine-Strasse 1, 04229 Leipzig",
+        "latitude": 51.3319,
+        "longitude": 12.34855,
+        "neighbourhood": "Plagwitz"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig",
+        "https://www.wikidata.org/wiki/Q139832224"
+      ],
+      "access": "Free, public street frontage",
+      "transport": "Karl-Heine-Strasse tram (lines 3/N3) or S-Bahn Leipzig MDR, then a short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Naturdenkmal ND 30 (Leipzig's own designation number), protected under municipal resolution 601/96 (1996), protected root zone 18m diameter. Two sources: Leipzig's own published Naturdenkmal list (German Wikipedia's transcription of it) and Wikidata/Commons.",
+      "location_precision": "confirmed",
+      "story": "A female ginkgo stands at the corner of Karl-Heine-Strasse in Plagwitz, one of 148 trees Leipzig protects as a Naturdenkmal, Saxon law's strongest individual-tree designation. The city's own record gives it a number, ND 30, a protected root radius of 18 metres, and the resolution that made it official in 1996. It gives no age and no planting date, which is typical of the German Naturdenkmal system: protection does not require a documented history, only a tree worth keeping.\n\nGinkgo biloba survives as a single species from a lineage otherwise known only from fossils, and female trees like this one carry a reputation the male trees down the street do not: come autumn, the fallen seed coats smell distinctly of rancid butter, which is why most street plantings today are male clones. This one was left as it grew.\n\nIt shares its stretch of Karl-Heine-Strasse with four more protected trees within about 150 metres, an elm, a bald cypress, a copper beech and a pagoda tree, all named on this page."
+    },
+    {
+      "id": "lpz_002",
+      "name": "The European White Elm of Karl-Heine-Strasse",
+      "species": "European White Elm (Ulmus laevis)",
+      "age_estimate": "",
+      "location": {
+        "address": "Karl-Heine-Strasse 2, 04229 Leipzig",
+        "latitude": 51.333025,
+        "longitude": 12.348386,
+        "neighbourhood": "Plagwitz"
+      },
+      "verified_sources": [
+        "https://www.wikidata.org/wiki/Q138745911"
+      ],
+      "access": "Free, public street frontage",
+      "transport": "Karl-Heine-Strasse tram (lines 3/N3) or S-Bahn Leipzig MDR, then a short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Naturdenkmal designation per Wikidata (Q138745911, 'natural monument in Saxony'), part of Commons' numbered Leipzig Naturdenkmal photo series (file prefixed '124'). Single source found this pass; a second (Leipzig's own published list does not yet include this specific tree) is wanted.",
+      "location_precision": "confirmed",
+      "story": "European white elm is the one native elm that mostly shrugged off Dutch elm disease, because it favours damp ground the beetle that spreads the fungus rarely bothers with, and this specimen has grown large enough on a Plagwitz street corner to earn Leipzig's Naturdenkmal protection, the city's strongest legal status for an individual tree.\n\nIt stands directly beside a bald cypress the city protected under the same designation, an odd pairing: a European elm built for damp lowland and an American swamp conifer, sharing one small stretch of pavement outside number 2.\n\nLeipzig's public Naturdenkmal register has not yet caught up with a written entry for this specific tree beyond its own designation record, so treat the identification as solid and the documentation as thin. The species is easiest to tell apart from the more common field elm by its leaf base, distinctly lopsided where the blade meets the stalk, and by its fruit, a papery samara fringed with fine hairs rather than smooth-edged. If you know more about when it was planted, tell us."
+    },
+    {
+      "id": "lpz_003",
+      "name": "The Bald Cypress of Karl-Heine-Strasse",
+      "species": "Bald Cypress (Taxodium distichum)",
+      "age_estimate": "",
+      "location": {
+        "address": "Karl-Heine-Strasse 2, 04229 Leipzig",
+        "latitude": 51.332286,
+        "longitude": 12.348756,
+        "neighbourhood": "Plagwitz"
+      },
+      "verified_sources": [
+        "https://www.wikidata.org/wiki/Q138745767"
+      ],
+      "access": "Free, public street frontage",
+      "transport": "Karl-Heine-Strasse tram (lines 3/N3) or S-Bahn Leipzig MDR, then a short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Naturdenkmal designation per Wikidata (Q138745767), Commons photo series prefix '123'. Single source; a second is wanted.",
+      "location_precision": "confirmed",
+      "story": "A bald cypress on a Leipzig pavement is a long way from home. The species grows wild in the swamps of the American southeast, where its roots throw up woody knees through standing water; on a dry Plagwitz street it has none of that, just a straight trunk and the soft, feathery foliage that turns copper before dropping in autumn, unusual for a conifer.\n\nThe city protects it as a Naturdenkmal, standing directly beside a European white elm under the same designation. Neither the planting date nor the girth is in the record we could find, only the fact of its protection.\n\nFour more protected trees stand within about 150 metres along the same street: a ginkgo, a copper beech and a Japanese pagoda tree among them, an unlikely collection of species for one short block. Bald cypress is also one of the few conifers that drops its foliage entirely for winter, needles and all, rather than staying evergreen, which is why the street looks bare under it by December where the ginkgo down the road has already dropped its own leaves weeks before."
+    },
+    {
+      "id": "lpz_004",
+      "name": "The Copper Beech of Karl-Heine-Strasse",
+      "species": "Copper Beech (Fagus sylvatica 'Purpurea')",
+      "age_estimate": "",
+      "location": {
+        "address": "Karl-Heine-Strasse 24, 04229 Leipzig",
+        "latitude": 51.332673,
+        "longitude": 12.342115,
+        "neighbourhood": "Plagwitz"
+      },
+      "verified_sources": [
+        "https://www.wikidata.org/wiki/Q138745963"
+      ],
+      "access": "Free, public street frontage",
+      "transport": "Karl-Heine-Strasse tram (lines 3/N3) or S-Bahn Leipzig MDR, then a short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Naturdenkmal designation per Wikidata (Q138745963), Commons photo series prefix '125'. Single source; a second is wanted.",
+      "location_precision": "confirmed",
+      "story": "Copper beeches were a fashionable planting across nineteenth century Europe, their near-black foliage a deliberate contrast to the ordinary green beech beside them, and this one has grown large enough on Karl-Heine-Strasse to earn Leipzig's Naturdenkmal protection in its own right.\n\nThe colour comes from anthocyanin pigments masking the leaf's green chlorophyll, strongest in spring and fading toward a duller bronze by late summer as the pigment breaks down faster than the tree replaces it. It is the same genetic trait behind every copper beech anywhere, a single mutation propagated by grafting and cutting for centuries rather than a distinct species.\n\nIt stands a few doors from a Japanese pagoda tree under the same 1996 protection order, one of five Naturdenkmal trees within about 150 metres of each other on this stretch of street. Like any beech it carries smooth grey bark its whole life rather than developing the deep furrows of an oak or a plane, which is part of why beech trunks end up carved with initials more than most other species: the bark simply shows the cut and keeps it."
+    },
+    {
+      "id": "lpz_005",
+      "name": "The Pagoda Tree of Karl-Heine-Strasse",
+      "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+      "age_estimate": "",
+      "location": {
+        "address": "Karl-Heine-Strasse 24b, 04229 Leipzig",
+        "latitude": 51.332706,
+        "longitude": 12.341206,
+        "neighbourhood": "Plagwitz"
+      },
+      "verified_sources": [
+        "https://www.wikidata.org/wiki/Q138747831"
+      ],
+      "access": "Free, public street frontage",
+      "transport": "Karl-Heine-Strasse tram (lines 3/N3) or S-Bahn Leipzig MDR, then a short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Naturdenkmal designation per Wikidata (Q138747831), Commons photo series prefix '126'. Single source; a second is wanted.",
+      "location_precision": "confirmed",
+      "story": "Despite the name, the Japanese pagoda tree is native to China, not Japan; it reached Europe through Japanese trade ports in the eighteenth century and kept the misnomer. This one has grown large enough on a Plagwitz street to be protected as a Naturdenkmal, Saxony's strongest legal status for an individual tree.\n\nIt flowers late for a tree of its size, creamy white clusters in August when most other street trees have finished for the year, which is usually the detail that gets a pagoda tree noticed at all outside of botanical collections.\n\nIt stands a few doors from a protected copper beech, the last of five Naturdenkmal trees packed into roughly 150 metres of Karl-Heine-Strasse: a ginkgo, a European white elm and a bald cypress complete the run. In its native range the pagoda tree's unopened flower buds are harvested by the ton for rutin, a plant compound used in dyes and in vitamin supplements, a use this single street tree in Plagwitz will never see put to work."
+    },
+    {
+      "id": "lpz_006",
+      "name": "The Fern-Leaved Beech of Karl-Tauchnitz-Strasse",
+      "species": "Fern-leaved Beech (Fagus sylvatica f. asplenifolia)",
+      "age_estimate": "",
+      "location": {
+        "address": "Karl-Tauchnitz-Strasse 25, 04107 Leipzig",
+        "latitude": 51.331,
+        "longitude": 12.3637,
+        "neighbourhood": "Leipzig"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig",
+        "https://www.wikidata.org/wiki/Q117723264"
+      ],
+      "access": "Free, public street frontage",
+      "transport": "Karl-Heine-Strasse tram (lines 3/N3) or S-Bahn Leipzig MDR, then a short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Naturdenkmal ND 52, resolution 601/96 (1996), protected root zone 25m diameter. Two sources: Leipzig's own published list and Wikidata/Commons.",
+      "location_precision": "confirmed",
+      "story": "A fern-leaved beech carries leaves so deeply cut and narrow they barely register as beech foliage at all, a naturally occurring form of the common European beech that nurseries have propagated by grafting since the eighteenth century rather than a separate species. Leipzig protects this one under the same 1996 resolution that covers six other trees on this page, with a protected root zone 25 metres across, the largest of the three the city's own list records in detail.\n\nIt stands about a kilometre east of the Karl-Heine-Strasse cluster, on its own rather than part of a run of protected trees, on a residential street near Leipzig's inner ring.\n\nNo age or girth survives in what we could find, only the fact and date of its protection. The cut-leaf form was already being grafted and sold by German nurseries in the eighteen hundreds as an ornamental novelty, prized for a silhouette lighter and more open than an ordinary beech's dense dome. If you know more about this tree's history, tell us."
+    },
+    {
+      "id": "lpz_007",
+      "name": "The Oak of Kaethe-Kollwitz-Strasse",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "",
+      "location": {
+        "address": "Kaethe-Kollwitz-Strasse 62, 04109 Leipzig",
+        "latitude": 51.335661,
+        "longitude": 12.355331,
+        "neighbourhood": "Leipzig"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig",
+        "https://www.wikidata.org/wiki/Q117724403"
+      ],
+      "access": "Free, public street frontage",
+      "transport": "Karl-Heine-Strasse tram (lines 3/N3) or S-Bahn Leipzig MDR, then a short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Naturdenkmal ND 67, resolution 601/96 (1996), protected root zone 23m diameter. Two sources: Leipzig's own published list and Wikidata/Commons.",
+      "location_precision": "confirmed",
+      "story": "A pedunculate oak on Kaethe-Kollwitz-Strasse, named for the Leipzig-connected printmaker and sculptor, carries Leipzig's Naturdenkmal protection under the same 1996 resolution as six other trees on this page. Its protected root zone runs 23 metres across, evidence of real size even without a recorded girth or age.\n\nPedunculate oak is the common oak of northern European streets and parks, named for the short stalk, the peduncle, that carries its acorns clear of the twig, unlike the stalkless acorns of its close relative the sessile oak. Under German municipal protection it will now outlive the street around it by design rather than by accident.\n\nIt stands about a kilometre northeast of the Karl-Heine-Strasse cluster, close enough to fold into the same outing. A pedunculate oak this size is also feeding a small ecosystem nobody sees from the pavement: the species supports more insect life than almost any other tree native to Britain and central Europe, from gall wasps that shape its acorns into hard, marble-sized growths to the moth caterpillars that keep every tit and warbler in the neighbourhood fed each spring."
+    }
+  ]
+}

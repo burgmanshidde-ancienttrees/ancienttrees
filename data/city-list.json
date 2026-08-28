@@ -39,7 +39,7 @@
    "country": "Spain",
    "slug": "barcelona",
    "status": "published",
-   "trees": 52
+   "trees": 55
   },
   {
    "city": "Singapore",
@@ -55,7 +55,7 @@
    "slug": "brisbane",
    "status": "published",
    "demand_views_90d": null,
-   "trees": 15
+   "trees": 19
   },
   {
    "city": "Florence",
@@ -238,7 +238,7 @@
    "slug": "krakow",
    "status": "published",
    "demand_views_90d": 140824,
-   "trees": 21
+   "trees": 26
   },
   {
    "city": "The Hague",
@@ -284,7 +284,7 @@
    "slug": "groningen",
    "status": "published",
    "demand_views_90d": 31401,
-   "trees": 19
+   "trees": 20
   },
   {
    "city": "Leiden",
@@ -327,20 +327,20 @@
    "trees": 4
   },
   {
+   "city": "Cagliari",
+   "country": "Italy",
+   "slug": "cagliari",
+   "status": "published",
+   "demand_views_90d": 51351,
+   "trees": 8
+  },
+  {
    "city": "Cambridge",
    "country": "United Kingdom",
    "slug": "cambridge",
    "status": "published",
    "demand_views_90d": 97974,
    "trees": 5
-  },
-  {
-   "city": "Cagliari",
-   "country": "Italy",
-   "slug": "cagliari",
-   "status": "published",
-   "demand_views_90d": 51351,
-   "trees": 7
   },
   {
    "city": "Padua",
@@ -438,7 +438,7 @@
    "slug": "utrecht",
    "status": "published",
    "demand_views_90d": 67963,
-   "trees": 22
+   "trees": 33
   },
   {
    "city": "Oslo",
@@ -603,7 +603,7 @@
    "slug": "warsaw",
    "status": "published",
    "demand_views_90d": 197929,
-   "trees": 12
+   "trees": 15
   },
   {
    "city": "Santiago de Compostela",
@@ -628,7 +628,7 @@
    "slug": "maastricht",
    "status": "published",
    "demand_views_90d": 47763,
-   "trees": 10
+   "trees": 14
   },
   {
    "city": "Funchal",
@@ -684,7 +684,7 @@
    "slug": "seattle",
    "status": "published",
    "demand_views_90d": null,
-   "trees": 5
+   "trees": 6
   },
   {
    "city": "Haarlem",
@@ -933,7 +933,7 @@
    "country": "United States",
    "slug": "oahu",
    "status": "published",
-   "trees": 5
+   "trees": 6
   },
   {
    "city": "Bari",
@@ -1416,6 +1416,13 @@
    "city": "Zwolle",
    "country": "Netherlands",
    "slug": "zwolle",
+   "status": "published",
+   "trees": 7
+  },
+  {
+   "city": "Leipzig",
+   "country": "Germany",
+   "slug": "leipzig",
    "status": "published",
    "trees": 7
   }

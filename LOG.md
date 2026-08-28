@@ -9,6 +9,22 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-28 (session, second attempt in the window) - Finished the standing verify claims, then opened Leipzig from Wikidata supply
+
+The window's first attempt had claimed brisbane, palma-de-mallorca and cagliari for verify passes, then stopped after 11.4 minutes with 2 commits and no trees. Picked up all three rather than re-orienting from scratch.
+
+**Finished the three standing claims.** Brisbane: bne_020 (Fig Tree of Haig Road, single-sourced heritage listing) written and merged. Palma de Mallorca: the pass had already found zero shippable candidates (13 more register entries checked, all private land 10-19km out in different towns); nothing left to do but release. Cagliari: the two in-town register candidates were already blocked by an earlier pass; finished the unfinished thread (Dolianova's two cathedral-square pines, 18km/23min by train, both confirmed public) as cag_008, blocked Capoterra's giant eucalyptus (private, custodian permission needed). All three claims released.
+
+**Then hand-checked `leads.py --ready` rather than trusting its count.** Sampled ~45 of 354 "READY" leads across a dozen cities and found the great majority still carry a real, undocumented objection in their own text (unconfirmed access, "not researched this pass", girth or identity disputes) invisible to the classifier's keyword patterns. This matches a finding another pass logged earlier today for Barcelona/Napoli, so it is a recurring pattern rather than a one-off; worth a session tightening `leads.py` itself rather than every write pass re-discovering it by hand. A narrower pass found 3 Barcelona leads held only for a now-forbidden judgement-call reason (too young, held purely on count), each enriched with Barcelona's own municipal tree catalogue as a second source; shipped those plus Roosendaal's already-decided single-sourced lime. Barcelona 52->55, Brisbane 18->19, Roosendaal 7->8.
+
+**Opened Leipzig (rank 51, 0 to 7 trees), per the standing rule that a zero-ranked city with supply on hand outranks everything else.** No register covers Saxony yet, but 56 Wikidata-sourced Naturdenkmal candidates sat within 15km. Five of the seven shipped form a genuine 150-metre cluster on one Plagwitz street (Karl-Heine-Strasse): a ginkgo, a European white elm, a bald cypress, a copper beech and a Japanese pagoda tree, all designated the same way but not yet in Leipzig's own published list (flagged, single source each). The other two, a kilometre away, are double-sourced against that published list, which also gave the 1996 resolution number (601/96) common to all seven. None have a recorded girth or age, only the protected root-zone diameter, which does not block publication.
+
+**A real tooling gap found along the way:** `scripts/city_queue.py`'s `rebuild_list()` only updates cities already present in `data/city-list.json`, it never adds a new one; Leipzig had to be added there by hand. Worth a fix so the next from-zero opening doesn't repeat the same manual step.
+
+Build, qa.py, preflight.py, superlatives.py, pagegaps.py all clean throughout (the sitemap lastmod NOTE is the standing shallow-clone false positive). Two commits pushed, details in CURATION.md.
+
+FOR HIDDE: nothing blocks.
+
 ## 2026-08-28 (session, in progress) - Cleared the write backlog first (27 trees, 6 cities), then reopened the register-scouting queue
 
 `visitors.py`: 482 visits/742 views over 7 days, flat, no single day dominating (22-94/day). `prepare.py` at start: 366 leads.py-READY, 19 trees awaiting a writer across 6 already-verified Dutch cities. Per this run's own prompt (first dispatch is a write pass, whenever there is one), wrote the 19 first rather than starting anything fresh.
