@@ -269,12 +269,18 @@ final class Sightings {
     /// Records a sighting and returns it. The photograph is written first, so
     /// a crash between the two leaves an orphan file rather than a row
     /// pointing at nothing.
+    /// `date` is when the PHOTOGRAPH was taken, not when it was filed. They
+    /// were the same thing until 2026-08-28, when a photograph could first
+    /// come off the camera roll: one taken last spring belongs in your trees
+    /// under last spring, or the log quietly rewrites your own history. It
+    /// falls back to now, which is right for the camera path and for a
+    /// photograph whose file no longer says.
     @discardableResult
     func record(treeId: String?, name: String, note: String = "",
                 lat: Double, lng: Double, image: UIImage?,
-                status: Status = .mine) -> Sighting {
+                date: Date = Date(), status: Status = .mine) -> Sighting {
         var s = Sighting(treeId: treeId, name: name, note: note,
-                         lat: lat, lng: lng, photo: nil, status: status)
+                         lat: lat, lng: lng, date: date, photo: nil, status: status)
         if let image, let data = Self.downsized(image) {
             let file = s.id.uuidString + ".jpg"
             try? data.write(to: folder.appendingPathComponent(file))

@@ -21,4 +21,11 @@ public enum Launch {
     public static let season = ProcessInfo.processInfo.arguments.contains("-show-season")
     /// Every Plus-labelled row and chip.
     public static let plus = ProcessInfo.processInfo.arguments.contains("-show-plus")
+
+    /// The collect flow's "where does it stand" step. It is otherwise reached
+    /// only by choosing a photograph that carries no location of its own, and
+    /// a simulator's photo roll carries nothing at all, so without this the
+    /// screen would ship having never been looked at. Same reason every other
+    /// argument in the sweep exists.
+    public static let collectPlace = ProcessInfo.processInfo.arguments.contains("-collect-place")
 }
