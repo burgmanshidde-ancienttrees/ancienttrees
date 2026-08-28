@@ -3,9 +3,9 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Maastricht's most remarkable trees sit on the edges of the things that shaped the city: a chestnut on a working farm above Amby, a grove of giant sequoias in a cemetery that has taken the city's dead since 1812, and a stand of 300-year-old oaks marking the outline of a baron's star-shaped forest garden above Kasteel Neercanne. Closer to the centre, Stadspark, one of the oldest city parks in the Netherlands, holds the country's tallest recorded plane tree alongside three beeches nearly as old as the park's own 19th-century layout.",
-  "meta_description": "Maastricht's oldest trees range from a contested-age farm chestnut to 300-year-old star-forest oaks. Ten verified trees, real stories, real locations.",
+  "meta_description": "Maastricht's oldest trees range from a contested-age farm chestnut to 300-year-old star-forest oaks. 14 verified trees, real stories, real locations.",
   "question_answer": "Maastricht's oldest tree with a reliable date is a stand of oaks ringing the edge of Cannerbos, a star-shaped forest garden Baron Daniel Wolfgang van Dopff laid out around 1700 beside Kasteel Neercanne, making them roughly 300 years old. A farm chestnut in Amby may be close in age or even older, but its planting date is genuinely disputed and unconfirmed.",
-  "question_meta": "The 300-year-old oaks of Cannerbos, planted around a baron's 1700 star forest, are Maastricht's oldest reliably dated tree. The full ten.",
+  "question_meta": "The 300-year-old oaks of Cannerbos, planted around a baron's 1700 star forest, are Maastricht's oldest reliably dated tree. The full 14.",
   "question_context": "Maastricht's oldest-tree claim goes to whichever standard matters more, a reliable date or a possibly older but unconfirmed one. The Cannerbos oaks ring the edge of a star-shaped forest garden a baron laid out around 1700, and their roughly 300-year age is treated as trustworthy because it is tied to a single, dated landscaping event rather than a guess from girth alone. The Molenweg chestnut could plausibly be just as old or older, but its own documentation shows real disagreement: the Bomenstichting's national register estimates an 1750-1800 planting, a 2022 measurement suggested 1800 plus or minus 40 years, and a persistent local legend crediting Russian Cossacks during the 1814 siege of Maastricht has been investigated and dismissed as implausible by the tree's own researchers. Only a core sample would settle it, and none has been taken. Stadspark's three oldest beeches and its record-height plane tree are both well measured but comparatively young, 150 to 160 years old, products of the park's 19th-century expansion rather than survivors of its 17th-century linden-lined origins, none of which are known to still stand.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Maastricht's remarkable trees free to visit?",
-      "a": "Nine of the ten are free and open to the public at any time. The Molenweg chestnut stands on working farmland and is visible only from the access road."
+      "a": "13 of the 14 are free and open to the public at any time. The Molenweg chestnut stands on working farmland and is visible only from the access road."
     },
     {
       "q": "Where is the tallest plane tree in the Netherlands?",
@@ -330,7 +330,9 @@
       "access": "Free, open public park at any time",
       "transport": "10-15 minute walk from Maastricht centre",
       "best_time": {
-        "months": [6],
+        "months": [
+          6
+        ],
         "label": "June, when the tulip-shaped flowers open high in the canopy",
         "kind": "flowers"
       },
@@ -342,6 +344,128 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "maa_011",
+      "name": "The Pagoda Tree of Harrie van Haaren",
+      "species": "Japanese Pagoda Tree (Styphnolobium japonicum 'Harrie van Haaren')",
+      "age_estimate": "about 108 years",
+      "age_min": 105,
+      "age_max": 112,
+      "location": {
+        "address": "Aldenhofpark, directly visible from Prins Bisschopssingel, Maastricht",
+        "latitude": 50.843471,
+        "longitude": 5.682945,
+        "neighbourhood": "Jekerkwartier"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (LRMB register nr 1678454, honour class/ereklasse tree)",
+        "https://bomenbieb.nl/bijzondere-bomen/honingboom-maastricht/",
+        "https://nl.wikipedia.org/wiki/Stadspark_Maastricht (confirms 'twee honingbomen' among the park's ~15 monumental trees)"
+      ],
+      "access": "Free, Aldenhofpark is an open public park (part of Maastricht's Stadspark green belt), gemeente-owned, visitable at any time",
+      "transport": "10-15 minute walk from Maastricht centre",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The cultivar is named after the man who first noticed this tree comes out the wrong colour. Japanese pagoda trees leaf out green. This one opens white and gold, a habit the Dutch dendrologist Harrie van Haaren (1925-1990) was the first to describe, and the reason his name is attached to it.\n\nIts own paperwork argues about its age. The national register of monumental trees files it under a planting band of 1880 to 1890, while the history note inside that same record states flatly that it went in the ground in 1918, and an independent Dutch tree archive says 1918 as well. Two sources against one field, so read it as about 108 years old and treat the 1880s band as a slip of the pen.\n\nIt stands in the northern half of Aldenhofpark, the section laid out in 1918 by the Rosseels family of landscape architects; the western half has been an English-style landscape park since 1837. Around it, Maastricht's Stadspark green belt holds some fifteen officially designated monumental trees, and this is one of only two pagoda trees among them, listed in the register's top honour class.\n\nWhat nobody has done is put a tape around it. No girth or height is recorded anywhere we can find. If you have measured it, tell us.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "fresh leaves",
+        "label": "May, when it leafs out white and gold instead of green"
+      }
+    },
+    {
+      "id": "maa_012",
+      "name": "The Caucasian Wingnut and Weeping Silver Lime of Waldeckpark",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia) and Weeping Silver Lime (Tilia tomentosa 'Pendula')",
+      "age_estimate": "about 100 years",
+      "age_min": 96,
+      "age_max": 106,
+      "location": {
+        "address": "Waldeckpark, along Tongerseweg, Maastricht",
+        "latitude": 50.844062,
+        "longitude": 5.680012,
+        "neighbourhood": "Biesland"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (LRMB register nr 1694875 wingnut, nr 1694876 weeping silver lime)",
+        "https://nl.wikipedia.org/wiki/Waldeckpark (confirms 'een tweetal Kaukasische vleugelnoten' among trees dating from the park's 1921 creation by landscape architect Leonard Springer)"
+      ],
+      "access": "Free, Waldeckpark is an open public park laid out on the former Waldeck bastion, gemeente-owned, visitable at any time",
+      "transport": "10-15 minute walk from Maastricht centre",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Two trees, ten metres apart, one stop. The Caucasian wingnut is the one that stops people: through early summer it hangs ropes of winged green seeds, the longest of them about the length of your forearm, which is not something the oaks and limes of a Dutch city park do.\n\nNeither tree stands on natural ground. Waldeckpark was laid out in 1921 on the Waldeck bastion, a piece of Maastricht's demolished fortifications, by the Haarlem landscape architect Leonard Springer, who worked in the romantic manner: a rose avenue, the old fortification ruins left standing as ornament, and specimen trees put where people would walk past them. The wingnut is recorded as part of that original scheme, and Springer planted a pair of them. Only one of the two has been located again.\n\nBeside it grows a weeping silver lime, a cultivar that builds a broad dome and then lets its outer branches hang to the ground, flashing the pale undersides of its leaves whenever the wind gets in. That one we can only find in the national monumental tree register, with no second source naming it, so it rests on thinner evidence than its neighbour. The register puts both in the 1920s, which makes them roughly a century old.\n\nThey sit at the Tongerseweg edge of the park, on city land, with no gate and nothing to pay.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "catkins",
+        "label": "June and July, when the wingnut hangs its long chains of winged seeds"
+      }
+    },
+    {
+      "id": "maa_013",
+      "name": "The Golden Rain Tree of Aldenhofpark",
+      "species": "Golden Rain Tree (Koelreuteria paniculata)",
+      "age_estimate": "about 100 years",
+      "age_min": 96,
+      "age_max": 106,
+      "location": {
+        "address": "Aldenhofpark, north section, Maastricht",
+        "latitude": 50.843589,
+        "longitude": 5.68328,
+        "neighbourhood": "Jekerkwartier"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (LRMB register nr 1691693, reason: dendrologisch)"
+      ],
+      "access": "Free, Aldenhofpark is an open public park, gemeente-owned, visitable at any time",
+      "transport": "10-15 minute walk from Maastricht centre",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "It flowers in July, which is the point of it. Almost every tree in a Dutch park has finished flowering by midsummer; the golden rain tree waits, then covers itself in loose yellow panicles for weeks. What follows is stranger. The spent flowers become papery three-sided lanterns, pink turning to brown, hollow with a seed rattling inside, and they hang on well past the point where the leaves have gone orange and dropped.\n\nThe Dutch call it the lampionboom, the lantern tree, and it comes from China and Korea. That is roughly why it is here: the national register of monumental trees lists it on dendrological grounds, which is the designation given to a tree that earns protection for what it is rather than for anything it has witnessed.\n\nIt is also, honestly, the whole of what is known. The register puts it at about a century old and records no history for it, no girth and no height, and we found no walking route, article or archive that names a golden rain tree in Aldenhofpark. So this one is a register entry with a real tree at the end of it, standing in the north section of the park on city ground that is open at any hour. If you know its story, we would like to hear it.",
+      "best_time": {
+        "months": [
+          7,
+          8
+        ],
+        "kind": "flowers",
+        "label": "July and August, when it flowers yellow and nothing around it does"
+      }
+    },
+    {
+      "id": "maa_014",
+      "name": "The Sweet Gum of Waldeckpark",
+      "species": "Sweet Gum (Liquidambar styraciflua)",
+      "age_estimate": "about 100 years",
+      "age_min": 96,
+      "age_max": 106,
+      "location": {
+        "address": "Waldeckpark, near the roundabout, western section, Maastricht",
+        "latitude": 50.844257,
+        "longitude": 5.680689,
+        "neighbourhood": "Biesland"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (LRMB register nr 1691694, reason: dendrologisch)"
+      ],
+      "access": "Free, Waldeckpark is an open public park, gemeente-owned, visitable at any time",
+      "transport": "10-15 minute walk from Maastricht centre",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Its Latin name means liquid amber, and it earned it: cut the bark of a sweet gum and it bleeds a fragrant resin that North Americans chewed like gum and burned like incense. The leaf looks like a maple's, five points and a long stalk, and the tree is not remotely a maple. It is a cousin of witch hazel, and it holds its colour later into the year than almost anything else standing in Waldeckpark.\n\nWhen it was planted is a question the paperwork itself hedges. The national register of monumental trees notes that it was most likely put in when Leonard Springer laid out this park in 1921, and most likely is the register's own wording rather than ours. Springer's design is documented: a romantic layout on the demolished Waldeck bastion, with a rose avenue and the old fortification ruins left in place. Whether this particular tree belongs to that planting is not recorded anywhere we could reach, so call it roughly a hundred years old and leave the rest open.\n\nNo girth or height has been published for it either. It stands near the roundabout at the western end of the park, on city ground, free and open. Somebody with a tape measure could improve this entry in ten minutes.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when one tree carries red, orange and purple at once"
+      }
     }
   ]
 }
